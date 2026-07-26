@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.log
+*_candidate*.json
+search_seed_*_best.json
+weighted_seed_*_best.json
+killer_*.json
+prism_stratum*.json
+prism_*.sing
+*.sing
+*_orbits.json
+triangle_support*.json
+*.cnf
+*.result
+*.drat
+tmp/
