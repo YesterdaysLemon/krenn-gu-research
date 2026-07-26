@@ -5557,3 +5557,64 @@ tmp/four_blocker_ideal_obstruction_audited.json
 
 The remaining incidence target is now the five-blocker boundary or a
 root-promotion argument that forces blocker surplus to propagate.
+
+### Exact three-blocker permanent rank
+
+The equality case after promoting a simultaneous-kernel vertex to a
+third root has an additional tensor-rank obstruction.  Let three fully
+supported root vectors be pairwise zero-coupled, and suppose colour `c`
+has exactly three blockers.  The multi-star factorisation makes the
+three-blocker tensor diagonal:
+
+```text
+F_U = gamma_0 D_0 + gamma_1 D_1 + gamma_2 D_2,
+gamma_c != 0.
+```
+
+At each blocker, the three root covectors define a local map
+`M_u:C^3 -> C^3`.  Before those maps are applied, `F_U` is the standard
+order-three permanent tensor
+
+```text
+P_3 = sum_(sigma in S_3)
+        e_(sigma(0)) tensor e_(sigma(1)) tensor e_(sigma(2)).
+```
+
+If all three diagonal coefficients were nonzero, every local map would
+be invertible.  Tensor rank would therefore be preserved.  But `P_3`
+has rank four.  Its first-mode slice space is
+
+```text
+[0 z y; z 0 x; y x 0].
+```
+
+The three principal `2 x 2` minors are `-z^2,-y^2,-x^2`, so this slice
+space has no nonzero rank-one member.  A rank-three decomposition,
+together with the three rank-three flattenings, would force three
+rank-one matrices into that space.  A four-term polarization identity
+gives the matching upper bound.  In contrast, a diagonal tensor with
+three nonzero terms has rank three.
+
+It follows that at most two residual coordinate products can remain
+active.  Since the fixed colour-`c` product is nonzero, at least one
+other residual kernel product vanishes.  In a promotion step this
+exposes a blocker for another colour unless a fourth colour-`c` blocker
+already supplies surplus.
+
+The symbolic proof and independent 124-slice `F_5` audit have SHA-256:
+
+```text
+EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md
+  aabba14d7d3b5407142a50dffe3e19cec61ae7e4677c9fa84af5a93174236d54
+verify_exact_three_blocker_permanent_rank.py
+  bc21882c91acec43ae83143321cea462bd9fedb530d33efcbb72c81b9c021b98
+audit_exact_three_blocker_permanent_rank.py
+  58cb6a64fe3e29a021eb41ffac7bc248a5b22e0fe527551660fa12c338b57282
+tmp/exact_three_blocker_permanent_rank_verified.json
+  f52a4d7ff6df5698a0c0b788fedff7d9c02bf6091fb791fd5990912a1b4e9c5a
+tmp/exact_three_blocker_permanent_rank_audited.json
+  f72bb9cb53e225a9c5b36122768bb86212590d180ec17af364c7ba4d4e1a3d34
+```
+
+The result does not exclude the fourth-blocker alternative or by itself
+return the newly exposed other-colour blocker to the original root pair.

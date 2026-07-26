@@ -31,6 +31,9 @@ strictly advance the finite frontier:
   requires at least `r` outside blockers; equality forces a nonzero
   root--blocker permanent, a pure residual matching tensor, and no
   mixed-colour coefficient in the full root--blocker tensor.
+- for three fully supported zero-coupled roots with exactly three
+  blockers, the residual kernel restriction loses at least one of the
+  other two coordinate products.
 - every fully supported zero-coupled root pair requires at least five
   distinct outside blockers across the three colours.
 - on eight or ten vertices, no witness exists anywhere in the
@@ -111,6 +114,7 @@ the essential remaining case.
 - [`THREE_COLOUR_HYPERPLANE_ANNIHILATION_THEOREM.md`](THREE_COLOUR_HYPERPLANE_ANNIHILATION_THEOREM.md)
 - [`DOUBLE_STAR_ANNIHILATION_LEMMA.md`](DOUBLE_STAR_ANNIHILATION_LEMMA.md)
 - [`MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md`](MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md)
+- [`EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md`](EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md)
 - [`THREE_COLOUR_BLOCKER_UNION_LEMMA.md`](THREE_COLOUR_BLOCKER_UNION_LEMMA.md)
 - [`FOUR_BLOCKER_IDEAL_OBSTRUCTION.md`](FOUR_BLOCKER_IDEAL_OBSTRUCTION.md)
 - [`THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md`](THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md)
@@ -217,6 +221,8 @@ python verify_universal_saturated_diagonal_zero_layer.py
 python audit_universal_saturated_diagonal_zero_layer.py
 python verify_multi_star_blocker_factorisation.py
 python audit_multi_star_blocker_factorisation.py
+python verify_exact_three_blocker_permanent_rank.py
+python audit_exact_three_blocker_permanent_rank.py
 python verify_three_colour_blocker_union.py
 python audit_three_colour_blocker_union.py
 python verify_four_blocker_ideal_obstruction.py
@@ -297,6 +303,7 @@ The main analytic tools now include:
 - double-star blockers and the simultaneous balanced-bridge
   eight-type classification;
 - multi-star blocker surplus and exact pure-minor factorisation;
+- the exact three-blocker permanent-tensor rank obstruction;
 - the three-colour five-vertex blocker-union lower bound;
 - four- and eight-term affine Laurent-cube factor choices with exact lattice
   CEGAR;
@@ -313,6 +320,17 @@ This contradiction raises the arbitrary-order lower bound to five
 distinct blockers.  The symbolic verifier and an independent 544-case
 `F_5` audit are documented in
 [`FOUR_BLOCKER_IDEAL_OBSTRUCTION.md`](FOUR_BLOCKER_IDEAL_OBSTRUCTION.md).
+
+Promoting a simultaneous-kernel vertex to a third root now has a sharp
+equality obstruction.  With exactly three blockers, their root--blocker
+tensor is a local image of the order-three `3 x 3` permanent tensor.
+If all three residual coordinate products remained active, all three
+local maps would be invertible.  The permanent tensor has tensor rank
+four—its three-dimensional slice space contains no nonzero rank-one
+matrix—whereas the resulting three-term diagonal has rank three.  Hence
+some other residual coordinate product must vanish.  The proof and an
+independent `F_5` slice audit are in
+[`EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md`](EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md).
 
 Intersecting the balanced all-bridge normal form for all three colours gives
 an exact arbitrary-order reduction.  Every edge block has at most four
