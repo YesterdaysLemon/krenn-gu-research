@@ -5679,13 +5679,13 @@ The primary symbolic verifier and independent `F_5` audit have SHA-256:
 FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md
   2b4e18cb0ce60d64e9100c96ea690ca091c0ae0690a462d3dec752358eda6c32
 verify_fourth_order_permanent_subrank.py
-  b1d1c3f17b98dc435ef575f1b445c3f5252c33e81ece5d3b805297d56423e3f5
+  74baf64020cf1e4e8e25f2ec66fa0f73907e955889498131ca63842d1c8ad05f
 audit_fourth_order_permanent_subrank.py
   57db531e72230f36efc0cadb1d9dce91f3483eed18a34888ff21d4c0fc352f73
 tmp/fourth_order_permanent_subrank_verified.json
-  8c44ad03bf40ff451ec6f52247ac5d3f606045ecb02185188bd1103734ea70db
+  a3020c682f9d72735f8f74d272c1174e132fbe3ca2fa49a58b48c9706b5b34ff
 tmp/fourth_order_permanent_subrank_audited.json
-  5fbe9c39d2eb979e896c88275c9a9e097b636050d073751e506f605b6498f191
+  a05124c55b16f7978f406dd74dd40eea7bab70379358fcd1af430089e74e383d
 ```
 
 This is an exact order-four theorem, not a proof that every higher-order
