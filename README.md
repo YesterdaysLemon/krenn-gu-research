@@ -34,6 +34,9 @@ strictly advance the finite frontier:
 - for three fully supported zero-coupled roots with exactly three
   blockers, the residual kernel restriction loses at least one of the
   other two coordinate products.
+- the order-four permanent tensor has exact subrank two over `C`; in
+  particular, four fully supported zero-coupled roots require at least
+  five blocker vertices in total.
 - every fully supported zero-coupled root pair requires at least five
   distinct outside blockers across the three colours.
 - on eight or ten vertices, no witness exists anywhere in the
@@ -115,6 +118,7 @@ the essential remaining case.
 - [`DOUBLE_STAR_ANNIHILATION_LEMMA.md`](DOUBLE_STAR_ANNIHILATION_LEMMA.md)
 - [`MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md`](MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md)
 - [`EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md`](EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md)
+- [`FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md`](FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md)
 - [`THREE_COLOUR_BLOCKER_UNION_LEMMA.md`](THREE_COLOUR_BLOCKER_UNION_LEMMA.md)
 - [`FOUR_BLOCKER_IDEAL_OBSTRUCTION.md`](FOUR_BLOCKER_IDEAL_OBSTRUCTION.md)
 - [`THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md`](THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md)
@@ -223,6 +227,8 @@ python verify_multi_star_blocker_factorisation.py
 python audit_multi_star_blocker_factorisation.py
 python verify_exact_three_blocker_permanent_rank.py
 python audit_exact_three_blocker_permanent_rank.py
+python verify_fourth_order_permanent_subrank.py
+python audit_fourth_order_permanent_subrank.py
 python verify_three_colour_blocker_union.py
 python audit_three_colour_blocker_union.py
 python verify_four_blocker_ideal_obstruction.py
@@ -304,6 +310,7 @@ The main analytic tools now include:
   eight-type classification;
 - multi-star blocker surplus and exact pure-minor factorisation;
 - the exact three-blocker permanent-tensor rank obstruction;
+- the exact order-four permanent-subrank obstruction;
 - the three-colour five-vertex blocker-union lower bound;
 - four- and eight-term affine Laurent-cube factor choices with exact lattice
   CEGAR;
@@ -331,6 +338,29 @@ matrix—whereas the resulting three-term diagonal has rank three.  Hence
 some other residual coordinate product must vanish.  The proof and an
 independent `F_5` slice audit are in
 [`EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md`](EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md).
+
+The next fully tight endpoint is also impossible.  The order-four
+permanent tensor cannot restrict to a concise three-colour diagonal
+tensor.  Every local map in such a restriction would select a hyperplane
+of `C^4`.  Factoring each `2|2` flattening through the six-dimensional
+space of unordered coordinate pairs shows that flattening rank three
+forces at least three selected hyperplanes to coincide, with a common
+normal supported on at most two coordinates.  Support one destroys
+conciseness.  In the support-two case the remaining three-mode slice
+space is
+
+```text
+l * span{mn, l n, l m},
+```
+
+which contains no nonzero decomposable tensor, while a diagonal
+three-colour slice space contains three.  An alternating eight-cycle
+gives the matching lower bound two, so the subrank is exactly two.
+Consequently four fully supported zero-coupled roots cannot have a
+four-vertex total blocker union.  The symbolic reconstruction and an
+independent audit of all 24,336 ordered hyperplane-normal pairs over
+`F_5` are in
+[`FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md`](FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md).
 
 Intersecting the balanced all-bridge normal form for all three colours gives
 an exact arbitrary-order reduction.  Every edge block has at most four

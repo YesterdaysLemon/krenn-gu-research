@@ -5618,3 +5618,76 @@ tmp/exact_three_blocker_permanent_rank_audited.json
 
 The result does not exclude the fourth-blocker alternative or by itself
 return the newly exposed other-colour blocker to the original root pair.
+
+### Fourth-order permanent subrank
+
+The fully tight four-root endpoint has now been excluded over `C`.
+Write
+
+```text
+P_4 = sum_(sigma in S_4)
+        e_(sigma(0)) tensor e_(sigma(1))
+        tensor e_(sigma(2)) tensor e_(sigma(3)).
+```
+
+If `P_4` restricted to the three-colour diagonal tensor, the four local
+maps would have rank three and would select hyperplanes
+`U_i=a_i^perp` in `C^4`.  For two such hyperplanes, send `u tensor v`
+to the six off-diagonal symmetric products
+
+```text
+u[i]v[j] + u[j]v[i].
+```
+
+The permanent `2|2` flattening is the nondegenerate complement pairing
+on these six coordinates.  If the two hyperplane normals are
+independent, their pair image has dimension at least five.  If the
+normals agree and have support size `k`, the image has dimension
+`k+2`.  Hence a rank-three `2|2` flattening needs one equal-normal,
+support-at-most-two pair.  Requiring this for all three pair partitions
+forces at least three of the four hyperplanes to be equal.
+
+Support size one makes the fourth one-mode flattening rank at most one.
+For support size two, normalize the common hyperplane to
+`x[0]+x[1]=0` and write `l=x[1],m=x[2],n=x[3]`.  The fourth-mode slice
+space on the first three hyperplanes is
+
+```text
+l * span{mn, l n, l m}.
+```
+
+It contains no nonzero decomposable tensor: every member is symmetric,
+so a decomposable member would be a cube `q^3`; divisibility by `l`
+forces `q` to be a multiple of `l`, but `l^3` is absent.  A
+three-colour diagonal slice space contains three decomposable tensors,
+giving the contradiction.  Conversely, two cyclically shifted
+permutations form one alternating eight-cycle and give an explicit
+two-colour diagonal restriction.  Thus the exact subrank of `P_4` is
+two.
+
+For four fully supported pairwise zero-coupled roots, a four-vertex
+total blocker union would make those same four vertices exact blockers
+for all three colours.  All residual coordinate products are nonzero
+because every remaining outside vertex is a nonblocker.  The multi-star
+identity would therefore produce the forbidden concise diagonal
+restriction of `P_4`.  Such a root set needs at least five blockers in
+total.
+
+The primary symbolic verifier and independent `F_5` audit have SHA-256:
+
+```text
+FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md
+  2b4e18cb0ce60d64e9100c96ea690ca091c0ae0690a462d3dec752358eda6c32
+verify_fourth_order_permanent_subrank.py
+  b1d1c3f17b98dc435ef575f1b445c3f5252c33e81ece5d3b805297d56423e3f5
+audit_fourth_order_permanent_subrank.py
+  57db531e72230f36efc0cadb1d9dce91f3483eed18a34888ff21d4c0fc352f73
+tmp/fourth_order_permanent_subrank_verified.json
+  8c44ad03bf40ff451ec6f52247ac5d3f606045ecb02185188bd1103734ea70db
+tmp/fourth_order_permanent_subrank_audited.json
+  5fbe9c39d2eb979e896c88275c9a9e097b636050d073751e506f605b6498f191
+```
+
+This is an exact order-four theorem, not a proof that every higher-order
+permanent tensor also has subrank two.  Extending the flattening/slice
+mechanism beyond hyperplanes is the next analytic boundary.
