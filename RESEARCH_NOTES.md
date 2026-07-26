@@ -5480,3 +5480,80 @@ The full theorem statement and audit boundary are in
 `TWELVE_VERTEX_COMPLEMENT_PROFILE_SET_TREE_OBSTRUCTION.md`.  This
 excludes one order-twelve all-bridge profile only.  It does not close the
 other balanced profiles or the separate deeper-blocker branch.
+
+### Four-blocker ideal obstruction
+
+The three four-vertex incidence patterns left by the tight blocker-pair
+rank rule are all impossible once the full root-pair expansion is kept.
+Fix a fully supported zero-coupled root pair and suppose the union of its
+three blocker sets has four vertices `B`.  At every other outside vertex
+`v`, restrict to
+
+```text
+K_v = ker(a_v) intersect ker(b_v).
+```
+
+Because `v` blocks no colour, every coordinate functional remains
+nonzero on `K_v`.  The three residual coordinate-product tensors are
+therefore nonzero.  A generic linear functional on all residual modes is
+simultaneously nonzero on those three tensors.
+
+After applying that functional, the matching identity on the four
+blocker variables has the form
+
+```text
+sum_d lambda_d product_(i in B) z_i[d]
+  = sum_(i<j in B) F_ij L_ij,
+
+F_ij = m_i(z_i)^T [0 1; 1 0] m_j(z_j),
+lambda_0 lambda_1 lambda_2 != 0.
+```
+
+Thus the right side vanishes at any common zero of the six `F_ij`.
+Every surviving blocker-incidence orbit has such a common zero where
+exactly one diagonal term on the left remains nonzero:
+
+```text
+0,0,12,12    -> colour 1 survives,
+0,01,12,12   -> colour 2 survives,
+01,01,02,02  -> colour 1 survives.
+```
+
+For example, in the last pattern put `e_1` at the two type-02 vertices,
+which kills their two root covectors.  The exact type-01 pair has a
+nondegenerate diagonal form
+
+```text
+delta_0 z[0]w[0] + delta_1 z[1]w[1],
+```
+
+so choose a zero with both colour-1 coordinates nonzero.  All six
+root-pair generators vanish, but the colour-1 GHZ monomial does not.
+The other patterns use the same construction, with the pure singleton
+forced by the tight span dichotomy where needed.
+
+Consequently every fully supported zero-coupled root pair needs at least
+five distinct outside blocker vertices.  This is arbitrary-order and
+strictly strengthens the earlier lower bound of four.
+
+The primary verifier reconstructs the 12 labelled patterns and three
+colour orbits and checks four symbolic common-zero cases, including the
+pure and rank-two singleton subcases.  The independent bit-mask audit
+checks 544 nonzero parameter assignments over `F_5`.  Principal SHA-256
+values are:
+
+```text
+FOUR_BLOCKER_IDEAL_OBSTRUCTION.md
+  69c6b28c7be671819673a1d63133f846a0e5277a01fe05cd98e1324104474d70
+verify_four_blocker_ideal_obstruction.py
+  f64304bb2aaa478e9590eeca4e9168c7f50dbf994d14ab0d4ca73792606d3411
+audit_four_blocker_ideal_obstruction.py
+  78739a353a81f9dae4941518d2e292daf6bb87263c0e2832e9d3b5a6dc4741d8
+tmp/four_blocker_ideal_obstruction_verified.json
+  0d16f4fbd0cda4d83626ddca832e1e3b903b85bf3d7064ca72b9ab31a51d38c6
+tmp/four_blocker_ideal_obstruction_audited.json
+  ab9e04ba0124a30b2db6485f597f0d130b93dcc2ad3961af069c2aa47de2dd3d
+```
+
+The remaining incidence target is now the five-blocker boundary or a
+root-promotion argument that forces blocker surplus to propagate.
