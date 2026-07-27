@@ -54,6 +54,9 @@ strictly advance the finite frontier:
 - every source-row pair spans a target coordinate plane in at least one
   mode; consequently some local map has two coordinate rows or has the
   axial `4+1` support form `four two-colour rows + one third-colour row`.
+- more generally, for every source subset of size `s=2,3,4` and every
+  target colour, its row span contains that coordinate covector in at
+  least `s` of the five modes.
 - every fully supported zero-coupled root pair requires at least five
   distinct outside blockers across the three colours.
 - on eight or ten vertices, no witness exists anywhere in the
@@ -142,6 +145,7 @@ the essential remaining case.
 - [`FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md`](FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md)
 - [`ALL_QUADRANGLE_P5_OBSTRUCTION.md`](ALL_QUADRANGLE_P5_OBSTRUCTION.md)
 - [`P5_COORDINATE_PLANE_PAIR_COVER.md`](P5_COORDINATE_PLANE_PAIR_COVER.md)
+- [`P5_KERNEL_HALL_HIERARCHY.md`](P5_KERNEL_HALL_HIERARCHY.md)
 - [`THREE_COLOUR_BLOCKER_UNION_LEMMA.md`](THREE_COLOUR_BLOCKER_UNION_LEMMA.md)
 - [`FOUR_BLOCKER_IDEAL_OBSTRUCTION.md`](FOUR_BLOCKER_IDEAL_OBSTRUCTION.md)
 - [`THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md`](THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md)
@@ -264,6 +268,8 @@ python verify_all_quadrangle_p5_obstruction.py
 python audit_all_quadrangle_p5_obstruction.py
 python verify_p5_coordinate_plane_pair_cover.py
 python audit_p5_coordinate_plane_pair_cover.py
+python verify_p5_kernel_hall_hierarchy.py
+python audit_p5_kernel_hall_hierarchy.py
 python verify_three_colour_blocker_union.py
 python audit_three_colour_blocker_union.py
 python verify_four_blocker_ideal_obstruction.py
@@ -475,6 +481,16 @@ covers at most one.  Hence every hypothetical restriction contains
 either a map with at least two coordinate rows or an axial `4+1` map
 with four two-colour rows and one row on the third colour.  See
 [`P5_COORDINATE_PLANE_PAIR_COVER.md`](P5_COORDINATE_PLANE_PAIR_COVER.md).
+
+The evaluation obstruction extends to a Hall hierarchy.  If `s` source
+coordinates are forbidden, then `6-s` selected modes cannot be injected
+into the remaining `5-s` coordinates.  Isolating one target colour in
+the other modes proves that this colour can remain active in the common
+kernel of those rows in at most `5-s` modes.  Dually, every fixed target
+coordinate covector lies in the corresponding row span in at least
+`s` modes, for `s=2,3,4`.  This adds simultaneous pair, triple, and
+four-row quotas to the surviving axial and multiple-coordinate cases.
+See [`P5_KERNEL_HALL_HIERARCHY.md`](P5_KERNEL_HALL_HIERARCHY.md).
 
 Intersecting the balanced all-bridge normal form for all three colours gives
 an exact arbitrary-order reduction.  Every edge block has at most four

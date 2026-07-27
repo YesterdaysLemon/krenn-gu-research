@@ -19,6 +19,11 @@ every hypothetical P_5 -> Delta_3 restriction contains either
 This is not yet an exclusion of the two displayed branches and is not
 a complete solution of the Krenn--Gu conjecture.
 
+The later
+[`P5_KERNEL_HALL_HIERARCHY.md`](P5_KERNEL_HALL_HIERARCHY.md)
+strengthens the four-mode argument to every source subset of size two,
+three, or four and recovers this pair cover as its first case.
+
 ## Common-pair obstruction
 
 Suppose injective maps
