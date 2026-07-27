@@ -70,6 +70,11 @@ strictly advance the finite frontier:
   `C10` or a disjoint `C4+C6` in the mode--source bipartite graph.
 - every fully supported zero-coupled root pair requires at least five
   distinct outside blockers across the three colours.
+- for every rank-at-least-two root edge, five fixed outside
+  vertex--colour pairs have blocker determinants that are scalar
+  multiples of the root-edge equation; a rank-three root edge therefore
+  forces five one-sided complementary-colour compressions, at least
+  three at the same endpoint.
 - on eight or ten vertices, no witness exists anywhere in the
   simultaneous balanced all-bridge branch, without a support-degree
   bound.
@@ -178,6 +183,7 @@ the essential remaining case.
 - [`P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md`](P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md)
 - [`THREE_COLOUR_BLOCKER_UNION_LEMMA.md`](THREE_COLOUR_BLOCKER_UNION_LEMMA.md)
 - [`FOUR_BLOCKER_IDEAL_OBSTRUCTION.md`](FOUR_BLOCKER_IDEAL_OBSTRUCTION.md)
+- [`UNIVERSAL_FIVE_BLOCKER_DIVISIBILITY_LEMMA.md`](UNIVERSAL_FIVE_BLOCKER_DIVISIBILITY_LEMMA.md)
 - [`THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md`](THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md)
 - [`FOUR_REGULAR_BALANCED_BRIDGE_OBSTRUCTION.md`](FOUR_REGULAR_BALANCED_BRIDGE_OBSTRUCTION.md)
 - [`FIVE_REGULAR_BALANCED_BRIDGE_DIAGONAL_BACKBONE.md`](FIVE_REGULAR_BALANCED_BRIDGE_DIAGONAL_BACKBONE.md)
