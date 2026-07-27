@@ -68,6 +68,10 @@ strictly advance the finite frontier:
 - if every local map has at most three coordinate rows, then every map
   has exactly three and the ten non-coordinate cells form either one
   `C10` or a disjoint `C4+C6` in the mode--source bipartite graph.
+- in the proper all-full part of that exact-three-coordinate boundary,
+  all three support orbits are impossible over `C`; the 150 mixed
+  coefficients using all three colours already generate the unit ideal,
+  without any of the 90 two-colour mixed equations.
 - every fully supported zero-coupled root pair requires at least five
   distinct outside blockers across the three colours.
 - for every rank-at-least-two root edge, five fixed outside
@@ -128,6 +132,12 @@ focused semantic audit replays the resulting clauses exactly. The packaged
 evidence is in
 [`nonunimodular_boundary/`](research_snapshots/2026-07-27-p5-coordinate-cegar/nonunimodular_boundary/README.md).
 
+The proper-colour all-full part of the exact-three-coordinate boundary is
+also closed on its three support orbits. Exact Singular and `msolve`
+certificates, plus a semantic coefficient verifier and independent orbit
+census, are in
+[`all_full_tricolour_boundary/`](research_snapshots/2026-07-27-p5-coordinate-cegar/all_full_tricolour_boundary/README.md).
+
 ## Problem
 
 For even `n`, `d` colours, and a complex `d x d` block `W_ij` on every
@@ -181,6 +191,7 @@ the essential remaining case.
 - [`P5_SOURCE_ROW_TRICOLOUR_COVER.md`](P5_SOURCE_ROW_TRICOLOUR_COVER.md)
 - [`P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md`](P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md)
 - [`P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md`](P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md)
+- [`P5_ALL_FULL_TRICOLOUR_OBSTRUCTION.md`](P5_ALL_FULL_TRICOLOUR_OBSTRUCTION.md)
 - [`THREE_COLOUR_BLOCKER_UNION_LEMMA.md`](THREE_COLOUR_BLOCKER_UNION_LEMMA.md)
 - [`FOUR_BLOCKER_IDEAL_OBSTRUCTION.md`](FOUR_BLOCKER_IDEAL_OBSTRUCTION.md)
 - [`UNIVERSAL_FIVE_BLOCKER_DIVISIBILITY_LEMMA.md`](UNIVERSAL_FIVE_BLOCKER_DIVISIBILITY_LEMMA.md)

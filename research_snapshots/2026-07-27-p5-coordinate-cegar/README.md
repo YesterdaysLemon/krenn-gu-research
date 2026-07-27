@@ -113,6 +113,26 @@ equivalence argument, and portable verifier are in
 [`nonunimodular_boundary/`](nonunimodular_boundary/README.md). This closes
 the implementation limitation; it does not complete either finite branch.
 
+## Proper all-full tricolour boundary
+
+A later exact calculation closes one structured part of both
+exact-three-coordinate cycle families.  If every non-coordinate cell is
+fully supported and the singleton coordinate colours occur once per colour
+in every mode and source row, there are exactly three support orbits: two
+with full-cell graph `C10` and one with graph `C4+C6`.
+
+For every orbit, the 150 mixed permanent coefficients using all three
+target colours, together with the nonzero-entry and nonzero-pure-amplitude
+conditions, generate the unit ideal over `Q`.  No two-colour mixed equation
+is used.  Singular `slimgb` and an independent `msolve` conversion both
+certify all three cases, and a separate orbit census proves coverage.
+
+The portable sources, inputs, outputs, and verifier are in
+[`all_full_tricolour_boundary/`](all_full_tricolour_boundary/README.md).
+This is an exact finite theorem, but it does not cover partial
+non-coordinate supports, non-proper singleton colours, or the
+four/five-coordinate-row branch.
+
 ## Next proof obligations
 
 1. Independently replay the frozen `C10` suffix and all high-coordinate

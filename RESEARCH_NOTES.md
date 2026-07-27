@@ -6051,3 +6051,45 @@ This is not yet a global contradiction.  The remaining arbitrary-order
 target is to propagate the forced one-sided compressions through
 adjacent rank-three edges, or to combine them with the existing
 root-set blocker surplus.
+
+### Proper all-full `P_5` tricolour obstruction
+
+The exact-three-coordinate cycle dichotomy has a now-closed structured
+subboundary.  Require both non-coordinate rows in every local map to have
+full support, and require the three singleton coordinate colours to occur
+once each in every mode and every source row.
+
+An independent enumeration finds exactly three support orbits:
+
+```text
+two C10 orbits, of labelled sizes 6 and 30;
+one C4+C6 orbit, of labelled size 24.
+```
+
+For each representative, the 45 supported entries have a connected gauge
+graph.  Tree normalization leaves 26 variables.  Retaining only the 150
+mixed coefficients whose target word uses all three colours, and saturating
+by the 26 variables and three pure coefficients, gives an ideal with 151
+equations in 27 variables over `Q`.
+
+Singular `slimgb` returns `UNIT_IDEAL` for every representative.  A strict
+syntax conversion of the identical systems to `msolve 0.6.5` independently
+returns `[-1]:` for all three.  Thus the 90 two-colour mixed equations are
+not needed.
+
+The primary verifier reconstructs the coefficients from the support arrays
+and checks source, conversion, outputs, and hashes.  The separate audit
+reconstructs the full bipartite automorphism groups and orbit partition.
+
+```text
+P5_ALL_FULL_TRICOLOUR_OBSTRUCTION.md
+verify_p5_all_full_tricolour_obstruction.py
+audit_p5_all_full_tricolour_obstruction.py
+research_snapshots/2026-07-27-p5-coordinate-cegar/
+  all_full_tricolour_boundary/
+```
+
+This finite theorem does not cover partial non-coordinate support,
+non-proper singleton-colour assignments, or a local map with four or five
+coordinate rows.  Those branches remain active, and the global conjecture
+remains unresolved.
