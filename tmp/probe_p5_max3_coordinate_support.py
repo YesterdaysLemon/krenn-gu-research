@@ -407,6 +407,14 @@ def main() -> None:
         default=[],
         help="compatible full-local-signature ledger to import",
     )
+    parser.add_argument(
+        "--replay-through-state",
+        type=pathlib.Path,
+        help=(
+            "deterministically replay and validate this ledger prefix before "
+            "running fresh contradiction discovery"
+        ),
+    )
     args = parser.parse_args()
     if args.support_only_after < 0:
         raise ValueError("--support-only-after must be nonnegative")
@@ -557,6 +565,39 @@ def main() -> None:
                 else:
                     cnf.extend(P5.symmetry_clause_orbit(pool, clause))
 
+    replay_records: list[dict] = []
+    if args.replay_through_state is not None:
+        replay_state = json.loads(
+            args.replay_through_state.read_text(encoding="utf-8")
+        )
+        requested_branch = (
+            args.shape
+            if args.shape is not None
+            else args.coordinate_branch
+        )
+        replay_branch = replay_state.get(
+            "coordinate_branch",
+            replay_state.get("shape") or "max3",
+        )
+        if replay_state.get("shape") != args.shape:
+            raise ValueError("replay state shape does not match")
+        if replay_branch != requested_branch:
+            raise ValueError("replay state coordinate branch does not match")
+        replay_records = list(replay_state.get("learned_records", []))
+        if len(replay_records) < len(records):
+            raise ValueError("replay state is shorter than the loaded state")
+        for index, record in enumerate(records):
+            expected = replay_records[index]
+            if (
+                record["clause"] != expected["clause"]
+                or record["supports"] != expected["supports"]
+                or record["contradiction_mode"]
+                != expected["contradiction_mode"]
+            ):
+                raise ValueError(
+                    f"loaded state differs from replay state at record {index}"
+                )
+
     def support_key(raw_supports) -> tuple[tuple[int, ...], ...]:
         return tuple(tuple(int(mask) for mask in row) for row in raw_supports)
 
@@ -644,6 +685,81 @@ def main() -> None:
             selected_signatures = tuple(
                 allowed[index] for index in selected_signature_indices
             )
+
+            if len(records) < len(replay_records):
+                expected = replay_records[len(records)]
+                expected_supports = tuple(
+                    tuple(int(mask) for mask in row)
+                    for row in expected["supports"]
+                )
+                if supports != expected_supports:
+                    raise AssertionError(
+                        "deterministic replay support mismatch at record "
+                        f"{len(records)}"
+                    )
+                clause = [int(literal) for literal in expected["clause"]]
+                for literal in clause:
+                    variable_true = abs(literal) in positive_model
+                    literal_true = (
+                        variable_true if literal > 0 else not variable_true
+                    )
+                    if literal_true:
+                        raise AssertionError(
+                            "replayed clause is not false on its model at "
+                            f"record {len(records)}"
+                        )
+                keys = [pool.obj(abs(literal)) for literal in clause]
+                if any(key is None for key in keys):
+                    raise AssertionError(
+                        "replayed clause uses an unknown variable"
+                    )
+                if automorphisms:
+                    symmetric_clauses = shape_clause_orbit(
+                        pool, clause, allowed, automorphisms
+                    )
+                elif args.shape is not None:
+                    symmetric_clauses = [clause]
+                elif all(key[0] == "local_pattern" for key in keys):
+                    symmetric_clauses = P5.local_pattern_clause_orbit(
+                        pool, clause, allowed
+                    )
+                else:
+                    symmetric_clauses = P5.symmetry_clause_orbit(
+                        pool, clause
+                    )
+                for symmetric_clause in symmetric_clauses:
+                    solver.add_clause(symmetric_clause)
+                records.append(expected)
+                replay_mode = expected["contradiction_mode"]
+                replay_support_key = support_key(expected_supports)
+                if replay_mode == "singular_unit_ideal":
+                    support_signature_units[replay_support_key] += 1
+                elif replay_mode == "singular_support_unit_ideal":
+                    support_only_attempted.add(replay_support_key)
+                if len(records) % 10 == 0:
+                    print(
+                        json.dumps(
+                            {
+                                "replayed": len(records),
+                                "through": len(replay_records),
+                                "last_mode": replay_mode,
+                                "last_clause_length": len(clause),
+                            }
+                        ),
+                        flush=True,
+                    )
+                if len(records) == len(replay_records):
+                    print(
+                        json.dumps(
+                            {
+                                "status": "REPLAY_COMPLETE",
+                                "records": len(records),
+                            }
+                        ),
+                        flush=True,
+                    )
+                continue
+
             lattice = P5.signed_lattice_result(supports)
             collision = (
                 None

@@ -86,7 +86,7 @@ and recorded outcomes, but the current default auditor expects those raw
 files. A portable artifact bundle or a fresh `--rerun-singular` audit is
 still required for full CAS replay from a new clone.
 
-## Known limitation found at the boundary
+## Historical limitation and post-snapshot resolution
 
 The high-coordinate run encountered a valid coefficient-relation lattice
 whose selected pivot minor had determinant `2`. The current Laurent
@@ -100,12 +100,23 @@ from 430 to 580 exclusions before its bounded harness ended, but it did not
 reach the determinant-2 model again; runtime confirmation of that exact
 path remains pending.
 
+That pending runtime confirmation is now complete. The live generator
+retains a non-unimodular relation lattice as an implicit saturated binomial
+ideal. A guarded deterministic replay reproduced all 430 historical clauses
+and then reached three actual determinant-`2` strata. Singular `slimgb`, an
+independent Singular `std` regeneration, and `msolve 0.6.5` all return the
+unit ideal for all three. A focused semantic audit also replays the three
+resulting five-literal clauses exactly.
+
+The sources, logs, msolve inputs/outputs, normalized ledger, mathematical
+equivalence argument, and portable verifier are in
+[`nonunimodular_boundary/`](nonunimodular_boundary/README.md). This closes
+the implementation limitation; it does not complete either finite branch.
+
 ## Next proof obligations
 
-1. Extend the Laurent parametrization to non-unimodular relation lattices,
-   or certify those strata with a second exact algebra system.
-2. Independently replay the frozen `C10` suffix and all high-coordinate
+1. Independently replay the frozen `C10` suffix and all high-coordinate
    records.
-3. Finish both `C10` and `C4+C6`, then the four/five-coordinate-row branch.
-4. Only after finite exhaustion, lift the `P_5` obstruction back to the
+2. Finish both `C10` and `C4+C6`, then the four/five-coordinate-row branch.
+3. Only after finite exhaustion, lift the `P_5` obstruction back to the
    arbitrary-order graph problem.

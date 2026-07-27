@@ -116,6 +116,13 @@ That snapshot is deliberately labeled exploratory: its active ledgers are
 not complete branch certificates and do not change the global
 **UNRESOLVED** status above.
 
+The snapshot's non-unimodular Laurent failure has since been reproduced and
+closed on three actual determinant-`2` strata. Two Singular algorithms and
+an independent `msolve` conversion all certify the unit ideal, while a
+focused semantic audit replays the resulting clauses exactly. The packaged
+evidence is in
+[`nonunimodular_boundary/`](research_snapshots/2026-07-27-p5-coordinate-cegar/nonunimodular_boundary/README.md).
+
 ## Problem
 
 For even `n`, `d` colours, and a complex `d x d` block `W_ij` on every

@@ -115,6 +115,14 @@ def main() -> None:
             "coefficient stratum"
         ),
     )
+    parser.add_argument(
+        "--implicit-binomial-ideal",
+        action="store_true",
+        help=(
+            "keep pair-incidence binomials as saturated ideal equations "
+            "instead of eliminating them, for differential testing"
+        ),
+    )
     args = parser.parse_args()
     if args.indices is not None:
         indices: tuple[int, ...] | None = tuple(
@@ -197,25 +205,33 @@ def main() -> None:
             elif Fraction(raw_constant) != 1:
                 raise RuntimeError("gauge projection exposed a contradiction")
 
+    relation_rank = 0
+    pivot_determinant: int | None = None
+    use_implicit_relations = False
+    relation_polynomials: list[str] = []
     if relation_rows:
         relation_matrix = Matrix(relation_rows)
         independent_rows = list(relation_matrix.T.rref()[1])
         basis = relation_matrix[independent_rows, :]
+        relation_rank = len(independent_rows)
         pivot_columns = list(basis.rref()[1])
         pivot_matrix = basis[:, pivot_columns]
-        determinant = int(pivot_matrix.det())
-        if abs(determinant) != 1:
-            raise RuntimeError(
-                f"non-unimodular pivot matrix determinant {determinant}"
-            )
+        pivot_determinant = int(pivot_matrix.det())
         inverse = pivot_matrix.inv()
-        if any(value.q != 1 for value in inverse):
-            raise RuntimeError("pivot inverse is not integral")
-        nonpivot_columns = [
-            index
-            for index in range(len(free_edges))
-            if index not in pivot_columns
-        ]
+        use_implicit_relations = (
+            args.implicit_binomial_ideal
+            or abs(pivot_determinant) != 1
+            or any(value.q != 1 for value in inverse)
+        )
+        if use_implicit_relations:
+            pivot_columns = []
+            nonpivot_columns = list(range(len(free_edges)))
+        else:
+            nonpivot_columns = [
+                index
+                for index in range(len(free_edges))
+                if index not in pivot_columns
+            ]
         basis_constants = [
             relation_constants[index] for index in independent_rows
         ]
@@ -232,7 +248,7 @@ def main() -> None:
         exponent = [0] * len(nonpivot_columns)
         exponent[final_index] = 1
         free_expressions[free_index] = (Fraction(1), tuple(exponent))
-    if pivot_columns:
+    if pivot_columns and not use_implicit_relations:
         free_block = basis[:, nonpivot_columns]
         exponent_matrix = -inverse * free_block
         for pivot_row, free_index in enumerate(pivot_columns):
@@ -248,17 +264,38 @@ def main() -> None:
     assert all(expression is not None for expression in free_expressions)
     expressions = tuple(expression for expression in free_expressions if expression)
 
-    # Replay every original relation under the parameterization.
-    for row, expected in zip(relation_rows, relation_constants):
-        value: Expression = (
-            Fraction(1),
-            (0,) * len(nonpivot_columns),
-        )
-        for expression, exponent in zip(expressions, row):
-            if exponent:
-                value = multiply(value, power(expression, exponent))
-        assert all(exponent == 0 for exponent in value[1])
-        assert value[0] == expected
+    if use_implicit_relations:
+        # On the coefficient torus, x^row = expected is equivalent to the
+        # polynomial x^(row_+) - expected*x^(row_-) = 0.  Keeping these
+        # binomials in the saturated ideal avoids choosing roots when the
+        # relation lattice has a non-unimodular pivot minor.
+        for row, expected in zip(relation_rows, relation_constants):
+            positive = tuple(max(exponent, 0) for exponent in row)
+            negative = tuple(max(-exponent, 0) for exponent in row)
+            relation_polynomials.append(
+                polynomial_string(
+                    {
+                        positive: Fraction(1),
+                        negative: -expected,
+                    },
+                    final_names,
+                )
+            )
+        relation_polynomials = list(dict.fromkeys(relation_polynomials))
+        if any(polynomial == "0" for polynomial in relation_polynomials):
+            raise RuntimeError("implicit relation unexpectedly vanished")
+    else:
+        # Replay every original relation under the parameterization.
+        for row, expected in zip(relation_rows, relation_constants):
+            value: Expression = (
+                Fraction(1),
+                (0,) * len(nonpivot_columns),
+            )
+            for expression, exponent in zip(expressions, row):
+                if exponent:
+                    value = multiply(value, power(expression, exponent))
+            assert all(exponent == 0 for exponent in value[1])
+            assert value[0] == expected
 
     one: Expression = (Fraction(1), (0,) * len(nonpivot_columns))
 
@@ -312,8 +349,13 @@ def main() -> None:
     saturation_factors = final_names + pure_polynomials
     saturation = "*".join(saturation_factors) if saturation_factors else "1"
     ring_variables = final_names + ["z"]
-    equations = list(dict.fromkeys(mixed_polynomials))
+    equations = relation_polynomials + list(dict.fromkeys(mixed_polynomials))
     equations.append(f"z*({saturation})-1")
+    binomial_handling = (
+        "implicit saturated ideal"
+        if use_implicit_relations
+        else "unimodular elimination"
+    )
     program = "\n".join(
         [
             f"// signature source: {signature_label}",
@@ -325,7 +367,10 @@ def main() -> None:
             ),
             f"// nonzero entries: {len(edges)}",
             f"// gauge-free variables: {len(free_edges)}",
-            f"// binomial relation rank: {len(pivot_columns)}",
+            f"// binomial relation rank: {relation_rank}",
+            f"// binomial handling: {binomial_handling}",
+            f"// selected pivot determinant: {pivot_determinant}",
+            f"// explicit binomial equations: {len(relation_polynomials)}",
             f"// Laurent parameters: {len(final_names)}",
             f"// distinct mixed equations: {len(set(mixed_polynomials))}",
             f"ring r=0,({','.join(ring_variables)}),{args.order};",
@@ -348,6 +393,9 @@ def main() -> None:
                     "signature_source": signature_label,
                     "supports": supports,
                     "support_only": args.support_only,
+                    "binomial_handling": binomial_handling,
+                    "pivot_determinant": pivot_determinant,
+                    "relation_polynomials": relation_polynomials,
                     "variables": final_names,
                     "pure": pure_records,
                     "mixed": mixed_records,
@@ -363,7 +411,10 @@ def main() -> None:
             "signature_indices": indices,
             "nonzero_entries": len(edges),
             "gauge_free_variables": len(free_edges),
-            "relation_rank": len(pivot_columns),
+            "relation_rank": relation_rank,
+            "binomial_handling": binomial_handling,
+            "pivot_determinant": pivot_determinant,
+            "relation_equations": len(relation_polynomials),
             "laurent_parameters": len(final_names),
             "mixed_equations": len(set(mixed_polynomials)),
             "support_only": args.support_only,
