@@ -133,10 +133,31 @@ This is an exact finite theorem, but it does not cover partial
 non-coordinate supports, non-proper singleton colours, or the
 four/five-coordinate-row branch.
 
+## Entire all-full boundary
+
+The apparent non-proper singleton-colour boundary is now closed as well.
+The source-row tricolour cover already forces the singleton colours in
+each source column to be `0,1,2`.  An exhaustive quotient by the
+automorphisms of `C10` and `C4+C6`, together with global colour
+permutation, gives 226 support orbits.
+
+The complex pair-incidence catalogue and Hall quotas exclude 213 support
+orbits.  Three row-proper orbits are exactly those covered by the earlier
+theorem.  The other ten supports contain 198 viable five-tuples of local
+pair signatures.  Their exact Laurent systems all generate the unit ideal
+over `Q`, and hence have no solutions over `C`.
+
+The finite audit, semantic system regenerator, hashes, Singular results,
+and partial second-engine cross-check are in
+[`all_full_boundary/`](all_full_boundary/README.md).  This imports one
+sound all-full blocking clause into each fixed-shape search; it does not
+make either ledger an exhaustive certificate.
+
 ## Next proof obligations
 
 1. Independently replay the frozen `C10` suffix and all high-coordinate
    records.
-2. Finish both `C10` and `C4+C6`, then the four/five-coordinate-row branch.
+2. Finish the partial-support parts of both `C10` and `C4+C6`, then the
+   four/five-coordinate-row branch.
 3. Only after finite exhaustion, lift the `P_5` obstruction back to the
    arbitrary-order graph problem.

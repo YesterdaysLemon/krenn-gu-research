@@ -375,6 +375,14 @@ def main() -> None:
         ),
     )
     parser.add_argument("--no-shape-symmetry", action="store_true")
+    parser.add_argument(
+        "--no-all-full-theorem",
+        action="store_true",
+        help=(
+            "disable the certified all-full blocking clause; intended only "
+            "for historical differential replay"
+        ),
+    )
     parser.add_argument("--general-state", type=pathlib.Path)
     parser.add_argument(
         "--artifact-dir",
@@ -500,6 +508,19 @@ def main() -> None:
             cnf.append(
                 [-pool.id(("local_pattern", mode, pattern_index))]
             )
+    all_full_boundary_clause = None
+    if args.shape is not None and not args.no_all_full_theorem:
+        all_full_boundary_clause = [
+            -pool.id(P5.entry_key(mode, source, colour))
+            for mode, noncoordinate_sources in enumerate(
+                SHAPES[args.shape]
+            )
+            for source in noncoordinate_sources
+            for colour in P5.COLOURS
+        ]
+        if len(all_full_boundary_clause) != 30:
+            raise AssertionError("all-full boundary clause changed")
+        cnf.append(all_full_boundary_clause)
     if args.shape is None and args.coordinate_branch == "high":
         high_coordinate_patterns = tuple(
             pattern_index
@@ -635,6 +656,11 @@ def main() -> None:
                     len(patterns)
                     for patterns in forbidden_patterns_by_mode
                 ],
+                "all_full_boundary_clause_literals": (
+                    len(all_full_boundary_clause)
+                    if all_full_boundary_clause is not None
+                    else 0
+                ),
                 "preloaded": len(records),
             }
         ),
@@ -656,6 +682,11 @@ def main() -> None:
                     "shape_lex_leaders": shape_lex_leaders,
                     "general_preload": general_preload,
                     "global_preloads": global_preloads,
+                    "all_full_boundary_clause_literals": (
+                        len(all_full_boundary_clause)
+                        if all_full_boundary_clause is not None
+                        else 0
+                    ),
                     "after_models": model_index,
                     "learned_records": records,
                 }
@@ -1051,6 +1082,11 @@ def main() -> None:
                                 ),
                                 "general_preload": general_preload,
                                 "global_preloads": global_preloads,
+                                "all_full_boundary_clause_literals": (
+                                    len(all_full_boundary_clause)
+                                    if all_full_boundary_clause is not None
+                                    else 0
+                                ),
                                 "learned_records": records,
                             },
                             indent=2,
@@ -1074,6 +1110,11 @@ def main() -> None:
                     "shape_lex_leaders": shape_lex_leaders,
                     "general_preload": general_preload,
                     "global_preloads": global_preloads,
+                    "all_full_boundary_clause_literals": (
+                        len(all_full_boundary_clause)
+                        if all_full_boundary_clause is not None
+                        else 0
+                    ),
                     "learned_records": records,
                 },
                 indent=2,

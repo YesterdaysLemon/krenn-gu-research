@@ -6093,3 +6093,75 @@ This finite theorem does not cover partial non-coordinate support,
 non-proper singleton-colour assignments, or a local map with four or five
 coordinate rows.  Those branches remain active, and the global conjecture
 remains unresolved.
+
+### Entire all-full exact-three-coordinate `P_5` obstruction
+
+The extra row-proper hypothesis in the preceding theorem is no longer
+needed.  In the exact-three-coordinate branch, the source-row tricolour
+cover uses all 15 available coordinate cells.  Every source column
+therefore contains the three singleton colours exactly once, while the
+ten non-coordinate cells form `C10` or `C4+C6`.
+
+For either fixed full-cell graph there are
+
+```text
+6^5 = 7,776
+```
+
+labelled singleton assignments.  Quotienting by the graph automorphism
+group and global colour permutation gives 148 `C10` support orbits and 78
+`C4+C6` support orbits.  The exact orbit-size histograms are
+
+```text
+C10:   6:1, 30:35, 60:112
+C4+C6: 12:1, 24:2, 36:7, 48:1, 72:31, 144:36.
+```
+
+Reconstructing the certified 6,495-pattern complex pair-signature
+catalogue and imposing the 30 pair Hall quotas excludes 213 of the 226
+supports.  The 13 viable supports consist of the three row-proper orbits
+already excluded above and ten nonproper supports.  Those ten supports
+have exactly 198 viable five-tuples of local signatures.
+
+For each of the 198 tuples, the 45 supported entries have a connected
+gauge graph.  Tree normalization leaves 26 variables.  The positive
+pair-incidence minors have rank five and a unimodular pivot, leaving 21
+Laurent parameters.  Expanding all nonzero mixed permanent coefficients
+and saturating by the parameters and three pure coefficients produces the
+mixed-equation histogram
+
+```text
+216:   9
+220:  18
+230:  45
+240: 126.
+```
+
+Singular `slimgb` in the global `dp` order returns the unit ideal for 186
+direct Rabinowitsch systems.  Replacing the one product saturation
+equation by 24 exactly equivalent inverse equations certifies 15 cases,
+three overlapping the direct set, so the Singular union is all 198.
+The systems omit negative incidence inequations, making them safe
+relaxations of the exact signature strata.  The same split conversion to
+`msolve 0.10.1` independently returns the unit ideal in 111 cases.
+
+The audit regenerates both automorphism groups, all labelled assignments,
+the support quotient, the catalogue quotas, and the 198 case keys.  The
+primary verifier independently regenerates every incidence minor,
+unimodular Laurent substitution, permanent coefficient, and saturation
+equation, checks exact source equality and artifact hashes, and requires a
+unit-ideal result for every case.
+
+```text
+P5_ALL_FULL_BOUNDARY_OBSTRUCTION.md
+audit_p5_all_full_boundary_obstruction.py
+generate_p5_all_full_signature_system.py
+verify_p5_all_full_boundary_obstruction.py
+research_snapshots/2026-07-27-p5-coordinate-cegar/
+  all_full_boundary/
+```
+
+This closes the entire all-full layer of both exact-three-coordinate cycle
+architectures.  The remaining finite boundaries contain a support mask
+`3`, `5`, or `6`, or have four/five coordinate rows in some mode.  The
+global conjecture remains unresolved.
