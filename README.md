@@ -46,6 +46,9 @@ strictly advance the finite frontier:
 - every local map in a hypothetical restriction `P_5 -> Delta_3` must
   contain a nonzero source-coordinate row supported on a single target
   colour.
+- the five rows of each such local map fall into three exact projective
+  strata: at least two coordinate rows, a one-coordinate line type, or
+  a one-coordinate rigid complete-quadrangle type.
 - every fully supported zero-coupled root pair requires at least five
   distinct outside blockers across the three colours.
 - on eight or ten vertices, no witness exists anywhere in the
@@ -131,6 +134,7 @@ the essential remaining case.
 - [`SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md`](SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md)
 - [`SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md`](SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md)
 - [`FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md`](FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md)
+- [`FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md`](FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md)
 - [`THREE_COLOUR_BLOCKER_UNION_LEMMA.md`](THREE_COLOUR_BLOCKER_UNION_LEMMA.md)
 - [`FOUR_BLOCKER_IDEAL_OBSTRUCTION.md`](FOUR_BLOCKER_IDEAL_OBSTRUCTION.md)
 - [`THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md`](THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md)
@@ -247,6 +251,8 @@ python verify_support_four_p5_contraction_restriction.py
 python audit_support_four_p5_contraction_restriction.py
 python verify_five_row_projective_incidence.py
 python audit_five_row_projective_incidence.py
+python verify_five_row_projective_normal_forms.py
+python audit_five_row_projective_normal_forms.py
 python verify_three_colour_blocker_union.py
 python audit_three_colour_blocker_union.py
 python verify_four_blocker_ideal_obstruction.py
@@ -423,6 +429,19 @@ There are 68 singleton-placement orbits after source, mode, and colour
 symmetry.  The exact proof and an independent census of 376,992
 five-point multisets over `F_5` are in
 [`FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md`](FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md).
+
+The forced singleton has a short exact geometric refinement.  If it is
+the only coordinate row, the other four projective rows either lie on
+one coordinate-bearing line or form a complete quadrangle whose three
+diagonal points are exactly the target coordinate points.  The latter
+is rigid up to diagonal rescaling, with representatives
+`(1,1,1),(-1,1,1),(1,-1,1),(1,1,-1)`.  In the line case a target vector
+of support at most two maps to a source vector of support exactly one.
+Thus every hypothetical local map belongs to one of only three
+geometric strata: at least two coordinate rows, line type, or rigid
+quadrangle type.  An independent `F_5` census classifies all 2,556
+spanning pair-incidence configurations.  See
+[`FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md`](FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md).
 
 Intersecting the balanced all-bridge normal form for all three colours gives
 an exact arbitrary-order reduction.  Every edge block has at most four

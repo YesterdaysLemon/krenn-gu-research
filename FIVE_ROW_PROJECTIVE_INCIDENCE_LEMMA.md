@@ -127,7 +127,9 @@ coordinate point.
 
 The singleton row in (4) is not necessarily isolated in its source
 coordinate or target colour, and singleton rows chosen in different
-modes need not use different source coordinates.  The next finite
-frontier is the 68 orbits of five singleton placements under source,
-mode, and target-colour symmetry, together with the remaining exact
-permanent cancellation equations.
+modes need not use different source coordinates.  There are 68 orbits
+of five singleton placements under source, mode, and target-colour
+symmetry.  The later
+[`FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md`](FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md)
+refines each local map into three geometric strata; the exact permanent
+cancellation equations across the five modes remain.
