@@ -40,6 +40,12 @@ survivor, because deleting equations can make a Gröbner calculation
 harder.  Term counts alone also do not prove that two cores are related
 by a Laurent change of variables.
 
+A monomial-hypergraph refinement separates those 55 supports into 32
+classes.  Only the original support is identical to the proved core
+under a plain variable relabelling.  Thus a reusable theorem needs
+genuine Laurent/gauge transformations or several different sparse
+identities; the term-count rectangle is not itself the lemma.
+
 The next useful test is therefore structural, not another longer batch:
 
 1. encode each five-polynomial system as a monomial-incidence
@@ -68,8 +74,16 @@ falls below 20 percent.
 
 This remains a finite search, but it is sustainable enough to produce a
 small survivor catalogue on which Routes A and C can learn structural
-certificates.  The `C4+C6` exact-three run completed with 5,993
-support-semantic survivor orbits.
+certificates.  The exact-three runs completed with:
+
+```text
+C4+C6:  5,993 support-semantic survivor orbits
+C10:   11,751 support-semantic survivor orbits
+total: 17,744 support-semantic survivor orbits.
+```
+
+These catalogues are still exploratory until independently regenerated
+and packaged with their algebraic obstruction artifacts.
 
 ## Route C: Grassmannian and Pluecker elimination
 
@@ -115,14 +129,30 @@ degree-three polynomial is symmetric in those copies.  The contraction
 is therefore identically zero.  Degree six, using two epsilon tensors
 per mode, is the first natural invariant search space.
 
-A naive 30-index degree-six contraction is computationally unsuitable.
-The viable version should work in the
-`S_6` representation of shape `(2,2,2)`, whose local dimension is five,
-and search the invariant part of its fifth tensor power.  This reduces
-the problem from raw tensor-index contraction to a small
-representation-theoretic linear algebra calculation over a finite
-field.  Any candidate separator must then be checked exactly over the
-integers or rationals.
+A naive 30-index degree-six contraction is computationally unsuitable,
+but the symmetry-reduced search space is small.  Exact Young
+seminormal-form character arithmetic verifies that the `S_6`
+representation of shape `(2,2,2)` has dimension five and that
+
+```text
+dimension (([2,2,2]) tensor power 5)^(S_6) = 11.
+```
+
+Thus there are only eleven degree-six scalar invariants to test.
+`analyze_p5_degree_six_invariant_space.py` checks the Coxeter relations,
+the complete `S_6` character table, character orthogonality, and the
+11-dimensional multiplicity.
+
+That remaining test is now exact and negative.  Eleven explicit
+epsilon-pair contractions have a generic evaluation minor with
+determinant `1 mod 5`, so they form a basis.  Their pullbacks along
+explicit local restrictions of `P_5` have an evaluation minor with
+determinant `2 mod 5`.  The pullback is therefore injective: no nonzero
+degree-six `SL(3)^5` scalar invariant vanishes on every `P_5`
+restriction.  This closes the simple degree-six separator route, though
+it does not exclude higher-degree invariant relations or non-invariant
+equations.  The exact proof map is
+`P5_DEGREE_SIX_INVARIANT_PULLBACK.md`.
 
 ## Route E: Fourier charge and Gaussian moments
 
@@ -149,8 +179,11 @@ unobserved sectors; otherwise this language is only a reformulation.
 
 1. finish the exact-three SAT survivor catalogue with Route B;
 2. learn and prove sparse forbidden patterns with Route A;
-3. run the finite-field degree-six invariant test from Route D;
-4. use Route C if the survivor supports fall into few Grassmannian
+3. use Route C if the survivor supports fall into few Grassmannian
    matroid strata;
-5. keep Route E as a source of identities, but require a
+4. keep Route E as a source of identities, but require a
    postselection-only elimination before investing in it.
+
+Route D's homogeneous degree-six scalar separator has been ruled out
+exactly; revisit invariant theory only with a specific higher-degree or
+non-invariant construction.

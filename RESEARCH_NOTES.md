@@ -6291,3 +6291,35 @@ three partial non-coordinate cells.  A symmetry-broken exact-cardinality
 SAT enumeration avoids materializing the 50,388,480 labelled supports in
 the next layer.  The four/five-coordinate branch and the arbitrary-order
 conjecture remain unresolved.
+
+### Degree-six invariant strategy boundary
+
+An exact representation-theoretic calculation closes the first natural
+scalar-invariant separator route.  For five qutrit modes, the
+degree-three determinant contraction vanishes by odd-mode antisymmetry.
+At degree six, the local `S_6` Specht module has shape `(2,2,2)` and
+dimension five.  Exact character arithmetic gives
+
+```text
+dimension (([2,2,2]) tensor power 5)^(S_6) = 11.
+```
+
+Eleven explicit epsilon-pair contractions form a basis: their generic
+evaluation determinant is `1 mod 5`.  Evaluating the same basis on
+deterministically generated local restrictions of `P_5` gives an
+`11 x 11` determinant of `2 mod 5`.  Therefore the pullback from
+degree-six `SL(3)^5` scalar invariants to the `P_5` restriction family
+is injective over characteristic zero.
+
+Consequently no nonzero invariant of this precise type vanishes on the
+entire restriction image.  This is a rigorous negative result about one
+strategy, not an obstruction to `P_5 -> Delta_3` and not a solution of
+the global conjecture.  Higher-degree invariant relations,
+non-invariant equations, sparse Laurent identities, and Grassmannian
+incidence elimination remain open routes.
+
+```text
+P5_DEGREE_SIX_INVARIANT_PULLBACK.md
+analyze_p5_degree_six_invariant_space.py
+verify_p5_degree_six_invariant_pullback.py
+```
