@@ -5744,3 +5744,49 @@ three-plane with any source coordinate three-plane now shows that the
 span of every pair of its five row covectors must contain one of the
 three target coordinate covectors.  Classifying that five-point
 projective incidence condition is the next exact boundary.
+
+### Support-four `P_5` contraction is positive
+
+The support-at-most-three obstruction cannot be extended to support
+four.  For the canonical contraction of `P_5` by `(1,1,1,1,0)`, the
+four integer `5 x 3` matrices in
+`SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md` give exactly
+
+```text
+12 Delta_3.
+```
+
+All four maps have column rank three.  Direct expansion leaves precisely
+the three diagonal target coefficients, each equal to 12, among all 81
+coefficients.
+
+The integer point is the specialization `(u,v,w)=(0,0,-1)` of a family
+on
+
+```text
+u v w - u v - u w - u - v w - v - w - 1 = 0.
+```
+
+Modulo this relation, all 78 off-diagonal coefficients vanish and each
+diagonal coefficient is `-12(u+v+w)`.  Independent finite-field audits
+check 19 nonsingular family points over `F_5` and 39 over `F_7`.
+Coordinate scaling shows that every contraction vector with exactly
+four nonzero entries is equivalent to the canonical one.
+
+```text
+SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md
+  4ec294ed43bb0d450c6287c0877a00b3568fe36123c38cc82179ea091880217a
+verify_support_four_p5_contraction_restriction.py
+  d2c1983a5fb13f242083103b2a4317fc4ef9aa2dff96b6228f87101398bacae1
+audit_support_four_p5_contraction_restriction.py
+  fd2e2707f9f7c5efc99e31d27fee64aadd08ee7c74b157767106dff20dc3ee3f
+tmp/support_four_p5_contraction_restriction_verified.json
+  9c40ae8529c40f348faa7ef83a0974692adc6f852c5292d943e23ddcb566d975
+tmp/support_four_p5_contraction_restriction_audited.json
+  b62ea8b3d1fbfd6e75c87f0812e2abe05bb3d1d700c5627fe5189e168b49bda0
+```
+
+This is a local tensor restriction, not a `P_5 -> Delta_3` restriction
+and not a graph witness.  It explains the bounded numerical solutions
+in the support-four probe and establishes that the contraction strategy
+stops sharply at support three.
