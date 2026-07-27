@@ -5790,3 +5790,50 @@ This is a local tensor restriction, not a `P_5 -> Delta_3` restriction
 and not a graph witness.  It explains the bounded numerical solutions
 in the support-four probe and establishes that the contraction strategy
 stops sharply at support three.
+
+### Five-row projective incidence
+
+Although support-four contractions are positive, the support-at-most-three
+theorem still constrains every local map in a hypothetical
+`P_5 -> Delta_3` restriction.  If `r_0,...,r_4` are its five row
+covectors, then for every pair `p,q`,
+
+```text
+span(r_p,r_q) contains one of e_0^*,e_1^*,e_2^*.
+```
+
+Indeed, the common kernel of `r_p,r_q` maps into a source coordinate
+three-plane.  A full-target-support vector there would contract the
+claimed restriction to the forbidden support-at-most-three quartic
+restriction.
+
+A projective-plane argument now forces at least one `r_p` to be a
+coordinate covector.  If all five projective rows were non-coordinate,
+no three could be collinear.  Every triangle would therefore have its
+three sides pass through the three distinct coordinate points.  This
+would be a three-edge-colouring of `K_5` in which every triangle is
+rainbow, forcing four different incident colours at any vertex.
+
+Thus every one of the five local maps has a nonzero singleton row.
+The primary verifier checks all `3^10 = 59,049` edge colourings and also
+counts 68 singleton-placement orbits.  The independent `F_5` audit
+checks 376,992 five-point multisets; 2,556 span and satisfy the pair
+incidence condition, and all 2,556 contain a coordinate point.
+
+```text
+FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md
+  9c6aa200cdbf760d0e836f90eaab0804b1dda0c6f0c6baff354a8a57741386ed
+verify_five_row_projective_incidence.py
+  e67903169e0d3137125184c7f69f17a1f212f88bc5b7bddcccba5b0633863ec7
+audit_five_row_projective_incidence.py
+  03de5004b69b94d518004af395abb401cef39469481076702579a52caba1a540
+tmp/five_row_projective_incidence_verified.json
+  1f0689b4a48f6579511aa85212ecbce11b989b69ddd238b5523b07820b72a86b
+tmp/five_row_projective_incidence_audited.json
+  ac6bec1887922898759872c7825c39b01c1782ea07f7e9709c15c2f6ed645c2e
+```
+
+A first constrained numerical pass over all 68 placement orbits found
+only rank-collapsing residual-one endpoints after polishing.  This is
+exploratory rather than a proof.  The exact next task is to combine the
+singleton placements with the mixed-row permanent identities.

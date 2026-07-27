@@ -43,6 +43,9 @@ strictly advance the finite frontier:
 - in sharp contrast, every support-four contraction of the order-five
   permanent tensor has subrank at least three; an explicit integer
   restriction produces `12 Delta_3`.
+- every local map in a hypothetical restriction `P_5 -> Delta_3` must
+  contain a nonzero source-coordinate row supported on a single target
+  colour.
 - every fully supported zero-coupled root pair requires at least five
   distinct outside blockers across the three colours.
 - on eight or ten vertices, no witness exists anywhere in the
@@ -127,6 +130,7 @@ the essential remaining case.
 - [`FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md`](FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md)
 - [`SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md`](SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md)
 - [`SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md`](SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md)
+- [`FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md`](FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md)
 - [`THREE_COLOUR_BLOCKER_UNION_LEMMA.md`](THREE_COLOUR_BLOCKER_UNION_LEMMA.md)
 - [`FOUR_BLOCKER_IDEAL_OBSTRUCTION.md`](FOUR_BLOCKER_IDEAL_OBSTRUCTION.md)
 - [`THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md`](THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md)
@@ -241,6 +245,8 @@ python verify_support_three_p5_contraction_subrank.py
 python audit_support_three_p5_contraction_subrank.py
 python verify_support_four_p5_contraction_restriction.py
 python audit_support_four_p5_contraction_restriction.py
+python verify_five_row_projective_incidence.py
+python audit_five_row_projective_incidence.py
 python verify_three_colour_blocker_union.py
 python audit_three_colour_blocker_union.py
 python verify_four_blocker_ideal_obstruction.py
@@ -325,6 +331,7 @@ The main analytic tools now include:
 - the exact order-four permanent-subrank obstruction;
 - the support-at-most-three `P_5` contraction subrank obstruction;
 - the explicit support-four `P_5` contraction restriction to `Delta_3`;
+- the five-row projective incidence/singleton-row lemma;
 - the three-colour five-vertex blocker-union lower bound;
 - four- and eight-term affine Laurent-cube factor choices with exact lattice
   CEGAR;
@@ -403,6 +410,19 @@ point and the family.  This positive restriction is not a restriction
 of `P_5` itself, but it proves that the tempting support-four extension
 of the contraction obstruction is false.  See
 [`SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md`](SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md).
+
+The surviving `P_5` maps nevertheless have a forced zero pattern.
+Intersecting a local three-plane with any source coordinate
+three-plane and applying the support-at-most-three theorem shows that
+the span of every pair of its five row covectors contains a target
+coordinate covector.  Five non-coordinate projective points with this
+property would colour every edge of `K_5` by one of three coordinate
+points and make every triangle rainbow, which is impossible at a
+degree-four vertex.  Hence every local map has a nonzero singleton row.
+There are 68 singleton-placement orbits after source, mode, and colour
+symmetry.  The exact proof and an independent census of 376,992
+five-point multisets over `F_5` are in
+[`FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md`](FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md).
 
 Intersecting the balanced all-bridge normal form for all three colours gives
 an exact arbitrary-order reduction.  Every edge block has at most four
