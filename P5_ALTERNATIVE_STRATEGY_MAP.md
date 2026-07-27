@@ -74,6 +74,24 @@ monomial-incidence systems themselves and to record whether each
 contradiction is affine or needs Laurent saturation.  See
 `probe_p5_c10_joint_affine_class.py`.
 
+A finer algebraic pattern already has substantial coverage.  If three
+forbidden coefficients have the form
+
+```text
+P=1+m*A,  Q=1+m*B,  R=A+B,
+```
+
+then `P+Q-m*R=2`, an immediate characteristic-zero contradiction.  An
+independent bitmask scan finds this binary fork in exactly 1,328 of the
+11,751 audited `C10` orbits, and the original generator symbolically
+replays all 1,328 identities.  This needs neither saturation nor pure
+nonzero assumptions.  See `P5_C10_BINARY_FORK_OBSTRUCTION.md`.
+
+The next sparse-resultant pass should generalize this scan from
+three-polynomial forks to four-polynomial triangles and short
+monomial-linear certificates.  That is now a concrete exact
+proof-search space rather than a geometry-only clustering heuristic.
+
 ## Route B: symmetry-broken exact-k SAT
 
 The support constraints, local projective-signature catalogue,

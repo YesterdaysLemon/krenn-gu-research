@@ -108,6 +108,10 @@ strictly advance the finite frontier:
   nonzero assumption.  Its 15-member coarse motif class splits into 11
   affine unit ideals and four affine non-unit ideals, so the proof
   template requires a finer monomial-incidence invariant.
+- a three-equation binary-fork identity `P+Q-mR=2` gives an exact affine
+  contradiction in 1,328 of the 11,751 `C10` orbits.  Every hit is
+  independently regenerated and symbolically replayed; the rule uses
+  neither saturation nor pure-amplitude nonzero assumptions.
 - every fully supported zero-coupled root pair requires at least five
   distinct outside blockers across the three colours.
 - for every rank-at-least-two root edge, five fixed outside
@@ -268,6 +272,7 @@ the essential remaining case.
 - [`P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md`](P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md)
 - [`P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md`](P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md)
 - [`P5_EXACT_THREE_C10_CENSUS.md`](P5_EXACT_THREE_C10_CENSUS.md)
+- [`P5_C10_BINARY_FORK_OBSTRUCTION.md`](P5_C10_BINARY_FORK_OBSTRUCTION.md)
 - [`P5_C10_TEN_EQUATION_AFFINE_CORE.md`](P5_C10_TEN_EQUATION_AFFINE_CORE.md)
 - [`P5_EXACT_THREE_MOTIF_QUOTIENT.md`](P5_EXACT_THREE_MOTIF_QUOTIENT.md)
 - [`P5_FIVE_EQUATION_LAURENT_CORE.md`](P5_FIVE_EQUATION_LAURENT_CORE.md)
@@ -409,6 +414,7 @@ python verify_p5_source_row_tricolour_cover.py
 python audit_p5_source_row_tricolour_cover.py
 PYTHONPATH=tmp/python_deps python verify_p5_exact_three_c4c6_boundary_obstruction.py
 PYTHONPATH=tmp/python_deps python verify_p5_exact_three_c10_audit.py
+PYTHONPATH=tmp/python_deps python verify_p5_c10_binary_fork_obstruction.py
 PYTHONPATH=tmp/python_deps python verify_p5_c10_ten_equation_affine_core.py
 PYTHONPATH=tmp/python_deps python probe_p5_c10_joint_affine_class.py
 python verify_three_colour_blocker_union.py
