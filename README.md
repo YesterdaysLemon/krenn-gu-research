@@ -103,6 +103,11 @@ strictly advance the finite frontier:
   all 25,194,240 labelled supports agrees exactly with the
   symmetry-broken SAT catalogue on 11,751 support-semantic survivor
   orbits.  Their algebraic exclusion is still in progress.
+- one of those `C10` orbits already has a ten-mixed-coefficient affine
+  contradiction, needing neither the saturation equation nor a pure
+  nonzero assumption.  Its 15-member coarse motif class splits into 11
+  affine unit ideals and four affine non-unit ideals, so the proof
+  template requires a finer monomial-incidence invariant.
 - every fully supported zero-coupled root pair requires at least five
   distinct outside blockers across the three colours.
 - for every rank-at-least-two root edge, five fixed outside
@@ -263,6 +268,7 @@ the essential remaining case.
 - [`P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md`](P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md)
 - [`P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md`](P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md)
 - [`P5_EXACT_THREE_C10_CENSUS.md`](P5_EXACT_THREE_C10_CENSUS.md)
+- [`P5_C10_TEN_EQUATION_AFFINE_CORE.md`](P5_C10_TEN_EQUATION_AFFINE_CORE.md)
 - [`P5_EXACT_THREE_MOTIF_QUOTIENT.md`](P5_EXACT_THREE_MOTIF_QUOTIENT.md)
 - [`P5_FIVE_EQUATION_LAURENT_CORE.md`](P5_FIVE_EQUATION_LAURENT_CORE.md)
 - [`P5_NO_QUADRATIC_RESTRICTION_EQUATIONS.md`](P5_NO_QUADRATIC_RESTRICTION_EQUATIONS.md)
@@ -403,6 +409,8 @@ python verify_p5_source_row_tricolour_cover.py
 python audit_p5_source_row_tricolour_cover.py
 PYTHONPATH=tmp/python_deps python verify_p5_exact_three_c4c6_boundary_obstruction.py
 PYTHONPATH=tmp/python_deps python verify_p5_exact_three_c10_audit.py
+PYTHONPATH=tmp/python_deps python verify_p5_c10_ten_equation_affine_core.py
+PYTHONPATH=tmp/python_deps python probe_p5_c10_joint_affine_class.py
 python verify_three_colour_blocker_union.py
 python audit_three_colour_blocker_union.py
 python verify_four_blocker_ideal_obstruction.py

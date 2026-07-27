@@ -57,6 +57,23 @@ The next useful test is therefore structural, not another longer batch:
 If a small number of forbidden patterns covers the exact-three layer,
 the computational theorem can become a human-scale lemma.
 
+The first exact-three `C10` extraction is substantially stronger than
+the exact-two seed.  Catalogue orbit 384 has 193 mixed equations, but an
+exact lift certificate uses no saturation equation and minimizes to ten
+mixed coefficients whose affine ideal is already the unit ideal.  Those
+ten equations have a short hand reduction ending in
+`2*t*(a+s)=0` while earlier equations force both factors nonzero.  See
+`P5_C10_TEN_EQUATION_AFFINE_CORE.md`.
+
+The first transport test falsifies the coarsest version of that motif
+idea.  The 15 catalogue cases sharing orbit 384's canonical coordinate
+backbone and missing-colour geometry split into 11 affine unit ideals
+and four affine non-unit ideals.  Geometry therefore does not determine
+the core.  The next experiment is to quotient the coefficient
+monomial-incidence systems themselves and to record whether each
+contradiction is affine or needs Laurent saturation.  See
+`probe_p5_c10_joint_affine_class.py`.
+
 ## Route B: symmetry-broken exact-k SAT
 
 The support constraints, local projective-signature catalogue,
