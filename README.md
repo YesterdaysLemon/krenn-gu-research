@@ -61,6 +61,10 @@ strictly advance the finite frontier:
   five local maps has that row proportional to the corresponding
   coordinate covector; hence at least 15 of the 25 local rows are
   coordinate, and some local map has at least three coordinate rows.
+- every complex five-row support/pair-incidence signature satisfying the
+  local coordinate-pair condition belongs to an explicit
+  6,495-pattern catalogue; the 303 apparent patterns outside it all
+  force local rank at most two.
 - every fully supported zero-coupled root pair requires at least five
   distinct outside blockers across the three colours.
 - on eight or ten vertices, no witness exists anywhere in the
@@ -151,6 +155,7 @@ the essential remaining case.
 - [`P5_COORDINATE_PLANE_PAIR_COVER.md`](P5_COORDINATE_PLANE_PAIR_COVER.md)
 - [`P5_KERNEL_HALL_HIERARCHY.md`](P5_KERNEL_HALL_HIERARCHY.md)
 - [`P5_SOURCE_ROW_TRICOLOUR_COVER.md`](P5_SOURCE_ROW_TRICOLOUR_COVER.md)
+- [`P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md`](P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md)
 - [`THREE_COLOUR_BLOCKER_UNION_LEMMA.md`](THREE_COLOUR_BLOCKER_UNION_LEMMA.md)
 - [`FOUR_BLOCKER_IDEAL_OBSTRUCTION.md`](FOUR_BLOCKER_IDEAL_OBSTRUCTION.md)
 - [`THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md`](THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md)
@@ -513,6 +518,21 @@ local rows and at least three in one mode.  An independent `F_3` audit
 checks all 8,568 zero-or-projective five-row multisets and 34,272
 nonzero coefficient cases.  See
 [`P5_SOURCE_ROW_TRICOLOUR_COVER.md`](P5_SOURCE_ROW_TRICOLOUR_COVER.md).
+
+The finite local signature catalogue now has an exact coverage theorem
+over `C`.  An abstract Boolean encoding retains only zero/nonzero row
+supports, the ten coordinate-pair incidences, projective plane closure,
+and necessary rank conditions.  After blocking the 6,495 signatures
+listed by an `F_5` enumeration, exactly 303 patterns remain.  In every
+one, all ten row pairs contain the same coordinate point; this forces
+every triple of rows to be dependent and the local map to have rank at
+most two.  The 303 patterns form eight `S_5 x S_3` orbits.  The final
+150-variable, 9,099-clause CNF is UNSAT, and its 3,349,683-byte DRAT
+proof passes independent forward replay.  Thus the finite field is only
+an enumeration device: every relevant complex support/pair signature is
+covered.  Higher-subset incidences and coefficient realizability are
+not imported.  See
+[`P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md`](P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md).
 
 Intersecting the balanced all-bridge normal form for all three colours gives
 an exact arbitrary-order reduction.  Every edge block has at most four

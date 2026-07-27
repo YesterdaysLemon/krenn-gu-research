@@ -5881,3 +5881,64 @@ The first such architecture has an odd signed dependence among three
 two-term mixed-colour equations, so it is impossible over `C`.  Making
 that signed-cancellation obstruction exhaustive is the next finite
 interface; the support survivor itself is not a tensor restriction.
+
+### Complex coverage of the finite pair-signature catalogue
+
+The finite `F_5` row catalogue can now be used rigorously for support
+and pair-incidence case splits over `C`.  A separate abstract CNF keeps
+only necessary complex-valid facts about exact row supports and the ten
+statements
+
+```text
+e_c in span(r_p,r_q).
+```
+
+It includes pair-support compatibility, coordinate-plane inference,
+projective plane closure, and structural rank three.  Blocking the
+6,495 labelled signatures generated over `F_5` leaves 303 abstract
+patterns.  All 303 have the same singleton coordinate incidence on
+every row pair, form eight `S_5 x S_3` orbits of sizes
+
+```text
+3, 15, 15, 30, 30, 60, 60, 90,
+```
+
+and force all ten `3 x 3` row minors to vanish.  Geometrically, three
+independent rows would give two distinct pair planes whose intersection
+is one row line; a coordinate point common to every pair plane would
+then make two independent rows proportional to that coordinate point.
+
+After adding those 303 rank-loss exclusions, the 150-variable,
+9,099-clause CNF is UNSAT.  CaDiCaL generated a 3,349,683-byte DRAT
+proof, and independent forward `drat-trim` replay returned
+`s VERIFIED`.  A separate audit reconstructs the catalogue, the 303
+outside patterns, their Smith-form rank losses, their eight orbits, and
+the artifact hashes.
+
+```text
+P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md
+  84c323376f408228ff75fda6df0950982a61a967f99369bfe7af1bb45fc0084f
+verify_p5_pair_signature_catalogue_coverage.py
+  188b200b3f0a343835704388c844888c673ffb8ac7d14ab24f8a1ee6f4b0aea7
+audit_p5_pair_signature_catalogue_coverage.py
+  81701bcfa8f6eb1726c50898708047aade90688975604ee904f3200529213b32
+
+tmp/p5_pair_signature_catalogue_coverage_verified.json
+  3ca857f513f2a2d02193b48953d339d3472b82e576bd91885b1510a545d4c6d4
+tmp/p5_pair_signature_catalogue_coverage.cnf
+  fdd8f2184d9efa50db1634a0c774009c17c60b236e113b4c80dac794cb31a093
+tmp/p5_pair_signature_catalogue_coverage.drat
+  fcdf1cdce1df1b68579c7404272635a30ecc13f02fc8615c1dd04ff9b4c7afe2
+```
+
+This does not import higher-subset ranks from finite characteristic and
+does not claim that every catalogue pattern is realizable over `C`.
+It proves only the direction needed for exhaustive complex case splits:
+every complex support/pair-incidence signature lies in the list.
+
+During the coefficient CEGAR work, a local Singular order (`ds`) was
+briefly used as a speed probe.  A unit standard basis in a local order
+does not certify a global unit ideal.  Every clause learned from that
+order was removed from the active ledgers.  Only global orders such as
+`dp`, together with exact signed-lattice and rank arguments, are accepted
+as coefficient-level exclusions.
