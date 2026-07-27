@@ -5691,3 +5691,56 @@ tmp/fourth_order_permanent_subrank_audited.json
 This is an exact order-four theorem, not a proof that every higher-order
 permanent tensor also has subrank two.  Extending the flattening/slice
 mechanism beyond hyperplanes is the next analytic boundary.
+
+### Support-three `P_5` contraction subrank
+
+The first new contraction beyond the `P_4` theorem is now closed over
+`C`.  Contracting `P_5` by a vector supported on three coordinates gives
+the quartic
+
+```text
+a b q,
+```
+
+where `a,b` are independent linear factors and `q` is a nondegenerate
+ternary quadratic.  If this tensor restricted to `Delta_3`, the common
+kernel `K_i` of the pullbacks of `a,b` at each of the four modes would
+be nonzero.  Contracting at a full-target-support vector in `K_i` would
+turn the source into the essential `P_3` tensor and the target into
+`Delta_3`, contradicting rank four versus rank three.  Therefore every
+`K_i` lies in a target coordinate hyperplane and is one of nine abstract
+line/plane types.
+
+On restricting any complementary kernel pair, the quartic identity
+reduces to one root-pair form times one quadratic cofactor.  Hence the
+coordinatewise products of that kernel pair span at most one diagonal
+matrix, and every nonzero such matrix must have the same rank and
+row/column spaces as the complementary pair form.  Exhausting the
+`9^4 = 6,561` abstract type assignments leaves no survivor.  A separate
+`F_5` audit checks all 15 projective line kernels and three coordinate
+planes, hence `18^4 = 104,976` actual kernel quadruples, again with no
+survivor.
+
+An induced two-edge coordinate box gives the matching lower bound, so
+every support-three contraction has exact subrank two.  Support-one and
+support-two contractions reduce to `P_4`, proving the upper bound two
+for every support-at-most-three contraction of `P_5`.
+
+```text
+SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md
+  892f2445b19bf7e3c8ae3441138773ac889906ac5de6cb74898bf60699f44a3f
+verify_support_three_p5_contraction_subrank.py
+  ad34c04c6be209843e2570ba3733e6c38e2bd874a3cce0d57efbe8f51a5fb868
+audit_support_three_p5_contraction_subrank.py
+  57c66b27d542d2ec238e1f100ef5ae07571ec7c57e1494b0b71521b191bbc24c
+tmp/support_three_p5_contraction_subrank_verified.json
+  bbbf532386493ea1169aba64021b394900164e2dff53faa66e4e1b8b98fb3c36
+tmp/support_three_p5_contraction_subrank_audited.json
+  de5021ff581477a5f256061b6da1fcc5b9437d94d46d868f7a69f5f08fbacf94
+```
+
+For a hypothetical restriction `P_5 -> Delta_3`, intersecting any local
+three-plane with any source coordinate three-plane now shows that the
+span of every pair of its five row covectors must contain one of the
+three target coordinate covectors.  Classifying that five-point
+projective incidence condition is the next exact boundary.

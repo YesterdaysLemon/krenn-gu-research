@@ -37,6 +37,9 @@ strictly advance the finite frontier:
 - the order-four permanent tensor has exact subrank two over `C`; in
   particular, four fully supported zero-coupled roots require at least
   five blocker vertices in total.
+- every contraction of the order-five permanent tensor by a vector of
+  coordinate support at most three has subrank at most two over `C`;
+  the support-three case has exact subrank two.
 - every fully supported zero-coupled root pair requires at least five
   distinct outside blockers across the three colours.
 - on eight or ten vertices, no witness exists anywhere in the
@@ -119,6 +122,7 @@ the essential remaining case.
 - [`MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md`](MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md)
 - [`EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md`](EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md)
 - [`FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md`](FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md)
+- [`SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md`](SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md)
 - [`THREE_COLOUR_BLOCKER_UNION_LEMMA.md`](THREE_COLOUR_BLOCKER_UNION_LEMMA.md)
 - [`FOUR_BLOCKER_IDEAL_OBSTRUCTION.md`](FOUR_BLOCKER_IDEAL_OBSTRUCTION.md)
 - [`THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md`](THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md)
@@ -229,6 +233,8 @@ python verify_exact_three_blocker_permanent_rank.py
 python audit_exact_three_blocker_permanent_rank.py
 python verify_fourth_order_permanent_subrank.py
 python audit_fourth_order_permanent_subrank.py
+python verify_support_three_p5_contraction_subrank.py
+python audit_support_three_p5_contraction_subrank.py
 python verify_three_colour_blocker_union.py
 python audit_three_colour_blocker_union.py
 python verify_four_blocker_ideal_obstruction.py
@@ -311,6 +317,7 @@ The main analytic tools now include:
 - multi-star blocker surplus and exact pure-minor factorisation;
 - the exact three-blocker permanent-tensor rank obstruction;
 - the exact order-four permanent-subrank obstruction;
+- the support-at-most-three `P_5` contraction subrank obstruction;
 - the three-colour five-vertex blocker-union lower bound;
 - four- and eight-term affine Laurent-cube factor choices with exact lattice
   CEGAR;
@@ -361,6 +368,23 @@ four-vertex total blocker union.  The symbolic reconstruction and an
 independent audit of all 24,336 ordered hyperplane-normal pairs over
 `F_5` are in
 [`FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md`](FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md).
+
+The first genuinely new contraction of the order-five permanent tensor
+is now also excluded.  A support-three contraction is the quartic
+`a b q`, where `q` is a nondegenerate ternary quadratic.  In a
+hypothetical restriction to `Delta_3`, the common kernels of the
+pullbacks of `a,b` must consist only of target vectors with a zero
+coordinate; contracting any full-support vector there would produce
+the forbidden restriction `P_3 -> Delta_3`.  Restricting complementary
+pairs of those kernels then forces their coordinatewise-product spaces
+to be at most one-dimensional and to match the rank and row spaces of
+the corresponding `a,b` pair form.  The nine possible line/plane kernel
+types give 6,561 cases and no survivor; an independent `F_5` audit
+checks 104,976 actual kernel quadruples.  This proves exact subrank two
+for support three and the upper bound two for every support-at-most-three
+contraction.  The remaining `P_5` boundary is a five-row projective
+incidence condition, not another unconstrained numerical search.  See
+[`SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md`](SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md).
 
 Intersecting the balanced all-bridge normal form for all three colours gives
 an exact arbitrary-order reduction.  Every edge block has at most four
