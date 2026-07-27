@@ -182,6 +182,9 @@ configuration in the stated stratum.
 
 Projective row directions do not record their nonzero magnitudes.
 Those magnitudes still enter the permanent cancellation equations.
-The remaining global task is to combine the five local strata with the
-mixed-row permanent identities; the theorem above is a reduction of
-that task, not a declaration that the prize conjecture is solved.
+The later
+[`P5_COORDINATE_PLANE_PAIR_COVER.md`](P5_COORDINATE_PLANE_PAIR_COVER.md)
+combines the local strata across all five modes and forces either a
+multiple-coordinate-row map or an axial `4+1` line map.  Those branches
+still require the mixed-row permanent identities; the theorem above is
+a reduction, not a declaration that the prize conjecture is solved.

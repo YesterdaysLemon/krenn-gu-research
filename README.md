@@ -49,6 +49,11 @@ strictly advance the finite frontier:
 - the five rows of each such local map fall into three exact projective
   strata: at least two coordinate rows, a one-coordinate line type, or
   a one-coordinate rigid complete-quadrangle type.
+- those five local maps cannot all have the rigid complete-quadrangle
+  type; at least one must be line-type or have two coordinate rows.
+- every source-row pair spans a target coordinate plane in at least one
+  mode; consequently some local map has two coordinate rows or has the
+  axial `4+1` support form `four two-colour rows + one third-colour row`.
 - every fully supported zero-coupled root pair requires at least five
   distinct outside blockers across the three colours.
 - on eight or ten vertices, no witness exists anywhere in the
@@ -135,6 +140,8 @@ the essential remaining case.
 - [`SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md`](SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md)
 - [`FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md`](FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md)
 - [`FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md`](FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md)
+- [`ALL_QUADRANGLE_P5_OBSTRUCTION.md`](ALL_QUADRANGLE_P5_OBSTRUCTION.md)
+- [`P5_COORDINATE_PLANE_PAIR_COVER.md`](P5_COORDINATE_PLANE_PAIR_COVER.md)
 - [`THREE_COLOUR_BLOCKER_UNION_LEMMA.md`](THREE_COLOUR_BLOCKER_UNION_LEMMA.md)
 - [`FOUR_BLOCKER_IDEAL_OBSTRUCTION.md`](FOUR_BLOCKER_IDEAL_OBSTRUCTION.md)
 - [`THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md`](THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md)
@@ -253,6 +260,10 @@ python verify_five_row_projective_incidence.py
 python audit_five_row_projective_incidence.py
 python verify_five_row_projective_normal_forms.py
 python audit_five_row_projective_normal_forms.py
+python verify_all_quadrangle_p5_obstruction.py
+python audit_all_quadrangle_p5_obstruction.py
+python verify_p5_coordinate_plane_pair_cover.py
+python audit_p5_coordinate_plane_pair_cover.py
 python verify_three_colour_blocker_union.py
 python audit_three_colour_blocker_union.py
 python verify_four_blocker_ideal_obstruction.py
@@ -442,6 +453,28 @@ geometric strata: at least two coordinate rows, line type, or rigid
 quadrangle type.  An independent `F_5` census classifies all 2,556
 spanning pair-incidence configurations.  See
 [`FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md`](FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md).
+
+The rigid branch cannot occur in all five modes.  For any fixed pair of
+source rows, a quadrangle map has a common-kernel vector supported on
+exactly two target colours.  Among five such vectors, four share a
+surviving colour.  Evaluating the alleged diagonal restriction on those
+four vectors and the corresponding coordinate vector in the fifth mode
+is nonzero.  The source permanent is zero, because four modes avoid the
+same two source coordinates and cannot be injected into the remaining
+three.  This exact pigeonhole obstruction forces at least one mode into
+the line or multiple-coordinate stratum.  See
+[`ALL_QUADRANGLE_P5_OBSTRUCTION.md`](ALL_QUADRANGLE_P5_OBSTRUCTION.md).
+
+The same four-mode evaluation gives a stronger ten-pair cover.  For a
+fixed source pair, the five common kernels have nonempty active-colour
+sets of size at most two.  No colour can be active in four modes, so an
+incidence count forces one kernel to be a coordinate line; dually, that
+mode's two rows span a coordinate plane.  This holds for all ten source
+pairs.  A quadrangle map covers none of them, and a non-axial line map
+covers at most one.  Hence every hypothetical restriction contains
+either a map with at least two coordinate rows or an axial `4+1` map
+with four two-colour rows and one row on the third colour.  See
+[`P5_COORDINATE_PLANE_PAIR_COVER.md`](P5_COORDINATE_PLANE_PAIR_COVER.md).
 
 Intersecting the balanced all-bridge normal form for all three colours gives
 an exact arbitrary-order reduction.  Every edge block has at most four
