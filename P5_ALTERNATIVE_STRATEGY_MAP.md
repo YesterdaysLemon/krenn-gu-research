@@ -82,8 +82,27 @@ C10:   11,751 support-semantic survivor orbits
 total: 17,744 support-semantic survivor orbits.
 ```
 
-These catalogues are still exploratory until independently regenerated
-and packaged with their algebraic obstruction artifacts.
+The `C4+C6` catalogue is no longer exploratory.  An independent packed
+regeneration of all 25,194,240 labelled exact-three supports agrees
+exactly on its 5,993 final orbits, and exact characteristic-zero
+unit-ideal calculations exclude all of them.  See
+`P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md`.
+
+The `C10` catalogue is now independently audited as well.  A second
+packed-array regeneration of all 25,194,240 labelled supports agrees
+exactly on all 11,751 final orbits; see
+`P5_EXACT_THREE_C10_CENSUS.md`.  The support-only algebraic exclusion of
+those 11,751 cases is still in progress, so this is a census checkpoint
+rather than a closed boundary theorem.
+
+Their raw supports now have a concrete structural quotient.  Forgetting
+the coordinate backbone leaves only 17 uncoloured partial-cell
+geometries, or 66 geometries after recording the missing colours.  The
+pair of a coordinate-backbone class and a missing-colour geometry has
+2,675 observed values across all 17,744 survivors.  See
+`P5_EXACT_THREE_MOTIF_QUOTIENT.md`.  This makes a motif-level Laurent
+identity search substantially smaller than the support catalogue while
+preserving an explicit fallback refinement.
 
 ## Route C: Grassmannian and Pluecker elimination
 
@@ -148,6 +167,15 @@ dimension sum is the 148,897,035-dimensional quartic space.  Hence the
 quartic pullback is injective over characteristic zero.  The proof map
 is `P5_NO_QUARTIC_RESTRICTION_EQUATIONS.md`.
 
+Degree five is closed as well.  The five target partitions produce
+2,955 ordered nonzero module tuples, reduced by mode symmetry to 115
+representatives with multiplicity at most 61.  A compiled five-copy
+subset contraction reaches full multiplicity rank in every block over
+`F_7`; the complete Schur-dimension sum is 7,355,513,529.  Since 120 is
+invertible modulo seven, the modular rank witnesses lift to
+characteristic zero.  Thus the full quintic pullback is injective.  See
+`P5_NO_QUINTIC_RESTRICTION_EQUATIONS.md`.
+
 The obvious degree-three determinant contraction cannot work.  It uses
 one alternating epsilon tensor in each of five modes; swapping two of
 the three tensor copies changes its sign by `(-1)^5`, while a
@@ -201,17 +229,129 @@ different photon-number sectors, while the conjecture constrains only
 one postselected sector.  A useful identity must eliminate the
 unobserved sectors; otherwise this language is only a reformulation.
 
+## Route F: herald promotion and matching-tensor cut rank
+
+The exact rational `n=6, k=4, d=4` Question-2 construction posted by
+`@speaktoevil` supplies a concrete positive model with two fixed red
+heralds.  Its 17-mode support actually carries a complete
+eight-parameter family; see `Q2_N6_K4_D4_CONSTRUCTION.md`.
+
+The first attempted promotion to Question 1 fails for a structural
+reason.  If the four-output block has monochromatic amplitudes `A_i` and
+the herald pair receives colour-channel weights `H_j`, the coefficients
+of
+
+```text
+(i,i,i,i,j,j)
+```
+
+form the outer-product matrix `A_i H_j`.  On the three non-red colours
+it has rank one, whereas the corresponding Question-1 target submatrix
+has rank three.  On the concrete support every off-diagonal entry is
+represented by a unique perfect matching, so no cancellation is
+available.
+
+This suggests measuring the matching tensor's flattening rank across
+small vertex cuts.  For any proposed counterexample, the target
+`Delta_d` has cut rank `d` across every nontrivial partition.  A graph
+decomposition that exposes fewer than `d` independent partial-matching
+interface states is therefore impossible.  The useful next theorem
+would bound that interface rank in terms of a separator, matching width,
+or a finite set of crossing-matching states.  Conversely, a constructive
+search should explicitly create at least `d` nonseparable interface
+channels, rather than adding more parallel colours to a rank-one herald
+edge.
+
+The counterexample-oriented version is a selector-gadget search: combine
+several colour-permuted heralded modules so that exactly one branch is
+active and their rank-one slices sum to the diagonal.  The main hazard
+is that taking a union of graph gadgets introduces cross-matchings; a
+valid selector must cancel those cross terms exactly.  This is a
+different search space from raw support enumeration and gives an
+immediate falsifiable target: a four-channel selector for the verified
+Question-2 module.
+
+## Route G: dual hyperplane annihilation
+
+The public Lean proof of the `d=n` family in
+[`MonochromaticQuantumGraph.lean`](https://github.com/google-deepmind/formal-conjectures/blob/af88acbf9da0f26e3e934743a819e986e02f6875/FormalConjectures/Paper/MonochromaticQuantumGraph.lean)
+gives a useful coordinate-free view of the hard branch.  Fix a root
+vertex `r`, set its test vector to the all-ones vector, and for each
+other vertex `u` define the covector
+
+```text
+A_u(b) = sum_a W_ru(a,b).
+```
+
+Choosing `v_u in ker(A_u)` kills every matching term at its edge
+incident with `r`.  A witness would therefore force
+
+```text
+sum_c product_(u != r) v_u(c) = 0
+```
+
+for every product of those hyperplanes.  Equivalently, if
+`q_u : C^d -> C^d/<A_u>` denotes the dual quotient, then
+
+```text
+(tensor_(u != r) q_u) Delta_d = 0.                 (G1)
+```
+
+The Lean proof rules this out when `d=n` by an elementary
+colour-versus-neighbour pigeonhole construction.  Restricting a
+hypothetical larger-colour witness to any `n` colours gives the same
+obstruction for `d>=n`.  The prize regime `3<=d<n` is exactly where that
+counting step stops.
+
+For `d=3`, however, the failure of the contraction has a sharp
+classification.  If all `q_u` have rank at least two, then
+
+```text
+sum_(c=1)^3 tensor_u q_u(e_c) = 0
+```
+
+implies that all three decomposable summands vanish separately.  Indeed,
+if all three were nonzero, a three-term dependence among pure tensors
+would make the three factors collinear in all but at most one mode,
+contradicting rank at least two in another mode.  If one summand
+vanished, the other two would have proportional factors in every mode;
+at a mode killing the first summand this would again make the quotient
+rank at most one.  The remaining cases are immediate.
+
+Thus `(G1)` holds exactly when, for each target colour `c`, some neighbour
+has
+
+```text
+A_u a nonzero multiple of e_c^*.
+```
+
+These are precisely the three coordinate blockers exposed by the
+double-star and multi-star arguments elsewhere in this repository.
+One neighbour cannot serve two colours, so every root has at least three
+distinct blockers for this all-ones contraction.
+Therefore the `d=n` formal proof does not bypass the remaining problem:
+in the three-colour regime it reduces exactly to the need to propagate
+blocker surplus across several roots.  The useful next experiment is to
+apply the contraction at two or three roots simultaneously and express
+the resulting compatibility as a Grassmannian incidence condition,
+linking this route to Route C without choosing row-support charts.
+
 ## Priority
 
-1. finish the exact-three SAT survivor catalogue with Route B;
-2. learn and prove sparse forbidden patterns with Route A;
-3. use Route C if the survivor supports fall into few Grassmannian
+1. finish the `C10` exact-three algebra with Route B;
+2. formulate the simultaneous-root version of Route G in Grassmannian
+   coordinates;
+3. test the four-channel selector and cut-rank formulation from Route F;
+4. learn and prove sparse forbidden patterns with Route A;
+5. use Route C if the survivor supports fall into few Grassmannian
    matroid strata;
-4. keep Route E as a source of identities, but require a
+6. keep Route E as a source of identities, but require a
    postselection-only elimination before investing in it.
 
 Route D's homogeneous degree-six scalar separator has been ruled out
-exactly.  The full covariant ideal is empty through degree four, so
-the next representation search begins in degree five.  Revisit this
-route only with a degree-five-or-higher non-invariant module or a
-specific higher-degree invariant construction.
+exactly, and the full covariant ideal is empty through degree five.
+Revisit this route only with a degree-six-or-higher non-invariant module
+or a specific higher-degree invariant construction.  A full degree-six
+covariant calculation is much larger than the eleven-dimensional
+scalar-invariant slice and should not displace the support and
+Grassmannian routes without a sharper representation-theoretic target.

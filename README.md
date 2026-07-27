@@ -5,6 +5,15 @@
 **UNRESOLVED globally.**  This repository does not yet contain a proof or
 counterexample for all even `n >= 6` and `d >= 3`.
 
+Separately, the repository now contains an exact rational positive
+Question-2 witness for [`n=6, k=4, d=4`](Q2_N6_K4_D4_CONSTRUCTION.md).
+It has two red heralds and therefore is not a Question-1 counterexample.
+PyTheus already established existence at these parameters; the
+Twitter/X-thread witness recorded here has different support and much
+simpler rational weights.  It was posted by
+[`@speaktoevil`](https://x.com/speaktoevil/status/2080655946825818276);
+this repository makes no priority claim.
+
 It does contain independently replayed computer-assisted theorems that
 strictly advance the finite frontier:
 
@@ -44,7 +53,7 @@ strictly advance the finite frontier:
   permanent tensor has subrank at least three; an explicit integer
   restriction produces `12 Delta_3`.
 - the full local-restriction image of the order-five permanent tensor
-  has no nonzero defining equations of degree at most four; its
+  has no nonzero defining equations of degree at most five; its
   degree-six `SL(3)^5` scalar-invariant pullback is also injective.
 - every local map in a hypothetical restriction `P_5 -> Delta_3` must
   contain a nonzero source-coordinate row supported on a single target
@@ -86,6 +95,14 @@ strictly advance the finite frontier:
   3,308, and exact support-only unit-ideal calculations exclude every
   survivor.  Hence any remaining exact-three-coordinate model has at
   least three partial non-coordinate rows.
+- in the `C4+C6` half of the exact-three-partial layer, all 5,993
+  support-semantic survivor orbits have exact support-only coefficient
+  ideals equal to the unit ideal.  Thus any remaining `C4+C6`
+  exact-three-coordinate model has at least four partial cells.
+- in the `C10` half of the same layer, an independent regeneration of
+  all 25,194,240 labelled supports agrees exactly with the
+  symmetry-broken SAT catalogue on 11,751 support-semantic survivor
+  orbits.  Their algebraic exclusion is still in progress.
 - every fully supported zero-coupled root pair requires at least five
   distinct outside blockers across the three colours.
 - for every rank-at-least-two root edge, five fixed outside
@@ -182,6 +199,10 @@ The ongoing exact-three search now uses a symmetry-broken SAT enumerator
 instead of materializing its 50,388,480 labelled supports.  The structural
 alternatives and their concrete go/no-go tests are recorded in
 [`P5_ALTERNATIVE_STRATEGY_MAP.md`](P5_ALTERNATIVE_STRATEGY_MAP.md).
+The `C10` half has now been independently regenerated and agrees exactly
+with the 11,751-case SAT catalogue; the packaged census is in
+[`three_partial_c10_audit/`](research_snapshots/2026-07-27-p5-coordinate-cegar/three_partial_c10_audit/README.md).
+This is an exact census checkpoint, not yet an algebraic exclusion.
 
 ## Problem
 
@@ -240,10 +261,14 @@ the essential remaining case.
 - [`P5_ALL_FULL_BOUNDARY_OBSTRUCTION.md`](P5_ALL_FULL_BOUNDARY_OBSTRUCTION.md)
 - [`P5_ONE_PARTIAL_BOUNDARY_OBSTRUCTION.md`](P5_ONE_PARTIAL_BOUNDARY_OBSTRUCTION.md)
 - [`P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md`](P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md)
+- [`P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md`](P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md)
+- [`P5_EXACT_THREE_C10_CENSUS.md`](P5_EXACT_THREE_C10_CENSUS.md)
+- [`P5_EXACT_THREE_MOTIF_QUOTIENT.md`](P5_EXACT_THREE_MOTIF_QUOTIENT.md)
 - [`P5_FIVE_EQUATION_LAURENT_CORE.md`](P5_FIVE_EQUATION_LAURENT_CORE.md)
 - [`P5_NO_QUADRATIC_RESTRICTION_EQUATIONS.md`](P5_NO_QUADRATIC_RESTRICTION_EQUATIONS.md)
 - [`P5_NO_CUBIC_RESTRICTION_EQUATIONS.md`](P5_NO_CUBIC_RESTRICTION_EQUATIONS.md)
 - [`P5_NO_QUARTIC_RESTRICTION_EQUATIONS.md`](P5_NO_QUARTIC_RESTRICTION_EQUATIONS.md)
+- [`P5_NO_QUINTIC_RESTRICTION_EQUATIONS.md`](P5_NO_QUINTIC_RESTRICTION_EQUATIONS.md)
 - [`P5_DEGREE_SIX_INVARIANT_PULLBACK.md`](P5_DEGREE_SIX_INVARIANT_PULLBACK.md)
 - [`P5_ALTERNATIVE_STRATEGY_MAP.md`](P5_ALTERNATIVE_STRATEGY_MAP.md)
 - [`THREE_COLOUR_BLOCKER_UNION_LEMMA.md`](THREE_COLOUR_BLOCKER_UNION_LEMMA.md)
@@ -318,6 +343,9 @@ Each theorem-level claim requires:
 With the bundled dependencies on `PYTHONPATH`, run:
 
 ```text
+python verify_q2_n6_k4_d4_construction.py
+PYTHONPATH=tmp/python_deps python verify_q2_n6_k4_d4_family.py
+PYTHONPATH=tmp/python_deps python verify_q2_herald_promotion_rank_barrier.py
 python verify_six_vertex_final.py
 python verify_eight_vertex_4regular.py
 python verify_eight_vertex_16edge.py
@@ -373,6 +401,8 @@ python verify_p5_kernel_hall_hierarchy.py
 python audit_p5_kernel_hall_hierarchy.py
 python verify_p5_source_row_tricolour_cover.py
 python audit_p5_source_row_tricolour_cover.py
+PYTHONPATH=tmp/python_deps python verify_p5_exact_three_c4c6_boundary_obstruction.py
+PYTHONPATH=tmp/python_deps python verify_p5_exact_three_c10_audit.py
 python verify_three_colour_blocker_union.py
 python audit_three_colour_blocker_union.py
 python verify_four_blocker_ideal_obstruction.py
