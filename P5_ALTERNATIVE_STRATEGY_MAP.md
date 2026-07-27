@@ -104,6 +104,26 @@ The next step is no longer template guessing by geometry: enumerate
 short monomial-linear relations directly in the sparse coefficient
 vector matroid, then cluster the resulting exact certificates.
 
+The first five-edge odd-cycle scan adds 74 orbits beyond the
+fork/triangle union.  If
+
+```text
+Ei=Ai+A(i+1)  for a five-cycle,
+P=1+m*A0,
+```
+
+then the alternating edge sum is `2*A0`, so the six coefficients give
+`2P-m(E0-E1+E2-E3+E4)=2`.  The three sparse rules now exclude 1,515
+`C10` orbits in union and leave 10,236 undecided by these rules.  The
+original generator replays all 74 new identities.  See
+`P5_C10_ODD_CYCLE5_OBSTRUCTION.md`.
+
+An exhaustive general search for anchored four-coefficient relations
+of the form `2P-mX-mY+mZ=2` added no orbit beyond the fork/triangle
+union.  Thus the next useful matroid layers are seven-cycles and
+relations with at least five non-anchor coefficients, not further
+rephrasings of the four-coefficient case.
+
 ## Route B: symmetry-broken exact-k SAT
 
 The support constraints, local projective-signature catalogue,
