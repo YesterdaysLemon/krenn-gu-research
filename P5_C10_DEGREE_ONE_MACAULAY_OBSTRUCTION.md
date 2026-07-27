@@ -73,6 +73,22 @@ P=A+B,  Q=1+L*A,  R=1+L*B,
 giving `Q+R-L*P=2`.  Here `L` is affine-linear rather than the single
 monomial used in the earlier binary-fork rule.
 
+The remaining sixteen four-row certificates split into eleven
+translated-fork identities
+
+```text
+Q+R-U-m*T = 2
+```
+
+and five two-multiplier grid identities
+
+```text
+P+Q-x*R-y*S = 2.
+```
+
+Thus all 42 certificates with at most four Macaulay rows already have
+human-scale forms.
+
 Twenty more elimination certificates have the six-row
 difference-rectangle form
 

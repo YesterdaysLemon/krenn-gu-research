@@ -36,6 +36,12 @@ EXPECTED_CERTIFICATE_SHA256 = (
 )
 EXPECTED_DENOMINATORS = {1: 2, 2: 1_842, 4: 109, 6: 2, 8: 5}
 EXPECTED_AFFINE_FORK_SHAPES = {"unary": 2, "binary": 24}
+EXPECTED_SMALL_SHAPES = {
+    "binary_affine_fork": 24,
+    "two_multiplier_grid": 5,
+    "translated_fork": 11,
+    "unary_affine_fork": 2,
+}
 
 
 def prior_certificate(polynomials: list[FORK.Polynomial]) -> bool:
@@ -113,6 +119,31 @@ def affine_fork_shape(record: dict) -> str | None:
     return None
 
 
+def small_certificate_shape(record: dict) -> str | None:
+    fork = affine_fork_shape(record)
+    if fork is not None:
+        return f"{fork}_affine_fork"
+    coefficients = rational_coefficients(record)
+    if len(coefficients) != 4:
+        return None
+    multiplied = {
+        equation
+        for equation, variable in coefficients
+        if variable >= 0
+    }
+    scalar = {
+        equation
+        for equation, variable in coefficients
+        if variable < 0
+    }
+    total = multiplied | scalar
+    if len(multiplied) == 1 and len(scalar) == 3 and len(total) == 4:
+        return "translated_fork"
+    if len(multiplied) == 2 and len(scalar) == 2 and len(total) == 4:
+        return "two_multiplier_grid"
+    return None
+
+
 def main() -> None:
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
     catalogue = json.loads(
@@ -167,6 +198,7 @@ def main() -> None:
     denominator_histogram: Counter[int] = Counter()
     support_histogram: Counter[int] = Counter()
     affine_fork_histogram: Counter[str] = Counter()
+    small_shape_histogram: Counter[str] = Counter()
     for record in records:
         coefficients = rational_coefficients(record)
         if exact_residual(
@@ -181,12 +213,16 @@ def main() -> None:
         shape = affine_fork_shape(record)
         if shape is not None:
             affine_fork_histogram[shape] += 1
+        small_shape = small_certificate_shape(record)
+        if small_shape is not None:
+            small_shape_histogram[small_shape] += 1
     if (
         dict(denominator_histogram) != EXPECTED_DENOMINATORS
         or dict(affine_fork_histogram)
         != EXPECTED_AFFINE_FORK_SHAPES
+        or dict(small_shape_histogram) != EXPECTED_SMALL_SHAPES
     ):
-        raise AssertionError("certificate denominators changed")
+        raise AssertionError("certificate summary changed")
 
     variables = sp.symbols("u0:23")
     local = {
@@ -293,6 +329,12 @@ def main() -> None:
                     key: value
                     for key, value in sorted(
                         affine_fork_histogram.items()
+                    )
+                },
+                "small_certificate_shapes": {
+                    key: value
+                    for key, value in sorted(
+                        small_shape_histogram.items()
                     )
                 },
                 "maximum_denominator_histogram": {
