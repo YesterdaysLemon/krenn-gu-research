@@ -122,6 +122,10 @@ strictly advance the finite frontier:
   least 1,523 `C10` orbits and add 175 beyond the three named rules.
   The combined certificates exclude 1,690 orbits and leave 10,061 not
   covered by these searches.
+- degree-one Macaulay identities
+  `sum((a_i+sum_j b_ij*u_j)F_i)=1` add 1,960 exact rational
+  obstructions.  The certified union excludes 3,650 `C10` orbits and
+  leaves 8,101 not covered by these certificate layers.
 - every fully supported zero-coupled root pair requires at least five
   distinct outside blockers across the three colours.
 - for every rank-at-least-two root edge, five fixed outside
@@ -286,6 +290,7 @@ the essential remaining case.
 - [`P5_C10_TRIANGLE_OBSTRUCTION.md`](P5_C10_TRIANGLE_OBSTRUCTION.md)
 - [`P5_C10_ODD_CYCLE5_OBSTRUCTION.md`](P5_C10_ODD_CYCLE5_OBSTRUCTION.md)
 - [`P5_C10_SCALAR_SPAN_OBSTRUCTION.md`](P5_C10_SCALAR_SPAN_OBSTRUCTION.md)
+- [`P5_C10_DEGREE_ONE_MACAULAY_OBSTRUCTION.md`](P5_C10_DEGREE_ONE_MACAULAY_OBSTRUCTION.md)
 - [`P5_C10_TEN_EQUATION_AFFINE_CORE.md`](P5_C10_TEN_EQUATION_AFFINE_CORE.md)
 - [`P5_EXACT_THREE_MOTIF_QUOTIENT.md`](P5_EXACT_THREE_MOTIF_QUOTIENT.md)
 - [`P5_FIVE_EQUATION_LAURENT_CORE.md`](P5_FIVE_EQUATION_LAURENT_CORE.md)
@@ -431,6 +436,7 @@ PYTHONPATH=tmp/python_deps python verify_p5_c10_binary_fork_obstruction.py
 PYTHONPATH=tmp/python_deps python verify_p5_c10_triangle_obstruction.py
 PYTHONPATH=tmp/python_deps python verify_p5_c10_odd_cycle5_obstruction.py
 PYTHONPATH=tmp/python_deps python verify_p5_c10_scalar_span_obstruction.py
+PYTHONPATH=tmp/python_deps python verify_p5_c10_degree_one_macaulay_obstruction.py
 PYTHONPATH=tmp/python_deps python verify_p5_c10_ten_equation_affine_core.py
 PYTHONPATH=tmp/python_deps python probe_p5_c10_joint_affine_class.py
 python verify_three_colour_blocker_union.py
