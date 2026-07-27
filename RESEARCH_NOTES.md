@@ -6374,3 +6374,33 @@ least four.
 P5_NO_CUBIC_RESTRICTION_EQUATIONS.md
 verify_p5_no_cubic_restriction_equations.py
 ```
+
+### No quartic equations on the `P_5` restriction image
+
+The quartic covariant pullback is injective too.  The four relevant
+`S_4` types `[4]`, `[3,1]`, `[2,2]`, and `[2,1,1]` produce 839 ordered
+module tuples with nonzero multiplicity, or 44 representatives under
+mode permutation.  Multiplicities range from one to ten, while the full
+Schur-dimension sum is
+
+```text
+binomial(246,4) = 148,897,035.
+```
+
+A compiled exact verifier constructs integer models of the four
+representations, checks their character and matrix-unit relations, and
+uses a four-copy subset dynamic program to contract deterministic local
+covectors with `P_5`.  Exact row reduction modulo five reaches the full
+theoretical multiplicity in every representative.  Since the
+matrix-unit denominator 24 is invertible modulo five, these ranks lift
+to `Q`.
+
+Thus the full local-restriction image of `P_5` has no nonzero defining
+equation of degree at most four.  This is a rigorous strategy boundary,
+not a restriction to `Delta_3`; the next covariant search begins in
+degree five.
+
+```text
+P5_NO_QUARTIC_RESTRICTION_EQUATIONS.md
+verify_p5_no_quartic_restriction_equations.cpp
+```

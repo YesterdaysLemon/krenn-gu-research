@@ -140,6 +140,14 @@ five certify the ranks over characteristic zero.  Therefore the full
 cubic pullback is injective and the restriction image has no cubic
 equations.  See `P5_NO_CUBIC_RESTRICTION_EQUATIONS.md`.
 
+Degree four is now closed by the same principle with a compiled exact
+contraction.  The 839 ordered nonzero `S_4` module tuples reduce to 44
+mode-symmetry representatives with multiplicity at most ten.  Every
+representative has full rank modulo five, and the complete Schur
+dimension sum is the 148,897,035-dimensional quartic space.  Hence the
+quartic pullback is injective over characteristic zero.  The proof map
+is `P5_NO_QUARTIC_RESTRICTION_EQUATIONS.md`.
+
 The obvious degree-three determinant contraction cannot work.  It uses
 one alternating epsilon tensor in each of five modes; swapping two of
 the three tensor copies changes its sign by `(-1)^5`, while a
@@ -203,7 +211,7 @@ unobserved sectors; otherwise this language is only a reformulation.
    postselection-only elimination before investing in it.
 
 Route D's homogeneous degree-six scalar separator has been ruled out
-exactly.  The full covariant ideal is empty through degree three, so
-the next representation search begins in degree four.  Revisit this
-route only with a degree-four-or-higher non-invariant module or a
+exactly.  The full covariant ideal is empty through degree four, so
+the next representation search begins in degree five.  Revisit this
+route only with a degree-five-or-higher non-invariant module or a
 specific higher-degree invariant construction.

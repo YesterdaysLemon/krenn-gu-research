@@ -148,8 +148,9 @@ well under one minute.
 
 ## Boundary
 
-This theorem moves a global covariant search to degree four or higher.
-It does not say that a degree-four equation exists or separates
-`Delta_3`.  The separately certified degree-six scalar-invariant
-pullback is also injective, but non-invariant modules at degrees four
-and above and higher-degree invariant relations remain possible.
+The full quartic calculation is completed in
+`P5_NO_QUARTIC_RESTRICTION_EQUATIONS.md`, which also proves an injective
+pullback.  Thus a global covariant search begins in degree five.  The
+separately certified degree-six scalar-invariant pullback is also
+injective, but non-invariant modules at degree five and above and
+higher-degree invariant relations remain possible.
