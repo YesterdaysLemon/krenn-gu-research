@@ -73,6 +73,12 @@ strictly advance the finite frontier:
   226 support orbits, complex-valid pair quotas exclude 213, a prior
   theorem excludes three, and exact unit-ideal calculations exclude all
   198 viable signature tuples on the remaining ten.
+- the entire exact-one-partial part of that boundary is also impossible
+  over `C`: 466,560 labelled supports give 5,676 symmetry orbits; local
+  validity and pair quotas reduce these to 319, and exact support-only
+  unit-ideal calculations exclude every survivor.  Hence any remaining
+  exact-three-coordinate model has at least two partial non-coordinate
+  rows.
 - every fully supported zero-coupled root pair requires at least five
   distinct outside blockers across the three colours.
 - for every rank-at-least-two root edge, five fixed outside
@@ -146,6 +152,15 @@ proper theorem excludes three, and exact coefficient ideals exclude all
 regenerators, and solver replay package are in
 [`all_full_boundary/`](research_snapshots/2026-07-27-p5-coordinate-cegar/all_full_boundary/README.md).
 
+The next support layer is now closed too.  Among the ten non-coordinate
+cells, no exact-three-coordinate restriction can have exactly one
+two-colour cell and nine full cells.  An exhaustive audit reduces 5,676
+support orbits to 319 viable supports, and exact support-only coefficient
+ideals exclude all 319.  The replay package is in
+[`one_partial_boundary/`](research_snapshots/2026-07-27-p5-coordinate-cegar/one_partial_boundary/README.md).
+Combined with the all-full theorem, this forces at least two partial cells
+in the remaining exact-three-coordinate branch.
+
 ## Problem
 
 For even `n`, `d` colours, and a complex `d x d` block `W_ij` on every
@@ -201,6 +216,7 @@ the essential remaining case.
 - [`P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md`](P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md)
 - [`P5_ALL_FULL_TRICOLOUR_OBSTRUCTION.md`](P5_ALL_FULL_TRICOLOUR_OBSTRUCTION.md)
 - [`P5_ALL_FULL_BOUNDARY_OBSTRUCTION.md`](P5_ALL_FULL_BOUNDARY_OBSTRUCTION.md)
+- [`P5_ONE_PARTIAL_BOUNDARY_OBSTRUCTION.md`](P5_ONE_PARTIAL_BOUNDARY_OBSTRUCTION.md)
 - [`THREE_COLOUR_BLOCKER_UNION_LEMMA.md`](THREE_COLOUR_BLOCKER_UNION_LEMMA.md)
 - [`FOUR_BLOCKER_IDEAL_OBSTRUCTION.md`](FOUR_BLOCKER_IDEAL_OBSTRUCTION.md)
 - [`UNIVERSAL_FIVE_BLOCKER_DIVISIBILITY_LEMMA.md`](UNIVERSAL_FIVE_BLOCKER_DIVISIBILITY_LEMMA.md)

@@ -153,11 +153,33 @@ and partial second-engine cross-check are in
 sound all-full blocking clause into each fixed-shape search; it does not
 make either ledger an exhaustive certificate.
 
+## Exact-one-partial boundary
+
+The next complete support layer is also impossible.  Choose exactly one
+of the ten non-coordinate cells to have mask `3`, `5`, or `6`, leaving
+the other nine with mask `7`.  The two fixed graphs have 466,560 labelled
+supports and exactly 5,676 support orbits.  Of these, 224 are absent from
+the complex-valid local catalogue and 5,133 fail the 30 pair Hall quotas.
+
+For each of the remaining 319 supports, an exact support-only coefficient
+system retains every nonzero mixed permanent coefficient and saturates by
+all 25 Laurent parameters and the three pure coefficients.  Singular
+returns the unit ideal directly for 307 systems and via an exactly
+equivalent split saturation for 12.  Because the systems omit all
+pair-incidence relations, each contradiction excludes the entire support
+stratum rather than only one local-signature tuple.
+
+The exhaustive audit, semantic regenerator, hashes, and exact outputs are
+in [`one_partial_boundary/`](one_partial_boundary/README.md).  Together
+with the all-full result, this imports the sound condition that every
+remaining fixed-shape model has at least two partial non-coordinate
+cells.
+
 ## Next proof obligations
 
 1. Independently replay the frozen `C10` suffix and all high-coordinate
    records.
-2. Finish the partial-support parts of both `C10` and `C4+C6`, then the
-   four/five-coordinate-row branch.
+2. Finish the at-least-two-partial parts of both `C10` and `C4+C6`, then
+   the four/five-coordinate-row branch.
 3. Only after finite exhaustion, lift the `P_5` obstruction back to the
    arbitrary-order graph problem.

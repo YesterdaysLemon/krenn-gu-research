@@ -383,6 +383,14 @@ def main() -> None:
             "for historical differential replay"
         ),
     )
+    parser.add_argument(
+        "--no-one-partial-theorem",
+        action="store_true",
+        help=(
+            "disable the certified exact-one-partial blocking clauses; "
+            "intended only for historical differential replay"
+        ),
+    )
     parser.add_argument("--general-state", type=pathlib.Path)
     parser.add_argument(
         "--artifact-dir",
@@ -509,6 +517,7 @@ def main() -> None:
                 [-pool.id(("local_pattern", mode, pattern_index))]
             )
     all_full_boundary_clause = None
+    one_partial_boundary_clauses = []
     if args.shape is not None and not args.no_all_full_theorem:
         all_full_boundary_clause = [
             -pool.id(P5.entry_key(mode, source, colour))
@@ -521,6 +530,33 @@ def main() -> None:
         if len(all_full_boundary_clause) != 30:
             raise AssertionError("all-full boundary clause changed")
         cnf.append(all_full_boundary_clause)
+    if args.shape is not None and not args.no_one_partial_theorem:
+        noncoordinate_cells = [
+            (mode, source)
+            for mode, noncoordinate_sources in enumerate(
+                SHAPES[args.shape]
+            )
+            for source in noncoordinate_sources
+        ]
+        if len(noncoordinate_cells) != 10:
+            raise AssertionError("noncoordinate cell count changed")
+        for omitted_cell in noncoordinate_cells:
+            clause = [
+                -pool.id(P5.entry_key(mode, source, colour))
+                for mode, source in noncoordinate_cells
+                if (mode, source) != omitted_cell
+                for colour in P5.COLOURS
+            ]
+            if len(clause) != 27:
+                raise AssertionError(
+                    "one-partial boundary clause changed"
+                )
+            one_partial_boundary_clauses.append(clause)
+            cnf.append(clause)
+        if len(one_partial_boundary_clauses) != 10:
+            raise AssertionError(
+                "one-partial boundary clause count changed"
+            )
     if args.shape is None and args.coordinate_branch == "high":
         high_coordinate_patterns = tuple(
             pattern_index
@@ -661,6 +697,14 @@ def main() -> None:
                     if all_full_boundary_clause is not None
                     else 0
                 ),
+                "one_partial_boundary_clauses": len(
+                    one_partial_boundary_clauses
+                ),
+                "one_partial_boundary_clause_literals": (
+                    len(one_partial_boundary_clauses[0])
+                    if one_partial_boundary_clauses
+                    else 0
+                ),
                 "preloaded": len(records),
             }
         ),
@@ -685,6 +729,14 @@ def main() -> None:
                     "all_full_boundary_clause_literals": (
                         len(all_full_boundary_clause)
                         if all_full_boundary_clause is not None
+                        else 0
+                    ),
+                    "one_partial_boundary_clauses": len(
+                        one_partial_boundary_clauses
+                    ),
+                    "one_partial_boundary_clause_literals": (
+                        len(one_partial_boundary_clauses[0])
+                        if one_partial_boundary_clauses
                         else 0
                     ),
                     "after_models": model_index,
@@ -1087,6 +1139,14 @@ def main() -> None:
                                     if all_full_boundary_clause is not None
                                     else 0
                                 ),
+                                "one_partial_boundary_clauses": len(
+                                    one_partial_boundary_clauses
+                                ),
+                                "one_partial_boundary_clause_literals": (
+                                    len(one_partial_boundary_clauses[0])
+                                    if one_partial_boundary_clauses
+                                    else 0
+                                ),
                                 "learned_records": records,
                             },
                             indent=2,
@@ -1113,6 +1173,14 @@ def main() -> None:
                     "all_full_boundary_clause_literals": (
                         len(all_full_boundary_clause)
                         if all_full_boundary_clause is not None
+                        else 0
+                    ),
+                    "one_partial_boundary_clauses": len(
+                        one_partial_boundary_clauses
+                    ),
+                    "one_partial_boundary_clause_literals": (
+                        len(one_partial_boundary_clauses[0])
+                        if one_partial_boundary_clauses
                         else 0
                     ),
                     "learned_records": records,

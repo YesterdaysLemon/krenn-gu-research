@@ -6165,3 +6165,73 @@ This closes the entire all-full layer of both exact-three-coordinate cycle
 architectures.  The remaining finite boundaries contain a support mask
 `3`, `5`, or `6`, or have four/five coordinate rows in some mode.  The
 global conjecture remains unresolved.
+
+### Exact-one-partial exact-three-coordinate `P_5` obstruction
+
+The next full support layer is now closed.  Fix either `C10` or `C4+C6`,
+make exactly one of its ten non-coordinate cells partial with mask `3`,
+`5`, or `6`, and leave the other nine cells full.  The source-row
+tricolour cover again makes each source column contain singleton masks
+`1`, `2`, and `4` exactly once.
+
+There are
+
+```text
+6^5 * 10 * 3 = 233,280
+```
+
+labelled supports for each fixed graph.  Quotienting by the graph
+automorphisms and global colour permutation gives 3,888 `C10` orbits and
+1,788 `C4+C6` orbits.  The complex local catalogue rejects 144 and 80,
+respectively.  Applying all 30 pair Hall quotas to the remaining 5,452
+orbits leaves:
+
+```text
+C10:    236 viable supports, 4,631 viable signature tuples
+C4+C6:   83 viable supports, 1,944 viable signature tuples
+total:  319 viable supports, 6,575 viable signature tuples.
+```
+
+The final algebra deliberately forgets the pair signatures.  Every
+support has 44 required nonzero entries and a connected gauge graph;
+spanning-tree normalization leaves 25 Laurent parameters.  Expanding all
+nonzero mixed permanent coefficients and saturating by those parameters
+and the three pure coefficients gives:
+
+```text
+mixed equations  supports
+216                    20
+218                    15
+219                     6
+220                    21
+222                    47
+223                    83
+224                   127
+```
+
+Exact Singular `slimgb` in global `dp` order returns the unit ideal
+directly for 307 supports.  For the remaining 12, the exactly equivalent
+split-saturation encoding returns the unit ideal.  There is no overlap,
+so all 319 support strata are empty over `C`.  Since these systems omit
+every pair-incidence equation and inequation, they are safe relaxations
+of all 6,575 viable signature tuples.
+
+The audit independently reconstructs all 466,560 labelled supports, both
+symmetry quotients, the 6,495-pattern local catalogue, all Hall quotas,
+and the final support keys.  The verifier regenerates every coefficient
+system, checks byte equality and hashes, reconstructs the split
+conversion, and requires exact unit-ideal output for every case.
+
+```text
+P5_ONE_PARTIAL_BOUNDARY_OBSTRUCTION.md
+audit_p5_one_partial_boundary_obstruction.py
+generate_p5_one_partial_support_system.py
+verify_p5_one_partial_boundary_obstruction.py
+research_snapshots/2026-07-27-p5-coordinate-cegar/
+  one_partial_boundary/
+```
+
+Together with the all-full theorem, this proves that every hypothetical
+exact-three-coordinate restriction has at least two partial
+non-coordinate cells.  That deeper finite layer, the four/five-coordinate
+branch, and the arbitrary-order conjecture remain unresolved.
