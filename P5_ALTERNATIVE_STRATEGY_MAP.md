@@ -7,8 +7,8 @@ routes that can replace or guide support-by-support Gröbner calculations
 in the remaining attempt to prove that the order-five permanent tensor
 does not restrict to `Delta_3`.
 
-The current exact-three-coordinate branch has now excluded zero, one,
-and two partial non-coordinate cells.  Its next finite layer has three
+The current exact-three-coordinate branch has now excluded zero through
+three partial non-coordinate cells.  The next finite layer has four
 partial cells.
 There are
 
@@ -189,12 +189,14 @@ exactly on its 5,993 final orbits, and exact characteristic-zero
 unit-ideal calculations exclude all of them.  See
 `P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md`.
 
-The `C10` catalogue is now independently audited as well.  A second
+The `C10` catalogue is independently audited as well.  A second
 packed-array regeneration of all 25,194,240 labelled supports agrees
 exactly on all 11,751 final orbits; see
-`P5_EXACT_THREE_C10_CENSUS.md`.  The support-only algebraic exclusion of
-those 11,751 cases is still in progress, so this is a census checkpoint
-rather than a closed boundary theorem.
+`P5_EXACT_THREE_C10_CENSUS.md`.  Exact characteristic-zero Singular
+calculations return the unit ideal directly for all 11,751 support-only
+systems.  Together with the 5,993-case `C4+C6` result, this closes the
+complete exact-three-partial layer; see
+`P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md`.
 
 Their raw supports now have a concrete structural quotient.  Forgetting
 the coordinate backbone leaves only 17 uncoloured partial-cell
@@ -439,7 +441,8 @@ linking this route to Route C without choosing row-support charts.
 
 ## Priority
 
-1. finish the `C10` exact-three algebra with Route B;
+1. enumerate and learn sparse obstructions for the exact-four-partial
+   layer without materializing all labelled supports;
 2. formulate the simultaneous-root version of Route G in Grassmannian
    coordinates;
 3. test the four-channel selector and cut-rank formulation from Route F;

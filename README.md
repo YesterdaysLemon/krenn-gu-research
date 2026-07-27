@@ -95,14 +95,12 @@ strictly advance the finite frontier:
   3,308, and exact support-only unit-ideal calculations exclude every
   survivor.  Hence any remaining exact-three-coordinate model has at
   least three partial non-coordinate rows.
-- in the `C4+C6` half of the exact-three-partial layer, all 5,993
-  support-semantic survivor orbits have exact support-only coefficient
-  ideals equal to the unit ideal.  Thus any remaining `C4+C6`
-  exact-three-coordinate model has at least four partial cells.
-- in the `C10` half of the same layer, an independent regeneration of
-  all 25,194,240 labelled supports agrees exactly with the
-  symmetry-broken SAT catalogue on 11,751 support-semantic survivor
-  orbits.  Their algebraic exclusion is still in progress.
+- the complete exact-three-partial layer is impossible over `C`.
+  Independent fixed-shape regenerations reduce the two halves to 5,993
+  `C4+C6` and 11,751 `C10` support-semantic survivor orbits.  Exact
+  characteristic-zero support-only calculations return the unit ideal
+  for all 17,744 systems.  Thus any remaining exact-three-coordinate
+  model has at least four partial non-coordinate cells.
 - one of those `C10` orbits already has a ten-mixed-coefficient affine
   contradiction, needing neither the saturation equation nor a pure
   nonzero assumption.  Its 15-member coarse motif class splits into 11
@@ -125,7 +123,8 @@ strictly advance the finite frontier:
 - degree-one Macaulay identities
   `sum((a_i+sum_j b_ij*u_j)F_i)=1` add 1,960 exact rational
   obstructions.  The certified union excludes 3,650 `C10` orbits and
-  leaves 8,101 not covered by these certificate layers.
+  leaves 8,101 not explained by these small certificate layers; the
+  full saturated calculation excludes them too.
 - every fully supported zero-coupled root pair requires at least five
   distinct outside blockers across the three colours.
 - for every rank-at-least-two root edge, five fixed outside
@@ -218,14 +217,18 @@ split saturation.  The replay package is in
 Together with the preceding layers, this forces at least three partial
 cells in the remaining exact-three-coordinate branch.
 
-The ongoing exact-three search now uses a symmetry-broken SAT enumerator
-instead of materializing its 50,388,480 labelled supports.  The structural
+The exact-three search used a symmetry-broken SAT enumerator instead of
+materializing its 50,388,480 labelled supports.  The structural
 alternatives and their concrete go/no-go tests are recorded in
 [`P5_ALTERNATIVE_STRATEGY_MAP.md`](P5_ALTERNATIVE_STRATEGY_MAP.md).
-The `C10` half has now been independently regenerated and agrees exactly
-with the 11,751-case SAT catalogue; the packaged census is in
+The `C10` half was independently regenerated and agrees exactly with the
+11,751-case SAT catalogue; the packaged census is in
 [`three_partial_c10_audit/`](research_snapshots/2026-07-27-p5-coordinate-cegar/three_partial_c10_audit/README.md).
-This is an exact census checkpoint, not yet an algebraic exclusion.
+Exact characteristic-zero unit-ideal calculations now exclude every one
+of those cases.  Together with the 5,993-case `C4+C6` theorem, this
+closes the complete exact-three-partial layer; the compact algebra replay
+map is in
+[`three_partial_c10_boundary/`](research_snapshots/2026-07-27-p5-coordinate-cegar/three_partial_c10_boundary/README.md).
 
 ## Problem
 
@@ -286,6 +289,7 @@ the essential remaining case.
 - [`P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md`](P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md)
 - [`P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md`](P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md)
 - [`P5_EXACT_THREE_C10_CENSUS.md`](P5_EXACT_THREE_C10_CENSUS.md)
+- [`P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md`](P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md)
 - [`P5_C10_BINARY_FORK_OBSTRUCTION.md`](P5_C10_BINARY_FORK_OBSTRUCTION.md)
 - [`P5_C10_TRIANGLE_OBSTRUCTION.md`](P5_C10_TRIANGLE_OBSTRUCTION.md)
 - [`P5_C10_ODD_CYCLE5_OBSTRUCTION.md`](P5_C10_ODD_CYCLE5_OBSTRUCTION.md)
@@ -432,6 +436,7 @@ python verify_p5_source_row_tricolour_cover.py
 python audit_p5_source_row_tricolour_cover.py
 PYTHONPATH=tmp/python_deps python verify_p5_exact_three_c4c6_boundary_obstruction.py
 PYTHONPATH=tmp/python_deps python verify_p5_exact_three_c10_audit.py
+PYTHONPATH=tmp/python_deps python verify_p5_exact_three_c10_boundary_obstruction.py
 PYTHONPATH=tmp/python_deps python verify_p5_c10_binary_fork_obstruction.py
 PYTHONPATH=tmp/python_deps python verify_p5_c10_triangle_obstruction.py
 PYTHONPATH=tmp/python_deps python verify_p5_c10_odd_cycle5_obstruction.py

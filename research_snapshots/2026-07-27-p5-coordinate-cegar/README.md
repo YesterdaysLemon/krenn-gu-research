@@ -195,11 +195,26 @@ outputs are in [`two_partial_boundary/`](two_partial_boundary/README.md).
 Together with the two preceding layers, this forces every remaining
 fixed-shape model to have at least three partial non-coordinate cells.
 
+## Exact-three-partial boundary
+
+The next layer is impossible too.  Independent fixed-shape audits
+regenerate 25,194,240 labelled supports per shape and agree with the
+symmetry-broken catalogues on 5,993 final `C4+C6` orbits and 11,751 final
+`C10` orbits.  Exact characteristic-zero support-only coefficient ideals
+are the unit ideal for every one of the 17,744 systems.
+
+The `C4+C6` and `C10` replay packages are in
+[`three_partial_c4c6_boundary/`](three_partial_c4c6_boundary/README.md)
+and
+[`three_partial_c10_boundary/`](three_partial_c10_boundary/README.md).
+Together with the preceding layers, this forces every remaining
+fixed-shape model to have at least four partial non-coordinate cells.
+
 ## Next proof obligations
 
 1. Independently replay the frozen `C10` suffix and all high-coordinate
    records.
-2. Finish the at-least-three-partial parts of both `C10` and `C4+C6`, then
-   the four/five-coordinate-row branch.
+2. Close the four-through-ten-partial layers in both shapes, then the
+   four/five-coordinate-row branch.
 3. Only after finite exhaustion, lift the `P_5` obstruction back to the
    arbitrary-order graph problem.

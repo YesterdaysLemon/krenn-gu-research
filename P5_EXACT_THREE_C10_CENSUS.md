@@ -2,14 +2,16 @@
 
 ## Status
 
-This is an exact finite **census checkpoint**, not an algebraic
+This is the exact finite census that underlies the later algebraic
 obstruction theorem.  Two independent enumeration paths agree on exactly
 11,751 support-semantic survivor orbits in the `C10` half of the
 exact-three-partial, exact-three-coordinate `P_5` boundary.
 
-The exact characteristic-zero support-only ideal calculation is still in
-progress.  Until all 11,751 cases are excluded, this result does not close
-the `C10` branch and does not prove the global Krenn--Gu conjecture.
+Exact characteristic-zero support-only calculations subsequently
+excluded all 11,751 cases; see
+[`P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md`](P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md).
+That closes this finite layer but does not prove the global Krenn--Gu
+conjecture.
 
 ## Independent counts
 

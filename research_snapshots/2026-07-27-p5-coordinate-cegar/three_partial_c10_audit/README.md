@@ -25,6 +25,8 @@ The first command canonicalizes and compares the two 11,751-orbit sets.
 The second independently regenerates and replays all 1,960 rational
 identities.
 
-The full algebraic exclusion is still in progress.  These certificates
-exclude 3,650 orbits in union and do not resolve the remaining 8,101
-cases or the global Krenn--Gu conjecture.
+The small affine certificates explain 3,650 orbits in union.  The later
+full saturated calculation excludes all 11,751 cases; its compact replay
+map is in
+[`../three_partial_c10_boundary/`](../three_partial_c10_boundary/README.md).
+Neither result resolves the global Krenn--Gu conjecture.
