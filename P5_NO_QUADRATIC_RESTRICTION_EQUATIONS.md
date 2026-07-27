@@ -109,8 +109,10 @@ count exactly.
 ## Boundary
 
 The degree-three and higher covariant spaces can have nontrivial
-multiplicity spaces, so the multiplicity-one argument no longer
-settles them.  The degree-six scalar-invariant module is treated
-separately in `P5_DEGREE_SIX_INVARIANT_PULLBACK.md`; its pullback is
-also injective.  Non-invariant modules of degree at least three and
-higher-degree invariant relations remain possible.
+multiplicity spaces, so the multiplicity-one argument no longer settles
+them by itself.  The full cubic calculation is completed in
+`P5_NO_CUBIC_RESTRICTION_EQUATIONS.md`, which also proves an injective
+pullback.  The degree-six scalar-invariant module is treated separately
+in `P5_DEGREE_SIX_INVARIANT_PULLBACK.md`.  Non-invariant modules of
+degree at least four and higher-degree invariant relations remain
+possible.

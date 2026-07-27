@@ -131,6 +131,15 @@ pullback is nonzero, hence injective, on every module.  Therefore the
 `P_5` restriction image has no nonzero quadratic equations at all.
 The proof map is `P5_NO_QUADRATIC_RESTRICTION_EQUATIONS.md`.
 
+Degree three has nontrivial multiplicity spaces, but it is now closed
+as well.  Exact Schur--Weyl character arithmetic reduces all 147
+ordered cubic module tuples to thirteen type-count representatives.
+Deterministic matrix-unit contractions of three copies of `P_5` have
+full multiplicity rank in every representative; nonzero minors modulo
+five certify the ranks over characteristic zero.  Therefore the full
+cubic pullback is injective and the restriction image has no cubic
+equations.  See `P5_NO_CUBIC_RESTRICTION_EQUATIONS.md`.
+
 The obvious degree-three determinant contraction cannot work.  It uses
 one alternating epsilon tensor in each of five modes; swapping two of
 the three tensor copies changes its sign by `(-1)^5`, while a
@@ -194,5 +203,7 @@ unobserved sectors; otherwise this language is only a reformulation.
    postselection-only elimination before investing in it.
 
 Route D's homogeneous degree-six scalar separator has been ruled out
-exactly; revisit invariant theory only with a specific higher-degree or
-non-invariant construction.
+exactly.  The full covariant ideal is empty through degree three, so
+the next representation search begins in degree four.  Revisit this
+route only with a degree-four-or-higher non-invariant module or a
+specific higher-degree invariant construction.

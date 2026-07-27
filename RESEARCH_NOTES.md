@@ -6345,3 +6345,32 @@ have degree at least three.
 P5_NO_QUADRATIC_RESTRICTION_EQUATIONS.md
 verify_p5_no_quadratic_restriction_equations.py
 ```
+
+### No cubic equations on the `P_5` restriction image
+
+The full cubic covariant pullback is injective as well.  Schur--Weyl
+duality decomposes the cubic polynomial space into 147 ordered
+`GL(3)^5` module tuples with nonzero diagonal-`S_3` multiplicity.  Mode
+symmetry reduces them to thirteen type-count representatives, with
+multiplicities one, three, or five.
+
+An exact verifier constructs rational `S_3` matrix units, contracts
+deterministic local covectors with three simultaneous copies of `P_5`,
+and checks that the resulting diagonal-invariant vectors span every
+multiplicity space.  Explicit full-rank minors modulo five prove the
+same ranks over `Q`, since the only matrix-unit denominator is six.
+The dimension sum is the full
+
+```text
+binomial(245,3) = 2,421,090
+```
+
+cubic polynomial space.  Therefore no nonzero cubic polynomial
+vanishes on all local restrictions of `P_5`.  Combined with the
+quadratic theorem, a global covariant separator must have degree at
+least four.
+
+```text
+P5_NO_CUBIC_RESTRICTION_EQUATIONS.md
+verify_p5_no_cubic_restriction_equations.py
+```

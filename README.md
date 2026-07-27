@@ -43,6 +43,9 @@ strictly advance the finite frontier:
 - in sharp contrast, every support-four contraction of the order-five
   permanent tensor has subrank at least three; an explicit integer
   restriction produces `12 Delta_3`.
+- the full local-restriction image of the order-five permanent tensor
+  has no nonzero defining equations of degree at most three; its
+  degree-six `SL(3)^5` scalar-invariant pullback is also injective.
 - every local map in a hypothetical restriction `P_5 -> Delta_3` must
   contain a nonzero source-coordinate row supported on a single target
   colour.
@@ -239,6 +242,7 @@ the essential remaining case.
 - [`P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md`](P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md)
 - [`P5_FIVE_EQUATION_LAURENT_CORE.md`](P5_FIVE_EQUATION_LAURENT_CORE.md)
 - [`P5_NO_QUADRATIC_RESTRICTION_EQUATIONS.md`](P5_NO_QUADRATIC_RESTRICTION_EQUATIONS.md)
+- [`P5_NO_CUBIC_RESTRICTION_EQUATIONS.md`](P5_NO_CUBIC_RESTRICTION_EQUATIONS.md)
 - [`P5_DEGREE_SIX_INVARIANT_PULLBACK.md`](P5_DEGREE_SIX_INVARIANT_PULLBACK.md)
 - [`P5_ALTERNATIVE_STRATEGY_MAP.md`](P5_ALTERNATIVE_STRATEGY_MAP.md)
 - [`THREE_COLOUR_BLOCKER_UNION_LEMMA.md`](THREE_COLOUR_BLOCKER_UNION_LEMMA.md)
