@@ -87,10 +87,22 @@ independent bitmask scan finds this binary fork in exactly 1,328 of the
 replays all 1,328 identities.  This needs neither saturation nor pure
 nonzero assumptions.  See `P5_C10_BINARY_FORK_OBSTRUCTION.md`.
 
-The next sparse-resultant pass should generalize this scan from
-three-polynomial forks to four-polynomial triangles and short
-monomial-linear certificates.  That is now a concrete exact
-proof-search space rather than a geometry-only clustering heuristic.
+The first sparse-resultant generalization is complete.  The
+four-polynomial template
+
+```text
+P=1+m*A,  X=A+B,  Y=A+C,  Z=B+C
+```
+
+gives `2P-mX-mY+mZ=2`.  It occurs in 604 catalogue orbits, 113 of
+which are not binary-fork hits.  The two exact rules therefore exclude
+1,441 `C10` orbits in union and leave 10,310 undecided by these sparse
+templates.  The original generator replays all 113 new identities.
+See `P5_C10_TRIANGLE_OBSTRUCTION.md`.
+
+The next step is no longer template guessing by geometry: enumerate
+short monomial-linear relations directly in the sparse coefficient
+vector matroid, then cluster the resulting exact certificates.
 
 ## Route B: symmetry-broken exact-k SAT
 

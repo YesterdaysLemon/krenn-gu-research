@@ -112,6 +112,9 @@ strictly advance the finite frontier:
   contradiction in 1,328 of the 11,751 `C10` orbits.  Every hit is
   independently regenerated and symbolically replayed; the rule uses
   neither saturation nor pure-amplitude nonzero assumptions.
+- a four-equation triangle identity `2P-mX-mY+mZ=2` adds 113 new `C10`
+  orbits beyond the fork.  The two sparse rules exclude 1,441 orbits in
+  union and leave 10,310 undecided by these templates.
 - every fully supported zero-coupled root pair requires at least five
   distinct outside blockers across the three colours.
 - for every rank-at-least-two root edge, five fixed outside
@@ -273,6 +276,7 @@ the essential remaining case.
 - [`P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md`](P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md)
 - [`P5_EXACT_THREE_C10_CENSUS.md`](P5_EXACT_THREE_C10_CENSUS.md)
 - [`P5_C10_BINARY_FORK_OBSTRUCTION.md`](P5_C10_BINARY_FORK_OBSTRUCTION.md)
+- [`P5_C10_TRIANGLE_OBSTRUCTION.md`](P5_C10_TRIANGLE_OBSTRUCTION.md)
 - [`P5_C10_TEN_EQUATION_AFFINE_CORE.md`](P5_C10_TEN_EQUATION_AFFINE_CORE.md)
 - [`P5_EXACT_THREE_MOTIF_QUOTIENT.md`](P5_EXACT_THREE_MOTIF_QUOTIENT.md)
 - [`P5_FIVE_EQUATION_LAURENT_CORE.md`](P5_FIVE_EQUATION_LAURENT_CORE.md)
@@ -415,6 +419,7 @@ python audit_p5_source_row_tricolour_cover.py
 PYTHONPATH=tmp/python_deps python verify_p5_exact_three_c4c6_boundary_obstruction.py
 PYTHONPATH=tmp/python_deps python verify_p5_exact_three_c10_audit.py
 PYTHONPATH=tmp/python_deps python verify_p5_c10_binary_fork_obstruction.py
+PYTHONPATH=tmp/python_deps python verify_p5_c10_triangle_obstruction.py
 PYTHONPATH=tmp/python_deps python verify_p5_c10_ten_equation_affine_core.py
 PYTHONPATH=tmp/python_deps python probe_p5_c10_joint_affine_class.py
 python verify_three_colour_blocker_union.py
