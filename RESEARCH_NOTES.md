@@ -5942,3 +5942,47 @@ does not certify a global unit ideal.  Every clause learned from that
 order was removed from the active ledgers.  Only global orders such as
 `dp`, together with exact signed-lattice and rank arguments, are accepted
 as coefficient-level exclusions.
+
+### Saturated three-coordinate `P_5` cycle dichotomy
+
+The source-row tricolour cover has a sharp equality architecture.  If
+every local map has at most three coordinate rows, its fifteen distinct
+source-row/target-colour requirements saturate the total capacity.
+Every mode therefore has exactly three coordinate rows, and every
+source row is coordinate in three modes and non-coordinate in two.
+
+The ten non-coordinate cells form a 2-regular simple bipartite graph
+between the five modes and five source rows.  Its even-cycle component
+sizes can only be
+
+```text
+10
+```
+
+or
+
+```text
+4 + 6.
+```
+
+A direct choice-of-two-neighbours enumeration finds 2,040 labelled
+graphs, split as 1,440 `C10` and 600 `C4+C6`.  An independent
+enumeration as unions of two pointwise-disjoint perfect matchings finds
+5,280 ordered decompositions.  The decomposition multiplicities are two
+and four respectively, reproducing
+
+```text
+1,440 * 2 + 600 * 4 = 5,280.
+```
+
+This is an exact structural theorem over `C`, not yet a coefficient
+obstruction for either loop family.
+
+```text
+P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md
+  b83f11c5e48f17abb1079bca8cc0133d409e94e2ba86b0791d4d608b94f3064a
+verify_p5_three_coordinate_cycle_dichotomy.py
+  4129d41a5bbb9e4e724cbe4d4299971f4b4ba32d1ffa77ff9a342587985b627b
+audit_p5_three_coordinate_cycle_dichotomy.py
+  7c9b489024925a5c63129f5dec6d63565f8bdc641219b8541e5391ccbcee5ebd
+```

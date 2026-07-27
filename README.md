@@ -65,6 +65,9 @@ strictly advance the finite frontier:
   local coordinate-pair condition belongs to an explicit
   6,495-pattern catalogue; the 303 apparent patterns outside it all
   force local rank at most two.
+- if every local map has at most three coordinate rows, then every map
+  has exactly three and the ten non-coordinate cells form either one
+  `C10` or a disjoint `C4+C6` in the mode--source bipartite graph.
 - every fully supported zero-coupled root pair requires at least five
   distinct outside blockers across the three colours.
 - on eight or ten vertices, no witness exists anywhere in the
@@ -156,6 +159,7 @@ the essential remaining case.
 - [`P5_KERNEL_HALL_HIERARCHY.md`](P5_KERNEL_HALL_HIERARCHY.md)
 - [`P5_SOURCE_ROW_TRICOLOUR_COVER.md`](P5_SOURCE_ROW_TRICOLOUR_COVER.md)
 - [`P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md`](P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md)
+- [`P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md`](P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md)
 - [`THREE_COLOUR_BLOCKER_UNION_LEMMA.md`](THREE_COLOUR_BLOCKER_UNION_LEMMA.md)
 - [`FOUR_BLOCKER_IDEAL_OBSTRUCTION.md`](FOUR_BLOCKER_IDEAL_OBSTRUCTION.md)
 - [`THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md`](THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md)
@@ -533,6 +537,16 @@ an enumeration device: every relevant complex support/pair signature is
 covered.  Higher-subset incidences and coefficient realizability are
 not imported.  See
 [`P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md`](P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md).
+
+The saturated 15-coordinate-row boundary has a two-shape
+classification.  If no mode has four coordinate rows, all five modes
+must have exactly three, and every source-row/target-colour requirement
+occurs exactly once.  Each mode and each source then has exactly two
+non-coordinate cells.  Their mode--source incidence graph is
+2-regular and bipartite on ten vertices, so it is either `C10` or
+`C4+C6`.  Independent enumerations find 2,040 labelled graphs: 1,440
+of the first type and 600 of the second.  See
+[`P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md`](P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md).
 
 Intersecting the balanced all-bridge normal form for all three colours gives
 an exact arbitrary-order reduction.  Every edge block has at most four
