@@ -57,6 +57,10 @@ strictly advance the finite frontier:
 - more generally, for every source subset of size `s=2,3,4` and every
   target colour, its row span contains that coordinate covector in at
   least `s` of the five modes.
+- for every individual source row and every target colour, one of the
+  five local maps has that row proportional to the corresponding
+  coordinate covector; hence at least 15 of the 25 local rows are
+  coordinate, and some local map has at least three coordinate rows.
 - every fully supported zero-coupled root pair requires at least five
   distinct outside blockers across the three colours.
 - on eight or ten vertices, no witness exists anywhere in the
@@ -146,6 +150,7 @@ the essential remaining case.
 - [`ALL_QUADRANGLE_P5_OBSTRUCTION.md`](ALL_QUADRANGLE_P5_OBSTRUCTION.md)
 - [`P5_COORDINATE_PLANE_PAIR_COVER.md`](P5_COORDINATE_PLANE_PAIR_COVER.md)
 - [`P5_KERNEL_HALL_HIERARCHY.md`](P5_KERNEL_HALL_HIERARCHY.md)
+- [`P5_SOURCE_ROW_TRICOLOUR_COVER.md`](P5_SOURCE_ROW_TRICOLOUR_COVER.md)
 - [`THREE_COLOUR_BLOCKER_UNION_LEMMA.md`](THREE_COLOUR_BLOCKER_UNION_LEMMA.md)
 - [`FOUR_BLOCKER_IDEAL_OBSTRUCTION.md`](FOUR_BLOCKER_IDEAL_OBSTRUCTION.md)
 - [`THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md`](THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md)
@@ -270,6 +275,8 @@ python verify_p5_coordinate_plane_pair_cover.py
 python audit_p5_coordinate_plane_pair_cover.py
 python verify_p5_kernel_hall_hierarchy.py
 python audit_p5_kernel_hall_hierarchy.py
+python verify_p5_source_row_tricolour_cover.py
+python audit_p5_source_row_tricolour_cover.py
 python verify_three_colour_blocker_union.py
 python audit_three_colour_blocker_union.py
 python verify_four_blocker_ideal_obstruction.py
@@ -491,6 +498,21 @@ coordinate covector lies in the corresponding row span in at least
 `s` modes, for `s=2,3,4`.  This adds simultaneous pair, triple, and
 four-row quotas to the surviving axial and multiple-coordinate cases.
 See [`P5_KERNEL_HALL_HIERARCHY.md`](P5_KERNEL_HALL_HIERARCHY.md).
+
+The singleton boundary, where the Hall evaluation has no spare mode,
+has a stronger tensor-level solution.  Fixing one source row and
+restricting all five local inputs to its row kernels makes the source
+permanent identically zero.  The target becomes a sum of three
+decomposable tensors.  A three-term rank-one dependence can vary in at
+most one tensor mode, whereas the three restricted coordinate
+functionals span a space of dimension at least two in every mode.
+Therefore the three colour terms must be killed separately.  For every
+source row and every target colour, some local map has exactly that
+coordinate row.  This forces at least 15 coordinate rows among the 25
+local rows and at least three in one mode.  An independent `F_3` audit
+checks all 8,568 zero-or-projective five-row multisets and 34,272
+nonzero coefficient cases.  See
+[`P5_SOURCE_ROW_TRICOLOUR_COVER.md`](P5_SOURCE_ROW_TRICOLOUR_COVER.md).
 
 Intersecting the balanced all-bridge normal form for all three colours gives
 an exact arbitrary-order reduction.  Every edge block has at most four

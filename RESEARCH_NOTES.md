@@ -5837,3 +5837,47 @@ A first constrained numerical pass over all 68 placement orbits found
 only rank-collapsing residual-one endpoints after polishing.  This is
 exploratory rather than a proof.  The exact next task is to combine the
 singleton placements with the mixed-row permanent identities.
+
+### `P_5` source-row tricolour cover
+
+The previously missing singleton case of the kernel Hall hierarchy has
+an exact tensor-level resolution.  Fix a source row `p` and restrict
+every local input to the kernel of that row.  All five source vectors
+then avoid `p`, so the permanent vanishes.  On the target side this is
+a dependence among the three restricted coordinate-product tensors.
+
+Three nonzero decomposable tensors can be dependent only if, outside at
+most one mode, all three local factors are proportional.  Here the
+restricted coordinate functionals span the dual of a row kernel, of
+dimension at least two, in every mode.  Two surviving terms are also
+impossible: at a mode that kills the third colour, their factors are
+the two independent coordinates on that coordinate plane.  Hence all
+three terms are killed separately.
+
+Therefore, for every source row and every target colour, some local map
+has that exact coordinate row.  The five maps contain at least 15
+coordinate rows in total, so one map contains at least three.  The
+independent `F_3` audit checks all 8,568 multisets of five
+zero-or-projective covectors and all 34,272 nonzero coefficient-ratio
+cases.  Exactly 420 restrictions vanish, and every one contains all
+three coordinate covectors.
+
+```text
+P5_SOURCE_ROW_TRICOLOUR_COVER.md
+  faafd46d86cb815df9e65c7fc4e709528ea5ae708dcbe5b8689aa3fabfba0807
+verify_p5_source_row_tricolour_cover.py
+  a5c48f99b4a7a6546b02e39f18a518e54a2c11abdeb3887fafc276e0238fa569
+audit_p5_source_row_tricolour_cover.py
+  f552a1c0bc093f244174afade0fbe99d7a7b39288c4b72aaa9b2425c49f1b89b
+tmp/p5_source_row_tricolour_cover_verified.json
+  5d752f076acf2dd33ae9397a935b135a283938e3027582bb507a1adb43752b4a
+tmp/p5_source_row_tricolour_cover_audited.json
+  f9fe471272095662f8e3ac894e7759e9faf12b66c2bb8dfe1d1b2be3db15cdc2
+```
+
+A support-only search with the new 15-cell cover kills the former
+11-coordinate survivor but leaves rare 20-coordinate architectures.
+The first such architecture has an odd signed dependence among three
+two-term mixed-colour equations, so it is impossible over `C`.  Making
+that signed-cancellation obstruction exhaustive is the next finite
+interface; the support survivor itself is not a tensor restriction.
