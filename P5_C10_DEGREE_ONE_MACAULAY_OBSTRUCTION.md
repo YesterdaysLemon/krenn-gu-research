@@ -56,8 +56,25 @@ denominator 6:    2
 denominator 8:    5
 ```
 
-Certificate supports range from 3 to 165 Macaulay rows.  Twenty of the
-elimination certificates have the six-row difference-rectangle form
+Certificate supports range from 3 to 165 Macaulay rows.  The two
+three-row certificates have the unary affine-fork form
+
+```text
+Q = 1 + L*P,
+```
+
+giving `Q-L*P=1`.  Twenty-four four-row certificates have the split
+affine-fork form
+
+```text
+P=A+B,  Q=1+L*A,  R=1+L*B,
+```
+
+giving `Q+R-L*P=2`.  Here `L` is affine-linear rather than the single
+monomial used in the earlier binary-fork rule.
+
+Twenty more elimination certificates have the six-row
+difference-rectangle form
 
 ```text
 Q1-P1 = 1 + (y-x)A,

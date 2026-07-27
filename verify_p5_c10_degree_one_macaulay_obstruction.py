@@ -35,6 +35,7 @@ EXPECTED_CERTIFICATE_SHA256 = (
     "ec7413fa10dfd4acaba533e2f6ff1e2c645fcaeea877d1362826955bb9ca47bd"
 )
 EXPECTED_DENOMINATORS = {1: 2, 2: 1_842, 4: 109, 6: 2, 8: 5}
+EXPECTED_AFFINE_FORK_SHAPES = {"unary": 2, "binary": 24}
 
 
 def prior_certificate(polynomials: list[FORK.Polynomial]) -> bool:
@@ -85,6 +86,31 @@ def exact_residual(
             else:
                 residual.pop(key, None)
     return residual
+
+
+def affine_fork_shape(record: dict) -> str | None:
+    coefficients = rational_coefficients(record)
+    multiplied = {
+        equation
+        for equation, variable in coefficients
+        if variable >= 0
+    }
+    if len(multiplied) != 1:
+        return None
+    pivot = next(iter(multiplied))
+    other_scalars = [
+        value
+        for (equation, variable), value in coefficients.items()
+        if variable < 0 and equation != pivot
+    ]
+    if other_scalars == [Fraction(1)]:
+        return "unary"
+    if (
+        len(other_scalars) == 2
+        and all(value == Fraction(1, 2) for value in other_scalars)
+    ):
+        return "binary"
+    return None
 
 
 def main() -> None:
@@ -140,6 +166,7 @@ def main() -> None:
 
     denominator_histogram: Counter[int] = Counter()
     support_histogram: Counter[int] = Counter()
+    affine_fork_histogram: Counter[str] = Counter()
     for record in records:
         coefficients = rational_coefficients(record)
         if exact_residual(
@@ -151,7 +178,14 @@ def main() -> None:
         denominator_histogram[
             max(value.denominator for value in coefficients.values())
         ] += 1
-    if dict(denominator_histogram) != EXPECTED_DENOMINATORS:
+        shape = affine_fork_shape(record)
+        if shape is not None:
+            affine_fork_histogram[shape] += 1
+    if (
+        dict(denominator_histogram) != EXPECTED_DENOMINATORS
+        or dict(affine_fork_histogram)
+        != EXPECTED_AFFINE_FORK_SHAPES
+    ):
         raise AssertionError("certificate denominators changed")
 
     variables = sp.symbols("u0:23")
@@ -255,6 +289,12 @@ def main() -> None:
                     min(support_histogram),
                     max(support_histogram),
                 ],
+                "affine_fork_certificate_shapes": {
+                    key: value
+                    for key, value in sorted(
+                        affine_fork_histogram.items()
+                    )
+                },
                 "maximum_denominator_histogram": {
                     str(key): value
                     for key, value in sorted(
