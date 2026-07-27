@@ -175,11 +175,31 @@ with the all-full result, this imports the sound condition that every
 remaining fixed-shape model has at least two partial non-coordinate
 cells.
 
+## Exact-two-partial boundary
+
+The next layer is impossible too.  Across `C10` and `C4+C6`, exactly two
+partial cells give 6,298,560 labelled supports and 76,098 fixed-shape
+support orbits.  The local catalogue rejects 11,614 orbits, the 30 pair
+Hall quotas reject 59,911, and the pure/unique-mixed support semantics
+reject another 1,265.
+
+For each of the remaining 3,308 supports, a connected gauge graph leaves
+24 Laurent parameters.  The exact support-only coefficient ideal retains
+every nonzero mixed permanent coefficient and saturates by all parameters
+and the three pure coefficients.  Singular returns the unit ideal
+directly for 3,307 systems and through one exactly equivalent split
+saturation for the last system.
+
+The independent audits, semantic regenerator, hashes, manifest, and exact
+outputs are in [`two_partial_boundary/`](two_partial_boundary/README.md).
+Together with the two preceding layers, this forces every remaining
+fixed-shape model to have at least three partial non-coordinate cells.
+
 ## Next proof obligations
 
 1. Independently replay the frozen `C10` suffix and all high-coordinate
    records.
-2. Finish the at-least-two-partial parts of both `C10` and `C4+C6`, then
+2. Finish the at-least-three-partial parts of both `C10` and `C4+C6`, then
    the four/five-coordinate-row branch.
 3. Only after finite exhaustion, lift the `P_5` obstruction back to the
    arbitrary-order graph problem.

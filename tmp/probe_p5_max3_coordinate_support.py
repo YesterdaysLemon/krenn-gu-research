@@ -4,9 +4,11 @@ from __future__ import annotations
 
 import argparse
 import collections
+import ctypes
 import importlib.util
 import itertools
 import json
+import os
 import pathlib
 
 from pysat.solvers import Solver
@@ -22,6 +24,43 @@ SPEC = importlib.util.spec_from_file_location("p5_probe", PROBE_PATH)
 P5 = importlib.util.module_from_spec(SPEC)
 assert SPEC.loader is not None
 SPEC.loader.exec_module(P5)
+
+
+def available_memory_percent() -> float:
+    """Return the host's currently available physical-memory percentage."""
+    if os.name == "nt":
+        class MemoryStatus(ctypes.Structure):
+            _fields_ = [
+                ("length", ctypes.c_ulong),
+                ("memory_load", ctypes.c_ulong),
+                ("total_physical", ctypes.c_ulonglong),
+                ("available_physical", ctypes.c_ulonglong),
+                ("total_page_file", ctypes.c_ulonglong),
+                ("available_page_file", ctypes.c_ulonglong),
+                ("total_virtual", ctypes.c_ulonglong),
+                ("available_virtual", ctypes.c_ulonglong),
+                ("available_extended_virtual", ctypes.c_ulonglong),
+            ]
+
+        status = MemoryStatus()
+        status.length = ctypes.sizeof(status)
+        if not ctypes.windll.kernel32.GlobalMemoryStatusEx(
+            ctypes.byref(status)
+        ):
+            raise OSError("GlobalMemoryStatusEx failed")
+        return (
+            100.0
+            * status.available_physical
+            / status.total_physical
+        )
+
+    meminfo = {}
+    for line in pathlib.Path("/proc/meminfo").read_text(
+        encoding="utf-8"
+    ).splitlines():
+        key, value = line.split(":", 1)
+        meminfo[key] = int(value.strip().split()[0])
+    return 100.0 * meminfo["MemAvailable"] / meminfo["MemTotal"]
 
 
 def shape_automorphisms(
@@ -417,6 +456,15 @@ def main() -> None:
         help="seconds allowed for one opportunistic exact-support CAS probe",
     )
     parser.add_argument(
+        "--min-available-percent",
+        type=float,
+        default=20.0,
+        help=(
+            "checkpoint and pause before new work when host available "
+            "physical memory falls below this percentage; zero disables"
+        ),
+    )
+    parser.add_argument(
         "--preload-state",
         type=pathlib.Path,
         action="append",
@@ -436,6 +484,10 @@ def main() -> None:
         raise ValueError("--support-only-after must be nonnegative")
     if args.support_only_timeout <= 0:
         raise ValueError("--support-only-timeout must be positive")
+    if not 0 <= args.min_available_percent <= 100:
+        raise ValueError(
+            "--min-available-percent must be between zero and 100"
+        )
     if args.shape is not None and args.coordinate_branch != "max3":
         raise ValueError("--coordinate-branch applies only without --shape")
     if args.shape is not None and args.preload_state:
@@ -669,6 +721,51 @@ def main() -> None:
         if record["contradiction_mode"] == "singular_support_unit_ideal"
     }
 
+    def pause_for_memory(model_index: int) -> bool:
+        available = available_memory_percent()
+        if (
+            not args.min_available_percent
+            or available >= args.min_available_percent
+        ):
+            return False
+        status = {
+            "status": "PAUSED_MEMORY_FLOOR",
+            "shape": args.shape,
+            "coordinate_branch": (
+                args.shape
+                if args.shape is not None
+                else args.coordinate_branch
+            ),
+            "available_percent": round(available, 3),
+            "min_available_percent": args.min_available_percent,
+            "after_models": model_index,
+            "shape_automorphisms": len(automorphisms),
+            "shape_lex_leaders": shape_lex_leaders,
+            "general_preload": general_preload,
+            "global_preloads": global_preloads,
+            "all_full_boundary_clause_literals": (
+                len(all_full_boundary_clause)
+                if all_full_boundary_clause is not None
+                else 0
+            ),
+            "one_partial_boundary_clauses": len(
+                one_partial_boundary_clauses
+            ),
+            "one_partial_boundary_clause_literals": (
+                len(one_partial_boundary_clauses[0])
+                if one_partial_boundary_clauses
+                else 0
+            ),
+            "learned_records": records,
+        }
+        print(json.dumps(status), flush=True)
+        if args.state is not None:
+            args.state.write_text(
+                json.dumps(status, indent=2) + "\n",
+                encoding="utf-8",
+            )
+        return True
+
     print(
         json.dumps(
             {
@@ -705,6 +802,10 @@ def main() -> None:
                     if one_partial_boundary_clauses
                     else 0
                 ),
+                "available_percent": round(
+                    available_memory_percent(), 3
+                ),
+                "min_available_percent": args.min_available_percent,
                 "preloaded": len(records),
             }
         ),
@@ -713,6 +814,8 @@ def main() -> None:
 
     with Solver(name="cadical195", bootstrap_with=cnf.clauses) as solver:
         for model_index in range(args.models):
+            if pause_for_memory(model_index):
+                return
             if not solver.solve():
                 status = {
                     "status": "UNSAT",
@@ -952,6 +1055,8 @@ def main() -> None:
                 >= args.support_only_after
                 and current_support_key not in support_only_attempted
             ):
+                if pause_for_memory(model_index):
+                    return
                 support_only_attempted.add(current_support_key)
                 support_probe = P5.run_singular_signature(
                     selected_signature_indices,
@@ -971,6 +1076,8 @@ def main() -> None:
 
             singular = None
             if not lattice["inconsistent"]:
+                if pause_for_memory(model_index):
+                    return
                 singular = P5.run_singular_signature(
                     selected_signature_indices, args.artifact_dir
                 )

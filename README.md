@@ -76,9 +76,13 @@ strictly advance the finite frontier:
 - the entire exact-one-partial part of that boundary is also impossible
   over `C`: 466,560 labelled supports give 5,676 symmetry orbits; local
   validity and pair quotas reduce these to 319, and exact support-only
-  unit-ideal calculations exclude every survivor.  Hence any remaining
-  exact-three-coordinate model has at least two partial non-coordinate
-  rows.
+  unit-ideal calculations exclude every survivor.
+- the entire exact-two-partial part is impossible over `C` as well:
+  6,298,560 labelled supports give 76,098 symmetry orbits; local
+  validity, pair quotas, and direct support semantics reduce these to
+  3,308, and exact support-only unit-ideal calculations exclude every
+  survivor.  Hence any remaining exact-three-coordinate model has at
+  least three partial non-coordinate rows.
 - every fully supported zero-coupled root pair requires at least five
   distinct outside blockers across the three colours.
 - for every rank-at-least-two root edge, five fixed outside
@@ -161,6 +165,21 @@ ideals exclude all 319.  The replay package is in
 Combined with the all-full theorem, this forces at least two partial cells
 in the remaining exact-three-coordinate branch.
 
+The exact-two layer is now closed as well.  An independent packed-array
+audit reconstructs all 6,298,560 labelled supports and 76,098 symmetry
+orbits.  Local validity, the 30 pair Hall quotas, and direct support
+semantics leave 3,308 supports.  Exact support-only coefficient ideals
+exclude all 3,308: 3,307 directly and one through an exactly equivalent
+split saturation.  The replay package is in
+[`two_partial_boundary/`](research_snapshots/2026-07-27-p5-coordinate-cegar/two_partial_boundary/README.md).
+Together with the preceding layers, this forces at least three partial
+cells in the remaining exact-three-coordinate branch.
+
+The ongoing exact-three search now uses a symmetry-broken SAT enumerator
+instead of materializing its 50,388,480 labelled supports.  The structural
+alternatives and their concrete go/no-go tests are recorded in
+[`P5_ALTERNATIVE_STRATEGY_MAP.md`](P5_ALTERNATIVE_STRATEGY_MAP.md).
+
 ## Problem
 
 For even `n`, `d` colours, and a complex `d x d` block `W_ij` on every
@@ -217,6 +236,9 @@ the essential remaining case.
 - [`P5_ALL_FULL_TRICOLOUR_OBSTRUCTION.md`](P5_ALL_FULL_TRICOLOUR_OBSTRUCTION.md)
 - [`P5_ALL_FULL_BOUNDARY_OBSTRUCTION.md`](P5_ALL_FULL_BOUNDARY_OBSTRUCTION.md)
 - [`P5_ONE_PARTIAL_BOUNDARY_OBSTRUCTION.md`](P5_ONE_PARTIAL_BOUNDARY_OBSTRUCTION.md)
+- [`P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md`](P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md)
+- [`P5_FIVE_EQUATION_LAURENT_CORE.md`](P5_FIVE_EQUATION_LAURENT_CORE.md)
+- [`P5_ALTERNATIVE_STRATEGY_MAP.md`](P5_ALTERNATIVE_STRATEGY_MAP.md)
 - [`THREE_COLOUR_BLOCKER_UNION_LEMMA.md`](THREE_COLOUR_BLOCKER_UNION_LEMMA.md)
 - [`FOUR_BLOCKER_IDEAL_OBSTRUCTION.md`](FOUR_BLOCKER_IDEAL_OBSTRUCTION.md)
 - [`UNIVERSAL_FIVE_BLOCKER_DIVISIBILITY_LEMMA.md`](UNIVERSAL_FIVE_BLOCKER_DIVISIBILITY_LEMMA.md)

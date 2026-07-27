@@ -6235,3 +6235,59 @@ Together with the all-full theorem, this proves that every hypothetical
 exact-three-coordinate restriction has at least two partial
 non-coordinate cells.  That deeper finite layer, the four/five-coordinate
 branch, and the arbitrary-order conjecture remain unresolved.
+
+### Exact-two-partial exact-three-coordinate `P_5` obstruction
+
+The next support layer is now closed.  Fix `C10` or `C4+C6`, make exactly
+two of the ten non-coordinate cells partial with masks `3`, `5`, or `6`,
+and leave the other eight full.  There are
+
+```text
+6^5 * binomial(10,2) * 3^2 = 3,149,280
+```
+
+labelled supports per graph.  Independent packed-array enumeration and
+the fixed-graph/global-colour quotient give:
+
+```text
+shape   support orbits   locally invalid   locally valid
+C10              52,758             7,884          44,874
+C4+C6            23,340             3,730          19,610
+total            76,098            11,614          64,484
+```
+
+The 30 pair Hall quotas exclude 59,911 locally valid supports and leave
+4,573 supports carrying 50,109 viable signature tuples.  The missing-pure
+and unique-mixed-permanent support tests exclude another 14 and 1,251
+supports respectively.  Their exclusion sets are disjoint, leaving 3,308
+support-semantic survivors.
+
+Every survivor has 43 required nonzero entries and a connected gauge
+graph.  Spanning-tree normalization leaves 24 Laurent parameters.
+Expanding all nonzero mixed permanent coefficients and saturating by the
+parameters and three pure coefficients gives the unit ideal directly for
+3,307 supports.  One system needs the exactly equivalent 27-equation
+split saturation.  Thus every exact-two support stratum is empty over
+`C`.
+
+The primary verifier checks both independently regenerated audit hashes,
+matches the audit and SAT catalogues orbit by orbit, replays every
+signature witness and Hall quota, and semantically regenerates all 3,308
+coefficient systems.  It checks byte equality, all hashes, the split
+conversion, and exact unit-ideal output.  It returns `"verified": true`.
+
+```text
+P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md
+audit_p5_exact_two_partial_boundary.py
+generate_p5_exact_two_partial_support_system.py
+verify_p5_exact_two_partial_boundary_obstruction.py
+research_snapshots/2026-07-27-p5-coordinate-cegar/
+  two_partial_boundary/
+```
+
+Together with the all-full and exact-one-partial theorems, this proves
+that every hypothetical exact-three-coordinate restriction has at least
+three partial non-coordinate cells.  A symmetry-broken exact-cardinality
+SAT enumeration avoids materializing the 50,388,480 labelled supports in
+the next layer.  The four/five-coordinate branch and the arbitrary-order
+conjecture remain unresolved.

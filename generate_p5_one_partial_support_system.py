@@ -86,7 +86,12 @@ def polynomial_string(
 
 def validate_supports(
     supports: tuple[tuple[int, ...], ...],
+    expected_partial_cells: int = 1,
 ) -> None:
+    if expected_partial_cells not in (1, 2, 3):
+        raise ValueError(
+            "expected partial-cell count must be one, two, or three"
+        )
     if len(supports) != 5 or any(len(row) != 5 for row in supports):
         raise ValueError("supports must be a 5 by 5 array")
     if any(mask not in (1, 2, 3, 4, 5, 6, 7)
@@ -115,17 +120,21 @@ def validate_supports(
     ]
     if (
         len(noncoordinate) != 10
-        or noncoordinate.count(7) != 9
-        or sum(mask in (3, 5, 6) for mask in noncoordinate) != 1
+        or noncoordinate.count(7) != 10 - expected_partial_cells
+        or sum(mask in (3, 5, 6) for mask in noncoordinate)
+        != expected_partial_cells
     ):
-        raise ValueError("not the exactly-one-partial boundary")
+        raise ValueError(
+            "not the requested exact-partial-cell boundary"
+        )
 
 
 def generate(
     supports: tuple[tuple[int, ...], ...],
     signature_indices: tuple[int, ...],
+    expected_partial_cells: int = 1,
 ) -> tuple[str, dict]:
-    validate_supports(supports)
+    validate_supports(supports, expected_partial_cells)
     if len(signature_indices) != 5:
         raise ValueError("five signature indices are required")
     edges = tuple(
@@ -135,8 +144,11 @@ def generate(
         for colour in COLOURS
         if supports[mode][source] & (1 << colour)
     )
-    if len(edges) != 44:
-        raise AssertionError("one-partial system must have 44 entries")
+    expected_entries = 45 - expected_partial_cells
+    if len(edges) != expected_entries:
+        raise AssertionError(
+            f"system must have {expected_entries} entries"
+        )
 
     nodes = tuple(("r", source) for source in SOURCES) + tuple(
         ("c", mode, colour)
@@ -152,7 +164,11 @@ def generate(
         ):
             tree_edges.add(edge)
     free_edges = tuple(edge for edge in edges if edge not in tree_edges)
-    if len(tree_edges) != 19 or len(free_edges) != 25:
+    expected_free_edges = 26 - expected_partial_cells
+    if (
+        len(tree_edges) != 19
+        or len(free_edges) != expected_free_edges
+    ):
         raise AssertionError("gauge graph dimensions changed")
     free_position = {
         edge: index for index, edge in enumerate(free_edges)
@@ -238,13 +254,23 @@ def main() -> None:
     parser.add_argument("--supports", required=True)
     parser.add_argument("--indices", required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument(
+        "--partial-cells",
+        type=int,
+        choices=(1, 2, 3),
+        default=1,
+    )
     args = parser.parse_args()
     supports = tuple(
         tuple(map(int, row))
         for row in ast.literal_eval(args.supports)
     )
     indices = tuple(map(int, args.indices.split(",")))
-    program, metadata = generate(supports, indices)
+    program, metadata = generate(
+        supports,
+        indices,
+        expected_partial_cells=args.partial_cells,
+    )
     args.output.write_text(program, encoding="utf-8", newline="\n")
     print(metadata)
 
