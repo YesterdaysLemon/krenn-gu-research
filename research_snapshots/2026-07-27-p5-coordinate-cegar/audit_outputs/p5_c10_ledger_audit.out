@@ -1,0 +1,68 @@
+{"audited": 100, "total": 1400, "last_mode": "local_signature_exhaustion"}
+{"audited": 200, "total": 1400, "last_mode": "singular_unit_ideal"}
+{"audited": 300, "total": 1400, "last_mode": "inconsistent_binomial_sign"}
+{"audited": 400, "total": 1400, "last_mode": "singular_unit_ideal"}
+{"audited": 500, "total": 1400, "last_mode": "local_signature_exhaustion"}
+{"audited": 600, "total": 1400, "last_mode": "binomial_closure_annihilated_pure"}
+{"audited": 700, "total": 1400, "last_mode": "binomial_closure_isolated_class"}
+{"audited": 800, "total": 1400, "last_mode": "local_signature_exhaustion"}
+{"audited": 900, "total": 1400, "last_mode": "local_signature_exhaustion"}
+{"audited": 1000, "total": 1400, "last_mode": "local_signature_exhaustion"}
+{"audited": 1100, "total": 1400, "last_mode": "local_signature_exhaustion"}
+{"audited": 1200, "total": 1400, "last_mode": "local_signature_exhaustion"}
+{"audited": 1300, "total": 1400, "last_mode": "binomial_closure_isolated_class"}
+{"audited": 1400, "total": 1400, "last_mode": "singular_unit_ideal"}
+{
+  "status": "AUDIT_PASS",
+  "state": "tmp\\p5_c10_coordinate_support_state.json",
+  "state_status": "IN_PROGRESS",
+  "shape": "c10",
+  "records": 1400,
+  "unique_base_clauses": 1400,
+  "modes": {
+    "annihilated_pure_target": 48,
+    "binomial_closure_annihilated_pure": 24,
+    "binomial_closure_isolated_class": 217,
+    "inconsistent_binomial_sign": 202,
+    "isolated_signed_monomial_class": 29,
+    "local_incidence_forced_rank_one": 3,
+    "local_signature_exhaustion": 380,
+    "singular_unit_ideal": 497
+  },
+  "clause_lengths": {
+    "5": 741,
+    "21": 2,
+    "22": 2,
+    "23": 3,
+    "24": 6,
+    "25": 8,
+    "26": 5,
+    "27": 15,
+    "28": 15,
+    "29": 15,
+    "30": 29,
+    "31": 16,
+    "32": 25,
+    "33": 16,
+    "34": 11,
+    "35": 20,
+    "36": 10,
+    "37": 9,
+    "38": 6,
+    "39": 12,
+    "40": 10,
+    "41": 9,
+    "42": 12,
+    "43": 5,
+    "44": 8,
+    "45": 1,
+    "46": 5,
+    "47": 1,
+    "48": 1,
+    "49": 1,
+    "50": 1,
+    "75": 380
+  },
+  "singular_signature_tuples": 497,
+  "singular_rerun": false
+}

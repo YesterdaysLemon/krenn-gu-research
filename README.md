@@ -107,6 +107,15 @@ list the hard `d=3<n` general case as open:
 - <https://github.com/google-deepmind/formal-conjectures/blob/af88acbf9da0f26e3e934743a819e986e02f6875/FormalConjectures/Paper/MonochromaticQuantumGraph.lean>
 - <https://arxiv.org/abs/2407.00303>
 
+## Active work-in-progress snapshot
+
+The current `P_5 -> Delta_3` coordinate-support CEGAR machinery and frozen
+ledgers are published in
+[`research_snapshots/2026-07-27-p5-coordinate-cegar/`](research_snapshots/2026-07-27-p5-coordinate-cegar/README.md).
+That snapshot is deliberately labeled exploratory: its active ledgers are
+not complete branch certificates and do not change the global
+**UNRESOLVED** status above.
+
 ## Problem
 
 For even `n`, `d` colours, and a complex `d x d` block `W_ij` on every
