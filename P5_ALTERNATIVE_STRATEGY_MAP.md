@@ -124,6 +124,30 @@ union.  Thus the next useful matroid layers are seven-cycles and
 relations with at least five non-anchor coefficients, not further
 rephrasings of the four-coefficient case.
 
+A complementary degree-zero coefficient-vector scan is broader than
+any one fixed template, but it does not subsume the monomial-multiplier
+rules above.  Sparse Gaussian elimination followed by rational
+reconstruction finds exact identities
+
+```text
+sum(q_i*F_i)=1
+```
+
+in at least 1,523 `C10` orbits.  It adds 175 orbits beyond the three
+named sparse rules, making the certified union 1,690 and leaving 10,061
+not covered by these certificates.  Every modular hit reconstructs
+over the rationals, and the original generator replays all 175 new
+identities.  Modular misses are not treated as rational
+non-membership proofs.  A seven-cycle probe adds only one orbit beyond
+the named rules, and that orbit is already in this scalar-span closure.
+See
+`P5_C10_SCALAR_SPAN_OBSTRUCTION.md`.
+
+The next linear-algebra layer is the degree-one Macaulay span generated
+by `F_i` and `u_j*F_i`.  It directly tests whether a constant
+Nullstellensatz certificate with linear monomial multipliers exists,
+without guessing a cycle template.
+
 ## Route B: symmetry-broken exact-k SAT
 
 The support constraints, local projective-signature catalogue,

@@ -13,8 +13,9 @@ other `P_5` branches, or prove the global Krenn--Gu conjecture.
 
 ## The local identity
 
-Let `P,E0,...,E4` be six forbidden mixed-colour coefficient
-polynomials.  Suppose that, after the standard spanning-tree gauge,
+Let `P,E0,...,E4` be forbidden mixed-colour coefficient polynomials;
+`P` may coincide with one cycle edge.  Suppose that, after the standard
+spanning-tree gauge,
 
 ```text
 P  = 1 + m*A0,
@@ -33,7 +34,7 @@ E0 - E1 + E2 - E3 + E4 = 2*A0,
 2*P - m*(E0-E1+E2-E3+E4) = 2.
 ```
 
-All six mixed coefficients would have to vanish in a monochromatic
+All the displayed mixed coefficients would have to vanish in a monochromatic
 restriction, giving `0=2`.  Thus no common affine zero exists over
 characteristic zero.
 
@@ -55,7 +56,7 @@ finds
 ```
 
 For all 74 new hits, a second path calls the repository's original
-exact polynomial generator, checks all six selected polynomials term
+exact polynomial generator, checks every selected polynomial slot term
 for term, and symbolically replays the alternating-cycle identity.  The
 ordered new-hit list has SHA-256
 

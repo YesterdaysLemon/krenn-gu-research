@@ -118,6 +118,10 @@ strictly advance the finite frontier:
 - a five-edge odd-cycle identity adds 74 more `C10` orbits.  The three
   sparse rules exclude 1,515 orbits in union and leave 10,236
   undecided by these templates.
+- rational scalar-span identities `sum(q_i F_i)=1` are certified in at
+  least 1,523 `C10` orbits and add 175 beyond the three named rules.
+  The combined certificates exclude 1,690 orbits and leave 10,061 not
+  covered by these searches.
 - every fully supported zero-coupled root pair requires at least five
   distinct outside blockers across the three colours.
 - for every rank-at-least-two root edge, five fixed outside
@@ -281,6 +285,7 @@ the essential remaining case.
 - [`P5_C10_BINARY_FORK_OBSTRUCTION.md`](P5_C10_BINARY_FORK_OBSTRUCTION.md)
 - [`P5_C10_TRIANGLE_OBSTRUCTION.md`](P5_C10_TRIANGLE_OBSTRUCTION.md)
 - [`P5_C10_ODD_CYCLE5_OBSTRUCTION.md`](P5_C10_ODD_CYCLE5_OBSTRUCTION.md)
+- [`P5_C10_SCALAR_SPAN_OBSTRUCTION.md`](P5_C10_SCALAR_SPAN_OBSTRUCTION.md)
 - [`P5_C10_TEN_EQUATION_AFFINE_CORE.md`](P5_C10_TEN_EQUATION_AFFINE_CORE.md)
 - [`P5_EXACT_THREE_MOTIF_QUOTIENT.md`](P5_EXACT_THREE_MOTIF_QUOTIENT.md)
 - [`P5_FIVE_EQUATION_LAURENT_CORE.md`](P5_FIVE_EQUATION_LAURENT_CORE.md)
@@ -425,6 +430,7 @@ PYTHONPATH=tmp/python_deps python verify_p5_exact_three_c10_audit.py
 PYTHONPATH=tmp/python_deps python verify_p5_c10_binary_fork_obstruction.py
 PYTHONPATH=tmp/python_deps python verify_p5_c10_triangle_obstruction.py
 PYTHONPATH=tmp/python_deps python verify_p5_c10_odd_cycle5_obstruction.py
+PYTHONPATH=tmp/python_deps python verify_p5_c10_scalar_span_obstruction.py
 PYTHONPATH=tmp/python_deps python verify_p5_c10_ten_equation_affine_core.py
 PYTHONPATH=tmp/python_deps python probe_p5_c10_joint_affine_class.py
 python verify_three_colour_blocker_union.py
