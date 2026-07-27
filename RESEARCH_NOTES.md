@@ -6323,3 +6323,25 @@ P5_DEGREE_SIX_INVARIANT_PULLBACK.md
 analyze_p5_degree_six_invariant_space.py
 verify_p5_degree_six_invariant_pullback.py
 ```
+
+### No quadratic equations on the `P_5` restriction image
+
+The broader covariant strategy also has a sharp low-degree boundary.
+The quadratic polynomial space on `(C^3) tensor power 5` is the direct
+sum of sixteen multiplicity-one `GL(3)^5` modules, with an even number
+of local exterior-square factors.  For each module, an identity
+permutation paired with a transposition or four-cycle gives an isolated
+nonzero coefficient in the corresponding projection of
+`P_5 tensor P_5`.
+
+The restriction pullback is equivariant, so its kernel intersects each
+irreducible multiplicity-one summand in either zero or the whole
+summand.  The explicit nonzero projections prove that every intersection
+is zero.  Hence no nonzero homogeneous quadratic polynomial vanishes on
+the full local-restriction image of `P_5`; a covariant separator must
+have degree at least three.
+
+```text
+P5_NO_QUADRATIC_RESTRICTION_EQUATIONS.md
+verify_p5_no_quadratic_restriction_equations.py
+```

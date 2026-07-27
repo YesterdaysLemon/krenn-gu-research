@@ -122,6 +122,15 @@ Thus a polynomial on `3 x 3 x 3 x 3 x 3` tensors that vanishes on every
 restriction of `P_5` but not on `Delta_3` would be a one-line global P5
 obstruction.
 
+The full covariant search has an exact low-degree floor.  The
+multiplicity-free decomposition of
+`Sym^2((C^3) tensor power 5)` has sixteen irreducible
+`GL(3)^5` modules, indexed by even subsets of exterior-square factors.
+An isolated pair of source permutations proves that the restriction
+pullback is nonzero, hence injective, on every module.  Therefore the
+`P_5` restriction image has no nonzero quadratic equations at all.
+The proof map is `P5_NO_QUADRATIC_RESTRICTION_EQUATIONS.md`.
+
 The obvious degree-three determinant contraction cannot work.  It uses
 one alternating epsilon tensor in each of five modes; swapping two of
 the three tensor copies changes its sign by `(-1)^5`, while a
