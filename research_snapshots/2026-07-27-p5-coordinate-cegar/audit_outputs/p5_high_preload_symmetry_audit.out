@@ -1,0 +1,23 @@
+{
+  "status": "AUDIT_PASS",
+  "group_order": 150,
+  "states": [
+    {
+      "path": "tmp\\p5_tricolour_support_cegar_state.json",
+      "records": 2650,
+      "key_kinds": {
+        "local_pattern": 489,
+        "x": 2161
+      },
+      "orbit_sizes": {
+        "150": 2650
+      },
+      "aggregate_orbit_clauses": 397200,
+      "discovery_summary": {
+        "path": "tmp\\p5_tricolour_support_cegar_state.json",
+        "selected_records": 2650,
+        "orbit_clauses": 397200
+      }
+    }
+  ]
+}

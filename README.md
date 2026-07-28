@@ -5,6 +5,15 @@
 **UNRESOLVED globally.**  This repository does not yet contain a proof or
 counterexample for all even `n >= 6` and `d >= 3`.
 
+Separately, the repository now contains an exact rational positive
+Question-2 witness for [`n=6, k=4, d=4`](Q2_N6_K4_D4_CONSTRUCTION.md).
+It has two red heralds and therefore is not a Question-1 counterexample.
+PyTheus already established existence at these parameters; the
+Twitter/X-thread witness recorded here has different support and much
+simpler rational weights.  It was posted by
+[`@speaktoevil`](https://x.com/speaktoevil/status/2080655946825818276);
+this repository makes no priority claim.
+
 It does contain independently replayed computer-assisted theorems that
 strictly advance the finite frontier:
 
@@ -37,12 +46,57 @@ strictly advance the finite frontier:
 - the order-four permanent tensor has exact subrank two over `C`; in
   particular, four fully supported zero-coupled roots require at least
   five blocker vertices in total.
+- more sharply, any nonzero decomposable restriction of the order-four
+  permanent tensor through rank-at-least-two local maps has rank two in
+  at least two modes.  The two rare `q5_311` deletions therefore force
+  either one shared rank-drop mode with three common source rows on a
+  line, or disjoint `2+2` rank-drop sets partitioning the four modes.
+- the shared rank-drop case is impossible: contracting both rare slices
+  along their exceptional rows exposes the same residual `P_3`, but
+  forces it into two independent target-colour pure lines.  Hence only
+  the disjoint `2+2` partition remains.
+- the disjoint `2+2` case is impossible as well: its four common-row
+  `P_3` contractions obey an all-zero/all-pure plane theorem, and both
+  alternatives contradict nonvanishing of the rare slices.  Therefore
+  the complete normalized `q5_311` branch is excluded over `C`.
+- this rank-two boundary is sharp: an exact five-parameter family with
+  all four local maps of rank two sends `P_4` to a nonzero pure tensor.
+  Consequently the two rare deletions must be coupled; neither can be
+  excluded in isolation.
+- a restriction of `P_3` to three rank-at-least-two source subspaces is
+  zero exactly when all three subspaces are the same coordinate plane.
+- every nonzero decomposable `P_3` restriction through
+  rank-at-least-two maps has rank profile `222` and belongs to six
+  explicit two-parameter projective sign charts.
+- in normalized `q5_221`, the three target-colour contractions are
+  embedded copies of `P_4` on hyperplanes with independent normals.
+  Their rank drops give nine singleton-marked minimal incidence types
+  over six uncoloured three-edge multigraphs.
+- if the two multiplicity-two colours in normalized `q5_221` have the
+  same exact two-mode rank-drop set, the cross-contraction pencil gives
+  incompatible `P_3` normal supports.  The drop sets therefore cannot
+  coincide, excluding three exact marked incidence boundaries.
+- the exact singleton-doubled double-plus-adjacent `q5_221` type is
+  impossible as well.  Its all-normal mode fixes a support-two `P_3`
+  sign pair, and both possible signs at the doubled endpoint contradict
+  a second cross residual.
+- the singleton-doubled double-plus-disjoint exact type is impossible.
+  Its residual sign chart, `AB|CD` complement pairing, a nondegenerate
+  `P_2` contraction, and a final forbidden `P_3` rank profile reduce
+  the only surviving planes to a contradiction.
+- for any five selected vertices, their ten pairwise bilinear
+  zero-coupling equations have a simultaneous projective solution over
+  `C`; the intersection number is 24.  The solution is not yet
+  guaranteed to avoid the 15 coordinate hyperplanes.
 - every contraction of the order-five permanent tensor by a vector of
   coordinate support at most three has subrank at most two over `C`;
   the support-three case has exact subrank two.
 - in sharp contrast, every support-four contraction of the order-five
   permanent tensor has subrank at least three; an explicit integer
   restriction produces `12 Delta_3`.
+- the full local-restriction image of the order-five permanent tensor
+  has no nonzero defining equations of degree at most five; its
+  degree-six `SL(3)^5` scalar-invariant pullback is also injective.
 - every local map in a hypothetical restriction `P_5 -> Delta_3` must
   contain a nonzero source-coordinate row supported on a single target
   colour.
@@ -68,8 +122,68 @@ strictly advance the finite frontier:
 - if every local map has at most three coordinate rows, then every map
   has exactly three and the ten non-coordinate cells form either one
   `C10` or a disjoint `C4+C6` in the mode--source bipartite graph.
+- the entire all-full part of that exact-three-coordinate boundary is
+  impossible over `C`: an exhaustive `6^5`-per-shape orbit census gives
+  226 support orbits, complex-valid pair quotas exclude 213, a prior
+  theorem excludes three, and exact unit-ideal calculations exclude all
+  198 viable signature tuples on the remaining ten.
+- the entire exact-one-partial part of that boundary is also impossible
+  over `C`: 466,560 labelled supports give 5,676 symmetry orbits; local
+  validity and pair quotas reduce these to 319, and exact support-only
+  unit-ideal calculations exclude every survivor.
+- the entire exact-two-partial part is impossible over `C` as well:
+  6,298,560 labelled supports give 76,098 symmetry orbits; local
+  validity, pair quotas, and direct support semantics reduce these to
+  3,308, and exact support-only unit-ideal calculations exclude every
+  survivor.  Hence any remaining exact-three-coordinate model has at
+  least three partial non-coordinate rows.
+- the complete exact-three-partial layer is impossible over `C`.
+  Independent fixed-shape regenerations reduce the two halves to 5,993
+  `C4+C6` and 11,751 `C10` support-semantic survivor orbits.  Exact
+  characteristic-zero support-only calculations return the unit ideal
+  for all 17,744 systems.  Thus any remaining exact-three-coordinate
+  model has at least four partial non-coordinate cells.
+- in fact, the entire exact-three-coordinate branch is impossible over
+  `C`, with no bound on the number of partial cells.  A deletion-stable
+  spanning-tree chart cover reduces all lower supports to 812 exact
+  rational unit-ideal certificates across 200 viable coordinate
+  backbones.  Two global CNFs are UNSAT under CaDiCaL and Glucose, and
+  both Kissat DRAT traces are independently accepted by `drat-trim`.
+  Therefore any hypothetical `P_5 -> Delta_3` restriction has a local
+  map with at least four coordinate rows.
+- one of those `C10` orbits already has a ten-mixed-coefficient affine
+  contradiction, needing neither the saturation equation nor a pure
+  nonzero assumption.  Its 15-member coarse motif class splits into 11
+  affine unit ideals and four affine non-unit ideals, so the proof
+  template requires a finer monomial-incidence invariant.
+- a three-equation binary-fork identity `P+Q-mR=2` gives an exact affine
+  contradiction in 1,328 of the 11,751 `C10` orbits.  Every hit is
+  independently regenerated and symbolically replayed; the rule uses
+  neither saturation nor pure-amplitude nonzero assumptions.
+- a four-equation triangle identity `2P-mX-mY+mZ=2` adds 113 new `C10`
+  orbits beyond the fork.  The two sparse rules exclude 1,441 orbits in
+  union and leave 10,310 undecided by these templates.
+- a five-edge odd-cycle identity adds 74 more `C10` orbits.  The three
+  sparse rules exclude 1,515 orbits in union and leave 10,236
+  undecided by these templates.
+- rational scalar-span identities `sum(q_i F_i)=1` are certified in at
+  least 1,523 `C10` orbits and add 175 beyond the three named rules.
+  The combined certificates exclude 1,690 orbits and leave 10,061 not
+  covered by these searches.
+- degree-one Macaulay identities
+  `sum((a_i+sum_j b_ij*u_j)F_i)=1` add 1,960 exact rational
+  obstructions.  The certified union excludes 3,650 `C10` orbits and
+  leaves 8,101 not explained by these small certificate layers; the
+  full saturated calculation excludes them too.
 - every fully supported zero-coupled root pair requires at least five
   distinct outside blockers across the three colours.
+- for every rank-at-least-two root edge, five fixed outside
+  vertex--colour pairs have blocker determinants that are scalar
+  multiples of the root-edge equation; a rank-three root edge therefore
+  forces five exact zero-or-compression alternatives, at least three
+  compressions at the same endpoint.  A full-rank incident leg forces
+  the opposite leg to be a nonzero one-sided killer, so both legs at a
+  selected blocker cannot be full rank.
 - on eight or ten vertices, no witness exists anywhere in the
   simultaneous balanced all-bridge branch, without a support-degree
   bound.
@@ -106,6 +220,231 @@ list the hard `d=3<n` general case as open:
 - <https://mariokrenn.wordpress.com/graph-theory-question/>
 - <https://github.com/google-deepmind/formal-conjectures/blob/af88acbf9da0f26e3e934743a819e986e02f6875/FormalConjectures/Paper/MonochromaticQuantumGraph.lean>
 - <https://arxiv.org/abs/2407.00303>
+
+## Active work-in-progress snapshot
+
+The current `P_5 -> Delta_3` coordinate-support CEGAR machinery and frozen
+ledgers are published in
+[`research_snapshots/2026-07-27-p5-coordinate-cegar/`](research_snapshots/2026-07-27-p5-coordinate-cegar/README.md).
+That snapshot is deliberately labeled exploratory: its active ledgers are
+not complete branch certificates and do not change the global
+**UNRESOLVED** status above.
+
+The snapshot's non-unimodular Laurent failure has since been reproduced and
+closed on three actual determinant-`2` strata. Two Singular algorithms and
+an independent `msolve` conversion all certify the unit ideal, while a
+focused semantic audit replays the resulting clauses exactly. The packaged
+evidence is in
+[`nonunimodular_boundary/`](research_snapshots/2026-07-27-p5-coordinate-cegar/nonunimodular_boundary/README.md).
+
+The proper-colour all-full part of the exact-three-coordinate boundary is
+also closed on its three support orbits. Exact Singular and `msolve`
+certificates, plus a semantic coefficient verifier and independent orbit
+census, are in
+[`all_full_tricolour_boundary/`](research_snapshots/2026-07-27-p5-coordinate-cegar/all_full_tricolour_boundary/README.md).
+
+The proper-colour hypothesis has now been removed.  The complete all-full
+layer has 226 support orbits: pair-incidence quotas exclude 213, the prior
+proper theorem excludes three, and exact coefficient ideals exclude all
+198 viable signature tuples on the remaining ten.  The full audit,
+regenerators, and solver replay package are in
+[`all_full_boundary/`](research_snapshots/2026-07-27-p5-coordinate-cegar/all_full_boundary/README.md).
+
+The next support layer is now closed too.  Among the ten non-coordinate
+cells, no exact-three-coordinate restriction can have exactly one
+two-colour cell and nine full cells.  An exhaustive audit reduces 5,676
+support orbits to 319 viable supports, and exact support-only coefficient
+ideals exclude all 319.  The replay package is in
+[`one_partial_boundary/`](research_snapshots/2026-07-27-p5-coordinate-cegar/one_partial_boundary/README.md).
+Combined with the all-full theorem, this forces at least two partial cells
+in the remaining exact-three-coordinate branch.
+
+The exact-two layer is now closed as well.  An independent packed-array
+audit reconstructs all 6,298,560 labelled supports and 76,098 symmetry
+orbits.  Local validity, the 30 pair Hall quotas, and direct support
+semantics leave 3,308 supports.  Exact support-only coefficient ideals
+exclude all 3,308: 3,307 directly and one through an exactly equivalent
+split saturation.  The replay package is in
+[`two_partial_boundary/`](research_snapshots/2026-07-27-p5-coordinate-cegar/two_partial_boundary/README.md).
+Together with the preceding layers, this forces at least three partial
+cells in the remaining exact-three-coordinate branch.
+
+The exact-three search used a symmetry-broken SAT enumerator instead of
+materializing its 50,388,480 labelled supports.  The structural
+alternatives and their concrete go/no-go tests are recorded in
+[`P5_ALTERNATIVE_STRATEGY_MAP.md`](P5_ALTERNATIVE_STRATEGY_MAP.md).
+The `C10` half was independently regenerated and agrees exactly with the
+11,751-case SAT catalogue; the packaged census is in
+[`three_partial_c10_audit/`](research_snapshots/2026-07-27-p5-coordinate-cegar/three_partial_c10_audit/README.md).
+Exact characteristic-zero unit-ideal calculations now exclude every one
+of those cases.  Together with the 5,993-case `C4+C6` theorem, this
+closes the complete exact-three-partial layer; the compact algebra replay
+map is in
+[`three_partial_c10_boundary/`](research_snapshots/2026-07-27-p5-coordinate-cegar/three_partial_c10_boundary/README.md).
+
+The layer-by-layer boundary has now been superseded by a complete
+deletion-stable cover of the exact-three-coordinate branch.  Across all
+200 viable coordinate backbones, 812 spanning-tree charts suffice.  All
+812 characteristic-zero ideals replay as unit ideals; the two global
+support-cover CNFs have independently replayed DRAT proofs.  The theorem
+and package are:
+
+- [`P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md`](P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md)
+- [`research_snapshots/2026-07-27-p5-tree-chart-cover/`](research_snapshots/2026-07-27-p5-tree-chart-cover/README.md)
+
+The remaining `P_5` branch has four or five coordinate rows in at least
+one local map.  The arbitrary-order conjecture remains unresolved.
+
+An exploratory high-coordinate chart CEGAR partitions that remaining
+branch into the normalized `q4_211`, `q5_311`, and `q5_221` cases.  Its
+pure-only gauge certificates are upgraded to exact applicability clauses:
+coefficients outside a closure must vanish and gauge pivots must be
+present, while all other permitted coefficients may vanish.  The active
+ledgers are incomplete and therefore did not establish a high-coordinate
+`P_5` theorem.  The analytic theorem below now excludes `q5_311`; the
+`q4_211` and `q5_221` cases remain.
+
+A stronger finite seed set now removes the gauge-pivot assumptions
+entirely on 72 distinct `q5_311` support closures.  The original 34 and
+the new 38 closures have zero overlap.  All 72 rational systems freshly
+replay as unit ideals through exactly equivalent split saturations.
+Their reconstructed branch CNF is still SAT, so this is a strict finite
+advance rather than the missing high-coordinate theorem:
+
+- [`research_snapshots/2026-07-28-p5-high-coordinate-zero-forests/`](research_snapshots/2026-07-28-p5-high-coordinate-zero-forests/README.md)
+- [`research_snapshots/2026-07-28-p5-q5-311-rare-zero-wave2/`](research_snapshots/2026-07-28-p5-q5-311-rare-zero-wave2/README.md)
+
+The latest stopped continuation transported every exact chart through the
+288 branch symmetries and uses a deterministic gauge-tree portfolio to
+avoid normalization-dependent Gröbner stalls.  The base 1,380-chart
+discovery boundary expands to 336,672 chart-orbit clauses.  Two further
+family-learning rounds add 560 exact representatives and six enlarged
+family seeds; its last continuation started from 510,198 unique
+transported clauses and remained SAT through 360 new records.
+
+The normalized `q5_311` row also exposes two simultaneous deleted-`P_4`
+rank-one slices.  Their mixed equations, together with nonvanishing of
+all three pure amplitudes, give exact unit ideals on all 300 charts in
+one frozen continuation ledger: 298 direct and two split.  No
+majority-colour mixed equation is needed.  This identifies a uniform
+finite mechanism and a two-chart pure-nonvanishing boundary, not a
+completed branch proof.
+
+There is now an analytic reduction behind that finite mechanism.  A
+nonzero decomposable `P_4` restriction can have at most two rank-three
+local maps.  Hence each rare deletion drops rank in at least two of the
+four remaining modes.  The rank-drop theorem first leaves a shared case
+or a disjoint `2+2` partition.  The shared case is impossible because
+its two exceptional-row contractions expose the same residual `P_3`
+but place it in independent target-colour pure lines.  In the disjoint
+case, the four common-row `P_3` contractions must be all zero or all
+pure, and both alternatives contradict the nonzero rare slices.
+Therefore the complete normalized `q5_311` branch is excluded over `C`.
+The rank-drop theorem and its 10,880,000-profile finite-field audit
+program are in
+[`P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md`](P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md).
+The primary theorem replay passes; the large finite-field census remains
+pending at this checkpoint.
+The shared-case obstruction is in
+[`P5_Q5_311_SHARED_DROP_OBSTRUCTION.md`](P5_Q5_311_SHARED_DROP_OBSTRUCTION.md).
+The complete branch theorem is in
+[`P5_Q5_311_EXCLUSION_THEOREM.md`](P5_Q5_311_EXCLUSION_THEOREM.md).
+
+The theorem is sharp.  A symbolic five-parameter family and an
+independent exact-integer audit are in
+[`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](P4_DECOMPOSABLE_RANK_TWO_FAMILY.md).
+This confirms that the remaining target is simultaneous two-deletion
+compatibility.  Exact classifications of both zero and nonzero
+decomposable `P_3` restrictions through rank-at-least-two maps are in
+[`P3_ZERO_HYPERPLANE_PRODUCT_THEOREM.md`](P3_ZERO_HYPERPLANE_PRODUCT_THEOREM.md)
+and
+[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md).
+
+The same rank-drop method now gives an exact structural reduction for
+normalized `q5_221`.  Its three distinguished-mode contractions are
+embedded `P_4` tensors on hyperplanes with independent normals.  Each
+normal lies in at least two of the four remaining row spaces.  Because
+the singleton colour is distinguished, the correct minimal incidence
+list has nine marked types rather than only the six underlying
+uncoloured multigraphs.  Cross-contracting at a multiply incident mode
+produces one of six explicit sign-related `P_3` tensors; a residual
+rank-one gate is recorded explicitly before the `P_3` classification
+is used:
+
+- [`P5_Q5_221_HYPERPLANE_INCIDENCE_REDUCTION.md`](P5_Q5_221_HYPERPLANE_INCIDENCE_REDUCTION.md)
+
+Three exact marked incidence boundaries are already closed at once.
+The two multiplicity-two colours cannot have the same exact drop pair.
+A singleton drop at a shared endpoint makes two cross contractions
+force both outside maps to kill `e_0+e_1` and `e_2+e_3`, contradicting
+exactness.  If the singleton pair is instead complementary, the
+paired-majority mode forces a nonzero residual `P_3` normal to use the
+`z` coordinate, while a singleton-drop mode forces the same normal to
+omit `z`.  The rank-one exceptions collapse to an impossible zero
+residual.  Hence the exact paired-majority pattern is impossible:
+
+- [`P5_Q5_221_PAIRED_MAJORITY_DROP_OBSTRUCTION.md`](P5_Q5_221_PAIRED_MAJORITY_DROP_OBSTRUCTION.md)
+
+This is a strict reduction, not a complete `q5_221` exclusion; extra
+rank drops and the four remaining minimal marked patterns still require
+separate compatibility arguments.
+
+The next exact marked type is closed too.  If the singleton edge is
+doubled with one majority edge and the other majority edge is adjacent,
+the shared endpoint contains all three normals.  A first `Q_20`
+contraction fixes the other two plane normals as the two support-two
+sign variants.  Repeating the contraction from the all-normal endpoint
+leaves two possible signs at the doubled endpoint; one forces a
+rank-three residual and the other forces incompatible normal support.
+The only rank-one boundary is rejected by the zero-diagonal
+cross-scalar lemma:
+
+- [`P5_Q5_221_MARKED_DOUBLE_ADJACENT_OBSTRUCTION.md`](P5_Q5_221_MARKED_DOUBLE_ADJACENT_OBSTRUCTION.md)
+
+Together, the exact obstruction theorems close five of the nine
+marked exact-six-incidence types.  They do not yet cover extra
+containments.
+
+The marked double-plus-disjoint type is excluded by a different final
+step.  A nonzero `Q_20` first forces both modes on the disjoint majority
+edge to kill `e_2+e_3`.  The `AB|CD` complement pairing of `T_2` then
+forces one doubled endpoint to have row plane
+`span(h_0,u_0)`.  A contracted nondegenerate `P_2` forces the other to
+have `span(h_0,u_1)`.  In `T_1`, the factor `e_2+e_3` can then enter
+only that second mode, leaving a nonzero pure `P_3` restriction with
+rank profile `322`, impossible:
+
+- [`P5_Q5_221_MARKED_DOUBLE_DISJOINT_OBSTRUCTION.md`](P5_Q5_221_MARKED_DOUBLE_DISJOINT_OBSTRUCTION.md)
+
+The next triangle attempt is preserved as an explicitly incomplete
+working note:
+
+- [`P5_Q5_221_TRIANGLE_WORKING_NOTE.md`](P5_Q5_221_TRIANGLE_WORKING_NOTE.md)
+
+Repeated `h_2` contraction splits the triangle into two genuinely
+different chiral cases.  A candidate argument for one chirality reaches
+a two-rank-one exceptional boundary; the other chirality is still open.
+Neither is claimed as a theorem, and the note lists the exact gates that
+must be re-audited before any promotion.
+
+The new 38 zero-forest closures are also a stronger stress test of the
+rare-slice mechanism.  Direct zero-forest saturation closes 36.  The
+remaining two have exact 16-chart and 25-chart support covers using only
+the same 160 rare mixed words, all three pure amplitudes, and no lex
+symmetry breaking.  All 41 support-chart ideals replay freshly, and both
+CaDiCaL and Glucose verify both covers as UNSAT.  This closes those two
+finite closures.  Those certificates alone were not a complete
+`q5_311` classification; the analytic theorem above now supplies the
+complete branch exclusion.
+
+The frozen public packages, exact zero-cell closures, bounded WSL
+transport retries, the rejected local-order false lead, retrospective
+orbit ranking, exact family enlargement, the rare-slice reduction, and
+the ongoing fail-closed search are documented in:
+
+- [`P5_HIGH_COORDINATE_CHART_ORBIT_CEGAR.md`](P5_HIGH_COORDINATE_CHART_ORBIT_CEGAR.md)
+- [`P5_Q5_311_RARE_SLICE_REDUCTION.md`](P5_Q5_311_RARE_SLICE_REDUCTION.md)
+- [`P5_Q5_311_RARE_AFFINE_CORE.md`](P5_Q5_311_RARE_AFFINE_CORE.md)
 
 ## Problem
 
@@ -150,6 +489,7 @@ the essential remaining case.
 - [`MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md`](MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md)
 - [`EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md`](EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md)
 - [`FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md`](FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md)
+- [`FIVE_ROOT_ZERO_COUPLING_INTERSECTION_LEMMA.md`](FIVE_ROOT_ZERO_COUPLING_INTERSECTION_LEMMA.md)
 - [`SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md`](SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md)
 - [`SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md`](SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md)
 - [`FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md`](FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md)
@@ -160,8 +500,31 @@ the essential remaining case.
 - [`P5_SOURCE_ROW_TRICOLOUR_COVER.md`](P5_SOURCE_ROW_TRICOLOUR_COVER.md)
 - [`P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md`](P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md)
 - [`P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md`](P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md)
+- [`P5_ALL_FULL_TRICOLOUR_OBSTRUCTION.md`](P5_ALL_FULL_TRICOLOUR_OBSTRUCTION.md)
+- [`P5_ALL_FULL_BOUNDARY_OBSTRUCTION.md`](P5_ALL_FULL_BOUNDARY_OBSTRUCTION.md)
+- [`P5_ONE_PARTIAL_BOUNDARY_OBSTRUCTION.md`](P5_ONE_PARTIAL_BOUNDARY_OBSTRUCTION.md)
+- [`P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md`](P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md)
+- [`P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md`](P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md)
+- [`P5_EXACT_THREE_C10_CENSUS.md`](P5_EXACT_THREE_C10_CENSUS.md)
+- [`P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md`](P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md)
+- [`P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md`](P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md)
+- [`P5_C10_BINARY_FORK_OBSTRUCTION.md`](P5_C10_BINARY_FORK_OBSTRUCTION.md)
+- [`P5_C10_TRIANGLE_OBSTRUCTION.md`](P5_C10_TRIANGLE_OBSTRUCTION.md)
+- [`P5_C10_ODD_CYCLE5_OBSTRUCTION.md`](P5_C10_ODD_CYCLE5_OBSTRUCTION.md)
+- [`P5_C10_SCALAR_SPAN_OBSTRUCTION.md`](P5_C10_SCALAR_SPAN_OBSTRUCTION.md)
+- [`P5_C10_DEGREE_ONE_MACAULAY_OBSTRUCTION.md`](P5_C10_DEGREE_ONE_MACAULAY_OBSTRUCTION.md)
+- [`P5_C10_TEN_EQUATION_AFFINE_CORE.md`](P5_C10_TEN_EQUATION_AFFINE_CORE.md)
+- [`P5_EXACT_THREE_MOTIF_QUOTIENT.md`](P5_EXACT_THREE_MOTIF_QUOTIENT.md)
+- [`P5_FIVE_EQUATION_LAURENT_CORE.md`](P5_FIVE_EQUATION_LAURENT_CORE.md)
+- [`P5_NO_QUADRATIC_RESTRICTION_EQUATIONS.md`](P5_NO_QUADRATIC_RESTRICTION_EQUATIONS.md)
+- [`P5_NO_CUBIC_RESTRICTION_EQUATIONS.md`](P5_NO_CUBIC_RESTRICTION_EQUATIONS.md)
+- [`P5_NO_QUARTIC_RESTRICTION_EQUATIONS.md`](P5_NO_QUARTIC_RESTRICTION_EQUATIONS.md)
+- [`P5_NO_QUINTIC_RESTRICTION_EQUATIONS.md`](P5_NO_QUINTIC_RESTRICTION_EQUATIONS.md)
+- [`P5_DEGREE_SIX_INVARIANT_PULLBACK.md`](P5_DEGREE_SIX_INVARIANT_PULLBACK.md)
+- [`P5_ALTERNATIVE_STRATEGY_MAP.md`](P5_ALTERNATIVE_STRATEGY_MAP.md)
 - [`THREE_COLOUR_BLOCKER_UNION_LEMMA.md`](THREE_COLOUR_BLOCKER_UNION_LEMMA.md)
 - [`FOUR_BLOCKER_IDEAL_OBSTRUCTION.md`](FOUR_BLOCKER_IDEAL_OBSTRUCTION.md)
+- [`UNIVERSAL_FIVE_BLOCKER_DIVISIBILITY_LEMMA.md`](UNIVERSAL_FIVE_BLOCKER_DIVISIBILITY_LEMMA.md)
 - [`THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md`](THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md)
 - [`FOUR_REGULAR_BALANCED_BRIDGE_OBSTRUCTION.md`](FOUR_REGULAR_BALANCED_BRIDGE_OBSTRUCTION.md)
 - [`FIVE_REGULAR_BALANCED_BRIDGE_DIAGONAL_BACKBONE.md`](FIVE_REGULAR_BALANCED_BRIDGE_DIAGONAL_BACKBONE.md)
@@ -231,6 +594,9 @@ Each theorem-level claim requires:
 With the bundled dependencies on `PYTHONPATH`, run:
 
 ```text
+python verify_q2_n6_k4_d4_construction.py
+PYTHONPATH=tmp/python_deps python verify_q2_n6_k4_d4_family.py
+PYTHONPATH=tmp/python_deps python verify_q2_herald_promotion_rank_barrier.py
 python verify_six_vertex_final.py
 python verify_eight_vertex_4regular.py
 python verify_eight_vertex_16edge.py
@@ -270,6 +636,7 @@ python verify_exact_three_blocker_permanent_rank.py
 python audit_exact_three_blocker_permanent_rank.py
 python verify_fourth_order_permanent_subrank.py
 python audit_fourth_order_permanent_subrank.py
+python verify_five_root_zero_coupling_intersection.py
 python verify_support_three_p5_contraction_subrank.py
 python audit_support_three_p5_contraction_subrank.py
 python verify_support_four_p5_contraction_restriction.py
@@ -286,6 +653,16 @@ python verify_p5_kernel_hall_hierarchy.py
 python audit_p5_kernel_hall_hierarchy.py
 python verify_p5_source_row_tricolour_cover.py
 python audit_p5_source_row_tricolour_cover.py
+PYTHONPATH=tmp/python_deps python verify_p5_exact_three_c4c6_boundary_obstruction.py
+PYTHONPATH=tmp/python_deps python verify_p5_exact_three_c10_audit.py
+PYTHONPATH=tmp/python_deps python verify_p5_exact_three_c10_boundary_obstruction.py
+PYTHONPATH=tmp/python_deps python verify_p5_c10_binary_fork_obstruction.py
+PYTHONPATH=tmp/python_deps python verify_p5_c10_triangle_obstruction.py
+PYTHONPATH=tmp/python_deps python verify_p5_c10_odd_cycle5_obstruction.py
+PYTHONPATH=tmp/python_deps python verify_p5_c10_scalar_span_obstruction.py
+PYTHONPATH=tmp/python_deps python verify_p5_c10_degree_one_macaulay_obstruction.py
+PYTHONPATH=tmp/python_deps python verify_p5_c10_ten_equation_affine_core.py
+PYTHONPATH=tmp/python_deps python probe_p5_c10_joint_affine_class.py
 python verify_three_colour_blocker_union.py
 python audit_three_colour_blocker_union.py
 python verify_four_blocker_ideal_obstruction.py

@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "status": "EXACT_FINITE_CENSUS",
+  "scope": "exactly-three-partial C10 part of the exact-three-coordinate P5 boundary",
+  "global_conjecture_resolved": false,
+  "algebraic_exclusion_complete": false,
+  "shape": "c10",
+  "labelled_supports": 25194240,
+  "locally_valid_support_orbits": 281896,
+  "pair_quota_viable_support_orbits": 23112,
+  "pair_quota_viable_signature_tuples": 137405,
+  "support_semantic_exclusion_histogram": {
+    "missing_pure_permanent": 207,
+    "unique_mixed_permanent": 11277
+  },
+  "support_semantic_viable_support_orbits": 11751,
+  "catalogue_exact_match": true,
+  "files": {
+    "sat_catalogue_c10.json": {
+      "bytes": 7946691,
+      "sha256": "0c000ecb4b5ed7a1fee30d804b1a37f281861f6cf01e60c132b729f2a31377e1"
+    },
+    "audit_c10.json": {
+      "bytes": 8770331,
+      "sha256": "5ffc569491d20c4689fc63f477a361fafe1b35955a1415f30d269bcbc271dc8f"
+    }
+  }
+}
