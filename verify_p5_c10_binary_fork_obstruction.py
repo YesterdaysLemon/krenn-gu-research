@@ -63,7 +63,7 @@ def mixed_polynomials(
     free_position = {
         edge: index for index, edge in enumerate(free_edges)
     }
-    if len(tree_edges) != 19 or len(free_edges) != 23:
+    if len(tree_edges) != 19:
         raise AssertionError("gauge dimensions changed")
 
     entries: dict[tuple[int, int, int], int | None] = {}

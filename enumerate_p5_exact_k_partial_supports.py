@@ -56,7 +56,12 @@ def checkpoint(
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--shape", choices=tuple(DRIVER.SHAPES), required=True)
-    parser.add_argument("--partial-cells", type=int, choices=(1, 2, 3))
+    parser.add_argument(
+        "--partial-cells",
+        type=int,
+        choices=tuple(range(1, 11)),
+        required=True,
+    )
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument(
         "--limit",
@@ -69,9 +74,17 @@ def main() -> None:
         type=float,
         default=20.0,
     )
+    parser.add_argument(
+        "--checkpoint-every",
+        type=int,
+        default=1_000,
+        help="write a resumable checkpoint after this many total orbits",
+    )
     args = parser.parse_args()
     if args.limit <= 0:
         raise ValueError("--limit must be positive")
+    if args.checkpoint_every <= 0:
+        raise ValueError("--checkpoint-every must be positive")
     if not 15 <= args.min_available_percent < 100:
         raise ValueError("memory floor must be at least 15 and below 100")
 
@@ -228,7 +241,7 @@ def main() -> None:
                 }
             )
             solver.add_clause(P5.exact_support_clause(pool, supports))
-            if len(cases) % 100 == 0:
+            if len(cases) % args.checkpoint_every == 0:
                 checkpoint(
                     args.output,
                     args.shape,
@@ -254,6 +267,15 @@ def main() -> None:
         "LIMIT_REACHED",
         cases,
         DRIVER.available_memory_percent(),
+    )
+    print(
+        json.dumps(
+            {
+                "status": "LIMIT_REACHED",
+                "support_orbits": len(cases),
+            }
+        ),
+        flush=True,
     )
 
 

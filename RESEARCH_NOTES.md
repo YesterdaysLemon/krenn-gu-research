@@ -6404,3 +6404,49 @@ degree five.
 P5_NO_QUARTIC_RESTRICTION_EQUATIONS.md
 verify_p5_no_quartic_restriction_equations.cpp
 ```
+
+### Complete exact-three-coordinate `P_5` obstruction
+
+The remaining partial-support layers of the exact-three-coordinate
+branch are now closed simultaneously.  For a fixed coordinate backbone,
+normalize a 19-edge spanning tree of the coefficient support graph and
+form the all-full non-coordinate closure.  Saturate only the three pure
+permanent coefficients; every non-tree coefficient remains allowed to
+vanish.  A unit ideal on this chart therefore excludes every descendant
+support containing the same tree.
+
+Adaptive SAT/algebra CEGAR across all support-semantic viable coordinate
+backbones retains:
+
+```text
+shape   viable backbones   core tree charts
+C10                  127                401
+C4+C6                 73                411
+total                 200                812.
+```
+
+All 812 characteristic-zero Singular sources were regenerated and
+freshly replayed as unit ideals.  The global support replay reconstructs
+the covered 6,495-pattern pair-signature semantics and adds canonical
+coordinate-backbone lex leaders.  It yields:
+
+```text
+C10:    100,254 variables, 1,293,318 clauses, UNSAT
+C4+C6:  107,898 variables, 1,323,652 clauses, UNSAT.
+```
+
+CaDiCaL and Glucose both replay the two CNFs as UNSAT.  Kissat emits
+45,389,314- and 48,012,550-byte binary DRAT traces, both independently
+accepted by backward `drat-trim`.
+
+This proves that a hypothetical `P_5 -> Delta_3` restriction must have
+at least four coordinate rows in some local map.  It does not close that
+high-coordinate branch and does not provide the arbitrary-order lift.
+
+```text
+P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md
+p5_pair_support_semantics.py
+p5_tree_chart_cover.py
+verify_p5_exact_three_coordinate_tree_chart_obstruction.py
+research_snapshots/2026-07-27-p5-tree-chart-cover/
+```

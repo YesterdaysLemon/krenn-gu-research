@@ -101,6 +101,14 @@ strictly advance the finite frontier:
   characteristic-zero support-only calculations return the unit ideal
   for all 17,744 systems.  Thus any remaining exact-three-coordinate
   model has at least four partial non-coordinate cells.
+- in fact, the entire exact-three-coordinate branch is impossible over
+  `C`, with no bound on the number of partial cells.  A deletion-stable
+  spanning-tree chart cover reduces all lower supports to 812 exact
+  rational unit-ideal certificates across 200 viable coordinate
+  backbones.  Two global CNFs are UNSAT under CaDiCaL and Glucose, and
+  both Kissat DRAT traces are independently accepted by `drat-trim`.
+  Therefore any hypothetical `P_5 -> Delta_3` restriction has a local
+  map with at least four coordinate rows.
 - one of those `C10` orbits already has a ten-mixed-coefficient affine
   contradiction, needing neither the saturation equation nor a pure
   nonzero assumption.  Its 15-member coarse motif class splits into 11
@@ -230,6 +238,19 @@ closes the complete exact-three-partial layer; the compact algebra replay
 map is in
 [`three_partial_c10_boundary/`](research_snapshots/2026-07-27-p5-coordinate-cegar/three_partial_c10_boundary/README.md).
 
+The layer-by-layer boundary has now been superseded by a complete
+deletion-stable cover of the exact-three-coordinate branch.  Across all
+200 viable coordinate backbones, 812 spanning-tree charts suffice.  All
+812 characteristic-zero ideals replay as unit ideals; the two global
+support-cover CNFs have independently replayed DRAT proofs.  The theorem
+and package are:
+
+- [`P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md`](P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md)
+- [`research_snapshots/2026-07-27-p5-tree-chart-cover/`](research_snapshots/2026-07-27-p5-tree-chart-cover/README.md)
+
+The remaining `P_5` branch has four or five coordinate rows in at least
+one local map.  The arbitrary-order conjecture remains unresolved.
+
 ## Problem
 
 For even `n`, `d` colours, and a complex `d x d` block `W_ij` on every
@@ -290,6 +311,7 @@ the essential remaining case.
 - [`P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md`](P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md)
 - [`P5_EXACT_THREE_C10_CENSUS.md`](P5_EXACT_THREE_C10_CENSUS.md)
 - [`P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md`](P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md)
+- [`P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md`](P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md)
 - [`P5_C10_BINARY_FORK_OBSTRUCTION.md`](P5_C10_BINARY_FORK_OBSTRUCTION.md)
 - [`P5_C10_TRIANGLE_OBSTRUCTION.md`](P5_C10_TRIANGLE_OBSTRUCTION.md)
 - [`P5_C10_ODD_CYCLE5_OBSTRUCTION.md`](P5_C10_ODD_CYCLE5_OBSTRUCTION.md)

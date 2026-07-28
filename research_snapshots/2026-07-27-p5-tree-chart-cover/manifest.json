@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "status": "EXACT_FINITE_BRANCH_THEOREM",
+  "scope": "P5 to Delta3 restrictions with at most three coordinate rows in every local map",
+  "conclusion": "no such complex restriction exists",
+  "global_conjecture_resolved": false,
+  "higher_coordinate_p5_branch_resolved": false,
+  "catalogue_pair_signatures": 6495,
+  "coordinate_backbone_shapes": [
+    "c10",
+    "c4c6"
+  ],
+  "coordinate_backbone_orbits": 200,
+  "core_charts": 812,
+  "fresh_singular_replay": {
+    "path": "fresh_singular_replay.json",
+    "bytes": 307741,
+    "sha256": "cd169f53cfadd300324aad58e8ed50b58349b8bb0c06d9c2214c58d6bf812196",
+    "jobs": 4,
+    "timeout_seconds": 60,
+    "elapsed_seconds": 398.782
+  },
+  "shapes": {
+    "c10": {
+      "backbones": 127,
+      "core_charts": 401,
+      "direct_unit_ideals": 399,
+      "split_unit_ideals": 2,
+      "cnf_variables": 100254,
+      "cnf_clauses": 1293318,
+      "cnf_raw_bytes": 42429881,
+      "cnf_raw_sha256": "70cfd3cc8046bea6eec2e312f3deb98c108e7854cc8f999bcb0438d7112a5537",
+      "proof_raw_bytes": 45389314,
+      "proof_raw_sha256": "0b6c5b4b4f756ff7cc9520627e2c3f64f42ff49d4a6fe41ba09334901b079287",
+      "kissat_sha256": "28a9fa788e2cad53ba398c2e920db438e687788aa3134e8393b0a30a34cabd52",
+      "drat_trim_sha256": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a",
+      "drat_verify_seconds": 1211.2475159999449,
+      "files": {
+        "core": {
+          "path": "c10_core_charts.json",
+          "bytes": 1405998,
+          "sha256": "e0c602c99dc91dccde2f6c59ae57ec91a2d797d3f0cea3f459b9515afa39cc9f"
+        },
+        "cnf_gzip": {
+          "path": "c10_cover.cnf.gz",
+          "bytes": 4936939,
+          "sha256": "298efeab8ef52110f8eb825117b06dde5871fc0e509a018bd9f4a84e51ea72d9"
+        },
+        "proof_gzip": {
+          "path": "c10_cover.drat.gz",
+          "bytes": 10097377,
+          "sha256": "b209db74527d5a15a7017db5ac75e07bfdda130f16be52f7a689f2b3e1bca617"
+        },
+        "drat_log": {
+          "path": "c10_drat_trim.stdout",
+          "bytes": 440,
+          "sha256": "08bdd7344786345b4fab56df06c2c3bb928a328ad558104d73fc11596ce8f826"
+        }
+      }
+    },
+    "c4c6": {
+      "backbones": 73,
+      "core_charts": 411,
+      "direct_unit_ideals": 399,
+      "split_unit_ideals": 12,
+      "cnf_variables": 107898,
+      "cnf_clauses": 1323652,
+      "cnf_raw_bytes": 43012256,
+      "cnf_raw_sha256": "b80d7560e1522e7f5133b20490de79b10290bc515bd460aff7da8dbcb01220d0",
+      "proof_raw_bytes": 48012550,
+      "proof_raw_sha256": "1d660717418d218a90d390c1ae1438db71b7bf4e3460e6962203614d519abe2e",
+      "kissat_sha256": "28a9fa788e2cad53ba398c2e920db438e687788aa3134e8393b0a30a34cabd52",
+      "drat_trim_sha256": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a",
+      "drat_verify_seconds": 1203.6511666001752,
+      "files": {
+        "core": {
+          "path": "c4c6_core_charts.json",
+          "bytes": 1461771,
+          "sha256": "ecff6b14d8d7c81a09acc1cbcf6d65e6e9fb5d7b87b37ead7f03406bb658f5a4"
+        },
+        "cnf_gzip": {
+          "path": "c4c6_cover.cnf.gz",
+          "bytes": 5053834,
+          "sha256": "b579d9612e9da558899c78114cfbac35480b511f8c42aa6b6d82c9910dec8a4c"
+        },
+        "proof_gzip": {
+          "path": "c4c6_cover.drat.gz",
+          "bytes": 10409170,
+          "sha256": "1b5d08b5f64dd3b7da92bf7a71d1c74594d646b5a9ad533684e8d54202ecc261"
+        },
+        "drat_log": {
+          "path": "c4c6_drat_trim.stdout",
+          "bytes": 439,
+          "sha256": "4c0ab841c148ed2c84dee9f58e3ab8ab25c907ea4b4433a45ff3e0829f2de734"
+        }
+      }
+    }
+  }
+}

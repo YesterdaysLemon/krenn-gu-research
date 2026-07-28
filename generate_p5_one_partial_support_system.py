@@ -45,6 +45,7 @@ def multiply(left: Expression, right: Expression) -> Expression:
 def polynomial_string(
     terms: dict[tuple[int, ...], Fraction],
     variable_names: list[str],
+    invertible_positions: set[int] | None = None,
 ) -> str:
     retained = {
         exponent: coefficient
@@ -53,8 +54,14 @@ def polynomial_string(
     }
     if not retained:
         return "0"
+    if invertible_positions is None:
+        invertible_positions = set(range(len(variable_names)))
     minima = [
-        min(exponent[index] for exponent in retained)
+        (
+            min(exponent[index] for exponent in retained)
+            if index in invertible_positions
+            else 0
+        )
         for index in range(len(variable_names))
     ]
     pieces = []
@@ -88,9 +95,9 @@ def validate_supports(
     supports: tuple[tuple[int, ...], ...],
     expected_partial_cells: int = 1,
 ) -> None:
-    if expected_partial_cells not in (1, 2, 3):
+    if expected_partial_cells not in range(0, 11):
         raise ValueError(
-            "expected partial-cell count must be one, two, or three"
+            "expected partial-cell count must be between zero and ten"
         )
     if len(supports) != 5 or any(len(row) != 5 for row in supports):
         raise ValueError("supports must be a 5 by 5 array")
@@ -133,8 +140,52 @@ def generate(
     supports: tuple[tuple[int, ...], ...],
     signature_indices: tuple[int, ...],
     expected_partial_cells: int = 1,
+    coordinate_backbone_closure: bool = False,
+    pure_saturation_only: bool = False,
+    gauge_tree_edges: tuple[tuple[int, int, int], ...] | None = None,
+    allow_arbitrary_support: bool = False,
+    monomial_order: str = "dp",
+    algorithm: str = "slimgb",
 ) -> tuple[str, dict]:
-    validate_supports(supports, expected_partial_cells)
+    if monomial_order not in ("dp", "lp", "Dp"):
+        raise ValueError("unsupported global monomial order")
+    if algorithm not in ("slimgb", "std"):
+        raise ValueError("unsupported Singular basis algorithm")
+    if allow_arbitrary_support:
+        if (
+            len(supports) != 5
+            or any(len(row) != 5 for row in supports)
+            or any(
+                mask not in (1, 2, 3, 4, 5, 6, 7)
+                for row in supports
+                for mask in row
+            )
+        ):
+            raise ValueError(
+                "arbitrary supports must be a 5 by 5 array "
+                "of nonempty three-bit masks"
+            )
+    else:
+        validate_supports(supports, expected_partial_cells)
+    if allow_arbitrary_support and coordinate_backbone_closure:
+        raise ValueError(
+            "coordinate-backbone closure requires the exact-three "
+            "coordinate support model"
+        )
+    if coordinate_backbone_closure and expected_partial_cells != 0:
+        raise ValueError(
+            "coordinate-backbone closure requires all ten "
+            "noncoordinate cells to have full support"
+        )
+    if coordinate_backbone_closure and pure_saturation_only:
+        raise ValueError(
+            "coordinate-backbone closure already selects its "
+            "invertible parameter set"
+        )
+    if coordinate_backbone_closure and gauge_tree_edges is not None:
+        raise ValueError(
+            "coordinate-backbone closure does not use a full gauge tree"
+        )
     if len(signature_indices) != 5:
         raise ValueError("five signature indices are required")
     edges = tuple(
@@ -144,7 +195,11 @@ def generate(
         for colour in COLOURS
         if supports[mode][source] & (1 << colour)
     )
-    expected_entries = 45 - expected_partial_cells
+    expected_entries = (
+        len(edges)
+        if allow_arbitrary_support
+        else 45 - expected_partial_cells
+    )
     if len(edges) != expected_entries:
         raise AssertionError(
             f"system must have {expected_entries} entries"
@@ -157,15 +212,60 @@ def generate(
     )
     union_find = UnionFind(nodes)
     tree_edges = set()
-    for edge in edges:
+    if gauge_tree_edges is not None:
+        tree_candidates = gauge_tree_edges
+        if (
+            len(tree_candidates) != 19
+            or len(set(tree_candidates)) != 19
+            or any(edge not in edges for edge in tree_candidates)
+        ):
+            raise ValueError(
+                "gauge tree must contain 19 distinct support entries"
+            )
+    else:
+        tree_candidates = edges
+        if pure_saturation_only:
+            # A pure-only certificate remains valid when every non-tree
+            # coefficient vanishes.  Prefer the always-present coordinate
+            # entries in the gauge tree so that the resulting certificate
+            # covers as many lower-support descendants as possible.
+            tree_candidates = tuple(
+                edge
+                for edge in edges
+                if supports[edge[0]][edge[1]] in (1, 2, 4)
+            ) + tuple(
+                edge
+                for edge in edges
+                if supports[edge[0]][edge[1]] not in (1, 2, 4)
+            )
+    for edge in tree_candidates:
         mode, source, colour = edge
+        if (
+            coordinate_backbone_closure
+            and supports[mode][source] not in (1, 2, 4)
+        ):
+            continue
         if union_find.union(
             ("r", source), ("c", mode, colour)
         ):
             tree_edges.add(edge)
+        elif gauge_tree_edges is not None:
+            raise ValueError("gauge tree contains a cycle")
+    if gauge_tree_edges is not None and len(tree_edges) != 19:
+        raise ValueError("gauge tree does not span all 20 gauge nodes")
     free_edges = tuple(edge for edge in edges if edge not in tree_edges)
-    expected_free_edges = 26 - expected_partial_cells
-    if (
+    expected_free_edges = (
+        len(edges) - 19
+        if allow_arbitrary_support
+        else 26 - expected_partial_cells
+    )
+    if coordinate_backbone_closure:
+        if any(
+            supports[mode][source] not in (1, 2, 4)
+            for mode, source, _colour in tree_edges
+        ):
+            raise AssertionError("closure gauge used an optional entry")
+    elif (
         len(tree_edges) != 19
         or len(free_edges) != expected_free_edges
     ):
@@ -174,6 +274,15 @@ def generate(
         edge: index for index, edge in enumerate(free_edges)
     }
     final_names = [f"u{index}" for index in range(len(free_edges))]
+    invertible_positions = {
+        index
+        for index, (mode, source, _colour) in enumerate(free_edges)
+        if supports[mode][source] in (1, 2, 4)
+    }
+    if pure_saturation_only:
+        invertible_positions = set()
+    elif not coordinate_backbone_closure:
+        invertible_positions = set(range(len(free_edges)))
     one: Expression = (
         Fraction(1),
         (0,) * len(free_edges),
@@ -206,7 +315,11 @@ def generate(
                 terms[value[1]] = (
                     terms.get(value[1], Fraction(0)) + value[0]
                 )
-        text = polynomial_string(terms, final_names)
+        text = polynomial_string(
+            terms,
+            final_names,
+            invertible_positions,
+        )
         if len(set(colours)) == 1:
             pure_polynomials.append(f"({text})")
         elif text != "0":
@@ -214,14 +327,38 @@ def generate(
     mixed = list(dict.fromkeys(mixed_polynomials))
     if len(pure_polynomials) != 3:
         raise AssertionError("pure coefficient count changed")
-    saturation = "*".join(final_names + pure_polynomials)
+    saturated_names = [
+        final_names[index]
+        for index in sorted(invertible_positions)
+    ]
+    saturation = "*".join(saturated_names + pure_polynomials)
     equations = mixed + [f"z*({saturation})-1"]
     variables = final_names + ["z"]
+    header = [
+        f"// signature source: {signature_indices}",
+        f"// supports: {supports}",
+    ]
+    if gauge_tree_edges is not None:
+        header.append(f"// gauge tree: {gauge_tree_edges}")
+    if allow_arbitrary_support:
+        header.append("// support model: arbitrary nonempty masks")
+    if pure_saturation_only or coordinate_backbone_closure:
+        header.append(
+            f"// saturated parameters: {len(saturated_names)}"
+        )
     program = "\n".join(
-        [
-            f"// signature source: {signature_indices}",
-            f"// supports: {supports}",
-            "// coefficient stratum: exact support only",
+        header
+        + [
+            (
+                "// coefficient stratum: coordinate-backbone closure"
+                if coordinate_backbone_closure
+                else (
+                    "// coefficient stratum: gauge chart, "
+                    "pure saturation only"
+                    if pure_saturation_only
+                    else "// coefficient stratum: exact support only"
+                )
+            ),
             f"// nonzero entries: {len(edges)}",
             f"// gauge-free variables: {len(free_edges)}",
             "// binomial relation rank: 0",
@@ -230,10 +367,10 @@ def generate(
             "// explicit binomial equations: 0",
             f"// Laurent parameters: {len(final_names)}",
             f"// distinct mixed equations: {len(mixed)}",
-            f"ring r=0,({','.join(variables)}),dp;",
+            f"ring r=0,({','.join(variables)}),{monomial_order};",
             "option(redSB);",
             "ideal I=" + ",\n".join(equations) + ";",
-            "ideal G=slimgb(I);",
+            f"ideal G={algorithm}(I);",
             'if (size(G)==1 && G[1]==1) { "UNIT_IDEAL"; }',
             'else { "SURVIVOR"; size(G); vdim(G); }',
             "$;",
@@ -244,6 +381,7 @@ def generate(
         "nonzero_entries": len(edges),
         "gauge_free_variables": len(free_edges),
         "laurent_parameters": len(final_names),
+        "saturated_parameters": len(saturated_names),
         "mixed_equations": len(mixed),
         "pure_coefficients": 3,
     }
@@ -257,8 +395,37 @@ def main() -> None:
     parser.add_argument(
         "--partial-cells",
         type=int,
-        choices=(1, 2, 3),
+        choices=tuple(range(0, 11)),
         default=1,
+    )
+    parser.add_argument(
+        "--coordinate-backbone-closure",
+        action="store_true",
+    )
+    parser.add_argument(
+        "--pure-saturation-only",
+        action="store_true",
+    )
+    parser.add_argument(
+        "--gauge-tree",
+        help=(
+            "optional Python literal containing the 19 "
+            "(mode, source, colour) gauge-tree entries"
+        ),
+    )
+    parser.add_argument(
+        "--allow-arbitrary-support",
+        action="store_true",
+    )
+    parser.add_argument(
+        "--order",
+        choices=("dp", "lp", "Dp"),
+        default="dp",
+    )
+    parser.add_argument(
+        "--algorithm",
+        choices=("slimgb", "std"),
+        default="slimgb",
     )
     args = parser.parse_args()
     supports = tuple(
@@ -266,10 +433,24 @@ def main() -> None:
         for row in ast.literal_eval(args.supports)
     )
     indices = tuple(map(int, args.indices.split(",")))
+    gauge_tree = (
+        tuple(
+            tuple(map(int, edge))
+            for edge in ast.literal_eval(args.gauge_tree)
+        )
+        if args.gauge_tree is not None
+        else None
+    )
     program, metadata = generate(
         supports,
         indices,
         expected_partial_cells=args.partial_cells,
+        coordinate_backbone_closure=args.coordinate_backbone_closure,
+        pure_saturation_only=args.pure_saturation_only,
+        gauge_tree_edges=gauge_tree,
+        allow_arbitrary_support=args.allow_arbitrary_support,
+        monomial_order=args.order,
+        algorithm=args.algorithm,
     )
     args.output.write_text(program, encoding="utf-8", newline="\n")
     print(metadata)

@@ -7,17 +7,22 @@ routes that can replace or guide support-by-support Gröbner calculations
 in the remaining attempt to prove that the order-five permanent tensor
 does not restrict to `Delta_3`.
 
-The current exact-three-coordinate branch has now excluded zero through
-three partial non-coordinate cells.  The next finite layer has four
-partial cells.
-There are
+The complete exact-three-coordinate branch is now excluded, with no
+bound on how many of its ten non-coordinate cells are partial.  The
+deletion-stable spanning-tree cover in
+`P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md` replaces the
+remaining layer-by-layer search.
+
+For context, the next layer would have contained
 
 ```text
 2 * 6^5 * binomial(10,3) * 3^3 = 50,388,480
 ```
 
-labelled supports in that layer, so direct materialization is no longer
-the preferred enumeration method.
+labelled exact-three-partial supports across both shapes, and deeper
+layers grow further.  The chart theorem covers them all at once.  The
+remaining `P_5` problem is now the structurally distinct branch in which
+some local map has four or five coordinate rows.
 
 ## Route A: sparse-resultant cores
 
@@ -197,6 +202,16 @@ calculations return the unit ideal directly for all 11,751 support-only
 systems.  Together with the 5,993-case `C4+C6` result, this closes the
 complete exact-three-partial layer; see
 `P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md`.
+
+The support enumeration has now been replaced by an all-layer cover.
+For each coordinate backbone, SAT produces an uncovered support and a
+spanning tree inside it.  A full-closure coefficient ideal saturates
+only the three pure coefficients, so every non-tree entry may vanish.
+A unit ideal therefore excludes every descendant support containing
+that tree.  Deletion minimization leaves 401 `C10` and 411 `C4+C6`
+charts.  Global symmetry-broken CNFs using those clauses are UNSAT, and
+their DRAT traces replay independently.  See
+`P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md`.
 
 Their raw supports now have a concrete structural quotient.  Forgetting
 the coordinate backbone leaves only 17 uncoloured partial-cell

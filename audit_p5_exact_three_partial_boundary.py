@@ -1,10 +1,11 @@
-"""Independent packed-array audit of an exact-three-partial P5 catalogue."""
+"""Independent packed-array audit of an exact-k-partial P5 catalogue."""
 
 from __future__ import annotations
 
 import argparse
 import itertools
 import json
+import math
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -14,11 +15,19 @@ import verify_p5_pair_signature_catalogue_coverage as COVERAGE
 
 
 PARTIAL_MASKS = (3, 5, 6)
-EXPECTED_LABELLED = 25_194_240
+
+
+def expected_labelled(partial_cells: int) -> int:
+    return (
+        6**5
+        * math.comb(10, partial_cells)
+        * 3**partial_cells
+    )
 
 
 def labelled_valid_supports(
     shape: str,
+    partial_cells: int,
     valid_local_supports: set[tuple[int, ...]],
     min_available_percent: float,
 ) -> set[int]:
@@ -51,7 +60,9 @@ def labelled_valid_supports(
             tuple(base[5 * mode : 5 * mode + 5])
             for mode in TWO.MODES
         )
-        for selected_edges in itertools.combinations(edges, 3):
+        for selected_edges in itertools.combinations(
+            edges, partial_cells
+        ):
             positions = tuple(
                 5 * mode + source for mode, source in selected_edges
             )
@@ -60,7 +71,9 @@ def labelled_valid_supports(
                 cleared &= ~(
                     TWO.POSITION_MASK << (TWO.MASK_BITS * position)
                 )
-            for masks in itertools.product(PARTIAL_MASKS, repeat=3):
+            for masks in itertools.product(
+                PARTIAL_MASKS, repeat=partial_cells
+            ):
                 candidate = cleared
                 for position, mask in zip(
                     positions, masks, strict=True
@@ -117,9 +130,11 @@ def labelled_valid_supports(
                         raise MemoryError(
                             "available memory crossed configured floor"
                         )
-    if generated != EXPECTED_LABELLED:
+    expected = expected_labelled(partial_cells)
+    if generated != expected:
         raise AssertionError(
-            f"labelled exact-three count changed: {generated}"
+            "labelled exact-partial count changed: "
+            f"{generated} != {expected}"
         )
     return valid
 
@@ -136,9 +151,55 @@ def canonical_support(
     )
 
 
+def destructive_orbit_partition(
+    supports: set[int],
+    actions: tuple[
+        tuple[tuple[int, ...], tuple[int, ...]], ...
+    ],
+    shape: str,
+    min_available_percent: float,
+) -> list[tuple[int, int]]:
+    """Partition in place, avoiding a second full labelled-support set."""
+    ordered = sorted(supports)
+    output = []
+    for representative in ordered:
+        if representative not in supports:
+            continue
+        orbit = {
+            TWO.transform(representative, positions, masks)
+            for positions, masks in actions
+        }
+        if not orbit.issubset(supports):
+            raise AssertionError("support set is not symmetry invariant")
+        output.append((representative, len(orbit)))
+        supports.difference_update(orbit)
+        if len(output) % 10_000 == 0:
+            available = TWO.available_memory_percent()
+            print(
+                json.dumps(
+                    {
+                        "phase": "orbit_partition",
+                        "shape": shape,
+                        "support_orbits": len(output),
+                        "labelled_remaining": len(supports),
+                        "available_percent": round(available, 3),
+                    }
+                ),
+                flush=True,
+            )
+            if available < min_available_percent:
+                raise MemoryError(
+                    "available memory crossed configured floor"
+                )
+    if supports:
+        raise AssertionError("orbit partition left unvisited supports")
+    return output
+
+
 def expected_catalogue_supports(
     path: Path,
     shape: str,
+    partial_cells: int,
     actions: tuple[
         tuple[tuple[int, ...], tuple[int, ...]], ...
     ],
@@ -147,7 +208,7 @@ def expected_catalogue_supports(
     if (
         payload.get("status") != "COMPLETE"
         or payload.get("shape") != shape
-        or payload.get("partial_cells") != 3
+        or payload.get("partial_cells") != partial_cells
         or payload.get("support_orbits") != len(payload.get("cases", []))
     ):
         raise ValueError("SAT catalogue metadata is incomplete")
@@ -171,6 +232,12 @@ def expected_catalogue_supports(
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--shape", choices=ALL_FULL.SHAPES, required=True)
+    parser.add_argument(
+        "--partial-cells",
+        type=int,
+        choices=tuple(range(1, 11)),
+        default=3,
+    )
     parser.add_argument("--catalogue", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument(
@@ -191,6 +258,7 @@ def main() -> None:
 
     valid = labelled_valid_supports(
         args.shape,
+        args.partial_cells,
         valid_local_supports,
         args.min_available_percent,
     )
@@ -208,7 +276,12 @@ def main() -> None:
         ),
         flush=True,
     )
-    valid_orbits = TWO.orbit_partition(valid, actions)
+    valid_orbits = destructive_orbit_partition(
+        valid,
+        actions,
+        args.shape,
+        args.min_available_percent,
+    )
     del valid
 
     viable_cases = []
@@ -256,7 +329,10 @@ def main() -> None:
         for case in viable_cases
     }
     expected = expected_catalogue_supports(
-        args.catalogue, args.shape, actions
+        args.catalogue,
+        args.shape,
+        args.partial_cells,
+        actions,
     )
     if observed != expected:
         raise AssertionError(
@@ -267,10 +343,16 @@ def main() -> None:
 
     result = {
         "verified": True,
-        "scope": "exactly three partial noncoordinate cells",
+        "scope": (
+            f"exactly {args.partial_cells} partial "
+            "noncoordinate cells"
+        ),
         "shape": args.shape,
+        "partial_cells": args.partial_cells,
         "catalogue_pair_signatures": len(catalogue),
-        "labelled_supports": EXPECTED_LABELLED,
+        "labelled_supports": expected_labelled(
+            args.partial_cells
+        ),
         "locally_valid_support_orbits": len(valid_orbits),
         "valid_orbit_size_histogram": dict(
             sorted(orbit_histogram.items())
