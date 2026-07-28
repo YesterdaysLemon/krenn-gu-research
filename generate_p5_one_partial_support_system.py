@@ -215,12 +215,17 @@ def generate(
     if gauge_tree_edges is not None:
         tree_candidates = gauge_tree_edges
         if (
-            len(tree_candidates) != 19
-            or len(set(tree_candidates)) != 19
+            (
+                len(tree_candidates) != 19
+                if not allow_arbitrary_support
+                else not 0 <= len(tree_candidates) <= 19
+            )
+            or len(set(tree_candidates)) != len(tree_candidates)
             or any(edge not in edges for edge in tree_candidates)
         ):
             raise ValueError(
-                "gauge tree must contain 19 distinct support entries"
+                "gauge forest must contain distinct support entries "
+                "and at most 19 entries"
             )
     else:
         tree_candidates = edges
@@ -251,11 +256,14 @@ def generate(
             tree_edges.add(edge)
         elif gauge_tree_edges is not None:
             raise ValueError("gauge tree contains a cycle")
-    if gauge_tree_edges is not None and len(tree_edges) != 19:
-        raise ValueError("gauge tree does not span all 20 gauge nodes")
+    if (
+        gauge_tree_edges is not None
+        and len(tree_edges) != len(gauge_tree_edges)
+    ):
+        raise ValueError("gauge forest contains a cycle")
     free_edges = tuple(edge for edge in edges if edge not in tree_edges)
     expected_free_edges = (
-        len(edges) - 19
+        len(edges) - len(tree_edges)
         if allow_arbitrary_support
         else 26 - expected_partial_cells
     )
@@ -266,7 +274,10 @@ def generate(
         ):
             raise AssertionError("closure gauge used an optional entry")
     elif (
-        len(tree_edges) != 19
+        (
+            not allow_arbitrary_support
+            and len(tree_edges) != 19
+        )
         or len(free_edges) != expected_free_edges
     ):
         raise AssertionError("gauge graph dimensions changed")
@@ -339,7 +350,12 @@ def generate(
         f"// supports: {supports}",
     ]
     if gauge_tree_edges is not None:
-        header.append(f"// gauge tree: {gauge_tree_edges}")
+        gauge_label = (
+            "tree" if len(gauge_tree_edges) == 19 else "forest"
+        )
+        header.append(
+            f"// gauge {gauge_label}: {gauge_tree_edges}"
+        )
     if allow_arbitrary_support:
         header.append("// support model: arbitrary nonempty masks")
     if pure_saturation_only or coordinate_backbone_closure:
@@ -377,7 +393,7 @@ def generate(
             "",
         ]
     )
-    return program, {
+    metadata = {
         "nonzero_entries": len(edges),
         "gauge_free_variables": len(free_edges),
         "laurent_parameters": len(final_names),
@@ -385,6 +401,9 @@ def generate(
         "mixed_equations": len(mixed),
         "pure_coefficients": 3,
     }
+    if len(tree_edges) != 19:
+        metadata["gauge_fixed_entries"] = len(tree_edges)
+    return program, metadata
 
 
 def main() -> None:

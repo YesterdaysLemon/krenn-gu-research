@@ -6450,3 +6450,71 @@ p5_tree_chart_cover.py
 verify_p5_exact_three_coordinate_tree_chart_obstruction.py
 research_snapshots/2026-07-27-p5-tree-chart-cover/
 ```
+
+### High-coordinate `P_5` chart cover in progress
+
+The remaining local-restriction branch has a mode with four or five
+coordinate rows.  Rank three leaves exactly three normalized mode-zero
+types:
+
+```text
+q4_211: one noncoordinate cell and singleton multiplicities 2,1,1
+q5_311: five singleton cells with multiplicities 3,1,1
+q5_221: five singleton cells with multiplicities 2,2,1.
+```
+
+They form a disjoint priority partition.  The active driver combines the
+6,495 exact local pair signatures with branch stabilizer lex leaders and
+pure-only gauge-chart certificates.
+
+The chart implication has been strengthened.  A coefficient permitted
+by the closure but not chosen as a gauge pivot may vanish, so exact
+singleton support is not an antecedent.  The exact applicability
+condition is instead:
+
+```text
+every entry outside the closure vanishes;
+every gauge-forest pivot is present.
+```
+
+Normalized singleton conditions already forced by the branch are
+omitted.  Earlier pure-only unit-ideal records can therefore be upgraded
+to these stronger clauses without changing their algebraic sources.
+Disconnected support graphs use maximal acyclic gauge forests rather
+than an unjustified spanning tree.
+
+The three ledgers remain in progress.  Until their reconstructed branch
+CNFs are independently UNSAT, this is exploratory infrastructure rather
+than a theorem.
+
+```text
+p5_high_coordinate_tree_chart_cegar.py
+verify_p5_high_coordinate_chart_ledgers.py
+generate_p5_one_partial_support_system.py
+```
+
+### Five-root zero-coupling intersection
+
+For arbitrary bilinear forms on the ten edges among five chosen
+vertices, the ten internal zero-coupling equations always have a
+simultaneous point in `(P^2)^5`.  If `h_i` denotes the hyperplane class
+of factor `i`, the intersection class is
+
+```text
+product_(i<j) (h_i+h_j)
+  = 24 h_0^2 h_1^2 h_2^2 h_3^2 h_4^2.
+```
+
+The coefficient counts orientations of `K_5` with indegree two at every
+vertex.  There are 24 labeled regular tournaments, forming one orbit
+with stabilizer order five.
+
+This does not guarantee a fully supported root tuple: all intersection
+multiplicity may lie on the union of the fifteen coordinate
+hyperplanes.  It turns the next arbitrary-order question into a precise
+toric-boundary problem and does not by itself solve the conjecture.
+
+```text
+FIVE_ROOT_ZERO_COUPLING_INTERSECTION_LEMMA.md
+verify_five_root_zero_coupling_intersection.py
+```

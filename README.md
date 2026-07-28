@@ -46,6 +46,10 @@ strictly advance the finite frontier:
 - the order-four permanent tensor has exact subrank two over `C`; in
   particular, four fully supported zero-coupled roots require at least
   five blocker vertices in total.
+- for any five selected vertices, their ten pairwise bilinear
+  zero-coupling equations have a simultaneous projective solution over
+  `C`; the intersection number is 24.  The solution is not yet
+  guaranteed to avoid the 15 coordinate hyperplanes.
 - every contraction of the order-five permanent tensor by a vector of
   coordinate support at most three has subrank at most two over `C`;
   the support-three case has exact subrank two.
@@ -251,6 +255,14 @@ and package are:
 The remaining `P_5` branch has four or five coordinate rows in at least
 one local map.  The arbitrary-order conjecture remains unresolved.
 
+An exploratory high-coordinate chart CEGAR now partitions that remaining
+branch into the normalized `q4_211`, `q5_311`, and `q5_221` cases.  Its
+pure-only gauge certificates are upgraded to exact applicability clauses:
+coefficients outside a closure must vanish and gauge pivots must be
+present, while all other permitted coefficients may vanish.  The active
+ledgers are incomplete and therefore do not yet establish a
+high-coordinate `P_5` theorem.
+
 ## Problem
 
 For even `n`, `d` colours, and a complex `d x d` block `W_ij` on every
@@ -294,6 +306,7 @@ the essential remaining case.
 - [`MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md`](MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md)
 - [`EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md`](EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md)
 - [`FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md`](FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md)
+- [`FIVE_ROOT_ZERO_COUPLING_INTERSECTION_LEMMA.md`](FIVE_ROOT_ZERO_COUPLING_INTERSECTION_LEMMA.md)
 - [`SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md`](SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md)
 - [`SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md`](SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md)
 - [`FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md`](FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md)
@@ -440,6 +453,7 @@ python verify_exact_three_blocker_permanent_rank.py
 python audit_exact_three_blocker_permanent_rank.py
 python verify_fourth_order_permanent_subrank.py
 python audit_fourth_order_permanent_subrank.py
+python verify_five_root_zero_coupling_intersection.py
 python verify_support_three_p5_contraction_subrank.py
 python audit_support_three_p5_contraction_subrank.py
 python verify_support_four_p5_contraction_restriction.py
