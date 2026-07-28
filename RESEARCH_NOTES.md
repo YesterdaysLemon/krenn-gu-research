@@ -6538,3 +6538,58 @@ toric-boundary problem and does not by itself solve the conjecture.
 FIVE_ROOT_ZERO_COUPLING_INTERSECTION_LEMMA.md
 verify_five_root_zero_coupling_intersection.py
 ```
+
+### High-coordinate chart orbits and the rare `q5_311` slices
+
+The `q5_311` continuation now transports each exact chart through all
+288 branch symmetries.  A deterministic gauge-tree portfolio avoids the
+large runtime variation caused by normalization choice, while Linux-side
+timeouts and a bounded retry for only `WSL/Service/E_UNEXPECTED` keep
+algebra failures fail-closed.
+
+Two consecutive family-learning ledgers contain 260 and 300 exact dynamic
+representatives.  Retrospective bitset evaluation of the complete chart
+orbits ranks the 300-ledger families by actual source-model coverage.  The
+leading four distinct representatives cover 24, 23, 22, and 19 recorded
+models.  Fixed-gauge closure enlargement frees 4--5 cells in each and
+shrinks their clauses:
+
+```text
+record   old literals   new literals
+146               26             20
+140               27             21
+196               18             16
+276               26             20
+```
+
+All four enlarged sources regenerate, replay freshly as rational unit
+ideals, and pass both SAT solvers at the representative-clause boundary.
+The next continuation reconstructs 510,198 unique startup chart clauses.
+
+The normalized mode-zero multiplicities `3,1,1` expose a smaller algebraic
+mechanism.  Fixing either rare colour deletes its unique source row and
+forces the other four maps to compress the resulting `P_4` tensor to a
+nonzero decomposable tensor.  Keeping only those two slices gives at most
+160 mixed equations and saturates only the two rare pure coefficients.
+
+On the frozen 300-record ledger:
+
+```text
+rare-slice unit ideals: 298 / 300
+elapsed mean:           0.0981 seconds
+```
+
+The two exceptions are exactly the two full-system split certificates.
+For one of them the rare split ideal is proper and positive-dimensional,
+so the majority-colour equations are genuinely necessary on that chart.
+The evidence therefore motivates a simultaneous two-deletion `P_4`
+classification with an exceptional stratum; it is not a universal
+rare-slice theorem.
+
+```text
+P5_HIGH_COORDINATE_CHART_ORBIT_CEGAR.md
+P5_Q5_311_RARE_SLICE_REDUCTION.md
+rank_p5_high_coordinate_chart_orbits.py
+maximize_p5_high_coordinate_chart_closure.py
+probe_p5_q5_311_rare_slice_core.py
+```

@@ -118,19 +118,87 @@ hide small linear certificates:
 These are negative discovery results, not lower bounds on
 Nullstellensatz degree and not evidence of a surviving restriction.
 
+## Retrospective orbit ranking and chart enlargement
+
+`rank_p5_high_coordinate_chart_orbits.py` reconstructs every representative
+orbit and evaluates its clauses on all recorded source models using exact
+Boolean bitsets.  It reports both raw coverage and a deterministic greedy
+set cover.  This replaces one-off visual selection by a reproducible answer
+to:
+
+```text
+which certified chart family actually covers the most recorded survivors?
+```
+
+On a frozen 300-record continuation ledger, the four leading distinct
+families covered 24, 23, 22, and 19 recorded models respectively.
+
+`maximize_p5_high_coordinate_chart_closure.py` then enlarges one selected
+closure while retaining its gauge forest.  It recursively tests groups of
+nonpivot cells before pivot cells.  A cell is freed only after an exact
+global-order unit-ideal result; a timeout or error leaves it constrained.
+The four leading families were strengthened as follows:
+
+```text
+source record   old clause   relaxed clause   freed cells
+146                  26              20             5
+140                  27              21             4
+196                  18              16             4
+276                  26              20             5
+```
+
+All four relaxed sources were independently regenerated and freshly replayed
+with Singular.  CaDiCaL and Glucose both accept their representative clauses
+while retaining SAT, as expected for a strict intermediate cover.
+
+## Two rare deleted-`P_4` slices
+
+The normalized `q5_311` row has singleton multiplicities `3,1,1`.  Fixing
+either rare mode-zero colour selects one source row, so the other four modes
+must restrict the corresponding deleted-row `P_4` tensor to one nonzero
+decomposable tensor.  The same four maps must do this for two different row
+deletions and two independent target directions.
+
+`probe_p5_q5_311_rare_slice_core.py` retains only those two slices: at most
+160 mixed coefficients and nonvanishing of the two rare pure coefficients.
+On the frozen 300-record ledger:
+
+```text
+rare-slice unit ideals: 298 / 300
+direct elapsed range:   0.078 to 0.188 seconds
+direct elapsed mean:    0.0981 seconds
+```
+
+The two exceptions are exactly the two records whose full certificates use
+split saturation.  One rare split system has a proper positive-dimensional
+ideal, so the omitted majority-colour equations are genuinely needed on
+that chart; the second remained inconclusive at the tested deadline.  Thus
+the rare slices identify a dominant mechanism and a small exceptional
+stratum, not a universal proof.
+
+The complete reduction, exact evidence boundary, and reproduction commands
+are in
+[`P5_Q5_311_RARE_SLICE_REDUCTION.md`](P5_Q5_311_RARE_SLICE_REDUCTION.md).
+
 ## Current continuation
 
 The active `q5_311` run uses:
 
 ```text
-pre-orbit representatives: 1,380
-transported startup clauses: 351,510
+pre-orbit base representatives: 1,380
+prior dynamic representatives: 560
+new relaxed family representatives: 6
+unique transported startup clauses: 510,198
 dynamic transport: enabled
 deterministic gauge alternatives: 16
 short deadline per alternative: 6 seconds
 host available-memory floor: 20%
 ```
 
-Its state is exploratory until the branch is UNSAT and the complete
+The 560 dynamic representatives are the frozen 260-record and 300-record
+ledgers from consecutive family-learning rounds.  The six relaxed
+representatives are two from the first round and four from the second.
+
+The active state is exploratory until the branch is UNSAT and the complete
 representative ledger, symmetry reconstruction, two independent SAT
 solvers, and fresh characteristic-zero algebra replay all pass.

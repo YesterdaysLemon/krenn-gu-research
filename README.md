@@ -273,14 +273,27 @@ strict finite advance rather than the missing high-coordinate theorem:
 
 The active continuation now transports every exact chart through the
 288 branch symmetries and uses a deterministic gauge-tree portfolio to
-avoid normalization-dependent Gröbner stalls.  A current local
-1,380-chart discovery boundary expands to 336,672 chart-orbit clauses;
-the combined 351,510-clause `q5_311` cover is still SAT.  This is not
-yet a frozen public certificate package.  Exact zero-cell closures,
-bounded WSL transport retries, the rejected local-order false lead, and
-the ongoing fail-closed search are documented in:
+avoid normalization-dependent Gröbner stalls.  The base 1,380-chart
+discovery boundary expands to 336,672 chart-orbit clauses.  Two further
+family-learning rounds add 560 exact representatives and six enlarged
+family seeds; the current continuation starts from 510,198 unique
+transported clauses and is still SAT.
+
+The normalized `q5_311` row also exposes two simultaneous deleted-`P_4`
+rank-one slices.  Those two slices alone give exact unit ideals on 298
+of one frozen 300-chart ledger; the two exceptional charts are exactly
+the ones whose full certificates need split saturation.  This identifies
+a dominant smaller mechanism and a genuine exceptional stratum, not a
+completed branch proof.
+
+This work is not yet a frozen public certificate package.  Exact
+zero-cell closures, bounded WSL transport retries, the rejected
+local-order false lead, retrospective orbit ranking, exact family
+enlargement, the rare-slice reduction, and the ongoing fail-closed search
+are documented in:
 
 - [`P5_HIGH_COORDINATE_CHART_ORBIT_CEGAR.md`](P5_HIGH_COORDINATE_CHART_ORBIT_CEGAR.md)
+- [`P5_Q5_311_RARE_SLICE_REDUCTION.md`](P5_Q5_311_RARE_SLICE_REDUCTION.md)
 
 ## Problem
 
