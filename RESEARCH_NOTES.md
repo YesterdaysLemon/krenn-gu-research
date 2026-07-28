@@ -6812,11 +6812,12 @@ verify_p5_q5_311_exclusion.py
 audit_p5_q5_311_exclusion.py
 ```
 
-Verification execution is temporarily deferred because host available
-memory fell below the user-required 15 percent floor.  The proof and
-replay sources are written, but hashes and generated JSON artifacts must
-not be recorded as passing until the six primary/audit pairs run after
-memory recovers.
+After host memory recovered, all six primary replays passed.  Four
+independent audits also passed: the `P_3` zero theorem, the sharp
+rank-two family, the shared-drop obstruction, and the final `q5_311`
+case split.  The two deliberately large finite-field censuses for the
+full nonzero-`P_3` classification and the `P_4` rank-drop theorem remain
+pending; no passing claim is made for those two audit programs.
 
 ### Normalized `q5_221`: marked incidence and first exact obstruction
 
@@ -6937,9 +6938,10 @@ verify_p5_q5_221_marked_double_adjacent.py
 audit_p5_q5_221_marked_double_adjacent.py
 ```
 
-Verification remains deferred while host available memory is below the
-user-required 15 percent floor.  No passing JSON or frozen hashes are
-claimed for this section yet.
+After host memory recovered, all four primary replays and all four
+independent finite-field audits in this section passed.  This verifies
+the stated exact-pattern reductions; it does not promote them to a
+complete `q5_221` exclusion.
 
 The singleton-doubled double-plus-adjacent exact type is impossible too.
 After symmetry its drop sets are

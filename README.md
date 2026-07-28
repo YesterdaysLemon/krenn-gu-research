@@ -340,8 +340,11 @@ but place it in independent target-colour pure lines.  In the disjoint
 case, the four common-row `P_3` contractions must be all zero or all
 pure, and both alternatives contradict the nonzero rare slices.
 Therefore the complete normalized `q5_311` branch is excluded over `C`.
-The rank-drop theorem and independent 10,880,000-profile finite-field audit are in
+The rank-drop theorem and its 10,880,000-profile finite-field audit
+program are in
 [`P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md`](P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md).
+The primary theorem replay passes; the large finite-field census remains
+pending at this checkpoint.
 The shared-case obstruction is in
 [`P5_Q5_311_SHARED_DROP_OBSTRUCTION.md`](P5_Q5_311_SHARED_DROP_OBSTRUCTION.md).
 The complete branch theorem is in

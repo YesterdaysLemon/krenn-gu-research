@@ -6,6 +6,7 @@ from __future__ import annotations
 import hashlib
 import itertools
 import json
+import math
 from fractions import Fraction
 from pathlib import Path
 
@@ -42,7 +43,7 @@ def symmetrized_product(
     result = {}
     for indices in itertools.product(range(5), repeat=4):
         result[indices] = sum(
-            all(
+            math.prod(
                 factors[factor][indices[permutation[factor]]]
                 for factor in range(4)
             )
@@ -77,7 +78,7 @@ def symmetrized_product_three(
     result = {}
     for indices in itertools.product(range(5), repeat=3):
         result[indices] = sum(
-            all(
+            math.prod(
                 factors[factor][indices[permutation[factor]]]
                 for factor in range(3)
             )

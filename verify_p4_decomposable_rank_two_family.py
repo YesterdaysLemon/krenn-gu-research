@@ -69,7 +69,9 @@ def main() -> None:
         )
         coefficients["".join(map(str, bits))] = permanent(rows)
 
-    assert coefficients["0000"] == 2 * (chi + gamma)
+    assert sp.simplify(
+        coefficients["0000"] - 2 * (chi + gamma)
+    ) == 0
     assert all(
         value == 0
         for word, value in coefficients.items()
