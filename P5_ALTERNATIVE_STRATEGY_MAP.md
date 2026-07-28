@@ -447,6 +447,15 @@ These are precisely the three coordinate blockers exposed by the
 double-star and multi-star arguments elsewhere in this repository.
 One neighbour cannot serve two colours, so every root has at least three
 distinct blockers for this all-ones contraction.
+
+The two-root divisibility route sharpens the local geometry further.
+Around any rank-three root edge it freezes five blocker choices.  For
+each choice, the two complementary-column ranks are either both at most
+one, or a rank-two pair forces the opposite pair to be exactly zero.  If
+one entire incident block is full rank, the opposite block is a nonzero
+one-sided killer.  In particular, the two incident blocks at a frozen
+blocker cannot both be full rank.
+
 Therefore the `d=n` formal proof does not bypass the remaining problem:
 in the three-colour regime it reduces exactly to the need to propagate
 blocker surplus across several roots.  The useful next experiment is to
@@ -454,17 +463,110 @@ apply the contraction at two or three roots simultaneously and express
 the resulting compatibility as a Grassmannian incidence condition,
 linking this route to Route C without choosing row-support charts.
 
+## Route H: simultaneous deleted-permanent rank drops
+
+The two rare `q5_311` colours replace the full five-mode problem by two
+different deleted-row restrictions of `P_4`.  A new flattening theorem
+shows that a nonzero decomposable `P_4` restriction has at most two
+rank-three local maps.  Each rare deletion therefore forces at least
+two rank drops among the same four maps.
+
+The rank-drop theorem first leaves two incidence types:
+
+```text
+shared mode:
+  the three common source rows span one line;
+
+disjoint modes:
+  two drops for the first deletion and the complementary two
+  for the second.
+```
+
+The shared branch is now excluded exactly.  Contracting the two deleted
+slices in the shared mode along their exceptional rare rows produces
+the same residual `P_3`, but the two identities require it to lie in
+independent pure target-colour lines.  Therefore the two drop sets are
+necessarily a disjoint `2+2` partition.
+
+The disjoint branch is now excluded too.  Its four common-row maps all
+have rank two.  Contracting the four non-drop incidences produces four
+`P_3` restrictions, each zero or pure.  The four-plane sign theorem says
+they are either all zero or all nonzero.  The zero case kills a common
+source row in every mode and hence kills the rare slices; the nonzero
+case forces one non-drop contraction to vanish after another places its
+pure factor in that mode's common image plane.
+
+Thus Route H gives an exact arbitrary-chart exclusion of the complete
+normalized `q5_311` branch.  The earlier rare-slice CEGAR cores remain
+useful as independent finite evidence but are no longer the proof
+frontier.
+
+The rank-drop bound is sharp: an exact five-parameter family of four
+rank-two maps sends `P_4` to a nonzero pure tensor.  This rules out the
+coarser strategy of forbidding a single rank-at-least-two compression.
+The useful invariant couples both deletions.  The zero and nonzero
+`P_3` classifications, including the six two-parameter projective sign
+charts, supply exactly the missing disjoint-branch compatibility.
+
+For normalized `q5_221`, the same contraction exposes three embedded
+copies of `P_4` with independent hyperplane normals.  Every normal is
+contained in at least two of the four remaining row spaces.  The
+singleton colour is distinguished, so selecting two incidences per
+normal gives nine marked types over six uncoloured multigraphs, not six
+fully symmetric types.
+
+At a multiply incident mode, cross-contraction produces one of six
+explicit sign-related `P_3` tensors.  Its residual map in another mode
+has rank
+
+```text
+3-dim(U_i intersect J_cd^perp),
+```
+
+so a two-dimensional intersection is a genuine rank-one boundary and
+must be separated before applying the existing `P_3` classification.
+The first three exact marked boundaries are nevertheless closed: the
+two multiplicity-two colours cannot have the same exact drop pair.  A
+singleton drop at either shared endpoint supplies a common-normal mode;
+the two cross residuals then force both outside maps to kill
+`e_0+e_1` and `e_2+e_3`, contradicting the exact majority drop sets.
+If the singleton pair is complementary, the paired-majority mode forces
+a nonzero residual normal to contain `z`, while a singleton-drop mode
+forces the same normal to omit `z`.  The rank-one exceptions imply a
+zero residual that makes a singleton-drop map kill `z`, also
+impossible.
+
+The singleton-doubled double-plus-adjacent exact type is also excluded.
+Its shared endpoint contains all three normals.  The first `Q_20`
+residual fixes the adjacent and outside plane normals as the two
+support-two sign variants.  The second `Q_20` residual has one possible
+rank-one exception, which makes both `Q_12,Q_21` impossible despite the
+local cross-scalar lemma.  After removing that exception, the two
+possible signs at the doubled endpoint force either a rank-three
+`J_21` map or incompatible `J_12` normal support.
+
+The disjoint version is excluded as well.  Its first nonzero `Q_20`
+forces both modes on the disjoint majority edge to kill `y_+`.  The
+`AB|CD` complement pairing then leaves only a `K_0` plane at one
+doubled endpoint; a contracted nondegenerate `P_2` leaves `K_1` at the
+other.  In the colour-one slice, `y_+` is forced uniquely into `K_1`,
+leaving a residual `P_3` with forbidden rank profile `322`.
+
 ## Priority
 
-1. finish the three high-coordinate branch covers, preferring
+1. finish the four remaining minimal marked `q5_221` incidence types,
+   beginning with the marked-path types, and lift the exact-row-sum-two
+   exclusions across all extra-containment strata;
+2. transfer the contraction method to normalized `q4_211`;
+3. finish the two remaining high-coordinate branch covers, preferring
    zero-pivot support-closure certificates before maximal gauge charts;
-2. formulate the simultaneous-root version of Route G in Grassmannian
+4. formulate the simultaneous-root version of Route G in Grassmannian
    coordinates;
-3. test the four-channel selector and cut-rank formulation from Route F;
-4. learn and prove sparse forbidden patterns with Route A;
-5. use Route C if the survivor supports fall into few Grassmannian
+5. test the four-channel selector and cut-rank formulation from Route F;
+6. learn and prove sparse forbidden patterns with Route A;
+7. use Route C if the survivor supports fall into few Grassmannian
    matroid strata;
-6. keep Route E as a source of identities, but require a
+8. keep Route E as a source of identities, but require a
    postselection-only elimination before investing in it.
 
 Route D's homogeneous degree-six scalar separator has been ruled out

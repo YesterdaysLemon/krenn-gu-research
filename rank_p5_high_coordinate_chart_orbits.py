@@ -136,9 +136,15 @@ def main() -> None:
                         branch,
                     )
                 ),
-                "coordinate_profile": record[
-                    "coordinate_profile"
-                ],
+                "coordinate_profile": record.get(
+                    "coordinate_profile",
+                    tuple(
+                        sum(mask in (1, 2, 4) for mask in row)
+                        for row in LEDGER.normalized_supports(
+                            record["supports"]
+                        )
+                    ),
+                ),
                 "gauge_tree_edges": len(tree),
                 "covered_record_indices": [
                     target

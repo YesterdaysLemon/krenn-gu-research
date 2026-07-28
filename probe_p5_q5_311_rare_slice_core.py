@@ -248,6 +248,14 @@ def main() -> None:
         help="place split inverse variables before chart variables",
     )
     parser.add_argument(
+        "--empty-forest",
+        action="store_true",
+        help=(
+            "discard each stored gauge forest and probe the same "
+            "closure without pivot-nonvanishing assumptions"
+        ),
+    )
+    parser.add_argument(
         "--include-majority-pure",
         action="store_true",
         help=(
@@ -273,8 +281,11 @@ def main() -> None:
 
     results = []
     for index in args.record_index:
+        record = records[index]
+        if args.empty_forest:
+            record = {**record, "gauge_tree": ()}
         program, split_program, metadata = build_program(
-            records[index],
+            record,
             args.include_majority_pure,
             args.basis_algorithm,
             args.inverse_first,
@@ -338,6 +349,7 @@ def main() -> None:
         "state": args.state.as_posix(),
         "state_sha256": hashlib.sha256(raw).hexdigest(),
         "records_tested": len(results),
+        "empty_forest_override": args.empty_forest,
         "unit_ideals": sum(
             result["verified"] for result in results
         ),

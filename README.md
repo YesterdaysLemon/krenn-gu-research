@@ -46,6 +46,44 @@ strictly advance the finite frontier:
 - the order-four permanent tensor has exact subrank two over `C`; in
   particular, four fully supported zero-coupled roots require at least
   five blocker vertices in total.
+- more sharply, any nonzero decomposable restriction of the order-four
+  permanent tensor through rank-at-least-two local maps has rank two in
+  at least two modes.  The two rare `q5_311` deletions therefore force
+  either one shared rank-drop mode with three common source rows on a
+  line, or disjoint `2+2` rank-drop sets partitioning the four modes.
+- the shared rank-drop case is impossible: contracting both rare slices
+  along their exceptional rows exposes the same residual `P_3`, but
+  forces it into two independent target-colour pure lines.  Hence only
+  the disjoint `2+2` partition remains.
+- the disjoint `2+2` case is impossible as well: its four common-row
+  `P_3` contractions obey an all-zero/all-pure plane theorem, and both
+  alternatives contradict nonvanishing of the rare slices.  Therefore
+  the complete normalized `q5_311` branch is excluded over `C`.
+- this rank-two boundary is sharp: an exact five-parameter family with
+  all four local maps of rank two sends `P_4` to a nonzero pure tensor.
+  Consequently the two rare deletions must be coupled; neither can be
+  excluded in isolation.
+- a restriction of `P_3` to three rank-at-least-two source subspaces is
+  zero exactly when all three subspaces are the same coordinate plane.
+- every nonzero decomposable `P_3` restriction through
+  rank-at-least-two maps has rank profile `222` and belongs to six
+  explicit two-parameter projective sign charts.
+- in normalized `q5_221`, the three target-colour contractions are
+  embedded copies of `P_4` on hyperplanes with independent normals.
+  Their rank drops give nine singleton-marked minimal incidence types
+  over six uncoloured three-edge multigraphs.
+- if the two multiplicity-two colours in normalized `q5_221` have the
+  same exact two-mode rank-drop set, the cross-contraction pencil gives
+  incompatible `P_3` normal supports.  The drop sets therefore cannot
+  coincide, excluding three exact marked incidence boundaries.
+- the exact singleton-doubled double-plus-adjacent `q5_221` type is
+  impossible as well.  Its all-normal mode fixes a support-two `P_3`
+  sign pair, and both possible signs at the doubled endpoint contradict
+  a second cross residual.
+- the singleton-doubled double-plus-disjoint exact type is impossible.
+  Its residual sign chart, `AB|CD` complement pairing, a nondegenerate
+  `P_2` contraction, and a final forbidden `P_3` rank profile reduce
+  the only surviving planes to a contradiction.
 - for any five selected vertices, their ten pairwise bilinear
   zero-coupling equations have a simultaneous projective solution over
   `C`; the intersection number is 24.  The solution is not yet
@@ -142,8 +180,10 @@ strictly advance the finite frontier:
 - for every rank-at-least-two root edge, five fixed outside
   vertex--colour pairs have blocker determinants that are scalar
   multiples of the root-edge equation; a rank-three root edge therefore
-  forces five one-sided complementary-colour compressions, at least
-  three at the same endpoint.
+  forces five exact zero-or-compression alternatives, at least three
+  compressions at the same endpoint.  A full-rank incident leg forces
+  the opposite leg to be a nonzero one-sided killer, so both legs at a
+  selected blocker cannot be full rank.
 - on eight or ten vertices, no witness exists anywhere in the
   simultaneous balanced all-bridge branch, without a support-degree
   bound.
@@ -255,13 +295,14 @@ and package are:
 The remaining `P_5` branch has four or five coordinate rows in at least
 one local map.  The arbitrary-order conjecture remains unresolved.
 
-An exploratory high-coordinate chart CEGAR now partitions that remaining
+An exploratory high-coordinate chart CEGAR partitions that remaining
 branch into the normalized `q4_211`, `q5_311`, and `q5_221` cases.  Its
 pure-only gauge certificates are upgraded to exact applicability clauses:
 coefficients outside a closure must vanish and gauge pivots must be
 present, while all other permitted coefficients may vanish.  The active
-ledgers are incomplete and therefore do not yet establish a
-high-coordinate `P_5` theorem.
+ledgers are incomplete and therefore did not establish a high-coordinate
+`P_5` theorem.  The analytic theorem below now excludes `q5_311`; the
+`q4_211` and `q5_221` cases remain.
 
 A stronger finite seed set now removes the gauge-pivot assumptions
 entirely on 72 distinct `q5_311` support closures.  The original 34 and
@@ -289,13 +330,109 @@ majority-colour mixed equation is needed.  This identifies a uniform
 finite mechanism and a two-chart pure-nonvanishing boundary, not a
 completed branch proof.
 
+There is now an analytic reduction behind that finite mechanism.  A
+nonzero decomposable `P_4` restriction can have at most two rank-three
+local maps.  Hence each rare deletion drops rank in at least two of the
+four remaining modes.  The rank-drop theorem first leaves a shared case
+or a disjoint `2+2` partition.  The shared case is impossible because
+its two exceptional-row contractions expose the same residual `P_3`
+but place it in independent target-colour pure lines.  In the disjoint
+case, the four common-row `P_3` contractions must be all zero or all
+pure, and both alternatives contradict the nonzero rare slices.
+Therefore the complete normalized `q5_311` branch is excluded over `C`.
+The rank-drop theorem and independent 10,880,000-profile finite-field audit are in
+[`P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md`](P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md).
+The shared-case obstruction is in
+[`P5_Q5_311_SHARED_DROP_OBSTRUCTION.md`](P5_Q5_311_SHARED_DROP_OBSTRUCTION.md).
+The complete branch theorem is in
+[`P5_Q5_311_EXCLUSION_THEOREM.md`](P5_Q5_311_EXCLUSION_THEOREM.md).
+
+The theorem is sharp.  A symbolic five-parameter family and an
+independent exact-integer audit are in
+[`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](P4_DECOMPOSABLE_RANK_TWO_FAMILY.md).
+This confirms that the remaining target is simultaneous two-deletion
+compatibility.  Exact classifications of both zero and nonzero
+decomposable `P_3` restrictions through rank-at-least-two maps are in
+[`P3_ZERO_HYPERPLANE_PRODUCT_THEOREM.md`](P3_ZERO_HYPERPLANE_PRODUCT_THEOREM.md)
+and
+[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md).
+
+The same rank-drop method now gives an exact structural reduction for
+normalized `q5_221`.  Its three distinguished-mode contractions are
+embedded `P_4` tensors on hyperplanes with independent normals.  Each
+normal lies in at least two of the four remaining row spaces.  Because
+the singleton colour is distinguished, the correct minimal incidence
+list has nine marked types rather than only the six underlying
+uncoloured multigraphs.  Cross-contracting at a multiply incident mode
+produces one of six explicit sign-related `P_3` tensors; a residual
+rank-one gate is recorded explicitly before the `P_3` classification
+is used:
+
+- [`P5_Q5_221_HYPERPLANE_INCIDENCE_REDUCTION.md`](P5_Q5_221_HYPERPLANE_INCIDENCE_REDUCTION.md)
+
+Three exact marked incidence boundaries are already closed at once.
+The two multiplicity-two colours cannot have the same exact drop pair.
+A singleton drop at a shared endpoint makes two cross contractions
+force both outside maps to kill `e_0+e_1` and `e_2+e_3`, contradicting
+exactness.  If the singleton pair is instead complementary, the
+paired-majority mode forces a nonzero residual `P_3` normal to use the
+`z` coordinate, while a singleton-drop mode forces the same normal to
+omit `z`.  The rank-one exceptions collapse to an impossible zero
+residual.  Hence the exact paired-majority pattern is impossible:
+
+- [`P5_Q5_221_PAIRED_MAJORITY_DROP_OBSTRUCTION.md`](P5_Q5_221_PAIRED_MAJORITY_DROP_OBSTRUCTION.md)
+
+This is a strict reduction, not a complete `q5_221` exclusion; extra
+rank drops and the four remaining minimal marked patterns still require
+separate compatibility arguments.
+
+The next exact marked type is closed too.  If the singleton edge is
+doubled with one majority edge and the other majority edge is adjacent,
+the shared endpoint contains all three normals.  A first `Q_20`
+contraction fixes the other two plane normals as the two support-two
+sign variants.  Repeating the contraction from the all-normal endpoint
+leaves two possible signs at the doubled endpoint; one forces a
+rank-three residual and the other forces incompatible normal support.
+The only rank-one boundary is rejected by the zero-diagonal
+cross-scalar lemma:
+
+- [`P5_Q5_221_MARKED_DOUBLE_ADJACENT_OBSTRUCTION.md`](P5_Q5_221_MARKED_DOUBLE_ADJACENT_OBSTRUCTION.md)
+
+Together, the exact obstruction theorems close five of the nine
+marked exact-six-incidence types.  They do not yet cover extra
+containments.
+
+The marked double-plus-disjoint type is excluded by a different final
+step.  A nonzero `Q_20` first forces both modes on the disjoint majority
+edge to kill `e_2+e_3`.  The `AB|CD` complement pairing of `T_2` then
+forces one doubled endpoint to have row plane
+`span(h_0,u_0)`.  A contracted nondegenerate `P_2` forces the other to
+have `span(h_0,u_1)`.  In `T_1`, the factor `e_2+e_3` can then enter
+only that second mode, leaving a nonzero pure `P_3` restriction with
+rank profile `322`, impossible:
+
+- [`P5_Q5_221_MARKED_DOUBLE_DISJOINT_OBSTRUCTION.md`](P5_Q5_221_MARKED_DOUBLE_DISJOINT_OBSTRUCTION.md)
+
+The next triangle attempt is preserved as an explicitly incomplete
+working note:
+
+- [`P5_Q5_221_TRIANGLE_WORKING_NOTE.md`](P5_Q5_221_TRIANGLE_WORKING_NOTE.md)
+
+Repeated `h_2` contraction splits the triangle into two genuinely
+different chiral cases.  A candidate argument for one chirality reaches
+a two-rank-one exceptional boundary; the other chirality is still open.
+Neither is claimed as a theorem, and the note lists the exact gates that
+must be re-audited before any promotion.
+
 The new 38 zero-forest closures are also a stronger stress test of the
 rare-slice mechanism.  Direct zero-forest saturation closes 36.  The
 remaining two have exact 16-chart and 25-chart support covers using only
 the same 160 rare mixed words, all three pure amplitudes, and no lex
 symmetry breaking.  All 41 support-chart ideals replay freshly, and both
 CaDiCaL and Glucose verify both covers as UNSAT.  This closes those two
-finite closures; it is not a complete `q5_311` classification.
+finite closures.  Those certificates alone were not a complete
+`q5_311` classification; the analytic theorem above now supplies the
+complete branch exclusion.
 
 The frozen public packages, exact zero-cell closures, bounded WSL
 transport retries, the rejected local-order false lead, retrospective

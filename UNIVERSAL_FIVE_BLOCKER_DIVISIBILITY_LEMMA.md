@@ -186,10 +186,55 @@ Indeed, if the common outer product is nonzero, both column pairs have
 rank one.  If it is zero, either both `A` columns vanish, both `C`
 columns vanish, or each pair has at most one potentially nonzero column.
 
-Thus every rank-three root edge has five fixed outside vertices at which
-one of the two incident blocks has a fixed two-colour compression.  By
-pigeonhole, at least three of those five compressions occur at the same
-root endpoint, though their omitted colours need not agree.
+There is a sharper endpoint hidden in the same matrix equation.  If
+
+```text
+rank[A_u[:,a],A_u[:,b]] = 2,
+```
+
+then left multiplication by a left inverse of that `3 x 2` matrix in
+
+```text
+[A_u[:,a],-A_u[:,b]]
+[C_u[:,b], C_u[:,a]]^T = 0
+```
+
+gives
+
+```text
+C_u[:,a] = C_u[:,b] = 0.                              (13)
+```
+
+The transposed implication holds as well.  Thus the complete
+two-column rank dichotomy is
+
+```text
+rank(A_ab) = 2  implies rank(C_ab) = 0,
+rank(C_ab) = 2  implies rank(A_ab) = 0,
+otherwise both ranks are at most one.                  (14)
+```
+
+In particular, if the entire `p--u` block has rank three, every pair of
+its columns is independent, so the `r--u` block is supported only in
+column `c`.  The dense blocker condition rules out that remaining
+column being zero: otherwise blocker membership would require the
+image `x^T A_u` of the invertible map `A_u` to lie in the fixed line
+`C e_c^T` on a dense set of `x`, which is impossible.  Hence the
+opposite leg is a genuine one-sided colour-`c` killer.  Symmetrically,
+
+```text
+rank(A_u) = 3  implies C_u is a nonzero c-column killer,
+rank(C_u) = 3  implies A_u is a nonzero c-column killer. (15)
+```
+
+Consequently both legs at a selected blocker cannot have rank three.
+Thus every rank-three root edge has five fixed outside vertices at
+which either both complementary-column pairs have rank at most one, or
+one pair has rank two and the opposite pair is exactly zero.  If either
+whole incident block has rank three, the opposite block is an exact
+nonzero one-sided killer.  By pigeonhole, at least three of the five
+original compression choices occur at the same root endpoint, though
+their omitted colours need not agree.
 
 ## Verification
 
@@ -201,17 +246,25 @@ python audit_universal_five_blocker_divisibility.py
 ```
 
 The primary verifier reconstructs (3) symbolically, checks the rank-two
-factorisation (10), and checks the scalar-multiple and rank
-consequences.  The independent audit exhausts all pairs of `3 x 2`
-matrices over `F_3`, verifying the zero-outer-difference implication
-(12) in 531,441 cases.  These computations audit the algebraic formulas;
+factorisation (10), the rank-two-forces-zero alternative (14), and the
+scalar-multiple and rank consequences.  The independent audit exhausts
+all pairs of `3 x 2` matrices over `F_3`, verifying (12) and (14) in
+531,441 cases.  Its exact rank profiles are
+
+```text
+(0,0):    1    (0,1): 104    (0,2): 624
+(1,0):  104    (1,1): 2704   (2,0): 624.
+```
+
+In particular there is no zero outer difference with profiles `(2,1)`,
+`(1,2)`, or `(2,2)`.  These computations audit the algebraic formulas;
 the irreducibility and constructible-cover argument above is the proof
 over `C`.
 
 ## Boundary
 
 The new identities do not yet rule out the case in which all five
-scalars in (4) vanish.  The next target is to propagate the forced
-one-sided compressions in (12) through adjacent rank-three edges, or to
-show that they contradict the connectivity and pure-matching
-requirements of a support-minimal witness.
+scalars in (4) vanish.  The next target is to propagate the exact
+zero-or-killer alternatives (14)--(15) through adjacent rank-three
+edges, or to show that they contradict the connectivity and
+pure-matching requirements of a support-minimal witness.

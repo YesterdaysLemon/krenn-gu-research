@@ -64,6 +64,7 @@ def main() -> None:
     zero_differences = 0
     rank_profile_counts: dict[str, int] = {}
     violations = []
+    strong_violations = []
     for a_entries in matrices:
         rank_a = rank_two_column_matrix(a_entries)
         for c_entries in matrices:
@@ -76,9 +77,15 @@ def main() -> None:
             rank_profile_counts[key] = rank_profile_counts.get(key, 0) + 1
             if rank_a > 1 and rank_c > 1:
                 violations.append((a_entries, c_entries))
+            if (
+                (rank_a == 2 and rank_c != 0)
+                or (rank_c == 2 and rank_a != 0)
+            ):
+                strong_violations.append((a_entries, c_entries))
 
     assert checked == PRIME**12
     assert not violations
+    assert not strong_violations
     assert sum(rank_profile_counts.values()) == zero_differences
 
     output = {
@@ -89,6 +96,7 @@ def main() -> None:
         "rank_profile_counts": dict(sorted(rank_profile_counts.items())),
         "both_column_pairs_rank_two": 0,
         "compression_implication_verified": True,
+        "rank_two_forces_opposite_zero_verified": True,
         "theorem": THEOREM.name,
         "theorem_sha256": sha256(THEOREM),
         "source": Path(__file__).name,

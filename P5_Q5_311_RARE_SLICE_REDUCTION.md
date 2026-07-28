@@ -2,16 +2,17 @@
 
 ## Status
 
-This is an exact structural reduction and a finite chart experiment inside
-the normalized `q5_311` branch of a possible restriction
+This records an exact analytic exclusion and the earlier finite chart
+experiments inside the normalized `q5_311` branch of a possible restriction
 
 ```text
 P_5 -> Delta_3.
 ```
 
-It does not yet exclude the complete `q5_311` branch, the other two
-high-coordinate branches, `P_5 -> Delta_3`, or the arbitrary-order
-Krenn--Gu prize conjecture.
+The complete `q5_311` branch is now excluded by
+[`P5_Q5_311_EXCLUSION_THEOREM.md`](P5_Q5_311_EXCLUSION_THEOREM.md).
+The other two high-coordinate branches, `P_5 -> Delta_3`, and the
+arbitrary-order Krenn--Gu prize conjecture remain open.
 
 ## Structural reduction
 
@@ -46,6 +47,88 @@ lambda_c != 0.
 Thus `q5_311` forces the same four local maps to turn two different
 deleted-row copies of `P_4` into nonzero decomposable tensors in two
 independent target directions.
+
+## Rank-drop dichotomy
+
+[`P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md`](P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md)
+proves that a nonzero decomposable restriction of `P_4`, through four
+maps of rank at least two, has rank two in at least two modes.  Apply
+this to each rare deletion.  The original maps have rank three, and
+deleting one row lowers rank by at most one, so the hypothesis applies.
+If `D_1,D_2` are the sets of remaining
+modes whose local map loses rank after deleting the corresponding rare
+source row, then
+
+```text
+|D_1| >= 2,    |D_2| >= 2.                             (1)
+```
+
+If the two sets intersect, take a local five-row map in the
+intersection.  The four rows left after either rare deletion span a
+plane.  The three rows common to both deletions cannot span a plane,
+because then both rare rows and hence all five rows would lie in that
+plane.  They therefore span one line, and the two rare rows complete
+that line to rank three.
+
+If the sets do not intersect, (1) and the fact that only four modes are
+available force
+
+```text
+|D_1|=|D_2|=2,    D_1 disjoint union D_2={1,2,3,4}.    (2)
+```
+
+The initial simultaneous two-deletion classification has only two
+rank-incidence branches:
+
+1. a shared drop with the three common rows on one line; or
+2. a disjoint `2+2` partition of the four maps.
+
+The shared branch is now impossible.  In a shared mode, contracting
+each deleted slice along its exceptional rare row exposes the same
+residual `P_3` tensor on the three common source rows.  The two slice
+identities force that one tensor to be zero or a pure cube in target
+colour one, and simultaneously zero or a pure cube in the independent
+target colour two.  These alternatives are incompatible.  The exact
+argument and independent finite-field audit are in
+[`P5_Q5_311_SHARED_DROP_OBSTRUCTION.md`](P5_Q5_311_SHARED_DROP_OBSTRUCTION.md).
+
+Consequently the only remaining rank-incidence branch is
+
+```text
+|D_1|=|D_2|=2,    D_1 disjoint union D_2={1,2,3,4}.    (3)
+```
+
+This is an arbitrary-chart theorem over `C`, not a finite ledger
+observation.
+
+The lower bound is sharp even over the integers.  The family in
+[`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](P4_DECOMPOSABLE_RANK_TWO_FAMILY.md)
+has all four maps of rank two and sends `P_4` to a nonzero pure tensor.
+Therefore no theorem about one rare deletion in isolation can finish
+this branch.  A successful obstruction must use the fact that the same
+four five-row maps realize two such compressions after deleting two
+different rows, in two independent target directions.
+
+The zero-slice classification in
+[`P3_ZERO_HYPERPLANE_PRODUCT_THEOREM.md`](P3_ZERO_HYPERPLANE_PRODUCT_THEOREM.md)
+and the nonzero classification in
+[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md)
+remain useful for contractions inside the disjoint branch.
+
+They in fact finish it.  In every mode the three common source rows span
+a plane.  Contract each non-drop mode along its exceptional rare row.
+This produces four common-row `P_3` restrictions, each either zero or
+nonzero pure.  The four-plane corollary says they must be all zero or
+all nonzero.  All zero would make one common source row vanish in every
+remaining mode and hence make each rare `P_4` slice zero.  All nonzero
+is also impossible: a pure residual exposed at one non-drop mode places
+its target factor inside the other non-drop mode's common plane, forcing
+the latter contraction to be zero.
+
+Thus the disjoint `2+2` branch is impossible as well, and the normalized
+`q5_311` branch has no solution.  The complete proof and independent
+`F_3`/`F_5` audit are in
+[`P5_Q5_311_EXCLUSION_THEOREM.md`](P5_Q5_311_EXCLUSION_THEOREM.md).
 
 The mixed part uses only the coefficients whose mode-zero colour is one or
 two:
@@ -237,9 +320,11 @@ python maximize_p5_high_coordinate_chart_closure.py \
   --output tmp/p5_q5_311_relaxed_seed.json
 ```
 
-All figures above are finite ledger statements.  A complete branch theorem
-still requires an independently UNSAT reconstructed branch CNF and fresh
-algebra replay for every representative used in that cover.
+All figures above are finite ledger statements and did not, by
+themselves, prove the complete branch.  The analytic theorem in
+[`P5_Q5_311_EXCLUSION_THEOREM.md`](P5_Q5_311_EXCLUSION_THEOREM.md)
+now supplies the complete branch exclusion without requiring an UNSAT
+reconstructed branch CNF.
 
 The frozen zero-forest wave and its independent verifier are:
 

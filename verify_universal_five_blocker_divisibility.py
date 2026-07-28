@@ -85,12 +85,34 @@ def main() -> None:
     generic_rank_three = sp.diag(1, 1, 1)
     assert sp.factor((lam * generic_rank_three).det()) == lam**3
 
+    # Canonical full-column-rank case of (14).  A change of row basis
+    # reduces any rank-two 3x2 left factor to these first two columns.
+    c0 = sp.Matrix(sp.symbols("d0:3"))
+    c1 = sp.Matrix(sp.symbols("d3:6"))
+    canonical_left = sp.Matrix.hstack(
+        sp.eye(3)[:, 0],
+        -sp.eye(3)[:, 1],
+    )
+    canonical_right = sp.Matrix.hstack(c1, c0)
+    canonical_product = canonical_left * canonical_right.T
+    canonical_equations = tuple(canonical_product)
+    canonical_solution = sp.solve(
+        canonical_equations,
+        tuple(c0) + tuple(c1),
+        dict=True,
+    )
+    assert canonical_solution == [
+        {entry: 0 for entry in tuple(c0) + tuple(c1)}
+    ]
+
     output = {
         "verified": True,
         "field": "C",
         "determinant_checks": determinant_checks,
         "rank_two_factorisations": factor_rank_checks,
         "rank_three_nonzero_scalar_impossible": True,
+        "rank_two_column_pair_forces_opposite_zero": True,
+        "rank_three_leg_forces_opposite_column_support": True,
         "fixed_vertices_from_pointwise_bound": 5,
         "theorem": THEOREM.name,
         "theorem_sha256": sha256(THEOREM),

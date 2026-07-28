@@ -9,10 +9,22 @@ high-coordinate branches of a possible restriction
 P_5 -> Delta_3.
 ```
 
-It is not a completed branch cover.  In particular, it does not yet
-exclude `q5_311`, has not yet been run to completion on `q5_221` or
+It is not a completed high-coordinate cover.  The normalized `q5_311`
+branch has since been excluded analytically in
+[`P5_Q5_311_EXCLUSION_THEOREM.md`](P5_Q5_311_EXCLUSION_THEOREM.md).
+The computation has not been run to completion on `q5_221` or
 `q4_211`, does not prove the full `P_5` obstruction, and does not solve
 the arbitrary-order Krenn--Gu prize conjecture.
+
+The `q5_221` branch now also has an analytic hyperplane-incidence
+reduction to nine singleton-marked minimal types, plus an exact
+paired-majority drop obstruction.  These are structural theorems, not a
+completed branch cover:
+
+- [`P5_Q5_221_HYPERPLANE_INCIDENCE_REDUCTION.md`](P5_Q5_221_HYPERPLANE_INCIDENCE_REDUCTION.md)
+- [`P5_Q5_221_PAIRED_MAJORITY_DROP_OBSTRUCTION.md`](P5_Q5_221_PAIRED_MAJORITY_DROP_OBSTRUCTION.md)
+- [`P5_Q5_221_MARKED_DOUBLE_ADJACENT_OBSTRUCTION.md`](P5_Q5_221_MARKED_DOUBLE_ADJACENT_OBSTRUCTION.md)
+- [`P5_Q5_221_MARKED_DOUBLE_DISJOINT_OBSTRUCTION.md`](P5_Q5_221_MARKED_DOUBLE_DISJOINT_OBSTRUCTION.md)
 
 ## From individual charts to chart orbits
 

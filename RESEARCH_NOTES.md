@@ -6027,30 +6027,47 @@ vertex at least one incident complementary-column pair has rank at most
 one.  At least three of the five one-sided compressions lie at the same
 root endpoint.
 
+The zero factorisation has a sharper exact dichotomy.  If either
+complementary-column pair has rank two, a left inverse forces the
+opposite pair to be exactly zero; otherwise both pairs have rank at most
+one.  Hence a full-rank incident block forces the opposite block to have
+only its blocked-colour column nonzero.  Dense blocker membership rules
+out that last column vanishing, so the opposite block is a genuine
+one-sided killer.  In particular, both incident blocks at a frozen
+blocker cannot have rank three.
+
 The primary checker reconstructs the three determinant signs and the
-rank-two factorisations symbolically over `C`.  An independent audit
-checks all `3^12 = 531,441` pairs of `3 x 2` matrices over `F_3`;
-4,161 have zero outer difference and none has both column-pair ranks
-equal to two.  The dependency certificate for the four-blocker theorem
-was also rerun successfully.
+rank-two factorisations and the rank-two-forces-zero implication
+symbolically over `C`.  An independent audit checks all
+`3^12 = 531,441` pairs of `3 x 2` matrices over `F_3`; 4,161 have zero
+outer difference, with exact rank profiles
+
+```text
+(0,0):    1    (0,1): 104    (0,2): 624
+(1,0):  104    (1,1): 2704   (2,0): 624.
+```
+
+Thus profiles `(2,1)`, `(1,2)`, and `(2,2)` are all absent.  The
+dependency certificate for the four-blocker theorem was also rerun
+successfully.
 
 ```text
 UNIVERSAL_FIVE_BLOCKER_DIVISIBILITY_LEMMA.md
-  1ed09eb7b208520e8e62a9c6db7e26629fcb8ed4ac8bbb04fe2a852c59d0dd5d
+  2ed722fe01aa40a873570f3f1f6716bf5d1be1fba5c0b63778d9a4470a157496
 verify_universal_five_blocker_divisibility.py
-  671d98c0d1d93ed4147072594c936620151214d36673e3b0cc141a92c39f511b
+  172e6312c8fad8a1eb2fdf814f2dacada6f90f6f47275873285827ee596ef64b
 audit_universal_five_blocker_divisibility.py
-  01565c88d0635ee61dd92ea87d43b4022fcc663d1cf733a56b2a69ad362349f6
+  a8ead1924c9d463fb5f22124f3bbf685369e97ca168f381d183586997b7828ee
 tmp/universal_five_blocker_divisibility_verified.json
-  2fdedba74d9bef6688f7e6bbd46d4f619ca2c912d29b3607137679eccb90d016
+  8af287400c5fbd1025993f6886abf3a4688321aee76b326552f25d18fef664a2
 tmp/universal_five_blocker_divisibility_audited.json
-  784000bb66cddb2617842808bd3868d04ddf72daa45034ee95394c26d0caa562
+  e45c176a87513dfaa8c547822663163b11320dde8df6fa35a5e82544e10731c5
 ```
 
 This is not yet a global contradiction.  The remaining arbitrary-order
-target is to propagate the forced one-sided compressions through
-adjacent rank-three edges, or to combine them with the existing
-root-set blocker surplus.
+target is to propagate the exact zero-or-killer alternatives through
+adjacent rank-three edges, or to combine them with the existing root-set
+blocker surplus.
 
 ### Proper all-full `P_5` tricolour obstruction
 
@@ -6499,9 +6516,10 @@ The independent ledger verifier accepts nonmaximal forests, regenerates
 their exact sources, and records both actual-support and gauge-forest
 component counts.
 
-The three ledgers remain in progress.  Until their reconstructed branch
-CNFs are independently UNSAT, this is exploratory infrastructure rather
-than a theorem.
+The three ledgers were in progress at this checkpoint.  The later
+analytic theorem excludes `q5_311` without a reconstructed branch CNF.
+The `q5_221` and `q4_211` ledgers remain exploratory infrastructure
+rather than theorems.
 
 ```text
 p5_high_coordinate_tree_chart_cegar.py
@@ -6590,6 +6608,58 @@ motivates a simultaneous two-deletion `P_4` classification under all three
 pure nonvanishing conditions.  It is a uniform finite mechanism, not yet a
 universal theorem.
 
+The first analytic part of that classification is now complete.  If a
+restriction of `P_4` through four rank-at-least-two maps is a nonzero
+decomposable tensor, at most two maps can have rank three.  The proof uses
+the complement-pairing flattenings.  A hyperplane--plane pair image has
+dimension at least three, so three putative rank-three maps would force
+all three hyperplanes to be the same coordinate-support-one-or-two
+hyperplane.  The remaining fourth-mode slice space is then either a copy
+of `P_3` or
+
+```text
+l * span{mn,ln,lm},
+```
+
+and neither contains a nonzero decomposable tensor.
+
+Applied to the two rare deletions, each one forces at least two rank-drop
+modes.  If the drop sets intersect, the three source rows common to both
+deletions span one line and the rare rows complete it to rank three.  If
+they do not intersect, they are complementary two-element subsets of the
+four modes.  Thus every chart lies in one of two determinantal incidence
+branches, independently of its support masks.
+
+The primary symbolic verifier passes over `C`.  An independent `F_3`
+audit enumerates 40 hyperplanes, 130 planes, 28,900 ordered pair images,
+and all
+
+```text
+40^4 + 40^3*130 = 10,880,000
+```
+
+canonical ordered rank profiles `3333` and `3332`, fixing the rank-two
+position by mode symmetry; none has all three `2|2` flattening ranks equal
+to one.
+
+```text
+P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md
+  a98b48863a56ffa3031abeffa091aed61661cf12f1401ea60e08544cfffe1886
+verify_p4_decomposable_restriction_rank_drop.py
+  e71075cc48ff4d79f9d073ca435fab2794676f37958d030ed3e4283ca8754c0c
+audit_p4_decomposable_restriction_rank_drop.py
+  f65035964e614db002cc5aa35a6470e15946f2054fe0301bd20f53b36443be06
+tmp/p4_decomposable_restriction_rank_drop_verified.json
+  7184f9affae43a720596237555cb4c640bdc14b99aa74abfa42250aece1c1ea9
+tmp/p4_decomposable_restriction_rank_drop_audited.json
+  c395e9b0b91a770c5926089cfa0982c576a8a9210cb1e30d8422d2406524f3c2
+```
+
+These hashes pin the first rank-drop theorem draft.  Later sharpness and
+`q5_311` cross-links modify the theorem document, so this hash block is
+historical and must be replaced by a fresh replay block before the new
+analytic package is published.
+
 One leading unrelaxed chart has exact degree-one identities with only
 `+1` and `-1` coefficients.  Six Macaulay rows express the colour-one pure
 coefficient using five distinct mixed coefficients, and five rows express
@@ -6629,3 +6699,364 @@ verify_p5_q5_311_rare_affine_core.py
 verify_p5_q5_311_rare_slice_support_cover.py
 research_snapshots/2026-07-28-p5-q5-311-rare-zero-wave2/
 ```
+
+### Exact rank-two `P_4` family and complete `P_3` plane geometry
+
+The rank-drop theorem is sharp.  Four rank-two maps with coordinate rows
+
+```text
+U_0=(0,1,1,0)       V_0=(1,0,0,-1)
+U_1=(0,0,1,1)       V_1=(1,1,-1,-1)
+U_2=(0,1,0,1)       V_2=(-1,0,1,0)
+U_3=(1,0,1,0)       V_3=(0,0,-1,1)
+```
+
+send `P_4` to `2 e_0 tensor e_0 tensor e_0 tensor e_0`.  All 15 mixed
+coefficients vanish over the integers.  More generally this point lies in
+a five-parameter family:
+
+```text
+g=e*i*l,
+
+U_0=(0,1,(c+g)/e,c)
+U_1=(0,0,1,e)
+U_2=(0,1,0,g)
+U_3=(1,0,i,0)
+
+V_0=(1,j,0,-e*i*(1+l*j))
+V_1=(l,1,-i*l,-g)
+V_2=(-1/i,0,1,0)
+V_3=(0,0,-1/e,1),
+```
+
+with `e*i*(c+e*i*l)` nonzero.  The pure coefficient is
+`2(c+e*i*l)`.  Thus one deleted-`P_4` pure compression is genuinely
+possible; simultaneous deletion compatibility is indispensable.
+
+The order-three residual admits a complete exact classification.  A zero
+restriction of `P_3` to three rank-at-least-two subspaces occurs exactly
+when all three are the same coordinate plane.  A nonzero decomposable
+restriction forces rank profile `222`; after mode/source permutations its
+three plane normals are
+
+```text
+(1,A,B), (1,-A,-B), (1,-A,B),   (A,B)!=(0,0).
+```
+
+The proof expands the common-coordinate chart to a binary tensor with
+zero antipodal corners.  Rank one forces support on one of six middle
+cube edges.  Support-one normals and the distinct-missing-coordinate
+boundary each give an explicit rank-two flattening obstruction.
+
+For four planes whose every triple restriction is zero or pure, this
+classification has an all-or-nothing corollary:
+
+```text
+all four triples zero:
+  all four planes are one coordinate plane;
+
+all four triples nonzero pure:
+  the four normals form a complete projective sign rectangle.
+```
+
+In support two the rectangle has two copies of each sign variant; in
+support three it has all four sign variants.
+
+The exact statements and replay sources are:
+
+```text
+P4_DECOMPOSABLE_RANK_TWO_FAMILY.md
+verify_p4_decomposable_rank_two_family.py
+audit_p4_decomposable_rank_two_family.py
+
+P3_ZERO_HYPERPLANE_PRODUCT_THEOREM.md
+verify_p3_zero_hyperplane_product.py
+audit_p3_zero_hyperplane_product.py
+
+P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md
+verify_p3_decomposable_restriction_classification.py
+audit_p3_decomposable_restriction_classification.py
+```
+
+### Exact exclusion of normalized `q5_311`
+
+The shared rank-drop branch is impossible.  In a shared mode the three
+common rows lie on one line.  Contracting the two rare deleted slices
+along their respective exceptional rows exposes the same residual
+`P_3`, but forces it to be zero or a pure cube in each of two independent
+target-colour directions.  No case is compatible.
+
+The remaining disjoint `2+2` branch is impossible too.  The three common
+rows have rank two in all four modes.  Contracting each non-drop mode
+produces four common-row `P_3` restrictions, each zero or pure.  The
+four-plane theorem forces them to be all zero or all pure.
+
+The all-zero alternative kills one common source row in every remaining
+mode, making each rare deleted-`P_4` slice zero.  In the all-pure
+alternative, a nonzero contraction at one non-drop mode places its pure
+factor inside the common image plane of the other non-drop mode, forcing
+the latter contraction to be zero.  Both alternatives contradict the
+rare slice identities.
+
+Therefore the complete normalized `q5_311` branch is excluded over `C`.
+This does not exclude normalized `q4_211`, normalized `q5_221`, the full
+restriction `P_5 -> Delta_3`, or the arbitrary-order prize conjecture.
+
+```text
+P5_Q5_311_SHARED_DROP_OBSTRUCTION.md
+verify_p5_q5_311_shared_drop_obstruction.py
+audit_p5_q5_311_shared_drop_obstruction.py
+
+P5_Q5_311_EXCLUSION_THEOREM.md
+verify_p5_q5_311_exclusion.py
+audit_p5_q5_311_exclusion.py
+```
+
+Verification execution is temporarily deferred because host available
+memory fell below the user-required 15 percent floor.  The proof and
+replay sources are written, but hashes and generated JSON artifacts must
+not be recorded as passing until the six primary/audit pairs run after
+memory recovers.
+
+### Normalized `q5_221`: marked incidence and first exact obstruction
+
+Normalize the distinguished mode by one simultaneous diagonal source
+rescaling:
+
+```text
+u_0=(1,1,0,0,0),
+u_1=(0,0,1,1,0),
+u_2=(0,0,0,0,1).
+```
+
+The three contractions of `P_5` are embedded `P_4` tensors on
+hyperplanes with independent normals
+
+```text
+h_0=(1,-1,0,0,0),
+h_1=(0,0,1,-1,0),
+h_2=(0,0,0,0,1).
+```
+
+For each remaining row space `U_i`, restriction to the colour-`c`
+hyperplane has rank two exactly when `h_c in U_i`.  The `P_4` rank-drop
+theorem therefore gives three drop sets `D_c`, each of size at least
+two.
+
+Selecting two incidences per colour gives six underlying uncoloured
+three-edge multigraphs.  The singleton colour is invariant under the
+normalized branch stabilizer, however, so double-plus-adjacent,
+double-plus-disjoint, and the path each split according to the marked
+edge.  The correct minimal list has nine marked types.  The earlier
+six-type draft incorrectly quotiented by all of `S_3`; it was corrected
+before verification or publication.
+
+At a mode containing `h_c,h_d`, cross-contraction leaves
+
+```text
+Q_cd=(u_c,h_d) contract P_5,
+```
+
+and at least one of `Q_cd,Q_dc` maps to a nonzero pure cube.  Their six
+source spaces are explicit sign pencils.  For example,
+
+```text
+J_01=span(e_0+e_1,e_2-e_3,e_4),
+J_01^perp=span(h_0,u_1),
+
+J_02=span(e_0+e_1,e_2,e_3),
+J_02^perp=span(h_0,h_2).
+```
+
+For another mode the residual rank is
+
+```text
+3-dim(U_i intersect J_cd^perp).
+```
+
+The dimension-two case has rank one and is now recorded as an explicit
+gate rather than being passed incorrectly to the rank-at-least-two
+`P_3` theorem.
+
+The first three exact marked incidence boundaries are closed.  If
+
+```text
+D_0=D_1={A,B}
+```
+
+and one shared endpoint, say `A`, also lies in `D_2`, then
+`U_A=span(h_0,h_1,h_2)`.  Contracting the colour-zero identity at `B`
+by `h_1` leaves `Q_01`.  The `A` restriction is a rank-two coordinate
+plane with support-one normal, while the two modes outside `D_0` have
+residual rank at least two.  The nonzero-pure `P_3` classification
+rejects the support-one normal, so the residual is zero.  The zero
+theorem forces both outside maps to kill `e_0+e_1`.  The symmetric
+`Q_10` argument forces them to kill `e_2+e_3`.  Their two-dimensional
+kernels are therefore exactly the span of those two vectors, so their
+row spaces contain all three `h_c`, contradicting the exact drop sets.
+
+The shared-endpoint argument first forces
+
+```text
+D_0=D_1={A,B},  D_2={C,D}.
+```
+
+The complementary case is impossible too.  At one paired-majority mode
+the only rank-one residual exceptions are `u_0` or `u_1` in its row
+space.  The opposite residual then has a support-one plane normal and
+must be zero; the zero theorem would make a singleton-drop mode kill
+`e_4`, contradicting containment of `h_2`.
+
+Outside those exceptions, both cross residuals pass the
+rank-at-least-two gate.  A nonzero `Q_01` forces the paired-majority
+mode's plane normal to have support `{x_+,z}`, while a mode containing
+`h_2` has a plane normal with zero `z` coordinate.  The nonzero `P_3`
+classification requires the same support in all three modes, so
+`Q_01` is zero.  Symmetrically `Q_10` is zero.  This contradicts the
+local zero-diagonal cross-scalar lemma, which makes at least one of the
+two residuals nonzero.
+
+Therefore the two majority colours cannot have the same exact
+two-element drop set.  This excludes the exact triple-parallel and the
+two singleton-lone double-edge types (adjacent and disjoint).  It does
+not yet exclude extra-containment strata, the other six minimal marked
+types, normalized `q5_221`, the full `P_5` restriction, or the global
+conjecture.
+
+```text
+P5_Q5_221_HYPERPLANE_INCIDENCE_REDUCTION.md
+verify_p5_q5_221_hyperplane_incidence.py
+audit_p5_q5_221_hyperplane_incidence.py
+
+P5_Q5_221_PAIRED_MAJORITY_DROP_OBSTRUCTION.md
+verify_p5_q5_221_paired_majority_drop.py
+audit_p5_q5_221_paired_majority_drop.py
+
+P5_Q5_221_MARKED_DOUBLE_ADJACENT_OBSTRUCTION.md
+verify_p5_q5_221_marked_double_adjacent.py
+audit_p5_q5_221_marked_double_adjacent.py
+```
+
+Verification remains deferred while host available memory is below the
+user-required 15 percent floor.  No passing JSON or frozen hashes are
+claimed for this section yet.
+
+The singleton-doubled double-plus-adjacent exact type is impossible too.
+After symmetry its drop sets are
+
+```text
+D_0=D_2={A,B},  D_1={A,C}.
+```
+
+Mode `A` contains all three normals.  Contracting `T_2` at `B` by
+`h_0` gives a nonzero `Q_20` through `A,C,D`.  The all-normal plane has
+normal `y_+`; containment of `h_1` forces the same sign at `C`, so the
+support-two `P_3` chart forces the opposite sign `y_-` at `D`.
+
+Repeating `Q_20` from `A` leaves one possible rank-one exception,
+`u_0 in U_B`.  In that case both `Q_12` and `Q_21` see a support-one
+plane at `B`, so neither can be nonzero, contradicting the local
+cross-scalar lemma.  Otherwise the mode-`B` `Q_20` normal is `y_+` or
+`y_-`.
+
+For the `y_+` sign,
+
+```text
+U_B=span(h_0,h_2,h_1+a u_0),  a!=0.
+```
+
+The `Q_12` zero theorem makes `C,D` kill `y_+`.  The forced nonzero
+`Q_21` then has rank three at `C`, contradicting the nonzero `P_3`
+classification.
+
+For the `y_-` sign,
+
+```text
+U_B=span(h_0,h_2,u_1+a u_0).
+```
+
+If `a!=0`, the `Q_21` zero theorem makes `C` kill `y_-`, contrary to
+`h_1 in U_C`.  If `a=0`, `Q_12` requires common normal support
+`{e_0,e_1}`.  But the earlier `n_C=y_+` condition removes every
+`u_1` component from `U_C`, leaving a support-one `J_12` normal.  This
+is the final contradiction.
+
+Thus four of the nine marked exact-six-incidence types are now closed.
+
+The singleton-doubled double-plus-disjoint exact type is now excluded
+too:
+
+```text
+D_0=D_2={A,B},  D_1={C,D}.
+```
+
+Repeated `h_2` contraction forces a nonzero `Q_20` direction.  Its
+support-two `P_3` chart makes the `C,D` normals `y_+`, so both maps kill
+`y_+`.  The only rank-one exception is handled by the opposite
+`h_1` endpoint and forces the same conclusion.
+
+On the colour-two hyperplane, the `C,D` row spaces are the common
+hyperplane
+
+```text
+H=span(h_0,u_0,h_1)=y_+^perp.
+```
+
+The exact complement pairing in the `AB|CD` flattening forces one
+doubled row plane to be
+
+```text
+K_0=span(h_0,u_0).
+```
+
+The key cancellations are `mu(u_0,h_0)=0` and orthogonality of
+`mu(u_1,h_0)` to the four-dimensional pair image `A(H,H)`.  Two
+nonexceptional planes create an independent flattening row and are
+impossible.
+
+Double contraction by `h_1` at `C,D` leaves a nondegenerate
+`P_2(e_0,e_1)`.  It forces the other doubled plane to be
+
+```text
+K_1=span(h_0,u_1).
+```
+
+Finally, `T_1=Sym(e_0,e_1,y_+,z)` assigns `y_+` uniquely to the `K_1`
+mode.  The residual `P_3(e_0,e_1,z)` has rank profile `322`, contrary
+to the nonzero decomposable `P_3` classification.
+
+```text
+P5_Q5_221_MARKED_DOUBLE_DISJOINT_OBSTRUCTION.md
+verify_p5_q5_221_marked_double_disjoint.py
+audit_p5_q5_221_marked_double_disjoint.py
+```
+
+Five of the nine marked exact-six-incidence types are now closed.  The
+triangle, star, two marked paths, and all extra-containment strata
+remain open.
+
+### Stopping boundary: triangle chirality and missed rank-one gates
+
+The first triangle sketch is not a theorem.  For
+
+```text
+D_0={A,B}, D_1={A,C}, D_2={B,C},
+```
+
+double contraction by `h_2` leaves two complementary-support
+chiralities, not one symmetry class.  In the chirality with nonzero
+`Q_02` at `B` and `Q_12` at `C`, the two mode-`A` normal charts force
+nonzero `u_0` and `u_1` coefficients at `C` and `B`.  This makes `C`
+rank three on `J_01` and `B` rank three on `J_10`.
+
+The naive contradiction still misses two rank-one gates:
+
+```text
+U_B=span(h_0,h_2,u_1),
+U_C=span(h_1,h_2,u_0).
+```
+
+A candidate bilinear-kernel argument may close their simultaneous
+boundary, but it requires a fresh audit.  The opposite chirality remains
+open.  The complete fail-closed checkpoint is in
+[`P5_Q5_221_TRIANGLE_WORKING_NOTE.md`](P5_Q5_221_TRIANGLE_WORKING_NOTE.md).
