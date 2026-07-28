@@ -6483,6 +6483,22 @@ to these stronger clauses without changing their algebraic sources.
 Disconnected support graphs use maximal acyclic gauge forests rather
 than an unjustified spanning tree.
 
+The first sparse affine identities in the `q5_311` tail permit a
+stronger implication.  Thirty-four distinct records remain unit ideals
+after deleting every gauge pivot.  These records require only that
+entries outside their support closure vanish; coefficients inside the
+closure may all vanish independently, subject to the three pure
+coefficients remaining nonzero.  Fresh split-Singular replay verifies
+all 34 self-contained records.  The package SHA-256 is
+`952fc788b171174020917f0c2287c172a8e4dd88b89f80ecb35c1f4ed6216bce`.
+
+The driver can now probe this zero-pivot closure before using a maximal
+forest.  An inconclusive one-second probe falls back to the previous
+exact chart calculation; it is never interpreted as algebraic evidence.
+The independent ledger verifier accepts nonmaximal forests, regenerates
+their exact sources, and records both actual-support and gauge-forest
+component counts.
+
 The three ledgers remain in progress.  Until their reconstructed branch
 CNFs are independently UNSAT, this is exploratory infrastructure rather
 than a theorem.
@@ -6490,7 +6506,11 @@ than a theorem.
 ```text
 p5_high_coordinate_tree_chart_cegar.py
 verify_p5_high_coordinate_chart_ledgers.py
+minimize_p5_high_coordinate_gauge_forest.py
+certify_p5_high_coordinate_zero_forest_batch.py
+package_p5_high_coordinate_zero_forest_seeds.py
 generate_p5_one_partial_support_system.py
+research_snapshots/2026-07-28-p5-high-coordinate-zero-forests/
 ```
 
 ### Five-root zero-coupling intersection

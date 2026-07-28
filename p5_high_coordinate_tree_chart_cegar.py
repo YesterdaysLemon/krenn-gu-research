@@ -437,6 +437,7 @@ def certify_chart(
     timeout: int,
     try_split: bool = True,
     prefer_split: bool = False,
+    split_only: bool = False,
 ) -> dict:
     program, metadata = GENERATOR.generate(
         closure,
@@ -459,6 +460,16 @@ def certify_chart(
                 "metadata": metadata,
                 "cas": split,
             }
+        if split_only:
+            return {
+                "status": "INCONCLUSIVE",
+                "source_sha256": sha256_text(program),
+                "split_source_sha256": sha256_text(split_program),
+                "metadata": metadata,
+                "split_cas": split,
+            }
+    elif split_only:
+        raise ValueError("split-only certification requires prefer_split")
     direct = run_singular(program, timeout)
     if direct["status"] == "UNIT_IDEAL":
         return {
@@ -604,7 +615,18 @@ def checkpoint(
         encoding="utf-8",
         newline="\n",
     )
-    os.replace(temporary, path)
+    # OneDrive and virus scanners can momentarily open the destination
+    # without delete sharing on Windows.  Preserve the atomic replace
+    # contract, but tolerate that transient lock instead of losing the
+    # completed checkpoint batch.
+    for attempt in range(50):
+        try:
+            os.replace(temporary, path)
+            break
+        except PermissionError:
+            if os.name != "nt" or attempt == 49:
+                raise
+            time.sleep(0.1)
 
 
 def transformed_seed_clauses(
@@ -686,6 +708,20 @@ def main() -> None:
         help="try the equivalent split-saturation system first",
     )
     parser.add_argument(
+        "--try-empty-forest-first",
+        action="store_true",
+        help=(
+            "probe a zero-pivot support-closure certificate before "
+            "falling back to the maximal gauge forest"
+        ),
+    )
+    parser.add_argument(
+        "--empty-forest-timeout",
+        type=int,
+        default=1,
+        help="split-Singular timeout for the zero-pivot probe",
+    )
+    parser.add_argument(
         "--transformed-seed-state",
         action="append",
         default=[],
@@ -712,6 +748,7 @@ def main() -> None:
         args.models <= 0
         or args.timeout <= 0
         or args.relax_timeout <= 0
+        or args.empty_forest_timeout <= 0
         or args.checkpoint_every <= 0
     ):
         raise ValueError(
@@ -720,6 +757,10 @@ def main() -> None:
     if args.skip_relax and args.relax_rows_only:
         raise ValueError(
             "skip-relax and relax-rows-only are mutually exclusive"
+        )
+    if args.try_empty_forest_first and not args.skip_relax:
+        raise ValueError(
+            "the empty-forest probe currently requires --skip-relax"
         )
     if not 15 <= args.min_available_percent < 100:
         raise ValueError(
@@ -760,6 +801,11 @@ def main() -> None:
             "strategy": "recursive-row-greedy-v1",
             "trial_timeout_seconds": args.relax_timeout,
             "modes": [1, 2, 3, 4],
+        },
+        "empty_forest_probe": {
+            "enabled": args.try_empty_forest_first,
+            "strategy": "split-only-v1",
+            "timeout_seconds": args.empty_forest_timeout,
         },
         "branch_restriction": branch_restriction,
         "stabilizer_size": len(
@@ -844,18 +890,50 @@ def main() -> None:
                 allowed,
             )
             initial_closure = closure_supports(supports)
-            initial_tree = gauge_tree(supports, initial_closure)
+            maximal_tree = gauge_tree(supports, initial_closure)
+            initial_tree = maximal_tree
             profile = tuple(
                 sum(mask in (1, 2, 4) for mask in row)
                 for row in supports
             )
-            certificate = certify_chart(
-                initial_closure,
-                indices,
-                initial_tree,
-                args.timeout,
-                prefer_split=args.prefer_split,
-            )
+            empty_forest_trial = None
+            if args.try_empty_forest_first:
+                empty_certificate = certify_chart(
+                    initial_closure,
+                    indices,
+                    (),
+                    args.empty_forest_timeout,
+                    prefer_split=True,
+                    split_only=True,
+                )
+                empty_forest_trial = {
+                    "status": empty_certificate["status"],
+                    "method": empty_certificate.get("method"),
+                    "seconds": (
+                        empty_certificate.get("cas")
+                        or empty_certificate.get("split_cas")
+                        or {}
+                    ).get("elapsed_seconds"),
+                }
+                if empty_certificate["status"] == "UNIT_IDEAL":
+                    initial_tree = ()
+                    certificate = empty_certificate
+                else:
+                    certificate = certify_chart(
+                        initial_closure,
+                        indices,
+                        initial_tree,
+                        args.timeout,
+                        prefer_split=args.prefer_split,
+                    )
+            else:
+                certificate = certify_chart(
+                    initial_closure,
+                    indices,
+                    initial_tree,
+                    args.timeout,
+                    prefer_split=args.prefer_split,
+                )
             if certificate["status"] != "UNIT_IDEAL":
                 print(
                     json.dumps(
@@ -946,6 +1024,7 @@ def main() -> None:
                     "gauge_tree": tree,
                     "connector_entries": connectors,
                     "relaxation": relaxation,
+                    "empty_forest_trial": empty_forest_trial,
                     "certificate": certificate,
                 }
             )
@@ -965,7 +1044,8 @@ def main() -> None:
                         "charts": len(records),
                         "seed_charts": len(seed_clauses),
                         "coordinate_profile": profile,
-                        "support_components": 20 - len(tree),
+                        "support_components": 20 - len(maximal_tree),
+                        "gauge_forest_edges": len(tree),
                         "relaxed_cells": len(
                             relaxation["accepted_cells"]
                         ),

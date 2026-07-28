@@ -456,8 +456,8 @@ linking this route to Route C without choosing row-support charts.
 
 ## Priority
 
-1. enumerate and learn sparse obstructions for the exact-four-partial
-   layer without materializing all labelled supports;
+1. finish the three high-coordinate branch covers, preferring
+   zero-pivot support-closure certificates before maximal gauge charts;
 2. formulate the simultaneous-root version of Route G in Grassmannian
    coordinates;
 3. test the four-channel selector and cut-rank formulation from Route F;

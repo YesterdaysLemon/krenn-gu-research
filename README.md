@@ -263,6 +263,14 @@ present, while all other permitted coefficients may vanish.  The active
 ledgers are incomplete and therefore do not yet establish a
 high-coordinate `P_5` theorem.
 
+A stronger finite seed set now removes the gauge-pivot assumptions
+entirely on 34 distinct `q5_311` support closures.  All 34 rational
+systems freshly replay as unit ideals through exactly equivalent split
+saturations.  Their reconstructed branch CNF is still SAT, so this is a
+strict finite advance rather than the missing high-coordinate theorem:
+
+- [`research_snapshots/2026-07-28-p5-high-coordinate-zero-forests/`](research_snapshots/2026-07-28-p5-high-coordinate-zero-forests/README.md)
+
 ## Problem
 
 For even `n`, `d` colours, and a complex `d x d` block `W_ij` on every

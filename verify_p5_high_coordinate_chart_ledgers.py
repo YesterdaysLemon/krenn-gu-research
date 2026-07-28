@@ -37,7 +37,7 @@ def validate_forest(
     supports: tuple[tuple[int, ...], ...],
     closure: tuple[tuple[int, ...], ...],
     tree: tuple[tuple[int, int, int], ...],
-) -> int:
+) -> tuple[int, int]:
     if any(
         actual & ~allowed
         for actual_row, closure_row in zip(
@@ -98,14 +98,15 @@ def validate_forest(
     actual_edges = HIGH.support_edges(supports)
     actual_components = components(actual_edges, False)
     forest_components = components(tree, True)
-    if (
-        forest_components != actual_components
-        or len(tree) != len(nodes) - actual_components
-    ):
+    if len(tree) != len(nodes) - forest_components:
         raise AssertionError(
-            "gauge forest is not maximal in the actual support graph"
+            "gauge forest edge/component count is inconsistent"
         )
-    return actual_components
+    if forest_components < actual_components:
+        raise AssertionError(
+            "gauge forest connects distinct actual-support components"
+        )
+    return actual_components, forest_components
 
 
 def clause_is_false(
@@ -138,7 +139,9 @@ def validate_record(
     supports = normalized_supports(record["supports"])
     closure = normalized_supports(record["closure_supports"])
     tree = normalized_tree(record["gauge_tree"])
-    components = validate_forest(supports, closure, tree)
+    actual_components, forest_components = validate_forest(
+        supports, closure, tree
+    )
     indices = tuple(map(int, record["signature_indices"]))
     program, metadata = GENERATOR.generate(
         closure,
@@ -178,7 +181,9 @@ def validate_record(
         raise AssertionError("stored upgraded chart clause changed")
     return clause, {
         "method": method,
-        "components": components,
+        "actual_components": actual_components,
+        "forest_components": forest_components,
+        "forest_edges": len(tree),
         "program": program,
         "split_program": split_program,
     }
@@ -246,12 +251,16 @@ def main() -> None:
     tasks = []
     method_counts = Counter()
     component_counts = Counter()
+    forest_component_counts = Counter()
+    forest_edge_counts = Counter()
     for record in selected:
         clause, task = validate_record(args.branch, pool, record)
         clauses.append(clause)
         tasks.append(task)
         method_counts[task["method"]] += 1
-        component_counts[task["components"]] += 1
+        component_counts[task["actual_components"]] += 1
+        forest_component_counts[task["forest_components"]] += 1
+        forest_edge_counts[task["forest_edges"]] += 1
 
     unique_clauses = tuple(sorted(set(clauses)))
     if len(unique_clauses) != len(clauses):
@@ -297,7 +306,11 @@ def main() -> None:
                 "records_checked": len(selected),
                 "unique_upgraded_clauses": len(unique_clauses),
                 "certificate_methods": dict(method_counts),
-                "support_components": dict(component_counts),
+                "actual_support_components": dict(component_counts),
+                "gauge_forest_components": dict(
+                    forest_component_counts
+                ),
+                "gauge_forest_edges": dict(forest_edge_counts),
                 "variables": pool.top,
                 "clauses": len(cnf.clauses),
                 "solver_results": solver_results,
