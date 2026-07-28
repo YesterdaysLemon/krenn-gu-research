@@ -49,7 +49,7 @@ def validate_forest(
     ):
         raise AssertionError("actual support is not inside its closure")
     if any(
-        mask not in (1, 2, 4, 7)
+        mask not in (0, 1, 2, 4, 7)
         for row in closure
         for mask in row
     ):

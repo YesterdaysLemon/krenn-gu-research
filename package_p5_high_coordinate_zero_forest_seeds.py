@@ -25,6 +25,14 @@ def main() -> None:
         type=Path,
         required=True,
     )
+    parser.add_argument(
+        "--deduplicate-identical-closures",
+        action="store_true",
+        help=(
+            "retain one deterministic representative when the closure, "
+            "clause, split source, and algebra metadata are identical"
+        ),
+    )
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
 
@@ -59,6 +67,52 @@ def main() -> None:
                 "records": len(state_records),
             }
         )
+
+    input_records = len(records)
+    duplicate_records_removed = 0
+    if args.deduplicate_identical_closures:
+        by_closure = {}
+        for record in records:
+            closure = tuple(
+                tuple(map(int, row))
+                for row in record["closure_supports"]
+            )
+            previous = by_closure.get(closure)
+            if previous is None:
+                by_closure[closure] = record
+                continue
+            left_certificate = previous["certificate"]
+            right_certificate = record["certificate"]
+            if (
+                tuple(map(int, previous["clause"]))
+                != tuple(map(int, record["clause"]))
+                or left_certificate.get("method") != "split"
+                or right_certificate.get("method") != "split"
+                or left_certificate.get("split_source_sha256")
+                != right_certificate.get("split_source_sha256")
+                or left_certificate.get("metadata")
+                != right_certificate.get("metadata")
+            ):
+                raise AssertionError(
+                    "duplicate closure has nonidentical algebra data"
+                )
+
+            def representative_key(candidate: dict) -> tuple:
+                certificate = candidate["certificate"]
+                return (
+                    certificate.get("cas", {}).get(
+                        "elapsed_seconds", float("inf")
+                    ),
+                    certificate["source_sha256"],
+                    tuple(map(int, candidate["signature_indices"])),
+                )
+
+            if representative_key(record) < representative_key(
+                previous
+            ):
+                by_closure[closure] = record
+            duplicate_records_removed += 1
+        records = list(by_closure.values())
 
     clauses = {
         tuple(map(int, record["clause"])) for record in records
@@ -96,6 +150,8 @@ def main() -> None:
                 "conditions omitted"
             ),
             "records": len(records),
+            "input_records": input_records,
+            "duplicate_records_removed": duplicate_records_removed,
             "unique_clauses": len(clauses),
             "unique_closures": len(closures),
             "unique_source_hashes": len(source_hashes),

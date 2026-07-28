@@ -271,6 +271,17 @@ strict finite advance rather than the missing high-coordinate theorem:
 
 - [`research_snapshots/2026-07-28-p5-high-coordinate-zero-forests/`](research_snapshots/2026-07-28-p5-high-coordinate-zero-forests/README.md)
 
+The active continuation now transports every exact chart through the
+288 branch symmetries and uses a deterministic gauge-tree portfolio to
+avoid normalization-dependent Gröbner stalls.  A current local
+1,380-chart discovery boundary expands to 336,672 chart-orbit clauses;
+the combined 351,510-clause `q5_311` cover is still SAT.  This is not
+yet a frozen public certificate package.  Exact zero-cell closures,
+bounded WSL transport retries, the rejected local-order false lead, and
+the ongoing fail-closed search are documented in:
+
+- [`P5_HIGH_COORDINATE_CHART_ORBIT_CEGAR.md`](P5_HIGH_COORDINATE_CHART_ORBIT_CEGAR.md)
+
 ## Problem
 
 For even `n`, `d` colours, and a complex `d x d` block `W_ij` on every

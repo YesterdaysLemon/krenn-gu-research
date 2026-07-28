@@ -156,14 +156,14 @@ def generate(
             len(supports) != 5
             or any(len(row) != 5 for row in supports)
             or any(
-                mask not in (1, 2, 3, 4, 5, 6, 7)
+                mask not in (0, 1, 2, 3, 4, 5, 6, 7)
                 for row in supports
                 for mask in row
             )
         ):
             raise ValueError(
                 "arbitrary supports must be a 5 by 5 array "
-                "of nonempty three-bit masks"
+                "of three-bit masks"
             )
     else:
         validate_supports(supports, expected_partial_cells)

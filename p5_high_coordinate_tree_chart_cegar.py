@@ -275,7 +275,10 @@ def closure_supports(
     supports: tuple[tuple[int, ...], ...],
 ) -> tuple[tuple[int, ...], ...]:
     return tuple(
-        tuple(mask if mask in (1, 2, 4) else 7 for mask in row)
+        tuple(
+            mask if mask in (0, 1, 2, 4) else 7
+            for mask in row
+        )
         for row in supports
     )
 
@@ -334,6 +337,129 @@ def gauge_tree(
     return tuple(tree)
 
 
+def gauge_tree_variants(
+    supports: tuple[tuple[int, ...], ...],
+    preferred_supports: tuple[tuple[int, ...], ...],
+    alternatives: int,
+) -> tuple[tuple[tuple[int, int, int], ...], ...]:
+    """Return deterministic maximal-forest gauge alternatives."""
+    if alternatives < 0:
+        raise ValueError("gauge-tree alternative count is negative")
+    nodes = [
+        *(("r", source) for source in SEMANTICS.SOURCES),
+        *(
+            ("c", mode, colour)
+            for mode in SEMANTICS.MODES
+            for colour in SEMANTICS.COLOURS
+        ),
+    ]
+    edges = support_edges(supports)
+    variants = [gauge_tree(supports, preferred_supports)]
+    seen = {variants[0]}
+    for seed in range(alternatives):
+        ordered = sorted(
+            edges,
+            key=lambda edge: hashlib.sha256(
+                (
+                    f"{seed}:"
+                    f"{edge[0]},{edge[1]},{edge[2]}"
+                ).encode("ascii")
+            ).digest(),
+        )
+        union_find = GENERATOR.UnionFind(nodes)
+        forest = []
+        for mode, source, colour in ordered:
+            if union_find.union(
+                ("r", source),
+                ("c", mode, colour),
+            ):
+                forest.append((mode, source, colour))
+        candidate = tuple(forest)
+        if candidate not in seen:
+            variants.append(candidate)
+            seen.add(candidate)
+    return tuple(variants)
+
+
+def certify_gauge_tree_portfolio(
+    supports: tuple[tuple[int, ...], ...],
+    closure: tuple[tuple[int, ...], ...],
+    indices: tuple[int, ...],
+    alternatives: int,
+    timeout: float,
+) -> tuple[
+    tuple[tuple[int, int, int], ...],
+    dict | None,
+    dict,
+]:
+    """Try short exact direct certificates across gauge forests."""
+    variants = gauge_tree_variants(
+        supports,
+        closure,
+        alternatives,
+    )
+    original = variants[0]
+    scored = []
+    for tree in variants:
+        _program, metadata = GENERATOR.generate(
+            closure,
+            indices,
+            expected_partial_cells=0,
+            pure_saturation_only=True,
+            gauge_tree_edges=tree,
+            allow_arbitrary_support=True,
+        )
+        scored.append(
+            (
+                metadata["mixed_equations"],
+                tree != original,
+                tree,
+            )
+        )
+    # Prefer fewer distinct equations, retaining the historical tree
+    # first on a tie.
+    ordered = tuple(tree for _count, _alternate, tree in sorted(scored))
+    trials = []
+    for tree in ordered:
+        certificate = certify_chart(
+            closure,
+            indices,
+            tree,
+            timeout,
+            try_split=False,
+        )
+        cas = (
+            certificate.get("cas")
+            or certificate.get("direct_cas")
+            or {}
+        )
+        trials.append(
+            {
+                "tree": tree,
+                "mixed_equations": certificate["metadata"][
+                    "mixed_equations"
+                ],
+                "status": certificate["status"],
+                "seconds": cas.get("elapsed_seconds"),
+            }
+        )
+        if certificate["status"] == "UNIT_IDEAL":
+            return tree, certificate, {
+                "strategy": "deterministic-min-equations-v1",
+                "alternative_count": alternatives,
+                "trial_timeout_seconds": timeout,
+                "trials": trials,
+                "selected_tree": tree,
+            }
+    return original, None, {
+        "strategy": "deterministic-min-equations-v1",
+        "alternative_count": alternatives,
+        "trial_timeout_seconds": timeout,
+        "trials": trials,
+        "selected_tree": None,
+    }
+
+
 def chart_clause(
     pool,
     closure: tuple[tuple[int, ...], ...],
@@ -363,7 +489,18 @@ def chart_clause(
                 # The branch restriction already supplies both presence
                 # and absence conditions for this normalized cell.
                 continue
-            if mask in (1, 2, 4):
+            if mask == 0:
+                literals.extend(
+                    pool.id(
+                        SEMANTICS.entry_key(
+                            mode,
+                            source,
+                            colour,
+                        )
+                    )
+                    for colour in SEMANTICS.COLOURS
+                )
+            elif mask in (1, 2, 4):
                 colour = mask.bit_length() - 1
                 pivot = (mode, source, colour)
                 if pivot in tree_set:
@@ -396,25 +533,72 @@ def chart_clause(
     return clause
 
 
-def run_singular(program: str, timeout: int) -> dict:
+def singular_command_with_timeout(
+    timeout: float,
+) -> tuple[str, ...]:
+    if timeout <= 0:
+        raise ValueError("Singular timeout must be positive")
+    if os.name != "nt":
+        return SINGULAR_COMMAND
+    # Put the deadline around Singular inside WSL.  Killing only the
+    # Windows wsl.exe wrapper can leave its Linux child holding the
+    # captured pipes for several extra seconds.
+    return (
+        "wsl.exe",
+        "--exec",
+        "/usr/bin/timeout",
+        "--signal=KILL",
+        f"{timeout:.6f}s",
+        "/usr/bin/Singular",
+        "-q",
+    )
+
+
+def run_singular(program: str, timeout: float) -> dict:
     started = time.monotonic()
-    try:
-        completed = subprocess.run(
-            SINGULAR_COMMAND,
-            input=program,
-            text=True,
-            encoding="utf-8",
-            errors="replace",
-            capture_output=True,
-            timeout=timeout,
-            check=False,
+    infrastructure_attempts = []
+    for attempt in range(3):
+        try:
+            completed = subprocess.run(
+                singular_command_with_timeout(timeout),
+                input=program,
+                text=True,
+                encoding="utf-8",
+                errors="replace",
+                capture_output=True,
+                timeout=timeout + 5,
+                check=False,
+            )
+        except subprocess.TimeoutExpired:
+            return {
+                "status": "TIMEOUT",
+                "elapsed_seconds": round(
+                    time.monotonic() - started, 6
+                ),
+                "infrastructure_attempts": infrastructure_attempts,
+            }
+        output = completed.stdout + completed.stderr
+        normalized_output = output.replace("\x00", "")
+        infrastructure_attempts.append(
+            {
+                "returncode": completed.returncode,
+                "wsl_service_unexpected": (
+                    "WSL/Service/E_UNEXPECTED"
+                    in normalized_output
+                ),
+            }
         )
-    except subprocess.TimeoutExpired:
-        return {
-            "status": "TIMEOUT",
-            "elapsed_seconds": round(time.monotonic() - started, 6),
-        }
-    output = completed.stdout + completed.stderr
+        if (
+            os.name != "nt"
+            or "WSL/Service/E_UNEXPECTED"
+            not in normalized_output
+            or attempt == 2
+        ):
+            break
+        # A killed WSL client can briefly leave the service unable to
+        # accept the next launch.  Retry only this explicit transport
+        # failure; algebraic timeouts and CAS output remain fail-closed.
+        time.sleep(1.5 * (attempt + 1))
     status = (
         "UNIT_IDEAL"
         if "UNIT_IDEAL" in output
@@ -427,6 +611,7 @@ def run_singular(program: str, timeout: int) -> dict:
         "returncode": completed.returncode,
         "elapsed_seconds": round(time.monotonic() - started, 6),
         "output_tail": output[-2000:],
+        "infrastructure_attempts": infrastructure_attempts,
     }
 
 
@@ -434,7 +619,7 @@ def certify_chart(
     closure: tuple[tuple[int, ...], ...],
     indices: tuple[int, ...],
     tree: tuple[tuple[int, int, int], ...],
-    timeout: int,
+    timeout: float,
     try_split: bool = True,
     prefer_split: bool = False,
     split_only: bool = False,
@@ -677,6 +862,206 @@ def transformed_seed_clauses(
     return tuple(sorted(set(clauses))), sources
 
 
+def transform_mask(
+    mask: int,
+    colours: tuple[int, ...],
+) -> int:
+    return sum(
+        1 << colours[colour]
+        for colour in SEMANTICS.COLOURS
+        if mask & (1 << colour)
+    )
+
+
+def transform_support_array(
+    supports: tuple[tuple[int, ...], ...],
+    modes: tuple[int, ...],
+    sources: tuple[int, ...],
+    colours: tuple[int, ...],
+) -> tuple[tuple[int, ...], ...]:
+    transformed = [
+        [0 for _source in SEMANTICS.SOURCES]
+        for _mode in SEMANTICS.MODES
+    ]
+    for old_mode in SEMANTICS.MODES:
+        for old_source in SEMANTICS.SOURCES:
+            transformed[modes[old_mode]][sources[old_source]] = (
+                transform_mask(
+                    supports[old_mode][old_source],
+                    colours,
+                )
+            )
+    return tuple(tuple(row) for row in transformed)
+
+
+def chart_symmetry_orbit_clauses(
+    closure: tuple[tuple[int, ...], ...],
+    tree: tuple[tuple[int, int, int], ...],
+    branch: str,
+    pool,
+) -> tuple[tuple[int, ...], ...]:
+    """Transport one exact chart through all branch symmetries."""
+    clauses = set()
+    for modes in (
+        (0,) + permutation
+        for permutation in itertools.permutations((1, 2, 3, 4))
+    ):
+        for sources, colours in source_colour_stabilizer(branch):
+            transformed_closure = transform_support_array(
+                closure,
+                modes,
+                sources,
+                colours,
+            )
+            transformed_tree = tuple(
+                (
+                    modes[mode],
+                    sources[source],
+                    colours[colour],
+                )
+                for mode, source, colour in tree
+            )
+            clauses.add(
+                chart_clause(
+                    pool,
+                    transformed_closure,
+                    transformed_tree,
+                    branch,
+                )
+            )
+    return tuple(sorted(clauses))
+
+
+def chart_orbit_seed_clauses(
+    paths: list[Path],
+    branch: str,
+    pool,
+) -> tuple[tuple[tuple[int, ...], ...], list[dict]]:
+    """Transport every exact pure-only chart in prior ledgers."""
+    clauses = set()
+    sources_metadata = []
+    for path in paths:
+        raw = path.read_bytes()
+        state = json.loads(raw)
+        if state.get("branch") != branch:
+            raise ValueError(f"chart-orbit seed branch mismatch: {path}")
+        records = state.get("records", [])
+        source_clauses = set()
+        for index, record in enumerate(records):
+            certificate = record.get("certificate", {})
+            if (
+                certificate.get("status") != "UNIT_IDEAL"
+                or certificate.get("metadata", {}).get(
+                    "saturated_parameters"
+                )
+                != 0
+            ):
+                raise ValueError(
+                    "chart-orbit seed is not a pure-only unit ideal: "
+                    f"{path} record {index}"
+                )
+            closure = tuple(
+                tuple(map(int, row))
+                for row in record["closure_supports"]
+            )
+            tree = tuple(
+                tuple(map(int, edge))
+                for edge in record["gauge_tree"]
+            )
+            source_clauses.update(
+                chart_symmetry_orbit_clauses(
+                    closure,
+                    tree,
+                    branch,
+                    pool,
+                )
+            )
+        clauses.update(source_clauses)
+        sources_metadata.append(
+            {
+                "path": path.as_posix(),
+                "sha256": hashlib.sha256(raw).hexdigest(),
+                "status": state.get("status"),
+                "representative_records": len(records),
+                "transported_clauses": len(source_clauses),
+            }
+        )
+    return tuple(sorted(clauses)), sources_metadata
+
+
+def zero_forest_orbit_clauses(
+    paths: list[Path],
+    branch: str,
+    pool,
+) -> tuple[tuple[tuple[int, ...], ...], list[dict]]:
+    """Transport exact zero-forest closures through branch symmetries."""
+    clauses = []
+    sources_metadata = []
+    source_colour_actions = source_colour_stabilizer(branch)
+    for path in paths:
+        raw = path.read_bytes()
+        state = json.loads(raw)
+        if state.get("branch") != branch:
+            raise ValueError(f"orbit seed branch mismatch: {path}")
+        records = state.get("records", [])
+        source_clauses = set()
+        source_closures = set()
+        for index, record in enumerate(records):
+            certificate = record.get("certificate", {})
+            if (
+                record.get("gauge_tree") not in ([], ())
+                or certificate.get("status") != "UNIT_IDEAL"
+                or certificate.get("metadata", {}).get(
+                    "saturated_parameters"
+                )
+                != 0
+            ):
+                raise ValueError(
+                    "orbit seed is not a zero-forest pure-only "
+                    f"unit ideal: {path} record {index}"
+                )
+            closure = tuple(
+                tuple(map(int, row))
+                for row in record["closure_supports"]
+            )
+            for modes in (
+                (0,) + permutation
+                for permutation in itertools.permutations((1, 2, 3, 4))
+            ):
+                for sources, colours in source_colour_actions:
+                    transformed = transform_support_array(
+                        closure,
+                        modes,
+                        sources,
+                        colours,
+                    )
+                    source_closures.add(transformed)
+                    source_clauses.add(
+                        chart_clause(
+                            pool,
+                            transformed,
+                            (),
+                            branch,
+                        )
+                    )
+        clauses.extend(source_clauses)
+        sources_metadata.append(
+            {
+                "path": path.as_posix(),
+                "sha256": hashlib.sha256(raw).hexdigest(),
+                "status": state.get("status"),
+                "representative_records": len(records),
+                "transported_closures": len(source_closures),
+                "transported_clauses": len(source_clauses),
+                "mode_actions": 24,
+                "source_colour_actions": len(
+                    source_colour_actions
+                ),
+            }
+        )
+    return tuple(sorted(set(clauses))), sources_metadata
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -708,6 +1093,21 @@ def main() -> None:
         help="try the equivalent split-saturation system first",
     )
     parser.add_argument(
+        "--gauge-tree-alternatives",
+        type=int,
+        default=0,
+        help=(
+            "try this many deterministic alternative maximal gauge "
+            "forests before the long historical-tree calculation"
+        ),
+    )
+    parser.add_argument(
+        "--gauge-tree-portfolio-timeout",
+        type=float,
+        default=6.0,
+        help="exact direct-Singular deadline per gauge-tree candidate",
+    )
+    parser.add_argument(
         "--try-empty-forest-first",
         action="store_true",
         help=(
@@ -717,8 +1117,8 @@ def main() -> None:
     )
     parser.add_argument(
         "--empty-forest-timeout",
-        type=int,
-        default=1,
+        type=float,
+        default=0.75,
         help="split-Singular timeout for the zero-pivot probe",
     )
     parser.add_argument(
@@ -729,6 +1129,34 @@ def main() -> None:
         help=(
             "reuse pure-only unit-ideal records after upgrading their "
             "clauses to exact chart applicability"
+        ),
+    )
+    parser.add_argument(
+        "--zero-forest-orbit-state",
+        action="append",
+        default=[],
+        type=Path,
+        help=(
+            "transport exact zero-forest representative closures "
+            "through branch-preserving mode/source/colour symmetries"
+        ),
+    )
+    parser.add_argument(
+        "--chart-orbit-state",
+        action="append",
+        default=[],
+        type=Path,
+        help=(
+            "transport all exact pure-only charts in a prior ledger "
+            "through branch-preserving symmetries"
+        ),
+    )
+    parser.add_argument(
+        "--learn-chart-orbits",
+        action="store_true",
+        help=(
+            "add the full branch-symmetry orbit of every newly "
+            "certified chart"
         ),
     )
     parser.add_argument("--state", type=Path)
@@ -749,6 +1177,8 @@ def main() -> None:
         or args.timeout <= 0
         or args.relax_timeout <= 0
         or args.empty_forest_timeout <= 0
+        or args.gauge_tree_alternatives < 0
+        or args.gauge_tree_portfolio_timeout <= 0
         or args.checkpoint_every <= 0
     ):
         raise ValueError(
@@ -781,11 +1211,31 @@ def main() -> None:
         args.branch,
     )
     base_clauses = len(cnf.clauses)
-    seed_clauses, seed_sources = transformed_seed_clauses(
+    transformed_clauses, seed_sources = transformed_seed_clauses(
         args.transformed_seed_state,
         args.branch,
         pool,
     )
+    zero_orbit_clauses, zero_orbit_sources = (
+        zero_forest_orbit_clauses(
+            args.zero_forest_orbit_state,
+            args.branch,
+            pool,
+        )
+    )
+    chart_orbit_clauses, chart_orbit_sources = (
+        chart_orbit_seed_clauses(
+            args.chart_orbit_state,
+            args.branch,
+            pool,
+        )
+    )
+    seed_clause_set = (
+        set(transformed_clauses)
+        | set(zero_orbit_clauses)
+        | set(chart_orbit_clauses)
+    )
+    seed_clauses = tuple(sorted(seed_clause_set))
     cnf.extend([list(clause) for clause in seed_clauses])
     metadata = {
         "catalogue_signatures": len(allowed),
@@ -797,6 +1247,13 @@ def main() -> None:
             "maximal acyclic actual-support forest prioritizing "
             "remaining closure-singleton pivots"
         ),
+        "gauge_tree_portfolio": {
+            "alternative_count": args.gauge_tree_alternatives,
+            "trial_timeout_seconds": (
+                args.gauge_tree_portfolio_timeout
+            ),
+            "ordering": "deterministic-min-equations-v1",
+        },
         "closure_relaxation": {
             "strategy": "recursive-row-greedy-v1",
             "trial_timeout_seconds": args.relax_timeout,
@@ -815,7 +1272,13 @@ def main() -> None:
         "variables": pool.top,
         "base_clauses": base_clauses,
         "transformed_seed_sources": seed_sources,
-        "transformed_seed_clauses": len(seed_clauses),
+        "transformed_seed_clauses": len(transformed_clauses),
+        "zero_forest_orbit_sources": zero_orbit_sources,
+        "zero_forest_orbit_clauses": len(zero_orbit_clauses),
+        "chart_orbit_sources": chart_orbit_sources,
+        "chart_orbit_clauses": len(chart_orbit_clauses),
+        "combined_seed_clauses": len(seed_clauses),
+        "learn_chart_orbits": args.learn_chart_orbits,
     }
     # Checkpoints round-trip through JSON; normalize tuples now so resume
     # comparisons are stable across processes.
@@ -830,7 +1293,25 @@ def main() -> None:
             raise ValueError("state metadata does not match this branch")
         records = list(state.get("records", []))
         for record in records:
-            cnf.append(record["clause"])
+            if args.learn_chart_orbits:
+                resumed_clauses = chart_symmetry_orbit_clauses(
+                    tuple(
+                        tuple(map(int, row))
+                        for row in record["closure_supports"]
+                    ),
+                    tuple(
+                        tuple(map(int, edge))
+                        for edge in record["gauge_tree"]
+                    ),
+                    args.branch,
+                    pool,
+                )
+            else:
+                resumed_clauses = (tuple(record["clause"]),)
+            for resumed_clause in resumed_clauses:
+                if resumed_clause not in seed_clause_set:
+                    cnf.append(list(resumed_clause))
+                    seed_clause_set.add(resumed_clause)
 
     with Solver(
         name="cadical195",
@@ -892,6 +1373,15 @@ def main() -> None:
             initial_closure = closure_supports(supports)
             maximal_tree = gauge_tree(supports, initial_closure)
             initial_tree = maximal_tree
+            gauge_portfolio = {
+                "strategy": "disabled",
+                "alternative_count": 0,
+                "trial_timeout_seconds": (
+                    args.gauge_tree_portfolio_timeout
+                ),
+                "trials": [],
+                "selected_tree": initial_tree,
+            }
             profile = tuple(
                 sum(mask in (1, 2, 4) for mask in row)
                 for row in supports
@@ -918,14 +1408,47 @@ def main() -> None:
                 if empty_certificate["status"] == "UNIT_IDEAL":
                     initial_tree = ()
                     certificate = empty_certificate
+                    gauge_portfolio = {
+                        "strategy": "zero-forest-selected",
+                        "alternative_count": 0,
+                        "trial_timeout_seconds": (
+                            args.empty_forest_timeout
+                        ),
+                        "trials": [],
+                        "selected_tree": (),
+                    }
                 else:
-                    certificate = certify_chart(
-                        initial_closure,
-                        indices,
-                        initial_tree,
-                        args.timeout,
-                        prefer_split=args.prefer_split,
-                    )
+                    if args.gauge_tree_alternatives:
+                        (
+                            portfolio_tree,
+                            portfolio_certificate,
+                            gauge_portfolio,
+                        ) = certify_gauge_tree_portfolio(
+                            supports,
+                            initial_closure,
+                            indices,
+                            args.gauge_tree_alternatives,
+                            args.gauge_tree_portfolio_timeout,
+                        )
+                        if portfolio_certificate is not None:
+                            initial_tree = portfolio_tree
+                            certificate = portfolio_certificate
+                        else:
+                            certificate = certify_chart(
+                                initial_closure,
+                                indices,
+                                initial_tree,
+                                args.timeout,
+                                prefer_split=args.prefer_split,
+                            )
+                    else:
+                        certificate = certify_chart(
+                            initial_closure,
+                            indices,
+                            initial_tree,
+                            args.timeout,
+                            prefer_split=args.prefer_split,
+                        )
             else:
                 certificate = certify_chart(
                     initial_closure,
@@ -1007,7 +1530,27 @@ def main() -> None:
                 raise AssertionError(
                     "learned chart clause is not false on its model"
                 )
-            solver.add_clause(list(clause))
+            if args.learn_chart_orbits:
+                learned_clauses = chart_symmetry_orbit_clauses(
+                    closure,
+                    tree,
+                    args.branch,
+                    pool,
+                )
+                if clause not in learned_clauses:
+                    raise AssertionError(
+                        "chart symmetry orbit lost its representative"
+                    )
+            else:
+                learned_clauses = (clause,)
+            new_learned_clauses = tuple(
+                candidate
+                for candidate in learned_clauses
+                if candidate not in seed_clause_set
+            )
+            for learned_clause in new_learned_clauses:
+                solver.add_clause(list(learned_clause))
+                seed_clause_set.add(learned_clause)
             connectors = tuple(
                 edge
                 for edge in tree
@@ -1025,7 +1568,14 @@ def main() -> None:
                     "connector_entries": connectors,
                     "relaxation": relaxation,
                     "empty_forest_trial": empty_forest_trial,
+                    "gauge_tree_portfolio": gauge_portfolio,
                     "certificate": certificate,
+                    "transported_orbit_clauses": len(
+                        learned_clauses
+                    ),
+                    "new_transported_orbit_clauses": len(
+                        new_learned_clauses
+                    ),
                 }
             )
             if len(records) % args.checkpoint_every == 0:
@@ -1054,6 +1604,12 @@ def main() -> None:
                         ),
                         "connectors": len(connectors),
                         "clause_literals": len(clause),
+                        "transported_orbit_clauses": len(
+                            learned_clauses
+                        ),
+                        "new_transported_orbit_clauses": len(
+                            new_learned_clauses
+                        ),
                         "cas_method": certificate["method"],
                         "cas_seconds": certificate["cas"][
                             "elapsed_seconds"
