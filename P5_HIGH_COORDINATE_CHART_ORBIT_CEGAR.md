@@ -159,30 +159,60 @@ must restrict the corresponding deleted-row `P_4` tensor to one nonzero
 decomposable tensor.  The same four maps must do this for two different row
 deletions and two independent target directions.
 
-`probe_p5_q5_311_rare_slice_core.py` retains only those two slices: at most
-160 mixed coefficients and nonvanishing of the two rare pure coefficients.
-On the frozen 300-record ledger:
+`probe_p5_q5_311_rare_slice_core.py` retains only those two mixed slices:
+at most 160 mixed coefficients.  If it also retains the globally required
+nonvanishing of all three pure coefficients, the frozen 300-record ledger
+gives:
 
 ```text
-rare-slice unit ideals: 298 / 300
-direct elapsed range:   0.078 to 0.188 seconds
-direct elapsed mean:    0.0981 seconds
+unit ideals:                       300 / 300
+certificate methods:              298 direct, 2 split
+accepted elapsed range:           0.079 to 0.406 seconds
+accepted elapsed mean:            0.1096 seconds
+majority-colour mixed equations:  0
 ```
 
-The two exceptions are exactly the two records whose full certificates use
-split saturation.  One rare split system has a proper positive-dimensional
-ideal, so the omitted majority-colour equations are genuinely needed on
-that chart; the second remained inconclusive at the tested deadline.  Thus
-the rare slices identify a dominant mechanism and a small exceptional
-stratum, not a universal proof.
+If only the two rare pure coefficients are saturated, 298 direct unit
+ideals remain.  The two exceptions are exactly the two records whose full
+certificates use split saturation.  One strict rare-only split system has a
+proper positive-dimensional ideal.  Adding only nonvanishing of the
+majority pure coefficient makes both exceptional split systems unit ideals;
+none of the 80 omitted majority-colour mixed words is needed.
+
+Thus all 300 recorded charts share one finite algebraic mechanism, with a
+two-record pure-nonvanishing boundary.  This is still not a universal proof
+or a complete branch cover.
+
+One leading chart has a much shorter explanation.  Two exact affine
+identities express its rare pure coefficients using five and four distinct
+mixed coefficients, with six and five degree-at-most-one Macaulay rows.
+All identity coefficients are `+1` or `-1`, so vanishing of the mixed
+target words forces both rare pure amplitudes to vanish.  The chart and
+independent symbolic verifier are in
+[`P5_Q5_311_RARE_AFFINE_CORE.md`](P5_Q5_311_RARE_AFFINE_CORE.md).
+
+The next continuation was stopped at 360 exact records and yielded 38 new
+zero-gauge-forest closures, with no overlap against the earlier 34.  Direct
+rare zero-forest saturation closes 36.  The two timeouts have exact
+support-stratified covers of 16 and 25 charts.  Those covers use the 6,495
+complex-valid local support signatures, all three pure amplitudes, and only
+the same 160 rare mixed words; they use no lex leaders and no
+majority-colour mixed support clauses.  Fresh Singular replay accepts all
+41 charts, and both CaDiCaL and Glucose verify both support covers as
+UNSAT.
+
+Thus the rare mechanism excludes all 38 new finite closures.  The combined
+72 zero-forest exclusions still leave both reconstructed branch solvers
+SAT.  The frozen evidence is in
+[`research_snapshots/2026-07-28-p5-q5-311-rare-zero-wave2/`](research_snapshots/2026-07-28-p5-q5-311-rare-zero-wave2/README.md).
 
 The complete reduction, exact evidence boundary, and reproduction commands
 are in
 [`P5_Q5_311_RARE_SLICE_REDUCTION.md`](P5_Q5_311_RARE_SLICE_REDUCTION.md).
 
-## Current continuation
+## Continuation checkpoint
 
-The active `q5_311` run uses:
+The stopped 360-record `q5_311` continuation used:
 
 ```text
 pre-orbit base representatives: 1,380
@@ -199,6 +229,6 @@ The 560 dynamic representatives are the frozen 260-record and 300-record
 ledgers from consecutive family-learning rounds.  The six relaxed
 representatives are two from the first round and four from the second.
 
-The active state is exploratory until the branch is UNSAT and the complete
+The checkpoint remains exploratory until the branch is UNSAT and the complete
 representative ledger, symmetry reconstruction, two independent SAT
 solvers, and fresh characteristic-zero algebra replay all pass.

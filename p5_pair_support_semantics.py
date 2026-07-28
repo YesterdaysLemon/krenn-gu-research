@@ -84,6 +84,7 @@ def finite_field_local_signatures() -> tuple[tuple, ...]:
 
 def build_pair_support_cnf(
     allowed_local_signatures: tuple[tuple, ...] | None = None,
+    mixed_colourings: tuple[tuple[int, ...], ...] | None = None,
 ) -> tuple[CNF, IDPool]:
     """Build the deterministic pair-signature support CNF.
 
@@ -95,6 +96,20 @@ def build_pair_support_cnf(
         if allowed_local_signatures is None
         else allowed_local_signatures
     )
+    retained_mixed_colourings = (
+        MIXED_COLOURINGS
+        if mixed_colourings is None
+        else mixed_colourings
+    )
+    if (
+        len(set(retained_mixed_colourings))
+        != len(retained_mixed_colourings)
+        or any(
+            colours not in MIXED_COLOURINGS
+            for colours in retained_mixed_colourings
+        )
+    ):
+        raise ValueError("retained mixed colourings are invalid")
     if len(allowed) != 6495:
         raise ValueError("expected the covered 6,495-signature catalogue")
 
@@ -222,7 +237,7 @@ def build_pair_support_cnf(
         cnf.append(witnesses)
 
     # A zero mixed coefficient cannot have exactly one supported monomial.
-    for colours in MIXED_COLOURINGS:
+    for colours in retained_mixed_colourings:
         witnesses = []
         for permutation in PERMUTATIONS:
             witness = pool.id(("mixed", colours, permutation))

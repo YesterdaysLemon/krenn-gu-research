@@ -6569,27 +6569,63 @@ The next continuation reconstructs 510,198 unique startup chart clauses.
 The normalized mode-zero multiplicities `3,1,1` expose a smaller algebraic
 mechanism.  Fixing either rare colour deletes its unique source row and
 forces the other four maps to compress the resulting `P_4` tensor to a
-nonzero decomposable tensor.  Keeping only those two slices gives at most
-160 mixed equations and saturates only the two rare pure coefficients.
+nonzero decomposable tensor.  Keeping only those two mixed slices gives at
+most 160 mixed equations.
 
 On the frozen 300-record ledger:
 
 ```text
-rare-slice unit ideals: 298 / 300
-elapsed mean:           0.0981 seconds
+rare mixed plus all pure unit ideals: 300 / 300
+certificate methods:                 298 direct, 2 split
+accepted elapsed mean:                0.1096 seconds
+majority mixed equations used:        0
 ```
 
-The two exceptions are exactly the two full-system split certificates.
-For one of them the rare split ideal is proper and positive-dimensional,
-so the majority-colour equations are genuinely necessary on that chart.
-The evidence therefore motivates a simultaneous two-deletion `P_4`
-classification with an exceptional stratum; it is not a universal
-rare-slice theorem.
+If only the two rare pure coefficients are saturated, 298 direct unit
+ideals remain.  One exceptional rare-only split ideal is proper and
+positive-dimensional.  Adding only nonvanishing of the majority pure
+coefficient closes both exceptional records in under half a second; no
+majority-colour mixed equation is needed.  The evidence therefore
+motivates a simultaneous two-deletion `P_4` classification under all three
+pure nonvanishing conditions.  It is a uniform finite mechanism, not yet a
+universal theorem.
+
+One leading unrelaxed chart has exact degree-one identities with only
+`+1` and `-1` coefficients.  Six Macaulay rows express the colour-one pure
+coefficient using five distinct mixed coefficients, and five rows express
+the colour-two pure coefficient using four.  A standalone verifier pins the
+closure and gauge tree and expands both identities directly from all
+permanent terms.
+
+The next `q5_311` run was stopped after 360 exact records.  It contains 38
+zero-gauge-forest closures, all distinct from the earlier 34.  Fresh replay
+accepts all 72 combined split-Singular certificates, while CaDiCaL and
+Glucose both leave the residual branch CNF SAT.
+
+On the 38 new closures, rare mixed equations plus all three pure
+nonvanishing conditions give 36 direct zero-forest unit ideals and two
+timeouts.  Removing lex leaders and restricting the support CNF to only the
+same 160 rare mixed words resolves both timeouts:
+
+```text
+zero record 12: 16 exact support charts, two-solver UNSAT
+zero record 13: 25 exact support charts, two-solver UNSAT
+fresh Singular: 41 / 41 UNIT_IDEAL
+majority mixed support conditions: 0
+```
+
+This proves the rare mechanism on all 38 finite zero-forest closures, not
+on the complete `q5_311` branch.
 
 ```text
 P5_HIGH_COORDINATE_CHART_ORBIT_CEGAR.md
 P5_Q5_311_RARE_SLICE_REDUCTION.md
+P5_Q5_311_RARE_AFFINE_CORE.md
 rank_p5_high_coordinate_chart_orbits.py
 maximize_p5_high_coordinate_chart_closure.py
 probe_p5_q5_311_rare_slice_core.py
+cover_p5_q5_311_rare_slice_supports.py
+verify_p5_q5_311_rare_affine_core.py
+verify_p5_q5_311_rare_slice_support_cover.py
+research_snapshots/2026-07-28-p5-q5-311-rare-zero-wave2/
 ```

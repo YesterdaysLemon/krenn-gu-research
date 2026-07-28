@@ -7,10 +7,11 @@ source row and leaves a deleted-row copy of the P4 permanent in the other
 four modes.  The target requires each of those two P4 tensors to be a
 nonzero decomposable tensor in a different target direction.
 
-This probe keeps only the corresponding mixed coefficients and saturates
-only the two rare pure coefficients.  ``UNIT_IDEAL`` is an exact
-characteristic-zero certificate for the selected chart; any other outcome
-is inconclusive.
+This probe keeps only the corresponding mixed coefficients.  It can
+saturate either just the two rare pure coefficients or all three pure
+coefficients; the latter still omits every majority-colour mixed equation.
+``UNIT_IDEAL`` is an exact characteristic-zero certificate for the selected
+chart, while any other outcome is inconclusive as an exclusion.
 """
 
 from __future__ import annotations
@@ -29,7 +30,14 @@ import p5_pair_support_semantics as SEMANTICS
 import verify_p5_high_coordinate_chart_ledgers as LEDGER
 
 
-def build_program(record: dict) -> tuple[str, str, dict]:
+def build_program(
+    record: dict,
+    include_majority_pure: bool = False,
+    basis_algorithm: str = "slimgb",
+    inverse_first: bool = False,
+) -> tuple[str, str, dict]:
+    if basis_algorithm not in ("slimgb", "std"):
+        raise ValueError("unsupported Singular basis algorithm")
     supports = LEDGER.normalized_supports(
         record["closure_supports"]
     )
@@ -109,15 +117,20 @@ def build_program(record: dict) -> tuple[str, str, dict]:
         if polynomial != "0":
             mixed.append(polynomial)
     mixed = list(dict.fromkeys(mixed))
+    pure_colours = (
+        (0, 1, 2) if include_majority_pure else (1, 2)
+    )
     pure = {
         colour: coefficient((colour,) * 5)
-        for colour in (1, 2)
+        for colour in pure_colours
     }
     if any(polynomial == "0" for polynomial in pure.values()):
         raise AssertionError("a required rare pure coefficient vanished")
 
     variables = names + ["z"]
-    saturation = "*".join(f"({pure[colour]})" for colour in (1, 2))
+    saturation = "*".join(
+        f"({pure[colour]})" for colour in pure_colours
+    )
     equations = mixed + [f"z*({saturation})-1"]
     program = "\n".join(
         [
@@ -126,11 +139,14 @@ def build_program(record: dict) -> tuple[str, str, dict]:
             f"// gauge forest: {tree}",
             "// retained mode-zero colours: 1,2",
             f"// distinct rare mixed equations: {len(mixed)}",
-            "// saturated pure coefficients: 2",
+            (
+                "// saturated pure coefficients: "
+                + ",".join(map(str, pure_colours))
+            ),
             f"ring r=0,({','.join(variables)}),dp;",
             "option(redSB);",
             "ideal I=" + ",\n".join(equations) + ";",
-            "ideal G=slimgb(I);",
+            f"ideal G={basis_algorithm}(I);",
             'if (size(G)==1 && G[1]==1) { "UNIT_IDEAL"; }',
             'else { "SURVIVOR"; size(G); vdim(G); }',
             "$;",
@@ -153,25 +169,35 @@ def build_program(record: dict) -> tuple[str, str, dict]:
         colour: rename(polynomial)
         for colour, polynomial in pure.items()
     }
+    inverse_names = [
+        f"w{colour}" for colour in pure_colours
+    ]
+    split_variables = (
+        inverse_names + safe_names
+        if inverse_first
+        else safe_names + inverse_names
+    )
     split_program = "\n".join(
         [
             "// exact split saturation for q5_311 rare P4 slices",
             (
                 "ring r=0,("
-                + ",".join(safe_names + ["w1", "w2"])
+                + ",".join(split_variables)
                 + "),dp;"
             ),
             "option(redSB);",
             "ideal I="
             + ",\n".join(
                 [
-                    f"w1*({safe_pure[1]})-1",
-                    f"w2*({safe_pure[2]})-1",
+                    *(
+                        f"w{colour}*({safe_pure[colour]})-1"
+                        for colour in pure_colours
+                    ),
                     *safe_mixed,
                 ]
             )
             + ";",
-            "ideal G=slimgb(I);",
+            f"ideal G={basis_algorithm}(I);",
             'if (size(G)==1 && G[1]==1) { "UNIT_IDEAL"; }',
             'else { "SURVIVOR"; size(G); vdim(G); }',
             "$;",
@@ -183,7 +209,10 @@ def build_program(record: dict) -> tuple[str, str, dict]:
         "gauge_forest_edges": len(tree),
         "variables": len(variables),
         "rare_mixed_equations": len(mixed),
-        "saturated_pure_coefficients": 2,
+        "saturated_pure_colours": pure_colours,
+        "majority_mixed_equations": 0,
+        "basis_algorithm": basis_algorithm,
+        "split_inverse_variables_first": inverse_first,
     }
 
 
@@ -200,6 +229,32 @@ def main() -> None:
     parser.add_argument("--source-output", type=Path)
     parser.add_argument("--output", type=Path)
     parser.add_argument("--quiet-progress", action="store_true")
+    parser.add_argument(
+        "--split-only",
+        action="store_true",
+        help=(
+            "skip the direct product saturation and run only the "
+            "equivalent split-inverse formulation"
+        ),
+    )
+    parser.add_argument(
+        "--basis-algorithm",
+        choices=("slimgb", "std"),
+        default="slimgb",
+    )
+    parser.add_argument(
+        "--inverse-first",
+        action="store_true",
+        help="place split inverse variables before chart variables",
+    )
+    parser.add_argument(
+        "--include-majority-pure",
+        action="store_true",
+        help=(
+            "also require the majority pure coefficient to be nonzero "
+            "while retaining only rare-colour mixed equations"
+        ),
+    )
     args = parser.parse_args()
     if any(index < 0 for index in args.record_index) or args.timeout <= 0:
         raise ValueError("invalid rare-slice probe arguments")
@@ -219,19 +274,29 @@ def main() -> None:
     results = []
     for index in args.record_index:
         program, split_program, metadata = build_program(
-            records[index]
+            records[index],
+            args.include_majority_pure,
+            args.basis_algorithm,
+            args.inverse_first,
         )
         if args.source_output:
             args.source_output.write_text(program, encoding="utf-8")
-        direct = HIGH.run_singular(program, args.timeout)
+        direct = (
+            {
+                "status": "SKIPPED",
+                "elapsed_seconds": 0.0,
+            }
+            if args.split_only
+            else HIGH.run_singular(program, args.timeout)
+        )
         split = None
         method = "direct"
         result = direct
         if direct["status"] != "UNIT_IDEAL":
             split = HIGH.run_singular(split_program, args.timeout)
+            result = split
             if split["status"] == "UNIT_IDEAL":
                 method = "split"
-                result = split
             else:
                 method = "inconclusive"
         results.append(

@@ -1,0 +1,7854 @@
+{
+  "status": "EXACT_FINITE_SEED_SET",
+  "branch": "q5_311",
+  "metadata": {
+    "scope": "self-contained exact zero-pivot support-closure certificates; not a complete branch cover",
+    "chart_clause_schema": "no entries outside closure; no gauge-pivot presence assumptions; normalized branch-fixed singleton conditions omitted",
+    "records": 38,
+    "input_records": 38,
+    "duplicate_records_removed": 0,
+    "unique_clauses": 38,
+    "unique_closures": 38,
+    "unique_source_hashes": 38,
+    "provenance": [
+      {
+        "path": "tmp/p5_high_tree_q5_311_v17_rare_slice_families.json",
+        "sha256": "ac927a666d3113b3e7fafe8dc08c5d7e4230d1c5e7f7447c69c31a9b9fb8f63e",
+        "status": "IN_PROGRESS",
+        "source_records": 360,
+        "selected_records": 38,
+        "skipped_records": 322
+      }
+    ]
+  },
+  "records": [
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        78,
+        80,
+        97,
+        98,
+        100,
+        101,
+        104,
+        106,
+        109,
+        110,
+        127,
+        128,
+        130,
+        132
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          5,
+          5,
+          2,
+          1,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          2,
+          5
+        ],
+        [
+          4,
+          4,
+          2,
+          1,
+          7
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          1,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          2,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          1,
+          7
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          1,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          2,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          1,
+          7
+        ]
+      ],
+      "signature_indices": [
+        50,
+        4449,
+        2749,
+        1663,
+        3581
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        3,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.422
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "249d98639852c21e741e5fb659bb75d9d4a055539d6dac1796cab5b8dc5b2280",
+        "split_source_sha256": "e071674e3739afa501bb5b346dcbc827204f7a2f0145884dd776dba5193627d2",
+        "metadata": {
+          "nonzero_entries": 37,
+          "gauge_free_variables": 37,
+          "laurent_parameters": 37,
+          "saturated_parameters": 0,
+          "mixed_equations": 155,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.422,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        78,
+        80,
+        97,
+        98,
+        100,
+        101,
+        104,
+        106,
+        127,
+        128,
+        130,
+        132
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          5,
+          5,
+          2,
+          1,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          2,
+          5
+        ],
+        [
+          4,
+          4,
+          2,
+          3,
+          3
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          1,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          2,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          7,
+          7
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          1,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          2,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          7,
+          7
+        ]
+      ],
+      "signature_indices": [
+        50,
+        4449,
+        2749,
+        1663,
+        3588
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        3,
+        4,
+        3
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.531
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "a0ddf9c3aaeb6b2bb70eb7a849f65d4c81b801bca8c4bc2f16a192767cbc1588",
+        "split_source_sha256": "92631cb3879c435b756fed5a1ac671807b1e00a783afde9b3cd350eb1b9d9309",
+        "metadata": {
+          "nonzero_entries": 39,
+          "gauge_free_variables": 39,
+          "laurent_parameters": 39,
+          "saturated_parameters": 0,
+          "mixed_equations": 184,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.531,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        78,
+        80,
+        97,
+        98,
+        100,
+        101,
+        104,
+        105,
+        127,
+        128,
+        130,
+        132
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          5,
+          5,
+          2,
+          1,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          4,
+          3
+        ],
+        [
+          4,
+          4,
+          2,
+          7,
+          6
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          1,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          4,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          7,
+          7
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          1,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          4,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          7,
+          7
+        ]
+      ],
+      "signature_indices": [
+        50,
+        4449,
+        2749,
+        1671,
+        3607
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        3,
+        4,
+        3
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.594
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "45e581d0b7264ddbde4d2e4094b16416422d82e29b364192f302beb14008cc86",
+        "split_source_sha256": "a9fafb363087f5ddd2aa70e337c0043a4ac404e983ef37f4822580a5aff71ca9",
+        "metadata": {
+          "nonzero_entries": 39,
+          "gauge_free_variables": 39,
+          "laurent_parameters": 39,
+          "saturated_parameters": 0,
+          "mixed_equations": 183,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.594,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        97,
+        98,
+        100,
+        101,
+        104,
+        105,
+        106,
+        127,
+        128,
+        130,
+        132,
+        135,
+        136
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          5,
+          5,
+          2,
+          1,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          0,
+          1
+        ],
+        [
+          4,
+          4,
+          6,
+          7,
+          7
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          1,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          0,
+          1
+        ],
+        [
+          4,
+          4,
+          7,
+          7,
+          7
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          1,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          0,
+          1
+        ],
+        [
+          4,
+          4,
+          7,
+          7,
+          7
+        ]
+      ],
+      "signature_indices": [
+        50,
+        4449,
+        2749,
+        1652,
+        3678
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        3,
+        4,
+        2
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.813
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "b41b5bffc885b39fc11b839977f19d307a13ef9e1df487f3e64c1e258900458e",
+        "split_source_sha256": "0ec53bd83c0bd0a9decef879a7cfef764ef831adbd34c2eef3924a4107a4765e",
+        "metadata": {
+          "nonzero_entries": 38,
+          "gauge_free_variables": 38,
+          "laurent_parameters": 38,
+          "saturated_parameters": 0,
+          "mixed_equations": 192,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.813,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        78,
+        80,
+        100,
+        101,
+        104,
+        105,
+        109,
+        110,
+        127,
+        128,
+        130,
+        132
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          5,
+          5,
+          2,
+          5,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          4,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          1,
+          3
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          7,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          4,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          1,
+          7
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          7,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          4,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          1,
+          7
+        ]
+      ],
+      "signature_indices": [
+        50,
+        4461,
+        2749,
+        1673,
+        3577
+      ],
+      "coordinate_profile": [
+        5,
+        2,
+        3,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.547
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "ce476ab1bfbe9c5bc9a43c9f9f4c92e76b4dce203203b0f201a2a33b42a1a832",
+        "split_source_sha256": "21a189a628e9a084b52ee7d96d9948c935aa320bf19a17e2c49dc364e8c6b390",
+        "metadata": {
+          "nonzero_entries": 39,
+          "gauge_free_variables": 39,
+          "laurent_parameters": 39,
+          "saturated_parameters": 0,
+          "mixed_equations": 183,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.547,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        78,
+        80,
+        100,
+        101,
+        104,
+        106,
+        109,
+        110,
+        127,
+        128,
+        130,
+        132
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          5,
+          5,
+          2,
+          5,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          2,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          1,
+          3
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          7,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          2,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          1,
+          7
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          7,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          2,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          1,
+          7
+        ]
+      ],
+      "signature_indices": [
+        50,
+        4461,
+        2749,
+        1664,
+        3577
+      ],
+      "coordinate_profile": [
+        5,
+        2,
+        3,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.609
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "8c5c3e8f26ad4786b0a6fb54e2e72e513ac0eb584912d6cd4265a6ef10eebe3f",
+        "split_source_sha256": "987d52a154efb75b81ad8a3a456613fe40e314aaf8625cffc993b7b7317e83fc",
+        "metadata": {
+          "nonzero_entries": 39,
+          "gauge_free_variables": 39,
+          "laurent_parameters": 39,
+          "saturated_parameters": 0,
+          "mixed_equations": 175,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.609,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        70,
+        72,
+        74,
+        75,
+        78,
+        80,
+        97,
+        98,
+        100,
+        101,
+        104,
+        106,
+        127,
+        128,
+        130,
+        131,
+        135,
+        136,
+        138,
+        140
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          7,
+          1,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          4
+        ],
+        [
+          2,
+          2,
+          4,
+          2,
+          1
+        ],
+        [
+          4,
+          4,
+          2,
+          5,
+          2
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          7,
+          1,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          4
+        ],
+        [
+          2,
+          2,
+          4,
+          2,
+          1
+        ],
+        [
+          4,
+          4,
+          2,
+          7,
+          2
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          7,
+          1,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          4
+        ],
+        [
+          2,
+          2,
+          4,
+          2,
+          1
+        ],
+        [
+          4,
+          4,
+          2,
+          7,
+          2
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6364,
+        2751,
+        1661,
+        3596
+      ],
+      "coordinate_profile": [
+        5,
+        2,
+        3,
+        5,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.359
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "ab27110d8b3ce03676ebb2cf16bea5a85c249acf41c255ed5013545d8bf02284",
+        "split_source_sha256": "c3df5e2a4d98364ed69c19f4d1f627b7474fcbc71841645883b7bb1fc17c1335",
+        "metadata": {
+          "nonzero_entries": 37,
+          "gauge_free_variables": 37,
+          "laurent_parameters": 37,
+          "saturated_parameters": 0,
+          "mixed_equations": 157,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.359,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        70,
+        72,
+        74,
+        75,
+        78,
+        80,
+        97,
+        98,
+        100,
+        101,
+        127,
+        128,
+        130,
+        131,
+        135,
+        136,
+        138,
+        140
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          7,
+          1,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          4
+        ],
+        [
+          2,
+          2,
+          4,
+          6,
+          1
+        ],
+        [
+          4,
+          4,
+          2,
+          5,
+          2
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          7,
+          1,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          4
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          1
+        ],
+        [
+          4,
+          4,
+          2,
+          7,
+          2
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          7,
+          1,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          4
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          1
+        ],
+        [
+          4,
+          4,
+          2,
+          7,
+          2
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6364,
+        2751,
+        1679,
+        3596
+      ],
+      "coordinate_profile": [
+        5,
+        2,
+        3,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.562
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "f83272fd747d3264291bdf9909070d13fcda46d499db68a98bf716bff6aa8215",
+        "split_source_sha256": "41d780244924765cbc5e5b9e6a5eccae69ebb27d03025477f8ff65d3f50abc30",
+        "metadata": {
+          "nonzero_entries": 39,
+          "gauge_free_variables": 39,
+          "laurent_parameters": 39,
+          "saturated_parameters": 0,
+          "mixed_equations": 179,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.562,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        70,
+        72,
+        74,
+        75,
+        78,
+        80,
+        97,
+        98,
+        100,
+        101,
+        127,
+        128,
+        131,
+        132,
+        135,
+        136,
+        138,
+        140
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          7,
+          1,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          2,
+          4,
+          6,
+          1
+        ],
+        [
+          4,
+          4,
+          2,
+          3,
+          2
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          7,
+          1,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          1
+        ],
+        [
+          4,
+          4,
+          2,
+          7,
+          2
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          7,
+          1,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          1
+        ],
+        [
+          4,
+          4,
+          2,
+          7,
+          2
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6364,
+        2748,
+        1679,
+        3587
+      ],
+      "coordinate_profile": [
+        5,
+        2,
+        3,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.641
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "06103bfd60d9904fe02f2c2debe7199053f96f2cc5958863d51a93d5d16e561b",
+        "split_source_sha256": "5abcd314a3381c9a265b21f25a7beb4c09efe7fe38e6e03e40318c8f7da81e01",
+        "metadata": {
+          "nonzero_entries": 39,
+          "gauge_free_variables": 39,
+          "laurent_parameters": 39,
+          "saturated_parameters": 0,
+          "mixed_equations": 179,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.641,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        78,
+        80,
+        97,
+        98,
+        100,
+        101,
+        127,
+        128,
+        135,
+        136,
+        138,
+        140
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          1,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          3
+        ],
+        [
+          2,
+          2,
+          4,
+          6,
+          1
+        ],
+        [
+          4,
+          4,
+          2,
+          5,
+          2
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          1,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          7
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          1
+        ],
+        [
+          4,
+          4,
+          2,
+          7,
+          2
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          1,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          7
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          1
+        ],
+        [
+          4,
+          4,
+          2,
+          7,
+          2
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6111,
+        2750,
+        1679,
+        3596
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        2,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.75
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "26163b1e7e016888c414665b709cbaf87c638f26c1e7ab9cdb4797c8ef6aa9bc",
+        "split_source_sha256": "2c51f88a93c07066bf5118e592c8213dc1698d5194d59865db1fc8adc0b4f901",
+        "metadata": {
+          "nonzero_entries": 39,
+          "gauge_free_variables": 39,
+          "laurent_parameters": 39,
+          "saturated_parameters": 0,
+          "mixed_equations": 183,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.75,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        78,
+        80,
+        97,
+        98,
+        100,
+        101,
+        127,
+        128,
+        138,
+        140
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          1,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          3
+        ],
+        [
+          2,
+          2,
+          4,
+          6,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          5,
+          2
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          1,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          7
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          7,
+          2
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          1,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          7
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          7,
+          2
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6111,
+        2750,
+        1680,
+        3596
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        2,
+        3,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 1.015
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "586f19f21ee90169c9257c31de01e6bc8efee882c88714ee7626f743f2fcfd1b",
+        "split_source_sha256": "3ee1b0d6f42eb0254140a90991eab4d99401abb4716d0cecf07263c295fe5801",
+        "metadata": {
+          "nonzero_entries": 41,
+          "gauge_free_variables": 41,
+          "laurent_parameters": 41,
+          "saturated_parameters": 0,
+          "mixed_equations": 184,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 1.015,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        67,
+        68,
+        70,
+        72,
+        74,
+        75,
+        101,
+        102,
+        104,
+        105,
+        106,
+        108,
+        109,
+        127,
+        128,
+        135,
+        136,
+        138,
+        140
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          1,
+          7,
+          1
+        ],
+        [
+          5,
+          5,
+          2,
+          1,
+          5
+        ],
+        [
+          2,
+          2,
+          4,
+          0,
+          1
+        ],
+        [
+          4,
+          4,
+          3,
+          4,
+          2
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          1,
+          7,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          1,
+          7
+        ],
+        [
+          2,
+          2,
+          4,
+          0,
+          1
+        ],
+        [
+          4,
+          4,
+          7,
+          4,
+          2
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          1,
+          7,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          1,
+          7
+        ],
+        [
+          2,
+          2,
+          4,
+          0,
+          1
+        ],
+        [
+          4,
+          4,
+          7,
+          4,
+          2
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6076,
+        4452,
+        1652,
+        3626
+      ],
+      "coordinate_profile": [
+        5,
+        2,
+        2,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.656
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "7d1d1d1671e475bce8b4052bb557c73bc9e2a756d38e46f011f2bc98e04a119d",
+        "split_source_sha256": "0e71480b8b6bddf1b3ec705ad91a45c5814f55b827f177c027bf2e6e40c278d9",
+        "metadata": {
+          "nonzero_entries": 38,
+          "gauge_free_variables": 38,
+          "laurent_parameters": 38,
+          "saturated_parameters": 0,
+          "mixed_equations": 177,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.656,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        67,
+        68,
+        70,
+        72,
+        74,
+        75,
+        101,
+        102,
+        104,
+        106,
+        108,
+        109,
+        127,
+        128,
+        130,
+        131,
+        138,
+        140
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          1,
+          7,
+          1
+        ],
+        [
+          5,
+          5,
+          2,
+          1,
+          4
+        ],
+        [
+          2,
+          2,
+          4,
+          2,
+          5
+        ],
+        [
+          4,
+          4,
+          3,
+          4,
+          2
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          1,
+          7,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          1,
+          4
+        ],
+        [
+          2,
+          2,
+          4,
+          2,
+          7
+        ],
+        [
+          4,
+          4,
+          7,
+          4,
+          2
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          1,
+          7,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          1,
+          4
+        ],
+        [
+          2,
+          2,
+          4,
+          2,
+          7
+        ],
+        [
+          4,
+          4,
+          7,
+          4,
+          2
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6076,
+        4451,
+        1663,
+        3626
+      ],
+      "coordinate_profile": [
+        5,
+        2,
+        3,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.671
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "69064b9291184b9a94c8a9f65a8bd3f177c246eccfae5a5753932a214dc6be64",
+        "split_source_sha256": "6e31265a7d46dfc084b0ff0645cce99eb67f91c0566fa17406fe634e51a086ea",
+        "metadata": {
+          "nonzero_entries": 39,
+          "gauge_free_variables": 39,
+          "laurent_parameters": 39,
+          "saturated_parameters": 0,
+          "mixed_equations": 195,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.671,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        67,
+        68,
+        70,
+        72,
+        74,
+        75,
+        101,
+        102,
+        104,
+        106,
+        108,
+        109,
+        127,
+        128,
+        138,
+        140
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          1,
+          7,
+          1
+        ],
+        [
+          5,
+          5,
+          2,
+          1,
+          5
+        ],
+        [
+          2,
+          2,
+          4,
+          2,
+          3
+        ],
+        [
+          4,
+          4,
+          3,
+          4,
+          2
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          1,
+          7,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          1,
+          7
+        ],
+        [
+          2,
+          2,
+          4,
+          2,
+          7
+        ],
+        [
+          4,
+          4,
+          7,
+          4,
+          2
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          1,
+          7,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          1,
+          7
+        ],
+        [
+          2,
+          2,
+          4,
+          2,
+          7
+        ],
+        [
+          4,
+          4,
+          7,
+          4,
+          2
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6076,
+        4452,
+        1662,
+        3626
+      ],
+      "coordinate_profile": [
+        5,
+        2,
+        2,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.813
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "1083b2930e1330293836296d82eafe1d60055086f980547d0ca6d53897be54c5",
+        "split_source_sha256": "ca337962a7994558c1dc8ca66f501a01746412446e1d074812994a469536da65",
+        "metadata": {
+          "nonzero_entries": 41,
+          "gauge_free_variables": 41,
+          "laurent_parameters": 41,
+          "saturated_parameters": 0,
+          "mixed_equations": 195,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.813,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        96,
+        98,
+        100,
+        101,
+        109,
+        110,
+        127,
+        128,
+        130,
+        132,
+        134,
+        136,
+        138,
+        139
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          3,
+          2
+        ],
+        [
+          4,
+          4,
+          7,
+          1,
+          4
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          2
+        ],
+        [
+          4,
+          4,
+          7,
+          1,
+          4
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          2
+        ],
+        [
+          4,
+          4,
+          7,
+          1,
+          4
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6132,
+        2749,
+        1666,
+        3682
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        3,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.125
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "bbca142894b5391d31b1467d27fcc96d6684122f56d330faaf0292de4c05cf1e",
+        "split_source_sha256": "bf78659bf03c2e4e5b363ff6f76b80055a5d5adbd1113e78bc695cb9ec83f68b",
+        "metadata": {
+          "nonzero_entries": 37,
+          "gauge_free_variables": 37,
+          "laurent_parameters": 37,
+          "saturated_parameters": 0,
+          "mixed_equations": 178,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.125,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        96,
+        98,
+        100,
+        101,
+        109,
+        110,
+        127,
+        128,
+        131,
+        132,
+        134,
+        136,
+        138,
+        139
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          2,
+          4,
+          3,
+          2
+        ],
+        [
+          4,
+          4,
+          7,
+          1,
+          4
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          2
+        ],
+        [
+          4,
+          4,
+          7,
+          1,
+          4
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          2
+        ],
+        [
+          4,
+          4,
+          7,
+          1,
+          4
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6132,
+        2748,
+        1666,
+        3682
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        3,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.14
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "eaab8f4cb0db043abd29c297532dae97807caffa9f13dc05228ae7601844c856",
+        "split_source_sha256": "717c91679233e0fa0d031f03aa9dc81e181863e380c166ff549d2e225d8c3025",
+        "metadata": {
+          "nonzero_entries": 37,
+          "gauge_free_variables": 37,
+          "laurent_parameters": 37,
+          "saturated_parameters": 0,
+          "mixed_equations": 178,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.14,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        96,
+        98,
+        100,
+        101,
+        109,
+        110,
+        127,
+        128,
+        130,
+        132,
+        134,
+        135,
+        138,
+        139
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          3,
+          4
+        ],
+        [
+          4,
+          4,
+          3,
+          1,
+          4
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          4
+        ],
+        [
+          4,
+          4,
+          7,
+          1,
+          4
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          4
+        ],
+        [
+          4,
+          4,
+          7,
+          1,
+          4
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6132,
+        2749,
+        1668,
+        3614
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        3,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.14
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "70b514fd45bc0619e59ffc607d6babb90698151cb804fbe98fb497df042230d6",
+        "split_source_sha256": "e85534037a76277b6042dd2ec1bf5d7ffc63b92b8ff735128320a91229f16dbc",
+        "metadata": {
+          "nonzero_entries": 37,
+          "gauge_free_variables": 37,
+          "laurent_parameters": 37,
+          "saturated_parameters": 0,
+          "mixed_equations": 186,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.14,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        96,
+        98,
+        100,
+        101,
+        109,
+        110,
+        127,
+        128,
+        130,
+        132,
+        135,
+        136,
+        138,
+        139
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          3,
+          1
+        ],
+        [
+          4,
+          4,
+          3,
+          1,
+          4
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          1
+        ],
+        [
+          4,
+          4,
+          7,
+          1,
+          4
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          1
+        ],
+        [
+          4,
+          4,
+          7,
+          1,
+          4
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6132,
+        2749,
+        1665,
+        3614
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        3,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.578
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "883f090a3f5875d47ae2b54a18221923655f91a774560a60c64e6c901ff74708",
+        "split_source_sha256": "e599ce827972a2fa35c2b02d3869baee7ac42d96f5cec308dbf70a3b81ad7945",
+        "metadata": {
+          "nonzero_entries": 37,
+          "gauge_free_variables": 37,
+          "laurent_parameters": 37,
+          "saturated_parameters": 0,
+          "mixed_equations": 195,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.578,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        96,
+        98,
+        100,
+        101,
+        109,
+        110,
+        127,
+        128,
+        130,
+        132,
+        138,
+        139
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          3,
+          3
+        ],
+        [
+          4,
+          4,
+          3,
+          1,
+          4
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          7
+        ],
+        [
+          4,
+          4,
+          7,
+          1,
+          4
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          7
+        ],
+        [
+          4,
+          4,
+          7,
+          1,
+          4
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6132,
+        2749,
+        1667,
+        3614
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        3,
+        3,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.719
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "4b60b82be3f5ccee551a5d2b01389834d5bd2ecc8f06c1caac81a785d5f42ffb",
+        "split_source_sha256": "1125bc700b1c337660f00d771310db4142715cb066f0f4c00b99ca00332df295",
+        "metadata": {
+          "nonzero_entries": 39,
+          "gauge_free_variables": 39,
+          "laurent_parameters": 39,
+          "saturated_parameters": 0,
+          "mixed_equations": 237,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.719,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        78,
+        80,
+        96,
+        98,
+        100,
+        101,
+        105,
+        106,
+        108,
+        109,
+        110,
+        127,
+        128,
+        130,
+        132,
+        139,
+        140
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          3
+        ],
+        [
+          4,
+          4,
+          2,
+          0,
+          1
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          0,
+          1
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          0,
+          1
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6132,
+        2749,
+        1656,
+        3573
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        3,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.281
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "5ce738252ac6b77473957531243de6f42162c613360ca62167f3e10289cefa58",
+        "split_source_sha256": "d6b7d1360fa9d79f98e06de6c91a6d9e14191f2916f70932127124bdb068f92a",
+        "metadata": {
+          "nonzero_entries": 34,
+          "gauge_free_variables": 34,
+          "laurent_parameters": 34,
+          "saturated_parameters": 0,
+          "mixed_equations": 136,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.281,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        78,
+        80,
+        96,
+        98,
+        100,
+        101,
+        105,
+        106,
+        127,
+        128,
+        130,
+        132,
+        138,
+        139
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          3
+        ],
+        [
+          4,
+          4,
+          2,
+          5,
+          4
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          7,
+          4
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          7,
+          4
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6132,
+        2749,
+        1656,
+        3597
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        3,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.422
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "b7a3a531fd61fb816ace8b0c29bf1412344a1cf9d5b919e16a8b288b5420a061",
+        "split_source_sha256": "2881e86c6e877cc4423d2ccaa4dbfc7263c57d46d6c63ebe9a59b1112e1ca6ad",
+        "metadata": {
+          "nonzero_entries": 37,
+          "gauge_free_variables": 37,
+          "laurent_parameters": 37,
+          "saturated_parameters": 0,
+          "mixed_equations": 182,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.422,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        96,
+        98,
+        100,
+        101,
+        105,
+        106,
+        108,
+        109,
+        127,
+        128,
+        130,
+        132,
+        139,
+        140
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          3
+        ],
+        [
+          4,
+          4,
+          6,
+          4,
+          1
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          7
+        ],
+        [
+          4,
+          4,
+          7,
+          4,
+          1
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          7
+        ],
+        [
+          4,
+          4,
+          7,
+          4,
+          1
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6132,
+        2749,
+        1656,
+        3672
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        3,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.453
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "7936409f4be99d21723bfd102ba391611d2b1611aa23ade8e6ec095fbda8ec29",
+        "split_source_sha256": "1454dbd6d39f3f6ace9de40c8208c74d68872cadf964a72d187ca5f5d519b932",
+        "metadata": {
+          "nonzero_entries": 37,
+          "gauge_free_variables": 37,
+          "laurent_parameters": 37,
+          "saturated_parameters": 0,
+          "mixed_equations": 195,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.453,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        78,
+        80,
+        96,
+        98,
+        100,
+        101,
+        105,
+        106,
+        108,
+        109,
+        127,
+        128,
+        130,
+        132
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          3
+        ],
+        [
+          4,
+          4,
+          2,
+          4,
+          5
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          4,
+          7
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          4,
+          7
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6132,
+        2749,
+        1656,
+        3593
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        3,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.454
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "580bcf0550825ab4ecf91f09970317c13d42525aa9a13e101dc6b347b4db08cd",
+        "split_source_sha256": "a1a3eb65fc1e9c9b4cd001eea573d678b2d2f928b27d3bcd088d05441cfd10da",
+        "metadata": {
+          "nonzero_entries": 37,
+          "gauge_free_variables": 37,
+          "laurent_parameters": 37,
+          "saturated_parameters": 0,
+          "mixed_equations": 155,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.454,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        78,
+        80,
+        96,
+        98,
+        100,
+        101,
+        105,
+        106,
+        108,
+        110,
+        127,
+        128,
+        130,
+        132
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          5
+        ],
+        [
+          4,
+          4,
+          2,
+          2,
+          5
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          2,
+          7
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          2,
+          7
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6132,
+        2749,
+        1658,
+        3584
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        3,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.484
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "0e9a1d110b3199f54880aee39b1d5757d79c7e89f580d91a1f1c06a9e283dac0",
+        "split_source_sha256": "cdcb28158dd0180130806e02d04eb94d85cdf1308955fab745a9f058c473882b",
+        "metadata": {
+          "nonzero_entries": 37,
+          "gauge_free_variables": 37,
+          "laurent_parameters": 37,
+          "saturated_parameters": 0,
+          "mixed_equations": 159,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.484,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        96,
+        98,
+        100,
+        101,
+        105,
+        106,
+        127,
+        128,
+        131,
+        132,
+        134,
+        136,
+        139,
+        140
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          2
+        ],
+        [
+          4,
+          4,
+          6,
+          6,
+          1
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          2
+        ],
+        [
+          4,
+          4,
+          7,
+          7,
+          1
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          2
+        ],
+        [
+          4,
+          4,
+          7,
+          7,
+          1
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6132,
+        2748,
+        1655,
+        3674
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        3,
+        5,
+        3
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.454
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "bb4ed0552d9ce5b77589fe0601890cb909125577bcae385300c098b4bb2adf1c",
+        "split_source_sha256": "884e3e2f51b5909e1d02d3d809b9914e35a5f3d959f920ed1dcf604778f33fa6",
+        "metadata": {
+          "nonzero_entries": 37,
+          "gauge_free_variables": 37,
+          "laurent_parameters": 37,
+          "saturated_parameters": 0,
+          "mixed_equations": 177,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.454,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        78,
+        80,
+        96,
+        98,
+        100,
+        101,
+        109,
+        110,
+        127,
+        128,
+        131,
+        132,
+        134,
+        136
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          2,
+          4,
+          3,
+          2
+        ],
+        [
+          4,
+          4,
+          2,
+          1,
+          5
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          2
+        ],
+        [
+          4,
+          4,
+          2,
+          1,
+          7
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          2
+        ],
+        [
+          4,
+          4,
+          2,
+          1,
+          7
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6132,
+        2748,
+        1666,
+        3579
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        3,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.5
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "8b933e3434c8054867eabd9c410d032f4c43f3e9bebfafd4db011f1ffdc6aa22",
+        "split_source_sha256": "c04446a52389bfd96114533aebf7eb732edc468d7ed6290ec06fa3393593ddfe",
+        "metadata": {
+          "nonzero_entries": 37,
+          "gauge_free_variables": 37,
+          "laurent_parameters": 37,
+          "saturated_parameters": 0,
+          "mixed_equations": 182,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.5,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        78,
+        80,
+        96,
+        98,
+        100,
+        101,
+        109,
+        110,
+        127,
+        128,
+        130,
+        132,
+        134,
+        136
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          3,
+          2
+        ],
+        [
+          4,
+          4,
+          2,
+          1,
+          5
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          2
+        ],
+        [
+          4,
+          4,
+          2,
+          1,
+          7
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          2
+        ],
+        [
+          4,
+          4,
+          2,
+          1,
+          7
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6132,
+        2749,
+        1666,
+        3579
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        3,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.609
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "919f604c3d56f386b4cecaa72cc441c2c69919521727c5761f8148e643d1a370",
+        "split_source_sha256": "e85392c62f666d81dd309d01720e9c2dae0abcf10bb04eed83e30fb928e7645a",
+        "metadata": {
+          "nonzero_entries": 37,
+          "gauge_free_variables": 37,
+          "laurent_parameters": 37,
+          "saturated_parameters": 0,
+          "mixed_equations": 182,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.609,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        78,
+        80,
+        96,
+        98,
+        100,
+        101,
+        109,
+        110,
+        127,
+        128,
+        130,
+        132,
+        134,
+        135
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          3,
+          4
+        ],
+        [
+          4,
+          4,
+          2,
+          1,
+          5
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          4
+        ],
+        [
+          4,
+          4,
+          2,
+          1,
+          7
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          4
+        ],
+        [
+          4,
+          4,
+          2,
+          1,
+          7
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6132,
+        2749,
+        1668,
+        3579
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        3,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.672
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "142760f483daf7ae3e331fbfe9c79f7d20a2203be6c3a4558b304dd9e240920a",
+        "split_source_sha256": "f19b7d598442107147d51c5641ff5438ac2f89a29dc793e73530feeb9127f765",
+        "metadata": {
+          "nonzero_entries": 37,
+          "gauge_free_variables": 37,
+          "laurent_parameters": 37,
+          "saturated_parameters": 0,
+          "mixed_equations": 180,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.672,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        96,
+        98,
+        100,
+        101,
+        105,
+        106,
+        127,
+        128,
+        130,
+        132,
+        134,
+        135,
+        136,
+        139,
+        140
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          0
+        ],
+        [
+          4,
+          4,
+          6,
+          7,
+          1
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          0
+        ],
+        [
+          4,
+          4,
+          7,
+          7,
+          1
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          0
+        ],
+        [
+          4,
+          4,
+          7,
+          7,
+          1
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6132,
+        2749,
+        1653,
+        3675
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        3,
+        4,
+        3
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.375
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "0b1a1004a33e552410f2bc326eca8aa574fdebbafe669e44b0c928cd7abaa2e9",
+        "split_source_sha256": "8ea435908e60bff75069c5453de3e26cdb0319e3f0d66d46a9d7b6b18a39739c",
+        "metadata": {
+          "nonzero_entries": 36,
+          "gauge_free_variables": 36,
+          "laurent_parameters": 36,
+          "saturated_parameters": 0,
+          "mixed_equations": 158,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.375,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        96,
+        98,
+        100,
+        101,
+        105,
+        106,
+        127,
+        128,
+        130,
+        132,
+        134,
+        136,
+        139,
+        140
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          2
+        ],
+        [
+          4,
+          4,
+          6,
+          6,
+          1
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          2
+        ],
+        [
+          4,
+          4,
+          7,
+          7,
+          1
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          2
+        ],
+        [
+          4,
+          4,
+          7,
+          7,
+          1
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6132,
+        2749,
+        1655,
+        3674
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        3,
+        5,
+        3
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.375
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "1bf30bad167aecb4356233b3c40b846685c131dc4f9d4aba86c31efb7b0fd4c2",
+        "split_source_sha256": "4ee21da5c4dc41345b6e9e2c3567812c5fe1598aa6571e38627b4bf052f0f929",
+        "metadata": {
+          "nonzero_entries": 37,
+          "gauge_free_variables": 37,
+          "laurent_parameters": 37,
+          "saturated_parameters": 0,
+          "mixed_equations": 177,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.375,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        78,
+        80,
+        96,
+        98,
+        100,
+        101,
+        105,
+        106,
+        127,
+        128,
+        130,
+        132,
+        139,
+        140
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          6
+        ],
+        [
+          4,
+          4,
+          2,
+          6,
+          1
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          7,
+          1
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          7
+        ],
+        [
+          4,
+          4,
+          2,
+          7,
+          1
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6132,
+        2749,
+        1659,
+        3600
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        3,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.797
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "38a8d78d41added358fdf73dfa9c6357ec36d0d0ea2395c9ead2dbea3b97fab5",
+        "split_source_sha256": "98a69579f68d46f2902c6f132c234f8eb4374314e3e13e415bc069daff267a29",
+        "metadata": {
+          "nonzero_entries": 37,
+          "gauge_free_variables": 37,
+          "laurent_parameters": 37,
+          "saturated_parameters": 0,
+          "mixed_equations": 194,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.797,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        96,
+        98,
+        100,
+        101,
+        109,
+        110,
+        127,
+        128,
+        131,
+        132,
+        134,
+        136,
+        139,
+        140
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          2,
+          4,
+          3,
+          2
+        ],
+        [
+          4,
+          4,
+          6,
+          1,
+          1
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          2
+        ],
+        [
+          4,
+          4,
+          7,
+          1,
+          1
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          2
+        ],
+        [
+          4,
+          4,
+          7,
+          1,
+          1
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6132,
+        2748,
+        1666,
+        3665
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        3,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.484
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "3bdd1b9b894f9656b1b5d649b8daba0374db15959b4b009a178229d98ef9b687",
+        "split_source_sha256": "0dd096acbc22869fa38d2691f1cc5a90a33df939eb26fe710cdff8df3b9c6a26",
+        "metadata": {
+          "nonzero_entries": 37,
+          "gauge_free_variables": 37,
+          "laurent_parameters": 37,
+          "saturated_parameters": 0,
+          "mixed_equations": 182,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.484,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        96,
+        98,
+        100,
+        101,
+        109,
+        110,
+        127,
+        128,
+        134,
+        136,
+        138,
+        139
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          3
+        ],
+        [
+          2,
+          2,
+          4,
+          3,
+          2
+        ],
+        [
+          4,
+          4,
+          3,
+          1,
+          4
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          7
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          2
+        ],
+        [
+          4,
+          4,
+          7,
+          1,
+          4
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          7
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          2
+        ],
+        [
+          4,
+          4,
+          7,
+          1,
+          4
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6132,
+        2750,
+        1666,
+        3614
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        2,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.187
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "5168042237594883418066317d127d2e15454b9b7e3ce5b4fb94ce15a519ec11",
+        "split_source_sha256": "4fcc79ad9959620f51348344995072a464c995fc63a7c87b9847880bbc65dfb4",
+        "metadata": {
+          "nonzero_entries": 39,
+          "gauge_free_variables": 39,
+          "laurent_parameters": 39,
+          "saturated_parameters": 0,
+          "mixed_equations": 195,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.187,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        78,
+        80,
+        96,
+        98,
+        100,
+        101,
+        109,
+        110,
+        127,
+        128,
+        134,
+        136
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          3
+        ],
+        [
+          2,
+          2,
+          4,
+          3,
+          2
+        ],
+        [
+          4,
+          4,
+          2,
+          1,
+          5
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          7
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          2
+        ],
+        [
+          4,
+          4,
+          2,
+          1,
+          7
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          7
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          2
+        ],
+        [
+          4,
+          4,
+          2,
+          1,
+          7
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6132,
+        2750,
+        1666,
+        3579
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        2,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.906
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "b47ab05a9770de5dbfa12e88169c3e17e13a82f55066a37b5968463106721998",
+        "split_source_sha256": "029742ce4614dbd2e4de3b5dae243bda7c6989cb98887447d5b700e392353e84",
+        "metadata": {
+          "nonzero_entries": 39,
+          "gauge_free_variables": 39,
+          "laurent_parameters": 39,
+          "saturated_parameters": 0,
+          "mixed_equations": 182,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.906,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        96,
+        98,
+        100,
+        101,
+        109,
+        110,
+        127,
+        128,
+        134,
+        136,
+        139,
+        140
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          3
+        ],
+        [
+          2,
+          2,
+          4,
+          3,
+          2
+        ],
+        [
+          4,
+          4,
+          6,
+          1,
+          1
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          7
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          2
+        ],
+        [
+          4,
+          4,
+          7,
+          1,
+          1
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          7
+        ],
+        [
+          2,
+          2,
+          4,
+          7,
+          2
+        ],
+        [
+          4,
+          4,
+          7,
+          1,
+          1
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6132,
+        2750,
+        1666,
+        3665
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        2,
+        4,
+        4
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.797
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "8b7aa54e698983651115efe68533f3926641af1d69bd275cf8966b3f37f3869e",
+        "split_source_sha256": "957a50c376f5e5cf655ee84c6094f34dbfddead7dd3d41b0b68b1237f7e2106e",
+        "metadata": {
+          "nonzero_entries": 39,
+          "gauge_free_variables": 39,
+          "laurent_parameters": 39,
+          "saturated_parameters": 0,
+          "mixed_equations": 204,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.797,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        72,
+        74,
+        75,
+        96,
+        98,
+        100,
+        101,
+        105,
+        106,
+        127,
+        128,
+        134,
+        136,
+        139,
+        140
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          4,
+          3
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          2
+        ],
+        [
+          4,
+          4,
+          6,
+          6,
+          1
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          7
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          2
+        ],
+        [
+          4,
+          4,
+          7,
+          7,
+          1
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          2,
+          1
+        ],
+        [
+          7,
+          7,
+          2,
+          4,
+          7
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          2
+        ],
+        [
+          4,
+          4,
+          7,
+          7,
+          1
+        ]
+      ],
+      "signature_indices": [
+        50,
+        6132,
+        2750,
+        1655,
+        3674
+      ],
+      "coordinate_profile": [
+        5,
+        3,
+        2,
+        5,
+        3
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 0.61
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "94f47af7aa6e6543448476dcc1e7834fa2ecae68517139b3e4f483b286910393",
+        "split_source_sha256": "64590eae5be702748ea0bf3ddbbc389ce3a4fc85c1b3e02124c771576c8053cc",
+        "metadata": {
+          "nonzero_entries": 39,
+          "gauge_free_variables": 39,
+          "laurent_parameters": 39,
+          "saturated_parameters": 0,
+          "mixed_equations": 198,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 0.61,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    },
+    {
+      "clause": [
+        10,
+        12,
+        14,
+        15,
+        18,
+        19,
+        37,
+        38,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        71,
+        96,
+        97,
+        101,
+        102,
+        127,
+        128,
+        134,
+        136,
+        138,
+        139
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          1,
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          7,
+          4,
+          1,
+          7
+        ],
+        [
+          4,
+          2,
+          5,
+          7,
+          2
+        ],
+        [
+          4,
+          4,
+          3,
+          3,
+          4
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          1,
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          7,
+          4,
+          1,
+          7
+        ],
+        [
+          4,
+          2,
+          7,
+          7,
+          2
+        ],
+        [
+          4,
+          4,
+          7,
+          7,
+          4
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          1,
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          7,
+          4,
+          1,
+          7
+        ],
+        [
+          4,
+          2,
+          7,
+          7,
+          2
+        ],
+        [
+          4,
+          4,
+          7,
+          7,
+          4
+        ]
+      ],
+      "signature_indices": [
+        50,
+        4943,
+        2403,
+        3363,
+        3624
+      ],
+      "coordinate_profile": [
+        5,
+        4,
+        3,
+        3,
+        3
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 1.047
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "ae4df1506f0c8eedfc2506e004f9188390b0023964177399c5bc2bf9b233494d",
+        "split_source_sha256": "5fb1298a98dc2d1ea09adad698d42529e834b94f419af2fd5093cc6cb8a94157",
+        "metadata": {
+          "nonzero_entries": 39,
+          "gauge_free_variables": 39,
+          "laurent_parameters": 39,
+          "saturated_parameters": 0,
+          "mixed_equations": 210,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 1.047,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 288,
+      "new_transported_orbit_clauses": 288
+    },
+    {
+      "clause": [
+        14,
+        16,
+        18,
+        19,
+        44,
+        46,
+        48,
+        49,
+        66,
+        68,
+        70,
+        71,
+        79,
+        80,
+        97,
+        98,
+        101,
+        102,
+        104,
+        105,
+        131,
+        132,
+        134,
+        136
+      ],
+      "supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          5,
+          5,
+          2,
+          1,
+          5
+        ],
+        [
+          3,
+          3,
+          4,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          5,
+          4,
+          2
+        ],
+        [
+          4,
+          4,
+          1,
+          5,
+          7
+        ]
+      ],
+      "initial_closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          1,
+          7
+        ],
+        [
+          7,
+          7,
+          4,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          7,
+          4,
+          2
+        ],
+        [
+          4,
+          4,
+          1,
+          7,
+          7
+        ]
+      ],
+      "closure_supports": [
+        [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          7,
+          7,
+          2,
+          1,
+          7
+        ],
+        [
+          7,
+          7,
+          4,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          7,
+          4,
+          2
+        ],
+        [
+          4,
+          4,
+          1,
+          7,
+          7
+        ]
+      ],
+      "signature_indices": [
+        50,
+        4452,
+        2759,
+        1699,
+        3558
+      ],
+      "coordinate_profile": [
+        5,
+        2,
+        3,
+        4,
+        3
+      ],
+      "gauge_tree": [],
+      "connector_entries": [],
+      "relaxation": {
+        "strategy": "skipped",
+        "trial_timeout_seconds": 1,
+        "trials": [],
+        "accepted_cells": [],
+        "paused_for_memory": false
+      },
+      "empty_forest_trial": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "seconds": 1.015
+      },
+      "gauge_tree_portfolio": {
+        "strategy": "zero-forest-selected",
+        "alternative_count": 0,
+        "trial_timeout_seconds": 1.0,
+        "trials": [],
+        "selected_tree": []
+      },
+      "certificate": {
+        "status": "UNIT_IDEAL",
+        "method": "split",
+        "source_sha256": "c2817bef2204d41fc6fce31b22a8d0786336a8a0d0c2ae48f6b4be5d54de9213",
+        "split_source_sha256": "0148bd4bc1adc3f59c1001555e754a09a459a81230cb5b6fa860c77d34dde532",
+        "metadata": {
+          "nonzero_entries": 41,
+          "gauge_free_variables": 41,
+          "laurent_parameters": 41,
+          "saturated_parameters": 0,
+          "mixed_equations": 240,
+          "pure_coefficients": 3,
+          "gauge_fixed_entries": 0
+        },
+        "cas": {
+          "status": "UNIT_IDEAL",
+          "returncode": 0,
+          "elapsed_seconds": 1.015,
+          "output_tail": "UNIT_IDEAL\n",
+          "infrastructure_attempts": [
+            {
+              "returncode": 0,
+              "wsl_service_unexpected": false
+            }
+          ]
+        }
+      },
+      "transported_orbit_clauses": 144,
+      "new_transported_orbit_clauses": 144
+    }
+  ]
+}

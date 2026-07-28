@@ -264,36 +264,47 @@ ledgers are incomplete and therefore do not yet establish a
 high-coordinate `P_5` theorem.
 
 A stronger finite seed set now removes the gauge-pivot assumptions
-entirely on 34 distinct `q5_311` support closures.  All 34 rational
-systems freshly replay as unit ideals through exactly equivalent split
-saturations.  Their reconstructed branch CNF is still SAT, so this is a
-strict finite advance rather than the missing high-coordinate theorem:
+entirely on 72 distinct `q5_311` support closures.  The original 34 and
+the new 38 closures have zero overlap.  All 72 rational systems freshly
+replay as unit ideals through exactly equivalent split saturations.
+Their reconstructed branch CNF is still SAT, so this is a strict finite
+advance rather than the missing high-coordinate theorem:
 
 - [`research_snapshots/2026-07-28-p5-high-coordinate-zero-forests/`](research_snapshots/2026-07-28-p5-high-coordinate-zero-forests/README.md)
+- [`research_snapshots/2026-07-28-p5-q5-311-rare-zero-wave2/`](research_snapshots/2026-07-28-p5-q5-311-rare-zero-wave2/README.md)
 
-The active continuation now transports every exact chart through the
+The latest stopped continuation transported every exact chart through the
 288 branch symmetries and uses a deterministic gauge-tree portfolio to
 avoid normalization-dependent Gröbner stalls.  The base 1,380-chart
 discovery boundary expands to 336,672 chart-orbit clauses.  Two further
 family-learning rounds add 560 exact representatives and six enlarged
-family seeds; the current continuation starts from 510,198 unique
-transported clauses and is still SAT.
+family seeds; its last continuation started from 510,198 unique
+transported clauses and remained SAT through 360 new records.
 
 The normalized `q5_311` row also exposes two simultaneous deleted-`P_4`
-rank-one slices.  Those two slices alone give exact unit ideals on 298
-of one frozen 300-chart ledger; the two exceptional charts are exactly
-the ones whose full certificates need split saturation.  This identifies
-a dominant smaller mechanism and a genuine exceptional stratum, not a
+rank-one slices.  Their mixed equations, together with nonvanishing of
+all three pure amplitudes, give exact unit ideals on all 300 charts in
+one frozen continuation ledger: 298 direct and two split.  No
+majority-colour mixed equation is needed.  This identifies a uniform
+finite mechanism and a two-chart pure-nonvanishing boundary, not a
 completed branch proof.
 
-This work is not yet a frozen public certificate package.  Exact
-zero-cell closures, bounded WSL transport retries, the rejected
-local-order false lead, retrospective orbit ranking, exact family
-enlargement, the rare-slice reduction, and the ongoing fail-closed search
-are documented in:
+The new 38 zero-forest closures are also a stronger stress test of the
+rare-slice mechanism.  Direct zero-forest saturation closes 36.  The
+remaining two have exact 16-chart and 25-chart support covers using only
+the same 160 rare mixed words, all three pure amplitudes, and no lex
+symmetry breaking.  All 41 support-chart ideals replay freshly, and both
+CaDiCaL and Glucose verify both covers as UNSAT.  This closes those two
+finite closures; it is not a complete `q5_311` classification.
+
+The frozen public packages, exact zero-cell closures, bounded WSL
+transport retries, the rejected local-order false lead, retrospective
+orbit ranking, exact family enlargement, the rare-slice reduction, and
+the ongoing fail-closed search are documented in:
 
 - [`P5_HIGH_COORDINATE_CHART_ORBIT_CEGAR.md`](P5_HIGH_COORDINATE_CHART_ORBIT_CEGAR.md)
 - [`P5_Q5_311_RARE_SLICE_REDUCTION.md`](P5_Q5_311_RARE_SLICE_REDUCTION.md)
+- [`P5_Q5_311_RARE_AFFINE_CORE.md`](P5_Q5_311_RARE_AFFINE_CORE.md)
 
 ## Problem
 

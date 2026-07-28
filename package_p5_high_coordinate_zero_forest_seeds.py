@@ -33,6 +33,14 @@ def main() -> None:
             "clause, split source, and algebra metadata are identical"
         ),
     )
+    parser.add_argument(
+        "--select-zero-forest-only",
+        action="store_true",
+        help=(
+            "skip records with nonempty gauge forests while retaining the "
+            "same exact validation for selected zero-forest records"
+        ),
+    )
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
 
@@ -44,7 +52,13 @@ def main() -> None:
         if state.get("branch") != args.branch:
             raise ValueError(f"branch mismatch in {path}")
         state_records = state.get("records", [])
+        selected_records = 0
         for index, record in enumerate(state_records):
+            if (
+                args.select_zero_forest_only
+                and record.get("gauge_tree") not in ([], ())
+            ):
+                continue
             certificate = record.get("certificate", {})
             if (
                 record.get("gauge_tree") not in ([], ())
@@ -59,12 +73,15 @@ def main() -> None:
                     "pure-only certificate"
                 )
             records.append(record)
+            selected_records += 1
         provenance.append(
             {
                 "path": path.as_posix(),
                 "sha256": hashlib.sha256(raw).hexdigest(),
                 "status": state.get("status"),
-                "records": len(state_records),
+                "source_records": len(state_records),
+                "selected_records": selected_records,
+                "skipped_records": len(state_records) - selected_records,
             }
         )
 
