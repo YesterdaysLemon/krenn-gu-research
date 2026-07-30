@@ -17,6 +17,10 @@ coupled slope-parameter divisor are closed in the companion boundary
 theorems:
 [`P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md),
 [`P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md).
+An intrinsic factorization of the seven selected `D_23` minor contents
+has additionally exposed and closed four rational branches
+`af=+/-1,a phi=+/-1`:
+[`P5_H22_DISJOINT_MIXED_STAR_AF_APHI_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_AF_APHI_BOUNDARY_OBSTRUCTION.md).
 
 This does not close special parameter, slope, or projective boundary
 points, prove that the eight components are exhaustive, settle the
@@ -242,7 +246,10 @@ The two residual-torus divisors `r=1` and `r=-1` are no longer part of
 item 1: on them the mixed kernel forces one binary diagonal to vanish
 before the ternary obstruction is reached.
 Nor are the twelve coordinate/pivot branches or the principal coupled
-slope graph recorded in the companion boundary theorems.
+slope graph recorded in the companion boundary theorems.  The four
+new `af=+/-1,a phi=+/-1` branches are no longer open either; in the
+`D_23` direction they satisfy the stronger statement that the genuine
+binary incidence itself is empty.
 
 ## Verification
 

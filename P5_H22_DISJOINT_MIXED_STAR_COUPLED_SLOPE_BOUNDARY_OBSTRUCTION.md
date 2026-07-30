@@ -160,6 +160,12 @@ C.
 Some of these factors meet in deeper strata, and a complete
 denominator extraction from every standard-basis certificate is still
 required before claiming the full component incidence is closed.
+The selected `D_23` maximal-minor contents have since been extracted
+intrinsically.  Their only new common parameter factor,
+`af=+/-1`, splits into four rational sheets now closed in
+[`P5_H22_DISJOINT_MIXED_STAR_AF_APHI_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_AF_APHI_BOUNDARY_OBSTRUCTION.md).
+The `D_01` and final incidence certificates still require the same
+systematic treatment.
 Other pure components may also exist.  No satisfying graph and no
 global nonexistence proof is claimed.
 

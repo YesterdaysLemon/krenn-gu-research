@@ -806,7 +806,10 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   slope fibres are now excluded already at the binary level, twelve
   generic parameter/coordinate boundary branches are closed, and the
   principal coupled slope-parameter divisor is closed by a cross-mode
-  Fitting obstruction.
+  Fitting obstruction.  An intrinsic content factorization of the
+  seven selected `D_23` maximal minors now closes four further rational
+  boundary sheets `af=+/-1,a phi=+/-1`; on those sheets the generic
+  `D_23` binary incidence is itself empty.
 Thus this does not remove the 240 signatures from the fail-closed
 census and `P_5 -> Delta_3` remains unresolved.
 

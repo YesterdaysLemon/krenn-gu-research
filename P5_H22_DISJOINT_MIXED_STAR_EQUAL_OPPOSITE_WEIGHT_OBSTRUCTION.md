@@ -159,6 +159,10 @@ Two subsequent theorems close twelve generic parameter/coordinate
 branches and the principal coupled slope-parameter divisor:
 [`P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md),
 [`P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md).
+A third boundary theorem extracts the intrinsic contents of the seven
+selected `D_23` minors and closes the four remaining rational sheets
+`af=+/-1,a phi=+/-1`:
+[`P5_H22_DISJOINT_MIXED_STAR_AF_APHI_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_AF_APHI_BOUNDARY_OBSTRUCTION.md).
 
 ## Verification
 

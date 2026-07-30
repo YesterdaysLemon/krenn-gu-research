@@ -76,7 +76,10 @@ external mathematical review, the strongest additional claims are:
   and opposite-weight `H22` fibres are additionally empty already at
   the binary-incidence level, twelve generic parameter/coordinate
   branches are empty by exact Fitting ideals, and the principal
-  coupled slope-parameter divisor is empty by a cross-mode minor.
+  coupled slope-parameter divisor is empty by a cross-mode minor.  An
+  intrinsic maximal-minor content calculation further closes the four
+  rational sheets `af=+/-1,a phi=+/-1`; on those sheets the `D_23`
+  binary incidence itself is generically empty.
 
 The first item is stronger than the currently cited paper frontier and
 than the status labels in the current public formal-conjectures file.

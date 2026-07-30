@@ -15,6 +15,12 @@ and its generic marked `H31` incidence is excluded in
 [`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 Its generic weighted `H22` incidence is now closed on a dense open set
 by the theorem linked above.
+Subsequent exact boundary theorems close `r=+/-1`, twelve
+parameter-pivot branches, the principal coupled slope divisor, and four
+rational sheets `af=+/-1,a phi=+/-1`.  The last package also records an
+intrinsic content factorization of all seven selected `D_23` maximal
+minors:
+[`P5_H22_DISJOINT_MIXED_STAR_AF_APHI_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_AF_APHI_BOUNDARY_OBSTRUCTION.md).
 
 No computation described below proves a statement over `C`.  In
 particular, several direct characteristic-zero Groebner calculations
