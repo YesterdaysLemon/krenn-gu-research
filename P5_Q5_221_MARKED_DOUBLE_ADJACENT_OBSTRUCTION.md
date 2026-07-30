@@ -20,10 +20,10 @@ one of the doubled edges.
 
 Together with
 [`P5_Q5_221_PAIRED_MAJORITY_DROP_OBSTRUCTION.md`](P5_Q5_221_PAIRED_MAJORITY_DROP_OBSTRUCTION.md),
-four of the nine marked exact-six-incidence types are excluded.  Extra
-rank-drop containments, the other five marked types, normalized
-`q5_221`, `P_5 -> Delta_3`, and the arbitrary-order prize conjecture
-remain open.
+this closed four of the nine marked exact-six-incidence types.  Later
+obstructions close the other five exact minimal types.  Extra rank-drop
+containments, normalized `q5_221`, `P_5 -> Delta_3`, and the
+arbitrary-order prize conjecture remain open.
 
 ## Source coordinates
 

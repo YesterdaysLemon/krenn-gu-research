@@ -17,10 +17,10 @@ double-plus-disjoint minimal type in which the singleton edge is one of
 the doubled edges is impossible.
 
 Together with the paired-majority and marked-adjacent obstructions,
-five of the nine marked exact-six-incidence types are excluded.  Extra
-containments, the triangle, star, two marked paths, normalized
-`q5_221`, `P_5 -> Delta_3`, and the arbitrary-order prize conjecture
-remain open.
+this closed five of the nine marked exact-six-incidence types.  The
+later triangle, star, and marked-path theorems close all nine exact
+minimal types.  Extra containments, normalized `q5_221`,
+`P_5 -> Delta_3`, and the arbitrary-order prize conjecture remain open.
 
 ## Coordinates and a forced `Q_20`
 
