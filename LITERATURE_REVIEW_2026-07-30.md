@@ -79,7 +79,10 @@ external mathematical review, the strongest additional claims are:
   coupled slope-parameter divisor is empty by a cross-mode minor.  An
   intrinsic maximal-minor content calculation further closes the four
   rational sheets `af=+/-1,a phi=+/-1`; on those sheets the `D_23`
-  binary incidence itself is generically empty.
+  binary incidence itself is generically empty.  A second intrinsic
+  content ledger closes the compactified slope endpoint `r=0`: `D_01`
+  fails already at binary level, while the rank-six `D_23` degeneration
+  fails a two-minor marked-rank test.
 
 The first item is stronger than the currently cited paper frontier and
 than the status labels in the current public formal-conjectures file.

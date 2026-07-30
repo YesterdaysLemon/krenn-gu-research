@@ -163,6 +163,10 @@ A third boundary theorem extracts the intrinsic contents of the seven
 selected `D_23` minors and closes the four remaining rational sheets
 `af=+/-1,a phi=+/-1`:
 [`P5_H22_DISJOINT_MIXED_STAR_AF_APHI_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_AF_APHI_BOUNDARY_OBSTRUCTION.md).
+The compactified slope endpoint `r=0` is closed separately by a direct
+binary obstruction for `D_01` and an unsplit Fitting obstruction for
+`D_23`:
+[`P5_H22_DISJOINT_MIXED_STAR_ZERO_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_ZERO_SLOPE_BOUNDARY_OBSTRUCTION.md).
 
 ## Verification
 

@@ -204,10 +204,11 @@ divisors.
 The new theorem closes the generic points of all four new branches in
 (9).  Deeper intersections inside them remain open unless covered by
 one of the earlier boundary theorems.  The factor `r=0` in (2) is a
-projective endpoint of the weighted-slope chart and still requires a
-separate treatment if that endpoint is retained in the global
-compactification.  A corresponding intrinsic content ledger for every
-`D_01` Fitting and final incidence certificate is also still needed.
+projective endpoint of the weighted-slope chart and is now closed in
+[`P5_H22_DISJOINT_MIXED_STAR_ZERO_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_ZERO_SLOPE_BOUNDARY_OBSTRUCTION.md).
+That theorem also records the intrinsic contents of the selected
+`D_01` maximal minors and rank pivot.  The final `D_01` Fitting
+incidence certificates still need the same treatment.
 
 Other pure components may exist.  No satisfying graph and no global
 nonexistence proof is claimed.

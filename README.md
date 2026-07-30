@@ -809,7 +809,10 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   Fitting obstruction.  An intrinsic content factorization of the
   seven selected `D_23` maximal minors now closes four further rational
   boundary sheets `af=+/-1,a phi=+/-1`; on those sheets the generic
-  `D_23` binary incidence is itself empty.
+  `D_23` binary incidence is itself empty.  The corresponding `D_01`
+  minor/pivot ledger also exposes the compactified endpoint `r=0`.
+  There `D_01` fails at binary level, and the rank-six `D_23`
+  degeneration fails an unsplit two-minor Fitting obstruction.
 Thus this does not remove the 240 signatures from the fail-closed
 census and `P_5 -> Delta_3` remains unresolved.
 

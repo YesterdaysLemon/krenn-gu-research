@@ -21,6 +21,10 @@ rational sheets `af=+/-1,a phi=+/-1`.  The last package also records an
 intrinsic content factorization of all seven selected `D_23` maximal
 minors:
 [`P5_H22_DISJOINT_MIXED_STAR_AF_APHI_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_AF_APHI_BOUNDARY_OBSTRUCTION.md).
+The compactified endpoint `r=0` is closed as well, together with an
+intrinsic content ledger for the seven selected `D_01` maximal minors
+and their rank pivot:
+[`P5_H22_DISJOINT_MIXED_STAR_ZERO_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_ZERO_SLOPE_BOUNDARY_OBSTRUCTION.md).
 
 No computation described below proves a statement over `C`.  In
 particular, several direct characteristic-zero Groebner calculations

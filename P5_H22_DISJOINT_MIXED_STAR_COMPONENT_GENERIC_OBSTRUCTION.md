@@ -12,6 +12,10 @@ orbits have empty generic marked `H31` and weighted `H22` fibres.
 The special equal- and opposite-weight slopes have since been closed
 by a stronger binary obstruction:
 [`P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md).
+The compactified endpoint `r=0` is also closed: `D_01^0` has a binary
+diagonal obstruction, while `D_23^0` has an unsplit two-minor Fitting
+obstruction:
+[`P5_H22_DISJOINT_MIXED_STAR_ZERO_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_ZERO_SLOPE_BOUNDARY_OBSTRUCTION.md).
 Twelve generic parameter/coordinate branches and the principal
 coupled slope-parameter divisor are closed in the companion boundary
 theorems:
@@ -245,6 +249,10 @@ The global Krenn--Gu conjecture remains unresolved.
 The two residual-torus divisors `r=1` and `r=-1` are no longer part of
 item 1: on them the mixed kernel forces one binary diagonal to vanish
 before the ternary obstruction is reached.
+The projective slope endpoint `r=0` is no longer open either.  There
+the `D_01` kernel has the same kind of diagonal obstruction, while the
+`D_23` mixed rank drops to six and is excluded by an unsplit two-minor
+Fitting ideal.
 Nor are the twelve coordinate/pivot branches or the principal coupled
 slope graph recorded in the companion boundary theorems.  The four
 new `af=+/-1,a phi=+/-1` branches are no longer open either; in the
