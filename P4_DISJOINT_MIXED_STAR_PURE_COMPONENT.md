@@ -25,6 +25,14 @@ theorem excludes the generic marked `H31` fibre:
 [`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 Its generic weighted `H22` incidence is now excluded as well:
 [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+The equal- and opposite-weight slope fibres are excluded by the
+stronger binary theorem
+[`P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md).
+Twelve generic parameter/coordinate branches and the principal coupled
+slope-parameter divisor are excluded in
+[`P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md)
+and
+[`P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md).
 The component's boundaries, component exhaustiveness, and the global
 prize problem remain open.  The earlier finite-field structure and
 timed-out broad route remain as provenance in
@@ -264,8 +272,8 @@ boundary.
 
 The immediate exact targets are now:
 
-1. classify its parameter/projective boundaries, including the
-   special divisors omitted by the generic `H31` theorem;
+1. extract and classify its still-hidden standard-basis denominators
+   and remaining projective boundaries;
 2. finish the remaining exceptional triangle, rank-two-relation, and
    lower pair-rank strata to decide component exhaustiveness.
 

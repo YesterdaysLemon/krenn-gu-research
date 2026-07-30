@@ -781,13 +781,21 @@ a^2 b f phi^2+a^2 f^2-b^2 f^2+b^2 phi^2-bf-1=0.
 
 Its rank-five family tangent and rank-fifteen Segre-incidence
 certificate are exact.  Its generic `H31` incidence is empty by the
-function-field projection and determinantal identity above, while its
-generic weighted `H22` incidence remains open:
+function-field projection and determinantal identity above.  Its
+generic weighted `H22` incidence is now empty as well: the two weighted
+mixed matrices have a line and a degree-five Fitting scheme, and small
+one-marked minors exclude every genuine binary direction:
 [`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
-Two exact finite-field censuses and the incomplete function-field
-Fitting route are recorded, without promotion, in
-[`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md).
-Special component/slope boundaries and component exhaustiveness remain.
+[`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+At the special slopes `r=1` and `r=-1`, a stronger binary theorem
+forces respectively the first and second diagonal to vanish:
+[`P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md).
+Twelve generic parameter/coordinate branches and the principal coupled
+slope-parameter divisor are now closed as well:
+[`P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md),
+[`P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md).
+Hidden certificate denominators, other component boundaries, and
+component exhaustiveness remain.
 
 A natural non-brute-force route is:
 

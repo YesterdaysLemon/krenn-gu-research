@@ -9,6 +9,14 @@ the eighth pure-`P_4` component proved in
 The complete weighted `H22` incidence over the generic point of that
 component is empty.  Thus all eight currently certified pure-component
 orbits have empty generic marked `H31` and weighted `H22` fibres.
+The special equal- and opposite-weight slopes have since been closed
+by a stronger binary obstruction:
+[`P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md).
+Twelve generic parameter/coordinate branches and the principal
+coupled slope-parameter divisor are closed in the companion boundary
+theorems:
+[`P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md),
+[`P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md).
 
 This does not close special parameter, slope, or projective boundary
 points, prove that the eight components are exhaustive, settle the
@@ -221,13 +229,20 @@ map tuple, support catalogue, or graph is enumerated.
 All eight certified pure-`P_4` component orbits are now generically
 closed for both `H31` and weighted `H22`.  The next geometric tasks are:
 
-1. classify the special parameter, slope, and projective boundaries;
+1. extract the remaining hidden certificate denominators and classify
+   their parameter/slope/projective boundaries;
 2. finish the exceptional mixed-star/triangle and lower-pair-rank
    strata to decide component exhaustiveness; and
 3. lift a complete `P_5 -> Delta_3` obstruction back into the
    arbitrary-order blocker hierarchy.
 
 The global Krenn--Gu conjecture remains unresolved.
+
+The two residual-torus divisors `r=1` and `r=-1` are no longer part of
+item 1: on them the mixed kernel forces one binary diagonal to vanish
+before the ternary obstruction is reached.
+Nor are the twelve coordinate/pivot branches or the principal coupled
+slope graph recorded in the companion boundary theorems.
 
 ## Verification
 

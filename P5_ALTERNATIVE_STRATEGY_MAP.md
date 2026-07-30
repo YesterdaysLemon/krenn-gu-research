@@ -1067,7 +1067,22 @@ ternary obstructions close every genuine binary direction:
 
 - [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
 
-Special slope/parameter divisors and component boundaries remain, and
+At the special slopes `r=1` and `r=-1`, the entire binary incidence is
+empty: the mixed kernel lies in the first diagonal hyperplane at equal
+weight and in the second at opposite weight:
+
+- [`P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md)
+
+Factoring the component relation on its coordinate and pivot divisors
+produces twelve generic rank-two branches.  Twenty-four exact Fitting
+ideals close them.  The last visible coupled coefficient in the
+degree-five marking cover is also closed by switching the `D_01`
+obstruction from local mode zero to mode one:
+
+- [`P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md)
+- [`P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md)
+
+Other hidden coefficient divisors and component boundaries remain, and
 the eight components are not known to be exhaustive.  The earlier
 modular pattern and timed-out broad route remain as provenance:
 

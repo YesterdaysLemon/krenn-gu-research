@@ -210,6 +210,17 @@ strictly advance the finite frontier:
   cover relations, and one- or two-minor ternary obstructions close all
   five markings:
   [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+  The equal- and opposite-weight slope divisors are now closed more
+  strongly at the binary level: at `r=1` the mixed kernel forces the
+  first diagonal to vanish, while at `r=-1` it forces the second:
+  [`P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md).
+  Factoring the component equation closes twelve further generic
+  parameter/coordinate branches with twenty-four exact Fitting ideals:
+  [`P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md).
+  The remaining visible coupled coefficient in the degree-five cover
+  is also closed; its `D_01` obstruction moves to mode one while its
+  `D_23` obstruction stays in mode zero:
+  [`P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md).
 - all five minimal primes in the mixed `3 x 4` determinantal chart are
   now identified.  Two are the sixth component, one is a subfamily of
   the six-dimensional component, and the remaining two are explicit
@@ -735,6 +746,9 @@ are:
 - [`P5_H31_DIAGONAL_QUADRIC_OUTER_BOUNDARY_OBSTRUCTION.md`](P5_H31_DIAGONAL_QUADRIC_OUTER_BOUNDARY_OBSTRUCTION.md)
 - [`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
 - [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md)
+- [`P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md)
+- [`P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md)
 
 Of 1,680 covered local signatures with at least four coordinate rows,
 1,170 are excluded immediately by local signature type.  The remaining
@@ -787,7 +801,12 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   `D_23` line and a degree-five `D_01` marking scheme, then exclude
   every genuine binary direction.  Thus all eight certified orbits are
   generically closed for both `H31` and weighted `H22`.  Special
-  component/slope boundaries and component exhaustiveness remain open.
+  component/slope boundaries and component exhaustiveness remain open,
+  although the eighth component's full equal- and opposite-weight
+  slope fibres are now excluded already at the binary level, twelve
+  generic parameter/coordinate boundary branches are closed, and the
+  principal coupled slope-parameter divisor is closed by a cross-mode
+  Fitting obstruction.
 Thus this does not remove the 240 signatures from the fail-closed
 census and `P_5 -> Delta_3` remains unresolved.
 

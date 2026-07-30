@@ -11019,7 +11019,78 @@ verify_p5_h22_disjoint_mixed_star_component_generic_obstruction.py
 audit_p5_h22_disjoint_mixed_star_component_generic_obstruction.py
 ```
 
+### Equal- and opposite-weight slope fibres
+
+The generic weighted theorem uses a determinantal marking chart that
+degenerates at `r^2=1`.  Specializing before elimination makes both
+slope fibres simpler.
+
+For each direction `D_01,D_23`, let `M_D(t)` be the fourteen-row mixed
+coefficient matrix and `A_D,B_D` the two binary diagonals.  Over the
+generic component-parameter field, exact standard bases give
+
+```text
+r= 1:  M_D(t)z=0  implies A_D(z)=0,
+r=-1:  M_D(t)z=0  implies B_D(z)=0.
+```
+
+Equivalently, normalizing the indicated diagonal to one makes each of
+the four mixed-incidence ideals the unit ideal.  Since a binary
+`Delta_2` neighbour requires both diagonals nonzero, neither slope
+admits even a binary extension.  No one-marked ternary minor is needed.
+
+```text
+P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md
+verify_p5_h22_disjoint_mixed_star_equal_opposite_weight_obstruction.py
+audit_p5_h22_disjoint_mixed_star_equal_opposite_weight_obstruction.py
+```
+
+### Twelve parameter/coordinate boundary branches
+
+Factoring `Phi` on
+
+```text
+a^2-b^2=0,  bf+1=0,  b=0,  f=0,  a=0,  phi=0
+```
+
+produces ten rational rank-two branches and two irreducible quadratic
+branches.  The two additional branches on `bf=-1,b phi=+/-1` have
+`y_2=0` and lie outside the all-rank-two stratum.
+
+For both weighted directions, twenty-four exact ideals combine genuine
+binary normalization with one or two mode-zero one-marked minors.  The
+standard rows `0137,0157` close every branch except `f=0` in direction
+`D_01`; there the finite survivor cover identifies `0157,0457`, and
+that alternate characteristic-zero ideal is unit.
+
+```text
+P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md
+verify_p5_h22_disjoint_mixed_star_parameter_pivot_boundary_obstruction.py
+audit_p5_h22_disjoint_mixed_star_parameter_pivot_boundary_obstruction.py
+```
+
+### Principal coupled slope-parameter boundary
+
+The remaining visible coefficient in the degree-five cover is
+
+```text
+C=r(a^2 f+abf+a+b)+(-a^2 f+abf+a-b).
+```
+
+On the chart where the first parenthesis is nonzero, `C=0` is a
+rational slope graph.  Direction `D_01` is excluded by the mode-one
+minor `0457`, while `D_23` is excluded by the mode-zero minor `0137`.
+If the denominator also vanishes, the equations force
+`bf=-1,a=+/-b`, already in the parameter-boundary theorem.
+
+```text
+P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md
+verify_p5_h22_disjoint_mixed_star_coupled_slope_boundary_obstruction.py
+audit_p5_h22_disjoint_mixed_star_coupled_slope_boundary_obstruction.py
+```
+
 The suggested continuation is to classify the special
-parameter/slope/projective boundaries omitted by this function-field
-argument, then finish the exceptional mixed-star/triangle and lower
-pair-rank strata needed for component exhaustiveness.
+parameter/slope/projective boundaries still hidden in the exact
+standard-basis certificates, then finish the exceptional
+mixed-star/triangle and lower pair-rank strata needed for component
+exhaustiveness.

@@ -72,7 +72,11 @@ external mathematical review, the strongest additional claims are:
 - exact exclusions of normalized `q5_311`, `q5_221`, and `q4_211`;
 - at least eight inequivalent components of the pure rank-two
   `P_4`-compression variety, with generic `H31` and now generic weighted
-  `H22` fibres empty on all eight.
+  `H22` fibres empty on all eight; on the eighth component the equal-
+  and opposite-weight `H22` fibres are additionally empty already at
+  the binary-incidence level, twelve generic parameter/coordinate
+  branches are empty by exact Fitting ideals, and the principal
+  coupled slope-parameter divisor is empty by a cross-mode minor.
 
 The first item is stronger than the currently cited paper frontier and
 than the status labels in the current public formal-conjectures file.
