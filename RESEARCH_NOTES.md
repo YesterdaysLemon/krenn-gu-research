@@ -10973,7 +10973,53 @@ P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md
 explore_p5_h22_disjoint_mixed_star_modular.py
 ```
 
-The suggested continuation is symbolic linear algebra on the
-`14 x 8` mixed coefficient matrix: expose its kernel line by maximal
-minors, derive the observed marking equations over the component
-function field, and then factor a small mode-zero Fitting minor.
+### Generic weighted `H22` fibre on the disjoint mixed-star component
+
+The modular pattern above has now been promoted to an exact
+characteristic-zero theorem without repeating the broad elimination
+that timed out.
+
+For each weighted direction `D_01^r,D_23^r`, form the `14 x 8` matrix
+of mixed binary coefficients.  On `D_23^r`, seven selected `8 x 8`
+minors force
+
+```text
+t_1=t_2=t_3=0.
+```
+
+Two mode-zero one-marked minors, together with the two nonzero binary
+diagonals, then generate the unit ideal.
+
+On `D_01^r`, a different seven-minor ideal is zero-dimensional of
+vector-space dimension ten over `C(a,b,f,r)`.  Since the component
+equation is quadratic in `phi`, this is a degree-five marking scheme
+over the component field.  One `7 x 7` pivot is invertible on the
+whole scheme, so the selected minors define the exact rank-drop locus.
+The basis contains `t_1*t_2`; on `t_1=0`, two further factored
+relations give the complete cover
+
+```text
+t_2=0,
+t_1=t_3=0,
+t_1=L_3=L_2=0.
+```
+
+One- or two-minor ternary Fitting ideals are unit on all three charts.
+Thus the generic weighted `H22` fibre of the eighth component is empty.
+All eight currently certified pure-`P_4` component orbits are now
+generically closed for both `H31` and weighted `H22`.
+
+This remains a dense-open theorem.  Special parameter/slope/projective
+boundaries, component exhaustiveness, the complete `P_5 -> Delta_3`
+obstruction, and the global prize conjecture remain unresolved.
+
+```text
+P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h22_disjoint_mixed_star_component_generic_obstruction.py
+audit_p5_h22_disjoint_mixed_star_component_generic_obstruction.py
+```
+
+The suggested continuation is to classify the special
+parameter/slope/projective boundaries omitted by this function-field
+argument, then finish the exceptional mixed-star/triangle and lower
+pair-rank strata needed for component exhaustiveness.

@@ -11,8 +11,10 @@ component has no `H31` lift.  Thus all eight currently certified
 pure-component orbits have empty generic marked `H31` fibre.
 
 This does not close special parameter or projective boundary points,
-prove that the eight components are exhaustive, settle weighted
-`H22`, or resolve the global prize problem.
+prove that the eight components are exhaustive, or resolve the global
+prize problem.  The generic weighted `H22` fibre has since been closed
+in
+[`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 
 ## Component function field
 
@@ -165,12 +167,12 @@ or local-map tuple is enumerated.
 ## Honest frontier
 
 All eight certified pure-component orbits are now generically closed
-for `H31`.  What remains is:
+for `H31`; the companion theorem closes their generic weighted `H22`
+fibres as well.  What remains is:
 
 1. the special parameter/projective boundaries of the components not
    already closed in full;
-2. the weighted `H22` incidence of this eighth component; and
-3. component exhaustiveness, especially exceptional triangle,
+2. component exhaustiveness, especially exceptional triangle,
    rank-two-relation, and lower pair-rank strata.
 
 The global conjecture remains unresolved.

@@ -23,10 +23,11 @@ component orbits: seven fivefolds and one sixfold.
 This is not a classification.  A subsequent exact function-field
 theorem excludes the generic marked `H31` fibre:
 [`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
-The generic weighted `H22` incidence, the component's boundaries,
-component exhaustiveness, and the global prize problem remain open.
-Finite-field structure and the unfinished characteristic-zero route
-are recorded without a theorem claim in
+Its generic weighted `H22` incidence is now excluded as well:
+[`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+The component's boundaries, component exhaustiveness, and the global
+prize problem remain open.  The earlier finite-field structure and
+timed-out broad route remain as provenance in
 [`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md).
 
 ## Squarefree support geometry
@@ -263,11 +264,9 @@ boundary.
 
 The immediate exact targets are now:
 
-1. turn the small marking loci observed in the weighted `H22` working
-   note into exact function-field identities;
-2. classify its parameter/projective boundaries, including the
+1. classify its parameter/projective boundaries, including the
    special divisors omitted by the generic `H31` theorem;
-3. finish the remaining exceptional triangle, rank-two-relation, and
+2. finish the remaining exceptional triangle, rank-two-relation, and
    lower pair-rank strata to decide component exhaustiveness.
 
 The global prize conjecture remains unresolved.

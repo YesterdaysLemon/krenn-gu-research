@@ -2,13 +2,19 @@
 
 ## Status
 
-This is an exploratory handoff, not a theorem.
+This is a superseded exploratory handoff, not a theorem.  The
+determinantal route proposed below has now been completed over
+characteristic zero in
+[`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+The calculations here are retained as provenance for the modular
+pattern and the failed broad elimination.
 
 The eighth pure-`P_4` component is proved in
 [`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md),
 and its generic marked `H31` incidence is excluded in
 [`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
-Its generic weighted `H22` incidence remains open.
+Its generic weighted `H22` incidence is now closed on a dense open set
+by the theorem linked above.
 
 No computation described below proves a statement over `C`.  In
 particular, several direct characteristic-zero Groebner calculations
@@ -104,7 +110,7 @@ algebra on the `14 x 8` mixed coefficient matrix:
 
 That would turn the observed finite-field collapse into a short
 function-field argument and avoids a brute-force construction search.
-Until those identities are derived and independently replayed, the
-eighth component's weighted `H22` incidence remains open, as do special
-parameter/slope divisors, projective boundaries, component
-exhaustiveness, and the global prize conjecture.
+Those identities are now derived and independently replayed in the
+theorem package.  Special parameter/slope divisors, projective
+boundaries, component exhaustiveness, and the global prize conjecture
+remain open.

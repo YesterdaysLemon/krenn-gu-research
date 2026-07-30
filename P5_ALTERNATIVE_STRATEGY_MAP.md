@@ -1060,10 +1060,16 @@ extension:
 
 - [`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
 
-Its generic weighted `H22` incidence is open.  Special slope/parameter
-divisors and component boundaries remain, and the eight components are
-not known to be exhaustive.  The modular marking-locus pattern and
-the timed-out characteristic-zero route are recorded honestly here:
+Its generic weighted `H22` incidence is now empty.  The mixed-matrix
+Fitting locus is one marking line for `D_23^r` and an exact degree-five
+scheme for `D_01^r`; a three-chart factor cover and one- or two-minor
+ternary obstructions close every genuine binary direction:
+
+- [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
+
+Special slope/parameter divisors and component boundaries remain, and
+the eight components are not known to be exhaustive.  The earlier
+modular pattern and timed-out broad route remain as provenance:
 
 - [`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md)
 
@@ -1092,8 +1098,8 @@ marked-fibre level:
 
 1. close the parameter/projective boundaries of the three split-cubic
    components, the sixth component, and the six-dimensional component,
-   transport the new disjoint mixed-star component through `H22`,
-   close its special `H31` boundary,
+   close the disjoint mixed-star component's special `H31/H22`
+   boundaries,
    then classify the remaining mixed-orientation star/triangle and
    lower-pair-rank exceptional geometries;
 2. intersect the `H22` three-normal incidences with that classification,
