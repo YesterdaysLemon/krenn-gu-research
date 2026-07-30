@@ -10,9 +10,15 @@ P_5 -> Delta_3.
 ```
 
 It converts the first rank-drop consequences into nine finite marked
-incidence types, lying over six uncoloured multigraph types.  It does
-not yet exclude `q5_221`, `P_5 -> Delta_3`, or the
-arbitrary-order Krenn--Gu prize conjecture.
+incidence types, lying over six uncoloured multigraph types.  Subsequent
+obstruction theorems exclude all nine exact minimal types and every
+monotone cover, completing normalized `q5_221`.  The separate
+normalized `q4_211` branch, `P_5 -> Delta_3`, and the arbitrary-order
+Krenn--Gu prize conjecture remain open.  The monotone cover layer is
+reduced in
+[`P5_Q5_221_EXTRA_CONTAINMENT_REDUCTION.md`](P5_Q5_221_EXTRA_CONTAINMENT_REDUCTION.md).
+The later distinguished-normal multiplicity theorem strengthens the
+last lower bound below to `|D_2|=2`.
 
 ## Three embedded copies of `P_4`
 
@@ -107,6 +113,10 @@ normal points and four row-space planes in `P^4`.  There are at least
 six incidences, so some mode contains at least two of the three normals.
 If a mode contains all three, its row space is exactly
 `span(h_0,h_1,h_2)`.
+
+The matching upper bound `|D_2|<=2`, obtained from the squarefree
+apolarity of `T_0,T_1`, is proved in
+[`P5_Q5_221_DISTINGUISHED_NORMAL_MULTIPLICITY_THEOREM.md`](P5_Q5_221_DISTINGUISHED_NORMAL_MULTIPLICITY_THEOREM.md).
 
 ## Nine marked minimal incidence types
 
@@ -218,10 +228,11 @@ Equation (12) is an essential boundary gate.  If the intersection has
 dimension two, the residual map has rank one and the rank-at-least-two
 `P_3` classification cannot be applied.
 
-The next analytic target is therefore finite and explicit: for each of
-the nine marked types, classify the pair of residual tensors in (11),
-including the rank-one boundary in (12).  The residual source factors
-differ by the sign involutions
+The resulting analytic target was finite and explicit: for each of the
+nine marked types, classify the pair of residual tensors in (11),
+including the rank-one boundary in (12).  The later exact-minimal
+obstruction theorems complete that classification.  The residual source
+factors differ by the sign involutions
 
 ```text
 e_0+e_1  <->  e_1-e_0,

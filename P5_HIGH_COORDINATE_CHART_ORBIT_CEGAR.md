@@ -9,22 +9,56 @@ high-coordinate branches of a possible restriction
 P_5 -> Delta_3.
 ```
 
-It is not a completed high-coordinate cover.  The normalized `q5_311`
-branch has since been excluded analytically in
-[`P5_Q5_311_EXCLUSION_THEOREM.md`](P5_Q5_311_EXCLUSION_THEOREM.md).
-The computation has not been run to completion on `q5_221` or
-`q4_211`, does not prove the full `P_5` obstruction, and does not solve
-the arbitrary-order Krenn--Gu prize conjecture.
+It is not a completed high-coordinate cover.  Its original
+three-branch partition is not exhaustive: it omitted four-coordinate
+rows of multiplicity `3+1` or `2+2` whose fifth row is partial and
+supplies the missing target coordinate.  The computation is therefore
+historical infrastructure for the `q4_211`, `q5_311`, and `q5_221`
+subcatalogue, not a partition of every high-coordinate map.
 
-The `q5_221` branch now also has an analytic hyperplane-incidence
-reduction to nine singleton-marked minimal types, plus an exact
-paired-majority drop obstruction.  These are structural theorems, not a
-completed branch cover:
+The normalized `q5_311` and `q5_221` branches have since been excluded
+analytically in
+[`P5_Q5_311_EXCLUSION_THEOREM.md`](P5_Q5_311_EXCLUSION_THEOREM.md) and
+[`P5_Q5_221_FINAL_MONOTONE_BOUNDARY_OBSTRUCTION.md`](P5_Q5_221_FINAL_MONOTONE_BOUNDARY_OBSTRUCTION.md).
+The partial `q4_211` branch and its zero-row closure have also been
+excluded analytically in
+[`P5_Q4_211_EXCLUSION_THEOREM.md`](P5_Q4_211_EXCLUSION_THEOREM.md).
+The honest remaining high-coordinate frontier is the pair of partial
+families `H31,H22` in
+[`P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md`](P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md).
+This computation does not cover those families, prove the full `P_5`
+obstruction, or solve the arbitrary-order Krenn--Gu prize conjecture.
 
-- [`P5_Q5_221_HYPERPLANE_INCIDENCE_REDUCTION.md`](P5_Q5_221_HYPERPLANE_INCIDENCE_REDUCTION.md)
-- [`P5_Q5_221_PAIRED_MAJORITY_DROP_OBSTRUCTION.md`](P5_Q5_221_PAIRED_MAJORITY_DROP_OBSTRUCTION.md)
-- [`P5_Q5_221_MARKED_DOUBLE_ADJACENT_OBSTRUCTION.md`](P5_Q5_221_MARKED_DOUBLE_ADJACENT_OBSTRUCTION.md)
-- [`P5_Q5_221_MARKED_DOUBLE_DISJOINT_OBSTRUCTION.md`](P5_Q5_221_MARKED_DOUBLE_DISJOINT_OBSTRUCTION.md)
+The `q4_211` analysis used a chart-free simultaneous-pencil reduction.
+Its four remaining maps would have forced a `78 x 5` off-diagonal
+contraction matrix to have rank at most two; the known support-four
+family has rank four everywhere and cannot lift:
+
+- [`P5_Q4_211_SIMULTANEOUS_PENCIL_REDUCTION.md`](P5_Q4_211_SIMULTANEOUS_PENCIL_REDUCTION.md)
+
+The generic parallel incidence type is no longer independent: on
+`bc != 0` it always forces a third common incidence and can be
+reselected as adjacent.  The generic exact disjoint type is reduced by
+a conic-polarity argument to a common kernel and then excluded by
+kernel propagation.  Both the adjacent two-cross and one-cross
+boundaries are now excluded.  Subsequent theorems also exclude the
+three coordinate-parameter boundaries, completing that subbranch:
+
+- [`P5_Q4_211_PARALLEL_INCIDENCE_KERNEL_REDUCTION.md`](P5_Q4_211_PARALLEL_INCIDENCE_KERNEL_REDUCTION.md)
+- [`P5_Q4_211_ADJACENT_P4_PENCIL_REDUCTION.md`](P5_Q4_211_ADJACENT_P4_PENCIL_REDUCTION.md)
+- [`P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md`](P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md)
+- [`P5_Q4_211_MARKED_DELTA2_PAIR_IMAGE_OBSTRUCTION.md`](P5_Q4_211_MARKED_DELTA2_PAIR_IMAGE_OBSTRUCTION.md)
+- [`P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md`](P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md)
+- [`P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md`](P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md)
+- [`P5_Q4_211_ONE_CROSS_PENCIL_SATURATION_REDUCTION.md`](P5_Q4_211_ONE_CROSS_PENCIL_SATURATION_REDUCTION.md)
+- [`P5_Q4_211_ONE_CROSS_DIRECTION_CONIC_REDUCTION.md`](P5_Q4_211_ONE_CROSS_DIRECTION_CONIC_REDUCTION.md)
+- [`P5_Q4_211_ONE_CROSS_TWO_GATE_REDUCTION.md`](P5_Q4_211_ONE_CROSS_TWO_GATE_REDUCTION.md)
+- [`P5_Q4_211_ONE_CROSS_DIRECTION_PLANE_OBSTRUCTION.md`](P5_Q4_211_ONE_CROSS_DIRECTION_PLANE_OBSTRUCTION.md)
+- [`P5_Q4_211_ONE_CROSS_COMMON_KERNEL_OBSTRUCTION.md`](P5_Q4_211_ONE_CROSS_COMMON_KERNEL_OBSTRUCTION.md)
+- [`P5_Q4_211_DISJOINT_CONIC_POLARITY_REDUCTION.md`](P5_Q4_211_DISJOINT_CONIC_POLARITY_REDUCTION.md)
+- [`P5_Q4_211_DISJOINT_EXCLUSION_THEOREM.md`](P5_Q4_211_DISJOINT_EXCLUSION_THEOREM.md)
+- [`P5_Q4_211_GENERIC_EXCLUSION_THEOREM.md`](P5_Q4_211_GENERIC_EXCLUSION_THEOREM.md)
+- [`P5_Q4_211_EXCLUSION_THEOREM.md`](P5_Q4_211_EXCLUSION_THEOREM.md)
 
 ## From individual charts to chart orbits
 

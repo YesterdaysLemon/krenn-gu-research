@@ -17,10 +17,13 @@ whose normalized high-coordinate mode has source-row multiplicities
 ```
 
 Equivalently, the complete normalized `q5_311` branch is impossible.
-This closes one of the three high-coordinate branches left after the
-exact-three-coordinate `P_5` classification.  The normalized `q4_211`
-and `q5_221` branches remain open, as does `P_5 -> Delta_3` and the
-arbitrary-order Krenn--Gu prize conjecture.
+The proof in fact uses only two distinct singleton-supported target
+coordinates, and has since been extracted as the stronger
+[`P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md`](P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md).
+The normalized `q5_221` and partial `q4_211` branches were subsequently
+excluded as well.  One-partial `3+1` and `2+2` high-coordinate
+families, `P_5 -> Delta_3`, and the arbitrary-order Krenn--Gu prize
+conjecture remain open.
 
 ## Rank-drop reduction
 

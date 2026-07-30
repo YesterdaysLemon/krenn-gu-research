@@ -6471,8 +6471,8 @@ research_snapshots/2026-07-27-p5-tree-chart-cover/
 ### High-coordinate `P_5` chart cover in progress
 
 The remaining local-restriction branch has a mode with four or five
-coordinate rows.  Rank three leaves exactly three normalized mode-zero
-types:
+coordinate rows.  The chart driver at this checkpoint retained three
+normalized mode-zero types:
 
 ```text
 q4_211: one noncoordinate cell and singleton multiplicities 2,1,1
@@ -6480,9 +6480,11 @@ q5_311: five singleton cells with multiplicities 3,1,1
 q5_221: five singleton cells with multiplicities 2,2,1.
 ```
 
-They form a disjoint priority partition.  The active driver combines the
-6,495 exact local pair signatures with branch stabilizer lex leaders and
-pure-only gauge-chart certificates.
+They form a disjoint priority partition inside the subcatalogue handled
+by that driver.  A later audit found that they do not exhaust all
+high-coordinate signatures: partial `3+1` and `2+2` rows were omitted.
+The active driver combines the 6,495 exact local pair signatures with
+branch stabilizer lex leaders and pure-only gauge-chart certificates.
 
 The chart implication has been strengthened.  A coefficient permitted
 by the closure but not chosen as a gauge pivot may vanish, so exact
@@ -7033,13 +7035,13 @@ verify_p5_q5_221_marked_double_disjoint.py
 audit_p5_q5_221_marked_double_disjoint.py
 ```
 
-Five of the nine marked exact-six-incidence types are now closed.  The
-triangle, star, two marked paths, and all extra-containment strata
-remain open.
+At this checkpoint, five of the nine marked exact-six-incidence types
+were closed.  The triangle, star, two marked paths, and all
+extra-containment strata remained open.
 
-### Stopping boundary: triangle chirality and missed rank-one gates
+### Exact triangle type closed
 
-The first triangle sketch is not a theorem.  For
+For
 
 ```text
 D_0={A,B}, D_1={A,C}, D_2={B,C},
@@ -7047,18 +7049,3931 @@ D_0={A,B}, D_1={A,C}, D_2={B,C},
 
 double contraction by `h_2` leaves two complementary-support
 chiralities, not one symmetry class.  In the chirality with nonzero
-`Q_02` at `B` and `Q_12` at `C`, the two mode-`A` normal charts force
-nonzero `u_0` and `u_1` coefficients at `C` and `B`.  This makes `C`
-rank three on `J_01` and `B` rank three on `J_10`.
+`Q_02` at `B` and `Q_12` at `C`, the two mode-`A` plane normals have
+full three-coordinate support.  The nonzero decomposable-`P_3`
+classification forces the adjacent mode-`B` and mode-`C` normals to
+have the same full support.
 
-The naive contradiction still misses two rank-one gates:
+Carrying all of those nonzero coordinates forward removes the two
+apparent rank-one exceptions in the earlier draft.  Mode `C` has rank
+three on `J_01`, mode `B` has rank three on `J_10`, and every other map
+has residual rank at least two.  Hence both `Q_01` and `Q_10` must be
+zero, contradicting the local cross-scalar lemma that makes at least one
+nonzero.
+
+This exactly excludes the first triangle chirality over `C`.
+
+The opposite chirality uses the same cross-scalar pair but reverses the
+two nonzero repeated-`h_2` residuals.  At `B`, the only rank-one
+`Q_01` gate is supported on `h_2`, whose target image is colour one
+rather than the required colour zero.  Outside that gate, mode `C`
+has either rank three or a support-one normal.  Thus `Q_01=0`.
+Symmetrically, the only rank-one `Q_10` gate at `C` lands in colour zero
+rather than colour one; every other branch has a rank-three mode or
+support-one normal.  Thus `Q_10=0`, again contradicting the cross-scalar
+lemma.
+
+This closes the complete exact triangle type over `C`.  A primary
+symbolic replay and an independent `F_3/F_5` incidence audit pass.  Six
+of the nine exact minimal types were closed at this checkpoint.
 
 ```text
-U_B=span(h_0,h_2,u_1),
-U_C=span(h_1,h_2,u_0).
+P5_Q5_221_TRIANGLE_OBSTRUCTION.md
+verify_p5_q5_221_triangle_obstruction.py
+audit_p5_q5_221_triangle_obstruction.py
+P5_Q5_221_TRIANGLE_WORKING_NOTE.md
 ```
 
-A candidate bilinear-kernel argument may close their simultaneous
-boundary, but it requires a fresh audit.  The opposite chirality remains
-open.  The complete fail-closed checkpoint is in
-[`P5_Q5_221_TRIANGLE_WORKING_NOTE.md`](P5_Q5_221_TRIANGLE_WORKING_NOTE.md).
+### Exact star type closed
+
+For the exact star, the central row space is
+`span(h_0,h_1,h_2)`.  If `alpha_c` pulls back to `h_c`, its own-colour
+entry is zero.  The three `alpha_c` form a basis, so their
+zero-diagonal target-coordinate matrix has determinant
+
+```text
+q_10 q_21 q_02 + q_20 q_01 q_12 != 0.
+```
+
+Thus one of the two directed cross-residual cycles is entirely
+nonzero.  In the cycle `Q_20,Q_01,Q_12`, the `Q_01` normal-support
+conflict forces its colour-zero leaf to be rank one.  The `Q_12`
+support-two chart then fixes normals `(u_0,h_0,h_0)`, while `Q_20`
+forces the singleton-colour leaf to be rank one.  The resulting factor
+directions pin the only row components needed in the colour-two slice.
+
+For target colouring `(0,1,1,0)`, its coefficient factors as
+
+```text
+per(u_0,u_0 on e_0,e_1)
+per(h_1,h_1 on e_2,e_3)
+  = -4
+```
+
+times nonzero scalars.  A possible target-row shear cancels identically.
+This forbidden coefficient contradicts the pure colour-two `P_4`
+identity.  Swapping the majority colours excludes the other directed
+cycle.
+
+The symbolic verifier and an independent exact polynomial-permutation
+audit pass.  At this checkpoint, seven of the nine exact minimal types
+were closed; the two marked paths and all extra-containment strata
+remained open.
+
+```text
+P5_Q5_221_STAR_OBSTRUCTION.md
+verify_p5_q5_221_star_obstruction.py
+audit_p5_q5_221_star_obstruction.py
+```
+
+### Both exact marked paths closed
+
+The marked-end path is
+
+```text
+D_0={C,D}, D_1={B,D}, D_2={A,C}.
+```
+
+At `D`, a nonzero `Q_01` forces the mode-`C` rank-one gate and hence a
+nonzero `Q_02`; a nonzero `Q_10` forces the mode-`B` rank-one gate.  In
+the `Q_02` branch, either that second gate or the `AC|BD`
+complement-pairing bound makes the `B,D` colour-two hyperplanes equal
+to `u_1^perp`.  The `Q_02` sign chart then fixes normals
+`(h_1,u_1,u_1)` and factor directions `(u_0,h_1,h_1)`.  A required
+all-colour-one coefficient and the forbidden target colouring
+`(2,1,1,1)` of `T_2` are nonzero multiples of the same two-row
+permanent, a contradiction.
+
+If `Q_02=0`, then `Q_01=0` and the opposite residuals `Q_10,Q_20` are
+nonzero.  The vanished cross scalars pin
+
+```text
+L_C^* epsilon_1 in C^*h_2,
+L_D^* epsilon_2 in C^*h_1.
+```
+
+If `Q_20` has rank one at `A`, the required all-colour-one coefficient
+of `T_1` contains `per(u_0,h_0)=0`.  Otherwise the `Q_20` sign chart
+fixes the same normal pattern `(h_1,u_1,u_1)`.  The required
+all-colour-one coefficient is `-4cs`, while the forbidden colouring
+`(1,0,1,0)` is `4Ccs`; required nonvanishing makes the forbidden
+coefficient nonzero.  This closes the marked-end path over `C`.
+
+The marked-middle path is
+
+```text
+D_0={B,D}, D_1={A,C}, D_2={C,D}.
+```
+
+Double contraction by `h_2` at `C,D` makes their two target covectors
+have complementary singleton supports.  Thus either `Q_12,Q_02` are
+both nonzero or `Q_21,Q_20` are both nonzero.
+
+Let `K_i=ker L_i`.  A rank-two residual plane normal is the projective
+line `K_i intersect J_cd`.  Because all four relevant residual spaces
+lie in `h_2^perp`, exact absence of `h_2` at `A,B` makes the two
+overlapping residual normal lines coincide at each mode.
+
+In the first chirality, the common lines lie in
+`J_12 intersect J_02=span(u_0,u_1)`.  Together with `h_0 in U_D`,
+all three `Q_12` normals have equal first two coordinates.  A
+full-support `P_3` chart needs three distinct vertices of a sign
+rectangle but only two satisfy that equality; no support-two boundary
+works either.  In the second chirality,
+`J_21 intersect J_20=span(h_0,h_1)`.  The incidences at `A,B` force
+the common lines to `h_0,h_1`, so the `Q_21` normal at `B` has support
+one.  Both chiralities are impossible.
+
+The two primary symbolic replays and two independent audits pass.  The
+marked-middle audit enumerates only the 42 abstract oriented `P_3`
+sign triples, not ambient row spaces; the marked-end audit checks its
+small pair-image lemma over `F_3,F_5` and independently expands the
+decisive coefficients.
+
+```text
+P5_Q5_221_MARKED_END_PATH_OBSTRUCTION.md
+verify_p5_q5_221_marked_end_path.py
+audit_p5_q5_221_marked_end_path.py
+
+P5_Q5_221_MARKED_MIDDLE_PATH_OBSTRUCTION.md
+verify_p5_q5_221_marked_middle_path.py
+audit_p5_q5_221_marked_middle_path.py
+```
+
+All nine exact minimal marked incidence types are now excluded over
+`C`.  This does not yet exclude normalized `q5_221`: the exact
+theorems assume no unselected normal containments, and every
+extra-containment stratum still needs a sound lifting argument.  The
+full `P_5` restriction and the global conjecture remain open.
+
+### Extra-containment cover reduction
+
+The remaining incidence poset does not require a separate list at every
+incidence count from seven through twelve.  From any pattern with
+`|D_c|>=2` and at least seven total incidences, choose two incidences per
+colour and then one additional incidence.  This produces a
+seven-incidence subpattern with row-size multiset `{3,2,2}`.
+
+Quotienting these cover patterns by the four mode permutations and the
+swap of majority colours zero and one gives exactly fourteen marked
+orbits.  A separate construction starts from the nine minimal marked
+edge orbits, adds one incidence, and obtains the same fourteen covers.
+Their mode-degree profiles are
+
+```text
+(3,3,1,0): 2
+(3,2,2,0): 2
+(3,2,1,1): 5
+(2,2,2,1): 5.
+```
+
+The first nine covers have at least one all-normal mode, hence a fixed
+kernel `span(u_0,u_1)`.  The final five have no fixed kernel; their
+three double-incidence modes lie on the pairwise Schubert divisors
+`h_c^perp intersect h_d^perp`.
+
+This reduces complete normalized `q5_221` exclusion to fourteen
+monotone obstruction theorems.  “Monotone” is essential: each theorem
+must allow every undisplayed containment, so the already-proved exact
+six-incidence results cannot simply be cited.
+
+The triangle proof does lift one step without a new case split.  Its
+mode-`D` rank gates use only
+
+```text
+h_0 notin U_D,  h_1 notin U_D;
+```
+
+they do not use `h_2 notin U_D`.  Therefore the same proof excludes
+
+```text
+D_0={A,B}, D_1={A,C}, D_2={B,C,D}
+```
+
+with no other containments.  Finite-field audits over `F_3,F_5`
+confirm that adding exactly `h_2` at `D` leaves the two direct residual
+ranks equal to two and both cross residual ranks at least two.
+
+This closes the exact open stratum of cover `#4` in the fourteen-orbit
+table.  It does not close that cover monotonically: adding `h_0` or
+`h_1` at `D` can create a new cross-residual rank-one gate.
+
+The majority-singleton triangle cover closes too.  By majority symmetry
+take `h_0 in U_D` and exclude `h_1,h_2`.  The only new cross escape is
+a rank-one `Q_01` gate, which has the form
+
+```text
+U_D=span(h_0,u_1,a u_0+b h_1+c h_2).
+```
+
+Its `Q_02` plane normal is `(b,-a,a)`, while its `J_12`
+determinant is `-4a`.  In the first chirality, full `Q_02` support
+forces `a,b!=0`, so `Q_12` has rank three.  In the other chirality,
+rank two on `J_12` forces `a=0`, leaving the forbidden support-one
+`Q_02` normal `u_0`.  Thus exact cover `#12` is excluded as well.
+
+The two marked triangle-plus-singleton open strata are now closed.
+Their monotone closures remain open because an eighth incidence changes
+the rank-one gate analysis.
+
+### Repeated-majority-pair seven-incidence obstruction
+
+Exact cover `#8` has two modes `P,Q` containing `h_0,h_1`, a mode `R`
+containing `h_1,h_2`, and a mode `S` containing only `h_2`.  Double
+contraction at `P,Q` produces the two bilinear channels
+
+```text
+Sym(u_0,h_2) -> x_P x_Q e_0 tensor e_0,
+Sym(u_1,h_2) -> y_P y_Q e_1 tensor e_1.
+```
+
+The rank-one sum lemma for `a tensor z'+z tensor a'` and exact absence
+of the undisplayed normals force all four cross scalars to be nonzero.
+The `Q_01,Q_10,Q_12` residual gates then give
+
+```text
+U_P=U_Q=span(h_0,h_1,u_1),
+U_R=span(h_1,h_2,u_0),
+n_S,12=h_0,
+```
+
+together with the target factor pins needed for a simultaneous
+four-map normal form.  In that chart, direct polarization gives
+
+```text
+T_0[0000] = 4b(p_0q_0-1),
+T_0[0020] = 4f(p_0q_0-1),
+T_2[2222] = 4Cfp_2q_2.
+```
+
+The first coefficient is required nonzero and the second forbidden, so
+`f=0`; the third required coefficient then vanishes.  This excludes
+the exact seven-incidence stratum without enumerating row spaces or
+maps.  Its monotone closure remains open.
+
+```text
+P5_Q5_221_REPEATED_MAJORITY_PAIR_COVER_OBSTRUCTION.md
+verify_p5_q5_221_repeated_majority_pair_cover.py
+audit_p5_q5_221_repeated_majority_pair_cover.py
+```
+
+### Distinguished-normal multiplicity is exactly two
+
+The singleton-colour normal admits a monotone upper bound.  Suppose
+three modes `A,B,C` contain `h_2`.  Double contraction of
+
+```text
+T_0=Sym(u_0,e_2,e_3,h_2)
+```
+
+at `A,B` by their `h_2` pullbacks is zero, so one pullback has zero
+target-zero coordinate.  Its own target-two coordinate is already
+zero; hence it is a nonzero multiple of `epsilon_1`.  Contracting
+
+```text
+T_1=Sym(e_0,e_1,u_1,h_2)
+```
+
+at that mode leaves a nonzero pure `Q_12` through the other three
+modes.  At the two remaining `h_2` modes, apolarity to the `Q_12`
+source space and the own-colour equation force their target-zero rows
+to be multiples of `h_2`.  The required `T_0[0000]` coefficient then
+contains two `h_2` contractions and vanishes.
+
+Together with the earlier rank-drop lower bound, this proves
+
+```text
+|D_2|=2
+```
+
+without any absence assumption on `h_0,h_1`.  It monotonically excludes
+cover orbits `#0--#4,#9`; the remaining monotone frontier is
+`#5,#6,#7,#8,#10,#11,#12,#13`.  The primary verifier expands the
+polarized tensors, while the independent audit differentiates the
+squarefree polynomial representatives.  Neither enumerates maps or
+row spaces.
+
+```text
+P5_Q5_221_DISTINGUISHED_NORMAL_MULTIPLICITY_THEOREM.md
+verify_p5_q5_221_distinguished_normal_multiplicity.py
+audit_p5_q5_221_distinguished_normal_multiplicity.py
+```
+
+### Final exact no-fixed-kernel cover
+
+Cover `#13` has two modes containing `h_1,h_2`, one containing
+`h_0,h_1`, and one containing only `h_0`.  Double `h_2` contraction of
+`T_1` orients the repeated pair and forces a nonzero pure `Q_02`.
+All three residual ranks are two.  Because the first two residual
+planes contain `h_1`, their normals have equal last two coordinates.
+The `P_3` classification leaves a support-two and a full-support
+stratum.
+
+In support two, the factor directions are `h_1,h_1,u_0`.  A nonzero
+`Q_01` then forces a rank-one gate at the singleton mode.  The required
+target-two rows lie in
+
+```text
+C h_1,  span(u_0,h_0),  span(u_0,h_0),  span(u_1,h_0).
+```
+
+Their `T_2` coefficient is zero: the `h_0` component has the wrong
+`3+1` block degree, while the `u_1` component contains the zero
+bilinear permanent `Perm_2(h_1,u_1)`.
+
+In full support, the active and inactive rows at the two repeated-pair
+modes differ by nonzero multiples of `h_1`.  Three mixed coefficients
+and the required pure coefficient form a four-corner rectangle.  Its
+alternating difference is
+
+```text
+T_2(h_1,h_1,h_1,S_2)=0,
+```
+
+so the supposedly forbidden fourth corner equals the required nonzero
+corner.  This closes the last exact no-fixed-kernel cover without
+searching maps or row spaces.  Its monotone boundary remains open.
+
+```text
+P5_Q5_221_COVER_13_OBSTRUCTION.md
+verify_p5_q5_221_cover_13.py
+audit_p5_q5_221_cover_13.py
+```
+
+### Monotone two-all-normal obstruction
+
+The complementary-support orientation of the two `h_2` pullbacks
+closes cover `#5` monotonically.  If both distinguished modes are
+all-normal, contracting them leaves three nonzero bilinear tensors
+through the other two modes:
+
+```text
+Sym(u_0,h_1) -> e_0 tensor e_0,
+Sym(h_0,u_1) -> e_1 tensor e_1,
+Sym(h_0,h_1) -> e_2 tensor e_2.
+```
+
+Each rank-one two-summand tensor forces its source pair to become
+dependent at one endpoint.  The three dependency edges are
+
+```text
+{a,d}, {b,c}, {b,d}.
+```
+
+Colouring them by the two endpoints forces one endpoint to receive two
+edges.  Any two of these edges leave at most two connected components
+among `a,b,c,d`, so that endpoint has image rank at most two.  But the
+two non-distinguished modes avoid `h_2` and therefore have rank three
+on `H_2`.  This contradiction allows arbitrary additional majority
+normal containments and hence proves the whole monotone cover.
+
+```text
+P5_Q5_221_TWO_ALL_NORMAL_MODES_OBSTRUCTION.md
+verify_p5_q5_221_two_all_normal_modes.py
+audit_p5_q5_221_two_all_normal_modes.py
+```
+
+### Monotone all-normal-partner obstruction
+
+Covers `#6,#11` have one all-normal `h_2` mode and a second `h_2`
+mode containing `h_1`.  The complementary target support of the two
+`h_2` pullbacks gives two orientations.  In the first, the nonzero
+`Q_02` sign chart closes by the same block-apolar dichotomy as cover
+`#13`.
+
+The second orientation requires a separate argument.  A preliminary
+draft incorrectly claimed that the all-normal inverse forced `Q_21`.
+Writing the full zero-diagonal pullback matrix exposes the correct
+directed cycle
+
+```text
+Q_20 -> e_2^3,
+Q_01 -> e_0^3,
+Q_12 -> e_1^3.
+```
+
+If `Q_20` has rank two at the partner mode, its support-two sign chart
+and the rank-three `Q_01` gate force the `Q_20` and `Q_01` factor lines
+at the third `h_1` mode to coincide.  If it has rank one, contracting
+at that mode leaves the two nondegenerate bilinear pairs
+
+```text
+Sym(h_0,h_1), Sym(u_0,u_1).
+```
+
+Their dependency endpoints must be opposite because both remaining
+maps have rank three on `H_2`.  The rank-one `Q_01` gate then makes its
+factor line coincide with one of those two bilinear factor lines.
+Either branch asks one local line to map to two distinct target
+colours, a contradiction.
+
+The primary verifier reconstructs the zero-diagonal determinant, both
+orientation-I strata, the support-two `Q_20` chart, and every bilinear
+factorization.  The independent audit differentiates the squarefree
+polynomials and checks the factor-line alternatives separately.  No
+ambient maps or row spaces are enumerated.  Thus covers `#6,#11` are
+closed monotonically, leaving
+
+```text
+#7,#8,#10,#12,#13.
+```
+
+```text
+P5_Q5_221_H1_PARTNER_ALL_NORMAL_OBSTRUCTION.md
+verify_p5_q5_221_h1_partner_all_normal.py
+audit_p5_q5_221_h1_partner_all_normal.py
+```
+
+### Remaining fixed-kernel covers closed
+
+The same directed-cycle viewpoint closes covers `#7,#10`
+monotonically.  For `#7`, one orientation forces the support-two
+`Q_12` chart
+
+```text
+normals: u_0,h_0,h_0,
+factors: u_1,u_0,u_0.
+```
+
+A rank-one `Q_01` contraction then makes its factor at the third
+majority mode equal to the same `u_0` line, despite a different target
+colour.  In the opposite orientation, the `Q_02` chart makes two
+`Q_21` restrictions invertible.  A nonzero directional derivative of
+a squarefree cubic has matrix rank at least two, so it cannot become a
+pure product through those maps.
+
+For `#10`, the `Q_20` rank-one branch gives a support-one `Q_01`
+normal, while its rank-two branch makes the other two `Q_01` maps
+invertible.  The opposite orientation forces a `Q_20` residual whose
+three kernel normals all satisfy the same coordinate equality; a valid
+`P_3` sign chart has too few vertices in that slice.
+
+```text
+P5_Q5_221_REMAINING_FIXED_KERNEL_OBSTRUCTION.md
+verify_p5_q5_221_remaining_fixed_kernel.py
+audit_p5_q5_221_remaining_fixed_kernel.py
+```
+
+### Complete normalized `q5_221` exclusion
+
+With eleven cover orbits closed monotonically, a fresh incidence-poset
+audit shows that strict extensions of exact covers `#8,#12,#13` leave
+only two eighth-incidence orbits:
+
+```text
+0011 1111 1100
+0111 1011 1100.
+```
+
+Every ninth-incidence extension already contains one of the eleven
+monotone covers.  In the repeated-pair boundary, a forced `Q_02`
+residual has rank profile `222`, but all three kernel normals lie in
+the common-coordinate slice, impossible in either the support-two or
+full-support `P_3` sign chart.
+
+The four-cycle boundary has two orientations.  One gives the same
+`Q_02` contradiction.  In the other, independent `h_0` and `h_1`
+cross pullbacks double-contract
+
+```text
+T_2=Sym(e_0,e_1,e_2,e_3)
+```
+
+to `Sym(h_0,h_1)` through two modes containing both covectors.  Both
+maps are injective on `span(h_0,h_1)`, so the bilinear rank remains two
+and cannot equal the required nonzero pure target product.
+
+Together with the nine exact-six and fourteen cover-layer results,
+this excludes the complete normalized `q5_221` branch over `C`.
+Primary symbolic and independent apolar/projective audits pass.  The
+separate normalized `q4_211` branch, the full `P_5 -> Delta_3`
+restriction, and the global conjecture remain open.
+
+```text
+P5_Q5_221_FINAL_MONOTONE_BOUNDARY_OBSTRUCTION.md
+verify_p5_q5_221_final_monotone_boundary.py
+audit_p5_q5_221_final_monotone_boundary.py
+```
+
+```text
+P5_Q5_221_EXTRA_CONTAINMENT_REDUCTION.md
+verify_p5_q5_221_extra_containment_reduction.py
+audit_p5_q5_221_extra_containment_reduction.py
+```
+
+### Normalized `q4_211` as a simultaneous diagonal pencil
+
+The then-last branch inside the original three-type high-coordinate
+partition has a chart-free deformation-theoretic reduction.  Normalize
+the distinguished local map so its target-coordinate pullbacks are
+
+```text
+u_0=(a,1,1,0,0),
+u_1=(b,0,0,1,0),
+u_2=(c,0,0,0,1),
+```
+
+with at least two of `a,b,c` nonzero.  The four remaining maps must send
+these three contractions to the three independent pure target tensors.
+Consequently they diagonalize the entire three-plane
+`span(u_0,u_1,u_2)`.
+
+Projecting the contraction map away from the three diagonal target
+words gives a `78 x 5` matrix.  A `q4_211` solution forces its kernel to
+contain the displayed three-plane, hence
+
+```text
+off-diagonal rank <= 2,
+diagonal rank on the kernel >= 3.
+```
+
+On the source-coordinate-zero slice, this becomes the projective
+support-four pencil
+
+```text
+a t_0+b t_1+c t_2=0.
+```
+
+For `abc != 0`, its coordinate boundary is one support-two and two
+support-three contractions mapping to the three `Delta_2` boundaries.
+The two singleton-colour contractions are embedded `P_4` tensors with
+normals
+
+```text
+h_1=(b,0,0,-1,0),
+h_2=(c,0,0,0,-1),
+```
+
+so their rank drops select two edges on four modes: parallel, adjacent,
+or disjoint.  If `a=0`, the doubled-colour contraction is a third
+embedded `P_4`; if `a!=0`, it is `a b q` with ternary quadratic
+determinant `2a`.
+
+The known positive support-four construction does not lift.  Its
+off-diagonal matrix has exact rank four, kernel
+`span(1,1,1,1,0)`, and diagonal image `(12,12,12)`.  Nineteen
+`4 x 4` minors and an exact two-variable elimination prove rank four
+at every point of the published two-parameter family.  The primary
+characteristic-zero verifier and independent `F_5/F_7` audit pass.
+
+This is a structural checkpoint, not an exclusion of `q4_211`.
+The remaining target is the exceptional rank-at-most-two
+determinantal locus coupled to the two `P_4` incidence edges.
+
+```text
+P5_Q4_211_SIMULTANEOUS_PENCIL_REDUCTION.md
+verify_p5_q4_211_simultaneous_pencil.py
+audit_p5_q4_211_simultaneous_pencil.py
+```
+
+### Generic parallel `q4_211` incidence as a diagonal pencil
+
+Assume `bc != 0` and two remaining modes `A,B` contain both singleton
+normals
+
+```text
+h_1=(b,0,0,-1,0), h_2=(c,0,0,0,-1).
+```
+
+If the pullbacks of these normals at `i=A,B` are
+
+```text
+x_i=(r_i,0,q_i), y_i=(s_i,p_i,0),
+```
+
+then exact double contraction identifies the common complementary
+bilinear residual
+
+```text
+G=(L_C tensor L_D) Sym(e_1,e_2)
+```
+
+with `p_Ap_B e_1^2` and `q_Aq_B e_2^2`, up to nonzero
+scalars.  Hence `G` is zero or a pure tensor on exactly one singleton
+line.
+
+Put `s=e_1+e_2`, `d=e_1-e_2`, and
+`X=span(e_0,e_3,e_4)`.  Three contractions of the doubled colour give
+
+```text
+L_C(s) tensor L_D(v)+L_C(v) tensor L_D(s)
+ in span(e_0^2,G) for every v in X.
+```
+
+This is a diagonal matrix-pencil condition.  Each map has rank three,
+so its image on `span(s)+X` has dimension at least two.  If both
+`L_C(s),L_D(s)` are nonzero, the pencil must contain a rank-two
+diagonal; its row and column spaces force both restricted map images
+into the same target two-plane.  The identity
+
+```text
+G=(L_C(s) tensor L_D(s)-L_C(d) tensor L_D(d))/2
+```
+
+then contradicts rank three.  Exactly one zero gives an impossible
+two-dimensional fixed-factor subspace of a diagonal plane.  Therefore
+
+```text
+L_C(s)=L_D(s)=0.
+```
+
+If `G=0`, one complementary map also kills `d`, so its kernel is
+`span(e_1,e_2)` and its row space contains both normals.  This creates
+a third common incidence and reduces to the adjacent extra-containment
+type.  If `G != 0`, both restrictions to `span(e_1,e_2)` instead have
+the common kernel `span(s)` and the same singleton target image.
+
+The latter apparent exception is impossible.  Suppose for example
+that `G` lies on the target `e_1^2` line.  Quotienting the complementary
+modes by `e_1` in `u_2 contract P_5` forces the original common modes
+to map `span(e_1,e_2)` onto `e_2`.  Quotienting those modes by `e_2`
+then gives two rank-two maps on `X` with the same kernel
+
+```text
+span(e_0+b e_3+c e_4).
+```
+
+The same `u_2` contraction would require the quotient image of
+`Sym(e_3,e_0+c e_4)` to vanish.  Modulo the common kernel it is
+`-2b e_3^2`, nonzero because `b != 0`.  The colour-swapped residual is
+`-2c e_4^2`.  Thus every parallel pattern on `bc != 0` has a third
+common incidence and can be reselected as adjacent.  The boundaries
+`b=0`, `c=0`, and the adjacent and disjoint incidence types remain
+open.
+
+```text
+P5_Q4_211_PARALLEL_INCIDENCE_KERNEL_REDUCTION.md
+verify_p5_q4_211_parallel_incidence.py
+audit_p5_q4_211_parallel_incidence.py
+```
+
+### Adjacent `q4_211` incidence as a marked `P_4` pencil
+
+Let a mode `A` contain both `h_1,h_2`, with target pullbacks
+
+```text
+x_A=(r,0,q), y_A=(t,p,0).
+```
+
+They are independent, so `(p,q)!=(0,0)`.  Quotient the target by their
+common annihilator line.  The induced map kills
+`E=span(e_1,e_2)` and has rank two on
+`X=span(e_0,e_3,e_4)`, with kernel
+
+```text
+span(e_0+b e_3+c e_4).
+```
+
+For
+
+```text
+w_+=e_0+b e_3-c e_4,
+w_-=e_0-b e_3+c e_4,
+```
+
+the determinant of the three `X`-vectors `k,w_+,w_-` is `-4bc`.
+Thus the quotient maps `span(w_+,w_-)` isomorphically.  Applied to
+
+```text
+R=Sym(e_1,e_2,w_+,w_-),
+```
+
+the four maps give
+
+```text
+q bar L_A(w_+) tensor e_2^3
++p bar L_A(w_-) tensor e_1^3.
+```
+
+If exactly one scalar is nonzero, this is a nonzero pure `P_4` image.
+The order-four rank-drop theorem forces another map to have rank two on
+`H=span(e_1,e_2,w_+,w_-)`, equivalently to contain its normal
+
+```text
+n=(0,0,0,c,b).
+```
+
+If both scalars are nonzero, the image is `Delta_2`.  Since `P_4` has
+exact subrank two, this is a sharp marked boundary, not a contradiction.
+
+```text
+P5_Q4_211_ADJACENT_P4_PENCIL_REDUCTION.md
+verify_p5_q4_211_adjacent_p4_pencil.py
+audit_p5_q4_211_adjacent_p4_pencil.py
+```
+
+### Marked `P_4 -> Delta_2` slice classification and obstruction
+
+Fix the common-mode row plane
+
+```text
+U_0=span(e_2^*,e_3^*)
+```
+
+in the basis `(e_1,e_2,w_+,w_-)`.  A marked `Delta_2` restriction is
+equivalent to two coordinate-deleted `P_3` restrictions, one supported
+only at `alpha_1 alpha_2 alpha_3` and the other only at
+`beta_1 beta_2 beta_3`.
+
+If either slice has a rank-one local map, its annihilating singleton row
+is `e_2^*` or `e_3^*` modulo the normal
+`n=(0,0,0,c,b)`.  Otherwise the two nonzero decomposable-`P_3` sign
+charts are compatible only when each uses the coordinate omitted by
+the other as its common coordinate.  Up to symmetries their rows are
+
+```text
+alpha_1=(0,1,T,-B)       beta_1=(1,0,0,-A)
+alpha_2=(1,0,0, A)       beta_2=(0,1,-T,B)
+alpha_3=(1,0,0, A)       beta_3=(B,A,-AT,0),
+```
+
+with `AT != 0`.  The two diagonal coefficients are `2A,-2AT`; all
+fourteen mixed coefficients vanish.
+
+This family is incompatible with adjacent q4 incidence.  Assign its
+three planes in any order to the `h_1` mode, `h_2` mode, and remaining
+mode.  Adding `e_3^*` and `e_2^*` at the first two modes makes their
+pair image the full six-space.  The common quotient plane paired with
+the third marked plane has dimension four.  Complement pairing
+therefore forces the `2|2` flattening rank to be at least
+
+```text
+6+4-6=4,
+```
+
+contradicting `rank(Delta_2)=2`.  Hence the generic adjacent boundary
+is confined to a row space containing `n` or a singleton target row in
+
+```text
+C h_1+C n or C h_2+C n.
+```
+
+```text
+P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md
+verify_p4_marked_delta2_slice_classification.py
+audit_p4_marked_delta2_slice_classification.py
+
+P5_Q4_211_MARKED_DELTA2_PAIR_IMAGE_OBSTRUCTION.md
+verify_p5_q4_211_marked_delta2_pair_image.py
+audit_p5_q4_211_marked_delta2_pair_image.py
+```
+
+### Alternating-gate classification and ambient obstruction
+
+The residual rank-one marked boundary is also exact.  A gate in one
+coordinate-deleted pure `P_3` slice forces a gate in the other slice.
+There is exactly one gate of each kind and they occur at distinct
+modes.  Normalize them as
+
+```text
+beta_1=e_2^*,   alpha_2=e_3^*.
+```
+
+Writing the shared-coordinate directions as `(p,q)` and `(r,t)`, put
+
+```text
+lambda=pt+qr != 0,   Delta=pt-qr.
+```
+
+The fourteen mixed vanishings reduce to only four equations:
+
+```text
+lambda y_j-Delta z_j=0,
+-lambda x_j-Delta d_j=0,   j=2,3.
+```
+
+For `Delta != 0` these give one transverse normal form.  For
+`Delta=0`, nonvanishing forces the directions proportional with
+`pq != 0`, and the equations give a tangent normal form.  Thus the
+gate boundary is a two-stratum orbit classification rather than an
+ambient search.
+
+The full third-colour lift closes both strata.  In the transverse
+stratum the three one-mode slice matrices have rank four, with witness
+minors
+
+```text
+-Delta^4 lambda^3,
+-Delta^4 lambda^3,
+-Delta^2 lambda.
+```
+
+All three third-colour rows therefore vanish on
+`H=span(e_1,e_2,w_+,w_-)` and are nonzero multiples of
+`n=(0,0,0,c,b)`.  Triple contraction by `n` is zero on `P_5` but leaves
+the nonzero doubled-colour diagonal term on the target.
+
+In the tangent stratum the slice ranks are `4,4,2`; the third kernel is
+`span(e_2^*,e_3^*)`.  The first two third-colour rows are multiples of
+`n`, so their double contraction exposes the nonzero `P_3` on
+`span(e_0,e_1,e_2)`.  The tangent marked rows have independent
+`e_1,e_2` projections of determinant `-2pq`.  The decomposable-`P_3`
+rank and common-support theorem then contradicts both possible
+singleton-incidence placements.
+
+Consequently the whole adjacent branch with two nonzero cross
+residuals is empty on `bc != 0`.  The only remaining adjacent outcome
+is the one-cross case, where another ambient row space actually
+contains `n`.
+
+```text
+P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md
+verify_p4_marked_delta2_alternating_gate.py
+audit_p4_marked_delta2_alternating_gate.py
+
+P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md
+verify_p5_q4_211_alternating_gate_obstruction.py
+audit_p5_q4_211_alternating_gate_obstruction.py
+```
+
+### One-cross normal-pencil saturation
+
+In the remaining adjacent orientation `q != 0,p=0`, the common mode
+pulls `h_2` back from target colour zero.  The other three maps satisfy
+simultaneously
+
+```text
+P_3(e_1,e_2,w_-) -> nonzero e_2^3,
+P_3(e_1,e_2,w_+) -> 0.
+```
+
+The zero-`P_3` theorem forces a rank-one local restriction: the
+all-rank-two alternative would kill `e_1`, `e_2`, or `w_+`; the first
+two kill the nonzero residual and the last contradicts
+`h_2(w_+)=2c`.  Hence one remaining row space contains the whole
+opposite pencil `span(h_1,n)`.  Colour interchange forces
+`span(h_2,n)` in the other orientation.
+
+The fourth normal has a fixed target colour.  Put
+
+```text
+m=c u_1-b u_2=(0,0,0,c,-b).
+```
+
+Since `(m,n) contract P_5=0`, independence of the two singleton target
+cubes forces every target covector pulling back to `n` to be a
+multiple of `e_0^*`.
+
+The nonzero residual gives a second pencil.  Unless a mode contains
+its whole normal plane or the common mode kills `e_1+e_2`, its three
+rank-two intersections are projective lines.  Polarizing the
+permanent on `span(h_2,n)` gives
+
+```text
+Perm_3(Ah_2+Bn)^3=6ABc^2(-A+bB).
+```
+
+The known lines `h_2,n` force the third line to the third root
+`b h_2+n=c u_1`.  The colour-swapped cubic similarly forces
+`c h_1+n=b u_2`.  Thus the one-cross branch is reduced to mandatory
+opposite-pencil incidence plus explicit double-normal, common-kernel,
+or rigid three-root boundaries.
+
+```text
+P5_Q4_211_ONE_CROSS_PENCIL_SATURATION_REDUCTION.md
+verify_p5_q4_211_one_cross_pencil_saturation.py
+audit_p5_q4_211_one_cross_pencil_saturation.py
+```
+
+### One-cross direction conic and four-gate core
+
+The mandatory opposite-pencil mode and the common mode both pull their
+new normals from target colour zero.  Contracting them with `u_0`
+exposes the same nondegenerate ternary quadratic used in the disjoint
+polarity theorem.  Unless one remaining row space contains the whole
+direction plane `span(u_1,u_2)`, the two restrictions have rank two
+and polar kernels.
+
+Polarizing the direction pencil gives
+
+```text
+Perm_3(h_2,Au_1+Bu_2,Cu_1+Du_2)=-2bAC,
+Perm_3(n,Au_1+Bu_2,Cu_1+Du_2)
+ =2(Ab+Bc)(Cb+Dc).
+```
+
+Away from the two common-kernel lines, the `q` orientation therefore
+forces direction lines `{u_2,c u_1-bu_2}`; the `p` orientation forces
+`{u_1,c u_1-bu_2}`.  Combining this with the normal-pencil cubic
+eliminates the free polar core: the unselected mode would contain both
+`u_1` and `c u_1-bu_2` (or both `u_2` and that line), forcing the full
+direction plane.  The adjacent one-cross branch is now confined to a
+second common singleton-normal mode, a double-normal plane, the full
+direction plane, or a common `e_1+e_2` kernel.
+
+```text
+P5_Q4_211_ONE_CROSS_DIRECTION_CONIC_REDUCTION.md
+verify_p5_q4_211_one_cross_direction_conic.py
+audit_p5_q4_211_one_cross_direction_conic.py
+```
+
+### Exact disjoint `q4_211` incidence as a conic polarity
+
+Assume `abc != 0` and the exact disjoint containment pattern
+
+```text
+h_1 in R_A,R_B only,
+h_2 in R_C,R_D only.
+```
+
+Put
+
+```text
+s=e_1+e_2,
+d=e_1-e_2,
+w=e_0-b e_3-c e_4,
+H=span(s,d,w).
+```
+
+The mixed contraction
+
+```text
+Q=(u_0,h_1,h_2) contract P_5
+```
+
+is represented on `H`, up to scale, by
+
+```text
+M=[[a/2,0,1],[0,-a/2,0],[1,0,0]],
+det(M)=a/2.
+```
+
+Every cross pair in `{A,B}|{C,D}` maps `Q` to the doubled target-colour
+line, so its matrix rank is at most one.  No local restriction to `H`
+can have rank one: its row space would contain all of `H^perp`, and
+`c h_1-b h_2 in H^perp` would force the absent singleton normal.
+Sylvester's inequality then excludes rank three, leaving rank two at
+all four modes.
+
+Let `k_i` be the four restricted kernel lines.  The applicable
+singleton normal shows `k_i in span(s,d)`.  A cross-pair image has rank
+one exactly when
+
+```text
+k_i^T M^(-1) k_j=0.
+```
+
+The restriction of `M^(-1)` to `span(s,d)` is
+
+```text
+[[0,0],[0,-2/a]].
+```
+
+Writing `k_i=sigma_i s+delta_i d`, the four polarities are the
+`K_(2,2)` equations `delta_i delta_j=0`.  Therefore either
+
+```text
+k_A=k_B=span(s)
+```
+
+or
+
+```text
+k_C=k_D=span(s).
+```
+
+This reduces the generic exact disjoint type to one colour-symmetric
+common-kernel boundary.  It does not yet exclude that boundary.
+
+```text
+P5_Q4_211_DISJOINT_CONIC_POLARITY_REDUCTION.md
+verify_p5_q4_211_disjoint_conic_polarity.py
+audit_p5_q4_211_disjoint_conic_polarity.py
+```
+
+### Exact disjoint `q4_211` exclusion
+
+Assume `k_A=k_B=span(s)`.  Repeated `h_2` contraction shows that the
+`d` images at `A,B` are nonzero target-colour-one vectors and that one
+`h_2` row, say at `C`, pulls back from pure target colour one.  The
+fourfold identity
+
+```text
+(u_0,h_1,h_1,h_2) contract P_5=2b s
+```
+
+then forces `L_D(s)=0`.  Repeating `h_1` leaves exactly two kernel
+architectures:
+
+```text
+(s,s,s,s)
+or
+(s,s,d,s).
+```
+
+In the `3s+1d` architecture one `h_1` row pulls back from target colour
+zero.  The zero residual
+
+```text
+(u_2,h_1) contract P_5=-P_3(e_1,e_2,w_-)
+```
+
+collapses to
+
+```text
+-2 L_B(e_1) tensor L_C(w_-) tensor L_D(e_1).
+```
+
+Thus `L_C(w_-)=0`; together with `L_C(d)=0` this puts
+`n=(0,0,0,c,b)` in `R_C`.  But `n` pulls back from target colour zero
+while the `h_2` row at `C` pulls back from target colour one.  Both
+annihilate `span(e_1,e_2,w_-)`, forcing its image to target colour two,
+contrary to the already nonzero target-colour-zero vector `L_C(s)`.
+
+In the all-`s` architecture, `d` maps to target colour one at `A,B`
+and target colour two at `C,D`.  Modulo the common `s` kernel, the
+`u_0` contraction has two `d` factors.  No assignment of those factors
+can contribute to the required `e_0^4` coefficient, so that nonzero
+diagonal coefficient vanishes.  Therefore exact disjoint incidence is
+empty on `abc != 0`.
+
+```text
+P5_Q4_211_DISJOINT_EXCLUSION_THEOREM.md
+verify_p5_q4_211_disjoint_exclusion.py
+audit_p5_q4_211_disjoint_exclusion.py
+```
+
+### Adjacent one-cross two-gate reduction
+
+The direction-conic and normal-pencil constraints first leave four
+gates.  A common `h_1,h_2` mode cannot also contain
+
+```text
+n=(0,0,0,c,b),
+```
+
+because independence would make both cross residuals nonzero, already
+excluded by the alternating-gate theorem.  If a second common mode
+exists, the parallel theorem produces exactly three common modes and
+one `n`-mode.  Mixed common-mode orientations put all three normals in
+the `n`-mode; a uniform orientation contradicts
+
+```text
+(h_1,h_1,h_1) contract P_5
+=(h_2,h_2,h_2) contract P_5=0.
+```
+
+Thus a second common mode is impossible.  The double-normal gate is
+absorbed by the fixed direction lines from the conic: either line
+completes the mode to a forbidden common-plus-`n` row space unless a
+full direction plane or common kernel is already present.  Only
+
+```text
+span(u_1,u_2) subset R_Z
+```
+
+or
+
+```text
+L_A(e_1+e_2)=0 or L_Y(e_1+e_2)=0
+```
+
+remains.
+
+```text
+P5_Q4_211_ONE_CROSS_TWO_GATE_REDUCTION.md
+verify_p5_q4_211_one_cross_two_gate.py
+audit_p5_q4_211_one_cross_two_gate.py
+```
+
+### Direction-plane gate obstruction
+
+If `R_Z` contains `span(u_1,u_2)`, its rank-one conic image fixes
+
+```text
+L_Z^*e_1^* in C u_1,
+L_Z^*e_2^* in C u_2.
+```
+
+Indeed both pullback covectors annihilate target `e_0`, and symmetry of
+the mixed `(u_1,u_2)` contraction kills their off-diagonal entries.
+In the `q` orientation, both the common mode `A` and the mandatory
+`span(h_1,n)` mode `Y` send `span(e_1,e_2)` into target colour one.
+But
+
+```text
+(u_2,u_2) contract P_5
+ =2c P_3(e_1,e_2,e_3)
+```
+
+would have to map through `A,Y` and one other mode to a nonzero pure
+target-colour-two cube.  Every source monomial assigns an
+`e_1` or `e_2` factor to at least one of `A,Y`, so that coefficient is
+zero.  Colour interchange handles the `p` orientation.
+
+```text
+P5_Q4_211_ONE_CROSS_DIRECTION_PLANE_OBSTRUCTION.md
+verify_p5_q4_211_one_cross_direction_plane.py
+audit_p5_q4_211_one_cross_direction_plane.py
+```
+
+### Common-kernel gate obstruction
+
+In the `q` orientation, let `C` be the other selected `h_2` mode and
+`D` the fourth mode.  The zero and nonzero repeated-normal
+contractions
+
+```text
+(u_1,h_2,h_2)=-2c Sym(e_1,e_2),
+(u_2,h_1,h_1)=-2b Sym(e_1,e_2)
+```
+
+give a binary polar pair through `Y,D` and a pure target-colour-two
+pair through `C,D`.  Fourfold contraction by
+`(u_0,h_1,h_2,n)` then forces
+
+```text
+L_D(s)=0,
+L_Y(d)=0,
+s=e_1+e_2,
+d=e_1-e_2.
+```
+
+Thus the alleged common-kernel gate must be `L_A(s)=0`, and the
+remaining pure pair gives `L_C(d) in C^*e_2`.  The contraction
+`(u_0,h_2,h_2,n)` makes the selected `h_2` row at `C` pure target
+colour one.
+
+The target `e_0^4` coefficient of `u_0 contract P_5` factors as
+
+```text
+e_0^*L_C(s) *
+Perm_3(rho_A|X,rho_Y|X,rho_D|X),
+X=span(e_0,e_3,e_4),
+```
+
+so `L_C(s)` has a nonzero colour-zero component.  Under the propagated
+sigma/delta kernels, both residual charts reduce to
+
+```text
+-L_Y(w) tensor L_C(d) tensor L_D(e_1)
++L_Y(e_1) tensor L_C(s) tensor L_D(w).
+```
+
+The nonzero pure `w_-` chart forces `L_D(w_-)=0`.  Since
+`s,w_-,w_+` are independent and `ker L_D` has dimension two,
+`L_D(w_+)!=0`.  The zero `w_+` chart then equates two nonzero
+decomposable tensors and forces `L_C(s) in C e_2`, contradicting its
+colour-zero component.  This excludes the last adjacent one-cross
+gate.
+
+```text
+P5_Q4_211_ONE_CROSS_COMMON_KERNEL_OBSTRUCTION.md
+verify_p5_q4_211_one_cross_common_kernel.py
+audit_p5_q4_211_one_cross_common_kernel.py
+```
+
+### Generic normalized `q4_211` exclusion
+
+For `abc != 0`, the two singleton-normal containment sets each have
+size at least two.  Empty intersection is exact disjoint incidence;
+one common mode is adjacent; two common modes are parallel and force a
+third, hence reselect as adjacent.  Exact disjoint incidence, adjacent
+two-cross incidence, and adjacent one-cross incidence are all excluded
+by the preceding theorems.  Therefore normalized `q4_211` is empty on
+the open parameter stratum.
+
+The only remaining normalized parameter strata are
+
+```text
+a=0, b c!=0;
+b=0, a c!=0;
+c=0, a b!=0.
+```
+
+The last two are colour symmetric.
+
+```text
+P5_Q4_211_GENERIC_EXCLUSION_THEOREM.md
+verify_p5_q4_211_generic_exclusion.py
+audit_p5_q4_211_generic_exclusion.py
+```
+
+### Complete normalized `q4_211` exclusion
+
+All three parameter faces are now closed without an ambient-map search.
+On `b=0` (and symmetrically `c=0`), exact coordinate-normal incidence
+leaves one marked architecture.  Its two target-image alternatives are
+excluded by a binary polar system coupled to two simultaneous `P_3`
+charts.
+
+On `a=0`, the doubled-colour contraction becomes a third embedded
+`P_4`.  In the adjacent one-cross branch, the relevant pair of row
+planes lies on a degeneracy locus in `Gr(2,4)`.  Exact Pluecker
+elimination reduces it to five ordered complete-quadrangle pairs, each
+with a constant nonzero complementary flattening minor.  In exact
+disjoint incidence, a zero marked corner makes one `P_3` slice vanish;
+three direct evaluations force the remaining rows into one coordinate
+hyperplane, and the decomposable-`P_3` classification gives an
+incompatible antipodal binary cube.
+
+The parameter package covers `abc!=0`, the three one-zero faces, and
+the zero-row closure.  The latter was initially missed because the
+sentence “fewer than two nonzero parameters means a coordinate row”
+does not include the all-zero row.  It is excluded by the
+two-singleton theorem below.  Thus the complete partial `q4_211`
+subbranch is empty over `C`.
+
+```text
+P5_Q4_211_B0_FINAL_OBSTRUCTION.md
+P5_Q4_211_A0_ADJACENT_GRASSMANN_OBSTRUCTION.md
+P5_Q4_211_A0_DISJOINT_P3_OBSTRUCTION.md
+P5_Q4_211_EXCLUSION_THEOREM.md
+verify_p5_q4_211_exclusion.py
+audit_p5_q4_211_exclusion.py
+```
+
+### Two-singleton theorem and corrected high-coordinate frontier
+
+The `q5_311` proof uses less than its original normal form.  It needs
+only two independent target coordinates whose pullbacks are supported
+on two distinct singleton source rows.  Contracting those target
+coordinates exposes two pure deleted copies of `P_4` sharing three
+source rows.  The existing rank-drop, shared-drop, and common-plane
+arguments exclude the configuration independently of all entries in
+the third target coordinate.
+
+An independent rebuild of the 6,495-signature catalogue finds exactly
+360 two-singleton signatures:
+
+```text
+60  exact q5_311;
+180 q4_211 coordinate rows plus one zero row;
+120 partial 3+1 rows with support counts (4,1,1).
+```
+
+This audit also corrected the former three-type high-coordinate claim.
+There are 1,680 catalogue signatures with at least four coordinate
+rows.  Exact theorems exclude 1,170.  The remaining 510 are:
+
+```text
+H31, 240 signatures:
+  e_0,e_0,e_0,e_1,a e_0+b e_1+c e_2,  b c!=0;
+
+H22, 270 signatures:
+  e_0,e_0,e_1,e_1,a e_0+b e_1+c e_2,  c!=0,
+                                               (a,b)!=(0,0).
+```
+
+For `H31`, deleting the partial source row gives `P_4 -> pure`, while
+deleting the singleton row gives a second embedded `P_4 -> Delta_2`;
+the two tensors share three source rows.  For `H22`, contraction by
+`e_0+e_1`, `e_2+e_3`, and `e_4` gives three embedded copies of `P_4`
+with normals
+
+```text
+e_0^*-e_1^*, e_2^*-e_3^*, e_4^*.
+```
+
+The last maps pure and the first two map pure or to `Delta_2`, with at
+least one sharp `Delta_2` image.  This reframes the current problem as
+compatibility between a pure deletion and one or two marked
+sharp-subrank-two deletions.  It is not a proof of nonexistence or a
+construction.
+
+```text
+P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md
+verify_p5_two_singleton_coordinate_obstruction.py
+audit_p5_two_singleton_coordinate_obstruction.py
+P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md
+verify_p5_high_coordinate_partial_frontier.py
+audit_p5_high_coordinate_partial_frontier.py
+```
+
+### The known rank-two pure family does not lift to `H31`
+
+Fix the five-parameter family `P4_DECOMPOSABLE_RANK_TWO_FAMILY.md` on
+the pure-deletion hyperplane and retain its three common source
+coordinates on the neighbouring `Delta_2` hyperplane.  The fourteen
+mixed binary coefficients are linear in the eight new exceptional-row
+entries.
+
+For `l!=0`, an explicit `7 x 7` minor is
+
+```text
+-4 i^2 l^4(c+e i l)/e^4.
+```
+
+The unique mixed-kernel direction kills the second diagonal, so no
+binary `Delta_2` extension exists.  For `l=0`, the mixed matrix has
+rank six and a two-dimensional kernel.  A sharp binary extension
+exists precisely when
+
+```text
+j u(c t+e u) != 0.
+```
+
+This exceptional binary survivor still has no ternary lift.  At mode
+one, the one-third-row coefficient map on the `Delta_2` hyperplane has
+nonzero determinant
+
+```text
+8 j u^2(c t+e u)/(e^4 i),
+```
+
+so the third row vanishes there.  On the pure hyperplane the analogous
+map has kernel exactly `C e_1^*`, transverse to the remaining
+exceptional coordinate.  The third row is therefore globally zero and
+the local map has rank at most two.
+
+Independent modular row reduction checks all 1,600/10,584 admissible
+family parameters over `F_5/F_7`.  It finds 4,096/46,656 binary
+`Delta_2` extension vectors, all on the predicted divisor, and zero
+third-row lifts.  No ambient local maps or Grassmannians are enumerated.
+
+```text
+P5_H31_KNOWN_RANK_TWO_FAMILY_OBSTRUCTION.md
+verify_p5_h31_known_rank_two_family_obstruction.py
+audit_p5_h31_known_rank_two_family_obstruction.py
+```
+
+### Complete exclusion of the `H31` single-gate boundary
+
+Let the pure and `Delta_2` source hyperplanes share the source
+three-space `M`.  A rank-one pair on the pure hyperplane is a unique
+primary coordinate gate.  If all three remaining pairs have rank two
+on `M`, the marked decomposable-`P_3` classification gives
+
+```text
+alpha_1=(-B,0,1), beta_1=(-A,1,0),
+alpha_2=( A,1,0), beta_2=( B,0,1),
+alpha_3=( A,1,0), beta_3=( 0,B,A).
+```
+
+Binary extension through the primary `beta` row is a `7 x 7` linear
+system.  Its determinant is the product of seven projective lines, and
+the exact viable locus is the union of four punctured components:
+
+```text
+B=0;
+v_1=0;
+v_2=0;
+v_0=-A v_1+B v_2,
+```
+
+with the explicit open conditions recorded in
+`P5_H31_SINGLE_GATE_P3_REDUCTION.md`.  Ten disjoint determinantal
+strata have a transverse injective one-marked map.  Their sole deepest
+intersection forces the two remaining third rows onto kernel lines,
+where the mixed target coefficient `1122` is the nonzero binary
+diagonal up to scale.  Hence no ternary lift exists.
+
+If another pair drops rank on `M`, its wrong marked row vanishes there
+and becomes a unique secondary gate.  The remaining common-plane data
+is a `P_3 -> Delta_2` restriction.  For the pair map
+
+```text
+mu(x,y)=(
+ x_1y_2+x_2y_1,
+ x_0y_2+x_2y_0,
+ x_0y_1+x_1y_0
+),
+```
+
+a full three-dimensional pair image makes the secondary one-marked map
+injective.  Rank two forces two off-diagonal pair products to vanish.
+The exact classification of `mu(x,y)=0` leaves only:
+
+```text
+one coordinate line against its complementary plane;
+two distinct coordinate planes.
+```
+
+Both support-polarity strata have explicit normal forms.  Their
+one-marked determinant cascades either give an immediate transverse
+contradiction or force a deepest form in which a mixed two-third-row
+coefficient is nonzero.  Thus every single-gate `H31` pencil is
+impossible.
+
+Independent audits over `F_5,F_7` checked:
+
+```text
+2,036 / 8,538 viable projective extensions in the rank-two-M chart;
+2,500 / 14,406 ordered deepest extension pairs;
+120 / 252 exceptional zero-pair basis quadruples;
+both support-polarity determinant cascades and deepest coefficients.
+```
+
+No ambient local maps or Grassmannians were enumerated.  The honest
+`H31` remainder is now only the all-rank-two pure-`P_4` locus outside
+the dense known-family charts, including possible all-rank-two
+component boundaries and additional components.
+
+```text
+P5_H31_SINGLE_GATE_P3_REDUCTION.md
+verify_p5_h31_single_gate_p3_reduction.py
+audit_p5_h31_single_gate_p3_reduction.py
+P5_H31_SINGLE_GATE_RANK_TWO_M_EXCLUSION.md
+verify_p5_h31_single_gate_rank_two_m_exclusion.py
+audit_p5_h31_single_gate_rank_two_m_exclusion.py
+P5_H31_SECONDARY_GATE_EXCLUSION.md
+verify_p5_h31_secondary_gate_exclusion.py
+audit_p5_h31_secondary_gate_exclusion.py
+```
+
+### The rank-two family is a plane component; its canonical marked orbit does not lift
+
+Put four rank-two source planes in the Grassmann chart
+
+```text
+R_0=((1,0,a,b),(0,1,c,d)),
+R_1=((e,1,0,f),(g,0,1,h)),
+R_2=((i,1,0,j),(k,0,1,l)),
+R_3=((1,m,n,0),(0,o,p,1)).
+```
+
+In the Segre chart anchored at target word `1000`, decomposability is
+the fifteen incidence equations
+
+```text
+T_beta-T_1000 product_{r:beta_r!=1000_r} z_r=0.
+```
+
+At family parameters `(E,I,L,Q,C)=(1,1,1,1,0)`, the compressed tensor
+is `2(y_0-x_0)(x_1+y_1)x_2x_3`.  A `15 x 15` incidence-Jacobian minor
+has determinant `-4096`, so the local incidence dimension is five.  A
+`5 x 5` minor of the family tangent map has determinant `2`.  Hence the
+family closure is a generically smooth five-dimensional irreducible
+component, not merely a dimension-count construction.  This does not
+classify other components or all-rank-two boundary points.
+
+The earlier `H31` lift obstruction fixed one of four possible family
+source coordinates as the coordinate replaced in the neighbouring
+hyperplane.  The three missing orientations have exact mixed-extension
+matrices.  On `L!=0`, each has rank seven and its unique kernel kills
+the `AAAA` diagonal.  On `L=0`, their ranks are `6,3,5`.  The middle
+orientation still kills `AAAA` identically.  For the other two,
+mode-one marked minors are
+
+```text
+-8 I Q t^2(EI t+C u)/E
+```
+
+and
+
+```text
+8 t(Ct+Eu)(It-Qu-v)/(EI),
+8 u(Ct+Eu)(It-Qu-v)/(EI).
+```
+
+The relevant diagonal nonvanishing makes the first determinant
+nonzero, or at least one determinant in the second pair nonzero.  The
+third-colour row therefore vanishes on the neighbouring hyperplane and
+is supported only on the distinguished pure coordinate.  A pure-slice
+marked coefficient, respectively `Q` or `1`, rules out that support.
+
+Thus every displayed marked family chart in the full source/mode
+symmetry orbit has no `H31` lift.  This statement concerns the chosen
+row markings, not every marked basis over the same plane component.
+The independent `F_5/F_7` audit checked all
+admissible parameter tuples in the three new orientations and, on the
+largest exceptional stratum, 63,504 projective binary extensions.
+Every genuine `Delta_2` extension had the predicted injective marked
+map.  No ambient local maps or Grassmannians were enumerated.
+
+```text
+P4_PURE_RANK_TWO_COMPONENT_THEOREM.md
+verify_p4_pure_rank_two_component.py
+audit_p4_pure_rank_two_component.py
+P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md
+verify_p5_h31_rank_two_component_orbit.py
+audit_p5_h31_rank_two_component_orbit.py
+```
+
+### Exact component-chart closure and exclusion of its nonzero boundary
+
+Eliminating the five family parameters in the preferred Grassmann
+chart gives eleven elementary component equations:
+
+```text
+f=g=i=l=m=o=0,
+hp+1=nk+1=0,
+j-hne=hc-d-j=b-h(a-n)=0.
+```
+
+The chart is irreducible of dimension five with free coordinates
+`a,d,e,h,n`, where `hn!=0`.  Put `D=d+hne`.  The restricted tensor is
+
+```text
+2(ah x_0+D y_0)(en x_1+y_1)x_2x_3.
+```
+
+The original finite-parameter family is exactly `D!=0`, with inverse
+
+```text
+E=h, I=n, L=e, C=d, Q=-ah/D.
+```
+
+The only additional nonzero locus in this chart is therefore the
+four-dimensional divisor `D=0,a!=0`.  Any other boundary of the
+component must lie where one of
+
+```text
+Delta_0(01), Delta_1(12), Delta_2(12), Delta_3(03)
+```
+
+vanishes.
+
+On `D=0,a!=0`, a binary basis change gives the pure coefficient
+`AAAA=2AH`.  The four neighbouring mixed-extension matrices split by
+`R!=0`, the collision `A=N`, and `R=0`.  Every binary `Delta_2`
+survivor has an injective one-marked map.  Representative determinants
+are
+
+```text
+8HNR(t+Hu)(Nt-H(A-N)u)^2,
+8Au^2(t+HNRu),
+8H^2N^3R^2tu^2,
+-8H^2NR^3u^2(t+HNRu),
+8AHN^3t^2u,
+8Ht^2(Nu-H(A-N)v),
+8Atu^2.
+```
+
+The pure-hyperplane marked map rejects the distinguished source
+coordinate in every case, so the third target row vanishes globally.
+Thus the displayed marked section of the nonzero preferred-chart
+boundary is excluded in all four orientations.  Kernel-row shifts
+inside the same planes were not parameters of this calculation.
+
+The independent audit checked all 320/1,512 boundary parameter points
+over `F_5/F_7` and all 4,608/31,104 projective binary `Delta_2`
+extensions.  Every survivor had the predicted injective marked map.
+No ambient local maps or Grassmannians were enumerated.
+
+```text
+P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md
+verify_p4_pure_rank_two_component_chart_closure.py
+audit_p4_pure_rank_two_component_chart_closure.py
+P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md
+verify_p5_h31_component_chart_boundary.py
+audit_p5_h31_component_chart_boundary.py
+```
+
+### Marked-basis scope correction and an open shifted branch
+
+The component calculations above live in `Gr(2,4)^4` and therefore
+remember only four planes.  An `H31` map marks more data in each plane:
+a kernel row and a complementary pure-colour row.  Replacing the latter
+by itself plus a multiple of the kernel row preserves both the plane
+and the pure deletion, but is not a symmetry of the neighbouring
+`Delta_2` tensor.
+
+This distinction produces a genuine dense binary branch.  Normalize
+`E=I=1` and put
+
+```text
+D=C+L,  A=1+LQ,  B=1+DQ,
+LQDAB !=0.
+```
+
+Keep the family kernel rows `alpha_r`, but replace the canonical
+pure-colour rows `U_r` by
+
+```text
+beta_r=U_r+t_r alpha_r,
+t=(-1/Q,0,L/A,0).
+```
+
+All four planes are unchanged.  On the pure hyperplane only
+`BBBB=2D` survives.  For distinguished source coordinate `q=2`, the
+fifth-coordinate extension
+
+```text
+x=(1,0,0,-1),
+y=(B/Q,1,0,0)
+```
+
+kills all fourteen mixed binary coefficients and has nonzero
+diagonals
+
+```text
+AAAA=-2A,  BBBB=2B/Q.
+```
+
+So the earlier canonical statement “off `L=0` there is no binary
+extension” cannot be promoted from its marked row family to the whole
+plane component.
+
+The new branch still fails ternarily.  At mode two, rows
+`000,001,011,111` of the one-marked map have determinant
+
+```text
+8 A^2 B.
+```
+
+The pure marked map has distinguished-coordinate entry `A`, so the
+third target row vanishes globally.  A primary symbolic verifier and
+an independent dynamic-programming audit over all 36/150 admissible
+parameter tuples in `F_5/F_7` both pass.
+
+This correction also changes the interpretation of the toric work.
+The coupled base has 12 divisors, 26 edges, and 16 vertices; Segre
+intersection leaves 21 all-rank toric plane/orientation pairs.  That is
+an exact plane-level frontier, not yet a complete marked `H31`
+frontier.  The finite component-interior fibre is classified in the
+next checkpoint; the 21 toric cases remain.
+
+```text
+P5_H31_MARKED_BASIS_OPEN_BRANCH.md
+verify_p5_h31_marked_basis_open_branch.py
+audit_p5_h31_marked_basis_open_branch.py
+P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md
+P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md
+```
+
+### Complete marked-basis fibre over the finite family chart
+
+The Borel fibre over the normalized family is
+
+```text
+beta_r=U_r+t_r alpha_r,       t in C^4,
+D=C+L!=0.
+```
+
+This is exhaustive: the pure tensor fixes the kernel line
+`C alpha_r` in each plane, and nonzero row scalings reduce every
+complement to `U_r+t_r alpha_r`.  The original `E,I` parameters are
+removed by the invertible source scaling
+
+```text
+diag(EI,EI,E,1),
+```
+
+with a bijective corresponding rescaling of `t`.
+
+For distinguished source coordinate `q`, binary extension is the
+determinantal incidence
+
+```text
+M_q(t)z=0,        d_0(z)d_1(z)!=0,
+```
+
+where `M_q(t)` is `14 x 8`.  Exact elimination after the weighted
+normalizations
+
+```text
+L!=0: (c,qbar,s)=(C/L,LQ,t_0/L,Lt_1,t_2/L,t_3),
+L=0:  C=1
+```
+
+gives the complete constructible marking table.  The generic branches
+are the expected `A=0`, `B=0`, and shifted `q=2,3` sections, together
+with the `L=0` marking lines and axes.  A completeness audit found three
+previously missed isolated `q=1` markings:
+
+```text
+C=-L/2, Q=-2/L: ( L/2,0, L,1),
+C=-L/2, Q=-1/L: (   0,1/L,-L,0),
+C=-L/2, Q=   0: (-L/2,0, L,1).
+```
+
+They are not closure artifacts: their mixed matrices have rank six and
+both diagonal functionals are nonzero on the two-dimensional kernel.
+The specialized normalized projection has triangular basis
+
+```text
+2s_0+qbar+1,
+s_1+qbar^2+2qbar,
+s_2-2qbar^2-4qbar-1,
+s_3-qbar^2-2qbar-1,
+qbar(qbar+1)(qbar+2).
+```
+
+Every survivor kernel is now obstructed **for all extensions**.  Each
+useful one-marked determinant factors as
+
+```text
+d_0(z)d_1(z) ell(z).
+```
+
+The residual linear forms either repeat a diagonal factor or form a
+spanning cover of the extension kernel.  The largest new kernel is the
+three-dimensional `L=0,q=2` fibre; for `Q!=0` three residuals are
+
+```text
+u-w,  u-Qv,  Qv+w,
+```
+
+whose common zero is the origin.  Separate bases handle
+`2C+L=0`, `T=D`, `S=0,1`, and `Q=0`; no generic kernel basis is
+specialized through a pole.
+
+The primary symbolic verifier passes 20 exact certificate strata.  An
+independent implementation exhausts the normalized projection
+varieties over `F_5,F_7`, checks 426 surviving markings and all 6,234
+projective kernel directions, and finds 4,498 admissible binary
+extensions.  Every admissible extension has an injective one-marked
+map with a transverse pure coordinate.  It also rejects 32
+`L=0` Zariski-closure points that are not actual incidence points.
+
+Therefore no marked basis over any finite member of the known
+five-parameter family lifts to `H31`.  The global conjecture remains
+unresolved: the next known-component target is the full marked
+incidence over the 21 Segre-capable toric boundary orientations, and
+additional pure-compression components remain unclassified.
+
+```text
+P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md
+derive_p5_h31_marked_basis_fibre_elimination.py
+verify_p5_h31_marked_basis_fibre_classification.py
+audit_p5_h31_marked_basis_fibre_classification.py
+```
+
+### Complete marked fibres on the genuine toric boundary
+
+The coupled three-plane toric boundary was first reduced at plane level
+to five genuine divisor orbits and four edge orbits.  Accounting for
+the two pure directions on secants, the double direction on the
+tangent slice, and distinguished-source orientations gives 17
+pure-direction types and 39 direction/orientation types over 21
+base-orbit/orientation cases.
+
+The complete marked incidence is now closed.  Both projective charts
+of the first-plane fibre, every kernel-row shift, and every binary
+extension direction are excluded by exact selected-minor unit ideals
+over characteristic zero.  The independent orientation-aware audit
+exhausts 13,064 exact oriented projection points, 272,624 genuine
+binary extensions, 291,176 selected-minor tests, and 520
+projection-closure artifacts over `F_5,F_7`.
+
+```text
+P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md
+derive_p5_h31_toric_marked_fibre_elimination.py
+verify_p5_h31_toric_marked_fibre_obstruction.py
+audit_p5_h31_toric_marked_fibre_obstruction.py
+```
+
+### Complete marked fibre on the nonzero component-chart divisor
+
+The full row-basis bundle on the nonzero preferred-chart divisor
+normalizes to `H=N=1`, `A!=0`, with four bijective row shifts.  Four
+saturated projection ideals split into 16 elementary residual-factor
+strata.  On every stratum a selected one-marked determinant is a
+nonzero parameter multiple of one of the two inverted binary
+diagonals, so every binary extension is ternarily excluded.
+
+The characteristic-zero primary verifier passes all 16 strata.  The
+independent audit checks 614 projection points, 5,400 binary
+extensions, 6,918 selected-minor tests, and 12 closure artifacts over
+`F_5,F_7`.
+
+```text
+P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md
+derive_p5_h31_chart_boundary_marked_fibre_elimination.py
+verify_p5_h31_component_chart_boundary_marked_fibre.py
+audit_p5_h31_component_chart_boundary_marked_fibre.py
+```
+
+### Complete marked fibre on first-plane infinity
+
+The line at infinity of the first-plane fibre normalizes by
+
+```text
+diag(N,N,1,1/H)
+```
+
+to `H=N=1`, `(A,D)!=(0,0)`, with a bijective action on all four row
+shifts.  Absolute binary incidence for `q=0,1,2,3` has respectively
+`4,3,6,8` minimal projection components.  Those 21 components admit a
+25-chart rational atlas.  Exact kernel reconstruction gives 18
+two-dimensional and 7 three-dimensional mixed kernels; after
+inverting both binary diagonals and the chart parameters, the 154
+selected pure-entry/minor residual products have no common zero.
+
+The primary characteristic-zero verifier passes in full.  An
+independent audit exhausts 1,054 projection points, 14,796 binary
+extensions, and 24,202 selected-minor tests over `F_5,F_7`, while
+correctly rejecting 72 projection-closure artifacts.
+
+Thus the finite family, genuine toric boundary, nonzero chart divisor,
+and first-plane infinity are closed at complete marked-fibre level.
+The known-component remainder is the internal `E=0` marked fibre.
+Additional pure-compression components and `H22` remain unresolved;
+the prize problem is not solved.
+
+```text
+P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md
+derive_p5_h31_fibre_infinity_marked_fibre_elimination.py
+verify_p5_h31_component_fibre_infinity_marked_fibre.py
+audit_p5_h31_component_fibre_infinity_marked_fibre.py
+```
+
+### Complete marked fibre on the internal `E=0` divisor
+
+The last unclassified stratum of the known component is the internal
+toric divisor with normal `(-1,0,0)`.  Its pure slice is secant, with
+directions `(-1,-1)` and `(1,-1)`, and its all-rank distinguished
+coordinates are `q=0,2,3`.  Including both projective charts of the
+first-plane fibre gives twelve exact saturated binary projections.
+Their squarefree decompositions have 24 components.
+
+A 29-chart rational atlas isolates all kernel-pivot divisors.  One
+chart is a genuine projection-closure artifact because a binary
+diagonal vanishes identically.  Twenty-seven ordinary charts close by
+characteristic-zero residual unit ideals, checking 1,172 nonzero
+pure-entry/minor residual products in 8 two-dimensional and 20
+three-dimensional mixed kernels.  The remaining coupled chart
+
+```text
+direction=(-1,-1), q=3, finite:
+t1=t2=0, s=-1-t0 r
+```
+
+closes by a direct selected-minor unit ideal using four minors and 32
+pure-entry products.
+
+The independent audit exhausts 3,976 projection points, 58,280 genuine
+binary extensions, 747,552 direct selected-minor tests, and 144
+projection-closure artifacts over `F_5,F_7`.
+
+Therefore the finite family, genuine toric base boundary, nonzero
+component-chart divisor, first-plane infinity, and internal `E=0`
+divisor are all closed at complete marked-fibre level.  The complete
+marked fibre of the known pure-compression component is excluded.
+The existence and marked fibres of other pure-compression components,
+and `H22`, remained unresolved at this checkpoint; the next entry
+constructs a second component.
+
+```text
+P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md
+verify_p5_h31_internal_e0_marked_fibre.py
+audit_p5_h31_internal_e0_marked_fibre.py
+```
+
+### A second pure-compression component via diagonal quadrics
+
+The component-completeness question for the all-rank-two pure `P_4`
+plane locus has a negative answer.  The useful reframe is the
+squarefree Frobenius algebra
+
+```text
+C[X_0,X_1,X_2,X_3]/(X_0^2,X_1^2,X_2^2,X_3^2).
+```
+
+Its degree-two multiplication identifies a deficient plane-pair image
+with a diagonal quadric through the two annihilator lines.  A
+complementary support-two kernel pair has a rank-two double-contraction
+form; choosing its radical as the fourth plane reduces the remaining
+pure condition to one `(3,3)` equation
+
+```text
+Psi =
+ A^3 F^3 + A^2 C F^2 H - A B^2 F H^2
+ - A C^2 E^2 F + A C^2 F H^2 - B^2 C E^2 H = 0.
+```
+
+`Psi` is irreducible by a valuation argument after writing it as
+`P-B^2 Q`.  Its diagonal-source orbit has tangent rank five.  At the
+rational point `(A,B,C,E,F,H)=(1,1,0,2,1,1)`, the incidence Jacobian
+has rank fourteen.  A sixth tangent direction is killed by the exact
+quadratic cokernel value `-132`, so the tangent cone has dimension at
+most five.  This proves that the family closure is a five-dimensional
+irreducible component.
+
+The diagonal-quadric dimensions of the four annihilator lines at that
+point are `(1,1,1,2)`.  Three planes have dimension at least two
+throughout the first component and its symmetry orbit, so the new
+component is genuinely distinct.  This is a proof that an additional
+component exists, not a complete component classification.
+
+```text
+P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md
+verify_p4_diagonal_quadric_pure_component.py
+audit_p4_diagonal_quadric_pure_component.py
+```
+
+### Complete `H31` marked fibre at one point of the second component
+
+At the rational point above, use the pure kernel marking
+
+```text
+alpha_0=(3,-2,0,-1), alpha_1=(1,0,0,-1),
+alpha_2=(0,1,-1,0), alpha_3=(1,-1,-1,1).
+```
+
+Exact binary elimination over all four Borel shifts gives no survivor
+for distinguished `q=1,2`, and exactly
+
+```text
+q=0: t=(0, 1,1,1),
+q=3: t=(0,-1,1,1).
+```
+
+Both survivor mixed matrices have two-dimensional kernels.  Writing
+an extension as `u k_0+v k_1`, the two binary diagonals are, up to the
+orientation sign,
+
+```text
+2(u-2v), 2u.
+```
+
+Every genuine extension therefore has `u(u-2v)!=0`.  The same
+mode-one marked minor in both orientations is
+
+```text
+-8u(u-2v)^2,
+```
+
+and the pure transverse column contains `2`.  Hence every extension is
+ternarily excluded.  Independent audits enumerate 12,104 marking
+points and all 20 genuine projective binary extensions over `F_5,F_7`.
+
+At this checkpoint, one complete fibre only was closed.  The next entry
+extends the obstruction to a rational curve; the generic and boundary
+marked fibres of the second component, possible further components,
+`H22`, and the prize problem remained unresolved.
+
+```text
+P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md
+verify_p5_h31_diagonal_quadric_component_point.py
+audit_p5_h31_diagonal_quadric_component_point.py
+```
+
+### A complete marked rational curve on the second component
+
+Set `A=B=E=F=H=1, C=c` in the diagonal-quadric normal form.  The
+component equation vanishes identically and the sole pure coefficient
+is `4(c+1)`, so `c=-1` is precisely the zero-tensor point.
+
+Over `Q(c)`, normalized binary projection leaves only
+
+```text
+q=0: t=(-2c/(c-1),1,1,1),
+q=2: t=(-1,1,1,0).
+```
+
+To prevent a function-field Gröbner basis from hiding exceptional
+algebraic values of `c`, a second elimination retains `c` over `Q` and
+saturates by `c+1`.  Its `q=0,1,2` ideals are the displayed family,
+the unit ideal, and the constant `q=2` marking.  Its `q=3` ideal is
+
+```text
+(t3-1,t2-1,t1-2c+1,t0+c,c^2-c).
+```
+
+Thus `c=0,1` are rigorously the only nonzero-pure jump fibres.
+
+The first kernel has binary diagonals proportional to
+
+```text
+(c-1)(u-2v), (c+1)((c+1)u+2(c-1)v)
+```
+
+and its selected mode-one minor is their product with an additional
+nonzero factor `u-2v`.  The second kernel has diagonals
+`2(u-v),4v(c+1)` and marked minor
+`64v(c+1)(u-v)^2`.
+
+Exact specialization closes the only omitted nonzero-pure fibres.
+At `c=0`, the survivor orientations are `q=0,2,3`; at `c=1`, they are
+`q=2,3`.  Their marked minors are respectively scalar multiples of
+
+```text
+u(u-2v)^2, v(u-v)^2.
+```
+
+Thus both nonzero binary diagonals force an injective one-marked map in
+every case, excluding every marking and every extension on the full
+curve `c!=-1`.  The characteristic-zero verifier recomputes four
+function-field projections, eight special-fibre projections, and all
+seven displayed kernel cases.  The independent `F_5,F_7` audit checks
+67,624 marking fibres, 158 projective kernel directions, and all 114
+genuine binary extensions.
+
+This is a relative one-dimensional theorem, not a generic result on
+the five-dimensional component.  The component away from this curve,
+its boundary, possible further components, `H22`, and the prize
+problem remain unresolved.
+
+```text
+P5_H31_DIAGONAL_QUADRIC_CURVE_MARKED_FIBRE_OBSTRUCTION.md
+verify_p5_h31_diagonal_quadric_curve_marked_fibre.py
+audit_p5_h31_diagonal_quadric_curve_marked_fibre.py
+```
+
+### A transverse complete `E=e` curve
+
+The previously isolated second-component point lies on another curve.
+Set
+
+```text
+A=B=F=H=1, C=0, E=e.
+```
+
+The component equation vanishes identically, all four planes retain
+rank two, and the sole pure coefficient is the constant `4`.  Retaining
+`e` in exact binary projection gives:
+
+```text
+q=0:
+ (t3-1,t2-1,t0-t1+1,e(t1-1),t1(t1-1));
+q=1:
+ (1);
+q=2:
+ (t3,t2-1,t1-e,2t0+1,e^2-1);
+q=3:
+ (t3-1,t2-1,t0+t1+1,e(t1+1),t1(t1+1)).
+```
+
+Thus `q=0,3` each have one uniform marking for every `e`; `e=0`
+adds one marking in both orientations, and `e=+/-1` adds one `q=2`
+marking.  There are no hidden exceptional complex fibres.
+
+For the two uniform kernels, the diagonals are, up to sign,
+`2(u-2v),2u`, and the mode-one marked minor is
+
+```text
+-8u(u-2v)^2.
+```
+
+For the `e=0` jumps they are `2(u-v),2(u+v)`, with mode-zero minor
+`8(u-v)(u+v)^2`.  For `e=+/-1`, they are
+`4(u-v),4v`, up to sign, with mode-zero minor
+`64v(u-v)^2`.  Hence every genuine extension is ternarily excluded.
+
+The characteristic-zero verifier closes all six kernel types.  The
+independent `F_5,F_7` audit checks 79,728 marking fibres, 228
+projective kernel directions, and all 164 genuine binary extensions.
+The curve contains the old rational point at `e=2` and meets the
+previous `C=c` curve at `e=1,c=0`.
+
+The two curves still have codimension two in the three-dimensional
+normal-form hypersurface.  Their complement and boundary, possible
+further components, `H22`, and the prize problem remain unresolved.
+
+```text
+P5_H31_DIAGONAL_QUADRIC_E_CURVE_MARKED_FIBRE_OBSTRUCTION.md
+verify_p5_h31_diagonal_quadric_e_curve_marked_fibre.py
+audit_p5_h31_diagonal_quadric_e_curve_marked_fibre.py
+```
+
+### Pure-direction boundary and the complete factored slice
+
+On `A=B=F=H=1,C=-1,E=e`, the pure coefficient matrix changes factor
+direction: only its upper-right entry survives.  With the corresponding
+kernel/pure marking, the sole nonzero coefficient is `4(e^2-1)`.
+Saturating by `e^2-1`, exact relative projection gives unit ideals for
+`q=0,1,3` and
+
+```text
+(t3,t2+1,t0-1,2e t1+e^2+1)
+```
+
+for `q=2`.  At `e=0` this is also a unit.  Otherwise the unique marking
+has a rank-six mixed matrix with diagonals
+
+```text
+-4e(u-2v)/(e^2-1), 2u(e^2-1),
+```
+
+and mode-one marked minor
+
+```text
+-64e u(u-2v)^2.
+```
+
+Every genuine extension is excluded.  The independent `F_5,F_7`
+audit checks 55,520 marking fibres, 44 projective kernel directions,
+and all 32 genuine extensions.
+
+The larger slice equation is
+
+```text
+Psi|_(A=B=F=H=1) = -C(C+1)(E-1)(E+1).
+```
+
+The `E=1`, `C=0`, and `C=-1` branches are the three closed curve
+theorems.  Swapping source coordinates `X_0,X_3` sends `E=1` to
+`E=-1`.  Their only uncovered intersections are the zero-tensor points
+`C=-1,E=+/-1`.  Therefore the complete nonzero factored slice is
+excluded at marked-fibre level, together with its full source/mode
+symmetry orbit.  In particular, the source permutation `(0 1)(2 3)`
+followed by the mode swap `1<->2` carries the `C=c` curve to
+`A=B=C=E=F=1,H=h`; no new elimination is needed for that transverse
+line.
+
+This is still a lower-dimensional slice of the second component.  Its
+complement and boundary, possible further components, `H22`, and the
+prize problem remain unresolved.
+
+```text
+P5_H31_DIAGONAL_QUADRIC_PURE_DIRECTION_CURVE_MARKED_FIBRE_OBSTRUCTION.md
+verify_p5_h31_diagonal_quadric_pure_direction_curve.py
+audit_p5_h31_diagonal_quadric_pure_direction_curve.py
+```
+
+### Interior `H=0` rulings
+
+On `A=B=F=1,H=0`, the component equation reduces to
+
+```text
+1-C^2E^2=-(CE-1)(CE+1).
+```
+
+Parametrize `CE=1` by `E=e,C=1/e` and rescale the `x_1` plane row by
+`e`.  The sole pure coefficient is `4e`.  Saturated relative
+projection gives
+
+```text
+q=0: (1);
+q=1: (t3,t2-1,t1-e,e t0+1);
+q=2: (t3,t2+1,t1-e,e t0+1);
+q=3: (t3-1,t2-e,t1-e,2t0+e,e^2-1).
+```
+
+The `q=1,2` kernels survive uniformly.  Their diagonals are, up to
+sign, `2e(u-2v),2eu`, while the same mode-two marked minor is
+`-8u(u-2v)^2`.  At `e=+/-1`, the added `q=3` kernel has diagonals
+`4(u-v),4v` or `4(u+v),4v` and mode-zero minor
+`-64v(u-v)^2` or `-64v(u+v)^2`.
+
+Thus every genuine extension is excluded.  Swapping `X_0,X_3` sends
+`E` to `-E` and exchanges the two rulings, closing the complete
+nonzero `H=0` slice and its source/mode orbit.  The independent
+`F_5,F_7` audit checks 67,624 marking fibres, 172 projective kernel
+directions, and all 124 genuine extensions.
+
+Together with the factored `H=1` slice orbit, this initially gave two
+exact lower-dimensional cross-sections of the second component.  The
+next elliptic-surface theorem below excludes the generic fibre; the
+proper survivor divisor and boundary, possible further components,
+`H22`, and the prize problem remain unresolved.
+
+```text
+P5_H31_DIAGONAL_QUADRIC_H0_RULING_MARKED_FIBRE_OBSTRUCTION.md
+verify_p5_h31_diagonal_quadric_h0_ruling.py
+audit_p5_h31_diagonal_quadric_h0_ruling.py
+```
+
+### Elliptic-surface generic obstruction
+
+The normalized diagonal-quadric equation has a much smaller invariant
+form.  On `A=B=F=1`, set
+
+```text
+U=C+H, S=1+CH, T=H+CE^2.
+```
+
+Direct expansion gives `Psi=S^2-UT`.  On `U!=0`, put `r=S/U`,
+`x=1-rH`, and `Y=rEx`.  The inverse map is
+
+```text
+H=(1-x)/r,
+C=rx/(x+r^2-1),
+E=Y/(rx),
+```
+
+and the component becomes
+
+```text
+Y^2=x[(1-r^2)x^2+(3r^2-2)x+(r^2-1)^2].
+```
+
+The cubic discriminant is
+
+```text
+r^4(r-1)^4(r+1)^4(4r^2-3).
+```
+
+After `X=(1-r^2)x,W=(1-r^2)Y`, the minimal Weierstrass model has
+
+```text
+Delta=16r^4(r-1)^6(r+1)^6(4r^2-3).
+```
+
+Its fibres are `I4` at zero, `I6` at each of `+/-1`, `I1` at each
+root of `4r^2-3`, and `I0*` at infinity.  Their Euler numbers total 24,
+so the minimal resolution is a K3 surface.  The reducible fibres have
+root rank 17.  The section `P=(1,r^2)` is non-torsion: at `r=2`, the
+integral model has `P=(-3,-12)`, and its reductions have orders `10`
+modulo `5` and `3` modulo `7`.  Good-reduction injectivity on
+prime-to-characteristic torsion makes finite order impossible.
+The same specialized curve has `10,12,14` points over
+`F_5,F_7,F_11`, leaving only the visible two-torsion section.
+Shioda--Tate then forces Picard number 20 and Mordell--Weil group
+`Z + Z/2`.
+
+The previously closed `H=0` rulings are exactly the sections
+`(x,Y)=(1,+/-r^2)`.  The `H=1` factored slice maps to the singular
+fibre `r=1` or the base locus `U=S=0`; the source-symmetric image lies
+over `r=-1`.
+
+For the generic marked plane tuple, retain `Y,t0,...,t3`, work over
+`Q(r,x)`, and impose the elliptic relation.  For each distinguished
+coordinate, normalize one binary diagonal and invert the other in the
+`14 x 8` mixed system.  Exact block elimination gives
+
+```text
+q=0: (1)
+q=1: (1)
+q=2: (1)
+q=3: (1).
+```
+
+Thus the generic marked fibre of the second component admits no
+binary extension at all.  Every remaining survivor is supported on a
+proper closed subset.  This does not classify that divisor: a bounded
+attempt retaining a fibre coordinate exceeded the strict runtime
+guard and was stopped rather than expanded into another ambient
+search.  The next geometric task is to classify survivor sections and
+multisections and compactify the elliptic boundary.
+
+```text
+P5_H31_DIAGONAL_QUADRIC_ELLIPTIC_GENERIC_OBSTRUCTION.md
+verify_p5_h31_diagonal_quadric_elliptic_generic.py
+audit_p5_h31_diagonal_quadric_elliptic_generic.py
+```
+
+### Universal mixed kernel and the first survivor-support chart
+
+The generic unit ideal says only that the survivor projection is
+proper.  A smaller determinantal calculation now locates its support
+on a dense chart for the middle distinguished coordinates.
+
+For `q=1,2`, the `14 x 8` mixed matrix has an explicit universal
+kernel line for every marking.  Its first binary diagonal vanishes, so
+a genuine extension requires a second kernel direction.  Deleting the
+unit `a2` component gives a `14 x 7` quotient.  The same `6 x 6` pivot
+works in both cases:
+
+```text
+-64 r^2 t0 x^2 (t3-1)(r^2x-t2)(x+r^2-1) Q^2,
+Q=-f/x=-Y^2/x.
+```
+
+Bordering this pivot first forces `t3=0`, then splits into two branches.
+Compatibility of only three further borders gives
+
+```text
+q=1: (x-1)(x-1-r)^2=0,
+q=2: (x-1)(x-1+r)^2=0
+```
+
+on the main branch.  Away from the already-closed pure-direction
+curves, this forces `x=1`, followed by
+
+```text
+t0=-1/r^2, t1=Y, t2=+r (q=1) or -r (q=2), t3=0.
+```
+
+These are exactly the previously closed `H=0` survivor markings.  The
+second branch is compatible only at `r=-1` or `r=1` (or `r=0`), again
+outside the pivot chart and on already-known geometric strata.  Thus
+this dense chart contains no new survivor curve.
+
+The exact primary verifier uses direct permutation permanents; an
+independent verifier rebuilds the systems with a subset-DP permanent.
+At this checkpoint the pivot complement and `q=0,3` remained open, so
+the displayed result was a support theorem rather than a complete
+second-component obstruction.  The later endpoint and pivot-complement
+sections close those regular strata.
+
+```text
+P5_H31_ELLIPTIC_MIDDLE_COORDINATE_RANK_DROP.md
+verify_p5_h31_elliptic_middle_coordinate_rank_drop.py
+audit_p5_h31_elliptic_middle_coordinate_rank_drop.py
+```
+
+### End-coordinate kernels and a full-rank quotient chart
+
+Canonical reduction in `Q(r,x)[Y]/(Y^2-f)` turns the initially large
+`q=0,3` null vectors into
+
+```text
+q=0: (Y+r^2x,1,0,r, 1,D,Y+x-x^2,0),
+q=3: (Y-r^2x,1,0,-r, -1,-D,Y-x+x^2,0).
+```
+
+Marking again acts only by `b_i -> b_i+t_i a_i`.  Both universal lines
+kill the first binary diagonal.  After deleting the unit `a1` column,
+a small `6 x 6` pivot and its row-11 border have respective factors
+
+```text
+(r^2x-/+Y)(x-t2)(t3-1)(x-1)
+```
+
+and the same product times `D`.  The elliptic identity
+
+```text
+(r^2x-Y)(r^2x+Y)=x(r^2-1)(x-1)D
+```
+
+shows that the signed `Y` factors are units away from the standard
+geometric boundary.  Hence the quotient has rank seven, its kernel is
+only the universal line, and there is no binary survivor on this dense
+end-coordinate chart.
+
+The remaining end-coordinate marking strata are now the explicit
+divisors `t2=x` and `t3=1`, plus the already visible geometric factors.
+The result was independently rebuilt with a subset-DP permanent.
+
+```text
+P5_H31_ELLIPTIC_END_COORDINATE_FULL_RANK_CHART.md
+verify_p5_h31_elliptic_end_coordinate_full_rank_chart.py
+audit_p5_h31_elliptic_end_coordinate_full_rank_chart.py
+```
+
+### The apparent endpoint exceptions are closed genus-two trisections
+
+On the deepest end-coordinate intersection
+
+```text
+q=0 or 3, t2=x, t3=1,
+```
+
+put `epsilon=+1` for `q=0` and `epsilon=-1` for `q=3`.  Two quotient
+minors linear in `t1` have compatibility divisor
+
+```text
+-epsilon(r^2-1)(Y-epsilon(x^2-x))J_epsilon,
+J_epsilon=Y(x+r^2-1)-epsilon r^2x(x-r^2-1).
+```
+
+The first two factors are units on the regular non-pure chart.  Solving
+`J_epsilon=0` and imposing the elliptic equation leaves conjugate
+residual trisections.  Their common elementary normalization is
+
+```text
+u=r^2=(s^3+3s^2+3s+5)/(s^3+3s^2-s+1),
+x=(s+1)^4/(s^3+3s^2-s+1),
+v=r(s^3+3s^2-s+1),
+v^2=(s^3+3s^2+3s+5)(s^3+3s^2-s+1).
+```
+
+The sextic has discriminant `2^24 3^3 11`, so this is a smooth
+genus-two curve.  The remaining minors force unique `t1,t0` in each
+endpoint orientation; `t1` changes sign and `t0` does not.  At those
+candidates, two full quotient determinants share only chart units and
+have residual factors
+
+```text
+s^3+2s^2-3s+2,
+s^2+1.
+```
+
+Their gcd is one.  The quotients therefore have full rank everywhere
+on the two regular genus-two charts, and each universal mixed-kernel
+line kills the first binary diagonal.  Both apparent exception curves
+are empty.  This closes only the deepest endpoint intersections, not
+the full marking divisors.
+
+```text
+P5_H31_ELLIPTIC_END_GENUS_TWO_EXCEPTION_OBSTRUCTION.md
+verify_p5_h31_elliptic_end_genus_two_exception.py
+audit_p5_h31_elliptic_end_genus_two_exception.py
+```
+
+### The complete endpoint t2=x divisor is empty
+
+A smaller quotient minor closes the entire regular `t2=x` divisor for
+both `q=0,3`.  Put `epsilon=+1` for `q=0` and `epsilon=-1` for `q=3`.
+The minor factors as
+
+```text
+128 r^5 x^6(r^2-1)(x-1)(t3-1)L_epsilon.
+```
+
+The quadratic-field norm of `L_epsilon` is, up to the standard chart
+units, exactly the residual polynomial `R` of the genus-two
+trisection.  Thus rank drop away from `t3=1` is forced back onto the
+same curve
+
+```text
+v^2=(s^3+3s^2+3s+5)(s^3+3s^2-s+1).
+```
+
+On this normalization, successive minors force
+
+```text
+t1=epsilon (s-1)^2(s+1)(s+3)n/d^2,
+t0=((s-1)t3-2s)d^2/[2s(s+1)^4n].
+```
+
+Two complementary determinants then have residual factors
+
+```text
+L1=s^4+3s^3-s^2+s+2(1-s)t3,
+t3 L2=t3[s^3+s^2+3s-1+2(1-s)t3].
+```
+
+Their resultant is
+
+```text
+-2s(s-1)^2(s+1)(s^2+2s-1)d.
+```
+
+The only regular finite exception is `s^2+2s-1=0`, where `t3=-s`.
+A third quotient minor reduces there to
+
+```text
+-2^34 v(12s+29),
+```
+
+which is nonzero because the two residual polynomials are coprime.
+Hence the quotient has full rank everywhere on the regular divisor;
+the universal line kills the first binary diagonal.
+
+```text
+P5_H31_ELLIPTIC_END_T2_DIVISOR_OBSTRUCTION.md
+verify_p5_h31_elliptic_end_t2_divisor.py
+audit_p5_h31_elliptic_end_t2_divisor.py
+```
+
+### The complete endpoint t3=1 divisor is empty
+
+The last regular end-coordinate marking divisor also admits a
+low-degree function-field description.  On `t3=1`, eliminating `t1`
+from two quotient minors gives a quadratic in `t2`.  With
+`Z=epsilon Y`, it splits over the elliptic function field as
+
+```text
+t2-=-x(-Z+r^2x-r^2-x+1)/(x+r^2-1),
+t2+=r^2x(2Z+r^2x+r^2+x-1)/[(r^2-1)(x-1)^2].
+```
+
+This is the key geometric simplification: the apparent cover is not a
+new high-genus object.  On the minus branch, direct substitution in two
+further quotient minors has essential norm gcd `R`; on the plus branch,
+using `t1`-resultants so that pivot-degenerate fibres are retained gives
+essential norm gcd `R^2`.  Here `R=0` is precisely the already known
+genus-two trisection.
+
+On its normalization
+
+```text
+r=v/d, x=(s+1)^4/d,
+Y=epsilon sigma (s-1)(s+1)^3n/d^2, v^2=nd,
+```
+
+the four sheet/branch combinations reduce to the square-free residual
+gcds
+
+```text
+sigma=+1:  s^2+2s-1 (minus),  1 (plus);
+sigma=-1:  s(s-1)(s^2+1) (both).
+```
+
+The `s=0` point is the closed `x=1` ruling.  At all remaining values
+`s=-1+/-sqrt(2),1,+/-i`, and for both signs of `v`, the exact rank
+triples
+
+```text
+(rank M, rank[M;d_alpha], rank[M;d_beta])
+```
+
+are respectively `(6,7,6)`, `(7,7,8)`, and `(6,7,6)`.  Thus the two
+diagonal conditions retain only the universal line and no genuine
+binary extension.  The same identities hold for `q=0,3`, with the
+expected sign change in `t1`.
+
+Therefore both regular endpoint marking divisors are now completely
+closed.  At this intermediate checkpoint, the remaining regular
+elliptic-chart work was the middle-coordinate pivot complement; the
+next section closes it.
+
+```text
+P5_H31_ELLIPTIC_END_T3_DIVISOR_OBSTRUCTION.md
+verify_p5_h31_elliptic_end_t3_divisor.py
+audit_p5_h31_elliptic_end_t3_divisor.py
+```
+
+### The complete regular middle-coordinate pivot complement is empty
+
+The middle-coordinate pivot exceptions can also be closed without a
+large elimination.  For `q=1,2`, put `sigma=-1,+1` and define
+
+```text
+F=(x-1)(r^3-r+sigma)+sigma r^2(x+1),
+L=Y r^2D+t1Q,
+G=t3F+(r-sigma)D,
+
+A=2sigma r^2x+rt2+rx^2-rx
+  -sigma t2+sigma x^2-sigma x.
+```
+
+Four quotient determinants have residual factors
+
+```text
+t3FL,  t3LG,  AB,  FH.
+```
+
+Here `B|L=0` is a chart unit times `G`,
+`H|t0=0=(t3-1)(t2-r^2x)`, and both
+`A|t2=r^2x` and `G|t3=1` are chart units.  These identities give a
+short Fitting-ideal cover of the three old pivot divisors
+`t0=0,t3=1,t2=r^2x`.
+
+The only auxiliary base factor is `F=0`.  It is linear in `x`; with
+
+```text
+a=r^3+sigma r^2-r+sigma,
+b=r^3+3sigma r^2+3r+3sigma,
+```
+
+its pullback is
+
+```text
+x=(r+sigma)(r-sigma)^2/a,
+Y^2=r^4(r+sigma)^2(r-sigma)^4 b/a^3.
+```
+
+Five terminal determinants reduce on this curve to units or one of
+`t0,t3-1,C(t2)`, followed by a unit when `C=0`.  Thus this
+genus-two-looking intermediate cover is not a survivor curve.
+
+The temporary assumption `Y!=0` is removable.  On the regular
+two-torsion bisection `Y=0,x!=0`, one adapted quotient determinant is a
+chart unit times `t3`; at `t3=0`, a second determinant is itself a
+chart unit and is independent of the remaining marking.
+
+The primary verifier and an independent subset-DP permanent audit both
+reproduce the complete case tree for `q=1,2`.  Combined with the
+endpoint theorems, every marked fibre in the regular elliptic chart is
+now excluded for all four distinguished coordinates.  The remaining
+second-component problem is its birational/compactification boundary.
+
+```text
+P5_H31_ELLIPTIC_MIDDLE_COORDINATE_PIVOT_COMPLEMENT.md
+verify_p5_h31_elliptic_middle_coordinate_pivot_complement.py
+audit_p5_h31_elliptic_middle_coordinate_pivot_complement.py
+```
+
+### The complete elliptic-normalization boundary is empty
+
+The inverse-map boundary of the normalized slice `A=B=F=1` has a
+simple original-coordinate description.  With
+
+```text
+U=C+H, S=1+CH, T=H+CE^2, Psi=S^2-UT,
+```
+
+one has
+
+```text
+r=S/U,
+x=C(1-H^2)/U,
+D=S(1-H^2)/U^2.
+```
+
+The factors `H=+/-1` and `U=S=0` are the already closed factorized and
+pure-direction loci.  The only residual finite boundary is `S=T=0`,
+which is the pair of rational curves
+
+```text
+C=-1/h, H=h, E=delta h, delta=+/-1.
+```
+
+Two scaled row charts cover each projective curve.  Their pure
+coefficients are `4(h^2-1)` and `4(1-z^2)`, where `z=1/h`.  Saturated
+relative projection gives the unit ideal in three distinguished
+orientations.  In the exceptional orientation, the unique marking is
+
+```text
+t0=-1, t1=delta, t2=(z^2+1)/2, t3=0.
+```
+
+For `z!=0`, the mixed rank is six.  Its two binary diagonal factors are
+
+```text
+delta(u-2v)/z,
+-(z^2-1)[uz^2-u+6vz^2+2v]/(2z^2).
+```
+
+A mode-one marked determinant is
+
+```text
+(u-2v)^2(z^2-1)[uz^2-u+6vz^2+2v]/(2z^3),
+```
+
+so every genuine binary extension is injective on the marked
+hyperplane.  At `z=0`, the mixed kernel has dimension four but the first
+diagonal vanishes on all of it, so no binary extension exists.  The
+finite endpoint `h=0` is excluded directly by the relative projection.
+
+The independent subset-DP audit reproduces all sixteen projections and
+the boundary identities.  Hence the complete nonzero-pure marked fibre
+on the normalized affine slice `A=B=F=1` is empty.  At that checkpoint,
+the next boundary was the outer projective/gauge locus `A B F=0`.
+
+```text
+P5_H31_DIAGONAL_QUADRIC_NORMALIZATION_BOUNDARY_OBSTRUCTION.md
+verify_p5_h31_diagonal_quadric_normalization_boundary.py
+audit_p5_h31_diagonal_quadric_normalization_boundary.py
+```
+
+### The complete outer boundary of the second component is empty
+
+The remaining projective/gauge boundary is geometric rather than a
+large chart search.  The all-rank conditions are
+
+```text
+(A,B)!=(0,0), (E,F)!=(0,0),
+```
+
+and on the three normalization coordinate hyperplanes one has
+
+```text
+Psi|A=0 = Psi|F=0 = -B^2 C E^2 H,
+Psi|B=0 = A F K,
+
+K=A^2F^2+ACFH-C^2E^2+C^2H^2.
+```
+
+Projective row scalings and the diagonal source torus
+
+```text
+diag(a,b,b,a):
+(A,B,C;E,F,H) -> (aA,bB,bC;aE,bF,aH)
+```
+
+reduce every coordinate surface to a curve.  The source permutation
+`(0,1,2,3)->(1,0,3,2)` with the mode swap `1<->2` pairs
+
+```text
+AC <-> FH, AE <-> FB, AH <-> FC,
+```
+
+and pairs the two residual toric edges.  Four representative curves
+therefore suffice:
+
+```text
+AC:   (0,1,0;p,1,1),
+AE:   (0,1,p;0,1,1),
+AH:   (0,1,p;1,1,0),
+edge: (0,1,p;1,0,0).
+```
+
+Exact relative binary projection gives respectively:
+
+```text
+AC:
+ q1=(t1,t0,t3(t2-1)), q2=(t1,t0,t3(t2+1));
+
+AE:
+ q0=q3=(t1,t3,
+   t0(pt2-1),
+   t0t2^2-t0p^2-t2p^2+t2,
+   t2p^3-t2p-p^2+1,
+   t0p^3-t0t2+p^2-1);
+
+AH:
+ all four unit;
+
+edge:
+ q0=q3=(t2,t0,t1t3).
+```
+
+All omitted orientations are unit ideals.  On `AC`, the two
+projection components reduce to marked minors proportional to the two
+binary diagonals; the pivot divisor `p^2s+1=0` has an alternate kernel
+basis with terminal minors
+
+```text
+16u(u+/-p^2v)^2.
+```
+
+On `AE`, the generic marking is
+
+```text
+t2=1/p, t0=-p/(p^2+1),
+```
+
+and the only special fibres are `p=+/-1`, where the survivor is
+`t0=0` or `t2=p`.  Their complete one-parameter kernels have marked
+minors equal to a unit times the two diagonal factors.
+
+The edge has two marking lines.  Away from their intersection, its
+minors are
+
+```text
+32ps^2v^2(u-v), 16u(su-/+v)^2.
+```
+
+At the intersection, the ordinary minor
+
+```text
+16pv(u-v)(u+v)
+```
+
+misses only `u+v=0`.  Stacking the pure and neighbouring one-marked
+maps on that direction gives the exact `5 x 5` determinant
+
+```text
+128p.
+```
+
+The noncoordinate `B=0` surface becomes the rational conic
+
+```text
+E^2=H^2+H+1
+```
+
+after `A=C=F=1`.  Its homogeneous parametrization is
+
+```text
+H=u(u-2v), E=-(v^2-uv+u^2), F=v^2-u^2.
+```
+
+On the affine chart, relative projection leaves four markings over
+`v/u=1/2`; the point at infinity leaves four more.  Their diagonal
+pairs are
+
+```text
+(4u+3v,4u-3v), (2u+3v,u),
+(u-v,u+v), (u-2v,u),
+```
+
+and selected one-marked minors contain exactly these factors.  The two
+`F=0` conic endpoints lie on the already covered `FB` curve.
+
+The characteristic-zero primary verifier checks 20 relative
+projections, 32 kernel/minor cases, and both stacked exceptions.  The
+independent `F_5/F_7` audit enumerates 362,328 markings on only these
+one-parameter bundles.  It finds exactly 568 survivor markings and
+tests every one of 3,032 genuine projective binary extensions; 3,012
+have an injective neighbouring marked map, and the remaining 20 have
+an injective stacked map.
+
+Thus the entire projective parameter boundary `A B F=0` is excluded.
+Combined with the normalized affine theorem, the complete marked fibre
+of the second known pure-compression component is empty.  The honest
+remainder is possible further pure-`P_4` components and `H22`.
+
+```text
+P5_H31_DIAGONAL_QUADRIC_OUTER_BOUNDARY_OBSTRUCTION.md
+verify_p5_h31_diagonal_quadric_outer_boundary.py
+audit_p5_h31_diagonal_quadric_outer_boundary.py
+```
+
+### Three more pure components from the cubic diagonal-quadric map
+
+The diagonal-quadric reframe is more productive than the former chart
+search.  For a line with Pluecker coordinates `p_ij`, the unique
+generic diagonal quadric through it is the cubic Cremona-type map
+
+```text
+d_i=(-1)^i product_{j<k, j,k != i} p_jk.
+```
+
+Its base locus is the block-line locus `dim D(ell)>=2`, with two
+permutation-invariant types: `2+2`, where `D(ell)` is in no coordinate
+hyperplane, and `1+3`, where it is contained in one `d_i=0`.
+
+On the `1+3` radical plane use
+
+```text
+y1=(0,1,-1,0), y2=(0,1,0,-1),
+z1=(0,1,1,0),  z2=(0,1,0,1).
+```
+
+Double contraction by `y1,y2` has rank two and radical
+`span(z1,z2)`.  With
+
+```text
+P=G-T, Q=D-S,
+u0=(2,P+Q,Q-P,0), u1=(0,0,1,1),
+x1=(1,0,S,D), x2=(1,0,G,T),
+```
+
+take
+
+```text
+U0=<u0,u1>, U1=<y1,x1>, U2=<x2,y2>, U3=<z1,z2>.
+```
+
+Only `0100,0101,1100,1101` can be nonzero.  Their `2 x 2`
+determinant factors exactly as
+
+```text
+(D-G-S+T)(D+G-S-T)(D+G+S+T).
+```
+
+The three linear branches `L1,L2,L3` each have a rank-five family
+tangent.  At rational samples, their `15 x 20` Segre-incidence
+Jacobians have rank fifteen with determinants
+
+```text
+163840, 6193152, -737280.
+```
+
+Their generic diagonal-quadric jump signatures are
+
+```text
+L1=(1,1), L2=(0,2), L3=(0,1),
+```
+
+while the first two known components have `(2,1)` and `(1,0)`.
+Hence the three branches are mutually symmetry-inequivalent and
+inequivalent to the earlier components.  There are at least five
+component orbits, but no exhaustiveness claim.
+
+The characteristic-zero primary verifier and an independent modular
+DP-permanent/dual-number audit at `101,103` are green.
+
+```text
+P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md
+verify_p4_diagonal_quadric_one_three_components.py
+audit_p4_diagonal_quadric_one_three_components.py
+```
+
+### Generic marked `H31` fibres on the three new components
+
+Adaptive marked bases turn the branch tensors into a single `BBBB`
+coefficient.  Exact projection over `C(S,D,G)` gives:
+
+```text
+L1:
+ q0,q1 unit;
+ q2 one marking;
+ q3 one marking.
+
+L2:
+ q0,q1 unit;
+ q2 one marking pencil;
+ q3 one marking pencil.
+
+L3:
+ q0,q1,q2,q3 unit.
+```
+
+On every `L1` survivor, a selected mode-zero minor obeys
+
+```text
+det=A^2 B/[8DG(G+S)].
+```
+
+On both complete `L2` marking pencils, including the two values where
+the generic kernel basis changes,
+
+```text
+det=A^2 B/[8D(D+G)(D+G-S)].
+```
+
+Here `A,B` are exactly the two required nonzero diagonal coefficients
+of the neighbouring binary `Delta_2` slice.  The pure one-marked
+transverse entry is the constant `-1` for `q=2` and `+1` for `q=3`.
+Thus every generic binary extension is ternarily obstructed, while
+`L3` has no binary extension at all.
+
+The independent `F5/F7` audit exhausts 36,312 marked bases and all 144
+genuine projective extension directions; every direction has an
+injective neighbouring marked map and a transverse pure entry.
+
+```text
+P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h31_one_three_component_generic_obstruction.py
+audit_p5_h31_one_three_component_generic_obstruction.py
+```
+
+This is a generic theorem only.  A small `F5` reconnaissance over all
+nonzero-pure affine parameter points found no escape on any branch,
+but that census is discovery guidance, not proof.  Relative
+characteristic-zero projection has already resolved the formerly
+generic-unit `L1,q=0` boundary into two rational sheets:
+
+```text
+t3=0:
+ S=-D, t1=-D, t2=-2D, t0=-1/(G-D);
+
+t3=-1:
+ S=D-2G, t1=-2G, t2=-G, t0=-1/(D-G).
+```
+
+On the first sheet the genuine binary conditions are
+`u(u-v)!=0` and a mode-zero minor is
+`-8D u^2(D-G)(u-v)`; on the second they are
+`v(u-v)!=0` and a mode-zero minor is
+`8G v^2(D-G)(u-v)`.  These are promising first charts for a complete
+affine-boundary theorem.  The alternative pure-factor charts
+`DG=0`, analogous `L2/L3` divisors, and projective torus boundary are
+still pending.
+
+### Common smooth diagonal-quadric spinor obstruction
+
+Normalize a smooth diagonal quadric to
+
+```text
+X0^2+X1^2+X2^2+X3^2=0
+```
+
+and parametrize its two rulings by spinor coordinates `L(s),R(s)`.
+For either ruling, the cubic diagonal-quadric map on the annihilator
+line is
+
+```text
+2s(s^4-1)(1,1,1,1).
+```
+
+The missing point `s=infinity` is also a block line.  Up to ruling
+swap and mode permutation the only four-line patterns are `LLLL`,
+`LLLR`, and `LLRR`.
+
+For each pattern, form all single-mode flattening minors of the
+restricted `2^4` permanent tensor and saturate by the ideal of its
+entries.  Fresh characteristic-zero Singular gives
+
+```text
+J_LLLL=(1),
+dim J_LLLR=1,
+dim J_LLRR=1.
+```
+
+After setting
+
+```text
+B=product_i s_i(s_i^4-1),
+```
+
+both mixed ideals satisfy `J:B^infinity=(1)`.  Thus every nonzero pure
+common-smooth-quadric solution contains a block annihilator line, and
+the mixed solution closures have total dimension at most four after
+restoring the three-dimensional diagonal source torus.  The apparent
+sixth-component lead is therefore a boundary phenomenon, not a new
+component.
+
+An independent DP-permanent audit over `F13,F17` checks the line/plane
+duality and cubic map and exhausts 74,496 non-block parameter tuples
+across the three patterns, finding zero nonzero-pure tuples.  It also
+replays rational pure boundary samples for `LLLR` and `LLRR`.
+
+```text
+P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md
+verify_p4_common_smooth_diagonal_quadric_obstruction.py
+audit_p4_common_smooth_diagonal_quadric_obstruction.py
+```
+
+This closes only the semisimple common-smooth-quadric locus.  The
+remaining component-classification problem is concentrated on the
+star/triangle exceptional-pair graphs at `2+2` and `1+3` block-line
+centers.
+
+### Directed radical-star component classification
+
+For a nonzero pure restriction, the perfect pairing on the
+six-dimensional squarefree degree-two space gives
+
+```text
+r_ij+r_kl <= 7
+```
+
+for every opposite pair.  If all pair-image ranks are at least three,
+one may choose an exceptional edge from each perfect matching; the
+three chosen edges form a star or triangle.
+
+In pure-factor bases `(kernel,active)`, the unique relation on a
+rank-three pair has zero active-active coefficient.  If its `2 x 2`
+coefficient matrix has rank one, the relation factors through a pure
+kernel endpoint.  The resulting product `uv=0` in the squarefree
+complete intersection forces `u,v` into one source-coordinate pair.
+
+When two rank-one exceptional relations point away from a common mode,
+their two independent common-mode vectors have either disjoint
+supports or one-coordinate overlap.  These are exactly the `2+2` and
+`1+3` block planes, and the common plane is automatically the radical
+of the double contraction by the two outer kernel rows.
+
+The dense complement-row gauges are exhaustive.  In the disjoint
+case they recover the `(A:B:C),(E:F:H)` normal form and the irreducible
+determinant `Psi`.  In the overlap case they recover the
+`(S,D,G,T)` normal form and the split determinant
+
+```text
+(D-G-S+T)(D+G-S-T)(D+G+S+T).
+```
+
+Thus the directed radical-star stratum contains exactly four already
+certified component closures: the second `2+2` component and
+`L1,L2,L3`.  No additional component occurs generically there.
+
+```text
+P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md
+verify_p4_radical_star_component_classification.py
+audit_p4_radical_star_component_classification.py
+```
+
+The remaining component alternatives have mixed kernel-edge
+orientations (including the known triangle component), predominantly
+rank-two exceptional relations, pair-image rank at most two, or
+coincident/support-one zero-product boundaries.
+
+### Sixth pure component from the mixed zero-product orientation
+
+Normalize the mixed pair relations to
+
+```text
+x1=(0,0,1,1),       y1=(a,1,c,d),
+x2=(p,1,0,q),       y2=(-1,0,1,0),
+x3=(1,0,1,0),       y3=(0,0,-1,1),
+```
+
+with `x1*y3=y2*x3=0` in the squarefree degree-two algebra.  Of the
+seven kernel-containing contractions to mode zero, only three are
+nonzero.  The exact rank-at-most-two determinantal ideal of their
+`3 x 4` matrix has five linear minimal primes:
+
+```text
+(c+p+q,a+d),
+(d+q,a+c+p),
+(c,a+d+p+q),
+(c-d+p-q,a),
+(c-d,a+p-q).
+```
+
+On the first prime, set `N=q(d+p+q)` and take
+
+```text
+U0=span((-dp,d+q,N,0),(dp,-d-q,0,N)),
+U1=span((0,0,1,1),(-d,1,-p-q,d)),
+U2=span((p,1,0,q),(-1,0,1,0)),
+U3=span((1,0,1,0),(0,0,-1,1)).
+```
+
+Every restricted coefficient vanishes except
+
+```text
+T0000=2q(d+p+q).
+```
+
+At `(d,p,q)=(1,2,3)`, the diagonal-source family tangent has rank five
+with minor `-9/2`.  In pivots `(02),(02),(01),(02)`, the standard
+Segre-incidence Jacobian has rank fifteen; the selected minor is
+`-737280`.  Hence the irreducible family closure is a generically
+smooth five-dimensional component.
+
+Its pair profile is `(4,4,3,4,3,3)` and its jump signature is `(0,1)`,
+the same coarse values as `L3`.  The finer directed relation invariant
+separates them.  All three exceptional relations have rank one; the
+new sorted pure-kernel endpoint indegrees are
+
+```text
+(2,1,0,0),
+```
+
+whereas `L1,L2,L3` have `(1,1,1,0)`, and the first two components have
+only two rank-one exceptional edges.  This raises the certified lower
+bound to six symmetry-inequivalent pure-component orbits.
+
+The third linear prime above is a mode-`(0,1)` symmetry translate of
+the first under
+
+```text
+d'=-q(d+p+q)/(d+q).
+```
+
+```text
+P4_MIXED_ORIENTATION_PURE_COMPONENT.md
+verify_p4_mixed_orientation_pure_component.py
+audit_p4_mixed_orientation_pure_component.py
+```
+
+The sixth component's generic and boundary marked `H31` fibres were
+open at this checkpoint.
+
+### Generic marked `H31` fibre on the sixth component
+
+Use the second row of each component plane as the pure kernel row and
+the first row as the active row.  The only coefficient is then
+
+```text
+T_BBBB=2q(d+p+q).
+```
+
+Exact projection over `C(d,p,q)` makes the distinguished-coordinate
+`0,1` ideals unit.  Coordinates two and three each leave two rational
+marking sheets.  On the four sheets, selected all-extension minors
+satisfy
+
+```text
+sheet  mode  rows  det/(A B^2)
+2A       1   0237  -p^2 q/(d+p+q)
+2B       2   0137   d(d+q)/q
+3A       3   0267  -(d+q)
+3B       3   0267  -(d+q).
+```
+
+The corresponding pure one-marked maps also have nonzero transverse
+entries `d+q`, `d(d+p+q)`, `d+q`, and `d+q`.  Hence the complete marked
+fibre at the generic point is empty.
+
+The independent `F7/F11` audit exhausts 68,168 marked bases, finds
+exactly four surviving markings in each field, and checks all 64
+genuine projective extension directions.
+
+```text
+P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h31_mixed_orientation_component_generic_obstruction.py
+audit_p5_h31_mixed_orientation_component_generic_obstruction.py
+```
+
+Only special parameter divisors and projective boundary points remain.
+
+### A six-dimensional lower-pair-rank component
+
+The determinantal prime
+
+```text
+d+q=0,        a+c+p=0
+```
+
+first appeared to be a singular five-dimensional branch at the sample
+`(a,c,d)=(1,2,3)`.  That sample is accidentally on `d=a+c`; its entire
+quadratic tangent obstruction vanishes.  Moving to `d=4` exposed the
+correct geometry.
+
+Put `h=a+c-d` and take
+
+```text
+U0=span((1,0,0,-1),(0,0,1,1)),
+U1=span((1,b,0,1-bh),(0,e,1,1-eh)),
+U2=span((1,0,-1,0),(0,1,-a-c,-d)),
+U3=span((1,0,0,1),(0,0,1,-1)).
+```
+
+The only nonzero restricted coefficients are
+
+```text
+T1010=2(1-b(a+c)),
+T1110=2(1-e(a+c)).
+```
+
+At `(a,c,d,b,e)=(1,2,4,1,2)`, with unit source-torus parameters, the
+family-incidence map has rank six; the minor on rows
+`(1,3,4,5,6,10)` and columns `(a,d,b,e,t0,t2)` is `1`.
+The `15 x 20` Segre-incidence Jacobian has rank fourteen, with selected
+minor `-215040`.  Thus the rational family closure is a generically
+smooth six-dimensional component.
+
+Its pair profile and directed signature are
+
+```text
+(4,3,2,4,4,3),
+(2 rank-one edges, 0 rank-two-relation edges, (2,0,0,0)).
+```
+
+Its jump signature is `(0,2)`.  Dimension alone separates it from all
+six previously certified five-dimensional components.  The old
+determinantal prime embeds as the subfamily `b=1/a,e=0`, so it was not
+an eighth component.
+
+The characteristic-zero primary verifier and independent modular
+dual-number audits over `F101,F103` are green.
+
+```text
+P4_SIX_DIMENSIONAL_PURE_COMPONENT.md
+verify_p4_six_dimensional_pure_component.py
+audit_p4_six_dimensional_pure_component.py
+```
+
+This raises the certified lower bound to seven component orbits, not
+an exhaustive classification.
+
+### Generic marked `H31` fibre on the six-dimensional component
+
+The normal form depends on `a,c` only through `s=a+c`.  Set
+
+```text
+u=1-sb,       v=1-se.
+```
+
+After a common row scaling in `U1`, the pure kernel/active basis has
+
+```text
+alpha1=(sv,v-u,-su,d(v-u)),
+beta1 =(s,1-u,0,d+u(s-d)),
+```
+
+and the only restricted coefficient is `T_BBBB=2su`.
+
+Exact projection over `C(s,d,u,v)` makes the distinguished-coordinate
+one ideal unit.  Its ubiquitous kernel direction simply restores the
+deleted source coordinate and has diagonals `(0,2su)`, so it
+reconstructs the pure tensor rather than a binary neighbour.
+
+Put
+
+```text
+tau=(1-u)/(u-v),       sigma=sv/(u-v).
+```
+
+The other three coordinates have exactly the markings
+
+```text
+q0=(1,tau,sigma,0),
+q2=(0,tau,sigma,1),
+q3=(0,tau,sigma,0).
+```
+
+For these sheets, the ideals generated by the fourteen mixed
+equations, an inverse of the two binary diagonals, and three
+mode-zero minors are all unit.  The row triples are
+
+```text
+q0: 0127,0137,0147
+q2: 0267,0367,0467
+q3: 0127,0137,0147.
+```
+
+An independent audit over generic `F5,F7` samples exhausts 12,104
+marked bases, finds precisely these three markings in each field,
+checks 3,026 reconstruction-kernel instances, and excludes all 186
+genuine projective extension directions.
+
+```text
+P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h31_six_dimensional_component_generic_obstruction.py
+audit_p5_h31_six_dimensional_component_generic_obstruction.py
+```
+
+All seven certified component orbits therefore have empty generic
+marked `H31` fibre.  The new component's special parameter/projective
+boundary, the other incomplete component boundaries, component
+exhaustiveness, and `H22` remain open.
+
+### Closure of the five mixed determinantal primes
+
+The five linear primes in the mixed `3 x 4` determinantal normal form
+are now identified without another component search:
+
+```text
+P1=(c+p+q,a+d)       -> sixth component,
+P2=(d+q,a+c+p)       -> six-dimensional component subfamily,
+P3=(c,a+d+p+q)       -> sixth component by mode swap,
+P4=(c-d+p-q,a)       -> L2,
+P5=(c-d,a+p-q)       -> L1.
+```
+
+For `P4`, swap source coordinates zero and one and reorder the
+split-cubic modes as `(B2,B0,B1,B3)`.  The exact `L2` parameters are
+
+```text
+S=p, D=q, G=q(p-q-d)/(d+q),
+T=D+G-S=-dp/(d+q).
+```
+
+For `P5`, the same symmetries use
+
+```text
+S=p, D=q, G=-dp/(d+q),
+T=-D+G+S=-q(d-p+q)/(d+q).
+```
+
+All four plane Pluecker vectors agree identically in each case.  The
+primary characteristic-zero verifier and independent modular
+`F101/F103` audit are green.
+
+```text
+P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md
+verify_p4_mixed_determinantal_prime_classification.py
+audit_p4_mixed_determinantal_prime_classification.py
+```
+
+Thus the dense mixed determinantal chart contains no eighth component.
+Other mixed-orientation normal forms, rank-two exceptional relations,
+and degenerate lower-rank boundaries remain part of the global
+component-classification problem.
+
+### Equal-weight `H22` component obstruction and slope correction
+
+The normalized `H22` contractions do not meet the pure `P4` slice
+along coordinate hyperplanes.  Their source bases are instead
+
+```text
+D01(r)=(r0+r1,r2,r3,r4),
+D23(r)=(r0,r1,r2+r3,r4).
+```
+
+This diagonal-hyperplane reformulation was applied to the
+six-dimensional apolar component over `C(s,d,u,v)`.  For an arbitrary
+pure marking `beta_i+t_i alpha_i` and arbitrary fifth-coordinate
+extensions `(x0,...,x3,y0,...,y3)`, each neighboring binary tensor has
+fourteen mixed coefficients linear in the extensions.  Normalizing
+one desired diagonal and saturating by the other projects to `(1)` for
+both `D01` and `D23`.  Hence neither equal-weight pencil admits a
+nonzero binary `Delta2` extension on this normal-form chart.
+
+The `D23` unit ideal hides a short identity.  If `A` is the coefficient
+row of the desired `0000` diagonal, then
+
+```text
+M1000=(t0-1)A,
+(u-v)M1110=-G A,
+G at t0=1 equals -s u.
+```
+
+Vanishing of `M1000` with `A z!=0` forces `t0=1`, after which
+`M1110 z=su/(u-v) A z` is nonzero.  Thus the third target row is never
+reached in this direction.
+
+The characteristic-zero verifier and independent `F5,F7` audit are
+green.  The audit tests all `625+2401=3026` marked bases for each
+diagonal.  It finds no viable extension; for `D23`, it also replays the
+two-row identity at every marking.
+
+```text
+P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md
+verify_p5_h22_six_dimensional_equal_weight_binary_obstruction.py
+audit_p5_h22_six_dimensional_equal_weight_binary_obstruction.py
+```
+
+An orbit-slope audit caught an essential limitation before publication.
+Restoring the diagonal-source torus changes the pencils to
+
+```text
+D01_rho(r)=(rho r0+r1,r2,r3,r4),
+D23_sigma(r)=(r0,r1,sigma r2+r3,r4).
+```
+
+These weighted pencils have genuine binary survivor loci.  In
+particular, over `C(s,d,u,v,sigma)` the generic `D23` projection leaves
+
+```text
+t0=0,
+(u-v)t1+u-1=0,
+(u-v)t2-sv=0,
+t3 free.
+```
+
+Therefore the exact equal-weight obstruction is not by itself a
+generic six-dimensional-component obstruction.  The weighted
+survivors require a separate ternary rank calculation.
+
+### Generic weighted `H22` obstruction on the six-dimensional component
+
+The slope-restored calculation is now closed on the generic component
+point.  Over `C(s,d,u,v,r)`, the weighted `D01` projection is the unit
+ideal.  The weighted `D23` projection is exactly the marking pencil
+displayed above.
+
+On that pencil, a selected `6 x 6` mixed minor is
+
+```text
+-2 s^2 u^2 (r-1)^2 (r+1)^3
+   (u-1)(u-v)^2(pr-p+1).
+```
+
+The two-dimensional extension kernel has one reconstruction direction
+whose two diagonals are zero.  On a complementary genuine direction,
+the diagonals are
+
+```text
+-2r(r-1)(u-v)^2 /
+  (su(r+1)(u-1)(pr-p+1)),
+
+2(ru-r+u-v)/(u-1).
+```
+
+Thus every genuine binary extension is that direction plus an
+arbitrary reconstruction multiple.  For the mode-zero one-marked
+`8 x 4` map, adjoin the `0127` and `0137` minors to the fourteen mixed
+equations and invert the diagonal product.  The resulting exact ideal
+over `C(s,d,u,v,r,p)` is `(1)`.  Every genuine survivor therefore has
+marked rank four and cannot factor through three target coordinates.
+
+The independent `F7,F11` audit uses separate DP permanents and modular
+row reduction.  It tests `2401+14641=17042` markings in each weighted
+direction, recovers only the predicted `D23` marking prefix, and checks
+rank four on all `42+110=152` genuine projective extension directions.
+Some finite specializations make both selected minors zero, so the
+audit deliberately checks the full marked rank; the
+characteristic-zero two-minor certificate is over the generic function
+field.
+
+```text
+P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h22_six_dimensional_component_generic_obstruction.py
+audit_p5_h22_six_dimensional_component_generic_obstruction.py
+```
+
+This is the first orbit-generic `H22` component obstruction.  Its
+visible slope/parameter divisors, the component boundary, the other
+pure components, component exhaustiveness, and the global conjecture
+remain open.
+
+### Generic weighted `H22` obstruction on the mixed-orientation component
+
+The weighted diagonal-hyperplane method has now been transported to
+the mixed-orientation fivefold.  Over `C(d,p,q,r)`, use its canonical
+marked basis with
+
+```text
+N=q(d+p+q),
+T1111=2N,
+beta_i(t_i)=beta_i+t_i alpha_i.
+```
+
+For `D01`, the fourteen mixed coefficients form a `14 x 8` matrix
+`M01(t)`.  Exhaustive `F5,F7` reconnaissance found rank eight at all
+`625+2401` markings, but this modular observation was not promoted.
+Direct saturation, all-maximal-minor computation, and several full
+projective charts reached their time bounds; those runs are null
+results.
+
+The exact proof instead uses a hierarchical projective cover.  The
+charts `x2=1` and `x3=1` are unit, so any kernel point has
+`x2=x3=0`.  On that subspace the charts `y2=1,y3=1` are unit.  The
+remaining kernel would lie in the four-coordinate subspace
+`(x0,x1,y0,y1)`, whose four standard projective charts are all unit.
+This covers `P7` exactly and proves
+
+```text
+ker M01(t)=0
+```
+
+for every marking over the algebraic closure of the function field.
+No diagonal saturation is needed.
+
+For `D23`, exact elimination after normalizing the first diagonal and
+inverting the second gives a proper marking ideal containing
+
+```text
+t1*t3,
+(t0-1)*t3,
+t1*((d+q)*t2-p*q),
+(t0-1)*(t2+d-p),
+(t0-1)*t1.
+```
+
+These relations cover every genuine marking by three closures:
+
+```text
+A: t0=1, t1=0;
+B: t0=1, t3=0, (d+q)t2=pq;
+C: t1=0, t3=0, t2=p-d.
+```
+
+On each closure, adjoin the mode-three marked minors with rows `0267`
+and `0467` to the mixed equations and invert the product of the two
+binary diagonals.  All three exact ideals are `(1)`.  Hence every
+genuine `D23` survivor has marked rank four and cannot extend to a
+ternary local map.
+
+The self-contained audit over `F5,F7` tests every marking.  It replays
+rank eight for every `D01` matrix, finds respectively seven and six
+genuine `D23` survivors, verifies that each is on the three-closure
+cover with a one-dimensional extension kernel, and finds both selected
+minors nonzero on every survivor.
+
+```text
+P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h22_mixed_orientation_component_generic_obstruction.py
+audit_p5_h22_mixed_orientation_component_generic_obstruction.py
+```
+
+The characteristic-zero primary verifier and independent audit are
+green.  At that checkpoint the component's parameter/slope divisors
+and projective boundary, the other five known component orbits'
+generic `H22` incidences, component exhaustiveness, and the global
+conjecture remained open.
+
+### Generic weighted `H22` obstruction on the three `1+3` components
+
+The weighted diagonal method was next transported through the shared
+radical-plane normal form of `L1,L2,L3`.  Over `C(S,D,G,r)`, exact
+binary projection gives
+
+```text
+L1 D01=(1),
+L2 D01=(1),
+L3 D01=(1),
+L3 D23=(1).
+```
+
+The remaining `L1 D23` ideal is
+
+```text
+S*t2+G*(D-S)*t3+(D-S)*(S+G),
+(S-D+G)*t1+D*(S-D)*t3+(D-S)*(S-D+G),
+(S+G)*t0+1,
+t3*(t3+1).
+```
+
+It is exactly two rational marking sheets, obtained from `t3=0,-1`.
+The remaining `L2 D23` ideal is
+
+```text
+(D+G)*t0+1,
+t2*t3,
+t1*(t3+1),
+t1*t2.
+```
+
+Its point set is covered by three affine lines:
+
+```text
+t1=t2=0;
+t1=t3=0;
+t2=0, t3=-1,
+```
+
+with `t0=-1/(D+G)` throughout.
+
+Modular reconnaissance over `F5,F7` found one fixed marked minor on
+every genuine survivor: the mode-zero rows `0247`.  This pattern was
+then proved exactly.  On the two `L1` sheets and three `L2` line
+closures, adjoining that minor to the fourteen mixed equations and
+inverting the product of the two binary diagonals gives `(1)` in all
+five cases.  Every survivor therefore has marked rank four.
+
+The independent audit checks all `12,104` branch/pencil markings over
+`F5,F7`.  It replays the empty incidences, the two-sheet/three-line
+cover, rank-seven one-dimensional extension kernels on every genuine
+survivor, and a nonzero `0247` minor in every case.
+
+```text
+P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md
+verify_p5_h22_one_three_components_generic_obstruction.py
+audit_p5_h22_one_three_components_generic_obstruction.py
+```
+
+The exact primary verifier and independent audit are green.  Generic
+weighted `H22` incidence is now empty on five of the seven certified
+pure-component orbits.  Their boundaries, the two earlier rank-two
+components, component exhaustiveness, and the global conjecture remain
+open.
+
+### Generic weighted `H22` obstruction on the first rank-two component
+
+Transporting the weighted diagonal-hyperplane method to the original
+five-parameter component gives a sixth generic exclusion.  After
+canonicalization, work over `C(L,Q,C,r)` with
+
+```text
+T1111=2(C+L).
+```
+
+The weighted `D01` mixed matrix is injective at every marking.  The
+proof is an exact hierarchical cover of its projective extension
+kernel: the charts `x2=1,x3=1` are unit; after setting
+`x2=x3=0`, the charts `y2=1,y3=1` are unit; after setting those four
+coordinates to zero, the residual charts
+`x0=1,x1=1,y0=1,y1=1` are unit.  Thus the eight charts cover `P7`
+without enumerating markings.
+
+For `D23`, put
+
+```text
+Z=Q(L+C)(r+1),
+H=Z-r+1,
+U=LQZ+2LQ+QC(r+1)-r+1,
+P=C[LQ(r+1)(Z-r+2)+QC(r+1)-r+1],
+R=L^2(r-1)(Z+1),
+E=LC(r-1-Z).
+```
+
+Exact projection of the normalized binary system gives
+
+```text
+P*t2+R*t3+E,
+t1,
+Q*U*t0+(r-1)*t3+U,
+t3*((r-1)*t3+H).
+```
+
+Hence every genuine marking is on one of two rational sheets,
+`t3=0` or `(r-1)t3+H=0`.  On the first, adjoining the mode-two
+`0147` marked minor to the mixed equations and saturating by the two
+binary diagonals gives `(1)`.  On the second, the `0137` minor gives
+`(1)`.  Every genuine binary extension therefore has marked rank four
+and cannot lift to a ternary local map.
+
+The independent `F5,F7` audit exhausts every `D01` marking, reconstructs
+both exact `D23` sheets, and checks mixed rank seven, one-dimensional
+extension kernel, nonzero diagonals, and the selected nonzero marked
+minor at its two generic samples.
+
+```text
+P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h22_first_rank_two_component_generic_obstruction.py
+audit_p5_h22_first_rank_two_component_generic_obstruction.py
+```
+
+Generic weighted `H22` incidence is now empty on six of the seven
+certified pure-component orbits.  The remaining generic component
+target is the diagonal-quadric component.  Parameter/slope divisors,
+projective boundaries, component exhaustiveness, and the global
+conjecture remain open.
+
+### Diagonal-quadric weighted `H22` working frontier
+
+The seventh generic target admits a smaller exact formulation.  In the
+normal form
+
+```text
+U=C+H, S=1+CH, T=H+CE^2, S^2=UT,
+```
+
+one may choose the pure basis
+
+```text
+alpha_0=Uu_0+Su_1, beta_0=u_0,
+alpha_1=y_1,       beta_1=x_1,
+alpha_2=y_2,       beta_2=x_2,
+alpha_3=Tk_0-Sk_1, beta_3=k_0.
+```
+
+Modulo `S^2-UT`, every binary coefficient except `T1111=-4S`
+vanishes.  On the dense chart `l=S/U`, row scaling reduces the component
+function field to
+
+```text
+Q(C,l,r)[E] /
+(-C^2 E^2+C^2 l^2+C E^2 l-C l-l^2+1).
+```
+
+The relation is linear in `E^2`.  For either weighted diagonal, binary
+extension is therefore the rank-drop scheme of a direct `14 x 8`
+three-row-permanent matrix over a quadratic field.
+
+Exact elimination on two rational elliptic fibres gives different
+answers: at `(e,x,Y)=(2,-3,-12)`, `D01` has two marking sheets and
+`D23` is empty; at `(2,-3/4,3/8)`, both are empty.  Projective
+compactification exposes invalid proportional-marking survivors at
+infinity, so these special fibres do not prove a generic statement.
+
+Small exact finite-field scans likewise separate boundary from interior
+behaviour.  At `(C,E,H,r)=(1,1,2,2)`, where `l=1`, both `F5` and `F7`
+have isolated genuine rank-seven survivors, all rejected by the
+mode-zero `0267` marked minor.  In contrast, the four nondegenerate
+ratio-chart points over `F7` have no genuine affine survivor at slope
+two; one of eight scans has a rank-drop point, but it fails a diagonal
+gate.  These scans are discovery only and do not exclude algebraic
+points or prove characteristic-zero genericity.
+
+The exact maximal-minor, projective-kernel, and cofactor-Fitting
+computations over the generic quadratic field all exceeded their
+600-second caps.  They are recorded as null outcomes.  Exact
+factorization of thirteen selected maximal minors did finish.  It
+exposes recurrent factors `t3`, `l*t3+1`, `t2+(l^2-1)`, and the
+direction-dependent pair `(l-1)t0-1`, `(l+1)t0+1`, but every selected
+minor also has a large complementary factor.  These are branch hints,
+not a complete support decomposition.  Even substituting the two
+`t3` hyperplanes before determinant expansion left four
+direction/branch Gröbner jobs beyond a 300-second cap.  The next proof
+target is to reduce arithmetic to `a+bE`, decide the saturated
+maximal-minor ideal at binary level, and, if it is proper, certify all
+four marked Fitting ideals on its survivor algebra with separate
+boundary covers.
+
+```text
+P5_H22_DIAGONAL_QUADRIC_WORKING_NOTE.md
+```
+
+This is an exploratory reframe, not a seventh component theorem.
+
+### Generic weighted `H22` obstruction on the diagonal-quadric component
+
+The generic quadratic-field Gröbner computations above were bypassed
+by changing the geometry of the question.  Before marking, the sixteen
+binary extension coefficients form the image `S` of a fixed
+`16 x 8` multilinear/apolar extension map.  Replacing
+`beta_i` by `beta_i+t_i alpha_i` does not move `S`; in fixed dual
+coordinates, a binary target has the form
+
+```text
+A(t)+q B,
+
+A(t)=tensor_i(alpha_i^*-t_i beta_i^*),
+B=tensor_i beta_i^*.
+```
+
+After projective compactification, every such target lies in the join
+of the Segre fourfold `X=(P1)^4` with its point `B`.  Thus binary
+extension is implied by
+
+```text
+P(S) intersect J(B,X) != empty.
+```
+
+At the exact rational interior point
+
+```text
+(C,E,l,r)=(-2/3,-1/4,2,2),
+```
+
+the pure coefficient is `T1111=5` and both weighted directions have
+extension rank eight.  Exact rational membership equations on the
+sixteen standard Segre charts give fifteen unit ideals.  The last
+chart gives only
+
+```text
+(x0,x1,x2,x3,q+1),
+```
+
+where `A=B` and `A+qB=0`; this is the zero-vector base point, not a
+projective extension.  Blowing up the coordinate ideal resolves the
+join parametrization.  Its exceptional divisor maps to
+
+```text
+span(e0111,e1011,e1101,e1110,e1111).
+```
+
+This five-space is disjoint from the extension eight-plane in both
+directions: the augmented ranks are thirteen, certified by the exact
+minors
+
+```text
+D01: -3107727,
+D23: -6284849697/256.
+```
+
+Hence the full projective join intersection is empty at that fibre,
+including marking-at-infinity and tangent limits.  On the open where
+the extension map has rank eight, the intersection incidence is closed
+inside a projective bundle, so its projection to the irreducible base
+is proper.  Because the image misses one point, it is a proper closed
+subset and misses the generic point.  This proves generic weighted
+`H22` emptiness for both directions without a generic function-field
+elimination.
+
+The primary Singular verifier and a separate exact SymPy audit using a
+subset-DP permanent both pass all thirty-two chart computations and the
+exceptional-space ranks:
+
+```text
+P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h22_diagonal_quadric_component_generic_obstruction.py
+audit_p5_h22_diagonal_quadric_component_generic_obstruction.py
+```
+
+Generic weighted `H22` incidence is therefore empty on all seven
+certified pure-`P4` component orbits.  This is not component
+exhaustiveness and does not close special parameter/slope divisors,
+all of `H22`, the global lift, or the prize conjecture.
+
+### Eighth pure component from the disjoint mixed-star support
+
+The statement above closed all seven components known at that
+checkpoint, but the component list was not exhaustive.  Returning to
+the rank-one exceptional star reveals the omitted discrete alternative.
+For two relations pointing to the centre and one pointing to a leaf,
+the overlapping-support chart used previously has support pattern
+`{23,23,02}`.  The distinct supports meet once.  The disjoint pattern
+`{01,01,23}` is not a boundary of that normalization.
+
+Normalize the kernel/active rows by
+
+```text
+y0=(0,0,1,-1),       x0=(a+b,a-b,0,2),
+x1=x2=(1,1,0,0),
+y3=(1,-1,0,0),       x3=(0,0,1,1).
+```
+
+Put
+
+```text
+j=f+b*phi^2,
+kappa=phi*(b*f+1),
+eta=-(b*f+1),
+
+y1=(-a*f+1,-a*f-1,f+phi,f-phi),
+y2=(-a*j+eta,-a*j-eta,j+kappa,j-kappa).
+```
+
+A separate subset-DP permanent expansion and the primary expansion
+both give only
+
+```text
+T1001=-4*Phi,       T1111=4,
+
+Phi=a^2*b*f*phi^2+a^2*f^2
+    -b^2*f^2+b^2*phi^2-b*f-1.
+```
+
+The polynomial is the determinant of the remaining `3 x 3` linear
+kernel system.  As a quadratic in `a`, its coefficient ratio has odd
+valuation at `f=0`, so Gauss's lemma proves irreducibility.
+
+At
+
+```text
+(a,b,f,phi)=(-12,-10,3/4,-5/28),
+```
+
+the hypersurface derivative in `phi` is `350`.  After adding the
+diagonal source torus, the exact family tangent has rank five; its
+selected minor is
+
+```text
+4129/365226400.
+```
+
+The universal Segre-incidence Jacobian has rank fifteen in twenty
+variables, with selected minor
+
+```text
+46800000/34179505129.
+```
+
+Thus the family closure is a smooth five-dimensional irreducible
+component.  Its generic pair profile is `(4,4,3,4,3,3)`, its directed
+signature is `(3 rank-one,0 rank-two,(2,1,0,0))`, and its
+diagonal-quadric jump signature is `(1,0)`.  The disjoint-versus-overlap
+support intersection distinguishes it from the earlier mixed
+component; the other pair and dimension invariants distinguish all
+remaining certified orbits.
+
+```text
+P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md
+verify_p4_disjoint_mixed_star_pure_component.py
+audit_p4_disjoint_mixed_star_pure_component.py
+```
+
+The certified lower bound is now eight component orbits: seven
+fivefolds and one sixfold.  At this checkpoint the generic `H31` and
+weighted `H22` incidences of the eighth component were open; the next
+section closes generic `H31`.  Component exhaustiveness and the global
+prize conjecture remain unresolved.
+
+### Generic marked `H31` fibre on the eighth component
+
+Use the component's pure-factor bases `(alpha_i,beta_i)=(y_i,x_i)` and
+write every marked basis as `beta_i+t_i alpha_i`.  Over
+
+```text
+K=C(a,b,f)[phi]/(Phi),
+
+Phi=a^2*b*f*phi^2+a^2*f^2
+    -b^2*f^2+b^2*phi^2-b*f-1,
+```
+
+the exact saturated projection of the genuine binary-neighbour
+incidence is unit for distinguished source coordinates zero and one.
+For coordinates two and three it is respectively
+
+```text
+(Phi,t1,t2,t3,L2),       (Phi,t1,t2,t3,L3),
+```
+
+where
+
+```text
+G=a^2*b*f^2+2*b^2*f+b,
+
+L2=G*phi+(1-a^2*f^2)*t0
+   +3*a^2*f^2-2*b^2*f^2-2*b*f-3,
+
+L3=G*phi+(1-a^2*f^2)*t0
+   -a^2*f^2+2*b^2*f^2+2*b*f+1.
+```
+
+Bidirectional ideal reduction proves these are the complete
+projections, not merely necessary equations.  Thus each surviving
+coordinate has one marking over the component function field.
+
+On either marking the mixed extension matrix has rank six.  Exact
+reduction modulo `(Phi,Lq,Mq*z)` gives
+
+```text
+det P2(z)[0137] =  R*A2(z)*B2(z)^2,
+det P3(z)[0137] = -R*A3(z)*B3(z)^2,
+
+R=f*(b*f+1)*(1-a^2*f^2)/(a^2*f+b).
+```
+
+Every genuine binary extension has both diagonals nonzero, so on the
+dense open where `R!=0` its mode-zero one-marked map has rank four and
+cannot factor through a ternary target local space.  The generic
+marked `H31` fibre is empty.
+
+The characteristic-zero verifier performs the four projections and
+both all-extension reductions.  An independent subset-DP/modular audit
+at generic points over `F_11` and `F_13` exhausts the marked bases,
+recovers exactly the two projected markings, and replays the minor
+identity on every genuine projective kernel direction:
+
+```text
+P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h31_disjoint_mixed_star_component_generic_obstruction.py
+audit_p5_h31_disjoint_mixed_star_component_generic_obstruction.py
+```
+
+All eight currently certified pure-component orbits are therefore
+generically closed for `H31`.  The eighth component's special
+parameter/projective boundary, its weighted `H22` incidence, component
+exhaustiveness, and the global prize conjecture remain unresolved.
+
+### Weighted `H22` working frontier on the eighth component
+
+The weighted source directions were tested exactly at generic points
+over `F_11` and `F_13`, with every affine marking and every genuine
+projective extension direction replayed.  The `D_01` survivor marking
+locus obeys `t_1*t_2=0`; the `D_23` locus obeys
+`t_1=t_2=t_3=0`.  Every surviving mixed matrix has rank seven, and
+the mode-zero one-marked map has rank four.
+
+This is finite-field evidence only.  Direct characteristic-zero
+Fitting ideals and most split marking saturations timed out.  Two
+smaller `D_23` charts reduced to the unit ideal, but they do not cover
+the unresolved `t_1!=0` and `t_2!=0` charts.  No `H22` theorem was
+claimed:
+
+```text
+P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md
+explore_p5_h22_disjoint_mixed_star_modular.py
+```
+
+The suggested continuation is symbolic linear algebra on the
+`14 x 8` mixed coefficient matrix: expose its kernel line by maximal
+minors, derive the observed marking equations over the component
+function field, and then factor a small mode-zero Fitting minor.

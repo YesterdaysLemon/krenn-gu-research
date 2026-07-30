@@ -141,3 +141,11 @@ condition is still that the span of every pair of its five row
 covectors contains a target coordinate covector; (3) shows why a
 stronger conclusion cannot be obtained merely by allowing one more
 source coordinate in the contraction.
+
+The later simultaneous-pencil reduction sharpens this boundary.  A
+normalized `q4_211` solution would require the same four maps to
+diagonalize a three-dimensional space of contractions, whereas the
+off-diagonal contraction matrix of every point in the family above has
+rank four and only a one-dimensional kernel.  Thus no point of this
+positive family lifts to `q4_211`; see
+[`P5_Q4_211_SIMULTANEOUS_PENCIL_REDUCTION.md`](P5_Q4_211_SIMULTANEOUS_PENCIL_REDUCTION.md).
