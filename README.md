@@ -365,8 +365,18 @@ strictly advance the finite frontier:
   `span(a^2,a*s)`, of rank at most two.  Thus it can never be the required
   rank-three edge:
   [`P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md`](P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md).
-  The active `XX` orientation, support-one common zero divisors, and lower-
-  pair-rank strata remain.
+- the active `XX` orientation is a survivor: it supplies a thirteenth
+  component.  Its normalized parameters lie on the Eisenstein norm quadric
+  `N(alpha,gamma)=N(r+beta,beta)`, where `N(x,y)=x^2+xy+y^2`.
+  Over `C` this is the Segre equation `UV=ST`, so the projective moduli are
+  `P^1 x P^1`.  On the quadric the restriction is exactly `4*x0*x1*x2*x3`.
+  A family tangent minor `1/864` and universal incidence minor `-2/81`
+  certify a smooth five-dimensional component:
+  [`P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md`](P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md).
+  Its graph is in
+  [`P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg`](P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg).
+  This reopens the generic `H31/H22` fibre frontier for the new component;
+  support-one common zero divisors and lower-pair-rank strata remain.
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while

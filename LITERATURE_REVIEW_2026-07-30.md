@@ -970,3 +970,34 @@ stronger for this stratum: the support graph of a factorization of one
 squarefree edge is rigid enough to manufacture an extra tensor relation.
 This closes the whole genuine support-two `YX` orientation, including the
 coordinate-ray boundary, without primary decomposition or point search.
+
+The final active/active common-kernel orientation crosses into arithmetic
+geometry rather than collapsing:
+[`P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md`](P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md).
+Its four normalized parameters satisfy
+
+```text
+N(alpha,gamma)=N(r+beta,beta),
+N(x,y)=x^2+x*y+y^2.
+```
+
+Thus the cubic apolarity condition is an equality of Eisenstein norms.  Over
+the quadratic splitting field it becomes `UV=ST`, the rank-one determinant
+defining the Segre quadric `P^1 x P^1`.  On the nonzero-norm chart the same
+equation says that the ratio of the two Eisenstein elements belongs to a
+norm-one torus.  Modern work on norm-one tori studies their compactifications,
+rationality, and arithmetic obstructions in vastly greater generality; see
+Hoshi--Kanai--Yamasaki
+([arXiv:1910.01469](https://arxiv.org/abs/1910.01469)).  The present quadratic
+case needs only the elementary Hilbert-90 parameterization, but that language
+reveals why the parameter surface is rational and doubly ruled.
+
+The graph-theoretic consequence is new: on this norm quadric the unwanted
+permanent coefficient is `-4F` and the all-active coefficient is the constant
+`4`.  The projective quadric contributes two moduli and the source torus
+three; exact tangent/incidence ranks `5/15` prove that their closure is a
+five-dimensional component.  The support-octahedron label and purity
+incidence separate it from all twelve earlier orbits.  Consequently the
+literature-guided translation has not merely simplified an obstruction; it
+has exposed a thirteenth component and reopened the generic marked-fibre
+frontier.

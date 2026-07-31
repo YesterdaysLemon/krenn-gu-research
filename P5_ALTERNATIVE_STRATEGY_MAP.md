@@ -1405,6 +1405,33 @@ is a second pair relation.  The image has rank at most two, so no rank-three
 Only the active `XX`, support-one common-zero-divisor, and lower-pair-rank
 strata remain from this common-kernel split.
 
+The active `XX` orientation is not empty.  It is controlled by an Eisenstein
+norm quadric and supplies a thirteenth component:
+
+- [`P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md`](P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md)
+
+With `N(x,y)=x^2+xy+y^2`, the entire purity condition is
+
+```text
+N(alpha,gamma)=N(r+beta,beta).
+```
+
+After adjoining a primitive cube root of unity this is the determinant
+`UV-ST=0`, so its projectivization is `P^1 x P^1`.  The affine radial
+direction is already a block source scaling; the quadric contributes two
+directions and the diagonal source torus contributes three.  At
+`(alpha,beta,r,gamma)=(2,1,1,1)`, the exact family and incidence minors are
+`1/864` and `-2/81`, giving a smooth five-dimensional component.  Its pure
+restriction is identically `4*x0*x1*x2*x3` on the quadric.
+
+The new component has the same coarse triangle profile as the first apolar
+fivefold, but its two rank-one support labels coincide rather than being
+adjacent in `J(4,2)`.  It has the same unmarked exact-pair support as the
+eleventh component, but dimension and the reversed kernel/active incidence
+separate them.  The certified component lower bound is now thirteen.  The
+new component's generic `H31/H22` fibres are open at this checkpoint, so the
+former twelve-component generic-closure theorem is now historical.
+
 The earlier
 quadratic-function-field experiments and their null outcomes remain
 recorded as provenance:
@@ -1428,9 +1455,9 @@ marked-fibre level:
 
 ## Priority
 
-1. classify the active `XX` common-kernel orientation, then the remaining
-   support-one and lower-pair-rank exceptional geometries,
-   while closing
+1. close the thirteenth component's generic marked `H31` and weighted `H22`
+   fibres, then classify the remaining support-one and lower-pair-rank
+   exceptional geometries while closing
    the parameter/projective boundaries of the three split-cubic
    components, the sixth component, and the earlier six-dimensional component,
    and the disjoint mixed-star component's special `H31/H22`

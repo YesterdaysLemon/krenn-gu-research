@@ -13068,3 +13068,74 @@ P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md
 verify_p4_common_kernel_yx_211_factorisation_obstruction.py
 audit_p4_common_kernel_yx_211_factorisation_obstruction.py
 ```
+
+### An Eisenstein norm quadric gives a thirteenth component
+
+The remaining `XX` common-kernel orientation has rows
+
+```text
+a=X0+X1, c=X0-X1, b=X2+X3, b_bar=X2-X3,
+m=alpha*a+beta*c+b,
+m_r=m+r*c,
+d=gamma*a+b,
+x0=b-(alpha+gamma)*a-(2*beta+r)*c,
+
+U0=span(b_bar,x0),
+U1=span(m,a),
+U2=span(m_r,a),
+U3=span(c,d).
+```
+
+The common-kernel triangle relations are
+
+```text
+y1*x2-x1*y2=0,       x1*y3=0,       x2*y3=0.
+```
+
+All kernel-rich cubics reduce to `C0=m*m_r*c`, `C1=m*m_r*d`, and
+`C2=a*m*d`, with the exact compression
+
+```text
+C1=(2*beta+r)*C0+(2*alpha+gamma)*C2-2F*(0,0,1,1),
+F=alpha^2+alpha*gamma+gamma^2-3*beta^2-3*beta*r-r^2.
+```
+
+The full restriction has only
+
+```text
+T_1001=-4F,       T_1111=4.
+```
+
+Hence `F=0` is a pure family.  Writing `N(x,y)=x^2+xy+y^2`, its equation is
+
+```text
+N(alpha,gamma)=N(r+beta,beta).
+```
+
+Over `C`, Eisenstein factorization turns this into `UV=ST`; the projective
+parameter surface is the Segre quadric `P1 x P1`.  The affine radial
+direction duplicates a block source scaling, leaving two quadric directions
+plus the three-dimensional diagonal source torus.
+
+At `(alpha,beta,r,gamma)=(2,1,1,1)`, the generic pair profile is
+`(4,4,4,3,3,3)` and relation ranks are `(2,1,1)`.  A family tangent minor is
+`1/864`; the universal Segre-incidence Jacobian has rank fifteen with minor
+`-2/81`.  The family is therefore a smooth five-dimensional irreducible
+component.  An independent mod-101 Pluecker-dual audit with source order
+`(2,0,3,1)` and scales `(2,3,5,7)` obtains ranks `5/15` and incidence minor
+`86`.
+
+The coincident support-octahedron labels distinguish this from the first
+apolar triangle; dimension and reversed kernel/active incidence distinguish
+it from the eleventh equal-support sixfold.  The certified lower bound is now
+thirteen components.  Generic `H31/H22` fibres for this new component are
+open, so the earlier twelve-component closure statement is historical.
+
+Primary theorem, graph, and verifiers:
+
+```text
+P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md
+P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg
+verify_p4_eisenstein_norm_common_kernel_component.py
+audit_p4_eisenstein_norm_common_kernel_component.py
+```
