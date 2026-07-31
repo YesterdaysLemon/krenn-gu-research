@@ -446,7 +446,6 @@ def verify_d01_fitting_branch(
         "t1_t3_zero": ((t1, t3), (FITTING_0137,)),
         "t1_nonzero_t3": ((t1, l3, l2), (FITTING_0137,)),
     }[branch]
-    matrix = model["mixed_matrix"]
     lines = [
         "ring R=(0,a,b,f,r),("
         + ",".join(map(str, extensions))
@@ -456,11 +455,6 @@ def verify_d01_fitting_branch(
         *(
             f"poly g{index}={singular(expression)};"
             for index, expression in enumerate(model["mixed"])
-        ),
-        *determinant_declarations(
-            matrix,
-            D01_BASE_ROWS,
-            D01_EXTRA_ROWS,
         ),
     ]
     for index, rows in enumerate(fitting_rows):
@@ -481,9 +475,6 @@ def verify_d01_fitting_branch(
         lines.append(f"poly b{index}={singular(generator)};")
     ideal_generators = [
         "C",
-        *(
-            f"q{index}" for index in range(len(D01_EXTRA_ROWS))
-        ),
         *(f"b{index}" for index in range(len(branch_generators))),
         *(f"g{index}" for index in range(14)),
         "da",
@@ -514,6 +505,7 @@ def verify_d01_fitting_branch(
         "minor_rows": [list(rows) for rows in fitting_rows],
         "normalized_first_diagonal": True,
         "inverted_second_diagonal": True,
+        "maximal_rank_minors_redundant_after_normalization": True,
         "fitting_ideal_unit": True,
     }
 

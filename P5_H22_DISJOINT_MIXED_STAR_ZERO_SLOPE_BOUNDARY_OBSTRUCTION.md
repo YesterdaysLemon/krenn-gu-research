@@ -196,6 +196,9 @@ The intrinsic contents of the selected `D_23` minors and the selected
 `D_01` minors plus their rank pivot are now recorded.  Denominators of
 the final three generic `D_01` Fitting unit certificates still need an
 intrinsic treatment, as do deeper component-parameter intersections.
+One normalized coefficient factor from those final certificates has
+since yielded a new irreducible quadratic branch, closed in
+[`P5_H22_DISJOINT_MIXED_STAR_COEFFICIENT_QUADRATIC_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COEFFICIENT_QUADRATIC_BOUNDARY_OBSTRUCTION.md).
 Other pure components may exist.  The global Krenn--Gu conjecture
 remains unresolved.
 

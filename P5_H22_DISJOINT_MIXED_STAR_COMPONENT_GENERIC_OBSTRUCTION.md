@@ -25,6 +25,10 @@ An intrinsic factorization of the seven selected `D_23` minor contents
 has additionally exposed and closed four rational branches
 `af=+/-1,a phi=+/-1`:
 [`P5_H22_DISJOINT_MIXED_STAR_AF_APHI_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_AF_APHI_BOUNDARY_OBSTRUCTION.md).
+A normalized coefficient divisor has also produced one new irreducible
+quadratic branch, closed in both directions by full unsplit Fitting
+ideals:
+[`P5_H22_DISJOINT_MIXED_STAR_COEFFICIENT_QUADRATIC_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COEFFICIENT_QUADRATIC_BOUNDARY_OBSTRUCTION.md).
 
 This does not close special parameter, slope, or projective boundary
 points, prove that the eight components are exhaustive, settle the
@@ -200,6 +204,10 @@ binary conditions by
 A_01=1,              w B_01-1=0.                  (19)
 ```
 
+The seven maximal minors used to derive the marking cover are
+redundant in these final ideals: `A_01=1` makes `z` nonzero, and
+`M_01(t)z=0` then already forces `rank M_01(t)<=7`.
+
 Let `H_0137,H_0157` denote the two mode-zero one-marked determinants.
 Exact standard-basis calculations give
 
@@ -258,6 +266,10 @@ slope graph recorded in the companion boundary theorems.  The four
 new `af=+/-1,a phi=+/-1` branches are no longer open either; in the
 `D_23` direction they satisfy the stronger statement that the genuine
 binary incidence itself is empty.
+The new quadratic branch cut out by
+`a^2 f^2+2bf+1=0` after normalization is also closed by unsplit
+two-minor ideals, so its proof does not assume specialization of the
+degree-five marking cover.
 
 ## Verification
 
@@ -274,7 +286,8 @@ tmp/codex_verify_env/Scripts/python.exe \
 The primary verifier reconstructs the component family, both weighted
 mixed matrices, the exact determinantal schemes, the degree-five and
 pivot claims, the factor cover, and all four characteristic-zero
-Fitting unit ideals.
+Fitting unit ideals.  The final `D_01` ideals omit the redundant
+maximal minors after diagonal normalization.
 
 The independent audit imports nothing from the primary verifier.  At
 two generic finite-field component points it exhausts every marked

@@ -82,7 +82,9 @@ external mathematical review, the strongest additional claims are:
   binary incidence itself is generically empty.  A second intrinsic
   content ledger closes the compactified slope endpoint `r=0`: `D_01`
   fails already at binary level, while the rank-six `D_23` degeneration
-  fails a two-minor marked-rank test.
+  fails a two-minor marked-rank test.  Normalizing a further coefficient
+  divisor exposes a new irreducible quadratic component branch; full
+  unsplit Fitting ideals exclude both weighted directions there.
 
 The first item is stronger than the currently cited paper frontier and
 than the status labels in the current public formal-conjectures file.

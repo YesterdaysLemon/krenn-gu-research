@@ -813,6 +813,9 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   minor/pivot ledger also exposes the compactified endpoint `r=0`.
   There `D_01` fails at binary level, and the rank-six `D_23`
   degeneration fails an unsplit two-minor Fitting obstruction.
+  Normalizing the further divisor `a^2 f^2+2bf+1=0` exposes a new
+  irreducible quadratic component branch, and full unsplit two-minor
+  ideals exclude both weighted directions there as well.
 Thus this does not remove the 240 signatures from the fail-closed
 census and `P_5 -> Delta_3` remains unresolved.
 

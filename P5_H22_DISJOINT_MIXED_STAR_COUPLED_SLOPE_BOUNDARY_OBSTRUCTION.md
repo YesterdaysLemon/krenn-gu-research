@@ -168,7 +168,9 @@ The selected `D_01` maximal-minor and rank-pivot contents have also
 been extracted, and their `r=0` degeneration is closed in
 [`P5_H22_DISJOINT_MIXED_STAR_ZERO_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_ZERO_SLOPE_BOUNDARY_OBSTRUCTION.md).
 The final incidence certificates still require the same systematic
-treatment.
+treatment, although one normalized coefficient factor has now produced
+and closed a new irreducible quadratic branch:
+[`P5_H22_DISJOINT_MIXED_STAR_COEFFICIENT_QUADRATIC_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COEFFICIENT_QUADRATIC_BOUNDARY_OBSTRUCTION.md).
 Other pure components may also exist.  No satisfying graph and no
 global nonexistence proof is claimed.
 

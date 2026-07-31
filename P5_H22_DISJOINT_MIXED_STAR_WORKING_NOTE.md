@@ -25,6 +25,9 @@ The compactified endpoint `r=0` is closed as well, together with an
 intrinsic content ledger for the seven selected `D_01` maximal minors
 and their rank pivot:
 [`P5_H22_DISJOINT_MIXED_STAR_ZERO_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_ZERO_SLOPE_BOUNDARY_OBSTRUCTION.md).
+A further coefficient normalization closes a new irreducible quadratic
+component branch by full unsplit two-minor ideals in both directions:
+[`P5_H22_DISJOINT_MIXED_STAR_COEFFICIENT_QUADRATIC_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COEFFICIENT_QUADRATIC_BOUNDARY_OBSTRUCTION.md).
 
 No computation described below proves a statement over `C`.  In
 particular, several direct characteristic-zero Groebner calculations
