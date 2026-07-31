@@ -146,9 +146,19 @@ strictly advance the finite frontier:
   `span(alpha*a+tau*b_bar,-tau*a_bar+beta*b)` with `tau!=0`; such a
   plane contains neither anchor.  The bridge therefore cannot factor.
   Combining both cut theorems empties the full-support nonresonant
-  triangle.  Only proper cut-support boundaries and the resonant
-  holonomy divisor remain:
+  triangle.  At that checkpoint, proper cut-support boundaries and
+  the resonant holonomy divisor remained:
   [`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md).
+- the proper cut-support boundary is now empty too.  Every nonzero
+  proper cut is either one edge or a two-edge star.  A one-edge
+  annihilator forces every rank-two-relation partner into the same
+  coordinate plane, making the product rank at most one.  A two-edge
+  star and both its partners lie in one coordinate hyperplane, turning
+  the restriction into an embedded `P_3`; perfect pairing makes every
+  alleged rank-three pair have rank at most two.  Consequently the
+  complete nonresonant all-rank-two-relation triangle is empty.  Only
+  the trivial-holonomy resonant divisor remains:
+  [`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md).
 - a mixed zero-product orientation produces a sixth
   symmetry-inequivalent component.  The normalized rank-two
   contraction condition is a `3 x 4` determinantal problem whose

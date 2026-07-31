@@ -804,8 +804,11 @@ A natural non-brute-force route is:
    full-support all-`1+3` nonresonant triangle is now excluded by a
    cut-label/perfect-pairing argument, and every full-support `2+2`
    bridge is excluded by an anchor/crossed-graph argument.  Thus the
-   full-support nonresonant triangle is empty; proper cut-support
-   boundaries and the resonant holonomy divisor remain.
+   full-support nonresonant triangle is empty.  Its one-edge boundary
+   forces product rank one, and its two-edge boundary suspends a pure
+   `P_3` and forces pair rank at most two.  Hence the complete
+   nonresonant triangle is empty; only the resonant holonomy divisor
+   remains.
    In parallel, close the boundaries of the three new `1+3`
    components, the sixth component, and the six-dimensional component;
 2. intersect the resulting classification with the all-rank-two and

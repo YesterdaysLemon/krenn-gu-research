@@ -250,8 +250,11 @@ plane tuple.”  Its unresolved generic alternatives are:
    a hyperbolic anchor/crossed-graph argument also excludes every
    full-support cycle containing a `2+2` cut:
    [`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md).
-   Hence only proper bridge-support boundaries and resonance remain
-   from this triangle;
+   The one-edge and two-edge cut boundaries force a coordinate-plane
+   rank collapse or a common embedded-`P_3` hyperplane:
+   [`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md).
+   Hence the entire nonresonant triangle is empty and only resonance
+   remains from this triangle;
 3. the lower pair-image-rank and coincident/support-one zero-product
    boundaries.  One rank-two-edge stratum now supplies the
    six-dimensional component in

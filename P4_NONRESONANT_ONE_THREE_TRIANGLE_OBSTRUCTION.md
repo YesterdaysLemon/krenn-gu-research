@@ -69,19 +69,19 @@ component, whose complete marked `H31` fibre is empty.
 Thus the full-support, all-`1+3`, nonresonant cyclic-cut case creates no
 tenth pure-`P_4` component.
 
-This theorem does **not** handle:
-
-1. a bridge on a proper support boundary;
-2. the resonant divisor where the projective holonomy is trivial.
-
-It therefore advances, but does not finish, component exhaustiveness or
-the global Krenn--Gu problem.
+This theorem does **not** handle the resonant divisor where the
+projective holonomy is trivial.  It therefore advances, but does not
+finish, component exhaustiveness or the global Krenn--Gu problem.
 
 Triangles containing a full-support `2+2` bridge are now excluded by
 the companion anchor/crossed-graph theorem
 [`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md).
 Together, the two theorems empty the entire full-support nonresonant
 triangle.
+
+The one-edge and two-edge cut boundaries are now excluded in
+[`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md),
+so the complete nonresonant triangle is empty.
 
 ## A factorization lemma for a triangle cut
 

@@ -40,10 +40,11 @@ every nonresonant rank-two-relation triangle whose three bridge
 cuts have full support is empty.                                    (2)
 ```
 
-The remaining triangle frontier is now confined to:
-
-1. the resonant, trivial-holonomy divisor; and
-2. proper support boundaries of the `1+3` or `2+2` bridges.
+The proper support boundaries of the `1+3` and `2+2` bridges have
+since been excluded in
+[`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md).
+The remaining triangle frontier is now confined to the resonant,
+trivial-holonomy divisor.
 
 This is a component-classification advance, not a proof of component
 exhaustiveness or of the global Krenn--Gu conjecture.

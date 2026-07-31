@@ -120,6 +120,7 @@ peer-reviewed global result.
 | triangle of rank-two pair relations | `PGL_2` connection plus degree-two catalecticants | holonomy, tetrads, and weighted cuts |
 | three full-support `1+3` bridges | singleton cut labels plus coordinate-hyperplane intersections | factorization sheets, cut compatibility, perfect pairing |
 | a full-support `2+2` bridge | two hyperbolic binary planes | anchor sheets versus crossed-graph partners |
+| a proper cut support | coordinate Schubert incidence | suspension to `P_3` and Poincare pairing |
 
 The determinantal step used in the new `H22` theorem is standard Fitting
 geometry: rank-drop loci are cut out by minors, and the construction is
@@ -203,7 +204,13 @@ linear factorization, while every rank-three partner of
 anchors.  Their incidence is empty:
 [`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md).
 Combined with the `1+3` theorem, this empties the entire full-support
-nonresonant triangle and leaves only support boundaries and trivial
+nonresonant triangle.  The support boundary itself has only one-edge
+and two-edge normal forms.  The first collapses the partner product to
+rank one; the second transports one coordinate hyperplane around the
+triangle and suspends a pure `P_3`, whose Poincare pairing forces rank
+at most two:
+[`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md).
+Thus the complete nonresonant triangle is empty, leaving only trivial
 holonomy.
 
 This translation already gives a new exact repository theorem:

@@ -975,9 +975,16 @@ off-diagonal coupling and contains neither anchor:
 
 - [`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md)
 
-The full-support nonresonant triangle is therefore empty.  Its
-remaining cases are proper cut-support boundaries and the resonant
-holonomy divisor.
+The proper bridge-support boundary is now closed as well.  A nonzero
+proper cut has one edge or is a two-edge star.  The former forces its
+partner back into a coordinate two-plane and product rank one; the
+latter puts all three triangle planes in one coordinate hyperplane,
+where the pure-`P_3` pairing forces pair rank at most two:
+
+- [`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md)
+
+The complete nonresonant triangle is therefore empty.  Only the
+resonant holonomy divisor remains.
 
 The complementary mixed zero-product orientation produces a sixth
 component.  Its normalized kernel contractions form a `3 x 4`

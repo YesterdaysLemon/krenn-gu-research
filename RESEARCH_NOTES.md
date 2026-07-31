@@ -11135,8 +11135,9 @@ plane.  Its degree-two multiplication catalecticant is a nonzero
 symmetric zero-diagonal matrix of rank two, hence a weighted cut.
 The only cut types are `1+3` and `2+2`; the latter has one tetrad
 equation.  The full-support all-`1+3` compatibility is now closed
-below.  The resonant divisor, cycles containing `2+2`, and proper
-cut-support boundaries remain open.
+below.  At that checkpoint the resonant divisor, cycles containing
+`2+2`, and proper cut-support boundaries remained; the following two
+sections close the latter two, leaving only resonance.
 
 ```text
 P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md
@@ -11253,13 +11254,72 @@ contains an anchor.  But the bridge factorization
 `q=b_12*y_1*x_2` requires one.  Contradiction.
 
 Together with the all-`1+3` theorem, every full-support nonresonant
-rank-two-relation triangle is empty.  Only proper bridge-support
-boundaries and the resonant divisor remain.
+rank-two-relation triangle is empty.  At this checkpoint, proper
+bridge-support boundaries and the resonant divisor remained.
 
 ```text
 P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md
 verify_p4_nonresonant_two_two_triangle_obstruction.py
 audit_p4_nonresonant_two_two_triangle_obstruction.py
+```
+
+### Proper cut supports close the nonresonant triangle
+
+A proper nonzero `1+3` cut has one or two triangle edges.  A proper
+`2+2` outer-product cut has support size two or one.  Thus, up to
+coordinates, every remaining bridge is
+
+```text
+q=X_0X_1
+```
+
+or
+
+```text
+q=X_0(alpha X_1+beta X_2),       alpha beta!=0.
+```
+
+For the single edge, `Ann_R1(q)=span(X_0,X_1)`.  If `V` is a
+rank-three partner with rank-two kernel relation, choose its basis
+`v,w` so that
+
+```text
+X_0v+X_1w=0.
+```
+
+Coefficient comparison forces `v,w` back into
+`span(X_0,X_1)`, whose product with the annihilator has dimension at
+most one.  Contradiction.
+
+For the two-edge star, put
+
+```text
+b=alpha X_1+beta X_2,
+b_bar=alpha X_1-beta X_2.
+```
+
+Then `Ann_R1(q)=span(X_0,b_bar)` lies in `X_3=0`.  The partner
+relation
+
+```text
+X_0v+b_bar*w=0
+```
+
+has `X_0X_3`, `X_1X_3`, and `X_2X_3` coefficients
+`v_3,alpha*w_3,-beta*w_3`, so every partner lies in `X_3=0` as well.
+All three triangle planes therefore lie in that hyperplane.  The
+`P_4` restriction suspends a nonzero pure `P_3`, and perfect pairing
+gives pair rank at most two, contradicting the assumed rank three.
+
+This closes every proper cut support.  Together with the two
+full-support theorems, the complete nonresonant rank-two-relation
+triangle is empty.  Only the trivial-holonomy resonant divisor
+remains.
+
+```text
+P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md
+verify_p4_nonresonant_degenerate_cut_triangle_obstruction.py
+audit_p4_nonresonant_degenerate_cut_triangle_obstruction.py
 ```
 
 ### Ninth pure component from the common `1+3` boundary

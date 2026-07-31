@@ -101,10 +101,13 @@ which suspends a pure `P_3` restriction and drops every triangle pair
 rank to at most two.  A companion hyperbolic-block theorem excludes
 every full-support cycle containing a `2+2` bridge:
 [`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md).
-Thus every full-support nonresonant triangle is empty.  This does
-**not** classify proper cut-support boundaries, the resonant divisor
-`Omega=0`, prove that the nine known pure-`P_4` components are
-exhaustive, or settle the global Krenn--Gu conjecture.
+A final coordinate-support theorem excludes the one-edge and
+two-edge bridge boundaries:
+[`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md).
+Thus the complete nonresonant triangle is empty.  This does **not**
+classify the resonant divisor `Omega=0`, prove that the nine known
+pure-`P_4` components are exhaustive, or settle the global
+Krenn--Gu conjecture.
 
 ## Why the active-active coefficient is zero
 
@@ -350,4 +353,6 @@ python verify_p4_nonresonant_one_three_triangle_obstruction.py
 python audit_p4_nonresonant_one_three_triangle_obstruction.py
 python verify_p4_nonresonant_two_two_triangle_obstruction.py
 python audit_p4_nonresonant_two_two_triangle_obstruction.py
+python verify_p4_nonresonant_degenerate_cut_triangle_obstruction.py
+python audit_p4_nonresonant_degenerate_cut_triangle_obstruction.py
 ```
