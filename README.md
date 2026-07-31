@@ -508,6 +508,21 @@ strictly advance the finite frontier:
   Simultaneous rank-two edges remain relevant only to the intersection
   poset of these closures, not to component exhaustiveness of the
   lower-pair locus.
+- the singular kernel fibres of the overlapping mixed orientation do
+  produce components sixteen and seventeen.  The affine contraction matrix
+  drops to rank one on exactly four lines, so its opposite-plane fibre jumps
+  to `Gr(2,3)=P^2`.  Three lines carry a directed triangle of three rank-one
+  exact-zero-divisor relations.  Their source-support labels form either
+  `K_(1,3)` or `P_4`, with invariant degree sequences `(3,1,1,1)` and
+  `(2,2,1,1)`.  Exact family minors `1/16,1/8` and universal-incidence minors
+  `-192,28800` prove two smooth fivefolds; the fourth line is the first
+  apolar component.  Homogenizing both moving leaf rows adds no further
+  component: one boundary is zero or lower-pair, the other is zero or
+  lower-pair, and their corner is zero or an embedded `P_3` suspension.
+  Therefore this complete projective orientation chart raises the certified
+  lower bound to **seventeen** component orbits:
+  [`P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md`](P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md),
+  [`P4_OVERLAPPING_MIXED_ORIENTATION_PROJECTIVE_EXHAUSTION.md`](P4_OVERLAPPING_MIXED_ORIENTATION_PROJECTIVE_EXHAUSTION.md).
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while
