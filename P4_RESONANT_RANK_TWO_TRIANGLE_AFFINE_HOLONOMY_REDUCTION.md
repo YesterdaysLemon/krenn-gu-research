@@ -28,8 +28,10 @@ excluded from the rank-three triangle in
 The full-support collision strata are now classified and excluded from the
 rank-three triangle in
 [`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
-Smaller kernel supports remain, as do other exceptional graphs and lower
-pair-rank strata.
+The smaller-support analysis is now complete as well: the unique survivor
+is an explicit support-two annihilator-line family,
+[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
+Other exceptional graphs and lower pair-rank strata remain.
 The global Krenn--Gu problem is unresolved.
 
 ## Multiplicative resonance
@@ -304,8 +306,10 @@ have since been classified and excluded from the rank-three triangle:
 [`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
 The full-support Borel collision strata are now excluded as well:
 [`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
-The smaller-support strata are the exact flat frontier.  A previous
-full-`GL_2` collision
+The smaller-support strata have since been classified exactly.  The unique
+rank-three survivor and its forced fourth plane are given in
+[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
+A previous full-`GL_2` collision
 classification was withdrawn because it moved the fixed kernel line.
 
 ## Verification

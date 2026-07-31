@@ -22,8 +22,10 @@ flat triples are projective lines through that radical.  The only finite
 pure points form four signed seams, and every one makes the two noncentral
 planes have pair-image rank two.  The projective endpoints are empty.
 
-Smaller kernel supports and their collision intersections remain.  This is
-not a classification of every pure `P_4` component and not a proof or
+The smaller-support strata have since been classified and contain one
+support-two annihilator-line survivor:
+[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
+This is not a classification of every pure `P_4` component and not a proof or
 counterexample for the global Krenn--Gu conjecture.
 
 ## The collision list under legal Borel gauge

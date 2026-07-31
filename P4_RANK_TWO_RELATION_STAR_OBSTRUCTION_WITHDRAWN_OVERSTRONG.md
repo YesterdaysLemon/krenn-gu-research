@@ -6,8 +6,14 @@
 flat-triangle classification, whose full-`GL_2` normalization moved
 the purity-fixed kernel line.  The tree gauge, synchronizer pencil,
 rank-drop matching, and constant balanced-chart coefficient remain
-exact local lemmas, but they do not currently prove the advertised
-global star obstruction.
+exact local lemmas, but they did not prove the advertised global star
+obstruction by that route.
+
+The star obstruction has since been reproved with the corrected Borel
+triangle classification and a separate full-support `2+2` chart:
+[`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md).
+This file remains withdrawn because its original proof route is invalid;
+use the replacement theorem for the current result.
 
 The withdrawn theorem had claimed an exact obstruction for the
 all-rank-three-pair stratum of a nonzero pure `P_4` restriction.

@@ -236,10 +236,10 @@ plane tuple.”  Its unresolved generic alternatives are:
    to a secant `2+2`/`1+3` block center or a coincident-plane tangent
    through a coordinate line in
    [`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md);
-   compatibility among several pencils and with rank-one edges
-   remains open.  A proposed pure rank-two-star obstruction and a
-   proposed mixed `(2,2,1)` triangle obstruction were withdrawn after
-   a Borel-gauge audit:
+   compatibility among several pencils and with rank-one edges is now
+   partially classified.  A proposed pure rank-two-star obstruction and a
+   proposed mixed `(2,2,1)` triangle obstruction were withdrawn after a
+   Borel-gauge audit; their historical records are
    [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md),
    [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md).
    The triangle where all three pair images have rank three and all
@@ -276,7 +276,18 @@ plane tuple.”  Its unresolved generic alternatives are:
    active cubes vanish, while every pure `2+2` point has a lower-rank
    partner pair:
    [`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
-   The smaller-support strata remain;
+   The smaller-support strata are now classified.  Their unique
+   rank-three survivor is the support-two annihilator-line family in
+   [`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md);
+   the dependent rank-two-relation star has also been reproved with the
+   Borel markings retained:
+   [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md).
+   The mixed `(2,2,1)` rank-three triangle has likewise been excluded in the
+   corrected marked charts; the last `2+2` chart reduces to a presymplectic
+   commutator determinant:
+   [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md).
+   Configurations with only one rank-two edge and mixed-star patterns outside
+   the three-rank-two-spoke obstruction remain open;
 3. the lower pair-image-rank and coincident/support-one zero-product
    boundaries.  One rank-two-edge stratum now supplies the
    six-dimensional component in

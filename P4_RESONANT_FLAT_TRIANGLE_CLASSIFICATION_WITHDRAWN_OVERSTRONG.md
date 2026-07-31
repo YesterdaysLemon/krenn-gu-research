@@ -13,6 +13,15 @@ The valid one-kernel-zero theorem is
 and the true full-support Borel chart is
 [`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md).
 
+The complete Borel classification has now been recovered by a different
+support-stratified proof:
+[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
+Its survivor is the three-parameter marked family
+`U_i=span(a,b+alpha_i*a_bar)` with nonzero sum of the `alpha_i`.  The family
+displayed below is the exact `alpha_1=0` slice, not the whole Borel moduli
+problem.  This file remains withdrawn as an audit record of the invalid
+exhaustiveness argument.
+
 The withdrawn argument had claimed an exact classification of the
 zero-additive-holonomy branch left by
 [`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md).

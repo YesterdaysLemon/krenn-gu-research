@@ -38,9 +38,9 @@ It is not the generic full-kernel-support normal form.  Consequently:
 
 | Earlier claim | Corrected status |
 |---|---|
-| complete projective-column classification of the flat triangle | withdrawn as overstrong |
-| dependent global rank-two-star obstruction | withdrawn as overstrong |
-| balanced-chart proof of the mixed `(2,2,1)` triangle | withdrawn pending Borel audit |
+| complete projective-column classification of the flat triangle | withdrawn as overstrong; replaced by the corrected support classification |
+| dependent global rank-two-star obstruction | withdrawn as overstrong; subsequently reproved in marked charts |
+| balanced-chart proof of the mixed `(2,2,1)` triangle | withdrawn; subsequently reproved in all Borel charts |
 | balanced `2+2` displayed family and local coefficient identities | exact only in their stated marked charts |
 | one-kernel-zero compound identity | exact boundary theorem |
 
@@ -74,5 +74,14 @@ The full-support affine-ratio collisions are now classified too: the
 `2+1+1` and `3+1` active cubes vanish, while all four pure `2+2` seams have
 a rank-two partner pair:
 [`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
-The remaining smaller-kernel-support collisions are the honest unresolved
-boundary.
+The smaller-kernel-support strata are now classified too.  They contain one
+genuine support-two annihilator-line family rather than another
+obstruction:
+[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
+The dependent star and mixed `(2,2,1)` arguments have now also been replaced
+by Borel-legal proofs:
+[`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md)
+and
+[`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md).
+The honest unresolved boundary is instead the one-rank-two-edge mixed
+triangle, other mixed-star patterns, and lower pair-image ranks.

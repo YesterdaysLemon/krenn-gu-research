@@ -215,14 +215,44 @@ strictly advance the finite frontier:
   sheets are empty.  Combined with the distinct-ratio theorems, this
   excludes every full-kernel-support flat rank-three-relation triangle:
   [`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
-- a gauge audit withdrew three overstrong follow-on claims.  Full row
+- the smaller kernel supports complete the corrected triangle
+  classification, and they reveal a survivor rather than another
+  obstruction.  Up to source symmetry it is
+  `U_0=span(b_bar,a_bar)` and
+  `U_i=span(a,b+alpha_i*a_bar)` for `i=1,2,3`, where `a,a_bar` and
+  `b,b_bar` are opposite binary directions on complementary coordinate
+  pairs.  All three leaf-pair images have rank three with rank-two flat
+  relations, and the full restriction is exactly
+  `-4(sum_i alpha_i)x_0x_1x_2x_3`.  It is nonzero precisely when the sum of
+  the three parameters is nonzero.  Zero columns, kernel supports one and
+  three, all other support-two directions, and all projective endpoints are
+  excluded.  This replaces the withdrawn empty-triangle claim with a
+  complete Borel classification:
+  [`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
+- the dependent rank-two-relation star is now reproved rather than merely
+  resurrected from the withdrawn argument.  Four-distinct centers reduce
+  by the exact adjugate-pencil matching to the corrected support-two
+  triangle; collision centers have zero active fourth power; both
+  support-two charts have a constant forbidden coefficient `4`; and the
+  previously missing full-support `2+2` Borel chart has two kernel-marked
+  words forcing the same quadratic `E` to equal both zero and one.  Thus no
+  pure rank-three star can have three rank-two unique relations:
+  [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md).
+- the mixed rank-three triangle with coefficient-rank pattern `(2,2,1)` is
+  now excluded in every Borel chart.  Ordinary synchronizer pencils are
+  totally isotropic; the support-two equal-ratio boundary closes by the
+  squarefree degree-one annihilator; and the missing full-support `2+2`
+  chart is a presymplectic plane.  There four maximal minors force
+  `Delta=r_2s_3-r_3s_2=0`, so the leaf relation is alternating with
+  coefficient matrix `[[0,1],[-1,0]]` and rank two, contradicting the
+  required rank one.  This leaves one-rank-two-edge triangles and the lower
+  pair-rank boundary, not the `(2,2,1)` pattern:
+  [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md).
+- a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
-  legal.  Consequently the advertised complete flat-triangle
-  classification, the dependent rank-two-star obstruction, and the
-  balanced-chart part of the mixed `(2,2,1)` theorem are not global
-  theorems.  Their local identities remain recorded, but the Borel
-  smaller-kernel-support boundaries and those graph compatibilities remain
-  open:
+  legal.  The historical withdrawn files remain conspicuously labeled, while
+  the corrected triangle, star, and mixed-triangle theorems above now replace
+  all three claims with marked proofs:
   [`P4_BOREL_GAUGE_CORRECTION.md`](P4_BOREL_GAUGE_CORRECTION.md),
   [`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md),
   [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md),

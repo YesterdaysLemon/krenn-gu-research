@@ -31,8 +31,10 @@ classified and excluded from the all-rank-three-relation triangle in
 The full-support affine-ratio collisions have also since been classified
 and excluded from the rank-three triangle in
 [`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
-Smaller kernel supports remain.  Thus this is a generic theorem, not
-a complete triangle classification, component-exhaustiveness proof,
+The smaller-support strata have since been classified in
+[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
+They contain one explicit support-two survivor.  Thus this is a generic
+obstruction, not a component-exhaustiveness proof,
 or global solution of the Krenn--Gu conjecture.
 
 ## Borel normal form
@@ -184,16 +186,11 @@ partner chart is empty.
 
 ## Correct frontier
 
-After the companion projective-sheet and full-support collision theorems,
-the remaining flat triangle is confined to the union of:
-
-1. a zero coordinate of a kernel row;
-2. ratio collisions on those smaller supports; or
-3. intersections of these divisors.
-
-The one-kernel-zero otherwise-distinct chart is already empty by the
-companion kernel-zero theorem.  The other Borel boundary strata must
-be classified without moving the distinguished kernel lines.
+The companion projective, full-support-collision, and smaller-support
+theorems now give the complete corrected classification.  The flat triangle
+is not empty: its unique Borel normal form is the support-two
+annihilator-line family in
+[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
 
 ## Verification
 

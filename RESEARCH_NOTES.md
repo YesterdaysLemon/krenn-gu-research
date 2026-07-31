@@ -12012,20 +12012,17 @@ be supported by a star or generic triangle whose selected relations
 are all rank two.  The remaining compatibility problem is genuinely
 mixed rank one/rank two.
 
-### WITHDRAWN pending Borel audit: mixed `(2,2,1)` triangle
+### Corrected Borel proof: the mixed `(2,2,1)` triangle is empty
 
-The generic totally-synchronized pencil lemma below is
-basis-invariant.  The balanced-center exhaustiveness step is not: it
-used full row `GL2` while retaining the transformed first rows as
-purity kernels.  The global `(2,2,1)` obstruction is therefore
-withdrawn pending a Borel-gauge analysis.
-
-The first genuinely mixed pattern is closed in
+The earlier proof was correctly withdrawn because its balanced-center
+normalization used full row `GL2` while retaining the transformed first rows
+as purity kernels.  The missing Borel chart is now closed, so the global
+obstruction for this stated rank-three triangle stratum is restored in
 
 ```text
-P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md
-verify_p4_mixed_two_rank_two_triangle_obstruction_withdrawn_pending_borel_audit.py
-audit_p4_mixed_two_rank_two_triangle_obstruction_withdrawn_pending_borel_audit.py
+P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md
+verify_p4_mixed_two_rank_two_triangle_obstruction.py
+audit_p4_mixed_two_rank_two_triangle_obstruction.py
 ```
 
 Gauge the two rank-two edges, which share a vertex, into a
@@ -12036,7 +12033,8 @@ leaf-leaf edge already has a rank-two relation, contradicting its
 assumed unique rank-one relation.  Zero and `1+3` centers force the
 previous embedded-`P3` or pair-rank collapses.
 
-At a balanced `2+2` center, the leaves have rows
+The support-two equal-ratio boundary retains the valid annihilator argument.
+Its leaves have rows
 
 ```text
 y_i=a+beta_i*b_bar,
@@ -12049,10 +12047,36 @@ degree-one annihilator.  If `beta_i=0`, its annihilator is the line
 `C*a_bar`, but the other synchronized leaf plane never contains
 `a_bar`.  Both orientations are impossible.
 
-Therefore the relation-rank pattern `(2,2,1)` cannot occur on an
-exceptional rank-three triangle.  Any remaining generic mixed
-triangle has at most one rank-two edge; mixed stars with two
-rank-two spokes remain separate.
+The formerly missing full-support `2+2` center instead has marked center
+`(a+b,b)` and synchronized leaves
+
+```text
+y_i=a+b-r_i*b_bar-s_i*a_bar,
+x_i=b-s_i*a_bar.
+```
+
+Put `Delta=r_2s_3-r_3s_2`.  Four maximal minors of the leaf-pair product
+matrix are `Delta` times the signed pairs
+
+```text
+s_2s_3(r_2+r_3) +/- (s_2+s_3),
+r_2r_3(s_2+s_3) +/- (r_2+r_3).
+```
+
+If the pair rank is at most three and `Delta!=0`, subtracting the two pairs
+forces `s_2+s_3=r_2+r_3=0`, which makes `Delta=0`, a contradiction.  Hence
+pair rank at most three forces `Delta=0`.  The leaf commutator is exactly
+
+```text
+y_2*x_3-x_2*y_3=Delta*(0,1,-1,-1,1,0).
+```
+
+At pair rank three this is the unique relation and has alternating
+coefficient matrix of determinant one.  It therefore has rank two, never the
+required rank one.  Thus `(2,2,1)` cannot occur on an exceptional rank-three
+triangle.  Any remaining mixed triangle has at most one rank-two edge; mixed
+stars with one or two rank-two spokes and lower pair-rank strata remain
+separate.
 
 ### Borel-generic repair of the flat binary cubic
 
@@ -12195,6 +12219,102 @@ one- and two-endpoint projective sheets are empty.  Hence no `2+2` pure
 point belongs to the all-rank-three triangle.
 
 Together with the finite and projective distinct-ratio theorems, this
-excludes the complete full-kernel-support flat triangle.  The honest flat
-frontier is now smaller kernel supports and their ratio collisions.  The
-global conjecture remains open.
+excludes the complete full-kernel-support flat triangle.  The
+smaller-support analysis follows next.
+
+### The corrected complete triangle has one annihilator-line survivor
+
+The smaller kernel supports have now been classified in
+
+```text
+P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md
+verify_p4_rank_two_relation_triangle_corrected_classification.py
+audit_p4_rank_two_relation_triangle_corrected_classification.py
+```
+
+Zero source columns descend to a pure `P3` and force all triangle pair
+images to have rank at most two.  With no zero column, kernel support three
+either lies in the previous distinct-ratio theorem or has a common active
+row of support at most two, so its active cube is zero.  Kernel support one
+has a single underlying plane whose square has dimension two.
+
+Kernel support two is the unique survivor.  Put
+
+```text
+a=X0+X1,       a_bar=X0-X1,
+b=X2+X3,       b_bar=X2-X3.
+```
+
+Every pure rank-three triangle with three rank-two relations is, up to the
+allowed symmetries,
+
+```text
+U0=span(b_bar,a_bar),
+Ui=span(a,b+alpha_i*a_bar),       i=1,2,3,
+alpha_1+alpha_2+alpha_3 != 0.
+```
+
+The leaf products have fixed independent generators `a^2`, `ab`, and a
+quadratic with nonzero `b^2` part, so all three pair ranks are exactly
+three.  The triple coefficients are
+
+```text
+Y=0,
+K=a^2*b,
+J=a*b^2,
+X=(sum alpha_i)b^2*a_bar-(sum_{i<j}alpha_i alpha_j)K.
+```
+
+Perfect pairing forces the opposite plane `span(b_bar,a_bar)`.  All sixteen
+degree-four coefficients then vanish except
+
+```text
+-4(alpha_1+alpha_2+alpha_3)x0*x1*x2*x3.
+```
+
+This corrects the withdrawn empty-triangle claim.  The old balanced family
+was an exact slice, but not exhaustive under the legal Borel gauge.  The
+star is re-audited next; the mixed `(2,2,1)` compatibility remains after it.
+
+### The rank-two-relation star is repaired
+
+The formerly withdrawn star obstruction now has a valid Borel proof:
+
+```text
+P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md
+verify_p4_rank_two_relation_star_obstruction.py
+audit_p4_rank_two_relation_star_obstruction.py
+```
+
+Tree gauge synchronizes all three leaves with the center.  For four
+distinct projective columns, the three exact rank-drop pairs in the
+adjugate pencil are disjoint.  Three leaves therefore contain a rank-three
+pair, and the corrected triangle theorem forces the center kernel onto a
+two-coordinate line, contradicting support three or four.
+
+Collision pencils with support-three/full kernels have a common active row
+of support at most two, so their required active fourth power is zero.
+Kernel support one already drops the center-leaf pair rank.  For support
+two, both the distinct and equal finite-ratio charts contain the constant
+forbidden coefficient
+
+```text
+a^2*b^2=4X0X1X2X3.
+```
+
+The missing Borel chart was the full-support `2+2` center
+`(y,x)=(a+b,b)`.  Its synchronized leaves have
+
+```text
+y_i=c_i(a+b)-r_i*b_bar-s_i*a_bar,
+x_i=c_i*b-s_i*a_bar.
+```
+
+A center-leaf `3 x 3` minor is `4c_i^3`, so rank three permits `c_i=1`.
+Putting `E=s_1s_2+s_1s_3+s_2s_3`, two kernel-marked coefficients are
+`-4E` and `-4(E-1)`.  Purity would require `E=0=E-1`, a contradiction.
+
+Thus the rank-two-relation star is genuinely empty.  The old file stays
+withdrawn because its proof moved the kernel flag; the replacement theorem
+is the authoritative result.  The mixed `(2,2,1)` triangle is the next
+Borel compatibility frontier.  The global conjecture remains open.

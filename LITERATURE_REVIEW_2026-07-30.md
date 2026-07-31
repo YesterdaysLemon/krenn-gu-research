@@ -457,7 +457,7 @@ but not this particular squarefree-permanent cofactor factorization.
 An earlier collision compactification used full `PGL_2` and therefore
 moved this marked kernel line.  Its claimed complete triangle
 classification, the star theorem depending on it, and the
-balanced-chart part of the mixed `(2,2,1)` theorem are withdrawn:
+balanced-chart part of the mixed `(2,2,1)` theorem were withdrawn:
 [`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md),
 [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md),
 [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md).
@@ -466,7 +466,8 @@ lemmas, connected respectively to bounded-normal-rank pencils
 ([De Teran--Dopico--Landsberg](https://arxiv.org/abs/1606.02574))
 and Lefschetz behavior of monomial complete intersections
 ([Phuong--Tran](https://arxiv.org/abs/2211.13548)), but they do not
-currently support the advertised global scopes.
+by themselves support the advertised global scopes.  Corrected marked
+replacements for all three now appear below.
 
 Keeping the marked kernel instead yields the true generic normal form
 
@@ -534,3 +535,79 @@ Segre/Kronecker boundary.  Projective endpoints are empty.  Combining the
 presymplectic collision theorem with the finite/projective distinct-ratio
 theorems excludes every full-kernel-support flat rank-three-relation
 triangle.  Only smaller kernel supports remain in that branch.
+
+The smaller supports change the conclusion from obstruction to
+classification:
+[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
+After zero-column descent to `P_3`, the kernel-support stratification has
+only one survivor.  On complementary binary blocks choose opposite
+zero-product directions `a,a_bar` and `b,b_bar`.  Then
+
+```text
+U_0=span(b_bar,a_bar),
+U_i=span(a,b+alpha_i a_bar),
+```
+
+and the restriction has the single coefficient
+`-4(sum alpha_i)x_0x_1x_2x_3`.  Every leaf pair has image rank three and its
+unique relation has matrix rank two.  Conversely, the corrected Borel
+support analysis proves that every such exceptional triangle has this
+form.
+
+This is the cleanest payoff so far from crossing specializations.  The
+affine-holonomy language reduces to a binary cubic; presymplectic geometry
+classifies its synchronizer jumps; the Frobenius annihilator pairing forces
+the fourth plane; and the remaining polynomial is merely the first
+elementary symmetric function of three line parameters.  The resulting
+annihilator-line normal form was not found in the neighboring pencil,
+symplectic, binary-form, or Lefschetz sources.  A previously displayed
+two-parameter balanced family was only the `alpha_i=0` slice seen after an
+illegal full-row normalization; the new theorem recovers the complete
+three-parameter marked family without moving a kernel line.
+
+That corrected survivor is now the valid input to a repaired star theorem:
+[`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md).
+The adjugate-pencil rank-drop graph is a matching of three edges, so three
+leaves over a four-distinct center contain a rank-three pair; the corrected
+triangle then forces a support-two kernel, contradicting a support-three or
+support-four center.  The genuinely new chart is the full-support `2+2`
+presymplectic plane.  Center-leaf rank three makes every radical coefficient
+nonzero, after which two kernel-marked permanent words are `-4E` and
+`-4(E-1)`.  They cannot both vanish.  The support-two charts close by the
+constant annihilator product `a^2b^2=4X_0X_1X_2X_3`.
+
+This illustrates why the neighboring subjects must be used in sequence:
+Kronecker roots control which leaves can be paired, the corrected
+binary-cubic theorem identifies that pair, presymplectic geometry handles
+the dimension jump, and the Artinian annihilator product supplies the final
+constant.  None of the literature sources alone states the star
+obstruction in this marked squarefree setting.
+
+The mixed `(2,2,1)` triangle is now repaired by one further translation:
+[`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md).
+Two rank-two edges put both leaves in the center's synchronizer variety.  All
+ordinary two-dimensional pencils are totally isotropic, so their leaf edge
+already has an alternating, coefficient-rank-two relation.  The only new
+case is the full-support `2+2` collision, where the synchronizer is the
+three-dimensional presymplectic space described above.
+
+In marked coordinates the alternating pairing of two leaves is
+
+```text
+Delta=r_2s_3-r_3s_2.
+```
+
+Four product-image Pluecker coordinates are `Delta` times two signed pairs.
+On the rank-drop locus, assuming `Delta!=0` makes the signed differences
+force `r_2+r_3=s_2+s_3=0`, hence `Delta=0`, a contradiction.  Thus every
+rank-three leaf pair on this locus lies on an isotropic line through the
+radical, and its unique relation is the nonsingular alternating matrix.
+
+This is a small instance of a general principle in projective symplectic
+geometry: rank conditions on product images can force incidence with the
+radical before one solves the ambient equations.  The neighboring literature
+supplies the polar-space language, while the squarefree pair-image minors
+make the radical incidence exact here.  The review found no source stating
+this marked `(2,2,1)` obstruction.  The remaining graph-theoretic boundary is
+not this pattern but triangles with only one rank-two edge, other mixed-star
+patterns, and lower pair-image ranks.

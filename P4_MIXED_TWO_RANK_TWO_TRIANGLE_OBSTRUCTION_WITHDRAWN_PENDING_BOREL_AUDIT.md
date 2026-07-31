@@ -10,6 +10,12 @@ Borel row changes.  The displayed annihilator calculations remain
 exact for their marked normal form, but the claimed exhaustive
 obstruction does not.
 
+**Replacement available.**  The missing full-support `2+2` Borel chart has
+since been closed by a presymplectic commutator and four exact maximal minors.
+The corrected global theorem for the stated rank-three triangle stratum is
+[`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md).
+This file remains only as an audit trail for the invalid earlier proof.
+
 The withdrawn theorem had claimed an exact obstruction on the
 all-pair-rank-at-least-three pure `P_4` locus.
 

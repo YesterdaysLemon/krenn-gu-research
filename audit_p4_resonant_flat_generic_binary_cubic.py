@@ -92,7 +92,7 @@ def main() -> None:
         "compression_quotient": str(compression_quotient.as_expr()),
         "rank_one_forced_values": forced_values,
         "gauge_scope": "full kernel support and four distinct affine ratios",
-        "remaining": "smaller-kernel-support divisors after the projective and full-support collision theorems",
+        "remaining": "the unique support-two survivor in the corrected complete triangle theorem",
         "search_used": False,
         "verified": True,
     }
