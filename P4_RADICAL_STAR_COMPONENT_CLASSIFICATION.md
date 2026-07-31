@@ -231,15 +231,18 @@ plane tuple.”  Its unresolved generic alternatives are:
 1. rank-one exceptional relations whose kernel endpoint orientations
    are mixed, including the known triangle component and orientations
    outside the now-certified disjoint-support chart;
-2. configurations dominated by rank-two exceptional relations.  Each
+2. configurations with mixed rank-one/rank-two exceptional
+   relations.  Each
    individual exact rank-two pair is now reduced, without elimination,
    to a secant `2+2`/`1+3` block center or a coincident-plane tangent
    through a coordinate line in
    [`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md);
-   compatibility among several such pair pencils remains open.  A
-   different triangle boundary, where all three pair images have rank
-   three but all three relation matrices have rank two, now has an
-   intrinsic holonomy.  Away from its resonant divisor it reduces to
+   compatibility with rank-one edges remains open.  The pure
+   rank-two-relation star is now empty:
+   [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md).
+   The triangle where all three pair images have rank three and all
+   three relation matrices have rank two has an intrinsic holonomy.
+   Away from its resonant divisor it reduces to
    three cyclic cut forms in
    [`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md).
    The full-support all-`1+3` cycle is now impossible: cut-factor
@@ -253,11 +256,14 @@ plane tuple.”  Its unresolved generic alternatives are:
    The one-edge and two-edge cut boundaries force a coordinate-plane
    rank collapse or a common embedded-`P_3` hyperplane:
    [`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md).
-   Hence the entire nonresonant triangle is empty and only resonance
-   remains from this triangle.  On resonance, the additive holonomy
-   now separates a tangent-Segre cut cycle from a compressed
+   Hence the entire nonresonant triangle is empty.  On resonance, the
+   additive holonomy separates a tangent-Segre cut cycle from a compressed
    `Sym^3(C^2) -> R_3` map:
-   [`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md);
+   [`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md).
+   The tangent branch is empty and the flat branch has one balanced
+   `2+2` family of dimension at most four, so it cannot be the generic
+   point of a component:
+   [`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md);
 3. the lower pair-image-rank and coincident/support-one zero-product
    boundaries.  One rank-two-edge stratum now supplies the
    six-dimensional component in

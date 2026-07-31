@@ -196,6 +196,18 @@ strictly advance the finite frontier:
   component:
   [`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md),
   [`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md).
+- a star of three rank-two exceptional relations is impossible too.
+  Tree gauge synchronizes all three leaves with the center.  For a
+  generic four-point center the leaves lie on its adjugate pencil,
+  whose pair-rank-drop graph is a matching of three disjoint edges;
+  two leaves therefore close a forbidden generic triangle.  Zero,
+  `2+1+1`, and `1+3` center collisions respectively give a zero
+  restriction, a zero active cube, or pair rank at most two.  On the
+  remaining balanced `2+2` collision, one forbidden coefficient is
+  the constant `4`.  Hence an all-pair-rank-at-least-three missing
+  component must use a rank-one relation or a genuinely mixed
+  rank-one/rank-two selection:
+  [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md).
 - a mixed zero-product orientation produces a sixth
   symmetry-inequivalent component.  The normalized rank-two
   contraction condition is a `3 x 4` determinantal problem whose

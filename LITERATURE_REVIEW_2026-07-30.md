@@ -462,3 +462,17 @@ pure-incidence component.  Thus the complete rank-two-relation
 triangle is no longer a possible generic missing-component graph:
 [`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md),
 [`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md).
+
+The same pencil has a second use: it closes a star of rank-two
+relations in
+[`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md).
+The relevant object is not a large permanent ideal but the
+rank-drop graph on the pencil parameter line.  Its three Kronecker
+degeneracy pairs are disjoint, so the graph is a matching; three
+leaves necessarily contain a rank-three pair and close the forbidden
+triangle.  This is a concrete instance of the bounded-normal-rank
+pencil organization developed by
+[De Teran--Dopico--Landsberg](https://arxiv.org/abs/1606.02574).
+On the balanced collision, even that language collapses to one
+intersection-number calculation: the forbidden coefficient is
+`a^2b^2=4`.

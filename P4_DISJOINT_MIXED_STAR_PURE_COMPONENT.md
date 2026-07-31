@@ -279,12 +279,18 @@ The immediate exact targets are now:
 
 1. extract and classify its still-hidden standard-basis denominators
    and remaining projective boundaries;
-2. finish the remaining exceptional triangle and the compatibility of
-   the rank-two pair pencils to decide component exhaustiveness.  A
+2. finish the mixed rank-one/rank-two compatibility of the
+   exceptional pair pencils to decide component exhaustiveness.  The
+   pure rank-two triangle is now classified and lower-dimensional,
+   while the pure rank-two star is empty.  A
    single exact rank-two pair is now forced into a secant
    `2+2`/`1+3` block center or a coincident-plane tangent through a
    coordinate line by
    [`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md).
+   The multiple-edge results are
+   [`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md)
+   and
+   [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md).
 
 The global prize conjecture remains unresolved.
 

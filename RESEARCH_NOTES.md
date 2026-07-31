@@ -11918,3 +11918,54 @@ pure-incidence component has dimension at least five by its
 twenty-variable/fifteen-equation Segre chart.  Hence the complete
 rank-two-relation triangle cannot be the generic graph of a missing
 component.
+
+### A pure rank-two-relation star is impossible
+
+The other three-edge graph is closed in
+
+```text
+P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md
+verify_p4_rank_two_relation_star_obstruction.py
+audit_p4_rank_two_relation_star_obstruction.py
+```
+
+Because a star is a tree, the three rank-two relations can be gauged
+independently to
+
+```text
+y0*xi=x0*yi.
+```
+
+Thus all three leaf row-pairs lie in the synchronizer of the center.
+For a generic four-point center this is the projective pencil
+`A+t*A_sharp`.  Two pencil members have pair rank below three only
+when their parameters form one of three disjoint pairs, cut out by
+two of
+
+```text
+lambda*t*u-1,
+lambda*t*u-t-u+1,
+lambda*t*u-lambda*t-lambda*u+1.
+```
+
+The rank-drop graph is therefore a matching.  Among three leaves some
+pair has rank three, so it and the center form the already classified
+generic flat triangle, a contradiction.
+
+The collision boundary is smaller.  Zero columns make the whole
+degree-four product zero.  A `2+1+1` center forces all active rows to
+one two-supported vector, whose fourth power is zero.  A `1+3`
+center makes every leaf the same plane and drops center-leaf rank to
+two.  Finally, at the balanced `2+2` center, the coefficient selecting
+the center kernel, one leaf kernel, and two leaf active rows is
+
+```text
+a(a+beta*b_bar)(b+alpha*a_bar)(b+gamma*a_bar)=a^2*b^2=4,
+```
+
+contradicting purity.
+
+Consequently an all-pair-rank-at-least-three missing component cannot
+be supported by a star or generic triangle whose selected relations
+are all rank two.  The remaining compatibility problem is genuinely
+mixed rank one/rank two.
