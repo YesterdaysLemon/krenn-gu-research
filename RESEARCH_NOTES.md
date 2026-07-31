@@ -11809,3 +11809,46 @@ Therefore the ninth pure-`P_4` component's complete marked `H31`
 fibre is empty.  This is a full component theorem, but not a proof
 that the nine known pure components are exhaustive and not a global
 solution of the Krenn--Gu problem.
+
+### Nonzero additive holonomy is empty
+
+The tangent branch of the resonant triangle reduction is now closed
+in
+
+```text
+P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md
+verify_p4_resonant_nonzero_additive_holonomy_obstruction.py
+audit_p4_resonant_nonzero_additive_holonomy_obstruction.py
+```
+
+When `delta!=0`, the three nonzero products
+
+```text
+q_ij=y_i y_j
+```
+
+have catalecticant rank two and the full opposite plane as their
+annihilator.  They are therefore cut quadrics.  A proper cut support
+is excluded by the earlier partner-rank argument.  A full `2+2` cut
+is excluded because its factorization `y_i y_j` must use an anchor,
+whereas every rank-three crossed partner avoids both anchors.
+
+If all three cuts have full `1+3` support, each factorization is on
+the internal sheet: the other sheet is fully supported, while the
+factors already lie in coordinate hyperplanes.  Three distinct
+singleton labels collapse the factors to a coordinate line, and two
+labels collapse them to a coordinate two-plane.  Hence the labels
+coincide.  All three local planes then lie in one coordinate
+hyperplane, so the restriction suspends a pure `P_3`.  Perfect
+pairing gives pair-image rank at most two, contradicting the triangle
+hypothesis.
+
+Thus
+
+```text
+Omega!=0                 empty,
+Omega=0, delta!=0        empty,
+Omega=0, delta=0         open flat binary-cubic branch.
+```
+
+This is a symbolic cut/duality proof and uses no component search.

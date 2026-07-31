@@ -171,6 +171,16 @@ strictly advance the finite frontier:
   incidences, not the original plane equations, are the remaining
   triangle frontier:
   [`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md).
+- the nonzero additive-holonomy branch is empty.  Its tangent-Segre
+  first jet makes the three kernel-pair products into nonzero
+  rank-two cuts with the opposite planes as annihilators.  Proper
+  supports descend to a rank-deficient partner; a full `2+2` cut
+  contradicts the anchor/crossed-graph lemma; and three full `1+3`
+  cuts force a common coordinate hyperplane and hence an embedded
+  pure `P_3`, where perfect pairing makes every pair image have rank
+  at most two.  The triangle frontier is therefore reduced to the
+  flat synchronized binary cubic `Omega=delta=0`:
+  [`P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md`](P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md).
 - a mixed zero-product orientation produces a sixth
   symmetry-inequivalent component.  The normalized rank-two
   contraction condition is a `3 x 4` determinantal problem whose

@@ -8,8 +8,9 @@ all-rank-two-relation triangle stratum left after
 It is symbolic and uses only gauge normalization, three cyclic
 identities, and the perfect pairing of the squarefree algebra.
 
-It does **not** yet exclude the resonant triangle.  Instead it splits
-that divisor into two intrinsic shapes:
+The subsequent cut argument in
+[`P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md`](P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md)
+excludes the first of the following two intrinsic shapes:
 
 1. nonzero additive holonomy gives a tangent-Segre first jet together
    with a cyclic triangle of cut quadrics;
@@ -17,9 +18,10 @@ that divisor into two intrinsic shapes:
    `Sym^3(C^2) -> R_3` whose first three coefficients span at most a
    plane.
 
-This is now the complete triangle frontier for pure-`P_4` component
-exhaustiveness.  Other exceptional graphs and lower pair-rank strata
-also remain, so the global Krenn--Gu problem is unresolved.
+Thus only the zero-additive-holonomy shape remains on the triangle
+frontier for pure-`P_4` component exhaustiveness.  Other exceptional
+graphs and lower pair-rank strata also remain, so the global
+Krenn--Gu problem is unresolved.
 
 ## Multiplicative resonance
 
@@ -282,16 +284,15 @@ are the repository's direct reduction.
 
 ## Exact frontier
 
-The next symbolic targets are now explicit:
+After the nonzero additive-holonomy obstruction, the next symbolic
+targets are:
 
-1. classify the cyclic cut compatibility of the three `q_ij=y_iy_j`
-   in the tangent case, retaining (13);
-2. classify binary-cubic multiplication maps (16) satisfying the
+1. classify binary-cubic multiplication maps (16) satisfying the
    compression flag (18); and
-3. identify whether their closures lie in the nine known components
+2. identify whether their closures lie in the nine known components
    or force another component.
 
-No claim of emptiness is made here.
+No claim of emptiness is made here for that flat branch.
 
 ## Verification
 

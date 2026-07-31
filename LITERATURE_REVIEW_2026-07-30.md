@@ -413,3 +413,14 @@ second-hypersimplex dictionary
 ([Herrmann--Joswig](https://arxiv.org/abs/0804.2897)): glue Pluecker
 charts by support, not by taking limits of inverse pivot variables.
 Consequently the ninth component is now closed in full for `H31`.
+
+The same “translate before eliminate” principle now closes the
+nonzero additive-holonomy part of the resonant rank-two triangle:
+[`P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md`](P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md).
+The affine connection first becomes a tangent-Segre jet; its three
+kernel-pair products then become cut quadrics.  The obstruction is
+not a tangent-rank calculation by itself.  It passes through the
+classification of squarefree cut supports, the anchor geometry of
+`2+2` quadrics, and finally the Frobenius perfect pairing of the
+three-variable squarefree complete intersection.  This closes the
+tangent branch and leaves only the flat synchronized binary cubic.
