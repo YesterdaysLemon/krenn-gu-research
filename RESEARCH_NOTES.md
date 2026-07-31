@@ -11837,7 +11837,7 @@ point lies in a symmetry copy of the affine chart already closed.
 
 Therefore the ninth pure-`P_4` component's complete marked `H31`
 fibre is empty.  This is a full component theorem, but not a proof
-that the nine known pure components are exhaustive and not a global
+that the then-known nine pure components are exhaustive and not a global
 solution of the Krenn--Gu problem.
 
 ### Nonzero additive holonomy is empty
@@ -12318,3 +12318,49 @@ Thus the rank-two-relation star is genuinely empty.  The old file stays
 withdrawn because its proof moved the kernel flag; the replacement theorem
 is the authoritative result.  The mixed `(2,2,1)` triangle is the next
 Borel compatibility frontier.  The global conjecture remains open.
+
+### A two-rank-two-spoke mixed star is the tenth component
+
+The presymplectic chart left open by the graph obstructions produces a
+component rather than another contradiction:
+
+```text
+P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md
+verify_p4_two_rank_two_spoke_mixed_star_component.py
+audit_p4_two_rank_two_spoke_mixed_star_component.py
+```
+
+With `a,a_bar` and `b,b_bar` the opposite directions on two complementary
+binary blocks, take
+
+```text
+U0=span(a+b,b),
+U1=span(a+b-b_bar-s*a_bar,b-s*a_bar),
+U2=span(a+b+b_bar-t*a_bar,b-t*a_bar),
+U3=span(b_bar,(s+t-1-st,s+t+1+st,-s-t,-s-t)).
+```
+
+The only nonzero restricted coefficient is
+
+```text
+T_1111=-4(s+t).
+```
+
+The three center pair images have rank three and unique relation-matrix
+ranks `(2,2,1)`; the three leaf pair images have rank four.  Thus the
+exceptional graph is exactly the previously open two-rank-two-spoke mixed
+star, with pair profile `(3,3,3,4,4,4)`.
+
+The active row is governed by `d=(1+st)/(s+t)`.  The Cayley coordinate
+`c(z)=(z-1)/(z+1)` turns this into the torus law `c(d)=c(s)c(t)`.  This
+identifies the survivor as a toric multiplication graph inside the
+presymplectic synchronizer plane.
+
+At `(s,t)=(2,3)`, the diagonal-source family tangent has the exact minor
+`-1/2`.  In the universal Segre incidence, a `15 x 15` Jacobian minor is
+`345600000`, so the incidence is smooth of dimension five.  The irreducible
+family closure is therefore a component.  Its exceptional relation-rank
+multiset `{1,2,2}` separates it from all seven earlier fivefolds, and its
+dimension separates it from the two sixfolds.  The certified lower bound is
+now ten pure-`P4` component orbits.  Its marked `P5` fibres, special toric
+boundary, component exhaustiveness, and the global conjecture remain open.

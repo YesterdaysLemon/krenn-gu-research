@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Exceptional graph of the two-rank-two-spoke mixed-star component</title>
+  <desc id="desc">Mode zero is the center. Edges to modes one and two have coefficient-matrix rank two. The edge to mode three has coefficient-matrix rank one. There are no exceptional leaf-to-leaf edges.</desc>
+  <rect width="960" height="600" rx="28" fill="#fbfaf6"/>
+  <text x="480" y="54" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#20242b">New pure P₄ component: exceptional mixed star</text>
+  <text x="480" y="86" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#59616d">pair profile (3,3,3,4,4,4) · relation ranks (2,2,1)</text>
+
+  <line x1="470" y1="300" x2="208" y2="172" stroke="#315f9b" stroke-width="8" stroke-linecap="round"/>
+  <line x1="490" y1="300" x2="228" y2="172" stroke="#7ea6d8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="470" y1="320" x2="208" y2="448" stroke="#315f9b" stroke-width="8" stroke-linecap="round"/>
+  <line x1="490" y1="320" x2="228" y2="448" stroke="#7ea6d8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="510" y1="310" x2="752" y2="310" stroke="#c56b2d" stroke-width="8" stroke-linecap="round"/>
+
+  <rect x="252" y="184" width="176" height="34" rx="17" fill="#e8f0fa" stroke="#315f9b"/>
+  <text x="340" y="207" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#244c7e">rank(C₀₁)=2</text>
+  <rect x="252" y="402" width="176" height="34" rx="17" fill="#e8f0fa" stroke="#315f9b"/>
+  <text x="340" y="425" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#244c7e">rank(C₀₂)=2</text>
+  <rect x="558" y="276" width="176" height="34" rx="17" fill="#fff0e4" stroke="#c56b2d"/>
+  <text x="646" y="299" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#8c451b">rank(C₀₃)=1</text>
+
+  <g font-family="Georgia, serif" font-size="28" text-anchor="middle">
+    <circle cx="480" cy="310" r="48" fill="#25384f" stroke="#142235" stroke-width="4"/>
+    <text x="480" y="320" fill="white">U₀</text>
+    <circle cx="190" cy="150" r="42" fill="#f1f5fa" stroke="#315f9b" stroke-width="4"/>
+    <text x="190" y="160" fill="#203c60">U₁</text>
+    <circle cx="190" cy="470" r="42" fill="#f1f5fa" stroke="#315f9b" stroke-width="4"/>
+    <text x="190" y="480" fill="#203c60">U₂</text>
+    <circle cx="790" cy="310" r="42" fill="#fff5ec" stroke="#c56b2d" stroke-width="4"/>
+    <text x="790" y="320" fill="#7a3b17">U₃</text>
+  </g>
+
+  <text x="480" y="548" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#59616d">Leaf pairs U₁U₂, U₁U₃, U₂U₃ have full product-image rank 4.</text>
+  <text x="480" y="575" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#777f89">Blue double strokes: alternating synchronizer relations · orange: decomposable zero-product relation</text>
+</svg>

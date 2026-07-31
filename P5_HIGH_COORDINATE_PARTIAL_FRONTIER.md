@@ -835,8 +835,10 @@ six-dimensional component are also generically closed but retain
 their parameter/projective boundaries; both are likewise generically
 closed for `H31` and weighted `H22`.  The common smooth
 diagonal-quadric locus cannot supply a new component away from its
-block boundaries.  The embedded pure-`P_3` suspension has since raised
-the component lower bound to nine.  Its generic marked `H31` fibre is
+block boundaries.  The embedded pure-`P_3` suspension raised the
+component lower bound to nine.  A later two-rank-two-spoke mixed-star
+component has raised the current lower bound to ten; its marked fibres are
+not analyzed here.  The embedded component's generic marked `H31` fibre is
 now empty already at binary level: the source-zero extension is an
 apolar insertion map whose generic projected-line kernels all kill
 one required diagonal.  Restoring the weighted slope closes its

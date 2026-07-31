@@ -70,9 +70,11 @@ external mathematical review, the strongest additional claims are:
 - a complete exact-three-coordinate obstruction for
   `P_5 -> Delta_3`;
 - exact exclusions of normalized `q5_311`, `q5_221`, and `q4_211`;
-- at least nine inequivalent components of the pure rank-two
+- at least ten inequivalent components of the pure rank-two
   `P_4`-compression variety.  Generic `H31` and generic weighted
-  `H22` fibres are empty on all nine.  The complete marked projective
+  `H22` fibres are empty on the nine components known before the new
+  two-rank-two-spoke mixed star; its marked fibres are unclassified.  The
+  complete marked projective
   `H31` fibre of the embedded-`P_3` ninth component is empty, while its
   weighted `H22` obstruction currently covers the full normalized
   affine chart rather than every projective boundary.  On the eighth
@@ -611,3 +613,34 @@ make the radical incidence exact here.  The review found no source stating
 this marked `(2,2,1)` obstruction.  The remaining graph-theoretic boundary is
 not this pattern but triangles with only one rank-two edge, other mixed-star
 patterns, and lower pair-image ranks.
+
+The first of those “other” mixed stars is not an obstruction but a new
+component:
+[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md).
+Two rank-two spokes again place two leaves in the full-support `2+2`
+synchronizer plane.  A star requires their presymplectic determinant to be
+nonzero, the opposite of the triangle rank-drop condition above.  A third
+rank-one spoke pins its pure kernel to the complementary binary annihilator.
+The fifteen purity equations then reduce to one nonzero coefficient and the
+rational law
+
+```text
+d=(1+st)/(s+t).
+```
+
+The Cayley transformation `c(z)=(z-1)/(z+1)` conjugates this to
+
+```text
+c(d)=c(s)c(t).
+```
+
+So the surviving compatibility surface is a toric multiplication graph, not
+an unexplained determinantal residue.  Its five-dimensional diagonal-source
+orbit is smooth on the universal Segre incidence at `(s,t)=(2,3)`, proving a
+tenth component orbit.  The use of a radical alternating form places the
+construction near projective symplectic geometry.  For the broader neighboring
+language of degenerate alternating-form flag geometry, compare Boos,
+Cerulli Irelli, Fang, and Fourier,
+[Linear degenerate symplectic flag varieties](https://arxiv.org/abs/2405.02739).
+That literature does not state the squarefree permanent component or its
+`(2,2,1)` relation-rank invariant.

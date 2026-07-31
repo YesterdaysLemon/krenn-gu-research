@@ -22,8 +22,11 @@ component orbits: seven fivefolds and one sixfold.
 
 The embedded-`P_3` suspension in
 [`P4_EMBEDDED_P3_PURE_COMPONENT.md`](P4_EMBEDDED_P3_PURE_COMPONENT.md)
-has since raised the repository-wide lower bound to nine.  Nothing in
-the theorem below depends on that later component.
+later raised the repository-wide lower bound to nine.  The two-rank-two-spoke
+mixed star in
+[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md)
+has since raised it to ten.  Nothing in this theorem depends on those later
+components.
 
 This is not a classification.  A subsequent exact function-field
 theorem excludes the generic marked `H31` fibre:
@@ -279,18 +282,19 @@ The immediate exact targets are now:
 
 1. extract and classify its still-hidden standard-basis denominators
    and remaining projective boundaries;
-2. finish compatibility among the rank-two pair pencils and mixed
+2. finish compatibility among the remaining rank-two pair pencils and mixed
    rank-one/rank-two orientations in order to decide component
-   exhaustiveness.  The Borel-generic flat triangle and one
-   kernel-zero chart are empty, but their remaining boundary is not
-   yet classified.  A single exact rank-two pair is forced into a secant
+   exhaustiveness.  The two-rank-two-spoke star has since produced a tenth
+   component, while the corrected `(2,2,1)` triangle is empty.  A single
+   exact rank-two pair is forced into a secant
    `2+2`/`1+3` block center or a coincident-plane tangent through a
    coordinate line by
    [`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md).
    The valid multiple-edge generic result is
    [`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md).
-   The proposed complete triangle, star, and mixed `(2,2,1)` claims
-   were withdrawn after a Borel-gauge audit.
+   The historical proposed complete triangle, star, and mixed `(2,2,1)`
+   claims were withdrawn after a Borel-gauge audit and now have corrected
+   replacements.
 
 The global prize conjecture remains unresolved.
 

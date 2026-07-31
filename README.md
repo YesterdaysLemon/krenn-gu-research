@@ -248,6 +248,16 @@ strictly advance the finite frontier:
   required rank one.  This leaves one-rank-two-edge triangles and the lower
   pair-rank boundary, not the `(2,2,1)` pattern:
   [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md).
+- the analogous `(2,2,1)` **star** does exist and supplies a tenth pure-`P_4`
+  component orbit.  In the full-support `2+2` presymplectic chart, purity
+  leaves a rational two-parameter family with only
+  `T_1111=-4(s+t)`.  Its pair profile is `(3,3,3,4,4,4)` and the three
+  center relations have coefficient ranks `(2,2,1)`.  Under the Cayley map
+  `c(z)=(z-1)/(z+1)`, the compatibility law
+  `d=(1+st)/(s+t)` becomes the torus multiplication law `c(d)=c(s)c(t)`.
+  Exact family and incidence minors prove that its diagonal-source closure
+  is a smooth five-dimensional component at `(s,t)=(2,3)`:
+  [`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md).
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while
@@ -984,7 +994,8 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   jump locus; the three ruling patterns reduce to one empty and two
   one-dimensional normalized loci.  The embedded-`P_3` suspension has
   since proved that the eight-component list was incomplete; the
-  current nine-component list is still not known to be exhaustive.
+  resulting nine-component list was still not exhaustive: the two-rank-two-
+  spoke mixed star above has since supplied a tenth component.
   On the eight pure-`P_4` component orbits known before that
   suspension, the generic weighted `H22` incidence is empty.  Six
   earlier proofs combine unit
@@ -998,8 +1009,9 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   orbit is now generically closed for `H31` as well, by a three-line
   apolar insertion arrangement.  Restoring the slope closes its
   generic weighted `H22` fibre by the same arrangement plus one
-  structural zero diagonal.  Thus all nine known orbits are now
-  generically closed for both marked types.  The ninth orbit's entire
+  structural zero diagonal.  Thus all nine orbits known at that checkpoint
+  are generically closed for both marked types.  The new tenth component's
+  marked `H31/H22` fibres have not yet been analyzed.  The ninth orbit's entire
   normalized `H31` chart is closed as well, and its weighted boundary
   is closed on every rank-two projected-line stratum.  The rank-one
   projected-image collapse is now closed by the complementary marked

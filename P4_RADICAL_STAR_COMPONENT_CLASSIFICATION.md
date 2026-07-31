@@ -286,8 +286,12 @@ plane tuple.”  Its unresolved generic alternatives are:
    corrected marked charts; the last `2+2` chart reduces to a presymplectic
    commutator determinant:
    [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md).
-   Configurations with only one rank-two edge and mixed-star patterns outside
-   the three-rank-two-spoke obstruction remain open;
+   The full-support mixed star with two rank-two spokes and one rank-one spoke
+   is not empty: its Cayley-toric two-parameter chart has a smooth
+   five-dimensional diagonal-source closure and supplies a tenth component:
+   [`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md).
+   Configurations with only one rank-two triangle edge, the remaining mixed-
+   star orientations, and special boundaries of the new component remain open;
 3. the lower pair-image-rank and coincident/support-one zero-product
    boundaries.  One rank-two-edge stratum now supplies the
    six-dimensional component in
