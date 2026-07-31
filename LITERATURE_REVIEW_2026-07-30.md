@@ -681,6 +681,41 @@ squarefree-quadratic factorization and exceptional-graph interpretation are
 specific to this problem.  Other Borel orientations of the `{1,1,2}` triangle
 remain to be compared with known star and lower-rank component closures.
 
+The crossed Borel orientation of that triangle is now classified on the
+whole genuine support-two stratum:
+[`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md).
+A binary zero product is an opposite signed pair
+`(X_i+X_j)(X_i-X_j)=0`; its support is an edge `{i,j}` of `K_4`.  The six
+supports therefore form the octahedron `J(4,2)=L(K_4)`, or equivalently the
+support shadow of the `D_4` root arrangement.  Equality, opposition, and
+adjacency of two octahedron vertices give the complete support trichotomy.
+Equal labels force a coordinate-hyperplane Schubert boundary.  Opposite
+labels turn the remaining factorization into a rank-one `K_(2,2)` block and
+force either an anchor plane collapse or a second pair relation.  Adjacent
+labels turn it into a triangle-supported quadratic whose unique dense
+factorization is the fixed apolar component.
+
+There is a useful matrix-completion reformulation.  Multiplication of
+degree-one vectors `u,v` records the off-diagonal part of
+`uv^T+vu^T`; the free diagonal is exactly the squarefree quotient.  The
+three support branches are free-diagonal completions of weighted adjacency
+matrices supported on `K_2`, `K_(2,2)`, and `K_3`.  Kiraly, Theran, and
+Tomioka develop the local algebraic-matroid view of low-rank completion
+([arXiv:1211.4116](https://arxiv.org/abs/1211.4116)), while Bernstein,
+Blekherman, and Lee study symmetric completion ranks determined by graph
+patterns ([arXiv:1909.06593](https://arxiv.org/abs/1909.06593)).  Their
+frameworks explain why the observation graph should matter; neither contains
+the marked squarefree factorization or its Borel orientation.
+
+The same binary pairs are homogeneous zero divisors in an Artinian algebra.
+Kustin, Striuli, and Vraciu obtain Hilbert-function restrictions from exact
+pairs ([arXiv:1304.0411](https://arxiv.org/abs/1304.0411)).  Here the stronger
+degree-one annihilator bound decorates each pair by a `D_4` support label.
+Combining that finite incidence geometry with low-rank completion and then
+Macaulay duality is what produces the classification.  This synthesis seems
+stronger for the present local problem than any one neighboring
+specialization by itself.
+
 The tenth component's generic `H31` obstruction adds a module-theoretic
 translation:
 [`P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).

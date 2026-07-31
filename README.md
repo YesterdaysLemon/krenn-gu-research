@@ -274,6 +274,17 @@ strictly advance the finite frontier:
   torus gives the known fivefold.  An exact Pluecker map identifies this with
   the old five-parameter family:
   [`P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md`](P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md).
+- the crossed Borel orientation of that `(2,1,1)` triangle is now classified
+  on the complete genuine support-two stratum.  The six binary zero-product
+  labels form the octahedron `J(4,2)=L(K_4)`.  Equal labels force the three
+  triangle planes into a coordinate hyperplane; opposite (disjoint) labels
+  force a collapsed plane or a second pair relation; and adjacent labels
+  have one dense factorization orbit, exactly the fixed apolar triangle
+  above.  The proof is a `2 x 2` exterior-product identity plus three
+  squarefree coefficient ratios, with no elimination:
+  [`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md).
+  The support octahedron is shown in
+  [`P4_CROSSED_211_TRIANGLE_SUPPORT_OCTAHEDRON.png`](P4_CROSSED_211_TRIANGLE_SUPPORT_OCTAHEDRON.png).
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while

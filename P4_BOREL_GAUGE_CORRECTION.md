@@ -84,4 +84,9 @@ by Borel-legal proofs:
 and
 [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md).
 The honest unresolved boundary is instead the one-rank-two-edge mixed
-triangle, other mixed-star patterns, and lower pair-image ranks.
+triangle, other mixed-star patterns, and lower pair-image ranks.  The crossed
+genuine support-two orientation of that triangle is now classified in
+[`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md):
+only the one-coordinate-overlap orbit survives at full source support, and it
+is the first apolar component.  Common-factor/radical orientations,
+support-one products, and lower pair ranks remain.

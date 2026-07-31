@@ -25,7 +25,7 @@ U_3=span((0,0,1,-1), (1,0,-1,0)).                (1)
 The three pair images have rank three.  Their unique relations are
 
 ```text
-y_1x_2-(1/2)x_1y_2=0,       coefficient rank 2,
+y_1x_2-2x_1y_2=0,           coefficient rank 2,
 x_1y_3=0,                    coefficient rank 1,
 y_2x_3=0,                    coefficient rank 1.                 (2)
 ```
@@ -42,7 +42,7 @@ constant term of the rank-two relation without changing either zero product.
 The remaining equation is a factorization of the fixed squarefree quadratic
 
 ```text
-y_1x_2=(X_2+X_3)(X_0+X_2).                        (3)
+(1/2)y_1x_2=x_1y_2=(X_2+X_3)(X_0+X_2).            (3)
 ```
 
 On the dense branch where both missing-coordinate entries are nonzero, write
@@ -167,6 +167,14 @@ its apolar covectors.  The remaining component-classification question is
 whether the other Borel orientations and support collisions of a `{1,1,2}`
 triangle reduce to this component or to already known star/lower-rank
 closures.
+
+The crossed orientation with genuine support-two zero products is now
+classified completely in
+[`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md):
+equal labels force a coordinate hyperplane, disjoint labels force a pair-rank
+drop, and one-coordinate overlap gives exactly the triangle above.  The
+remaining question is confined to the other Borel orientations and
+support-one/lower-pair-rank boundaries.
 
 ## Verification
 

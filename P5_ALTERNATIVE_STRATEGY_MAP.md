@@ -1224,6 +1224,29 @@ determinantal divisors:
 
 - [`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md`](P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md)
 
+The first component's one-rank-two-edge triangle now has a reverse support
+classification on its crossed Borel orientation.  Genuine binary zero
+products are labeled by the six two-subsets of the source coordinates, hence
+by the octahedron `J(4,2)=L(K_4)`.  The three support orbits have exact and
+very different outcomes:
+
+```text
+equal labels       -> all triangle planes lie in a coordinate hyperplane,
+disjoint labels    -> a plane collapses or an exceptional pair rank drops,
+one-point overlap  -> the unique dense orbit is the first apolar component.
+```
+
+The disjoint case is the rank-one `K_(2,2)` matrix-completion identity
+`det[u,u']det[v',v]=0`; the overlap case is a signed-reflection
+factorization of a triangle-supported quadratic.  This closes every support
+collision in that orientation without Gröbner elimination:
+
+- [`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md)
+
+The remaining generic triangle work is no longer an undifferentiated
+support problem.  It is confined to common-factor/radical Borel
+orientations and support-one or lower-pair-rank boundaries.
+
 The earlier
 quadratic-function-field experiments and their null outcomes remain
 recorded as provenance:
@@ -1251,8 +1274,8 @@ marked-fibre level:
    components, the sixth component, and the six-dimensional component,
    close the disjoint mixed-star component's special `H31/H22`
    boundaries,
-   then classify the remaining mixed-orientation star/triangle and
-   lower-pair-rank exceptional geometries;
+   then classify the remaining common-factor/radical orientations of the
+   `(2,1,1)` triangle and lower-pair-rank exceptional geometries;
 2. intersect the `H22` three-normal incidences with that classification,
    treating the exact component obstructions as complementary generic
    models and concentrating on their special parameter/slope

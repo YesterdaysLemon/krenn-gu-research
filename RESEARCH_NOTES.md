@@ -12539,3 +12539,63 @@ The generic pair profile is `(4,4,4,3,3,3)`, with triangle relation ranks
 first component, expressed as a `P^2` apolar fibre plus the three-dimensional
 source torus.  The other Borel orientations and support collisions of the
 same triangle remain to be classified.
+
+### The crossed `(2,1,1)` support problem is an octahedron
+
+The first component normal form left one precise reverse question: could the
+same crossed Borel orientation produce another full-support triangle when
+the two binary zero-product supports collide differently?  This is now
+classified exactly in
+
+```text
+P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md
+verify_p4_crossed_211_triangle_support_classification.py
+audit_p4_crossed_211_triangle_support_classification.py
+```
+
+A genuine zero product is an opposite binary pair
+`(Xi+Xj)(Xi-Xj)=0`, labeled by `{i,j}`.  The six labels are the vertices of
+the octahedron `J(4,2)=L(K4)`, giving three support orbits.
+
+For equal labels, the rank-two edge factorization has target `X0X1`.
+Nonzero active cubic forces one factor outside that binary block; its six
+coefficient equations then force both factors to use exactly one common
+outside coordinate.  All three triangle planes lie in a coordinate
+hyperplane.
+
+For disjoint labels, the target is the complete bipartite quadratic `ab`.
+Writing the two factors in binary blocks gives
+
+```text
+[u u'] [v' v]^T = a b^T,
+det(u,u') det(v',v)=0.
+```
+
+The internal zero coefficients force one block projection to vanish.  The
+four resulting anchor forms either collapse `U1` or `U2`, or add a second
+zero product to edge `13` or `23`, dropping that pair image to rank at most
+two.  Thus the disjoint orbit is empty on the stated stratum.
+
+For one-coordinate overlap, normalize the target to
+`(X2+X3)(X0+X2)`.  The three coefficients incident with the missing
+coordinate force the second factor to be the signed reflection of the first.
+Equality of the three nonzero coefficients makes coordinates `0,2,3`
+equal.  If the missing-coordinate entries vanish the triangle lies in a
+coordinate hyperplane; otherwise the unused source torus gives exactly
+
+```text
+U1=span((1,1,1,1),(0,0,1,1)),
+U2=span((1,0,1,0),(1,-1,1,1)),
+U3=span((0,0,1,-1),(1,0,-1,0)).
+```
+
+The symbolic minors `(-2r^2,-2r,r^2)` certify pair ranks three before the
+last source scaling.  An independent source-permuted, unequally scaled
+subset-DP replay recovers pure support at exactly `0111,1111` and relation
+ranks `(2,1,1)`.  No ideal or finite-field search is used.
+
+Conceptually, the same proof is simultaneously a `D4` root-support orbit
+calculation, a symmetric rank-two completion problem on `K2`, `K_(2,2)`, or
+`K3`, and an apolar `Gr(2,3)` construction.  The remaining triangle frontier
+is confined to common-factor/radical Borel orientations, support-one zero
+products, and lower pair-image ranks.
