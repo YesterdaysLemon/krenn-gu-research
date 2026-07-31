@@ -832,8 +832,11 @@ one required diagonal.  Restoring the weighted slope closes its
 generic `H22` fibre as well: one diagonal direction is structurally
 zero and the other is the same insertion arrangement on a
 slope-dependent line.  Exhaustiveness of those nine orbits, the
-ninth component's special `H31/H22` boundaries, and the special
-component/slope boundary incidences in `H22` remain unresolved.
+ninth component's omitted normalization/projective `H31` boundary
+and special weighted `H22` boundary, and the special component/slope
+boundary incidences in `H22` remain unresolved.  Its full normalized
+affine `H31` chart is now closed, including all nine exceptional
+insertion points.
 
 ## Verification
 

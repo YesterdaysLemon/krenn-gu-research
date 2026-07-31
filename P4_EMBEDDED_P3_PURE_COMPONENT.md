@@ -325,6 +325,17 @@ verify_p5_h31_embedded_p3_component_generic_obstruction.py
 audit_p5_h31_embedded_p3_component_generic_obstruction.py
 ```
 
+The nine exceptional insertion points are now closed as well.  Five
+binary survivor families remain after exact truncated-Segre
+classification; small one-marked covers exclude four, and the deepest
+rank-three point has stacked pure/neighbour determinant `8`:
+
+```text
+P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md
+verify_p5_h31_embedded_p3_component_normalized_boundary.py
+audit_p5_h31_embedded_p3_component_normalized_boundary.py
+```
+
 The generic weighted `H22` fibre is empty at binary level as well.
 One weighted direction retains source coordinate zero and therefore
 has an identically zero all-alpha diagonal.  The other is the same

@@ -44,6 +44,8 @@ DEPENDENCIES = (
     / "P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
     ROOT
     / "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
+    ROOT
+    / "P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md",
     ROOT / "P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md",
     ROOT / "P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md",
     ROOT / "P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md",
@@ -310,6 +312,8 @@ def main() -> None:
                 "embedded_P3_component_pair_profile": [4, 4, 4, 2, 2, 2],
                 "embedded_P3_component_generic_marked_fibre_excluded": True,
                 "embedded_P3_component_complete_marked_fibre_excluded": False,
+                "embedded_P3_component_normalized_chart_marked_fibre_excluded": True,
+                "embedded_P3_component_nine_insertion_points_closed": True,
                 "seven_previously_known_components_generic_marked_fibres_excluded": True,
                 "all_eight_known_components_generic_marked_fibres_excluded": True,
                 "all_nine_known_components_generic_marked_fibres_excluded": True,

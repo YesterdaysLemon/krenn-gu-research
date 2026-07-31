@@ -11263,3 +11263,42 @@ All nine currently certified pure-`P_4` components now have empty
 generic marked `H31` and weighted `H22` fibres.  Their special
 boundaries, component exhaustiveness, and the global Krenn--Gu
 conjecture remain unresolved.
+
+### Complete normalized ninth-component `H31` boundary
+
+The nine insertion points have now been classified and closed in
+
+```text
+P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md
+verify_p5_h31_embedded_p3_component_normalized_boundary.py
+audit_p5_h31_embedded_p3_component_normalized_boundary.py
+```
+
+The exact kernels at the six line-special points are coordinate
+planes such as `<x_2,z_2>` or `<z_2,z_3>`; the three coordinate-point
+kernels are one-dimensional.  Imposing the other mode-zero slice as a
+truncated Segre tensor leaves exactly the projected-plane strata
+
+```text
+T=1,U=S+1;       T=1,U=S;       T=0,U=1.
+```
+
+They contain five marked binary families.  Four are excluded by pairs
+of one-marked minors with factors among
+
+```text
+y, h, h-1, S, S+1, Sy+1, y+1.
+```
+
+At the sole deepest point `S=0,y=1`, all four neighboring one-marked
+maps have rank three, but stacking the mode-one equations for source
+contractions `e_0` and `e_4` gives the five-row determinant
+
+```text
+det rows(0,2,7,10,14)=8.
+```
+
+Thus the third target row vanishes globally, contradicting local rank
+three.  The full normalized affine chart is closed for `H31`; the
+omitted normalization/projective boundary and the special weighted
+`H22` boundary remain.

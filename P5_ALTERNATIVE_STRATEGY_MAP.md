@@ -1100,8 +1100,17 @@ empty:
 
 - [`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md)
 
-The ninth component's special marked boundaries and exhaustiveness of
-the new component list remain open.  The earlier modular pattern and
+The nine exceptional `H31` insertion points are now classified
+exactly.  Truncated Segre relations leave five binary families.  Four
+are excluded by tiny neighboring one-marked covers; at the deepest
+point every neighboring map has rank three, but the stacked
+pure/neighbouring map has constant determinant `8`:
+
+- [`P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md)
+
+The ninth component's omitted normalization/projective `H31`
+boundary, special weighted `H22` boundary, and exhaustiveness of the
+new component list remain open.  The earlier modular pattern and
 timed-out broad route remain as provenance:
 
 - [`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md)

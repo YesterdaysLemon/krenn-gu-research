@@ -276,3 +276,14 @@ arrangement is controlled by nine point-line determinants.  Thus the
 kernel-sheaf calculation closes both generic marked types on the
 ninth component and raises the generic `H31/H22` closure count from
 eight to all nine currently known component orbits.
+
+The insertion arrangement also makes its own boundary tractable:
+[`P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md).
+At its nine singular/projective points, exact kernel vectors replace
+elimination.  Requiring the second slice to be diagonal is just a
+truncated `2 x 2 x 2` Segre test; its three quadratic relations factor
+into signed lines.  Only five binary families survive.  Four have
+transverse one-marked rank four, and the unique rank-three/rank-three
+point is killed by a stacked determinant `8`.  This closes the entire
+normalized `H31` chart and illustrates the broader strategy:
+degeneracy support first, kernel sheaf second, compatibility last.

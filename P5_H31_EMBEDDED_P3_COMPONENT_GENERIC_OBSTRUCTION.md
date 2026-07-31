@@ -331,5 +331,9 @@ All nine currently certified pure-`P_4` component orbits now have
 empty generic marked `H31` fibres.  This does not prove that the list
 is exhaustive and does not close any component's exceptional
 parameter/projective boundary.  For the ninth component specifically,
-the finite set `Sigma` in (15), the normalization boundary `Ar=0`,
-and the weighted `H22` fibre remain open.
+the finite set `Sigma` in (15) has since been closed throughout the
+normalized affine chart:
+[`P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md).
+The normalization boundary `Ar=0` and projective boundary remain open.
+Its generic weighted `H22` fibre is closed separately in
+[`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
