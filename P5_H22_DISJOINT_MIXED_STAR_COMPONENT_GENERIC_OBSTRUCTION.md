@@ -32,6 +32,10 @@ ideals:
 Three further linear slope graphs are closed by six unsplit ideals; one
 of them requires a cross-mode repair from mode zero to mode one:
 [`P5_H22_DISJOINT_MIXED_STAR_LINEAR_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_LINEAR_SLOPE_BOUNDARY_OBSTRUCTION.md).
+The dense component chart also admits an exact source-torus quotient
+`(a,b,f,phi)~(af,bf,1,phi/f)`, reducing the base to a surface without
+changing either slope:
+[`P5_H22_DISJOINT_MIXED_STAR_TORUS_QUOTIENT.md`](P5_H22_DISJOINT_MIXED_STAR_TORUS_QUOTIENT.md).
 
 This does not close special parameter, slope, or projective boundary
 points, prove that the eight components are exhaustive, settle the
@@ -277,6 +281,10 @@ The three rational graphs
 `(a+b)r+/-(a-b)=0` and `(af-1)r+(af+1)=0` are now closed as well.
 The last graph has a genuine mode-zero degeneracy in `D_01`, but its
 mode-one `0457` minor excludes every ternary lift.
+The remaining visible factors of the first reduced final certificate,
+including two unresolved slope divisors and all null computations, are
+listed in
+[`P5_H22_DISJOINT_MIXED_STAR_CERTIFICATE_DIVISOR_FRONTIER.md`](P5_H22_DISJOINT_MIXED_STAR_CERTIFICATE_DIVISOR_FRONTIER.md).
 
 ## Verification
 

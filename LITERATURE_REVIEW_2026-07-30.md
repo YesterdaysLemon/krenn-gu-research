@@ -87,7 +87,9 @@ external mathematical review, the strongest additional claims are:
   unsplit Fitting ideals exclude both weighted directions there.
   Three further rational slope graphs are excluded by six unsplit
   identities; one graph has a genuine mode-zero degeneration repaired
-  by a fixed mode-one minor.
+  by a fixed mode-one minor.  An exact source-torus quotient reduces
+  the dense component base to a two-dimensional surface while
+  preserving both weighted slopes.
 
 The first item is stronger than the currently cited paper frontier and
 than the status labels in the current public formal-conjectures file.

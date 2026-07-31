@@ -818,7 +818,9 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   ideals exclude both weighted directions there as well.  Three
   further rational slope graphs are excluded by six unsplit identities;
   one genuine mode-zero degeneration is repaired by the fixed mode-one
-  `0457` minor.
+  `0457` minor.  An exact source-torus quotient
+  `(a,b,f,phi)~(af,bf,1,phi/f)` reduces the dense component base to a
+  two-dimensional surface without changing either weighted slope.
 Thus this does not remove the 240 signatures from the fail-closed
 census and `P_5 -> Delta_3` remains unresolved.
 

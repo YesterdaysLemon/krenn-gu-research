@@ -32,6 +32,11 @@ Three rational slope graphs are subsequently closed by six unsplit
 identities; one real mode-zero degeneration is repaired by the
 mode-one `0457` minor:
 [`P5_H22_DISJOINT_MIXED_STAR_LINEAR_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_LINEAR_SLOPE_BOUNDARY_OBSTRUCTION.md).
+The exact source-torus quotient reduces the dense component base to the
+slice `f=1`, and the remaining certificate factors and null calculations
+are separated in the current frontier ledger:
+[`P5_H22_DISJOINT_MIXED_STAR_TORUS_QUOTIENT.md`](P5_H22_DISJOINT_MIXED_STAR_TORUS_QUOTIENT.md),
+[`P5_H22_DISJOINT_MIXED_STAR_CERTIFICATE_DIVISOR_FRONTIER.md`](P5_H22_DISJOINT_MIXED_STAR_CERTIFICATE_DIVISOR_FRONTIER.md).
 
 No computation described below proves a statement over `C`.  In
 particular, several direct characteristic-zero Groebner calculations

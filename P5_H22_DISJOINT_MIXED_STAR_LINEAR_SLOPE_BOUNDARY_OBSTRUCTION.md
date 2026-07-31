@@ -136,6 +136,12 @@ rank-four evidence but its current characteristic-zero calculations
 timed out.  Those timeouts are null results.  Neither candidate is
 claimed closed.
 
+Both candidates descend to the exact two-dimensional source-torus
+quotient in
+[`P5_H22_DISJOINT_MIXED_STAR_TORUS_QUOTIENT.md`](P5_H22_DISJOINT_MIXED_STAR_TORUS_QUOTIENT.md).
+Their equations and stopped calculations are recorded in
+[`P5_H22_DISJOINT_MIXED_STAR_CERTIFICATE_DIVISOR_FRONTIER.md`](P5_H22_DISJOINT_MIXED_STAR_CERTIFICATE_DIVISOR_FRONTIER.md).
+
 Other certificate factors may be syzygy artifacts and have not been
 promoted without a normalized incidence calculation.  Other pure
 components may exist.  The global Krenn--Gu conjecture remains
