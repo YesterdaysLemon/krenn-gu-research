@@ -72,8 +72,10 @@ external mathematical review, the strongest additional claims are:
 - exact exclusions of normalized `q5_311`, `q5_221`, and `q4_211`;
 - at least nine inequivalent components of the pure rank-two
   `P_4`-compression variety.  Generic `H31` and generic weighted
-  `H22` fibres are empty on the previous eight; the newly exposed
-  embedded-`P_3` component has not yet been tested.  On the eighth
+  `H22` fibres are empty on all nine.  The complete marked projective
+  `H31` fibre of the embedded-`P_3` ninth component is empty, while its
+  weighted `H22` obstruction currently covers the full normalized
+  affine chart rather than every projective boundary.  On the eighth
   component the equal-
   and opposite-weight `H22` fibres are additionally empty already at
   the binary-incidence level, twelve generic parameter/coordinate
@@ -116,6 +118,7 @@ peer-reviewed global result.
 | mode/colour symmetry | finite group action | orbit normal forms and equivariant stratification |
 | rank-two pair image | line meeting the `2 x 2` rank-one Segre quadric | Kronecker pencils, secant/tangent normal forms |
 | triangle of rank-two pair relations | `PGL_2` connection plus degree-two catalecticants | holonomy, tetrads, and weighted cuts |
+| three full-support `1+3` bridges | singleton cut labels plus coordinate-hyperplane intersections | factorization sheets, cut compatibility, perfect pairing |
 
 The determinantal step used in the new `H22` theorem is standard Fitting
 geometry: rank-drop loci are cut out by minors, and the construction is
@@ -174,6 +177,23 @@ extracts equations from coincident-root and determinantal geometry.
 That paper does not treat the squarefree permanent restriction here,
 but its organizing language matches the repository's remaining
 exceptional triangle almost exactly.
+
+The cut output has a second neighboring literature.  Sturmfels and
+Sullivant,
+[Toric geometry of cuts and splits](https://arxiv.org/abs/math/0606683),
+organize graph cuts and split systems by toric relations.  Cohen and
+Orlik,
+[Arrangements and local systems](https://arxiv.org/abs/math/9907117),
+relate multiplicative local-system behavior to resonance loci of
+arrangements.  Neither paper contains the repository's obstruction,
+but together they suggest separating discrete cut labels from the
+holonomy divisor.  That separation yields
+[`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md):
+a full `1+3` bridge factors either internally or by a fully supported
+sign reflection.  Coordinate-hyperplane annihilators exclude the
+reflection sheet, force all three singleton labels to agree, and then
+the perfect `R_2 x R_1 -> R_3` pairing drops the alleged rank-three
+triangle to the embedded-`P_3` boundary.
 
 This translation already gives a new exact repository theorem:
 [`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md).

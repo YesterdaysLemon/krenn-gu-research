@@ -11134,12 +11134,68 @@ vanish.  Each cross-product is annihilated by the opposite local
 plane.  Its degree-two multiplication catalecticant is a nonzero
 symmetric zero-diagonal matrix of rank two, hence a weighted cut.
 The only cut types are `1+3` and `2+2`; the latter has one tetrad
-equation.  The resonant divisor and compatibility of the three cuts
-remain open.
+equation.  The full-support all-`1+3` compatibility is now closed
+below.  The resonant divisor, cycles containing `2+2`, and proper
+cut-support boundaries remain open.
 
 ```text
 P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md
 verify_p4_nonresonant_rank_two_triangle_cut_reduction.py
+```
+
+### Full-support `1+3` triangle cycles are empty
+
+Let `Q_ij` be the three nonzero bridge quadrics on the nonresonant
+rank-two-relation triangle, and assume each is a full-support `1+3`
+cut with singleton label `s_k`.
+
+For a representative
+
+```text
+q=q_12 X_1X_2+q_13 X_1X_3+q_23 X_2X_3,
+```
+
+any factorization `q=uv` is either internal to `X_0=0` or has
+
+```text
+v_j=-(v_0/u_0)u_j.
+```
+
+The identity
+
+```text
+u_0 q_jk+2v_0u_ju_k=u_je_k+u_ke_j
+```
+
+shows that the second sheet is fully supported.  But
+`Ann_R1(Q_ij)` is a plane inside the singleton coordinate hyperplane.
+Every bridge factor comes from one of these planes, so only the
+internal sheet can occur.
+
+Cyclically every `U_i` lies in all three singleton hyperplanes.  Three
+distinct labels leave dimension one; two distinct labels leave one
+coordinate two-plane, whose product has rank one.  Thus all labels
+coincide.  The whole restriction then suspends a pure `P_3`
+restriction.  Perfect pairing in the three-variable squarefree
+algebra gives
+
+```text
+rank(U_iU_j)+2-3 <= 1,
+```
+
+so every pair rank is at most two, contradicting the triangle
+hypothesis `rank(U_iU_j)=3`.
+
+Hence the full-support all-`1+3` nonresonant triangle is empty.  Its
+forced rank-drop closure is the already known embedded-`P_3`
+component, whose complete marked projective `H31` fibre is empty.
+Cycles containing a `2+2` bridge, proper support boundaries, and the
+resonant divisor remain.
+
+```text
+P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md
+verify_p4_nonresonant_one_three_triangle_obstruction.py
+audit_p4_nonresonant_one_three_triangle_obstruction.py
 ```
 
 ### Ninth pure component from the common `1+3` boundary

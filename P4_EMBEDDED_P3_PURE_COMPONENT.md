@@ -300,6 +300,14 @@ triangle, the pair images drop to rank two and the problem becomes
 the pure `P_3` classification.  Following that boundary, rather than
 discarding it as degenerate, produces the component above.
 
+The compatible-label implication is now a theorem rather than only
+the construction heuristic:
+[`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md).
+For three full-support `1+3` bridges, the factorization dichotomy
+forces all singleton labels to coincide; the perfect degree
+`2`/degree `1` pairing in the resulting three-variable algebra then
+forces the pair-rank drop.
+
 This also sharpens the remaining classification frontier.  Any claim
 that the earlier eight components were exhaustive would miss a
 structurally forced suspension component.

@@ -241,7 +241,14 @@ plane tuple.”  Its unresolved generic alternatives are:
    three but all three relation matrices have rank two, now has an
    intrinsic holonomy.  Away from its resonant divisor it reduces to
    three cyclic cut forms in
-   [`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md);
+   [`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md).
+   The full-support all-`1+3` cycle is now impossible: cut-factor
+   reflection forces a common singleton coordinate, after which the
+   triangle becomes an embedded pure `P_3` and all three pair ranks
+   drop to at most two:
+   [`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md);
+   cycles containing a `2+2` cut, proper support boundaries, and
+   resonance remain;
 3. the lower pair-image-rank and coincident/support-one zero-product
    boundaries.  One rank-two-edge stratum now supplies the
    six-dimensional component in

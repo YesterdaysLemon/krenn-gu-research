@@ -93,10 +93,15 @@ Thus the nonresonant all-rank-two-relation triangle is not a free
 system of plane coefficients.  It is a cyclic compatibility problem
 for three discrete `1+3`/`2+2` cuts and their rank-one weights.
 
-This does **not** exclude that triangle stratum, classify the cyclic
-cut compatibility, handle the resonant divisor `Omega=0`, prove that
-the nine known pure-`P_4` components are exhaustive, or settle the
-global Krenn--Gu conjecture.
+The full-support case in which all three bridges have type `1+3` has
+since been excluded in
+[`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md).
+The factorization sheets force all three singleton labels to agree,
+which suspends a pure `P_3` restriction and drops every triangle pair
+rank to at most two.  This does **not** classify cycles containing a
+`2+2` cut, proper cut-support boundaries, the resonant divisor
+`Omega=0`, prove that the nine known pure-`P_4` components are
+exhaustive, or settle the global Krenn--Gu conjecture.
 
 ## Why the active-active coefficient is zero
 
@@ -334,3 +339,10 @@ uv run --with sympy \
 ```
 
 It is not a search and is not a substitute for the proof.
+
+The next symbolic compatible-label step is replayed by:
+
+```text
+python verify_p4_nonresonant_one_three_triangle_obstruction.py
+python audit_p4_nonresonant_one_three_triangle_obstruction.py
+```

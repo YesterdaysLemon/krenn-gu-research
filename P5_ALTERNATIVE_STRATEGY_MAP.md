@@ -955,6 +955,21 @@ components, with no further component on this stratum:
 
 - [`P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md`](P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md)
 
+The rank-two-relation triangle has also become discrete.  Away from
+trivial holonomy, its three bridge catalecticants are weighted
+`1+3`/`2+2` cuts.  The full-support all-`1+3` case is now impossible:
+the bridge factorization has an internal sheet and a fully supported
+reflection sheet; coordinate-hyperplane annihilators exclude the
+latter, and cyclic compatibility forces one common singleton.  The
+result is an embedded pure `P_3`, whose perfect pairing drops the
+three pair ranks from three to at most two:
+
+- [`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md)
+- [`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md)
+
+The remaining triangle cases are the `2+2`-containing cycles, proper
+cut-support boundaries, and the resonant holonomy divisor.
+
 The complementary mixed zero-product orientation produces a sixth
 component.  Its normalized kernel contractions form a `3 x 4`
 determinantal matrix with five linear minimal primes.  One prime gives

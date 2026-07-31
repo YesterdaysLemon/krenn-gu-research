@@ -124,9 +124,19 @@ strictly advance the finite frontier:
   full degree-one annihilator.  Its symmetric zero-diagonal
   catalecticant has rank two, so it is a weighted cut: `1+3` or
   `2+2`, with the latter governed by one tetrad.  This reduces the
-  nonresonant triangle to cyclic cut compatibility; it does not yet
-  exclude those cycles or handle the resonant divisor:
+  nonresonant triangle to cyclic cut compatibility:
   [`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md).
+- the full-support all-`1+3` part of that cyclic problem is now empty.
+  A triangle cut has only an internal factorization or a fully
+  supported sign-reflection factorization.  Since every opposite
+  annihilator plane lies in a coordinate hyperplane, only the internal
+  sheet is possible.  The three singleton labels must coincide;
+  otherwise the planes collapse into a coordinate two-plane.  With a
+  common label the restriction is an embedded pure `P_3`, whose perfect
+  pairing forces all three alleged rank-three pair images to have rank
+  at most two.  Thus no new component occurs there; `2+2` cycles,
+  proper cut-support boundaries, and the resonant divisor remain:
+  [`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md).
 - a mixed zero-product orientation produces a sixth
   symmetry-inequivalent component.  The normalized rank-two
   contraction condition is a `3 x 4` determinantal problem whose
