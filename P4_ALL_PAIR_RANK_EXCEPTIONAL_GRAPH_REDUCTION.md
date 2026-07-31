@@ -18,6 +18,10 @@ triangle is empty.  The four cells containing at least two rank-one
 relations have substantial orientation/support classifications but are not
 yet globally exhausted.
 
+For the dated continuation map, including a strictly unverified
+common-singleton lead in the last triangle cell, see
+[`NEXT_INSTANCE_HANDOFF_2026-07-31.md`](NEXT_INSTANCE_HANDOFF_2026-07-31.md).
+
 This is a reduction of the pure-`P_4` component problem, not component
 exhaustiveness and not a proof of the Krenn--Gu conjecture.
 

@@ -1326,3 +1326,12 @@ are naturally directed gains, exact-zero-divisor support labels, and
 synchronizer edges—a quiver-stratum problem rather than a raw permanent
 ideal.  This is the sharpest current route to proving or refuting
 seventeen-component exhaustiveness.
+
+### Wind-down and continuation note
+
+The verified results, replay commands, dependency chain toward a global
+statement, and next symbolic decision point are collected in
+[`NEXT_INSTANCE_HANDOFF_2026-07-31.md`](NEXT_INSTANCE_HANDOFF_2026-07-31.md).
+Its common-singleton `K_4` construction is explicitly an unverified research
+lead, not a result of the literature review and not a claimed eighteenth
+component.

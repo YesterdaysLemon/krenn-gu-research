@@ -5,6 +5,21 @@
 **UNRESOLVED globally.**  This repository does not yet contain a proof or
 counterexample for all even `n >= 6` and `d >= 3`.
 
+### Start here: 31 July 2026 checkpoint
+
+The shortest route into the current proof frontier is
+[`NEXT_INSTANCE_HANDOFF_2026-07-31.md`](NEXT_INSTANCE_HANDOFF_2026-07-31.md).
+It separates proved statements from exploratory leads, gives the focused
+replay commands, and records the next symbolic decision point.
+
+At this checkpoint the lower-pair pure-`P_4` locus is exhausted, generic
+marked `H31/H22` fibres are empty on all seventeen known pure-`P_4`
+components, and the remaining all-pair-ranks-at-least-three component problem
+has been reduced to four unresolved star/triangle cells.  These are strong
+local algebraic-geometric reductions, not a global proof: component
+exhaustiveness, special `P_5` fibres, and the final local-to-global graph step
+are still missing.
+
 Separately, the repository now contains an exact rational positive
 Question-2 witness for [`n=6, k=4, d=4`](Q2_N6_K4_D4_CONSTRUCTION.md).
 It has two red heralds and therefore is not a Question-1 counterexample.
