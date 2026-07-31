@@ -1451,6 +1451,31 @@ row.  Hence all thirteen certified components are generically closed for
 `H31`.  Only the new weighted `H22` generic fibre remains before the earlier
 known-component closure statement is restored at count thirteen.
 
+That weighted fibre is now closed scheme-theoretically:
+
+- [`P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md)
+
+For the weighted `01` neighbor, let `I_mix` be the ideal of the fourteen
+mixed coefficients and `A,B` the two diagonal coefficients.  Over the full
+ring
+
+```text
+C(u,v)[rho,h0,h1,h2,h3,x0,...,x3,y0,...,y3]
+```
+
+one exact reduction gives
+
+```text
+A*B in I_mix.
+```
+
+The reduced basis has size `48`.  This retains every special finite slope:
+the mixed extension scheme is contained in `V(A) union V(B)` even where the
+individual row-module obstruction switches branches.  The homogeneous
+infinite-slope chart has the same product membership, with basis size `10`.
+Thus all thirteen certified components are generically closed for both
+`H31` and weighted `H22`.
+
 The earlier
 quadratic-function-field experiments and their null outcomes remain
 recorded as provenance:
@@ -1474,9 +1499,8 @@ marked-fibre level:
 
 ## Priority
 
-1. close the thirteenth component's generic weighted `H22` fibre, then
-   classify the remaining support-one and lower-pair-rank
-   exceptional geometries while closing
+1. classify the remaining support-one and lower-pair-rank exceptional
+   geometries while closing
    the parameter/projective boundaries of the three split-cubic
    components, the sixth component, and the earlier six-dimensional component,
    and the disjoint mixed-star component's special `H31/H22`

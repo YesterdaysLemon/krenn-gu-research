@@ -1020,3 +1020,28 @@ The reduced module sizes `(10,10,10,10)` and exact rank jumps
 known components are therefore generically closed for `H31`; the weighted
 `H22` fibre of the Eisenstein component is the remaining generic known-
 component question.
+
+That final generic fibre is now closed by changing from module membership to
+a reducible scheme containment:
+[`P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
+For the weighted `01` projection, the fourteen mixed coefficients define an
+extension scheme `V(I_mix)`.  Neither diagonal has to vanish uniformly on
+every slope divisor.  Instead, exact ideal reduction proves
+
+```text
+A*B in I_mix,
+```
+
+so `V(I_mix)` lies in the union of the two diagonal hyperplanes.  This is the
+right scheme-theoretic shape: module torsion records the divisor where the
+vanishing switches from one Segre coordinate to the other.  Keeping the
+slope as a polynomial variable includes all finite special slopes, and a
+second homogeneous chart closes infinity.
+
+The proof resembles the use of reducible observable varieties in algebraic
+statistics more than a standard determinantal obstruction.  Its practical
+gain is substantial: one product certificate replaces a slope-by-slope
+primary decomposition.  With it, all thirteen certified pure-`P4`
+components are again generically closed for both `H31` and weighted `H22`.
+The live frontier is component exhaustiveness and special/lower-rank
+boundaries, not a remaining generic fibre of a known component.

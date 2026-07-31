@@ -7,8 +7,10 @@ marked-basis fibre over the generic point of the thirteenth pure-`P_4`
 component is empty for `H31`.
 
 Consequently all thirteen currently certified pure-`P_4` component orbits
-are generically closed for `H31`.  The new component's weighted `H22` fibre,
-special parameter/projective boundaries, component exhaustiveness, and the
+are generically closed for `H31`.  The new component's weighted `H22` fibre
+is subsequently proved empty in
+[`P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
+Special parameter/projective boundaries, component exhaustiveness, and the
 global Krenn--Gu conjecture remain open.
 
 ## Intrinsic rows on the norm quadric

@@ -381,8 +381,14 @@ strictly advance the finite frontier:
   while the all-active classes survive.  Thus all thirteen certified
   components are generically closed for `H31`:
   [`P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
-  The new weighted `H22` fibre, support-one common zero divisors, and lower-
-  pair-rank strata remain.
+  Its weighted `H22` fibre is empty as well.  On the full polynomial ring in
+  weighted slope, markings, and extension entries, the product of the two
+  diagonal coefficients belongs to the fourteen-generator mixed ideal; the
+  same holds on the projective infinite-slope chart.  Thus every mixed-zero
+  extension loses at least one binary diagonal, and all thirteen known
+  components are generically closed for both marked types:
+  [`P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
+  Support-one common zero divisors and lower-pair-rank strata remain.
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while
