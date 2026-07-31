@@ -29,11 +29,12 @@ The complete marked-basis fibre over the generic component point is now
 excluded for `H31` by a uniform polynomial row-module identity:
 [`P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 
-For weighted `H22`, both binary directions are excluded on a dense open of
-the total component/slope/marking space, and three rational component points
-have empty complete marking fibres.  The remaining generic marking divisors
-are still open:
+For weighted `H22`, the earlier dense-open theorem and three complete rational
+fibres are recorded in
 [`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md`](P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md).
+The complete generic marked fibre is subsequently proved empty by projecting
+the Borel marking incidence to a fixed-vertex Segre join:
+[`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 
 ![Exceptional graph of the new mixed-star component](research_figures/p4_two_rank_two_spoke_mixed_star.png)
 

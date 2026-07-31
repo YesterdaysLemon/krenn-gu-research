@@ -22,11 +22,16 @@ particular, this file does not claim that the tenth component's full generic
 weighted `H22` fibre is empty, does not settle component exhaustiveness, and
 does not resolve the global Krenn--Gu problem.
 
+This is the proof boundary of the present checkpoint, not the current
+frontier.  The later fixed-vertex Segre-join theorem closes the complete
+generic fibre, including these determinantal divisors:
+[`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+
 The later eleventh component is generically closed for weighted `H22` by the
 independent exact-zero-divisor identity in
 [`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
-Consequently the marking divisors left here are now the sole generic weighted
-frontier among the eleven certified components.
+At the intermediate checkpoint recorded here, the marking divisors were the
+sole generic weighted frontier among the eleven certified components.
 
 ![The tenth component's mixed-star graph](research_figures/p4_two_rank_two_spoke_mixed_star.png)
 

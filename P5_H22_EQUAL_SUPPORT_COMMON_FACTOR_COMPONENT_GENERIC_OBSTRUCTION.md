@@ -12,11 +12,10 @@ every finite merge weight, and every diagonal source scaling in the displayed
 normal-form chart.  No mixed equation, elimination, rank minor, or search is
 needed.
 
-Together with the earlier component theorems, ten of the eleven currently
-certified pure-`P_4` component orbits are now generically closed for weighted
-`H22`.  The tenth component has only a dense-total-space obstruction and
-complete all-marking certificates at three rational component points, so it
-remains the sole generic known-component `H22` frontier.
+At this checkpoint, ten of the eleven certified pure-`P_4` component orbits
+were generically closed for weighted `H22`; the tenth component remained.
+That final generic known-component fibre is subsequently closed by
+[`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 
 This theorem does not classify special pure-factor degenerations or the
 projective boundary of the eleventh component, prove component
@@ -128,13 +127,12 @@ annihilation: the channel cut isolates it as the literal scalar identity
 
 ## Honest frontier
 
-The eleventh component is now generically closed for both `H31` and weighted
-`H22`.  The active known-component weighted front is the tenth component's
-marking divisors from
-[`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md`](P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md).
-Beyond that lie special parameter/projective boundaries and pure-`P_4`
-component exhaustiveness.  None of these finite component results is a
-global graph proof.
+The eleventh component is generically closed for both `H31` and weighted
+`H22`.  The tenth component is subsequently closed by the fixed-vertex
+Segre-join theorem linked above, so all eleven certified components are now
+generically closed for both marked types.  The active fronts are special
+parameter/projective boundaries and pure-`P_4` component exhaustiveness.
+None of these finite component results is a global graph proof.
 
 ## Verification
 

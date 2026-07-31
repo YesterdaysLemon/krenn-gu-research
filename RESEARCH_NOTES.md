@@ -12749,3 +12749,72 @@ P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md
 verify_p5_h22_equal_support_common_factor_component_generic_obstruction.py
 audit_p5_h22_equal_support_common_factor_component_generic_obstruction.py
 ```
+
+### A fixed-vertex Segre join closes the last generic known-component fibre
+
+The tenth component's weighted marking divisors become small after forgetting
+the marking coordinates.  In canonical `(alpha,beta)` bases, write `C_w(z)`
+for the sixteen weighted `23` binary coefficients, linear in the eight
+extension entries.  If a Borel shift
+
+```text
+beta_i'=beta_i+h_i*alpha_i
+```
+
+diagonalizes the tensor with nonzero all-kernel coefficient `A`, then
+
+```text
+C_w=A*product_(i:w_i=1)(-h_i),   w!=1111.
+```
+
+Thus, after normalizing `C_0000=1`, the fifteen coordinates other than the
+free all-active `C_1111` form a rank-one Boolean array.  Eliminating the four
+`h_i` gives exactly
+
+```text
+C_S*C_empty^(|S|-1)=product_(i in S) C_{i},
+2 <= |S| <= 3,
+```
+
+namely six quadratic and four cubic toric binomials.
+
+For the Cayley component, put
+
+```text
+K=x3+rho*(1-u*v)*y0,
+L=-2*(u+1)*(v+1),
+M=-4*(u+v).
+```
+
+Four coefficients are
+
+```text
+C_1000=M*K,
+C_1010=C_1100=C_1110=L*K.
+```
+
+On `K!=0`, the `{0,1}`, `{0,2}`, and `{0,1,2}` binomials force `L=M`, but
+`M-L=2*(u-1)*(v-1)` is a unit in `C(u,v,rho)`.  Substituting all eight
+extension variables into the full natural toric system closes `K=0` too:
+
+```text
+<C_0000-1, six quadrics, four cubics>=(1)
+```
+
+over `C(u,v,rho)`.  Hence the weighted `23` neighbour cannot be binary
+`Delta2` in any marking; no ternary-rank test is reached.  An independent
+audit uses the original `(s,t)` component rows and subset-DP permanents, and
+gets reduced basis `{1}` over `C(rho)` at `(2,3)` and `(3,5)`.
+
+All eleven certified pure-`P4` components are now generically closed for both
+`H31` and weighted `H22`.  The live front moves to component exhaustiveness
+and special parameter/projective boundaries.  This remains a finite
+component theorem, not a global graph proof.
+
+Primary theorem and verifiers:
+
+```text
+P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py
+audit_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py
+```

@@ -1213,16 +1213,28 @@ extension map:
 
 - [`P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
 
-Its weighted `H22` analysis has reached a dense-open symbolic checkpoint.
+Its weighted `H22` analysis first reached a dense-open symbolic checkpoint.
 Cayley parameters turn the component law into `d=(1+uv)/(1-uv)` and give one
 factored rank-eight mixed minor in each weighted direction.  Both binary
 extensions are therefore empty on a dense open of the combined
 component/slope/marking space.  At `(s,t)=(2,3),(3,5),(5,7)`, exact row-module
 normal forms equal the full free rank-eight module for every marking and
-slope.  The complete generic marked fibre remains open on the selected
-determinantal divisors:
+slope.  The selected determinantal divisors were left open at that checkpoint:
 
 - [`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md`](P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md)
+
+They are now closed by changing from marking coordinates to the fixed-vertex
+Segre join:
+
+- [`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
+
+On the nonzero all-kernel chart, the fifteen coordinates other than the free
+all-active coordinate form a Boolean rank-one array.  Its six quadratic and
+four cubic toric binomials eliminate all four Borel markings intrinsically.
+After substitution of the eight weighted `23` extension entries, the ideal is
+`(1)` over `C(u,v,rho)`.  Off one linear pivot divisor, three binomials already
+give the visible contradiction `2(u-1)(v-1)=0`; the full natural toric ideal
+closes the divisor.  The complete generic weighted fibre is empty.
 
 The first component's one-rank-two-edge triangle now has a reverse support
 classification on its crossed Borel orientation.  Genuine binary zero
@@ -1283,11 +1295,10 @@ onto the `X2,X3` channels, where their permanent is
 `p*t2*(-t3)+p*t3*t2=0`.  This is the exact-zero-divisor identity
 `b*b_bar=0` exposed by a two-channel tensor cut.  It is homogeneous in the
 merge weights and source scalings, so it closes every marking and weighted
-slope without mixed equations.  Ten of the eleven certified components are
-now generically closed for weighted `H22`; the tenth component's marking
-divisors are the only remaining generic known-component weighted front.
-The eleventh component's special pure-factor degenerations and projective
-boundary remain open.
+slope without mixed equations.  Together with the fixed-vertex theorem for
+the tenth component, all eleven certified components are now generically
+closed for weighted `H22` as well as `H31`.  The eleventh component's special
+pure-factor degenerations and projective boundary remain open.
 
 The earlier
 quadratic-function-field experiments and their null outcomes remain
@@ -1312,13 +1323,12 @@ marked-fibre level:
 
 ## Priority
 
-1. close the tenth component's generic weighted `H22` marking divisors, then
-   close the parameter/projective boundaries of the three split-cubic
+1. classify the remaining common-factor/radical orientations of the
+   `(2,1,1)` triangle and lower-pair-rank exceptional geometries, while closing
+   the parameter/projective boundaries of the three split-cubic
    components, the sixth component, and the earlier six-dimensional component,
-   close the disjoint mixed-star component's special `H31/H22`
-   boundaries,
-   then classify the remaining common-factor/radical orientations of the
-   `(2,1,1)` triangle and lower-pair-rank exceptional geometries;
+   and the disjoint mixed-star component's special `H31/H22`
+   boundaries;
 2. intersect the `H22` three-normal incidences with that classification,
    treating the exact component obstructions as complementary generic
    models and concentrating on their special parameter/slope

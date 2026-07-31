@@ -164,7 +164,7 @@ def main() -> None:
                 "all_markings": True,
                 "all_weighted_slopes": True,
                 "generic_weighted_H22_fibre_empty": True,
-                "known_components_generically_H22_closed": 10,
+                "known_components_generically_H22_closed_at_this_checkpoint": 10,
                 "search_used": False,
             },
             indent=2,

@@ -264,6 +264,15 @@ strictly advance the finite frontier:
   gives either the zero tensor or a rank-two center pair; and the full
   `2+2` equations force the displayed Cayley law:
   [`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md).
+- the tenth component's complete generic weighted `H22` fibre is empty.
+  Projecting the Borel marking incidence away from its free all-active
+  coordinate turns the other fifteen binary coefficients into a fixed-vertex
+  Segre join.  On `C_0000!=0`, six quadrics and four cubics are its canonical
+  toric equations.  Substitution of the eight extension variables in the
+  weighted `23` direction gives the unit ideal over `C(u,v,rho)`.  Off one
+  linear pivot divisor, three of those binomials visibly contradict
+  `2(u-1)(v-1)!=0`:
+  [`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 - the original first component is now rewritten as an apolar triangle bundle.
   Three fixed planes have relation-rank pattern `(2,1,1)` and only their
   all-kernel/all-active degree-three products survive.  The fourth plane is
@@ -1004,6 +1013,7 @@ are:
 - [`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
 - [`P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md)
 - [`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
 - [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
 - [`P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md)
 - [`P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md)
@@ -1072,19 +1082,21 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   fourteen mixed extension rows for every deleted coordinate and every
   marking, while an explicit syzygy direction has nonzero all-beta diagonal.
   Hence every mixed-zero extension kills one required binary diagonal before
-  any ternary test.  On its weighted `H22` side, Cayley coordinates give two
-  factored rank-eight minors, excluding both binary directions on a dense
-  total-space open.  Exact polynomial modules also close all markings and
-  slopes at three rational component points.  The generic component's
-  remaining marking divisors stay open.  The later equal-support
+  any ternary test.  On its weighted `H22` side, the earlier Cayley calculation
+  gives two factored rank-eight minors on a dense total-space open and complete
+  modules at three rational component points.  The later fixed-vertex
+  Segre-join translation removes all four marking variables: the natural six
+  quadrics and four cubics give the unit ideal over `C(u,v,rho)` in the
+  weighted `23` direction.  Thus its complete generic weighted fibre is
+  empty.  The later equal-support
   common-factor triangle raises the component count to eleven.  Its generic
   `H31` fibre is now empty by an all-marking polynomial row-module identity,
   so all eleven certified components are generically closed for `H31`.  Its
   weighted `H22` fibre is also empty: a two-channel permanent cancellation
-  forces one binary diagonal to vanish for every marking and slope.  Thus ten
-  of the eleven components are generically closed for weighted `H22`; the
-  tenth component's remaining marking divisors are the sole generic
-  known-component weighted frontier.  The
+  forces one binary diagonal to vanish for every marking and slope.  Thus all
+  eleven certified components are generically closed for both `H31` and
+  weighted `H22`.  The live finite frontier is component exhaustiveness and
+  the special parameter/projective boundaries.  The
   ninth orbit's entire
   normalized `H31` chart is closed as well, and its weighted boundary
   is closed on every rank-two projected-line stratum.  The rank-one
