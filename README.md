@@ -557,6 +557,16 @@ strictly advance the finite frontier:
   in component seventeen, sixteen, or seventeen.  Thus both the genuine
   support-two and singleton parts of the cyclic orientation are complete:
   [`P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_ONE_BOUNDARY.md`](P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_ONE_BOUNDARY.md).
+- the two directed-triangle components are now generically closed for marked
+  `H31`.  Over each component function field, the genuine-binary-neighbour
+  projection has only eleven marked sheets in total: six points and one line
+  on the support-star component, one point and three lines on the support-path
+  component.  Ten sheets reduce to binary extension pencils whose two-minor
+  gcd is a nonzero factor times `A*B`; the sole projective-plane fibre has
+  three residual minors `z0,z1,z2`, with its endpoint closed by one
+  `A*B^2` minor.  Hence every genuine neighbour makes a one-marked map have
+  rank four, excluding an `H31` lift on components sixteen and seventeen:
+  [`P5_H31_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md`](P5_H31_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md).
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while
