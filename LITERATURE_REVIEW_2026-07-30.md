@@ -707,3 +707,21 @@ uniform cokernel identity.  The useful synthesis is: toric normalization
 first, Segre incidence second, polynomial-module membership last.  It closes
 the entire generic marked fibre without graph enumeration or a ternary-rank
 calculation.
+
+The weighted continuation of the tenth component adds a useful caution to
+that translation:
+[`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md`](P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md).
+The Cayley map polynomializes the torus multiplication graph, but the
+Hadamard block coordinates `(a,a_bar,b,b_bar)` do not preserve the
+squarefree permanent.  The correct calculation uses the toric coordinates
+for the planes while pulling the Frobenius top form back to the original
+coordinate axes.  Once those roles are separated, the two weighted mixed
+matrices have compact factored rank-eight pivots on a dense open.
+
+This is precisely where the apolar and toric literatures complement rather
+than replace each other: toric geometry supplies the natural parameter chart,
+while Artinian-Gorenstein duality fixes the multilinear functional that is
+allowed to move.  Polynomial row modules then prove complete marking-fibre
+emptiness at three rational component points.  The remaining generic marking
+divisors are a concrete kernel-sheaf/Fitting problem, not evidence for a
+weighted lift.

@@ -12451,6 +12451,44 @@ pure-`P_4` component orbits are now generically closed for `H31`.  The tenth
 component's weighted `H22` fibre, special toric boundary, component
 exhaustiveness, and the global conjecture remain open.
 
+### Dense-marking weighted `H22` obstruction on the tenth component
+
+The first weighted continuation is now exact but deliberately partial:
+
+```text
+P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md
+verify_p5_h22_two_rank_two_spoke_mixed_star_dense_marking_obstruction.py
+audit_p5_h22_two_rank_two_spoke_mixed_star_dense_marking_obstruction.py
+```
+
+Use Cayley parameters `u=c(s)`, `v=c(t)`, and `rho=c(r)`.  The component law
+becomes `d=(1+uv)/(1-uv)`, and clearing the three row denominators makes the
+four planes polynomial.  The squarefree top form must still be pulled back to
+the original `X_i` coordinates: the permanent is not invariant under the
+Hadamard block change to `(a,a_bar,b,b_bar)`.  An initial shortcut that ignored
+this was rejected before theorem status; the independent subset-DP audit now
+guards the corrected pullback.
+
+At the canonical marking, the first eight mixed rows have two nonzero
+factored determinants.  The `D_23` determinant is
+
+```text
+4096 rho^3 uv(rho-1)(rho+1)
+ (u-1)^2(u+1)^3(u+v)(v-1)^2(v+1)^3(uv-1)^4.
+```
+
+The `D_01` determinant is the product of the expected toric coordinate
+factors and two additional low-degree factors displayed in the theorem.
+Therefore both mixed matrices have rank eight on a dense open of the full
+component/slope/marking space, so no binary extension exists there.
+
+At the rational component points `(s,t)=(2,3),(3,5),(5,7)`, exact module
+normal form over `C(rho)[h0,h1,h2,h3]` gives the eight standard free-module
+generators in both directions.  These are complete all-marking, all-slope
+fibres, not evaluations.  They do not prove the generic component's complete
+marked fibre empty: possible dominant pieces of the remaining determinantal
+divisors still need a symbolic cover.  The global conjecture remains open.
+
 ### The first component is a fixed apolar triangle bundle
 
 The remaining generic graph shape contains the original component in a much

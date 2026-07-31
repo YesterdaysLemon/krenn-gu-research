@@ -1213,6 +1213,17 @@ extension map:
 
 - [`P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
 
+Its weighted `H22` analysis has reached a dense-open symbolic checkpoint.
+Cayley parameters turn the component law into `d=(1+uv)/(1-uv)` and give one
+factored rank-eight mixed minor in each weighted direction.  Both binary
+extensions are therefore empty on a dense open of the combined
+component/slope/marking space.  At `(s,t)=(2,3),(3,5),(5,7)`, exact row-module
+normal forms equal the full free rank-eight module for every marking and
+slope.  The complete generic marked fibre remains open on the selected
+determinantal divisors:
+
+- [`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md`](P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md)
+
 The earlier
 quadratic-function-field experiments and their null outcomes remain
 recorded as provenance:
