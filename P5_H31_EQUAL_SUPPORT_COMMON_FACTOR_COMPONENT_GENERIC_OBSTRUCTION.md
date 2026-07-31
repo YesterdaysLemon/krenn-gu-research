@@ -8,9 +8,11 @@ component is empty for `H31`.
 
 Together with the earlier component theorems, all eleven currently certified
 pure-`P_4` component orbits are now generically closed for `H31`.  This does
-not close the eleventh component's weighted `H22` fibre, any special
-parameter/projective boundary, component exhaustiveness, or the global
-Krenn--Gu conjecture.
+not by itself close the eleventh component's weighted `H22` fibre; that fibre
+is subsequently closed by the direct exact-zero-divisor identity in
+[`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+Special parameter/projective boundaries, component exhaustiveness, and the
+global Krenn--Gu conjecture remain open.
 
 ## The component and its intrinsic marked rows
 
@@ -206,10 +208,11 @@ minor: it holds over the whole marking chart.
 ## Proof boundary and next front
 
 The theorem closes only the generic `H31` fibre of the eleventh component.
-The immediate symbolic continuation is its weighted `H22` pencil.  The
-component's exact-zero-divisor block and one-dimensional cubic apolar space
-suggest beginning with the two weighted binary projections, not with a
-global incidence elimination.
+The suggested exact-zero-divisor continuation succeeds in
+[`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md):
+one weighted binary projection has identically zero all-kernel diagonal by a
+two-channel permanent cancellation.  That later result is not part of the
+present proof.
 
 Special component parameters such as `p=0`, `r=0`, and the projective
 boundary can change the marked module and remain open.  The existence of

@@ -1270,8 +1270,24 @@ row module of the fourteen mixed rows over
 This is simultaneous in all markings; the exact-zero-divisor block makes two
 all-kernel rows vanish identically and puts the other two visibly in a free
 summand of the mixed module.  All eleven certified components are therefore
-generically closed for `H31`.  This new component's weighted `H22` fibre and
-special parameter/projective boundary remain open.
+generically closed for `H31`.
+
+The same component's generic weighted `H22` fibre is empty for a still more
+structural reason:
+
+- [`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md)
+
+For the weighted `01` projection, two identical-support kernel rows can only
+occupy the merged and fifth target channels.  The other two rows are forced
+onto the `X2,X3` channels, where their permanent is
+`p*t2*(-t3)+p*t3*t2=0`.  This is the exact-zero-divisor identity
+`b*b_bar=0` exposed by a two-channel tensor cut.  It is homogeneous in the
+merge weights and source scalings, so it closes every marking and weighted
+slope without mixed equations.  Ten of the eleven certified components are
+now generically closed for weighted `H22`; the tenth component's marking
+divisors are the only remaining generic known-component weighted front.
+The eleventh component's special pure-factor degenerations and projective
+boundary remain open.
 
 The earlier
 quadratic-function-field experiments and their null outcomes remain
@@ -1296,8 +1312,8 @@ marked-fibre level:
 
 ## Priority
 
-1. analyze the eleventh component's weighted `H22` fibre, then close the
-   parameter/projective boundaries of the three split-cubic
+1. close the tenth component's generic weighted `H22` marking divisors, then
+   close the parameter/projective boundaries of the three split-cubic
    components, the sixth component, and the earlier six-dimensional component,
    close the disjoint mixed-star component's special `H31/H22`
    boundaries,

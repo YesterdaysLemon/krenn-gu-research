@@ -304,6 +304,14 @@ strictly advance the finite frontier:
   The shared exact zero divisor makes two of the four inclusions identically
   zero and the other two explicit standard-basis combinations:
   [`P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+- the same component's generic weighted `H22` fibre is empty by an even
+  shorter identity.  Under arbitrary source scalings and homogeneous merge
+  weights, two kernel rows saturate the merged and fifth channels.  The
+  residual two-channel permanent is
+  `p*t2*(-t3)+p*t3*t2=0`, the exact-zero-divisor relation
+  `(X2+X3)(X2-X3)=0`.  Thus one required binary neighbour always has zero
+  all-kernel diagonal, simultaneously in every marking and weighted slope:
+  [`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while
@@ -995,6 +1003,7 @@ are:
 - [`P5_H31_DIAGONAL_QUADRIC_OUTER_BOUNDARY_OBSTRUCTION.md`](P5_H31_DIAGONAL_QUADRIC_OUTER_BOUNDARY_OBSTRUCTION.md)
 - [`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
 - [`P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md)
 - [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
 - [`P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md)
 - [`P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md)
@@ -1070,8 +1079,12 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   remaining marking divisors stay open.  The later equal-support
   common-factor triangle raises the component count to eleven.  Its generic
   `H31` fibre is now empty by an all-marking polynomial row-module identity,
-  so all eleven certified components are generically closed for `H31`; its
-  weighted `H22` fibre remains open.  The
+  so all eleven certified components are generically closed for `H31`.  Its
+  weighted `H22` fibre is also empty: a two-channel permanent cancellation
+  forces one binary diagonal to vanish for every marking and slope.  Thus ten
+  of the eleven components are generically closed for weighted `H22`; the
+  tenth component's remaining marking divisors are the sole generic
+  known-component weighted frontier.  The
   ninth orbit's entire
   normalized `H31` chart is closed as well, and its weighted boundary
   is closed on every rank-two projected-line stratum.  The rank-one

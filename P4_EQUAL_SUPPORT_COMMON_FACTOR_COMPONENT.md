@@ -22,7 +22,9 @@ This is a component construction and smoothness theorem, not a complete
 classification of the common-factor Borel orientation.  Its generic marked
 `H31` fibre is subsequently proved empty in
 [`P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
-Its weighted `H22` fibre, special-parameter/projective boundary, component
+Its generic weighted `H22` fibre is subsequently proved empty in
+[`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+Its special pure-factor degenerations and projective boundary, component
 exhaustiveness, and the global Krenn--Gu conjecture remain open.
 
 ## The exact-zero-divisor normal form

@@ -801,6 +801,31 @@ The neighboring homological picture of exact zero divisors explains why the
 presentation simplifies; the Segre picture identifies exactly which two
 cokernel classes matter.  Their combination closes all eleven certified
 components generically for `H31` without elimination, sampling, or a ternary
-rank test.  The weighted `H22` continuation remains open and is the natural
-place to ask whether the two-periodic exact-zero-divisor complex also
-organizes both weighted projection modules simultaneously.
+rank test.
+
+The weighted `H22` continuation answers that question more directly than
+expected:
+[`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+After arbitrary diagonal source scaling and an arbitrary homogeneous merge
+of `X0,X1`, the repeated kernel rows `a,a` are supported only on the merged
+and fifth target channels.  They saturate that two-channel cut.  The remaining
+rows are forced onto `X2,X3`, where the residual permanent is
+
+```text
+per [[p t2,p t3],[t2,-t3]]=0.
+```
+
+This is the annihilation `(X2+X3)(X2-X3)=0` seen in three neighboring
+languages: an exact-zero-divisor pair in the squarefree complete
+intersection, orthogonality of the trivial and sign characters of `C2`, and
+a zero transfer across a two-channel tensor-network cut.  The homological
+language predicts persistence of the annihilator block; the matching
+language explains why a weighted projection cannot route around it.  The
+result is stronger than a Fitting obstruction: one required binary diagonal
+vanishes before the fourteen mixed equations are even imposed, for every
+marking and every weighted slope.
+
+Thus the eleventh component is generically closed for both marked types, and
+ten of the eleven certified components are generically closed for weighted
+`H22`.  The tenth component's unresolved marking divisors are now the sole
+generic weighted frontier among the known components.

@@ -12702,3 +12702,50 @@ P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md
 verify_p5_h31_equal_support_common_factor_component_generic_obstruction.py
 audit_p5_h31_equal_support_common_factor_component_generic_obstruction.py
 ```
+
+### The exact-zero-divisor block kills weighted `H22`
+
+The eleventh component's weighted continuation is simpler than its `H31`
+module.  Restore arbitrary diagonal source scalings `t0,t1,t2,t3`, merge
+`X0,X1` with homogeneous weights `(lambda,mu)`, and append fifth-coordinate
+entries `x_i` to the four kernel rows.  With `R=r+1` and `Q=1+qR`, they become
+
+```text
+A0=(*,p*t2,p*t3,x0),
+A1=(lambda*t0+mu*t1,0,0,x1),
+A2=(lambda*t0+mu*t1,0,0,x2),
+A3=(0,t2,-t3,x3).
+```
+
+Rows `A1,A2` must occupy the merged and fifth channels in every permanent
+matching.  The residual two-channel permanent is
+
+```text
+p*t2*(-t3)+p*t3*t2=0.
+```
+
+Therefore the all-kernel binary diagonal is identically zero for every
+extension, marking, source scaling, and projective merge weight.  One of the
+two binary `Delta2` neighbours required by `H22` cannot exist, before any
+mixed equation or ternary-rank condition is considered.
+
+This is simultaneously the squarefree exact-zero-divisor identity
+`b*b_bar=0`, cancellation of the trivial/sign characters on a two-point
+group, and a saturated two-channel tensor-network cut.  A separate subset-DP
+permanent audit, with independent row scalings and a within-block source
+swap, reproduces the zero polynomial.
+
+The eleventh component is now generically closed for both `H31` and weighted
+`H22`.  Ten of the eleven certified components are generically closed for
+weighted `H22`; the tenth component's marking divisors are the sole remaining
+generic known-component weighted frontier.  Special pure-factor degenerations,
+projective boundaries, component exhaustiveness, and the global conjecture
+remain open.
+
+Primary theorem and verifiers:
+
+```text
+P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h22_equal_support_common_factor_component_generic_obstruction.py
+audit_p5_h22_equal_support_common_factor_component_generic_obstruction.py
+```
