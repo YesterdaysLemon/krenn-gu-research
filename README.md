@@ -495,8 +495,16 @@ strictly advance the finite frontier:
   proving a smooth sixfold.  The disjoint kernel supports `{0,1},{2,3}`
   separate it from the earlier overlapping `1+3` sixfold:
   [`P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md`](P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md).
-  Components fourteen and fifteen now reopen the generic marked `H31/H22`
-  frontier.
+- component fifteen's complete generic marked `H31` fibre is empty.  The
+  diagonal source torus reduces its six parameters to three moduli
+  `(p,q,rho)`.  For every deleted source coordinate, open Fitting projection
+  leaves the same single marking point
+  `(0,0,(p*q+1)/rho,0)`.  Its mixed extension space is a projective line;
+  two mode-zero minors factor as `A*B` times coprime binary linear forms.
+  Thus every genuine binary neighbour has marked rank four.  All seventeen
+  known pure-`P4` components are now generically closed for `H31`, while
+  component fifteen's weighted `H22` fibre remains open:
+  [`P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
 - the overlapping `1+3` secant center creates no sixteenth component.  Its
   two cross-product catalecticants are rank-two stars whose radical planes
   meet in one line.  In an adapted basis, opposite-plane purity has

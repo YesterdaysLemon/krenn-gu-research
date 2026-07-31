@@ -71,11 +71,10 @@ external mathematical review, the strongest additional claims are:
   `P_5 -> Delta_3`;
 - exact exclusions of normalized `q5_311`, `q5_221`, and `q4_211`;
 - at least seventeen inequivalent components of the pure rank-two
-  `P_4`-compression variety.  Components one through thirteen and sixteen
-  through seventeen are generically closed for both marked `H31` and
-  weighted `H22`.  The full-support tangent component fourteen is now also
-  generically closed for both marked types.  Both marked fibres of
-  disjoint-secant component fifteen remain open.  The
+  `P_4`-compression variety.  Every one of the seventeen is now generically
+  closed for marked `H31`.  Components one through fourteen and sixteen
+  through seventeen are also generically closed for weighted `H22`; that
+  fibre remains open on the disjoint-secant component fifteen.  The
   complete lower-pair locus is now exhausted by
   four known component closures, while exhaustiveness on the all-pair-ranks-
   at-least-three locus remains open.  The following chronological ledger
@@ -1279,3 +1278,23 @@ Every component meets the rank-two locus, where the kernel is unique, and
 therefore equals the closure of the component-eight graph.  This closes the
 whole disjoint mixed-star orientation, including boundary points whose
 exceptional graph acquires extra edges or a lower-rank pair.
+
+### 31 July addendum: the last known generic `H31` fibre
+
+The disjoint-secant component's marked `H31` fibre is now empty over its
+generic point:
+[`P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
+The key invariant-theory move is to divide the six-parameter flag family by
+the three-dimensional diagonal source torus.  The surviving moduli are
+`p=m/lambda`, `q=lambda*n`, and `rho`; all four deleted-coordinate Fitting
+images then collapse to the same rational marking point.  Each extension
+fibre is a projective line, and a pair of marked minors has gcd exactly the
+two binary diagonal factors.  In commutative-algebra language, the open
+Fitting support is a reduced section and the marked-rank degeneracy divisor
+has no residual point on its `P^1` fibre.
+
+This closes generic marked `H31` on all seventeen currently known pure-`P4`
+components.  It does not make the component list exhaustive, and it does not
+specialize automatically to the parameter-boundary fibres.  The remaining
+generic known-component question is the weighted `H22` fibre of component
+fifteen.

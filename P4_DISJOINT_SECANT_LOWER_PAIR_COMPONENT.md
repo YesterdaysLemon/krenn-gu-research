@@ -29,9 +29,11 @@ sixfold in
 [`P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md`](P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md).
 Support-one secants are subsequently placed in this component's closure in
 [`P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md`](P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md).
-The marked `P_5` fibres of components fourteen and fifteen, the full
-pure-`P_4` component exhaustiveness problem away from the lower-pair locus,
-and the global Krenn--Gu conjecture remain open.
+The component's generic marked `H31` fibre is subsequently proved empty in
+[`P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
+Its weighted `H22` fibre, the full pure-`P_4` component exhaustiveness
+problem away from the lower-pair locus, and the global Krenn--Gu conjecture
+remain open.
 
 ## Two complementary hyperbolic planes
 
