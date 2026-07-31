@@ -253,7 +253,14 @@ strictly advance the finite frontier:
   status.  Its generic pair profile `(4,4,4,2,2,2)` separates it from
   the previous six-dimensional component and all seven fivefolds:
   [`P4_EMBEDDED_P3_PURE_COMPONENT.md`](P4_EMBEDDED_P3_PURE_COMPONENT.md).
-  The ninth component's marked `H31` and `H22` fibres are open.
+  Its generic marked `H31` fibre is empty already at the binary level.
+  The embedded `P_3` turns source-coordinate-zero extension into a
+  six-column apolar insertion map.  Its rank-drop support is exactly
+  three signed projective lines plus three coordinate points; on a
+  generic projected mode-zero line, every possible kernel kills the
+  required all-alpha diagonal:
+  [`P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
+  Its weighted `H22` fibre and special `H31` boundary remain open.
 - all five minimal primes in the mixed `3 x 4` determinantal chart are
   now identified.  Two are the sixth component, one is a subfamily of
   the six-dimensional component, and the remaining two are explicit
@@ -835,8 +842,10 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   `D_23` line and a degree-five `D_01` marking scheme, then exclude
   every genuine binary direction.  Thus those eight orbits are
   generically closed for both `H31` and weighted `H22`.  The ninth
-  component's marked fibres, special component/slope boundaries, and
-  component exhaustiveness remain open,
+  orbit is now generically closed for `H31` as well, by a three-line
+  apolar insertion arrangement.  Its weighted `H22` fibre, special
+  component/slope boundaries, and component exhaustiveness remain
+  open,
   although the eighth component's full equal- and opposite-weight
   slope fibres are now excluded already at the binary level, twelve
   generic parameter/coordinate boundary branches are closed, and the

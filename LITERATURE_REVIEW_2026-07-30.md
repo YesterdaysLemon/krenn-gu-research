@@ -240,3 +240,27 @@ a component.  Its pair-rank multiset `{2,2,2,4,4,4}` separates it
 from the earlier six-dimensional component.  This is a concrete
 example of a lower-rank boundary carrying more geometry than the
 dense stratum that led to it.
+
+Its generic marked `H31` fibre then collapses through a second
+cross-specialty translation:
+[`P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
+The squarefree algebra is an Artinian Gorenstein complete
+intersection, so the extension map is a first variation of
+multiplication and its exceptional directions form a Lefschetz-style
+degeneracy locus.  The relevant `7 x 6` presentation is even more
+rigid than a generic determinantal matrix: its maximal minors have
+support equal to three signed projective lines plus three coordinate
+points.  At a generic point of each line, the sole syzygy is one of
+the pure-`P_3` factor covectors and therefore annihilates the required
+all-alpha diagonal.  This gives a binary-level obstruction for every
+marking over the generic component point.
+
+The closest literature neighbors are the characterization of
+Lefschetz elements in Artinian Gorenstein algebras by higher Hessians
+([Maeno--Watanabe](https://arxiv.org/abs/0903.3581)) and the conversion
+of arrangement ideals into combinatorially controlled subspace
+arrangements and syzygies
+([Denham--Steiner](https://arxiv.org/abs/2112.13462)).  Neither result
+is imported as a black box; together they suggest the successful
+order of operations: find the Fitting support and its kernel sheaf
+before eliminating marking variables.

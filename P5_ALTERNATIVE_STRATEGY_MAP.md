@@ -1085,9 +1085,16 @@ obstruction from local mode zero to mode one:
 Other hidden coefficient divisors and component boundaries remain.
 The embedded pure-`P_3` suspension has since proved that the earlier
 eight-component list was incomplete and raised the lower bound to
-nine; the ninth component's marked fibres and exhaustiveness of the
-new list remain open.  The earlier modular pattern and timed-out broad
-route remain as provenance:
+nine.  Its generic marked `H31` fibre is now empty: deleting source
+coordinate zero gives a six-column apolar insertion map whose
+rank-drop support is three signed lines plus three points, and every
+generic line kernel kills the all-alpha diagonal:
+
+- [`P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md)
+
+The ninth component's weighted `H22` fibre, special `H31` boundary,
+and exhaustiveness of the new component list remain open.  The earlier
+modular pattern and timed-out broad route remain as provenance:
 
 - [`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md)
 

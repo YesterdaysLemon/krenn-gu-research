@@ -825,9 +825,12 @@ their parameter/projective boundaries; both are likewise generically
 closed for `H31` and weighted `H22`.  The common smooth
 diagonal-quadric locus cannot supply a new component away from its
 block boundaries.  The embedded pure-`P_3` suspension has since raised
-the component lower bound to nine.  Exhaustiveness of those nine
-orbits, the ninth component's generic marked `H31` and weighted `H22`
-incidences, and the special component/slope boundary incidences in
+the component lower bound to nine.  Its generic marked `H31` fibre is
+now empty already at binary level: the source-zero extension is an
+apolar insertion map whose generic projected-line kernels all kill
+one required diagonal.  Exhaustiveness of those nine orbits, the
+ninth component's weighted `H22` incidence, its special `H31`
+boundary, and the special component/slope boundary incidences in
 `H22` remain unresolved.
 
 ## Verification

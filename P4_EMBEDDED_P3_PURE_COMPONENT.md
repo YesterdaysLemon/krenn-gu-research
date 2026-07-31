@@ -25,9 +25,12 @@ certified lower bound is now
 at least nine symmetry-inequivalent pure-P_4 components.             (2)
 ```
 
-The theorem is at the pure-`P_4` plane level.  It does not classify
-the full pure-compression locus, analyze the component's marked
-`H31` or `H22` fibres, produce a graph satisfying the Krenn--Gu prize
+The theorem is at the pure-`P_4` plane level.  A later apolar
+insertion theorem excludes its generic marked `H31` fibre:
+[`P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
+The component theorem itself does not classify the full
+pure-compression locus, analyze the weighted `H22` fibre or special
+`H31` boundary, produce a graph satisfying the Krenn--Gu prize
 conditions, or prove the global conjecture.
 
 ## The symbolic family
@@ -305,3 +308,16 @@ checks the family tangent, reconstructs the exact incidence minor
 (15), and verifies the pair profile.  The independent audit uses a
 dynamic-programming permanent and modular dual numbers at two primes;
 it is a one-point certificate replay, not a search.
+
+The generic marked `H31` fibre has since been excluded without a
+large elimination.  Deleting source coordinate zero turns extensions
+into the first variation of the pure `P_3` multiplication tensor.  Its
+six-column Fitting support is three signed projective lines plus three
+coordinate points, and every generic line kernel kills the required
+all-alpha diagonal:
+
+```text
+P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h31_embedded_p3_component_generic_obstruction.py
+audit_p5_h31_embedded_p3_component_generic_obstruction.py
+```

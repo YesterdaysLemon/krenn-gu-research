@@ -231,6 +231,7 @@ six-dimensional component.  It is now eight after the disjoint
 mixed-star theorem, and nine after the embedded-`P_3` theorem.  No
 exhaustiveness claim follows.  The generic fibres of the eight
 components known before the embedded-`P_3` theorem are excluded from
-`H31`; the ninth component's marked fibres are open.  Incomplete
-component boundaries and the possibility of further pure components
-remain to be treated.
+`H31`.  The ninth component's generic marked `H31` fibre has now been
+excluded by its apolar insertion arrangement, while its weighted
+`H22` fibre is open.  Incomplete component boundaries and the
+possibility of further pure components remain to be treated.

@@ -11184,5 +11184,45 @@ verify_p4_embedded_p3_pure_component.py
 audit_p4_embedded_p3_pure_component.py
 ```
 
-The ninth component's marked `H31` and `H22` fibres, component
-exhaustiveness, and the global Krenn--Gu conjecture remain unresolved.
+The ninth component's generic marked `H31` fibre is now excluded in
+
+```text
+P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h31_embedded_p3_component_generic_obstruction.py
+audit_p5_h31_embedded_p3_component_generic_obstruction.py
+```
+
+On the dense normalization `A B r!=0`, the three deletions retaining
+source coordinate zero have identically zero all-alpha diagonal.
+Deleting source coordinate zero gives the apolar insertion tensor
+
+```text
+D_w(u_1,u_2,u_3)
+ =sum_i ell_i(u_i) P_3(w,u_j,u_k).
+```
+
+Its seven unwanted coefficients form a `7 x 6` matrix.  The maximal
+minors cut out exactly the signed lines
+
+```text
+p-q-rho=0,       p-q+rho=0,       p+q+rho=0
+```
+
+plus the three coordinate points.  Away from nine exceptional
+projective points, the three line kernels are respectively the
+coordinate covectors `z_2,z_3,z_1`; all have
+`x_1=x_2=x_3=0`.  A generic projected mode-zero line avoids those nine
+points, with exact discriminant
+
+```text
+-T(T-1)(T+1)(ST-U)
+ (ST-T-U)(ST+T-U)(ST-U-1)(ST-U+1).
+```
+
+Thus every possible mixed kernel kills the second binary diagonal.
+No ternary/Fitting continuation is needed.  This closes the generic
+`H31` fibre for all nine certified components.
+
+The ninth component's weighted `H22` fibre, special `H31` boundary,
+component exhaustiveness, and the global Krenn--Gu conjecture remain
+unresolved.
