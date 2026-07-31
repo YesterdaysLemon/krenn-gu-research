@@ -448,8 +448,8 @@ strictly advance the finite frontier:
   obstructions `tau4*tau5` and `(tau4-tau5)^2`, so the local dimension is
   exactly five.  The sorted pair profile `(2,3,3,4,4,4)` separates it from
   all earlier fivefolds, and dimension separates the earlier lower-rank
-  sixfold.  Its weighted `H22` fibre remains open; the marked `H31` fibre is
-  closed in the next theorem:
+  sixfold.  Its marked `H31` and weighted `H22` fibres are closed in the next
+  two theorems:
   [`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md`](P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md).
   A graph picture is in
   [`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg`](P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg).
@@ -461,6 +461,16 @@ strictly advance the finite frontier:
   two marked minors have gcd `R_j*A_j*B_j`, with every `R_j` a nonzero
   element of `C(p,q)`.  Hence every genuine neighbour has marked rank four:
   [`P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md).
+- component fourteen's complete generic weighted `H22` fibre is empty too.
+  Eliminating each finite slope confines common markings to two
+  mode-symmetric rational curves.  Along a prototype curve the mixed kernel
+  is one-dimensional, and two cleared marked minors have slope gcd
+  `r*(rP-1)*((P-1)r-1)*(r+1)^2`; away from `r=-1`, its first three factors
+  are exactly the forbidden binary-diagonal zeros.  At `r=-1` the binary
+  incidence is empty, while slope infinity is literally the already-closed
+  component-fourteen `H31` sheet.  Thus both fifth-coordinate partition
+  types are generically excluded:
+  [`P5_H22_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md).
 - the support-two polar flags do not supply component fifteen.  An explicit
   one-parameter Pluecker degeneration starts in the earlier six-dimensional
   lower-pair component, scales the two block coordinates by `epsilon`, and

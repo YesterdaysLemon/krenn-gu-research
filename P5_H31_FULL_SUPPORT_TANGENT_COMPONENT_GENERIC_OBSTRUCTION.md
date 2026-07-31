@@ -9,8 +9,9 @@ empty.
 The proof uses a two-parameter source-torus quotient, exact open Fitting
 projections, and three binary resultants.  It treats every marked basis,
 every deleted source coordinate, and every projective extension direction.
-The weighted `H22` fibre, special parameter/projective boundaries, pure-`P_4`
-component exhaustiveness, and the global Krenn--Gu conjecture remain open.
+The weighted `H22` fibre is closed in the subsequent theorem.  Special
+parameter/projective boundaries, pure-`P_4` component exhaustiveness, and
+the global Krenn--Gu conjecture remain open.
 
 ## The five-parameter family has a two-parameter quotient
 
@@ -128,9 +129,10 @@ Therefore
 generic H31 fibre(component 14)=empty.              (9)
 ```
 
-This closes the marked `H31` side of component fourteen.  It does not yet
-close that component's weighted `H22` fibre, either marked fibre of
-component fifteen, or the special boundary fibres of any component.
+This closes the marked `H31` side of component fourteen.  The subsequent
+weighted theorem closes its `H22` side as well.  Neither marked fibre of
+component fifteen nor the special boundary fibres of any component are
+settled here.
 
 ## Exact replay
 

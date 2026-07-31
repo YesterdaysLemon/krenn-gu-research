@@ -74,8 +74,8 @@ external mathematical review, the strongest additional claims are:
   `P_4`-compression variety.  Components one through thirteen and sixteen
   through seventeen are generically closed for both marked `H31` and
   weighted `H22`.  The full-support tangent component fourteen is now also
-  generically closed for marked `H31`, while its weighted `H22` fibre and
-  both marked fibres of disjoint-secant component fifteen remain open.  The
+  generically closed for both marked types.  Both marked fibres of
+  disjoint-secant component fifteen remain open.  The
   complete lower-pair locus is now exhausted by
   four known component closures, while exhaustiveness on the all-pair-ranks-
   at-least-three locus remains open.  The following chronological ledger
