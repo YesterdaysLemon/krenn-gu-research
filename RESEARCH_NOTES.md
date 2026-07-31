@@ -12410,6 +12410,47 @@ The next all-rank-three graph frontier is now a triangle with exactly one
 rank-two relation.  Special divisors of the tenth component and lower
 pair-image ranks remain separate.
 
+### The tenth component has no generic marked `H31` lift
+
+The complete marking chart of the new component admits a shorter obstruction
+than the expected Fitting-divisor analysis:
+
+```text
+P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py
+audit_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py
+```
+
+Keep the first row `alpha_i` of each normal-form plane fixed and write every
+compatible active row as `beta_i+h_i alpha_i`.  For each deleted source
+coordinate `q`, the fourteen mixed extension coefficients form a `14 x 8`
+matrix `M_q(h)` over `C(s,t)[h0,h1,h2,h3]`.  Exact module normal form gives
+
+```text
+NF_Mq(A_q)=0,       NF_Mq(B_q)!=0
+```
+
+for all four `q`, where `A_q,B_q` are the two diagonal rows.  Hence every
+mixed-zero extension kills `A_q` and cannot be a genuine binary neighbour.
+This includes every marking divisor; no rank assumption on `M_q` and no
+ternary contraction are needed.
+
+There are also explicit polynomial mixed-kernel directions `k_q(h)`.  Their
+diagonal values are
+
+```text
+A_q(k_q)=0,
+(B_0(k_0),B_1(k_1),B_2(k_2),B_3(k_3))
+  =(4(s+t),4(s+t),4(s+t),-4(s+t)).
+```
+
+Thus the obstruction is best understood as an asymmetric cokernel class, not
+as degeneration of the whole extension map.  The primary function-field
+module calculation and the independent subset-DP audit pass.  All ten known
+pure-`P_4` component orbits are now generically closed for `H31`.  The tenth
+component's weighted `H22` fibre, special toric boundary, component
+exhaustiveness, and the global conjecture remain open.
+
 ### The first component is a fixed apolar triangle bundle
 
 The remaining generic graph shape contains the original component in a much

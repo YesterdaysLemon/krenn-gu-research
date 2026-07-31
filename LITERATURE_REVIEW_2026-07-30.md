@@ -680,3 +680,30 @@ elements in Artinian Gorenstein algebras by Maeno--Watanabe
 squarefree-quadratic factorization and exceptional-graph interpretation are
 specific to this problem.  Other Borel orientations of the `{1,1,2}` triangle
 remain to be compared with known star and lower-rank component closures.
+
+The tenth component's generic `H31` obstruction adds a module-theoretic
+translation:
+[`P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+The four marking parameters form an affine chart on `(P^1)^4`; the two
+diagonal coefficient rows are opposite decomposable vertices of the binary
+Segre tensor cube.  A binary neighbor would be an intersection of the
+eight-dimensional extension image with the corresponding moving secant.
+
+Instead of eliminating that incidence or stratifying all its maximal-minor
+divisors, regard the fourteen mixed rows as a polynomial submodule of a free
+rank-eight module over `C(s,t)[h0,h1,h2,h3]`.  For every deleted coordinate,
+the all-alpha diagonal has zero class in the cokernel while the all-beta
+diagonal has nonzero class.  This one syzygy statement excludes every marking
+simultaneously.  It is the module-level refinement of the standard Fitting
+presentation formalism in the
+[Stacks Project, Section 15.8](https://stacks.math.columbia.edu/tag/07Z6).
+
+The Segre-secant viewpoint is adjacent to the catalecticant/flattening
+technology surveyed and developed by Landsberg--Ottaviani
+([arXiv:1012.3563](https://arxiv.org/abs/1012.3563)); the squarefree
+annihilator viewpoint remains adjacent to Maeno--Watanabe's higher-Hessian
+Lefschetz criterion.  Neither neighboring literature states the present
+uniform cokernel identity.  The useful synthesis is: toric normalization
+first, Segre incidence second, polynomial-module membership last.  It closes
+the entire generic marked fibre without graph enumeration or a ternary-rank
+calculation.

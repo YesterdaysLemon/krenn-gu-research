@@ -25,6 +25,10 @@ A companion reverse-normal-form theorem now proves that this family exhausts
 the entire rank-three star stratum with relation-rank multiset `{1,2,2}`:
 [`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md).
 
+The complete marked-basis fibre over the generic component point is now
+excluded for `H31` by a uniform polynomial row-module identity:
+[`P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+
 ![Exceptional graph of the new mixed-star component](research_figures/p4_two_rank_two_spoke_mixed_star.png)
 
 ## Presymplectic construction

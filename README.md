@@ -1027,7 +1027,12 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   generic weighted `H22` fibre by the same arrangement plus one
   structural zero diagonal.  Thus all nine orbits known at that checkpoint
   are generically closed for both marked types.  The new tenth component's
-  marked `H31/H22` fibres have not yet been analyzed.  The ninth orbit's entire
+  generic `H31` fibre is now empty as well.  Over its component function field,
+  the all-alpha diagonal row belongs to the polynomial row module of the
+  fourteen mixed extension rows for every deleted coordinate and every
+  marking, while an explicit syzygy direction has nonzero all-beta diagonal.
+  Hence every mixed-zero extension kills one required binary diagonal before
+  any ternary test.  Its weighted `H22` fibre remains open.  The ninth orbit's entire
   normalized `H31` chart is closed as well, and its weighted boundary
   is closed on every rank-two projected-line stratum.  The rank-one
   projected-image collapse is now closed by the complementary marked

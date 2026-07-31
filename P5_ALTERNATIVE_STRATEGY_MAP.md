@@ -1202,6 +1202,17 @@ timed-out broad route remain as provenance:
 
 - [`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md)
 
+The later two-rank-two-spoke mixed star gives a tenth component.  Its complete
+marked-basis fibre over the generic component point is now empty for `H31`.
+For each deleted coordinate, the all-alpha diagonal functional belongs to the
+row module of the fourteen mixed extension functionals over
+`C(s,t)[h0,h1,h2,h3]`; consequently every mixed-zero extension has zero first
+diagonal.  Explicit global syzygy lines retain the nonzero all-beta diagonal,
+so this is an asymmetric cokernel statement rather than collapse of the
+extension map:
+
+- [`P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
+
 The earlier
 quadratic-function-field experiments and their null outcomes remain
 recorded as provenance:
