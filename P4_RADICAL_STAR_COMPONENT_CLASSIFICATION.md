@@ -293,8 +293,11 @@ plane tuple.”  Its unresolved generic alternatives are:
    A reverse marked-chart theorem proves that this family exhausts the whole
    rank-three `{1,2,2}` star stratum:
    [`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md).
-   Configurations with only one rank-two triangle edge and special lower-pair-
-   rank boundaries remain open;
+   The known first component's dense one-rank-two triangle orientation now has
+   a fixed-triangle/apolar-`P^2` normal form:
+   [`P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md`](P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md).
+   Its other Borel orientations/support collisions and special lower-pair-rank
+   boundaries remain open;
 3. the lower pair-image-rank and coincident/support-one zero-product
    boundaries.  One rank-two-edge stratum now supplies the
    six-dimensional component in

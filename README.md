@@ -264,6 +264,16 @@ strictly advance the finite frontier:
   gives either the zero tensor or a rank-two center pair; and the full
   `2+2` equations force the displayed Cayley law:
   [`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md).
+- the original first component is now rewritten as an apolar triangle bundle.
+  Three fixed planes have relation-rank pattern `(2,1,1)` and only their
+  all-kernel/all-active degree-three products survive.  The fourth plane is
+  an arbitrary two-plane in the kernel of the all-kernel covector, with dense
+  chart
+  `span((1,0,p,1+p),(0,1,q,1+q))`.  The full tensor is simply
+  `-2(p e_0+q e_1) tensor e_1 tensor e_1 tensor e_1`; restoring the source
+  torus gives the known fivefold.  An exact Pluecker map identifies this with
+  the old five-parameter family:
+  [`P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md`](P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md).
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while

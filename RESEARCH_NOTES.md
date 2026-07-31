@@ -12409,3 +12409,54 @@ no second rank-three star family exists in that chart.
 The next all-rank-three graph frontier is now a triangle with exactly one
 rank-two relation.  Special divisors of the tenth component and lower
 pair-image ranks remain separate.
+
+### The first component is a fixed apolar triangle bundle
+
+The remaining generic graph shape contains the original component in a much
+simpler normal form:
+
+```text
+P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md
+verify_p4_first_component_apolar_triangle_normal_form.py
+audit_p4_first_component_apolar_triangle_normal_form.py
+```
+
+After preserving the two rank-one zero-product rows, a Borel shift
+synchronizes the rank-two edge.  Its equation becomes a factorization of
+
+```text
+(X2+X3)(X0+X2).
+```
+
+On the dense missing-coordinate branch, the vanishing coefficients force the
+second factor to be the signed coordinate reflection of the first.  Equality
+of the three nonzero coefficients then makes the coordinates `0,2,3` equal;
+the remaining coordinate is normalized by the unused source torus.  The
+triangle modes become
+
+```text
+U1=span((1,1,1,1),(0,0,1,1)),
+U2=span((1,0,1,0),(1,-1,1,1)),
+U3=span((0,0,1,-1),(1,0,-1,0)).
+```
+
+Only their all-kernel and all-active triple products survive, with covectors
+`(-1,-1,-1,1)` and `(1,1,-1,-1)`.  Hence the opposite plane is any two-plane
+in the first covector's kernel.  Its dense chart is
+
+```text
+U0=span((1,0,p,1+p),(0,1,q,1+q)),
+```
+
+and the restriction is
+
+```text
+-2(p*e0+q*e1) tensor e1 tensor e1 tensor e1.
+```
+
+The generic pair profile is `(4,4,4,3,3,3)`, with triangle relation ranks
+`(2,1,1)`.  Setting `e=i=l=1,c=-1-q,j=-p/q` in the old family and applying
+`diag(-1,-1,1,1)` gives identical Pluecker vectors.  Thus this is the old
+first component, expressed as a `P^2` apolar fibre plus the three-dimensional
+source torus.  The other Borel orientations and support collisions of the
+same triangle remain to be classified.

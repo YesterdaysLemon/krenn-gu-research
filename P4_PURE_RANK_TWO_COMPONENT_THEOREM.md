@@ -28,6 +28,11 @@ Thus exhaustiveness of the family in this note is false.  Its component
 and complete marked-fibre theorems remain valid with their stated
 scope.
 
+The same component now has a simpler dense presentation as a fixed
+`(2,1,1)` exceptional triangle with a `Gr(2,3)` apolar opposite-plane fibre:
+[`P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md`](P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md).
+That normal form is exactly Pluecker-equivalent to the family used here.
+
 ## A Grassmann chart
 
 Use the following affine charts for the four planes:

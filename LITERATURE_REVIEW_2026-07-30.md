@@ -657,3 +657,26 @@ toric family is the entire dense `{1,2,2}` star stratum, not just a component
 inside it.  This exact passage from Kronecker type to presymplectic radical to
 torus group law is the classification mechanism absent from the neighboring
 literatures when considered separately.
+
+The final remaining generic graph shape already contains the repository's
+first component, but its old coordinates obscured that fact.  The new apolar
+normal form is
+[`P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md`](P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md).
+Two overlapping binary zero products and one synchronized edge reduce the
+triangle to a factorization of a fixed three-term squarefree quadratic.  Its
+dense factorization has only one apparent parameter, removed by the unused
+source-coordinate torus.  Of the eight triple products, only the all-kernel
+and all-active covectors survive.  The opposite plane is therefore a point of
+
+```text
+Gr(2,ker(all-kernel covector))=Gr(2,3)=P^2.
+```
+
+This is a concrete Macaulay-duality/apolarity description of the first
+component: a fixed triangle, an apolar projective-plane fibre, and the source
+torus.  It is adjacent to the higher-Hessian characterization of Lefschetz
+elements in Artinian Gorenstein algebras by Maeno--Watanabe
+([arXiv:0903.3581](https://arxiv.org/abs/0903.3581)), but the exact
+squarefree-quadratic factorization and exceptional-graph interpretation are
+specific to this problem.  Other Borel orientations of the `{1,1,2}` triangle
+remain to be compared with known star and lower-rank component closures.
