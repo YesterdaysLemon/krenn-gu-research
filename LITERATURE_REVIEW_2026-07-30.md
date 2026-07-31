@@ -287,3 +287,18 @@ transverse one-marked rank four, and the unique rank-three/rank-three
 point is killed by a stacked determinant `8`.  This closes the entire
 normalized `H31` chart and illustrates the broader strategy:
 degeneracy support first, kernel sheaf second, compatibility last.
+
+The weighted boundary confirms that this order is not merely generic:
+[`P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md).
+Intersecting the moving projected line with the arrangement leaves
+four symbolic strata and six marked families.  Their obstructions are
+factor covers by tiny one-marked determinants, except at two deepest
+points where the appropriate object is a stacked source map with
+constant determinants `8` and `-8`.  This is naturally read as a
+kernel-sheaf gluing problem: local Fitting generators may vanish while
+two source directions still generate the full fibre.  The sole
+remaining weighted degeneration is qualitatively different, not a
+further arrangement point: when `rS=1,T=rU`, the projected line
+contracts to one point.  That suggests replacing line-arrangement
+intersection by the geometry of a non-flat image or an elementary
+transform of the kernel sheaf.

@@ -11302,3 +11302,45 @@ Thus the third target row vanishes globally, contradicting local rank
 three.  The full normalized affine chart is closed for `H31`; the
 omitted normalization/projective boundary and the special weighted
 `H22` boundary remain.
+
+### Rank-two projected-line weighted boundary of the ninth component
+
+The special weighted boundary has now been classified without a broad
+elimination in
+
+```text
+P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md
+verify_p5_h22_embedded_p3_component_rank_two_line_boundary.py
+audit_p5_h22_embedded_p3_component_rank_two_line_boundary.py
+```
+
+For projected line
+
+```text
+Lambda_r=P span((1,S,U),(r,1,T)),
+```
+
+the insertion arrangement leaves exactly four rank-two strata:
+
+```text
+U=S+1,T=r+1;   U=S,T=1;   U=1,T=r;   S=r=-1.
+```
+
+Their truncated-Segre equations leave six marked binary families.
+Small one-marked minors factor into complementary covers.  At the two
+deepest points every neighboring map has rank three, but stacking the
+weighted source contraction with the extension direction gives
+
+```text
+det=8,             det=-8.
+```
+
+Thus the weighted marked fibre is empty on every rank-two projected
+line.  The remaining chart frontier is precisely the collapse
+
+```text
+rS=1,             T=rU,
+```
+
+where the two projected rows are proportional and `Lambda_r` becomes
+a point.  This is not covered by the line-arrangement argument.

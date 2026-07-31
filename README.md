@@ -270,8 +270,14 @@ strictly advance the finite frontier:
   covers, while the deepest rank-three point fails a constant stacked
   determinant `8`:
   [`P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md).
-  Its normalization/projective boundary and special weighted `H22`
-  boundary remain open.
+  The weighted `H22` boundary is now closed whenever its projected
+  mode-zero image is still a line.  Four arrangement strata leave six
+  binary marked families; factored one-marked covers exclude them,
+  with constant stacked determinants `8` and `-8` at the two deepest
+  rank-three points:
+  [`P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md).
+  Its normalization/projective boundary and the rank-one projection
+  collapse remain open.
 - all five minimal primes in the mixed `3 x 4` determinantal chart are
   now identified.  Two are the sixth component, one is a subfamily of
   the six-dimensional component, and the remaining two are explicit
@@ -858,7 +864,10 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   generic weighted `H22` fibre by the same arrangement plus one
   structural zero diagonal.  Thus all nine known orbits are now
   generically closed for both marked types.  The ninth orbit's entire
-  normalized `H31` chart is closed as well.  Remaining special
+  normalized `H31` chart is closed as well, and its weighted boundary
+  is closed on every rank-two projected-line stratum.  Only the
+  rank-one projected-image collapse remains in that weighted chart.
+  Remaining special
   component/slope boundaries and component exhaustiveness stay open,
   although the eighth component's full equal- and opposite-weight
   slope fibres are now excluded already at the binary level, twelve

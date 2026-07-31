@@ -232,8 +232,16 @@ is the characteristic-zero proof above.
 
 All nine currently certified pure-`P_4` component orbits now have
 empty generic marked fibres for both `H31` and weighted `H22`.
-Neither component exhaustiveness nor the special parameter,
-slope, and projective boundaries follows.  For the ninth component,
-the first explicit boundary to study is `Delta_22=0`, where the
-projected line passes through one of the nine exceptional insertion
-points.
+Neither component exhaustiveness nor every normalization/projective
+boundary follows.  The rank-two projected-line boundary of this
+ninth component has since been closed:
+[`P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md).
+The remaining weighted chart frontier is the rank-one projection
+collapse
+
+```text
+rS=1,             T=rU,
+```
+
+where the two projected mode-zero rows become proportional and the
+line-arrangement kernel calculation changes type.

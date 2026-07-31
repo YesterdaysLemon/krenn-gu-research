@@ -31,8 +31,12 @@ insertion theorem excludes its generic marked `H31` fibre:
 The same insertion arrangement, after restoring the source-torus
 slope, excludes its generic weighted `H22` fibre:
 [`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
+Its entire rank-two projected-line weighted boundary is excluded by
+six symbolic one-marked factor covers:
+[`P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md).
 The component theorem itself does not classify the full
-pure-compression locus, analyze the special `H31/H22` boundaries,
+pure-compression locus, analyze the remaining normalization and
+rank-one-projection boundaries,
 produce a graph satisfying the Krenn--Gu prize conditions, or prove
 the global conjecture.
 
@@ -347,3 +351,18 @@ P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md
 verify_p5_h22_embedded_p3_component_generic_obstruction.py
 audit_p5_h22_embedded_p3_component_generic_obstruction.py
 ```
+
+The weighted boundary on which the projected mode-zero image remains
+a line is now closed as well.  The arrangement intersection has four
+strata and six marked binary survivor families; exact one-marked
+factor covers exclude all six, including two deepest points with
+stacked determinants `8` and `-8`:
+
+```text
+P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md
+verify_p5_h22_embedded_p3_component_rank_two_line_boundary.py
+audit_p5_h22_embedded_p3_component_rank_two_line_boundary.py
+```
+
+The remaining weighted chart frontier is the rank-one projected-image
+collapse `rS=1,T=rU`.

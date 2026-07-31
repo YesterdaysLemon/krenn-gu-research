@@ -1108,9 +1108,17 @@ pure/neighbouring map has constant determinant `8`:
 
 - [`P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md)
 
-The ninth component's omitted normalization/projective `H31`
-boundary, special weighted `H22` boundary, and exhaustiveness of the
-new component list remain open.  The earlier modular pattern and
+The analogous weighted boundary is also closed whenever the
+slope-dependent projected mode-zero image is a genuine line.  Four
+arrangement strata give six binary marked families; small factored
+one-marked covers exclude them, with stacked determinants `8` and
+`-8` at the two deepest points:
+
+- [`P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md)
+
+The ninth component's omitted normalization/projective boundary,
+rank-one weighted projection collapse `rS=1,T=rU`, and exhaustiveness
+of the new component list remain open.  The earlier modular pattern and
 timed-out broad route remain as provenance:
 
 - [`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md)
