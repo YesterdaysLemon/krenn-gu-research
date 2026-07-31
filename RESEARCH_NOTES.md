@@ -13740,6 +13740,43 @@ verify_p4_disjoint_mixed_star_affine_classification.py
 audit_p4_disjoint_mixed_star_affine_classification.py
 ```
 
+### The projective disjoint mixed-star chart has no vertical component
+
+Homogenize the first leaf row by `[h:g:p]` and replace the affine purity
+matrix by
+
+```text
+N=[[0,h,p],
+   [B*g+h,h-B*p,g+p],
+   [A^2*g+B*h,0,B*g+h]].
+```
+
+Its determinant
+
+```text
+A^2*B*g*p^2+A^2*g^2*h-B^2*g^2*h+B^2*h*p^2
+-B*g*h^2-h^3
+```
+
+is the irreducible homogenization of the component-eight equation.  The
+rank-one base is completely described by four one-dimensional strata:
+the two affine sign pairs, the `h=0,B!=0` sign pair, the single
+`h=0,B=0,A!=0` section, and the `h=0,A=B=0` projective line.
+
+The projectivized kernel incidence lies in `A^2 x P^2 x P^2`, of dimension
+six, and has three equations.  Every component therefore has dimension at
+least three.  The rank-one base plus its `P^1` kernel fiber has dimension
+only two, so it supports no vertical component.  The unique-kernel graph
+over the irreducible rank-two determinant locus is consequently dense in
+the whole incidence.  Every projective boundary point lies in component
+eight.
+
+```text
+P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md
+verify_p4_disjoint_mixed_star_projective_classification.py
+audit_p4_disjoint_mixed_star_projective_classification.py
+```
+
 Primary theorem and verifiers:
 
 ```text

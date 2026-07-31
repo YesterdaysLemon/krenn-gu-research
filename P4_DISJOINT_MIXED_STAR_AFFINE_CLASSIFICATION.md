@@ -19,7 +19,10 @@ the old cross-product parameterization vanishes.
 
 Thus the family in the component theorem is the complete affine stratum,
 not merely a construction.  The complementary projective leaf chart remains
-a separate boundary problem.
+a separate boundary problem in this note.  It is subsequently closed by the
+homogeneous kernel-incidence theorem
+[`P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md`](P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md),
+so the full disjoint mixed-star orientation is now exhausted.
 
 ## Normalize the three exact pairs
 

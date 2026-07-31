@@ -1264,3 +1264,16 @@ endpoint, so the resolution of the determinant singularity stays inside the
 same component closure.  This is the elementary `3 x 3` shadow of a Springer
 resolution: keeping the kernel line removes the false appearance of a new
 boundary component.
+
+Homogenizing that incidence closes the projective leaf chart too:
+[`P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md`](P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md).
+The homogeneous determinant is irreducible over
+`A^2_(A,B) x P^2_[h:g:p]`.  Its rank-one base is a finite union of curves;
+adding the projective kernel line gives dimension two.  The full kernel
+incidence sits in `A^2 x P^2 x P^2`, a sixfold, and is defined by three
+equations, so every irreducible component has dimension at least three.
+Consequently no component can live vertically over the rank-one curves.
+Every component meets the rank-two locus, where the kernel is unique, and
+therefore equals the closure of the component-eight graph.  This closes the
+whole disjoint mixed-star orientation, including boundary points whose
+exceptional graph acquires extra edges or a lower-rank pair.

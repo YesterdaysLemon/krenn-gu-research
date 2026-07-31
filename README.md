@@ -616,6 +616,13 @@ strictly advance the finite frontier:
   is filled by explicit formal arcs from rank two.  Hence no extra component
   hides in the vanished-cross-product boundary of this affine chart:
   [`P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md`](P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md).
+  Homogenizing the leaf row closes the complementary projective chart.  The
+  determinant base is an irreducible threefold.  Its complete rank-one locus
+  has dimension one and `P^1` kernel fibers, hence dimension two; but the
+  three-equation kernel incidence in a sixfold has no component below
+  dimension three.  There is therefore no vertical component, and every
+  projective boundary point is also in component eight:
+  [`P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md`](P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md).
   Its generic marked `H31` fibre is now empty.  Exact function-field
   projection leaves no genuine marking for source coordinates zero
   and one and one marking each for coordinates two and three; on both

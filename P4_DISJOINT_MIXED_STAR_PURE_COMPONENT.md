@@ -33,7 +33,10 @@ reverse theorem
 [`P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md`](P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md)
 now proves that its closure exhausts the full affine Borel chart, including
 the exceptional `P^1` fibers where the original cross-product coordinates
-vanish.  Only the complementary projective leaf chart remains.
+vanish.  The homogeneous incidence theorem
+[`P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md`](P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md)
+closes the complementary projective leaf chart as well.  Thus this entire
+orientation/support stratum is classified.
 A subsequent exact function-field
 theorem excludes the generic marked `H31` fibre:
 [`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
@@ -284,15 +287,11 @@ the radical-star theorem treated the two outward relations.  The
 disjoint mixed-support stratum is component-sized rather than a
 boundary.
 
-The surviving exact targets are now:
-
-1. classify the projective chart where the `a_bar` coefficient of `y_1`
-   vanishes;
-2. combine this reverse theorem with the remaining rank-one/rank-two graph
-   orientations to decide all-pair-ranks-at-least-three component
-   exhaustiveness.  The entire lower-pair locus is now classified
-   separately in
-   [`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
+The surviving exact target is to combine this complete stratum with the
+remaining rank-one/rank-two graph orientations and decide
+all-pair-ranks-at-least-three component exhaustiveness.  The entire
+lower-pair locus is classified separately in
+[`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
 
 The global prize conjecture remains unresolved.
 
