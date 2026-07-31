@@ -297,6 +297,13 @@ strictly advance the finite frontier:
   sorted pair profile `(3,3,3,4,4,4)` distinguishes it from the previous
   sixfold's `(2,3,3,4,4,4)`:
   [`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md).
+- the eleventh component's complete generic marked `H31` fibre is empty.
+  Over `C(p,q,r)[h0,h1,h2,h3]`, the all-kernel diagonal row lies in the
+  polynomial row module of the fourteen mixed extension rows for every
+  deleted coordinate, while the all-active row survives in the cokernel.
+  The shared exact zero divisor makes two of the four inclusions identically
+  zero and the other two explicit standard-basis combinations:
+  [`P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while
@@ -987,6 +994,7 @@ are:
 - [`P5_H31_DIAGONAL_QUADRIC_NORMALIZATION_BOUNDARY_OBSTRUCTION.md`](P5_H31_DIAGONAL_QUADRIC_NORMALIZATION_BOUNDARY_OBSTRUCTION.md)
 - [`P5_H31_DIAGONAL_QUADRIC_OUTER_BOUNDARY_OBSTRUCTION.md`](P5_H31_DIAGONAL_QUADRIC_OUTER_BOUNDARY_OBSTRUCTION.md)
 - [`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md)
 - [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
 - [`P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md)
 - [`P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md)
@@ -1060,8 +1068,10 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   total-space open.  Exact polynomial modules also close all markings and
   slopes at three rational component points.  The generic component's
   remaining marking divisors stay open.  The later equal-support
-  common-factor triangle raises the component count to eleven; none of the
-  preceding `H31/H22` theorems covers its generic marked fibres yet.  The
+  common-factor triangle raises the component count to eleven.  Its generic
+  `H31` fibre is now empty by an all-marking polynomial row-module identity,
+  so all eleven certified components are generically closed for `H31`; its
+  weighted `H22` fibre remains open.  The
   ninth orbit's entire
   normalized `H31` chart is closed as well, and its weighted boundary
   is closed on every rank-two projected-line stratum.  The rank-one

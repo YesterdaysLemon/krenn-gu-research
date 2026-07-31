@@ -12645,7 +12645,60 @@ unequal diagonal scaling, recovers family tangent rank six, incidence rank
 fourteen, the pair profile, and the two-point pure support by subset-DP
 permanents.  No search is used.
 
-The new component's generic `H31` and weighted `H22` fibres are open.  Thus
-the earlier statement that all ten known components were generically closed
-for `H31` remains a correct historical checkpoint but is no longer the
-current exhaustive known-component status.
+The new component's generic `H31` and weighted `H22` fibres were open at this
+checkpoint.  Thus the earlier statement that all ten known components were
+generically closed for `H31` was a correct historical checkpoint but was not
+yet the current exhaustive known-component status.
+
+### The eleventh component has no generic marked `H31` lift
+
+Use the intrinsic marked rows
+
+```text
+alpha0=(1+q(r+1))u-p(r+1)v,  beta0=u,
+alpha1=a,                     beta1=a_bar+b,
+alpha2=a,                     beta2=r*a_bar+b,
+alpha3=b_bar,                 beta3=a_bar,
+beta_i(h)=beta_i+h_i*alpha_i.
+```
+
+The only pure coefficient is `T_1111=-4p(r+1)`.  For each deleted source
+coordinate `d`, form the fourteen-by-eight mixed binary extension matrix
+`M_d` and the two diagonal rows `A_d,B_d` over
+`C(p,q,r)[h0,h1,h2,h3]`.  Exact polynomial module reduction gives
+
+```text
+A_d in Row(M_d),       B_d notin Row(M_d),
+module basis sizes = (4,4,8,8).
+```
+
+The first inclusion is structural.  `A_0=A_1=0`.  For the other deletions,
+the reduced module contains `e0,e1,p*e2,p*e3,p*e4`; since `p` is a unit in
+the component function field, these rows synthesize
+
+```text
+A2=(-2,-2Q,-2Q,2p,0,0,0,0),
+A3=( 2, 2Q, 2Q,2p,0,0,0,0),  Q=1+q(r+1).
+```
+
+Hence every solution of the mixed equations has zero all-kernel diagonal,
+contradicting the two nonzero binary diagonals required by `H31`.  This holds
+simultaneously for every marking parameter, even on mixed-rank divisors.  At
+`(p,q,r)=(1,2,2)`, adjoining `A_d` preserves mixed ranks `(4,4,7,7)` while
+adjoining `B_d` raises them to `(5,5,8,8)`, so the cokernel asymmetry is
+genuine.
+
+An independent subset-DP permanent construction reproduces the complete
+all-marking module statement at `(1,2,2)` and `(2,1,3)`.  No search or
+ternary-rank test is used.  All eleven certified pure-`P4` components are
+now generically closed for `H31`.  The eleventh component's weighted `H22`
+fibre, special parameter/projective boundary, component exhaustiveness, and
+the global conjecture remain open.
+
+Primary theorem and verifier:
+
+```text
+P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h31_equal_support_common_factor_component_generic_obstruction.py
+audit_p5_h31_equal_support_common_factor_component_generic_obstruction.py
+```

@@ -782,3 +782,25 @@ allowed to move.  Polynomial row modules then prove complete marking-fibre
 emptiness at three rational component points.  The remaining generic marking
 divisors are a concrete kernel-sheaf/Fitting problem, not evidence for a
 weighted lift.
+
+The eleventh component shows that the module translation becomes still
+sharper when the exceptional triangle is built from an exact zero-divisor
+pair.  Its generic marked `H31` theorem is
+[`P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+Over the full marking ring `C(p,q,r)[h0,h1,h2,h3]`, the all-kernel diagonal
+row lies in the mixed row module for every deleted coordinate, whereas the
+all-active diagonal has nonzero normal form.  For the two shared-support
+deletions the first row is literally zero; for the other two it is a short
+combination of standard-basis summands in the reduced module.
+
+This is a small but useful strengthening of the usual determinantal
+language.  Maximal minors locate rank-drop divisors and Fitting ideals record
+supports, but an explicit row-module inclusion proves vanishing on every
+kernel fibre at once, including marking divisors where those minors vanish.
+The neighboring homological picture of exact zero divisors explains why the
+presentation simplifies; the Segre picture identifies exactly which two
+cokernel classes matter.  Their combination closes all eleven certified
+components generically for `H31` without elimination, sampling, or a ternary
+rank test.  The weighted `H22` continuation remains open and is the natural
+place to ask whether the two-periodic exact-zero-divisor complex also
+organizes both weighted projection modules simultaneously.

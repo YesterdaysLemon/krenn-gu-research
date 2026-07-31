@@ -19,9 +19,11 @@ Consequently the repository's certified lower bound rises from ten to
 eleven symmetry-inequivalent pure-`P_4` component orbits.
 
 This is a component construction and smoothness theorem, not a complete
-classification of the common-factor Borel orientation.  Its marked `H31`
-and weighted `H22` fibres, its projective boundary, component exhaustiveness,
-and the global Krenn--Gu conjecture remain open.
+classification of the common-factor Borel orientation.  Its generic marked
+`H31` fibre is subsequently proved empty in
+[`P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+Its weighted `H22` fibre, special-parameter/projective boundary, component
+exhaustiveness, and the global Krenn--Gu conjecture remain open.
 
 ## The exact-zero-divisor normal form
 

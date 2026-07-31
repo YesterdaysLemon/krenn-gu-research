@@ -10,7 +10,9 @@ Together with the earlier component theorems, this closed all ten component
 orbits certified at this checkpoint.  The later equal-support common-factor
 triangle has supplied an eleventh component in
 [`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md),
-whose generic marked fibres are not covered here.  This theorem also does
+whose generic marked `H31` fibre is subsequently closed in
+[`P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+That later theorem is not part of the present proof.  This theorem also does
 not close the tenth component's special parameter/projective boundary, its
 weighted `H22` fibre, component exhaustiveness, or the global Krenn--Gu prize
 problem.
