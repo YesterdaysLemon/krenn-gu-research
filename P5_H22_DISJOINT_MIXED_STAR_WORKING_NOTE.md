@@ -28,6 +28,10 @@ and their rank pivot:
 A further coefficient normalization closes a new irreducible quadratic
 component branch by full unsplit two-minor ideals in both directions:
 [`P5_H22_DISJOINT_MIXED_STAR_COEFFICIENT_QUADRATIC_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COEFFICIENT_QUADRATIC_BOUNDARY_OBSTRUCTION.md).
+Three rational slope graphs are subsequently closed by six unsplit
+identities; one real mode-zero degeneration is repaired by the
+mode-one `0457` minor:
+[`P5_H22_DISJOINT_MIXED_STAR_LINEAR_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_LINEAR_SLOPE_BOUNDARY_OBSTRUCTION.md).
 
 No computation described below proves a statement over `C`.  In
 particular, several direct characteristic-zero Groebner calculations

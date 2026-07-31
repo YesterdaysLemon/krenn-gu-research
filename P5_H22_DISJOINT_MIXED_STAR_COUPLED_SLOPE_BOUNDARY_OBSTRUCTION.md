@@ -171,6 +171,9 @@ The final incidence certificates still require the same systematic
 treatment, although one normalized coefficient factor has now produced
 and closed a new irreducible quadratic branch:
 [`P5_H22_DISJOINT_MIXED_STAR_COEFFICIENT_QUADRATIC_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COEFFICIENT_QUADRATIC_BOUNDARY_OBSTRUCTION.md).
+Three more linear slope factors are closed in a companion theorem,
+including a second cross-mode repair:
+[`P5_H22_DISJOINT_MIXED_STAR_LINEAR_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_LINEAR_SLOPE_BOUNDARY_OBSTRUCTION.md).
 Other pure components may also exist.  No satisfying graph and no
 global nonexistence proof is claimed.
 

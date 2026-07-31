@@ -815,7 +815,10 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   degeneration fails an unsplit two-minor Fitting obstruction.
   Normalizing the further divisor `a^2 f^2+2bf+1=0` exposes a new
   irreducible quadratic component branch, and full unsplit two-minor
-  ideals exclude both weighted directions there as well.
+  ideals exclude both weighted directions there as well.  Three
+  further rational slope graphs are excluded by six unsplit identities;
+  one genuine mode-zero degeneration is repaired by the fixed mode-one
+  `0457` minor.
 Thus this does not remove the 240 signatures from the fail-closed
 census and `P_5 -> Delta_3` remains unresolved.
 

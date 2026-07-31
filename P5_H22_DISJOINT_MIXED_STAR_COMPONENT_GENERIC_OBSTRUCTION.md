@@ -29,6 +29,9 @@ A normalized coefficient divisor has also produced one new irreducible
 quadratic branch, closed in both directions by full unsplit Fitting
 ideals:
 [`P5_H22_DISJOINT_MIXED_STAR_COEFFICIENT_QUADRATIC_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COEFFICIENT_QUADRATIC_BOUNDARY_OBSTRUCTION.md).
+Three further linear slope graphs are closed by six unsplit ideals; one
+of them requires a cross-mode repair from mode zero to mode one:
+[`P5_H22_DISJOINT_MIXED_STAR_LINEAR_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_LINEAR_SLOPE_BOUNDARY_OBSTRUCTION.md).
 
 This does not close special parameter, slope, or projective boundary
 points, prove that the eight components are exhaustive, settle the
@@ -270,6 +273,10 @@ The new quadratic branch cut out by
 `a^2 f^2+2bf+1=0` after normalization is also closed by unsplit
 two-minor ideals, so its proof does not assume specialization of the
 degree-five marking cover.
+The three rational graphs
+`(a+b)r+/-(a-b)=0` and `(af-1)r+(af+1)=0` are now closed as well.
+The last graph has a genuine mode-zero degeneracy in `D_01`, but its
+mode-one `0457` minor excludes every ternary lift.
 
 ## Verification
 

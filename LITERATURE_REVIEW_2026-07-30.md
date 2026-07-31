@@ -85,6 +85,9 @@ external mathematical review, the strongest additional claims are:
   fails a two-minor marked-rank test.  Normalizing a further coefficient
   divisor exposes a new irreducible quadratic component branch; full
   unsplit Fitting ideals exclude both weighted directions there.
+  Three further rational slope graphs are excluded by six unsplit
+  identities; one graph has a genuine mode-zero degeneration repaired
+  by a fixed mode-one minor.
 
 The first item is stronger than the currently cited paper frontier and
 than the status labels in the current public formal-conjectures file.

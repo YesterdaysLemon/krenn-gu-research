@@ -144,8 +144,11 @@ Other factors in the one cleared Bezout certificate have not been
 promoted to geometric divisors.  Some are already known chart factors
 or the closed coupled slope divisor; the remaining candidates require
 either independent certificate comparison or their own normalized
-incidence calculation.  Other pure components may also exist.  The
-global Krenn--Gu conjecture remains unresolved.
+incidence calculation.  Three subsequent linear slope graphs have now
+passed that test and are closed in
+[`P5_H22_DISJOINT_MIXED_STAR_LINEAR_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_LINEAR_SLOPE_BOUNDARY_OBSTRUCTION.md).
+Other pure components may also exist.  The global Krenn--Gu conjecture
+remains unresolved.
 
 ## Verification
 
