@@ -448,10 +448,19 @@ strictly advance the finite frontier:
   obstructions `tau4*tau5` and `(tau4-tau5)^2`, so the local dimension is
   exactly five.  The sorted pair profile `(2,3,3,4,4,4)` separates it from
   all earlier fivefolds, and dimension separates the earlier lower-rank
-  sixfold.  Its marked `H31/H22` fibres are now open:
+  sixfold.  Its weighted `H22` fibre remains open; the marked `H31` fibre is
+  closed in the next theorem:
   [`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md`](P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md).
   A graph picture is in
   [`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg`](P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg).
+- component fourteen's complete generic marked `H31` fibre is empty.  A
+  diagonal source-torus quotient reduces its five-parameter polar-graph
+  family to two moduli `(p,q)`.  Open Fitting projection then leaves exactly
+  six rational marking sheets.  The equality `U0=U1` pairs them by an exact
+  marked mode swap, and on the three prototype extension pencils the same
+  two marked minors have gcd `R_j*A_j*B_j`, with every `R_j` a nonzero
+  element of `C(p,q)`.  Hence every genuine neighbour has marked rank four:
+  [`P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md).
 - the support-two polar flags do not supply component fifteen.  An explicit
   one-parameter Pluecker degeneration starts in the earlier six-dimensional
   lower-pair component, scales the two block coordinates by `epsilon`, and

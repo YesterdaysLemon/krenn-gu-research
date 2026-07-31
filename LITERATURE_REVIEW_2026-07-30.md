@@ -70,11 +70,13 @@ external mathematical review, the strongest additional claims are:
 - a complete exact-three-coordinate obstruction for
   `P_5 -> Delta_3`;
 - exact exclusions of normalized `q5_311`, `q5_221`, and `q4_211`;
-- at least fifteen inequivalent components of the pure rank-two
-  `P_4`-compression variety.  The first thirteen components are generically
-  closed for both marked `H31` and weighted `H22`; the marked fibres of the
-  full-support tangent component fourteen and disjoint-secant component
-  fifteen remain open.  The complete lower-pair locus is now exhausted by
+- at least seventeen inequivalent components of the pure rank-two
+  `P_4`-compression variety.  Components one through thirteen and sixteen
+  through seventeen are generically closed for both marked `H31` and
+  weighted `H22`.  The full-support tangent component fourteen is now also
+  generically closed for marked `H31`, while its weighted `H22` fibre and
+  both marked fibres of disjoint-secant component fifteen remain open.  The
+  complete lower-pair locus is now exhausted by
   four known component closures, while exhaustiveness on the all-pair-ranks-
   at-least-three locus remains open.  The following chronological ledger
   records the intermediate fibre results that led to that checkpoint.  The
