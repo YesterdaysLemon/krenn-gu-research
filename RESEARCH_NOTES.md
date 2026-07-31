@@ -13318,6 +13318,64 @@ verify_p4_rank_one_pair_obstruction.py
 audit_p4_rank_one_pair_obstruction.py
 ```
 
+### Tangent rank-two pairs are orthogonal graphs or radical flags
+
+For a tangent rank-two pair, the single-pair theorem gives
+
+```text
+U0=U1=span(e,w),       e=X0,       |supp(w)|>=2.
+```
+
+In the basis `(e,w)`, the opposite two-mode slice has matrix
+
+```text
+[0 Q]
+[Q R],
+```
+
+where `Q(a,b)` is the top coefficient of `(e*w)ab` and `R(a,b)` that
+of `w^2ab`.  Symmetry and nonzero purity force both tangent factors onto the
+`w` row.  Thus the complete condition is
+
+```text
+Q(U2,U3)=0,       rank(R|U2 x U3)=1 nonzero.
+```
+
+For full support `w=w1X1+w2X2+w3X3`, `Q` is nondegenerate on
+`W=span(X1,X2,X3)`, with determinant `2w1w2w3`, and has radical `C*e` on
+`R1`.  Dimension forces one opposite plane to be `span(e,u)`.  The other is
+either a graph over the polar plane `u^perp_Q`, where its graph functional is
+proportional to the linear form defined by `w^2`, or another plane through
+`e` satisfying one anti-diagonal product equation.
+
+For support two, normalize `w=H=X1+X2` and `S=X1-X2`.  The form `Q` has
+radical `K=span(e,S)` and a hyperbolic quotient `span(H,X3)`.  If an opposite
+plane projects to zero, the restriction is embedded `P3`.  Otherwise the two
+projections are orthogonal lines.  The determinant of the remaining `R`
+matrix is
+
+```text
+-e_A*e_B*z_A*z_B.
+```
+
+Away from the coordinate-three-space branch, `z_Az_B!=0`; purity therefore
+forces one intersection with `K` to be the annihilator line `C*S`.  These are
+the non-embedded polar flags.  Exact representatives of the full-support
+graph and support-two flag have profiles `(2,3,4,3,4,4)` and
+`(2,4,3,4,3,4)` and nonzero pure restrictions.
+
+This is a complete tangent-stratum classification, not yet a component
+classification.  The two families have the same sorted rank profile as the
+known six-dimensional lower-pair component, but their double Segre
+intersection distinguishes the tangent kernel.  Closure and deformation
+compatibility are now the live issue.
+
+```text
+P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md
+verify_p4_tangent_rank_two_pair_purity_classification.py
+audit_p4_tangent_rank_two_pair_purity_classification.py
+```
+
 Primary theorem and verifiers:
 
 ```text

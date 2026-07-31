@@ -414,6 +414,18 @@ strictly advance the finite frontier:
   the rank-two hyperbolic form `ad+bc`; its nonzero Frobenius slice cannot be
   decomposable.  Hence exact pair rank two is the true lower boundary:
   [`P4_RANK_ONE_PAIR_OBSTRUCTION.md`](P4_RANK_ONE_PAIR_OBSTRUCTION.md).
+- the tangent half of that exact-rank-two boundary now has a complete purity
+  classification.  If the common tangent plane is `span(X0,w)`, purity of
+  the opposite pair is equivalent to orthogonality for the catalecticant of
+  `X0*w` and rank one for the catalecticant of `w^2`.  Full three-coordinate
+  support makes the first form a nondegenerate ternary quadratic space and
+  forces one opposite plane through `X0`; its partner is an explicit graph
+  over a polar plane.  Support two gives a hyperbolic quotient with radical
+  `span(X0,w_bar)`: survivors are either embedded `P3` or polar flags meeting
+  the radical in `C*w_bar`.  Exact non-embedded representatives have sorted
+  pair profile `(2,3,3,4,4,4)`.  Their component containment is the next
+  question:
+  [`P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md`](P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md).
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while

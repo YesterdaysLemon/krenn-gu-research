@@ -1086,3 +1086,23 @@ hyperbolic binary form `ad+bc`, and Frobenius separation shows that its rank
 two survives in a nonzero opposite slice.  It cannot be a slice of a pure
 four-tensor.  Exact rank two is therefore not just the next unexamined case;
 it is the sharp minimum for every pair image in the pure locus.
+
+The tangent half of exact rank two is now classified in
+[`P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md`](P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md).
+Here the Kronecker-pencil label alone is not enough: purity couples the
+tangent edge to two catalecticant forms on the opposite planes.  With full
+support, the first form is a nondegenerate ternary quadratic space and its
+second form is a split star.  The survivors are graphs over polar planes.
+With support two, the first form degenerates to a hyperbolic plane with a
+two-dimensional radical, and the survivors are incident radical flags.
+
+This places the calculation next to orthogonal degeneracy-locus geometry.
+Pragacz and Ratajski organize loci where isotropic subbundles acquire excess
+intersection by flag conditions and quadratic classes
+([arXiv:alg-geom/9602019](https://arxiv.org/abs/alg-geom/9602019)).
+Bigeni and Feigin study degenerate symplectic/orthogonal flag varieties via
+quiver Grassmannians and cellular strata
+([arXiv:1804.10804](https://arxiv.org/abs/1804.10804)).  Those papers do not
+contain the permanent theorem here, but they suggest the correct next object:
+the closure poset of the polar-graph and radical-flag strata, rather than a
+fresh coefficient elimination.
