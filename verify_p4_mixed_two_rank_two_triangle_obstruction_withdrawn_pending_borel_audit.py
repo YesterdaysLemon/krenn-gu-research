@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact replay of the mixed (2,2,1) triangle obstruction."""
+"""Replay of local lemmas in a withdrawn mixed-triangle theorem."""
 
 from __future__ import annotations
 

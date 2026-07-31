@@ -1,8 +1,19 @@
-# Complete classification of flat rank-two-relation triangles
+# WITHDRAWN: overstrong classification of flat rank-two-relation triangles
 
 ## Status
 
-This is an exact characteristic-zero classification of the
+**WITHDRAWN.**  The projective-column classification below used full
+row `GL_2`, but purity fixes each kernel line and permits only Borel
+row gauge.  The displayed balanced `2+2` family and the individual
+normal-form identities remain exact; their claimed exhaustiveness and
+dimension consequence do not.
+
+The valid one-kernel-zero theorem is
+[`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md),
+and the true full-support Borel chart is
+[`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md).
+
+The withdrawn argument had claimed an exact classification of the
 zero-additive-holonomy branch left by
 [`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md).
 It combines the generic cross-ratio obstruction in
@@ -40,11 +51,8 @@ incidence has dimension at least five.  Therefore the
 all-rank-two-relation triangle cannot be the generic exceptional graph
 of a new pure-`P_4` component.
 
-This completes that triangle alternative for component
-exhaustiveness.  It does not classify the other exceptional graphs or
-lower pair-rank strata, identify every component containing (1),
-produce a prize-graph witness, or prove the global Krenn--Gu
-conjecture.
+It does not complete the triangle alternative or component
+exhaustiveness.
 
 ## Projective columns of a row-pair
 
@@ -287,11 +295,12 @@ missing component.
 Run:
 
 ```text
-python verify_p4_resonant_flat_triangle_classification.py
-python audit_p4_resonant_flat_triangle_classification.py
+python verify_p4_resonant_flat_triangle_classification_withdrawn_overstrong.py
+python audit_p4_resonant_flat_triangle_classification_withdrawn_overstrong.py
 ```
 
-The primary verifier replays the collision normal forms, the `2+2`
+These scripts replay the exact displayed normal forms but do not
+certify the withdrawn exhaustiveness claim.  The primary verifier replays the collision normal forms, the `2+2`
 synchronization space, (12)--(15), all sixteen permanent
 coefficients, and the three triangle pair ranks.  The independent
 audit uses the crossed block partition `{0,2}|{1,3}` and a separate

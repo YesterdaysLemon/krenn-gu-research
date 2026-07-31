@@ -1,8 +1,16 @@
-# Two rank-two edges cannot close with a rank-one triangle edge
+# WITHDRAWN pending Borel audit: the mixed `(2,2,1)` triangle
 
 ## Status
 
-This is an exact characteristic-zero obstruction on the
+**WITHDRAWN pending a Borel-gauge audit.**  The generic synchronizer
+lemma is basis-invariant, but the balanced-center step used full row
+`GL_2` while treating the transformed first rows as purity kernels.
+That is not justified: purity fixes the kernel lines and permits only
+Borel row changes.  The displayed annihilator calculations remain
+exact for their marked normal form, but the claimed exhaustive
+obstruction does not.
+
+The withdrawn theorem had claimed an exact obstruction on the
 all-pair-rank-at-least-three pure `P_4` locus.
 
 Suppose three exceptional edges form a triangle, every pair image has
@@ -16,10 +24,10 @@ a linear form in the squarefree algebra.  It uses no elimination or
 component search.
 
 Together with the pure rank-two star obstruction and complete
-rank-two triangle classification, this leaves only mixed selections
-with at most one rank-two edge, plus the lower pair-rank boundary.
-It does not prove component exhaustiveness or the global Krenn--Gu
-conjecture.
+rank-two triangle classification, this leaves mixed triangles with
+at most one rank-two edge, mixed stars with one or two rank-two
+spokes, and the lower pair-rank boundary.  It does not prove component
+exhaustiveness or the global Krenn--Gu conjecture.
 
 ## Normalize the two rank-two edges
 
@@ -149,11 +157,12 @@ one rank-two edge.
 Run:
 
 ```text
-python verify_p4_mixed_two_rank_two_triangle_obstruction.py
-python audit_p4_mixed_two_rank_two_triangle_obstruction.py
+python verify_p4_mixed_two_rank_two_triangle_obstruction_withdrawn_pending_borel_audit.py
+python audit_p4_mixed_two_rank_two_triangle_obstruction_withdrawn_pending_borel_audit.py
 ```
 
-The primary verifier checks the totally synchronized generic and
+These scripts replay the marked-chart identities but do not certify
+the withdrawn global scope.  The primary verifier checks the totally synchronized generic and
 collision pencils, the balanced synchronizer space, its annihilator
 alternative, and the inconsistent containment (6).  The independent
 audit uses the crossed coordinate partition and a direct coefficient

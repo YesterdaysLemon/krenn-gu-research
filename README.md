@@ -181,42 +181,31 @@ strictly advance the finite frontier:
   at most two.  The triangle frontier is therefore reduced to the
   flat synchronized binary cubic `Omega=delta=0`:
   [`P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md`](P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md).
-- the flat synchronized binary cubic is now classified completely.
-  A generic row-pair is a four-point configuration on `P^1`;
-  synchronization turns its partners into an adjugate pencil, and a
-  third-compound factorization contradicts the purity flag.  On the
-  collision boundary, zero columns descend to pure `P_3`, `2+1+1`
-  collisions kill the active cube, and `1+3` collisions drop the pair
-  rank.  The sole survivor is the balanced `2+2` family
-  `U0=<a_bar,b_bar>, U1=<a,b>, U2=<a,b+s*a_bar>,
-  U3=<a,b+t*a_bar>` with pure coefficient `-4(s+t)`.  Its plane locus
-  has dimension at most four, below the five-dimensional minimum for
-  a nonzero pure-incidence component.  Thus the complete
-  all-rank-two-relation triangle cannot be the generic graph of a new
-  component:
+- the Borel-generic flat binary cubic is empty.  Purity fixes the
+  kernel lines, so the correct normal form is
+  `y=(1,1,1,1), x=(0,1,p,q)`, not a full-`GL_2` cross-ratio form.
+  Its synchronizer is a two-dimensional pencil.  For
+  `C=[Y K J X]`, one compression minor is a unit times a
+  biquadratic `F`, every `3 x 3` minor of `C` is divisible by `F`,
+  and `det C` is a unit times `F^2`.  Three small `K,J` minors rule
+  out a one-dimensional compressed span.  This excludes the
+  full-kernel-support, distinct-affine-ratio, finite-partner chart.
+  A companion compound identity excludes the otherwise-distinct
+  one-kernel-zero chart:
   [`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md),
-  [`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md).
-- a star of three rank-two exceptional relations is impossible too.
-  Tree gauge synchronizes all three leaves with the center.  For a
-  generic four-point center the leaves lie on its adjugate pencil,
-  whose pair-rank-drop graph is a matching of three disjoint edges;
-  two leaves therefore close a forbidden generic triangle.  Zero,
-  `2+1+1`, and `1+3` center collisions respectively give a zero
-  restriction, a zero active cube, or pair rank at most two.  On the
-  remaining balanced `2+2` collision, one forbidden coefficient is
-  the constant `4`.  Hence an all-pair-rank-at-least-three missing
-  component must use a rank-one relation or a genuinely mixed
-  rank-one/rank-two selection:
-  [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md).
-- a rank-three exceptional triangle cannot have relation-rank pattern
-  `(2,2,1)`.  Gauge the two rank-two edges into a synchronization
-  `V`.  Generic and `2+1+1` centers automatically synchronize the
-  leaves with each other, contradicting the rank-one third relation.
-  The balanced `2+2` center reduces the issue to the degree-one
-  annihilator of a leaf kernel: it is either zero or the line
-  `C*a_bar`, and the other leaf never contains that line.  Thus a
-  remaining generic mixed triangle has at most one rank-two edge:
-  [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md).
+  [`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md).
+- a gauge audit withdrew three overstrong follow-on claims.  Full row
+  `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
+  legal.  Consequently the advertised complete flat-triangle
+  classification, the dependent rank-two-star obstruction, and the
+  balanced-chart part of the mixed `(2,2,1)` theorem are not global
+  theorems.  Their local identities remain recorded, but the Borel
+  collision/projective-partner boundaries and those graph
+  compatibilities remain open:
+  [`P4_BOREL_GAUGE_CORRECTION.md`](P4_BOREL_GAUGE_CORRECTION.md),
+  [`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md),
+  [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md),
+  [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md).
 - a mixed zero-product orientation produces a sixth
   symmetry-inequivalent component.  The normalized rank-two
   contraction condition is a `3 x 4` determinantal problem whose

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact replay of the rank-two-relation star obstruction."""
+"""Replay of local lemmas in a withdrawn overstrong star theorem."""
 
 from __future__ import annotations
 

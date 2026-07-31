@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent resultant and crossed-block audit of the star theorem."""
+"""Audit of local lemmas in a withdrawn overstrong star theorem."""
 
 from __future__ import annotations
 

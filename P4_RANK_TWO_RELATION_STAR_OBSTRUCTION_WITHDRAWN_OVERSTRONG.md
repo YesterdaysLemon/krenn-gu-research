@@ -1,8 +1,15 @@
-# A star of three rank-two relations is impossible
+# WITHDRAWN: overstrong rank-two-relation star obstruction
 
 ## Status
 
-This is an exact characteristic-zero obstruction for the
+**WITHDRAWN.**  The generic-center step invokes the withdrawn complete
+flat-triangle classification, whose full-`GL_2` normalization moved
+the purity-fixed kernel line.  The tree gauge, synchronizer pencil,
+rank-drop matching, and constant balanced-chart coefficient remain
+exact local lemmas, but they do not currently prove the advertised
+global star obstruction.
+
+The withdrawn theorem had claimed an exact obstruction for the
 all-rank-three-pair stratum of a nonzero pure `P_4` restriction.
 Suppose three exceptional pair edges form a star, every one has image
 rank three, and every unique multiplication relation has
@@ -13,13 +20,9 @@ The proof uses tree gauge, the four-point classification of one
 pencil, and one constant permanent on the balanced collision.  It
 uses no elimination or component search.
 
-Together with
-[`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md),
-this closes both the star and triangle graphs when all selected
-exceptional relations have matrix rank two.  Mixed rank-one/rank-two
-orientations and the full lower pair-image-rank boundary still remain;
-component exhaustiveness and the global Krenn--Gu conjecture are not
-proved.
+The full star, mixed orientations, and lower pair-image-rank boundary
+remain open; component exhaustiveness and the global Krenn--Gu
+conjecture are not proved.
 
 ## Tree gauge makes a synchronization star
 
@@ -206,11 +209,12 @@ does not yet classify all mixed selections.
 Run:
 
 ```text
-python verify_p4_rank_two_relation_star_obstruction.py
-python audit_p4_rank_two_relation_star_obstruction.py
+python verify_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py
+python audit_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py
 ```
 
-The primary verifier derives the three center synchronizer spaces,
+These scripts replay the exact local identities but do not certify the
+withdrawn global scope.  The primary verifier derives the three center synchronizer spaces,
 checks the rank-drop matching (7)--(8), and replays the constant
 coefficient (11).  The independent audit uses the crossed `2+2`
 partition, resultant checks for the three matching edges, and a

@@ -19,9 +19,10 @@ Omega=0,                         delta=0,                            (1)
 the flat affine connection whose multiplication factors through a
 compressed binary cubic `Sym^3(C^2) -> R_3`.
 
-The final flat branch has since been classified in
-[`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md).
-It has one lower-dimensional balanced `2+2` survivor.  Component
+The Borel-generic part of the final flat branch has since been
+excluded in
+[`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md).
+Its projective partner and collision boundaries, component
 exhaustiveness, the other exceptional/lower-rank graphs, and the
 global Krenn--Gu conjecture remain open.
 
@@ -190,14 +191,14 @@ The triangle reductions now read:
 ```text
 Omega != 0                 empty,
 Omega = 0, delta != 0      empty,
-Omega = 0, delta = 0       compressed binary cubic; now classified. (8)
+Omega = 0, delta = 0       compressed binary cubic; generic chart empty. (8)
 ```
 
 Thus no tangent-Segre first-jet component can occur on the
 all-rank-two-relation triangle.  At this checkpoint the only remaining
-triangle geometry was the flat synchronized binary cubic; the later
-flat-triangle classification reduces it to one balanced `2+2` family
-of dimension at most four.
+triangle geometry was the flat synchronized binary cubic.  Its
+Borel-generic and one-kernel-zero otherwise-distinct charts are now
+empty; other Borel boundaries remain.
 
 ## Verification
 

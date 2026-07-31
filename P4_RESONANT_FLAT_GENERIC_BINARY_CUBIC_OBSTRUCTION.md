@@ -1,308 +1,194 @@
-# The generic flat binary-cubic triangle is impossible
+# The true generic flat binary-cubic chart is impossible
 
 ## Status
 
-This is an exact characteristic-zero obstruction for the dense
-cross-ratio chart of the last triangle branch in
-[`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md).
-It uses projective normalization, a two-dimensional adjugate pencil,
-and one compound-matrix identity.  It uses no component enumeration
-or elimination.
+This is an exact characteristic-zero obstruction on the genuine
+Borel-generic chart of the flat rank-two-relation triangle.
 
-Together with
-[`P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md`](P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md),
-this proves that a rank-two-relation triangle can survive only where
-every row-pair has a zero or repeated projective column.  The
-projective parameter sheets of the partner pencil are excluded below
-as well.
-
-The collision boundary has since been classified completely in
-[`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md).
-It contains one balanced `2+2` family, but that family is too small to
-be a pure-`P_4` component.  Pure-component exhaustiveness and the
-global Krenn--Gu conjecture remain open.
-
-## The flat synchronized problem
-
-Work in the squarefree algebra
+Purity fixes each local kernel line.  Therefore the allowed row gauge
+is
 
 ```text
-R=C[X_0,X_1,X_2,X_3]/(X_0^2,X_1^2,X_2^2,X_3^2).
+y_i -> scalar*y_i,
+x_i -> scalar*(x_i+s_i y_i),
 ```
 
-The zero-holonomy theorem supplies three ordered row-pairs
+not full row `GL_2`.  The generic kernel row has full source support,
+and the four affine ratios `x_j/y_j` are distinct.  On the dense
+partner chart, this theorem excludes that case by an exact
+binary-cubic compound identity.
+
+This corrects the scope of
+[`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md),
+which is a valid one-kernel-zero boundary theorem.  The earlier
+“complete” projective-column classification was withdrawn because it
+moved the fixed kernel line:
+[`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md).
+
+Projective partner sheets, collisions among the affine ratios, and
+smaller kernel supports remain.  Thus this is a generic theorem, not
+a complete triangle classification, component-exhaustiveness proof,
+or global solution of the Krenn--Gu conjecture.
+
+## Borel normal form
+
+On the flat branch,
 
 ```text
-A_i=(y_i;x_i),                  i=1,2,3,
+y_i x_j=x_i y_j,                  i<j,                            (1)
 ```
 
-such that
+and the Hamming-weight triple products satisfy
 
 ```text
-y_i x_j=x_i y_j                for i<j.                            (1)
+dim span(Y,K,J)<=2,               X notin span(Y,K,J).             (2)
 ```
 
-Their triple products depend only on Hamming weight:
+Assume the kernel row of `A_1=(y_1;x_1)` has four nonzero entries and
+the four ratios `x_{1r}/y_{1r}` are distinct.  Diagonal source scaling
+makes the kernel row constant.  An active shift and scaling then give
 
 ```text
-Y=y_1y_2y_3,
-K=x_1y_2y_3=y_1x_2y_3=y_1y_2x_3,
-J=y_1x_2x_3=x_1y_2x_3=x_1x_2y_3,
-X=x_1x_2x_3.                                                       (2)
+y=(1,1,1,1),
+x=(0,1,p,q),
+
+p q(p-1)(q-1)(p-q)!=0.                                            (3)
 ```
 
-Purity and the perfect `R_1 x R_3` pairing give the flag
+This uses only the Borel gauge preserving the kernel line.
+
+## The true affine synchronizer
+
+Solving the six coefficients of
 
 ```text
-dim span(Y,K,J)<=2,             X notin span(Y,K,J).               (3)
+y x'-x y'=0
 ```
 
-In particular the full coefficient matrix
+gives a two-dimensional space.  Besides `A=(y;x)`, use
 
 ```text
-C=[Y K J X]
+y^#=(0, p+q-1, p(1-p+q), q(1+p-q)),
+x^#=p q(-1,1,1,1).                                                (4)
 ```
 
-must have rank at least three.
-
-## Cross-ratio normalization
-
-Suppose `A_1` has four nonzero, projectively distinct columns.
-Row `GL_2` and the diagonal source torus put it in the form
+On the dense projective parameter chart, rescale the two partners and
+write
 
 ```text
-y=(1,0,1,1),
-x=(0,1,1,lambda),               lambda(lambda-1)!=0.               (4)
+A_1=A,             A_2=A+tA^#,             A_3=A+uA^#.            (5)
 ```
 
-Write a synchronized partner as
+The synchronizer is totally isotropic:
 
 ```text
-y'=(a,b,c,d),
-x'=(e,f,g,h).
+y(t)x(u)=x(t)y(u).                                                 (6)
 ```
 
-The six coefficients of `yx'-xy'=0` give
+Thus (5) indeed gives a flat triangle, and its four triple
+coefficients form
 
 ```text
-f=a,       e=lambda b,
-c=a-b,     d=a-lambda b,
-g=a-lambda b,   h=lambda(a-b).                                    (5)
+C=[Y K J X].                                                       (7)
 ```
 
-Thus every partner lies in the two-dimensional pencil
-
-```text
-A(a,b)=aA+bA^#,
-
-y^#=(0,1,-1,-lambda),
-x^#=(lambda,0,-lambda,-lambda).                                   (6)
-```
-
-This is the useful matrix-pencil translation of the flat connection.
-On the dense parameter chart `a_2a_3!=0`, rescale the second and third
-row-pairs and write
-
-```text
-A_1=A,          A_2=A+tA^#,          A_3=A+uA^#.                   (7)
-```
-
-## The binary-cubic coefficient matrix
-
-Use the basis of `R_3` indexed by the omitted source coordinate.
-Direct squarefree multiplication gives
-
-```text
-C=2[
- -(lambda*t*u+t*u-t-u),
- -(lambda*t*u-1),
- -(lambda*t+lambda*u-lambda-1),
-  lambda*(lambda*t*u-lambda*t-lambda*u-t-u+3);
-
-  lambda*t*u-lambda*t-lambda*u-t-u+3,
- -(lambda*t+lambda*u-lambda-1),
- -lambda*(lambda*t*u-1),
- -lambda^2*(lambda*t*u+t*u-t-u);
-
- -(lambda*t*u-t-u),
-  1,
-  lambda,
- -lambda^2*(t*u-t-u);
-
- -(t*u-t-u),
-  1,
-  1,
- -lambda*(lambda*t*u-t-u)
-].                                                                  (8)
-```
-
-The last two rows already reveal that `K,J` are independent:
-
-```text
-det C[{2,3},{K,J}]=-4(lambda-1) != 0.                              (9)
-```
-
-Consequently (3) forces
-
-```text
-rank[Y K J]=2.                                                     (10)
-```
-
-Define
-
-```text
-F =
- lambda^2*t^2*u^2-lambda*t^2-4lambda*t*u+2lambda*t
- -lambda*u^2+2lambda*u+2t+2u-3.                                  (11)
-```
-
-One compression minor is
-
-```text
-det C[{1,2,3},{Y,K,J}]=8(lambda-1)F.                              (12)
-```
-
-Thus (10) implies `F=0`.
-
-## The compound-matrix collapse
-
-The surprise is that the same scalar controls every `3 x 3` minor of
-the full binary-cubic matrix.  Order row and column triples as
-
-```text
-012, 013, 023, 123.
-```
+## The common cofactor
 
 Put
 
 ```text
-P=lambda^2*t*u+2lambda*t*u-2lambda*t-2lambda*u-t-u+3,
-Q=2lambda*t*u-lambda*t-lambda*u+t*u-2t-2u+3.
+H=p^2-2pq-2p+q^2-2q+1
 ```
 
-Then the third compound matrix factors exactly as
+and define the symmetric biquadratic
 
 ```text
-C_3(C)=8F N,                                                       (13)
+F =
+ p^2 q^2 H t^2u^2
+ -6p^2q^2(t^2u+tu^2)
+ -pq(p+q+1)(t^2+4tu+u^2)
+ -2(pq+p+q)(t+u)
+ -3.                                                              (8)
 ```
 
-where
+In the `R_3` basis indexed by the omitted source coordinate, one
+compression minor is
 
 ```text
-N=[
- -(lambda*t-1)(lambda*u-1), -lambda*P, -lambda^2*Q,
- -lambda^3*(t-1)(u-1);
-
- -lambda*(t-1)(u-1), -lambda*Q, -lambda*P,
- -lambda*(lambda*t-1)(lambda*u-1);
-
- 0, lambda*t*u*(lambda-1), lambda*(lambda-1)(t+u),
- lambda*(lambda-1);
-
- lambda-1, lambda*(lambda-1)(t+u),
- lambda^2*t*u*(lambda-1), 0
-].                                                                  (14)
+det C[{1,2,3},{Y,K,J}]
+ =-8(p-1)(p-q)(q-1)F.                                             (9)
 ```
 
-Equations (12)--(14) are a cofactor identity, not a radical or
-set-theoretic computation.  Since purity forces `F=0`, all `3 x 3`
-minors of `C` vanish:
+More strongly, every `3 x 3` minor of the full matrix `C` is
+divisible by `F`:
 
 ```text
-rank C<=2.                                                         (15)
+C_3(C)=8F N(p,q,t,u)                                               (10)
 ```
 
-But (3) says `X` escapes `span(Y,K,J)`, and (9)--(10) say that span
-already has dimension two.  Hence `rank C=3`, contradicting (15).
-
-Therefore the affine part of the generic cross-ratio chart (4), (7)
-is empty.
-
-## The projective pencil sheets
-
-It remains to check that the affine parameterization (7) did not
-discard a solution at infinity.  By symmetry, first take
+for a polynomial `4 x 4` matrix `N`.  The determinant records the
+same square:
 
 ```text
-A_2=A^#,                 A_3=A+uA^#.
+det C=-16pq(p-1)(p-q)(q-1)F^2.                                   (11)
 ```
 
-The coefficient matrix is the leading `t`-coefficient of (8):
+Equations (9)--(11) are direct compound-matrix identities over
+`Z[p,q,t,u]`, replayed exactly by the verifier.
+
+Since the prefactor in (9) is nonzero, the compression half of (2)
+forces
 
 ```text
-C_infinity=2[
- -(lambda*u+u-1), -lambda*u, -lambda,
- lambda*(lambda*u-lambda-1);
-
- lambda*u-lambda-1, -lambda, -lambda^2*u,
- -lambda^2*(lambda*u+u-1);
-
- -(lambda*u-1), 0, 0, -lambda^2*(u-1);
-
- -(u-1), 0, 0, -lambda*(lambda*u-1)
-].                                                                  (16)
+F=0.
 ```
 
-Two compression minors are
+Equation (10) then gives
 
 ```text
--8lambda^2(lambda*u-1)(lambda*u^2-1),
--8lambda^2(u-1)(lambda*u^2-1).                                   (17)
+rank C<=2.                                                        (12)
 ```
 
-Since `lambda!=1`, the factors `lambda*u-1` and `u-1`
-cannot vanish together.  Purity therefore forces
+## The compressed span cannot be a line
+
+It remains to rule out the possibility that `span(Y,K,J)` has
+dimension at most one.  Three `2 x 2` minors of the `K,J` columns are
 
 ```text
-lambda*u^2=1.                                                      (18)
+M_12=-4q^2(p-1)(pt+1)(pu+1),
+M_13=-4p^2(q-1)(qt+1)(qu+1),
+M_23= 4(p-q)(pqt+1)(pqu+1).                                      (13)
 ```
 
-Every `3 x 3` minor of `C_infinity` is divisible by the
-left side of (18), so (18) gives
+If all three vanished, the two-element multiset `{t,u}` would have
+to contain all three distinct values
 
 ```text
-rank C_infinity<=2.                                                (19)
+-1/p,                 -1/q,                 -1/(pq).              (14)
 ```
 
-On the other hand,
+They are distinct under (3), which is impossible.  Hence
 
 ```text
-det C_infinity[{0,2},{Y,K}]
-  =-4lambda*u(lambda*u-1).                                        (20)
+dim span(Y,K,J)=2.                                                 (15)
 ```
 
-It is nonzero under (18): `u=1` or `lambda*u=1` would each imply
-`lambda=1`.  Hence `span(Y,K,J)` still has dimension two, and the
-escape condition for `X` contradicts (19).
+The escape half of (2) now requires `rank C=3`, contradicting (12).
+Therefore the full-kernel-support, distinct-affine-ratio, finite
+partner chart is empty.
 
-Finally, if both partners lie at infinity,
+## Correct frontier
 
-```text
-A_2=A_3=A^#,
-```
+The remaining flat triangle is confined to the union of:
 
-then one `3 x 3` compression minor is already
+1. a projective partner sheet in the synchronizer pencil;
+2. a collision among the four affine ratios in (3);
+3. a zero coordinate of a kernel row; or
+4. intersections of these divisors.
 
-```text
-det C[{0,1,2},{Y,K,J}]=-8lambda^4 != 0.                            (21)
-```
-
-Thus the projective pencil sheets are empty too.  Permuting the three
-modes shows:
-
-> In any surviving flat rank-two-relation triangle, none of the
-> three ordered row-pairs can have four nonzero, projectively
-> distinct source columns.
-
-## What remains
-
-The residual symbolic boundary consists only of row-pairs whose four
-source columns include zero or repeated projective points, and their
-intersections across the three modes.  These are lower-support and
-collision strata in the moduli space of four points on `P^1`.  They
-should be attacked by stable reduction of the four-point
-configuration and its induced degeneration of the adjugate pencil,
-rather than by a new ambient search.
+The one-kernel-zero otherwise-distinct chart is already empty by the
+companion kernel-zero theorem.  The other Borel boundary strata must
+be classified without moving the distinguished kernel lines.
 
 ## Verification
 
@@ -313,10 +199,8 @@ python verify_p4_resonant_flat_generic_binary_cubic.py
 python audit_p4_resonant_flat_generic_binary_cubic.py
 ```
 
-The primary verifier derives the synchronization pencil, recomputes
-the squarefree triple products, and checks (8)--(21) over rational
-function fields.  The independent audit starts from the six linear
-synchronization equations and the displayed coefficient matrices,
-then checks the rank flags and compound divisibilities separately.
-Both scripts are exact symbolic proof replays; neither searches for
-solutions.
+The primary verifier derives (4), recomputes all squarefree triple
+products, and checks (8)--(13) over `Q(p,q,t,u)`.  The independent
+audit uses a different subset-permanent construction and polynomial
+division for all sixteen compound entries.  Neither script searches
+for solutions.

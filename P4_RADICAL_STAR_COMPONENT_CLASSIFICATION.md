@@ -231,18 +231,17 @@ plane tuple.”  Its unresolved generic alternatives are:
 1. rank-one exceptional relations whose kernel endpoint orientations
    are mixed, including the known triangle component and orientations
    outside the now-certified disjoint-support chart;
-2. configurations with at most one selected rank-two exceptional
-   relation and otherwise rank-one relations.  Each
+2. configurations containing rank-two exceptional relations.  Each
    individual exact rank-two pair is now reduced, without elimination,
    to a secant `2+2`/`1+3` block center or a coincident-plane tangent
    through a coordinate line in
    [`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md);
-   compatibility with rank-one edges remains open.  The pure
-   rank-two-relation star is now empty:
-   [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md).
-   A triangle with two rank-two relations and one rank-one relation
-   is empty as well:
-   [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md).
+   compatibility among several pencils and with rank-one edges
+   remains open.  A proposed pure rank-two-star obstruction and a
+   proposed mixed `(2,2,1)` triangle obstruction were withdrawn after
+   a Borel-gauge audit:
+   [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md),
+   [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md).
    The triangle where all three pair images have rank three and all
    three relation matrices have rank two has an intrinsic holonomy.
    Away from its resonant divisor it reduces to
@@ -263,10 +262,14 @@ plane tuple.”  Its unresolved generic alternatives are:
    additive holonomy separates a tangent-Segre cut cycle from a compressed
    `Sym^3(C^2) -> R_3` map:
    [`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md).
-   The tangent branch is empty and the flat branch has one balanced
-   `2+2` family of dimension at most four, so it cannot be the generic
-   point of a component:
-   [`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md);
+   The tangent branch is empty.  On the flat branch, the true
+   Borel-generic and one-kernel-zero otherwise-distinct charts are
+   empty by
+   [`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md)
+   and
+   [`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md).
+   Projective partner sheets and the remaining Borel collision strata
+   remain;
 3. the lower pair-image-rank and coincident/support-one zero-product
    boundaries.  One rank-two-edge stratum now supplies the
    six-dimensional component in

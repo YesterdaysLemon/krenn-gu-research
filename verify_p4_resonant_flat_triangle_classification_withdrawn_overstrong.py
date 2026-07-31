@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact replay of the complete flat-triangle classification."""
+"""Replay of exact identities in a withdrawn overstrong classification."""
 
 from __future__ import annotations
 

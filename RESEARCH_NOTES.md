@@ -11853,18 +11853,19 @@ Omega=0, delta=0         open flat binary-cubic branch.
 
 This is a symbolic cut/duality proof and uses no component search.
 
-### The flat triangle is a four-point and binary-cubic problem
+### The one-kernel-zero flat chart is a binary-cubic problem
 
-The generic part of the last resonant branch is closed in
+The one-kernel-zero, otherwise-distinct part of the last resonant
+branch is closed in
 
 ```text
-P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md
-verify_p4_resonant_flat_generic_binary_cubic.py
-audit_p4_resonant_flat_generic_binary_cubic.py
+P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md
+verify_p4_resonant_flat_kernel_zero_binary_cubic.py
+audit_p4_resonant_flat_kernel_zero_binary_cubic.py
 ```
 
-A row-pair with four nonzero distinct columns is a labelled
-four-point configuration on `P1`.  Cross-ratio normalization gives
+A kernel row with one zero coordinate and three otherwise-distinct
+projective columns has the Borel normal form
 
 ```text
 y=(1,0,1,1),       x=(0,1,1,lambda).
@@ -11883,16 +11884,22 @@ C_3(C)=8F N.
 Purity therefore forces both `rank C=3` and `rank C<=2`.  The one- and
 two-infinite projective pencil sheets close by the analogous factor
 `lambda*u^2-1` and the nonzero minor `-8lambda^4`.  Consequently no
-flat triangle can have even one generic four-point row-pair.
+flat triangle can lie in this one-kernel-zero chart.
 
-### Complete projective collision classification of the triangle
+### WITHDRAWN: overstrong projective collision classification
 
-The boundary is classified in
+The following claimed exhaustiveness was withdrawn.  It used full row
+`GL2` to classify projective columns, but purity fixes each kernel
+line and permits only Borel row gauge.  The displayed balanced family
+and normal-form identities are exact; the claim that they exhaust the
+flat branch and the four-dimensional component conclusion are not.
+
+The withdrawn record is
 
 ```text
-P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md
-verify_p4_resonant_flat_triangle_classification.py
-audit_p4_resonant_flat_triangle_classification.py
+P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md
+verify_p4_resonant_flat_triangle_classification_withdrawn_overstrong.py
+audit_p4_resonant_flat_triangle_classification_withdrawn_overstrong.py
 ```
 
 A zero source column propagates to all synchronized partners and
@@ -11919,14 +11926,19 @@ twenty-variable/fifteen-equation Segre chart.  Hence the complete
 rank-two-relation triangle cannot be the generic graph of a missing
 component.
 
-### A pure rank-two-relation star is impossible
+### WITHDRAWN: overstrong pure rank-two-relation star obstruction
+
+The star conclusion below depended on the withdrawn complete triangle
+classification.  Its tree gauge, pencil matching, and constant
+balanced-chart coefficient remain local lemmas, but the global star
+obstruction is not established.
 
 The other three-edge graph is closed in
 
 ```text
-P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md
-verify_p4_rank_two_relation_star_obstruction.py
-audit_p4_rank_two_relation_star_obstruction.py
+P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md
+verify_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py
+audit_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py
 ```
 
 Because a star is a tree, the three rank-two relations can be gauged
@@ -11970,14 +11982,20 @@ be supported by a star or generic triangle whose selected relations
 are all rank two.  The remaining compatibility problem is genuinely
 mixed rank one/rank two.
 
-### Two rank-two triangle edges cannot mix with one rank-one edge
+### WITHDRAWN pending Borel audit: mixed `(2,2,1)` triangle
+
+The generic totally-synchronized pencil lemma below is
+basis-invariant.  The balanced-center exhaustiveness step is not: it
+used full row `GL2` while retaining the transformed first rows as
+purity kernels.  The global `(2,2,1)` obstruction is therefore
+withdrawn pending a Borel-gauge analysis.
 
 The first genuinely mixed pattern is closed in
 
 ```text
-P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md
-verify_p4_mixed_two_rank_two_triangle_obstruction.py
-audit_p4_mixed_two_rank_two_triangle_obstruction.py
+P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md
+verify_p4_mixed_two_rank_two_triangle_obstruction_withdrawn_pending_borel_audit.py
+audit_p4_mixed_two_rank_two_triangle_obstruction_withdrawn_pending_borel_audit.py
 ```
 
 Gauge the two rank-two edges, which share a vertex, into a
@@ -12003,4 +12021,65 @@ degree-one annihilator.  If `beta_i=0`, its annihilator is the line
 
 Therefore the relation-rank pattern `(2,2,1)` cannot occur on an
 exceptional rank-three triangle.  Any remaining generic mixed
-selection has at most one rank-two edge.
+triangle has at most one rank-two edge; mixed stars with two
+rank-two spokes remain separate.
+
+### Borel-generic repair of the flat binary cubic
+
+The correct full-kernel-support chart is now closed in
+
+```text
+P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md
+verify_p4_resonant_flat_generic_binary_cubic.py
+audit_p4_resonant_flat_generic_binary_cubic.py
+```
+
+Purity fixes each kernel line.  With full kernel support, diagonal
+source scaling and Borel row gauge—not full `GL2`—give
+
+```text
+y=(1,1,1,1),       x=(0,1,p,q),
+pq(p-1)(q-1)(p-q)!=0.
+```
+
+The synchronizer is the pencil generated by `A=(y;x)` and
+
+```text
+y_sharp=(0,p+q-1,p(1-p+q),q(1+p-q)),
+x_sharp=pq(-1,1,1,1).
+```
+
+For finite partner parameters `t,u`, let `C=[Y K J X]`.  Put
+
+```text
+H=p^2-2pq-2p+q^2-2q+1,
+
+F=p^2q^2 H t^2u^2
+  -6p^2q^2(t^2u+tu^2)
+  -pq(p+q+1)(t^2+4tu+u^2)
+  -2(pq+p+q)(t+u)-3.
+```
+
+One compression minor is
+
+```text
+-8(p-1)(p-q)(q-1)F,
+```
+
+all sixteen `3 x 3` minors of `C` are divisible by `F`, and
+
+```text
+det C=-16pq(p-1)(p-q)(q-1)F^2.
+```
+
+The compressed span cannot be a line: three `K,J` minors would force
+the two parameters `{t,u}` to contain the three distinct values
+
+```text
+-1/p,       -1/q,       -1/(pq).
+```
+
+Thus purity forces `rank C=3` and `rank C<=2`, a contradiction.
+This is the true generic theorem.  Projective partner sheets,
+collisions among the affine ratios, and smaller kernel supports remain
+the honest flat frontier.

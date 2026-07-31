@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent crossed-block audit of the mixed triangle theorem."""
+"""Audit of a marked chart in a withdrawn mixed-triangle theorem."""
 
 from __future__ import annotations
 

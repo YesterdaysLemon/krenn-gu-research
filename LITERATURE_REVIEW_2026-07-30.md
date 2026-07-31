@@ -425,10 +425,11 @@ classification of squarefree cut supports, the anchor geometry of
 three-variable squarefree complete intersection.  This closes the
 tangent branch and leaves only the flat synchronized binary cubic.
 
-The flat branch crosses into three classical neighboring subjects.
-First, its generic row-pair is a labelled four-point configuration on
-`P1`, so projective normalization leaves one cross-ratio.  Second,
-synchronization makes every other row-pair lie in a
+The flat branch crosses into three classical neighboring subjects,
+but with a crucial marked-point refinement.  Purity fixes a kernel
+line, so the relevant moduli problem is four affine ratios modulo the
+affine group, not four unmarked points modulo full `PGL_2`.
+Synchronization still makes every other row-pair lie in a
 two-dimensional matrix pencil.  Treating the missing affine sheets as
 genuine pencil-closure strata follows the bundle/closure viewpoint of
 [De Teran--Dopico](https://arxiv.org/abs/2204.10237), rather than
@@ -453,40 +454,33 @@ The projective pencil sheets obey smaller versions of the same
 identity.  A targeted review found the surrounding languages above,
 but not this particular squarefree-permanent cofactor factorization.
 
-The collision compactification then needs no elimination.  Zero
-columns descend to `P3`; the `2+1+1` collision kills the active cube;
-the `1+3` split drops the pair rank; and the balanced `2+2` split gives
-the sole canonical survivor.  Its source-torus orbit has dimension at
-most four, below the five-dimensional minimum for a nonzero
-pure-incidence component.  Thus the complete rank-two-relation
-triangle is no longer a possible generic missing-component graph:
-[`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md),
-[`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md).
+An earlier collision compactification used full `PGL_2` and therefore
+moved this marked kernel line.  Its claimed complete triangle
+classification, the star theorem depending on it, and the
+balanced-chart part of the mixed `(2,2,1)` theorem are withdrawn:
+[`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md),
+[`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md),
+[`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md).
+Their pencil-matching and annihilator calculations remain useful local
+lemmas, connected respectively to bounded-normal-rank pencils
+([De Teran--Dopico--Landsberg](https://arxiv.org/abs/1606.02574))
+and Lefschetz behavior of monomial complete intersections
+([Phuong--Tran](https://arxiv.org/abs/2211.13548)), but they do not
+currently support the advertised global scopes.
 
-The same pencil has a second use: it closes a star of rank-two
-relations in
-[`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md).
-The relevant object is not a large permanent ideal but the
-rank-drop graph on the pencil parameter line.  Its three Kronecker
-degeneracy pairs are disjoint, so the graph is a matching; three
-leaves necessarily contain a rank-three pair and close the forbidden
-triangle.  This is a concrete instance of the bounded-normal-rank
-pencil organization developed by
-[De Teran--Dopico--Landsberg](https://arxiv.org/abs/1606.02574).
-On the balanced collision, even that language collapses to one
-intersection-number calculation: the forbidden coefficient is
-`a^2b^2=4`.
+Keeping the marked kernel instead yields the true generic normal form
 
-The next mixed triangle is controlled not by another pencil
-classification but by the annihilator of a linear form in the
-squarefree complete intersection:
-[`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md).
-Two rank-two edges again create a synchronization pencil.  On the
-only nonautomatic `2+2` collision, a full-support kernel row has zero
-linear annihilator, while a two-supported row has one annihilator
-line that misses the other leaf plane.  This is the smallest-degree
-shadow of the Lefschetz behavior of characteristic-zero monomial
-complete intersections; for the broader theorem see
-[Phuong--Tran](https://arxiv.org/abs/2211.13548).  Here the exact
-support-sensitive statement is elementary and stronger for the local
-incidence: it excludes relation-rank pattern `(2,2,1)` outright.
+```text
+y=(1,1,1,1),       x=(0,1,p,q).
+```
+
+Its synchronizer is again a two-dimensional pencil, now over the
+two-dimensional affine-ratio moduli.  The binary-cubic coefficient
+matrix has a common biquadratic cofactor `F`; purity forces `F=0`,
+all `3 x 3` minors then vanish, and three small `K,J` minors prevent
+the compressed span from becoming a line.  This repairs the generic
+theorem without moving the flag:
+[`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md).
+The one-kernel-zero otherwise-distinct chart remains valid as a
+separate boundary theorem:
+[`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md).

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent linear-system and compound audit of the flat chart."""
+"""Independent polynomial audit of the Borel-generic flat chart."""
 
 from __future__ import annotations
 
@@ -9,172 +9,90 @@ import json
 import sympy as sp
 
 
+def product3(rows: tuple[sp.Matrix, sp.Matrix, sp.Matrix]) -> sp.Matrix:
+    values = []
+    for omitted in range(4):
+        columns = tuple(index for index in range(4) if index != omitted)
+        states = {0: sp.Integer(1)}
+        for row in rows:
+            next_states = {}
+            for mask, coefficient in states.items():
+                for local_column, source_column in enumerate(columns):
+                    if not mask & (1 << local_column):
+                        new_mask = mask | (1 << local_column)
+                        next_states[new_mask] = (
+                            next_states.get(new_mask, 0)
+                            + coefficient * row[source_column]
+                        )
+            states = next_states
+        values.append(sp.expand(states[7]))
+    return sp.Matrix(values)
+
+
 def main() -> None:
-    L, T, U = sp.symbols("L T U")
-
-    # Solve the synchronization equations directly in coefficient form.
-    # Unknown order is (a,b,c,d,e,f,g,h).
-    sync = sp.Matrix(
-        (
-            (-1, 0, 0, 0, 0, 1, 0, 0),
-            (-1, 0, 0, 0, 1, 0, 1, 0),
-            (-L, 0, 0, 0, 1, 0, 0, 1),
-            (1, -1, -1, 0, 0, 0, 0, 0),
-            (1, -L, 0, -1, 0, 0, 0, 0),
-            (0, 0, -L, -1, 0, 0, 1, 1),
-        )
+    P, Q, T, U = sp.symbols("P Q T U")
+    base_y = sp.ones(4, 1)
+    base_x = sp.Matrix((0, 1, P, Q))
+    sharp_y = sp.Matrix(
+        (0, P + Q - 1, P * (1 - P + Q), Q * (1 + P - Q))
     )
-    pencil_basis = sp.Matrix(
-        (
-            (1, 0),
-            (0, 1),
-            (1, -1),
-            (1, -L),
-            (0, L),
-            (1, 0),
-            (1, -L),
-            (L, -L),
-        )
-    )
-    assert sync.rank() == 6
-    assert sync * pencil_basis == sp.zeros(6, 2)
-    assert pencil_basis.rank() == 2
+    sharp_x = P * Q * sp.Matrix((-1, 1, 1, 1))
+    y2, x2 = base_y + T * sharp_y, base_x + T * sharp_x
+    y3, x3 = base_y + U * sharp_y, base_x + U * sharp_x
 
-    C = 2 * sp.Matrix(
-        (
-            (
-                -(L * T * U + T * U - T - U),
-                -(L * T * U - 1),
-                -(L * T + L * U - L - 1),
-                L * (L * T * U - L * T - L * U - T - U + 3),
-            ),
-            (
-                L * T * U - L * T - L * U - T - U + 3,
-                -(L * T + L * U - L - 1),
-                -L * (L * T * U - 1),
-                -L**2 * (L * T * U + T * U - T - U),
-            ),
-            (
-                -(L * T * U - T - U),
-                1,
-                L,
-                -L**2 * (T * U - T - U),
-            ),
-            (
-                -(T * U - T - U),
-                1,
-                1,
-                -L * (L * T * U - T - U),
-            ),
-        )
+    columns = (
+        product3((base_y, y2, y3)),
+        product3((base_x, y2, y3)),
+        product3((base_y, x2, x3)),
+        product3((base_x, x2, x3)),
     )
+    C = sp.Matrix.hstack(*columns)
 
+    H = P**2 - 2 * P * Q - 2 * P + Q**2 - 2 * Q + 1
     F = sp.Poly(
-        L**2 * T**2 * U**2
-        - L * T**2
-        - 4 * L * T * U
-        + 2 * L * T
-        - L * U**2
-        + 2 * L * U
-        + 2 * T
-        + 2 * U
+        P**2 * Q**2 * H * T**2 * U**2
+        - 6 * P**2 * Q**2 * (T**2 * U + T * U**2)
+        - P * Q * (P + Q + 1) * (T**2 + 4 * T * U + U**2)
+        - 2 * (P * Q + P + Q) * (T + U)
         - 3,
-        L,
+        P,
+        Q,
         T,
         U,
     )
-
-    # This 2-minor makes the compressed span exactly two off L=1.
-    kj_minor = sp.Poly(C.extract((2, 3), (1, 2)).det(), L, T, U)
-    assert kj_minor == sp.Poly(-4 * (L - 1), L, T, U)
-
-    row_triples = tuple(itertools.combinations(range(4), 3))
-    column_triples = tuple(itertools.combinations(range(4), 3))
-    remainders = []
+    triples = tuple(itertools.combinations(range(4), 3))
     quotients = []
-    for rows in row_triples:
-        for columns in column_triples:
-            minor = sp.Poly(C.extract(rows, columns).det(), L, T, U)
+    for rows in triples:
+        for selected_columns in triples:
+            minor = sp.Poly(C.extract(rows, selected_columns).det(), P, Q, T, U)
             quotient, remainder = sp.div(minor, F)
+            assert remainder.is_zero
             quotients.append(quotient)
-            remainders.append(remainder)
-    assert all(remainder.is_zero for remainder in remainders)
+    assert any(not quotient.is_zero for quotient in quotients)
 
-    # The compression minor has nonzero quotient 8(L-1).
-    compression_index = row_triples.index((1, 2, 3)) * 4
-    compression_quotient = quotients[compression_index]
-    assert compression_quotient == sp.Poly(8 * (L - 1), L, T, U)
-
-    # There are nonzero quotient cofactors on both ends of the matrix,
-    # so the common factor is not an artefact of a zero row or column.
-    assert quotients[0] == sp.Poly(
-        -8 * (L * T - 1) * (L * U - 1), L, T, U
+    compression = sp.Poly(
+        C.extract((1, 2, 3), (0, 1, 2)).det(), P, Q, T, U
     )
-    assert quotients[12] == sp.Poly(8 * (L - 1), L, T, U)
-
-    # Audit the omitted projective sheet directly, without taking a
-    # limit of the affine matrix.
-    C_inf = 2 * sp.Matrix(
-        (
-            (
-                -(L * U + U - 1),
-                -L * U,
-                -L,
-                L * (L * U - L - 1),
-            ),
-            (
-                L * U - L - 1,
-                -L,
-                -L**2 * U,
-                -L**2 * (L * U + U - 1),
-            ),
-            (-(L * U - 1), 0, 0, -L**2 * (U - 1)),
-            (-(U - 1), 0, 0, -L * (L * U - 1)),
-        )
+    compression_quotient, compression_remainder = sp.div(compression, F)
+    assert compression_remainder.is_zero
+    assert compression_quotient == sp.Poly(
+        -8 * (P - 1) * (P - Q) * (Q - 1), P, Q, T, U
     )
-    inf_compression = [
-        sp.factor(C_inf.extract(rows, (0, 1, 2)).det())
-        for rows in row_triples
+
+    simple_minors = [
+        sp.factor(C.extract(rows, (1, 2)).det())
+        for rows in ((1, 2), (1, 3), (2, 3))
     ]
-    G = sp.Poly(L * U**2 - 1, L, U)
-    assert sp.expand(
-        inf_compression[0] + 8 * L**2 * (L * U - 1) * G.as_expr()
-    ) == 0
-    assert sp.expand(
-        inf_compression[1] + 8 * L**2 * (U - 1) * G.as_expr()
-    ) == 0
-    inf_remainders = []
-    for rows in row_triples:
-        for columns in column_triples:
-            minor = sp.Poly(C_inf.extract(rows, columns).det(), L, U)
-            _, remainder = sp.div(minor, G)
-            inf_remainders.append(remainder)
-    assert all(remainder.is_zero for remainder in inf_remainders)
-    surviving_two_minor = sp.factor(C_inf.extract((0, 2), (0, 1)).det())
-    assert sp.expand(surviving_two_minor + 4 * L * U * (L * U - 1)) == 0
-
-    C_double_inf = 2 * sp.Matrix(
-        (
-            (-L - 1, -L, 0, L**2),
-            (L, 0, -L**2, -L**3 - L**2),
-            (-L, 0, 0, -L**2),
-            (-1, 0, 0, -L**2),
-        )
-    )
-    double_minor = sp.factor(
-        C_double_inf.extract((0, 1, 2), (0, 1, 2)).det()
-    )
-    assert sp.expand(double_minor + 8 * L**4) == 0
+    forced_values = ("-1/P", "-1/Q", "-1/(P*Q)")
+    assert all(value != 0 for value in simple_minors)
 
     result = {
-        "synchronization_matrix_rank": sync.rank(),
-        "pencil_basis_rank": pencil_basis.rank(),
-        "independent_KJ_minor": str(kj_minor.as_expr()),
-        "compound_entries_divisible_by_F": len(remainders),
+        "independent_triple_product": "subset dynamic programming",
+        "compound_divisions": len(quotients),
         "compression_quotient": str(compression_quotient.as_expr()),
-        "infinite_sheet_compound_entries": len(inf_remainders),
-        "double_infinite_minor": str(double_minor),
-        "proof_boundary": "only zero or repeated projective columns remain",
+        "rank_one_forced_values": forced_values,
+        "gauge_scope": "full kernel support and four distinct affine ratios",
+        "remaining": "projective partner and Borel collision divisors",
         "search_used": False,
         "verified": True,
     }

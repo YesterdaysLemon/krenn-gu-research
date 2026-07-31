@@ -18,13 +18,13 @@ excludes the first of the following two intrinsic shapes:
    `Sym^3(C^2) -> R_3` whose first three coefficients span at most a
    plane.
 
-The zero-additive-holonomy shape has since been classified in
-[`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md).
-Its only survivors form a lower-dimensional balanced `2+2` family,
-so the rank-two-relation triangle cannot be the generic graph of a
-new pure-`P_4` component.  Other exceptional graphs and lower
-pair-rank strata remain, and the global Krenn--Gu problem is
-unresolved.
+The Borel-generic zero-additive-holonomy shape has since been excluded
+in
+[`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md).
+The one-kernel-zero otherwise-distinct chart is excluded separately.
+Projective partner sheets and the remaining Borel collision strata
+remain, as do other exceptional graphs and lower pair-rank strata.
+The global Krenn--Gu problem is unresolved.
 
 ## Multiplicative resonance
 
@@ -287,12 +287,15 @@ are the repository's direct reduction.
 
 ## Exact frontier
 
-The subsequent generic compound-matrix obstruction and projective
-collision analysis classify every binary-cubic map (16) satisfying
-the compression flag (18).  The only survivors are the balanced
-`2+2` family in
-[`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md);
-that family is nonempty but too small to be a component.
+The subsequent compound-matrix arguments exclude the genuine
+Borel-generic chart and an otherwise-distinct one-kernel-zero chart:
+
+- [`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md);
+- [`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md).
+
+The projective partner sheets and remaining Borel collision strata are
+the exact flat frontier.  A previous full-`GL_2` collision
+classification was withdrawn because it moved the fixed kernel line.
 
 ## Verification
 

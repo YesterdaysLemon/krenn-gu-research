@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent crossed-block audit of the flat-triangle normal form."""
+"""Audit of exact normal forms in a withdrawn overstrong classification."""
 
 from __future__ import annotations
 
