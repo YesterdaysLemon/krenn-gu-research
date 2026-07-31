@@ -13489,6 +13489,65 @@ verify_p4_support_two_tangent_flag_boundary_inclusion.py
 audit_p4_support_two_tangent_flag_boundary_inclusion.py
 ```
 
+### A disjoint secant kernel gives component fifteen
+
+For a rank-two secant edge with disjoint zero-product supports, normalize
+
+```text
+a=X0+sX1,       a_bar=X0-sX1,
+b=X2+tX3,       b_bar=X2-tX3.
+```
+
+The two cross-products `q=a*b_bar` and `r=b*a_bar` have complementary
+Witt decompositions
+
+```text
+P=span(a,b_bar),       K=span(a_bar,b),
+rad(Q_q)=K,            rad(Q_r)=P.
+```
+
+Purity selects one cross-product.  For opposite planes `A,B`, it becomes
+`Q_q(A,B)=0` and `rank(Q_r|A x B)=1`.  Projection to `P` makes the two plane
+images orthogonal, while projection to `K` forces at least one image to be a
+line.  The two maximal branches choose which opposite plane has line
+`K` projection; they are mode-swap equivalents.  Lower projection ranks are
+flag degenerations of these branches.
+
+A dense branch is
+
+```text
+ell=a+lambda*b_bar,       ell_bar=a-lambda*b_bar,
+k=a_bar+m*b,              k_bar=b+n*a_bar,
+U2=span(k,ell),
+U3=span(k_bar,ell_bar+rho*a_bar).
+```
+
+Its only coefficients are
+
+```text
+T1000=-4st(mn+1),       T1001=-4m*rho*st.
+```
+
+At `(1,2,3,4,5,6)`, the family chart minor is `48/1331`.  In pivot-`02`
+coordinates the universal Segre-incidence Jacobian has rank fourteen; the
+selected minor is
+
+```text
+136141760102400/19487171.
+```
+
+Thus the family closure is a smooth six-dimensional component.  Its generic
+pair profile is `(2,3,4,3,4,4)`.  The rank-two kernel points have disjoint
+supports `{0,1}` and `{2,3}`, unlike the overlapping supports on the earlier
+six-dimensional lower-pair component.  This raises the certified lower bound
+to fifteen component orbits.
+
+```text
+P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md
+verify_p4_disjoint_secant_lower_pair_component.py
+audit_p4_disjoint_secant_lower_pair_component.py
+```
+
 Primary theorem and verifiers:
 
 ```text

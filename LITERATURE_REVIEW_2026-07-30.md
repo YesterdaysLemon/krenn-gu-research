@@ -1147,3 +1147,22 @@ the new obstructed fivefold; support two has a radical and smooths into the
 old sixfold.  Consequently the tangent-kernel frontier is now complete, and
 the remaining exact-rank-two question is the compatibility of secant block
 centers.
+
+The disjoint `2+2` secant center is now classified and contributes a
+fifteenth component orbit:
+[`P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md`](P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md).
+Its two cross-products have complementary radicals, splitting the source
+space into two hyperbolic planes `P` and `K`.  The permanent purity equations
+become an orthogonal flag in `P` together with a rank-one graph map in `K`.
+The two maximal strata correspond to which opposite plane has line
+`K` projection; a mode swap exchanges them, and the lower-dimensional flags
+sit in their closures.
+
+This is precisely the compression-space viewpoint suggested by bounded-rank
+matrix-pencil theory, but here the complementary Frobenius catalecticants
+make the flags explicit.  The six flag/source parameters fill a smooth
+six-dimensional incidence component.  Its pair-rank multiset matches the
+earlier lower-pair sixfold, while the discrete secant-center invariant does
+not: one has disjoint `2+2` supports and the other overlapping `1+3`
+supports.  The remaining secant frontier is therefore the overlapping
+center and compatibility when more than one pair edge has rank two.

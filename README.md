@@ -452,6 +452,20 @@ strictly advance the finite frontier:
   the known sixfold.  Together with component fourteen, this completes the
   tangent half of exact pair rank two:
   [`P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md`](P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md).
+- the disjoint `2+2` secant half produces a fifteenth component orbit.  The
+  two cross-products of the rank-two edge define complementary hyperbolic
+  planes `P,K`.  Purity is exactly an orthogonal-line condition in `P` and a
+  rank-one projection condition in `K`; the two maximal flag branches are
+  exchanged by swapping the opposite modes, and their closures contain all
+  smaller disjoint-secant strata.  A six-parameter family restricts as
+  `-4st*y0*x1*x2*((mn+1)*x3+m*rho*y3)`.  At
+  `(s,t,lambda,m,n,rho)=(1,2,3,4,5,6)`, its family minor is `48/1331` and
+  the universal incidence has rank fourteen with a nonzero `14 x 14` minor,
+  proving a smooth sixfold.  The disjoint kernel supports `{0,1},{2,3}`
+  separate it from the earlier overlapping `1+3` sixfold:
+  [`P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md`](P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md).
+  Components fourteen and fifteen now reopen the generic marked `H31/H22`
+  frontier.
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while
