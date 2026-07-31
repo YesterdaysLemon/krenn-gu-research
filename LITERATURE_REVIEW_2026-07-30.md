@@ -1304,3 +1304,25 @@ and the infinite weight is the preceding `H31` deletion.
 Thus generic `H31/H22` is now closed on all seventeen currently known pure-
 `P4` components.  This does not make the component list exhaustive, and it
 does not specialize automatically to the parameter-boundary fibres.
+
+### 31 July addendum: a transversal-matroid frontier
+
+The all-pair-ranks-at-least-three component question now has a standalone
+combinatorial reduction:
+[`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md).
+The perfect degree-two Frobenius pairing gives
+`r_ij+r_kl<=7` on every opposite edge pair.  Hence the rank-three edges meet
+all three 1-factors of `K_4`.  The minimal blockers of that 1-factorization
+are exactly four vertex stars and four complementary triangles.  Marked
+purity makes the unique relation on each selected edge a matrix
+`(a b; c 0)`, of rank one or two.  Up to graph shape and relation-rank
+multiset, the remaining component problem therefore has only eight coarse
+cells.
+
+Four cells are already resolved: `star-222`, `star-221`, `triangle-222`,
+and `triangle-221`.  The exact exhaustion target is the union of the four
+cells containing at least two rank-one relations.  Their continuous data
+are naturally directed gains, exact-zero-divisor support labels, and
+synchronizer edges—a quiver-stratum problem rather than a raw permanent
+ideal.  This is the sharpest current route to proving or refuting
+seventeen-component exhaustiveness.

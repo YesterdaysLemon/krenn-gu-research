@@ -593,6 +593,15 @@ strictly advance the finite frontier:
   in component seventeen, sixteen, or seventeen.  Thus both the genuine
   support-two and singleton parts of the cyclic orientation are complete:
   [`P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_ONE_BOUNDARY.md`](P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_ONE_BOUNDARY.md).
+- the remaining all-pair-ranks-at-least-three component problem now has an
+  exact eight-cell reduction.  Perfect pairing forces the rank-three edges
+  to block all three 1-factors of the source `K_4`; every minimal blocker is
+  one of four stars or four triangles.  Each selected edge relation has
+  coefficient rank one or two, leaving only four relation-rank multisets per
+  graph shape.  The `222` star, `221` star, `222` triangle, and `221`
+  triangle cells are already resolved.  Component exhaustiveness is now
+  concentrated in the four cells with at least two rank-one relations:
+  [`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md).
 - the two directed-triangle components are now generically closed for marked
   `H31`.  Over each component function field, the genuine-binary-neighbour
   projection has only eleven marked sheets in total: six points and one line
