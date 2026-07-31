@@ -39,9 +39,10 @@ two incompatible affine differences.  That sheet is empty.  Exact primary
 and independent subset-product replays are in
 [`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
 
-The honest resonant frontier is now smaller: affine-ratio collisions,
-smaller kernel supports, their intersections, and compatibility with the
-other exceptional graphs.  The global Krenn--Gu conjecture remains open.
+The full-support affine-ratio collisions have since been closed as well.
+The honest resonant frontier is now smaller kernel supports, their collision
+intersections, and compatibility with the other exceptional graphs.  The
+global Krenn--Gu conjecture remains open.
 
 At order 14, the equality-architecture factor types
 `C3+C3+C8`, `C3+C4+C7`, `C3+C5+C6`, `C4+C5+C5`,
@@ -12151,5 +12152,49 @@ triangle.  If both partners are `A_sharp`, two incompatible affine
 difference factors exclude purity.  The complete projective partner sheet
 is therefore empty in the intended triangle stratum.
 
-The honest flat frontier is now affine-ratio collisions, smaller kernel
-supports, and their intersections.  The global conjecture remains open.
+The affine-ratio collisions are handled next.
+
+### Full-support collisions are presymplectic rank-drop seams
+
+The legal affine-ratio multiplicities are `1+1+1+1`, `2+1+1`, `2+2`,
+`3+1`, and the rank-one `4` collapse.  The three collision types are now
+classified in
+
+```text
+P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md
+verify_p4_resonant_flat_full_kernel_collision.py
+audit_p4_resonant_flat_full_kernel_collision.py
+```
+
+For `2+1+1` and `3+1`, the synchronizer pencil's point at infinity has
+local rank one.  Every admissible finite partner has the same active row
+`x`; since `x` has support at most two in the squarefree algebra, `x^3=0`.
+The required escaping coefficient therefore vanishes.
+
+The `2+2` center has a three-dimensional synchronizer
+`span(A,B_0,B_1)`.  Its alternating multiplication form satisfies
+
+```text
+omega(A,B_0)=omega(A,B_1)=0,
+omega(B_0,B_1)=w!=0.
+```
+
+Thus `A` is the radical of a presymplectic projective plane, and compatible
+flat triples are exactly lines through `A`.  Writing a direction as
+`D=rB_0+sB_1` and the other planes as `A+tD,A+uD`, the four compression
+minors factor into `t+u` times signed binary factors and
+
+```text
+det C=-64rs(t+u)^2.
+```
+
+Purity leaves only `u=-t` with `rt,st in {+1,-1}`.  After rescaling `D`,
+these are four signed points.  Their compressed/full ranks are `(1,2)`,
+but the product image of `(A+D,A-D)` has rank two at every point.  Both
+one- and two-endpoint projective sheets are empty.  Hence no `2+2` pure
+point belongs to the all-rank-three triangle.
+
+Together with the finite and projective distinct-ratio theorems, this
+excludes the complete full-kernel-support flat triangle.  The honest flat
+frontier is now smaller kernel supports and their ratio collisions.  The
+global conjecture remains open.

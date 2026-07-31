@@ -202,17 +202,27 @@ strictly advance the finite frontier:
   neighbor have product-image rank two, so all three leave the
   rank-three-relation triangle stratum.  With both partners at infinity,
   the compression and escape ranks are incompatible.  Hence the complete
-  projective sheet is empty for the intended triangle; only Borel
-  affine-ratio collisions and smaller kernel supports remain:
+  projective sheet is empty for the intended triangle.  The next theorem
+  handles the Borel affine-ratio collisions; smaller kernel supports remain:
   [`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
+- the remaining full-support affine-ratio collisions are now classified
+  without leaving the Borel gauge.  For multiplicities `2+1+1` and `3+1`,
+  the synchronizer's projective point has local rank one and every finite
+  partner shares an active row whose squarefree cube is zero.  For `2+2`,
+  the synchronizer is a presymplectic projective plane; flat triples are
+  lines through its radical.  Exactly four signed finite points are pure,
+  and all four have a rank-two noncentral pair; both projective endpoint
+  sheets are empty.  Combined with the distinct-ratio theorems, this
+  excludes every full-kernel-support flat rank-three-relation triangle:
+  [`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
 - a gauge audit withdrew three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  Consequently the advertised complete flat-triangle
   classification, the dependent rank-two-star obstruction, and the
   balanced-chart part of the mixed `(2,2,1)` theorem are not global
   theorems.  Their local identities remain recorded, but the Borel
-  collision/lower-support boundaries and those graph compatibilities
-  remain open:
+  smaller-kernel-support boundaries and those graph compatibilities remain
+  open:
   [`P4_BOREL_GAUGE_CORRECTION.md`](P4_BOREL_GAUGE_CORRECTION.md),
   [`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md),
   [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md),

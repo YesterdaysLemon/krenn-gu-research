@@ -92,7 +92,7 @@ def main() -> None:
         "compression_quotient": str(compression_quotient.as_expr()),
         "rank_one_forced_values": forced_values,
         "gauge_scope": "full kernel support and four distinct affine ratios",
-        "remaining": "Borel collision and smaller-support divisors after the projective-sheet theorem",
+        "remaining": "smaller-kernel-support divisors after the projective and full-support collision theorems",
         "search_used": False,
         "verified": True,
     }

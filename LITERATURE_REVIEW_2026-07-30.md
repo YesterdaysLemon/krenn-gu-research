@@ -512,3 +512,25 @@ partners at infinity, two incompatible confluent minors make the pure sheet
 empty.  The review found the separate ingredients--Sidon collisions,
 osculating binary forms, and bounded-rank pencil closures--but not this
 specific implication among them.
+
+The full-support collision strata now have an equally small foreign
+description:
+[`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
+For `2+1+1` and `3+1`, the synchronizer remains a pencil but its point at
+infinity is a rank-one local map.  Every admissible partner keeps one common
+active row, whose squarefree cube vanishes because its support has size at
+most two.  This is a zero-divisor argument in the Artinian complete
+intersection, not an incidence elimination.
+
+For `2+2`, the synchronizer jumps to a projective plane.  Multiplication
+induces a degenerate alternating form with the center as its radical, so
+mutually synchronized triples are exactly projective lines through that
+radical.  This is the elementary three-dimensional edge of projective
+symplectic/c-polar geometry; compare Prazmowska--Prazmowski--Zynel,
+[Projective symplectic geometry on regular subspaces](https://arxiv.org/abs/1203.2053).
+On each such line, purity leaves four signed points.  All four have a
+rank-two noncentral pair and hence cross immediately into the
+Segre/Kronecker boundary.  Projective endpoints are empty.  Combining the
+presymplectic collision theorem with the finite/projective distinct-ratio
+theorems excludes every full-kernel-support flat rank-three-relation
+triangle.  Only smaller kernel supports remain in that branch.

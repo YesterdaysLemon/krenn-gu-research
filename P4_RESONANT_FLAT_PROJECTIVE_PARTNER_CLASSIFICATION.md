@@ -23,7 +23,9 @@ rank two rather than three.  These curves are therefore the seam to the
 lower-pair-rank Segre/Kronecker boundary, not counterexamples to the
 rank-three triangle theorem.
 
-Affine-ratio collisions and smaller kernel supports remain.  This is not a
+The full-support affine-ratio collisions have since been classified in
+[`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
+Smaller kernel supports remain.  This is not a
 classification of every pure `P_4` component and not a proof or
 counterexample for the global Krenn--Gu conjecture.
 

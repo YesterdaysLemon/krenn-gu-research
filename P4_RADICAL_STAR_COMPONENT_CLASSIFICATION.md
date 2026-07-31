@@ -272,7 +272,11 @@ plane tuple.”  Its unresolved generic alternatives are:
    triangle after their three additive-parallelogram pure curves are shown
    to have a lower-rank partner pair:
    [`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
-   The remaining Borel collision and smaller-support strata remain;
+   The full-support collisions are also excluded: the `2+1+1` and `3+1`
+   active cubes vanish, while every pure `2+2` point has a lower-rank
+   partner pair:
+   [`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
+   The smaller-support strata remain;
 3. the lower pair-image-rank and coincident/support-one zero-product
    boundaries.  One rank-two-edge stratum now supplies the
    six-dimensional component in

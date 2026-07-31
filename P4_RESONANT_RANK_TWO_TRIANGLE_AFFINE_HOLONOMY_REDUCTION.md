@@ -25,8 +25,11 @@ The one-kernel-zero otherwise-distinct chart is excluded separately.  The
 projective partner sheets over the generic center are also classified and
 excluded from the rank-three triangle in
 [`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
-The remaining Borel collision strata remain, as do other exceptional
-graphs and lower pair-rank strata.
+The full-support collision strata are now classified and excluded from the
+rank-three triangle in
+[`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
+Smaller kernel supports remain, as do other exceptional graphs and lower
+pair-rank strata.
 The global Krenn--Gu problem is unresolved.
 
 ## Multiplicative resonance
@@ -299,8 +302,10 @@ Borel-generic chart and an otherwise-distinct one-kernel-zero chart:
 The projective partner sheets over the full-support, distinct-ratio center
 have since been classified and excluded from the rank-three triangle:
 [`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
-The remaining Borel collision and smaller-support strata are the exact flat
-frontier.  A previous full-`GL_2` collision
+The full-support Borel collision strata are now excluded as well:
+[`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
+The smaller-support strata are the exact flat frontier.  A previous
+full-`GL_2` collision
 classification was withdrawn because it moved the fixed kernel line.
 
 ## Verification

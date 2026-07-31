@@ -28,8 +28,10 @@ moved the fixed kernel line:
 The projective partner sheets over this same center have since been
 classified and excluded from the all-rank-three-relation triangle in
 [`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
-Collisions among the affine ratios and smaller kernel supports remain.
-Thus this is a generic theorem, not
+The full-support affine-ratio collisions have also since been classified
+and excluded from the rank-three triangle in
+[`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
+Smaller kernel supports remain.  Thus this is a generic theorem, not
 a complete triangle classification, component-exhaustiveness proof,
 or global solution of the Krenn--Gu conjecture.
 
@@ -182,11 +184,11 @@ partner chart is empty.
 
 ## Correct frontier
 
-After the companion projective-sheet theorem, the remaining flat triangle
-is confined to the union of:
+After the companion projective-sheet and full-support collision theorems,
+the remaining flat triangle is confined to the union of:
 
-1. a collision among the four affine ratios in (3);
-2. a zero coordinate of a kernel row; or
+1. a zero coordinate of a kernel row;
+2. ratio collisions on those smaller supports; or
 3. intersections of these divisors.
 
 The one-kernel-zero otherwise-distinct chart is already empty by the

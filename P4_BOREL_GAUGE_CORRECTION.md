@@ -70,5 +70,9 @@ The projective partner sheets over that center are now classified as three
 additive-parallelogram pure curves, all lying on the lower-pair-rank seam,
 plus an empty double-infinity sheet:
 [`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
-The remaining affine-ratio/kernel-support collisions are the honest
-unresolved boundary.
+The full-support affine-ratio collisions are now classified too: the
+`2+1+1` and `3+1` active cubes vanish, while all four pure `2+2` seams have
+a rank-two partner pair:
+[`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
+The remaining smaller-kernel-support collisions are the honest unresolved
+boundary.
