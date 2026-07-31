@@ -1056,10 +1056,16 @@ monomial `X_0X_1`.  Its singular completion branch consists of reflections
 `P+s,P-s`; squarefreeness forces `s` onto one coordinate axis.
 
 That axis statement moves the problem from a factorization scheme to a
-coordinate three-space.  The squarefree Frobenius algebra then splits as a
-three-variable algebra tensor a dual-number factor, and every four-mode
-coefficient separates into the missing-coordinate functional times a
-ternary permanent coefficient.  Hence a pure survivor is precisely an
-embedded pure-`P3` suspension.  This closes the double-support-one boundary
-conceptually; mixed support-one/support-two edges and genuinely lower pair
-ranks remain.
+coordinate three-space.  The mixed support-one/support-two case has the same
+outcome.  Overlapping supports return to the one-edge factorization; disjoint
+supports produce a two-edge star.  The vanishing edges to the fourth
+coordinate impose a rank-one proportionality on the two factor rows, whose
+Plucker-like internal edge identity contradicts the star coefficients.
+Thus the star factors also remain in a coordinate three-space.
+
+The squarefree Frobenius algebra then splits as a three-variable algebra
+tensor a dual-number factor, and every four-mode coefficient separates into
+the missing-coordinate functional times a ternary permanent coefficient.
+Hence a pure survivor is precisely an embedded pure-`P3` suspension.  This
+closes the entire support-one boundary conceptually; only genuinely lower
+pair-image ranks remain there.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify the double-support-one (2,1,1) triangle reduction."""
+"""Verify the complete support-one (2,1,1) triangle reduction."""
 
 from __future__ import annotations
 
@@ -73,6 +73,23 @@ def main() -> None:
         [2 * lam * p0 * p1, 0, 0, 0, 0, -2 * lam * s2 * s3]
     )
 
+    # If a two-edge star X0(X1-X2) had both X3 coefficients nonzero,
+    # vanishing of the three X3 edges would force q_i=-k*p_i for i<3.
+    # The remaining three edge coefficients then obey an identity that the
+    # target star violates.
+    k = sp.symbols("k", nonzero=True)
+    star_p = (p0, p1, s2, s3)
+    star_q = (-k * p0, -k * p1, -k * s2, k * s3)
+    star_coefficients = product(star_p, star_q)
+    assert all(star_coefficients[index] == 0 for index in (2, 4, 5))
+    e01, e02, e12 = (
+        star_coefficients[0],
+        star_coefficients[1],
+        star_coefficients[3],
+    )
+    assert sp.expand(e01 * e02 + 2 * k * p0**2 * e12) == 0
+    assert sp.expand((1 * -1 + 2 * k * p0**2 * 0)) != 0
+
     # Common-factor YY and XX leaves have coincident planes and pair rank <=2.
     z0, z1, z2, z3, r = sp.symbols("z0 z1 z2 z3 r")
     z = (z0, z1, z2, z3)
@@ -100,6 +117,19 @@ def main() -> None:
     ]
     assert triangle_ranks == [3, 3, 3]
 
+    # A disjoint mixed support-one/support-two survivor stays in the same
+    # coordinate three-space and has the intended rank-three triangle.
+    mixed_p = (1, 1, 2, 0)
+    mixed_q = (sp.Rational(1, 4), sp.Rational(3, 4), sp.Rational(-3, 2), 0)
+    mixed_target = product(e0, (0, 1, -1, 0))
+    assert product(mixed_p, mixed_q) == mixed_target
+    mixed_triangle = ((mixed_p, e0), ((0, 1, -1, 0), mixed_q), (e0, (0, 1, 1, 0)))
+    mixed_triangle_ranks = [
+        pair_matrix(mixed_triangle[i], mixed_triangle[j]).rank()
+        for i, j in itertools.combinations(range(3), 2)
+    ]
+    assert mixed_triangle_ranks == [3, 3, 3]
+
     # Kunneth factorization: triangle rows have no X3 coordinate, so mode 0
     # must use X3 in every four-by-four permanent.
     a0, a1, a2, a3, b0, b1, b2, b3 = sp.symbols("a0:4 b0:4")
@@ -115,10 +145,12 @@ def main() -> None:
         json.dumps(
             {
                 "status": "pass",
-                "boundary": "double-support-one (2,1,1) triangles",
+                "boundary": "all support-one (2,1,1) triangles",
                 "common_factor_pair_rank_at_most": 2,
                 "crossed_reflection_factorisation": "p=P+s, q=lambda(P-s), s^2=0",
                 "crossed_sample_pair_ranks": triangle_ranks,
+                "mixed_two_edge_star_obstruction": True,
+                "mixed_sample_pair_ranks": mixed_triangle_ranks,
                 "surviving_coordinate_dimension": 3,
                 "kunneth_factorisation_all_coefficients": True,
                 "new_component": False,

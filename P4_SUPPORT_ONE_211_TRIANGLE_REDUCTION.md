@@ -1,10 +1,11 @@
-# Support-one `(2,1,1)` triangles are lower-rank or embedded `P_3`
+# Any support-one `(2,1,1)` triangle is lower-rank or embedded `P_3`
 
 ## Status
 
 **Exact symbolic boundary classification over `C`.**  Consider a
 rank-three exceptional triangle with relation-rank pattern `(2,1,1)`.  If
-both coefficient-rank-one relations are support-one zero products, then:
+at least one coefficient-rank-one relation is a support-one zero product,
+then:
 
 1. every common-factor Borel orientation makes one triangle pair image have
    rank at most two;
@@ -13,9 +14,9 @@ both coefficient-rank-one relations are support-one zero products, then:
    `P_4` restriction in the latter case is an embedded pure-`P_3`
    suspension.
 
-Thus the double-support-one boundary produces no new pure-`P_4` component.
-Mixed support-one/support-two pairs, lower pair-image-rank configurations,
-component exhaustiveness, and the global Krenn--Gu conjecture remain open.
+Thus the entire support-one boundary produces no new pure-`P_4` component.
+Lower pair-image-rank configurations, component exhaustiveness, and the
+global Krenn--Gu conjecture remain open.
 
 ## A support-one zero product is rigid
 
@@ -126,19 +127,74 @@ source permutation, all three triangle planes lie in
 H=span(X_0,X_1,X_2).                               (11)
 ```
 
+## One support-one edge and one support-two edge
+
+A common-factor orientation is impossible in the genuine mixed case: the
+shared row would have to be both a singleton-support factor and a factor of
+an exact support-two zero product.  Hence only the crossed orientation
+remains.  Normalize the singleton edge to
+
+```text
+x_1=y_3=X_0.                                      (12)
+```
+
+Write the other zero product as `y_2*x_3=0`, with exact support two.
+If its support contains `0`, a coordinate change inside that support gives
+
+```text
+y_2=X_0-X_1,       x_3=X_0+X_1.                   (13)
+```
+
+The synchronizing rank-two relation is then
+
+```text
+y_1*x_2=x_1*y_2=-X_0X_1,                          (14)
+```
+
+which is exactly the one-edge factorization (6), up to sign.  The preceding
+rigid/reflected dichotomy again puts every rank-three survivor in a
+coordinate three-space.
+
+If the two supports are disjoint, normalize instead to
+
+```text
+y_2=X_1-X_2,       x_3=X_1+X_2,
+y_1*x_2=X_0(X_1-X_2).                              (15)
+```
+
+This two-edge star cannot acquire the remaining coordinate.  Indeed, write
+`p=y_1`, `q=x_2`.  Vanishing of the `03`, `13`, and `23` coefficients first
+shows that if exactly one of `p_3,q_3` is nonzero, the other factor is
+supported only on `X_3`, contrary to (15).  If both are nonzero, there is a
+nonzero `k` such that
+
+```text
+q_i=-k p_i  (i=0,1,2),       q_3=k p_3.            (16)
+```
+
+The three internal edge coefficients `E_01,E_02,E_12` consequently satisfy
+
+```text
+E_01 E_02 + 2k p_0^2 E_12=0.                       (17)
+```
+
+The target in (15) has `(E_01,E_02,E_12)=(1,-1,0)`, contradicting
+(17).  Thus `p_3=q_3=0`, and all three triangle planes already lie in
+`span(X_0,X_1,X_2)`.
+
 ## Frobenius--Kunneth turns the survivor into embedded `P_3`
 
 The squarefree algebra splits as
 
 ```text
-R=R_H tensor C[X_3]/(X_3^2).                       (12)
+R=R_H tensor C[X_3]/(X_3^2).                       (18)
 ```
 
 Every triple product of rows from the three triangle planes lies in the
 one-dimensional top degree
 
 ```text
-(R_H)_3=C X_0X_1X_2.                               (13)
+(R_H)_3=C X_0X_1X_2.                               (19)
 ```
 
 If `w` is a row of the opposite plane `U_0`, Frobenius pairing with such a
@@ -147,10 +203,10 @@ four-mode restricted tensor factors as
 
 ```text
 (X_3-coordinate on U_0) tensor
-(the restricted P_3 tensor on U_1,U_2,U_3).        (14)
+(the restricted P_3 tensor on U_1,U_2,U_3).        (20)
 ```
 
-If (14) is nonzero and pure, its ternary factor is a nonzero pure `P_3`
+If (20) is nonzero and pure, its ternary factor is a nonzero pure `P_3`
 restriction.  This is exactly the embedded-`P_3` suspension component from
 [`P4_EMBEDDED_P3_PURE_COMPONENT.md`](P4_EMBEDDED_P3_PURE_COMPONENT.md), not
 a new component.
@@ -160,15 +216,16 @@ a new component.
 The boundary has three equivalent descriptions:
 
 ```text
-monomial factorization:   p*q is one edge X_0X_1,
+monomial factorization:   p*q is one edge or a two-edge star,
 rank-two completion:      Delta separates rigid and reflected factors,
 Kunneth decomposition:    a coordinate 3-space suspends a P_3 tensor.
 ```
 
-The key point is that `s^2=0` in a two-variable squarefree block is the union
-of its two coordinate axes.  A potentially complicated factorization scheme
-therefore becomes a coordinate-hyperplane statement, where Frobenius duality
-finishes the graph classification.
+The key points are that `s^2=0` in a two-variable squarefree block is the
+union of its two coordinate axes, while a two-edge star has no factorization
+that leaks into a fourth coordinate.  A potentially complicated
+factorization scheme therefore becomes a coordinate-hyperplane statement,
+where Frobenius duality finishes the graph classification.
 
 ## Verification
 
@@ -179,8 +236,9 @@ uv run --with sympy python verify_p4_support_one_211_triangle_reduction.py
 python audit_p4_support_one_211_triangle_reduction.py
 ```
 
-The primary verifier checks the factorization dichotomy, all common-factor
-rank bounds, the generic reflected pair ranks, and the Kunneth factorization
-of all sixteen tensor coefficients.  The independent audit permutes the
-source coordinates and uses exact rational representatives of the rigid and
-reflected branches.  Neither performs a search.
+The primary verifier checks the one-edge factorization dichotomy, the
+two-edge-star obstruction, all common-factor rank bounds, the generic
+rank-three representatives, and the Kunneth factorization of all sixteen
+tensor coefficients.  The independent audit permutes the source coordinates
+and uses exact rational representatives of both surviving crossed branches.
+Neither performs a search.

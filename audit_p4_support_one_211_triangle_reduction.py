@@ -65,6 +65,23 @@ def main() -> None:
     ]
     assert pair_ranks == [3, 3, 3]
 
+    mixed_p = tuple(map(Fraction, (1, 1, 2, 0)))
+    mixed_q = (
+        Fraction(1, 4),
+        Fraction(3, 4),
+        Fraction(-3, 2),
+        Fraction(0),
+    )
+    mixed_y2 = tuple(map(Fraction, (0, 1, -1, 0)))
+    mixed_x3 = tuple(map(Fraction, (0, 1, 1, 0)))
+    assert product(mixed_p, mixed_q) == product(e0, mixed_y2)
+    mixed_triangle = ((mixed_p, e0), (mixed_y2, mixed_q), (e0, mixed_x3))
+    mixed_pair_ranks = [
+        pair_rank(mixed_triangle[i], mixed_triangle[j])
+        for i, j in itertools.combinations(range(3), 2)
+    ]
+    assert mixed_pair_ranks == [3, 3, 3]
+
     common_yy = ((e0, (Fraction(1), Fraction(2), Fraction(3), Fraction(4))),
                  (e0, (Fraction(3), Fraction(2), Fraction(3), Fraction(4))))
     assert pair_rank(*common_yy) <= 2
@@ -84,6 +101,7 @@ def main() -> None:
                 "status": "pass",
                 "audit": "source-permuted exact rational reflection branch",
                 "reflected_pair_ranks": pair_ranks,
+                "mixed_two_edge_star_pair_ranks": mixed_pair_ranks,
                 "common_factor_pair_rank_at_most": 2,
                 "triangle_coordinate_support": sorted(used_coordinates),
                 "embedded_P3": True,

@@ -13229,7 +13229,7 @@ verify_p5_h22_eisenstein_norm_component_generic_obstruction.py
 audit_p5_h22_eisenstein_norm_component_generic_obstruction.py
 ```
 
-### Double-support-one triangles are lower-rank or embedded `P3`
+### Any support-one triangle is lower-rank or embedded `P3`
 
 For a coordinate zero divisor `e=Xi`, `Ann_R1(e)=C*e`.  If two rank-one
 edges share a common-mode factor and both are support-one, all three factors
@@ -13261,6 +13261,31 @@ triangle planes in a coordinate three-space `H`.  Since
 factor as the missing-coordinate functional on `U0` times the restricted
 ternary tensor.  A nonzero pure survivor is therefore in the embedded-`P3`
 component.
+
+The same conclusion holds when only one rank-one edge is support-one.  A
+genuine mixed support-one/support-two pair cannot have a common factor, so
+only the crossed orientation remains.  If the two supports overlap, its
+synchronization is again a factorization of one edge monomial.  If they are
+disjoint, normalize it to
+
+```text
+y1*x2=X0*(X1-X2).
+```
+
+Vanishing of the three edges incident with `X3` shows that a factorization
+using `X3` in both factors would have `q_i=-k*p_i` for `i<3`.  Its internal
+edge coefficients would then satisfy
+
+```text
+E01*E02+2*k*p0^2*E12=0,
+```
+
+whereas the target has `(E01,E02,E12)=(1,-1,0)`.  If exactly one factor used
+`X3`, the other would be supported only there, which is equally impossible.
+Thus both factors lie in `span(X0,X1,X2)`, and the same Frobenius--Kunneth
+argument identifies every pure survivor with the embedded-`P3` component.
+The support-one boundary is complete; genuinely lower pair-image ranks are
+the remaining triangle frontier.
 
 Primary theorem and verifiers:
 
