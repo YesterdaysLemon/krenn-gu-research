@@ -503,8 +503,17 @@ strictly advance the finite frontier:
   two mode-zero minors factor as `A*B` times coprime binary linear forms.
   Thus every genuine binary neighbour has marked rank four.  All seventeen
   known pure-`P4` components are now generically closed for `H31`, while
-  component fifteen's weighted `H22` fibre remains open:
+  the weighted `H22` side is closed in the next theorem:
   [`P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
+- component fifteen's complete generic weighted `H22` fibre is empty too.
+  Retaining the finite weight in the Fitting projection leaves the same
+  single marking section.  Away from the two isotropic weights, three
+  marked minors reduce after `A*B` to `x*F(u)`, `rho*x+F(u)*y`, and `y`,
+  which cover the whole extension `P^1`; the isotropic weights have unit
+  binary ideals, and weight infinity is the preceding `H31` deletion.
+  Consequently all seventeen known pure-`P4` components are now generically
+  closed for both `H31` and `H22`:
+  [`P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
 - the overlapping `1+3` secant center creates no sixteenth component.  Its
   two cross-product catalecticants are rank-two stars whose radical planes
   meet in one line.  In an adapted basis, opposite-plane purity has

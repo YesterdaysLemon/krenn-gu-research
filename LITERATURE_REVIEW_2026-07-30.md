@@ -72,9 +72,7 @@ external mathematical review, the strongest additional claims are:
 - exact exclusions of normalized `q5_311`, `q5_221`, and `q4_211`;
 - at least seventeen inequivalent components of the pure rank-two
   `P_4`-compression variety.  Every one of the seventeen is now generically
-  closed for marked `H31`.  Components one through fourteen and sixteen
-  through seventeen are also generically closed for weighted `H22`; that
-  fibre remains open on the disjoint-secant component fifteen.  The
+  closed for both marked `H31` and weighted `H22`.  The
   complete lower-pair locus is now exhausted by
   four known component closures, while exhaustiveness on the all-pair-ranks-
   at-least-three locus remains open.  The following chronological ledger
@@ -1293,8 +1291,16 @@ two binary diagonal factors.  In commutative-algebra language, the open
 Fitting support is a reduced section and the marked-rank degeneracy divisor
 has no residual point on its `P^1` fibre.
 
-This closes generic marked `H31` on all seventeen currently known pure-`P4`
-components.  It does not make the component list exhaustive, and it does not
-specialize automatically to the parameter-boundary fibres.  The remaining
-generic known-component question is the weighted `H22` fibre of component
-fifteen.
+The weighted continuation closes component fifteen as well:
+[`P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
+Retaining the weight `u` in the elimination target proves that the finite
+Fitting support is the same constant marking section, with no vertical slope
+component.  Over its extension `P^1`, three marked minors reduce to the
+projective cover `xF(u), rho*x+F(u)y, y`.  This is a small Hilbert--Burch-
+style syzygy certificate: the possible rank-drop divisor cannot contain a
+projective point.  The two isotropic weights have empty binary incidence,
+and the infinite weight is the preceding `H31` deletion.
+
+Thus generic `H31/H22` is now closed on all seventeen currently known pure-
+`P4` components.  This does not make the component list exhaustive, and it
+does not specialize automatically to the parameter-boundary fibres.

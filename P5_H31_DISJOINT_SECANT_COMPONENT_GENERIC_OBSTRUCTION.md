@@ -7,9 +7,10 @@
 
 The proof quotients the six-parameter component by the diagonal source
 torus, computes all four open Fitting images, and reduces every surviving
-extension family to two coprime binary minors.  The weighted `H22` fibre,
-special parameter/projective boundaries, pure-`P_4` component
-exhaustiveness, and the global Krenn--Gu conjecture remain open.
+extension family to two coprime binary minors.  The weighted `H22` fibre is
+closed in the subsequent theorem.  Special parameter/projective boundaries,
+pure-`P_4` component exhaustiveness, and the global Krenn--Gu conjecture
+remain open.
 
 ## Three moduli, not six
 
@@ -128,10 +129,11 @@ generic H31 fibre(component 15)=empty.              (9)
 ```
 
 All seventeen presently known pure-`P_4` component orbits are now
-generically excluded for `H31`.  Component fifteen's weighted `H22` fibre is
-still open, as are special parameter boundaries and the possibility of
-additional pure-`P_4` components away from the completely classified
-lower-pair locus.  This is therefore not a global proof of the conjecture.
+generically excluded for `H31`.  The subsequent weighted theorem closes
+component fifteen's `H22` fibre as well.  Special parameter boundaries and
+the possibility of additional pure-`P_4` components away from the completely
+classified lower-pair locus remain.  This is therefore not a global proof
+of the conjecture.
 
 ## Exact replay
 
