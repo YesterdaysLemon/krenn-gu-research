@@ -404,4 +404,15 @@ audit_p5_h31_embedded_p3_component_r_zero_boundary.py
 ```
 
 Consequently the whole affine family (3), where `B!=0`, is empty for
-`H31`.  Only the component's projective compactification remains.
+`H31`.  The projective compactification is now closed intrinsically
+as well: its homogeneous sign-rectangle base is `[C:A:B]`; support-one
+points have zero pure restriction, and every other point enters a
+`C'B'!=0` affine chart by source symmetry:
+
+```text
+P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md
+verify_p5_h31_embedded_p3_component_projective_closure.py
+audit_p5_h31_embedded_p3_component_projective_closure.py
+```
+
+Thus this component's complete marked `H31` fibre is empty.

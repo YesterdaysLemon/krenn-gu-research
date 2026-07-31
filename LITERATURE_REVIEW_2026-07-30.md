@@ -349,5 +349,17 @@ planes have a single nongenuine kernel until a `6 x 5` Fitting
 presentation drops rank; its maximal minors split into only nine
 families.  The residual sheet has a three-minor cover, and its five
 singular base points leave nine sparse families.  Thus the whole
-affine `B!=0` ninth-component chart is now empty for `H31`; only the
-projective compactification remains.
+affine `B!=0` ninth-component chart is now empty for `H31`.
+
+Finally, the apparent projective boundary disappears after using the
+correct compactification:
+[`P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md).
+The absolute sign-rectangle normal is a point `[C:A:B] in P^2`.
+Support-one points are zero restrictions.  Every support-two or
+support-three point has two nonzero coordinates, which source symmetry
+moves into the already closed chart `C'B'!=0`.  This is the
+oriented-matroid/toric support viewpoint anticipated by the
+second-hypersimplex dictionary
+([Herrmann--Joswig](https://arxiv.org/abs/0804.2897)): glue Pluecker
+charts by support, not by taking limits of inverse pivot variables.
+Consequently the ninth component is now closed in full for `H31`.

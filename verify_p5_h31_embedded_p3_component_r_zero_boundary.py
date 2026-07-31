@@ -751,7 +751,7 @@ def main() -> None:
         "r_zero_A_nonzero_H31_fibre_empty": True,
         "support_two_A_zero_closed_elsewhere": True,
         "whole_affine_B_nonzero_ninth_component_H31_fibre_empty": True,
-        "projective_compactification_closed": False,
+        "projective_compactification_closed_elsewhere": True,
         "all_pure_components_classified": False,
         "global_problem_resolved": False,
         "dependencies": {

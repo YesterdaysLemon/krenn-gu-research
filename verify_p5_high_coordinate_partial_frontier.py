@@ -51,6 +51,8 @@ DEPENDENCIES = (
     ROOT
     / "P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md",
     ROOT
+    / "P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md",
+    ROOT
     / "P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md",
     ROOT
     / "P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md",
@@ -319,13 +321,13 @@ def main() -> None:
                 "embedded_P3_component_exists": True,
                 "embedded_P3_component_pair_profile": [4, 4, 4, 2, 2, 2],
                 "embedded_P3_component_generic_marked_fibre_excluded": True,
-                "embedded_P3_component_complete_marked_fibre_excluded": False,
+                "embedded_P3_component_complete_marked_fibre_excluded": True,
                 "embedded_P3_component_normalized_chart_marked_fibre_excluded": True,
                 "embedded_P3_component_nine_insertion_points_closed": True,
                 "embedded_P3_component_support_two_A_zero_boundary_H31_excluded": True,
                 "embedded_P3_component_r_zero_A_nonzero_boundary_H31_excluded": True,
                 "embedded_P3_component_complete_affine_B_nonzero_H31_excluded": True,
-                "embedded_P3_component_projective_compactification_H31_excluded": False,
+                "embedded_P3_component_projective_compactification_H31_excluded": True,
                 "seven_previously_known_components_generic_marked_fibres_excluded": True,
                 "all_eight_known_components_generic_marked_fibres_excluded": True,
                 "all_nine_known_components_generic_marked_fibres_excluded": True,

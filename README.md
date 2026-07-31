@@ -882,7 +882,11 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   closed too: its insertion determinant is three signed planes times
   one tangent--Segre factor, and exact one-marked covers close every
   Fitting stratum.  Thus the ninth orbit's whole affine `B!=0` chart
-  is empty for `H31`; only its projective compactification remains.
+  is empty for `H31`.  Its projective compactification is now closed
+  too: homogeneous normal support `[C:A:B]` either has support one,
+  giving the zero restriction, or enters a closed `C'B'!=0` affine
+  chart by source symmetry.  Hence the ninth component's complete
+  marked `H31` fibre is empty.
   Other component boundaries, slope boundaries, and component exhaustiveness stay open,
   although the eighth component's full equal- and opposite-weight
   slope fibres are now excluded already at the binary level, twelve

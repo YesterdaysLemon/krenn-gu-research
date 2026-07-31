@@ -1143,8 +1143,15 @@ one-marked covers:
 
 - [`P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md)
 
-Thus only the component's projective compactification, as well as
-exhaustiveness of the new component list, remains open.  The earlier modular pattern and
+The apparent projective compactification is now closed too.  Write the
+homogeneous absolute normal as `[C:A:B]`.  Support-one points give the
+zero pure restriction; every support-two or support-three point can
+be source-permuted into a closed chart with `C'B'!=0`:
+
+- [`P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md)
+
+Thus the ninth component is closed in full for `H31`; exhaustiveness
+of the new component list remains open.  The earlier modular pattern and
 timed-out broad route remain as provenance:
 
 - [`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md)

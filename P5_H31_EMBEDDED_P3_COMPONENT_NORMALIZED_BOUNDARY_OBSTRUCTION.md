@@ -314,7 +314,9 @@ were the remaining frontier at that checkpoint.  The `r=0`, `A B!=0`
 divisor is now closed in
 [`P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md).
 Together with the support-two theorem, this closes the whole affine
-`B!=0` family; only its projective compactification remains.
+`B!=0` family.  Its projective compactification is now closed in
+[`P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md),
+so the complete component fibre is empty.
 The exact binary boundary classification is reusable for weighted
 `H22`, where the slope-dependent projected line can meet the same
 nine insertion points.

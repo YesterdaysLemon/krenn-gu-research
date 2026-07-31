@@ -11508,5 +11508,52 @@ covered by `a,a+1` or `b,b+1`.
 Thus the complete `r=0`, `A B!=0` marked fibre is empty.  Together
 with the normalized theorem and the support-two `A=0` theorem, the
 whole affine ninth-component family `B!=0` is empty for `H31`.
-Only the projective compactification remains for this component;
-component exhaustiveness and the global conjecture remain open.
+At that checkpoint only the projective compactification remained for
+this component; component exhaustiveness and the global conjecture
+remained open.
+
+### Projective normal support closes the ninth component
+
+The final compactification is now closed in
+
+```text
+P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md
+verify_p5_h31_embedded_p3_component_projective_closure.py
+audit_p5_h31_embedded_p3_component_projective_closure.py
+```
+
+The intrinsic base is not the inverse-pivot coordinate `B`; it is the
+homogeneous absolute normal
+
+```text
+[C:A:B] in P2
+```
+
+with oriented sign-face normals
+
+```text
+(C,A,B),      (C,-A,-B),      (C,-A,B).
+```
+
+On `C!=0`, the only nonzero pure-`P_3` coefficients are
+
+```text
+2 A C^2,       -2 B C^2.
+```
+
+If the homogeneous normal has support one, all three projective
+normals coincide and the pure `P_3`, hence embedded `P_4`,
+restriction is zero.  Such a point cannot be the nonzero pure root
+contraction required by `Delta_3`.
+
+Every point of support at least two has two nonzero normal
+coordinates.  A source-coordinate permutation moves them to the
+common slot `C'` and sign slot `B'`; after projective rescaling,
+`C'=1,B'!=0`.  Signed source changes and a last-three-mode permutation
+restore the canonical oriented face.  Thus every nonzero projective
+point lies in a symmetry copy of the affine chart already closed.
+
+Therefore the ninth pure-`P_4` component's complete marked `H31`
+fibre is empty.  This is a full component theorem, but not a proof
+that the nine known pure components are exhaustive and not a global
+solution of the Krenn--Gu problem.

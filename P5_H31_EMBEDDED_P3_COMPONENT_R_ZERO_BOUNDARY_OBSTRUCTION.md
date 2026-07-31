@@ -13,8 +13,9 @@ of the embedded-`P_3` ninth pure-`P_4` component.
 The complete marked `H31` fibre is empty on this divisor.  Together
 with the normalized-chart theorem and the support-two `A=0` theorem,
 this closes the whole six-parameter affine component family with
-`B!=0` for `H31`.  Only the projective compactification outside that
-family chart remains for this component.
+`B!=0` for `H31`.  The projective compactification outside that
+family chart has since been closed by homogeneous normal support:
+[`P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md).
 
 The proof is symbolic.  The open part `t!=0` is the old normalized
 chart in a signed source-coordinate permutation.  At the genuine

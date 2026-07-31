@@ -339,6 +339,8 @@ The support-two normalization divisor `A=0`, `B!=0` is now closed too:
 The other normalization divisor `r=0`, `A B!=0` is now closed too:
 [`P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md).
 Thus the whole affine `B!=0` component family is empty for `H31`;
-only its projective compactification remains open.
+its projective compactification is closed separately in
+[`P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md).
+Hence the complete marked `H31` fibre of the ninth component is empty.
 Its generic weighted `H22` fibre is closed separately in
 [`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).

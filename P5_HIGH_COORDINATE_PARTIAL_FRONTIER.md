@@ -842,8 +842,10 @@ argument; its sole resonance has fixed third-contraction coefficient
 `4`.  The complementary `r=0`, `A B!=0` divisor is closed by signed
 source transport and a tangent--Segre Fitting stratification.  Hence
 the whole affine `B!=0` ninth-component chart is empty for `H31`.
-Exhaustiveness of those nine orbits, the ninth component's projective
-compactification, and
+The homogeneous sign-rectangle compactification is now closed by
+support: coordinate points have zero restriction and every other
+point enters the affine chart by symmetry.  Thus the ninth component
+is closed in full for `H31`.  Exhaustiveness of those nine orbits and
 the special component/slope boundary incidences in `H22` remain
 unresolved.
 
