@@ -11223,6 +11223,43 @@ Thus every possible mixed kernel kills the second binary diagonal.
 No ternary/Fitting continuation is needed.  This closes the generic
 `H31` fibre for all nine certified components.
 
-The ninth component's weighted `H22` fibre, special `H31` boundary,
-component exhaustiveness, and the global Krenn--Gu conjecture remain
-unresolved.
+The generic weighted `H22` fibre is now excluded in
+
+```text
+P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h22_embedded_p3_component_generic_obstruction.py
+audit_p5_h22_embedded_p3_component_generic_obstruction.py
+```
+
+After restoring the weighted source-torus slope `r`,
+
+```text
+D_01^r(z,e)=(r z_0+z_1,z_2,z_3,e),
+D_23^r(z,e)=(z_0,z_1,r z_2+z_3,e).
+```
+
+The `D_23` all-alpha matrix has a zero first column because every
+`alpha_i` has source-coordinate-zero entry zero.  The `D_01`
+direction is the same `P_3` insertion map as in `H31`, now over
+
+```text
+P span((1,S,U),(r,1,T)).
+```
+
+Its exact nine-point avoidance discriminant is
+
+```text
+(rS-1)(rU-T)(ST-U)
+(rS-rU+T-1)(rS+rU-T-1)
+(rS-ST+U-1)(rS+ST-U-1)
+(rU-ST-T+U)(rU+ST-T-U).
+```
+
+On its complement, the only rank-jump kernels again have all
+`x_i=0`, so the other binary diagonal vanishes.  Both `H22`
+directions therefore fail before ternary rank is imposed.
+
+All nine currently certified pure-`P_4` components now have empty
+generic marked `H31` and weighted `H22` fibres.  Their special
+boundaries, component exhaustiveness, and the global Krenn--Gu
+conjecture remain unresolved.

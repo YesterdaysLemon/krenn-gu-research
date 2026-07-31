@@ -1092,9 +1092,17 @@ generic line kernel kills the all-alpha diagonal:
 
 - [`P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md)
 
-The ninth component's weighted `H22` fibre, special `H31` boundary,
-and exhaustiveness of the new component list remain open.  The earlier
-modular pattern and timed-out broad route remain as provenance:
+Restoring the weighted source-torus slope preserves this symbolic
+reduction.  The `D_23` direction has an identically zero all-alpha
+diagonal, while `D_01` is the same insertion arrangement on a
+slope-dependent line.  Hence its generic weighted `H22` fibre is also
+empty:
+
+- [`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md)
+
+The ninth component's special marked boundaries and exhaustiveness of
+the new component list remain open.  The earlier modular pattern and
+timed-out broad route remain as provenance:
 
 - [`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md)
 

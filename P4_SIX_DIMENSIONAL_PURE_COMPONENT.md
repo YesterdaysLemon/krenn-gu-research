@@ -232,6 +232,7 @@ mixed-star theorem, and nine after the embedded-`P_3` theorem.  No
 exhaustiveness claim follows.  The generic fibres of the eight
 components known before the embedded-`P_3` theorem are excluded from
 `H31`.  The ninth component's generic marked `H31` fibre has now been
-excluded by its apolar insertion arrangement, while its weighted
-`H22` fibre is open.  Incomplete component boundaries and the
-possibility of further pure components remain to be treated.
+excluded by its apolar insertion arrangement.  The same arrangement
+now excludes its generic weighted `H22` fibre.  Incomplete component
+boundaries and the possibility of further pure components remain to
+be treated.

@@ -260,7 +260,11 @@ strictly advance the finite frontier:
   generic projected mode-zero line, every possible kernel kills the
   required all-alpha diagonal:
   [`P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
-  Its weighted `H22` fibre and special `H31` boundary remain open.
+  The generic weighted `H22` fibre is empty at binary level too:
+  `D_23^r` has a structural zero diagonal, while `D_01^r` is the same
+  insertion arrangement on a slope-dependent projective line:
+  [`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
+  Its special `H31/H22` boundaries remain open.
 - all five minimal primes in the mixed `3 x 4` determinantal chart are
   now identified.  Two are the sixth component, one is a subfamily of
   the six-dimensional component, and the remaining two are explicit
@@ -843,9 +847,11 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   every genuine binary direction.  Thus those eight orbits are
   generically closed for both `H31` and weighted `H22`.  The ninth
   orbit is now generically closed for `H31` as well, by a three-line
-  apolar insertion arrangement.  Its weighted `H22` fibre, special
-  component/slope boundaries, and component exhaustiveness remain
-  open,
+  apolar insertion arrangement.  Restoring the slope closes its
+  generic weighted `H22` fibre by the same arrangement plus one
+  structural zero diagonal.  Thus all nine known orbits are now
+  generically closed for both marked types.  Their special
+  component/slope boundaries and component exhaustiveness remain open,
   although the eighth component's full equal- and opposite-weight
   slope fibres are now excluded already at the binary level, twelve
   generic parameter/coordinate boundary branches are closed, and the

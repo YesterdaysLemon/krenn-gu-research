@@ -828,10 +828,12 @@ block boundaries.  The embedded pure-`P_3` suspension has since raised
 the component lower bound to nine.  Its generic marked `H31` fibre is
 now empty already at binary level: the source-zero extension is an
 apolar insertion map whose generic projected-line kernels all kill
-one required diagonal.  Exhaustiveness of those nine orbits, the
-ninth component's weighted `H22` incidence, its special `H31`
-boundary, and the special component/slope boundary incidences in
-`H22` remain unresolved.
+one required diagonal.  Restoring the weighted slope closes its
+generic `H22` fibre as well: one diagonal direction is structurally
+zero and the other is the same insertion arrangement on a
+slope-dependent line.  Exhaustiveness of those nine orbits, the
+ninth component's special `H31/H22` boundaries, and the special
+component/slope boundary incidences in `H22` remain unresolved.
 
 ## Verification
 

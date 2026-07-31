@@ -42,6 +42,8 @@ DEPENDENCIES = (
     ROOT / "P4_EMBEDDED_P3_PURE_COMPONENT.md",
     ROOT
     / "P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
+    ROOT
+    / "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
     ROOT / "P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md",
     ROOT / "P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md",
     ROOT / "P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md",
@@ -354,10 +356,10 @@ def main() -> None:
                 "diagonal_quadric_component_generic_weighted_incidence_empty": True,
                 "diagonal_quadric_component_projective_join_fibre_empty": True,
                 "diagonal_quadric_component_properness_transport": True,
-                "known_components_generic_weighted_H22_empty_count": 8,
+                "known_components_generic_weighted_H22_empty_count": 9,
                 "certified_pure_component_orbit_count": 9,
                 "disjoint_mixed_star_component_generic_weighted_incidence_empty": True,
-                "embedded_P3_component_generic_weighted_incidence_empty": False,
+                "embedded_P3_component_generic_weighted_incidence_empty": True,
                 "six_dimensional_component_diagonal_pencils": [
                     "x0_equals_x1",
                     "x2_equals_x3",
@@ -370,7 +372,7 @@ def main() -> None:
                 "diagonal_quadric_component_special_divisors_closed": False,
                 "seven_previously_known_components_generic_H22_incidence_empty": True,
                 "all_eight_known_components_generic_H22_incidence_empty": True,
-                "all_nine_known_components_generic_H22_incidence_empty": False,
+                "all_nine_known_components_generic_H22_incidence_empty": True,
                 "all_H22_excluded": False,
                 "source_contractions": [
                     "P4_to_pure_or_Delta2",

@@ -28,10 +28,13 @@ at least nine symmetry-inequivalent pure-P_4 components.             (2)
 The theorem is at the pure-`P_4` plane level.  A later apolar
 insertion theorem excludes its generic marked `H31` fibre:
 [`P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
+The same insertion arrangement, after restoring the source-torus
+slope, excludes its generic weighted `H22` fibre:
+[`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
 The component theorem itself does not classify the full
-pure-compression locus, analyze the weighted `H22` fibre or special
-`H31` boundary, produce a graph satisfying the Krenn--Gu prize
-conditions, or prove the global conjecture.
+pure-compression locus, analyze the special `H31/H22` boundaries,
+produce a graph satisfying the Krenn--Gu prize conditions, or prove
+the global conjecture.
 
 ## The symbolic family
 
@@ -320,4 +323,16 @@ all-alpha diagonal:
 P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md
 verify_p5_h31_embedded_p3_component_generic_obstruction.py
 audit_p5_h31_embedded_p3_component_generic_obstruction.py
+```
+
+The generic weighted `H22` fibre is empty at binary level as well.
+One weighted direction retains source coordinate zero and therefore
+has an identically zero all-alpha diagonal.  The other is the same
+insertion arrangement on the slope-dependent projected mode-zero
+line:
+
+```text
+P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h22_embedded_p3_component_generic_obstruction.py
+audit_p5_h22_embedded_p3_component_generic_obstruction.py
 ```

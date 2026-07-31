@@ -10,7 +10,10 @@ The complete weighted `H22` incidence over the generic point of that
 component is empty.  Thus all eight pure-component orbits certified at
 that checkpoint have empty generic marked `H31` and weighted `H22`
 fibres.  The later embedded-`P_3` ninth component is not covered by
-this theorem.
+this theorem, but its generic fibres have since been excluded by their
+own apolar insertion theorems:
+[`P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md),
+[`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
 The special equal- and opposite-weight slopes have since been closed
 by a stronger binary obstruction:
 [`P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md).
@@ -253,10 +256,10 @@ map tuple, support catalogue, or graph is enumerated.
 
 All eight component orbits known at this theorem checkpoint are
 generically closed for both `H31` and weighted `H22`.  A ninth,
-embedded-`P_3` component has since been certified and its marked
-fibres are open.  The next geometric tasks are:
+embedded-`P_3` component has since been certified and its generic
+marked fibres are now closed as well.  The next geometric tasks are:
 
-1. classify the ninth component's generic marked fibres;
+1. classify the ninth component's special marked boundaries;
 2. extract the remaining hidden certificate denominators and classify
    their parameter/slope/projective boundaries;
 3. finish the exceptional mixed-star/triangle and lower-pair-rank

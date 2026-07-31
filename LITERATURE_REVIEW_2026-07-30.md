@@ -264,3 +264,15 @@ arrangements and syzygies
 is imported as a black box; together they suggest the successful
 order of operations: find the Fitting support and its kernel sheaf
 before eliminating marking variables.
+
+The weighted `H22` fibre needs no new elimination:
+[`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
+One weighted diagonal map preserves the suspended coordinate and hence
+has an identically zero all-alpha coefficient.  The other merely
+moves the projected mode-zero line from
+`P span((1,S,U),(0,1,T))` to
+`P span((1,S,U),(r,1,T))`.  Its intersection with the same
+arrangement is controlled by nine point-line determinants.  Thus the
+kernel-sheaf calculation closes both generic marked types on the
+ninth component and raises the generic `H31/H22` closure count from
+eight to all nine currently known component orbits.
