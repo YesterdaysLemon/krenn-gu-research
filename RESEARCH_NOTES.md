@@ -11969,3 +11969,38 @@ Consequently an all-pair-rank-at-least-three missing component cannot
 be supported by a star or generic triangle whose selected relations
 are all rank two.  The remaining compatibility problem is genuinely
 mixed rank one/rank two.
+
+### Two rank-two triangle edges cannot mix with one rank-one edge
+
+The first genuinely mixed pattern is closed in
+
+```text
+P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md
+verify_p4_mixed_two_rank_two_triangle_obstruction.py
+audit_p4_mixed_two_rank_two_triangle_obstruction.py
+```
+
+Gauge the two rank-two edges, which share a vertex, into a
+synchronization `V`.  For a generic four-point center the two leaves
+lie on the same totally synchronized adjugate pencil.  The
+`2+1+1` collision synchronizer is totally synchronized too.  Thus the
+leaf-leaf edge already has a rank-two relation, contradicting its
+assumed unique rank-one relation.  Zero and `1+3` centers force the
+previous embedded-`P3` or pair-rank collapses.
+
+At a balanced `2+2` center, the leaves have rows
+
+```text
+y_i=a+beta_i*b_bar,
+x_i=b+alpha_i*a_bar.
+```
+
+A rank-one leaf-leaf relation must factor through one pure kernel
+row.  If `beta_i!=0`, that kernel has support four and zero
+degree-one annihilator.  If `beta_i=0`, its annihilator is the line
+`C*a_bar`, but the other synchronized leaf plane never contains
+`a_bar`.  Both orientations are impossible.
+
+Therefore the relation-rank pattern `(2,2,1)` cannot occur on an
+exceptional rank-three triangle.  Any remaining generic mixed
+selection has at most one rank-two edge.

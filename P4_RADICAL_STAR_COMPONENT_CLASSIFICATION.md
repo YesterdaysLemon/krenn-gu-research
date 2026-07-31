@@ -231,8 +231,8 @@ plane tuple.”  Its unresolved generic alternatives are:
 1. rank-one exceptional relations whose kernel endpoint orientations
    are mixed, including the known triangle component and orientations
    outside the now-certified disjoint-support chart;
-2. configurations with mixed rank-one/rank-two exceptional
-   relations.  Each
+2. configurations with at most one selected rank-two exceptional
+   relation and otherwise rank-one relations.  Each
    individual exact rank-two pair is now reduced, without elimination,
    to a secant `2+2`/`1+3` block center or a coincident-plane tangent
    through a coordinate line in
@@ -240,6 +240,9 @@ plane tuple.”  Its unresolved generic alternatives are:
    compatibility with rank-one edges remains open.  The pure
    rank-two-relation star is now empty:
    [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md).
+   A triangle with two rank-two relations and one rank-one relation
+   is empty as well:
+   [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md).
    The triangle where all three pair images have rank three and all
    three relation matrices have rank two has an intrinsic holonomy.
    Away from its resonant divisor it reduces to

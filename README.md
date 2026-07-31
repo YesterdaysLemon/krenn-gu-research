@@ -208,6 +208,15 @@ strictly advance the finite frontier:
   component must use a rank-one relation or a genuinely mixed
   rank-one/rank-two selection:
   [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md).
+- a rank-three exceptional triangle cannot have relation-rank pattern
+  `(2,2,1)`.  Gauge the two rank-two edges into a synchronization
+  `V`.  Generic and `2+1+1` centers automatically synchronize the
+  leaves with each other, contradicting the rank-one third relation.
+  The balanced `2+2` center reduces the issue to the degree-one
+  annihilator of a leaf kernel: it is either zero or the line
+  `C*a_bar`, and the other leaf never contains that line.  Thus a
+  remaining generic mixed triangle has at most one rank-two edge:
+  [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md).
 - a mixed zero-product orientation produces a sixth
   symmetry-inequivalent component.  The normalized rank-two
   contraction condition is a `3 x 4` determinantal problem whose

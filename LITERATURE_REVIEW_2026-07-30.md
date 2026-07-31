@@ -476,3 +476,17 @@ pencil organization developed by
 On the balanced collision, even that language collapses to one
 intersection-number calculation: the forbidden coefficient is
 `a^2b^2=4`.
+
+The next mixed triangle is controlled not by another pencil
+classification but by the annihilator of a linear form in the
+squarefree complete intersection:
+[`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md).
+Two rank-two edges again create a synchronization pencil.  On the
+only nonautomatic `2+2` collision, a full-support kernel row has zero
+linear annihilator, while a two-supported row has one annihilator
+line that misses the other leaf plane.  This is the smallest-degree
+shadow of the Lefschetz behavior of characteristic-zero monomial
+complete intersections; for the broader theorem see
+[Phuong--Tran](https://arxiv.org/abs/2211.13548).  Here the exact
+support-sensitive statement is elementary and stronger for the local
+incidence: it excludes relation-rank pattern `(2,2,1)` outright.
