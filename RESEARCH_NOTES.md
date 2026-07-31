@@ -14,6 +14,35 @@ the same conclusion for `n=6`, `d>=3`.  The arbitrary even-`n` lift remains
 open.  The authoritative six-vertex proof map is
 `SIX_VERTEX_CERTIFICATE.md`.
 
+## 31 July 2026: the corrected projective flat sheet
+
+The Borel-generic flat rank-three-relation triangle is now closed on its
+entire synchronized projective-partner pencil, not only the finite chart.
+For the true marked-kernel normal form
+
+```text
+y=(1,1,1,1),              x=(0,1,p,q),
+```
+
+putting one of the other two planes at the pencil point `A^#` leaves three
+and only three pure curves.  In terms of the four affine ratios
+`(0,1,p,q)`, they say that one of the three disjoint pair sums agrees.  The
+projective sheet has therefore exposed an additive parallelogram, or weak
+Sidon failure, inside the osculating binary-cubic problem.
+
+This is not a counterexample.  On every one of the three curves the product
+image of `(A^#,A+uA^#)` has rank exactly two, so the point leaves the
+rank-three-relation triangle and enters the lower-pair-rank
+Segre/Kronecker boundary.  When both partners equal `A^#` projectively,
+compression forces one quadratic factor while the escape condition forces
+two incompatible affine differences.  That sheet is empty.  Exact primary
+and independent subset-product replays are in
+[`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
+
+The honest resonant frontier is now smaller: affine-ratio collisions,
+smaller kernel supports, their intersections, and compatibility with the
+other exceptional graphs.  The global Krenn--Gu conjecture remains open.
+
 At order 14, the equality-architecture factor types
 `C3+C3+C8`, `C3+C4+C7`, `C3+C5+C6`, `C4+C5+C5`,
 `C3+C3+C4+C4`, and `C14` are closed.  The remaining types are
@@ -12080,6 +12109,47 @@ the two parameters `{t,u}` to contain the three distinct values
 ```
 
 Thus purity forces `rank C=3` and `rank C<=2`, a contradiction.
-This is the true generic theorem.  Projective partner sheets,
-collisions among the affine ratios, and smaller kernel supports remain
-the honest flat frontier.
+This is the true generic finite-partner theorem.  The remaining projective
+sheet is handled next.
+
+### The projective sheet is an additive-parallelogram rank-drop seam
+
+The synchronized pencil has now been compactified without moving the fixed
+kernel flag:
+
+```text
+P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md
+verify_p4_resonant_flat_projective_partner.py
+audit_p4_resonant_flat_projective_partner.py
+```
+
+Put one partner at `A_sharp` and the other at `A+u*A_sharp`.  Three
+compression minors share
+
+```text
+G=pq(p^2-2pq-2p+q^2-2q+1)u^2-6pqu-p-q-1.
+```
+
+All full `3 x 3` minors are divisible by `G`.  If the first three cubic
+coefficients collapse to the line needed for purity, three smaller minors
+leave exactly
+
+```text
+q=p+1, u=-1/(2p),
+p=q+1, u=-1/(2q),
+p+q=1, u=-1/(2pq).
+```
+
+For the affine ratios `(0,1,p,q)`, these are the three equations equating
+the sums on opposite edges of a perfect matching.  The compactification
+therefore sees exactly an additive parallelogram, or weak Sidon failure.
+
+Each curve is a real pure `P4` family: the compressed/full cubic ranks are
+`(1,2)`.  But the product image of `(A_sharp,A+u*A_sharp)` has rank exactly
+two on all three curves, so none remains in the all-rank-three-relation
+triangle.  If both partners are `A_sharp`, two incompatible affine
+difference factors exclude purity.  The complete projective partner sheet
+is therefore empty in the intended triangle stratum.
+
+The honest flat frontier is now affine-ratio collisions, smaller kernel
+supports, and their intersections.  The global conjecture remains open.

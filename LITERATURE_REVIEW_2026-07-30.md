@@ -484,3 +484,31 @@ theorem without moving the flag:
 The one-kernel-zero otherwise-distinct chart remains valid as a
 separate boundary theorem:
 [`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md).
+
+The projective pencil closure over the distinct-ratio center is now exact:
+[`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
+With one partner at infinity, the pure binary-cubic incidence is the union
+of three rational curves.  In the marked affine ratios
+`(r_0,r_1,r_2,r_3)=(0,1,p,q)`, they are precisely
+
+```text
+r_0+r_3=r_1+r_2,       r_0+r_2=r_1+r_3,       r_0+r_1=r_2+r_3.
+```
+
+Thus the missing sheet is indexed by the three perfect matchings of four
+points and detects exactly a failure of the weak Sidon condition (distinct
+sums of disjoint pairs).  This additive-combinatorial formulation is
+invariant under the legal affine gauge and explains the three factors
+before elimination.  The standard distinct-pair-sum language appears, for
+example, in Lee,
+[On Sidon sets in a random set of vectors](https://arxiv.org/abs/1405.4227).
+
+The more consequential identity is the bridge back to pencil geometry:
+on each additive-parallelogram curve, the product image of the infinite
+partner with its finite neighbor has rank exactly two.  Hence every pure
+point leaves the all-rank-three-relation triangle and lands on the
+Segre/Kronecker seam classified by the pair-kernel theorem.  With both
+partners at infinity, two incompatible confluent minors make the pure sheet
+empty.  The review found the separate ingredients--Sidon collisions,
+osculating binary forms, and bounded-rank pencil closures--but not this
+specific implication among them.

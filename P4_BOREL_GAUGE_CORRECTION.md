@@ -66,5 +66,9 @@ dense finite-partner chart are proved in
 
 Thus the correction does not merely retract scope: it replaces the
 invalid generic normalization with a valid two-modulus Borel theorem.
-Projective partner sheets and the remaining affine-ratio/kernel-support
-collisions are the honest unresolved boundary.
+The projective partner sheets over that center are now classified as three
+additive-parallelogram pure curves, all lying on the lower-pair-rank seam,
+plus an empty double-infinity sheet:
+[`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
+The remaining affine-ratio/kernel-support collisions are the honest
+unresolved boundary.

@@ -21,9 +21,12 @@ excludes the first of the following two intrinsic shapes:
 The Borel-generic zero-additive-holonomy shape has since been excluded
 in
 [`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md).
-The one-kernel-zero otherwise-distinct chart is excluded separately.
-Projective partner sheets and the remaining Borel collision strata
-remain, as do other exceptional graphs and lower pair-rank strata.
+The one-kernel-zero otherwise-distinct chart is excluded separately.  The
+projective partner sheets over the generic center are also classified and
+excluded from the rank-three triangle in
+[`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
+The remaining Borel collision strata remain, as do other exceptional
+graphs and lower pair-rank strata.
 The global Krenn--Gu problem is unresolved.
 
 ## Multiplicative resonance
@@ -293,8 +296,11 @@ Borel-generic chart and an otherwise-distinct one-kernel-zero chart:
 - [`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md);
 - [`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md).
 
-The projective partner sheets and remaining Borel collision strata are
-the exact flat frontier.  A previous full-`GL_2` collision
+The projective partner sheets over the full-support, distinct-ratio center
+have since been classified and excluded from the rank-three triangle:
+[`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
+The remaining Borel collision and smaller-support strata are the exact flat
+frontier.  A previous full-`GL_2` collision
 classification was withdrawn because it moved the fixed kernel line.
 
 ## Verification

@@ -268,8 +268,11 @@ plane tuple.”  Its unresolved generic alternatives are:
    [`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md)
    and
    [`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md).
-   Projective partner sheets and the remaining Borel collision strata
-   remain;
+   The projective sheets over the generic center are also excluded from the
+   triangle after their three additive-parallelogram pure curves are shown
+   to have a lower-rank partner pair:
+   [`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
+   The remaining Borel collision and smaller-support strata remain;
 3. the lower pair-image-rank and coincident/support-one zero-product
    boundaries.  One rank-two-edge stratum now supplies the
    six-dimensional component in

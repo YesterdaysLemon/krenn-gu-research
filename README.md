@@ -194,14 +194,25 @@ strictly advance the finite frontier:
   one-kernel-zero chart:
   [`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md),
   [`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md).
+- the projective partner sheets over that same generic center are now
+  classified exactly.  With one partner at infinity, purity occurs on
+  precisely three rational curves, characterized invariantly by a repeated
+  disjoint pair sum among the four affine ratios: an additive
+  parallelogram.  On every such curve the infinite partner and its finite
+  neighbor have product-image rank two, so all three leave the
+  rank-three-relation triangle stratum.  With both partners at infinity,
+  the compression and escape ranks are incompatible.  Hence the complete
+  projective sheet is empty for the intended triangle; only Borel
+  affine-ratio collisions and smaller kernel supports remain:
+  [`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
 - a gauge audit withdrew three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  Consequently the advertised complete flat-triangle
   classification, the dependent rank-two-star obstruction, and the
   balanced-chart part of the mixed `(2,2,1)` theorem are not global
   theorems.  Their local identities remain recorded, but the Borel
-  collision/projective-partner boundaries and those graph
-  compatibilities remain open:
+  collision/lower-support boundaries and those graph compatibilities
+  remain open:
   [`P4_BOREL_GAUGE_CORRECTION.md`](P4_BOREL_GAUGE_CORRECTION.md),
   [`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md),
   [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md),

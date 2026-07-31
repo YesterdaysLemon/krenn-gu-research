@@ -25,8 +25,11 @@ which is a valid one-kernel-zero boundary theorem.  The earlier
 moved the fixed kernel line:
 [`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md).
 
-Projective partner sheets, collisions among the affine ratios, and
-smaller kernel supports remain.  Thus this is a generic theorem, not
+The projective partner sheets over this same center have since been
+classified and excluded from the all-rank-three-relation triangle in
+[`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
+Collisions among the affine ratios and smaller kernel supports remain.
+Thus this is a generic theorem, not
 a complete triangle classification, component-exhaustiveness proof,
 or global solution of the Krenn--Gu conjecture.
 
@@ -179,12 +182,12 @@ partner chart is empty.
 
 ## Correct frontier
 
-The remaining flat triangle is confined to the union of:
+After the companion projective-sheet theorem, the remaining flat triangle
+is confined to the union of:
 
-1. a projective partner sheet in the synchronizer pencil;
-2. a collision among the four affine ratios in (3);
-3. a zero coordinate of a kernel row; or
-4. intersections of these divisors.
+1. a collision among the four affine ratios in (3);
+2. a zero coordinate of a kernel row; or
+3. intersections of these divisors.
 
 The one-kernel-zero otherwise-distinct chart is already empty by the
 companion kernel-zero theorem.  The other Borel boundary strata must
