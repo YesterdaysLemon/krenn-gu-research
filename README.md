@@ -567,6 +567,16 @@ strictly advance the finite frontier:
   `A*B^2` minor.  Hence every genuine neighbour makes a one-marked map have
   rank four, excluding an `H31` lift on components sixteen and seventeen:
   [`P5_H31_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md`](P5_H31_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md).
+- the same two components are now generically closed for weighted `H22` as
+  well.  Translating the two weighted contractions into open Fitting
+  projections makes the support-star marking loci disjoint already at the
+  binary level.  On the support-path component every common marking is
+  confined to one projective line.  A single symbolic marked minor excludes every
+  ordinary slope there; exact kernel-diagonal identities, two binary-minor
+  gcds, and two alternate minors close every exceptional slope without
+  division.  Hence both fifth-coordinate partition types, `H31` and `H22`,
+  have empty generic fibre over components sixteen and seventeen:
+  [`P5_H22_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md`](P5_H22_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md).
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while
