@@ -15,9 +15,12 @@ not a sixteenth component.  The identification uses an explicit common
 smooth point and source/mode transformation.
 
 Together with the disjoint-secant component and the tangent classification,
-this closes every genuine support-two exact-rank-two pair kernel.  Secant
-boundaries containing support-one kernel points and compatibility of several
-lower-rank edges remain separate boundary questions.
+this closes every genuine support-two exact-rank-two pair kernel.  The
+support-one secants are subsequently placed in the disjoint-component
+closure by
+[`P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md`](P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md).
+Compatibility of several lower-rank edges remains relevant to the closure
+intersection poset, but no longer to exhaustiveness of the lower-pair locus.
 
 ## Two stars with intersecting radicals
 

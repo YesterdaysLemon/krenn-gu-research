@@ -13601,6 +13601,64 @@ verify_p4_overlapping_secant_lower_pair_classification.py
 audit_p4_overlapping_secant_lower_pair_classification.py
 ```
 
+### Support-one secants are component-fifteen boundaries
+
+For a secant rank-two edge containing a support-one zero product, normalize
+the singleton to `e tensor e`, `e=X0`.  A second singleton point, or a binary
+zero product whose support contains `0`, makes the two cross-products
+proportional and drops the pair image to rank one.  The only exact-rank-two
+case is therefore
+
+```text
+a=X1+tX2,       a_bar=X1-tX2,
+U0=span(e,a),   U1=span(e,a_bar).
+```
+
+In the adapted basis `(e,a_bar,a,X3)`, the two cross-product
+catalecticants are coordinate stars sharing the radical line `C*e`.
+Opposite-plane purity has determinant `m*n*lambda^2`.  On `m=0`, the pure
+family is
+
+```text
+U2=span(e,a_bar+lambda*X3+u*a),
+U3=span(e+n*a,a_bar-lambda*X3+v*a),
+```
+
+with only
+
+```text
+T1010=2lambda*n*t,       T1011=-2lambda*t(u-v)
+```
+
+nonzero.  Split the singleton by `g_plus=e+epsilon*X3` and
+`g_minus=e-epsilon*X3`, then set
+
+```text
+L=2epsilon/lambda,       M=-2u*epsilon/lambda,
+N=1/n,                   rho=-1+2v*epsilon/(lambda*n).
+```
+
+The planes
+
+```text
+span(g_plus,a),
+span(g_minus,a_bar),
+span(g_minus+M*a,g_plus+L*a_bar),
+span(a+N*g_minus,g_plus-L*a_bar+rho*g_minus)
+```
+
+are a punctured arc in the maximal disjoint-secant flag chart.  Their
+Pluecker valuations are `(0,0,1,1)`; the leading wedges of the last two are
+`(2/lambda)pl(U2)` and `-2/(lambda*n)pl(U3)`.  Thus the target is in
+component fifteen.  Closure and the opposite-mode swap cover every flag
+boundary.  No sixteenth component occurs.
+
+```text
+P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md
+verify_p4_support_one_secant_boundary_inclusion.py
+audit_p4_support_one_secant_boundary_inclusion.py
+```
+
 Primary theorem and verifiers:
 
 ```text

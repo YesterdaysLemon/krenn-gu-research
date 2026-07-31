@@ -406,7 +406,9 @@ strictly advance the finite frontier:
   Frobenius--Kunneth then identifies every nonzero pure survivor as an
   embedded pure-`P3` suspension:
   [`P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md`](P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md).
-  Only genuinely lower-pair-rank strata remain on this triangle frontier.
+  At that checkpoint only genuinely lower-pair-rank strata remained; the
+  later rank-one obstruction and rank-two exhaustion theorem below close
+  those strata as a source of further components.
 - pair-image ranks zero and one are globally impossible for a nonzero pure
   `P_4` restriction.  If `dim(UV)=1`, the induced nondegenerate annihilator
   correspondence `P(U)->P(V)` lies in the projective zero-product locus.
@@ -475,9 +477,27 @@ strictly advance the finite frontier:
   mode order `(0,3,2,1)` identify its certificate point with the original
   six-dimensional lower-pair component.  Smoothness makes the two charts the
   same irreducible component.  Thus every genuine support-two single
-  rank-two edge is classified; support-one secant boundaries and
-  multiple-edge compatibility remain:
+  rank-two edge is classified:
   [`P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md`](P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md).
+- support-one secants are not a sixteenth component.  Exact pair rank two
+  forces the singleton zero product to be disjoint from the other genuine
+  binary zero product; the overlapping cases have rank one.  In the adapted
+  basis the purity problem is again a pair of coordinate stars with
+  determinant `m*n*lambda^2`.  On the dense `m=0` branch, splitting
+  `X0^2=0` to `(X0+epsilon X3)(X0-epsilon X3)=0` and setting
+  `L=2epsilon/lambda`, `M=-2u epsilon/lambda`, `N=1/n`, and
+  `rho=-1+2v epsilon/(lambda*n)` gives an exact arc inside component
+  fifteen.  The four Pluecker valuations are `(0,0,1,1)`, and their leading
+  wedges recover the target planes.  Closure and a mode swap cover every
+  remaining flag.  Hence **every nonzero pure `P_4` tuple having any pair
+  image of rank at most two lies in one of four already certified component
+  closures**: embedded `P3`, the old lower-pair sixfold, component fourteen,
+  or component fifteen:
+  [`P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md`](P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md),
+  [`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
+  Simultaneous rank-two edges remain relevant only to the intersection
+  poset of these closures, not to component exhaustiveness of the
+  lower-pair locus.
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while

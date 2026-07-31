@@ -52,23 +52,26 @@ governed by a `2+2`/`1+3` secant center or by a coincident-plane
 tangent through a coordinate line.
 
 This reduces one of the open boundaries in the pure-`P_4` component
-classification.  It does not classify how several exceptional pairs
-fit together, prove that the nine known components are exhaustive,
-close their special `H22` fibres, or settle the global Krenn--Gu
-conjecture.
+classification.  It does not by itself prove that all pure-`P_4`
+components are exhaustive, close their marked extension fibres, or settle
+the global Krenn--Gu conjecture.
 
-Subsequent work has completed the genuine support-two single-edge purity
+Subsequent work has completed the entire single-edge lower-pair purity
 problem.  Tangent kernels split between a new full-support component and the
 known support-two sixfold boundary; disjoint secants give another new
-component; overlapping secants recover the earlier sixfold:
+component; overlapping secants recover the earlier sixfold; and support-one
+secants are valuative boundaries of the disjoint component:
 
 - [`P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md`](P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md)
 - [`P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md`](P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md)
 - [`P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md`](P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md)
+- [`P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md`](P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md)
+- [`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md)
 
-The component count and marked-fibre sentence above describe the historical
-checkpoint of this theorem; the live frontier is support-one secant
-boundaries and compatibility of several lower-rank edges.
+The component count in older passages of this theorem is historical.  The
+live lower-pair frontier is now the intersection geometry of the four known
+closures, not the possibility of another component supported on pair rank at
+most two.
 
 ## The annihilator bound
 

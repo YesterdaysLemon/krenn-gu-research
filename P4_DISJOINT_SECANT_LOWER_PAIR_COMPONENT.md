@@ -27,8 +27,10 @@ symmetry-inequivalent pure-`P_4` component orbits.
 The overlapping secant center is subsequently identified with the earlier
 sixfold in
 [`P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md`](P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md).
-The marked `P_5` fibres of components fourteen and fifteen, support-one
-secant boundaries, multiple-edge compatibility, component exhaustiveness,
+Support-one secants are subsequently placed in this component's closure in
+[`P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md`](P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md).
+The marked `P_5` fibres of components fourteen and fifteen, the full
+pure-`P_4` component exhaustiveness problem away from the lower-pair locus,
 and the global Krenn--Gu conjecture remain open.
 
 ## Two complementary hyperbolic planes

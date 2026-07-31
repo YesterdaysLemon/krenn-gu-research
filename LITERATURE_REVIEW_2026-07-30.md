@@ -70,10 +70,14 @@ external mathematical review, the strongest additional claims are:
 - a complete exact-three-coordinate obstruction for
   `P_5 -> Delta_3`;
 - exact exclusions of normalized `q5_311`, `q5_221`, and `q4_211`;
-- at least ten inequivalent components of the pure rank-two
-  `P_4`-compression variety.  Generic `H31` and generic weighted
-  `H22` fibres are empty on the nine components known before the new
-  two-rank-two-spoke mixed star; its marked fibres are unclassified.  The
+- at least fifteen inequivalent components of the pure rank-two
+  `P_4`-compression variety.  The first thirteen components are generically
+  closed for both marked `H31` and weighted `H22`; the marked fibres of the
+  full-support tangent component fourteen and disjoint-secant component
+  fifteen remain open.  The complete lower-pair locus is now exhausted by
+  four known component closures, while exhaustiveness on the all-pair-ranks-
+  at-least-three locus remains open.  The following chronological ledger
+  records the intermediate fibre results that led to that checkpoint.  The
   complete marked projective
   `H31` fibre of the embedded-`P_3` ninth component is empty, while its
   weighted `H22` obstruction currently covers the full normalized
@@ -1144,9 +1148,9 @@ wedge remembers the limiting plane, and a higher-order coefficient records
 the extension data.  It explains the dichotomy hidden by the common sorted
 pair profile.  Full support has a nondegenerate ternary polar form and gives
 the new obstructed fivefold; support two has a radical and smooths into the
-old sixfold.  Consequently the tangent-kernel frontier is now complete, and
-the remaining exact-rank-two question is the compatibility of secant block
-centers.
+old sixfold.  Consequently the tangent-kernel frontier was complete at that
+checkpoint; the next exact-rank-two question was the compatibility of secant
+block centers, subsequently closed in the paragraphs below.
 
 The disjoint `2+2` secant center is now classified and contributes a
 fifteenth component orbit:
@@ -1180,6 +1184,35 @@ six-dimensional lower-pair component.  This is a useful algebraic-geometry
 lesson: two normal forms that look combinatorially different are proved to
 parametrize the same component by transporting one exact point and using
 local uniqueness at a smooth point.  With that identification, all genuine
-support-two single-edge secant and tangent kernels are classified.  The
-remaining lower-pair issues are support-one secant degenerations and the
-simultaneous compatibility of more than one rank-two edge.
+support-two single-edge secant and tangent kernels are classified.
+
+### 31 July addendum: the lower-pair locus is exhausted
+
+The remaining support-one secant degeneration is now closed in
+[`P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md`](P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md).
+A singleton zero product and a binary zero product can give pair rank two
+only when their coordinate supports are disjoint.  Their two catalecticants
+then become coordinate stars with a common radical line.  The same
+`mn lambda^2` polar-flag factorization used for overlapping secants supplies
+the complete purity classification.
+
+The new ingredient is a valuative Grassmannian arc.  Replace the singleton
+`X0 tensor X0` by the genuine binary pair
+`(X0+epsilon X3) tensor (X0-epsilon X3)` and tune four flag parameters
+linearly in `epsilon`.  For every punctured parameter the two secant supports
+are disjoint, so the point lies on component fifteen.  The row matrices of
+the two opposite planes collapse at the origin, but their leading exterior
+squares, at valuation one, recover exactly the desired support-one planes.
+This is a miniature limit-linear-series argument: the leading Pluecker
+coordinate remembers the subspace that an ordinary matrix limit forgets.
+
+Combining that boundary theorem with the projective zero-product
+correspondence, Segre line classification, orthogonal tangent flags, and the
+two secant block classifications gives
+[`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md):
+every nonzero pure `P4` point having any pair image of rank at most two lies
+in the union of the embedded-`P3` component, the original lower-pair
+sixfold, the full-support tangent component fourteen, and the disjoint
+secant component fifteen.  Several simultaneous rank-two edges can only
+describe intersections among those four closures; they cannot support an
+additional irreducible component.
