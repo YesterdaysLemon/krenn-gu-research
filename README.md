@@ -321,6 +321,21 @@ strictly advance the finite frontier:
   `(X2+X3)(X2-X3)=0`.  Thus one required binary neighbour always has zero
   all-kernel diagonal, simultaneously in every marking and weighted slope:
   [`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+- the remaining transverse common-factor polarity sheet detects a twelfth
+  pure-`P_4` component orbit.  If `s,t` are the complementary binary parts
+  of the synchronized active row and common kernel, their determinant
+  `Q=[s,t]` and split polar pairing `A=<s,t>` factor all four three-cubic
+  apolar minors.  The sheets `A=0` and `Q=0` return to the eleventh component
+  or its boundary, while `AQ!=0` forces a one-coordinate `1+3` projection.
+  One exact two-parameter sheet has only `T_1111=-4`; at
+  `(r,k)=(-4/3,2)` its pair profile is `(3,3,4,3,3,3)`, every three-mode
+  kernel-rich cubic span has rank two, and the universal Segre-incidence
+  Jacobian has rank fourteen.  Thus the point is smooth on a new
+  six-dimensional component, while the visible sheet supplies only five
+  directions after restoring the source torus.  Its five-edge exceptional
+  graph and theorem are in
+  [`P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md`](P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md).
+  The component's generic normal form and its `H31/H22` fibres are open.
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while
@@ -1094,9 +1109,12 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   so all eleven certified components are generically closed for `H31`.  Its
   weighted `H22` fibre is also empty: a two-channel permanent cancellation
   forces one binary diagonal to vanish for every marking and slope.  Thus all
-  eleven certified components are generically closed for both `H31` and
-  weighted `H22`.  The live finite frontier is component exhaustiveness and
-  the special parameter/projective boundaries.  The
+  eleven components known at that checkpoint are generically closed for both
+  `H31` and weighted `H22`.  The transverse binary-polarity theorem has since
+  supplied a twelfth, smooth six-dimensional component; its generic normal
+  form and both marked fibres are currently open.  The live finite frontier is
+  therefore the twelfth component, component exhaustiveness, and the special
+  parameter/projective boundaries.  The
   ninth orbit's entire
   normalized `H31` chart is closed as well, and its weighted boundary
   is closed on every rank-two projected-line stratum.  The rank-one

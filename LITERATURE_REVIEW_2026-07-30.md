@@ -857,3 +857,38 @@ exclude the open pivot branch through the factor `2(u-1)(v-1)`; the full
 canonical system closes its boundary.  This replaces the intractable generic
 marking-module normal form by an invariant eleven-generator certificate and
 closes all eleven certified components generically for both marked types.
+
+The next common-factor sheet is controlled by a different classical binary
+geometry:
+[`P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md`](P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md).
+For two complementary-block linear forms `s=uX2+vX3` and
+`t=pX2+qX3`, the determinant `Q=uq-vp` cuts out the diagonal in
+`P^1 x P^1`, whereas the squarefree polar pairing `A=uq+vp` cuts out the
+graph of the exact-zero-divisor involution.  The four maximal minors of the
+kernel-rich cubic multiplication map split into these two `(1,1)` divisors
+and two coordinate-polar sheets.  This converts a permanent apolarity
+condition into incidence between the diagonal and the graph of an involution
+on the binary projective line.
+
+Abdesselam--Chipalkatti study quadratic-form-induced involutions on binary
+forms through compound transvectants
+([arXiv:1008.3117](https://arxiv.org/abs/1008.3117)).  Kustin--Striuli--Vraciu
+study exact pairs of homogeneous zero divisors
+([arXiv:1304.0411](https://arxiv.org/abs/1304.0411)), and Shafiei proves
+degree-two generation results for apolar ideals of generic permanents
+([arXiv:1212.0515](https://arxiv.org/abs/1212.0515)).  Those are the three
+neighboring specializations: binary invariant theory supplies the
+involution, commutative algebra supplies the annihilator line, and apolarity
+supplies the opposite plane.  None alone predicts the transverse
+five-edge graph or the smooth permanent component.
+
+On the transverse sheet the exact point has pair profile
+`(3,3,4,3,3,3)` and all four three-mode kernel-rich cubic spans have rank
+two.  A rank-fourteen universal Segre-incidence Jacobian proves a smooth
+six-dimensional component germ, although the displayed source-torus family
+has only five dimensions.  Closed pair-rank and cubic-span invariants
+separate it from the three earlier sixfolds.  The certified lower bound is
+therefore twelve components.  This reopens the generic marked-fibre frontier:
+the eleven components known before this binary-polarity discovery remain
+generically closed for `H31/H22`, while the twelfth component's dense normal
+form and marked fibres are not yet classified.

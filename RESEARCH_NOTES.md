@@ -12818,3 +12818,68 @@ P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md
 verify_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py
 audit_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py
 ```
+
+### Transverse binary polarity detects a twelfth component
+
+The common-active support-two `(2,1,1)` orientation has a complete local
+annihilator reduction.  Normalize an exact pair `a*c=0`, so the two leaf
+kernel rows are both `a`, the common active row is `c`, and the rank-two edge
+synchronizes the other leaf rows as `m,m+r*c`.  Split their complementary
+binary parts as
+
+```text
+s=u*X2+v*X3,       t=p*X2+q*X3,
+A=u*q+v*p,         Q=u*q-v*p.
+```
+
+The four maximal minors of the three kernel-rich cubics factor as
+
+```text
+ 4*q*A*(E+2*delta*u*v),
+ 4*p*A*(E+2*delta*u*v),
+-4*(gamma-delta)*Q*(E-2*gamma*u*v),
+ 4*(gamma+delta)*Q*(E+2*gamma*u*v),
+E=(2*beta+r)*A.
+```
+
+Thus `A=0` is the graph of the split exact-zero-divisor polarity, `Q=0` is
+the diagonal in `P1 x P1`, and the transverse sheet forces
+`gamma^2=delta^2`, i.e. a single-coordinate `1+3` projection.  The first two
+sheets return to the eleventh component or its `q=0` boundary.
+
+One transverse sheet is
+
+```text
+a=(1,1,0,0), c=(1,-1,0,0), b=(0,0,1,1),
+m=b+c, m_r=b+(1+r)c,
+d=(0,(r+2)(k+1),1,k),
+n=(-(k-1)(r+2),0,-1,k),
+U0=span(n,c), U1=span(a,m), U2=span(a,m_r), U3=span(d,c).
+```
+
+Its restriction is identically `-4*x0*x1*x2*x3`.  At
+`(r,k)=(-4/3,2)`, the pair profile is `(3,3,4,3,3,3)` with four rank-one
+relations and one rank-two relation.  Every three-mode kernel-rich cubic
+span has rank two.  Restoring the source torus gives a rank-five family
+tangent with minor `2`; the universal Segre-incidence Jacobian has rank
+fourteen with minor `-131072`.  Hence the point lies on a unique smooth
+six-dimensional pure component.  Pair-rank conditions exclude the two older
+rank-two-edge sixfolds, while the four rank-two cubic spans exclude every
+translate of the equal-support sixfold.  The certified component lower bound
+is twelve.
+
+The sixth tangent direction changes the pure factors in two modes and leaves
+the five-edge common-factor graph.  The dense normal form of the new
+component, its generic `H31/H22` fibres, component exhaustiveness, and the
+global conjecture remain open.  The eleven-component generic-closure theorem
+is retained as a historical checkpoint, not a claim about the newly found
+twelfth component.
+
+Primary theorem and verifiers:
+
+```text
+P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md
+P4_TRANSVERSE_COMMON_FACTOR_COMPONENT_GRAPH.svg
+verify_p4_transverse_common_factor_component.py
+audit_p4_transverse_common_factor_component.py
+```
