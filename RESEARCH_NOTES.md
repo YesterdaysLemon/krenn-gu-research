@@ -11094,3 +11094,95 @@ parameter/slope/projective boundaries still hidden in the exact
 standard-basis certificates, then finish the exceptional
 mixed-star/triangle and lower pair-rank strata needed for component
 exhaustiveness.
+
+### Symbolic pair pencils and triangle holonomy
+
+The lower-pair-rank frontier has now been translated away from
+permanent ideals.
+
+For two local planes `U,V` with `dim(UV)=2`, the projective
+multiplication kernel is a line in `P(U tensor V)=P^3`.  The rank-one
+relations form the Segre quadric.  A squarefree linear form has
+degree-one annihilator dimension at most one, so the kernel line cannot
+be a Segre ruling.  It is therefore secant or tangent.  The secant
+case reduces to the existing `2+2`/`1+3` block centers.  Exact-rank-two
+tangency can occur only when
+
+```text
+U=V=span(X_p,w),       |supp(w)|>=2.
+```
+
+This is a computation-free classification of a single rank-two pair
+kernel:
+
+```text
+P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md
+verify_p4_rank_two_pair_kernel_geometry.py
+```
+
+For a triangle of rank-three pair images whose three relation matrices
+have rank two, the three relations carry a multiplicative holonomy.
+Writing their nonconstant coefficients as `b_ij,c_ij`, put
+
+```text
+Omega=c_12*b_13*c_23+b_12*c_13*b_23.
+```
+
+On `Omega!=0`, three Borel row shifts remove all constant terms and
+the same determinant `-Omega` forces all six mixed triple products to
+vanish.  Each cross-product is annihilated by the opposite local
+plane.  Its degree-two multiplication catalecticant is a nonzero
+symmetric zero-diagonal matrix of rank two, hence a weighted cut.
+The only cut types are `1+3` and `2+2`; the latter has one tetrad
+equation.  The resonant divisor and compatibility of the three cuts
+remain open.
+
+```text
+P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md
+verify_p4_nonresonant_rank_two_triangle_cut_reduction.py
+```
+
+### Ninth pure component from the common `1+3` boundary
+
+Following the common `1+3` cut rather than discarding its pair-rank
+drop exposes a new component.  Put three modes in `X_0=0` and use the
+pure-`P_3` sign chart with normals
+
+```text
+(1,A,B),       (1,-A,-B),       (1,-A,B).
+```
+
+Let the fourth mode be an arbitrary plane not contained in `X_0=0`.
+In fixed Grassmann charts the resulting six-parameter family has only
+
+```text
+T_0010=-2/B,       T_0110=-2A/B.
+```
+
+Its family tangent has rank six.  At the rational point
+
+```text
+(r,s,t,u,A,B)=(3/2,1/2,1,2,2,3),
+```
+
+the Segre-incidence Jacobian has rank fourteen and the selected
+`14 x 14` minor is `114688/2187`.  Thus the family closure is a
+generically smooth six-dimensional component.  Its generic pair
+profile
+
+```text
+(4,4,4,2,2,2)
+```
+
+separates it from the earlier six-dimensional component and all seven
+fivefolds.  The certified lower bound is now nine pure-`P_4`
+component orbits.
+
+```text
+P4_EMBEDDED_P3_PURE_COMPONENT.md
+verify_p4_embedded_p3_pure_component.py
+audit_p4_embedded_p3_pure_component.py
+```
+
+The ninth component's marked `H31` and `H22` fibres, component
+exhaustiveness, and the global Krenn--Gu conjecture remain unresolved.

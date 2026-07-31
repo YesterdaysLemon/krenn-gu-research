@@ -236,12 +236,20 @@ plane tuple.”  Its unresolved generic alternatives are:
    to a secant `2+2`/`1+3` block center or a coincident-plane tangent
    through a coordinate line in
    [`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md);
-   compatibility among several such pair pencils remains open;
+   compatibility among several such pair pencils remains open.  A
+   different triangle boundary, where all three pair images have rank
+   three but all three relation matrices have rank two, now has an
+   intrinsic holonomy.  Away from its resonant divisor it reduces to
+   three cyclic cut forms in
+   [`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md);
 3. the lower pair-image-rank and coincident/support-one zero-product
    boundaries.  One rank-two-edge stratum now supplies the
    six-dimensional component in
    [`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](P4_SIX_DIMENSIONAL_PURE_COMPONENT.md),
-   but the full lower-rank boundary is not classified.
+   while the common `1+3` triple-rank-drop stratum supplies a distinct
+   six-dimensional embedded-`P_3` component in
+   [`P4_EMBEDDED_P3_PURE_COMPONENT.md`](P4_EMBEDDED_P3_PURE_COMPONENT.md).
+   The full lower-rank boundary is still not classified.
 
 The common smooth diagonal-quadric semisimple case is separately
 excluded in

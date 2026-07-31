@@ -117,6 +117,16 @@ strictly advance the finite frontier:
   although compatibility of several such pencils and the exceptional
   triangle remain open:
   [`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md).
+- the all-rank-two-relation triangle now has an intrinsic symbolic
+  holonomy.  Off the trivial-holonomy divisor, three Borel row shifts
+  remove the constant relation terms, all six mixed triple products
+  vanish, and each cross-product has the opposite local plane as its
+  full degree-one annihilator.  Its symmetric zero-diagonal
+  catalecticant has rank two, so it is a weighted cut: `1+3` or
+  `2+2`, with the latter governed by one tetrad.  This reduces the
+  nonresonant triangle to cyclic cut compatibility; it does not yet
+  exclude those cycles or handle the resonant divisor:
+  [`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md).
 - a mixed zero-product orientation produces a sixth
   symmetry-inequivalent component.  The normalized rank-two
   contraction condition is a `3 x 4` determinantal problem whose
@@ -233,6 +243,17 @@ strictly advance the finite frontier:
   is also closed; its `D_01` obstruction moves to mode one while its
   `D_23` obstruction stays in mode zero:
   [`P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md).
+- an embedded pure-`P_3` suspension supplies a ninth certified
+  pure-`P_4` component orbit.  Three local planes lie in one
+  source-coordinate hyperplane and form one of the exact pure-`P_3`
+  sign charts; the fourth plane freely supplies the missing
+  coordinate.  The six-parameter family has only
+  `T_0010=-2/B,T_0110=-2A/B`.  Its family tangent has rank six and a
+  `14 x 14` Segre-incidence minor is `114688/2187`, proving component
+  status.  Its generic pair profile `(4,4,4,2,2,2)` separates it from
+  the previous six-dimensional component and all seven fivefolds:
+  [`P4_EMBEDDED_P3_PURE_COMPONENT.md`](P4_EMBEDDED_P3_PURE_COMPONENT.md).
+  The ninth component's marked `H31` and `H22` fibres are open.
 - all five minimal primes in the mixed `3 x 4` determinantal chart are
   now identified.  Two are the sixth component, one is a subfamily of
   the six-dimensional component, and the remaining two are explicit
@@ -801,19 +822,21 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   calculation on a common smooth diagonal quadric proves that no
   component-sized nonzero-pure family lives away from the block-line
   jump locus; the three ruling patterns reduce to one empty and two
-  one-dimensional normalized loci.  Exhaustiveness of the
-  eight-component list still requires classifying the remaining
-  star/triangle block-line degeneracies and lower-rank boundaries.
-  On all eight certified pure-`P_4` component orbits, the generic
-  weighted `H22` incidence is empty.  Six earlier proofs combine unit
+  one-dimensional normalized loci.  The embedded-`P_3` suspension has
+  since proved that the eight-component list was incomplete; the
+  current nine-component list is still not known to be exhaustive.
+  On the eight pure-`P_4` component orbits known before that
+  suspension, the generic weighted `H22` incidence is empty.  Six
+  earlier proofs combine unit
   binary projections, projective-kernel covers, and one- or two-minor
   ternary Fitting obstructions.  The diagonal-quadric proof instead
   uses an empty projective Segre-join fibre and properness.  On the
   disjoint mixed-star component, exact Fitting minors recover a
   `D_23` line and a degree-five `D_01` marking scheme, then exclude
-  every genuine binary direction.  Thus all eight certified orbits are
-  generically closed for both `H31` and weighted `H22`.  Special
-  component/slope boundaries and component exhaustiveness remain open,
+  every genuine binary direction.  Thus those eight orbits are
+  generically closed for both `H31` and weighted `H22`.  The ninth
+  component's marked fibres, special component/slope boundaries, and
+  component exhaustiveness remain open,
   although the eighth component's full equal- and opposite-weight
   slope fibres are now excluded already at the binary level, twelve
   generic parameter/coordinate boundary branches are closed, and the

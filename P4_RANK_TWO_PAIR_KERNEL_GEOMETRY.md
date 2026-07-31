@@ -53,7 +53,7 @@ tangent through a coordinate line.
 
 This reduces one of the open boundaries in the pure-`P_4` component
 classification.  It does not classify how several exceptional pairs
-fit together, prove that the eight known components are exhaustive,
+fit together, prove that the nine known components are exhaustive,
 close their special `H22` fibres, or settle the global Krenn--Gu
 conjecture.
 

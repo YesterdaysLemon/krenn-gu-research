@@ -824,9 +824,11 @@ six-dimensional component are also generically closed but retain
 their parameter/projective boundaries; both are likewise generically
 closed for `H31` and weighted `H22`.  The common smooth
 diagonal-quadric locus cannot supply a new component away from its
-block boundaries.  Exhaustiveness of the eight known component orbits,
-the new component's generic weighted `H22` incidence, and the special
-component/slope boundary incidences in `H22` remain unresolved.
+block boundaries.  The embedded pure-`P_3` suspension has since raised
+the component lower bound to nine.  Exhaustiveness of those nine
+orbits, the ninth component's generic marked `H31` and weighted `H22`
+incidences, and the special component/slope boundary incidences in
+`H22` remain unresolved.
 
 ## Verification
 

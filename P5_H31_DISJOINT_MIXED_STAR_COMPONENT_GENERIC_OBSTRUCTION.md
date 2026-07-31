@@ -7,11 +7,12 @@ the eighth pure-`P_4` component proved in
 [`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
 
 The complete marked-basis fibre over the generic point of that
-component has no `H31` lift.  Thus all eight currently certified
-pure-component orbits have empty generic marked `H31` fibre.
+component has no `H31` lift.  Thus all eight pure-component orbits
+certified at that checkpoint have empty generic marked `H31` fibre.
+The later embedded-`P_3` ninth component is not covered.
 
 This does not close special parameter or projective boundary points,
-prove that the eight components are exhaustive, or resolve the global
+prove that the nine known components are exhaustive, or resolve the global
 prize problem.  The generic weighted `H22` fibre has since been closed
 in
 [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
@@ -166,13 +167,16 @@ or local-map tuple is enumerated.
 
 ## Honest frontier
 
-All eight certified pure-component orbits are now generically closed
-for `H31`; the companion theorem closes their generic weighted `H22`
-fibres as well.  What remains is:
+All eight component orbits known at this theorem checkpoint are
+generically closed for `H31`; the companion theorem closes their
+generic weighted `H22` fibres as well.  A ninth, embedded-`P_3`
+component has since been certified and its marked fibres are open.
+What remains is:
 
-1. the special parameter/projective boundaries of the components not
+1. the ninth component's generic marked fibres;
+2. the special parameter/projective boundaries of the components not
    already closed in full;
-2. component exhaustiveness, especially exceptional triangle,
+3. component exhaustiveness, especially exceptional triangle,
    rank-two-relation, and lower pair-rank strata.
 
 The global conjecture remains unresolved.

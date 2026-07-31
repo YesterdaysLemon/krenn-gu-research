@@ -70,9 +70,11 @@ external mathematical review, the strongest additional claims are:
 - a complete exact-three-coordinate obstruction for
   `P_5 -> Delta_3`;
 - exact exclusions of normalized `q5_311`, `q5_221`, and `q4_211`;
-- at least eight inequivalent components of the pure rank-two
-  `P_4`-compression variety, with generic `H31` and now generic weighted
-  `H22` fibres empty on all eight; on the eighth component the equal-
+- at least nine inequivalent components of the pure rank-two
+  `P_4`-compression variety.  Generic `H31` and generic weighted
+  `H22` fibres are empty on the previous eight; the newly exposed
+  embedded-`P_3` component has not yet been tested.  On the eighth
+  component the equal-
   and opposite-weight `H22` fibres are additionally empty already at
   the binary-incidence level, twelve generic parameter/coordinate
   branches are empty by exact Fitting ideals, and the principal
@@ -113,6 +115,7 @@ peer-reviewed global result.
 | blocker allocation | transversal problem | Hall-type and matroid-intersection inequalities |
 | mode/colour symmetry | finite group action | orbit normal forms and equivariant stratification |
 | rank-two pair image | line meeting the `2 x 2` rank-one Segre quadric | Kronecker pencils, secant/tangent normal forms |
+| triangle of rank-two pair relations | `PGL_2` connection plus degree-two catalecticants | holonomy, tetrads, and weighted cuts |
 
 The determinantal step used in the new `H22` theorem is standard Fitting
 geometry: rank-drop loci are cut out by minors, and the construction is
@@ -215,3 +218,25 @@ networks and Gaussian/Wick covariants are the two most promising
 sources of symbolic equations.  A simultaneous-root Grassmannian
 formulation of the blocker hierarchy remains the arbitrary-order
 follow-up.
+
+That triangle translation has now produced a second exact reduction:
+[`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md).
+The three rank-two relation matrices carry a multiplicative
+projective holonomy.  Away from the trivial-holonomy divisor, basis
+shifts remove their three constant terms and force all six mixed
+triple products to vanish.  The three surviving cross-products have
+rank-two zero-diagonal catalecticants and therefore lie on
+`1+3`/`2+2` cut strata.  The `2+2` equation is a tetrad, connecting
+the residual compatibility problem to algebraic statistics and trek
+separation rather than to a larger permanent ideal.
+
+Following the common `1+3` cut instead of discarding the pair-rank
+drop exposes a ninth component:
+[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](P4_EMBEDDED_P3_PURE_COMPONENT.md).
+It is the one-coordinate suspension of the already classified pure
+`P_3` sign chart.  The construction is six-dimensional and a rational
+rank-fourteen Segre-incidence certificate proves that its closure is
+a component.  Its pair-rank multiset `{2,2,2,4,4,4}` separates it
+from the earlier six-dimensional component.  This is a concrete
+example of a lower-rank boundary carrying more geometry than the
+dense stratum that led to it.

@@ -20,6 +20,11 @@ and dimension, separates the new component from all seven previously
 certified orbits.  The certified lower bound is therefore eight
 component orbits: seven fivefolds and one sixfold.
 
+The embedded-`P_3` suspension in
+[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](P4_EMBEDDED_P3_PURE_COMPONENT.md)
+has since raised the repository-wide lower bound to nine.  Nothing in
+the theorem below depends on that later component.
+
 This is not a classification.  A subsequent exact function-field
 theorem excludes the generic marked `H31` fibre:
 [`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).

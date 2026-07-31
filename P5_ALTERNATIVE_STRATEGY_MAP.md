@@ -1082,9 +1082,12 @@ obstruction from local mode zero to mode one:
 - [`P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md)
 - [`P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md)
 
-Other hidden coefficient divisors and component boundaries remain, and
-the eight components are not known to be exhaustive.  The earlier
-modular pattern and timed-out broad route remain as provenance:
+Other hidden coefficient divisors and component boundaries remain.
+The embedded pure-`P_3` suspension has since proved that the earlier
+eight-component list was incomplete and raised the lower bound to
+nine; the ninth component's marked fibres and exhaustiveness of the
+new list remain open.  The earlier modular pattern and timed-out broad
+route remain as provenance:
 
 - [`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md)
 

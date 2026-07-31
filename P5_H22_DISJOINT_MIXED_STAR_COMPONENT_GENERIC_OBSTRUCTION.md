@@ -7,8 +7,10 @@ the eighth pure-`P_4` component proved in
 [`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
 
 The complete weighted `H22` incidence over the generic point of that
-component is empty.  Thus all eight currently certified pure-component
-orbits have empty generic marked `H31` and weighted `H22` fibres.
+component is empty.  Thus all eight pure-component orbits certified at
+that checkpoint have empty generic marked `H31` and weighted `H22`
+fibres.  The later embedded-`P_3` ninth component is not covered by
+this theorem.
 The special equal- and opposite-weight slopes have since been closed
 by a stronger binary obstruction:
 [`P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md).
@@ -38,7 +40,7 @@ changing either slope:
 [`P5_H22_DISJOINT_MIXED_STAR_TORUS_QUOTIENT.md`](P5_H22_DISJOINT_MIXED_STAR_TORUS_QUOTIENT.md).
 
 This does not close special parameter, slope, or projective boundary
-points, prove that the eight components are exhaustive, settle the
+points, prove that the nine known components are exhaustive, settle the
 remaining partial-row geometries, or resolve the global prize problem.
 
 ## Component field and weighted deletions
@@ -249,14 +251,17 @@ map tuple, support catalogue, or graph is enumerated.
 
 ## Honest frontier
 
-All eight certified pure-`P_4` component orbits are now generically
-closed for both `H31` and weighted `H22`.  The next geometric tasks are:
+All eight component orbits known at this theorem checkpoint are
+generically closed for both `H31` and weighted `H22`.  A ninth,
+embedded-`P_3` component has since been certified and its marked
+fibres are open.  The next geometric tasks are:
 
-1. extract the remaining hidden certificate denominators and classify
+1. classify the ninth component's generic marked fibres;
+2. extract the remaining hidden certificate denominators and classify
    their parameter/slope/projective boundaries;
-2. finish the exceptional mixed-star/triangle and lower-pair-rank
+3. finish the exceptional mixed-star/triangle and lower-pair-rank
    strata to decide component exhaustiveness; and
-3. lift a complete `P_5 -> Delta_3` obstruction back into the
+4. lift a complete `P_5 -> Delta_3` obstruction back into the
    arbitrary-order blocker hierarchy.
 
 The global Krenn--Gu conjecture remains unresolved.

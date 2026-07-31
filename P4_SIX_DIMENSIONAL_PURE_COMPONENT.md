@@ -14,6 +14,9 @@ Consequently there are at least seven symmetry-inequivalent
 pure-compression components at this checkpoint.  A disjoint-support
 mixed star has since raised the certified lower bound to eight in
 [`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
+The embedded pure-`P_3` suspension in
+[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](P4_EMBEDDED_P3_PURE_COMPONENT.md)
+has since raised it again to nine.
 
 This is not a classification of every component.  The generic marked
 `H31` fibre has since been excluded in
@@ -225,7 +228,9 @@ certificate and the lower-rank geometry.
 At this theorem checkpoint the certified lower bound was seven
 pure-component orbits: six five-dimensional components and this
 six-dimensional component.  It is now eight after the disjoint
-mixed-star theorem.  No exhaustiveness claim follows.  The generic
-fibres of all eight known components are now excluded from `H31`.
-Incomplete component boundaries and the possibility of further pure
-components remain to be treated.
+mixed-star theorem, and nine after the embedded-`P_3` theorem.  No
+exhaustiveness claim follows.  The generic fibres of the eight
+components known before the embedded-`P_3` theorem are excluded from
+`H31`; the ninth component's marked fibres are open.  Incomplete
+component boundaries and the possibility of further pure components
+remain to be treated.
