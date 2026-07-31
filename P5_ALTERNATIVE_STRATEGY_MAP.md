@@ -1476,6 +1476,26 @@ infinite-slope chart has the same product membership, with basis size `10`.
 Thus all thirteen certified components are generically closed for both
 `H31` and weighted `H22`.
 
+The double-support-one boundary of the `(2,1,1)` triangle is now reduced
+without elimination:
+
+- [`P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md`](P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md)
+
+Since `Ann_R1(X_i)=C X_i`, common-factor support-one orientations have leaf
+pair-image rank at most two.  In the crossed orientation, distinct support
+lines reduce the synchronizer to `p*q=X0*X1`.  Its only rank-three branch is
+
+```text
+p=P+s,       q=lambda*(P-s),       s^2=0.
+```
+
+The squarefree equation `s^2=0` forces one complementary coordinate, so all
+three triangle planes lie in a coordinate `P^2`.  The Frobenius--Kunneth
+decomposition then factors the four-mode tensor as a missing-coordinate
+functional times a `P3` tensor.  Every pure survivor belongs to the embedded-
+`P3` component.  The remaining support boundary has exactly one support-one
+and one genuine support-two rank-one edge.
+
 The earlier
 quadratic-function-field experiments and their null outcomes remain
 recorded as provenance:
@@ -1499,8 +1519,8 @@ marked-fibre level:
 
 ## Priority
 
-1. classify the remaining support-one and lower-pair-rank exceptional
-   geometries while closing
+1. classify the mixed support-one/support-two and lower-pair-rank
+   exceptional geometries while closing
    the parameter/projective boundaries of the three split-cubic
    components, the sixth component, and the earlier six-dimensional component,
    and the disjoint mixed-star component's special `H31/H22`

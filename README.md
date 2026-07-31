@@ -389,6 +389,16 @@ strictly advance the finite frontier:
   components are generically closed for both marked types:
   [`P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
   Support-one common zero divisors and lower-pair-rank strata remain.
+- the boundary where both rank-one edges are support-one produces no new
+  component.  A support-one zero divisor has annihilator equal to its own
+  coordinate line, so every common-factor orientation makes the leaf pair
+  rank at most two.  In the crossed orientation, factorizing `X0*X1`
+  gives either a rigid binary branch or reflected factors `P+s,P-s` with
+  `s^2=0`.  The latter uses only one extra coordinate, placing the entire
+  triangle in a coordinate three-space.  Frobenius--Kunneth then identifies
+  every nonzero pure survivor as an embedded pure-`P3` suspension:
+  [`P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md`](P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md).
+  Mixed support-one/support-two and lower-pair-rank strata remain.
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while

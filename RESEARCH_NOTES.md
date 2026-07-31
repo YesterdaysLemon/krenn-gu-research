@@ -13228,3 +13228,44 @@ P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md
 verify_p5_h22_eisenstein_norm_component_generic_obstruction.py
 audit_p5_h22_eisenstein_norm_component_generic_obstruction.py
 ```
+
+### Double-support-one triangles are lower-rank or embedded `P3`
+
+For a coordinate zero divisor `e=Xi`, `Ann_R1(e)=C*e`.  If two rank-one
+edges share a common-mode factor and both are support-one, all three factors
+are `e`.  In `YY` and `XX`, the synchronization makes the two leaf planes
+coincide and their product image lies in `span(e*x,x^2)`.  In `YX`, the four
+products lie in `span(e*y,x*e)`.  Every common-factor orientation has pair
+rank at most two.
+
+For the crossed orientation, equal singleton supports collapse the common
+plane.  Distinct supports normalize to
+
+```text
+x1=y3=X0,       y2=x3=X1,       p*q=X0*X1.
+```
+
+With `Delta=p0*q1-p1*q0`, the off-edge coefficients imply
+`Delta*s_k=Delta*t_k=0`.  The nonrigid branch has
+
+```text
+p=P+s,
+q=lambda*(P-s),
+2*lambda*p0*p1=1,
+s^2=0.
+```
+
+Thus `s` uses at most one of `X2,X3`.  The rank-three survivor puts all three
+triangle planes in a coordinate three-space `H`.  Since
+`R=R_H tensor C[X_missing]/(X_missing^2)`, all sixteen four-mode coefficients
+factor as the missing-coordinate functional on `U0` times the restricted
+ternary tensor.  A nonzero pure survivor is therefore in the embedded-`P3`
+component.
+
+Primary theorem and verifiers:
+
+```text
+P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md
+verify_p4_support_one_211_triangle_reduction.py
+audit_p4_support_one_211_triangle_reduction.py
+```

@@ -1045,3 +1045,21 @@ primary decomposition.  With it, all thirteen certified pure-`P4`
 components are again generically closed for both `H31` and weighted `H22`.
 The live frontier is component exhaustiveness and special/lower-rank
 boundaries, not a remaining generic fibre of a known component.
+
+The next support boundary is controlled by an even more elementary
+Kunneth translation:
+[`P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md`](P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md).
+A coordinate zero divisor `X_i` has no independent linear annihilator, so a
+common-factor support-one triangle immediately loses pair rank.  In the
+crossed case, the remaining synchronization is a factorization of the edge
+monomial `X_0X_1`.  Its singular completion branch consists of reflections
+`P+s,P-s`; squarefreeness forces `s` onto one coordinate axis.
+
+That axis statement moves the problem from a factorization scheme to a
+coordinate three-space.  The squarefree Frobenius algebra then splits as a
+three-variable algebra tensor a dual-number factor, and every four-mode
+coefficient separates into the missing-coordinate functional times a
+ternary permanent coefficient.  Hence a pure survivor is precisely an
+embedded pure-`P3` suspension.  This closes the double-support-one boundary
+conceptually; mixed support-one/support-two edges and genuinely lower pair
+ranks remain.
