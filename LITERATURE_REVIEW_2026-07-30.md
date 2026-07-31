@@ -296,9 +296,19 @@ factor covers by tiny one-marked determinants, except at two deepest
 points where the appropriate object is a stacked source map with
 constant determinants `8` and `-8`.  This is naturally read as a
 kernel-sheaf gluing problem: local Fitting generators may vanish while
-two source directions still generate the full fibre.  The sole
-remaining weighted degeneration is qualitatively different, not a
-further arrangement point: when `rS=1,T=rU`, the projected line
-contracts to one point.  That suggests replacing line-arrangement
-intersection by the geometry of a non-flat image or an elementary
-transform of the kernel sheaf.
+two source directions still generate the full fibre.
+
+The qualitatively different collapse `rS=1,T=rU` is now closed too:
+[`P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md).
+Instead of taking a non-flat limit of the first line arrangement, use
+the second marked contraction required by `H22`.  It becomes a
+`7 x 6` matrix pencil with maximal minors supported only at
+`S=+/-1`.  At one Kronecker-type singular fibre the kernel annihilates
+the required pure coefficient; at the other it has no alpha-extension
+direction and annihilates the first slice's diagonal.  This matches
+the invariant-first philosophy of basis-free matrix-pencil reduction
+([Verdier](https://arxiv.org/abs/1205.1138)) and minimal pencil ranks
+([Goulart--Comon](https://arxiv.org/abs/1712.05742)): identify the
+singular fibres and kernel covectors before solving coordinates.  The
+payoff here is a full normalized-chart theorem, not merely a generic
+or rank-two statement.

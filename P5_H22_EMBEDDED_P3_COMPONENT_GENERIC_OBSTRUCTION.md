@@ -11,11 +11,13 @@ Both weighted neighboring diagonal pencils have empty binary
 generic marked weighted `H22` fibre is empty, without imposing a
 ternary local-rank condition.
 
-The theorem does not close its displayed slope/parameter divisors,
-the component's projective boundary, the special boundary of its
-generic `H31` theorem, prove that the nine known pure-`P_4` components
-are exhaustive, produce a prize graph, or settle the global
-Krenn--Gu conjecture.
+This generic theorem alone does not close its displayed
+slope/parameter divisors.  The two later boundary theorems close them
+throughout the normalized affine chart.  The combined results still
+do not close the component's omitted normalization/projective
+boundary, prove that the nine known pure-`P_4` components are
+exhaustive, produce a prize graph, or settle the global Krenn--Gu
+conjecture.
 
 ## Normalized pure component
 
@@ -236,12 +238,17 @@ Neither component exhaustiveness nor every normalization/projective
 boundary follows.  The rank-two projected-line boundary of this
 ninth component has since been closed:
 [`P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md).
-The remaining weighted chart frontier is the rank-one projection
-collapse
+The remaining rank-one projection collapse
 
 ```text
 rS=1,             T=rU,
 ```
 
 where the two projected mode-zero rows become proportional and the
-line-arrangement kernel calculation changes type.
+line-arrangement kernel calculation changes type, has also since been
+closed by using the other required marked slice as a complementary
+insertion pencil:
+[`P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md).
+Thus the entire normalized affine weighted `H22` chart of the ninth
+component is empty.  Its omitted normalization/projective boundary
+remains open.

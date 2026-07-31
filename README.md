@@ -276,8 +276,14 @@ strictly advance the finite frontier:
   with constant stacked determinants `8` and `-8` at the two deepest
   rank-three points:
   [`P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md).
-  Its normalization/projective boundary and the rank-one projection
-  collapse remain open.
+  The rank-one projection collapse is now empty at binary compatibility
+  too.  The other required marked slice becomes an insertion pencil
+  with singular fibres only at `S=+/-1`; their kernels kill,
+  respectively, its pure diagonal and the first slice's alpha
+  diagonal:
+  [`P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md).
+  Thus its full normalized weighted `H22` chart is closed; the omitted
+  normalization/projective boundary remains open.
 - all five minimal primes in the mixed `3 x 4` determinantal chart are
   now identified.  Two are the sixth component, one is a subfamily of
   the six-dimensional component, and the remaining two are explicit
@@ -865,8 +871,9 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   structural zero diagonal.  Thus all nine known orbits are now
   generically closed for both marked types.  The ninth orbit's entire
   normalized `H31` chart is closed as well, and its weighted boundary
-  is closed on every rank-two projected-line stratum.  Only the
-  rank-one projected-image collapse remains in that weighted chart.
+  is closed on every rank-two projected-line stratum.  The rank-one
+  projected-image collapse is now closed by the complementary marked
+  contraction too, so its entire normalized weighted chart is empty.
   Remaining special
   component/slope boundaries and component exhaustiveness stay open,
   although the eighth component's full equal- and opposite-weight

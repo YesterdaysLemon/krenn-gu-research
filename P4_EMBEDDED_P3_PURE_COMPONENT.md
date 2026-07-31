@@ -34,9 +34,12 @@ slope, excludes its generic weighted `H22` fibre:
 Its entire rank-two projected-line weighted boundary is excluded by
 six symbolic one-marked factor covers:
 [`P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md).
+The rank-one collapse is excluded by the complementary insertion
+pencil:
+[`P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md).
 The component theorem itself does not classify the full
 pure-compression locus, analyze the remaining normalization and
-rank-one-projection boundaries,
+projective boundaries,
 produce a graph satisfying the Krenn--Gu prize conditions, or prove
 the global conjecture.
 
@@ -364,5 +367,16 @@ verify_p5_h22_embedded_p3_component_rank_two_line_boundary.py
 audit_p5_h22_embedded_p3_component_rank_two_line_boundary.py
 ```
 
-The remaining weighted chart frontier is the rank-one projected-image
-collapse `rS=1,T=rU`.
+At the remaining rank-one projected-image collapse `rS=1,T=rU`, the
+other required marked slice gives a complementary `7 x 6` insertion
+pencil.  It is injective away from `S=+/-1`; the two exceptional
+kernels kill one of the required nonzero diagonals:
+
+```text
+P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md
+verify_p5_h22_embedded_p3_component_rank_one_collapse.py
+audit_p5_h22_embedded_p3_component_rank_one_collapse.py
+```
+
+Thus the full normalized affine weighted `H22` chart is empty.  Only
+the component's omitted normalization/projective boundary remains.

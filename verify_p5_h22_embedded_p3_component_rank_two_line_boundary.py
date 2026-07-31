@@ -507,7 +507,7 @@ def main() -> None:
         "coordinate_e3_endpoint_minor": str(e3_endpoint),
         "coordinate_e3_stacked_determinant": str(determinant_e3),
         "rank_two_projected_line_weighted_H22_fibre_empty": True,
-        "rank_one_projection_collapse_closed": False,
+        "rank_one_projection_collapse_claimed_by_this_theorem": False,
         "normalization_projective_boundary_closed": False,
         "global_problem_resolved": False,
         "dependencies": {

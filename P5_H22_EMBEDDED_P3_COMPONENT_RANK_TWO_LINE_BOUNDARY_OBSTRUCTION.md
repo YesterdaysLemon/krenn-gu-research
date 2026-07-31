@@ -12,11 +12,14 @@ Every such weighted boundary point has empty marked `H22` fibre.  The
 `D_01^r` binary survivors form six explicit marked families, all
 excluded by small one-marked or stacked one-marked determinants.
 
-The theorem does not cover the separate rank-one projection collapse,
-where the two projected mode-zero rows become proportional.  It also
-does not close the component's omitted normalization/projective
-boundary, prove component exhaustiveness, or resolve the global
-Krenn--Gu conjecture.
+This theorem's projected-line argument does not cover the separate
+rank-one projection collapse, where the two projected mode-zero rows
+become proportional.  That stratum has since been closed by the
+complementary marked contraction:
+[`P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md).
+The two theorems still do not close the component's omitted
+normalization/projective boundary, prove component exhaustiveness, or
+resolve the global Krenn--Gu conjecture.
 
 ## Weighted projection and insertion arrangement
 
@@ -274,7 +277,7 @@ weighted direction has the structural zero diagonal, the marked
 `H22` fibre is empty at every normalized point with rank-two
 projected mode-zero image.
 
-## Rank-one projection collapse left open
+## Rank-one projection collapse requires the other marked slice
 
 The two vectors in (3) become proportional precisely when
 
@@ -287,7 +290,9 @@ This is not a point of the projective-line incidence used above:
 `t_0=-r`, the projected marked-beta row is zero and the beta diagonal
 can be supplied entirely by the extension coordinate.  The
 single-slice insertion argument therefore changes type.  This
-rank-one gate stratum is explicitly not claimed by the theorem.
+rank-one gate stratum is not claimed by the present theorem.  The
+separate rank-one theorem uses the required pure `D_23^r` slice as a
+second insertion pencil and excludes the collapse completely.
 
 ## Verification
 

@@ -505,7 +505,7 @@ def main() -> None:
         "deepest_neighboring_rank_at_most_three": True,
         "deepest_stacked_full_source_rank": 5,
         "rank_two_projected_line_weighted_H22_fibre_empty": True,
-        "rank_one_projection_collapse_closed": False,
+        "rank_one_projection_collapse_claimed_by_this_theorem": False,
         "finite_field_audit_is_theorem": False,
         "global_problem_resolved": False,
         "dependencies": {

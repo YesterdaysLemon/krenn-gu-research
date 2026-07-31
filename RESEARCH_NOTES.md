@@ -11300,8 +11300,8 @@ det rows(0,2,7,10,14)=8.
 
 Thus the third target row vanishes globally, contradicting local rank
 three.  The full normalized affine chart is closed for `H31`; the
-omitted normalization/projective boundary and the special weighted
-`H22` boundary remain.
+omitted normalization/projective boundary remains.  The normalized
+weighted `H22` boundary is closed by the two subsequent theorems below.
 
 ### Rank-two projected-line weighted boundary of the ninth component
 
@@ -11344,3 +11344,43 @@ rS=1,             T=rU,
 
 where the two projected rows are proportional and `Lambda_r` becomes
 a point.  This is not covered by the line-arrangement argument.
+
+### Complementary-pencil closure of the rank-one collapse
+
+The collapse is now closed in
+
+```text
+P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md
+verify_p5_h22_embedded_p3_component_rank_one_collapse.py
+audit_p5_h22_embedded_p3_component_rank_one_collapse.py
+```
+
+The first mixed coefficient forces `t_0=-r`.  The `D_01` beta row then
+projects entirely to the extension coordinate, with beta diagonal
+`-2y_0`.  Compatibility with `H22` requires the other marked slice
+`D_23` to be nonzero pure.  After undoing the harmless markings in the
+last three modes, its seven unwanted coefficients form a `7 x 6`
+insertion pencil `N_S`.  Four nonzero maximal minors are
+
+```text
++/-4(S-1)^2(S+1)^2/S^5.
+```
+
+Hence only `S=+/-1` can survive.  At `S=1`,
+
+```text
+ker N_1=<x_3,z_3>,
+```
+
+but the desired `D_23` pure coefficient vanishes on the kernel.  At
+`S=-1`,
+
+```text
+ker N_{-1}=<z_1,z_2>,
+```
+
+so every alpha extension vanishes and the required `D_01` alpha
+diagonal is zero.  Thus the collapse has no binary `H22`
+compatibility.  Together with the rank-two theorem, the entire
+normalized affine weighted `H22` chart of the ninth component is now
+empty.  The omitted normalization/projective boundary remains.

@@ -48,6 +48,8 @@ DEPENDENCIES = (
     / "P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md",
     ROOT
     / "P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md",
+    ROOT
+    / "P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md",
     ROOT / "P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md",
     ROOT / "P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md",
     ROOT / "P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md",
@@ -367,7 +369,8 @@ def main() -> None:
                 "disjoint_mixed_star_component_generic_weighted_incidence_empty": True,
                 "embedded_P3_component_generic_weighted_incidence_empty": True,
                 "embedded_P3_component_rank_two_projected_line_H22_boundary_excluded": True,
-                "embedded_P3_component_rank_one_projection_collapse_excluded": False,
+                "embedded_P3_component_rank_one_projection_collapse_excluded": True,
+                "embedded_P3_component_complete_normalized_chart_weighted_H22_excluded": True,
                 "six_dimensional_component_diagonal_pencils": [
                     "x0_equals_x1",
                     "x2_equals_x3",

@@ -1116,9 +1116,15 @@ one-marked covers exclude them, with stacked determinants `8` and
 
 - [`P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md)
 
-The ninth component's omitted normalization/projective boundary,
-rank-one weighted projection collapse `rS=1,T=rU`, and exhaustiveness
-of the new component list remain open.  The earlier modular pattern and
+The rank-one collapse `rS=1,T=rU` is now closed by switching to the
+other required marked contraction.  Its complementary insertion
+pencil is injective away from `S=+/-1`; at those two fibres its kernel
+kills the `D_23` pure diagonal or the `D_01` alpha diagonal:
+
+- [`P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md)
+
+The ninth component's omitted normalization/projective boundary and
+exhaustiveness of the new component list remain open.  The earlier modular pattern and
 timed-out broad route remain as provenance:
 
 - [`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md)

@@ -831,15 +831,15 @@ apolar insertion map whose generic projected-line kernels all kill
 one required diagonal.  Restoring the weighted slope closes its
 generic `H22` fibre as well: one diagonal direction is structurally
 zero and the other is the same insertion arrangement on a
-  slope-dependent line.  Its normalized affine `H31` chart is closed,
-  and its weighted boundary is now closed whenever that projected
-  image remains a line; only the rank-one collapse `rS=1,T=rU`
-  remains in the weighted chart.  Exhaustiveness of those nine orbits,
-  the ninth component's omitted normalization/projective boundary,
-  and the special component/slope
-  boundary incidences in `H22` remain unresolved.  Its full normalized
-affine `H31` chart is now closed, including all nine exceptional
-insertion points.
+slope-dependent line.  Its full normalized affine `H31` chart is
+closed, including all nine exceptional insertion points.  Its weighted
+boundary is closed whenever that projected image remains a line, and
+the rank-one collapse `rS=1,T=rU` is now excluded by the complementary
+marked contraction.  Thus the ninth component's entire normalized
+weighted `H22` chart is empty.  Exhaustiveness of those nine orbits,
+the ninth component's omitted normalization/projective boundary, and
+the special component/slope boundary incidences in `H22` remain
+unresolved.
 
 ## Verification
 
