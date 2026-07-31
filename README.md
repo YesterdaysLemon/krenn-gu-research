@@ -466,6 +466,18 @@ strictly advance the finite frontier:
   [`P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md`](P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md).
   Components fourteen and fifteen now reopen the generic marked `H31/H22`
   frontier.
+- the overlapping `1+3` secant center creates no sixteenth component.  Its
+  two cross-product catalecticants are rank-two stars whose radical planes
+  meet in one line.  In an adapted basis, opposite-plane purity has
+  determinant `m*n*lambda^2`, splitting into two mode-swapped polar-flag
+  branches.  A six-parameter branch is smooth, with family minor
+  `-1/13824` and incidence minor `280/729`, but a source transformation and
+  mode order `(0,3,2,1)` identify its certificate point with the original
+  six-dimensional lower-pair component.  Smoothness makes the two charts the
+  same irreducible component.  Thus every genuine support-two single
+  rank-two edge is classified; support-one secant boundaries and
+  multiple-edge compatibility remain:
+  [`P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md`](P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md).
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while

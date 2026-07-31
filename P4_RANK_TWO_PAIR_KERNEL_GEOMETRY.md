@@ -57,6 +57,19 @@ fit together, prove that the nine known components are exhaustive,
 close their special `H22` fibres, or settle the global Krenn--Gu
 conjecture.
 
+Subsequent work has completed the genuine support-two single-edge purity
+problem.  Tangent kernels split between a new full-support component and the
+known support-two sixfold boundary; disjoint secants give another new
+component; overlapping secants recover the earlier sixfold:
+
+- [`P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md`](P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md)
+- [`P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md`](P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md)
+- [`P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md`](P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md)
+
+The component count and marked-fibre sentence above describe the historical
+checkpoint of this theorem; the live frontier is support-one secant
+boundaries and compatibility of several lower-rank edges.
+
 ## The annihilator bound
 
 For

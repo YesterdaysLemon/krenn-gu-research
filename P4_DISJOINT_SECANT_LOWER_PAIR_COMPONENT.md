@@ -24,9 +24,12 @@ separates the two.  Dimension separates the five-dimensional full-support
 tangent component.  Hence the repository now certifies at least fifteen
 symmetry-inequivalent pure-`P_4` component orbits.
 
-This does not settle the overlapping secant center, the marked `P_5` fibres
-of components fourteen and fifteen, component exhaustiveness, or the global
-Krenn--Gu conjecture.
+The overlapping secant center is subsequently identified with the earlier
+sixfold in
+[`P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md`](P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md).
+The marked `P_5` fibres of components fourteen and fifteen, support-one
+secant boundaries, multiple-edge compatibility, component exhaustiveness,
+and the global Krenn--Gu conjecture remain open.
 
 ## Two complementary hyperbolic planes
 

@@ -1166,3 +1166,20 @@ earlier lower-pair sixfold, while the discrete secant-center invariant does
 not: one has disjoint `2+2` supports and the other overlapping `1+3`
 supports.  The remaining secant frontier is therefore the overlapping
 center and compatibility when more than one pair edge has rank two.
+
+The overlapping `1+3` secant center is also complete, but it recovers an
+old component rather than creating a new one:
+[`P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md`](P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md).
+The two radical planes now meet in a line.  Modulo that line, the two
+catalecticants are coordinate stars sharing one active direction.  The
+opposite-plane incidence factors as `mn lambda^2`, so its maximal strata are
+again two mode-swapped polar flags.
+
+A smooth common-point argument identifies this flag chart with the original
+six-dimensional lower-pair component.  This is a useful algebraic-geometry
+lesson: two normal forms that look combinatorially different are proved to
+parametrize the same component by transporting one exact point and using
+local uniqueness at a smooth point.  With that identification, all genuine
+support-two single-edge secant and tangent kernels are classified.  The
+remaining lower-pair issues are support-one secant degenerations and the
+simultaneous compatibility of more than one rank-two edge.

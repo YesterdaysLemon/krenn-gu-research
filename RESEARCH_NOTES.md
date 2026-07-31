@@ -13548,6 +13548,59 @@ verify_p4_disjoint_secant_lower_pair_component.py
 audit_p4_disjoint_secant_lower_pair_component.py
 ```
 
+### The overlapping secant chart is the original lower-pair sixfold
+
+For overlapping supports `{0,1}` and `{0,2}`, put
+
+```text
+a=X0+sX1,       a_bar=X0-sX1,
+b=X0+tX2,       b_bar=X0-tX2,
+c=sX1+tX2.
+```
+
+The two cross-products have radical planes
+
+```text
+P=span(a,b_bar),       K=span(a_bar,b),
+P intersection K=C*c.
+```
+
+In the adapted basis `(c,a,a_bar,X3)`, their catalecticants are two stars,
+pairing only `a--X3` and `a_bar--X3`.  Opposite polar flags have an `R`
+matrix with determinant `m*n*lambda^2`; the two maximal branches are `m=0`
+and `n=0`, exchanged by an opposite-mode swap.
+
+On `m=0`, a dense branch is
+
+```text
+U0=span(a,b),
+U1=span(a_bar,b_bar),
+U2=span(c,a+lambda*X3+u*a_bar),
+U3=span(c+n*a_bar,a-lambda*X3+v*a_bar).
+```
+
+Only `T1010=-2lambda*nst` and `T1011=2lambda*st(u-v)` survive.  At
+`(s,t,lambda,u,n,v)=(1,1,-2,7,-1,3)`, the family minor is `-1/13824` and
+the pivot-`01` Segre-incidence minor is `280/729`, giving a smooth sixfold.
+
+Transforming the original sixfold certificate `(a,c,d,b,e)=(1,2,4,1,2)` by
+
+```text
+(E0,E1,E2,E3)->(E3,-E0,E2,E1)
+```
+
+and reordering modes as `(0,3,2,1)` gives exactly this same point.  Since the
+incidence is smooth of local dimension six there, the two irreducible
+six-dimensional closures coincide.  The polar-flag family is therefore a
+new dense normal form for the known overlapping lower-pair component, not
+component sixteen.
+
+```text
+P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md
+verify_p4_overlapping_secant_lower_pair_classification.py
+audit_p4_overlapping_secant_lower_pair_classification.py
+```
+
 Primary theorem and verifiers:
 
 ```text
