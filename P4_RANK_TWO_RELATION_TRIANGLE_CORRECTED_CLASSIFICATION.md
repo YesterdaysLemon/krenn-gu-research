@@ -48,9 +48,13 @@ the restricted tensor is exactly
 
 Thus this note supplies a genuine symbolic family and a complete theorem,
 not an obstruction.  It corrects the withdrawn flat-triangle record and
-provides the honest input for the still-withdrawn star and mixed-triangle
-arguments.  It does not prove pure-component exhaustiveness, construct a
-Krenn--Gu graph, or settle the global conjecture.
+provides the honest input for the repaired star and mixed-triangle
+arguments.  Subsequent work identifies the whole family with the `p=0`
+divisor of component eleven:
+[`P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md`](P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md).
+It therefore creates no additional component.  This does not prove full
+pure-component exhaustiveness, construct a Krenn--Gu graph, or settle the
+global conjecture.
 
 ## From holonomy to the flat problem
 
@@ -333,7 +337,7 @@ Lefschetz/annihilator behavior of monomial complete intersections
 ([Phuong--Tran](https://arxiv.org/abs/2211.13548)).  The normal form (1) and
 its exhaustiveness are repository-specific.
 
-## Correct frontier
+## Historical frontier and subsequent containment
 
 The all-rank-two-relation triangle is now classified rather than merely
 obstructed.  The next symbolic questions are compatibility of (1) with:
@@ -343,8 +347,11 @@ obstructed.  The next symbolic questions are compatibility of (1) with:
 3. the lower pair-image-rank components; and
 4. the marked `P_5` extension strata relevant to Krenn--Gu.
 
-Those are global compatibility questions.  This theorem alone does not
-settle them.
+The star and mixed `(2,2,1)` questions were subsequently repaired, the
+lower-pair locus was subsequently exhausted, and the present survivor was
+placed on component eleven.  This theorem alone does not settle the
+remaining all-pair-ranks-at-least-three component classification or the
+marked extension problem.
 
 ## Verification
 

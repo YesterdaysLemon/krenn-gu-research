@@ -229,6 +229,16 @@ strictly advance the finite frontier:
   excluded.  This replaces the withdrawn empty-triangle claim with a
   complete Borel classification:
   [`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
+- that corrected survivor is not a sixteenth component.  It also carries a
+  rank-one star from its opposite plane.  After the block source scaling
+  `diag(1,1,alpha_1,alpha_1)`, set
+  `p=0`, `r=alpha_2/alpha_1`, and `q=alpha_1/alpha_3` in component eleven.
+  The four row spaces agree exactly, in mode order `(3,1,2,0)`, and the
+  component coefficient satisfies
+  `1+q(r+1)=(alpha_1+alpha_2+alpha_3)/alpha_3`.
+  Hence the entire all-rank-two-relation triangle is the closure of the
+  `p=0` divisor of the equal-support sixfold:
+  [`P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md`](P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md).
 - the dependent rank-two-relation star is now reproved rather than merely
   resurrected from the withdrawn argument.  Four-distinct centers reduce
   by the exact adjugate-pencil matching to the corrected support-two

@@ -1216,3 +1216,31 @@ sixfold, the full-support tangent component fourteen, and the disjoint
 secant component fifteen.  Several simultaneous rank-two edges can only
 describe intersections among those four closures; they cannot support an
 additional irreducible component.
+
+The same closure-poset viewpoint resolves another formerly loose family on
+the all-pair-ranks-three locus.  The corrected flat triangle with three
+rank-two relation matrices is
+
+```text
+T0=span(b_bar,a_bar),
+Ti=span(a,b+alpha_i*a_bar),       i=1,2,3.
+```
+
+It also carries a rank-one star from `T0`, so its visible exceptional graph
+depends on which three-edge subgraph is emphasized.  A block source scaling
+and the rational substitution
+
+```text
+p=0,       r=alpha_2/alpha_1,       q=alpha_1/alpha_3
+```
+
+identify its four row spaces with the equal-support component-eleven chart.
+The triangle's nonzero factor becomes exactly
+`1+q(r+1)=(alpha_1+alpha_2+alpha_3)/alpha_3`.  Thus the holonomy/synchronizer
+family and the exact-zero-divisor/apolar family are two presentations of one
+boundary divisor.  This is the quiver-Grassmannian lesson suggested earlier:
+relation graphs can jump on a boundary without creating a new irreducible
+component.
+
+See
+[`P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md`](P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md).

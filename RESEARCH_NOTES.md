@@ -13659,6 +13659,44 @@ verify_p4_support_one_secant_boundary_inclusion.py
 audit_p4_support_one_secant_boundary_inclusion.py
 ```
 
+### The all-rank-two-relation triangle is a component-eleven divisor
+
+The corrected support-two flat triangle
+
+```text
+T0=span(b_bar,a_bar),
+Ti=span(a,b+alpha_i*a_bar),       i=1,2,3,
+sum_i alpha_i!=0
+```
+
+has all six pair images of rank three.  The three leaf relations have
+coefficient rank two, while the three relations from `T0` have coefficient
+rank one.  Thus it simultaneously exposes a rank-two triangle and a
+rank-one star.
+
+It is not a sixteenth component.  Apply
+`diag(1,1,alpha_1,alpha_1)` and set
+
+```text
+p=0,       r=alpha_2/alpha_1,       q=alpha_1/alpha_3.
+```
+
+In mode order `(3,1,2,0)`, the component-eleven planes become exactly the
+four `T_i`.  The pure coefficient identity is
+
+```text
+1+q(r+1)=(alpha_1+alpha_2+alpha_3)/alpha_3.
+```
+
+The dense chart `alpha_1*alpha_3!=0` therefore equals the `p=0` divisor of
+the equal-support sixfold.  Closedness supplies all parameter endpoints.
+
+```text
+P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md
+verify_p4_all_rank_two_relation_triangle_component_inclusion.py
+audit_p4_all_rank_two_relation_triangle_component_inclusion.py
+```
+
 Primary theorem and verifiers:
 
 ```text

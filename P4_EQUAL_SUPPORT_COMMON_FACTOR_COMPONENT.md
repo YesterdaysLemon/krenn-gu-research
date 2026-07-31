@@ -27,6 +27,12 @@ Its generic weighted `H22` fibre is subsequently proved empty in
 Its special pure-factor degenerations and projective boundary, component
 exhaustiveness, and the global Krenn--Gu conjecture remain open.
 
+The `p=0` divisor is now identified exactly with the corrected
+all-rank-two-relation triangle in
+[`P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md`](P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md).
+That family has pair profile `(3,3,3,3,3,3)` and relation-rank word
+`(1,1,1,2,2,2)`; it is a boundary of this component, not another component.
+
 ## The exact-zero-divisor normal form
 
 Work in
