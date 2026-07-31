@@ -13434,6 +13434,61 @@ verify_p4_full_support_tangent_pair_component.py
 audit_p4_full_support_tangent_pair_component.py
 ```
 
+### Support-two tangent flags are a boundary of the known sixfold
+
+The support-two flag family has a common quadratic tangent direction rather
+than the two coprime obstructions of the full-support graph.  That direction
+integrates explicitly into the six-dimensional lower-pair component.
+
+In old source coordinates set
+
+```text
+e=E3,
+H=alpha*E0+beta*E2,
+S=alpha*E0-beta*E2,
+Z=tau*E1.
+```
+
+Apply `diag(alpha*epsilon,tau,beta*epsilon,1)` to the sixfold normal form and
+take
+
+```text
+s=sigma/epsilon+s0,       d=D,
+b=epsilon/sigma+B*epsilon^2,
+e1=epsilon/sigma+C*epsilon^2,
+h0=s0-D.
+```
+
+The rank-two edge planes have Pluecker valuation one and both limit to
+`span(e,H)`.  The two opposite planes have valuations two and one.  Their
+limits are
+
+```text
+span(e+pS,H+lambda*Z+qS),
+span(S,H-lambda*Z+r*e),
+```
+
+where
+
+```text
+lambda=2/sigma,
+p=-1/(sigma(B-C)),
+q=2p(C*sigma^2+h0)/sigma-1,
+r=2D/sigma.
+```
+
+These equations are dominant onto the dense polar-flag parameters.  The
+opposite flag orientation follows by a mode swap, and closure adds the
+remaining chart boundary.  Thus every support-two tangent survivor is either
+embedded `P3` or belongs to the closure of the known sixfold; no fifteenth
+component occurs there.
+
+```text
+P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md
+verify_p4_support_two_tangent_flag_boundary_inclusion.py
+audit_p4_support_two_tangent_flag_boundary_inclusion.py
+```
+
 Primary theorem and verifiers:
 
 ```text

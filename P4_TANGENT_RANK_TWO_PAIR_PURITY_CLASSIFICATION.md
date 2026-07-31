@@ -28,8 +28,12 @@ Let `A=U_2`, `B=U_3`.  This note classifies all possible opposite pairs.
 Thus tangent kernels are not automatically empty and not all of them are
 embedded `P_3`.  Their complete geometry is nevertheless controlled by
 orthogonal complements and radical flags, without a permanent-ideal search.
-Whether the non-embedded families are boundary strata of known components or
-sit on further component closures remains open here.
+Subsequent work separates the two non-embedded outcomes.  The full-support
+graph is a new five-dimensional component in
+[`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md`](P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md),
+while every dense support-two polar flag lies on the known six-dimensional
+lower-pair component by
+[`P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md`](P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md).
 
 ## Purity becomes two bilinear forms
 
@@ -232,7 +236,8 @@ Its profile is `(2,4,3,4,3,4)`, and its restriction is
 
 Both profiles sort to `(2,3,3,4,4,4)`, the same generic rank multiset as the
 known six-dimensional lower-pair component.  Kernel tangency distinguishes
-the displayed strata, but does not by itself decide component containment.
+the displayed strata, but does not by itself decide component containment;
+the two subsequent closure theorems cited above do.
 
 ## Across the mathematical fence
 

@@ -440,6 +440,18 @@ strictly advance the finite frontier:
   [`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md`](P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md).
   A graph picture is in
   [`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg`](P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg).
+- the support-two polar flags do not supply component fifteen.  An explicit
+  one-parameter Pluecker degeneration starts in the earlier six-dimensional
+  lower-pair component, scales the two block coordinates by `epsilon`, and
+  tunes two plane parameters through second order.  The two secant kernel
+  points coalesce to the tangent point at valuation one; the opposite planes
+  retain the full radical flag at valuations two and one.  The limiting
+  parameters cover every dense flag
+  `span(e+pS,H+lambda*Z+qS), span(S,H-lambda*Z+r*e)`.
+  Hence support-two tangent purity is either embedded `P3` or a boundary of
+  the known sixfold.  Together with component fourteen, this completes the
+  tangent half of exact pair rank two:
+  [`P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md`](P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md).
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while

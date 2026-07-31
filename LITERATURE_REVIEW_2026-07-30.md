@@ -1128,3 +1128,22 @@ directions, so future boundary work must use normal cones or formal arcs,
 not raw tangent dimensions.  The new component reopens the generic marked
 `H31/H22` extension question after the previous thirteen components had been
 closed generically.
+
+The degenerate support-two polar flags have the opposite deformation
+behavior:
+[`P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md`](P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md).
+Their shared quadratic direction integrates into the earlier
+six-dimensional lower-pair component.  A critical source scaling makes its
+two secant kernel points collide, while second-order jets of the plane
+parameters retain the radical flag.  Pluecker valuations `(1,1,2,1)` recover
+the two tangent planes and both polar partners.
+
+This is close in spirit to limit linear series and tropical/valuative
+Grassmannian methods: the ordinary row limit loses rank, but the leading
+wedge remembers the limiting plane, and a higher-order coefficient records
+the extension data.  It explains the dichotomy hidden by the common sorted
+pair profile.  Full support has a nondegenerate ternary polar form and gives
+the new obstructed fivefold; support two has a radical and smooths into the
+old sixfold.  Consequently the tangent-kernel frontier is now complete, and
+the remaining exact-rank-two question is the compatibility of secant block
+centers.
