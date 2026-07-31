@@ -1247,6 +1247,21 @@ The remaining generic triangle work is no longer an undifferentiated
 support problem.  It is confined to common-factor/radical Borel
 orientations and support-one or lower-pair-rank boundaries.
 
+The first common-factor branch is now a new component rather than a boundary
+obstruction:
+
+- [`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md)
+
+Two leaf kernel rows share the exact zero divisor `a`, while their rank-one
+edges share the active common-mode row `a_bar`.  The rank-two edge reduces to
+`x_2-x_1 in (a_bar)`, leaving one affine translation parameter `r`.  Its
+rank-one cubic apolar space leaves a `P^2` opposite-plane fibre.  Together
+with the source torus, the family has dimension six; exact minors `3/128`
+and `-9/2` certify a smooth incidence point.  The sorted pair profile
+`(3,3,3,4,4,4)` distinguishes it from the earlier six-dimensional
+component.  The certified lower bound is now eleven component orbits, and
+this new component has no `H31` or weighted `H22` obstruction yet.
+
 The earlier
 quadratic-function-field experiments and their null outcomes remain
 recorded as provenance:
@@ -1270,8 +1285,9 @@ marked-fibre level:
 
 ## Priority
 
-1. close the parameter/projective boundaries of the three split-cubic
-   components, the sixth component, and the six-dimensional component,
+1. analyze the eleventh component's generic marked `H31` and weighted `H22`
+   fibres, then close the parameter/projective boundaries of the three split-cubic
+   components, the sixth component, and the earlier six-dimensional component,
    close the disjoint mixed-star component's special `H31/H22`
    boundaries,
    then classify the remaining common-factor/radical orientations of the

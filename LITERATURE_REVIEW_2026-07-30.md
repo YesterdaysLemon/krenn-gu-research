@@ -716,6 +716,28 @@ Macaulay duality is what produces the classification.  This synthesis seems
 stronger for the present local problem than any one neighboring
 specialization by itself.
 
+The equal-support common-factor orbit then gives the opposite answer: it is
+not obstructed but component-sized.  Its exact normal form and smoothness
+certificate are in
+[`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md).
+The shared pair `a a_bar=0` gives the two-periodic complex
+
+```text
+... -> R --a_bar--> R --a--> R --a_bar--> R -> ...,
+```
+
+and the rank-two edge becomes the affine synchronization law
+`x_2-x_1 in Ann(a)=(a_bar)`.  This leaves a genuine translation modulus.
+Holm's construction of totally reflexive modules from exact zero-divisor
+pairs ([arXiv:1002.0419](https://arxiv.org/abs/1002.0419)) is the nearest
+homological language, while Tran--Skoldberg compute Hochschild cohomology for
+square-free monomial complete intersections
+([arXiv:1806.07802](https://arxiv.org/abs/1806.07802)).  Neither predicts the
+permanent family.  Here the one-dimensional kernel-cubic span has a `P^2`
+apolar opposite-plane fibre; adjoining the affine synchronization parameter
+and source torus produces a smooth sixfold.  This raises the certified
+component lower bound to eleven.
+
 The tenth component's generic `H31` obstruction adds a module-theoretic
 translation:
 [`P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).

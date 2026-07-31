@@ -12599,3 +12599,53 @@ calculation, a symmetric rank-two completion problem on `K2`, `K_(2,2)`, or
 `K3`, and an apolar `Gr(2,3)` construction.  The remaining triangle frontier
 is confined to common-factor/radical Borel orientations, support-one zero
 products, and lower pair-image ranks.
+
+### Equal support hides an eleventh, six-dimensional component
+
+The common-factor orientation excluded from the crossed theorem is nonempty.
+Put
+
+```text
+a=X0+X1,       a_bar=X0-X1,
+b=X2+X3,       b_bar=X2-X3,
+
+U0=span(a+p*b,a_bar+q*b),
+U1=span(a,a_bar+b),
+U2=span(a,r*a_bar+b),
+U3=span(b_bar,a_bar).
+```
+
+The two rank-one relations are the same exact zero-divisor pair
+`a*a_bar=0`; the rank-two relation is `y1*x2-x1*y2=0`.  This is the
+homological synchronization law `x2-x1 in Ann(a)=(a_bar)`, leaving the affine
+parameter `r`.
+
+All kernel-containing triangle cubics span the single line `C*a^2*b_bar`.
+Its degree-one annihilator is `span(a,a_bar,b)`, so `U0` is the dense chart
+of an apolar `Gr(2,3)=P^2`.  Exact permanent expansion leaves only
+
+```text
+T_0111=-4p(r+1),
+T_1111=-4(1+q(r+1)).
+```
+
+The generic pair profile is `(4,4,4,3,3,3)` and the triangle relation ranks
+are `(2,1,1)`.  Restoring `diag(t0,t1,t2,1)`, the six-parameter family has a
+Grassmann-chart tangent minor `3/128` at `(p,q,r)=(1,2,2)`.  On the universal
+Segre incidence, a fourteen-by-fourteen Jacobian minor is `-9/2`, and the
+family tangent bounds the full rank by fourteen.  Hence the incidence is
+smooth of dimension six there and the irreducible family closure is a full
+component.
+
+The earlier six-dimensional component has sorted pair profile
+`(2,3,3,4,4,4)`; the new one has `(3,3,3,4,4,4)`.  It is also dimensionally
+distinct from every fivefold.  The certified lower bound is therefore eleven
+component orbits.  An independent `F101` audit, after source permutation and
+unequal diagonal scaling, recovers family tangent rank six, incidence rank
+fourteen, the pair profile, and the two-point pure support by subset-DP
+permanents.  No search is used.
+
+The new component's generic `H31` and weighted `H22` fibres are open.  Thus
+the earlier statement that all ten known components were generically closed
+for `H31` remains a correct historical checkpoint but is no longer the
+current exhaustive known-component status.

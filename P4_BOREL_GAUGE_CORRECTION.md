@@ -90,3 +90,8 @@ genuine support-two orientation of that triangle is now classified in
 only the one-coordinate-overlap orbit survives at full source support, and it
 is the first apolar component.  Common-factor/radical orientations,
 support-one products, and lower pair ranks remain.
+
+The first common-factor branch has now proved nonempty and component-sized:
+[`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md)
+certifies a six-dimensional eleventh component.  Its other orientations and
+boundaries remain unclassified.

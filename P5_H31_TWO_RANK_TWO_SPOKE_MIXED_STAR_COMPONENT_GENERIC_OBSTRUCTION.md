@@ -6,11 +6,14 @@
 marked-basis fibre over the generic point of the two-rank-two-spoke
 mixed-star component is empty for `H31`.
 
-Together with the earlier component theorems, all ten currently certified
-pure-`P_4` component orbits are now generically closed for `H31`.  This does
+Together with the earlier component theorems, this closed all ten component
+orbits certified at this checkpoint.  The later equal-support common-factor
+triangle has supplied an eleventh component in
+[`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md),
+whose generic marked fibres are not covered here.  This theorem also does
 not close the tenth component's special parameter/projective boundary, its
-weighted `H22` fibre, component exhaustiveness, or the global Krenn--Gu
-prize problem.
+weighted `H22` fibre, component exhaustiveness, or the global Krenn--Gu prize
+problem.
 
 ![The mixed-star exceptional graph](research_figures/p4_two_rank_two_spoke_mixed_star.png)
 

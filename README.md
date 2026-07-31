@@ -285,6 +285,18 @@ strictly advance the finite frontier:
   [`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md).
   The support octahedron is shown in
   [`P4_CROSSED_211_TRIANGLE_SUPPORT_OCTAHEDRON.png`](P4_CROSSED_211_TRIANGLE_SUPPORT_OCTAHEDRON.png).
+- the equal-support common-factor orientation does not collapse: it supplies
+  an eleventh component orbit, and a second six-dimensional one.  In binary
+  block notation its normalized family is
+  `U0=span(a+p b,a_bar+q b)`,
+  `U1=span(a,a_bar+b)`, `U2=span(a,r a_bar+b)`, and
+  `U3=span(b_bar,a_bar)`.  Only
+  `T_0111=-4p(r+1)` and `T_1111=-4(1+q(r+1))` survive.  A family tangent
+  minor `3/128` and a Segre-incidence minor `-9/2` prove that its
+  diagonal-source closure is a smooth six-dimensional component.  Its
+  sorted pair profile `(3,3,3,4,4,4)` distinguishes it from the previous
+  sixfold's `(2,3,3,4,4,4)`:
+  [`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md).
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while
@@ -1047,7 +1059,10 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   factored rank-eight minors, excluding both binary directions on a dense
   total-space open.  Exact polynomial modules also close all markings and
   slopes at three rational component points.  The generic component's
-  remaining marking divisors stay open.  The ninth orbit's entire
+  remaining marking divisors stay open.  The later equal-support
+  common-factor triangle raises the component count to eleven; none of the
+  preceding `H31/H22` theorems covers its generic marked fibres yet.  The
+  ninth orbit's entire
   normalized `H31` chart is closed as well, and its weighted boundary
   is closed on every rank-two projected-line stratum.  The rank-one
   projected-image collapse is now closed by the complementary marked

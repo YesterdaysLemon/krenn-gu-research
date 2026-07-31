@@ -176,6 +176,13 @@ drop, and one-coordinate overlap gives exactly the triangle above.  The
 remaining question is confined to the other Borel orientations and
 support-one/lower-pair-rank boundaries.
 
+One of those other orientations has now produced a distinct component rather
+than another chart of this one.  When both rank-one edges use the same
+support label and the same active row at their common mode, an extra affine
+synchronization parameter survives.  Its `P^2` apolar fibre and source torus
+form the six-dimensional eleventh component in
+[`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md).
+
 ## Verification
 
 Run:
