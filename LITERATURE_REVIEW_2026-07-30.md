@@ -327,5 +327,27 @@ stacked determinant, and a fixed coefficient `4`.  This is a useful
 warning from matrix-pencil theory: the residual source-torus scalar
 is Kronecker data, not a normalization nuisance, and setting it to
 one would hide the only resonance.  The result closes this support-two
-divisor, not the other mode-zero-plane charts or the projective
-compactification.
+divisor, but not by itself the other mode-zero-plane chart or the
+projective compactification.
+
+The complementary mode-zero-plane chart is now closed in
+[`P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md).
+Its open `t!=0` part is transported to the normalized theorem by the
+signed source permutation `X_2'=-X_3,X_3'=-X_2`.  At the genuine
+corner `r=t=0`, the insertion tensor is a first variation of the
+rank-one `P_3` restriction.  Binary diagonality asks that tangent
+tensor to meet the secant line through `AAA,BBB`; the resulting mixed
+determinant is three signed planes times one residual multiaffine
+factor.  This is exactly the sort of tangent--secant translation
+suggested by the rank stratification of tangential Segre varieties
+([Ballico--Bernardi](https://arxiv.org/abs/1210.7976)) and the broader
+secant/tensor dictionary
+([Bernardi et al.](https://arxiv.org/abs/1812.10267)).
+
+The geometry does more than rename an elimination.  The three signed
+planes have a single nongenuine kernel until a `6 x 5` Fitting
+presentation drops rank; its maximal minors split into only nine
+families.  The residual sheet has a three-minor cover, and its five
+singular base points leave nine sparse families.  Thus the whole
+affine `B!=0` ninth-component chart is now empty for `H31`; only the
+projective compactification remains.

@@ -878,8 +878,12 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   `A=0`, `B!=0` is now empty as well.  Its singular insertion pencil
   has one exceptional line; the only matrix-pencil resonance is
   closed by a stacked determinant and a fixed third-contraction
-  coefficient `4`.  Remaining special mode-zero-plane/projective
-  component boundaries, slope boundaries, and component exhaustiveness stay open,
+  coefficient `4`.  The complementary `r=0`, `A B!=0` divisor is now
+  closed too: its insertion determinant is three signed planes times
+  one tangent--Segre factor, and exact one-marked covers close every
+  Fitting stratum.  Thus the ninth orbit's whole affine `B!=0` chart
+  is empty for `H31`; only its projective compactification remains.
+  Other component boundaries, slope boundaries, and component exhaustiveness stay open,
   although the eighth component's full equal- and opposite-weight
   slope fibres are now excluded already at the binary level, twelve
   generic parameter/coordinate boundary branches are closed, and the

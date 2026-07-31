@@ -9,8 +9,8 @@ component.
 The complete marked `H31` fibre is empty on this divisor.  Together
 with the normalized-chart theorem, this closes the entire
 support-three chart and its nonzero support-two specialization.  The
-remaining boundary of the component consists of other mode-zero-plane
-charts and the projective compactification.
+remaining `r=0`, `A B!=0` divisor has since been closed separately,
+so only the projective compactification of the component remains.
 
 The proof is symbolic.  The support-two `P_3` degeneration has a
 seven-by-six insertion matrix whose first unwanted row already forces
@@ -345,3 +345,6 @@ third-contraction coefficient symbolically.  The independent modular
 audit rebuilds permanent coefficients and replays generic, resonant,
 and deepest samples over two finite fields.  The finite-field audit is
 corroboration only; the theorem is the characteristic-zero proof above.
+
+The complementary mode-zero-plane divisor is closed in
+[`P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md).

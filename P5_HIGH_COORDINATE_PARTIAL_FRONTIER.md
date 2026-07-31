@@ -839,8 +839,11 @@ marked contraction.  Thus the ninth component's entire normalized
 weighted `H22` chart is empty.  The support-two normalization divisor
 `A=0`, `B!=0` is now closed for `H31` by a singular insertion-pencil
 argument; its sole resonance has fixed third-contraction coefficient
-`4`.  Exhaustiveness of those nine orbits, the ninth component's
-other mode-zero-plane/projective boundary, and
+`4`.  The complementary `r=0`, `A B!=0` divisor is closed by signed
+source transport and a tangent--Segre Fitting stratification.  Hence
+the whole affine `B!=0` ninth-component chart is empty for `H31`.
+Exhaustiveness of those nine orbits, the ninth component's projective
+compactification, and
 the special component/slope boundary incidences in `H22` remain
 unresolved.
 

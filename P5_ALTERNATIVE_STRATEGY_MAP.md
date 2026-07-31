@@ -1133,8 +1133,18 @@ coefficient `4`:
 
 - [`P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md)
 
-Other mode-zero-plane charts and the projective compactification, as
-well as exhaustiveness of the new component list, remain open.  The earlier modular pattern and
+The complementary `r=0`, `A B!=0` divisor is now closed as well.
+Its `t!=0` part is the normalized chart after a signed source
+permutation.  At `r=t=0`, the mixed insertion determinant is three
+signed planes times one tangent--Segre factor.  Fitting ideals split
+the boundary into four zero-coordinate branches, nine signed-sheet
+second drops, and nine deepest families, all excluded by tiny
+one-marked covers:
+
+- [`P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md)
+
+Thus only the component's projective compactification, as well as
+exhaustiveness of the new component list, remains open.  The earlier modular pattern and
 timed-out broad route remain as provenance:
 
 - [`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md)

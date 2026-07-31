@@ -11437,6 +11437,76 @@ pure-plus-neighbor kernel is `<(0,0,-2,0,1)>`, and its third-root
 support-two divisor is empty for `H31`.
 
 This closes one genuine normalization face rather than a coordinate
-artifact.  Other mode-zero-plane charts and the projective
-compactification remain open, as do component exhaustiveness and the
-global conjecture.
+artifact.  At that checkpoint, the other mode-zero-plane chart and
+the projective compactification remained open, as did component
+exhaustiveness and the global conjecture.  The next section closes the
+former chart.
+
+### The `r=0` tangent--Segre boundary of the ninth component
+
+The remaining affine `H31` normalization divisor has now been closed
+in
+
+```text
+P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md
+verify_p5_h31_embedded_p3_component_r_zero_boundary.py
+audit_p5_h31_embedded_p3_component_r_zero_boundary.py
+```
+
+Assume `A B!=0,r=0`.  If `t!=0`, the signed source permutation
+
+```text
+X2'=-X3,        X3'=-X2
+```
+
+sends `r'=-t!=0` and exchanges the two nonzero pure-`P_3` sign
+parameters.  This is the already closed normalized chart.  The
+genuine corner is therefore `r=t=0`, where mode zero contains the
+coordinate point `e0`.
+
+After marking the last three beta rows by `a,b,c`, the six mixed
+coefficients of the alpha insertion tensor have determinant
+
+```text
+-4(S-U-1)(S+U-1)(S+U+1) Phi.
+```
+
+Here
+
+```text
+Phi =
+ S{U[(S-U)(a+1)(b+1)-a(b+1)+1]+b(S+1)}
+ +c{Sb(S+U+1)+Ua(1-S-U)}.
+```
+
+This is the pullback of a tangent--secant incidence for the
+`P1 x P1 x P1` Segre variety.  The three signed linear sheets have
+generic kernels `<y3>,<y2>,<y1>`, all with zero `AAA`.  On the
+residual sheet, a cofactor kernel has diagonal
+
+```text
+2 S U (S-U-1)(S+U-1)(S+U+1).
+```
+
+Three neighboring determinants have residual factors
+
+```text
+b+1,       a+1,       a,
+```
+
+so they cover the whole open sheet.
+
+The boundary is still exact and small.  The `S=0` and `U=0` parts
+give four branches with direct nonzero minors.  On each signed plane,
+the associated `6 x 5` Fitting ideal has three branches, for nine
+families total; every family has a one-marked determinant equal to
+`8Y^2` times a chart unit.  Only five base points remain.  Two force
+`AAA=0`; the other three have nine genuine marking families.  Seven
+have constant determinants `4Y^2` or `8Y^2`, while the last two are
+covered by `a,a+1` or `b,b+1`.
+
+Thus the complete `r=0`, `A B!=0` marked fibre is empty.  Together
+with the normalized theorem and the support-two `A=0` theorem, the
+whole affine ninth-component family `B!=0` is empty for `H31`.
+Only the projective compactification remains for this component;
+component exhaustiveness and the global conjecture remain open.

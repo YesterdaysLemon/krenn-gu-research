@@ -393,6 +393,15 @@ audit_p5_h22_embedded_p3_component_rank_one_collapse.py
 ```
 
 Thus the full normalized affine weighted `H22` chart is empty.  For
-`H31`, the support-two divisor above is closed as well.  Other
-mode-zero-plane charts and the component's projective compactification
-remain.
+`H31`, the support-two divisor above is closed as well.  The remaining
+`r=0`, `A B!=0` divisor is now closed by a signed-coordinate transport
+and tangent--Segre insertion theorem:
+
+```text
+P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md
+verify_p5_h31_embedded_p3_component_r_zero_boundary.py
+audit_p5_h31_embedded_p3_component_r_zero_boundary.py
+```
+
+Consequently the whole affine family (3), where `B!=0`, is empty for
+`H31`.  Only the component's projective compactification remains.

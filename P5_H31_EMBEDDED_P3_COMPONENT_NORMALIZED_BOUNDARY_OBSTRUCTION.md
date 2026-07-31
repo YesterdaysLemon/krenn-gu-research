@@ -310,7 +310,11 @@ The ninth component's full normalized affine chart is now closed for
 separately in
 [`P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md).
 Other mode-zero-plane charts and the projective compactification
-remain.
+were the remaining frontier at that checkpoint.  The `r=0`, `A B!=0`
+divisor is now closed in
+[`P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md).
+Together with the support-two theorem, this closes the whole affine
+`B!=0` family; only its projective compactification remains.
 The exact binary boundary classification is reusable for weighted
 `H22`, where the slope-dependent projected line can meet the same
 nine insertion points.
