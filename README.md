@@ -375,8 +375,14 @@ strictly advance the finite frontier:
   [`P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md`](P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md).
   Its graph is in
   [`P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg`](P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg).
-  This reopens the generic `H31/H22` fibre frontier for the new component;
-  support-one common zero divisors and lower-pair-rank strata remain.
+  Its complete generic marked `H31` fibre is empty.  A rational projection of
+  the norm quadric gives function field `C(u,v)`; over the entire marking ring,
+  all four all-kernel diagonals belong to their fourteen-row mixed modules,
+  while the all-active classes survive.  Thus all thirteen certified
+  components are generically closed for `H31`:
+  [`P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
+  The new weighted `H22` fibre, support-one common zero divisors, and lower-
+  pair-rank strata remain.
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while

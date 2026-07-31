@@ -1432,6 +1432,25 @@ separate them.  The certified component lower bound is now thirteen.  The
 new component's generic `H31/H22` fibres are open at this checkpoint, so the
 former twelve-component generic-closure theorem is now historical.
 
+The thirteenth component's complete generic marked `H31` fibre is now empty:
+
+- [`P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md)
+
+Projecting the norm quadric rationally from `(2,1,1,1)` gives the dominant
+function-field chart `C(u,v)`.  Over
+`C(u,v)[h0,h1,h2,h3]`, every deleted-coordinate mixed module satisfies
+
+```text
+A_j in Row(M_j),       B_j notin Row(M_j),
+reduced module sizes (10,10,10,10).
+```
+
+At a generic rational chart point, the mixed ranks `(7,7,7,7)` are unchanged
+by the all-kernel row and rise to `(8,8,8,8)` after adjoining the all-active
+row.  Hence all thirteen certified components are generically closed for
+`H31`.  Only the new weighted `H22` generic fibre remains before the earlier
+known-component closure statement is restored at count thirteen.
+
 The earlier
 quadratic-function-field experiments and their null outcomes remain
 recorded as provenance:
@@ -1455,8 +1474,8 @@ marked-fibre level:
 
 ## Priority
 
-1. close the thirteenth component's generic marked `H31` and weighted `H22`
-   fibres, then classify the remaining support-one and lower-pair-rank
+1. close the thirteenth component's generic weighted `H22` fibre, then
+   classify the remaining support-one and lower-pair-rank
    exceptional geometries while closing
    the parameter/projective boundaries of the three split-cubic
    components, the sixth component, and the earlier six-dimensional component,

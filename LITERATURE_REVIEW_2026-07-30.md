@@ -1001,3 +1001,22 @@ incidence separate it from all twelve earlier orbits.  Consequently the
 literature-guided translation has not merely simplified an obstruction; it
 has exposed a thirteenth component and reopened the generic marked-fibre
 frontier.
+
+The `H31` side of that reopened frontier is now closed by combining the
+quadric's rationality with presentation-module geometry:
+[`P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
+Projection from a rational point gives a dominant two-parameter chart of the
+norm quadric, so the extension problem lives over the honest rational
+function field `C(u,v)`, without an algebraic coefficient extension.  In the
+full four-variable marking ring, the all-kernel binary diagonal belongs to
+the fourteen-row mixed module for every coordinate deletion, while the
+all-active diagonal retains a nonzero cokernel class.
+
+This is a useful division of labor between the neighboring theories: norm-
+form geometry rationalizes the component field, and commutative algebra
+turns the simultaneous marking problem into four row-module inclusions.
+The reduced module sizes `(10,10,10,10)` and exact rank jumps
+`(7,7,7,7)->(8,8,8,8)` replace pointwise determinant tests.  All thirteen
+known components are therefore generically closed for `H31`; the weighted
+`H22` fibre of the Eisenstein component is the remaining generic known-
+component question.

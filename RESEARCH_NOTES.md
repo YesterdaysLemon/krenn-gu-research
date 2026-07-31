@@ -13139,3 +13139,52 @@ P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg
 verify_p4_eisenstein_norm_common_kernel_component.py
 audit_p4_eisenstein_norm_common_kernel_component.py
 ```
+
+### The Eisenstein component has no generic marked `H31` fibre
+
+Use the intrinsic marking
+
+```text
+alpha_rows=(b_bar,m,m_r,c),
+beta_rows=(x0,a,a,d),
+beta_i(h)=beta_i+h_i*alpha_i.
+```
+
+To avoid an algebraic coefficient field, set `beta=1` on the norm quadric
+and project from `(alpha,beta,r,gamma)=(2,1,1,1)`.  For line direction
+`(u,v,1)`, put
+
+```text
+D=u^2+u*v+v^2-1,
+lambda=(5-5u-4v)/D,
+alpha=2+u*lambda,
+r=1+lambda,
+gamma=1+v*lambda.
+```
+
+This makes the norm equation identically zero and gives the dominant
+component function field `C(u,v)`.  Over the full marking ring
+`C(u,v)[h0,h1,h2,h3]`, exact row-module reduction gives, for all four source
+deletions,
+
+```text
+A_j in Row(M_j),       B_j notin Row(M_j),
+module sizes (10,10,10,10).
+```
+
+At `(u,v)=(2,0)`, the mixed ranks and ranks after adjoining `A_j` are all
+seven; adjoining `B_j` raises all four to eight.  An independent subset-DP
+constructor verifies every marking module at the norm-quadric points
+`(-4/3,1,-2/3,1)` and `(2,1,-4,1)`.
+
+Thus every mixed-zero extension kills the all-kernel binary diagonal before
+any ternary rank test.  All thirteen certified components are generically
+closed for `H31`; the new component's weighted `H22` fibre remains open.
+
+Primary theorem and verifiers:
+
+```text
+P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h31_eisenstein_norm_component_generic_obstruction.py
+audit_p5_h31_eisenstein_norm_component_generic_obstruction.py
+```
