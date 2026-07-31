@@ -247,8 +247,11 @@ plane tuple.”  Its unresolved generic alternatives are:
    triangle becomes an embedded pure `P_3` and all three pair ranks
    drop to at most two:
    [`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md);
-   cycles containing a `2+2` cut, proper support boundaries, and
-   resonance remain;
+   a hyperbolic anchor/crossed-graph argument also excludes every
+   full-support cycle containing a `2+2` cut:
+   [`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md).
+   Hence only proper bridge-support boundaries and resonance remain
+   from this triangle;
 3. the lower pair-image-rank and coincident/support-one zero-product
    boundaries.  One rank-two-edge stratum now supplies the
    six-dimensional component in

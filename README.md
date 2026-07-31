@@ -135,8 +135,20 @@ strictly advance the finite frontier:
   common label the restriction is an embedded pure `P_3`, whose perfect
   pairing forces all three alleged rank-three pair images to have rank
   at most two.  Thus no new component occurs there; `2+2` cycles,
-  proper cut-support boundaries, and the resonant divisor remain:
+  proper cut-support boundaries, and the resonant divisor remained at
+  that checkpoint:
   [`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md).
+- every full-support `2+2` bridge is now impossible as well.  Writing
+  it as `q=ab` across two binary blocks, every factorization of `q`
+  contains the anchor `a` or `b`.  Its annihilator is
+  `span(a_bar,b_bar)`, but every plane with a rank-three product and a
+  unique rank-two relation against that annihilator is a crossed graph
+  `span(alpha*a+tau*b_bar,-tau*a_bar+beta*b)` with `tau!=0`; such a
+  plane contains neither anchor.  The bridge therefore cannot factor.
+  Combining both cut theorems empties the full-support nonresonant
+  triangle.  Only proper cut-support boundaries and the resonant
+  holonomy divisor remain:
+  [`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md).
 - a mixed zero-product orientation produces a sixth
   symmetry-inequivalent component.  The normalized rank-two
   contraction condition is a `3 x 4` determinantal problem whose

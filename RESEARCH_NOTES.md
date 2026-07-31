@@ -11189,13 +11189,77 @@ hypothesis `rank(U_iU_j)=3`.
 Hence the full-support all-`1+3` nonresonant triangle is empty.  Its
 forced rank-drop closure is the already known embedded-`P_3`
 component, whose complete marked projective `H31` fibre is empty.
-Cycles containing a `2+2` bridge, proper support boundaries, and the
-resonant divisor remain.
+At this checkpoint, cycles containing a `2+2` bridge, proper support
+boundaries, and the resonant divisor remained.
 
 ```text
 P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md
 verify_p4_nonresonant_one_three_triangle_obstruction.py
 audit_p4_nonresonant_one_three_triangle_obstruction.py
+```
+
+### Full-support `2+2` bridges are incompatible with the triangle
+
+Write a full `2+2` bridge as
+
+```text
+q=ab
+```
+
+across two coordinate binary blocks `A,B`, and let `a_bar,b_bar` be
+the opposite binary directions.  Then
+
+```text
+Ann_R1(q)=span(a_bar,b_bar).
+```
+
+There are two short lemmas.
+
+First, every factorization `q=uv` contains an anchor factor in
+`C*a` or `C*b`.  Decompose the factors into their `A,B` blocks.  The
+cross-block matrix has rank one, and
+
+```text
+det(u_A tensor v_B+v_A tensor u_B)
+ =-det(u_A,v_A)det(u_B,v_B).
+```
+
+One pair of same-block pieces is therefore dependent.  Its direction
+is the corresponding full-support anchor; the internal zero-product
+equation then kills one piece, leaving the other whole factor on the
+opposite anchor line.
+
+Second, every plane `V` whose product with
+`W=span(a_bar,b_bar)` has rank three and unique rank-two relation has
+the crossed-graph form
+
+```text
+V=span(
+ alpha*a+tau*b_bar,
+ -tau*a_bar+beta*b
+),
+tau!=0.
+```
+
+The formula comes by splitting
+`a_bar*v+b_bar*w=0` into its internal and cross-block pieces.  If
+`tau=0`, the two products vanish separately and the kernel has
+dimension at least two.  For `tau!=0`, the displayed plane contains
+neither anchor `a` nor anchor `b`.
+
+Now take `Q_12=q`.  Its opposite plane is `U_3=W`; the two remaining
+rank-three edges put both `U_1,U_2` in crossed-graph form, so neither
+contains an anchor.  But the bridge factorization
+`q=b_12*y_1*x_2` requires one.  Contradiction.
+
+Together with the all-`1+3` theorem, every full-support nonresonant
+rank-two-relation triangle is empty.  Only proper bridge-support
+boundaries and the resonant divisor remain.
+
+```text
+P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md
+verify_p4_nonresonant_two_two_triangle_obstruction.py
+audit_p4_nonresonant_two_two_triangle_obstruction.py
 ```
 
 ### Ninth pure component from the common `1+3` boundary

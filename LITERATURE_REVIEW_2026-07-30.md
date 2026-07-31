@@ -119,6 +119,7 @@ peer-reviewed global result.
 | rank-two pair image | line meeting the `2 x 2` rank-one Segre quadric | Kronecker pencils, secant/tangent normal forms |
 | triangle of rank-two pair relations | `PGL_2` connection plus degree-two catalecticants | holonomy, tetrads, and weighted cuts |
 | three full-support `1+3` bridges | singleton cut labels plus coordinate-hyperplane intersections | factorization sheets, cut compatibility, perfect pairing |
+| a full-support `2+2` bridge | two hyperbolic binary planes | anchor sheets versus crossed-graph partners |
 
 The determinantal step used in the new `H22` theorem is standard Fitting
 geometry: rank-drop loci are cut out by minors, and the construction is
@@ -194,6 +195,16 @@ sign reflection.  Coordinate-hyperplane annihilators exclude the
 reflection sheet, force all three singleton labels to agree, and then
 the perfect `R_2 x R_1 -> R_3` pairing drops the alleged rank-three
 triangle to the embedded-`P_3` boundary.
+
+The complementary `2+2` calculation uses the same bounded-rank pencil
+language more literally.  A full cut `q=ab` has an anchor in every
+linear factorization, while every rank-three partner of
+`Ann(q)=span(a_bar,b_bar)` is an off-diagonal graph avoiding both
+anchors.  Their incidence is empty:
+[`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md).
+Combined with the `1+3` theorem, this empties the entire full-support
+nonresonant triangle and leaves only support boundaries and trivial
+holonomy.
 
 This translation already gives a new exact repository theorem:
 [`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md).

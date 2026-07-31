@@ -967,8 +967,17 @@ three pair ranks from three to at most two:
 - [`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md)
 - [`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md)
 
-The remaining triangle cases are the `2+2`-containing cycles, proper
-cut-support boundaries, and the resonant holonomy divisor.
+A second hyperbolic-block argument excludes every full-support
+`2+2` bridge.  Such a bridge is `q=ab`, and every factorization
+contains the anchor `a` or `b`.  But a rank-three partner of
+`Ann(q)=span(a_bar,b_bar)` has crossed-graph form with nonzero
+off-diagonal coupling and contains neither anchor:
+
+- [`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md)
+
+The full-support nonresonant triangle is therefore empty.  Its
+remaining cases are proper cut-support boundaries and the resonant
+holonomy divisor.
 
 The complementary mixed zero-product orientation produces a sixth
 component.  Its normalized kernel contractions form a `3 x 4`
