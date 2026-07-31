@@ -1069,3 +1069,20 @@ the missing-coordinate functional times a ternary permanent coefficient.
 Hence a pure survivor is precisely an embedded pure-`P3` suspension.  This
 closes the entire support-one boundary conceptually; only genuinely lower
 pair-image ranks remain there.
+
+The bottom of that lower-rank frontier is now removed by viewing
+annihilation as a correspondence rather than a list of equations:
+[`P4_RANK_ONE_PAIR_OBSTRUCTION.md`](P4_RANK_ONE_PAIR_OBSTRUCTION.md).
+The projectivized zero-product locus of the squarefree algebra is a reducible
+curve: six `P1` components, one per source-coordinate pair.  A one-dimensional
+pair product would induce a nondegenerate bilinear form between the two row
+planes, whose null pairs form an irreducible `P1` graph inside that curve.
+It must lie in one component, forcing both planes to be the same coordinate
+two-plane.
+
+This is the geometry of algebraic correspondences doing the work that a
+determinantal stratification would normally do.  The residue is the
+hyperbolic binary form `ad+bc`, and Frobenius separation shows that its rank
+two survives in a nonzero opposite slice.  It cannot be a slice of a pure
+four-tensor.  Exact rank two is therefore not just the next unexamined case;
+it is the sharp minimum for every pair image in the pure locus.

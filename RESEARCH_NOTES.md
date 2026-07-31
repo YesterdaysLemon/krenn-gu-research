@@ -13287,6 +13287,37 @@ argument identifies every pure survivor with the embedded-`P3` component.
 The support-one boundary is complete; genuinely lower pair-image ranks are
 the remaining triangle frontier.
 
+### Pair-image rank one is impossible for nonzero pure `P4`
+
+Suppose two row planes `U,V` have one-dimensional product image.  Writing
+`uv=B(u,v)Q`, the annihilator bound `dim Ann_R1(u)<=1` makes `B`
+nondegenerate.  Its null pairs therefore form the graph of a projective
+isomorphism `P(U)->P(V)`.
+
+The full projectivized zero-product incidence in the squarefree algebra is
+the union of six curves
+
+```text
+C_pq={([aX_p+bX_q],[aX_p-bX_q]):[a:b] in P1}.
+```
+
+The graph is irreducible, so it lies in one `C_pq`; both row planes are the
+coordinate plane `span(X_p,X_q)`.  Their product coefficient is the binary
+form `ad+bc`, whose matrix has determinant `-1`.  Frobenius pairing with any
+nonzero opposite product leaves this rank-two binary slice, whereas every
+slice of a nonzero decomposable four-tensor has rank one.  Thus every pair
+image in a nonzero pure `P4` restriction has rank at least two.
+
+This removes the rank-zero/rank-one strata without a chart computation.  The
+single-pair secant/tangent theorem now covers the exact lower boundary; the
+remaining issue is compatibility and purity for its rank-two kernels.
+
+```text
+P4_RANK_ONE_PAIR_OBSTRUCTION.md
+verify_p4_rank_one_pair_obstruction.py
+audit_p4_rank_one_pair_obstruction.py
+```
+
 Primary theorem and verifiers:
 
 ```text

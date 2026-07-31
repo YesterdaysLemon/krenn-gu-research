@@ -406,6 +406,14 @@ strictly advance the finite frontier:
   embedded pure-`P3` suspension:
   [`P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md`](P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md).
   Only genuinely lower-pair-rank strata remain on this triangle frontier.
+- pair-image ranks zero and one are globally impossible for a nonzero pure
+  `P_4` restriction.  If `dim(UV)=1`, the induced nondegenerate annihilator
+  correspondence `P(U)->P(V)` lies in the projective zero-product locus.
+  That locus is only the union of six coordinate-pair rational curves, so
+  irreducibility forces `U=V=span(X_p,X_q)`.  Multiplication on that plane is
+  the rank-two hyperbolic form `ad+bc`; its nonzero Frobenius slice cannot be
+  decomposable.  Hence exact pair rank two is the true lower boundary:
+  [`P4_RANK_ONE_PAIR_OBSTRUCTION.md`](P4_RANK_ONE_PAIR_OBSTRUCTION.md).
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while
