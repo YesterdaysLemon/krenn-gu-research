@@ -523,6 +523,17 @@ strictly advance the finite frontier:
   lower bound to **seventeen** component orbits:
   [`P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md`](P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md),
   [`P4_OVERLAPPING_MIXED_ORIENTATION_PROJECTIVE_EXHAUSTION.md`](P4_OVERLAPPING_MIXED_ORIENTATION_PROJECTIVE_EXHAUSTION.md).
+- the complete cyclic rank-one triangle orientation is now classified by a
+  `C^*`-gain graph on the source-coordinate `K_4`.  Three distinct support
+  labels form only a star, path, or triangle.  Forest switching gives
+  components sixteen and seventeen; on the source triangle, purity forces
+  neutral holonomy `nu=lambda*mu`, and then every leaf-pair rank drops to
+  two.  Repeated adjacent labels make the kernel and escape cubics equal and
+  hence give zero; repeated disjoint labels have an exact opening into the
+  projectively exhausted `{01,01,23}` mixed star, so they lie in component
+  eight.  All-equal labels have pair rank one.  Thus no eighteenth component
+  occurs anywhere in this support-two cyclic orientation:
+  [`P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_CLASSIFICATION.md`](P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_CLASSIFICATION.md).
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while
