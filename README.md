@@ -378,15 +378,16 @@ strictly advance the finite frontier:
   Its complete generic marked `H31` fibre is empty.  A rational projection of
   the norm quadric gives function field `C(u,v)`; over the entire marking ring,
   all four all-kernel diagonals belong to their fourteen-row mixed modules,
-  while the all-active classes survive.  Thus all thirteen certified
+  while the all-active classes survive.  Thus all thirteen components
+  certified at that checkpoint
   components are generically closed for `H31`:
   [`P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
   Its weighted `H22` fibre is empty as well.  On the full polynomial ring in
   weighted slope, markings, and extension entries, the product of the two
   diagonal coefficients belongs to the fourteen-generator mixed ideal; the
   same holds on the projective infinite-slope chart.  Thus every mixed-zero
-  extension loses at least one binary diagonal, and all thirteen known
-  components are generically closed for both marked types:
+  extension loses at least one binary diagonal, and all thirteen components
+  then known are generically closed for both marked types:
   [`P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
   Support-one common zero divisors and lower-pair-rank strata remained at
   that checkpoint.
@@ -426,6 +427,19 @@ strictly advance the finite frontier:
   pair profile `(2,3,3,4,4,4)`.  Their component containment is the next
   question:
   [`P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md`](P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md).
+- the dense full-support polar-graph branch is a fourteenth pure-`P4`
+  component, not a boundary of the earlier sixfold.  With five parameters
+  `(a,b,c,d,t)`, its restriction factors exactly as
+  `y0*y1*(x2+tE*y2)*(L1*x3+L2*y3)`.  At `(1,1,2,3,1)` the family tangent
+  minor is `3/2`, while the universal incidence has rank thirteen and minor
+  `-34560`.  Its two excess tangent directions have coprime initial
+  obstructions `tau4*tau5` and `(tau4-tau5)^2`, so the local dimension is
+  exactly five.  The sorted pair profile `(2,3,3,4,4,4)` separates it from
+  all earlier fivefolds, and dimension separates the earlier lower-rank
+  sixfold.  Its marked `H31/H22` fibres are now open:
+  [`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md`](P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md).
+  A graph picture is in
+  [`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg`](P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg).
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while

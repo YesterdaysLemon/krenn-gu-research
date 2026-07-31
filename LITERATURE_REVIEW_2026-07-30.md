@@ -1017,7 +1017,8 @@ form geometry rationalizes the component field, and commutative algebra
 turns the simultaneous marking problem into four row-module inclusions.
 The reduced module sizes `(10,10,10,10)` and exact rank jumps
 `(7,7,7,7)->(8,8,8,8)` replace pointwise determinant tests.  All thirteen
-known components are therefore generically closed for `H31`; the weighted
+components known at that checkpoint are therefore generically closed for
+`H31`; the weighted
 `H22` fibre of the Eisenstein component is the remaining generic known-
 component question.
 
@@ -1041,8 +1042,8 @@ second homogeneous chart closes infinity.
 The proof resembles the use of reducible observable varieties in algebraic
 statistics more than a standard determinantal obstruction.  Its practical
 gain is substantial: one product certificate replaces a slope-by-slope
-primary decomposition.  With it, all thirteen certified pure-`P4`
-components are again generically closed for both `H31` and weighted `H22`.
+primary decomposition.  With it, all thirteen pure-`P4` components certified
+at that checkpoint are again generically closed for both `H31` and weighted `H22`.
 The live frontier is component exhaustiveness and special/lower-rank
 boundaries, not a remaining generic fibre of a known component.
 
@@ -1106,3 +1107,24 @@ quiver Grassmannians and cellular strata
 contain the permanent theorem here, but they suggest the correct next object:
 the closure poset of the polar-graph and radical-flag strata, rather than a
 fresh coefficient elimination.
+
+That closure analysis has already separated the dense full-support graph as
+a fourteenth component:
+[`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md`](P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md).
+The polar-plane parameterization supplies a five-dimensional rational
+family.  At its exact certificate point the incidence tangent space is
+seven-dimensional, so a Jacobian-only analysis would overestimate it.  The
+two cokernel equations begin with the coprime quadrics
+
+```text
+tau4*tau5,       (tau4-tau5)^2.
+```
+
+This is a small tangent-cone calculation in singularity theory: the crossing
+and doubled diagonal form a height-two regular sequence, reducing the local
+dimension back to five.  The outcome is conceptually useful beyond the new
+component count.  Segre tangency creates non-integrable infinitesimal
+directions, so future boundary work must use normal cones or formal arcs,
+not raw tangent dimensions.  The new component reopens the generic marked
+`H31/H22` extension question after the previous thirteen components had been
+closed generically.

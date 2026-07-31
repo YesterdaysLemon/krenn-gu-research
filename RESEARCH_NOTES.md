@@ -13376,6 +13376,64 @@ verify_p4_tangent_rank_two_pair_purity_classification.py
 audit_p4_tangent_rank_two_pair_purity_classification.py
 ```
 
+### The full-support tangent graph is a fourteenth component
+
+Normalize
+
+```text
+w=X1+aX2+bX3,       u=X1+cX2+dX3,
+f1=ad+bc,            f2=b+d,             f3=a+c,
+L1=2b^2(a-c),        L2=2a^2(b-d),
+E=2(ab+bc+ad).
+```
+
+The dense polar graph has
+
+```text
+U0=U1=span(e,(0,1,a,b)),
+U2=span(e,(0,1,c,d)),
+U3=span((tL1,f2,-f1,0),(tL2,f3,0,-f1)).
+```
+
+Its only coefficients are
+
+```text
+T1100=L1,       T1101=L2,
+T1110=tE L1,    T1111=tE L2,
+```
+
+so the restriction is pure.  At `(a,b,c,d,t)=(1,1,2,3,1)`, row reduction
+puts all planes in pivot chart `01`.  The family chart minor on rows
+`(2,3,10,11,12)` is `3/2`, proving five independent parameters.
+
+The target-Segre incidence at that point has Jacobian rank thirteen.  Rows
+`2,...,14` and columns `0,...,11,19` give determinant `-34560`.  After
+formally solving those thirteen equations, the two residual quadratic
+initial forms on the seven-dimensional tangent space are
+
+```text
+-tau4*tau5,
+-(tau4-tau5)^2.
+```
+
+Their gcd is one, so they form a height-two regular sequence and the local
+dimension is at most five.  The family supplies equality and is therefore an
+irreducible component.  A separate subset-DP implementation with truncated
+quadratic jets reproduces both initial forms exactly.
+
+The generic pair profile is `(2,3,4,3,4,4)`.  Its sorted profile occurs on
+the earlier six-dimensional lower-pair component but on no earlier
+fivefold; dimension separates the former and rank profile the latter.  This
+raises the certified lower bound to fourteen component orbits.  Generic
+marked `H31/H22` fibres for the new component are open.
+
+```text
+P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md
+P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg
+verify_p4_full_support_tangent_pair_component.py
+audit_p4_full_support_tangent_pair_component.py
+```
+
 Primary theorem and verifiers:
 
 ```text
