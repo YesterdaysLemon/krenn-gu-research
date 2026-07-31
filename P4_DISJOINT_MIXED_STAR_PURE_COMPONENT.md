@@ -28,7 +28,13 @@ mixed star in
 has since raised it to ten.  Nothing in this theorem depends on those later
 components.
 
-This is not a classification.  A subsequent exact function-field
+The component construction alone was not a classification.  The subsequent
+reverse theorem
+[`P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md`](P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md)
+now proves that its closure exhausts the full affine Borel chart, including
+the exceptional `P^1` fibers where the original cross-product coordinates
+vanish.  Only the complementary projective leaf chart remains.
+A subsequent exact function-field
 theorem excludes the generic marked `H31` fibre:
 [`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 Its generic weighted `H22` incidence is now excluded as well:
@@ -278,23 +284,15 @@ the radical-star theorem treated the two outward relations.  The
 disjoint mixed-support stratum is component-sized rather than a
 boundary.
 
-The immediate exact targets are now:
+The surviving exact targets are now:
 
-1. extract and classify its still-hidden standard-basis denominators
-   and remaining projective boundaries;
-2. finish compatibility among the remaining rank-two pair pencils and mixed
-   rank-one/rank-two orientations in order to decide component
-   exhaustiveness.  The two-rank-two-spoke star has since produced a tenth
-   component, while the corrected `(2,2,1)` triangle is empty.  A single
-   exact rank-two pair is forced into a secant
-   `2+2`/`1+3` block center or a coincident-plane tangent through a
-   coordinate line by
-   [`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md).
-   The valid multiple-edge generic result is
-   [`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md).
-   The historical proposed complete triangle, star, and mixed `(2,2,1)`
-   claims were withdrawn after a Borel-gauge audit and now have corrected
-   replacements.
+1. classify the projective chart where the `a_bar` coefficient of `y_1`
+   vanishes;
+2. combine this reverse theorem with the remaining rank-one/rank-two graph
+   orientations to decide all-pair-ranks-at-least-three component
+   exhaustiveness.  The entire lower-pair locus is now classified
+   separately in
+   [`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
 
 The global prize conjecture remains unresolved.
 

@@ -13697,6 +13697,49 @@ verify_p4_all_rank_two_relation_triangle_component_inclusion.py
 audit_p4_all_rank_two_relation_triangle_component_inclusion.py
 ```
 
+### The disjoint mixed star is complete on its affine Borel chart
+
+With `a,a_bar` and `b,b_bar` the opposite directions on the two binary
+blocks, normalize
+
+```text
+y0=b_bar,   x1=x2=a,   y3=a_bar,   x3=b,
+x0=A*a+B*a_bar+b-b_bar.
+```
+
+On the affine leaf chart, the two remaining kernel rows are forced to be
+
+```text
+y1=-A*f*a+a_bar+f*b+phi*b_bar,
+y2=-A*j*a+eta*a_bar+j*b+kappa*b_bar.
+```
+
+All forbidden coefficients are exactly `N*(j,kappa,eta)^T`, with
+
+```text
+N=[[0,1,phi],
+   [B*f+1,1-B*phi,f+phi],
+   [A^2*f+B,0,B*f+1]].
+```
+
+Writing `delta=Bf+1`, `J=f+Bphi^2`, and `D=A^2f+B` gives
+
+```text
+det N=D*J-delta^2.
+```
+
+For rank two the kernel is `(J,phi*delta,-delta)`, exactly the old
+component-eight family.  Rank one is equivalent to `delta=J=D=0`; its
+kernel is the projective line `(h,-phi,1)` plus `(1,0,0)`.  Explicit formal
+arcs from `D*J=delta^2` recover every finite `h` and the endpoint, so no
+extra component occurs where the cross product vanishes.
+
+```text
+P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md
+verify_p4_disjoint_mixed_star_affine_classification.py
+audit_p4_disjoint_mixed_star_affine_classification.py
+```
+
 Primary theorem and verifiers:
 
 ```text

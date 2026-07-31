@@ -608,6 +608,14 @@ strictly advance the finite frontier:
   Segre-incidence Jacobian has rank fifteen.  Support disjointness
   separates it from the overlapping mixed component:
   [`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
+  Its full affine Borel stratum is now classified in reverse.  After the
+  exact-pair normalization, every forbidden coefficient is one entry of
+  `N*(j,kappa,eta)^T`, where `det(N)` is exactly the displayed irreducible
+  hypersurface.  Rank two recovers the published family.  Rank one occurs
+  only when `Bf+1=f+B*phi^2=A^2*f+B=0`; its entire exceptional `P^1` kernel
+  is filled by explicit formal arcs from rank two.  Hence no extra component
+  hides in the vanished-cross-product boundary of this affine chart:
+  [`P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md`](P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md).
   Its generic marked `H31` fibre is now empty.  Exact function-field
   projection leaves no genuine marking for source coordinates zero
   and one and one marking each for coordinates two and three; on both

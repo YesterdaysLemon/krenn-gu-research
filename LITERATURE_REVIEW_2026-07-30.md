@@ -1244,3 +1244,23 @@ component.
 
 See
 [`P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md`](P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md).
+
+The disjoint mixed-star component now has a reverse classification on its
+whole affine Borel chart as well:
+[`P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md`](P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md).
+The three remaining purity coefficients are not an opaque hypersurface
+system; they are the entries of one kernel incidence `Nv=0`.  Its determinant
+is the already known irreducible component-eight equation, in the compressed
+form
+
+```text
+det N=(A^2f+B)(f+B phi^2)-(Bf+1)^2.
+```
+
+Over matrix rank two, the kernel line is the cross product used in the old
+family.  At matrix rank one that cross product vanishes, but the kernel jumps
+to `P^1`.  Rational formal arcs fill every finite point and its projective
+endpoint, so the resolution of the determinant singularity stays inside the
+same component closure.  This is the elementary `3 x 3` shadow of a Springer
+resolution: keeping the kernel line removes the false appearance of a new
+boundary component.
