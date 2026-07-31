@@ -330,12 +330,13 @@ strictly advance the finite frontier:
   One exact two-parameter sheet has only `T_1111=-4`; at
   `(r,k)=(-4/3,2)` its pair profile is `(3,3,4,3,3,3)`, every three-mode
   kernel-rich cubic span has rank two, and the universal Segre-incidence
-  Jacobian has rank fourteen.  Thus the point is smooth on a new
-  six-dimensional component, while the visible sheet supplies only five
-  directions after restoring the source torus.  Its five-edge exceptional
+  Jacobian has rank fourteen.  The apparent sixth tangent direction is
+  obstructed by the omitted incidence equation with exact leading term
+  `12h^2`; the five source-torus family directions therefore fill a new
+  five-dimensional component.  Its five-edge exceptional
   graph and theorem are in
   [`P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md`](P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md).
-  The component's generic normal form and its `H31/H22` fibres are open.
+  Its generic `H31/H22` fibres are open.
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while
@@ -1111,8 +1112,8 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   forces one binary diagonal to vanish for every marking and slope.  Thus all
   eleven components known at that checkpoint are generically closed for both
   `H31` and weighted `H22`.  The transverse binary-polarity theorem has since
-  supplied a twelfth, smooth six-dimensional component; its generic normal
-  form and both marked fibres are currently open.  The live finite frontier is
+  supplied a twelfth, five-dimensional component by a quadratic transverse
+  obstruction; both marked fibres are currently open.  The live finite frontier is
   therefore the twelfth component, component exhaustiveness, and the special
   parameter/projective boundaries.  The
   ninth orbit's entire

@@ -12862,15 +12862,18 @@ Its restriction is identically `-4*x0*x1*x2*x3`.  At
 relations and one rank-two relation.  Every three-mode kernel-rich cubic
 span has rank two.  Restoring the source torus gives a rank-five family
 tangent with minor `2`; the universal Segre-incidence Jacobian has rank
-fourteen with minor `-131072`.  Hence the point lies on a unique smooth
-six-dimensional pure component.  Pair-rank conditions exclude the two older
-rank-two-edge sixfolds, while the four rank-two cubic spans exclude every
-translate of the equal-support sixfold.  The certified component lower bound
-is twelve.
+fourteen with minor `-131072`.  Fourteen selected equations define a regular
+six-dimensional local ring, but along its excess implicit direction the
+omitted `1001` equation begins with `12h^2`.  It is therefore nonzero in that
+ring, so the full incidence has local dimension at most five.  The family
+gives the matching lower bound and its irreducible closure is a component.
+Its sorted pair profile `(3,3,3,3,3,4)` differs from every earlier fivefold;
+dimension separates the three earlier sixfolds.  The certified component
+lower bound is twelve.
 
-The sixth tangent direction changes the pure factors in two modes and leaves
-the five-edge common-factor graph.  The dense normal form of the new
-component, its generic `H31/H22` fibres, component exhaustiveness, and the
+The apparent sixth tangent direction is quadratically obstructed.  The
+displayed family is a dense normal form for the new component.  Its generic
+`H31/H22` fibres, component exhaustiveness, and the
 global conjecture remain open.  The eleven-component generic-closure theorem
 is retained as a historical checkpoint, not a claim about the newly found
 twelfth component.

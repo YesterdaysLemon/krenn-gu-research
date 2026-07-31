@@ -1318,15 +1318,16 @@ component or its `q=0` boundary.  On `AQ!=0`, the remaining equations force
 the common kernel's first binary block onto a single coordinate.  One exact
 sheet has only `T_1111=-4` and graph profile `(3,3,4,3,3,3)`.  Its source-
 torus closure supplies five tangent directions at `(r,k)=(-4/3,2)`, while
-the universal Segre incidence has rank fourteen and hence a six-dimensional
-smooth germ.  All four three-mode kernel-rich cubic spans have rank two, so
-the germ is not a translate of the eleventh component; the other two known
-sixfolds retain rank-two pair edges.  This raises the certified component
+the universal Segre incidence has rank fourteen.  Solving fourteen regular
+equations along the excess tangent makes the omitted equation begin with
+`12h^2`, so the sixth direction is obstructed and the five-dimensional
+family closure is a component.  Its sorted pair profile
+`(3,3,3,3,3,4)` differs from all eight earlier fivefolds, while dimension
+separates the three earlier sixfolds.  This raises the certified component
 lower bound to twelve.
 
-The sixth direction leaves the common-factor graph.  Recovering its dense
-normal form is now the first component-classification target.  Until that is
-done, the new component's generic `H31` and weighted `H22` fibres are open;
+The displayed two-parameter sheet is a dense normal form.  The new
+component's generic `H31` and weighted `H22` fibres are open;
 the former statement that all known components were generically closed is a
 historical eleven-component checkpoint.
 
@@ -1353,8 +1354,8 @@ marked-fibre level:
 
 ## Priority
 
-1. integrate the sixth tangent direction of the transverse binary-polarity
-   component and analyze its generic `H31/H22` fibres; then classify the
+1. analyze the transverse binary-polarity component's generic `H31/H22`
+   fibres; then classify the
    remaining support-one and lower-pair-rank exceptional geometries, while closing
    the parameter/projective boundaries of the three split-cubic
    components, the sixth component, and the earlier six-dimensional component,

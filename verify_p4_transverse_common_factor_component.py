@@ -267,7 +267,6 @@ def main() -> None:
     )
     assert incidence_minor == -131072
     assert incidence_jacobian.rank() == 14
-    assert 20 - incidence_jacobian.rank() == 6
 
     family_lift = sp.zeros(20, 5)
     family_lift[:16, :] = family_jacobian
@@ -275,21 +274,75 @@ def main() -> None:
     assert family_lift.rank() == 5
     assert len(incidence_jacobian.nullspace()) == 6
 
+    # Fourteen equations cut out a smooth sixfold, but the fifteenth is a
+    # genuine quadratic transverse obstruction.  Use z2=h as the sixth
+    # implicit coordinate, hold the other five free coordinates fixed, and
+    # solve the selected equations through order two.  The omitted 1001 row
+    # then has nonzero h^2 coefficient 12.  Hence the full incidence has local
+    # dimension at most five, while the family supplies five actual directions.
+    h = sp.symbols("h")
+    incidence_variables = list(chart_symbols) + list(z)
+    selected_variables = [incidence_variables[index] for index in selected_columns]
+    free_substitution = {
+        chart_symbols[10]: chart_sample[chart_symbols[10]],
+        chart_symbols[11]: chart_sample[chart_symbols[11]],
+        chart_symbols[12]: chart_sample[chart_symbols[12]],
+        chart_symbols[13]: chart_sample[chart_symbols[13]],
+        chart_symbols[14]: chart_sample[chart_symbols[14]],
+        z[2]: h,
+    }
+    selected_equations = sp.Matrix(
+        [incidence_equations[index].subs(free_substitution) for index in selected_rows]
+    )
+    selected_base = {
+        variable: (
+            chart_sample[variable] if variable in chart_sample else sp.Integer(0)
+        )
+        for variable in selected_variables
+    }
+    selected_jacobian = selected_equations.jacobian(selected_variables).subs(
+        selected_base | {h: 0}
+    )
+    assert sp.factor(selected_jacobian.det()) == incidence_minor
+
+    fixed_series = {variable: value for variable, value in selected_base.items()}
+    first_residual = sp.Matrix(
+        [sp.expand(value.subs(fixed_series)).coeff(h, 1) for value in selected_equations]
+    )
+    first_correction = -selected_jacobian.inv() * first_residual
+    first_series = {
+        variable: selected_base[variable] + first_correction[index] * h
+        for index, variable in enumerate(selected_variables)
+    }
+    second_residual = sp.Matrix(
+        [sp.expand(value.subs(first_series)).coeff(h, 2) for value in selected_equations]
+    )
+    second_correction = -selected_jacobian.inv() * second_residual
+    second_series = {
+        variable: first_series[variable] + second_correction[index] * h**2
+        for index, variable in enumerate(selected_variables)
+    }
+    omitted_equation = incidence_equations[9].subs(free_substitution)
+    transverse_quadratic = sp.factor(
+        sp.expand(omitted_equation.subs(second_series)).coeff(h, 2)
+    )
+    assert transverse_quadratic == 12
+
     print(
         json.dumps(
             {
                 "status": "pass",
                 "component": "transverse binary-polarity common-factor component",
                 "certified_component_orbits": 12,
-                "component_dimension": 6,
-                "visible_sheet_dimension": 5,
+                "component_dimension": 5,
                 "pure_support": {"1111": "-4"},
-                "pair_profile_at_smooth_point": pair_profile,
+                "generic_pair_profile": pair_profile,
                 "relation_ranks": sorted(relation_ranks.values()),
                 "all_triple_kernel_rich_span_ranks": triple_span_ranks,
                 "family_tangent_minor": str(family_minor),
                 "incidence_minor": str(incidence_minor),
                 "incidence_rank": incidence_jacobian.rank(),
+                "transverse_quadratic_obstruction": str(transverse_quadratic),
                 "binary_polarity_factors": [str(value) for value in expected_polarity_minors],
                 "search_used": False,
             },

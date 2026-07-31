@@ -72,6 +72,53 @@ def as_dual(value: object) -> Dual:
     return value if isinstance(value, Dual) else Dual(int(value))
 
 
+@dataclass(frozen=True)
+class Jet2:
+    constant: int
+    linear: int = 0
+    quadratic: int = 0
+
+    def __post_init__(self) -> None:
+        object.__setattr__(self, "constant", self.constant % MODULUS)
+        object.__setattr__(self, "linear", self.linear % MODULUS)
+        object.__setattr__(self, "quadratic", self.quadratic % MODULUS)
+
+    def __add__(self, other: object) -> "Jet2":
+        rhs = as_jet(other)
+        return Jet2(
+            self.constant + rhs.constant,
+            self.linear + rhs.linear,
+            self.quadratic + rhs.quadratic,
+        )
+
+    __radd__ = __add__
+
+    def __neg__(self) -> "Jet2":
+        return Jet2(-self.constant, -self.linear, -self.quadratic)
+
+    def __sub__(self, other: object) -> "Jet2":
+        return self + (-as_jet(other))
+
+    def __rsub__(self, other: object) -> "Jet2":
+        return as_jet(other) - self
+
+    def __mul__(self, other: object) -> "Jet2":
+        rhs = as_jet(other)
+        return Jet2(
+            self.constant * rhs.constant,
+            self.constant * rhs.linear + self.linear * rhs.constant,
+            self.constant * rhs.quadratic
+            + self.linear * rhs.linear
+            + self.quadratic * rhs.constant,
+        )
+
+    __rmul__ = __mul__
+
+
+def as_jet(value: object) -> Jet2:
+    return value if isinstance(value, Jet2) else Jet2(int(value))
+
+
 def rank_mod(matrix: list[list[int]]) -> int:
     work = [[entry % MODULUS for entry in row] for row in matrix]
     if not work:
@@ -125,6 +172,29 @@ def determinant_mod(matrix: list[list[int]]) -> int:
     return result % MODULUS
 
 
+def solve_mod(matrix: list[list[int]], right: list[int]) -> list[int]:
+    size = len(matrix)
+    work = [
+        [entry % MODULUS for entry in row] + [right[index] % MODULUS]
+        for index, row in enumerate(matrix)
+    ]
+    for column in range(size):
+        pivot = next(row for row in range(column, size) if work[row][column])
+        work[column], work[pivot] = work[pivot], work[column]
+        scale = inv(work[column][column])
+        work[column] = [entry * scale % MODULUS for entry in work[column]]
+        for row in range(size):
+            if row == column:
+                continue
+            factor = work[row][column]
+            if factor:
+                work[row] = [
+                    (left - factor * pivot_entry) % MODULUS
+                    for left, pivot_entry in zip(work[row], work[column])
+                ]
+    return [work[index][-1] for index in range(size)]
+
+
 def subset_product(rows: list[tuple[int, ...]]) -> dict[int, int]:
     table = {0: 1}
     for row in rows:
@@ -136,6 +206,19 @@ def subset_product(rows: list[tuple[int, ...]]) -> dict[int, int]:
                     nxt[target] = (
                         nxt.get(target, 0) + coefficient * entry
                     ) % MODULUS
+        table = nxt
+    return table
+
+
+def subset_product_jet(rows: list[tuple[Jet2, ...]]) -> dict[int, Jet2]:
+    table = {0: Jet2(1)}
+    for row in rows:
+        nxt: dict[int, Jet2] = {}
+        for mask, coefficient in table.items():
+            for column, entry in enumerate(row):
+                if mask & (1 << column) == 0:
+                    target = mask | (1 << column)
+                    nxt[target] = nxt.get(target, Jet2(0)) + coefficient * entry
         table = nxt
     return table
 
@@ -249,6 +332,39 @@ def permanent_with_derivatives(
                     partial = partial * entries[other] % MODULUS
             derivative[variable] = (derivative[variable] + partial) % MODULUS
     return value, derivative
+
+
+def incidence_jets(variables: list[Jet2]) -> list[Jet2]:
+    chart_values = variables[:16]
+    z_values = variables[16:]
+    planes: list[list[tuple[Jet2, ...]]] = []
+    index = 0
+    for pivot in PIVOTS:
+        rows = [[Jet2(0) for _ in range(4)] for _ in range(2)]
+        for row, column in enumerate(pivot):
+            rows[row][column] = Jet2(1)
+        nonpivots = [column for column in range(4) if column not in pivot]
+        for row in range(2):
+            for column in nonpivots:
+                rows[row][column] = chart_values[index]
+                index += 1
+        planes.append([tuple(row) for row in rows])
+
+    coefficients: dict[tuple[int, int, int, int], Jet2] = {}
+    for bits in BITS:
+        rows = [planes[mode][bits[mode]] for mode in range(4)]
+        coefficients[bits] = subset_product_jet(rows).get(15, Jet2(0))
+    alpha = (1, 1, 1, 1)
+    equations: list[Jet2] = []
+    for bits in BITS:
+        if bits == alpha:
+            continue
+        monomial = Jet2(1)
+        for mode, bit in enumerate(bits):
+            if bit == 0:
+                monomial = monomial * z_values[mode]
+        equations.append(coefficients[bits] - coefficients[alpha] * monomial)
+    return equations
 
 
 def audit_prime(prime: int) -> dict[str, object]:
@@ -385,6 +501,44 @@ def audit_prime(prime: int) -> dict[str, object]:
             )
     assert 20 - rank_mod(incidence) == 6
 
+    # Independent second-order implicit replay.  The fourteen selected rows
+    # define a smooth sixfold, but the omitted 1001 equation has coefficient
+    # 12 along the sixth implicit direction z2=h after solving the selected
+    # equations through order two.
+    base_variables = chart_values + [0, 0, 0, 0]
+    selected_matrix = [
+        [incidence[row][column] for column in selected_columns]
+        for row in selected_rows
+    ]
+
+    def make_variables(first: list[int], second: list[int]) -> list[Jet2]:
+        values = [Jet2(value) for value in base_variables]
+        values[18] = Jet2(0, 1, 0)
+        for index, column in enumerate(selected_columns):
+            values[column] = Jet2(base_variables[column], first[index], second[index])
+        return values
+
+    zero = [0] * 14
+    initial = incidence_jets(make_variables(zero, zero))
+    first_residual = [initial[row].linear for row in selected_rows]
+    first_correction = solve_mod(
+        selected_matrix, [(-value) % MODULUS for value in first_residual]
+    )
+    first_order = incidence_jets(make_variables(first_correction, zero))
+    second_residual = [first_order[row].quadratic for row in selected_rows]
+    second_correction = solve_mod(
+        selected_matrix, [(-value) % MODULUS for value in second_residual]
+    )
+    second_order = incidence_jets(
+        make_variables(first_correction, second_correction)
+    )
+    assert all(
+        second_order[row].linear == 0 and second_order[row].quadratic == 0
+        for row in selected_rows
+    )
+    transverse_quadratic = second_order[9].quadratic
+    assert transverse_quadratic == 12 % MODULUS
+
     return {
         "prime": prime,
         "pure_support": {"1111": support[(1, 1, 1, 1)]},
@@ -393,6 +547,7 @@ def audit_prime(prime: int) -> dict[str, object]:
         "family_tangent_rank": rank_mod(family_jacobian),
         "incidence_rank": rank_mod(incidence),
         "selected_incidence_minor": selected_minor,
+        "transverse_quadratic_obstruction": transverse_quadratic,
     }
 
 

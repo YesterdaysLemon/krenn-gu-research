@@ -880,15 +880,17 @@ degree-two generation results for apolar ideals of generic permanents
 neighboring specializations: binary invariant theory supplies the
 involution, commutative algebra supplies the annihilator line, and apolarity
 supplies the opposite plane.  None alone predicts the transverse
-five-edge graph or the smooth permanent component.
+five-edge graph or the permanent component.
 
 On the transverse sheet the exact point has pair profile
 `(3,3,4,3,3,3)` and all four three-mode kernel-rich cubic spans have rank
-two.  A rank-fourteen universal Segre-incidence Jacobian proves a smooth
-six-dimensional component germ, although the displayed source-torus family
-has only five dimensions.  Closed pair-rank and cubic-span invariants
-separate it from the three earlier sixfolds.  The certified lower bound is
-therefore twelve components.  This reopens the generic marked-fibre frontier:
+two.  Fourteen regular incidence equations leave one excess tangent, but the
+omitted equation has exact transverse leading term `12h^2`.  The tangent is
+therefore obstructed and the displayed five-dimensional family closure is a
+component.  Its sorted pair profile `(3,3,3,3,3,4)` separates it from all
+eight earlier fivefolds; dimension separates the three earlier sixfolds.
+The certified lower bound is therefore twelve components.  This reopens the
+generic marked-fibre frontier:
 the eleven components known before this binary-polarity discovery remain
-generically closed for `H31/H22`, while the twelfth component's dense normal
-form and marked fibres are not yet classified.
+generically closed for `H31/H22`, while the twelfth component's marked
+fibres are not yet classified.

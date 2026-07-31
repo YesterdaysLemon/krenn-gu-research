@@ -2,15 +2,16 @@
 
 ## Status
 
-**Exact smooth-component existence theorem over `C`.**  The pure restriction
-locus of the order-four permanent has a smooth six-dimensional component
-which is inequivalent to the eleven previously certified component orbits.
-It is detected by a two-parameter common-factor sheet whose diagonal-source
-orbit has dimension five.  The sixth tangent direction leaves the sheet, so
-the formulas below are a smooth divisor through the component, not yet a
-dense normal form for it.
+**Exact component theorem over `C`.**  The pure restriction locus of the
+order-four permanent has a five-dimensional irreducible component which is
+inequivalent to the eleven previously certified component orbits.  It has a
+two-parameter common-factor normal form whose diagonal-source orbit already
+has dimension five.  The universal incidence has one excess tangent
+direction along this family, but an exact quadratic coefficient obstructs
+that direction; the displayed family therefore fills a component rather
+than lying in a sixfold.
 
-At the certified point the pair-image profile, in edge order
+On a dense open of the component the pair-image profile, in edge order
 `01,02,03,12,13,23`, is
 
 ```text
@@ -24,9 +25,8 @@ rank four.  The resulting five-edge exceptional graph is pictured in
 
 This raises the certified lower bound from eleven to twelve symmetry-
 inequivalent pure-`P_4` component orbits.  It is not component exhaustiveness,
-does not yet classify the generic point of the new component, and does not
-prove the global Krenn--Gu conjecture.  In particular, the new component's
-generic `H31` and weighted `H22` fibres are open.
+does not prove component exhaustiveness or the global Krenn--Gu conjecture.
+The new component's generic `H31` and weighted `H22` fibres are open.
 
 ## The orientation collapses to one exact pair
 
@@ -125,7 +125,7 @@ inside `P^1 x P^1`, plus two coordinate-polar transverse sheets.
 - On `AQ!=0`, equations (9) reduce to `gamma^2=delta^2`.  Thus the
   `a,c` projection of `y_3` is supported on exactly one of `X_0,X_1`.
   These are the two source-symmetric transverse `1+3` polarity sheets.  One
-  of them produces the new smooth component below.
+  of them produces the new component below.
 
 For completeness, these reductions use only cancellation on the indicated
 dense binary chart.  If `A=0`, then `Q!=0` and the last two minors first give
@@ -152,7 +152,7 @@ states (9) or the component below; the useful synthesis here is
 ```text
 exact annihilator line -> binary polarity involution
                        -> three-cubic apolar compression
-                       -> smooth permanent component.             (10)
+                       -> permanent component.                    (10)
 ```
 
 ## The transverse pure sheet
@@ -207,7 +207,7 @@ the verifier; at
 they give exactly the profile (1) and relation-rank multiset
 `{1,1,1,1,2}`.
 
-## Five visible directions and one hidden direction
+## Five component directions and one obstructed tangent
 
 Restore the projective diagonal source torus
 
@@ -251,29 +251,50 @@ have determinant
 -131072.                                             (20)
 ```
 
-Hence the incidence Jacobian has rank fourteen in twenty variables.  The
-incidence is smooth of dimension six at this point.  Since a nonzero pure
-tensor has unique projective factors, projection from the Segre incidence to
-the plane locus is locally an isomorphism.  The point therefore lies on a
-unique smooth six-dimensional component.  The five family directions in
-(19) leave exactly one additional local direction, which generically breaks
-the five-edge graph (15).
+Hence the incidence Jacobian has rank fourteen in twenty variables.  This
+leaves a six-dimensional Zariski tangent space, one dimension larger than the
+family.  Rank alone therefore does **not** prove a six-dimensional component.
+
+To decide the excess direction, use the fourteen rows in (20) as regular
+local equations and take the omitted pure-factor ratio `z_2=h` as the sixth
+implicit coordinate.  Hold the other five free coordinates at (16), and
+solve those fourteen equations through order two.  The omitted `1001`
+incidence equation then has expansion
+
+```text
+12 h^2+O(h^3).                                      (21)
+```
+
+Thus it is a nonzero function in the regular six-dimensional local ring cut
+out by the selected equations.  The full incidence has local dimension at
+most five.  The five independent family directions in (19) give the reverse
+inequality.  Since the parameter space is irreducible, its five-dimensional
+image closure is an irreducible component of the incidence.  A nonzero pure
+tensor has unique projective factors, so projection to the plane locus
+preserves that component.  The apparent sixth direction is quadratically
+obstructed, and (12) is a dense normal form for a fivefold.
 
 ## Why this component is new
 
-Dimension separates it from all eight previously certified fivefolds.  Two
-of the three earlier sixfolds satisfy a fixed pair-rank-at-most-two condition
-throughout every symmetry translate: the lower-pair-rank component has
-generic sorted profile `(2,3,3,4,4,4)`, and the embedded-`P_3` component has
-`(2,2,2,4,4,4)`.  At (16), every pair rank is at least three.
+Dimension separates it from the three previously certified sixfolds.  Every
+one of the eight earlier fivefolds has generic sorted pair profile
 
-The remaining earlier sixfold is the equal-support common-factor component.
-On every translate of its closure, the seven kernel-containing cubics of one
-distinguished three-mode subset span a space of dimension at most one.  At
-(16), the corresponding span has dimension exactly two for **each** of the
-four three-mode subsets.  This rank condition is source- and mode-invariant
-and is closed under specialization.  Therefore the smooth component through
-(16) is not a translate of any earlier sixfold.
+```text
+(3,3,3,4,4,4),
+```
+
+whereas (1) sorts to
+
+```text
+(3,3,3,3,3,4).                                      (22)
+```
+
+Pair-image rank and component dimension are invariant under source
+permutations, diagonal source scaling, and mode permutations.  Since (12)
+is dense in its component, (22) separates it from every earlier fivefold.
+As an additional local invariant, at (16) the seven kernel-containing
+cubics span dimension exactly two for each of the four three-mode subsets;
+the equal-support sixfold has a distinguished span of dimension at most one.
 
 This proves that the new component is a twelfth symmetry orbit.
 
@@ -286,10 +307,12 @@ uv run --with sympy python verify_p4_transverse_common_factor_component.py
 python audit_p4_transverse_common_factor_component.py
 ```
 
-The primary verifier checks (3)--(20) over `Q`, including the four factored
+The primary verifier checks (3)--(22) over `Q`, including the four factored
 binary-polarity minors, the complete symbolic family, all six pair ranks,
-all four mixed-cubic span ranks, and the exact tangent minors.  The independent
+all four mixed-cubic span ranks, the exact tangent minors, and the quadratic
+transverse coefficient `12`.  The independent
 audit reconstructs permanents by subset dynamic programming and replays the
-pair, triple-span, family-tangent, and incidence ranks over two unrelated
+pair, triple-span, family-tangent, incidence, and second-order implicit
+certificates over two unrelated
 finite fields.  These are fixed-size exact certificates for the displayed
 symbolic theorem, not searches.
