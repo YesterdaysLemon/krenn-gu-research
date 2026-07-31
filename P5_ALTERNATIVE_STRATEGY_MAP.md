@@ -1387,7 +1387,23 @@ X=delta*C2-beta*(beta+r)*C0.
 
 Thus it dies in every apolar quotient that kills the kernel-rich columns.
 This closes the dense `YY` Borel orientation without enumerating graphs.
-The mixed `YX`, active `XX`, support-one, and lower-pair-rank strata remain.
+The mixed `YX` orientation is stronger still:
+
+- [`P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md`](P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md)
+
+Its synchronization equation is the factorization `b*d=a^2`.  A two-by-two
+determinant `Delta` separates two branches.  If `Delta!=0`, both factors are
+binary and the pair image has rank one.  If `Delta=0`, the factors are
+reflections `B+s` and `lambda*(B-s)` with `s^2=0`; then
+
+```text
+lambda^(-1)*a*d+a*b-(b0+b1)*a^2=0
+```
+
+is a second pair relation.  The image has rank at most two, so no rank-three
+`YX` edge exists anywhere on the genuine support-two exact-pair stratum.
+Only the active `XX`, support-one common-zero-divisor, and lower-pair-rank
+strata remain from this common-kernel split.
 
 The earlier
 quadratic-function-field experiments and their null outcomes remain
@@ -1412,8 +1428,8 @@ marked-fibre level:
 
 ## Priority
 
-1. classify the mixed `YX` and active `XX` common-kernel orientations, then
-   the remaining support-one and lower-pair-rank exceptional geometries,
+1. classify the active `XX` common-kernel orientation, then the remaining
+   support-one and lower-pair-rank exceptional geometries,
    while closing
    the parameter/projective boundaries of the three split-cubic
    components, the sixth component, and the earlier six-dimensional component,

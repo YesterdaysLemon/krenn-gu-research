@@ -357,7 +357,16 @@ strictly advance the finite frontier:
   Any opposite plane killing the mixed coefficients therefore kills the pure
   coefficient too:
   [`P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md`](P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md).
-  Mixed leaf orientations and support-one/lower-rank boundaries remain.
+- the mixed `YX` common-kernel orientation is empty on the entire genuine
+  support-two exact-pair stratum.  Its synchronization law is a factorization
+  `b*d=a^2`.  The complementary coefficients either vanish, giving pair-image
+  rank one, or form reflected partners `B+s,B-s` with `s^2=0`.  In the latter
+  case a second exact relation confines the pair image to
+  `span(a^2,a*s)`, of rank at most two.  Thus it can never be the required
+  rank-three edge:
+  [`P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md`](P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md).
+  The active `XX` orientation, support-one common zero divisors, and lower-
+  pair-rank strata remain.
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while

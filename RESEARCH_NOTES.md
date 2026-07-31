@@ -13022,3 +13022,49 @@ P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md
 verify_p4_common_kernel_yy_211_triangle_obstruction.py
 audit_p4_common_kernel_yy_211_triangle_obstruction.py
 ```
+
+### The mixed common-kernel leaf always has a second relation
+
+For the `YX` leaf orientation, the common exact pair gives
+
+```text
+y1=x2=a=X0+X1,       y3=c=X0-X1,
+x1=b,                 y2=d,
+b*d=a^2.
+```
+
+Write the binary coefficients of `b,d` as `(b0,b1)` and `(d0,d1)`, and
+their complementary parts as `(s2,s3)` and `(t2,t3)`.  With
+`Delta=b0*d1-b1*d0`, the four cross coefficients of `b*d=a^2` imply
+
+```text
+Delta*s_j=Delta*t_j=0,       j=2,3.
+```
+
+If `Delta!=0`, both complementary parts vanish and the pair-product image is
+the line `C*X0*X1`.  If `Delta=0`, the nonzero `01` coefficient gives
+
+```text
+b=B+s,       d=lambda*(B-s),
+lambda*b0*b1=1,       s^2=0.
+```
+
+Thus `s` lies on a coordinate ray, but this boundary still cannot produce a
+rank-three pair: all four products lie in `span(a^2,a*s)`.  Besides the
+given relation `b*d=a^2`, one has
+
+```text
+lambda^(-1)*a*d+a*b-(b0+b1)*a^2=0.
+```
+
+Hence the common-kernel `YX` orientation is empty throughout the genuine
+support-two exact-pair stratum.  The active `XX` orientation is the remaining
+dense common-kernel case.
+
+Primary theorem and verifiers:
+
+```text
+P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md
+verify_p4_common_kernel_yx_211_factorisation_obstruction.py
+audit_p4_common_kernel_yx_211_factorisation_obstruction.py
+```

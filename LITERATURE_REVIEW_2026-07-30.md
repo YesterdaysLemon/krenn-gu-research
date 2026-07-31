@@ -952,3 +952,21 @@ of the translation
 states the graph obstruction: the new content is that the permanent
 triangle's minors force the exact-pair sheet, on which the desired active
 class collapses into the mixed apolar span.
+
+The mixed `YX` common-kernel orientation reduces to a still smaller
+factorization scheme:
+[`P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md`](P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md).
+The synchronization law becomes `b*d=a^2`.  Looking only at off-diagonal
+coefficients makes this a symmetric rank-two matrix-completion problem with
+one prescribed edge.  Its determinant split is complete: the rigid branch
+has binary factors and pair-image rank one; the singular branch consists of
+reflected factors `B+s`, `B-s`, where squarefreeness forces `s^2=0`.  That
+reflection creates a second independent pair relation, so the image rank is
+at most two.  The desired unique-relation rank-three edge cannot occur.
+
+The exact-zero-divisor literature supplies the ambient Artinian
+factorization language, but the point useful here is more elementary and
+stronger for this stratum: the support graph of a factorization of one
+squarefree edge is rigid enough to manufacture an extra tensor relation.
+This closes the whole genuine support-two `YX` orientation, including the
+coordinate-ray boundary, without primary decomposition or point search.
