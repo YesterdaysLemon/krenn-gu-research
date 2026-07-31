@@ -105,6 +105,18 @@ strictly advance the finite frontier:
   case.  No additional component occurs on this stratum; mixed edge
   orientations, triangle geometry, and lower pair-rank boundaries
   remain.
+- the exact rank-two pair-image boundary now has a computation-free
+  pencil classification.  Its projective kernel is a line in the
+  `2 x 2` Segre quadric ambient space.  The line cannot be a Segre
+  ruling because every nonzero degree-one element of the squarefree
+  algebra has annihilator dimension at most one.  A secant kernel
+  forces the existing `2+2` or `1+3` block centers; a tangent kernel
+  forces coincident planes through one coordinate line (and the
+  transverse generator must use at least two other coordinates).
+  Thus a single rank-two exceptional pair has no third kernel type,
+  although compatibility of several such pencils and the exceptional
+  triangle remain open:
+  [`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md).
 - a mixed zero-product orientation produces a sixth
   symmetry-inequivalent component.  The normalized rank-two
   contraction condition is a `3 x 4` determinantal problem whose

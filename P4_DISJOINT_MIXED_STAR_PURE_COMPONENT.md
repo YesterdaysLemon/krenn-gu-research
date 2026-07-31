@@ -274,8 +274,12 @@ The immediate exact targets are now:
 
 1. extract and classify its still-hidden standard-basis denominators
    and remaining projective boundaries;
-2. finish the remaining exceptional triangle, rank-two-relation, and
-   lower pair-rank strata to decide component exhaustiveness.
+2. finish the remaining exceptional triangle and the compatibility of
+   the rank-two pair pencils to decide component exhaustiveness.  A
+   single exact rank-two pair is now forced into a secant
+   `2+2`/`1+3` block center or a coincident-plane tangent through a
+   coordinate line by
+   [`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md).
 
 The global prize conjecture remains unresolved.
 

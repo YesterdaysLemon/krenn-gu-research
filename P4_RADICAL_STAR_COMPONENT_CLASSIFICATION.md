@@ -231,7 +231,12 @@ plane tuple.”  Its unresolved generic alternatives are:
 1. rank-one exceptional relations whose kernel endpoint orientations
    are mixed, including the known triangle component and orientations
    outside the now-certified disjoint-support chart;
-2. configurations dominated by rank-two exceptional relations;
+2. configurations dominated by rank-two exceptional relations.  Each
+   individual exact rank-two pair is now reduced, without elimination,
+   to a secant `2+2`/`1+3` block center or a coincident-plane tangent
+   through a coordinate line in
+   [`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md);
+   compatibility among several such pair pencils remains open;
 3. the lower pair-image-rank and coincident/support-one zero-product
    boundaries.  One rank-two-edge stratum now supplies the
    six-dimensional component in

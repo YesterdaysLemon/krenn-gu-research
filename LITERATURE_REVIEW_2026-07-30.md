@@ -102,6 +102,7 @@ peer-reviewed global result.
 | Original surface | Translated object | Tool exposed |
 |---|---|---|
 | coherent sum over perfect matchings | coloured hafnian / matching tensor | tensor contractions, flattenings, subrank |
+| one photon in each spatial mode | projected bosonic Gaussian state / transversal Wick moment | Gaussian moment identities and hafnian geometry |
 | local colour changes | `GL(d)^n` tensor restriction | representation theory and invariant/covariant modules |
 | deleted roots and blockers | restrictions of permanent tensors `P_k` | apolarity, Frobenius algebras, zero-product geometry |
 | existence of a binary neighbour | rank drop of a `14 x 8` matrix | determinantal varieties and Fitting ideals |
@@ -111,6 +112,7 @@ peer-reviewed global result.
 | several simultaneous roots | multihomogeneous zero loci in products of projective planes | Chow rings and intersection numbers |
 | blocker allocation | transversal problem | Hall-type and matroid-intersection inequalities |
 | mode/colour symmetry | finite group action | orbit normal forms and equivariant stratification |
+| rank-two pair image | line meeting the `2 x 2` rank-one Segre quadric | Kronecker pencils, secant/tangent normal forms |
 
 The determinantal step used in the new `H22` theorem is standard Fitting
 geometry: rank-drop loci are cut out by minors, and the construction is
@@ -127,6 +129,60 @@ Tensors](https://arxiv.org/abs/2205.15168).  Those papers do not solve
 the Krenn--Gu restriction problem, but their monotonicity and
 rank-variety viewpoint is the right language for turning local
 permanent restrictions into invariant obstructions.
+
+Two further translations are especially relevant to the present
+frontier.
+
+First, Wick's theorem identifies the coloured matching tensor with a
+block-transversal moment of a centered formal Gaussian family:
+
+```text
+T_W(a_1,...,a_n)
+ = E[X_(1,a_1) ... X_(n,a_n)],
+
+E[X_(i,c) X_(j,e)] = W_ij[c,e].
+```
+
+Equivalently it is the one-photon-per-spatial-mode sector of a bosonic
+Gaussian state.  Hamilton et al.,
+[Gaussian Boson Sampling](https://arxiv.org/abs/1612.01199), establish
+the direct Gaussian-output/hafnian correspondence.  This recasts the
+prize problem as an intersection between a projected Gaussian moment
+variety and the `GL(d)^n` orbit of the diagonal (GHZ) tensor.  The
+identification is algebraic: arbitrary complex edge weights need not
+be a positive covariance matrix.  Gaussian positivity arguments
+therefore do not apply automatically, but Wick recurrences, moment
+varieties, and invariant theory do.
+
+Second, the unclassified rank-two pair boundary is a matrix-pencil
+problem.  De Teran--Dopico--Landsberg,
+[An explicit description of the irreducible components of the set of
+matrix pencils with bounded normal
+rank](https://arxiv.org/abs/1606.02574), organize bounded-normal-rank
+pencils by Kronecker type.  De Seguins Pazzis,
+[Large spaces of bounded rank matrices
+revisited](https://arxiv.org/abs/1507.05375), supplies the broader
+compression-space viewpoint.  Most directly, the February 2026 paper
+of Bernardi--Gesmundo,
+[Triangular tensor networks, pencils of matrices and
+beyond](https://arxiv.org/abs/2602.15114), characterizes
+low-physical-dimension triangle networks by Kronecker invariants and
+extracts equations from coincident-root and determinantal geometry.
+That paper does not treat the squarefree permanent restriction here,
+but its organizing language matches the repository's remaining
+exceptional triangle almost exactly.
+
+This translation already gives a new exact repository theorem:
+[`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md).
+For a pair of local two-planes whose product image has rank two, the
+projective kernel is a line in `P^3`.  The rank-one relations form the
+Segre quadric.  The kernel line cannot be a ruling because a nonzero
+linear form in the squarefree algebra has annihilator dimension at
+most one.  Its only possibilities are therefore a secant, forcing a
+`2+2` or `1+3` block center, or a tangent, forcing coincident planes
+through a coordinate line.  Tangency at a genuine two-coordinate
+zero product would make the pair-image rank one and is therefore
+excluded.
 
 ## What the review changes strategically
 
@@ -151,6 +207,11 @@ the other into a degree-five scheme; three factor charts and two small
 minors then finish the generic component.
 
 The next high-value translation is not a larger graph search.  It is a
-global classification of the pure `P_4` compression variety, preferably
-as an orbit/degeneracy-locus theorem in `Gr(2,4)^4`, followed by a
-simultaneous-root Grassmannian formulation of the blocker hierarchy.
+Kronecker classification of the three compatible pair pencils in the
+remaining exceptional triangle, followed by the global classification
+of the pure `P_4` compression variety as an orbit/degeneracy-locus
+theorem in `Gr(2,4)^4`.  Coincident-root loci from triangular tensor
+networks and Gaussian/Wick covariants are the two most promising
+sources of symbolic equations.  A simultaneous-root Grassmannian
+formulation of the blocker hierarchy remains the arbitrary-order
+follow-up.
