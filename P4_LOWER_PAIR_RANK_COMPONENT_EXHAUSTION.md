@@ -24,8 +24,9 @@ locus of the pure `P_4` variety.
 
 This is an exhaustion theorem for the lower-pair locus, not yet for the
 entire pure `P_4` variety.  Components whose six pair images all have rank at
-least three remain the component-exhaustiveness frontier.  The marked `P_5`
-fibres of components fourteen and fifteen also remain open.
+least three remain the component-exhaustiveness frontier.  The generic
+marked `P_5` fibres of components fourteen and fifteen have since been
+excluded for both `H31` and `H22`; their special boundaries remain open.
 
 ## Proof by geometric case separation
 
