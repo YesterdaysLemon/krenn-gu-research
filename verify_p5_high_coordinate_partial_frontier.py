@@ -47,6 +47,8 @@ DEPENDENCIES = (
     ROOT
     / "P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md",
     ROOT
+    / "P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md",
+    ROOT
     / "P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md",
     ROOT
     / "P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md",
@@ -318,6 +320,8 @@ def main() -> None:
                 "embedded_P3_component_complete_marked_fibre_excluded": False,
                 "embedded_P3_component_normalized_chart_marked_fibre_excluded": True,
                 "embedded_P3_component_nine_insertion_points_closed": True,
+                "embedded_P3_component_support_two_A_zero_boundary_H31_excluded": True,
+                "embedded_P3_component_remaining_mode_zero_plane_boundary_excluded": False,
                 "seven_previously_known_components_generic_marked_fibres_excluded": True,
                 "all_eight_known_components_generic_marked_fibres_excluded": True,
                 "all_nine_known_components_generic_marked_fibres_excluded": True,

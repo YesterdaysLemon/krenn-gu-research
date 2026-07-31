@@ -312,3 +312,20 @@ the invariant-first philosophy of basis-free matrix-pencil reduction
 singular fibres and kernel covectors before solving coordinates.  The
 payoff here is a full normalized-chart theorem, not merely a generic
 or rank-two statement.
+
+The first omitted normalization divisor is now closed in the same
+language:
+[`P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md).
+On `A=0`, `B!=0`, the pure sign chart loses one support coordinate and
+the insertion presentation acquires a zero row.  Its Fitting support
+nevertheless has only one genuine branch, `rho=-Cp`.  The branch is
+generically excluded by a one-marked determinant; at its coordinate
+endpoint the third root contraction leaves the covector `(C+1)X`, so
+only the pencil resonance `C=-1` survives.  That fibre splits into
+two invariant kernel types and closes by small factor covers, one
+stacked determinant, and a fixed coefficient `4`.  This is a useful
+warning from matrix-pencil theory: the residual source-torus scalar
+is Kronecker data, not a normalization nuisance, and setting it to
+one would hide the only resonance.  The result closes this support-two
+divisor, not the other mode-zero-plane charts or the projective
+compactification.

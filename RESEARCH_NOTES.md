@@ -11384,3 +11384,59 @@ diagonal is zero.  Thus the collapse has no binary `H22`
 compatibility.  Together with the rank-two theorem, the entire
 normalized affine weighted `H22` chart of the ninth component is now
 empty.  The omitted normalization/projective boundary remains.
+
+### Support-two `H31` normalization divisor of the ninth component
+
+The divisor `A=0`, `B!=0` has now been closed exactly in
+
+```text
+P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md
+verify_p5_h31_embedded_p3_component_support_two_boundary.py
+audit_p5_h31_embedded_p3_component_support_two_boundary.py
+```
+
+The three nonzero-mode planes specialize to the support-two pure
+`P_3` sign chart with residual source-torus scalar `C=1/B`.  Its
+beta-slice extension problem is the singular `7 x 6` pencil
+`N_C(p,q,rho)`.  A maximal minor is
+
+```text
+4 C q (Cp-rho)^2 (Cp+rho)^3,
+```
+
+but the all-alpha diagonal and the first unwanted row sharpen this:
+every genuine binary family lies on `rho=-Cp`.  If `p!=0`, the
+alpha-slice equations reduce to
+
+```text
+t2=0,  z1=2ht1,  z3=2ht3,  t1 t3=0,
+```
+
+and a neighboring one-marked determinant
+
+```text
+16 C^2 h^2 p^2 (CP+R) D
+```
+
+plus the transverse pure entry `-2Cp` excludes it.  At the coordinate
+endpoint `p=rho=0`, the third root contraction has mixed coefficient
+`(C+1)X`, leaving only the matrix-pencil resonance `C=-1`.
+
+The resonant fibre has two invariant subcases.  When `P+R!=0`, three
+factored one-marked covers leave one point, where a stacked map has
+determinant
+
+```text
+-8 h^2 (P-R)^2 (P+R).
+```
+
+When `P+R=0`, the root equations force the antipodal ratios
+`x=1/2,d=-1/2`.  Two one-marked covers leave `k=Q=0`; there the
+pure-plus-neighbor kernel is `<(0,0,-2,0,1)>`, and its third-root
+`BBBG` coefficient is the fixed integer `4`.  Hence the entire
+support-two divisor is empty for `H31`.
+
+This closes one genuine normalization face rather than a coordinate
+artifact.  Other mode-zero-plane charts and the projective
+compactification remain open, as do component exhaustiveness and the
+global conjecture.

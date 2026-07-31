@@ -343,6 +343,20 @@ verify_p5_h31_embedded_p3_component_normalized_boundary.py
 audit_p5_h31_embedded_p3_component_normalized_boundary.py
 ```
 
+The normalization divisor `A=0`, `B!=0` is now closed for `H31` too.
+Here the pure `P_3` sign chart degenerates from support three to
+support two.  Its insertion presentation is a singular matrix pencil:
+one Fitting factor forces `rho=-Cp`, generic points are killed by a
+one-marked determinant, and the sole resonant coordinate fibre
+`C=-1` is closed by three factored covers, a stacked determinant, and
+a fixed third-contraction coefficient `4`:
+
+```text
+P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md
+verify_p5_h31_embedded_p3_component_support_two_boundary.py
+audit_p5_h31_embedded_p3_component_support_two_boundary.py
+```
+
 The generic weighted `H22` fibre is empty at binary level as well.
 One weighted direction retains source coordinate zero and therefore
 has an identically zero all-alpha diagonal.  The other is the same
@@ -378,5 +392,7 @@ verify_p5_h22_embedded_p3_component_rank_one_collapse.py
 audit_p5_h22_embedded_p3_component_rank_one_collapse.py
 ```
 
-Thus the full normalized affine weighted `H22` chart is empty.  Only
-the component's omitted normalization/projective boundary remains.
+Thus the full normalized affine weighted `H22` chart is empty.  For
+`H31`, the support-two divisor above is closed as well.  Other
+mode-zero-plane charts and the component's projective compactification
+remain.

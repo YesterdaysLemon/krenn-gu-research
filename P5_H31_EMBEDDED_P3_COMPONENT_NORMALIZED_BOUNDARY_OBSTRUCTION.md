@@ -306,7 +306,11 @@ theorem is the characteristic-zero case split above.
 ## Honest frontier
 
 The ninth component's full normalized affine chart is now closed for
-`H31`; only its omitted normalization/projective boundaries remain.
+`H31`.  The support-two normalization divisor `A=0`, `B!=0` is closed
+separately in
+[`P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md).
+Other mode-zero-plane charts and the projective compactification
+remain.
 The exact binary boundary classification is reusable for weighted
 `H22`, where the slope-dependent projected line can meet the same
 nine insertion points.

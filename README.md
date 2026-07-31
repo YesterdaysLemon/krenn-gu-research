@@ -874,8 +874,12 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   is closed on every rank-two projected-line stratum.  The rank-one
   projected-image collapse is now closed by the complementary marked
   contraction too, so its entire normalized weighted chart is empty.
-  Remaining special
-  component/slope boundaries and component exhaustiveness stay open,
+  On the `H31` side, the omitted support-two normalization divisor
+  `A=0`, `B!=0` is now empty as well.  Its singular insertion pencil
+  has one exceptional line; the only matrix-pencil resonance is
+  closed by a stacked determinant and a fixed third-contraction
+  coefficient `4`.  Remaining special mode-zero-plane/projective
+  component boundaries, slope boundaries, and component exhaustiveness stay open,
   although the eighth component's full equal- and opposite-weight
   slope fibres are now excluded already at the binary level, twelve
   generic parameter/coordinate boundary branches are closed, and the

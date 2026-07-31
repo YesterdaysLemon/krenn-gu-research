@@ -836,8 +836,11 @@ closed, including all nine exceptional insertion points.  Its weighted
 boundary is closed whenever that projected image remains a line, and
 the rank-one collapse `rS=1,T=rU` is now excluded by the complementary
 marked contraction.  Thus the ninth component's entire normalized
-weighted `H22` chart is empty.  Exhaustiveness of those nine orbits,
-the ninth component's omitted normalization/projective boundary, and
+weighted `H22` chart is empty.  The support-two normalization divisor
+`A=0`, `B!=0` is now closed for `H31` by a singular insertion-pencil
+argument; its sole resonance has fixed third-contraction coefficient
+`4`.  Exhaustiveness of those nine orbits, the ninth component's
+other mode-zero-plane/projective boundary, and
 the special component/slope boundary incidences in `H22` remain
 unresolved.
 

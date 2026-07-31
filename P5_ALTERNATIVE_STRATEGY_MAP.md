@@ -1123,8 +1123,18 @@ kills the `D_23` pure diagonal or the `D_01` alpha diagonal:
 
 - [`P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md)
 
-The ninth component's omitted normalization/projective boundary and
-exhaustiveness of the new component list remain open.  The earlier modular pattern and
+One part of the ninth component's omitted normalization boundary is
+now closed.  On `A=0`, `B!=0`, the support-three sign chart degenerates
+to support two and the `H31` insertion map becomes a singular matrix
+pencil.  A Fitting factor forces its exceptional line, generic
+one-marked rank closes the line, and the unique resonance `C=-1` is
+killed by a stacked determinant and the constant third-contraction
+coefficient `4`:
+
+- [`P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md)
+
+Other mode-zero-plane charts and the projective compactification, as
+well as exhaustiveness of the new component list, remain open.  The earlier modular pattern and
 timed-out broad route remain as provenance:
 
 - [`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md)

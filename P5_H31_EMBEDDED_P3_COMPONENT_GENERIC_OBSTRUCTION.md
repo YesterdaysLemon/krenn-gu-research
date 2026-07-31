@@ -334,6 +334,9 @@ parameter/projective boundary.  For the ninth component specifically,
 the finite set `Sigma` in (15) has since been closed throughout the
 normalized affine chart:
 [`P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md).
-The normalization boundary `Ar=0` and projective boundary remain open.
+The support-two normalization divisor `A=0`, `B!=0` is now closed too:
+[`P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md).
+The other mode-zero-plane charts, including the still-untranslated
+part of `r=0`, and the projective compactification remain open.
 Its generic weighted `H22` fibre is closed separately in
 [`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
