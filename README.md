@@ -181,6 +181,21 @@ strictly advance the finite frontier:
   at most two.  The triangle frontier is therefore reduced to the
   flat synchronized binary cubic `Omega=delta=0`:
   [`P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md`](P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md).
+- the flat synchronized binary cubic is now classified completely.
+  A generic row-pair is a four-point configuration on `P^1`;
+  synchronization turns its partners into an adjugate pencil, and a
+  third-compound factorization contradicts the purity flag.  On the
+  collision boundary, zero columns descend to pure `P_3`, `2+1+1`
+  collisions kill the active cube, and `1+3` collisions drop the pair
+  rank.  The sole survivor is the balanced `2+2` family
+  `U0=<a_bar,b_bar>, U1=<a,b>, U2=<a,b+s*a_bar>,
+  U3=<a,b+t*a_bar>` with pure coefficient `-4(s+t)`.  Its plane locus
+  has dimension at most four, below the five-dimensional minimum for
+  a nonzero pure-incidence component.  Thus the complete
+  all-rank-two-relation triangle cannot be the generic graph of a new
+  component:
+  [`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md),
+  [`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md).
 - a mixed zero-product orientation produces a sixth
   symmetry-inequivalent component.  The normalized rank-two
   contraction condition is a `3 x 4` determinantal problem whose

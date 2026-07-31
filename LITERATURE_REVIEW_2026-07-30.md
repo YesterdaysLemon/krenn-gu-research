@@ -424,3 +424,41 @@ classification of squarefree cut supports, the anchor geometry of
 `2+2` quadrics, and finally the Frobenius perfect pairing of the
 three-variable squarefree complete intersection.  This closes the
 tangent branch and leaves only the flat synchronized binary cubic.
+
+The flat branch crosses into three classical neighboring subjects.
+First, its generic row-pair is a labelled four-point configuration on
+`P1`, so projective normalization leaves one cross-ratio.  Second,
+synchronization makes every other row-pair lie in a
+two-dimensional matrix pencil.  Treating the missing affine sheets as
+genuine pencil-closure strata follows the bundle/closure viewpoint of
+[De Teran--Dopico](https://arxiv.org/abs/2204.10237), rather than
+discarding them as bad coordinates.  Third, the Hamming-weight
+products `Y,K,J,X` are the osculating coefficient flag of a binary
+cubic.  This sits next to classical binary-cubic equivalence
+([Cremona](https://arxiv.org/abs/2212.02120)), osculating Veronese
+geometry
+([Bernardi--Catalisano--Gimigliano--Ida](https://arxiv.org/abs/0807.2455)),
+and determinantal/catalecticant descriptions of Veronese secants
+([Buczynska--Buczynski](https://arxiv.org/abs/1012.3563)).
+
+The repository-specific payoff is the exact identity
+
+```text
+C_3([Y K J X])=8F N:
+```
+
+the compression minor forces `F=0`, after which every cofactor
+vanishes although `X` is required to escape the compressed plane.
+The projective pencil sheets obey smaller versions of the same
+identity.  A targeted review found the surrounding languages above,
+but not this particular squarefree-permanent cofactor factorization.
+
+The collision compactification then needs no elimination.  Zero
+columns descend to `P3`; the `2+1+1` collision kills the active cube;
+the `1+3` split drops the pair rank; and the balanced `2+2` split gives
+the sole canonical survivor.  Its source-torus orbit has dimension at
+most four, below the five-dimensional minimum for a nonzero
+pure-incidence component.  Thus the complete rank-two-relation
+triangle is no longer a possible generic missing-component graph:
+[`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md),
+[`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md).

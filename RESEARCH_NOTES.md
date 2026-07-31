@@ -11852,3 +11852,69 @@ Omega=0, delta=0         open flat binary-cubic branch.
 ```
 
 This is a symbolic cut/duality proof and uses no component search.
+
+### The flat triangle is a four-point and binary-cubic problem
+
+The generic part of the last resonant branch is closed in
+
+```text
+P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md
+verify_p4_resonant_flat_generic_binary_cubic.py
+audit_p4_resonant_flat_generic_binary_cubic.py
+```
+
+A row-pair with four nonzero distinct columns is a labelled
+four-point configuration on `P1`.  Cross-ratio normalization gives
+
+```text
+y=(1,0,1,1),       x=(0,1,1,lambda).
+```
+
+Every synchronized partner lies in the exact pencil `A+t A_sharp`.
+For two partner parameters `t,u`, put the binary-cubic coefficients
+in `C=[Y K J X]`.  A fixed `2 x 2` minor makes `K,J` independent.
+One compression minor is `8(lambda-1)F`, while the complete third
+compound factors as
+
+```text
+C_3(C)=8F N.
+```
+
+Purity therefore forces both `rank C=3` and `rank C<=2`.  The one- and
+two-infinite projective pencil sheets close by the analogous factor
+`lambda*u^2-1` and the nonzero minor `-8lambda^4`.  Consequently no
+flat triangle can have even one generic four-point row-pair.
+
+### Complete projective collision classification of the triangle
+
+The boundary is classified in
+
+```text
+P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md
+verify_p4_resonant_flat_triangle_classification.py
+audit_p4_resonant_flat_triangle_classification.py
+```
+
+A zero source column propagates to all synchronized partners and
+descends to the embedded pure-`P3` obstruction.  A `2+1+1`
+projective collision makes every active row proportional to a
+two-supported row, so `X=x^3=0`.  A `1+3` split makes all three planes
+coincide and their square has dimension two.
+
+The sole survivor is the balanced `2+2` family
+
+```text
+U0=span(a_bar,b_bar),
+U1=span(a,b),
+U2=span(a,b+s*a_bar),
+U3=span(a,b+t*a_bar),                    s+t!=0.
+```
+
+Its restricted permanent is exactly `-4(s+t) x0*x1*x2*x3`; all three
+triangle pair images have rank three and unique rank-two relations.
+Thus the flat branch is nonempty, but its normalized two parameters
+plus the source torus sweep dimension at most four.  Every nonzero
+pure-incidence component has dimension at least five by its
+twenty-variable/fifteen-equation Segre chart.  Hence the complete
+rank-two-relation triangle cannot be the generic graph of a missing
+component.

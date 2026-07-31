@@ -18,10 +18,13 @@ excludes the first of the following two intrinsic shapes:
    `Sym^3(C^2) -> R_3` whose first three coefficients span at most a
    plane.
 
-Thus only the zero-additive-holonomy shape remains on the triangle
-frontier for pure-`P_4` component exhaustiveness.  Other exceptional
-graphs and lower pair-rank strata also remain, so the global
-Krenn--Gu problem is unresolved.
+The zero-additive-holonomy shape has since been classified in
+[`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md).
+Its only survivors form a lower-dimensional balanced `2+2` family,
+so the rank-two-relation triangle cannot be the generic graph of a
+new pure-`P_4` component.  Other exceptional graphs and lower
+pair-rank strata remain, and the global Krenn--Gu problem is
+unresolved.
 
 ## Multiplicative resonance
 
@@ -284,15 +287,12 @@ are the repository's direct reduction.
 
 ## Exact frontier
 
-After the nonzero additive-holonomy obstruction, the next symbolic
-targets are:
-
-1. classify binary-cubic multiplication maps (16) satisfying the
-   compression flag (18); and
-2. identify whether their closures lie in the nine known components
-   or force another component.
-
-No claim of emptiness is made here for that flat branch.
+The subsequent generic compound-matrix obstruction and projective
+collision analysis classify every binary-cubic map (16) satisfying
+the compression flag (18).  The only survivors are the balanced
+`2+2` family in
+[`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION.md);
+that family is nonempty but too small to be a component.
 
 ## Verification
 
