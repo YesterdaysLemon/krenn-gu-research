@@ -12964,3 +12964,61 @@ P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md
 verify_p5_h22_transverse_common_factor_component_generic_obstruction.py
 audit_p5_h22_transverse_common_factor_component_generic_obstruction.py
 ```
+
+### The dense common-kernel `YY` triangle is empty
+
+For the common-kernel Borel orientation of a `(2,1,1)` relation triangle,
+normalize the exact pair to
+
+```text
+a=X0+X1,       c=X0-X1,       a*c=0.
+```
+
+In the kernel/kernel leaf chart the rank-two edge synchronizes the rows as
+
+```text
+y1=y2=a,       y3=c,
+x1=m=beta*c+s, x2=m+r*c,
+x3=d=gamma*a+delta*c+t,
+s=uX2+vX3,     t=pX2+qX3.
+```
+
+The seven kernel-containing triple products have the same span as
+
+```text
+C0=a^2*d,       C1=a*m*d,       C2=m*(m+r*c)*c.
+```
+
+Set `A=u*q+v*p`, `Q=u*q-v*p`, and `E=(2*beta+r)*A`.  Their four maximal
+minors factor exactly as
+
+```text
+8q*u*v*A,
+8p*u*v*A,
+4Q*(E-2gamma*u*v),
+4Q*(E+2gamma*u*v).
+```
+
+On `u*v*p*q!=0`, rank at most two forces `A=0`; then `Q!=0` and the last
+two factors force `gamma=0`.  Thus `s*t=0`, `d=delta*c+t`, and the all-active
+cubic obeys
+
+```text
+m*(m+r*c)*d=delta*C2-beta*(beta+r)*C0.
+```
+
+Any opposite plane annihilating the kernel-rich cubics therefore annihilates
+the required pure cubic.  This is an exact global contradiction on the dense
+chart, not a sampled calculation.  In binary invariant-theory language
+`A=0` is a quadratic polarity graph; in commutative algebra it is an exact
+zero-divisor pair; in apolar geometry the active class has fallen into the
+mixed span.  The mixed `YX`, active `XX`, support-one, and lower-pair-rank
+strata remain.
+
+Primary theorem and verifiers:
+
+```text
+P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md
+verify_p4_common_kernel_yy_211_triangle_obstruction.py
+audit_p4_common_kernel_yy_211_triangle_obstruction.py
+```

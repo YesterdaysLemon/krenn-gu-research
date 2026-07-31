@@ -1355,6 +1355,40 @@ whose permanent is identically zero.  This is the exact pair
 extension entry, and marking.  Hence all twelve certified components are now
 generically closed for both `H31` and weighted `H22`.
 
+The dense common-kernel/kernel-leaf orientation of the exceptional
+`(2,1,1)` triangle is also empty:
+
+- [`P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md`](P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md)
+
+After synchronizing the exact pair, the seven kernel-containing cubics span
+three columns `C0,C1,C2`.  If
+
+```text
+A=u*q+v*p,       Q=u*q-v*p,
+```
+
+their four maximal minors factor as
+
+```text
+8q*u*v*A,
+8p*u*v*A,
+4Q(E-2gamma*u*v),
+4Q(E+2gamma*u*v).
+```
+
+On the dense binary torus, rank at most two forces `A=0` and `gamma=0`.
+The first equation is the graph of the squarefree binary polarity, or
+equivalently an exact zero-divisor relation `s*t=0`.  On that graph the
+all-active cubic satisfies
+
+```text
+X=delta*C2-beta*(beta+r)*C0.
+```
+
+Thus it dies in every apolar quotient that kills the kernel-rich columns.
+This closes the dense `YY` Borel orientation without enumerating graphs.
+The mixed `YX`, active `XX`, support-one, and lower-pair-rank strata remain.
+
 The earlier
 quadratic-function-field experiments and their null outcomes remain
 recorded as provenance:
@@ -1378,8 +1412,9 @@ marked-fibre level:
 
 ## Priority
 
-1. classify the remaining support-one and lower-pair-rank exceptional
-   geometries, while closing
+1. classify the mixed `YX` and active `XX` common-kernel orientations, then
+   the remaining support-one and lower-pair-rank exceptional geometries,
+   while closing
    the parameter/projective boundaries of the three split-cubic
    components, the sixth component, and the earlier six-dimensional component,
    and the disjoint mixed-star component's special `H31/H22`

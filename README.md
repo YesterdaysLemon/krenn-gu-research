@@ -348,6 +348,16 @@ strictly advance the finite frontier:
   `(-t2)*(k*t3)+(k*t3)*t2=0`.  Thus all twelve certified components are now
   generically closed for both marked types:
   [`P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+- the dense common-kernel/kernel-leaf orientation of the same `(2,1,1)`
+  triangle is empty.  After exact-pair synchronization, its seven
+  kernel-rich cubics reduce to three columns.  Four maximal minors force the
+  complementary binary directions onto the split-polar graph and remove the
+  remaining `a` component.  On that graph the all-active cubic is exactly
+  `delta*C2-beta*(beta+r)*C0`, a linear combination of kernel-rich cubics.
+  Any opposite plane killing the mixed coefficients therefore kills the pure
+  coefficient too:
+  [`P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md`](P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md).
+  Mixed leaf orientations and support-one/lower-rank boundaries remain.
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while

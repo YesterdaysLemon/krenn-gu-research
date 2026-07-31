@@ -927,3 +927,28 @@ zero tensor-network transfer are literally the same certificate after the
 weighted projection.  All twelve certified components are now generically
 closed for both marked types.  The live frontier returns to component
 exhaustiveness and special parameter/projective boundaries.
+
+The same binary polarity also closes the dense common-kernel `YY` chart of
+the remaining `(2,1,1)` exceptional triangle:
+[`P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md`](P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md).
+Here the neighboring theories do more than supply terminology.  The
+rank-two cubic-span condition factors through the symmetric squarefree
+pairing `A=uq+vp` and determinant pairing `Q=uq-vp`.  In the dense torus its
+four minors force `A=0`, so the two complementary forms are an exact pair of
+linear zero divisors.  The remaining equations remove the last component in
+the common-kernel direction, and the all-active cubic becomes an explicit
+linear combination of two kernel-rich cubics.
+
+This is a small bridge between three literatures.  Abdesselam--Chipalkatti's
+quadratic-form-induced involutions explain why `A=0` is naturally a graph in
+`P^1 x P^1`, not an accidental bilinear factor
+([arXiv:1008.3117](https://arxiv.org/abs/1008.3117)).
+Kustin--Striuli--Vraciu study the Hilbert-function constraints imposed by
+exact pairs of homogeneous zero divisors in standard graded Artinian rings
+([arXiv:1304.0411](https://arxiv.org/abs/1304.0411)).  Shafiei's apolar study
+of generic determinants and permanents explains the cubic-annihilator side
+of the translation
+([arXiv:1212.0515](https://arxiv.org/abs/1212.0515)).  None of these papers
+states the graph obstruction: the new content is that the permanent
+triangle's minors force the exact-pair sheet, on which the desired active
+class collapses into the mixed apolar span.
