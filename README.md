@@ -534,6 +534,18 @@ strictly advance the finite frontier:
   eight.  All-equal labels have pair rank one.  Thus no eighteenth component
   occurs anywhere in this support-two cyclic orientation:
   [`P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_CLASSIFICATION.md`](P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_CLASSIFICATION.md).
+- the transitive rank-one triangle orientation also creates no eighteenth
+  component.  The source of two arrows has a one-dimensional annihilator,
+  forcing all three exact zero products to share the same factor pair.
+  Legal Borel shifts reduce the purity determinant to the hyperbolic binary
+  pairing `S=b_2*d_3+b_3*d_2`.  On the genuine support-two null cone, the
+  only nonzero branch has `delta=0`, pair profile `(4,3,4,3,3,3)`, and an
+  explicit projective arc with parameter `r=alpha/epsilon` into component
+  eleven.  The support-one null cone has its desired covector equal to a
+  forbidden covector and is therefore zero; coincident-factor boundaries
+  have lower pair rank.  Together with the cyclic theorem, both tournament
+  orientations of a rank-one relation triangle are classified:
+  [`P4_TRANSITIVE_RANK_ONE_TRIANGLE_CLASSIFICATION.md`](P4_TRANSITIVE_RANK_ONE_TRIANGLE_CLASSIFICATION.md).
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while
