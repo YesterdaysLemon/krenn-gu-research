@@ -546,6 +546,17 @@ strictly advance the finite frontier:
   have lower pair rank.  Together with the cyclic theorem, both tournament
   orientations of a rank-one relation triangle are classified:
   [`P4_TRANSITIVE_RANK_ONE_TRIANGLE_CLASSIFICATION.md`](P4_TRANSITIVE_RANK_ONE_TRIANGLE_CLASSIFICATION.md).
+- the support-one boundary omitted by the cyclic theorem is now closed by a
+  toric graph-lifting argument.  Treating `X_i^2=0` as a loop at source
+  vertex `i`, the fourteen possible three-label support orbits reduce to
+  only `{0,01,23}`, `{0,12,13}`, and `{0,1,23}` under plane-rank and apolar
+  separation.  Replacing each loop by
+  `(X_i+epsilon X_j)(X_i-epsilon X_j)=0` opens these three types into,
+  respectively, a source path, star, and path.  The moving apolar plane has
+  an explicit pivot correction, so the whole fibre—not just one point—lies
+  in component seventeen, sixteen, or seventeen.  Thus both the genuine
+  support-two and singleton parts of the cyclic orientation are complete:
+  [`P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_ONE_BOUNDARY.md`](P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_ONE_BOUNDARY.md).
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while
