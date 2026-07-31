@@ -22,8 +22,11 @@ the complete nonresonant all-rank-two-relation triangle is empty.   (1)
 
 Thus the all-rank-two-relation triangle frontier is now confined to
 the resonant divisor where the multiplicative projective holonomy is
-trivial.  Component exhaustiveness, the other lower-pair-rank strata,
-and the global Krenn--Gu conjecture remain open.
+trivial.  That divisor has since split into tangent-jet and
+binary-cubic incidences in
+[`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md).
+Component exhaustiveness, the other lower-pair-rank strata, and the
+global Krenn--Gu conjecture remain open.
 
 ## Why there are only two boundary supports
 

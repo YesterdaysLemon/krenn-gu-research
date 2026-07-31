@@ -159,6 +159,18 @@ strictly advance the finite frontier:
   complete nonresonant all-rank-two-relation triangle is empty.  Only
   the trivial-holonomy resonant divisor remains:
   [`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md).
+- the resonant divisor is now an affine-holonomy problem.  After
+  normalizing projective transport, the relations are
+  `A_ij*y_i*y_j+y_i*x_j-x_i*y_j=0` and the residual gauge invariant is
+  `delta=A_12+A_23-A_13`.  If `delta!=0`, all kernel-rich triple
+  products vanish and the three one-kernel products coincide, giving
+  a tangent-Segre first jet; the three kernel-pair products are
+  rank-two cuts.  If `delta=0`, all triple products depend only on
+  Hamming weight and factor through `Sym^3(C^2) -> R_3`, with its
+  first three coefficients compressed to a plane.  These two small
+  incidences, not the original plane equations, are the remaining
+  triangle frontier:
+  [`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md).
 - a mixed zero-product orientation produces a sixth
   symmetry-inequivalent component.  The normalized rank-two
   contraction condition is a `3 x 4` determinantal problem whose

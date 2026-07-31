@@ -808,7 +808,10 @@ A natural non-brute-force route is:
    forces product rank one, and its two-edge boundary suspends a pure
    `P_3` and forces pair rank at most two.  Hence the complete
    nonresonant triangle is empty; only the resonant holonomy divisor
-   remains.
+   remains.  That divisor is now split by its additive affine
+   holonomy: a nonzero class gives a tangent-Segre first jet plus a
+   cyclic cut system, and the zero class gives a compressed binary
+   cubic `Sym^3(C^2) -> R_3`.
    In parallel, close the boundaries of the three new `1+3`
    components, the sixth component, and the six-dimensional component;
 2. intersect the resulting classification with the all-rank-two and

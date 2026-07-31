@@ -11322,6 +11322,78 @@ verify_p4_nonresonant_degenerate_cut_triangle_obstruction.py
 audit_p4_nonresonant_degenerate_cut_triangle_obstruction.py
 ```
 
+### The resonant triangle is an affine connection
+
+On the remaining divisor `Omega=0`, active-row and relation scalings
+normalize the three rank-two relations to
+
+```text
+A_ij*y_i*y_j+y_i*x_j-x_i*y_j=0.
+```
+
+Borel shifts `x_i -> x_i+s_i*y_i` change
+`A_ij -> A_ij+s_i-s_j`.  The unique residual class on the cycle is
+
+```text
+delta=A_12+A_23-A_13.
+```
+
+For `delta!=0`, multiplying the three relations first by the remaining
+kernel row and then by the remaining active row gives two copies of
+the same cycle identity.  In the notation
+
+```text
+Y=yyy,
+K_i=(one active),
+J_i=(two active),
+X=xxx,
+```
+
+one obtains
+
+```text
+Y=K_1=K_2=K_3=0,
+J_1=J_2=J_3=J.
+```
+
+Thus the `R_3`-valued triple tensor is the tangent first jet
+
+```text
+J(yxx+xyx+xxy)+Xxxx.
+```
+
+Moreover each kernel-pair product `q_ij=y_i*y_j` is nonzero and is
+annihilated by the full opposite plane.  Its zero-diagonal
+catalecticant has rank exactly two, so the three `q_ij` form a cyclic
+`1+3`/`2+2` cut system.  Purity adds `U_0*J=0` and a nonzero
+`U_0*X` covector.
+
+For `delta=0`, one gauge kills all `A_ij`.  The three relations become
+`y_i*x_j=x_i*y_j`, and every triple product depends only on Hamming
+weight.  Multiplication factors through
+
+```text
+Sym^3(C^2) -> R_3,
+y^3,y^2x,yx^2,x^3 -> Y,K,J,X.
+```
+
+The perfect `R_1 x R_3` pairing and purity imply
+
+```text
+dim span(Y,K,J)<=2,
+X notin span(Y,K,J).
+```
+
+The last triangle divisor is therefore a tangent-cut incidence versus
+a compressed binary-cubic map.  This is a reduction, not yet an
+exclusion.
+
+```text
+P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md
+verify_p4_resonant_rank_two_triangle_affine_holonomy.py
+audit_p4_resonant_rank_two_triangle_affine_holonomy.py
+```
+
 ### Ninth pure component from the common `1+3` boundary
 
 Following the common `1+3` cut rather than discarding its pair-rank

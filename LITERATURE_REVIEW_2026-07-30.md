@@ -121,6 +121,7 @@ peer-reviewed global result.
 | three full-support `1+3` bridges | singleton cut labels plus coordinate-hyperplane intersections | factorization sheets, cut compatibility, perfect pairing |
 | a full-support `2+2` bridge | two hyperbolic binary planes | anchor sheets versus crossed-graph partners |
 | a proper cut support | coordinate Schubert incidence | suspension to `P_3` and Poincare pairing |
+| trivial projective triangle holonomy | affine local system on a cycle | additive cohomology, tangent jets, binary cubics |
 
 The determinantal step used in the new `H22` theorem is standard Fitting
 geometry: rank-drop loci are cut out by minors, and the construction is
@@ -212,6 +213,17 @@ at most two:
 [`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md).
 Thus the complete nonresonant triangle is empty, leaving only trivial
 holonomy.
+
+That remaining divisor has a second, affine holonomy.  Normalized edge
+relations carry constants `A_ij`, changed by vertex potentials, and
+their unique cohomology class is
+`delta=A_12+A_23-A_13`.  A nonzero class produces a
+tangent-Segre tensor and a cyclic system of kernel cuts; the zero
+class synchronizes the local bases and factors multiplication through
+`Sym^3(C^2) -> R_3`:
+[`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md).
+This is where arrangement local systems, tangent developables, and
+binary-form geometry meet the squarefree permanent problem.
 
 This translation already gives a new exact repository theorem:
 [`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md).

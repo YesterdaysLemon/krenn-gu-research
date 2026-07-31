@@ -986,6 +986,21 @@ where the pure-`P_3` pairing forces pair rank at most two:
 The complete nonresonant triangle is therefore empty.  Only the
 resonant holonomy divisor remains.
 
+The latter is now organized by an additive affine holonomy
+
+```text
+delta=A_12+A_23-A_13.
+```
+
+For `delta!=0`, the `R_3`-valued triple tensor is
+`J(yxx+xyx+xxy)+Xxxx`, a tangent-Segre first jet, and the three
+kernel-pair products form a cyclic cut system.  For `delta=0`, the
+three local bases synchronize and multiplication factors through a
+binary cubic `Sym^3(C^2) -> R_3`; purity compresses its first three
+coefficients to a plane while the fourth escapes:
+
+- [`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md)
+
 The complementary mixed zero-product orientation produces a sixth
 component.  Its normalized kernel contractions form a `3 x 4`
 determinantal matrix with five linear minimal primes.  One prime gives

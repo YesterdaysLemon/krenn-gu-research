@@ -109,6 +109,13 @@ classify the resonant divisor `Omega=0`, prove that the nine known
 pure-`P_4` components are exhaustive, or settle the global
 Krenn--Gu conjecture.
 
+The resonant divisor has since been reduced to an affine-holonomy
+dichotomy in
+[`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md):
+nonzero additive holonomy gives a tangent-Segre first jet and a cyclic
+kernel-cut system, while zero additive holonomy gives a compressed
+binary-cubic map.  Those two incidences remain unresolved.
+
 ## Why the active-active coefficient is zero
 
 The kernel of

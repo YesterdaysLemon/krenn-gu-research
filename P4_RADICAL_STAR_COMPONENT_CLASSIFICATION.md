@@ -254,7 +254,10 @@ plane tuple.”  Its unresolved generic alternatives are:
    rank collapse or a common embedded-`P_3` hyperplane:
    [`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md).
    Hence the entire nonresonant triangle is empty and only resonance
-   remains from this triangle;
+   remains from this triangle.  On resonance, the additive holonomy
+   now separates a tangent-Segre cut cycle from a compressed
+   `Sym^3(C^2) -> R_3` map:
+   [`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md);
 3. the lower pair-image-rank and coincident/support-one zero-product
    boundaries.  One rank-two-edge stratum now supplies the
    six-dimensional component in
