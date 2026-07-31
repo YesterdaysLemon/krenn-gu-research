@@ -12364,3 +12364,48 @@ multiset `{1,2,2}` separates it from all seven earlier fivefolds, and its
 dimension separates it from the two sixfolds.  The certified lower bound is
 now ten pure-`P4` component orbits.  Its marked `P5` fibres, special toric
 boundary, component exhaustiveness, and the global conjecture remain open.
+
+### The `{1,2,2}` rank-three star is completely classified
+
+The component family is now the output of a reverse normal-form theorem, not
+only a construction:
+
+```text
+P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md
+verify_p4_two_rank_two_spoke_mixed_star_classification.py
+audit_p4_two_rank_two_spoke_mixed_star_classification.py
+```
+
+Two rank-two spokes synchronize their leaves with the center.  All ordinary
+two-dimensional synchronizer pencils are totally isotropic and would create
+an extra leaf relation.  The only dimension-jump centers are full-support
+`2+2` and support-two equal ratio.
+
+For the full-support center, the all-kernel coefficient gives
+`r_2=-r_1`.  Four remaining purity expressions obey
+
+```text
+F2-F3=-(H+Q),
+F4-F3=H,
+F0-F3=-H*r^2-2H-3Q,
+F3=E*(s+t)-H+Q*s*t.
+```
+
+Nonzero purity and full leaf-pair rank therefore force, in order,
+
+```text
+Q=-H,       r^2=1,       E/H=(1+s*t)/(s+t).
+```
+
+After the legal sign, scale, and active-row-shift gauges this is exactly the
+tenth-component family.
+
+For the support-two equal-ratio center, the three Borel-distinct rank-one
+spoke orientations were checked separately.  The kernel-kernel orientation
+makes the active coefficient zero.  The other two force the fourth plane to
+`span(a_bar,b_bar)`, whose product image with the center has rank two.  Hence
+no second rank-three star family exists in that chart.
+
+The next all-rank-three graph frontier is now a triangle with exactly one
+rank-two relation.  Special divisors of the tenth component and lower
+pair-image ranks remain separate.

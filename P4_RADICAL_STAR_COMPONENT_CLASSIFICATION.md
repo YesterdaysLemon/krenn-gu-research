@@ -290,8 +290,11 @@ plane tuple.”  Its unresolved generic alternatives are:
    is not empty: its Cayley-toric two-parameter chart has a smooth
    five-dimensional diagonal-source closure and supplies a tenth component:
    [`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md).
-   Configurations with only one rank-two triangle edge, the remaining mixed-
-   star orientations, and special boundaries of the new component remain open;
+   A reverse marked-chart theorem proves that this family exhausts the whole
+   rank-three `{1,2,2}` star stratum:
+   [`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md).
+   Configurations with only one rank-two triangle edge and special lower-pair-
+   rank boundaries remain open;
 3. the lower pair-image-rank and coincident/support-one zero-product
    boundaries.  One rank-two-edge stratum now supplies the
    six-dimensional component in

@@ -142,6 +142,12 @@ this sharply restricts the remaining graph shapes, but mixed triangles with
 only one rank-two edge and lower pair-rank boundary strata remain outside this
 theorem.
 
+The star carrying the same relation-rank multiset is not empty; it is now
+constructed and completely classified in
+[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md)
+and
+[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md).
+
 The proof is symbolic and constant-size.  It enumerates Borel normal-form
 types, not graph instances or finite fields.
 

@@ -21,6 +21,10 @@ inequivalent pure-`P_4` component orbits.
 This is a `P_4` plane-level component theorem, not a graph satisfying the
 global Krenn--Gu prize conditions and not a proof of component exhaustiveness.
 
+A companion reverse-normal-form theorem now proves that this family exhausts
+the entire rank-three star stratum with relation-rank multiset `{1,2,2}`:
+[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md).
+
 ![Exceptional graph of the new mixed-star component](research_figures/p4_two_rank_two_spoke_mixed_star.png)
 
 ## Presymplectic construction
@@ -215,11 +219,11 @@ is invariant under mode/source symmetries and row-basis changes and is new.
 The two other certified components are six-dimensional and have lower pair-
 rank profiles.  Thus this is a tenth component orbit.
 
-The result settles one mixed-star stratum by construction.  Stars with a
-different number/orientation of rank-two spokes, triangles with exactly one
-rank-two edge, special divisors of (2), and the rest of the lower pair-rank
-boundary still require classification.  No global Krenn--Gu conclusion is
-claimed.
+The companion classification theorem settles this mixed-star stratum
+completely at pair profile `(3,3,3,4,4,4)`.  Triangles with exactly one
+rank-two edge, special divisors where a pair rank drops, and the rest of the
+lower pair-rank boundary still require classification.  No global Krenn--Gu
+conclusion is claimed.
 
 ## Verification
 

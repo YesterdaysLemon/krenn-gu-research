@@ -644,3 +644,16 @@ Cerulli Irelli, Fang, and Fourier,
 [Linear degenerate symplectic flag varieties](https://arxiv.org/abs/2405.02739).
 That literature does not state the squarefree permanent component or its
 `(2,2,1)` relation-rank invariant.
+
+The reverse normal-form calculation is now complete as well:
+[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md).
+The ordinary Kronecker pencils are totally isotropic and cannot give a star
+with full leaf-pair rank.  In the full-support presymplectic chart, four
+linear syzygies among the purity coefficients force the signs `r_1=-r_2=1`
+and the Cayley product law.  In the only other dimension-jump chart, the
+squarefree annihilator pairing forces the fourth plane to
+`span(a_bar,b_bar)`, where the center-pair image has rank two.  Thus the
+toric family is the entire dense `{1,2,2}` star stratum, not just a component
+inside it.  This exact passage from Kronecker type to presymplectic radical to
+torus group law is the classification mechanism absent from the neighboring
+literatures when considered separately.

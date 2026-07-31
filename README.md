@@ -258,6 +258,12 @@ strictly advance the finite frontier:
   Exact family and incidence minors prove that its diagonal-source closure
   is a smooth five-dimensional component at `(s,t)=(2,3)`:
   [`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md).
+  A reverse Borel analysis proves this is the complete rank-three star
+  stratum with relation-rank multiset `{1,2,2}`.  Ordinary synchronizer
+  pencils force an extra leaf relation; the support-two equal-ratio center
+  gives either the zero tensor or a rank-two center pair; and the full
+  `2+2` equations force the displayed Cayley law:
+  [`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md).
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while
