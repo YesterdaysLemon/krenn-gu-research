@@ -892,5 +892,21 @@ eight earlier fivefolds; dimension separates the three earlier sixfolds.
 The certified lower bound is therefore twelve components.  This reopens the
 generic marked-fibre frontier:
 the eleven components known before this binary-polarity discovery remain
-generically closed for `H31/H22`, while the twelfth component's marked
-fibres are not yet classified.
+generically closed for `H31/H22`, while the twelfth component's weighted
+fibre was not yet classified at that checkpoint.
+
+The twelfth component's `H31` side is now closed by the same module language
+that succeeded on the tenth and eleventh components:
+[`P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+The exact-pair block makes the first two all-kernel diagonals identically
+zero.  The other two are supported in four standard-basis summands of the
+mixed presentation module.  Polynomial row reduction over the entire
+marking ring gives module sizes `(7,7,8,8)` and retains the all-active
+cokernel class in every deletion.
+
+This is stronger than a generic determinantal rank calculation: it proves
+one diagonal vanishes on every kernel fibre simultaneously, including every
+marking divisor.  The binary-polarity geometry from the component theorem
+and the Fitting-module viewpoint therefore dovetail exactly.  All twelve
+certified pure components are now generically closed for `H31`; the new
+generic known-component frontier is its weighted `H22` fibre.

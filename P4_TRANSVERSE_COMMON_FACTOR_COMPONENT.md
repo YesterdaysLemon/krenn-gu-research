@@ -26,7 +26,9 @@ rank four.  The resulting five-edge exceptional graph is pictured in
 This raises the certified lower bound from eleven to twelve symmetry-
 inequivalent pure-`P_4` component orbits.  It is not component exhaustiveness,
 does not prove component exhaustiveness or the global Krenn--Gu conjecture.
-The new component's generic `H31` and weighted `H22` fibres are open.
+Its generic `H31` fibre is subsequently proved empty in
+[`P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+The generic weighted `H22` fibre remains open.
 
 ## The orientation collapses to one exact pair
 

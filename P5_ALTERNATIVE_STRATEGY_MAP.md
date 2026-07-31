@@ -1326,8 +1326,16 @@ family closure is a component.  Its sorted pair profile
 separates the three earlier sixfolds.  This raises the certified component
 lower bound to twelve.
 
-The displayed two-parameter sheet is a dense normal form.  The new
-component's generic `H31` and weighted `H22` fibres are open;
+The displayed two-parameter sheet is a dense normal form.  Its complete
+generic marked `H31` fibre is now empty:
+
+- [`P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md)
+
+Over `C(r,k)[h0,h1,h2,h3]`, the all-kernel binary diagonal belongs to the
+fourteen-row mixed module for all four deleted coordinates, while the
+all-active diagonal has nonzero cokernel class.  The reduced module sizes are
+`(7,7,8,8)`.  Thus all twelve certified components are generically closed for
+`H31`.  The new component's weighted `H22` fibre remains open;
 the former statement that all known components were generically closed is a
 historical eleven-component checkpoint.
 
@@ -1354,8 +1362,8 @@ marked-fibre level:
 
 ## Priority
 
-1. analyze the transverse binary-polarity component's generic `H31/H22`
-   fibres; then classify the
+1. analyze the transverse binary-polarity component's generic weighted `H22`
+   fibre; then classify the
    remaining support-one and lower-pair-rank exceptional geometries, while closing
    the parameter/projective boundaries of the three split-cubic
    components, the sixth component, and the earlier six-dimensional component,

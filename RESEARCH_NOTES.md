@@ -12886,3 +12886,46 @@ P4_TRANSVERSE_COMMON_FACTOR_COMPONENT_GRAPH.svg
 verify_p4_transverse_common_factor_component.py
 audit_p4_transverse_common_factor_component.py
 ```
+
+### The twelfth component has no generic marked `H31` fibre
+
+Use the intrinsic marking
+
+```text
+alpha=(n,a,a,d),       beta=(c,m,m_r,c),
+beta_i(h)=beta_i+h_i*alpha_i
+```
+
+over `C(r,k)[h0,h1,h2,h3]`.  For each deleted coordinate `j`, let `M_j`
+be the fourteen-row mixed extension matrix and `A_j,B_j` its all-kernel and
+all-active diagonal rows.  Exact polynomial module reduction gives
+
+```text
+A_j in Row(M_j),       B_j notin Row(M_j),
+module sizes (7,7,8,8).
+```
+
+The first two all-kernel rows vanish identically.  The other two are
+
+```text
+A_2=2k(1,r+2,r+2,1,0,0,0,0),
+A_3=2(1,-k(r+2),-k(r+2),-1,0,0,0,0),
+```
+
+and the reduced modules contain the required standard-basis rows.  At
+`(r,k)=(1,2)`, mixed ranks `(6,6,7,7)` are unchanged by adjoining `A_j`
+and rise to `(7,7,8,8)` after adjoining `B_j`.  An independent subset-DP
+audit reproduces all four all-marking modules at `(1,2)` and `(2,3)`.
+
+Thus every mixed-zero extension kills one required binary diagonal before
+any ternary-rank test.  All twelve certified components are generically
+closed for `H31`; the twelfth component's weighted `H22` fibre, special
+boundaries, component exhaustiveness, and the global conjecture remain open.
+
+Primary theorem and verifiers:
+
+```text
+P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h31_transverse_common_factor_component_generic_obstruction.py
+audit_p5_h31_transverse_common_factor_component_generic_obstruction.py
+```
