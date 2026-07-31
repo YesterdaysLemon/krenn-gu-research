@@ -12929,3 +12929,38 @@ P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md
 verify_p5_h31_transverse_common_factor_component_generic_obstruction.py
 audit_p5_h31_transverse_common_factor_component_generic_obstruction.py
 ```
+
+### Binary polarity kills the twelfth component's weighted `H22` fibre
+
+For the weighted `01` neighbor, restore arbitrary source scalings and
+homogeneous merge weights.  The repeated kernel rows `a,a` are supported only
+on the merged and fifth channels.  Every perfect matching assigns them to
+those channels, leaving the kernel rows `n,d` on `X2,X3`:
+
+```text
+n -> (-t2,k*t3),       d -> (t2,k*t3).
+```
+
+Their residual permanent is
+
+```text
+(-t2)*(k*t3)+(k*t3)*t2=0,
+```
+
+the exact-zero-divisor identity `(-X2+kX3)(X2+kX3)=0`.  Hence the
+all-kernel diagonal vanishes for every extension, marking, slope, and source
+scaling before any mixed equation is imposed.  An independent subset-DP
+audit with arbitrary kernel-row scalings and a within-block source swap
+reproduces the zero polynomial.
+
+All twelve certified pure-`P4` components are now generically closed for
+both `H31` and weighted `H22`.  Special parameter/projective boundaries,
+component exhaustiveness, and the global conjecture remain open.
+
+Primary theorem and verifiers:
+
+```text
+P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h22_transverse_common_factor_component_generic_obstruction.py
+audit_p5_h22_transverse_common_factor_component_generic_obstruction.py
+```

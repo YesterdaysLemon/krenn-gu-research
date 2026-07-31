@@ -910,3 +910,20 @@ marking divisor.  The binary-polarity geometry from the component theorem
 and the Fitting-module viewpoint therefore dovetail exactly.  All twelve
 certified pure components are now generically closed for `H31`; the new
 generic known-component frontier is its weighted `H22` fibre.
+
+That weighted fibre collapses to the polarity involution itself:
+[`P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+The repeated rows `a,a` saturate the merged/fifth channels.  The residual
+two-channel matrix has rows `(-t2,k*t3)` and `(t2,k*t3)`, so its permanent
+vanishes.  Equivalently,
+
+```text
+(-X2+kX3)(X2+kX3)=0
+```
+
+in the squarefree binary block.  Thus the quadratic involution from binary
+invariant theory, the exact-zero-divisor pair from commutative algebra, and a
+zero tensor-network transfer are literally the same certificate after the
+weighted projection.  All twelve certified components are now generically
+closed for both marked types.  The live frontier returns to component
+exhaustiveness and special parameter/projective boundaries.

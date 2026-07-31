@@ -8,8 +8,11 @@ component is empty for `H31`.
 
 Together with the earlier component theorems, all twelve currently certified
 pure-`P_4` component orbits are now generically closed for `H31`.  The new
-component's weighted `H22` fibre, special parameter/projective boundaries,
-component exhaustiveness, and the global Krenn--Gu conjecture remain open.
+component's weighted `H22` fibre is subsequently closed by the direct
+binary-polarity identity in
+[`P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+Special parameter/projective boundaries, component exhaustiveness, and the
+global Krenn--Gu conjecture remain open.
 
 ## The component's intrinsic marking
 
@@ -169,8 +172,9 @@ a binary neighbor.
 
 ## Proof boundary
 
-This theorem closes the generic `H31` fibre of the twelfth component.  It
-does not address weighted `H22`, special values such as `k=0`, `k=+/-1`, or
+This theorem closes the generic `H31` fibre of the twelfth component.  The
+subsequent theorem linked above closes weighted `H22`.  Neither addresses
+special values such as `k=0`, `k=+/-1`, or
 `r=-2`, projective compactification boundaries, further pure components, or
 the global prize problem.
 

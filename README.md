@@ -342,7 +342,12 @@ strictly advance the finite frontier:
   survives.  The reduced module sizes are `(7,7,8,8)`, so all twelve
   certified components are generically closed for `H31`:
   [`P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
-  The twelfth component's generic weighted `H22` fibre remains open.
+  Its generic weighted `H22` fibre is empty by a shorter binary-polarity
+  identity.  The repeated kernel rows saturate the merged/fifth channels and
+  leave the residual permanent
+  `(-t2)*(k*t3)+(k*t3)*t2=0`.  Thus all twelve certified components are now
+  generically closed for both marked types:
+  [`P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while
@@ -1121,9 +1126,10 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   supplied a twelfth, five-dimensional component by a quadratic transverse
   obstruction.  Its generic `H31` fibre is now empty by an all-marking
   polynomial row-module inclusion, so all twelve known components are
-  generically closed for `H31`; its weighted `H22` fibre remains open.  The
-  live finite frontier is therefore the twelfth component's `H22` fibre,
-  component exhaustiveness, and the special
+  generically closed for `H31`.  Its weighted `H22` fibre is also empty by
+  the residual polarity identity `(-t2)*(k*t3)+(k*t3)*t2=0`.  All twelve
+  are therefore generically closed for both marked types.  The live finite
+  frontier is component exhaustiveness and the special
   parameter/projective boundaries.  The
   ninth orbit's entire
   normalized `H31` chart is closed as well, and its weighted boundary

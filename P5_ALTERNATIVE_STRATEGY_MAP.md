@@ -1335,9 +1335,25 @@ Over `C(r,k)[h0,h1,h2,h3]`, the all-kernel binary diagonal belongs to the
 fourteen-row mixed module for all four deleted coordinates, while the
 all-active diagonal has nonzero cokernel class.  The reduced module sizes are
 `(7,7,8,8)`.  Thus all twelve certified components are generically closed for
-`H31`.  The new component's weighted `H22` fibre remains open;
-the former statement that all known components were generically closed is a
-historical eleven-component checkpoint.
+`H31`.  At this stage the new component's weighted `H22` fibre remained open;
+the former statement that all known components were generically closed for
+both types was a historical eleven-component checkpoint.
+
+That last generic fibre is now closed by the binary-polarity cut:
+
+- [`P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md)
+
+The repeated kernel rows `a,a` consume the merged and fifth channels in the
+weighted `01` neighbor.  The remaining two rows restrict to
+
+```text
+(-t2,k*t3),       (t2,k*t3),
+```
+
+whose permanent is identically zero.  This is the exact pair
+`(-X2+kX3)(X2+kX3)=0`, homogeneous in every merge weight, source scaling,
+extension entry, and marking.  Hence all twelve certified components are now
+generically closed for both `H31` and weighted `H22`.
 
 The earlier
 quadratic-function-field experiments and their null outcomes remain
@@ -1362,9 +1378,8 @@ marked-fibre level:
 
 ## Priority
 
-1. analyze the transverse binary-polarity component's generic weighted `H22`
-   fibre; then classify the
-   remaining support-one and lower-pair-rank exceptional geometries, while closing
+1. classify the remaining support-one and lower-pair-rank exceptional
+   geometries, while closing
    the parameter/projective boundaries of the three split-cubic
    components, the sixth component, and the earlier six-dimensional component,
    and the disjoint mixed-star component's special `H31/H22`
