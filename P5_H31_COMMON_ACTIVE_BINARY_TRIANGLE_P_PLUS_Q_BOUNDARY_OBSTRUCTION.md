@@ -2,19 +2,34 @@
 
 ## Status
 
-**Exact on the displayed charts after independent replay; boundary-wide
-status remains DERIVED.**  This note gives exact characteristic-zero
-marked-`H31` obstruction certificates for the two finite generic-centre
-`p+q=0` boundary charts `B_full` and `B_drop`, their `a=0,-1` fibres, and the
-replacement family at `a=-1/2`.  Promoting this to the entire `p+q=0`
-boundary still depends on the unverified actual-arc exhaustion step in the
-prerequisite `P_4` classification.
+**VERIFIED on the whole diagonal-DVR wall.**  This note gives exact
+characteristic-zero marked-`H31` obstruction certificates
+for the two finite generic-centre `p+q=0` boundary charts `B_full` and
+`B_drop`, their `a=0,-1` fibres, and the replacement family at `a=-1/2`.
+The prerequisite `P_4` actual-arc exhaustion is now independently verified.
+It also places the finite generic and half-centre `y<0` strata and the
+infinity strata with `y<-r` in the complete embedded-`P_3` closure, whose
+whole projective marked-`H31` fibre is independently closed.
+
+The two lower-pair special families that generic component-fourteen/fifteen
+emptiness cannot reach are now closed by direct certificates:
+
+- `P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md`
+  treats the `a=0,-1`, `y<0` support-one component-fifteen fibres;
+- `P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md`
+  treats both `y=-r` faces at the special component-fourteen infinity
+  endpoint equivalent to `(p,q)=(-1,0)`.
+
+Together with the embedded-`P_3` projective closure for every `y<-r` stratum,
+these direct certificates exhaust the lower-pair cases in the verified `P_4`
+arc classification.  Thus the whole diagonal-source-torus DVR boundary on
+`p+q=0` is `VERIFIED` for marked `H31`.
 
 The result is a boundary theorem for the diagonal-source-torus charts
 classified in `P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md`.  It
 does not identify `B_drop` with an older named component, prove weighted
-`H22`, close arbitrary projective boundary directions, or resolve the global
-Krenn--Gu conjecture.
+`H22`, classify non-diagonal or arbitrary `GL_4` source changes, or resolve
+the global Krenn--Gu conjecture.
 
 ## Pure orientations
 
@@ -294,9 +309,14 @@ marked `H31` lift.
   exhaustive fixed-minor proof in (19).
 - All computations are exact over characteristic zero.  No finite-field
   computation or inference is used.
-- Weighted `H22`, arbitrary projective closure, older-component placement,
-  arbitrary-order local-to-global reduction, and the global conjecture remain
-  open.
+- Weighted `H22`, non-diagonal or arbitrary `GL_4` source changes,
+  older-component placement, arbitrary-order local-to-global reduction, and
+  the global conjecture remain open.
+- The verified `P_4` arc classification does not by itself close `H31` on
+  special fibres of the lower-pair components.  The two direct obstruction
+  notes named in the status section supply those missing certificates; their
+  own primary and fresh independent audits are required dependencies of this
+  whole-wall statement.
 
 ## Exact replay
 
@@ -315,4 +335,7 @@ fixed maximal minor, and verifies the fixed transverse entries.  The audit
 does not import the primary and reconstructs the bases, projections, residual
 certificates, and replacement-family unit projections through a separate
 exact code path.  The intentionally unreplayed 68-minor global ideal is
-reported only in the failure ledger, not as a theorem certificate.
+reported only in the failure ledger, not as a theorem certificate.  The
+special component-fifteen and component-fourteen dependencies each have a
+separate exact no-import or separately constructed audit; all dependency
+hashes are recorded by the aggregate replays.

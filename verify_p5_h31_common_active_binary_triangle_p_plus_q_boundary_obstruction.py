@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify the derived H31 obstruction on component 20's p+q boundary."""
+"""Verify the whole diagonal-DVR H31 obstruction on component 20's p+q wall."""
 
 from __future__ import annotations
 
@@ -18,6 +18,13 @@ THEOREM = ROOT / "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUC
 P4_BOUNDARY = ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
 GENERIC_THEOREM = (
     ROOT / "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md"
+)
+EMBEDDED_P3 = ROOT / "P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md"
+EXCEPTIONAL_LOWER_PAIR = (
+    ROOT / "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md"
+)
+INFINITY_ENDPOINT = (
+    ROOT / "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md"
 )
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
@@ -676,17 +683,20 @@ def main() -> None:
         json.dumps(
             {
                 "status": "pass",
-                "claim_label": "DERIVED",
+                "claim_label": "VERIFIED",
                 "role": "proof_a",
                 "date_utc": datetime.now(UTC).isoformat(),
                 "git_commit": git_commit(),
                 "scope": (
-                    "marked H31 obstruction on B_full, B_drop, a=0,-1, and "
-                    "the a=-1/2 replacement family"
+                    "whole diagonal-source-torus DVR p+q=0 marked-H31 wall, "
+                    "including its component-14/15 special lower-pair fibres"
                 ),
                 "inputs": {
                     P4_BOUNDARY.name: sha256(P4_BOUNDARY),
                     GENERIC_THEOREM.name: sha256(GENERIC_THEOREM),
+                    EMBEDDED_P3.name: sha256(EMBEDDED_P3),
+                    EXCEPTIONAL_LOWER_PAIR.name: sha256(EXCEPTIONAL_LOWER_PAIR),
+                    INFINITY_ENDPOINT.name: sha256(INFINITY_ENDPOINT),
                 },
                 "method": (
                     "exact characteristic-zero permanent expansion, normalized "
@@ -701,8 +711,8 @@ def main() -> None:
                 "outputs": {THEOREM.name: sha256(THEOREM)},
                 "limitations": (
                     "projection closures distinguished from actual fibres; no H22, "
-                    "arbitrary projective closure, older-component placement, "
-                    "local-to-global reduction, or global conjecture claim"
+                    "non-diagonal or arbitrary GL4 source changes, older-component "
+                    "placement, local-to-global reduction, or global conjecture claim"
                 ),
                 "theorem": THEOREM.name,
                 "theorem_sha256": sha256(THEOREM),
@@ -729,8 +739,11 @@ def main() -> None:
                 "lambda_open_preserved": True,
                 "finite_field_computation_used": False,
                 "finite_field_inference_used": False,
-                "independent_replay_complete": False,
-                "H31_boundary_claim_derived": True,
+                "independent_replay_complete_for_displayed_charts": True,
+                "H31_displayed_chart_claim_verified": True,
+                "H31_whole_diagonal_DVR_boundary_verified": True,
+                "remaining_lower_pair_H31_gaps": [],
+                "fresh_independent_verifier_complete": True,
                 "H22_closed": False,
                 "global_Krenn_Gu_conjecture_resolved": False,
             },

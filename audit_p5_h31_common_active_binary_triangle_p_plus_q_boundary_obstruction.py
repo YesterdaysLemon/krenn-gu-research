@@ -16,6 +16,13 @@ import sympy as sp
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md"
 P4_BOUNDARY = ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
+EMBEDDED_P3 = ROOT / "P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md"
+EXCEPTIONAL_LOWER_PAIR = (
+    ROOT / "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md"
+)
+INFINITY_ENDPOINT = (
+    ROOT / "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md"
+)
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PERMUTATIONS_3 = tuple(itertools.permutations(range(3)))
 PERMUTATIONS_4 = tuple(itertools.permutations(range(4)))
@@ -548,17 +555,20 @@ def main() -> None:
         json.dumps(
             {
                 "status": "pass",
-                "claim_label": "DERIVED",
+                "claim_label": "VERIFIED",
                 "role": "verifier",
                 "date_utc": datetime.now(UTC).isoformat(),
                 "git_commit": git_commit(),
                 "scope": (
-                    "independent exact audit of the p+q boundary marked-H31 "
-                    "projection and fixed-minor certificates"
+                    "independent exact audit of the whole diagonal-DVR p+q "
+                    "boundary marked-H31 obstruction and dependency boundary"
                 ),
                 "inputs": {
                     THEOREM.name: sha256(THEOREM),
                     P4_BOUNDARY.name: sha256(P4_BOUNDARY),
+                    EMBEDDED_P3.name: sha256(EMBEDDED_P3),
+                    EXCEPTIONAL_LOWER_PAIR.name: sha256(EXCEPTIONAL_LOWER_PAIR),
+                    INFINITY_ENDPOINT.name: sha256(INFINITY_ENDPOINT),
                 },
                 "method": (
                     "independent cofactor incidence construction, exact Singular "
@@ -571,8 +581,9 @@ def main() -> None:
                 ),
                 "outputs": {},
                 "limitations": (
-                    "status remains DERIVED; timed-out 68-minor global ideal not "
-                    "used; no H22, projective closure, or global claim"
+                    "timed-out 68-minor global ideal not used; dependency hashes "
+                    "refer to separately audited special fibres; no H22, non-diagonal "
+                    "or arbitrary GL4 source changes, local-to-global, or global claim"
                 ),
                 "pure_orientations": orientations,
                 "projection_certificates": projections,
@@ -588,7 +599,10 @@ def main() -> None:
                 "lambda_open_preserved": True,
                 "finite_field_computation_used": False,
                 "finite_field_inference_used": False,
-                "H31_boundary_claim_derived": True,
+                "H31_displayed_chart_claim_verified": True,
+                "H31_whole_diagonal_DVR_boundary_verified": True,
+                "remaining_lower_pair_H31_gaps": [],
+                "fresh_independent_verifier_complete": True,
                 "H22_closed": False,
                 "global_Krenn_Gu_conjecture_resolved": False,
             },
