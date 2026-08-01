@@ -65,13 +65,17 @@ Six statements organize the current frontier.
    fibre over the entire nonzero all-pair-open locus
    `q*phi*(q-phi)!=0`.  This includes `q=+/-1`, `phi=+/-1`, both
    `q*phi=+/-1` divisors, all of their crossings, and the reciprocal
-   weight-at-infinity chart.  The `q=phi` projectivized zero base remains
-   `UNKNOWN`; it has a verified smooth codimension-two zero ideal with normal
-   fibre `P1`:
+   weight-at-infinity chart.  The `q=phi` zero base has a verified smooth
+   codimension-two zero ideal with normal fibre `P1`; exact construction and
+   a 16-chart no-import audit close weighted `H22` on the full
+   associated-graded first-normal `P1`, including `phi=+/-1`.  Proof B closes
+   every exact linear DVR ray.  Arbitrary higher-order or ramified marked arcs
+   remain `UNKNOWN`:
    [`P5_H22_COMPONENT19_P0_FINITE_BOUNDARY_GEOMETRY_RECONNAISSANCE.md`](P5_H22_COMPONENT19_P0_FINITE_BOUNDARY_GEOMETRY_RECONNAISSANCE.md),
    [`P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md`](P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md),
    [`P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md),
-   [`P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md`](P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md).
+   [`P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md`](P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md),
+   [`P5_H22_COMPONENT19_Q_EQ_PHI_FIRST_NORMAL_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_Q_EQ_PHI_FIRST_NORMAL_NO_IMPORT_VERIFICATION.md).
    Component twenty is closed by exact open-incidence projection to four
    marking points and one uniform minor/transverse certificate:
    [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
@@ -185,10 +189,11 @@ infinity, non-diagonal or arbitrary `GL_4` source changes, and the remaining
 special/projective weighted-`H22` fibres of components nineteen through
 twenty-one remain open, except for component nineteen's verified finite
 `q=0,p*phi!=0` and `q=phi,p*phi!=0` divisors and its complete ordinary
-`p=0`, `q*phi*(q-phi)!=0` projective weight fibre.  On `p=0`, only the
-`q=phi` zero-base normal/valuative directions, the `q=0` or `phi=0`
-lower-pair boundaries, and parameter-compactification directions remain
-outside that theorem.
+`p=0`, `q*phi*(q-phi)!=0` projective weight fibre.  On the `q=phi` zero
+base, the entire associated-graded first-normal `P1` and every exact linear
+DVR ray are also closed.  Only arbitrary higher-order or ramified marked
+arcs, the `q=0` or `phi=0` lower-pair boundaries, and
+parameter-compactification directions remain outside those theorems.
 
 A `VERIFIED` valuative analysis of diagonal source-torus arcs with
 `p+q -> 0` has exact replays for the corrected mode-zero wedge, the generic
@@ -298,11 +303,19 @@ audit replays all eight certificates and verifies the exact divisor ledger.
 Consequently the complete projective weighted-`H22` fibre is empty over every
 ordinary nonzero all-pair-open point `q*phi*(q-phi)!=0`.
 
-The zero/projective `q=phi` base remains `UNKNOWN`.  Its zero ideal is exactly
-`<p,q-phi>`, smooth of codimension two, and its first normal tensor directions
-form `P1`; higher-order valuative arcs are not classified.  The `q=0` and
-`phi=0` loci are lower-pair boundaries, while parameter-chart infinity and
-other projectivized base directions remain outside the aggregate theorem.
+At the zero/projective `q=phi` base, the zero ideal is exactly `<p,q-phi>`,
+smooth of codimension two, and its first normal tensor directions form `P1`.
+Two normalized normal charts, finite/infinite homogeneous weights, and four
+genuine-diagonal orientation opens give 16 exact incidence cases; a no-import
+audit over `Q[phi]`, saturated only by `phi`, makes all 16 ideals unit.  Thus
+the complete associated-graded first-normal `P1` is verified empty for every
+`phi!=0`, including `phi=+/-1`.  Proof B independently obstructs every exact
+linear DVR ray and records the missing endpoint algebra.  This does not prove
+that arbitrary higher-order or ramified marking/extension valuations depend
+only on the leading normal direction; those formal arcs remain `UNKNOWN`.
+The `q=0` and `phi=0` loci are lower-pair boundaries, while parameter-chart
+infinity and other projectivized base directions remain outside the aggregate
+theorem.
 The direct and aggregate replays are:
 [`P5_H22_COMPONENT19_P0_QPHI_ONE_INDEPENDENT_VERIFICATION.md`](P5_H22_COMPONENT19_P0_QPHI_ONE_INDEPENDENT_VERIFICATION.md),
 [`P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_TERNARY_COMPATIBILITY_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_TERNARY_COMPATIBILITY_OBSTRUCTION_VERIFICATION.md),
@@ -310,8 +323,10 @@ The direct and aggregate replays are:
 [`P5_H22_COMPONENT19_P0_Q_ENDPOINTS_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_P0_Q_ENDPOINTS_NO_IMPORT_VERIFICATION.md),
 [`P5_H22_COMPONENT19_P0_PHI_ENDPOINTS_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_P0_PHI_ENDPOINTS_NO_IMPORT_VERIFICATION.md),
 [`P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md),
+[`P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md`](P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md),
+[`P5_H22_COMPONENT19_ZERO_BASE_NORMAL_CONE_PROOF_B.md`](P5_H22_COMPONENT19_ZERO_BASE_NORMAL_CONE_PROOF_B.md),
 and
-[`P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md`](P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md).
+[`P5_H22_COMPONENT19_Q_EQ_PHI_FIRST_NORMAL_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_Q_EQ_PHI_FIRST_NORMAL_NO_IMPORT_VERIFICATION.md).
 
 The historical stronger construction package claiming the larger open
 without the `q*phi=+/-1` exclusions is `REFUTED` as a replayable certificate:
@@ -769,6 +784,10 @@ uv run --with sympy python audit_p5_h22_component19_p0_qphim1_infinity_no_import
 uv run --with sympy python audit_p5_h22_component19_p0_q_endpoints_no_import.py
 uv run --with sympy python audit_p5_h22_component19_p0_phi_endpoints_no_import.py
 uv run --with sympy python audit_p5_h22_component19_p0_finite_ordinary_aggregate.py
+
+uv run --with sympy python derive_p5_h22_component19_zero_base_first_normal_candidate.py
+uv run --with sympy python derive_p5_h22_component19_zero_base_normal_cone_proof_b.py
+uv run --with sympy python audit_p5_h22_component19_q_eq_phi_first_normal_no_import.py
 
 # Expected assertion failure; retained REFUTED construction package:
 uv run --with sympy python derive_p5_h22_component19_p0_ordinary_boundary_candidate.py

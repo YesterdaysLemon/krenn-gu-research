@@ -36,9 +36,13 @@ and an eight-certificate aggregate now close the complete projective
 weighted-`H22` fibre over the entire nonzero all-pair-open locus
 `q*phi*(q-phi)!=0`.  This includes `q=+/-1`, `phi=+/-1`, both
 `q*phi=+/-1` divisors, their survivor jumps, and the reciprocal
-weight-at-infinity chart.  The zero sub-divisor `q=phi` remains explicitly
-`UNKNOWN`; it is a smooth codimension-two zero base with projectivized first
-normal fibre `P1`.  The `q=0` and `phi=0` loci are lower-pair boundaries.
+weight-at-infinity chart.  The zero sub-divisor `q=phi` is a smooth
+codimension-two zero base with projectivized first-normal fibre `P1`.  Exact
+construction and a 16-chart no-import audit now verify empty weighted-`H22`
+incidence on that whole associated-graded `P1`, including `phi=+/-1`; a
+separate structural replay closes every exact linear DVR ray.  Arbitrary
+higher-order or ramified marked lifts remain `UNKNOWN`.  The `q=0` and
+`phi=0` loci are lower-pair boundaries.
 Other divisors remain separate.  On component
 twenty, the entire finite normalized `(p+q)(p-q+1)!=0` sheet is now closed,
 including every special-divisor intersection inside that open.  The intrinsic
@@ -740,12 +744,15 @@ strictly advance the finite frontier:
   Direct specializations close `q=+/-1`, `phi=+/-1`, and `q*phi=+/-1`,
   including the enlarged `Y=0` survivor sheet at the reciprocal sign
   crossings; an independent coefficient syzygy closes the reciprocal
-  weight-at-infinity chart.  The projectivized zero base `q=phi`, the
-  lower-pair boundaries `q=0` and `phi=0`, and parameter-compactification or
-  valuative base directions remain separate.  A stronger historical
-  construction package is retained as `REFUTED` because its advertised
-  stacked minor fails exact replay.  Other special/projective boundaries
-  remain open:
+  weight-at-infinity chart.  At the projectivized zero base `q=phi`, the
+  complete associated-graded first-normal `P1` has empty weighted incidence
+  in all 16 direction/weight/orientation charts, and every exact linear DVR
+  ray is separately obstructed.  Arbitrary higher-order or ramified marked
+  lifts remain `UNKNOWN`; the lower-pair boundaries `q=0` and `phi=0` and
+  parameter-compactification directions also remain separate.  A stronger
+  historical construction package is retained as `REFUTED` because its
+  advertised stacked minor fails exact replay.  Other special/projective
+  boundaries remain open:
   [`P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md),
   [`P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md),
   [`P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_OBSTRUCTION_VERIFICATION.md),
@@ -755,7 +762,8 @@ strictly advance the finite frontier:
   [`P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md`](P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md),
   [`P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md`](P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md),
   [`P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md),
-  and [`P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md`](P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md).
+  [`P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md`](P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md),
+  and [`P5_H22_COMPONENT19_Q_EQ_PHI_FIRST_NORMAL_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_Q_EQ_PHI_FIRST_NORMAL_NO_IMPORT_VERIFICATION.md).
 - the `tau!=0` common-active binary sheet is a new five-dimensional component
   twenty.  Its generic profile is `(4,4,4,3,3,3)`, its intrinsic rank-one
   kernel signature is `(2,2,0,0)`, and its apparent sixth tangent direction
