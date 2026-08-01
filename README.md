@@ -24,10 +24,10 @@ star/triangle cells.  Generic marked `H31/H22` fibres are proved empty on the
 first eighteen components, and components nineteen through twenty-one are
 now generically closed for `H31`; weighted `H22` on all three new components
 and the remaining special/projective boundaries remain open.  On component
-twenty, nine principal affine special divisors and the intrinsic
-`p-q+1=0` chart wall are now also closed over their generic points, while
-their intersections and the projective/source-torus boundary remain separate
-tasks.  The
+twenty, the entire finite normalized `(p+q)(p-q+1)!=0` sheet is now closed,
+including every special-divisor intersection inside that open.  The intrinsic
+`p-q+1=0` chart wall is also closed over its generic point, while `p+q=0`
+and the remaining projective/source-torus boundary are separate tasks.  The
 five-root no-torus locus has also been pushed from a hypersurface envelope to
 codimension at least two, and the first blocker surplus has an arbitrary-order
 port-permanent formula.  On the resulting common-port `P_6` wall, an exact
@@ -720,6 +720,16 @@ strictly advance the finite frontier:
   the `p+q=0` normalization boundary, parameter infinity,
   source-torus/projective limits, and weighted `H22` remain open:
   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_SPECIAL_DIVISOR_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_SPECIAL_DIVISOR_OBSTRUCTION.md).
+- one global saturated calculation strengthens that divisor-by-divisor
+  theorem to the complete finite normalized sheet
+  `(p+q)(p-q+1)!=0`, including all special intersections in the open.  Its
+  deletion zero projects to the unit ideal, while the other three marking
+  projections have `6,6,7` primary components.  All maximal mode-three
+  minors and the deleted pure transverse column give unit ideals on the
+  genuine-binary incidence.  The `p+q=0` and `p-q+1=0` walls,
+  parameter infinity, source-torus/projective limits, and weighted `H22` are
+  excluded from this normalized-affine theorem:
+  [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_NORMALIZED_AFFINE_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_NORMALIZED_AFFINE_OBSTRUCTION.md).
 - on the intrinsic-basis wall `p-q+1=0`, specialization of the generic basis
   is invalid.  A replacement basis taken directly from `U0` has sole pure
   coefficient `T_1111=-2p(p+1)`.  Exact characteristic-zero elimination over

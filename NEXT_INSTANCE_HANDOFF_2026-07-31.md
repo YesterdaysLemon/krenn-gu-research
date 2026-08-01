@@ -50,6 +50,10 @@ Six statements organize the current frontier.
    Its nine principal affine special divisors are also closed over their
    generic points by exact projection and uniform marked-minor certificates:
    [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_SPECIAL_DIVISOR_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_SPECIAL_DIVISOR_OBSTRUCTION.md).
+   A single saturated all-minors certificate strengthens this to the entire
+   finite normalized `(p+q)(p-q+1)!=0` sheet, including every special-divisor
+   intersection inside the open:
+   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_NORMALIZED_AFFINE_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_NORMALIZED_AFFINE_OBSTRUCTION.md).
    The intrinsic `p-q+1=0` basis boundary has no binary neighbour over its
    generic point after replacing the collapsed generic basis:
    [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md).
@@ -103,11 +107,12 @@ is component eighteen; the fully kernel--kernel stratum lies in components
 sixteen or eighteen; the exactly-two-kernel stratum lies in component eleven;
 and all eight residual exactly-one-kernel entries now have exact component
 placements.  Components nineteen through twenty-one now have exact generic
-`H31` exclusions.  Component twenty also has exact divisor-generic exclusions
-on nine principal affine special loci and on the intrinsic `p-q+1=0` chart
-wall.  Their exceptional/intersection points, the remaining
-normalization/projective/source-torus boundaries, and weighted `H22` on all
-three components remain open.
+`H31` exclusions.  Component twenty is now closed on its entire finite
+normalized `(p+q)(p-q+1)!=0` sheet, including all special-divisor
+intersections in that open.  The intrinsic `p-q+1=0` chart wall is closed
+over its generic point.  The `p+q=0` wall, the exceptional points on the
+intrinsic wall, the remaining projective/source-torus boundaries, and
+weighted `H22` on all three components remain open.
 
 For component nineteen, exact characteristic-zero projection reduces
 deletions 0 and 1 to the unit ideal and deletions 2 and 3 to
@@ -139,6 +144,15 @@ and `q=0,1`.  Deletions one and two also acquire marking axes at `q=1/2` and
 generic marked `H31` fibre on all nine divisors.  This does not close their
 base intersections or the remaining normalization/projective/source-torus
 boundaries.
+
+The global normalized-affine replay saturates simultaneously by the genuine
+binary diagonals and `(p+q)(p-q+1)`.  For all four deletions, the locus where
+every maximal mode-three minor vanishes is the unit ideal, as is the locus
+where the deleted pure transverse column vanishes.  Deletion zero projects
+to the unit ideal, while the other three exact marking projections have
+`6,6,7` primary components.  This closes every finite special-divisor
+intersection inside the normalized open and supersedes the intersection
+limitation of the divisor-generic theorem there.
 
 On `q=p+1`, the generic intrinsic mode-zero basis collapses.  Returning to
 the two actual rows of `U0` gives a replacement basis whose only pure
@@ -356,10 +370,10 @@ extended rows use at most two columns.  Their all-kernel permanent is
 identically zero by Hall deficiency, simultaneously in all affine markings,
 extension entries, source scalings, and homogeneous weights.  The
 `triangle-(1,1,1)` cell is now closed by the later placement theorems.  The
-remaining work is the other three all-pair graph cells, component-twenty
-divisor intersections and projective/source-torus boundaries, weighted `H22`
-on components nineteen through twenty-one, the corresponding remaining
-special boundaries, and the universal `P_5` step.
+remaining work is the other three all-pair graph cells, component-twenty's
+`p+q=0` and projective/source-torus boundaries, weighted `H22` on components
+nineteen through twenty-one, the corresponding remaining special boundaries,
+and the universal `P_5` step.
 
 ## Focused replay
 
@@ -446,6 +460,9 @@ uv run --with sympy python audit_p5_h31_common_active_binary_triangle_component_
 
 uv run --with sympy python verify_p5_h31_common_active_binary_triangle_component_special_divisor_obstruction.py
 uv run --with sympy python audit_p5_h31_common_active_binary_triangle_component_special_divisor_obstruction.py
+
+uv run --with sympy python verify_p5_h31_common_active_binary_triangle_normalized_affine_obstruction.py
+uv run --with sympy python audit_p5_h31_common_active_binary_triangle_normalized_affine_obstruction.py
 
 uv run --with sympy python verify_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py
 uv run --with sympy python audit_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py
