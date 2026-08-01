@@ -13,11 +13,11 @@ exact modular local standard basis, but only as a height certificate in an
 integral local model; an explicit Krull-height argument supplies the
 characteristic-zero conclusion.
 
-The active branch at wind-down is `codex/component19-h31-lines`.  Its
+The active branch at wind-down is `codex/component20-h31`.  Its
 baseline commit is:
 
 ```text
-11211f7  Close component 21 H31 and four-gate P6 branch
+7590622  Close component 19 H31 and displayed P6 model
 ```
 
 Recheck the branch and worktree before relying on those identifiers.
@@ -31,7 +31,7 @@ Six statements organize the current frontier.
    closures.  See
    [`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
 2. **The first eighteen components are generically closed at `P_5`; components
-   nineteen and twenty-one are closed for generic `H31`.**  The first eighteen
+   nineteen through twenty-one are closed for generic `H31`.**  The first eighteen
    have empty marked `H31` and weighted `H22` fibres over the generic point.
    For the first seventeen, component fifteen was the last completed case:
    [`P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md)
@@ -44,6 +44,9 @@ Six statements organize the current frontier.
    Component nineteen is closed by exact open-incidence projection and
    two-minor covers, including the marking-line intersection:
    [`P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
+   Component twenty is closed by exact open-incidence projection to four
+   marking points and one uniform minor/transverse certificate:
+   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
    Component twenty-one's exact all-marking row-module certificate closes its
    generic `H31` fibre only:
    [`P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
@@ -93,10 +96,9 @@ tournament orientations were already classified; the common-singleton family
 is component eighteen; the fully kernel--kernel stratum lies in components
 sixteen or eighteen; the exactly-two-kernel stratum lies in component eleven;
 and all eight residual exactly-one-kernel entries now have exact component
-placements.  Components nineteen and twenty-one now have exact generic `H31`
-exclusions, but their weighted `H22` fibres remain open.  Component twenty
-does **not** yet inherit the generic or boundary marked-`P_5` exclusions proved
-for the first eighteen.
+placements.  Components nineteen through twenty-one now have exact generic
+`H31` exclusions, but their weighted `H22` fibres and every special/projective
+marked boundary remain open.
 
 For component nineteen, exact characteristic-zero projection reduces
 deletions 0 and 1 to the unit ideal and deletions 2 and 3 to
@@ -106,8 +108,23 @@ deletions 0 and 1 to the unit ideal and deletions 2 and 3 to
 ```
 
 The resulting four rational marking lines and both shared endpoints are now
-closed by exact two-minor and pure-transverse certificates.  No
-component-twenty marked-fibre result survived review.
+closed by exact two-minor and pure-transverse certificates.
+
+For component twenty, exact characteristic-zero projection over `C(p,q)`
+leaves the four isolated markings
+
+```text
+d=1: (h1,h2)=(1-q,0), (0,-q),
+d=2: (h1,h2)=(-p-1,0), (0,-p),
+```
+
+with `h0=h3=0`, while deletions zero and three give the unit ideal.  On all
+four points the selected mode-three `0147` minor divided by the genuine
+binary diagonal is `4pq(p+q)(p-q+1)`, and the deleted pure transverse entry
+is `+pq` or `-pq`.  This is only a generic-function-field theorem: the audit
+finds deletion-three fibres reappearing on `q=p+2`, `q=p`, and
+`2pq-p+q=0`, plus degenerations at `p=0,-1` or `q=0,1`.  Boundary closure
+must therefore remain a separate task.
 
 ## What a global proof would still need
 
@@ -195,6 +212,27 @@ other rank-five configurations and the general `1+1+1` profile remain open:
 [`P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md`](P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md),
 [`P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md`](P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md), and
 [`P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md`](P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md).
+
+An exploratory wind-down calculation suggests a sharper next symbolic task,
+but it has not been promoted to a replayable theorem.  On the dense
+rank-five stratum, normalize the unique relation among the six exceptional
+vectors and set `U=C^6/<(1,...,1)>`.  If `W_G` is the nine-dimensional span
+of the triangular-prism forbidden products and
+`D=<y1^2,...,y5^2>` is the square space of a frame, then
+
+```text
+dim K=5  <=>  dim(W_G intersect D)=4
+         <=>  rank(D -> Sym^2(U)/W_G)=1.
+```
+
+Thus the five frame points must lie in one fibre of the projected Veronese
+map `[y] -> [y^2 mod W_G]`.  The displayed solution appears locally rigid
+modulo its ten obvious gauge directions, but its canonical fibre contains
+ten rational points and many five-point bases, so its sixteen-gate
+hypergraph is not a justified global normal form.  A next instance should
+first make this exceptional-fibre/frame-orbit classification replayable,
+then compute the gate-Chow obstruction orbit by orbit.  Do not cite this
+paragraph as a proved repository result without an independent exact audit.
 
 There is also a separate exact eight-vertex discriminant reduction.  A smooth
 expected two-dimensional four-root complete intersection is connected by its

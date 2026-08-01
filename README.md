@@ -698,6 +698,14 @@ strictly advance the finite frontier:
   is excluded by an exact integral local-height certificate.  The singleton
   sheet is an explicit projective boundary of the same component:
   [`P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md`](P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md).
+- component twenty's complete generic marked `H31` fibre is empty.  Exact
+  open-incidence projection leaves no markings on deletions zero and three
+  and exactly two isolated markings on each of deletions one and two.  At all
+  four survivors the same mode-three minor has ratio
+  `4pq(p+q)(p-q+1)` to the genuine binary diagonal; a pure transverse entry
+  `+pq` or `-pq` completes the global-row contradiction.  Weighted `H22`
+  and all special/projective component boundaries remain open:
+  [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
 - the final mixed-chain vertical fibre opens into a new six-dimensional
   coincident-support rank-one star, component twenty-one.  Its generic profile
   is `(3,4,4,3,3,4)`.  A rank-thirteen incidence germ has one excess tangent
@@ -720,7 +728,8 @@ strictly advance the finite frontier:
   identically before any mixed equation or ternary-rank test.  Thus all
   the first eighteen certified components are generically closed for both
   fifth-mode partition types.  Components nineteen through twenty-one remain
-  outside that marked-fibre statement:
+  outside that joint `H31/H22` statement; their generic `H31` fibres are now
+  closed separately, while their weighted `H22` fibres remain open:
   [`P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md),
   [`P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md).
 - the two directed-triangle components are now generically closed for marked
