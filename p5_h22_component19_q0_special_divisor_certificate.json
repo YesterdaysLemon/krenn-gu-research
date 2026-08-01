@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "role": "construction",
+  "date_utc": "2026-08-01T15:09:51Z",
+  "git_commit": "6e6e02ad34c8462f2fc08087ee6fc73e3e543f28",
+  "claim_label": "VERIFIED",
+  "discovery_claim_label": "CANDIDATE",
+  "scope": "weighted H22 fibre of component nineteen on the finite special divisor q=0 over Q(p,phi), restricted to p*phi*(phi^2-1)!=0",
+  "method": "fresh q=0 plane reconstruction, exact characteristic-zero permanents and squarefree pair minors, direct finite/infinity homogeneous contractions, bidirectional Singular projection-ideal equality, a complete shared extension frame, and one fixed transverse marked minor",
+  "expected": {
+    "pure_support": {"1111": "4*p"},
+    "pair_profile": [3, 4, 4, 3, 3, 3],
+    "D01_binary_finite": ["1"],
+    "D01_binary_infinity": ["1"],
+    "D23_binary_finite": [
+      "h3", "phi*h0-1", "h1*h2*(lam-1)", "h1^2*h2"
+    ],
+    "D23_binary_infinity": ["h3", "phi*h0-1", "h1*h2"],
+    "shared_finite": ["lam-1", "h3", "h1", "phi*h0-1"],
+    "shared_infinity": ["1"],
+    "shared_marking": "h=(1/phi,0,t,0)",
+    "shared_weight": "[1:1]",
+    "shared_kernel_dimension": 2,
+    "fixed_minor": "-64*C*p*(p*D-phi*t*C)^2",
+    "conclusion": "weighted H22 fibre empty on the stated open"
+  },
+  "boundaries": {
+    "p=0": "the pure coefficient 4*p vanishes and the mode-zero intrinsic basis change degenerates",
+    "phi=0": "outside the component parameter torus; h0=1/phi and the shared frame are undefined",
+    "phi=1 or phi=-1": "the 29x8 shared unwanted matrix drops from rank 6 to rank 5; not settled here",
+    "C=0": "both required D23 binary diagonals are not genuine",
+    "p*D-phi*t*C=0": "the required D01 pure diagonal vanishes",
+    "projective opposite-plane boundary": "not part of this finite q=0 chart calculation"
+  },
+  "limitations": [
+    "Independently verified on the stated open; the construction discovery label remains CANDIDATE.",
+    "Only the q=0 finite component chart with p*phi*(phi^2-1)!=0 is covered.",
+    "The phi=1 and phi=-1 sub-divisors have a genuine shared-kernel rank jump and remain open.",
+    "No claim is made for projective opposite-plane boundaries, component exhaustiveness, arbitrary-order local-to-global reduction, the prize graph, or the global Krenn-Gu conjecture."
+  ]
+}
