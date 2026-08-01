@@ -47,6 +47,13 @@ Six statements organize the current frontier.
    Its weighted-`H22` shared incidence leaves one exact finite branch, whose
    complete common kernel has a fixed nonzero rank-four transverse minor:
    [`P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md).
+   Its finite special divisor `q=0` is also closed on the component torus
+   `p*phi!=0`, including the separately reconstructed rank-jump endpoints
+   `phi=+1` and `phi=-1`.  Direct specialization adds the essential finite
+   `D23` generator `h1^2*h2`; the endpoint shared kernel has dimension three,
+   but fixed complementary one-marked minors remain rank four:
+   [`P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_OBSTRUCTION_VERIFICATION.md),
+   [`P5_H22_COMPONENT19_Q0_PHI_ENDPOINTS_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_Q0_PHI_ENDPOINTS_OBSTRUCTION_VERIFICATION.md).
    Component twenty is closed by exact open-incidence projection to four
    marking points and one uniform minor/transverse certificate:
    [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
@@ -158,7 +165,8 @@ verified for diagonal-torus DVR/Puiseux arcs for both marked `H31` and
 weighted `H22`, including every actual nonzero half-centre arc.  Parameter
 infinity, non-diagonal or arbitrary `GL_4` source changes, and the remaining
 special/projective weighted-`H22` fibres of components nineteen through
-twenty-one remain open.
+twenty-one remain open, except for component nineteen's verified finite
+`q=0,p*phi!=0` divisor.
 
 A `VERIFIED` valuative analysis of diagonal source-torus arcs with
 `p+q -> 0` has exact replays for the corrected mode-zero wedge, the generic
@@ -218,6 +226,23 @@ Shared `D01`-pure/`D23`-binary compatibility leaves only
 `lambda=1,h=(-1/(q-phi),0,t,0)`.  Its complete two-dimensional shared kernel
 has mode-three determinant `-64 C p(pD-phi t C)^2`, nonzero on the common
 genuine open.  A fresh no-import replay verifies the generic obstruction.
+
+On `q=0`, fresh specialization over `Q(p,phi)` gives pair profile
+`(3,4,4,3,3,3)` and the direct finite `D23` ideal
+
+```text
+<h3,phi*h0-1,h1*h2*(lambda-1),h1^2*h2>.
+```
+
+The last generator is essential and is absent from naive specialization of
+the generic theorem.  The unique shared branch is
+`lambda=1,h=(1/phi,0,t,0)`; a complete two-frame and fixed mode-three minor
+close it on `p*phi*(phi^2-1)!=0`.  At `phi=+/-1` the kernel jumps from
+dimension two to three.  Separate construction, structural proof, and
+no-import verification reconstruct both signs and close their full genuine
+opens with complementary fixed rank-four minors.  Thus the whole finite
+`q=0` divisor is verified on the component torus `p*phi!=0`.  The `p=0`
+zero-tensor boundary and `phi=0` chart boundary are not promoted.
 
 For component twenty, exact characteristic-zero projection over `C(p,q)`
 leaves the four isolated markings
@@ -638,6 +663,14 @@ uv run --with sympy python audit_p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_
 
 uv run --with sympy python derive_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py
 uv run --with sympy python audit_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py
+
+uv run --with sympy python derive_p5_h22_component19_q0_special_divisor_obstruction_candidate.py
+uv run --with sympy python derive_p5_h22_component19_q0_special_divisor_proof_b.py
+uv run --with sympy python audit_p5_h22_component19_q0_special_divisor_obstruction_candidate.py
+
+uv run --with sympy python derive_p5_h22_component19_q0_phi_endpoints_obstruction_candidate.py
+uv run --with sympy python derive_p5_h22_component19_q0_phi_endpoints_proof_b.py
+uv run --with sympy python audit_p5_h22_component19_q0_phi_endpoints_obstruction_candidate.py
 
 uv run --with sympy python derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
 uv run --with sympy python audit_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py

@@ -23,6 +23,12 @@ the all-pair-ranks-at-least-three component problem now has three unresolved
 star/triangle cells.  Generic marked `H31/H22` fibres are now proved empty on
 all twenty-one certified components.  The remaining special/projective
 boundaries are not promoted by those function-field theorems.  On component
+nineteen, the finite `q=0` weighted-`H22` divisor is now independently closed
+through both rank-jump endpoints `phi=+/-1` on `p*phi!=0`.  Direct
+specialization was essential: the finite `D23` projection gains the embedded
+generator `h1^2*h2`, which removes false `lambda=1` survivors.  The `p=0`
+zero-tensor boundary, `phi=0` chart boundary, and other divisors remain
+separate.  On component
 twenty, the entire finite normalized `(p+q)(p-q+1)!=0` sheet is now closed,
 including every special-divisor intersection inside that open.  The intrinsic
 `p-q+1=0` chart wall is also closed over its generic point for marked `H31`
@@ -708,9 +714,16 @@ strictly advance the finite frontier:
   pure transverse entries complete the global-row contradiction.  Its generic
   weighted-`H22` fibre is empty as well: exact shared compatibility leaves one
   finite branch, and a fixed mode-three rank-four determinant excludes its
-  complete common genuine kernel.  Special/projective boundaries remain open:
+  complete common genuine kernel.  Its special divisor `q=0` is now closed
+  over `p*phi!=0`, including the separately reconstructed rank-jump endpoints
+  `phi=+1` and `phi=-1`.  The direct finite `D23` ideal contains the essential
+  generator `h1^2*h2`; at the endpoints the shared kernel grows to dimension
+  three, but independent fixed rank-four minors still exclude the entire
+  genuine locus.  Other special/projective boundaries remain open:
   [`P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md),
-  [`P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md).
+  [`P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md),
+  [`P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_OBSTRUCTION_VERIFICATION.md), and
+  [`P5_H22_COMPONENT19_Q0_PHI_ENDPOINTS_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_Q0_PHI_ENDPOINTS_OBSTRUCTION_VERIFICATION.md).
 - the `tau!=0` common-active binary sheet is a new five-dimensional component
   twenty.  Its generic profile is `(4,4,4,3,3,3)`, its intrinsic rank-one
   kernel signature is `(2,2,0,0)`, and its apparent sixth tangent direction
