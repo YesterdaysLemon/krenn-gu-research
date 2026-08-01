@@ -27,7 +27,10 @@ and the remaining special/projective boundaries remain open.  On component
 twenty, the entire finite normalized `(p+q)(p-q+1)!=0` sheet is now closed,
 including every special-divisor intersection inside that open.  The intrinsic
 `p-q+1=0` chart wall is also closed over its generic point, while `p+q=0`
-and the remaining projective/source-torus boundary are separate tasks.  The
+and the remaining projective/source-torus boundary are separate tasks.  A
+derived valuative classification reduces diagonal source-torus arcs over
+`p+q=0` to lower-pair strata and two explicit higher-rank charts, but its
+exhaustion claim is not independently verified.  The
 five-root no-torus locus has also been pushed from a hypersurface envelope to
 codimension at least two, and the first blocker surplus has an arbitrary-order
 port-permanent formula.  On the resulting common-port `P_6` wall, an exact
@@ -738,6 +741,15 @@ strictly advance the finite frontier:
   values `p=0,-1,-1/2`, parameter infinity, and mixed source-torus/projective
   limits remain open:
   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md).
+- a `DERIVED` valuative classification of the remaining `p+q=0` diagonal
+  source-torus wall proves the exact min-plus weight conditions and leaves two
+  explicit higher-rank charts, `B_full` with profile `(4,4,4,3,3,3)` and
+  `B_drop` with profile `(4,4,3,3,3,3)`.  The formulas, exceptional centres,
+  infinity strata, and failed shortcuts have exact replays, but exhaustion
+  from arbitrary arcs and placement in older component intersections are not
+  independently verified.  This is a `P_4` boundary reduction, not an `H31`
+  or `H22` closure:
+  [`P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md`](P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md).
 - the final mixed-chain vertical fibre opens into a new six-dimensional
   coincident-support rank-one star, component twenty-one.  Its generic profile
   is `(3,4,4,3,3,4)`.  A rank-thirteen incidence germ has one excess tangent

@@ -114,6 +114,17 @@ over its generic point.  The `p+q=0` wall, the exceptional points on the
 intrinsic wall, the remaining projective/source-torus boundaries, and
 weighted `H22` on all three components remain open.
 
+A separate `DERIVED` valuative analysis of diagonal source-torus arcs with
+`p+q -> 0` has exact replays for the corrected mode-zero wedge, the generic
+and exceptional min-plus equivalences, and the two surviving charts.  All
+negative equal-weight and infinity strata are assigned to the lower-pair
+frontier; the higher-rank charts are `B_full` with profile
+`(4,4,4,3,3,3)` and `B_drop` with profile `(4,4,3,3,3,3)`.  Independent
+review did not establish the exhaustion of arbitrary arcs or their exact
+placement in older component intersections, so this remains a boundary
+reduction rather than a promoted component or `H31` theorem:
+[`P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md`](P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md).
+
 For component nineteen, exact characteristic-zero projection reduces
 deletions 0 and 1 to the unit ideal and deletions 2 and 3 to
 
@@ -370,10 +381,11 @@ extended rows use at most two columns.  Their all-kernel permanent is
 identically zero by Hall deficiency, simultaneously in all affine markings,
 extension entries, source scalings, and homogeneous weights.  The
 `triangle-(1,1,1)` cell is now closed by the later placement theorems.  The
-remaining work is the other three all-pair graph cells, component-twenty's
-`p+q=0` and projective/source-torus boundaries, weighted `H22` on components
-nineteen through twenty-one, the corresponding remaining special boundaries,
-and the universal `P_5` step.
+remaining work is the other three all-pair graph cells, marked `P_5` analysis
+on component-twenty's two derived `p+q=0` charts and the remaining
+projective/source-torus boundaries, weighted `H22` on components nineteen
+through twenty-one, the corresponding remaining special boundaries, and the
+universal `P_5` step.
 
 ## Focused replay
 
@@ -466,6 +478,9 @@ uv run --with sympy python audit_p5_h31_common_active_binary_triangle_normalized
 
 uv run --with sympy python verify_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py
 uv run --with sympy python audit_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py
+
+uv run --with sympy --with z3-solver python verify_p4_common_active_binary_triangle_p_plus_q_boundary.py
+uv run --with sympy python audit_p4_common_active_binary_triangle_p_plus_q_boundary.py
 ```
 
 If plain `python` lacks a dependency, use the repository's isolated verifier
