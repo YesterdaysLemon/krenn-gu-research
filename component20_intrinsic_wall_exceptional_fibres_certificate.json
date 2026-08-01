@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "role": "construction",
+  "date_utc": "2026-08-01T13:58:12Z",
+  "git_commit": "00c3574f854e1f86cb8ec2304645204479c3f75e",
+  "claim_label": "VERIFIED",
+  "discovery_claim_label": "CANDIDATE",
+  "scope": "normalized-affine component-twenty intrinsic-wall exceptions (p,q)=(0,1),(-1,0),(-1/2,1/2), including the compactified Segre-direction P1 over the first two zero restrictions; fixed-source straight intrinsic limit only at the half point",
+  "inputs": {
+    "P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md": "dcaae5365f5e2072e798c2ee52dea47c0d5c48f073ed7553ae5f758e9830f0b2",
+    "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md": "ddd3dd8a441db26e6a0fa238842c56ed369133151944a203acc66e3d4bd4ad51",
+    "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION_CANDIDATE.md": "62abdc4004a01cc1045ae4ecaf5fe282913b8d817d1f870333653db1e82cf772",
+    "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md": "667611de1e8bd08dd8c1a5b3b3c431ab57df523f834828c4258d881833b9ee82",
+    "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md": "04c9498887d2bc3faf16f195f5d7b58a6f901432b4f06b8d508717da6c6ae14a",
+    "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md": "52168b35b43c40c483919c8fa1dd37e7c147cae5f331320d8656bf6a1ed309a9",
+    "P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md": "eb5a8fb528a9c367ec059a06a5630cbcb533be5c49a4ecd1ee8148cac6644b32"
+  },
+  "method": "direct Grassmann-plane reconstruction, exact squarefree permanents and pair ranks, first-order coefficient-map compactification, and characteristic-zero elimination with the Segre-chart coordinate retained polynomially",
+  "p0_and_p_minus1": {
+    "actual_plane_fibres": "regular points of the normalized component-twenty parametrization",
+    "restricted_tensor": "identically zero in all sixteen entries",
+    "pair_profile": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "nonzero_P4_fibres": false,
+    "coefficient_map": [
+      "2*(p-q+1)",
+      "-2*q*(q-1)"
+    ],
+    "coefficient_jacobian_determinants": {
+      "p=0,q=1": -4,
+      "p=-1,q=0": 4
+    },
+    "compactified_tensor_direction_fibre": "full P1 at each base point",
+    "Segre_direction_charts": {
+      "finite_[1:rho]": "alpha0=rho*r0-r1, beta0=r0",
+      "infinity_[0:1]": "alpha0=r0, beta0=r1"
+    },
+    "H31": {
+      "scope": "compactified Segre incidence over zero restrictions, not actual nonzero-P4 fibres",
+      "projection_count": 16,
+      "all_projected_ideals": [
+        "1"
+      ],
+      "rho_handling": "rho is retained in Q[rho,h0,h1,h2,h3], never inverted"
+    },
+    "weighted_H22": {
+      "scope": "same compactified Segre incidence",
+      "complete_shared_projection_count": 16,
+      "all_complete_shared_projected_ideals": [
+        "1"
+      ],
+      "individual_survivors": {
+        "p=0,q=1; finite Segre chart; finite D01 weight": [
+          "h3",
+          "h0",
+          "rho*h1*h2*lambda+(rho-1)*h1*lambda+(rho-1)*h1+rho*h2"
+        ],
+        "p=-1,q=0; finite Segre chart; finite D01 weight": [
+          "h3",
+          "h0",
+          "rho*h1*h2*lambda+(-rho-1)*h2*lambda-rho*h1+(-rho-1)*h2"
+        ]
+      },
+      "other_individual_projected_ideals": [
+        "1"
+      ],
+      "conclusion": "the two individual D01 survivor closures are killed by exact same-extension shared compatibility"
+    }
+  },
+  "p_minus_one_half": {
+    "normalized_U0_chart": "undefined because p+q=0",
+    "straight_intrinsic_fixed_source_limit_U0": "span(e,A-B)",
+    "restricted_tensor": "identically zero",
+    "pair_profile": [
+      3,
+      3,
+      2,
+      3,
+      3,
+      3
+    ],
+    "rank_two_pair_03_kernel": [
+      "e tensor e",
+      "(A-B) tensor (A+B)"
+    ],
+    "nonzero_P4_fibre": false,
+    "p_plus_q_atlas_placement": "k=infinity zero-tensor edge of U0=span(A-B,C-k*e), distinct from the verified finite-k and k=0 nonzero-P4 diagonal half-centre charts",
+    "component_intersection": "component-twenty zero boundary and component-fifteen closure",
+    "component15_arc": {
+      "pure_support": {
+        "1100": "-2*tau"
+      },
+      "pair_profile_for_tau_nonzero": [
+        3,
+        4,
+        2,
+        4,
+        3,
+        4
+      ]
+    },
+    "new_H31_or_H22_analysis": "none, because this edge is not a nonzero-P4 fibre; finite-k and k=0 p+q atlas fibres are already verified separately"
+  },
+  "failed_leads": [
+    {
+      "claim": "p=0 and p=-1 remain actual nonzero pure P4 fibres",
+      "status": "REFUTED",
+      "reason": "all sixteen restricted tensor entries vanish"
+    },
+    {
+      "claim": "individual weighted binary obstruction is uniform on the compactified P1",
+      "status": "REFUTED",
+      "reason": "two exact finite-D01 projection closures survive, although all shared H22 projections are unit"
+    },
+    {
+      "claim": "the straight p=-1/2 intrinsic limit is one of the finite-k nonzero p+q half-centre charts",
+      "status": "REFUTED",
+      "reason": "its U0 is span(e,A-B), the k=infinity zero-tensor edge"
+    }
+  ],
+  "conclusion": "the three exceptional plane fibres are zero restrictions; the compactified P1 incidences over p=0,-1 have empty marked H31 and shared weighted H22 fibres, while p=-1/2 contributes only a zero-tensor component-intersection edge in this scope",
+  "conclusion_label": "VERIFIED",
+  "limitations": "verified after a fresh no-import reconstruction; compactified P1 claims concern normalized-affine Segre incidence over zero restrictions rather than actual nonzero-P4 fibres; p=-1/2 covers only the straight fixed-source intrinsic limit and does not reopen or supersede the verified finite-k and k=0 p+q atlas; no mixed source-torus limits, component-parameter infinity, arbitrary GL4 degeneration, P4 exhaustiveness, arbitrary-order reduction, prize graph, or global Krenn-Gu claim",
+  "finite_field_computation_used": false,
+  "broad_brute_force_used": false,
+  "independent_verifier_complete": true,
+  "global_krenn_gu_resolved": false
+}
