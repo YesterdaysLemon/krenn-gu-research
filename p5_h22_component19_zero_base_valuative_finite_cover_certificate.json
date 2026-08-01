@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "role": "construction",
+  "date_utc": "2026-08-01T18:08:21Z",
+  "git_commit": "a3d47ed7d9debeaa9ae55c225c71e39ddd6d0116",
+  "claim_label": "CANDIDATE",
+  "scope": "all characteristic-zero DVR/Puiseux arcs through component-19 Z0 inside the displayed finite component chart, with nonzero generic restriction and phi a unit",
+  "inputs": {
+    "P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md": "ce333e8605b78e17c2e6b7cfe91fd369e89afe0d3aed65c7df35f82fee319634",
+    "P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md": "ebb4bc46e06b99d4d21e0dff96a35fb071d48dfeceeb926cb4b2643fdeeddbc3",
+    "P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md": "77bad167798b52ca6d623ded47d346255023a13f4122f672ffc485dff9c70f50",
+    "P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_VERIFICATION.md": "43e714b95f8a092bee9bf3b9259916a66bf7e8ae5984b63bf259d7e41aa4f440"
+  },
+  "method": "exact p-chart blow-up rows, parameter-aware shared projections, complete diagonal/weight covers, explicit hidden-divisor and endpoint kernels, and fixed target-local minors",
+  "command": "uv run --with sympy python derive_p5_h22_component19_zero_base_valuative_finite_cover_candidate.py",
+  "exact_p_chart": {
+    "coordinates": ["p=z", "d=q-phi=z*n"],
+    "alpha0": "Bbar+phi*B-n*Abar",
+    "beta0": "Abar+z*B",
+    "is_exact_not_first_order": true
+  },
+  "field_valued_partition": [
+    "p=0,d!=0",
+    "d=0,p!=0",
+    "p*d!=0,phi^2!=1",
+    "p*d!=0,phi=+1 or phi=-1"
+  ],
+  "shared_diagonal_open_cover": [
+    ["A01", "B01", "A23"],
+    ["A01", "B01", "B23"],
+    ["A23", "B23", "A01"],
+    ["A23", "B23", "B01"]
+  ],
+  "homogeneous_weight_cover": ["finite [lambda:1]", "infinity [1:0]"],
+  "generic_parameter_aware_projection_count": 8,
+  "generic_projected_branches": {
+    "finite_A23_B23_A01": [
+      "lambda+1=0",
+      "h1=h2=h3=0",
+      "h0*n=1",
+      "n*phi*z+phi^2-1=0"
+    ],
+    "finite_A23_B23_B01": [
+      "lambda-1=0",
+      "h1=h3=0",
+      "h0*n=1",
+      "h2 free"
+    ],
+    "all_other_six_systems": "unit ideal"
+  },
+  "hidden_divisor": {
+    "equation": "q*phi-1=n*phi*z+phi^2-1",
+    "weight": "lambda=-1",
+    "orientation": ["A23", "B23", "A01"]
+  },
+  "generic_lambda_one_target": {
+    "scope_open": "z*n*phi*(phi^2-1)!=0",
+    "combined_rank": 6,
+    "rank_witness": "4096*n*phi*z^2*(phi-1)*(phi+1)",
+    "kernel": [
+      ["0", "-1/z", "phi/z", "0", "1", "0", "0", "0"],
+      ["0", "0", "0", "0", "0", "1", "0", "0"]
+    ],
+    "genuine_open": "C*n*phi*(z*D-phi*h2*C)!=0",
+    "D01_mode3_minor": "-64*C*(z*D-phi*h2*C)^2/z",
+    "target_local_obstructed": true
+  },
+  "hidden_qphi_one_target": {
+    "scope_open": "n*phi*(phi^2-1)!=0",
+    "combined_rank": 5,
+    "rank_witness": "-1024*n*phi^3",
+    "kernel": [
+      ["0", "1/phi", "1", "0", "0", "0", "0", "0"],
+      ["0", "0", "0", "0", "1", "0", "0", "0"],
+      ["-1/phi", "0", "0", "0", "0", "0", "0", "1"]
+    ],
+    "genuine_open": "c0*n*(phi^2-1)*(c1*n*phi+c2)!=0",
+    "D23_mode3_minor": "-64*c0^2*(c1*n*phi+c2)/phi^3",
+    "target_local_obstructed": true
+  },
+  "endpoint_parameter_aware_projection_count": 16,
+  "endpoint_projection": {
+    "for_each_epsilon": "only finite A23,B23,B01 survives",
+    "branch": "lambda=1,h1=h3=0,h0*n=1",
+    "all_other_systems": "unit ideal"
+  },
+  "endpoint_targets": {
+    "+1": {
+      "combined_rank": 5,
+      "rank_witness": "-1024*n*z^2",
+      "genuine_open": "F*G*H!=0",
+      "D23_mode3_minor": "-64*F^2*H/(n^2*z^2)",
+      "target_local_obstructed": true
+    },
+    "-1": {
+      "combined_rank": 5,
+      "rank_witness": "1024*n*z^2",
+      "genuine_open": "F*G*H!=0",
+      "D23_mode3_minor": "-64*F^2*H/(n^2*z^2)",
+      "target_local_obstructed": true
+    }
+  },
+  "poles_and_ramification": "all solved over the Laurent/Puiseux fraction field; marking, extension, inverse-diagonal, weight, and blow-up-ratio poles are allowed",
+  "weighted_H22_lift_over_generic_DVR_field_exists_candidate": false,
+  "formal_DVR_and_Puiseux_arcs_inside_displayed_chart_obstructed_candidate": true,
+  "Rees_properness_used": false,
+  "generic_specialization_used_as_proof": false,
+  "finite_field_computation_used": false,
+  "broad_brute_force_used": false,
+  "limitations": [
+    "Construction result remains CANDIDATE pending independent verification.",
+    "Only one-parameter characteristic-zero DVR/Puiseux arcs inside the displayed finite component chart with nonzero generic restriction and phi a unit are covered.",
+    "Multi-parameter arcs, source/projective or omitted Grassmann charts, ambient-component approaches, phi=0, arbitrary local maps, and the local-to-global reduction are outside scope.",
+    "The global Krenn-Gu conjecture remains unresolved."
+  ]
+}

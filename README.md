@@ -38,11 +38,16 @@ weighted-`H22` fibre over the entire nonzero all-pair-open locus
 `q*phi=+/-1` divisors, their survivor jumps, and the reciprocal
 weight-at-infinity chart.  The zero sub-divisor `q=phi` is a smooth
 codimension-two zero base with projectivized first-normal fibre `P1`.  Exact
-construction and a 16-chart no-import audit now verify empty weighted-`H22`
-incidence on that whole associated-graded `P1`, including `phi=+/-1`; a
-separate structural replay closes every exact linear DVR ray.  Arbitrary
-higher-order or ramified marked lifts remain `UNKNOWN`.  The `q=0` and
-`phi=0` loci are lower-pair boundaries.
+construction and a 16-chart no-import audit verify empty weighted-`H22`
+incidence on that whole associated-graded `P1`, including `phi=+/-1`.
+A parameter-aware finite cover now closes every characteristic-zero DVR or
+Puiseux arc through that base whose nonzero generic point stays in the
+displayed finite component chart.  It retains arbitrary marking/extension
+poles, detects the hidden `q*phi=1`, `lambda=-1` sheet missed by the generic
+coefficient field, and kills that sheet by a fixed rank-four marked minor.
+Ambient-component, source/projective, omitted Grassmann-chart, and
+multi-parameter approaches remain `UNKNOWN`.  The `q=0` and `phi=0` loci are
+lower-pair boundaries.
 Other divisors remain separate.  On component
 twenty, the entire finite normalized `(p+q)(p-q+1)!=0` sheet is now closed,
 including every special-divisor intersection inside that open.  The intrinsic
@@ -746,10 +751,18 @@ strictly advance the finite frontier:
   crossings; an independent coefficient syzygy closes the reciprocal
   weight-at-infinity chart.  At the projectivized zero base `q=phi`, the
   complete associated-graded first-normal `P1` has empty weighted incidence
-  in all 16 direction/weight/orientation charts, and every exact linear DVR
-  ray is separately obstructed.  Arbitrary higher-order or ramified marked
-  lifts remain `UNKNOWN`; the lower-pair boundaries `q=0` and `phi=0` and
-  parameter-compactification directions also remain separate.  A stronger
+  in all 16 direction/weight/orientation charts.  A separate exact
+  parameter-aware reduction closes every characteristic-zero DVR/Puiseux arc
+  with nonzero generic restriction inside the displayed finite chart.  Its
+  four-open/two-weight atlas finds one extra sheet `q*phi=1,lambda=-1`; the
+  complete kernel has a fixed `D23` mode-three rank-four minor on its genuine
+  locus.  Marking, extension, inverse-diagonal, and weight poles are allowed
+  over the fraction field.  A separate no-import audit preserves an exact
+  `1/s` necessary-incidence escape, proving that the naive genuine-binary
+  properness argument fails, then kills the escape by its target-local minor.
+  Ambient/source/projective, omitted Grassmann-chart,
+  and multi-parameter approaches remain `UNKNOWN`; the lower-pair boundaries
+  `q=0` and `phi=0` remain separate.  A stronger
   historical construction package is retained as `REFUTED` because its
   advertised stacked minor fails exact replay.  Other special/projective
   boundaries remain open:
@@ -763,7 +776,10 @@ strictly advance the finite frontier:
   [`P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md`](P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md),
   [`P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md),
   [`P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md`](P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md),
-  and [`P5_H22_COMPONENT19_Q_EQ_PHI_FIRST_NORMAL_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_Q_EQ_PHI_FIRST_NORMAL_NO_IMPORT_VERIFICATION.md).
+  [`P5_H22_COMPONENT19_Q_EQ_PHI_FIRST_NORMAL_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_Q_EQ_PHI_FIRST_NORMAL_NO_IMPORT_VERIFICATION.md),
+  [`P5_H22_COMPONENT19_ZERO_BASE_VALUATIVE_FINITE_COVER_CANDIDATE.md`](P5_H22_COMPONENT19_ZERO_BASE_VALUATIVE_FINITE_COVER_CANDIDATE.md),
+  [`P5_H22_COMPONENT19_ZERO_BASE_VALUATIVE_REDUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_ZERO_BASE_VALUATIVE_REDUCTION_VERIFICATION.md),
+  and [`P5_H22_COMPONENT19_Z0_LAURENT_FIELD_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_Z0_LAURENT_FIELD_NO_IMPORT_VERIFICATION.md).
 - the `tau!=0` common-active binary sheet is a new five-dimensional component
   twenty.  Its generic profile is `(4,4,4,3,3,3)`, its intrinsic rank-one
   kernel signature is `(2,2,0,0)`, and its apparent sixth tangent direction

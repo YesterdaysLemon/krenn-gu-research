@@ -68,14 +68,23 @@ Six statements organize the current frontier.
    weight-at-infinity chart.  The `q=phi` zero base has a verified smooth
    codimension-two zero ideal with normal fibre `P1`; exact construction and
    a 16-chart no-import audit close weighted `H22` on the full
-   associated-graded first-normal `P1`, including `phi=+/-1`.  Proof B closes
-   every exact linear DVR ray.  Arbitrary higher-order or ramified marked arcs
-   remain `UNKNOWN`:
+   associated-graded first-normal `P1`, including `phi=+/-1`.  A new
+   parameter-aware finite cover closes every characteristic-zero DVR/Puiseux
+   arc through that zero base whose nonzero generic point stays in the
+   displayed finite chart.  The exact atlas retains arbitrary marking and
+   extension poles, detects the hidden `q*phi=1,lambda=-1` sheet, and closes
+   it by a target-local rank-four minor.  A no-import audit also preserves an
+   exact `1/s` necessary-incidence escape: genuine-binary properness fails,
+   but target compatibility still excludes the arc.  Ambient/source/projective,
+   omitted Grassmann-chart, and multi-parameter approaches remain `UNKNOWN`:
    [`P5_H22_COMPONENT19_P0_FINITE_BOUNDARY_GEOMETRY_RECONNAISSANCE.md`](P5_H22_COMPONENT19_P0_FINITE_BOUNDARY_GEOMETRY_RECONNAISSANCE.md),
    [`P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md`](P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md),
    [`P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md),
    [`P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md`](P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md),
-   [`P5_H22_COMPONENT19_Q_EQ_PHI_FIRST_NORMAL_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_Q_EQ_PHI_FIRST_NORMAL_NO_IMPORT_VERIFICATION.md).
+   [`P5_H22_COMPONENT19_Q_EQ_PHI_FIRST_NORMAL_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_Q_EQ_PHI_FIRST_NORMAL_NO_IMPORT_VERIFICATION.md),
+   [`P5_H22_COMPONENT19_ZERO_BASE_VALUATIVE_FINITE_COVER_CANDIDATE.md`](P5_H22_COMPONENT19_ZERO_BASE_VALUATIVE_FINITE_COVER_CANDIDATE.md),
+   [`P5_H22_COMPONENT19_ZERO_BASE_VALUATIVE_REDUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_ZERO_BASE_VALUATIVE_REDUCTION_VERIFICATION.md), and
+   [`P5_H22_COMPONENT19_Z0_LAURENT_FIELD_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_Z0_LAURENT_FIELD_NO_IMPORT_VERIFICATION.md).
    Component twenty is closed by exact open-incidence projection to four
    marking points and one uniform minor/transverse certificate:
    [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
@@ -190,10 +199,14 @@ special/projective weighted-`H22` fibres of components nineteen through
 twenty-one remain open, except for component nineteen's verified finite
 `q=0,p*phi!=0` and `q=phi,p*phi!=0` divisors and its complete ordinary
 `p=0`, `q*phi*(q-phi)!=0` projective weight fibre.  On the `q=phi` zero
-base, the entire associated-graded first-normal `P1` and every exact linear
-DVR ray are also closed.  Only arbitrary higher-order or ramified marked
-arcs, the `q=0` or `phi=0` lower-pair boundaries, and
-parameter-compactification directions remain outside those theorems.
+base, the entire associated-graded first-normal `P1` is closed.  More
+strongly, a verified parameter-aware fraction-field cover closes every
+characteristic-zero DVR/Puiseux arc with nonzero generic restriction inside
+the displayed finite component chart, including arbitrary higher orders,
+ramification, and marking/extension poles.  Ambient-component,
+source/projective, omitted Grassmann-chart, and multi-parameter approaches,
+the `q=0` or `phi=0` lower-pair boundaries, and parameter-compactification
+directions remain outside those theorems.
 
 A `VERIFIED` valuative analysis of diagonal source-torus arcs with
 `p+q -> 0` has exact replays for the corrected mode-zero wedge, the generic
@@ -310,12 +323,22 @@ genuine-diagonal orientation opens give 16 exact incidence cases; a no-import
 audit over `Q[phi]`, saturated only by `phi`, makes all 16 ideals unit.  Thus
 the complete associated-graded first-normal `P1` is verified empty for every
 `phi!=0`, including `phi=+/-1`.  Proof B independently obstructs every exact
-linear DVR ray and records the missing endpoint algebra.  This does not prove
-that arbitrary higher-order or ramified marking/extension valuations depend
-only on the leading normal direction; those formal arcs remain `UNKNOWN`.
-The `q=0` and `phi=0` loci are lower-pair boundaries, while parameter-chart
-infinity and other projectivized base directions remain outside the aggregate
-theorem.
+linear DVR ray.  The later valuative reduction does not infer higher-order
+arcs from this normal fibre: it retains the component parameters and solves
+the full fraction-field incidence on four genuine diagonal opens and both
+weight charts.  Besides the known `lambda=1` branch, this exposes the hidden
+sheet `q*phi=1,lambda=-1`; its complete kernel is obstructed by the fixed
+minor `64*X^2*p^2*(p*Z-(phi^2-1)*Y)/phi^3`.  Direct endpoint atlases close
+`phi=+/-1`.  Hence every characteristic-zero DVR/Puiseux arc through the zero
+base with nonzero generic restriction in the displayed finite chart is
+verified empty, even with arbitrary higher orders and marking/extension
+poles.  This does not cover ambient-component, source/projective, omitted
+Grassmann-chart, or multi-parameter approaches.  The `q=0` and `phi=0` loci
+are lower-pair boundaries, while parameter-chart infinity and other
+projectivized base directions remain outside the theorem.  The exact `1/s`
+escape in the no-import audit shows why this conclusion must come from the
+full field-valued cover rather than properness of the genuine-binary
+first-normal incidence.
 The direct and aggregate replays are:
 [`P5_H22_COMPONENT19_P0_QPHI_ONE_INDEPENDENT_VERIFICATION.md`](P5_H22_COMPONENT19_P0_QPHI_ONE_INDEPENDENT_VERIFICATION.md),
 [`P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_TERNARY_COMPATIBILITY_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_TERNARY_COMPATIBILITY_OBSTRUCTION_VERIFICATION.md),
@@ -325,8 +348,11 @@ The direct and aggregate replays are:
 [`P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md),
 [`P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md`](P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md),
 [`P5_H22_COMPONENT19_ZERO_BASE_NORMAL_CONE_PROOF_B.md`](P5_H22_COMPONENT19_ZERO_BASE_NORMAL_CONE_PROOF_B.md),
+[`P5_H22_COMPONENT19_Q_EQ_PHI_FIRST_NORMAL_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_Q_EQ_PHI_FIRST_NORMAL_NO_IMPORT_VERIFICATION.md),
+[`P5_H22_COMPONENT19_ZERO_BASE_VALUATIVE_FINITE_COVER_CANDIDATE.md`](P5_H22_COMPONENT19_ZERO_BASE_VALUATIVE_FINITE_COVER_CANDIDATE.md),
+[`P5_H22_COMPONENT19_ZERO_BASE_VALUATIVE_REDUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_ZERO_BASE_VALUATIVE_REDUCTION_VERIFICATION.md),
 and
-[`P5_H22_COMPONENT19_Q_EQ_PHI_FIRST_NORMAL_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_Q_EQ_PHI_FIRST_NORMAL_NO_IMPORT_VERIFICATION.md).
+[`P5_H22_COMPONENT19_Z0_LAURENT_FIELD_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_Z0_LAURENT_FIELD_NO_IMPORT_VERIFICATION.md).
 
 The historical stronger construction package claiming the larger open
 without the `q*phi=+/-1` exclusions is `REFUTED` as a replayable certificate:
