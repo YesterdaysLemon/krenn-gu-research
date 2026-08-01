@@ -21,16 +21,18 @@ common-active binary-triangle fivefold, and the coincident-support rank-one
 star sixfold.  Consequently the whole `triangle-(1,1,1)` cell is closed, and
 the all-pair-ranks-at-least-three component problem now has three unresolved
 star/triangle cells.  Generic marked `H31/H22` fibres are proved empty on the
-first eighteen components, and component twenty-one is now generically closed
-for `H31`; components nineteen and twenty, weighted `H22` on component
-twenty-one, and the relevant boundaries remain open.  The
+first eighteen components, and components nineteen and twenty-one are now
+generically closed for `H31`; component twenty, weighted `H22` on all three
+new components, and the relevant boundaries remain open.  The
 five-root no-torus locus has also been pushed from a hypersurface envelope to
 codimension at least two, and the first blocker surplus has an arbitrary-order
 port-permanent formula.  On the resulting common-port `P_6` wall, an exact
 rank-five configuration now extracts a necessary finite bilinear-gate
 problem from the first nonlinear factorisation condition and exactly excludes
-its unique four-gate branch, leaving 52 minimal covers of size at least five.
-These are strong local algebraic-geometric reductions, not a global proof:
+its unique four-gate branch.  Perfect-pairing certificates now exclude the
+other 52 covers as well, so that displayed rank-five model cannot satisfy the
+first nonlinear condition.  These are strong local algebraic-geometric
+reductions, not a global proof:
 component exhaustiveness, special `P_5/P_6` restrictions, and the final
 local-to-global graph step are still missing.
 
@@ -683,6 +685,13 @@ strictly advance the finite frontier:
   [`P4_COMMON_ACTIVE_TAU_ZERO_COMPONENT_ELEVEN_INCLUSION.md`](P4_COMMON_ACTIVE_TAU_ZERO_COMPONENT_ELEVEN_INCLUSION.md),
   [`P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md`](P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md),
   [`P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md`](P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md).
+- component nineteen's complete generic marked `H31` fibre is empty.  Exact
+  projection leaves four marking lines on deletions two and three and none on
+  deletions zero and one.  Two one-marked minors cover every punctured line;
+  separate endpoint syzygies avoid dividing by the line parameter.  Nonzero
+  pure transverse entries complete the global-row contradiction.  Weighted
+  `H22` and special/projective boundaries remain open:
+  [`P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
 - the `tau!=0` common-active binary sheet is a new five-dimensional component
   twenty.  Its generic profile is `(4,4,4,3,3,3)`, its intrinsic rank-one
   kernel signature is `(2,2,0,0)`, and its apparent sixth tangent direction
@@ -1243,10 +1252,14 @@ strictly advance the finite frontier:
   sixteen bilinear gates and 53 minimal gate covers, with a unique four-gate
   cover.  That unique branch forces the two alternating coordinate
   three-planes, but each has an explicit catalecticant minor equal to `-4` or
-  `4`, so it is impossible.  The other 52 covers, a fixed common kernel plane,
-  and marked rank-one conditions remain open:
+  `4`, so it is impossible.  Every other cover contains gates whose span has
+  an invertible pairing, which cannot vanish between two three-planes in a
+  five-space.  Thus all 53 covers are impossible for this displayed model.
+  Other rank-five configurations, and hence the general common-port profile,
+  remain open:
   [`P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md`](P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md),
-  [`P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md`](P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md).
+  [`P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md`](P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md),
+  [`P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md`](P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md).
 - independently, a Koszul and Chow-ring argument proves that every smooth
   expected-dimensional four-root complete intersection meets the torus.
   Combining this with tight four-blocker factorisation and the exact subrank

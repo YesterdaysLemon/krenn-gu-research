@@ -13,11 +13,11 @@ exact modular local standard basis, but only as a height certificate in an
 integral local model; an explicit Krull-height argument supplies the
 characteristic-zero conclusion.
 
-The active branch at wind-down is `codex/post-21-symbolic-frontier`.  Its
+The active branch at wind-down is `codex/component19-h31-lines`.  Its
 baseline commit is:
 
 ```text
-4763642  Close one-kernel P4 cell and sharpen P6 boundary
+11211f7  Close component 21 H31 and four-gate P6 branch
 ```
 
 Recheck the branch and worktree before relying on those identifiers.
@@ -30,9 +30,9 @@ Six statements organize the current frontier.
    compression has `min r_ij<=2`, it lies in one of four known component
    closures.  See
    [`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
-2. **The first eighteen components are generically closed at `P_5`; component
-   twenty-one is closed for generic `H31`.**  The first eighteen have empty
-   marked `H31` and weighted `H22` fibres over the generic point.
+2. **The first eighteen components are generically closed at `P_5`; components
+   nineteen and twenty-one are closed for generic `H31`.**  The first eighteen
+   have empty marked `H31` and weighted `H22` fibres over the generic point.
    For the first seventeen, component fifteen was the last completed case:
    [`P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md)
    and
@@ -41,6 +41,9 @@ Six statements organize the current frontier.
    [`P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md)
    and
    [`P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md).
+   Component nineteen is closed by exact open-incidence projection and
+   two-minor covers, including the marking-line intersection:
+   [`P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
    Component twenty-one's exact all-marking row-module certificate closes its
    generic `H31` fibre only:
    [`P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
@@ -67,12 +70,15 @@ Six statements organize the current frontier.
    the three selected relations have matrix ranks one or two.  Five of the
    eight coarse cells are resolved and three remain.  See
    [`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md).
-6. **The unique four-gate rank-five `P_6` branch is impossible.**  Its four
-   cycle gates force both unknown three-planes to be the same alternating
-   coordinate plane.  An explicit remaining catalecticant minor is then
-   `-4` or `4`.  The other 52 minimal covers all have size at least five and
-   remain open.  See
-   [`P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md`](P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md).
+6. **All gate-cover branches are impossible for the displayed rank-five
+   `P_6` model.**  The unique four-gate branch forces alternating coordinate
+   planes and then violates a remaining minor.  Each of the other 52 gate
+   spans contains an invertible pairing, which cannot vanish between two
+   three-planes in a five-space.  This closes the displayed model, not all
+   possible `dim K=5` configurations.  See
+   [`P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md`](P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md)
+   and
+   [`P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md`](P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md).
 
 The unresolved cells are:
 
@@ -87,23 +93,21 @@ tournament orientations were already classified; the common-singleton family
 is component eighteen; the fully kernel--kernel stratum lies in components
 sixteen or eighteen; the exactly-two-kernel stratum lies in component eleven;
 and all eight residual exactly-one-kernel entries now have exact component
-placements.  Component twenty-one now has an exact generic `H31` exclusion,
-but its weighted `H22` fibre remains open.  Components nineteen and twenty do
-**not** yet inherit the generic or boundary marked-`P_5` exclusions proved for
-the first eighteen.
+placements.  Components nineteen and twenty-one now have exact generic `H31`
+exclusions, but their weighted `H22` fibres remain open.  Component twenty
+does **not** yet inherit the generic or boundary marked-`P_5` exclusions proved
+for the first eighteen.
 
-At wind-down, an exact but **unpromoted and unaudited** component-nineteen
-`H31` calculation reduced deletions 0 and 1 to the unit ideal and deletions 2
-and 3 to
+For component nineteen, exact characteristic-zero projection reduces
+deletions 0 and 1 to the unit ideal and deletions 2 and 3 to
 
 ```text
 <h3, (q-phi)h0+1, h1*h2>.
 ```
 
-This leaves two rational marking lines for each of the last two deletions.
-No tracked certificate was retained; reconstruct and independently audit the
-elimination before citing it as a theorem.  No component-twenty marked-fibre
-result survived review.
+The resulting four rational marking lines and both shared endpoints are now
+closed by exact two-minor and pure-transverse certificates.  No
+component-twenty marked-fibre result survived review.
 
 ## What a global proof would still need
 
@@ -183,12 +187,14 @@ a necessary rank-two `5 x 5` bilinear catalecticant.  Twenty-two split minors
 reduce to sixteen gates and 53 minimal gate covers.  The unique four-gate
 cover is now exactly excluded: the cycle gates force the two alternating
 coordinate planes, and a remaining catalecticant minor has value `-4` or `4`.
-The other 52 covers, fixed common kernel, and marked rank-one conditions are
-still open:
+Every other cover is excluded by an invertible pairing in its gate span.
+Thus the displayed rank-five model fails the first nonlinear condition, but
+other rank-five configurations and the general `1+1+1` profile remain open:
 [`P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md`](P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md),
 [`P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md`](P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md),
-[`P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md`](P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md), and
-[`P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md`](P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md).
+[`P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md`](P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md),
+[`P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md`](P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md), and
+[`P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md`](P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md).
 
 There is also a separate exact eight-vertex discriminant reduction.  A smooth
 expected two-dimensional four-root complete intersection is connected by its
@@ -291,9 +297,9 @@ identically zero by Hall deficiency, simultaneously in all affine markings,
 extension entries, source scalings, and homogeneous weights.  The
 `triangle-(1,1,1)` cell is now closed by the later placement theorems.  The
 remaining work is the other three all-pair graph cells, generic and special
-marked fibres on components nineteen and twenty, weighted `H22` on component
-twenty-one, all relevant projective/special component boundaries, and the
-universal `P_5` step.
+marked fibres on component twenty, weighted `H22` on components nineteen
+through twenty-one, all relevant projective/special component boundaries,
+and the universal `P_5` step.
 
 ## Focused replay
 
@@ -366,8 +372,14 @@ python audit_p6_common_port_111_rank_five_catalecticant.py
 uv run --with sympy python verify_p6_common_port_111_unique_four_gate_obstruction.py
 python audit_p6_common_port_111_unique_four_gate_obstruction.py
 
+uv run --with sympy python verify_p6_common_port_111_all_gate_covers_obstruction.py
+python audit_p6_common_port_111_all_gate_covers_obstruction.py
+
 uv run --with sympy python verify_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py
 uv run --with sympy python audit_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py
+
+uv run --with sympy python verify_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py
+python audit_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py
 ```
 
 If plain `python` lacks a dependency, use the repository's isolated verifier

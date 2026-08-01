@@ -26,13 +26,14 @@ B=C=span(e_0,e_1,e_3),                              (2)
 ```
 
 and one explicit catalecticant value has rank three in either case.
-Consequently every surviving solution of the rank-five shared-factor problem
-must lie on one of the other 52 minimal gate-cover branches, all of size at
-least five.
+At this theorem's checkpoint, every surviving solution had to lie on one of
+the other 52 minimal gate-cover branches, all of size at least five.  Those
+branches are now excluded by perfect-pairing certificates in
+[`P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md`](P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md).
 
-This removes one exact branch.  It does not classify the other 52 covers,
-construct or exclude the shared three-plane `A`, impose the marked rank-one
-tensors, decide `P_6 -> Delta_3`, or settle the global Krenn--Gu conjecture.
+Together the two follow-up theorems exclude all 53 covers for the displayed
+rank-five model.  They do not classify every configuration with `dim K=5`,
+decide `P_6 -> Delta_3`, or settle the global Krenn--Gu conjecture.
 
 ## Four gates on a coordinate cycle
 
