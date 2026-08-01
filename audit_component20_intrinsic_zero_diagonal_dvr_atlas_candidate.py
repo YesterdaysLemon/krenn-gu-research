@@ -52,6 +52,39 @@ def git_commit() -> str:
     ).stdout.strip()
 
 
+def frozen_component_sources_unchanged() -> bool:
+    component_sources = (
+        COMPONENT20,
+        COMPONENT18,
+        COMPONENT15_BOUNDARY,
+        COMPONENT16_BOUNDARY,
+    )
+    ancestor = subprocess.run(
+        ("git", "merge-base", "--is-ancestor", FROZEN_COMMIT, "HEAD"),
+        cwd=ROOT,
+        capture_output=True,
+        check=False,
+        timeout=15,
+    )
+    if ancestor.returncode != 0:
+        return False
+    unchanged = subprocess.run(
+        (
+            "git",
+            "diff",
+            "--quiet",
+            FROZEN_COMMIT,
+            "--",
+            *(path.name for path in component_sources),
+        ),
+        cwd=ROOT,
+        capture_output=True,
+        check=False,
+        timeout=15,
+    )
+    return unchanged.returncode == 0
+
+
 def add(*rows: tuple[Any, ...]) -> tuple[sp.Expr, ...]:
     return tuple(sp.expand(sum(row[i] for row in rows)) for i in range(4))
 
@@ -874,7 +907,10 @@ def source_and_candidate_audit(
 
 
 def main() -> None:
-    require(git_commit() == FROZEN_COMMIT, "HEAD moved from frozen commit")
+    require(
+        frozen_component_sources_unchanged(),
+        "frozen component sources changed or the frozen commit is not an ancestor",
+    )
     base = base_plucker_audit()
     fan = valuation_fan_audit()
     atlas = chart_atlas_audit()

@@ -11,13 +11,14 @@ shape of the chosen graph and the number of rank-two relations, the
 all-pair-rank component-exhaustiveness problem therefore has only eight
 coarse cells.
 
-Five cells are now resolved by exact repository theorems: the all-rank-two
+Seven cells are now resolved by exact repository theorems: the all-rank-two
 star is empty, the `(2,2,1)` star is component ten or lower-pair, the
 all-rank-two triangle is a component-eleven divisor, the `(2,2,1)` triangle
-is empty, and every stratum of the rank-one triangle lies in a certified
-component closure.  The three remaining cells containing at least two
-rank-one relations have substantial orientation/support classifications but
-are not yet globally exhausted.
+is empty, every stratum of the rank-one triangle lies in a certified
+component closure, and the `(2,1,1)` triangle is completely classified with
+one new orbit, component twenty-two.  The complete `(2,1,1)` star adds
+components twenty-three through twenty-five.  The sole remaining cell is the
+`(1,1,1)` star.
 
 For the dated continuation map, including the now-certified
 common-singleton component and the residual strata in the last triangle
@@ -111,15 +112,15 @@ that number `0,1,2,3` with (4) gives eight coarse cells.
 | star | `(2,2,1)` | component ten on the rank-three stratum, with the support-two chart lower-pair, by [`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md) |
 | triangle | `(2,2,2)` | the complete family in [`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md), contained in component eleven by [`P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md`](P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md) |
 | triangle | `(2,2,1)` | empty by [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md) |
-| star | `(2,1,1)` | partially classified by the exact-pair, common-factor, and mixed-star normal forms; a global orientation/support closure is still missing |
-| star | `(1,1,1)` | directed radical and mixed orientations are substantially classified, including the projective disjoint and overlapping mixed charts; a global orientation/support closure is still missing |
-| triangle | `(2,1,1)` | crossed, common-factor, common-kernel, and support-one charts produce components one and eleven through thirteen or obstructions; their union is not yet proved exhaustive |
+| star | `(2,1,1)` | exhausted: the outward common-center-kernel orientation supplies component twenty-three, the complete mixed-center support ledger has component twenty-four as its sole all-pair survivor, the complete unequal-endpoint two-inward ledger has component twenty-five as its sole all-pair survivor, and the equal-endpoint inward stratum is empty; see [`P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md`](P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md), [`P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md`](P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md), [`P4_MIXED_CENTER_STAR_211_COMPLETE_CLASSIFICATION.md`](P4_MIXED_CENTER_STAR_211_COMPLETE_CLASSIFICATION.md), [`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md`](P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md), [`P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md`](P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md), and [`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md`](P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md) |
+| star | `(1,1,1)` | directed radical and mixed orientations are substantially classified, including the projective disjoint and overlapping mixed charts; the strict all-three-arrows-to-center orientation and the all-three kernel--kernel orientation are empty by [`P4_ALL_CENTER_KERNEL_STAR_111_OBSTRUCTION.md`](P4_ALL_CENTER_KERNEL_STAR_111_OBSTRUCTION.md) and [`P4_ALL_DOUBLE_ENDPOINT_STAR_111_OBSTRUCTION.md`](P4_ALL_DOUBLE_ENDPOINT_STAR_111_OBSTRUCTION.md); one-/two-double-endpoint and remaining support-collision closure is still missing |
+| triangle | `(2,1,1)` | exhausted by the six Borel-flag orbits; component twenty-two is the sole new orbit, by [`P4_211_TRIANGLE_COMPLETE_CLASSIFICATION.md`](P4_211_TRIANGLE_COMPLETE_CLASSIFICATION.md) |
 | triangle | `(1,1,1)` | exhausted: tournament strata lie in known closures, the fully kernel--kernel stratum lies in components sixteen or eighteen, the exactly-two-kernel stratum lies in component eleven, and the exactly-one-kernel ledger closes through components eight, eleven, twelve, eighteen, nineteen, twenty, and twenty-one; see [`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md) |
 
 The lower-pair locus `min r_ij<=2` is already exhausted separately in
 [`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
-Therefore a proof that the three still-open rows of this table lie in the
-certified component closures would prove that the current twenty-one-component
+Therefore a proof that the one still-open row of this table lies in the
+certified component closures would prove that the current twenty-five-component
 list is exhaustive.
 
 Even that would not by itself prove `P_5 -> Delta_3` impossible: the marked

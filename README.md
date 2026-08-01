@@ -5,7 +5,7 @@
 **UNRESOLVED globally.**  This repository does not yet contain a proof or
 counterexample for all even `n >= 6` and `d >= 3`.
 
-### Start here: 31 July 2026 checkpoint
+### Start here: 1 August 2026 continuation
 
 The shortest route into the current proof frontier is
 [`NEXT_INSTANCE_HANDOFF_2026-07-31.md`](NEXT_INSTANCE_HANDOFF_2026-07-31.md).
@@ -15,13 +15,45 @@ replay commands, and records the next symbolic decision point.
 At this checkpoint the lower-pair pure-`P_4` locus is exhausted and the
 exactly-one-kernel `triangle-(1,1,1)` residual is completely placed in
 component closures.  Three exact component theorems arising from that
-placement raise the certified lower bound from eighteen to **twenty-one**
+placement first raised the certified lower bound from eighteen to twenty-one
 pure-`P_4` component orbits: the common-kernel vertical fivefold, the
 common-active binary-triangle fivefold, and the coincident-support rank-one
-star sixfold.  Consequently the whole `triangle-(1,1,1)` cell is closed, and
-the all-pair-ranks-at-least-three component problem now has three unresolved
-star/triangle cells.  Generic marked `H31/H22` fibres are now proved empty on
-all twenty-one certified components.  The remaining special/projective
+star sixfold.  The formerly open common-kernel active/active chart in the
+`triangle-(2,1,1)` cell now supplies a fourth new theorem: its unequal
+complementary directions form component **twenty-two**, a smooth
+five-dimensional orbit.  All six Borel-flag orbits and every projective
+direction boundary in that triangle cell are now classified.  The outward common-center-kernel
+orientation of the first star now supplies component **twenty-three**, a
+smooth fivefold with profile `(3,3,3,4,4,4)`.  The disjoint-binary
+split-center mixed orientation now supplies component **twenty-four**, another
+smooth fivefold with the same profile and relation word but a distinct
+center/leaf kernel-endpoint word.  An exact eight-signature support ledger
+now shows that every other mixed-center support is empty or lower-pair.  The
+disjoint-binary unequal-endpoint two-inward chart supplies component
+**twenty-five**, again a smooth fivefold with the same coarse pair profile.
+An exact support-one/support-two theorem excludes the equal-endpoint inward
+stratum completely.  A second eight-signature ledger places every
+unequal-endpoint support boundary in component twenty-five, an already
+classified outward/mixed orientation, or the lower-pair locus.  Consequently
+the entire star `(2,1,1)` cell is closed, and star `(1,1,1)` is the sole
+remaining all-pair `P_4` cell.  Within it, the strict all-three-arrows-to-
+center orientation is now empty because the three leaf active rows are one
+common support-at-most-two polar form, whose squarefree cube vanishes.  The
+all-three kernel--kernel orientation is empty too: singleton support
+compresses four active rows into three coordinates, while binary support has
+three mixed coefficients whose vanishing forces the all-active coefficient.
+Generic marked `H31` fibres are proved
+empty on the first twenty-four of the twenty-five certified components; generic weighted `H22`
+is proved empty on the first twenty-one and component twenty-four.  Component twenty-two's `D01` orbit
+is closed; its complementary `D23` orbit now has exact Q1/Q2/Q3 and a broad
+`h1=0` factor cover, but an explicit `G=G2=0` residual and the unexhausted
+`h1!=0` locus remain open.  Component
+twenty-three's weight-at-infinity chart, canonical finite marking, and full
+`t=3` finite slice are closed but its generic finite all-marking fibre remains
+unknown.  Component twenty-four's complete generic weighted fibre is empty
+across both pair orbits and both homogeneous-weight charts.  Both generic
+`P_5` fibres on component
+twenty-five are open.  The remaining special/projective
 boundaries are not promoted by those function-field theorems.  On component
 nineteen, the finite `q=0` weighted-`H22` divisor is now independently closed
 through both rank-jump endpoints `phi=+/-1` on `p*phi!=0`.  Direct
@@ -67,8 +99,14 @@ aggregate audit and twelve direct mask-6 certificates now verify the same
 whole diagonal-DVR wall for weighted `H22`.  Non-diagonal source changes and
 the full embedded-`P_3` projective weighted-`H22` closure remain open.  The
 five-root no-torus locus has also been pushed from a hypersurface envelope to
-codimension at least two, and the first blocker surplus has an arbitrary-order
-port-permanent formula.  On the resulting common-port `P_6` wall, an exact
+codimension at least two.  Every blocker surplus now has one exact
+arbitrary-order multi-port cofactor expansion.  The first surplus is an
+ordinary port-permanent; five roots with seven blockers give its first
+genuine two-port case, whose canonical minimal incidence cell is
+`012+2(01+02+12)` and contains three overlapping pure-`P_5` systems.  No
+multi-row factorisation, and hence no higher permanent extraction, follows
+automatically.  On
+the separate common-port `P_6` wall, an exact
 rank-five configuration now extracts a necessary finite bilinear-gate
 problem from the first nonlinear factorisation condition and exactly excludes
 its unique four-gate branch.  Perfect-pairing certificates now exclude the
@@ -496,6 +534,101 @@ strictly advance the finite frontier:
   [`P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
   Support-one common zero divisors and lower-pair-rank strata remained at
   that checkpoint.
+- the unequal-complement continuation of the same active/active orientation
+  is a twenty-second component rather than a missing boundary of component
+  thirteen.  Four linear apolar sheets are one symmetry orbit.  At
+  `(A,R,D)=(1,1,2)`, exact family/incidence minors `-1/5184` and `1/23328`
+  prove a smooth fivefold with profile `(4,4,4,3,3,3)` and relation ranks
+  `(2,1,1)`.  Equal complements return to component thirteen; every other
+  projective direction is lower-pair, embedded-`P_3`, or zero.  Together
+  with the five other flag orbits, this completely closes the
+  `triangle-(2,1,1)` cell:
+  [`P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md`](P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md),
+  [`P4_211_TRIANGLE_COMPLETE_CLASSIFICATION.md`](P4_211_TRIANGLE_COMPLETE_CLASSIFICATION.md).
+  Its complete generic marked `H31` fibre is empty.  Exact projection leaves
+  four binary marking branches, and a uniform mode-three one-marked minor
+  excludes all four; the other two source deletions are killed by row-module
+  identities:
+  [`P5_H31_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_GENERIC_OBSTRUCTION.md).
+  Generic weighted `H22` remains open: exact binary survivors exist at
+  rational points, but their one-marked ternary maps have rank four, so they
+  are not counterexamples:
+  [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_SURVIVOR_RECONNAISSANCE.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_SURVIVOR_RECONNAISSANCE.md).
+  The full finite `D01` pair orbit is now closed by a three-prime radical
+  decomposition and two fixed one-marked minors per branch, including every
+  finite weight and the H31 weight-at-infinity endpoint.  This does not
+  transport to the complementary-support `D23` pair orbit, which remains
+  unknown:
+  [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D01_PAIR_ORBIT_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D01_PAIR_ORBIT_OBSTRUCTION.md).
+  On `D23`, three exact projection branches and seven primary `h1=0`
+  factors have unit one-marked ideals.  The remaining
+  `h1=0,2h3=s,G=G2=0` saturation and the `h1!=0` chart are explicitly
+  unknown:
+  [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md).
+- the outward common-center-kernel orientation in the star-`(2,1,1)` cell
+  contains component twenty-three.  Its implicit pure hypersurface is
+  `1-rt=ks(t-r)`; exact family/incidence minors `-3/4` and `-9600` prove a
+  smooth fivefold with pair profile `(3,3,3,4,4,4)` and relation word
+  `(2,1,1)`.  A complete support-one/support-two and `YY/YX/XX` flag ledger
+  routes every other point in this orientation to components eleven or
+  twelve, lower-pair, or zero.  Its complete generic marked `H31` fibre is empty: two deletions are
+  row-module obstructed, and each of the other two has one exact marking with
+  a uniform rank-four one-marked minor.  Weighted `H22` remains open:
+  [`P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md`](P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md),
+  [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+  Exact weighted partial closure now covers all markings at generic weight
+  infinity, the generic finite canonical marking, and every finite marking
+  on the exact slice `t=3`.  The full finite `C(r,t)[h,lambda]` calculation
+  timed out and remains unknown:
+  [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md).
+- the disjoint-binary split-center mixed orientation in the same star cell
+  contains component twenty-four.  Exact purity splits into a lower-pair
+  branch and two sign sheets exchanged by `X_2<->X_3`.  The nonzero sheet is
+  a smooth fivefold: family/incidence minors `-1/81` and
+  `-57671680/6561` certify local dimension five, including the full
+  projective moving-leaf direction.  Its generic pair profile and relation
+  word equal component twenty-three's, but one rank-one spoke uses the center
+  kernel and the other a leaf kernel, rather than both using the center.
+  The complete mixed-center support ledger routes every other support to
+  lower-pair or zero.  The inward endpoint strata are separate.
+  Its complete generic marked `H31` fibre is empty: one deletion is killed by
+  a row-module identity, the other three project to four exact branches, and
+  the fixed mode-zero rows-0137 minor makes every saturated branch ideal
+  unit.  Its generic weighted `H22` fibre is empty too: exact projection of
+  both pair orbits and both homogeneous-weight charts gives six branches,
+  including one irreducible quadratic-weight prime, and the same
+  `N0[0137]` minor makes every branch ideal unit.  Special/projective fibres
+  remain open:
+  [`P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md`](P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md),
+  [`P4_MIXED_CENTER_STAR_211_COMPLETE_CLASSIFICATION.md`](P4_MIXED_CENTER_STAR_211_COMPLETE_CLASSIFICATION.md),
+  [`P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
+  [`P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+- the disjoint-binary unequal-endpoint two-inward chart contains component
+  twenty-five.  Its purity tensor has four entries forming a rank-one
+  `2 x 2` matrix on the irreducible hypersurface
+  `(ej+k^2)(1+ejs^2)=(e+j)^2`.  Exact family/incidence minors `-7/27` and
+  `81920/3` prove a smooth fivefold with pair profile
+  `(3,3,3,4,4,4)` and relation word `(2,1,1)`.  The two distinct inward
+  center endpoints separate it from components twenty-three and
+  twenty-four.  A complete eight-signature reverse theorem includes both
+  projective leaf hyperplanes and makes this the sole genuine two-inward
+  all-pair closure.  Both generic `P_5` fibres remain open:
+  [`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md`](P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md).
+  The equal-endpoint two-inward stratum is empty: support one forces the zero
+  tensor, nonsingular binary complement has fixed forbidden coefficient
+  `-4Q`, and both singleton-complement charts are zero or lower-pair:
+  [`P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md`](P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md),
+  [`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md`](P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md).
+- in the remaining star-`(1,1,1)` cell, the strict all-three-arrows-to-center
+  orientation is empty.  All three leaf active rows would be the unique
+  polar partner of the center kernel, and every singleton/binary polar has
+  zero squarefree cube.  Double-endpoint boundaries and the other
+  mixed/radical support collisions remain separate:
+  [`P4_ALL_CENTER_KERNEL_STAR_111_OBSTRUCTION.md`](P4_ALL_CENTER_KERNEL_STAR_111_OBSTRUCTION.md).
+  The all-three kernel--kernel orientation is also empty by an exact
+  singleton/binary support split.  Stars with only one or two double-endpoint
+  spokes remain open:
+  [`P4_ALL_DOUBLE_ENDPOINT_STAR_111_OBSTRUCTION.md`](P4_ALL_DOUBLE_ENDPOINT_STAR_111_OBSTRUCTION.md).
 - the entire boundary where at least one rank-one edge is support-one
   produces no new
   component.  A support-one zero divisor has annihilator equal to its own
@@ -899,10 +1032,19 @@ strictly advance the finite frontier:
   diagonal in the fourteen-row mixed module for every affine marking.  Its
   generic weighted-`H22` fibre is empty too: `D01` is Hall-deficient for every
   homogeneous weight, finite `D23` all-alpha incidence has zero all-beta
-  diagonal, and the infinity all-alpha row is in the mixed module.  All
-  special/projective boundaries remain open:
+  diagonal, and the infinity all-alpha row is in the mixed module.  Four
+  divisor-generic special fibres are now closed for both `H31` and `H22`: the
+  finite endpoints `p=0` and `q=0`, the genuine mode-three projective divisor,
+  and the clean mode-zero vertical-plane open.  The last of these has now
+  been strengthened to its complete normalized projective compactification:
+  exact elimination gives ten finite minimal primes and three primes at
+  `ell=infinity`, and branchwise/direct mode-three certificates close every
+  intersection for both `H31` and `H22`.  Arbitrary ambient/source/projective
+  degenerations outside that normalized compactification remain separate:
   [`P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
-  [`P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md).
+  [`P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md),
+  [`P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md`](P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md),
+  [`P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md).
 - component eighteen's complete generic marked `H31` and weighted `H22`
   fibres are empty.  In its intrinsic pure marking, three kernel rows equal
   the common singleton `e`.  After any source-coordinate deletion or either
@@ -1421,6 +1563,15 @@ strictly advance the finite frontier:
   For five roots this makes six blockers exactly `P_6 -> Delta_3`, not a
   hidden `P_5` case:
   [`ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION.md`](ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION.md).
+- the next blocker surplus has an exact arbitrary-order expansion as well.
+  With `r` roots and `r+2` blockers it is a two-port tensor: each coefficient
+  is a sum over the two unused blocker vertices of a permanent cofactor times
+  a residual matching functional.  At five roots and seven blockers the
+  canonical minimal profile `012+2(01+02+12)` contains three overlapping
+  pure-`P_5` systems, but does not reduce to a single `P_6` permanent.  A
+  two-row factorisation hypothesis would yield `P_7`; that hypothesis is not
+  proved:
+  [`TWO_PORT_SEVEN_BLOCKER_REDUCTION.md`](TWO_PORT_SEVEN_BLOCKER_REDUCTION.md).
 - the resulting `P_6` problem has a precise simultaneous-kernel formulation.
   Five fixed maps must leave a three-dimensional diagonal image on the
   kernel of their `240 x 6` off-diagonal contraction matrix.  The extracted
