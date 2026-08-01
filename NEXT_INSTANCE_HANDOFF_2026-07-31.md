@@ -74,6 +74,16 @@ Six statements organize the current frontier.
    the half-centre atlas:
    [`COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md`](COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md),
    [`P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md`](P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md).
+   The complete diagonal source-torus DVR/Puiseux atlases over those two zero
+   bases are also independently verified.  Their exact nonzero cone is
+   `x1=x2=0,x0<=-min(val(u),val(v))`; the sixteen leading charts lie in
+   components 18 and 16, with six rank-two interiors additionally in
+   component 15.  The intrinsic kernel rows `(K0,e,e,e)` give pointwise Hall
+   obstructions to every marked-`H31` deletion and both homogeneous
+   weighted-`H22` directions:
+   [`COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_CANDIDATE.md`](COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_CANDIDATE.md),
+   [`COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_VERIFICATION.md`](COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_VERIFICATION.md),
+   [`P4_COMPONENT20_TRANSVERSE_BASE_DIAGONAL_FAN_PROOF_B.md`](P4_COMPONENT20_TRANSVERSE_BASE_DIAGONAL_FAN_PROOF_B.md).
    The whole `p+q=0` diagonal-source-torus DVR wall is now closed for marked
    `H31`: a verified arc exhaustion reduces it to the displayed charts,
    embedded-`P_3` projective strata, and two directly verified special
@@ -142,11 +152,11 @@ placements.  Components nineteen through twenty-one now have exact generic
 entire finite normalized `(p+q)(p-q+1)!=0` sheet, including all special-divisor
 intersections in that open.  The intrinsic `p-q+1=0` chart wall is closed
 over its generic point, and its two finite zero-restriction base points have
-closed compactified Segre-direction `P1` incidences.  The `p+q=0` wall is now
+closed compactified Segre-direction `P1` incidences and complete verified
+diagonal source-torus atlases.  The `p+q=0` wall is now
 verified for diagonal-torus DVR/Puiseux arcs for both marked `H31` and
-weighted `H22`, including every actual nonzero half-centre arc.  Complete
-source-torus atlases over the two zero base points, parameter infinity,
-non-diagonal or arbitrary `GL_4` source changes, and the remaining
+weighted `H22`, including every actual nonzero half-centre arc.  Parameter
+infinity, non-diagonal or arbitrary `GL_4` source changes, and the remaining
 special/projective weighted-`H22` fibres of components nineteen through
 twenty-one remain open.
 
@@ -265,14 +275,25 @@ all `16/16` marked-`H31` and `16/16` complete shared weighted-`H22`
 projections unit.  Exactly two individual finite-`D01` neighbour schemes
 survive, and both disappear under same-extension compatibility.
 
+Their complete diagonal source-torus DVR/Puiseux atlases are now also
+`VERIFIED`.  For local deviations `u,v`, the nonzero cone is exactly
+`x1=x2=0,x0<=-min(val(u),val(v))`.  Four ultrametric residue branches and two
+torus faces give sixteen charts across the two centres.  The interiors lie
+in component eighteen, six lower-pair interiors also lie in component
+fifteen, and the walls lie in component sixteen.  Every chart has intrinsic
+kernel rows `(K0,e,e,e)`, so direct Hall deficiency closes all four marked
+`H31` deletions and both homogeneous weighted-`H22` directions, including
+weight infinity.  The independent verifier reconstructed the min-plus fan,
+leading planes, residue-stable ranks, closure hypotheses, and Hall identities
+without importing either discovery implementation.
+
 At `p=-1/2`, the straight fixed-source limit has zero restriction and pair
 profile `(3,3,2,3,3,3)`.  It is the formal `k=infinity` edge of the
 half-centre family and lies in component fifteen's closure by an explicit
 support-one secant arc.  It is not a missing genuine wall stratum: an exact
 min-plus audit proves that every nonzero-`P4` diagonal `s=0` arc is one of the
-already verified finite-`k` or embedded-`P3` half-centre charts.  Complete
-source-torus atlases at `p=0,-1`, parameter infinity, and non-diagonal or
-arbitrary source limits are not included.
+already verified finite-`k` or embedded-`P3` half-centre charts.  Parameter
+infinity and non-diagonal or arbitrary source limits are not included.
 
 For component twenty-one, three alpha rows have a two-column Hall
 neighbourhood after every homogeneous `D01` contraction.  Finite `D23`
@@ -627,6 +648,10 @@ uv run --with sympy python audit_p5_h22_common_active_binary_triangle_intrinsic_
 uv run --with sympy python derive_component20_intrinsic_wall_exceptional_fibres_candidate.py
 uv run --with sympy python derive_p4_component20_intrinsic_exceptional_base_geometry_proof_b.py
 uv run --with sympy --with z3-solver python audit_component20_intrinsic_wall_exceptional_fibres_candidate.py
+
+uv run --with sympy --with z3-solver python derive_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py
+uv run --with sympy --with z3-solver python derive_p4_component20_transverse_base_diagonal_fan_proof_b.py
+uv run --with sympy --with z3-solver python audit_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py
 
 uv run --with sympy python derive_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
 uv run --with sympy python audit_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
