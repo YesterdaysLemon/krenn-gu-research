@@ -22,8 +22,8 @@ star sixfold.  Consequently the whole `triangle-(1,1,1)` cell is closed, and
 the all-pair-ranks-at-least-three component problem now has three unresolved
 star/triangle cells.  Generic marked `H31/H22` fibres are proved empty on the
 first eighteen components, and components nineteen through twenty-one are
-now generically closed for `H31`; weighted `H22` on all three new components
-and the remaining special/projective boundaries remain open.  On component
+now generically closed for `H31`; their generic weighted-`H22` fibres and the
+remaining special/projective boundaries remain open.  On component
 twenty, the entire finite normalized `(p+q)(p-q+1)!=0` sheet is now closed,
 including every special-divisor intersection inside that open.  The intrinsic
 `p-q+1=0` chart wall is also closed over its generic point.  On `p+q=0`, an
@@ -31,10 +31,10 @@ independently verified DVR/Puiseux classification exhausts every diagonal
 source-torus arc into lower-pair strata or two explicit higher-rank charts.
 Exact marked `H31` certificates close both charts, the embedded-`P_3`
 projective strata, the exceptional component-fifteen lower-pair fibres, and
-both component-fourteen infinity endpoints.  Thus this whole diagonal-DVR
-wall is verified for `H31`.  Non-diagonal source changes and weighted `H22`
-remain open; for `H22`, only the half-centre Hall obstruction and both generic
-finite-`D01` chart branches are independently verified so far.  The
+both component-fourteen infinity endpoints.  A separate nine-stratum
+aggregate audit and twelve direct mask-6 certificates now verify the same
+whole diagonal-DVR wall for weighted `H22`.  Non-diagonal source changes and
+the full embedded-`P_3` projective weighted-`H22` closure remain open.  The
 five-root no-torus locus has also been pushed from a hypersurface envelope to
 codimension at least two, and the first blocker surplus has an arbitrary-order
 port-permanent formula.  On the resulting common-port `P_6` wall, an exact
@@ -763,21 +763,26 @@ strictly advance the finite frontier:
   certificates additionally close the exceptional `a=0,-1`, `y<0`
   component-fifteen fibres and both special component-fourteen infinity
   endpoint faces.  Together with the embedded-`P_3` projective closure, fresh
-  independent audits verify the whole diagonal-DVR wall.  Weighted `H22` and
-  non-diagonal or arbitrary `GL_4` source changes remain open:
+  independent audits verify the whole diagonal-DVR wall.  Non-diagonal or
+  arbitrary `GL_4` source changes remain open:
   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md).
 - the two special lower-pair `H31` certificates used by that aggregate wall
   theorem are replayable separately:
   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md)
   and
   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md).
-- weighted `H22` on the same wall remains `UNKNOWN` overall.  The entire
-  half-centre replacement family is excluded in the `D01` direction by a
-  homogeneous Hall obstruction, all eight generic marking projections are
-  exact, and both `B_full` and `B_drop` have complete fixed-minor obstructions
-  for finite `D01`.  The surviving `D01`-infinity/finite-`D23` pairing and
-  direct `a=0,-1` fibres remain open:
-  [`P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_PARTIAL.md`](P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_PARTIAL.md).
+- weighted `H22` on the same diagonal-DVR wall is now `VERIFIED`.  A fresh
+  aggregate audit proves the exact `3+1+2+3=9` stratum partition, replays the
+  six historical closures, and identifies the three formerly open rows with
+  exactly twelve actual normal-support-mask-6 flags.  Direct original-wall
+  calculations make both all-alpha weighted diagonals vanish on every one of
+  those flags, including both homogeneous weight endpoints.  Separate
+  certificates close both component-fourteen infinity endpoints.  The old
+  partial checkpoint remains available with its historical `UNKNOWN` label,
+  and the two refuted overstrong transports remain visible.  The theorem does
+  not close the unrelated full projective embedded-`P_3` problem or any
+  non-diagonal source change:
+  [`P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md`](P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md).
 - the final mixed-chain vertical fibre opens into a new six-dimensional
   coincident-support rank-one star, component twenty-one.  Its generic profile
   is `(3,4,4,3,3,4)`.  A rank-thirteen incidence germ has one excess tangent

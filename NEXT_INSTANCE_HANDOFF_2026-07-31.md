@@ -65,6 +65,10 @@ Six statements organize the current frontier.
    [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md),
    [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md), and
    [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md).
+   The same exact wall is now closed for weighted `H22`: a fresh independent
+   aggregate audit checks all nine strata and the twelve wall-specific mask-6
+   flags without claiming the full projective embedded-`P_3` component:
+   [`P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md`](P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md).
    Component twenty-one's exact all-marking row-module certificate closes its
    generic `H31` fibre only:
    [`P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
@@ -119,9 +123,10 @@ placements.  Components nineteen through twenty-one now have exact generic
 normalized `(p+q)(p-q+1)!=0` sheet, including all special-divisor
 intersections in that open.  The intrinsic `p-q+1=0` chart wall is closed
 over its generic point.  The `p+q=0` wall is now verified for diagonal-torus
-DVR/Puiseux arcs and marked `H31`.  The exceptional points on the intrinsic
-wall, non-diagonal or arbitrary `GL_4` source changes, and weighted `H22` on
-all three components remain open.
+DVR/Puiseux arcs for both marked `H31` and weighted `H22`.  The exceptional
+points on the intrinsic wall, non-diagonal or arbitrary `GL_4` source changes,
+and the generic weighted-`H22` fibres of components nineteen through
+twenty-one remain open.
 
 A `VERIFIED` valuative analysis of diagonal source-torus arcs with
 `p+q -> 0` has exact replays for the corrected mode-zero wedge, the generic
@@ -148,12 +153,23 @@ complete embedded-`P_3` projective closure, this verifies the whole
 diagonal-DVR wall for marked `H31`:
 [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md).
 
-Weighted `H22` on this wall is still `UNKNOWN` overall.  Exact independent
-replays verify the homogeneous half-centre `D01` Hall obstruction, all eight
-generic marking projections, and the complete finite-`D01` fixed-minor
-certificates on both charts.  Direct `a=0,-1` fibres and the surviving
-`D01`-infinity/finite-`D23` pairing remain open:
-[`P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_PARTIAL.md`](P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_PARTIAL.md).
+Weighted `H22` is now also `VERIFIED` on the whole diagonal-DVR wall.  A fresh
+aggregate audit reconstructs the exact `3+1+2+3=9` stratum partition, replays
+the six previously closed rows, and matches the historical three-row
+`UNKNOWN` set exactly to twelve direct normal-support-mask-6 flags.  On those
+flags both all-alpha weighted diagonals vanish for arbitrary homogeneous
+weight in the original wall coordinates.  Separate exact certificates close
+both component-fourteen infinity endpoints.  Thus no actual diagonal-DVR
+`H22` stratum remains open:
+[`P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md`](P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md).
+
+Two boundaries must not be conflated with this wall theorem.  The original
+component-fourteen rank-exactness sentence and the original embedded-`P_3`
+weight-endpoint transport remain `REFUTED`; later independent certificates,
+not silent repairs, supply the needed wall coverage.  The full projective
+embedded-`P_3` weighted-`H22` component remains `UNKNOWN` on unrelated
+normal-mask, Grassmann-pivot, and orientation-endpoint strata, as do
+non-diagonal source changes and the global conjecture.
 
 For component nineteen, exact characteristic-zero projection reduces
 deletions 0 and 1 to the unit ideal and deletions 2 and 3 to
@@ -510,7 +526,7 @@ uv run --with sympy python verify_p5_h31_common_active_binary_triangle_intrinsic
 uv run --with sympy python audit_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py
 
 uv run --with sympy --with z3-solver python verify_p4_common_active_binary_triangle_p_plus_q_boundary.py
-uv run --with sympy python audit_p4_common_active_binary_triangle_p_plus_q_boundary.py
+uv run --with sympy --with z3-solver python audit_p4_common_active_binary_triangle_p_plus_q_boundary.py
 
 uv run --with sympy python verify_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
 uv run --with sympy python audit_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
@@ -523,6 +539,19 @@ uv run --with sympy python audit_p5_h31_common_active_binary_triangle_p_plus_q_i
 
 uv run --with sympy python verify_p5_h22_common_active_binary_triangle_p_plus_q_boundary_partial.py
 uv run --with sympy python audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_partial.py
+
+uv run --with sympy python verify_p5_h22_common_active_binary_triangle_p_plus_q_generic_d01_infinity_obstruction.py
+uv run --with sympy python audit_p5_h22_common_active_binary_triangle_p_plus_q_b_full_infinity_finite_pair_verifier.py
+uv run --with sympy python audit_p5_h22_common_active_binary_triangle_p_plus_q_generic_d01_infinity_b_drop.py
+
+uv run --with sympy python verify_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_obstruction.py
+uv run --with sympy python audit_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_independent.py
+
+uv run --with sympy python verify_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
+uv run --with z3-solver python audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
+
+uv run --with sympy python derive_p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_obstruction_candidate.py
+uv run --with sympy python audit_p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_independent.py
 ```
 
 If plain `python` lacks a dependency, use the repository's isolated verifier

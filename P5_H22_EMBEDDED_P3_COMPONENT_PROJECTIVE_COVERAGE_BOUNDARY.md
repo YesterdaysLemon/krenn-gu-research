@@ -275,6 +275,18 @@ valid, but the normal coefficient at the matching partner is zero.  This is
 the exact mask-6/matching obstruction identified by the old independent audit;
 the new `r0` results do not change it.
 
+A later direct theorem closes the wall-specific mask-6 atlas
+
+```text
+U0=<L,C+xi e+upsilon M>,  U1=U2=<e,L>,  U3=<e,M>
+```
+
+in original `01|23` coordinates, including every actual diagonal-DVR flag.
+It does not cover this broader representative, whose free-plane intersection
+with `H0` is not the line `L`, or the independent Grassmann-pivot and
+orientation-endpoint gaps.  Thus the actual diagonal wall is closed without
+promoting the full projective embedded-`P3` component.
+
 ## Evidence boundary
 
 - This note proves a chart-coverage statement, not emptiness on the uncovered

@@ -2,8 +2,8 @@
 
 ## Status
 
-**UNKNOWN overall; stated partial subclaims VERIFIED after independent
-replay.**  The independent audit verifies:
+**SUPERSEDED PARTIAL CHECKPOINT; whole-wall `H22` remains UNKNOWN.**  The
+independent audit in this file verifies:
 
 1. the entire `a=-1/2` replacement family has a homogeneous Hall-support
    obstruction in direction `D01`;
@@ -12,11 +12,23 @@ replay.**  The independent audit verifies:
    each of the two projected marking lines has a fixed rank-four one-marked
    minor.
 
-This is conditional on the `p+q` boundary-chart classification in
+Later exact no-import replays also close the generic `D01`-infinity branch on
+both charts and every direct `a=0,-1` finite exceptional fibre:
+
+- `P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_GENERIC_D01_INFINITY_OBSTRUCTION.md`;
+- `P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_FIBRES_OBSTRUCTION.md`.
+
+The complete `B_drop` finite-`D23` classification retains genuine compatible
+rank-at-most-three neighbours and is recorded only as a construction
+candidate; the paired `D01`-infinity obstruction is essential.
+
+All these results are conditional on the `p+q` boundary-chart classification in
 `P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md`.  Direct exceptional
-fibres `a=0,-1`, surviving `D01`-infinity fibres, finite `D23`, `H31`,
-weighted-`H22` closure beyond these charts, arbitrary-order gluing, and the
-global Krenn--Gu conjecture remain unresolved.
+finite fibres and generic displayed charts are now closed.  The projective
+lower-pair strata on the omitted free-plane boundary of the embedded-`P_3`
+component and the two component-fourteen infinity endpoints remain open, as
+do non-diagonal source changes, arbitrary-order gluing, and the global
+Krenn--Gu conjecture.
 
 ## Weighted directions and chart bases
 
@@ -258,8 +270,10 @@ and is not used to promote any `D23` claim.
   repaired silently.
 - The denominators and rank witnesses in (10)--(17) vanish at `a=0` or
   `a=-1`; those fibres require direct reconstruction and are not covered.
-- `D01` infinity and finite `D23` remain open.  Projection closures are not
-  treated as actual fibres.
+- At this checkpoint, `D01` infinity and finite `D23` were open.  Later
+  no-import replays close the generic `D01`-infinity obstruction, while a
+  complete finite-`D23` construction retains compatible neighbours.
+  Projection closures are never treated as actual fibres.
 - No finite-field computation, parameter grid, all-minor brute force, or
   global graph search is used.
 - This checkpoint makes no new `H31`, arbitrary-order reduction, or global
