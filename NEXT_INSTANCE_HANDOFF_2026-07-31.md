@@ -50,6 +50,9 @@ Six statements organize the current frontier.
    Its nine principal affine special divisors are also closed over their
    generic points by exact projection and uniform marked-minor certificates:
    [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_SPECIAL_DIVISOR_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_SPECIAL_DIVISOR_OBSTRUCTION.md).
+   The intrinsic `p-q+1=0` basis boundary has no binary neighbour over its
+   generic point after replacing the collapsed generic basis:
+   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md).
    Component twenty-one's exact all-marking row-module certificate closes its
    generic `H31` fibre only:
    [`P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
@@ -101,7 +104,8 @@ sixteen or eighteen; the exactly-two-kernel stratum lies in component eleven;
 and all eight residual exactly-one-kernel entries now have exact component
 placements.  Components nineteen through twenty-one now have exact generic
 `H31` exclusions.  Component twenty also has exact divisor-generic exclusions
-on nine principal affine special loci.  Their intersections, the remaining
+on nine principal affine special loci and on the intrinsic `p-q+1=0` chart
+wall.  Their exceptional/intersection points, the remaining
 normalization/projective/source-torus boundaries, and weighted `H22` on all
 three components remain open.
 
@@ -135,6 +139,14 @@ and `q=0,1`.  Deletions one and two also acquire marking axes at `q=1/2` and
 generic marked `H31` fibre on all nine divisors.  This does not close their
 base intersections or the remaining normalization/projective/source-torus
 boundaries.
+
+On `q=p+1`, the generic intrinsic mode-zero basis collapses.  Returning to
+the two actual rows of `U0` gives a replacement basis whose only pure
+coefficient is `T_1111=-2p(p+1)`.  For each of the four source deletions, the
+normalized genuine-binary incidence projects to the unit ideal over `C(p)`.
+Thus even the binary neighbour is absent over the generic point of this
+boundary.  The special values `p=0,-1,-1/2`, parameter infinity, and mixed
+source-torus/projective limits are not included.
 
 ## What a global proof would still need
 
@@ -434,6 +446,9 @@ uv run --with sympy python audit_p5_h31_common_active_binary_triangle_component_
 
 uv run --with sympy python verify_p5_h31_common_active_binary_triangle_component_special_divisor_obstruction.py
 uv run --with sympy python audit_p5_h31_common_active_binary_triangle_component_special_divisor_obstruction.py
+
+uv run --with sympy python verify_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py
+uv run --with sympy python audit_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py
 ```
 
 If plain `python` lacks a dependency, use the repository's isolated verifier
