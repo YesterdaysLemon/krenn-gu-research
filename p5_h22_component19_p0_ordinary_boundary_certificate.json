@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "role": "construction",
+  "date_utc": "2026-08-01T16:03:06Z",
+  "git_commit": "7a3eea50e311a163765750fa5f22f9d2b5c1b98e",
+  "claim_label": "REFUTED",
+  "replay_status": "fails exact stacked-minor assertion",
+  "scope": "component 19 finite ordinary p=0 boundary on q*phi*(q-phi)!=0",
+  "method": "regular intrinsic basis, exact characteristic-zero permanents and pair minors, finite/infinity elimination, complete shared kernel, projected and stacked one-marked minors",
+  "command": "uv run --with sympy python derive_p5_h22_component19_p0_ordinary_boundary_candidate.py",
+  "ordinary_tensor": {
+    "regular_basis": {
+      "alpha": ["Abar", "B", "Bbar", "Abar"],
+      "beta": ["Bbar+qB", "A", "A", "B+phi Bbar"],
+      "mode0_change_determinant": "1"
+    },
+    "support_after_all_affine_markings": {"1111": "4*(q-phi)"},
+    "zero_subdivisor": "q=phi",
+    "exact_nonzero_all_pair_open": "q*phi*(q-phi)!=0",
+    "generic_pair_profile": [3, 3, 4, 3, 3, 3],
+    "qphi_one_edge03_profile": [3, 3, 3, 3, 3, 3]
+  },
+  "incidence": {
+    "D01_binary_finite": ["1"],
+    "D01_binary_infinity": ["1"],
+    "D23_binary_finite": ["h3", "h0", "h1*h2"],
+    "D23_binary_infinity": ["h3", "h0", "h1*h2"],
+    "shared_A01_finite": ["1"],
+    "shared_A01_infinity": ["1"],
+    "shared_A23_finite": ["lambda-1", "h3", "h1", "h0"],
+    "shared_A23_infinity": ["1"]
+  },
+  "shared_branch": {
+    "weight": "[lambda:1]=[1:1]",
+    "marking": "h=(0,0,t,0)",
+    "mixed_rank": 5,
+    "fixed_rank_minor": {
+      "rows": [2, 9, 10, 12, 15],
+      "columns": [0, 1, 2, 3, 6],
+      "determinant": "-1024*q*(q-phi)^2"
+    },
+    "extension": ["0", "-(C+qE)/(q-phi)", "(phi*C+E)/(q-phi)", "0", "C", "D", "0", "E"],
+    "X": "phi*C+E",
+    "Y": "C+q*E",
+    "R": "(q-phi)*D-t*(phi*C+E)",
+    "diagonals": {"A01": "0", "B01": "4R", "A23": "-4X/(q-phi)", "B23": "4Y"},
+    "genuine_condition": "X*Y*R!=0",
+    "rank_safe_reduction": [
+      "D=0",
+      "t!=0",
+      "E*(phi^2-1)*(2*phi*C+(phi*q+1)*E)=0",
+      "C*(q^2-1)*((phi*q+1)*C+2*qE)=0"
+    ]
+  },
+  "uniform_obstruction": {
+    "open": "q*phi*(q-phi)*(q^2-1)*(phi^2-1)!=0",
+    "conclusion": "WITHDRAWN: advertised stacked witness fails exact replay"
+  },
+  "rank_safe_unknown_families": [
+    {
+      "base": "phi=epsilon, epsilon in {+1,-1}",
+      "extension": "[C:E]=[0:1]",
+      "restrictions": "q!=0,epsilon"
+    },
+    {
+      "base": "q=epsilon, epsilon in {+1,-1}",
+      "extension": "[C:E]=[1:0]",
+      "restrictions": "phi!=0,epsilon"
+    },
+    {
+      "base": "(phi,q)=(1,-2) or (-1,2)",
+      "extension": "C+4E=0 or C-4E=0 respectively"
+    },
+    {
+      "base": "(q,phi)=(1,-1/2) or (-1,1/2)",
+      "extension": "E=2C or E=-2C respectively"
+    },
+    {
+      "base": "(q,phi)=(-1,1) or (1,-1)",
+      "extension": "all [C:E] except X=0 or Y=0"
+    }
+  ],
+  "ordinary_weighted_H22_status": "UNKNOWN from this refuted certificate; use the separate proof-B and verifier for any smaller proved open",
+  "boundaries": {
+    "zero_subdivisor": "p=0,q=phi deferred",
+    "projectivized_normal_directions": "deferred",
+    "valuative_limits": "deferred",
+    "projective_component_boundary": "out of scope"
+  },
+  "finite_field_computation_used": false,
+  "broad_brute_force_used": false,
+  "limitations": [
+    "REFUTED as serialized: the advertised phi=1 stacked witness is identically zero.",
+    "The proposed uniform obstruction and exhaustive residue are withdrawn.",
+    "Rank-safe families are necessary-condition survivors, not actual H22 lifts.",
+    "No global Krenn-Gu conclusion follows."
+  ]
+}
