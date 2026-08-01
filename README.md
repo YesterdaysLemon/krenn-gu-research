@@ -12,13 +12,15 @@ The shortest route into the current proof frontier is
 It separates proved statements from exploratory leads, gives the focused
 replay commands, and records the next symbolic decision point.
 
-At this checkpoint the lower-pair pure-`P_4` locus is exhausted, generic
-marked `H31/H22` fibres are empty on all seventeen known pure-`P_4`
-components, and the remaining all-pair-ranks-at-least-three component problem
-has been reduced to four unresolved star/triangle cells.  These are strong
-local algebraic-geometric reductions, not a global proof: component
-exhaustiveness, special `P_5` fibres, and the final local-to-global graph step
-are still missing.
+At this checkpoint the lower-pair pure-`P_4` locus is exhausted and an exact
+mixed-characteristic local-height certificate proves that the
+common-singleton family is a new eighteenth pure-`P_4` component orbit.
+Generic marked `H31/H22` fibres are now empty on all eighteen certified
+components.  The all-pair-ranks-at-least-three component problem still has
+four unresolved star/triangle cells, one of which now contains component
+eighteen.  These are strong local algebraic-geometric reductions, not a
+global proof: component exhaustiveness, special `P_5` fibres, and the final
+local-to-global graph step are still missing.
 
 Separately, the repository now contains an exact rational positive
 Question-2 witness for [`n=6, k=4, d=4`](Q2_N6_K4_D4_CONSTRUCTION.md).
@@ -61,6 +63,15 @@ strictly advance the finite frontier:
 - the order-four permanent tensor has exact subrank two over `C`; in
   particular, four fully supported zero-coupled roots require at least
   five blocker vertices in total.
+- at order `2r+2`, `r` fully supported pairwise-zero roots with total blocker
+  union `r+1` and a unique all-colour nonblocker extract
+  `P_(r+1) -> Delta_3`; for four roots on ten vertices this identifies the
+  five-blocker case exactly as `P_5 -> Delta_3`.
+- five fully supported pairwise-zero roots whose three colour-blocker sets
+  have tight total union five likewise extract `P_5 -> Delta_3` at arbitrary
+  ambient order.  Excluding `P_5 -> Delta_3` would therefore force blocker
+  surplus at least six, but neither surplus nor coordinate-boundary roots
+  are yet excluded.
 - more sharply, any nonzero decomposable restriction of the order-four
   permanent tensor through rank-at-least-two local maps has rank two in
   at least two modes.  The two rare `q5_311` deletions therefore force
@@ -617,6 +628,24 @@ strictly advance the finite frontier:
   triangle cells are already resolved.  Component exhaustiveness is now
   concentrated in the four cells with at least two rank-one relations:
   [`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md).
+- the common-singleton family in the `triangle-(1,1,1)` cell is now a
+  certified eighteenth component orbit.  Its rational five-parameter chart
+  has all pair ranks three.  A fifteen-equation graph slice has exact local
+  dimension zero over `F_32003`; an integral height argument lifts this to a
+  five-dimensional characteristic-zero incidence germ.  The closed condition
+  `all six pair ranks <=3` separates the resulting irreducible component from
+  every previous orbit, each of which has a certified rank-four pair:
+  [`P4_COMMON_SINGLETON_COMPONENT.md`](P4_COMMON_SINGLETON_COMPONENT.md).
+- component eighteen's complete generic marked `H31` and weighted `H22`
+  fibres are empty.  In its intrinsic pure marking, three kernel rows equal
+  the common singleton `e`.  After any source-coordinate deletion or either
+  homogeneous weighted merge, those three extended rows occupy at most two
+  columns, so Hall deficiency makes the all-kernel binary diagonal vanish
+  identically before any mixed equation or ternary-rank test.  Thus all
+  eighteen certified components are generically closed for both fifth-mode
+  partition types:
+  [`P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md),
+  [`P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md).
 - the two directed-triangle components are now generically closed for marked
   `H31`.  Over each component function field, the genuine-binary-neighbour
   projection has only eleven marked sheets in total: six points and one line
@@ -1084,6 +1113,31 @@ strictly advance the finite frontier:
   zero-coupling equations have a simultaneous projective solution over
   `C`; the intersection number is 24.  The solution is not yet
   guaranteed to avoid the 15 coordinate hyperplanes.
+- at every transverse five-root solution, the four incident internal
+  covectors at vertex `i` span exactly `x_i^perp`.  Hence the zero coordinates
+  of `x_i` are precisely its internal colour-blocker flags.  A finite reduced
+  five-root intersection consists of 24 such transverse points; the
+  positive-dimensional/nonreduced branch and boundary exclusion remain open:
+  [`FIVE_ROOT_BOUNDARY_TRANSVERSAL_BLOCKER_CLASSIFICATION.md`](FIVE_ROOT_BOUNDARY_TRANSVERSAL_BLOCKER_CLASSIFICATION.md).
+- for each of the fifteen five-root coordinate boundaries, the ten induced
+  bilinear forms have a single irreducible boundary-resultant hypersurface.
+  Its degree is `12` in each incident edge block and `10` in each nonincident
+  block, total `108`.  Away from their union, the degree-24 five-root
+  intersection lies in the coordinate torus.  Hence every induced `K_5` is
+  boundary-resultant-special, tight-extracts `P_5 -> Delta_3`, or has blocker
+  surplus at least six:
+  [`FIVE_ROOT_TORUS_RESULTANT_DICHOTOMY.md`](FIVE_ROOT_TORUS_RESULTANT_DICHOTOMY.md).
+- for four supported roots on ten vertices, a blocker union of five leaves a
+  unique simultaneous-kernel nonblocker and extracts `P_5 -> Delta_3`; six
+  blockers are the exact persistent-surplus alternative:
+  [`ONE_NONBLOCKER_SURPLUS_PERMANENT_EXTRACTION.md`](ONE_NONBLOCKER_SURPLUS_PERMANENT_EXTRACTION.md).
+- for five supported roots at arbitrary ambient order, a tight five-vertex
+  total blocker union makes all three colour-blocker sets coincide.  The
+  matching sum factors into an order-five permanent pullback times a residual
+  hafnian, and the target forces that residual scalar and all three diagonal
+  coefficients to be nonzero.  Thus this tight case also extracts
+  `P_5 -> Delta_3`:
+  [`FIVE_ROOT_TIGHT_BLOCKER_P5_EXTRACTION.md`](FIVE_ROOT_TIGHT_BLOCKER_P5_EXTRACTION.md).
 - every contraction of the order-five permanent tensor by a vector of
   coordinate support at most three has subrank at most two over `C`;
   the support-three case has exact subrank two.
@@ -1854,6 +1908,10 @@ the essential remaining case.
 - [`EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md`](EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md)
 - [`FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md`](FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md)
 - [`FIVE_ROOT_ZERO_COUPLING_INTERSECTION_LEMMA.md`](FIVE_ROOT_ZERO_COUPLING_INTERSECTION_LEMMA.md)
+- [`FIVE_ROOT_BOUNDARY_TRANSVERSAL_BLOCKER_CLASSIFICATION.md`](FIVE_ROOT_BOUNDARY_TRANSVERSAL_BLOCKER_CLASSIFICATION.md)
+- [`FIVE_ROOT_TORUS_RESULTANT_DICHOTOMY.md`](FIVE_ROOT_TORUS_RESULTANT_DICHOTOMY.md)
+- [`ONE_NONBLOCKER_SURPLUS_PERMANENT_EXTRACTION.md`](ONE_NONBLOCKER_SURPLUS_PERMANENT_EXTRACTION.md)
+- [`FIVE_ROOT_TIGHT_BLOCKER_P5_EXTRACTION.md`](FIVE_ROOT_TIGHT_BLOCKER_P5_EXTRACTION.md)
 - [`SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md`](SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md)
 - [`SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md`](SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md)
 - [`FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md`](FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md)
@@ -2006,6 +2064,20 @@ python audit_exact_three_blocker_permanent_rank.py
 python verify_fourth_order_permanent_subrank.py
 python audit_fourth_order_permanent_subrank.py
 python verify_five_root_zero_coupling_intersection.py
+uv run --with sympy python verify_five_root_boundary_transversal_blocker_classification.py
+python audit_five_root_boundary_transversal_blocker_classification.py
+python verify_one_nonblocker_surplus_permanent_extraction.py
+python audit_one_nonblocker_surplus_permanent_extraction.py
+uv run --with sympy python verify_five_root_tight_blocker_p5_extraction.py
+python audit_five_root_tight_blocker_p5_extraction.py
+uv run --with sympy python verify_p4_common_singleton_component.py
+python audit_p4_common_singleton_component.py
+uv run --with sympy python verify_p5_h31_common_singleton_component_generic_obstruction.py
+python audit_p5_h31_common_singleton_component_generic_obstruction.py
+uv run --with sympy python verify_p5_h22_common_singleton_component_generic_obstruction.py
+python audit_p5_h22_common_singleton_component_generic_obstruction.py
+python verify_five_root_torus_resultant_dichotomy.py
+python audit_five_root_torus_resultant_dichotomy.py
 python verify_support_three_p5_contraction_subrank.py
 python audit_support_three_p5_contraction_subrank.py
 python verify_support_four_p5_contraction_restriction.py

@@ -7,8 +7,11 @@ repository is a proof or disproof for every even `n>=6` and `d>=3`.
 
 This checkpoint closes a coherent local chapter.  It uses exact symbolic
 algebra, projective geometry, Frobenius duality, and a small graph-theoretic
-reduction.  Finite-field programs are independent audits, never substitutes
-for the characteristic-zero arguments.
+reduction.  Finite-field censuses remain audits and are never substitutes for
+characteristic-zero arguments.  The new common-singleton theorem does use an
+exact modular local standard basis, but only as a height certificate in an
+integral local model; an explicit Krull-height argument supplies the
+characteristic-zero conclusion.
 
 The active branch at wind-down is `codex/h22-disjoint-mixed-star`.  The most
 recent mathematical commits before this documentation pass are:
@@ -24,20 +27,32 @@ Recheck the branch and worktree before relying on those identifiers.
 
 ## Verified checkpoint
 
-Three statements organize the current frontier.
+Four statements organize the current frontier.
 
 1. **The lower-pair locus is exhausted.**  If a nonzero pure `P_4`
    compression has `min r_ij<=2`, it lies in one of four known component
    closures.  See
    [`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
-2. **Every known component is generically closed at `P_5`.**  The marked
-   `H31` and weighted `H22` fibres are empty over the generic point of all
-   seventeen currently known pure-`P_4` components.  Component fifteen is
-   the last completed case:
+2. **All eighteen certified components are generically closed at `P_5`.**
+   Their marked `H31` and weighted `H22` fibres are empty over the generic
+   point.  For the first seventeen, component fifteen was the last completed
+   case:
    [`P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md)
    and
    [`P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
-3. **The remaining component question is an eight-cell `K_4` problem.**
+   Component eighteen is closed by the common-singleton Hall deficiency:
+   [`P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md)
+   and
+   [`P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md).
+3. **The common-singleton family is component orbit eighteen.**  An exact
+   integral graph slice has local dimension zero modulo `32003`; Krull height
+   lifts this to a five-dimensional characteristic-zero incidence germ.  The
+   family is irreducible of dimension five, and the closed condition that all
+   six pair ranks are at most three separates it from the previous seventeen
+   orbits.  See
+   [`P4_COMMON_SINGLETON_COMPONENT.md`](P4_COMMON_SINGLETON_COMPONENT.md).
+   Its generic `H31/H22` fibres are the two cases just cited.
+4. **The remaining component question is an eight-cell `K_4` problem.**
    Perfect pairing forces the rank-three edges to contain a star or triangle;
    the three selected relations have matrix ranks one or two.  Four of the
    eight coarse cells are resolved and four remain.  See
@@ -50,7 +65,7 @@ The unresolved cells are:
 | star | `(2,1,1)` | global orientation/support closure |
 | star | `(1,1,1)` | global orientation/support closure |
 | triangle | `(2,1,1)` | exhaust the union of known charts |
-| triangle | `(1,1,1)` | close kernel--kernel and doubly oriented degeneracies |
+| triangle | `(1,1,1)` | exhaust the residual strata around component eighteen |
 
 ## What a global proof would still need
 
@@ -70,8 +85,40 @@ global Krenn--Gu nonexistence theorem
 ```
 
 The present work is closest to the first box.  Even a proof that the
-seventeen-component list is exhaustive would not automatically settle the
-special fibres or the final local-to-global step.
+eighteen-component list is exhaustive would not automatically close special
+fibres or the final local-to-global step.
+
+There is now a second, genuinely arbitrary-order route into the same `P_5`
+bottleneck:
+
+```text
+five fully supported pairwise-zero roots
+  + total blocker union exactly five
+                 |
+                 v
+             P_5 -> Delta_3
+```
+
+At order ten, four fully supported roots and a five-vertex blocker union also
+extract `P_5 -> Delta_3`; six blockers are the exact surplus alternative.
+For a transverse five-root intersection point, zero coordinates are exactly
+internal blocker flags.  None of these statements yet proves that the
+degree-24 five-root intersection meets the coordinate torus, excludes a
+nonreduced intersection, rules out blocker surplus at least six, or excludes
+`P_5 -> Delta_3`.  See
+[`FIVE_ROOT_TIGHT_BLOCKER_P5_EXTRACTION.md`](FIVE_ROOT_TIGHT_BLOCKER_P5_EXTRACTION.md),
+[`ONE_NONBLOCKER_SURPLUS_PERMANENT_EXTRACTION.md`](ONE_NONBLOCKER_SURPLUS_PERMANENT_EXTRACTION.md),
+and
+[`FIVE_ROOT_BOUNDARY_TRANSVERSAL_BLOCKER_CLASSIFICATION.md`](FIVE_ROOT_BOUNDARY_TRANSVERSAL_BLOCKER_CLASSIFICATION.md).
+
+The coordinate-boundary exception is now contained in a finite union of
+explicit algebraic hypersurfaces.
+For every vertex/colour boundary, an irreducible multihomogeneous resultant
+has incident-edge degree `12`, nonincident-edge degree `10`, and total degree
+`108`.  Avoiding all fifteen resultants forces a fully supported five-root
+zero.  This is a genericity criterion, not a proof that witness blocks avoid
+the exceptional hypersurfaces:
+[`FIVE_ROOT_TORUS_RESULTANT_DICHOTOMY.md`](FIVE_ROOT_TORUS_RESULTANT_DICHOTOMY.md).
 
 ## Why these translations were useful
 
@@ -96,11 +143,7 @@ These moves reduced large polynomial systems to symbolic identities with
 small independent audits.  Broad support enumeration and disk-heavy brute
 force are not the recommended continuation.
 
-## Unverified lead: the common-singleton `K_4` family
-
-**Everything in this section is a scratch lead, not a theorem and not yet a
-replayable repository result.**  It may describe a new five-dimensional
-component, or merely a boundary of a known component.
+## Certified component eighteen: the common-singleton `K_4` family
 
 Let `e=X0`.  In `V=span(X1,X2,X3)`, choose `ell` and three lines
 `v1,v2,v3` that are pairwise orthogonal for the ternary polar form
@@ -130,43 +173,45 @@ ell=(1,L,M),       v1=(1,a,b),       v2=(1,c,d),
 B=[[0,M,L],[M,0,1],[L,1,0]],
 
 d=-(L*b+M*a+M*c+b*c)/(L+a),
-v3=(B*v1) cross (B*v2).
+v3=((B*v1) cross (B*v2))/(((B*v1) cross (B*v2))_0).
 ```
 
-At `(L,M,a,b,c)=(2,3,2,4,1)`, scratch exact arithmetic gives
+At `(L,M,a,b,c)=(-3,-2,-1,-1,-1)`, exact arithmetic gives
 
 ```text
-d=-21/4,       v3=(30,-72,21) ~ (10,-24,7),
-P3(v1,v2,v3)=-42,
+d=2,       v3=(1,3,-1),       P3(v1,v2,v3)=4,
 (r01,r02,r03,r12,r13,r23)=(3,3,3,3,3,3).
 ```
 
 In the `pivot01` Grassmann chart the corresponding sixteen coordinates were
 
 ```text
-(0,0,2,3, 0,0,2,4, 0,0,1,-21/4, 0,0,-12/5,7/10).
+(0,0,-3,-2, 0,0,-1,-1, 0,0,-1,2, 0,0,3,-1).
 ```
 
-The family map had tangent rank five at the sample (one selected `5 x 5`
-minor was `1`).  A universal `pivot01`, anchor-`(0,1,1,1)` incidence
-Jacobian had rank ten at the same point; one selected `10 x 10` minor was
-`-6176008608/15625`.  That rank is **not** a dimension certificate because
-the displayed incidence equations may be nonreduced.
+The family tangent rank is five, with a selected minor `1`.  The universal
+twenty-variable incidence has fifteen equations and tangent rank ten at the
+sample, but the proof does not infer dimension from that tangent space.  It
+preconditions the local ideal, imposes five explicit graph hyperplanes, and
+clears only `32003`-unit denominators.  Exact Singular local algebra over
+`F_32003` returns standard-basis size `36`, vector-space dimension `56`, and
+local dimension zero.  A mixed-characteristic height argument then proves
+that the characteristic-zero graph slice is locally zero-dimensional, so the
+unsliced incidence germ has dimension exactly five.
 
-The best next symbolic test is local, not enumerative:
+Every pair product in this family lies in
+`span(e*vi,e*vj,vi*vj)`, so all six ranks are at most three on its closure.
+Every one of the seventeen older components has a certified point with a
+rank-four pair.  The new component is therefore genuinely orbit eighteen.
 
-1. compute a local standard basis or local Krull dimension at the rational
-   sample in the universal incidence;
-2. if the local dimension is five, prove irreducibility of the chart and
-   certify that it is an actual component;
-3. if the local dimension is at least six, construct an explicit deformation
-   or arc into a known component (component eleven is the first candidate);
-4. only if a new component is certified, derive its generic `H31/H22` marked
-   fibre obstruction.
-
-A simple toric degeneration attempted from component eleven forced one
-limiting line to have support at most two and did not cover generic
-full-support `ell`.  This null result is weak evidence only.
+Its generic marked fibres are now closed by the shared singleton itself.  In
+the intrinsic pure basis the kernel rows are `(ell,e,e,e)`.  After every
+`H31` deletion and both weighted `H22` merge directions, the final three
+extended rows use at most two columns.  Their all-kernel permanent is
+identically zero by Hall deficiency, simultaneously in all affine markings,
+extension entries, source scalings, and homogeneous weights.  The remaining
+work is the rest of the `triangle-(1,1,1)` cell, projective/special component
+boundaries, and special universal `P_5` fibres.
 
 ## Focused replay
 
@@ -181,6 +226,27 @@ python audit_p5_h22_disjoint_secant_component_generic_obstruction.py
 
 uv run --with sympy python verify_p4_all_pair_rank_exceptional_graph_reduction.py
 python audit_p4_all_pair_rank_exceptional_graph_reduction.py
+
+uv run --with sympy python verify_p4_common_singleton_component.py
+python audit_p4_common_singleton_component.py
+
+uv run --with sympy python verify_p5_h31_common_singleton_component_generic_obstruction.py
+python audit_p5_h31_common_singleton_component_generic_obstruction.py
+
+uv run --with sympy python verify_p5_h22_common_singleton_component_generic_obstruction.py
+python audit_p5_h22_common_singleton_component_generic_obstruction.py
+
+uv run --with sympy python verify_five_root_boundary_transversal_blocker_classification.py
+python audit_five_root_boundary_transversal_blocker_classification.py
+
+python verify_five_root_torus_resultant_dichotomy.py
+python audit_five_root_torus_resultant_dichotomy.py
+
+python verify_one_nonblocker_surplus_permanent_extraction.py
+python audit_one_nonblocker_surplus_permanent_extraction.py
+
+uv run --with sympy python verify_five_root_tight_blocker_p5_extraction.py
+python audit_five_root_tight_blocker_p5_extraction.py
 ```
 
 If plain `python` lacks a dependency, use the repository's isolated verifier
@@ -191,10 +257,13 @@ the algebra system or claim a replay that did not finish.
 
 - Keep `UNRESOLVED globally` at the top of the README until the full chain is
   actually proved.
-- Label a finite-field census as an audit, not a characteristic-zero proof.
+- Label a finite-field census as an audit.  A modular standard basis may be
+  used in a characteristic-zero proof only with a written integral
+  height/flatness argument and pinned source metadata.
 - Label a timeout or failed elimination as unresolved, not empty.
-- Do not call the common-singleton family a component without a local
-  dimension/height certificate and a containment analysis.
+- Do not call the eighteen-component list exhaustive or promote generic fibre
+  obstructions to special/projective fibres without the missing
+  classifications.
 - Prefer exact identities, normal forms, projective covers, and local algebra
   to broad search.
 - After a meaningful theorem, update this handoff or replace it with a dated
