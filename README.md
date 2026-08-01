@@ -30,7 +30,9 @@ including every special-divisor intersection inside that open.  The intrinsic
 and the remaining projective/source-torus boundary are separate tasks.  A
 derived valuative classification reduces diagonal source-torus arcs over
 `p+q=0` to lower-pair strata and two explicit higher-rank charts, but its
-exhaustion claim is not independently verified.  The
+exhaustion claim is not independently verified.  Exact marked `H31`
+obstructions now close both displayed charts and their exceptional fibres;
+the whole wall remains derived because of that upstream exhaustion gap.  The
 five-root no-torus locus has also been pushed from a hypersurface envelope to
 codimension at least two, and the first blocker surplus has an arbitrary-order
 port-permanent formula.  On the resulting common-port `P_6` wall, an exact
@@ -750,6 +752,15 @@ strictly advance the finite frontier:
   independently verified.  This is a `P_4` boundary reduction, not an `H31`
   or `H22` closure:
   [`P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md`](P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md).
+- on the two displayed `p+q=0` charts, exact characteristic-zero projection
+  leaves a doubled marking on `B_full` and two marking lines on `B_drop`.
+  Uniform mode-three fixed-minor identities, direct rank-five exceptional
+  kernels at `a=0,-1`, and four unit projections for the `a=-1/2` replacement
+  family prove marked `H31` emptiness on every displayed chart.  Independent
+  replay verifies these chartwise claims.  Boundary-wide status remains
+  `DERIVED` because the prerequisite actual-arc exhaustion is not proved;
+  weighted `H22` and arbitrary projective limits remain open:
+  [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md).
 - the final mixed-chain vertical fibre opens into a new six-dimensional
   coincident-support rank-one star, component twenty-one.  Its generic profile
   is `(3,4,4,3,3,4)`.  A rank-thirteen incidence germ has one excess tangent
