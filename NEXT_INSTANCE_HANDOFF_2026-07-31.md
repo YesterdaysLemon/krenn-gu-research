@@ -60,12 +60,18 @@ Six statements organize the current frontier.
    `phi=0`, where pair `23` has rank exactly two:
    [`P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md).
    On the ordinary `p=0` divisor, the tensor is `T1111=4(q-phi)` rather than
-   zero.  A regular-basis proof and no-import audit close weighted `H22` on
-   `q*phi*(q-phi)*(q^2-1)*(phi^2-1)*((q*phi)^2-1)!=0`.  The exceptional
-   axes and `q=phi` projectivized zero base remain `UNKNOWN`; the latter has a
-   verified smooth codimension-two zero ideal with normal fibre `P1`:
+   zero.  A regular-basis proof, direct exceptional-divisor certificates, and
+   an eight-replay aggregate close the complete projective weighted-`H22`
+   fibre over the entire nonzero all-pair-open locus
+   `q*phi*(q-phi)!=0`.  This includes `q=+/-1`, `phi=+/-1`, both
+   `q*phi=+/-1` divisors, all of their crossings, and the reciprocal
+   weight-at-infinity chart.  The `q=phi` projectivized zero base remains
+   `UNKNOWN`; it has a verified smooth codimension-two zero ideal with normal
+   fibre `P1`:
    [`P5_H22_COMPONENT19_P0_FINITE_BOUNDARY_GEOMETRY_RECONNAISSANCE.md`](P5_H22_COMPONENT19_P0_FINITE_BOUNDARY_GEOMETRY_RECONNAISSANCE.md),
-   [`P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md`](P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md).
+   [`P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md`](P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md),
+   [`P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md),
+   [`P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md`](P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md).
    Component twenty is closed by exact open-incidence projection to four
    marking points and one uniform minor/transverse certificate:
    [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
@@ -178,8 +184,11 @@ weighted `H22`, including every actual nonzero half-centre arc.  Parameter
 infinity, non-diagonal or arbitrary `GL_4` source changes, and the remaining
 special/projective weighted-`H22` fibres of components nineteen through
 twenty-one remain open, except for component nineteen's verified finite
-`q=0,p*phi!=0` and `q=phi,p*phi!=0` divisors and its verified ordinary
-`p=0` obstruction open.  The remaining `p=0` exceptional axes are still open.
+`q=0,p*phi!=0` and `q=phi,p*phi!=0` divisors and its complete ordinary
+`p=0`, `q*phi*(q-phi)!=0` projective weight fibre.  On `p=0`, only the
+`q=phi` zero-base normal/valuative directions, the `q=0` or `phi=0`
+lower-pair boundaries, and parameter-compactification directions remain
+outside that theorem.
 
 A `VERIFIED` valuative analysis of diagonal source-torus arcs with
 `p+q -> 0` has exact replays for the corrected mode-zero wedge, the generic
@@ -274,11 +283,35 @@ off `q*phi=1` and `(3,3,3,3,3,3)` on that divisor.  Off the compatibility
 divisor, shared incidence leaves `lambda=1,h=(0,0,t,0)` and a complete
 three-dimensional extension kernel.  Complementary mode-zero and mode-three
 minors verify emptiness on
-`q*phi*(q-phi)*(q^2-1)*(phi^2-1)*((q*phi)^2-1)!=0`.  The divisors
-`q=+/-1`, `phi=+/-1`, `q*phi=1`, genuine coordinate axes on `q*phi=-1`,
-and the zero/projective `q=phi` base remain `UNKNOWN`.  The zero ideal is
-exactly `<p,q-phi>`, smooth of codimension two, and its first normal tensor
-directions form `P1`; higher-order valuative arcs are not classified.
+`q*phi*(q-phi)*(q^2-1)*(phi^2-1)*((q*phi)^2-1)!=0`.
+
+The excluded ordinary divisors are now closed separately.  Direct no-import
+reconstructions handle `q=+/-1` and `phi=+/-1`.  On `q*phi=1`, a regular
+row rescaling, complete three-frame, and complementary minors close the full
+projective weight fibre away from the zero intersections.  On `q*phi=-1`,
+the individual rank test first leaves two coordinate axes; full two-slice
+compatibility obstructs them.  At `phi^2=1` the survivor jumps to the full
+non-axis sheet `Y=0`, but a uniform mode-one stacked determinant closes it.
+The reciprocal weight-at-infinity chart is independently empty because its
+required `D23` all-alpha diagonal lies in the `D01` mixed ideal.  An aggregate
+audit replays all eight certificates and verifies the exact divisor ledger.
+Consequently the complete projective weighted-`H22` fibre is empty over every
+ordinary nonzero all-pair-open point `q*phi*(q-phi)!=0`.
+
+The zero/projective `q=phi` base remains `UNKNOWN`.  Its zero ideal is exactly
+`<p,q-phi>`, smooth of codimension two, and its first normal tensor directions
+form `P1`; higher-order valuative arcs are not classified.  The `q=0` and
+`phi=0` loci are lower-pair boundaries, while parameter-chart infinity and
+other projectivized base directions remain outside the aggregate theorem.
+The direct and aggregate replays are:
+[`P5_H22_COMPONENT19_P0_QPHI_ONE_INDEPENDENT_VERIFICATION.md`](P5_H22_COMPONENT19_P0_QPHI_ONE_INDEPENDENT_VERIFICATION.md),
+[`P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_TERNARY_COMPATIBILITY_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_TERNARY_COMPATIBILITY_OBSTRUCTION_VERIFICATION.md),
+[`P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_PHI_ENDPOINTS_VERIFICATION.md`](P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_PHI_ENDPOINTS_VERIFICATION.md),
+[`P5_H22_COMPONENT19_P0_Q_ENDPOINTS_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_P0_Q_ENDPOINTS_NO_IMPORT_VERIFICATION.md),
+[`P5_H22_COMPONENT19_P0_PHI_ENDPOINTS_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_P0_PHI_ENDPOINTS_NO_IMPORT_VERIFICATION.md),
+[`P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md),
+and
+[`P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md`](P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md).
 
 The historical stronger construction package claiming the larger open
 without the `q*phi=+/-1` exclusions is `REFUTED` as a replayable certificate:
@@ -721,6 +754,21 @@ uv run --with sympy python audit_p5_h22_component19_q_equals_phi_obstruction_can
 uv run --with sympy python audit_p4_component19_p0_finite_boundary_geometry.py
 uv run --with sympy python derive_p5_h22_component19_p0_ordinary_open_proof_b.py
 uv run --with sympy python audit_p5_h22_component19_p0_ordinary_obstruction_open.py
+
+uv run --with sympy python derive_p5_h22_component19_p0_qphi_one_ordinary_obstruction_candidate.py
+uv run --with sympy python derive_p5_h22_component19_p0_qphi1_proof_b.py
+uv run --with sympy python audit_p5_h22_component19_p0_qphi_equals_one.py
+
+uv run --with sympy python audit_p5_h22_component19_p0_qphi_minus_one_axes.py
+uv run --with sympy python derive_p5_h22_component19_p0_qphi_minus_one_axes_compatibility_obstruction.py
+uv run --with sympy python audit_p5_h22_component19_p0_qphi_minus_one_ternary_compatibility.py
+uv run --with sympy python audit_p5_h22_component19_p0_qphi_minus_one_phi_endpoints.py
+uv run --with sympy python derive_p5_h22_component19_p0_qphi_minus_one_weight_infinity_obstruction_candidate.py
+uv run --with sympy python audit_p5_h22_component19_p0_qphim1_infinity_no_import.py
+
+uv run --with sympy python audit_p5_h22_component19_p0_q_endpoints_no_import.py
+uv run --with sympy python audit_p5_h22_component19_p0_phi_endpoints_no_import.py
+uv run --with sympy python audit_p5_h22_component19_p0_finite_ordinary_aggregate.py
 
 # Expected assertion failure; retained REFUTED construction package:
 uv run --with sympy python derive_p5_h22_component19_p0_ordinary_boundary_candidate.py

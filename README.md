@@ -32,10 +32,13 @@ singular-basis divisor `q=phi` is also independently closed on `p*phi!=0`
 using a regular row-swap basis; all eight exact function-field incidence
 ideals are unit, and its only parameter-aware closure lies at the lower-pair
 boundary `phi=0`.  On the ordinary `p=0` divisor, a regular replacement basis
-proves a weighted-`H22` obstruction on
-`q*phi*(q-phi)*(q^2-1)*(phi^2-1)*((q*phi)^2-1)!=0`; the exceptional axes and
-the zero sub-divisor `q=phi` remain explicitly `UNKNOWN`.  The zero base is a
-smooth codimension-two locus with projectivized first normal fibre `P1`.
+and an eight-certificate aggregate now close the complete projective
+weighted-`H22` fibre over the entire nonzero all-pair-open locus
+`q*phi*(q-phi)!=0`.  This includes `q=+/-1`, `phi=+/-1`, both
+`q*phi=+/-1` divisors, their survivor jumps, and the reciprocal
+weight-at-infinity chart.  The zero sub-divisor `q=phi` remains explicitly
+`UNKNOWN`; it is a smooth codimension-two zero base with projectivized first
+normal fibre `P1`.  The `q=0` and `phi=0` loci are lower-pair boundaries.
 Other divisors remain separate.  On component
 twenty, the entire finite normalized `(p+q)(p-q+1)!=0` sheet is now closed,
 including every special-divisor intersection inside that open.  The intrinsic
@@ -732,12 +735,17 @@ strictly advance the finite frontier:
   is unit, and the sole parameter-aware `D01` closure occurs at `phi=0`, where
   pair `23` has rank exactly two.  On `p=0`, the ordinary tensor is
   `T1111=4(q-phi)` and the exact all-pair-open locus is
-  `q*phi*(q-phi)!=0`.  A complete three-frame and two one-marked minors verify
-  emptiness on the smaller parameter open excluding `q=+/-1`, `phi=+/-1`,
-  and `q*phi=+/-1`; those axes, plus the projectivized zero base `q=phi`,
-  remain `UNKNOWN`.  A stronger construction package is retained as
-  `REFUTED` because its advertised stacked minor fails exact replay.  Other
-  special/projective boundaries remain open:
+  `q*phi*(q-phi)!=0`.  Eight live exact replays and a polynomial case ledger
+  now exhaust the complete projective weighted fibre over that whole locus.
+  Direct specializations close `q=+/-1`, `phi=+/-1`, and `q*phi=+/-1`,
+  including the enlarged `Y=0` survivor sheet at the reciprocal sign
+  crossings; an independent coefficient syzygy closes the reciprocal
+  weight-at-infinity chart.  The projectivized zero base `q=phi`, the
+  lower-pair boundaries `q=0` and `phi=0`, and parameter-compactification or
+  valuative base directions remain separate.  A stronger historical
+  construction package is retained as `REFUTED` because its advertised
+  stacked minor fails exact replay.  Other special/projective boundaries
+  remain open:
   [`P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md),
   [`P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md),
   [`P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_OBSTRUCTION_VERIFICATION.md),
@@ -745,7 +753,9 @@ strictly advance the finite frontier:
   [`P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md),
   [`P5_H22_COMPONENT19_P0_FINITE_BOUNDARY_GEOMETRY_RECONNAISSANCE.md`](P5_H22_COMPONENT19_P0_FINITE_BOUNDARY_GEOMETRY_RECONNAISSANCE.md),
   [`P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md`](P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md),
-  and [`P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md`](P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md).
+  [`P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md`](P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md),
+  [`P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md),
+  and [`P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md`](P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md).
 - the `tau!=0` common-active binary sheet is a new five-dimensional component
   twenty.  Its generic profile is `(4,4,4,3,3,3)`, its intrinsic rank-one
   kernel signature is `(2,2,0,0)`, and its apparent sixth tangent direction
