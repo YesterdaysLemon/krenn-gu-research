@@ -54,6 +54,11 @@ Six statements organize the current frontier.
    but fixed complementary one-marked minors remain rank four:
    [`P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_OBSTRUCTION_VERIFICATION.md),
    [`P5_H22_COMPONENT19_Q0_PHI_ENDPOINTS_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_Q0_PHI_ENDPOINTS_OBSTRUCTION_VERIFICATION.md).
+   The singular-basis divisor `q=phi` is likewise closed on `p*phi!=0` after
+   replacing the generic basis by a regular row swap.  All eight function-field
+   incidence ideals are unit; the only parameter-aware closure occurs at
+   `phi=0`, where pair `23` has rank exactly two:
+   [`P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md).
    Component twenty is closed by exact open-incidence projection to four
    marking points and one uniform minor/transverse certificate:
    [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
@@ -166,7 +171,7 @@ weighted `H22`, including every actual nonzero half-centre arc.  Parameter
 infinity, non-diagonal or arbitrary `GL_4` source changes, and the remaining
 special/projective weighted-`H22` fibres of components nineteen through
 twenty-one remain open, except for component nineteen's verified finite
-`q=0,p*phi!=0` divisor.
+`q=0,p*phi!=0` and `q=phi,p*phi!=0` divisors.
 
 A `VERIFIED` valuative analysis of diagonal source-torus arcs with
 `p+q -> 0` has exact replays for the corrected mode-zero wedge, the generic
@@ -243,6 +248,16 @@ no-import verification reconstruct both signs and close their full genuine
 opens with complementary fixed rank-four minors.  Thus the whole finite
 `q=0` divisor is verified on the component torus `p*phi!=0`.  The `p=0`
 zero-tensor boundary and `phi=0` chart boundary are not promoted.
+
+On `q=phi`, the generic intrinsic marking is singular, so it cannot be
+specialized.  A regular row-swap basis has determinant `-1`, pure support
+`T1111=4p`, and pair profile `(4,4,3,3,3,3)` on `p*phi!=0`.  Independent
+construction, structural proof, and no-import audit all close the complete
+finite/infinity weighted incidence.  Proof B makes the mechanism explicit:
+`D23` has identically zero all-alpha binary diagonal, while the only possible
+reverse-orientation finite marking has an invertible `8 x 8` extension minor.
+Parameter-aware elimination finds only a direct-`D01` closure at `phi=0`,
+where pair `23` has rank two and hence lies outside the all-pair-open frontier.
 
 For component twenty, exact characteristic-zero projection over `C(p,q)`
 leaves the four isolated markings
@@ -671,6 +686,10 @@ uv run --with sympy python audit_p5_h22_component19_q0_special_divisor_obstructi
 uv run --with sympy python derive_p5_h22_component19_q0_phi_endpoints_obstruction_candidate.py
 uv run --with sympy python derive_p5_h22_component19_q0_phi_endpoints_proof_b.py
 uv run --with sympy python audit_p5_h22_component19_q0_phi_endpoints_obstruction_candidate.py
+
+uv run --with sympy python derive_p5_h22_component19_q_eq_phi_special_divisor_obstruction_candidate.py
+uv run --with sympy python derive_p5_h22_component19_q_equals_phi_divisor_proof_b.py
+uv run --with sympy python audit_p5_h22_component19_q_equals_phi_obstruction_candidate.py
 
 uv run --with sympy python derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
 uv run --with sympy python audit_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
