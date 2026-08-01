@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "role": "construction",
+  "date_utc": "2026-08-01T17:11:13Z",
+  "git_commit": "17a4054ebe42316dd3c9f2bf8839c656520625ed",
+  "claim_label": "CANDIDATE",
+  "scope": "component 19 at p=0, q=-1/phi in homogeneous weight [1:0] on phi*(phi^2+1)!=0, including phi=+/-1",
+  "inputs": {
+    "P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md": "ce333e8605b78e17c2e6b7cfe91fd369e89afe0d3aed65c7df35f82fee319634"
+  },
+  "method": "direct denominator-free divisor reconstruction, exact mixed-coefficient syzygy, and bounded elimination audits",
+  "command": "uv run --with sympy python derive_p5_h22_component19_p0_qphi_minus_one_weight_infinity_obstruction_candidate.py",
+  "parameter_relation": "p=0, q=-1/phi",
+  "exact_ordinary_open": "phi*(phi^2+1)!=0",
+  "weight_chart": {
+    "homogeneous_weight": "[1:0]",
+    "D01_contraction_row": [0, 1, 0, 0, 0],
+    "D23_contraction_row": [0, 0, 0, 1, 0]
+  },
+  "regular_basis": {
+    "alpha": ["Abar", "B", "Bbar", "Abar"],
+    "beta": ["phi*Bbar-B", "A", "A", "B+phi*Bbar"],
+    "mode0_rescaling_determinant": "phi",
+    "pure_support_after_all_markings": {
+      "1111": "-4*(phi**2 + 1)"
+    },
+    "pair_profile": [3, 3, 4, 3, 3, 3],
+    "pair_witness_determinants": {
+      "01": "-4*phi",
+      "02": "-4*phi",
+      "03": "-16*phi*(phi**2 + 1)",
+      "12": "-4",
+      "13": "4*phi",
+      "23": "4*phi"
+    }
+  },
+  "structural_contradiction": {
+    "A01": "0",
+    "A23": "-2*(x1 + x2)",
+    "D01_0001": "-2*(phi*x1 - x2)",
+    "D01_1000": "-2*(phi*x1 + x2)",
+    "exact_identity": "A23=((1-phi)/(2*phi))*D01_0001+((1+phi)/(2*phi))*D01_1000",
+    "phi=1": "A23=D01_1000",
+    "phi=-1": "A23=-D01_0001"
+  },
+  "function_field_projected_ideals": {
+    "D01_binary": ["1"],
+    "D23_binary": ["h3", "h0", "h1*h2"],
+    "shared_A01": ["1"],
+    "shared_A23": ["1"]
+  },
+  "parameter_aware_saturation": {
+    "open_inverse_equation": "o*phi*(phi^2+1)-1",
+    "shared_A01": ["1"],
+    "shared_A23": ["1"]
+  },
+  "complete_genuine_shared_incidence": "empty",
+  "actual_target_compatibility": "empty because no shared binary extension exists",
+  "weighted_H22_fibre_empty_candidate": true,
+  "finite_field_computation_used": false,
+  "generic_specialization_used_as_proof": false,
+  "broad_brute_force_used": false,
+  "limitations": [
+    "Construction result remains CANDIDATE pending independent verification.",
+    "Only the homogeneous weight-at-infinity chart on q*phi=-1 is covered; the finite chart is not reused as proof.",
+    "The zero-tensor points phi^2=-1, other component boundaries, arbitrary-order reduction, and the global conjecture are excluded."
+  ]
+}
