@@ -1,17 +1,25 @@
-# Candidate weighted-`H22` analysis on the two component-14 infinity endpoints
+# Verified weighted-`H22` obstruction on the two component-14 infinity endpoints
 
 ## Status and frozen scope
 
-**CANDIDATE.**  This note directly reconstructs the homogeneous projective
+**VERIFIED after independent factor-cover and compatibility audits.**  This
+note directly reconstructs the homogeneous projective
 weighted directions on the two component-14 faces at `y=-r` in the verified
 diagonal-DVR `p+q=0` boundary classification.  It does not specialize the
 generic component-14 `H22` theorem.
 
 The on-wall face is obstructed by exact characteristic-zero certificates.
-The off-wall face retains an explicit finite--finite binary candidate passing
-every individual one-marked rank test performed here.  That surviving pair is
-not promoted to an `H22` lift: the remaining two-neighbour compatibility has
-not been proved.
+The initial off-wall analysis retained a finite--finite binary candidate
+passing its individual one-marked tests.  Independent replay verifies that
+shared extensions force every genuine pair to the displayed `D23` slope-zero
+type.  A separately verified transverse and stacked compatibility obstruction
+then excludes that type:
+`P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_COMPATIBILITY_OBSTRUCTION_CANDIDATE.md`.
+
+The audit refutes one stronger sentence in the discovery text: at off-wall
+`D23` slope `r=1/2`, the genuine subfamily `Y=0,T!=0` has marked rank two,
+not exactly three.  This correction does not change the complete survivor set
+or the final obstruction.
 
 No finite-field computation, parameter grid, broad minor scan, non-diagonal
 source change, arbitrary-order gluing, or global Krenn--Gu claim is used.
@@ -131,7 +139,7 @@ det N2[0127]=-32X^2Y.
 Thus infinity is also rank-four obstructed on `A B!=0`.  Since `D23`
 infinity has empty projection, every projective pair uses one of these
 obstructed `D01` directions.  The on-wall weighted-`H22` fibre is therefore
-empty, still labelled `CANDIDATE` pending a separate verifier.
+empty.
 
 ## Off-wall face: direct infinity obstruction
 
@@ -206,7 +214,7 @@ complete surviving set:
 
 ```text
 r=0:        every genuine kernel point has marked rank 3;
-r=1/2:      every genuine kernel point has marked rank 3;
+r=1/2:      generic marked rank 3; Y=0,T!=0 has marked rank 2;
 ordinary r: Y=0 survives exactly when T!=0 and B!=0;
 r=-1/4:     T!=0 is rank-4 obstructed, while T=0 is rank 3;
 r=-1/2,-1: no genuine neighbour because B|ker=0.
@@ -240,10 +248,24 @@ Both complete mixed kernels and both diagonals are nonzero under the displayed
 conditions.  Their relevant one-marked maps have rank exactly three.  The
 mode-swapped formulas give the complete partner on the `h1` axis.
 
-This is a complete machine-readable **binary candidate certificate**, not a
-ternary `H22` certificate.  A future proof must either construct the common
-two-neighbour lift or find an additional stacked/transverse compatibility
-obstruction.  No such step is claimed here.
+The first audit also applies the arbitrary-slope finite-`D23(r)` mixed matrix
+to the complete finite-`D01` kernel line.  On both marking axes every mixed
+entry vanishes except
+
+```text
+row 13 = -12Tr,
+```
+
+while the two `D23` diagonals on the same vector are `4` and
+`4T(2r+1)`.  Common genuineness forces `T!=0`, so shared compatibility forces
+`r=0`.  The independent integration verifier rebuilds this reduction without
+importing either discovery program.
+
+Consequently the complete off-wall survivor set reduces to the displayed
+slope-zero shared pair.  The verified follow-on compatibility theorem
+intersects its complete kernels and supplies both a transverse rank-four minor
+and a stacked rank-five minor.  Hence no common ternary weighted-`H22` lift
+survives.
 
 ## Retained failures and boundary
 
@@ -252,14 +274,28 @@ obstruction.  No such step is claimed here.
 - A preliminary check of only rows `0147`, `0457`, and `0127` on the off-wall
   finite `D01` map returned zero.  Rebuilding the entire map showed rank three;
   those zero determinants are retained as a genuine survivor, not discarded.
+- The discovery claim that every genuine `r=1/2` finite-`D23` kernel point has
+  marked rank exactly three is refuted by the exact `Y=0,T!=0` rank-two
+  subfamily.  Rank two is still non-obstructing, so the survivor cover is
+  unchanged.
 - No computation timed out.  No finite-field result contributes evidence.
-- The off-wall face remains unresolved after the one-marked tests.
+- Non-diagonal source changes, arbitrary-order gluing, and the global
+  Krenn--Gu conjecture remain unresolved.
 
 ## Exact replay
 
 ```text
 uv run --with sympy python \
   derive_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_candidate.py
+
+uv run --with sympy python \
+  audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_candidate_verifier.py
+
+uv run --with sympy python \
+  audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_integration_verifier.py
+
+uv run --with sympy python \
+  audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_compatibility_obstruction_verifier.py
 ```
 
 The command emits the full proof-b run report with UTC date, commit, exact

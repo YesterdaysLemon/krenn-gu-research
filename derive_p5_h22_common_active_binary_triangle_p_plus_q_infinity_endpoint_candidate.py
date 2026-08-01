@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Direct CANDIDATE weighted-H22 analysis of the two infinity endpoints."""
+"""Verify weighted-H22 emptiness on the two component-14 infinity endpoints."""
 
 from __future__ import annotations
 
@@ -30,6 +30,36 @@ H31_PRIMARY = (
 H31_AUDIT = (
     ROOT
     / "audit_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py"
+)
+ENDPOINT_AUDIT_REPORT = (
+    ROOT
+    / "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_"
+    "INDEPENDENT_VERIFICATION.md"
+)
+ENDPOINT_AUDIT = (
+    ROOT
+    / "audit_p5_h22_common_active_binary_triangle_p_plus_q_"
+    "infinity_endpoint_candidate_verifier.py"
+)
+COMPATIBILITY_REPORT = (
+    ROOT
+    / "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_"
+    "COMPATIBILITY_OBSTRUCTION_VERIFICATION.md"
+)
+COMPATIBILITY_AUDIT = (
+    ROOT
+    / "audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_"
+    "endpoint_compatibility_obstruction_verifier.py"
+)
+INTEGRATION_REPORT = (
+    ROOT
+    / "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_"
+    "INTEGRATION_VERIFICATION.md"
+)
+INTEGRATION_AUDIT = (
+    ROOT
+    / "audit_p5_h22_common_active_binary_triangle_p_plus_q_"
+    "infinity_endpoint_integration_verifier.py"
 )
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))
@@ -535,12 +565,11 @@ def offwall_d23_factor_cover(axis):
     half_kernel = sp.Matrix.hstack(*half_model["mixed"].nullspace())
     half_vector = half_kernel * sp.Matrix((cap_x, cap_y))
     assert half_model["mixed"].rank() == 6
-    assert (
-        marked_matrix(half_model, mode)
-        .subs(substitute_vector(half_model, half_vector))
-        .rank()
-        == 3
+    half_marked = marked_matrix(half_model, mode).subs(
+        substitute_vector(half_model, half_vector)
     )
+    assert half_marked.rank() == 3
+    assert half_marked.subs(cap_y, 0).rank() == 2
     minus_half = no_genuine(
         build_model(0, "D23_finite", sp.Rational(-1, 2), marking),
         "B",
@@ -591,10 +620,24 @@ def offwall_d23_factor_cover(axis):
     assert_equal(quarter_b, cap_x, "quarter B")
     assert_equal(quarter_minor, -9 * cap_x * cap_y**2 / cap_t, "quarter minor")
     quarter_zero = build_model(0, "D23_finite", sp.Rational(-1, 4), (0, 0, 0, 0))
-    quarter_zero_frame = sp.Matrix.hstack(*quarter_zero["mixed"].nullspace())
+    quarter_zero_frame = sp.Matrix(
+        (
+            (0, -1),
+            (0, -1),
+            (0, 0),
+            (-2, 0),
+            (1, 0),
+            (1, 0),
+            (0, 1),
+            (0, 0),
+        )
+    )
+    assert_zero(quarter_zero["mixed"] * quarter_zero_frame, "quarter T0 frame")
     qz_vector = quarter_zero_frame * sp.Matrix((cap_x, cap_y))
     qz_sub = substitute_vector(quarter_zero, qz_vector)
     assert quarter_zero["mixed"].rank() == 6
+    assert_equal(quarter_zero["A"].subs(qz_sub), 4 * cap_y, "quarter T0 A")
+    assert_equal(quarter_zero["B"].subs(qz_sub), cap_x, "quarter T0 B")
     assert marked_matrix(quarter_zero, 0).subs(qz_sub).rank() == 3
     return {
         "axis": axis,
@@ -608,17 +651,32 @@ def offwall_d23_factor_cover(axis):
         "B": str(diagonal_b),
         "minor_rows": [0, 1, 6, 7],
         "minor": str(determinant),
-        "rank_three_divisors": ["Y=0", "r=0", "r=1/2", "r=-1/4,T=0"],
+        "rank_at_most_three_divisors": [
+            "Y=0",
+            "r=0",
+            "r=1/2",
+            "r=-1/4,T=0",
+        ],
         "r_zero_frame": [
             [str(value) for value in zero_frame.row(row)] for row in range(8)
         ],
-        "r_half_rank": 3,
+        "r_half_generic_rank": 3,
+        "r_half_Y_zero_rank": 2,
+        "r_half_Y_zero_genuine_when": "T!=0",
         "r_minus_quarter_T_nonzero": {
             "A": str(quarter_a),
             "B": str(quarter_b),
             "minor": str(quarter_minor),
         },
-        "r_minus_quarter_T_zero_rank": 3,
+        "r_minus_quarter_T_zero": {
+            "kernel_frame": [
+                [str(value) for value in quarter_zero_frame.row(row)]
+                for row in range(8)
+            ],
+            "A": str(sp.factor(quarter_zero["A"].subs(qz_sub))),
+            "B": str(sp.factor(quarter_zero["B"].subs(qz_sub))),
+            "one_marked_rank": 3,
+        },
         "nongenuine_specials": [minus_half, minus_one],
     }
 
@@ -723,7 +781,42 @@ def surviving_pair(axis):
             "genuine_open": "U*(T*U+V)!=0",
             "one_marked_rank": 3,
         },
-        "pair_status": "complete binary candidate; common ternary compatibility UNKNOWN",
+        "pair_status": (
+            "complete binary survivor eliminated by the independently verified "
+            "shared-extension compatibility obstruction"
+        ),
+    }
+
+
+def shared_extension_slope_certificate(axis):
+    cap_t, slope, cap_c, r = sp.symbols("T s C r")
+    marking = (cap_t, 0, 0, 0) if axis == "h0" else (0, cap_t, 0, 0)
+    k = sp.Matrix((-1, -1, 0, -2 * cap_t, 2 * cap_t, cap_t, 1, 0))
+    if axis == "h1":
+        k = sp.Matrix((-1, -1, 0, -2 * cap_t, cap_t, 2 * cap_t, 1, 0))
+    d01 = build_model(0, "D01_finite", slope, marking)
+    d23 = build_model(0, "D23_finite", r, marking)
+    assert_zero(d01["mixed"] * k, "shared D01 kernel")
+    residual = tuple(sp.factor(value) for value in d23["mixed"] * k)
+    nonzero_rows = [row for row, value in enumerate(residual) if value != 0]
+    assert nonzero_rows == [13]
+    assert_equal(residual[13], -12 * cap_t * r, "shared D23 slope residual")
+    shared = cap_c * k
+    substitution = substitute_vector(d23, shared)
+    assert_equal(d23["A"].subs(substitution), 4 * cap_c, "shared D23 A")
+    assert_equal(
+        d23["B"].subs(substitution),
+        4 * cap_c * cap_t * (2 * r + 1),
+        "shared D23 B",
+    )
+    return {
+        "axis": axis,
+        "D23_nonzero_mixed_rows": nonzero_rows,
+        "D23_mixed_residual": str(residual[13]),
+        "D23_A": str(sp.factor(d23["A"].subs(substitution))),
+        "D23_B": str(sp.factor(d23["B"].subs(substitution))),
+        "common_genuineness_forces_T_nonzero": True,
+        "shared_extension_forces_D23_slope_zero": True,
     }
 
 
@@ -734,11 +827,22 @@ def main():
         "role": "proof_b",
         "date_utc": datetime.now(UTC).isoformat(),
         "git_commit": git_commit(),
-        "claim_label": "CANDIDATE",
+        "claim_label": "VERIFIED",
         "scope": "weighted-H22 on the two component-14 y=-r infinity endpoint faces of the verified component-20 p+q diagonal-DVR wall",
         "inputs": {
             path.name: sha256(path)
-            for path in (P4_BOUNDARY, H31_ENDPOINT, H31_PRIMARY, H31_AUDIT)
+            for path in (
+                P4_BOUNDARY,
+                H31_ENDPOINT,
+                H31_PRIMARY,
+                H31_AUDIT,
+                ENDPOINT_AUDIT_REPORT,
+                ENDPOINT_AUDIT,
+                COMPATIBILITY_REPORT,
+                COMPATIBILITY_AUDIT,
+                INTEGRATION_REPORT,
+                INTEGRATION_AUDIT,
+            )
         },
         "method": "direct homogeneous D01/D23 marked permanent reconstruction; exact saturated projections; complete symbolic kernels and bounded fixed minors",
         "command": "uv run --with sympy python derive_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_candidate.py",
@@ -746,7 +850,7 @@ def main():
             NOTE.name: sha256(NOTE),
             Path(__file__).name: sha256(Path(__file__)),
         },
-        "limitations": "CANDIDATE only; on-wall obstruction pending independent verification; off-wall finite-finite binary survivor has no proved ternary compatibility; no non-diagonal, gluing, or global claim",
+        "limitations": "VERIFIED only for the two component-14 endpoint faces on the diagonal-DVR p+q wall; the original r=1/2 exact-rank sentence is refuted and corrected without changing the survivor set; no non-diagonal, arbitrary-order, or global claim",
         "geometry": geometry,
         "projections": projections,
         "D01_infinity": [
@@ -762,8 +866,15 @@ def main():
             offwall_d23_factor_cover("h1"),
         ],
         "surviving_binary_pair": [surviving_pair("h0"), surviving_pair("h1")],
-        "wall_endpoint_weighted_H22_empty": "CANDIDATE",
-        "offwall_endpoint_weighted_H22_status": "UNKNOWN; explicit complete binary candidate survives one-marked tests",
+        "shared_extension_slope": [
+            shared_extension_slope_certificate("h0"),
+            shared_extension_slope_certificate("h1"),
+        ],
+        "wall_endpoint_weighted_H22_empty": True,
+        "offwall_endpoint_weighted_H22_empty": True,
+        "original_r_half_exact_rank_statement_refuted": True,
+        "survivor_set_changed_by_rank_correction": False,
+        "fresh_independent_verifiers_complete": True,
         "failed_or_timeout_branches": [
             {
                 "attempt": "three inherited generic-component minor row sets on off-wall finite D01",
