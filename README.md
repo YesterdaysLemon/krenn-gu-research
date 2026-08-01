@@ -26,13 +26,15 @@ now generically closed for `H31`; weighted `H22` on all three new components
 and the remaining special/projective boundaries remain open.  On component
 twenty, the entire finite normalized `(p+q)(p-q+1)!=0` sheet is now closed,
 including every special-divisor intersection inside that open.  The intrinsic
-`p-q+1=0` chart wall is also closed over its generic point, while `p+q=0`
-and the remaining projective/source-torus boundary are separate tasks.  A
-derived valuative classification reduces diagonal source-torus arcs over
-`p+q=0` to lower-pair strata and two explicit higher-rank charts, but its
-exhaustion claim is not independently verified.  Exact marked `H31`
-obstructions now close both displayed charts and their exceptional fibres;
-the whole wall remains derived because of that upstream exhaustion gap.  The
+`p-q+1=0` chart wall is also closed over its generic point.  On `p+q=0`, an
+independently verified DVR/Puiseux classification exhausts every diagonal
+source-torus arc into lower-pair strata or two explicit higher-rank charts.
+Exact marked `H31` certificates close both charts, the embedded-`P_3`
+projective strata, the exceptional component-fifteen lower-pair fibres, and
+both component-fourteen infinity endpoints.  Thus this whole diagonal-DVR
+wall is verified for `H31`.  Non-diagonal source changes and weighted `H22`
+remain open; for `H22`, only the half-centre Hall obstruction and both generic
+finite-`D01` chart branches are independently verified so far.  The
 five-root no-torus locus has also been pushed from a hypersurface envelope to
 codimension at least two, and the first blocker surplus has an arbitrary-order
 port-permanent formula.  On the resulting common-port `P_6` wall, an exact
@@ -743,24 +745,39 @@ strictly advance the finite frontier:
   values `p=0,-1,-1/2`, parameter infinity, and mixed source-torus/projective
   limits remain open:
   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md).
-- a `DERIVED` valuative classification of the remaining `p+q=0` diagonal
+- a `VERIFIED` valuative classification of the `p+q=0` diagonal
   source-torus wall proves the exact min-plus weight conditions and leaves two
   explicit higher-rank charts, `B_full` with profile `(4,4,4,3,3,3)` and
   `B_drop` with profile `(4,4,3,3,3,3)`.  The formulas, exceptional centres,
-  infinity strata, and failed shortcuts have exact replays, but exhaustion
-  from arbitrary arcs and placement in older component intersections are not
-  independently verified.  This is a `P_4` boundary reduction, not an `H31`
-  or `H22` closure:
+  infinity strata, and failed shortcuts have exact replays.  An independent
+  Laurent-first-coefficient audit verifies exhaustion for all DVR/Puiseux
+  arcs under the diagonal source torus.  Placement in older component
+  intersections and non-diagonal source changes are not claimed.  This is a
+  `P_4` boundary theorem, not by itself an `H31` or `H22` closure:
   [`P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md`](P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md).
 - on the two displayed `p+q=0` charts, exact characteristic-zero projection
   leaves a doubled marking on `B_full` and two marking lines on `B_drop`.
   Uniform mode-three fixed-minor identities, direct rank-five exceptional
   kernels at `a=0,-1`, and four unit projections for the `a=-1/2` replacement
-  family prove marked `H31` emptiness on every displayed chart.  Independent
-  replay verifies these chartwise claims.  Boundary-wide status remains
-  `DERIVED` because the prerequisite actual-arc exhaustion is not proved;
-  weighted `H22` and arbitrary projective limits remain open:
+  family prove marked `H31` emptiness on every displayed chart.  Direct exact
+  certificates additionally close the exceptional `a=0,-1`, `y<0`
+  component-fifteen fibres and both special component-fourteen infinity
+  endpoint faces.  Together with the embedded-`P_3` projective closure, fresh
+  independent audits verify the whole diagonal-DVR wall.  Weighted `H22` and
+  non-diagonal or arbitrary `GL_4` source changes remain open:
   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md).
+- the two special lower-pair `H31` certificates used by that aggregate wall
+  theorem are replayable separately:
+  [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md)
+  and
+  [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md).
+- weighted `H22` on the same wall remains `UNKNOWN` overall.  The entire
+  half-centre replacement family is excluded in the `D01` direction by a
+  homogeneous Hall obstruction, all eight generic marking projections are
+  exact, and both `B_full` and `B_drop` have complete fixed-minor obstructions
+  for finite `D01`.  The surviving `D01`-infinity/finite-`D23` pairing and
+  direct `a=0,-1` fibres remain open:
+  [`P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_PARTIAL.md`](P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_PARTIAL.md).
 - the final mixed-chain vertical fibre opens into a new six-dimensional
   coincident-support rank-one star, component twenty-one.  Its generic profile
   is `(3,4,4,3,3,4)`.  A rank-thirteen incidence germ has one excess tangent

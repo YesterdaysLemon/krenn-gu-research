@@ -57,6 +57,14 @@ Six statements organize the current frontier.
    The intrinsic `p-q+1=0` basis boundary has no binary neighbour over its
    generic point after replacing the collapsed generic basis:
    [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md).
+   The whole `p+q=0` diagonal-source-torus DVR wall is now closed for marked
+   `H31`: a verified arc exhaustion reduces it to the displayed charts,
+   embedded-`P_3` projective strata, and two directly verified special
+   lower-pair families:
+   [`P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md`](P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md),
+   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md),
+   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md), and
+   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md).
    Component twenty-one's exact all-marking row-module certificate closes its
    generic `H31` fibre only:
    [`P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
@@ -110,30 +118,42 @@ placements.  Components nineteen through twenty-one now have exact generic
 `H31` exclusions.  Component twenty is now closed on its entire finite
 normalized `(p+q)(p-q+1)!=0` sheet, including all special-divisor
 intersections in that open.  The intrinsic `p-q+1=0` chart wall is closed
-over its generic point.  The `p+q=0` wall, the exceptional points on the
-intrinsic wall, the remaining projective/source-torus boundaries, and
-weighted `H22` on all three components remain open.
+over its generic point.  The `p+q=0` wall is now verified for diagonal-torus
+DVR/Puiseux arcs and marked `H31`.  The exceptional points on the intrinsic
+wall, non-diagonal or arbitrary `GL_4` source changes, and weighted `H22` on
+all three components remain open.
 
-A separate `DERIVED` valuative analysis of diagonal source-torus arcs with
+A `VERIFIED` valuative analysis of diagonal source-torus arcs with
 `p+q -> 0` has exact replays for the corrected mode-zero wedge, the generic
 and exceptional min-plus equivalences, and the two surviving charts.  All
 negative equal-weight and infinity strata are assigned to the lower-pair
 frontier; the higher-rank charts are `B_full` with profile
-`(4,4,4,3,3,3)` and `B_drop` with profile `(4,4,3,3,3,3)`.  Independent
-review did not establish the exhaustion of arbitrary arcs or their exact
-placement in older component intersections, so this remains a boundary
-reduction rather than a promoted component or `H31` theorem:
+`(4,4,4,3,3,3)` and `B_drop` with profile `(4,4,3,3,3,3)`.  A fresh audit
+independently extracts the Laurent first coefficients in every valuation
+regime and verifies the exhaustion for DVR/Puiseux arcs under the diagonal
+source torus.  Exact placement in older component intersections and
+non-diagonal source changes are not claimed:
 [`P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md`](P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md).
 
-Conditional on those displayed charts, their complete marked `H31` fibres
-are now closed by exact characteristic-zero certificates.  `B_full` has one
+Their complete marked `H31` fibres are closed by exact characteristic-zero
+certificates.  `B_full` has one
 doubled geometric marking, `B_drop` has two marking lines, and the
 `a=-1/2` replacement family has no binary neighbour.  Uniform fixed-minor
 identities, direct `a=0,-1` rank-five kernels, and pure transverse entries
-close every actual normalized stratum on the charts.  This chartwise theorem
-is independently verified, but it does not repair the upstream actual-arc
-exhaustion gap, so the unconditional whole-wall claim remains `DERIVED`:
+close every actual normalized stratum on the charts.  The remaining
+component-fifteen support-one fibres at `a=0,-1`, `y<0` and both
+component-fourteen faces at the infinity endpoint `y=-r` have separate
+direct obstruction certificates and fresh audits.  Together with the
+complete embedded-`P_3` projective closure, this verifies the whole
+diagonal-DVR wall for marked `H31`:
 [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md).
+
+Weighted `H22` on this wall is still `UNKNOWN` overall.  Exact independent
+replays verify the homogeneous half-centre `D01` Hall obstruction, all eight
+generic marking projections, and the complete finite-`D01` fixed-minor
+certificates on both charts.  Direct `a=0,-1` fibres and the surviving
+`D01`-infinity/finite-`D23` pairing remain open:
+[`P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_PARTIAL.md`](P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_PARTIAL.md).
 
 For component nineteen, exact characteristic-zero projection reduces
 deletions 0 and 1 to the unit ideal and deletions 2 and 3 to
@@ -391,9 +411,9 @@ extended rows use at most two columns.  Their all-kernel permanent is
 identically zero by Hall deficiency, simultaneously in all affine markings,
 extension entries, source scalings, and homogeneous weights.  The
 `triangle-(1,1,1)` cell is now closed by the later placement theorems.  The
-remaining work is the other three all-pair graph cells, the actual-arc
-exhaustion and remaining non-diagonal/projective source-torus boundaries for
-component twenty, weighted `H22` on components nineteen through twenty-one,
+remaining work is the other three all-pair graph cells, the remaining
+non-diagonal or arbitrary `GL_4` source boundaries for component twenty,
+weighted `H22` on components nineteen through twenty-one,
 the corresponding remaining special boundaries, and the universal `P_5`
 step.
 
@@ -494,6 +514,15 @@ uv run --with sympy python audit_p4_common_active_binary_triangle_p_plus_q_bound
 
 uv run --with sympy python verify_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
 uv run --with sympy python audit_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
+
+uv run --with sympy python verify_p5_h31_common_active_binary_triangle_p_plus_q_exceptional_lower_pair_obstruction.py
+uv run --with sympy python audit_p5_h31_common_active_binary_triangle_p_plus_q_exceptional_lower_pair_obstruction.py
+
+uv run --with sympy python verify_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py
+uv run --with sympy python audit_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py
+
+uv run --with sympy python verify_p5_h22_common_active_binary_triangle_p_plus_q_boundary_partial.py
+uv run --with sympy python audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_partial.py
 ```
 
 If plain `python` lacks a dependency, use the repository's isolated verifier
