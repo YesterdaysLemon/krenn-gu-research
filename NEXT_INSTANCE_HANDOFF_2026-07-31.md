@@ -13,11 +13,11 @@ exact modular local standard basis, but only as a height certificate in an
 integral local model; an explicit Krull-height argument supplies the
 characteristic-zero conclusion.
 
-The active branch at wind-down is `codex/component20-h31`.  Its
-baseline commit is:
+This continuation starts on `codex/component20-special-h31` from the reviewed
+component-twenty generic checkpoint:
 
 ```text
-7590622  Close component 19 H31 and displayed P6 model
+0dba8b6  Close component 20 generic H31 fibre
 ```
 
 Recheck the branch and worktree before relying on those identifiers.
@@ -47,6 +47,9 @@ Six statements organize the current frontier.
    Component twenty is closed by exact open-incidence projection to four
    marking points and one uniform minor/transverse certificate:
    [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
+   Its nine principal affine special divisors are also closed over their
+   generic points by exact projection and uniform marked-minor certificates:
+   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_SPECIAL_DIVISOR_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_SPECIAL_DIVISOR_OBSTRUCTION.md).
    Component twenty-one's exact all-marking row-module certificate closes its
    generic `H31` fibre only:
    [`P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
@@ -97,8 +100,10 @@ is component eighteen; the fully kernel--kernel stratum lies in components
 sixteen or eighteen; the exactly-two-kernel stratum lies in component eleven;
 and all eight residual exactly-one-kernel entries now have exact component
 placements.  Components nineteen through twenty-one now have exact generic
-`H31` exclusions, but their weighted `H22` fibres and every special/projective
-marked boundary remain open.
+`H31` exclusions.  Component twenty also has exact divisor-generic exclusions
+on nine principal affine special loci.  Their intersections, the remaining
+normalization/projective/source-torus boundaries, and weighted `H22` on all
+three components remain open.
 
 For component nineteen, exact characteristic-zero projection reduces
 deletions 0 and 1 to the unit ideal and deletions 2 and 3 to
@@ -121,10 +126,15 @@ d=2: (h1,h2)=(-p-1,0), (0,-p),
 with `h0=h3=0`, while deletions zero and three give the unit ideal.  On all
 four points the selected mode-three `0147` minor divided by the genuine
 binary diagonal is `4pq(p+q)(p-q+1)`, and the deleted pure transverse entry
-is `+pq` or `-pq`.  This is only a generic-function-field theorem: the audit
-finds deletion-three fibres reappearing on `q=p+2`, `q=p`, and
-`2pq-p+q=0`, plus degenerations at `p=0,-1` or `q=0,1`.  Boundary closure
-must therefore remain a separate task.
+is `+pq` or `-pq`.
+
+The follow-on exact projection proves that deletion-three binary-neighbour
+incidence is supported precisely on `q=p+2`, `q=p`, `2pq-p+q=0`, `p=0,-1`,
+and `q=0,1`.  Deletions one and two also acquire marking axes at `q=1/2` and
+`p=-1/2`.  Exact characteristic-zero minor/transverse certificates close the
+generic marked `H31` fibre on all nine divisors.  This does not close their
+base intersections or the remaining normalization/projective/source-torus
+boundaries.
 
 ## What a global proof would still need
 
@@ -334,10 +344,10 @@ extended rows use at most two columns.  Their all-kernel permanent is
 identically zero by Hall deficiency, simultaneously in all affine markings,
 extension entries, source scalings, and homogeneous weights.  The
 `triangle-(1,1,1)` cell is now closed by the later placement theorems.  The
-remaining work is the other three all-pair graph cells, generic and special
-marked fibres on component twenty, weighted `H22` on components nineteen
-through twenty-one, all relevant projective/special component boundaries,
-and the universal `P_5` step.
+remaining work is the other three all-pair graph cells, component-twenty
+divisor intersections and projective/source-torus boundaries, weighted `H22`
+on components nineteen through twenty-one, the corresponding remaining
+special boundaries, and the universal `P_5` step.
 
 ## Focused replay
 
@@ -418,6 +428,12 @@ uv run --with sympy python audit_p5_h31_coincident_support_rank_one_star_compone
 
 uv run --with sympy python verify_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py
 python audit_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py
+
+uv run --with sympy python verify_p5_h31_common_active_binary_triangle_component_generic_obstruction.py
+uv run --with sympy python audit_p5_h31_common_active_binary_triangle_component_generic_obstruction.py
+
+uv run --with sympy python verify_p5_h31_common_active_binary_triangle_component_special_divisor_obstruction.py
+uv run --with sympy python audit_p5_h31_common_active_binary_triangle_component_special_divisor_obstruction.py
 ```
 
 If plain `python` lacks a dependency, use the repository's isolated verifier

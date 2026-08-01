@@ -21,9 +21,12 @@ common-active binary-triangle fivefold, and the coincident-support rank-one
 star sixfold.  Consequently the whole `triangle-(1,1,1)` cell is closed, and
 the all-pair-ranks-at-least-three component problem now has three unresolved
 star/triangle cells.  Generic marked `H31/H22` fibres are proved empty on the
-first eighteen components, and components nineteen and twenty-one are now
-generically closed for `H31`; component twenty, weighted `H22` on all three
-new components, and the relevant boundaries remain open.  The
+first eighteen components, and components nineteen through twenty-one are
+now generically closed for `H31`; weighted `H22` on all three new components
+and the remaining special/projective boundaries remain open.  On component
+twenty, nine principal affine special divisors are now also closed over their
+generic points, while their intersections and the projective/source-torus
+boundary remain separate tasks.  The
 five-root no-torus locus has also been pushed from a hypersurface envelope to
 codimension at least two, and the first blocker surplus has an arbitrary-order
 port-permanent formula.  On the resulting common-port `P_6` wall, an exact
@@ -706,6 +709,16 @@ strictly advance the finite frontier:
   `+pq` or `-pq` completes the global-row contradiction.  Weighted `H22`
   and all special/projective component boundaries remain open:
   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
+- the generic marked `H31` fibre is also empty on component twenty's nine
+  principal affine special divisors.  Exact global projection gives the
+  deletion-three base factor
+  `p(p+1)q(q-1)(q-p)(q-p-2)(2pq-p+q)` and exposes the additional marking-axis
+  discriminants `q=1/2` and `p=-1/2`.  Bidirectional characteristic-zero
+  projection, rank-six kernel certificates, and uniform mode-three minors
+  close all 39 divisor-generic marking strata.  Base-divisor intersections,
+  the `p+q=0` and `p-q+1=0` normalization boundaries, parameter infinity,
+  source-torus/projective limits, and weighted `H22` remain open:
+  [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_SPECIAL_DIVISOR_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_SPECIAL_DIVISOR_OBSTRUCTION.md).
 - the final mixed-chain vertical fibre opens into a new six-dimensional
   coincident-support rank-one star, component twenty-one.  Its generic profile
   is `(3,4,4,3,3,4)`.  A rank-thirteen incidence germ has one excess tangent
