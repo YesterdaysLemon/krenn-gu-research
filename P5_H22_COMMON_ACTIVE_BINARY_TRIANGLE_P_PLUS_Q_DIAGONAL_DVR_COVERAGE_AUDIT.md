@@ -29,7 +29,7 @@ command: |
   python audit_p5_h22_p_plus_q_diagonal_dvr_coverage.py
 outputs:
   p5_h22_p_plus_q_diagonal_dvr_coverage.json: 874272d3d86ec635f1a0bd854b7078b8f91a2323aa1f7ebfb219406680549a6e
-  audit_p5_h22_p_plus_q_diagonal_dvr_coverage.py: f5555bb8ea1dac3d556802dc678e88aed75fcbb170e09233a24210975aed9d5e
+  audit_p5_h22_p_plus_q_diagonal_dvr_coverage.py: 803577222c9ebae932581a6166514e469045e72ef7e4e0ecbd9d6944704ab1bb
   P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_DIAGONAL_DVR_COVERAGE_AUDIT.md: hash reported by the coverage audit consumer
 limitations: dependency audit rather than a replay of every cited theorem; restricted to diagonal source tori; normal-mask-6 matching/projective transport, arbitrary-order reduction, and the global Krenn-Gu conjecture remain UNKNOWN
 ```

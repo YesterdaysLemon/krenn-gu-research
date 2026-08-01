@@ -72,7 +72,7 @@ REQUIRED_MARKERS = {
     ],
     "embedded_p3_r_zero_audit": [
         "claim_label: REFUTED",
-        "t0!=0", 
+        "t0!=0",
     ],
     "embedded_p3_endpoint_verification": [
         "claim_label: VERIFIED",
