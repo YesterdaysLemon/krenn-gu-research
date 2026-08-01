@@ -267,25 +267,42 @@ def normal_aligned_basis(r, direction, chart):
     return alpha, beta
 
 
-def projected_row(row, extension, weight_chart, slope):
+def projected_row(row, extension, direction, weight_chart, slope):
     if weight_chart == "finite":
-        return (slope * row[0] + row[1], row[2], row[3], extension)
+        if direction == "D01":
+            return (slope * row[0] + row[1], row[2], row[3], extension)
+        if direction == "D23":
+            return (row[0], row[1], slope * row[2] + row[3], extension)
     if weight_chart == "infinity":
-        return (row[0], row[2], row[3], extension)
-    raise ValueError(weight_chart)
+        if direction == "D01":
+            return (row[0], row[2], row[3], extension)
+        if direction == "D23":
+            return (row[0], row[1], row[2], extension)
+    raise ValueError((direction, weight_chart))
 
 
-def d01_model(r, direction, direction_chart, weight_chart, slope, shifts, extensions):
-    alpha, unmarked_beta = normal_aligned_basis(r, direction, direction_chart)
+def contraction_model(
+    r, normal_direction, direction_chart, contraction_direction,
+    weight_chart, slope, shifts, extensions,
+):
+    alpha, unmarked_beta = normal_aligned_basis(
+        r, normal_direction, direction_chart
+    )
     beta = tuple(
         add(unmarked_beta[i], scale(shifts[i], alpha[i])) for i in range(4)
     )
     projected_alpha = tuple(
-        projected_row(alpha[i], extensions[i], weight_chart, slope)
+        projected_row(
+            alpha[i], extensions[i], contraction_direction,
+            weight_chart, slope,
+        )
         for i in range(4)
     )
     projected_beta = tuple(
-        projected_row(beta[i], extensions[4 + i], weight_chart, slope)
+        projected_row(
+            beta[i], extensions[4 + i], contraction_direction,
+            weight_chart, slope,
+        )
         for i in range(4)
     )
     coefficients = {
@@ -296,6 +313,13 @@ def d01_model(r, direction, direction_chart, weight_chart, slope, shifts, extens
         for word in WORDS
     }
     return coefficients
+
+
+def d01_model(r, direction, direction_chart, weight_chart, slope, shifts, extensions):
+    return contraction_model(
+        r, direction, direction_chart, "D01", weight_chart,
+        slope, shifts, extensions,
+    )
 
 
 def structural_d01_obstruction():
@@ -409,42 +433,59 @@ def unit_elimination(label, equations, eliminated, retained, coefficient_ring):
     }
 
 
-def elimination_audits():
+def shared_elimination_audits():
     r, direction, slope = sp.symbols("r d lam")
     shifts = sp.symbols("h0:4")
     extensions = sp.symbols("x0:8")
-    inverse, open_inverse = sp.symbols("u o")
+    inverses = sp.symbols("u0:2")
+    open_inverse = sp.Symbol("o")
     output = []
     for direction_chart in ("a_nonzero", "b_nonzero"):
         for weight_chart in ("finite", "infinity"):
-            coefficients = d01_model(
-                r, direction, direction_chart, weight_chart, slope,
-                shifts, extensions,
+            d01 = contraction_model(
+                r, direction, direction_chart, "D01", weight_chart,
+                slope, shifts, extensions,
             )
-            equations = (
-                *(coefficients[word] for word in MIXED),
-                coefficients[WORDS[0]] - 1,
-                inverse * coefficients[WORDS[-1]] - 1,
+            d23 = contraction_model(
+                r, direction, direction_chart, "D23", weight_chart,
+                slope, shifts, extensions,
+            )
+            diagonals = {
+                "A01": d01[WORDS[0]], "B01": d01[WORDS[-1]],
+                "A23": d23[WORDS[0]], "B23": d23[WORDS[-1]],
+            }
+            diagonal_opens = (
+                ("A01", "B01", "A23"),
+                ("A01", "B01", "B23"),
+                ("A23", "B23", "A01"),
+                ("A23", "B23", "B01"),
             )
             retained = shifts + (
                 (slope,) if weight_chart == "finite" else ()
-            ) + (direction,)
-            output.append(unit_elimination(
-                f"{direction_chart}_{weight_chart}_over_Q(r)", equations,
-                extensions + (inverse,), retained, "(0,r)",
-            ))
-            output.append(unit_elimination(
-                f"{direction_chart}_{weight_chart}_over_Q[r]_on_r_nonzero",
-                (*equations, open_inverse * r - 1),
-                extensions + (inverse, open_inverse), retained + (r,), "0",
-            ))
+            ) + (direction, r)
+            for diagonal_open in diagonal_opens:
+                equations = (
+                    *(d01[word] for word in MIXED),
+                    *(d23[word] for word in MIXED),
+                    diagonals[diagonal_open[0]] - 1,
+                    inverses[0] * diagonals[diagonal_open[1]] - 1,
+                    inverses[1] * diagonals[diagonal_open[2]] - 1,
+                    open_inverse * r - 1,
+                )
+                output.append(unit_elimination(
+                    f"{direction_chart}_{weight_chart}_"
+                    + "_".join(diagonal_open),
+                    equations,
+                    extensions + inverses[:2] + (open_inverse,),
+                    retained, "0",
+                ))
     return output
 
 
 def main():
     geometry = first_normal_geometry()
     structural, second_chart_endpoint = structural_d01_obstruction()
-    eliminations = elimination_audits()
+    eliminations = shared_elimination_audits()
     result = {
         "status": "pass",
         "role": "construction",
@@ -464,7 +505,7 @@ def main():
         "method": (
             "direct normal-jet permanent reconstruction, two regular P1 "
             "direction charts, exact pair ranks, coefficient syzygies, and "
-            "eight bounded characteristic-zero unit-ideal audits"
+            "sixteen bounded shared characteristic-zero unit-ideal audits"
         ),
         "command": f"uv run --with sympy python {SCRIPT.name}",
         "outputs": {
@@ -476,12 +517,17 @@ def main():
         "weighted_H22": {
             "structural_D01_obstruction_on_a_nonzero_chart": structural,
             "b_nonzero_chart_endpoint_t_zero_A01": second_chart_endpoint,
-            "bounded_elimination_audits": eliminations,
+            "bounded_shared_elimination_audits": eliminations,
             "audit_count": len(eliminations),
             "both_homogeneous_weight_charts_checked": ["finite [lam:1]", "infinity [1:0]"],
-            "D01_binary_incidence_empty": True,
+            "A01_orientation_D01_binary_incidence_empty": True,
             "shared_H22_incidence_empty": True,
-            "reason_shared_is_empty": "the necessary D01 binary incidence is already empty",
+            "shared_diagonal_open_cover": [
+                ["A01", "B01", "A23"],
+                ["A01", "B01", "B23"],
+                ["A23", "B23", "A01"],
+                ["A23", "B23", "B01"],
+            ],
             "first_normal_weighted_H22_fibre_empty_candidate": True,
         },
         "higher_order_boundary": {

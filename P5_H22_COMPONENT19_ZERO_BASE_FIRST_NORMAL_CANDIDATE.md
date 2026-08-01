@@ -24,9 +24,10 @@ limitations: construction result pending independent verification; actual higher
 **CANDIDATE:** the exact projectivized first-normal tensor fibre over the zero
 base is `P1_[a:b]`.  Every direction has an all-pair-open transverse linear
 arc for `r!=0`.  After aligning the first-normal pure tensor on two regular
-direction charts, the necessary `D01` binary incidence is empty on both
-homogeneous weight charts.  Hence the regular first-normal weighted-`H22`
-incidence is empty.
+direction charts, the `A01`-binary orientation is structurally impossible.
+A complete four-open shared-incidence cover is empty on both homogeneous
+weight charts.  Hence the regular first-normal weighted-`H22` incidence is
+empty.
 
 This does not promote the global conjecture or exclude every higher-order
 valuative `H22` arc.
@@ -169,30 +170,44 @@ the required nonzero beta diagonal.
 
 On the second direction chart, the endpoint `t=0` has `A01=0` identically
 in both weight charts.  Its `t!=0` part is the determinant-one overlap with
-the first chart.  Therefore `D01` binary incidence is empty on all of
+the first chart.  Therefore the `A01`-binary orientation is empty on all of
 
 ```text
 P1_[a:b] x P1_weight
 ```
 
-for `r!=0`.  Since `D01` is a necessary contraction of weighted `H22`, no
-shared `D01/D23` extension or target-colour compatibility can exist in this
-regular first-normal model.
+for `r!=0`.  This structural argument alone does not exclude the reverse
+orientation in which `D23` is binary and `D01` retains only its common beta
+diagonal.  That orientation is included explicitly in the complete shared
+audit below.
 
 ## Bounded elimination audit
 
-The replay independently eliminates the eight extension systems obtained
-from
+Every genuine shared weighted-`H22` point lies in at least one of the four
+diagonal opens
+
+```text
+(A01,B01,A23),
+(A01,B01,B23),
+(A23,B23,A01),
+(A23,B23,B01).
+```
+
+The replay independently eliminates the sixteen systems obtained from
 
 ```text
 2 normal-direction charts x 2 homogeneous-weight charts
-x {Q(r), Q[r] saturated by r}.
+x 4 diagonal opens.
 ```
 
-Every projected ideal is `<1>`.  Each system normalizes `A01=1`, saturates
-`B01!=0`, retains every marking and chart coordinate, and performs exact
-bidirectional characteristic-zero algebra.  No finite-field computation or
-broad search is used.
+In each case it sets all `D01` and `D23` mixed coefficients to zero,
+normalizes the first selected diagonal, saturates the other two selected
+diagonals, and saturates `r!=0`.  All markings, the normal-direction
+coordinate, `r`, and the finite weight coordinate are retained over
+characteristic zero.  Every projected ideal is `<1>`.  Thus both shared
+orientations, their overlap, both normal endpoints, every finite weight, and
+weight infinity are covered.  No finite-field computation or broad search
+is used.
 
 ## Higher-order boundary
 
