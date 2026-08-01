@@ -65,6 +65,15 @@ Six statements organize the current frontier.
    replacement chart has empty weighted-`H22` fibre:
    [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md),
    [`P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION_CANDIDATE.md`](P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION_CANDIDATE.md).
+   At the excluded finite points `p=0,-1`, the plane tuples have zero
+   restriction, but the transverse base ideal gives a full compactified
+   Segre-direction `P1`; exact no-import replays close every direction for
+   marked `H31` and shared weighted `H22`.  At `p=-1/2`, the straight
+   fixed-source limit is only a zero-tensor `k=infinity` edge in component
+   fifteen's closure, while every actual nonzero diagonal arc is already in
+   the half-centre atlas:
+   [`COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md`](COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md),
+   [`P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md`](P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md).
    The whole `p+q=0` diagonal-source-torus DVR wall is now closed for marked
    `H31`: a verified arc exhaustion reduces it to the displayed charts,
    embedded-`P_3` projective strata, and two directly verified special
@@ -132,11 +141,14 @@ placements.  Components nineteen through twenty-one now have exact generic
 `H31` and weighted-`H22` exclusions.  Component twenty is now closed on its
 entire finite normalized `(p+q)(p-q+1)!=0` sheet, including all special-divisor
 intersections in that open.  The intrinsic `p-q+1=0` chart wall is closed
-over its generic point.  The `p+q=0` wall is now verified for diagonal-torus
-DVR/Puiseux arcs for both marked `H31` and weighted `H22`.  The exceptional
-points on the intrinsic wall, non-diagonal or arbitrary `GL_4` source changes,
-and the remaining special/projective weighted-`H22` fibres of components
-nineteen through twenty-one remain open.
+over its generic point, and its two finite zero-restriction base points have
+closed compactified Segre-direction `P1` incidences.  The `p+q=0` wall is now
+verified for diagonal-torus DVR/Puiseux arcs for both marked `H31` and
+weighted `H22`, including every actual nonzero half-centre arc.  Complete
+source-torus atlases over the two zero base points, parameter infinity,
+non-diagonal or arbitrary `GL_4` source changes, and the remaining
+special/projective weighted-`H22` fibres of components nineteen through
+twenty-one remain open.
 
 A `VERIFIED` valuative analysis of diagonal source-torus arcs with
 `p+q -> 0` has exact replays for the corrected mode-zero wedge, the generic
@@ -242,8 +254,25 @@ Thus even the binary neighbour is absent over the generic point of this
 boundary.  Independently implemented weighted-`H22` replays also give the
 unit ideal for all four individual and all four complete shared finite/infinity
 orientation projections.  Thus the generic weighted-`H22` fibre on this wall
-is empty as well.  The special values `p=0,-1,-1/2`, parameter infinity, and
-mixed source-torus/projective limits are not included.
+is empty as well.
+
+The finite exceptions `p=0,-1` are not ordinary nonzero-`P4` fibres: their
+complete restricted tensors vanish and all six pair ranks equal three.  The
+base ideal `<p-q+1,q(q-1)>` is transverse at `(0,1)` and `(-1,0)`, so its
+compactified tensor-direction fibre is exactly `P1` at each point.  With the
+finite direction coordinate retained polynomially, independent replays make
+all `16/16` marked-`H31` and `16/16` complete shared weighted-`H22`
+projections unit.  Exactly two individual finite-`D01` neighbour schemes
+survive, and both disappear under same-extension compatibility.
+
+At `p=-1/2`, the straight fixed-source limit has zero restriction and pair
+profile `(3,3,2,3,3,3)`.  It is the formal `k=infinity` edge of the
+half-centre family and lies in component fifteen's closure by an explicit
+support-one secant arc.  It is not a missing genuine wall stratum: an exact
+min-plus audit proves that every nonzero-`P4` diagonal `s=0` arc is one of the
+already verified finite-`k` or embedded-`P3` half-centre charts.  Complete
+source-torus atlases at `p=0,-1`, parameter infinity, and non-diagonal or
+arbitrary source limits are not included.
 
 For component twenty-one, three alpha rows have a two-column Hall
 neighbourhood after every homogeneous `D01` contraction.  Finite `D23`
@@ -594,6 +623,10 @@ uv run --with sympy python audit_p5_h22_common_active_binary_triangle_component_
 
 uv run --with sympy python derive_p5_h22_common_active_binary_triangle_intrinsic_boundary_obstruction_candidate.py
 uv run --with sympy python audit_p5_h22_common_active_binary_triangle_intrinsic_boundary_obstruction_candidate.py
+
+uv run --with sympy python derive_component20_intrinsic_wall_exceptional_fibres_candidate.py
+uv run --with sympy python derive_p4_component20_intrinsic_exceptional_base_geometry_proof_b.py
+uv run --with sympy --with z3-solver python audit_component20_intrinsic_wall_exceptional_fibres_candidate.py
 
 uv run --with sympy python derive_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
 uv run --with sympy python audit_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py

@@ -26,7 +26,8 @@ boundaries are not promoted by those function-field theorems.  On component
 twenty, the entire finite normalized `(p+q)(p-q+1)!=0` sheet is now closed,
 including every special-divisor intersection inside that open.  The intrinsic
 `p-q+1=0` chart wall is also closed over its generic point for marked `H31`
-and weighted `H22`.  On `p+q=0`, an
+and weighted `H22`; its two finite zero-restriction base points also have
+empty compactified Segre-direction incidences.  On `p+q=0`, an
 independently verified DVR/Puiseux classification exhausts every diagonal
 source-torus arc into lower-pair strata or two explicit higher-rank charts.
 Exact marked `H31` certificates close both charts, the embedded-`P_3`
@@ -751,11 +752,20 @@ strictly advance the finite frontier:
   `C(p)` gives the unit projected ideal for every source deletion, so no
   genuine binary neighbour exists over the generic point.  A fresh no-import
   weighted-`H22` audit independently makes all four individual and all four
-  complete shared finite/infinity orientation projections unit.  The
-  exceptional values `p=0,-1,-1/2`, parameter infinity, and mixed
-  source-torus/projective limits remain open:
+  complete shared finite/infinity orientation projections unit.  At the
+  exceptional values `p=0,-1`, the ordinary restrictions are zero, but the
+  coefficient-map base ideal is transverse and its complete exceptional
+  `P1` of Segre directions is closed for marked `H31` and shared weighted
+  `H22`: all `16+16` exact projections are unit with the direction retained
+  polynomially.  At `p=-1/2`, the straight fixed-source limit is the
+  zero-tensor `k=infinity` edge in component fifteen's closure; every actual
+  nonzero diagonal arc is already in the verified half-centre atlas.
+  Complete source-torus atlases over `p=0,-1`, parameter infinity, and mixed
+  or non-diagonal source limits remain open:
   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md),
-  [`P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION_CANDIDATE.md`](P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION_CANDIDATE.md).
+  [`P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION_CANDIDATE.md`](P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION_CANDIDATE.md),
+  [`COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md`](COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md),
+  [`P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md`](P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md).
 - a `VERIFIED` valuative classification of the `p+q=0` diagonal
   source-torus wall proves the exact min-plus weight conditions and leaves two
   explicit higher-rank charts, `B_full` with profile `(4,4,4,3,3,3)` and
