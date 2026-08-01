@@ -21,16 +21,18 @@ common-active binary-triangle fivefold, and the coincident-support rank-one
 star sixfold.  Consequently the whole `triangle-(1,1,1)` cell is closed, and
 the all-pair-ranks-at-least-three component problem now has three unresolved
 star/triangle cells.  Generic marked `H31/H22` fibres are proved empty on the
-first eighteen components; the three new components and their relevant
-boundaries have not yet received complete marked-fibre analysis.  The
+first eighteen components, and component twenty-one is now generically closed
+for `H31`; components nineteen and twenty, weighted `H22` on component
+twenty-one, and the relevant boundaries remain open.  The
 five-root no-torus locus has also been pushed from a hypersurface envelope to
 codimension at least two, and the first blocker surplus has an arbitrary-order
 port-permanent formula.  On the resulting common-port `P_6` wall, an exact
 rank-five configuration now extracts a necessary finite bilinear-gate
-problem from the first nonlinear factorisation condition.  These are strong
-local algebraic-geometric reductions, not a global proof: component exhaustiveness,
-special `P_5/P_6` restrictions, and the final local-to-global graph step are
-still missing.
+problem from the first nonlinear factorisation condition and exactly excludes
+its unique four-gate branch, leaving 52 minimal covers of size at least five.
+These are strong local algebraic-geometric reductions, not a global proof:
+component exhaustiveness, special `P_5/P_6` restrictions, and the final
+local-to-global graph step are still missing.
 
 Separately, the repository now contains an exact rational positive
 Question-2 witness for [`n=6, k=4, d=4`](Q2_N6_K4_D4_CONSTRUCTION.md).
@@ -695,6 +697,12 @@ strictly advance the finite frontier:
   entire projective residual fibre is its homogeneous boundary.  This closes
   the full `triangle-(1,1,1)` cell:
   [`P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md`](P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md).
+- component twenty-one's complete generic marked `H31` fibre is empty.  Two
+  source deletions fail by Hall deficiency.  For the other two, exact
+  polynomial row-module identities over `C(p,q,kappa,ell)` put the all-kernel
+  diagonal in the fourteen-row mixed module for every affine marking.  Its
+  weighted `H22` fibre and all special/projective boundaries remain open:
+  [`P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 - component eighteen's complete generic marked `H31` and weighted `H22`
   fibres are empty.  In its intrinsic pure marking, three kernel rows equal
   the common singleton `e`.  After any source-coordinate deletion or either
@@ -1233,10 +1241,12 @@ strictly advance the finite frontier:
   decomposable generators.  A `5 x 5` bilinear catalecticant must have rank at
   most two on the two unknown full-mode planes.  Twenty-two split minors give
   sixteen bilinear gates and 53 minimal gate covers, with a unique four-gate
-  cover.  The pointwise rank bound does not itself recover the required fixed
-  common kernel plane.  The remaining minors, that common plane, and marked
-  rank-one conditions are still open:
-  [`P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md`](P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md).
+  cover.  That unique branch forces the two alternating coordinate
+  three-planes, but each has an explicit catalecticant minor equal to `-4` or
+  `4`, so it is impossible.  The other 52 covers, a fixed common kernel plane,
+  and marked rank-one conditions remain open:
+  [`P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md`](P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md),
+  [`P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md`](P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md).
 - independently, a Koszul and Chow-ring argument proves that every smooth
   expected-dimensional four-root complete intersection meets the torus.
   Combining this with tight four-blocker factorisation and the exact subrank

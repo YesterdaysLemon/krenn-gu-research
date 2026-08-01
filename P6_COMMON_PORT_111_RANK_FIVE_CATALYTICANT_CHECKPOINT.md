@@ -5,7 +5,7 @@
 This is an exact characteristic-zero checkpoint for the nonlinear incidence
 isolated in
 [`P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md`](P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md).
-It proves two new facts.
+It proves two new facts and feeds one later exact obstruction.
 
 1. The nine forbidden exceptional quadrics can have rank **five**, not merely
    the previously exhibited rank six, while the three marked classes remain
@@ -18,11 +18,12 @@ It proves two new facts.
    reduces these necessary equations to 53 minimal gate covers, with a unique
    cover of size four.
 
-This note does **not** construct the three shared full-mode planes and does
-not prove that they are impossible.  The rank-five catalecticant branches,
-the remaining minors, and the marked rank-one conditions are still open.
-It therefore does not decide `P_6 -> Delta_3` or the global Krenn--Gu
-conjecture.
+The unique size-four branch is excluded in the follow-up theorem
+[`P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md`](P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md).
+This note does **not** construct or exclude the three shared full-mode planes
+on the other 52 branches.  Their remaining minors, common kernels, and marked
+rank-one conditions are still open.  The checkpoint therefore does not decide
+`P_6 -> Delta_3` or the global Krenn--Gu conjecture.
 
 ## An exact rank-five exceptional configuration
 
@@ -209,17 +210,21 @@ The unique four-gate cover is exactly
 {g_0,g_3,g_5,g_9}.                                  (14)
 ```
 
-Hence every solution of the rank-two catalecticant condition lies in one of
-the following exact alternatives:
+At the time of this checkpoint, every solution of the rank-two catalecticant
+condition lay in one of the following exact alternatives:
 
 1. all four cycle gates in (12) vanish on `B x C`; or
 2. at least five of the sixteen recorded gates vanish on `B x C`, in one of
    the other 52 minimal-cover patterns.
 
-This is a genuine nonlinear reduction, but it is not yet an obstruction.
-One must classify the resulting bilinear zero rectangles, impose the other
-determinantal minors, recover a common three-dimensional kernel `A`, and
-finally require the three marked forms
+The first alternative is now impossible: its bilinear zero rectangles are
+the two alternating coordinate three-planes, and an explicit remaining minor
+has value `-4` or `4` on them.  See
+[`P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md`](P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md).
+Every surviving solution must therefore use one of the other 52 covers, each
+of size at least five.  One must still classify those zero rectangles, impose
+the other determinantal minors, recover a common three-dimensional kernel
+`A`, and finally require the three marked forms
 
 ```text
 (a,b,c) |-> tau(q_d a b c)
@@ -235,6 +240,9 @@ Run:
 ```text
 uv run --with sympy python verify_p6_common_port_111_rank_five_catalecticant.py
 python audit_p6_common_port_111_rank_five_catalecticant.py
+
+uv run --with sympy python verify_p6_common_port_111_unique_four_gate_obstruction.py
+python audit_p6_common_port_111_unique_four_gate_obstruction.py
 ```
 
 The primary verifier performs exact rational row reduction, reconstructs
