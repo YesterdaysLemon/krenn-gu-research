@@ -14,13 +14,13 @@ integral local model; an explicit Krull-height argument supplies the
 characteristic-zero conclusion.
 
 The active branch at wind-down is `codex/h22-disjoint-mixed-star`.  The most
-recent mathematical commits before this documentation pass are:
+recent baseline commits before this continuation are:
 
 ```text
+4a871d2  Certify common-singleton component and sharpen blocker bridge
+43d93e2  Document symbolic frontier handoff
 96a6c92  Refresh lower-pair fibre status
 ae70348  Reduce P4 exhaustion to eight graph cells
-431a517  Exclude H22 lifts on disjoint-secant component
-819558d  Exclude H31 lifts on disjoint-secant component
 ```
 
 Recheck the branch and worktree before relying on those identifiers.
@@ -65,7 +65,20 @@ The unresolved cells are:
 | star | `(2,1,1)` | global orientation/support closure |
 | star | `(1,1,1)` | global orientation/support closure |
 | triangle | `(2,1,1)` | exhaust the union of known charts |
-| triangle | `(1,1,1)` | exhaust the residual strata around component eighteen |
+| triangle | `(1,1,1)` | classify the last stratum with exactly one kernel--kernel edge |
+
+The last row has narrowed substantially.  Tournament orientations are
+classified; the common-singleton family is component eighteen; the fully
+kernel--kernel stratum lies in components sixteen or eighteen; and the
+exactly-two-kernel stratum lies in component eleven.  See
+[`P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md`](P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md)
+and
+[`P4_TWO_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md`](P4_TWO_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md).
+The last exactly-one-kernel stratum is not closed, but it is now reduced to
+three orientations and eight explicit residual entries.  Its transverse
+common-kernel sheet lies in component twelve; the remaining projective
+fibres retain explicit normal forms and are honestly marked open in
+[`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md).
 
 ## What a global proof would still need
 
@@ -99,26 +112,56 @@ five fully supported pairwise-zero roots
              P_5 -> Delta_3
 ```
 
-At order ten, four fully supported roots and a five-vertex blocker union also
-extract `P_5 -> Delta_3`; six blockers are the exact surplus alternative.
-For a transverse five-root intersection point, zero coordinates are exactly
-internal blocker flags.  None of these statements yet proves that the
-degree-24 five-root intersection meets the coordinate torus, excludes a
-nonreduced intersection, rules out blocker surplus at least six, or excludes
-`P_5 -> Delta_3`.  See
+The first-surplus extraction is now arbitrary-order too.  For `r` fully
+supported roots, total blocker union `r+1` leaves an arbitrary positive odd
+residual set; its matching contribution is one linear port row, giving
+`P_(r+1) -> Delta_3`.  Thus four roots and five blockers give `P_5`, while
+five roots and six blockers give the genuinely separate problem
+`P_6 -> Delta_3`.  See
 [`FIVE_ROOT_TIGHT_BLOCKER_P5_EXTRACTION.md`](FIVE_ROOT_TIGHT_BLOCKER_P5_EXTRACTION.md),
-[`ONE_NONBLOCKER_SURPLUS_PERMANENT_EXTRACTION.md`](ONE_NONBLOCKER_SURPLUS_PERMANENT_EXTRACTION.md),
+[`ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION.md`](ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION.md),
 and
 [`FIVE_ROOT_BOUNDARY_TRANSVERSAL_BLOCKER_CLASSIFICATION.md`](FIVE_ROOT_BOUNDARY_TRANSVERSAL_BLOCKER_CLASSIFICATION.md).
 
-The coordinate-boundary exception is now contained in a finite union of
-explicit algebraic hypersurfaces.
-For every vertex/colour boundary, an irreducible multihomogeneous resultant
-has incident-edge degree `12`, nonincident-edge degree `10`, and total degree
-`108`.  Avoiding all fifteen resultants forces a fully supported five-root
-zero.  This is a genericity criterion, not a proof that witness blocks avoid
-the exceptional hypersurfaces:
-[`FIVE_ROOT_TORUS_RESULTANT_DICHOTOMY.md`](FIVE_ROOT_TORUS_RESULTANT_DICHOTOMY.md).
+The coordinate-boundary exception is sharper than the resultant envelope.
+In the projective space of ten nonzero `3 x 3` blocks, the closure of the
+true no-torus locus has codimension at least two.  A general point of any one
+degree-108 boundary-resultant divisor has one simple boundary root and 23
+simple torus roots.  The affine statement includes zero blocks separately;
+each whole-zero-block locus has codimension nine.  This still does not show
+that witness blocks avoid the codimension-two exception:
+[`FIVE_ROOT_NO_TORUS_CODIMENSION_TWO_THEOREM.md`](FIVE_ROOT_NO_TORUS_CODIMENSION_TWO_THEOREM.md).
+
+The resulting exact five-root alternatives are now:
+
+```text
+some induced block is zero,
+no torus root on a codimension-at-least-two exceptional locus,
+five blockers  -> P_5 -> Delta_3,
+six blockers   -> P_6 -> Delta_3,
+or at least seven blockers.
+```
+
+The unrestricted `P_6` restriction remains open.  It has an exact
+simultaneous-kernel criterion: a `240 x 6` off-diagonal contraction matrix
+must have rank at most three and retain diagonal rank three on its kernel.
+The six-blocker incidence reduces to six common-port deletion profiles.
+Coordinate-column restrictions and the natural zero-row lift of the known
+support-four `P_5` family are impossible, but dense maps remain.  In the most
+constrained `1+1+1` profile, the three overlapping pure-`P_5` deletions reduce
+to a marked `R_2 x R_3 -> R_5` Frobenius incidence.  Its linear relaxation is
+exactly consistent, leaving nonlinear shared factorisation as the next wall:
+[`P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md`](P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md),
+[`P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md`](P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md).
+
+There is also a separate exact eight-vertex discriminant reduction.  A smooth
+expected two-dimensional four-root complete intersection is connected by its
+Koszul complex, hence irreducible, and its Chow class cannot be supported on
+one coordinate boundary.  It therefore meets the torus, which would force
+the impossible restriction `P_4 -> Delta_3`.  Any hypothetical eight-vertex
+witness must consequently make all 70 induced four-root schemes singular or
+excess-dimensional:
+[`FOUR_ROOT_SMOOTH_TORUS_OBSTRUCTION.md`](FOUR_ROOT_SMOOTH_TORUS_OBSTRUCTION.md).
 
 ## Why these translations were useful
 
@@ -242,11 +285,29 @@ python audit_five_root_boundary_transversal_blocker_classification.py
 python verify_five_root_torus_resultant_dichotomy.py
 python audit_five_root_torus_resultant_dichotomy.py
 
-python verify_one_nonblocker_surplus_permanent_extraction.py
-python audit_one_nonblocker_surplus_permanent_extraction.py
+python verify_five_root_no_torus_codimension_two.py
+python audit_five_root_no_torus_codimension_two.py
+
+python verify_odd_residual_port_permanent_extraction.py
+python audit_odd_residual_port_permanent_extraction.py
 
 uv run --with sympy python verify_five_root_tight_blocker_p5_extraction.py
 python audit_five_root_tight_blocker_p5_extraction.py
+
+python verify_four_root_smooth_torus_obstruction.py
+python audit_four_root_smooth_torus_obstruction.py
+
+uv run --with sympy python verify_p4_triple_kernel_rank_one_triangle_classification.py
+python audit_p4_triple_kernel_rank_one_triangle_classification.py
+
+uv run --with sympy python verify_p4_two_kernel_rank_one_triangle_classification.py
+python audit_p4_two_kernel_rank_one_triangle_classification.py
+
+python verify_p6_simultaneous_kernel_and_natural_lift.py
+python audit_p6_simultaneous_kernel_and_natural_lift.py
+
+python verify_p6_common_port_111_frobenius_reduction.py
+python audit_p6_common_port_111_frobenius_reduction.py
 ```
 
 If plain `python` lacks a dependency, use the repository's isolated verifier

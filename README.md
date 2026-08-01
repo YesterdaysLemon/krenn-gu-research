@@ -17,10 +17,15 @@ mixed-characteristic local-height certificate proves that the
 common-singleton family is a new eighteenth pure-`P_4` component orbit.
 Generic marked `H31/H22` fibres are now empty on all eighteen certified
 components.  The all-pair-ranks-at-least-three component problem still has
-four unresolved star/triangle cells, one of which now contains component
-eighteen.  These are strong local algebraic-geometric reductions, not a
-global proof: component exhaustiveness, special `P_5` fibres, and the final
-local-to-global graph step are still missing.
+four unresolved star/triangle cells.  Inside `triangle-(1,1,1)`, the
+tournament, fully kernel--kernel, and exactly-two-kernel strata are now in
+known component closures; only the exactly-one-kernel stratum remains there.
+The five-root no-torus locus has also been pushed from a hypersurface envelope
+to codimension at least two, and the first blocker surplus now has an
+arbitrary-order port-permanent formula.  These are strong local
+algebraic-geometric reductions, not a global proof: component exhaustiveness,
+special `P_5/P_6` restrictions, and the final local-to-global graph step are
+still missing.
 
 Separately, the repository now contains an exact rational positive
 Question-2 witness for [`n=6, k=4, d=4`](Q2_N6_K4_D4_CONSTRUCTION.md).
@@ -63,15 +68,28 @@ strictly advance the finite frontier:
 - the order-four permanent tensor has exact subrank two over `C`; in
   particular, four fully supported zero-coupled roots require at least
   five blocker vertices in total.
-- at order `2r+2`, `r` fully supported pairwise-zero roots with total blocker
-  union `r+1` and a unique all-colour nonblocker extract
-  `P_(r+1) -> Delta_3`; for four roots on ten vertices this identifies the
-  five-blocker case exactly as `P_5 -> Delta_3`.
+- at every even ambient order, `r` fully supported pairwise-zero roots with
+  total blocker union `r+1` extract `P_(r+1) -> Delta_3`.  An arbitrary
+  positive odd residual set becomes one extra linear port row of the
+  permanent.  Thus four roots and five blockers give `P_5 -> Delta_3`, while
+  five roots and six blockers give the separate problem `P_6 -> Delta_3`.
 - five fully supported pairwise-zero roots whose three colour-blocker sets
   have tight total union five likewise extract `P_5 -> Delta_3` at arbitrary
   ambient order.  Excluding `P_5 -> Delta_3` would therefore force blocker
   surplus at least six, but neither surplus nor coordinate-boundary roots
   are yet excluded.
+- in the projective space of ten nonzero five-root blocks, the closure of the
+  true no-torus locus has codimension at least two.  A general point of any
+  one boundary-resultant divisor has one simple boundary root and 23 simple
+  torus roots.  Whole-zero-block affine strata have codimension nine.
+- a smooth expected-dimensional four-root complete intersection always meets
+  the coordinate torus.  Hence any hypothetical eight-vertex witness forces
+  all 70 induced four-root schemes onto the singular-or-excess locus.
+- an unrestricted `P_6 -> Delta_3` restriction must satisfy an exact
+  `240 x 6` simultaneous-kernel condition.  Coordinate-column restrictions
+  and the natural zero-row lift of the known support-four `P_5` family are
+  impossible; the six-blocker maps reduce to six common-port deletion
+  profiles, but the dense `P_6` problem remains open.
 - more sharply, any nonzero decomposable restriction of the order-four
   permanent tensor through rank-at-least-two local maps has rank two in
   at least two modes.  The two rare `q5_311` deletions therefore force
@@ -636,6 +654,22 @@ strictly advance the finite frontier:
   `all six pair ranks <=3` separates the resulting irreducible component from
   every previous orbit, each of which has a certified rank-four pair:
   [`P4_COMMON_SINGLETON_COMPONENT.md`](P4_COMMON_SINGLETON_COMPONENT.md).
+- the two extreme kernel--kernel boundaries of that same cell create no
+  further component.  If all three selected relations are kernel--kernel,
+  their kernel rows share one singleton; the common-singleton branch is
+  component eighteen, while the complementary-edge branch has an explicit
+  arc into component sixteen.  If exactly two relations are kernel--kernel,
+  a binary exact pair and its complementary binary direction force the
+  complete normal form onto a projective component-eleven boundary.  Thus
+  only the exactly-one-kernel pattern remains in `triangle-(1,1,1)`:
+  [`P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md`](P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md),
+  [`P4_TWO_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md`](P4_TWO_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md).
+- the remaining exactly-one-kernel pattern has an exact orientation/support
+  reduction rather than a claimed closure.  Its common-active, common-kernel,
+  and mixed-chain orientations split into eight residual entries.  One is in
+  component eighteen and the transverse common-kernel sheet is the `r=-2`
+  slice of component twelve; six explicit residual families remain open:
+  [`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md).
 - component eighteen's complete generic marked `H31` and weighted `H22`
   fibres are empty.  In its intrinsic pure marking, three kernel rows equal
   the common singleton `e`.  After any source-coordinate deletion or either
@@ -1127,6 +1161,14 @@ strictly advance the finite frontier:
   boundary-resultant-special, tight-extracts `P_5 -> Delta_3`, or has blocker
   surplus at least six:
   [`FIVE_ROOT_TORUS_RESULTANT_DICHOTOMY.md`](FIVE_ROOT_TORUS_RESULTANT_DICHOTOMY.md).
+- none of those resultant hypersurfaces is a component of the true no-torus
+  locus.  A fixed simple boundary root can be completed to a reduced
+  degree-24 fibre with 23 torus roots, and a 24-versus-15 pigeonhole argument
+  puts every no-torus finite-etale fibre in the exceptional part of some
+  boundary incidence.  Consequently the projective no-torus closure has
+  codimension at least two; independent block projectivization gives the
+  affine version, including codimension-nine zero-block strata:
+  [`FIVE_ROOT_NO_TORUS_CODIMENSION_TWO_THEOREM.md`](FIVE_ROOT_NO_TORUS_CODIMENSION_TWO_THEOREM.md).
 - for four supported roots on ten vertices, a blocker union of five leaves a
   unique simultaneous-kernel nonblocker and extracts `P_5 -> Delta_3`; six
   blockers are the exact persistent-surplus alternative:
@@ -1138,6 +1180,33 @@ strictly advance the finite frontier:
   coefficients to be nonzero.  Thus this tight case also extracts
   `P_5 -> Delta_3`:
   [`FIVE_ROOT_TIGHT_BLOCKER_P5_EXTRACTION.md`](FIVE_ROOT_TIGHT_BLOCKER_P5_EXTRACTION.md).
+- the first blocker surplus is now exact at arbitrary ambient order.  For
+  total blocker union `r+1`, every odd residual matching is one effective
+  linear port row, so the surviving tensor is a local image of `P_(r+1)`.
+  For five roots this makes six blockers exactly `P_6 -> Delta_3`, not a
+  hidden `P_5` case:
+  [`ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION.md`](ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION.md).
+- the resulting `P_6` problem has a precise simultaneous-kernel formulation.
+  Five fixed maps must leave a three-dimensional diagonal image on the
+  kernel of their `240 x 6` off-diagonal contraction matrix.  The extracted
+  blocker maps have only six common-port deletion profiles; their coordinate
+  contractions expose at most `Delta_2`.  Six-cycle parity excludes every
+  coordinate-column restriction, and off-diagonal rank excludes every
+  zero-row lift of the known support-four `P_5` family:
+  [`P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md`](P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md).
+- in the `1+1+1` common-port profile, the three overlapping pure-`P_5`
+  deletions are exactly a marked `R_2 x R_3 -> R_5` Frobenius incidence.
+  The 27 cubic products lie in a four-space in the sharp rank-six example,
+  all 24 mixed products can lie on one line, and the complete linear
+  relaxation is consistent.  The remaining obstruction is nonlinear shared
+  factorisation, not another dimension count:
+  [`P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md`](P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md).
+- independently, a Koszul and Chow-ring argument proves that every smooth
+  expected-dimensional four-root complete intersection meets the torus.
+  Combining this with tight four-blocker factorisation and the exact subrank
+  two of `P_4` forces all 70 four-root schemes in a hypothetical eight-vertex
+  witness to be singular or excess-dimensional:
+  [`FOUR_ROOT_SMOOTH_TORUS_OBSTRUCTION.md`](FOUR_ROOT_SMOOTH_TORUS_OBSTRUCTION.md).
 - every contraction of the order-five permanent tensor by a vector of
   coordinate support at most three has subrank at most two over `C`;
   the support-three case has exact subrank two.
@@ -2068,6 +2137,8 @@ uv run --with sympy python verify_five_root_boundary_transversal_blocker_classif
 python audit_five_root_boundary_transversal_blocker_classification.py
 python verify_one_nonblocker_surplus_permanent_extraction.py
 python audit_one_nonblocker_surplus_permanent_extraction.py
+python verify_odd_residual_port_permanent_extraction.py
+python audit_odd_residual_port_permanent_extraction.py
 uv run --with sympy python verify_five_root_tight_blocker_p5_extraction.py
 python audit_five_root_tight_blocker_p5_extraction.py
 uv run --with sympy python verify_p4_common_singleton_component.py
@@ -2078,6 +2149,18 @@ uv run --with sympy python verify_p5_h22_common_singleton_component_generic_obst
 python audit_p5_h22_common_singleton_component_generic_obstruction.py
 python verify_five_root_torus_resultant_dichotomy.py
 python audit_five_root_torus_resultant_dichotomy.py
+python verify_five_root_no_torus_codimension_two.py
+python audit_five_root_no_torus_codimension_two.py
+python verify_four_root_smooth_torus_obstruction.py
+python audit_four_root_smooth_torus_obstruction.py
+uv run --with sympy python verify_p4_triple_kernel_rank_one_triangle_classification.py
+python audit_p4_triple_kernel_rank_one_triangle_classification.py
+uv run --with sympy python verify_p4_two_kernel_rank_one_triangle_classification.py
+python audit_p4_two_kernel_rank_one_triangle_classification.py
+python verify_p6_simultaneous_kernel_and_natural_lift.py
+python audit_p6_simultaneous_kernel_and_natural_lift.py
+python verify_p6_common_port_111_frobenius_reduction.py
+python audit_p6_common_port_111_frobenius_reduction.py
 python verify_support_three_p5_contraction_subrank.py
 python audit_support_three_p5_contraction_subrank.py
 python verify_support_four_p5_contraction_restriction.py

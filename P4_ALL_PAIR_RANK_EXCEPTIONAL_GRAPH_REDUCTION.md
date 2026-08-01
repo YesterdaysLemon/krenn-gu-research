@@ -18,8 +18,9 @@ triangle is empty.  The four cells containing at least two rank-one
 relations have substantial orientation/support classifications but are not
 yet globally exhausted.
 
-For the dated continuation map, including a strictly unverified
-common-singleton lead in the last triangle cell, see
+For the dated continuation map, including the now-certified
+common-singleton component and the residual strata in the last triangle
+cell, see
 [`NEXT_INSTANCE_HANDOFF_2026-07-31.md`](NEXT_INSTANCE_HANDOFF_2026-07-31.md).
 
 This is a reduction of the pure-`P_4` component problem, not component
@@ -112,12 +113,12 @@ that number `0,1,2,3` with (4) gives eight coarse cells.
 | star | `(2,1,1)` | partially classified by the exact-pair, common-factor, and mixed-star normal forms; a global orientation/support closure is still missing |
 | star | `(1,1,1)` | directed radical and mixed orientations are substantially classified, including the projective disjoint and overlapping mixed charts; a global orientation/support closure is still missing |
 | triangle | `(2,1,1)` | crossed, common-factor, common-kernel, and support-one charts produce components one and eleven through thirteen or obstructions; their union is not yet proved exhaustive |
-| triangle | `(1,1,1)` | cyclic and transitive tournament orientations are classified, but kernel--kernel/doubly oriented degeneracies still need a common closure theorem |
+| triangle | `(1,1,1)` | cyclic and transitive tournament orientations are classified; the common-singleton family is component eighteen; the fully kernel--kernel stratum lies in components sixteen or eighteen; and the exactly-two-kernel stratum lies in component eleven; the remaining exactly-one-kernel stratum has the finite residual ledger in [`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md) |
 
 The lower-pair locus `min r_ij<=2` is already exhausted separately in
 [`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
 Therefore a proof that the last four rows of this table lie in the known
-component closures would prove that the seventeen-component list is
+component closures would prove that the eighteen-component list is
 exhaustive.
 
 Even that would not by itself prove `P_5 -> Delta_3` impossible: the marked
