@@ -30,9 +30,9 @@ Six statements organize the current frontier.
    compression has `min r_ij<=2`, it lies in one of four known component
    closures.  See
    [`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
-2. **The first eighteen components are generically closed at `P_5`; components
-   nineteen through twenty-one are closed for generic `H31`.**  The first eighteen
-   have empty marked `H31` and weighted `H22` fibres over the generic point.
+2. **All twenty-one certified components are generically closed at `P_5` for
+   both marked `H31` and weighted `H22`.**  The first eighteen have empty
+   fibres over the generic point by the earlier componentwise theorems.
    For the first seventeen, component fifteen was the last completed case:
    [`P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md)
    and
@@ -44,9 +44,15 @@ Six statements organize the current frontier.
    Component nineteen is closed by exact open-incidence projection and
    two-minor covers, including the marking-line intersection:
    [`P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
+   Its weighted-`H22` shared incidence leaves one exact finite branch, whose
+   complete common kernel has a fixed nonzero rank-four transverse minor:
+   [`P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md).
    Component twenty is closed by exact open-incidence projection to four
    marking points and one uniform minor/transverse certificate:
    [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
+   Its generic weighted-`H22` fibre is empty by an exhaustive shared
+   orientation split and four exact finite/infinity unit ideals:
+   [`P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md).
    Its nine principal affine special divisors are also closed over their
    generic points by exact projection and uniform marked-minor certificates:
    [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_SPECIAL_DIVISOR_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_SPECIAL_DIVISOR_OBSTRUCTION.md).
@@ -55,8 +61,10 @@ Six statements organize the current frontier.
    intersection inside the open:
    [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_NORMALIZED_AFFINE_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_NORMALIZED_AFFINE_OBSTRUCTION.md).
    The intrinsic `p-q+1=0` basis boundary has no binary neighbour over its
-   generic point after replacing the collapsed generic basis:
-   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md).
+   generic point after replacing the collapsed generic basis, and the same
+   replacement chart has empty weighted-`H22` fibre:
+   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md),
+   [`P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION_CANDIDATE.md`](P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION_CANDIDATE.md).
    The whole `p+q=0` diagonal-source-torus DVR wall is now closed for marked
    `H31`: a verified arc exhaustion reduces it to the displayed charts,
    embedded-`P_3` projective strata, and two directly verified special
@@ -70,8 +78,10 @@ Six statements organize the current frontier.
    flags without claiming the full projective embedded-`P_3` component:
    [`P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md`](P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md).
    Component twenty-one's exact all-marking row-module certificate closes its
-   generic `H31` fibre only:
-   [`P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+   generic `H31` fibre, while homogeneous Hall deficiency plus finite
+   beta-diagonal and infinity row-module identities close weighted `H22`:
+   [`P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
+   [`P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md).
 3. **The common-singleton family is component orbit eighteen.**  An exact
    integral graph slice has local dimension zero modulo `32003`; Krull height
    lifts this to a five-dimensional characteristic-zero incidence germ.  The
@@ -119,14 +129,14 @@ is component eighteen; the fully kernel--kernel stratum lies in components
 sixteen or eighteen; the exactly-two-kernel stratum lies in component eleven;
 and all eight residual exactly-one-kernel entries now have exact component
 placements.  Components nineteen through twenty-one now have exact generic
-`H31` exclusions.  Component twenty is now closed on its entire finite
-normalized `(p+q)(p-q+1)!=0` sheet, including all special-divisor
+`H31` and weighted-`H22` exclusions.  Component twenty is now closed on its
+entire finite normalized `(p+q)(p-q+1)!=0` sheet, including all special-divisor
 intersections in that open.  The intrinsic `p-q+1=0` chart wall is closed
 over its generic point.  The `p+q=0` wall is now verified for diagonal-torus
 DVR/Puiseux arcs for both marked `H31` and weighted `H22`.  The exceptional
 points on the intrinsic wall, non-diagonal or arbitrary `GL_4` source changes,
-and the generic weighted-`H22` fibres of components nineteen through
-twenty-one remain open.
+and the remaining special/projective weighted-`H22` fibres of components
+nineteen through twenty-one remain open.
 
 A `VERIFIED` valuative analysis of diagonal source-torus arcs with
 `p+q -> 0` has exact replays for the corrected mode-zero wedge, the generic
@@ -181,6 +191,12 @@ deletions 0 and 1 to the unit ideal and deletions 2 and 3 to
 The resulting four rational marking lines and both shared endpoints are now
 closed by exact two-minor and pure-transverse certificates.
 
+For weighted `H22`, `D01` has no binary fibre on either homogeneous chart.
+Shared `D01`-pure/`D23`-binary compatibility leaves only
+`lambda=1,h=(-1/(q-phi),0,t,0)`.  Its complete two-dimensional shared kernel
+has mode-three determinant `-64 C p(pD-phi t C)^2`, nonzero on the common
+genuine open.  A fresh no-import replay verifies the generic obstruction.
+
 For component twenty, exact characteristic-zero projection over `C(p,q)`
 leaves the four isolated markings
 
@@ -193,6 +209,13 @@ with `h0=h3=0`, while deletions zero and three give the unit ideal.  On all
 four points the selected mode-three `0147` minor divided by the genuine
 binary diagonal is `4pq(p+q)(p-q+1)`, and the deleted pure transverse entry
 is `+pq` or `-pq`.
+
+The generic weighted-`H22` incidence on component twenty is also empty.
+Finite individual `D01` projection gives the exact necessary marking ideal
+`<h3,h0,F>`; the shared system is unit on that whole closed locus.  The
+opposite finite orientation and both projective-infinity orientations are
+unit directly.  This function-field theorem is separate from every special
+divisor and from the diagonal-DVR `p+q=0` wall.
 
 The follow-on exact projection proves that deletion-three binary-neighbour
 incidence is supported precisely on `q=p+2`, `q=p`, `2pq-p+q=0`, `p=0,-1`,
@@ -216,8 +239,18 @@ the two actual rows of `U0` gives a replacement basis whose only pure
 coefficient is `T_1111=-2p(p+1)`.  For each of the four source deletions, the
 normalized genuine-binary incidence projects to the unit ideal over `C(p)`.
 Thus even the binary neighbour is absent over the generic point of this
-boundary.  The special values `p=0,-1,-1/2`, parameter infinity, and mixed
-source-torus/projective limits are not included.
+boundary.  Independently implemented weighted-`H22` replays also give the
+unit ideal for all four individual and all four complete shared finite/infinity
+orientation projections.  Thus the generic weighted-`H22` fibre on this wall
+is empty as well.  The special values `p=0,-1,-1/2`, parameter infinity, and
+mixed source-torus/projective limits are not included.
+
+For component twenty-one, three alpha rows have a two-column Hall
+neighbourhood after every homogeneous `D01` contraction.  Finite `D23`
+all-alpha incidence survives only at `lambda=-1`, where its all-beta diagonal
+is identically zero in the complete normalized mixed ideal; at infinity the
+all-alpha row belongs to the mixed row module.  Thus its generic weighted
+`H22` fibre is empty, while its special/projective fibres remain open.
 
 ## What a global proof would still need
 
@@ -237,9 +270,9 @@ global Krenn--Gu nonexistence theorem
 ```
 
 The present work is closest to the first box.  Even a proof that the current
-twenty-one-component list is exhaustive would not automatically close generic
-or special fibres on components nineteen through twenty-one, or the final
-local-to-global step.
+twenty-one-component list is exhaustive would not automatically close the
+special/projective fibres on components nineteen through twenty-one or the
+final local-to-global step.
 
 There is now a second, genuinely arbitrary-order route into the same `P_5`
 bottleneck:
@@ -429,8 +462,8 @@ extension entries, source scalings, and homogeneous weights.  The
 `triangle-(1,1,1)` cell is now closed by the later placement theorems.  The
 remaining work is the other three all-pair graph cells, the remaining
 non-diagonal or arbitrary `GL_4` source boundaries for component twenty,
-weighted `H22` on components nineteen through twenty-one,
-the corresponding remaining special boundaries, and the universal `P_5`
+the remaining special/projective weighted-`H22` fibres on components
+nineteen through twenty-one, and the universal `P_5`
 step.
 
 ## Focused replay
@@ -552,6 +585,18 @@ uv run --with z3-solver python audit_p5_h22_common_active_binary_triangle_p_plus
 
 uv run --with sympy python derive_p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_obstruction_candidate.py
 uv run --with sympy python audit_p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_independent.py
+
+uv run --with sympy python derive_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py
+uv run --with sympy python audit_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py
+
+uv run --with sympy python derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
+uv run --with sympy python audit_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
+
+uv run --with sympy python derive_p5_h22_common_active_binary_triangle_intrinsic_boundary_obstruction_candidate.py
+uv run --with sympy python audit_p5_h22_common_active_binary_triangle_intrinsic_boundary_obstruction_candidate.py
+
+uv run --with sympy python derive_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
+uv run --with sympy python audit_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
 ```
 
 If plain `python` lacks a dependency, use the repository's isolated verifier

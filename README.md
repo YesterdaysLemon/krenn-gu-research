@@ -20,13 +20,13 @@ pure-`P_4` component orbits: the common-kernel vertical fivefold, the
 common-active binary-triangle fivefold, and the coincident-support rank-one
 star sixfold.  Consequently the whole `triangle-(1,1,1)` cell is closed, and
 the all-pair-ranks-at-least-three component problem now has three unresolved
-star/triangle cells.  Generic marked `H31/H22` fibres are proved empty on the
-first eighteen components, and components nineteen through twenty-one are
-now generically closed for `H31`; their generic weighted-`H22` fibres and the
-remaining special/projective boundaries remain open.  On component
+star/triangle cells.  Generic marked `H31/H22` fibres are now proved empty on
+all twenty-one certified components.  The remaining special/projective
+boundaries are not promoted by those function-field theorems.  On component
 twenty, the entire finite normalized `(p+q)(p-q+1)!=0` sheet is now closed,
 including every special-divisor intersection inside that open.  The intrinsic
-`p-q+1=0` chart wall is also closed over its generic point.  On `p+q=0`, an
+`p-q+1=0` chart wall is also closed over its generic point for marked `H31`
+and weighted `H22`.  On `p+q=0`, an
 independently verified DVR/Puiseux classification exhausts every diagonal
 source-torus arc into lower-pair strata or two explicit higher-rank charts.
 Exact marked `H31` certificates close both charts, the embedded-`P_3`
@@ -700,9 +700,12 @@ strictly advance the finite frontier:
   projection leaves four marking lines on deletions two and three and none on
   deletions zero and one.  Two one-marked minors cover every punctured line;
   separate endpoint syzygies avoid dividing by the line parameter.  Nonzero
-  pure transverse entries complete the global-row contradiction.  Weighted
-  `H22` and special/projective boundaries remain open:
-  [`P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
+  pure transverse entries complete the global-row contradiction.  Its generic
+  weighted-`H22` fibre is empty as well: exact shared compatibility leaves one
+  finite branch, and a fixed mode-three rank-four determinant excludes its
+  complete common genuine kernel.  Special/projective boundaries remain open:
+  [`P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md),
+  [`P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md).
 - the `tau!=0` common-active binary sheet is a new five-dimensional component
   twenty.  Its generic profile is `(4,4,4,3,3,3)`, its intrinsic rank-one
   kernel signature is `(2,2,0,0)`, and its apparent sixth tangent direction
@@ -714,9 +717,14 @@ strictly advance the finite frontier:
   and exactly two isolated markings on each of deletions one and two.  At all
   four survivors the same mode-three minor has ratio
   `4pq(p+q)(p-q+1)` to the genuine binary diagonal; a pure transverse entry
-  `+pq` or `-pq` completes the global-row contradiction.  Weighted `H22`
-  and all special/projective component boundaries remain open:
-  [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
+  `+pq` or `-pq` completes the global-row contradiction.  Its generic
+  weighted-`H22` fibre is empty by an exhaustive shared-orientation split:
+  finite individual `D01` has exact necessary marking ideal `<h3,h0,F>`, the
+  shared system is unit on that entire locus, and the opposite finite plus
+  both infinity orientations are unit directly.  All special/projective
+  component boundaries remain open:
+  [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md),
+  [`P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md).
 - the generic marked `H31` fibre is also empty on component twenty's nine
   principal affine special divisors.  Exact global projection gives the
   deletion-three base factor
@@ -741,10 +749,13 @@ strictly advance the finite frontier:
   is invalid.  A replacement basis taken directly from `U0` has sole pure
   coefficient `T_1111=-2p(p+1)`.  Exact characteristic-zero elimination over
   `C(p)` gives the unit projected ideal for every source deletion, so no
-  genuine binary neighbour exists over the generic point.  The exceptional
-  values `p=0,-1,-1/2`, parameter infinity, and mixed source-torus/projective
-  limits remain open:
-  [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md).
+  genuine binary neighbour exists over the generic point.  A fresh no-import
+  weighted-`H22` audit independently makes all four individual and all four
+  complete shared finite/infinity orientation projections unit.  The
+  exceptional values `p=0,-1,-1/2`, parameter infinity, and mixed
+  source-torus/projective limits remain open:
+  [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md),
+  [`P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION_CANDIDATE.md`](P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION_CANDIDATE.md).
 - a `VERIFIED` valuative classification of the `p+q=0` diagonal
   source-torus wall proves the exact min-plus weight conditions and leaves two
   explicit higher-rank charts, `B_full` with profile `(4,4,4,3,3,3)` and
@@ -795,8 +806,12 @@ strictly advance the finite frontier:
   source deletions fail by Hall deficiency.  For the other two, exact
   polynomial row-module identities over `C(p,q,kappa,ell)` put the all-kernel
   diagonal in the fourteen-row mixed module for every affine marking.  Its
-  weighted `H22` fibre and all special/projective boundaries remain open:
-  [`P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+  generic weighted-`H22` fibre is empty too: `D01` is Hall-deficient for every
+  homogeneous weight, finite `D23` all-alpha incidence has zero all-beta
+  diagonal, and the infinity all-alpha row is in the mixed module.  All
+  special/projective boundaries remain open:
+  [`P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
+  [`P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md).
 - component eighteen's complete generic marked `H31` and weighted `H22`
   fibres are empty.  In its intrinsic pure marking, three kernel rows equal
   the common singleton `e`.  After any source-coordinate deletion or either
@@ -804,9 +819,9 @@ strictly advance the finite frontier:
   columns, so Hall deficiency makes the all-kernel binary diagonal vanish
   identically before any mixed equation or ternary-rank test.  Thus all
   the first eighteen certified components are generically closed for both
-  fifth-mode partition types.  Components nineteen through twenty-one remain
-  outside that joint `H31/H22` statement; their generic `H31` fibres are now
-  closed separately, while their weighted `H22` fibres remain open:
+  fifth-mode partition types.  The three later componentwise theorem pairs
+  now extend the same generic joint `H31/H22` closure through component
+  twenty-one; special/projective fibres remain separate:
   [`P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md),
   [`P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md).
 - the two directed-triangle components are now generically closed for marked
