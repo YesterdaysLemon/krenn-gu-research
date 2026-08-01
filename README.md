@@ -31,7 +31,12 @@ zero-tensor boundary and `phi=0` chart boundary remain separate.  The
 singular-basis divisor `q=phi` is also independently closed on `p*phi!=0`
 using a regular row-swap basis; all eight exact function-field incidence
 ideals are unit, and its only parameter-aware closure lies at the lower-pair
-boundary `phi=0`.  Other divisors remain separate.  On component
+boundary `phi=0`.  On the ordinary `p=0` divisor, a regular replacement basis
+proves a weighted-`H22` obstruction on
+`q*phi*(q-phi)*(q^2-1)*(phi^2-1)*((q*phi)^2-1)!=0`; the exceptional axes and
+the zero sub-divisor `q=phi` remain explicitly `UNKNOWN`.  The zero base is a
+smooth codimension-two locus with projectivized first normal fibre `P1`.
+Other divisors remain separate.  On component
 twenty, the entire finite normalized `(p+q)(p-q+1)!=0` sheet is now closed,
 including every special-divisor intersection inside that open.  The intrinsic
 `p-q+1=0` chart wall is also closed over its generic point for marked `H31`
@@ -725,13 +730,22 @@ strictly advance the finite frontier:
   genuine locus.  The divisor `q=phi` is independently closed on `p*phi!=0`
   with a regular intrinsic basis: every function-field incidence projection
   is unit, and the sole parameter-aware `D01` closure occurs at `phi=0`, where
-  pair `23` has rank exactly two.  Other special/projective boundaries remain
-  open:
+  pair `23` has rank exactly two.  On `p=0`, the ordinary tensor is
+  `T1111=4(q-phi)` and the exact all-pair-open locus is
+  `q*phi*(q-phi)!=0`.  A complete three-frame and two one-marked minors verify
+  emptiness on the smaller parameter open excluding `q=+/-1`, `phi=+/-1`,
+  and `q*phi=+/-1`; those axes, plus the projectivized zero base `q=phi`,
+  remain `UNKNOWN`.  A stronger construction package is retained as
+  `REFUTED` because its advertised stacked minor fails exact replay.  Other
+  special/projective boundaries remain open:
   [`P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md),
   [`P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md),
   [`P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_OBSTRUCTION_VERIFICATION.md),
   [`P5_H22_COMPONENT19_Q0_PHI_ENDPOINTS_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_Q0_PHI_ENDPOINTS_OBSTRUCTION_VERIFICATION.md),
-  and [`P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md).
+  [`P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md),
+  [`P5_H22_COMPONENT19_P0_FINITE_BOUNDARY_GEOMETRY_RECONNAISSANCE.md`](P5_H22_COMPONENT19_P0_FINITE_BOUNDARY_GEOMETRY_RECONNAISSANCE.md),
+  [`P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md`](P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md),
+  and [`P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md`](P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md).
 - the `tau!=0` common-active binary sheet is a new five-dimensional component
   twenty.  Its generic profile is `(4,4,4,3,3,3)`, its intrinsic rank-one
   kernel signature is `(2,2,0,0)`, and its apparent sixth tangent direction

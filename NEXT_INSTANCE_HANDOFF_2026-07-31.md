@@ -59,6 +59,13 @@ Six statements organize the current frontier.
    incidence ideals are unit; the only parameter-aware closure occurs at
    `phi=0`, where pair `23` has rank exactly two:
    [`P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md).
+   On the ordinary `p=0` divisor, the tensor is `T1111=4(q-phi)` rather than
+   zero.  A regular-basis proof and no-import audit close weighted `H22` on
+   `q*phi*(q-phi)*(q^2-1)*(phi^2-1)*((q*phi)^2-1)!=0`.  The exceptional
+   axes and `q=phi` projectivized zero base remain `UNKNOWN`; the latter has a
+   verified smooth codimension-two zero ideal with normal fibre `P1`:
+   [`P5_H22_COMPONENT19_P0_FINITE_BOUNDARY_GEOMETRY_RECONNAISSANCE.md`](P5_H22_COMPONENT19_P0_FINITE_BOUNDARY_GEOMETRY_RECONNAISSANCE.md),
+   [`P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md`](P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md).
    Component twenty is closed by exact open-incidence projection to four
    marking points and one uniform minor/transverse certificate:
    [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
@@ -171,7 +178,8 @@ weighted `H22`, including every actual nonzero half-centre arc.  Parameter
 infinity, non-diagonal or arbitrary `GL_4` source changes, and the remaining
 special/projective weighted-`H22` fibres of components nineteen through
 twenty-one remain open, except for component nineteen's verified finite
-`q=0,p*phi!=0` and `q=phi,p*phi!=0` divisors.
+`q=0,p*phi!=0` and `q=phi,p*phi!=0` divisors and its verified ordinary
+`p=0` obstruction open.  The remaining `p=0` exceptional axes are still open.
 
 A `VERIFIED` valuative analysis of diagonal source-torus arcs with
 `p+q -> 0` has exact replays for the corrected mode-zero wedge, the generic
@@ -258,6 +266,25 @@ finite/infinity weighted incidence.  Proof B makes the mechanism explicit:
 reverse-orientation finite marking has an invertible `8 x 8` extension minor.
 Parameter-aware elimination finds only a direct-`D01` closure at `phi=0`,
 where pair `23` has rank two and hence lies outside the all-pair-open frontier.
+
+On `p=0`, the ordinary restriction is not zero: the regular basis
+`alpha0=Abar,beta0=Bbar+qB` gives only `T1111=4(q-phi)`.  Its exact nonzero
+all-pair-open locus is `q*phi*(q-phi)!=0`, with profile `(3,3,4,3,3,3)`
+off `q*phi=1` and `(3,3,3,3,3,3)` on that divisor.  Off the compatibility
+divisor, shared incidence leaves `lambda=1,h=(0,0,t,0)` and a complete
+three-dimensional extension kernel.  Complementary mode-zero and mode-three
+minors verify emptiness on
+`q*phi*(q-phi)*(q^2-1)*(phi^2-1)*((q*phi)^2-1)!=0`.  The divisors
+`q=+/-1`, `phi=+/-1`, `q*phi=1`, genuine coordinate axes on `q*phi=-1`,
+and the zero/projective `q=phi` base remain `UNKNOWN`.  The zero ideal is
+exactly `<p,q-phi>`, smooth of codimension two, and its first normal tensor
+directions form `P1`; higher-order valuative arcs are not classified.
+
+The historical stronger construction package claiming the larger open
+without the `q*phi=+/-1` exclusions is `REFUTED` as a replayable certificate:
+its frozen `D23` minor used the wrong linear factor, and after that correction
+its advertised `phi=1` stacked witness is identically zero.  The smaller
+proof-B/no-import theorem above is not affected.
 
 For component twenty, exact characteristic-zero projection over `C(p,q)`
 leaves the four isolated markings
@@ -690,6 +717,13 @@ uv run --with sympy python audit_p5_h22_component19_q0_phi_endpoints_obstruction
 uv run --with sympy python derive_p5_h22_component19_q_eq_phi_special_divisor_obstruction_candidate.py
 uv run --with sympy python derive_p5_h22_component19_q_equals_phi_divisor_proof_b.py
 uv run --with sympy python audit_p5_h22_component19_q_equals_phi_obstruction_candidate.py
+
+uv run --with sympy python audit_p4_component19_p0_finite_boundary_geometry.py
+uv run --with sympy python derive_p5_h22_component19_p0_ordinary_open_proof_b.py
+uv run --with sympy python audit_p5_h22_component19_p0_ordinary_obstruction_open.py
+
+# Expected assertion failure; retained REFUTED construction package:
+uv run --with sympy python derive_p5_h22_component19_p0_ordinary_boundary_candidate.py
 
 uv run --with sympy python derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
 uv run --with sympy python audit_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
