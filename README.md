@@ -12,18 +12,23 @@ The shortest route into the current proof frontier is
 It separates proved statements from exploratory leads, gives the focused
 replay commands, and records the next symbolic decision point.
 
-At this checkpoint the lower-pair pure-`P_4` locus is exhausted and an exact
-mixed-characteristic local-height certificate proves that the
-common-singleton family is a new eighteenth pure-`P_4` component orbit.
-Generic marked `H31/H22` fibres are now empty on all eighteen certified
-components.  The all-pair-ranks-at-least-three component problem still has
-four unresolved star/triangle cells.  Inside `triangle-(1,1,1)`, the
-tournament, fully kernel--kernel, and exactly-two-kernel strata are now in
-known component closures; only the exactly-one-kernel stratum remains there.
-The five-root no-torus locus has also been pushed from a hypersurface envelope
-to codimension at least two, and the first blocker surplus now has an
-arbitrary-order port-permanent formula.  These are strong local
-algebraic-geometric reductions, not a global proof: component exhaustiveness,
+At this checkpoint the lower-pair pure-`P_4` locus is exhausted and the
+exactly-one-kernel `triangle-(1,1,1)` residual is completely placed in
+component closures.  Three exact component theorems arising from that
+placement raise the certified lower bound from eighteen to **twenty-one**
+pure-`P_4` component orbits: the common-kernel vertical fivefold, the
+common-active binary-triangle fivefold, and the coincident-support rank-one
+star sixfold.  Consequently the whole `triangle-(1,1,1)` cell is closed, and
+the all-pair-ranks-at-least-three component problem now has three unresolved
+star/triangle cells.  Generic marked `H31/H22` fibres are proved empty on the
+first eighteen components; the three new components and their relevant
+boundaries have not yet received complete marked-fibre analysis.  The
+five-root no-torus locus has also been pushed from a hypersurface envelope to
+codimension at least two, and the first blocker surplus has an arbitrary-order
+port-permanent formula.  On the resulting common-port `P_6` wall, an exact
+rank-five configuration now extracts a necessary finite bilinear-gate
+problem from the first nonlinear factorisation condition.  These are strong
+local algebraic-geometric reductions, not a global proof: component exhaustiveness,
 special `P_5/P_6` restrictions, and the final local-to-global graph step are
 still missing.
 
@@ -643,8 +648,9 @@ strictly advance the finite frontier:
   one of four stars or four triangles.  Each selected edge relation has
   coefficient rank one or two, leaving only four relation-rank multisets per
   graph shape.  The `222` star, `221` star, `222` triangle, and `221`
-  triangle cells are already resolved.  Component exhaustiveness is now
-  concentrated in the four cells with at least two rank-one relations:
+  triangle cells were already resolved at that checkpoint.  Four cells with
+  at least two rank-one relations remained; the later results below close
+  `triangle-(1,1,1)`, leaving three cells:
   [`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md).
 - the common-singleton family in the `triangle-(1,1,1)` cell is now a
   certified eighteenth component orbit.  Its rational five-parameter chart
@@ -661,23 +667,43 @@ strictly advance the finite frontier:
   arc into component sixteen.  If exactly two relations are kernel--kernel,
   a binary exact pair and its complementary binary direction force the
   complete normal form onto a projective component-eleven boundary.  Thus
-  only the exactly-one-kernel pattern remains in `triangle-(1,1,1)`:
+  this left only the exactly-one-kernel pattern in `triangle-(1,1,1)`:
   [`P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md`](P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md),
   [`P4_TWO_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md`](P4_TWO_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md).
-- the remaining exactly-one-kernel pattern has an exact orientation/support
-  reduction rather than a claimed closure.  Its common-active, common-kernel,
-  and mixed-chain orientations split into eight residual entries.  One is in
-  component eighteen and the transverse common-kernel sheet is the `r=-2`
-  slice of component twelve; six explicit residual families remain open:
-  [`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md).
+- the exactly-one-kernel pattern is now completely placed.  Its eight-entry
+  orientation/support reduction splits into known component boundaries and
+  three new component orbits.  The dependent `tau=0` common-active sheet is
+  an exact component-eleven boundary; the mixed-chain transverse sheet lies
+  in component eight.  The common-kernel vertical family is a new
+  five-dimensional component nineteen, with generic kernel-endpoint
+  signature `(2,1,1,0)`:
+  [`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md),
+  [`P4_COMMON_ACTIVE_TAU_ZERO_COMPONENT_ELEVEN_INCLUSION.md`](P4_COMMON_ACTIVE_TAU_ZERO_COMPONENT_ELEVEN_INCLUSION.md),
+  [`P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md`](P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md),
+  [`P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md`](P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md).
+- the `tau!=0` common-active binary sheet is a new five-dimensional component
+  twenty.  Its generic profile is `(4,4,4,3,3,3)`, its intrinsic rank-one
+  kernel signature is `(2,2,0,0)`, and its apparent sixth tangent direction
+  is excluded by an exact integral local-height certificate.  The singleton
+  sheet is an explicit projective boundary of the same component:
+  [`P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md`](P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md).
+- the final mixed-chain vertical fibre opens into a new six-dimensional
+  coincident-support rank-one star, component twenty-one.  Its generic profile
+  is `(3,4,4,3,3,4)`.  A rank-thirteen incidence germ has one excess tangent
+  direction, but the omitted equations have nonzero quadratic terms
+  `7h^2/60` and `-7h^2/20`; hence the local dimension is exactly six.  The
+  entire projective residual fibre is its homogeneous boundary.  This closes
+  the full `triangle-(1,1,1)` cell:
+  [`P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md`](P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md).
 - component eighteen's complete generic marked `H31` and weighted `H22`
   fibres are empty.  In its intrinsic pure marking, three kernel rows equal
   the common singleton `e`.  After any source-coordinate deletion or either
   homogeneous weighted merge, those three extended rows occupy at most two
   columns, so Hall deficiency makes the all-kernel binary diagonal vanish
   identically before any mixed equation or ternary-rank test.  Thus all
-  eighteen certified components are generically closed for both fifth-mode
-  partition types:
+  the first eighteen certified components are generically closed for both
+  fifth-mode partition types.  Components nineteen through twenty-one remain
+  outside that marked-fibre statement:
   [`P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md),
   [`P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md).
 - the two directed-triangle components are now generically closed for marked
@@ -1196,11 +1222,21 @@ strictly advance the finite frontier:
   [`P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md`](P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md).
 - in the `1+1+1` common-port profile, the three overlapping pure-`P_5`
   deletions are exactly a marked `R_2 x R_3 -> R_5` Frobenius incidence.
-  The 27 cubic products lie in a four-space in the sharp rank-six example,
+  The 27 cubic products lie in a four-space in the original rank-six example,
   all 24 mixed products can lie on one line, and the complete linear
   relaxation is consistent.  The remaining obstruction is nonlinear shared
   factorisation, not another dimension count:
   [`P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md`](P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md).
+- that nonlinear wall now has an exact rank-five checkpoint.  The nine
+  forbidden quadrics span only a five-space while the three marked classes
+  remain independent; the mixed allowance is a two-plane with two explicit
+  decomposable generators.  A `5 x 5` bilinear catalecticant must have rank at
+  most two on the two unknown full-mode planes.  Twenty-two split minors give
+  sixteen bilinear gates and 53 minimal gate covers, with a unique four-gate
+  cover.  The pointwise rank bound does not itself recover the required fixed
+  common kernel plane.  The remaining minors, that common plane, and marked
+  rank-one conditions are still open:
+  [`P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md`](P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md).
 - independently, a Koszul and Chow-ring argument proves that every smooth
   expected-dimensional four-root complete intersection meets the torus.
   Combining this with tight four-blocker factorisation and the exact subrank

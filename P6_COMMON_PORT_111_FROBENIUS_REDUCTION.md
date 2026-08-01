@@ -14,6 +14,14 @@ dimension count or pair-product argument alone cannot finish the case.  The
 remaining issue is a marked triple-product factorisation for the three full
 modes.
 
+A subsequent exact checkpoint shows that the forbidden quadratic span can
+drop further from six to five while the marked quotient remains
+three-dimensional.  It extracts from the first nonlinear shared-factor
+condition a necessary rank-two `5 x 5` bilinear catalecticant and sixteen
+explicit gate forms.  Thus the rank-six example below is not a lower bound on
+`dim K`; see
+[`P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md`](P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md).
+
 ## The three overlapping pure deletions
 
 Work in the squarefree Frobenius algebra

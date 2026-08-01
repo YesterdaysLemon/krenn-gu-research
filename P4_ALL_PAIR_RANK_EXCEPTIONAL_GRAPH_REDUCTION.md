@@ -11,12 +11,13 @@ shape of the chosen graph and the number of rank-two relations, the
 all-pair-rank component-exhaustiveness problem therefore has only eight
 coarse cells.
 
-Four cells are already resolved by exact repository theorems: the all-rank-
-two star is empty, the `(2,2,1)` star is component ten or lower-pair, the
-all-rank-two triangle is a component-eleven divisor, and the `(2,2,1)`
-triangle is empty.  The four cells containing at least two rank-one
-relations have substantial orientation/support classifications but are not
-yet globally exhausted.
+Five cells are now resolved by exact repository theorems: the all-rank-two
+star is empty, the `(2,2,1)` star is component ten or lower-pair, the
+all-rank-two triangle is a component-eleven divisor, the `(2,2,1)` triangle
+is empty, and every stratum of the rank-one triangle lies in a certified
+component closure.  The three remaining cells containing at least two
+rank-one relations have substantial orientation/support classifications but
+are not yet globally exhausted.
 
 For the dated continuation map, including the now-certified
 common-singleton component and the residual strata in the last triangle
@@ -113,13 +114,13 @@ that number `0,1,2,3` with (4) gives eight coarse cells.
 | star | `(2,1,1)` | partially classified by the exact-pair, common-factor, and mixed-star normal forms; a global orientation/support closure is still missing |
 | star | `(1,1,1)` | directed radical and mixed orientations are substantially classified, including the projective disjoint and overlapping mixed charts; a global orientation/support closure is still missing |
 | triangle | `(2,1,1)` | crossed, common-factor, common-kernel, and support-one charts produce components one and eleven through thirteen or obstructions; their union is not yet proved exhaustive |
-| triangle | `(1,1,1)` | cyclic and transitive tournament orientations are classified; the common-singleton family is component eighteen; the fully kernel--kernel stratum lies in components sixteen or eighteen; and the exactly-two-kernel stratum lies in component eleven; the remaining exactly-one-kernel stratum has the finite residual ledger in [`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md) |
+| triangle | `(1,1,1)` | exhausted: tournament strata lie in known closures, the fully kernel--kernel stratum lies in components sixteen or eighteen, the exactly-two-kernel stratum lies in component eleven, and the exactly-one-kernel ledger closes through components eight, eleven, twelve, eighteen, nineteen, twenty, and twenty-one; see [`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md) |
 
 The lower-pair locus `min r_ij<=2` is already exhausted separately in
 [`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
-Therefore a proof that the last four rows of this table lie in the known
-component closures would prove that the eighteen-component list is
-exhaustive.
+Therefore a proof that the three still-open rows of this table lie in the
+certified component closures would prove that the current twenty-one-component
+list is exhaustive.
 
 Even that would not by itself prove `P_5 -> Delta_3` impossible: the marked
 `H31/H22` theorems are generic on several components, so special fibres must

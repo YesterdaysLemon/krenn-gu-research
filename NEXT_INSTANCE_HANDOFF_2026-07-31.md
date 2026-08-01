@@ -17,26 +17,25 @@ The active branch at wind-down is `codex/h22-disjoint-mixed-star`.  The most
 recent baseline commits before this continuation are:
 
 ```text
+b1c032d  Sharpen torus and residual blocker reductions
 4a871d2  Certify common-singleton component and sharpen blocker bridge
 43d93e2  Document symbolic frontier handoff
 96a6c92  Refresh lower-pair fibre status
-ae70348  Reduce P4 exhaustion to eight graph cells
 ```
 
 Recheck the branch and worktree before relying on those identifiers.
 
 ## Verified checkpoint
 
-Four statements organize the current frontier.
+Five statements organize the current frontier.
 
 1. **The lower-pair locus is exhausted.**  If a nonzero pure `P_4`
    compression has `min r_ij<=2`, it lies in one of four known component
    closures.  See
    [`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
-2. **All eighteen certified components are generically closed at `P_5`.**
-   Their marked `H31` and weighted `H22` fibres are empty over the generic
-   point.  For the first seventeen, component fifteen was the last completed
-   case:
+2. **The first eighteen components are generically closed at `P_5`.**  Their
+   marked `H31` and weighted `H22` fibres are empty over the generic point.
+   For the first seventeen, component fifteen was the last completed case:
    [`P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md)
    and
    [`P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
@@ -52,10 +51,20 @@ Four statements organize the current frontier.
    orbits.  See
    [`P4_COMMON_SINGLETON_COMPONENT.md`](P4_COMMON_SINGLETON_COMPONENT.md).
    Its generic `H31/H22` fibres are the two cases just cited.
-4. **The remaining component question is an eight-cell `K_4` problem.**
+4. **The full `triangle-(1,1,1)` cell is now closed.**  The final
+   exactly-one-kernel stratum splits among old component boundaries and three
+   new orbits.  The common-kernel vertical branch is component nineteen; the
+   common-active binary branch is component twenty, with its singleton sheet
+   as a boundary; and the mixed-chain vertical branch lies on the new
+   coincident-support rank-one star sixfold, component twenty-one.  See
+   [`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md),
+   [`P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md`](P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md),
+   [`P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md`](P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md), and
+   [`P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md`](P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md).
+5. **The remaining component question is a three-cell `K_4` problem.**
    Perfect pairing forces the rank-three edges to contain a star or triangle;
-   the three selected relations have matrix ranks one or two.  Four of the
-   eight coarse cells are resolved and four remain.  See
+   the three selected relations have matrix ranks one or two.  Five of the
+   eight coarse cells are resolved and three remain.  See
    [`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md).
 
 The unresolved cells are:
@@ -65,27 +74,21 @@ The unresolved cells are:
 | star | `(2,1,1)` | global orientation/support closure |
 | star | `(1,1,1)` | global orientation/support closure |
 | triangle | `(2,1,1)` | exhaust the union of known charts |
-| triangle | `(1,1,1)` | classify the last stratum with exactly one kernel--kernel edge |
 
-The last row has narrowed substantially.  Tournament orientations are
-classified; the common-singleton family is component eighteen; the fully
-kernel--kernel stratum lies in components sixteen or eighteen; and the
-exactly-two-kernel stratum lies in component eleven.  See
-[`P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md`](P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md)
-and
-[`P4_TWO_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md`](P4_TWO_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md).
-The last exactly-one-kernel stratum is not closed, but it is now reduced to
-three orientations and eight explicit residual entries.  Its transverse
-common-kernel sheet lies in component twelve; the remaining projective
-fibres retain explicit normal forms and are honestly marked open in
-[`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md).
+The removed fourth row, `triangle-(1,1,1)`, is completely resolved:
+tournament orientations were already classified; the common-singleton family
+is component eighteen; the fully kernel--kernel stratum lies in components
+sixteen or eighteen; the exactly-two-kernel stratum lies in component eleven;
+and all eight residual exactly-one-kernel entries now have exact component
+placements.  Components nineteen through twenty-one do **not** yet inherit
+the generic or boundary marked-`P_5` exclusions proved for the first eighteen.
 
 ## What a global proof would still need
 
 The dependency chain is strict:
 
 ```text
-classify the four open all-pair P4 cells
+classify the three open all-pair P4 cells
                  |
                  v
 prove all special/boundary P5 fibres empty
@@ -97,9 +100,10 @@ justify the local P5 reduction and gluing at arbitrary graph order
 global Krenn--Gu nonexistence theorem
 ```
 
-The present work is closest to the first box.  Even a proof that the
-eighteen-component list is exhaustive would not automatically close special
-fibres or the final local-to-global step.
+The present work is closest to the first box.  Even a proof that the current
+twenty-one-component list is exhaustive would not automatically close generic
+or special fibres on components nineteen through twenty-one, or the final
+local-to-global step.
 
 There is now a second, genuinely arbitrary-order route into the same `P_5`
 bottleneck:
@@ -150,9 +154,15 @@ Coordinate-column restrictions and the natural zero-row lift of the known
 support-four `P_5` family are impossible, but dense maps remain.  In the most
 constrained `1+1+1` profile, the three overlapping pure-`P_5` deletions reduce
 to a marked `R_2 x R_3 -> R_5` Frobenius incidence.  Its linear relaxation is
-exactly consistent, leaving nonlinear shared factorisation as the next wall:
+exactly consistent.  A new rank-five configuration proves that `dim K>=6`
+would be false: it has `dim K=5`, marked quotient rank three, and a
+two-dimensional decomposable mixed allowance.  The first nonlinear wall has
+a necessary rank-two `5 x 5` bilinear catalecticant.  Twenty-two split minors
+reduce to sixteen gates and 53 minimal gate covers, but the remaining minors,
+fixed common kernel, and marked rank-one conditions are still open:
 [`P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md`](P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md),
-[`P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md`](P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md).
+[`P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md`](P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md), and
+[`P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md`](P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md).
 
 There is also a separate exact eight-vertex discriminant reduction.  A smooth
 expected two-dimensional four-root complete intersection is connected by its
@@ -252,9 +262,11 @@ the intrinsic pure basis the kernel rows are `(ell,e,e,e)`.  After every
 `H31` deletion and both weighted `H22` merge directions, the final three
 extended rows use at most two columns.  Their all-kernel permanent is
 identically zero by Hall deficiency, simultaneously in all affine markings,
-extension entries, source scalings, and homogeneous weights.  The remaining
-work is the rest of the `triangle-(1,1,1)` cell, projective/special component
-boundaries, and special universal `P_5` fibres.
+extension entries, source scalings, and homogeneous weights.  The
+`triangle-(1,1,1)` cell is now closed by the later placement theorems.  The
+remaining work is the other three all-pair graph cells, generic and special
+marked fibres on components nineteen through twenty-one, projective/special
+component boundaries, and the universal `P_5` step.
 
 ## Focused replay
 
@@ -303,11 +315,26 @@ python audit_p4_triple_kernel_rank_one_triangle_classification.py
 uv run --with sympy python verify_p4_two_kernel_rank_one_triangle_classification.py
 python audit_p4_two_kernel_rank_one_triangle_classification.py
 
+uv run --with sympy python verify_p4_common_kernel_vertical_triangle_component.py
+python audit_p4_common_kernel_vertical_triangle_component.py
+
+uv run --with sympy python verify_p4_common_active_binary_triangle_component.py
+uv run --with sympy python audit_p4_common_active_binary_triangle_component.py
+
+uv run --with sympy python verify_p4_mixed_chain_transverse_component_inclusion.py
+uv run --with sympy python audit_p4_mixed_chain_transverse_component_inclusion.py
+
+uv run --with sympy python verify_p4_coincident_support_rank_one_star_component.py
+python audit_p4_coincident_support_rank_one_star_component.py
+
 python verify_p6_simultaneous_kernel_and_natural_lift.py
 python audit_p6_simultaneous_kernel_and_natural_lift.py
 
 python verify_p6_common_port_111_frobenius_reduction.py
 python audit_p6_common_port_111_frobenius_reduction.py
+
+uv run --with sympy python verify_p6_common_port_111_rank_five_catalecticant.py
+python audit_p6_common_port_111_rank_five_catalecticant.py
 ```
 
 If plain `python` lacks a dependency, use the repository's isolated verifier
@@ -322,7 +349,7 @@ the algebra system or claim a replay that did not finish.
   used in a characteristic-zero proof only with a written integral
   height/flatness argument and pinned source metadata.
 - Label a timeout or failed elimination as unresolved, not empty.
-- Do not call the eighteen-component list exhaustive or promote generic fibre
+- Do not call the twenty-one-component list exhaustive or promote generic fibre
   obstructions to special/projective fibres without the missing
   classifications.
 - Prefer exact identities, normal forms, projective covers, and local algebra

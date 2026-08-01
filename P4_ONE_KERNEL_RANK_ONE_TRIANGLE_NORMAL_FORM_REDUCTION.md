@@ -19,11 +19,16 @@ common-kernel orientation has a dense branch which is exactly the `r=-2`
 slice of component twelve.  The other branches reduce to the explicit
 finite list of normal forms below.
 
-This is deliberately a **reduction theorem, not a component-exhaustion
-theorem**.  In particular, the common-active support boundaries, the
-common-kernel vertical fibre, and both mixed-chain fibres have no component
-containment asserted here.  They are precise residual targets rather than
-new components.  No parameter search or elimination is used.
+This note is deliberately a **reduction theorem, not by itself a
+component-exhaustion theorem**.  Subsequent exact placement theorems have now
+closed every residual target displayed here: the dependent `tau=0` sheet is
+a boundary of component eleven, the `tau!=0` sheets lie in component twenty,
+the common-kernel vertical fibre is component nineteen, the mixed-chain
+transverse fibre lies in component eight, and the mixed-chain vertical fibre
+lies in the new component twenty-one.  Thus the exactly-one-kernel stratum is
+now exhausted by component closures, although marked `P_5` boundary fibres
+and the global conjecture remain open.  No parameter search or elimination
+is used in this reduction.
 
 ## The three orientations
 
@@ -288,21 +293,28 @@ component-containment problems.
 
 ## Exact residual ledger
 
-The exactly-one-kernel selected triangle is therefore reduced to the
-following finite list:
+The exactly-one-kernel selected triangle was reduced here to the following
+finite list.  The right column records the later exact placement results:
 
 ```text
 common active, tau=0, independent products      -> component 18,
-common active, tau=0, dependent products        -> (6)--(7), open,
-common active, tau!=0, singleton exact pair     -> (9)--(10), open,
-common active, tau!=0, binary exact pair        -> (9)--(10), open,
+common active, tau=0, dependent products        -> component 11 boundary,
+common active, tau!=0, singleton exact pair     -> component 20 boundary,
+common active, tau!=0, binary exact pair        -> component 20,
 common kernel, transverse branch                -> component 12,
-common kernel, vertical branch                  -> (15), open,
-mixed chain, transverse branch                  -> (20)--(21), open,
-mixed chain, vertical branch                    -> (22), open.   (23)
+common kernel, vertical branch                  -> component 19,
+mixed chain, transverse branch                  -> component 8 boundary,
+mixed chain, vertical branch                    -> component 21 boundary. (23)
 ```
 
-Equations (4), (12), and (18) are transparent exact replay data for the
-reduction.  A separate computer verifier was intentionally not added in
-this bounded pass; the next useful task is component placement of one of
-the explicitly listed residual fibres, not another broad elimination.
+The placement certificates are:
+
+- [`P4_COMMON_ACTIVE_TAU_ZERO_COMPONENT_ELEVEN_INCLUSION.md`](P4_COMMON_ACTIVE_TAU_ZERO_COMPONENT_ELEVEN_INCLUSION.md),
+- [`P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md`](P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md),
+- [`P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md`](P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md),
+- [`P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md`](P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md), and
+- [`P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md`](P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md).
+
+Equations (4), (12), and (18) remain transparent exact replay data for the
+original reduction.  The placement notes each carry their own verifier and
+independent audit.
