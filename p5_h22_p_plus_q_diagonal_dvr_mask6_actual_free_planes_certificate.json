@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "role": "construction",
+  "date_utc": "2026-08-01T11:57:25Z",
+  "git_commit": "28cb33964950b9caee96ee0ca8ee8e047d3f4d3c",
+  "claim_label": "VERIFIED",
+  "discovery_claim_label": "CANDIDATE",
+  "scope": "weighted H22 on every actual normal-support mask-6 embedded-P3 stratum of the diagonal-DVR p+q=0 wall",
+  "inputs": {
+    "p5_h22_p_plus_q_diagonal_dvr_coverage.json": "874272d3d86ec635f1a0bd854b7078b8f91a2323aa1f7ebfb219406680549a6e",
+    "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md": "667611de1e8bd08dd8c1a5b3b3c431ab57df523f834828c4258d881833b9ee82",
+    "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md": "dfc2ca99ac668605b54a08b2a4dfb48f74abba97ae2ecc405121d21b8e7f3f4a"
+  },
+  "method": "exact characteristic-zero permanent reconstruction in original wall coordinates with the standard 01|23 matching and shared homogeneous weight",
+  "coordinates": {
+    "source_order": ["e", "A", "B", "C"],
+    "matching": "01|23",
+    "L": "c1*A-c2*B",
+    "M": "c1*A+c2*B",
+    "fixed_planes": ["U1=<e,L>", "U2=<e,L>", "U3=<e,M>"],
+    "free_plane": "U0=<L,C+xi*e+upsilon*M>",
+    "parameter_open": "c1*c2!=0"
+  },
+  "actual_families": [
+    {
+      "id": "finite_generic_negative_y_embedded_p3",
+      "coefficient_law": "xi=eps_x*eta; upsilon=-eps_y*Delta/2",
+      "nonzero_when_flagged": "eta*Delta!=0",
+      "flags": [
+        {"first": 0, "second": 0, "eps_x": 0, "eps_y": 0},
+        {"first": 1, "second": 0, "eps_x": 1, "eps_y": 0},
+        {"first": 0, "second": 1, "eps_x": 0, "eps_y": 1},
+        {"first": 1, "second": 1, "eps_x": 1, "eps_y": 1}
+      ]
+    },
+    {
+      "id": "finite_half_centre_negative_y_embedded_p3",
+      "coefficient_law": "xi=-eps_x*k; upsilon=-eps_y*Delta/2",
+      "nonzero_when_flagged": "k*Delta!=0",
+      "flags": [
+        {"first": 0, "second": 0, "eps_x": 0, "eps_y": 0},
+        {"first": 1, "second": 0, "eps_x": 1, "eps_y": 0},
+        {"first": 0, "second": 1, "eps_x": 0, "eps_y": 1},
+        {"first": 1, "second": 1, "eps_x": 1, "eps_y": 1}
+      ]
+    },
+    {
+      "id": "infinity_lower_pair_embedded_p3",
+      "coefficient_law": "xi=eps_x*kappa; upsilon=-eps_l*Delta/2; eps_u=0 because y<-r",
+      "nonzero_when_flagged": "kappa*Delta!=0",
+      "flags": [
+        {"first": 0, "second": 0, "eps_x": 0, "eps_l": 0, "eps_u": 0},
+        {"first": 1, "second": 0, "eps_x": 1, "eps_l": 0, "eps_u": 0},
+        {"first": 0, "second": 1, "eps_x": 0, "eps_l": 1, "eps_u": 0},
+        {"first": 1, "second": 1, "eps_x": 1, "eps_l": 1, "eps_u": 0}
+      ]
+    }
+  ],
+  "orientation": {
+    "wall_basis": "alpha=(L,e,e,e), beta=(C+xi*e+upsilon*M,L,L,M)",
+    "wall_pure_support": {"1110": "-2*c1*c2"},
+    "projective_normalization": "the sole nonzero coefficient may be scaled to -2 because c1*c2!=0",
+    "standard_marking_basis": "swap alpha3 and beta3 inside U3 only",
+    "standard_pure_support": {"1111": "-2*c1*c2"},
+    "marking": "beta_i -> beta_i+h_i*alpha_i",
+    "matching_or_weight_changed_by_basis_swap": false
+  },
+  "certificate": {
+    "D01": "(rho*z0+sigma*z1,z2,z3,extension)",
+    "D23": "(z0,z1,rho*z2+sigma*z3,extension)",
+    "D01_all_alpha_diagonal": "0",
+    "D01_reason": "all four projected transverse alpha rows have zero retained C target coordinate",
+    "D23_all_alpha_diagonal": "0",
+    "D23_reason": "the four extension-column cofactors vanish; the two middle rows coincide with e and the two remaining mixed cofactors cancel between L and M",
+    "D01_all_alpha_extension_cofactors": ["0", "0", "0", "0"],
+    "D23_all_alpha_extension_cofactors": ["0", "0", "0", "0"],
+    "homogeneous_weight_coverage": ["[0:1]", "[1:0]", "rho*sigma!=0"],
+    "binary_requirement": "a genuine Delta2 image needs both complementary all-alpha and all-beta diagonal coefficients nonzero",
+    "conclusion": "neither direction is binary, so no weighted H22 pair exists",
+    "status": "VERIFIED"
+  },
+  "failures_retained": [
+    "the refuted projective normal-chart transport is not used",
+    "no source permutation, matching permutation, affine weight division, or endpoint rebalance is used"
+  ],
+  "limitations": "VERIFIED after a fresh no-import replay, restricted to the three actual mask-6 diagonal-DVR aggregate strata and their twelve flags; no claim about other projective embedded-P3 points, arbitrary-order local-to-global reduction, component exhaustiveness, a prize graph, or the global Krenn-Gu conjecture",
+  "global_krenn_gu_resolved": false,
+  "independent_verifier_complete": true
+}
