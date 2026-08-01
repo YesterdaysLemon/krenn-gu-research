@@ -24,6 +24,18 @@ H22_RANK_TWO = (
 H22_RANK_ONE = ROOT / "P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md"
 AUDIT_REPORT = ROOT / "P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_VERIFICATION.md"
 AUDIT_SCRIPT = ROOT / "audit_p5_h22_embedded_p3_component_r_zero_boundary_independent.py"
+ENDPOINT_REPORT = ROOT / (
+    "P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_T_NONZERO_WEIGHT_"
+    "ENDPOINTS_OBSTRUCTION_CANDIDATE.md"
+)
+ENDPOINT_VERIFICATION = ROOT / (
+    "P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_T_NONZERO_WEIGHT_"
+    "ENDPOINTS_VERIFICATION.md"
+)
+ENDPOINT_VERIFIER = ROOT / (
+    "audit_p5_h22_embedded_p3_component_r_zero_t_nonzero_"
+    "weight_endpoints_verifier.py"
+)
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 MIXED = WORDS[1:-1]
@@ -363,6 +375,9 @@ def main():
             H22_RANK_ONE,
             AUDIT_REPORT,
             AUDIT_SCRIPT,
+            ENDPOINT_REPORT,
+            ENDPOINT_VERIFICATION,
+            ENDPOINT_VERIFIER,
         )
     }
     output = {
@@ -370,7 +385,7 @@ def main():
         "role": "proof_a",
         "date_utc": datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "git_commit": git_commit(),
-        "claim_label": "REFUTED",
+        "claim_label": "VERIFIED",
         "scope": "weighted H22 on the embedded-P3 free-plane r0=0 divisor",
         "inputs": inputs,
         "method": "homogeneous transport, exact Q-elimination, saturated kernels, and inherited verified H31 covers",
@@ -379,7 +394,7 @@ def main():
             NOTE.name: sha256(NOTE),
             Path(__file__).name: sha256(Path(__file__)),
         },
-        "limitations": "the full homogeneous-divisor proof is REFUTED: the t0=0 corner is independently verified and the t0!=0 nonendpoint transport is supported, but the two homogeneous weight endpoints remain UNKNOWN",
+        "limitations": "the original full-divisor transport proof remains REFUTED, but the t0=0 corner, t0!=0 nonendpoint transport, and two separately reconstructed homogeneous endpoints are independently verified; no projective normal-base closure or global claim",
         "field": "Q (characteristic zero)",
         "finite_projected_ideal_generator_count": finite_size,
         "infinity_projected_ideal_is_unit": infinity_size == 1,
@@ -391,8 +406,9 @@ def main():
         "deep_h0_one_H31_families": deep_families,
         "t_zero_corner_obstruction": "VERIFIED",
         "t_nonzero_nonendpoint_transport_to_normalized_chart": True,
-        "t_nonzero_endpoint_fibres": "UNKNOWN",
-        "full_r_zero_divisor_obstruction_proved": False,
+        "t_nonzero_endpoint_fibres": "VERIFIED_BY_SEPARATE_THEOREM",
+        "original_full_divisor_transport_proof_refuted": True,
+        "full_r_zero_divisor_obstruction_proved": True,
         "finite_field_computation_used": False,
         "fresh_independent_verifier_complete": True,
         "global_problem_resolved": False,

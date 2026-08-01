@@ -1,4 +1,4 @@
-# Refuted full weighted-`H22` obstruction on the embedded-`P3` free-plane `r0=0` divisor
+# Verified weighted-`H22` obstruction on the embedded-`P3` free-plane `r0=0` divisor
 
 Discovery run report (before independent verification):
 
@@ -24,9 +24,9 @@ limitations: candidate pending independent replay; the H31 corner theorem is an 
 
 ## Status and frozen claim
 
-**REFUTED as a proof of the full homogeneous divisor.**  The exact
-characteristic-zero calculation below independently verifies the `t0=0`
-corner obstruction on the omitted free-plane divisor
+**VERIFIED after a separate endpoint repair; the original full-divisor proof
+is REFUTED.**  The exact characteristic-zero calculation below independently
+verifies the `t0=0` corner obstruction on the omitted free-plane divisor
 
 ```text
 U0=span((1,0,r0,t0),(0,1,S,U)),        r0=0.
@@ -37,8 +37,11 @@ replayed the corner elimination and the verified `H31` dependency without
 importing this derivation.  It also found that the proposed `t0!=0` source
 transport reverses the `D23` weight but preserves the `D01` weight.  An
 invertible rebalance repairs this only when both homogeneous weight coordinates
-are nonzero.  The `t0!=0` fibres at `[rho:sigma]=[0:1]` and `[1:0]` therefore
-remain `UNKNOWN`.  No finite-field calculation is used as proof.
+are nonzero.  A later original-coordinate theorem separately reconstructs and
+excludes the two `t0!=0` fibres at `[rho:sigma]=[0:1]` and `[1:0]`, with a
+fresh no-import audit.  Thus the entire displayed `r0=0` divisor is now
+verified, without repairing the invalid transport.  No finite-field
+calculation is used as proof.
 
 ## Direct corner model and homogeneous directions
 
@@ -198,11 +201,16 @@ generic, rank-two-line, and rank-one weighted-`H22` theorems apply.  At
 `[rho:sigma]=[0:1]` and `[1:0]` that rebalance is singular, so the two endpoint
 fibres are not covered by this argument.
 
+They are covered instead by the direct endpoint theorem
+`P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_T_NONZERO_WEIGHT_ENDPOINTS_OBSTRUCTION_CANDIDATE.md`.
+
 ## Honest boundary and failure ledger
 
 - The direct `t0=0` characteristic-zero elimination and kernel saturation are
-  independently verified.  The full homogeneous-divisor claim is `REFUTED`
-  because the two `t0!=0` weight endpoints remain `UNKNOWN`.
+  independently verified.  The original full-divisor transport proof remains
+  `REFUTED`, but its two missing endpoint fibres are now independently closed
+  by a separate original-coordinate argument.  The combined divisor theorem
+  is `VERIFIED`.
 - A slower exploratory elimination over `Q(S,U)` with the finite weight also
   eliminated returned `<h0,Phi>` after 47 seconds.  It is corroboration only
   and is superseded by the faster global ideal equality above.
@@ -225,6 +233,10 @@ Run
 uv run --with sympy python derive_p5_h22_embedded_p3_component_r_zero_boundary_obstruction.py
 
 uv run --with sympy python audit_p5_h22_embedded_p3_component_r_zero_boundary_independent.py
+
+uv run --with sympy python derive_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_obstruction_candidate.py
+
+uv run --with sympy python audit_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_verifier.py
 ```
 
 The script reconstructs the permanent contractions from the four planes,
