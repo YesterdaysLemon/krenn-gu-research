@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "role": "construction",
+  "date_utc": "2026-08-01T12:41:25Z",
+  "git_commit": "7f1e282c08eb030dcad35b36b3201a871702464d",
+  "claim_label": "VERIFIED",
+  "discovery_claim_label": "CANDIDATE",
+  "scope": "generic weighted H22 fibre of component nineteen, the common-kernel vertical triangle",
+  "inputs": {
+    "P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md": "ce333e8605b78e17c2e6b7cfe91fd369e89afe0d3aed65c7df35f82fee319634",
+    "P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md": "3b49c47626131fa10729961bc700d46b518a102799504c3796fb0a5b932c5832",
+    "P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md": "da64a3ee55d5dfa361a70cb771196f76f93d13b3d61df358442a22e1e72de1a8"
+  },
+  "method": "exact characteristic-zero permanent reconstruction, projective binary and shared-compatibility elimination, complete shared-kernel frame, and one fixed one-marked minor",
+  "normal_form": {
+    "alpha": [
+      "(q-phi)*(Abar+p*B)-p*(Bbar+q*B)",
+      "B",
+      "Bbar",
+      "Abar"
+    ],
+    "beta": [
+      "Abar+p*B",
+      "A",
+      "A",
+      "B+phi*Bbar"
+    ],
+    "pure_support": {"1111": "4*p"},
+    "function_field": "Q(p,q,phi)",
+    "generic_open_used": "p*q*phi*(q-phi)!=0"
+  },
+  "projective_weight_cover": {
+    "finite_chart": "[lambda:1]",
+    "infinity": "[1:0]",
+    "D01_binary_finite_projection": ["1"],
+    "D01_binary_infinity_projection": ["1"],
+    "D23_binary_finite_projection": [
+      "h3",
+      "(q-phi)*h0+1",
+      "h1*h2*((q+1)*lambda+q-1)"
+    ],
+    "D23_binary_infinity_projection": ["h3", "(q-phi)*h0+1", "h1*h2"]
+  },
+  "shared_compatibility": {
+    "required_case": "D01 pure and nonzero; D23 genuinely binary",
+    "finite_projection": ["lambda-1", "h3", "h1", "(q-phi)*h0+1"],
+    "infinity_projection": ["1"],
+    "remaining_marking": "h0=-1/(q-phi), h1=0, h2=t, h3=0",
+    "remaining_weight": "[1:1]",
+    "shared_extension_frame": [
+      ["0", "-1/p", "phi/p", "0", "1", "0", "0", "0"],
+      ["0", "0", "0", "0", "0", "1", "0", "0"]
+    ],
+    "shared_extension": "C*vC+D*vD",
+    "D01_pure_diagonal": "4*(p*D-phi*t*C)",
+    "D23_binary_diagonals": ["-4*phi*(q-phi)*C/p", "4*C"],
+    "common_genuine_condition": "C*p*phi*(q-phi)*(p*D-phi*t*C)!=0",
+    "fixed_minor": {
+      "direction": "D01",
+      "mode": 3,
+      "rows": [1, 2, 5, 7],
+      "columns": [0, 1, 2, 3],
+      "determinant": "-64*C*p*(p*D-phi*t*C)^2"
+    },
+    "conclusion": "the fixed minor is nonzero on every common genuine point",
+    "status": "VERIFIED"
+  },
+  "failed_lemmas": [
+    {
+      "claim": "the two binary diagonals are structurally Hall-deficient",
+      "status": "REFUTED",
+      "reason": "both D23 diagonals and the required D01 pure diagonal are nonzero on the complete shared branch"
+    },
+    {
+      "claim": "separate low-rank D01 and D23 extensions form an H22 survivor",
+      "status": "REFUTED",
+      "reason": "at weight [1-phi:phi+1] exact low-rank extensions exist separately, but their extension vectors differ and the shared compatibility projection excludes them"
+    },
+    {
+      "claim": "one preselected marked mode closes each individual D23 binary marking line",
+      "status": "REFUTED",
+      "reason": "rank-deficient individual survivors remain; compatibility must be imposed before the transverse fixed minor appears"
+    }
+  ],
+  "conclusion": "generic weighted H22 fibre of component nineteen is empty",
+  "conclusion_label": "VERIFIED",
+  "limitations": "verified after a fresh no-import replay; generic function-field theorem only; no special-parameter or projective component-boundary fibres, pure-P4 component exhaustiveness, arbitrary-order local-to-global reduction, prize graph, or global Krenn-Gu conclusion",
+  "finite_field_computation_used": false,
+  "broad_brute_force_used": false,
+  "independent_verifier_complete": true,
+  "global_krenn_gu_resolved": false
+}
