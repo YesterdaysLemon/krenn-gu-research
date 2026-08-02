@@ -1547,10 +1547,16 @@ strictly advance the finite frontier:
   Hence every fixed-order marked-`H31` extension-pole arc over the finite
   nonzero sheet is empty.  For homogeneous weighted `H22` at weight infinity, ten exact
   minors give full extension rank everywhere on `(p,q)!=(0,0)`, so every
-  extension-pole arc there is closed.  At the exact finite-weight point
-  `(p,q,kappa,ell,lambda)=(2,3,5,7,1)`, the rank-seven kernel's complete
-  first normal has diagonal pattern `(0,0,0,*)`, so that point is a false
-  positive.  The rest of the finite-weight `H22` coupled-kernel locus, the zero base, parameter-
+  extension-pole arc there is closed.  At finite weight on
+  `p*ell*(ell^2-1)!=0`, three exact maximal minors now classify the complete
+  extension rank-drop locus as `lambda=1` or
+  `(kappa=0,lambda=-1)`.  Both loci have rank seven and an explicit unique
+  kernel line.  Their complete first normals, including all component and
+  weight tangents and arbitrary subordinate extensions, have at most one of
+  the four required diagonals; hence neither contains genuine weighted
+  `H22`.  Finite marking tangents are included by triangular invariance.
+  Possible higher-order arcs after a zero first normal, the omitted
+  `p=0,ell=0,+/-1` extension charts, the zero base, parameter-
   boundary/marking-pole intersections, and arbitrary
   ambient/source/projective degenerations remain separate; in particular,
   a `P5` leading term whose `P4` restriction vanishes is still unclassified:
@@ -1571,7 +1577,8 @@ strictly advance the finite frontier:
   [`P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md),
   [`P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md`](P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md),
   [`P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md`](P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md), and
-  [`P5_COMPONENT21_FINITE_WEIGHT_EXTENSION_KERNEL_RATIONAL_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_FINITE_WEIGHT_EXTENSION_KERNEL_RATIONAL_NORMAL_OBSTRUCTION.md).
+  [`P5_COMPONENT21_FINITE_WEIGHT_EXTENSION_KERNEL_RATIONAL_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_FINITE_WEIGHT_EXTENSION_KERNEL_RATIONAL_NORMAL_OBSTRUCTION.md), strengthened on the generic finite chart by
+  [`P5_COMPONENT21_FINITE_H22_EXTENSION_RANK_DROP_GENERIC_NORMAL_CLOSURE.md`](P5_COMPONENT21_FINITE_H22_EXTENSION_RANK_DROP_GENERIC_NORMAL_CLOSURE.md).
 - component eighteen's complete generic marked `H31` and weighted `H22`
   fibres are empty.  In its intrinsic pure marking, three kernel rows equal
   the common singleton `e`.  After any source-coordinate deletion or either
