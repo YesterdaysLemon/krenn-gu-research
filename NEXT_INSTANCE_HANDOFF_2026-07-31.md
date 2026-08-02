@@ -1314,6 +1314,15 @@ inside it and one-tangent edges to fixed endpoints.  This saturation is
 necessary but not sufficient for cofactor realizability or mixed-colour
 cancellation:
 [`ROOT_RESTRICTED_JET_COMPANION_MATCHING_SATURATION_NECESSITY.md`](ROOT_RESTRICTED_JET_COMPANION_MATCHING_SATURATION_NECESSITY.md).
+For the full root set, zero or one effective nonroot endpoint yields a
+strictly stronger cofactor-span constraint even with arbitrary root--root
+tangent edges.  Endpoint parity makes every surviving matching use the same
+deletion set, so the graph derivative lies on one actual complementary-
+hafnian line.  The full GHZ derivative can have rank at most one only if at
+least two distinct coordinate-axis tangent types occur; when there is no
+endpoint and the root count is odd, all three types occur.  In particular
+the uniform balanced resonance is impossible in this topology:
+[`ROOT_AT_MOST_ONE_ENDPOINT_FULL_JET_AXIS_NECESSITY.md`](ROOT_AT_MOST_ONE_ENDPOINT_FULL_JET_AXIS_NECESSITY.md).
 Nor can one obtain a contradiction from scalar principal-cofactor algebra
 alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal
 two-vertex cofactors at a fixed perfect-matching point splits into one
@@ -1625,6 +1634,8 @@ uv run --with sympy python verify_root_finite_nonroot_companion_endpoint_count_o
 python audit_root_finite_nonroot_companion_endpoint_count_obstruction.py
 uv run --with sympy python verify_root_restricted_jet_companion_matching_saturation_necessity.py
 python audit_root_restricted_jet_companion_matching_saturation_necessity.py
+uv run --with sympy python verify_root_at_most_one_endpoint_full_jet_axis_necessity.py
+python audit_root_at_most_one_endpoint_full_jet_axis_necessity.py
 uv run --with sympy python verify_hafnian_principal_cofactor_gradient_dominance.py
 python audit_hafnian_principal_cofactor_gradient_dominance.py
 

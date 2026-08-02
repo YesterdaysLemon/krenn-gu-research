@@ -447,6 +447,15 @@ one-tangent edges to fixed endpoints and tangent--tangent edges internally.
 Existence of such a matching is only necessary; complementary cofactors and
 mixed-colour cancellation remain to be imposed:
 [`ROOT_RESTRICTED_JET_COMPANION_MATCHING_SATURATION_NECESSITY.md`](ROOT_RESTRICTED_JET_COMPANION_MATCHING_SATURATION_NECESSITY.md).
+The full-root jet gives a stronger conclusion when there are at most one
+effective nonroot endpoint.  Arbitrary root--root tangent matchings then all
+use the same complementary deletion set, so the graph derivative has actual
+tensor-image rank at most one.  Exact decomposable-form rank forces at least
+two distinct coordinate-axis tangent covector types; with no endpoint and an
+odd number of roots, all three types are forced.  Thus the uniform balanced
+resonance cannot use dense root--root edges to evade a zero/one-endpoint
+topology:
+[`ROOT_AT_MOST_ONE_ENDPOINT_FULL_JET_AXIS_NECESSITY.md`](ROOT_AT_MOST_ONE_ENDPOINT_FULL_JET_AXIS_NECESSITY.md).
 Even scalar complementary-hafnian algebra supplies no hidden relation on
 the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
 Jacobian of the complete principal-cofactor map at a perfect-matching point
