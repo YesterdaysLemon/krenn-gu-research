@@ -351,7 +351,10 @@ Six statements organize the current frontier.
    `(p,(1/h0)q)` DVR/Puiseux normal.  For each of `h1,h2,h3=infinity`, the
    boundary has zero `P4` restriction, but 24 direct unit ideals close every
    nonzero first normal and every nonzero monomial `(s_i p,s_i q)` normal.
-   Simultaneous marking poles, extension poles, and arbitrary ambient/source/projective
+   All six pairwise marking-pole corners are now closed on every weighted
+   normal with nonzero `P4` restriction by 24 additional direct unit ideals.
+   Triple/quadruple marking poles, parameter-boundary intersections,
+   extension poles, and arbitrary ambient/source/projective
    limits remain separate; a `P5` leading term with zero `P4` restriction is
    not covered by this normal calculation:
    [`P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md`](P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md) and
@@ -363,7 +366,8 @@ Six statements organize the current frontier.
    [`P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md) and
    [`P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md), together with
    [`P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md) and
-   [`P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md).
+   [`P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md), together with
+   [`P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md).
    Component twenty-two is the unequal-complement common-kernel fivefold.
    Its complete generic marked `H31` fibre is empty after exact projection to
    four marking branches and four uniform one-marked minors:
@@ -1029,7 +1033,10 @@ monomial `(p,(1/h0)q)` DVR/Puiseux normal are empty too, by twelve direct
 characteristic-zero unit ideals.  Each of the other single marking poles has
 zero boundary restriction, but every nonzero first normal and every nonzero
 monomial `(s_i p,s_i q)` normal is empty by 24 further unit ideals.
-Simultaneous marking poles, extension poles, and arbitrary ambient/source/projective
+At all six pairwise marking-pole corners, the boundary restriction is again
+zero, but every weighted normal with nonzero `P4` restriction is empty by 24
+more unit ideals.  Triple/quadruple marking poles, parameter-boundary
+intersections, extension poles, and arbitrary ambient/source/projective
 degenerations remain open.  In particular, the argument does not classify
 an ambient `P5` leading term whose `P4` restriction is zero:
 [`P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md) and
@@ -1041,7 +1048,8 @@ an ambient `P5` leading term whose `P4` restriction is zero:
 [`P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md) and
 [`P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md), together with
 [`P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md) and
-[`P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md).
+[`P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md), together with
+[`P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md).
 
 ## What a global proof would still need
 
@@ -1285,6 +1293,13 @@ zero by endpoint pigeonhole while the GHZ triple jet has rank two.  Any
 survivor needs nonprojective blocker variation, a root--root channel, or a
 third nonroot companion endpoint:
 [`ROOT_TWO_RESIDUAL_ONLY_COMPANION_THIRD_JET_OBSTRUCTION.md`](ROOT_TWO_RESIDUAL_ONLY_COMPANION_THIRD_JET_OBSTRUCTION.md).
+The endpoint pigeonhole has an arbitrary-`t` form.  With `r` roots, `t`
+effective nonroot companions, projectively constant blocker rows, and no
+root--root restricted channel, exact mixed derivatives force
+`t>=ceiling(2r/3)`.  Each coordinate-axis tangent covector occurs at least
+`r-t` times and at most `3t-2r` roots are non-axis.  This does not exclude
+the root--root or nonprojective escape routes:
+[`ROOT_FINITE_NONROOT_COMPANION_ENDPOINT_COUNT_OBSTRUCTION.md`](ROOT_FINITE_NONROOT_COMPANION_ENDPOINT_COUNT_OBSTRUCTION.md).
 Nor can one obtain a contradiction from scalar principal-cofactor algebra
 alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal
 two-vertex cofactors at a fixed perfect-matching point splits into one
@@ -1503,6 +1518,8 @@ uv run --with sympy python verify_p5_component21_single_marking_infinity_first_n
 uv run --with sympy python audit_p5_component21_single_marking_infinity_first_normal_obstruction.py
 uv run --with sympy python verify_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py
 uv run --with sympy python audit_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py
+uv run --with sympy python verify_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction.py
+uv run --with sympy python audit_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction.py
 
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
@@ -1588,6 +1605,8 @@ uv run --with sympy python verify_root_resonant_mixed_jet_parity_classification.
 python audit_root_resonant_mixed_jet_parity_classification.py
 uv run --with sympy python verify_root_two_residual_only_companion_third_jet_obstruction.py
 python audit_root_two_residual_only_companion_third_jet_obstruction.py
+uv run --with sympy python verify_root_finite_nonroot_companion_endpoint_count_obstruction.py
+python audit_root_finite_nonroot_companion_endpoint_count_obstruction.py
 uv run --with sympy python verify_hafnian_principal_cofactor_gradient_dominance.py
 python audit_hafnian_principal_cofactor_gradient_dominance.py
 

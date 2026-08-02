@@ -429,6 +429,12 @@ so the graph triple derivative is zero against the GHZ rank-two triple jet.
 A survivor must introduce nonprojective blocker variation, a root--root
 channel, or a third nonroot companion endpoint:
 [`ROOT_TWO_RESIDUAL_ONLY_COMPANION_THIRD_JET_OBSTRUCTION.md`](ROOT_TWO_RESIDUAL_ONLY_COMPANION_THIRD_JET_OBSTRUCTION.md).
+Quantitatively, if there are `t` effective nonroot endpoints and still no
+root--root restricted channel, then `t>=ceiling(2r/3)`.  Each coordinate-axis
+tangent covector must occur at least `r-t` times, and at most `3t-2r` roots
+may be non-axis.  Thus no bounded endpoint set can support arbitrary root
+order in this topology:
+[`ROOT_FINITE_NONROOT_COMPANION_ENDPOINT_COUNT_OBSTRUCTION.md`](ROOT_FINITE_NONROOT_COMPANION_ENDPOINT_COUNT_OBSTRUCTION.md).
 Even scalar complementary-hafnian algebra supplies no hidden relation on
 the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
 Jacobian of the complete principal-cofactor map at a perfect-matching point
@@ -1449,8 +1455,12 @@ strictly advance the finite frontier:
   DVR/Puiseux normal, for both marked `H31` and weighted `H22`.  At each of
   `h1,h2,h3=infinity` the boundary has zero `P4` restriction, but 24 direct
   unit ideals close every nonzero first normal and every nonzero monomial
-  `(s_i p,s_i q)` DVR/Puiseux normal.  Simultaneous marking poles, extension
-  poles, and arbitrary
+  `(s_i p,s_i q)` DVR/Puiseux normal.  At all six pairwise marking-pole
+  corners, 24 more direct unit ideals close every weighted normal with
+  nonzero `P4` restriction; the controlling monomials are
+  `(s_jp,s_0s_jq)` for pairs containing zero and `(s_is_jp,s_is_jq)` for the
+  other pairs.  Triple/quadruple marking poles, parameter-boundary
+  intersections, extension poles, and arbitrary
   ambient/source/projective degenerations remain separate; in particular,
   a `P5` leading term whose `P4` restriction vanishes is still unclassified:
   [`P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
@@ -1465,7 +1475,8 @@ strictly advance the finite frontier:
   [`P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md) and
   [`P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md), together with
   [`P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md) and
-  [`P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md).
+  [`P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md), together with
+  [`P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md).
 - component eighteen's complete generic marked `H31` and weighted `H22`
   fibres are empty.  In its intrinsic pure marking, three kernel rows equal
   the common singleton `e`.  After any source-coordinate deletion or either
