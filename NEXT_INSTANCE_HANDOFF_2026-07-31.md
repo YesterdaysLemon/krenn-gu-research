@@ -130,8 +130,13 @@ determinant divisors and an explicit quadratic exceptional-weight divisor
 slice over `Q(s)` proves that `N=0` generically has a genuine normalized
 binary `D01` section, but all four paired `D23` one-marked maps have rank
 four.  Thus the generic exceptional divisor is a false positive, not a
-counterexample; only its retained lower-dimensional chart, determinant,
-diagonal, and rank-minor intersections remain open.  A proposed narrower cover
+counterexample.  Its intersections with `e=0,j=0,s=0,lambda=0` are now
+closed exactly.  The only new `lambda=0` family has a genuine two-parameter
+binary section, but the coefficient ideal of one paired mode-zero determinant
+is the unit ideal; the split `e=s=0,k=+/-j` sheets are covered by two
+complementary mode-one minors.  The remaining residual begins with `A_2=0`,
+the opposite-diagonal and rank-norm divisors, and the listed chart/projective
+boundaries.  A proposed narrower cover
 `ejs(e^2s^2-1)(js+1)=0` remains withdrawn:
 it split an equation into `1,k` coefficients even though the free extensions
 may be quadratic-field-valued.
@@ -590,8 +595,11 @@ Six statements organize the current frontier.
    section is generically a genuine shared binary incidence, but exact
    iterated norms show all four paired `D23` maps have rank four.  Hence the
    generic exceptional divisor is a false positive.  Its retained
-   lower-dimensional chart, determinant, diagonal, and rank-minor
-   intersections remain open.  Retain the earlier narrower cover only as a withdrawn
+   `e=0,j=0,s=0,lambda=0` intersections are now empty, including the genuine
+   binary survivor families on `lambda=0` and `e=s=0,k=+/-j`, because fixed
+   paired `D23` maps have rank four.  The remaining lower-dimensional
+   residual starts with `A_2=0`, opposite-diagonal/rank-norm divisors, and
+   projective component boundaries.  Retain the earlier narrower cover only as a withdrawn
    descent-restricted failed route.
    Finite `D23` has a three-branch
    necessary cover whose full `lambda=1` slice is empty.  The other displayed
@@ -609,6 +617,7 @@ Six statements organize the current frontier.
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_T_ZERO_AND_H_BOUNDARY_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_T_ZERO_AND_H_BOUNDARY_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_ALGEBRAIC_FALSE_POSITIVE.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_ALGEBRAIC_FALSE_POSITIVE.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_GENERIC_FALSE_POSITIVE.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_GENERIC_FALSE_POSITIVE.md),
+   [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_LINEAR_SOLVE_DIVISORS_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_LINEAR_SOLVE_DIVISORS_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md), and
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_LAMBDA_ONE_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_LAMBDA_ONE_OBSTRUCTION.md).
    The equal-endpoint two-inward stratum is empty by
@@ -1386,6 +1395,8 @@ uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_algebraic_false_positive.py
 uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_generic_false_positive.py
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_generic_false_positive.py
+uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_linear_solve_divisors_obstruction.py
+uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_linear_solve_divisors_obstruction.py
 
 uv run --with sympy python verify_arbitrary_surplus_common_row_full_span_obstruction.py
 uv run --with sympy python audit_arbitrary_surplus_common_row_full_span_obstruction.py
