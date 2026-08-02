@@ -148,8 +148,14 @@ numerators have gcd `R^2`, and the only new denominator fibre is a degree-four
 `lambda=5` false positive.  Globally, the opposite marked diagonal factors
 as `kG`; after standing and `A_0A_2` factors, the exact resultant
 `Res_lambda(N,G)` has one irreducible factor `U(a,b)`, and every point there
-is nongenuine.  The simultaneous paired-`D23` rank-drop locus on `G!=0` and
-the listed chart/projective boundaries remain open.  A proposed narrower cover
+is nongenuine.  On the retained ordinary `B=N=0,G!=0` sheet, two exact sparse
+paired-`D23` minors force simultaneous rank drop into
+`w=0`, `k=1`, or `Tbar=A=0`.  The `k=1` branch is already-separated
+`a=+/-1` or `b=+/-1` boundary.  The complete joint branch is the irreducible
+sextic `3b^6-3b^4-6b^2-2=0`, and an exact degree-six-field minor has nonzero
+norm, so its paired `D23` map has rank four.  Only `w=0` remains from this
+cover.  That divisor and the listed chart/projective boundaries remain open.
+A proposed narrower cover
 `ejs(e^2s^2-1)(js+1)=0` remains withdrawn:
 it split an equation into `1,k` coefficients even though the free extensions
 may be quadratic-field-valued.
@@ -678,9 +684,12 @@ Six statements organize the current frontier.
    opposite-diagonal/rank-norm residual, including its new degree-four
    `lambda=5` companion fibre.  The global opposite-diagonal-zero divisor is
    now completely classified and nongenuine: its only new parameter image is
-   the irreducible resultant factor `U(a,b)=0`.  The remaining ordinary
-   residual is simultaneous paired-`D23` rank drop on `G!=0`, together with
-   projective component boundaries.  Retain the earlier narrower cover only as a withdrawn
+   the irreducible resultant factor `U(a,b)=0`.  On the retained ordinary
+   `B=N=0,G!=0` sheet, a sparse two-minor cover confines simultaneous paired-
+   `D23` rank drop to `w=0`, `k=1`, or `Tbar=A=0`.  The second branch is old
+   boundary and the complete third branch is rank four over its irreducible
+   sextic field.  Hence only `w=0` remains from this cover, together with the
+   separate projective/component boundaries.  Retain the earlier narrower cover only as a withdrawn
    descent-restricted failed route.
    Finite `D23` has a three-branch
    necessary cover whose full `lambda=1` slice is empty.  The other displayed
@@ -703,6 +712,8 @@ Six statements organize the current frontier.
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A0_COMPANION_DIVISOR_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A0_COMPANION_DIVISOR_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_OPPOSITE_DIAGONAL_DIVISOR.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_OPPOSITE_DIAGONAL_DIVISOR.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_E1_J2_SLICE_COMPLETE_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_E1_J2_SLICE_COMPLETE_OBSTRUCTION.md),
+   [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_SPARSE_TWO_MINOR_COVER.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_SPARSE_TWO_MINOR_COVER.md),
+   [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_SPARSE_COVER_NON_W_BRANCHES_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_SPARSE_COVER_NON_W_BRANCHES_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md), and
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_LAMBDA_ONE_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_LAMBDA_ONE_OBSTRUCTION.md).
    The equal-endpoint two-inward stratum is empty by
@@ -1628,6 +1639,10 @@ uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a0_companion_c0_leading_boundary_obstruction.py
 uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_opposite_diagonal_divisor.py
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_opposite_diagonal_divisor.py
+uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_d23_sparse_two_minor_cover.py
+uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_d23_sparse_two_minor_cover.py
+uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_d23_sparse_cover_non_w_branches_obstruction.py
+uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_d23_sparse_cover_non_w_branches_obstruction.py
 
 uv run --with sympy python verify_arbitrary_surplus_common_row_full_span_obstruction.py
 uv run --with sympy python audit_arbitrary_surplus_common_row_full_span_obstruction.py
