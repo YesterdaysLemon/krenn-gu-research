@@ -253,9 +253,11 @@ sparse paired-`D23` minors now force every simultaneous rank-drop point into
 `w=0`, `k=1`, or `Tbar=A=0`.  The `k=1` branch is entirely old
 `a=+/-1` or `b=+/-1` boundary, while the complete joint branch is the
 irreducible sextic `3b^6-3b^4-6b^2-2=0` and has an exact rank-four `D23`
-witness.  Thus only the divisor `w=0` remains from this cover.  That divisor,
-the other named chart/projective boundaries, and any locus outside the
-retained ordinary sheet remain open.
+witness.  On the last divisor `w=0`, a mode-one sparse cofactor minor is
+`8X_-^2X_+`; the common conjugate norm of `X_-` and `X_+` is a retained unit.
+Thus every alternative in this sparse cover is closed on the retained
+ordinary sheet.  The other named chart/projective boundaries and any locus
+outside that sheet remain open.
 An earlier narrower cover is retained only as a withdrawn descent-only failed
 route because it split `1,k` coefficients while the free extensions may be
 quadratic-field-valued.  See
@@ -272,7 +274,8 @@ quadratic-field-valued.  See
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_OPPOSITE_DIAGONAL_DIVISOR.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_OPPOSITE_DIAGONAL_DIVISOR.md), together with
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_E1_J2_SLICE_COMPLETE_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_E1_J2_SLICE_COMPLETE_OBSTRUCTION.md), and the sparse-cover pair
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_SPARSE_TWO_MINOR_COVER.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_SPARSE_TWO_MINOR_COVER.md) and
-[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_SPARSE_COVER_NON_W_BRANCHES_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_SPARSE_COVER_NON_W_BRANCHES_OBSTRUCTION.md).
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_SPARSE_COVER_NON_W_BRANCHES_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_SPARSE_COVER_NON_W_BRANCHES_OBSTRUCTION.md), completed by
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_W_ZERO_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_W_ZERO_OBSTRUCTION.md).
 Finite `D23` has a three-branch necessary cover and its full
 `lambda=1` all-marking slice is empty.  The other displayed finite branches
 remain unknown.  The remaining special/projective
