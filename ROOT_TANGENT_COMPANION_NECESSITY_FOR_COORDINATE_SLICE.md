@@ -14,10 +14,11 @@ More generally, at any fully supported root `i` of a hypothetical global
 witness, at least one of the following must occur:
 
 1. the root--blocker covectors vary nonprojectively to first order at `x_i`;
-2. a root--root edge has a nonzero first-order evaluation at the fixed other
-   root; or
-3. a root--residual edge has a nonzero first-order evaluation at a fixed
-   simultaneous-kernel vector.
+2. the root--root and root--residual first-order evaluation covectors that
+   actually carry nonzero companion cofactors span dimension at least two.
+
+In particular, one isolated tangent companion cannot repair a projectively
+constant root--blocker derivative.
 
 This proves a necessary off-slice escape, not the impossibility of the whole
 coordinate-monomial branch.  The companion terms may exist and may repair
@@ -106,14 +107,45 @@ ell_i=e_0^*/x_0=e_1^*/x_1=e_2^*/x_2.              (8)
 
 This contradiction proves the tangent no-go.
 
+## One companion is still insufficient
+
+The same derivative comparison gives a sharper rank statement.  Keep the
+projectively constant hypothesis (3), but now allow root--root and
+root--residual tangent companions.  Each companion edge contributes a fixed
+blocker tensor multiplied by one covector in `y`.  If the span of all such
+effective companion covectors has dimension `t`, the derivative map from the
+three-dimensional root tangent space has image dimension at most
+
+```text
+1+t.                                                 (9)
+```
+
+The `1` is the scalar row-replacement term `ell_i(y)Lambda`.  On the GHZ
+side, (6) has coefficient matrix
+
+```text
+diag(d_0/x_0,d_1/x_1,d_2/x_2),                     (10)
+```
+
+which has rank three.  Therefore `1+t>=3`, so
+
+```text
+t>=2.                                                (11)
+```
+
+Thus a globally extendable coordinate slice with projectively constant
+root--blocker tangent rows requires at least two linearly independent
+effective root--root/root--residual companion covectors at every root.
+
 ## Consequence for the local-to-global frontier
 
 The locally universal coordinate-monomial model is therefore definitively
 not a full graph witness.  Any genuine global point over the same fixed
 cofactor slice needs an escape from (3)--(4): a nonprojective root endpoint
-or at least one root--root/root--residual tangent companion.  These companion
-terms arise before second-order or multi-slice gluing and give the smallest
-new algebraic layer not visible in the frozen cofactor incidence.
+or at least two independent effective root--root/root--residual tangent
+companions.  These companion terms arise before second-order or multi-slice
+gluing and give the smallest new algebraic layer not visible in the frozen
+cofactor incidence.
 
 The theorem does **not** say that the companion layer is inconsistent.  It
 only proves that further slice-only elimination cannot complete the global

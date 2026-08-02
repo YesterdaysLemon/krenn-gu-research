@@ -68,6 +68,8 @@ def audit_linear_forms() -> dict[str, object]:
         ((0, 1), (0, 1), (1, 5)),
     )
     assert len(set(required)) == 3
+    target_derivative_rank = 3
+    assert 1 + 1 < target_derivative_rank
     probes = (
         ((1, 0, 0), ((1, 2), (0, 1), (0, 1))),
         ((0, 1, 0), ((0, 1), (1, 3), (0, 1))),
@@ -78,6 +80,9 @@ def audit_linear_forms() -> dict[str, object]:
         "required_covectors": required,
         "distinct_required_covectors": len(set(required)),
         "basis_probes": probes,
+        "target_derivative_rank": target_derivative_rank,
+        "constant_row_plus_one_companion_rank_bound": 2,
+        "minimum_effective_companion_covector_span": 2,
     }
 
 
@@ -101,6 +106,7 @@ def main() -> None:
                 "arbitrary_r_count_ledger": formula_ledgers,
                 "linear_form_audit": audit_linear_forms(),
                 "tangent_companion_escape_necessary": True,
+                "one_companion_sufficient_with_constant_root_row": False,
                 "full_coordinate_branch_excluded": False,
                 "finite_field_used": False,
                 "global_conjecture_resolved": False,

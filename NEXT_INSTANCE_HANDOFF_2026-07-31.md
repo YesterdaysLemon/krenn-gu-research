@@ -1091,8 +1091,10 @@ diagonal coefficients instead differentiate by `y_c/x_i[c]`; coefficient
 comparison would make one covector equal all three independent coordinate
 covectors.  Therefore the locally universal construction cannot be a full
 graph witness.  Any genuine coordinate-branch extension must have a
-nonprojective root--blocker tangent or a nonzero root--root/root--residual
-companion.  Those companion identities, not further frozen-slice rank tests,
+nonprojective root--blocker tangent or at least two independent effective
+root--root/root--residual companions.  A constant row plus only one companion
+has derivative rank at most two, while the GHZ derivative has rank three.
+Those companion identities, not further frozen-slice rank tests,
 are the next arbitrary-order algebraic layer:
 [`ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md`](ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md).
 All surviving

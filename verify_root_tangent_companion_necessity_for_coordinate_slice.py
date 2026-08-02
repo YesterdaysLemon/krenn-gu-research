@@ -84,10 +84,18 @@ def coefficient_contradiction() -> dict[str, object]:
     # The first two systems demand both l0=1/x0 and l0=0.
     contradiction = sp.factor(equations[0][0] - equations[1][0])
     assert contradiction == -1 / x0
+    d0, d1, d2 = sp.symbols("d0 d1 d2", nonzero=True)
+    target_derivative_matrix = sp.diag(d0 / x0, d1 / x1, d2 / x2)
+    assert target_derivative_matrix.rank() == 3
+    one_companion_rank_bound = 1 + 1
+    assert one_companion_rank_bound < target_derivative_matrix.rank()
     return {
         "coefficient_systems": [[str(value) for value in row] for row in equations],
         "incompatible_difference": str(contradiction),
         "basis_vector_test": ["1/x0", "0", "0"],
+        "target_derivative_rank": target_derivative_matrix.rank(),
+        "projectively_constant_plus_one_companion_rank_bound": one_companion_rank_bound,
+        "minimum_effective_companion_covector_span": 2,
     }
 
 
@@ -122,6 +130,7 @@ def main() -> None:
                 "coefficient_contradiction": coefficient_contradiction(),
                 "slice_universal_construction_extends_globally": False,
                 "coordinate_branch_excluded_in_full": False,
+                "projectively_constant_root_requires_companion_span_at_least": 2,
                 "finite_field_used": False,
                 "global_conjecture_resolved": False,
             },
