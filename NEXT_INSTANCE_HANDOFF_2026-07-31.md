@@ -1083,6 +1083,18 @@ no-go, not a full graph realization or counterexample; both the cofactor
 incidence and all-full-span permanent branch remain open:
 [`TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md`](TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md) and
 [`TWO_RESIDUAL_COORDINATE_MONOMIAL_SLICE_UNIVERSALITY_NOGO.md`](TWO_RESIDUAL_COORDINATE_MONOMIAL_SLICE_UNIVERSALITY_NOGO.md).
+The first off-slice obstruction is now replayable.  If every root--blocker
+edge in that realization has its rank-one left endpoint, while root--root
+and root--residual tangent companions vanish, differentiating at a root
+multiplies the whole cofactor tensor by one scalar `ell_i(y)`.  The three GHZ
+diagonal coefficients instead differentiate by `y_c/x_i[c]`; coefficient
+comparison would make one covector equal all three independent coordinate
+covectors.  Therefore the locally universal construction cannot be a full
+graph witness.  Any genuine coordinate-branch extension must have a
+nonprojective root--blocker tangent or a nonzero root--root/root--residual
+companion.  Those companion identities, not further frozen-slice rank tests,
+are the next arbitrary-order algebraic layer:
+[`ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md`](ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md).
 All surviving
 projectively varying cores with torus-intersecting `J_H`, the effective
 factorization, and the rank-one synchronized curves remain open:
@@ -1322,6 +1334,8 @@ uv run --with sympy python verify_two_residual_nonblocker_two_port_factorisation
 uv run --with sympy python audit_two_residual_nonblocker_two_port_factorisation.py
 uv run --with sympy python verify_two_residual_coordinate_monomial_slice_universality_nogo.py
 uv run --with sympy python audit_two_residual_coordinate_monomial_slice_universality_nogo.py
+uv run --with sympy python verify_root_tangent_companion_necessity_for_coordinate_slice.py
+uv run --with sympy python audit_root_tangent_companion_necessity_for_coordinate_slice.py
 
 uv run --with sympy python verify_p5_h31_disjoint_secant_component_generic_obstruction.py
 python audit_p5_h31_disjoint_secant_component_generic_obstruction.py

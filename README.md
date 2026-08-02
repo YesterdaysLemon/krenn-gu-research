@@ -335,7 +335,14 @@ factorized all-full-span `P_(r+2)` datum embeds as a subfamily.  Consequently
 the cofactor equation, blocker incidence, row spans, and matching recursion
 alone cannot close this branch; an off-slice or genuinely global compatibility
 condition is necessary.  This is a no-go theorem for that proof route, not a
-graph witness.  All six
+graph witness.  The first missing off-slice equation is now exact as well:
+differentiating at any fully supported root makes the rank-one slice model
+vary by one scalar `ell_i(y)`, while the three GHZ coefficients must vary
+independently as `y_c/x_i[c]`.  Hence that local universal construction
+cannot itself be a full witness.  Any genuine extension needs a
+nonprojective root--blocker tangent or a nonzero root--root/root--residual
+tangent companion.  This proves the necessity of the companion layer, not
+its inconsistency.  All six
 known common-port missing-colour profiles still admit exact full-span
 incidence models, so none is eliminated by these rank conditions alone.
 Other all-full-span cores and the synchronized curves remain open:
@@ -353,7 +360,8 @@ Other all-full-span cores and the synchronized curves remain open:
 [`P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md`](P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md), and the all-surplus generalization
 [`ARBITRARY_SURPLUS_COMMON_ROW_FULL_SPAN_OBSTRUCTION.md`](ARBITRARY_SURPLUS_COMMON_ROW_FULL_SPAN_OBSTRUCTION.md), together with
 [`TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md`](TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md) and
-[`TWO_RESIDUAL_COORDINATE_MONOMIAL_SLICE_UNIVERSALITY_NOGO.md`](TWO_RESIDUAL_COORDINATE_MONOMIAL_SLICE_UNIVERSALITY_NOGO.md).
+[`TWO_RESIDUAL_COORDINATE_MONOMIAL_SLICE_UNIVERSALITY_NOGO.md`](TWO_RESIDUAL_COORDINATE_MONOMIAL_SLICE_UNIVERSALITY_NOGO.md), together with
+[`ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md`](ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md).
 These are strong local algebraic-geometric
 reductions, not a global proof:
 special `P_5/P_6` restrictions and the final local-to-global graph step are
