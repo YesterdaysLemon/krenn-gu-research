@@ -95,17 +95,15 @@ weighted `H22`, including `k=0` and every homogeneous weight.  The finite
 types, including `k=0`.  Its two projective parameter endpoints are likewise
 empty for complete marked `H31` and homogeneous weighted `H22` at every
 finite `k`, including `k=0`; a genuine shared-binary `H22` line is eliminated
-by exact ternary compatibility rather than mixed-module emptiness.  On its `s=0,k=infinity` corner, the affine `r=0`
-divisor is finite-weight ternary-`H22` empty even though its shared binary
-module has a genuine survivor family, while the marked-`H31` fibre is empty
-for every finite `(r,t)`.  A corner-only mode swap transfers the finite-weight
-`H22` closure to `t=0` without changing weight.  Separate exact projective-
-weight saturations and one-third-row determinants close `[1:0]` on both
-finite coordinate divisors as well.  Its natural projective `r/t` boundary,
-including both infinity curves and their common point, is empty for complete
-marked `H31` and homogeneous weighted `H22`; only the finite `r*t!=0`
-weighted interior away from the closed diagonal `r=t` and hyperbola `r*t=1`
-remains on this displayed corner.  On the `s=1`
+by exact ternary compatibility rather than mixed-module emptiness.  The
+separate `s=0,k=infinity` corner is now completely closed for fixed-order
+marked `H31` and homogeneous weighted `H22` on the displayed
+`P1_r x P1_t`.  Exact packages cover both coordinate axes, the diagonal,
+the hyperbola `rt=1`, the full projective `r/t` boundary, the generic
+function-field interior, the antidiagonal (including `r^2=-1`), and the four
+unit lines `r=+/-1,t=+/-1`; genuine shared-binary survivors on several
+special lines are killed by uniform one-marked ternary minors.  Arbitrary
+source-torus and ambient/Grassmann compactifications remain separate.  On the `s=1`
 face, however, those two parameter-infinity curves are empty for complete
 marked `H31` and homogeneous weighted `H22` at every finite remaining
 parameter.  Their simultaneous triple-infinity intersection is one smooth
@@ -299,11 +297,15 @@ Six statements organize the current frontier.
    saturated projection gives one shared binary branch over
    `Q(p,kappa,ell)` for every finite and projective homogeneous weight when
    `p*(ell^2-1)!=0`; it is uniformly killed by a mode-three rank-four minor,
-   including the displayed branch at `kappa=0`.  The endpoint intersections
-   `ell=+/-1`, specialization-only `kappa=0` markings, and `p=q=0` remain
-   separate:
+   including the displayed branch at `kappa=0`.  Direct endpoint
+   eliminations close all four `ell=+/-1` intersections for every homogeneous
+   weight and every `kappa`, including `kappa=0` rank jumps and
+   specialization-only marking branches.  Only the collapsed raw `p=q=0`
+   zero-basis degeneration still requires regular replacement or blow-up
+   charts:
    [`P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md`](P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md) and
-   [`P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md).
+   [`P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md), together with
+   [`P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md).
    Component twenty-two is the unequal-complement common-kernel fivefold.
    Its complete generic marked `H31` fibre is empty after exact projection to
    four marking branches and four uniform one-marked minors:
@@ -926,12 +928,16 @@ charts, and three `ell=infinity` primes checked independently.  The two sign
 divisors `q=+p` and `q=-p` are additionally closed for complete
 homogeneous weighted `H22` on `p*(ell^2-1)!=0`; their exact shared binary
 branches are uniform rank-four ternary false positives, including the
-displayed `kappa=0` continuation.  The intersections `ell=+/-1` and `p=q=0`
-remain outside that theorem.  Arbitrary
+displayed `kappa=0` continuation.  Direct exact endpoint packages close
+`ell=+/-1` for both signs, both homogeneous-weight charts, and all `kappa`,
+including every `kappa=0` specialization branch.  The collapsed raw
+`p=q=0` zero-basis degeneration alone remains outside these sign-divisor
+theorems.  Arbitrary
 ambient/source/projective degenerations outside this normalized
 compactification remain open:
 [`P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md) and
-[`P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md).
+[`P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md), together with
+[`P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md).
 
 ## What a global proof would still need
 
@@ -1312,6 +1318,8 @@ uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_compone
 
 uv run --with sympy python verify_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py
 uv run --with sympy python audit_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py
+uv run --with sympy python verify_p5_component21_q_plus_minus_p_ell_endpoint_complete_obstruction.py
+uv run --with sympy python audit_p5_component21_q_plus_minus_p_ell_endpoint_complete_obstruction.py
 
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py

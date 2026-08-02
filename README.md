@@ -1330,15 +1330,19 @@ strictly advance the finite frontier:
   `q=-p`, exact saturated projection over `Q(p,kappa,ell)` gives one shared
   binary branch for every finite and projective homogeneous weight when
   `p*(ell^2-1)!=0`; a uniform mode-three rank-four minor kills it, including
-  the displayed branch at `kappa=0`.  The endpoint intersections
-  `ell=+/-1`, possible specialization-only `kappa=0` markings, and `p=q=0`
-  remain separate.  Arbitrary ambient/source/projective
+  the displayed branch at `kappa=0`.  Direct endpoint eliminations also close
+  all four `ell=+/-1` intersections for every homogeneous weight and every
+  `kappa`, including the `kappa=0` rank-two kernels and all
+  specialization-only marking branches.  Only the collapsed raw
+  `p=q=0` zero-basis degeneration still requires regular replacement or
+  blow-up charts.  Arbitrary ambient/source/projective
   degenerations outside that normalized compactification remain separate:
   [`P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
   [`P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md),
   [`P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md`](P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md),
   [`P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md), and
-  [`P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md).
+  [`P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md), together with
+  [`P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md).
 - component eighteen's complete generic marked `H31` and weighted `H22`
   fibres are empty.  In its intrinsic pure marking, three kernel rows equal
   the common singleton `e`.  After any source-coordinate deletion or either
