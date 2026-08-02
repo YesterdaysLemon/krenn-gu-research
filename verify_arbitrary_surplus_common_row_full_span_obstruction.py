@@ -13,6 +13,7 @@ import sympy as sp
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "ARBITRARY_SURPLUS_COMMON_ROW_FULL_SPAN_OBSTRUCTION.md"
 DEPENDENCY = ROOT / "TWO_PORT_SEVEN_BLOCKER_REDUCTION.md"
+PROFILE_DEPENDENCY = ROOT / "P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md"
 
 
 def symbolic_product_grading(root_count: int, surplus: int) -> dict[str, int]:
@@ -59,6 +60,125 @@ def permanent(matrix: tuple[tuple[sp.Expr, ...], ...]) -> sp.Expr:
             for permutation in itertools.permutations(range(size))
         )
     )
+
+
+def factored_port_laplace(root_count: int, port_count: int) -> dict[str, int]:
+    mode_count = root_count + port_count
+    entries = sp.symbols(f"x0:{mode_count * mode_count}")
+    matrix = tuple(
+        tuple(entries[row * mode_count + column] for column in range(mode_count))
+        for row in range(mode_count)
+    )
+    full = permanent(matrix)
+    laplace = sp.S.Zero
+    for port_columns in itertools.combinations(range(mode_count), port_count):
+        port_column_set = set(port_columns)
+        root_columns = tuple(
+            column for column in range(mode_count) if column not in port_column_set
+        )
+        root_minor = tuple(
+            tuple(matrix[row][column] for column in root_columns)
+            for row in range(root_count)
+        )
+        port_minor = tuple(
+            tuple(matrix[row][column] for column in port_columns)
+            for row in range(root_count, mode_count)
+        )
+        laplace += permanent(root_minor) * permanent(port_minor)
+
+    assert sp.expand(full - laplace) == 0
+    full_terms = len(sp.Poly(full, *entries).terms())
+    laplace_terms = len(sp.Poly(sp.expand(laplace), *entries).terms())
+    assert full_terms == laplace_terms == math.factorial(mode_count)
+    return {
+        "roots": root_count,
+        "ports": port_count,
+        "blockers": mode_count,
+        "full_permanent_terms": full_terms,
+        "laplace_terms": laplace_terms,
+    }
+
+
+def exact_rank(rows: tuple[tuple[int, ...], ...]) -> int:
+    return int(sp.Matrix(rows).rank())
+
+
+def common_port_profile_full_span_models() -> tuple[dict[str, object], ...]:
+    basis = ((1, 0, 0), (0, 1, 0), (0, 0, 1))
+    profiles = {
+        "empty": (0, 0, 0, 0, 0, 0),
+        "1": (1, 0, 0, 0, 0, 0),
+        "1+1": (1, 2, 0, 0, 0, 0),
+        "1+1+1": (1, 2, 4, 0, 0, 0),
+        "2": (3, 0, 0, 0, 0, 0),
+        "2+1": (3, 4, 0, 0, 0, 0),
+    }
+    models = []
+    for profile, masks in profiles.items():
+        root_rows_by_mode: list[tuple[tuple[int, ...], ...]] = []
+        port_rows: list[tuple[int, ...]] = []
+        full_index = 0
+        realized_masks = []
+        for mask in masks:
+            missing = tuple(color for color in range(3) if mask & (1 << color))
+            if not missing:
+                shift = full_index % 3
+                full_index += 1
+                root_rows = tuple(basis[(row + shift) % 3] for row in range(5))
+                port_row = basis[shift]
+            elif len(missing) == 1:
+                present = tuple(color for color in range(3) if color not in missing)
+                plane_basis = (basis[present[0]], basis[present[1]])
+                root_rows = tuple(plane_basis[row % 2] for row in range(5))
+                port_row = basis[missing[0]]
+            else:
+                first, second = missing
+                third = next(color for color in range(3) if color not in missing)
+                plane_basis = (
+                    basis[third],
+                    tuple(
+                        basis[first][color] - basis[second][color] for color in range(3)
+                    ),
+                )
+                root_rows = tuple(plane_basis[row % 2] for row in range(5))
+                port_row = basis[first]
+
+            root_rank = exact_rank(root_rows)
+            assert root_rank == (3 if not missing else 2)
+            assert exact_rank(root_rows + (port_row,)) == 3
+            realized_mask = sum(
+                1 << color
+                for color in range(3)
+                if exact_rank(root_rows + (basis[color],)) > root_rank
+            )
+            assert realized_mask == mask
+            root_rows_by_mode.append(root_rows)
+            port_rows.append(port_row)
+            realized_masks.append(realized_mask)
+
+        root_family_ranks = tuple(
+            exact_rank(tuple(root_rows_by_mode[mode][row] for mode in range(6)))
+            for row in range(5)
+        )
+        port_family_rank = exact_rank(tuple(port_rows))
+        assert root_family_ranks == (3, 3, 3, 3, 3)
+        assert port_family_rank == 3
+        models.append(
+            {
+                "profile": profile,
+                "missing_masks": realized_masks,
+                "mode_root_ranks": [
+                    exact_rank(root_rows) for root_rows in root_rows_by_mode
+                ],
+                "mode_augmented_ranks": [
+                    exact_rank(root_rows_by_mode[mode] + (port_rows[mode],))
+                    for mode in range(6)
+                ],
+                "root_family_ranks": root_family_ranks,
+                "port_family_rank": port_family_rank,
+            }
+        )
+    return tuple(models)
 
 
 def first_polar_case(root_count: int, surplus: int) -> dict[str, int]:
@@ -162,11 +282,14 @@ def diagonal_no_line_and_nonzero_polar(degree: int) -> dict[str, object]:
 def main() -> None:
     theorem = THEOREM.read_text(encoding="utf-8")
     assert DEPENDENCY.exists()
+    assert PROFILE_DEPENDENCY.exists()
     for phrase in (
         "Exact arbitrary-order characteristic-zero necessary theorem",
         "L_i=(C^3)^*",
         "g_p=C_(i,u) H_u[i,-]",
         "root-row span exactly two at any surplus: EXCLUDED",
+        "span{g_(a,u):u in B}=(C^3)^*",
+        "six common-port missing-colour profiles at incidence level: ALL SURVIVE",
         "full arbitrary-order local-to-global reduction: UNKNOWN",
         "UNRESOLVED",
     ):
@@ -183,18 +306,29 @@ def main() -> None:
     diagonal_cases = tuple(
         diagonal_no_line_and_nonzero_polar(degree) for degree in (3, 5, 6, 7)
     )
+    laplace_cases = tuple(
+        factored_port_laplace(roots, ports) for roots, ports in ((3, 1), (4, 2), (3, 3))
+    )
+    profile_models = common_port_profile_full_span_models()
     print(
         json.dumps(
             {
                 "status": "pass",
                 "field": "characteristic zero",
                 "root_dependency": DEPENDENCY.name,
+                "profile_dependency": PROFILE_DEPENDENCY.name,
                 "symbolic_product_grading": grading_cases,
                 "modewise_first_polar_factorization": polar_cases,
                 "diagonal_cases": diagonal_cases,
+                "factored_port_laplace_cases": laplace_cases,
+                "common_port_profile_span_models": profile_models,
                 "rank_zero_or_one_row_span_possible": False,
                 "rank_two_row_span_possible": False,
                 "required_common_row_span": 3,
+                "automatic_first_surplus_port_span": 3,
+                "effective_two_port_a_span": 3,
+                "effective_two_port_b_span": 3,
+                "profile_excluded_by_span_conditions": False,
                 "arbitrary_parameters_proved_in_written_termwise_argument": True,
                 "full_local_to_global_reduction_complete": False,
                 "finite_field_used": False,
