@@ -65,6 +65,19 @@ lam = (base.zero, base.one)
 # nonzero square times a squarefree, nonconstant polynomial, hence N remains
 # irreducible over Q(s); no algebraic weight is specialized to a point.
 s_symbol = sp.Symbol("s")
+assert sp.factor(a2.as_expr()) == (
+    (s_symbol + 1) * (2 * s_symbol - 1) * (4 * s_symbol**2 + 2 * s_symbol - 3)
+)
+assert sp.factor(a0.as_expr()) == (
+    (s_symbol - 1) * (2 * s_symbol + 1) * (4 * s_symbol**2 - 2 * s_symbol - 3)
+)
+assert (
+    sp.factor((a2 + a1 + a0).as_expr() + 12 * (2 * s_symbol - 1) * (2 * s_symbol + 1))
+    == 0
+)
+assert (
+    sp.factor((a2 - a1 + a0).as_expr() - 16 * s_symbol**2 * (2 * s_symbol**2 + 1)) == 0
+)
 slice_discriminant = sp.factor((a1**2 - 4 * a2 * a0).as_expr())
 squarefree_core = 448 * s_symbol**4 + 16 * s_symbol**2 - 23
 assert slice_discriminant == 4 * s_symbol**2 * squarefree_core
@@ -262,6 +275,21 @@ retained_weight_factors = (
     branch_denominator,
 )
 assert all(l_norm(value) != base.zero for value in retained_weight_factors)
+expected_chart_norm = (
+    8
+    * s_symbol**2
+    * (2 * s_symbol + 1)
+    * (4 * s_symbol**4 + 13 * s_symbol**2 - 8)
+    / ((s_symbol + 1) * (4 * s_symbol**2 + 2 * s_symbol - 3))
+)
+expected_weight_norm = (
+    -24
+    * s_symbol**2
+    * (2 * s_symbol + 1)
+    / ((s_symbol + 1) * (4 * s_symbol**2 + 2 * s_symbol - 3))
+)
+assert sp.factor(l_norm(chart_factor).as_expr() - expected_chart_norm) == 0
+assert sp.factor(l_norm(weight_factor).as_expr() - expected_weight_norm) == 0
 
 
 def extension(w, z6):
@@ -471,11 +499,15 @@ def determinant_recursive(matrix):
     return total
 
 
+minor_determinants = []
+minor_norms = []
 norm_signatures = []
 for mode in range(4):
     minor = determinant_recursive(one_marked_matrix(mode))
     norm = field_norm(minor)
     assert norm != base.zero
+    minor_determinants.append(minor)
+    minor_norms.append(norm)
     norm_signatures.append(
         (
             sp.degree(norm.numer.as_expr(), sp.Symbol("s")),
@@ -492,6 +524,86 @@ expected_norm_signatures = (
     (84, 64, 0, 2594073385365405696),
 )
 assert tuple(norm_signatures) == expected_norm_signatures
+
+# Close the entire retained one-parameter slice, not only its generic point.
+opposite_residual = 112 * s_symbol**6 - 444 * s_symbol**4 + 363 * s_symbol**2 - 58
+assert sp.factor(opposite_diagonal_norm.numer.as_expr()) == (
+    64 * s_symbol**4 * (2 * s_symbol**2 + 1) ** 4 * opposite_residual**2
+)
+assert (
+    sp.gcd(
+        sp.Poly(opposite_residual, s_symbol),
+        sp.Poly(opposite_residual, s_symbol).diff(),
+    )
+    == 1
+)
+minor_numerator_gcd = sp.gcd_list([norm.numer.as_expr() for norm in minor_norms])
+assert sp.factor(minor_numerator_gcd) == (2 * s_symbol**2 + 1) ** 2
+assert all(
+    sp.gcd(
+        sp.Poly(opposite_residual, s_symbol),
+        sp.Poly(norm.numer.as_expr(), s_symbol),
+    )
+    == 1
+    for norm in minor_norms
+)
+
+section_denominators = []
+
+
+def collect_denominators(value):
+    if isinstance(value, dict):
+        for entry in value.values():
+            collect_denominators(entry)
+        return
+    if isinstance(value, (tuple, list, set)):
+        for entry in value:
+            collect_denominators(entry)
+        return
+    if hasattr(value, "denom"):
+        section_denominators.append(value.denom.as_expr())
+
+
+collect_denominators(
+    (
+        p,
+        k2,
+        a0,
+        a1,
+        a2,
+        w,
+        z6,
+        marking,
+        binary_coefficients,
+        marked_23,
+        minor_determinants,
+        opposite_diagonal_norm,
+        minor_norms,
+    )
+)
+section_denominator_irreducibles = {
+    sp.Poly(factor, s_symbol).monic().as_expr()
+    for denominator in section_denominators
+    for factor, _multiplicity in sp.factor_list(denominator)[1]
+}
+expected_section_denominator_irreducibles = {
+    sp.Poly(factor, s_symbol).monic().as_expr()
+    for factor in (
+        s_symbol,
+        2 * s_symbol - 1,
+        2 * s_symbol + 1,
+        2 * s_symbol**2 + 1,
+        4 * s_symbol**2 + 2 * s_symbol - 3,
+        4 * s_symbol**2 - 2 * s_symbol - 3,
+        4 * s_symbol**2 - 7,
+        4 * s_symbol**4 + 13 * s_symbol**2 - 8,
+    )
+}
+assert section_denominator_irreducibles == expected_section_denominator_irreducibles
+assert all(
+    sp.gcd(sp.Poly(opposite_residual, s_symbol), sp.Poly(denominator, s_symbol)) == 1
+    for denominator in section_denominators
+)
 
 print(
     json.dumps(
@@ -511,6 +623,12 @@ print(
                 list(map(str, signature)) for signature in norm_signatures
             ],
             "generic_exceptional_section_is_false_positive": True,
+            "opposite_diagonal_residual": str(opposite_residual),
+            "D23_norm_numerator_gcd": str(sp.factor(minor_numerator_gcd)),
+            "section_denominator_irreducibles": sorted(
+                map(str, section_denominator_irreducibles)
+            ),
+            "retained_norm_residual_on_slice_obstructed": True,
             "known_point_used_for_generic_inference": False,
             "counterexample": False,
             "finite_field_evidence_used": False,
