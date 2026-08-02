@@ -1217,9 +1217,10 @@ mixed second jet exactly.  For normalized roots `(1,1,1)` and shared class
 `(1,t_i)`, tangent directions `(0,1,t_i)` isolate the common cycle edge.  Its
 minimal bilinear block evaluates to zero, as do all separate-pair matching
 classes, whereas the GHZ Hessian is `(0,1,t_i^2)`.  Thus a second-order
-extension must use the four-dimensional tangent--tangent freedom on an edge,
-additional effective companions, or a nonprojective root--blocker layer; none
-is excluded here:
+extension cannot be repaired by the four-dimensional tangent--tangent
+freedom on that edge alone: it only rescales `(1,t_i)`, which is independent
+of `(1,t_i^2)` for `t_i!=0,1`.  It must use additional effective companions
+or a nonprojective root--blocker layer; neither is excluded here:
 [`ROOT_TANGENT_MINIMAL_CYCLE_SECOND_JET_OBSTRUCTION.md`](ROOT_TANGENT_MINIMAL_CYCLE_SECOND_JET_OBSTRUCTION.md).
 Nor can one obtain a contradiction from scalar principal-cofactor algebra
 alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal

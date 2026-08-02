@@ -21,13 +21,16 @@ is zero, while the GHZ-side derivative is the nonzero diagonal vector
 ```
 
 Thus the first-jet cycle realization is not itself a second-order formal
-graph witness.  Any repair must add a tangent--tangent part to an edge block,
-add effective companions outside the minimal cycle, or change the
-projectively constant root--blocker layer.
+graph witness.  More strongly, when `t_i` avoids `0,1`, an arbitrary
+tangent--tangent correction on the same edge is still insufficient: it can
+only multiply the already fixed quotient class `(1,t_i)`, whereas the GHZ
+mixed Hessian has quotient class `(1,t_i^2)`.  Any repair must add effective
+companions outside the minimal cycle or change the projectively constant
+root--blocker layer.
 
-This is a sharp obstruction to one formal realization, not to all companion
-systems.  Tangent--tangent edge freedom and additional complementary
-hafnian cofactors remain available.  The arbitrary-order local-to-global
+This is a sharp obstruction to the cycle-only companion realization, not to
+all companion systems.  Additional complementary hafnian cofactors remain
+available.  The arbitrary-order local-to-global
 reduction remains **UNKNOWN**, and the global Krenn--Gu conjecture remains
 **UNRESOLVED**.  No finite field is used.
 
@@ -53,7 +56,8 @@ The map `F` is the logarithmic GHZ derivative modulo the scalar diagonal:
 V/<x>  ->  Diag/<Lambda> ~= K^2.
 ```
 
-Choose pairwise-distinct scalars `t_i`, indexed cyclically, and put
+Choose pairwise-distinct scalars `t_i` outside `{0,1}`, indexed cyclically,
+and put
 
 ```text
 q_i=(1,t_i).
@@ -146,22 +150,52 @@ Substitution of (3) gives
 which is nonzero in every characteristic.  Equations (7)--(8) contradict
 the second-order GHZ identity on every cycle edge.
 
-## Exact boundary
+## Tangent--tangent corrections do not repair the quotient class
 
-The general edge block with the same first-order endpoint contractions is
+Let `C_i` be the complementary cofactor tensor attached to the common edge.
+The normalized first-jet identity fixes its diagonal quotient class as
 
 ```text
-M_i+N_i,       N_i x=0,       N_i^T x=0.           (9)
+[C_i]=q_i=(1,t_i).                                  (9)
+```
+
+The most general edge block with the same first-order endpoint contractions
+is
+
+```text
+M_i+N_i,       N_i x=0,       N_i^T x=0.           (10)
 ```
 
 The space of such `N_i` is four-dimensional and is an arbitrary bilinear
-form on the two tangent quotients.  It can make (7) nonzero without changing
-any first jet.  Additional effective companion edges can also contribute to
-the mixed derivative.  Consequently the theorem proves exactly:
+form on the two tangent quotients.  It changes the direct-edge contribution
+from zero to some scalar multiple `nu C_i`, but it cannot change (9).  Hence
+the graph mixed derivative modulo the scalar diagonal lies on the line
+
+```text
+nu (1,t_i).                                         (11)
+```
+
+The GHZ vector (8) has quotient class `(1,t_i^2)`.  The determinant of these
+two quotient vectors is
+
+```text
+det((1,t_i),(1,t_i^2))=t_i^2-t_i.                  (12)
+```
+
+It is nonzero by the choice `t_i notin {0,1}`.  Therefore no
+tangent--tangent correction on the common cycle edge repairs the second jet
+while the selected directions kill every other companion class.
+
+## Exact boundary
+
+Additional effective companion edges can contribute new cofactor classes to
+the mixed derivative, and a nonprojective root--blocker derivative changes
+which separate-pair matching terms survive.  Consequently the theorem proves
+exactly:
 
 ```text
 minimal symmetric cycle first jets: NOT second-jet compatible;
-tangent--tangent repair: AVAILABLE but unclassified;
+tangent--tangent repair on the same cycle edge: INSUFFICIENT;
 additional companion-cofactor repair: AVAILABLE but unclassified;
 complementary-hafnian realization: UNKNOWN;
 global conjecture: UNRESOLVED.

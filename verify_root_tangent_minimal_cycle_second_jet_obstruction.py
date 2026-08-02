@@ -57,6 +57,11 @@ def check_symbolic() -> dict[str, bool]:
         "minimal_mixed_second_derivative_zero": sp.simplify((y.T * matrix * z)[0]) == 0,
         "ghz_hessian_formula": sp.simplify(ghz_hessian - sp.Matrix([0, 1, current**2]))
         == sp.zeros(3, 1),
+        "quotient_line_determinant": sp.simplify(
+            sp.det(sp.Matrix([[1, 1], [current, current**2]]))
+            - (current**2 - current)
+        )
+        == 0,
     }
     return checks
 
@@ -86,6 +91,8 @@ def check_cycles() -> dict[str, object]:
             assert matrix.T * x == b_minus
             assert (y.T * matrix * z)[0] == 0
             assert sp.Matrix([0, 1, current**2]) != sp.zeros(3, 1)
+            assert current not in (0, 1)
+            assert current**2 - current != 0
             checked_edges += 1
     return {"cycle_lengths": [3, 12], "checked_edges": checked_edges}
 
@@ -103,7 +110,7 @@ def main() -> None:
                 "symbolic_checks": symbolic,
                 **cycles,
                 "minimal_cycle_second_jet_compatible": False,
-                "tangent_tangent_repairs_excluded": False,
+                "tangent_tangent_edge_only_repairs_excluded": True,
                 "additional_companions_excluded": False,
                 "finite_field_proof_used": False,
                 "global_conjecture_resolved": False,

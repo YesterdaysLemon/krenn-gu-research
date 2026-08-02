@@ -78,6 +78,8 @@ def main() -> None:
 
             ghz_hessian = (Fraction(0), Fraction(1), current * current)
             assert ghz_hessian != (Fraction(0), Fraction(0), Fraction(0))
+            assert current not in (0, 1)
+            assert current * current - current != 0
             checked_edges += 1
 
     print(
@@ -90,7 +92,8 @@ def main() -> None:
                 "minimal_mixed_second_derivative": [0, 0, 0],
                 "ghz_mixed_second_derivative": "(0,1,t_i^2) != 0",
                 "minimal_cycle_second_jet_compatible": False,
-                "tangent_tangent_repairs_excluded": False,
+                "quotient_line_determinant": "t_i^2-t_i != 0",
+                "tangent_tangent_edge_only_repairs_excluded": True,
                 "finite_field_proof_used": False,
                 "global_conjecture_resolved": False,
             },
