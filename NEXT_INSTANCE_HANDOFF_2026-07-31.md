@@ -737,8 +737,15 @@ Six statements organize the current frontier.
    minor kills `X=s+2(1-lambda)t!=0`, and a residual minor `k^2` kills `X=0`
    over `Q(s,k,lambda)`.  The legal pair swap together with `s,k->-s,-k`
    and reciprocal weight transfers this to `es=-1`.  Special finite weights,
-   component-parameter divisors such as `k=0`, `D23` weight infinity, and the
-   other projective/source/ambient charts stay open.  Retain the earlier
+   `D23` weight infinity, and the other projective/source/ambient charts stay
+   open.  The component divisor `k=0,s!=0` has been recomputed directly over
+   `Q(s,lambda)`: its normalized generic ordinary-weight `D23` incidence is
+   a reduced disjoint union of two affine lines, including a
+   specialization-only branch.  The inherited line has paired-`D01` ranks
+   `(4,4,4,3)`, dropping to `(4,4,2,3)` at its residual point, while the new
+   line has `(3,4,4,3)` everywhere.  Both are empty on both sign sheets.
+   Special finite weights on this divisor, `s=0`, and its infinity/omitted
+   charts remain open.  Retain the earlier
    narrower cover only as a withdrawn descent-restricted failed route.
    Finite `D23` has a three-branch
    necessary cover whose full `lambda=1` slice is empty.  The other displayed
@@ -746,6 +753,7 @@ Six statements organize the current frontier.
    [`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md`](P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md),
    [`P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PARTIAL.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PARTIAL.md),
+   [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_K_ZERO_GENERIC_D23_RANK_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_K_ZERO_GENERIC_D23_RANK_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_RESIDUAL_FACTOR_COVER.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_RESIDUAL_FACTOR_COVER.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_LAMBDA_MINUS_ONE_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_LAMBDA_MINUS_ONE_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_LINEAR_REDUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_LINEAR_REDUCTION.md),
@@ -1176,6 +1184,17 @@ rows identically zero.  Hence every nonzero second normal is `H22`-empty;
 zero second normals remain tangent to the same exact family.  The
 `lambda=+/-1` higher normals and arbitrary iteration remain unknown:
 [`P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_ORDINARY_WEIGHT_SECOND_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_ORDINARY_WEIGHT_SECOND_NORMAL_OBSTRUCTION.md).
+At `lambda=-1`, the complete second-normal level is now closed as well.
+For `kappa!=0` the kernel is `P1`; for `kappa=0` it is `P2`.  Exact
+projective covers include the ordinary open, the `H=e_a3` weight crossing,
+the `kappa`-jump, the triple crossing, and the exceptional line
+`H=(-e_a1+e_b0)+ell*e_b3`.  Every complete second normal is `H22`-empty.
+The zero-second-normal survivors are retained as the exact product loci
+`BR=0`, `BK=0`, `BK=BR=CR=0`, and, on the exceptional line,
+`AP=AQ=P(B*ell-C+E)=Q(B*ell-C+E)=0`; these are not asserted to integrate at
+higher order.  Thus `lambda=+1`, further iteration after a zero second
+normal, and arbitrary local-to-global gluing remain open:
+[`P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_LAMBDA_MINUS_ONE_SECOND_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_LAMBDA_MINUS_ONE_SECOND_NORMAL_OBSTRUCTION.md).
 
 ## What a global proof would still need
 
@@ -1545,6 +1564,16 @@ new incidences lie on odd zero-cofactor blockers, and an exact specialization
 retains pure coefficients `(2,1,1)` plus every rank/Hall condition.  Larger
 transverse enlargements remain open:
 [`ROOT_M7_THREE_PORT_PRESSURE_ENLARGEMENT_SHARED_FACTOR_OBSTRUCTION.md`](ROOT_M7_THREE_PORT_PRESSURE_ENLARGEMENT_SHARED_FACTOR_OBSTRUCTION.md).
+An exhaustive endpoint-legal hitting calculation sharpens this support
+frontier without claiming a universal lower bound.  Of 104 legal missing
+incidences, no singleton breaks all five currently listed principal
+certificates.  Among all 5,356 unordered pairs, exactly one does:
+`H_6[3,0]` together with `H_5[4,0]`; the fixed labelled-support stabilizer is
+trivial.  This gives relative minimum two for that five-word family only.
+The unique relative survivor is still tensorially impossible because
+`C_0101122` divides `C0*C1*C2`, so its full mixed saturation is the unit
+ideal.  Larger supports and a certificate-complete lower bound remain open:
+[`ROOT_M7_ENDPOINT_LEGAL_CERTIFICATE_HITTING_MINIMUM_TWO_EXCLUSION.md`](ROOT_M7_ENDPOINT_LEGAL_CERTIFICATE_HITTING_MINIMUM_TWO_EXCLUSION.md).
 Nor can one obtain a contradiction from scalar principal-cofactor algebra
 alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal
 two-vertex cofactors at a fixed perfect-matching point splits into one
@@ -1793,6 +1822,8 @@ uv run --with sympy python verify_p5_component21_finite_h22_extension_zero_base_
 uv run --with sympy python audit_p5_component21_finite_h22_extension_zero_base_raw_kernel_normal_obstruction.py
 uv run --with sympy python verify_p5_component21_finite_h22_extension_zero_base_ordinary_weight_second_normal_obstruction.py
 uv run --with sympy python audit_p5_component21_finite_h22_extension_zero_base_ordinary_weight_second_normal_obstruction.py
+uv run --with sympy python verify_p5_component21_finite_h22_extension_zero_base_lambda_minus_one_second_normal_obstruction.py
+uv run --with sympy python audit_p5_component21_finite_h22_extension_zero_base_lambda_minus_one_second_normal_obstruction.py
 
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
@@ -1871,6 +1902,8 @@ uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_minus_one_d01_weight_closure.py
 uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_generic_d23_affine_line_rank_obstruction.py
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_generic_d23_affine_line_rank_obstruction.py
+uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_k_zero_generic_d23_rank_obstruction.py
+uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_k_zero_generic_d23_rank_obstruction.py
 
 uv run --with sympy python verify_arbitrary_surplus_common_row_full_span_obstruction.py
 uv run --with sympy python audit_arbitrary_surplus_common_row_full_span_obstruction.py
@@ -1918,6 +1951,8 @@ uv run --with sympy python verify_root_m7_thirty_two_incidence_supports_principa
 python audit_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py
 uv run --with sympy python verify_root_m7_three_port_pressure_enlargement_shared_factor_obstruction.py
 python audit_root_m7_three_port_pressure_enlargement_shared_factor_obstruction.py
+uv run --with sympy python verify_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py
+uv run --with sympy python audit_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py
 uv run --with sympy python verify_hafnian_principal_cofactor_gradient_dominance.py
 python audit_hafnian_principal_cofactor_gradient_dominance.py
 

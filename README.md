@@ -294,10 +294,15 @@ the complete normalized binary Segre incidence is exactly one affine line.
 One paired-`D01` minor has nonzero factor `X=s+2(1-lambda)t`; on `X=0`, a
 second independent minor is the coefficient-field unit `k^2`.  A legal
 ambient pair swap, `s,k->-s,-k`, and reciprocal-weight transfer carries this
-closure to `es=-1`.  Special finite weights, component-parameter divisors
-such as `k=0`, `D23` weight infinity, and the other projective charts remain
+closure to `es=-1`.  Direct specialization also closes the generic
+ordinary-weight `D23` fibre on `k=0,s!=0`.  Its normalized incidence ideal
+becomes two reduced affine lines, including a specialization-only branch;
+their paired-`D01` rank profiles are respectively `(4,4,4,3)` with one
+`(4,4,2,3)` point, and `(3,4,4,3)`, so both are empty.  Special finite
+weights, `D23` weight infinity, `s=0`, and the other projective charts remain
 open:
-[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_GENERIC_D23_AFFINE_LINE_RANK_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_GENERIC_D23_AFFINE_LINE_RANK_OBSTRUCTION.md).
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_GENERIC_D23_AFFINE_LINE_RANK_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_GENERIC_D23_AFFINE_LINE_RANK_OBSTRUCTION.md), together with
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_K_ZERO_GENERIC_D23_RANK_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_K_ZERO_GENERIC_D23_RANK_OBSTRUCTION.md).
 An earlier narrower cover is retained only as a withdrawn descent-only failed
 route because it split `1,k` coefficients while the free extensions may be
 quadratic-field-valued.  See
@@ -619,6 +624,14 @@ ideal.  This support contains none of the preceding 30 pair-shell supports,
 preserves endpoint legality at odd blockers, and admits exact full-rank/Hall
 specializations, so the failure is tensorial rather than concision:
 [`ROOT_M7_THREE_PORT_PRESSURE_ENLARGEMENT_SHARED_FACTOR_OBSTRUCTION.md`](ROOT_M7_THREE_PORT_PRESSURE_ENLARGEMENT_SHARED_FACTOR_OBSTRUCTION.md).
+The exact endpoint-legal hitting problem for the five presently certified
+mixed words has relative minimum two.  Across 104 legal missing incidences
+there is no singleton transversal; across all 5,356 pairs the sole
+transversal is `H_6[3,0],H_5[4,0]`, with trivial stabilizer.  It is not a
+full survivor: `C_0101122` still divides `C0*C1*C2`, so its full mixed
+saturation is the unit ideal.  This is explicitly a five-certificate result,
+not a universal arbitrary-support lower bound:
+[`ROOT_M7_ENDPOINT_LEGAL_CERTIFICATE_HITTING_MINIMUM_TWO_EXCLUSION.md`](ROOT_M7_ENDPOINT_LEGAL_CERTIFICATE_HITTING_MINIMUM_TWO_EXCLUSION.md).
 Even scalar complementary-hafnian algebra supplies no hidden relation on
 the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
 Jacobian of the complete principal-cofactor map at a perfect-matching point
@@ -1670,8 +1683,8 @@ strictly advance the finite frontier:
   `ell` has exactly the same two rank-drop loci, with all kernel-line or
   kernel-plane first normals empty.  Thus the whole displayed finite nonzero
   component sheet is classified at extension-rank and complete-first-normal
-  level.  Possible higher-order arcs after a zero first normal, the
-  `p=q=0` zero base, parameter-
+  level.  Possible higher-order arcs after a zero first normal, the remaining
+  iterated zero normals over the separately classified `p=q=0` base, parameter-
   boundary/marking-pole intersections, and arbitrary
   ambient/source/projective degenerations remain separate; in particular,
   a `P5` leading term whose `P4` restriction vanishes is still unclassified:
@@ -1700,6 +1713,12 @@ strictly advance the finite frontier:
   zero-normal kernel is exactly tangent to the universal kernel family and
   every complete second normal is empty by
   [`P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_ORDINARY_WEIGHT_SECOND_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_ORDINARY_WEIGHT_SECOND_NORMAL_OBSTRUCTION.md).
+  At `lambda=-1`, exact projective covers of the `kappa!=0` kernel `P1` and
+  the `kappa=0` kernel `P2`, including every crossing and the exceptional
+  line, now show that every complete second normal is empty too.  The exact
+  zero-second-normal product loci are retained without claiming that they
+  integrate at higher order; `lambda=+1` and further iteration remain open:
+  [`P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_LAMBDA_MINUS_ONE_SECOND_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_LAMBDA_MINUS_ONE_SECOND_NORMAL_OBSTRUCTION.md).
 - component eighteen's complete generic marked `H31` and weighted `H22`
   fibres are empty.  In its intrinsic pure marking, three kernel rows equal
   the common singleton `e`.  After any source-coordinate deletion or either
