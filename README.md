@@ -420,6 +420,15 @@ two-dimensional aggregate cofactor span.  The three-axis exception instead
 has identically zero triple product.  These are necessary jet conditions,
 not graph nonrealizability results:
 [`ROOT_RESONANT_MIXED_JET_PARITY_CLASSIFICATION.md`](ROOT_RESONANT_MIXED_JET_PARITY_CLASSIFICATION.md).
+This parity jump now closes one concrete companion topology.  If `r>=4`
+projectively constant roots have exactly two effective residual companion
+endpoints and no effective root--root restricted tangent channel, every
+pair derivative has at most one cofactor line and hence forces uniform
+resonance.  But three varied roots cannot match injectively to two endpoints,
+so the graph triple derivative is zero against the GHZ rank-two triple jet.
+A survivor must introduce nonprojective blocker variation, a root--root
+channel, or a third nonroot companion endpoint:
+[`ROOT_TWO_RESIDUAL_ONLY_COMPANION_THIRD_JET_OBSTRUCTION.md`](ROOT_TWO_RESIDUAL_ONLY_COMPANION_THIRD_JET_OBSTRUCTION.md).
 Even scalar complementary-hafnian algebra supplies no hidden relation on
 the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
 Jacobian of the complete principal-cofactor map at a perfect-matching point

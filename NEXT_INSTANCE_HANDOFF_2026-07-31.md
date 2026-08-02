@@ -1277,6 +1277,14 @@ three-root mixed derivative already demands a full quotient span.  For the
 three-axis `r=3` exception the triple product is instead identically zero.
 Neither calculation proves graph/hafnian realizability or nonrealizability:
 [`ROOT_RESONANT_MIXED_JET_PARITY_CLASSIFICATION.md`](ROOT_RESONANT_MIXED_JET_PARITY_CLASSIFICATION.md).
+One topology is nevertheless excluded.  With `r>=4`, exactly two effective
+residual companion endpoints, projectively constant root--blocker rows, and
+no effective root--root restricted tangent channel, every pair has one
+cofactor line and forces uniform resonance; the graph triple jet is then
+zero by endpoint pigeonhole while the GHZ triple jet has rank two.  Any
+survivor needs nonprojective blocker variation, a root--root channel, or a
+third nonroot companion endpoint:
+[`ROOT_TWO_RESIDUAL_ONLY_COMPANION_THIRD_JET_OBSTRUCTION.md`](ROOT_TWO_RESIDUAL_ONLY_COMPANION_THIRD_JET_OBSTRUCTION.md).
 Nor can one obtain a contradiction from scalar principal-cofactor algebra
 alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal
 two-vertex cofactors at a fixed perfect-matching point splits into one
@@ -1578,6 +1586,8 @@ uv run --with sympy python verify_root_mixed_second_jet_resonance_clique_classif
 python audit_root_mixed_second_jet_resonance_clique_classification.py
 uv run --with sympy python verify_root_resonant_mixed_jet_parity_classification.py
 python audit_root_resonant_mixed_jet_parity_classification.py
+uv run --with sympy python verify_root_two_residual_only_companion_third_jet_obstruction.py
+python audit_root_two_residual_only_companion_third_jet_obstruction.py
 uv run --with sympy python verify_hafnian_principal_cofactor_gradient_dominance.py
 python audit_hafnian_principal_cofactor_gradient_dominance.py
 
