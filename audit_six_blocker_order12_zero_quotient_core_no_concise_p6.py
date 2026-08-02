@@ -113,7 +113,7 @@ def off_diagonal_rows():
 def main() -> None:
     theorem = THEOREM.read_text(encoding="utf-8")
     assert "finite-field audit" in theorem
-    assert "characteristic-zero proof" in theorem
+    assert "characteristic-zero proof" in " ".join(theorem.split())
 
     payload = repr((COMMON, tuple(sorted(BLOCKS.items())))).encode()
     digest = hashlib.sha256(payload).hexdigest()

@@ -92,8 +92,12 @@ On the `A=0` factor, exact retained-weight elimination leaves only
 `(js-1)lambda-(js+1)=0`.  Its terminal ideal is generically populated by a
 rational section, but the unique marking makes the opposite `D01` diagonal
 identically zero, so the entire divisor-generic section is nongenuine.  The
-parallel `B=0` factor remains unknown.  Finite `D23` has an exact three-branch
-necessary cover; its complete all-marking `lambda=1` slice is empty.  See
+parallel `B=0` factor has no component dominating the component base: on the
+standing function-field chart, exact quadratic-field reduction forces every
+candidate onto `ejs(e^2s^2-1)(js+1)=0`.  Those proper special-base fibres and
+the standing chart boundary remain unknown.
+Finite `D23` has an exact three-branch necessary cover; its complete
+all-marking `lambda=1` slice is empty.  See
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_SURVIVOR.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_SURVIVOR.md)
 and
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_GENERIC_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_GENERIC_OBSTRUCTION.md).
@@ -277,7 +281,10 @@ Six statements organize the current frontier.
    of `h1` is a unit and an exact localized standard-basis computation makes
    the 28-row mixed module full.  Thus the remaining ordinary residual is
    exactly `F=0,h2!=0,(h3=0 or H=0)`; generic finite all-marking incidence
-   remains open:
+   remains open.  A direct localized `h3=0` module attempt and deeper
+   substituted-minor reductions on its secondary residual and the `H=0` locus
+   hit their caps; no exploratory factor from those runs is promoted to
+   theorem evidence:
    [`P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md`](P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md),
    [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md), and
@@ -308,8 +315,12 @@ Six statements organize the current frontier.
    exact block elimination gives
    `(lambda+1)((js-1)lambda-(js+1))`; since `lambda=-1` is already closed, the
    sole ordinary residual is the untested divisor
-   `(js-1)lambda-(js+1)=0`.  The parallel `B=0` branch is untouched.  Finite
-   `D23` has a three-branch
+   `(js-1)lambda-(js+1)=0`.  On the parallel `B=0` branch, exact reduction of
+   `S_13,S_23` and a closed linear--quadratic resultant show that every
+   candidate on the standing function-field chart lies over the proper base-
+   divisor cover `ejs(e^2s^2-1)(js+1)=0`; the branch is empty over the generic
+   component point, while those special-base fibres and the chart boundary remain open.
+   Finite `D23` has a three-branch
    necessary cover whose full `lambda=1` slice is empty.  The other displayed
    finite branches remain open:
    [`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md`](P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md),
@@ -320,6 +331,7 @@ Six statements organize the current frontier.
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_LINEAR_REDUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_LINEAR_REDUCTION.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_GENERIC_WEIGHT_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_GENERIC_WEIGHT_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_WEIGHT_COVER.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_WEIGHT_COVER.md),
+   [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_GENERIC_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_GENERIC_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md), and
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_LAMBDA_ONE_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_LAMBDA_ONE_OBSTRUCTION.md).
    The equal-endpoint two-inward stratum is empty by
@@ -774,16 +786,23 @@ and its effective blocks must factor as
 `W_uv=a_u^T b_v+b_u^T a_v`.  The first exact quotient-zero core has `J_H=0`;
 a second has a nonzero diagonal cofactor but
 `J_H=span(-1,1,0)`.  Neither supports concise `P_6`, although both admit
-all-nonzero local edge realizations.  Thus cofactor membership alone cannot
-close the branch.  Separately, any projectively constant source-row family
-forces a common linear factor and is impossible in concise diagonal `P_6`.
-All projectively varying cores with torus-intersecting `J_H`, the effective
+all-nonzero local edge realizations.  A universal double-kernel contraction,
+combined with `subrank(P_4)=2`, excludes torus intersection whenever two modes
+have fully supported kernel vectors and forces every nonempty pairwise support
+intersection into a pure or binary `P_4` deletion.  A triple-kernel
+contraction also excludes any core with four modes each admitting a kernel
+vector supported on at least two colours.  Thus cofactor membership alone
+cannot close the branch.
+Separately, any projectively constant source-row family forces a common linear
+factor and is impossible in concise diagonal `P_6`.  All surviving
+projectively varying cores with torus-intersecting `J_H`, the effective
 factorization, and the rank-one synchronized curves remain open:
 [`SIX_BLOCKER_ORDER12_ISOTROPIC_P6_CURVE.md`](SIX_BLOCKER_ORDER12_ISOTROPIC_P6_CURVE.md),
 [`SIX_BLOCKER_ORDER12_QUOTIENT_RANK_FRAME_CLASSIFICATION.md`](SIX_BLOCKER_ORDER12_QUOTIENT_RANK_FRAME_CLASSIFICATION.md),
 [`SIX_BLOCKER_ORDER12_ZERO_QUOTIENT_COFACTOR_SYZYGY.md`](SIX_BLOCKER_ORDER12_ZERO_QUOTIENT_COFACTOR_SYZYGY.md),
 [`SIX_BLOCKER_ORDER12_ZERO_QUOTIENT_CORE_NO_CONCISE_P6.md`](SIX_BLOCKER_ORDER12_ZERO_QUOTIENT_CORE_NO_CONCISE_P6.md),
-[`SIX_BLOCKER_ORDER12_NONZERO_DIAGONAL_COFACTOR_NO_TORUS_P6.md`](SIX_BLOCKER_ORDER12_NONZERO_DIAGONAL_COFACTOR_NO_TORUS_P6.md), and
+[`SIX_BLOCKER_ORDER12_NONZERO_DIAGONAL_COFACTOR_NO_TORUS_P6.md`](SIX_BLOCKER_ORDER12_NONZERO_DIAGONAL_COFACTOR_NO_TORUS_P6.md),
+[`SIX_BLOCKER_ORDER12_KERNEL_SUPPORT_COVER_NO_TORUS_P6.md`](SIX_BLOCKER_ORDER12_KERNEL_SUPPORT_COVER_NO_TORUS_P6.md), and
 [`P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md`](P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md).
 
 Two independently replayed Astra method transfers now sit behind this
@@ -1239,6 +1258,9 @@ uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_f
 uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_generic_obstruction.py
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_generic_obstruction.py
 
+uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_reduction.py
+uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_reduction.py
+
 uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d23_factor_cover.py
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d23_factor_cover.py
 
@@ -1295,6 +1317,12 @@ python audit_p6_projectively_constant_source_row_obstruction.py
 
 python verify_six_blocker_order12_nonzero_diagonal_cofactor_no_torus_p6.py
 python audit_six_blocker_order12_nonzero_diagonal_cofactor_no_torus_p6.py
+
+uv run --with sympy python verify_six_blocker_order12_kernel_support_cover_no_torus_p6.py
+python audit_six_blocker_order12_kernel_support_cover_no_torus_p6.py
+
+uv run --with sympy python verify_fourth_order_permanent_subrank.py
+python audit_fourth_order_permanent_subrank.py
 
 ```
 
