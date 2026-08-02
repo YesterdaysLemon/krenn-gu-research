@@ -67,8 +67,13 @@ Inside the old `h1=0` residual the divisor `R*h2=1` is closed, and on
 `rho=0,h1!=0` the whole `h2=0` branch and the open `h2*E!=0` are closed;
 an exact seven-minor saturation now closes `rho=0,E=0,h1*h2!=0` as well.
 Thus the complete generic-component `rho=0` slice is empty; the other
-displayed `D23` residual charts remain unknown.  See
-[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_E_ZERO_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_E_ZERO_OBSTRUCTION.md).
+displayed `D23` residual charts remain unknown.  The complete `h0=0`
+intersection of the `h1=0,2h3=s,G=G2=0` residual is now empty too: after
+the prior factor cover and `R*h2=1` divisor, its exact genuine-incidence
+ideal is unit over `Q(A,R,D)`, while the remaining parameter residue is
+proper and zero-dimensional.  See
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_E_ZERO_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_E_ZERO_OBSTRUCTION.md) and
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md).
 Component
 twenty-three's generic weighted fibre is now completely closed.  After the
 infinity and `lambda=0,+/-1` closures, two exact minors leave the ordinary
@@ -754,9 +759,11 @@ strictly advance the finite frontier:
   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D01_PAIR_ORBIT_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D01_PAIR_ORBIT_OBSTRUCTION.md).
   On `D23`, three exact projection branches and seven primary `h1=0`
   factors have unit one-marked ideals.  The remaining
-  `h1=0,2h3=s,G=G2=0` saturation and the `h1!=0` chart are explicitly
-  unknown:
-  [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md).
+  `h1=0,2h3=s,G=G2=0` saturation is now closed on its complete `h0=0`
+  intersection by a coefficient-field unit ideal; the `h0!=0` part and the
+  unexhausted `h1!=0` chart remain unknown:
+  [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md) and
+  [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md).
 - the outward common-center-kernel orientation in the star-`(2,1,1)` cell
   contains component twenty-three.  Its implicit pure hypersurface is
   `1-rt=ks(t-r)`; exact family/incidence minors `-3/4` and `-9600` prove a

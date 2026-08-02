@@ -314,12 +314,19 @@ Six statements organize the current frontier.
    `7 x 7` minors saturated by `h1*h2` generate the unit ideal.  The prior
    kernel is therefore the unique mixed-kernel line, and its required `A`
    diagonal is identically zero.  This closes the complete generic-component
-   `rho=0` slice; other displayed residuals remain open:
+   `rho=0` slice.  On the displayed `h1=0,2h3=s,G=G2=0` residual, the full
+   `h0=0` intersection is now empty as well: prior theorems cover every
+   factor divisor and `R*h2=1`, while on the complementary open the exact
+   normalized genuine-incidence ideal is unit over `Q(A,R,D)`.  The
+   parameter ideal before incidence is proper zero-dimensional, so this is
+   nonvacuous.  The complementary `h0!=0` residual and unexhausted `h1!=0`
+   locus remain open:
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D01_PAIR_ORBIT_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D01_PAIR_ORBIT_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2R1_RESIDUAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2R1_RESIDUAL_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_H1_NONZERO_SUPPLEMENT.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_H1_NONZERO_SUPPLEMENT.md), and
-   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_E_ZERO_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_E_ZERO_OBSTRUCTION.md).
+   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_E_ZERO_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_E_ZERO_OBSTRUCTION.md), together with
+   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md).
    Component twenty-three is the outward common-center-kernel star fivefold.
    Its complete `YY/YX/XX` support and projective boundary ledger is exact,
    and its generic marked `H31` fibre is empty.  Its complete generic weighted
@@ -1198,6 +1205,8 @@ From the repository root:
 # Latest exact delta from the current continuation:
 uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_rho_zero_E_zero_obstruction.py
 uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_rho_zero_E_zero_obstruction.py
+uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_h0_zero_residual_obstruction.py
+uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_h0_zero_residual_obstruction.py
 
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
@@ -1449,6 +1458,8 @@ uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_compone
 
 uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_h2r1_residual_obstruction.py
 uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_h2r1_residual_obstruction.py
+uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_h0_zero_residual_obstruction.py
+uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_h0_zero_residual_obstruction.py
 
 uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_rho_zero_h1_nonzero_supplement.py
 uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_rho_zero_h1_nonzero_supplement.py
