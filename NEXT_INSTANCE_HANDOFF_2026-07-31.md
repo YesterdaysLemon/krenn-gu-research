@@ -128,11 +128,12 @@ parallel `B=0` factor is now empty over the ordinary weight function field at
 the generic component point.  The corrected full-`K` solve retains the
 determinant divisors and an explicit quadratic exceptional-weight divisor
 `N=0`.  The determinant's linear divisor `T=0` and denominator boundary
-`H=0` are now exactly empty over the full quadratic field.  At
-`(e,j,s)=(1,2,2)`, `N=9(17lambda^2-42lambda+5)` has a genuine normalized
+`H=0` are now exactly empty over the full quadratic field.  An exact nonpoint
+slice over `Q(s)` proves that `N=0` generically has a genuine normalized
 binary `D01` section, but all four paired `D23` one-marked maps have rank
-four.  This is an exact false-positive point, not a generic closure of `N=0`
-and not a counterexample.  A proposed narrower cover
+four.  Thus the generic exceptional divisor is a false positive, not a
+counterexample; only its retained lower-dimensional chart, determinant,
+diagonal, and rank-minor intersections remain open.  A proposed narrower cover
 `ejs(e^2s^2-1)(js+1)=0` remains withdrawn:
 it split an equation into `1,k` coefficients even though the free extensions
 may be quadratic-field-valued.
@@ -141,6 +142,8 @@ all-marking `lambda=1` slice is empty.  See
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_SURVIVOR.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_SURVIVOR.md)
 and
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_GENERIC_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_GENERIC_OBSTRUCTION.md).
+The generic `N=0` classification is replayed by
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_GENERIC_FALSE_POSITIVE.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_GENERIC_FALSE_POSITIVE.md).
 
 The final star cell is closed in full.  If all three rank-one relations point
 strictly to the center pure-kernel endpoint, their leaf active rows are the
@@ -292,8 +295,15 @@ Six statements organize the current frontier.
    Both generic fibre types are also empty at the generic points of four
    natural compactification divisors: `p=0`, `q=0`, the genuine mode-three
    projective divisor, and the clean mode-zero vertical-plane open.  Named
-   exceptional intersections remain separate:
-   [`P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md`](P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md).
+   exceptional intersections remain separate.  On `q=+p` and `q=-p`, exact
+   saturated projection gives one shared binary branch over
+   `Q(p,kappa,ell)` for every finite and projective homogeneous weight when
+   `p*(ell^2-1)!=0`; it is uniformly killed by a mode-three rank-four minor,
+   including the displayed branch at `kappa=0`.  The endpoint intersections
+   `ell=+/-1`, specialization-only `kappa=0` markings, and `p=q=0` remain
+   separate:
+   [`P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md`](P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md) and
+   [`P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md).
    Component twenty-two is the unequal-complement common-kernel fivefold.
    Its complete generic marked `H31` fibre is empty after exact projection to
    four marking branches and four uniform one-marked minors:
@@ -315,7 +325,11 @@ Six statements organize the current frontier.
    `7 x 7` minors saturated by `h1*h2` generate the unit ideal.  The prior
    kernel is therefore the unique mixed-kernel line, and its required `A`
    diagonal is identically zero.  This closes the complete generic-component
-   `rho=0` slice.  On the displayed `h1=0,2h3=s,G=G2=0` residual, the full
+   `rho=0` slice.  The complete `rho=-1` slice is empty too: a universal
+   kernel kills both endpoint diagonals on the rank-seven locus, while five
+   exact cofactors leave only Q3 and one new Q4 rank-drop marking, and both
+   full incidence ideals are unit.  On the displayed
+   `h1=0,2h3=s,G=G2=0` residual, the full
    `h0=0` intersection is now empty as well: prior theorems cover every
    factor divisor and `R*h2=1`, while on the complementary open the exact
    normalized genuine-incidence ideal is unit over `Q(A,R,D)`.  The
@@ -325,16 +339,20 @@ Six statements organize the current frontier.
    one explicit nine-term cubic cofactor `P`.  Thus `P!=0` gives rank eight
    and closes a nonempty exact open of the residual; a
    `Q(sqrt(29665))` point satisfies `G=G2=0`, every displayed open factor,
-   and `P!=0`.  The remaining cofactor divisor `P=0` and the unexhausted
-   `h1!=0` locus remain open.  A 300-second localized standard-basis timeout
-   on `P=0` is not evidence:
+   and `P!=0`.  On `P=0`, exact Cramer reduction gives a sextic survivor;
+   its resultant with a second fixed maximal minor is a nonzero element of
+   `Q(A,R,D)`, closing the rest of the displayed `h1=0` residual.  The
+   unexhausted `h1!=0` locus away from `rho=0,-1` remains open.  The prior
+   300-second monolithic timeout on `P=0` is not used as evidence:
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D01_PAIR_ORBIT_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D01_PAIR_ORBIT_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2R1_RESIDUAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2R1_RESIDUAL_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_H1_NONZERO_SUPPLEMENT.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_H1_NONZERO_SUPPLEMENT.md), and
-   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_E_ZERO_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_E_ZERO_OBSTRUCTION.md), together with
+   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_E_ZERO_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_E_ZERO_OBSTRUCTION.md),
+   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_MINUS_ONE_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_MINUS_ONE_OBSTRUCTION.md), together with
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md) and
-   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_COFACTOR_OPEN_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_COFACTOR_OPEN_OBSTRUCTION.md).
+   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_COFACTOR_OPEN_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_COFACTOR_OPEN_OBSTRUCTION.md),
+   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_SECOND_COFACTOR_COVER_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_SECOND_COFACTOR_COVER_OBSTRUCTION.md).
    Component twenty-three is the outward common-center-kernel star fivefold.
    Its complete `YY/YX/XX` support and projective boundary ledger is exact,
    and its generic marked `H31` fibre is empty.  Its complete generic weighted
@@ -565,12 +583,13 @@ Six statements organize the current frontier.
    `N(lambda)`.  Hence no `B`-branch component dominates the ordinary weight
    line over the generic component point.  The retained `T=0` divisor and
    denominator boundary `H=0` are now exactly empty without splitting
-   quadratic-field coefficients.  At the exact point `(e,j,s)=(1,2,2)` on
-   `N=0`, both conjugate normalized `D01` sections are genuine binary
-   survivors, but all four paired `D23` maps have rank four.  This proves one
-   algebraic false-positive fibre, not generic closure of `N=0`.  Generic
-   `N=0`, the other determinant divisors, and the standing chart boundary
-   remain open.  Retain the earlier narrower cover only as a withdrawn
+   quadratic-field coefficients.  On `N=0`, an exact nonpoint slice over
+   `Q(s)[lambda,k]/(N,k^2-(7-4s^2)/(1+2s^2))` proves the normalized `D01`
+   section is generically a genuine shared binary incidence, but exact
+   iterated norms show all four paired `D23` maps have rank four.  Hence the
+   generic exceptional divisor is a false positive.  Its retained
+   lower-dimensional chart, determinant, diagonal, and rank-minor
+   intersections remain open.  Retain the earlier narrower cover only as a withdrawn
    descent-restricted failed route.
    Finite `D23` has a three-branch
    necessary cover whose full `lambda=1` slice is empty.  The other displayed
@@ -587,6 +606,7 @@ Six statements organize the current frontier.
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_FULL_FIELD_GENERIC_WEIGHT_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_FULL_FIELD_GENERIC_WEIGHT_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_T_ZERO_AND_H_BOUNDARY_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_T_ZERO_AND_H_BOUNDARY_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_ALGEBRAIC_FALSE_POSITIVE.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_ALGEBRAIC_FALSE_POSITIVE.md),
+   [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_GENERIC_FALSE_POSITIVE.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_GENERIC_FALSE_POSITIVE.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md), and
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_LAMBDA_ONE_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_LAMBDA_ONE_OBSTRUCTION.md).
    The equal-endpoint two-inward stratum is empty by
@@ -902,10 +922,16 @@ mode-three projective boundary, and the clean vertical mode-zero open are now
 closed for both `H31` and `H22`.  The vertical sheet is stronger than a
 generic-open statement: its full normalized projective compactification is
 closed, with ten finite minimal primes, all intersections, both weight
-charts, and three `ell=infinity` primes checked independently.  Arbitrary
+charts, and three `ell=infinity` primes checked independently.  The two sign
+divisors `q=+p` and `q=-p` are additionally closed for complete
+homogeneous weighted `H22` on `p*(ell^2-1)!=0`; their exact shared binary
+branches are uniform rank-four ternary false positives, including the
+displayed `kappa=0` continuation.  The intersections `ell=+/-1` and `p=q=0`
+remain outside that theorem.  Arbitrary
 ambient/source/projective degenerations outside this normalized
 compactification remain open:
-[`P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md).
+[`P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md) and
+[`P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md).
 
 ## What a global proof would still need
 
@@ -1279,6 +1305,13 @@ uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_compon
 uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_h0_zero_residual_obstruction.py
 uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_cofactor_open_obstruction.py
 uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_cofactor_open_obstruction.py
+uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_second_cofactor_cover_obstruction.py
+uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_second_cofactor_cover_obstruction.py
+uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_rho_minus_one_obstruction.py
+uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_rho_minus_one_obstruction.py
+
+uv run --with sympy python verify_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py
+uv run --with sympy python audit_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py
 
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
@@ -1329,6 +1362,8 @@ uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_t_zero_and_h_boundary_obstruction.py
 uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_algebraic_false_positive.py
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_algebraic_false_positive.py
+uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_generic_false_positive.py
+uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_generic_false_positive.py
 
 uv run --with sympy python verify_arbitrary_surplus_common_row_full_span_obstruction.py
 uv run --with sympy python audit_arbitrary_surplus_common_row_full_span_obstruction.py

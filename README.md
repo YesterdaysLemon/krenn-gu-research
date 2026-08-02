@@ -66,8 +66,10 @@ its complementary `D23` orbit has exact Q1/Q2/Q3 and broad factor covers.
 Inside the old `h1=0` residual the divisor `R*h2=1` is closed, and on
 `rho=0,h1!=0` the whole `h2=0` branch and the open `h2*E!=0` are closed;
 an exact seven-minor saturation now closes `rho=0,E=0,h1*h2!=0` as well.
-Thus the complete generic-component `rho=0` slice is empty; the other
-displayed `D23` residual charts remain unknown.  The complete `h0=0`
+Thus the complete generic-component `rho=0` slice is empty.  The complete
+`rho=-1` slice is empty too: a universal kernel kills both diagonals on the
+rank-seven locus, and five exact cofactors leave only Q3 and one new Q4
+rank-drop marking, whose full incidence ideals are unit.  The complete `h0=0`
 intersection of the `h1=0,2h3=s,G=G2=0` residual is now empty too: after
 the prior factor cover and `R*h2=1` divisor, its exact genuine-incidence
 ideal is unit over `Q(A,R,D)`, while the remaining parameter residue is
@@ -75,12 +77,15 @@ proper and zero-dimensional.  On the complementary `h0!=0` part, the fixed
 mixed minor on rows `01234578` factors as the already inverted chart factors
 times one explicit nine-term cubic cofactor `P`.  Hence the exact nonempty
 open `P!=0` has zero mixed kernel and is empty; an explicit point over
-`Q(sqrt(29665))` proves nonvacuity.  Only the cofactor divisor `P=0` within
-this displayed residual, together with the unexhausted `h1!=0` locus, remains
-unknown.  See
+`Q(sqrt(29665))` proves nonvacuity.  On `P=0`, Cramer reduction produces a
+sextic survivor polynomial, and an exact nonzero resultant with a second
+fixed maximal minor closes the entire displayed `h1=0` residual.  The
+unexhausted `h1!=0` locus away from `rho=0,-1` remains unknown.  See
 [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_E_ZERO_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_E_ZERO_OBSTRUCTION.md) and
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_MINUS_ONE_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_MINUS_ONE_OBSTRUCTION.md),
 [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md), together with
-[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_COFACTOR_OPEN_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_COFACTOR_OPEN_OBSTRUCTION.md).
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_COFACTOR_OPEN_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_COFACTOR_OPEN_OBSTRUCTION.md) and
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_SECOND_COFACTOR_COVER_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_SECOND_COFACTOR_COVER_OBSTRUCTION.md).
 Component
 twenty-three's generic weighted fibre is now completely closed.  After the
 infinity and `lambda=0,+/-1` closures, two exact minors leave the ordinary
@@ -207,12 +212,13 @@ component point.  The two linear Segre equations have determinant
 `-32 e j lambda s^2 Q^7(lambda-1)T/(R^3H)`; after solving them in `K`, the
 last equation is a nonzero multiple of an explicit quadratic `N(lambda)`.
 The retained linear divisor `T=0` and the denominator boundary `H=0` are now
-empty over the full quadratic field.  The exceptional divisor `N=0` is
-genuinely populated at the exact point `(e,j,s)=(1,2,2)`,
-`17lambda^2-42lambda+5=0`: its unique normalized `D01` section is binary,
-but all four paired `D23` one-marked maps have rank four, so it is a verified
-false positive rather than a counterexample.  Generic `N=0`, the other
-determinant divisors, and the standing chart boundary remain open.
+empty over the full quadratic field.  On the exceptional divisor `N=0`, an
+exact nonpoint slice over `Q(s)` proves that the normalized `D01` section is
+generically a genuine shared binary incidence, while all four paired `D23`
+one-marked maps have rank four.  Thus generic `N=0` is a verified false
+positive rather than a counterexample.  The retained lower-dimensional
+intersections with chart, determinant, diagonal, and rank-minor divisors
+remain open.
 An earlier narrower cover is retained only as a withdrawn descent-only failed
 route because it split `1,k` coefficients while the free extensions may be
 quadratic-field-valued.  See
@@ -221,7 +227,8 @@ quadratic-field-valued.  See
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_GENERIC_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_GENERIC_OBSTRUCTION.md), and the corrected theorem
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_FULL_FIELD_GENERIC_WEIGHT_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_FULL_FIELD_GENERIC_WEIGHT_OBSTRUCTION.md), together with the boundary and false-positive packages
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_T_ZERO_AND_H_BOUNDARY_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_T_ZERO_AND_H_BOUNDARY_OBSTRUCTION.md) and
-[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_ALGEBRAIC_FALSE_POSITIVE.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_ALGEBRAIC_FALSE_POSITIVE.md).
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_ALGEBRAIC_FALSE_POSITIVE.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_ALGEBRAIC_FALSE_POSITIVE.md) and
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_GENERIC_FALSE_POSITIVE.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_GENERIC_FALSE_POSITIVE.md).
 Finite `D23` has a three-branch necessary cover and its full
 `lambda=1` all-marking slice is empty.  The other displayed finite branches
 remain unknown.  The remaining special/projective
@@ -815,11 +822,16 @@ strictly advance the finite frontier:
   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D01_PAIR_ORBIT_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D01_PAIR_ORBIT_OBSTRUCTION.md).
   On `D23`, three exact projection branches and seven primary `h1=0`
   factors have unit one-marked ideals.  The remaining
-  `h1=0,2h3=s,G=G2=0` saturation is now closed on its complete `h0=0`
-  intersection by a coefficient-field unit ideal; the `h0!=0` part and the
-  unexhausted `h1!=0` chart remain unknown:
+  `h1=0,2h3=s,G=G2=0` saturation is closed on `h0=0` by a coefficient-field
+  unit ideal; on `h0!=0`, a first cofactor closes `P!=0` and an exact
+  resultant with a second fixed cofactor closes `P=0`.  Thus the entire
+  displayed `h1=0` residual is empty.  The complete generic-component
+  `rho=0` and `rho=-1` slices are empty as well.  The unexhausted `h1!=0`
+  chart away from those two weights remains unknown:
   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md) and
-  [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md).
+  [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md),
+  [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_SECOND_COFACTOR_COVER_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_SECOND_COFACTOR_COVER_OBSTRUCTION.md), and
+  [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_MINUS_ONE_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_MINUS_ONE_OBSTRUCTION.md).
 - the outward common-center-kernel orientation in the star-`(2,1,1)` cell
   contains component twenty-three.  Its implicit pure hypersurface is
   `1-rt=ks(t-r)`; exact family/incidence minors `-3/4` and `-9600` prove a
@@ -1314,12 +1326,19 @@ strictly advance the finite frontier:
   been strengthened to its complete normalized projective compactification:
   exact elimination gives ten finite minimal primes and three primes at
   `ell=infinity`, and branchwise/direct mode-three certificates close every
-  intersection for both `H31` and `H22`.  Arbitrary ambient/source/projective
+  intersection for both `H31` and `H22`.  On each divisor `q=+p` and
+  `q=-p`, exact saturated projection over `Q(p,kappa,ell)` gives one shared
+  binary branch for every finite and projective homogeneous weight when
+  `p*(ell^2-1)!=0`; a uniform mode-three rank-four minor kills it, including
+  the displayed branch at `kappa=0`.  The endpoint intersections
+  `ell=+/-1`, possible specialization-only `kappa=0` markings, and `p=q=0`
+  remain separate.  Arbitrary ambient/source/projective
   degenerations outside that normalized compactification remain separate:
   [`P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
   [`P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md),
   [`P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md`](P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md),
-  [`P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md).
+  [`P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md), and
+  [`P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md).
 - component eighteen's complete generic marked `H31` and weighted `H22`
   fibres are empty.  In its intrinsic pure marking, three kernel rows equal
   the common singleton `e`.  After any source-coordinate deletion or either
