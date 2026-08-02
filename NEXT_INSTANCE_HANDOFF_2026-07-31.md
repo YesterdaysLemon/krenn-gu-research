@@ -1377,6 +1377,15 @@ This constrains the order-fourteen five-root/seven-blocker/two-residual cell
 even with dense root--root tangent channels, but neither residual branch is
 yet excluded:
 [`ROOT_FINITE_ENDPOINT_FULL_JET_COFACTOR_SPAN_BOUND.md`](ROOT_FINITE_ENDPOINT_FULL_JET_COFACTOR_SPAN_BOUND.md).
+The two-endpoint bound is sharp even jointly with the present support-level
+global necessities.  For every `r>=2`, a legal loopless symmetric block graph
+realizes the two independent diagonal cofactor classes, full root blocker-row
+span, and a companion matching saturating every root subset.  It is explicitly
+not a witness: an undifferentiated mixed GHZ coefficient is a positive integer.
+Thus full-root frames, row span, and matching support alone cannot close the
+axis branch.  The next bridge must use the actual lower-subset cofactor values,
+mixed-colour identities, or nonprojective variation:
+[`ROOT_ARBITRARY_ORDER_TWO_ENDPOINT_FULL_JET_FRAME_SHARPNESS_NOGO.md`](ROOT_ARBITRARY_ORDER_TWO_ENDPOINT_FULL_JET_FRAME_SHARPNESS_NOGO.md).
 Nor can one obtain a contradiction from scalar principal-cofactor algebra
 alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal
 two-vertex cofactors at a fixed perfect-matching point splits into one
@@ -1704,6 +1713,8 @@ uv run --with sympy python verify_root_at_most_one_endpoint_full_jet_axis_necess
 python audit_root_at_most_one_endpoint_full_jet_axis_necessity.py
 uv run --with sympy python verify_root_finite_endpoint_full_jet_cofactor_span_bound.py
 python audit_root_finite_endpoint_full_jet_cofactor_span_bound.py
+uv run --with sympy python verify_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py
+python audit_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py
 uv run --with sympy python verify_hafnian_principal_cofactor_gradient_dominance.py
 python audit_hafnian_principal_cofactor_gradient_dominance.py
 

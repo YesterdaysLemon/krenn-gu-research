@@ -480,6 +480,16 @@ on one common coordinate pair.  This applies directly to the five-root/
 seven-blocker/two-residual cell at order fourteen, without suppressing
 root--root tangent edges:
 [`ROOT_FINITE_ENDPOINT_FULL_JET_COFACTOR_SPAN_BOUND.md`](ROOT_FINITE_ENDPOINT_FULL_JET_COFACTOR_SPAN_BOUND.md).
+This two-endpoint bound is sharp even after imposing the current support-level
+local-to-global conditions.  For every `r>=2`, an exact legal loopless
+symmetric block graph realizes the two independent diagonal cofactor classes,
+full blocker-row span at every root, and a companion matching saturating every
+root subset.  The same graph has an explicit nonzero mixed undifferentiated
+coefficient, so it is not a GHZ witness.  Consequently full-root frames,
+row span, and matching support cannot finish the reduction; the next theorem
+must use actual lower-subset cofactor values, mixed-colour identities, or
+nonprojective variation:
+[`ROOT_ARBITRARY_ORDER_TWO_ENDPOINT_FULL_JET_FRAME_SHARPNESS_NOGO.md`](ROOT_ARBITRARY_ORDER_TWO_ENDPOINT_FULL_JET_FRAME_SHARPNESS_NOGO.md).
 Even scalar complementary-hafnian algebra supplies no hidden relation on
 the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
 Jacobian of the complete principal-cofactor map at a perfect-matching point
