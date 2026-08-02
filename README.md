@@ -319,7 +319,15 @@ simultaneous-kernel spaces, either the residual edge is a nonzero coordinate
 monomial or torus kernel vectors can be chosen with `h=0`, making the
 two-row factorization automatic and extracting `P_(r+2)`.  This reduces that
 ambient-order cell to a coordinate-killer branch and an all-full-span
-permanent branch; neither is yet excluded in full.  All six
+permanent branch; neither is yet excluded in full.  The coordinate-monomial
+branch is now known to be locally slice-universal: every blocker-admissible
+surplus-two cofactor datum has an exact realization with one-dimensional
+torus residual kernels and a coordinate-monomial residual edge, and every
+factorized all-full-span `P_(r+2)` datum embeds as a subfamily.  Consequently
+the cofactor equation, blocker incidence, row spans, and matching recursion
+alone cannot close this branch; an off-slice or genuinely global compatibility
+condition is necessary.  This is a no-go theorem for that proof route, not a
+graph witness.  All six
 known common-port missing-colour profiles still admit exact full-span
 incidence models, so none is eliminated by these rank conditions alone.
 Other all-full-span cores and the synchronized curves remain open:
@@ -336,7 +344,8 @@ Other all-full-span cores and the synchronized curves remain open:
 [`SIX_BLOCKER_ARBITRARY_COFACTOR_PROJECTIVELY_CONSTANT_ROW_OBSTRUCTION.md`](SIX_BLOCKER_ARBITRARY_COFACTOR_PROJECTIVELY_CONSTANT_ROW_OBSTRUCTION.md),
 [`P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md`](P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md), and the all-surplus generalization
 [`ARBITRARY_SURPLUS_COMMON_ROW_FULL_SPAN_OBSTRUCTION.md`](ARBITRARY_SURPLUS_COMMON_ROW_FULL_SPAN_OBSTRUCTION.md), together with
-[`TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md`](TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md).
+[`TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md`](TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md) and
+[`TWO_RESIDUAL_COORDINATE_MONOMIAL_SLICE_UNIVERSALITY_NOGO.md`](TWO_RESIDUAL_COORDINATE_MONOMIAL_SLICE_UNIVERSALITY_NOGO.md).
 These are strong local algebraic-geometric
 reductions, not a global proof:
 special `P_5/P_6` restrictions and the final local-to-global graph step are

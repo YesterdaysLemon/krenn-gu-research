@@ -1061,9 +1061,20 @@ the exact hafnian recursion
 dichotomy says either the residual edge restricts to a nonzero coordinate
 monomial on the two simultaneous-kernel spaces or torus kernel vectors make
 `h=0`, in which case the two-row factorization and `P_(r+2)` extraction are
-automatic.  The coordinate-monomial branch and the all-full-span permanent
-branch remain open:
-[`TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md`](TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md).
+automatic.  The coordinate-monomial branch is locally universal for the
+remaining blocker-admissible cofactor incidence: given any exact
+`Lambda_H(W)=sum d_c e_c^(tensor(r+2))`, one-dimensional residual kernels
+`span(1,1,1)`, the edge `z0[0]z1[0]`, zero blocker--residual edges, and
+blocker--blocker edges `W_uv` realize the sliced matching identity term by
+term.  The factorized all-full-span `P_(r+2)` systems embed as a subfamily by
+putting the two port rows on the blocker--residual edges.  Thus local cofactor
+membership, blocker incidence, root/port span, and the matching recursion
+cannot exclude this branch.  Compatibility away from the fixed root/kernel
+slice or a genuinely global identity is required.  This is a proof-route
+no-go, not a full graph realization or counterexample; both the cofactor
+incidence and all-full-span permanent branch remain open:
+[`TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md`](TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md) and
+[`TWO_RESIDUAL_COORDINATE_MONOMIAL_SLICE_UNIVERSALITY_NOGO.md`](TWO_RESIDUAL_COORDINATE_MONOMIAL_SLICE_UNIVERSALITY_NOGO.md).
 All surviving
 projectively varying cores with torus-intersecting `J_H`, the effective
 factorization, and the rank-one synchronized curves remain open:
@@ -1299,6 +1310,8 @@ uv run --with sympy python verify_arbitrary_surplus_common_row_full_span_obstruc
 uv run --with sympy python audit_arbitrary_surplus_common_row_full_span_obstruction.py
 uv run --with sympy python verify_two_residual_nonblocker_two_port_factorisation.py
 uv run --with sympy python audit_two_residual_nonblocker_two_port_factorisation.py
+uv run --with sympy python verify_two_residual_coordinate_monomial_slice_universality_nogo.py
+uv run --with sympy python audit_two_residual_coordinate_monomial_slice_universality_nogo.py
 
 uv run --with sympy python verify_p5_h31_disjoint_secant_component_generic_obstruction.py
 python audit_p5_h31_disjoint_secant_component_generic_obstruction.py
