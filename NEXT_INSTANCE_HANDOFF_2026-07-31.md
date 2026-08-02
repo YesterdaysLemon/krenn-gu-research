@@ -1112,8 +1112,13 @@ rank-drop locus is now exactly `lambda=1` or
 kernel lines, and their complete first normals have only one possible
 weighted diagonal after all mixed coefficients vanish.  Thus neither normal
 contains genuine `H22`, including every component/weight tangent and every
-finite marking tangent.  Possible higher-order arcs after a zero first
-normal, the omitted `p=0,ell=0,+/-1` extension charts, the zero base,
+finite marking tangent.  The same classification now holds on
+`p!=0,ell=0,+/-1`; the unit endpoints have rank-six kernel planes, all of
+whose projective first normals are empty.  On `p=0,q!=0`, arbitrary finite
+`ell` again has only those two rank-drop loci and every kernel-line or
+kernel-plane first normal is empty.  Hence the displayed finite nonzero sheet
+is complete at rank and first-normal level.  Possible higher-order arcs after
+a zero first normal, the `p=q=0` zero base,
 parameter-boundary/marking-pole intersections, and arbitrary
 ambient/source/projective
 degenerations remain open.  In particular, the argument does not classify
@@ -1133,7 +1138,9 @@ an ambient `P5` leading term whose `P4` restriction is zero:
 [`P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md`](P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md),
 [`P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md`](P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md), and
 [`P5_COMPONENT21_FINITE_WEIGHT_EXTENSION_KERNEL_RATIONAL_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_FINITE_WEIGHT_EXTENSION_KERNEL_RATIONAL_NORMAL_OBSTRUCTION.md), strengthened by
-[`P5_COMPONENT21_FINITE_H22_EXTENSION_RANK_DROP_GENERIC_NORMAL_CLOSURE.md`](P5_COMPONENT21_FINITE_H22_EXTENSION_RANK_DROP_GENERIC_NORMAL_CLOSURE.md).
+[`P5_COMPONENT21_FINITE_H22_EXTENSION_RANK_DROP_GENERIC_NORMAL_CLOSURE.md`](P5_COMPONENT21_FINITE_H22_EXTENSION_RANK_DROP_GENERIC_NORMAL_CLOSURE.md),
+[`P5_COMPONENT21_FINITE_H22_EXTENSION_ELL_ZERO_UNIT_ENDPOINT_NORMAL_CLOSURE.md`](P5_COMPONENT21_FINITE_H22_EXTENSION_ELL_ZERO_UNIT_ENDPOINT_NORMAL_CLOSURE.md), and
+[`P5_COMPONENT21_FINITE_H22_EXTENSION_P_ZERO_NONZERO_Q_NORMAL_CLOSURE.md`](P5_COMPONENT21_FINITE_H22_EXTENSION_P_ZERO_NONZERO_Q_NORMAL_CLOSURE.md).
 
 ## What a global proof would still need
 
@@ -1687,6 +1694,10 @@ uv run --with sympy python verify_p5_component21_finite_weight_extension_kernel_
 uv run --with sympy python audit_p5_component21_finite_weight_extension_kernel_rational_normal_obstruction.py
 uv run --with sympy python verify_p5_component21_finite_h22_extension_rank_drop_generic_normal_closure.py
 uv run --with sympy python audit_p5_component21_finite_h22_extension_rank_drop_generic_normal_closure.py
+uv run --with sympy python verify_p5_component21_finite_h22_extension_ell_zero_unit_endpoint_normal_closure.py
+uv run --with sympy python audit_p5_component21_finite_h22_extension_ell_zero_unit_endpoint_normal_closure.py
+uv run --with sympy python verify_p5_component21_finite_h22_extension_p_zero_nonzero_q_normal_closure.py
+uv run --with sympy python audit_p5_component21_finite_h22_extension_p_zero_nonzero_q_normal_closure.py
 
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
