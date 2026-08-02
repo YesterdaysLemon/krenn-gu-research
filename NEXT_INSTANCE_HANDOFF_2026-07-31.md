@@ -83,8 +83,12 @@ involution transfers the latter closure to
 `t=0, r(r-1)(r+1)!=0`.  Exact point packages also close the two retained
 special all-pair fibres on `r=0`, and the same involution transfers them to
 the two missing points on `t=0`.  Thus the normalized divisors
-`r=0,t!=0` and `t=0,r!=0` are both empty.  Their common chart boundary
-remains separate.
+`r=0,t!=0` and `t=0,r!=0` are both empty.  On the omitted `k=infinity`
+boundary, the all-pair locus `r^2!=1` is empty for marked `H31` and weighted
+`H22`, including their common `r=t=0` boundary point.  Its `r=+/-1`
+lower-pair endpoints are separately empty for both lifting types in the fixed
+normalized order, so the whole normalized `k=infinity` line is closed.  The
+distinct `s=0,rt=1` projective face remains separate.
 Component twenty-four's
 complete generic marked `H31` fibre is also empty by exact projection to four
 marking branches and fixed-minor unit ideals.  Its complete generic weighted
@@ -323,7 +327,23 @@ Six statements organize the current frontier.
    twenty-one-minor target proof was discarded after restoring an omitted
    `r*D` term made both implementations return the non-unit result
    `RESULT:0:7:21`; it is not evidence.  Other special/projective component
-   fibres remain open:
+   fibres remain open.  On the omitted `k=infinity` chart, put `q=1/k` and
+   rescale the first row of plane one.  The pure boundary is `q=0,t=r`, with
+   pair profile `(3,3,3,4,4,3)` on `r^2!=1`.  It maps exactly to component
+   twenty-two's `A=-1,R=2,D=r,2A+R=0` curve, with `r=0` on component
+   thirteen.  For marked `H31`, four exact marking projections cover all four
+   source insertions and every projective extension direction; two insertions
+   are unit immediately, the other two reduce to four branches with explicit
+   rank-four local minors, and the direct `r=0` fibre is unit in all four
+   insertions.  For all finite `H22` weights, bidirectional module reduction gives
+   diagonal membership `(A01,B01,A23,B23)=(no,yes,yes,no)`, so the required
+   beta diagonal `B01` vanishes on every mixed kernel; projective weight has
+   the full module.  This closes both complete normalized all-pair fibres on
+   that projective chart.  The endpoints `r=+/-1` have profile
+   `(3,3,3,4,4,2)` and map to the overlapping-support lower-pair component;
+   a separate exact theorem closes all surviving `H31` markings, every finite
+   `H22` weight, and projective `H22` at both points.  These are fixed-order
+   theorems and do not supply arbitrary-order gluing:
    [`P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md`](P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md),
    [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md),
@@ -335,7 +355,10 @@ Six statements organize the current frontier.
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md),
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_AFFINE_CONSTANT_PROFILE_OPEN_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_AFFINE_CONSTANT_PROFILE_OPEN_OBSTRUCTION.md), and
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_T_PLUS_MINUS_ONE_SPECIAL_ALL_PAIR_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_T_PLUS_MINUS_ONE_SPECIAL_ALL_PAIR_OBSTRUCTION.md), together with
-   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_T_DIVISOR_SYMMETRY_TRANSFER.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_T_DIVISOR_SYMMETRY_TRANSFER.md).
+   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_T_DIVISOR_SYMMETRY_TRANSFER.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_T_DIVISOR_SYMMETRY_TRANSFER.md),
+   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md),
+   [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md), and
+   [`P5_COMPONENT23_K_INFINITY_LOWER_PAIR_ENDPOINTS_OBSTRUCTION.md`](P5_COMPONENT23_K_INFINITY_LOWER_PAIR_ENDPOINTS_OBSTRUCTION.md).
    Component twenty-four is the disjoint-binary split-center mixed-star
    fivefold.  Its exact reverse theorem includes the projective moving-leaf
    endpoint.  Its complete generic marked `H31` fibre is empty after exact
@@ -1052,6 +1075,12 @@ uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_z
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_t_plus_minus_one_special_all_pair_obstruction.py
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_t_divisor_symmetry_transfer.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_t_divisor_symmetry_transfer.py
+uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py
+uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py
+uv run --with sympy python verify_p5_h31_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py
+uv run --with sympy python audit_p5_h31_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py
+uv run --with sympy python verify_p5_component23_k_infinity_lower_pair_endpoints_obstruction.py
+uv run --with sympy python audit_p5_component23_k_infinity_lower_pair_endpoints_obstruction.py
 
 uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_t_zero_and_h_boundary_obstruction.py
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_t_zero_and_h_boundary_obstruction.py

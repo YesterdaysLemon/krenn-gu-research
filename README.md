@@ -83,13 +83,26 @@ endpoint-module certificates close the retained special all-pair points
 `t=+/-1`, so the normalized divisor `r=0,t!=0` is empty.  A legal
 permanent-preserving involution `(r,t)->(-t,-r)` exchanges the homogeneous
 weight coordinates in both contractions and transfers these open and point
-theorems to the complete normalized divisor `t=0,r!=0`.  The common
-normal-form chart boundary and all other special/projective component fibres
-are not included.  See
+theorems to the complete normalized divisor `t=0,r!=0`.  On the omitted
+`k=infinity` chart, the all-pair boundary `r^2!=1` is also empty for both
+marked `H31` and homogeneous weighted `H22`.  The marked calculation covers
+all four source insertions and every projective extension direction; the
+weighted calculation contains the required `B01` diagonal at every finite
+weight and has the full mixed module at projective weight.  This chart
+includes the common `r=t=0` boundary point and maps to component twenty-two's
+`2A+R=0` curve, with `r=0` on the component-thirteen intersection.  Its
+`r=+/-1` endpoints have lower-pair profile `(3,3,3,4,4,2)` and are separately
+empty for both marked `H31` and weighted `H22` in the same fixed normalized
+order.  Thus the entire normalized `k=infinity` line is closed for these two
+lifting types.  The distinct `s=0,rt=1` face and arbitrary order remain
+separate.  See
 [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md),
 [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_AFFINE_CONSTANT_PROFILE_OPEN_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_AFFINE_CONSTANT_PROFILE_OPEN_OBSTRUCTION.md), and
 [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_T_PLUS_MINUS_ONE_SPECIAL_ALL_PAIR_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_T_PLUS_MINUS_ONE_SPECIAL_ALL_PAIR_OBSTRUCTION.md), together with
-[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_T_DIVISOR_SYMMETRY_TRANSFER.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_T_DIVISOR_SYMMETRY_TRANSFER.md).
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_T_DIVISOR_SYMMETRY_TRANSFER.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_T_DIVISOR_SYMMETRY_TRANSFER.md) and
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md),
+[`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md), and
+[`P5_COMPONENT23_K_INFINITY_LOWER_PAIR_ENDPOINTS_OBSTRUCTION.md`](P5_COMPONENT23_K_INFINITY_LOWER_PAIR_ENDPOINTS_OBSTRUCTION.md).
 Component twenty-four's complete generic weighted fibre is empty across both
 pair orbits and both homogeneous-weight charts.  On component twenty-five,
 generic marked `H31` is empty.  Weighted `H22` is empty at both weight-
