@@ -240,8 +240,12 @@ opposite-diagonal and simultaneous rank-norm residual is now completely
 closed: its opposite norm is explicit, the four paired norm numerators have
 gcd `(2s^2+1)^2=R^2`, and the sole new ordinary denominator fibre is a
 degree-four `lambda=5` false positive with four nonzero paired minors.  The
-global opposite-diagonal and rank-norm divisors away from this slice, and the
-named chart/projective boundaries, remain open.
+global opposite-diagonal-zero divisor is now classified too: the marked
+opposite diagonal is `kG`, and `Res_lambda(N,G)` has one new irreducible
+factor `U(a,b)` after the standing and `A_0A_2` factors; every point on that
+locus is nongenuine.  The simultaneous paired-`D23` rank-drop locus on the
+genuine complement `G!=0`, and the named chart/projective boundaries, remain
+open.
 An earlier narrower cover is retained only as a withdrawn descent-only failed
 route because it split `1,k` coefficients while the free extensions may be
 quadratic-field-valued.  See
@@ -255,6 +259,7 @@ quadratic-field-valued.  See
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_LINEAR_SOLVE_DIVISORS_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_LINEAR_SOLVE_DIVISORS_OBSTRUCTION.md) and
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A2_ZERO_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A2_ZERO_OBSTRUCTION.md), together with
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A0_COMPANION_DIVISOR_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A0_COMPANION_DIVISOR_OBSTRUCTION.md) and
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_OPPOSITE_DIAGONAL_DIVISOR.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_OPPOSITE_DIAGONAL_DIVISOR.md), together with
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_E1_J2_SLICE_COMPLETE_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_E1_J2_SLICE_COMPLETE_OBSTRUCTION.md).
 Finite `D23` has a three-branch necessary cover and its full
 `lambda=1` all-marking slice is empty.  The other displayed finite branches

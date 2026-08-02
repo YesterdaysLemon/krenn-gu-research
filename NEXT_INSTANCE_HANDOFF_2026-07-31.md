@@ -145,9 +145,11 @@ numerators with gcd one, and a separately closed nonmonic
 `3(js)^2-js-1=0` boundary.  The complete exact `e=1,j=2` nonpoint slice also
 closes its retained opposite-diagonal/rank-norm residual: the four paired norm
 numerators have gcd `R^2`, and the only new denominator fibre is a degree-four
-`lambda=5` false positive.  The global opposite-diagonal and rank-norm
-divisors away from that slice and the listed chart/projective boundaries
-remain open.  A proposed narrower cover
+`lambda=5` false positive.  Globally, the opposite marked diagonal factors
+as `kG`; after standing and `A_0A_2` factors, the exact resultant
+`Res_lambda(N,G)` has one irreducible factor `U(a,b)`, and every point there
+is nongenuine.  The simultaneous paired-`D23` rank-drop locus on `G!=0` and
+the listed chart/projective boundaries remain open.  A proposed narrower cover
 `ejs(e^2s^2-1)(js+1)=0` remains withdrawn:
 it split an equation into `1,k` coefficients even though the free extensions
 may be quadratic-field-valued.
@@ -162,6 +164,8 @@ and its `A_2=0` closure by
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A2_ZERO_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A2_ZERO_OBSTRUCTION.md),
 with the `A_0=0` companion closure in
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A0_COMPANION_DIVISOR_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A0_COMPANION_DIVISOR_OBSTRUCTION.md),
+with the global opposite-diagonal divisor in
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_OPPOSITE_DIAGONAL_DIVISOR.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_OPPOSITE_DIAGONAL_DIVISOR.md),
 with the complete nonpoint slice in
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_E1_J2_SLICE_COMPLETE_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_E1_J2_SLICE_COMPLETE_OBSTRUCTION.md).
 
@@ -668,9 +672,11 @@ Six statements organize the current frontier.
    its nonmonic boundary.  On the exact `e=1,j=2` slice, a strengthened
    norm gcd and complete denominator ledger close the retained
    opposite-diagonal/rank-norm residual, including its new degree-four
-   `lambda=5` companion fibre.  The global residual away from this slice still
-   starts with opposite-diagonal/rank-norm divisors and projective component
-   boundaries.  Retain the earlier narrower cover only as a withdrawn
+   `lambda=5` companion fibre.  The global opposite-diagonal-zero divisor is
+   now completely classified and nongenuine: its only new parameter image is
+   the irreducible resultant factor `U(a,b)=0`.  The remaining ordinary
+   residual is simultaneous paired-`D23` rank drop on `G!=0`, together with
+   projective component boundaries.  Retain the earlier narrower cover only as a withdrawn
    descent-restricted failed route.
    Finite `D23` has a three-branch
    necessary cover whose full `lambda=1` slice is empty.  The other displayed
@@ -691,6 +697,7 @@ Six statements organize the current frontier.
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_LINEAR_SOLVE_DIVISORS_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_LINEAR_SOLVE_DIVISORS_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A2_ZERO_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A2_ZERO_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A0_COMPANION_DIVISOR_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A0_COMPANION_DIVISOR_OBSTRUCTION.md),
+   [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_OPPOSITE_DIAGONAL_DIVISOR.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_OPPOSITE_DIAGONAL_DIVISOR.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_E1_J2_SLICE_COMPLETE_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_E1_J2_SLICE_COMPLETE_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md), and
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_LAMBDA_ONE_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_LAMBDA_ONE_OBSTRUCTION.md).
@@ -1584,6 +1591,8 @@ uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a0_companion_divisor_obstruction.py
 uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a0_companion_c0_leading_boundary_obstruction.py
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a0_companion_c0_leading_boundary_obstruction.py
+uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_opposite_diagonal_divisor.py
+uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_opposite_diagonal_divisor.py
 
 uv run --with sympy python verify_arbitrary_surplus_common_row_full_span_obstruction.py
 uv run --with sympy python audit_arbitrary_surplus_common_row_full_span_obstruction.py
