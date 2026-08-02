@@ -103,7 +103,8 @@ for every finite `(r,t)`.  A corner-only mode swap transfers the finite-weight
 `r=infinity`/`t=infinity` lower-pair curves remain separate.  On the `s=1`
 face, however, those two parameter-infinity curves are empty for complete
 marked `H31` and homogeneous weighted `H22` at every finite remaining
-parameter; only their simultaneous triple-infinity direction remains separate.
+parameter.  Their simultaneous triple-infinity intersection is one smooth
+compactification point and is empty for both complete fixed-order fibres too.
 Component twenty-four's
 complete generic marked `H31` fibre is also empty by exact projection to four
 marking branches and fixed-minor unit ideals.  Its complete generic weighted
@@ -418,9 +419,14 @@ Six statements organize the current frontier.
    involution.  Their complete fixed-order marked-`H31` and homogeneous
    weighted-`H22` fibres are now empty for every finite remaining `k`,
    including `0,+/-1`; exact exceptional marking branches and every finite
-   or projective weight are included.  The simultaneous triple-infinity
-   direction requires a separate chart and remains open:
-   [`P5_COMPONENT23_S_ONE_PARAMETER_INFINITY_CURVES_OBSTRUCTION.md`](P5_COMPONENT23_S_ONE_PARAMETER_INFINITY_CURVES_OBSTRUCTION.md).
+   or projective weight are included.  In reciprocal coordinates the
+   simultaneous triple-infinity intersection has equation
+   `q*u*v-q-u+v=0` with nonzero gradient at the origin, so it is one smooth
+   point rather than an exceptional direction family.  Its profile is
+   `(3,2,2,3,3,3)`, and exact marking projections/stacks and weighted modules
+   close both complete fixed-order fibres:
+   [`P5_COMPONENT23_S_ONE_PARAMETER_INFINITY_CURVES_OBSTRUCTION.md`](P5_COMPONENT23_S_ONE_PARAMETER_INFINITY_CURVES_OBSTRUCTION.md) and
+   [`P5_COMPONENT23_S_ONE_TRIPLE_PARAMETER_INFINITY_CORNER_OBSTRUCTION.md`](P5_COMPONENT23_S_ONE_TRIPLE_PARAMETER_INFINITY_CORNER_OBSTRUCTION.md).
    Eliminating `k` on the affine chart also omitted both whole
    lower-pair lines `r=t=+/-1`, with arbitrary finite `k`.
 
@@ -462,9 +468,8 @@ Six statements organize the current frontier.
    `[mu:nu]`.  It therefore transfers the theorem to the complete finite
    `t=0` divisor, including finite `lambda=0`; the older ambient `J` map is
    not used because its weight inversion would leave that slice uncovered.
-   Projective weight, `t=infinity`, `r!=0`, the simultaneous `s=1`
-   triple-infinity direction,
-   source-torus faces, arbitrary ambient/Grassmann degeneration, and
+   Projective weight, `t=infinity`, `r!=0`, source-torus faces,
+   arbitrary ambient/Grassmann degeneration, and
    arbitrary order remain open:
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_COORDINATE_SURVIVOR.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_COORDINATE_SURVIVOR.md) and
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_R_T_COORDINATE_SYMMETRY_TRANSFER.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_R_T_COORDINATE_SYMMETRY_TRANSFER.md).
@@ -1204,6 +1209,8 @@ uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_s_z
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_r_t_coordinate_symmetry_transfer.py
 uv run --with sympy python verify_p5_component23_s_one_parameter_infinity_curves_obstruction.py
 uv run --with sympy python audit_p5_component23_s_one_parameter_infinity_curves_obstruction.py
+uv run --with sympy python verify_p5_component23_s_one_triple_parameter_infinity_corner_obstruction.py
+uv run --with sympy python audit_p5_component23_s_one_triple_parameter_infinity_corner_obstruction.py
 uv run --with sympy python verify_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py
 uv run --with sympy python audit_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py
 

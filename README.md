@@ -122,9 +122,12 @@ separate `s=0,k=infinity` corner surface and arbitrary order remain separate.  S
 The exact parameter-compactification ledger also shows why these charts are
 not exhaustive.  On `s=1`, the two infinity curves
 `r=infinity,t=k` and `t=infinity,r=-k` are now empty for complete marked
-`H31` and homogeneous weighted `H22` at every finite `k`; the simultaneous
-triple-infinity point remains separate.  See
-[`P5_COMPONENT23_S_ONE_PARAMETER_INFINITY_CURVES_OBSTRUCTION.md`](P5_COMPONENT23_S_ONE_PARAMETER_INFINITY_CURVES_OBSTRUCTION.md).
+`H31` and homogeneous weighted `H22` at every finite `k`.  Their simultaneous
+triple-infinity intersection is a single smooth compactification point, not
+an exceptional direction family, and its two complete fibres are empty too.
+See
+[`P5_COMPONENT23_S_ONE_PARAMETER_INFINITY_CURVES_OBSTRUCTION.md`](P5_COMPONENT23_S_ONE_PARAMETER_INFINITY_CURVES_OBSTRUCTION.md) and
+[`P5_COMPONENT23_S_ONE_TRIPLE_PARAMETER_INFINITY_CORNER_OBSTRUCTION.md`](P5_COMPONENT23_S_ONE_TRIPLE_PARAMETER_INFINITY_CORNER_OBSTRUCTION.md).
 At `s=0,k=infinity` there is a separate two-parameter
 all-pair surface, generically of profile `(3,3,3,3,3,4)`.  Its affine
 finite-`(r,t)` marked-`H31` fibre is empty: the exact projection splits into
