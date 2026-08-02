@@ -305,12 +305,18 @@ Six statements organize the current frontier.
    including the displayed branch at `kappa=0`.  Direct endpoint
    eliminations close all four `ell=+/-1` intersections for every homogeneous
    weight and every `kappa`, including `kappa=0` rank jumps and
-   specialization-only marking branches.  Only the collapsed raw `p=q=0`
-   zero-basis degeneration still requires regular replacement or blow-up
-   charts:
+   specialization-only marking branches.  At the collapsed raw `p=q=0`
+   zero-basis degeneration, the complete first projectivized normal line is
+   now empty as well: `[P:Q]` gives `<Q A-P C,B>`, the finite chart transfers
+   to the certified vertical sheet, and eight direct exact unit ideals close
+   `alpha=infinity`.  This covers all first-normal DVR/Puiseux valuation
+   directions at finite `kappa`; the central zero tensor, `kappa=infinity`,
+   iterated compactifications, and arbitrary ambient/source/projective
+   limits remain separate:
    [`P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md`](P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md) and
    [`P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md), together with
-   [`P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md).
+   [`P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md) and
+   [`P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md`](P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md).
    Component twenty-two is the unequal-complement common-kernel fivefold.
    Its complete generic marked `H31` fibre is empty after exact projection to
    four marking branches and four uniform one-marked minors:
@@ -940,13 +946,16 @@ branches are uniform rank-four ternary false positives, including the
 displayed `kappa=0` continuation.  Direct exact endpoint packages close
 `ell=+/-1` for both signs, both homogeneous-weight charts, and all `kappa`,
 including every `kappa=0` specialization branch.  The collapsed raw
-`p=q=0` zero-basis degeneration alone remains outside these sign-divisor
-theorems.  Arbitrary
+`p=q=0` zero-basis degeneration is now closed on its complete first
+projectivized normal line for finite `kappa`, including the direct
+`alpha=infinity` endpoint and unequal-valuation DVR/Puiseux arcs.  The raw
+central zero tensor, `kappa=infinity`, later compactifications, and arbitrary
 ambient/source/projective degenerations outside this normalized
 compactification remain open:
 [`P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md) and
 [`P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md), together with
-[`P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md).
+[`P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md) and
+[`P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md`](P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md).
 
 ## What a global proof would still need
 
@@ -1343,6 +1352,8 @@ uv run --with sympy python verify_p5_component21_q_plus_minus_p_shared_branch_te
 uv run --with sympy python audit_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py
 uv run --with sympy python verify_p5_component21_q_plus_minus_p_ell_endpoint_complete_obstruction.py
 uv run --with sympy python audit_p5_component21_q_plus_minus_p_ell_endpoint_complete_obstruction.py
+uv run --with sympy python verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py
+uv run --with sympy python audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py
 
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
