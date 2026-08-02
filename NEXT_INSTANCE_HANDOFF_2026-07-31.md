@@ -447,7 +447,11 @@ Six statements organize the current frontier.
    `h3`; exact resultant/gcd certificates justify both substitutions.  Two
    terminal `6 x 6` numerators then have gcd `rho*(rho+1)^2`, already excluded.
    Hence all of `H=h2=0,rho*(rho+1)!=0` is closed.  The other five factor
-   divisors in the broader `H=0` cover remain open.  The prior
+   divisors in the broader `H=0` cover remain open, but `f2=f7=0` is now
+   closed inside them.  Three exact maximal minors successively force one
+   linear `h0`, then `2*h3+s=0`, and finally a nonzero element of
+   `Q(A,R,D)`.  The remaining `f2` divisor, including `f8` and its residual
+   branch, is still unknown.  The prior
    300-second monolithic timeout on `P=0` is not used as evidence:
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D01_PAIR_ORBIT_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D01_PAIR_ORBIT_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md),
@@ -461,7 +465,8 @@ Six statements organize the current frontier.
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_TWO_MINOR_FACTOR_COVER_PARTIAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_TWO_MINOR_FACTOR_COVER_PARTIAL_OBSTRUCTION.md), and
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_H2_ZERO_PARTIAL_CLOSURE.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_H2_ZERO_PARTIAL_CLOSURE.md), and
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_SIX_BY_SIX_TERMINAL_REDUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_SIX_BY_SIX_TERMINAL_REDUCTION.md), and
-   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_TERMINAL_COMPLETE_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_TERMINAL_COMPLETE_OBSTRUCTION.md).
+   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_TERMINAL_COMPLETE_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_TERMINAL_COMPLETE_OBSTRUCTION.md), together with
+   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_F2_F7_INTERSECTION_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_F2_F7_INTERSECTION_OBSTRUCTION.md).
    Component twenty-three is the outward common-center-kernel star fivefold.
    Its complete `YY/YX/XX` support and projective boundary ledger is exact,
    and its generic marked `H31` fibre is empty.  Its complete generic weighted
@@ -1713,6 +1718,8 @@ uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_compon
 uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_h2_zero_six_by_six_terminal_reduction.py
 uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_h2_zero_terminal_complete_obstruction.py
 uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_h2_zero_terminal_complete_obstruction.py
+uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_f2_f7_intersection_obstruction.py
+uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_f2_f7_intersection_obstruction.py
 
 uv run --with sympy python verify_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py
 uv run --with sympy python audit_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py
