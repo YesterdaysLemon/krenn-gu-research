@@ -1545,21 +1545,20 @@ marked-fibre level:
 
 ## Priority
 
-1. classify the mixed support-one/support-two and lower-pair-rank
-   exceptional geometries while closing
-   the parameter/projective boundaries of the three split-cubic
-   components, the sixth component, and the earlier six-dimensional component,
-   and the disjoint mixed-star component's special `H31/H22`
-   boundaries;
-2. intersect the `H22` three-normal incidences with that classification,
-   treating the exact component obstructions as complementary generic
-   models and concentrating on their special parameter/slope
-   boundaries;
+1. use the now-exhaustive twenty-five-component `P_4` ledger to close the
+   explicit weighted-`H22` residuals on components twenty-two, twenty-three,
+   and twenty-five, then the remaining special/projective fibres on
+   components nineteen through twenty-five;
+2. algebraically lift only the nonredundant high-overlap part of the
+   six-blocker quotient catalogue.  The zero-coupled exchanged-root/all-six-
+   blockers case collapses to one row-swapped `P_6`, so prioritize nonzero
+   exchanged-root coupling, five shared blockers, different residual ports,
+   and the global matching identity;
 3. test legal realization of the exact root-of-unity four-row selector
    from Routes E/F, stopping at the first contraction, symmetry, residual,
    or colour-rank obstruction;
 4. formulate the simultaneous-root version of Route G in Grassmannian
-   coordinates;
+   coordinates when the quotient lift exposes a small realizability stratum;
 5. if the four-row selector is legal, test the four-channel selector and
    cut-rank formulation from Route F;
 6. learn and prove sparse forbidden patterns with Route A;

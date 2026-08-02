@@ -721,6 +721,27 @@ exchanged-root coupling, only five shared blockers, different residual ports,
 or the global matching identity:
 [`SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md`](SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md).
 
+Two independently replayed Astra method transfers now sit behind this
+frontier.  The first is an exact root-of-unity selector in a bipartite
+permanent with commuting square-zero variables: every mixed-block matching
+cancels and every intended within-block permanent survives.  It is a bounded
+Routes-E/F construction experiment only.  Legal realization of its constant
+columns by symmetric graph contractions, a hafnian identity, and a Krenn--Gu
+counterexample are all unproved:
+[`ROOT_OF_UNITY_BLOCK_PERMANENT_SELECTOR.md`](ROOT_OF_UNITY_BLOCK_PERMANENT_SELECTOR.md).
+
+The second classifies the same six common-port deletion profiles already used
+by the active `P_6` theorem and enumerates their two-copy incidence quotients:
+`1,791` blocker quotients and `10,746` after the six root-overlap decorations.
+The six one-copy profiles are therefore redundant with the current `P_6`
+normal form; the nonredundant content is the relative-colour and high-overlap
+two-copy gluing ledger.  The maximal-overlap port-swap theorem above removes
+one tempting concentration case, so the useful algebraic lift must focus on
+nonzero exchanged-root coupling, five shared blockers, different residual
+ports, or the global matching identity.  Covector compatibility and full
+graph realizability remain open:
+[`SIX_BLOCKER_ADMISSIBLE_QUOTIENT_CATALOGUE.md`](SIX_BLOCKER_ADMISSIBLE_QUOTIENT_CATALOGUE.md).
+
 An exploratory wind-down calculation suggests a sharper next symbolic task,
 but it has not been promoted to a replayable theorem.  On the dense
 rank-five stratum, normalize the unique relation among the six exceptional
@@ -1145,6 +1166,12 @@ uv run --with sympy python audit_p5_component21_vertical_u0_projective_boundary_
 
 python verify_two_port_seven_blocker_reduction.py
 python audit_two_port_seven_blocker_reduction.py
+
+uv run --with sympy python verify_root_of_unity_block_permanent_selector.py
+python audit_root_of_unity_block_permanent_selector.py
+
+python verify_six_blocker_admissible_quotient_catalogue.py
+python audit_six_blocker_admissible_quotient_catalogue.py
 
 uv run --with sympy python verify_six_blocker_maximal_overlap_port_swap_collapse.py
 uv run --with sympy python audit_six_blocker_maximal_overlap_port_swap_collapse.py
