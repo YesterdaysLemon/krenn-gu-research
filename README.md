@@ -547,8 +547,20 @@ expansion makes all three pure coefficients identically zero for every root
 family `H` and every odd `m>=5`.  More generally, each desired colour needs
 nonempty supports in both port families whose union contains at least two
 blockers.  This colourwise Hall condition is strictly stronger than separate
-full row span, but arbitrary Hall-satisfying ports remain open:
+full row span:
 [`ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md`](ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md).
+The condition is jointly attainable with every current local rank test and
+all three desired pure coefficients.  An exact integer `m=7` construction
+keeps the binary endpoint cofactors, zero mixed endpoint words, two
+rank-three Hall-satisfying port families, five rank-three root-row families,
+and seven concise local maps, and has pure `P_7` coefficients `(1,1,1)`.
+It still fails globally: exact enumeration of all `3^7` coefficients finds
+33 forbidden nonzero mixed words, beginning with `0000102 -> 1`, where a
+single permanent term survives.  Thus Hall support, concision, and pure
+nonvanishing do not close the branch; simultaneous mixed-word cancellation
+is the next genuine condition.  Whether another Hall-satisfying system can
+meet it remains unknown:
+[`ROOT_M7_HALL_SATISFYING_TWO_PORT_PURE_P7_CONSTRUCTION.md`](ROOT_M7_HALL_SATISFYING_TWO_PORT_PURE_P7_CONSTRUCTION.md).
 Even scalar complementary-hafnian algebra supplies no hidden relation on
 the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
 Jacobian of the complete principal-cofactor map at a perfect-matching point

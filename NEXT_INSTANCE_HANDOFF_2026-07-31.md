@@ -1456,8 +1456,20 @@ pure-colour permanent has a Hall defect and all three desired coefficients
 vanish for every root-row family `H` and every odd `m>=5`.  Any survivor must
 have, for each colour, nonempty support in both port families and a union of
 at least two blocker columns.  This is a new necessary condition, not a
-closure of arbitrary full-span Hall-satisfying ports:
+closure by itself:
 [`ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md`](ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md).
+The Hall condition is nevertheless feasible together with every current
+local requirement and the desired pure coefficients.  At `m=7`, an explicit
+integer construction preserves the binary endpoint cofactors, zero mixed
+endpoint words, rank-three `a` and `b` families, all five rank-three root-row
+families, and all seven rank-three local maps.  Its pure `P_7` coefficients
+are exactly `(1,1,1)`.  The full exact `3^7` enumeration then locates the
+first real obstruction: 33 mixed coefficients remain nonzero.  The first is
+`0000102 -> 1`, with a unique port assignment and root permutation basis, so
+no cancellation is available in that coefficient.  This is a bounded
+proof-route no-go, not a `P_7 -> Delta_3` restriction or counterexample.
+Arbitrary Hall-satisfying mixed-word cancellation remains unknown:
+[`ROOT_M7_HALL_SATISFYING_TWO_PORT_PURE_P7_CONSTRUCTION.md`](ROOT_M7_HALL_SATISFYING_TWO_PORT_PURE_P7_CONSTRUCTION.md).
 Nor can one obtain a contradiction from scalar principal-cofactor algebra
 alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal
 two-vertex cofactors at a fixed perfect-matching point splits into one
@@ -1811,6 +1823,8 @@ uv run --with sympy python verify_root_arbitrary_two_endpoint_binary_cofactor_po
 python audit_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py
 uv run --with sympy python verify_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py
 python audit_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py
+uv run --with sympy python verify_root_m7_hall_satisfying_two_port_pure_p7_construction.py
+python audit_root_m7_hall_satisfying_two_port_pure_p7_construction.py
 uv run --with sympy python verify_hafnian_principal_cofactor_gradient_dominance.py
 python audit_hafnian_principal_cofactor_gradient_dominance.py
 
