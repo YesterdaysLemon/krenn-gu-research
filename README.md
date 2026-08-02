@@ -561,6 +561,17 @@ nonvanishing do not close the branch; simultaneous mixed-word cancellation
 is the next genuine condition.  Whether another Hall-satisfying system can
 meet it remains unknown:
 [`ROOT_M7_HALL_SATISFYING_TWO_PORT_PURE_P7_CONSTRUCTION.md`](ROOT_M7_HALL_SATISFYING_TWO_PORT_PURE_P7_CONSTRUCTION.md).
+Reweighting that support cannot repair the failure.  With every displayed
+root and port entry symbolic, each pure coefficient and the first mixed
+coefficient is a unique monomial, and an exact identity
+`C0*C1*C2=C_0000102*Q` makes the mixed coefficient nonzero whenever the
+three pure coefficients are nonzero.  Equivalently,
+`<C_0000102>:(C0*C1*C2)^infinity=<1>`.  The entire fixed support stratum is
+therefore excluded before imposing Hall or rank conditions.  Its sole
+one-edge matching escape is the new port incidence `a_(1,0)`; if port
+supports stay fixed, at least two new root incidences are necessary.  These
+are deformation necessities, not a solution on the enlarged support:
+[`ROOT_M7_FIXED_SUPPORT_PURE_MIXED_MONOMIAL_SATURATION_OBSTRUCTION.md`](ROOT_M7_FIXED_SUPPORT_PURE_MIXED_MONOMIAL_SATURATION_OBSTRUCTION.md).
 Even scalar complementary-hafnian algebra supplies no hidden relation on
 the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
 Jacobian of the complete principal-cofactor map at a perfect-matching point

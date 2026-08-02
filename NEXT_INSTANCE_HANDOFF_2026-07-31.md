@@ -1481,6 +1481,16 @@ no cancellation is available in that coefficient.  This is a bounded
 proof-route no-go, not a `P_7 -> Delta_3` restriction or counterexample.
 Arbitrary Hall-satisfying mixed-word cancellation remains unknown:
 [`ROOT_M7_HALL_SATISFYING_TWO_PORT_PURE_P7_CONSTRUCTION.md`](ROOT_M7_HALL_SATISFYING_TWO_PORT_PURE_P7_CONSTRUCTION.md).
+That precise support is now excluded for every reweighting, not merely at
+the displayed integer point.  Making every nonzero root/port entry symbolic
+leaves the three pure coefficients and `C_0000102` as unique monomials with
+the exact identity `C0*C1*C2=C_0000102*Q`.  Hence the saturation
+`<C_0000102>:(C0*C1*C2)^infinity` is the unit ideal.  The only single new
+incidence that creates a second matching for this word is `a_(1,0)`; with
+port support frozen, a root-only deformation needs at least two new
+incidences.  This closes the fixed support stratum but does not prove that
+either enlargement can cancel all mixed words:
+[`ROOT_M7_FIXED_SUPPORT_PURE_MIXED_MONOMIAL_SATURATION_OBSTRUCTION.md`](ROOT_M7_FIXED_SUPPORT_PURE_MIXED_MONOMIAL_SATURATION_OBSTRUCTION.md).
 Nor can one obtain a contradiction from scalar principal-cofactor algebra
 alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal
 two-vertex cofactors at a fixed perfect-matching point splits into one
@@ -1838,6 +1848,8 @@ uv run --with sympy python verify_root_arbitrary_two_endpoint_port_hall_deficien
 python audit_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py
 uv run --with sympy python verify_root_m7_hall_satisfying_two_port_pure_p7_construction.py
 python audit_root_m7_hall_satisfying_two_port_pure_p7_construction.py
+uv run --with sympy python verify_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py
+python audit_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py
 uv run --with sympy python verify_hafnian_principal_cofactor_gradient_dominance.py
 python audit_hafnian_principal_cofactor_gradient_dominance.py
 
