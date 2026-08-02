@@ -85,14 +85,16 @@ special all-pair fibres on `r=0`, and the same involution transfers them to
 the two missing points on `t=0`.  Thus the normalized divisors
 `r=0,t!=0` and `t=0,r!=0` are both empty.  On the omitted
 `s=1,k=infinity` boundary, the all-pair locus `r^2!=1` is empty for marked
-`H31` and weighted `H22`, including their common `r=t=0` boundary point.  Its `r=+/-1`
-lower-pair endpoints are separately empty for both lifting types in the fixed
+`H31` and weighted `H22`, including their common `r=t=0` boundary point.  Its
+`r=+/-1` lower-pair endpoints are separately empty for both lifting types in the fixed
 normalized order, so the whole `s=1` normalized `k=infinity` diagonal line is
 closed.  On the finite part of the distinct `s=0,rt=1` projective face, the
 all-pair locus `r!=0,+/-1` with arbitrary `k` is empty for marked `H31` and
-weighted `H22`, including `k=0` and every homogeneous weight.  The finite `r=+/-1`
-lower-pair endpoint lines are separately empty for both lifting types,
-including `k=0`.  Its `s=0,k=infinity` corner surface and the
+weighted `H22`, including `k=0` and every homogeneous weight.  The finite
+`r=+/-1` lower-pair endpoint lines are separately empty for both lifting
+types, including `k=0`.  On its `s=0,k=infinity` corner, the affine `r=0`
+divisor is finite-weight ternary-`H22` empty even though its shared binary
+module has a genuine survivor family.  The rest of that corner and the
 `r=infinity`/`t=infinity` lower-pair curves remain separate.
 Component twenty-four's
 complete generic marked `H31` fibre is also empty by exact projection to four
@@ -414,9 +416,20 @@ Six statements organize the current frontier.
    still all-pair of profile `(3,3,3,3,3,3)` away from their intersections;
    the same-sign `+/-1` intersections have edge-23 rank two.  Projective
    `r,t` endpoints are lower-pair.  The `s=infinity` face contributes only
-   the zero tensor after legal row rescaling.  None of these observations
-   closes the corner surface, the two infinity curves, source-torus faces,
-   arbitrary ambient/Grassmann degeneration, or arbitrary order.
+   the zero tensor after legal row rescaling.  On the affine coordinate
+   divisor `r=0`, every finite-weight genuine shared `D01/D23` incidence is
+   now classified exactly.  For `t!=0` its projection is
+   `<h3,h0,t*h1-1>` and its unique mixed-kernel line has diagonals
+   `(2t(lambda+1),2H(lambda-1),0,-2(lambda+1))`; at `t=0` the genuine
+   paired incidence is empty.  Thus the shared module really has a genuine
+   survivor family, so module survival is not a sufficient lift criterion.
+   Nevertheless the uniform one-third-row determinant
+   `8H t^2(lambda-1)^4(lambda+1)` is nonzero on the whole genuine open, so
+   every finite-weight ternary `H22` lift on this divisor is obstructed.
+   Projective weight, `t=infinity`, `r!=0`, the two `s=1` infinity curves,
+   source-torus faces, arbitrary ambient/Grassmann degeneration, and
+   arbitrary order remain open:
+   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_COORDINATE_SURVIVOR.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_COORDINATE_SURVIVOR.md).
    Component twenty-four is the disjoint-binary split-center mixed-star
    fivefold.  Its exact reverse theorem includes the projective moving-leaf
    endpoint.  Its complete generic marked `H31` fibre is empty after exact
@@ -1145,6 +1158,8 @@ uv run --with sympy python verify_p5_component23_s_zero_rt_one_lower_pair_endpoi
 uv run --with sympy python audit_p5_component23_s_zero_rt_one_lower_pair_endpoint_lines_obstruction.py
 uv run --with sympy python verify_p5_h31_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py
 uv run --with sympy python audit_p5_h31_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py
+uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_coordinate_survivor.py
+uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_coordinate_survivor.py
 
 uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_t_zero_and_h_boundary_obstruction.py
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_t_zero_and_h_boundary_obstruction.py
