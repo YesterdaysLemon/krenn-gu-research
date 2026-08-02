@@ -1271,6 +1271,12 @@ covector or, only at `r=3`, the three coordinate covectors.  Therefore
 `r>=4` has a unique exceptional splitting pattern left to analyze; the
 classification does not prove that pattern realizable or impossible:
 [`ROOT_MIXED_SECOND_JET_RESONANCE_CLIQUE_CLASSIFICATION.md`](ROOT_MIXED_SECOND_JET_RESONANCE_CLIQUE_CLASSIFICATION.md).
+That uniform exception has a complete mixed-jet parity law: the restricted
+GHZ quotient has rank one at even order and rank two at odd order.  Thus its
+three-root mixed derivative already demands a full quotient span.  For the
+three-axis `r=3` exception the triple product is instead identically zero.
+Neither calculation proves graph/hafnian realizability or nonrealizability:
+[`ROOT_RESONANT_MIXED_JET_PARITY_CLASSIFICATION.md`](ROOT_RESONANT_MIXED_JET_PARITY_CLASSIFICATION.md).
 Nor can one obtain a contradiction from scalar principal-cofactor algebra
 alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal
 two-vertex cofactors at a fixed perfect-matching point splits into one
@@ -1570,6 +1576,8 @@ uv run --with sympy python verify_root_mixed_second_jet_quotient_rank_classifica
 python audit_root_mixed_second_jet_quotient_rank_classification.py
 uv run --with sympy python verify_root_mixed_second_jet_resonance_clique_classification.py
 python audit_root_mixed_second_jet_resonance_clique_classification.py
+uv run --with sympy python verify_root_resonant_mixed_jet_parity_classification.py
+python audit_root_resonant_mixed_jet_parity_classification.py
 uv run --with sympy python verify_hafnian_principal_cofactor_gradient_dominance.py
 python audit_hafnian_principal_cofactor_gradient_dominance.py
 

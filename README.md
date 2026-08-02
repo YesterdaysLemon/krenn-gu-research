@@ -413,6 +413,13 @@ covector, or, only for `r=3`, the three coordinate covectors.  Hence for
 `r>=4` avoiding every rank-two pair forces the single uniform balanced
 pattern.  Excluding or realizing that exceptional pattern remains open:
 [`ROOT_MIXED_SECOND_JET_RESONANCE_CLIQUE_CLASSIFICATION.md`](ROOT_MIXED_SECOND_JET_RESONANCE_CLIQUE_CLASSIFICATION.md).
+The uniform exception alternates at higher order: its restricted
+coordinatewise mixed-jet quotient has rank one at every even order and rank
+two at every odd order, so every root triple already needs a full
+two-dimensional aggregate cofactor span.  The three-axis exception instead
+has identically zero triple product.  These are necessary jet conditions,
+not graph nonrealizability results:
+[`ROOT_RESONANT_MIXED_JET_PARITY_CLASSIFICATION.md`](ROOT_RESONANT_MIXED_JET_PARITY_CLASSIFICATION.md).
 Even scalar complementary-hafnian algebra supplies no hidden relation on
 the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
 Jacobian of the complete principal-cofactor map at a perfect-matching point
