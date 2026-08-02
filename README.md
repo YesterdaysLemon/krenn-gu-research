@@ -581,6 +581,16 @@ one-edge matching escape is the new port incidence `a_(1,0)`; if port
 supports stay fixed, at least two new root incidences are necessary.  These
 are deformation necessities, not a solution on the enlarged support:
 [`ROOT_M7_FIXED_SUPPORT_PURE_MIXED_MONOMIAL_SATURATION_OBSTRUCTION.md`](ROOT_M7_FIXED_SUPPORT_PURE_MIXED_MONOMIAL_SATURATION_OBSTRUCTION.md).
+The unique one-edge matching escape `a_(1,0)` is excluded too.  It adds the
+same port binomial `P=alpha_0*beta_1+beta_0*gamma` to both the pure `0^7`
+coefficient and `C_0000102`, so the same saturated identity persists and
+cancelling the mixed word cancels the pure word.  No single further
+incidence breaks this shared factor.  Exactly 30 minimal two-incidence
+candidates do: ten crossed root swaps and twenty root--port exchanges.
+Separate unique mixed words also identify `b_(5,1)` and `a_(5,2)` as
+independent port-pressure directions.  These classify necessary support
+deformations only; arbitrary enlarged support remains open:
+[`ROOT_M7_ONE_EDGE_A10_SHARED_PURE_MIXED_FACTOR_OBSTRUCTION.md`](ROOT_M7_ONE_EDGE_A10_SHARED_PURE_MIXED_FACTOR_OBSTRUCTION.md).
 Even scalar complementary-hafnian algebra supplies no hidden relation on
 the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
 Jacobian of the complete principal-cofactor map at a perfect-matching point

@@ -1497,6 +1497,17 @@ port support frozen, a root-only deformation needs at least two new
 incidences.  This closes the fixed support stratum but does not prove that
 either enlargement can cancel all mixed words:
 [`ROOT_M7_FIXED_SUPPORT_PURE_MIXED_MONOMIAL_SATURATION_OBSTRUCTION.md`](ROOT_M7_FIXED_SUPPORT_PURE_MIXED_MONOMIAL_SATURATION_OBSTRUCTION.md).
+Adding the sole one-edge escape `a_(1,0)=gamma` still cannot work.  The same
+port binomial `alpha_0*beta_1+beta_0*gamma` factors both `C_0` and
+`C_0000102`, so their saturated obstruction survives even though both now
+have two matching terms.  Endpoint cofactors and all current Hall/rank data
+remain compatible and therefore cannot evade it.  No single further
+incidence creates a third matching for the witness word; exactly 30 minimal
+two-incidence candidates do, split into ten crossed root swaps and twenty
+root--port exchanges.  Other unique words separately point to `b_(5,1)` and
+`a_(5,2)`.  These are filters for the next support enlargement, not a full
+`P_7` solution:
+[`ROOT_M7_ONE_EDGE_A10_SHARED_PURE_MIXED_FACTOR_OBSTRUCTION.md`](ROOT_M7_ONE_EDGE_A10_SHARED_PURE_MIXED_FACTOR_OBSTRUCTION.md).
 Nor can one obtain a contradiction from scalar principal-cofactor algebra
 alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal
 two-vertex cofactors at a fixed perfect-matching point splits into one
@@ -1858,6 +1869,8 @@ uv run --with sympy python verify_root_m7_hall_satisfying_two_port_pure_p7_const
 python audit_root_m7_hall_satisfying_two_port_pure_p7_construction.py
 uv run --with sympy python verify_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py
 python audit_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py
+uv run --with sympy python verify_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py
+python audit_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py
 uv run --with sympy python verify_hafnian_principal_cofactor_gradient_dominance.py
 python audit_hafnian_principal_cofactor_gradient_dominance.py
 
