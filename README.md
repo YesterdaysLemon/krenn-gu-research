@@ -1380,7 +1380,12 @@ strictly advance the finite frontier:
   infinity and the exceptional line over the unique zero-tensor centre both
   equal the certified vertical plane `<Q A-P C,B>` at `kappa=0`.  Thus the
   full normalized `U_0`-projective blow-up is empty, removing the earlier
-  `p/q`-pole boundary in this Grassmann compactification.  Marking/extension
+  `p/q`-pole boundary in this Grassmann compactification.  The complete
+  normalized `ell=infinity` face is empty as well: four direct exact unit
+  ideals close finite `(p,q,kappa)`, while the vertical and zero-point
+  boundaries transfer to the finite-`kappa` blow-up package and the whole
+  `kappa=infinity` edge transfers to the projective blow-up theorem.
+  Marking/extension
   poles outside the Rees chart and arbitrary ambient/source/projective
   degenerations outside that normalized compactification remain separate:
   [`P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
@@ -1391,7 +1396,8 @@ strictly advance the finite frontier:
   [`P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md) and
   [`P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md`](P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md),
   [`P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md), and
-  [`P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md).
+  [`P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md), together with
+  [`P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md).
 - component eighteen's complete generic marked `H31` and weighted `H22`
   fibres are empty.  In its intrinsic pure marking, three kernel rows equal
   the common singleton `e`.  After any source-coordinate deletion or either

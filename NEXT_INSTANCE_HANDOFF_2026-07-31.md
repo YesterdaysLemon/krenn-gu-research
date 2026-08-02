@@ -326,6 +326,10 @@ Six statements organize the current frontier.
    `R=0` and the exceptional line over `[1:0:0]` are the certified vertical
    plane `<Q A-P C,B>` at `kappa=0`.  This exhausts the normalized
    `U_0`-projective blow-up and removes its earlier `p/q`-pole boundary.
+   The complete normalized `ell=infinity` parameter face is also empty:
+   four direct unit ideals close finite `(p,q,kappa)`, the finite-`kappa`
+   boundary and zero-point blow-up transfer to the vertical package, and the
+   complete `kappa=infinity` edge is the projective blow-up theorem.
    Marking/extension poles outside this Rees chart and arbitrary
    ambient/source/projective limits remain separate:
    [`P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md`](P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md) and
@@ -333,7 +337,8 @@ Six statements organize the current frontier.
    [`P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md) and
    [`P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md`](P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md),
    [`P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md), and
-   [`P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md).
+   [`P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md), together with
+   [`P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md).
    Component twenty-two is the unequal-complement common-kernel fivefold.
    Its complete generic marked `H31` fibre is empty after exact projection to
    four marking branches and four uniform one-marked minors:
@@ -974,7 +979,10 @@ normalized `kappa=infinity` first-normal atlas is also empty, including joint
 regular `(p,q)` vanishing directions.  Its complete normalized mode-zero
 `P^2` and the blow-up of the unique zero-tensor centre are closed: the
 projective boundary and exceptional divisor both transfer to the certified
-vertical `kappa=0` line.  Marking/extension poles outside the displayed Rees
+vertical `kappa=0` line.  The whole normalized `ell=infinity` parameter face
+is closed too, including finite parameters, its mode-zero boundary and
+exceptional divisor, and the complete `kappa=infinity` edge.
+Marking/extension poles outside the displayed Rees
 charts and arbitrary ambient/source/projective degenerations outside this
 normalized compactification remain open:
 [`P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md) and
@@ -982,7 +990,8 @@ normalized compactification remain open:
 [`P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md) and
 [`P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md`](P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md),
 [`P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md), and
-[`P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md).
+[`P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md), together with
+[`P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md).
 
 ## What a global proof would still need
 
@@ -1396,6 +1405,8 @@ uv run --with sympy python verify_p5_component21_kappa_infinity_first_normal_com
 uv run --with sympy python audit_p5_component21_kappa_infinity_first_normal_complete_obstruction.py
 uv run --with sympy python verify_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py
 uv run --with sympy python audit_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py
+uv run --with sympy python verify_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py
+uv run --with sympy python audit_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py
 
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
