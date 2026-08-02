@@ -1535,6 +1535,16 @@ unit ideal.  Of these supports, 18 preserve endpoint legality and still fail
 tensorially; the remaining 12 are independently endpoint-illegal.  This is
 a complete bounded shell classification, not an arbitrary-support theorem:
 [`ROOT_M7_THIRTY_TWO_INCIDENCE_SUPPORTS_PRINCIPAL_SATURATION_EXCLUSION.md`](ROOT_M7_THIRTY_TWO_INCIDENCE_SUPPORTS_PRINCIPAL_SATURATION_EXCLUSION.md).
+The transverse three-port pressure enlargement is excluded separately.
+Adding `a_(1,0)`, `b_(5,1)`, and `a_(5,2)` follows the one-edge directions
+of three independent mixed words, but the latter two do not occur in
+`0000102`.  Its coefficient therefore retains the same complete colour-zero
+port factor as `C0`, so the principal saturation is again the unit ideal.
+This support contains zero of the previous 30 pair-shell supports, all three
+new incidences lie on odd zero-cofactor blockers, and an exact specialization
+retains pure coefficients `(2,1,1)` plus every rank/Hall condition.  Larger
+transverse enlargements remain open:
+[`ROOT_M7_THREE_PORT_PRESSURE_ENLARGEMENT_SHARED_FACTOR_OBSTRUCTION.md`](ROOT_M7_THREE_PORT_PRESSURE_ENLARGEMENT_SHARED_FACTOR_OBSTRUCTION.md).
 Nor can one obtain a contradiction from scalar principal-cofactor algebra
 alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal
 two-vertex cofactors at a fixed perfect-matching point splits into one
@@ -1906,6 +1916,8 @@ uv run --with sympy python verify_root_m7_one_edge_a10_shared_pure_mixed_factor_
 python audit_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py
 uv run --with sympy python verify_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py
 python audit_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py
+uv run --with sympy python verify_root_m7_three_port_pressure_enlargement_shared_factor_obstruction.py
+python audit_root_m7_three_port_pressure_enlargement_shared_factor_obstruction.py
 uv run --with sympy python verify_hafnian_principal_cofactor_gradient_dominance.py
 python audit_hafnian_principal_cofactor_gradient_dominance.py
 

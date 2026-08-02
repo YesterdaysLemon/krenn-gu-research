@@ -610,6 +610,15 @@ selected mixed coefficient dividing `C0*C1*C2`.  Eighteen supports preserve
 the endpoint cofactors and are still tensor-excluded; the other twelve are
 independently endpoint-illegal.  Larger support shells remain open:
 [`ROOT_M7_THIRTY_TWO_INCIDENCE_SUPPORTS_PRINCIPAL_SATURATION_EXCLUSION.md`](ROOT_M7_THIRTY_TWO_INCIDENCE_SUPPORTS_PRINCIPAL_SATURATION_EXCLUSION.md).
+The transverse three-port pressure support is excluded independently.  Adding
+`a_(1,0)`, `b_(5,1)`, and `a_(5,2)` addresses the unique one-edge directions
+suggested by three different mixed words, but the latter two are invisible
+to `0000102`; its coefficient still shares the full colour-zero port
+binomial with `C0`.  The same principal saturation is therefore the unit
+ideal.  This support contains none of the preceding 30 pair-shell supports,
+preserves endpoint legality at odd blockers, and admits exact full-rank/Hall
+specializations, so the failure is tensorial rather than concision:
+[`ROOT_M7_THREE_PORT_PRESSURE_ENLARGEMENT_SHARED_FACTOR_OBSTRUCTION.md`](ROOT_M7_THREE_PORT_PRESSURE_ENLARGEMENT_SHARED_FACTOR_OBSTRUCTION.md).
 Even scalar complementary-hafnian algebra supplies no hidden relation on
 the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
 Jacobian of the complete principal-cofactor map at a perfect-matching point
