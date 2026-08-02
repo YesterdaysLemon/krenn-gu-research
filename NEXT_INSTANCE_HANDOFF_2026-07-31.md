@@ -357,8 +357,11 @@ Six statements organize the current frontier.
    nonzero first normal and every nonzero monomial `(s_i p,s_i q)` normal.
    All six pairwise marking-pole corners are now closed on every weighted
    normal with nonzero `P4` restriction by 24 additional direct unit ideals.
-   Triple/quadruple marking poles, parameter-boundary intersections,
-   extension poles, and arbitrary ambient/source/projective
+   The four triple and one quadruple marking-pole corners are now closed on
+   that same nonzero-`P4` boundary: all 20 marked `H31` orientations are
+   Hall-deficient, while ten exact homogeneous weighted-`H22` ideals are
+   unit.  Parameter-boundary intersections, extension poles, and arbitrary
+   ambient/source/projective
    limits remain separate; a `P5` leading term with zero `P4` restriction is
    not covered by this normal calculation:
    [`P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md`](P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md) and
@@ -371,7 +374,8 @@ Six statements organize the current frontier.
    [`P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md), together with
    [`P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md) and
    [`P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md), together with
-   [`P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md).
+   [`P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md), and
+   [`P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md).
    Component twenty-two is the unequal-complement common-kernel fivefold.
    Its complete generic marked `H31` fibre is empty after exact projection to
    four marking branches and four uniform one-marked minors:
@@ -1042,8 +1046,11 @@ zero boundary restriction, but every nonzero first normal and every nonzero
 monomial `(s_i p,s_i q)` normal is empty by 24 further unit ideals.
 At all six pairwise marking-pole corners, the boundary restriction is again
 zero, but every weighted normal with nonzero `P4` restriction is empty by 24
-more unit ideals.  Triple/quadruple marking poles, parameter-boundary
-intersections, extension poles, and arbitrary ambient/source/projective
+more unit ideals.  At the four triple and one quadruple corners the boundary
+restriction is also zero; all 20 marked `H31` orientations are Hall-deficient
+and ten direct weighted-`H22` chart ideals close every nonzero-`P4` weighted
+normal.  Parameter-boundary intersections, extension poles, and arbitrary
+ambient/source/projective
 degenerations remain open.  In particular, the argument does not classify
 an ambient `P5` leading term whose `P4` restriction is zero:
 [`P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md) and
@@ -1056,7 +1063,8 @@ an ambient `P5` leading term whose `P4` restriction is zero:
 [`P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md), together with
 [`P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md) and
 [`P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md), together with
-[`P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md).
+[`P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md), and
+[`P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md).
 
 ## What a global proof would still need
 
@@ -1552,6 +1560,8 @@ uv run --with sympy python verify_p5_component21_other_single_marking_infinity_w
 uv run --with sympy python audit_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py
 uv run --with sympy python verify_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction.py
 uv run --with sympy python audit_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction.py
+uv run --with sympy python verify_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py
+uv run --with sympy python audit_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py
 
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
