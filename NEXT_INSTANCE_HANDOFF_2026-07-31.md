@@ -1163,6 +1163,16 @@ This is nonredundant with the earlier `(p,q)` blow-up, which treats nonzero
 leading base-normal directions.  Higher zero normals and simultaneous
 iterated base/extension blow-ups remain unknown:
 [`P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_RAW_KERNEL_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_RAW_KERNEL_NORMAL_OBSTRUCTION.md).
+At ordinary finite weight `lambda!=+/-1`, the next level is now closed too.
+The complete first normal has rank nine everywhere, including
+`kappa=0,ell=+/-1`, and its four-dimensional kernel is exactly the tangent
+space to the universal zero family `M(0,0,kappa,ell,lambda)K_lambda=0`.
+After straightening along that family, the complete second normal has rank
+nine, kernel exactly the old scale line, and both required `D01` diagonal
+rows identically zero.  Hence every nonzero second normal is `H22`-empty;
+zero second normals remain tangent to the same exact family.  The
+`lambda=+/-1` higher normals and arbitrary iteration remain unknown:
+[`P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_ORDINARY_WEIGHT_SECOND_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_ORDINARY_WEIGHT_SECOND_NORMAL_OBSTRUCTION.md).
 
 ## What a global proof would still need
 
@@ -1766,6 +1776,8 @@ uv run --with sympy python verify_p5_component21_finite_h22_extension_p_zero_non
 uv run --with sympy python audit_p5_component21_finite_h22_extension_p_zero_nonzero_q_normal_closure.py
 uv run --with sympy python verify_p5_component21_finite_h22_extension_zero_base_raw_kernel_normal_obstruction.py
 uv run --with sympy python audit_p5_component21_finite_h22_extension_zero_base_raw_kernel_normal_obstruction.py
+uv run --with sympy python verify_p5_component21_finite_h22_extension_zero_base_ordinary_weight_second_normal_obstruction.py
+uv run --with sympy python audit_p5_component21_finite_h22_extension_zero_base_ordinary_weight_second_normal_obstruction.py
 
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
