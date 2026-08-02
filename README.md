@@ -347,10 +347,11 @@ differentiating at any fully supported root makes the rank-one slice model
 vary by one scalar `ell_i(y)`, while the three GHZ coefficients must vary
 independently as `y_c/x_i[c]`.  Hence that local universal construction
 cannot itself be a full witness.  Any genuine extension needs a
-nonprojective root--blocker tangent or at least two independent effective
-root--root/root--residual tangent companions; one companion still gives
-derivative rank at most two against the GHZ rank three.  This proves the
-necessity of the companion layer, not
+nonprojective root--blocker tangent or effective root--root/root--residual
+companions spanning exactly the full two-dimensional annihilator of the root
+vector; together with the scalar row direction they span the target dual.
+One companion still gives derivative rank at most two against the GHZ rank
+three.  This proves the necessity of the companion layer, not
 its inconsistency.  All six
 known common-port missing-colour profiles still admit exact full-span
 incidence models, so none is eliminated by these rank conditions alone.

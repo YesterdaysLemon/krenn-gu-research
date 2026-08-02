@@ -89,6 +89,15 @@ def coefficient_contradiction() -> dict[str, object]:
     assert target_derivative_matrix.rank() == 3
     one_companion_rank_bound = 1 + 1
     assert one_companion_rank_bound < target_derivative_matrix.rank()
+    root = sp.Matrix((x0, x1, x2))
+    companion_matrix = sp.Matrix(((x1, -x0, 0), (x2, 0, -x0)))
+    assert companion_matrix * root == sp.zeros(2, 1)
+    assert companion_matrix.rank() == 2
+    scalar_row = sp.Matrix([[1 / x0, 0, 0]])
+    assert scalar_row.dot(root) == 1
+    augmented = scalar_row.col_join(companion_matrix)
+    assert sp.factor(augmented.det()) == x0
+    assert augmented.rank() == 3
     return {
         "coefficient_systems": [[str(value) for value in row] for row in equations],
         "incompatible_difference": str(contradiction),
@@ -96,6 +105,9 @@ def coefficient_contradiction() -> dict[str, object]:
         "target_derivative_rank": target_derivative_matrix.rank(),
         "projectively_constant_plus_one_companion_rank_bound": one_companion_rank_bound,
         "minimum_effective_companion_covector_span": 2,
+        "maximum_companion_span_from_pairwise_zero_kernel_incidence": 2,
+        "forced_companion_span": "x_i^perp",
+        "scalar_plus_companion_span_rank": augmented.rank(),
     }
 
 
@@ -131,6 +143,7 @@ def main() -> None:
                 "slice_universal_construction_extends_globally": False,
                 "coordinate_branch_excluded_in_full": False,
                 "projectively_constant_root_requires_companion_span_at_least": 2,
+                "projectively_constant_root_forces_companion_span_exactly": "x_i^perp",
                 "finite_field_used": False,
                 "global_conjecture_resolved": False,
             },

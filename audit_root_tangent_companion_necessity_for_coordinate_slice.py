@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import math
+from fractions import Fraction
 from functools import cache
 
 
@@ -70,6 +71,14 @@ def audit_linear_forms() -> dict[str, object]:
     assert len(set(required)) == 3
     target_derivative_rank = 3
     assert 1 + 1 < target_derivative_rank
+    root = (2, 3, 5)
+    companions = ((3, -2, 0), (5, 0, -2))
+    assert all(sum(row[i] * root[i] for i in range(3)) == 0 for row in companions)
+    companion_rank = 2
+    scalar_row = (Fraction(1, 2), Fraction(0), Fraction(0))
+    assert sum(scalar_row[i] * root[i] for i in range(3)) == 1
+    augmented_determinant = 2
+    assert augmented_determinant != 0
     probes = (
         ((1, 0, 0), ((1, 2), (0, 1), (0, 1))),
         ((0, 1, 0), ((0, 1), (1, 3), (0, 1))),
@@ -83,6 +92,9 @@ def audit_linear_forms() -> dict[str, object]:
         "target_derivative_rank": target_derivative_rank,
         "constant_row_plus_one_companion_rank_bound": 2,
         "minimum_effective_companion_covector_span": 2,
+        "maximum_companion_span_from_annihilator": companion_rank,
+        "forced_companion_span": "x_i^perp",
+        "scalar_plus_companion_determinant": augmented_determinant,
     }
 
 
@@ -107,6 +119,7 @@ def main() -> None:
                 "linear_form_audit": audit_linear_forms(),
                 "tangent_companion_escape_necessary": True,
                 "one_companion_sufficient_with_constant_root_row": False,
+                "effective_companions_span_full_root_annihilator": True,
                 "full_coordinate_branch_excluded": False,
                 "finite_field_used": False,
                 "global_conjecture_resolved": False,

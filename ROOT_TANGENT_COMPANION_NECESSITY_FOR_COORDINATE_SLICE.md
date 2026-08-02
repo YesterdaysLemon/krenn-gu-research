@@ -15,7 +15,8 @@ witness, at least one of the following must occur:
 
 1. the root--blocker covectors vary nonprojectively to first order at `x_i`;
 2. the root--root and root--residual first-order evaluation covectors that
-   actually carry nonzero companion cofactors span dimension at least two.
+   actually carry nonzero companion cofactors span the full tangent
+   annihilator `x_i^perp`, hence have dimension exactly two.
 
 In particular, one isolated tangent companion cannot repair a projectively
 constant root--blocker derivative.
@@ -137,15 +138,50 @@ Thus a globally extendable coordinate slice with projectively constant
 root--blocker tangent rows requires at least two linearly independent
 effective root--root/root--residual companion covectors at every root.
 
+## The companion span is exactly the tangent annihilator
+
+The upper bound is forced by the original slice incidence.  For another root
+`j`, its companion covector at root `i` is
+
+```text
+phi_ij(y)=B_ij(y,x_j).
+```
+
+Pairwise-zero roots give `B_ij(x_i,x_j)=0`, so `phi_ij(x_i)=0`.  Likewise a
+residual kernel vector `z_q` gives
+
+```text
+psi_iq(y)=B_iq(y,z_q),       psi_iq(x_i)=0.
+```
+
+Thus every effective root--root/root--residual companion covector belongs to
+the two-dimensional annihilator
+
+```text
+x_i^perp={phi:phi(x_i)=0}.                           (12)
+```
+
+The lower bound (11) therefore forces equality: the effective companion
+covectors span all of `x_i^perp`.  Moreover (3) evaluated at `y=x_i` gives
+`ell_i(x_i)=1`, so `ell_i` does not lie in `x_i^perp`.  Consequently
+
+```text
+span(ell_i, effective companions)=(C^3)^*.           (13)
+```
+
+This is an exact first-jet rigidity condition.  It is still only necessary:
+two companion directions with the correct span need not satisfy the actual
+cofactor-valued derivative equations or any second-order compatibility.
+
 ## Consequence for the local-to-global frontier
 
 The locally universal coordinate-monomial model is therefore definitively
 not a full graph witness.  Any genuine global point over the same fixed
 cofactor slice needs an escape from (3)--(4): a nonprojective root endpoint
-or at least two independent effective root--root/root--residual tangent
-companions.  These companion terms arise before second-order or multi-slice
-gluing and give the smallest new algebraic layer not visible in the frozen
-cofactor incidence.
+or effective root--root/root--residual companions spanning the complete
+plane `x_i^perp`.  These companion terms arise before second-order or
+multi-slice gluing and give the smallest new algebraic layer not visible in
+the frozen cofactor incidence.
 
 The theorem does **not** say that the companion layer is inconsistent.  It
 only proves that further slice-only elimination cannot complete the global
