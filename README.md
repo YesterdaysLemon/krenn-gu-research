@@ -456,6 +456,15 @@ odd number of roots, all three types are forced.  Thus the uniform balanced
 resonance cannot use dense root--root edges to evade a zero/one-endpoint
 topology:
 [`ROOT_AT_MOST_ONE_ENDPOINT_FULL_JET_AXIS_NECESSITY.md`](ROOT_AT_MOST_ONE_ENDPOINT_FULL_JET_AXIS_NECESSITY.md).
+The deletion argument has a general endpoint-subset form: with `r` roots and
+`t` effective fixed endpoints, the full-root derivative uses at most
+`sum_(ell congruent r mod 2) binomial(t,ell)` complementary cofactor classes.
+For exactly two endpoints this bound is two.  Exact pure-tensor dependence
+then forces either an axis tangent root or support of every tangent covector
+on one common coordinate pair.  This applies directly to the five-root/
+seven-blocker/two-residual cell at order fourteen, without suppressing
+root--root tangent edges:
+[`ROOT_FINITE_ENDPOINT_FULL_JET_COFACTOR_SPAN_BOUND.md`](ROOT_FINITE_ENDPOINT_FULL_JET_COFACTOR_SPAN_BOUND.md).
 Even scalar complementary-hafnian algebra supplies no hidden relation on
 the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
 Jacobian of the complete principal-cofactor map at a perfect-matching point

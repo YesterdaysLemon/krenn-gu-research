@@ -1323,6 +1323,15 @@ least two distinct coordinate-axis tangent types occur; when there is no
 endpoint and the root count is odd, all three types occur.  In particular
 the uniform balanced resonance is impossible in this topology:
 [`ROOT_AT_MOST_ONE_ENDPOINT_FULL_JET_AXIS_NECESSITY.md`](ROOT_AT_MOST_ONE_ENDPOINT_FULL_JET_AXIS_NECESSITY.md).
+More generally, endpoint parity indexes the full-root derivative by at most
+`sum_(ell congruent r mod 2) binomial(t,ell)` deletion cofactors.  At exactly
+two endpoints this is two, so the three GHZ coefficient forms must be
+dependent.  An exact pure-tensor classification leaves only an axis tangent
+root or support of every tangent covector on one common coordinate pair.
+This constrains the order-fourteen five-root/seven-blocker/two-residual cell
+even with dense root--root tangent channels, but neither residual branch is
+yet excluded:
+[`ROOT_FINITE_ENDPOINT_FULL_JET_COFACTOR_SPAN_BOUND.md`](ROOT_FINITE_ENDPOINT_FULL_JET_COFACTOR_SPAN_BOUND.md).
 Nor can one obtain a contradiction from scalar principal-cofactor algebra
 alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal
 two-vertex cofactors at a fixed perfect-matching point splits into one
@@ -1636,6 +1645,8 @@ uv run --with sympy python verify_root_restricted_jet_companion_matching_saturat
 python audit_root_restricted_jet_companion_matching_saturation_necessity.py
 uv run --with sympy python verify_root_at_most_one_endpoint_full_jet_axis_necessity.py
 python audit_root_at_most_one_endpoint_full_jet_axis_necessity.py
+uv run --with sympy python verify_root_finite_endpoint_full_jet_cofactor_span_bound.py
+python audit_root_finite_endpoint_full_jet_cofactor_span_bound.py
 uv run --with sympy python verify_hafnian_principal_cofactor_gradient_dominance.py
 python audit_hafnian_principal_cofactor_gradient_dominance.py
 
