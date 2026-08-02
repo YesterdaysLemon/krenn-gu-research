@@ -99,7 +99,9 @@ by exact ternary compatibility rather than mixed-module emptiness.  On its `s=0,
 divisor is finite-weight ternary-`H22` empty even though its shared binary
 module has a genuine survivor family, while the marked-`H31` fibre is empty
 for every finite `(r,t)`.  A corner-only mode swap transfers the finite-weight
-`H22` closure to `t=0` without changing weight.  The projective `r,t` corner endpoints and the
+`H22` closure to `t=0` without changing weight.  Separate exact projective-
+weight saturations and one-third-row determinants close `[1:0]` on both
+finite coordinate divisors as well.  The projective `r,t` corner endpoints and the
 `r=infinity`/`t=infinity` lower-pair curves remain separate.  On the `s=1`
 face, however, those two parameter-infinity curves are empty for complete
 marked `H31` and homogeneous weighted `H22` at every finite remaining
@@ -468,11 +470,16 @@ Six statements organize the current frontier.
    `[mu:nu]`.  It therefore transfers the theorem to the complete finite
    `t=0` divisor, including finite `lambda=0`; the older ambient `J` map is
    not used because its weight inversion would leave that slice uncovered.
-   Projective weight, `t=infinity`, `r!=0`, source-torus faces,
+   At projective weight, the same source projection
+   `<h3,h0,t*h1-1>` has kernel diagonals `(2t,2H,0,-2)` and uniform
+   one-third-row determinant `8H*t^2`; the corner mode swap transfers this
+   closure to `t=0`.  Hence both finite coordinate divisors are closed at
+   every homogeneous weight.  Parameter infinity, `r*t!=0`, source-torus faces,
    arbitrary ambient/Grassmann degeneration, and
    arbitrary order remain open:
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_COORDINATE_SURVIVOR.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_COORDINATE_SURVIVOR.md) and
-   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_R_T_COORDINATE_SYMMETRY_TRANSFER.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_R_T_COORDINATE_SYMMETRY_TRANSFER.md).
+   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_R_T_COORDINATE_SYMMETRY_TRANSFER.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_R_T_COORDINATE_SYMMETRY_TRANSFER.md), together with
+   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_PROJECTIVE_WEIGHT_COORDINATE_DIVISORS_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_PROJECTIVE_WEIGHT_COORDINATE_DIVISORS_OBSTRUCTION.md).
    Component twenty-four is the disjoint-binary split-center mixed-star
    fivefold.  Its exact reverse theorem includes the projective moving-leaf
    endpoint.  Its complete generic marked `H31` fibre is empty after exact
@@ -1211,6 +1218,8 @@ uv run --with sympy python verify_p5_component23_s_one_parameter_infinity_curves
 uv run --with sympy python audit_p5_component23_s_one_parameter_infinity_curves_obstruction.py
 uv run --with sympy python verify_p5_component23_s_one_triple_parameter_infinity_corner_obstruction.py
 uv run --with sympy python audit_p5_component23_s_one_triple_parameter_infinity_corner_obstruction.py
+uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_projective_weight_coordinate_divisors_obstruction.py
+uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_projective_weight_coordinate_divisors_obstruction.py
 uv run --with sympy python verify_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py
 uv run --with sympy python audit_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py
 

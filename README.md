@@ -134,19 +134,22 @@ finite-`(r,t)` marked-`H31` fibre is empty: the exact projection splits into
 seven open branches plus diagonal, antidiagonal, center, coordinate, and
 lower-pair endpoint strata, each with a uniform rank/transverse obstruction.
 Its affine
-`r=0` divisor is now closed for finite-weight ternary `H22`: the complete
+`r=0` divisor is now closed for complete homogeneous weighted ternary `H22`:
+on the finite chart the complete
 shared binary-incidence projection has a genuine survivor family, disproving
 module survival as a sufficient obstruction criterion, but an exact
 one-third-row determinant kills every member before a ternary lift.  A
 corner-only tensor-mode swap `(2 3)` fixes both contractions and homogeneous
 weight, transferring this theorem to the complete finite `t=0` divisor,
-including `lambda=0`.  The
-`s=infinity` face contributes only the zero tensor; projective weight, the
-rest of the corner, source-torus compactification, and arbitrary
+including `lambda=0`; a separate projective-weight saturation and uniform
+one-third-row determinant close `[1:0]` on both coordinate divisors.  The
+`s=infinity` face contributes only the zero tensor; the rest of the corner,
+source-torus compactification, and arbitrary
 ambient/Grassmann degenerations remain unknown.  See
 [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_FINITE_CORNER_OBSTRUCTION.md`](P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_FINITE_CORNER_OBSTRUCTION.md) and
 [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_COORDINATE_SURVIVOR.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_COORDINATE_SURVIVOR.md), together with
-[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_R_T_COORDINATE_SYMMETRY_TRANSFER.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_R_T_COORDINATE_SYMMETRY_TRANSFER.md).
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_R_T_COORDINATE_SYMMETRY_TRANSFER.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_R_T_COORDINATE_SYMMETRY_TRANSFER.md) and
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_PROJECTIVE_WEIGHT_COORDINATE_DIVISORS_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_PROJECTIVE_WEIGHT_COORDINATE_DIVISORS_OBSTRUCTION.md).
 Component twenty-four's complete generic weighted fibre is empty across both
 pair orbits and both homogeneous-weight charts.  On component twenty-five,
 generic marked `H31` is empty.  Weighted `H22` is empty at both weight-
