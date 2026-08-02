@@ -82,14 +82,19 @@ sextic survivor polynomial, and an exact nonzero resultant with a second
 fixed maximal minor closes the entire displayed `h1=0` residual.  On the
 remaining `h1!=0` locus, the divisor `H=2*A*h1+1=0` now has a second fixed
 maximal minor: away from `rho=0,-1`, rank drop is confined to
-`h2*f2*f7*f8*U*V=0`.  Those six divisors remain open; the broader first-minor
-factorization remains contextual because its native replay timed out.  See
+`h2*f2*f7*f8*U*V=0`.  Inside `h2=0`, the three further divisors
+`rho=1`, `f6=0`, and `f8=0` are now exactly empty by eight specialized
+rational-function-field determinants and an independent reconstruction.
+The remaining `h2=0` branch, the other five divisors in the broader cover,
+and the contextual `W=P=0` scout remain open; the generic first-minor
+factorization and its terminal routes are not used as evidence.  See
 [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_E_ZERO_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_E_ZERO_OBSTRUCTION.md) and
 [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_MINUS_ONE_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_MINUS_ONE_OBSTRUCTION.md),
 [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md), together with
 [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_COFACTOR_OPEN_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_COFACTOR_OPEN_OBSTRUCTION.md) and
 [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_SECOND_COFACTOR_COVER_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_SECOND_COFACTOR_COVER_OBSTRUCTION.md), together with
-[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_TWO_MINOR_FACTOR_COVER_PARTIAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_TWO_MINOR_FACTOR_COVER_PARTIAL_OBSTRUCTION.md).
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_TWO_MINOR_FACTOR_COVER_PARTIAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_TWO_MINOR_FACTOR_COVER_PARTIAL_OBSTRUCTION.md) and
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_H2_ZERO_PARTIAL_CLOSURE.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_H2_ZERO_PARTIAL_CLOSURE.md).
 Component
 twenty-three's generic weighted fibre is now completely closed.  After the
 infinity and `lambda=0,+/-1` closures, two exact minors leave the ordinary
