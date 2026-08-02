@@ -48,6 +48,11 @@ Its direct ideal and a one-variable-reduced resultant ideal both exceeded a
 empty.  The `h1!=0` part of the primary factor cover is also not exhausted.
 No finite-field computation is used as proof.
 
+A subsequent two-minor coefficient-field certificate closes the divisor
+`R*h2=1` inside this residual.  Thus the refined unknown part also satisfies
+`R*h2!=1`:
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2R1_RESIDUAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2R1_RESIDUAL_OBSTRUCTION.md).
+
 Replay with:
 
 ```

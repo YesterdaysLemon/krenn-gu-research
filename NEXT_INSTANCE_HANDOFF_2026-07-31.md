@@ -42,13 +42,17 @@ fibre remains open: exact rational binary survivors have been found, but the
 tested survivor lifts all have rank-four one-marked ternary maps and are
 therefore false positives, not counterexamples.
 
-The all-pair component frontier was first reduced from three cells to the two
-star cells `(2,1,1)` and `(1,1,1)`.  The continuation below closes the first
-of those, leaving only star `(1,1,1)`.  A complete reverse theorem also
-places the marked coincident-support signature `(1,1,1,0)` star orientation,
-including its kernel-line endpoints and vertical projective fibre, in
-component twenty-one.  Other endpoint/support orientations in the remaining
-star `(1,1,1)` cell remain open.
+The all-pair component frontier was first reduced to eight star/triangle
+cells.  Every one is now closed.  A complete reverse theorem places the
+marked coincident-support signature `(1,1,1,0)` star orientation, including
+its kernel-line endpoints and vertical projective fibre, in component
+twenty-one.  The later one- and two-double-spoke classifications, mixed
+endpoint ledger, and complete no-double collision theorem close every other
+orientation of the final star `(1,1,1)` cell.  The dangerous source-triangle
+sheet has one saturated prime and is exactly the known `L_3` component; the
+old apparent rational survivor is explicitly non-pure.  Together with the
+lower-pair theorem, the twenty-five certified pure-`P_4` component closures
+are exhaustive.
 The outward common-center-kernel orientation of star `(2,1,1)` is now
 projectively exhausted as well.  Its split-support `XX` sheet is a new smooth
 fivefold, component twenty-three; all its `YY/YX/XX` boundaries route to
@@ -69,27 +73,34 @@ The
 equal-endpoint inward stratum is empty by an exhaustive support-one/
 support-two theorem: the branches have a fixed forbidden coefficient, force
 the zero tensor, or drop a pair rank below three.  Thus star `(2,1,1)` is
-complete and star `(1,1,1)` is the sole open all-pair `P_4` cell.  Component twenty-three's complete generic marked `H31` fibre is
+complete.  Component twenty-three's complete generic marked `H31` fibre is
 empty.  Its weighted `H22` weight-at-infinity chart is empty for all
-markings; finite weight is empty at the canonical marking and for all
-markings on the exact `t=3` slice.  Generic finite all-marking incidence over
-`C(r,t)` remains unknown after bounded exact timeouts.  Component twenty-four's
+markings; finite weight is empty at the canonical marking, for all markings
+on the exact `t=3` slice, and on the complete all-marking `lambda=0,+/-1` slices.
+Two exact minors leave a displayed factor residual on the remaining finite
+chart.  Component twenty-four's
 complete generic marked `H31` fibre is also empty by exact projection to four
 marking branches and fixed-minor unit ideals.  Its complete generic weighted
 `H22` fibre is empty as well: both pair orbits and both homogeneous-weight
 charts project to six exact branches, including an irreducible quadratic-
 weight prime, and `N0[0137]` makes every branch ideal unit.
-Both generic `P_5` fibres on component twenty-five remain open.
+Component twenty-five's generic marked `H31` fibre is empty over its exact
+hypersurface function field.  Weighted `H22` is empty at both infinity
+endpoints.  Finite `D01` is empty off one extension divisor; on that divisor
+`lambda=+/-1` is empty and `lambda^2!=1` has a two-factor residual cover.
+Finite `D23` has an exact three-branch necessary cover.  Those displayed
+finite branches remain unknown except that the complete all-marking
+`lambda=1` slice is now empty.
 
-One orientation in the last star cell is now removed too.  If all three
-rank-one relations point strictly to the center pure-kernel endpoint, their
-leaf active rows are the same singleton/binary polar form, whose squarefree
-cube is zero.  One- and two-double-endpoint boundaries and the remaining
-mixed/radical support collisions in star `(1,1,1)` are still open.
-The all-three kernel--kernel orientation is empty as well: singleton support
-forces the active permanent into three coordinates, and on binary support
-three mixed coefficients generate the all-active coefficient.  One- and
-two-double-endpoint orientations remain open.
+The final star cell is closed in full.  If all three rank-one relations point
+strictly to the center pure-kernel endpoint, their leaf active rows are the
+same singleton/binary polar form, whose squarefree cube is zero.  The
+all-three kernel--kernel orientation is empty as well.  Exact one- and
+two-double-spoke ledgers route to components 8, 16, 18, 21 or a completed
+triangle.  With no double spoke, endpoint signature `(2,1,0,0)` is lower-pair
+or triangular, while the two `(1,1,1,0)` orientation orbits are exhausted by
+component 21, `L_1/L_2/L_3`, or exterior-rank triangles.  No support or
+projective collision is left open in pure `P_4`.
 
 The arbitrary-order blocker frontier now has one exact formula for every
 surplus.  With `r` roots and `r+s` blockers, the surviving tensor is the sum
@@ -108,12 +119,13 @@ Six statements organize the current frontier.
    compression has `min r_ij<=2`, it lies in one of four known component
    closures.  See
    [`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
-2. **The first twenty-four of the twenty-five certified components are
-   generically closed for marked `H31`; the first twenty-one are also
+2. **All twenty-five certified components are generically closed for marked
+   `H31`; the first twenty-one are also
    generically closed for weighted `H22`, as is component twenty-four.**
    Component twenty-two's weighted fibre and component twenty-three's
-   generic finite all-marking weighted fibre remain open; both generic fibres on component
-   twenty-five are open.  The first eighteen have empty
+   residual finite all-marking weighted fibre remain open.  Component
+   twenty-five's weighted fibre is partially closed but its displayed finite
+   branches remain open.  The first eighteen have empty
    fibres over the generic point by the earlier componentwise theorems.
    For the first seventeen, component fifteen was the last completed case:
    [`P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md)
@@ -240,18 +252,28 @@ Six statements organize the current frontier.
    radical decomposition and branchwise unit ideals.  The complementary-
    support `D23` pair orbit is not symmetry-equivalent under the stabilizer
    used by that theorem.  Its Q1/Q2/Q3 branches and a broad exact `h1=0`
-   factor cover are now unit, but the displayed `G=G2=0` residual and the
-   `h1!=0` chart remain open:
+   factor cover are now unit.  Inside the displayed `G=G2=0` residual the
+   divisor `R*h2=1` is also unit.  On `rho=0,h1!=0`, a sparse exact kernel
+   kills the required `A` diagonal on the rank-seven open; `h2=0` is unit as
+   well.  The remaining subchart is `rho=0,E=0,h1*h2!=0`, and other displayed
+   residuals remain open:
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D01_PAIR_ORBIT_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D01_PAIR_ORBIT_OBSTRUCTION.md),
-   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md).
+   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md),
+   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2R1_RESIDUAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2R1_RESIDUAL_OBSTRUCTION.md), and
+   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_H1_NONZERO_SUPPLEMENT.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_H1_NONZERO_SUPPLEMENT.md).
    Component twenty-three is the outward common-center-kernel star fivefold.
    Its complete `YY/YX/XX` support and projective boundary ledger is exact,
    and its generic marked `H31` fibre is empty.  Weighted `H22` is exactly
    closed at weight infinity, the finite canonical marking, and the full
-   finite `t=3` slice; generic finite all-marking incidence remains open:
+   finite `t=3` slice.  The full all-marking `lambda=0,+/-1` slices are now empty,
+   and two selected minors leave an explicit factor residual on the remaining
+   finite chart; generic finite all-marking incidence remains open:
    [`P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md`](P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md),
    [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
-   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md).
+   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md), and
+   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md), and
+   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ONE_ALL_MARKING_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ONE_ALL_MARKING_OBSTRUCTION.md), and
+   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ZERO_ALL_MARKING_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ZERO_ALL_MARKING_OBSTRUCTION.md).
    Component twenty-four is the disjoint-binary split-center mixed-star
    fivefold.  Its exact reverse theorem includes the projective moving-leaf
    endpoint.  Its complete generic marked `H31` fibre is empty after exact
@@ -265,8 +287,19 @@ Six statements organize the current frontier.
    Component twenty-five is the disjoint-binary unequal-endpoint two-inward
    star fivefold.  Its irreducible purity hypersurface and exact smooth
    incidence certificate and complete projective reverse support ledger are
-   replayable.  Both generic `P_5` fibres remain open:
-   [`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md`](P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md).
+   replayable.  Its generic marked `H31` fibre is empty.  For weighted `H22`,
+   both infinity endpoints are empty, finite `D01` has a dense obstruction,
+   closes both `lambda=+/-1` endpoints, and has a two-factor ordinary residual
+   cover; finite `D23` has a three-branch
+   necessary cover whose full `lambda=1` slice is empty.  The other displayed
+   finite branches remain open:
+   [`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md`](P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md),
+   [`P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
+   [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PARTIAL.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PARTIAL.md),
+   [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_RESIDUAL_FACTOR_COVER.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_RESIDUAL_FACTOR_COVER.md),
+   [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_LAMBDA_MINUS_ONE_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_LAMBDA_MINUS_ONE_OBSTRUCTION.md),
+   [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md), and
+   [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_LAMBDA_ONE_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_LAMBDA_ONE_OBSTRUCTION.md).
    The equal-endpoint two-inward stratum is empty by
    [`P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md`](P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md),
    and the unequal-endpoint ledger is complete by
@@ -590,7 +623,7 @@ compactification remain open:
 The dependency chain is strict:
 
 ```text
-classify the sole open all-pair P4 star-(1,1,1) cell
+twenty-five pure-P4 component closures exhaustive       [DONE]
                  |
                  v
 prove all special/boundary P5 fibres empty
@@ -602,8 +635,7 @@ justify the local P5 reduction and gluing at arbitrary graph order
 global Krenn--Gu nonexistence theorem
 ```
 
-The present work is closest to the first box.  Even a proof that the current
-twenty-five-component list is exhaustive would not automatically close the
+The first box is now proved.  This does not automatically close the
 special/projective fibres on components nineteen through twenty-five or the
 final local-to-global step.
 
@@ -676,6 +708,18 @@ other rank-five configurations and the general `1+1+1` profile remain open:
 [`P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md`](P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md),
 [`P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md`](P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md), and
 [`P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md`](P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md).
+
+The first exact high-overlap gluing test is a collapse rather than an
+obstruction.  If two five-root/six-blocker configurations share four roots
+and all six blockers and their exchanged roots are zero-coupled, the two
+extractions use the same six covector rows and differ only by a simultaneous
+port-row swap.  `P_6` and all GHZ coefficients are invariant, so the two
+constraints are identical.  An exact locally realizable
+`three_missing_singletons/all_full` covector table proves that blocker-profile
+incidence alone cannot close this branch.  The useful residual is nonzero
+exchanged-root coupling, only five shared blockers, different residual ports,
+or the global matching identity:
+[`SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md`](SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md).
 
 An exploratory wind-down calculation suggests a sharper next symbolic task,
 but it has not been promoted to a replayable theorem.  On the dense
@@ -797,12 +841,12 @@ the intrinsic pure basis the kernel rows are `(ell,e,e,e)`.  After every
 extended rows use at most two columns.  Their all-kernel permanent is
 identically zero by Hall deficiency, simultaneously in all affine markings,
 extension entries, source scalings, and homogeneous weights.  The
-`triangle-(1,1,1)` cell is now closed by the later placement theorems.  The
-remaining work is the sole all-pair star `(1,1,1)` cell, the remaining
-non-diagonal or arbitrary `GL_4` source boundaries for component twenty,
-the remaining special/projective weighted-`H22` fibres on components
-nineteen through twenty-five, the sole all-pair star `(1,1,1)` cell, and the universal `P_5`
-step.
+`triangle-(1,1,1)` and `star-(1,1,1)` cells are now closed by the later
+placement theorems.  The remaining work includes the non-diagonal or
+arbitrary `GL_4` source boundaries for component twenty, the remaining
+special/projective weighted-`H22` fibres on components nineteen through
+twenty-five, the universal `P_5/P_6` restrictions, and the arbitrary-order
+local-to-global step.
 
 ## Focused replay
 
@@ -1012,6 +1056,12 @@ uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_compone
 uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_pair_orbit_partial_obstruction.py
 uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_pair_orbit_partial_obstruction.py
 
+uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_h2r1_residual_obstruction.py
+uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_h2r1_residual_obstruction.py
+
+uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_rho_zero_h1_nonzero_supplement.py
+uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_rho_zero_h1_nonzero_supplement.py
+
 uv run --with sympy python verify_p4_common_center_kernel_star_211_component.py
 uv run --with sympy python audit_p4_common_center_kernel_star_211_component.py
 
@@ -1020,6 +1070,15 @@ uv run --with sympy python audit_p5_h31_common_center_kernel_star_component_gene
 
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_partial.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_partial.py
+
+uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_finite_all_marking_dense_open_supplement.py
+uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_finite_all_marking_dense_open_supplement.py
+
+uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_finite_lambda_one_all_marking_obstruction.py
+uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_finite_lambda_one_all_marking_obstruction.py
+
+uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_finite_lambda_zero_all_marking_obstruction.py
+uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_finite_lambda_zero_all_marking_obstruction.py
 
 uv run --with sympy python verify_p4_split_center_mixed_star_211_component.py
 uv run --with sympy python audit_p4_split_center_mixed_star_211_component.py
@@ -1042,6 +1101,36 @@ uv run --with sympy python audit_p4_all_center_kernel_star_111_obstruction.py
 uv run --with sympy python verify_p4_all_double_endpoint_star_111_obstruction.py
 uv run --with sympy python audit_p4_all_double_endpoint_star_111_obstruction.py
 
+uv run --with sympy python verify_p4_one_double_endpoint_star_111_classification.py
+uv run --with sympy python audit_p4_one_double_endpoint_star_111_classification.py
+
+uv run --with sympy python verify_p4_two_double_endpoint_star_111_complete_classification.py
+uv run --with sympy python audit_p4_two_double_endpoint_star_111_complete_classification.py
+
+uv run --with sympy python verify_p4_mixed_endpoint_star_111_complete_classification.py
+uv run --with sympy python audit_p4_mixed_endpoint_star_111_complete_classification.py
+
+uv run --with sympy python verify_p4_no_double_endpoint_star_1110_collision_classification.py
+uv run --with sympy python audit_p4_no_double_endpoint_star_1110_collision_classification.py
+
+uv run --with sympy python verify_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py
+uv run --with sympy python audit_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py
+
+uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_partial.py
+uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_partial.py
+
+uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_residual.py
+uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_residual.py
+
+uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_lambda_minus_one.py
+uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_lambda_minus_one.py
+
+uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d23_factor_cover.py
+uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d23_factor_cover.py
+
+uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d23_lambda_one.py
+uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d23_lambda_one.py
+
 uv run --with sympy python verify_p5_h31_split_center_mixed_star_component_generic_obstruction.py
 uv run --with sympy python audit_p5_h31_split_center_mixed_star_component_generic_obstruction.py
 
@@ -1057,6 +1146,9 @@ uv run --with sympy python audit_p5_component21_vertical_u0_projective_boundary_
 python verify_two_port_seven_blocker_reduction.py
 python audit_two_port_seven_blocker_reduction.py
 
+uv run --with sympy python verify_six_blocker_maximal_overlap_port_swap_collapse.py
+uv run --with sympy python audit_six_blocker_maximal_overlap_port_swap_collapse.py
+
 ```
 
 If plain `python` lacks a dependency, use the repository's isolated verifier
@@ -1071,9 +1163,9 @@ the algebra system or claim a replay that did not finish.
   used in a characteristic-zero proof only with a written integral
   height/flatness argument and pinned source metadata.
 - Label a timeout or failed elimination as unresolved, not empty.
-- Do not call the twenty-five-component list exhaustive or promote generic fibre
-  obstructions to special/projective fibres without the missing
-  classifications.
+- The twenty-five-component pure-`P4` list is exhaustive.  Do not promote
+  generic fibre obstructions to special/projective fibres or to a global
+  graph theorem without the missing classifications and gluing argument.
 - Prefer exact identities, normal forms, projective covers, and local algebra
   to broad search.
 - After a meaningful theorem, update this handoff or replace it with a dated

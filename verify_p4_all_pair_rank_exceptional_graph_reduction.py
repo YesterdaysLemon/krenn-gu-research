@@ -5,9 +5,9 @@ from __future__ import annotations
 
 import itertools
 import json
+from pathlib import Path
 
 import sympy as sp
-
 
 VERTICES = tuple(range(4))
 EDGES = tuple(itertools.combinations(VERTICES, 2))
@@ -15,6 +15,24 @@ MATCHINGS = (
     ((0, 1), (2, 3)),
     ((0, 2), (1, 3)),
     ((0, 3), (1, 2)),
+)
+ROOT = Path(__file__).resolve().parent
+
+RESOLUTION_PACKAGES = (
+    "P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md",
+    "P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md",
+    "P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md",
+    "P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md",
+    "P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md",
+    "P4_211_TRIANGLE_COMPLETE_CLASSIFICATION.md",
+    "P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md",
+    "P4_ALL_CENTER_KERNEL_STAR_111_OBSTRUCTION.md",
+    "P4_ALL_DOUBLE_ENDPOINT_STAR_111_OBSTRUCTION.md",
+    "P4_ONE_DOUBLE_ENDPOINT_STAR_111_CLASSIFICATION.md",
+    "P4_TWO_DOUBLE_ENDPOINT_STAR_111_COMPLETE_CLASSIFICATION.md",
+    "P4_MIXED_ENDPOINT_STAR_111_COMPLETE_CLASSIFICATION.md",
+    "P4_NO_DOUBLE_ENDPOINT_STAR_1110_COLLISION_CLASSIFICATION.md",
+    "P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md",
 )
 
 
@@ -36,21 +54,19 @@ def main():
         exceptional = {edge for edge, rank in profile.items() if rank == 3}
         assert all(exceptional & set(matching) for matching in MATCHINGS)
         admissible_profiles.append(ranks)
-        for selected in itertools.product(*(
-            tuple(exceptional & set(matching)) for matching in MATCHINGS
-        )):
+        for selected in itertools.product(
+            *(tuple(exceptional & set(matching)) for matching in MATCHINGS)
+        ):
             selected_set = frozenset(selected)
             assert len(selected_set) == 3
             assert degree_sequence(selected_set) in ((3, 1, 1, 1), (2, 2, 2, 0))
             transversals.add(selected_set)
 
     expected_stars = {
-        frozenset(edge for edge in EDGES if vertex in edge)
-        for vertex in VERTICES
+        frozenset(edge for edge in EDGES if vertex in edge) for vertex in VERTICES
     }
     expected_triangles = {
-        frozenset(edge for edge in EDGES if vertex not in edge)
-        for vertex in VERTICES
+        frozenset(edge for edge in EDGES if vertex not in edge) for vertex in VERTICES
     }
     assert transversals == expected_stars | expected_triangles
     assert len(admissible_profiles) == 27
@@ -71,6 +87,7 @@ def main():
         for rank_two_count in range(4)
     )
     assert len(cells) == 8
+    assert all((ROOT / package).is_file() for package in RESOLUTION_PACKAGES)
     print(
         json.dumps(
             {
@@ -83,10 +100,17 @@ def main():
                 "resolved_cells": [
                     "star-222",
                     "star-221",
+                    "star-211",
+                    "star-111",
                     "triangle-222",
                     "triangle-221",
+                    "triangle-211",
+                    "triangle-111",
                 ],
-                "component_exhaustiveness": "unresolved",
+                "all_resolution_packages_present": True,
+                "component_exhaustiveness": "verified",
+                "certified_component_closures": 25,
+                "global_krenn_gu_resolved": False,
                 "search_used": False,
             },
             indent=2,

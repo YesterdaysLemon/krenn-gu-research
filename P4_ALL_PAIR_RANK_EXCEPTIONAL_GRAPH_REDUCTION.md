@@ -11,22 +11,26 @@ shape of the chosen graph and the number of rank-two relations, the
 all-pair-rank component-exhaustiveness problem therefore has only eight
 coarse cells.
 
-Seven cells are now resolved by exact repository theorems: the all-rank-two
+All eight cells are now resolved by exact repository theorems: the all-rank-two
 star is empty, the `(2,2,1)` star is component ten or lower-pair, the
 all-rank-two triangle is a component-eleven divisor, the `(2,2,1)` triangle
 is empty, every stratum of the rank-one triangle lies in a certified
 component closure, and the `(2,1,1)` triangle is completely classified with
 one new orbit, component twenty-two.  The complete `(2,1,1)` star adds
-components twenty-three through twenty-five.  The sole remaining cell is the
-`(1,1,1)` star.
+components twenty-three through twenty-five.  The `(1,1,1)` star is closed by
+the all-center and all-double obstructions, the one- and two-double-spoke
+classifications, and the two no-double endpoint ledgers.  No twenty-sixth
+component occurs.
 
 For the dated continuation map, including the now-certified
 common-singleton component and the residual strata in the last triangle
 cell, see
 [`NEXT_INSTANCE_HANDOFF_2026-07-31.md`](NEXT_INSTANCE_HANDOFF_2026-07-31.md).
 
-This is a reduction of the pure-`P_4` component problem, not component
-exhaustiveness and not a proof of the Krenn--Gu conjecture.
+Combined with the separately proved lower-pair exhaustion, this is now a
+component-exhaustiveness theorem for the pure-`P_4` incidence: the twenty-five
+certified component closures exhaust it.  It is not a proof of the
+Krenn--Gu conjecture.
 
 ## Perfect pairing forces an exceptional transversal
 
@@ -113,15 +117,14 @@ that number `0,1,2,3` with (4) gives eight coarse cells.
 | triangle | `(2,2,2)` | the complete family in [`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md), contained in component eleven by [`P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md`](P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md) |
 | triangle | `(2,2,1)` | empty by [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md) |
 | star | `(2,1,1)` | exhausted: the outward common-center-kernel orientation supplies component twenty-three, the complete mixed-center support ledger has component twenty-four as its sole all-pair survivor, the complete unequal-endpoint two-inward ledger has component twenty-five as its sole all-pair survivor, and the equal-endpoint inward stratum is empty; see [`P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md`](P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md), [`P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md`](P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md), [`P4_MIXED_CENTER_STAR_211_COMPLETE_CLASSIFICATION.md`](P4_MIXED_CENTER_STAR_211_COMPLETE_CLASSIFICATION.md), [`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md`](P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md), [`P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md`](P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md), and [`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md`](P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md) |
-| star | `(1,1,1)` | directed radical and mixed orientations are substantially classified, including the projective disjoint and overlapping mixed charts; the strict all-three-arrows-to-center orientation and the all-three kernel--kernel orientation are empty by [`P4_ALL_CENTER_KERNEL_STAR_111_OBSTRUCTION.md`](P4_ALL_CENTER_KERNEL_STAR_111_OBSTRUCTION.md) and [`P4_ALL_DOUBLE_ENDPOINT_STAR_111_OBSTRUCTION.md`](P4_ALL_DOUBLE_ENDPOINT_STAR_111_OBSTRUCTION.md); one-/two-double-endpoint and remaining support-collision closure is still missing |
+| star | `(1,1,1)` | exhausted: the strict all-three-arrows-to-center and all-three kernel--kernel orientations are empty; one- and two-double-spoke stars lie in known closures; no-double signature `(2,1,0,0)` is lower-pair or a completed triangle; and signature `(1,1,1,0)` lies in component 21, `L_1/L_2/L_3`, or a completed exterior triangle.  See [`P4_ALL_CENTER_KERNEL_STAR_111_OBSTRUCTION.md`](P4_ALL_CENTER_KERNEL_STAR_111_OBSTRUCTION.md), [`P4_ALL_DOUBLE_ENDPOINT_STAR_111_OBSTRUCTION.md`](P4_ALL_DOUBLE_ENDPOINT_STAR_111_OBSTRUCTION.md), [`P4_ONE_DOUBLE_ENDPOINT_STAR_111_CLASSIFICATION.md`](P4_ONE_DOUBLE_ENDPOINT_STAR_111_CLASSIFICATION.md), [`P4_TWO_DOUBLE_ENDPOINT_STAR_111_COMPLETE_CLASSIFICATION.md`](P4_TWO_DOUBLE_ENDPOINT_STAR_111_COMPLETE_CLASSIFICATION.md), [`P4_MIXED_ENDPOINT_STAR_111_COMPLETE_CLASSIFICATION.md`](P4_MIXED_ENDPOINT_STAR_111_COMPLETE_CLASSIFICATION.md), and [`P4_NO_DOUBLE_ENDPOINT_STAR_1110_COLLISION_CLASSIFICATION.md`](P4_NO_DOUBLE_ENDPOINT_STAR_1110_COLLISION_CLASSIFICATION.md) |
 | triangle | `(2,1,1)` | exhausted by the six Borel-flag orbits; component twenty-two is the sole new orbit, by [`P4_211_TRIANGLE_COMPLETE_CLASSIFICATION.md`](P4_211_TRIANGLE_COMPLETE_CLASSIFICATION.md) |
 | triangle | `(1,1,1)` | exhausted: tournament strata lie in known closures, the fully kernel--kernel stratum lies in components sixteen or eighteen, the exactly-two-kernel stratum lies in component eleven, and the exactly-one-kernel ledger closes through components eight, eleven, twelve, eighteen, nineteen, twenty, and twenty-one; see [`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md) |
 
-The lower-pair locus `min r_ij<=2` is already exhausted separately in
+The lower-pair locus `min r_ij<=2` is exhausted separately in
 [`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
-Therefore a proof that the one still-open row of this table lies in the
-certified component closures would prove that the current twenty-five-component
-list is exhaustive.
+Every all-pair row in the table is now exhausted as well.  Therefore the
+current twenty-five-component list is exhaustive.
 
 Even that would not by itself prove `P_5 -> Delta_3` impossible: the marked
 `H31/H22` theorems are generic on several components, so special fibres must
@@ -146,6 +149,9 @@ continuous gain/annihilator data, not an unstructured polynomial search.
 ```text
 uv run --with sympy python verify_p4_all_pair_rank_exceptional_graph_reduction.py
 python audit_p4_all_pair_rank_exceptional_graph_reduction.py
+
+uv run --with sympy python verify_p4_no_double_endpoint_star_1110_collision_classification.py
+uv run --with sympy python audit_p4_no_double_endpoint_star_1110_collision_classification.py
 ```
 
 The primary verifier checks all admissible rank profiles, all minimal

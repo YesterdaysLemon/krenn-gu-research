@@ -35,25 +35,40 @@ An exact support-one/support-two theorem excludes the equal-endpoint inward
 stratum completely.  A second eight-signature ledger places every
 unequal-endpoint support boundary in component twenty-five, an already
 classified outward/mixed orientation, or the lower-pair locus.  Consequently
-the entire star `(2,1,1)` cell is closed, and star `(1,1,1)` is the sole
-remaining all-pair `P_4` cell.  Within it, the strict all-three-arrows-to-
-center orientation is now empty because the three leaf active rows are one
-common support-at-most-two polar form, whose squarefree cube vanishes.  The
-all-three kernel--kernel orientation is empty too: singleton support
-compresses four active rows into three coordinates, while binary support has
-three mixed coefficients whose vanishing forces the all-active coefficient.
-Generic marked `H31` fibres are proved
-empty on the first twenty-four of the twenty-five certified components; generic weighted `H22`
-is proved empty on the first twenty-one and component twenty-four.  Component twenty-two's `D01` orbit
-is closed; its complementary `D23` orbit now has exact Q1/Q2/Q3 and a broad
-`h1=0` factor cover, but an explicit `G=G2=0` residual and the unexhausted
-`h1!=0` locus remain open.  Component
-twenty-three's weight-at-infinity chart, canonical finite marking, and full
-`t=3` finite slice are closed but its generic finite all-marking fibre remains
-unknown.  Component twenty-four's complete generic weighted fibre is empty
-across both pair orbits and both homogeneous-weight charts.  Both generic
-`P_5` fibres on component
-twenty-five are open.  The remaining special/projective
+the entire star `(2,1,1)` cell is closed.  The final star `(1,1,1)` cell is
+now closed too.  The all-center and all-double orientations are empty; the
+one- and two-double-spoke ledgers lie in known closures; the no-double
+endpoint signature `(2,1,0,0)` reduces to lower-pair or completed triangle
+charts; and the remaining `(1,1,1,0)` collision ledger lies in component 21,
+the split-cubic components `L_1,L_2,L_3`, or a completed exterior triangle.
+The dangerous three-factor source-triangle sheet has one saturated prime and
+is exactly `L_3`; a previously suggested rational point is replayed as
+non-pure.  Together with the lower-pair theorem, this proves that the
+twenty-five certified pure-`P_4` component closures are exhaustive.
+See
+[`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md)
+and
+[`P4_NO_DOUBLE_ENDPOINT_STAR_1110_COLLISION_CLASSIFICATION.md`](P4_NO_DOUBLE_ENDPOINT_STAR_1110_COLLISION_CLASSIFICATION.md).
+
+Generic marked `H31` fibres are now proved empty on all twenty-five
+components.  Generic weighted `H22` is proved empty on the first twenty-one
+and component twenty-four.  Component twenty-two's `D01` orbit is closed;
+its complementary `D23` orbit has exact Q1/Q2/Q3 and broad factor covers.
+Inside the old `h1=0` residual the divisor `R*h2=1` is closed, and on
+`rho=0,h1!=0` the whole `h2=0` branch and the open `h2*E!=0` are closed;
+`rho=0,E=0,h1*h2!=0` and the other residual charts remain unknown.  Component
+twenty-three's weight-at-infinity chart, canonical finite marking, full
+`t=3` slice, and full all-marking `lambda=0,+/-1` slices are closed; two exact
+minors leave a displayed factor residual on the remaining ordinary finite
+chart.
+Component twenty-four's complete generic weighted fibre is empty across both
+pair orbits and both homogeneous-weight charts.  On component twenty-five,
+generic marked `H31` is empty.  Weighted `H22` is empty at both weight-
+infinity endpoints and on a dense finite-`D01` extension chart; the residual
+`D01` divisor has empty `lambda=+/-1` slices and a two-factor cover for
+`lambda^2!=1`.  Finite `D23` has a three-branch necessary cover and its full
+`lambda=1` all-marking slice is empty.  The other displayed finite branches
+remain unknown.  The remaining special/projective
 boundaries are not promoted by those function-field theorems.  On component
 nineteen, the finite `q=0` weighted-`H22` divisor is now independently closed
 through both rank-jump endpoints `phi=+/-1` on `p*phi!=0`.  Direct
@@ -111,10 +126,19 @@ rank-five configuration now extracts a necessary finite bilinear-gate
 problem from the first nonlinear factorisation condition and exactly excludes
 its unique four-gate branch.  Perfect-pairing certificates now exclude the
 other 52 covers as well, so that displayed rank-five model cannot satisfy the
-first nonlinear condition.  These are strong local algebraic-geometric
+first nonlinear condition.  A first exact two-copy gluing test is now known:
+when two five-root/six-blocker configurations share four roots and all six
+blockers, and the exchanged roots are zero-coupled, their two `P_6`
+restrictions differ only by one simultaneous port-row swap and are therefore
+the same constraint.  An exact locally realizable
+`three_missing_singletons/all_full` table shows that profile incidence alone
+cannot exclude this maximal overlap; nonzero exchanged-root coupling,
+five-blocker overlap, or a global matching identity is still required:
+[`SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md`](SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md).
+These are strong local algebraic-geometric
 reductions, not a global proof:
-component exhaustiveness, special `P_5/P_6` restrictions, and the final
-local-to-global graph step are still missing.
+special `P_5/P_6` restrictions and the final local-to-global graph step are
+still missing.
 
 Separately, the repository now contains an exact rational positive
 Question-2 witness for [`n=6, k=4, d=4`](Q2_N6_K4_D4_CONSTRUCTION.md).
@@ -821,15 +845,17 @@ strictly advance the finite frontier:
   in component seventeen, sixteen, or seventeen.  Thus both the genuine
   support-two and singleton parts of the cyclic orientation are complete:
   [`P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_ONE_BOUNDARY.md`](P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_ONE_BOUNDARY.md).
-- the remaining all-pair-ranks-at-least-three component problem now has an
+- the all-pair-ranks-at-least-three component problem has an
   exact eight-cell reduction.  Perfect pairing forces the rank-three edges
   to block all three 1-factors of the source `K_4`; every minimal blocker is
   one of four stars or four triangles.  Each selected edge relation has
   coefficient rank one or two, leaving only four relation-rank multisets per
   graph shape.  The `222` star, `221` star, `222` triangle, and `221`
-  triangle cells were already resolved at that checkpoint.  Four cells with
-  at least two rank-one relations remained; the later results below close
-  `triangle-(1,1,1)`, leaving three cells:
+  triangle cells were already resolved at that checkpoint.  The later
+  component and collision theorems close all four cells with at least two
+  rank-one relations, including every double-spoke and no-double boundary of
+  `star-(1,1,1)`.  Together with lower-pair exhaustion, all twenty-five
+  certified component closures are now exhaustive:
   [`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md).
 - the common-singleton family in the `triangle-(1,1,1)` cell is now a
   certified eighteenth component orbit.  Its rational five-parameter chart
@@ -1149,8 +1175,8 @@ strictly advance the finite frontier:
   covered by three affine lines.  On all five survivor closures, the
   same mode-zero `0247` marked minor gives a saturated unit ideal.
   Generic weighted `H22` incidence is therefore empty on five of the
-  seven certified component orbits; their boundaries remain, and the
-  two earlier rank-two components are tracked below.
+  seven component orbits certified at that checkpoint; their boundaries
+  remained, and the two earlier rank-two components are tracked below.
 - the first rank-two component is now generically excluded from
   weighted `H22`.  Its `01` mixed matrix is everywhere injective by an
   eight-chart projective-kernel cover.  Its exact `23` projection has
@@ -1165,8 +1191,9 @@ strictly advance the finite frontier:
   only the zero-vector base point, and its blow-up exceptional
   five-space is linearly disjoint from the extension plane.  Properness
   transports this empty projective fibre to the generic point.  Thus
-  all seven certified component orbits are generically closed, while
-  component exhaustiveness and special parameter/slope divisors remain:
+  all seven component orbits certified at that checkpoint are generically
+  closed, while component exhaustiveness and special parameter/slope divisors
+  remained at that checkpoint:
   [`P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md).
 - a disjoint-support mixed star supplies an eighth certified
   pure-`P_4` component orbit.  Normalize its three rank-one
@@ -1957,9 +1984,10 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   polynomial row-module inclusion, so all twelve known components are
   generically closed for `H31`.  Its weighted `H22` fibre is also empty by
   the residual polarity identity `(-t2)*(k*t3)+(k*t3)*t2=0`.  All twelve
-  are therefore generically closed for both marked types.  The live finite
-  frontier is component exhaustiveness and the special
-  parameter/projective boundaries.  The
+  are therefore generically closed for both marked types.  At that checkpoint
+  the live finite frontier was component exhaustiveness and the special
+  parameter/projective boundaries.  Component exhaustiveness is now closed;
+  the special fibres remain.  The
   ninth orbit's entire
   normalized `H31` chart is closed as well, and its weighted boundary
   is closed on every rank-two projected-line stratum.  The rank-one
@@ -1978,7 +2006,7 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   giving the zero restriction, or enters a closed `C'B'!=0` affine
   chart by source symmetry.  Hence the ninth component's complete
   marked `H31` fibre is empty.
-  Other component boundaries, slope boundaries, and component exhaustiveness stay open,
+  Other component and slope boundaries stay open,
   although the eighth component's full equal- and opposite-weight
   slope fibres are now excluded already at the binary level, twelve
   generic parameter/coordinate boundary branches are closed, and the
