@@ -71,9 +71,16 @@ displayed `D23` residual charts remain unknown.  The complete `h0=0`
 intersection of the `h1=0,2h3=s,G=G2=0` residual is now empty too: after
 the prior factor cover and `R*h2=1` divisor, its exact genuine-incidence
 ideal is unit over `Q(A,R,D)`, while the remaining parameter residue is
-proper and zero-dimensional.  See
+proper and zero-dimensional.  On the complementary `h0!=0` part, the fixed
+mixed minor on rows `01234578` factors as the already inverted chart factors
+times one explicit nine-term cubic cofactor `P`.  Hence the exact nonempty
+open `P!=0` has zero mixed kernel and is empty; an explicit point over
+`Q(sqrt(29665))` proves nonvacuity.  Only the cofactor divisor `P=0` within
+this displayed residual, together with the unexhausted `h1!=0` locus, remains
+unknown.  See
 [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_E_ZERO_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_E_ZERO_OBSTRUCTION.md) and
-[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md).
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md), together with
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_COFACTOR_OPEN_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_COFACTOR_OPEN_OBSTRUCTION.md).
 Component
 twenty-three's generic weighted fibre is now completely closed.  After the
 infinity and `lambda=0,+/-1` closures, two exact minors leave the ordinary
