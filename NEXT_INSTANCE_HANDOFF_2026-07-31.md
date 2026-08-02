@@ -1212,6 +1212,15 @@ undirected edge blocks and shared formal cofactor classes are compatible
 with all first-jet quotient frames.  The construction does not realize those
 classes as complementary hafnians and does not check mixed second jets:
 [`ROOT_TANGENT_CYCLE_FRAME_SYMMETRY_REALIZATION.md`](ROOT_TANGENT_CYCLE_FRAME_SYMMETRY_REALIZATION.md).
+The minimal edge blocks used in that construction nevertheless fail the GHZ
+mixed second jet exactly.  For normalized roots `(1,1,1)` and shared class
+`(1,t_i)`, tangent directions `(0,1,t_i)` isolate the common cycle edge.  Its
+minimal bilinear block evaluates to zero, as do all separate-pair matching
+classes, whereas the GHZ Hessian is `(0,1,t_i^2)`.  Thus a second-order
+extension must use the four-dimensional tangent--tangent freedom on an edge,
+additional effective companions, or a nonprojective root--blocker layer; none
+is excluded here:
+[`ROOT_TANGENT_MINIMAL_CYCLE_SECOND_JET_OBSTRUCTION.md`](ROOT_TANGENT_MINIMAL_CYCLE_SECOND_JET_OBSTRUCTION.md).
 Nor can one obtain a contradiction from scalar principal-cofactor algebra
 alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal
 two-vertex cofactors at a fixed perfect-matching point splits into one
@@ -1495,6 +1504,8 @@ uv run --with sympy python verify_root_tangent_companion_necessity_for_coordinat
 uv run --with sympy python audit_root_tangent_companion_necessity_for_coordinate_slice.py
 uv run --with sympy python verify_root_tangent_cycle_frame_symmetry_realization.py
 python audit_root_tangent_cycle_frame_symmetry_realization.py
+uv run --with sympy python verify_root_tangent_minimal_cycle_second_jet_obstruction.py
+python audit_root_tangent_minimal_cycle_second_jet_obstruction.py
 uv run --with sympy python verify_hafnian_principal_cofactor_gradient_dominance.py
 python audit_hafnian_principal_cofactor_gradient_dominance.py
 

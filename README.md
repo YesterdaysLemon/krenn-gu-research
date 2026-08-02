@@ -378,6 +378,14 @@ arbitrary quotient frames with honest bilinear edge blocks and shared formal
 cofactor classes.  This is a first-jet realization only; complementary-
 hafnian realizability and mixed second derivatives remain open:
 [`ROOT_TANGENT_CYCLE_FRAME_SYMMETRY_REALIZATION.md`](ROOT_TANGENT_CYCLE_FRAME_SYMMETRY_REALIZATION.md).
+The minimal blocks in that cycle are now ruled out at the next order.  With
+`x_i=(1,1,1)`, quotient classes `q_i=(1,t_i)`, and the tangent direction
+`(0,1,t_i)` at both ends of edge `i`, every graph-side mixed second-derivative
+matching vanishes, while the GHZ Hessian is `(0,1,t_i^2)`.  This proves that
+the minimal first-jet realization cannot itself extend.  A four-dimensional
+tangent--tangent correction on each edge and additional companion cofactors
+remain available, so the general second-jet problem stays open:
+[`ROOT_TANGENT_MINIMAL_CYCLE_SECOND_JET_OBSTRUCTION.md`](ROOT_TANGENT_MINIMAL_CYCLE_SECOND_JET_OBSTRUCTION.md).
 Even scalar complementary-hafnian algebra supplies no hidden relation on
 the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
 Jacobian of the complete principal-cofactor map at a perfect-matching point
