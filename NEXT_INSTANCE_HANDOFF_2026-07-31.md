@@ -1118,7 +1118,7 @@ whose projective first normals are empty.  On `p=0,q!=0`, arbitrary finite
 `ell` again has only those two rank-drop loci and every kernel-line or
 kernel-plane first normal is empty.  Hence the displayed finite nonzero sheet
 is complete at rank and first-normal level.  Possible higher-order arcs after
-a zero first normal, the `p=q=0` zero base,
+a zero first normal,
 parameter-boundary/marking-pole intersections, and arbitrary
 ambient/source/projective
 degenerations remain open.  In particular, the argument does not classify
@@ -1141,6 +1141,17 @@ an ambient `P5` leading term whose `P4` restriction is zero:
 [`P5_COMPONENT21_FINITE_H22_EXTENSION_RANK_DROP_GENERIC_NORMAL_CLOSURE.md`](P5_COMPONENT21_FINITE_H22_EXTENSION_RANK_DROP_GENERIC_NORMAL_CLOSURE.md),
 [`P5_COMPONENT21_FINITE_H22_EXTENSION_ELL_ZERO_UNIT_ENDPOINT_NORMAL_CLOSURE.md`](P5_COMPONENT21_FINITE_H22_EXTENSION_ELL_ZERO_UNIT_ENDPOINT_NORMAL_CLOSURE.md), and
 [`P5_COMPONENT21_FINITE_H22_EXTENSION_P_ZERO_NONZERO_Q_NORMAL_CLOSURE.md`](P5_COMPONENT21_FINITE_H22_EXTENSION_P_ZERO_NONZERO_Q_NORMAL_CLOSURE.md).
+The raw finite-weight `p=q=0` base is now classified at the same extension-
+kernel and complete-first-normal level.  Ordinary weights have a kernel line;
+`lambda=-1` has a kernel `P1` or `P2`; and `lambda=1` has a kernel `P2` or
+endpoint `P3`.  Every projective direction is first-normal empty.  At
+ordinary and minus-one weight the two required `D01` diagonal rows vanish
+identically in the full symbolic normal.  At plus-one weight, exact mixed
+rows force the only possible `D23(0000)` normal coefficient to vanish.
+This is nonredundant with the earlier `(p,q)` blow-up, which treats nonzero
+leading base-normal directions.  Higher zero normals and simultaneous
+iterated base/extension blow-ups remain unknown:
+[`P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_RAW_KERNEL_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_RAW_KERNEL_NORMAL_OBSTRUCTION.md).
 
 ## What a global proof would still need
 
@@ -1710,6 +1721,8 @@ uv run --with sympy python verify_p5_component21_finite_h22_extension_ell_zero_u
 uv run --with sympy python audit_p5_component21_finite_h22_extension_ell_zero_unit_endpoint_normal_closure.py
 uv run --with sympy python verify_p5_component21_finite_h22_extension_p_zero_nonzero_q_normal_closure.py
 uv run --with sympy python audit_p5_component21_finite_h22_extension_p_zero_nonzero_q_normal_closure.py
+uv run --with sympy python verify_p5_component21_finite_h22_extension_zero_base_raw_kernel_normal_obstruction.py
+uv run --with sympy python audit_p5_component21_finite_h22_extension_zero_base_raw_kernel_normal_obstruction.py
 
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
