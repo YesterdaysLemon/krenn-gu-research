@@ -1426,6 +1426,19 @@ two-root/all-colour-1 coefficient.  It does not classify simultaneous
 principal-hafnian realizability, nonprojective blocker variation, or prove
 the local-to-global reduction:
 [`ROOT_ARBITRARY_LOWER_MIXED_JET_COFACTOR_FRAME_NECESSITY.md`](ROOT_ARBITRARY_LOWER_MIXED_JET_COFACTOR_FRAME_NECESSITY.md).
+Even exact compatibility of the two top parity cofactors is insufficient.
+For every odd blocker count `m>=5`, including the five-root/seven-blocker
+case `m=7`, an explicit legal alternating path realizes
+`H(B+q0)=D0+D1` and `H(B+q1)=D0-D1` with zero mixed words, zero residual
+edge, rank-three row families at both ports, and
+`W_uv=a_u tensor b_v+b_u tensor a_v` for every blocker pair.  The full
+principal one-blocker deletion ledger is explicit: odd deletions vanish and
+even deletions are split-colour monomials, so the third port direction hides
+on a zero cofactor.  This rules out top principal-hafnian compatibility and
+full port span as a closing route.  It does not provide root rows satisfying
+`P_m(H;a;b)=Delta_3` and is not a counterexample; lower-root cofactor values
+or that shared mixed identity are still required:
+[`ROOT_ARBITRARY_TWO_ENDPOINT_BINARY_COFACTOR_PORT_COMPATIBILITY_REALIZATION.md`](ROOT_ARBITRARY_TWO_ENDPOINT_BINARY_COFACTOR_PORT_COMPATIBILITY_REALIZATION.md).
 Nor can one obtain a contradiction from scalar principal-cofactor algebra
 alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal
 two-vertex cofactors at a fixed perfect-matching point splits into one
@@ -1767,6 +1780,8 @@ uv run --with sympy python verify_root_arbitrary_order_two_endpoint_full_jet_fra
 python audit_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py
 uv run --with sympy python verify_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py
 python audit_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py
+uv run --with sympy python verify_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py
+python audit_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py
 uv run --with sympy python verify_hafnian_principal_cofactor_gradient_dominance.py
 python audit_hafnian_principal_cofactor_gradient_dominance.py
 

@@ -516,6 +516,20 @@ is necessary only; simultaneous principal-hafnian realization,
 nonprojective root--blocker variation, and arbitrary-order gluing remain
 open:
 [`ROOT_ARBITRARY_LOWER_MIXED_JET_COFACTOR_FRAME_NECESSITY.md`](ROOT_ARBITRARY_LOWER_MIXED_JET_COFACTOR_FRAME_NECESSITY.md).
+The two top parity cofactors do not themselves supply the missing cross-subset
+contradiction.  For every odd blocker count `m>=5`, one legal alternating
+blocker path with two residual endpoints realizes the exact binary frame
+`D0+D1,D0-D1`, zero mixed words, zero residual edge, rank-three row families
+at both ports, and every factorized four-vertex block
+`W_uv=a_u tensor b_v+b_u tensor a_v`.  Its complete principal one-blocker
+deletion ledger is explicit: odd deletions vanish and even deletions are
+fixed split-colour monomials, allowing the third port direction to hide on a
+zero cofactor.  Thus top principal-hafnian compatibility plus full port span
+cannot close the five-root/seven-blocker axis cell.  The construction has no
+root-row solution of `P_m(H;a;b)=Delta_3`, so it is a proof-route no-go, not
+a graph witness; lower-root deletion equations or that shared mixed identity
+remain essential:
+[`ROOT_ARBITRARY_TWO_ENDPOINT_BINARY_COFACTOR_PORT_COMPATIBILITY_REALIZATION.md`](ROOT_ARBITRARY_TWO_ENDPOINT_BINARY_COFACTOR_PORT_COMPATIBILITY_REALIZATION.md).
 Even scalar complementary-hafnian algebra supplies no hidden relation on
 the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
 Jacobian of the complete principal-cofactor map at a perfect-matching point
