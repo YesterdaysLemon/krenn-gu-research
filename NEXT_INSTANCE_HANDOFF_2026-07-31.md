@@ -1398,6 +1398,18 @@ Thus full-root frames, row span, and matching support alone cannot close the
 axis branch.  The next bridge must use the actual lower-subset cofactor values,
 mixed-colour identities, or nonprojective variation:
 [`ROOT_ARBITRARY_ORDER_TWO_ENDPOINT_FULL_JET_FRAME_SHARPNESS_NOGO.md`](ROOT_ARBITRARY_ORDER_TWO_ENDPOINT_FULL_JET_FRAME_SHARPNESS_NOGO.md).
+For every mixed root subset `I` with `|I|>=2`, the lower jet now has a sharper
+exact deletion-class formula.  Companion partial matchings with the same
+outside partner set carry one common complementary-hafnian cofactor, so the
+cofactor span must contain the exact GHZ diagonal image.  That image has rank
+`3-|A|` for the axis-colour set `A`, rank two with a prescribed binary
+diagonal combination when every tangent covector lies in one common
+coordinate pair, and rank three otherwise.  This value-level theorem rules
+out the sharp two-endpoint support construction for every `r>=3` using the
+two-root/all-colour-1 coefficient.  It does not classify simultaneous
+principal-hafnian realizability, nonprojective blocker variation, or prove
+the local-to-global reduction:
+[`ROOT_ARBITRARY_LOWER_MIXED_JET_COFACTOR_FRAME_NECESSITY.md`](ROOT_ARBITRARY_LOWER_MIXED_JET_COFACTOR_FRAME_NECESSITY.md).
 Nor can one obtain a contradiction from scalar principal-cofactor algebra
 alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal
 two-vertex cofactors at a fixed perfect-matching point splits into one
@@ -1731,6 +1743,8 @@ uv run --with sympy python verify_root_finite_endpoint_full_jet_cofactor_span_bo
 python audit_root_finite_endpoint_full_jet_cofactor_span_bound.py
 uv run --with sympy python verify_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py
 python audit_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py
+uv run --with sympy python verify_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py
+python audit_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py
 uv run --with sympy python verify_hafnian_principal_cofactor_gradient_dominance.py
 python audit_hafnian_principal_cofactor_gradient_dominance.py
 

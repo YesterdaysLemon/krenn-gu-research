@@ -490,6 +490,20 @@ row span, and matching support cannot finish the reduction; the next theorem
 must use actual lower-subset cofactor values, mixed-colour identities, or
 nonprojective variation:
 [`ROOT_ARBITRARY_ORDER_TWO_ENDPOINT_FULL_JET_FRAME_SHARPNESS_NOGO.md`](ROOT_ARBITRARY_ORDER_TWO_ENDPOINT_FULL_JET_FRAME_SHARPNESS_NOGO.md).
+The missing lower-subset condition is now exact for every mixed root set of
+size at least two.  Grouping companion partial matchings by their outside
+deletion set expresses the graph jet through actual complementary-hafnian
+cofactors.  Equality with GHZ forces those cofactors to contain a completely
+classified diagonal frame: rank `3-|A|` when the tangent covectors include
+the axis-colour set `A`, rank two with one prescribed binary diagonal
+combination on a common coordinate-pair locus, and the full rank-three
+diagonal plane otherwise.  This is a value condition, not merely support
+saturation.  It already excludes the sharp two-endpoint construction for
+every `r>=3` by one explicit two-root/all-colour-1 coefficient.  The theorem
+is necessary only; simultaneous principal-hafnian realization,
+nonprojective root--blocker variation, and arbitrary-order gluing remain
+open:
+[`ROOT_ARBITRARY_LOWER_MIXED_JET_COFACTOR_FRAME_NECESSITY.md`](ROOT_ARBITRARY_LOWER_MIXED_JET_COFACTOR_FRAME_NECESSITY.md).
 Even scalar complementary-hafnian algebra supplies no hidden relation on
 the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
 Jacobian of the complete principal-cofactor map at a perfect-matching point
