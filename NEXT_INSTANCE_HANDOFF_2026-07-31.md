@@ -92,7 +92,10 @@ closed.  On the finite part of the distinct `s=0,rt=1` projective face, the
 all-pair locus `r!=0,+/-1` with arbitrary `k` is empty for marked `H31` and
 weighted `H22`, including `k=0` and every homogeneous weight.  The finite
 `r=+/-1` lower-pair endpoint lines are separately empty for both lifting
-types, including `k=0`.  On its `s=0,k=infinity` corner, the affine `r=0`
+types, including `k=0`.  Its two projective parameter endpoints are likewise
+empty for complete marked `H31` and homogeneous weighted `H22` at every
+finite `k`, including `k=0`; a genuine shared-binary `H22` line is eliminated
+by exact ternary compatibility rather than mixed-module emptiness.  On its `s=0,k=infinity` corner, the affine `r=0`
 divisor is finite-weight ternary-`H22` empty even though its shared binary
 module has a genuine survivor family, while the marked-`H31` fibre is empty
 for every finite `(r,t)`.  A corner-only mode swap transfers the finite-weight
@@ -394,6 +397,12 @@ Six statements organize the current frontier.
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md),
    [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md`](P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md), and
    [`P5_COMPONENT23_S_ZERO_RT_ONE_LOWER_PAIR_ENDPOINT_LINES_OBSTRUCTION.md`](P5_COMPONENT23_S_ZERO_RT_ONE_LOWER_PAIR_ENDPOINT_LINES_OBSTRUCTION.md).
+   The two projective parameter endpoints `(r,t)=(infinity,0),(0,infinity)`
+   are now separately closed for every finite `k`, every marking and
+   insertion, and every finite or projective `H22` weight.  Their shared
+   binary `H22` incidence has rank seven and survives genuinely, but a
+   mode-one one-third-row determinant is nonzero on its entire genuine open:
+   [`P5_COMPONENT23_S_ZERO_RT_ONE_PROJECTIVE_PARAMETER_ENDPOINTS_OBSTRUCTION.md`](P5_COMPONENT23_S_ZERO_RT_ONE_PROJECTIVE_PARAMETER_ENDPOINTS_OBSTRUCTION.md).
    The normalized parameter compactification is not exhausted by those
    theorems.  For `s=1`, with projective coordinates `K,R,T`, it is exactly
 
@@ -1195,6 +1204,8 @@ uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_s_z
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_r_t_coordinate_symmetry_transfer.py
 uv run --with sympy python verify_p5_component23_s_one_parameter_infinity_curves_obstruction.py
 uv run --with sympy python audit_p5_component23_s_one_parameter_infinity_curves_obstruction.py
+uv run --with sympy python verify_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py
+uv run --with sympy python audit_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py
 
 uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_t_zero_and_h_boundary_obstruction.py
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_t_zero_and_h_boundary_obstruction.py

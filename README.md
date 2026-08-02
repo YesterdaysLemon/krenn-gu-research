@@ -102,9 +102,12 @@ the delicate marked `k=0` intersection, the surviving third-row candidates
 have forbidden pure coefficient exactly `4`.  The two finite
 `r=+/-1` endpoint lines are separately empty for both marked `H31` and
 weighted `H22`, including `k=0`; they are tangent polar-flag lower-pair
-boundaries, not the secant endpoints on the `s=1,k=infinity` line.  The
-separate `s=0,k=infinity` corner surface, the `r=infinity` and `t=infinity`
-lower-pair curves, and arbitrary order remain separate.  See
+boundaries, not the secant endpoints on the `s=1,k=infinity` line.  The two
+projective parameter endpoints `(r,t)=(infinity,0),(0,infinity)` are also
+empty for complete marked `H31` and homogeneous weighted `H22` at every
+finite `k`, including the further drop at `k=0`; their genuine shared-binary
+`H22` line is killed only at the exact ternary-compatibility stage.  The
+separate `s=0,k=infinity` corner surface and arbitrary order remain separate.  See
 [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md),
 [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_AFFINE_CONSTANT_PROFILE_OPEN_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_AFFINE_CONSTANT_PROFILE_OPEN_OBSTRUCTION.md), and
 [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_T_PLUS_MINUS_ONE_SPECIAL_ALL_PAIR_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_T_PLUS_MINUS_ONE_SPECIAL_ALL_PAIR_OBSTRUCTION.md), together with
@@ -114,7 +117,8 @@ lower-pair curves, and arbitrary order remain separate.  See
 [`P5_COMPONENT23_K_INFINITY_LOWER_PAIR_ENDPOINTS_OBSTRUCTION.md`](P5_COMPONENT23_K_INFINITY_LOWER_PAIR_ENDPOINTS_OBSTRUCTION.md), together with
 [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md) and
 [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md`](P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md), together with
-[`P5_COMPONENT23_S_ZERO_RT_ONE_LOWER_PAIR_ENDPOINT_LINES_OBSTRUCTION.md`](P5_COMPONENT23_S_ZERO_RT_ONE_LOWER_PAIR_ENDPOINT_LINES_OBSTRUCTION.md).
+[`P5_COMPONENT23_S_ZERO_RT_ONE_LOWER_PAIR_ENDPOINT_LINES_OBSTRUCTION.md`](P5_COMPONENT23_S_ZERO_RT_ONE_LOWER_PAIR_ENDPOINT_LINES_OBSTRUCTION.md) and
+[`P5_COMPONENT23_S_ZERO_RT_ONE_PROJECTIVE_PARAMETER_ENDPOINTS_OBSTRUCTION.md`](P5_COMPONENT23_S_ZERO_RT_ONE_PROJECTIVE_PARAMETER_ENDPOINTS_OBSTRUCTION.md).
 The exact parameter-compactification ledger also shows why these charts are
 not exhaustive.  On `s=1`, the two infinity curves
 `r=infinity,t=k` and `t=infinity,r=-k` are now empty for complete marked
