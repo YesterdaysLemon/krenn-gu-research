@@ -18,11 +18,12 @@ a ternary counterexample.
 
 The result is the `k=infinity` endpoint of the separately closed finite-`k`
 face `s=0,rt=1`; it is not obtained by substituting infinity into that affine
-theorem.  The parameter endpoints `r=0,infinity`, the lower-pair values
-`r=+/-1`, other corner divisors and charts, arbitrary ambient/source changes,
-arbitrary order, global gluing, and the global Krenn--Gu conjecture remain
-**UNKNOWN** or **UNRESOLVED** as appropriate.  No finite-field calculation is
-used.
+theorem.  The parameter endpoints `r=0,infinity` and the lower-pair values
+`r=+/-1` are closed by separate axis, projective-boundary, and diagonal
+packages, not by this calculation.  Other corner divisors and charts,
+arbitrary ambient/source changes, arbitrary order, global gluing, and the
+global Krenn--Gu conjecture remain **UNKNOWN** or **UNRESOLVED** as
+appropriate.  No finite-field calculation is used.
 
 ## Exact corner divisor
 

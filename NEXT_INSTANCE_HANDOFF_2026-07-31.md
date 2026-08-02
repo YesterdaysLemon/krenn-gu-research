@@ -496,15 +496,28 @@ Six statements organize the current frontier.
    exact rank-seven residual whose required `B01` diagonal is identically
    zero; module certificates close `lambda=+/-1` and projective weight.
    Together with the closed diagonal line and boundary points, this closes
-   the whole compactified `r*t=1` divisor.  Thus only finite
-   `r*t!=0, r!=t, r*t!=1`, source-torus faces,
-   arbitrary ambient/Grassmann degeneration, and
-   arbitrary order remain open:
+   the whole compactified `r*t=1` divisor.  Over the generic corner field
+   `Q(r,t)`, all four markings and all homogeneous weights are now empty.
+   Seven explicit ordinary minors leave only
+   `h0=h2=h3=0, h1=(rt+1)/(r+t)`, whose kernel has required `B01=0`;
+   exact row-module certificates close `lambda=+/-1` and `[1:0]`.  This is
+   deliberately only a function-field theorem: its selected cover inverts
+   `r+t`, `r^2-1`, and `t^2-1` in addition to already understood factors.
+   The antidiagonal `t=-r`, `r!=0` is separately closed for every marking and
+   homogeneous weight by unit shared-binary incidence ideals in complementary
+   alpha- and beta-normalized charts.  That calculation retains and closes
+   `r^2=-1`; the omitted origin is already on the coordinate-axis theorem.
+   Therefore the remaining finite specialization loci on this displayed
+   corner are `r=+/-1` and `t=+/-1`, away from their already closed
+   intersections.  Source-torus faces, arbitrary ambient/Grassmann
+   degeneration, and arbitrary order also remain open:
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_COORDINATE_SURVIVOR.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_COORDINATE_SURVIVOR.md) and
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_R_T_COORDINATE_SYMMETRY_TRANSFER.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_R_T_COORDINATE_SYMMETRY_TRANSFER.md), together with
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_PROJECTIVE_WEIGHT_COORDINATE_DIVISORS_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_PROJECTIVE_WEIGHT_COORDINATE_DIVISORS_OBSTRUCTION.md) and
    [`P5_COMPONENT23_S_ZERO_K_INFINITY_PROJECTIVE_R_T_BOUNDARY_OBSTRUCTION.md`](P5_COMPONENT23_S_ZERO_K_INFINITY_PROJECTIVE_R_T_BOUNDARY_OBSTRUCTION.md), together with
-   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_RT_ONE_ALL_PAIR_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_RT_ONE_ALL_PAIR_OBSTRUCTION.md).
+   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_RT_ONE_ALL_PAIR_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_RT_ONE_ALL_PAIR_OBSTRUCTION.md),
+   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_GENERIC_INTERIOR_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_GENERIC_INTERIOR_OBSTRUCTION.md), and
+   [`P5_H22_COMPONENT23_S_ZERO_K_INFINITY_ANTIDIAGONAL_OBSTRUCTION.md`](P5_H22_COMPONENT23_S_ZERO_K_INFINITY_ANTIDIAGONAL_OBSTRUCTION.md).
    Component twenty-four is the disjoint-binary split-center mixed-star
    fivefold.  Its exact reverse theorem includes the projective moving-leaf
    endpoint.  Its complete generic marked `H31` fibre is empty after exact
@@ -1261,6 +1274,10 @@ uv run --with sympy python verify_p5_component23_s_zero_k_infinity_projective_r_
 uv run --with sympy python audit_p5_component23_s_zero_k_infinity_projective_r_t_boundary_obstruction.py
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_rt_one_all_pair_obstruction.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_rt_one_all_pair_obstruction.py
+uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_generic_interior_obstruction.py
+uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_generic_interior_obstruction.py
+uv run --with sympy python verify_p5_h22_component23_s_zero_k_infinity_antidiagonal_obstruction.py
+uv run --with sympy python audit_p5_h22_component23_s_zero_k_infinity_antidiagonal_obstruction.py
 uv run --with sympy python verify_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py
 uv run --with sympy python audit_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py
 
