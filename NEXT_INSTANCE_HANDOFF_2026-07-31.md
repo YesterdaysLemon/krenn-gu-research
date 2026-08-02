@@ -1307,6 +1307,13 @@ root--root restricted channel, exact mixed derivatives force
 `r-t` times and at most `3t-2r` roots are non-axis.  This does not exclude
 the root--root or nonprojective escape routes:
 [`ROOT_FINITE_NONROOT_COMPANION_ENDPOINT_COUNT_OBSTRUCTION.md`](ROOT_FINITE_NONROOT_COMPANION_ENDPOINT_COUNT_OBSTRUCTION.md).
+Allowing root--root channels yields a precise arbitrary-order replacement:
+every root subset missing any coordinate-axis covector type must admit an
+effective matching saturating that subset, with tangent--tangent edges used
+inside it and one-tangent edges to fixed endpoints.  This saturation is
+necessary but not sufficient for cofactor realizability or mixed-colour
+cancellation:
+[`ROOT_RESTRICTED_JET_COMPANION_MATCHING_SATURATION_NECESSITY.md`](ROOT_RESTRICTED_JET_COMPANION_MATCHING_SATURATION_NECESSITY.md).
 Nor can one obtain a contradiction from scalar principal-cofactor algebra
 alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal
 two-vertex cofactors at a fixed perfect-matching point splits into one
@@ -1616,6 +1623,8 @@ uv run --with sympy python verify_root_two_residual_only_companion_third_jet_obs
 python audit_root_two_residual_only_companion_third_jet_obstruction.py
 uv run --with sympy python verify_root_finite_nonroot_companion_endpoint_count_obstruction.py
 python audit_root_finite_nonroot_companion_endpoint_count_obstruction.py
+uv run --with sympy python verify_root_restricted_jet_companion_matching_saturation_necessity.py
+python audit_root_restricted_jet_companion_matching_saturation_necessity.py
 uv run --with sympy python verify_hafnian_principal_cofactor_gradient_dominance.py
 python audit_hafnian_principal_cofactor_gradient_dominance.py
 

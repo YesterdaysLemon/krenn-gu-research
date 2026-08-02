@@ -440,6 +440,13 @@ tangent covector must occur at least `r-t` times, and at most `3t-2r` roots
 may be non-axis.  Thus no bounded endpoint set can support arbitrary root
 order in this topology:
 [`ROOT_FINITE_NONROOT_COMPANION_ENDPOINT_COUNT_OBSTRUCTION.md`](ROOT_FINITE_NONROOT_COMPANION_ENDPOINT_COUNT_OBSTRUCTION.md).
+With root--root channels restored, the higher-jet condition becomes an exact
+matching problem: every root subset missing at least one of the three axis
+covector types must admit a matching saturating all of its roots, using
+one-tangent edges to fixed endpoints and tangent--tangent edges internally.
+Existence of such a matching is only necessary; complementary cofactors and
+mixed-colour cancellation remain to be imposed:
+[`ROOT_RESTRICTED_JET_COMPANION_MATCHING_SATURATION_NECESSITY.md`](ROOT_RESTRICTED_JET_COMPANION_MATCHING_SATURATION_NECESSITY.md).
 Even scalar complementary-hafnian algebra supplies no hidden relation on
 the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
 Jacobian of the complete principal-cofactor map at a perfect-matching point
