@@ -96,11 +96,15 @@ empty for both marked `H31` and weighted `H22` in the same fixed normalized
 order.  Thus the entire `s=1` normalized `k=infinity` diagonal line is closed
 for these two lifting types.  On the finite part of the distinct
 `s=0,rt=1` face, the full all-pair locus `r!=0,+/-1`, with arbitrary `k`, is
-also empty for weighted `H22`; this includes its all-rank-three divisor
-`k=0`, all finite weights, and projective weight.  Marked `H31`, the finite
-`r=+/-1` lower-pair lines, the separate `s=0,k=infinity` corner surface, the
-`r=infinity` and `t=infinity` lower-pair curves, and arbitrary order remain
-separate.  See
+also empty for both marked `H31` and weighted `H22`; this includes its
+all-rank-three divisor `k=0`, all finite weights, and projective weight.  At
+the delicate marked `k=0` intersection, the surviving third-row candidates
+have forbidden pure coefficient exactly `4`.  The two finite
+`r=+/-1` endpoint lines are separately empty for both marked `H31` and
+weighted `H22`, including `k=0`; they are tangent polar-flag lower-pair
+boundaries, not the secant endpoints on the `s=1,k=infinity` line.  The
+separate `s=0,k=infinity` corner surface, the `r=infinity` and `t=infinity`
+lower-pair curves, and arbitrary order remain separate.  See
 [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md),
 [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_AFFINE_CONSTANT_PROFILE_OPEN_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_AFFINE_CONSTANT_PROFILE_OPEN_OBSTRUCTION.md), and
 [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_T_PLUS_MINUS_ONE_SPECIAL_ALL_PAIR_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_T_PLUS_MINUS_ONE_SPECIAL_ALL_PAIR_OBSTRUCTION.md), together with
@@ -108,7 +112,16 @@ separate.  See
 [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md),
 [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md), and
 [`P5_COMPONENT23_K_INFINITY_LOWER_PAIR_ENDPOINTS_OBSTRUCTION.md`](P5_COMPONENT23_K_INFINITY_LOWER_PAIR_ENDPOINTS_OBSTRUCTION.md), together with
-[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md).
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md) and
+[`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md`](P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md), together with
+[`P5_COMPONENT23_S_ZERO_RT_ONE_LOWER_PAIR_ENDPOINT_LINES_OBSTRUCTION.md`](P5_COMPONENT23_S_ZERO_RT_ONE_LOWER_PAIR_ENDPOINT_LINES_OBSTRUCTION.md).
+The exact parameter-compactification ledger also shows why these charts are
+not exhaustive.  On `s=1`, the two unhandled infinity curves are
+`r=infinity,t=k` and `t=infinity,r=-k`, meeting the proved diagonal at the
+triple-infinity point.  At `s=0,k=infinity` there is a separate two-parameter
+all-pair surface, generically of profile `(3,3,3,3,3,4)`.  The `s=infinity`
+face contributes only the zero tensor, but the source-torus compactification
+and arbitrary ambient/Grassmann degenerations remain unknown.
 Component twenty-four's complete generic weighted fibre is empty across both
 pair orbits and both homogeneous-weight charts.  On component twenty-five,
 generic marked `H31` is empty.  Weighted `H22` is empty at both weight-

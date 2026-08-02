@@ -89,9 +89,10 @@ the two missing points on `t=0`.  Thus the normalized divisors
 lower-pair endpoints are separately empty for both lifting types in the fixed
 normalized order, so the whole `s=1` normalized `k=infinity` diagonal line is
 closed.  On the finite part of the distinct `s=0,rt=1` projective face, the
-all-pair locus `r!=0,+/-1` with arbitrary `k` is weighted-`H22` empty,
-including `k=0` and every homogeneous weight.  Its marked-`H31` fibre, finite
-`r=+/-1` lower-pair lines, `s=0,k=infinity` corner surface, and the
+all-pair locus `r!=0,+/-1` with arbitrary `k` is empty for marked `H31` and
+weighted `H22`, including `k=0` and every homogeneous weight.  The finite `r=+/-1`
+lower-pair endpoint lines are separately empty for both lifting types,
+including `k=0`.  Its `s=0,k=infinity` corner surface and the
 `r=infinity`/`t=infinity` lower-pair curves remain separate.
 Component twenty-four's
 complete generic marked `H31` fibre is also empty by exact projection to four
@@ -369,9 +370,53 @@ Six statements organize the current frontier.
    affine marking when `k(lambda-1)(lambda+1)!=0`; localized modules close
    `k=0`, `lambda=+/-1`, and projective weight by a required beta-diagonal
    membership.  Thus the complete normalized all-pair weighted-`H22` fibre
-   on this finite face is empty.  The two `r=+/-1` lower-pair lines and the
-   simultaneous `s=0,k=infinity` corner are not included:
-   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md).
+   on this finite face is empty.  For marked `H31`, insertions zero and one
+   project to the unit ideal, while insertions two and three project exactly
+   to `<h0,h1,h2*h3>`.  Four punctured marking branches have explicit
+   rank-four minor/transverse certificates.  At their common intersection,
+   a fixed `16 x 5` stack minor closes `k!=0`; at `k=0` the stack has rank
+   four but every independent third-row candidate has forbidden pure
+   coefficient `2211=4`.  This closes every marked basis and projective
+   extension direction.  The two `r=+/-1` lower-pair lines are not
+   included in that all-pair theorem, but a separate exact package closes
+   their complete marked-`H31` and weighted-`H22` fibres for every `k`.  They
+   have tangent polar-flag profile `(3,3,3,4,4,2)` for `k!=0` and
+   `(3,3,3,3,3,2)` at `k=0`, so they are not the secant endpoints of the
+   `s=1,k=infinity` chart.  The simultaneous `s=0,k=infinity` corner is still
+   not included:
+   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md),
+   [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md`](P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md), and
+   [`P5_COMPONENT23_S_ZERO_RT_ONE_LOWER_PAIR_ENDPOINT_LINES_OBSTRUCTION.md`](P5_COMPONENT23_S_ZERO_RT_ONE_LOWER_PAIR_ENDPOINT_LINES_OBSTRUCTION.md).
+   The normalized parameter compactification is not exhausted by those
+   theorems.  For `s=1`, with projective coordinates `K,R,T`, it is exactly
+
+   ```text
+   K0(R0 T0-R1 T1)-K1(R0 T1-R1 T0)=0 in (P1)^3.
+   ```
+
+   Its three infinity curves are `k=infinity,r=t`,
+   `r=infinity,t=k`, and `t=infinity,r=-k`; all meet only at the
+   triple-infinity point.  The first is closed only away from that point.
+   The other two are generically lower-pair, with profiles
+   `(3,2,3,3,4,4)` and `(3,3,2,4,3,4)`, and are exchanged by the known
+   involution.  Eliminating `k` on the affine chart also omitted both whole
+   lower-pair lines `r=t=+/-1`, with arbitrary finite `k`.
+
+   On the full `s=0,k=infinity` corner there is no equation on `r,t`; after
+   the necessary row rescaling its plane family is
+
+   ```text
+   (<A,B>, <D,B>, <B+rD,C>, <B+tD,C>).
+   ```
+
+   It is pure and nonzero.  Its generic profile is `(3,3,3,3,3,4)`, and the
+   exact edge-23 maximal-minor gcd is `8(r-t)(rt-1)`.  Either divisor is
+   still all-pair of profile `(3,3,3,3,3,3)` away from their intersections;
+   the same-sign `+/-1` intersections have edge-23 rank two.  Projective
+   `r,t` endpoints are lower-pair.  The `s=infinity` face contributes only
+   the zero tensor after legal row rescaling.  None of these observations
+   closes the corner surface, the two infinity curves, source-torus faces,
+   arbitrary ambient/Grassmann degeneration, or arbitrary order.
    Component twenty-four is the disjoint-binary split-center mixed-star
    fivefold.  Its exact reverse theorem includes the projective moving-leaf
    endpoint.  Its complete generic marked `H31` fibre is empty after exact
@@ -1096,6 +1141,10 @@ uv run --with sympy python verify_p5_component23_k_infinity_lower_pair_endpoints
 uv run --with sympy python audit_p5_component23_k_infinity_lower_pair_endpoints_obstruction.py
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py
+uv run --with sympy python verify_p5_component23_s_zero_rt_one_lower_pair_endpoint_lines_obstruction.py
+uv run --with sympy python audit_p5_component23_s_zero_rt_one_lower_pair_endpoint_lines_obstruction.py
+uv run --with sympy python verify_p5_h31_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py
+uv run --with sympy python audit_p5_h31_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py
 
 uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_t_zero_and_h_boundary_obstruction.py
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_t_zero_and_h_boundary_obstruction.py
