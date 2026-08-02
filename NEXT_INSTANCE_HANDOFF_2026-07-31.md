@@ -442,13 +442,12 @@ Six statements organize the current frontier.
    `h2*f2*f7*f8*U*V=0`.  Inside `h2=0`, exact specialized fraction-field
    determinants now close `rho=1`, `f6=0`, and `f8=0`; an independent
    low-level reconstruction verifies the same eight determinant identities.
-   The residual `h2=0` branch, the other five factor divisors, and the
-   contextual `W=P=0` scout remain open.  On the retained `f6*f8!=0` chart,
-   two sparse rows now reduce the selected terminal `8 x 8` minor exactly to
-   `-f6*f8` times a specified `6 x 6` complementary minor.  This makes the
-   next certificate smaller but does not close it.  The broader first-minor
-   factorization is not part of the theorem because its native reconstruction
-   timed out.  The prior
+   The residual `h2=0` branch is now empty as well.  Sparse pivots reduce the
+   first cover to `W=0` and a second minor to a polynomial `P=0` linear in
+   `h3`; exact resultant/gcd certificates justify both substitutions.  Two
+   terminal `6 x 6` numerators then have gcd `rho*(rho+1)^2`, already excluded.
+   Hence all of `H=h2=0,rho*(rho+1)!=0` is closed.  The other five factor
+   divisors in the broader `H=0` cover remain open.  The prior
    300-second monolithic timeout on `P=0` is not used as evidence:
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D01_PAIR_ORBIT_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D01_PAIR_ORBIT_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md),
@@ -461,7 +460,8 @@ Six statements organize the current frontier.
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_SECOND_COFACTOR_COVER_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_SECOND_COFACTOR_COVER_OBSTRUCTION.md), and
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_TWO_MINOR_FACTOR_COVER_PARTIAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_TWO_MINOR_FACTOR_COVER_PARTIAL_OBSTRUCTION.md), and
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_H2_ZERO_PARTIAL_CLOSURE.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_H2_ZERO_PARTIAL_CLOSURE.md), and
-   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_SIX_BY_SIX_TERMINAL_REDUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_SIX_BY_SIX_TERMINAL_REDUCTION.md).
+   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_SIX_BY_SIX_TERMINAL_REDUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_SIX_BY_SIX_TERMINAL_REDUCTION.md), and
+   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_TERMINAL_COMPLETE_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_TERMINAL_COMPLETE_OBSTRUCTION.md).
    Component twenty-three is the outward common-center-kernel star fivefold.
    Its complete `YY/YX/XX` support and projective boundary ledger is exact,
    and its generic marked `H31` fibre is empty.  Its complete generic weighted
@@ -1646,6 +1646,8 @@ uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_compon
 uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_h1_nonzero_h2_zero_partial_closure.py
 uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_h2_zero_six_by_six_terminal_reduction.py
 uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_h2_zero_six_by_six_terminal_reduction.py
+uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_h2_zero_terminal_complete_obstruction.py
+uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_h2_zero_terminal_complete_obstruction.py
 
 uv run --with sympy python verify_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py
 uv run --with sympy python audit_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py

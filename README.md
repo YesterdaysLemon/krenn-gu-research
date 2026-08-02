@@ -85,13 +85,14 @@ maximal minor: away from `rho=0,-1`, rank drop is confined to
 `h2*f2*f7*f8*U*V=0`.  Inside `h2=0`, the three further divisors
 `rho=1`, `f6=0`, and `f8=0` are now exactly empty by eight specialized
 rational-function-field determinants and an independent reconstruction.
-The remaining `h2=0` branch, the other five divisors in the broader cover,
-and the contextual `W=P=0` scout remain open.  The terminal calculation has,
-however, been reduced exactly: two sparse mixed rows have pivot determinant
-`-f6*f8`, so on the retained `f6*f8!=0` chart the selected `8 x 8` terminal
-minor is that unit times one explicit `6 x 6` complementary minor.  This is
-a replayable structural reduction, not a proof that the smaller determinant
-is nonzero.  The generic first-minor factorization remains contextual.  See
+The complementary `h2=0` branch is now closed too.  Sparse pivot reduction
+turns its first two selected `8 x 8` minors into `6 x 6` determinants forcing
+`W=0` and then a polynomial `P=0` linear in `h3`.  The `f7/W` resultant is a
+coefficient-field unit, `P`'s leading and constant coefficients are coprime,
+and two terminal `6 x 6` numerators have exact gcd
+`rho*(rho+1)^2`; these roots were already excluded.  Thus the entire
+`H=h2=0,rho*(rho+1)!=0` branch is empty.  The other five divisors in the
+broader `H=0` cover remain open.  See
 [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_E_ZERO_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_E_ZERO_OBSTRUCTION.md) and
 [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_MINUS_ONE_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_MINUS_ONE_OBSTRUCTION.md),
 [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md), together with
@@ -99,7 +100,8 @@ is nonzero.  The generic first-minor factorization remains contextual.  See
 [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_SECOND_COFACTOR_COVER_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_SECOND_COFACTOR_COVER_OBSTRUCTION.md), together with
 [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_TWO_MINOR_FACTOR_COVER_PARTIAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_TWO_MINOR_FACTOR_COVER_PARTIAL_OBSTRUCTION.md) and
 [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_H2_ZERO_PARTIAL_CLOSURE.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_H2_ZERO_PARTIAL_CLOSURE.md), together with
-[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_SIX_BY_SIX_TERMINAL_REDUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_SIX_BY_SIX_TERMINAL_REDUCTION.md).
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_SIX_BY_SIX_TERMINAL_REDUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_SIX_BY_SIX_TERMINAL_REDUCTION.md) and
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_TERMINAL_COMPLETE_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_TERMINAL_COMPLETE_OBSTRUCTION.md).
 Component
 twenty-three's generic weighted fibre is now completely closed.  After the
 infinity and `lambda=0,+/-1` closures, two exact minors leave the ordinary
