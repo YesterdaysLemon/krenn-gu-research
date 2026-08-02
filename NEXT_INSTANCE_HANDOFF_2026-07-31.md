@@ -1034,7 +1034,17 @@ gives full span for both `a` and `b` in
 `W_uv=a_u tensor b_v+b_u tensor a_v`.  Exact incidence models show that all
 six common-port missing-colour profiles still satisfy these root and port
 span conditions.  Thus cofactor membership and span alone still cannot close
-the all-full-span branch.  All surviving
+the all-full-span branch.  For the first even residual case, with exactly two
+nonblockers after the roots and `r+2` blockers, the actual port tensor now has
+the exact hafnian recursion
+`W_uv=h*B_uv+a_u tensor b_v+b_u tensor a_v`.  A projective irreducibility
+dichotomy says either the residual edge restricts to a nonzero coordinate
+monomial on the two simultaneous-kernel spaces or torus kernel vectors make
+`h=0`, in which case the two-row factorization and `P_(r+2)` extraction are
+automatic.  The coordinate-monomial branch and the all-full-span permanent
+branch remain open:
+[`TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md`](TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md).
+All surviving
 projectively varying cores with torus-intersecting `J_H`, the effective
 factorization, and the rank-one synchronized curves remain open:
 [`SIX_BLOCKER_ORDER12_ISOTROPIC_P6_CURVE.md`](SIX_BLOCKER_ORDER12_ISOTROPIC_P6_CURVE.md),
@@ -1261,6 +1271,8 @@ uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_f
 
 uv run --with sympy python verify_arbitrary_surplus_common_row_full_span_obstruction.py
 uv run --with sympy python audit_arbitrary_surplus_common_row_full_span_obstruction.py
+uv run --with sympy python verify_two_residual_nonblocker_two_port_factorisation.py
+uv run --with sympy python audit_two_residual_nonblocker_two_port_factorisation.py
 
 uv run --with sympy python verify_p5_h31_disjoint_secant_component_generic_obstruction.py
 python audit_p5_h31_disjoint_secant_component_generic_obstruction.py
@@ -1640,6 +1652,8 @@ python audit_six_blocker_arbitrary_cofactor_projectively_constant_row_obstructio
 
 uv run --with sympy python verify_arbitrary_surplus_common_row_full_span_obstruction.py
 python audit_arbitrary_surplus_common_row_full_span_obstruction.py
+uv run --with sympy python verify_two_residual_nonblocker_two_port_factorisation.py
+uv run --with sympy python audit_two_residual_nonblocker_two_port_factorisation.py
 
 ```
 

@@ -296,7 +296,14 @@ incident covectors across its blocker union must span the full target dual.
 For first surplus the common port-row family must also span the full target
 dual.  More generally the same holds for every port-row family whenever the
 joint port forms admit a simultaneous permanent factorization; in particular
-both rows in `W_uv=a_u tensor b_v+b_u tensor a_v` must span three.  All six
+both rows in `W_uv=a_u tensor b_v+b_u tensor a_v` must span three.
+With exactly two residual nonblockers, the actual matching form now has the
+exact recursion `W_uv=h*B_uv+a_u tensor b_v+b_u tensor a_v`.  On their
+simultaneous-kernel spaces, either the residual edge is a nonzero coordinate
+monomial or torus kernel vectors can be chosen with `h=0`, making the
+two-row factorization automatic and extracting `P_(r+2)`.  This reduces that
+ambient-order cell to a coordinate-killer branch and an all-full-span
+permanent branch; neither is yet excluded in full.  All six
 known common-port missing-colour profiles still admit exact full-span
 incidence models, so none is eliminated by these rank conditions alone.
 Other all-full-span cores and the synchronized curves remain open:
@@ -312,7 +319,8 @@ Other all-full-span cores and the synchronized curves remain open:
 [`FOUR_ROOT_SIX_BLOCKER_ARBITRARY_ORDER_KERNEL_SUPPORT_OBSTRUCTION.md`](FOUR_ROOT_SIX_BLOCKER_ARBITRARY_ORDER_KERNEL_SUPPORT_OBSTRUCTION.md),
 [`SIX_BLOCKER_ARBITRARY_COFACTOR_PROJECTIVELY_CONSTANT_ROW_OBSTRUCTION.md`](SIX_BLOCKER_ARBITRARY_COFACTOR_PROJECTIVELY_CONSTANT_ROW_OBSTRUCTION.md),
 [`P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md`](P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md), and the all-surplus generalization
-[`ARBITRARY_SURPLUS_COMMON_ROW_FULL_SPAN_OBSTRUCTION.md`](ARBITRARY_SURPLUS_COMMON_ROW_FULL_SPAN_OBSTRUCTION.md).
+[`ARBITRARY_SURPLUS_COMMON_ROW_FULL_SPAN_OBSTRUCTION.md`](ARBITRARY_SURPLUS_COMMON_ROW_FULL_SPAN_OBSTRUCTION.md), together with
+[`TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md`](TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md).
 These are strong local algebraic-geometric
 reductions, not a global proof:
 special `P_5/P_6` restrictions and the final local-to-global graph step are
