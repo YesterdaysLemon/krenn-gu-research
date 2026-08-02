@@ -88,9 +88,15 @@ Component twenty-five's generic marked `H31` fibre is empty over its exact
 hypersurface function field.  Weighted `H22` is empty at both infinity
 endpoints.  Finite `D01` is empty off one extension divisor; on that divisor
 `lambda=+/-1` is empty and `lambda^2!=1` has a two-factor residual cover.
-Finite `D23` has an exact three-branch necessary cover.  Those displayed
-finite branches remain unknown except that the complete all-marking
-`lambda=1` slice is now empty.
+On the `A=0` factor, exact retained-weight elimination leaves only
+`(js-1)lambda-(js+1)=0`.  Its terminal ideal is generically populated by a
+rational section, but the unique marking makes the opposite `D01` diagonal
+identically zero, so the entire divisor-generic section is nongenuine.  The
+parallel `B=0` factor remains unknown.  Finite `D23` has an exact three-branch
+necessary cover; its complete all-marking `lambda=1` slice is empty.  See
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_SURVIVOR.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_SURVIVOR.md)
+and
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_GENERIC_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_GENERIC_OBSTRUCTION.md).
 
 The final star cell is closed in full.  If all three rank-one relations point
 strictly to the center pure-kernel endpoint, their leaf active rows are the
@@ -754,14 +760,31 @@ restrictions; eliminating them remains the open gluing problem:
 At ambient order twelve, where there are no further residual vertices, the
 hypercube sharpens to a synchronized `P_6` curve.  The full six-blocker tensor
 is a six-row permanent plus the exchanged-root cross scalar times one shared
-blocker--blocker cofactor.  On the two exchanged root/port planes the cross
-form is `diag(beta,delta)`; every fully supported point of its `(1,1)`
-isotropic curve is a genuine `P_6 -> Delta_3` restriction.  For `delta=0` the
-double-port corner is another `P_6`; this exactly excludes the earlier local
-freedom model as a global order-twelve realization because it has an
-off-diagonal double-port coefficient `18`.  The remaining target is the
-classification or exclusion of these synchronized rational `P_6` curves:
-[`SIX_BLOCKER_ORDER12_ISOTROPIC_P6_CURVE.md`](SIX_BLOCKER_ORDER12_ISOTROPIC_P6_CURVE.md).
+blocker--blocker cofactor.  Modulo the GHZ diagonal plane the permanent map
+has rank zero or one.  In rank one, the complete decomposable diagonal locus
+is the cross-form isotropic conic/rulings; the target frame has rank three,
+two, or a completely classified `2+1` ratio collision.  In rank zero, a
+hypothetical open `P1 x P1` surface remains.  Its common-row core must satisfy
+
+```text
+J_H=Lambda_H(ker Lambda_H^off) intersects (C*)^3,
+```
+
+and its effective blocks must factor as
+`W_uv=a_u^T b_v+b_u^T a_v`.  The first exact quotient-zero core has `J_H=0`;
+a second has a nonzero diagonal cofactor but
+`J_H=span(-1,1,0)`.  Neither supports concise `P_6`, although both admit
+all-nonzero local edge realizations.  Thus cofactor membership alone cannot
+close the branch.  Separately, any projectively constant source-row family
+forces a common linear factor and is impossible in concise diagonal `P_6`.
+All projectively varying cores with torus-intersecting `J_H`, the effective
+factorization, and the rank-one synchronized curves remain open:
+[`SIX_BLOCKER_ORDER12_ISOTROPIC_P6_CURVE.md`](SIX_BLOCKER_ORDER12_ISOTROPIC_P6_CURVE.md),
+[`SIX_BLOCKER_ORDER12_QUOTIENT_RANK_FRAME_CLASSIFICATION.md`](SIX_BLOCKER_ORDER12_QUOTIENT_RANK_FRAME_CLASSIFICATION.md),
+[`SIX_BLOCKER_ORDER12_ZERO_QUOTIENT_COFACTOR_SYZYGY.md`](SIX_BLOCKER_ORDER12_ZERO_QUOTIENT_COFACTOR_SYZYGY.md),
+[`SIX_BLOCKER_ORDER12_ZERO_QUOTIENT_CORE_NO_CONCISE_P6.md`](SIX_BLOCKER_ORDER12_ZERO_QUOTIENT_CORE_NO_CONCISE_P6.md),
+[`SIX_BLOCKER_ORDER12_NONZERO_DIAGONAL_COFACTOR_NO_TORUS_P6.md`](SIX_BLOCKER_ORDER12_NONZERO_DIAGONAL_COFACTOR_NO_TORUS_P6.md), and
+[`P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md`](P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md).
 
 Two independently replayed Astra method transfers now sit behind this
 frontier.  The first is an exact root-of-unity selector in a bipartite
@@ -1207,6 +1230,15 @@ uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_f
 uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_weights.py
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_weights.py
 
+uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor.py
+uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor.py
+
+uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_ternary_false_positive.py
+uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_ternary_false_positive.py
+
+uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_generic_obstruction.py
+uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_generic_obstruction.py
+
 uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d23_factor_cover.py
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d23_factor_cover.py
 
@@ -1248,6 +1280,21 @@ python audit_six_blocker_maximal_overlap_ghz_hypercube.py
 
 uv run --with sympy python verify_six_blocker_order12_isotropic_p6_curve.py
 uv run --with sympy python audit_six_blocker_order12_isotropic_p6_curve.py
+
+uv run --with sympy python verify_six_blocker_order12_quotient_rank_frame_classification.py
+uv run --with sympy python audit_six_blocker_order12_quotient_rank_frame_classification.py
+
+uv run --with sympy python verify_six_blocker_order12_zero_quotient_cofactor_syzygy.py
+uv run --with sympy python audit_six_blocker_order12_zero_quotient_cofactor_syzygy.py
+
+uv run --with sympy python verify_six_blocker_order12_zero_quotient_core_no_concise_p6.py
+python audit_six_blocker_order12_zero_quotient_core_no_concise_p6.py
+
+uv run --with sympy python verify_p6_projectively_constant_source_row_obstruction.py
+python audit_p6_projectively_constant_source_row_obstruction.py
+
+python verify_six_blocker_order12_nonzero_diagonal_cofactor_no_torus_p6.py
+python audit_six_blocker_order12_nonzero_diagonal_cofactor_no_torus_p6.py
 
 ```
 

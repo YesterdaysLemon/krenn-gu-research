@@ -59,11 +59,16 @@ leaves the two endpoint `P_6` pullbacks locally free.  The full graph identity
 then puts them at opposite corners of a rank-one GHZ coefficient hypercube,
 whose mixed corners are four-root/two-port cofactor tensors.  See
 [`SIX_BLOCKER_MAXIMAL_OVERLAP_GHZ_HYPERCUBE.md`](SIX_BLOCKER_MAXIMAL_OVERLAP_GHZ_HYPERCUBE.md).
-At order twelve those cofactors synchronize into an isotropic rational
-`P_6` curve and exclude the first local-freedom model globally, but the curve
-itself remains unclassified.  This still does not exclude the general
-companion corners or make arbitrary catalogue quotients algebraically
-realizable.
+At order twelve the quotient and frame geometry is now classified.  The
+rank-one branch is exactly the isotropic conic/rulings, while the rank-zero
+branch would be an open `P1 x P1` diagonal surface.  Two explicit all-nonzero
+local cores show that `C_I in mathcal D` is attainable, but their diagonal
+kernel images are respectively `0` and `span(-1,1,0)`, so neither meets the
+coefficient torus or supports concise `P_6`.  A projectively constant common
+source row is excluded in general.  The remaining algebraic target is a core
+whose diagonal kernel image meets `(C^*)^3`, followed by the effective
+two-row factorization.  This still does not exclude the general companion
+corners or make arbitrary catalogue quotients algebraically realizable.
 
 ### Confirmation rather than a new route
 
@@ -107,8 +112,9 @@ supports.
 
 1. The all-six-blocker/root-overlap-four case now has local structure and a
    global GHZ hypercube theorem.
-2. Classify or obstruct the order-twelve synchronized `P_6` curves, then the
-   higher-order companion four-root/two-port cofactor corners.
+2. Find or exclude a projectively varying order-twelve core with
+   `J_H intersect (C^*)^3` nonempty, then impose the effective two-row
+   factorization; treat the rank-one synchronized curves in parallel.
 3. Move next to five shared blockers and different residual ports, attaching
    shared edge-block variables before any quotient count is treated as real.
 4. Use row-space containment, Fitting minors, and legal gauge invariants to
@@ -144,6 +150,16 @@ python verify_six_blocker_maximal_overlap_ghz_hypercube.py
 python audit_six_blocker_maximal_overlap_ghz_hypercube.py
 uv run --with sympy python verify_six_blocker_order12_isotropic_p6_curve.py
 uv run --with sympy python audit_six_blocker_order12_isotropic_p6_curve.py
+uv run --with sympy python verify_six_blocker_order12_quotient_rank_frame_classification.py
+uv run --with sympy python audit_six_blocker_order12_quotient_rank_frame_classification.py
+uv run --with sympy python verify_six_blocker_order12_zero_quotient_cofactor_syzygy.py
+uv run --with sympy python audit_six_blocker_order12_zero_quotient_cofactor_syzygy.py
+uv run --with sympy python verify_six_blocker_order12_zero_quotient_core_no_concise_p6.py
+python audit_six_blocker_order12_zero_quotient_core_no_concise_p6.py
+uv run --with sympy python verify_p6_projectively_constant_source_row_obstruction.py
+python audit_p6_projectively_constant_source_row_obstruction.py
+python verify_six_blocker_order12_nonzero_diagonal_cofactor_no_torus_p6.py
+python audit_six_blocker_order12_nonzero_diagonal_cofactor_no_torus_p6.py
 ```
 
 Every output explicitly retains

@@ -76,8 +76,16 @@ generic marked `H31` is empty.  Weighted `H22` is empty at both weight-
 infinity endpoints and on a dense finite-`D01` extension chart; the residual
 `D01` divisor has empty `lambda=+/-1` slices and a two-factor cover for
 `lambda^2!=1`.  The `A=0` branch is generically empty over the weight function
-field, and exact retained-weight elimination confines every ordinary survivor
-to the single untested divisor `(js-1)lambda-(js+1)=0`.
+field, and exact retained-weight elimination confines every ordinary terminal
+candidate to `(js-1)lambda-(js+1)=0`.  That divisor is generically populated
+at the normalized fixed-vertex level by an exact rational section, but its
+unique marking makes the opposite finite-`D01` diagonal identically zero.
+Hence the divisor-generic terminal section is nongenuine and closed; an
+independent paired-`D23` minor supplies the dense-open ternary obstruction.
+The `B=0` branch is still untouched.  See
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_SURVIVOR.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_SURVIVOR.md)
+and
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_GENERIC_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_GENERIC_OBSTRUCTION.md).
 Finite `D23` has a three-branch necessary cover and its full
 `lambda=1` all-marking slice is empty.  The other displayed finite branches
 remain unknown.  The remaining special/projective
@@ -150,14 +158,26 @@ tensors at opposite corners of a rank-one GHZ coefficient hypercube.  Its
 mixed corners are four-root/two-port cofactor tensors, not known `P_6`
 restrictions.  Eliminating those companions, five-blocker overlap, or
 different ports is still required.  At order twelve the cofactor identity
-does sharpen: a `(1,1)` isotropic conic gives a synchronized rational family
-of `P_6 -> Delta_3` restrictions, and the earlier local-freedom model is
-exactly nonextendable on its `delta=0` branch.  Classification of those
-curves remains open:
+sharpens completely modulo the GHZ diagonal plane.  The quotient map has
+rank zero or one; the latter has exactly the isotropic conic/rulings as its
+decomposable diagonal locus, and its target frame is classified by three
+affine ratio points.  The quotient-zero branch would give an open `P1 x P1`
+surface, but it now has the sharper necessary condition
+`J_H=Lambda_H(ker Lambda_H^off)` meeting `(C^*)^3`, followed by an effective
+two-row Laplace factorization.  Two exact common-row cores fail this test:
+one has `J_H=0`, while a nonzero diagonal-cofactor example has
+`J_H=span(-1,1,0)`.  Both extend to all-nonzero local edge systems but violate
+the global endpoint identity.  Any projectively constant common-root row is
+also excluded for every `P_6` by a common-linear-factor obstruction.  Other
+cores and the synchronized curves remain open:
 [`SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md`](SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md),
 [`SIX_BLOCKER_NONZERO_CROSS_PORT_FREEDOM.md`](SIX_BLOCKER_NONZERO_CROSS_PORT_FREEDOM.md),
-[`SIX_BLOCKER_MAXIMAL_OVERLAP_GHZ_HYPERCUBE.md`](SIX_BLOCKER_MAXIMAL_OVERLAP_GHZ_HYPERCUBE.md), and
-[`SIX_BLOCKER_ORDER12_ISOTROPIC_P6_CURVE.md`](SIX_BLOCKER_ORDER12_ISOTROPIC_P6_CURVE.md).
+[`SIX_BLOCKER_MAXIMAL_OVERLAP_GHZ_HYPERCUBE.md`](SIX_BLOCKER_MAXIMAL_OVERLAP_GHZ_HYPERCUBE.md),
+[`SIX_BLOCKER_ORDER12_ISOTROPIC_P6_CURVE.md`](SIX_BLOCKER_ORDER12_ISOTROPIC_P6_CURVE.md),
+[`SIX_BLOCKER_ORDER12_QUOTIENT_RANK_FRAME_CLASSIFICATION.md`](SIX_BLOCKER_ORDER12_QUOTIENT_RANK_FRAME_CLASSIFICATION.md),
+[`SIX_BLOCKER_ORDER12_ZERO_QUOTIENT_CORE_NO_CONCISE_P6.md`](SIX_BLOCKER_ORDER12_ZERO_QUOTIENT_CORE_NO_CONCISE_P6.md),
+[`SIX_BLOCKER_ORDER12_NONZERO_DIAGONAL_COFACTOR_NO_TORUS_P6.md`](SIX_BLOCKER_ORDER12_NONZERO_DIAGONAL_COFACTOR_NO_TORUS_P6.md), and
+[`P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md`](P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md).
 These are strong local algebraic-geometric
 reductions, not a global proof:
 special `P_5/P_6` restrictions and the final local-to-global graph step are
