@@ -267,9 +267,16 @@ well.  On `a=1,g=0,es=1`, the generic finite-`D01` fibre over
 empty for every marking: in two independent source bases the all-alpha row
 lies in the fourteen-mixed-row extension module.  This is only a generic
 weight-function-field theorem.  Special finite weights, all `D23`, the
-opposite `es=-1` sheet, and the other chart/source/ambient/projective
-boundaries remain open:
+other chart/source/ambient/projective boundaries remain open on this sign
+sheet:
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_ES_ONE_D01_GENERIC_WEIGHT_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_ES_ONE_D01_GENERIC_WEIGHT_OBSTRUCTION.md).
+The opposite `es=-1` sheet is now closed for generic finite `D01` as well,
+and direct all-marking modules additionally close `lambda=0,+/-1` and weight
+infinity.  The generic transfer is legal under `X0<->X1`, `s->-s`, and
+`lambda->1/lambda`, while the endpoint certificates do not use this
+inversion.  Parameter-dependent special finite weights, every `D23` chart,
+and the remaining compactification boundaries stay open:
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_ES_MINUS_ONE_D01_WEIGHT_CLOSURE.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_ES_MINUS_ONE_D01_WEIGHT_CLOSURE.md).
 An earlier narrower cover is retained only as a withdrawn descent-only failed
 route because it split `1,k` coefficients while the free extensions may be
 quadratic-field-valued.  See

@@ -721,8 +721,11 @@ Six statements organize the current frontier.
    `Q(s,k,lambda)` and its weight-at-infinity endpoint over `Q(s,k)` are now
    empty for every marking by exact mixed-row module membership, independently
    replayed in a rescaled source basis.  This does not specialize in
-   `lambda`: special finite weights, all `D23`, `es=-1`, and the other
-   projective/source/ambient charts remain open.  Retain the earlier narrower
+   `lambda`.  On the opposite `es=-1` sheet, a legal coordinate/sign and
+   reciprocal-weight transfer closes generic finite `D01`, while fresh exact
+   modules close `lambda=0,+/-1` and infinity for every marking.  Remaining
+   parameter-dependent finite weights, all `D23`, and the other
+   projective/source/ambient charts stay open.  Retain the earlier narrower
    cover only as a withdrawn descent-restricted failed route.
    Finite `D23` has a three-branch
    necessary cover whose full `lambda=1` slice is empty.  The other displayed
@@ -749,6 +752,7 @@ Six statements organize the current frontier.
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_SPARSE_COVER_NON_W_BRANCHES_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_SPARSE_COVER_NON_W_BRANCHES_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_W_ZERO_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_W_ZERO_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_ES_ONE_D01_GENERIC_WEIGHT_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_ES_ONE_D01_GENERIC_WEIGHT_OBSTRUCTION.md),
+   [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_ES_MINUS_ONE_D01_WEIGHT_CLOSURE.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_ES_MINUS_ONE_D01_WEIGHT_CLOSURE.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md), and
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_LAMBDA_ONE_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_LAMBDA_ONE_OBSTRUCTION.md).
    The equal-endpoint two-inward stratum is empty by
@@ -1747,6 +1751,8 @@ uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_d23_w_zero_obstruction.py
 uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_one_d01_generic_weight_obstruction.py
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_one_d01_generic_weight_obstruction.py
+uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_minus_one_d01_weight_closure.py
+uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_minus_one_d01_weight_closure.py
 
 uv run --with sympy python verify_arbitrary_surplus_common_row_full_span_obstruction.py
 uv run --with sympy python audit_arbitrary_surplus_common_row_full_span_obstruction.py
