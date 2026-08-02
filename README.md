@@ -120,6 +120,10 @@ not exhaustive.  On `s=1`, the two unhandled infinity curves are
 `r=infinity,t=k` and `t=infinity,r=-k`, meeting the proved diagonal at the
 triple-infinity point.  At `s=0,k=infinity` there is a separate two-parameter
 all-pair surface, generically of profile `(3,3,3,3,3,4)`.  Its affine
+finite-`(r,t)` marked-`H31` fibre is empty: the exact projection splits into
+seven open branches plus diagonal, antidiagonal, center, coordinate, and
+lower-pair endpoint strata, each with a uniform rank/transverse obstruction.
+Its affine
 `r=0` divisor is now closed for finite-weight ternary `H22`: the complete
 shared binary-incidence projection has a genuine survivor family, disproving
 module survival as a sufficient obstruction criterion, but an exact
@@ -127,6 +131,7 @@ one-third-row determinant kills every member before a ternary lift.  The
 `s=infinity` face contributes only the zero tensor; projective weight, the
 rest of the corner, source-torus compactification, and arbitrary
 ambient/Grassmann degenerations remain unknown.  See
+[`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_FINITE_CORNER_OBSTRUCTION.md`](P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_FINITE_CORNER_OBSTRUCTION.md) and
 [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_COORDINATE_SURVIVOR.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_COORDINATE_SURVIVOR.md).
 Component twenty-four's complete generic weighted fibre is empty across both
 pair orbits and both homogeneous-weight charts.  On component twenty-five,

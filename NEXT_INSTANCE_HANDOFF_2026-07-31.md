@@ -94,7 +94,8 @@ weighted `H22`, including `k=0` and every homogeneous weight.  The finite
 `r=+/-1` lower-pair endpoint lines are separately empty for both lifting
 types, including `k=0`.  On its `s=0,k=infinity` corner, the affine `r=0`
 divisor is finite-weight ternary-`H22` empty even though its shared binary
-module has a genuine survivor family.  The rest of that corner and the
+module has a genuine survivor family, while the marked-`H31` fibre is empty
+for every finite `(r,t)`.  The projective `r,t` corner endpoints and the
 `r=infinity`/`t=infinity` lower-pair curves remain separate.
 Component twenty-four's
 complete generic marked `H31` fibre is also empty by exact projection to four
@@ -416,7 +417,18 @@ Six statements organize the current frontier.
    still all-pair of profile `(3,3,3,3,3,3)` away from their intersections;
    the same-sign `+/-1` intersections have edge-23 rank two.  Projective
    `r,t` endpoints are lower-pair.  The `s=infinity` face contributes only
-   the zero tensor after legal row rescaling.  On the affine coordinate
+   the zero tensor after legal row rescaling.  On the finite affine corner,
+   the complete marked-`H31` fibre is empty for every finite `(r,t)`.
+   Insertions two and three project to the unit ideal everywhere.  On
+   insertions zero and one the open projection is the exact intersection of
+   seven explicit branches; separate exact projections cover the
+   antidiagonal, diagonal, center, coordinate lines, and both same-sign
+   lower-pair endpoints.  Complete kernel frames turn every branch into a
+   unit multiple of `(a_d z)^2(b_d z)` or `(a_d z)(b_d z)^2`, with a nonzero
+   pure transverse entry.  The projective `r,t` charts are not included:
+   [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_FINITE_CORNER_OBSTRUCTION.md`](P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_FINITE_CORNER_OBSTRUCTION.md).
+
+   On the affine coordinate
    divisor `r=0`, every finite-weight genuine shared `D01/D23` incidence is
    now classified exactly.  For `t!=0` its projection is
    `<h3,h0,t*h1-1>` and its unique mixed-kernel line has diagonals
@@ -1160,6 +1172,8 @@ uv run --with sympy python verify_p5_h31_common_center_kernel_star_component_s_z
 uv run --with sympy python audit_p5_h31_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_coordinate_survivor.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_coordinate_survivor.py
+uv run --with sympy python verify_p5_h31_common_center_kernel_star_component_s_zero_k_infinity_finite_corner_obstruction.py
+uv run --with sympy python audit_p5_h31_common_center_kernel_star_component_s_zero_k_infinity_finite_corner_obstruction.py
 
 uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_t_zero_and_h_boundary_obstruction.py
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_t_zero_and_h_boundary_obstruction.py
