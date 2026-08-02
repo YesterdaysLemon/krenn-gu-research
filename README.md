@@ -1364,8 +1364,13 @@ strictly advance the finite frontier:
   exceptional line is now closed too: `[P:Q]` maps to the vertical plane
   `<Q A-P C,B>`, and a direct eight-ideal calculation closes the formerly
   omitted `alpha=infinity` endpoint.  This includes all first-normal
-  DVR/Puiseux valuation directions at finite `kappa`.  The central zero
-  tensor, `kappa=infinity`, iterated compactifications, and arbitrary
+  DVR/Puiseux valuation directions at finite `kappa`.  The normalized
+  `kappa=infinity` first-normal atlas is now empty as well: the regular row
+  `A+t(B+h_2 C)` has exceptional row `B+h_2 C`, eight direct unit ideals
+  close finite `(p,q)` and both `ell`/weight charts, and simultaneous
+  vanishing of `p,q` transfers to the certified vertical sheet at
+  `kappa=0`.  The central zero tensor, poles of `p,q`, marking/extension
+  poles outside the Rees chart, iterated compactifications, and arbitrary
   ambient/source/projective
   degenerations outside that normalized compactification remain separate:
   [`P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
@@ -1374,7 +1379,8 @@ strictly advance the finite frontier:
   [`P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md), and
   [`P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md), together with
   [`P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md) and
-  [`P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md`](P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md).
+  [`P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md`](P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md), together with
+  [`P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md).
 - component eighteen's complete generic marked `H31` and weighted `H22`
   fibres are empty.  In its intrinsic pure marking, three kernel rows equal
   the common singleton `e`.  After any source-coordinate deletion or either

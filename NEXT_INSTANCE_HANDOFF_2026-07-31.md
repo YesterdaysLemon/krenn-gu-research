@@ -310,13 +310,19 @@ Six statements organize the current frontier.
    now empty as well: `[P:Q]` gives `<Q A-P C,B>`, the finite chart transfers
    to the certified vertical sheet, and eight direct exact unit ideals close
    `alpha=infinity`.  This covers all first-normal DVR/Puiseux valuation
-   directions at finite `kappa`; the central zero tensor, `kappa=infinity`,
-   iterated compactifications, and arbitrary ambient/source/projective
+   directions at finite `kappa`.  The normalized `kappa=infinity`
+   first-normal atlas is now empty too: with `t=1/kappa`, the regular marked
+   row `A+t(B+h2*C)` has exceptional row `B+h2*C`; eight direct unit ideals
+   close finite `(p,q)`, both `ell` charts, and both weight charts, while
+   simultaneous `p,q` vanishing is the certified vertical sheet at
+   `kappa=0`.  The central zero tensor, `p/q` poles, marking/extension poles
+   outside this Rees chart, iterated compactifications, and arbitrary ambient/source/projective
    limits remain separate:
    [`P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md`](P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md) and
    [`P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md), together with
    [`P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md) and
-   [`P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md`](P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md).
+   [`P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md`](P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md), together with
+   [`P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md).
    Component twenty-two is the unequal-complement common-kernel fivefold.
    Its complete generic marked `H31` fibre is empty after exact projection to
    four marking branches and four uniform one-marked minors:
@@ -948,14 +954,17 @@ displayed `kappa=0` continuation.  Direct exact endpoint packages close
 including every `kappa=0` specialization branch.  The collapsed raw
 `p=q=0` zero-basis degeneration is now closed on its complete first
 projectivized normal line for finite `kappa`, including the direct
-`alpha=infinity` endpoint and unequal-valuation DVR/Puiseux arcs.  The raw
-central zero tensor, `kappa=infinity`, later compactifications, and arbitrary
+`alpha=infinity` endpoint and unequal-valuation DVR/Puiseux arcs.  Its
+normalized `kappa=infinity` first-normal atlas is also empty, including joint
+regular `(p,q)` vanishing directions.  The raw central zero tensor, `p/q`
+poles, marking/extension poles outside the displayed Rees charts, later compactifications, and arbitrary
 ambient/source/projective degenerations outside this normalized
 compactification remain open:
 [`P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md) and
 [`P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md), together with
 [`P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md) and
-[`P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md`](P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md).
+[`P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md`](P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md), together with
+[`P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md).
 
 ## What a global proof would still need
 
@@ -1365,6 +1374,8 @@ uv run --with sympy python verify_p5_component21_q_plus_minus_p_ell_endpoint_com
 uv run --with sympy python audit_p5_component21_q_plus_minus_p_ell_endpoint_complete_obstruction.py
 uv run --with sympy python verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py
 uv run --with sympy python audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py
+uv run --with sympy python verify_p5_component21_kappa_infinity_first_normal_complete_obstruction.py
+uv run --with sympy python audit_p5_component21_kappa_infinity_first_normal_complete_obstruction.py
 
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
