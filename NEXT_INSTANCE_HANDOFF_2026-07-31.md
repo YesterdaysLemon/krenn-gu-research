@@ -76,9 +76,15 @@ complete.  Component twenty-three's complete generic marked `H31` and
 weighted `H22` fibres are empty.  After the weight-at-infinity and finite
 `lambda=0,+/-1` closures, exact localized modules and a selected-minor normal
 form close the complete ordinary residual.  Special/projective component
-fibres are not included in that generic theorem; a new exact package closes
-the complete weighted fibre over the generic point of the genuine `r=0`
-component divisor, while its exceptional `t`-points remain separate.
+fibres are not included in that generic theorem.  On the genuine `r=0`
+component divisor, exact packages now close both its generic point and the
+whole constant-profile open `t(t-1)(t+1)!=0`; a legal common-weight
+involution transfers the latter closure to
+`t=0, r(r-1)(r+1)!=0`.  Exact point packages also close the two retained
+special all-pair fibres on `r=0`, and the same involution transfers them to
+the two missing points on `t=0`.  Thus the normalized divisors
+`r=0,t!=0` and `t=0,r!=0` are both empty.  Their common chart boundary
+remains separate.
 Component twenty-four's
 complete generic marked `H31` fibre is also empty by exact projection to four
 marking branches and fixed-minor unit ideals.  Its complete generic weighted
@@ -300,11 +306,24 @@ Six statements organize the current frontier.
    `h2*lambda*(lambda-1)^2*(lambda+1)^4*C/L`, while `gcd(L,C)=1`; hence
    `C!=0` has full rank and `C=0` forces the already-closed `h3=0` branch.
    The monolithic `H=0` module and raw generic SymPy determinant timed out and
-   are not used as evidence.  The genuine component divisor `r=0` is now
+   are not used as evidence.  The genuine component divisor `r=0` was first
    closed over its function field `Q(t)`, for every finite and projective
-   weight, by a twelve-minor tree and exact endpoint modules.  Exceptional
-   points on that `t`-line and other special/projective component fibres
-   remain open:
+   weight, by a twelve-minor tree and exact endpoint modules.  Eight raw
+   maximal minors now generate the unit ideal after localizing only at
+   `t(t-1)(t+1)` and the ordinary weight factors; direct localized modules
+   close `lambda=0,+/-1` and the projective weight.  Hence the entire
+   constant-profile open `r=0, t(t-1)(t+1)!=0` is empty.  At `t=+/-1`, one
+   additional ordinary minor at each point plus exact endpoint/projective
+   modules closes both special all-pair fibres of profile
+   `(3,3,3,4,3,4)`.  The exact legal involution `(r,t)->(-t,-r)` sends
+   `[mu:nu]` to `[nu:mu]` in both contractions and transfers the open and
+   point theorems to all of `t=0,r!=0`; the transferred special profile is
+   `(3,3,3,3,4,4)`.  Thus both normalized coordinate divisors are empty away
+   from their common normal-form chart boundary.  A proposed direct
+   twenty-one-minor target proof was discarded after restoring an omitted
+   `r*D` term made both implementations return the non-unit result
+   `RESULT:0:7:21`; it is not evidence.  Other special/projective component
+   fibres remain open:
    [`P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md`](P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md),
    [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md),
@@ -312,8 +331,11 @@ Six statements organize the current frontier.
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ONE_ALL_MARKING_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ONE_ALL_MARKING_OBSTRUCTION.md),
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ZERO_ALL_MARKING_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ZERO_ALL_MARKING_OBSTRUCTION.md),
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ORDINARY_F_H2_ZERO_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ORDINARY_F_H2_ZERO_OBSTRUCTION.md), and
-   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ORDINARY_RESIDUAL_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ORDINARY_RESIDUAL_OBSTRUCTION.md), together with the divisor theorem
-   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md).
+   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ORDINARY_RESIDUAL_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ORDINARY_RESIDUAL_OBSTRUCTION.md), together with the divisor packages
+   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md),
+   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_AFFINE_CONSTANT_PROFILE_OPEN_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_AFFINE_CONSTANT_PROFILE_OPEN_OBSTRUCTION.md), and
+   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_T_PLUS_MINUS_ONE_SPECIAL_ALL_PAIR_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_T_PLUS_MINUS_ONE_SPECIAL_ALL_PAIR_OBSTRUCTION.md), together with
+   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_T_DIVISOR_SYMMETRY_TRANSFER.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_T_DIVISOR_SYMMETRY_TRANSFER.md).
    Component twenty-four is the disjoint-binary split-center mixed-star
    fivefold.  Its exact reverse theorem includes the projective moving-leaf
    endpoint.  Its complete generic marked `H31` fibre is empty after exact
@@ -1024,6 +1046,12 @@ uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_compone
 
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
+uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_zero_affine_constant_profile_open_obstruction.py
+uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_affine_constant_profile_open_obstruction.py
+uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_zero_t_plus_minus_one_special_all_pair_obstruction.py
+uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_t_plus_minus_one_special_all_pair_obstruction.py
+uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_t_divisor_symmetry_transfer.py
+uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_t_divisor_symmetry_transfer.py
 
 uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_t_zero_and_h_boundary_obstruction.py
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_t_zero_and_h_boundary_obstruction.py

@@ -75,10 +75,21 @@ infinity and `lambda=0,+/-1` closures, two exact minors leave the ordinary
 residual `F=0,h2!=0,(h3=0 or H=0)`; a localized full-module certificate closes
 `h3=0`, while an exact selected minor modulo `<F,H>` closes `H=0` after a
 coprime-linear-form split.  On the genuine component divisor `r=0`, an exact
-twelve-minor tree plus endpoint and projective-weight modules closes the
-complete weighted fibre over `Q(t)`.  Exceptional points of the `t`-line and
-all other special/projective component fibres are not included.  See
-[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md).
+twelve-minor tree plus endpoint and projective-weight modules first closed the
+complete weighted fibre over `Q(t)`.  A stronger eight-minor localized unit
+certificate and six exact endpoint/projective modules now close every point
+of its constant-profile open `t(t-1)(t+1)!=0`.  Two nine-minor and exact
+endpoint-module certificates close the retained special all-pair points
+`t=+/-1`, so the normalized divisor `r=0,t!=0` is empty.  A legal
+permanent-preserving involution `(r,t)->(-t,-r)` exchanges the homogeneous
+weight coordinates in both contractions and transfers these open and point
+theorems to the complete normalized divisor `t=0,r!=0`.  The common
+normal-form chart boundary and all other special/projective component fibres
+are not included.  See
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md),
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_AFFINE_CONSTANT_PROFILE_OPEN_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_AFFINE_CONSTANT_PROFILE_OPEN_OBSTRUCTION.md), and
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_T_PLUS_MINUS_ONE_SPECIAL_ALL_PAIR_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_T_PLUS_MINUS_ONE_SPECIAL_ALL_PAIR_OBSTRUCTION.md), together with
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_T_DIVISOR_SYMMETRY_TRANSFER.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_T_DIVISOR_SYMMETRY_TRANSFER.md).
 Component twenty-four's complete generic weighted fibre is empty across both
 pair orbits and both homogeneous-weight charts.  On component twenty-five,
 generic marked `H31` is empty.  Weighted `H22` is empty at both weight-
