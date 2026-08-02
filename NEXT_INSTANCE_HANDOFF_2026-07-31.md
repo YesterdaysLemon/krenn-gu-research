@@ -1574,6 +1574,13 @@ The unique relative survivor is still tensorially impossible because
 `C_0101122` divides `C0*C1*C2`, so its full mixed saturation is the unit
 ideal.  Larger supports and a certificate-complete lower bound remain open:
 [`ROOT_M7_ENDPOINT_LEGAL_CERTIFICATE_HITTING_MINIMUM_TWO_EXCLUSION.md`](ROOT_M7_ENDPOINT_LEGAL_CERTIFICATE_HITTING_MINIMUM_TWO_EXCLUSION.md).
+The one-incidence shell above that unique pair is completely closed.  There
+are 102 endpoint-legal third incidences: 101 preserve the principal
+`C_0101122` certificate, and the unique escape `a_5[2]` is excluded by the
+replacement divisibility `C_0101112 | C0*C1*C2`.  Exact polynomial division
+and an independent no-import audit leave zero survivors.  This is not an
+enumeration of the other three-incidence supports, which remain open:
+[`ROOT_M7_UNIQUE_PAIR_THIRD_INCIDENCE_SHELL_EXCLUSION.md`](ROOT_M7_UNIQUE_PAIR_THIRD_INCIDENCE_SHELL_EXCLUSION.md).
 Nor can one obtain a contradiction from scalar principal-cofactor algebra
 alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal
 two-vertex cofactors at a fixed perfect-matching point splits into one

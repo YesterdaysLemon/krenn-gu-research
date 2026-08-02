@@ -632,6 +632,13 @@ full survivor: `C_0101122` still divides `C0*C1*C2`, so its full mixed
 saturation is the unit ideal.  This is explicitly a five-certificate result,
 not a universal arbitrary-support lower bound:
 [`ROOT_M7_ENDPOINT_LEGAL_CERTIFICATE_HITTING_MINIMUM_TWO_EXCLUSION.md`](ROOT_M7_ENDPOINT_LEGAL_CERTIFICATE_HITTING_MINIMUM_TWO_EXCLUSION.md).
+The complete one-incidence shell above that unique pair is now excluded as
+well.  Of its 102 endpoint-legal extensions, 101 retain the exact
+`C_0101122 | C0*C1*C2` certificate.  The sole escape is `a_5[2]`, where the
+new coefficient `C_0101112` divides the same pure product.  Thus this entire
+102-support shell has empty mixed saturation on the pure-nonzero locus.  This
+does not classify triples that do not contain the unique pair:
+[`ROOT_M7_UNIQUE_PAIR_THIRD_INCIDENCE_SHELL_EXCLUSION.md`](ROOT_M7_UNIQUE_PAIR_THIRD_INCIDENCE_SHELL_EXCLUSION.md).
 Even scalar complementary-hafnian algebra supplies no hidden relation on
 the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
 Jacobian of the complete principal-cofactor map at a perfect-matching point
