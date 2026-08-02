@@ -127,12 +127,16 @@ Its affine
 `r=0` divisor is now closed for finite-weight ternary `H22`: the complete
 shared binary-incidence projection has a genuine survivor family, disproving
 module survival as a sufficient obstruction criterion, but an exact
-one-third-row determinant kills every member before a ternary lift.  The
+one-third-row determinant kills every member before a ternary lift.  A
+corner-only tensor-mode swap `(2 3)` fixes both contractions and homogeneous
+weight, transferring this theorem to the complete finite `t=0` divisor,
+including `lambda=0`.  The
 `s=infinity` face contributes only the zero tensor; projective weight, the
 rest of the corner, source-torus compactification, and arbitrary
 ambient/Grassmann degenerations remain unknown.  See
 [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_FINITE_CORNER_OBSTRUCTION.md`](P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_FINITE_CORNER_OBSTRUCTION.md) and
-[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_COORDINATE_SURVIVOR.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_COORDINATE_SURVIVOR.md).
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_COORDINATE_SURVIVOR.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_COORDINATE_SURVIVOR.md), together with
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_R_T_COORDINATE_SYMMETRY_TRANSFER.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_R_T_COORDINATE_SYMMETRY_TRANSFER.md).
 Component twenty-four's complete generic weighted fibre is empty across both
 pair orbits and both homogeneous-weight charts.  On component twenty-five,
 generic marked `H31` is empty.  Weighted `H22` is empty at both weight-
