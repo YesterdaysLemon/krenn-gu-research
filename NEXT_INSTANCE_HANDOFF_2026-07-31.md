@@ -340,8 +340,12 @@ Six statements organize the current frontier.
    entire displayed normalized parameter base
    `Bl_c(P^2) x P^1_kappa x P^1_ell`, including all simultaneous parameter
    intersections.
-   Marking/extension poles outside this Rees chart and arbitrary
-   ambient/source/projective limits remain separate:
+   Twelve further global unit ideals close `h0=infinity,p!=0`, its complete
+   nonzero joint `(1/h0,p)` first normal, and every nonzero monomial
+   `(p,(1/h0)q)` DVR/Puiseux normal.  Other marking/extension poles,
+   simultaneous marking poles, and arbitrary ambient/source/projective
+   limits remain separate; a `P5` leading term with zero `P4` restriction is
+   not covered by this normal calculation:
    [`P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md`](P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md) and
    [`P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md), together with
    [`P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md) and
@@ -349,7 +353,8 @@ Six statements organize the current frontier.
    [`P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md), and
    [`P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md), together with
    [`P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md) and
-   [`P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md).
+   [`P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md), together with
+   [`P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md).
    Component twenty-two is the unequal-complement common-kernel fivefold.
    Its complete generic marked `H31` fibre is empty after exact projection to
    four marking branches and four uniform one-marked minors:
@@ -1005,9 +1010,13 @@ exceptional divisor, and the complete `kappa=infinity` edge.  Four global
 polynomial unit ideals on the finite `(p,q,kappa,ell)` sheet complete the
 cover: every point of the displayed normalized
 `Bl_c(P^2) x P^1_kappa x P^1_ell` parameter compactification is now empty.
-Marking/extension poles outside the displayed Rees
-charts and arbitrary ambient/source/projective degenerations outside this
-normalized compactification remain open:
+The `h0=infinity` marking boundary is now closed wherever `p!=0`; its whole
+nonzero projectivized joint `(1/h0,p)` first normal and every nonzero
+monomial `(p,(1/h0)q)` DVR/Puiseux normal are empty too, by twelve direct
+characteristic-zero unit ideals.  Other marking/extension poles,
+simultaneous marking poles, and arbitrary ambient/source/projective
+degenerations remain open.  In particular, the argument does not classify
+an ambient `P5` leading term whose `P4` restriction is zero:
 [`P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md) and
 [`P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md), together with
 [`P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md) and
@@ -1015,7 +1024,8 @@ normalized compactification remain open:
 [`P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md), and
 [`P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md), together with
 [`P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md) and
-[`P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md).
+[`P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md), together with
+[`P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md).
 
 ## What a global proof would still need
 
@@ -1231,6 +1241,14 @@ freedom on that edge alone: it only rescales `(1,t_i)`, which is independent
 of `(1,t_i^2)` for `t_i!=0,1`.  It must use additional effective companions
 or a nonprojective root--blocker layer; neither is excluded here:
 [`ROOT_TANGENT_MINIMAL_CYCLE_SECOND_JET_OBSTRUCTION.md`](ROOT_TANGENT_MINIMAL_CYCLE_SECOND_JET_OBSTRUCTION.md).
+For arbitrary scalar tangent complements, the full quotient rank is now
+classified.  The coordinatewise map
+`ker(a) tensor ker(b) -> K^3/<(1,1,1)>` has rank one exactly when some
+coordinate `c` obeys `a_c=b_c=0` and `a_p b_p=a_q b_q`; everywhere else it
+has rank two.  Consequently, a nonresonant root pair needs at least two
+independent accessible double-deletion cofactor quotient classes.  This is
+a necessary condition only; their graph/hafnian realizability remains open:
+[`ROOT_MIXED_SECOND_JET_QUOTIENT_RANK_CLASSIFICATION.md`](ROOT_MIXED_SECOND_JET_QUOTIENT_RANK_CLASSIFICATION.md).
 Nor can one obtain a contradiction from scalar principal-cofactor algebra
 alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal
 two-vertex cofactors at a fixed perfect-matching point splits into one
@@ -1445,6 +1463,8 @@ uv run --with sympy python verify_p5_component21_ell_infinity_parameter_compacti
 uv run --with sympy python audit_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py
 uv run --with sympy python verify_p5_component21_normalized_parameter_compactification_complete_obstruction.py
 uv run --with sympy python audit_p5_component21_normalized_parameter_compactification_complete_obstruction.py
+uv run --with sympy python verify_p5_component21_single_marking_infinity_first_normal_obstruction.py
+uv run --with sympy python audit_p5_component21_single_marking_infinity_first_normal_obstruction.py
 
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
@@ -1518,6 +1538,8 @@ uv run --with sympy python verify_root_tangent_cycle_frame_symmetry_realization.
 python audit_root_tangent_cycle_frame_symmetry_realization.py
 uv run --with sympy python verify_root_tangent_minimal_cycle_second_jet_obstruction.py
 python audit_root_tangent_minimal_cycle_second_jet_obstruction.py
+uv run --with sympy python verify_root_mixed_second_jet_quotient_rank_classification.py
+python audit_root_mixed_second_jet_quotient_rank_classification.py
 uv run --with sympy python verify_hafnian_principal_cofactor_gradient_dominance.py
 python audit_hafnian_principal_cofactor_gradient_dominance.py
 

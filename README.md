@@ -393,6 +393,14 @@ fixed quotient class `(1,t_i)` and cannot produce `(1,t_i^2)` when
 `t_i!=0,1`.  Additional companion cofactors remain available, so the general
 second-jet problem stays open:
 [`ROOT_TANGENT_MINIMAL_CYCLE_SECOND_JET_OBSTRUCTION.md`](ROOT_TANGENT_MINIMAL_CYCLE_SECOND_JET_OBSTRUCTION.md).
+More generally, for scalar tangent complements `S_a=ker(a)` and
+`S_b=ker(b)`, the coordinatewise mixed-Hessian map
+`S_a tensor S_b -> K^3/<(1,1,1)>` has rank one exactly on the three resonant
+loci `a_c=b_c=0`, `a_p b_p=a_q b_q`; off them it has rank two.  Thus a
+nonresonant root pair requires at least two independent accessible
+double-deletion cofactor quotient classes.  This is only a necessary
+second-jet condition; realizing or excluding those classes remains open:
+[`ROOT_MIXED_SECOND_JET_QUOTIENT_RANK_CLASSIFICATION.md`](ROOT_MIXED_SECOND_JET_QUOTIENT_RANK_CLASSIFICATION.md).
 Even scalar complementary-hafnian algebra supplies no hidden relation on
 the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
 Jacobian of the complete principal-cofactor map at a perfect-matching point
@@ -1407,9 +1415,13 @@ strictly advance the finite frontier:
   global polynomial unit ideals on the full finite `(p,q,kappa,ell)` sheet,
   together with these boundary packages, now close the entire displayed
   normalized parameter base `Bl_c(P^2) x P^1_kappa x P^1_ell`, including
-  every simultaneous parameter intersection.  Marking/extension
-  poles outside the Rees chart and arbitrary ambient/source/projective
-  degenerations outside that normalized compactification remain separate:
+  every simultaneous parameter intersection.  Twelve further exact unit
+  ideals close the complete `h0=infinity,p!=0` boundary, the nonzero joint
+  `(1/h0,p)` first normal, and every nonzero monomial `(p,(1/h0)q)`
+  DVR/Puiseux normal, for both marked `H31` and weighted `H22`.  Other
+  marking/extension poles, simultaneous marking poles, and arbitrary
+  ambient/source/projective degenerations remain separate; in particular,
+  a `P5` leading term whose `P4` restriction vanishes is still unclassified:
   [`P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
   [`P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md),
   [`P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md`](P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md),
@@ -1420,7 +1432,8 @@ strictly advance the finite frontier:
   [`P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md), and
   [`P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md), together with
   [`P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md) and
-  [`P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md).
+  [`P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md), together with
+  [`P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md).
 - component eighteen's complete generic marked `H31` and weighted `H22`
   fibres are empty.  In its intrinsic pure marking, three kernel rows equal
   the common singleton `e`.  After any source-coordinate deletion or either
