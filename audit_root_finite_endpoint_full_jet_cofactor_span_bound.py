@@ -92,6 +92,13 @@ def subset_count(root_count: int, endpoint_count: int) -> int:
     return count
 
 
+def multiply(left: list[list[int]], right: list[list[int]]) -> list[list[int]]:
+    return [
+        [sum(left[i][k] * right[k][j] for k in range(2)) for j in range(2)]
+        for i in range(2)
+    ]
+
+
 def main() -> None:
     wide_rows = sorted(
         {
@@ -127,6 +134,20 @@ def main() -> None:
                 raise AssertionError((root_count, endpoint_count, count, explicit))
             subset_checks += 1
 
+    frame_checks = 0
+    small_matrices = [
+        [[a, b], [c, d]]
+        for a, b, c, d in product((-1, 0, 1), repeat=4)
+    ]
+    for left in small_matrices:
+        left_rank = row_rank(left)
+        for right in small_matrices:
+            if row_rank(multiply(left, right)) == 2 and (
+                left_rank != 2 or row_rank(right) != 2
+            ):
+                raise AssertionError((left, right))
+            frame_checks += 1
+
     print(
         json.dumps(
             {
@@ -136,6 +157,7 @@ def main() -> None:
                 "pair_checks": pair_checks,
                 "selected_triple_checks": triple_checks,
                 "endpoint_subset_checks": subset_checks,
+                "two_class_frame_checks": frame_checks,
                 "maximum_roots": 18,
                 "maximum_endpoints": 6,
                 "bounded_checks_are_theorem_evidence": False,

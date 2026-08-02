@@ -114,6 +114,20 @@ def rank_two_audit() -> dict[str, object]:
     }
 
 
+def frame_alignment_audit() -> dict[str, str]:
+    a, b, c, d, e, f, g, h = sp.symbols("a b c d e f g h")
+    row_frame = sp.Matrix([[a, b], [c, d]])
+    cofactor_frame = sp.Matrix([[e, f], [g, h]])
+    flattened = row_frame * cofactor_frame
+    identity = sp.factor(flattened.det() - row_frame.det() * cofactor_frame.det())
+    if identity != 0:
+        raise AssertionError(identity)
+    return {
+        "determinant_identity": "det(RC)=det(R)det(C)",
+        "rank_two_consequence": "both two-class frames are invertible",
+    }
+
+
 def main() -> None:
     print(
         json.dumps(
@@ -122,6 +136,7 @@ def main() -> None:
                 "field": "exact characteristic zero",
                 "cofactor_subset_bound": endpoint_subset_audit(),
                 "rank_two_classification": rank_two_audit(),
+                "two_class_frame_alignment": frame_alignment_audit(),
                 "root_root_tangent_edges_allowed": True,
                 "finite_field_proof_used": False,
                 "global_conjecture_resolved": False,
