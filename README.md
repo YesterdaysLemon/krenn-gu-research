@@ -279,6 +279,15 @@ infinity.  The generic transfer is legal under `X0<->X1`, `s->-s`, and
 inversion.  Parameter-dependent special finite weights, every `D23` chart,
 and the remaining compactification boundaries stay open:
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_ES_MINUS_ONE_D01_WEIGHT_CLOSURE.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_ES_MINUS_ONE_D01_WEIGHT_CLOSURE.md).
+Generic finite `D23` is now closed on both sign sheets as well.  On `es=1`,
+the complete normalized binary Segre incidence is exactly one affine line.
+One paired-`D01` minor has nonzero factor `X=s+2(1-lambda)t`; on `X=0`, a
+second independent minor is the coefficient-field unit `k^2`.  A legal
+ambient pair swap, `s,k->-s,-k`, and reciprocal-weight transfer carries this
+closure to `es=-1`.  Special finite weights, component-parameter divisors
+such as `k=0`, `D23` weight infinity, and the other projective charts remain
+open:
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_GENERIC_D23_AFFINE_LINE_RANK_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_GENERIC_D23_AFFINE_LINE_RANK_OBSTRUCTION.md).
 An earlier narrower cover is retained only as a withdrawn descent-only failed
 route because it split `1,k` coefficients while the free extensions may be
 quadratic-field-valued.  See
