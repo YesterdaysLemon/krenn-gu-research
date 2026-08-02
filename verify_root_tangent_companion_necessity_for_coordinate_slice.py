@@ -98,6 +98,17 @@ def coefficient_contradiction() -> dict[str, object]:
     augmented = scalar_row.col_join(companion_matrix)
     assert sp.factor(augmented.det()) == x0
     assert augmented.rank() == 3
+    diagonal_quotient = sp.Matrix(((d1, -d0, 0), (d2, 0, -d0)))
+    diagonal_vector = sp.Matrix((d0, d1, d2))
+    assert diagonal_quotient * diagonal_vector == sp.zeros(2, 1)
+    quotient_derivative = diagonal_quotient * target_derivative_matrix
+    assert quotient_derivative * root == sp.zeros(2, 1)
+    assert quotient_derivative.rank() == 2
+    quotient_frame = sp.diag(d0 * d1 / (x0 * x1), d0 * d2 / (x0 * x2))
+    assert sp.simplify(
+        quotient_frame * companion_matrix - quotient_derivative
+    ) == sp.zeros(2, 3)
+    assert sp.factor(quotient_frame.det()) == d0**2 * d1 * d2 / (x0**2 * x1 * x2)
     return {
         "coefficient_systems": [[str(value) for value in row] for row in equations],
         "incompatible_difference": str(contradiction),
@@ -108,6 +119,9 @@ def coefficient_contradiction() -> dict[str, object]:
         "maximum_companion_span_from_pairwise_zero_kernel_incidence": 2,
         "forced_companion_span": "x_i^perp",
         "scalar_plus_companion_span_rank": augmented.rank(),
+        "target_quotient_derivative_rank": quotient_derivative.rank(),
+        "companion_quotient_frame_determinant": str(sp.factor(quotient_frame.det())),
+        "forced_quotient_map": "V/<x_i> isomorphic to Diag/<Lambda>",
     }
 
 
@@ -144,6 +158,7 @@ def main() -> None:
                 "coordinate_branch_excluded_in_full": False,
                 "projectively_constant_root_requires_companion_span_at_least": 2,
                 "projectively_constant_root_forces_companion_span_exactly": "x_i^perp",
+                "effective_companion_cofactors_span_diagonal_quotient": True,
                 "finite_field_used": False,
                 "global_conjecture_resolved": False,
             },

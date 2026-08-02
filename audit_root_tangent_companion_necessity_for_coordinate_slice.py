@@ -79,6 +79,14 @@ def audit_linear_forms() -> dict[str, object]:
     assert sum(scalar_row[i] * root[i] for i in range(3)) == 1
     augmented_determinant = 2
     assert augmented_determinant != 0
+    diagonal_weights = (7, 11, 13)
+    quotient_frame = (Fraction(77, 6), Fraction(91, 10))
+    assert quotient_frame[0] * 3 == Fraction(77, 2)
+    assert quotient_frame[0] * -2 == Fraction(-77, 3)
+    assert quotient_frame[1] * 5 == Fraction(91, 2)
+    assert quotient_frame[1] * -2 == Fraction(-91, 5)
+    quotient_frame_determinant = quotient_frame[0] * quotient_frame[1]
+    assert quotient_frame_determinant == Fraction(7007, 60)
     probes = (
         ((1, 0, 0), ((1, 2), (0, 1), (0, 1))),
         ((0, 1, 0), ((0, 1), (1, 3), (0, 1))),
@@ -95,6 +103,10 @@ def audit_linear_forms() -> dict[str, object]:
         "maximum_companion_span_from_annihilator": companion_rank,
         "forced_companion_span": "x_i^perp",
         "scalar_plus_companion_determinant": augmented_determinant,
+        "sample_diagonal_weights": diagonal_weights,
+        "target_quotient_derivative_rank": 2,
+        "companion_quotient_frame_determinant": str(quotient_frame_determinant),
+        "forced_quotient_map": "V/<x_i> isomorphic to Diag/<Lambda>",
     }
 
 
@@ -120,6 +132,7 @@ def main() -> None:
                 "tangent_companion_escape_necessary": True,
                 "one_companion_sufficient_with_constant_root_row": False,
                 "effective_companions_span_full_root_annihilator": True,
+                "effective_companion_cofactors_span_diagonal_quotient": True,
                 "full_coordinate_branch_excluded": False,
                 "finite_field_used": False,
                 "global_conjecture_resolved": False,

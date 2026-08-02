@@ -350,6 +350,9 @@ cannot itself be a full witness.  Any genuine extension needs a
 nonprojective root--blocker tangent or effective root--root/root--residual
 companions spanning exactly the full two-dimensional annihilator of the root
 vector; together with the scalar row direction they span the target dual.
+Modulo the scalar GHZ tensor, their aggregate cofactor classes must also span
+the two-dimensional diagonal quotient, giving an exact tangent/cofactor
+frame isomorphism.
 One companion still gives derivative rank at most two against the GHZ rank
 three.  This proves the necessity of the companion layer, not
 its inconsistency.  All six

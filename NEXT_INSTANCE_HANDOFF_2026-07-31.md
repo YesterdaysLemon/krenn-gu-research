@@ -1127,7 +1127,10 @@ nonprojective root--blocker tangent or effective root--root/root--residual
 companions spanning exactly the full two-dimensional annihilator of the root
 vector; pairwise-zero/kernel incidence supplies the matching upper bound,
 while the GHZ derivative rank supplies the lower bound.  Together with the
-scalar row direction these companions span the target dual.  Those companion
+scalar row direction these companions span the target dual.  Modulo the
+scalar GHZ tensor, their aggregate cofactor classes must likewise span the
+two-dimensional diagonal quotient; equivalently, the companion layer must
+realize `V/<x_i> -> Diag/<Lambda>` as an isomorphism.  Those companion
 identities, not further frozen-slice rank tests, are the next arbitrary-order
 algebraic layer:
 [`ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md`](ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md).

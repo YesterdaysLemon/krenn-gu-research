@@ -173,13 +173,39 @@ This is an exact first-jet rigidity condition.  It is still only necessary:
 two companion directions with the correct span need not satisfy the actual
 cofactor-valued derivative equations or any second-order compatibility.
 
+There is also a coefficient-side rigidity.  Let `Diag` be the
+three-dimensional span of the diagonal blocker tensors in (1), and let
+`D_i` denote the GHZ derivative map in (6).  Since every `d_c/x_c` is
+nonzero, `D_i` is an isomorphism from the root tangent space to `Diag`, and
+
+```text
+D_i(x_i)=Lambda.
+```
+
+It therefore induces an isomorphism
+
+```text
+V/<x_i>  ->  Diag/<Lambda>.                         (14)
+```
+
+The scalar row-replacement term vanishes in the target quotient.  Hence the
+effective companion cofactor map must itself induce (14).  In particular,
+after grouping terms by a basis of `x_i^perp`, the corresponding two
+aggregate companion-cofactor classes are independent modulo `Lambda` and
+span `Diag/<Lambda>`.  Thus neither a one-dimensional covector span nor a
+one-dimensional cofactor-class span can repair the slice.
+
+This quotient-frame condition is stronger than the companion count, but it
+still does not assert that such a frame extends to compatible graph edges.
+
 ## Consequence for the local-to-global frontier
 
 The locally universal coordinate-monomial model is therefore definitively
 not a full graph witness.  Any genuine global point over the same fixed
 cofactor slice needs an escape from (3)--(4): a nonprojective root endpoint
 or effective root--root/root--residual companions spanning the complete
-plane `x_i^perp`.  These companion terms arise before second-order or
+plane `x_i^perp` whose aggregate cofactor classes simultaneously span
+`Diag/<Lambda>`.  These companion terms arise before second-order or
 multi-slice gluing and give the smallest new algebraic layer not visible in
 the frozen cofactor incidence.
 
