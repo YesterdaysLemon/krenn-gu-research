@@ -12,6 +12,13 @@ The shortest route into the current proof frontier is
 It separates proved statements from exploratory leads, gives the focused
 replay commands, and records the next symbolic decision point.
 
+A separate, nonblocking method-transfer track is recorded in
+[`ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md`](ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md).
+It contains an exact root-of-unity permanent selector and a quotient-closed
+catalogue for the first six-blocker surplus.  Both are exploratory inputs to
+the construction/gluing strategies and do not change the global status or
+the immediate component/fibre proof priorities.
+
 At this checkpoint the lower-pair pure-`P_4` locus is exhausted and the
 exactly-one-kernel `triangle-(1,1,1)` residual is completely placed in
 component closures.  Three exact component theorems arising from that

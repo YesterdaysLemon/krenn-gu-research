@@ -351,6 +351,16 @@ different photon-number sectors, while the conjecture constrains only
 one postselected sector.  A useful identity must eliminate the
 unobserved sectors; otherwise this language is only a reformulation.
 
+The root-of-unity block selector in
+[`ROOT_OF_UNITY_BLOCK_PERMANENT_SELECTOR.md`](ROOT_OF_UNITY_BLOCK_PERMANENT_SELECTOR.md)
+now supplies one exact postselection-safe filter.  In the commuting
+square-zero algebra it cancels every permanent term selecting rows from
+more than one prescribed block while retaining every within-block minor
+sum with a nonzero coefficient.  This does not solve the target Fourier
+charge equations, but it replaces the Gaussian-sector concern by a finite
+legality question: can the selector's constant columns be realized by
+legal contractions of the graph tensor?
+
 ## Route F: herald promotion and matching-tensor cut rank
 
 The exact rational `n=6, k=4, d=4` Question-2 construction posted by
@@ -392,6 +402,22 @@ valid selector must cancel those cross terms exactly.  This is a
 different search space from raw support enumeration and gives an
 immediate falsifiable target: a four-channel selector for the verified
 Question-2 module.
+
+There is now a concrete first cancellation gadget for this test.  The
+`b=t=d=s=2` root-of-unity selector gives
+
+```text
+per [[u,v,1,1], [w,z,1,1], [p,q,2,-2], [r,s,2,-2]]
+  = -8(uz+vw)+2(ps+qr),
+```
+
+so every matching mixing the two variable row blocks disappears.  The
+general block theorem is replayed over characteristic zero and audited
+independently over `Q` and `Q(omega)`.  The next Route-F experiment should
+therefore test legal graph realization of this four-row seed before any
+larger selector search.  Its present limitation is precise: it is a
+bipartite permanent specialization, not yet an identity for the full
+symmetric graph matching tensor.
 
 ## Route G: dual hyperplane annihilation
 
@@ -1529,14 +1555,18 @@ marked-fibre level:
    treating the exact component obstructions as complementary generic
    models and concentrating on their special parameter/slope
    boundaries;
-3. formulate the simultaneous-root version of Route G in Grassmannian
+3. test legal realization of the exact root-of-unity four-row selector
+   from Routes E/F, stopping at the first contraction, symmetry, residual,
+   or colour-rank obstruction;
+4. formulate the simultaneous-root version of Route G in Grassmannian
    coordinates;
-4. test the four-channel selector and cut-rank formulation from Route F;
-5. learn and prove sparse forbidden patterns with Route A;
-6. use Route C if the survivor supports fall into few Grassmannian
+5. if the four-row selector is legal, test the four-channel selector and
+   cut-rank formulation from Route F;
+6. learn and prove sparse forbidden patterns with Route A;
+7. use Route C if the survivor supports fall into few Grassmannian
    matroid strata;
-7. keep Route E as a source of identities, but require a
-   postselection-only elimination before investing in it.
+8. use Route E only through exact matching-sector identities; do not infer
+   anything from Gaussian recurrences involving unobserved sectors.
 
 Route D's homogeneous degree-six scalar separator has been ruled out
 exactly, and the full covariant ideal is empty through degree five.
