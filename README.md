@@ -116,9 +116,12 @@ lower-pair curves, and arbitrary order remain separate.  See
 [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md`](P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md), together with
 [`P5_COMPONENT23_S_ZERO_RT_ONE_LOWER_PAIR_ENDPOINT_LINES_OBSTRUCTION.md`](P5_COMPONENT23_S_ZERO_RT_ONE_LOWER_PAIR_ENDPOINT_LINES_OBSTRUCTION.md).
 The exact parameter-compactification ledger also shows why these charts are
-not exhaustive.  On `s=1`, the two unhandled infinity curves are
-`r=infinity,t=k` and `t=infinity,r=-k`, meeting the proved diagonal at the
-triple-infinity point.  At `s=0,k=infinity` there is a separate two-parameter
+not exhaustive.  On `s=1`, the two infinity curves
+`r=infinity,t=k` and `t=infinity,r=-k` are now empty for complete marked
+`H31` and homogeneous weighted `H22` at every finite `k`; the simultaneous
+triple-infinity point remains separate.  See
+[`P5_COMPONENT23_S_ONE_PARAMETER_INFINITY_CURVES_OBSTRUCTION.md`](P5_COMPONENT23_S_ONE_PARAMETER_INFINITY_CURVES_OBSTRUCTION.md).
+At `s=0,k=infinity` there is a separate two-parameter
 all-pair surface, generically of profile `(3,3,3,3,3,4)`.  Its affine
 finite-`(r,t)` marked-`H31` fibre is empty: the exact projection splits into
 seven open branches plus diagonal, antidiagonal, center, coordinate, and
