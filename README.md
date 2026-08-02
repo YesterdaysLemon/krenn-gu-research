@@ -256,8 +256,15 @@ irreducible sextic `3b^6-3b^4-6b^2-2=0` and has an exact rank-four `D23`
 witness.  On the last divisor `w=0`, a mode-one sparse cofactor minor is
 `8X_-^2X_+`; the common conjugate norm of `X_-` and `X_+` is a retained unit.
 Thus every alternative in this sparse cover is closed on the retained
-ordinary sheet.  The other named chart/projective boundaries and any locus
-outside that sheet remain open.
+ordinary sheet.  One genuine projective leaf face is now partially closed as
+well.  On `a=1,g=0,es=1`, the generic finite-`D01` fibre over
+`Q(s,k,lambda)` and the `D01` weight-at-infinity endpoint over `Q(s,k)` are
+empty for every marking: in two independent source bases the all-alpha row
+lies in the fourteen-mixed-row extension module.  This is only a generic
+weight-function-field theorem.  Special finite weights, all `D23`, the
+opposite `es=-1` sheet, and the other chart/source/ambient/projective
+boundaries remain open:
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_ES_ONE_D01_GENERIC_WEIGHT_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_ES_ONE_D01_GENERIC_WEIGHT_OBSTRUCTION.md).
 An earlier narrower cover is retained only as a withdrawn descent-only failed
 route because it split `1,k` coefficients while the free extensions may be
 quadratic-field-valued.  See
