@@ -514,17 +514,25 @@ Six statements organize the current frontier.
    homogeneous weight by unit shared-binary incidence ideals in complementary
    alpha- and beta-normalized charts.  That calculation retains and closes
    `r^2=-1`; the omitted origin is already on the coordinate-axis theorem.
-   Therefore the remaining finite specialization loci on this displayed
-   corner are `r=+/-1` and `t=+/-1`, away from their already closed
-   intersections.  Source-torus faces, arbitrary ambient/Grassmann
-   degeneration, and arbitrary order also remain open:
+   The final unit-parameter lines `r=+/-1` and `t=+/-1` are separately empty
+   for every marking and homogeneous weight.  Their mixed modules have a
+   genuine rank-seven survivor line, but a uniform one-`gamma` determinant
+   obstructs every ternary lift in both ordinary and projective weight
+   charts.  Exact mode-swap and signed reciprocal-weight symmetries transfer
+   the `r=1` calculation to all four lines.  The only omitted points on those
+   lines are their already closed axis, diagonal, `rt=1`, antidiagonal, and
+   projective-boundary intersections.  Hence the complete fixed-order marked
+   `H31` and homogeneous weighted `H22` fibres are empty on the whole
+   displayed normalized `P^1_r x P^1_t` corner.  Source-torus faces,
+   arbitrary ambient/Grassmann degeneration, and arbitrary order remain open:
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_COORDINATE_SURVIVOR.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_COORDINATE_SURVIVOR.md) and
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_R_T_COORDINATE_SYMMETRY_TRANSFER.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_R_T_COORDINATE_SYMMETRY_TRANSFER.md), together with
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_PROJECTIVE_WEIGHT_COORDINATE_DIVISORS_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_PROJECTIVE_WEIGHT_COORDINATE_DIVISORS_OBSTRUCTION.md) and
    [`P5_COMPONENT23_S_ZERO_K_INFINITY_PROJECTIVE_R_T_BOUNDARY_OBSTRUCTION.md`](P5_COMPONENT23_S_ZERO_K_INFINITY_PROJECTIVE_R_T_BOUNDARY_OBSTRUCTION.md), together with
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_RT_ONE_ALL_PAIR_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_RT_ONE_ALL_PAIR_OBSTRUCTION.md),
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_GENERIC_INTERIOR_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_GENERIC_INTERIOR_OBSTRUCTION.md), and
-   [`P5_H22_COMPONENT23_S_ZERO_K_INFINITY_ANTIDIAGONAL_OBSTRUCTION.md`](P5_H22_COMPONENT23_S_ZERO_K_INFINITY_ANTIDIAGONAL_OBSTRUCTION.md).
+   [`P5_H22_COMPONENT23_S_ZERO_K_INFINITY_ANTIDIAGONAL_OBSTRUCTION.md`](P5_H22_COMPONENT23_S_ZERO_K_INFINITY_ANTIDIAGONAL_OBSTRUCTION.md), together with
+   [`P5_H22_COMPONENT23_S_ZERO_K_INFINITY_UNIT_PARAMETER_LINES_OBSTRUCTION.md`](P5_H22_COMPONENT23_S_ZERO_K_INFINITY_UNIT_PARAMETER_LINES_OBSTRUCTION.md).
    Component twenty-four is the disjoint-binary split-center mixed-star
    fivefold.  Its exact reverse theorem includes the projective moving-leaf
    endpoint.  Its complete generic marked `H31` fibre is empty after exact
@@ -1298,6 +1306,8 @@ uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_s_z
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_generic_interior_obstruction.py
 uv run --with sympy python verify_p5_h22_component23_s_zero_k_infinity_antidiagonal_obstruction.py
 uv run --with sympy python audit_p5_h22_component23_s_zero_k_infinity_antidiagonal_obstruction.py
+uv run --with sympy python verify_p5_h22_component23_s_zero_k_infinity_unit_parameter_lines_obstruction.py
+uv run --with sympy python audit_p5_h22_component23_s_zero_k_infinity_unit_parameter_lines_obstruction.py
 uv run --with sympy python verify_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py
 uv run --with sympy python audit_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py
 

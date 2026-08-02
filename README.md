@@ -165,8 +165,15 @@ modules close `lambda=+/-1` and projective weight.  This is a function-field
 theorem, not an integral-open closure.  The antidiagonal `t=-r`, `r!=0` is
 separately empty at all homogeneous weights, including the rank-drop values
 `r^2=-1`; after the already closed axes, diagonal, hyperbola, and projective
-boundary, only the finite special divisors `r=+/-1` and `t=+/-1` remain away
-from their closed intersections.  On the nonredundant all-pair part of
+boundary, the final finite special divisors `r=+/-1` and `t=+/-1` are now
+empty too.  Their ordinary and projective shared-binary modules have genuine
+survivor lines, but uniform one-`gamma` determinants obstruct every ternary
+lift; exact mode-swap and signed reciprocal-weight symmetries transport the
+base `r=1` calculation to all four lines.  Their omitted intersections are
+exactly the previously closed axes, diagonal, hyperbola, antidiagonal, and
+projective boundary.  Consequently homogeneous weighted `H22`, as well as
+marked `H31`, is empty on the whole displayed normalized
+`P^1_r x P^1_t` corner.  On the nonredundant all-pair part of
 `r*t=1`, seven exact ordinary
 minors leave one rank-seven line whose required `B01` diagonal is zero, while
 exact row modules close both exceptional finite weights and projective weight.
@@ -180,7 +187,8 @@ ambient/Grassmann degenerations remain unknown.  See
 [`P5_COMPONENT23_S_ZERO_K_INFINITY_PROJECTIVE_R_T_BOUNDARY_OBSTRUCTION.md`](P5_COMPONENT23_S_ZERO_K_INFINITY_PROJECTIVE_R_T_BOUNDARY_OBSTRUCTION.md) and
 [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_RT_ONE_ALL_PAIR_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_RT_ONE_ALL_PAIR_OBSTRUCTION.md), together with
 [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_GENERIC_INTERIOR_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_GENERIC_INTERIOR_OBSTRUCTION.md) and
-[`P5_H22_COMPONENT23_S_ZERO_K_INFINITY_ANTIDIAGONAL_OBSTRUCTION.md`](P5_H22_COMPONENT23_S_ZERO_K_INFINITY_ANTIDIAGONAL_OBSTRUCTION.md).
+[`P5_H22_COMPONENT23_S_ZERO_K_INFINITY_ANTIDIAGONAL_OBSTRUCTION.md`](P5_H22_COMPONENT23_S_ZERO_K_INFINITY_ANTIDIAGONAL_OBSTRUCTION.md), together with
+[`P5_H22_COMPONENT23_S_ZERO_K_INFINITY_UNIT_PARAMETER_LINES_OBSTRUCTION.md`](P5_H22_COMPONENT23_S_ZERO_K_INFINITY_UNIT_PARAMETER_LINES_OBSTRUCTION.md).
 Component twenty-four's complete generic weighted fibre is empty across both
 pair orbits and both homogeneous-weight charts.  On component twenty-five,
 generic marked `H31` is empty.  Weighted `H22` is empty at both weight-
