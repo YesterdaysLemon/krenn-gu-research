@@ -355,7 +355,14 @@ the two-dimensional diagonal quotient, giving an exact tangent/cofactor
 frame isomorphism.
 One companion still gives derivative rank at most two against the GHZ rank
 three.  This proves the necessity of the companion layer, not
-its inconsistency.  All six
+its inconsistency.  In fact, transpose symmetry and the sharing of one
+companion-cofactor class by the two ends of a root--root edge do not supply
+the missing contradiction: for every `r>=3`, an explicit root cycle realizes
+arbitrary quotient frames with honest bilinear edge blocks and shared formal
+cofactor classes.  This is a first-jet realization only; complementary-
+hafnian realizability and mixed second derivatives remain open:
+[`ROOT_TANGENT_CYCLE_FRAME_SYMMETRY_REALIZATION.md`](ROOT_TANGENT_CYCLE_FRAME_SYMMETRY_REALIZATION.md).
+All six
 known common-port missing-colour profiles still admit exact full-span
 incidence models, so none is eliminated by these rank conditions alone.
 Other all-full-span cores and the synchronized curves remain open:

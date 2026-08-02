@@ -1134,6 +1134,15 @@ realize `V/<x_i> -> Diag/<Lambda>` as an isomorphism.  Those companion
 identities, not further frozen-slice rank tests, are the next arbitrary-order
 algebraic layer:
 [`ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md`](ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md).
+The first cross-root symmetry test is now closed negatively as a proof
+route.  For every `r>=3`, choose distinct projective classes on an `r`-cycle;
+the two incident classes frame the diagonal quotient at each root, and one
+explicit bilinear edge block realizes the independently prescribed endpoint
+covectors while its transpose realizes the reverse edge.  Thus shared
+undirected edge blocks and shared formal cofactor classes are compatible
+with all first-jet quotient frames.  The construction does not realize those
+classes as complementary hafnians and does not check mixed second jets:
+[`ROOT_TANGENT_CYCLE_FRAME_SYMMETRY_REALIZATION.md`](ROOT_TANGENT_CYCLE_FRAME_SYMMETRY_REALIZATION.md).
 All surviving
 projectively varying cores with torus-intersecting `J_H`, the effective
 factorization, and the rank-one synchronized curves remain open:
@@ -1386,6 +1395,8 @@ uv run --with sympy python verify_two_residual_coordinate_monomial_slice_univers
 uv run --with sympy python audit_two_residual_coordinate_monomial_slice_universality_nogo.py
 uv run --with sympy python verify_root_tangent_companion_necessity_for_coordinate_slice.py
 uv run --with sympy python audit_root_tangent_companion_necessity_for_coordinate_slice.py
+uv run --with sympy python verify_root_tangent_cycle_frame_symmetry_realization.py
+python audit_root_tangent_cycle_frame_symmetry_realization.py
 
 uv run --with sympy python verify_p5_h31_disjoint_secant_component_generic_obstruction.py
 python audit_p5_h31_disjoint_secant_component_generic_obstruction.py
