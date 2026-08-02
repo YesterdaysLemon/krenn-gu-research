@@ -539,6 +539,16 @@ root-row solution of `P_m(H;a;b)=Delta_3`, so it is a proof-route no-go, not
 a graph witness; lower-root deletion equations or that shared mixed identity
 remain essential:
 [`ROOT_ARBITRARY_TWO_ENDPOINT_BINARY_COFACTOR_PORT_COMPATIBILITY_REALIZATION.md`](ROOT_ARBITRARY_TWO_ENDPOINT_BINARY_COFACTOR_PORT_COMPATIBILITY_REALIZATION.md).
+That explicit gadget is nevertheless killed by the first shared permanent
+identity.  For each colour, its `a` and `b` port rows are both supported on
+the same single blocker, so the final two rows of every pure-colour
+`P_m(H;a;b)` coefficient have only one common column.  A two-row Laplace
+expansion makes all three pure coefficients identically zero for every root
+family `H` and every odd `m>=5`.  More generally, each desired colour needs
+nonempty supports in both port families whose union contains at least two
+blockers.  This colourwise Hall condition is strictly stronger than separate
+full row span, but arbitrary Hall-satisfying ports remain open:
+[`ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md`](ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md).
 Even scalar complementary-hafnian algebra supplies no hidden relation on
 the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
 Jacobian of the complete principal-cofactor map at a perfect-matching point

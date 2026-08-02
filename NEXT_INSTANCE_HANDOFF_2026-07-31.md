@@ -1443,6 +1443,14 @@ full port span as a closing route.  It does not provide root rows satisfying
 `P_m(H;a;b)=Delta_3` and is not a counterexample; lower-root cofactor values
 or that shared mixed identity are still required:
 [`ROOT_ARBITRARY_TWO_ENDPOINT_BINARY_COFACTOR_PORT_COMPATIBILITY_REALIZATION.md`](ROOT_ARBITRARY_TWO_ENDPOINT_BINARY_COFACTOR_PORT_COMPATIBILITY_REALIZATION.md).
+The first shared `P_m` identity excludes this exact gadget.  For each colour,
+both port rows are supported on one common blocker, so their two-row
+pure-colour permanent has a Hall defect and all three desired coefficients
+vanish for every root-row family `H` and every odd `m>=5`.  Any survivor must
+have, for each colour, nonempty support in both port families and a union of
+at least two blocker columns.  This is a new necessary condition, not a
+closure of arbitrary full-span Hall-satisfying ports:
+[`ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md`](ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md).
 Nor can one obtain a contradiction from scalar principal-cofactor algebra
 alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal
 two-vertex cofactors at a fixed perfect-matching point splits into one
@@ -1790,6 +1798,8 @@ uv run --with sympy python verify_root_arbitrary_lower_mixed_jet_cofactor_frame_
 python audit_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py
 uv run --with sympy python verify_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py
 python audit_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py
+uv run --with sympy python verify_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py
+python audit_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py
 uv run --with sympy python verify_hafnian_principal_cofactor_gradient_dominance.py
 python audit_hafnian_principal_cofactor_gradient_dominance.py
 
