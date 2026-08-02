@@ -639,6 +639,13 @@ new coefficient `C_0101112` divides the same pure product.  Thus this entire
 102-support shell has empty mixed saturation on the pure-nonzero locus.  This
 does not classify triples that do not contain the unique pair:
 [`ROOT_M7_UNIQUE_PAIR_THIRD_INCIDENCE_SHELL_EXCLUSION.md`](ROOT_M7_UNIQUE_PAIR_THIRD_INCIDENCE_SHELL_EXCLUSION.md).
+The full endpoint-legal three-incidence shell is now closed, not only the
+subshell containing that pair.  Exact division over all
+`binomial(104,3)=182,104` supports leaves nine relative survivors after the
+six prior certificate words.  The single new word `2002000` divides
+`C0*C1*C2` on all nine, so the complete shell has zero tensor survivors.
+Four-or-more additions and arbitrary Hall-satisfying `P_7` remain unknown:
+[`ROOT_M7_ALL_ENDPOINT_LEGAL_THREE_INCIDENCE_SUPPORTS_EXCLUSION.md`](ROOT_M7_ALL_ENDPOINT_LEGAL_THREE_INCIDENCE_SUPPORTS_EXCLUSION.md).
 Even scalar complementary-hafnian algebra supplies no hidden relation on
 the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
 Jacobian of the complete principal-cofactor map at a perfect-matching point

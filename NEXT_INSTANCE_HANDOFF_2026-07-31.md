@@ -1581,6 +1581,14 @@ replacement divisibility `C_0101112 | C0*C1*C2`.  Exact polynomial division
 and an independent no-import audit leave zero survivors.  This is not an
 enumeration of the other three-incidence supports, which remain open:
 [`ROOT_M7_UNIQUE_PAIR_THIRD_INCIDENCE_SHELL_EXCLUSION.md`](ROOT_M7_UNIQUE_PAIR_THIRD_INCIDENCE_SHELL_EXCLUSION.md).
+The stronger complete triple enumeration is also closed.  Among all
+`binomial(104,3)=182,104` endpoint-legal supports, the six frozen words leave
+only nine relative survivors.  Every one satisfies the exact divisibility
+`C_2002000 | C0*C1*C2`; hence the full triple shell has zero survivors.  The
+primary and no-import audit independently reproduce the entire census.
+Four-or-more additions, arbitrary enlarged support, and arbitrary `P_7`
+remain open:
+[`ROOT_M7_ALL_ENDPOINT_LEGAL_THREE_INCIDENCE_SUPPORTS_EXCLUSION.md`](ROOT_M7_ALL_ENDPOINT_LEGAL_THREE_INCIDENCE_SUPPORTS_EXCLUSION.md).
 Nor can one obtain a contradiction from scalar principal-cofactor algebra
 alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal
 two-vertex cofactors at a fixed perfect-matching point splits into one
