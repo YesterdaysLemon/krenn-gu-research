@@ -371,11 +371,15 @@ Six statements organize the current frontier.
    Hall-deficient, while ten exact homogeneous weighted-`H22` ideals are
    unit.  Over finite markings and finite nonzero component parameters,
    marked-`H31` extension maps are injective away from the two curves
-   `kappa=0,ell=epsilon,q=epsilon*p`; on each curve only one explicit kernel
-   line per surviving orientation remains.  At homogeneous `H22` weight
+   `kappa=0,ell=epsilon,q=epsilon*p`; on each curve the sole explicit kernel
+   line has a necessary one-marked obstruction entry identically one after
+   arbitrary finite marking transport.  Thus every fixed-order marked-`H31`
+   extension-pole arc over the finite nonzero sheet is empty.  At homogeneous `H22` weight
    infinity the stacked extension map has rank eight on `(p,q)!=(0,0)`, so
-   every extension-pole arc there is closed.  Finite-weight `H22` coupled
-   kernels, the `H31` kernel-line normals, the zero base, parameter-boundary/
+   every extension-pole arc there is closed.  The exact finite-weight point
+   `(2,3,5,7,1)` is also closed at first normal: its mixed-free diagonal
+   pattern is `(0,0,0,*)`.  The rest of the finite-weight `H22` coupled-
+   kernel locus, the zero base, parameter-boundary/
    marking-pole intersections, and arbitrary
    ambient/source/projective
    limits remain separate; a `P5` leading term with zero `P4` restriction is
@@ -391,8 +395,10 @@ Six statements organize the current frontier.
    [`P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md) and
    [`P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md), together with
    [`P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md),
-   [`P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md), and
-   [`P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md`](P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md).
+   [`P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md),
+   [`P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md`](P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md),
+   [`P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md`](P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md), and
+   [`P5_COMPONENT21_FINITE_WEIGHT_EXTENSION_KERNEL_RATIONAL_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_FINITE_WEIGHT_EXTENSION_KERNEL_RATIONAL_NORMAL_OBSTRUCTION.md).
    Component twenty-two is the unequal-complement common-kernel fivefold.
    Its complete generic marked `H31` fibre is empty after exact projection to
    four marking branches and four uniform one-marked minors:
@@ -1081,11 +1087,15 @@ restriction is also zero; all 20 marked `H31` orientations are Hall-deficient
 and ten direct weighted-`H22` chart ideals close every nonzero-`P4` weighted
 normal.  Over finite markings and finite nonzero component parameters,
 marked-`H31` extension maps are injective away from
-`kappa=0,ell=epsilon,q=epsilon*p`; on those two curves only one explicit
-kernel line per surviving orientation remains.  Homogeneous `H22` weight
+`kappa=0,ell=epsilon,q=epsilon*p`; on those two curves the sole kernel lines
+have an identically-one necessary obstruction entry after arbitrary finite
+marking transport.  Hence every fixed-order marked-`H31` extension pole over
+the finite nonzero sheet is closed.  Homogeneous `H22` weight
 infinity has full extension rank on `(p,q)!=(0,0)`, closing every extension-
-pole arc there.  Finite-weight `H22` coupled kernels, the `H31` kernel-line
-normals, the zero base, parameter-boundary/marking-pole intersections, and arbitrary
+pole arc there.  The exact finite-weight point `(2,3,5,7,1)` has mixed-free
+first-normal diagonal pattern `(0,0,0,*)` and is closed too.  The remaining
+finite-weight `H22` coupled-kernel locus, the zero base,
+parameter-boundary/marking-pole intersections, and arbitrary
 ambient/source/projective
 degenerations remain open.  In particular, the argument does not classify
 an ambient `P5` leading term whose `P4` restriction is zero:
@@ -1100,8 +1110,10 @@ an ambient `P5` leading term whose `P4` restriction is zero:
 [`P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md) and
 [`P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md), together with
 [`P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md), and
-[`P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md), together with
-[`P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md`](P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md).
+[`P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md),
+[`P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md`](P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md),
+[`P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md`](P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md), and
+[`P5_COMPONENT21_FINITE_WEIGHT_EXTENSION_KERNEL_RATIONAL_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_FINITE_WEIGHT_EXTENSION_KERNEL_RATIONAL_NORMAL_OBSTRUCTION.md).
 
 ## What a global proof would still need
 
@@ -1612,6 +1624,10 @@ uv run --with sympy python verify_p5_component21_triple_quadruple_marking_infini
 uv run --with sympy python audit_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py
 uv run --with sympy python verify_p5_component21_finite_base_extension_infinity_partial_closure.py
 uv run --with sympy python audit_p5_component21_finite_base_extension_infinity_partial_closure.py
+uv run --with sympy python verify_p5_component21_extension_kernel_marked_h31_leading_obstruction.py
+uv run --with sympy python audit_p5_component21_extension_kernel_marked_h31_leading_obstruction.py
+uv run --with sympy python verify_p5_component21_finite_weight_extension_kernel_rational_normal_obstruction.py
+uv run --with sympy python audit_p5_component21_finite_weight_extension_kernel_rational_normal_obstruction.py
 
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
