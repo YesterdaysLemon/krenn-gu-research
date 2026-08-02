@@ -1513,6 +1513,15 @@ root--port exchanges.  Other unique words separately point to `b_(5,1)` and
 `a_(5,2)`.  These are filters for the next support enlargement, not a full
 `P_7` solution:
 [`ROOT_M7_ONE_EDGE_A10_SHARED_PURE_MIXED_FACTOR_OBSTRUCTION.md`](ROOT_M7_ONE_EDGE_A10_SHARED_PURE_MIXED_FACTOR_OBSTRUCTION.md).
+The complete minimal two-incidence shell is now closed too.  The stabilizer
+of the fixed coloured path and labelled port supports is trivial, leaving 30
+singleton orbits.  For every orbit, one exact mixed coefficient divides
+`S=C0*C1*C2`: the certificates split as 15 copies of `C_0000102`, 14 of
+`C_1112101`, and one of `C_1112220`.  Thus every principal saturation is the
+unit ideal.  Of these supports, 18 preserve endpoint legality and still fail
+tensorially; the remaining 12 are independently endpoint-illegal.  This is
+a complete bounded shell classification, not an arbitrary-support theorem:
+[`ROOT_M7_THIRTY_TWO_INCIDENCE_SUPPORTS_PRINCIPAL_SATURATION_EXCLUSION.md`](ROOT_M7_THIRTY_TWO_INCIDENCE_SUPPORTS_PRINCIPAL_SATURATION_EXCLUSION.md).
 Nor can one obtain a contradiction from scalar principal-cofactor algebra
 alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal
 two-vertex cofactors at a fixed perfect-matching point splits into one
@@ -1878,6 +1887,8 @@ uv run --with sympy python verify_root_m7_fixed_support_pure_mixed_monomial_satu
 python audit_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py
 uv run --with sympy python verify_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py
 python audit_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py
+uv run --with sympy python verify_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py
+python audit_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py
 uv run --with sympy python verify_hafnian_principal_cofactor_gradient_dominance.py
 python audit_hafnian_principal_cofactor_gradient_dominance.py
 

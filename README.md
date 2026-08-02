@@ -596,6 +596,15 @@ Separate unique mixed words also identify `b_(5,1)` and `a_(5,2)` as
 independent port-pressure directions.  These classify necessary support
 deformations only; arbitrary enlarged support remains open:
 [`ROOT_M7_ONE_EDGE_A10_SHARED_PURE_MIXED_FACTOR_OBSTRUCTION.md`](ROOT_M7_ONE_EDGE_A10_SHARED_PURE_MIXED_FACTOR_OBSTRUCTION.md).
+All 30 minimal two-incidence enlargements of that support are excluded as
+well.  The fixed coloured-path/labelled-port stabilizer is trivial, so these
+are 30 singleton orbits.  Exact symbolic permanents give a principal
+saturation certificate in every case: 15 use `C_0000102`, 14 use the
+unchanged monomial `C_1112101`, and the last uses `C_1112220`, with the
+selected mixed coefficient dividing `C0*C1*C2`.  Eighteen supports preserve
+the endpoint cofactors and are still tensor-excluded; the other twelve are
+independently endpoint-illegal.  Larger support shells remain open:
+[`ROOT_M7_THIRTY_TWO_INCIDENCE_SUPPORTS_PRINCIPAL_SATURATION_EXCLUSION.md`](ROOT_M7_THIRTY_TWO_INCIDENCE_SUPPORTS_PRINCIPAL_SATURATION_EXCLUSION.md).
 Even scalar complementary-hafnian algebra supplies no hidden relation on
 the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
 Jacobian of the complete principal-cofactor map at a perfect-matching point
