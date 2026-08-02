@@ -330,6 +330,11 @@ Six statements organize the current frontier.
    four direct unit ideals close finite `(p,q,kappa)`, the finite-`kappa`
    boundary and zero-point blow-up transfer to the vertical package, and the
    complete `kappa=infinity` edge is the projective blow-up theorem.
+   Four global polynomial unit ideals on the full finite
+   `(p,q,kappa,ell)` sheet combine with those boundary packages to close the
+   entire displayed normalized parameter base
+   `Bl_c(P^2) x P^1_kappa x P^1_ell`, including all simultaneous parameter
+   intersections.
    Marking/extension poles outside this Rees chart and arbitrary
    ambient/source/projective limits remain separate:
    [`P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md`](P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md) and
@@ -338,7 +343,8 @@ Six statements organize the current frontier.
    [`P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md`](P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md),
    [`P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md), and
    [`P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md), together with
-   [`P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md).
+   [`P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md) and
+   [`P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md).
    Component twenty-two is the unequal-complement common-kernel fivefold.
    Its complete generic marked `H31` fibre is empty after exact projection to
    four marking branches and four uniform one-marked minors:
@@ -376,8 +382,12 @@ Six statements organize the current frontier.
    `Q(sqrt(29665))` point satisfies `G=G2=0`, every displayed open factor,
    and `P!=0`.  On `P=0`, exact Cramer reduction gives a sextic survivor;
    its resultant with a second fixed maximal minor is a nonzero element of
-   `Q(A,R,D)`, closing the rest of the displayed `h1=0` residual.  The
-   unexhausted `h1!=0` locus away from `rho=0,-1` remains open.  The prior
+   `Q(A,R,D)`, closing the rest of the displayed `h1=0` residual.  On the
+   remaining `h1!=0` locus, the divisor `H=2*A*h1+1=0` has a second exact
+   maximal minor.  Away from `rho=0,-1`, its rank-drop locus is contained in
+   `h2*f2*f7*f8*U*V=0`; those six factor divisors remain open.  The broader
+   first-minor factorization is contextual rather than part of this replay,
+   because its native reconstruction timed out.  The prior
    300-second monolithic timeout on `P=0` is not used as evidence:
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D01_PAIR_ORBIT_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D01_PAIR_ORBIT_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md),
@@ -387,7 +397,8 @@ Six statements organize the current frontier.
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_MINUS_ONE_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_MINUS_ONE_OBSTRUCTION.md), together with
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md) and
    [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_COFACTOR_OPEN_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_COFACTOR_OPEN_OBSTRUCTION.md),
-   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_SECOND_COFACTOR_COVER_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_SECOND_COFACTOR_COVER_OBSTRUCTION.md).
+   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_SECOND_COFACTOR_COVER_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_SECOND_COFACTOR_COVER_OBSTRUCTION.md), and
+   [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_TWO_MINOR_FACTOR_COVER_PARTIAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_TWO_MINOR_FACTOR_COVER_PARTIAL_OBSTRUCTION.md).
    Component twenty-three is the outward common-center-kernel star fivefold.
    Its complete `YY/YX/XX` support and projective boundary ledger is exact,
    and its generic marked `H31` fibre is empty.  Its complete generic weighted
@@ -981,7 +992,10 @@ regular `(p,q)` vanishing directions.  Its complete normalized mode-zero
 projective boundary and exceptional divisor both transfer to the certified
 vertical `kappa=0` line.  The whole normalized `ell=infinity` parameter face
 is closed too, including finite parameters, its mode-zero boundary and
-exceptional divisor, and the complete `kappa=infinity` edge.
+exceptional divisor, and the complete `kappa=infinity` edge.  Four global
+polynomial unit ideals on the finite `(p,q,kappa,ell)` sheet complete the
+cover: every point of the displayed normalized
+`Bl_c(P^2) x P^1_kappa x P^1_ell` parameter compactification is now empty.
 Marking/extension poles outside the displayed Rees
 charts and arbitrary ambient/source/projective degenerations outside this
 normalized compactification remain open:
@@ -991,7 +1005,8 @@ normalized compactification remain open:
 [`P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md`](P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md),
 [`P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md), and
 [`P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md), together with
-[`P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md).
+[`P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md) and
+[`P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md).
 
 ## What a global proof would still need
 
@@ -1394,6 +1409,8 @@ uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_compon
 uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_second_cofactor_cover_obstruction.py
 uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_rho_minus_one_obstruction.py
 uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_rho_minus_one_obstruction.py
+uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_h1_nonzero_two_minor_factor_cover_partial_obstruction.py
+uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_h1_nonzero_two_minor_factor_cover_partial_obstruction.py
 
 uv run --with sympy python verify_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py
 uv run --with sympy python audit_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py
@@ -1407,6 +1424,8 @@ uv run --with sympy python verify_p5_component21_kappa_infinity_u0_projective_bl
 uv run --with sympy python audit_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py
 uv run --with sympy python verify_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py
 uv run --with sympy python audit_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py
+uv run --with sympy python verify_p5_component21_normalized_parameter_compactification_complete_obstruction.py
+uv run --with sympy python audit_p5_component21_normalized_parameter_compactification_complete_obstruction.py
 
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
