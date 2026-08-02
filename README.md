@@ -230,7 +230,12 @@ empty too.  Its two linear factors route to standing chart boundaries; on
 the genuine quadratic factor the full degree-four algebra gives a nonzero
 opposite-diagonal norm and four paired-`D23` minor-norm numerators with gcd
 one.  A separate exact quotient closes the nonmonic leading boundary
-`3(js)^2+js-1=0`.  On the exact nonpoint slice `e=1,j=2`, the retained
+`3(js)^2+js-1=0`.  The reciprocal constant-weight divisor `A_0=0` is now
+closed too: the existing `lambda=0` theorem handles one root, while on the
+nonzero companion the full four-dimensional `C_0=0` algebra again gives a
+nonzero opposite norm and four paired norm numerators with gcd one; a
+separate exact quotient closes `3(js)^2-js-1=0`.  On the exact nonpoint slice
+`e=1,j=2`, the retained
 opposite-diagonal and simultaneous rank-norm residual is now completely
 closed: its opposite norm is explicit, the four paired norm numerators have
 gcd `(2s^2+1)^2=R^2`, and the sole new ordinary denominator fibre is a
@@ -249,6 +254,7 @@ quadratic-field-valued.  See
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_GENERIC_FALSE_POSITIVE.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_GENERIC_FALSE_POSITIVE.md), together with the retained-divisor closures
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_LINEAR_SOLVE_DIVISORS_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_LINEAR_SOLVE_DIVISORS_OBSTRUCTION.md) and
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A2_ZERO_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A2_ZERO_OBSTRUCTION.md), together with
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A0_COMPANION_DIVISOR_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A0_COMPANION_DIVISOR_OBSTRUCTION.md) and
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_E1_J2_SLICE_COMPLETE_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_E1_J2_SLICE_COMPLETE_OBSTRUCTION.md).
 Finite `D23` has a three-branch necessary cover and its full
 `lambda=1` all-marking slice is empty.  The other displayed finite branches
@@ -401,6 +407,12 @@ nonresonant root pair requires at least two independent accessible
 double-deletion cofactor quotient classes.  This is only a necessary
 second-jet condition; realizing or excluding those classes remains open:
 [`ROOT_MIXED_SECOND_JET_QUOTIENT_RANK_CLASSIFICATION.md`](ROOT_MIXED_SECOND_JET_QUOTIENT_RANK_CLASSIFICATION.md).
+If every pair among `r>=3` roots is resonant, the covectors themselves are
+now classified.  They are either one repeated balanced coordinate-pair
+covector, or, only for `r=3`, the three coordinate covectors.  Hence for
+`r>=4` avoiding every rank-two pair forces the single uniform balanced
+pattern.  Excluding or realizing that exceptional pattern remains open:
+[`ROOT_MIXED_SECOND_JET_RESONANCE_CLIQUE_CLASSIFICATION.md`](ROOT_MIXED_SECOND_JET_RESONANCE_CLIQUE_CLASSIFICATION.md).
 Even scalar complementary-hafnian algebra supplies no hidden relation on
 the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
 Jacobian of the complete principal-cofactor map at a perfect-matching point
@@ -1418,8 +1430,11 @@ strictly advance the finite frontier:
   every simultaneous parameter intersection.  Twelve further exact unit
   ideals close the complete `h0=infinity,p!=0` boundary, the nonzero joint
   `(1/h0,p)` first normal, and every nonzero monomial `(p,(1/h0)q)`
-  DVR/Puiseux normal, for both marked `H31` and weighted `H22`.  Other
-  marking/extension poles, simultaneous marking poles, and arbitrary
+  DVR/Puiseux normal, for both marked `H31` and weighted `H22`.  At each of
+  `h1,h2,h3=infinity` the boundary has zero `P4` restriction, but 24 direct
+  unit ideals close every nonzero first normal and every nonzero monomial
+  `(s_i p,s_i q)` DVR/Puiseux normal.  Simultaneous marking poles, extension
+  poles, and arbitrary
   ambient/source/projective degenerations remain separate; in particular,
   a `P5` leading term whose `P4` restriction vanishes is still unclassified:
   [`P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
@@ -1433,7 +1448,8 @@ strictly advance the finite frontier:
   [`P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md), together with
   [`P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md) and
   [`P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md), together with
-  [`P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md).
+  [`P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md) and
+  [`P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md).
 - component eighteen's complete generic marked `H31` and weighted `H22`
   fibres are empty.  In its intrinsic pure marking, three kernel rows equal
   the common singleton `e`.  After any source-coordinate deletion or either

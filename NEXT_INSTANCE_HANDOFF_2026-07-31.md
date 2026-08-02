@@ -138,7 +138,11 @@ complementary mode-one minors.  The leading-weight divisor `A_2=0` is now
 empty as well: its linear factors lie on standing boundaries, the full
 degree-four algebra on its quadratic factor has paired-`D23` minor-norm
 numerators with gcd one, and a separate quotient closes the nonmonic
-`3(js)^2+js-1=0` boundary.  The complete exact `e=1,j=2` nonpoint slice also
+`3(js)^2+js-1=0` boundary.  The constant-weight divisor `A_0=0` is now empty
+too: its `lambda=0` root was already closed, while the nonzero companion on
+the full reciprocal `C_0=0` algebra has a nonzero opposite norm, paired norm
+numerators with gcd one, and a separately closed nonmonic
+`3(js)^2-js-1=0` boundary.  The complete exact `e=1,j=2` nonpoint slice also
 closes its retained opposite-diagonal/rank-norm residual: the four paired norm
 numerators have gcd `R^2`, and the only new denominator fibre is a degree-four
 `lambda=5` false positive.  The global opposite-diagonal and rank-norm
@@ -156,6 +160,8 @@ The generic `N=0` classification is replayed by
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_GENERIC_FALSE_POSITIVE.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_GENERIC_FALSE_POSITIVE.md),
 and its `A_2=0` closure by
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A2_ZERO_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A2_ZERO_OBSTRUCTION.md),
+with the `A_0=0` companion closure in
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A0_COMPANION_DIVISOR_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A0_COMPANION_DIVISOR_OBSTRUCTION.md),
 with the complete nonpoint slice in
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_E1_J2_SLICE_COMPLETE_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_E1_J2_SLICE_COMPLETE_OBSTRUCTION.md).
 
@@ -342,8 +348,10 @@ Six statements organize the current frontier.
    intersections.
    Twelve further global unit ideals close `h0=infinity,p!=0`, its complete
    nonzero joint `(1/h0,p)` first normal, and every nonzero monomial
-   `(p,(1/h0)q)` DVR/Puiseux normal.  Other marking/extension poles,
-   simultaneous marking poles, and arbitrary ambient/source/projective
+   `(p,(1/h0)q)` DVR/Puiseux normal.  For each of `h1,h2,h3=infinity`, the
+   boundary has zero `P4` restriction, but 24 direct unit ideals close every
+   nonzero first normal and every nonzero monomial `(s_i p,s_i q)` normal.
+   Simultaneous marking poles, extension poles, and arbitrary ambient/source/projective
    limits remain separate; a `P5` leading term with zero `P4` restriction is
    not covered by this normal calculation:
    [`P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md`](P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md) and
@@ -354,7 +362,8 @@ Six statements organize the current frontier.
    [`P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md), together with
    [`P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md) and
    [`P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md), together with
-   [`P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md).
+   [`P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md) and
+   [`P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md).
    Component twenty-two is the unequal-complement common-kernel fivefold.
    Its complete generic marked `H31` fibre is empty after exact projection to
    four marking branches and four uniform one-marked minors:
@@ -649,7 +658,10 @@ Six statements organize the current frontier.
    paired `D23` maps have rank four.  The `A_2=0` residual is now empty too:
    exact factorization routes its linear factors to standing boundaries, and
    full-field norm calculations close the quadratic factor and its separate
-   nonmonic leading boundary.  On the exact `e=1,j=2` slice, a strengthened
+   nonmonic leading boundary.  Its reciprocal `A_0=0` residual is empty as
+   well: the prior `lambda=0` closure and a full-field nonzero-companion norm
+   calculation cover the generic `C_0` factor, and a separate quotient closes
+   its nonmonic boundary.  On the exact `e=1,j=2` slice, a strengthened
    norm gcd and complete denominator ledger close the retained
    opposite-diagonal/rank-norm residual, including its new degree-four
    `lambda=5` companion fibre.  The global residual away from this slice still
@@ -674,6 +686,7 @@ Six statements organize the current frontier.
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_GENERIC_FALSE_POSITIVE.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_GENERIC_FALSE_POSITIVE.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_LINEAR_SOLVE_DIVISORS_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_LINEAR_SOLVE_DIVISORS_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A2_ZERO_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A2_ZERO_OBSTRUCTION.md),
+   [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A0_COMPANION_DIVISOR_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A0_COMPANION_DIVISOR_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_E1_J2_SLICE_COMPLETE_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_E1_J2_SLICE_COMPLETE_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md), and
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_LAMBDA_ONE_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_LAMBDA_ONE_OBSTRUCTION.md).
@@ -1013,8 +1026,10 @@ cover: every point of the displayed normalized
 The `h0=infinity` marking boundary is now closed wherever `p!=0`; its whole
 nonzero projectivized joint `(1/h0,p)` first normal and every nonzero
 monomial `(p,(1/h0)q)` DVR/Puiseux normal are empty too, by twelve direct
-characteristic-zero unit ideals.  Other marking/extension poles,
-simultaneous marking poles, and arbitrary ambient/source/projective
+characteristic-zero unit ideals.  Each of the other single marking poles has
+zero boundary restriction, but every nonzero first normal and every nonzero
+monomial `(s_i p,s_i q)` normal is empty by 24 further unit ideals.
+Simultaneous marking poles, extension poles, and arbitrary ambient/source/projective
 degenerations remain open.  In particular, the argument does not classify
 an ambient `P5` leading term whose `P4` restriction is zero:
 [`P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md) and
@@ -1025,7 +1040,8 @@ an ambient `P5` leading term whose `P4` restriction is zero:
 [`P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md), together with
 [`P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md) and
 [`P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md), together with
-[`P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md).
+[`P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md) and
+[`P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md).
 
 ## What a global proof would still need
 
@@ -1249,6 +1265,12 @@ has rank two.  Consequently, a nonresonant root pair needs at least two
 independent accessible double-deletion cofactor quotient classes.  This is
 a necessary condition only; their graph/hafnian realizability remains open:
 [`ROOT_MIXED_SECOND_JET_QUOTIENT_RANK_CLASSIFICATION.md`](ROOT_MIXED_SECOND_JET_QUOTIENT_RANK_CLASSIFICATION.md).
+The rank-one relation has an exact clique classification.  For `r>=3`, a
+pairwise-resonant root set is either one repeated balanced coordinate-pair
+covector or, only at `r=3`, the three coordinate covectors.  Therefore
+`r>=4` has a unique exceptional splitting pattern left to analyze; the
+classification does not prove that pattern realizable or impossible:
+[`ROOT_MIXED_SECOND_JET_RESONANCE_CLIQUE_CLASSIFICATION.md`](ROOT_MIXED_SECOND_JET_RESONANCE_CLIQUE_CLASSIFICATION.md).
 Nor can one obtain a contradiction from scalar principal-cofactor algebra
 alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal
 two-vertex cofactors at a fixed perfect-matching point splits into one
@@ -1465,6 +1487,8 @@ uv run --with sympy python verify_p5_component21_normalized_parameter_compactifi
 uv run --with sympy python audit_p5_component21_normalized_parameter_compactification_complete_obstruction.py
 uv run --with sympy python verify_p5_component21_single_marking_infinity_first_normal_obstruction.py
 uv run --with sympy python audit_p5_component21_single_marking_infinity_first_normal_obstruction.py
+uv run --with sympy python verify_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py
+uv run --with sympy python audit_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py
 
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
@@ -1525,6 +1549,10 @@ uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a2_zero_obstruction.py
 uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a2_zero_c2_leading_boundary_obstruction.py
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a2_zero_c2_leading_boundary_obstruction.py
+uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a0_companion_divisor_obstruction.py
+uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a0_companion_divisor_obstruction.py
+uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a0_companion_c0_leading_boundary_obstruction.py
+uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a0_companion_c0_leading_boundary_obstruction.py
 
 uv run --with sympy python verify_arbitrary_surplus_common_row_full_span_obstruction.py
 uv run --with sympy python audit_arbitrary_surplus_common_row_full_span_obstruction.py
@@ -1540,6 +1568,8 @@ uv run --with sympy python verify_root_tangent_minimal_cycle_second_jet_obstruct
 python audit_root_tangent_minimal_cycle_second_jet_obstruction.py
 uv run --with sympy python verify_root_mixed_second_jet_quotient_rank_classification.py
 python audit_root_mixed_second_jet_quotient_rank_classification.py
+uv run --with sympy python verify_root_mixed_second_jet_resonance_clique_classification.py
+python audit_root_mixed_second_jet_resonance_clique_classification.py
 uv run --with sympy python verify_hafnian_principal_cofactor_gradient_dominance.py
 python audit_hafnian_principal_cofactor_gradient_dominance.py
 
