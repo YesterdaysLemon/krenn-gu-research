@@ -368,6 +368,15 @@ arbitrary quotient frames with honest bilinear edge blocks and shared formal
 cofactor classes.  This is a first-jet realization only; complementary-
 hafnian realizability and mixed second derivatives remain open:
 [`ROOT_TANGENT_CYCLE_FRAME_SYMMETRY_REALIZATION.md`](ROOT_TANGENT_CYCLE_FRAME_SYMMETRY_REALIZATION.md).
+Even scalar complementary-hafnian algebra supplies no hidden relation on
+the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
+Jacobian of the complete principal-cofactor map at a perfect-matching point
+has determinant `(-1)^(m-1)(m-1)`.  Hence the map is etale and dominant in
+characteristic zero, and three independent diagonal edge systems locally
+realize arbitrary diagonal cofactor arrays.  Mixed-colour cancellation,
+which those diagonal systems generally fail, is therefore the next genuine
+compatibility:
+[`HAFNIAN_PRINCIPAL_COFACTOR_GRADIENT_DOMINANCE.md`](HAFNIAN_PRINCIPAL_COFACTOR_GRADIENT_DOMINANCE.md).
 All six
 known common-port missing-colour profiles still admit exact full-span
 incidence models, so none is eliminated by these rank conditions alone.

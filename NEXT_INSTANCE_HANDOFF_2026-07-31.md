@@ -1161,6 +1161,17 @@ undirected edge blocks and shared formal cofactor classes are compatible
 with all first-jet quotient frames.  The construction does not realize those
 classes as complementary hafnians and does not check mixed second jets:
 [`ROOT_TANGENT_CYCLE_FRAME_SYMMETRY_REALIZATION.md`](ROOT_TANGENT_CYCLE_FRAME_SYMMETRY_REALIZATION.md).
+Nor can one obtain a contradiction from scalar principal-cofactor algebra
+alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal
+two-vertex cofactors at a fixed perfect-matching point splits into one
+`J_m-I_m` block and `m(m-1)` complementary-edge swap blocks.  Its determinant
+is `(-1)^(m-1)(m-1)`, so the cofactor map is etale and dominant in
+characteristic zero.  Applying this independently to the three diagonal
+entries of every edge block locally realizes arbitrary triples of diagonal
+cofactor arrays.  Such diagonal blocks generally leave mixed-colour matching
+coefficients, so the remaining obstruction must use their cancellation or
+higher compatibility:
+[`HAFNIAN_PRINCIPAL_COFACTOR_GRADIENT_DOMINANCE.md`](HAFNIAN_PRINCIPAL_COFACTOR_GRADIENT_DOMINANCE.md).
 All surviving
 projectively varying cores with torus-intersecting `J_H`, the effective
 factorization, and the rank-one synchronized curves remain open:
@@ -1419,6 +1430,8 @@ uv run --with sympy python verify_root_tangent_companion_necessity_for_coordinat
 uv run --with sympy python audit_root_tangent_companion_necessity_for_coordinate_slice.py
 uv run --with sympy python verify_root_tangent_cycle_frame_symmetry_realization.py
 python audit_root_tangent_cycle_frame_symmetry_realization.py
+uv run --with sympy python verify_hafnian_principal_cofactor_gradient_dominance.py
+python audit_hafnian_principal_cofactor_gradient_dominance.py
 
 uv run --with sympy python verify_p5_h31_disjoint_secant_component_generic_obstruction.py
 python audit_p5_h31_disjoint_secant_component_generic_obstruction.py
