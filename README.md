@@ -14,10 +14,11 @@ replay commands, and records the next symbolic decision point.
 
 A separate, nonblocking method-transfer track is recorded in
 [`ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md`](ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md).
-It contains an exact root-of-unity permanent selector and a quotient-closed
-catalogue for the first six-blocker surplus.  Both are exploratory inputs to
-the construction/gluing strategies and do not change the global status or
-the immediate component/fibre proof priorities.
+It contains an exact root-of-unity permanent selector, its legal heralded
+symmetric-hafnian seed lift and fixed-left `P_4` no-go, and a quotient-closed
+catalogue for the first six-blocker surplus.  These are bounded inputs to the
+construction/gluing strategies and do not change the global status or the
+immediate component/fibre proof priorities.
 
 At this checkpoint the lower-pair pure-`P_4` locus is exhausted and the
 exactly-one-kernel `triangle-(1,1,1)` residual is completely placed in
@@ -67,13 +68,17 @@ Inside the old `h1=0` residual the divisor `R*h2=1` is closed, and on
 twenty-three's weight-at-infinity chart, canonical finite marking, full
 `t=3` slice, and full all-marking `lambda=0,+/-1` slices are closed; two exact
 minors leave a displayed factor residual on the remaining ordinary finite
-chart.
+chart.  Its entire `F=0,h2=0` ordinary branch is now empty, leaving exactly
+`F=0,h2!=0,(h3=0 or H=0)` there.
 Component twenty-four's complete generic weighted fibre is empty across both
 pair orbits and both homogeneous-weight charts.  On component twenty-five,
 generic marked `H31` is empty.  Weighted `H22` is empty at both weight-
 infinity endpoints and on a dense finite-`D01` extension chart; the residual
 `D01` divisor has empty `lambda=+/-1` slices and a two-factor cover for
-`lambda^2!=1`.  Finite `D23` has a three-branch necessary cover and its full
+`lambda^2!=1`.  The `A=0` branch is generically empty over the weight function
+field, and exact retained-weight elimination confines every ordinary survivor
+to the single untested divisor `(js-1)lambda-(js+1)=0`.
+Finite `D23` has a three-branch necessary cover and its full
 `lambda=1` all-marking slice is empty.  The other displayed finite branches
 remain unknown.  The remaining special/projective
 boundaries are not promoted by those function-field theorems.  On component
@@ -135,13 +140,24 @@ its unique four-gate branch.  Perfect-pairing certificates now exclude the
 other 52 covers as well, so that displayed rank-five model cannot satisfy the
 first nonlinear condition.  A first exact two-copy gluing test is now known:
 when two five-root/six-blocker configurations share four roots and all six
-blockers, and the exchanged roots are zero-coupled, their two `P_6`
-restrictions differ only by one simultaneous port-row swap and are therefore
-the same constraint.  An exact locally realizable
-`three_missing_singletons/all_full` table shows that profile incidence alone
-cannot exclude this maximal overlap; nonzero exchanged-root coupling,
-five-blocker overlap, or a global matching identity is still required:
-[`SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md`](SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md).
+blockers, zero exchanged-root coupling makes their two `P_6` restrictions the
+same port-swap constraint.  Nonzero coupling forces one-dimensional
+common-root incident spans at the exchanged vertices but leaves root/port rows
+locally arbitrary; an exact rational model gives two nonproportional `P_6`
+pullbacks.  Thus local incidence cannot exclude either maximal-overlap case;
+the exact global matching identity instead places the two endpoint `P_6`
+tensors at opposite corners of a rank-one GHZ coefficient hypercube.  Its
+mixed corners are four-root/two-port cofactor tensors, not known `P_6`
+restrictions.  Eliminating those companions, five-blocker overlap, or
+different ports is still required.  At order twelve the cofactor identity
+does sharpen: a `(1,1)` isotropic conic gives a synchronized rational family
+of `P_6 -> Delta_3` restrictions, and the earlier local-freedom model is
+exactly nonextendable on its `delta=0` branch.  Classification of those
+curves remains open:
+[`SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md`](SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md),
+[`SIX_BLOCKER_NONZERO_CROSS_PORT_FREEDOM.md`](SIX_BLOCKER_NONZERO_CROSS_PORT_FREEDOM.md),
+[`SIX_BLOCKER_MAXIMAL_OVERLAP_GHZ_HYPERCUBE.md`](SIX_BLOCKER_MAXIMAL_OVERLAP_GHZ_HYPERCUBE.md), and
+[`SIX_BLOCKER_ORDER12_ISOTROPIC_P6_CURVE.md`](SIX_BLOCKER_ORDER12_ISOTROPIC_P6_CURVE.md).
 These are strong local algebraic-geometric
 reductions, not a global proof:
 special `P_5/P_6` restrictions and the final local-to-global graph step are
@@ -602,16 +618,22 @@ strictly advance the finite frontier:
   smooth fivefold with pair profile `(3,3,3,4,4,4)` and relation word
   `(2,1,1)`.  A complete support-one/support-two and `YY/YX/XX` flag ledger
   routes every other point in this orientation to components eleven or
-  twelve, lower-pair, or zero.  Its complete generic marked `H31` fibre is empty: two deletions are
+  twelve, lower-pair, or zero.  Its complete generic marked `H31` fibre is
+  empty: two deletions are
   row-module obstructed, and each of the other two has one exact marking with
   a uniform rank-four one-marked minor.  Weighted `H22` remains open:
   [`P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md`](P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md),
   [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
   Exact weighted partial closure now covers all markings at generic weight
-  infinity, the generic finite canonical marking, and every finite marking
-  on the exact slice `t=3`.  The full finite `C(r,t)[h,lambda]` calculation
-  timed out and remains unknown:
-  [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md).
+  infinity, the generic finite canonical marking, every finite marking on the
+  exact slice `t=3`, and the full `lambda=0,+/-1` slices.  On ordinary weights,
+  exact selected minors confine the residual to `F=0` and three factors.  The
+  whole `F=0,h2=0` branch is now empty by a full localized mixed module.  The
+  remaining ordinary residual is exactly
+  `F=0,h2!=0,(h3=0 or H=0)`:
+  [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md),
+  [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md), and
+  [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ORDINARY_F_H2_ZERO_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ORDINARY_F_H2_ZERO_OBSTRUCTION.md).
 - the disjoint-binary split-center mixed orientation in the same star cell
   contains component twenty-four.  Exact purity splits into a lower-pair
   branch and two sign sheets exchanged by `X_2<->X_3`.  The nonzero sheet is
@@ -643,8 +665,19 @@ strictly advance the finite frontier:
   center endpoints separate it from components twenty-three and
   twenty-four.  A complete eight-signature reverse theorem includes both
   projective leaf hyperplanes and makes this the sole genuine two-inward
-  all-pair closure.  Both generic `P_5` fibres remain open:
-  [`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md`](P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md).
+  all-pair closure.  Generic marked `H31` is empty.  For weighted `H22`, both
+  infinity endpoints and a dense finite-`D01` chart are empty.  The ordinary
+  finite-`D01` residual splits into `A=0` and `B=0`; on `A=0`, exact quotient
+  reduction leaves one parameter and two terminal Segre equations whose ideal
+  is unit over the weight function field.  Exact retained-weight projection
+  identifies the sole ordinary residual as
+  `(js-1)lambda-(js+1)=0`; that divisor, `B=0`, and the remaining
+  finite/projective fibres remain open:
+  [`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md`](P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md),
+  [`P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
+  [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_LINEAR_REDUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_LINEAR_REDUCTION.md),
+  [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_GENERIC_WEIGHT_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_GENERIC_WEIGHT_OBSTRUCTION.md), and
+  [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_WEIGHT_COVER.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_WEIGHT_COVER.md).
   The equal-endpoint two-inward stratum is empty: support one forces the zero
   tensor, nonsingular binary complement has fixed forbidden coefficient
   `-4Q`, and both singleton-complement charts are zero or lower-pair:

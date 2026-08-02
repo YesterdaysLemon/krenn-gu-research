@@ -265,15 +265,20 @@ Six statements organize the current frontier.
    Its complete `YY/YX/XX` support and projective boundary ledger is exact,
    and its generic marked `H31` fibre is empty.  Weighted `H22` is exactly
    closed at weight infinity, the finite canonical marking, and the full
-   finite `t=3` slice.  The full all-marking `lambda=0,+/-1` slices are now empty,
-   and two selected minors leave an explicit factor residual on the remaining
-   finite chart; generic finite all-marking incidence remains open:
+   finite `t=3` slice.  The full all-marking `lambda=0,+/-1` slices are now
+   empty, and two selected minors leave an explicit factor residual on the
+   remaining finite chart.  On the ordinary branch `F=0,h2=0`, the coefficient
+   of `h1` is a unit and an exact localized standard-basis computation makes
+   the 28-row mixed module full.  Thus the remaining ordinary residual is
+   exactly `F=0,h2!=0,(h3=0 or H=0)`; generic finite all-marking incidence
+   remains open:
    [`P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md`](P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md),
    [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md), and
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md), and
-   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ONE_ALL_MARKING_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ONE_ALL_MARKING_OBSTRUCTION.md), and
-   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ZERO_ALL_MARKING_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ZERO_ALL_MARKING_OBSTRUCTION.md).
+   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ONE_ALL_MARKING_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ONE_ALL_MARKING_OBSTRUCTION.md),
+   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ZERO_ALL_MARKING_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ZERO_ALL_MARKING_OBSTRUCTION.md), and
+   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ORDINARY_F_H2_ZERO_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ORDINARY_F_H2_ZERO_OBSTRUCTION.md).
    Component twenty-four is the disjoint-binary split-center mixed-star
    fivefold.  Its exact reverse theorem includes the projective moving-leaf
    endpoint.  Its complete generic marked `H31` fibre is empty after exact
@@ -290,7 +295,15 @@ Six statements organize the current frontier.
    replayable.  Its generic marked `H31` fibre is empty.  For weighted `H22`,
    both infinity endpoints are empty, finite `D01` has a dense obstruction,
    closes both `lambda=+/-1` endpoints, and has a two-factor ordinary residual
-   cover; finite `D23` has a three-branch
+   cover.  On its `A=0` branch, exact quotient reduction solves `z3` and then
+   `z6`, leaving one extension parameter `w` and two Segre equations.  Their
+   terminal ideal is unit over the weight function field, so no `A`-branch
+   component dominates the ordinary weight line.  Retaining the weight in an
+   exact block elimination gives
+   `(lambda+1)((js-1)lambda-(js+1))`; since `lambda=-1` is already closed, the
+   sole ordinary residual is the untested divisor
+   `(js-1)lambda-(js+1)=0`.  The parallel `B=0` branch is untouched.  Finite
+   `D23` has a three-branch
    necessary cover whose full `lambda=1` slice is empty.  The other displayed
    finite branches remain open:
    [`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md`](P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md),
@@ -298,6 +311,9 @@ Six statements organize the current frontier.
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PARTIAL.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PARTIAL.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_RESIDUAL_FACTOR_COVER.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_RESIDUAL_FACTOR_COVER.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_LAMBDA_MINUS_ONE_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_LAMBDA_MINUS_ONE_OBSTRUCTION.md),
+   [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_LINEAR_REDUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_LINEAR_REDUCTION.md),
+   [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_GENERIC_WEIGHT_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_GENERIC_WEIGHT_OBSTRUCTION.md),
+   [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_WEIGHT_COVER.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_WEIGHT_COVER.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md), and
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_LAMBDA_ONE_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_LAMBDA_ONE_OBSTRUCTION.md).
    The equal-endpoint two-inward stratum is empty by
@@ -709,37 +725,70 @@ other rank-five configurations and the general `1+1+1` profile remain open:
 [`P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md`](P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md), and
 [`P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md`](P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md).
 
-The first exact high-overlap gluing test is a collapse rather than an
-obstruction.  If two five-root/six-blocker configurations share four roots
+The first exact high-overlap gluing tests now separate both exchanged-root
+coupling cases.  If two five-root/six-blocker configurations share four roots
 and all six blockers and their exchanged roots are zero-coupled, the two
 extractions use the same six covector rows and differ only by a simultaneous
 port-row swap.  `P_6` and all GHZ coefficients are invariant, so the two
-constraints are identical.  An exact locally realizable
-`three_missing_singletons/all_full` covector table proves that blocker-profile
-incidence alone cannot close this branch.  The useful residual is nonzero
-exchanged-root coupling, only five shared blockers, different residual ports,
-or the global matching identity:
-[`SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md`](SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md).
+constraints are identical.  With nonzero exchanged-root coupling, the four
+common-root incident spans at the exchanged vertices have dimension at most
+one, but the root and port rows at every shared blocker remain locally
+arbitrary.  An exact rational `three_missing_singletons/all_full` model gives
+two nonproportional 729-coefficient `P_6` pullbacks and no common output map.
+This disproves a local covector-incidence implication; the model has no
+blocker--blocker edges and is not a global witness.  The useful residual is
+therefore five-blocker overlap, different residual ports, or a genuinely
+global perfect-matching identity:
+[`SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md`](SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md) and
+[`SIX_BLOCKER_NONZERO_CROSS_PORT_FREEDOM.md`](SIX_BLOCKER_NONZERO_CROSS_PORT_FREEDOM.md).
+
+The first such global identity is now exact at arbitrary even ambient order.
+The two maximal-overlap endpoint `P_6` restrictions are opposite corners of
+one Boolean family of six-blocker tensors.  Every intermediate corner has the
+four-root/two-port cofactor expansion, and each colour's GHZ coefficient
+array is a rank-one Segre cube, so every Boolean square minor vanishes.  The
+intermediate corners are companion cofactor tensors, not automatically `P_6`
+restrictions; eliminating them remains the open gluing problem:
+[`SIX_BLOCKER_MAXIMAL_OVERLAP_GHZ_HYPERCUBE.md`](SIX_BLOCKER_MAXIMAL_OVERLAP_GHZ_HYPERCUBE.md).
+
+At ambient order twelve, where there are no further residual vertices, the
+hypercube sharpens to a synchronized `P_6` curve.  The full six-blocker tensor
+is a six-row permanent plus the exchanged-root cross scalar times one shared
+blocker--blocker cofactor.  On the two exchanged root/port planes the cross
+form is `diag(beta,delta)`; every fully supported point of its `(1,1)`
+isotropic curve is a genuine `P_6 -> Delta_3` restriction.  For `delta=0` the
+double-port corner is another `P_6`; this exactly excludes the earlier local
+freedom model as a global order-twelve realization because it has an
+off-diagonal double-port coefficient `18`.  The remaining target is the
+classification or exclusion of these synchronized rational `P_6` curves:
+[`SIX_BLOCKER_ORDER12_ISOTROPIC_P6_CURVE.md`](SIX_BLOCKER_ORDER12_ISOTROPIC_P6_CURVE.md).
 
 Two independently replayed Astra method transfers now sit behind this
 frontier.  The first is an exact root-of-unity selector in a bipartite
 permanent with commuting square-zero variables: every mixed-block matching
 cancels and every intended within-block permanent survives.  It is a bounded
-Routes-E/F construction experiment only.  Legal realization of its constant
-columns by symmetric graph contractions, a hafnian identity, and a Krenn--Gu
-counterexample are all unproved:
-[`ROOT_OF_UNITY_BLOCK_PERMANENT_SELECTOR.md`](ROOT_OF_UNITY_BLOCK_PERMANENT_SELECTOR.md).
+Routes-E/F construction experiment only.  Its four-row seed now has an exact
+eight-vertex loopless symmetric hafnian lift, including all 105 full graph
+matchings, and its constant columns are legal fixed `d=4` herald modes.  But
+the direct fixed-left promotion is impossible by the exact subrank-two theorem
+for `P_4`.  Composition with the existing Question-2 module, retention of
+additional live modes, herald removal, and a Krenn--Gu counterexample are all
+unproved:
+[`ROOT_OF_UNITY_BLOCK_PERMANENT_SELECTOR.md`](ROOT_OF_UNITY_BLOCK_PERMANENT_SELECTOR.md) and
+[`ROOT_OF_UNITY_SELECTOR_SYMMETRIC_HAFNIAN_LIFT.md`](ROOT_OF_UNITY_SELECTOR_SYMMETRIC_HAFNIAN_LIFT.md).
 
 The second classifies the same six common-port deletion profiles already used
 by the active `P_6` theorem and enumerates their two-copy incidence quotients:
 `1,791` blocker quotients and `10,746` after the six root-overlap decorations.
 The six one-copy profiles are therefore redundant with the current `P_6`
 normal form; the nonredundant content is the relative-colour and high-overlap
-two-copy gluing ledger.  The maximal-overlap port-swap theorem above removes
-one tempting concentration case, so the useful algebraic lift must focus on
-nonzero exchanged-root coupling, five shared blockers, different residual
-ports, or the global matching identity.  Covector compatibility and full
-graph realizability remain open:
+two-copy gluing ledger.  The maximal-overlap theorems above prove that local
+incidence yields either a duplicate constraint or two locally free ones; the
+global matching identity packages the endpoints into a rank-one GHZ
+hypercube, but its companion corners remain unclassified.  The useful
+algebraic lift must therefore attack those companion cofactors, five shared
+blockers, or different residual ports.  Full graph realizability remains
+open:
 [`SIX_BLOCKER_ADMISSIBLE_QUOTIENT_CATALOGUE.md`](SIX_BLOCKER_ADMISSIBLE_QUOTIENT_CATALOGUE.md).
 
 An exploratory wind-down calculation suggests a sharper next symbolic task,
@@ -1101,6 +1150,9 @@ uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_fini
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_finite_lambda_zero_all_marking_obstruction.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_finite_lambda_zero_all_marking_obstruction.py
 
+uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_finite_ordinary_F_h2_zero_obstruction.py
+uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_finite_ordinary_F_h2_zero_obstruction.py
+
 uv run --with sympy python verify_p4_split_center_mixed_star_211_component.py
 uv run --with sympy python audit_p4_split_center_mixed_star_211_component.py
 
@@ -1146,6 +1198,15 @@ uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_f
 uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_lambda_minus_one.py
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_lambda_minus_one.py
 
+uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a.py
+uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a.py
+
+uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_univariate.py
+uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_univariate.py
+
+uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_weights.py
+uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_weights.py
+
 uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d23_factor_cover.py
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d23_factor_cover.py
 
@@ -1170,11 +1231,23 @@ python audit_two_port_seven_blocker_reduction.py
 uv run --with sympy python verify_root_of_unity_block_permanent_selector.py
 python audit_root_of_unity_block_permanent_selector.py
 
+uv run --with sympy python verify_root_of_unity_selector_symmetric_hafnian_lift.py
+uv run --with sympy python audit_root_of_unity_selector_symmetric_hafnian_lift.py
+
 python verify_six_blocker_admissible_quotient_catalogue.py
 python audit_six_blocker_admissible_quotient_catalogue.py
 
 uv run --with sympy python verify_six_blocker_maximal_overlap_port_swap_collapse.py
 uv run --with sympy python audit_six_blocker_maximal_overlap_port_swap_collapse.py
+
+uv run --with sympy python verify_six_blocker_nonzero_cross_port_freedom.py
+uv run --with sympy python audit_six_blocker_nonzero_cross_port_freedom.py
+
+python verify_six_blocker_maximal_overlap_ghz_hypercube.py
+python audit_six_blocker_maximal_overlap_ghz_hypercube.py
+
+uv run --with sympy python verify_six_blocker_order12_isotropic_p6_curve.py
+uv run --with sympy python audit_six_blocker_order12_isotropic_p6_curve.py
 
 ```
 

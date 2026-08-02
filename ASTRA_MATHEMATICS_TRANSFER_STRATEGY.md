@@ -32,8 +32,14 @@ It changes the counterexample-oriented side of the strategy:
 - The safest interface is the bipartite root--blocker permanent already
   extracted by the arbitrary-order blocker theorems.
 
-It does not change the current proof-side priority because legal realization
-inside a symmetric graph matching tensor is still unproved.
+The four-row seed now has a legal eight-vertex symmetric hafnian lift with
+ordinary fixed herald modes; see
+[`ROOT_OF_UNITY_SELECTOR_SYMMETRIC_HAFNIAN_LIFT.md`](ROOT_OF_UNITY_SELECTOR_SYMMETRIC_HAFNIAN_LIFT.md).
+This removes bare graph symmetry as an intrinsic obstruction.  It does not
+change the current proof-side priority because composition with the fixed
+Question-2 module and herald removal are still unproved.  In fact the whole
+fixed-left promotion architecture is excluded by the exact subrank-two
+theorem for `P_4`.
 
 ### Directly actionable later: admissible quotient templates
 
@@ -47,8 +53,17 @@ Our first quotient-closed layer is now finite and replayable in
 six local first-surplus profiles and `1,791` two-copy blocker-incidence
 quotients, or `10,746` after the six possible root intersection sizes.
 
-This is a framework for the eventual blocker-surplus/gluing problem.  It is
-not yet evidence that any quotient is algebraically realizable.
+The maximal-overlap algebraic lift is now sharply separated.  Zero exchanged-
+root coupling gives one duplicate port-swap constraint; nonzero coupling
+leaves the two endpoint `P_6` pullbacks locally free.  The full graph identity
+then puts them at opposite corners of a rank-one GHZ coefficient hypercube,
+whose mixed corners are four-root/two-port cofactor tensors.  See
+[`SIX_BLOCKER_MAXIMAL_OVERLAP_GHZ_HYPERCUBE.md`](SIX_BLOCKER_MAXIMAL_OVERLAP_GHZ_HYPERCUBE.md).
+At order twelve those cofactors synchronize into an isotropic rational
+`P_6` curve and exclude the first local-freedom model globally, but the curve
+itself remains unclassified.  This still does not exclude the general
+companion corners or make arbitrary catalogue quotients algebraically
+realizable.
 
 ### Confirmation rather than a new route
 
@@ -72,26 +87,33 @@ marked fibres, or arbitrary-order graph gluing.
 
 ### Workstream A: selector legality
 
-1. Recast the verified heralded Question-2 module as a variable permanent
+1. The isolated four-row selector is now realized by legal graph blocks and
+   verified against all 105 full graph matchings.
+2. Recast the verified heralded Question-2 module as a variable permanent
    block with explicit contraction modes.
-2. Realize or obstruct the `d=2` four-row selector using legal graph blocks.
-3. If it is legal, verify the full graph matching tensor, not only its
-   bipartite permanent projection.
-4. Lift to the three-colour and four-channel selector only after the seed
-   passes exactly.
+3. Compose the two objects while keeping additional left modes live; fixing
+   the whole left side leaves only a `P_4` restriction and cannot produce
+   `Delta_3`.
+4. Verify every residual and cross-module matching in the combined graph.
+5. Lift to the three-colour and four-channel selector only after that coupled
+   seed passes exactly.
 
-The stopping rule is immediate: if the required constant columns cannot be
-implemented by legal contractions, record that obstruction and do not search
-larger selector supports.
+The current stopping rule is immediate: if the module composition cannot
+remove the selector heralds without falling back into the `P_4` subrank-two
+obstruction, record that obstruction and do not search larger selector
+supports.
 
 ### Workstream B: algebraic lift of quotient templates
 
-1. Filter the catalogue to root overlap at least four and blocker overlap at
-   least five.
-2. Attach shared edge-block/covector variables to the smallest profile pairs.
-3. Use row-space containment, Fitting minors, and legal gauge invariants to
+1. The all-six-blocker/root-overlap-four case now has local structure and a
+   global GHZ hypercube theorem.
+2. Classify or obstruct the order-twelve synchronized `P_6` curves, then the
+   higher-order companion four-root/two-port cofactor corners.
+3. Move next to five shared blockers and different residual ports, attaching
+   shared edge-block variables before any quotient count is treated as real.
+4. Use row-space containment, Fitting minors, and legal gauge invariants to
    decide realizability.
-4. Only after a two-copy theorem exists, formulate concentration and cover
+5. Only after those two-copy theorems exist, formulate concentration and cover
    templates for a minimal counterexample.
 
 The stopping rule is equally strict: quotient counts are combinatorial
@@ -114,8 +136,14 @@ Alongside it:
 ```text
 uv run --with sympy python verify_root_of_unity_block_permanent_selector.py
 python audit_root_of_unity_block_permanent_selector.py
+uv run --with sympy python verify_root_of_unity_selector_symmetric_hafnian_lift.py
+python audit_root_of_unity_selector_symmetric_hafnian_lift.py
 python verify_six_blocker_admissible_quotient_catalogue.py
 python audit_six_blocker_admissible_quotient_catalogue.py
+python verify_six_blocker_maximal_overlap_ghz_hypercube.py
+python audit_six_blocker_maximal_overlap_ghz_hypercube.py
+uv run --with sympy python verify_six_blocker_order12_isotropic_p6_curve.py
+uv run --with sympy python audit_six_blocker_order12_isotropic_p6_curve.py
 ```
 
 Every output explicitly retains

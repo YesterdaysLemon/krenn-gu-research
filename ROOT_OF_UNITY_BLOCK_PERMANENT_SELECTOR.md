@@ -9,9 +9,10 @@ This note translates the construction into the square-zero language already
 used in this repository and records exactly what it can and cannot do for the
 Krenn--Gu programme.
 
-The theorem concerns bipartite permanents.  It does **not** by itself produce
-a legal symmetric graph gadget, a restriction `P_5 -> Delta_3`, a
-counterexample, or a proof of the global conjecture.
+The theorem concerns bipartite permanents.  A companion result now gives the
+four-row seed a legal heralded symmetric lift, but the general theorem does
+**not** by itself produce a restriction `P_5 -> Delta_3`, remove the heralds,
+give a counterexample, or prove the global conjecture.
 
 ## The selector theorem
 
@@ -133,16 +134,21 @@ This changes the status of Routes E and F in
   already produces an honest bipartite permanent between roots and blockers.
   That is the safest first setting in which to transport (1).
 
-There are three nontrivial legality questions before this becomes a Krenn--Gu
-construction:
+The four-row seed now has an exact standalone symmetric lift in
+[`ROOT_OF_UNITY_SELECTOR_SYMMETRIC_HAFNIAN_LIFT.md`](ROOT_OF_UNITY_SELECTOR_SYMMETRIC_HAFNIAN_LIFT.md).
+An eight-vertex loopless bipartite graph realizes its full hafnian, and the
+constant columns are honest fixed `d=4` herald modes.  This answers the
+affine-constant and bare graph-symmetry questions for the isolated seed.  It
+does not answer the following construction questions:
 
-1. The constant columns of `U` must arise from legal contractions or herald
-   modes of the graph tensor, not from an arbitrary affine operation.
-2. The bipartite selector must coexist with the residual hafnian factor and
+1. The bipartite selector must coexist with the residual hafnian factor and
    with the symmetric edge-block convention of the original graph.
-3. The surviving block weights must assemble the required three diagonal
+2. The surviving block weights must assemble the required three diagonal
    colour channels without creating forbidden off-diagonal coefficients in
    the uncontracted modes.
+3. The herald contractions must be removed.  The direct fixed-left
+   architecture cannot do this: its four live modes remain a restriction of
+   `P_4`, whose exact subrank is only two.
 
 ## Next bounded experiment
 
@@ -150,14 +156,17 @@ Do not begin with a graph-support census.  Start with the verified heralded
 Question-2 module from Route F and perform these tests in order:
 
 1. express two colour-permuted copies as variable row blocks `R_1,R_2`;
-2. realize the `d=2` seed (5) using fixed contractions and check every full
-   graph matching coefficient;
-3. if legal, lift to a `d=3` filter and then to the four-channel selector;
-4. if illegal, extract the precise obstruction: affine constants, graph
-   symmetry, residual matchings, or colour-channel rank.
+2. compose them with the verified symmetric seed and check every full graph
+   matching coefficient, including residual and cross-module matchings;
+3. keep additional left modes live, since the fixed-left `P_4` architecture
+   cannot produce `Delta_3`;
+4. if that coupled seed is legal, lift to a `d=3` filter and then to the
+   four-channel selector;
+5. if it is illegal, extract the precise obstruction: gadget composition,
+   residual matchings, herald removal, or colour-channel rank.
 
 A useful result is either a legal selector or a short impossibility theorem
-for one of those four steps.  A numerical near-cancellation is not evidence.
+for one of those five steps.  A numerical near-cancellation is not evidence.
 
 ## Exact replay
 
@@ -166,6 +175,8 @@ From the repository root:
 ```text
 uv run --with sympy python verify_root_of_unity_block_permanent_selector.py
 python audit_root_of_unity_block_permanent_selector.py
+uv run --with sympy python verify_root_of_unity_selector_symmetric_hafnian_lift.py
+python audit_root_of_unity_selector_symmetric_hafnian_lift.py
 ```
 
 The primary verifier expands (5), checks (3) modulo cyclotomic polynomials

@@ -413,11 +413,18 @@ per [[u,v,1,1], [w,z,1,1], [p,q,2,-2], [r,s,2,-2]]
 
 so every matching mixing the two variable row blocks disappears.  The
 general block theorem is replayed over characteristic zero and audited
-independently over `Q` and `Q(omega)`.  The next Route-F experiment should
-therefore test legal graph realization of this four-row seed before any
-larger selector search.  Its present limitation is precise: it is a
-bipartite permanent specialization, not yet an identity for the full
-symmetric graph matching tensor.
+independently over `Q` and `Q(omega)`.  The isolated seed now also has an exact
+eight-vertex loopless symmetric lift: all 105 full graph matchings are
+included, exactly 24 bipartite terms survive, and the constant columns arise
+from ordinary fixed `d=4` herald modes.  See
+[`ROOT_OF_UNITY_SELECTOR_SYMMETRIC_HAFNIAN_LIFT.md`](ROOT_OF_UNITY_SELECTOR_SYMMETRIC_HAFNIAN_LIFT.md).
+
+The resulting boundary is sharper.  If the entire left side is fixed, every
+completion on the four live right modes is a local restriction of `P_4`, so
+the exact subrank-two theorem rules out `Delta_3`.  The next Route-F experiment
+must keep additional left modes live while composing the selector with the
+17-mode Question-2 support and must check all residual and cross-module
+matchings.  Neither that composition nor herald removal is proved.
 
 ## Route G: dual hyperplane annihilation
 
@@ -1550,17 +1557,21 @@ marked-fibre level:
    and twenty-five, then the remaining special/projective fibres on
    components nineteen through twenty-five;
 2. algebraically lift only the nonredundant high-overlap part of the
-   six-blocker quotient catalogue.  The zero-coupled exchanged-root/all-six-
-   blockers case collapses to one row-swapped `P_6`, so prioritize nonzero
-   exchanged-root coupling, five shared blockers, different residual ports,
-   and the global matching identity;
-3. test legal realization of the exact root-of-unity four-row selector
-   from Routes E/F, stopping at the first contraction, symmetry, residual,
-   or colour-rank obstruction;
+   six-blocker quotient catalogue.  Local maximal-overlap incidence is now
+   exhausted in both exchanged-root coupling cases, and the exact global
+   identity puts the endpoint `P_6` tensors in a rank-one GHZ hypercube.  Attack
+   its companion cofactor corners; at order twelve these become synchronized
+   rational `P_6` curves, while higher orders retain residual vertices.  Then
+   move to five shared blockers or different ports;
+3. compose the now-legal heralded symmetric lift of the root-of-unity
+   four-row seed with the Question-2 module while keeping additional left
+   modes live.  The fixed-left architecture is already excluded by
+   `subrank(P_4)=2`;
 4. formulate the simultaneous-root version of Route G in Grassmannian
    coordinates when the quotient lift exposes a small realizability stratum;
-5. if the four-row selector is legal, test the four-channel selector and
-   cut-rank formulation from Route F;
+5. if the coupled selector survives all residual matchings and herald
+   removal, test the four-channel selector and cut-rank formulation from
+   Route F;
 6. learn and prove sparse forbidden patterns with Route A;
 7. use Route C if the survivor supports fall into few Grassmannian
    matroid strata;
