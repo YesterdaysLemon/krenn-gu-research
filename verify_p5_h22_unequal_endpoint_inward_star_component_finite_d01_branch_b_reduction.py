@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Staged quadratic-field reduction of the finite-D01 B branch."""
+"""Verify descent-only identities from the finite-D01 B-branch failed route."""
 
 from __future__ import annotations
 
@@ -236,16 +236,17 @@ def main():
     print(
         json.dumps(
             {
-                "status": "PASS",
+                "status": "PASS_IDENTITIES_ONLY",
                 "field_representation": "C(e,j,s,lambda,w,z6)[k]/(k^2-Q^2/R+ej)",
                 "B_branch_z3": "s/[2P((lambda-1)sP-(lambda+1)Q)]",
                 "S13_coefficients_in_basis_1_k": list(map(str, reduced_13)),
                 "S23_coefficients_after_z6_relation": list(map(str, reduced_23)),
                 "weight_resultant_identity": "(js-1)^2 G((js+1)/(js-1)) = 4 e s^2 Q (js-1)(js+1)",
                 "weight_quadratic_sheet_factorization": "a0 G=(a0 lambda+V-2sRk)(a0 lambda+V+2sRk)",
-                "generic_B_branch_empty": True,
-                "special_base_factor_cover": "e*j*s*(e^2*s^2-1)*(j*s+1)=0",
-                "theorem_claimed": "generic characteristic-zero obstruction only",
+                "generic_B_branch_empty": False,
+                "descent_only_factor_cover": "e*j*s*(e^2*s^2-1)*(j*s+1)=0",
+                "invalid_generic_inference": "a+k*b=0 was split coefficientwise despite K-valued free extensions",
+                "theorem_claimed": "none; exact characteristic-zero identities only",
                 "finite_field_evidence_used": False,
                 "global_conjecture_resolved": False,
                 "elapsed_seconds": round(elapsed, 3),

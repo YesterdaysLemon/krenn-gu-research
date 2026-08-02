@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent no-import audit of the finite-D01 B-branch obstruction."""
+"""Independent audit of the finite-D01 B-branch descent-only identities."""
 
 from __future__ import annotations
 
@@ -209,14 +209,15 @@ def main():
     print(
         json.dumps(
             {
-                "status": "PASS",
+                "status": "PASS_IDENTITIES_ONLY",
                 "audit_independence": "no project imports; subset-DP permanent reconstruction",
                 "B_equation_checked": True,
                 "S13_identity_checked": True,
                 "S23_identity_checked": True,
                 "linear_quadratic_resultant_checked": True,
-                "generic_B_branch_empty": True,
-                "special_base_factor_cover": "e*j*s*(e^2*s^2-1)*(j*s+1)=0",
+                "generic_B_branch_empty": False,
+                "descent_only_factor_cover": "e*j*s*(e^2*s^2-1)*(j*s+1)=0",
+                "invalid_generic_inference": "quadratic-basis coefficients cannot be split at arbitrary K-points",
                 "finite_field_evidence_used": False,
                 "global_conjecture_resolved": False,
                 "elapsed_seconds": round(time.perf_counter() - started, 3),

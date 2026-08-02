@@ -92,10 +92,11 @@ On the `A=0` factor, exact retained-weight elimination leaves only
 `(js-1)lambda-(js+1)=0`.  Its terminal ideal is generically populated by a
 rational section, but the unique marking makes the opposite `D01` diagonal
 identically zero, so the entire divisor-generic section is nongenuine.  The
-parallel `B=0` factor has no component dominating the component base: on the
-standing function-field chart, exact quadratic-field reduction forces every
-candidate onto `ejs(e^2s^2-1)(js+1)=0`.  Those proper special-base fibres and
-the standing chart boundary remain unknown.
+parallel `B=0` factor remains unknown.  A proposed quadratic-field reduction
+to `ejs(e^2s^2-1)(js+1)=0` was withdrawn: it split an equation into `1,k`
+coefficients even though the free extensions may be quadratic-field-valued.
+Its exact identities remain a descent-only failed-route diagnostic, not a
+generic obstruction.
 Finite `D23` has an exact three-branch necessary cover; its complete
 all-marking `lambda=1` slice is empty.  See
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_SURVIVOR.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_SURVIVOR.md)
@@ -315,11 +316,11 @@ Six statements organize the current frontier.
    exact block elimination gives
    `(lambda+1)((js-1)lambda-(js+1))`; since `lambda=-1` is already closed, the
    sole ordinary residual is the untested divisor
-   `(js-1)lambda-(js+1)=0`.  On the parallel `B=0` branch, exact reduction of
-   `S_13,S_23` and a closed linear--quadratic resultant show that every
-   candidate on the standing function-field chart lies over the proper base-
-   divisor cover `ejs(e^2s^2-1)(js+1)=0`; the branch is empty over the generic
-   component point, while those special-base fibres and the chart boundary remain open.
+   `(js-1)lambda-(js+1)=0`.  The parallel `B=0` branch remains open.  Exact
+   `S_13,S_23` and linear--quadratic resultant identities were found, but the
+   attempted cover `ejs(e^2s^2-1)(js+1)=0` relied on an invalid coefficient
+   split over the quadratic field.  Retain that package only as a descent-
+   restricted failed route.
    Finite `D23` has a three-branch
    necessary cover whose full `lambda=1` slice is empty.  The other displayed
    finite branches remain open:

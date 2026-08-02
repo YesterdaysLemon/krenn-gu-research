@@ -82,12 +82,13 @@ at the normalized fixed-vertex level by an exact rational section, but its
 unique marking makes the opposite finite-`D01` diagonal identically zero.
 Hence the divisor-generic terminal section is nongenuine and closed; an
 independent paired-`D23` minor supplies the dense-open ternary obstruction.
-On the parallel `B=0` branch, exact quadratic-field reduction shows that no
-component dominates the base: every candidate on the standing function-field
-chart lies over `ejs(e^2s^2-1)(js+1)=0`.  Those special-base fibres and the
-chart boundary remain open.  See
+The parallel `B=0` branch remains open.  An exact quadratic-field identity
+package suggested the cover `ejs(e^2s^2-1)(js+1)=0`, but its attempted proof
+split one equation into `1,k` coefficients while the free extensions may be
+quadratic-field-valued.  The identities are retained as a descent-only failed
+route, not a generic obstruction.  See
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_SURVIVOR.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_SURVIVOR.md),
-[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_GENERIC_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_GENERIC_OBSTRUCTION.md), and
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_GENERIC_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_GENERIC_OBSTRUCTION.md), and the withdrawn diagnostic
 [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_GENERIC_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_GENERIC_OBSTRUCTION.md).
 Finite `D23` has a three-branch necessary cover and its full
 `lambda=1` all-marking slice is empty.  The other displayed finite branches

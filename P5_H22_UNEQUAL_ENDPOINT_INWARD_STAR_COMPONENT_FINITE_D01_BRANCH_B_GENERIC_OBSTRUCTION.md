@@ -1,21 +1,22 @@
-# Generic-base obstruction on component twenty-five's finite-`D01` `B` branch
+# Descent-only diagnostic on component twenty-five's finite-`D01` `B` branch
 
 ## Status
 
-**Exact characteristic-zero generic-base theorem.**  On the normalized
-ordinary finite-`D01` sheet of component twenty-five, every binary candidate
-on the first-Segre factor `B=0` lies over
+**WITHDRAWN AS A GENERIC OBSTRUCTION; VERIFIED IDENTITIES ONLY.**  The exact
+quadratic-field calculations below verify a useful set of permanent and
+resultant identities.  They do **not** prove that every binary candidate on
+the normalized ordinary finite-`D01`, `B=0` sheet lies over
 
 ```text
 e j s (e^2 s^2-1)(j s+1)=0.                         (1)
 ```
 
-In particular, the `B` branch is empty over the generic point of the
-component base.  This closes the branch that dominates the base; it does not
-close the displayed proper special-base factors in (1), the standing affine-
-chart boundary, the projective component boundary, or the exceptional weight
-fibres left on the parallel `A` branch.  The global Krenn--Gu conjecture
-remains **UNRESOLVED**.
+The original inference incorrectly split one equation into its coefficients
+in the basis `1,k` while the free extension coordinates `w,z_6` may themselves
+be `K`-valued.  Those two coefficients need not vanish separately at a
+`K`-point.  Thus (1) is only a descent-restricted diagnostic, the full `B`
+branch remains **UNKNOWN**, and the global Krenn--Gu conjecture remains
+**UNRESOLVED**.
 
 ## Exact reduction
 
@@ -73,7 +74,9 @@ in the basis `1,k` of `K` gives
 [S_13]_k = jRG/(D_0 H^2).                            (3)
 ```
 
-Thus `G=0`.  On the open set `T != 0`, equation (3) also gives
+If one imposes the additional, unjustified descent restriction that the two
+coefficients in (3) vanish separately, then `G=0`.  On `T != 0`, that same
+restricted calculation also gives
 
 ```text
 z_6=-(lambda+1)w.                                    (4)
@@ -88,9 +91,10 @@ After (4), the next Segre minor has exact coefficients
   2ej^2s(es-1)(es+1)RT/(D_0H).                       (5)
 ```
 
-Away from `ejs(e^2s^2-1)=0`, the second coefficient in (5) is
-nonzero because this case has `T != 0`.  Hence that open set has no
-candidate.
+Away from `ejs(e^2s^2-1)=0`, the second coefficient in (5) is nonzero because
+this case has `T != 0`.  This excludes only solutions satisfying the extra
+coefficientwise descent condition; it does not exclude arbitrary `K`-valued
+extension coordinates.
 
 It remains to inspect `T=0`, where (4) was not used.  Since `T` is linear in
 `lambda`, direct evaluation gives the denominator-cleared resultant identity
@@ -102,7 +106,8 @@ It remains to inspect `T=0`, where (4) was not used.  Since `T` is linear in
 
 On the standing ordinary chart, simultaneous vanishing of `T` and `G`
 therefore forces `e(js+1)=0`; the factors `j=0` and `s=0` are already retained
-in (1).  Combining the two cases proves the asserted base-divisor cover.
+in (1).  Combining the two cases proves the displayed cover only inside the
+descent-restricted coefficientwise locus.
 
 For reference, `G` also splits over `K`.  With
 
@@ -120,7 +125,18 @@ a_0G=(a_0 lambda+V-2sRk)(a_0 lambda+V+2sRk).          (7)
 No division by `a_0` is used in the obstruction; (7) records its special
 base boundary honestly.
 
-## Boundaries and replay
+## Invalid inference, boundaries, and replay
+
+In the polynomial ring `K[w,z_6]`, an equation
+
+```text
+a(w,z_6)+k b(w,z_6)=0
+```
+
+is one equation over `K`.  Although `1,k` are linearly independent over the
+base field, a `K`-valued assignment to `w,z_6` can make the two displayed
+terms cancel.  Splitting it into `a=b=0` silently restricts the coordinates to
+the base field.  No descent theorem justifies that restriction here.
 
 The calculation retains the standing affine-chart localization
 
@@ -129,8 +145,9 @@ P R k Q (e-j)(e^2-k^2)(lambda^2-1) != 0.
 ```
 
 Equation (2) also localizes at `H`.  If `H=0`, the original `B` equation
-forces `s=0`, which is already one of the special factors in (1).  Thus this
-localization loses no generic-base point, but the fibre `s=0` remains open.
+forces `s=0`, but this does not repair the invalid coefficient split on the
+`H!=0` chart.  The full `B` branch, its special-base fibres, and the standing
+chart boundary all remain open.
 
 Run:
 
@@ -145,5 +162,5 @@ uv run --with sympy python \
 The primary verifier expands permanents by permutations in the quadratic
 function field.  The audit imports no project code, independently rebuilds
 the tensor, and evaluates permanents by subset dynamic programming.  Both
-verify (2)--(7) exactly over characteristic zero.  No finite-field evidence
-is used.
+verify (2)--(7) exactly over characteristic zero and explicitly deny the
+generic-empty conclusion.  No finite-field evidence is used.
