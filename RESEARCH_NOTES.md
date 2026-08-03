@@ -14117,3 +14117,43 @@ RESIDUAL_HAFNIAN_COMMON_COFACTOR_GRAM_THEOREM.md
 MAJORITY_SUBSET_INTERNAL_EDGE_IDEAL_HIERARCHY.md
 BOSONIC_HAFNIAN_SPINOR_NO_TRANSFER.md
 ```
+
+### One-switch equality: switch-core rigidity and cut normal form
+
+Suppose exactly one colour `c` has two pure matchings, with four switch
+entries `A,B,C,D` on modes `a,b` and exceptional sources `p_1,p_2`.  Their
+common residual pure weight factors the required coefficient as
+
+```text
+lambda_c=W_c(AD+BC)!=0.
+```
+
+Any nonmonochromatic backbone matching using both selected switch edges has
+the same residual factor and the unique cross partner, so its forbidden
+coefficient is `W_F(AD+BC)!=0`.  Such a matching cannot exist.  Deleting the
+two switch modes and exceptional sources therefore leaves a common residual
+backbone with a unique perfect matching: any second residual matching would
+extend either to a forbidden nonmonochromatic matching in the selected
+backbone or to a third pure `c` matching.  Contracting that unique residual
+matching produces an acyclic dependency digraph and a triangular
+biadjacency support.
+
+For the two cancellation fibres, make a bipartite component-incidence graph
+with one edge per shared ratio state.  Exactly the two switch-state edges
+carry label one.  Cut--cycle duality says that equality at the gluing level
+is possible exactly when this marked pair is a cut: both marked edges are
+bridges, or both are nonbridges in one two-edge series cut.  Equivalently,
+every incidence cycle contains both marked edges or neither.  The local
+straddling obstruction is the parallel-edge two-cycle special case; longer
+cycles give the full criterion.
+
+The next arbitrary-order target is no longer merely "force straddling".  It
+is to prove that the triangular residual permanent equations place one
+marked incidence edge on a cycle avoiding the other, thereby excluding the
+bridge-or-series normal form.
+
+```text
+ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_CUT_NORMAL_FORM_THEOREM.md
+verify_arbitrary_permanent_equality_one_switch_cut_normal_form_theorem.py
+audit_arbitrary_permanent_equality_one_switch_cut_normal_form_theorem.py
+```

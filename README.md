@@ -58,7 +58,14 @@ both excess cells to be noncoordinate and co-located at one mode.  Global
 bipartiteness is now equivalent to balance of an `F_2`-labelled
 component-overlap graph; a pure switch is excluded as soon as one common
 cancellation component connects two shared states and exactly one changes
-source side.  Whether such a straddling switch is forced remains open.  See
+source side.  In the one-switch branch, the pure coefficient supplies a
+stronger normal form: no nonmonochromatic matching in either selected
+backbone may use both switch edges, the backbone outside the four-vertex
+switch core has a unique perfect matching and triangular support, and the
+two marked overlap edges must be a cut (both bridges or a two-edge series
+pair).  The remaining task is to rule out that bridge-or-series
+configuration from the triangular residual equations.
+See
 [`ARBITRARY_PERMANENT_THREE_M_PLUS_TWO_SUPPORT_BOUND.md`](ARBITRARY_PERMANENT_THREE_M_PLUS_TWO_SUPPORT_BOUND.md)
 and
 [`ARBITRARY_PERMANENT_EQUALITY_EXCEPTIONAL_SOURCE_RECTANGLE_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_EXCEPTIONAL_SOURCE_RECTANGLE_THEOREM.md)
@@ -67,7 +74,9 @@ and
 and
 [`ARBITRARY_PERMANENT_EQUALITY_PURE_MATCHING_CUBE_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_PURE_MATCHING_CUBE_THEOREM.md)
 and
-[`ARBITRARY_PERMANENT_EQUALITY_BACKBONE_COLORING_GLUE_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_BACKBONE_COLORING_GLUE_THEOREM.md).
+[`ARBITRARY_PERMANENT_EQUALITY_BACKBONE_COLORING_GLUE_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_BACKBONE_COLORING_GLUE_THEOREM.md)
+and
+[`ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_CUT_NORMAL_FORM_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_CUT_NORMAL_FORM_THEOREM.md).
 
 Two complementary cell-level transfers are also settled.  The all-root and
 four-root jets give five exact hidden-pair equations; on each rank-two chart

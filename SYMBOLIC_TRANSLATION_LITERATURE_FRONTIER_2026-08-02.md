@@ -92,8 +92,26 @@ Its vertices are connected components of the fixed-backbone graphs; shared
 ratio states label overlap edges by the xor of the two canonical side
 assignments.  The colimit is bipartite exactly when this `F_2` overlap graph
 is balanced.  A one-switch straddling pair gives an immediate unbalanced
-two-cycle.  The next proof obligation is therefore to force such a pair, not
-to inspect arbitrary cycles in the original matching space.
+two-cycle.
+
+The one-switch cut normal-form theorem sharpens that target.  The nonzero
+pure switch binomial forbids every nonmonochromatic matching in either
+selected backbone that uses both switch edges.  After deleting the switch
+core, the common residual backbone has a unique perfect matching; its
+alternating dependency digraph is therefore acyclic and its biadjacency
+support triangular.  In the two-fibre
+component-incidence graph, the only nonzero overlap labels are the two
+switch states.  Equality holds at the gluing level exactly when those two
+marked edges belong to the cut space: both are bridges, or they are a
+two-edge series cut.  A straddling pair is only the smallest violating cycle.
+The exact next task is to use the triangular residual coefficients to force
+one marked edge onto a cycle avoiding the other.
+
+This is a direct transfer from unique-perfect-matching theory and the
+Dulmage--Mendelsohn viewpoint, but the marked cut condition is specific to
+the permanent cancellation local system.  See Kotzig's 1959
+[unique-matching record](https://eudml.org/doc/29879) and Dulmage--Mendelsohn,
+[*Coverings of Bipartite Graphs*](https://doi.org/10.4153/CJM-1958-052-0).
 
 ## 2. Toric ideals and matching-exchange binomials
 
