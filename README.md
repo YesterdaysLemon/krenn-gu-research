@@ -259,6 +259,16 @@ of both chords by the conformal-`K_3,3` characterization, but the six-token
 theorem does not imply Pfaffianity.  See
 [`ARBITRARY_PERMANENT_THREE_EXCESS_BOSONIC_PLUCKER_DEFECT_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_BOSONIC_PLUCKER_DEFECT_THEOREM.md).
 
+Cross-coefficient equations now eliminate that completed `K_3,3` model.
+Replacing any selected set of port rows by singleton diagonal selectors
+contracts a coefficient to the corresponding principal permanent.  The
+`Q(sqrt(2))` bypass survives the central equation and all twelve
+distance-one words, but every distance-two flip is one nonzero matching.
+At arbitrary order this excludes any coefficient-induced conformal `K_3,3`
+whose three excess cells form its diagonal matching.  Forcing precisely that
+incidence and coefficient-inducedness is now the remaining bridge.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_HAMMING_FACE_PINCH_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_HAMMING_FACE_PINCH_THEOREM.md).
+
 The strict support theorem also transfers back to the graph whenever one of
 the root--blocker extraction lemmas applies.  Five roots with five tight
 blockers require at least 18 active contracted root--blocker covectors.  More

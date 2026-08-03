@@ -52,6 +52,23 @@ prove Pfaffian eligibility, force at least one chord sector to vanish, or use
 other coefficients to contradict the defect completion.  See
 [`ARBITRARY_PERMANENT_THREE_EXCESS_BOSONIC_PLUCKER_DEFECT_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_BOSONIC_PLUCKER_DEFECT_THEOREM.md).
 
+## 2 August 2026: Hamming-face pinching kills the completed bypass
+
+If alternate colours turn selected port rows into singleton diagonal rows,
+the full coefficient is the product of their weights and the complementary
+principal permanent.  This arbitrary-port identity turns the Hamming face
+around one coefficient into a principal-minor ladder.  For the completed
+`K_3,3` bypass, the central permanent and all three principal `2 x 2`
+permanents vanish, so Hamming radius one is genuinely consistent.  Every
+radius-two coefficient is instead a unique nonzero matching.
+
+Local rank plus the three-excess degree ledger automatically supplies the
+needed singleton alternate colour in a coefficient-induced diagonal-excess
+`K_3,3`.  Therefore that entire completed-theta case is excluded at every
+order.  The open step is to force a conformal carrier into this aligned,
+coefficient-induced incidence class.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_HAMMING_FACE_PINCH_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_HAMMING_FACE_PINCH_THEOREM.md).
+
 ## 2 August 2026: conformal-core alignment and chord completion
 
 An induced conformal cycle carrying the three excess cells collapses to

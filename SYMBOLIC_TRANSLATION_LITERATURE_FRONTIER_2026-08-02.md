@@ -96,6 +96,15 @@ explains why summing two spinorial channels supplies no universal identity.
 See
 `ARBITRARY_PERMANENT_THREE_EXCESS_BOSONIC_PLUCKER_DEFECT_THEOREM.md`.
 
+The needed cross-coefficient mechanism is a local apolar contraction.  An
+alternate colour that sees only one diagonal cell replaces a port row by a
+singleton; selected replacements contract the coefficient to a principal
+complementary permanent.  The completed `K_3,3` bypass survives radius one
+because its three principal `2 x 2` permanents vanish, but any radius-two
+contraction is a unique nonzero matching.  This Hamming-face pinch excludes
+coefficient-induced diagonal-excess `K_3,3` completions at arbitrary order.
+See `ARBITRARY_PERMANENT_THREE_EXCESS_HAMMING_FACE_PINCH_THEOREM.md`.
+
 ## 1. Gain graphs and a new multi-backbone gluing diagram
 
 ### Existing theory

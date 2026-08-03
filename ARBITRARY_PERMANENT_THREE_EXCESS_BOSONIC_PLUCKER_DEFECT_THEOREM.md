@@ -15,6 +15,11 @@ and the exact `3+3` replay budget in which both chords occur and the defect is
 nonzero.  It is a structural boundary model, not a full
 `P_6 -> Delta_3` restriction.
 
+The later Hamming-face pinch theorem proves exactly why it cannot become one:
+the bypass survives the central and all distance-one equations, but any
+two-row selector flip isolates a forbidden nonzero diagonal monomial.  See
+`ARBITRARY_PERMANENT_THREE_EXCESS_HAMMING_FACE_PINCH_THEOREM.md`.
+
 ## The bosonic Plucker identity
 
 Let `X=(x_ij)` be a `3 x 3` matrix and write
