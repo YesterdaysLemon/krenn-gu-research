@@ -333,6 +333,20 @@ nine-dimensional kernel has every exceptional-star edge zero and therefore
 contains no full-edge `F`.  General mixed-sign stars remain unknown.  See
 [`P7_PHYSICAL_EXTENSION_MIXED_HARD_LEFSCHETZ_SIGN_CHAMBER_AND_ONE_EXCEPTIONAL_ORBIT_OBSTRUCTION.md`](P7_PHYSICAL_EXTENSION_MIXED_HARD_LEFSCHETZ_SIGN_CHAMBER_AND_ONE_EXCEPTIONAL_ORBIT_OBSTRUCTION.md).
 
+That 21-dimensional mixed kernel now has an exact Boolean-down compression.
+Writing `r_i=sum_j f_ij`, `alpha=sum_i a_i`, and
+`delta_ij=alpha-2(a_i+a_j)`, the physical condition is equivalent to the 21
+local equations
+`delta_ij f_ij+a_i r_j+a_j r_i=0`.  A fixed invertible rational matrix
+`J`, with determinant `2^16 3^6`, sends this local pencil to the weighted
+Kneser pencil.  Away from the explicit divisors `a_i delta_ij=0`, the entire
+kernel is therefore controlled by a symmetric `7 x 7` master Hessian:
+`f_ij=-a_i a_j(x_i+x_j)/delta_ij`.  Full edge support becomes the seven-
+variable condition `x_i+x_j!=0` for every pair.  The generic Hessian
+incidence, exceptional divisors, and remaining nonlinear physical equations
+are still unresolved.  See
+[`P7_PHYSICAL_MIXED_KERNEL_BOOLEAN_DOWN_DESCENT_AND_SEVEN_BY_SEVEN_MASTER_HESSIAN.md`](P7_PHYSICAL_MIXED_KERNEL_BOOLEAN_DOWN_DESCENT_AND_SEVEN_BY_SEVEN_MASTER_HESSIAN.md).
+
 Vertex switching supplies no missing legal GHZ direction: it acts by
 diagonal congruence on every shore Hessian and only by a common projective
 scalar on the full root tensor.  For the fixed legal sensor, two coprime

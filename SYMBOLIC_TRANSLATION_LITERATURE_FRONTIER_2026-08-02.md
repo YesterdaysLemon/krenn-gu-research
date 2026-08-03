@@ -3644,6 +3644,61 @@ closure are proved directly here.  General mixed-sign stars remain unknown.
 See
 `P7_PHYSICAL_EXTENSION_MIXED_HARD_LEFSCHETZ_SIGN_CHAMBER_AND_ONE_EXCEPTIONAL_ORBIT_OBSTRUCTION.md`.
 
+## 3 August Boolean-down descent of the physical mixed kernel
+
+The weighted-Kneser system (59)--(60) has a second, exact model.  Put
+`alpha=sum_i a_i`, `r_i=sum_(j!=i)f_ij`, and
+`delta_ij=alpha-2(a_i+a_j)`.  Boolean `sl_2` gives
+
+```text
+ker(ell^2:Z_3->Z_5)=ker(D:Z_3->Z_2),                 (62)
+```
+
+both equal to the 14-dimensional primitive space.  Applying the corrected
+zeon Leibniz rule to `AF` turns the physical mixed equation into the exact
+local system
+
+```text
+delta_ij f_ij+a_i r_j+a_j r_i=0.                    (63)
+```
+
+If `L_A` is the edge matrix in (63), `R` is unsigned vertex--edge incidence,
+and `M_A` is (60), then the universal intertwiner
+
+```text
+M_A=J L_A,
+J=2I+(2/3)11^T-R^T R,
+spec(J)=4^1,(-3)^6,2^14.                            (64)
+```
+
+In particular `det M_A=2^16 3^6 det L_A`; the former 21-dimensional
+determinant loses no information under this descent.  On the chart
+`a_i delta_ij!=0`, the determinant lemma reduces it to the symmetric
+seven-by-seven Hessian of
+
+```text
+E_A(x)=1/2 sum_i a_i x_i^2
+       +1/2 sum_(i<j) a_i a_j (x_i+x_j)^2/delta_ij. (65)
+```
+
+Every mixed-kernel vector is reconstructed uniquely by
+
+```text
+r_i=a_i x_i,
+f_ij=-a_i a_j(x_i+x_j)/delta_ij.                    (66)
+```
+
+Thus full edge support is exactly `x_i+x_j!=0` for all pairs.  The 21
+exceptional hyperplanes `delta_ij=0` remain separate exact branches; they
+include the six-equal-coordinate wall above.  This is a genuine dimensional
+compression, not a search: the generic master-Hessian incidence, exceptional
+branches, primitivity, and the stronger nonlinear annihilator equation all
+remain unknown.  Feinsilver's zeon/Boolean `sl_2` model supplies the ambient
+language in [*Zeon algebra, Fock space, and Markov
+chains*](https://arxiv.org/abs/1102.0368); (62)--(66) are the direct new
+transfer.  See
+`P7_PHYSICAL_MIXED_KERNEL_BOOLEAN_DOWN_DESCENT_AND_SEVEN_BY_SEVEN_MASTER_HESSIAN.md`.
+
 ## Ranked proof program
 
 0. **Resolve the legal pullback of target incidence.**  The ambient equation
@@ -3782,6 +3837,14 @@ real same-sign physical stars:        EXCLUDED BY MIXED HARD LEFSCHETZ;
 same-sign pencil signature:           (15,6);
 six-equal-coordinate star orbit:      EXCLUDED IN CHARACTERISTIC ZERO;
 six-equal determinant wall p=-2q:     9D KERNEL, ALL STAR EDGES ZERO;
+physical mixed Boolean-down system:   21 EXACT LOCAL EDGE EQUATIONS;
+weighted Kneser/local intertwiner J:  FIXED, INVERTIBLE;
+determinant ratio det(M_A)/det(L_A):   2^16 3^6;
+generic physical mixed master system: SYMMETRIC 7x7 HESSIAN;
+generic mixed-kernel reconstruction:  EXACT BIJECTION;
+generic full-edge mixed condition:    x_i+x_j NONZERO FOR ALL PAIRS;
+mixed exceptional delta divisors:     RETAINED, UNKNOWN;
+generic master Hessian good kernel:   UNKNOWN;
 general mixed-sign physical star:     UNKNOWN;
 quotient rank<=18 structured syzygies: AT LEAST TWO;
 leaf four-hafnian map:                PROJECTED VERONESE;
