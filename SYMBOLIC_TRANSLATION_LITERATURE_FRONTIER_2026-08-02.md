@@ -3767,6 +3767,62 @@ properties*](https://arxiv.org/abs/1803.09664); the orbit factors and
 primitive resultant are the direct new transfer.  See
 `P7_PHYSICAL_EXTENSION_TWO_LEVEL_STAR_ORBIT_COMPLETE_EXCLUSION_THEOREM.md`.
 
+## 3 August exceptional wall-graph Hessian
+
+The denominator divisors in (65)--(66) now have an exact, denominator-free
+descent.  Let `W={ij:delta_ij=0}`, `x_i=r_i/a_i`, and let `R_W` be unsigned
+incidence of the wall graph.  Deleting wall edges from the master energy gives
+a partial symmetric Hessian `B_W`.  Exceptional mixed kernels are exactly
+
+```text
+R_W^T x=0,
+B_W x=R_W y,                                         (73)
+
+f_ij=-a_i a_j(x_i+x_j)/delta_ij  off W,
+f_ij=y_ij                         on W.              (74)
+```
+
+Equivalently, `x` lies in the radical of `B_W` restricted to
+`ker R_W^T`.  This gives a six-by-six exact test for one wall and contracts
+every multiple-wall stratum to the number of alternating wall components.
+
+Writing `c=alpha/2`, wall adjacency is `a_i+a_j=c`.  The involution
+`p -> c-p` therefore forces `W` to be a disjoint union of complete bipartites
+between complementary value classes, plus at most one clique on the midpoint
+class `a_i=alpha/4`.  A bipartite component contributes one alternating
+parameter; a midpoint clique of size at least three forces all its `x`
+coordinates to zero.
+
+Let the midpoint value be `h=alpha/4!=0`.  The restricted equations exclude
+`K_7` by coefficient sum, `K_6` by the scalar `-4h`, and `K_5` by
+
+```text
+det B_restricted
+ =15 b h^2(b+h)/((b-h)(b+2h)) !=0.                  (75)
+```
+
+For a midpoint `K_4`, the outside values satisfy `b+c+d=0`.  With no outside
+wall, singularity is possible only on
+
+```text
+3bcd+2h(bc+bd+cd)+12h^3=0.                           (76)
+```
+
+That cubic is retained.  With one outside wall, the two-dimensional
+restricted determinant is
+
+```text
+-96h^4/((b-4h)(b+2h)),                               (77)
+```
+
+and its boundary `K_(1,2)` has coefficient `-4h`; both are excluded.  Thus a
+midpoint `K_4` plus any outside wall is impossible.  The good-kernel locus on
+(76), midpoint `K_3`, and general bipartite wall systems remain unknown.
+Monfared and Mallik's [signless-Laplacian matrix-tree
+analogue](https://arxiv.org/abs/1805.04759) supplies the neighboring
+incidence language; (73)--(77) are the new physical transfer.  See
+`P7_PHYSICAL_MIXED_KERNEL_EXCEPTIONAL_WALL_GRAPH_AND_RESTRICTED_HESSIAN_THEOREM.md`.
+
 ## Ranked proof program
 
 0. **Resolve the legal pullback of target incidence.**  The ambient equation
@@ -3918,7 +3974,12 @@ nonzero 2+5 physical stars:            EXCLUDED;
 3+4 cubic primitive obstruction:       NONZERO BY RESULTANTS 256,1280;
 nonzero stars with <=2 values:          EXCLUDED;
 stars with >=3 values:                  UNKNOWN;
-mixed exceptional delta divisors:     RETAINED, UNKNOWN;
+mixed exceptional delta reconstruction: EXACT RESTRICTED HESSIAN;
+mixed wall graph:                       COMPLEMENTARY BIPARTITES + MIDPOINT;
+midpoint wall K5,K6,K7:                 EXCLUDED;
+midpoint wall K4 plus outside wall:      EXCLUDED;
+bare midpoint K4 wall:                  ONE CUBIC, UNKNOWN GOOD KERNEL;
+midpoint K3 and bipartite wall systems: UNKNOWN;
 general mixed-sign physical star:     UNKNOWN;
 quotient rank<=18 structured syzygies: AT LEAST TWO;
 leaf four-hafnian map:                PROJECTED VERONESE;

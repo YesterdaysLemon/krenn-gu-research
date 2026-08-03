@@ -359,6 +359,18 @@ Together with the preceding `1+6` theorem, this excludes all one- and two-
 level physical stars.  Three-level and general stars remain unknown.  See
 [`P7_PHYSICAL_EXTENSION_TWO_LEVEL_STAR_ORBIT_COMPLETE_EXCLUSION_THEOREM.md`](P7_PHYSICAL_EXTENSION_TWO_LEVEL_STAR_ORBIT_COMPLETE_EXCLUSION_THEOREM.md).
 
+The denominator walls of the master Hessian also have an exact model.  Their
+graph is forced to be a disjoint union of complementary-value complete
+bipartites, plus at most one midpoint clique.  If `R_W` is its unsigned
+incidence matrix, exceptional mixed kernels are precisely radicals of a
+partial master Hessian restricted to `ker R_W^T`; wall-edge values are then
+reconstructed linearly.  This excludes midpoint cliques `K_5,K_6,K_7` and
+every midpoint `K_4` carrying an additional outside wall.  A bare midpoint
+`K_4` survives only on
+`3bcd+2h(bc+bd+cd)+12h^3=0`; its good-support and nonlinear physical tests,
+midpoint `K_3`, and general bipartite wall systems remain unknown.  See
+[`P7_PHYSICAL_MIXED_KERNEL_EXCEPTIONAL_WALL_GRAPH_AND_RESTRICTED_HESSIAN_THEOREM.md`](P7_PHYSICAL_MIXED_KERNEL_EXCEPTIONAL_WALL_GRAPH_AND_RESTRICTED_HESSIAN_THEOREM.md).
+
 Vertex switching supplies no missing legal GHZ direction: it acts by
 diagonal congruence on every shore Hessian and only by a common projective
 scalar on the full root tensor.  For the fixed legal sensor, two coprime
