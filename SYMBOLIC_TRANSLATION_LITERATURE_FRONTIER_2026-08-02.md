@@ -1280,6 +1280,26 @@ coordinate-incidence modes.  Applied to the factorized `P_7` port rows, this
 improves the torus/non-torus split from `4/3` to `3/4`.  See
 `ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md`.
 
+For `h!=0`, synchronized deletion depth is exactly the missing observable.
+If both the residual-absent tensor `T_0` and residual-present tensor `T_Q`
+are legally exposed with the same direct blocks and root cofactors, then
+
+```text
+T_Q-hT_0=sum D_uv tensor F_uv
+```
+
+globally cancels the arbitrary direct layer.  Residual-null polarization and
+the four-mode theorem then apply whenever
+`product_c(z_0[c]z_1[c]-h)` is nonzero.  A persistent coordinate-monomial
+escape reduces to the aligned resonance `h=z_0[c]z_1[c]`; every scalar
+two-depth cancellation loses that same target colour, so rank three is gone.
+When pure and full pair blocks are jointly visible, the corrected matrix
+pencil has a common rank-two root and vanishing minor resultants.  Full blocks
+alone remain affine-unconstrained.  One top `P_7` equation does not supply the
+required `T_0`, so this is a conditional boundary rather than an exclusion.
+See
+`P7_SYNCHRONIZED_TWO_DEPTH_POLAR_SELECTOR_AND_ALIGNED_RESONANCE_BOUNDARY.md`.
+
 ## Ranked proof program
 
 1. **Phase-decorated `B_3` exchange complex.**  Define the missing incidence
@@ -1320,7 +1340,9 @@ new h=0 polar selector:            five null legs isolate one mixed pair block;
 new arbitrary-order boundary:      at least three coordinate-incidence modes;
 new incidence sharpness:           canonical profile does not balance the three;
 new row-pair incidence theorem:    every pair needs at least four modes;
-highest-priority invented object: h!=0 corrected-block rank replacement;
+new h!=0 conditional selector:     synchronized depth cancels direct blocks;
+new aligned-resonance boundary:    scalar depth subtraction then loses a colour;
+highest-priority invented object: legal synchronized-depth observation;
 highest-priority literature tool: determinantal circuit completion;
 full proof or counterexample:      NOT YET;
 global Krenn--Gu conjecture:       UNRESOLVED.

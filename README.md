@@ -1166,6 +1166,19 @@ every source-row pair needs at least four coordinate-incidence modes; for the
 factorized `P_7` residual rows, at most three of seven common null spaces are
 torus-capable:
 [`ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md`](ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md).
+The `h!=0` branch now has a precise conditional analogue.  If a legal
+selector independently exposes synchronized residual-absent and
+residual-present principal tensors with the same direct blocks and root
+cofactors, their difference `T_Q-hT_0` cancels every direct block and restores
+the factorized residual response.  Away from
+`product_c(z_0[c]z_1[c]-h)=0`, the four-mode theorem applies unchanged.  A
+persistent coordinate-monomial escape must be target-aligned,
+`h=z_0[c]z_1[c]`, and that resonance is sharp for all scalar two-depth
+subtractions because canceling `hB` also deletes colour `c`.  Jointly exposed
+`B,W` still obey common-root matrix-pencil minors/resultants; `W` alone is
+affine-surjective.  The essential legality gap is that one top `P_7` equation
+does not expose `T_0`:
+[`P7_SYNCHRONIZED_TWO_DEPTH_POLAR_SELECTOR_AND_ALIGNED_RESONANCE_BOUNDARY.md`](P7_SYNCHRONIZED_TWO_DEPTH_POLAR_SELECTOR_AND_ALIGNED_RESONANCE_BOUNDARY.md).
 A separate majority-subset theorem says that, on `|S|=m+r` vertices of an
 order-`2m` witness, each contracted monochromatic pure tensor lies in the
 `r`th power of the internal-edge ideal.  At `r=1`, every entangled tensor
