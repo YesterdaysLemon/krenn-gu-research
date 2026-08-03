@@ -1071,6 +1071,19 @@ when every relevant port pair is proved to cross the separator.  Thus the
 next useful condition is a cross-localizing separator, Schur defect, or
 deeper deletion identity, not `haf(A)=0` alone:
 [`RESIDUAL_HAFNIAN_TORUS_ZERO_FULL_RANK_COFACTOR_BOUNDARY.md`](RESIDUAL_HAFNIAN_TORUS_ZERO_FULL_RANK_COFACTOR_BOUNDARY.md).
+The deeper deletion tower now has one exact generating object.  After
+dividing the response with all `q` residual vertices present by the direct
+port Wick family, the residual-relative polynomial has degree at most `q`;
+its degree-`2t` layer is a permanental compound of one common incidence
+matrix weighted by the corresponding principal-hafnian cofactors.  On
+disjoint port charts, all one-leg flattenings across degrees factor through
+one common incidence span of dimension at most `q`.  At `q=2` this is a
+complete dual-Wick tangent classification with explicit four-/six-point
+equations; at `q=4`
+the first new datum is the synchronized quartic permanent compound.  An
+actual `P_7` obstruction still needs a partition-closed lower-jet window that
+exposes those coefficients:
+[`RESIDUAL_RELATIVE_RESPONSE_POLYNOMIAL_DUAL_WICK_THEOREM.md`](RESIDUAL_RELATIVE_RESPONSE_POLYNOMIAL_DUAL_WICK_THEOREM.md).
 A separate majority-subset theorem says that, on `|S|=m+r` vertices of an
 order-`2m` witness, each contracted monochromatic pure tensor lies in the
 `r`th power of the internal-edge ideal.  At `r=1`, every entangled tensor

@@ -1073,6 +1073,27 @@ supplies the generic-completion viewpoint, while this conjecture requires
 exact nongeneric cofactor strata and then a further quotient by the Laplace
 map.
 
+The full response tower admits a sharper translation.  In the
+vertex-exclusive Wick algebra,
+
+```text
+Z_Q=M_B Phi_(A,R),
+[x_S]Phi=sum_(T subset Q, |T|=|S|)
+  haf(A[Q minus T]) per(R_(T,S)),
+degree Phi<=|Q|.
+```
+
+Thus all even degrees form a simultaneous permanental-compound lift through
+one common residual incidence matrix.  On disjoint port charts their
+one-leg flattenings obey `rank[F_2|F_4|F_6|...]<=|Q|`; if `F_2` has full
+residual rank, every higher column must lie in its column space.  This is a
+cross-deletion-depth invariant, not a Pluecker relation.  At two residuals it
+reduces to the already implicit dual-Wick tangent recursion; at four
+residuals the synchronized `F_4` layer is genuinely new data beyond the Gram
+response.  The missing `P_7` step is now precise: expose one actual
+partition-closed lower-jet window before applying these equations.  See
+`RESIDUAL_RELATIVE_RESPONSE_POLYNOMIAL_DUAL_WICK_THEOREM.md`.
+
 Priority on the residual route: force a small separator from blocker
 incidence, expose an invertible anchor for the exact Schur defect, or impose
 the first lower mixed-Hessian/four-point cumulant.  Do not infer a rank drop
@@ -1106,6 +1127,7 @@ new weighted boundary object:     all-sector zeon jet J_W;
 new aligned-port theorem:         aligned one-chord 2+1+0 fully excluded;
 new residual rank boundary:       h=0 still permits rank C(A)=q;
 new residual locality tool:       separator cross-rank <=2^(s-1);
+new residual gluing invariant:    rank[F_2|F_4|F_6|...]<=q on disjoint charts;
 highest-priority invented object: marked pair-deletion response jet;
 highest-priority literature tool: signless Kuo vs Segre compound;
 full proof or counterexample:      NOT YET;
