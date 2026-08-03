@@ -15,8 +15,49 @@ controls, gives the ranked cross-depth program, and records the exact
 separate in
 [`NEXT_INSTANCE_HANDOFF_2026-07-31.md`](NEXT_INSTANCE_HANDOFF_2026-07-31.md).
 
-The current deepest `P_7` advance is a three-part symbolic
-observability theorem.  First, arbitrary-order pinned partner equations,
+The newest arbitrary-order tool is **shallow hafnian-Hessian tomography**.
+For a residual graph on `q=2m` vertices, let `c` be its two-deletion
+cofactor vector and `D` its four-deletion Hessian.  Euler gives
+`D a=(m-1)c`.  At the all-one full-torus point, `D` is `(q-5)!!` times the
+Kneser adjacency matrix `KG(q,2)`, with exact nonzero determinant
+
+```text
+((q-5)!!)^binom(q,2) binom(q-2,2) (-(q-3))^(q-1).
+```
+
+Thus `a=(m-1)D^(-1)c` on a nonempty open at every even order.  A complete
+determinant-cleared `(h,c,D)` representability iff supplies the missing
+nonlinear Hessian-deck and scalar stresses; the visible Kneser support and
+four-set equalities alone are generically insufficient from `q=8` onward.
+This is a polar-map/Lefschetz-type certificate, but not a Lorentzian one:
+the all-one Hessian has multiple positive eigenvalues.  See
+[`RESIDUAL_HAFNIAN_HESSIAN_KNESER_ETALE_AND_JET_INTEGRABILITY_THEOREM.md`](RESIDUAL_HAFNIAN_HESSIAN_KNESER_ETALE_AND_JET_INTEGRABILITY_THEOREM.md).
+
+The theorem aligns with the existing legal `P_7` sensor without requiring
+the full nested cofactor tower.  On one eight-shore, the labeled `H_4/H_6`
+data rationally recover all 28 shore edges; one cyclic eight-row `H_4`
+partner system recovers the omitted star and all 36 nonroot edges.  More
+symmetrically, the nine shore inverses glue exactly when their overlap
+weights agree: local `H_4/H_8` realization then forces all 84 `H_6` values.
+The common GHZ/sensor/Hessian open and every singular-Hessian branch remain
+unknown.  See
+[`SHALLOW_HAFNIAN_HESSIAN_TWO_DECK_INVERSION_AND_P7_LEGAL_SENSOR_INTERFACE.md`](SHALLOW_HAFNIAN_HESSIAN_TWO_DECK_INVERSION_AND_P7_LEGAL_SENSOR_INTERFACE.md).
+
+The last full-support singular pinned branch also has a new symbolic normal
+form.  Boolean `sl_2` duality sends `ell Q_B^2=0` from five-set equations to
+56 local triangle identities in the edge row sums.  Some row sum must be
+nonzero on every edge-torus solution.  Centering there rationally expresses
+all 21 off-star edges through seven star weights and eight row sums away
+from 21 explicit denominator divisors; the exceptional numerator equations
+are retained exactly.  The same reduction proves complementary four-set
+hafnians and excludes the reciprocal-rank-one torus stratum.  It does not
+yet decide whether either the generic closure system or its exceptional
+divisors contain a torus point.  See
+[`P7_PRIMITIVE_BOOLEAN_SQUARE_DUAL_TRIANGLE_STAR_NORMAL_FORM.md`](P7_PRIMITIVE_BOOLEAN_SQUARE_DUAL_TRIANGLE_STAR_NORMAL_FORM.md).
+
+The legal `P_7` sensor on which this new inverse relies is a three-part
+symbolic observability theorem.  First, arbitrary-order pinned partner
+equations,
 viewed through the square-free strong-Lefschetz mechanism, recover every
 nonroot edge rationally from consecutive named hafnian decks whenever the
 root surplus is at least three.  Second, one explicit legal five-root chart

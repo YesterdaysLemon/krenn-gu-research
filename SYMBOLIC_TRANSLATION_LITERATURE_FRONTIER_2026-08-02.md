@@ -35,6 +35,88 @@ globally, or excluding the coordinate branch, is still open.  See
 
 ## 3 August addendum: selector descent and permanental tomography
 
+### Shallow Hessian tomography and affine descent
+
+The arbitrary-order residual inverse no longer needs the complete nested
+cofactor tower on its nonsingular Hessian chart.  For `q=2m` residual
+vertices, place the two-deletion cofactors in `c` and the four-deletion
+cofactors in the edge-indexed hafnian Hessian `D`.  Homogeneous Euler gives
+
+```text
+D a=(m-1)c.
+```
+
+At the all-one full-edge-torus point, `D=(q-5)!! KG(q,2)`.  The three
+Kneser eigenspaces give the exact nonzero determinant
+
+```text
+((q-5)!!)^binom(q,2) binom(q-2,2) (-(q-3))^(q-1),
+```
+
+so `a=(m-1)D^(-1)c` is a rational inverse on a nonempty open at every even
+order.  This also places an etale point of the cofactor polar map inside the
+full torus, proving that cofactor-only universal equations cannot obstruct
+the residual graph.  The joint jet does have a complete obstruction:
+after `delta=det D` and `B=(m-1)adj(D)c`, the nonlinear four-deletion deck
+equations
+
+```text
+delta^(m-2) d_(e,f)=haf(B[Q minus (e union f)])
+```
+
+together with `m delta h=(m-1)c^T adj(D)c` are necessary and sufficient on
+`delta!=0`.  The linear Kneser support and four-set pairing shell is not
+sufficient for `q>=8`.  This is adjacent to polar Cremona maps,
+Artinian-Gorenstein matching algebras, and Hessian/Lefschetz criteria.  It
+is not an application of Lorentzian-polynomial theory: the all-one hafnian
+Hessian has positive multiplicity `1+binom(q,2)-q`, whereas a Lorentzian
+polynomial would have only one positive Hessian eigenvalue.  See
+`RESIDUAL_HAFNIAN_HESSIAN_KNESER_ETALE_AND_JET_INTEGRABILITY_THEOREM.md`.
+
+For `P_7`, this invented shallow-Hessian chart is already legal.  On an
+eight-shore, the existing full sensor labels exactly the `70` entries of
+the `H_4` deck forming `D` and the `28` entries of the `H_6` deck forming
+`c`; one Hessian inverse and one cyclic eight-row star system recover all
+36 nonroot edges.  The nine eight-shore inverses admit an affine descent
+form: local `(H_4,H_8)` physicality plus equality on every overlap is
+equivalent to global `H_4/H_6/H_8` physicality, and all 84 separate `H_6`
+partner checks become automatic.  `P_5` lacks the needed adjacent depths;
+one `P_6` jet has only 81 channels for 70 raw `H_4` plus 28 raw `H_6`
+labels.  Nonlinear or multi-jet `P_6`, GHZ incidence on the P7 Hessian open,
+and singular-Hessian descent remain unknown.  See
+`SHALLOW_HAFNIAN_HESSIAN_TWO_DECK_INVERSION_AND_P7_LEGAL_SENSOR_INTERFACE.md`.
+
+The singular complement is no longer an opaque primitive intersection.
+Boolean `sl_2` duality identifies the kernels of the up and down operators at
+middle degree four, translating `ell Q_B^2=0` into 56 triangle equations
+
+```text
+b_ij r_k+b_ik r_j+b_jk r_i
+ =2(b_ij b_ik+b_ij b_jk+b_ik b_jk),
+r_i=sum_(j!=i)b_ij.
+```
+
+All row sums cannot vanish on the edge torus, because their vanishing would
+put the reciprocal edge vector in the injective `W_(2,3)(8)` kernel.  At a
+vertex with `r_0!=0`, every off-star edge satisfies
+
+```text
+[r_0-2(b_0j+b_0k)]b_jk
+ =2b_0j b_0k-b_0j r_k-b_0k r_j.
+```
+
+Away from the 21 denominator divisors this is a rational star/row-sum normal
+form in a projective 14-parameter ambient closure system; on each divisor
+the corresponding numerator must vanish, so the exceptional branches stay
+visible.  Middle complementation also forces opposite four-set hafnians to
+agree, and a separate symbolic argument excludes reciprocal-rank-one edge
+data.  Feinsilver's Boolean-lattice `sl_2` representation
+([arXiv:1102.0368](https://arxiv.org/abs/1102.0368)) supplies the surrounding
+representation-theoretic language; the identities and kernel argument here
+are self-contained.  Torus nonemptiness of the generic and exceptional
+closure systems remains unknown.  See
+`P7_PRIMITIVE_BOOLEAN_SQUARE_DUAL_TRIANGLE_STAR_NORMAL_FORM.md`.
+
 ### Mixed-root filtration, deletion-label geometry, and a nonlinear escape
 
 The arbitrary mixed-root problem now has an exact matching-filtration
@@ -2369,6 +2451,11 @@ P7 torus pinned circuit support: exactly eight if singular;
 P7 full-support-eight branch:    UNKNOWN;
 primitive Boolean middle space:  dimension 14;
 primitive square meets edge torus: UNKNOWN;
+primitive five-set equations:     EXACT DUAL TRIANGLE SYSTEM;
+torus row sums all zero:          IMPOSSIBLE;
+primitive generic star chart:     RATIONAL 14-PARAMETER AMBIENT REDUCTION;
+primitive exceptional divisors:   EXPLICIT NUMERATOR CONDITIONS;
+reciprocal-rank-one torus branch: IMPOSSIBLE;
 P6 torus pinned rank drop:       exact cubic-resonance control;
 new singular shallow-deck fibre: exact double-star dimension two;
 new arbitrary-order exclusion:    all 3m+2 equality faces impossible;
@@ -2387,6 +2474,13 @@ all-depth root-budget domain:     upper staircase |S|+|T|>=2q;
 eligible all-depth response map: exact affine fibers hide lower faces;
 compound-open response tower:    complete nested-cofactor tomography;
 compound integrability test:     determinant-cleared nested stresses;
+shallow Hessian inverse:          A=(m-1)D^-1 c on a full-torus open;
+all-one Hessian determinant:      exact Kneser spectrum, arbitrary order;
+joint (h,c,D) integrability:      determinant-cleared iff on det D!=0;
+cofactor-only torus obstruction:  IMPOSSIBLE BY DOMINANCE;
+P7 one-shore Hessian recovery:    all 36 nonroot edges, RATIONAL;
+P7 nine-shore affine descent:     EXACT ON COMMON HESSIAN OPEN;
+GHZ meets P7 sensor/Hessian open: UNKNOWN;
 maximal q2 visible response map:  DOMINANT, exact Jacobian minor 360;
 conditional four-point selector: complementary z weights must be additive;
 q4 four-point law:                quartic permanent defect can equal one;
