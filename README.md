@@ -59,6 +59,20 @@ bound is sharp without asserting that the control is a physical square.  See
 and
 [`P7_PRIMITIVE_BOOLEAN_SQUARE_QUOTIENT_HESSIAN_CORANK_AND_TOMOGRAPHY.md`](P7_PRIMITIVE_BOOLEAN_SQUARE_QUOTIENT_HESSIAN_CORANK_AND_TOMOGRAPHY.md).
 
+The apparent additive eight-parameter fibre in that quotient theorem is now
+rigid on the primitive edge torus.  Writing an additive change as
+`Q -> Q+ell U`, two primitive endpoints must obey the exact quadratic law
+`U(Q+Q')=0`.  In every Boolean algebra on at least eight vertices, a nonzero
+gauge has support at most four and forces every edge outside that support to
+vanish.  Hence no primitive full-edge graph has a second additive-gauge
+partner.  At P7 the fixed Lefschetz isomorphism
+`ell^2:A_3 -> A_5` converts feasibility over any quotient representative
+into 56 explicit quadratic equations; if a torus solution exists, it is
+unique.  Consequently the quotient-Hessian-open `H_4/H_6` deck determines at
+most one primitive torus graph, although existence and the quotient-singular
+branch remain unknown.  See
+[`P7_PRIMITIVE_ADDITIVE_GAUGE_RIGIDITY_AND_COORDINATE_BOUNDARY_THEOREM.md`](P7_PRIMITIVE_ADDITIVE_GAUGE_RIGIDITY_AND_COORDINATE_BOUNDARY_THEOREM.md).
+
 Vertex switching supplies no missing legal GHZ direction: it acts by
 diagonal congruence on every shore Hessian and only by a common projective
 scalar on the full root tensor.  For the fixed legal sensor, two coprime

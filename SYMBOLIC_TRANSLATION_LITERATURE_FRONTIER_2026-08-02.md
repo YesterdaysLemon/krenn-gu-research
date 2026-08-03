@@ -138,6 +138,52 @@ of `(4,4)` polytabloids has a named `20 x 20` catalecticant minor
 `2^18*3^6*8117`.  That control is deliberately not promoted to a physical
 square or torus graph.
 
+The additive quotient fibre is rigid once primitivity and the edge torus are
+restored.  An additive edge change `b -> b+R u` is the Boolean quadratic
+change
+
+```text
+Q -> Q+ell U,                 U=sum_i u_i z_i.
+```
+
+If both endpoints obey `ell Q^2=0`, Boolean Lefschetz injectivity cancels
+`ell^2` and gives the exact transition equation
+
+```text
+U(Q+Q')=0.
+```
+
+Multiplication by a linear form supported on at least five variables is
+injective from degree two to degree three.  Therefore every nonzero primitive
+gauge has support at most four.  The coefficient on a triple with one vertex
+inside the support and two outside then forces every edge within the
+complement to vanish.  This proves, for every order at least eight, that the
+primitive full-edge torus has no nontrivial additive chord.
+
+At order eight, `ell^2:A_3 -> A_5` is an isomorphism.  After complementing
+five-sets its matrix is `2 KG(8,3)`, with spectrum
+
+```text
+20^(1), (-12)^(7), 6^(20), (-2)^(28).
+```
+
+For any quotient representative `p`, define
+`Theta(Q_p)=(ell^2)^(-1)(ell Q_p^2)`.  The complete primitive gauge fibre is
+the explicit 56-coordinate quadratic system
+
+```text
+Theta(Q_p)+2Q_p U+ell U^2=0.
+```
+
+It has at most one solution producing a full-edge graph.  Hence on the
+quotient-Hessian open, identical labeled `H_4/H_6` decks determine at most
+one primitive torus realization.  This is an identifiability theorem, not an
+existence theorem; coordinate-boundary star families show that the torus
+hypothesis is essential.  The Boolean `sl_2` language is supported by
+[Feinsilver](https://arxiv.org/abs/1102.0368), while the additive-chord law,
+support-four boundary, and quadratic gauge system are problem-specific.  See
+`P7_PRIMITIVE_ADDITIVE_GAUGE_RIGIDITY_AND_COORDINATE_BOUNDARY_THEOREM.md`.
+
 The 35 unresolved leaf quadrics also have a more geometric form.  Modulo the
 21 anchor equations they are equivalent to complementary four-hafnian
 symmetry.  For a full-support Schur-pencil direction `x`, define a linear
@@ -2712,7 +2758,12 @@ primitive a=R/4 value class:       SIZE AT MOST FOUR;
 primitive size-four exceptional class: EXPLICIT CUBIC;
 primitive full-Hessian kernel:     CONTAINS 8D VERTEX-INCIDENCE SPACE;
 primitive quotient Hessian:        DIMENSION 20;
-primitive quotient-open recovery:  UNIQUE MODULO ADDITIVE 8-GAUGE;
+primitive quotient-open linear fibre: ADDITIVE 8-GAUGE;
+primitive additive chord support:   AT MOST FOUR;
+primitive nonzero gauge complement: FORCED INDEPENDENT SET;
+primitive edge-torus additive gauge: RIGID, NO NONTRIVIAL CHORD;
+primitive P7 gauge feasibility:     EXACT 56-COORDINATE QUADRATIC SYSTEM;
+primitive quotient-open torus deck: AT MOST ONE REALIZATION;
 ambient primitive Hessian rank 20: EXACT SHARPNESS CONTROL, NONPHYSICAL;
 reciprocal-rank-one torus branch: IMPOSSIBLE;
 P6 torus pinned rank drop:       exact cubic-resonance control;

@@ -250,6 +250,10 @@ coordinates.  The star-closure pencil is exactly that remaining nonlinear
 problem.  Its complementary radial reduction, corank-one degree-67 equations,
 and retained deeper singular branch are proved separately in
 `P7_PRIMITIVE_BOOLEAN_SQUARE_COMPLEMENT_RADIAL_AND_EXCEPTIONAL_CLIQUE_THEOREM.md`.
+The additive fibre is also no longer an actual multiplicity on the primitive
+edge torus: `P7_PRIMITIVE_ADDITIVE_GAUGE_RIGIDITY_AND_COORDINATE_BOUNDARY_THEOREM.md`
+proves that it contains at most one primitive full-edge point and gives the
+exact quadratic Lefschetz system that tests its existence.
 
 ## 5. Sharp rank-20 primitive control
 
