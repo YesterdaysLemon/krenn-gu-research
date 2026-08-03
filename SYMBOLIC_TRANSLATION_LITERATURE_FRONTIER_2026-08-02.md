@@ -3491,6 +3491,61 @@ the neighboring language; the covariants (56)--(58) are the new direct
 transfer.  See
 `P7_STRUCTURED_CUBIC_BOOLEAN_LEFSCHETZ_TRANSPORT_AND_MIDDLE_HESSIAN_VANISHING_THEOREM.md`.
 
+## 3 August mixed-Hodge physical-star obstruction
+
+The same physical equations have a second contraction which depends only on
+the radial star.  Multiplying `FK=0`, with `K=2ell A+tF`, by `ell` and using
+`ell F^2=0` gives
+
+```text
+(ell^2 A)F=0.                                         (59)
+```
+
+Thus multiplication by `ell^2 A:A_2->A_5` must be singular and must kill a
+full-edge quadratic.  After complementing the five-set rows to edges, its
+matrix is the weighted Kneser pencil
+
+```text
+M_A(e,g)=2 sum_(v outside e union g)a_v  if e cap g=empty,
+           0                              otherwise.  (60)
+```
+
+Equivalently, if `C` is the adjacency of `KG(7,2)`, `S=sum a_i`, and
+`W_(e,e)=sum_(i in e)a_i`, then `M_A=2(SC-WC-CW)`.
+
+Over the reals, identify the Boolean algebra with the cohomology ring of
+`(P^1)^7`.  If all coefficients of `A` have one sign, then `ell,ell,+/-A`
+are Kähler classes.  The mixed Hard Lefschetz theorem makes (59)'s map an
+isomorphism, a contradiction.  Its signature throughout the positive
+chamber is `(15,6)`, computed at `A=ell` from the Kneser spectrum.  This is
+the first chamber-wide exclusion of the physical extension incidence.
+
+There is also a field-independent orbit exclusion.  Up to a leaf
+permutation, put `A=(p,q,q,q,q,q,q)` with `pq!=0`.  Splitting the edge space
+into six exceptional-star and fifteen internal edges gives
+
+```text
+M_A=[ 0       6q C_6            ],
+    [ 6q C_6^T 2(p+2q)D_6      ],                 (61)
+
+det M_A=(2(p+2q))^9(-144q^2)^5(-1440q^2).
+```
+
+Here `C_6 C_6^T=4I+6J` and `D_6=KG(6,2)` has spectrum
+`6^1,(-3)^5,1^9`.  If `p+2q!=0`, the map is invertible.  On the sole wall
+`p=-2q`, its kernel is the nine-dimensional internal harmonic module
+`{(0,y):C_6y=0}` and therefore has all six exceptional-star coordinates
+zero.  Neither case permits the full-edge `F` required by (59).
+
+Dinh and Nguyen prove the mixed Hodge--Riemann and mixed Hard Lefschetz
+theorems used for the real chamber in
+[*The mixed Hodge--Riemann bilinear relations for compact Kähler
+manifolds*](https://arxiv.org/abs/math/0501449).  Equations (59)--(61), the
+weighted-Kneser transfer, and the characteristic-zero exceptional-orbit
+closure are proved directly here.  General mixed-sign stars remain unknown.
+See
+`P7_PHYSICAL_EXTENSION_MIXED_HARD_LEFSCHETZ_SIGN_CHAMBER_AND_ONE_EXCEPTIONAL_ORBIT_OBSTRUCTION.md`.
+
 ## Ranked proof program
 
 0. **Resolve the legal pullback of target incidence.**  The ambient equation
@@ -3617,6 +3672,13 @@ canonical structured kernel direction: NONZERO, EXPLICIT;
 rank-20 structured determinant on physical incidence: ZERO;
 canonical essential class: -(t sigma(K)/2)[ell F];
 rank-20 middle second Hessian at A: ZERO;
+physical star mixed-Lefschetz kernel: (ell^2 A)F=0;
+weighted Kneser star pencil:          EXACT 21x21 FORMULA;
+real same-sign physical stars:        EXCLUDED BY MIXED HARD LEFSCHETZ;
+same-sign pencil signature:           (15,6);
+six-equal-coordinate star orbit:      EXCLUDED IN CHARACTERISTIC ZERO;
+six-equal determinant wall p=-2q:     9D KERNEL, ALL STAR EDGES ZERO;
+general mixed-sign physical star:     UNKNOWN;
 quotient rank<=18 structured syzygies: AT LEAST TWO;
 leaf four-hafnian map:                PROJECTED VERONESE;
 Boolean multiplication projection center: P^195;

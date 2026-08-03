@@ -306,6 +306,18 @@ it still neither constructs nor excludes a full-edge physical extension.
 See
 [`P7_STRUCTURED_CUBIC_BOOLEAN_LEFSCHETZ_TRANSPORT_AND_MIDDLE_HESSIAN_VANISHING_THEOREM.md`](P7_STRUCTURED_CUBIC_BOOLEAN_LEFSCHETZ_TRANSPORT_AND_MIDDLE_HESSIAN_VANISHING_THEOREM.md).
 
+The extension equations also force the mixed-Lefschetz kernel
+`(ell^2 A)F=0`.  After complementing five-sets, multiplication by
+`ell^2 A` is one symmetric weighted-Kneser pencil on the 21 leaf edges.
+Mixed Hard Lefschetz on `(P^1)^7` makes that pencil invertible whenever the
+real star coefficients of `A` have one sign, excluding both Kähler
+chambers.  Over every characteristic-zero field, an exact `S_6` block
+decomposition excludes the entire orbit `A=(p,q,q,q,q,q,q)`, `pq!=0`:
+off its sole wall `p=-2q` the pencil is invertible, while on the wall its
+nine-dimensional kernel has every exceptional-star edge zero and therefore
+contains no full-edge `F`.  General mixed-sign stars remain unknown.  See
+[`P7_PHYSICAL_EXTENSION_MIXED_HARD_LEFSCHETZ_SIGN_CHAMBER_AND_ONE_EXCEPTIONAL_ORBIT_OBSTRUCTION.md`](P7_PHYSICAL_EXTENSION_MIXED_HARD_LEFSCHETZ_SIGN_CHAMBER_AND_ONE_EXCEPTIONAL_ORBIT_OBSTRUCTION.md).
+
 Vertex switching supplies no missing legal GHZ direction: it acts by
 diagonal congruence on every shore Hessian and only by a common projective
 scalar on the full root tensor.  For the fixed legal sensor, two coprime
