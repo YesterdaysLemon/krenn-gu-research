@@ -69,6 +69,23 @@ order.  The open step is to force a conformal carrier into this aligned,
 coefficient-induced incidence class.  See
 [`ARBITRARY_PERMANENT_THREE_EXCESS_HAMMING_FACE_PINCH_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_HAMMING_FACE_PINCH_THEOREM.md).
 
+## 2 August 2026: boundary-entanglement rank covers both mode profiles
+
+For the unspecialized three-port permanent tensor, take the maximum rank of
+its three one-versus-two flattenings.  Tight degree and local-rank accounting
+show that a completed theta has only two excess-mode profiles: `1+1+1` or
+`2+1+0`; the `3+0+0` profile is impossible.  Exact canonical flattenings
+have rank at least two in both surviving cases.  In the degenerate `2+1+0`
+case, the same characteristic-zero factor `2` as the bosonic Plucker defect
+prevents rank collapse.
+
+After exterior decoupling, `Delta_3` supplies only a zero or rank-one
+three-mode slice for `m>=4`, so a completed theta is impossible.  Therefore
+any surviving two-chord case must use nonempty boundary sectors to cancel
+the rank-two port tensor.  Eliminating or controlling those sectors is now
+the precise convolution problem.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_ENTANGLEMENT_RANK_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_ENTANGLEMENT_RANK_THEOREM.md).
+
 ## 2 August 2026: conformal-core alignment and chord completion
 
 An induced conformal cycle carrying the three excess cells collapses to

@@ -269,6 +269,16 @@ whose three excess cells form its diagonal matching.  Forcing precisely that
 incidence and coefficient-inducedness is now the remaining bridge.  See
 [`ARBITRARY_PERMANENT_THREE_EXCESS_HAMMING_FACE_PINCH_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_HAMMING_FACE_PINCH_THEOREM.md).
 
+The diagonal-incidence restriction is no longer needed once the full port
+tensor is retained.  Define its bosonic boundary-entanglement rank as the
+largest one-versus-two flattening rank.  For a tight completed theta, the
+three-excess degree ledger leaves only mode profiles `1+1+1` and `2+1+0`;
+the port tensor has boundary-entanglement rank at least two in both.  Hence
+an exterior-decoupled completed theta cannot equal the zero/rank-one slice
+of `Delta_3` for `m>=4`.  Any surviving two-chord case must export nonempty
+boundary sectors, which is now the exact global target.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_ENTANGLEMENT_RANK_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_ENTANGLEMENT_RANK_THEOREM.md).
+
 The strict support theorem also transfers back to the graph whenever one of
 the root--blocker extraction lemmas applies.  Five roots with five tight
 blockers require at least 18 active contracted root--blocker covectors.  More

@@ -216,6 +216,11 @@ This closes the exact two-chord bypass once coefficient-inducedness and the
 diagonal incidence are available.  It does not prove either hypothesis from
 the uncoloured conformal-core theorem.
 
+The later boundary-entanglement rank theorem removes the diagonal-incidence
+restriction: under exterior decoupling it treats both possible excess-mode
+profiles `1+1+1` and `2+1+0`.  See
+`ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_ENTANGLEMENT_RANK_THEOREM.md`.
+
 ## Relation to apolarity and tensor support
 
 The local alternate colour at `a_i` is an apolar selector: it annihilates the

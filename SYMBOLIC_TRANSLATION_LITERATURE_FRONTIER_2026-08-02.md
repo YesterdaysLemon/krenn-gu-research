@@ -105,6 +105,15 @@ contraction is a unique nonzero matching.  This Hamming-face pinch excludes
 coefficient-induced diagonal-excess `K_3,3` completions at arbitrary order.
 See `ARBITRARY_PERMANENT_THREE_EXCESS_HAMMING_FACE_PINCH_THEOREM.md`.
 
+Keeping the unspecialized port tensor yields a broader invented invariant:
+bosonic boundary-entanglement rank, the maximum one-versus-two flattening
+rank.  The completed theta has rank at least two for both allowed excess-mode
+profiles, `1+1+1` and `2+1+0`; characteristic zero prevents collapse in the
+second profile through the same factor `2` as the Plucker defect.  A zero or
+rank-one exterior-decoupled `Delta_3` slice is therefore impossible.  Any
+remaining completion must export and cancel nonempty boundary sectors.  See
+`ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_ENTANGLEMENT_RANK_THEOREM.md`.
+
 ## 1. Gain graphs and a new multi-backbone gluing diagram
 
 ### Existing theory
