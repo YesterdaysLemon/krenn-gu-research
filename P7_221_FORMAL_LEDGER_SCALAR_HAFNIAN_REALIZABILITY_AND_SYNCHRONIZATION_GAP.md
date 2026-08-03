@@ -21,8 +21,9 @@ displayed here use incompatible terminal--terminal blocks, and they do not
 cancel mixed blocker-colour words.  The later exact construction
 [`P7_221_COMMON_TERMINAL_BLOCK_SCALAR_HAFNIAN_REALIZABILITY.md`](P7_221_COMMON_TERMINAL_BLOCK_SCALAR_HAFNIAN_REALIZABILITY.md)
 removes the first defect: all three scalar charts admit realizations with one
-common terminal block.  A common tensor-valued physical graph and mixed-word
-cancellation remain unknown.
+common terminal block.  The still later diagonal-gluing theorem puts all
+three pure charts into one tensor-valued physical block graph.  Mixed-word
+cancellation remains unknown.
 
 ## 1. Scalar principal-hafnian translation
 
@@ -302,10 +303,14 @@ Thus the exact status wall is
 formal 2+2+1 ledger, colour by colour:       REALIZED;
 scalar principal-hafnian obstruction:        ABSENT;
 one common terminal block, chartwise:          REALIZED LATER;
-one tensor-valued physical graph:              UNKNOWN;
+one tensor-valued graph on all pure charts:     REALIZED LATER;
 mixed blocker-colour cancellation:           UNKNOWN;
 full P7 restriction and global Krenn--Gu:     UNRESOLVED. (30)
 ```
+
+See `P7_221_DIAGONAL_BLOCK_GLUING_AND_MIXED_WORD_BOUNDARY.md` for that later
+pure-chart gluing theorem and the exact mixed word that survives in its
+canonical diagonal lift.
 
 ## Replay
 

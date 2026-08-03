@@ -10,11 +10,12 @@ verified exactly.
 
 This removes the terminal-block synchronization gap left by
 `P7_221_FORMAL_LEDGER_SCALAR_HAFNIAN_REALIZABILITY_AND_SYNCHRONIZATION_GAP.md`.
-It does not yet produce one tensor-valued physical graph: the three charts
-use different core--core and core--terminal data, and putting those pure
-colour values into tensor edge blocks also creates mixed-colour matching
-words.  Their cancellation remains unproved.  The `P_7` restriction and the
-global Krenn--Gu conjecture therefore remain unresolved.
+The later diagonal-gluing theorem places those different core--core and
+core--terminal data into one tensor-valued physical block graph and recovers
+all pure charts.  It also exhibits a nonzero mixed word in that canonical
+lift.  Cancellation by more general off-diagonal block entries remains
+unproved.  The `P_7` restriction and the global Krenn--Gu conjecture therefore
+remain unresolved.
 
 ## 1. One terminal block for all three charts
 
@@ -316,10 +317,13 @@ The sharp status wall is therefore
 ```text
 formal scalar ledgers:                         REALIZED;
 one common terminal--terminal block:           REALIZED;
-common tensor-valued graph with pure charts:   NOT YET PROVED;
+common tensor-valued graph with pure charts:   REALIZED LATER;
 mixed blocker-colour cancellation:             UNKNOWN;
 full P7 restriction and global Krenn--Gu:       UNRESOLVED. (31)
 ```
+
+See `P7_221_DIAGONAL_BLOCK_GLUING_AND_MIXED_WORD_BOUNDARY.md` for the later
+pure-chart gluing theorem and its exact mixed coefficient `1/7`.
 
 ## Replay
 
