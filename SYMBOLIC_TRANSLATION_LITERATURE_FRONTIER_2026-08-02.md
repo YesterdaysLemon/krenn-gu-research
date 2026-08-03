@@ -3043,6 +3043,55 @@ The tetrad language is adjacent to
 row-support and mixed-location closure are proved directly here.  See
 `P6_TAU_ZERO_SINGULAR_GRAM_TETRAD_SUPPORT_AND_FOUR_PLUS_TWO_NO_GO.md`.
 
+## 3 August two-shore fibre and obstruction transfer
+
+The excluded tau-section is not representative of the entire scalar fibre.
+There is an exact rational point with matching core
+
+```text
+a_01=3,       a_23=1,
+```
+
+all other core and all window edges zero, and only core--window rows 0 and 1
+active.  Rows 2 and 3 vanish.  Writing the two active rows as `r,s`, the six
+face values are the hyperbolic Gram coordinates
+
+```text
+y_pq=r_p s_q+s_p r_q.                                (33d)
+```
+
+Every full-support six-vector has a rational factor of this form after a
+rank-two diagonal completion; explicit rational factors realize all three
+fixed target columns.  For each colour pair the resulting axis operator has
+
+```text
+(rank M,rank M_C,nullity M,delta)=(30,2,26,16).       (33e)
+```
+
+Its kernel is exactly the coordinate span of the sixteen bidirected edges
+between the inactive core pair and the window, together with ten core--core
+directions.  An exact deformation in those coordinates kills the
+both-window-minority family, the inactive-core-pair family, and one active
+core/window family.  The other active-row placement is not killed: its
+coefficient is
+
+```text
+s_p^(d)r_q^(c),                                      (33f)
+```
+
+and a face-45 orientation makes (33f) equal the prescribed nonzero face
+value in colour `d`.
+
+This is a strict obstruction transfer, not a P6 construction.  It proves
+that neither the tau tetrad nor the location of its first fatal `4+2`
+coefficient is fibre-invariant.  A genuine invariant must couple both
+hyperbolic shore rows, use the additional H4 target incidence, or survive a
+further axis deformation.  The rank-two diagonal completion is the same
+algebraic-factor-analysis geometry developed by
+[Drton--Sturmfels--Sullivant](https://arxiv.org/abs/math/0509390); all
+identities and ranks used here are proved directly.  See
+`P6_TWO_SHORE_HYPERBOLIC_SCALAR_FIBRE_AXIS_DEFECT_AND_FOUR_PLUS_TWO_TRANSFER_THEOREM.md`.
+
 ## 3 August equivariant primitivity-resultant transfer
 
 The seven-leaf descent of the P7 quotient-singular branch now admits a
@@ -3649,6 +3698,11 @@ nonsingular Gram route completes 4+2:    IMPOSSIBLE;
 singular Gram route completes 4+2:       IMPOSSIBLE;
 tau=0 full axis-kernel completion:       IMPOSSIBLE, CORE CIRCULATIONS INCLUDED;
 explicit three-parameter tau-section family: EXCLUDED;
+non-tau two-shore P6 scalar fibre:       EXACT RATIONAL REALIZATION;
+two-shore P6 axis data:                  ranks (30,2), nullity 26, delta 16;
+two-shore window/inactive/one-active 4+2 families: CANCELLED;
+two-shore opposite active-row residual: NONZERO FACE VALUE;
+tau tetrad/obstruction location fibre-invariant: FALSE;
 other P6 scalar six-face fibres:         UNKNOWN;
 P6 full two-/three-colour cancellation:  UNKNOWN;
 four-residual even response tower:     COMPLETE IFF CRITERION;

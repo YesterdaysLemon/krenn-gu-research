@@ -97,6 +97,20 @@ three-parameter split-surjective section family.  Other points of the full
 six-face scalar fibre remain unknown.  See
 [`P6_TAU_ZERO_SINGULAR_GRAM_TETRAD_SUPPORT_AND_FOUR_PLUS_TWO_NO_GO.md`](P6_TAU_ZERO_SINGULAR_GRAM_TETRAD_SUPPORT_AND_FOUR_PLUS_TWO_NO_GO.md).
 
+The full six-face fibre really is larger than that excluded section.  A
+second exact rational realization uses the matching core
+`a_01=3,a_23=1`, zero window edges, and two active core--window rows whose
+hyperbolic product is `y_pq=r_p s_q+s_p r_q`.  For every colour pair its
+axis data are `(rank M,rank M_C,nullity,delta)=(30,2,26,16)`, with a
+coordinate kernel supported on the inactive two-vertex shore.  One exact
+kernel deformation cancels the window-pair, inactive-core-pair, and one
+active-row `4+2` family, but transfers the obstruction to the other active
+row as `s_p^(d)r_q^(c)`; on face `45` this is the prescribed nonzero face
+value.  Thus neither the tau-section tetrad nor the first obstruction's
+location is fibre-invariant.  Complete cancellation on this fibre and an
+unrestricted P6 obstruction remain unknown.  See
+[`P6_TWO_SHORE_HYPERBOLIC_SCALAR_FIBRE_AXIS_DEFECT_AND_FOUR_PLUS_TWO_TRANSFER_THEOREM.md`](P6_TWO_SHORE_HYPERBOLIC_SCALAR_FIBRE_AXIS_DEFECT_AND_FOUR_PLUS_TWO_TRANSFER_THEOREM.md).
+
 Four residual vertices also admit a complete **even-depth** physical
 integrability test, so the unavailable singleton and triple residual decks
 can be eliminated rather than exposed.  After normalization by the empty
