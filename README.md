@@ -15,6 +15,46 @@ controls, gives the ranked cross-depth program, and records the exact
 separate in
 [`NEXT_INSTANCE_HANDOFF_2026-07-31.md`](NEXT_INSTANCE_HANDOFF_2026-07-31.md).
 
+The formal Euler--Hessian response jets now have an exact physical
+interpretation: an edge derivative is the response of the same graph after
+deleting that edge's two endpoints, and a disjoint second derivative is the
+corresponding four-vertex deletion response.  This converts the missing
+analytic jet into a synchronized principal-deletion deck.  It also exposes a
+sharp legality obstruction.  A mixed word with `r` roots can carry an even
+deletion set only when `r` is even and large enough, so root polarization
+cannot expose these decks in the odd-root `P_5` or `P_7` branches.  Four-root
+`P_6` is parity-compatible: a clean `2 x 3` permanental fan has determinant
+`-2` and recovers all six pair-deletion faces, but the required clean shore
+and nuisance separation are not yet forced.  See
+[`RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md`](RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md).
+
+The primitive `P_7` branch has two new complementary reductions.  The 35
+remaining leaf quadrics are equivalent to one projective collinearity
+`u wedge v=0`; when it holds, the nonzero affine scale is unique.  On the
+corank-one Schur-pencil stratum this becomes 595 highly dependent homogeneous
+degree-67 equations, while the deeper rank-drop stratum is retained.  The
+exceptional class `a_j=R/4` has size at most four, and size four lies on one
+explicit symmetric cubic.  Independently, every primitive square forces the
+full `28 x 28` hafnian Hessian to kill the eight-dimensional vertex-incidence
+space.  It descends to a 20-dimensional zero-row-sum quotient; on its
+invertible chart the four-/six-hafnian deck reconstructs the primitive edge
+component and leaves exactly an additive eight-parameter gauge.  A fixed
+ambient primitive control has quotient rank 20, so the forced corank-eight
+bound is sharp without asserting that the control is a physical square.  See
+[`P7_PRIMITIVE_BOOLEAN_SQUARE_COMPLEMENT_RADIAL_AND_EXCEPTIONAL_CLIQUE_THEOREM.md`](P7_PRIMITIVE_BOOLEAN_SQUARE_COMPLEMENT_RADIAL_AND_EXCEPTIONAL_CLIQUE_THEOREM.md)
+and
+[`P7_PRIMITIVE_BOOLEAN_SQUARE_QUOTIENT_HESSIAN_CORANK_AND_TOMOGRAPHY.md`](P7_PRIMITIVE_BOOLEAN_SQUARE_QUOTIENT_HESSIAN_CORANK_AND_TOMOGRAPHY.md).
+
+Vertex switching supplies no missing legal GHZ direction: it acts by
+diagonal congruence on every shore Hessian and only by a common projective
+scalar on the full root tensor.  For the fixed legal sensor, two coprime
+degree-18 maximal-flattening factors prove that every nonzero uniform-edge
+graph, together with its entire switching saturation, has flattening rank
+exactly nine and border rank at least nine while all nine shore Hessians stay
+invertible.  Thus any surviving GHZ point must use genuinely nonuniform
+switching-quotient directions.  See
+[`P7_LEGAL_NONROOT_SWITCHING_COVARIANCE_AND_UNIFORM_CURVE_SECANT_SATURATION.md`](P7_LEGAL_NONROOT_SWITCHING_COVARIANCE_AND_UNIFORM_CURVE_SECANT_SATURATION.md).
+
 The newest arbitrary-order tool is **shallow hafnian-Hessian tomography**.
 For a residual graph on `q=2m` vertices, let `c` be its two-deletion
 cofactor vector and `D` its four-deletion Hessian.  Euler gives

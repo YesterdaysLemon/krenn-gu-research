@@ -35,6 +35,118 @@ globally, or excluding the coordinate branch, is still open.  See
 
 ## 3 August addendum: selector descent and permanental tomography
 
+### Principal-deletion response decks and a root-parity superselection rule
+
+The formal response jets from Euler--Hessian unmixing are now physical graph
+objects.  For the common response `Lambda_Q`, differentiation in any matching
+whose covered vertex set is `D` gives exactly `Lambda_(Q minus D)`, independent
+of the matching.  Thus `g_e` is the named two-vertex principal-deletion deck,
+and every nonzero disjoint entry of `G` is the named four-vertex deck.  The
+apparent edge-jet tensor collapses to a much smaller square-free deletion
+deck.  A nonzero affine fibre with identical complete present-vertex tensors
+but varying pair-deletion tensors proves that arbitrary local evaluations,
+polarizations, and finite differences cannot universally simulate the
+missing vacuum.
+
+Legal mixed-root exposure has an exact parity law.  For `r` roots and an even
+deletion set `D` of size `2k`, its coefficient is the augmented hafnian
+
+```text
+Omega_D=haf [ L    H_D ]
+              [H_D^T  0 ],
+```
+
+or equivalently a sum of root partial matchings times permanents.  It is zero
+unless `r` is even and `r>=2k`.  Hence no root-polarization word on the
+three-root `P_5` or five-root `P_7` shore contains the even decks needed by
+Euler--Hessian unmixing.  This is a structural no-go, not a rank shortage.
+Four-root `P_6` is the first compatible branch.  Its existing zero
+root--root chart kills the depth-two coefficient, but a clean `2 x 3`
+permanental fan has determinant `-2` and can recover all six pair-deletion
+faces when its shore and nuisance separation are legally supplied.
+
+The surrounding language is square-free apolar contraction and algebraic
+observability.  The parameter-fibre viewpoint is consonant with
+[Meshkat--Rosen--Sullivant](https://arxiv.org/abs/1609.07985), but their
+state-space framework does not imply this deletion identity or the parity
+law.  **Principal-deletion response jet** and the augmented-hafnian legality
+criterion are invented objects in this package, proved directly from perfect
+matchings.  See
+`RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md`.
+
+### Primitive-square quotient Hessian and radial complement closure
+
+The singular primitive `P_7` branch admits a second translation through
+middle Boolean representation theory.  If `ell Q_B^2=0`, complement symmetry
+and the primitive down equations force the full edge-indexed hafnian Hessian
+`D` to annihilate every additive edge vector `(u_i+u_j)_(ij)`.  The forced
+kernel is the eight-dimensional vertex-incidence space, the six-hafnian
+cofactor has all eight vertex row sums zero, and `D` descends to the
+20-dimensional quotient `ker R^T`.  On the quotient-determinant open, the
+four-/six-hafnian deck reconstructs the primitive edge component uniquely;
+the remaining fibre is exactly the additive gauge `b=p+Ru`, with an exact
+quotient scalar stress for the top hafnian.  The universal corank-eight bound
+is sharp in the ambient 14-dimensional primitive four-set space: a fixed sum
+of `(4,4)` polytabloids has a named `20 x 20` catalecticant minor
+`2^18*3^6*8117`.  That control is deliberately not promoted to a physical
+square or torus graph.
+
+The 35 unresolved leaf quadrics also have a more geometric form.  Modulo the
+21 anchor equations they are equivalent to complementary four-hafnian
+symmetry.  For a full-support Schur-pencil direction `x`, define a linear
+triple vector `u` and a quadratic complementary-four-set vector `v`.  Full
+closure is exactly `u wedge v=0`; both vectors are nonzero on the edge torus,
+so the affine radial scale is then unique.  On the corank-one pencil stratum,
+an adjugate column produces 595 dependent degree-67 equations and an exact
+reconstruction.  Rank at most 19 is retained as a separate branch.  The
+exceptional value class `a_j=R/4` has size at most four; when its size is four,
+the remaining weights `p,q,r`, with `p+q+r=0`, obey
+
+```text
+3pqr+2s(pq+pr+qr)+12s^3=0.
+```
+
+This combines Boolean `sl_2`, catalecticants, and a determinantal pencil.
+Feinsilver supplies the Boolean-lattice representation language
+([arXiv:1102.0368](https://arxiv.org/abs/1102.0368)); higher-Hessian and
+Lefschetz criteria are standard in
+[Maeno--Watanabe](https://arxiv.org/abs/0903.3581), and catalecticant minors
+as secant equations are developed by
+[Landsberg--Ottaviani](https://arxiv.org/abs/1111.4567).  None of those
+sources contains the incidence-kernel theorem, radial complement criterion,
+or degree-67 pencil equations proved here.  See
+`P7_PRIMITIVE_BOOLEAN_SQUARE_QUOTIENT_HESSIAN_CORANK_AND_TOMOGRAPHY.md` and
+`P7_PRIMITIVE_BOOLEAN_SQUARE_COMPLEMENT_RADIAL_AND_EXCEPTIONAL_CLIQUE_THEOREM.md`.
+
+### Switching gauge and uniform-curve secant saturation
+
+Arbitrary-order vertex switching `a_ij -> z_i z_j a_ij` acts on the hafnian
+Hessian by diagonal congruence and on the legal companion map by invertible
+column scaling.  When graph and sensor are switched together, the full root
+tensor changes only by `product z_i`.  Switching is therefore projectively
+vertical: it preserves the sensor image, target incidence, flattening ranks,
+and Hessian openness and cannot supply a missing GHZ tangent direction.
+
+For the fixed legal sensor and the physical uniform graph `a_uv=t`, two named
+`9 x 9` flattening minors have the form
+
+```text
+984150 t^18 P_0(t),       98415 t^18 P_1(t),
+gcd(P_0,P_1)=1 over Q[t].
+```
+
+Consequently every characteristic-zero `t!=0` has flattening rank exactly
+nine and border rank at least nine, while every eight-shore Hessian is
+invertible.  The entire switching saturation is disjoint from `sigma_8`, not
+only from the GHZ variety `sigma_3`.  Ordinary and structured flattenings are
+standard secant-variety tools; see the
+[Hitchhiker guide](https://arxiv.org/abs/1812.10267) and
+[Landsberg--Ottaviani](https://arxiv.org/abs/1111.4567).  The two-minor
+saturation certificate and the conclusion that switching is a legal
+projective gauge are exact results of this package.  Nonuniform quotient
+directions remain unknown.  See
+`P7_LEGAL_NONROOT_SWITCHING_COVARIANCE_AND_UNIFORM_CURVE_SECANT_SATURATION.md`.
+
 ### Shallow Hessian tomography and affine descent
 
 The arbitrary-order residual inverse no longer needs the complete nested
@@ -2544,8 +2656,17 @@ torus row sums all zero:          IMPOSSIBLE;
 primitive star-closure pencil:     28x28, DEGREE-21 DISCRIMINANT;
 primitive generic star fibre:      EMPTY ON EDGE TORUS;
 primitive remaining leaf interface: 35 EXACT QUADRICS;
+primitive leaf interface translation: u wedge v=0, UNIQUE NONZERO SCALE;
+primitive corank-one cleared equations: DEGREE 67;
+primitive deeper Schur-pencil branch: RANK AT MOST 19, UNKNOWN;
 primitive exceptional divisors:   EXACT COMPLEMENTARY-SUM GRAPH;
 primitive vanishing row sums:      AT MOST THREE;
+primitive a=R/4 value class:       SIZE AT MOST FOUR;
+primitive size-four exceptional class: EXPLICIT CUBIC;
+primitive full-Hessian kernel:     CONTAINS 8D VERTEX-INCIDENCE SPACE;
+primitive quotient Hessian:        DIMENSION 20;
+primitive quotient-open recovery:  UNIQUE MODULO ADDITIVE 8-GAUGE;
+ambient primitive Hessian rank 20: EXACT SHARPNESS CONTROL, NONPHYSICAL;
 reciprocal-rank-one torus branch: IMPOSSIBLE;
 P6 torus pinned rank drop:       exact cubic-resonance control;
 new singular shallow-deck fibre: exact double-star dimension two;
@@ -2577,7 +2698,12 @@ h!=0 value/first-jet unmixing:     UNIQUE;
 h=0 value/first-jet fibre:         EXACT VECTOR-SPACE GAUGE;
 first/second response-jet unmixing: UNIQUE ON det D!=0;
 singular response-jet equation:    adj(D)g=0;
-legal exposure of tensor response jets: UNKNOWN;
+first response jet = principal two-deletion deck: PROVED;
+second response jet = principal four-deletion deck: PROVED;
+top present-vertex tensor determines pair deck: NO, EXACT AFFINE FIBRE;
+odd-root P5/P7 deck exposure by root words: IMPOSSIBLE BY PARITY;
+clean four-root P6 pair-deck tomography: EXACT 2x3 FAN, CONDITIONAL LEGALITY;
+legal exposure of required synchronized decks: UNKNOWN;
 maximal q2 visible response map:  DOMINANT, exact Jacobian minor 360;
 conditional four-point selector: complementary z weights must be additive;
 q4 four-point law:                quartic permanent defect can equal one;
@@ -2644,9 +2770,13 @@ top two-port data at h!=0:         FULL AFFINE IMAGE;
 P5/P6 support 18/21:              UNCONDITIONAL AFTER KNOWN EXTRACTION;
 P7 support 24 transfer:           CONDITIONAL ON LEGAL SYNCHRONIZATION;
 minimal tangent-companion cycle:  EXCLUDED BY FULL-ROOT COFACTOR COLLISION;
-highest-priority invented objects: legal response-jet selector and primitive pencil-leaf incidence;
+legal nonroot switching direction: PROJECTIVE GAUGE;
+uniform physical legal-sensor curve: FLATTENING RANK NINE FOR ALL t!=0;
+uniform switching saturation border rank: AT LEAST NINE;
+nonuniform switching-quotient GHZ incidence: UNKNOWN;
+highest-priority invented objects: synchronized deletion-deck selector and nonuniform secant quotient invariant;
 new legality boundary:             top synchronization has shore rank one;
-highest-priority literature tools: apolar Lefschetz, algebraic observability, determinantal elimination;
+highest-priority literature tools: square-free apolarity, quotient Lefschetz, secant saturation, determinantal elimination;
 full proof or counterexample:      NOT YET;
 global Krenn--Gu conjecture:       UNRESOLVED.
 ```
