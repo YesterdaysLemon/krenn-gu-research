@@ -16,10 +16,10 @@ diagonal evaluations are independent entries of that one block.  Likewise,
 one core--terminal block can interpolate the three scalar incidence values.
 
 This correction does not solve the tensor problem.  The diagonal lift has an
-explicit nonzero mixed blocker-colour coefficient equal to `1/7`.  Free
-off-diagonal colour entries could in principle cancel it, so this is a
-counterexample only to the naive diagonal lift, not an obstruction to every
-block extension.  Mixed-word cancellation remains the exact next layer.
+explicit nonzero mixed blocker-colour coefficient equal to `1/7`.  This note
+by itself only excludes the naive diagonal lift.  The later degree-five
+four-face circuit proves that no choice of its off-diagonal core entries can
+repair these fixed pure certificates; other scalar lifts remain open.
 
 ## 1. Fixed-terminal scalar charts
 
@@ -224,6 +224,12 @@ create cancelling mixed matchings.  Proposition 3 does not show that no
 choice of (19), or no more general block extension, can cancel (17) together
 with every other mixed coefficient.
 
+The later theorem
+`P7_221_FIXED_DIAGONAL_LIFT_DEGREE5_MIXED_CIRCUIT_OBSTRUCTION.md` closes the
+first possibility for these fixed charts: a four-face degree-five circuit
+cancels all twelve relevant off-diagonal variables and remains nonzero.  It
+does not exclude a different scalar realization of the same pure ledgers.
+
 ## 5. Exact scope
 
 The theorem concerns the frozen-terminal principal-cofactor layer.  It
@@ -240,7 +246,8 @@ three scalar principal-hafnian charts:          REALIZED;
 one common frozen terminal matrix:              REALIZED;
 one physical block graph on all pure charts:    REALIZED;
 the canonical diagonal lift:                    FAILS A MIXED WORD;
-some off-diagonal extension cancelling all words: UNKNOWN;
+off-diagonal core completion of these fixed charts: EXCLUDED LATER;
+different pure scalar lift with mixed cancellation:  UNKNOWN;
 full tangent-jet/block compatibility:           NOT PROVED HERE;
 full P7 restriction and global Krenn--Gu:        UNRESOLVED. (20)
 ```

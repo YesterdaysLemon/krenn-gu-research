@@ -1288,6 +1288,44 @@ mixed deletion equations by two unprescribed coefficients per word; it does
 not construct a common off-diagonal extension.  See
 `P7_221_TENSOR_COEFFICIENT_WICK_DECONVOLUTION_TWO_FACE_LOCALIZATION.md`.
 
+The low bosonic compounds now give a positive information boundary and a
+negative fixed-chart result.  For seven cores,
+
+```text
+Phi^(k)=sum_(|S|=k) haf(A[Z\S]) product_(i in S)L_i.
+```
+
+The exact insertion identity
+`Phi_pqr=D_(B^(qr))Phi_p` makes the cubic response a directional derivative
+of the singleton response, not a multiple of its value.  More decisively,
+the scalar map to all seven singleton and 35 cubic responses is dominant in
+characteristic zero: a fixed integer `42 x 42` Jacobian minor is nonzero.
+No universal scalar polynomial in degrees one and three can therefore
+exclude the ledger.
+
+At degree five, each response is the one-core-edge compound
+
+```text
+Phi_S=sum_(i<j) A_ij per R[Z\{i,j},S].
+```
+
+For the fixed common-terminal charts, the mixed word `2220000` has the exact
+dual face selector
+
+```text
+Phi_125ab-Phi_145ab-Phi_235ab+Phi_345ab
+  =2(805+52 rho)/49 !=0.
+```
+
+The alternating row of the fifth permanental compound annihilates all twelve
+cross-colour core variables and isolates the fixed monochromatic edge
+`A_12=1`.  Since the four corresponding deletion faces are prescribed mixed
+zeros, no off-diagonal core completion repairs these particular charts.
+Different pure scalar realizations and different core alignments remain
+outside this theorem.  See
+`P7_SEVEN_CORE_BOSONIC_COMPOUND_FIRST_THIRD_JET_BOUNDARY.md` and
+`P7_221_FIXED_DIAGONAL_LIFT_DEGREE5_MIXED_CIRCUIT_OBSTRUCTION.md`.
+
 The mixed-word selector itself is no longer missing in the factorized `h=0`
 branch.  For a selected pair `{u,v}`, choose a common residual-null vector at
 each of the other five blockers and contract those five legs in the full
@@ -1378,20 +1416,85 @@ See
 See
 `P7_STRICT_TWO_ENDPOINT_SYNCHRONIZED_TOP_FACE_AND_SHORE_LINE_BOUNDARY.md`.
 
+## Cross-area translation after the two-face reduction
+
+The current equations sit close to several established subjects, but the
+transfers have different legal strength.
+
+1. **Algebraic statistics and trek separation.**  Trek separation turns
+   graphical path factorizations into low-rank covariance submatrices and
+   determinantal constraints.  The bosonic transfer is not a covariance
+   determinant: it is the permanental compound in the degree-five formula
+   above.  Its dual rows are still exact observable selectors.  The new
+   four-face circuit is the first successful transfer of that strategy: a
+   `2 x 2` alternating face functional isolates one hidden core edge without
+   reconstructing the remaining edge vector.  See Sullivant, Talaska, and
+   Draisma, [*Trek separation for Gaussian graphical
+   models*](https://arxiv.org/abs/0812.1938).
+
+2. **Moment and cumulant varieties.**  Gaussian moment varieties suggest
+   studying the Zariski image of the compound parametrization, while binary
+   cumulant coordinates suggest Boolean-lattice Mobius changes that simplify
+   hidden-subset models.  Both transfers are now concrete: Jacobian dominance
+   proves that the scalar first/third moment image has no equations, and
+   squarefree Wick deconvolution reduces every mixed word to two faces.  See
+   Amendola, Faugere, and Sturmfels, [*Moment Varieties of Gaussian
+   Mixtures*](https://arxiv.org/abs/1510.04654), and Sturmfels and Zwiernik,
+   [*Binary Cumulant Varieties*](https://arxiv.org/abs/1103.0153).
+
+3. **Gaussian photon cumulants and connected matching objects.**  In photon
+   statistics, loop hafnians encode moments and the Montrealer encodes
+   connected cumulants/Hamiltonian cycles.  This suggests testing a connected
+   degree-five selector once several blocker words are coupled.  It does not
+   create a new equation for the current marker-linear deletion cube: its
+   legal cumulant is exactly the Wick deconvolution already used.  See Cardin
+   and Quesada, [*Photon-number moments and cumulants of Gaussian
+   states*](https://arxiv.org/abs/2212.06067).
+
+4. **Hafnian shuffle identities.**  Shuffle-algebra proofs organize Wick and
+   hafnian identities without signs and may compress higher compound
+   calculations.  They apply to complete compatible families, so a proposed
+   use must still prove that the required deletion faces are legally present.
+   See Luque and Thibon, [*Pfaffian and hafnian identities in shuffle
+   algebras*](https://arxiv.org/abs/math/0204026).
+
+5. **Tensor-network image geometry.**  The formal global-idempotent common
+   core realizes every diagonal chart because it suppresses mixed products;
+   the physical vertexwise tensor algebra does not.  This is an exact image
+   membership problem, not merely orbit-closure or border membership.  The
+   known nonclosedness of tensor-network state spaces is therefore a warning
+   against accepting a degeneration as a physical realization.  See
+   Landsberg, Qi, and Ye, [*On the geometry of tensor network
+   states*](https://arxiv.org/abs/1105.4449).
+
+The strongest new route is consequently an alignment-independent dual row of
+the fifth permanental compound, or a proof that the pure-chart fibre always
+meets such a selector.  Ordinary matchgate/spinor identities remain
+conditional because generic hafnian signs do not transfer.
+
 ## Ranked proof program
 
-1. **Phase-decorated `B_3` exchange complex.**  Define the missing incidence
+1. **Alignment-independent fifth permanental compound.**  Replace the fixed
+   scalar certificates by the full pure-chart fibre and decide whether some
+   legally prescribed face row always isolates a nonzero monochromatic core
+   edge.  A universal selector would exclude the 2+2+1 ledger; a symbolic
+   evasion family would identify the next required chart invariant.
+2. **Physical-idempotent separator.**  Find a polynomial/covariant that
+   vanishes for vertexwise local-colour block graphs but distinguishes the
+   formal global-idempotent realization.  It must use degree five or seven,
+   because degrees one and three are dominant.
+3. **Phase-decorated `B_3` exchange complex.**  Define the missing incidence
    alignment between the conformal cycle/theta matching and the
    at-most-eight pure backbones, then glue the exact additive and cubic toric
    equations.  A single coefficient cannot exclude simultaneous bypasses.
-2. **Deletion-depth cofactor quiver.**  Build one cross-sector
+4. **Deletion-depth cofactor quiver.**  Build one cross-sector
    semi-invariant using actual lower cofactor values.  The tangent
    counterfamily rules out weaker candidates in advance.
-3. **Coloured deletion-cumulant compatibility.**  Use two overlapping root
+5. **Coloured deletion-cumulant compatibility.**  Use two overlapping root
    windows to turn quotient minors into a global log-quadratic obstruction.
-4. **Conditional Pfaffian chart.**  Apply matchgate identities only if a
+6. **Conditional Pfaffian chart.**  Apply matchgate identities only if a
    support-specific orientation is forced.
-5. **GIT/tropical degeneration.**  Seek a one-parameter initial form that
+7. **GIT/tropical degeneration.**  Seek a one-parameter initial form that
    preserves the exact diagonal restriction; do not substitute asymptotic or
    border statements.
 
@@ -1419,7 +1522,10 @@ new scalar synchronization:         one common terminal block is realized;
 new pure-chart gluing:               one block graph realizes all pure charts;
 new diagonal-lift boundary:          one forbidden mixed coefficient is 1/7;
 new mixed residual localization:     only two unprescribed faces per word;
-new synchronization gap:            off-diagonal mixed cancellation remains;
+new low-compound boundary:           scalar degrees 1+3 are dominant;
+new degree-five circuit:             four faces cancel all 12 cross variables;
+fixed-chart off-diagonal completion: EXCLUDED;
+new synchronization gap:            other scalar lifts/alignments remain;
 new h=0 polar selector:            five null legs isolate one mixed pair block;
 new arbitrary-order boundary:      at least three coordinate-incidence modes;
 new incidence sharpness:           canonical profile does not balance the three;
@@ -1427,9 +1533,9 @@ new row-pair incidence theorem:    every pair needs at least five modes;
 new five-mode sharpness:           polar/canonical/pure data attain equality;
 new h!=0 conditional selector:     synchronized depth cancels direct blocks;
 new aligned-resonance boundary:    scalar depth subtraction then loses a colour;
-highest-priority invented object: legal synchronized-depth observation;
+highest-priority invented object: alignment-free permanental compound row;
 new legality boundary:             top synchronization has shore rank one;
-highest-priority literature tool: determinantal circuit completion;
+highest-priority literature tool: compound/tetrad circuit completion;
 full proof or counterexample:      NOT YET;
 global Krenn--Gu conjecture:       UNRESOLVED.
 ```

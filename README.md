@@ -1165,6 +1165,28 @@ degree-five face except `P\Q`, vanishes.  The full synchronization problem is
 therefore concentrated on exactly two unprescribed faces per mixed word; this
 is a localization theorem, not yet an off-diagonal block construction:
 [`P7_221_TENSOR_COEFFICIENT_WICK_DECONVOLUTION_TWO_FACE_LOCALIZATION.md`](P7_221_TENSOR_COEFFICIENT_WICK_DECONVOLUTION_TWO_FACE_LOCALIZATION.md).
+The resulting bosonic compound hierarchy now separates the useful degrees.
+For seven cores,
+`Phi^(k)=sum_(|S|=k) haf(A[Z\S]) product_(i in S)L_i`, and every cubic
+coefficient is an exact directional derivative of a singleton coefficient in
+a rank-at-most-two core-block direction.  Nevertheless the scalar map to all
+seven singleton and 35 cubic responses is dominant: one fixed `42 x 42`
+Jacobian minor is nonzero.  Thus degrees one and three carry no universal
+scalar polynomial obstruction.  Degree five does.  For the fixed exact pure
+charts and mixed word `2220000`, the one-core-edge Laplace expansion gives
+
+```text
+Phi_125ab-Phi_145ab-Phi_235ab+Phi_345ab
+  =2(805+52 sqrt(21))/49 !=0.
+```
+
+All twelve arbitrary cross-colour core edges cancel from this four-face
+permanental-compound selector, while the ledger requires all four mixed faces
+to vanish.  Hence no off-diagonal core-edge completion repairs these fixed
+pure certificates.  Different scalar realizations or core alignments remain
+unexcluded:
+[`P7_SEVEN_CORE_BOSONIC_COMPOUND_FIRST_THIRD_JET_BOUNDARY.md`](P7_SEVEN_CORE_BOSONIC_COMPOUND_FIRST_THIRD_JET_BOUNDARY.md).
+[`P7_221_FIXED_DIAGONAL_LIFT_DEGREE5_MIXED_CIRCUIT_OBSTRUCTION.md`](P7_221_FIXED_DIAGONAL_LIFT_DEGREE5_MIXED_CIRCUIT_OBSTRUCTION.md).
 Second, the aggregated-selector alternative is now exact in the factorized
 `h=0` branch.  Contracting any five blocker legs in their two residual-row
 common null spaces kills the twenty competing surplus-two Laplace terms
