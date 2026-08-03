@@ -14262,12 +14262,24 @@ exactly two pure switches, and every source-subset Hall quota.  It is not a
 solution of the mixed coefficient equations.  It is a rigorous no-go for
 forcing the third rectangle from ledger/rank/Hall data alone.
 
-The new symbolic target is to contract the connected shore while retaining
-its three or five port values, then prove that neither boundary signature is
-compatible with all mixed diagonal-target coefficients.
+The three-edge shore is now excluded by a full-support tight-cut flattening.
+Its `c,d` ports have the same outside source `q`, so Laplace expansion has
+only two distinct complement minors:
+
+```text
+P_m=(L_c+L_d) O_q+L_e O_p.
+```
+
+Thus its shore flattening has rank at most two, while the corresponding
+nontrivial flattening of `Delta_3` has rank three.  This is an arbitrary-order
+contradiction and packages all mixed coefficients at once.  The sole
+no-completion shore still open at this checkpoint is `(1,1,3)`.
 
 ```text
 ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_PORT_COMPLETION_SHORE_THEOREM.md
 verify_arbitrary_permanent_equality_two_switch_port_completion_shore_theorem.py
 audit_arbitrary_permanent_equality_two_switch_port_completion_shore_theorem.py
+ARBITRARY_PERMANENT_EQUALITY_THREE_EDGE_SHORE_FLATTENING_EXCLUSION.md
+verify_arbitrary_permanent_equality_three_edge_shore_flattening_exclusion.py
+audit_arbitrary_permanent_equality_three_edge_shore_flattening_exclusion.py
 ```

@@ -163,9 +163,14 @@ indirectly from other mixed equations.
 
 This is the appropriate tight-cut translation: contract a connected shore
 while retaining its three or five boundary port values, and seek a boundary
-coefficient identity incompatible with the diagonal target.  The shore
-signature is finite in type at every `m`, while its interior remains
-symbolic; no census of supports is needed.
+coefficient identity incompatible with the diagonal target.  The three-edge
+signature is now excluded exactly.  Its two switch-colour ports occupy the
+same outside source, so full-support Laplace expansion has only two distinct
+complement minors and flattening rank at most two.  The corresponding
+nontrivial flattening of `Delta_3` has rank three.  Thus only the five-edge
+`(1,1,3)` no-completion shore survives.  The shore signature is finite in
+type at every `m`, while its interior remains symbolic; no census of supports
+is needed.
 
 ## 2. Toric ideals and matching-exchange binomials
 
@@ -433,9 +438,9 @@ Priority: exploratory, but fully symbolic.
    one-switch face, exclude the marked bridge-or-series cut using the unique
    triangular residual matching.  In the two-switch face, force a nonlocal
    overlap cycle outside the separated common excess mode, or exclude both
-   residual Hall shores `(1,1,1)` and `(1,1,3)` by their boundary
-   coefficients.  This is arbitrary-order and closest to a global support
-   theorem.
+   residual five-edge Hall shore `(1,1,3)` by its boundary coefficients; the
+   three-edge shore `(1,1,1)` is already excluded by tight-cut flattening.
+   This is arbitrary-order and closest to a global support theorem.
 2. **Deletion-depth cofactor quiver.**  Build one cross-sector
    semi-invariant using actual lower cofactor values.  The tangent
    counterfamily rules out weaker candidates in advance.

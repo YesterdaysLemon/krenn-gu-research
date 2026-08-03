@@ -21,8 +21,9 @@ local rank three, exactly two pure switches, and every source-subset Hall
 quota, but has a shore of type `(1,1,3)`.  It is not a full equality
 restriction.  It proves that the ledger, localization, pure-cube structure,
 local concision, and deletion quotas alone cannot force the desired port
-completion.  The remaining proof obligation is to exclude the two shore
-types using mixed coefficient equations.
+completion.  A subsequent full-support tight-cut flattening excludes the
+`(1,1,1)` type.  The remaining no-completion proof obligation in this note's
+dependency chain is the `(1,1,3)` shore.
 
 ## Two-switch support normal form
 
@@ -250,9 +251,11 @@ and a three- or five-edge coloured shore.
 
 This suggests a tight-cut induction rather than a support census.  Contract
 the connected shore while retaining its three or five port values, then use
-the mixed coefficient equations to show that neither boundary signature can
-glue to the required diagonal tensor.  The explicit model (18) is a guardrail:
-Hall quotas and local ranks alone cannot perform that last step.
+the mixed coefficient equations to constrain the boundary signature.  The
+three-edge signature is excluded by the rank-two Laplace factorization in
+`ARBITRARY_PERMANENT_EQUALITY_THREE_EDGE_SHORE_FLATTENING_EXCLUSION.md`.
+The explicit model (18) is a guardrail for the five-edge case: Hall quotas and
+local ranks alone cannot perform that last step.
 
 ## Verification
 
@@ -277,8 +280,9 @@ no-completion Hall deficit:              EXACTLY ONE;
 switch-colour shore cuts:                (1,1);
 third-colour shore cut:                  1 OR 3;
 no-completion shore types:               (1,1,1) OR (1,1,3);
+(1,1,1) shore:                           EXCLUDED SUBSEQUENTLY;
+(1,1,3) shore:                           UNRESOLVED IN THIS NOTE;
 ledger/rank/Hall force completion:        NO;
-mixed coefficients exclude both shores: UNKNOWN;
 two-switch equality stratum:             UNRESOLVED;
 global Krenn--Gu conjecture:              UNRESOLVED.
 ```
