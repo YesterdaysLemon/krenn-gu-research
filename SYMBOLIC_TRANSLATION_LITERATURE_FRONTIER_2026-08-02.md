@@ -374,6 +374,62 @@ or degree-67 pencil equations proved here.  See
 `P7_PRIMITIVE_BOOLEAN_SQUARE_QUOTIENT_HESSIAN_CORANK_AND_TOMOGRAPHY.md` and
 `P7_PRIMITIVE_BOOLEAN_SQUARE_COMPLEMENT_RADIAL_AND_EXCEPTIONAL_CLIQUE_THEOREM.md`.
 
+### The quotient-singular P7 branch as an apolar incidence
+
+The deeper quotient-Hessian branch is no longer only the zero set of a
+large determinant.  For the primitive middle four-form `H=Q^2/2`, complement
+symmetry and the perfect Boolean pairing give
+
+```text
+D w=0  iff  wH=0.
+```
+
+Thus the forced eight-dimensional incidence kernel is the ideal piece
+`ell A_1`, while every additional quotient-kernel direction is a genuine
+quadratic annihilator.  This is the square-free Macaulay-apolar meaning of
+quotient singularity.
+
+On a seven-leaf radial chart, write the primitive leaf four-form as `N` and
+identify the 20-dimensional quotient with the total-zero leaf-edge
+hyperplane
+
+```text
+G_0={G:sum_(j<k)g_jk=0}.
+```
+
+The quotient operator is conjugate to the square linear map obtained by
+complementing
+
+```text
+Phi_N(G)=G(JN)-(partial G)N.
+```
+
+Every entry is linear in `N`.  Its determinant is a nonzero homogeneous
+degree-20 polynomial on the 14-dimensional primitive leaf space; a fixed
+ambient control has exact determinant
+
+```text
+2^24 3^13 7 8117.
+```
+
+At rank nineteen the annihilator direction `[G]` is projectively unique;
+rank at most eighteen remains as the deeper incidence.  For a physical
+radial graph, the entire singular branch lifts to
+
+```text
+N=F^2/2,       ell_L N=0,       AF=t JN,
+sum g_jk=0,    G(JN)=(partial G)N.
+```
+
+In particular it descends to a seven-leaf full-edge primitive-square
+problem.  These are quadratic and bilinear equations with auxiliary data,
+not the earlier degree-67 elimination.  Their physical edge-torus
+intersection is still unknown.  The apolar/catalecticant language is
+standard in [Landsberg--Ottaviani](https://arxiv.org/abs/1111.4567), and the
+Boolean `sl_2` structure in [Feinsilver](https://arxiv.org/abs/1102.0368);
+the conjugacy and radial formula are problem-specific.  See
+`P7_PRIMITIVE_QUOTIENT_SINGULAR_APOLAR_RADIAL_BILINEAR_INCIDENCE_THEOREM.md`.
+
 ### Switching gauge and uniform-curve secant saturation
 
 Arbitrary-order vertex switching `a_ij -> z_i z_j a_ij` acts on the hafnian
@@ -2928,6 +2984,13 @@ primitive edge-torus additive gauge: RIGID, NO NONTRIVIAL CHORD;
 primitive P7 gauge feasibility:     EXACT 56-COORDINATE QUADRATIC SYSTEM;
 primitive quotient-open torus deck: AT MOST ONE REALIZATION;
 ambient primitive Hessian rank 20: EXACT SHARPNESS CONTROL, NONPHYSICAL;
+primitive full kernel:             DEGREE-TWO APOLAR ANNIHILATOR;
+primitive quotient-singular chart: 20x20 BILINEAR RADIAL MAP;
+primitive singular determinant:    NONZERO DEGREE 20 ON 14-SPACE;
+primitive rank-19 annihilator:      UNIQUE PROJECTIVELY;
+primitive rank<=18 annihilator:     RETAINED;
+physical singular radial lift:      QUADRATIC/BILINEAR SYSTEM;
+physical singular lift meets edge torus: UNKNOWN;
 reciprocal-rank-one torus branch: IMPOSSIBLE;
 P6 torus pinned rank drop:       exact cubic-resonance control;
 new singular shallow-deck fibre: exact double-star dimension two;

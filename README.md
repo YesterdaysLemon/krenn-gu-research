@@ -126,6 +126,19 @@ most one primitive torus graph, although existence and the quotient-singular
 branch remain unknown.  See
 [`P7_PRIMITIVE_ADDITIVE_GAUGE_RIGIDITY_AND_COORDINATE_BOUNDARY_THEOREM.md`](P7_PRIMITIVE_ADDITIVE_GAUGE_RIGIDITY_AND_COORDINATE_BOUNDARY_THEOREM.md).
 
+The quotient-singular primitive branch now has an exact low-degree apolar
+model.  For the primitive four-form `H=Q^2/2`, the full Hessian kernel is
+precisely the quadratic annihilator `Ann_2(H)`, so excess quotient corank is
+an actual annihilator rather than an unexplained determinant zero.  On the
+seven-leaf radial chart, the 20-dimensional quotient is conjugate to
+`G -> J(G(JN)-(partial G)N)` on the total-zero leaf-edge hyperplane.  Its
+determinant is a nonzero degree-20 polynomial on the 14-dimensional
+primitive leaf space.  The physical singular branch is therefore the lifted
+quadratic/bilinear incidence `N=F^2/2`, `AF=tJN`, and
+`G(JN)=(partial G)N`.  This replaces the degree-67 eliminated shadow, but
+does not yet prove that its full-edge physical intersection is empty.  See
+[`P7_PRIMITIVE_QUOTIENT_SINGULAR_APOLAR_RADIAL_BILINEAR_INCIDENCE_THEOREM.md`](P7_PRIMITIVE_QUOTIENT_SINGULAR_APOLAR_RADIAL_BILINEAR_INCIDENCE_THEOREM.md).
+
 Vertex switching supplies no missing legal GHZ direction: it acts by
 diagonal congruence on every shore Hessian and only by a common projective
 scalar on the full root tensor.  For the fixed legal sensor, two coprime
