@@ -300,7 +300,7 @@ sets an aligned theta-edge coefficient to zero, so it lies precisely on the
 nonalignment divisor.  Thus the aligned one-chord `s=4` branch is excluded;
 when `s=3`, all boundary quotients are lines and a unique exterior selector
 retains port rank two.  Hence the entire aligned diagonal-`1+1+1` one-chord
-profile is excluded.  The `2+1+0` and bare-theta branches remain open.  See
+profile is excluded.  See
 [`ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_CUT_COLOR_EXCLUSION_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_CUT_COLOR_EXCLUSION_THEOREM.md).
 
 The `2+1+0` profile exposes the sharp limit of that ordinary quotient.  An
@@ -313,6 +313,21 @@ This is a countermodel to the method, not a restriction, and motivates a
 derived apolar boundary signature retaining exterior-power boundary data.
 See
 [`ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_APOLAR_SATURATION_BOUNDARY.md`](ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_APOLAR_SATURATION_BOUNDARY.md).
+
+Alignment supplies the missing incidence.  In the physical eight-cell
+`2+1+0` port it forces the zero-excess mode to export exactly the other two
+colours; an apolar rank minor and cut-colour transport then exclude all
+surplus placements.  If the second chord is physically present in another
+colour but ineligible at the aligned word, its full tensor terms survive,
+but the aligned-colour coordinate slice removes them exactly.  The
+four-placement physical ledger then reduces to a nonzero Segre minor or a
+nonzero port slice
+against a transported zero target.  Thus the complete aligned one-chord
+`2+1+0` profile is excluded for `m>=4`; the bare aligned theta remains open.
+See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_210_ALIGNMENT_DESATURATION_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_210_ALIGNMENT_DESATURATION_THEOREM.md)
+and
+[`ARBITRARY_PERMANENT_THREE_EXCESS_INELIGIBLE_NINTH_CELL_EXCLUSION_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_INELIGIBLE_NINTH_CELL_EXCLUSION_THEOREM.md).
 
 The strict support theorem also transfers back to the graph whenever one of
 the root--blocker extraction lemmas applies.  Five roots with five tight

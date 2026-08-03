@@ -939,10 +939,27 @@ At source `p_2`, its two nonexcess core cells force
 to `C\{alpha_2}=C\{alpha_1}`, the opposite equality.  Thus the complete
 aligned physical eight-cell one-chord `2+1+0` subbranch is excluded.
 
-Priority: treat the separate branch where the second chord is physically
-present in another colour but ineligible at the aligned word.
-The branch where the second chord exists physically in another colour but is
-ineligible at the aligned word is separate and remains open.
+The separate physical-nine-cell branch also closes symbolically.  If the
+second chord has colour `gamma!=alpha_2`, source-cover uniqueness forces
+`{alpha_1,alpha_2,gamma}=C`.  It must be retained in the full port tensor,
+but an `alpha_2` coordinate slice kills exactly its `gamma` terms.  The
+physical degree ledger has only four placements.  Two retain the nonzero
+Segre minor `a d^2`; in the other two, cut-colour transport forces the
+`alpha_2` target factor into a boundary span while the port slice stays
+nonzero.  See
+`ARBITRARY_PERMANENT_THREE_EXCESS_INELIGIBLE_NINTH_CELL_EXCLUSION_THEOREM.md`.
+
+This realizes the coloured/aligned response-image idea in its smallest
+useful form: incidence and cut transport are imposed before a coordinate
+slice is tested against the rank-one Segre ideal.  The tool is an ordinary
+flattening minor, not a Pfaffian identity; compare Landsberg--Manivel,
+[*On the ideals of secant varieties of Segre varieties*](https://arxiv.org/abs/math/0311388),
+and the boundary-tensor viewpoint in Landsberg--Qi--Ye,
+[*On the geometry of tensor network states*](https://arxiv.org/abs/1105.4449).
+
+Priority: classify and attack the bare aligned theta, which is now the
+remaining aligned `2+1+0`-adjacent physical port rather than a one-chord
+case.
 
 ## Ranked proof program
 
@@ -969,9 +986,9 @@ new arbitrary-order theorem:      support >=3m+3 and S_3 port normal form;
 new exact local invariant:        additive/toric B_3 phase variety;
 new boundary support theorem:     all sectors descend to L=B D^* C links;
 new weighted boundary object:     all-sector zeon jet J_W;
-new aligned-port theorem:         physical 8-cell 2+1+0 fully excluded;
+new aligned-port theorem:         aligned one-chord 2+1+0 fully excluded;
 highest-priority invented object: coloured/aligned response-image ideal;
-highest-priority literature tool: zeon algebra + derived flattening;
+highest-priority literature tool: colour-sliced Segre flattening;
 full proof or counterexample:      NOT YET;
 global Krenn--Gu conjecture:       UNRESOLVED.
 ```

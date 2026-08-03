@@ -71,7 +71,8 @@ the form `M` are the three excess cells.
 If `a_2p_1` exists physically with another coordinate colour but is
 ineligible at the aligned word, it contributes to the physical degree and
 can supply a missing local-rank direction.  That differently coloured
-second-chord branch is outside this theorem and remains open.
+second-chord branch is outside this theorem; it is excluded separately in
+`ARBITRARY_PERMANENT_THREE_EXCESS_INELIGIBLE_NINTH_CELL_EXCLUSION_THEOREM.md`.
 
 Let `Q` be the exterior sources and define
 
@@ -372,7 +373,8 @@ aligned physical eight-cell one-chord 2+1+0
 ```
 
 The word-ineligible but physically present second chord changes the physical
-degree and source-colour ledgers and remains outside (29).
+degree and source-colour ledgers and remains outside (29).  Its later
+exclusion uses the full nine-cell tensor and is not part of this theorem.
 
 ## Scope wall
 
@@ -383,8 +385,8 @@ proved:     exactly the three surplus placements (10) arise a priori;
 excluded:   the exterior-surplus placement by apolar rank;
 excluded:   both concentrated placements by colour transport;
 proved:     the entire scoped aligned 2+1+0 subbranch is impossible;
-open:       physically present but word-ineligible second chord;
-not proved: full exclusion including that physical second-chord branch;
+outside:    physically present but word-ineligible second chord;
+later:      that physical second-chord branch is excluded separately;
 not proved: exclusion of the bare aligned theta;
 not used:   support enumeration, coefficient-word census, finite fields;
 global Krenn--Gu conjecture: UNRESOLVED.
