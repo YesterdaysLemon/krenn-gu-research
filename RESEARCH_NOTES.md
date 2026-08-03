@@ -14,6 +14,27 @@ the same conclusion for `n=6`, `d>=3`.  The arbitrary even-`n` lift remains
 open.  The authoritative six-vertex proof map is
 `SIX_VERTEX_CERTIFICATE.md`.
 
+## 2 August 2026: replay/exchange closure and nonalignment families
+
+The source half of the six-token ledger has only `2+1` or `1+1+1`; the
+single-source partition `3` contradicts exceptional-source localization.
+For one anchored three-port coefficient, the five isolated exchange vectors
+have rank four and one primitive relation: the two oriented cycles minus the
+three transpositions.  Its coefficient sum is odd.  Hence all five negative
+binomials are inconsistent, while every proper subset is independent and
+soluble over the complex torus.  This is the exact `B_3`/biased-graph closure
+condition.
+
+The six tokens do not force it.  A `21`-cell `m=6` base has source replay
+`2+1`, mode replay `1+1+1`, exact pure backbones, a conformal excess cycle,
+and residual Hall failure for both internal cycle matchings.  Its two
+exceptional sources but three excess modes rule out any aligned all-excess
+cycle or theta.  Splicing in a cubic three-coloured circulant preserves every
+degree and pure matching and gives the same structural nonalignment for all
+`m>=9`.  Full mixed equations might still force alignment in a genuine
+restriction.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_REPLAY_EXCHANGE_CLOSURE_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_REPLAY_EXCHANGE_CLOSURE_THEOREM.md).
+
 ## 2 August 2026: conformal-core alignment and chord completion
 
 An induced conformal cycle carrying the three excess cells collapses to

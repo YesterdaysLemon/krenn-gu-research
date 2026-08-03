@@ -181,6 +181,11 @@ cube must respect this asymmetry and fit inside these six replay events.
 Items 1--3 are exact, but they are a resource theorem rather than an
 exclusion theorem.  A long chain of first-use ears can still exist.
 
+The later replay/exchange theorem excludes the source partition `3`, proves
+the sharp five-sector odd closure, and gives unbounded structural families in
+which the token budget does not force coloured carrier alignment.  See
+`ARBITRARY_PERMANENT_THREE_EXCESS_REPLAY_EXCHANGE_CLOSURE_THEOREM.md`.
+
 ## Proof target exposed
 
 The conformal--Birkhoff reduction left one missing incidence statement: an

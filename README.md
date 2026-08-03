@@ -226,6 +226,23 @@ relation of odd coefficient sum.  Forcing that odd exchange-lattice relation,
 or coefficient-inducedness of one core, is the new exact target.  See
 [`ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_CORE_ALIGNMENT_BOUNDARY.md`](ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_CORE_ALIGNMENT_BOUNDARY.md).
 
+The replay/core bridge is now sharp.  Source replay partition `3` is
+impossible; only `2+1` and `1+1+1` survive.  On one anchored three-port
+matrix, the three transposition exchanges and two oriented three-cycle
+exchanges have rank four and the unique primitive relation
+
+```text
+lambda_+ + lambda_- - lambda_12 - lambda_13 - lambda_23=0.
+```
+
+Its coefficient sum is odd, so isolating all five as negative binomials gives
+`1=-1`; every proper subset is lattice-independent.  This all-five closure
+is not forced by the ear budget.  An exact `m=6` base with source replay
+`2+1` has no aligned conformal carrier containing all three excess cells,
+and a colour-preserving splice yields the same nonalignment for every
+`m>=9`.  These are structural counterfamilies, not full restrictions.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_REPLAY_EXCHANGE_CLOSURE_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_REPLAY_EXCHANGE_CLOSURE_THEOREM.md).
+
 The strict support theorem also transfers back to the graph whenever one of
 the root--blocker extraction lemmas applies.  Five roots with five tight
 blockers require at least 18 active contracted root--blocker covectors.  More

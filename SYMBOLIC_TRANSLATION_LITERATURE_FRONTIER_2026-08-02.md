@@ -71,6 +71,18 @@ preserving the permanent signs.  Forcing such an odd relation from physical
 incidence remains open.  See
 `ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_CORE_ALIGNMENT_BOUNDARY.md`.
 
+The resulting gain system has a sharp biased-graph closure theorem.  The
+three transposition exchanges and two oriented three-cycle exchanges on one
+anchored port matrix have one primitive integer relation, with odd
+coefficient sum.  Thus making all five coefficients isolated negative
+binomials is impossible, while every proper subset is torically soluble.
+This is the permanent analogue of the theta property in Zaslavsky's biased
+graphs.  The six-token schedule does not force that closure: exact structural
+countermodels at `m=6` and every `m>=9` retain the ear, Hall, conformal,
+local-rank, and pure-backbone data but have no aligned all-excess carrier.
+See
+`ARBITRARY_PERMANENT_THREE_EXCESS_REPLAY_EXCHANGE_CLOSURE_THEOREM.md`.
+
 ## 1. Gain graphs and a new multi-backbone gluing diagram
 
 ### Existing theory
