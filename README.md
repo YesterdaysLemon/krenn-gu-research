@@ -58,8 +58,13 @@ both excess cells to be noncoordinate and co-located at one mode.  The
 zero-switch stratum is now excluded at every order: exceptional-port
 cancellation forces each pair of unique pure matchings to form a Hamilton
 cycle, and a chord of the other two-colour cycle contradicts the forced
-singleton port colour.  Thus every equality survivor has one or two
-switchable colours.  Global bipartiteness is equivalent to balance of an
+singleton port colour.  The one-switch stratum is now excluded too.  Every
+pair of selected pure matchings would have to form a Hamilton cycle; the two
+exceptional edges of either nonswitch colour are then chords of the cycle
+formed by the other colours.  Their chord-extension mixed matchings force
+both cross cells and switch that nonswitch colour, a contradiction.  Thus
+every equality survivor has exactly two switchable colours.  Global
+bipartiteness is equivalent to balance of an
 `F_2`-labelled
 component-overlap graph; a pure switch is excluded as soon as one common
 cancellation component connects two shared states and exactly one changes
@@ -106,6 +111,8 @@ and
 [`ARBITRARY_PERMANENT_EQUALITY_BACKBONE_COLORING_GLUE_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_BACKBONE_COLORING_GLUE_THEOREM.md)
 and
 [`ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_CUT_NORMAL_FORM_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_CUT_NORMAL_FORM_THEOREM.md)
+and
+[`ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_EXCLUSION_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_EXCLUSION_THEOREM.md)
 and
 [`ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCESS_PLANE_SEPARATION_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCESS_PLANE_SEPARATION_THEOREM.md).
 See also

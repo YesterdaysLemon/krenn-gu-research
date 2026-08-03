@@ -107,7 +107,7 @@ assignments.  The colimit is bipartite exactly when this `F_2` overlap graph
 is balanced.  A one-switch straddling pair gives an immediate unbalanced
 two-cycle.
 
-The one-switch cut normal-form theorem sharpens that target.  The nonzero
+The one-switch cut normal-form theorem first sharpened that target.  The nonzero
 pure switch binomial forbids every nonmonochromatic matching in either
 selected backbone that uses both switch edges.  After deleting the switch
 core, the common residual backbone has a unique perfect matching; its
@@ -117,8 +117,17 @@ component-incidence graph, the only nonzero overlap labels are the two
 switch states.  Equality holds at the gluing level exactly when those two
 marked edges belong to the cut space: both are bridges, or they are a
 two-edge series cut.  A straddling pair is only the smallest violating cycle.
-The exact next task is to use the triangular residual coefficients to force
-one marked edge onto a cycle avoiding the other.
+Abstract bridge and series-pair models survive this cut-space test.
+
+The full permanent backbone now excludes them by a different transfer.  In
+the one-switch branch, component selection forces every pair of selected
+pure matchings to be one alternating Hamilton cycle.  The exceptional edges
+of a nonswitch colour are therefore two chords of the Hamilton cycle formed
+by the other colours.  Extending each chord to a mixed perfect matching and
+applying two-source localization forces both cross cells, producing a second
+pure matching of the nonswitch colour.  Hence the one-switch branch is empty
+at every order.  This is a perfect-one-factorization obstruction rather than
+a gain-holonomy obstruction.
 
 This is a direct transfer from unique-perfect-matching theory and the
 Dulmage--Mendelsohn viewpoint, but the marked cut condition is specific to
@@ -439,9 +448,9 @@ Priority: exploratory, but fully symbolic.
 1. **Multi-backbone gains plus toric exchange lattice.**  Glue the
    canonically bipartite fixed-backbone fibres across alternating-cycle
    changes of pure matchings.  The zero-switch face is excluded.  In the
-   one-switch face, exclude the marked bridge-or-series cut using the unique
-   triangular residual matching.  In the two-switch face, force a nonlocal
-   overlap cycle outside the separated common excess mode.  Both residual
+   one-switch face is now excluded by the pairwise-Hamilton chord theorem.
+   In the two-switch face, force a nonlocal overlap cycle outside the
+   separated common excess mode.  Both residual
    Hall shores are now excluded, forcing the cross-colour port rectangle.
    The remaining task is to combine that relation with the four backbone
    fibres.  This is arbitrary-order and closest to a global support theorem.

@@ -18,10 +18,10 @@ overlap labels are the two switch states.  Equality requires those two marked
 edges to form an `F_2` cut: they must both be bridges or, if nonbridges, a
 two-edge cut (a graphic-matroid series pair).
 
-This does not exclude the one-switch branch.  It reduces the remaining task
-to proving that one marked incidence edge lies on a cycle avoiding the other,
-using the triangular residual backbone and the permanent coefficients not
-yet represented by the abstract gluing graph.
+This note alone does not exclude the one-switch branch.  A subsequent
+pairwise-Hamilton/chord theorem uses permanent coefficients not represented
+by the abstract gluing graph and excludes the branch completely; see
+`ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_EXCLUSION_THEOREM.md`.
 
 ## Switch core
 
@@ -219,7 +219,7 @@ two-fibre overlap labels:                     EXACTLY TWO MARKED EDGES;
 equality gluing condition:                    MARKED PAIR IS A CUT;
 marked bridge-or-series normal form:          NECESSARY;
 forced cycle separating the marked pair:     UNKNOWN;
-one-switch equality stratum:                  UNRESOLVED;
+one-switch equality stratum:                  EXCLUDED SUBSEQUENTLY;
 zero-switch equality stratum:                 NOT ADDRESSED HERE;
 two-switch equality stratum:                  NOT ADDRESSED HERE;
 global Krenn--Gu conjecture:                  UNRESOLVED.

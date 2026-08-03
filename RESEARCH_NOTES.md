@@ -14233,6 +14233,37 @@ verify_arbitrary_permanent_equality_zero_switch_exclusion_theorem.py
 audit_arbitrary_permanent_equality_zero_switch_exclusion_theorem.py
 ```
 
+### One-switch equality exclusion
+
+Assume `c` is the unique switch colour and `d,e` are nonswitch.  Every pair
+of selected pure matchings is one alternating Hamilton cycle.  If, for
+example, `M_c union M_d` had multiple components, selecting colours by
+component either creates a mixed matching using both selected `c` switch
+edges, contradicting the nonzero pure switch factor, or gives two split-port
+hybrids whose rectangle partners create a second pure `d` matching.  The
+same argument treats `M_c union M_e`; the zero-switch component argument
+treats `M_d union M_e`.  Pairwise Hamiltonicity also excludes shared
+physical cells.
+
+Now each exceptional `M_d` edge `f_s=(i_s,p_s)` is a chord of the Hamilton
+cycle `M_c union M_e`.  A bipartite Hamilton-cycle chord extends to a perfect
+matching `F_s`.  The mixed coefficient of `F_s` forces the cross cell
+
+```text
+r_(i_s,p_(3-s))[d] !=0.
+```
+
+Doing this for `s=1,2` transposes both exceptional edges of `M_d` and creates
+a second pure `d` matching, contradicting that `d` is nonswitch.  Thus the
+one-switch equality stratum is empty at every order, and every equality
+survivor must have exactly two switches.
+
+```text
+ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_EXCLUSION_THEOREM.md
+verify_arbitrary_permanent_equality_one_switch_exclusion_theorem.py
+audit_arbitrary_permanent_equality_one_switch_exclusion_theorem.py
+```
+
 ### Two-switch port completion and Hall shores
 
 Let `A_0={a,b_c,b_d}` and let `Q={q,p_1,p_2}`, where the unique coordinate
