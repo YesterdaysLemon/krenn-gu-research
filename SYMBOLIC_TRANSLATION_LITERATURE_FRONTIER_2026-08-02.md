@@ -74,6 +74,60 @@ criterion are invented objects in this package, proved directly from perfect
 matchings.  See
 `RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md`.
 
+### Clean P6 selector as a Segre pullback
+
+Assume the parity-compatible four-root selector has one nonzero root--root
+shore, an invertible clean `2 x 3` fan `O`, and that all competing depth-zero,
+depth-four, root--root, and blocker terms have been killed or subtracted with
+the same normalization.  If the isolated depth-two observation is target
+diagonal, quotienting the target by its diagonal three-plane and inverting
+`O` forces every one of the six labeled deck tensors into that plane.
+For each target colour the corresponding six-vector `z` therefore satisfies
+
+```text
+O z = mu vec(r s^T),
+```
+
+so its exact ideal is the pullback of the three `2 x 2` minors defining
+`Seg(P^1 x P^2)`.  This gives a codimension-two, degree-three projective
+condition for each colour.  It is a genuine selector equation, not a support
+enumeration.
+
+The resulting equation also proves a sharp no-go theorem for a tempting
+closure strategy.  For every `O in GL_6(K)` over an infinite
+characteristic-zero field, every coordinate of
+`O^(-1) vec(r s^T)` is a nonzero bilinear polynomial.  Their product is
+nonzero, so the inverse Segre cone always contains a point of `(K^*)^6`.
+Three points can simultaneously be chosen with left-factor rank two and
+right-factor rank three because the additional minors define nonempty open
+conditions.  Consequently invertibility plus GHZ rank one can never by
+itself force a face coordinate to vanish.
+
+There is also a fixed exact permanental control.  With
+`a(t)=(1,t)`, `b(t)=(1,t^2,t^3)`, and columns
+`a(t_i) tensor b(t_j)+a(t_j) tensor b(t_i)`, the fan determinant is
+
+```text
+-2 product_(i<j)(t_i-t_j)^2 (t_0+t_1+t_2+t_3).
+```
+
+At `(1,2,3,4)` it equals `-2880`, and an explicit 18-entry full-torus deck
+maps to three rank-one target slices with active factor ranks `(2,3)`.  A
+nonzero root--root bilinear shore can simultaneously vanish at the original
+root evaluation and equal one after the selected polarization.  This is an
+abstract target-clean response ledger, deliberately not claimed to be a
+physical synchronized hafnian deck.
+
+The square-free permanent language is consonant with
+[Feinsilver--McSorley](https://arxiv.org/abs/1710.00788), and the generation
+of the Segre ideal by `2 x 2` minors is standard; see
+[Bernardi](https://arxiv.org/abs/0705.1942).  The clean-selector descent,
+universal torus-permission theorem, and explicit permanental fan are the new
+problem-specific statements.  The remaining intersection is the physical
+hafnian-deck locus, the three fixed target lines, synchronized depth-four
+compatibility, and legal nuisance separation.  See
+`P6_CLEAN_TWO_BY_THREE_SELECTOR_SEGRE_PULLBACK_AND_TORUS_PERMISSION_THEOREM.md`.
+
 ### The exact corrected two-port ideal and its first pentad
 
 The arbitrary-order cofactor decomposition has an exact observable ideal at
@@ -2801,6 +2855,12 @@ second response jet = principal four-deletion deck: PROVED;
 top present-vertex tensor determines pair deck: NO, EXACT AFFINE FIBRE;
 odd-root P5/P7 deck exposure by root words: IMPOSSIBLE BY PARITY;
 clean four-root P6 pair-deck tomography: EXACT 2x3 FAN, CONDITIONAL LEGALITY;
+clean P6 target equation:              THREE PULLED-BACK SEGRE QUADRICS PER COLOUR;
+clean P6 Segre pullback:               CODIMENSION TWO, DEGREE THREE;
+every invertible P6 fan:               SEGRE PULLBACK MEETS COORDINATE TORUS;
+all-nonzero permanental P6 fan:        det=-2 VANDERMONDE^2 sum(t);
+GHZ alone forces shore/fan/face zero:  FALSE;
+physical synchronized P6 deck lift:   UNKNOWN;
 legal exposure of required synchronized decks: UNKNOWN;
 maximal q2 visible response map:  DOMINANT, exact Jacobian minor 360;
 conditional four-point selector: complementary z weights must be additive;

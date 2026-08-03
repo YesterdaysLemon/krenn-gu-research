@@ -28,6 +28,20 @@ cannot expose these decks in the odd-root `P_5` or `P_7` branches.  Four-root
 and nuisance separation are not yet forced.  See
 [`RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md`](RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md).
 
+On that clean `P_6` fan, target diagonality has now been translated exactly.
+If the fan is invertible, each target-colour deck vector lies in the inverse
+image of `Seg(P^1 x P^2)` and therefore obeys three pulled-back `2 x 2`
+minor equations.  This does not force a coordinate boundary: for every
+invertible fan the pulled-back Segre cone meets the full six-coordinate
+torus, and three such points can retain the required ranks `(2,3)`.  An
+explicit all-nonzero permanental family has determinant
+`-2 Vandermonde(t)^2 sum(t)` and supports a full-torus three-colour target
+slice together with a nonzero legal root--root shore.  Thus GHZ rank-one
+equations alone cannot force a zero shore, a singular fan, or a zero face.
+Physical hafnian-deck integrability, target-clean nuisance separation, and
+synchronized depth-four compatibility remain unknown.  See
+[`P6_CLEAN_TWO_BY_THREE_SELECTOR_SEGRE_PULLBACK_AND_TORUS_PERMISSION_THEOREM.md`](P6_CLEAN_TWO_BY_THREE_SELECTOR_SEGRE_PULLBACK_AND_TORUS_PERMISSION_THEOREM.md).
+
 At one corrected two-port response depth, the universal algebraic obstruction
 is now completely identified.  After subtracting `hB_uv`, the scalar port
 array is exactly the off-diagonal projection of the symmetric rank-at-most-`q`
