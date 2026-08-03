@@ -128,6 +128,42 @@ hafnian-deck locus, the three fixed target lines, synchronized depth-four
 compatibility, and legal nuisance separation.  See
 `P6_CLEAN_TWO_BY_THREE_SELECTOR_SEGRE_PULLBACK_AND_TORUS_PERMISSION_THEOREM.md`.
 
+### The P6 scalar face morphism has a section
+
+The pulled-back Segre equations also cannot be cut by an intrinsic scalar
+hafnian relation among the six physical faces.  Let an eight-vertex graph
+have four core vertices `C` and a four-window `W`.  Given arbitrary values
+`y_pq` for the six hafnians on `C union {p,q}`, put every core edge equal to
+one, every core--window edge equal to `tau`, and set
+
+```text
+a_pq=(y_pq-12 tau^2)/3.
+```
+
+The core hafnian is three and its cofactor form is the hollow all-one
+matrix, so the bordered-hafnian formula gives each desired value exactly.
+This is an affine section of the six-face morphism onto `K^6`, not merely a
+dense-image calculation.  Avoiding finitely many values of `tau` puts every
+one of the 28 graph edges on the torus.
+
+The same section synchronizes rather than discards the next depth.  All
+seventy four-vertex hafnian companions have closed formulas according to
+how many window vertices remain, and all thirty-six partner-expansion
+stresses for the six faces hold identically.  Therefore allowing the
+four-deck to take its induced common-graph value still places no restriction
+on the six faces.  For every invertible fan `O`, the physical full-edge-
+torus face locus meets `O^(-1)Seg(P^1 x P^2)`.
+
+The boundary is tensorial.  The three explicit pure-colour Segre face
+columns can be realized simultaneously as diagonal entries of one block
+graph with every edge block invertible.  But the mixed word with colour
+pairs `00|11|22` has the unique matching coefficient `-10/3`, not zero.
+Thus pure-colour scalar synchronization, scalar four-deck integrability,
+fan invertibility, and full support do not imply a target-clean GHZ tensor.
+Mixed-colour cancellation and independently prescribed target four-deck
+incidence remain open.  See
+`P6_PHYSICAL_SIX_FACE_HAFNIAN_SECTION_FOUR_DECK_SYNCHRONIZATION_AND_SEGRE_SHARPNESS.md`.
+
 ### Four residuals need only the even Wick tower
 
 The complete residual-cumulant theorem originally used every residual
@@ -2934,6 +2970,13 @@ every invertible P6 fan:               SEGRE PULLBACK MEETS COORDINATE TORUS;
 all-nonzero permanental P6 fan:        det=-2 VANDERMONDE^2 sum(t);
 GHZ alone forces shore/fan/face zero:  FALSE;
 physical synchronized P6 deck lift:   UNKNOWN;
+P6 physical scalar six-face morphism: SPLIT SURJECTIVE ONTO K^6;
+P6 induced complete H4 deck:          70 CLOSED-FORM LABELS;
+P6 face/H4 partner stresses:          36 IDENTITIES SATISFIED;
+P6 scalar torus faces meet every Segre fan: PROVED;
+three pure-colour sections in one block graph: CONSTRUCTED;
+that block graph target-clean:         FALSE, MIXED WORD=-10/3;
+P6 mixed-colour cancellation:          UNKNOWN;
 four-residual even response tower:     COMPLETE IFF CRITERION;
 four common pair rows P_ij=L_iL_j:     NECESSARY AND SUFFICIENT WITH TOP LAW;
 even complementary products:          THREE EQUAL DIVISION-FREE PRODUCTS;

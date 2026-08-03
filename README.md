@@ -42,6 +42,19 @@ Physical hafnian-deck integrability, target-clean nuisance separation, and
 synchronized depth-four compatibility remain unknown.  See
 [`P6_CLEAN_TWO_BY_THREE_SELECTOR_SEGRE_PULLBACK_AND_TORUS_PERMISSION_THEOREM.md`](P6_CLEAN_TWO_BY_THREE_SELECTOR_SEGRE_PULLBACK_AND_TORUS_PERMISSION_THEOREM.md).
 
+Scalar physical integrability cannot rescue that obstruction.  Split an
+eight-vertex nonroot graph into a four-vertex core and a four-window.  For
+arbitrary desired six-face values `y_pq`, core edges one, core--window edges
+`tau`, and window edges `(y_pq-12 tau^2)/3` realize all six faces on one
+common graph.  This is a split surjection onto `K^6`; its complete seventy-
+label four-deletion deck and all thirty-six partner stresses have closed
+form.  Every torus face vector has a full-edge-torus realization, so the
+physical scalar face locus meets every pulled-back Segre chart.  Three pure-
+colour sections also coexist in one invertible diagonal block graph, but a
+mixed-colour coefficient equals `-10/3`, exposing the genuinely tensorial
+remaining obstruction.  See
+[`P6_PHYSICAL_SIX_FACE_HAFNIAN_SECTION_FOUR_DECK_SYNCHRONIZATION_AND_SEGRE_SHARPNESS.md`](P6_PHYSICAL_SIX_FACE_HAFNIAN_SECTION_FOUR_DECK_SYNCHRONIZATION_AND_SEGRE_SHARPNESS.md).
+
 Four residual vertices also admit a complete **even-depth** physical
 integrability test, so the unavailable singleton and triple residual decks
 can be eliminated rather than exposed.  After normalization by the empty
