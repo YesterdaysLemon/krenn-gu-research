@@ -1753,24 +1753,126 @@ minimal cycle at full root order.  Nonminimal companion systems remain open;
 see
 `ROOT_TANGENT_MINIMAL_CYCLE_IDEMPOTENT_SECOND_THIRD_JET_CLASSIFICATION.md`.
 
+## 3 August polar, overlap, and null-stratum refinements
+
+The cofactor-depth proposal now has its first exact generic route
+elimination.  Let `h` be the generic six-vertex hafnian and
+`C_ij=partial h/partial x_ij` its fifteen four-point principal cofactors.
+There is no cubic polynomial `P` with
+
+```text
+h^2=P((C_ij)_(i<j)).                                  (28)
+```
+
+The proof averages a putative identity to `S_6`, classifies the eight
+three-edge multigraph orbit sums, and uses eight private coefficients plus
+the coefficient of two disjoint triangles.  The private coefficients force
+the matching-orbit coefficient to one, while the last coefficient gives
+`6=0`.  Cofactor dominance also rules out weights below eight when
+`weight(C)=2` and `weight(h)=3`.  Thus the deletion-depth differential cannot
+be a bosonic copy of the determinant adjugate or the lowest polynomial
+multiplicative-Legendre formula.
+
+This is exactly where the neighboring literatures separate.  The
+multiplicative-Legendre theory of cubic homaloidal polynomials explains why
+(28) is the natural first polar formula; see Chaput and Sabatino,
+[*On homaloidal polynomial functions of degree 3 and prehomogeneous vector
+spaces*](https://arxiv.org/abs/1011.5975).  Luque--Thibon shuffle identities
+still organize complete Wick families, but (28) proves that they cannot
+collapse the generic six-blocker chart to a sign-free cubic adjugate.  The
+quadratic Wick relations of the spinor variety remain available only after
+a compatible Pfaffian chart has been proved; see Rincón,
+[*Isotropical Linear Spaces and Valuated
+Delta-Matroids*](https://arxiv.org/abs/1004.4950).  The appropriate generic
+replacement is therefore the algebraic correspondence of the generically
+finite polar map, while the `P_7` problem still needs a special-fibre or
+tensor-valued incidence theorem.  See
+`SIX_BLOCKER_HAFNIAN_POLAR_CUBIC_CONDENSATION_NO_GO.md`.
+
+There is still a universal differential across the grading.  If a clean
+three-root/three-blocker shore has nonzero permanent `f`, a complementary
+blocker-edge derivative of the two depth-zero root-pair cofactors gives
+
+```text
+partial_(a_p) L C_I=f z_e,
+partial_(a_p) L C_(I union Q)=f m_e,       p=W minus e. (29)
+```
+
+Thus formal hafnian differentiation supplies all six pair faces with common
+normalization.  The legal physical sector is stricter: a tangent root pair
+contributes `f per(K[:,p]) z_e`, where `K` is its `2 x 4` root-to-window
+incidence matrix.  Four ordinary unit marked stars from that root pair exist
+exactly when all six second permanental minors of `K` are one common nonzero
+scalar.  Pure-shore nonvanishing does not force this.  In the projectively
+constant branch `K=0`, so the differential is identically zero on every
+physical marked sector.  Edge differentiation changes a bilinear edge block
+and cannot be smuggled in as local scalar rescaling.  The new cofactor-depth
+object is therefore a quiver with a proved formal arrow and a proved zero
+physical realization on the projective page; a nonprojective incidence
+sector or new edge-specific circuit is required.  See
+`P7_CROSS_DEPTH_HAFNIAN_DERIVATIVE_AND_PROJECTIVE_MARKED_STAR_BOUNDARY.md`.
+
+The equality-six quotient has also been classified structurally.  Three
+distinct two-mode supports form one of
+
+```text
+3K2,        P3 disjoint-union K2,        P4,        K1,3,        K3. (30)
+```
+
+Full residual Laplace descent forces every projected four-hafnian on a
+four-set containing a support edge to vanish, and forces the analogous
+six-point quotient shadow.  The earlier matching theorem excludes `3K2`.
+For `P3 disjoint-union K2`, six legally descended tensor components satisfy
+an explicit characteristic-zero unit certificate
+
+```text
+E-tB-rD+((st+rw)/2)(pE+F-xC-yA)=1.                   (31)
+```
+
+Hence that type is excluded too.  Exact vertexwise quotient controls for
+`P4`, `K1,3`, and `K3` satisfy every forced degree-three and degree-one
+shadow, so those three are the sharp physical-lift frontier rather than
+targets for another quotient-only rank argument.  See
+`P7_221_OVERLAPPING_RANK_SIX_SUPPORT_CLASSIFICATION_AND_P3K2_CUBIC_OBSTRUCTION.md`.
+
+Finally, the canonical null fan is complete at four-point depth.  The
+eighteen colour-tagged windows cover all fifteen four-subsets of the six
+double blockers.  Conditional independent top selectors therefore give
+all `m4=z4=0`; the characteristic-zero matching lemma then gives support
+matching number at most two and hence `m6=z6=0`.  The residual correction
+`K=Z_2-hB` is tangent to this simultaneous four-hafnian-zero locus.  A
+rational common-block sharpness control has all three pure coefficients
+equal to one and only the canonical clean axes.  Even after both full
+blocker-singleton rows are installed, all nonempty responses remain fixed
+while `h` varies when `B=0`.  Consequently, a successful vacuum recovery
+must legally co-expose a nonzero direct pair with the paired residual data,
+or use the complete mixed system to force departure from `B=0`; simply
+adding singleton rows is insufficient.  See
+`P7_COMPLETE_FOUR_FACE_NULL_STRATUM_AND_PAIRED_DEPTH_SHARPNESS.md`.
+
 ## Ranked proof program
 
-1. **Cross-depth marked-star realization.**  The tetrahedral fan is already
-   forced graph-side, but its canonical GHZ words are null and the depth-zero
-   root-jet ideal has zero elimination in the depth-five pair faces.  Use one
-   common principal-hafnian identity or physical marked-star circuit to expose
-   the six direct and residual-present pair coordinates with compatible
-   normalization.  A formal-cofactor argument cannot suffice.
-2. **Overlapping rank-six residual circuit.**  The common full-terminal
-   quotient has rank sum at most six and the disjoint equality stratum is
-   excluded.  Classify the triangle, star, and path overlaps using the
-   unprojected degree-one/three equations or their nonzero residual
-   permanents.  The exact triangle quotient shadow is the mandatory control.
-3. **Non-null moment or paired blocker-singleton depth.**  Canonical fan and
-   six-double words cannot recover `h`.  Either prove that a legally exposed
-   noncanonical `m_4` or `m_6` is nonzero and apply the vacuum-free defect, or
-   synchronize the two blocker-side singleton rows.  Root singleton bases do
-   not provide those rows.
+1. **Higher or special-fibre cross-depth marked-star realization.**  The
+   tetrahedral fan is forced graph-side, but its canonical GHZ words are null,
+   the depth-zero root-jet ideal has zero elimination in the depth-five pair
+   faces, the generic cubic polar-condensation formula is impossible, and the
+   formal shore/edge differential has zero physical incidence on the
+   projective page.  Any scalar relation must start at weighted degree at
+   least eight.  The more promising alternatives are a nonprojective root
+   pair whose permanental observation matrix has sufficient rank, a genuinely
+   edge-specific tensor circuit, or a theorem special to the complete
+   cofactor-zero fibre.
+2. **Physical circuits for `P4`, `K1,3`, and `K3`.**  The common full-terminal
+   quotient has rank sum at most six.  Both `3K2` and `P3 disjoint-union K2`
+   are excluded, while exact quotient-core controls preserve the other three
+   overlap types.  Use the unprojected residual permanents jointly across
+   faces; another quotient-only four- or six-hafnian shadow cannot suffice.
+3. **Force and legally co-expose a nonzero direct pair.**  Conditional top
+   selectors annihilate every canonical `m_4,m_6,z_4,z_6`, and even both full
+   blocker-singleton rows leave `h` free on the honest `B=0` response family.
+   Use the complete mixed system either to force `B!=0` and observe `z_uv`
+   with the paired rows on the same edge, or to expose a genuinely
+   noncanonical nonzero moment.  Root singleton bases do not provide this.
 4. **Joint singular-kernel compatibility.**  A preselected fifth-compound
    determinant is not fibre-uniform.  Couple several adaptively chosen words
    and the degree-one/degree-three equations, and test whether their singular
@@ -1824,11 +1926,16 @@ all graph-side fan windows:       FORCED BY FIXED-COMPLEMENT LAPLACE;
 rho>=2 shore in rational model:   ZERO FOR EVERY WINDOW;
 distinguished companion rank:     TWO AT EVERY ROOT PAIR IN SPLICE;
 legal marked-star fan exposure:   UNKNOWN;
+formal shore/edge depth0->5 arrow: EXACT COMMON NORMALIZATION;
+physical two-root marked weights: SIX PERMANENTAL 2x2 MINORS;
+projective-page marked differential: IDENTICALLY ZERO;
 canonical fan target words:       GHZ-NULL;
-selected canonical fan tops:      m4=z4=0;
+all-tag top selectors, conditional: ALL 15 m4=z4=0, THEN m6=z6=0;
 root-jet ideal on pair faces:      ZERO FORMAL ELIMINATION IDEAL;
 vacuum-free dual-Wick defect:     EXACT;
 canonical moment denominator:     NOT FORCED, FREE-h RESPONSE EXISTS;
+both blocker singleton rows alone: STILL FREE h WHEN DIRECT B=0;
+generic cubic hafnian condensation: IMPOSSIBLE, FIRST WEIGHT AT LEAST EIGHT;
 new mixed-colour circuit:          det(corrected 3x3 pair block)=0;
 new axis topology boundary:        jet frames and matching shores still viable;
 new strict axis reduction:         only 2+2+1 survives two-endpoint model;
@@ -1854,7 +1961,8 @@ face-quotient Mayer--Vietoris law:    EXACT;
 common-edge quotient gluing alone:   SHARP RATIONAL LIFT EXISTS;
 full-terminal quotient rank sum:     AT MOST SIX;
 rank-six disjoint colour supports:   EXCLUDED;
-rank-six overlapping support shadow: TRIANGLE EXISTS, PHYSICAL LIFT UNKNOWN;
+rank-six P3 disjoint-union K2:       EXCLUDED BY UNIT CERTIFICATE;
+rank-six P4, K1,3, and K3:           QUOTIENT CONTROLS EXIST, LIFTS UNKNOWN;
 new synchronization gap:            other scalar lifts remain;
 new h=0 polar selector:            five null legs isolate one mixed pair block;
 new arbitrary-order boundary:      at least three coordinate-incidence modes;
@@ -1867,9 +1975,9 @@ top two-port data at h!=0:         FULL AFFINE IMAGE;
 P5/P6 support 18/21:              UNCONDITIONAL AFTER KNOWN EXTRACTION;
 P7 support 24 transfer:           CONDITIONAL ON LEGAL SYNCHRONIZATION;
 minimal tangent-companion cycle:  EXCLUDED BY FULL-ROOT COFACTOR COLLISION;
-highest-priority invented object: cross-depth cofactor quiver plus overlap circuit;
+highest-priority invented object: higher-weight cofactor quiver plus physical overlap circuit;
 new legality boundary:             top synchronization has shore rank one;
-highest-priority literature tool: compound/tetrad circuit completion;
+highest-priority literature tool: algebraic polar correspondence plus permanental incidence;
 full proof or counterexample:      NOT YET;
 global Krenn--Gu conjecture:       UNRESOLVED.
 ```

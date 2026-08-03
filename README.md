@@ -5,7 +5,7 @@
 **UNRESOLVED globally.**  This repository does not yet contain a proof or
 counterexample for all even `n >= 6` and `d >= 3`.
 
-### Start here: 1 August 2026 continuation
+### Start here: 3 August 2026 continuation
 
 The shortest route into the current symbolic `P_7` frontier is
 [`SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md`](SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md).
@@ -14,6 +14,44 @@ controls, gives the ranked cross-depth program, and records the exact
 `UNKNOWN` boundaries.  The component-20 special-fibre continuation remains
 separate in
 [`NEXT_INSTANCE_HANDOFF_2026-07-31.md`](NEXT_INSTANCE_HANDOFF_2026-07-31.md).
+
+The 3 August symbolic continuation closes three tempting shortcuts without
+using a support or word enumeration.  First, the generic six-vertex hafnian
+has no determinant-style cubic polar condensation
+`h^2=P_3((partial h/partial x_ij))`; principal-cofactor dominance then puts
+the first possible scalar cross-depth relation at weighted degree at least
+eight.  This is a proof-route no-go, not a Krenn--Gu obstruction.  See
+[`SIX_BLOCKER_HAFNIAN_POLAR_CUBIC_CONDENSATION_NO_GO.md`](SIX_BLOCKER_HAFNIAN_POLAR_CUBIC_CONDENSATION_NO_GO.md).
+
+There is nevertheless an exact cross-depth derivative calculus.  After one
+clean root--blocker shore, complementary blocker-edge derivatives expose all
+six direct and residual-present pair faces with one common factor.  A legal
+two-root physical sector replaces those unit derivatives by the six `2 x 2`
+permanents of its `2 x 4` incidence matrix.  All four standard marked stars
+require those six weights to share one nonzero value; in the projectively
+constant branch the matrix, and hence every such marked sector, is zero.
+Thus the formal derivative exists but is not implemented by the 31
+projective root jets.  See
+[`P7_CROSS_DEPTH_HAFNIAN_DERIVATIVE_AND_PROJECTIVE_MARKED_STAR_BOUNDARY.md`](P7_CROSS_DEPTH_HAFNIAN_DERIVATIVE_AND_PROJECTIVE_MARKED_STAR_BOUNDARY.md).
+
+Second, the extremal rank-six `2+2+1` quotient has only five abstract support
+graphs.  The disjoint `3K2` case was already excluded; an explicit
+characteristic-zero unit certificate now also excludes `P3 disjoint-union
+K2`.  Only `P4`, `K1,3`, and `K3` remain, and exact quotient-core controls
+show that all three survive the currently forced degree-three and degree-one
+shadows.  Their full physical lifts remain unknown.  See
+[`P7_221_OVERLAPPING_RANK_SIX_SUPPORT_CLASSIFICATION_AND_P3K2_CUBIC_OBSTRUCTION.md`](P7_221_OVERLAPPING_RANK_SIX_SUPPORT_CLASSIFICATION_AND_P3K2_CUBIC_OBSTRUCTION.md).
+
+Third, the eighteen tagged fixed-complement windows cover all fifteen
+four-subsets of the six double blockers.  Conditional legal top selectors
+would therefore force every common-null `m4=z4=0`, and the six-point
+`m6=z6=0` follows.  A rational common-block sharpness control nevertheless
+has three unit pure coefficients, only the canonical clean axes, both full
+blocker-singleton rows, and a freely varying empty scalar when the direct
+blocker graph is zero.  Thus the missing datum is legal cross-depth
+co-occurrence with a nonzero direct pair, not merely another singleton row.
+The control is not a target-compatible physical `P_7` construction.  See
+[`P7_COMPLETE_FOUR_FACE_NULL_STRATUM_AND_PAIRED_DEPTH_SHARPNESS.md`](P7_COMPLETE_FOUR_FACE_NULL_STRATUM_AND_PAIRED_DEPTH_SHARPNESS.md).
 
 The latest arbitrary-order symbolic checkpoint replaces the proposed
 `P_7` shell search by a permanent kernel-deletion hierarchy.  For every
