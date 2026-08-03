@@ -132,6 +132,27 @@ and
 See the equality closure and strict support corollary in
 [`ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCLUSION_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCLUSION_THEOREM.md).
 
+The first permitted layer, support exactly `3m+3`, also has an
+arbitrary-order symbolic normal form.  Relative to a mandatory `3m`-cell
+coordinate cover, the three excess cells have two or three exceptional
+source endpoints.  For any fixed backbone word, every other physical term
+agrees off those sources and is a single transposition or three-cycle of
+their port assignments.  Its complete coefficient is therefore a common
+nonzero interior monomial times a `2 x 2` or `3 x 3` permanent.  In
+particular, every backbone-word coefficient has at most six physical terms
+independently of `m`.  Pure colour graphs are sharper: contracting one pure
+matching leaves at most three nonmatching arcs, hence at most one directed
+cycle.  Every colour has at most two pure matchings, related by one
+alternating four- or six-cycle, and there are at most eight pure backbones.
+This is a finite boundary theorem, not a matching census.  A sharp
+three-port matrix shows why the previous Hamilton-chord proof does not
+automatically continue: the other two ports can cancel while the
+distinguished chord port stays fixed.
+The exact missing lemma is now nonvanishing of the complementary `2 x 2`
+permanent for each chord extension, or a global argument excluding these
+fixed-port bypass rectangles.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md).
+
 Two complementary cell-level transfers are also settled.  The all-root and
 four-root jets give five exact hidden-pair equations; on each rank-two chart
 the two named intermediate cofactors are individually binary-diagonal, and

@@ -14390,3 +14390,71 @@ ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCLUSION_THEOREM.md
 verify_arbitrary_permanent_equality_two_switch_exclusion_theorem.py
 audit_arbitrary_permanent_equality_two_switch_exclusion_theorem.py
 ```
+
+### The three-excess layer is an `S_2/S_3` port system
+
+Assume support is exactly `3m+3` and remove a mandatory `3m`-cell
+tricolour coordinate cover.  Let `P_*` be the source endpoints of the three
+excess physical cells.  Bogdanov supplies a mixed backbone matching, whose
+zero coefficient needs an alternating cancellation cycle.  Such a cycle
+uses at least two new source endpoints, so
+
+```text
+2 <= |P_*| <= 3.
+```
+
+For a fixed matching `F` in the selected backbone, exceptional-source
+localization puts every new cell of a same-word matching at `P_*`.  Its
+symmetric difference with `F` has only one alternating cycle: two disjoint
+cycles would require at least four exceptional sources.  Hence the
+alternative is a transposition or a three-cycle of the modes that `F`
+matches into `P_*`.  If `X` is their mode--source coefficient matrix, with
+absent physical cells entered as zero, the complete backbone-word
+coefficient is exactly
+
+```text
+W_F per(X),          X of size 2 x 2 or 3 x 3.
+```
+
+It follows without enumeration that every backbone-word coefficient has at
+most six physical matching terms.  Pure words are sharper.  A full
+colour-eligibility graph has at most three cells beyond one selected pure
+matching; after contraction these give at most three loopless nonmatching
+arcs.  Such a digraph has at most one directed cycle, of length two or three.
+Thus every colour has at most two pure matchings, related by one alternating
+four- or six-cycle, and the pure backbones form a Boolean cube of dimension
+at most three and size at most `2^3=8`.  The interior at arbitrary `m` has
+been factored into `W_F`; only the two- or three-port boundary remains on
+this localized face.
+
+There is a sharp new bypass.  The matrix
+
+```text
+    [ 1  0  0 ]
+L = [ t  1  1 ],       t != 0,
+    [ 0 -1  1 ]
+```
+
+has nonzero diagonal and exactly three off-diagonal cells using all three
+source endpoints, but `per(L)=0`.  Its diagonal cancels by transposing ports
+two and three while port one remains fixed.  Thus a Hamilton chord at port
+one need not force either cross cell out of that port.
+
+For a chord row `s`, the fixed-row channel is exactly
+
+```text
+L_(s,s) per(L_(hat s,hat s)).
+```
+
+If the complementary `2 x 2` permanent is nonzero, cancellation forces an
+outgoing cross cell from `s`.  If this holds at all three chord rows, the
+three forced outgoing arcs contain a directed two- or three-cycle and hence
+give a second pure matching.  The next symbolic target is to exclude the
+fixed-port bypass rectangles or prove the complementary minors nonzero from
+global backbone compatibility.
+
+```text
+ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md
+verify_arbitrary_permanent_three_excess_port_permutation_theorem.py
+audit_arbitrary_permanent_three_excess_port_permutation_theorem.py
+```

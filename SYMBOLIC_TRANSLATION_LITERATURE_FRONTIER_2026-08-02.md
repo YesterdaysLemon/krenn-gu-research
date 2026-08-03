@@ -231,6 +231,52 @@ lattice.  One odd relation in that lattice is exactly the desired
 contradiction.  This is a lattice-rank/Smith-normal-form theorem in symbols,
 not a census of matchings.
 
+### Exact three-excess port reduction
+
+The strict support theorem makes `3m+3` the first remaining layer.  Choose
+the mandatory `3m`-cell coordinate cover.  The three excess cells have two
+or three exceptional source endpoints: one endpoint is impossible because
+Bogdanov supplies a mixed backbone matching and an alternating cancellation
+cycle needs two new source endpoints.
+
+Exceptional-source localization then collapses every coefficient of a word
+induced by the selected backbone exactly.  Relative to its backbone matching
+`F`, every other term for the same word agrees outside the exceptional
+sources and permutes their `F`-preimage modes.  There can be only one exchange
+cycle, so the change is a transposition or a three-cycle.  After the common
+arbitrary-order interior monomial is factored, the full coefficient is
+
+```text
+W_F per(X),          X of size 2 x 2 or 3 x 3.
+```
+
+Thus the matching-toric boundary of a mixed backbone word has at most the six
+elements of `S_3`.  Pure words are sharper.  A colour-eligibility graph has
+only three cells beyond its chosen matching.  After contraction these are at
+most three loopless dependency arcs, which contain at most one directed
+cycle.  Hence every colour has at most two pure matchings, related by one
+alternating four- or six-cycle, and the pure backbones form a Boolean cube of
+dimension at most three and size at most eight.  This is stronger than a
+bounded search claim: it is an exact quotient of every backbone-induced
+coefficient by its common interior plus a dependency-digraph classification
+of all pure choices.
+
+The new obstruction is also sharp.  A `3 x 3` permanent may vanish while a
+distinguished row has no cross entry, because the complementary two ports
+transpose and cancel with that row fixed.  For a chord row `s`, the fixed-row
+channel is
+
+```text
+X_(s,s) per(X_(hat s,hat s)).
+```
+
+Nonvanishing of that complementary `2 x 2` permanent forces a cross arc out
+of `s`.  If this holds for all three chord rows, a directed two- or
+three-cycle of forced arcs gives a second pure matching.  The precise next
+problem is therefore to exclude the fixed-port bypass rectangles, not to
+enumerate the six permutations.  See
+`ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md`.
+
 ## 3. Determinantal ideals, Grassmannians, and a cofactor quiver
 
 ### Existing theory
@@ -455,14 +501,10 @@ Priority: exploratory, but fully symbolic.
 
 ## Ranked proof program
 
-1. **Multi-backbone gains plus toric exchange lattice.**  Glue the
-   canonically bipartite fixed-backbone fibres across alternating-cycle
-   changes of pure matchings.  The zero-switch face is excluded.  The
-   one-switch face is now excluded by the pairwise-Hamilton chord theorem.
-   The two-switch face is now excluded by the opposite-source
-   Hamilton-chord theorem.  This closes `3m+2` equality and yields the
-   arbitrary-order `3m+3` support theorem.  The next local-to-global task is
-   to control the `3m+3` support layer rather than add more equality gains.
+1. **Three-port complementary-minor obstruction.**  The `3m+3` layer is now
+   an exact `S_2/S_3` port-permutation system.  Prove that every Hamilton
+   chord extension has nonzero complementary two-port permanent, or derive
+   a global incompatibility among the fixed-port bypass rectangles.
 2. **Deletion-depth cofactor quiver.**  Build one cross-sector
    semi-invariant using actual lower cofactor values.  The tangent
    counterfamily rules out weaker candidates in advance.
@@ -477,12 +519,12 @@ Priority: exploratory, but fully symbolic.
 ## Current status wall
 
 ```text
-new arbitrary-order exclusion:    zero-switch equality face impossible;
-new arbitrary-order theorem:      equality cancellation graph bipartite;
-new exact local invariant:        coloured quotient 2x2 minors;
-new exact route exclusion:        common tangent edges do not force rank two;
-highest-priority invented object: multi-backbone gain diagram;
-highest-priority literature tool: gain graphs + matching toric relations;
+new arbitrary-order exclusion:    all 3m+2 equality faces impossible;
+new arbitrary-order theorem:      support >=3m+3 and S_3 port normal form;
+new exact local invariant:        complementary 2x2 port permanent;
+new exact route exclusion:        naive three-port chord forcing fails;
+highest-priority invented object: fixed-port bypass exchange system;
+highest-priority literature tool: matching toric + permanent minors;
 full proof or counterexample:      NOT YET;
 global Krenn--Gu conjecture:       UNRESOLVED.
 ```
