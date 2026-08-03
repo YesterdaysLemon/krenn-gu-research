@@ -1228,6 +1228,35 @@ Hence only common principal-hafnian values or an actual mixed-word selector
 can activate the determinant.  See
 `P7_MIXED_COLOR_PAIR_CIRCUIT_AND_AXIS_JET_BOUNDARY.md`.
 
+The common-companion equations now separate two of the exceptional axis
+patterns from the third.  In the strict tangent-only model with exactly two
+effective residual endpoints, three same-axis roots are impossible: pair
+rank two makes each root--root form diagonal, while the two triple endpoint
+forms force the endpoint frame at a third root to vanish or collapse to rank
+one.  Hence `4+1` and `3+1+1` are conditionally excluded.  A single explicit
+common block system satisfies all lower-root equations for `2+2+1`, including
+the nontrivial identity `G_0+G_Q=7y_1y_2y_3y_4`, against a nonconflicting
+formal cofactor ledger.  Realizing that ledger as simultaneous principal
+hafnians remains the exact gap.  See
+`P7_TWO_ENDPOINT_AXIS_MULTIPLICITY_REDUCTION_AND_221_COMMON_JET_MODEL.md`.
+
+The mixed-word selector itself is no longer missing in the factorized `h=0`
+branch.  For a selected pair `{u,v}`, choose a common residual-null vector at
+each of the other five blockers and contract those five legs in the full
+`P_7` word tensor.  Every other surplus-two pair term meets a contracted null
+leg and vanishes termwise.  The result is the exact matrix identity
+
+```text
+s_uv D_uv=diag(d_c product_(w notin {u,v}) kappa_w[c]).
+```
+
+Since `rank D_uv<=2`, five torus-capable null spaces would make the right side
+rank three.  Thus at most four of seven common null spaces meet the coordinate
+torus, or equivalently at least three residual row spans contain a coordinate
+covector.  This is an arbitrary-order three-boundary law.  It does not extend
+directly to `h!=0`, where the selected response is `hB_uv+D_uv` and may have
+rank three.  See `P7_RESIDUAL_NULL_POLAR_SELECTOR_H0_THEOREM.md`.
+
 ## Ranked proof program
 
 1. **Phase-decorated `B_3` exchange complex.**  Define the missing incidence
@@ -1263,7 +1292,10 @@ new selector no-go:               rank-two pair need not meet a nonzero shore;
 new projection no-go:             all six top windows have dense visible image;
 new mixed-colour circuit:          det(corrected 3x3 pair block)=0;
 new axis topology boundary:        jet frames and matching shores still viable;
-highest-priority invented object: mixed-pair selector matroid;
+new strict axis reduction:         only 2+2+1 survives two-endpoint model;
+new h=0 polar selector:            five null legs isolate one mixed pair block;
+new arbitrary-order boundary:      at least three coordinate-incidence modes;
+highest-priority invented object: h!=0 corrected-block rank replacement;
 highest-priority literature tool: determinantal circuit completion;
 full proof or counterexample:      NOT YET;
 global Krenn--Gu conjecture:       UNRESOLVED.

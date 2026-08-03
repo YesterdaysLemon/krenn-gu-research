@@ -1125,6 +1125,25 @@ two residual faces.  The precise next lemma is therefore a legal selector for
 the six off-diagonal entries of one corrected pair block, or an elimination
 that recovers its determinant from aggregated mixed words:
 [`P7_MIXED_COLOR_PAIR_CIRCUIT_AND_AXIS_JET_BOUNDARY.md`](P7_MIXED_COLOR_PAIR_CIRCUIT_AND_AXIS_JET_BOUNDARY.md).
+Two symbolic continuations now sharpen both sides of that boundary.  First,
+in the strict tangent-only branch with exactly the two residual endpoints,
+pair/triple rank-two equations forbid three roots of one axis type.  This
+conditionally excludes `4+1` and `3+1+1`.  The reduction is sharp: one common
+family of endpoint forms and tangent root--root blocks realizes every lower
+root equation for `2+2+1` against a globally consistent formal cofactor
+ledger.  Simultaneous principal-hafnian realization of that ledger is still
+open:
+[`P7_TWO_ENDPOINT_AXIS_MULTIPLICITY_REDUCTION_AND_221_COMMON_JET_MODEL.md`](P7_TWO_ENDPOINT_AXIS_MULTIPLICITY_REDUCTION_AND_221_COMMON_JET_MODEL.md).
+Second, the aggregated-selector alternative is now exact in the factorized
+`h=0` branch.  Contracting any five blocker legs in their two residual-row
+common null spaces kills the twenty competing surplus-two Laplace terms
+termwise and leaves a scalar multiple of the selected full `3 x 3` corrected
+pair block.  Its rank-two determinant forces at most four of the seven null
+spaces to meet the coordinate torus; equivalently at least three residual
+row spans contain a target coordinate covector.  This activates the mixed
+circuit without reconstructing six deletion faces.  The `h!=0` branch,
+where the selected block can have rank three, remains open:
+[`P7_RESIDUAL_NULL_POLAR_SELECTOR_H0_THEOREM.md`](P7_RESIDUAL_NULL_POLAR_SELECTOR_H0_THEOREM.md).
 A separate majority-subset theorem says that, on `|S|=m+r` vertices of an
 order-`2m` witness, each contracted monochromatic pure tensor lies in the
 `r`th power of the internal-edge ideal.  At `r=1`, every entangled tensor
