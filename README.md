@@ -1207,6 +1207,74 @@ ledgers remain unexcluded:
 [`P7_221_ARBITRARY_ALIGNMENT_DEGREE5_RECTANGLE_OBSTRUCTION.md`](P7_221_ARBITRARY_ALIGNMENT_DEGREE5_RECTANGLE_OBSTRUCTION.md).
 [`P7_221_ALIGNED_CORE_DEGREE5_AFFINE_COMPLETION.md`](P7_221_ALIGNED_CORE_DEGREE5_AFFINE_COMPLETION.md).
 [`P7_221_ALIGNED_CORE_DEGREE3_THREE_FACE_NULLSTELLENSATZ_OBSTRUCTION.md`](P7_221_ALIGNED_CORE_DEGREE3_THREE_FACE_NULLSTELLENSATZ_OBSTRUCTION.md).
+
+A fibre-uniform single-word determinant argument is now ruled out even before
+varying the scalar formulas.  Relabel the verified colour-2 chart so that its
+two identical incidence rows occupy two positions of `2220000`.  The resulting
+fifth permanental compound has exact rank six, and an explicit
+`Q(sqrt(21))` assignment of the cross-colour core edges makes all 21
+degree-five faces zero.  In general, every word has an exact dichotomy:
+nonsingular compounds force an inverse-column line and adjugate circuits,
+whereas singular compounds are controlled by their left and right kernels.
+The displayed escape is only for one word and one degree; it does not evade
+the alignment-adaptive fixed-chart obstruction or solve the cubic equations.
+It proves that the next fibre theorem must couple words, degrees, or singular
+kernels:
+[`P7_PURE_CHART_FIFTH_COMPOUND_FIBRE_DICHOTOMY_AND_SINGULAR_ESCAPE.md`](P7_PURE_CHART_FIFTH_COMPOUND_FIBRE_DICHOTOMY_AND_SINGULAR_ESCAPE.md).
+
+The same rectangle also has a coordinate-free consequence for the full
+tensor graph.  Quotient each core dual space by the span of its seven
+core--terminal incidence covectors.  Projecting any two core modes kills
+every degree-five matching term except the term using the core edge between
+those modes, so every physical four-face rectangle has flattening rank at
+most one.  The formal rectangle `(rho-2)(D_0+D_1)` has rank two whenever the
+two projected GHZ diagonal directions remain independent.  Hence any
+physical realization must make them dependent for every one of the 21 core
+pairs.  A sparse legal projected model attains rank one when a direction is
+killed, so this is an exact conditional obstruction and degeneracy law, not a
+global proof:
+[`P7_221_DEGREE5_INCIDENCE_QUOTIENT_RECTANGLE_FLATTENING_THEOREM.md`](P7_221_DEGREE5_INCIDENCE_QUOTIENT_RECTANGLE_FLATTENING_THEOREM.md).
+
+The quotient is essential.  The unprojected binary GHZ contraction is itself
+in the physical image: a graph with two core edges and ten sparse incidence
+vectors realizes exactly
+`((rho-2)D_0,0,0,(rho-2)D_1)` on the four faces, and hence realizes the
+contracted tensor `(rho-2)(D_0+D_1)`.  It does not realize the common `D_2`
+baseline or the full tuple.  Thus no covariant of that single unprojected
+contraction can be the missing separator:
+[`P7_221_FOUR_FACE_BINARY_GHZ_PHYSICAL_COUNTERMODEL.md`](P7_221_FOUR_FACE_BINARY_GHZ_PHYSICAL_COUNTERMODEL.md).
+
+All 21 quotient conditions nevertheless glue into a complete symbolic
+dichotomy.  At each mode the two binary diagonal images have one of five
+intrinsic types: zero, either pure axis, a common line, or a genuine plane.
+A genuine plane is incompatible with another genuine plane or a common-line
+mode.  Consequently either every terminal-incidence span meets the binary
+colour plane, or one exceptional mode misses it while each of the other six
+spans contains an actual pure colour axis.  Both strata have sharp abstract
+quotient models, so the next step is to combine this classification with the
+remaining colour or degree equations:
+[`P7_221_ALL_PAIR_INCIDENCE_QUOTIENT_BINARY_COHERENCE_CLASSIFICATION.md`](P7_221_ALL_PAIR_INCIDENCE_QUOTIENT_BINARY_COHERENCE_CLASSIFICATION.md).
+
+Using all three colours strengthens that dichotomy.  Three individual
+prescribed faces have exact deconvolved tensors
+
+```text
+Phi_1234a=(1+43rho/21)D_0-6D_1,
+Phi_1235b=rho D_0+2(1+rho)D_2/7,
+Phi_1345b=rho D_1+2(1+rho)D_2/7.
+```
+
+The same quotient argument forces the three diagonal pair tensors to span at
+most one dimension for every core pair.  Recording, at each mode, which
+colours survive and which pairs remain projectively independent gives an
+exact support criterion: an independent colour pair at one mode cannot have
+both colours survive at any other mode.  Since there are only three colour
+pairs, at most three of seven quotient maps have rank at least two.  Thus at
+least four terminal-incidence spans meet the three-colour diagonal space in
+dimension at least two.  A three-mode model, one independent mode per colour
+pair, attains the bound; smaller face-specific quotients or further degree
+equations are required next:
+[`P7_221_TRICOLOUR_INCIDENCE_QUOTIENT_PROJECTIVE_SUPPORT_THEOREM.md`](P7_221_TRICOLOUR_INCIDENCE_QUOTIENT_PROJECTIVE_SUPPORT_THEOREM.md).
 Second, the aggregated-selector alternative is now exact in the factorized
 `h=0` branch.  Contracting any five blocker legs in their two residual-row
 common null spaces kills the twenty competing surplus-two Laplace terms

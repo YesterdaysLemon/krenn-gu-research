@@ -1361,6 +1361,77 @@ realizations remain outside all these fixed-chart theorems.  See
 `P7_221_ALIGNED_CORE_DEGREE5_AFFINE_COMPLETION.md`, and
 `P7_221_ALIGNED_CORE_DEGREE3_THREE_FACE_NULLSTELLENSATZ_OBSTRUCTION.md`.
 
+The hoped-for single-word extension over the whole pure-chart fibre has an
+exact singular boundary.  For every mixed incidence `R`, the system
+`C_5^per(R)a=tau e_*` has a finite linear-algebra dichotomy.  If the compound
+is invertible, fixed monochromatic coordinates obey adjugate proportionality
+circuits.  If it is singular, either a left-kernel vector kills `tau`, or the
+solutions form an inverse-image line plus `ker C_5`.  A legal relabelling of
+the verified colour-2 chart puts two identical incidence rows into
+`2220000`; its compound then has exact rank six.  Explicit cross-colour edges
+over `Q(rho)` give `C_5a=0` on all 21 degree-five faces.  This does not evade
+the alignment-adaptive fixed-chart theorem, which may choose another word,
+and it does not solve degrees one and three.  It proves that neither generic
+observability nor one preselected compound determinant is fibre-uniform.  See
+`P7_PURE_CHART_FIFTH_COMPOUND_FIBRE_DICHOTOMY_AND_SINGULAR_ESCAPE.md`.
+
+There is nevertheless a coordinate-free full-tensor consequence.  Let
+`U_i` be the span of the terminal-incidence covectors at core mode `i` and
+project `V_i^*` to `V_i^*/U_i`.  Projecting two modes `i,j` in any degree-five
+response kills every matching summand except the one with core edge `A_ij`.
+Every physical four-face rectangle therefore has flattening rank at most one
+across `{i,j}|rest`.  The formal rectangle `(rho-2)(D_0+D_1)` has rank two
+exactly when the projected colour-0 and colour-1 diagonal directions at that
+pair are independent.  Consequently every physical realization must make
+those two images dependent at all 21 pairs.  A sparse legal projected model
+attains rank one when one diagonal direction dies, showing that the
+pairwise condition is sharp locally and still needs a global compatibility
+argument.  See
+`P7_221_DEGREE5_INCIDENCE_QUOTIENT_RECTANGLE_FLATTENING_THEOREM.md`.
+
+The projection cannot be omitted.  An exact physical graph with two core
+edges and sparse terminal support realizes the entire non-`D_2` four-face
+tuple
+
+```text
+((rho-2)D_0,0,0,(rho-2)D_1),
+```
+
+and therefore the unprojected contraction `(rho-2)(D_0+D_1)`.  The common
+`D_2` baseline remains absent, but the contracted binary GHZ tensor itself is
+not a physical/global-idempotent separator.  See
+`P7_221_FOUR_FACE_BINARY_GHZ_PHYSICAL_COUNTERMODEL.md`.
+
+The 21 pairwise quotient laws do have a complete global classification.  For
+the images `(x_i,y_i)` of the two binary colours, each mode is intrinsically
+of type zero, one of the two pure axes, a common line, or a genuine plane.
+Two decomposable tensors are proportional only when their corresponding
+nonzero factors are proportional.  Hence a genuine-plane mode is compatible
+only with zero or pure-axis modes.  Globally, either all seven quotient maps
+have rank at most one, so every incidence span meets the binary plane, or one
+mode has rank two and each of the other six incidence spans contains an
+actual pure axis.  Both alternatives have sharp quotient models.  See
+`P7_221_ALL_PAIR_INCIDENCE_QUOTIENT_BINARY_COHERENCE_CLASSIFICATION.md`.
+
+Three other prescribed faces upgrade this from binary to tricolour.  Exact
+Wick inversion gives two-colour diagonal tensors on `1234a`, `1235b`, and
+`1345b`, coupling the pairs `01`, `02`, and `12`, respectively, with all
+coefficients nonzero in `Q(rho)`.  Hence for every core pair the three
+projected diagonal tensors
+`x_i^c tensor x_j^c`, `c=0,1,2`, span at most one dimension.
+
+This admits a coordinate-free projective-support classification.  Let `S_i`
+be the colours surviving at mode `i`, and let `I_i` be the colour pairs whose
+images are independent there.  The quotient equations hold exactly when no
+pair in `I_i` is wholly contained in `S_j` for `i!=j`.  Every quotient map of
+rank at least two contributes a nonempty `I_i`, and distinct such modes must
+contribute distinct colour pairs.  There are only three pairs, so at most
+three of seven quotient maps have rank at least two.  At least four incidence
+spans therefore meet the three-colour diagonal space in dimension at least
+two.  Three rank-two modes, supported on `01`, `12`, and `02`, attain the
+bound.  See
+`P7_221_TRICOLOUR_INCIDENCE_QUOTIENT_PROJECTIVE_SUPPORT_THEOREM.md`.
+
 The mixed-word selector itself is no longer missing in the factorized `h=0`
 branch.  For a selected pair `{u,v}`, choose a common residual-null vector at
 each of the other five blockers and contract those five legs in the full
@@ -1503,40 +1574,54 @@ transfers have different legal strength.
    core realizes every diagonal chart because it suppresses mixed products;
    the physical vertexwise tensor algebra does not.  This is an exact image
    membership problem, not merely orbit-closure or border membership.  The
-   known nonclosedness of tensor-network state spaces is therefore a warning
-   against accepting a degeneration as a physical realization.  See
+   new incidence quotient is a small image equation of this kind: after two
+   mode quotients, a physical degree-five rectangle lies on a Segre rank-one
+   cone.  The formal GHZ rectangle misses that cone unless the quotient makes
+   its two diagonal summands dependent.  The known nonclosedness of
+   tensor-network state spaces is nevertheless a warning against accepting a
+   degeneration as a physical realization.  See
    Landsberg, Qi, and Ye, [*On the geometry of tensor network
    states*](https://arxiv.org/abs/1105.4449).
 
 The alignment-independent dual row now exists for the current fixed scalar
-certificates.  The strongest new route is consequently a selector uniform on
-the entire pure-chart realization fibre, or an invariant proving that every
-point of that fibre meets some fifth-compound row.  Ordinary matchgate/spinor
-identities remain conditional because generic hafnian signs do not transfer.
+certificates, but a fixed word can enter a rank-six singular compound stratum
+inside the same pure fibre.  The strongest new route is consequently a joint
+compatibility invariant across words, degrees, or the 21 pairwise incidence
+quotients.  Ordinary matchgate/spinor identities remain conditional because
+generic hafnian signs do not transfer.
 
 ## Ranked proof program
 
-1. **Fibre-uniform fifth permanental compound.**  Replace the fixed scalar
-   certificates by the full pure-chart fibre and decide whether some
-   legally prescribed face row always isolates a nonzero monochromatic core
-   edge.  A universal selector would exclude the 2+2+1 ledger; a symbolic
-   evasion family would identify the next required chart invariant.
-2. **Physical-idempotent separator.**  Find a polynomial/covariant that
+1. **Joint singular-kernel compatibility.**  A preselected fifth-compound
+   determinant is not fibre-uniform.  Couple several adaptively chosen words
+   and the degree-one/degree-three equations, and test whether their singular
+   kernels can contain one common core completion.  The rank-six escape is
+   now the mandatory sharpness model.
+2. **Glue the three face-specific quotient systems.**  The full-incidence
+   tricolour quotient already forces four modes to have a two-dimensional
+   intersection with the diagonal colour space, and that count is sharp.
+   Replace the full incidence span by the smaller five-terminal span for each
+   of `1234a`, `1235b`, and `1345b`; then use their overlaps to constrain the
+   actual incidence covectors.  The three-pair sharp model is the mandatory
+   control.
+3. **Physical-idempotent separator.**  Find a polynomial/covariant that
    vanishes for vertexwise local-colour block graphs but distinguishes the
-   formal global-idempotent realization.  It must use degree five or seven,
-   because degrees one and three are dominant.
-3. **Phase-decorated `B_3` exchange complex.**  Define the missing incidence
+   formal global-idempotent realization.  It must use the uncontracted
+   degree-five tuple, joint degrees, or degree seven: the binary contraction
+   itself is a physical image point, while scalar degrees one and three are
+   dominant.
+4. **Phase-decorated `B_3` exchange complex.**  Define the missing incidence
    alignment between the conformal cycle/theta matching and the
    at-most-eight pure backbones, then glue the exact additive and cubic toric
    equations.  A single coefficient cannot exclude simultaneous bypasses.
-4. **Deletion-depth cofactor quiver.**  Build one cross-sector
+5. **Deletion-depth cofactor quiver.**  Build one cross-sector
    semi-invariant using actual lower cofactor values.  The tangent
    counterfamily rules out weaker candidates in advance.
-5. **Coloured deletion-cumulant compatibility.**  Use two overlapping root
+6. **Coloured deletion-cumulant compatibility.**  Use two overlapping root
    windows to turn quotient minors into a global log-quadratic obstruction.
-6. **Conditional Pfaffian chart.**  Apply matchgate identities only if a
+7. **Conditional Pfaffian chart.**  Apply matchgate identities only if a
    support-specific orientation is forced.
-7. **GIT/tropical degeneration.**  Seek a one-parameter initial form that
+8. **GIT/tropical degeneration.**  Seek a one-parameter initial form that
    preserves the exact diagonal restriction; do not substitute asymptotic or
    border statements.
 
@@ -1570,6 +1655,13 @@ new degree-five circuit:             four faces cancel all 12 cross variables;
 fixed charts, every core alignment:  EXCLUDED;
 adapted single-word degree5/1 layer: CONSISTENT;
 that word's three cubic faces:       UNIT IDEAL;
+single-word compound over pure fibre: SINGULAR ESCAPE EXISTS;
+full-tensor quotient law:            all 21 GHZ pair images must be dependent;
+quotient law alone:                  sharp rank-one local escape exists;
+unprojected binary GHZ contraction:  PHYSICALLY REALIZED;
+all-pair binary quotient coherence:  TWO STRATA, BOTH ABSTRACTLY SHARP;
+tricolour quotient rank law:         at least four codimension-two modes;
+tricolour quotient bound:            SHARP ON ABSTRACT QUOTIENT DATA;
 new synchronization gap:            other scalar lifts remain;
 new h=0 polar selector:            five null legs isolate one mixed pair block;
 new arbitrary-order boundary:      at least three coordinate-incidence modes;
@@ -1578,7 +1670,7 @@ new row-pair incidence theorem:    every pair needs at least five modes;
 new five-mode sharpness:           polar/canonical/pure data attain equality;
 new h!=0 conditional selector:     synchronized depth cancels direct blocks;
 new aligned-resonance boundary:    scalar depth subtraction then loses a colour;
-highest-priority invented object: pure-fibre-uniform compound row;
+highest-priority invented object: face-specific quotient-overlap sheaf;
 new legality boundary:             top synchronization has shore rank one;
 highest-priority literature tool: compound/tetrad circuit completion;
 full proof or counterexample:      NOT YET;
