@@ -13785,6 +13785,81 @@ verify_p4_support_one_211_triangle_reduction.py
 audit_p4_support_one_211_triangle_reduction.py
 ```
 
+### Arbitrary-order permanent kernel deletion and the exact-minimal boundary
+
+The `P_5` source-row tricolour cover and kernel Hall hierarchy extend
+without any order-five special feature.  If
+
+```text
+P_m(phi_0,...,phi_(m-1))=Delta_3,
+```
+
+then for every source subset `S` of size `2<=s<=m-1` and every colour,
+at least `s` local `S`-row spans contain that coordinate covector.  The
+proof pins `s-1` modes to the target colour and leaves `m-s+1` source
+vectors competing for only `m-s` undeleted source rows.
+
+The singleton boundary follows from a different exact mechanism.  Delete
+one fixed source row in all modes.  The restricted diagonal target is a
+sum of three decomposable tensors.  The rank-one dependence lemma excludes
+three surviving terms; a coordinate-plane quotient excludes exactly two;
+one cannot vanish.  Hence every source row is realized as each of the three
+coordinate covectors somewhere, forcing at least `3m` coordinate cells.
+
+If the whole row table has exactly `3m` nonzero cells, those cells are the
+three coordinate covers.  Pure nonvanishing makes each colour class a
+perfect matching.  Their union is a properly three-coloured cubic
+bipartite graph on `2m>4` vertices.  Bogdanov's theorem supplies a mixed
+perfect matching, and its colour word has exactly one supported edge at
+each mode, so its coefficient is one nonzero monomial.  Thus the
+exact-minimal coordinate-only branch is impossible for all `m>=3`.
+
+```text
+ARBITRARY_PERMANENT_KERNEL_DELETION_HIERARCHY.md
+verify_arbitrary_permanent_kernel_deletion_hierarchy.py
+audit_arbitrary_permanent_kernel_deletion_hierarchy.py
+```
+
+### Root `m=7` symbolic route boundaries
+
+For two residual vertices the common cofactor matrix is always
+`J=[[0,1],[1,0]]`.  The corrected Gram block is therefore exactly
+
+```text
+a_u tensor b_v+b_u tensor a_v,
+```
+
+and every such family has a legal residual-edge realization.  The new Gram
+theorem adds no obstruction on this cell; the displayed Hall data actually
+saturate the rank-two scalar Schur chart.  That displayed construction is
+nevertheless excluded by one lower-jet coefficient: varying two roots in
+the `e_0` tangent directions kills every incident graph edge, while the
+all-zero GHZ derivative equals one.
+
+The majority hierarchy is also now known to be insufficient in this cell.
+On the bipartition `P={p_0,...,p_6}`, `B={b_0,...,b_6}`, the three cyclic
+matchings `p_j b_(j+2c)` realize the canonical blocker incidence, all local
+ranks, both port spans, sharp Hall, and the three pure coefficients.  Every
+`7+r`-set contains at least `r` internal edges of each pure matching, so all
+majority ideal-power memberships hold simultaneously on overlapping sets.
+The mixed word `0022111` still has one unique matching and coefficient one.
+
+Finally, the current lower-frame theorem only forces spans of complementary
+cofactors.  A formal support model satisfies every such span with no affine
+even four-cube.  The smallest admissible four-terminal Hirota overlay has a
+`4 x 6` hidden-class incidence map of rank four, so arbitrary visible data
+can be completed.  Retaining a blocker core does not preserve Wick
+log-quadraticity: the all-ones six-vertex example has bosonic conditional
+cumulant `15-9-9-9=-12`.  Its distinct alternating Hirota defect is
+`15-9+9-9=6`.  A usable next cumulant theorem must force named intermediate
+cofactors or identify/annihilate hidden overlay classes.
+
+```text
+ROOT_M7_SYMBOLIC_ROUTE_BOUNDARY_THEOREMS.md
+verify_root_m7_symbolic_route_boundary_theorems.py
+audit_root_m7_symbolic_route_boundary_theorems.py
+```
+
 ### Symbolic local-to-global pivot: Wick completion, common residual Gram, and majority ideals
 
 The complete coloured partial-matching family has a single exact completion

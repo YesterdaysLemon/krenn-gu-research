@@ -12,6 +12,31 @@ The shortest route into the current proof frontier is
 It separates proved statements from exploratory leads, gives the focused
 replay commands, and records the next symbolic decision point.
 
+The latest arbitrary-order symbolic checkpoint replaces the proposed
+`P_7` shell search by a permanent kernel-deletion hierarchy.  For every
+restriction `P_m -> Delta_3`, every source subset of size `s=2,...,m-1`
+obeys an exact Hall quota, every source row is covered by all three target
+coordinate covectors, and at least `3m` coordinate-row cells are forced.
+The exact-minimal coordinate-only `3m`-cell branch is empty at every
+`m>=3`: its three pure supports form a properly three-coloured cubic
+bipartite graph, and the published nonmonochromatic-matching theorem gives
+a unique forbidden mixed monomial.  This yields bounds 15, 18, and 21 at
+`P_5`, `P_6`, and `P_7` without a support or word enumeration.  See
+[`ARBITRARY_PERMANENT_KERNEL_DELETION_HIERARCHY.md`](ARBITRARY_PERMANENT_KERNEL_DELETION_HIERARCHY.md).
+
+The actual five-root/two-residual cell now has a sharp symbolic route
+diagnosis.  Its common Gram completion is exactly the old rank-two two-port
+factorisation and is automatic; the displayed Hall construction is killed
+by one lower two-root derivative coefficient; a cyclic three-matching
+survivor satisfies every majority-ideal power simultaneously on all
+overlapping sets while retaining one unique mixed word; and the current
+lower-frame theorem logically forces no
+partition-closed Wick/Hirota window.  The missing next lemma must constrain
+named intermediate cofactors or their hidden overlay classes.  The
+arbitrary tangent-completed `P_7` system and the global conjecture remain
+unknown.  See
+[`ROOT_M7_SYMBOLIC_ROUTE_BOUNDARY_THEOREMS.md`](ROOT_M7_SYMBOLIC_ROUTE_BOUNDARY_THEOREMS.md).
+
 A separate, nonblocking method-transfer track is recorded in
 [`ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md`](ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md).
 It contains an exact root-of-unity permanent selector, its legal heralded
