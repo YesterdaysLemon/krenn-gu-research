@@ -15,7 +15,41 @@ controls, gives the ranked cross-depth program, and records the exact
 separate in
 [`NEXT_INSTANCE_HANDOFF_2026-07-31.md`](NEXT_INSTANCE_HANDOFF_2026-07-31.md).
 
-The newest continuation replaces the residual-hafnian rank question by an
+The newest symbolic layer identifies the exact observability obstruction.
+With `q` residual vertices, every root-saturated principal-cofactor
+observation lies in the upper staircase `|S|+|T|>=2q`, while response
+division, cumulants, discriminants, and zeon catalecticants require lower
+subset faces.  Exact physical affine-line families show that even retaining
+all eligible residual depths does not recover the missing coefficients.  See
+[`RESIDUAL_DEPTH_OBSERVABILITY_STAIRCASE_AND_ALL_DEPTH_KERNEL_THEOREM.md`](RESIDUAL_DEPTH_OBSERVABILITY_STAIRCASE_AND_ALL_DEPTH_KERNEL_THEOREM.md).
+
+There is a positive arbitrary-order theorem once a square residual--port
+chart is legally exposed.  All even permanental compounds are simultaneously
+invertible on a nonempty open set, so the full relative response reconstructs
+every principal hafnian cofactor.  One residual graph exists exactly when the
+recovered tower satisfies the nested partner-expansion equations; clearing
+the compound determinants makes these explicit polynomial obstructions.
+The missing step is legal labeled exposure, not algebraic integrability.  See
+[`HIGHER_RESIDUAL_PERMANENTAL_TOMOGRAPHY_NESTED_COFACTOR_STRESS_AND_CUMULANT_INTERFACE.md`](HIGHER_RESIDUAL_PERMANENTAL_TOMOGRAPHY_NESTED_COFACTOR_STRESS_AND_CUMULANT_INTERFACE.md).
+
+For the active four-port `P_7` window, retaining both tangent variables of a
+nonprojective root pair gives a `4 x 6` permanental fan
+`K(A,B)c=vec(A X(c) B^T)`.  One fan has rank at most four and generically
+leaves a two-dimensional invisible face space.  Two fans recover all six
+faces exactly when their kernels are transverse; an explicit integer pair
+has stacked rank six.  Legal co-occurrence, nuisance separation, and the
+synchronized direct depth remain unknown.  See
+[`NONPROJECTIVE_ROOT_PAIR_FAN_SELECTOR_TOMOGRAPHY_THEOREM.md`](NONPROJECTIVE_ROOT_PAIR_FAN_SELECTOR_TOMOGRAPHY_THEOREM.md).
+
+Finally, changing root/kernel charts cannot by itself globalize the surviving
+coordinate-monomial label.  Overlaps carry exact transition gains and trivial
+cycle holonomy, yet one fixed residual edge realizes all nine coordinate
+labels on overlapping torus-plane charts; nine torus-line evaluations can
+even interpolate arbitrary values.  A useful cross-root obstruction must use
+a target-normalized evaluation circuit or cofactor-valued tangent data.  See
+[`CROSS_ROOT_COORDINATE_MONOMIAL_CHART_HOLONOMY_AND_NINE_CHART_NO_GO.md`](CROSS_ROOT_COORDINATE_MONOMIAL_CHART_HOLONOMY_AND_NINE_CHART_NO_GO.md).
+
+The preceding continuation replaces the residual-hafnian rank question by an
 exact all-depth response calculus.  The common-cofactor Gram decomposition
 has been independently audited, but a complete-support family with
 `haf(A)=0` and `rank C(A)=|Q|` proves that torus cancellation gives no

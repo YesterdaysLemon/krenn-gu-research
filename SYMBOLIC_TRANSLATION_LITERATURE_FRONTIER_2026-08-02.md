@@ -33,6 +33,76 @@ globally, or excluding the coordinate branch, is still open.  See
 `GRAPH_EXTRACTION_STRICT_SUPPORT_TRANSFER_COROLLARY.md` and
 `ARBITRARY_ORDER_TWO_RESIDUAL_STRICT_SUPPORT_STAIRCASE_AND_COORDINATE_FORCING.md`.
 
+## 3 August addendum: selector descent and permanental tomography
+
+The current obstruction is best viewed as an inverse problem with a graded
+legality constraint.  For a residual subset `T` and port subset `S`, a
+root-saturated principal-cofactor observation can occur only when
+
+```text
+|S|+|T|>=2q.
+```
+
+This is an upper filter.  Moment division, residual cumulants, the
+two-residual discriminant, and zeon-apolar catalecticants use subset
+recursions and therefore require a down-set.  Exact scalar graph families at
+`q=2` and at every even `q>=4` keep every eligible coefficient fixed while a
+missing lower coefficient varies.  This proves that adding all currently
+legal principal depths cannot close the gap by postprocessing.  See
+`RESIDUAL_DEPTH_OBSERVABILITY_STAIRCASE_AND_ALL_DEPTH_KERNEL_THEOREM.md`.
+
+The positive inverse theorem is permanental tomography.  On a square
+residual--port chart, the degree-`k` response is the `k`th permanental
+compound of the incidence matrix applied to the `k`-deletion principal
+hafnian cofactors.  At identity incidence every even compound is the
+identity, so all are simultaneously invertible on one nonempty Zariski-open
+set.  The recovered arrays come from one residual graph if and only if all
+nested partner-expansion recurrences hold.  Their determinant-cleared forms
+are exact polynomial obstructions, with Hadamard stress as the depth-zero
+member.  See
+`HIGHER_RESIDUAL_PERMANENTAL_TOMOGRAPHY_NESTED_COFACTOR_STRESS_AND_CUMULANT_INTERFACE.md`.
+
+On one four-port window, a fully polarized nonprojective root pair is a
+four-channel sensor on the six pair faces.  Its observation matrix satisfies
+
+```text
+K(A,B)c=vec(A X(c) B^T),              rank K(A,B)<=4.
+```
+
+Thus one sensor has a sharp generic defect two.  Two sensors recover all six
+faces exactly when their invisible planes are transverse, and an explicit
+integer pair realizes stacked rank six.  This is the exact linear
+observation-matroid criterion replacing the earlier unit marked-star
+normalization.  Current
+GHZ theory does not force two compatible sensors or separate their nuisance
+columns.  See
+`NONPROJECTIVE_ROOT_PAIR_FAN_SELECTOR_TOMOGRAPHY_THEOREM.md`.
+
+The neighboring literatures clarify the translation without supplying the
+missing graph theorem.  Algebraic-matroid identifiability studies which
+coordinate observations generically distinguish parameterized models; see
+Drton, Hollering, and Wu,
+[*Identifiability of Homoscedastic Linear Structural Equation Models using
+Algebraic Matroids*](https://arxiv.org/abs/2308.01821).  Cellular sheaves and
+their Laplacians organize local data, restriction maps, global sections, and
+cohomological inconsistency; see Hansen and Ghrist,
+[*Toward a Spectral Theory of Cellular Sheaves*](https://arxiv.org/abs/1808.01513).
+Here the exact chart calculation shows why ordinary scalar holonomy is too
+weak: one fixed residual edge has all nine coordinate labels on overlapping
+torus planes with every transition gain equal to one.  On torus lines the
+label is pure gauge, and the complete compatibility equations are the linear
+circuits among rank-one evaluation tensors.  See
+`CROSS_ROOT_COORDINATE_MONOMIAL_CHART_HOLONOMY_AND_NINE_CHART_NO_GO.md`.
+
+The hafnian/cumulant side remains closest to Gaussian-state combinatorics:
+Hamilton et al. connect Gaussian boson sampling probabilities to hafnians
+([*Gaussian Boson Sampling*](https://arxiv.org/abs/1612.01199)), while Cardin
+and Quesada express photon-number moments through loop hafnians and study
+cumulants ([*Photon-number moments and cumulants of Gaussian
+states*](https://arxiv.org/abs/2212.06067)).  The repository's
+root-budget staircase, nested-cofactor criterion, and transverse-fan theorem
+are problem-specific consequences, not claims imported from those papers.
+
 ## Residual-depth cumulants, zeon apolarity, and the sharp Gram boundary
 
 The arbitrary-order residual-hafnian two-port decomposition has now been
@@ -1929,27 +1999,25 @@ adding singleton rows is insufficient.  See
 
 ## Ranked proof program
 
-1. **Higher or special-fibre cross-depth marked-star realization.**  The
-   tetrahedral fan is forced graph-side, but its canonical GHZ words are null,
-   the depth-zero root-jet ideal has zero elimination in the depth-five pair
-   faces, the generic cubic polar-condensation formula is impossible, and the
-   formal shore/edge differential has zero physical incidence on the
-   projective page.  Any scalar relation must start at weighted degree at
-   least eight.  The more promising alternatives are a nonprojective root
-   pair whose permanental observation matrix has sufficient rank, a genuinely
-   edge-specific tensor circuit, or a theorem special to the complete
-   cofactor-zero fibre.
+1. **Force two transverse nonprojective fans on one window.**  One fully
+   polarized root pair has observation rank at most four on the six pair
+   faces, and this defect is generically exactly two.  Two compatible pairs
+   are algebraically sufficient exactly when their fan kernels are
+   transverse.  Prove their legal co-occurrence with common nonzero shores
+   and separate the root--root/residual companion columns, or prove that the
+   target forces a different labeled sensor.  The projective page remains
+   identically zero and cannot supply either fan.
 2. **Physical circuits for `P4`, `K1,3`, and `K3`.**  The common full-terminal
    quotient has rank sum at most six.  Both `3K2` and `P3 disjoint-union K2`
    are excluded, while exact quotient-core controls preserve the other three
    overlap types.  Use the unprojected residual permanents jointly across
    faces; another quotient-only four- or six-hafnian shadow cannot suffice.
-3. **Force and legally co-expose a nonzero direct pair.**  Conditional top
-   selectors annihilate every canonical `m_4,m_6,z_4,z_6`, and even both full
-   blocker-singleton rows leave `h` free on the honest `B=0` response family.
-   Use the complete mixed system either to force `B!=0` and observe `z_uv`
-   with the paired rows on the same edge, or to expose a genuinely
-   noncanonical nonzero moment.  Root singleton bases do not provide this.
+3. **Cross the root-budget staircase.**  Every currently legal principal
+   depth lies in `|S|+|T|>=2q`, while response inversion and cumulants require
+   lower subset faces.  Exact all-depth fibers show that postprocessing the
+   entire eligible tower cannot recover them.  Force a genuinely mixed GHZ
+   coefficient, herald/vacuum simulator, or synchronized direct-pair sector
+   below the staircase.
 4. **Joint singular-kernel compatibility.**  A preselected fifth-compound
    determinant is not fibre-uniform.  Couple several adaptively chosen words
    and the degree-one/degree-three equations, and test whether their singular
@@ -1965,10 +2033,12 @@ adding singleton rows is insufficient.  See
    alignment between the conformal cycle/theta matching and the
    at-most-eight pure backbones, then glue the exact additive and cubic toric
    equations.  A single coefficient cannot exclude simultaneous bypasses.
-7. **Deletion-depth cofactor quiver.**  Build one cross-sector semi-invariant
-   using actual principal-hafnian values at blocker depths zero and five.  The
-   jet-orthogonal splice and free-`h` response family rule out any candidate
-   confined to only one of those depths.
+7. **Labeled permanental-compound chart.**  On a compound-open square
+   residual--port chart, all principal cofactors are reconstructible and the
+   nested partner-expansion equations are a complete integrability test.
+   Derive individual deletion labels, rather than only their span, from the
+   mixed-root equations and seek a determinant-cleared nested stress that the
+   GHZ target violates.
 8. **Coloured deletion-cumulant compatibility.**  Use two overlapping root
    windows to turn quotient minors into a global log-quadratic obstruction.
 9. **Conditional Pfaffian chart.**  Apply matchgate identities only if a
@@ -1992,6 +2062,10 @@ new residual gluing invariant:    rank[F_2|F_4|F_6|...]<=q on disjoint charts;
 new forced P7 chart:              marked shore with double-only four-window;
 new exact information boundary:  top window face does not determine lower cube;
 new P7 root-budget law:           z needs |S|>=q, direct m needs |S|>=2q;
+all-depth root-budget domain:     upper staircase |S|+|T|>=2q;
+eligible all-depth response map: exact affine fibers hide lower faces;
+compound-open response tower:    complete nested-cofactor tomography;
+compound integrability test:     determinant-cleared nested stresses;
 maximal q2 visible response map:  DOMINANT, exact Jacobian minor 360;
 conditional four-point selector: complementary z weights must be additive;
 q4 four-point law:                quartic permanent defect can equal one;
@@ -2005,6 +2079,9 @@ distinguished companion rank:     TWO AT EVERY ROOT PAIR IN SPLICE;
 legal marked-star fan exposure:   UNKNOWN;
 formal shore/edge depth0->5 arrow: EXACT COMMON NORMALIZATION;
 physical two-root marked weights: SIX PERMANENTAL 2x2 MINORS;
+fully polarized root-pair fan:    RANK AT MOST FOUR, GENERIC DEFECT TWO;
+two transverse root-pair fans:    ALGEBRAICALLY RECOVER ALL SIX FACES;
+legal transverse-fan cooccurrence: UNKNOWN;
 projective-page marked differential: IDENTICALLY ZERO;
 canonical fan target words:       GHZ-NULL;
 all-tag top selectors, conditional: ALL 15 m4=z4=0, THEN m6=z6=0;
@@ -2014,6 +2091,9 @@ canonical moment denominator:     NOT FORCED, FREE-h RESPONSE EXISTS;
 both blocker singleton rows alone: STILL FREE h WHEN DIRECT B=0;
 generic cubic hafnian condensation: IMPOSSIBLE, FIRST WEIGHT AT LEAST EIGHT;
 new mixed-colour circuit:          det(corrected 3x3 pair block)=0;
+coordinate-chart transition law:   EXACT, SCALAR HOLONOMY CAN BE TRIVIAL;
+nine coordinate plane charts:      ONE COMMON EDGE REALIZES ALL LABELS;
+torus-line coordinate label:        PURE GAUGE;
 new axis topology boundary:        jet frames and matching shores still viable;
 new strict axis reduction:         only 2+2+1 survives two-endpoint model;
 new scalar ledger result:          all three 2+2+1 charts are hafnian-realizable;
@@ -2052,7 +2132,7 @@ top two-port data at h!=0:         FULL AFFINE IMAGE;
 P5/P6 support 18/21:              UNCONDITIONAL AFTER KNOWN EXTRACTION;
 P7 support 24 transfer:           CONDITIONAL ON LEGAL SYNCHRONIZATION;
 minimal tangent-companion cycle:  EXCLUDED BY FULL-ROOT COFACTOR COLLISION;
-highest-priority invented object: higher-weight cofactor quiver plus physical overlap circuit;
+highest-priority invented object: transverse fan selector plus labeled compound tower;
 new legality boundary:             top synchronization has shore rank one;
 highest-priority literature tool: algebraic polar correspondence plus permanental incidence;
 full proof or counterexample:      NOT YET;
