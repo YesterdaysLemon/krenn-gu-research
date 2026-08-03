@@ -2913,6 +2913,71 @@ coefficient survives the whole target-stabilizer orbit.  Other scalar points
 in the split-surjective face fibre remain open.  See
 `P6_AXIS_COMPLEMENT_SUM_COVARIANT_OFFDIAGONAL_AND_GAUGE_NO_GO.md`.
 
+## 3 August arbitrary-fibre P6 axis/Gram transfer
+
+The canonical rank-51 obstruction is not a property of the six pure face
+values alone.  For any scalar realization of those values, split the 56
+directed axis variables into twelve core columns and forty-four columns
+incident to the four-window.  If `M` is the complete `5+1` axis operator and
+`M_C` its core restriction, then projection of `ker M` to the port columns
+has the exact dimension
+
+```text
+delta = 44-rank(M)+rank(M_C).
+```
+
+This is a quotient-matroid identity: the projected kernel is the kernel of
+the port map after quotienting the equation space by the core image.  Hence
+port-supported cancellation exists exactly when `delta>0`, with no choice
+of section built into the criterion.
+
+At the exact `tau=0` scalar section, all pure core--window edges vanish,
+core edges equal one, and window edge `pq` equals `y_pq/3`.  It realizes the
+same six prescribed faces in every colour, but now
+
+```text
+(rank M, rank M_C, nullity M, delta)=(19,7,37,32).
+```
+
+The kernel is the direct sum of all 32 directed core--window axes and the
+five-dimensional core circulation space.  Thus the formerly forced
+`3b_pq` coefficient can be cancelled.  Writing the core--window entries for
+an ordered colour pair as a `4 x 4` matrix `X` and `D=J_4-I_4`, all six
+window-pair-minority coefficients become
+
+```text
+y_pq+x_p^T D x_q.
+```
+
+The three required hollow symmetric Gram matrices are nonsingular.  Over an
+algebraically closed characteristic-zero field, congruence of nondegenerate
+symmetric forms supplies invertible `X` with `X^T D X=-y` off diagonal.
+This simultaneously kills every `5+1` coefficient and every `4+2` word whose
+minority vertices are the two window ports.
+
+The translation exposes a new, location-sensitive residual.  If one
+minority vertex is core vertex `i` and the other is window vertex `p`, the
+coefficient is exactly
+
+```text
+Y_(i,q)(DX)_(i,p).
+```
+
+If both directed Gram factors are invertible and every such residual
+vanishes, their row supports force one factor to be monomial.  Its Gram
+matrix would then obey
+`y_45 y_67=y_46 y_57=y_47 y_56`; the three exact columns give respectively
+`(126,696,300)`, `(180,1914,1080)`, and `(-46,2774,1350)`.  Therefore the
+nonsingular Gram route cannot finish the two-colour equations.  Singular
+Gram factors, a different scalar fibre, the other `4+2` placements, and the
+genuinely three-colour system remain open.  This is an exact symbolic
+fibre/Gram reduction, not a word or parameter search.  Representable-matroid
+contraction and symmetric matrix completion are the neighboring theories;
+see [Rosen--Sidman--Theran](https://arxiv.org/abs/1809.00865) and
+[Bernstein--Blekherman--Lee](https://arxiv.org/abs/1909.06593).  The rank and
+product claims here are proved directly.  See
+`P6_ARBITRARY_FIBRE_AXIS_PORT_DEFECT_AND_TWO_COLOUR_GRAM_ESCAPE_THEOREM.md`.
+
 ## 3 August equivariant primitivity-resultant transfer
 
 The seven-leaf descent of the P7 quotient-singular branch now admits a
@@ -3395,8 +3460,16 @@ canonical P6 port off-diagonals:        FORCED ZERO;
 canonical P6 forced 4+2 coefficient:    NONZERO;
 canonical P6 off-diagonal completion:   IMPOSSIBLE;
 canonical P6 GHZ-stabilizer orbit:       EXCLUDED;
-other P6 scalar six-face fibres:         UNKNOWN;
-P6 mixed-colour cancellation:          UNKNOWN;
+arbitrary-fibre P6 axis port defect:     delta=44-rank(M)+rank(M_C);
+tau=0 P6 boundary axis data:             ranks (19,7), nullity 37, delta 32;
+tau=0 directed core-window axes:         32 FREE DIRECTIONS;
+canonical forced 3b_pq fibre-invariant:  FALSE;
+tau=0 all 5+1 coefficients:              ZERO;
+tau=0 window-pair-minority 4+2 layer:    ZERO BY GRAM CONGRUENCE;
+tau=0 mixed core/window 4+2 residual:    Y_(i,q)(DX)_(i,p);
+nonsingular Gram route completes 4+2:    IMPOSSIBLE;
+singular Gram / other P6 scalar fibres:  UNKNOWN;
+P6 full two-/three-colour cancellation:  UNKNOWN;
 four-residual even response tower:     COMPLETE IFF CRITERION;
 four common pair rows P_ij=L_iL_j:     NECESSARY AND SUFFICIENT WITH TOP LAW;
 even complementary products:          THREE EQUAL DIVISION-FREE PRODUCTS;

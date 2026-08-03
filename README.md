@@ -68,6 +68,21 @@ excludes the canonical scalar section and its target-stabilizer orbit, not
 other scalar realizations in the large six-face fibre.  See
 [`P6_AXIS_COMPLEMENT_SUM_COVARIANT_OFFDIAGONAL_AND_GAUGE_NO_GO.md`](P6_AXIS_COMPLEMENT_SUM_COVARIANT_OFFDIAGONAL_AND_GAUGE_NO_GO.md).
 
+The canonical obstruction is not fibre-invariant.  For an arbitrary scalar
+point of the six-face fibre, the exact dimension of the `5+1` axis kernel
+visible on the four-window is the **axis port defect**
+`delta=44-rank(M)+rank(M_C)`.  At the `tau=0` coordinate-boundary section,
+the same three prescribed Segre columns have axis ranks `(19,7)`, nullity
+`37`, and `delta=32`.  Exact symmetric-form congruence then cancels every
+`5+1` coefficient and every `4+2` coefficient whose two minority vertices
+are the window pair.  The remaining mixed core/window placement is
+`Y_(i,q)(DX)_(i,p)`.  Nonsingular Gram completions cannot make all of these
+terms vanish, because that would force three complementary products of the
+face column to agree, contrary to each exact target column.  Singular Gram
+completions, other scalar fibres, and the full two- and three-colour systems
+remain unknown.  See
+[`P6_ARBITRARY_FIBRE_AXIS_PORT_DEFECT_AND_TWO_COLOUR_GRAM_ESCAPE_THEOREM.md`](P6_ARBITRARY_FIBRE_AXIS_PORT_DEFECT_AND_TWO_COLOUR_GRAM_ESCAPE_THEOREM.md).
+
 Four residual vertices also admit a complete **even-depth** physical
 integrability test, so the unavailable singleton and triple residual decks
 can be eliminated rather than exposed.  After normalization by the empty
