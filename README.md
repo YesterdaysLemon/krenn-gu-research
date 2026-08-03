@@ -15,6 +15,50 @@ controls, gives the ranked cross-depth program, and records the exact
 separate in
 [`NEXT_INSTANCE_HANDOFF_2026-07-31.md`](NEXT_INSTANCE_HANDOFF_2026-07-31.md).
 
+The newest nonlinear route uses the complete principal four-hafnian deck.
+For every named graph on `n>=6` vertices, the Jacobian of that deck at the
+all-one graph is the classical `2`-subset versus `4`-subset inclusion matrix
+and has full column rank.  Hence all edges are generically finite algebraic
+over the four-hafnians.  Applied conditionally to the nine nonroots of the
+two-residual `P_7` cell, a legally labeled depth-five deck would recover the
+root-budget-invisible pair up to finitely many branches.  The theorem is not
+global: `A` and `-A` have the same deck, and a one-edge affine line lies in
+the zero fibre.  Its 126 labels exceed the 32 channels of one five-root
+two-plane jet but fit within the 243 channels of the full root tensor, fixing
+the scale of the next selector problem.  See
+[`PRINCIPAL_FOUR_HAFNIAN_GENERIC_EDGE_TOMOGRAPHY_AND_P7_SINGULAR_FIBRE_BOUNDARY.md`](PRINCIPAL_FOUR_HAFNIAN_GENERIC_EDGE_TOMOGRAPHY_AND_P7_SINGULAR_FIBRE_BOUNDARY.md).
+
+The accompanying arbitrary-word theorem proves why a nonlinear step is
+necessary.  Restricting any perfect matching to `r` probe roots partitions it
+into root--root pairs and an injection of the remaining roots into nonroots;
+therefore a word with `j` root--root edges deletes exactly `r-2j` nonroots.
+For the active `r=5` cell the direct pair and one-residual singleton sit at
+depth seven and are absent from every linear mixed-root observation.  Exact
+physical fibres and incident-edge scaling make the boundary sharp.  See
+[`MIXED_ROOT_DELETION_FILTRATION_AND_HERALD_FREE_PAIR_NO_GO.md`](MIXED_ROOT_DELETION_FILTRATION_AND_HERALD_FREE_PAIR_NO_GO.md).
+
+Lower mixed-root jets nevertheless have an exact label theory.  A deletion
+cofactor is individually observable precisely when its companion-incidence
+column has a dual tangent selector; the entire ambiguity is
+`ker(Gamma) tensor W`.  Legal arbitrary-order charts expose all even deletion
+classes when `q` varied roots are available, while the balanced `P_5`--`P_7`
+root budgets do not supply that complete common-core chart.  If future
+cross-depth data expose the square-free deletion algebra and multiplication,
+its graded automorphism group is only monomial, collapsing the current `GL`
+gauge.  See
+[`LOWER_MIXED_ROOT_JET_DELETION_LABEL_TOMOGRAPHY_AND_SQUAREFREE_GAUGE_THEOREM.md`](LOWER_MIXED_ROOT_JET_DELETION_LABEL_TOMOGRAPHY_AND_SQUAREFREE_GAUGE_THEOREM.md).
+
+Finally, the actual five-root sharing patterns no longer leave two-fan
+co-occurrence as an abstract question.  Equal, one-root-sharing, and disjoint
+pairs exhaust the geometry.  Shared-root fans are transverse exactly off a
+binary-Veronese boundary under the natural complementary-row
+nondegeneracy; explicit legal graph-side `P_7` sectors attain stacked ranks
+six and five.  If all ten shores are present and no transverse wedge occurs,
+the five projective root row-lines are forced to be concurrent or coplanar,
+unless a root lies on the Veronese boundary.  Full GHZ compatibility remains
+unknown.  See
+[`P7_FIVE_ROOT_TWO_FAN_SHARING_AND_SHARED_ROOT_VERONESE_TRANSVERSALITY.md`](P7_FIVE_ROOT_TWO_FAN_SHARING_AND_SHARED_ROOT_VERONESE_TRANSVERSALITY.md).
+
 The newest symbolic layer identifies the exact observability obstruction.
 With `q` residual vertices, every root-saturated principal-cofactor
 observation lies in the upper staircase `|S|+|T|>=2q`, while response

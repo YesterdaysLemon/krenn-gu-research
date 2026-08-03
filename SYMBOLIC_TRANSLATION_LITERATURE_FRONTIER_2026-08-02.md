@@ -35,6 +35,88 @@ globally, or excluding the coordinate branch, is still open.  See
 
 ## 3 August addendum: selector descent and permanental tomography
 
+### Mixed-root filtration, deletion-label geometry, and a nonlinear escape
+
+The arbitrary mixed-root problem now has an exact matching-filtration
+answer.  Restricting a perfect matching to `r` roots gives a partial matching
+on the roots and an injection of the remaining roots into the nonroot set.
+A term with `j` root--root pairs therefore deletes exactly `r-2j` nonroots.
+For the five-root/two-residual `P_7` cell, the direct blocker pair and the
+one-residual singleton require depth seven and are absent from every linear
+mixed-root word, while the available depths are only five, three, and one.
+This is a symbolic support theorem, not an enumeration.  A one-edge
+nine-nonroot graph and a nonzero common-shore graph make the linear boundary
+physical and sharp.  See
+`MIXED_ROOT_DELETION_FILTRATION_AND_HERALD_FREE_PAIR_NO_GO.md`.
+
+The missing deletion labels are governed by a precise algebraic-statistical
+observability map.  For a fixed root set `I`, the jet factors as
+
+```text
+J_I=sum_A G_A tensor C_(I union A),
+Gamma_I:e_A |-> G_A.
+```
+
+One named cofactor is determined exactly when its coordinate functional lies
+in `im Gamma_I^*`; the full invisible translation space is
+`ker(Gamma_I) tensor W`.  There are legal arbitrary-order selector charts
+with diagonal entries `(q-|A|-1)!!`, but their common-core root requirement is
+not met by the balanced `P_5`--`P_7` cells.  This translation is naturally a
+linear inverse problem or algebraic matroid.  If cross-depth observations
+also exposed multiplication in the square-free deletion algebra
+`K[x_1,...,x_q]/(x_i^2)`, its graded automorphisms would collapse from a
+general linear cofactor gauge to permutation and diagonal rescaling.  The
+current jets expose vector spaces, not that multiplication.  See
+`LOWER_MIXED_ROOT_JET_DELETION_LABEL_TOMOGRAPHY_AND_SQUAREFREE_GAUGE_THEOREM.md`.
+
+There is, however, a genuinely nonlinear way around the depth ceiling on a
+generic chart.  For a named `n`-vertex graph, send its edges to all principal
+four-vertex hafnians
+
+```text
+h_ijkl=a_ij a_kl+a_ik a_jl+a_il a_jk.
+```
+
+At the all-one graph the Jacobian is the classical subset-inclusion matrix
+`W_(2,4)(n)`.  A direct kernel argument proves full column rank for `n>=6`,
+so the edge field is finite algebraic over the four-hafnian field.  The
+inclusion-matrix connection sits inside the integral diagonal-form theory of
+Ghorbani, Khosrovshahi, Maysoori, and Mohammad-Noori,
+[*Inclusion Matrices and Chains*](https://arxiv.org/abs/0709.3144), while the
+generic-finite conclusion is the algebraic-identifiability translation.
+For the nine nonroots of `P_7`, a legally labeled depth-five deck would thus
+recover all 36 edges up to finitely many algebraic branches.  The one-edge
+line lies in the zero deck fibre, and `A` and `-A` share a deck, so singular
+stratification and branch selection are indispensable.  The 126 deck labels
+cannot fit in one `2^5=32` two-plane root jet, but do fit by dimension in the
+full `3^5=243` root tensor.  See
+`PRINCIPAL_FOUR_HAFNIAN_GENERIC_EDGE_TOMOGRAPHY_AND_P7_SINGULAR_FIBRE_BOUNDARY.md`.
+
+The two-fan co-occurrence problem also has a projective-geometric reduction
+on the actual five-root cell.  Two root pairs are equal, share one root, or
+are disjoint.  Under complementary-row nondegeneracy, the common kernel of
+two shared-root fans is the kernel of four evaluations of a binary quadratic
+on the common root's two-plane.  It vanishes off a second-Veronese boundary.
+If all ten shores are available and neither a transverse fan wedge nor a
+Veronese-boundary root occurs, the five row-lines in `P^3` are pairwise
+incident and hence all concurrent or all coplanar.  Explicit common
+graph-side `P_7` sectors attain both the transverse rank-six case and the
+sharp rank-five boundary.  The classical projective-line alternative is
+therefore useful, but target GHZ equations are still needed to force one of
+its obstructive branches.  See
+`P7_FIVE_ROOT_TWO_FAN_SHARING_AND_SHARED_ROOT_VERONESE_TRANSVERSALITY.md`.
+
+Together these translations reorganize the frontier:
+
+```text
+linear mixed-root access to the pair:       IMPOSSIBLE BY DEPTH;
+named shallow cofactor exposure:            EXACT SELECTOR PROBLEM;
+generic nonlinear recovery from depth five: PROVED CONDITIONALLY;
+singular shallow-deck fibres:               NONEMPTY AND PHYSICAL;
+actual five-root two-fan geometry:           CLASSIFIED;
+GHZ forcing of labels/open chart/branch:     UNKNOWN.
+```
+
 The current obstruction is best viewed as an inverse problem with a graded
 legality constraint.  For a residual subset `T` and port subset `S`, a
 root-saturated principal-cofactor observation can occur only when
