@@ -303,6 +303,17 @@ retains port rank two.  Hence the entire aligned diagonal-`1+1+1` one-chord
 profile is excluded.  The `2+1+0` and bare-theta branches remain open.  See
 [`ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_CUT_COLOR_EXCLUSION_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_CUT_COLOR_EXCLUSION_THEOREM.md).
 
+The `2+1+0` profile exposes the sharp limit of that ordinary quotient.  An
+exact `m=6`, 21-cell model satisfies the support/degree ledgers, local rank,
+pure backbones, matching-coveredness, conformality, and one complete zero
+mixed coefficient, yet has apolar survival profile `(3,2,0)`: one boundary
+span fills its whole port space, so both the core tensor and `Delta_3` vanish
+after quotient.  Its backbone-alignment defect is exactly one, not zero.
+This is a countermodel to the method, not a restriction, and motivates a
+derived apolar boundary signature retaining exterior-power boundary data.
+See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_APOLAR_SATURATION_BOUNDARY.md`](ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_APOLAR_SATURATION_BOUNDARY.md).
+
 The strict support theorem also transfers back to the graph whenever one of
 the root--blocker extraction lemmas applies.  Five roots with five tight
 blockers require at least 18 active contracted root--blocker covectors.  More
