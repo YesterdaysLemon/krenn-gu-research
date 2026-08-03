@@ -28,6 +28,19 @@ and conditionally 23 cells for extracted `P_5`, `P_6`, and `P_7` systems.
 Forcing one of those sparse extractions globally is still open.  See
 `GRAPH_EXTRACTION_STRICT_SUPPORT_TRANSFER_COROLLARY.md`.
 
+There is also an exact ear-theoretic translation of the first surviving
+support layer.  Hetyei's theorem, in the modern form stated by Dalwadi,
+Pause, Diwan, and Kothari, extends every conformal cycle of a bipartite
+matching-covered graph by single odd ears.  For the `3m+3` support graph this
+requires `m+3` ears.  Their endpoint schedule has exactly six uses beyond
+the mandatory first use of every vertex, split as three per bipartition
+shore.  These replay counts equal `deg(v)-3`, so the abstract ear resource is
+identical to excess-cell incidence on the source shore.  On the mode shore
+it measures degree surplus instead; the mandatory cover need not be
+mode-cubic.  This gives a new constant-width causal target for
+conformal/backbone alignment, but no exclusion yet.  See
+`ARBITRARY_PERMANENT_THREE_EXCESS_SIX_TOKEN_EAR_THEOREM.md`.
+
 ## 1. Gain graphs and a new multi-backbone gluing diagram
 
 ### Existing theory

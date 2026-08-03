@@ -14,6 +14,25 @@ the same conclusion for `n=6`, `d>=3`.  The arbitrary even-`n` lift remains
 open.  The authoritative six-vertex proof map is
 `SIX_VERTEX_CERTIFICATE.md`.
 
+## 2 August 2026: the six-token odd-ear budget
+
+At support exactly `3m+3`, the physical support is bipartite,
+matching-covered, connected, and of minimum degree three.  Hetyei's theorem
+extends any conformal cycle to the whole graph by `m+3` odd ears.  Every
+vertex is born with degree two and must later occur as an ear endpoint.  The
+ears supply `2m+6` endpoint slots for `2m` mandatory first uses, so exactly
+six slots revisit an already used vertex.  Oddness splits them as three on
+each bipartition shore, and the vertexwise replay count is `deg(v)-3`.
+
+Thus arbitrary order is compressed to six temporal reuse events, located
+on the source side exactly at the exceptional-source incidences.  The mode
+replays record degree surplus and need not occur at excess-cell modes because
+the mandatory cover is not known to be mode-cubic.  The last ear must be a
+single edge.  This does not yet force incompatible port transport: long
+first-use chains and all shore partitions `3`, `2+1`, and `1+1+1` remain
+possible.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_SIX_TOKEN_EAR_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_SIX_TOKEN_EAR_THEOREM.md).
+
 ## 2 August 2026: strict-support transfer to root--blocker cuts
 
 The arbitrary permanent theorem `support(P_m -> Delta_3)>=3m+3` now has an

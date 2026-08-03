@@ -176,6 +176,19 @@ backbones.  Its still-missing datum is the incidence alignment between those
 backbones and the matching of the conformal cycle/theta core.  See
 [`ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md`](ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md).
 
+The same matching-covered translation has a constant arbitrary-order ear
+budget.  Starting from any conformal cycle, Hetyei's bipartite ear theorem
+builds the support by exactly `m+3` odd ears.  Their `2m+6` endpoint events
+must give every one of the `2m` vertices its first post-birth endpoint use,
+leaving exactly six replay events: three on the mode shore and three on the
+source shore.  Vertexwise, the replay number is exactly `deg(v)-3`, so the
+source replays are exactly the exceptional-source incidences of the three
+excess cells.  Mode replays only record mode degree surplus; the mandatory
+cover need not be cubic on that shore.  This is a new constant-resource
+schedule, not an exclusion; a long chain of first-use ears can still
+survive.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_SIX_TOKEN_EAR_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_SIX_TOKEN_EAR_THEOREM.md).
+
 The strict support theorem also transfers back to the graph whenever one of
 the root--blocker extraction lemmas applies.  Five roots with five tight
 blockers require at least 18 active contracted root--blocker covectors.  More
