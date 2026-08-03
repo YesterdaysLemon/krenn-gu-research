@@ -194,6 +194,21 @@ nonconcise, pair-zero, pinned, or root-torus boundary, so the full localized
 pair ideal remains undecided.  See
 [`LEGAL_P7_SECANT_FACTOR_CODIMENSION_BARRIER_AND_ARTINIAN_PAIR_IDEAL_REDUCTION.md`](LEGAL_P7_SECANT_FACTOR_CODIMENSION_BARRIER_AND_ARTINIAN_PAIR_IDEAL_REDUCTION.md).
 
+For the committed legal sensor, that finite reduction is now explicit at
+the structural level.  The certified first 219 sensor rows replace all
+preimage variables and augmented minors by 24 determinant-cleared residuals.
+On the 32-dimensional ordered rank-three secant space, these residuals and
+the exact seven-variable two-factor ideal (35 cubics, 21 pentads,
+codimension eight, degree 259) have expected dimension zero.  Kruskal
+uniqueness gives six ordered lifts on the torus-concise open, while one
+generic exterior/pair contraction localizes simultaneously at simple
+incidence and a nonzero named pair.  The resulting finite algebra is zero
+exactly when the committed intersection is boundary-trapped and nonzero
+exactly when it has a good-open survivor; a further Laurent quotient decides
+the `h=0` star-alignment sector.  That algebra has not yet been constructed,
+so neither outcome is asserted.  See
+[`COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md`](COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md).
+
 The primitive `P_7` branch has two new complementary reductions.  The 35
 remaining leaf quadrics are equivalent to one projective collinearity
 `u wedge v=0`; when it holds, the nonzero affine scale is unique.  On the

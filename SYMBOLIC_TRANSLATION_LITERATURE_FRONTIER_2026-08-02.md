@@ -3384,6 +3384,65 @@ cofactor coordinates.  Torus-concise simple incidence and nonvanishing of
 (49c) remain unknown.  See
 `LEGAL_P7_SECANT_FACTOR_CODIMENSION_BARRIER_AND_ARTINIAN_PAIR_IDEAL_REDUCTION.md`.
 
+## 3 August committed-sensor ordered Chow/norm criterion
+
+The preceding finite reduction can be made exact for the committed sensor
+without adding 219 preimage variables.  Let `B` be its already certified
+first-219-row square block, `beta=det B`, and
+
+```text
+v(z)=adj(B)z_R,
+rho_s(z)=beta z_s-Gamma_s v(z)                    (s outside R). (49d)
+```
+
+There are exactly 24 residuals, and all vanish if and only if `z` belongs to
+the legal sensor image.  On an actual image point, `v=beta q`, so the named
+pair coordinates are recovered up to one harmless common scalar.
+
+Parameterize honest ordered rank-three tensors by the 32-dimensional
+projective bundle over three copies of `Segre((P^2)^5)`.  On the open where
+the three factors form a basis at each root and all mixture coefficients are
+nonzero, Kruskal's inequality `3+3+3>=8` gives exactly six ordered lifts of
+each tensor.  Pulling (49d) and the exact `I_(7,2)` factor ideal to this
+space yields
+
+```text
+32 - 24 - 8 = 0                                      (49e)
+```
+
+as the proper expected dimension.  The factor ideal has 35 cubics and 21
+pentads, codimension eight, and degree 259.
+
+The good union can be selected without enumerating 221-minors or 21 pair
+charts.  Contract the bivector of two 24-residual columns and the 21-vector
+of named pairs against algebraically independent selectors.  Their product
+with the torus-concise and pinned factors is one universal separator
+`G_gen`.  After adjoining `w G_gen-1` and one generic projective
+dehomogenizer, the finite algebra `A_good` satisfies
+
+```text
+A_good=0  iff the committed intersection misses the good union,
+A_good!=0 iff it has a torus-concise, root-torus, simple,
+             pair-nonzero, pinned survivor.           (49f)
+```
+
+Inside any finite quotient, multiplication by a boundary product is
+nilpotent exactly when all support is boundary-trapped, nonnilpotent exactly
+when some support survives, and invertible exactly when every support point
+survives.  The characteristic polynomial of that one multiplication matrix
+records all three cases.  The final legal `h=0` sector is the finite Laurent
+quotient obtained by adjoining `eta=0` and the 21 star-alignment equations.
+
+This is a decision package, not the decision itself.  The committed 24
+coefficient polynomials and localized quotient have not yet been
+materialized.  If the good localization is empty, the surviving border
+fibres fall under the four border-rank-three normal-form mechanisms of
+Buczyński--Landsberg; if it is nonempty, that classification is bypassed.
+Rhodes supplies the Kruskal uniqueness theorem, Drton--Sturmfels--Sullivant
+the factor ideal, and Qi the independent downstairs third-secant equations.
+See
+`COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md`.
+
 ## 3 August apolar-Gorenstein Hilbert and resonance transfer
 
 Full edge support rigidifies the leaf-annihilator branch before any physical
@@ -3867,6 +3926,15 @@ mandatory legal secant--factor intersection: NONEMPTY;
 complete factor ideal excludes legal border family: FALSE;
 eight scalar covariants exhaust border family: FALSE;
 proper secant--factor chart reduction: FINITE ARTINIAN LAURENT ALGEBRA;
+committed sensor image membership:      24 ADJUGATE RESIDUALS;
+ordered honest rank-three parameter space: DIMENSION 32;
+torus-concise ordered secant cover:     DEGREE SIX;
+exact I_(7,2) generators/degree:        35 CUBICS, 21 PENTADS, DEGREE 259;
+universal good-open selector:           EXTERIOR/PAIR CONTRACTION, NO CHART ENUMERATION;
+committed localized good quotient:      EXACT FINITE CRITERION, NOT BUILT;
+good quotient nonzero:                  UNKNOWN;
+committed h=0 star-alignment quotient:  UNKNOWN;
+boundary trap on empty good quotient:   FOUR SECANT NORMAL-FORM MECHANISMS;
 legal localized pair ideal is unit:   UNKNOWN;
 P5/P6 support 18/21:              UNCONDITIONAL AFTER KNOWN EXTRACTION;
 P7 support 24 transfer:           CONDITIONAL ON LEGAL SYNCHRONIZATION;
