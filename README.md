@@ -1142,10 +1142,29 @@ condensation or inverse-minor algebra cannot exclude the ledger.  The terminal
 block mismatch in those first certificates is not intrinsic.  Exact
 squarefree Wick deconvolution and a determinant-one four-core factorization
 now realize all 186 prescribed scalar cofactors with one common terminal
-block over `Q(sqrt(21))`.  The remaining synchronization problem is a common
-tensor-valued core whose mixed blocker-colour words cancel:
+block over `Q(sqrt(21))`.  This common terminal matrix is already sufficient
+to glue the three scalar charts edgewise into one honest bilinear block graph:
+the three core--core diagonal evaluations and the three core--terminal
+evaluations are independent entries of the same physical blocks.  The
+canonical diagonal lift recovers all 186 prescribed and six free pure values,
+but has an exact forbidden mixed coefficient `1/7`.  Thus pure-chart
+coexistence is solved; cancellation by the still-free off-diagonal block
+entries is the remaining synchronization problem:
 [`P7_221_FORMAL_LEDGER_SCALAR_HAFNIAN_REALIZABILITY_AND_SYNCHRONIZATION_GAP.md`](P7_221_FORMAL_LEDGER_SCALAR_HAFNIAN_REALIZABILITY_AND_SYNCHRONIZATION_GAP.md).
 [`P7_221_COMMON_TERMINAL_BLOCK_SCALAR_HAFNIAN_REALIZABILITY.md`](P7_221_COMMON_TERMINAL_BLOCK_SCALAR_HAFNIAN_REALIZABILITY.md).
+[`P7_221_DIAGONAL_BLOCK_GLUING_AND_MIXED_WORD_BOUNDARY.md`](P7_221_DIAGONAL_BLOCK_GLUING_AND_MIXED_WORD_BOUNDARY.md).
+
+Squarefree Wick deconvolution now localizes that mixed problem without
+enumerating blocker words.  For every mixed blocker word `sigma`, all 62
+prescribed deletion faces vanish, so its terminal-presence signature is
+`alpha_sigma*x_(P\Q)+beta_sigma*x_P`.  Removing the common terminal Gaussian
+changes only the top coefficient:
+`Phi_sigma=alpha_sigma*x_(P\Q)+(beta_sigma-M_ab*alpha_sigma)*x_P`.
+Consequently every degree-one and degree-three common-core face, and every
+degree-five face except `P\Q`, vanishes.  The full synchronization problem is
+therefore concentrated on exactly two unprescribed faces per mixed word; this
+is a localization theorem, not yet an off-diagonal block construction:
+[`P7_221_TENSOR_COEFFICIENT_WICK_DECONVOLUTION_TWO_FACE_LOCALIZATION.md`](P7_221_TENSOR_COEFFICIENT_WICK_DECONVOLUTION_TWO_FACE_LOCALIZATION.md).
 Second, the aggregated-selector alternative is now exact in the factorized
 `h=0` branch.  Contracting any five blocker legs in their two residual-row
 common null spaces kills the twenty competing surplus-two Laplace terms
@@ -1182,6 +1201,14 @@ at least five coordinate-incidence modes; for factorized `P_7` residual rows,
 at most two of seven common null spaces are torus-capable:
 [`ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md`](ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md).
 [`ARBITRARY_PERMANENT_FIVE_MODE_ROW_PAIR_INCIDENCE_THEOREM.md`](ARBITRARY_PERMANENT_FIVE_MODE_ROW_PAIR_INCIDENCE_THEOREM.md).
+The five-mode bound is sharp for the polar/canonical/pure subsystem.  Equality
+at five has exactly nineteen colour-orbit types; polar rank leaves three, and
+one exact Type-D4 `P_7` model has all 21 polar identities, the canonical
+`012,01,01,02,02,12,12` root spans, local concision, and all three nonzero
+pure permanents and residual factors.  It deliberately does not satisfy the
+full mixed tensor identity, so any sixth-mode theorem must use that identity
+rather than incidence rank alone:
+[`FIVE_MODE_ROW_PAIR_INCIDENCE_EQUALITY_POLAR_CLASSIFICATION_SHARPNESS.md`](FIVE_MODE_ROW_PAIR_INCIDENCE_EQUALITY_POLAR_CLASSIFICATION_SHARPNESS.md).
 The `h!=0` branch now has a precise conditional analogue.  If a legal
 selector independently exposes synchronized residual-absent and
 residual-present principal tensors with the same direct blocks and root

@@ -1249,12 +1249,44 @@ block mismatch in those first certificates is also removable: squarefree
 Wick deconvolution produces a determinant-one four-core factorization for
 colour 0, an involution transfers it to colour 1, and both use the existing
 colour-2 terminal block.  All 186 scalar coordinates therefore share one
-terminal matrix.  Common tensor-valued core data and mixed-word cancellation
-are the exact remaining graph-realizability layer.
+terminal matrix.  That common matrix is already sufficient to glue the three
+charts into one honest bilinear block graph on their pure colour evaluations:
+core--core chart values occupy the three diagonal entries of each physical
+block, while core--terminal chart values occupy one common frozen-terminal
+column.  The resulting graph realizes all 186 prescribed and six free pure
+cofactors.  Its canonical diagonal lift nevertheless has the exact forbidden
+mixed coefficient `1/7` at deletion `1234ab` and core word `2220000`.
+Off-diagonal core-colour entries are invisible to every pure chart and could
+still cancel it, so this is a boundary for the diagonal lift rather than a
+universal obstruction.
 See
 `P7_221_FORMAL_LEDGER_SCALAR_HAFNIAN_REALIZABILITY_AND_SYNCHRONIZATION_GAP.md`.
 See
 `P7_221_COMMON_TERMINAL_BLOCK_SCALAR_HAFNIAN_REALIZABILITY.md`.
+See
+`P7_221_DIAGONAL_BLOCK_GLUING_AND_MIXED_WORD_BOUNDARY.md`.
+
+The mixed tensor residual has now been localized symbolically.  Regard the
+terminal deletion labels as squarefree presence variables and take one mixed
+blocker-word coefficient.  Its 62 prescribed faces all vanish, so before
+terminal deconvolution it has the two-face form
+
+```text
+F_sigma=alpha_sigma*x_(P\Q)+beta_sigma*x_P.
+```
+
+Removing the common scalar terminal Gaussian gives
+
+```text
+Phi_sigma=alpha_sigma*x_(P\Q)
+          +(beta_sigma-M_ab*alpha_sigma)*x_P.
+```
+
+Hence the common core has zero mixed degree-one and degree-three faces and
+zero mixed degree-five faces except `P\Q`.  This replaces a large list of
+mixed deletion equations by two unprescribed coefficients per word; it does
+not construct a common off-diagonal extension.  See
+`P7_221_TENSOR_COEFFICIENT_WICK_DECONVOLUTION_TWO_FACE_LOCALIZATION.md`.
 
 The mixed-word selector itself is no longer missing in the factorized `h=0`
 branch.  For a selected pair `{u,v}`, choose a common residual-null vector at
@@ -1302,6 +1334,18 @@ Applied to factorized `P_7` port rows, the torus/non-torus split improves to
 at most `2/5`.  See
 `ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md` and
 `ARBITRARY_PERMANENT_FIVE_MODE_ROW_PAIR_INCIDENCE_THEOREM.md`.
+
+That five-mode theorem is sharp at exactly the level used in its proof.
+There are nineteen equality-at-five colour-orbit types, distributed by one
+through five doubleton incidence modes as `1,4,6,5,3`.  Polar rank reduces
+them to three types.  An exact Type-D4 `P_7` model satisfies all 21 polar
+identities with canonical root spans, local concision, nonzero pure `P_5`
+permanents, and nonzero residual pure factors.  Its residual pair response
+still has rank two.  It is not asserted to satisfy the full mixed coefficient
+identity.  Thus a stronger incidence bound cannot follow from the polar,
+canonical, and pure data alone; the next step must use the common-core mixed
+equations.  See
+`FIVE_MODE_ROW_PAIR_INCIDENCE_EQUALITY_POLAR_CLASSIFICATION_SHARPNESS.md`.
 
 For `h!=0`, synchronized deletion depth is exactly the missing observable.
 If both the residual-absent tensor `T_0` and residual-present tensor `T_Q`
@@ -1372,11 +1416,15 @@ new axis topology boundary:        jet frames and matching shores still viable;
 new strict axis reduction:         only 2+2+1 survives two-endpoint model;
 new scalar ledger result:          all three 2+2+1 charts are hafnian-realizable;
 new scalar synchronization:         one common terminal block is realized;
-new synchronization gap:            common tensor core and mixed words remain;
+new pure-chart gluing:               one block graph realizes all pure charts;
+new diagonal-lift boundary:          one forbidden mixed coefficient is 1/7;
+new mixed residual localization:     only two unprescribed faces per word;
+new synchronization gap:            off-diagonal mixed cancellation remains;
 new h=0 polar selector:            five null legs isolate one mixed pair block;
 new arbitrary-order boundary:      at least three coordinate-incidence modes;
 new incidence sharpness:           canonical profile does not balance the three;
 new row-pair incidence theorem:    every pair needs at least five modes;
+new five-mode sharpness:           polar/canonical/pure data attain equality;
 new h!=0 conditional selector:     synchronized depth cancels direct blocks;
 new aligned-resonance boundary:    scalar depth subtraction then loses a colour;
 highest-priority invented object: legal synchronized-depth observation;
