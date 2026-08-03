@@ -16,8 +16,10 @@ and the apolar saturation `B_2=V_2` is impossible.
 
 The degree ledger then leaves exactly three symbolic placements of the final
 surplus.  The branch in which that surplus lies at an exterior mode is
-excluded by an exact rank-two apolar slice.  Two concentrated branches--the
-extra outgoing cell at `a_0` or at `a_1`--remain open.
+excluded by an exact rank-two apolar slice.  The two concentrated branches
+are excluded by mandatory source-colour uniqueness and cut-colour transport.
+Thus the whole aligned physical eight-cell one-chord `2+1+0` subbranch is
+impossible.
 
 This advances the genuine aligned physical-eight-cell subbranch and explains
 precisely why the 21-cell saturation model in
@@ -297,19 +299,92 @@ their selected `a_0` excess edge must be shared by two pure backbones.
 Equations (21)--(23) and this shared-edge condition are necessary, not
 constructions and not a proof that either chart survives.
 
+## Theorem 5: cut transport excludes both concentrated charts
+
+The mandatory cover already imposes two source-side inequalities.  At
+`p_0`, the distinct nonexcess core cells `a_0p_0` and `a_2p_0` have colours
+`alpha_0,alpha_2`; at `p_2`, the distinct nonexcess core cells `a_1p_2` and
+`a_2p_2` have colours `alpha_1,alpha_2`.  A mandatory cover has only one
+cell for a fixed source and colour, so
+
+```text
+alpha_0!=alpha_2,              alpha_1!=alpha_2.   (24)
+```
+
+The `a_1`-concentrated chart is now impossible immediately: its necessary
+survival condition (23) contradicts (24).
+
+Consider the `a_0`-concentrated chart.  Let `beta_0,beta_1` be the colours
+of the unique outgoing cells at `a_0,a_1`.  Alignment reserves
+`alpha_0,alpha_1` for core edges, while target survival (21) reserves
+`alpha_2`.  Hence
+
+```text
+beta_0 is the third colour outside {alpha_0,alpha_2},
+beta_1 is the third colour outside {alpha_1,alpha_2}. (25)
+```
+
+Here `tau=0`, so every exterior mode is cubic.  All exterior-mode cells are
+mandatory coordinates and local rank makes their colours `0,1,2`, one each.
+Write `R,Q` for the exterior modes and sources.  For every colour `c`, the
+exterior-mode count and the one-cell-per-source-and-colour cover give
+
+```text
+#_c(R-P)+#_c(R-Q)=|R|,
+#_c(A-Q)+#_c(R-Q)=|Q|.
+```
+
+Because `|R|=|Q|=m-3`, subtraction gives the cut-colour transport law
+
+```text
+multiset(colours(A-Q))=multiset(colours(R-P)).      (26)
+```
+
+The left side is
+
+```text
+{beta_0,beta_1} multiset-union (C\{alpha_2}),       (27)
+```
+
+because the two outgoing cells at `a_2` have the colours other than
+`alpha_2`.  On the source side, `p_0` is missing `beta_0`, `p_1` is missing
+the two colours in `C\{alpha_1}`, and `p_2` is missing `beta_1`.  Thus the
+right side is
+
+```text
+{beta_0,beta_1} multiset-union (C\{alpha_1}).       (28)
+```
+
+Cancel the common two-element multiset in (26).  Equations (27)--(28) give
+
+```text
+C\{alpha_2}=C\{alpha_1},
+```
+
+so `alpha_1=alpha_2`, contradicting (24).  The `a_0`-concentrated chart is
+also impossible.
+
+Combining Theorems 3 and 5 proves
+
+```text
+aligned physical eight-cell one-chord 2+1+0
+  => impossible for every m>=4.                    (29)
+```
+
+The word-ineligible but physically present second chord changes the physical
+degree and source-colour ledgers and remains outside (29).
+
 ## Scope wall
 
 ```text
 scope:      physical eight-cell A-P one-chord support;
 proved:     alignment forces s_2=2 and q_2=1 in that scope;
-proved:     the saturated B_2=V_2 branch is nonaligned and impossible here;
-proved:     exactly the three surplus placements (10) remain a priori;
-excluded:   the exterior-surplus placement (0,1,2;1);
-open:       the concentrated placements (1,1,2;0) and (0,2,2;0);
-proved:     every concentrated survivor obeys (21)--(23);
-proved:     the mixed a_1-concentrated survivor needs a shared excess edge;
+proved:     exactly the three surplus placements (10) arise a priori;
+excluded:   the exterior-surplus placement by apolar rank;
+excluded:   both concentrated placements by colour transport;
+proved:     the entire scoped aligned 2+1+0 subbranch is impossible;
 open:       physically present but word-ineligible second chord;
-not proved: full exclusion of aligned one-chord 2+1+0;
+not proved: full exclusion including that physical second-chord branch;
 not proved: exclusion of the bare aligned theta;
 not used:   support enumeration, coefficient-word census, finite fields;
 global Krenn--Gu conjecture: UNRESOLVED.
@@ -322,7 +397,8 @@ uv run --with sympy python verify_arbitrary_permanent_three_excess_one_chord_210
 python audit_arbitrary_permanent_three_excess_one_chord_210_alignment_desaturation_theorem.py
 ```
 
-The primary verifier checks the exact core flattening and surplus ledger.
+The primary verifier checks the exact core flattening, surplus ledger, and
+cut-colour multisets.
 The independent no-import audit reconstructs the coefficient matrix,
 colour-forcing consequence, and rank minor.  These scripts guard the fixed
 symbolic formulas; the arbitrary-order statements are proved above.

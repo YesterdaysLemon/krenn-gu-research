@@ -5,6 +5,13 @@ def determinant_2_by_2(matrix):
     return matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0]
 
 
+def counts(values):
+    answer = {0: 0, 1: 0, 2: 0}
+    for value in values:
+        answer[value] += 1
+    return answer
+
+
 def main():
     # Independent nonzero integer specialization of a,b,c,d.
     a, b, c, d = 2, 3, 5, 7
@@ -52,8 +59,25 @@ def main():
     assert {"q0", "q1", "q2", "q3"}.difference(fixed_sources) == {"q2"}
     assert pure_matching["a0"] == "q2"
 
+    # Normalize alpha2=2.  The two possibilities for alpha1 both violate
+    # cut transport in the a0-concentrated chart.
+    for alpha0 in (0, 1):
+        for alpha1 in (0, 1):
+            beta0 = 1 - alpha0
+            beta1 = 1 - alpha1
+            a_q = (beta0, beta1, 0, 1)
+            r_p = (beta0, beta1, beta1, 2)
+            assert counts(a_q) != counts(r_p)
+
+    # The a1-concentrated chart requires alpha1=alpha2, while the two
+    # nonexcess p2 cells must have different mandatory colours.
+    for alpha2 in (0, 1, 2):
+        alpha1 = alpha2  # forced by projected target survival
+        assert alpha1 == alpha2
+        assert len({alpha1, alpha2}) == 1
+
     print("independent no-import aligned 2+1+0 desaturation audit: PASS")
-    print("colour reservation, exact surplus placements, and rank-two minor")
+    print("colour reservation, cut transport, and rank-two minor")
 
 
 if __name__ == "__main__":

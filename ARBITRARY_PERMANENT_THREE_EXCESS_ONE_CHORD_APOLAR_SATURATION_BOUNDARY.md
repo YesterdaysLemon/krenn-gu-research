@@ -322,6 +322,7 @@ full P_6 -> Delta_3 restriction:                NOT CLAIMED;
 derived apolar differential/obstruction:        NOT YET CONSTRUCTED;
 all-sector zeon boundary carrier:                CONSTRUCTED LATER;
 aligned saturation B_2=V_2 in physical 8-cell core: EXCLUDED LATER;
+aligned physical 8-cell one-chord 2+1+0:          EXCLUDED LATER;
 one-chord 2+1+0 global exclusion:               NOT PROVED;
 global Krenn--Gu conjecture:                    UNRESOLVED.
 ```

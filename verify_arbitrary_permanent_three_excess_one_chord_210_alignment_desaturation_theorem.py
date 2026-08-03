@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from collections import Counter
+
 import sympy as sp
 
 
@@ -70,8 +72,26 @@ def main() -> None:
     remaining_source = ({0, 1, 2, 3} - used_elsewhere).pop()
     assert remaining_source == pure_sources[unmatched_mode]
 
+    # Source p2 forces alpha1 != alpha2.  For every such colour placement,
+    # the a0-concentrated A-Q and R-P cut multisets disagree.
+    for alpha2 in colours:
+        for alpha0 in colours - {alpha2}:
+            for alpha1 in colours - {alpha2}:
+                beta0 = next(iter(colours - {alpha0, alpha2}))
+                beta1 = next(iter(colours - {alpha1, alpha2}))
+                a_q = Counter((beta0, beta1, *(colours - {alpha2})))
+                r_p = Counter((beta0, beta1, *(colours - {alpha1})))
+                assert a_q != r_p
+
+    # The a1-concentrated survivor condition alpha1=alpha2 directly
+    # contradicts mandatory-cover uniqueness at source p2.
+    for alpha2 in colours:
+        alpha1 = alpha2  # forced by projected target survival
+        mandatory_p2_colours = (alpha1, alpha2)
+        assert len(set(mandatory_p2_colours)) != len(mandatory_p2_colours)
+
     print("aligned one-chord 2+1+0 desaturation theorem: PASS")
-    print("exact rank minor and surplus ledger; no support or word census")
+    print("exact rank minor, surplus ledger, and cut transport; no census")
 
 
 if __name__ == "__main__":

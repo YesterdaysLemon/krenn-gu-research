@@ -918,7 +918,7 @@ The degree ledger leaves three surplus placements; an exact apolar
 rank-two/rank-one mismatch excludes the exterior-surplus placement.  See
 `ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_210_ALIGNMENT_DESATURATION_THEOREM.md`.
 
-The remaining aligned image has only two concentrated charts:
+The intermediate aligned image has only two concentrated charts:
 
 ```text
 (s_0,s_1,s_2;tau)=(1,1,2;0) or (0,2,2;0).
@@ -932,7 +932,15 @@ Perfectness further forces the aligned `a_0` edge to coincide physically
 with the `alpha_2` pure-backbone edge.  It must be a bichromatic excess cell,
 so the diagonal theta matching through mandatory `z_0` is excluded there.
 
-Priority: derive a colour-sensitive compound relation on these two charts.
+Both charts are in fact excluded by the mandatory cover and cut transport.
+At source `p_2`, its two nonexcess core cells force
+`alpha_1!=alpha_2`, immediately killing the `a_1`-concentrated chart.  In the
+`a_0`-concentrated chart, cubic exterior transport reduces after cancellation
+to `C\{alpha_2}=C\{alpha_1}`, the opposite equality.  Thus the complete
+aligned physical eight-cell one-chord `2+1+0` subbranch is excluded.
+
+Priority: treat the separate branch where the second chord is physically
+present in another colour but ineligible at the aligned word.
 The branch where the second chord exists physically in another colour but is
 ineligible at the aligned word is separate and remains open.
 
@@ -961,7 +969,7 @@ new arbitrary-order theorem:      support >=3m+3 and S_3 port normal form;
 new exact local invariant:        additive/toric B_3 phase variety;
 new boundary support theorem:     all sectors descend to L=B D^* C links;
 new weighted boundary object:     all-sector zeon jet J_W;
-new aligned-port theorem:         q_2=1 and exterior-surplus excluded;
+new aligned-port theorem:         physical 8-cell 2+1+0 fully excluded;
 highest-priority invented object: coloured/aligned response-image ideal;
 highest-priority literature tool: zeon algebra + derived flattening;
 full proof or counterexample:      NOT YET;
