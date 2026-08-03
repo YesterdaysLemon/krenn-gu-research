@@ -13,17 +13,21 @@ root--blocker extraction theorems applies.  It excludes the former equality
 shell in every extracted permanent cell; it does not force such an
 extraction in every hypothetical graph witness.
 
-The strongest unconditional transfers proved here are:
+The strongest transfers proved here, including the 3 August two-residual
+addendum, are:
 
 ```text
 five roots + five tight blockers:       I>=18;
-r roots + r+1 blockers + one port:      I+p>=3r+6.  (2)
+r roots + r+1 blockers + one port:      I+p>=3r+6;
+r roots + r+2 blockers + exactly two residuals:
+  beta coordinate monomial, or I+p_0+p_1>=3r+9.     (2)
 ```
 
 The second line gives `I+p>=18` for four roots/five blockers and
-`I+p>=21` for five roots/six blockers.  A synchronized factorized two-port
-extraction would similarly give `I+p_0+p_1>=3r+9`, but that factorization is
-not automatic.
+`I+p>=21` for five roots/six blockers.  In the third line the exact
+two-residual torus dichotomy makes the synchronized factorization automatic
+on the non-coordinate branch.  The coordinate-monomial branch remains open,
+and four or more residual vertices do not admit this one-channel conclusion.
 
 These are active contraction-support inequalities, not bounds on the total
 edge count of the original graph.
@@ -34,6 +38,8 @@ The exact inputs are
 [`TWO_PORT_SEVEN_BLOCKER_REDUCTION.md`](TWO_PORT_SEVEN_BLOCKER_REDUCTION.md),
 and the support theorem
 [`ARBITRARY_PERMANENT_THREE_M_PLUS_TWO_SUPPORT_BOUND.md`](ARBITRARY_PERMANENT_THREE_M_PLUS_TWO_SUPPORT_BOUND.md).
+The two-residual addendum is proved and replayed separately in
+[`ARBITRARY_ORDER_TWO_RESIDUAL_STRICT_SUPPORT_STAIRCASE_AND_COORDINATE_FORCING.md`](ARBITRARY_ORDER_TWO_RESIDUAL_STRICT_SUPPORT_STAIRCASE_AND_COORDINATE_FORCING.md).
 
 ## Active root--blocker support
 
@@ -135,26 +141,36 @@ twelve vertices: an extracted 6 x 6 cut with <=20 edges. (12)
 The numbers in (12) concern the extracted cut, not the graph's total edge
 count and not the older unrelated eight-vertex seventeen-edge statement.
 
-## Conditional factorized two-port transfer
+## Exact two-residual transfer and the higher-residual boundary
 
-For `r` roots and `r+2` blockers, the exact surplus identity is a two-port
-cofactor tensor.  If, in addition, it admits a synchronized factorization
-with two common port rows `g_(0u),g_(1u)`, define
+For `r` roots and `r+2` blockers with exactly two residual nonblockers, let
+`beta` be the residual edge restricted to their simultaneous-kernel spaces.
+If `beta` is not a nonzero coordinate monomial, the torus-zero theorem
+chooses coordinatewise-nonzero kernel vectors with residual value zero and
+gives a synchronized factorization with common port rows
+`g_(0u),g_(1u)`.  Define
 
 ```text
 p_j=#{u:g_(ju) is not the zero form}.                (13)
 ```
 
 The factorization extracts `P_(r+2) -> Delta_3` with support
-`I+p_0+p_1`.  Equation (1) gives the conditional bound
+`I+p_0+p_1`.  Equation (1) gives
 
 ```text
 I+p_0+p_1>=3(r+2)+3=3r+9.                           (14)
 ```
 
 For five roots and seven blockers, this is `I+p_0+p_1>=24`, excluding the
-old `23` shell.  The repository proves the two-port cofactor identity, not
-the synchronized factorization, so (14) is explicitly conditional.
+old `23` shell on every non-coordinate two-residual branch.  Equivalently,
+a displayed root--blocker--residual graph cut of size at most `3r+8` forces
+`beta` to be a nonzero coordinate monomial.  This is the exact conclusion of
+`ARBITRARY_ORDER_TWO_RESIDUAL_STRICT_SUPPORT_STAIRCASE_AND_COORDINATE_FORCING.md`.
+
+This addendum does not make a general two-port cofactor one-channel.  For
+every even residual order at least four there are torus-zero residual
+matrices with full-rank cofactor form, as proved in
+`RESIDUAL_HAFNIAN_COMMON_GRAM_AUDIT_AND_TORUS_ZERO_FULL_RANK_SHARPNESS.md`.
 
 ## Exact global target
 
@@ -170,8 +186,9 @@ P_7 extraction: support <=23.                        (15)
 
 An upper bound of `3m+3` is insufficient because that first surviving layer
 remains unresolved.  The five-root route still has boundary-resultant and
-blocker-surplus branches, and the two-port route still lacks unconditional
-factorization.
+blocker-surplus branches; the exactly-two-residual route still has the
+coordinate-monomial boundary, while larger residual systems remain
+multichannel.
 
 ## Verification
 
@@ -182,11 +199,14 @@ python verify_graph_extraction_strict_support_transfer_corollary.py
 python audit_graph_extraction_strict_support_transfer_corollary.py
 ```
 
-The primary verifier checks every affine support substitution and the named
-`P_5,P_6,P_7` values.  The independent no-import audit reconstructs the
-inequality table from the permanent order.  The extraction theorems and the
-implications (9)--(10) are the symbolic proof; no graph or matching census
-is performed.
+The original primary verifier checks every affine support substitution and
+the named `P_5,P_6,P_7` values.  The original independent no-import audit
+reconstructs the inequality table from the permanent order.  The new
+two-residual package separately checks the exact matching recursion, torus
+dichotomy representatives, two-row permanent transport, cut arithmetic, and
+an independent assignment audit.  The written extraction theorems and the
+implications (9)--(10) are the symbolic proof; no graph or matching census is
+performed.
 
 ## Boundary
 
@@ -194,8 +214,9 @@ is performed.
 strict local support bound:              3m+3;
 five-root/five-blocker active support:   AT LEAST 18;
 r/(r+1) one-port active support:         AT LEAST 3r+6;
-r/(r+2) synchronized two-port support:   AT LEAST 3r+9, CONDITIONAL;
+r/(r+2) exactly-two-residual support:     COORDINATE, OR AT LEAST 3r+9;
 graph-only one-port sparse-cut shell:    EXCLUDED BY (11);
+graph-only two-residual cut <=3r+8:       COORDINATE MONOMIAL FORCED;
 forced sparse extraction in every graph: NOT PROVED;
 global Krenn--Gu conjecture:              UNRESOLVED.
 ```

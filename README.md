@@ -15,6 +15,40 @@ controls, gives the ranked cross-depth program, and records the exact
 separate in
 [`NEXT_INSTANCE_HANDOFF_2026-07-31.md`](NEXT_INSTANCE_HANDOFF_2026-07-31.md).
 
+The newest continuation replaces the residual-hafnian rank question by an
+exact all-depth response calculus.  The common-cofactor Gram decomposition
+has been independently audited, but a complete-support family with
+`haf(A)=0` and `rank C(A)=|Q|` proves that torus cancellation gives no
+universal rank drop.  The surviving intrinsic equation is the Hadamard
+stress `(A Hadamard C(A))1=haf(A)1`.  See
+[`RESIDUAL_HAFNIAN_COMMON_GRAM_AUDIT_AND_TORUS_ZERO_FULL_RANK_SHARPNESS.md`](RESIDUAL_HAFNIAN_COMMON_GRAM_AUDIT_AND_TORUS_ZERO_FULL_RANK_SHARPNESS.md).
+
+Retaining compatible residual deletion depths exposes a stronger invented
+object.  After dividing by the port-only moment `M`, the entire response
+tower is `exp(Q_A+Q_R)`: its residual logarithm has degree at most two, every
+higher residual cumulant vanishes, and every depth is reconstructed by one
+loop-hafnian family.  For two residual vertices the division-free observable
+is `MZ-Y_0Y_1=hM^2`.  See
+[`RESIDUAL_DEPTH_LOOP_HAFNIAN_CUMULANT_AND_TWO_PORT_DISCRIMINANT_THEOREM.md`](RESIDUAL_DEPTH_LOOP_HAFNIAN_CUMULANT_AND_TWO_PORT_DISCRIMINANT_THEOREM.md).
+
+The same structure has square-free apolar, or zeon, catalecticants.  For one
+fixed residual-present response, every `k`-leg all-port-degree matrix factors
+through the `k`th permanental compound of one incidence matrix, giving rank
+at most
+`min{binom(q,k),binom(r+k-1,k)}` when that incidence has rank `r`.  Doubled
+identity incidence attains the binomial bound, so this is a sharp structural
+test rather than a hidden solution.  See
+[`RESIDUAL_ZEON_APOLAR_MULTI_LEG_CATALECTICANT_THEOREM.md`](RESIDUAL_ZEON_APOLAR_MULTI_LEG_CATALECTICANT_THEOREM.md).
+
+On exactly two residual nonblockers, the torus-zero/non-coordinate branch
+does transport the strict permanent theorem without an extra factorization
+hypothesis.  It forces `I+p_0+p_1>=3r+9`; equivalently a displayed graph cut
+of size at most `3r+8` forces the residual restriction to be a nonzero
+coordinate monomial.  This gives the exact `18/21/24` support staircase for
+the `P_5/P_6/P_7` second-surplus cells.  The coordinate-monomial branch is
+locally universal and remains open globally.  See
+[`ARBITRARY_ORDER_TWO_RESIDUAL_STRICT_SUPPORT_STAIRCASE_AND_COORDINATE_FORCING.md`](ARBITRARY_ORDER_TWO_RESIDUAL_STRICT_SUPPORT_STAIRCASE_AND_COORDINATE_FORCING.md).
+
 The 3 August symbolic continuation closes three tempting shortcuts without
 using a support or word enumeration.  First, the generic six-vertex hafnian
 has no determinant-style cubic polar condensation

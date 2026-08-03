@@ -23,10 +23,87 @@ separate from the speculative translations below.  Whenever the proved
 root--blocker lemmas extract `P_m -> Delta_3`, their active cell support is at
 least `3m+3`.  In the one-port case this gives
 `I(R,B)+p>=3r+6`, and the graph-only sufficient contradiction
-`e_G(R,B)+e_G(B,Q)<=3r+5`.  The exact sharp targets are therefore 17, 20,
-and conditionally 23 cells for extracted `P_5`, `P_6`, and `P_7` systems.
-Forcing one of those sparse extractions globally is still open.  See
-`GRAPH_EXTRACTION_STRICT_SUPPORT_TRANSFER_COROLLARY.md`.
+`e_G(R,B)+e_G(B,Q)<=3r+5`.  For exactly two residual nonblockers, the new
+torus dichotomy removes the former factorization qualifier on the
+non-coordinate branch: `I+p_0+p_1>=3r+9`, while a cut of size at most
+`3r+8` forces a nonzero coordinate-monomial residual restriction.  The
+exact second-surplus `P_5/P_6/P_7` support staircase is `18/21/24` with
+coordinate-forcing cut thresholds `17/20/23`.  Forcing a sparse extraction
+globally, or excluding the coordinate branch, is still open.  See
+`GRAPH_EXTRACTION_STRICT_SUPPORT_TRANSFER_COROLLARY.md` and
+`ARBITRARY_ORDER_TWO_RESIDUAL_STRICT_SUPPORT_STAIRCASE_AND_COORDINATE_FORCING.md`.
+
+## Residual-depth cumulants, zeon apolarity, and the sharp Gram boundary
+
+The arbitrary-order residual-hafnian two-port decomposition has now been
+audited independently.  Its corrected pair family has one common symmetric
+middle form `C(A)`, and the residual edge/cofactor compatibility retains the
+Hadamard-stress equation
+
+```text
+(A Hadamard C(A))1=haf(A)1.
+```
+
+There is no rank improvement on the torus-zero branch: for every even
+`q>=4`, the complete-support residual matrix with `A_12=-(q-2)` and every
+other edge one has `haf(A)=0` but `rank C(A)=q`.  This exact countermodel
+closes the tempting route "residual cancellation implies one fewer Gram
+channel."  See
+`RESIDUAL_HAFNIAN_COMMON_GRAM_AUDIT_AND_TORUS_ZERO_FULL_RANK_SHARPNESS.md`.
+
+The useful translation appears only after retaining compatible residual
+deletion depths.  In the commuting square-zero port/residual algebra, divide
+every depth by the common port-only moment `M`.  The complete normalized
+tower is exactly
+
+```text
+Phi=exp(Q_A+Q_R),             log Phi=Q_A+Q_R.
+```
+
+Thus singleton residual cumulants are the port-incidence rows, pair
+cumulants are scalar residual edges, and all cumulants of residual order at
+least three vanish.  Equivalently, every depth is one loop hafnian with
+square-zero linear loop weights.  For two residual vertices this gives the
+division-free cross-depth discriminant
+
+```text
+MZ-Y_0Y_1=hM^2.
+```
+
+Every nonzero synchronized port moment recovers `h`; the `B=0` family proves
+the all-nonempty-moments-zero escape sharp.  These statements form a
+necessary-and-sufficient test for a complete isolated scalar response tower,
+but a top `P_7` coefficient does not itself expose the three companion
+deletion families.  See
+`RESIDUAL_DEPTH_LOOP_HAFNIAN_CUMULANT_AND_TWO_PORT_DISCRIMINANT_THEOREM.md`.
+
+The same response has an apolar refinement in the zeon, or commuting
+zero-square, algebra.  For one fixed residual-present response, mark `k`
+disjoint port legs and concatenate every compatible remaining port degree.
+The resulting catalecticant factors through
+the `k`th permanental compound of the common incidence matrix, so
+
+```text
+rank Cat_k <= min{binom(q,k),binom(r+k-1,k)},
+```
+
+where `r` is the incidence rank.  Its top block is the complement polar
+pairing of the `k`th and `(q-k)`th permanental compounds.  Doubled identity
+incidence realizes a complement permutation matrix of size `binom(q,k)`, so
+the residual-order bound is best possible.  This imports the language of
+Feinsilver--McSorley zeon powers and multigraded apolar catalecticants, while
+the common nested hafnian tower is problem-specific.  See
+`RESIDUAL_ZEON_APOLAR_MULTI_LEG_CATALECTICANT_THEOREM.md`.
+
+The literature interfaces are now precise.  Gaussian boson sampling explains
+the hafnian/Wick exponential; loop-hafnian moment and cumulant formulas
+motivate the residual logarithm; zeon powers identify permanental compounds;
+and apolarity packages the common derivative space as catalecticant minors.
+None of those theories supplies the missing legal deletion-depth selector.
+The next proof obligation is therefore observability, not another top-only
+rank inequality: expose one compatible coefficient of the two-residual
+discriminant, the third residual cumulant, or a nontrivial zeon
+catalecticant from the same hypothetical witness.
 
 There is also an exact ear-theoretic translation of the first surviving
 support layer.  Hetyei's theorem, in the modern form stated by Dalwadi,
