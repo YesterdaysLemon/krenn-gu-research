@@ -1098,6 +1098,19 @@ one-parameter two-residual graph-response family has fixed top pair
 target is thus a full-rank observation matrix on a partition-closed deletion
 cube, or a projected identity eliminating its hidden lower faces:
 [`P7_DELETION_CUBE_OBSERVABILITY_AND_CLEAN_WINDOW_BOUNDARY.md`](P7_DELETION_CUBE_OBSERVABILITY_AND_CLEAN_WINDOW_BOUNDARY.md).
+Both proposed shortcuts from that boundary are now sharply tested.  A common
+canonical system of three pure `P_7` matrices with axis multiplicity `2+2+1`
+has rank-two lower frames only at root pairs whose marked-shore products all
+vanish; every nonzero clean shore lands at rank one.  Conversely, a balanced
+edge weighting on the graph of rank-at-least-two root pairs forces a rank-two
+shore by a weighted marked-Laplace identity.  This leaves exactly the
+all-axis singleton patterns `4+1`, `3+1+1`, and `2+2+1` outside that positive
+argument.  Nor can one eliminate the hidden pair faces using only overlapping
+top windows: even granting all six clean windows and independent top
+selectors, their twelve `M/Z` top values plus the pure two-port aggregate have
+dense image and zero elimination ideal.  The next invariant must use actual
+pair/empty faces or mixed-colour/shared-block coupling:
+[`P7_SELECTOR_MATROID_RANK_COOCCURRENCE_AND_TOP_PROJECTION_BOUNDARY.md`](P7_SELECTOR_MATROID_RANK_COOCCURRENCE_AND_TOP_PROJECTION_BOUNDARY.md).
 A separate majority-subset theorem says that, on `|S|=m+r` vertices of an
 order-`2m` witness, each contracted monochromatic pure tensor lies in the
 `r`th power of the internal-edge ideal.  At `r=1`, every entangled tensor

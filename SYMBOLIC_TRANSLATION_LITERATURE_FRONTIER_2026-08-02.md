@@ -1174,6 +1174,33 @@ The ranked symbolic program from this translation is:
 This program is finite-dimensional symbolic algebra on forced windows.  It
 does not ask for an enumeration of the 4.6-million quadruple shell.
 
+The first selector-matroid calculation now closes two weaker versions of this
+program.  The unsigned `K_4` star-incidence block has rank four on six pair
+faces, with exact two-dimensional kernel
+`(-s-t,s,t,t,s,-s-t)`.  Two new legal rows complete a pair family exactly
+when their defect signatures on that kernel are independent.  An actual
+two-residual response lies in the kernel, so top and star data do not imply
+partition closure.  On several windows the correct recovery condition is a
+rank difference after quotienting nuisance pair columns; all four-windows on
+five ports are sufficient, but current P7 theory forces only one.
+
+Rank-two root data need not occur on the forced shore either.  Three exact
+canonical pure `P_7` matrices with axis pattern `2+2+1` have all rank-two
+marked-shore products zero and nonzero pure permanents.  A positive weighted
+Laplace theorem recovers co-occurrence whenever the graph of rank-at-least-two
+pairs has a common nonzero weighted degree.  This covers every non-axis case
+and the all-axis patterns `5` and `3+2`, leaving the singleton partitions
+`4+1`, `3+1+1`, and `2+2+1` as the exact rank boundary.
+
+Finally, algebraic-matroid elimination on only the top faces is now settled
+negatively.  One scalar/pure graph family exposes all six marked four-windows
+with independent top selectors and maps rationally onto a dense open subset
+of the twelve top `M/Z` coordinates plus the two-port aggregate.  Its visible
+elimination ideal is zero.  A circuit polynomial must therefore include a
+lower pair face, a mixed-colour coefficient, or a shared-block constraint.
+See
+`P7_SELECTOR_MATROID_RANK_COOCCURRENCE_AND_TOP_PROJECTION_BOUNDARY.md`.
+
 ## Ranked proof program
 
 1. **Phase-decorated `B_3` exchange complex.**  Define the missing incidence
@@ -1205,8 +1232,10 @@ new residual locality tool:       separator cross-rank <=2^(s-1);
 new residual gluing invariant:    rank[F_2|F_4|F_6|...]<=q on disjoint charts;
 new forced P7 chart:              marked shore with double-only four-window;
 new exact information boundary:  top window face does not determine lower cube;
-highest-priority invented object: deletion-cube observation matroid;
-highest-priority literature tool: algebraic-matroid projected circuit;
+new selector no-go:               rank-two pair need not meet a nonzero shore;
+new projection no-go:             all six top windows have dense visible image;
+highest-priority invented object: mixed-colour deletion-face matroid;
+highest-priority literature tool: circuit with a genuine lower pair face;
 full proof or counterexample:      NOT YET;
 global Krenn--Gu conjecture:       UNRESOLVED.
 ```
