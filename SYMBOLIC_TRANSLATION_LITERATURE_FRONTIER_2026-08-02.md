@@ -3216,6 +3216,60 @@ This is an exact determinant/exterior-power and weighted-line-bundle
 translation, not an expansion or enumeration of the enormous maximal-minor
 ideal.
 
+## 3 August legal secant--factor codimension barrier
+
+The legal localized ideal cannot be decided by the factor-analysis layer
+alone.  Let `Gamma:U->(K^3)^(tensor 5)` be any injective legal 219-label
+companion map.  The third secant of the five-qutrit Segre has projective
+dimension 32, so the projective dimension theorem gives
+
+```text
+dim(P(im Gamma) intersect sigma_3(Segre))
+ >=218+32-242=8.                                      (49a)
+```
+
+This is a mandatory border-rank-three preimage inside every actual legal
+full sensor; no arbitrary ambient incidence map replaces `Gamma`.
+
+The seven-port two-factor-analysis arrays
+
+```text
+y_ij=a_i b_j+b_i a_j
+```
+
+form an irreducible affine cone of dimension 13.  A fixed rank-13 Jacobian
+certificate proves the dimension exactly.  Since the named 21-coordinate
+pair projection from `U` is surjective, the projective inverse image of this
+factor locus has dimension 210 and codimension eight in `P(U)=P^218`.
+Therefore
+
+```text
+mandatory border preimage intersect complete factor locus != empty. (49b)
+```
+
+The whole factor-analysis ideal—not just a selected pentad—is consequently
+proper on the mandatory legal border family.  More generally, any at-most-
+eight homogeneous scalar components from the gate/pentad/alignment hierarchy
+still have a common border-rank-three zero.
+
+This does not construct a legal GHZ point.  The forced intersection can lie
+in the nonconcise secant boundary, the zero pair-coordinate base locus, or a
+pinned/root-torus boundary.  On a proper zero-dimensional good chart, let
+`A_Gamma` be the finite coordinate algebra.  Then the gate is a unit exactly
+when its multiplication determinant is nonzero, and the complete surviving
+pair sector is the finite Laurent quotient
+
+```text
+A_Gamma[tau,tau^(-1)]/
+ <eta, tau y_ij-khat_ij>.                              (49c)
+```
+
+Thus the next legal calculation is finite Artinian linear algebra after a
+mandatory intersection is formed, not unrestricted elimination over 219
+cofactor coordinates.  Torus-concise simple incidence and nonvanishing of
+(49c) remain unknown.  See
+`LEGAL_P7_SECANT_FACTOR_CODIMENSION_BARRIER_AND_ARTINIAN_PAIR_IDEAL_REDUCTION.md`.
+
 ## 3 August apolar-Gorenstein Hilbert and resonance transfer
 
 Full edge support rigidifies the leaf-annihilator branch before any physical
@@ -3623,6 +3677,12 @@ simple-incidence line covariant:      SIGNED 218-MINORS;
 weighted legal pair amplitude:        RELATIVE WEIGHT 15;
 localized legal h=0 pair ideal:       EXACT IFF CRITERION;
 ambient gated incidence forces pair ideal: FALSE;
+legal border-GHZ preimage dimension: AT LEAST EIGHT;
+seven-port factor inverse-image codimension: EXACTLY EIGHT;
+mandatory legal secant--factor intersection: NONEMPTY;
+complete factor ideal excludes legal border family: FALSE;
+eight scalar covariants exhaust border family: FALSE;
+proper secant--factor chart reduction: FINITE ARTINIAN LAURENT ALGEBRA;
 legal localized pair ideal is unit:   UNKNOWN;
 P5/P6 support 18/21:              UNCONDITIONAL AFTER KNOWN EXTRACTION;
 P7 support 24 transfer:           CONDITIONAL ON LEGAL SYNCHRONIZATION;

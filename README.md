@@ -151,6 +151,21 @@ ideal; whether its legal localization is the unit ideal remains unknown.
 See
 [`LEGAL_COMPANION_SIMPLE_INCIDENCE_WEIGHTED_PULLBACK_IDEAL_AND_NONFORCING_THEOREM.md`](LEGAL_COMPANION_SIMPLE_INCIDENCE_WEIGHTED_PULLBACK_IDEAL_AND_NONFORCING_THEOREM.md).
 
+Projective dimension now gives a legal, parameter-free obstruction to one
+possible unit proof.  Every injective 219-label companion image meets the
+third secant of the five-qutrit Segre in dimension at least eight.  The
+inverse image of the complete seven-port two-factor-analysis variety has
+codimension exactly eight, so their intersection is nonempty for every legal
+full sensor.  Hence neither the complete factor-analysis ideal nor any eight
+chosen homogeneous gate/pentad/alignment components can eliminate the whole
+mandatory border-GHZ family.  On an expected zero-dimensional proper chart,
+the remaining `h=0` and star-alignment question reduces to a finite Artinian
+Laurent quotient; multiplication by the degree-eight gate gives its exact
+norm/unit test.  The forced intersection may still lie entirely on the
+nonconcise, pair-zero, pinned, or root-torus boundary, so the full localized
+pair ideal remains undecided.  See
+[`LEGAL_P7_SECANT_FACTOR_CODIMENSION_BARRIER_AND_ARTINIAN_PAIR_IDEAL_REDUCTION.md`](LEGAL_P7_SECANT_FACTOR_CODIMENSION_BARRIER_AND_ARTINIAN_PAIR_IDEAL_REDUCTION.md).
+
 The primitive `P_7` branch has two new complementary reductions.  The 35
 remaining leaf quadrics are equivalent to one projective collinearity
 `u wedge v=0`; when it holds, the nonzero affine scale is unique.  On the
