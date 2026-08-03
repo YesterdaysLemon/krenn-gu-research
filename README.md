@@ -77,7 +77,16 @@ mandatory partner in every fibre.  Thus the obvious same-mode straddling
 route is impossible, and a surviving obstruction must use a ratio state away
 from the common excess mode.  `Gr(2,3)` supplies no quadratic Pluecker
 relation, while matchgate identities remain conditional on a deletion-closed
-boundary signature not yet derived.
+boundary signature not yet derived.  The direct mixed-backbone route to the
+rectangle between the two degree-four switch modes is now an exact residual
+Hall dichotomy: a residual perfect matching forces it, while every failure
+contains a connected shore of coloured cut type `(1,1,1)` or `(1,1,3)`.  A
+fixed six-mode support meets
+the ledger, local ranks, pure switches, and all source-subset Hall quotas but
+realizes the five-edge shore, so those structural conditions alone cannot
+finish the proof.  The surviving target is to exclude both shore signatures
+with mixed coefficient equations.  The rectangle could still follow
+indirectly from those equations when the direct completion fails.
 See
 [`ARBITRARY_PERMANENT_THREE_M_PLUS_TWO_SUPPORT_BOUND.md`](ARBITRARY_PERMANENT_THREE_M_PLUS_TWO_SUPPORT_BOUND.md)
 and
@@ -94,6 +103,8 @@ and
 [`ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_CUT_NORMAL_FORM_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_CUT_NORMAL_FORM_THEOREM.md)
 and
 [`ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCESS_PLANE_SEPARATION_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCESS_PLANE_SEPARATION_THEOREM.md).
+See also
+[`ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_PORT_COMPLETION_SHORE_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_PORT_COMPLETION_SHORE_THEOREM.md).
 
 Two complementary cell-level transfers are also settled.  The all-root and
 four-root jets give five exact hidden-pair equations; on each rank-two chart

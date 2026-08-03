@@ -14185,9 +14185,9 @@ the same-colour core pairs cannot route one either.  A future contradiction
 must connect to a ratio state away from the common excess mode; cross-colour
 pairs at `b_c,b_d` remain unanalysed.  The excess plane is a point of
 `Gr(2,3)`, where there is no quadratic Pluecker relation.  The two known
-rectangles can also be made simultaneously determinant-signed; only a third
-completed row pair would force the impossible odd sign triangle, and that
-third coefficient is not yet known to exist.  Matchgate identities remain
+rectangles can also be made simultaneously determinant-signed.  A third row
+pair would obstruct one common signing, but that orientation failure is not
+a bosonic permanent contradiction.  Matchgate identities remain
 inapplicable without a complete deletion-closed signature.
 
 ```text
@@ -14231,4 +14231,43 @@ Thus every `3m+2` equality survivor has one or two switchable colours.
 ARBITRARY_PERMANENT_EQUALITY_ZERO_SWITCH_EXCLUSION_THEOREM.md
 verify_arbitrary_permanent_equality_zero_switch_exclusion_theorem.py
 audit_arbitrary_permanent_equality_zero_switch_exclusion_theorem.py
+```
+
+### Two-switch port completion and Hall shores
+
+Let `A_0={a,b_c,b_d}` and let `Q={q,p_1,p_2}`, where the unique coordinate
+third-colour cell at `a` has source `q`.  Deleting `A_0,Q` from any pure
+backbone gives one switch-independent residual graph `R`; outside `A_0` the
+physical support is coordinate-only with exactly one cell per colour.
+
+`R` has a perfect matching exactly when an opposite-source backbone contains
+the direct mixed completion that uses `a--e--q` and routes `b_c,b_d` to the
+two exceptional sources in colours `c,d`.  The exceptional-source cross
+partner then forces the missing rectangle between the two degree-four modes.
+If `R` fails Hall, the same equation could still follow indirectly from other
+mixed coefficients.
+
+If `R` has no perfect matching, a minimal Hall-deficient mode set `S` with
+`T=N_R(S)` has `|T|=|S|-1`.  There is one residual `c` port to `q`, one `d`
+port to `q`, and two `e` ports to `p_1,p_2`.  Both switch-colour port modes
+lie in `S`, at least one third-colour port lies in `S`, and the `c,d`
+restrictions are bijections onto `T`.  Their internal union is one
+alternating path between the port modes plus cycles.  The connected shore
+`S union T` has cut type `(1,1,1)` if one `e` port lies in `S`, and
+`(1,1,3)` if both do.
+
+A fixed `m=6` support realizes the latter Hall shore while satisfying
+`3m+2` cells, the exact `3,4,4,3,3,3` degree ledger, rank three at every mode,
+exactly two pure switches, and every source-subset Hall quota.  It is not a
+solution of the mixed coefficient equations.  It is a rigorous no-go for
+forcing the third rectangle from ledger/rank/Hall data alone.
+
+The new symbolic target is to contract the connected shore while retaining
+its three or five port values, then prove that neither boundary signature is
+compatible with all mixed diagonal-target coefficients.
+
+```text
+ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_PORT_COMPLETION_SHORE_THEOREM.md
+verify_arbitrary_permanent_equality_two_switch_port_completion_shore_theorem.py
+audit_arbitrary_permanent_equality_two_switch_port_completion_shore_theorem.py
 ```

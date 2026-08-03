@@ -140,12 +140,32 @@ pairs at `b_c,b_d` remain open.
 This also marks the exact limit of two nearby imported theories.  The excess
 plane lies in `Gr(2,3)`, which has no quadratic Pluecker equation.  The two
 known switch rectangles admit one coherent edge signing, so there is no
-two-rectangle Pfaffian obstruction.  A third completed rectangle would give
-the familiar impossible odd sign triangle, but equality has not yet forced
-that coefficient.  Matchgate identities would additionally require a full
-deletion-closed boundary signature.  Cai--Gorenstein and Bravyi explain that
-signature-level hypothesis; the present alternate backbones do not satisfy
-it automatically.
+two-rectangle Pfaffian obstruction.  Adding the third row pair would obstruct
+one common determinant signing, but that orientation failure is not a
+contradiction in the bosonic permanent system.  Matchgate identities would
+additionally require a full deletion-closed boundary signature.
+Cai--Gorenstein and Bravyi explain that signature-level hypothesis; the
+present alternate backbones do not satisfy it automatically.
+
+The direct mixed-backbone route to the third switch-mode rectangle is now
+reduced exactly to Hall completion.  Delete the common excess mode, both
+degree-four switch modes, and the three sources they occupy.  The remaining
+graph is switch-independent.  A perfect matching completes the desired mixed
+word and forces its rectangle equation.  If no matching exists, a minimal
+deficient set has deficit one; its two
+switch-colour matchings form one alternating path plus cycles, and its shore
+has cut signature `(1,1,1)` or `(1,1,3)`.  An explicit six-mode support with
+the five-edge signature satisfies the complete degree ledger, local ranks,
+pure-switch classification, and every source-subset Hall quota.  It is not a
+mixed-coefficient solution, but proves that these structural conditions do
+not force completion.  It does not rule out deriving the same rectangle
+indirectly from other mixed equations.
+
+This is the appropriate tight-cut translation: contract a connected shore
+while retaining its three or five boundary port values, and seek a boundary
+coefficient identity incompatible with the diagonal target.  The shore
+signature is finite in type at every `m`, while its interior remains
+symbolic; no census of supports is needed.
 
 ## 2. Toric ideals and matching-exchange binomials
 
@@ -412,8 +432,10 @@ Priority: exploratory, but fully symbolic.
    changes of pure matchings.  The zero-switch face is excluded.  In the
    one-switch face, exclude the marked bridge-or-series cut using the unique
    triangular residual matching.  In the two-switch face, force a nonlocal
-   overlap cycle outside the separated common excess mode.  This is
-   arbitrary-order and closest to a global support theorem.
+   overlap cycle outside the separated common excess mode, or exclude both
+   residual Hall shores `(1,1,1)` and `(1,1,3)` by their boundary
+   coefficients.  This is arbitrary-order and closest to a global support
+   theorem.
 2. **Deletion-depth cofactor quiver.**  Build one cross-sector
    semi-invariant using actual lower cofactor values.  The tangent
    counterfamily rules out weaker candidates in advance.

@@ -198,9 +198,14 @@ negative of its signed determinant.  Requiring the third row pair
 `(b_c,b_d)` as well would be impossible: if `tau_i` is the ratio of the two
 edge signs in row `i`, every permanent-to-determinant rectangle requires
 `tau_i=-tau_j`, which cannot hold for all three pairs in characteristic not
-two.  But equality has not yet been proved to supply that third completed
-mixed coefficient.  Assuming it would merely reinsert the desired odd gain
-triangle as a premise.
+two.  This is only an obstruction to one coherent three-row Pfaffian chart;
+it does not make a third bosonic permanent equation inconsistent.  Using the
+orientation failure as a contradiction would be circular unless a
+deletion-closed matchgate signature were first derived.
+
+The subsequent port-completion shore theorem classifies the direct physical
+route to that third rectangle by one residual Hall condition.  It does not
+use the determinant-signing obstruction.
 
 ## Verification
 
@@ -227,8 +232,11 @@ same-mode same-source switch states:         DISTINCT COMPONENTS;
 same-colour switch-mode pair:                DISTINCT COMPONENTS;
 local same-mode straddling route:            EXCLUDED;
 two known rectangles Pfaffianizable:         YES;
-forced third rectangle / odd triangle:       UNKNOWN;
+direct third-rectangle route:                RESIDUAL HALL DICHOTOMY;
+indirect third-rectangle consequence:        UNKNOWN;
 deletion-closed matchgate signature:         NOT ESTABLISHED;
 two-switch equality stratum:                 UNRESOLVED;
 global Krenn--Gu conjecture:                  UNRESOLVED.
 ```
+
+See `ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_PORT_COMPLETION_SHORE_THEOREM.md`.
