@@ -860,6 +860,46 @@ differential, or target-rank mismatch has yet been proved.
 
 Priority: highest for the saturated `2+1+0` and bare-core branches.
 
+## 10. Algebraic geometry of the boundary-signature map
+
+### Exact repository theorem
+
+For a three-port core and `3 x 3` exterior, the balanced zeon jet has 20
+coordinates.  The response morphism from the 27 entries of `Y,Z,W` has an
+exact rank-20 Jacobian certificate at a small integer point.  Hence its image
+is Zariski dense in the entire balanced signature space, and the 20 response
+coordinates are algebraically independent.  See
+`ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_JET_DOMINANCE_NOGO.md`.
+
+### Consequence
+
+There is no ambient cross-degree polynomial identity to discover.  The
+unconstrained ideal of the boundary-jet image is zero.  Any useful equation
+must instead come from the image of the smaller locus cut out by colour
+incidence, local rank, pure-backbone extension, or coefficient alignment.
+
+In Holant terminology this is dominance of the charge-balanced six-terminal
+signature map.  It rules out ambient matchgate-style equations for arbitrary
+permanent gadgets, while leaving the planar/Pfaffian matchgate locus and
+holographic basis orbits untouched; compare Cai and Gorenstein,
+[*Matchgates Revisited*](https://arxiv.org/abs/1303.6729).
+
+This changes the algebraic target from
+
+```text
+find equations of all boundary jets
+```
+
+to
+
+```text
+define the coloured/aligned incidence variety;
+eliminate Y,Z,W only after imposing its equations.
+```
+
+Priority: this constrained image, not the ambient jet space, is now the
+highest-priority invented object.
+
 ## Ranked proof program
 
 1. **Phase-decorated `B_3` exchange complex.**  Define the missing incidence
@@ -885,7 +925,7 @@ new arbitrary-order theorem:      support >=3m+3 and S_3 port normal form;
 new exact local invariant:        additive/toric B_3 phase variety;
 new boundary support theorem:     all sectors descend to L=B D^* C links;
 new weighted boundary object:     all-sector zeon jet J_W;
-highest-priority invented object: cross-degree boundary-jet ideal;
+highest-priority invented object: coloured/aligned response-image ideal;
 highest-priority literature tool: zeon algebra + derived flattening;
 full proof or counterexample:      NOT YET;
 global Krenn--Gu conjecture:       UNRESOLVED.

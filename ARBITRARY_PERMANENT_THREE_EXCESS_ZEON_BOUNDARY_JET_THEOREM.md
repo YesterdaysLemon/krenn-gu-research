@@ -247,8 +247,11 @@ obstruction can now be formulated without a sector census:
 
 The support theorem controls which squarefree coefficients can occur.  The
 jet theorem controls how every physical amplitude enters the block
-permanent.  What remains is a cross-degree identity strong enough to survive
-complex cancellation.
+permanent.  The later boundary-jet dominance theorem proves that the
+unconstrained response map has no nonzero universal cross-degree polynomial
+identity.  What remains must use the coloured/aligned incidence locus or
+another genuine restriction on `Y,Z,W`; see
+`ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_JET_DOMINANCE_NOGO.md`.
 
 ## Scope wall
 
@@ -259,7 +262,8 @@ proved:     the full block permanent is the contraction (10);
 proved:     every response layer has the compound factorization (12);
 proved:     generic jet support equals boundary matching feasibility;
 constructed: matching-compatible saturated all-sector carrier;
-not proved: a differential or ideal relating the physical jet degrees;
+excluded:   any universal unconstrained polynomial ideal among jet degrees;
+not proved: an ideal on the coloured/aligned constrained response locus;
 not proved: a target-rank/direction contradiction from the jet;
 not proved: nonvanishing after specialization to complex weights;
 not used:   support-family enumeration, finite fields, numerics;
