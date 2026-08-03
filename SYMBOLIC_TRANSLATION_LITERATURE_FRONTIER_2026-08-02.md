@@ -3699,6 +3699,74 @@ chains*](https://arxiv.org/abs/1102.0368); (62)--(66) are the direct new
 transfer.  See
 `P7_PHYSICAL_MIXED_KERNEL_BOOLEAN_DOWN_DESCENT_AND_SEVEN_BY_SEVEN_MASTER_HESSIAN.md`.
 
+## 3 August complete two-level physical-star exclusion
+
+The master system permits a representation-theoretic closure of every star
+with at most two nonzero coordinate values.  Put `p` on `m` leaves and `q`
+on `7-m` leaves.  The edge module under `S_m x S_(7-m)` splits into trivial,
+standard, tensor-standard, and harmonic two-subset summands, and the local
+matrix (63) preserves every summand.
+
+For multiplicities `2+5`, the exact determinant is
+
+```text
+det M_A=5*2^30*3^12 q^8 (2p+q)^5
+        (p^2+2pq+3q^2)^4.                            (67)
+```
+
+The linear wall is the `BB` harmonic module; the quadratic wall is the
+`B`-standard module.  Both omit the unique `AA` edge, so neither can contain
+a full-edge mixed kernel.
+
+For multiplicities `3+4`,
+
+```text
+det M_A=2^30*3^12 p^2 q^4 (p+2q)^6
+        (3p^2+2pq+q^2)^3
+        (p^3+2p^2q+3pq^2+4q^3).                     (68)
+```
+
+The tensor and standard walls again miss an edge orbit.  The last cubic is
+different: after `q=1` and
+
+```text
+c(t)=t^3+2t^2+3t+4,                                 (69)
+```
+
+its one-dimensional block-constant kernel has full-edge values
+
+```text
+f_AA=8t^2,
+f_AB=-t(3t+4),
+f_BB=-2(t^2+2t+8)/t.                                (70)
+```
+
+This proves that the generic master-Hessian good-kernel incidence is not
+empty: the cubic has a unique real root in `(-2,-3/2)`, away from every
+denominator divisor.  Signature or mixed-kernel singularity alone therefore
+cannot finish P7.
+
+Primitivity does finish this orbit.  One coefficient of `ell F^2` becomes
+
+```text
+24(t^2+2t+8)(6t^3+9t^2+2t+8)/t^2,                  (71)
+```
+
+and the two exact resultants with `c` are
+
+```text
+256 and 1280.                                        (72)
+```
+
+Thus (71) is nonzero at every complex cubic root in characteristic zero.
+Together with the earlier `1+6` exclusion, all nonzero one- and two-level
+stars are excluded.  Stars with at least three values remain open.  The
+mixed-Hessian viewpoint is adjacent to Gondim and Zappalà's Lefschetz
+criterion in [*On mixed Hessians and the Lefschetz
+properties*](https://arxiv.org/abs/1803.09664); the orbit factors and
+primitive resultant are the direct new transfer.  See
+`P7_PHYSICAL_EXTENSION_TWO_LEVEL_STAR_ORBIT_COMPLETE_EXCLUSION_THEOREM.md`.
+
 ## Ranked proof program
 
 0. **Resolve the legal pullback of target incidence.**  The ambient equation
@@ -3843,8 +3911,14 @@ determinant ratio det(M_A)/det(L_A):   2^16 3^6;
 generic physical mixed master system: SYMMETRIC 7x7 HESSIAN;
 generic mixed-kernel reconstruction:  EXACT BIJECTION;
 generic full-edge mixed condition:    x_i+x_j NONZERO FOR ALL PAIRS;
+generic master-Hessian good kernel:    EXISTS ON EXACT 3+4 CUBIC;
+nonzero 2+5 physical stars:            EXCLUDED;
+3+4 nontrivial mixed-kernel walls:     MISS AN EDGE ORBIT;
+3+4 block-constant cubic mixed kernel: FULL EDGE, EXACT;
+3+4 cubic primitive obstruction:       NONZERO BY RESULTANTS 256,1280;
+nonzero stars with <=2 values:          EXCLUDED;
+stars with >=3 values:                  UNKNOWN;
 mixed exceptional delta divisors:     RETAINED, UNKNOWN;
-generic master Hessian good kernel:   UNKNOWN;
 general mixed-sign physical star:     UNKNOWN;
 quotient rank<=18 structured syzygies: AT LEAST TWO;
 leaf four-hafnian map:                PROJECTED VERONESE;

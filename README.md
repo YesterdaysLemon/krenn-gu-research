@@ -347,6 +347,18 @@ incidence, exceptional divisors, and remaining nonlinear physical equations
 are still unresolved.  See
 [`P7_PHYSICAL_MIXED_KERNEL_BOOLEAN_DOWN_DESCENT_AND_SEVEN_BY_SEVEN_MASTER_HESSIAN.md`](P7_PHYSICAL_MIXED_KERNEL_BOOLEAN_DOWN_DESCENT_AND_SEVEN_BY_SEVEN_MASTER_HESSIAN.md).
 
+The master Hessian now closes every nonzero star with at most two coordinate
+values.  `S_m x S_n` edge-module decomposition factors the `2+5` and `3+4`
+weighted-Kneser pencils without enumerating parameters.  Every `2+5` wall and
+every nontrivial `3+4` wall has a kernel missing a whole edge orbit.  The sole
+remaining `3+4` block-constant cubic
+`t^3+2t^2+3t+4=0` does carry a full-edge mixed kernel, but one primitive
+five-set coefficient factors into two polynomials whose resultants with the
+cubic are `256` and `1280`; it can never vanish in characteristic zero.
+Together with the preceding `1+6` theorem, this excludes all one- and two-
+level physical stars.  Three-level and general stars remain unknown.  See
+[`P7_PHYSICAL_EXTENSION_TWO_LEVEL_STAR_ORBIT_COMPLETE_EXCLUSION_THEOREM.md`](P7_PHYSICAL_EXTENSION_TWO_LEVEL_STAR_ORBIT_COMPLETE_EXCLUSION_THEOREM.md).
+
 Vertex switching supplies no missing legal GHZ direction: it acts by
 diagonal congruence on every shore Hessian and only by a common projective
 scalar on the full root tensor.  For the fixed legal sensor, two coprime
