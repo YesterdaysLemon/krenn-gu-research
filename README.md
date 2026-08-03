@@ -54,8 +54,13 @@ identified.  Every pure switch is the exceptional-source four-cycle, and
 physical-cell incidence plus the equality degree ledger allow at most two
 switchable colours.  Hence the pure backbones form a Boolean cube of
 dimension at most two and number at most four.  The two-switch case requires
-both excess cells to be noncoordinate and co-located at one mode.  Global
-bipartiteness is now equivalent to balance of an `F_2`-labelled
+both excess cells to be noncoordinate and co-located at one mode.  The
+zero-switch stratum is now excluded at every order: exceptional-port
+cancellation forces each pair of unique pure matchings to form a Hamilton
+cycle, and a chord of the other two-colour cycle contradicts the forced
+singleton port colour.  Thus every equality survivor has one or two
+switchable colours.  Global bipartiteness is equivalent to balance of an
+`F_2`-labelled
 component-overlap graph; a pure switch is excluded as soon as one common
 cancellation component connects two shared states and exactly one changes
 source side.  In the one-switch branch, the pure coefficient supplies a
@@ -81,6 +86,8 @@ and
 [`ARBITRARY_PERMANENT_EQUALITY_NEGATIVE_GAIN_GRAPH_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_NEGATIVE_GAIN_GRAPH_THEOREM.md)
 and
 [`ARBITRARY_PERMANENT_EQUALITY_PURE_MATCHING_CUBE_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_PURE_MATCHING_CUBE_THEOREM.md)
+and
+[`ARBITRARY_PERMANENT_EQUALITY_ZERO_SWITCH_EXCLUSION_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_ZERO_SWITCH_EXCLUSION_THEOREM.md)
 and
 [`ARBITRARY_PERMANENT_EQUALITY_BACKBONE_COLORING_GLUE_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_BACKBONE_COLORING_GLUE_THEOREM.md)
 and

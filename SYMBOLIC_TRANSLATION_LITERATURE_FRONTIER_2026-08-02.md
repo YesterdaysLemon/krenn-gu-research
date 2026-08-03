@@ -75,6 +75,19 @@ with at most four objects.  The two-switch case is confined to co-located
 noncoordinate excess cells.  This is a theorem about the choice space, not
 permission to enumerate the mixed matchings inside those objects.
 
+The zero-dimensional face is now impossible.  If every colour has a unique
+pure matching, full colour eligibility has a unique-matching triangular
+form with at most two nonmatching edges.  Rectangle cancellation makes the
+sets of colours used by mixed matchings at the two exceptional sources
+disjoint.  It also forces each pair of pure colour matchings to form one
+Hamilton cycle: every multi-component two-factor produces either a mixed
+matching with the same terminal colour or two complementary mixed matchings
+whose cross partners create a pure switch.  Bogdanov supplies a mixed
+matching, so one exceptional-source colour set is a singleton.  A nonforced
+edge of that colour is a chord of the Hamilton cycle formed by the other two
+colours; extending the chord to a perfect matching contradicts the singleton
+port rule.  Hence every equality survivor has one or two switches.
+
 This packages the remaining equality problem into one exact combinatorial
 claim:
 
@@ -396,9 +409,11 @@ Priority: exploratory, but fully symbolic.
 
 1. **Multi-backbone gains plus toric exchange lattice.**  Glue the
    canonically bipartite fixed-backbone fibres across alternating-cycle
-   changes of pure matchings.  Use the component-overlap descent theorem to
-   force a one-switch straddling pair, or isolate a balanced overlap normal
-   form.  This is arbitrary-order and closest to a global support theorem.
+   changes of pure matchings.  The zero-switch face is excluded.  In the
+   one-switch face, exclude the marked bridge-or-series cut using the unique
+   triangular residual matching.  In the two-switch face, force a nonlocal
+   overlap cycle outside the separated common excess mode.  This is
+   arbitrary-order and closest to a global support theorem.
 2. **Deletion-depth cofactor quiver.**  Build one cross-sector
    semi-invariant using actual lower cofactor values.  The tangent
    counterfamily rules out weaker candidates in advance.
@@ -413,6 +428,7 @@ Priority: exploratory, but fully symbolic.
 ## Current status wall
 
 ```text
+new arbitrary-order exclusion:    zero-switch equality face impossible;
 new arbitrary-order theorem:      equality cancellation graph bipartite;
 new exact local invariant:        coloured quotient 2x2 minors;
 new exact route exclusion:        common tangent edges do not force rank two;

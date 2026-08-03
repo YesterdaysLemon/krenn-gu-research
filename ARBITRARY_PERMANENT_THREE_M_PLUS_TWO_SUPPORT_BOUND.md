@@ -228,6 +228,7 @@ exactly 3m total cells:               EXCLUDED;
 exactly 3m+1 total cells:             EXCLUDED;
 coordinate-only 3m+2 cells:          HAMILTON/CIRCUIT LOCUS ONLY;
 all 3m+2 equality strata:            TWO-SOURCE SIGNED RECTANGLE SYSTEM;
+zero-switch equality stratum:        EXCLUDED BY LATER REFINEMENT;
 noncoordinate equality existence:    UNKNOWN;
 arbitrary larger P_m restrictions:   UNKNOWN;
 global Krenn-Gu conjecture:           UNRESOLVED.
@@ -235,3 +236,5 @@ global Krenn-Gu conjecture:           UNRESOLVED.
 
 The equality refinement and its independent replay are in
 `ARBITRARY_PERMANENT_EQUALITY_EXCEPTIONAL_SOURCE_RECTANGLE_THEOREM.md`.
+The zero-switch branch exclusion is in
+`ARBITRARY_PERMANENT_EQUALITY_ZERO_SWITCH_EXCLUSION_THEOREM.md`.

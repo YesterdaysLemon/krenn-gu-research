@@ -14195,3 +14195,40 @@ ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCESS_PLANE_SEPARATION_THEOREM.md
 verify_arbitrary_permanent_equality_two_switch_excess_plane_separation_theorem.py
 audit_arbitrary_permanent_equality_two_switch_excess_plane_separation_theorem.py
 ```
+
+### Zero-switch equality is excluded
+
+Assume every full colour-eligibility graph `G_c` has a unique pure perfect
+matching `M_c`.  It has the `m` mandatory colour cells plus at most the two
+excess cells.  Every nonexceptional source therefore has degree one and its
+mandatory edge is forced.  Contracting `M_c` leaves an acyclic dependency
+digraph with at most two nonmatching arcs.
+
+For any mixed matching in `H=M_0 union M_1 union M_2`, the two colours at the
+exceptional sources are distinct: equal terminal colours would make the
+rectangle partner a second pure matching of that colour.  A colour also
+cannot occur at the first exceptional source in one mixed matching and at
+the second in another, because the two cross cells would again create its
+pure switch.  Hence the two nonempty port-colour sets are disjoint.
+
+Every pair `M_a union M_b` is one Hamilton cycle.  If its two-factor had
+multiple components, choosing colours componentwise gives either a mixed
+matching with equal terminal colours, or, in the two-component split-port
+case, two complementary hybrids whose rectangle partners create switches in
+both colours.
+
+Bogdanov supplies a mixed matching for `m>=3`, so both disjoint port-colour
+sets are nonempty subsets of three colours and one is a singleton `{c}`.
+Every mixed matching would have to use the fixed `M_c` edge at that port.
+But any other `M_c` edge is a chord of the Hamilton cycle made by the other
+two colours.  Removing the chord endpoints leaves two even path interiors;
+their alternating matchings plus the chord form a mixed backbone matching
+that avoids the fixed port edge.  Contradiction.
+
+Thus every `3m+2` equality survivor has one or two switchable colours.
+
+```text
+ARBITRARY_PERMANENT_EQUALITY_ZERO_SWITCH_EXCLUSION_THEOREM.md
+verify_arbitrary_permanent_equality_zero_switch_exclusion_theorem.py
+audit_arbitrary_permanent_equality_zero_switch_exclusion_theorem.py
+```

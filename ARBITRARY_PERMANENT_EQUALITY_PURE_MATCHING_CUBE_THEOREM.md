@@ -17,7 +17,9 @@ Thus there are at most four pure backbones at every order `m`.
 
 This does not enumerate them and does not prove that their glued gain graph
 is nonbipartite.  It reduces the multi-backbone compatibility problem to at
-most two symbolic binary switches.
+most two symbolic binary switches.  The subsequent zero-switch exclusion
+theorem eliminates the zero-dimensional face, so every equality survivor
+has one or two switches.
 
 ## Setup
 
@@ -221,8 +223,12 @@ pure matchings per colour at equality:     AT MOST TWO;
 nontrivial pure exchange:                  UNIQUE P_1/P_2 FOUR-CYCLE;
 pure backbone choices:                     BOOLEAN CUBE, DIMENSION <=2;
 number of pure backbones:                  AT MOST FOUR;
+zero-switch face:                          EXCLUDED SUBSEQUENTLY;
 two-switch branch:                         CO-LOCATED NONCOORDINATE EXCESS;
 mixed matchings inside one backbone:       NOT COUNTED;
 odd cycle in glued gain graph:             UNKNOWN;
 global Krenn--Gu conjecture:                UNRESOLVED.
 ```
+
+See `ARBITRARY_PERMANENT_EQUALITY_ZERO_SWITCH_EXCLUSION_THEOREM.md` for the
+zero-face exclusion.
