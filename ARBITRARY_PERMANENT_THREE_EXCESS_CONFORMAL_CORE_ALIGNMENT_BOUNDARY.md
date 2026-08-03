@@ -298,6 +298,13 @@ The missing bridge is consequently one of:
 - a rule identifying which theta and chord channels occur in each selected
   pure-backbone phase copy.
 
+The later apolar boundary-quotient theorem resolves the second alternative
+under the tight completed-theta hypotheses: an aligned conformal minimal
+theta containing all three excess cells cannot have both completing chords
+eligible in the same coefficient.  It quotients all nonempty boundary sectors
+and uses a uniquely selectable exterior conformal matching.  See
+`ARBITRARY_PERMANENT_THREE_EXCESS_APOLAR_BOUNDARY_QUOTIENT_THEOREM.md`.
+
 ## Exact multi-cycle exchange-lattice criterion
 
 Suppose several aligned induced cycles yield nonzero monomial gain equations

@@ -86,6 +86,24 @@ the rank-two port tensor.  Eliminating or controlling those sectors is now
 the precise convolution problem.  See
 [`ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_ENTANGLEMENT_RANK_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_ENTANGLEMENT_RANK_THEOREM.md).
 
+## 2 August 2026: the apolar boundary quotient excludes both chords
+
+At each completed-theta mode, quotient the colour space by covectors on
+cells leaving the core.  Boundary-shore balance makes every nonempty sector
+use such a cell, so all nonempty sectors die termwise.  The projected port
+tensor retains boundary-entanglement rank at least two for both `1+1+1` and
+`2+1+0` incidence.
+
+The empty exterior tensor cannot cancel: the port modes consume all three
+degree-surplus units, leaving every exterior mode cubic, and local rank makes
+its mandatory cells one of each colour.  A conformal exterior matching is
+the unique eligible matching at its induced word.  Contracting it leaves a
+rank-at-least-two permanent port tensor versus a zero/rank-one `Delta_3`
+slice.  Therefore simultaneous eligibility of both completing chords is
+excluded for every `m>=4` under the tight aligned conformal completed-theta
+hypotheses.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_APOLAR_BOUNDARY_QUOTIENT_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_APOLAR_BOUNDARY_QUOTIENT_THEOREM.md).
+
 ## 2 August 2026: conformal-core alignment and chord completion
 
 An induced conformal cycle carrying the three excess cells collapses to

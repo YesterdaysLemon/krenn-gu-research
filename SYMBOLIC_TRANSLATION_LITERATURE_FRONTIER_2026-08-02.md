@@ -114,6 +114,16 @@ rank-one exterior-decoupled `Delta_3` slice is therefore impossible.  Any
 remaining completion must export and cancel nonempty boundary sectors.  See
 `ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_ENTANGLEMENT_RANK_THEOREM.md`.
 
+An apolar boundary quotient removes the remaining convolution assumption.
+Quotienting by outgoing core-mode covectors kills every nonempty boundary
+sector termwise.  Exact degree tightness makes the conformal exterior
+matching uniquely selectable by a colour word, so the empty sector is
+nonzero.  The surviving port tensor has flattening rank at least two, while
+the projected `Delta_3` slice has rank at most one.  Hence simultaneous
+eligibility of both theta-completing chords is impossible for `m>=4` in the
+tight aligned conformal completed-theta setup.  See
+`ARBITRARY_PERMANENT_THREE_EXCESS_APOLAR_BOUNDARY_QUOTIENT_THEOREM.md`.
+
 ## 1. Gain graphs and a new multi-backbone gluing diagram
 
 ### Existing theory

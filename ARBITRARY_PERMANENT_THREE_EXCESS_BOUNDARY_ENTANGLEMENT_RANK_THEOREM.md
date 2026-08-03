@@ -214,6 +214,12 @@ individual support matching or a particular `Omega_S`.  The remaining global
 target is to eliminate all such aggregates, or prove that their tensor images
 cannot cancel (9) or (12).
 
+The later apolar boundary quotient kills every nonempty sector termwise and
+uses the tight exterior degree ledger to prove the empty sector nonzero.
+Consequently simultaneous eligibility of both theta-completing chords is
+excluded outright.  See
+`ARBITRARY_PERMANENT_THREE_EXCESS_APOLAR_BOUNDARY_QUOTIENT_THEOREM.md`.
+
 For `m=3` there is no exterior word: the target slice is `Delta_3` itself,
 whose flattening rank is three.  The rank-two lower bound alone does not
 exclude that separate case.

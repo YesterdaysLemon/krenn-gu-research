@@ -279,6 +279,18 @@ of `Delta_3` for `m>=4`.  Any surviving two-chord case must export nonempty
 boundary sectors, which is now the exact global target.  See
 [`ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_ENTANGLEMENT_RANK_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_ENTANGLEMENT_RANK_THEOREM.md).
 
+That boundary target is now resolved for simultaneous chord completion.
+Quotient each core input space by its outgoing boundary covectors.  Every
+nonempty boundary sector then vanishes termwise, while the projected port
+tensor keeps rank at least two.  Tightness makes every exterior mode cubic
+with one mandatory cell of each colour; a conformal exterior matching is
+therefore uniquely selected by its colour word, so the empty exterior tensor
+is nonzero.  The projected `Delta_3` slice has rank at most one, giving a
+contradiction.  Thus, in the tight `3m+3` setup with all excess cells in the
+core and local rank three, an aligned conformal minimal theta cannot have
+both completing chords eligible in one coefficient for any `m>=4`.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_APOLAR_BOUNDARY_QUOTIENT_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_APOLAR_BOUNDARY_QUOTIENT_THEOREM.md).
+
 The strict support theorem also transfers back to the graph whenever one of
 the root--blocker extraction lemmas applies.  Five roots with five tight
 blockers require at least 18 active contracted root--blocker covectors.  More
