@@ -12,6 +12,12 @@ P_m -> Delta_3,                    m>=3,              (1)
 fix any two source rows.  Their two local covectors span a target coordinate
 covector in at least **four** modes.
 
+The later
+[`ARBITRARY_PERMANENT_FIVE_MODE_ROW_PAIR_INCIDENCE_THEOREM.md`](ARBITRARY_PERMANENT_FIVE_MODE_ROW_PAIR_INCIDENCE_THEOREM.md)
+classifies equality at four and excludes all six symbolic types, strengthening
+the final lower bound to five modes.  The proof below remains the first polar
+rank step in that argument.
+
 The earlier kernel-deletion hierarchy gives two incidences of each target
 colour and hence the coarse lower bound three modes.  The new step proves
 that equality at three is impossible: equality would force the three local

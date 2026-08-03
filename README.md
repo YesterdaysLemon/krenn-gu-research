@@ -1138,12 +1138,14 @@ The formal `2+2+1` ledger has now passed the strongest scalar
 principal-hafnian test.  Explicit seven-core/seven-terminal graphs realize
 every prescribed cofactor separately in all three monochromatic charts; the
 hard colour-2 chart is exact over `Q(sqrt(21))`.  Thus scalar hafnian
-condensation or inverse-minor algebra cannot exclude the ledger.  The three
-certificates do not glue: the rational colour-0/1 charts use zero
-terminal--terminal block, while the displayed colour-2 chart uses a nonzero
-one.  A common terminal block and cancellation of mixed blocker-colour words
-are now the precise unresolved synchronization problems:
+condensation or inverse-minor algebra cannot exclude the ledger.  The terminal
+block mismatch in those first certificates is not intrinsic.  Exact
+squarefree Wick deconvolution and a determinant-one four-core factorization
+now realize all 186 prescribed scalar cofactors with one common terminal
+block over `Q(sqrt(21))`.  The remaining synchronization problem is a common
+tensor-valued core whose mixed blocker-colour words cancel:
 [`P7_221_FORMAL_LEDGER_SCALAR_HAFNIAN_REALIZABILITY_AND_SYNCHRONIZATION_GAP.md`](P7_221_FORMAL_LEDGER_SCALAR_HAFNIAN_REALIZABILITY_AND_SYNCHRONIZATION_GAP.md).
+[`P7_221_COMMON_TERMINAL_BLOCK_SCALAR_HAFNIAN_REALIZABILITY.md`](P7_221_COMMON_TERMINAL_BLOCK_SCALAR_HAFNIAN_REALIZABILITY.md).
 Second, the aggregated-selector alternative is now exact in the factorized
 `h=0` branch.  Contracting any five blocker legs in their two residual-row
 common null spaces kills the twenty competing surplus-two Laplace terms
@@ -1171,11 +1173,15 @@ lies in their local span in at least two modes.  Equality at only three
 incidence modes would force the three coordinate planes `01,02,12`.  A polar
 contraction through the third plane then leaves a nonzero rank-one diagonal,
 while the selected two rank-two local row maps compose through the
-nondegenerate two-channel pairing to rank exactly two.  Contradiction.  Thus
-every source-row pair needs at least four coordinate-incidence modes; for the
-factorized `P_7` residual rows, at most three of seven common null spaces are
-torus-capable:
+nondegenerate two-channel pairing to rank exactly two.  Contradiction.  The
+equality-at-four boundary further has exactly six symbolic incidence types.
+Five have a unique size-two colour neighbourhood with rank-two endpoints; the
+sixth first forces a singleton endpoint to collapse and then gives the same
+rank contradiction on a second polar slice.  Thus every source-row pair needs
+at least five coordinate-incidence modes; for factorized `P_7` residual rows,
+at most two of seven common null spaces are torus-capable:
 [`ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md`](ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md).
+[`ARBITRARY_PERMANENT_FIVE_MODE_ROW_PAIR_INCIDENCE_THEOREM.md`](ARBITRARY_PERMANENT_FIVE_MODE_ROW_PAIR_INCIDENCE_THEOREM.md).
 The `h!=0` branch now has a precise conditional analogue.  If a legal
 selector independently exposes synchronized residual-absent and
 residual-present principal tensors with the same direct blocks and root
@@ -1187,8 +1193,14 @@ persistent coordinate-monomial escape must be target-aligned,
 subtractions because canceling `hB` also deletes colour `c`.  Jointly exposed
 `B,W` still obey common-root matrix-pencil minors/resultants; `W` alone is
 affine-surjective.  The essential legality gap is that one top `P_7` equation
-does not expose `T_0`:
+does not expose `T_0`.  In the strict two-endpoint model, companion
+independence does legally expose synchronized top values, but only on one
+root-null shore line per blocker.  That observation has an eight-dimensional
+kernel on a `3 x 3` pair block, and an exact `h!=0` response family fixes every
+exposed top value while varying lower direct/corrected pairs.  Full determinant
+activation still requires a three-direction, partition-closed shore:
 [`P7_SYNCHRONIZED_TWO_DEPTH_POLAR_SELECTOR_AND_ALIGNED_RESONANCE_BOUNDARY.md`](P7_SYNCHRONIZED_TWO_DEPTH_POLAR_SELECTOR_AND_ALIGNED_RESONANCE_BOUNDARY.md).
+[`P7_STRICT_TWO_ENDPOINT_SYNCHRONIZED_TOP_FACE_AND_SHORE_LINE_BOUNDARY.md`](P7_STRICT_TWO_ENDPOINT_SYNCHRONIZED_TOP_FACE_AND_SHORE_LINE_BOUNDARY.md).
 A separate majority-subset theorem says that, on `|S|=m+r` vertices of an
 order-`2m` witness, each contracted monochromatic pure tensor lies in the
 `r`th power of the internal-edge ideal.  At `r=1`, every entangled tensor

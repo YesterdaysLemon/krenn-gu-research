@@ -21,8 +21,8 @@ theorem and a sharp boundary for that selector, **not** an unconditional
 `P_7` exclusion.
 
 Away from one exact resonance, the direct determinant gives the same
-three-boundary incidence law as in the `h=0` theorem.  The stronger
-four-mode row-pair theorem then rules out equality: at least four blocker
+three-boundary incidence law as in the `h=0` theorem.  The later five-mode
+row-pair theorem rules out equality through four: at least five blocker
 planes contain a coordinate covector.  In the coordinate-monomial residual
 branch, the only generic escape is that the residual edge agrees identically
 with one target coordinate product.  On this aligned class every scalar
@@ -178,17 +178,18 @@ selector, now valid at every synchronized nonresonant contraction.
 The synchronized tensor `N` in (6) is itself the permanent tensor obtained by
 appending the two residual rows `a,b` to the five root rows.  At nonresonance
 all three diagonal coefficients are nonzero.  Applying
-[`ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md`](ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md)
+[`ARBITRARY_PERMANENT_FIVE_MODE_ROW_PAIR_INCIDENCE_THEOREM.md`](ARBITRARY_PERMANENT_FIVE_MODE_ROW_PAIR_INCIDENCE_THEOREM.md)
 to the row pair `{a,b}` strengthens (15) to
 
 ```text
-at least four blockers w satisfy
+at least five blockers w satisfy
 e_c^* in span{a_w,b_w} for some target colour c.     (16)
 ```
 
-Equivalently, at most three `K_w` are torus-capable.  The determinant proof
-above remains the direct one-pair activation; the fourth blocker uses the
-per-colour Hall quotas and the exact rank of the equality case.
+Equivalently, at most two `K_w` are torus-capable.  The determinant proof
+above remains the direct one-pair activation; the fourth and fifth blockers
+use the per-colour Hall quotas and the polar-rank exclusions of the complete
+equality-at-three and equality-at-four incidence types.
 
 ## 3. Coordinate-monomial residuals reduce to aligned resonance
 
@@ -201,8 +202,8 @@ h(z_0,z_1)=gamma z_0[alpha] z_1[beta]                (17)
 ```
 
 after restricting coordinate forms to `L_0,L_1`.  Assume that on a dense
-open part of this chart at least four blocker null spaces are torus-capable.
-The four-boundary theorem then forces `Delta=0` on a dense open set, hence identically.
+open part of this chart at least three blocker null spaces are torus-capable.
+The five-boundary theorem then forces `Delta=0` on a dense open set, hence identically.
 The coordinate ring is a domain, so one factor in (13) vanishes identically:
 
 ```text
@@ -323,7 +324,7 @@ Proved conditionally:
 - exact cancellation of `hB` from two independently exposed synchronized
   depths;
 - residual-null isolation of one corrected pair block at arbitrary `h`;
-- the direct three-boundary determinant law and its four-boundary
+- the direct three-boundary determinant law and its five-boundary
   row-pair strengthening at every nonresonant contraction;
 - reduction of a persistent coordinate-monomial escape to target alignment;
 - failure of every scalar two-depth determinant selector on the aligned

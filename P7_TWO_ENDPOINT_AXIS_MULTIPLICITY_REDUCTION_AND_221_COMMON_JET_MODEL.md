@@ -17,9 +17,11 @@ principal hafnians of one blocker/residual graph.
 
 The later
 [`P7_221_FORMAL_LEDGER_SCALAR_HAFNIAN_REALIZABILITY_AND_SYNCHRONIZATION_GAP.md`](P7_221_FORMAL_LEDGER_SCALAR_HAFNIAN_REALIZABILITY_AND_SYNCHRONIZATION_GAP.md)
-realizes every prescribed cofactor exactly in each monochromatic scalar chart.
-Those three chart graphs use different terminal--terminal blocks, so one
-common physical graph and mixed-colour cancellation remain open.
+realizes every prescribed cofactor exactly in each monochromatic scalar chart,
+and
+[`P7_221_COMMON_TERMINAL_BLOCK_SCALAR_HAFNIAN_REALIZABILITY.md`](P7_221_COMMON_TERMINAL_BLOCK_SCALAR_HAFNIAN_REALIZABILITY.md)
+gives all three charts one common terminal block.  One tensor-valued physical
+graph and mixed-colour cancellation remain open.
 
 Accordingly this is a genuine common-block strengthening of the earlier
 subset-dependent formal state model, but it is not a global `P_7` exclusion

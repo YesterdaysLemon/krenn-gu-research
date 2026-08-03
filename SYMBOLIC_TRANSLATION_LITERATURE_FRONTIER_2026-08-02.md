@@ -1244,12 +1244,17 @@ That gap is absent in each scalar colour chart separately.  Two rational
 coordinate-copy graphs realize the complete colour-0 and colour-1 ledger,
 and an exact forced-private construction over `Q(sqrt(21))` realizes the
 colour-2 ledger, including its signed pair values and `1/7` quartet.  Hence no
-monochromatic principal-hafnian identity can exclude `2+2+1`.  The displayed
-certificates have incompatible terminal--terminal blocks, and none addresses
-mixed blocker-colour words.  Common-terminal synchronization and mixed-word
-cancellation are therefore the exact remaining graph-realizability layer.
+monochromatic principal-hafnian identity can exclude `2+2+1`.  The terminal
+block mismatch in those first certificates is also removable: squarefree
+Wick deconvolution produces a determinant-one four-core factorization for
+colour 0, an involution transfers it to colour 1, and both use the existing
+colour-2 terminal block.  All 186 scalar coordinates therefore share one
+terminal matrix.  Common tensor-valued core data and mixed-word cancellation
+are the exact remaining graph-realizability layer.
 See
 `P7_221_FORMAL_LEDGER_SCALAR_HAFNIAN_REALIZABILITY_AND_SYNCHRONIZATION_GAP.md`.
+See
+`P7_221_COMMON_TERMINAL_BLOCK_SCALAR_HAFNIAN_REALIZABILITY.md`.
 
 The mixed-word selector itself is no longer missing in the factorized `h=0`
 branch.  For a selected pair `{u,v}`, choose a common residual-null vector at
@@ -1287,9 +1292,16 @@ would be exactly `01,02,12`.  Contracting through the third null axis and all
 torus nulls isolates a nonzero rank-one diagonal on the other two modes.  But
 their two rank-two row maps compose through the nondegenerate two-channel
 pairing to rank exactly two.  Thus every source-row pair has at least four
-coordinate-incidence modes.  Applied to the factorized `P_7` port rows, this
-improves the torus/non-torus split from `4/3` to `3/4`.  See
-`ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md`.
+coordinate-incidence modes.  A complete symbolic classification of equality
+at four has six types, indexed by the number of doubleton incidence modes.
+Five die on a unique size-two colour neighbourhood with rank-two endpoints.
+The repeated-pair type first forces one singleton mode to be exactly
+`<e_0^*>`; a second polar contraction then gives the same rank-one/rank-two
+contradiction.  Therefore every pair has at least five incidence modes.
+Applied to factorized `P_7` port rows, the torus/non-torus split improves to
+at most `2/5`.  See
+`ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md` and
+`ARBITRARY_PERMANENT_FIVE_MODE_ROW_PAIR_INCIDENCE_THEOREM.md`.
 
 For `h!=0`, synchronized deletion depth is exactly the missing observable.
 If both the residual-absent tensor `T_0` and residual-present tensor `T_Q`
@@ -1308,8 +1320,19 @@ When pure and full pair blocks are jointly visible, the corrected matrix
 pencil has a common rank-two root and vanishing minor resultants.  Full blocks
 alone remain affine-unconstrained.  One top `P_7` equation does not supply the
 required `T_0`, so this is a conditional boundary rather than an exclusion.
+Under the strict all-axis two-endpoint assumptions, singleton jets do force
+both endpoint forms to be bases and hence make the empty/`Q` pair companions
+independent.  The marked shore then legally exposes synchronized top
+responses.  But it restricts each blocker to a root-null line: the induced
+observation of a `3 x 3` pair block has rank one and kernel dimension eight.
+The exact family `M_a=1+a x_3x_4`, `Phi_a=h+a^(-1)x_1x_2` fixes all exposed
+top data while its lower direct and corrected pairs vary.  Thus synchronized
+top exposure is strictly weaker than the partition-closed pair
+synchronization needed by the determinant.
 See
 `P7_SYNCHRONIZED_TWO_DEPTH_POLAR_SELECTOR_AND_ALIGNED_RESONANCE_BOUNDARY.md`.
+See
+`P7_STRICT_TWO_ENDPOINT_SYNCHRONIZED_TOP_FACE_AND_SHORE_LINE_BOUNDARY.md`.
 
 ## Ranked proof program
 
@@ -1348,14 +1371,16 @@ new mixed-colour circuit:          det(corrected 3x3 pair block)=0;
 new axis topology boundary:        jet frames and matching shores still viable;
 new strict axis reduction:         only 2+2+1 survives two-endpoint model;
 new scalar ledger result:          all three 2+2+1 charts are hafnian-realizable;
-new synchronization gap:           common terminal block and mixed words remain;
+new scalar synchronization:         one common terminal block is realized;
+new synchronization gap:            common tensor core and mixed words remain;
 new h=0 polar selector:            five null legs isolate one mixed pair block;
 new arbitrary-order boundary:      at least three coordinate-incidence modes;
 new incidence sharpness:           canonical profile does not balance the three;
-new row-pair incidence theorem:    every pair needs at least four modes;
+new row-pair incidence theorem:    every pair needs at least five modes;
 new h!=0 conditional selector:     synchronized depth cancels direct blocks;
 new aligned-resonance boundary:    scalar depth subtraction then loses a colour;
 highest-priority invented object: legal synchronized-depth observation;
+new legality boundary:             top synchronization has shore rank one;
 highest-priority literature tool: determinantal circuit completion;
 full proof or counterexample:      NOT YET;
 global Krenn--Gu conjecture:       UNRESOLVED.

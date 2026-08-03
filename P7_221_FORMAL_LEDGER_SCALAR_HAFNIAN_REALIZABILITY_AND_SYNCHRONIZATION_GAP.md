@@ -16,13 +16,13 @@ K=Q(rho),                  rho^2=21.                    (1)
 Thus no scalar hafnian-condensation, inverse-minor, or principal-cofactor
 obstruction can exclude the formal ledger.
 
-This does **not** produce one physical graph.  The displayed colour-0 and
-colour-1 realizations have zero terminal--terminal block, whereas the
-displayed colour-2 realization has a nonzero terminal--terminal block.  A
-physical graph has only one such block.  It must also cancel every mixed
-blocker-colour word, a condition invisible in the three monochromatic scalar
-charts.  Existence of a different realization with one common block remains
-unknown.
+This does **not** produce one physical graph.  The particular certificates
+displayed here use incompatible terminal--terminal blocks, and they do not
+cancel mixed blocker-colour words.  The later exact construction
+[`P7_221_COMMON_TERMINAL_BLOCK_SCALAR_HAFNIAN_REALIZABILITY.md`](P7_221_COMMON_TERMINAL_BLOCK_SCALAR_HAFNIAN_REALIZABILITY.md)
+removes the first defect: all three scalar charts admit realizations with one
+common terminal block.  A common tensor-valued physical graph and mixed-word
+cancellation remain unknown.
 
 ## 1. Scalar principal-hafnian translation
 
@@ -284,10 +284,10 @@ edge block cannot be chosen afresh after selecting a blocker colour chart.
 Therefore the three graphs above do not glue to one physical graph.
 
 Equation (29) is a boundary of these **particular certificates**, not a
-universal no-go theorem.  A more general core--terminal incidence could in
-principle realize the colour-0 and colour-1 ledgers with the same terminal
-block as colour 2, or all three charts could admit a fourth common block.  No
-such parametrization or impossibility certificate is presently known.
+universal no-go theorem.  The later common-terminal theorem cited above
+constructs more general colour-0 and colour-1 core--terminal incidences using
+exactly the colour-2 terminal block.  Thus terminal-block incompatibility is
+now known to be removable.
 
 There is a second, logically independent issue.  Monochromatic scalar charts
 test only the pure coefficients `D_0`, `D_1`, and `D_2`.  In one tensor-valued
@@ -301,7 +301,8 @@ Thus the exact status wall is
 ```text
 formal 2+2+1 ledger, colour by colour:       REALIZED;
 scalar principal-hafnian obstruction:        ABSENT;
-one common terminal block / physical graph:  UNKNOWN;
+one common terminal block, chartwise:          REALIZED LATER;
+one tensor-valued physical graph:              UNKNOWN;
 mixed blocker-colour cancellation:           UNKNOWN;
 full P7 restriction and global Krenn--Gu:     UNRESOLVED. (30)
 ```
