@@ -189,6 +189,24 @@ schedule, not an exclusion; a long chain of first-use ears can still
 survive.  See
 [`ARBITRARY_PERMANENT_THREE_EXCESS_SIX_TOKEN_EAR_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_SIX_TOKEN_EAR_THEOREM.md).
 
+The proposed phase gluing now has an exact no-go.  Its six permutation terms
+are one projective `B_3` phase point, and changing the distinguished backbone
+is only the chart action
+
+```text
+(R_tau w)_rho=w_(tau rho)/w_tau.
+```
+
+Thus repeated representatives of one coefficient add no equation.  On a
+genuinely incidence-aligned cube face, path independence forces the switch
+permutations to commute, excluding distinct transpositions and mixed
+transposition/three-cycle transport.  Both surviving abelian cases have
+exact `Q(sqrt(3))` countermodels as abstract chart local systems.  They do
+not realize distinct physical pure backbones.  The next viable target is
+therefore a theorem forcing nonabelian port holonomy or an isolated mixed
+coefficient, not further single-fibre phase elimination.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_B3_PHASE_HOLONOMY_NOGO.md`](ARBITRARY_PERMANENT_THREE_EXCESS_B3_PHASE_HOLONOMY_NOGO.md).
+
 The strict support theorem also transfers back to the graph whenever one of
 the root--blocker extraction lemmas applies.  Five roots with five tight
 blockers require at least 18 active contracted root--blocker covectors.  More

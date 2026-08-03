@@ -346,6 +346,11 @@ to the permutation group on at most three ports.  The coefficient boundary
 is therefore the group-algebra support of `S_2` or `S_3`, evaluated by a
 bosonic permanent rather than a determinant or Pfaffian.
 
+Changing which of these terms is distinguished is an `S_3` projective chart
+action, not an additional coefficient equation.  The exact action and its
+abelian-transport countermodels are in
+`ARBITRARY_PERMANENT_THREE_EXCESS_B3_PHASE_HOLONOMY_NOGO.md`.
+
 This is also a small matching-toric normal form: its cycle-exchange monomials
 are indexed by transpositions and oriented three-cycles, and the complete
 mixed coefficient may contain up to six terms.  The arbitrary-order graph

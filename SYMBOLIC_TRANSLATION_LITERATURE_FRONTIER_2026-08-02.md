@@ -41,6 +41,18 @@ mode-cubic.  This gives a new constant-width causal target for
 conformal/backbone alignment, but no exclusion yet.  See
 `ARBITRARY_PERMANENT_THREE_EXCESS_SIX_TOKEN_EAR_THEOREM.md`.
 
+The phase-decorated `B_3` proposal has also been reduced to a precise local
+system.  The six physical terms form one projective phase point, and choosing
+a different backbone term is the `S_3` chart action
+`(R_tau w)_rho=w_(tau rho)/w_tau`; it creates no new equation.  A
+same-word incidence-aligned cube face is flat only when its two port
+transports commute.  Exact `Q(sqrt(3))` countermodels realize both allowed
+nontrivial abelian images, `C_2` and `C_3`, at the abstract chart-local-system
+level; they do not construct distinct physical backbones.  Therefore a
+useful global holonomy obstruction must first force noncommuting transport or
+isolate a mixed coefficient.  See
+`ARBITRARY_PERMANENT_THREE_EXCESS_B3_PHASE_HOLONOMY_NOGO.md`.
+
 ## 1. Gain graphs and a new multi-backbone gluing diagram
 
 ### Existing theory

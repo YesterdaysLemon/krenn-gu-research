@@ -255,6 +255,10 @@ Once that incidence data is formalized, an algebraic contradiction in the
 complex would be a valid arbitrary-order obstruction.  A contradiction in
 one isolated phase copy cannot exist because of (12)--(15).
 
+The later phase-holonomy no-go makes the chart gluing exact and supplies
+countermodels for both abelian transport types.  See
+`ARBITRARY_PERMANENT_THREE_EXCESS_B3_PHASE_HOLONOMY_NOGO.md`.
+
 ## Verification
 
 Run:

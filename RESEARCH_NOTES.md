@@ -14,6 +14,26 @@ the same conclusion for `n=6`, `d>=3`.  The arbitrary even-`n` lift remains
 open.  The authoritative six-vertex proof map is
 `SIX_VERTEX_CERTIFICATE.md`.
 
+## 2 August 2026: `B_3` phase charts and the nonabelian-holonomy target
+
+The six port terms of one forbidden coefficient form a projective `B_3`
+phase point.  Rebasing at a different distinguished term acts by
+`(R_tau w)_rho=w_(tau rho)/w_tau` and preserves both the zero sum and the
+cubic parity relation.  Thus gluing two selected backbones that merely
+represent the same physical coefficient repeats one equation in a different
+chart.
+
+If a same-word two-switch face has fixed port transports in both directions,
+path independence forces them to commute.  This condition excludes two
+distinct transpositions and a transposition/three-cycle pair.  It is only
+conditional on the missing incidence alignment.  Moreover, one explicit
+matrix over `Q(sqrt(3))` realizes the abstract chart local system for every
+dimension-up-to-three cube with one fixed transposition, and its rebases also
+realize cyclic `C_3` transport.  This is not a construction of distinct
+physical pure backbones.  Hence phase equations alone do not close either
+abelian branch.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_B3_PHASE_HOLONOMY_NOGO.md`](ARBITRARY_PERMANENT_THREE_EXCESS_B3_PHASE_HOLONOMY_NOGO.md).
+
 ## 2 August 2026: the six-token odd-ear budget
 
 At support exactly `3m+3`, the physical support is bipartite,
