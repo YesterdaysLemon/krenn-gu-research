@@ -342,6 +342,18 @@ sectors.  This is a rigorous method boundary and a conditional new target,
 not a bare-theta exclusion.  See
 [`ARBITRARY_PERMANENT_THREE_EXCESS_BARE_THETA_ABSORPTION_AND_COFACTOR_RESPONSE_BOUNDARY.md`](ARBITRARY_PERMANENT_THREE_EXCESS_BARE_THETA_ABSORPTION_AND_COFACTOR_RESPONSE_BOUNDARY.md).
 
+The marked exterior matrix is exactly the degree-one zeon response
+`Omega=Y C_per(W) Z`.  An exact tight `m=5` support has all currently
+isolated colour, alignment, conformality, and matching-covered hypotheses
+but a transverse marked block with determinant one.  It fails the full
+restriction by the known `(0,2,2;1)` quotient, so this is a sharp method
+boundary, not a conjecture counterexample.  Relative to a unique exterior
+matching, the response is an alternating-path matrix; a common alternating
+separator forces rank one.  One exterior channel supplies that separator
+automatically at `m=4`, although the legal target marking is still missing.
+See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_MARKED_RESPONSE_TORIC_HOLONOMY_BOUNDARY.md`](ARBITRARY_PERMANENT_THREE_EXCESS_MARKED_RESPONSE_TORIC_HOLONOMY_BOUNDARY.md).
+
 The strict support theorem also transfers back to the graph whenever one of
 the root--blocker extraction lemmas applies.  Five roots with five tight
 blockers require at least 18 active contracted root--blocker covectors.  More

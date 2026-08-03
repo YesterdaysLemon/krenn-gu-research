@@ -1005,6 +1005,42 @@ response identities remain conditional on outer-face/disk terminalization.
 The invented target is a marked response functor retaining bidegree
 `(1,1)`, not another universal identity on the ambient response jet.
 
+The first audit of that target gives a sharp no-go and a small-order
+exception.  The marked exterior matrix is exactly the degree-one zeon
+response
+
+```text
+Omega=Y C_per(W) Z.
+```
+
+With two exterior channels, `W=Y=I_2` and
+`Z=[[1,s],[t,1]]` give `det(Omega)=1-st`, while every elementary response
+and the degree-two response `1+st` are nonzero.  The feasible sectors still
+form the complete balanced even delta-matroid.  Hence matching exchange and
+the compound tower do not force the desired toric holonomy.
+
+This no-go persists under the full support-side package.  An exact `m=5`,
+18-cell graph has a mandatory tricolour cover, local rank three, three pure
+backbones, a conformal bare theta, matching-covered support, generalized cut
+transport, and an aligned `1+1-2=0` coefficient, but its relevant transverse
+marked block is `[[1,2],[1,3]]`.  Its determinant is one.  The graph is not
+a restriction: the `(0,2,2;1)` quotient leaves the exact residue
+`3e_0+4e_1` against a zero target.
+
+Relative to the unique empty exterior matching, the marked response is a
+weighted alternating-path matrix.  Lindstrom--Gessel--Viennot identifies
+its `2 x 2` minors with signed sums of vertex-disjoint alternating-path
+pairs.  A common alternating separator therefore forces the needed rank-one
+transmission.  With one exterior channel, `Omega=YZ` is already an outer
+product, so the cross-ratio is automatic at `m=4`.  See
+`ARBITRARY_PERMANENT_THREE_EXCESS_MARKED_RESPONSE_TORIC_HOLONOMY_BOUNDARY.md`.
+
+Priority: force alternating vertex-connectivity at most one from the **full
+restriction equations**, prove cancellation of the two-channel Cauchy--Binet
+sum, or construct the still-missing legal target marking.  Planarity alone
+is not the right condition: planar boundary measurements naturally have
+higher-rank Grassmannian minors.
+
 ## Ranked proof program
 
 1. **Phase-decorated `B_3` exchange complex.**  Define the missing incidence
