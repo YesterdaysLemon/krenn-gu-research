@@ -1264,9 +1264,21 @@ canonical root-row planes.  An exact rational model has the required
 residual factors, yet exactly three non-torus null lines, all clustered at
 `t,01,01` and all carrying the same coordinate incidence.  More generally
 the incidence positions and labels are arbitrary at this layer.  Hence any
-next obstruction must retain the full contracted matrix identities or mixed
-words; the incidence corollary plus pure data is sharp.  See
+next obstruction must restore the per-colour kernel Hall quotas or retain the
+full contracted matrix identities; the coarse incidence corollary plus pure
+data is sharp.  See
 `P7_RESIDUAL_NULL_INCIDENCE_CANONICAL_PROFILE_SHARPNESS.md`.
+
+Doing both gives a new arbitrary-order theorem.  For any selected source-row
+pair in `P_m -> Delta_3`, each target colour occurs in its local row span at
+least twice.  If only three modes had any coordinate incidence, their planes
+would be exactly `01,02,12`.  Contracting through the third null axis and all
+torus nulls isolates a nonzero rank-one diagonal on the other two modes.  But
+their two rank-two row maps compose through the nondegenerate two-channel
+pairing to rank exactly two.  Thus every source-row pair has at least four
+coordinate-incidence modes.  Applied to the factorized `P_7` port rows, this
+improves the torus/non-torus split from `4/3` to `3/4`.  See
+`ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md`.
 
 ## Ranked proof program
 
@@ -1307,6 +1319,7 @@ new strict axis reduction:         only 2+2+1 survives two-endpoint model;
 new h=0 polar selector:            five null legs isolate one mixed pair block;
 new arbitrary-order boundary:      at least three coordinate-incidence modes;
 new incidence sharpness:           canonical profile does not balance the three;
+new row-pair incidence theorem:    every pair needs at least four modes;
 highest-priority invented object: h!=0 corrected-block rank replacement;
 highest-priority literature tool: determinantal circuit completion;
 full proof or counterexample:      NOT YET;

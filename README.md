@@ -1152,9 +1152,20 @@ can be prescribed while retaining blocker types
 permanents, and all three nonzero residual pure-pair factors.  A fixed exact
 example attains three incidences, clusters them on `t,01,01`, and labels all
 three by colour zero.  It deliberately fails to claim the mixed-word tensor
-identity.  Therefore the next deduction must use the full polar matrix
-equations, not the binary incidence count plus pure coefficients alone:
+identity or the stronger per-colour kernel Hall quotas.  Therefore the binary
+incidence count plus pure coefficients alone is exhausted:
 [`P7_RESIDUAL_NULL_INCIDENCE_CANONICAL_PROFILE_SHARPNESS.md`](P7_RESIDUAL_NULL_INCIDENCE_CANONICAL_PROFILE_SHARPNESS.md).
+Restoring those per-colour quotas and the full polar rank yields a strict
+upgrade.  For any two source rows of any `P_m -> Delta_3`, every target colour
+lies in their local span in at least two modes.  Equality at only three
+incidence modes would force the three coordinate planes `01,02,12`.  A polar
+contraction through the third plane then leaves a nonzero rank-one diagonal,
+while the selected two rank-two local row maps compose through the
+nondegenerate two-channel pairing to rank exactly two.  Contradiction.  Thus
+every source-row pair needs at least four coordinate-incidence modes; for the
+factorized `P_7` residual rows, at most three of seven common null spaces are
+torus-capable:
+[`ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md`](ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md).
 A separate majority-subset theorem says that, on `|S|=m+r` vertices of an
 order-`2m` witness, each contracted monochromatic pure tensor lies in the
 `r`th power of the internal-edge ideal.  At `r=1`, every entangled tensor

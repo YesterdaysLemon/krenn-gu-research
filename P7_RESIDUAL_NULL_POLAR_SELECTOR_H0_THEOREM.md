@@ -23,6 +23,13 @@ four of the seven common null spaces may meet the target-coordinate torus.
 Equivalently, at least three blockers have a residual two-row span containing
 a target coordinate covector.
 
+The later
+[`ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md`](ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md)
+combines this polar slice with the per-colour kernel Hall quotas and rules out
+equality at three.  A factorized `P_7` identity therefore has at least four
+such blockers.  The theorem below remains the direct determinant activation
+from one selected pair.
+
 This theorem applies only after the residual edge has been made exactly
 `h=0`.  It does not treat the coordinate-monomial `h!=0` alternative, does
 not exclude every factorized `P_7` restriction, and does not prove the global

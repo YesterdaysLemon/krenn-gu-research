@@ -27,6 +27,11 @@ coefficients.
 This is not a factorized `P_7 -> Delta_3` construction.  The mixed-word
 identity is neither checked nor claimed.  The theorem proves that no stronger
 incidence conclusion follows from the stated canonical and pure data alone.
+In particular, the example does **not** satisfy the stronger per-colour
+kernel Hall quotas obeyed by an actual permanent restriction.  The later
+[`ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md`](ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md)
+uses those quotas and the full polar rank to improve the factorized lower
+bound from three blockers to four.
 
 ## 1. Root and residual planes are different objects
 
@@ -227,6 +232,7 @@ Proved here:
 Not proved or claimed:
 
 - the mixed-word equations in the full factorized identity;
+- the two-incidences-per-colour kernel Hall quotas of that identity;
 - a `P_7 -> Delta_3` restriction;
 - simultaneous principal-hafnian realization of additional deletion data;
 - any conclusion for the `h!=0` branch;
@@ -238,6 +244,9 @@ The strict logical conclusion is therefore:
 canonical profile + three pure permanents + residual-null theorem
     => at least three coordinate incidences, sharply;
     !=> any stronger placement or colour multiplicity law.           (18)
+
+full factorized P7 identity
+    => stronger per-colour quotas and at least four incidence modes.  (19)
 ```
 
 ## Replay
