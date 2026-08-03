@@ -1098,6 +1098,20 @@ one-parameter two-residual graph-response family has fixed top pair
 target is thus a full-rank observation matrix on a partition-closed deletion
 cube, or a projected identity eliminating its hidden lower faces:
 [`P7_DELETION_CUBE_OBSERVABILITY_AND_CLEAN_WINDOW_BOUNDARY.md`](P7_DELETION_CUBE_OBSERVABILITY_AND_CLEAN_WINDOW_BOUNDARY.md).
+The seven-vertex root/residual budget makes that information loss structural
+for the current principal-cofactor mechanism.  With `q` retained residual
+vertices, only
+`z_S` with `|S|>=q` and direct `m_S` with `|S|>=2q` can be isolated.  Thus
+`q=2` misses every direct pair, while `q=4` misses all direct layers and even
+the residual-present pairs.  Granting the entire `q=2` budget-visible window,
+the residual scalar, and all four marked-star observations still gives a
+dominant thirteen-coordinate response map (exact Jacobian minor `360`), so
+there is no visible polynomial identity.  The four-point insertion becomes
+observable only on the sharp additive locus
+`z_12+z_34=z_13+z_24=z_14+z_23`.  At `q=4` its right-hand side is instead a
+genuine quartic permanent, with an exact identity-incidence defect equal to
+one:
+[`P7_ROOT_BUDGET_DUAL_WICK_OBSERVABILITY_AND_QUARTIC_ESCAPE.md`](P7_ROOT_BUDGET_DUAL_WICK_OBSERVABILITY_AND_QUARTIC_ESCAPE.md).
 Both proposed shortcuts from that boundary are now sharply tested.  A common
 canonical system of three pure `P_7` matrices with axis multiplicity `2+2+1`
 has rank-two lower frames only at root pairs whose marked-shore products all
@@ -1111,6 +1125,18 @@ selectors, their twelve `M/Z` top values plus the pure two-port aggregate have
 dense image and zero elimination ideal.  The next invariant must use actual
 pair/empty faces or mixed-colour/shared-block coupling:
 [`P7_SELECTOR_MATROID_RANK_COOCCURRENCE_AND_TOP_PROJECTION_BOUNDARY.md`](P7_SELECTOR_MATROID_RANK_COOCCURRENCE_AND_TOP_PROJECTION_BOUNDARY.md).
+Even optimistically granting every marked-star row on one clean window per
+colour does not close the pair layer: any three four-windows on the six
+double blockers recover at most five of a target window's six pair faces,
+and the bound is sharp.  The sensor obstruction is itself sharp.  The four
+tetrahedral-fan windows `1234,1256,1356,1456` recover all six target pairs by
+closed formulas: alternating shores give `x_12-x_13` and `x_12-x_14`, after
+which the four target vertex degrees invert the whole `K_4`.  Four is
+therefore the exact minimum in the marked-star model.  The remaining graph
+problem is to force that fourth compatible fan window and then expose the
+empty face:
+[`P7_THREE_CLEAN_WINDOW_PAIR_FACE_RECOVERY_NO_GO.md`](P7_THREE_CLEAN_WINDOW_PAIR_FACE_RECOVERY_NO_GO.md).
+[`P7_FOUR_CLEAN_WINDOW_TETRAHEDRAL_PAIR_TOMOGRAPHY_THEOREM.md`](P7_FOUR_CLEAN_WINDOW_TETRAHEDRAL_PAIR_TOMOGRAPHY_THEOREM.md).
 The first genuinely mixed-colour circuit is now identified.  For one
 physical blocker pair, its nine corrected two-residual responses form the
 `3 x 3` matrix `D=a_u b_v^T+b_u a_v^T`, so `det D=0`.  Those nine entries are
@@ -1275,6 +1301,17 @@ dimension at least two.  A three-mode model, one independent mode per colour
 pair, attains the bound; smaller face-specific quotients or further degree
 equations are required next:
 [`P7_221_TRICOLOUR_INCIDENCE_QUOTIENT_PROJECTIVE_SUPPORT_THEOREM.md`](P7_221_TRICOLOUR_INCIDENCE_QUOTIENT_PROJECTIVE_SUPPORT_THEOREM.md).
+Those face-specific quotients now glue by an exact Mayer--Vietoris sequence.
+For two terminal sets `F,G`, the overlap defect is
+`(U(F) intersect U(G))/U(F intersect G)`, and every common physical edge line
+must die in both face quotients or descend to the same line in the union
+quotient.  This is not yet an obstruction: one rational seven-mode incidence
+system kills all 21 pairwise and seven triple defects, attains quotient ranks
+`(2,2,2,1,1,1,1)`, and passes all 17 active common-edge comparisons.  Hence
+the next gluing invariant must retain the five-row residual permanents,
+unprojected face equations, or joint degrees rather than only projective edge
+lines:
+[`P7_221_FACE_SPECIFIC_QUOTIENT_MAYER_VIETORIS_AND_SHARP_LIFT.md`](P7_221_FACE_SPECIFIC_QUOTIENT_MAYER_VIETORIS_AND_SHARP_LIFT.md).
 Second, the aggregated-selector alternative is now exact in the factorized
 `h=0` branch.  Contracting any five blocker legs in their two residual-row
 common null spaces kills the twenty competing surplus-two Laplace terms
@@ -1338,6 +1375,16 @@ exposed top value while varying lower direct/corrected pairs.  Full determinant
 activation still requires a three-direction, partition-closed shore:
 [`P7_SYNCHRONIZED_TWO_DEPTH_POLAR_SELECTOR_AND_ALIGNED_RESONANCE_BOUNDARY.md`](P7_SYNCHRONIZED_TWO_DEPTH_POLAR_SELECTOR_AND_ALIGNED_RESONANCE_BOUNDARY.md).
 [`P7_STRICT_TWO_ENDPOINT_SYNCHRONIZED_TOP_FACE_AND_SHORE_LINE_BOUNDARY.md`](P7_STRICT_TWO_ENDPOINT_SYNCHRONIZED_TOP_FACE_AND_SHORE_LINE_BOUNDARY.md).
+The top-data obstruction is now completely sharp at arbitrary port
+dimension.  When `h!=0`, the direct term in
+`W_uv=hB_uv+a_u tensor b_v+b_u tensor a_v` makes the map to top two-port data
+surjective, so no top-only polynomial can force synchronized two-row
+factorization.  A companion deletion depth recovers the corrected channel
+`z-hm`; top data alone do not.  Consequently the extracted `P_5` support
+bound `18` and one-port `P_6` bound `21` remain unconditional under their
+existing extraction hypotheses, whereas the two-port `P_7` bound `24`
+remains conditional on a legal synchronized/factorized extraction:
+[`GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md`](GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md).
 A separate majority-subset theorem says that, on `|S|=m+r` vertices of an
 order-`2m` witness, each contracted monochromatic pure tensor lies in the
 `r`th power of the internal-edge ideal.  At `r=1`, every entangled tensor

@@ -169,4 +169,3 @@ uv run --with ruff ruff check verify_p7_four_clean_window_tetrahedral_pair_tomog
 The primary replay verifies the polynomial identities, recovered coordinates,
 ranks, and displayed minors.  The independent no-import audit repeats the
 calculation with rational row reduction and basis-vector reconstruction.
-

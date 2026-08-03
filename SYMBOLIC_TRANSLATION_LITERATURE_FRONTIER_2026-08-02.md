@@ -1522,6 +1522,61 @@ See
 See
 `P7_STRICT_TWO_ENDPOINT_SYNCHRONIZED_TOP_FACE_AND_SHORE_LINE_BOUNDARY.md`.
 
+## Legal lower-jet observability after the residual translation
+
+The residual-relative response theorem now has a sharp legality boundary at
+the actual `P_7` root budget.  If `q` residual vertices are retained, only
+
+```text
+z_S with |S|>=q,          m_S with |S|>=2q
+```
+
+can be isolated by the current probe-root principal-cofactor mechanism.  At
+`q=2`, every direct pair `m_e` is missing; at `q=4`, every direct layer and
+even the residual-present pair layer are missing.  Granting the maximal
+`q=2` visible window, the residual scalar, and all four marked-star values
+does not create a hidden relation: the honest response map is dominant, with
+an exact Jacobian minor `360`.  The four-point insertion is nevertheless
+recoverable on the precise additive locus
+
+```text
+z_12+z_34=z_13+z_24=z_14+z_23.
+```
+
+At `q=4`, the same four-point expression equals a quartic permanental
+compound rather than zero.  See
+`P7_ROOT_BUDGET_DUAL_WICK_OBSERVABILITY_AND_QUARTIC_ESCAPE.md`.
+
+The marked-star sensor itself has now been solved exactly.  Any three clean
+four-windows on the six double blockers recover at most five of one target
+window's six pair faces, and five is attained.  Four windows are both
+necessary and sufficient: the tetrahedral fan
+
+```text
+1234, 1256, 1356, 1456
+```
+
+cancels every nuisance pair and reconstructs the target `K_4` by explicit
+linear formulas.  This is a new bosonic boundary-tomography lemma rather than
+an imported theorem.  Its graph-theoretic proof obligation is now concrete:
+force the fourth fan shore with compatible selector normalization, then
+expose the empty face.  See
+`P7_THREE_CLEAN_WINDOW_PAIR_FACE_RECOVERY_NO_GO.md` and
+`P7_FOUR_CLEAN_WINDOW_TETRAHEDRAL_PAIR_TOMOGRAPHY_THEOREM.md`.
+
+Two other apparent bridges are closed.  First, for `h!=0` the direct term
+makes the top two-port cofactor map affine-surjective, so synchronization is
+not observable without a companion depth.  The exact `P_5` and one-port
+`P_6` support transfers remain unconditional under their extraction
+hypotheses, but the support-`24` `P_7` transfer remains conditional.  See
+`GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md`.
+Second, face-specific incidence quotients obey a canonical Mayer--Vietoris
+exact sequence and common-edge descent, but a rational seven-mode lift
+satisfies all overlap comparisons at the sharp tricolour ranks.  Projective
+edge lines alone therefore cannot finish the gluing.  Residual five-row
+permanents, unprojected equations, or joint degrees are essential.  See
+`P7_221_FACE_SPECIFIC_QUOTIENT_MAYER_VIETORIS_AND_SHARP_LIFT.md`.
+
 ## Cross-area translation after the two-face reduction
 
 The current equations sit close to several established subjects, but the
@@ -1592,36 +1647,39 @@ generic hafnian signs do not transfer.
 
 ## Ranked proof program
 
-1. **Joint singular-kernel compatibility.**  A preselected fifth-compound
+1. **Legally force tetrahedral tomography and the empty face.**  The
+   four-window fan is the minimal complete pair sensor.  Derive it from
+   marked-Laplace, mixed-colour, or companion-depth data with one compatible
+   normalization, and expose the remaining scalar face needed by dual Wick.
+   The root-budget counterresponses and three-window no-go are mandatory
+   controls.
+2. **Residual-permanent gluing across face quotients.**  Mayer--Vietoris
+   descent and all common-edge lines admit a sharp rational lift.  Retain the
+   five-terminal permanents or unprojected face tensors and seek a joint
+   circuit that the lift cannot satisfy.
+3. **Joint singular-kernel compatibility.**  A preselected fifth-compound
    determinant is not fibre-uniform.  Couple several adaptively chosen words
    and the degree-one/degree-three equations, and test whether their singular
    kernels can contain one common core completion.  The rank-six escape is
    now the mandatory sharpness model.
-2. **Glue the three face-specific quotient systems.**  The full-incidence
-   tricolour quotient already forces four modes to have a two-dimensional
-   intersection with the diagonal colour space, and that count is sharp.
-   Replace the full incidence span by the smaller five-terminal span for each
-   of `1234a`, `1235b`, and `1345b`; then use their overlaps to constrain the
-   actual incidence covectors.  The three-pair sharp model is the mandatory
-   control.
-3. **Physical-idempotent separator.**  Find a polynomial/covariant that
+4. **Physical-idempotent separator.**  Find a polynomial/covariant that
    vanishes for vertexwise local-colour block graphs but distinguishes the
    formal global-idempotent realization.  It must use the uncontracted
    degree-five tuple, joint degrees, or degree seven: the binary contraction
    itself is a physical image point, while scalar degrees one and three are
    dominant.
-4. **Phase-decorated `B_3` exchange complex.**  Define the missing incidence
+5. **Phase-decorated `B_3` exchange complex.**  Define the missing incidence
    alignment between the conformal cycle/theta matching and the
    at-most-eight pure backbones, then glue the exact additive and cubic toric
    equations.  A single coefficient cannot exclude simultaneous bypasses.
-5. **Deletion-depth cofactor quiver.**  Build one cross-sector
+6. **Deletion-depth cofactor quiver.**  Build one cross-sector
    semi-invariant using actual lower cofactor values.  The tangent
    counterfamily rules out weaker candidates in advance.
-6. **Coloured deletion-cumulant compatibility.**  Use two overlapping root
+7. **Coloured deletion-cumulant compatibility.**  Use two overlapping root
    windows to turn quotient minors into a global log-quadratic obstruction.
-7. **Conditional Pfaffian chart.**  Apply matchgate identities only if a
+8. **Conditional Pfaffian chart.**  Apply matchgate identities only if a
    support-specific orientation is forced.
-8. **GIT/tropical degeneration.**  Seek a one-parameter initial form that
+9. **GIT/tropical degeneration.**  Seek a one-parameter initial form that
    preserves the exact diagonal restriction; do not substitute asymptotic or
    border statements.
 
@@ -1639,8 +1697,15 @@ new residual locality tool:       separator cross-rank <=2^(s-1);
 new residual gluing invariant:    rank[F_2|F_4|F_6|...]<=q on disjoint charts;
 new forced P7 chart:              marked shore with double-only four-window;
 new exact information boundary:  top window face does not determine lower cube;
+new P7 root-budget law:           z needs |S|>=q, direct m needs |S|>=2q;
+maximal q2 visible response map:  DOMINANT, exact Jacobian minor 360;
+conditional four-point selector: complementary z weights must be additive;
+q4 four-point law:                quartic permanent defect can equal one;
 new selector no-go:               rank-two pair need not meet a nonzero shore;
 new projection no-go:             all six top windows have dense visible image;
+three marked-star windows:        target pair recovery <=5, SHARP;
+four-window tetrahedral fan:      all six target pairs recovered, EXACT;
+legal fourth fan window:          UNKNOWN;
 new mixed-colour circuit:          det(corrected 3x3 pair block)=0;
 new axis topology boundary:        jet frames and matching shores still viable;
 new strict axis reduction:         only 2+2+1 survives two-endpoint model;
@@ -1662,6 +1727,8 @@ unprojected binary GHZ contraction:  PHYSICALLY REALIZED;
 all-pair binary quotient coherence:  TWO STRATA, BOTH ABSTRACTLY SHARP;
 tricolour quotient rank law:         at least four codimension-two modes;
 tricolour quotient bound:            SHARP ON ABSTRACT QUOTIENT DATA;
+face-quotient Mayer--Vietoris law:    EXACT;
+common-edge quotient gluing alone:   SHARP RATIONAL LIFT EXISTS;
 new synchronization gap:            other scalar lifts remain;
 new h=0 polar selector:            five null legs isolate one mixed pair block;
 new arbitrary-order boundary:      at least three coordinate-incidence modes;
@@ -1670,7 +1737,10 @@ new row-pair incidence theorem:    every pair needs at least five modes;
 new five-mode sharpness:           polar/canonical/pure data attain equality;
 new h!=0 conditional selector:     synchronized depth cancels direct blocks;
 new aligned-resonance boundary:    scalar depth subtraction then loses a colour;
-highest-priority invented object: face-specific quotient-overlap sheaf;
+top two-port data at h!=0:         FULL AFFINE IMAGE;
+P5/P6 support 18/21:              UNCONDITIONAL AFTER KNOWN EXTRACTION;
+P7 support 24 transfer:           CONDITIONAL ON LEGAL SYNCHRONIZATION;
+highest-priority invented object: tetrahedral fan plus residual-permanent gluing;
 new legality boundary:             top synchronization has shore rank one;
 highest-priority literature tool: compound/tetrad circuit completion;
 full proof or counterexample:      NOT YET;
