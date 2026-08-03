@@ -371,6 +371,18 @@ every midpoint `K_4` carrying an additional outside wall.  A bare midpoint
 midpoint `K_3`, and general bipartite wall systems remain unknown.  See
 [`P7_PHYSICAL_MIXED_KERNEL_EXCEPTIONAL_WALL_GRAPH_AND_RESTRICTED_HESSIAN_THEOREM.md`](P7_PHYSICAL_MIXED_KERNEL_EXCEPTIONAL_WALL_GRAPH_AND_RESTRICTED_HESSIAN_THEOREM.md).
 
+After either generic or exceptional mixed-kernel reconstruction, the
+remaining nonlinear equations also compress invariantly.  Two quartet
+covariants `Psi=coeff(F^2/2)` and `Lambda=-coeff(F ell A)` automatically lie
+in the same 14-dimensional Boolean primitive space.  Primitivity is
+`ell Psi=0`; the full annihilator is exactly `t Psi=Lambda`, or, after
+eliminating the amplitude, `Psi wedge Lambda=0` with both covariants nonzero.
+This is projective stationarity of the Boolean squaring map in the prescribed
+physical direction.  A denominator-free version retains every wall, while a
+single real Gram discriminator replaces the wedge only over the reals.
+Existence of a good stationary point remains unknown.  See
+[`P7_PHYSICAL_EXTENSION_BOOLEAN_SQUARE_PROJECTIVE_STATIONARITY_MASTER_SYSTEM.md`](P7_PHYSICAL_EXTENSION_BOOLEAN_SQUARE_PROJECTIVE_STATIONARITY_MASTER_SYSTEM.md).
+
 Vertex switching supplies no missing legal GHZ direction: it acts by
 diagonal congruence on every shore Hessian and only by a common projective
 scalar on the full root tensor.  For the fixed legal sensor, two coprime

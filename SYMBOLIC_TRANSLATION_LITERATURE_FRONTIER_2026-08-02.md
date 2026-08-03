@@ -3823,6 +3823,72 @@ analogue](https://arxiv.org/abs/1805.04759) supplies the neighboring
 incidence language; (73)--(77) are the new physical transfer.  See
 `P7_PHYSICAL_MIXED_KERNEL_EXCEPTIONAL_WALL_GRAPH_AND_RESTRICTED_HESSIAN_THEOREM.md`.
 
+## 3 August Boolean-square projective stationarity
+
+The remaining primitive and annihilator equations now descend through the
+master kernel as well.  For each four-set `S`, let `M(S)` be its three edge
+pairings and put
+
+```text
+Psi_S=sum_({e,g} in M(S))w_e w_g y_e y_g,
+
+Lambda_S=sum_({e,g} in M(S))
+ (w_e y_e(a_g)+w_g y_g(a_e)),                         (78)
+```
+
+where `a_ij=a_i+a_j`, `w_ij=a_i a_j/delta_ij`, and
+`y_ij=x_i+x_j`.  These are exactly
+
+```text
+Psi=coeff(F^2/2),       -Lambda=coeff(F ell A).       (79)
+```
+
+Both live in the fixed 14-dimensional space
+`P_4=ker(ell:Z_4->Z_5)`: primitivity is `ell Psi=0`, while the mixed-kernel
+equation gives `ell Lambda=-F ell^2 A=0`.  The full annihilator is precisely
+
+```text
+t Psi=Lambda.                                         (80)
+```
+
+If `q(F)=F^2/2`, then `dq_F(G)=FG`; hence (80) is the projective-stationarity
+law
+
+```text
+dq_F(ell A)=t q(F),
+Psi wedge Lambda=0 in exterior^2 P_4.                (81)
+```
+
+The clauses `Psi,Lambda!=0` are mandatory.  The square-zero branch would
+force `F ell A=0`; the isomorphism `ell:Z_3->Z_4` and injectivity of a
+full-support `A:Z_2->Z_3` then give `F=0`.
+
+Over the reals, (81) is equivalent to the one sum-of-squares discriminator
+
+```text
+||Psi||^2||Lambda||^2-<Psi,Lambda>^2
+ =sum_(S<R)(Psi_S Lambda_R-Psi_R Lambda_S)^2=0.       (82)
+```
+
+Over general characteristic zero, the full wedge is required because of
+complex isotropy.  The exact scalar filters are
+
+```text
+sum_i a_i x_i^2+sum_e w_e y_e^2=0,                   (83)
+
+(sum_i a_i x_i)^2
+ =4(sum_i a_i^2x_i^2-sum_e w_e^2y_e^2).             (84)
+```
+
+Keeping `f` instead of dividing by `delta` gives a denominator-free polynomial
+version on every exceptional wall.  Thus the outstanding generic problem is
+one seven-variable Hessian-kernel/projective-stationarity incidence, with a
+parallel restricted-wall version.  It remains unknown.  Abo, Seigal, and
+Sturmfels' [projective eigenconfiguration
+framework](https://arxiv.org/abs/1505.05729) is neighboring language; the
+Boolean-square directional law (78)--(84) is the new transfer.  See
+`P7_PHYSICAL_EXTENSION_BOOLEAN_SQUARE_PROJECTIVE_STATIONARITY_MASTER_SYSTEM.md`.
+
 ## Ranked proof program
 
 0. **Resolve the legal pullback of target incidence.**  The ambient equation
@@ -3980,6 +4046,13 @@ midpoint wall K5,K6,K7:                 EXCLUDED;
 midpoint wall K4 plus outside wall:      EXCLUDED;
 bare midpoint K4 wall:                  ONE CUBIC, UNKNOWN GOOD KERNEL;
 midpoint K3 and bipartite wall systems: UNKNOWN;
+remaining primitive quartet covariant: Psi IN FIXED 14-SPACE;
+remaining directional covariant:        Lambda IN SAME 14-SPACE;
+physical annihilator after reconstruction: t Psi=Lambda;
+amplitude-free physical stationarity:    Psi WEDGE Lambda=0;
+square-zero physical branch:              EXCLUDED;
+real stationarity discriminator:          ONE SUM OF SQUARES;
+generic stationary good locus:            UNKNOWN;
 general mixed-sign physical star:     UNKNOWN;
 quotient rank<=18 structured syzygies: AT LEAST TWO;
 leaf four-hafnian map:                PROJECTED VERONESE;
