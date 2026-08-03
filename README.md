@@ -37,6 +37,31 @@ arbitrary tangent-completed `P_7` system and the global conjecture remain
 unknown.  See
 [`ROOT_M7_SYMBOLIC_ROUTE_BOUNDARY_THEOREMS.md`](ROOT_M7_SYMBOLIC_ROUTE_BOUNDARY_THEOREMS.md).
 
+The permanent support bound is now two cells stronger.  Local concision on
+the mode side and the singleton tricolour cover on the source side exclude
+the entire `3m+1` stratum, so every `P_m -> Delta_3` restriction needs at
+least `3m+2` nonzero row cells.  Thus `P_7` needs at least 23.  At
+coordinate-only equality, the two excess cells must form one
+colour-compatible alternating rectangle against every mixed backbone
+matching, every pair of pure matchings must form one Hamilton cycle, and
+the two terms must cancel exactly.  Noncoordinate equality remains open.
+See
+[`ARBITRARY_PERMANENT_THREE_M_PLUS_TWO_SUPPORT_BOUND.md`](ARBITRARY_PERMANENT_THREE_M_PLUS_TWO_SUPPORT_BOUND.md).
+
+Two complementary cell-level transfers are also settled.  The all-root and
+four-root jets give five exact hidden-pair equations; on each rank-two chart
+the two named intermediate cofactors are individually binary-diagonal, and
+at least two internal four-root sectors must be active.  Conversely, the
+smallest scalar Hirota overlay has no further common-weight equation at
+all: one sparse symmetric graph maps six independent weights bijectively to
+the six hidden classes, even after embedding into the actual eight-vertex
+core.  Any next obstruction must therefore combine the named cofactor
+relations with coloured/root-row/GHZ structure rather than rely on scalar
+overlay identities alone.  See
+[`ROOT_M7_FOUR_ROOT_HIDDEN_PAIR_COFACTOR_THEOREM.md`](ROOT_M7_FOUR_ROOT_HIDDEN_PAIR_COFACTOR_THEOREM.md)
+and
+[`ROOT_M7_HIROTA_HIDDEN_OVERLAY_SURJECTIVITY_NOGO.md`](ROOT_M7_HIROTA_HIDDEN_OVERLAY_SURJECTIVITY_NOGO.md).
+
 A separate, nonblocking method-transfer track is recorded in
 [`ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md`](ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md).
 It contains an exact root-of-unity permanent selector, its legal heralded

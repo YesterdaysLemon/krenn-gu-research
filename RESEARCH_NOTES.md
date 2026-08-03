@@ -13860,6 +13860,76 @@ verify_root_m7_symbolic_route_boundary_theorems.py
 audit_root_m7_symbolic_route_boundary_theorems.py
 ```
 
+### The arbitrary permanent support floor is `3m+2`
+
+The mode-side concision bound and source-side singleton cover are
+transverse.  Every local map is injective, hence has at least three nonzero
+rows, while every source-row/colour pair has a coordinate representative.
+At total support `3m+1`, at most one row is noncoordinate and the mode
+degrees are one four and the rest three.
+
+If all rows are coordinate, the three colour graphs have edge counts
+`m,m,m+1`; each has a unique perfect matching.  If the exceptional row is
+noncoordinate, either it is unused beside three coordinate matchings, or it
+repairs the unique missing-colour mode by replacing one doubled coordinate
+edge.  In the repair case the omitted edge and every off-label use of the
+repair row share one source endpoint.  Bogdanov supplies a mixed matching
+in the three pure matchings.  Its word has no second term: one exceptional
+edge cannot make an alternating cycle, and the two repair exceptions cannot
+occur together.  Hence every restriction has at least `3m+2` cells.
+
+At coordinate-only equality, choose one pure matching per colour.  Two cells
+remain.  Any cancellation of a mixed backbone matching must use both, so
+its symmetric difference is one alternating four-cycle.  If a two-colour
+factor has two cycle components, complementary mixed orientations are
+edge-disjoint and one escapes that fixed rectangle.  Equality therefore
+requires three Hamilton pair-factors plus one universal colour-compatible
+transposition and exact binomial cancellation.
+
+```text
+ARBITRARY_PERMANENT_THREE_M_PLUS_TWO_SUPPORT_BOUND.md
+verify_arbitrary_permanent_three_m_plus_two_support_bound.py
+audit_arbitrary_permanent_three_m_plus_two_support_bound.py
+```
+
+### Four-root named cofactors and hidden-overlay surjectivity
+
+For the all-root derivative, parity leaves only the two endpoint classes.
+Rank two forces their blocker cofactors to form a basis of the binary
+diagonal plane.  At a four-root derivative the only deletion classes are
+`empty,Q,{r_k,q_0},{r_k,q_1}`.  Quotienting by that diagonal plane leaves
+
+```text
+h_k tensor bar(C_I)+q_k tensor bar(C_(I union Q))=0.
+```
+
+Thus rank two makes both named cofactors individually diagonal; rank one
+makes one exact combination diagonal.  Expanding the all-root endpoint
+forms as `g_t=sum_k L_(kt)h_k` shows that the ideal of active `h_k` contains
+the coprime monomials `X=product x_i` and `Y=product y_i`.  At least two
+internal four-root sectors are active.
+
+The scalar four-terminal overlay itself has no hidden common-weight
+constraint.  A sparse four-core graph realizes
+
+```text
+(x_01,x_02,x_03,x_12,x_13,x_23)=(-d,f,-e,b,-a,c),
+```
+
+a signed coordinate permutation of determinant one.  The elimination ideal
+is zero, and two isolated unit core edges embed the construction into the
+actual eight-vertex core unchanged.  Future work must use the coloured
+cofactor equations, not scalar Hirota identities alone.
+
+```text
+ROOT_M7_FOUR_ROOT_HIDDEN_PAIR_COFACTOR_THEOREM.md
+verify_root_m7_four_root_hidden_pair_cofactor_theorem.py
+audit_root_m7_four_root_hidden_pair_cofactor_theorem.py
+ROOT_M7_HIROTA_HIDDEN_OVERLAY_SURJECTIVITY_NOGO.md
+verify_root_m7_hirota_hidden_overlay_surjectivity_nogo.py
+audit_root_m7_hirota_hidden_overlay_surjectivity_nogo.py
+```
+
 ### Symbolic local-to-global pivot: Wick completion, common residual Gram, and majority ideals
 
 The complete coloured partial-matching family has a single exact completion
