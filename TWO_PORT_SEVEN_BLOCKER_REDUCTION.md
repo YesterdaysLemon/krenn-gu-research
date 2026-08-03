@@ -27,6 +27,11 @@ This theorem does not exclude the two-port tensor and does not prove a
 `P_6` or `P_7` nonrestriction.  The Krenn--Gu conjecture remains
 **UNRESOLVED**.
 
+If the synchronized representation below did hold, the later strict support
+theorem would force at least 24 active cells in the resulting `P_7`
+extraction.  That consequence remains conditional on synchronization; see
+`GRAPH_EXTRACTION_STRICT_SUPPORT_TRANSFER_COROLLARY.md`.
+
 ## Matching factorization
 
 Let `R` be the roots, `B` their blocker union, and `Q` the remaining outside

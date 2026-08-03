@@ -176,6 +176,23 @@ backbones.  Its still-missing datum is the incidence alignment between those
 backbones and the matching of the conformal cycle/theta core.  See
 [`ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md`](ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md).
 
+The strict support theorem also transfers back to the graph whenever one of
+the root--blocker extraction lemmas applies.  Five roots with five tight
+blockers require at least 18 active contracted root--blocker covectors.  More
+generally, `r` roots with `r+1` blockers and one residual port require at
+least `3r+6` active covectors, including the port row.  A purely graph-side
+sufficient contradiction is
+
+```text
+e_G(R,B)+e_G(B,Q)<=3r+5.
+```
+
+Thus the sharp extracted-cut targets are at most 17, 20, and 23 active cells
+for the `P_5`, `P_6`, and conditionally factorized `P_7` routes.  This does
+not force any such sparse extraction in every hypothetical graph; it only
+closes the old equality shell once an established extraction applies.  See
+[`GRAPH_EXTRACTION_STRICT_SUPPORT_TRANSFER_COROLLARY.md`](GRAPH_EXTRACTION_STRICT_SUPPORT_TRANSFER_COROLLARY.md).
+
 Two complementary cell-level transfers are also settled.  The all-root and
 four-root jets give five exact hidden-pair equations; on each rank-two chart
 the two named intermediate cofactors are individually binary-diagonal, and

@@ -14,6 +14,28 @@ the same conclusion for `n=6`, `d>=3`.  The arbitrary even-`n` lift remains
 open.  The authoritative six-vertex proof map is
 `SIX_VERTEX_CERTIFICATE.md`.
 
+## 2 August 2026: strict-support transfer to root--blocker cuts
+
+The arbitrary permanent theorem `support(P_m -> Delta_3)>=3m+3` now has an
+exact local-to-global graph consequence.  In the five-root/five-tight-blocker
+extraction, the contracted root--blocker cell has at least 18 active
+covectors.  In the arbitrary-order one-port extraction with `r` roots and
+`r+1` blockers, the active root rows plus the nonzero residual ports number at
+least `3r+6`.  Since every active contraction comes from a nonzero graph edge
+block and every nonzero residual port needs a blocker--residual edge,
+
+```text
+e_G(R,B)+e_G(B,Q)<=3r+5
+```
+
+is a graph-only sufficient contradiction.  At minimum ambient order this
+excludes extracted `5 x 5` and `6 x 6` cuts with at most 17 and 20 edges.
+These are bounds on the extracted active cut, not on the total graph.  A
+two-port `P_7` bound of 24 is conditional on the still-unproved synchronized
+factorization.  No theorem here forces the requisite sparse extraction, so
+the global conjecture remains unresolved.  See
+[`GRAPH_EXTRACTION_STRICT_SUPPORT_TRANSFER_COROLLARY.md`](GRAPH_EXTRACTION_STRICT_SUPPORT_TRANSFER_COROLLARY.md).
+
 ## 31 July 2026: the corrected projective flat sheet
 
 The Borel-generic flat rank-three-relation triangle is now closed on its

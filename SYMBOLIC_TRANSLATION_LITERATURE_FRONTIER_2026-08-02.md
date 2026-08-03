@@ -18,6 +18,16 @@ complex cancellations.  Positive-weight, numerical, finite-field, border,
 and asymptotic statements are not silently promoted to proofs of the original
 characteristic-zero exact restriction problem.
 
+The strict permanent bound has one immediate transfer that should be kept
+separate from the speculative translations below.  Whenever the proved
+root--blocker lemmas extract `P_m -> Delta_3`, their active cell support is at
+least `3m+3`.  In the one-port case this gives
+`I(R,B)+p>=3r+6`, and the graph-only sufficient contradiction
+`e_G(R,B)+e_G(B,Q)<=3r+5`.  The exact sharp targets are therefore 17, 20,
+and conditionally 23 cells for extracted `P_5`, `P_6`, and `P_7` systems.
+Forcing one of those sparse extractions globally is still open.  See
+`GRAPH_EXTRACTION_STRICT_SUPPORT_TRANSFER_COROLLARY.md`.
+
 ## 1. Gain graphs and a new multi-backbone gluing diagram
 
 ### Existing theory

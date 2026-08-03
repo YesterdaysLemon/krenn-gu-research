@@ -20,6 +20,11 @@ For `r=4`, five blockers therefore extract `P_5 -> Delta_3` at every even
 ambient order, not only at order ten.  For `r=5`, six blockers extract
 `P_6 -> Delta_3`; this does not by itself produce a `P_5` restriction.
 
+The later strict support theorem forces at least `3r+6` nonzero cells across
+the contracted root rows and this residual port row.  Its graph-only sparse
+cut consequence is recorded in
+`GRAPH_EXTRACTION_STRICT_SUPPORT_TRANSFER_COROLLARY.md`.
+
 ## Setup
 
 Let `V=C^3`, let the vertex set `Omega` have even size `n`, and let the

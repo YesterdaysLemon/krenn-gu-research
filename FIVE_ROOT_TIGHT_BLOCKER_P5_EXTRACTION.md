@@ -21,6 +21,10 @@ proof: the five-root intersection may lie entirely on coordinate
 hyperplanes, and a fully supported five-root tuple may have six or more
 blockers.
 
+Combined with the later strict support theorem, this extraction requires at
+least 18 nonzero contracted root--blocker covectors.  See
+`GRAPH_EXTRACTION_STRICT_SUPPORT_TRANSFER_COROLLARY.md`.
+
 ## Setup
 
 Let `V=C^3`, let the vertex set have even size, and write
