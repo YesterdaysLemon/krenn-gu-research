@@ -1257,6 +1257,17 @@ covector.  This is an arbitrary-order three-boundary law.  It does not extend
 directly to `h!=0`, where the selected response is `hB_uv+D_uv` and may have
 rank three.  See `P7_RESIDUAL_NULL_POLAR_SELECTOR_H0_THEOREM.md`.
 
+The canonical incidence profile does not strengthen the resulting count by
+itself.  Residual polar planes can be prescribed independently of the
+canonical root-row planes.  An exact rational model has the required
+`012,01,01,02,02,12,12` spans, nonzero pure permanents, and nonzero pure
+residual factors, yet exactly three non-torus null lines, all clustered at
+`t,01,01` and all carrying the same coordinate incidence.  More generally
+the incidence positions and labels are arbitrary at this layer.  Hence any
+next obstruction must retain the full contracted matrix identities or mixed
+words; the incidence corollary plus pure data is sharp.  See
+`P7_RESIDUAL_NULL_INCIDENCE_CANONICAL_PROFILE_SHARPNESS.md`.
+
 ## Ranked proof program
 
 1. **Phase-decorated `B_3` exchange complex.**  Define the missing incidence
@@ -1295,6 +1306,7 @@ new axis topology boundary:        jet frames and matching shores still viable;
 new strict axis reduction:         only 2+2+1 survives two-endpoint model;
 new h=0 polar selector:            five null legs isolate one mixed pair block;
 new arbitrary-order boundary:      at least three coordinate-incidence modes;
+new incidence sharpness:           canonical profile does not balance the three;
 highest-priority invented object: h!=0 corrected-block rank replacement;
 highest-priority literature tool: determinantal circuit completion;
 full proof or counterexample:      NOT YET;

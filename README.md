@@ -1144,6 +1144,17 @@ row spans contain a target coordinate covector.  This activates the mixed
 circuit without reconstructing six deletion faces.  The `h!=0` branch,
 where the selected block can have rank three, remains open:
 [`P7_RESIDUAL_NULL_POLAR_SELECTOR_H0_THEOREM.md`](P7_RESIDUAL_NULL_POLAR_SELECTOR_H0_THEOREM.md).
+That three-blocker incidence bound is already sharp against the canonical
+profile and all pure data.  Root-row planes and residual polar planes are
+independent local objects: arbitrary incidence positions and colour labels
+can be prescribed while retaining blocker types
+`012,01,01,02,02,12,12`, local rank three, all three nonzero pure `P_5`
+permanents, and all three nonzero residual pure-pair factors.  A fixed exact
+example attains three incidences, clusters them on `t,01,01`, and labels all
+three by colour zero.  It deliberately fails to claim the mixed-word tensor
+identity.  Therefore the next deduction must use the full polar matrix
+equations, not the binary incidence count plus pure coefficients alone:
+[`P7_RESIDUAL_NULL_INCIDENCE_CANONICAL_PROFILE_SHARPNESS.md`](P7_RESIDUAL_NULL_INCIDENCE_CANONICAL_PROFILE_SHARPNESS.md).
 A separate majority-subset theorem says that, on `|S|=m+r` vertices of an
 order-`2m` witness, each contracted monochromatic pure tensor lies in the
 `r`th power of the internal-edge ideal.  At `r=1`, every entangled tensor
