@@ -74,6 +74,53 @@ criterion are invented objects in this package, proved directly from perfect
 matchings.  See
 `RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md`.
 
+### The exact corrected two-port ideal and its first pentad
+
+The arbitrary-order cofactor decomposition has an exact observable ideal at
+one response depth.  For scalar port directions, subtract the common direct
+layer and write
+
+```text
+k_ij=r_i^T C(A) r_j,                  i!=j.
+```
+
+The diagonal values are latent.  Introduce them formally, impose the
+`(q+1) x (q+1)` minors of the completed symmetric matrix, and eliminate the
+diagonal variables.  The resulting symmetric factor-analysis ideal is
+exactly the universal polynomial ideal of the corrected two-port family at
+residual order `q`.  This is an equality, not only a necessary rank bound:
+one fixed nonsingular hafnian cofactor form realizes every symmetric matrix
+of rank at most `q` over the algebraic closure.  For `q>=4`, the existing
+complete-support `h=0` residual core already suffices.  Consequently no
+further hafnian-specific polynomial involving only one corrected two-port
+depth can exist.
+
+At two residuals, write `k_ij=a_i b_j+b_i a_j`.  The map on at most four
+scalar ports is dominant.  Five ports are minimal, and their ideal is the
+principal degree-five pentad: a fixed 12-term polynomial, alternating under
+port permutations and of degree two at every port.  For block ports, evaluate
+the five bilinear blocks on arbitrary vectors.  The pentad's complete
+coefficient tensor lies in
+
+```text
+Sym^2(V_1^*) tensor ... tensor Sym^2(V_5^*),
+```
+
+and any nonzero coefficient is a basis-independent, denominator-free
+obstruction to a common two-residual channel.  No diagonal completion or
+invertible anchor is needed.  A hypothetical Krenn--Gu witness must still
+provide five legally compatible corrected port blocks; that exposure is not
+yet proved.
+
+This is precisely the algebraic-statistical geometry studied in
+[Drton--Sturmfels--Sullivant, *Algebraic Factor Analysis: Tetrads, Pentads
+and Beyond*](https://arxiv.org/abs/math/0509390): their model invariants come
+from eliminating diagonal entries of symmetric low-rank matrices.  The
+identification of the hafnian residual response with that variety, the fixed
+torus-zero realization, and the block-port pentad tensor are the new
+problem-specific transfer.  See
+`RESIDUAL_TWO_PORT_FACTOR_ANALYSIS_IDEAL_AND_FIVE_PORT_PENTAD_THEOREM.md`.
+
 ### Primitive-square quotient Hessian and radial complement closure
 
 The singular primitive `P_7` branch admits a second translation through
@@ -2767,6 +2814,12 @@ new five-mode sharpness:           polar/canonical/pure data attain equality;
 new h!=0 conditional selector:     synchronized depth cancels direct blocks;
 new aligned-resonance boundary:    scalar depth subtraction then loses a colour;
 top two-port data at h!=0:         FULL AFFINE IMAGE;
+corrected two-port universal ideal: SYMMETRIC FACTOR-ANALYSIS ELIMINATION IDEAL;
+extra one-depth hafnian polynomial: NONE;
+two-residual scalar ports <=4:     DOMINANT;
+two-residual five-port ideal:      PRINCIPAL DEGREE-FIVE PENTAD;
+block-port pentad obstruction:     EXACT BASIS-INDEPENDENT TENSOR;
+legal five-port corrected window:  UNKNOWN;
 P5/P6 support 18/21:              UNCONDITIONAL AFTER KNOWN EXTRACTION;
 P7 support 24 transfer:           CONDITIONAL ON LEGAL SYNCHRONIZATION;
 minimal tangent-companion cycle:  EXCLUDED BY FULL-ROOT COFACTOR COLLISION;
@@ -2774,7 +2827,7 @@ legal nonroot switching direction: PROJECTIVE GAUGE;
 uniform physical legal-sensor curve: FLATTENING RANK NINE FOR ALL t!=0;
 uniform switching saturation border rank: AT LEAST NINE;
 nonuniform switching-quotient GHZ incidence: UNKNOWN;
-highest-priority invented objects: synchronized deletion-deck selector and nonuniform secant quotient invariant;
+highest-priority invented objects: legal five-port pentad window, synchronized deletion-deck selector, and nonuniform secant quotient invariant;
 new legality boundary:             top synchronization has shore rank one;
 highest-priority literature tools: square-free apolarity, quotient Lefschetz, secant saturation, determinantal elimination;
 full proof or counterexample:      NOT YET;
