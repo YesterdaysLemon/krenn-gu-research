@@ -219,6 +219,35 @@ torus-zero realization, and the block-port pentad tensor are the new
 problem-specific transfer.  See
 `RESIDUAL_TWO_PORT_FACTOR_ANALYSIS_IDEAL_AND_FIVE_PORT_PENTAD_THEOREM.md`.
 
+### Root-budget legality and the null-polar pentad no-go
+
+The five-port pentad is algebraically minimal, but its legal exposure has a
+new three-colour obstruction.  In a two-residual cell with `m` blockers and
+`m-2` roots, the residual-present pair `z_uv` requires deletion depth `m-2`
+and therefore sits exactly at the maximal root grade.  The direct pair
+`m_uv` requires depth `m`, two beyond the entire root staircase.  Hence
+`D_uv=z_uv-hm_uv` is directly eligible on `h=0`, whereas `h!=0` needs a new
+synchronized correction mechanism.
+
+Parity is not the decisive obstruction on `h=0`.  Fix two source rows and
+contract every mode outside a desired pair in their common null space.  For
+each target colour `c`, let `N_c` be the modes where that colour covector
+lies in the two-row span.  The permanent identity forces `|N_c|>=2`.  If a
+null-polar pair block on `e` is nonzero, some colour survives every
+complementary null contraction, forcing `N_c subset e`, hence `N_c=e`.
+One colour cannot certify two distinct pairs, so all null-polar contractions
+together activate at most three pair blocks—even if a different null vector
+is chosen for every pair.
+
+Each of the twelve pentad monomials uses five distinct edges.  Consequently
+the determinant-cleared weighted pentad obtained from null-polar shore
+values vanishes term by term on every diagonal target identity.  This closes
+the marked-star, common-null, and pair-dependent-null fan routes to the
+pentad.  It does not close a target-compatible named mixed-label sensor or a
+new parameter-jet desingularization of a shore-zero family.  The theorem
+combines the factor-analysis circuit with the row-pair incidence quota; see
+`LEGAL_FIVE_PORT_PENTAD_WINDOW_ROOT_BUDGET_AND_NULL_POLAR_SPARSITY_THEOREM.md`.
+
 ### Primitive-square quotient Hessian and radial complement closure
 
 The singular primitive `P_7` branch admits a second translation through
@@ -2982,6 +3011,12 @@ two-residual scalar ports <=4:     DOMINANT;
 two-residual five-port ideal:      PRINCIPAL DEGREE-FIVE PENTAD;
 block-port pentad obstruction:     EXACT BASIS-INDEPENDENT TENSOR;
 legal five-port corrected window:  UNKNOWN;
+q2 residual-present pair root depth: MAXIMAL AND PARITY ELIGIBLE;
+q2 direct pair root depth:          TWO BEYOND BUDGET;
+residual-null polar active pairs:   AT MOST THREE;
+null-polar five-port pentad:        TERMWISE ZERO;
+pair-dependent null fans evade bound: FALSE;
+target-compatible mixed-label pentad sensor: UNKNOWN;
 P5/P6 support 18/21:              UNCONDITIONAL AFTER KNOWN EXTRACTION;
 P7 support 24 transfer:           CONDITIONAL ON LEGAL SYNCHRONIZATION;
 minimal tangent-companion cycle:  EXCLUDED BY FULL-ROOT COFACTOR COLLISION;

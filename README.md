@@ -69,6 +69,19 @@ basis-independent tensor obstruction, although a legal witness window
 exposing five compatible corrected responses is not yet forced.  See
 [`RESIDUAL_TWO_PORT_FACTOR_ANALYSIS_IDEAL_AND_FIVE_PORT_PENTAD_THEOREM.md`](RESIDUAL_TWO_PORT_FACTOR_ANALYSIS_IDEAL_AND_FIVE_PORT_PENTAD_THEOREM.md).
 
+The five-port pentad now has a sharp legality boundary.  In every
+two-residual `P_5/P_6/P_7` cell, the residual-present corrected pair lies at
+the maximal allowed root depth, while its direct correction lies two depths
+beyond the root budget.  Thus the `h=0` branch is parity-eligible, but the
+`h!=0` correction is not available from one root window.  More decisively,
+every residual-null polar/marked-star/fan selector can activate at most three
+named pair blocks: a nonzero block forces one of the three target-colour
+neighbourhoods to equal that pair.  Every pentad monomial needs five blocks,
+so the determinant-cleared polar pentad is termwise zero.  The surviving
+route requires a target-compatible mixed-label sensor rather than another
+null-polar fan.  See
+[`LEGAL_FIVE_PORT_PENTAD_WINDOW_ROOT_BUDGET_AND_NULL_POLAR_SPARSITY_THEOREM.md`](LEGAL_FIVE_PORT_PENTAD_WINDOW_ROOT_BUDGET_AND_NULL_POLAR_SPARSITY_THEOREM.md).
+
 The primitive `P_7` branch has two new complementary reductions.  The 35
 remaining leaf quadrics are equivalent to one projective collinearity
 `u wedge v=0`; when it holds, the nonzero affine scale is unique.  On the
