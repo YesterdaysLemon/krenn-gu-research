@@ -14,6 +14,27 @@ the same conclusion for `n=6`, `d>=3`.  The arbitrary even-`n` lift remains
 open.  The authoritative six-vertex proof map is
 `SIX_VERTEX_CERTIFICATE.md`.
 
+## 2 August 2026: conformal-core alignment and chord completion
+
+An induced conformal cycle carrying the three excess cells collapses to
+`C_4` or `C_6` if its two internal matchings occur in one same-word selected
+backbone coefficient.  The hypothesis is equivalent to three independent
+coloured residual perfect-matching extensions and is not supplied by
+uncoloured conformality.  An explicit 12-vertex support with 21 cells,
+matching-coveredness, local rank three, pure backbones, and an exact aligned
+`C_6` cancellation proves that a single circuit still does not obstruct the
+first surviving layer.
+
+An arbitrary theta has three matching monomials with zero toric ideal.  If
+all three align, localization reduces it to the minimal simple theta.  The
+bare theta would force all three complementary channels nonzero, but its two
+completing chords reproduce the known full `B_3` bypass exactly.  Globally,
+aligned cycle equations `x^lambda=-1` are inconsistent exactly when their
+exchange vectors have an integer dependency with odd coefficient sum.  The
+open task is to force such an odd dependency or isolate one coefficient from
+all nonempty boundary sectors.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_CORE_ALIGNMENT_BOUNDARY.md`](ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_CORE_ALIGNMENT_BOUNDARY.md).
+
 ## 2 August 2026: `B_3` phase charts and the nonabelian-holonomy target
 
 The six port terms of one forbidden coefficient form a projective `B_3`

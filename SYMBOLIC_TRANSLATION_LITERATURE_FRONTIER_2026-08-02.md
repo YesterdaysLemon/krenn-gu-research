@@ -53,6 +53,24 @@ useful global holonomy obstruction must first force noncommuting transport or
 isolate a mixed coefficient.  See
 `ARBITRARY_PERMANENT_THREE_EXCESS_B3_PHASE_HOLONOMY_NOGO.md`.
 
+The missing conformal/backbone incidence has an exact Hall formulation.  A
+precoloured conformal matching lies in a selected pure-backbone union exactly
+when each colour's fixed partial matching extends in its coordinate support
+graph.  Under that additional alignment, an induced conformal cycle carrying
+the excess cells collapses to `C_4` or `C_6`; an aligned three-term theta
+collapses to the minimal simple theta.  The theta's three matching monomials
+have zero toric ideal, and its two completing chords are exactly the channels
+that recreate the full `B_3` bypass.  One explicit aligned `C_6` model and
+one exact theta-chord matrix show that neither isolated core suffices.
+
+The corresponding multi-core obstruction is now lattice-theoretic.  A
+family of aligned binomials `x^lambda_s=-1` is inconsistent over `C*` exactly
+when the `lambda_s` have an integer relation whose coefficient sum is odd.
+This imports the character-extension viewpoint for algebraic tori while
+preserving the permanent signs.  Forcing such an odd relation from physical
+incidence remains open.  See
+`ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_CORE_ALIGNMENT_BOUNDARY.md`.
+
 ## 1. Gain graphs and a new multi-backbone gluing diagram
 
 ### Existing theory

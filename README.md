@@ -207,6 +207,25 @@ therefore a theorem forcing nonabelian port holonomy or an isolated mixed
 coefficient, not further single-fibre phase elimination.  See
 [`ARBITRARY_PERMANENT_THREE_EXCESS_B3_PHASE_HOLONOMY_NOGO.md`](ARBITRARY_PERMANENT_THREE_EXCESS_B3_PHASE_HOLONOMY_NOGO.md).
 
+The conformal/backbone incidence gap now has a sharp conditional boundary.
+If both internal matchings of the induced conformal circuit occur in one
+selected same-word coefficient, exceptional-source localization collapses
+that circuit to `C_4` or `C_6`, independent of `m`.  The missing alignment
+is exactly a three-colour residual matching-extension condition; uncoloured
+conformality does not imply it.  A 12-vertex, 21-cell symbolic model realizes
+one aligned induced `C_6` cancellation while retaining matching-coveredness,
+local rank three, and three pure backbones, so one circuit is insufficient.
+
+For a theta, the three internal matching monomials form a torically free
+two-simplex.  If all three align in one coefficient, the theta becomes the
+minimal six-vertex theta.  Its bare three-term coefficient has every
+complementary channel nonzero, but the two completing chords recreate the
+full simultaneous-minor-zero bypass exactly.  Several aligned cycle
+binomials contradict precisely when their exponent vectors have an integer
+relation of odd coefficient sum.  Forcing that odd exchange-lattice relation,
+or coefficient-inducedness of one core, is the new exact target.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_CORE_ALIGNMENT_BOUNDARY.md`](ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_CORE_ALIGNMENT_BOUNDARY.md).
+
 The strict support theorem also transfers back to the graph whenever one of
 the root--blocker extraction lemmas applies.  Five roots with five tight
 blockers require at least 18 active contracted root--blocker covectors.  More

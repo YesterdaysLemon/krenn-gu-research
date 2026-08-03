@@ -259,6 +259,11 @@ The later phase-holonomy no-go makes the chart gluing exact and supplies
 countermodels for both abelian transport types.  See
 `ARBITRARY_PERMANENT_THREE_EXCESS_B3_PHASE_HOLONOMY_NOGO.md`.
 
+The later conformal-core alignment theorem identifies the missing coloured
+extension condition, the exact theta--chord completion, and the odd
+exchange-lattice target.  See
+`ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_CORE_ALIGNMENT_BOUNDARY.md`.
+
 ## Verification
 
 Run:
