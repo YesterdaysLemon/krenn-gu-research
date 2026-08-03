@@ -1111,6 +1111,20 @@ selectors, their twelve `M/Z` top values plus the pure two-port aggregate have
 dense image and zero elimination ideal.  The next invariant must use actual
 pair/empty faces or mixed-colour/shared-block coupling:
 [`P7_SELECTOR_MATROID_RANK_COOCCURRENCE_AND_TOP_PROJECTION_BOUNDARY.md`](P7_SELECTOR_MATROID_RANK_COOCCURRENCE_AND_TOP_PROJECTION_BOUNDARY.md).
+The first genuinely mixed-colour circuit is now identified.  For one
+physical blocker pair, its nine corrected two-residual responses form the
+`3 x 3` matrix `D=a_u b_v^T+b_u a_v^T`, so `det D=0`.  Those nine entries are
+a minimal algebraic-matroid circuit: every proper coordinate subset is
+independent.  This explains why adding scalar charts does not help.  One
+common symmetric block construction realizes their diagonal pair/top data
+independently as a three-chart fibre product, and even pair-plus-top data are
+dominant within each chart.  The exceptional all-axis lower jets also admit
+an exact formal diagonal deletion-state realization, while small companion
+graphs satisfy all axis-deficient matching conditions without selecting the
+two residual faces.  The precise next lemma is therefore a legal selector for
+the six off-diagonal entries of one corrected pair block, or an elimination
+that recovers its determinant from aggregated mixed words:
+[`P7_MIXED_COLOR_PAIR_CIRCUIT_AND_AXIS_JET_BOUNDARY.md`](P7_MIXED_COLOR_PAIR_CIRCUIT_AND_AXIS_JET_BOUNDARY.md).
 A separate majority-subset theorem says that, on `|S|=m+r` vertices of an
 order-`2m` witness, each contracted monochromatic pure tensor lies in the
 `r`th power of the internal-edge ideal.  At `r=1`, every entangled tensor

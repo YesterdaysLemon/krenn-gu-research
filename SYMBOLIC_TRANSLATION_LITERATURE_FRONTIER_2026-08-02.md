@@ -1201,6 +1201,33 @@ lower pair face, a mixed-colour coefficient, or a shared-block constraint.
 See
 `P7_SELECTOR_MATROID_RANK_COOCCURRENCE_AND_TOP_PROJECTION_BOUNDARY.md`.
 
+The first lower-face circuit is now explicit.  On three directions at each
+endpoint of one physical pair, the corrected two-residual response is the
+rank-at-most-two matrix
+
+```text
+D_uv=a_u b_v^T+b_u a_v^T,
+det D_uv=0.
+```
+
+Its nine entries form a minimal algebraic-matroid circuit: omitting any one
+entry makes coordinate projection dominant.  A two-chart minor may have full
+rank, and the three diagonal entries admit arbitrary common-block
+interpolation.  More strongly, three same-colour pair/top response varieties
+form a fibre product over the common residual scalar.  Thus the algebraic
+matroid says exactly what the next sensor must see: the six off-diagonal mixed
+entries of one pair block.
+
+Neither the all-axis jet frames nor companion matching topology supplies that
+sensor.  Every all-axis tuple has a globally consistent formal diagonal
+deletion-state model for all mixed root subsets.  The singleton partitions
+also have three- or four-edge strong companion graphs saturating every
+axis-deficient shore, often with one or both residual endpoints unused.
+Lower-frame class count can use frozen-root partner sets instead of `Q`.
+Hence only common principal-hafnian values or an actual mixed-word selector
+can activate the determinant.  See
+`P7_MIXED_COLOR_PAIR_CIRCUIT_AND_AXIS_JET_BOUNDARY.md`.
+
 ## Ranked proof program
 
 1. **Phase-decorated `B_3` exchange complex.**  Define the missing incidence
@@ -1234,8 +1261,10 @@ new forced P7 chart:              marked shore with double-only four-window;
 new exact information boundary:  top window face does not determine lower cube;
 new selector no-go:               rank-two pair need not meet a nonzero shore;
 new projection no-go:             all six top windows have dense visible image;
-highest-priority invented object: mixed-colour deletion-face matroid;
-highest-priority literature tool: circuit with a genuine lower pair face;
+new mixed-colour circuit:          det(corrected 3x3 pair block)=0;
+new axis topology boundary:        jet frames and matching shores still viable;
+highest-priority invented object: mixed-pair selector matroid;
+highest-priority literature tool: determinantal circuit completion;
 full proof or counterexample:      NOT YET;
 global Krenn--Gu conjecture:       UNRESOLVED.
 ```
