@@ -282,6 +282,15 @@ See `ARBITRARY_PERMANENT_THREE_EXCESS_ZEON_BOUNDARY_JET_THEOREM.md`.  This
 packages every physical sector but still does not provide the missing
 differential or target obstruction.
 
+The later alignment-desaturation theorem supplies the missing incidence
+information for the saturated port in the physical eight-cell `A-P`
+subbranch treated here.  If a theta matching is genuinely aligned, the
+zero-excess port must reserve its word colour for a core edge; its outgoing
+cells have exactly the other two colours.  Hence `q_2=1`, not zero.  The
+model here has `s_2=3` and `q_2=0`, so its defect `delta_H=1` is now forced
+rather than accidental.  See
+`ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_210_ALIGNMENT_DESATURATION_THEOREM.md`.
+
 ## Verification
 
 Run:
@@ -312,6 +321,7 @@ coefficient-induced backbone alignment:         NO;
 full P_6 -> Delta_3 restriction:                NOT CLAIMED;
 derived apolar differential/obstruction:        NOT YET CONSTRUCTED;
 all-sector zeon boundary carrier:                CONSTRUCTED LATER;
+aligned saturation B_2=V_2 in physical 8-cell core: EXCLUDED LATER;
 one-chord 2+1+0 global exclusion:               NOT PROVED;
 global Krenn--Gu conjecture:                    UNRESOLVED.
 ```

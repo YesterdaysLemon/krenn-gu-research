@@ -900,6 +900,42 @@ eliminate Y,Z,W only after imposing its equations.
 Priority: this constrained image, not the ambient jet space, is now the
 highest-priority invented object.
 
+## 11. First equation of the aligned response locus
+
+The coloured-extension incidence now yields a genuine constrained theorem
+in the physical eight-cell one-chord `2+1+0` subbranch.  Alignment reserves
+the zero-excess port's word colour for a core theta edge.  Mandatory outgoing
+cells at nonexceptional exterior sources are forced into their colour
+backbones, so the port has exactly the other two outgoing colours:
+
+```text
+s_2=2,              B_2=span(e_c:c!=alpha_2),
+q_2=1.
+```
+
+This excludes the saturation mechanism of the 21-cell method countermodel.
+The degree ledger leaves three surplus placements; an exact apolar
+rank-two/rank-one mismatch excludes the exterior-surplus placement.  See
+`ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_210_ALIGNMENT_DESATURATION_THEOREM.md`.
+
+The remaining aligned image has only two concentrated charts:
+
+```text
+(s_0,s_1,s_2;tau)=(1,1,2;0) or (0,2,2;0).
+```
+
+Their projected cores are always nonzero.  Hence any survivor has an
+`alpha_2`-monochromatic exterior complement and must retain `e_(alpha_2)` at
+the other two ports.  In the `a_1`-concentrated chart this forces
+`alpha_1=alpha_2`; for a mixed aligned word, `alpha_0` is then different.
+Perfectness further forces the aligned `a_0` edge to coincide physically
+with the `alpha_2` pure-backbone edge.  It must be a bichromatic excess cell,
+so the diagonal theta matching through mandatory `z_0` is excluded there.
+
+Priority: derive a colour-sensitive compound relation on these two charts.
+The branch where the second chord exists physically in another colour but is
+ineligible at the aligned word is separate and remains open.
+
 ## Ranked proof program
 
 1. **Phase-decorated `B_3` exchange complex.**  Define the missing incidence
@@ -925,6 +961,7 @@ new arbitrary-order theorem:      support >=3m+3 and S_3 port normal form;
 new exact local invariant:        additive/toric B_3 phase variety;
 new boundary support theorem:     all sectors descend to L=B D^* C links;
 new weighted boundary object:     all-sector zeon jet J_W;
+new aligned-port theorem:         q_2=1 and exterior-surplus excluded;
 highest-priority invented object: coloured/aligned response-image ideal;
 highest-priority literature tool: zeon algebra + derived flattening;
 full proof or counterexample:      NOT YET;
