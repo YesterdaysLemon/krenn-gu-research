@@ -420,6 +420,20 @@ denominator collision is classified by
 and
 [`P7_PRIMITIVE_BOOLEAN_SQUARE_STAR_CLOSURE_DISCRIMINANT_AND_ZERO_ROW_BOUNDARY_THEOREM.md`](P7_PRIMITIVE_BOOLEAN_SQUARE_STAR_CLOSURE_DISCRIMINANT_AND_ZERO_ROW_BOUNDARY_THEOREM.md).
 
+The same primitive-square system has an intrinsic zeon-calculus form.
+Boolean lowering obeys a corrected Leibniz rule, so `ell Q^2=0` is
+equivalent to the harmonic-square identity
+`Q(DQ)=sum_i z_i(partial_i Q)^2`.  Contracting it over the third vertex
+gives one off-diagonal matrix Riccati equation for the edge matrix `B`; a
+second contraction gives the global Casimir
+`(sum_i r_i)^2=4(sum_i r_i^2-sum_(i<j)b_ij^2)`.  Over the reals this excludes
+both closed row-sum cones `|sum r_i|>=2||r||`, including every constant-row
+stratum, and forces row-sum coefficient of variation greater than one when
+the mean is nonzero.
+The complex torus is not excluded because the edge-square sum is not a
+Hermitian norm.  See
+[`P7_PRIMITIVE_ZEON_HARMONIC_SQUARE_RICCATI_AND_REAL_ROW_CONE_OBSTRUCTION.md`](P7_PRIMITIVE_ZEON_HARMONIC_SQUARE_RICCATI_AND_REAL_ROW_CONE_OBSTRUCTION.md).
+
 The legal `P_7` sensor on which this new inverse relies is a three-part
 symbolic observability theorem.  First, arbitrary-order pinned partner
 equations,

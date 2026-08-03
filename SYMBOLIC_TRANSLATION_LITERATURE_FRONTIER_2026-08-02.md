@@ -604,6 +604,45 @@ representation-theoretic language; the identities and kernel argument here
 are self-contained.  See
 `P7_PRIMITIVE_BOOLEAN_SQUARE_DUAL_TRIANGLE_STAR_NORMAL_FORM.md`.
 
+The dual-triangle system also admits a new differential-algebra
+interpretation.  Boolean deletion is not a derivation of the zeon product;
+its exact collision-corrected rule is
+
+```text
+partial_i(fg)=(partial_i f)g+f(partial_i g)
+               -2z_i(partial_i f)(partial_i g).      (23a)
+```
+
+Since the up and down kernels agree in middle degree, a primitive square is
+equivalently the zeon harmonic-square equation
+
+```text
+Q(DQ)=sum_i z_i(partial_i Q)^2.                      (23b)
+```
+
+Its triple coefficients are the 56 equations above.  Summing them over the
+third vertex gives a Hadamard-corrected matrix Riccati law.  If `B=(b_ij)`,
+`r=B1`, and `S=sum_i r_i`, then
+
+```text
+(B^2)_ij=(S/2-2r_i-2r_j)b_ij+r_i r_j+2b_ij^2.       (23c)
+```
+
+Summing (23c) by row and then globally gives
+
+```text
+(Br)_i-sum_(j!=i)b_ij^2=r_i(S/2-r_i),
+S^2=4(sum_i r_i^2-sum_(i<j)b_ij^2).                 (23d)
+```
+
+Thus every real full-edge primitive square must lie strictly outside the
+two closed cones `|S|>=2||r||`.  Constant real row sums are impossible, and
+the standard deviation of the eight row sums must exceed the absolute
+value of their mean.  No complex exclusion is inferred: (23d) uses ordinary
+squares, not absolute squares.  Feinsilver's zeon/Boolean-`sl_2` calculus
+provides the surrounding language; (23b)--(23d) are the new transfer.  See
+`P7_PRIMITIVE_ZEON_HARMONIC_SQUARE_RICCATI_AND_REAL_ROW_CONE_OBSTRUCTION.md`.
+
 The generic part is now resolved by an invented determinantal star-closure
 theory.  With seven star weights `a_j`, normalized row variables `y_j`, and
 21 normalized off-star edges `x_jk`, the 21 anchor triangles plus seven row
@@ -3702,6 +3741,12 @@ primitive corank-one cleared equations: DEGREE 67;
 primitive deeper Schur-pencil branch: RANK AT MOST 19, UNKNOWN;
 primitive exceptional divisors:   EXACT COMPLEMENTARY-SUM GRAPH;
 primitive vanishing row sums:      AT MOST THREE;
+primitive zeon harmonic-square law: EXACT CORRECTED LEIBNIZ IDENTITY;
+primitive off-diagonal Riccati law: EXACT;
+primitive row-sum quadratic Casimir: EXACT;
+real reverse row-sum cones:         EMPTY ON EDGE TORUS;
+constant real row-sum branch:       IMPOSSIBLE;
+complex consequence of real cone:   NONE CLAIMED;
 primitive a=R/4 value class:       SIZE AT MOST FOUR;
 primitive size-four exceptional class: EXPLICIT CUBIC;
 primitive full-Hessian kernel:     CONTAINS 8D VERTEX-INCIDENCE SPACE;
