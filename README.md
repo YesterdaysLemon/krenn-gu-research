@@ -1084,6 +1084,20 @@ the first new datum is the synchronized quartic permanent compound.  An
 actual `P_7` obstruction still needs a partition-closed lower-jet window that
 exposes those coefficients:
 [`RESIDUAL_RELATIVE_RESPONSE_POLYNOMIAL_DUAL_WICK_THEOREM.md`](RESIDUAL_RELATIVE_RESPONSE_POLYNOMIAL_DUAL_WICK_THEOREM.md).
+That exposure problem now has an exact positive/negative boundary.  In the
+canonical minimal profile `012,01,01,02,02,12,12`, every nonzero pure `P_5`
+matrix contains a marked three-root shore with nonzero permanent and a
+double-only four-blocker complement.  The identity proving this is
+`sum per(H[J,D])per(H[R\J,B_c\D])=6per(H)`, with the sum over marked
+three-column shores.  A rank-two companion selector would therefore expose
+the residual-present and residual-absent **top** four-port coefficients on
+one clean window.  It still does not expose the empty and pair faces required
+by the dual-Wick recursion.  This is a real information loss: a legal
+one-parameter two-residual graph-response family has fixed top pair
+`(m_1234,z_1234)=(0,1)` and varying `(m_34,z_12)`.  The exact remaining
+target is thus a full-rank observation matrix on a partition-closed deletion
+cube, or a projected identity eliminating its hidden lower faces:
+[`P7_DELETION_CUBE_OBSERVABILITY_AND_CLEAN_WINDOW_BOUNDARY.md`](P7_DELETION_CUBE_OBSERVABILITY_AND_CLEAN_WINDOW_BOUNDARY.md).
 A separate majority-subset theorem says that, on `|S|=m+r` vertices of an
 order-`2m` witness, each contracted monochromatic pure tensor lies in the
 `r`th power of the internal-edge ideal.  At `r=1`, every entangled tensor

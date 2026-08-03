@@ -1099,6 +1099,81 @@ incidence, expose an invertible anchor for the exact Schur defect, or impose
 the first lower mixed-Hessian/four-point cumulant.  Do not infer a rank drop
 from `haf(A)=0`.
 
+## 14. Deletion-cube observability: a new exact translation
+
+The residual route now has a more precise intermediate object.  Write a legal
+mixed root jet as
+
+```text
+T=sum_a g_a tensor C_a.
+```
+
+The companion forms `g_a` are columns of an observation map and the
+complementary hafnian cofactors `C_a` are hidden state.  A cofactor combination
+is recoverable exactly when its coefficient row lies in the observation
+rowspace; a kernel vector gives an invisible cofactor deformation.  This is a
+static algebraic theorem, not merely an analogy with sensing.  The P7 note
+proves it and then shows that every canonical pure `P_5` chart forces a clean
+four-port graph window, while an exact response fibre proves that its top face
+does not determine its proper subset faces.  See
+`P7_DELETION_CUBE_OBSERVABILITY_AND_CLEAN_WINDOW_BOUNDARY.md`.
+
+Four neighboring literatures now suggest genuinely different next moves.
+
+1. **Structural observability.**  Lin's structural-control viewpoint asks when
+   a sparsity pattern generically permits full-state recovery.  The direct
+   transfer here is smaller and exact: build the combined legal-jet
+   observation matrix, then seek a matching/matroid certificate for full
+   column rank on the deletion classes.  Dynamics and genericity are not
+   imported; the graph problem needs exact weighted rank on the GHZ locus.
+   [Lin, *Structural Controllability*](https://doi.org/10.1109/TAC.1974.1100557).
+
+2. **Algebraic matroids and local completion.**  Kiraly--Theran--Tomioka study
+   whether particular hidden matrix entries are algebraically determined by a
+   visible coordinate set, using circuits and local completion rather than
+   reconstructing the whole matrix.  The corresponding object here is the
+   algebraic matroid of the map from legal edge/cofactor parameters to visible
+   jet coefficients.  A circuit polynomial containing one missing pair face
+   would give the desired projected identity; dominance of that projection
+   would prove that no such identity exists at the chosen data level.
+   [Király--Theran--Tomioka, *The Algebraic Combinatorial Approach for
+   Low-Rank Matrix Completion*](https://arxiv.org/abs/1211.4116) and
+   [Király--Rosen--Theran, *Algebraic matroids with graph
+   symmetry*](https://arxiv.org/abs/1312.3777).
+
+3. **Incidence algebras and Mobius inversion.**  `Z=M Phi` is convolution on
+   the Boolean lattice of port subsets, and the recursive recovery of `Phi`
+   is precisely incidence-algebra inversion.  This explains rigorously why a
+   top face without its interval of proper faces is insufficient.  The new
+   possibility is to eliminate the hidden interval variables from several
+   overlapping copies of the convolution ideal, rather than trying to invent
+   an illegal vacuum evaluation.  [Rota, *On the Foundations of Combinatorial
+   Theory I: Theory of Mobius Functions*](https://link.springer.com/article/10.1007/BF00531932).
+
+4. **Sheaf-style local-to-global gluing.**  Assign to each clean four-window
+   its response-coordinate space and to each overlap the legally observable
+   restriction map.  A global response is a compatible section.  This makes
+   the proposed multi-shore attack concrete: compute whether the kernel
+   directions survive gluing, or whether overlap consistency kills them.
+   Cohomological language is optional; first one must prove the actual legal
+   restriction maps.  Robinson's sensor-integration framework supplies the
+   neighboring formalism, not a ready-made graph theorem.  [Robinson,
+   *Sheaves are the canonical datastructure for sensor
+   integration*](https://arxiv.org/abs/1603.01446).
+
+The ranked symbolic program from this translation is:
+
+1. compute the companion-selector matroid on the marked shore and decide
+   whether its complementary root pair can always be made rank two;
+2. glue two or three overlapping marked shores and compute the common
+   observation kernel on the Boolean pair faces;
+3. eliminate those hidden pair faces from the synchronized dual-Wick ideals;
+4. if the visible projection is dominant, stop pursuing that invariant and
+   enlarge the legal observation system rather than enumerating supports.
+
+This program is finite-dimensional symbolic algebra on forced windows.  It
+does not ask for an enumeration of the 4.6-million quadruple shell.
+
 ## Ranked proof program
 
 1. **Phase-decorated `B_3` exchange complex.**  Define the missing incidence
@@ -1128,8 +1203,10 @@ new aligned-port theorem:         aligned one-chord 2+1+0 fully excluded;
 new residual rank boundary:       h=0 still permits rank C(A)=q;
 new residual locality tool:       separator cross-rank <=2^(s-1);
 new residual gluing invariant:    rank[F_2|F_4|F_6|...]<=q on disjoint charts;
-highest-priority invented object: marked pair-deletion response jet;
-highest-priority literature tool: signless Kuo vs Segre compound;
+new forced P7 chart:              marked shore with double-only four-window;
+new exact information boundary:  top window face does not determine lower cube;
+highest-priority invented object: deletion-cube observation matroid;
+highest-priority literature tool: algebraic-matroid projected circuit;
 full proof or counterexample:      NOT YET;
 global Krenn--Gu conjecture:       UNRESOLVED.
 ```
