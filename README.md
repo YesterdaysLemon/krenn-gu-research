@@ -178,6 +178,20 @@ the coordinate boundaries.  General asymmetric primitive squares and the
 physical singular torus remain unknown.  See
 [`SEVEN_LEAF_SWITCHED_CIRCULANT_PRIMITIVE_SQUARE_NO_GO_THEOREM.md`](SEVEN_LEAF_SWITCHED_CIRCULANT_PRIMITIVE_SQUARE_NO_GO_THEOREM.md).
 
+The remaining physical intersection has a lower-degree annihilator model.
+For a primitive leaf square `N=F^2/2`, the radial extension equation
+`AF=tJN` is equivalent to `F(2ell A+tF)=0`.  Hence every full-edge P7
+extension forces the leaf multiplication map
+`mu_2(F):A_2->A_4` to have rank at most 20.  Rank 20 gives one annihilator
+line and one quotient-collinearity test; rank at most 19 is retained as a
+separate incidence.  The quotient-singular equation factors through the
+same `F` as `2t Phi_N(G)=F(2AG-t(partial G)F)`.  Adjointness of the
+degree-two and degree-three multiplication maps gives
+`rank(D|P)<=rank mu_2(F)`, so leaf rank at most 19 is automatically
+quotient-singular.  Neither the rank-20 structured-syzygy branch nor the
+lower-rank physical torus branch is yet known to exist.  See
+[`P7_PHYSICAL_LEAF_ANNIHILATOR_EXTENSION_AND_QUOTIENT_SYZYGY_THEOREM.md`](P7_PHYSICAL_LEAF_ANNIHILATOR_EXTENSION_AND_QUOTIENT_SYZYGY_THEOREM.md).
+
 Vertex switching supplies no missing legal GHZ direction: it acts by
 diagonal congruence on every shore Hessian and only by a common projective
 scalar on the full root tensor.  For the fixed legal sensor, two coprime

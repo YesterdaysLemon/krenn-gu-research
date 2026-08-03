@@ -3004,6 +3004,58 @@ The existence of a legal full-rank GHZ point on the simple-incidence pinned
 open is still unknown, as are the other 105 four-deck coordinates and the
 higher decks.
 
+## 3 August physical leaf-annihilator and quotient-syzygy transfer
+
+The physical intersection inside the P7 quotient-singular radial system now
+has a support-free zero-divisor formulation.  For a seven-leaf quadratic
+`F`, put `N=F^2/2` and assume `ell N=0`.  Boolean Lefschetz injectivity and
+`N+ell JN=0` give the exact equivalence
+
+```text
+AF=tJN  <=>  F(2ell A+tF)=0.                         (39)
+```
+
+Consequently a full-edge P6-order leaf square extends to a full-edge P7
+primitive square exactly when `Ann_2(F)` contains a class projectively equal
+to `[F]` modulo `ell A_1`, with a full-support incidence remainder.  Every
+physical extension therefore satisfies
+
+```text
+rank(mu_2(F):A_2->A_4)<=20.                          (40)
+```
+
+At rank 20 the annihilator is one projective line and extension is one
+quotient-collinearity test.  Rank at most 19 is a distinct retained
+incidence, not a dimension-count conclusion.  The full-edge uniform
+switching family has rank 21 and is excluded exactly, while a square-zero
+coordinate-boundary family shows why torus permission is essential.
+
+The same leaf form also controls quotient singularity.  For total-zero
+`G`, with `d=partial G`, define `C_G=2AG-t dF`.  Then
+
+```text
+2t Phi_N(G)=F C_G.                                   (41)
+```
+
+Thus quotient singularity is a structured cubic syzygy in `Ann_3(F)`.
+Degree-two and degree-three multiplication by `F` are complemented
+transposes, so
+
+```text
+rank(D|P)<=rank mu_2(F).                             (42)
+```
+
+Leaf rank at most 19 is automatically quotient-singular.  Quotient rank at
+most 18 is exactly the separate condition that at least two independent
+structured cubic syzygies occur.  This translates the physical radial
+problem into projective annihilator incidence and syzygy geometry; Cook's
+strong-Lefschetz context and Feinsilver's Boolean `sl_2` model supply the
+ambient theory, while (39), (41), and (42) are the new P7 identities.  See
+`P7_PHYSICAL_LEAF_ANNIHILATOR_EXTENSION_AND_QUOTIENT_SYZYGY_THEOREM.md`.
+
+Both the rank-20 structured-syzygy torus and the rank-at-most-19 physical
+extension torus remain unknown.
+
 ## Ranked proof program
 
 0. **Resolve the legal pullback of target incidence.**  The ambient equation
@@ -3119,6 +3171,14 @@ primitive rank-19 annihilator:      UNIQUE PROJECTIVELY;
 primitive rank<=18 annihilator:     RETAINED;
 physical singular radial lift:      QUADRATIC/BILINEAR SYSTEM;
 physical singular lift meets edge torus: UNKNOWN;
+physical radial extension equation: QUADRATIC ANNIHILATOR INCIDENCE;
+physical leaf multiplication rank:  AT MOST 20;
+physical leaf rank-20 branch:        ONE ANNIHILATOR LINE;
+physical leaf rank<=19 branch:       RETAINED, UNKNOWN;
+quotient singularity on physical lift: STRUCTURED CUBIC SYZYGY;
+quotient rank versus leaf rank:      rank(D|P)<=rank(mu_2(F));
+physical leaf rank<=19 implies quotient singular: PROVED;
+quotient rank<=18 structured syzygies: AT LEAST TWO;
 seven-leaf switched-circulant primitive square: IMPOSSIBLE;
 arbitrary nonzero vertex switching in that family: INCLUDED;
 general seven-leaf primitive square: UNKNOWN;
