@@ -275,7 +275,8 @@ bosonic cofactor problem and may require the apolar/derived flattenings
 identified in the literature frontier.  Vanishing of `E_ij` does not imply
 absence of the link `(a_i,p_j)`, because distinct exterior matchings can
 cancel.  Nor does vanishing of every elementary response decouple the
-higher boundary sectors; those higher layers require separate control.
+higher boundary sectors.  Those layers are packaged, but not yet excluded,
+by `ARBITRARY_PERMANENT_THREE_EXCESS_ZEON_BOUNDARY_JET_THEOREM.md`.
 
 ## Scope wall
 

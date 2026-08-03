@@ -126,7 +126,7 @@ def main():
     assert ("a1", "p0") not in closure
 
     print("independent no-import boundary delta-matroid audit: PASS")
-    print("one 3x3 cofactor identity and one path toggle; no family census")
+    print("independent 3x3 residual matchings, path toggle, and reachability")
 
 
 if __name__ == "__main__":

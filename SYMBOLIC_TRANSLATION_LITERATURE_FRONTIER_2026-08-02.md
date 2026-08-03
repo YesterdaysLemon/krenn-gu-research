@@ -812,6 +812,54 @@ cofactor problems at the elementary and higher amplitude layers.
 
 Priority: immediate for every remaining boundary branch.
 
+## 9. Zeon algebras and a new all-sector boundary jet
+
+### Existing theory
+
+Zeons are commuting square-zero generators.  Feinsilver and McSorley develop
+their connection with permanents and permanent trace formulas:
+[*Zeons, Permanents, the Johnson Scheme, and Generalized Derangements*](https://arxiv.org/abs/1710.00788).
+This is also the algebraic language used by the repository's block selector
+and full partial-matching Wick completion.
+
+### Exact repository transfer
+
+For exterior block `W` and crossing blocks `Y,Z`, introduce terminal zeons
+`u_i,v_j` and the rank-one perturbation
+
+```text
+J_W(u,v)=per(W+(Zv)(u^T Y)).
+```
+
+If `R_(I,J)` is the complete boundary response covering core mode set `I`
+and core source set `J`, with common size `k`, then
+
+```text
+[u_I v_J]J_W = k! R_(I,J).
+```
+
+Contracting these coefficients with complementary permanents of the core
+matrix reconstructs the full block permanent exactly.  For the three-port
+problem the degrees `0,1,2,3` simultaneously retain the empty, elementary,
+second, and saturated top boundary layers.  Each layer also factors as a
+permanental compound product
+
+```text
+R^(k)=P_k(Y) D_k(W) P_k(Z),
+```
+
+providing determinantal flattenings at every degree.  This is proved in
+`ARBITRARY_PERMANENT_THREE_EXCESS_ZEON_BOUNDARY_JET_THEOREM.md`.
+
+### Boundary
+
+The jet is an all-sector carrier, not yet an obstruction.  Its generic
+squarefree support is the matching delta-matroid, but physical complex
+weights can cancel within any coefficient.  No cross-degree ideal,
+differential, or target-rank mismatch has yet been proved.
+
+Priority: highest for the saturated `2+1+0` and bare-core branches.
+
 ## Ranked proof program
 
 1. **Phase-decorated `B_3` exchange complex.**  Define the missing incidence
@@ -836,9 +884,9 @@ new arbitrary-order exclusion:    all 3m+2 equality faces impossible;
 new arbitrary-order theorem:      support >=3m+3 and S_3 port normal form;
 new exact local invariant:        additive/toric B_3 phase variety;
 new boundary support theorem:     all sectors descend to L=B D^* C links;
-new weighted boundary object:     E=Y C_per(W) Z;
-highest-priority invented object: elementary-response cofactor quiver;
-highest-priority literature tool: matching delta-matroid + derived flattening;
+new weighted boundary object:     all-sector zeon jet J_W;
+highest-priority invented object: cross-degree boundary-jet ideal;
+highest-priority literature tool: zeon algebra + derived flattening;
 full proof or counterexample:      NOT YET;
 global Krenn--Gu conjecture:       UNRESOLVED.
 ```

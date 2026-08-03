@@ -269,6 +269,19 @@ forces `delta_H(Theta)=0`, using the exact coloured-extension criterion.
 The countermodel proves that either route must use information absent from
 the support/degree/conformality ledgers.
 
+A later theorem constructs a different rigorous all-sector carrier: the
+zeon boundary jet
+
+```text
+J_W(u,v)=per(W+(Zv)(u^T Y)).
+```
+
+Its degree-`k` squarefree coefficient is `k!` times the exact size-`k`
+boundary response, so it retains the saturated top layer that (17) loses.
+See `ARBITRARY_PERMANENT_THREE_EXCESS_ZEON_BOUNDARY_JET_THEOREM.md`.  This
+packages every physical sector but still does not provide the missing
+differential or target obstruction.
+
 ## Verification
 
 Run:
@@ -298,6 +311,7 @@ counterexample to ordinary quotient extension: YES;
 coefficient-induced backbone alignment:         NO;
 full P_6 -> Delta_3 restriction:                NOT CLAIMED;
 derived apolar differential/obstruction:        NOT YET CONSTRUCTED;
+all-sector zeon boundary carrier:                CONSTRUCTED LATER;
 one-chord 2+1+0 global exclusion:               NOT PROVED;
 global Krenn--Gu conjecture:                    UNRESOLVED.
 ```
