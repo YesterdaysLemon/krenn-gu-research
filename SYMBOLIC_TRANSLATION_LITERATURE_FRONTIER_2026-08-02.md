@@ -69,10 +69,11 @@ the colimit still has gain `-1`, so a hypothetical restriction requires the
 whole colimit to be bipartite.
 
 The pure-matching cube theorem makes the diagram finite in structure at
-every order: each colour has at most one exceptional-source four-cycle
-switch, so the object set is a face of `{0,1}^3` with at most eight objects.
-This is a theorem about the choice space, not permission to enumerate the
-mixed matchings inside those objects.
+every order: every switch is an exceptional-source four-cycle, and at most
+two colours can switch.  Thus the object set is a face of `{0,1}^k`, `k<=2`,
+with at most four objects.  The two-switch case is confined to co-located
+noncoordinate excess cells.  This is a theorem about the choice space, not
+permission to enumerate the mixed matchings inside those objects.
 
 This packages the remaining equality problem into one exact combinatorial
 claim:

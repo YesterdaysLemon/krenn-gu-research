@@ -21,10 +21,28 @@ def main() -> None:
     assert sp.expand(backbone * (1 + rho) - (backbone + cross)) == 0
     assert sp.expand((backbone + cross).subs(cross, -backbone)) == 0
 
-    for switch_count in range(4):
+    # With distinct excess modes, two switchable colours would require their
+    # distinct mandatory coordinate covectors in the same cross cells.
+    e0 = sp.Matrix([1, 0, 0])
+    e1 = sp.Matrix([0, 1, 0])
+    assert e0.rank() == e1.rank() == 1
+    assert sp.Matrix.hstack(e0, e1).rank() == 2
+
+    # In the co-located branch, every switch consumes one unit of mode-degree
+    # excess at its distinct common mandatory mode.  The total is two.
+    feasible_ledgers = [
+        (epsilon_a, switches)
+        for epsilon_a in range(3)
+        for switches in range(3)
+        if epsilon_a + switches <= 2
+    ]
+    assert max(switches for _, switches in feasible_ledgers) == 2
+    assert (0, 2) in feasible_ledgers
+
+    for switch_count in range(3):
         backbones = list(product((0, 1), repeat=switch_count))
         assert len(backbones) == 2**switch_count
-        assert len(backbones) <= 8
+        assert len(backbones) <= 4
 
     print("arbitrary permanent equality pure-matching cube: symbolic checks PASS")
     print("fixed exchange algebra only; no matching or support search was performed")

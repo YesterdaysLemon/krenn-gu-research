@@ -2,7 +2,7 @@
 
 ## Status
 
-This is an exact characteristic-zero gluing criterion for the at-most-eight
+This is an exact characteristic-zero gluing criterion for the at-most-four
 pure backbones in the `3m+2` equality stratum.  Every fixed-backbone
 cancellation graph is canonically bipartite, so the only possible gain
 obstruction lies in how those bipartitions disagree on shared ratio states.
@@ -19,8 +19,9 @@ obstruction, not yet a proof that such a straddling component must occur.
 
 ## Fibre graphs
 
-Let `T` be the face of `{0,1}^3` parametrizing all pure backbones from the
-pure-matching cube theorem.  For each `t in T`, let
+Let `T` be the face of `{0,1}^k`, with `k<=2`, parametrizing all pure
+backbones from the pure-matching cube theorem.  The case `k=2` can occur
+only in its co-located noncoordinate-excess branch.  For each `t in T`, let
 
 ```text
 Gamma_t=(V_t,E_t)                                    (1)

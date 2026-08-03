@@ -13988,11 +13988,15 @@ remaining coefficients.
 Localization applies to a pure backbone matching too.  Any other matching
 for the same pure word can introduce new edges only at `p_1,p_2`; its
 symmetric difference is therefore the unique four-cycle cross transposition.
-Each colour has at most two pure matchings, so all pure-backbone choices form
-a face of `{0,1}^3` and number at most eight.  If the switch exists, its pure
+Each colour has at most two pure matchings, and every switch must use both
+excess cells.  Physical-cell incidence permits at most one switch when the
+excess modes differ or either excess cell is coordinate.  In the remaining
+co-located noncoordinate branch, the equality mode-degree ledger permits at
+most two switches.  Thus all pure-backbone choices form a face of
+`{0,1}^k`, `k<=2`, and number at most four.  If a switch exists, its pure
 coefficient is `w(M)(1+rho)=lambda_c!=0`, so its transport ratio is not the
-mixed cancellation gain `-1`.  The all-backbone problem is now three symbolic
-binary switches, not an unbounded matching-family search.
+mixed cancellation gain `-1`.  The all-backbone problem is now at most two
+symbolic binary switches, not an unbounded matching-family search.
 
 The gluing itself has a complete `F_2` descent criterion.  Make one vertex
 for every connected component of every fixed-backbone cancellation graph.

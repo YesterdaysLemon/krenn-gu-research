@@ -50,9 +50,12 @@ For one fixed pure backbone, the auxiliary all-negative gain graph on
 mode--colour ratio states is canonically bipartite, so that route alone is
 empty.  The remaining question is whether gluing the graphs from all choices
 of pure matchings forces an odd cycle after shared ratio states are
-identified.  Each colour has at most one pure four-cycle switch, so all pure
-backbones form a Boolean cube of dimension at most three and number at most
-eight.  Global bipartiteness is now equivalent to balance of an `F_2`-labelled
+identified.  Every pure switch is the exceptional-source four-cycle, and
+physical-cell incidence plus the equality degree ledger allow at most two
+switchable colours.  Hence the pure backbones form a Boolean cube of
+dimension at most two and number at most four.  The two-switch case requires
+both excess cells to be noncoordinate and co-located at one mode.  Global
+bipartiteness is now equivalent to balance of an `F_2`-labelled
 component-overlap graph; a pure switch is excluded as soon as one common
 cancellation component connects two shared states and exactly one changes
 source side.  Whether such a straddling switch is forced remains open.  See

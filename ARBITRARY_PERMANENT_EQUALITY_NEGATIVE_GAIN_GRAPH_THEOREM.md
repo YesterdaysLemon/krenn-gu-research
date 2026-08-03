@@ -163,9 +163,11 @@ The first outcome excludes `3m+2` equality.  The second gives a global
 two-colouring normal form that must be intersected with the remaining
 permanent coefficients.  Neither outcome has yet been proved.
 
-The pure-matching cube theorem reduces this gluing problem further: each
-colour has at most one nontrivial pure switch, always the exceptional-source
-four-cycle, so `Gamma^*` is the union of at most eight backbone fibres.  See
+The pure-matching cube theorem reduces this gluing problem further.  Every
+nontrivial pure switch is the exceptional-source four-cycle, and at most two
+colours can switch.  Thus `Gamma^*` is the union of at most four backbone
+fibres.  The two-switch case is confined to the branch in which both excess
+cells are noncoordinate and co-located at one mode.  See
 `ARBITRARY_PERMANENT_EQUALITY_PURE_MATCHING_CUBE_THEOREM.md`.
 
 The backbone-colouring glue theorem gives the exact descent criterion for

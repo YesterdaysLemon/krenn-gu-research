@@ -8,11 +8,16 @@ pure colour graph has at most two perfect matchings.  If the second exists,
 it differs from the first by the unique four-cycle transposition on
 `p_1,p_2`.
 
-Consequently all choices of the three-colour pure backbone form a Boolean
-cube of dimension at most three: there are at most `2^3=8` backbones.  This
-does not enumerate them and does not prove that their glued gain graph is
-nonbipartite.  It reduces the multi-backbone compatibility problem to three
-symbolic binary switches at every order `m`.
+The physical-cell geometry collapses the apparent three-cube further.  Any
+pure switch must use both excess cells.  If their mode endpoints are
+distinct, at most one colour can switch.  Multiple switches require the two
+excess cells to be noncoordinate and co-located at one mode.  Local concision
+and the total mode-degree excess then permit at most two switchable colours.
+Thus there are at most four pure backbones at every order `m`.
+
+This does not enumerate them and does not prove that their glued gain graph
+is nonbipartite.  It reduces the multi-backbone compatibility problem to at
+most two symbolic binary switches.
 
 ## Setup
 
@@ -66,28 +71,113 @@ This conclusion remains valid when one or both cross cells are
 noncoordinate: eligibility is coefficient-wise, while the symmetric
 difference is taken after collapsing coloured copies to physical cells.
 
-## The pure-backbone cube
+## The apparent pure-backbone cube
 
-For each colour, let `epsilon_c` record whether the optional cross matching
+For each colour, let `eta_c` record whether the optional cross matching
 is chosen.  A colour with a unique pure matching has no switch; a colour
-with two matchings contributes `epsilon_c in {0,1}`.  Therefore all triples
+with two matchings contributes `eta_c in {0,1}`.  Therefore all triples
 
 ```text
-H=M_0(epsilon_0) union M_1(epsilon_1) union
-  M_2(epsilon_2)                                      (6)
+H=M_0(eta_0) union M_1(eta_1) union M_2(eta_2)        (6)
 ```
 
-form a face of the three-cube.  In particular
+initially form a face of the three-cube.
+
+## Physical-cell dichotomy and dimension at most two
+
+Let the unique excess cell at source `p_s` be
 
 ```text
-number of pure backbones <=8.                         (7)
+e_s=r_(a_s,p_s).                                     (7)
+```
+
+If colour `c` has two pure matchings, each source must supply two distinct
+colour-`c` eligible cells.  The mandatory cover supplies only
+`b_(p_s,c)`; every other mandatory cell at that source is a different
+coordinate colour.  Hence the second eligible cell is necessarily `e_s`,
+and `e_s[c]!=0`.  In particular, no pure switch can avoid either excess
+cell.
+
+### Distinct excess modes
+
+If `a_1!=a_2`, the four-cycle uses those two modes and forces
+
+```text
+b_(p_1,c)=r_(a_2,p_1),
+b_(p_2,c)=r_(a_1,p_2).                               (8)
+```
+
+Two switchable colours would require their distinct mandatory coordinate
+covectors in the same physical cross cells.  Hence
+
+```text
+number of switchable colours <=1 if a_1!=a_2.         (9)
+```
+
+The same conclusion holds if either `e_s` is coordinate, regardless of mode
+placement: every switchable colour must occur nontrivially in both `e_1` and
+`e_2`, so it must equal the singleton colour of that coordinate excess cell.
+
+### Co-located excess modes
+
+Suppose `a_1=a_2=a`.  A four-cycle cannot use the two excess edges in one
+matching because they share mode `a`.  Instead there is a second common mode
+`b_c!=a` such that
+
+```text
+b_(p_1,c)=r_(b_c,p_1),
+b_(p_2,c)=r_(b_c,p_2).                               (10)
+```
+
+The two matchings pair `a` to one exceptional source and `b_c` to the other,
+then transpose them.  Different switchable colours require distinct modes
+`b_c`; otherwise two independent coordinate covectors would again occupy
+one physical cell.
+
+Both nonmandatory cells are at `a`, so every cell at `b_c` belongs to the
+mandatory coordinate cover.  Let
+
+```text
+d_i=3+varepsilon_i,       sum_i varepsilon_i=2        (11)
+```
+
+be the equality mode-degree ledger.  At mode `b_c` there are two coordinate
+rows of colour `c`.  Because the mode is coordinate-only, local rank three
+requires at least one row in each of the other two coordinate directions,
+so
+
+```text
+d_(b_c)>=4,       varepsilon_(b_c)>=1.               (12)
+```
+
+If `k` colours are switchable, their `b_c` are distinct, and therefore
+
+```text
+k+varepsilon_a<=2.                                  (13)
+```
+
+Consequently `k<=2`.  The case `k=2` is possible only in the ledger shape
+
+```text
+both e_1,e_2 noncoordinate at the same mode a,
+varepsilon_a=0,
+two distinct common modes b_c,b_d with
+varepsilon_(b_c)=varepsilon_(b_d)=1.                 (14)
+```
+
+In particular
+
+```text
+number of switchable colours <=2,
+number of pure backbones <=4.                        (15)
 ```
 
 The switches are not independent at the level of the full permanent
-equations; (6)--(7) classify only the choices of pure matchings.  For the
+equations; (6)--(15) classify only the choices of pure matchings.  For the
 negative-gain route, they say that the all-backbone graph `Gamma^*` is the
-union of at most eight canonically bipartite fibres, glued by at most three
-four-cycle source swaps.
+union of at most four canonically bipartite fibres, glued by at most two
+four-cycle source swaps.  Outside the co-located two-noncoordinate branch it
+is the union of at most two fibres.
 
 ## Pure coefficient value
 
@@ -95,16 +185,16 @@ If the second matching exists, the pure coefficient is exactly the sum of
 the two monomials:
 
 ```text
-w(M_c)+w(M'_c)=lambda_c !=0.                          (8)
+w(M_c)+w(M'_c)=lambda_c !=0.                         (16)
 ```
 
 After factoring `w(M_c)`, the cross rectangle ratio `rho_c` satisfies
 
 ```text
-w(M_c)(1+rho_c)=lambda_c.                             (9)
+w(M_c)(1+rho_c)=lambda_c.                            (17)
 ```
 
-Unlike a mixed coefficient, (9) does not force `rho_c=-1`; in fact
+Unlike a mixed coefficient, (17) does not force `rho_c=-1`; in fact
 `rho_c=-1` would kill the required pure coefficient.  Thus the pure switch
 supplies a nonvanishing transport parameter, not another all-negative gain
 edge.  Any future holonomy argument must keep this distinction.
@@ -119,17 +209,19 @@ python audit_arbitrary_permanent_equality_pure_matching_cube_theorem.py
 ```
 
 The scripts check the unique `2 x 2` transposition, the two-term pure
-coefficient identity, and the dimension-at-most-three Boolean product.  They
-are fixed symbolic checks.  The arbitrary-order proof is localization plus
-the alternating-cycle decomposition above.
+coefficient identity, the distinct-mode physical-cell collision, and the
+co-located mode-degree ledger.  They are fixed symbolic checks.  The
+arbitrary-order proof is localization plus the alternating-cycle,
+cell-incidence, and local-concision argument above.
 
 ## Boundary
 
 ```text
 pure matchings per colour at equality:     AT MOST TWO;
 nontrivial pure exchange:                  UNIQUE P_1/P_2 FOUR-CYCLE;
-pure backbone choices:                     BOOLEAN CUBE, DIMENSION <=3;
-number of pure backbones:                  AT MOST EIGHT;
+pure backbone choices:                     BOOLEAN CUBE, DIMENSION <=2;
+number of pure backbones:                  AT MOST FOUR;
+two-switch branch:                         CO-LOCATED NONCOORDINATE EXCESS;
 mixed matchings inside one backbone:       NOT COUNTED;
 odd cycle in glued gain graph:             UNKNOWN;
 global Krenn--Gu conjecture:                UNRESOLVED.
