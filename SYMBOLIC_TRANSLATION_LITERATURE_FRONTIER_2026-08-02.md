@@ -83,6 +83,19 @@ local-rank, and pure-backbone data but have no aligned all-excess carrier.
 See
 `ARBITRARY_PERMANENT_THREE_EXCESS_REPLAY_EXCHANGE_CLOSURE_THEOREM.md`.
 
+The spinor translation exposes a different sharp boundary.  The `3 x 3`
+permanent obeys a Plucker-type identity with the characteristic-zero defect
+`2 x_13 x_23 x_31 x_32`.  A bare theta kills the defect; its two completing
+chords support it.  An exact six-token conformal-`K_3,3` model realizes a
+nonzero defect and an exact mixed cancellation over `Q(sqrt(2))`.  Thus
+matchgate identities or Kuo condensation apply only after proving a
+Pfaffian/planar eligibility structure.  Little's conformal-`K_3,3`
+characterization gives the clean conditional theorem, while the fact that
+the second secant of the six-terminal pure-spinor variety fills `P^31`
+explains why summing two spinorial channels supplies no universal identity.
+See
+`ARBITRARY_PERMANENT_THREE_EXCESS_BOSONIC_PLUCKER_DEFECT_THEOREM.md`.
+
 ## 1. Gain graphs and a new multi-backbone gluing diagram
 
 ### Existing theory

@@ -35,6 +35,23 @@ degree and pure matching and gives the same structural nonalignment for all
 restriction.  See
 [`ARBITRARY_PERMANENT_THREE_EXCESS_REPLAY_EXCHANGE_CLOSURE_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_REPLAY_EXCHANGE_CLOSURE_THEOREM.md).
 
+## 2 August 2026: bosonic Plucker defect and Pfaffian boundary
+
+The permanent analogue of the `3 x 3` Plucker relation has one extra term:
+`2 x_13 x_23 x_31 x_32`.  It is exactly zero on the bare minimal theta and
+can be nonzero only when both completing chords occur.  This explains why a
+matchgate or Kuo-condensation argument appeared promising but was not
+automatic: those theories live in a Pfaffian/planar regime where the bosonic
+defect is absent.
+
+An exact `m=6`, `21`-cell support realizes the full conformal `K_3,3` around
+the theta, all six replay tokens, local rank three, pure colour backbones,
+and a `Q(sqrt(2))` mixed zero with nonzero defect.  It is non-Pfaffian by the
+conformal-even-`K_3,3` characterization.  Thus the next useful targets are to
+prove Pfaffian eligibility, force at least one chord sector to vanish, or use
+other coefficients to contradict the defect completion.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_BOSONIC_PLUCKER_DEFECT_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_BOSONIC_PLUCKER_DEFECT_THEOREM.md).
+
 ## 2 August 2026: conformal-core alignment and chord completion
 
 An induced conformal cycle carrying the three excess cells collapses to

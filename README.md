@@ -243,6 +243,22 @@ and a colour-preserving splice yields the same nonalignment for every
 `m>=9`.  These are structural counterfamilies, not full restrictions.  See
 [`ARBITRARY_PERMANENT_THREE_EXCESS_REPLAY_EXCHANGE_CLOSURE_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_REPLAY_EXCHANGE_CLOSURE_THEOREM.md).
 
+The matchgate translation now has an exact boundary as well.  A `3 x 3`
+permanent satisfies a Plucker-type identity with the quartic defect
+
+```text
+2 x_13 x_23 x_31 x_32.
+```
+
+The bare theta kills this term, but its two completing chords support it.  An
+exact `21`-cell, `m=6` model has the complete conformal `K_3,3`, the exact
+six-token budget, local rank three, pure backbones, and an exact
+`Q(sqrt(2))` zero coefficient with nonzero defect.  For a word-eligible
+conformal theta, Pfaffian eligibility would exclude simultaneous eligibility
+of both chords by the conformal-`K_3,3` characterization, but the six-token
+theorem does not imply Pfaffianity.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_BOSONIC_PLUCKER_DEFECT_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_BOSONIC_PLUCKER_DEFECT_THEOREM.md).
+
 The strict support theorem also transfers back to the graph whenever one of
 the root--blocker extraction lemmas applies.  Five roots with five tight
 blockers require at least 18 active contracted root--blocker covectors.  More
