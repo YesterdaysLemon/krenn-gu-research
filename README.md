@@ -220,6 +220,19 @@ This rules out generic local inversion as a solution of the physical
 branch, but does not prove the structured ramification torus empty.  See
 [`SEVEN_LEAF_HAFNIAN_PROJECTED_VERONESE_RAMIFICATION_AND_STRUCTURED_TANGENT_THEOREM.md`](SEVEN_LEAF_HAFNIAN_PROJECTED_VERONESE_RAMIFICATION_AND_STRUCTURED_TANGENT_THEOREM.md).
 
+Full edge support imposes a further apolar constraint: multiplication
+`A_1->A_3` by `F` is injective.  Therefore the quotient by the complete
+multiplication annihilator is Artinian Gorenstein of socle degree five with
+Hilbert vector `(1,7,rho,rho,7,1)`, where `rho=rank mu_2(F)`.  Essential
+cubic annihilators modulo `A_1 Ann_2(F)` have dimension at least
+`max(0,6rho-112)`: rank 20 forces at least eight and rank 19 forces at least
+two, while rank at most 18 is a separate resonance problem.  The physical
+cubic `2AG-t(partial G)F` can be zero, quadratically generated, or essential;
+Hilbert data alone forces none of the three.  Thus the count explains the
+rank-20 square determinant and rank-19 automatic singularity without
+promoting either branch to existence or emptiness.  See
+[`P7_LEAF_APOLAR_GORENSTEIN_HILBERT_RESONANCE_AND_ESSENTIAL_SYZYGY_THEOREM.md`](P7_LEAF_APOLAR_GORENSTEIN_HILBERT_RESONANCE_AND_ESSENTIAL_SYZYGY_THEOREM.md).
+
 Vertex switching supplies no missing legal GHZ direction: it acts by
 diagonal congruence on every shore Hessian and only by a common projective
 scalar on the full root tensor.  For the fixed legal sensor, two coprime

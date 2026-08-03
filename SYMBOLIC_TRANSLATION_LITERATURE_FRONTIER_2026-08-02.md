@@ -3150,6 +3150,59 @@ This is an exact determinant/exterior-power and weighted-line-bundle
 translation, not an expansion or enumeration of the enormous maximal-minor
 ideal.
 
+## 3 August apolar-Gorenstein Hilbert and resonance transfer
+
+Full edge support rigidifies the leaf-annihilator branch before any physical
+incidence is imposed.  If `F` has all 21 coefficients nonzero, the triple
+equations for a linear annihilator reduce, according to its zero support, to
+either the full-rank `W_(2,3)(7)` inclusion map or the full-rank unsigned
+vertex-edge incidence of `K_6`.  Hence
+
+```text
+Ann_1(F)=0.                                           (50)
+```
+
+The quotient by the complete multiplication annihilator has the perfect
+top pairing induced by `XF`, so it is Artinian Gorenstein of socle degree
+five.  With `rho=rank mu_2(F)`, its exact Hilbert vector is
+
+```text
+H_(A/Ann(F))=(1,7,rho,rho,7,1).                      (51)
+```
+
+Let `E_3=Ann_3(F)/(A_1 Ann_2(F))`.  Pure dimension comparison gives
+
+```text
+dim E_3>=max(0,6rho-112).                            (52)
+```
+
+Thus rank 20 has one quadratic annihilator and at least eight essential
+cubics; if that annihilator is full-edge, the number is exactly eight.
+Rank 19 has two quadratic annihilators and at least two essential cubics.
+For rank at most 18, the Hilbert lower bound is zero and the multiplication
+
+```text
+A_1 tensor Ann_2(F)->Ann_3(F)                        (53)
+```
+
+is a separate resonance problem.
+
+The structured physical cubic `C_G=2AG-t(partial G)F` has the exhaustive
+trichotomy
+
+```text
+C_G=0;  C_G in A_1 Ann_2(F) minus {0};
+[C_G]!=0 in E_3.                                     (54)
+```
+
+The Hilbert vector and the essential-cubic counts force none of these three
+placements.  They explain why the rank-20 structured map is square and why
+rank 19 is automatically singular, but they do not settle the physical
+incidence.  Macaulay inverse systems, Boolean `sl_2`, and mixed-Hessian
+determinantal geometry supply the surrounding theories; the full-edge
+injectivity and branch counts are the new transfer.  See
+`P7_LEAF_APOLAR_GORENSTEIN_HILBERT_RESONANCE_AND_ESSENTIAL_SYZYGY_THEOREM.md`.
+
 ## Ranked proof program
 
 0. **Resolve the legal pullback of target incidence.**  The ambient equation
@@ -3279,6 +3332,13 @@ leaf four-hafnian ramification kernel: Ann_2(F);
 physical radial branch on full-Jacobian open: IMPOSSIBLE;
 physical rank-20 tangent-center point: UNIQUE PROJECTIVELY;
 physical rank<=19 tangent-center intersection: POSITIVE-DIMENSIONAL;
+full-edge leaf linear annihilator:    IMPOSSIBLE;
+leaf annihilator quotient Hilbert vector: (1,7,rho,rho,7,1);
+rank-20 essential cubic annihilators: AT LEAST EIGHT;
+rank-19 essential cubic annihilators: AT LEAST TWO;
+rank<=18 Hilbert essential-cubic forcing: NONE;
+structured physical cubic placement: ZERO / GENERATED / ESSENTIAL;
+Hilbert data decides structured placement: NO;
 seven-leaf switched-circulant primitive square: IMPOSSIBLE;
 arbitrary nonzero vertex switching in that family: INCLUDED;
 general seven-leaf primitive square: UNKNOWN;
