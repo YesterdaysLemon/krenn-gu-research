@@ -192,6 +192,19 @@ quotient-singular.  Neither the rank-20 structured-syzygy branch nor the
 lower-rank physical torus branch is yet known to exist.  See
 [`P7_PHYSICAL_LEAF_ANNIHILATOR_EXTENSION_AND_QUOTIENT_SYZYGY_THEOREM.md`](P7_PHYSICAL_LEAF_ANNIHILATOR_EXTENSION_AND_QUOTIENT_SYZYGY_THEOREM.md).
 
+Projectively, that rank condition has an exact geometric meaning.  The
+seven-leaf four-hafnian map `F -> F^2/2` is the linear projection of the
+quadratic Veronese `P^20` from the 195-dimensional projectivized kernel of
+Boolean multiplication `Sym^2(A_2)->A_4`.  Its differential at `F` is
+`K -> FK`, so its ramification kernel is exactly `Ann_2(F)`.  The physical
+annihilator `2ell A+tF` is therefore a structured Veronese tangent swallowed
+by the projection center.  Every radial P7 extension lies off the generic
+full-Jacobian four-deck tomography chart; rank 20 gives one tangent-center
+point, while rank at most 19 gives a positive-dimensional intersection.
+This rules out generic local inversion as a solution of the physical
+branch, but does not prove the structured ramification torus empty.  See
+[`SEVEN_LEAF_HAFNIAN_PROJECTED_VERONESE_RAMIFICATION_AND_STRUCTURED_TANGENT_THEOREM.md`](SEVEN_LEAF_HAFNIAN_PROJECTED_VERONESE_RAMIFICATION_AND_STRUCTURED_TANGENT_THEOREM.md).
+
 Vertex switching supplies no missing legal GHZ direction: it acts by
 diagonal congruence on every shore Hessian and only by a common projective
 scalar on the full root tensor.  For the fixed legal sensor, two coprime

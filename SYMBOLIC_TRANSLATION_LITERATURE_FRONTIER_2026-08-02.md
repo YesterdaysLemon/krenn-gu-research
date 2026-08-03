@@ -3056,6 +3056,46 @@ ambient theory, while (39), (41), and (42) are the new P7 identities.  See
 Both the rank-20 structured-syzygy torus and the rank-at-most-19 physical
 extension torus remain unknown.
 
+## 3 August projected-Veronese ramification transfer
+
+The leaf multiplication rank is also the ramification rank of a classical
+projective construction.  With `V=A_2(L)` and `W=A_4(L)`, Boolean
+multiplication is a surjection
+
+```text
+m:Sym^2(V)->W,          dimensions 231 -> 35,         (43)
+```
+
+with 196-dimensional kernel.  Hence `F -> F^2/2` is the projection of the
+quadratic Veronese `nu_2(P^20)` from the center `P(ker m)=P^195`.  Its
+differential and projection-center tangent intersection are
+
+```text
+d(H_4)_F(K)=FK,
+P(ker m) intersect T_(nu_2([F]))nu_2(P(V))
+  =P(F symmetric Ann_2(F)).                          (44)
+```
+
+The physical annihilator `K=2ell A+tF` is therefore exactly a structured
+tangent direction killed by the projection.  Every radial P7 extension is
+forced into the ramification locus:
+
+```text
+rank d(H_4)_F<=20.                                   (45)
+```
+
+This yields a rigorous strategy no-go.  The generic full-Jacobian
+four-hafnian tomography chart cannot locally invert the physical primitive
+radial branch, because that branch is disjoint from the chart.  At rank 20
+the center meets the Veronese tangent in one point; at rank at most 19 the
+intersection is positive-dimensional.  Oeding--Raicu supply the surrounding
+tangential Segre--Veronese geometry, while the Boolean projection and the
+structured P7 tangent incidence are the new transfer.  See
+`SEVEN_LEAF_HAFNIAN_PROJECTED_VERONESE_RAMIFICATION_AND_STRUCTURED_TANGENT_THEOREM.md`.
+
+The structured ramification incidence may still meet the edge torus; the
+translation rules out generic inversion, not the physical branch.
+
 ## Ranked proof program
 
 0. **Resolve the legal pullback of target incidence.**  The ambient equation
@@ -3179,6 +3219,12 @@ quotient singularity on physical lift: STRUCTURED CUBIC SYZYGY;
 quotient rank versus leaf rank:      rank(D|P)<=rank(mu_2(F));
 physical leaf rank<=19 implies quotient singular: PROVED;
 quotient rank<=18 structured syzygies: AT LEAST TWO;
+leaf four-hafnian map:                PROJECTED VERONESE;
+Boolean multiplication projection center: P^195;
+leaf four-hafnian ramification kernel: Ann_2(F);
+physical radial branch on full-Jacobian open: IMPOSSIBLE;
+physical rank-20 tangent-center point: UNIQUE PROJECTIVELY;
+physical rank<=19 tangent-center intersection: POSITIVE-DIMENSIONAL;
 seven-leaf switched-circulant primitive square: IMPOSSIBLE;
 arbitrary nonzero vertex switching in that family: INCLUDED;
 general seven-leaf primitive square: UNKNOWN;
