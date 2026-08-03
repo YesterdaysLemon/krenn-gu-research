@@ -108,6 +108,19 @@ route requires a target-compatible mixed-label sensor rather than another
 null-polar fan.  See
 [`LEGAL_FIVE_PORT_PENTAD_WINDOW_ROOT_BUDGET_AND_NULL_POLAR_SPARSITY_THEOREM.md`](LEGAL_FIVE_PORT_PENTAD_WINDOW_ROOT_BUDGET_AND_NULL_POLAR_SPARSITY_THEOREM.md).
 
+The surviving target-compatible route is now exact on the full-sensor
+simple-incidence stratum.  Injectivity of the 219-label sensor supplies a
+linear selector for every named residual-pair coordinate, so all 21
+five-blocker pentads form one `S_7`-equivariant degree-five covariant.  Any
+nonzero component excludes the entire nonzero target line from `h=0`.
+Target incidence alone does not force the obstruction: an exact ambient
+simple-incidence control has pentad `-6`.  On the pinned open, `h=0` is one
+degree-eight numerator and the complete 21-coordinate pair sector is
+equivalent to degree-17 rank-one alignment with the two reconstructed
+stars, including the zero cases.  The legal GHZ fibre meeting this
+full-sensor incidence stratum remains unknown.  See
+[`P7_TARGET_LINE_H0_PAIR_PROJECTION_PENTAD_AND_STAR_ALIGNMENT_THEOREM.md`](P7_TARGET_LINE_H0_PAIR_PROJECTION_PENTAD_AND_STAR_ALIGNMENT_THEOREM.md).
+
 The primitive `P_7` branch has two new complementary reductions.  The 35
 remaining leaf quadrics are equivalent to one projective collinearity
 `u wedge v=0`; when it holds, the nonzero affine scale is unique.  On the

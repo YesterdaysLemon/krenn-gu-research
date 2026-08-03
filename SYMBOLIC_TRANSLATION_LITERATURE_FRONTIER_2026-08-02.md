@@ -2959,6 +2959,51 @@ This closes only a structured infinite family inside `ell_L F^2=0`.
 Arbitrary asymmetric seven-leaf primitive squares and the additional radial
 and apolar-annihilator equations remain open.
 
+## 3 August target-line pentad and pinned-star transfer
+
+The five-port factor-analysis circuit is now coefficient-level legal on the
+full-sensor simple-incidence stratum.  If the legal 219-label companion map
+is injective and its diagonal-target intersection is one projective line
+`[w]`, a linear left inverse selects each of the 21 named coordinates
+
+```text
+y_ij=w_{ {0,1,i,j} }.                                (36)
+```
+
+Every five-blocker restriction is therefore an actual linear coefficient
+window, rather than a hoped-for null-polar selector.  On the residual-edge
+branch `h=a_01=0`, the pair array has hyperbolic Gram form
+`a_0i a_1j+a_0j a_1i`; its 21 five-port pentads assemble into one
+`S_7`-equivariant exterior covariant in `wedge^5 K^7`.  A single nonzero
+component excludes the entire nonzero target line from `h=0`.  A fixed
+ambient simple-incidence map with pentad `-6` proves that Schubert incidence
+alone does not force this physical circuit.
+
+On the pinned open, the residual edge is exactly
+
+```text
+h=(u_0)_1/d_0,                                      (37)
+```
+
+so `h=0` is a homogeneous degree-eight numerator.  After that gate, all 21
+absolute residual-pair four-deck equations are equivalent to
+
+```text
+tau y_ij=(u_0)_i(u_1)_j+(u_0)_j(u_1)_i.             (38)
+```
+
+The cleared `2 x 2` minors have degree 17 and are necessary and sufficient
+for this complete pair sector, with both-zero and one-zero cases retained.
+This translates the same target line successively through Schubert
+incidence, algebraic factor-analysis circuits, and rank-one Segre geometry.
+Drton--Sturmfels--Sullivant supply the factor-analysis/pentad vocabulary;
+the named P7 projection and its pinned-star alignment are new.  See
+`P7_TARGET_LINE_H0_PAIR_PROJECTION_PENTAD_AND_STAR_ALIGNMENT_THEOREM.md`.
+
+The existence of a legal full-rank GHZ point on the simple-incidence pinned
+open is still unknown, as are the other 105 four-deck coordinates and the
+higher decks.
+
 ## Ranked proof program
 
 0. **Resolve the legal pullback of target incidence.**  The ambient equation
@@ -3214,7 +3259,13 @@ q2 direct pair root depth:          TWO BEYOND BUDGET;
 residual-null polar active pairs:   AT MOST THREE;
 null-polar five-port pentad:        TERMWISE ZERO;
 pair-dependent null fans evade bound: FALSE;
-target-compatible mixed-label pentad sensor: UNKNOWN;
+full-sensor named pair projection:  EXACT ON SIMPLE INCIDENCE LINE;
+target-line h=0 pentad covariant:    DEGREE 5, S7-EQUIVARIANT;
+nonzero target-line pentad:          EXCLUDES ENTIRE h=0 LINE;
+pinned target-line h=0 gate:         EXACT DEGREE 8;
+pinned 21-pair star alignment:       IFF, DEGREE 17;
+target incidence alone forces pentad: FALSE, CONTROL=-6;
+legal GHZ point on that pinned stratum: UNKNOWN;
 P5/P6 support 18/21:              UNCONDITIONAL AFTER KNOWN EXTRACTION;
 P7 support 24 transfer:           CONDITIONAL ON LEGAL SYNCHRONIZATION;
 minimal tangent-companion cycle:  EXCLUDED BY FULL-ROOT COFACTOR COLLISION;
