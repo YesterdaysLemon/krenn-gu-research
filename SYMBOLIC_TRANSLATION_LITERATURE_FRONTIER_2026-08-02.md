@@ -124,6 +124,123 @@ eligibility of both theta-completing chords is impossible for `m>=4` in the
 tight aligned conformal completed-theta setup.  See
 `ARBITRARY_PERMANENT_THREE_EXCESS_APOLAR_BOUNDARY_QUOTIENT_THEOREM.md`.
 
+The one-chord diagonal-`1+1+1` profile is now closed as well.  With four
+outgoing core cells, a colour-by-colour cut transport law confines every
+rank-one quotient chart; the only target-like chart deletes an aligned theta
+edge.  With three outgoing cells, all boundary quotients are lines, the port
+tensor retains flattening rank two, and the unique exterior surplus mode
+still permits a nonzero empty-sector selector.  See
+`ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_CUT_COLOR_EXCLUSION_THEOREM.md`.
+
+The `2+1+0` profile marks a sharp method boundary.  An exact 21-cell model
+has one complete zero mixed coefficient, local rank, pure backbones,
+matching-coveredness, and conformality, but its apolar survival profile is
+`(3,2,0)`: one outgoing boundary span fills the whole port space.  The
+ordinary product quotient annihilates the core and the diagonal target
+simultaneously.  Its backbone-alignment defect is one, so it does not meet
+the global alignment hypothesis.  See
+`ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_APOLAR_SATURATION_BOUNDARY.md`.
+
+## 0. Derived flattenings and boundary-measurement theories
+
+### Koszul and Young flattenings
+
+Ordinary tensor flattening forgets a saturated factor.  Koszul/Young
+flattenings replace one contraction by maps involving exterior powers and
+then take determinantal rank conditions.  Landsberg and Ottaviani introduced
+the vector-bundle/Young-flattening method for equations of secant varieties:
+
+- J. M. Landsberg and Giorgio Ottaviani,
+  *Equations for secant varieties via vector bundles*,
+  [arXiv:1010.1825](https://arxiv.org/abs/1010.1825).
+
+The method has now been applied recursively to determinant and permanent
+tensors themselves:
+
+- Jong In Han, Jeong-Hoon Ju, and Yeongrak Kim,
+  *Recursive Koszul flattenings of determinant and permanent tensors*,
+  [arXiv:2503.12032](https://arxiv.org/abs/2503.12032).
+
+A still broader recent construction uses Kronecker--Koszul and tangency
+flattenings to obtain new determinantal equations for tensor secant
+varieties:
+
+- Matej Dolezalek and Mateusz Michalek,
+  *Nonlinear methods for tensors: determinantal equations for secant
+  varieties beyond cactus*,
+  [arXiv:2602.12762](https://arxiv.org/abs/2602.12762).
+
+These papers validate one piece of the proposed derived apolar boundary
+signature: exterior-power data can support nontrivial rank tests after a
+plain matrix flattening or quotient has lost information.  In the saturated
+one-chord model, `B_2=V_2`, so `V_2/B_2=0` while
+`Lambda^3(B_2)` is one-dimensional and nonzero.
+
+The transfer stops there.  Published Koszul flattenings act on a fixed tensor
+and detect secant/tensor-rank geometry.  The present problem needs an
+operator on a matching boundary convolution which simultaneously:
+
+1. kills or grades every nonempty boundary sector;
+2. leaves a computable nonzero class of the empty core;
+3. commutes with the exact `P_m -> Delta_3` restriction; and
+4. gives a rank/direction mismatch on the diagonal target.
+
+No cited construction supplies that matching-compatible differential.  The
+graded carrier in the apolar-saturation note is therefore a rigorous vector
+space proposal, not an imported theorem or a proved obstruction.
+
+### Grassmannian boundary measurements and dimer boundary states
+
+Postnikov's boundary-measurement map packages weighted directed paths in a
+planar network into Grassmannian coordinates and organizes their gauge and
+cell structure:
+
+- Alexander Postnikov,
+  *Total positivity, Grassmannians, and networks*,
+  [arXiv:math/0609764](https://arxiv.org/abs/math/0609764).
+
+Planar dimer theory similarly packages boundary monomer sectors into one
+Pfaffian partition function.  A representative exact theorem is:
+
+- Alessandro Giuliani, Ian Jauslin, and Elliott H. Lieb,
+  *A Pfaffian formula for monomer-dimer partition functions*,
+  [arXiv:1510.05027](https://arxiv.org/abs/1510.05027).
+
+These theories suggest a second construction target: replace the
+termwise-killing quotient by a boundary response tensor whose coordinates
+are the balanced `A--Q/R--P` matching sectors, and seek relations among its
+minors or Pluecker coordinates.  Such an object would retain the saturated
+top boundary sector rather than map it to zero.
+
+Again the hypotheses do not transfer automatically.  Postnikov's map is a
+planar directed-network/Grassmannian construction.  The boundary-monomer
+formula is planar and Pfaffian.  The present support may contain a conformal
+`K_3,3`, and the bosonic permanent has the explicit factor-two Pluecker
+defect recorded in the bosonic-defect theorem.  Therefore planarity,
+Pfaffian eligibility, or a valid Kasteleyn signing must first be proved on
+the relevant boundary response graph.  Without that bridge, Grassmannian
+or fermionic identities are conditional tools, not equations of the
+original permanent tensor.
+
+### Resulting exact research fork
+
+The saturated `2+1+0` branch is now split into two non-equivalent proof
+obligations:
+
+```text
+alignment route:
+    force a colour-labelled theta matching into one selected pure-backbone
+    union, strengthening setwise defect delta_H=0 to common-word alignment;
+
+derived-boundary route:
+    construct a matching-compatible exterior/Koszul differential or a
+    boundary response tensor, then prove a target-rank identity without
+    assuming planarity or Pfaffianity.
+```
+
+The 21-cell saturation model blocks any proof using only the ungraded apolar
+quotient and the structural ledgers.  It does not block either route above.
+
 ## 1. Gain graphs and a new multi-backbone gluing diagram
 
 ### Existing theory
