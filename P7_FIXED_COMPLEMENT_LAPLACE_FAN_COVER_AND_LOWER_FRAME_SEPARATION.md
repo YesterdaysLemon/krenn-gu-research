@@ -1,8 +1,8 @@
-# Fixed-complement Laplace forces the P7 fan, but not its selectors
+# Fixed-complement Laplace forces the P7 fan and separates its lower frames
 
 ## Status
 
-**Exact characteristic-zero graph-side forcing theorem and exact selector
+**Exact characteristic-zero graph-side forcing theorem and exact lower-frame
 separation countermodel.**  The marked permanental Laplace argument is
 stronger than the previously used averaged identity.  In one nonzero pure
 `5 x 5` chart, fix any two of the four unmarked columns.  Ordinary Laplace
@@ -27,10 +27,15 @@ so (2) is compatible at the level of physical port directions.
 
 This does **not** make the four marked-star sensors legal.  A fixed rational
 common root--blocker system attains the full graph-side window cover while
-every nonzero marked shore occurs at a root pair of exact lower-frame rank
-one.  The only rank-two root pairs have zero shore product on every fixed
-window.  Thus the present hypotheses force the fan geometry but do not force
-the companion selectors needed to turn it into a response sensor.
+every nonzero marked shore occurs at a root pair of GHZ/cofactor-image rank
+one.  The two rank-two cofactor-image pairs have zero shore product on every
+fixed window.  Thus the present hypotheses force the fan geometry but do not
+force co-occurrence with the already known rank-two lower frames.
+
+The cofactor-image rank `rho(I)` is not the rank of the two distinguished
+empty/residual companion forms.  Those forms can be independent even when
+`rho(I)=1`.  The countermodel below therefore does **not** prove that a legal
+top selector fails; that selector question remains open.
 
 No graph, support, alignment, matching family, or colour-word enumeration is
 used.  The countermodel is a single displayed common bilinear system.  It is
@@ -181,7 +186,7 @@ a different complementary root pair `I`; its two required companion classes
 must still be separated, and the four marked-star lower values must still be
 exposed with the normalized shore factor.
 
-## 4. Sharp selector separation
+## 4. Sharp lower-frame separation
 
 The missing implication cannot be recovered from the pure permanent,
 canonical profile, and current lower-frame rank data alone.
@@ -269,10 +274,10 @@ B_(i,b)=alpha_i tensor r_(i,b)                        (22)
 
 evaluate to (19), while their tangent hyperplanes have the axis pattern
 (17).  Thus the pure matrices, all eighteen clean colour-tagged windows,
-their common null directions, and the selector failure belong to one common
-root--blocker system.
+their common null directions, and the lower-frame separation belong to one
+common root--blocker system.
 
-### Theorem 3 (maximal window cover with zero rank-two co-occurrence)
+### Theorem 3 (maximal window cover with zero rank-two-frame co-occurrence)
 
 There is a rational canonical common root--blocker system such that:
 
@@ -285,15 +290,17 @@ There is a rational canonical common root--blocker system such that:
 Proof.  Assertions 1 and 3 follow from (19)--(22).  Theorem 2 gives assertion
 2.  Equations (18), (20), and the fixed witnesses prove assertions 4--5.
 
-Rank one cannot separate the two companion classes required by the current
-clean top-window extraction.  Hence complete graph-side window coverage does
-not imply even one rank-two response window under the present hypotheses,
-and in particular does not imply four compatible marked-star response
-sensors.
+Here `rho(I)` is the rank of the GHZ/cofactor image used by the lower-frame
+classification.  It is not the observation rank of the distinguished
+companion columns `g_empty,g_Q`.  Hence complete graph-side window coverage
+does not imply co-occurrence with one of the currently certified `rho>=2`
+lower frames.  It remains possible that the two distinguished columns are
+independent at one of the displayed `rho=1` shores; no claim about their
+dependence is made.
 
 This is sharp at the level under discussion: eighteen is the entire
 colour-tagged graph-side window family, while zero is the minimum possible
-number of rank-two-coincident windows.
+number of `rho>=2`-coincident windows.
 
 ## 5. Revised legality boundary
 
@@ -305,8 +312,10 @@ fixed-complement pure Laplace
     => graph-side tetrahedral fan on common port directions;
 
 current pure/canonical/lower-frame hypotheses
-    !=> a nonzero shore at a rank-two companion pair
-    !=> legal marked-star fan.                        (23)
+    !=> a nonzero shore at a rho>=2 lower frame;
+
+distinguished empty/residual companion rank at rho=1
+    remains undecided.                                (23)
 ```
 
 The next theorem must therefore couple a fixed retained pair `S` to more
@@ -314,8 +323,8 @@ than the pure Laplace expansion.  Sufficient possibilities include:
 
 1. a weighted identity forcing `L_S(I)!=0` for some `rho(I)>=2` **for that
    fixed `S`**, not merely after summing over windows;
-2. a non-star companion row that separates the required deletion classes at
-   a rank-one shore;
+2. a theorem that separates the distinguished deletion classes at one of the
+   existing `rho=1` shores, or a non-star companion row that does so;
 3. a mixed-colour equation that couples the different root pairs selected by
    the four graph-side fan windows; or
 4. a direct marked-star extraction whose observation matrix bypasses the
@@ -332,7 +341,8 @@ six graph-side windows in each pure colour:        PROVED;
 all eighteen colour-tagged graph-side windows:     PROVED;
 tetrahedral fan occurrence:                        PROVED GRAPH-SIDE;
 one common null direction per double blocker:      PROVED;
-rank-two shore co-occurrence from current data:    IMPOSSIBLE TO FORCE;
+rho>=2 shore co-occurrence from current data:      IMPOSSIBLE TO FORCE;
+distinguished companion rank at rho=1 shores:      UNKNOWN;
 legal top selectors on the fan:                    UNKNOWN;
 legal marked-star rows on the fan:                 UNKNOWN;
 empty-face observability:                          UNKNOWN;
@@ -344,10 +354,10 @@ global Krenn--Gu conjecture:                        UNRESOLVED.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_fixed_complement_laplace_fan_cover_and_selector_separation.py
-python audit_p7_fixed_complement_laplace_fan_cover_and_selector_separation.py
-python -m py_compile verify_p7_fixed_complement_laplace_fan_cover_and_selector_separation.py audit_p7_fixed_complement_laplace_fan_cover_and_selector_separation.py
-uv run --with ruff ruff check verify_p7_fixed_complement_laplace_fan_cover_and_selector_separation.py audit_p7_fixed_complement_laplace_fan_cover_and_selector_separation.py
+uv run --with sympy python verify_p7_fixed_complement_laplace_fan_cover_and_lower_frame_separation.py
+python audit_p7_fixed_complement_laplace_fan_cover_and_lower_frame_separation.py
+python -m py_compile verify_p7_fixed_complement_laplace_fan_cover_and_lower_frame_separation.py audit_p7_fixed_complement_laplace_fan_cover_and_lower_frame_separation.py
+uv run --with ruff ruff check verify_p7_fixed_complement_laplace_fan_cover_and_lower_frame_separation.py audit_p7_fixed_complement_laplace_fan_cover_and_lower_frame_separation.py
 ```
 
 The primary verifier proves the six generic polynomial identities, checks the

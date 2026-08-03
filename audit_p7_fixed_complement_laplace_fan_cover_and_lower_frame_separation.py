@@ -211,7 +211,8 @@ def main() -> None:
     print("PASS: independent factorial-partition audit of fixed-complement Laplace")
     print("PASS: independent integer audit of all six fixed windows per chart")
     print("PASS: independent common-system rank and null-direction audit")
-    print("PASS: independent zero rank-two shore-cooccurrence audit")
+    print("PASS: independent zero rho>=2 shore-cooccurrence audit")
+    print("SCOPE: distinguished companion rank remains UNKNOWN")
     print("SCOPE: legal marked-star fan and global Krenn-Gu remain UNRESOLVED")
 
 

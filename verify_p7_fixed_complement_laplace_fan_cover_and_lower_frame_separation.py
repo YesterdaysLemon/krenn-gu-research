@@ -1,4 +1,4 @@
-"""Verify the P7 fixed-complement fan cover and selector separation."""
+"""Verify the P7 fixed-complement fan cover and lower-frame separation."""
 
 from __future__ import annotations
 
@@ -211,7 +211,8 @@ def main() -> None:
     print("PASS: six generic fixed-complement Laplace identities")
     print("PASS: all 18 colour-tagged graph-side windows and forced tetrahedral fan")
     print("PASS: common canonical system and global double-blocker null directions")
-    print("PASS: zero rank-two shore co-occurrence in the exact rational model")
+    print("PASS: zero rho>=2 shore co-occurrence in the exact rational model")
+    print("SCOPE: distinguished companion rank remains UNKNOWN")
     print("SCOPE: legal marked-star fan and global Krenn-Gu remain UNRESOLVED")
 
 
