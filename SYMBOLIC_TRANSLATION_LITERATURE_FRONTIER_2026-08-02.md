@@ -1240,6 +1240,17 @@ formal cofactor ledger.  Realizing that ledger as simultaneous principal
 hafnians remains the exact gap.  See
 `P7_TWO_ENDPOINT_AXIS_MULTIPLICITY_REDUCTION_AND_221_COMMON_JET_MODEL.md`.
 
+That gap is absent in each scalar colour chart separately.  Two rational
+coordinate-copy graphs realize the complete colour-0 and colour-1 ledger,
+and an exact forced-private construction over `Q(sqrt(21))` realizes the
+colour-2 ledger, including its signed pair values and `1/7` quartet.  Hence no
+monochromatic principal-hafnian identity can exclude `2+2+1`.  The displayed
+certificates have incompatible terminal--terminal blocks, and none addresses
+mixed blocker-colour words.  Common-terminal synchronization and mixed-word
+cancellation are therefore the exact remaining graph-realizability layer.
+See
+`P7_221_FORMAL_LEDGER_SCALAR_HAFNIAN_REALIZABILITY_AND_SYNCHRONIZATION_GAP.md`.
+
 The mixed-word selector itself is no longer missing in the factorized `h=0`
 branch.  For a selected pair `{u,v}`, choose a common residual-null vector at
 each of the other five blockers and contract those five legs in the full
@@ -1336,6 +1347,8 @@ new projection no-go:             all six top windows have dense visible image;
 new mixed-colour circuit:          det(corrected 3x3 pair block)=0;
 new axis topology boundary:        jet frames and matching shores still viable;
 new strict axis reduction:         only 2+2+1 survives two-endpoint model;
+new scalar ledger result:          all three 2+2+1 charts are hafnian-realizable;
+new synchronization gap:           common terminal block and mixed words remain;
 new h=0 polar selector:            five null legs isolate one mixed pair block;
 new arbitrary-order boundary:      at least three coordinate-incidence modes;
 new incidence sharpness:           canonical profile does not balance the three;

@@ -1134,6 +1134,16 @@ root equation for `2+2+1` against a globally consistent formal cofactor
 ledger.  Simultaneous principal-hafnian realization of that ledger is still
 open:
 [`P7_TWO_ENDPOINT_AXIS_MULTIPLICITY_REDUCTION_AND_221_COMMON_JET_MODEL.md`](P7_TWO_ENDPOINT_AXIS_MULTIPLICITY_REDUCTION_AND_221_COMMON_JET_MODEL.md).
+The formal `2+2+1` ledger has now passed the strongest scalar
+principal-hafnian test.  Explicit seven-core/seven-terminal graphs realize
+every prescribed cofactor separately in all three monochromatic charts; the
+hard colour-2 chart is exact over `Q(sqrt(21))`.  Thus scalar hafnian
+condensation or inverse-minor algebra cannot exclude the ledger.  The three
+certificates do not glue: the rational colour-0/1 charts use zero
+terminal--terminal block, while the displayed colour-2 chart uses a nonzero
+one.  A common terminal block and cancellation of mixed blocker-colour words
+are now the precise unresolved synchronization problems:
+[`P7_221_FORMAL_LEDGER_SCALAR_HAFNIAN_REALIZABILITY_AND_SYNCHRONIZATION_GAP.md`](P7_221_FORMAL_LEDGER_SCALAR_HAFNIAN_REALIZABILITY_AND_SYNCHRONIZATION_GAP.md).
 Second, the aggregated-selector alternative is now exact in the factorized
 `h=0` branch.  Contracting any five blocker legs in their two residual-row
 common null spaces kills the twenty competing surplus-two Laplace terms

@@ -15,6 +15,12 @@ complementary blocker tensors are one globally nonconflicting **formal
 principal-cofactor ledger**.  They are not yet proved to be the simultaneous
 principal hafnians of one blocker/residual graph.
 
+The later
+[`P7_221_FORMAL_LEDGER_SCALAR_HAFNIAN_REALIZABILITY_AND_SYNCHRONIZATION_GAP.md`](P7_221_FORMAL_LEDGER_SCALAR_HAFNIAN_REALIZABILITY_AND_SYNCHRONIZATION_GAP.md)
+realizes every prescribed cofactor exactly in each monochromatic scalar chart.
+Those three chart graphs use different terminal--terminal blocks, so one
+common physical graph and mixed-colour cancellation remain open.
+
 Accordingly this is a genuine common-block strengthening of the earlier
 subset-dependent formal state model, but it is not a global `P_7` exclusion
 or construction.  Frozen-root one-tangent channels, nonprojective
