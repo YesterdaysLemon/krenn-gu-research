@@ -329,6 +329,18 @@ See
 and
 [`ARBITRARY_PERMANENT_THREE_EXCESS_INELIGIBLE_NINTH_CELL_EXCLUSION_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_INELIGIBLE_NINTH_CELL_EXCLUSION_THEOREM.md).
 
+The bare theta has a different boundary.  Exact `1+1+1` and `2+1+0`
+one-open-port charts show that boundary-sector killing, deletion of
+word-ineligible chord directions, and ordinary flattenings can leave
+exactly a nonzero monochromatic target slice.  The local defect-free theta
+still supplies a new route: its signless permanental cofactor equation and
+the alternating Segre minor clash by a factor of two.  Making that clash
+global requires a marked pair-deletion response jet and one exterior toric
+cross-ratio; the present product quotient kills precisely those marked
+sectors.  This is a rigorous method boundary and a conditional new target,
+not a bare-theta exclusion.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_BARE_THETA_ABSORPTION_AND_COFACTOR_RESPONSE_BOUNDARY.md`](ARBITRARY_PERMANENT_THREE_EXCESS_BARE_THETA_ABSORPTION_AND_COFACTOR_RESPONSE_BOUNDARY.md).
+
 The strict support theorem also transfers back to the graph whenever one of
 the root--blocker extraction lemmas applies.  Five roots with five tight
 blockers require at least 18 active contracted root--blocker covectors.  More

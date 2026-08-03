@@ -961,6 +961,42 @@ Priority: classify and attack the bare aligned theta, which is now the
 remaining aligned `2+1+0`-adjacent physical port rather than a one-chord
 case.
 
+## 12. Bare-theta absorption and marked pair-deletion response
+
+The bare theta exposes the limit of the colour-sliced Segre method.  Exact
+`1+1+1` and `2+1+0` charts satisfy the local physical surplus ledger, local rank,
+cut-colour transport, and the aligned `1+1-2=0` theta equation, yet their
+strongest legal quotient is a nonzero monochromatic `Delta_3` slice.  Two
+quotient ports share the target colour; the open port absorbs the theta
+relation and returns its transverse target direction.  This one-open-port
+absorption persists at the local port/cut-ledger level if differently
+coloured chord directions are added to the killed span and a corresponding
+colour-preserving exterior reroute is available.  No such exterior graph is
+constructed.  See
+`ARBITRARY_PERMANENT_THREE_EXCESS_BARE_THETA_ABSORPTION_AND_COFACTOR_RESPONSE_BOUNDARY.md`.
+
+The useful new object is instead the marked pair-deletion response matrix
+
+```text
+R_ij=Omega_ij Q_ij,
+```
+
+where `Q_ij` is a bare-theta permanental cofactor and `Omega_ij` is its
+exterior completion response.  On a cofacial theta block, Kuo's signless
+condensation gives a symmetric compound equation.  A rank-one target gives
+the same minor with the alternating sign.  If the exterior responses obey
+one toric cross-ratio, the two equations force `2R_11R_22=0`, contradicting
+nonvanishing in characteristic zero.  Kuo's planar identity is local and
+valid here; what remains unknown is the nonplanar exterior holonomy needed
+to transport it.  The current product quotient cannot help because it kills
+the marked pair-deletion sectors themselves.
+
+This translation separates the literature correctly: Kuo condensation is
+safe on the two local theta faces; matchgate, Postnikov, and electrical-grove
+response identities remain conditional on outer-face/disk terminalization.
+The invented target is a marked response functor retaining bidegree
+`(1,1)`, not another universal identity on the ambient response jet.
+
 ## Ranked proof program
 
 1. **Phase-decorated `B_3` exchange complex.**  Define the missing incidence
@@ -987,8 +1023,8 @@ new exact local invariant:        additive/toric B_3 phase variety;
 new boundary support theorem:     all sectors descend to L=B D^* C links;
 new weighted boundary object:     all-sector zeon jet J_W;
 new aligned-port theorem:         aligned one-chord 2+1+0 fully excluded;
-highest-priority invented object: coloured/aligned response-image ideal;
-highest-priority literature tool: colour-sliced Segre flattening;
+highest-priority invented object: marked pair-deletion response jet;
+highest-priority literature tool: signless Kuo vs Segre compound;
 full proof or counterexample:      NOT YET;
 global Krenn--Gu conjecture:       UNRESOLVED.
 ```
