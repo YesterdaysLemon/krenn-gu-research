@@ -3096,6 +3096,60 @@ structured P7 tangent incidence are the new transfer.  See
 The structured ramification incidence may still meet the edge torus; the
 translation rules out generic inversion, not the physical branch.
 
+## 3 August weighted legal-companion pullback ideal
+
+The target-line pair tests now pull all the way back to the legal companion
+parameter ring without a free cofactor vector.  If
+
+```text
+B(z)=pi_Delta Gamma(z):K^219->K^240,                 (46)
+```
+
+then variable diagonal incidence is the maximal-minor ideal `I_219(B)`.
+On a full-sensor rank-218 quotient chart, the signed `218 x 218` maximal
+minors of a selected `218 x 219` row submatrix form the unique kernel vector
+`q(z)`.  Substitution gives legal-parameter covariants of relative line
+weights 5, 8, and 17 for the pentad, `h=0` gate, and star alignment.
+
+The eliminated minors are shadows of one stronger weighted ideal.  Give an
+invertible amplitude `tau` relative weight 15 and localize at the sensor,
+line, and two pinned determinants.  Then
+
+```text
+J_pair=<eta(q),
+        tau q_{01ij}-khat_ij(q):2<=i<j<=8>.          (47)
+```
+
+This Laurent ideal is necessary and sufficient for the complete 21-entry
+`h=0` residual-pair four-deck sector.  Under a chart change `q'=s q`, it
+glues by
+
+```text
+tau'=s^15 tau.                                       (48)
+```
+
+All five-port pentads and degree-17 alignment minors belong to `J_pair`.
+The Laurent amplitude is essential: ordinary rank-one minors would retain
+the forbidden case `q_pair!=0`, `khat=0`, `tau=0`.
+
+There is also a sharp non-forcing boundary.  Exact ambient simple-incidence
+decks give
+
+```text
+d_0=d_1=32805,   eta=0,   pentad=-6,
+one alignment minor=-2152336050.                     (49)
+```
+
+Thus even pinned-open gated Schubert incidence does not force the physical
+pair ideal.  The remaining question is genuinely in the legal symmetric
+companion image: whether the localized ideal (47) is the unit ideal there.
+See
+`LEGAL_COMPANION_SIMPLE_INCIDENCE_WEIGHTED_PULLBACK_IDEAL_AND_NONFORCING_THEOREM.md`.
+
+This is an exact determinant/exterior-power and weighted-line-bundle
+translation, not an expansion or enumeration of the enormous maximal-minor
+ideal.
+
 ## Ranked proof program
 
 0. **Resolve the legal pullback of target incidence.**  The ambient equation
@@ -3372,6 +3426,12 @@ pinned target-line h=0 gate:         EXACT DEGREE 8;
 pinned 21-pair star alignment:       IFF, DEGREE 17;
 target incidence alone forces pentad: FALSE, CONTROL=-6;
 legal GHZ point on that pinned stratum: UNKNOWN;
+legal companion incidence ideal:     I_219(pi_Delta Gamma);
+simple-incidence line covariant:      SIGNED 218-MINORS;
+weighted legal pair amplitude:        RELATIVE WEIGHT 15;
+localized legal h=0 pair ideal:       EXACT IFF CRITERION;
+ambient gated incidence forces pair ideal: FALSE;
+legal localized pair ideal is unit:   UNKNOWN;
 P5/P6 support 18/21:              UNCONDITIONAL AFTER KNOWN EXTRACTION;
 P7 support 24 transfer:           CONDITIONAL ON LEGAL SYNCHRONIZATION;
 minimal tangent-companion cycle:  EXCLUDED BY FULL-ROOT COFACTOR COLLISION;

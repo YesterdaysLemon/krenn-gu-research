@@ -121,6 +121,21 @@ stars, including the zero cases.  The legal GHZ fibre meeting this
 full-sensor incidence stratum remains unknown.  See
 [`P7_TARGET_LINE_H0_PAIR_PROJECTION_PENTAD_AND_STAR_ALIGNMENT_THEOREM.md`](P7_TARGET_LINE_H0_PAIR_PROJECTION_PENTAD_AND_STAR_ALIGNMENT_THEOREM.md).
 
+Those target-line tests now pull back without introducing a free
+219-vector.  For the legal polynomial companion map, the variable diagonal
+incidence ideal is the maximal-minor ideal `I_219(pi_Delta Gamma)`.  On a
+simple-incidence chart, signed `218 x 218` minors give the unique line vector
+`q(z)`, so the degree-5 pentad, degree-8 gate, and degree-17 alignment become
+polynomial covariants in the legal graph parameters.  More precisely, an
+invertible amplitude of relative weight 15 gives one Laurent ideal
+`<eta(q), tau q_01ij-khat_ij(q)>` which is necessary and sufficient for the
+complete 21-entry `h=0` pair sector and glues across minor charts.  Exact
+ambient controls with `d_0=d_1=32805`, pentad `-6`, and alignment
+`-2152336050` prove that even gated simple incidence does not force this
+ideal; whether its legal localization is the unit ideal remains unknown.
+See
+[`LEGAL_COMPANION_SIMPLE_INCIDENCE_WEIGHTED_PULLBACK_IDEAL_AND_NONFORCING_THEOREM.md`](LEGAL_COMPANION_SIMPLE_INCIDENCE_WEIGHTED_PULLBACK_IDEAL_AND_NONFORCING_THEOREM.md).
+
 The primitive `P_7` branch has two new complementary reductions.  The 35
 remaining leaf quadrics are equivalent to one projective collinearity
 `u wedge v=0`; when it holds, the nonzero affine scale is unique.  On the
