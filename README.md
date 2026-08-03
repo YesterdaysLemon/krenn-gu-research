@@ -652,6 +652,40 @@ certificate, while ten escapes split between eight `C_0220212` and two
 `C_0210220` exact divisibilities.  This is not the complete 4,598,126-support
 quadruple shell, which remains unknown:
 [`ROOT_M7_RELATIVE_TRIPLE_FOURTH_INCIDENCE_SHELL_EXCLUSION.md`](ROOT_M7_RELATIVE_TRIPLE_FOURTH_INCIDENCE_SHELL_EXCLUSION.md).
+No complete quadruple-shell enumeration is being pursued.  The frontier has
+instead been translated into four arbitrary-order symbolic conditions.  The
+complete coloured partial-hafnian family is an exponential quadratic in the
+vertex-exclusive square-zero algebra; equivalently its logarithm has only
+degree two, so every higher block cumulant vanishes.  On the synchronous
+ternary slice, a witness would pull the hafnian back to the Fermat form
+`t_0^n+t_1^n+t_2^n`; its three mixed Hessians give compact identities in the
+actual one- and two-edge-deletion hafnians:
+[`BLOCK_SQUARE_ZERO_WICK_COMPLETION_THEOREM.md`](BLOCK_SQUARE_ZERO_WICK_COMPLETION_THEOREM.md).
+For an arbitrary even residual set `Q`, every two-port tensor now has the
+exact common factorization
+`H_uv=haf(A)B_uv+R_u^T C(A)R_v`.  All corrected port pairs share the same
+hafnian-cofactor middle form, hence obey common Gram minors and anchored
+Schur/holonomy rank defects.  The accompanying localization theorem extends
+the torus-zero/coordinate-monomial dichotomy from two residual vertices to
+every even `Q`:
+[`RESIDUAL_HAFNIAN_COMMON_COFACTOR_GRAM_THEOREM.md`](RESIDUAL_HAFNIAN_COMMON_COFACTOR_GRAM_THEOREM.md).
+A separate majority-subset theorem says that, on `|S|=m+r` vertices of an
+order-`2m` witness, each contracted monochromatic pure tensor lies in the
+`r`th power of the internal-edge ideal.  At `r=1`, every entangled tensor
+killed by all internal pair contractions must kill all three diagonal pure
+tensors; this strictly extends decomposable multi-star tests:
+[`MAJORITY_SUBSET_INTERNAL_EDGE_IDEAL_HIERARCHY.md`](MAJORITY_SUBSET_INTERNAL_EDGE_IDEAL_HIERARCHY.md).
+Finally, a six-vertex `K_3,3` coefficient obstruction proves that no fixed
+edge signing or reweighting converts generic principal hafnians to a spinor/
+Pfaffian family, and an explicit cancellation example shows that nonzero
+principal-hafnian support need not be a delta-matroid.  Matchgate and spinor
+tools therefore require an additional specialization; the square-zero
+cumulants are the universal bosonic replacement:
+[`BOSONIC_HAFNIAN_SPINOR_NO_TRANSFER.md`](BOSONIC_HAFNIAN_SPINOR_NO_TRANSFER.md).
+These results do not close the enlarged Hall-satisfying `P_7` branch.  They
+replace support-shell growth by a precise next target: intersect the forced
+lower mixed-jet frames with the common Gram/Schur minors and one overlapping
+majority-set ideal or four-/six-point cumulant equation.
 Even scalar complementary-hafnian algebra supplies no hidden relation on
 the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
 Jacobian of the complete principal-cofactor map at a perfect-matching point

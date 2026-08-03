@@ -13784,3 +13784,73 @@ P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md
 verify_p4_support_one_211_triangle_reduction.py
 audit_p4_support_one_211_triangle_reduction.py
 ```
+
+### Symbolic local-to-global pivot: Wick completion, common residual Gram, and majority ideals
+
+The complete coloured partial-matching family has a single exact completion
+criterion.  In the vertex-exclusive algebra
+
+```text
+A=K[x_(i,c)]/<x_(i,c)x_(i,d)>,
+```
+
+it is `M=exp(Q_W)`.  Hence a proposed family comes from one common edge
+system iff `log M` has only degree two.  All four-, six-, and higher-point
+block cumulants vanish.  Synchronous contraction gives the necessary Fermat
+shadow
+
+```text
+haf([t^T W_ij t])=t_0^n+t_1^n+t_2^n,
+```
+
+whose three mixed Hessians are explicit sums of one- and two-edge deletion
+hafnians.
+
+For any even contracted residual set `Q`, put `A_pq=B_pq(z_p,z_q)`,
+`h=haf(A)`, `C_pq=haf(A[Q-{p,q}])`, and
+`(R_u x)_p=B_up(x,z_p)`.  Exact matching partition gives
+
+```text
+H_uv=hB_uv+R_u^T C R_v.
+```
+
+Thus all corrected port blocks possess one common symmetric Gram completion
+of rank at most `rank C`.  Anchoring a nonsingular cross block gives the
+Schur defect
+
+```text
+S=G_UX-G_UA(G_DA)^(-1)G_DX,
+rank S<=rank(C)-3|A|.
+```
+
+This supplies small gauge-invariant minors and quadrilateral holonomy tests.
+Localization at all residual coordinate forms also proves the arbitrary-`Q`
+torus dichotomy: either a coordinate-nonzero residual choice has `h=0`, or
+the whole restricted residual hafnian is one coordinate monomial.
+
+A separate majority count gives a nested ideal hierarchy.  On `n=2m`
+vertices, if `|S|=m+r` and the complement is nonempty, every matching has
+`a=d+r>=r` internal `S` edges.  Therefore each GHZ pure tensor on `S` lies in
+the `r`th power of the internal-edge ideal.  For `r=1`, the full common
+kernel of the pair-contraction maps--including entangled tensors--must
+annihilate all three diagonal pure tensors.
+
+Finally, the generic hafnian family cannot be moved into the spinor family
+by fixed edge signs or phases: the `K_3,3` restriction would turn a permanent
+into a diagonally reweighted determinant, and three coefficient ratios give
+an immediate characteristic-not-two contradiction.  Nonzero complex
+principal-hafnian support also fails delta-matroid exchange by an explicit
+six-vertex cancellation example.  Spinor tools are therefore legal only
+after a proved support-specific specialization.
+
+The global conjecture and enlarged Hall-satisfying `P_7` branch remain
+`UNKNOWN`.  The next exact target is the intersection of forced lower
+mixed-jet frames with common Gram/Schur minors and one partition-closed
+four-/six-point cumulant or overlapping majority-set ideal condition.
+
+```text
+BLOCK_SQUARE_ZERO_WICK_COMPLETION_THEOREM.md
+RESIDUAL_HAFNIAN_COMMON_COFACTOR_GRAM_THEOREM.md
+MAJORITY_SUBSET_INTERNAL_EDGE_IDEAL_HIERARCHY.md
+BOSONIC_HAFNIAN_SPINOR_NO_TRANSFER.md
+```
