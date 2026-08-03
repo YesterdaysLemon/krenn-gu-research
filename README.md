@@ -153,6 +153,29 @@ permanent for each chord extension, or a global argument excluding these
 fixed-port bypass rectangles.  See
 [`ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md).
 
+Minimality supplies a second translation of the `3m+3` boundary.  Its
+physical support graph is matching-covered: an edge in no perfect matching
+could be deleted, contradicting the strict bound, while a disconnected
+support would factor and have flattening rank one instead of the target rank
+three.  A published three-edge theorem and bipartiteness therefore put the
+three excess cells in a conformal even circuit or an even subdivision of the
+three-edge theta graph.  These arbitrary-length cores have exactly two or
+three internal perfect matchings.  On the coefficient side, the normalized
+transposition gains `a,b,c` and three-cycle gains `u,v` obey
+
+```text
+1+a+b+c+u+v=0,       uv=abc.
+```
+
+The second equation is the unique cubic toric circuit of the Birkhoff
+polytope `B_3`.  All three complementary port minors can still vanish on one
+consistent complex point, so no single coefficient can exclude
+the fixed-port bypass.  The proposed new global object is a phase-decorated
+`B_3` exchange complex gluing these equations across the at-most-eight pure
+backbones.  Its still-missing datum is the incidence alignment between those
+backbones and the matching of the conformal cycle/theta core.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md`](ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md).
+
 Two complementary cell-level transfers are also settled.  The all-root and
 four-root jets give five exact hidden-pair equations; on each rank-two chart
 the two named intermediate cofactors are individually binary-diagonal, and

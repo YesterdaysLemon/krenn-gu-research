@@ -277,6 +277,54 @@ problem is therefore to exclude the fixed-port bypass rectangles, not to
 enumerate the six permutations.  See
 `ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md`.
 
+### Matching-covered and `B_3` phase translations
+
+At exact support `3m+3`, the physical support graph is matching-covered.  An
+edge in no perfect matching could be deleted without changing the
+polynomial, contradicting the strict support theorem.  A disconnected
+support would factor across components and have flattening rank one, whereas
+the corresponding nontrivial flattening of `Delta_3` has rank three.
+
+De Carvalho and Little's quoted general theorem implies that any three
+prescribed edges of a matching-covered graph lie in a conformal subgraph
+formed from at most two alternating circuits.  Their sharper three-edge
+corollary says the carrier is an induced circuit, an even subdivision of
+`Theta`, or an even subdivision of one of nine `K_4`-generated graphs.
+Bipartiteness excludes the last family because every member retains an odd
+circuit.
+Hence the excess cells lie in a conformal even circuit or theta subdivision,
+with exactly two or three internal perfect matchings; see [*Matching Covered
+Graphs with Three Removable
+Classes*](https://www.combinatorics.org/ojs/index.php/eljc/article/view/v21i2p13).
+This is the correct even bipartite analogue of the tempting factor-critical
+ear translation.
+
+For a three-source backbone word, normalize the three transposition
+monomials to `a,b,c` and the oriented three-cycle monomials to `u,v`.  The
+complete coefficient and its toric circuit are
+
+```text
+1+a+b+c+u+v=0,       uv=abc.
+```
+
+The multiplicative equation is exactly the unique cubic circuit of the
+`3 x 3` Birkhoff polytope described by Haase and Paffenholz in
+[*Groebner Bases for Transportation
+Polytopes*](https://arxiv.org/abs/math/0607194).  The three complementary
+fixed-row channels are `1+c,1+b,1+a`.  Setting `a=b=c=-1` leaves the
+consistent equations `u+v=2`, `uv=-1`, realized over `C` by a full-support
+port matrix with `u,v=1+sqrt(2),1-sqrt(2)`.  Hence even simultaneous
+vanishing of all three channels cannot be excluded inside one port
+coefficient.
+
+The invented next object is a proposed phase-decorated `B_3` exchange
+complex: glue one additive/toric phase variety for every backbone-induced
+mixed word and identify shared physical row-cell factors across the Boolean
+pure-backbone cube.  To incorporate the conformal cycle/theta theorem, its
+definition still needs carrier-selection data recording how that theorem's
+matching meets each pure backbone.  The intended object retains both complex
+phases and global matching reuse; either ingredient alone is insufficient.
+
 ## 3. Determinantal ideals, Grassmannians, and a cofactor quiver
 
 ### Existing theory
@@ -501,10 +549,10 @@ Priority: exploratory, but fully symbolic.
 
 ## Ranked proof program
 
-1. **Three-port complementary-minor obstruction.**  The `3m+3` layer is now
-   an exact `S_2/S_3` port-permutation system.  Prove that every Hamilton
-   chord extension has nonzero complementary two-port permanent, or derive
-   a global incompatibility among the fixed-port bypass rectangles.
+1. **Phase-decorated `B_3` exchange complex.**  Define the missing incidence
+   alignment between the conformal cycle/theta matching and the
+   at-most-eight pure backbones, then glue the exact additive and cubic toric
+   equations.  A single coefficient cannot exclude simultaneous bypasses.
 2. **Deletion-depth cofactor quiver.**  Build one cross-sector
    semi-invariant using actual lower cofactor values.  The tangent
    counterfamily rules out weaker candidates in advance.
@@ -521,10 +569,10 @@ Priority: exploratory, but fully symbolic.
 ```text
 new arbitrary-order exclusion:    all 3m+2 equality faces impossible;
 new arbitrary-order theorem:      support >=3m+3 and S_3 port normal form;
-new exact local invariant:        complementary 2x2 port permanent;
-new exact route exclusion:        naive three-port chord forcing fails;
-highest-priority invented object: fixed-port bypass exchange system;
-highest-priority literature tool: matching toric + permanent minors;
+new exact local invariant:        additive/toric B_3 phase variety;
+new exact route exclusion:        one coefficient permits all bypasses;
+highest-priority invented object: phase-decorated B_3 exchange complex;
+highest-priority literature tool: conformal cores + Birkhoff circuit;
 full proof or counterexample:      NOT YET;
 global Krenn--Gu conjecture:       UNRESOLVED.
 ```

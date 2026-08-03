@@ -14458,3 +14458,51 @@ ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md
 verify_arbitrary_permanent_three_excess_port_permutation_theorem.py
 audit_arbitrary_permanent_three_excess_port_permutation_theorem.py
 ```
+
+### Matching-covered cycle/theta core and the `B_3` phase variety
+
+At exact support `3m+3`, the physical mode--source support graph is
+matching-covered.  Any edge outside all perfect matchings could be deleted
+without changing the permanent, giving a forbidden `3m+2` restriction.  If
+the support were disconnected, its permanent would factor across a
+nontrivial mode partition and have flattening rank one, while `Delta_3` has
+rank three there.
+
+A matching-covered theorem of de Carvalho and Little puts any three
+prescribed edges in a conformal subgraph made from at most two alternating
+circuits.  Their sharper classification and bipartiteness reduce the carrier
+to an induced even circuit or an even subdivision of the three-edge theta
+graph.  These arbitrary-length cores have exactly two or three internal
+perfect matchings, and their complements have perfect matchings.  This does
+not yet prevent cross edges or force coefficient cancellation to remain
+inside the carrier.
+
+The three-source port matrix also admits a complete phase normalization.
+For transposition gains `a,b,c` and oriented three-cycle gains `u,v`, every
+forbidden backbone-word coefficient satisfies
+
+```text
+1+a+b+c+u+v=0,
+uv=abc.
+```
+
+The second equation is the unique cubic circuit of the Birkhoff polytope
+`B_3`.  The three complementary fixed-row channels are `1+c,1+b,1+a`.
+Their simultaneous vanishing sets `a=b=c=-1`, after which the remaining
+equations are `u+v=2`, `uv=-1`, with complex solutions
+`1+sqrt(2),1-sqrt(2)`.  A full-support port matrix realizes this point.
+Therefore one three-port coefficient cannot prove that a complementary
+minor is nonzero, even when every gain is nonzero.
+
+The proposed phase-decorated `B_3` exchange complex would glue these
+additive and multiplicative equations across physical cell identifications
+and the at-most-eight pure backbones.  Its missing definition is the
+incidence alignment between those backbones and the matching supplied by the
+conformal cycle/theta theorem.  This is the next exact construction target;
+its obstruction remains unknown.
+
+```text
+ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md
+verify_arbitrary_permanent_three_excess_conformal_birkhoff_reduction.py
+audit_arbitrary_permanent_three_excess_conformal_birkhoff_reduction.py
+```
