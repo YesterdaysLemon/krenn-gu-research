@@ -33,6 +33,24 @@ This is a polar-map/Lefschetz-type certificate, but not a Lorentzian one:
 the all-one Hessian has multiple positive eigenvalues.  See
 [`RESIDUAL_HAFNIAN_HESSIAN_KNESER_ETALE_AND_JET_INTEGRABILITY_THEOREM.md`](RESIDUAL_HAFNIAN_HESSIAN_KNESER_ETALE_AND_JET_INTEGRABILITY_THEOREM.md).
 
+The same Euler identities now unmix an arbitrary-order common-cofactor
+response
+
+```text
+L=hU+sum_e c_e T_e.
+```
+
+On `det D!=0`, value plus first response jet uniquely recover `U,T` when
+`h!=0`; at `h=0` they have one exact vector-space gauge.  First and second
+response jets recover all channels at every `h` through the newly defined
+Euler--Hessian connection `G-J dot D^(-1)g`, while the singular divisor has
+the polynomial obstruction `adj(D)g=0`.  Applied to the blocker aggregate,
+this would extract honest arbitrary-residual permanent channels and recover
+the support bound `3r+9`.  The transfer is conditional: the current scalar
+`P_7` shallow deck does not legally expose the tensor-valued response jets.
+See
+[`ARBITRARY_ORDER_HAFNIAN_EULER_HESSIAN_CHANNEL_UNMIXING_AND_SINGULAR_DISCRIMINANT.md`](ARBITRARY_ORDER_HAFNIAN_EULER_HESSIAN_CHANNEL_UNMIXING_AND_SINGULAR_DISCRIMINANT.md).
+
 The theorem aligns with the existing legal `P_7` sensor without requiring
 the full nested cofactor tower.  On one eight-shore, the labeled `H_4/H_6`
 data rationally recover all 28 shore edges; one cyclic eight-row `H_4`
@@ -43,6 +61,18 @@ The common GHZ/sensor/Hessian open and every singular-Hessian branch remain
 unknown.  See
 [`SHALLOW_HAFNIAN_HESSIAN_TWO_DECK_INVERSION_AND_P7_LEGAL_SENSOR_INTERFACE.md`](SHALLOW_HAFNIAN_HESSIAN_TWO_DECK_INVERSION_AND_P7_LEGAL_SENSOR_INTERFACE.md).
 
+Along any nonzero scalar jet line `(h,c,D)=t(h_0,c_0,D_0)`, reconstruction
+and the scalar stress are projective, but every nonlinear four-deck equation
+is affine-linear in the single amplitude `t`.  Hence a Hessian-open line has
+at most one nonzero physical point.  For `P_7`, all nine shore determinants,
+Euler stresses, and overlap tests are projective, while the four-deck
+equations must choose one common amplitude.  An ambient nonlegal map can send
+the physical all-one deck to GHZ, whereas the same deck under the fixed legal
+rank-219 sensor has border rank at least nine by an exact `9 x 9` flattening
+minor.  These controls prove that neither incidence geometry alone nor legal
+sensor observability alone decides the missing intersection.  See
+[`ARBITRARY_HAFNIAN_JET_LINE_PROJECTIVE_AFFINE_SEPARATION_AND_P7_GHZ_BOUNDARY.md`](ARBITRARY_HAFNIAN_JET_LINE_PROJECTIVE_AFFINE_SEPARATION_AND_P7_GHZ_BOUNDARY.md).
+
 The last full-support singular pinned branch also has a new symbolic normal
 form.  Boolean `sl_2` duality sends `ell Q_B^2=0` from five-set equations to
 56 local triangle identities in the edge row sums.  Some row sum must be
@@ -51,9 +81,16 @@ all 21 off-star edges through seven star weights and eight row sums away
 from 21 explicit denominator divisors; the exceptional numerator equations
 are retained exactly.  The same reduction proves complementary four-set
 hafnians and excludes the reciprocal-rank-one torus stratum.  It does not
-yet decide whether either the generic closure system or its exceptional
-divisors contain a torus point.  See
-[`P7_PRIMITIVE_BOOLEAN_SQUARE_DUAL_TRIANGLE_STAR_NORMAL_FORM.md`](P7_PRIMITIVE_BOOLEAN_SQUARE_DUAL_TRIANGLE_STAR_NORMAL_FORM.md).
+yet decide whether its residual incidence locus contains a torus point.  The
+star triangles and row closure now form one `28 x 28` linear pencil with a
+nonzero symmetric degree-21 determinant `P(a)`.  Every torus solution lies on
+`P=0`, while `P(1,...,1)=5*8^6*3^15`; hence the generic star fibre is empty.
+The remaining interface is exactly 35 leaf-triangle quadrics, every
+denominator collision is classified by
+`Delta_jk=0 iff y_j+y_k=0`, and at most three edge row sums can vanish.  See
+[`P7_PRIMITIVE_BOOLEAN_SQUARE_DUAL_TRIANGLE_STAR_NORMAL_FORM.md`](P7_PRIMITIVE_BOOLEAN_SQUARE_DUAL_TRIANGLE_STAR_NORMAL_FORM.md)
+and
+[`P7_PRIMITIVE_BOOLEAN_SQUARE_STAR_CLOSURE_DISCRIMINANT_AND_ZERO_ROW_BOUNDARY_THEOREM.md`](P7_PRIMITIVE_BOOLEAN_SQUARE_STAR_CLOSURE_DISCRIMINANT_AND_ZERO_ROW_BOUNDARY_THEOREM.md).
 
 The legal `P_7` sensor on which this new inverse relies is a three-part
 symbolic observability theorem.  First, arbitrary-order pinned partner

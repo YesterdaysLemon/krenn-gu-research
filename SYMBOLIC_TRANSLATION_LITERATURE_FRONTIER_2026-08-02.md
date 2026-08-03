@@ -86,6 +86,70 @@ labels.  Nonlinear or multi-jet `P_6`, GHZ incidence on the P7 Hessian open,
 and singular-Hessian descent remain unknown.  See
 `SHALLOW_HAFNIAN_HESSIAN_TWO_DECK_INVERSION_AND_P7_LEGAL_SENSOR_INTERFACE.md`.
 
+### Euler--Hessian response observability and radial amplitude
+
+The same polar calculus separates common-cofactor response channels without
+requiring a larger residual graph.  For a vector-valued response
+
+```text
+L=hU+sum_e c_e T_e,
+g=cU+DT,
+G=DU+J dot T,
+```
+
+Euler gives `Da=(m-1)c` and `J dot a=(m-2)D`.  Therefore the newly defined
+Euler--Hessian connection
+
+```text
+S=G-J dot D^(-1)g
+```
+
+cancels all cofactor channels and leaves `S=DU/(m-1)`.  On `det D!=0`, the
+first and second response jets recover `U` and every `T_e` uniquely.  When
+`h!=0`, value plus first jet already suffice; when `h=0`, they instead obey
+one exact vector-space gauge, removed by the second jet.  On the singular
+divisor, actual data satisfy the inverse-free equation `adj(D)g=0`; an exact
+six-vertex full-torus example shows this has a genuine corank-one branch.
+For the arbitrary blocker aggregate, the recovered `T_pq` are honest
+`P_(r+2)` extensions.  A three-colour diagonal channel would therefore give
+the strict support bound `3r+9` at arbitrary residual order.
+
+This is a sharp observability theorem and a sharp legality wall.  The present
+`P_7` sensor exposes the scalar jet `(h,c,D)`, not the tensor response jets
+`(g,G)`: formal differentiation of an edge coefficient is not a permitted
+local-vector probe.  In neighboring literature, algebraic observability and
+identifiability also ask which hidden parameters are determined by output
+jets and use algebraic matroids to organize the answer
+([Meshkat--Rosen--Sullivant](https://arxiv.org/abs/1609.07985)).  The theorem
+here is static, exact, and specialized to the hafnian Euler identities; no
+state-space result is being imported.  The higher-Hessian/Lefschetz
+connection is similarly supported by the characteristic-zero criterion of
+[Maeno--Watanabe](https://arxiv.org/abs/0903.3581), while the rational polar
+map viewpoint is classical
+([Dolgachev](https://arxiv.org/abs/math/0005048)).  Neither source supplies
+the response unmixing formula or its legal physical realization.  See
+`ARBITRARY_ORDER_HAFNIAN_EULER_HESSIAN_CHANNEL_UNMIXING_AND_SINGULAR_DISCRIMINANT.md`.
+
+There is a second separation on a target-incidence line.  If
+`(h,c,D)=t(h_0,c_0,D_0)`, then `det D` and the adjugate numerator scale so
+that the reconstructed graph is projectively constant.  The scalar Euler
+stress is also projective, but after the common homogeneous factor is
+removed each nonlinear deck equation is affine-linear in `t`.  Thus a
+Hessian-open radial line contains at most one nonzero physical jet.  On the
+nine `P_7` shores, all determinants, stresses, and overlaps are projective;
+all four-deck equations must select one common amplitude.
+
+Two exact controls prevent an overclaim.  The all-one physical deck is in the
+common Hessian open and an injective ambient **nonlegal** sensor can send its
+line to GHZ, so incidence, dimensions, and rank alone cannot obstruct it.
+For the fixed **legal** rank-219 sensor, the same physical deck has a nonzero
+named `9 x 9` flattening minor and hence border rank at least nine.  Legal
+observability plus physical Hessian openness therefore does not imply GHZ.
+The unresolved question is precisely whether a legal torus-concise
+rank-three incidence line survives both the projective tests and the common
+affine amplitude.  See
+`ARBITRARY_HAFNIAN_JET_LINE_PROJECTIVE_AFFINE_SEPARATION_AND_P7_GHZ_BOUNDARY.md`.
+
 The singular complement is no longer an opaque primitive intersection.
 Boolean `sl_2` duality identifies the kernels of the up and down operators at
 middle degree four, translating `ell Q_B^2=0` into 56 triangle equations
@@ -113,9 +177,31 @@ agree, and a separate symbolic argument excludes reciprocal-rank-one edge
 data.  Feinsilver's Boolean-lattice `sl_2` representation
 ([arXiv:1102.0368](https://arxiv.org/abs/1102.0368)) supplies the surrounding
 representation-theoretic language; the identities and kernel argument here
-are self-contained.  Torus nonemptiness of the generic and exceptional
-closure systems remains unknown.  See
+are self-contained.  See
 `P7_PRIMITIVE_BOOLEAN_SQUARE_DUAL_TRIANGLE_STAR_NORMAL_FORM.md`.
+
+The generic part is now resolved by an invented determinantal star-closure
+theory.  With seven star weights `a_j`, normalized row variables `y_j`, and
+21 normalized off-star edges `x_jk`, the 21 anchor triangles plus seven row
+definitions are one homogeneous `28 x 28` pencil
+
+```text
+T(a)=[I,-V; U^T,D],
+P(a)=det T(a)=det(D+U^T V).
+```
+
+The symmetric homogeneous polynomial `P` has degree 21 and
+`P(1,...,1)=5*8^6*3^15!=0`.  Every edge-torus primitive-square point lies on
+`P=0`; hence the generic star fibre is empty, with no parameter enumeration.
+The remaining problem is exactly the incidence of a full-support kernel of
+this pencil with 35 displayed leaf-triangle quadrics.  The pencil retains the
+exceptional divisors and classifies them by
+`Delta_jk=0 iff y_j+y_k=0`.  A separate reciprocal-Cayley argument improves
+the zero-row boundary to `|{i:r_i=0}|<=3`.  In elimination language, `P` is
+a determinantal projection obstruction, but the elementary Schur-complement
+proof is complete and no general determinantal-representation theorem is
+being substituted for the 35 unresolved quadrics.  See
+`P7_PRIMITIVE_BOOLEAN_SQUARE_STAR_CLOSURE_DISCRIMINANT_AND_ZERO_ROW_BOUNDARY_THEOREM.md`.
 
 ### Mixed-root filtration, deletion-label geometry, and a nonlinear escape
 
@@ -2442,7 +2528,9 @@ torus-concise point in that family: UNKNOWN;
 three-term local-basis tangent test: rank 22 on 30 single flips;
 endpoint torus projective stresses: SEMI-INVARIANT;
 endpoint torus affine amplitude:   total-product character;
-physical points on a pinned line: at most one nonzero point;
+physical points on Hessian-open jet line: AT MOST ONE NONZERO POINT;
+ambient GHZ/physical Hessian-open line: CONSTRUCTED, NONLEGAL;
+fixed legal sensor at all-one deck: BORDER RANK AT LEAST NINE;
 new full P6 top-deck sensor:      rank 70 in 81 channels;
 new P6 target separation:        augmented rank 73, ambient codimension nine;
 new compressed P5 tomography:    Jacobian rank 21 in 27 channels;
@@ -2453,8 +2541,11 @@ primitive Boolean middle space:  dimension 14;
 primitive square meets edge torus: UNKNOWN;
 primitive five-set equations:     EXACT DUAL TRIANGLE SYSTEM;
 torus row sums all zero:          IMPOSSIBLE;
-primitive generic star chart:     RATIONAL 14-PARAMETER AMBIENT REDUCTION;
-primitive exceptional divisors:   EXPLICIT NUMERATOR CONDITIONS;
+primitive star-closure pencil:     28x28, DEGREE-21 DISCRIMINANT;
+primitive generic star fibre:      EMPTY ON EDGE TORUS;
+primitive remaining leaf interface: 35 EXACT QUADRICS;
+primitive exceptional divisors:   EXACT COMPLEMENTARY-SUM GRAPH;
+primitive vanishing row sums:      AT MOST THREE;
 reciprocal-rank-one torus branch: IMPOSSIBLE;
 P6 torus pinned rank drop:       exact cubic-resonance control;
 new singular shallow-deck fibre: exact double-star dimension two;
@@ -2481,6 +2572,12 @@ cofactor-only torus obstruction:  IMPOSSIBLE BY DOMINANCE;
 P7 one-shore Hessian recovery:    all 36 nonroot edges, RATIONAL;
 P7 nine-shore affine descent:     EXACT ON COMMON HESSIAN OPEN;
 GHZ meets P7 sensor/Hessian open: UNKNOWN;
+Euler-Hessian response connection: EXACT ARBITRARY ORDER;
+h!=0 value/first-jet unmixing:     UNIQUE;
+h=0 value/first-jet fibre:         EXACT VECTOR-SPACE GAUGE;
+first/second response-jet unmixing: UNIQUE ON det D!=0;
+singular response-jet equation:    adj(D)g=0;
+legal exposure of tensor response jets: UNKNOWN;
 maximal q2 visible response map:  DOMINANT, exact Jacobian minor 360;
 conditional four-point selector: complementary z weights must be additive;
 q4 four-point law:                quartic permanent defect can equal one;
@@ -2547,9 +2644,9 @@ top two-port data at h!=0:         FULL AFFINE IMAGE;
 P5/P6 support 18/21:              UNCONDITIONAL AFTER KNOWN EXTRACTION;
 P7 support 24 transfer:           CONDITIONAL ON LEGAL SYNCHRONIZATION;
 minimal tangent-companion cycle:  EXCLUDED BY FULL-ROOT COFACTOR COLLISION;
-highest-priority invented object: transverse fan selector plus labeled compound tower;
+highest-priority invented objects: legal response-jet selector and primitive pencil-leaf incidence;
 new legality boundary:             top synchronization has shore rank one;
-highest-priority literature tool: algebraic polar correspondence plus permanental incidence;
+highest-priority literature tools: apolar Lefschetz, algebraic observability, determinantal elimination;
 full proof or counterexample:      NOT YET;
 global Krenn--Gu conjecture:       UNRESOLVED.
 ```
