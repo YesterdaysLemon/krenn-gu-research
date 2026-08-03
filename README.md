@@ -30,6 +30,39 @@ sensor-rank-drop locus.  See
 and
 [`P7_FULL_MIXED_ROOT_219_LABEL_SENSOR_AND_PINNED_STAR_GATING_BOUNDARY.md`](P7_FULL_MIXED_ROOT_219_LABEL_SENSOR_AND_PINNED_STAR_GATING_BOUNDARY.md).
 
+On an arbitrary full sensor, the GHZ condition now has a compact exact form.
+The 24-dimensional companion cokernel restricts to a `24 x 3` diagonal
+target map; target incidence is exactly rank at most two.  It is a
+codimension-22 Schubert condition in the ambient Grassmannian, and its
+generic point determines a single projective cofactor line with 218
+sensor-dependent linear relations.  There is no sensor-independent
+cofactor relation from incidence alone.  On the pinned open, that line has
+an explicit determinant-cleared integrability test: degree-nine partner
+stresses can exclude the entire line, while four-hafnian realization fixes
+at most one nonzero amplitude.  See
+[`FIVE_ROOT_DIAGONAL_TARGET_INCIDENCE_SCHUBERT_DUALITY_AND_COFACTOR_LINE_THEOREM.md`](FIVE_ROOT_DIAGONAL_TARGET_INCIDENCE_SCHUBERT_DUALITY_AND_COFACTOR_LINE_THEOREM.md)
+and
+[`P7_TARGET_INCIDENCE_DETERMINANT_CLEARED_HAFNIAN_INTEGRABILITY_THEOREM.md`](P7_TARGET_INCIDENCE_DETERMINANT_CLEARED_HAFNIAN_INTEGRABILITY_THEOREM.md).
+
+The same program now reaches `P_6`.  With four roots, six blockers, two
+residual nonblockers, and zero root--root blocks, one legal integer chart
+labels all `binom(8,4)=70` principal four-hafnians in 81 root channels.
+Relative to the companion data, these recover all 28 nonroot edges up to
+finitely many algebraic branches.  The displayed sensor is target-free and
+places any compatible full sensor on an ambient codimension-nine incidence
+locus.  See
+[`P6_FOUR_ROOT_FULL_H4_SENSOR_AND_TARGET_INCIDENCE_BOUNDARY.md`](P6_FOUR_ROOT_FULL_H4_SENSOR_AND_TARGET_INCIDENCE_BOUNDARY.md).
+
+The pinned singular locus is now sharper but not eliminated.  In the
+eight-vertex `P_7` shore, every kernel circuit of the pinned four-hafnian
+matrix uses at least five columns at a full-edge-torus point.  Circuits of
+sizes one through four are impossible by a square-free annihilator argument.
+The threshold cannot simply be transferred to `P_6`: an explicit
+all-edge-nonzero graph over `Q(omega)` has pinned rank six instead of seven,
+with nonzero four- and six-hafnians.  Its escape is the primitive-cube-root
+resonance class of a five-vertex zero four-deck.  See
+[`PINNED_H4_STAR_TORUS_CIRCUIT_GIRTH_AND_P6_CUBIC_ESCAPE.md`](PINNED_H4_STAR_TORUS_CIRCUIT_GIRTH_AND_P6_CUBIC_ESCAPE.md).
+
 The generic open cannot be silently globalized.  On a nine-vertex
 double-star stratum, the complete `H_4/H_6/H_8` deck has an exact
 two-dimensional fibre: the center edge is wholly invisible and reciprocal
@@ -48,8 +81,8 @@ two-residual `P_7` cell, a legally labeled depth-five deck would recover the
 root-budget-invisible pair up to finitely many branches.  The theorem is not
 global: `A` and `-A` have the same deck, and a one-edge affine line lies in
 the zero fibre.  Its 126 labels exceed the 32 channels of one five-root
-two-plane jet but fit within the 243 channels of the full root tensor, fixing
-the scale of the next selector problem.  See
+two-plane jet but fit within the 243 channels of the full root tensor; the
+full 219-label sensor above now attains that larger chart.  See
 [`PRINCIPAL_FOUR_HAFNIAN_GENERIC_EDGE_TOMOGRAPHY_AND_P7_SINGULAR_FIBRE_BOUNDARY.md`](PRINCIPAL_FOUR_HAFNIAN_GENERIC_EDGE_TOMOGRAPHY_AND_P7_SINGULAR_FIBRE_BOUNDARY.md).
 
 The accompanying arbitrary-word theorem proves why a nonlinear step is

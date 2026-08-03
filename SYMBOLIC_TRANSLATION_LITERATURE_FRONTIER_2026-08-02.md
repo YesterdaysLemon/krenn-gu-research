@@ -124,15 +124,73 @@ characteristic zero.  Thus the generic Lefschetz inverse and the double-star
 fibre are two strata of one observation map, not contradictory claims.  See
 `P7_COMBINED_SHALLOW_DECK_DOUBLE_STAR_GAUGE_AND_ZERO_TORUS_BOUNDARY.md`.
 
-This suggests an **incidence--Lefschetz stratification** as the next theory:
-track three determinantal ideals simultaneously--the sensor minors, the
-pinned-star minors, and the augmented target-incidence minors.  On the first
-two opens the cofactors and then the graph are rationally identifiable.  A
-GHZ witness must satisfy the third ideal.  A decisive theorem would show
-that this incidence ideal forces the pinned determinant to vanish only on
-classified coordinate/Gram strata, or else makes the uniquely reconstructed
-cofactor tower violate a nested partner recurrence.  Neither implication is
-currently proved.
+The proposed **incidence--Lefschetz stratification** now has its first exact
+layer.  On a full `P_7` sensor, quotient by the 219-dimensional companion
+image.  The resulting 24-dimensional cokernel restricts to a `24 x 3` map on
+the diagonal target space.  A nonzero diagonal target occurs exactly when
+this map has rank at most two.  Dually, it is the restriction of the
+24-dimensional left kernel to the three pure target words.  One exterior
+covariant packages all augmented minors.  The corresponding special
+Schubert locus in `Gr(219,243)` has codimension 22; intersection dimensions
+two and three begin in codimensions 46 and 72.  See
+`FIVE_ROOT_DIAGONAL_TARGET_INCIDENCE_SCHUBERT_DUALITY_AND_COFACTOR_LINE_THEOREM.md`.
+
+At a generic incidence point the allowable 219-vector is one
+sensor-dependent projective line.  This gives 218 linear relations, but no
+nonzero sensor-independent homogeneous relation follows from incidence and
+rank alone: every nonzero abstract cofactor vector occurs for some ambient
+injective sensor.  The matching form of the companion map and physical
+hafnian realizability must therefore do the remaining work.
+
+On the pinned open, that remaining work is explicit.  Eight Cramer star
+systems reconstruct all 36 candidate edges projectively.  The first natural
+determinant-cleared partner residuals have degree nine in the cofactor-line
+coordinates.  Their nonvanishing excludes the whole line.  If they vanish,
+126 four-hafnian equations fix at most one nonzero radial amplitude, and one
+partner row for each of the 84 six- and nine eight-hafnian labels is a
+necessary and sufficient graph-side integrability test.  See
+`P7_TARGET_INCIDENCE_DETERMINANT_CLEARED_HAFNIAN_INTEGRABILITY_THEOREM.md`.
+
+There is now a parallel `P_6` chart.  Set all four-root pair blocks to zero
+and use a fixed legal six-blocker/two-residual companion system.  Its 70
+depth-four columns are independent in `3^4=81` channels, so every principal
+four-hafnian of the eight nonroots is labeled.  The inclusion-matrix
+Jacobian gives relative generic finite recovery of all 28 edges.  Appending
+the diagonal target raises the fixed rank to 73; ambient target incidence is
+the codimension-nine Schubert locus in `Gr(70,81)`.  This proves that `P_6`
+passes the legal top-deck sensor threshold, without proving that a GHZ point
+meets the sensor or Jacobian open.  See
+`P6_FOUR_ROOT_FULL_H4_SENSOR_AND_TARGET_INCIDENCE_BOUNDARY.md`.
+
+The determinant boundary itself has a square-free circuit theory.  For the
+eight-vertex shore of `P_7`, a kernel vector of the pinned four-hafnian matrix
+is a degree-one annihilator of `Q_B^2` in the square-free algebra.  On the
+full edge torus every such circuit has support at least five: supports one
+through four are excluded by zero-deck torus rigidity, injectivity of a
+triangle-star map, and a hyperbolic-product independence argument.  This is
+compatible with the strong-Lefschetz viewpoint; Cook's
+[*The Lefschetz properties of monomial complete intersections in positive characteristic*](https://arxiv.org/abs/1111.4979)
+records the characteristic-zero monomial-complete-intersection background,
+while the circuit proof here is self-contained.
+
+The smaller `P_6` boundary has an exact cubic escape.  Over `Q(omega)` with
+`omega^2+omega+1=0`, one all-edge-nonzero seven-vertex graph has pinned rank
+six, kernel `e_5+e_6`, and nonzero four- and six-hafnian coordinates.  Its
+five-vertex core is the complete classification of an all-nonzero zero
+four-deck: the three opposite-edge products occur in ratio
+`(omega^2,omega,1)`.  Therefore coordinate nonvanishing cannot force the
+`P_6` pinned open.  On any incidence cofactor line, each fixed pinned minor
+is homogeneous, so the whole nonzero line is either inside or outside that
+minor's open chart.  See
+`PINNED_H4_STAR_TORUS_CIRCUIT_GIRTH_AND_P6_CUBIC_ESCAPE.md`.
+
+The next decisive theorem must now act on the **legal pullback** of these
+incidence loci: either show it is empty on the full-sensor/pinned open, force
+one of the explicit degree-nine or four-deck stresses to be nonzero, or
+classify its descent to coordinate/Gram singular strata.  The surviving
+torus cases are now precise: `P_7` pinned circuits of sizes five through
+eight, and the `P_6` cubic-resonance alternative.  None is currently forced
+or excluded by the GHZ equations.
 
 There is, however, a genuinely nonlinear way around the depth ceiling on a
 generic chart.  For a named `n`-vertex graph, send its edges to all principal
@@ -2149,13 +2207,14 @@ adding singleton rows is insufficient.  See
 
 ## Ranked proof program
 
-0. **Resolve the target-incidence/pinned-minor intersection.**  Saturate the
-   augmented companion-minor ideal by one full sensor minor and one pinned
-   star minor.  Either derive a determinant-cleared nested-cofactor stress on
-   that saturated chart, or prove that every component descends to a
-   classified coordinate or hyperbolic-Gram boundary.  The rank-222 integer
-   chart proves the incidence equation is proper; the double star is the
-   mandatory singular sharpness control.
+0. **Resolve the legal pullback of target incidence.**  The ambient equation
+   is now the rank-at-most-two `24 x 3` cokernel covariant, and its generic
+   cofactor line has complete determinant-cleared graph-side tests.  Prove
+   that every legal line makes one degree-nine/four-deck stress nonzero, or
+   construct a legal incidence point and evaluate the unique candidate, or
+   prove that every component descends to a classified coordinate or
+   hyperbolic-Gram boundary.  The rank-222 chart and double star are the
+   mandatory open and singular controls.
 1. **Force two transverse nonprojective fans on one window.**  One fully
    polarized root pair has observation rank at most four on the six pair
    faces, and this defect is generically exactly two.  Two compatible pairs
@@ -2175,11 +2234,11 @@ adding singleton rows is insufficient.  See
    entire eligible tower cannot recover them.  Force a genuinely mixed GHZ
    coefficient, herald/vacuum simulator, or synchronized direct-pair sector
    below the staircase.
-4. **Joint singular-kernel compatibility.**  A preselected fifth-compound
-   determinant is not fibre-uniform.  Couple several adaptively chosen words
-   and the degree-one/degree-three equations, and test whether their singular
-   kernels can contain one common core completion.  The rank-six escape is
-   now the mandatory sharpness model.
+4. **Classify the surviving pinned circuits.**  On the `P_7` edge torus,
+   circuit sizes at most four are impossible; classify sizes five through
+   eight and intersect them with the degree-nine line tests.  For `P_6`, any
+   claimed torus exclusion must separately eliminate the exact
+   primitive-cube-root two-column escape.
 5. **Physical-idempotent separator.**  Find a polynomial/covariant that
    vanishes for vertexwise local-colour block graphs but distinguishes the
    formal global-idempotent realization.  It must use the uncontracted
@@ -2190,12 +2249,10 @@ adding singleton rows is insufficient.  See
    alignment between the conformal cycle/theta matching and the
    at-most-eight pure backbones, then glue the exact additive and cubic toric
    equations.  A single coefficient cannot exclude simultaneous bypasses.
-7. **Exploit labeled permanental-compound data.**  On a compound-open square
-   residual--port chart, all principal cofactors are reconstructible and the
-   nested partner-expansion equations are a complete integrability test.
-   Individual shallow labels are now available in the `q=2,P_7` sensor open;
-   restrict the unique cofactor vector to the target-incidence locus and seek
-   a determinant-cleared nested stress that the GHZ target violates.
+7. **Force a line-integrability stress.**  The target-incidence line now has
+   explicit degree-nine partner residuals and absolute four-deck equations.
+   Use the matching-polynomial form of the legal companion map to force one
+   residual nonzero, rather than searching over 219 free cofactor variables.
 8. **Coloured deletion-cumulant compatibility.**  Use two overlapping root
    windows to turn quotient minors into a global log-quadratic obstruction.
 9. **Conditional Pfaffian chart.**  Apply matchgate identities only if a
@@ -2211,6 +2268,15 @@ new arbitrary-surplus deck hierarchy: r>=2 finite, r>=3 rational;
 new r=1 smooth nonidentifiability: dimensions 27 and 65 in P5/P7 cells;
 new full P7 shallow sensor:       rank 219 on a legal integer chart;
 new diagonal target separation:  augmented rank 222, incidence locus proper;
+new P7 target-incidence quotient: 24x3 rank <=2, ambient codimension 22;
+generic P7 incidence cofactor set: one sensor-dependent projective line;
+line hafnian integrability test:   degree-nine stresses plus affine scale;
+physical points on a pinned line: at most one nonzero point;
+new full P6 top-deck sensor:      rank 70 in 81 channels;
+new P6 target separation:        augmented rank 73, ambient codimension nine;
+P7 torus pinned circuit girth:    at least five columns;
+P7 torus pinned circuits 5..8:   UNKNOWN;
+P6 torus pinned rank drop:       exact cubic-resonance control;
 new singular shallow-deck fibre: exact double-star dimension two;
 new arbitrary-order exclusion:    all 3m+2 equality faces impossible;
 new arbitrary-order theorem:      support >=3m+3 and S_3 port normal form;

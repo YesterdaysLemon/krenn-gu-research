@@ -429,6 +429,12 @@ Theorem 3 uses exactly the first two layers and succeeds whenever `r>=3`.
 | `P_7` | 4 | 3 | 11 | `h_8,h_10` | all 55 edges rationally recovered on `U` |
 | `P_7` | 6 | 1 | 13 | `h_12` | generic fibre dimension 65; no edge locally identified |
 
+For the `q=2,P_6` row, the full consecutive `h_4,h_6` label set exceeds the
+81 root channels, but the `h_4` deck alone fits.  The legal rank-70 chart in
+`P6_FOUR_ROOT_FULL_H4_SENSOR_AND_TARGET_INCIDENCE_BOUNDARY.md` exposes all of
+it and therefore realizes the generically finite first-deck conclusion
+relative to known companion blocks.
+
 For the `q=2` cells, the complete two-deck label counts versus the full
 root-tensor dimensions are
 
@@ -510,6 +516,13 @@ singular-locus stratification:                     NONEMPTY, CLASSIFICATION OPEN
 P_5/P_6/P_7 obstruction:                          UNKNOWN;
 global Krenn--Gu:                                  UNRESOLVED.         (23)
 ```
+
+The pinned determinant boundary is refined in
+`PINNED_H4_STAR_TORUS_CIRCUIT_GIRTH_AND_P6_CUBIC_ESCAPE.md`: on the
+eight-vertex `P_7` shore every full-edge-torus circuit uses at least five
+columns, while an exact `P_6` cubic-resonance graph has an all-edge-nonzero
+two-column circuit.  Thus torus nonvanishing is a genuine theorem in the
+first four `P_7` circuit sizes but is not a general determinant criterion.
 
 No graph supports, words, parameter grids, or finite fields were searched.
 The finite computations below evaluate only fixed exact matrices and fixed

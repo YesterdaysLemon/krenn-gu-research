@@ -309,6 +309,13 @@ an exact proof that one specified integer determinant is nonzero.  The same
 minor stays nonzero on a Zariski-open neighborhood, proving that the
 target-incidence obstruction is nonvacuous.
 
+The coordinate-free quotient, dual left-kernel, Schubert-codimension, and
+generic cofactor-line forms of this condition are proved in
+`FIVE_ROOT_DIAGONAL_TARGET_INCIDENCE_SCHUBERT_DUALITY_AND_COFACTOR_LINE_THEOREM.md`.
+On the generic one-line stratum, the determinant-cleared physical hafnian
+test is given in
+`P7_TARGET_INCIDENCE_DETERMINANT_CLEARED_HAFNIAN_INTEGRABILITY_THEOREM.md`.
+
 ## 6. The P5 pinned-star selector condition
 
 Now take three roots and seven nonroots `{p} disjoint union A`, `|A|=6`.
