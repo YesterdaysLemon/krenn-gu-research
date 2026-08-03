@@ -236,11 +236,62 @@ corresponding outgoing directions are removed, provided the same
 colour-preserving exterior reroute is available.  This preserves
 (18)--(19), but does not prove a physical exterior realization.
 
-Both absent-chord cut multisets use three cells of one repeated colour while
-`tau=0`; a simple exterior realization would therefore require at least
-three exterior modes, hence `m>=6`.  The displayed objects are exact local
-tensor/cut-ledger charts at every formal port order, not existence claims at
-`m=4` or `m=5`.
+## The `3+0+0` profile has a zero-absorption divisor
+
+For completeness, put all three excess cells in row zero:
+
+```text
+X_Theta = [ L_0    L_1    L_2  ]
+          [ a z_1  b z_1  0    ]
+          [ c z_2  0      d z_2],
+          a b c d !=0.                             (21)
+```
+
+Alignment and local rank force the two outgoing colours at rows one and two
+to be `C\{alpha_1}` and `C\{alpha_2}`.  Mandatory-cover uniqueness at
+`p_0` gives `alpha_1!=alpha_2`.  The physical ledger has only
+
+```text
+(s_0,s_1,s_2;tau)=(0,2,2;1) or (1,2,2;0).         (22)
+```
+
+In the first placement, `L_0,L_1,L_2` are independent.  Quotienting rows
+one and two leaves their distinct lines `alpha_1,alpha_2`; the target is
+zero, while the nonzero linear combination of the three independent excess
+forms survives at row zero.  Thus `(0,2,2;1)` is impossible.
+
+In the second placement, cut transport forces the row-zero outgoing colour
+to be the third colour `gamma` outside `{alpha_1,alpha_2}`.  Alignment also
+requires `alpha_0!=gamma`, because the row-zero outgoing cell and its
+aligned core edge cannot occupy the same colour backbone.  The same quotient
+has zero target, but the port can now vanish on the rank-collapse divisor
+
+```text
+b d L_0+a d L_1+b c L_2 in span(e_gamma).          (23)
+```
+
+This divisor is nonempty.  Normalize
+
+```text
+(alpha_0,alpha_1,alpha_2)=(0,0,1),       gamma=2,
+L_0=e_0+e_1,       L_1=e_0-e_1,       L_2=-2e_0+e_2,
+a=b=c=d=1.                                         (24)
+```
+
+The three aligned terms are `1,1,-2`; the row-zero response is exactly
+`e_2` and dies modulo `B_0=span(e_2)`.  Rows one and two retain the distinct
+target lines `e_0,e_1`, so the projected target is also zero.  Both cut
+shores have colours `0^1 1^1 2^3`, and all local ranks are three.  This is
+an exact **zero-absorption** method counterchart, not a global construction.
+
+Thus the third excess-mode profile does not restore an ordinary quotient
+obstruction: its maximal-`tau` placement is excluded, but its cubic-exterior
+placement has a sharp zero-versus-zero divisor.
+
+All three displayed `tau=0` absent-chord cut multisets use three cells of one
+repeated colour.  A simple cubic exterior realization would therefore
+require at least three exterior modes, hence `m>=6`.  These exact local
+tensor/cut-ledger charts are not existence claims at `m=4` or `m=5`.
 
 ## Invented theory: the marked pair-deletion response jet
 
@@ -256,10 +307,10 @@ study.  The bidegree-`(1,1)` part of that boundary matching generating
 function is the **marked pair-deletion response matrix**
 
 ```text
-R_ij=Omega_ij Q_ij.                                (21)
+R_ij=Omega_ij Q_ij.                                (25)
 ```
 
-Equation (21) is the exact boundary-convolution factorization of that one
+Equation (25) is the exact boundary-convolution factorization of that one
 sector.  What is not known is a usable relation among the nine exterior
 factors `Omega_ij`.
 
@@ -268,26 +319,26 @@ Here is a sufficient local-to-global bridge.  Suppose, for one cofacial
 responses have the toric holonomy
 
 ```text
-Omega_11 Omega_22=Omega_12 Omega_21.               (22)
+Omega_11 Omega_22=Omega_12 Omega_21.               (26)
 ```
 
-Then (3), (6), and (21) give the **symmetric-compound equation**
+Then (3), (6), and (25) give the **symmetric-compound equation**
 
 ```text
-R_11 R_22+R_12 R_21=0.                             (23)
+R_11 R_22+R_12 R_21=0.                             (27)
 ```
 
 If a target selector puts the same marked block on the rank-one Segre cone,
 it also obeys the **alternating-compound equation**
 
 ```text
-R_11 R_22-R_12 R_21=0.                             (24)
+R_11 R_22-R_12 R_21=0.                             (28)
 ```
 
-Adding and subtracting (23)--(24) gives
+Adding and subtracting (27)--(28) gives
 
 ```text
-2 R_11 R_22=2 R_12 R_21=0,                        (25)
+2 R_11 R_22=2 R_12 R_21=0,                        (29)
 ```
 
 contradicting nonvanishing in characteristic zero.  This is the promised
@@ -296,15 +347,15 @@ factor-`2` obstruction.
 The proof obligation is now exact and smaller than "find another theta
 identity":
 
-1. construct a legal marked selector exposing the responses (21);
-2. prove the single exterior cross-ratio equation (22), or a substitute
+1. construct a legal marked selector exposing the responses (25);
+2. prove the single exterior cross-ratio equation (26), or a substitute
    that transports (6); and
-3. prove that the corresponding target marked block satisfies (24).
+3. prove that the corresponding target marked block satisfies (28).
 
 Planar matchgate, Postnikov boundary-measurement, and electrical-grove
 theories all produce related Pluecker or response identities, but require
 planar terminal order or disk/outer-face hypotheses not known for the
-ambient graph.  They are templates for (22), not unconditional inputs.
+ambient graph.  They are templates for (26), not unconditional inputs.
 See Cai--Gorenstein,
 [*Matchgates Revisited*](https://arxiv.org/abs/1303.6729), Postnikov,
 [*Total positivity, Grassmannians, and networks*](https://arxiv.org/abs/math/0609764),
@@ -319,12 +370,14 @@ all bare-theta cofactors at Z=0:                          NONZERO;
 ordinary/augmented apolar quotient exclusion:             FALSE;
 1+1+1 one-open-port absorption chart:                     EXACT;
 2+1+0 one-open-port absorption chart:                     EXACT;
+3+0+0 maximal-tau placement:                              EXCLUDED;
+3+0+0 cubic-exterior zero-absorption divisor:             EXACT;
 physical word-ineligible chord directions:                ABSORBABLE LOCALLY;
   required exterior colour reroute / graph realization:   NOT CONSTRUCTED;
-full bare-theta incidence classification (2+4 orbits):     NOT ATTEMPTED HERE;
-marked pair-deletion sector factorization (21):           EXACT;
-exterior toric holonomy (22):                             NOT PROVED;
-target marked Segre equation (24):                        NOT PROVED;
+111/210 incidence classification (2+4 orbits):             NOT ATTEMPTED HERE;
+marked pair-deletion sector factorization (25):           EXACT;
+exterior toric holonomy (26):                             NOT PROVED;
+target marked Segre equation (28):                        NOT PROVED;
 conditional symmetric/alternating factor-2 clash:         PROVED;
 full global bare-theta exclusion:                         UNKNOWN;
 global Krenn--Gu conjecture:                              UNRESOLVED.
@@ -338,7 +391,7 @@ python audit_arbitrary_permanent_three_excess_bare_theta_absorption_and_cofactor
 ```
 
 The primary verifier reconstructs the cofactor matrix, all six anchor
-identities, the gauge cubic, both exact quotient residues, the ledgers, and
+identities, the gauge cubic, all three exact quotient residues, the ledgers, and
 the factor-`2` clash.  The independent no-import audit checks the same fixed
 algebra with exact integer data.  Neither script searches a support family,
 word family, or matching family.

@@ -975,6 +975,14 @@ colour-preserving exterior reroute is available.  No such exterior graph is
 constructed.  See
 `ARBITRARY_PERMANENT_THREE_EXCESS_BARE_THETA_ABSORPTION_AND_COFACTOR_RESPONSE_BOUNDARY.md`.
 
+The separate `3+0+0` excess-mode profile has only two physical seven-cell
+placements.  Its maximal-exterior-surplus chart is excluded by a nonzero
+row-zero response against two distinct target lines.  Its cubic-exterior
+chart has an exact zero-absorption divisor: the three independent excess
+forms combine into the one outgoing boundary colour and vanish in the
+quotient, while the target also vanishes.  Thus all three mode profiles meet
+a sharp ordinary-quotient boundary.
+
 The useful new object is instead the marked pair-deletion response matrix
 
 ```text

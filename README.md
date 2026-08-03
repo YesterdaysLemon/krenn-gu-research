@@ -330,7 +330,8 @@ and
 [`ARBITRARY_PERMANENT_THREE_EXCESS_INELIGIBLE_NINTH_CELL_EXCLUSION_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_INELIGIBLE_NINTH_CELL_EXCLUSION_THEOREM.md).
 
 The bare theta has a different boundary.  Exact `1+1+1` and `2+1+0`
-one-open-port charts show that boundary-sector killing, deletion of
+one-open-port charts, together with a `3+0+0` zero-absorption chart, show
+that boundary-sector killing, deletion of
 word-ineligible chord directions, and ordinary flattenings can leave
 exactly a nonzero monochromatic target slice.  The local defect-free theta
 still supplies a new route: its signless permanental cofactor equation and

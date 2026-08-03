@@ -57,6 +57,18 @@ def main() -> None:
     assert Counter((1, 0, 1, 0, 1)) == Counter((0, 1, 0, 1, 1))
     assert sum((1, 2, 2)) == 5
 
+    # 3+0+0 zero absorption: three independent row-zero forms sum to e2.
+    l0_300 = sp.Matrix((1, 1, 0))
+    l1_300 = sp.Matrix((1, -1, 0))
+    l2_300 = sp.Matrix((-2, 0, 1))
+    assert sp.Matrix.hstack(l0_300, l1_300, l2_300).det() != 0
+    residue_300 = l0_300 + l1_300 + l2_300
+    assert residue_300 == sp.Matrix((0, 0, 1))
+    assert residue_300[:2, 0] == sp.Matrix((0, 0))  # zero modulo span(e2)
+    assert {0}.isdisjoint({1})  # distinct surviving target lines
+    assert Counter((2, 1, 2, 0, 2)) == Counter({0: 1, 1: 1, 2: 3})
+    assert sum((1, 2, 2)) == 5
+
     # A torically transported signless equation and a Segre minor clash.
     r11, r12, r21, r22 = sp.symbols("r11 r12 r21 r22", nonzero=True)
     symmetric = r11 * r22 + r12 * r21
@@ -65,7 +77,7 @@ def main() -> None:
     assert sp.expand(symmetric - alternating) == 2 * r12 * r21
 
     print("bare-theta absorption and cofactor-response boundary: PASS")
-    print("six anchor quadrics, two exact residues, and factor-2 response clash")
+    print("six anchor quadrics, three absorption charts, and factor-2 clash")
 
 
 if __name__ == "__main__":

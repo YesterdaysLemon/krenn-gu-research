@@ -38,6 +38,13 @@ def main():
     assert residue_210 == (0, -3)
     assert counts((1, 0, 1, 0, 1)) == counts((0, 1, 0, 1, 1))
 
+    l0_300 = (1, 1, 0)
+    l1_300 = (1, -1, 0)
+    l2_300 = (-2, 0, 1)
+    residue_300 = tuple(l0_300[i] + l1_300[i] + l2_300[i] for i in range(3))
+    assert residue_300 == (0, 0, 1)
+    assert counts((2, 1, 2, 0, 2)) == {0: 1, 1: 1, 2: 3}
+
     r11, r12, r21, r22 = 2, 3, 5, 7
     symmetric = r11 * r22 + r12 * r21
     alternating = r11 * r22 - r12 * r21
