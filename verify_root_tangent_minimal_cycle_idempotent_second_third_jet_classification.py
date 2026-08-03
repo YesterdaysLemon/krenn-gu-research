@@ -65,10 +65,43 @@ def main() -> None:
     assert hadamard(hadamard(tangent_c, tangent_c), tangent_a) == tangent_a
     assert hadamard(hadamard(tangent_c, tangent_c), tangent_b) == tangent_b
 
+    # In an even alternating cycle the A and B edge sets are distinct perfect
+    # matchings, but both delete the complete root set.  Ten roots are a fixed
+    # exact replay of the arbitrary 2k incidence formula in the note.
+    cycle_order = 10
+    matching_a = tuple((index, index + 1) for index in range(0, cycle_order, 2))
+    matching_b = tuple(
+        ((index + 1) % cycle_order, (index + 2) % cycle_order)
+        for index in range(0, cycle_order, 2)
+    )
+    roots_a = {vertex for edge in matching_a for vertex in edge}
+    roots_b = {vertex for edge in matching_b for vertex in edge}
+    assert roots_a == roots_b == set(range(cycle_order))
+    assert {frozenset(edge) for edge in matching_a} != {
+        frozenset(edge) for edge in matching_b
+    }
+
+    # Both graph derivatives are scalar multiples of the same complementary
+    # tensor C_R, hence have rank at most one.  The GHZ targets already have
+    # rank two on any one remaining three-mode port.
+    c_0, c_1, c_2, scalar_a, scalar_b = sp.symbols("c_0 c_1 c_2 a b")
+    common_cofactor = sp.Matrix((c_0, c_1, c_2))
+    graph_derivatives = sp.Matrix.hstack(
+        scalar_a * common_cofactor, scalar_b * common_cofactor
+    )
+    for first_row in range(3):
+        for second_row in range(first_row + 1, 3):
+            minor = graph_derivatives.extract((first_row, second_row), (0, 1)).det()
+            assert sp.expand(minor) == 0
+    ghz_derivatives = sp.Matrix.hstack(tangent_a, tangent_b)
+    assert ghz_derivatives.rank() == 2
+
     print("projective Hadamard fixed-point factor u*v*(v-u): VERIFIED")
     print("second-jet survivor classes A/B/C: VERIFIED")
     print("third-jet adjacency forces A-B alternation and even cycles")
     print("alternating symmetric formal edge blocks: VERIFIED")
+    print("full-root A/B matchings share one deletion cofactor: VERIFIED")
+    print("common graph line versus independent GHZ targets: CONTRADICTION")
     print("graph_search=0 support_search=0 colour_word_search=0")
     print("GLOBAL_STATUS=UNRESOLVED")
 

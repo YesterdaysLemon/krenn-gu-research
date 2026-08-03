@@ -78,9 +78,38 @@ def main() -> None:
         for index in range(len(alternating))
     )
 
+    # Independent incidence replay at twelve roots: the two alternating edge
+    # sets differ but delete the same complete root set.
+    cycle_order = 12
+    matching_a = tuple((index, index + 1) for index in range(0, cycle_order, 2))
+    matching_b = tuple(
+        ((index + 1) % cycle_order, (index + 2) % cycle_order)
+        for index in range(0, cycle_order, 2)
+    )
+    deleted_a = {vertex for edge in matching_a for vertex in edge}
+    deleted_b = {vertex for edge in matching_b for vertex in edge}
+    assert deleted_a == deleted_b == set(range(cycle_order))
+    assert {frozenset(edge) for edge in matching_a} != {
+        frozenset(edge) for edge in matching_b
+    }
+
+    # Two scalar multiples of a common cofactor have every 2-by-2 minor zero.
+    common_cofactor = (2, -1, 3)
+    graph_a = tuple(5 * entry for entry in common_cofactor)
+    graph_b = tuple(7 * entry for entry in common_cofactor)
+    assert all(
+        graph_a[first] * graph_b[second]
+        - graph_a[second] * graph_b[first]
+        == 0
+        for first in range(3)
+        for second in range(first + 1, 3)
+    )
+    assert tangent_a[1] * tangent_b[2] - tangent_a[2] * tangent_b[1] == 1
+
     print("independent integer fixed-point and adjacency audit: PASS")
     print("independent symmetric edge-block audit: PASS")
-    print("even alternating formal survivor: PASS")
+    print("even alternating selected-low-jet survivor: PASS")
+    print("independent full-root common-cofactor obstruction: PASS")
     print("enumerations=0 global_status=UNRESOLVED")
 
 

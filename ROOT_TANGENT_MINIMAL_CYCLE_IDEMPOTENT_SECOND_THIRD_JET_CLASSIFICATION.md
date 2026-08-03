@@ -2,12 +2,13 @@
 
 ## Status
 
-**Exact arbitrary-order characteristic-zero classification and sharp formal
-boundary.**  Suppose projectively constant root--blocker first derivatives
+**Exact characteristic-zero low-jet classification and full-root
+obstruction.**  Suppose projectively constant root--blocker first derivatives
 are repaired by a minimal cycle of root--root tangent companions.  The two
 incident complementary-cofactor quotient lines form a basis at every root,
-and no additional companion class survives on the tangent directions that
-isolate one cycle edge.
+and the root--root companion support on the restricted slice is exactly this
+cycle.  In particular, no off-cycle tangent--tangent block that is invisible
+to the first jet becomes effective in a higher selected derivative.
 
 The mixed second jet forces every shared edge class to be a projective fixed
 point of coordinatewise squaring.  There are exactly three:
@@ -26,9 +27,18 @@ its exceptional directions instead of assuming the edge parameters avoid
 formal edge-block realization of every first jet and of all selected tests
 used in the proof, so the conclusion is sharp for this jet subsystem.
 
-The complementary classes are still formal.  No simultaneous principal-
-hafnian realization, full mixed tensor identity, `P_7` exclusion, or global
-Krenn--Gu proof is claimed.
+The selected low-jet survivor is nevertheless impossible for the complete
+restricted GHZ jet.  Varying every root in the `A` direction selects the
+`A` perfect matching, while varying every root in the `B` direction selects
+the `B` perfect matching.  Both matchings delete exactly the same root set,
+so both graph derivatives are scalar multiples of one common complementary
+principal hafnian.  The two GHZ derivatives are nonzero independent pure
+tensors.  This common-cofactor collision excludes the entire minimal-cycle
+topology under the stated hypotheses.
+
+The complementary classes in the sharp low-jet model are still formal.  No
+simultaneous principal-hafnian realization, nonminimal companion exclusion,
+`P_7` exclusion, or global Krenn--Gu proof is claimed.
 
 ## 1. Normalized tangent quotient
 
@@ -196,7 +206,59 @@ does not construct blocker-edge data whose complementary principal hafnians
 are the prescribed alternating classes, and it does not test nonselected
 higher jets.
 
-## 5. Consequence for the coordinate-boundary program
+## 5. The full-root cofactor collision excludes the survivor
+
+Let the alternating cycle have length `2k`, let `R` be its complete root
+set, and assume at least one unvaried three-mode port remains.  The `A` edges
+and the `B` edges are the two perfect matchings
+
+```text
+P_A={{0,1},{2,3},...,{2k-2,2k-1}},
+P_B={{1,2},{3,4},...,{2k-1,0}}.                    (18)
+```
+
+Vary every root in direction `y_A=(0,1,0)`.  At each root this direction
+annihilates the incident `B` companion and isolates the incident `A`
+companion.  Projectively constant root--blocker terms vanish on tangent
+directions, and the minimality hypothesis kills every additional selected
+companion.  Hence `P_A` is the unique effective root matching.  The same
+argument with `y_B=(0,0,1)` makes `P_B` the unique effective root matching.
+
+Both perfect matchings delete the same set `R`.  If
+
+```text
+C_R=haf G[V\R]                                                   (19)
+```
+
+is the remaining principal-hafnian tensor, the two graph derivatives
+therefore lie on the common line `K C_R`; their edge-block evaluations only
+change the two scalar multipliers.  This remains true for arbitrary
+tangent--tangent corrections on the cycle edges.
+
+On the normalized GHZ side, if `m>=1` ports remain, the same two derivatives
+are nonzero scalar multiples of
+
+```text
+e_1 tensor ... tensor e_1,       e_2 tensor ... tensor e_2,        (20)
+```
+
+with `m` factors.  These pure tensors are linearly independent.  Thus they
+cannot both lie on `K C_R`; if `C_R=0`, neither nonzero target can be
+matched, and if `C_R!=0`, at most one independent target line can be
+matched.
+
+### Theorem 3 (full-root common-cofactor obstruction)
+
+No even alternating `A/B` minimal cycle realizes the complete restricted
+GHZ jet when at least one unvaried three-mode port remains.  Combined with
+Theorems 1 and 2, no minimal tangent-companion cycle satisfying the opening
+hypotheses realizes that jet.
+
+The obstruction is structural: it compares two exact derivatives and the
+principal deletion set they share.  It performs no graph, support, or
+colour-word enumeration.
+
+## 6. Consequence for the coordinate-boundary program
 
 The projectively constant companion route is no longer a continuous family
 at minimal degree.  Exact second/third jets reduce it to one discrete
@@ -205,16 +267,18 @@ topology:
 ```text
 minimal tangent cycle
   -> Hadamard-idempotent edge classes
-  -> even alternating binary cycle.                                (18)
+  -> even alternating binary cycle
+  -> full-root common-cofactor collision.                           (21)
 ```
 
-A genuine next obstruction must therefore do at least one of the following:
+A surviving companion construction must therefore do at least one of the
+following:
 
-1. exclude simultaneous principal-hafnian realization of the alternating
-   `A/B` cofactor classes;
-2. use a nonselected fourth or higher root jet;
-3. prove that a third effective companion class is unavoidable; or
-4. leave the projectively constant root--blocker boundary.
+1. add an effective companion outside the minimal cycle on at least one of
+   the two uniform tangent selections;
+2. introduce a third effective complementary-cofactor line;
+3. make the root--blocker layer nonprojective on the tangent plane; or
+4. leave the minimal-cycle boundary in another explicitly identifiable way.
 
 No support or colour-word enumeration is involved.
 
@@ -224,9 +288,11 @@ No support or colour-word enumeration is involved.
 generic minimal-cycle edge classes:          EXCLUDED at second jet;
 exceptional second-jet classes:              A, B, C only;
 C on a minimal cycle:                        EXCLUDED at third jet;
-surviving minimal-cycle topology:            EVEN ALTERNATING A/B;
+selected low-jet survivor:                    EVEN ALTERNATING A/B;
 selected first/second/third jet subsystem:    FORMALLY REALIZED;
-principal-hafnian cofactor realization:      UNKNOWN;
+alternating survivor in the full-root jet:    EXCLUDED;
+complete minimal-cycle topology:              EXCLUDED;
+nonminimal/additional companion systems:      UNKNOWN;
 full coordinate-monomial P7 branch:          UNKNOWN;
 global Krenn--Gu conjecture:                 UNRESOLVED.
 ```
@@ -241,6 +307,8 @@ uv run --with ruff ruff check verify_root_tangent_minimal_cycle_idempotent_secon
 ```
 
 The primary verifier checks the generic idempotent factor, all three fixed
-classes, the third-jet products, and the symmetric block identities.  The
-independent no-import audit repeats them with exact integer vectors and
-matrices.  Both are fixed symbolic replays, not graph or support searches.
+classes, the third-jet products, the symmetric block identities, the two
+distinct perfect matchings with their common deletion set, and independence
+of the two GHZ target tensors.  The independent no-import audit repeats the
+claims with exact integer vectors, matrices, and edge sets.  Both are fixed
+symbolic replays, not graph or support searches.
