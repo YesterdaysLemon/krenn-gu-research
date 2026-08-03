@@ -128,6 +128,50 @@ hafnian-deck locus, the three fixed target lines, synchronized depth-four
 compatibility, and legal nuisance separation.  See
 `P6_CLEAN_TWO_BY_THREE_SELECTOR_SEGRE_PULLBACK_AND_TORUS_PERMISSION_THEOREM.md`.
 
+### Four residuals need only the even Wick tower
+
+The complete residual-cumulant theorem originally used every residual
+subset.  On the parity-compatible four-residual window, all odd depths can
+instead be eliminated.  Normalize the empty, six pair, and full responses
+by the empty moment `M`, and write
+
+```text
+F_ij=a_ij+P_ij.
+```
+
+Physical representability is equivalent to the existence of four common
+port-linear forms `L_i` such that `P_ij=L_iL_j`, together with
+
+```text
+F_1234=haf(a)+sum_(ij) a_ij P_(Q minus {i,j})+P_12P_34.
+```
+
+This is a necessary-and-sufficient even-tower theorem: `log M` reconstructs
+the port graph, the constants `a_ij` reconstruct the residual graph, and the
+four `L_i` reconstruct the incidence rows.  It yields the observable
+division-free equations
+
+```text
+N_12N_34=N_13N_24=N_14N_23,
+MZ_1234=haf(a)M^2+M sum_(ij)a_ij N_(Q minus {i,j})+N_12N_34,
+```
+
+where `N_ij=Z_ij-a_ijM`.  These quartics are not sufficient without the
+common-row factorization: a fixed five-port pentad defect makes every
+displayed product zero while remaining nonrepresentable.
+
+This is the exact physical layer to intersect with the clean `P_6` Segre
+pullback.  The legality gap has also become exact.  The products above are
+square-free subset convolutions, while an all-blockers-present target tensor
+coefficient supplies only one total blocker set.  Local polarization does
+not create the missing blocker-deletion companions.  A new heralded or
+target-derived synchronization identity is still required.  The Gaussian
+moment-variety and loop-hafnian analogies are supported by
+[Amendola--Faugere--Sturmfels](https://arxiv.org/abs/1510.04654) and
+[Cardin--Quesada](https://arxiv.org/abs/2212.06067); the even-only
+elimination and P6 interface are proved directly here.  See
+`FOUR_RESIDUAL_EVEN_WICK_TOWER_AND_P6_SYNCHRONIZATION_THEOREM.md`.
+
 ### The exact corrected two-port ideal and its first pentad
 
 The arbitrary-order cofactor decomposition has an exact observable ideal at
@@ -2861,6 +2905,13 @@ every invertible P6 fan:               SEGRE PULLBACK MEETS COORDINATE TORUS;
 all-nonzero permanental P6 fan:        det=-2 VANDERMONDE^2 sum(t);
 GHZ alone forces shore/fan/face zero:  FALSE;
 physical synchronized P6 deck lift:   UNKNOWN;
+four-residual even response tower:     COMPLETE IFF CRITERION;
+four common pair rows P_ij=L_iL_j:     NECESSARY AND SUFFICIENT WITH TOP LAW;
+even complementary products:          THREE EQUAL DIVISION-FREE PRODUCTS;
+even full-response Wick law:           EXACT DIVISION-FREE IDENTITY;
+odd residual depths needed at q=4:     NO;
+quartic shell implies common rows:     FALSE BY FIVE-PORT PENTAD;
+clean P6 optional-blocker convolution: UNKNOWN;
 legal exposure of required synchronized decks: UNKNOWN;
 maximal q2 visible response map:  DOMINANT, exact Jacobian minor 360;
 conditional four-point selector: complementary z weights must be additive;

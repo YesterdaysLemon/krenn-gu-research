@@ -42,6 +42,19 @@ Physical hafnian-deck integrability, target-clean nuisance separation, and
 synchronized depth-four compatibility remain unknown.  See
 [`P6_CLEAN_TWO_BY_THREE_SELECTOR_SEGRE_PULLBACK_AND_TORUS_PERMISSION_THEOREM.md`](P6_CLEAN_TWO_BY_THREE_SELECTOR_SEGRE_PULLBACK_AND_TORUS_PERMISSION_THEOREM.md).
 
+Four residual vertices also admit a complete **even-depth** physical
+integrability test, so the unavailable singleton and triple residual decks
+can be eliminated rather than exposed.  After normalization by the empty
+deck, the six pair decks must be `a_ij+L_i L_j` for four common port-linear
+forms.  Their three complementary products agree, and the full residual
+deck is forced by one explicit quartic Wick identity.  Conversely these
+common-row and top equations reconstruct a graph, so the criterion is exact.
+This can be combined with the clean `P_6` Segre equations if the complete
+optional-blocker response polynomials are legally synchronized.  A fixed
+all-blockers-present tensor coefficient does not supply those subset
+convolutions, so that exposure remains unknown.  See
+[`FOUR_RESIDUAL_EVEN_WICK_TOWER_AND_P6_SYNCHRONIZATION_THEOREM.md`](FOUR_RESIDUAL_EVEN_WICK_TOWER_AND_P6_SYNCHRONIZATION_THEOREM.md).
+
 At one corrected two-port response depth, the universal algebraic obstruction
 is now completely identified.  After subtracting `hB_uv`, the scalar port
 array is exactly the off-diagonal projection of the symmetric rank-at-most-`q`
