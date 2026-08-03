@@ -1057,6 +1057,20 @@ Schur/holonomy rank defects.  The accompanying localization theorem extends
 the torus-zero/coordinate-monomial dichotomy from two residual vertices to
 every even `Q`:
 [`RESIDUAL_HAFNIAN_COMMON_COFACTOR_GRAM_THEOREM.md`](RESIDUAL_HAFNIAN_COMMON_COFACTOR_GRAM_THEOREM.md).
+That Gram bound is now sharp on the torus-zero branch at every even residual
+order.  With all residual weights one except `A_01=-(q-2)`, the residual
+hafnian vanishes but
+`det C(A)=2^(q-2)(q-1)(q-3)^3((q-5)!!)^q` is nonzero.  The middle form needs
+exactly `q/2` synchronized bosonic channels in its canonical completion, but
+physical off-diagonal data can admit lower-rank completions (already one
+channel at `q=4`).  Only the two-residual case guarantees one channel before
+such incidence or completion collapse.  Graph structure can still help: a
+residual separator of size `s` bounds the designated cofactor cross-rank by
+`2^(s-1)`, and an articulation gives cross-rank one.  This affects `P_7` only
+when every relevant port pair is proved to cross the separator.  Thus the
+next useful condition is a cross-localizing separator, Schur defect, or
+deeper deletion identity, not `haf(A)=0` alone:
+[`RESIDUAL_HAFNIAN_TORUS_ZERO_FULL_RANK_COFACTOR_BOUNDARY.md`](RESIDUAL_HAFNIAN_TORUS_ZERO_FULL_RANK_COFACTOR_BOUNDARY.md).
 A separate majority-subset theorem says that, on `|S|=m+r` vertices of an
 order-`2m` witness, each contracted monochromatic pure tensor lies in the
 `r`th power of the internal-edge ideal.  At `r=1`, every entangled tensor

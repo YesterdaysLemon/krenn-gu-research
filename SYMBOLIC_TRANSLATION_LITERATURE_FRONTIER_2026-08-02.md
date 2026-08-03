@@ -1041,6 +1041,43 @@ sum, or construct the still-missing legal target marking.  Planarity alone
 is not the right condition: planar boundary measurements naturally have
 higher-rank Grassmannian minors.
 
+The general residual-hafnian Gram route has a parallel sharp boundary.  For
+every even residual order `q>=4`, the matrix with all edge weights one except
+`A_01=-(q-2)` obeys
+
+```text
+haf(A)=0,
+det C(A)=2^(q-2)(q-1)(q-3)^3((q-5)!!)^q !=0.
+```
+
+Thus the torus-zero choice does not lower the common cofactor rank.  Over
+`C`, a rank-`rho` symmetric middle form is a sum of exactly
+`ceiling(rho/2)` symmetrized rank-one channel pairs, so the example's
+canonical middle form needs `q/2` synchronized permanent channels.  This is
+not an observable lower bound: at `q=4` its physical off-diagonal data have
+a one-channel completion.  Only `q=2` guarantees the single two-row
+permanent before incidence or completion collapse.  A real graph separator
+can do better on cross-localized data: a residual separator of size `s`
+factors the cofactor cross-block through at most `2^(s-1)` parity subsets.
+It affects the `P_7` aggregate only if all relevant port pairs cross.  See
+`RESIDUAL_HAFNIAN_TORUS_ZERO_FULL_RANK_COFACTOR_BOUNDARY.md`.
+
+This introduces the exact physical invariant
+`chi_off(M)=min_d ceiling(rank(M+diag(d))/2)`, a complex symmetric
+minimum-rank completion problem.  At `q=4`, `chi_off=1` although the
+canonical channel number is two.  The appropriate neighboring literature is
+therefore symmetric matrix completion, not just hafnian rank: Bernstein,
+Blekherman, and Lee's
+[*Typical ranks in symmetric matrix completion*](https://arxiv.org/abs/1909.06593)
+supplies the generic-completion viewpoint, while this conjecture requires
+exact nongeneric cofactor strata and then a further quotient by the Laplace
+map.
+
+Priority on the residual route: force a small separator from blocker
+incidence, expose an invertible anchor for the exact Schur defect, or impose
+the first lower mixed-Hessian/four-point cumulant.  Do not infer a rank drop
+from `haf(A)=0`.
+
 ## Ranked proof program
 
 1. **Phase-decorated `B_3` exchange complex.**  Define the missing incidence
@@ -1067,6 +1104,8 @@ new exact local invariant:        additive/toric B_3 phase variety;
 new boundary support theorem:     all sectors descend to L=B D^* C links;
 new weighted boundary object:     all-sector zeon jet J_W;
 new aligned-port theorem:         aligned one-chord 2+1+0 fully excluded;
+new residual rank boundary:       h=0 still permits rank C(A)=q;
+new residual locality tool:       separator cross-rank <=2^(s-1);
 highest-priority invented object: marked pair-deletion response jet;
 highest-priority literature tool: signless Kuo vs Segre compound;
 full proof or counterexample:      NOT YET;
