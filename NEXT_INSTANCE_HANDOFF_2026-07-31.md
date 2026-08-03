@@ -1589,6 +1589,12 @@ primary and no-import audit independently reproduce the entire census.
 Four-or-more additions, arbitrary enlarged support, and arbitrary `P_7`
 remain open:
 [`ROOT_M7_ALL_ENDPOINT_LEGAL_THREE_INCIDENCE_SUPPORTS_EXCLUSION.md`](ROOT_M7_ALL_ENDPOINT_LEGAL_THREE_INCIDENCE_SUPPORTS_EXCLUSION.md).
+The immediate fourth shell above those nine relative triples is also closed.
+Its 908 distinct legal quadruples split into 898 retaining `C_2002000` and
+ten escapes; exact replacement certificates `C_0220212` and `C_0210220`
+exclude the escapes in counts eight and two.  The complete 4,598,126-support
+quadruple universe was not enumerated and remains unknown:
+[`ROOT_M7_RELATIVE_TRIPLE_FOURTH_INCIDENCE_SHELL_EXCLUSION.md`](ROOT_M7_RELATIVE_TRIPLE_FOURTH_INCIDENCE_SHELL_EXCLUSION.md).
 Nor can one obtain a contradiction from scalar principal-cofactor algebra
 alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal
 two-vertex cofactors at a fixed perfect-matching point splits into one

@@ -646,6 +646,12 @@ six prior certificate words.  The single new word `2002000` divides
 `C0*C1*C2` on all nine, so the complete shell has zero tensor survivors.
 Four-or-more additions and arbitrary Hall-satisfying `P_7` remain unknown:
 [`ROOT_M7_ALL_ENDPOINT_LEGAL_THREE_INCIDENCE_SUPPORTS_EXCLUSION.md`](ROOT_M7_ALL_ENDPOINT_LEGAL_THREE_INCIDENCE_SUPPORTS_EXCLUSION.md).
+The one-incidence extension shell above the nine relative triples is closed
+too.  It has 908 distinct legal quadruples: 898 retain the `C_2002000`
+certificate, while ten escapes split between eight `C_0220212` and two
+`C_0210220` exact divisibilities.  This is not the complete 4,598,126-support
+quadruple shell, which remains unknown:
+[`ROOT_M7_RELATIVE_TRIPLE_FOURTH_INCIDENCE_SHELL_EXCLUSION.md`](ROOT_M7_RELATIVE_TRIPLE_FOURTH_INCIDENCE_SHELL_EXCLUSION.md).
 Even scalar complementary-hafnian algebra supplies no hidden relation on
 the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
 Jacobian of the complete principal-cofactor map at a perfect-matching point
