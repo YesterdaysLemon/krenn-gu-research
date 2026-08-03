@@ -3118,8 +3118,9 @@ strong-Lefschetz context and Feinsilver's Boolean `sl_2` model supply the
 ambient theory, while (39), (41), and (42) are the new P7 identities.  See
 `P7_PHYSICAL_LEAF_ANNIHILATOR_EXTENSION_AND_QUOTIENT_SYZYGY_THEOREM.md`.
 
-Both the rank-20 structured-syzygy torus and the rank-at-most-19 physical
-extension torus remain unknown.
+Both the rank-20 and rank-at-most-19 physical extension tori remain unknown.
+The structured-syzygy condition is no longer an additional rank-20 test, as
+the Boolean transport below proves it automatic on every physical extension.
 
 ## 3 August projected-Veronese ramification transfer
 
@@ -3268,6 +3269,60 @@ determinantal geometry supply the surrounding theories; the full-edge
 injectivity and branch counts are the new transfer.  See
 `P7_LEAF_APOLAR_GORENSTEIN_HILBERT_RESONANCE_AND_ESSENTIAL_SYZYGY_THEOREM.md`.
 
+## 3 August Boolean-Lefschetz structured-cubic closure
+
+The physical extension equations force more than the Hilbert vector alone.
+On the total-zero hyperplane `G_0` of seven-leaf quadratics, put
+
+```text
+T=I+ell partial.
+```
+
+The Boolean `sl_2` decomposition is
+
+```text
+G_0=ker(partial:A_2->A_1) direct-sum ell P_1,
+spec(T)=1^14,6^6,                 T^(-1)=I-ell partial/6.       (55)
+```
+
+Let `K=2ell A+tF` be the nonzero physical quadratic annihilator,
+`Omega=ell^2/2`, and `s=sigma(K)`.  The two quadratics `K,Omega` are
+independent, and
+
+```text
+H=s Omega-21K,                  G=T^(-1)H                       (56)
+```
+
+are nonzero with `G` total-zero.  The identities `FK=0` and `ell F^2=0`
+give both `AK` and `AOmega` in `Ann_3(F)`.  Therefore
+
+```text
+C_G=2AG-t(partial G)F
+   =2AH-(partial G)K in Ann_3(F).                                (57)
+```
+
+This is an explicit nonzero structured kernel direction, so every physical
+P7 leaf extension is quotient singular, including rank 20.  The sharper
+class formula is
+
+```text
+[C_G]=-(t sigma(K)/2)[ell F]
+       in Ann_3(F)/(A_1 Ann_2(F)).                               (58)
+```
+
+Thus `sigma(K)=0` makes the canonical cubic quadratically generated, while
+otherwise its essential placement is governed by the single class
+`[ell F]`.  On rank 20, `[Omega]` is nonzero in the apolar degree-two
+quotient and `[A][Omega]=0`; equivalently the middle multiplication map and
+the second higher Hessian of the Macaulay dual quintic vanish at `A`.
+
+This closes the former structured determinant but not the extension
+incidence.  No full-edge `F,A,t` satisfying the physical extension equations
+is constructed or excluded.  Boolean `sl_2` and mixed-Hessian theory supply
+the neighboring language; the covariants (56)--(58) are the new direct
+transfer.  See
+`P7_STRUCTURED_CUBIC_BOOLEAN_LEFSCHETZ_TRANSPORT_AND_MIDDLE_HESSIAN_VANISHING_THEOREM.md`.
+
 ## Ranked proof program
 
 0. **Resolve the legal pullback of target incidence.**  The ambient equation
@@ -3389,7 +3444,11 @@ physical leaf rank-20 branch:        ONE ANNIHILATOR LINE;
 physical leaf rank<=19 branch:       RETAINED, UNKNOWN;
 quotient singularity on physical lift: STRUCTURED CUBIC SYZYGY;
 quotient rank versus leaf rank:      rank(D|P)<=rank(mu_2(F));
-physical leaf rank<=19 implies quotient singular: PROVED;
+every physical leaf extension is quotient singular: PROVED;
+canonical structured kernel direction: NONZERO, EXPLICIT;
+rank-20 structured determinant on physical incidence: ZERO;
+canonical essential class: -(t sigma(K)/2)[ell F];
+rank-20 middle second Hessian at A: ZERO;
 quotient rank<=18 structured syzygies: AT LEAST TWO;
 leaf four-hafnian map:                PROJECTED VERONESE;
 Boolean multiplication projection center: P^195;

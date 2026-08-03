@@ -248,6 +248,21 @@ rank-20 square determinant and rank-19 automatic singularity without
 promoting either branch to existence or emptiness.  See
 [`P7_LEAF_APOLAR_GORENSTEIN_HILBERT_RESONANCE_AND_ESSENTIAL_SYZYGY_THEOREM.md`](P7_LEAF_APOLAR_GORENSTEIN_HILBERT_RESONANCE_AND_ESSENTIAL_SYZYGY_THEOREM.md).
 
+The physical equations do decide the structured placement enough to close
+the quotient-singularity test.  On the total-zero quadratic hyperplane,
+`T=I+ell partial` has spectrum `1^14,6^6` and inverse
+`I-ell partial/6`.  For the physical annihilator `K=2ell A+tF`, the nonzero
+quadratic
+`H=sigma(K)Omega-21K` transports to a nonzero total-zero `G=T^(-1)H` with
+`C_G=2AG-t(partial G)F` in `Ann_3(F)`.  Consequently every physical P7 leaf
+extension is automatically quotient singular, including leaf rank 20.  Its
+essential class is exactly `-(t sigma(K)/2)[ell F]`.  On rank 20 the nonzero
+class `[Omega]` is killed by multiplication by `[A]`, so the middle second
+higher Hessian vanishes.  This removes the separate structured determinant;
+it still neither constructs nor excludes a full-edge physical extension.
+See
+[`P7_STRUCTURED_CUBIC_BOOLEAN_LEFSCHETZ_TRANSPORT_AND_MIDDLE_HESSIAN_VANISHING_THEOREM.md`](P7_STRUCTURED_CUBIC_BOOLEAN_LEFSCHETZ_TRANSPORT_AND_MIDDLE_HESSIAN_VANISHING_THEOREM.md).
+
 Vertex switching supplies no missing legal GHZ direction: it acts by
 diagonal congruence on every shore Hessian and only by a common projective
 scalar on the full root tensor.  For the fixed legal sensor, two coprime
