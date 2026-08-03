@@ -2969,14 +2969,79 @@ matrix would then obey
 `y_45 y_67=y_46 y_57=y_47 y_56`; the three exact columns give respectively
 `(126,696,300)`, `(180,1914,1080)`, and `(-46,2774,1350)`.  Therefore the
 nonsingular Gram route cannot finish the two-colour equations.  Singular
-Gram factors, a different scalar fibre, the other `4+2` placements, and the
-genuinely three-colour system remain open.  This is an exact symbolic
+factors and the other `4+2` placements on this section are closed by the
+tetrad-support theorem below; a different scalar fibre and the genuinely
+three-colour system remain open.  This is an exact symbolic
 fibre/Gram reduction, not a word or parameter search.  Representable-matroid
 contraction and symmetric matrix completion are the neighboring theories;
 see [Rosen--Sidman--Theran](https://arxiv.org/abs/1809.00865) and
 [Bernstein--Blekherman--Lee](https://arxiv.org/abs/1909.06593).  The rank and
 product claims here are proved directly.  See
 `P6_ARBITRARY_FIBRE_AXIS_PORT_DEFECT_AND_TWO_COLOUR_GRAM_ESCAPE_THEOREM.md`.
+
+## 3 August tau-zero tetrad-support closure
+
+The full `tau=0` axis kernel has arbitrary core--window matrices `X,Y` and a
+five-dimensional directed core circulation `Z`.  No rank assumption is now
+needed.  On a face with window pair `p,q`, define
+
+```text
+P_ij(Y;pq)=Y_ipY_jq+Y_iqY_jp,
+R_ij(Z)=Z_ikZ_jl+Z_ilZ_jk,
+```
+
+where `{k,l}` complements `{i,j}` in the four-core.  Three complete `4+2`
+matching placements give
+
+```text
+3b_pq+sum_(i<j)P_ij=0,
+b_pq(1+R_ij)+P_ij=0,
+Y_iq(DX)_ip=0                         (p!=q).          (33a)
+```
+
+Thus every symmetrized row-pair vector of `Y` lies on the fixed line `Kb`.
+For a full-support line which fails the complementary-product tetrads, the
+map `s -> offdiag(r symmetric s)` is injective whenever `r` has support at
+least three.  A graph on the four row indices then has exactly one nonzero
+edge: a vertex of degree two would make two neighboring rows proportional
+and force the tetrads, while two disjoint edges contradict injectivity.
+Therefore `Y` has exactly two nonzero rows.  Swapping colours gives the same
+conclusion for `X`.
+
+The mixed equation in (33a) forces the two row supports to be complementary
+and the two nonzero rows of `X` to sum to zero.  Their unique row-pair vector
+is consequently
+
+```text
+(-2r_pr_q)_(p<q),                                      (33b)
+```
+
+which satisfies all complementary-product tetrads.  Each exact face column
+violates those identities, a contradiction.  This excludes every singular
+and nonsingular factor and every core circulation surviving `5+1` at
+`tau=0`.
+
+The zero-circulation subcase has an arbitrary-order Euler explanation.  For
+a `2m`-core, the both-core equations and
+
+```text
+sum_(i<j)a_ij haf(A[C minus {i,j}])=m haf(A)          (33c)
+```
+
+turn the window equation into `(1-m)b haf(A)=0`.  The full circulation
+escapes this sum-only test through one exact quadratic energy `E(Z)=-3`, but
+the individual row-pair and mixed equations above still close it.
+
+Finally, the previous nonzero-`tau` theorem handles any pair of nonzero
+section parameters.  If `tau_c!=0` and `tau_d=0`, the majority-`c` axis
+equations kill the core-`d`/window-`c` entries, leaving a nonzero `3b_pq^c`
+on some face.  Hence every point of the explicit
+`(tau_0,tau_1,tau_2)` split-surjective section family is excluded.  This
+does not exclude other points of the much larger six-face scalar fibre.
+The tetrad language is adjacent to
+[Drton--Sturmfels--Sullivant](https://arxiv.org/abs/math/0509390); the
+row-support and mixed-location closure are proved directly here.  See
+`P6_TAU_ZERO_SINGULAR_GRAM_TETRAD_SUPPORT_AND_FOUR_PLUS_TWO_NO_GO.md`.
 
 ## 3 August equivariant primitivity-resultant transfer
 
@@ -3581,7 +3646,10 @@ tau=0 all 5+1 coefficients:              ZERO;
 tau=0 window-pair-minority 4+2 layer:    ZERO BY GRAM CONGRUENCE;
 tau=0 mixed core/window 4+2 residual:    Y_(i,q)(DX)_(i,p);
 nonsingular Gram route completes 4+2:    IMPOSSIBLE;
-singular Gram / other P6 scalar fibres:  UNKNOWN;
+singular Gram route completes 4+2:       IMPOSSIBLE;
+tau=0 full axis-kernel completion:       IMPOSSIBLE, CORE CIRCULATIONS INCLUDED;
+explicit three-parameter tau-section family: EXCLUDED;
+other P6 scalar six-face fibres:         UNKNOWN;
 P6 full two-/three-colour cancellation:  UNKNOWN;
 four-residual even response tower:     COMPLETE IFF CRITERION;
 four common pair rows P_ij=L_iL_j:     NECESSARY AND SUFFICIENT WITH TOP LAW;

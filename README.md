@@ -79,9 +79,23 @@ are the window pair.  The remaining mixed core/window placement is
 `Y_(i,q)(DX)_(i,p)`.  Nonsingular Gram completions cannot make all of these
 terms vanish, because that would force three complementary products of the
 face column to agree, contrary to each exact target column.  Singular Gram
-completions, other scalar fibres, and the full two- and three-colour systems
-remain unknown.  See
+completions are closed by the row-support theorem below; other scalar fibres
+and the full two- and three-colour systems remain unknown.  See
 [`P6_ARBITRARY_FIBRE_AXIS_PORT_DEFECT_AND_TWO_COLOUR_GRAM_ESCAPE_THEOREM.md`](P6_ARBITRARY_FIBRE_AXIS_PORT_DEFECT_AND_TWO_COLOUR_GRAM_ESCAPE_THEOREM.md).
+
+The `tau=0` section is now excluded at arbitrary port rank, including the
+entire five-dimensional core-circulation kernel.  The both-window and
+both-core `4+2` equations force all six symmetrized row-pair products of each
+core--window matrix onto one face-column line.  Because every exact column
+has full support and violates the rank-one tetrad identities, an injectivity
+lemma leaves exactly two nonzero rows.  The mixed core/window equations make
+the two row supports complementary and force one surviving row pair to be
+opposites, which restores the forbidden tetrad identity.  This also closes
+all singular Gram factors.  Combining it with the nonzero-`tau` axis theorem
+and a hybrid zero/nonzero argument excludes every point of the explicit
+three-parameter split-surjective section family.  Other points of the full
+six-face scalar fibre remain unknown.  See
+[`P6_TAU_ZERO_SINGULAR_GRAM_TETRAD_SUPPORT_AND_FOUR_PLUS_TWO_NO_GO.md`](P6_TAU_ZERO_SINGULAR_GRAM_TETRAD_SUPPORT_AND_FOUR_PLUS_TWO_NO_GO.md).
 
 Four residual vertices also admit a complete **even-depth** physical
 integrability test, so the unavailable singleton and triple residual decks
