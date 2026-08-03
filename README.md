@@ -298,7 +298,9 @@ kills every projected diagonal direction or confines the port tensor to one
 repeated-colour chart.  The only chart there that can imitate `Delta_3`
 sets an aligned theta-edge coefficient to zero, so it lies precisely on the
 nonalignment divisor.  Thus the aligned one-chord `s=4` branch is excluded;
-the `s=3`, `2+1+0`, and bare-theta branches remain open.  See
+when `s=3`, all boundary quotients are lines and a unique exterior selector
+retains port rank two.  Hence the entire aligned diagonal-`1+1+1` one-chord
+profile is excluded.  The `2+1+0` and bare-theta branches remain open.  See
 [`ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_CUT_COLOR_EXCLUSION_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_CUT_COLOR_EXCLUSION_THEOREM.md).
 
 The strict support theorem also transfers back to the graph whenever one of

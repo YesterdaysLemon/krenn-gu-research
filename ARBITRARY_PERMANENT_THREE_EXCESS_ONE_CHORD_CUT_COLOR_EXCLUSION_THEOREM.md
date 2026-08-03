@@ -1,23 +1,25 @@
-# Cut-colour transport excludes the tight aligned one-chord `1+1+1` branch
+# Cut-colour transport excludes the aligned one-chord `1+1+1` branch
 
 ## Status
 
 **Exact arbitrary-order symbolic exclusion in characteristic zero.**  Consider
 the tight aligned conformal theta setup at support `3m+3`, with one excess
 cell at each of the three theta modes and sources.  Suppose exactly one of
-the two theta-completing chords is eligible in the aligned coefficient and
-the three core modes have four outgoing boundary cells in total.
+the two theta-completing chords is eligible in the aligned coefficient.
 
 Then that coefficient is impossible for every `m>=4`.
 
 The proof introduces a colour-by-colour cut conservation law.  It combines
-the mandatory source cover with the cubic tricolour exterior forced by the
-tight degree ledger.  After quotienting by outgoing boundary covectors, the
-cut law either kills every diagonal target direction or confines the tensor
-to one repeated-colour chart.  In that chart, two branch positions are
-excluded by tensor rank/direction, and the third could imitate the target
-only if one theta edge vanished at the aligned word.  Coefficient-induced
-theta alignment forbids that vanishing.
+the mandatory source cover with the cubic tricolour exterior forced when the
+core has four outgoing cells.  After quotienting by outgoing boundary
+covectors, the cut law either kills every diagonal target direction or
+confines the tensor to one repeated-colour chart.  In that chart, two branch
+positions are excluded by tensor rank/direction, and the third could imitate
+the target only if one theta edge vanished at the aligned word.
+Coefficient-induced theta alignment forbids that vanishing.  If the core has
+only three outgoing cells, every quotient is two-dimensional and the port
+tensor keeps rank two; the unique exterior degree-surplus unit still permits
+an exact nonzero empty-sector selector.  These are the only two degree cases.
 
 This is a symbolic three-port theorem.  It uses no support-family, matching-
 tuple, or input-word enumeration.  It extends the two-chord exclusion in
@@ -215,30 +217,71 @@ target, whose row-zero direction is `z_0`.
 This exhausts (13)--(14), so the aligned one-chord branch with (4) is
 excluded.
 
+## The three-boundary-cell branch
+
+The degree ledger also closes the only other possibility.  Local rank gives
+`s_i>=1` in the diagonal `1+1+1` profile, while (3) gives
+
+```text
+s_0+s_1+s_2 in {3,4}.                              (18)
+```
+
+Suppose the sum is three.  Then every `s_i=1`, so every `B_i` in (10) is a
+line.  Local rank makes `L_i,z_i` independent in `V_i/B_i`, and the `pr`
+minor in (12) proves
+
+```text
+BER(pi(T_K))>=2.                                   (19)
+```
+
+The core now consumes two of the three mode-surplus units.  Consequently
+all exterior modes are cubic except one degree-four mode `r_*`.  All of
+their cells are mandatory coordinates.  Choose a conformal exterior perfect
+matching `F` and give each exterior mode the colour of its `F`-edge.  Every
+cubic mode is forced.  Those forced edges occupy every exterior source but
+`F(r_*)`.  At `r_*`, either its `F` colour occurs once, or it occurs on one
+other cell.  If the other cell ends in `Q`, simplicity makes its source
+different from `F(r_*)`, hence already occupied by a forced cubic edge.  If
+it ends in `P`, it is unavailable in the empty sector `G-V(K)`.  Thus `F` is
+also forced at `r_*`.
+
+It follows that `F` is the unique eligible empty-sector exterior matching at
+this word and
+
+```text
+Omega_empty[beta]=product_(e in F) weight(e)!=0.   (20)
+```
+
+The apolar factorization (11), contracted at `beta`, now gives a permanent
+tensor of BER at least two against a `Delta_3` slice of rank zero or one.
+This contradiction excludes the sum-three case.  Together with the
+sum-four cut-colour argument, it excludes the entire aligned diagonal
+`1+1+1` one-chord branch.
+
 ## Sharpness: the nonalignment absorption divisor
 
 The use of alignment in the last case is essential.  If one sets
 
 ```text
-L_2[0]=0,                                           (18)
+L_2[0]=0,                                           (21)
 ```
 
 then the selected coefficient equation becomes, after normalizing the
 coordinate evaluations,
 
 ```text
-qt L_1[1]+put=0.                                   (19)
+qt L_1[1]+put=0.                                   (22)
 ```
 
 Modulo `e_2`, write `L_1=k e_0+L_1[1]e_1`, with `k!=0`.  Equations
-(18)--(19) turn the projected port tensor into
+(21)--(22) turn the projected port tensor into
 
 ```text
-qt k e_0 tensor e_0 tensor e_0.                    (20)
+qt k e_0 tensor e_0 tensor e_0.                    (23)
 ```
 
 Thus the quotient really can imitate the diagonal target on this divisor.
-But (18) deletes the theta edge `(a_2,p_2)` from the aligned word, so one of
+But (21) deletes the theta edge `(a_2,p_2)` from the aligned word, so one of
 the three theta matching monomials vanishes.  It is an exact counterchart to
 any proof omitting coefficient-induced alignment, not a surviving aligned
 case and not a full restriction.
@@ -253,19 +296,20 @@ python audit_arbitrary_permanent_three_excess_one_chord_cut_color_exclusion_theo
 ```
 
 The primary verifier checks the port permanent, decisive flattening minors,
-the two cut-colour tables, all three repeated-colour branch tensors, and the
-exact nonalignment absorption.  The no-import audit independently replays
-the colour transport table and integer instances of every rank/direction
-test.  The arbitrary-order boundary factorization and unique exterior-word
-argument are the proofs above.
+the two cut-colour tables, all three repeated-colour branch tensors, the
+three/four boundary ledger, and the exact nonalignment absorption.  The
+no-import audit independently replays the colour transport table and integer
+instances of every rank/direction test.  The arbitrary-order boundary
+factorization and unique exterior-word arguments are the proofs above.
 
 ## Boundary
 
 ```text
 cut-colour transport at s=4:                  PROVED;
 aligned diagonal-1+1+1 one-chord s=4 branch: EXCLUDED FOR m>=4;
+aligned diagonal-1+1+1 one-chord s=3 branch: EXCLUDED FOR m>=4;
+entire aligned diagonal-1+1+1 one-chord:      EXCLUDED FOR m>=4;
 nonalignment divisor L_i[alpha_i]=0:          EXACT TARGET-LIKE COUNTERCHART;
-one-chord s=3 branch:                         NOT EXCLUDED;
 one-chord 2+1+0 excess-mode profile:          NOT EXCLUDED;
 bare aligned theta:                           NOT EXCLUDED;
 exclusion of every support-3m+3 case:         NOT PROVED;

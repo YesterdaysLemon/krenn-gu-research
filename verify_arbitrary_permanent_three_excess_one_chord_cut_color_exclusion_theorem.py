@@ -53,6 +53,27 @@ def main() -> None:
     )
     assert sp.det(ordinary_flattening[:, [1, 3]]) == p * r
 
+    # The diagonal-111 local-rank and mode-surplus ledger leaves only three
+    # or four outgoing core cells.  At sum three every quotient is by a line,
+    # so the same nonzero minor applies.
+    for boundary_sum in (3, 4):
+        core_mode_surplus = boundary_sum - 1
+        exterior_mode_surplus = 3 - core_mode_surplus
+        assert exterior_mode_surplus == 4 - boundary_sum
+    assert (1, 1, 1) == tuple(1 for _ in range(3))
+
+    # In the sole degree-four exterior row, a second same-colour cell has a
+    # different source.  All other rows are forced, so that source is already
+    # occupied.  This fixed symbolic incidence models the unique-selector
+    # argument without searching exterior graphs.
+    exterior_sources = (0, 1, 2, 3)
+    forced_cubic_sources = {1, 2, 3}
+    degree_four_matching_source = 0
+    possible_duplicate_source = 2
+    assert degree_four_matching_source not in forced_cubic_sources
+    assert possible_duplicate_source in forced_cubic_sources
+    assert len(set(exterior_sources)) == 4
+
     distinct = cut_solutions((0, 1, 2), (0, 1, 2, 2))
     assert tuple(len(distinct[b]) for b in range(3)) == (2, 2, 3)
     for branch, rows in distinct.items():

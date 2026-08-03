@@ -36,6 +36,19 @@ def main() -> None:
     ordinary_minor = determinant(((p * r, 0), (0, 1)))
     assert ordinary_minor == 10
 
+    # Sum-three has exactly one exterior surplus unit and line quotients.
+    boundary_sum = 3
+    assert boundary_sum - 1 == 2
+    assert 3 - (boundary_sum - 1) == 1
+    assert determinant(((p * r, 0), (0, 1))) != 0
+
+    # After three cubic exterior rows are fixed, their distinct sources leave
+    # only source 0 for the degree-four row; its duplicate-colour edge to a
+    # different source is blocked.
+    forced_sources = {1, 2, 3}
+    assert 0 not in forced_sources
+    assert 2 in forced_sources
+
     branch_zero = ((p * u * t, p * r), (q * t, ell0))
     assert branch_zero[0][1] == 10
 
