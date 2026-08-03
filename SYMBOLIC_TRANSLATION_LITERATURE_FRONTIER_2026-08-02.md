@@ -151,6 +151,36 @@ partner row for each of the 84 six- and nine eight-hafnian labels is a
 necessary and sufficient graph-side integrability test.  See
 `P7_TARGET_INCIDENCE_DETERMINANT_CLEARED_HAFNIAN_INTEGRABILITY_THEOREM.md`.
 
+Secant geometry supplies an unconditional pressure theorem on the legal
+sensor image.  The third secant of `Segre((P^2)^5)` has projective dimension
+32, witnessed by the three pure and 30 single-flip tangent words.  Therefore
+every projective 218-plane full-sensor image meets that secant in dimension
+at least eight.  Root-local `GL(3)^5` changes are legal: with contragredient
+root vectors they preserve sensor rank, pairwise-zero roots, contractions,
+and symmetric blocks.  Hence any torus-concise honest rank-three point in the
+mandatory border family produces a legal diagonal target-incidence chart.
+The exact remaining alternative is that the whole family is trapped in the
+nonconcise, colliding-summand, lower-rank, or root-coordinate boundary.
+
+At actual incidence the same geometry gives a small tangent criterion.  An
+`r`-term diagonal target has `10r` single-flip local-basis directions.  One-
+and two-term targets cannot cover the 22-dimensional incidence normal; a
+three-term target is locally transverse exactly when the 30-word space maps
+with rank 22 modulo `W+Delta`.  See
+`P7_LEGAL_LOCAL_BASIS_BORDER_GHZ_INTERSECTION_AND_SINGLE_FLIP_TRANSVERSALITY_THEOREM.md`.
+
+The degree-nine integrability theory also has a legal endpoint-torus action.
+Endpoint scaling acts diagonally on companion columns, fixes the full sensor
+image and target-incidence subspace, and transforms the pinned candidate graph
+by vertex scaling.  Every projective partner, overlap, Euler, and four-deck
+stress is a semi-invariant; only the required affine line amplitude moves,
+by the total endpoint-product character.  Consequently endpoint magnitudes
+cannot force a projective line obstruction.  If a projectively integrable
+incidence line exists, affine compatibility cuts exactly one codimension-one
+product character on its normalization orbit.  This remains conditional on
+existence of the line.  See
+`P7_LEGAL_ENDPOINT_TORUS_COVARIANCE_AND_AFFINE_LINE_NORMALIZATION_WALL.md`.
+
 There is now a parallel `P_6` chart.  Set all four-root pair blocks to zero
 and use a fixed legal six-blocker/two-residual companion system.  Its 70
 depth-four columns are independent in `3^4=81` channels, so every principal
@@ -162,16 +192,65 @@ passes the legal top-deck sensor threshold, without proving that a GHZ point
 meets the sensor or Jacobian open.  See
 `P6_FOUR_ROOT_FULL_H4_SENSOR_AND_TARGET_INCIDENCE_BOUNDARY.md`.
 
+The dimension-deficient `P_5` cell now has a different, compressed answer.
+Its three-root sensor has 27 channels for 35 four-hafnian labels, and one
+fixed legal chart is surjective with kernel dimension eight.  Nevertheless,
+the composite map from the 21 nonroot edges to the 27 root-tensor channels
+has full Jacobian rank 21 at the all-one graph.  Thus the physical graph is
+generically finite over the compressed observation even though the named
+four-deck is not linearly recoverable.  This is exactly the structured-
+variety viewpoint of Breiding--Gesmundo--Michalek--Vannieuwenhoven,
+[*Algebraic compressed sensing*](https://arxiv.org/abs/2108.13208), now with
+a legal fixed rather than generic measurement operator.
+
+It also suggests the **compressed target-incidence correspondence**.  The
+projective four-hafnian image `X subset P^34` has dimension 20.  For a
+surjective sensor `Gamma`, the inverse image of the three-dimensional
+diagonal target is an 11-plane.  The incidence calculation
+
+```text
+20+dim Gr(10,34)=260 < dim Gr(11,35)=264
+```
+
+puts arbitrary surjective sensors that can meet a nonzero physical target
+inside an ambient locus of codimension at least four.  Formal target fibers
+are automatic, but physical target incidence is exceptional.  The legal
+pullback of this locus remains unknown.  For branch control, the exact next
+object is the collision scheme
+`{(A,A'):F_4(A)-F_4(A') in ker Gamma}`, with its unavoidable diagonal and
+sign components.  See
+`P5_COMPRESSED_H4_PHYSICAL_TOMOGRAPHY_AND_TARGET_TANGENT_BOUNDARY.md`.
+
 The determinant boundary itself has a square-free circuit theory.  For the
 eight-vertex shore of `P_7`, a kernel vector of the pinned four-hafnian matrix
 is a degree-one annihilator of `Q_B^2` in the square-free algebra.  On the
-full edge torus every such circuit has support at least five: supports one
+full edge torus every such dependency has support exactly eight.  Supports one
 through four are excluded by zero-deck torus rigidity, injectivity of a
-triangle-star map, and a hyperbolic-product independence argument.  This is
+triangle-star map, and a hyperbolic-product independence argument.  Support
+five is excluded by a new conic reduction: after gauge normalization the five
+cross stars lie in one plane, a pair-product isomorphism identifies the
+three-support equations modulo a nondegenerate binary quadratic, and its two
+linear factors reduce to full-rank triple-incidence systems.  Support six is
+excluded by a second exact incidence reduction.  Three-support rows polarize
+all 15 internal edges through two cross-stars; four-support rows become the
+`W_(2,4)(6)` image of a reciprocal polarization edge form.  That square
+inclusion matrix has determinant `1458`, forcing the form to vanish and then
+contradicting the edge torus.  Support seven is the clean Boolean-Lefschetz
+case: its single-complement row operator factors as edge-to-triangle
+inclusion followed by multiplication from square-free degree three to degree
+four on seven variables.  The first map is injective and the second is the
+middle Lefschetz isomorphism, so every internal edge would vanish.  The only
+remaining torus branch has the exact intrinsic equation `ell Q_B^2=0` in the
+eight-variable square-free algebra.  Thus `Q_B^2` lies in the 14-dimensional
+primitive kernel of `A_4 -> A_5`; the open question is whether this primitive
+Boolean-square locus meets the 28-edge torus.  This is
 compatible with the strong-Lefschetz viewpoint; Cook's
 [*The Lefschetz properties of monomial complete intersections in positive characteristic*](https://arxiv.org/abs/1111.4979)
 records the characteristic-zero monomial-complete-intersection background,
-while the circuit proof here is self-contained.
+while the circuit proofs here are self-contained.  See
+`P7_PINNED_H4_TORUS_SUPPORT_FIVE_BINARY_QUADRATIC_EXCLUSION.md`,
+`P7_PINNED_H4_TORUS_SUPPORT_SIX_RECIPROCAL_POLARIZATION_EXCLUSION.md`, and
+`P7_PINNED_H4_TORUS_SUPPORT_SEVEN_BOOLEAN_LEFSCHETZ_EXCLUSION.md`.
 
 The smaller `P_6` boundary has an exact cubic escape.  Over `Q(omega)` with
 `omega^2+omega+1=0`, one all-edge-nonzero seven-vertex graph has pinned rank
@@ -188,8 +267,8 @@ The next decisive theorem must now act on the **legal pullback** of these
 incidence loci: either show it is empty on the full-sensor/pinned open, force
 one of the explicit degree-nine or four-deck stresses to be nonzero, or
 classify its descent to coordinate/Gram singular strata.  The surviving
-torus cases are now precise: `P_7` pinned circuits of sizes five through
-eight, and the `P_6` cubic-resonance alternative.  None is currently forced
+torus cases are now precise: the single full-support-eight `P_7` pinned
+branch and the `P_6` cubic-resonance alternative.  Neither is currently forced
 or excluded by the GHZ equations.
 
 There is, however, a genuinely nonlinear way around the depth ceiling on a
@@ -2210,11 +2289,13 @@ adding singleton rows is insufficient.  See
 0. **Resolve the legal pullback of target incidence.**  The ambient equation
    is now the rank-at-most-two `24 x 3` cokernel covariant, and its generic
    cofactor line has complete determinant-cleared graph-side tests.  Prove
-   that every legal line makes one degree-nine/four-deck stress nonzero, or
-   construct a legal incidence point and evaluate the unique candidate, or
-   prove that every component descends to a classified coordinate or
-   hyperbolic-Gram boundary.  The rank-222 chart and double star are the
-   mandatory open and singular controls.
+   that the mandatory at-least-eight-dimensional border-GHZ intersection
+   escapes the nonconcise/collision boundary, or that every legal line makes
+   one scale-free degree-nine/four-deck stress nonzero, or prove that every
+   component descends to a classified coordinate or hyperbolic-Gram
+   boundary.  The 30-word single-flip rank test, rank-222 chart, endpoint
+   torus, and double star are the mandatory tangent, open, gauge, and singular
+   controls.
 1. **Force two transverse nonprojective fans on one window.**  One fully
    polarized root pair has observation rank at most four on the six pair
    faces, and this defect is generically exactly two.  Two compatible pairs
@@ -2235,8 +2316,9 @@ adding singleton rows is insufficient.  See
    coefficient, herald/vacuum simulator, or synchronized direct-pair sector
    below the staircase.
 4. **Classify the surviving pinned circuits.**  On the `P_7` edge torus,
-   circuit sizes at most four are impossible; classify sizes five through
-   eight and intersect them with the degree-nine line tests.  For `P_6`, any
+   every singular dependency has full support eight.  Classify this primitive
+   middle-degree Boolean-square branch and intersect it with the degree-nine
+   line tests.  For `P_6`, any
    claimed torus exclusion must separately eliminate the exact
    primitive-cube-root two-column escape.
 5. **Physical-idempotent separator.**  Find a polynomial/covariant that
@@ -2251,8 +2333,10 @@ adding singleton rows is insufficient.  See
    equations.  A single coefficient cannot exclude simultaneous bypasses.
 7. **Force a line-integrability stress.**  The target-incidence line now has
    explicit degree-nine partner residuals and absolute four-deck equations.
-   Use the matching-polynomial form of the legal companion map to force one
-   residual nonzero, rather than searching over 219 free cofactor variables.
+   Mod out the endpoint torus first: magnitudes preserve every projective
+   stress and move only the total affine character.  Use the directional
+   matching data to force one residual nonzero, rather than searching over
+   219 free cofactor variables.
 8. **Coloured deletion-cumulant compatibility.**  Use two overlapping root
    windows to turn quotient minors into a global log-quadratic obstruction.
 9. **Conditional Pfaffian chart.**  Apply matchgate identities only if a
@@ -2271,11 +2355,20 @@ new diagonal target separation:  augmented rank 222, incidence locus proper;
 new P7 target-incidence quotient: 24x3 rank <=2, ambient codimension 22;
 generic P7 incidence cofactor set: one sensor-dependent projective line;
 line hafnian integrability test:   degree-nine stresses plus affine scale;
+mandatory P7 border-GHZ family:   projective dimension at least eight;
+torus-concise point in that family: UNKNOWN;
+three-term local-basis tangent test: rank 22 on 30 single flips;
+endpoint torus projective stresses: SEMI-INVARIANT;
+endpoint torus affine amplitude:   total-product character;
 physical points on a pinned line: at most one nonzero point;
 new full P6 top-deck sensor:      rank 70 in 81 channels;
 new P6 target separation:        augmented rank 73, ambient codimension nine;
-P7 torus pinned circuit girth:    at least five columns;
-P7 torus pinned circuits 5..8:   UNKNOWN;
+new compressed P5 tomography:    Jacobian rank 21 in 27 channels;
+new P5 inverse-target incidence: ambient codimension at least four;
+P7 torus pinned circuit support: exactly eight if singular;
+P7 full-support-eight branch:    UNKNOWN;
+primitive Boolean middle space:  dimension 14;
+primitive square meets edge torus: UNKNOWN;
 P6 torus pinned rank drop:       exact cubic-resonance control;
 new singular shallow-deck fibre: exact double-star dimension two;
 new arbitrary-order exclusion:    all 3m+2 equality faces impossible;

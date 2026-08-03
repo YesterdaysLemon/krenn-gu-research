@@ -44,6 +44,27 @@ at most one nonzero amplitude.  See
 and
 [`P7_TARGET_INCIDENCE_DETERMINANT_CLEARED_HAFNIAN_INTEGRABILITY_THEOREM.md`](P7_TARGET_INCIDENCE_DETERMINANT_CLEARED_HAFNIAN_INTEGRABILITY_THEOREM.md).
 
+There is also unavoidable low-border-rank geometry inside every full sensor.
+The third secant of the five-qutrit Segre has projective dimension 32, so
+every projective 218-plane sensor image meets it in dimension at least eight.
+A torus-concise honest rank-three point in that mandatory family can be sent
+to a diagonal GHZ tensor by legal root-local basis changes while preserving
+sensor rank and blocker/nonblocker contractions.  Whether the family escapes
+the nonconcise/collision/lower-rank boundary is unknown.  At an actual
+three-term incidence point, local-basis transversality is exactly a rank-22
+test on the 30 single-flip coordinate words.  See
+[`P7_LEGAL_LOCAL_BASIS_BORDER_GHZ_INTERSECTION_AND_SINGLE_FLIP_TRANSVERSALITY_THEOREM.md`](P7_LEGAL_LOCAL_BASIS_BORDER_GHZ_INTERSECTION_AND_SINGLE_FLIP_TRANSVERSALITY_THEOREM.md).
+
+The determinant-cleared line tests now have an exact legal torus covariance.
+Scaling all root edges at a nonroot endpoint preserves the sensor image and
+target incidence, sends the reconstructed graph through vertex scaling, and
+makes every projective degree-nine, overlap, Euler, and four-deck stress a
+semi-invariant.  Only the affine radial normalization moves, by the total
+endpoint-product character.  Thus endpoint magnitudes cannot force a
+projective obstruction; the remaining test must use scale-free directions or
+nonexistence of the legal incidence line.  See
+[`P7_LEGAL_ENDPOINT_TORUS_COVARIANCE_AND_AFFINE_LINE_NORMALIZATION_WALL.md`](P7_LEGAL_ENDPOINT_TORUS_COVARIANCE_AND_AFFINE_LINE_NORMALIZATION_WALL.md).
+
 The same program now reaches `P_6`.  With four roots, six blockers, two
 residual nonblockers, and zero root--root blocks, one legal integer chart
 labels all `binom(8,4)=70` principal four-hafnians in 81 root channels.
@@ -53,15 +74,39 @@ places any compatible full sensor on an ambient codimension-nine incidence
 locus.  See
 [`P6_FOUR_ROOT_FULL_H4_SENSOR_AND_TARGET_INCIDENCE_BOUNDARY.md`](P6_FOUR_ROOT_FULL_H4_SENSOR_AND_TARGET_INCIDENCE_BOUNDARY.md).
 
+The dimension-deficient `P_5` cell still admits nonlinear physical
+tomography.  One legal three-root chart has a surjective `27 x 35` companion
+sensor, and its composite with the seven-vertex four-hafnian map has full
+Jacobian rank 21.  Thus known companion data recover the 21 nonroot edges up
+to finitely many algebraic branches despite the impossibility of linearly
+labeling all 35 four-hafnians.  The corresponding projective four-hafnian
+image gives a new compressed target-incidence object: among arbitrary
+surjective sensors, inverse images of the diagonal target that meet the
+physical deck variety lie in codimension at least four.  The legal pullback
+and nonzero GHZ incidence remain unknown.  See
+[`P5_COMPRESSED_H4_PHYSICAL_TOMOGRAPHY_AND_TARGET_TANGENT_BOUNDARY.md`](P5_COMPRESSED_H4_PHYSICAL_TOMOGRAPHY_AND_TARGET_TANGENT_BOUNDARY.md).
+
 The pinned singular locus is now sharper but not eliminated.  In the
-eight-vertex `P_7` shore, every kernel circuit of the pinned four-hafnian
-matrix uses at least five columns at a full-edge-torus point.  Circuits of
-sizes one through four are impossible by a square-free annihilator argument.
+eight-vertex `P_7` shore, every kernel vector of the pinned four-hafnian
+matrix has full support at a full-edge-torus point.  Circuits of
+sizes one through four are impossible by a square-free annihilator argument,
+support five is excluded by an exact binary-quadratic reduction, and support
+six reduces to the invertible complement-inclusion operator `W_(2,4)(6)` on
+a reciprocal polarization edge form.  Support seven factors through
+edge-to-triangle inclusion and the invertible middle Boolean Lefschetz map.
+The only remaining torus branch is now the primitive Boolean-square locus:
+after normalizing the eight kernel entries, `ell Q_B^2=0`, so the graph
+quadratic square lies in a 14-dimensional primitive middle-degree space.
+Whether that locus meets the full 28-edge torus is unknown.
 The threshold cannot simply be transferred to `P_6`: an explicit
 all-edge-nonzero graph over `Q(omega)` has pinned rank six instead of seven,
 with nonzero four- and six-hafnians.  Its escape is the primitive-cube-root
 resonance class of a five-vertex zero four-deck.  See
-[`PINNED_H4_STAR_TORUS_CIRCUIT_GIRTH_AND_P6_CUBIC_ESCAPE.md`](PINNED_H4_STAR_TORUS_CIRCUIT_GIRTH_AND_P6_CUBIC_ESCAPE.md).
+[`PINNED_H4_STAR_TORUS_CIRCUIT_GIRTH_AND_P6_CUBIC_ESCAPE.md`](PINNED_H4_STAR_TORUS_CIRCUIT_GIRTH_AND_P6_CUBIC_ESCAPE.md),
+[`P7_PINNED_H4_TORUS_SUPPORT_FIVE_BINARY_QUADRATIC_EXCLUSION.md`](P7_PINNED_H4_TORUS_SUPPORT_FIVE_BINARY_QUADRATIC_EXCLUSION.md),
+[`P7_PINNED_H4_TORUS_SUPPORT_SIX_RECIPROCAL_POLARIZATION_EXCLUSION.md`](P7_PINNED_H4_TORUS_SUPPORT_SIX_RECIPROCAL_POLARIZATION_EXCLUSION.md),
+and
+[`P7_PINNED_H4_TORUS_SUPPORT_SEVEN_BOOLEAN_LEFSCHETZ_EXCLUSION.md`](P7_PINNED_H4_TORUS_SUPPORT_SEVEN_BOOLEAN_LEFSCHETZ_EXCLUSION.md).
 
 The generic open cannot be silently globalized.  On a nine-vertex
 double-star stratum, the complete `H_4/H_6/H_8` deck has an exact

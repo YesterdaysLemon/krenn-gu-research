@@ -266,13 +266,15 @@ size.
 
 | cell | roots | nonroots | top `H_4` labels | root channels | conclusion |
 |---|---:|---:|---:|---:|---|
-| `P_5` | 3 | 7 | 35 | 27 | complete linear deck impossible |
+| `P_5` | 3 | 7 | 35 | 27 | complete linear deck impossible; compressed physical map generically finite |
 | `P_6` | 4 | 8 | 70 | 81 | attained on the chart above |
 | `P_7` | 5 | 9 | 126 | 243 | contained in the attained full 219-label sensor |
 
 Thus `P_6` is the first balanced cell where the complete top deck fits and
 is now legally realized.  The remaining obstruction is not raw capacity but
 diagonal target incidence followed by physical hafnian integrability.
+The nonlinear `P_5` refinement is proved in
+`P5_COMPRESSED_H4_PHYSICAL_TOMOGRAPHY_AND_TARGET_TANGENT_BOUNDARY.md`.
 
 ## 7. Scope wall
 

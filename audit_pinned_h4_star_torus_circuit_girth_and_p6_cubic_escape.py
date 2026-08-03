@@ -222,7 +222,8 @@ def main() -> None:
     audit_rational_incidence_ranks()
     print("AUDIT PASS: independent triangle and four-triple incidence ranks")
     print("AUDIT SCOPE: stdlib only; imports_primary=0; searches=0; finite_fields=0")
-    print("AUDIT BOUNDARY: P7 support-five-through-eight circuits remain UNKNOWN")
+    print("AUDIT BOUNDARY: this replay leaves P7 supports five through eight")
+    print("CURRENT: later exact packages exclude five through seven; only eight remains")
 
 
 if __name__ == "__main__":

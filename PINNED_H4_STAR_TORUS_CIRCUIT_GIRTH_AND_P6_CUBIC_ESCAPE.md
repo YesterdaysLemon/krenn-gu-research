@@ -22,7 +22,14 @@ B_ij!=0 for every i<j,  N_B x=0,  x!=0
 Equivalently, every collection of at most four columns of `N_B` is linearly
 independent on the full edge torus.  This strengthens the earlier theorem
 that the zero `h_4` deck cannot meet that torus.  It does not prove that
-`N_B` has full rank there; circuits of sizes five through eight remain open.
+`N_B` has full rank there; this note leaves circuits of sizes five through
+eight open.  The later
+`P7_PINNED_H4_TORUS_SUPPORT_FIVE_BINARY_QUADRATIC_EXCLUSION.md` excludes size
+five, and
+`P7_PINNED_H4_TORUS_SUPPORT_SIX_RECIPROCAL_POLARIZATION_EXCLUSION.md`
+excludes size six, and
+`P7_PINNED_H4_TORUS_SUPPORT_SEVEN_BOOLEAN_LEFSCHETZ_EXCLUSION.md` excludes
+size seven, so the current surviving branch has full support eight.
 
 The eight-vertex threshold is sharp in the immediately relevant smaller
 case.  On seven vertices there is an exact graph over `Q(omega)`,
@@ -421,8 +428,9 @@ bound.
   (16) is an exact algebraic alternative that a target-incidence argument
   must exclude; mere nonvanishing of edge coordinates is insufficient.
 
-For P7, the surviving circuit sizes `5,6,7,8` are not yet classified.  They
-are the precise torus singular alternatives to intersect with the
+For P7, this note originally left circuit sizes `5,6,7,8`; the later exact
+exclusions leave only full support `8`.  It is the precise torus singular
+alternative to intersect with the
 determinant-cleared hafnian-realizability equations on the target cofactor
 line.
 
@@ -434,7 +442,10 @@ triangle-star injectivity on >=5 edge-torus vertices: PROVED;
 P6 seven-shore full-edge-torus pinned rank drop:      CONSTRUCTED;
 P6 control has nonzero h4 and h6 coordinates:         PROVED;
 P7 eight-shore torus circuits of size <=4:            IMPOSSIBLE;
-P7 eight-shore torus circuits of size 5..8:           UNKNOWN;
+P7 eight-shore torus circuit of size 5:               IMPOSSIBLE (LATER NOTE);
+P7 eight-shore torus circuit of size 6:               IMPOSSIBLE (LATER NOTE);
+P7 eight-shore torus circuit of size 7:               IMPOSSIBLE (LATER NOTE);
+P7 eight-shore torus circuit of size 8:               UNKNOWN;
 P7 pinned matrix full rank on entire edge torus:      UNKNOWN;
 target cofactor line not contained in pinned locus:   UNKNOWN;
 GHZ excludes the P6 cubic resonance:                  UNKNOWN;

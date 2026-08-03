@@ -211,7 +211,8 @@ def main() -> None:
     verify_zero_deck_ratio_factor()
     print("PASS: zero-H4 edge-torus exclusion ratio identity")
     print("SCOPE: searches=0 support_enumerations=0 finite_fields=0 project_imports=0")
-    print("BOUNDARY: P7 torus circuits of support five through eight remain UNKNOWN")
+    print("BOUNDARY: this replay leaves P7 supports five through eight")
+    print("CURRENT: later exact packages exclude five through seven; only eight remains")
 
 
 if __name__ == "__main__":
