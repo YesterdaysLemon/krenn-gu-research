@@ -55,6 +55,19 @@ mixed-colour coefficient equals `-10/3`, exposing the genuinely tensorial
 remaining obstruction.  See
 [`P6_PHYSICAL_SIX_FACE_HAFNIAN_SECTION_FOUR_DECK_SYNCHRONIZATION_AND_SEGRE_SHARPNESS.md`](P6_PHYSICAL_SIX_FACE_HAFNIAN_SECTION_FOUR_DECK_SYNCHRONIZATION_AND_SEGRE_SHARPNESS.md).
 
+That canonical section now has an exact tensorial no-go, even after every
+off-diagonal colour entry is freed.  The complete `5+1` mixed layer is one
+`72 x 56` axis operator for each colour pair.  A two-coordinate
+complement-sum covariant of the six pure faces makes its kernel exactly the
+five-dimensional space of directed core circulations; every off-diagonal
+entry touching the four-window is therefore zero.  A `4+2` word is then
+forced to equal `3b_pq`, which is nonzero for all eighteen exact Segre
+entries.  GHZ-to-GHZ local gauges are only a common colour permutation and
+vertexwise diagonal scalings, so they cannot erase this obstruction.  This
+excludes the canonical scalar section and its target-stabilizer orbit, not
+other scalar realizations in the large six-face fibre.  See
+[`P6_AXIS_COMPLEMENT_SUM_COVARIANT_OFFDIAGONAL_AND_GAUGE_NO_GO.md`](P6_AXIS_COMPLEMENT_SUM_COVARIANT_OFFDIAGONAL_AND_GAUGE_NO_GO.md).
+
 Four residual vertices also admit a complete **even-depth** physical
 integrability test, so the unavailable singleton and triple residual decks
 can be eliminated rather than exposed.  After normalization by the empty

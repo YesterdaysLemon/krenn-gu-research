@@ -2876,6 +2876,43 @@ or use the complete mixed system to force departure from `B=0`; simply
 adding singleton rows is insufficient.  See
 `P7_COMPLETE_FOUR_FACE_NULL_STRATUM_AND_PAIRED_DEPTH_SHARPNESS.md`.
 
+## 3 August tensor-axis transfer on the canonical P6 section
+
+The split-surjective scalar six-face construction has now been tested
+against the complete first mixed-colour layer.  For majority colour `c` and
+singleton colour `d`, all `5+1` coefficients on the six faces are one
+symbolic axis family
+
+```text
+sum_(u in S minus {v}) B_vu[d,c]
+    haf A^(c)[S minus {u,v}]=0.                      (32)
+```
+
+The six pure face values enter through the two-coordinate complement-sum
+covariant
+
+```text
+kappa_c=(y45+y67-y46-y57, y45+y67-y47-y56).         (33)
+```
+
+When the two relevant covariants are nonzero, the combined `72 x 56` axis
+operator has rank 51.  Its kernel is exactly the five-dimensional space of
+hollow directed core matrices with zero row and column sums.  In particular,
+every off-diagonal colour entry touching the four-window is forced to zero.
+The next `4+2` coefficient is then `3b_pq^(d)`.  All three exact Segre
+columns have nonzero `kappa`, all eighteen `b_pq` are nonzero, and one fixed
+coefficient is `3b_45^(2)=-10`.  Hence no off-diagonal completion of the
+canonical common-graph section is GHZ diagonal.
+
+The residual five-space is a directed-flow shadow of the mixed coefficient
+ideal; the complement-sum covariant is its two-dimensional matching-sum
+quotient.  This is a new problem-specific axis/circulation translation, not
+a colour-word search.  An exact GHZ stabilizer theorem also shows that every
+invertible local GHZ-to-GHZ gauge is monomial, so the nonzero mixed
+coefficient survives the whole target-stabilizer orbit.  Other scalar points
+in the split-surjective face fibre remain open.  See
+`P6_AXIS_COMPLEMENT_SUM_COVARIANT_OFFDIAGONAL_AND_GAUGE_NO_GO.md`.
+
 ## 3 August equivariant primitivity-resultant transfer
 
 The seven-leaf descent of the P7 quotient-singular branch now admits a
@@ -2887,23 +2924,23 @@ each five-set primitive equation by the common five-switch product makes the
 equations linear in `r_i=s_i^(-1)`.  They form a `C_7`-equivariant map
 
 ```text
-K_(a,b,c):K^7 -> K^21.                               (32)
+K_(a,b,c):K^7 -> K^21.                               (34)
 ```
 
 The three cyclic orbits in the codomain are the three distances of the
-missing edge.  On the character `r_i=t^i`, `t^7=1`, (32) is therefore just
+missing edge.  On the character `r_i=t^i`, `t^7=1`, (34) is therefore just
 three explicit homogeneous quadrics `E_1(t),E_2(t),E_3(t)` in `a,b,c`.
 Their degree-four Macaulay multiplication matrix has a fixed `15 x 15`
 minor satisfying
 
 ```text
 det M_*(1)=-2^5 3^9 5,
-det M_*(t)=-2^13 3^2 t^3(t+1) mod Phi_7(t).          (33)
+det M_*(t)=-2^13 3^2 t^3(t+1) mod Phi_7(t).          (35)
 ```
 
 Thus the three quadratic multiples span every quartic for all seven
 characters.  They have no common nonzero projective parameter, every
-character block of (32) is injective, and no nonzero switched-circulant
+character block of (34) is injective, and no nonzero switched-circulant
 seven-leaf square is primitive.  This includes all coordinate boundaries
 among `a,b,c` and uses no tuple enumeration.
 
@@ -2915,7 +2952,7 @@ minor or another exact elimination certificate.  Bamieh's circulant/DFT
 viewpoint supplies the simultaneous-diagonalization language, while the
 D'Andrea--Dickenstein determinant formulas supply the surrounding
 Macaulay/resultant vocabulary.  The switching reduction and the block
-certificates (33) are new to this problem.  See
+certificates (35) are new to this problem.  See
 `SEVEN_LEAF_SWITCHED_CIRCULANT_PRIMITIVE_SQUARE_NO_GO_THEOREM.md`.
 
 This closes only a structured infinite family inside `ell_L F^2=0`.
@@ -3088,6 +3125,12 @@ P6 face/H4 partner stresses:          36 IDENTITIES SATISFIED;
 P6 scalar torus faces meet every Segre fan: PROVED;
 three pure-colour sections in one block graph: CONSTRUCTED;
 that block graph target-clean:         FALSE, MIXED WORD=-10/3;
+canonical P6 axis operator:             RANK 51, NULLITY 5;
+canonical P6 port off-diagonals:        FORCED ZERO;
+canonical P6 forced 4+2 coefficient:    NONZERO;
+canonical P6 off-diagonal completion:   IMPOSSIBLE;
+canonical P6 GHZ-stabilizer orbit:       EXCLUDED;
+other P6 scalar six-face fibres:         UNKNOWN;
 P6 mixed-colour cancellation:          UNKNOWN;
 four-residual even response tower:     COMPLETE IFF CRITERION;
 four common pair rows P_ij=L_iL_j:     NECESSARY AND SUFFICIENT WITH TOP LAW;
