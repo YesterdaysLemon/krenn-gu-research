@@ -291,6 +291,16 @@ core and local rank three, an aligned conformal minimal theta cannot have
 both completing chords eligible in one coefficient for any `m>=4`.  See
 [`ARBITRARY_PERMANENT_THREE_EXCESS_APOLAR_BOUNDARY_QUOTIENT_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_APOLAR_BOUNDARY_QUOTIENT_THEOREM.md).
 
+The same quotient now reaches one layer farther when exactly one completing
+chord is eligible.  In the hard diagonal-`1+1+1`, four-boundary-cell case,
+exterior cubicity gives a colour-by-colour cut transport law.  It either
+kills every projected diagonal direction or confines the port tensor to one
+repeated-colour chart.  The only chart there that can imitate `Delta_3`
+sets an aligned theta-edge coefficient to zero, so it lies precisely on the
+nonalignment divisor.  Thus the aligned one-chord `s=4` branch is excluded;
+the `s=3`, `2+1+0`, and bare-theta branches remain open.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_CUT_COLOR_EXCLUSION_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_CUT_COLOR_EXCLUSION_THEOREM.md).
+
 The strict support theorem also transfers back to the graph whenever one of
 the root--blocker extraction lemmas applies.  Five roots with five tight
 blockers require at least 18 active contracted root--blocker covectors.  More
