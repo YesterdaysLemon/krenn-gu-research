@@ -139,6 +139,19 @@ quadratic/bilinear incidence `N=F^2/2`, `AF=tJN`, and
 does not yet prove that its full-edge physical intersection is empty.  See
 [`P7_PRIMITIVE_QUOTIENT_SINGULAR_APOLAR_RADIAL_BILINEAR_INCIDENCE_THEOREM.md`](P7_PRIMITIVE_QUOTIENT_SINGULAR_APOLAR_RADIAL_BILINEAR_INCIDENCE_THEOREM.md).
 
+The necessary seven-leaf equation in that lift now excludes a whole
+symmetry family without a parameter search.  If the leaf quadratic has
+cyclic-distance weights `a,b,c`, followed by arbitrary nonzero vertex
+switching, primitivity becomes a `C_7`-equivariant linear kernel in the
+reciprocal switches.  Fourier decomposition leaves three quadratic symbols
+per character.  One fixed degree-four Macaulay minor is nonzero at the
+trivial character and is `-2^13 3^2 t^3(t+1)` modulo `Phi_7` at every
+nontrivial character.  Hence the kernel is injective for every nonzero
+`(a,b,c)`: no nonzero switched-circulant square is primitive, including on
+the coordinate boundaries.  General asymmetric primitive squares and the
+physical singular torus remain unknown.  See
+[`SEVEN_LEAF_SWITCHED_CIRCULANT_PRIMITIVE_SQUARE_NO_GO_THEOREM.md`](SEVEN_LEAF_SWITCHED_CIRCULANT_PRIMITIVE_SQUARE_NO_GO_THEOREM.md).
+
 Vertex switching supplies no missing legal GHZ direction: it acts by
 diagonal congruence on every shore Hessian and only by a common projective
 scalar on the full root tensor.  For the fixed legal sensor, two coprime

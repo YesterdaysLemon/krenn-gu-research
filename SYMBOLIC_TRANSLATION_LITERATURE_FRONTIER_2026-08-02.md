@@ -2876,6 +2876,52 @@ or use the complete mixed system to force departure from `B=0`; simply
 adding singleton rows is insufficient.  See
 `P7_COMPLETE_FOUR_FACE_NULL_STRATUM_AND_PAIRED_DEPTH_SHARPNESS.md`.
 
+## 3 August equivariant primitivity-resultant transfer
+
+The seven-leaf descent of the P7 quotient-singular branch now admits a
+second translation, this time to finite-group harmonic analysis and
+homogeneous elimination.  Give the cyclic-distance classes of `K_7` weights
+`a,b,c` and then allow arbitrary nonzero vertex switches `s_i`.  A four-face
+of the Boolean square factors by the product of its four switches.  Dividing
+each five-set primitive equation by the common five-switch product makes the
+equations linear in `r_i=s_i^(-1)`.  They form a `C_7`-equivariant map
+
+```text
+K_(a,b,c):K^7 -> K^21.                               (32)
+```
+
+The three cyclic orbits in the codomain are the three distances of the
+missing edge.  On the character `r_i=t^i`, `t^7=1`, (32) is therefore just
+three explicit homogeneous quadrics `E_1(t),E_2(t),E_3(t)` in `a,b,c`.
+Their degree-four Macaulay multiplication matrix has a fixed `15 x 15`
+minor satisfying
+
+```text
+det M_*(1)=-2^5 3^9 5,
+det M_*(t)=-2^13 3^2 t^3(t+1) mod Phi_7(t).          (33)
+```
+
+Thus the three quadratic multiples span every quartic for all seven
+characters.  They have no common nonzero projective parameter, every
+character block of (32) is injective, and no nonzero switched-circulant
+seven-leaf square is primitive.  This includes all coordinate boundaries
+among `a,b,c` and uses no tuple enumeration.
+
+The reusable object suggested by this proof is an **equivariant primitivity
+resultant**: after switching makes primitivity linear in reciprocal vertex
+weights, decompose the resulting finite-group operator into irreducible
+blocks and certify each block's projective parameter ideal by a Macaulay
+minor or another exact elimination certificate.  Bamieh's circulant/DFT
+viewpoint supplies the simultaneous-diagonalization language, while the
+D'Andrea--Dickenstein determinant formulas supply the surrounding
+Macaulay/resultant vocabulary.  The switching reduction and the block
+certificates (33) are new to this problem.  See
+`SEVEN_LEAF_SWITCHED_CIRCULANT_PRIMITIVE_SQUARE_NO_GO_THEOREM.md`.
+
+This closes only a structured infinite family inside `ell_L F^2=0`.
+Arbitrary asymmetric seven-leaf primitive squares and the additional radial
+and apolar-annihilator equations remain open.
+
 ## Ranked proof program
 
 0. **Resolve the legal pullback of target incidence.**  The ambient equation
@@ -2991,6 +3037,9 @@ primitive rank-19 annihilator:      UNIQUE PROJECTIVELY;
 primitive rank<=18 annihilator:     RETAINED;
 physical singular radial lift:      QUADRATIC/BILINEAR SYSTEM;
 physical singular lift meets edge torus: UNKNOWN;
+seven-leaf switched-circulant primitive square: IMPOSSIBLE;
+arbitrary nonzero vertex switching in that family: INCLUDED;
+general seven-leaf primitive square: UNKNOWN;
 reciprocal-rank-one torus branch: IMPOSSIBLE;
 P6 torus pinned rank drop:       exact cubic-resonance control;
 new singular shallow-deck fibre: exact double-star dimension two;
