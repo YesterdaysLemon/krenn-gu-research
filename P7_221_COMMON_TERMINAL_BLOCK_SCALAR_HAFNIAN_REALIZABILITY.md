@@ -318,12 +318,15 @@ The sharp status wall is therefore
 formal scalar ledgers:                         REALIZED;
 one common terminal--terminal block:           REALIZED;
 common tensor-valued graph with pure charts:   REALIZED LATER;
-mixed blocker-colour cancellation:             UNKNOWN;
+mixed cancellation for these fixed charts:     EXCLUDED LATER;
+mixed cancellation for another scalar lift:    UNKNOWN;
 full P7 restriction and global Krenn--Gu:       UNRESOLVED. (31)
 ```
 
 See `P7_221_DIAGONAL_BLOCK_GLUING_AND_MIXED_WORD_BOUNDARY.md` for the later
-pure-chart gluing theorem and its exact mixed coefficient `1/7`.
+pure-chart gluing theorem and its exact mixed coefficient `1/7`.  See
+`P7_221_ARBITRARY_ALIGNMENT_DEGREE5_RECTANGLE_OBSTRUCTION.md` for the later
+exclusion of every core alignment of these particular charts.
 
 ## Replay
 

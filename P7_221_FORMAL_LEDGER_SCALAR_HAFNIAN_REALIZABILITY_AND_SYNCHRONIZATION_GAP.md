@@ -304,13 +304,16 @@ formal 2+2+1 ledger, colour by colour:       REALIZED;
 scalar principal-hafnian obstruction:        ABSENT;
 one common terminal block, chartwise:          REALIZED LATER;
 one tensor-valued graph on all pure charts:     REALIZED LATER;
-mixed blocker-colour cancellation:           UNKNOWN;
+mixed cancellation for the later fixed charts: EXCLUDED LATER;
+mixed cancellation for another scalar lift:    UNKNOWN;
 full P7 restriction and global Krenn--Gu:     UNRESOLVED. (30)
 ```
 
 See `P7_221_DIAGONAL_BLOCK_GLUING_AND_MIXED_WORD_BOUNDARY.md` for that later
 pure-chart gluing theorem and the exact mixed word that survives in its
-canonical diagonal lift.
+canonical diagonal lift.  The still later arbitrary-alignment rectangle
+theorem excludes every alignment of those fixed charts, without excluding a
+different scalar realization of the same ledger.
 
 ## Replay
 

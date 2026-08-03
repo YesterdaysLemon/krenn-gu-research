@@ -1309,6 +1309,15 @@ At degree five, each response is the one-core-edge compound
 Phi_S=sum_(i<j) A_ij per R[Z\{i,j},S].
 ```
 
+Writing these 21 equations as `Phi^(5)=C_5^per(R)a` exposes an exact
+observability theorem.  At `R=I_7`, the fifth permanental compound is the
+complement-index permutation matrix, so its determinant is a nonzero degree-
+105 polynomial.  A generic incidence therefore recovers every core edge.
+When twenty mixed faces vanish and only `P\Q` is free, an invertible compound
+confines `a` to one inverse-column line and converts fixed monochromatic edges
+into adjugate `2 x 2` proportionality circuits.  The exact `2220000`
+incidence has full compound rank 21 over `Q(rho)`.
+
 For the fixed common-terminal charts, the mixed word `2220000` has the exact
 dual face selector
 
@@ -1320,11 +1329,37 @@ Phi_125ab-Phi_145ab-Phi_235ab+Phi_345ab
 The alternating row of the fifth permanental compound annihilates all twelve
 cross-colour core variables and isolates the fixed monochromatic edge
 `A_12=1`.  Since the four corresponding deletion faces are prescribed mixed
-zeros, no off-diagonal core completion repairs these particular charts.
-Different pure scalar realizations and different core alignments remain
-outside this theorem.  See
+zeros, no off-diagonal core completion repairs the indexwise charts.
+
+This is now alignment-independent for the fixed colour-0/colour-2
+certificates.  After the column transform `(1-3,2-4,5,a,b)`, the colour-2
+rows contain two zero-row pairs carrying nonzero core edges, while three
+anchor rows become the coordinate rows `5,a,b`.  For every core bijection, a
+row-matroid case split selects one zero-edge pair and a subset of anchors so
+that the same four-face rectangle reduces to a nonzero complementary
+colour-0 minor.  No cross-colour edge survives.  Hence every alignment of
+these fixed charts is excluded without enumerating alignments or words.
+
+The adapted word is essential.  A deliberately relabelled word
+`(2,0,2,2,0,0,0)` has a six-parameter solution to all twenty degree-five
+equations, with one point also satisfying every singleton equation.  On that
+entire family, the three cubic faces `124,125,12a` normalize to
+
+```text
+q-delta,        p,        q(p-delta alpha/C).
+```
+
+They generate one via
+`q*p-q(p-delta alpha/C)-(delta alpha/C)(q-delta)
+=delta^2 alpha/C !=0`.  Thus that single word is closed at degree three even
+though its degree-five compound system is consistent.  Different pure scalar
+realizations remain outside all these fixed-chart theorems.  See
 `P7_SEVEN_CORE_BOSONIC_COMPOUND_FIRST_THIRD_JET_BOUNDARY.md` and
-`P7_221_FIXED_DIAGONAL_LIFT_DEGREE5_MIXED_CIRCUIT_OBSTRUCTION.md`.
+`SEVEN_CORE_FIFTH_PERMANENTAL_COMPOUND_OBSERVABILITY_THEOREM.md`,
+`P7_221_FIXED_DIAGONAL_LIFT_DEGREE5_MIXED_CIRCUIT_OBSTRUCTION.md`,
+`P7_221_ARBITRARY_ALIGNMENT_DEGREE5_RECTANGLE_OBSTRUCTION.md`,
+`P7_221_ALIGNED_CORE_DEGREE5_AFFINE_COMPLETION.md`, and
+`P7_221_ALIGNED_CORE_DEGREE3_THREE_FACE_NULLSTELLENSATZ_OBSTRUCTION.md`.
 
 The mixed-word selector itself is no longer missing in the factorized `h=0`
 branch.  For a selected pair `{u,v}`, choose a common residual-null vector at
@@ -1430,7 +1465,13 @@ transfers have different legal strength.
    `2 x 2` alternating face functional isolates one hidden core edge without
    reconstructing the remaining edge vector.  See Sullivant, Talaska, and
    Draisma, [*Trek separation for Gaussian graphical
-   models*](https://arxiv.org/abs/0812.1938).
+   models*](https://arxiv.org/abs/0812.1938).  Permanental compound matrices
+   also have an independent matrix-theory literature; unlike determinantal
+   ideals, even ideals of generic `2 x 2` subpermanents can have embedded
+   components and several minimal-prime heights.  See Al'pina and Al'pin,
+   [*Permanental compound matrices and Schneider's
+   theorem*](https://doi.org/10.1007/s10958-005-0483-6), and Laubenbacher and
+   Swanson, [*Permanental Ideals*](https://arxiv.org/abs/math/9812112).
 
 2. **Moment and cumulant varieties.**  Gaussian moment varieties suggest
    studying the Zariski image of the compound parametrization, while binary
@@ -1467,15 +1508,16 @@ transfers have different legal strength.
    Landsberg, Qi, and Ye, [*On the geometry of tensor network
    states*](https://arxiv.org/abs/1105.4449).
 
-The strongest new route is consequently an alignment-independent dual row of
-the fifth permanental compound, or a proof that the pure-chart fibre always
-meets such a selector.  Ordinary matchgate/spinor identities remain
-conditional because generic hafnian signs do not transfer.
+The alignment-independent dual row now exists for the current fixed scalar
+certificates.  The strongest new route is consequently a selector uniform on
+the entire pure-chart realization fibre, or an invariant proving that every
+point of that fibre meets some fifth-compound row.  Ordinary matchgate/spinor
+identities remain conditional because generic hafnian signs do not transfer.
 
 ## Ranked proof program
 
-1. **Alignment-independent fifth permanental compound.**  Replace the fixed
-   scalar certificates by the full pure-chart fibre and decide whether some
+1. **Fibre-uniform fifth permanental compound.**  Replace the fixed scalar
+   certificates by the full pure-chart fibre and decide whether some
    legally prescribed face row always isolates a nonzero monochromatic core
    edge.  A universal selector would exclude the 2+2+1 ledger; a symbolic
    evasion family would identify the next required chart invariant.
@@ -1523,9 +1565,12 @@ new pure-chart gluing:               one block graph realizes all pure charts;
 new diagonal-lift boundary:          one forbidden mixed coefficient is 1/7;
 new mixed residual localization:     only two unprescribed faces per word;
 new low-compound boundary:           scalar degrees 1+3 are dominant;
+new fifth-compound theorem:          generic incidence observes all 21 edges;
 new degree-five circuit:             four faces cancel all 12 cross variables;
-fixed-chart off-diagonal completion: EXCLUDED;
-new synchronization gap:            other scalar lifts/alignments remain;
+fixed charts, every core alignment:  EXCLUDED;
+adapted single-word degree5/1 layer: CONSISTENT;
+that word's three cubic faces:       UNIT IDEAL;
+new synchronization gap:            other scalar lifts remain;
 new h=0 polar selector:            five null legs isolate one mixed pair block;
 new arbitrary-order boundary:      at least three coordinate-incidence modes;
 new incidence sharpness:           canonical profile does not balance the three;
@@ -1533,7 +1578,7 @@ new row-pair incidence theorem:    every pair needs at least five modes;
 new five-mode sharpness:           polar/canonical/pure data attain equality;
 new h!=0 conditional selector:     synchronized depth cancels direct blocks;
 new aligned-resonance boundary:    scalar depth subtraction then loses a colour;
-highest-priority invented object: alignment-free permanental compound row;
+highest-priority invented object: pure-fibre-uniform compound row;
 new legality boundary:             top synchronization has shore rank one;
 highest-priority literature tool: compound/tetrad circuit completion;
 full proof or counterexample:      NOT YET;

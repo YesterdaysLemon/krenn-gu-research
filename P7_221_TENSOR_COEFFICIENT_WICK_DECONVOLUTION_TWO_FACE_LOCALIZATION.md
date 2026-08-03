@@ -236,8 +236,10 @@ coordinates may be chosen independently across words.
 For the later fixed common-terminal scalar certificates, the degree-five
 compound circuit in
 `P7_221_FIXED_DIAGONAL_LIFT_DEGREE5_MIXED_CIRCUIT_OBSTRUCTION.md` proves that
-no off-diagonal core completion solves that structured problem.  This does
-not universalize the obstruction to other scalar lifts.
+no off-diagonal core completion solves that structured problem in the
+indexwise alignment.  The still later arbitrary-alignment rectangle theorem
+extends this to every core bijection of those fixed charts.  Neither result
+universalizes the obstruction to other scalar lifts.
 
 ## 5. Why an ordinary cumulant adds nothing here
 

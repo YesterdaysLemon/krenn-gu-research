@@ -228,7 +228,9 @@ The later theorem
 `P7_221_FIXED_DIAGONAL_LIFT_DEGREE5_MIXED_CIRCUIT_OBSTRUCTION.md` closes the
 first possibility for these fixed charts: a four-face degree-five circuit
 cancels all twelve relevant off-diagonal variables and remains nonzero.  It
-does not exclude a different scalar realization of the same pure ledgers.
+The subsequent arbitrary-alignment rectangle theorem excludes every core
+bijection of these fixed colour-0/colour-2 charts.  Neither theorem excludes
+a different scalar realization of the same pure ledgers.
 
 ## 5. Exact scope
 

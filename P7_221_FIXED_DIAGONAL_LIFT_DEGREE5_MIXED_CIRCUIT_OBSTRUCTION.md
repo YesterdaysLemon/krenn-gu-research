@@ -34,6 +34,12 @@ these fixed pure scalar graphs to the tensor ledger**.  Another set of scalar
 principal-hafnian realizations of the same ledger could have different
 same-colour core and incidence data and is not excluded.
 
+The later theorem
+`P7_221_ARBITRARY_ALIGNMENT_DEGREE5_RECTANGLE_OBSTRUCTION.md` shows that the
+same rectangle, with an alignment-adapted mixed word, excludes every core
+alignment of these fixed colour-0/colour-2 charts.  Different scalar
+realizations remain open.
+
 ## 1. The fixed mixed-word incidence matrix
 
 Use the canonical core identifications

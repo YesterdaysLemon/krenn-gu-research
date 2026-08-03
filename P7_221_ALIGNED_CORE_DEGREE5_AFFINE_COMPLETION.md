@@ -23,10 +23,10 @@ ranks are both six.  Hence it is consistent and has an explicit
 six-parameter solution family.
 
 The seven degree-one mixed-zero conditions are also consistent: one exact
-point of the degree-five family satisfies all of them.  Degree-three
-conditions are not tested here.  This note is a positive boundary for the
-single alignment (1), not a tensor realization and not an assertion about
-other mixed words.
+point of the degree-five family satisfies all of them.  This note originally
+stopped before degree three.  The later three-face theorem proves that the
+entire six-parameter family fails there.  This remains a positive boundary
+for degrees five and one, not a tensor realization.
 
 ## 1. Fixed physical order and mixed incidence
 
@@ -202,9 +202,10 @@ Phi_1=Phi_2=Phi_3=Phi_4=Phi_5=Phi_a=Phi_b=0.           (22)
 ```
 
 Thus neither the twenty degree-five faces nor the seven degree-one faces
-exclude this aligned mixed word.  The degree-three layer contains 35
-coefficients and is not analyzed in this note; no claim of extendability
-through that layer is made.
+exclude this aligned mixed word.  The later note
+`P7_221_ALIGNED_CORE_DEGREE3_THREE_FACE_NULLSTELLENSATZ_OBSTRUCTION.md`
+shows that three of the 35 degree-three faces already generate the unit
+ideal on this family.
 
 ## 5. Sharp scope
 
@@ -224,10 +225,15 @@ The exact boundary is
 ```text
 alignment (1), degree-five mixed faces:  CONSISTENT, DIMENSION SIX;
 one degree-one extension point:          REALIZED;
-degree-three faces:                      NOT TESTED;
-all mixed words / full tensor graph:     UNKNOWN;
+degree-three faces:                      EXCLUDED LATER;
+all mixed words / full tensor graph:     EXCLUDED FOR THESE FIXED CHARTS;
 global Krenn--Gu:                        UNRESOLVED.     (23)
 ```
+
+The all-word statement in the status wall uses the separate
+`P7_221_ARBITRARY_ALIGNMENT_DEGREE5_RECTANGLE_OBSTRUCTION.md`, which selects
+an obstructing word from any alignment.  It still does not exclude different
+scalar realizations of the pure ledger.
 
 ## Replay
 

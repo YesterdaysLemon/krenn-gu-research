@@ -1148,8 +1148,10 @@ the three core--core diagonal evaluations and the three core--terminal
 evaluations are independent entries of the same physical blocks.  The
 canonical diagonal lift recovers all 186 prescribed and six free pure values,
 but has an exact forbidden mixed coefficient `1/7`.  Thus pure-chart
-coexistence is solved; cancellation by the still-free off-diagonal block
-entries is the remaining synchronization problem:
+coexistence is solved.  The later compound theorems exclude every
+off-diagonal completion and every core alignment of these particular scalar
+certificates; the remaining synchronization question concerns different
+scalar lifts of the same pure ledgers:
 [`P7_221_FORMAL_LEDGER_SCALAR_HAFNIAN_REALIZABILITY_AND_SYNCHRONIZATION_GAP.md`](P7_221_FORMAL_LEDGER_SCALAR_HAFNIAN_REALIZABILITY_AND_SYNCHRONIZATION_GAP.md).
 [`P7_221_COMMON_TERMINAL_BLOCK_SCALAR_HAFNIAN_REALIZABILITY.md`](P7_221_COMMON_TERMINAL_BLOCK_SCALAR_HAFNIAN_REALIZABILITY.md).
 [`P7_221_DIAGONAL_BLOCK_GLUING_AND_MIXED_WORD_BOUNDARY.md`](P7_221_DIAGONAL_BLOCK_GLUING_AND_MIXED_WORD_BOUNDARY.md).
@@ -1172,8 +1174,13 @@ coefficient is an exact directional derivative of a singleton coefficient in
 a rank-at-most-two core-block direction.  Nevertheless the scalar map to all
 seven singleton and 35 cubic responses is dominant: one fixed `42 x 42`
 Jacobian minor is nonzero.  Thus degrees one and three carry no universal
-scalar polynomial obstruction.  Degree five does.  For the fixed exact pure
-charts and mixed word `2220000`, the one-core-edge Laplace expansion gives
+scalar polynomial obstruction.  Degree five is generically observable: its
+21 faces are `C_5^per(R)a`, and at `R=I_7` this fifth permanental compound is
+the complement permutation matrix.  When only `P\Q` is free, invertibility
+forces all 21 core edges onto one inverse-column line.  The exact incidence
+of the fixed word `2220000` has compound rank 21 over `Q(sqrt(21))`.
+
+For the indexwise fixed pure charts, a much sparser row of that compound gives
 
 ```text
 Phi_125ab-Phi_145ab-Phi_235ab+Phi_345ab
@@ -1182,11 +1189,24 @@ Phi_125ab-Phi_145ab-Phi_235ab+Phi_345ab
 
 All twelve arbitrary cross-colour core edges cancel from this four-face
 permanental-compound selector, while the ledger requires all four mixed faces
-to vanish.  Hence no off-diagonal core-edge completion repairs these fixed
-pure certificates.  Different scalar realizations or core alignments remain
-unexcluded:
+to vanish.  More strongly, after an arbitrary bijection of the colour-0 and
+colour-2 cores, the same rectangle still isolates one of two nonzero
+colour-2 edges for a mixed word constructed from the alignment.  Thus no core
+alignment and no off-diagonal core-edge completion repairs these fixed pure
+certificates.
+
+The word must be chosen adaptively.  One explicit alignment and word has a
+six-parameter family satisfying all 20 degree-five faces and even one point
+satisfying all seven singleton faces; after substitution, however, the three
+cubic faces `124,125,12a` generate the unit ideal by an explicit
+Nullstellensatz certificate.  Different scalar realizations of the pure
+ledgers remain unexcluded:
 [`P7_SEVEN_CORE_BOSONIC_COMPOUND_FIRST_THIRD_JET_BOUNDARY.md`](P7_SEVEN_CORE_BOSONIC_COMPOUND_FIRST_THIRD_JET_BOUNDARY.md).
+[`SEVEN_CORE_FIFTH_PERMANENTAL_COMPOUND_OBSERVABILITY_THEOREM.md`](SEVEN_CORE_FIFTH_PERMANENTAL_COMPOUND_OBSERVABILITY_THEOREM.md).
 [`P7_221_FIXED_DIAGONAL_LIFT_DEGREE5_MIXED_CIRCUIT_OBSTRUCTION.md`](P7_221_FIXED_DIAGONAL_LIFT_DEGREE5_MIXED_CIRCUIT_OBSTRUCTION.md).
+[`P7_221_ARBITRARY_ALIGNMENT_DEGREE5_RECTANGLE_OBSTRUCTION.md`](P7_221_ARBITRARY_ALIGNMENT_DEGREE5_RECTANGLE_OBSTRUCTION.md).
+[`P7_221_ALIGNED_CORE_DEGREE5_AFFINE_COMPLETION.md`](P7_221_ALIGNED_CORE_DEGREE5_AFFINE_COMPLETION.md).
+[`P7_221_ALIGNED_CORE_DEGREE3_THREE_FACE_NULLSTELLENSATZ_OBSTRUCTION.md`](P7_221_ALIGNED_CORE_DEGREE3_THREE_FACE_NULLSTELLENSATZ_OBSTRUCTION.md).
 Second, the aggregated-selector alternative is now exact in the factorized
 `h=0` branch.  Contracting any five blocker legs in their two residual-row
 common null spaces kills the twenty competing surplus-two Laplace terms
