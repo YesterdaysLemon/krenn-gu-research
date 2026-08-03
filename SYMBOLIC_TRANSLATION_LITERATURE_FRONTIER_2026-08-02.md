@@ -5,9 +5,9 @@
 This review starts from the current exact frontier, not from a new support
 search:
 
-- every `P_m -> Delta_3` restriction has at least `3m+2` nonzero row cells;
-- equality reduces to a bipartite negative-gain cancellation graph on two
-  exceptional sources;
+- every `P_m -> Delta_3` restriction has at least `3m+3` nonzero row cells;
+- the eliminated `3m+2` equality layer reduced to a bipartite negative-gain
+  cancellation graph on two exceptional sources;
 - the five-root cell gives coloured quotient-minor equations, but common
   tangent edges do not force a rank-two hidden pair;
 - scalar overlay identities are surjective and therefore cannot obstruct the
@@ -184,6 +184,16 @@ one-cycle flip whose mixed monomial lacks its localized two-source cross
 partner.  Thus no no-completion shore survives, and the residual perfect
 matching and cross-colour port rectangle are forced at every order.  The
 shore interior remains symbolic throughout; no census of supports is used.
+
+The remaining two-switch branch is now excluded without further scalar gain
+algebra.  Select the two switch matchings so that their common excess mode
+`a` goes to opposite exceptional sources.  Their two-factor contains the
+path `p_1--a--p_2`.  Any other component would allow a mixed component
+selection using both selected switch edges, so switch-core rigidity makes
+the factor Hamilton.  The two exceptional edges of the nonswitch colour are
+then Hamilton chords.  Their two mixed extensions force both cross cells and
+create a forbidden pure switch in that colour.  This closes all equality
+strata and sharpens the support bound from `3m+2` to `3m+3`.
 
 ## 2. Toric ideals and matching-exchange binomials
 
@@ -447,13 +457,12 @@ Priority: exploratory, but fully symbolic.
 
 1. **Multi-backbone gains plus toric exchange lattice.**  Glue the
    canonically bipartite fixed-backbone fibres across alternating-cycle
-   changes of pure matchings.  The zero-switch face is excluded.  In the
+   changes of pure matchings.  The zero-switch face is excluded.  The
    one-switch face is now excluded by the pairwise-Hamilton chord theorem.
-   In the two-switch face, force a nonlocal overlap cycle outside the
-   separated common excess mode.  Both residual
-   Hall shores are now excluded, forcing the cross-colour port rectangle.
-   The remaining task is to combine that relation with the four backbone
-   fibres.  This is arbitrary-order and closest to a global support theorem.
+   The two-switch face is now excluded by the opposite-source
+   Hamilton-chord theorem.  This closes `3m+2` equality and yields the
+   arbitrary-order `3m+3` support theorem.  The next local-to-global task is
+   to control the `3m+3` support layer rather than add more equality gains.
 2. **Deletion-depth cofactor quiver.**  Build one cross-sector
    semi-invariant using actual lower cofactor values.  The tangent
    counterfamily rules out weaker candidates in advance.

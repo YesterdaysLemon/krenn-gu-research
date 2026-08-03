@@ -15,7 +15,8 @@ mixed matchings force both exceptional-source cross cells and create a
 second pure matching in that nonswitch colour, a contradiction.
 
 Together with the zero-switch exclusion, this proves that every hypothetical
-`3m+2` equality survivor must lie in the sole two-switch branch.
+`3m+2` equality survivor would lie in the sole two-switch branch.  A
+subsequent opposite-source Hamilton-chord theorem excludes that final branch.
 
 ## Setup
 
@@ -208,6 +209,7 @@ chord-extension mixed terms:               TWO;
 forced nonswitch cross cells:               BOTH;
 one-switch equality stratum:               EXCLUDED;
 zero-switch equality stratum:              EXCLUDED PREVIOUSLY;
-surviving equality stratum:                 EXACTLY TWO SWITCHES;
+surviving equality stratum in this note:    EXACTLY TWO SWITCHES;
+all equality strata:                        EXCLUDED SUBSEQUENTLY;
 global Krenn--Gu conjecture:                UNRESOLVED.
 ```

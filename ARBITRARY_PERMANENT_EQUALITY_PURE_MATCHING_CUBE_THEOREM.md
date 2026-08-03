@@ -15,11 +15,11 @@ excess cells to be noncoordinate and co-located at one mode.  Local concision
 and the total mode-degree excess then permit at most two switchable colours.
 Thus there are at most four pure backbones at every order `m`.
 
-This does not enumerate them and does not prove that their glued gain graph
-is nonbipartite.  It reduces the multi-backbone compatibility problem to at
-most two symbolic binary switches.  The subsequent zero-switch exclusion
-theorem eliminates the zero-dimensional face, so every equality survivor
-has one or two switches.
+This does not enumerate them.  It reduces the multi-backbone compatibility
+problem to at most two symbolic binary switches.  Subsequent zero-, one-,
+and two-switch theorems exclude every face and hence all `3m+2` equality;
+see `ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCLUSION_THEOREM.md` for the
+final closure and strict support corollary.
 
 ## Setup
 
@@ -225,6 +225,7 @@ pure backbone choices:                     BOOLEAN CUBE, DIMENSION <=2;
 number of pure backbones:                  AT MOST FOUR;
 zero-switch face:                          EXCLUDED SUBSEQUENTLY;
 two-switch branch:                         CO-LOCATED NONCOORDINATE EXCESS;
+all equality faces:                        EXCLUDED SUBSEQUENTLY;
 mixed matchings inside one backbone:       NOT COUNTED;
 odd cycle in glued gain graph:             UNKNOWN;
 global Krenn--Gu conjecture:                UNRESOLVED.

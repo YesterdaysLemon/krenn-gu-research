@@ -15,10 +15,10 @@ natural pairs of ratio states into different components of every relevant
 cancellation graph.
 
 The result rules out the most local proposed gluing obstruction: the two
-switch states at `a` can never form a one-switch straddling pair.  It does not
-exclude the two-switch equality branch.  The surviving obstruction must use
-a ratio state away from the common excess mode and additional permanent
-coefficients.
+switch states at `a` can never form a one-switch straddling pair.  This note
+alone does not exclude the two-switch equality branch.  A subsequent
+opposite-source Hamilton-chord theorem excludes it using additional
+permanent coefficients.
 
 ## Sharp two-switch ledger
 
@@ -235,7 +235,7 @@ two known rectangles Pfaffianizable:         YES;
 direct third-rectangle route:                RESIDUAL HALL DICHOTOMY;
 indirect third-rectangle consequence:        UNKNOWN;
 deletion-closed matchgate signature:         NOT ESTABLISHED;
-two-switch equality stratum:                 UNRESOLVED;
+two-switch equality stratum:                 EXCLUDED SUBSEQUENTLY;
 global Krenn--Gu conjecture:                  UNRESOLVED.
 ```
 

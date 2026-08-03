@@ -37,19 +37,20 @@ arbitrary tangent-completed `P_7` system and the global conjecture remain
 unknown.  See
 [`ROOT_M7_SYMBOLIC_ROUTE_BOUNDARY_THEOREMS.md`](ROOT_M7_SYMBOLIC_ROUTE_BOUNDARY_THEOREMS.md).
 
-The permanent support bound is now two cells stronger.  Local concision on
+The permanent support bound is now three cells stronger.  Local concision on
 the mode side and the singleton tricolour cover on the source side exclude
-the entire `3m+1` stratum, so every `P_m -> Delta_3` restriction needs at
-least `3m+2` nonzero row cells.  Thus `P_7` needs at least 23.  Equality is
-now reduced for coordinate and noncoordinate cells alike: the two excess
+the entire `3m+1` stratum, and the new equality classification excludes
+`3m+2`; every `P_m -> Delta_3` restriction therefore needs at least `3m+3`
+nonzero row cells.  Thus `P_7` needs at least 24.  The eliminated equality
+case was reduced for coordinate and noncoordinate cells alike: the two excess
 cells must have distinct source endpoints, and every mixed backbone
 coefficient is either unique or cancels through the unique cross
 four-cycle on those sources, with exact equation `AD+BC=0`.  A closed odd
 cycle of these signed rectangles is impossible when its ratios telescope.
 For one fixed pure backbone, the auxiliary all-negative gain graph on
 mode--colour ratio states is canonically bipartite, so that route alone is
-empty.  The remaining question is whether gluing the graphs from all choices
-of pure matchings forces an odd cycle after shared ratio states are
+empty.  The intermediate question was whether gluing the graphs from all
+choices of pure matchings forces an odd cycle after shared ratio states are
 identified.  Every pure switch is the exceptional-source four-cycle, and
 physical-cell incidence plus the equality degree ledger allow at most two
 switchable colours.  Hence the pure backbones form a Boolean cube of
@@ -63,24 +64,24 @@ pair of selected pure matchings would have to form a Hamilton cycle; the two
 exceptional edges of either nonswitch colour are then chords of the cycle
 formed by the other colours.  Their chord-extension mixed matchings force
 both cross cells and switch that nonswitch colour, a contradiction.  Thus
-every equality survivor has exactly two switchable colours.  Global
+every equality survivor would have exactly two switchable colours.  Global
 bipartiteness is equivalent to balance of an
 `F_2`-labelled
 component-overlap graph; a pure switch is excluded as soon as one common
 cancellation component connects two shared states and exactly one changes
-source side.  In the one-switch branch, the pure coefficient supplies a
-stronger normal form: no nonmonochromatic matching in either selected
+source side.  In the one-switch branch, the pure coefficient first supplied
+a stronger normal form: no nonmonochromatic matching in either selected
 backbone may use both switch edges, the backbone outside the four-vertex
 switch core has a unique perfect matching and triangular support, and the
-two marked overlap edges must be a cut (both bridges or a two-edge series
-pair).  The remaining task is to rule out that bridge-or-series
-configuration from the triangular residual equations.  In the sole
+two marked overlap edges must be a cut.  Abstract bridge-or-series models
+survive that cut-space test, but the later Hamilton-chord argument excludes
+their realization by a full permanent backbone.  In the sole
 two-switch branch, the excess two-plane has nonzero switch-colour minor
 `AD-BC`; this separates the two switch states at the common excess mode in
 every same-source-side fibre, and separates each switch state from its
 mandatory partner in every fibre.  Thus the obvious same-mode straddling
-route is impossible, and a surviving obstruction must use a ratio state away
-from the common excess mode.  `Gr(2,3)` supplies no quadratic Pluecker
+route is impossible, and any gain-based survivor would have to use a ratio
+state away from the common excess mode.  `Gr(2,3)` supplies no quadratic Pluecker
 relation, while matchgate identities remain conditional on a deletion-closed
 boundary signature not yet derived.  The direct mixed-backbone route to the
 rectangle between the two degree-four switch modes is now an exact residual
@@ -97,6 +98,13 @@ two-switch equality survivor has a residual perfect matching and the direct
 cross-colour switch-mode rectangle is forced.  A fixed six-mode support
 still shows why ledger, local rank, pure-switch, and Hall data alone do not
 imply this conclusion; the mixed-coefficient localization step is essential.
+The last two-switch stratum is now excluded by an even shorter Hamilton
+argument.  Choose the two switch matchings to route their shared excess mode
+`a` to opposite exceptional sources.  Their union contains
+`p_1--a--p_2`; switch-core rigidity makes the whole union Hamilton.  The two
+exceptional edges of the nonswitch colour are then Hamilton chords, whose
+localized extensions force that colour to switch.  This contradiction
+eliminates all `3m+2` equality and yields the strict `3m+3` support bound.
 See
 [`ARBITRARY_PERMANENT_THREE_M_PLUS_TWO_SUPPORT_BOUND.md`](ARBITRARY_PERMANENT_THREE_M_PLUS_TWO_SUPPORT_BOUND.md)
 and
@@ -121,6 +129,8 @@ and
 [`ARBITRARY_PERMANENT_EQUALITY_THREE_EDGE_SHORE_FLATTENING_EXCLUSION.md`](ARBITRARY_PERMANENT_EQUALITY_THREE_EDGE_SHORE_FLATTENING_EXCLUSION.md)
 and
 [`ARBITRARY_PERMANENT_EQUALITY_FIVE_EDGE_SHORE_KEMPE_EXCLUSION.md`](ARBITRARY_PERMANENT_EQUALITY_FIVE_EDGE_SHORE_KEMPE_EXCLUSION.md).
+See the equality closure and strict support corollary in
+[`ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCLUSION_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCLUSION_THEOREM.md).
 
 Two complementary cell-level transfers are also settled.  The all-root and
 four-root jets give five exact hidden-pair equations; on each rank-two chart

@@ -20,8 +20,9 @@ exceptional-source localization.
 Together with the three-edge shore flattening exclusion, this proves that
 the residual graph in every hypothetical two-switch equality survivor has a
 perfect matching.  Hence the direct port-completion rectangle is forced.
-The two-switch equality stratum and the global Krenn--Gu conjecture remain
-unresolved.
+This note alone does not exclude the completed two-switch branch.  A
+subsequent opposite-source Hamilton-chord theorem excludes it completely.
+The global Krenn--Gu conjecture remains unresolved.
 
 ## Five-port shore
 
@@ -243,6 +244,6 @@ exceptional-source cross partner:         ABSENT;
 (1,1,3) no-completion shore:              EXCLUDED;
 residual R in two-switch equality:        HAS A PERFECT MATCHING;
 third switch-mode rectangle:              FORCED;
-two-switch equality stratum:              UNRESOLVED;
+two-switch equality stratum:              EXCLUDED SUBSEQUENTLY;
 global Krenn--Gu conjecture:              UNRESOLVED.
 ```

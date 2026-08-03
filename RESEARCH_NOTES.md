@@ -14349,3 +14349,44 @@ ARBITRARY_PERMANENT_EQUALITY_FIVE_EDGE_SHORE_KEMPE_EXCLUSION.md
 verify_arbitrary_permanent_equality_five_edge_shore_kempe_exclusion.py
 audit_arbitrary_permanent_equality_five_edge_shore_kempe_exclusion.py
 ```
+
+### Two-switch equality exclusion and strict support
+
+Let `c,d` be the switch colours and `e` the nonswitch colour.  Choose the
+pure `c,d` matchings so that their common excess mode `a` is routed to
+opposite exceptional sources.  Such a fibre exists because all four
+combinations of the two pure choices can be selected as backbones.  Then
+
+```text
+p_1 --c-- a --d-- p_2
+```
+
+lies in one alternating component of `M_c union M_d`.  If another component
+existed, choosing `c` on the marked component and `d` on the other would give
+a mixed matching using both selected `c` switch edges, contradicting
+switch-core rigidity.  Thus `M_c union M_d` is Hamilton.
+
+The switch--nonswitch component argument also makes `M_c union M_e` and
+`M_d union M_e` Hamilton, so `M_e` is physically edge-disjoint from the
+switch matchings.  Its exceptional edges are genuine chords of the
+`M_c union M_d` Hamilton cycle.  Extending both chords and applying
+two-source localization forces both `e` cross cells, creating a second pure
+`M_e`.  This contradicts that `e` is nonswitch.
+
+The zero-, one-, and two-switch branches exhaust the pure-matching cube and
+are all excluded.  Therefore no `3m+2` equality restriction exists.  Together
+with the previous `3m+2` lower bound, integrality gives
+
+```text
+support(P_m -> Delta_3) >= 3m+3       for every m>=3.
+```
+
+This remains a strict permanent-support theorem, not the global Krenn--Gu
+proof; larger-support restrictions and their graph-side realization remain
+open.
+
+```text
+ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCLUSION_THEOREM.md
+verify_arbitrary_permanent_equality_two_switch_exclusion_theorem.py
+audit_arbitrary_permanent_equality_two_switch_exclusion_theorem.py
+```

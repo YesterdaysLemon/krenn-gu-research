@@ -288,6 +288,6 @@ no-completion shore types:               (1,1,1) OR (1,1,3);
 residual R in equality:                  HAS A PERFECT MATCHING;
 direct port-completion rectangle:        FORCED;
 ledger/rank/Hall force completion:        NO;
-two-switch equality stratum:             UNRESOLVED;
+two-switch equality stratum:             EXCLUDED SUBSEQUENTLY;
 global Krenn--Gu conjecture:              UNRESOLVED.
 ```
