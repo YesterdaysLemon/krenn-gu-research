@@ -13930,6 +13930,120 @@ verify_root_m7_hirota_hidden_overlay_surjectivity_nogo.py
 audit_root_m7_hirota_hidden_overlay_surjectivity_nogo.py
 ```
 
+### Equality rectangles and coloured quotient minors
+
+The arbitrary-order `3m+2` equality stratum is now localized without
+assuming coordinate-only rows.  Choose a mandatory coordinate cell for
+every source/colour pair and one pure perfect matching per colour.  The two
+remaining physical cells have source set `P_*`.  For any word induced by a
+matching in the three-colour backbone, every eligible non-backbone physical
+cell has source in `P_*`.  Bogdanov supplies a mixed backbone matching.
+Alternating-cycle parity then excludes `|P_*|<2`; at equality the two excess
+cells must have distinct source endpoints.
+
+After collapsing coloured parallel copies back to physical row cells, any
+second term for the same backbone word differs by the unique cross
+four-cycle on those two sources.  Its whole coefficient is
+
+```text
+AD+BC,
+```
+
+so cancellation forces cross-ratio `-1`.  Only a closed odd cycle whose
+ratio variables telescope is immediately contradictory; unrelated odd
+collections are not.  The exact remaining problem is therefore the
+consistency of a signed two-source rectangle system, not a support census.
+
+```text
+ARBITRARY_PERMANENT_EQUALITY_EXCEPTIONAL_SOURCE_RECTANGLE_THEOREM.md
+verify_arbitrary_permanent_equality_exceptional_source_rectangle_theorem.py
+audit_arbitrary_permanent_equality_exceptional_source_rectangle_theorem.py
+ARBITRARY_PERMANENT_EQUALITY_NEGATIVE_GAIN_GRAPH_THEOREM.md
+verify_arbitrary_permanent_equality_negative_gain_graph_theorem.py
+audit_arbitrary_permanent_equality_negative_gain_graph_theorem.py
+ARBITRARY_PERMANENT_EQUALITY_PURE_MATCHING_CUBE_THEOREM.md
+verify_arbitrary_permanent_equality_pure_matching_cube_theorem.py
+audit_arbitrary_permanent_equality_pure_matching_cube_theorem.py
+ARBITRARY_PERMANENT_EQUALITY_BACKBONE_COLORING_GLUE_THEOREM.md
+verify_arbitrary_permanent_equality_backbone_coloring_glue_theorem.py
+audit_arbitrary_permanent_equality_backbone_coloring_glue_theorem.py
+```
+
+Writing
+
+```text
+g_(i,c)=r_(i,p_2)[c]/r_(i,p_1)[c]
+```
+
+turns every `H`-induced rectangle equation into `g_u/g_v=-1`.  For one fixed
+pure backbone, the gain graph is canonically bipartite by the two exceptional
+source labels, so no single-backbone odd-cycle argument can work.  When the
+graphs from all choices of pure matchings are glued by identifying the same
+physical ratio states, the union must still be bipartite but has no automatic
+source bipartition.  The exact next theorem is combinatorial: prove that
+alternating-cycle changes of pure matchings force an odd cycle in this glued
+graph, or isolate a global two-colouring normal form compatible with the
+remaining coefficients.
+
+Localization applies to a pure backbone matching too.  Any other matching
+for the same pure word can introduce new edges only at `p_1,p_2`; its
+symmetric difference is therefore the unique four-cycle cross transposition.
+Each colour has at most two pure matchings, so all pure-backbone choices form
+a face of `{0,1}^3` and number at most eight.  If the switch exists, its pure
+coefficient is `w(M)(1+rho)=lambda_c!=0`, so its transport ratio is not the
+mixed cancellation gain `-1`.  The all-backbone problem is now three symbolic
+binary switches, not an unbounded matching-family search.
+
+The gluing itself has a complete `F_2` descent criterion.  Make one vertex
+for every connected component of every fixed-backbone cancellation graph.
+Two component vertices sharing a ratio state are joined with the xor of that
+state's two canonical source-side labels.  The all-backbone union is
+bipartite exactly when every cycle in this component-overlap graph has label
+sum zero.  In particular, two adjacent cube backbones are incompatible if
+one common component connects two shared states and exactly one state flips
+source side under the pure switch.  Proving that some switch must straddle in
+this sense is now the next equality lemma.
+
+The proposed rank-two hidden-pair bridge fails even with simultaneous common
+root edges.  Four sparse tangent blocks
+
+```text
+E_12=a x_1x_2, E_34=b x_3x_4,
+E_03=c y_0y_3, E_24=d y_2y_4
+```
+
+and endpoint forms supported only at roots zero and one give a rank-two
+all-root frame spanning `X,Y`, exactly two endpoint-active coprime internal
+sectors, and five hidden pairs of scalar-form rank at most one.  An arbitrary
+residual--residual value only adds `r h_k` to `q_k` and preserves the claim.
+This is a tangent-jet countermodel, not a full lower-cofactor or `P_7`
+realization.  It proves that the missing bridge must use actual lower
+cofactor values.
+
+Quotienting those lower cofactors by the binary diagonal plane does produce
+a complete abstract invariant.  In every active sector,
+
+```text
+bar(C_k) wedge bar(E_k)=0,
+```
+
+so all two-word coefficient minors vanish.  These minors generate the
+rank-one determinantal elimination ideal for unrestricted hidden scalar
+forms, and no nonzero linear visible invariant exists.  At least two of the
+five sectors are active; hence every product of four sector minors vanishes,
+giving five degree-eight active-label-free equations.  Common hafnian
+realizability may impose more.  The next concrete target is to force a
+selected minor nonzero from `P_7` incidence or a deeper cofactor value.
+
+```text
+ROOT_M7_SIMULTANEOUS_RANK_ONE_HIDDEN_PAIR_REALIZATION_NOGO.md
+verify_root_m7_simultaneous_rank_one_hidden_pair_realization_nogo.py
+audit_root_m7_simultaneous_rank_one_hidden_pair_realization_nogo.py
+ROOT_M7_COFACTOR_QUOTIENT_WEDGE_INVARIANT.md
+verify_root_m7_cofactor_quotient_wedge_invariant.py
+audit_root_m7_cofactor_quotient_wedge_invariant.py
+```
+
 ### Symbolic local-to-global pivot: Wick completion, common residual Gram, and majority ideals
 
 The complete coloured partial-matching family has a single exact completion

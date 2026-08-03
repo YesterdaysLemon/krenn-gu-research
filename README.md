@@ -40,27 +40,60 @@ unknown.  See
 The permanent support bound is now two cells stronger.  Local concision on
 the mode side and the singleton tricolour cover on the source side exclude
 the entire `3m+1` stratum, so every `P_m -> Delta_3` restriction needs at
-least `3m+2` nonzero row cells.  Thus `P_7` needs at least 23.  At
-coordinate-only equality, the two excess cells must form one
-colour-compatible alternating rectangle against every mixed backbone
-matching, every pair of pure matchings must form one Hamilton cycle, and
-the two terms must cancel exactly.  Noncoordinate equality remains open.
-See
-[`ARBITRARY_PERMANENT_THREE_M_PLUS_TWO_SUPPORT_BOUND.md`](ARBITRARY_PERMANENT_THREE_M_PLUS_TWO_SUPPORT_BOUND.md).
+least `3m+2` nonzero row cells.  Thus `P_7` needs at least 23.  Equality is
+now reduced for coordinate and noncoordinate cells alike: the two excess
+cells must have distinct source endpoints, and every mixed backbone
+coefficient is either unique or cancels through the unique cross
+four-cycle on those sources, with exact equation `AD+BC=0`.  A closed odd
+cycle of these signed rectangles is impossible when its ratios telescope.
+For one fixed pure backbone, the auxiliary all-negative gain graph on
+mode--colour ratio states is canonically bipartite, so that route alone is
+empty.  The remaining question is whether gluing the graphs from all choices
+of pure matchings forces an odd cycle after shared ratio states are
+identified.  Each colour has at most one pure four-cycle switch, so all pure
+backbones form a Boolean cube of dimension at most three and number at most
+eight.  Global bipartiteness is now equivalent to balance of an `F_2`-labelled
+component-overlap graph; a pure switch is excluded as soon as one common
+cancellation component connects two shared states and exactly one changes
+source side.  Whether such a straddling switch is forced remains open.  See
+[`ARBITRARY_PERMANENT_THREE_M_PLUS_TWO_SUPPORT_BOUND.md`](ARBITRARY_PERMANENT_THREE_M_PLUS_TWO_SUPPORT_BOUND.md)
+and
+[`ARBITRARY_PERMANENT_EQUALITY_EXCEPTIONAL_SOURCE_RECTANGLE_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_EXCEPTIONAL_SOURCE_RECTANGLE_THEOREM.md)
+and
+[`ARBITRARY_PERMANENT_EQUALITY_NEGATIVE_GAIN_GRAPH_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_NEGATIVE_GAIN_GRAPH_THEOREM.md)
+and
+[`ARBITRARY_PERMANENT_EQUALITY_PURE_MATCHING_CUBE_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_PURE_MATCHING_CUBE_THEOREM.md)
+and
+[`ARBITRARY_PERMANENT_EQUALITY_BACKBONE_COLORING_GLUE_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_BACKBONE_COLORING_GLUE_THEOREM.md).
 
 Two complementary cell-level transfers are also settled.  The all-root and
 four-root jets give five exact hidden-pair equations; on each rank-two chart
 the two named intermediate cofactors are individually binary-diagonal, and
-at least two internal four-root sectors must be active.  Conversely, the
-smallest scalar Hirota overlay has no further common-weight equation at
-all: one sparse symmetric graph maps six independent weights bijectively to
-the six hidden classes, even after embedding into the actual eight-vertex
-core.  Any next obstruction must therefore combine the named cofactor
-relations with coloured/root-row/GHZ structure rather than rely on scalar
-overlay identities alone.  See
+at least two internal four-root sectors must be active.  Common tangent-edge
+realizability still does not force rank two: an exact sparse counterfamily
+has a rank-two all-root frame and coprime active sectors while all five
+hidden pairs have rank at most one.  What does survive elimination is a
+coloured quotient-wedge invariant: every active sector has all `2 x 2`
+cofactor minors zero, and at least two active sectors yield five
+active-label-free degree-eight products.  Conversely, the smallest scalar
+Hirota overlay has no further common-weight equation at all.  Any next
+obstruction must force a selected coloured minor nonzero using lower
+cofactor values or `P_7` incidence structure.  See
 [`ROOT_M7_FOUR_ROOT_HIDDEN_PAIR_COFACTOR_THEOREM.md`](ROOT_M7_FOUR_ROOT_HIDDEN_PAIR_COFACTOR_THEOREM.md)
 and
+[`ROOT_M7_SIMULTANEOUS_RANK_ONE_HIDDEN_PAIR_REALIZATION_NOGO.md`](ROOT_M7_SIMULTANEOUS_RANK_ONE_HIDDEN_PAIR_REALIZATION_NOGO.md),
+[`ROOT_M7_COFACTOR_QUOTIENT_WEDGE_INVARIANT.md`](ROOT_M7_COFACTOR_QUOTIENT_WEDGE_INVARIANT.md),
+and
 [`ROOT_M7_HIROTA_HIDDEN_OVERLAY_SURJECTIVITY_NOGO.md`](ROOT_M7_HIROTA_HIDDEN_OVERLAY_SURJECTIVITY_NOGO.md).
+
+A frontier-specific literature translation now organizes the next symbolic
+work around gain-graph holonomy, matching toric relations, quiver
+semi-invariants, coloured deletion cumulants, conditional matchgate charts,
+and exact tensor-restriction invariant theory.  It also defines two proposed
+research objects--the multi-backbone gain diagram and the bound
+deletion-depth cofactor quiver--and records the proof obligation and failure
+boundary for each.  See
+[`SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md`](SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md).
 
 A separate, nonblocking method-transfer track is recorded in
 [`ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md`](ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md).

@@ -183,9 +183,12 @@ h_0=product_(i!=0)x_i, L_(00)=x_0,
 h_1=y_0 product_(i=2)^4 y_i, L_(11)=y_1
 ```
 
-gives `g_0=X,g_1=Y`.  This formal sharpness model need not come from common
-root-edge hafnians; excluding it requires a stronger simultaneous
-realizability theorem.
+gives `g_0=X,g_1=Y`.  A subsequent sparse common-edge tangent construction
+realizes this sharp two-active frame (with one additional endpoint-inactive
+`h_k`) while keeping every hidden pair at rank at most one.  Thus common-edge
+consistency does not exclude the sharp model; additional lower-cofactor
+values are required.  See
+`ROOT_M7_SIMULTANEOUS_RANK_ONE_HIDDEN_PAIR_REALIZATION_NOGO.md`.
 
 ## Verification
 
@@ -209,7 +212,8 @@ five four-root hidden pairs:              EXACT EQUATIONS;
 rank-two hidden pair:                     BOTH COFACTORS DIAGONAL;
 rank-one hidden pair:                     ONE COMBINATION DIAGONAL;
 active internal four-root sectors:        AT LEAST TWO;
-existence of a rank-two hidden pair:       UNKNOWN;
-common root-edge realization obstruction: UNKNOWN;
+existence of a rank-two hidden pair:       NOT FORCED;
+common root-edge tangent obstruction:      NONE AT THIS LEVEL;
+full lower-cofactor realization:           UNKNOWN;
 global Krenn-Gu conjecture:                UNRESOLVED.
 ```

@@ -25,9 +25,12 @@ published nonmonochromatic-perfect-matching theorem.  No support or word
 enumeration occurs.
 
 At equality `3m+2`, the coordinate-only stratum reduces further to a narrow
-Hamilton-factorization/two-cell circuit locus.  Equality strata containing
-noncoordinate rows remain unknown, so this is not a general nonexistence
-proof for `P_m -> Delta_3`.
+Hamilton-factorization/two-cell circuit locus.  The subsequent exceptional-
+source rectangle theorem treats noncoordinate rows too: the two excess
+cells must have distinct source endpoints, and every mixed backbone
+coefficient cancels, if at all, by the unique cross rectangle on those
+sources.  Consistency of the resulting signed rectangle system remains
+unknown, so this is not a general nonexistence proof for `P_m -> Delta_3`.
 
 The displayed Hall-satisfying `P_7` table has exactly 23 coordinate row
 cells and realizes all three pure coefficients, local ranks, and port Hall
@@ -224,7 +227,11 @@ fewer than 3m coordinate cells:       EXCLUDED;
 exactly 3m total cells:               EXCLUDED;
 exactly 3m+1 total cells:             EXCLUDED;
 coordinate-only 3m+2 cells:          HAMILTON/CIRCUIT LOCUS ONLY;
-noncoordinate 3m+2 cells:            UNKNOWN;
+all 3m+2 equality strata:            TWO-SOURCE SIGNED RECTANGLE SYSTEM;
+noncoordinate equality existence:    UNKNOWN;
 arbitrary larger P_m restrictions:   UNKNOWN;
 global Krenn-Gu conjecture:           UNRESOLVED.
 ```
+
+The equality refinement and its independent replay are in
+`ARBITRARY_PERMANENT_EQUALITY_EXCEPTIONAL_SOURCE_RECTANGLE_THEOREM.md`.
