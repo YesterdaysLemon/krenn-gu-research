@@ -21,9 +21,10 @@ local rank three, exactly two pure switches, and every source-subset Hall
 quota, but has a shore of type `(1,1,3)`.  It is not a full equality
 restriction.  It proves that the ledger, localization, pure-cube structure,
 local concision, and deletion quotas alone cannot force the desired port
-completion.  A subsequent full-support tight-cut flattening excludes the
-`(1,1,1)` type.  The remaining no-completion proof obligation in this note's
-dependency chain is the `(1,1,3)` shore.
+completion.  Subsequent theorems exclude `(1,1,1)` by full-support tight-cut
+flattening and `(1,1,3)` by a five-port Kempe exchange.  Consequently the
+residual completion must exist in every hypothetical two-switch equality
+survivor.
 
 ## Two-switch support normal form
 
@@ -254,8 +255,10 @@ the connected shore while retaining its three or five port values, then use
 the mixed coefficient equations to constrain the boundary signature.  The
 three-edge signature is excluded by the rank-two Laplace factorization in
 `ARBITRARY_PERMANENT_EQUALITY_THREE_EDGE_SHORE_FLATTENING_EXCLUSION.md`.
-The explicit model (18) is a guardrail for the five-edge case: Hall quotas and
-local ranks alone cannot perform that last step.
+The five-edge signature is excluded by the boundary-pairing argument in
+`ARBITRARY_PERMANENT_EQUALITY_FIVE_EDGE_SHORE_KEMPE_EXCLUSION.md`.  The
+explicit model (18) remains a guardrail: Hall quotas and local ranks alone do
+not perform the latter step; mixed-coefficient localization is essential.
 
 ## Verification
 
@@ -281,7 +284,9 @@ switch-colour shore cuts:                (1,1);
 third-colour shore cut:                  1 OR 3;
 no-completion shore types:               (1,1,1) OR (1,1,3);
 (1,1,1) shore:                           EXCLUDED SUBSEQUENTLY;
-(1,1,3) shore:                           UNRESOLVED IN THIS NOTE;
+(1,1,3) shore:                           EXCLUDED SUBSEQUENTLY;
+residual R in equality:                  HAS A PERFECT MATCHING;
+direct port-completion rectangle:        FORCED;
 ledger/rank/Hall force completion:        NO;
 two-switch equality stratum:             UNRESOLVED;
 global Krenn--Gu conjecture:              UNRESOLVED.

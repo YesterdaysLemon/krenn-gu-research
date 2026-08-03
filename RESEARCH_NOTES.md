@@ -14272,8 +14272,9 @@ P_m=(L_c+L_d) O_q+L_e O_p.
 
 Thus its shore flattening has rank at most two, while the corresponding
 nontrivial flattening of `Delta_3` has rank three.  This is an arbitrary-order
-contradiction and packages all mixed coefficients at once.  The sole
-no-completion shore still open at this checkpoint is `(1,1,3)`.
+contradiction and packages all mixed coefficients at once.  At this
+three-edge checkpoint, the sole no-completion shore still open was
+`(1,1,3)`.
 
 ```text
 ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_PORT_COMPLETION_SHORE_THEOREM.md
@@ -14282,4 +14283,38 @@ audit_arbitrary_permanent_equality_two_switch_port_completion_shore_theorem.py
 ARBITRARY_PERMANENT_EQUALITY_THREE_EDGE_SHORE_FLATTENING_EXCLUSION.md
 verify_arbitrary_permanent_equality_three_edge_shore_flattening_exclusion.py
 audit_arbitrary_permanent_equality_three_edge_shore_flattening_exclusion.py
+```
+
+The five-edge shore is now excluded as well.  For either switch colour `h`,
+the restrictions of `M_h,M_e` to the defect-one shore have boundary patterns
+`{H}` and `{E_1,E_2,I}`.  The conservation law `outgoing-incoming=1` forces
+the internal pairing
+
+```text
+H <-> E_(iota_h),      E_(3-iota_h) <-> I.
+```
+
+The pure `h`-switch toggles the exterior `H`--`E_s` pairing without changing
+`iota_h`.  The aligned backbone therefore splits `M_h symmetric-difference
+M_e` into at least two cycles.  Flipping only the aligned cycle produces a
+mixed perfect matching using `u_(e,s)--e--p_s` and
+`b_h--h--p_(3-s)`.  Exceptional-source localization says its only possible
+partner is their transposition, but the residual coordinate-only mode
+`u_(e,s)` has no `e`-cell to `p_(3-s)`.  Its forbidden mixed coefficient is
+therefore one nonzero monomial.
+
+Both no-completion shores are excluded.  The residual graph `R` must have a
+perfect matching, and the direct completion forces
+
+```text
+g_(b_c,c)=-g_(b_d,d).
+```
+
+This cross-colour equation is the new two-switch frontier; it is not yet a
+contradiction with the pure switch factors or the excess-plane inequality.
+
+```text
+ARBITRARY_PERMANENT_EQUALITY_FIVE_EDGE_SHORE_KEMPE_EXCLUSION.md
+verify_arbitrary_permanent_equality_five_edge_shore_kempe_exclusion.py
+audit_arbitrary_permanent_equality_five_edge_shore_kempe_exclusion.py
 ```

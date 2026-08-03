@@ -167,10 +167,14 @@ coefficient identity incompatible with the diagonal target.  The three-edge
 signature is now excluded exactly.  Its two switch-colour ports occupy the
 same outside source, so full-support Laplace expansion has only two distinct
 complement minors and flattening rank at most two.  The corresponding
-nontrivial flattening of `Delta_3` has rank three.  Thus only the five-edge
-`(1,1,3)` no-completion shore survives.  The shore signature is finite in
-type at every `m`, while its interior remains symbolic; no census of supports
-is needed.
+nontrivial flattening of `Delta_3` has rank three.  The five-edge signature
+is now excluded by a separate boundary-state argument.  Defect-one balance
+forces an internal Kempe pairing bit; a pure switch toggles the exterior bit
+while preserving the interior.  Choosing the aligned backbone gives a
+one-cycle flip whose mixed monomial lacks its localized two-source cross
+partner.  Thus no no-completion shore survives, and the residual perfect
+matching and cross-colour port rectangle are forced at every order.  The
+shore interior remains symbolic throughout; no census of supports is used.
 
 ## 2. Toric ideals and matching-exchange binomials
 
@@ -437,10 +441,10 @@ Priority: exploratory, but fully symbolic.
    changes of pure matchings.  The zero-switch face is excluded.  In the
    one-switch face, exclude the marked bridge-or-series cut using the unique
    triangular residual matching.  In the two-switch face, force a nonlocal
-   overlap cycle outside the separated common excess mode, or exclude both
-   residual five-edge Hall shore `(1,1,3)` by its boundary coefficients; the
-   three-edge shore `(1,1,1)` is already excluded by tight-cut flattening.
-   This is arbitrary-order and closest to a global support theorem.
+   overlap cycle outside the separated common excess mode.  Both residual
+   Hall shores are now excluded, forcing the cross-colour port rectangle.
+   The remaining task is to combine that relation with the four backbone
+   fibres.  This is arbitrary-order and closest to a global support theorem.
 2. **Deletion-depth cofactor quiver.**  Build one cross-sector
    semi-invariant using actual lower cofactor values.  The tangent
    counterfamily rules out weaker candidates in advance.

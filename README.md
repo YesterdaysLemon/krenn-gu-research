@@ -84,12 +84,14 @@ contains a connected shore of coloured cut type `(1,1,1)` or `(1,1,3)`.
 The three-edge shore is now excluded at every order: its switch-colour ports
 end at the same outside source, so exact tight-cut Laplace expansion gives
 only two distinct complement tensors, while every nontrivial flattening of
-`Delta_3` has rank three.  A fixed six-mode support meets the ledger, local
-ranks, pure switches, and all source-subset Hall quotas but realizes the
-five-edge shore, so those structural conditions alone cannot finish the
-proof.  The surviving no-completion target is `(1,1,3)`.  The rectangle could
-still follow indirectly from mixed equations when the direct completion
-fails.
+`Delta_3` has rank three.  The five-edge shore is also excluded: defect-one
+boundary balance gives an internal pairing bit, while a pure switch toggles
+the exterior pairing; the aligned backbone admits a one-cycle flip whose
+mixed monomial has no exceptional-source cross partner.  Hence every
+two-switch equality survivor has a residual perfect matching and the direct
+cross-colour switch-mode rectangle is forced.  A fixed six-mode support
+still shows why ledger, local rank, pure-switch, and Hall data alone do not
+imply this conclusion; the mixed-coefficient localization step is essential.
 See
 [`ARBITRARY_PERMANENT_THREE_M_PLUS_TWO_SUPPORT_BOUND.md`](ARBITRARY_PERMANENT_THREE_M_PLUS_TWO_SUPPORT_BOUND.md)
 and
@@ -109,7 +111,9 @@ and
 See also
 [`ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_PORT_COMPLETION_SHORE_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_PORT_COMPLETION_SHORE_THEOREM.md)
 and
-[`ARBITRARY_PERMANENT_EQUALITY_THREE_EDGE_SHORE_FLATTENING_EXCLUSION.md`](ARBITRARY_PERMANENT_EQUALITY_THREE_EDGE_SHORE_FLATTENING_EXCLUSION.md).
+[`ARBITRARY_PERMANENT_EQUALITY_THREE_EDGE_SHORE_FLATTENING_EXCLUSION.md`](ARBITRARY_PERMANENT_EQUALITY_THREE_EDGE_SHORE_FLATTENING_EXCLUSION.md)
+and
+[`ARBITRARY_PERMANENT_EQUALITY_FIVE_EDGE_SHORE_KEMPE_EXCLUSION.md`](ARBITRARY_PERMANENT_EQUALITY_FIVE_EDGE_SHORE_KEMPE_EXCLUSION.md).
 
 Two complementary cell-level transfers are also settled.  The all-root and
 four-root jets give five exact hidden-pair equations; on each rank-two chart
