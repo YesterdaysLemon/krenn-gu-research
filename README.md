@@ -7,10 +7,13 @@ counterexample for all even `n >= 6` and `d >= 3`.
 
 ### Start here: 1 August 2026 continuation
 
-The shortest route into the current proof frontier is
+The shortest route into the current symbolic `P_7` frontier is
+[`SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md`](SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md).
+It separates proved statements from formal-cofactor and quotient-shadow
+controls, gives the ranked cross-depth program, and records the exact
+`UNKNOWN` boundaries.  The component-20 special-fibre continuation remains
+separate in
 [`NEXT_INSTANCE_HANDOFF_2026-07-31.md`](NEXT_INSTANCE_HANDOFF_2026-07-31.md).
-It separates proved statements from exploratory leads, gives the focused
-replay commands, and records the next symbolic decision point.
 
 The latest arbitrary-order symbolic checkpoint replaces the proposed
 `P_7` shell search by a permanent kernel-deletion hierarchy.  For every
@@ -1385,6 +1388,81 @@ bound `18` and one-port `P_6` bound `21` remain unconditional under their
 existing extraction hypotheses, whereas the two-port `P_7` bound `24`
 remains conditional on a legal synchronized/factorized extraction:
 [`GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md`](GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md).
+The graph-side fan is now forced without a shell or word enumeration.  For
+every retained two-subset of the four unmarked columns, fixed-complement
+Laplace expansion gives the full nonzero pure permanent.  Thus all six clean
+windows occur in each pure colour, and the tetrahedral fan
+`1234,1256,1356,1456` occurs graph-side.  The same rational model has zero
+shore product at both `rho>=2` root pairs for every window.  This does not
+make the distinguished empty/residual companion forms dependent: `rho` is a
+cofactor-image rank, not an observation rank.  Actual marked-star exposure
+remains open:
+[`P7_FIXED_COMPLEMENT_LAPLACE_FAN_COVER_AND_LOWER_FRAME_SEPARATION.md`](P7_FIXED_COMPLEMENT_LAPLACE_FAN_COVER_AND_LOWER_FRAME_SEPARATION.md).
+
+That distinction survives the complete nonempty lower-root system.  A
+jet-orthogonal splice combines the fixed rational pure sector with the common
+`2+2+1` tangent model.  All 31 mixed lower-root GHZ equations and all 18
+colour-tagged graph windows coexist, every `rho>=2` shore product is still
+zero, and explicit coefficient minors make the two distinguished companion
+forms independent at every root pair.  This is one common bilinear block
+system but only a formal complementary-cofactor ledger; common tensor-valued
+principal-hafnian realization, mixed blocker cancellation, and legal
+marked-star rows are still unknown:
+[`P7_221_JET_ORTHOGONAL_SPLICE_AND_FORMAL_FIXED_WINDOW_NO_GO.md`](P7_221_JET_ORTHOGONAL_SPLICE_AND_FORMAL_FIXED_WINDOW_NO_GO.md).
+
+The forced fan lies on a target-null boundary.  Each canonical window uses
+at least two common-null blocker axes, so its seven-blocker GHZ word vanishes.
+Independent top selectors would therefore force both its direct and
+residual-present four-point responses to be zero, leaving the vacuum-free
+equation `sum_e z_e m_(W-e)=0` rather than a nonzero face from which to divide.
+The 31 root-jet deletion labels contain no blocker deletions, whereas the
+pair-face labels delete five blockers; at the formal level the latter are a
+polynomial-ring extension and have zero elimination ideal over the former.
+An honest two-residual response family
+`M=1+t`, `Phi=lambda-lambda*t`, `Z=lambda` fixes every nonempty response in
+this chart while the empty scalar varies.  Root singleton companions and the
+needed blocker singleton depths are different edge families:
+[`P7_GHZ_NULL_FAN_DUAL_WICK_DEFECT_AND_SINGLETON_DEPTH_SEPARATION.md`](P7_GHZ_NULL_FAN_DUAL_WICK_DEFECT_AND_SINGLETON_DEPTH_SEPARATION.md).
+
+More generally, for every even `S` of size `2d>=4`, the dual-Wick defect
+obeys
+`sum_(|e|=2) z_e m_(S-e)-z_S=(d-1)h m_S`.  Cross-window minors eliminate
+`h` without an empty face, and any compatible nonzero four- or six-point
+moment recovers it.  The physical GHZ response family above shows that the
+simultaneous moment-null alternative is real and that neither physicality
+nor the presently exposed nonempty data forces the additive or nonzero-face
+locus:
+[`P7_VACUUM_FREE_DUAL_WICK_PROJECTIVIZATION_AND_EMPTY_SCALAR_ESCAPE.md`](P7_VACUUM_FREE_DUAL_WICK_PROJECTIVIZATION_AND_EMPTY_SCALAR_ESCAPE.md).
+
+The residual-permanent route now has a stronger common-quotient obstruction.
+Quotienting any three core modes by their full terminal-incidence spans kills
+every physical degree-five term, while three exact prescribed faces have
+independent diagonal coefficients.  Hence each colour survives on at most
+two modes and the sum of the seven restricted quotient ranks is at most six;
+some mode's complete diagonal colour space lies in its terminal-incidence
+span.  This rules out the older rank-sum-ten Mayer--Vietoris lift as a
+physical five-terminal lift:
+[`P7_221_THREE_MODE_RESIDUAL_ANNIHILATION_AND_FULL_QUOTIENT_RANK_SUM_BOUND.md`](P7_221_THREE_MODE_RESIDUAL_ANNIHILATION_AND_FULL_QUOTIENT_RANK_SUM_BOUND.md).
+
+At equality six the three colour supports are distinct two-mode sets.  They
+cannot be pairwise disjoint.  Degree-five Laplace descent would otherwise
+force all fifteen four-point projected core hafnians on the six active modes
+to vanish, but a characteristic-zero six-vertex lemma says that such an edge
+system has matching number at most two, contradicting the three forced
+disjoint core edges.  An overlapping triangle attains the quotient shadow,
+so overlap and rank below six remain genuine open strata:
+[`P7_221_EXTREMAL_RANK_SIX_DISJOINT_SUPPORT_DEGREE3_HAFNIAN_OBSTRUCTION.md`](P7_221_EXTREMAL_RANK_SIX_DISJOINT_SUPPORT_DEGREE3_HAFNIAN_OBSTRUCTION.md).
+
+Finally, the minimal tangent-companion cycle boundary is closed.  Its second
+jet forces each edge's quotient class to be one of the three Hadamard
+idempotents `A=[1:0], B=[0:1], C=[1:1]`; the consecutive third jet excludes
+`C` and leaves only an even alternating `A/B` cycle.  Uniform `A` and uniform
+`B` full-root derivatives then select the two alternating perfect matchings.
+Both delete the same complete root set and hence lie on one common principal-
+cofactor line, whereas the two GHZ targets are independent pure tensors.
+Thus the whole minimal-cycle topology is excluded; off-cycle or otherwise
+nonminimal companion systems remain open:
+[`ROOT_TANGENT_MINIMAL_CYCLE_IDEMPOTENT_SECOND_THIRD_JET_CLASSIFICATION.md`](ROOT_TANGENT_MINIMAL_CYCLE_IDEMPOTENT_SECOND_THIRD_JET_CLASSIFICATION.md).
 A separate majority-subset theorem says that, on `|S|=m+r` vertices of an
 order-`2m` witness, each contracted monochromatic pure tensor lies in the
 `r`th power of the internal-edge ideal.  At `r=1`, every entangled tensor

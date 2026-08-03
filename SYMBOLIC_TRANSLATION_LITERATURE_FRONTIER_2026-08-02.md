@@ -1558,11 +1558,13 @@ necessary and sufficient: the tetrahedral fan
 
 cancels every nuisance pair and reconstructs the target `K_4` by explicit
 linear formulas.  This is a new bosonic boundary-tomography lemma rather than
-an imported theorem.  Its graph-theoretic proof obligation is now concrete:
-force the fourth fan shore with compatible selector normalization, then
-expose the empty face.  See
+an imported theorem.  Fixed-complement Laplace expansion now forces all six
+graph-side windows in every pure colour, so the fourth fan window itself is
+no longer the obstruction.  What remains is compatible marked-star exposure
+and residual-present pair normalization on those windows.  See
 `P7_THREE_CLEAN_WINDOW_PAIR_FACE_RECOVERY_NO_GO.md` and
-`P7_FOUR_CLEAN_WINDOW_TETRAHEDRAL_PAIR_TOMOGRAPHY_THEOREM.md`.
+`P7_FOUR_CLEAN_WINDOW_TETRAHEDRAL_PAIR_TOMOGRAPHY_THEOREM.md`, and
+`P7_FIXED_COMPLEMENT_LAPLACE_FAN_COVER_AND_LOWER_FRAME_SEPARATION.md`.
 
 Two other apparent bridges are closed.  First, for `h!=0` the direct term
 makes the top two-port cofactor map affine-surjective, so synchronization is
@@ -1645,41 +1647,154 @@ compatibility invariant across words, degrees, or the 21 pairwise incidence
 quotients.  Ordinary matchgate/spinor identities remain conditional because
 generic hafnian signs do not transfer.
 
+## Cofactor-depth grading and the new symbolic frontier
+
+The latest results suggest a useful invented object: the **cofactor-depth
+grading**.  Give a complementary principal-hafnian symbol three indices,
+
+```text
+C_(I,A,D),                                             (23)
+```
+
+where `I` is the differentiated root set, `A` is the set of nonblocker
+companion endpoints deleted with it, and `D` is the deleted blocker set.
+The projective nonempty root jets live entirely in blocker depth `D=empty`.
+The pair observations needed by tetrahedral tomography instead have
+`|D|=5`.  Before principal-hafnian realizability is imposed, different
+deletion labels are independent coordinates.  The jet-orthogonal splice
+supplies a point of the complete 31-equation depth-zero ledger; adjoining the
+pair-face variables is therefore a polynomial-ring extension.  Its
+elimination ideal in the depth-five pair coordinates is zero.
+
+This gives an exact observability theorem, not only a metaphor:
+
+```text
+all nonempty projective root jets
+  !=> any polynomial constraint on the marked pair-face defect.    (24)
+```
+
+The missing information must be a **cross-depth principal-hafnian relation**
+or a legal observation that physically identifies coordinates at the two
+depths.  This is the rigorous core of a possible cofactor-depth spectral
+sequence: the formal first page splits by deletion depth, while physical
+hafnian condensation, common-edge matching, and marked-star exposure are
+the only currently known candidates for differentials between pages.  No
+spectral-sequence convergence theorem is claimed; (23)--(24) are the proved
+graded statement that any such theory must extend.
+
+The graph-side fan and its target equation now meet on a particularly sharp
+boundary.  Fixed-complement Laplace forces every one of the eighteen
+colour-tagged clean windows and hence the tetrahedral fan.  A jet-orthogonal
+common-block model retains them while satisfying all 31 nonempty mixed root
+jets, and its distinguished empty/residual companion forms are independent
+at every shore even though every nonzero shore has cofactor-image rank one.
+Thus cofactor-image rank and selector rank are separate invariants.  But each
+canonical clean-window word is GHZ-null.  Independent selectors force
+
+```text
+m_W=z_W=0,
+sum_(|e|=2) z_e m_(W minus e)=0,                      (25)
+```
+
+rather than a nonzero moment chart.  The family
+`M=1+t`, `Phi=lambda-lambda*t`, `Z=lambda` satisfies every such response
+equation with fixed nonempty data and varying empty scalar.  Root singleton
+companions and the blocker singleton depths needed to recover `lambda` are
+different physical edge families.  See
+`P7_221_JET_ORTHOGONAL_SPLICE_AND_FORMAL_FIXED_WINDOW_NO_GO.md` and
+`P7_GHZ_NULL_FAN_DUAL_WICK_DEFECT_AND_SINGLETON_DEPTH_SEPARATION.md`.
+
+The vacuum-free part of dual Wick survives this collapse.  For
+`|S|=2d>=4`,
+
+```text
+D_S=sum_(|e|=2) z_e m_(S minus e)-z_S=(d-1)h m_S.     (26)
+```
+
+Cross-window minors eliminate `h`, and a compatible nonzero `m_4` or `m_6`
+recovers it.  Equation (25) shows that the forced canonical fan instead lies
+on the simultaneous moment-null stratum.  A successful empty-face theory
+must therefore prove that some legally exposed noncanonical moment is
+nonzero, or synchronize paired blocker-singleton depths; it cannot merely
+add more canonical fan windows.  See
+`P7_VACUUM_FREE_DUAL_WICK_PROJECTIVIZATION_AND_EMPTY_SCALAR_ESCAPE.md`.
+
+The residual-permanent translation has also moved from facewise ranks to one
+common quotient.  Quotienting any three core modes by the full terminal-
+incidence spans kills every degree-five physical term.  Three independent
+prescribed diagonal faces then force
+
+```text
+sum_i rank(q_i restricted to E_i)<=6.                 (27)
+```
+
+At equality, the three colour supports are distinct two-mode sets.  If they
+were disjoint, degree-five Laplace descent would make every projected
+four-point core hafnian vanish on the six active modes.  A new bosonic
+matching lemma proves that a characteristic-zero six-vertex edge system with
+all four-point hafnians zero has matching number at most two, contradicting
+the three forced support edges.  Hence the disjoint equality stratum is
+excluded.  The triangle `01,12,02` realizes the overlapping quotient shadow,
+so the next circuit must distinguish overlapping supports or force the rank
+strictly below six.  See
+`P7_221_THREE_MODE_RESIDUAL_ANNIHILATION_AND_FULL_QUOTIENT_RANK_SUM_BOUND.md`
+and
+`P7_221_EXTREMAL_RANK_SIX_DISJOINT_SUPPORT_DEGREE3_HAFNIAN_OBSTRUCTION.md`.
+
+A separate invented low-jet calculus closes the minimal tangent-cycle
+topology.  Coordinatewise squaring on the two-dimensional diagonal quotient
+forces the edge classes to the three projective Hadamard idempotents; a
+three-root matching pinch leaves only an even alternating binary cycle.
+Uniform full-root derivatives along the two idempotent axes then select two
+different perfect matchings with the same complete deletion set.  Both graph
+derivatives use one common principal cofactor, while the GHZ derivatives are
+independent pure tensors.  This **common-cofactor collision** excludes the
+minimal cycle at full root order.  Nonminimal companion systems remain open;
+see
+`ROOT_TANGENT_MINIMAL_CYCLE_IDEMPOTENT_SECOND_THIRD_JET_CLASSIFICATION.md`.
+
 ## Ranked proof program
 
-1. **Legally force tetrahedral tomography and the empty face.**  The
-   four-window fan is the minimal complete pair sensor.  Derive it from
-   marked-Laplace, mixed-colour, or companion-depth data with one compatible
-   normalization, and expose the remaining scalar face needed by dual Wick.
-   The root-budget counterresponses and three-window no-go are mandatory
-   controls.
-2. **Residual-permanent gluing across face quotients.**  Mayer--Vietoris
-   descent and all common-edge lines admit a sharp rational lift.  Retain the
-   five-terminal permanents or unprojected face tensors and seek a joint
-   circuit that the lift cannot satisfy.
-3. **Joint singular-kernel compatibility.**  A preselected fifth-compound
+1. **Cross-depth marked-star realization.**  The tetrahedral fan is already
+   forced graph-side, but its canonical GHZ words are null and the depth-zero
+   root-jet ideal has zero elimination in the depth-five pair faces.  Use one
+   common principal-hafnian identity or physical marked-star circuit to expose
+   the six direct and residual-present pair coordinates with compatible
+   normalization.  A formal-cofactor argument cannot suffice.
+2. **Overlapping rank-six residual circuit.**  The common full-terminal
+   quotient has rank sum at most six and the disjoint equality stratum is
+   excluded.  Classify the triangle, star, and path overlaps using the
+   unprojected degree-one/three equations or their nonzero residual
+   permanents.  The exact triangle quotient shadow is the mandatory control.
+3. **Non-null moment or paired blocker-singleton depth.**  Canonical fan and
+   six-double words cannot recover `h`.  Either prove that a legally exposed
+   noncanonical `m_4` or `m_6` is nonzero and apply the vacuum-free defect, or
+   synchronize the two blocker-side singleton rows.  Root singleton bases do
+   not provide those rows.
+4. **Joint singular-kernel compatibility.**  A preselected fifth-compound
    determinant is not fibre-uniform.  Couple several adaptively chosen words
    and the degree-one/degree-three equations, and test whether their singular
    kernels can contain one common core completion.  The rank-six escape is
    now the mandatory sharpness model.
-4. **Physical-idempotent separator.**  Find a polynomial/covariant that
+5. **Physical-idempotent separator.**  Find a polynomial/covariant that
    vanishes for vertexwise local-colour block graphs but distinguishes the
    formal global-idempotent realization.  It must use the uncontracted
    degree-five tuple, joint degrees, or degree seven: the binary contraction
    itself is a physical image point, while scalar degrees one and three are
    dominant.
-5. **Phase-decorated `B_3` exchange complex.**  Define the missing incidence
+6. **Phase-decorated `B_3` exchange complex.**  Define the missing incidence
    alignment between the conformal cycle/theta matching and the
    at-most-eight pure backbones, then glue the exact additive and cubic toric
    equations.  A single coefficient cannot exclude simultaneous bypasses.
-6. **Deletion-depth cofactor quiver.**  Build one cross-sector
-   semi-invariant using actual lower cofactor values.  The tangent
-   counterfamily rules out weaker candidates in advance.
-7. **Coloured deletion-cumulant compatibility.**  Use two overlapping root
+7. **Deletion-depth cofactor quiver.**  Build one cross-sector semi-invariant
+   using actual principal-hafnian values at blocker depths zero and five.  The
+   jet-orthogonal splice and free-`h` response family rule out any candidate
+   confined to only one of those depths.
+8. **Coloured deletion-cumulant compatibility.**  Use two overlapping root
    windows to turn quotient minors into a global log-quadratic obstruction.
-8. **Conditional Pfaffian chart.**  Apply matchgate identities only if a
+9. **Conditional Pfaffian chart.**  Apply matchgate identities only if a
    support-specific orientation is forced.
-9. **GIT/tropical degeneration.**  Seek a one-parameter initial form that
+10. **GIT/tropical degeneration.**  Seek a one-parameter initial form that
    preserves the exact diagonal restriction; do not substitute asymptotic or
    border statements.
 
@@ -1701,11 +1816,19 @@ new P7 root-budget law:           z needs |S|>=q, direct m needs |S|>=2q;
 maximal q2 visible response map:  DOMINANT, exact Jacobian minor 360;
 conditional four-point selector: complementary z weights must be additive;
 q4 four-point law:                quartic permanent defect can equal one;
-new selector no-go:               rank-two pair need not meet a nonzero shore;
+new cofactor-rank no-go:          rho>=2 pair need not meet a nonzero shore;
 new projection no-go:             all six top windows have dense visible image;
 three marked-star windows:        target pair recovery <=5, SHARP;
 four-window tetrahedral fan:      all six target pairs recovered, EXACT;
-legal fourth fan window:          UNKNOWN;
+all graph-side fan windows:       FORCED BY FIXED-COMPLEMENT LAPLACE;
+rho>=2 shore in rational model:   ZERO FOR EVERY WINDOW;
+distinguished companion rank:     TWO AT EVERY ROOT PAIR IN SPLICE;
+legal marked-star fan exposure:   UNKNOWN;
+canonical fan target words:       GHZ-NULL;
+selected canonical fan tops:      m4=z4=0;
+root-jet ideal on pair faces:      ZERO FORMAL ELIMINATION IDEAL;
+vacuum-free dual-Wick defect:     EXACT;
+canonical moment denominator:     NOT FORCED, FREE-h RESPONSE EXISTS;
 new mixed-colour circuit:          det(corrected 3x3 pair block)=0;
 new axis topology boundary:        jet frames and matching shores still viable;
 new strict axis reduction:         only 2+2+1 survives two-endpoint model;
@@ -1729,6 +1852,9 @@ tricolour quotient rank law:         at least four codimension-two modes;
 tricolour quotient bound:            SHARP ON ABSTRACT QUOTIENT DATA;
 face-quotient Mayer--Vietoris law:    EXACT;
 common-edge quotient gluing alone:   SHARP RATIONAL LIFT EXISTS;
+full-terminal quotient rank sum:     AT MOST SIX;
+rank-six disjoint colour supports:   EXCLUDED;
+rank-six overlapping support shadow: TRIANGLE EXISTS, PHYSICAL LIFT UNKNOWN;
 new synchronization gap:            other scalar lifts remain;
 new h=0 polar selector:            five null legs isolate one mixed pair block;
 new arbitrary-order boundary:      at least three coordinate-incidence modes;
@@ -1740,7 +1866,8 @@ new aligned-resonance boundary:    scalar depth subtraction then loses a colour;
 top two-port data at h!=0:         FULL AFFINE IMAGE;
 P5/P6 support 18/21:              UNCONDITIONAL AFTER KNOWN EXTRACTION;
 P7 support 24 transfer:           CONDITIONAL ON LEGAL SYNCHRONIZATION;
-highest-priority invented object: tetrahedral fan plus residual-permanent gluing;
+minimal tangent-companion cycle:  EXCLUDED BY FULL-ROOT COFACTOR COLLISION;
+highest-priority invented object: cross-depth cofactor quiver plus overlap circuit;
 new legality boundary:             top synchronization has shore rank one;
 highest-priority literature tool: compound/tetrad circuit completion;
 full proof or counterexample:      NOT YET;
