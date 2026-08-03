@@ -131,15 +131,22 @@ def main():
 
     # Independent transverse response calculation, using exit columns p0,p2.
     entrance_marks = {"a1": (0, 1, 1), "a2": (1, 0, 1)}
-    exit_marks = {"r1": e2, "r2": e0}
+    exterior_marks = {"r1": (1, 0, 1), "r2": (1, 1, 0)}
     y = tuple(
         tuple(dot(cells[(row, source)], entrance_marks[row]) for source in ("q1", "q2"))
         for row in ("a1", "a2")
     )
     z = tuple(
-        tuple(dot(cells.get((row, source), (0, 0, 0)), exit_marks[row]) for source in ("p0", "p2"))
+        tuple(
+            dot(cells.get((row, source), (0, 0, 0)), exterior_marks[row])
+            for source in ("p0", "p2")
+        )
         for row in ("r1", "r2")
     )
+    assert (
+        dot(cells[("r1", "q1")], exterior_marks["r1"]),
+        dot(cells[("r2", "q2")], exterior_marks["r2"]),
+    ) == (1, 1)
     assert y == ((1, 1), (1, 2))
     assert z == ((1, 1), (0, 1))
     omega = tuple(

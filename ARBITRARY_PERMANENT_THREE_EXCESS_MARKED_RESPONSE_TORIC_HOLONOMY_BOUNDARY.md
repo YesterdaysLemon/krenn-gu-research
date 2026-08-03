@@ -249,21 +249,23 @@ cut has colours `{0,1,2,2,2}`.  The surplus is the colour-`2` token at the
 unique degree-four exterior mode, exactly the `(0,2,2;1)` generalized cut
 ledger.
 
-Now take the transverse marked jet on entrance rows `{a_1,a_2}` and exit
-columns `{p_0,p_2}`.  Use entrance directions
+Now take a scalar marked specialization on entrance rows `{a_1,a_2}` and
+exit columns `{p_0,p_2}`, transverse to the aligned coordinate word.  Use
+one common direction at each exposed mode:
 
 ```text
 h_(a_1)=e_1+e_2,             h_(a_2)=e_0+e_2,
+h_(r_1)=e_0+e_2,             h_(r_2)=e_0+e_1.
 ```
 
-base directions `r_1=e_0,r_2=e_1` for the empty matching, and exit
-directions `h_(r_1)=e_2,h_(r_2)=e_0`.  This is an exact scalar transverse
-specialization of the marked exterior jet; it is **not** claimed to be the
-still-missing target-compatible marking.  The exit columns `{p_0,p_2}` are
-the cofactor block in the zero-defect signless relation anchored by the core
-cell `a_0p_1`.  At the aligned coordinate word itself the cut matrices are
-zero; equation (21) is deliberately a transverse response.  Equations
-(15)--(16) give
+This single multilinear evaluation simultaneously produces the displayed
+`Y,W,Z`; no split base/tangent convention is being used.  It is an exact
+scalar specialization of the marked exterior response, but is **not**
+claimed to be the still-missing target-compatible marking.  The exit
+columns `{p_0,p_2}` are the cofactor block in the zero-defect signless
+relation anchored by the core cell `a_0p_1`.  At the aligned coordinate word
+itself the cut matrices are zero; equation (21) is deliberately transverse.
+Equations (15)--(16) give
 
 ```text
 Y=[1 1],        Z=[1 1],        W=I_2,

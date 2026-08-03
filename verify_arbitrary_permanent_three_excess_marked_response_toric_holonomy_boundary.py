@@ -218,8 +218,7 @@ def check_tight_physical_countermodel() -> None:
     # Transverse pair-deletion jet for the anchor-a0p1 cofactor block:
     # entrance rows (a1,a2), exit columns (p0,p2).
     entrance_marks = {"a1": (0, 1, 1), "a2": (1, 0, 1)}
-    base_marks = {"r1": e0, "r2": e1}
-    exit_marks = {"r1": e2, "r2": e0}
+    exterior_marks = {"r1": (1, 0, 1), "r2": (1, 1, 0)}
     y = sp.Matrix(
         2,
         2,
@@ -229,15 +228,15 @@ def check_tight_physical_countermodel() -> None:
         ),
     )
     w = sp.diag(
-        dot(cells[("r1", "q1")], base_marks["r1"]),
-        dot(cells[("r2", "q2")], base_marks["r2"]),
+        dot(cells[("r1", "q1")], exterior_marks["r1"]),
+        dot(cells[("r2", "q2")], exterior_marks["r2"]),
     )
     z = sp.Matrix(
         2,
         2,
         lambda i, j: dot(
             cells.get((("r1", "r2")[i], ("p0", "p2")[j]), (0, 0, 0)),
-            exit_marks[("r1", "r2")[i]],
+            exterior_marks[("r1", "r2")[i]],
         ),
     )
     assert y == sp.Matrix(((1, 1), (1, 2)))
