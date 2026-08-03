@@ -15,7 +15,31 @@ controls, gives the ranked cross-depth program, and records the exact
 separate in
 [`NEXT_INSTANCE_HANDOFF_2026-07-31.md`](NEXT_INSTANCE_HANDOFF_2026-07-31.md).
 
-The newest nonlinear route uses the complete principal four-hafnian deck.
+The current deepest `P_7` advance is a three-part symbolic
+observability theorem.  First, arbitrary-order pinned partner equations,
+viewed through the square-free strong-Lefschetz mechanism, recover every
+nonroot edge rationally from consecutive named hafnian decks whenever the
+root surplus is at least three.  Second, one explicit legal five-root chart
+has full rank on all `126+84+9=219` shallow cofactor labels.  Third, adjoining
+the three-dimensional diagonal GHZ target raises that chart's rank from 219
+to 222, so its sensor image meets the target space only at zero.  Hence the
+capacity and legal-label problems are solved on a nonempty graph-side open
+set, but every actual GHZ completion must enter a proper target-incidence or
+sensor-rank-drop locus.  See
+[`PINNED_HAFNIAN_STAR_SYSTEM_AND_RATIONAL_EDGE_TOMOGRAPHY_THEOREM.md`](PINNED_HAFNIAN_STAR_SYSTEM_AND_RATIONAL_EDGE_TOMOGRAPHY_THEOREM.md)
+and
+[`P7_FULL_MIXED_ROOT_219_LABEL_SENSOR_AND_PINNED_STAR_GATING_BOUNDARY.md`](P7_FULL_MIXED_ROOT_219_LABEL_SENSOR_AND_PINNED_STAR_GATING_BOUNDARY.md).
+
+The generic open cannot be silently globalized.  On a nine-vertex
+double-star stratum, the complete `H_4/H_6/H_8` deck has an exact
+two-dimensional fibre: the center edge is wholly invisible and reciprocal
+shore scaling gives the second gauge, despite 21 nonzero four-hafnians.
+Conversely, the zero four-hafnian deck cannot meet the full edge torus in
+characteristic zero.  This rigidity-style result identifies a sharp
+coordinate/singular boundary rather than a counterexample.  See
+[`P7_COMBINED_SHALLOW_DECK_DOUBLE_STAR_GAUGE_AND_ZERO_TORUS_BOUNDARY.md`](P7_COMBINED_SHALLOW_DECK_DOUBLE_STAR_GAUGE_AND_ZERO_TORUS_BOUNDARY.md).
+
+The earlier nonlinear route uses the complete principal four-hafnian deck.
 For every named graph on `n>=6` vertices, the Jacobian of that deck at the
 all-one graph is the classical `2`-subset versus `4`-subset inclusion matrix
 and has full column rank.  Hence all edges are generically finite algebraic

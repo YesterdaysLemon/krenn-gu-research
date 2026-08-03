@@ -69,6 +69,71 @@ general linear cofactor gauge to permutation and diagonal rescaling.  The
 current jets expose vector spaces, not that multiplication.  See
 `LOWER_MIXED_ROOT_JET_DELETION_LABEL_TOMOGRAPHY_AND_SQUAREFREE_GAUGE_THEOREM.md`.
 
+### Pinned Lefschetz inversion, a complete P7 sensor, and its incidence wall
+
+The square-free algebra does more than organize the deletion labels.  For a
+named graph, pin a vertex `p` and expand every upper hafnian by the partner
+of `p`:
+
+```text
+h_(p union T)=sum_(s in T) a_ps h_(T minus {s}).
+```
+
+At the all-one graph this is a subset-inclusion matrix, or equivalently
+multiplication by a power of the Lefschetz element in
+`K[z_1,...,z_n]/(z_i^2)`.  The strong Lefschetz property of monomial complete
+intersections is the surrounding commutative-algebra theory; Herzog and
+Popescu survey the classical result and extensions in
+[*The strong Lefschetz property and simple extensions*](https://arxiv.org/abs/math/0506537).
+Here a self-contained inclusion-rank proof gives the exact reconstruction
+hierarchy.  With surplus `r`, the first `h_(2q)` deck is generically finite
+for `r>=2`, while the consecutive `h_(2q),h_(2q+2)` decks rationally recover
+every edge for `r>=3`.  At `r=1`, the nonzero all-one fibre is smooth of
+dimension `binom(n,2)-n`; this is 27 for the `P_5,q=4` cell and 65 for the
+`P_7,q=6` cell.  See
+`PINNED_HAFNIAN_STAR_SYSTEM_AND_RATIONAL_EDGE_TOMOGRAPHY_THEOREM.md`.
+
+The five-root `P_7,q=2` selector problem is now solved on a legal graph-side
+open chart.  One fixed integer companion operator has all 219 columns
+independent, so the 126 four-, 84 six-, and nine eight-hafnian labels are
+simultaneously selectable.  Combined with the pinned theorem, this gives a
+relative rational inverse for all 36 nonroot edges on a nonempty product
+open, with the companion blocks retained as known base parameters.  This is
+not a GHZ chart: appending the three pure diagonal target columns gives rank
+222, so the sensor image intersects the diagonal target space only at zero.
+The nonzero determinant makes the target-incidence condition a proper,
+nonvacuous determinantal locus.  Any witness must lie there or on the sensor
+rank-drop locus.  See
+`P7_FULL_MIXED_ROOT_219_LABEL_SENSOR_AND_PINNED_STAR_GATING_BOUNDARY.md`.
+
+The singular side has an equally exact translation to Gram completion and
+rigidity.  On the double star with center pair `p,q` and leaves `i`, the only
+nonzero shallow coordinates are
+
+```text
+h_(pqij)=x_i y_j+x_j y_i.
+```
+
+They form an off-diagonal hyperbolic Gram map.  The completion-matrix idea is
+parallel to Singer and Cucuringu's rigidity approach to
+[*Uniqueness of Low-Rank Matrix Completion by Rigidity Theory*](https://arxiv.org/abs/0902.3846).
+The exact Jacobian here has rank 34 among 36 edge variables: the center edge
+and reciprocal shore scaling survive.  Yet a separate ratio argument proves
+that the zero four-deck cannot meet the full edge torus for `n>=6` in
+characteristic zero.  Thus the generic Lefschetz inverse and the double-star
+fibre are two strata of one observation map, not contradictory claims.  See
+`P7_COMBINED_SHALLOW_DECK_DOUBLE_STAR_GAUGE_AND_ZERO_TORUS_BOUNDARY.md`.
+
+This suggests an **incidence--Lefschetz stratification** as the next theory:
+track three determinantal ideals simultaneously--the sensor minors, the
+pinned-star minors, and the augmented target-incidence minors.  On the first
+two opens the cofactors and then the graph are rationally identifiable.  A
+GHZ witness must satisfy the third ideal.  A decisive theorem would show
+that this incidence ideal forces the pinned determinant to vanish only on
+classified coordinate/Gram strata, or else makes the uniquely reconstructed
+cofactor tower violate a nested partner recurrence.  Neither implication is
+currently proved.
+
 There is, however, a genuinely nonlinear way around the depth ceiling on a
 generic chart.  For a named `n`-vertex graph, send its edges to all principal
 four-vertex hafnians
@@ -84,12 +149,14 @@ inclusion-matrix connection sits inside the integral diagonal-form theory of
 Ghorbani, Khosrovshahi, Maysoori, and Mohammad-Noori,
 [*Inclusion Matrices and Chains*](https://arxiv.org/abs/0709.3144), while the
 generic-finite conclusion is the algebraic-identifiability translation.
-For the nine nonroots of `P_7`, a legally labeled depth-five deck would thus
-recover all 36 edges up to finitely many algebraic branches.  The one-edge
-line lies in the zero deck fibre, and `A` and `-A` share a deck, so singular
-stratification and branch selection are indispensable.  The 126 deck labels
-cannot fit in one `2^5=32` two-plane root jet, but do fit by dimension in the
-full `3^5=243` root tensor.  See
+For the nine nonroots of `P_7`, the full sensor theorem above supplies those
+labels on a legal open and hence recovers all 36 edges up to finitely many
+algebraic branches even before the stronger consecutive-deck inverse is
+used.  The one-edge line lies in the zero deck fibre, and `A` and `-A` share
+a deck, so singular stratification and branch selection are indispensable.
+The 126 deck labels cannot fit in one `2^5=32` two-plane root jet, but the
+complete 219-label shallow system does fit, and is attained, in the full
+`3^5=243` root tensor.  See
 `PRINCIPAL_FOUR_HAFNIAN_GENERIC_EDGE_TOMOGRAPHY_AND_P7_SINGULAR_FIBRE_BOUNDARY.md`.
 
 The two-fan co-occurrence problem also has a projective-geometric reduction
@@ -110,11 +177,12 @@ Together these translations reorganize the frontier:
 
 ```text
 linear mixed-root access to the pair:       IMPOSSIBLE BY DEPTH;
-named shallow cofactor exposure:            EXACT SELECTOR PROBLEM;
-generic nonlinear recovery from depth five: PROVED CONDITIONALLY;
+named P7 shallow cofactor exposure:         PROVED ON A LEGAL OPEN;
+relative rational P7 edge recovery there:  PROVED;
+diagonal target incidence on sensor open:  PROPER DETERMINANTAL LOCUS;
 singular shallow-deck fibres:               NONEMPTY AND PHYSICAL;
 actual five-root two-fan geometry:           CLASSIFIED;
-GHZ forcing of labels/open chart/branch:     UNKNOWN.
+GHZ forcing of incidence/pinned branch:      UNKNOWN.
 ```
 
 The current obstruction is best viewed as an inverse problem with a graded
@@ -2081,6 +2149,13 @@ adding singleton rows is insufficient.  See
 
 ## Ranked proof program
 
+0. **Resolve the target-incidence/pinned-minor intersection.**  Saturate the
+   augmented companion-minor ideal by one full sensor minor and one pinned
+   star minor.  Either derive a determinant-cleared nested-cofactor stress on
+   that saturated chart, or prove that every component descends to a
+   classified coordinate or hyperbolic-Gram boundary.  The rank-222 integer
+   chart proves the incidence equation is proper; the double star is the
+   mandatory singular sharpness control.
 1. **Force two transverse nonprojective fans on one window.**  One fully
    polarized root pair has observation rank at most four on the six pair
    faces, and this defect is generically exactly two.  Two compatible pairs
@@ -2115,12 +2190,12 @@ adding singleton rows is insufficient.  See
    alignment between the conformal cycle/theta matching and the
    at-most-eight pure backbones, then glue the exact additive and cubic toric
    equations.  A single coefficient cannot exclude simultaneous bypasses.
-7. **Labeled permanental-compound chart.**  On a compound-open square
+7. **Exploit labeled permanental-compound data.**  On a compound-open square
    residual--port chart, all principal cofactors are reconstructible and the
    nested partner-expansion equations are a complete integrability test.
-   Derive individual deletion labels, rather than only their span, from the
-   mixed-root equations and seek a determinant-cleared nested stress that the
-   GHZ target violates.
+   Individual shallow labels are now available in the `q=2,P_7` sensor open;
+   restrict the unique cofactor vector to the target-incidence locus and seek
+   a determinant-cleared nested stress that the GHZ target violates.
 8. **Coloured deletion-cumulant compatibility.**  Use two overlapping root
    windows to turn quotient minors into a global log-quadratic obstruction.
 9. **Conditional Pfaffian chart.**  Apply matchgate identities only if a
@@ -2132,6 +2207,11 @@ adding singleton rows is insufficient.  See
 ## Current status wall
 
 ```text
+new arbitrary-surplus deck hierarchy: r>=2 finite, r>=3 rational;
+new r=1 smooth nonidentifiability: dimensions 27 and 65 in P5/P7 cells;
+new full P7 shallow sensor:       rank 219 on a legal integer chart;
+new diagonal target separation:  augmented rank 222, incidence locus proper;
+new singular shallow-deck fibre: exact double-star dimension two;
 new arbitrary-order exclusion:    all 3m+2 equality faces impossible;
 new arbitrary-order theorem:      support >=3m+3 and S_3 port normal form;
 new exact local invariant:        additive/toric B_3 phase variety;
