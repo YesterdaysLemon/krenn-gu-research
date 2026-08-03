@@ -64,7 +64,15 @@ backbone may use both switch edges, the backbone outside the four-vertex
 switch core has a unique perfect matching and triangular support, and the
 two marked overlap edges must be a cut (both bridges or a two-edge series
 pair).  The remaining task is to rule out that bridge-or-series
-configuration from the triangular residual equations.
+configuration from the triangular residual equations.  In the sole
+two-switch branch, the excess two-plane has nonzero switch-colour minor
+`AD-BC`; this separates the two switch states at the common excess mode in
+every same-source-side fibre, and separates each switch state from its
+mandatory partner in every fibre.  Thus the obvious same-mode straddling
+route is impossible, and a surviving obstruction must use a ratio state away
+from the common excess mode.  `Gr(2,3)` supplies no quadratic Pluecker
+relation, while matchgate identities remain conditional on a deletion-closed
+boundary signature not yet derived.
 See
 [`ARBITRARY_PERMANENT_THREE_M_PLUS_TWO_SUPPORT_BOUND.md`](ARBITRARY_PERMANENT_THREE_M_PLUS_TWO_SUPPORT_BOUND.md)
 and
@@ -76,7 +84,9 @@ and
 and
 [`ARBITRARY_PERMANENT_EQUALITY_BACKBONE_COLORING_GLUE_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_BACKBONE_COLORING_GLUE_THEOREM.md)
 and
-[`ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_CUT_NORMAL_FORM_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_CUT_NORMAL_FORM_THEOREM.md).
+[`ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_CUT_NORMAL_FORM_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_CUT_NORMAL_FORM_THEOREM.md)
+and
+[`ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCESS_PLANE_SEPARATION_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCESS_PLANE_SEPARATION_THEOREM.md).
 
 Two complementary cell-level transfers are also settled.  The all-root and
 four-root jets give five exact hidden-pair equations; on each rank-two chart

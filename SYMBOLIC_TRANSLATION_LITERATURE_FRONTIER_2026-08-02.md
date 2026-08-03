@@ -113,6 +113,27 @@ the permanent cancellation local system.  See Kotzig's 1959
 [unique-matching record](https://eudml.org/doc/29879) and Dulmage--Mendelsohn,
 [*Coverings of Bipartite Graphs*](https://doi.org/10.4153/CJM-1958-052-0).
 
+The two-switch branch has a complementary local invariant.  Its two
+noncoordinate excess rows are co-located at one mode and the equality ledger
+leaves exactly one coordinate row there.  Localization forces that row to
+have the third colour, so local concision makes the switch-colour `2 x 2`
+minor nonzero.  In gain coordinates, `g_(a,c)!=g_(a,d)`.  Path parity then
+separates the two same-mode switch states whenever they have the same source
+side, and also separates each switch state from its mandatory partner in
+every fibre.  Therefore the most local candidate pair cannot straddle; a
+ratio state away from the common excess mode is essential.  Cross-colour
+pairs at `b_c,b_d` remain open.
+
+This also marks the exact limit of two nearby imported theories.  The excess
+plane lies in `Gr(2,3)`, which has no quadratic Pluecker equation.  The two
+known switch rectangles admit one coherent edge signing, so there is no
+two-rectangle Pfaffian obstruction.  A third completed rectangle would give
+the familiar impossible odd sign triangle, but equality has not yet forced
+that coefficient.  Matchgate identities would additionally require a full
+deletion-closed boundary signature.  Cai--Gorenstein and Bravyi explain that
+signature-level hypothesis; the present alternate backbones do not satisfy
+it automatically.
+
 ## 2. Toric ideals and matching-exchange binomials
 
 ### Existing theory

@@ -14157,3 +14157,41 @@ ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_CUT_NORMAL_FORM_THEOREM.md
 verify_arbitrary_permanent_equality_one_switch_cut_normal_form_theorem.py
 audit_arbitrary_permanent_equality_one_switch_cut_normal_form_theorem.py
 ```
+
+### Two-switch equality: excess-plane and component separation
+
+In the only possible two-switch ledger, the two noncoordinate excess rows
+sit at one mode `a`, the two switch colours are `c,d`, and the third colour
+is `e`.  There is exactly one mandatory coordinate cell at `a`.
+Localization forces it to have colour `e`: if it had colour `c` or `d`, both
+pure matchings of that colour would omit it at a nonexceptional source.
+
+Writing the excess rows as
+
+```text
+(A,C,E_1), (B,D,E_2)
+```
+
+local concision gives `AD-BC!=0`.  Equivalently the two switch-colour gain
+ratios at the common mode are distinct.  In a fibre where those states have
+the same exceptional-source side, an even cancellation path would make the
+ratios equal, so they lie in different components.  Each switch state is
+also separated from its mandatory partner at `b_c` or `b_d`: the nonzero
+pure coefficient says their gains are not negatives, while any connecting
+path would have odd length and force exactly that equality.
+
+Thus the obvious same-mode pair cannot furnish a straddling obstruction, and
+the same-colour core pairs cannot route one either.  A future contradiction
+must connect to a ratio state away from the common excess mode; cross-colour
+pairs at `b_c,b_d` remain unanalysed.  The excess plane is a point of
+`Gr(2,3)`, where there is no quadratic Pluecker relation.  The two known
+rectangles can also be made simultaneously determinant-signed; only a third
+completed row pair would force the impossible odd sign triangle, and that
+third coefficient is not yet known to exist.  Matchgate identities remain
+inapplicable without a complete deletion-closed signature.
+
+```text
+ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCESS_PLANE_SEPARATION_THEOREM.md
+verify_arbitrary_permanent_equality_two_switch_excess_plane_separation_theorem.py
+audit_arbitrary_permanent_equality_two_switch_excess_plane_separation_theorem.py
+```
