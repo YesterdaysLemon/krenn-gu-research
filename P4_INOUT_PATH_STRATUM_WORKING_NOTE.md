@@ -290,10 +290,25 @@ its coordinate kernel basis the active determinant is exactly
 
 Unlike the overlap-one deep stratum, the determinant involves the
 `U_0` moduli: the branch `alpha=beta` consists precisely of the
-planes `U_0` containing the direction `(1,-1,0,0)=y_2`.  The
-identification of the two deep branches `alpha=beta` and
-`v_0+v_1=0`, the sheet branches, and the equal-support case are the
-next leaves of the sweep.
+planes `U_0` containing the direction `(1,-1,0,0)=y_2`, and the
+branch `v_0+v_1=0` of those where `U_1` contains that direction.
+
+Exact samples show both deep branches carry genuine pure
+restrictions with previously unrecorded profiles: `(4,3,3,4,3,3)`
+with relation ranks `(2,1,1,1)` on `alpha=beta`, and
+`(4,4,4,3,2,3)` — a rank-two pair edge, the seventh's multiset in a
+different arrangement — on `v_0+v_1=0`.  At the `alpha=beta` sample
+the universal incidence Jacobian has rank only **thirteen**
+(tangent-space dimension seven) while the deep-stratum family
+tangent has rank six: the point is a **singular point of the
+pure-compression locus**, consistent with an intersection of
+component closures — the eighth's boundary degrades to exactly this
+profile — rather than a smooth point of a new high-dimensional
+component.  Deciding the ambient components of these singular deep
+branches needs component-closure equations rather than point
+certificates, and is the sharp next tool the sweep now requires,
+alongside the sheet-branch identifications and the equal-support
+case.
 
 ## Open continuation
 
