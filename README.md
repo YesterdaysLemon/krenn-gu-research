@@ -203,11 +203,22 @@ strictly advance the finite frontier:
   `+/-f*(b*f+1)*(1-a^2*f^2)/(a^2*f+b)*A*B^2`, so every genuine binary
   extension has rank four:
   [`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
-  Its generic weighted `H22` incidence remains open.  Exact modular
-  censuses suggest the small marking loci `t_1*t_2=0` and
-  `t_1=t_2=t_3=0`, but the characteristic-zero saturations are
-  unfinished:
+  Its generic weighted `H22` incidence is now empty as well.  A
+  `t`-free linear elimination of the four marked extensions reduces
+  each weighted pencil to an exact `10 x 4` system.  One `4 x 4`
+  minor factors exactly as a nowhere-vanishing unit times `t_1 t_2`,
+  and the sheet restrictions factor further into four explicit
+  strata; three unit-ideal chart certificates give `t_1=t_2=t_3=0`
+  for the other pencil.  On all five strata, two mode-zero one-marked
+  minors cannot vanish on a genuine binary survivor, so no ternary
+  lift exists:
+  [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+  The modular marking loci that suggested this route are retained in
   [`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md).
+  With this, all eight certified pure-`P_4` component orbits are
+  generically closed for both marked `H31` and weighted `H22`; their
+  special parameter/slope divisors, projective boundaries, and
+  component exhaustiveness remain open.
 - all five minimal primes in the mixed `3 x 4` determinantal chart are
   now identified.  Two are the sixth component, one is a subfamily of
   the six-dimensional component, and the remaining two are explicit
@@ -775,16 +786,19 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   one-dimensional normalized loci.  Exhaustiveness of the
   eight-component list still requires classifying the remaining
   star/triangle block-line degeneracies and lower-rank boundaries.
-  On the seven previously certified pure-`P_4` component orbits, the
-  generic weighted `H22` incidence is empty.  Six proofs combine unit
+  On all eight certified pure-`P_4` component orbits, the generic
+  weighted `H22` incidence is empty.  Six proofs combine unit
   binary projections, projective-kernel covers, and one- or two-minor
   ternary Fitting obstructions.  The diagonal-quadric proof instead
-  uses an empty projective Segre-join fibre and properness.  The new
-  disjoint mixed-star eighth component is now generically excluded
-  from `H31`, so all eight certified orbits are generically closed
-  there.  Its weighted `H22` incidence, special component/slope
-  boundaries, and component exhaustiveness remain open; the modular
-  `H22` pattern is retained only as an exploratory working note.
+  uses an empty projective Segre-join fibre and properness.  The
+  eighth, disjoint mixed-star proof eliminates the four marked
+  extensions by a `t`-free linear solve, factors the `01` marking
+  determinants exactly into `t_1 t_2` and two further stratum
+  factors, certifies `t_1=t_2=t_3=0` for the `23` pencil by three
+  unit-ideal charts, and closes all five strata with two-minor
+  Fitting ideals.  All eight orbits are generically closed for both
+  `H31` and weighted `H22`.  Special component/slope boundaries and
+  component exhaustiveness remain open.
 Thus this does not remove the 240 signatures from the fail-closed
 census and `P_5 -> Delta_3` remains unresolved.
 

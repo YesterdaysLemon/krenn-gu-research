@@ -2,13 +2,21 @@
 
 ## Status
 
-This is an exploratory handoff, not a theorem.
+This exploratory handoff is now superseded.  The generic weighted
+`H22` incidence of the eighth component is excluded over `C` in
+[`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
+by exactly the route proposed below: a `t`-free linear elimination of
+the marked extensions, one exactly factored `4 x 4` determinant for
+the `01` marking locus, unit-ideal chart certificates for the `23`
+locus, and small Fitting ideals on the resulting strata.  The two
+modular marking loci recorded here are exactly the characteristic-zero
+loci of that theorem.  This note is retained as the historical record
+of the finite-field diagnostics.
 
 The eighth pure-`P_4` component is proved in
 [`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md),
 and its generic marked `H31` incidence is excluded in
 [`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
-Its generic weighted `H22` incidence remains open.
 
 No computation described below proves a statement over `C`.  In
 particular, several direct characteristic-zero Groebner calculations
