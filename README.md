@@ -800,10 +800,18 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   excluded by torus-invariant rank monotonicity, dimension, or an
   exact chart-confinement argument.  Its generic point has an
   all-rank-one relation triangle, the configuration slot the
-  directed classifications had left open.  The certified component
-  lower bound is now nine; exhaustiveness is still open, and the
-  ninth component's `H31`/`H22` generic obstructions are the new
-  frontier before the census can shrink:
+  directed classifications had left open.  The ninth component now
+  has a standalone theorem with a free rational two-parameter normal
+  form whose only nonzero coefficient is `T_1111=-2`, a directed
+  three-cycle of identical zero products with indegrees `(1,1,1,0)`
+  and pairwise distinct supports, the exact `(5,15)`
+  tangent/incidence certificate, a two-prime independent audit, and
+  an exploratory (not yet exact) `H31` modular census with
+  line-shaped marking loci:
+  [`P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md`](P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md).
+  The certified component lower bound is nine; exhaustiveness is
+  still open, and the ninth component's exact `H31`/`H22`
+  obstructions are the new frontier before the census can shrink:
   [`P4_INOUT_PATH_STRATUM_WORKING_NOTE.md`](P4_INOUT_PATH_STRATUM_WORKING_NOTE.md).
   The `H31`/`H22` frontier census is unchanged and
   `P_5 -> Delta_3` remains unresolved.

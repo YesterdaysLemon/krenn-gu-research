@@ -312,9 +312,14 @@ case.
 
 ## Open continuation
 
-1. write the standalone ninth-component theorem document with an
-   independent audit, separating invariants, and its generic
-   `H31`/`H22` obstructions;
+1. the standalone ninth-component theorem is now written, with a
+   free rational two-parameter normal form, separating invariants,
+   the exact `(5,15)` certificate, and a two-prime independent
+   audit:
+   [`P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md`](P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md);
+   its exact `H31`/`H22` obstructions remain open, with an
+   exploratory modular `H31` census showing line-shaped marking loci
+   and branch-dependent rank-four minors;
 2. sweep the pivot sheets and deep strata of the disjoint chart and
    the equal-support case of the in-out path;
 3. continue toward component exhaustiveness — nine is a certified
