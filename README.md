@@ -809,9 +809,18 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   an exploratory (not yet exact) `H31` modular census with
   line-shaped marking loci:
   [`P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md`](P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md).
-  The certified component lower bound is nine; exhaustiveness is
-  still open, and the ninth component's exact `H31`/`H22`
-  obstructions are the new frontier before the census can shrink:
+  Closure equations then identify the disjoint chart's singular deep
+  walls: a Pluecker obstruction shows they avoid the eighth's
+  closure, a calibrated semicontinuity sieve excludes all nine
+  certified components, and the coincident-support configuration
+  supplies an identically pure five-parameter family with family
+  tangent rank six equal to its smooth incidence dimension — a
+  **tenth, six-dimensional component orbit** of maximal-rank-sum
+  profile `(3,3,4,3,4,4)`, containing one wall exactly and the
+  other as a limit.  The certified component lower bound is ten;
+  exhaustiveness is still open, and the ninth and tenth components'
+  exact `H31`/`H22` obstructions are the new frontier before the
+  census can shrink:
   [`P4_INOUT_PATH_STRATUM_WORKING_NOTE.md`](P4_INOUT_PATH_STRATUM_WORKING_NOTE.md).
   The `H31`/`H22` frontier census is unchanged and
   `P_5 -> Delta_3` remains unresolved.
