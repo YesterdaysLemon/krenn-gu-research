@@ -393,9 +393,29 @@ obstructions are open.  The replay scripts are
    verifier and two-prime independent audit in
    [`P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md`](P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md);
    its `H31`/`H22` obstructions stay open;
-3. continue toward component exhaustiveness — eleven is a certified
-   lower bound, not a census — plus the remaining `H31`/`H22`
-   boundary work and the global prize conjecture, all open.
+3. the remaining exhaustiveness strata are now swept in
+   [`research_snapshots/2026-08-04-p4-exhaustiveness-sweep-census-thirteen/`](research_snapshots/2026-08-04-p4-exhaustiveness-sweep-census-thirteen/README.md):
+   every deep stratum of the equal-support chart closes into the
+   eleventh component or the zero restriction (exact span
+   identities), the disjoint chart's `x_2=0` sub-branch embeds in
+   the eleventh, and the coincident-support chart's remaining case
+   branches contain **TWO further components** — a **TWELFTH**
+   (`Zb1`, fivefold, profile `(3,3,3,4,3,3)`) and a **THIRTEENTH**
+   (`Za2`, fivefold, single-word tensor, profile `(3,3,4,3,3,3)`),
+   both of generic pair-rank sum **19**, below the range every
+   earlier profile-based sweep could see, both certified by the
+   eleventh's char-0 slice standard-basis pattern at singular
+   incidence points and separated from all prior orbits by the
+   rank-sum bound, local dimension, and coordinate-plane incidence
+   invariants.  The certified census lower bound is **thirteen**;
+   the honest tails (the `Zc` ambient identification, case-`Y` and
+   `p`-in-`Pi` walls, `e=1` case-alpha walls, unswept boundary
+   leaves, the new components' audits and `H31`/`H22`
+   obstructions) are listed in the snapshot;
+4. continue toward the global exhaustiveness theorem — thirteen is
+   a certified lower bound, not a census — plus the remaining
+   `H31`/`H22` boundary work and the global prize conjecture, all
+   open.
 
 ## Verification
 

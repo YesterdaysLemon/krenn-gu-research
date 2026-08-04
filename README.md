@@ -838,8 +838,21 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   verifier, and two-prime independent audit:
   [`P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md`](P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md),
   [`research_snapshots/2026-08-04-p4-equal-support-rank-two-strata/`](research_snapshots/2026-08-04-p4-equal-support-rank-two-strata/README.md).
-  The certified component lower bound is eleven; exhaustiveness is
-  still open, and the ninth, tenth, and eleventh components' exact
+  A full sweep of the remaining exhaustiveness strata then closes
+  every deep stratum of the equal-support chart into the eleventh
+  or the zero restriction and finds, in the coincident-support
+  chart's remaining case branches, a **twelfth** and a
+  **thirteenth component orbit** — both fivefolds of generic
+  pair-rank sum **19**, strictly below the range visible to every
+  earlier profile-based census, both certified at singular
+  incidence points by the same characteristic-zero slice
+  standard-basis pattern and separated by the rank-sum bound on
+  their closures, local dimension, and coordinate-plane incidence
+  invariants:
+  [`research_snapshots/2026-08-04-p4-exhaustiveness-sweep-census-thirteen/`](research_snapshots/2026-08-04-p4-exhaustiveness-sweep-census-thirteen/README.md).
+  The certified component lower bound is thirteen; exhaustiveness
+  is still open (the sweep's honest tails are listed in the
+  snapshot), and the ninth through thirteenth components' exact
   `H31`/`H22` obstructions are the new frontier before the census
   can shrink:
   [`P4_INOUT_PATH_STRATUM_WORKING_NOTE.md`](P4_INOUT_PATH_STRATUM_WORKING_NOTE.md).
