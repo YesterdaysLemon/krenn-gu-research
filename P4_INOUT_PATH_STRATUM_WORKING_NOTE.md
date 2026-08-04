@@ -231,30 +231,37 @@ The ambient component is none of the eight certified orbits:
    component's closure.
 
 Hence a **ninth five-dimensional pure-compression component**
-exists.  Its generic point lies outside this chart: nearby component
-points off the deep stratum are not on any open-chart branch, so the
-ninth component's generic relation/support geometry differs from the
-chart's, and the chart sees only this four-dimensional wall, on
-which the sample has an all-rank-one relation triangle
-`{12},{13},{23}`.  Constructing a dense chart and the standard
-tangent/incidence component certificate for the ninth component is
-the immediate continuation; until then this is a discovery-level
-statement resting on the rank-fifteen smoothness certificate, the
-rank-four wall tangent, and the eliminations above, of which the
-first-component confinement is the one step using a continuity
-argument rather than a pure ideal calculation.
+exists, and its certificate is complete.  The four-dimensional wall
+tangent was an artifact of the slice: restoring the full projective
+diagonal torus `diag(t_0,t_1,t_2,1)`, the family
+`x_3`-branch `x` torus has tangent rank **five** at the exact
+rational sample, matching the smooth incidence dimension five, so
+its closure is the unique local component.  The same restoration
+shows the other deep branch has full-torus tangent rank five as
+well; since the first component is contained in its ambient local
+fivefold and both are five-dimensional and irreducible, that branch
+is exactly the first component, resolving its identification too.
+
+The ninth component's generic point is the torus orbit of the
+branch: profile `(4,4,4,3,3,3)` with an **all-rank-one relation
+triangle** `{12},{13},{23}` — precisely the configuration slot the
+directed classifications had left open (the first component realizes
+the triangle with one rank-two relation; the ninth realizes it with
+none).  Of the eliminations, the first-component confinement is the
+one step using a continuity argument rather than a pure ideal
+calculation; a standalone component theorem document with an
+independent audit, its `H31`/`H22` generic obstructions, and its
+separating invariants are the immediate continuation.
 
 ## Open continuation
 
-1. construct a dense chart and full component certificate for the
-   ninth component, and re-run the `H31`/`H22` generic obstructions
-   on it;
-2. decide whether the `d v_0 x_1 + v_1 x_3 = 0` branch equals the
-   first component's chart part;
-3. treat the disjoint and equal support cases of the in-out path;
-4. combine with the star classifications toward component
-   exhaustiveness, the remaining `H31`/`H22` boundary work, and the
-   global prize conjecture, all of which remain open.
+1. write the standalone ninth-component theorem document with an
+   independent audit, separating invariants, and its generic
+   `H31`/`H22` obstructions;
+2. treat the disjoint and equal support cases of the in-out path;
+3. continue toward component exhaustiveness — nine is a certified
+   lower bound, not a census — plus the remaining `H31`/`H22`
+   boundary work and the global prize conjecture, all open.
 
 ## Verification
 
