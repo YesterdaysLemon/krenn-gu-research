@@ -42,10 +42,13 @@ Reproduction scripts: `scripts/` next to this note; output ledgers
   (`P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md`): 1 first rank-two, 2
   diagonal-quadric `(3,3)`, 3-5 split-cubic `L_1,L_2,L_3`, 6
   mixed-orientation, 7 six-dimensional, 8 disjoint mixed-star.  The
-  ninth (all-rank-one triangle), tenth (coincident-support), and
-  eleventh (equal-support sixfold) components certified by the
-  parallel census work have no `H31`/`H22` generic theorems yet and
-  are outside these tables; adding them is listed in Part III.
+  components certified by the parallel census work (ninth through
+  thirteenth) were outside these tables at first writing; the
+  tenth's `H31`/`H22` generic theorems now exist with a full slope
+  scoreboard
+  ([`P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md),
+  [`P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md));
+  the rest are listed in Part III.
 * `H31` frame: coordinate deletion `q` with marked bases
   `beta_i(t)=beta_i+t_i alpha_i`.
 * Weighted `H22` frame: the two diagonal-hyperplane pencils

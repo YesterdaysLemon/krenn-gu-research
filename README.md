@@ -852,9 +852,20 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   [`research_snapshots/2026-08-04-p4-exhaustiveness-sweep-census-thirteen/`](research_snapshots/2026-08-04-p4-exhaustiveness-sweep-census-thirteen/README.md).
   The certified component lower bound is thirteen; exhaustiveness
   is still open (the sweep's honest tails are listed in the
-  snapshot), and the ninth through thirteenth components' exact
-  `H31`/`H22` obstructions are the new frontier before the census
-  can shrink:
+  snapshot).  The tenth (coincident-support) component's `H31` and
+  weighted `H22` obstructions are now both closed at **binary**
+  level over its generic point — two frames die by polynomial
+  identities valid at every chart point, the others by unit marking
+  projections and universal reconstruction kernels, with the
+  interior codim-1 survivor divisors `{c=0}` and `{b+e=0}` closed
+  at ternary level by nine unit Fitting certificates and a
+  slope scoreboard covering `r in {0, 1, -1, infinity}` — the
+  concentrated two-word support makes it the cleanest component
+  closure so far, with independent modular audits:
+  [`P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md),
+  [`P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md).
+  The remaining components' exact `H31`/`H22` obstructions are the
+  frontier before the census can shrink:
   [`P4_INOUT_PATH_STRATUM_WORKING_NOTE.md`](P4_INOUT_PATH_STRATUM_WORKING_NOTE.md).
   The `H31`/`H22` frontier census is unchanged and
   `P_5 -> Delta_3` remains unresolved.
