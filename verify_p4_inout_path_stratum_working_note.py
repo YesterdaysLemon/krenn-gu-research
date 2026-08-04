@@ -370,6 +370,29 @@ def x3_wall_certificates():
     jac = sp.Matrix([[sp.nsimplify(sp.cancel(e)) for e in row]
                      for row in jac.tolist()])
     assert jac.rank() == 4
+    # with the full projective torus the family tangent has rank five,
+    # matching the smooth incidence dimension: the ninth component's
+    # certificate.  The slice-preserving two-torus rank four above is
+    # the normalized-slice dimension.
+    T2v = sp.Symbol("tw2")
+    full_planes = [
+        plane * sp.diag(1, 1, T2v, 1) for plane in planes
+    ]
+    full_coords = []
+    for plane, piv in zip(full_planes, pivots):
+        chart = plane[:, piv].inv() * plane
+        nonpiv = tuple(i for i in range(4) if i not in piv)
+        full_coords.extend(chart[r_, c_] for r_ in range(2)
+                           for c_ in nonpiv)
+    full_point = {**point, T2v: 1}
+    full_jac = sp.Matrix(full_coords).jacobian(
+        params + (T2v,)
+    ).subs(full_point)
+    full_jac = sp.Matrix([
+        [sp.nsimplify(sp.cancel(e)) for e in row]
+        for row in full_jac.tolist()
+    ])
+    assert full_jac.rank() == 5
     # incidence Jacobian rank fifteen
     reduced_point = tuple(plane.subs(point) for plane in reduced)
     T_point = {}
@@ -653,10 +676,13 @@ def main() -> None:
         "f2_branch_is_sixth_component_translate": True,
         "no_new_component_in_open_chart": True,
         "x3_wall_incidence_jacobian_rank": 15,
-        "x3_wall_family_tangent_rank": 4,
+        "x3_wall_slice_tangent_rank": 4,
+        "x3_wall_full_torus_tangent_rank": 5,
         "x3_wall_sample_profile": [4, 4, 4, 3, 3, 3],
-        "ninth_component_discovery_level": True,
-        "ninth_component_dense_chart_constructed": False,
+        "ninth_component_certified": True,
+        "certified_component_lower_bound": 9,
+        "branch2_identified_as_first_component": True,
+        "component_exhaustiveness_still_open": True,
         "branches": branch_results,
         "f4_family_tangent_rank": 5,
         "f4_incidence_jacobian_rank": 14,

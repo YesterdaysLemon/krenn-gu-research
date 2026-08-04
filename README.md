@@ -792,14 +792,18 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   vanishing embedding identities) and one five-dimensional slice of
   the seventh (rank-fourteen incidence Jacobian plus exact
   containment).  The rank-drop deep stratum carries the first
-  component in one branch — and its other branch is a
-  four-dimensional wall at which the incidence locus is smooth of
-  dimension five while all eight certified components are excluded
-  by rank monotonicity, dimension, or an exact chart-confinement
-  argument.  A **ninth pure-compression component** therefore exists
-  at discovery level, visible only through this wall; its dense
-  chart, full component certificate, and `H31`/`H22` obstructions
-  are the new frontier:
+  component in one branch — and its other branch, crossed with the
+  full diagonal source torus, is a **certified ninth
+  five-dimensional pure-compression component**: family tangent rank
+  five equals the smooth incidence dimension five at an exact
+  rational point, and all eight previously certified components are
+  excluded by torus-invariant rank monotonicity, dimension, or an
+  exact chart-confinement argument.  Its generic point has an
+  all-rank-one relation triangle, the configuration slot the
+  directed classifications had left open.  The certified component
+  lower bound is now nine; exhaustiveness is still open, and the
+  ninth component's `H31`/`H22` generic obstructions are the new
+  frontier before the census can shrink:
   [`P4_INOUT_PATH_STRATUM_WORKING_NOTE.md`](P4_INOUT_PATH_STRATUM_WORKING_NOTE.md).
   The `H31`/`H22` frontier census is unchanged and
   `P_5 -> Delta_3` remains unresolved.
