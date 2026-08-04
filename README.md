@@ -856,6 +856,20 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   Fitting ideals.  All eight orbits are generically closed for both
   `H31` and weighted `H22`.  Special component/slope boundaries and
   component exhaustiveness remain open.
+  A boundary-divisor atlas now systematizes every excluded divisor
+  across the eight `H31`/`H22` theorems and closes the eighth
+  component's slope divisors `r in {0, 1, -1, infinity}` for both
+  weighted pencils: at `r = +-1` the weighted subconfiguration
+  becomes a pure `P_3`-type compression whose reconstruction kernel
+  kills every marking at binary level via exact two-row unit
+  identities, and the `r = 0/infinity` pencil boundaries are exactly
+  the four `H31` coordinate frames, so the verified `H31` theorem
+  transports.  The one open slope locus is the coupled divisor
+  `af(r+1)-(r-1)=0`, where the generic mode-zero certificate
+  provably fails and a mode-three replacement is designed with
+  modular evidence but its Groebner run is timeout-null:
+  [`P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`](P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md),
+  [`research_snapshots/2026-08-04-p5-h22-slope-divisor-closures/`](research_snapshots/2026-08-04-p5-h22-slope-divisor-closures/README.md).
 Thus this does not remove the 240 signatures from the fail-closed
 census and `P_5 -> Delta_3` remains unresolved.
 
