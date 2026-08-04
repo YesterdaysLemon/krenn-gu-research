@@ -786,6 +786,14 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   one-dimensional normalized loci.  Exhaustiveness of the
   eight-component list still requires classifying the remaining
   star/triangle block-line degeneracies and lower-rank boundaries.
+  The unclassified in-out path orientation now has an exact chart
+  checkpoint: on its dense overlap-one chart the active determinant
+  factors into three explicit branch hypersurfaces, of which two
+  carry the sixth/eighth signature class and one has the previously
+  unrecorded pair profile `(4,3,2,4,3,3)` — a candidate further
+  component pending tangent certificates; the first component embeds
+  in an explicit rank-drop deep stratum of the same chart:
+  [`P4_INOUT_PATH_STRATUM_WORKING_NOTE.md`](P4_INOUT_PATH_STRATUM_WORKING_NOTE.md).
   On all eight certified pure-`P_4` component orbits, the generic
   weighted `H22` incidence is empty.  Six proofs combine unit
   binary projections, projective-kernel covers, and one- or two-minor
