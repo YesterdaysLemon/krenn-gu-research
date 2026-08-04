@@ -366,9 +366,16 @@ classification remain open.  The replay scripts are
    the exact `(5,15)` certificate, and a two-prime independent
    audit:
    [`P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md`](P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md);
-   its exact `H31`/`H22` obstructions remain open, with an
-   exploratory modular `H31` census showing line-shaped marking loci
-   and branch-dependent rank-four minors;
+   its exact `H31`/`H22` obstructions are now BOTH closed over
+   `C(p,q)` resp. `C(p,q,r)` — the single-word support gives a
+   reconstruction kernel in all four `H31` frames (every mixed
+   matrix has rank at most seven identically), the line-shaped
+   marking loci predicted by the modular census are confirmed
+   exactly and closed with polynomial line parameters, and the
+   `H22` pencils' slope-independent loci close at ternary level by
+   three unit Fitting minors:
+   [`P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md),
+   [`P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md);
 2. the equal-support case and the rank-two-dominated strata are now
    analyzed in
    [`research_snapshots/2026-08-04-p4-equal-support-rank-two-strata/`](research_snapshots/2026-08-04-p4-equal-support-rank-two-strata/README.md):

@@ -864,8 +864,18 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   closure so far, with independent modular audits:
   [`P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md),
   [`P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md).
-  The remaining components' exact `H31`/`H22` obstructions are the
-  frontier before the census can shrink:
+  The ninth (all-rank-one triangle) closes the same way but from
+  the opposite extreme — a SINGLE-word tensor, so a reconstruction
+  kernel exists in all four `H31` frames for every marking; its
+  line-shaped marking loci close with polynomial line parameters,
+  and both weighted pencils close at ternary level by three unit
+  Fitting minors, with independent modular audits:
+  [`P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md),
+  [`P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
+  The first TEN certified component orbits are now generically
+  closed for both frames; the eleventh, twelfth, and thirteenth
+  components' exact `H31`/`H22` obstructions are the frontier
+  before the census can shrink:
   [`P4_INOUT_PATH_STRATUM_WORKING_NOTE.md`](P4_INOUT_PATH_STRATUM_WORKING_NOTE.md).
   The `H31`/`H22` frontier census is unchanged and
   `P_5 -> Delta_3` remains unresolved.
