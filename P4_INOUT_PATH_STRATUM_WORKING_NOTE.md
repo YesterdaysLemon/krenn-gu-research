@@ -202,20 +202,57 @@ translates of the sixth component's orbit.  With `F_4` a slice of
 the seventh component, **no branch of this chart's open stratum is a
 new component**.
 
-The dense overlap-one chart's pure locus is now completely described
-and almost completely identified: `F_1` and `F_2` are sixth-component
-translates, `F_4` is a seventh-component slice, and the first
-component embeds in one deep-stratum branch.  Only the deep
-`x_3=0` branch and the exact extent of the first-component branch
-remain unidentified.
+## A ninth component through the deep `x_3=0` wall
+
+At the exact rational sample of the deep `x_3=0` branch, the
+universal Segre-incidence Jacobian has rank **fifteen**: the
+pure-compression locus is smooth and five-dimensional there, so a
+unique five-dimensional component passes through the point.  The
+branch's own family tangent, including both Grassmannian moduli and
+the in-chart torus, has rank only **four**: the branch is a
+four-dimensional wall inside that component.
+
+The ambient component is none of the eight certified orbits:
+
+1. components with a generic pair rank `r_ij=3` or `2` at an edge
+   where the sample has rank `4` are excluded by rank monotonicity
+   on closures.  This eliminates the diagonal-quadric component, the
+   three `1+3` components, the sixth, and the eighth (all with
+   generic profile `(4,4,3,4,3,3)`), and the seventh is excluded by
+   its dimension six against the smooth local dimension five;
+2. the first component matches the sample's profile
+   `(4,4,4,3,3,3)`, but every chart-normalized image of its dense
+   five-parameter family lies in the other deep branch
+   `d v_0 x_1 + v_1 x_3 = 0`, which is closed in the chart and does
+   not contain the sample (the value there is nonzero).  Since the
+   relation alignment forcing that confinement is rigid up to the
+   enumerated torus and sign choices, and chart normalization is
+   continuous near the sample, the sample is not in the first
+   component's closure.
+
+Hence a **ninth five-dimensional pure-compression component**
+exists.  Its generic point lies outside this chart: nearby component
+points off the deep stratum are not on any open-chart branch, so the
+ninth component's generic relation/support geometry differs from the
+chart's, and the chart sees only this four-dimensional wall, on
+which the sample has an all-rank-one relation triangle
+`{12},{13},{23}`.  Constructing a dense chart and the standard
+tangent/incidence component certificate for the ninth component is
+the immediate continuation; until then this is a discovery-level
+statement resting on the rank-fifteen smoothness certificate, the
+rank-four wall tangent, and the eliminations above, of which the
+first-component confinement is the one step using a continuity
+argument rather than a pure ideal calculation.
 
 ## Open continuation
 
-1. identify the deep-stratum `x_3=0` branch and decide whether the
-   `d v_0 x_1 + v_1 x_3 = 0` branch equals the first component's
-   chart part or exceeds it;
-2. treat the disjoint and equal support cases of the in-out path;
-3. combine with the star classifications toward component
+1. construct a dense chart and full component certificate for the
+   ninth component, and re-run the `H31`/`H22` generic obstructions
+   on it;
+2. decide whether the `d v_0 x_1 + v_1 x_3 = 0` branch equals the
+   first component's chart part;
+3. treat the disjoint and equal support cases of the in-out path;
+4. combine with the star classifications toward component
    exhaustiveness, the remaining `H31`/`H22` boundary work, and the
    global prize conjecture, all of which remain open.
 

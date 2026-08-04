@@ -786,17 +786,23 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   one-dimensional normalized loci.  Exhaustiveness of the
   eight-component list still requires classifying the remaining
   star/triangle block-line degeneracies and lower-rank boundaries.
-  The unclassified in-out path orientation now has an exact chart
-  checkpoint: on its dense overlap-one chart the active determinant
-  factors into three explicit branch hypersurfaces.  Two carry the
-  sixth/eighth signature class.  The third has pair profile
-  `(4,3,2,4,3,3)` and is now proved to be a five-dimensional slice
-  of the six-dimensional seventh component: its incidence Jacobian
-  has rank fourteen and exact containment identities embed it in the
-  sixfold's chart, so no ninth component arises there.  The first
-  component embeds in an explicit rank-drop deep stratum of the same
-  chart:
+  The previously unclassified in-out path orientation is now
+  classified on its dense overlap-one chart: the open-chart branches
+  are two chart translates of the sixth component (identically
+  vanishing embedding identities) and one five-dimensional slice of
+  the seventh (rank-fourteen incidence Jacobian plus exact
+  containment).  The rank-drop deep stratum carries the first
+  component in one branch — and its other branch is a
+  four-dimensional wall at which the incidence locus is smooth of
+  dimension five while all eight certified components are excluded
+  by rank monotonicity, dimension, or an exact chart-confinement
+  argument.  A **ninth pure-compression component** therefore exists
+  at discovery level, visible only through this wall; its dense
+  chart, full component certificate, and `H31`/`H22` obstructions
+  are the new frontier:
   [`P4_INOUT_PATH_STRATUM_WORKING_NOTE.md`](P4_INOUT_PATH_STRATUM_WORKING_NOTE.md).
+  The `H31`/`H22` frontier census is unchanged and
+  `P_5 -> Delta_3` remains unresolved.
   On all eight certified pure-`P_4` component orbits, the generic
   weighted `H22` incidence is empty.  Six proofs combine unit
   binary projections, projective-kernel covers, and one- or two-minor

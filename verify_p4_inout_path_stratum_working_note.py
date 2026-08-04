@@ -324,6 +324,139 @@ def f4_slice_certificates():
     assert first == 0 and second == 0
 
 
+def x3_wall_certificates():
+    """Rank-fifteen incidence smoothness and rank-four wall tangent
+    at the exact x3-branch sample, plus the profile data used by the
+    ninth-component eliminations."""
+    alpha, beta = sp.symbols("alpha beta")
+    T0v, T1v = sp.symbols("tw0 tw1")
+    x0_val = -(d * v[0] * x[1] + v[1] * x[2]) / (d * v[1])
+    substitution = {v[3]: -v[2], x[3]: 0, x[0]: x0_val}
+    c_row = (-d * v[1], -d * v[0], v[1], v[1])
+    k1 = (-c_row[1], c_row[0], 0, 0)
+    k2 = (-c_row[2], 0, c_row[0], 0)
+    k3 = (-c_row[3], 0, 0, c_row[0])
+    u0a = tuple(sp.expand(a1 + alpha * a3)
+                for a1, a3 in zip(k1, k3))
+    u0b = tuple(sp.expand(a2 + beta * a3)
+                for a2, a3 in zip(k2, k3))
+
+    def sub_row(row):
+        return tuple(sp.sympify(c_).subs(substitution) for c_ in row)
+
+    planes = [
+        sp.Matrix([list(u0a), list(u0b)]),
+        sp.Matrix([list(U1_A), list(sub_row(v))]),
+        sp.Matrix([list(sub_row(Y2)), list(sub_row(x))]),
+        sp.Matrix([list(Y3), list(sub_row(U3_B))]),
+    ]
+    torus = sp.diag(T0v, T1v, 1, 1)
+    planes = [plane * torus for plane in planes]
+    pivots = ((0, 1), (0, 2), (0, 1), (0, 2))
+    chart_coords = []
+    reduced = []
+    for plane, piv in zip(planes, pivots):
+        chart = plane[:, piv].inv() * plane
+        nonpiv = tuple(i for i in range(4) if i not in piv)
+        reduced.append(chart)
+        chart_coords.extend(chart[r_, c_] for r_ in range(2)
+                            for c_ in nonpiv)
+    point = {d: 2, v[0]: 3, v[1]: 5, v[2]: 7, x[1]: 11, x[2]: -4,
+             alpha: sp.Rational(2, 3), beta: sp.Rational(-1, 2),
+             T0v: 1, T1v: 1}
+    params = (d, v[0], v[1], v[2], x[1], x[2], alpha, beta,
+              T0v, T1v)
+    jac = sp.Matrix(chart_coords).jacobian(params).subs(point)
+    jac = sp.Matrix([[sp.nsimplify(sp.cancel(e)) for e in row]
+                     for row in jac.tolist()])
+    assert jac.rank() == 4
+    # incidence Jacobian rank fifteen
+    reduced_point = tuple(plane.subs(point) for plane in reduced)
+    T_point = {}
+    for bits in itertools.product((0, 1), repeat=4):
+        rows_sel = tuple(
+            tuple(reduced_point[m][bits[m], j] for j in range(4))
+            for m in range(4)
+        )
+        T_point[bits] = sp.nsimplify(perm4(rows_sel))
+    anchor = next(
+        bits for bits in itertools.product((0, 1), repeat=4)
+        if T_point[bits] != 0
+    )
+    zvars = sp.symbols("W0:16")
+    rvars = sp.symbols("S0:4")
+    universal = []
+    for mode, piv in enumerate(pivots):
+        nonpiv = tuple(i for i in range(4) if i not in piv)
+        plane = sp.zeros(2, 4)
+        plane[0, piv[0]] = 1
+        plane[1, piv[1]] = 1
+        entries = zvars[4 * mode: 4 * mode + 4]
+        for r_ in range(2):
+            for o_, c_ in enumerate(nonpiv):
+                plane[r_, c_] = entries[2 * r_ + o_]
+        universal.append(plane)
+    T_universal = {}
+    for bits in itertools.product((0, 1), repeat=4):
+        rows_sel = tuple(
+            tuple(universal[m][bits[m], j] for j in range(4))
+            for m in range(4)
+        )
+        T_universal[bits] = perm4(rows_sel)
+    ratios = tuple(
+        T_point[tuple(
+            (1 - anchor[m_] if m_ == mode else anchor[m_])
+            for m_ in range(4)
+        )] / T_point[anchor]
+        for mode in range(4)
+    )
+    equations = []
+    for word in itertools.product((0, 1), repeat=4):
+        if word == anchor:
+            continue
+        monomial = sp.prod(
+            rvars[m] for m in range(4) if word[m] != anchor[m]
+        )
+        equations.append(sp.expand(
+            T_universal[word] - T_universal[anchor] * monomial
+        ))
+    coordinate_point = tuple(
+        sp.nsimplify(sp.cancel(c_.subs(point)))
+        for c_ in chart_coords
+    )
+    incidence_substitution = dict(zip(
+        tuple(zvars) + tuple(rvars),
+        coordinate_point + ratios,
+    ))
+    assert all(
+        sp.simplify(eq.subs(incidence_substitution)) == 0
+        for eq in equations
+    )
+    incidence_jacobian = sp.Matrix(equations).jacobian(
+        tuple(zvars) + tuple(rvars)
+    ).subs(incidence_substitution)
+    assert incidence_jacobian.rank() == 15
+    # sample profile used by the eliminations
+    planes_pt = [
+        [list(reduced_point[m].row(0)), list(reduced_point[m].row(1))]
+        for m in range(4)
+    ]
+    profile = []
+    for a_, b_ in itertools.combinations(range(4), 2):
+        rows_ = []
+        for pa in planes_pt[a_]:
+            for pb in planes_pt[b_]:
+                prod = rmul(pa, pb)
+                rows_.append([prod[ab] for ab in COORD_PAIRS])
+        profile.append(sp.Matrix(rows_).rank())
+    assert tuple(profile) == (4, 4, 4, 3, 3, 3), profile
+    # first-component confinement value is nonzero at the sample
+    confinement = (d * v[0] * x[1] + v[1] * x[3]).subs(
+        {**{d: 2, v[0]: 3, v[1]: 5}, x[1]: 11, x[3]: 0}
+    )
+    assert confinement != 0
+
+
 def sheet_and_deep_stratum():
     # sheet v3=-v2, sub-pivot columns (0,2)
     M = covector_matrix().subs({v[3]: -v[2]})
@@ -501,6 +634,8 @@ def main() -> None:
             ],
         }
 
+    x3_wall_certificates()
+
     result = {
         "verified": True,
         "checkpoint_only": True,
@@ -517,6 +652,11 @@ def main() -> None:
         "f1_branch_is_sixth_component_translate": True,
         "f2_branch_is_sixth_component_translate": True,
         "no_new_component_in_open_chart": True,
+        "x3_wall_incidence_jacobian_rank": 15,
+        "x3_wall_family_tangent_rank": 4,
+        "x3_wall_sample_profile": [4, 4, 4, 3, 3, 3],
+        "ninth_component_discovery_level": True,
+        "ninth_component_dense_chart_constructed": False,
         "branches": branch_results,
         "f4_family_tangent_rank": 5,
         "f4_incidence_jacobian_rank": 14,
