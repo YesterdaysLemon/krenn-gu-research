@@ -418,15 +418,33 @@ classification remain open.  The replay scripts are
    eleventh's char-0 slice standard-basis pattern at singular
    incidence points and separated from all prior orbits by the
    rank-sum bound, local dimension, and coordinate-plane incidence
-   invariants.  The certified census lower bound is **thirteen**;
-   the honest tails (the `Zc` ambient identification, case-`Y` and
-   `p`-in-`Pi` walls, `e=1` case-alpha walls, unswept boundary
-   leaves, the new components' audits and `H31`/`H22`
-   obstructions) are listed in the snapshot;
-4. continue toward the global exhaustiveness theorem — thirteen is
+   invariants.  Both now have standalone theorems with verifiers
+   and independent audits
+   ([`P4_SPLIT_PAIR_PURE_COMPONENT.md`](P4_SPLIT_PAIR_PURE_COMPONENT.md),
+   [`P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md`](P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md));
+4. that sweep's honest tails are taken up in
+   [`research_snapshots/2026-08-04-p4-exhaustiveness-tails-census-sixteen/`](research_snapshots/2026-08-04-p4-exhaustiveness-tails-census-sixteen/README.md):
+   the `Zc` wall is identified as the **seventh** component's
+   `b=e` wall (char-0 six-slice: local dimension exactly six, so
+   the earlier five-slice timeout was moot), the `e=1` case-alpha
+   leaf lies in the **eleventh** (its four flagged survivor strata
+   were chart artifacts of an empty stratum), and the case-`Y`
+   survivor walls yield **three more components** — a
+   **FOURTEENTH** and **FIFTEENTH** certified by the classical
+   smooth-point argument (incidence rank fifteen, the first since
+   the seventh) and a **SIXTEENTH** on a conic-bundle family whose
+   constrained family tangent required correcting the discovery
+   script's unconstrained Jacobian.  The certified census lower
+   bound is **sixteen**; the remaining tails (`p`-in-`Pi` walls,
+   the `P=0` chart of case `Y`, the unswept boundary leaves, and
+   the new components' audits and `H31`/`H22` obstructions) are
+   listed there;
+5. continue toward the global exhaustiveness theorem — sixteen is
    a certified lower bound, not a census — plus the remaining
    `H31`/`H22` boundary work and the global prize conjecture, all
-   open.
+   open.  What finishing `P_5 -> Delta_3` would require is now
+   itemized in
+   [`P5_DELTA3_OBLIGATION_LEDGER.md`](P5_DELTA3_OBLIGATION_LEDGER.md).
 
 ## Verification
 

@@ -1,0 +1,226 @@
+{
+  "purpose": "explicit specialization divisors for the ninth component's generic H31 theorem (pointwise upgrade)",
+  "field_versus_ring": "generic theorem over K=C(p,q); this extraction works over Q[p,q] with p,q as ring variables and eliminates all marking/extension/inverse variables",
+  "frames": {
+    "q1": {
+      "minors": [],
+      "unit_over_K": true,
+      "elimination": {
+        "status": "extracted",
+        "seconds": 3.0,
+        "contraction_size": 1,
+        "generators": [
+          "p*q-p+2"
+        ],
+        "first_generator_factors": [
+          "1^1",
+          "p*q-p+2^1"
+        ],
+        "label": "frame_q1"
+      }
+    },
+    "q0": {
+      "minors": [
+        {
+          "mode": 1,
+          "rows": [
+            0,
+            2,
+            3,
+            7
+          ]
+        },
+        {
+          "mode": 1,
+          "rows": [
+            0,
+            3,
+            6,
+            7
+          ]
+        }
+      ],
+      "unit_over_K": true,
+      "elimination": {
+        "status": "extracted",
+        "seconds": 0.6,
+        "contraction_size": 1,
+        "generators": [
+          "p^2*q+p"
+        ],
+        "first_generator_factors": [
+          "1^1",
+          "p^1",
+          "p*q+1^1"
+        ],
+        "label": "frame_q0"
+      }
+    },
+    "q3": {
+      "minors": [
+        {
+          "mode": 1,
+          "rows": [
+            0,
+            1,
+            4,
+            7
+          ]
+        }
+      ],
+      "unit_over_K": true,
+      "elimination": {
+        "status": "extracted",
+        "seconds": 13.8,
+        "contraction_size": 2,
+        "generators": [
+          "p*q^3+4*p*q^2+5*p*q+2*p",
+          "2*p^4*q^2+4*p^3*q^3+6*p^4*q+11*p^3*q^2-p^2*q^3+4*p^4+5*p^3*q-2*p^3+7*p^2*q-p*q^2+6*p^2-3*p*q-2*p"
+        ],
+        "first_generator_factors": [
+          "1^1",
+          "p^1",
+          "q+2^1",
+          "q+1^2"
+        ],
+        "label": "frame_q3"
+      }
+    },
+    "q2": {
+      "minors": [
+        {
+          "mode": 3,
+          "rows": [
+            0,
+            2,
+            3,
+            7
+          ]
+        },
+        {
+          "mode": 3,
+          "rows": [
+            0,
+            2,
+            6,
+            7
+          ]
+        },
+        {
+          "mode": 3,
+          "rows": [
+            0,
+            2,
+            4,
+            7
+          ]
+        }
+      ],
+      "unit_over_K": true,
+      "elimination": {
+        "status": "timeout_null",
+        "seconds": 520.0
+      }
+    }
+  },
+  "sheets": {
+    "q0_t0_line": {
+      "status": "subsumed_by_frame_extraction"
+    },
+    "q2_t0_line": {
+      "frame": 2,
+      "sheet_ideal": [
+        "t1",
+        "t3",
+        "t2"
+      ],
+      "minors": [
+        {
+          "mode": 3,
+          "rows": [
+            0,
+            2,
+            3,
+            7
+          ]
+        },
+        {
+          "mode": 3,
+          "rows": [
+            0,
+            2,
+            6,
+            7
+          ]
+        }
+      ],
+      "unit_over_K": true,
+      "elimination": {
+        "status": "extracted",
+        "seconds": 0.0,
+        "contraction_size": 1,
+        "generators": [
+          "p^2*q-p^2+p"
+        ],
+        "first_generator_factors": [
+          "1^1",
+          "p^1",
+          "p*q-p+1^1"
+        ],
+        "label": "sheet_q2_t0_line"
+      }
+    },
+    "q2_t2_line": {
+      "frame": 2,
+      "sheet_ideal": [
+        "t1",
+        "t3",
+        "t0"
+      ],
+      "minors": [
+        {
+          "mode": 3,
+          "rows": [
+            0,
+            2,
+            4,
+            7
+          ]
+        },
+        {
+          "mode": 3,
+          "rows": [
+            0,
+            2,
+            6,
+            7
+          ]
+        }
+      ],
+      "unit_over_K": true,
+      "elimination": {
+        "status": "extracted",
+        "seconds": 0.1,
+        "contraction_size": 1,
+        "generators": [
+          "p*q^2-p*q+q"
+        ],
+        "first_generator_factors": [
+          "1^1",
+          "q^1",
+          "p*q-p+1^1"
+        ],
+        "label": "sheet_q2_t2_line"
+      }
+    },
+    "q3_point": {
+      "status": "subsumed_by_frame_extraction"
+    }
+  },
+  "frames_with_explicit_divisor": [
+    "q1",
+    "q0",
+    "q3"
+  ],
+  "all_four_frames_extracted": false
+}
