@@ -388,8 +388,11 @@ obstructions are open.  The replay scripts are
    (purity forces the zero restriction on the forced pencil), and
    the rank-two-dominated **triangle** reduces to a proper chord
    condition leaving at most four-dimensional walls and **no
-   component**; boundary leaves of both remain, as do `C10`'s
-   independent audit and `H31`/`H22` obstructions;
+   component**; boundary leaves of both remain.  The eleventh
+   component now has a standalone theorem with consolidated
+   verifier and two-prime independent audit in
+   [`P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md`](P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md);
+   its `H31`/`H22` obstructions stay open;
 3. continue toward component exhaustiveness — eleven is a certified
    lower bound, not a census — plus the remaining `H31`/`H22`
    boundary work and the global prize conjecture, all open.

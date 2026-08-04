@@ -834,7 +834,9 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   2-plane" holds identically on the family (`U_3` is a coordinate
   plane) yet fails at the tenth's certificate point.  The
   equal-support sixfold is therefore an **eleventh component
-  orbit**:
+  orbit**, now with a standalone theorem, consolidated exact
+  verifier, and two-prime independent audit:
+  [`P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md`](P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md),
   [`research_snapshots/2026-08-04-p4-equal-support-rank-two-strata/`](research_snapshots/2026-08-04-p4-equal-support-rank-two-strata/README.md).
   The certified component lower bound is eleven; exhaustiveness is
   still open, and the ninth, tenth, and eleventh components' exact
