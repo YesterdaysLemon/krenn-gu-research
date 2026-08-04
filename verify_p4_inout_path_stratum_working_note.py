@@ -324,6 +324,80 @@ def f4_slice_certificates():
     assert first == 0 and second == 0
 
 
+def disjoint_chart_certificates():
+    """Disjoint-support in-out chart: identically vanishing u_1-side
+    conditions, factored Cramer pivot, and the exact embedding of the
+    eighth component killing the active determinant modulo Phi."""
+    U3_disj = (1, 1, 0, 0)
+    Y2_disj = (1, -1, 0, 0)
+    zsym = sp.symbols("zd0:4")
+    for c in (rmul(Y2_disj, Y3), rmul(list(x), Y3)):
+        zw = rmul(list(zsym), list(U1_A))
+        form = pairing(zw, c)
+        assert all(
+            sp.expand(sp.diff(form, zi)) == 0 for zi in zsym
+        )
+    rows = []
+    for c in (rmul(Y2_disj, Y3), rmul(list(x), Y3)):
+        zw = rmul(list(zsym), list(v))
+        form = pairing(zw, c)
+        rows.append([sp.expand(sp.diff(form, zi)) for zi in zsym])
+    M = sp.Matrix(rows)
+    minors = {}
+    for a_, b_ in itertools.combinations(range(4), 2):
+        minors[(a_, b_)] = sp.expand(
+            M[0, a_] * M[1, b_] - M[0, b_] * M[1, a_]
+        )
+    pivot = minors[(0, 1)]
+    symmetric = (
+        (v[2] + v[3]) * (x[0] + x[1])
+        + (v[0] + v[1]) * (x[2] + x[3])
+    )
+    assert sp.expand(pivot + (v[2] + v[3]) * symmetric) == 0
+    w2 = (minors[(1, 2)], -minors[(0, 2)], pivot, 0)
+    w3 = (minors[(1, 3)], -minors[(0, 3)], 0, pivot)
+    B = sp.zeros(2, 2)
+    for i0, u0row in enumerate((w2, w3)):
+        for i1, u1row in enumerate((U1_A, tuple(v))):
+            B[i0, i1] = perm4((
+                tuple(u0row), u1row, tuple(x), U3_disj
+            ))
+    determinant = sp.expand(B.det())
+    # eighth-component embedding through (02)(13) and t3=-t2, t1=t0
+    a8, b8, f8, p8 = sp.symbols("a8 b8 f8 phi8")
+    t2s = sp.Symbol("t2s")
+    j8 = f8 + b8 * p8**2
+    kap8 = p8 * (b8 * f8 + 1)
+    eta8 = -(b8 * f8 + 1)
+    alpha1_8 = (-a8 * f8 + 1, -a8 * f8 - 1, f8 + p8, f8 - p8)
+    beta0_8 = (a8 + b8, a8 - b8, 0, 2)
+    _ = (j8, kap8, eta8)
+
+    def sigma_torus(row):
+        swapped = (row[2], row[3], row[0], row[1])
+        return (swapped[0], swapped[1],
+                t2s * swapped[2], -t2s * swapped[3])
+
+    v_img = sigma_torus(alpha1_8)
+    x_img = sigma_torus(beta0_8)
+    phi8_poly = sp.expand(
+        a8**2 * b8 * f8 * p8**2 + a8**2 * f8**2
+        - b8**2 * f8**2 + b8**2 * p8**2 - b8 * f8 - 1
+    )
+    family = {**{v[i]: v_img[i] for i in range(4)},
+              **{x[i]: x_img[i] for i in range(4)}}
+    det_family = sp.expand(determinant.subs(family))
+    remainder = sp.rem(
+        sp.Poly(det_family, p8), sp.Poly(phi8_poly, p8)
+    )
+    assert sp.expand(remainder.as_expr()) == 0
+    pivot_family = sp.rem(
+        sp.Poly(sp.expand(pivot.subs(family)), p8),
+        sp.Poly(phi8_poly, p8),
+    )
+    assert sp.expand(pivot_family.as_expr()) != 0
+
+
 def x3_wall_certificates():
     """Rank-fifteen incidence smoothness and rank-four wall tangent
     at the exact x3-branch sample, plus the profile data used by the
@@ -658,6 +732,7 @@ def main() -> None:
         }
 
     x3_wall_certificates()
+    disjoint_chart_certificates()
 
     result = {
         "verified": True,
@@ -682,6 +757,7 @@ def main() -> None:
         "ninth_component_certified": True,
         "certified_component_lower_bound": 9,
         "branch2_identified_as_first_component": True,
+        "disjoint_chart_open_stratum_is_eighth_component": True,
         "component_exhaustiveness_still_open": True,
         "branches": branch_results,
         "f4_family_tangent_rank": 5,
