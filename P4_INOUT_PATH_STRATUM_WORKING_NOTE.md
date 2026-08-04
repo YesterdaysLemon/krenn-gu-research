@@ -133,33 +133,70 @@ On the sheet `v_2+v_3=0` with sub-pivot `v_1 G_4 != 0`
 (`G_4=F_4|sheet`), the pure locus is exactly the restriction of
 `F_1 F_2 = 0`: no new branch appears.
 
+The `F_3` sheet is closed by two one-line identities:
+
+```text
+F_1 + F_3 = 2 v_1 x_3,
+F_2 + F_3 = 2 (-d v_0 x_1 + (v_2+v_3) x_1 + v_1 x_3),
+```
+
+so the two apparent branches of its active determinant are exactly
+the intersections of the `F_1` and `F_2` closures with the sheet.
+The remaining sub-pivot factors are chart-normalization boundaries
+(`d`, `v_0`, `v_1`, `x_1`), which belong to the other support cases.
+
 On the deep stratum
 
 ```text
 v_2+v_3=0,        G_4=0,
 ```
 
-the covector matrix drops to rank one, so `U_0` is no longer forced
-and gains Grassmannian moduli.  The first component's five-parameter
-family embeds exactly there: with the gauge
+the covector matrix drops to rank one with covector
+`(-d v_1, -d v_0, v_1, v_1)`, so `U_0` ranges over the Grassmannian
+of planes in its three-dimensional kernel.  The active determinant
+there is **independent of the `U_0` moduli** and factors as
+
+```text
+det = 4 d^2 v_1^2 x_3 (d v_0 x_1 + v_1 x_3):
+```
+
+the deep pure locus is the union of the two branches `x_3=0` and
+`d v_0 x_1 + v_1 x_3 = 0`, each fibred by the full `U_0`
+Grassmannian.  The first component's five-parameter family embeds in
+the second branch: with the gauge
 
 ```text
 d=i,   v=(l,1,-il,il),   x=(0,1,0,-il),
 ```
 
-both stratum equations hold identically.  A rank-monotonicity
+all three stratum equations hold identically.  A rank-monotonicity
 comparison of pair profiles shows the first component is **not** in
-the closure of the `F_1` branch even though `F_1` vanishes on it; the
-rank-drop stratum carries it separately.
+the closure of the `F_1` branch even though `F_1` vanishes on it;
+the rank-drop stratum carries it separately.  An exact sample on the
+`x_3=0` branch is a genuine pure restriction with pair profile
+`(4,4,4,3,3,3)` and rank-one relations on the full triangle
+`{12},{13},{23}` — first-component-like profile but a different
+generic relation-rank pattern; its identification is open.
+
+For the `F_1`/`F_2` identification, the sixth component's canonical
+family has, at a generic point, pair profile `(4,4,3,4,3,3)` and
+rank-one relations exactly on `{03},{13},{23}` — the same invariants
+as the `F_1` and `F_2` samples.  The exact containments remain to be
+computed.
+
+The dense overlap-one chart's pure locus is now completely
+described: the three open-chart branches `F_1,F_2,F_4`, their sheet
+restrictions, and the two Grassmannian-fibred deep-stratum branches.
+`F_4` is identified (a sixfold slice); the remaining work is orbit
+identification, not discovery, on this chart.
 
 ## Open continuation
 
-1. classify the rank-one stratum of the deep locus (where the first
-   component lives) and the `F_3` sheet;
-2. identify the orbits of `F_1` and `F_2` against the sixth and
-   eighth components (their signature class);
-3. treat the disjoint and equal support cases of the in-out path;
-4. combine with the star classifications toward component
+1. compute the exact containments identifying `F_1`, `F_2` (expected:
+   sixth-component translates) and the two deep-stratum branches
+   (expected: first-component charts);
+2. treat the disjoint and equal support cases of the in-out path;
+3. combine with the star classifications toward component
    exhaustiveness, the remaining `H31`/`H22` boundary work, and the
    global prize conjecture, all of which remain open.
 

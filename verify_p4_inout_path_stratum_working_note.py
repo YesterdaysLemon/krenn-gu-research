@@ -332,12 +332,57 @@ def sheet_and_deep_stratum():
     G4 = sp.expand(F4.subs({v[3]: -v[2]}))
     quotient = sp.simplify(piv / (v[1] * G4))
     assert quotient.is_Rational and quotient != 0
+    # F3-sheet closure identities
+    assert sp.expand(F1 + F3 - 2 * v[1] * x[3]) == 0
+    assert sp.expand(
+        F2 + F3
+        - 2 * (-d * v[0] * x[1] + (v[2] + v[3]) * x[1]
+               + v[1] * x[3])
+    ) == 0
     # deep stratum: additionally G4=0 via x0
     x0_val = -(d * v[0] * x[1] + v[1] * (x[2] + x[3])) / (d * v[1])
     deep = covector_matrix().subs({v[3]: -v[2], x[0]: x0_val})
     deep = sp.Matrix([[sp.cancel(e) for e in row]
                       for row in deep.tolist()])
     assert deep.rank() == 1
+    covector = [sp.cancel(e) for e in deep.row(0)]
+    scale = sp.cancel(covector[0] / (-d * v[1]))
+    assert all(
+        sp.simplify(entry - scale * target) == 0
+        for entry, target in zip(
+            covector, (-d * v[1], -d * v[0], v[1], v[1])
+        )
+    )
+    # deep-stratum active determinant, independent of U_0 moduli
+    alpha, beta = sp.symbols("alpha beta")
+    c_row = (-d * v[1], -d * v[0], v[1], v[1])
+    k1 = (-c_row[1], c_row[0], 0, 0)
+    k2 = (-c_row[2], 0, c_row[0], 0)
+    k3 = (-c_row[3], 0, 0, c_row[0])
+    u0a = tuple(sp.expand(a1 + alpha * a3)
+                for a1, a3 in zip(k1, k3))
+    u0b = tuple(sp.expand(a2 + beta * a3)
+                for a2, a3 in zip(k2, k3))
+    subs_deep = {v[3]: -v[2], x[0]: x0_val}
+    u1_rows = (U1_A,
+               tuple(sp.sympify(c_).subs(subs_deep) for c_ in v))
+    x_row = tuple(sp.sympify(c_).subs(subs_deep) for c_ in x)
+    B = sp.zeros(2, 2)
+    for i0, u0row in enumerate((u0a, u0b)):
+        for i1 in range(2):
+            B[i0, i1] = perm4((u0row, u1_rows[i1], x_row, U3_B))
+    det = sp.cancel(sp.together(sp.expand(B.det())))
+    numerator, denominator = sp.fraction(det)
+    assert sp.simplify(denominator - 1) == 0 or not (
+        set(sp.sympify(denominator).free_symbols)
+        & {alpha, beta}
+    )
+    target = 4 * d**2 * v[1]**2 * x[3] * (
+        d * v[0] * x[1] + v[1] * x[3]
+    )
+    ratio = sp.simplify(sp.cancel(numerator / target))
+    assert not (set(sp.sympify(ratio).free_symbols)
+                & {alpha, beta, x[3]})
     # first-component embedding
     l_, i_ = sp.symbols("l i")
     fam = {d: i_, v[0]: l_, v[1]: 1, v[2]: -i_ * l_, v[3]: i_ * l_,
@@ -345,6 +390,49 @@ def sheet_and_deep_stratum():
     assert sp.simplify((v[2] + v[3]).subs(fam)) == 0
     assert sp.simplify(F4.subs(fam)) == 0
     assert sp.simplify(F1.subs(fam)) == 0
+    assert sp.simplify(
+        (d * v[0] * x[1] + v[1] * x[3]).subs(fam)
+    ) == 0
+
+
+def sixth_component_invariants():
+    """Generic pair profile and relation ranks of the sixth
+    component match the F1/F2 samples."""
+    dd, pp, qq = sp.symbols("dsix psix qsix")
+    n = qq * (dd + pp + qq)
+    planes = (
+        ((-dd * pp, dd + qq, n, 0), (dd * pp, -dd - qq, 0, n)),
+        ((0, 0, 1, 1), (-dd, 1, -pp - qq, dd)),
+        ((pp, 1, 0, qq), (-1, 0, 1, 0)),
+        ((1, 0, 1, 0), (0, 0, -1, 1)),
+    )
+    values = {dd: 2, pp: 3, qq: 5}
+    planes_point = tuple(
+        tuple(tuple(sp.sympify(e).subs(values) for e in row)
+              for row in plane)
+        for plane in planes
+    )
+    profile = []
+    relations = []
+    for a_, b_ in itertools.combinations(range(4), 2):
+        rows_ = []
+        for pa in planes_point[a_]:
+            for pb in planes_point[b_]:
+                prod = rmul(list(pa), list(pb))
+                rows_.append([prod[ab] for ab in COORD_PAIRS])
+        mm = sp.Matrix(rows_)
+        r = mm.rank()
+        profile.append(r)
+        if r == 3:
+            k = [sp.simplify(c_) for c_ in mm.T.nullspace()[0]]
+            relations.append(
+                ((a_, b_),
+                 sp.Matrix([[k[0], k[1]], [k[2], k[3]]]).rank())
+            )
+    assert tuple(profile) == (4, 4, 3, 4, 3, 3), profile
+    assert tuple(relations) == (
+        ((0, 3), 1), ((1, 3), 1), ((2, 3), 1)
+    ), relations
 
 
 def main() -> None:
@@ -359,6 +447,7 @@ def main() -> None:
     det, pivot = cramer_identity(M)
     content = factor_in_singular(det)
     sheet_and_deep_stratum()
+    sixth_component_invariants()
     f4_slice_certificates()
 
     branch_results = {}
@@ -389,7 +478,11 @@ def main() -> None:
         "open_chart_pure_locus": "F1*F2*F4=0",
         "sheet_v2_plus_v3": "pure locus restricts to F1*F2=0",
         "deep_stratum_rank_drop": True,
+        "deep_stratum_pure_locus":
+            "x3=0 or d*v0*x1+v1*x3=0, U0-moduli free",
+        "f3_sheet_closed_by_identities": True,
         "first_component_embeds_in_deep_stratum": True,
+        "sixth_component_invariants_match_f1_f2": True,
         "branches": branch_results,
         "f4_family_tangent_rank": 5,
         "f4_incidence_jacobian_rank": 14,
