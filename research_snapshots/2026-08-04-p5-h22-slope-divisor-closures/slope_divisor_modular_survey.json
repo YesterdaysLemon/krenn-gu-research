@@ -1,0 +1,678 @@
+[
+  {
+    "p": 11,
+    "sample_a_b_f_phi": [
+      1,
+      2,
+      7,
+      3
+    ],
+    "direction": "01",
+    "slope": 0,
+    "rank_histogram": {
+      "7": 14641
+    },
+    "markings_with_kernel": 14641,
+    "survivor_markings": 0,
+    "genuine_directions_total": 0,
+    "survivors_sample": [],
+    "survivor_t_patterns": [],
+    "min_marked_rank_per_mode": {
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 4
+    },
+    "fitting_both_minors_vanish_count": 0,
+    "fitting_failures_sample": [],
+    "common_nonzero_mode0_minors": null,
+    "minors_checked": 0
+  },
+  {
+    "p": 11,
+    "sample_a_b_f_phi": [
+      1,
+      2,
+      7,
+      3
+    ],
+    "direction": "01",
+    "slope": 1,
+    "rank_histogram": {
+      "6": 14641
+    },
+    "markings_with_kernel": 14641,
+    "survivor_markings": 0,
+    "genuine_directions_total": 0,
+    "survivors_sample": [],
+    "survivor_t_patterns": [],
+    "min_marked_rank_per_mode": {
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 4
+    },
+    "fitting_both_minors_vanish_count": 0,
+    "fitting_failures_sample": [],
+    "common_nonzero_mode0_minors": null,
+    "minors_checked": 0
+  },
+  {
+    "p": 11,
+    "sample_a_b_f_phi": [
+      1,
+      2,
+      7,
+      3
+    ],
+    "direction": "01",
+    "slope": 10,
+    "rank_histogram": {
+      "5": 121,
+      "6": 14520
+    },
+    "markings_with_kernel": 14641,
+    "survivor_markings": 0,
+    "genuine_directions_total": 0,
+    "survivors_sample": [],
+    "survivor_t_patterns": [],
+    "min_marked_rank_per_mode": {
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 4
+    },
+    "fitting_both_minors_vanish_count": 0,
+    "fitting_failures_sample": [],
+    "common_nonzero_mode0_minors": null,
+    "minors_checked": 0
+  },
+  {
+    "p": 11,
+    "sample_a_b_f_phi": [
+      1,
+      2,
+      7,
+      3
+    ],
+    "direction": "23",
+    "slope": 0,
+    "rank_histogram": {
+      "6": 1,
+      "7": 14640
+    },
+    "markings_with_kernel": 14641,
+    "survivor_markings": 1,
+    "genuine_directions_total": 10,
+    "survivors_sample": [
+      {
+        "t": [
+          4,
+          0,
+          0,
+          0
+        ],
+        "rank": 6,
+        "kernel_dim": 2,
+        "genuine": 10
+      }
+    ],
+    "survivor_t_patterns": [
+      [
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "min_marked_rank_per_mode": {
+      "0": 4,
+      "1": 3,
+      "2": 3,
+      "3": 4
+    },
+    "fitting_both_minors_vanish_count": 0,
+    "fitting_failures_sample": [],
+    "common_nonzero_mode0_minors": [
+      [
+        0,
+        1,
+        3,
+        7
+      ],
+      [
+        0,
+        1,
+        5,
+        7
+      ]
+    ],
+    "minors_checked": 10
+  },
+  {
+    "p": 11,
+    "sample_a_b_f_phi": [
+      1,
+      2,
+      7,
+      3
+    ],
+    "direction": "23",
+    "slope": 1,
+    "rank_histogram": {
+      "7": 14641
+    },
+    "markings_with_kernel": 14641,
+    "survivor_markings": 0,
+    "genuine_directions_total": 0,
+    "survivors_sample": [],
+    "survivor_t_patterns": [],
+    "min_marked_rank_per_mode": {
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 4
+    },
+    "fitting_both_minors_vanish_count": 0,
+    "fitting_failures_sample": [],
+    "common_nonzero_mode0_minors": null,
+    "minors_checked": 0
+  },
+  {
+    "p": 11,
+    "sample_a_b_f_phi": [
+      1,
+      2,
+      7,
+      3
+    ],
+    "direction": "23",
+    "slope": 2,
+    "rank_histogram": {
+      "7": 11,
+      "8": 14630
+    },
+    "markings_with_kernel": 11,
+    "survivor_markings": 10,
+    "genuine_directions_total": 10,
+    "survivors_sample": [
+      {
+        "t": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "rank": 7,
+        "kernel_dim": 1,
+        "genuine": 1
+      },
+      {
+        "t": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "rank": 7,
+        "kernel_dim": 1,
+        "genuine": 1
+      },
+      {
+        "t": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "rank": 7,
+        "kernel_dim": 1,
+        "genuine": 1
+      },
+      {
+        "t": [
+          4,
+          0,
+          0,
+          0
+        ],
+        "rank": 7,
+        "kernel_dim": 1,
+        "genuine": 1
+      },
+      {
+        "t": [
+          5,
+          0,
+          0,
+          0
+        ],
+        "rank": 7,
+        "kernel_dim": 1,
+        "genuine": 1
+      },
+      {
+        "t": [
+          6,
+          0,
+          0,
+          0
+        ],
+        "rank": 7,
+        "kernel_dim": 1,
+        "genuine": 1
+      },
+      {
+        "t": [
+          7,
+          0,
+          0,
+          0
+        ],
+        "rank": 7,
+        "kernel_dim": 1,
+        "genuine": 1
+      },
+      {
+        "t": [
+          8,
+          0,
+          0,
+          0
+        ],
+        "rank": 7,
+        "kernel_dim": 1,
+        "genuine": 1
+      },
+      {
+        "t": [
+          9,
+          0,
+          0,
+          0
+        ],
+        "rank": 7,
+        "kernel_dim": 1,
+        "genuine": 1
+      },
+      {
+        "t": [
+          10,
+          0,
+          0,
+          0
+        ],
+        "rank": 7,
+        "kernel_dim": 1,
+        "genuine": 1
+      }
+    ],
+    "survivor_t_patterns": [
+      [
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "min_marked_rank_per_mode": {
+      "0": 4,
+      "1": 3,
+      "2": 3,
+      "3": 4
+    },
+    "fitting_both_minors_vanish_count": 0,
+    "fitting_failures_sample": [],
+    "common_nonzero_mode0_minors": [
+      [
+        0,
+        1,
+        3,
+        7
+      ],
+      [
+        0,
+        1,
+        5,
+        7
+      ]
+    ],
+    "minors_checked": 10
+  },
+  {
+    "p": 11,
+    "sample_a_b_f_phi": [
+      1,
+      2,
+      7,
+      3
+    ],
+    "direction": "23",
+    "slope": 10,
+    "rank_histogram": {
+      "5": 32,
+      "6": 14609
+    },
+    "markings_with_kernel": 14641,
+    "survivor_markings": 0,
+    "genuine_directions_total": 0,
+    "survivors_sample": [],
+    "survivor_t_patterns": [],
+    "min_marked_rank_per_mode": {
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 4
+    },
+    "fitting_both_minors_vanish_count": 0,
+    "fitting_failures_sample": [],
+    "common_nonzero_mode0_minors": null,
+    "minors_checked": 0
+  },
+  {
+    "p": 13,
+    "sample_a_b_f_phi": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "direction": "01",
+    "slope": 0,
+    "rank_histogram": {
+      "7": 28561
+    },
+    "markings_with_kernel": 28561,
+    "survivor_markings": 0,
+    "genuine_directions_total": 0,
+    "survivors_sample": [],
+    "survivor_t_patterns": [],
+    "min_marked_rank_per_mode": {
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 4
+    },
+    "fitting_both_minors_vanish_count": 0,
+    "fitting_failures_sample": [],
+    "common_nonzero_mode0_minors": null,
+    "minors_checked": 0
+  },
+  {
+    "p": 13,
+    "sample_a_b_f_phi": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "direction": "01",
+    "slope": 1,
+    "rank_histogram": {
+      "6": 28561
+    },
+    "markings_with_kernel": 28561,
+    "survivor_markings": 0,
+    "genuine_directions_total": 0,
+    "survivors_sample": [],
+    "survivor_t_patterns": [],
+    "min_marked_rank_per_mode": {
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 4
+    },
+    "fitting_both_minors_vanish_count": 0,
+    "fitting_failures_sample": [],
+    "common_nonzero_mode0_minors": null,
+    "minors_checked": 0
+  },
+  {
+    "p": 13,
+    "sample_a_b_f_phi": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "direction": "23",
+    "slope": 1,
+    "rank_histogram": {
+      "7": 28561
+    },
+    "markings_with_kernel": 28561,
+    "survivor_markings": 0,
+    "genuine_directions_total": 0,
+    "survivors_sample": [],
+    "survivor_t_patterns": [],
+    "min_marked_rank_per_mode": {
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 4
+    },
+    "fitting_both_minors_vanish_count": 0,
+    "fitting_failures_sample": [],
+    "common_nonzero_mode0_minors": null,
+    "minors_checked": 0
+  },
+  {
+    "p": 13,
+    "sample_a_b_f_phi": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "direction": "23",
+    "slope": 2,
+    "rank_histogram": {
+      "7": 13,
+      "8": 28548
+    },
+    "markings_with_kernel": 13,
+    "survivor_markings": 12,
+    "genuine_directions_total": 12,
+    "survivors_sample": [
+      {
+        "t": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rank": 7,
+        "kernel_dim": 1,
+        "genuine": 1
+      },
+      {
+        "t": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "rank": 7,
+        "kernel_dim": 1,
+        "genuine": 1
+      },
+      {
+        "t": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "rank": 7,
+        "kernel_dim": 1,
+        "genuine": 1
+      },
+      {
+        "t": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "rank": 7,
+        "kernel_dim": 1,
+        "genuine": 1
+      },
+      {
+        "t": [
+          4,
+          0,
+          0,
+          0
+        ],
+        "rank": 7,
+        "kernel_dim": 1,
+        "genuine": 1
+      },
+      {
+        "t": [
+          5,
+          0,
+          0,
+          0
+        ],
+        "rank": 7,
+        "kernel_dim": 1,
+        "genuine": 1
+      },
+      {
+        "t": [
+          6,
+          0,
+          0,
+          0
+        ],
+        "rank": 7,
+        "kernel_dim": 1,
+        "genuine": 1
+      },
+      {
+        "t": [
+          7,
+          0,
+          0,
+          0
+        ],
+        "rank": 7,
+        "kernel_dim": 1,
+        "genuine": 1
+      },
+      {
+        "t": [
+          8,
+          0,
+          0,
+          0
+        ],
+        "rank": 7,
+        "kernel_dim": 1,
+        "genuine": 1
+      },
+      {
+        "t": [
+          9,
+          0,
+          0,
+          0
+        ],
+        "rank": 7,
+        "kernel_dim": 1,
+        "genuine": 1
+      },
+      {
+        "t": [
+          11,
+          0,
+          0,
+          0
+        ],
+        "rank": 7,
+        "kernel_dim": 1,
+        "genuine": 1
+      },
+      {
+        "t": [
+          12,
+          0,
+          0,
+          0
+        ],
+        "rank": 7,
+        "kernel_dim": 1,
+        "genuine": 1
+      }
+    ],
+    "survivor_t_patterns": [
+      [
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "min_marked_rank_per_mode": {
+      "0": 4,
+      "1": 3,
+      "2": 3,
+      "3": 4
+    },
+    "fitting_both_minors_vanish_count": 0,
+    "fitting_failures_sample": [],
+    "common_nonzero_mode0_minors": [
+      [
+        0,
+        1,
+        3,
+        7
+      ],
+      [
+        0,
+        1,
+        5,
+        7
+      ]
+    ],
+    "minors_checked": 12
+  },
+  {
+    "p": 13,
+    "sample_a_b_f_phi": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "direction": "23",
+    "slope": 12,
+    "rank_histogram": {
+      "5": 38,
+      "6": 28523
+    },
+    "markings_with_kernel": 28561,
+    "survivor_markings": 0,
+    "genuine_directions_total": 0,
+    "survivors_sample": [],
+    "survivor_t_patterns": [],
+    "min_marked_rank_per_mode": {
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 4
+    },
+    "fitting_both_minors_vanish_count": 0,
+    "fitting_failures_sample": [],
+    "common_nonzero_mode0_minors": null,
+    "minors_checked": 0
+  }
+]

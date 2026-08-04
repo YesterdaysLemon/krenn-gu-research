@@ -248,7 +248,11 @@ rank-two relation among its chosen rank-3 edges.
   the span has no common root (resultant 27; no root at `r = oo`).
   Properness of the chord condition needs exactly this witness, so the
   Task B triangle conclusion is fully re-verified (about three
-  minutes).
+  minutes).  step17's exploratory tail (the per-root `U_0` census over
+  the irrational cubic roots) can hit a sympy `RecursionError` in some
+  environments; its two decisive checkpoints — rank two at the witness
+  and the recorded covector pair `[[2,-3,1,0],[9,-9,0,1]]` — replay
+  green first and are independently covered by step18b.
 - step22-25: C10 six-fold (purity for all parameters, invariants, tangent
   6, incidence 13, extra direction, obstruction minors).
 - step27_swap_invariance.py: C10 is invariant under the mode-(12) swap

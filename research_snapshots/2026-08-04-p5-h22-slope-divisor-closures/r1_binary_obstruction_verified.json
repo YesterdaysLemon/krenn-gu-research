@@ -1,0 +1,71 @@
+{
+  "verified": true,
+  "field": "C(a,b,f)[phi]/(Phi), slope fixed at r=1",
+  "component": "disjoint mixed-star fivefold (eighth orbit)",
+  "statement": "at slope r=1 neither weighted H22 pencil has a genuine binary Delta_2 extension for any marking; the r=1 slope divisor of the generic weighted-H22 obstruction is closed at binary level for both pencils over the generic component point",
+  "certificates": {
+    "d23_universal_kernel": {
+      "direction": "z = e_{y3}, independent of t",
+      "A_on_it": "0",
+      "B_on_it": "4"
+    },
+    "d23_A_concentration": {
+      "identity": "A = A0 * x0 (mod Phi)",
+      "A0_reduced_factored": "4*b*(a*f - 1)*(a*f + 1)*(b*f + 1)",
+      "A0_unit_certificate": "4*b*(a*f - 1)*(a*f + 1)*(b*f + 1)"
+    },
+    "d23_two_row_obstruction": {
+      "identity": "A0*M_0011 - (E3 + A0*t3)*M_0010 = A0*V*x0  (mod Phi)",
+      "V_reduced_factored": "-4*a*f",
+      "V_unit_certificate": "-4*a*f",
+      "deduction": "on any kernel vector A0*V*x0=0 with A0,V units, so x0=0 and A(z)=A0*x0=0: no genuine survivor for any marking"
+    },
+    "d23_x0_multiple_rows": [
+      "0001",
+      "0010",
+      "0011",
+      "0100",
+      "0101",
+      "0110",
+      "0111"
+    ],
+    "d01_universal_kernel": {
+      "directions": "z = e_{y1} and z = e_{y2}, independent of t",
+      "A_on_them": "0",
+      "B_on_them": "4"
+    },
+    "d01_A_concentration": {
+      "identity": "A = A0' * x3 (mod Phi)",
+      "A0p_reduced_factored": "4*a*b*phi*(b*f + 1)*(a**2*f**2 + 2*b*f + 1)",
+      "A0p_unit_certificate": "16*a**2*b**2*(b*f + 1)**2*(a**2*f**2 + 2*b*f + 1)**2*(a**2*f**2 - b**2*f**2 - b*f - 1)"
+    },
+    "d01_two_row_obstruction": {
+      "identity": "(C1 + A0'*t1)*M_0010 - A0'*M_0110 = C1*C2*x3  (mod Phi)",
+      "C1_reduced_factored": "-4*phi*(b*f + 1)",
+      "C2_reduced_factored": "-4*phi",
+      "C1_unit_certificate": "16*(b*f + 1)**2*(a**2*f**2 - b**2*f**2 - b*f - 1)",
+      "C2_unit_certificate": "16*(a**2*f**2 - b**2*f**2 - b*f - 1)",
+      "deduction": "on any kernel vector C1*C2*x3=0 with C1,C2 units, so x3=0 and A(z)=A0'*x3=0: no genuine survivor for any marking"
+    },
+    "d01_x3_multiple_rows": [
+      "0010",
+      "0100",
+      "0110",
+      "1000",
+      "1010",
+      "1100",
+      "1110"
+    ],
+    "modular_replay": {
+      "p11_D23": "all p^4 markings: no kernel vector with both diagonals nonzero",
+      "p11_D01": "all p^4 markings: no kernel vector with both diagonals nonzero",
+      "p13_D23": "all p^4 markings: no kernel vector with both diagonals nonzero",
+      "p13_D01": "all p^4 markings: no kernel vector with both diagonals nonzero"
+    }
+  },
+  "remaining_open": [
+    "intersections of r=1 with the component parameter divisors dividing the displayed units",
+    "projective component boundary at r=1"
+  ],
+  "elapsed_seconds": 31.056
+}

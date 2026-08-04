@@ -1,0 +1,64 @@
+{
+  "d23_r0": {
+    "case": "r0",
+    "direction": "23",
+    "divisor": "r",
+    "mode": 0,
+    "minor_rows": [
+      [
+        0,
+        1,
+        3,
+        7
+      ],
+      [
+        0,
+        1,
+        5,
+        7
+      ]
+    ],
+    "denominator_certificates_on_divisor": {
+      "0": "unit on {Phi=0, divisor=0}",
+      "1": "unit on {Phi=0, divisor=0}",
+      "2": "unit on {Phi=0, divisor=0}",
+      "3": "unit on {Phi=0, divisor=0}"
+    },
+    "status": {
+      "result": "timeout-null",
+      "timeout_s": 550
+    }
+  },
+  "elapsed_seconds": 361.575,
+  "d01_coupled": {
+    "case": "coupled",
+    "direction": "01",
+    "divisor": "a*f*(r+1)-(r-1)",
+    "mode": 3,
+    "minor_rows": [
+      [
+        0,
+        2,
+        4,
+        7
+      ],
+      [
+        0,
+        4,
+        5,
+        7
+      ]
+    ],
+    "denominator_certificates_on_divisor": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": true
+    },
+    "status": {
+      "result": "timeout-null",
+      "detail": "main Groebner killed at the ~560 s budget; the four on-divisor denominator unit certificates passed (CODEX_DEN markers in scripts/coupled_singular_run.log)"
+    },
+    "note": "program dumped by verify_p5_h22_disjoint_mixed_star_slope_divisor_symbolic_fitting.py (DUMP_PROGRAM mode) and executed directly; log scripts/coupled_singular_run.log"
+  }
+}
