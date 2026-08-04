@@ -392,11 +392,17 @@ def fitting_certificate(direction: str, data, sheet, label: str,
         for row in data["g_matrix"]
     ]
     alpha_rows = tuple(
-        tuple(sp.expand(entry.subs(substitution)) for entry in row)
+        tuple(
+            sp.expand(sp.sympify(entry).subs(substitution))
+            for entry in row
+        )
         for row in data["alpha_rows"]
     )
     beta_rows = tuple(
-        tuple(sp.expand(entry.subs(substitution)) for entry in row)
+        tuple(
+            sp.expand(sp.sympify(entry).subs(substitution))
+            for entry in row
+        )
         for row in data["beta_rows"]
     )
 
