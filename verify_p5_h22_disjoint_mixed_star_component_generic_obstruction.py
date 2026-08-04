@@ -232,37 +232,22 @@ def build_direction(direction: str):
             expr - sum(c * xv for c, xv in zip(row, X))
         ) == 0
         g_matrix.append(row)
-    diag_a = phi_normal_form(
-        coefficients[(0, 0, 0, 0)].subs(substitution)
-    )
-    diag_b = phi_normal_form(
-        coefficients[(1, 1, 1, 1)].subs(substitution)
-    )
-    # Mode-zero one-marked matrix under the substitution.
+    # The extended rows carry the kernel substitution in the fourth
+    # column.  The one-marked matrix and the two diagonals are
+    # expanded lazily, after each stratum's t-substitution, which
+    # keeps the permanent expansions small.
     alpha_sub = tuple(
         walpha[m] + (Zx[m],) for m in range(4)
     )
     beta_sub = tuple(
         wbeta[m] + (Zy[m],) for m in range(4)
     )
-    marked = []
-    for bits in BITS3:
-        chosen = [
-            beta_sub[m] if bits[m - 1] else alpha_sub[m]
-            for m in (1, 2, 3)
-        ]
-        row = []
-        for col in range(4):
-            basis = tuple(int(i == col) for i in range(4))
-            row.append(perm4((basis,) + tuple(chosen)))
-        marked.append(row)
     return {
         "denominators": denominators,
         "g_words": REST,
         "g_matrix": g_matrix,
-        "diag_a": diag_a,
-        "diag_b": diag_b,
-        "marked": marked,
+        "alpha_rows": alpha_sub,
+        "beta_rows": beta_sub,
     }
 
 
@@ -406,23 +391,45 @@ def fitting_certificate(direction: str, data, sheet, label: str,
         )
         for row in data["g_matrix"]
     ]
+    alpha_rows = tuple(
+        tuple(sp.expand(entry.subs(substitution)) for entry in row)
+        for row in data["alpha_rows"]
+    )
+    beta_rows = tuple(
+        tuple(sp.expand(entry.subs(substitution)) for entry in row)
+        for row in data["beta_rows"]
+    )
+
+    def marked_row(bits):
+        chosen = [
+            beta_rows[m] if bits[m - 1] else alpha_rows[m]
+            for m in (1, 2, 3)
+        ]
+        row = []
+        for col in range(4):
+            basis = tuple(int(i == col) for i in range(4))
+            row.append(perm4((basis,) + tuple(chosen)))
+        return row
+
+    marked_cache = {}
     matrices = []
     for selected in FITTING_ROWS:
-        entries = [
-            [
-                sp.expand(
-                    data["marked"][i][col].subs(substitution)
-                )
-                for col in range(4)
-            ]
-            for i in selected
-        ]
+        entries = []
+        for i in selected:
+            bits = BITS3[i]
+            if bits not in marked_cache:
+                marked_cache[bits] = marked_row(bits)
+            entries.append(marked_cache[bits])
         flat = phi_reduce_uniform(
             [entry for row in entries for entry in row]
         )
         matrices.append([flat[i * 4:(i + 1) * 4] for i in range(4)])
-    diag_a = sp.expand(data["diag_a"].subs(substitution))
-    diag_b = sp.expand(data["diag_b"].subs(substitution))
+    diag_a = phi_normal_form(
+        perm4(tuple(alpha_rows[m] for m in range(4)))
+    )
+    diag_b = phi_normal_form(
+        perm4(tuple(beta_rows[m] for m in range(4)))
+    )
     variables = [phi] + list(X) + [w] + free_t
     lines = [
         "ring R=(0,a,b,f,r),("
