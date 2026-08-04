@@ -1,0 +1,19 @@
+{
+  "curve": "p*q-p+2=0, parametrized q=(p-2)/p (p!=0)",
+  "frame": 1,
+  "survivor_marking_locus_over_Q(p)": null,
+  "mode_0_battery_unit_over_Q(p)": true,
+  "certificate_mode": "0",
+  "contraction_in_Q[p]": {
+    "generators": [
+      "1"
+    ],
+    "factors": [
+      "1"
+    ]
+  },
+  "contraction_gcd": "1",
+  "exceptional_rational_points": [],
+  "exceptional_nonrational_roots": [],
+  "verdict": "curve CLOSED pointwise: certificate valid off finitely many rational points, each closed by exact feasibility"
+}

@@ -1,0 +1,80 @@
+{
+  "witness_on_new_curve": [
+    {
+      "point": [
+        "-1",
+        "3"
+      ],
+      "on_curve_pq_minus_p_plus_2": true,
+      "off_all_displayed_divisors": true,
+      "displayed_divisor_values": {
+        "p": "-1",
+        "q": "3",
+        "q + 1": "4",
+        "p - 1": "-2",
+        "p*q + 1": "-2",
+        "p*q - p + 1": "-1",
+        "p*q + p + 1": "-3"
+      },
+      "frame_q1_binary_survivor_feasible": true,
+      "survivor_marking_locus_generators": [
+        "2*t3+1",
+        "t2",
+        "t1",
+        "2*t0-3"
+      ]
+    },
+    {
+      "point": [
+        "5",
+        "3/5"
+      ],
+      "on_curve_pq_minus_p_plus_2": true,
+      "off_all_displayed_divisors": true,
+      "displayed_divisor_values": {
+        "p": "5",
+        "q": "3/5",
+        "q + 1": "8/5",
+        "p - 1": "4",
+        "p*q + 1": "4",
+        "p*q - p + 1": "-1",
+        "p*q + p + 1": "9"
+      },
+      "frame_q1_binary_survivor_feasible": true,
+      "survivor_marking_locus_generators": [
+        "4*t3-1",
+        "t2",
+        "t1",
+        "20*t0+3"
+      ]
+    }
+  ],
+  "replay_off_all_divisors": {
+    "point": [
+      "2",
+      "1"
+    ],
+    "frames": {
+      "q0": {
+        "system": "mixed + w*A*B-1 + certificate minors",
+        "feasible": false,
+        "pointwise_empty_replayed": true
+      },
+      "q1": {
+        "system": "mixed + w*A*B-1",
+        "feasible": false,
+        "pointwise_empty_replayed": true
+      },
+      "q2": {
+        "system": "mixed + w*A*B-1 + certificate minors",
+        "feasible": false,
+        "pointwise_empty_replayed": true
+      },
+      "q3": {
+        "system": "mixed + w*A*B-1 + certificate minors",
+        "feasible": false,
+        "pointwise_empty_replayed": true
+      }
+    }
+  }
+}

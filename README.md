@@ -850,9 +850,25 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   their closures, local dimension, and coordinate-plane incidence
   invariants:
   [`research_snapshots/2026-08-04-p4-exhaustiveness-sweep-census-thirteen/`](research_snapshots/2026-08-04-p4-exhaustiveness-sweep-census-thirteen/README.md).
-  The certified component lower bound is thirteen; exhaustiveness
-  is still open (the sweep's honest tails are listed in the
-  snapshot).  The tenth (coincident-support) component's `H31` and
+  The twelfth and thirteenth now carry standalone theorems, exact
+  verifiers, and independent audits:
+  [`P4_SPLIT_PAIR_PURE_COMPONENT.md`](P4_SPLIT_PAIR_PURE_COMPONENT.md),
+  [`P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md`](P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md).
+  A follow-up sweep then closes two of that snapshot's honest
+  tails — the `Zc` wall is the seventh component's `b=e` wall (a
+  char-0 six-slice pins its local dimension at six), and the `e=1`
+  case-alpha leaf lies in the eleventh, its earlier survivor strata
+  being chart artifacts of an empty stratum — while the case-`Y`
+  survivor walls of the coincident-support chart yield **three
+  further component orbits**: the fourteenth and fifteenth by the
+  classical smooth-point argument (incidence rank fifteen, the
+  first such since the seventh) and the sixteenth by a slice
+  certificate on a conic-bundle family whose constrained tangent
+  needed a correction to the discovery script:
+  [`research_snapshots/2026-08-04-p4-exhaustiveness-tails-census-sixteen/`](research_snapshots/2026-08-04-p4-exhaustiveness-tails-census-sixteen/README.md).
+  The certified component lower bound is **sixteen**;
+  exhaustiveness is still open (each snapshot lists its honest
+  tails).  The tenth (coincident-support) component's `H31` and
   weighted `H22` obstructions are now both closed at **binary**
   level over its generic point — two frames die by polynomial
   identities valid at every chart point, the others by unit marking
@@ -872,11 +888,33 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   Fitting minors, with independent modular audits:
   [`P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md),
   [`P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
-  The first TEN certified component orbits are now generically
-  closed for both frames; the eleventh, twelfth, and thirteenth
+  The eleventh (equal-support sixfold) is now closed for both
+  frames as well, and goes past the generic statement: its
+  interior survivor locus is computed **exactly** as an elimination
+  ideal — five explicit strata — and every sheet of all five is
+  closed by a single-minor Fitting certificate, while the weighted
+  `H22` projections eliminate the slope as a ring variable, so no
+  slope divisor is left open at the covered points:
+  [`P5_H31_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md),
+  [`P5_H22_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md).
+  The first ELEVEN certified component orbits are now generically
+  closed for both frames; the twelfth through sixteenth
   components' exact `H31`/`H22` obstructions are the frontier
   before the census can shrink:
   [`P4_INOUT_PATH_STRATUM_WORKING_NOTE.md`](P4_INOUT_PATH_STRATUM_WORKING_NOTE.md).
+  What it would take to finish `P_5 -> Delta_3` is now itself
+  written down: an obligation ledger states the master theorem,
+  tabulates every discharged and outstanding obligation against
+  the verified documents, and assesses the remainder honestly —
+  the programme is structurally on track but quantitatively early,
+  with the bottom two thirds of each component's obligation tree
+  (divisor recursion, boundaries) existing for only two of
+  twenty-six component-frame pairs, and the cover hypothesis not
+  yet a theorem.  A companion meta-theorem supplies the rigorous
+  generic-to-pointwise transfer that converts these generic
+  closures into the pointwise form the master theorem consumes:
+  [`P5_DELTA3_OBLIGATION_LEDGER.md`](P5_DELTA3_OBLIGATION_LEDGER.md),
+  [`P5_POINTWISE_SPECIALIZATION_META_THEOREM.md`](P5_POINTWISE_SPECIALIZATION_META_THEOREM.md).
   The `H31`/`H22` frontier census is unchanged and
   `P_5 -> Delta_3` remains unresolved.
   On all eight certified pure-`P_4` component orbits, the generic
