@@ -14,3 +14,4 @@ triangle_support*.json
 *.result
 *.drat
 tmp/
+.claude/
