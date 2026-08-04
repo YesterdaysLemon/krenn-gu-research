@@ -273,8 +273,27 @@ active determinant reduces to zero modulo the component equation
 `Phi`, and the pivot stays generically nonzero.  With matching
 dimensions (three in-slice plus two transverse torus directions),
 the open stratum of the disjoint chart **is the eighth component**;
-no new component appears there.  Its pivot sheets and deep strata,
-and the equal-support case, remain to be swept.
+no new component appears there.
+
+The disjoint chart's sheets are computed as well.  On the sheet
+`v_2+v_3=0` the active determinant's odd-exponent factors are `v_1`
+and `v_0+v_1`; on the sheet `S=0` they are `x_2` and
+`(v_2+v_3)(x_0+x_1)+(v_0+v_1)x_2`.  On the double-deep stratum
+`v_3=-v_2`, `x_3=-x_2`, the covector matrix has rank one with
+covector direction `(0,0,1,1)`, the extension kernel is
+`z_2+z_3=0`, and with `U_0=span(k_1+alpha k_3, k_2+beta k_3)` for
+its coordinate kernel basis the active determinant is exactly
+
+```text
+4 (beta-alpha)(v_0+v_1) x_2^2.
+```
+
+Unlike the overlap-one deep stratum, the determinant involves the
+`U_0` moduli: the branch `alpha=beta` consists precisely of the
+planes `U_0` containing the direction `(1,-1,0,0)=y_2`.  The
+identification of the two deep branches `alpha=beta` and
+`v_0+v_1=0`, the sheet branches, and the equal-support case are the
+next leaves of the sweep.
 
 ## Open continuation
 
