@@ -238,6 +238,17 @@ rank-two relation among its chosen rank-3 edges.
 - step10-14: star pencil structure, weight tensor, purity prime, zero
   identity, Delta entries.
 - step15-18: triangle pencil, Lambda, det Lambda, rank-2 identity, chord.
+- step18b_triangle_chord_fast.py: check-only replay of the chord
+  conclusion.  step18's function-field kernel solve exceeded local
+  replay budgets (2400 s); step18b replays its symbolic first
+  checkpoint (all 3x3 minors of Lambda vanish on the stratum) and
+  replaces the solve by exact rational arithmetic at the stratum
+  witness `(n2,n3,kappa) = (2,3,2)`: rank exactly two, the recorded
+  section pair `{r^2-3r+2, r^3-9r+9}` spans the computed kernel, and
+  the span has no common root (resultant 27; no root at `r = oo`).
+  Properness of the chord condition needs exactly this witness, so the
+  Task B triangle conclusion is fully re-verified (about three
+  minutes).
 - step22-25: C10 six-fold (purity for all parameters, invariants, tangent
   6, incidence 13, extra direction, obstruction minors).
 - step27_swap_invariance.py: C10 is invariant under the mode-(12) swap
