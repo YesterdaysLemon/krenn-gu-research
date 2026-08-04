@@ -396,6 +396,42 @@ def disjoint_chart_certificates():
         sp.Poly(phi8_poly, p8),
     )
     assert sp.expand(pivot_family.as_expr()) != 0
+    # double-deep stratum of the disjoint chart: rank-one covector in
+    # direction (0,0,1,1), kernel z2+z3=0, and the exact moduli
+    # determinant 4(beta-alpha)(v0+v1)x2^2.
+    deep_sub = {v[3]: -v[2], x[3]: -x[2]}
+    deep_rows = []
+    for c in (rmul(Y2_disj, Y3),
+              rmul([sp.sympify(e).subs(deep_sub) for e in x], Y3)):
+        zw = rmul(list(zsym),
+                  [sp.sympify(e).subs(deep_sub) for e in v])
+        form = pairing(zw, c)
+        deep_rows.append(
+            [sp.cancel(sp.diff(form, zi)) for zi in zsym]
+        )
+    deep_matrix = sp.Matrix(deep_rows)
+    assert deep_matrix.rank() == 1
+    alpha, beta = sp.symbols("alphadd betadd")
+    k1 = (1, 0, 0, 0)
+    k2 = (0, 1, 0, 0)
+    k3 = (0, 0, 1, -1)
+    u0a = tuple(sp.expand(a1 + alpha * a3)
+                for a1, a3 in zip(k1, k3))
+    u0b = tuple(sp.expand(a2 + beta * a3)
+                for a2, a3 in zip(k2, k3))
+    v_deep = tuple(sp.sympify(e).subs(deep_sub) for e in v)
+    x_deep = tuple(sp.sympify(e).subs(deep_sub) for e in x)
+    B_deep = sp.zeros(2, 2)
+    for i0, u0row in enumerate((u0a, u0b)):
+        for i1, u1row in enumerate((U1_A, v_deep)):
+            B_deep[i0, i1] = perm4((
+                u0row, u1row, x_deep, U3_disj
+            ))
+    deep_det = sp.expand(B_deep.det())
+    target_deep = sp.expand(
+        4 * (beta - alpha) * (v[0] + v[1]) * x[2]**2
+    )
+    assert sp.expand(deep_det - target_deep) == 0
 
 
 def x3_wall_certificates():
