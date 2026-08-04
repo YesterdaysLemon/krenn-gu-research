@@ -347,10 +347,14 @@ equal-support sixfold of continuation item 2).
 
 Honest open items: the tangent gap (seven versus six) at the branch
 points leaves room for further components through the same walls;
-the remaining case branches of the coincident-support chart, the
-third deep sub-branch `x_2=0`, and the tenth component's
-independent audit, boundary classification, and `H31`/`H22`
-obstructions are open.  The replay scripts are
+the remaining case branches of the coincident-support chart and the
+third deep sub-branch `x_2=0` were open here and are now swept
+(continuation item 3); the tenth component's `H31`/`H22`
+obstructions are now closed at binary level with modular audits
+([`P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md),
+[`P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md));
+its component-certificate-level independent audit and boundary
+classification remain open.  The replay scripts are
 `eighth_closure_j8_and_u0_obstruction.py`,
 `branch_invariants_and_sieve.py`, and
 `branch_ambient_certificates.py`.
