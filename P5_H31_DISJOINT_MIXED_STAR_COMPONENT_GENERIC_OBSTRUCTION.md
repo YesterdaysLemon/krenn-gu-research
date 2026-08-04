@@ -165,12 +165,14 @@ or local-map tuple is enumerated.
 ## Honest frontier
 
 All eight certified pure-component orbits are now generically closed
-for `H31`.  What remains is:
+for `H31`.  The weighted `H22` incidence of this eighth component is
+now closed as well:
+[`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+What remains is:
 
 1. the special parameter/projective boundaries of the components not
    already closed in full;
-2. the weighted `H22` incidence of this eighth component; and
-3. component exhaustiveness, especially exceptional triangle,
+2. component exhaustiveness, especially exceptional triangle,
    rank-two-relation, and lower pair-rank strata.
 
 The global conjecture remains unresolved.

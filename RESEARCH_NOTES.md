@@ -10977,3 +10977,64 @@ The suggested continuation is symbolic linear algebra on the
 `14 x 8` mixed coefficient matrix: expose its kernel line by maximal
 minors, derive the observed marking equations over the component
 function field, and then factor a small mode-zero Fitting minor.
+
+### Generic weighted `H22` theorem on the eighth component
+
+The suggested continuation is now carried out exactly, and the
+eighth component's generic weighted `H22` incidence is closed over
+the component function field with a transcendental slope.
+
+The key structural step is a `t`-free elimination.  In either
+weighted pencil, the mixed word `e_m` contains the marked extension
+`y_m` with coefficient equal to the `3 x 3` weighted permanent of the
+other three `alpha` rows.  These four coefficients are independent of
+the marking and have nonzero resultants against `Phi`, so they vanish
+nowhere on the component.  Solving the four single-`1` words for `y`
+converts the `14 x 8` mixed system into an exact `10 x 4` system
+`G(t)x=0` whose kernel is nonzero exactly when the full binary
+extension kernel is.
+
+For `D_01`, the `4 x 4` minor of `G` in rows `0011,0110,1001,1011`
+reduces modulo `Phi` to a nowhere-vanishing unit times `t_1 t_2`;
+the sheet restrictions `t_1=0` and `t_2=0` factor further, giving the
+four exact strata
+
+```text
+t1=t2=0;          t1=0, phi*(t0-1)=f;
+t2=t3=0;          t2=0, (a*f*r+a*f-r+1)*t1=r+1.
+```
+
+For `D_23`, the ideal of all `4 x 4` minors of `G` plus `Phi` is the
+unit ideal on each chart `t_1!=0`, `t_2!=0`, `t_3!=0`, so kernel
+markings satisfy `t_1=t_2=t_3=0` with `t_0` free.  Both loci are
+exactly the finite-field patterns of the working note.
+
+On all five strata, adjoining the mode-zero one-marked minors in rows
+`(0,1,3,7)` and `(0,1,5,7)` and inverting the product of the two
+diagonal coefficients gives the unit ideal.  Hence every genuine
+binary survivor of either pencil has a rank-four mode-zero one-marked
+contraction and admits no ternary lift.  Since every `H22` subfamily
+requires a sharp `Delta_2` image in at least one pencil, the generic
+weighted `H22` incidence of the disjoint mixed-star component is
+empty:
+
+```text
+P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h22_disjoint_mixed_star_component_generic_obstruction.py
+audit_p5_h22_disjoint_mixed_star_component_generic_obstruction.py
+```
+
+The independent modular audit exhausts every affine marking at two
+finite component points and two clean slopes per point, confirming
+full column rank off the loci, rank seven on them, and the rank-four
+one-marked contraction on every genuine direction.  Slopes reducing
+into the excluded divisor locus (`r=0`, `r=+/-1`, and finitely many
+further divisor slopes per finite point) genuinely deviate, as the
+function-field theorem inverts those factors.
+
+All eight certified pure-`P_4` component orbits are now generically
+closed for both marked `H31` and weighted `H22`.  The remaining
+`H31`/`H22` targets are the special parameter/slope divisors, the
+projective boundaries, and component exhaustiveness; the `240 + 270`
+fail-closed signatures stay in the census and the global prize
+conjecture remains unresolved.

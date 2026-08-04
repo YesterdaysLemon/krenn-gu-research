@@ -373,13 +373,15 @@ row is `su/(u-v)` times the required first diagonal.  Thus no binary
 
 - [`P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md`](P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md)
 
-The generic weighted theorems close the seven previously certified
-component orbits.  The final diagonal-quadric case uses the projective
+The generic weighted theorems close all eight certified component
+orbits.  The final diagonal-quadric case uses the projective
 Segre-join/properness obstruction rather than a generic determinantal
-elimination.  The subsequently certified disjoint mixed-star eighth
-component is now generically excluded from `H31`, but not yet from
-weighted `H22`.  Special slope/parameter divisors, component
-boundaries, and component exhaustiveness remain open.
+elimination.  The disjoint mixed-star eighth component is closed by a
+`t`-free elimination of the marked extensions, factored one-minor
+marking loci, and five two-minor Fitting strata:
+[`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+Special slope/parameter divisors, component boundaries, and component
+exhaustiveness remain open.
 
 The five minimal primes in the mixed `3 x 4` determinantal chart are
 now completely identified.  The first and third are the sixth
@@ -781,11 +783,11 @@ a^2 b f phi^2+a^2 f^2-b^2 f^2+b^2 phi^2-bf-1=0.
 
 Its rank-five family tangent and rank-fifteen Segre-incidence
 certificate are exact.  Its generic `H31` incidence is empty by the
-function-field projection and determinantal identity above, while its
-generic weighted `H22` incidence remains open:
-[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
-Two exact finite-field censuses and the incomplete function-field
-Fitting route are recorded, without promotion, in
+function-field projection and determinantal identity above, and its
+generic weighted `H22` incidence is now empty as well:
+[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md),
+[`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+The guiding finite-field censuses are retained in
 [`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md).
 Special component/slope boundaries and component exhaustiveness remain.
 
@@ -814,11 +816,12 @@ boundaries; they are now generically closed for both `H31` and
 weighted `H22`.  The sixth mixed-orientation component and the
 six-dimensional component are also generically closed but retain
 their parameter/projective boundaries; both are likewise generically
-closed for `H31` and weighted `H22`.  The common smooth
-diagonal-quadric locus cannot supply a new component away from its
-block boundaries.  Exhaustiveness of the eight known component orbits,
-the new component's generic weighted `H22` incidence, and the special
-component/slope boundary incidences in `H22` remain unresolved.
+closed for `H31` and weighted `H22`.  The eighth disjoint mixed-star
+component is generically closed for `H31` and weighted `H22` too.
+The common smooth diagonal-quadric locus cannot supply a new
+component away from its block boundaries.  Exhaustiveness of the
+eight known component orbits and the special component/slope boundary
+incidences in `H31` and `H22` remain unresolved.
 
 ## Verification
 
