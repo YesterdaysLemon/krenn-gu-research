@@ -253,12 +253,36 @@ calculation; a standalone component theorem document with an
 independent audit, its `H31`/`H22` generic obstructions, and its
 separating invariants are the immediate continuation.
 
+## The disjoint-support chart
+
+In the disjoint support case the torus normalizes completely:
+
+```text
+u_1=(0,0,1,-1),  y_3=(0,0,1,1),  u_3=(1,1,0,0),  y_2=(1,-1,0,0),
+```
+
+with no residual modulus.  The `u_1`-side conditions again vanish
+identically, the Cramer pivot factors as
+`-(v_2+v_3)((v_2+v_3)(x_0+x_1)+(v_0+v_1)(x_2+x_3))`, and the active
+determinant is the pivot's two factors times a **single irreducible
+sextic**: the open stratum has exactly one branch.  The eighth
+component embeds exactly: mapping its family through the coordinate
+swap `(02)(13)` with mode map `(0,1,2,3) <- (2,1,0,3)` and torus
+`t_3=-t_2`, `t_1=t_0` satisfies every chart normalization, the
+active determinant reduces to zero modulo the component equation
+`Phi`, and the pivot stays generically nonzero.  With matching
+dimensions (three in-slice plus two transverse torus directions),
+the open stratum of the disjoint chart **is the eighth component**;
+no new component appears there.  Its pivot sheets and deep strata,
+and the equal-support case, remain to be swept.
+
 ## Open continuation
 
 1. write the standalone ninth-component theorem document with an
    independent audit, separating invariants, and its generic
    `H31`/`H22` obstructions;
-2. treat the disjoint and equal support cases of the in-out path;
+2. sweep the pivot sheets and deep strata of the disjoint chart and
+   the equal-support case of the in-out path;
 3. continue toward component exhaustiveness — nine is a certified
    lower bound, not a census — plus the remaining `H31`/`H22`
    boundary work and the global prize conjecture, all open.
