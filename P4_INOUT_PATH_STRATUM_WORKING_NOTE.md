@@ -342,7 +342,8 @@ fivefolds by dimension and from the seventh by its generic profile
 edge: a **tenth component orbit**.  Exact identities place branch
 `alpha=beta` inside the family on the nose and branch `v_0+v_1=0`
 in its closure as a `b -> infinity` limit.  The certified component
-lower bound is now **ten**.
+lower bound is now **ten** (since raised to **eleven** by the
+equal-support sixfold of continuation item 2).
 
 Honest open items: the tangent gap (seven versus six) at the branch
 points leaves room for further components through the same walls;
@@ -364,9 +365,32 @@ obstructions are open.  The replay scripts are
    its exact `H31`/`H22` obstructions remain open, with an
    exploratory modular `H31` census showing line-shaped marking loci
    and branch-dependent rank-four minors;
-2. sweep the pivot sheets and deep strata of the disjoint chart and
-   the equal-support case of the in-out path;
-3. continue toward component exhaustiveness — nine is a certified
+2. the equal-support case and the rank-two-dominated strata are now
+   analyzed in
+   [`research_snapshots/2026-08-04-p4-equal-support-rank-two-strata/`](research_snapshots/2026-08-04-p4-equal-support-rank-two-strata/README.md):
+   the equal-support rank-two stratum has a single genuinely pure
+   branch `W` whose points are singular walls, and freeing the
+   `Pi`-directions exposes an always-pure six-parameter family
+   `C10` of family-tangent rank six with profile multiset equal to
+   the tenth component's.  The expected alignment `C10 = tenth` is
+   **refuted** and `C10` is certified as an **ELEVENTH component
+   orbit** (snapshot addendum, steps 28/29): an exact char-0
+   six-hyperplane slice standard basis pins the local dimension of
+   the pure locus at a generic `C10` sample to exactly six — the
+   first component certified at a singular incidence point
+   (tangent seven, second-order obstructed normal) — while the
+   closed symmetry-stable invariant "some mode's plane is a
+   coordinate 2-plane" holds on all of `closure(C10)` (`U_3 = Pi`)
+   and fails at the tenth's certificate point, so
+   `closure(C10) != g(tenth)` for every census symmetry `g`; the
+   `W`-branch is the wall `c0=c1` inside it.  The
+   rank-two-dominated **star** stratum is generically **empty**
+   (purity forces the zero restriction on the forced pencil), and
+   the rank-two-dominated **triangle** reduces to a proper chord
+   condition leaving at most four-dimensional walls and **no
+   component**; boundary leaves of both remain, as do `C10`'s
+   independent audit and `H31`/`H22` obstructions;
+3. continue toward component exhaustiveness — eleven is a certified
    lower bound, not a census — plus the remaining `H31`/`H22`
    boundary work and the global prize conjecture, all open.
 

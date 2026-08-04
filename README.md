@@ -817,10 +817,29 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   tangent rank six equal to its smooth incidence dimension — a
   **tenth, six-dimensional component orbit** of maximal-rank-sum
   profile `(3,3,4,3,4,4)`, containing one wall exactly and the
-  other as a limit.  The certified component lower bound is ten;
-  exhaustiveness is still open, and the ninth and tenth components'
-  exact `H31`/`H22` obstructions are the new frontier before the
-  census can shrink:
+  other as a limit.  The equal-support case and the
+  rank-two-dominated strata are analyzed as well: the
+  rank-two-dominated star stratum is generically empty, its
+  triangle reduces to a proper chord condition with no component,
+  and the equal-support chart exposes an always-pure six-parameter
+  family whose profile multiset matches the tenth component's.
+  The expected alignment is **refuted**: an exact characteristic-zero
+  six-hyperplane slice standard basis, against the family's rank-six
+  tangent, pins the pure locus's local dimension at a generic sample
+  of that family to exactly six — its
+  points are singular incidence points (tangent seven with a
+  second-order obstructed normal), so this is the first component
+  certified without a smooth incidence point — and the closed,
+  symmetry-stable invariant "some mode's plane is a coordinate
+  2-plane" holds identically on the family (`U_3` is a coordinate
+  plane) yet fails at the tenth's certificate point.  The
+  equal-support sixfold is therefore an **eleventh component
+  orbit**:
+  [`research_snapshots/2026-08-04-p4-equal-support-rank-two-strata/`](research_snapshots/2026-08-04-p4-equal-support-rank-two-strata/README.md).
+  The certified component lower bound is eleven; exhaustiveness is
+  still open, and the ninth, tenth, and eleventh components' exact
+  `H31`/`H22` obstructions are the new frontier before the census
+  can shrink:
   [`P4_INOUT_PATH_STRATUM_WORKING_NOTE.md`](P4_INOUT_PATH_STRATUM_WORKING_NOTE.md).
   The `H31`/`H22` frontier census is unchanged and
   `P_5 -> Delta_3` remains unresolved.
