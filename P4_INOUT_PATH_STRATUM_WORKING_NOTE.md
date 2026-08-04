@@ -178,23 +178,42 @@ the rank-drop stratum carries it separately.  An exact sample on the
 `{12},{13},{23}` — first-component-like profile but a different
 generic relation-rank pattern; its identification is open.
 
-For the `F_1`/`F_2` identification, the sixth component's canonical
-family has, at a generic point, pair profile `(4,4,3,4,3,3)` and
-rank-one relations exactly on `{03},{13},{23}` — the same invariants
-as the `F_1` and `F_2` samples.  The exact containments remain to be
-computed.
+The `F_1` and `F_2` branches are both the **sixth component**.  Its
+canonical family, torus-aligned by `diag(t_0,t_1,t_2,-t_2)` with
+`d=t_2/t_0`, lands exactly in this chart, and
 
-The dense overlap-one chart's pure locus is now completely
-described: the three open-chart branches `F_1,F_2,F_4`, their sheet
-restrictions, and the two Grassmannian-fibred deep-stratum branches.
-`F_4` is identified (a sixfold slice); the remaining work is orbit
-identification, not discovery, on this chart.
+```text
+F_1 = 0   identically on the aligned family,
+F_2 = -2 t_1 t_2 (P+Q) != 0 generically.
+```
+
+The sixth component has two in-arrows, and re-embedding with its
+mode `0` plane in the chart's mode-`1` slot (its `{03}`-relation
+free vector is proportional to `u_1` and kills `y_3`) gives
+
+```text
+F_2 = 0   identically,
+F_1 = 2 t_1 t_2 (D+Q)(P+Q) != 0 generically.
+```
+
+Both branch equations are irreducible and the embedded images have
+the full branch dimension, so `F_1` and `F_2` are two chart
+translates of the sixth component's orbit.  With `F_4` a slice of
+the seventh component, **no branch of this chart's open stratum is a
+new component**.
+
+The dense overlap-one chart's pure locus is now completely described
+and almost completely identified: `F_1` and `F_2` are sixth-component
+translates, `F_4` is a seventh-component slice, and the first
+component embeds in one deep-stratum branch.  Only the deep
+`x_3=0` branch and the exact extent of the first-component branch
+remain unidentified.
 
 ## Open continuation
 
-1. compute the exact containments identifying `F_1`, `F_2` (expected:
-   sixth-component translates) and the two deep-stratum branches
-   (expected: first-component charts);
+1. identify the deep-stratum `x_3=0` branch and decide whether the
+   `d v_0 x_1 + v_1 x_3 = 0` branch equals the first component's
+   chart part or exceeds it;
 2. treat the disjoint and equal support cases of the in-out path;
 3. combine with the star classifications toward component
    exhaustiveness, the remaining `H31`/`H22` boundary work, and the

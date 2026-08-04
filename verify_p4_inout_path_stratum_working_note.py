@@ -433,6 +433,37 @@ def sixth_component_invariants():
     assert tuple(relations) == (
         ((0, 3), 1), ((1, 3), 1), ((2, 3), 1)
     ), relations
+    # exact identifications: torus-aligned sixth family kills F1;
+    # the mode-0<->1 swapped embedding kills F2.
+    T0, T1, T2 = sp.symbols("tsixa tsixb tsixc")
+    n = qq * (dd + pp + qq)
+
+    def torus(row):
+        return (T0 * row[0], T1 * row[1], T2 * row[2],
+                -T2 * row[3])
+
+    def branch_value(expression, v_row, x_row, d_value):
+        return sp.factor(sp.simplify(expression.subs({
+            d: d_value,
+            **{v[i]: v_row[i] for i in range(4)},
+            **{x[i]: x_row[i] for i in range(4)},
+        })))
+
+    d_value = T2 / T0
+    alpha1 = torus((-dd, 1, -pp - qq, dd))
+    beta2 = torus((pp, 1, 0, qq))
+    assert branch_value(F1, alpha1, beta2, d_value) == 0
+    assert branch_value(F2, alpha1, beta2, d_value) != 0
+    alpha0 = torus((dd * pp, -dd - qq, 0, n))
+    assert branch_value(F2, alpha0, beta2, d_value) == 0
+    assert branch_value(F1, alpha0, beta2, d_value) != 0
+    # the swapped embedding's u_1-slot vector: support {2,3} direction
+    # of the sixth's mode-0 plane, proportional to u_1 and killing y_3
+    beta0 = torus((-dd * pp, dd + qq, n, 0))
+    free0 = tuple(sp.simplify(b_ + a_)
+                  for b_, a_ in zip(beta0, alpha0))
+    assert free0[0] == 0 and free0[1] == 0
+    assert sp.simplify(free0[2] + free0[3]) == 0
 
 
 def main() -> None:
@@ -483,6 +514,9 @@ def main() -> None:
         "f3_sheet_closed_by_identities": True,
         "first_component_embeds_in_deep_stratum": True,
         "sixth_component_invariants_match_f1_f2": True,
+        "f1_branch_is_sixth_component_translate": True,
+        "f2_branch_is_sixth_component_translate": True,
+        "no_new_component_in_open_chart": True,
         "branches": branch_results,
         "f4_family_tangent_rank": 5,
         "f4_incidence_jacobian_rank": 14,
