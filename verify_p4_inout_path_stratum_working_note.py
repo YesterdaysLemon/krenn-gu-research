@@ -193,6 +193,137 @@ def analyse_point(point):
     return tuple(profile), tuple(relations)
 
 
+def f4_slice_certificates():
+    """Family tangent rank five, incidence Jacobian rank fourteen,
+    and the exact containment of the F4 branch in the sixfold."""
+    t0, t1, t2 = sp.symbols("t0:3")
+    x0_val = sp.solve(sp.Eq(F4, 0), x[0])[0]
+    subs_x0 = {x[0]: x0_val}
+    zsym = sp.symbols("z0:4")
+    rows = []
+    for c in (rmul(Y2, Y3),
+              rmul([sp.sympify(e).subs(subs_x0) for e in x], Y3)):
+        zw = rmul(list(zsym), list(v))
+        form = pairing(zw, c)
+        rows.append([sp.expand(sp.diff(form, zi)) for zi in zsym])
+    M = sp.Matrix(rows)
+    minors = {}
+    for a_, b_ in itertools.combinations(range(4), 2):
+        minors[(a_, b_)] = sp.together(
+            M[0, a_] * M[1, b_] - M[0, b_] * M[1, a_]
+        )
+    w2 = (minors[(1, 2)], -minors[(0, 2)], minors[(0, 1)], 0)
+    w3 = (minors[(1, 3)], -minors[(0, 3)], 0, minors[(0, 1)])
+    planes = (
+        sp.Matrix([list(w2), list(w3)]),
+        sp.Matrix([list(U1_A), list(v)]),
+        sp.Matrix([list(Y2),
+                   [sp.sympify(e).subs(subs_x0) for e in x]]),
+        sp.Matrix([list(Y3), list(U3_B)]),
+    )
+    pivots = ((0, 2), (0, 2), (0, 1), (0, 2))
+    torus = sp.diag(t0, t1, t2, 1)
+    scaled_planes = tuple(plane * torus for plane in planes)
+    reduced = []
+    chart_coords = []
+    for plane, piv in zip(scaled_planes, pivots):
+        chart = plane[:, piv].inv() * plane
+        nonpiv = tuple(i for i in range(4) if i not in piv)
+        reduced.append(chart)
+        chart_coords.extend(chart[r_, c_] for r_ in range(2)
+                            for c_ in nonpiv)
+    sample = SAMPLES["F4"]
+    point = {**dict(zip(v, sample["v"])),
+             **{x[1]: sample["x"][1], x[2]: sample["x"][2],
+                x[3]: sample["x"][3]},
+             d: sample["d"], t0: 1, t1: 1, t2: 1}
+    params = (d, v[0], v[1], v[2], v[3], x[1], x[2], x[3],
+              t0, t1, t2)
+    jac = sp.Matrix(chart_coords).jacobian(params).subs(point)
+    jac = sp.Matrix([[sp.nsimplify(sp.cancel(e)) for e in row]
+                     for row in jac.tolist()])
+    assert jac.rank() == 5
+    # universal incidence at the F4 point
+    reduced_point = tuple(plane.subs(point) for plane in reduced)
+    T_point = {}
+    for bits in itertools.product((0, 1), repeat=4):
+        rows_sel = tuple(
+            tuple(reduced_point[m][bits[m], j] for j in range(4))
+            for m in range(4)
+        )
+        T_point[bits] = sp.nsimplify(perm4(rows_sel))
+    support = tuple(sorted(
+        bits for bits, value in T_point.items() if value != 0
+    ))
+    assert support == ((1, 0, 1, 0), (1, 1, 1, 0)), support
+    anchor = (1, 0, 1, 0)
+    zvars = sp.symbols("Z0:16")
+    rvars = sp.symbols("R0:4")
+    universal = []
+    for mode, piv in enumerate(pivots):
+        nonpiv = tuple(i for i in range(4) if i not in piv)
+        plane = sp.zeros(2, 4)
+        plane[0, piv[0]] = 1
+        plane[1, piv[1]] = 1
+        entries = zvars[4 * mode: 4 * mode + 4]
+        for r_ in range(2):
+            for o_, c_ in enumerate(nonpiv):
+                plane[r_, c_] = entries[2 * r_ + o_]
+        universal.append(plane)
+    T_universal = {}
+    for bits in itertools.product((0, 1), repeat=4):
+        rows_sel = tuple(
+            tuple(universal[m][bits[m], j] for j in range(4))
+            for m in range(4)
+        )
+        T_universal[bits] = perm4(rows_sel)
+    ratios = []
+    for mode in range(4):
+        adjacent = list(anchor)
+        adjacent[mode] = 1 - adjacent[mode]
+        ratios.append(T_point[tuple(adjacent)] / T_point[anchor])
+    equations = []
+    for word in itertools.product((0, 1), repeat=4):
+        if word == anchor:
+            continue
+        monomial = sp.prod(
+            rvars[m] for m in range(4) if word[m] != anchor[m]
+        )
+        equations.append(sp.expand(
+            T_universal[word] - T_universal[anchor] * monomial
+        ))
+    coordinate_point = tuple(
+        sp.nsimplify(sp.cancel(c.subs(point))) for c in chart_coords
+    )
+    substitution = dict(zip(
+        tuple(zvars) + tuple(rvars),
+        coordinate_point + tuple(ratios),
+    ))
+    assert all(
+        sp.simplify(eq.subs(substitution)) == 0 for eq in equations
+    )
+    incidence_jacobian = sp.Matrix(equations).jacobian(
+        tuple(zvars) + tuple(rvars)
+    ).subs(substitution)
+    assert incidence_jacobian.rank() == 14
+    # exact containment identities in the sixfold chart
+    my = [sp.cancel(c.subs({t0: 1, t1: 1, t2: 1}))
+          for c in chart_coords]
+    tt0 = -1 / my[1]
+    tt2 = 1 / my[3]
+    for index in (0, 2, 9, 12, 14):
+        assert sp.simplify(my[index]) == 0, index
+    assert sp.simplify(sp.together(my[8] + tt2 / tt0)) == 0
+    ratio_h = sp.cancel(my[11] - my[10] / tt2)
+    first = sp.simplify(sp.together(
+        1 - my[4] * tt0 * ratio_h - my[5] * tt0
+    ))
+    second = sp.simplify(sp.together(
+        1 - my[6] * tt2 * ratio_h - my[7] * tt2
+    ))
+    assert first == 0 and second == 0
+
+
 def sheet_and_deep_stratum():
     # sheet v3=-v2, sub-pivot columns (0,2)
     M = covector_matrix().subs({v[3]: -v[2]})
@@ -218,13 +349,17 @@ def sheet_and_deep_stratum():
 
 def main() -> None:
     note_text = " ".join(NOTE.read_text(encoding="utf-8").split())
-    assert "not a component theorem" in note_text
-    assert "matches no recorded component profile" in note_text
+    assert "not a complete component theorem" in note_text
+    assert (
+        "the F_4 branch is contained in the seventh component"
+        in note_text
+    )
 
     M = covector_matrix()
     det, pivot = cramer_identity(M)
     content = factor_in_singular(det)
     sheet_and_deep_stratum()
+    f4_slice_certificates()
 
     branch_results = {}
     for label, point in SAMPLES.items():
@@ -256,7 +391,10 @@ def main() -> None:
         "deep_stratum_rank_drop": True,
         "first_component_embeds_in_deep_stratum": True,
         "branches": branch_results,
-        "f4_profile_matches_no_recorded_component": True,
+        "f4_family_tangent_rank": 5,
+        "f4_incidence_jacobian_rank": 14,
+        "f4_contained_in_six_dimensional_component": True,
+        "no_ninth_component_from_f4": True,
         "component_classification_completed": False,
         "component_exhaustiveness_resolved": False,
         "global_problem_resolved": False,

@@ -2,12 +2,14 @@
 
 ## Status
 
-This is an exact exploratory checkpoint, not a component theorem.
-It opens the mixed-orientation stratum left unclassified by
+This is an exact exploratory checkpoint, not a complete component
+theorem.  It opens the mixed-orientation stratum left unclassified by
 [`P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md`](P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md):
 two rank-one exceptional relations in directed **path** position.
-The chart identities below are exact and replayed; the component
-identifications they suggest are explicitly open.
+The chart identities below are exact and replayed.  The `F_4` branch
+is now settled: it is contained in the six-dimensional seventh
+component, so it produces no ninth component orbit.  The `F_1`/`F_2`
+orbit identifications and the deeper strata remain open.
 
 ## The stratum
 
@@ -85,12 +87,45 @@ all three flattenings of rank one and invariants:
 |---|---|---|---|
 | `F_1` | `(4,4,3,4,3,3)` | rank-one star at mode `3` | sixth/eighth signature class; supports overlap |
 | `F_2` | `(4,4,3,4,3,3)` | rank-one star at mode `3` | same class as `F_1` |
-| `F_4` | `(4,3,2,4,3,3)` | three rank-one relations, one rank-two pair edge | **matches no recorded component profile** |
+| `F_4` | `(4,3,2,4,3,3)` | three rank-one relations, one rank-two pair edge | contained in the seventh component (below) |
 
-The six-dimensional component's recorded profile is `(4,3,2,4,4,3)`,
-so the `F_4` branch is either a new component orbit or a special
-slice of a known one; deciding requires the tangent and
-Segre-incidence certificates of the component toolkit.
+## The `F_4` branch is a slice of the six-dimensional component
+
+At the `F_4` sample point the family tangent through the diagonal
+torus has rank five, but the universal Segre-incidence Jacobian has
+rank **fourteen**, so the local incidence dimension is six: `F_4` is
+not a new five-dimensional component.  Its identity is exact.  The
+`F_4` point tensor is supported on precisely the words
+`1010, 1110` in the Grassmann charts with pivots
+`(02),(02),(01),(02)` — the apolar support of
+[`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](P4_SIX_DIMENSIONAL_PURE_COMPONENT.md).
+Writing `m_0,...,m_15` for the `F_4` chart coordinates, the sixfold
+family matches with
+
+```text
+t_0=-1/m_1,     t_2=1/m_3,      t_1 free,
+D=-m_11 t_1,    A+C=-m_10 t_1/t_2,
+B=m_4 t_0/t_1,  E=m_6 t_2/t_1,
+```
+
+and the two nontrivial residual chart equations reduce, with
+`h/t_1 = m_11 - m_10/t_2`, to
+
+```text
+1 - m_4 t_0 (h/t_1) - m_5 t_0 = 0,
+1 - m_6 t_2 (h/t_1) - m_7 t_2 = 0,
+```
+
+both of which hold **identically** on the `F_4` branch; the
+structural zero shapes of the remaining chart coordinates also hold
+identically.  Hence every generic `F_4` point is a diagonal-torus
+translate of a sixfold family point:
+
+```text
+the F_4 branch is contained in the seventh component.
+```
+
+No ninth component arises from this branch.
 
 ## The complementary sheets
 
@@ -121,10 +156,8 @@ rank-drop stratum carries it separately.
 
 1. classify the rank-one stratum of the deep locus (where the first
    component lives) and the `F_3` sheet;
-2. run the tangent/Segre-incidence certificates on `F_1`, `F_2`,
-   `F_4` and identify their orbits against the eight known
-   components; a ninth orbit at `F_4` would extend the certified
-   lower bound;
+2. identify the orbits of `F_1` and `F_2` against the sixth and
+   eighth components (their signature class);
 3. treat the disjoint and equal support cases of the in-out path;
 4. combine with the star classifications toward component
    exhaustiveness, the remaining `H31`/`H22` boundary work, and the
@@ -142,4 +175,7 @@ The script replays, over exact rationals: the identically vanishing
 `u_1`-side conditions, the Cramer kernel identity and the factored
 active determinant, the sheet and deep-stratum computations, the
 first-component embedding, and the three branch sample points with
-their flattening ranks, pair profiles, and relation ranks.
+their flattening ranks, pair profiles, and relation ranks.  For the
+`F_4` branch it additionally replays the rank-five family tangent,
+the rank-fourteen universal Segre-incidence Jacobian, and the exact
+sixfold containment identities.
