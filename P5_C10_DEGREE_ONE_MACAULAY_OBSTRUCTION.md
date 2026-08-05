@@ -122,7 +122,7 @@ identity.
 Run:
 
 ```text
-PYTHONPATH=tmp/python_deps python \
+python \
   verify_p5_c10_degree_one_macaulay_obstruction.py
 ```
 

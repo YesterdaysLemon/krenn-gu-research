@@ -73,7 +73,7 @@ a2fdf4bc3478df94d5b09d68b4df195ebcc400164e47c5ed1b3db3aad12016ee.
 Run:
 
 ```text
-PYTHONPATH=tmp/python_deps python \
+python \
   verify_p5_c10_scalar_span_obstruction.py
 ```
 

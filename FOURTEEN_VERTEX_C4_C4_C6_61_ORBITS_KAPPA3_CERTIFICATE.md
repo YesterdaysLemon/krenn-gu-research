@@ -87,7 +87,7 @@ orbits, for 61 of 93.
 
 ## Replay
 
-With the repository runtime and `tmp/python_deps` on `PYTHONPATH`, run:
+With the pinned repository runtime (`requirements.txt`) installed, run:
 
 ```text
 python verify_fourteen_vertex_c4_c4_c6_58_orbits.py

@@ -83,11 +83,13 @@ def assert_unit_log(path: Path) -> None:
 
 def semantic_ledger_audit() -> dict:
     env = os.environ.copy()
-    dependency_path = str(ROOT / "tmp" / "python_deps")
+    dependency_path = ROOT / "tmp" / "python_deps"
     existing = env.get("PYTHONPATH")
-    env["PYTHONPATH"] = (
-        dependency_path + os.pathsep + existing if existing else dependency_path
-    )
+    if dependency_path.exists():
+        env["PYTHONPATH"] = (
+            str(dependency_path) + os.pathsep + existing
+            if existing else str(dependency_path)
+        )
     completed = subprocess.run(
         [sys.executable, str(AUDITOR), str(LEDGER)],
         cwd=ROOT,

@@ -215,7 +215,7 @@ coefficients are one, and checks the converse elimination on this fixed
 nonzero support:
 
 ```text
-PYTHONPATH=tmp/python_deps python verify_q2_n6_k4_d4_family.py
+python verify_q2_n6_k4_d4_family.py
 ```
 
 ## What this teaches us about the prize conjecture
@@ -258,6 +258,6 @@ selector gadgets, rather than blind graph enumeration.
 The fixed-support rank-one obstruction is replayed by:
 
 ```text
-PYTHONPATH=tmp/python_deps python \
+python \
   verify_q2_herald_promotion_rank_barrier.py
 ```

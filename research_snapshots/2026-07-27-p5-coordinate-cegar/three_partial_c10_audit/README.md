@@ -15,9 +15,9 @@ catalogues documented in
 Run:
 
 ```text
-PYTHONPATH=tmp/python_deps python \
+python \
   verify_p5_exact_three_c10_audit.py
-PYTHONPATH=tmp/python_deps python \
+python \
   verify_p5_c10_degree_one_macaulay_obstruction.py
 ```
 

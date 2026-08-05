@@ -140,7 +140,7 @@ ten forbidden mixed coefficients have no common affine zero.
 Run:
 
 ```text
-PYTHONPATH=tmp/python_deps python \
+python \
   verify_p5_c10_ten_equation_affine_core.py
 ```
 
@@ -165,7 +165,7 @@ the nonzero pure amplitudes; this probe deliberately does not test the
 saturated ideals.  Replay it with
 
 ```text
-PYTHONPATH=tmp/python_deps python \
+python \
   probe_p5_c10_joint_affine_class.py
 ```
 

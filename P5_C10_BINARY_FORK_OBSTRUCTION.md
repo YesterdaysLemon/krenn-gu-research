@@ -60,7 +60,7 @@ replays `P+Q-mR=2`.  The ordered hit list has SHA-256
 Run the complete replay with:
 
 ```text
-PYTHONPATH=tmp/python_deps python \
+python \
   verify_p5_c10_binary_fork_obstruction.py
 ```
 

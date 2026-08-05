@@ -52,7 +52,7 @@ The independent `drat-trim` checker returned `s VERIFIED`.
 
 ## Replay
 
-With the repository runtime and `tmp/python_deps` on `PYTHONPATH`, run:
+With the pinned repository runtime (`requirements.txt`) installed, run:
 
 ```text
 python verify_fourteen_vertex_c4_c4_c6_orbit5.py
