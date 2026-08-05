@@ -211,7 +211,7 @@ rank-two edges.  Therefore the component in this note is inequivalent to all
 thirteen earlier orbits.
 
 Its exceptional graph is shown in
-[`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg`](P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg).
+[`research_figures/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg`](research_figures/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg).
 
 ## Across the mathematical fence
 

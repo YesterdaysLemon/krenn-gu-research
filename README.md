@@ -2556,7 +2556,7 @@ strictly advance the finite frontier:
   squarefree coefficient ratios, with no elimination:
   [`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md).
   The support octahedron is shown in
-  [`P4_CROSSED_211_TRIANGLE_SUPPORT_OCTAHEDRON.png`](P4_CROSSED_211_TRIANGLE_SUPPORT_OCTAHEDRON.png).
+  [`research_figures/P4_CROSSED_211_TRIANGLE_SUPPORT_OCTAHEDRON.png`](research_figures/P4_CROSSED_211_TRIANGLE_SUPPORT_OCTAHEDRON.png).
 - the equal-support common-factor orientation does not collapse: it supplies
   an eleventh component orbit, and a second six-dimensional one.  In binary
   block notation its normalized family is
@@ -2637,7 +2637,7 @@ strictly advance the finite frontier:
   certify a smooth five-dimensional component:
   [`P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md`](P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md).
   Its graph is in
-  [`P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg`](P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg).
+  [`research_figures/P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg`](research_figures/P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg).
   Its complete generic marked `H31` fibre is empty.  A rational projection of
   the norm quadric gives function field `C(u,v)`; over the entire marking ring,
   all four all-kernel diagonals belong to their fourteen-row mixed modules,
@@ -2825,7 +2825,7 @@ strictly advance the finite frontier:
   two theorems:
   [`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md`](P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md).
   A graph picture is in
-  [`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg`](P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg).
+  [`research_figures/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg`](research_figures/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg).
 - component fourteen's complete generic marked `H31` fibre is empty.  A
   diagonal source-torus quotient reduces its five-parameter polar-graph
   family to two moduli `(p,q)`.  Open Fitting projection then leaves exactly

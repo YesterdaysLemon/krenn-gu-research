@@ -21,7 +21,7 @@ On a dense open of the component the pair-image profile, in edge order
 The unique relation on edge `12` has coefficient rank two.  The four
 relations on `01,02,13,23` have coefficient rank one, and `03` has full pair
 rank four.  The resulting five-edge exceptional graph is pictured in
-[`P4_TRANSVERSE_COMMON_FACTOR_COMPONENT_GRAPH.svg`](P4_TRANSVERSE_COMMON_FACTOR_COMPONENT_GRAPH.svg).
+[`research_figures/P4_TRANSVERSE_COMMON_FACTOR_COMPONENT_GRAPH.svg`](research_figures/P4_TRANSVERSE_COMMON_FACTOR_COMPONENT_GRAPH.svg).
 
 This raises the certified lower bound from eleven to twelve symmetry-
 inequivalent pure-`P_4` component orbits.  It is not component exhaustiveness,

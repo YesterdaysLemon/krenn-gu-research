@@ -20,7 +20,7 @@ The triangle relation on `12` has coefficient rank two.  The relations on
 `13,23` have coefficient rank one and are the same exact zero-divisor pair,
 with the active leaf rows annihilating the common kernel row.  The graph is
 shown in
-[`P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg`](P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg).
+[`research_figures/P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg`](research_figures/P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg).
 
 This raises the certified lower bound from twelve to thirteen symmetry-
 inequivalent pure-`P_4` component orbits.  It is not component exhaustiveness

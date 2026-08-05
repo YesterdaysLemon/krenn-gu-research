@@ -71,7 +71,7 @@ J(4,2)=L(K_4),
 the octahedral graph.  Two labels are adjacent when they overlap once and
 opposite when they are disjoint.  Equality, opposition, and adjacency in
 this octahedron are exactly the three branches above.  A picture is in
-[`P4_CROSSED_211_TRIANGLE_SUPPORT_OCTAHEDRON.svg`](P4_CROSSED_211_TRIANGLE_SUPPORT_OCTAHEDRON.svg).
+[`research_figures/P4_CROSSED_211_TRIANGLE_SUPPORT_OCTAHEDRON.svg`](research_figures/P4_CROSSED_211_TRIANGLE_SUPPORT_OCTAHEDRON.svg).
 
 The signed forms `X_i plus-or-minus X_j` are also the roots of type `D_4`.
 The relation pattern therefore has a small Coxeter-arrangement shadow:
@@ -80,7 +80,7 @@ ordered pair of octahedron vertices.
 
 ![The six two-coordinate support labels as an octahedron; an adjacent pair
 leads to the first apolar component and an opposite pair forces rank
-drop.](P4_CROSSED_211_TRIANGLE_SUPPORT_OCTAHEDRON.png)
+drop.](research_figures/P4_CROSSED_211_TRIANGLE_SUPPORT_OCTAHEDRON.png)
 
 ## The Borel reduction is legal
 

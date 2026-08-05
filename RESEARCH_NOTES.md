@@ -13054,7 +13054,7 @@ Primary theorem and verifiers:
 
 ```text
 P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md
-P4_TRANSVERSE_COMMON_FACTOR_COMPONENT_GRAPH.svg
+research_figures/P4_TRANSVERSE_COMMON_FACTOR_COMPONENT_GRAPH.svg
 verify_p4_transverse_common_factor_component.py
 audit_p4_transverse_common_factor_component.py
 ```
@@ -13307,7 +13307,7 @@ Primary theorem, graph, and verifiers:
 
 ```text
 P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md
-P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg
+research_figures/P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg
 verify_p4_eisenstein_norm_common_kernel_component.py
 audit_p4_eisenstein_norm_common_kernel_component.py
 ```
@@ -13601,7 +13601,7 @@ marked `H31/H22` fibres for the new component are open.
 
 ```text
 P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md
-P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg
+research_figures/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg
 verify_p4_full_support_tangent_pair_component.py
 audit_p4_full_support_tangent_pair_component.py
 ```
