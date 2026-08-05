@@ -231,12 +231,81 @@ plane tuple.”  Its unresolved generic alternatives are:
 1. rank-one exceptional relations whose kernel endpoint orientations
    are mixed, including the known triangle component and orientations
    outside the now-certified disjoint-support chart;
-2. configurations dominated by rank-two exceptional relations;
+2. configurations containing rank-two exceptional relations.  Each
+   individual exact rank-two pair is now reduced, without elimination,
+   to a secant `2+2`/`1+3` block center or a coincident-plane tangent
+   through a coordinate line in
+   [`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md);
+   compatibility among several pencils and with rank-one edges is now
+   partially classified.  A proposed pure rank-two-star obstruction and a
+   proposed mixed `(2,2,1)` triangle obstruction were withdrawn after a
+   Borel-gauge audit; their historical records are
+   [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md),
+   [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md).
+   The triangle where all three pair images have rank three and all
+   three relation matrices have rank two has an intrinsic holonomy.
+   Away from its resonant divisor it reduces to
+   three cyclic cut forms in
+   [`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md).
+   The full-support all-`1+3` cycle is now impossible: cut-factor
+   reflection forces a common singleton coordinate, after which the
+   triangle becomes an embedded pure `P_3` and all three pair ranks
+   drop to at most two:
+   [`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md);
+   a hyperbolic anchor/crossed-graph argument also excludes every
+   full-support cycle containing a `2+2` cut:
+   [`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md).
+   The one-edge and two-edge cut boundaries force a coordinate-plane
+   rank collapse or a common embedded-`P_3` hyperplane:
+   [`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md).
+   Hence the entire nonresonant triangle is empty.  On resonance, the
+   additive holonomy separates a tangent-Segre cut cycle from a compressed
+   `Sym^3(C^2) -> R_3` map:
+   [`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md).
+   The tangent branch is empty.  On the flat branch, the true
+   Borel-generic and one-kernel-zero otherwise-distinct charts are
+   empty by
+   [`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md)
+   and
+   [`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md).
+   The projective sheets over the generic center are also excluded from the
+   triangle after their three additive-parallelogram pure curves are shown
+   to have a lower-rank partner pair:
+   [`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
+   The full-support collisions are also excluded: the `2+1+1` and `3+1`
+   active cubes vanish, while every pure `2+2` point has a lower-rank
+   partner pair:
+   [`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
+   The smaller-support strata are now classified.  Their unique
+   rank-three survivor is the support-two annihilator-line family in
+   [`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md);
+   the dependent rank-two-relation star has also been reproved with the
+   Borel markings retained:
+   [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md).
+   The mixed `(2,2,1)` rank-three triangle has likewise been excluded in the
+   corrected marked charts; the last `2+2` chart reduces to a presymplectic
+   commutator determinant:
+   [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md).
+   The full-support mixed star with two rank-two spokes and one rank-one spoke
+   is not empty: its Cayley-toric two-parameter chart has a smooth
+   five-dimensional diagonal-source closure and supplies a tenth component:
+   [`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md).
+   A reverse marked-chart theorem proves that this family exhausts the whole
+   rank-three `{1,2,2}` star stratum:
+   [`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md).
+   The known first component's dense one-rank-two triangle orientation now has
+   a fixed-triangle/apolar-`P^2` normal form:
+   [`P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md`](P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md).
+   Its other Borel orientations/support collisions and special lower-pair-rank
+   boundaries remain open;
 3. the lower pair-image-rank and coincident/support-one zero-product
    boundaries.  One rank-two-edge stratum now supplies the
    six-dimensional component in
    [`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](P4_SIX_DIMENSIONAL_PURE_COMPONENT.md),
-   but the full lower-rank boundary is not classified.
+   while the common `1+3` triple-rank-drop stratum supplies a distinct
+   six-dimensional embedded-`P_3` component in
+   [`P4_EMBEDDED_P3_PURE_COMPONENT.md`](P4_EMBEDDED_P3_PURE_COMPONENT.md).
+   The full lower-rank boundary is still not classified.
 
 The common smooth diagonal-quadric semisimple case is separately
 excluded in

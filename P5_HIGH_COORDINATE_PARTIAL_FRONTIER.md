@@ -373,15 +373,13 @@ row is `su/(u-v)` times the required first diagonal.  Thus no binary
 
 - [`P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md`](P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md)
 
-The generic weighted theorems close all eight certified component
-orbits.  The final diagonal-quadric case uses the projective
+The generic weighted theorems close the seven previously certified
+component orbits.  The final diagonal-quadric case uses the projective
 Segre-join/properness obstruction rather than a generic determinantal
-elimination.  The disjoint mixed-star eighth component is closed by a
-`t`-free elimination of the marked extensions, factored one-minor
-marking loci, and five two-minor Fitting strata:
-[`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
-Special slope/parameter divisors, component boundaries, and component
-exhaustiveness remain open.
+elimination.  The subsequently certified disjoint mixed-star eighth
+component is now generically excluded from `H31`, but not yet from
+weighted `H22`.  Special slope/parameter divisors, component
+boundaries, and component exhaustiveness remain open.
 
 The five minimal primes in the mixed `3 x 4` determinantal chart are
 now completely identified.  The first and third are the sixth
@@ -783,20 +781,39 @@ a^2 b f phi^2+a^2 f^2-b^2 f^2+b^2 phi^2-bf-1=0.
 
 Its rank-five family tangent and rank-fifteen Segre-incidence
 certificate are exact.  Its generic `H31` incidence is empty by the
-function-field projection and determinantal identity above, and its
-generic weighted `H22` incidence is now empty as well:
-[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md),
+function-field projection and determinantal identity above.  Its
+generic weighted `H22` incidence is now empty as well: the two weighted
+mixed matrices have a line and a degree-five Fitting scheme, and small
+one-marked minors exclude every genuine binary direction:
+[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
 [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
-The guiding finite-field censuses are retained in
-[`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md).
-Special component/slope boundaries and component exhaustiveness remain.
+At the special slopes `r=1` and `r=-1`, a stronger binary theorem
+forces respectively the first and second diagonal to vanish:
+[`P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md).
+Twelve generic parameter/coordinate branches and the principal coupled
+slope-parameter divisor are now closed as well:
+[`P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md),
+[`P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md).
+Hidden certificate denominators, other component boundaries, and
+component exhaustiveness remain.
 
 A natural non-brute-force route is:
 
 1. classify the remaining mixed-orientation star and triangle
-   exceptional-pair graphs and their lower-rank boundaries, while
-   closing the boundaries of the three new `1+3` components, the
-   sixth component, and the six-dimensional component;
+   exceptional-pair graphs and their lower-rank boundaries.  The
+   full-support all-`1+3` nonresonant triangle is now excluded by a
+   cut-label/perfect-pairing argument, and every full-support `2+2`
+   bridge is excluded by an anchor/crossed-graph argument.  Thus the
+   full-support nonresonant triangle is empty.  Its one-edge boundary
+   forces product rank one, and its two-edge boundary suspends a pure
+   `P_3` and forces pair rank at most two.  Hence the complete
+   nonresonant triangle is empty; only the resonant holonomy divisor
+   remains.  That divisor is now split by its additive affine
+   holonomy: a nonzero class gives a tangent-Segre first jet plus a
+   cyclic cut system, and the zero class gives a compressed binary
+   cubic `Sym^3(C^2) -> R_3`.
+   In parallel, close the boundaries of the three new `1+3`
+   components, the sixth component, and the six-dimensional component;
 2. intersect the resulting classification with the all-rank-two and
    alternating-gate normal forms of the marked `Delta_2` slice, using
    the weighted survivor/kernel equations as a generic model and the
@@ -816,12 +833,34 @@ boundaries; they are now generically closed for both `H31` and
 weighted `H22`.  The sixth mixed-orientation component and the
 six-dimensional component are also generically closed but retain
 their parameter/projective boundaries; both are likewise generically
-closed for `H31` and weighted `H22`.  The eighth disjoint mixed-star
-component is generically closed for `H31` and weighted `H22` too.
-The common smooth diagonal-quadric locus cannot supply a new
-component away from its block boundaries.  Exhaustiveness of the
-eight known component orbits and the special component/slope boundary
-incidences in `H31` and `H22` remain unresolved.
+closed for `H31` and weighted `H22`.  The common smooth
+diagonal-quadric locus cannot supply a new component away from its
+block boundaries.  The embedded pure-`P_3` suspension raised the
+component lower bound to nine.  A later two-rank-two-spoke mixed-star
+component has raised the current lower bound to ten; its marked fibres are
+not analyzed here.  The embedded component's generic marked `H31` fibre is
+now empty already at binary level: the source-zero extension is an
+apolar insertion map whose generic projected-line kernels all kill
+one required diagonal.  Restoring the weighted slope closes its
+generic `H22` fibre as well: one diagonal direction is structurally
+zero and the other is the same insertion arrangement on a
+slope-dependent line.  Its full normalized affine `H31` chart is
+closed, including all nine exceptional insertion points.  Its weighted
+boundary is closed whenever that projected image remains a line, and
+the rank-one collapse `rS=1,T=rU` is now excluded by the complementary
+marked contraction.  Thus the ninth component's entire normalized
+weighted `H22` chart is empty.  The support-two normalization divisor
+`A=0`, `B!=0` is now closed for `H31` by a singular insertion-pencil
+argument; its sole resonance has fixed third-contraction coefficient
+`4`.  The complementary `r=0`, `A B!=0` divisor is closed by signed
+source transport and a tangent--Segre Fitting stratification.  Hence
+the whole affine `B!=0` ninth-component chart is empty for `H31`.
+The homogeneous sign-rectangle compactification is now closed by
+support: coordinate points have zero restriction and every other
+point enters the affine chart by symmetry.  Thus the ninth component
+is closed in full for `H31`.  Exhaustiveness of those nine orbits and
+the special component/slope boundary incidences in `H22` remain
+unresolved.
 
 ## Verification
 

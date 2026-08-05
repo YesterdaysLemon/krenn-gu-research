@@ -2,249 +2,319 @@
 
 ## Status
 
-This is an exact characteristic-zero obstruction on the generic
-diagonal-source orbit of the eighth pure-`P_4` component proved in
+This is an exact characteristic-zero theorem on a dense open subset of
+the eighth pure-`P_4` component proved in
 [`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
 
-For the two weighted diagonal-hyperplane pencils required by `H22`:
+The complete weighted `H22` incidence over the generic point of that
+component is empty.  Thus all eight pure-component orbits certified at
+that checkpoint have empty generic marked `H31` and weighted `H22`
+fibres.  The later embedded-`P_3` ninth component is not covered by
+this theorem, but its generic fibres have since been excluded by their
+own apolar insertion theorems:
+[`P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md),
+[`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
+The special equal- and opposite-weight slopes have since been closed
+by a stronger binary obstruction:
+[`P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md).
+The compactified endpoint `r=0` is also closed: `D_01^0` has a binary
+diagonal obstruction, while `D_23^0` has an unsplit two-minor Fitting
+obstruction:
+[`P5_H22_DISJOINT_MIXED_STAR_ZERO_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_ZERO_SLOPE_BOUNDARY_OBSTRUCTION.md).
+Twelve generic parameter/coordinate branches and the principal
+coupled slope-parameter divisor are closed in the companion boundary
+theorems:
+[`P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md),
+[`P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md).
+An intrinsic factorization of the seven selected `D_23` minor contents
+has additionally exposed and closed four rational branches
+`af=+/-1,a phi=+/-1`:
+[`P5_H22_DISJOINT_MIXED_STAR_AF_APHI_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_AF_APHI_BOUNDARY_OBSTRUCTION.md).
+A normalized coefficient divisor has also produced one new irreducible
+quadratic branch, closed in both directions by full unsplit Fitting
+ideals:
+[`P5_H22_DISJOINT_MIXED_STAR_COEFFICIENT_QUADRATIC_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COEFFICIENT_QUADRATIC_BOUNDARY_OBSTRUCTION.md).
+Three further linear slope graphs are closed by six unsplit ideals; one
+of them requires a cross-mode repair from mode zero to mode one:
+[`P5_H22_DISJOINT_MIXED_STAR_LINEAR_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_LINEAR_SLOPE_BOUNDARY_OBSTRUCTION.md).
+The dense component chart also admits an exact source-torus quotient
+`(a,b,f,phi)~(af,bf,1,phi/f)`, reducing the base to a surface without
+changing either slope:
+[`P5_H22_DISJOINT_MIXED_STAR_TORUS_QUOTIENT.md`](P5_H22_DISJOINT_MIXED_STAR_TORUS_QUOTIENT.md).
 
-1. every marking with a nonzero binary-extension kernel in the `01`
-   pencil satisfies `t_1 t_2 = 0`, by a single one-minor locus
-   certificate; and every marking with a nonzero kernel in the `23`
-   pencil satisfies `t_1 = t_2 = t_3 = 0`, by three exact unit-ideal
-   chart certificates; and
-2. on every marking stratum, each genuine binary survivor has a
-   rank-four mode-zero one-marked contraction and therefore cannot
-   extend to a ternary local map.
+This does not close special parameter, slope, or projective boundary
+points, prove that the nine known components are exhaustive, settle the
+remaining partial-row geometries, or resolve the global prize problem.
 
-Thus a relevant pure binary plane cannot be generic on this component
-in a hypothetical `H22` restriction.  All eight certified pure-`P_4`
-component orbits are now generically closed for weighted `H22`, as
-they already were for marked `H31`.
+## Component field and weighted deletions
 
-This does **not** close special parameter or slope divisors, the
-component's projective boundary, all of `H22`, component
-exhaustiveness, or the global prize problem.
-
-This theorem replaces the exploratory finite-field working note
-[`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md),
-whose two modular marking loci are exactly the characteristic-zero
-loci proved here.
-
-## Component function field and weighted pencils
-
-Use the pure-factor bases `(alpha_i,beta_i)` of the component
-theorem, marked by `beta_i(t)=beta_i+t_i alpha_i`, over
+Use the pure-factor bases `(alpha_i,beta_i)=(y_i,x_i)` from the component
+theorem and write
 
 ```text
-K=C(a,b,f)[phi]/(Phi),
+Phi =
+ a^2 b f phi^2+a^2 f^2
+ -b^2 f^2+b^2 phi^2-bf-1 = 0.                    (1)
 ```
 
-with `Phi` the irreducible component equation.  As in the earlier
-weighted `H22` theorems, the two `H22` diagonal-hyperplane pencils
-act on every local row `u` by
+The irreducibility of `Phi` gives the component field
+
+```text
+K=C(a,b,f)[phi]/(Phi).                             (2)
+```
+
+Every marked basis on the four planes is
+
+```text
+beta_i(t)=beta_i+t_i alpha_i.                      (3)
+```
+
+The two weighted `H22` source contractions are
 
 ```text
 D_01^r(u)=(r u_0+u_1,u_2,u_3,u_4),
-D_23^r(u)=(u_0,u_1,r u_2+u_3,u_4),                  (1)
+D_23^r(u)=(u_0,u_1,r u_2+u_3,u_4).                (4)
 ```
 
-with the slope `r` transcendental over the component field.  Write
-`x_i,y_i` for the fifth-coordinate extensions of `alpha_i` and
-`beta_i(t)`, and `z=(x,y)`.  For either pencil the fourteen mixed
-binary coefficients form a linear system `M(t)z=0`; the two diagonal
-coefficients are `A(z)` and `B(z)`, and a genuine binary survivor has
-`A(z)B(z) != 0`.
-
-## A `t`-free elimination of the marked extensions
-
-The mixed word `e_m` (a single `1` in mode `m`) contains `y_m` with a
-coefficient equal to the `3 x 3` weighted permanent of the other
-three `alpha` rows.  These four coefficients are independent of `t`.
-In the `01` pencil they are, modulo `Phi` and up to nonzero constants,
+For either direction let `z=(x_0,...,x_3,y_0,...,y_3)` be the eight
+extension entries.  The fourteen mixed binary coefficients form a
+linear matrix
 
 ```text
-(r-1)(af-1)(af+1)(bf+1)/(b(a^2 f+b)),
-phi(r-1)(bf+1),
-phi(r-1),
-a phi(r+1)(bf+1)(a^2f^2+2bf+1)/(a^2 f+b),           (2)
+M_D(t) z,       M_D(t) in Mat_(14 x 8)(K[t]).      (5)
 ```
 
-and in the `23` pencil
+Let `A_D(z)` and `B_D(z)` be the two diagonal coefficients.  A genuine
+binary neighbour is exactly a vector satisfying
 
 ```text
-(r+1)(af-1)(af+1)(bf+1)/(a^2 f+b),
-(r-1)(bf+1),
-(r-1),
-(r-1)(bf+1)(a^2bf^2+2a^2f+b)/(a^2 f+b).             (3)
+M_D(t)z=0,             A_D(z)B_D(z) != 0.          (6)
 ```
 
-Every factor has a nonzero resultant with `Phi`, so each coefficient
-vanishes **nowhere** on the component, for every marking and both
-`phi`-conjugates.  Solving the four single-`1` words for `y` and
-substituting into the ten remaining mixed words therefore converts
-the binary-extension condition exactly: the kernel of the `14 x 8`
-mixed matrix is nonzero at a marking if and only if the reduced
-`10 x 4` system
+Mixed rows below are ordered lexicographically by the binary words
+other than `0000,1111`; columns are `(x_0,...,x_3,y_0,...,y_3)`.
+
+## The `D_23^r` marking line
+
+Take the seven base rows
 
 ```text
-G(t)x=0                                              (4)
+0,1,3,5,7,8,10
 ```
 
-has a nonzero solution, and every kernel vector arises from such an
-`x`.  The primary verifier checks the vanishing of the substituted
-single-`1` words identically and extracts (4) with exact linearity
-certificates.
-
-## The `01` pencil: one factored minor
-
-Select the four rows of (4) labelled by the mixed words
+and form seven `8 x 8` determinants by adjoining rows
 
 ```text
-0011, 0110, 1001, 1011.
+2,4,6,9,11,12,13.                                 (7)
 ```
 
-Their `4 x 4` determinant satisfies the exact identity
+Let `J_23` be their ideal together with `Phi`, over the coefficient
+field `C(a,b,f,r)`.  Exact characteristic-zero saturation gives
 
 ```text
-det G_(0011,0110,1001,1011) = u * t_1 t_2   (mod Phi),   (5)
+J_23 : t_1^infinity = (1),
+J_23 : t_2^infinity = (1),
+J_23 : t_3^infinity = (1).                        (8)
 ```
 
-where `u` is a nowhere-vanishing unit of the component field: its
-factors lie in the list
+Every rank-drop marking therefore lies on
 
 ```text
-2, a, b, f, r, r-1, r+1, af-1, af+1, bf+1, a^2f+b,
-a^2f^2+2bf+1, b^2f^2+bf+1-a^2f^2, af(r+1)-(r-1), phi,
+t_1=t_2=t_3=0.                                    (9)
 ```
 
-all invertible modulo `Phi`.  The replayed certificate inverts
-`t_1 t_2` and returns the unit ideal, and the determinant's exact
-factorization is recorded in the verifier ledger.  A nonzero kernel
-forces all `4 x 4` minors of (4) to vanish; by (5) this forces
+On (9), impose the fourteen mixed equations, normalize `A_23=1`,
+invert `B_23`, and add the mode-zero one-marked minors in rows
 
 ```text
-t_1 t_2 = 0.                                         (6)
+0137, 0157.                                       (10)
 ```
 
-This is precisely the marking locus observed modularly in the working
-note, now as a one-line function-field identity.
+The resulting ideal is the unit ideal.  Hence no genuine `D_23^r`
+binary neighbour has one-marked rank at most three.
 
-The two sheets of (6) refine the same way.  Restricting (4) to
-`t_1=0` and to `t_2=0`, the rows
+## The degree-five `D_01^r` rank locus
+
+For `D_01^r`, use base rows
 
 ```text
-0011, 1001, 1010, 1011      on t_1=0,
-0011, 0101, 1001, 1011      on t_2=0
+0,1,2,3,7,8,10
 ```
 
-give the exactly factored determinants
+and adjoin
 
 ```text
-det = u_1 (phi(t_0-1)-f) t_2                (mod Phi, t_1=0),
-det = u_2 ((af(r+1)-(r-1))t_1-(r+1)) t_3    (mod Phi, t_2=0),  (5')
+4,5,6,9,11,12,13.                                 (11)
 ```
 
-with `u_1,u_2` nowhere-vanishing units, certified by the same
-inverted-product unit ideals.  Hence the complete `01` marking locus
-is the union of four explicit strata:
+Let `J_01` be the corresponding seven-minor ideal with `Phi`.  The
+`7 x 7` base minor obtained by deleting column `x_3` is nonzero at
+every point of `J_01`:
 
 ```text
-t_1=t_2=0;          t_1=0, phi(t_0-1)=f;
-t_2=t_3=0;          t_2=0, (af(r+1)-(r-1))t_1=r+1.       (6')
+J_01 + (pivot) = (1).                              (12)
 ```
 
-## The `23` pencil: three chart certificates
-
-For each chart `t_1 != 0`, `t_2 != 0`, `t_3 != 0`, the ideal
-generated by all `4 x 4` minors of (4), the component equation
-`Phi`, and the chart inversion is the unit ideal.  Exact
-characteristic-zero calculation proves all three.  Hence every
-marking with a nonzero kernel satisfies
+Consequently the selected minors define the complete rank-at-most-seven
+locus, rather than merely a necessary relaxation.  Exact standard-basis
+reduction gives
 
 ```text
-t_1 = t_2 = t_3 = 0,                                 (7)
+dim J_01=0,
+vdim_(C(a,b,f,r)) J_01=10.                         (13)
 ```
 
-with `t_0` free, again exactly the modular locus of the working note.
+Since `Phi` has degree two, the marking scheme has degree five over
+`K`.  This explains the five survivors in each earlier finite-field
+census without using those censuses as proof.
 
-## Rank-four one-marked contractions
-
-For a ternary `H22` lift, the mode-zero one-marked contraction
-through the other three binary planes must have rank at most three.
-Let `P(z)` be its `8 x 4` coefficient matrix; its last column is
-`z`-free and its first three columns are linear in `z`, so its
-`4 x 4` minors are cubic in `z` and transform covariantly under the
-kernel substitution.
-
-On each of the five marking strata — the four strata (6') for the
-`01` pencil and the line (7) for the `23` pencil — adjoin to the
-reduced system (4) the two minors of `P` in rows
+The same basis contains
 
 ```text
-(0,1,3,7),        (0,1,5,7),
+t_1 t_2.                                          (14)
 ```
 
-and the saturation `w A(z)B(z)-1`.  All five resulting ideals are
-the unit ideal over `K(r)`.  Consequently no genuine binary survivor
-has both selected minors zero: every genuine survivor's mode-zero
-one-marked map has rank four, and no ternary lift exists.
+On `t_1=0`, define
 
-## Why this closes generic weighted `H22`
+```text
+L_3 =
+ f(a^2-b^2)(r-1)t_3
+ -b(bf+1)(a(r+1)+b(r-1)),                         (15)
 
-By the frontier reduction, an `H22` local family needs the `Delta_2`
-image of at least one weighted pencil to be sharp, in every subfamily
-of `(a,b)` supports: for `a b != 0` both pencils are sharp, and for
-exactly one of `a,b` nonzero the corresponding single pencil is
-sharp.  A sharp pencil requires a genuine binary survivor that lifts
-ternarily.  Both pencils are closed above, so the generic point of
-the disjoint mixed-star component supports no weighted `H22`
-incidence in any subfamily.
+L_2 =
+ (bf+1)(
+   a^2 f(r-1)+abf(r+1)+a(r+1)+b(r-1)
+ )t_2
+ -(r+1)(a^2 f+b).                                 (16)
+```
+
+Then
+
+```text
+t_3 L_3 in J_01+(t_1),
+t_3 L_2 in J_01+(t_1).                            (17)
+```
+
+On the generic coefficient field, (14)--(17) give the complete cover
+
+```text
+B_1: t_2=0,
+B_2: t_1=t_3=0,
+B_3: t_1=L_3=L_2=0.                               (18)
+```
+
+The third branch is the nonzero-`t_3` sheet; the coefficients omitted
+from the dense open set make (15)--(16) equivalent to explicit rational
+values of `t_3,t_2`.
+
+## Ternary Fitting obstruction on all five markings
+
+On each branch in (18), impose the mixed equations and the genuine
+binary conditions by
+
+```text
+A_01=1,              w B_01-1=0.                  (19)
+```
+
+The seven maximal minors used to derive the marking cover are
+redundant in these final ideals: `A_01=1` makes `z` nonzero, and
+`M_01(t)z=0` then already forces `rank M_01(t)<=7`.
+
+Let `H_0137,H_0157` denote the two mode-zero one-marked determinants.
+Exact standard-basis calculations give
+
+```text
+B_1 + (mixed,19,H_0137,H_0157) = (1),
+B_2 + (mixed,19,H_0137)        = (1),
+B_3 + (mixed,19,H_0137)        = (1).             (20)
+```
+
+Thus every genuine `D_01^r` binary neighbour has mode-zero one-marked
+rank four.  A ternary lift factors this map through a
+three-dimensional target local space, so its rank would be at most
+three.  Equations (8)--(10) and (12)--(20) exclude both weighted
+directions and prove that the generic marked `H22` fibre is empty.
+
+## Geometric interpretation
+
+The broad elimination in the earlier working note mixed eight extension
+coordinates with four marking coordinates.  The useful translation is
+to the Fitting scheme of the `14 x 8` mixed-coefficient matrix:
+
+```text
+binary neighbour
+  -> rank M_D(t) <= 7
+  -> a small determinantal marking scheme
+  -> one- or two-minor ternary obstruction.
+```
+
+For `D_23^r` the Fitting scheme is one line.  For `D_01^r` it is a
+degree-five finite scheme with a three-chart factor cover.  No ambient
+map tuple, support catalogue, or graph is enumerated.
 
 ## Honest frontier
 
-The theorem is over the function field; denominators and the
-displayed factors exclude special parameter and slope divisors, and
-the component's projective boundary is untreated.  Component
-exhaustiveness for the pure-`P_4` compression locus and the rest of
-`H22` remain open, as does the global prize problem.
+All eight component orbits known at this theorem checkpoint are
+generically closed for both `H31` and weighted `H22`.  A ninth,
+embedded-`P_3` component has since been certified and its generic
+marked fibres are now closed as well.  The next geometric tasks are:
 
-Update: the excluded slope divisors `r in {0, 1, -1, infinity}` of
-both pencils are now closed over the generic component point —
-`r = +-1` at binary level by universal reconstruction kernels and
-two-row unit identities, `r = 0/infinity` by exact identification
-with the four `H31` coordinate frames and transport of the verified
-`H31` theorem:
-[`P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`](P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md),
-`verify_p5_h22_disjoint_mixed_star_slope_r1_binary_obstruction.py`,
-`verify_p5_h22_disjoint_mixed_star_slope_rm1_binary_obstruction.py`,
-`verify_slope_boundary_frame_identifications.py`.  The coupled
-divisor `af(r+1)-(r-1)=0` of the `01` pencil, slope-parameter
-intersections, and the projective boundary remain open.
+1. classify the ninth component's special marked boundaries;
+2. extract the remaining hidden certificate denominators and classify
+   their parameter/slope/projective boundaries;
+3. finish the exceptional mixed-star/triangle and lower-pair-rank
+   strata to decide component exhaustiveness; and
+4. lift a complete `P_5 -> Delta_3` obstruction back into the
+   arbitrary-order blocker hierarchy.
+
+The global Krenn--Gu conjecture remains unresolved.
+
+The two residual-torus divisors `r=1` and `r=-1` are no longer part of
+item 1: on them the mixed kernel forces one binary diagonal to vanish
+before the ternary obstruction is reached.
+The projective slope endpoint `r=0` is no longer open either.  There
+the `D_01` kernel has the same kind of diagonal obstruction, while the
+`D_23` mixed rank drops to six and is excluded by an unsplit two-minor
+Fitting ideal.
+Nor are the twelve coordinate/pivot branches or the principal coupled
+slope graph recorded in the companion boundary theorems.  The four
+new `af=+/-1,a phi=+/-1` branches are no longer open either; in the
+`D_23` direction they satisfy the stronger statement that the genuine
+binary incidence itself is empty.
+The new quadratic branch cut out by
+`a^2 f^2+2bf+1=0` after normalization is also closed by unsplit
+two-minor ideals, so its proof does not assume specialization of the
+degree-five marking cover.
+The three rational graphs
+`(a+b)r+/-(a-b)=0` and `(af-1)r+(af+1)=0` are now closed as well.
+The last graph has a genuine mode-zero degeneracy in `D_01`, but its
+mode-one `0457` minor excludes every ternary lift.
+The remaining visible factors of the first reduced final certificate,
+including two unresolved slope divisors and all null computations, are
+listed in
+[`P5_H22_DISJOINT_MIXED_STAR_CERTIFICATE_DIVISOR_FRONTIER.md`](P5_H22_DISJOINT_MIXED_STAR_CERTIFICATE_DIVISOR_FRONTIER.md).
 
 ## Verification
 
 Run:
 
 ```text
-python verify_p5_h22_disjoint_mixed_star_component_generic_obstruction.py
+tmp/codex_verify_env/Scripts/python.exe \
+  verify_p5_h22_disjoint_mixed_star_component_generic_obstruction.py
 
-python audit_p5_h22_disjoint_mixed_star_component_generic_obstruction.py
+tmp/codex_verify_env/Scripts/python.exe \
+  audit_p5_h22_disjoint_mixed_star_component_generic_obstruction.py
 ```
 
-The primary verifier reconstructs the marked weighted systems for
-both pencils, certifies the `t`-free elimination (2)--(3) with
-nonzero resultants against `Phi`, checks the substituted single-`1`
-words vanish identically, extracts (4) with exact linearity
-certificates, proves the three one-minor locus certificates behind
-(5)--(5') with recorded factorizations, and proves the eight
-unit-ideal certificates behind (7) and the five Fitting strata.
+The primary verifier reconstructs the component family, both weighted
+mixed matrices, the exact determinantal schemes, the degree-five and
+pivot claims, the factor cover, and all four characteristic-zero
+Fitting unit ideals.  The final `D_01` ideals omit the redundant
+maximal minors after diagonal normalization.
 
 The independent audit imports nothing from the primary verifier.  At
-two finite-field component points and two slopes per point, it
-exhausts all affine markings of both pencils, confirms full column
-rank off the loci (6)--(7), confirms rank seven and genuineness on
-them, and replays the rank-four mode-zero contraction and the
-selected minors on every genuine projective direction.  The censuses
-are corroboration only; the theorem is the characteristic-zero
-calculation.
+two generic finite-field component points it exhausts every marked
+basis, recovers the five `D_01` points and the `D_23` line, and checks
+the one-marked rank obstruction on every genuine projective extension
+direction.  That census is corroboration only; the standard-basis
+identities prove the theorem over `C`.

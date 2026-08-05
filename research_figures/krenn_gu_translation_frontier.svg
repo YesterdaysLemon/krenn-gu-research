@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">Krenn--Gu graph-to-geometry research frontier</title>
+  <desc id="desc">A diagram translating a coloured matching graph into a hafnian tensor, a deleted permanent restriction, and a Fitting rank locus. It highlights the new generic H22 exclusion and the remaining global gaps.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071426"/>
+      <stop offset="1" stop-color="#102b3f"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity=".35"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#9bdcff"/>
+    </marker>
+    <style>
+      .title { font: 700 34px system-ui, sans-serif; fill: #f4fbff; }
+      .subtitle { font: 500 17px system-ui, sans-serif; fill: #b7d6e8; }
+      .box-title { font: 700 21px system-ui, sans-serif; fill: #f6fbff; }
+      .body { font: 500 15px system-ui, sans-serif; fill: #cce2ee; }
+      .small { font: 600 13px ui-monospace, SFMono-Regular, Consolas, monospace; fill: #b8f2d8; }
+      .warn { fill: #ffd6a3; }
+      .edge { stroke-width: 7; stroke-linecap: round; opacity: .9; }
+      .node { fill: #f7fbff; stroke: #8ec8e8; stroke-width: 3; }
+    </style>
+  </defs>
+  <rect width="1400" height="820" fill="url(#bg)"/>
+  <text x="70" y="68" class="title">Krenn--Gu: translate the graph before attacking it</text>
+  <text x="70" y="100" class="subtitle">No global counterexample or proof yet. New result: the eighth known pure-compression component has empty generic weighted H₂₂ fibre.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="55" y="150" width="285" height="330" rx="24" fill="#123a52" stroke="#2a789e" stroke-width="2"/>
+    <text x="82" y="190" class="box-title">1 · Coloured matching graph</text>
+    <g transform="translate(72 220)">
+      <line x1="60" y1="30" x2="180" y2="30" class="edge" stroke="#ff6b6b"/>
+      <line x1="60" y1="30" x2="25" y2="130" class="edge" stroke="#65d18b"/>
+      <line x1="60" y1="30" x2="110" y2="205" class="edge" stroke="#6ca8ff"/>
+      <line x1="180" y1="30" x2="230" y2="130" class="edge" stroke="#65d18b"/>
+      <line x1="180" y1="30" x2="145" y2="205" class="edge" stroke="#6ca8ff"/>
+      <line x1="25" y1="130" x2="230" y2="130" class="edge" stroke="#ff6b6b"/>
+      <line x1="25" y1="130" x2="145" y2="205" class="edge" stroke="#65d18b"/>
+      <line x1="230" y1="130" x2="110" y2="205" class="edge" stroke="#65d18b"/>
+      <line x1="110" y1="205" x2="145" y2="205" class="edge" stroke="#ff6b6b"/>
+      <circle cx="60" cy="30" r="15" class="node"/><circle cx="180" cy="30" r="15" class="node"/>
+      <circle cx="25" cy="130" r="15" class="node"/><circle cx="230" cy="130" r="15" class="node"/>
+      <circle cx="110" cy="205" r="15" class="node"/><circle cx="145" cy="205" r="15" class="node"/>
+    </g>
+    <text x="82" y="454" class="body">Every perfect matching contributes</text>
+    <text x="82" y="475" class="body">a complex amplitude—not just support.</text>
+  </g>
+
+  <line x1="350" y1="315" x2="420" y2="315" stroke="#9bdcff" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="430" y="150" width="285" height="330" rx="24" fill="#17344f" stroke="#527eb6" stroke-width="2"/>
+    <text x="457" y="190" class="box-title">2 · Hafnian tensor</text>
+    <text x="457" y="235" class="small">T_W = Σ_M ∏_{ij∈M} W_ij</text>
+    <text x="457" y="278" class="body">Target:</text>
+    <text x="457" y="308" class="small">Δₙ,₃ = e₀⊗ⁿ + e₁⊗ⁿ + e₂⊗ⁿ</text>
+    <path d="M475 355 C515 315 550 395 590 355 S665 395 690 355" fill="none" stroke="#75d8ff" stroke-width="5"/>
+    <text x="457" y="420" class="body">Delete zero-coupled roots:</text>
+    <text x="457" y="448" class="small">P₅ → Δ₃  and  P₄ → pure/Δ₂</text>
+  </g>
+
+  <line x1="725" y1="315" x2="795" y2="315" stroke="#9bdcff" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="805" y="150" width="285" height="330" rx="24" fill="#21394b" stroke="#5b9d92" stroke-width="2"/>
+    <text x="832" y="190" class="box-title">3 · Apolar / Grassmann geometry</text>
+    <text x="832" y="235" class="small">C[X₀,…,X₃]/(X₀²,…,X₃²)</text>
+    <text x="832" y="275" class="body">Pure P₄ compressions become</text>
+    <text x="832" y="298" class="body">zero-product plane incidences in</text>
+    <text x="832" y="326" class="small">Gr(2,4)⁴ × Segre</text>
+    <circle cx="880" cy="390" r="36" fill="none" stroke="#7ed7b4" stroke-width="5"/>
+    <circle cx="1010" cy="390" r="36" fill="none" stroke="#7ed7b4" stroke-width="5"/>
+    <path d="M915 390 C940 350 965 430 975 390" fill="none" stroke="#f3c969" stroke-width="5"/>
+    <text x="832" y="455" class="body">Eight component orbits are known.</text>
+  </g>
+
+  <line x1="1100" y1="315" x2="1170" y2="315" stroke="#9bdcff" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="1180" y="150" width="170" height="330" rx="24" fill="#17483f" stroke="#62c49d" stroke-width="3"/>
+    <text x="1203" y="190" class="box-title">4 · Fitting locus</text>
+    <text x="1203" y="235" class="small">rank M(t) ≤ 7</text>
+    <text x="1203" y="280" class="body">D₂₃: one line</text>
+    <text x="1203" y="310" class="body">D₀₁: degree 5</text>
+    <path d="M1210 355 H1320" stroke="#63e6be" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="1218" cy="400" r="7" fill="#ffd166"/><circle cx="1243" cy="400" r="7" fill="#ffd166"/>
+    <circle cx="1268" cy="400" r="7" fill="#ffd166"/><circle cx="1293" cy="400" r="7" fill="#ffd166"/>
+    <circle cx="1318" cy="400" r="7" fill="#ffd166"/>
+    <text x="1203" y="449" class="small">generic H₂₂ = ∅ ✓</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="55" y="535" width="1295" height="220" rx="24" fill="#111f31" stroke="#425b75" stroke-width="2"/>
+    <text x="82" y="580" class="box-title">What the new theorem closes—and what it does not</text>
+    <rect x="82" y="610" width="565" height="105" rx="16" fill="#123b35"/>
+    <text x="105" y="642" class="body">Closed on a dense open set</text>
+    <text x="105" y="673" class="small">8th component: H₃₁ = ∅ and weighted H₂₂ = ∅</text>
+    <text x="105" y="699" class="small">all 8 known components now generically closed</text>
+    <rect x="675" y="610" width="648" height="105" rx="16" fill="#402d24"/>
+    <text x="698" y="642" class="body warn">Still open</text>
+    <text x="698" y="673" class="small warn">special boundaries · component exhaustiveness · global lift</text>
+    <text x="698" y="699" class="small warn">therefore no valid satisfying graph picture and no global proof yet</text>
+  </g>
+</svg>

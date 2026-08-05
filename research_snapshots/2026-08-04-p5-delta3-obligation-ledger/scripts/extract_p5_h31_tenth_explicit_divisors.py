@@ -34,7 +34,7 @@ import subprocess
 import time
 from pathlib import Path
 
-REPO = Path("/home/user/open-graph-theory-with-prize")
+REPO = Path(__file__).resolve().parents[3]
 HERE = Path(__file__).resolve().parent
 OUT = HERE / "extract_p5_h31_tenth_explicit_divisors.json"
 

@@ -14,6 +14,208 @@ the same conclusion for `n=6`, `d>=3`.  The arbitrary even-`n` lift remains
 open.  The authoritative six-vertex proof map is
 `SIX_VERTEX_CERTIFICATE.md`.
 
+## 2 August 2026: replay/exchange closure and nonalignment families
+
+The source half of the six-token ledger has only `2+1` or `1+1+1`; the
+single-source partition `3` contradicts exceptional-source localization.
+For one anchored three-port coefficient, the five isolated exchange vectors
+have rank four and one primitive relation: the two oriented cycles minus the
+three transpositions.  Its coefficient sum is odd.  Hence all five negative
+binomials are inconsistent, while every proper subset is independent and
+soluble over the complex torus.  This is the exact `B_3`/biased-graph closure
+condition.
+
+The six tokens do not force it.  A `21`-cell `m=6` base has source replay
+`2+1`, mode replay `1+1+1`, exact pure backbones, a conformal excess cycle,
+and residual Hall failure for both internal cycle matchings.  Its two
+exceptional sources but three excess modes rule out any aligned all-excess
+cycle or theta.  Splicing in a cubic three-coloured circulant preserves every
+degree and pure matching and gives the same structural nonalignment for all
+`m>=9`.  Full mixed equations might still force alignment in a genuine
+restriction.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_REPLAY_EXCHANGE_CLOSURE_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_REPLAY_EXCHANGE_CLOSURE_THEOREM.md).
+
+## 2 August 2026: bosonic Plucker defect and Pfaffian boundary
+
+The permanent analogue of the `3 x 3` Plucker relation has one extra term:
+`2 x_13 x_23 x_31 x_32`.  It is exactly zero on the bare minimal theta and
+can be nonzero only when both completing chords occur.  This explains why a
+matchgate or Kuo-condensation argument appeared promising but was not
+automatic: those theories live in a Pfaffian/planar regime where the bosonic
+defect is absent.
+
+An exact `m=6`, `21`-cell support realizes the full conformal `K_3,3` around
+the theta, all six replay tokens, local rank three, pure colour backbones,
+and a `Q(sqrt(2))` mixed zero with nonzero defect.  It is non-Pfaffian by the
+conformal-even-`K_3,3` characterization.  Thus the next useful targets are to
+prove Pfaffian eligibility, force at least one chord sector to vanish, or use
+other coefficients to contradict the defect completion.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_BOSONIC_PLUCKER_DEFECT_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_BOSONIC_PLUCKER_DEFECT_THEOREM.md).
+
+## 2 August 2026: Hamming-face pinching kills the completed bypass
+
+If alternate colours turn selected port rows into singleton diagonal rows,
+the full coefficient is the product of their weights and the complementary
+principal permanent.  This arbitrary-port identity turns the Hamming face
+around one coefficient into a principal-minor ladder.  For the completed
+`K_3,3` bypass, the central permanent and all three principal `2 x 2`
+permanents vanish, so Hamming radius one is genuinely consistent.  Every
+radius-two coefficient is instead a unique nonzero matching.
+
+Local rank plus the three-excess degree ledger automatically supplies the
+needed singleton alternate colour in a coefficient-induced diagonal-excess
+`K_3,3`.  Therefore that entire completed-theta case is excluded at every
+order.  The open step is to force a conformal carrier into this aligned,
+coefficient-induced incidence class.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_HAMMING_FACE_PINCH_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_HAMMING_FACE_PINCH_THEOREM.md).
+
+## 2 August 2026: boundary-entanglement rank covers both mode profiles
+
+For the unspecialized three-port permanent tensor, take the maximum rank of
+its three one-versus-two flattenings.  Tight degree and local-rank accounting
+show that a completed theta has only two excess-mode profiles: `1+1+1` or
+`2+1+0`; the `3+0+0` profile is impossible.  Exact canonical flattenings
+have rank at least two in both surviving cases.  In the degenerate `2+1+0`
+case, the same characteristic-zero factor `2` as the bosonic Plucker defect
+prevents rank collapse.
+
+After exterior decoupling, `Delta_3` supplies only a zero or rank-one
+three-mode slice for `m>=4`, so a completed theta is impossible.  Therefore
+any surviving two-chord case must use nonempty boundary sectors to cancel
+the rank-two port tensor.  Eliminating or controlling those sectors is now
+the precise convolution problem.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_ENTANGLEMENT_RANK_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_ENTANGLEMENT_RANK_THEOREM.md).
+
+## 2 August 2026: the apolar boundary quotient excludes both chords
+
+At each completed-theta mode, quotient the colour space by covectors on
+cells leaving the core.  Boundary-shore balance makes every nonempty sector
+use such a cell, so all nonempty sectors die termwise.  The projected port
+tensor retains boundary-entanglement rank at least two for both `1+1+1` and
+`2+1+0` incidence.
+
+The empty exterior tensor cannot cancel: the port modes consume all three
+degree-surplus units, leaving every exterior mode cubic, and local rank makes
+its mandatory cells one of each colour.  A conformal exterior matching is
+the unique eligible matching at its induced word.  Contracting it leaves a
+rank-at-least-two permanent port tensor versus a zero/rank-one `Delta_3`
+slice.  Therefore simultaneous eligibility of both completing chords is
+excluded for every `m>=4` under the tight aligned conformal completed-theta
+hypotheses.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_APOLAR_BOUNDARY_QUOTIENT_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_APOLAR_BOUNDARY_QUOTIENT_THEOREM.md).
+
+## 2 August 2026: conformal-core alignment and chord completion
+
+An induced conformal cycle carrying the three excess cells collapses to
+`C_4` or `C_6` if its two internal matchings occur in one same-word selected
+backbone coefficient.  The hypothesis is equivalent to three independent
+coloured residual perfect-matching extensions and is not supplied by
+uncoloured conformality.  An explicit 12-vertex support with 21 cells,
+matching-coveredness, local rank three, pure backbones, and an exact aligned
+`C_6` cancellation proves that a single circuit still does not obstruct the
+first surviving layer.
+
+An arbitrary theta has three matching monomials with zero toric ideal.  If
+all three align, localization reduces it to the minimal simple theta.  The
+bare theta would force all three complementary channels nonzero, but its two
+completing chords reproduce the known full `B_3` bypass exactly.  Globally,
+aligned cycle equations `x^lambda=-1` are inconsistent exactly when their
+exchange vectors have an integer dependency with odd coefficient sum.  The
+open task is to force such an odd dependency or isolate one coefficient from
+all nonempty boundary sectors.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_CORE_ALIGNMENT_BOUNDARY.md`](ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_CORE_ALIGNMENT_BOUNDARY.md).
+
+## 2 August 2026: `B_3` phase charts and the nonabelian-holonomy target
+
+The six port terms of one forbidden coefficient form a projective `B_3`
+phase point.  Rebasing at a different distinguished term acts by
+`(R_tau w)_rho=w_(tau rho)/w_tau` and preserves both the zero sum and the
+cubic parity relation.  Thus gluing two selected backbones that merely
+represent the same physical coefficient repeats one equation in a different
+chart.
+
+If a same-word two-switch face has fixed port transports in both directions,
+path independence forces them to commute.  This condition excludes two
+distinct transpositions and a transposition/three-cycle pair.  It is only
+conditional on the missing incidence alignment.  Moreover, one explicit
+matrix over `Q(sqrt(3))` realizes the abstract chart local system for every
+dimension-up-to-three cube with one fixed transposition, and its rebases also
+realize cyclic `C_3` transport.  This is not a construction of distinct
+physical pure backbones.  Hence phase equations alone do not close either
+abelian branch.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_B3_PHASE_HOLONOMY_NOGO.md`](ARBITRARY_PERMANENT_THREE_EXCESS_B3_PHASE_HOLONOMY_NOGO.md).
+
+## 2 August 2026: the six-token odd-ear budget
+
+At support exactly `3m+3`, the physical support is bipartite,
+matching-covered, connected, and of minimum degree three.  Hetyei's theorem
+extends any conformal cycle to the whole graph by `m+3` odd ears.  Every
+vertex is born with degree two and must later occur as an ear endpoint.  The
+ears supply `2m+6` endpoint slots for `2m` mandatory first uses, so exactly
+six slots revisit an already used vertex.  Oddness splits them as three on
+each bipartition shore, and the vertexwise replay count is `deg(v)-3`.
+
+Thus arbitrary order is compressed to six temporal reuse events, located
+on the source side exactly at the exceptional-source incidences.  The mode
+replays record degree surplus and need not occur at excess-cell modes because
+the mandatory cover is not known to be mode-cubic.  The last ear must be a
+single edge.  This does not yet force incompatible port transport: long
+first-use chains and all shore partitions `3`, `2+1`, and `1+1+1` remain
+possible.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_SIX_TOKEN_EAR_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_SIX_TOKEN_EAR_THEOREM.md).
+
+## 2 August 2026: strict-support transfer to root--blocker cuts
+
+The arbitrary permanent theorem `support(P_m -> Delta_3)>=3m+3` now has an
+exact local-to-global graph consequence.  In the five-root/five-tight-blocker
+extraction, the contracted root--blocker cell has at least 18 active
+covectors.  In the arbitrary-order one-port extraction with `r` roots and
+`r+1` blockers, the active root rows plus the nonzero residual ports number at
+least `3r+6`.  Since every active contraction comes from a nonzero graph edge
+block and every nonzero residual port needs a blocker--residual edge,
+
+```text
+e_G(R,B)+e_G(B,Q)<=3r+5
+```
+
+is a graph-only sufficient contradiction.  At minimum ambient order this
+excludes extracted `5 x 5` and `6 x 6` cuts with at most 17 and 20 edges.
+These are bounds on the extracted active cut, not on the total graph.  A
+two-port `P_7` bound of 24 is conditional on the still-unproved synchronized
+factorization.  No theorem here forces the requisite sparse extraction, so
+the global conjecture remains unresolved.  See
+[`GRAPH_EXTRACTION_STRICT_SUPPORT_TRANSFER_COROLLARY.md`](GRAPH_EXTRACTION_STRICT_SUPPORT_TRANSFER_COROLLARY.md).
+
+## 31 July 2026: the corrected projective flat sheet
+
+The Borel-generic flat rank-three-relation triangle is now closed on its
+entire synchronized projective-partner pencil, not only the finite chart.
+For the true marked-kernel normal form
+
+```text
+y=(1,1,1,1),              x=(0,1,p,q),
+```
+
+putting one of the other two planes at the pencil point `A^#` leaves three
+and only three pure curves.  In terms of the four affine ratios
+`(0,1,p,q)`, they say that one of the three disjoint pair sums agrees.  The
+projective sheet has therefore exposed an additive parallelogram, or weak
+Sidon failure, inside the osculating binary-cubic problem.
+
+This is not a counterexample.  On every one of the three curves the product
+image of `(A^#,A+uA^#)` has rank exactly two, so the point leaves the
+rank-three-relation triangle and enters the lower-pair-rank
+Segre/Kronecker boundary.  When both partners equal `A^#` projectively,
+compression forces one quadratic factor while the escape condition forces
+two incompatible affine differences.  That sheet is empty.  Exact primary
+and independent subset-product replays are in
+[`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
+
+The full-support affine-ratio collisions have since been closed as well.
+The honest resonant frontier is now smaller kernel supports, their collision
+intersections, and compatibility with the other exceptional graphs.  The
+global Krenn--Gu conjecture remains open.
+
 At order 14, the equality-architecture factor types
 `C3+C3+C8`, `C3+C4+C7`, `C3+C5+C6`, `C4+C5+C5`,
 `C3+C3+C4+C4`, and `C14` are closed.  The remaining types are
@@ -10973,50 +11175,45 @@ P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md
 explore_p5_h22_disjoint_mixed_star_modular.py
 ```
 
-The suggested continuation is symbolic linear algebra on the
-`14 x 8` mixed coefficient matrix: expose its kernel line by maximal
-minors, derive the observed marking equations over the component
-function field, and then factor a small mode-zero Fitting minor.
+### Generic weighted `H22` fibre on the disjoint mixed-star component
 
-### Generic weighted `H22` theorem on the eighth component
+The modular pattern above has now been promoted to an exact
+characteristic-zero theorem without repeating the broad elimination
+that timed out.
 
-The suggested continuation is now carried out exactly, and the
-eighth component's generic weighted `H22` incidence is closed over
-the component function field with a transcendental slope.
-
-The key structural step is a `t`-free elimination.  In either
-weighted pencil, the mixed word `e_m` contains the marked extension
-`y_m` with coefficient equal to the `3 x 3` weighted permanent of the
-other three `alpha` rows.  These four coefficients are independent of
-the marking and have nonzero resultants against `Phi`, so they vanish
-nowhere on the component.  Solving the four single-`1` words for `y`
-converts the `14 x 8` mixed system into an exact `10 x 4` system
-`G(t)x=0` whose kernel is nonzero exactly when the full binary
-extension kernel is.
-
-For `D_01`, the `4 x 4` minor of `G` in rows `0011,0110,1001,1011`
-reduces modulo `Phi` to a nowhere-vanishing unit times `t_1 t_2`;
-the sheet restrictions `t_1=0` and `t_2=0` factor further, giving the
-four exact strata
+For each weighted direction `D_01^r,D_23^r`, form the `14 x 8` matrix
+of mixed binary coefficients.  On `D_23^r`, seven selected `8 x 8`
+minors force
 
 ```text
-t1=t2=0;          t1=0, phi*(t0-1)=f;
-t2=t3=0;          t2=0, (a*f*r+a*f-r+1)*t1=r+1.
+t_1=t_2=t_3=0.
 ```
 
-For `D_23`, the ideal of all `4 x 4` minors of `G` plus `Phi` is the
-unit ideal on each chart `t_1!=0`, `t_2!=0`, `t_3!=0`, so kernel
-markings satisfy `t_1=t_2=t_3=0` with `t_0` free.  Both loci are
-exactly the finite-field patterns of the working note.
+Two mode-zero one-marked minors, together with the two nonzero binary
+diagonals, then generate the unit ideal.
 
-On all five strata, adjoining the mode-zero one-marked minors in rows
-`(0,1,3,7)` and `(0,1,5,7)` and inverting the product of the two
-diagonal coefficients gives the unit ideal.  Hence every genuine
-binary survivor of either pencil has a rank-four mode-zero one-marked
-contraction and admits no ternary lift.  Since every `H22` subfamily
-requires a sharp `Delta_2` image in at least one pencil, the generic
-weighted `H22` incidence of the disjoint mixed-star component is
-empty:
+On `D_01^r`, a different seven-minor ideal is zero-dimensional of
+vector-space dimension ten over `C(a,b,f,r)`.  Since the component
+equation is quadratic in `phi`, this is a degree-five marking scheme
+over the component field.  One `7 x 7` pivot is invertible on the
+whole scheme, so the selected minors define the exact rank-drop locus.
+The basis contains `t_1*t_2`; on `t_1=0`, two further factored
+relations give the complete cover
+
+```text
+t_2=0,
+t_1=t_3=0,
+t_1=L_3=L_2=0.
+```
+
+One- or two-minor ternary Fitting ideals are unit on all three charts.
+Thus the generic weighted `H22` fibre of the eighth component is empty.
+All eight currently certified pure-`P_4` component orbits are now
+generically closed for both `H31` and weighted `H22`.
+
+This remains a dense-open theorem.  Special parameter/slope/projective
+boundaries, component exhaustiveness, the complete `P_5 -> Delta_3`
+obstruction, and the global prize conjecture remain unresolved.
 
 ```text
 P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md
@@ -11024,17 +11221,3460 @@ verify_p5_h22_disjoint_mixed_star_component_generic_obstruction.py
 audit_p5_h22_disjoint_mixed_star_component_generic_obstruction.py
 ```
 
-The independent modular audit exhausts every affine marking at two
-finite component points and two clean slopes per point, confirming
-full column rank off the loci, rank seven on them, and the rank-four
-one-marked contraction on every genuine direction.  Slopes reducing
-into the excluded divisor locus (`r=0`, `r=+/-1`, and finitely many
-further divisor slopes per finite point) genuinely deviate, as the
-function-field theorem inverts those factors.
+### Equal- and opposite-weight slope fibres
 
-All eight certified pure-`P_4` component orbits are now generically
-closed for both marked `H31` and weighted `H22`.  The remaining
-`H31`/`H22` targets are the special parameter/slope divisors, the
-projective boundaries, and component exhaustiveness; the `240 + 270`
-fail-closed signatures stay in the census and the global prize
-conjecture remains unresolved.
+The generic weighted theorem uses a determinantal marking chart that
+degenerates at `r^2=1`.  Specializing before elimination makes both
+slope fibres simpler.
+
+For each direction `D_01,D_23`, let `M_D(t)` be the fourteen-row mixed
+coefficient matrix and `A_D,B_D` the two binary diagonals.  Over the
+generic component-parameter field, exact standard bases give
+
+```text
+r= 1:  M_D(t)z=0  implies A_D(z)=0,
+r=-1:  M_D(t)z=0  implies B_D(z)=0.
+```
+
+Equivalently, normalizing the indicated diagonal to one makes each of
+the four mixed-incidence ideals the unit ideal.  Since a binary
+`Delta_2` neighbour requires both diagonals nonzero, neither slope
+admits even a binary extension.  No one-marked ternary minor is needed.
+
+```text
+P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md
+verify_p5_h22_disjoint_mixed_star_equal_opposite_weight_obstruction.py
+audit_p5_h22_disjoint_mixed_star_equal_opposite_weight_obstruction.py
+```
+
+### Twelve parameter/coordinate boundary branches
+
+Factoring `Phi` on
+
+```text
+a^2-b^2=0,  bf+1=0,  b=0,  f=0,  a=0,  phi=0
+```
+
+produces ten rational rank-two branches and two irreducible quadratic
+branches.  The two additional branches on `bf=-1,b phi=+/-1` have
+`y_2=0` and lie outside the all-rank-two stratum.
+
+For both weighted directions, twenty-four exact ideals combine genuine
+binary normalization with one or two mode-zero one-marked minors.  The
+standard rows `0137,0157` close every branch except `f=0` in direction
+`D_01`; there the finite survivor cover identifies `0157,0457`, and
+that alternate characteristic-zero ideal is unit.
+
+```text
+P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md
+verify_p5_h22_disjoint_mixed_star_parameter_pivot_boundary_obstruction.py
+audit_p5_h22_disjoint_mixed_star_parameter_pivot_boundary_obstruction.py
+```
+
+### Principal coupled slope-parameter boundary
+
+The remaining visible coefficient in the degree-five cover is
+
+```text
+C=r(a^2 f+abf+a+b)+(-a^2 f+abf+a-b).
+```
+
+On the chart where the first parenthesis is nonzero, `C=0` is a
+rational slope graph.  Direction `D_01` is excluded by the mode-one
+minor `0457`, while `D_23` is excluded by the mode-zero minor `0137`.
+If the denominator also vanishes, the equations force
+`bf=-1,a=+/-b`, already in the parameter-boundary theorem.
+
+```text
+P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md
+verify_p5_h22_disjoint_mixed_star_coupled_slope_boundary_obstruction.py
+audit_p5_h22_disjoint_mixed_star_coupled_slope_boundary_obstruction.py
+```
+
+The suggested continuation is to classify the special
+parameter/slope/projective boundaries still hidden in the exact
+standard-basis certificates, then finish the exceptional
+mixed-star/triangle and lower pair-rank strata needed for component
+exhaustiveness.
+
+### Symbolic pair pencils and triangle holonomy
+
+The lower-pair-rank frontier has now been translated away from
+permanent ideals.
+
+For two local planes `U,V` with `dim(UV)=2`, the projective
+multiplication kernel is a line in `P(U tensor V)=P^3`.  The rank-one
+relations form the Segre quadric.  A squarefree linear form has
+degree-one annihilator dimension at most one, so the kernel line cannot
+be a Segre ruling.  It is therefore secant or tangent.  The secant
+case reduces to the existing `2+2`/`1+3` block centers.  Exact-rank-two
+tangency can occur only when
+
+```text
+U=V=span(X_p,w),       |supp(w)|>=2.
+```
+
+This is a computation-free classification of a single rank-two pair
+kernel:
+
+```text
+P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md
+verify_p4_rank_two_pair_kernel_geometry.py
+```
+
+For a triangle of rank-three pair images whose three relation matrices
+have rank two, the three relations carry a multiplicative holonomy.
+Writing their nonconstant coefficients as `b_ij,c_ij`, put
+
+```text
+Omega=c_12*b_13*c_23+b_12*c_13*b_23.
+```
+
+On `Omega!=0`, three Borel row shifts remove all constant terms and
+the same determinant `-Omega` forces all six mixed triple products to
+vanish.  Each cross-product is annihilated by the opposite local
+plane.  Its degree-two multiplication catalecticant is a nonzero
+symmetric zero-diagonal matrix of rank two, hence a weighted cut.
+The only cut types are `1+3` and `2+2`; the latter has one tetrad
+equation.  The full-support all-`1+3` compatibility is now closed
+below.  At that checkpoint the resonant divisor, cycles containing
+`2+2`, and proper cut-support boundaries remained; the following two
+sections close the latter two, leaving only resonance.
+
+```text
+P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md
+verify_p4_nonresonant_rank_two_triangle_cut_reduction.py
+```
+
+### Full-support `1+3` triangle cycles are empty
+
+Let `Q_ij` be the three nonzero bridge quadrics on the nonresonant
+rank-two-relation triangle, and assume each is a full-support `1+3`
+cut with singleton label `s_k`.
+
+For a representative
+
+```text
+q=q_12 X_1X_2+q_13 X_1X_3+q_23 X_2X_3,
+```
+
+any factorization `q=uv` is either internal to `X_0=0` or has
+
+```text
+v_j=-(v_0/u_0)u_j.
+```
+
+The identity
+
+```text
+u_0 q_jk+2v_0u_ju_k=u_je_k+u_ke_j
+```
+
+shows that the second sheet is fully supported.  But
+`Ann_R1(Q_ij)` is a plane inside the singleton coordinate hyperplane.
+Every bridge factor comes from one of these planes, so only the
+internal sheet can occur.
+
+Cyclically every `U_i` lies in all three singleton hyperplanes.  Three
+distinct labels leave dimension one; two distinct labels leave one
+coordinate two-plane, whose product has rank one.  Thus all labels
+coincide.  The whole restriction then suspends a pure `P_3`
+restriction.  Perfect pairing in the three-variable squarefree
+algebra gives
+
+```text
+rank(U_iU_j)+2-3 <= 1,
+```
+
+so every pair rank is at most two, contradicting the triangle
+hypothesis `rank(U_iU_j)=3`.
+
+Hence the full-support all-`1+3` nonresonant triangle is empty.  Its
+forced rank-drop closure is the already known embedded-`P_3`
+component, whose complete marked projective `H31` fibre is empty.
+At this checkpoint, cycles containing a `2+2` bridge, proper support
+boundaries, and the resonant divisor remained.
+
+```text
+P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md
+verify_p4_nonresonant_one_three_triangle_obstruction.py
+audit_p4_nonresonant_one_three_triangle_obstruction.py
+```
+
+### Full-support `2+2` bridges are incompatible with the triangle
+
+Write a full `2+2` bridge as
+
+```text
+q=ab
+```
+
+across two coordinate binary blocks `A,B`, and let `a_bar,b_bar` be
+the opposite binary directions.  Then
+
+```text
+Ann_R1(q)=span(a_bar,b_bar).
+```
+
+There are two short lemmas.
+
+First, every factorization `q=uv` contains an anchor factor in
+`C*a` or `C*b`.  Decompose the factors into their `A,B` blocks.  The
+cross-block matrix has rank one, and
+
+```text
+det(u_A tensor v_B+v_A tensor u_B)
+ =-det(u_A,v_A)det(u_B,v_B).
+```
+
+One pair of same-block pieces is therefore dependent.  Its direction
+is the corresponding full-support anchor; the internal zero-product
+equation then kills one piece, leaving the other whole factor on the
+opposite anchor line.
+
+Second, every plane `V` whose product with
+`W=span(a_bar,b_bar)` has rank three and unique rank-two relation has
+the crossed-graph form
+
+```text
+V=span(
+ alpha*a+tau*b_bar,
+ -tau*a_bar+beta*b
+),
+tau!=0.
+```
+
+The formula comes by splitting
+`a_bar*v+b_bar*w=0` into its internal and cross-block pieces.  If
+`tau=0`, the two products vanish separately and the kernel has
+dimension at least two.  For `tau!=0`, the displayed plane contains
+neither anchor `a` nor anchor `b`.
+
+Now take `Q_12=q`.  Its opposite plane is `U_3=W`; the two remaining
+rank-three edges put both `U_1,U_2` in crossed-graph form, so neither
+contains an anchor.  But the bridge factorization
+`q=b_12*y_1*x_2` requires one.  Contradiction.
+
+Together with the all-`1+3` theorem, every full-support nonresonant
+rank-two-relation triangle is empty.  At this checkpoint, proper
+bridge-support boundaries and the resonant divisor remained.
+
+```text
+P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md
+verify_p4_nonresonant_two_two_triangle_obstruction.py
+audit_p4_nonresonant_two_two_triangle_obstruction.py
+```
+
+### Proper cut supports close the nonresonant triangle
+
+A proper nonzero `1+3` cut has one or two triangle edges.  A proper
+`2+2` outer-product cut has support size two or one.  Thus, up to
+coordinates, every remaining bridge is
+
+```text
+q=X_0X_1
+```
+
+or
+
+```text
+q=X_0(alpha X_1+beta X_2),       alpha beta!=0.
+```
+
+For the single edge, `Ann_R1(q)=span(X_0,X_1)`.  If `V` is a
+rank-three partner with rank-two kernel relation, choose its basis
+`v,w` so that
+
+```text
+X_0v+X_1w=0.
+```
+
+Coefficient comparison forces `v,w` back into
+`span(X_0,X_1)`, whose product with the annihilator has dimension at
+most one.  Contradiction.
+
+For the two-edge star, put
+
+```text
+b=alpha X_1+beta X_2,
+b_bar=alpha X_1-beta X_2.
+```
+
+Then `Ann_R1(q)=span(X_0,b_bar)` lies in `X_3=0`.  The partner
+relation
+
+```text
+X_0v+b_bar*w=0
+```
+
+has `X_0X_3`, `X_1X_3`, and `X_2X_3` coefficients
+`v_3,alpha*w_3,-beta*w_3`, so every partner lies in `X_3=0` as well.
+All three triangle planes therefore lie in that hyperplane.  The
+`P_4` restriction suspends a nonzero pure `P_3`, and perfect pairing
+gives pair rank at most two, contradicting the assumed rank three.
+
+This closes every proper cut support.  Together with the two
+full-support theorems, the complete nonresonant rank-two-relation
+triangle is empty.  Only the trivial-holonomy resonant divisor
+remains.
+
+```text
+P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md
+verify_p4_nonresonant_degenerate_cut_triangle_obstruction.py
+audit_p4_nonresonant_degenerate_cut_triangle_obstruction.py
+```
+
+### The resonant triangle is an affine connection
+
+On the remaining divisor `Omega=0`, active-row and relation scalings
+normalize the three rank-two relations to
+
+```text
+A_ij*y_i*y_j+y_i*x_j-x_i*y_j=0.
+```
+
+Borel shifts `x_i -> x_i+s_i*y_i` change
+`A_ij -> A_ij+s_i-s_j`.  The unique residual class on the cycle is
+
+```text
+delta=A_12+A_23-A_13.
+```
+
+For `delta!=0`, multiplying the three relations first by the remaining
+kernel row and then by the remaining active row gives two copies of
+the same cycle identity.  In the notation
+
+```text
+Y=yyy,
+K_i=(one active),
+J_i=(two active),
+X=xxx,
+```
+
+one obtains
+
+```text
+Y=K_1=K_2=K_3=0,
+J_1=J_2=J_3=J.
+```
+
+Thus the `R_3`-valued triple tensor is the tangent first jet
+
+```text
+J(yxx+xyx+xxy)+Xxxx.
+```
+
+Moreover each kernel-pair product `q_ij=y_i*y_j` is nonzero and is
+annihilated by the full opposite plane.  Its zero-diagonal
+catalecticant has rank exactly two, so the three `q_ij` form a cyclic
+`1+3`/`2+2` cut system.  Purity adds `U_0*J=0` and a nonzero
+`U_0*X` covector.
+
+For `delta=0`, one gauge kills all `A_ij`.  The three relations become
+`y_i*x_j=x_i*y_j`, and every triple product depends only on Hamming
+weight.  Multiplication factors through
+
+```text
+Sym^3(C^2) -> R_3,
+y^3,y^2x,yx^2,x^3 -> Y,K,J,X.
+```
+
+The perfect `R_1 x R_3` pairing and purity imply
+
+```text
+dim span(Y,K,J)<=2,
+X notin span(Y,K,J).
+```
+
+The last triangle divisor is therefore a tangent-cut incidence versus
+a compressed binary-cubic map.  This is a reduction, not yet an
+exclusion.
+
+```text
+P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md
+verify_p4_resonant_rank_two_triangle_affine_holonomy.py
+audit_p4_resonant_rank_two_triangle_affine_holonomy.py
+```
+
+### Ninth pure component from the common `1+3` boundary
+
+Following the common `1+3` cut rather than discarding its pair-rank
+drop exposes a new component.  Put three modes in `X_0=0` and use the
+pure-`P_3` sign chart with normals
+
+```text
+(1,A,B),       (1,-A,-B),       (1,-A,B).
+```
+
+Let the fourth mode be an arbitrary plane not contained in `X_0=0`.
+In fixed Grassmann charts the resulting six-parameter family has only
+
+```text
+T_0010=-2/B,       T_0110=-2A/B.
+```
+
+Its family tangent has rank six.  At the rational point
+
+```text
+(r,s,t,u,A,B)=(3/2,1/2,1,2,2,3),
+```
+
+the Segre-incidence Jacobian has rank fourteen and the selected
+`14 x 14` minor is `114688/2187`.  Thus the family closure is a
+generically smooth six-dimensional component.  Its generic pair
+profile
+
+```text
+(4,4,4,2,2,2)
+```
+
+separates it from the earlier six-dimensional component and all seven
+fivefolds.  The certified lower bound is now nine pure-`P_4`
+component orbits.
+
+```text
+P4_EMBEDDED_P3_PURE_COMPONENT.md
+verify_p4_embedded_p3_pure_component.py
+audit_p4_embedded_p3_pure_component.py
+```
+
+The ninth component's generic marked `H31` fibre is now excluded in
+
+```text
+P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h31_embedded_p3_component_generic_obstruction.py
+audit_p5_h31_embedded_p3_component_generic_obstruction.py
+```
+
+On the dense normalization `A B r!=0`, the three deletions retaining
+source coordinate zero have identically zero all-alpha diagonal.
+Deleting source coordinate zero gives the apolar insertion tensor
+
+```text
+D_w(u_1,u_2,u_3)
+ =sum_i ell_i(u_i) P_3(w,u_j,u_k).
+```
+
+Its seven unwanted coefficients form a `7 x 6` matrix.  The maximal
+minors cut out exactly the signed lines
+
+```text
+p-q-rho=0,       p-q+rho=0,       p+q+rho=0
+```
+
+plus the three coordinate points.  Away from nine exceptional
+projective points, the three line kernels are respectively the
+coordinate covectors `z_2,z_3,z_1`; all have
+`x_1=x_2=x_3=0`.  A generic projected mode-zero line avoids those nine
+points, with exact discriminant
+
+```text
+-T(T-1)(T+1)(ST-U)
+ (ST-T-U)(ST+T-U)(ST-U-1)(ST-U+1).
+```
+
+Thus every possible mixed kernel kills the second binary diagonal.
+No ternary/Fitting continuation is needed.  This closes the generic
+`H31` fibre for all nine certified components.
+
+The generic weighted `H22` fibre is now excluded in
+
+```text
+P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h22_embedded_p3_component_generic_obstruction.py
+audit_p5_h22_embedded_p3_component_generic_obstruction.py
+```
+
+After restoring the weighted source-torus slope `r`,
+
+```text
+D_01^r(z,e)=(r z_0+z_1,z_2,z_3,e),
+D_23^r(z,e)=(z_0,z_1,r z_2+z_3,e).
+```
+
+The `D_23` all-alpha matrix has a zero first column because every
+`alpha_i` has source-coordinate-zero entry zero.  The `D_01`
+direction is the same `P_3` insertion map as in `H31`, now over
+
+```text
+P span((1,S,U),(r,1,T)).
+```
+
+Its exact nine-point avoidance discriminant is
+
+```text
+(rS-1)(rU-T)(ST-U)
+(rS-rU+T-1)(rS+rU-T-1)
+(rS-ST+U-1)(rS+ST-U-1)
+(rU-ST-T+U)(rU+ST-T-U).
+```
+
+On its complement, the only rank-jump kernels again have all
+`x_i=0`, so the other binary diagonal vanishes.  Both `H22`
+directions therefore fail before ternary rank is imposed.
+
+All nine currently certified pure-`P_4` components now have empty
+generic marked `H31` and weighted `H22` fibres.  Their special
+boundaries, component exhaustiveness, and the global Krenn--Gu
+conjecture remain unresolved.
+
+### Complete normalized ninth-component `H31` boundary
+
+The nine insertion points have now been classified and closed in
+
+```text
+P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md
+verify_p5_h31_embedded_p3_component_normalized_boundary.py
+audit_p5_h31_embedded_p3_component_normalized_boundary.py
+```
+
+The exact kernels at the six line-special points are coordinate
+planes such as `<x_2,z_2>` or `<z_2,z_3>`; the three coordinate-point
+kernels are one-dimensional.  Imposing the other mode-zero slice as a
+truncated Segre tensor leaves exactly the projected-plane strata
+
+```text
+T=1,U=S+1;       T=1,U=S;       T=0,U=1.
+```
+
+They contain five marked binary families.  Four are excluded by pairs
+of one-marked minors with factors among
+
+```text
+y, h, h-1, S, S+1, Sy+1, y+1.
+```
+
+At the sole deepest point `S=0,y=1`, all four neighboring one-marked
+maps have rank three, but stacking the mode-one equations for source
+contractions `e_0` and `e_4` gives the five-row determinant
+
+```text
+det rows(0,2,7,10,14)=8.
+```
+
+Thus the third target row vanishes globally, contradicting local rank
+three.  The full normalized affine chart is closed for `H31`; the
+omitted normalization/projective boundary remains.  The normalized
+weighted `H22` boundary is closed by the two subsequent theorems below.
+
+### Rank-two projected-line weighted boundary of the ninth component
+
+The special weighted boundary has now been classified without a broad
+elimination in
+
+```text
+P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md
+verify_p5_h22_embedded_p3_component_rank_two_line_boundary.py
+audit_p5_h22_embedded_p3_component_rank_two_line_boundary.py
+```
+
+For projected line
+
+```text
+Lambda_r=P span((1,S,U),(r,1,T)),
+```
+
+the insertion arrangement leaves exactly four rank-two strata:
+
+```text
+U=S+1,T=r+1;   U=S,T=1;   U=1,T=r;   S=r=-1.
+```
+
+Their truncated-Segre equations leave six marked binary families.
+Small one-marked minors factor into complementary covers.  At the two
+deepest points every neighboring map has rank three, but stacking the
+weighted source contraction with the extension direction gives
+
+```text
+det=8,             det=-8.
+```
+
+Thus the weighted marked fibre is empty on every rank-two projected
+line.  The remaining chart frontier is precisely the collapse
+
+```text
+rS=1,             T=rU,
+```
+
+where the two projected rows are proportional and `Lambda_r` becomes
+a point.  This is not covered by the line-arrangement argument.
+
+### Complementary-pencil closure of the rank-one collapse
+
+The collapse is now closed in
+
+```text
+P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md
+verify_p5_h22_embedded_p3_component_rank_one_collapse.py
+audit_p5_h22_embedded_p3_component_rank_one_collapse.py
+```
+
+The first mixed coefficient forces `t_0=-r`.  The `D_01` beta row then
+projects entirely to the extension coordinate, with beta diagonal
+`-2y_0`.  Compatibility with `H22` requires the other marked slice
+`D_23` to be nonzero pure.  After undoing the harmless markings in the
+last three modes, its seven unwanted coefficients form a `7 x 6`
+insertion pencil `N_S`.  Four nonzero maximal minors are
+
+```text
++/-4(S-1)^2(S+1)^2/S^5.
+```
+
+Hence only `S=+/-1` can survive.  At `S=1`,
+
+```text
+ker N_1=<x_3,z_3>,
+```
+
+but the desired `D_23` pure coefficient vanishes on the kernel.  At
+`S=-1`,
+
+```text
+ker N_{-1}=<z_1,z_2>,
+```
+
+so every alpha extension vanishes and the required `D_01` alpha
+diagonal is zero.  Thus the collapse has no binary `H22`
+compatibility.  Together with the rank-two theorem, the entire
+normalized affine weighted `H22` chart of the ninth component is now
+empty.  The omitted normalization/projective boundary remains.
+
+### Support-two `H31` normalization divisor of the ninth component
+
+The divisor `A=0`, `B!=0` has now been closed exactly in
+
+```text
+P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md
+verify_p5_h31_embedded_p3_component_support_two_boundary.py
+audit_p5_h31_embedded_p3_component_support_two_boundary.py
+```
+
+The three nonzero-mode planes specialize to the support-two pure
+`P_3` sign chart with residual source-torus scalar `C=1/B`.  Its
+beta-slice extension problem is the singular `7 x 6` pencil
+`N_C(p,q,rho)`.  A maximal minor is
+
+```text
+4 C q (Cp-rho)^2 (Cp+rho)^3,
+```
+
+but the all-alpha diagonal and the first unwanted row sharpen this:
+every genuine binary family lies on `rho=-Cp`.  If `p!=0`, the
+alpha-slice equations reduce to
+
+```text
+t2=0,  z1=2ht1,  z3=2ht3,  t1 t3=0,
+```
+
+and a neighboring one-marked determinant
+
+```text
+16 C^2 h^2 p^2 (CP+R) D
+```
+
+plus the transverse pure entry `-2Cp` excludes it.  At the coordinate
+endpoint `p=rho=0`, the third root contraction has mixed coefficient
+`(C+1)X`, leaving only the matrix-pencil resonance `C=-1`.
+
+The resonant fibre has two invariant subcases.  When `P+R!=0`, three
+factored one-marked covers leave one point, where a stacked map has
+determinant
+
+```text
+-8 h^2 (P-R)^2 (P+R).
+```
+
+When `P+R=0`, the root equations force the antipodal ratios
+`x=1/2,d=-1/2`.  Two one-marked covers leave `k=Q=0`; there the
+pure-plus-neighbor kernel is `<(0,0,-2,0,1)>`, and its third-root
+`BBBG` coefficient is the fixed integer `4`.  Hence the entire
+support-two divisor is empty for `H31`.
+
+This closes one genuine normalization face rather than a coordinate
+artifact.  At that checkpoint, the other mode-zero-plane chart and
+the projective compactification remained open, as did component
+exhaustiveness and the global conjecture.  The next section closes the
+former chart.
+
+### The `r=0` tangent--Segre boundary of the ninth component
+
+The remaining affine `H31` normalization divisor has now been closed
+in
+
+```text
+P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md
+verify_p5_h31_embedded_p3_component_r_zero_boundary.py
+audit_p5_h31_embedded_p3_component_r_zero_boundary.py
+```
+
+Assume `A B!=0,r=0`.  If `t!=0`, the signed source permutation
+
+```text
+X2'=-X3,        X3'=-X2
+```
+
+sends `r'=-t!=0` and exchanges the two nonzero pure-`P_3` sign
+parameters.  This is the already closed normalized chart.  The
+genuine corner is therefore `r=t=0`, where mode zero contains the
+coordinate point `e0`.
+
+After marking the last three beta rows by `a,b,c`, the six mixed
+coefficients of the alpha insertion tensor have determinant
+
+```text
+-4(S-U-1)(S+U-1)(S+U+1) Phi.
+```
+
+Here
+
+```text
+Phi =
+ S{U[(S-U)(a+1)(b+1)-a(b+1)+1]+b(S+1)}
+ +c{Sb(S+U+1)+Ua(1-S-U)}.
+```
+
+This is the pullback of a tangent--secant incidence for the
+`P1 x P1 x P1` Segre variety.  The three signed linear sheets have
+generic kernels `<y3>,<y2>,<y1>`, all with zero `AAA`.  On the
+residual sheet, a cofactor kernel has diagonal
+
+```text
+2 S U (S-U-1)(S+U-1)(S+U+1).
+```
+
+Three neighboring determinants have residual factors
+
+```text
+b+1,       a+1,       a,
+```
+
+so they cover the whole open sheet.
+
+The boundary is still exact and small.  The `S=0` and `U=0` parts
+give four branches with direct nonzero minors.  On each signed plane,
+the associated `6 x 5` Fitting ideal has three branches, for nine
+families total; every family has a one-marked determinant equal to
+`8Y^2` times a chart unit.  Only five base points remain.  Two force
+`AAA=0`; the other three have nine genuine marking families.  Seven
+have constant determinants `4Y^2` or `8Y^2`, while the last two are
+covered by `a,a+1` or `b,b+1`.
+
+Thus the complete `r=0`, `A B!=0` marked fibre is empty.  Together
+with the normalized theorem and the support-two `A=0` theorem, the
+whole affine ninth-component family `B!=0` is empty for `H31`.
+At that checkpoint only the projective compactification remained for
+this component; component exhaustiveness and the global conjecture
+remained open.
+
+### Projective normal support closes the ninth component
+
+The final compactification is now closed in
+
+```text
+P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md
+verify_p5_h31_embedded_p3_component_projective_closure.py
+audit_p5_h31_embedded_p3_component_projective_closure.py
+```
+
+The intrinsic base is not the inverse-pivot coordinate `B`; it is the
+homogeneous absolute normal
+
+```text
+[C:A:B] in P2
+```
+
+with oriented sign-face normals
+
+```text
+(C,A,B),      (C,-A,-B),      (C,-A,B).
+```
+
+On `C!=0`, the only nonzero pure-`P_3` coefficients are
+
+```text
+2 A C^2,       -2 B C^2.
+```
+
+If the homogeneous normal has support one, all three projective
+normals coincide and the pure `P_3`, hence embedded `P_4`,
+restriction is zero.  Such a point cannot be the nonzero pure root
+contraction required by `Delta_3`.
+
+Every point of support at least two has two nonzero normal
+coordinates.  A source-coordinate permutation moves them to the
+common slot `C'` and sign slot `B'`; after projective rescaling,
+`C'=1,B'!=0`.  Signed source changes and a last-three-mode permutation
+restore the canonical oriented face.  Thus every nonzero projective
+point lies in a symmetry copy of the affine chart already closed.
+
+Therefore the ninth pure-`P_4` component's complete marked `H31`
+fibre is empty.  This is a full component theorem, but not a proof
+that the then-known nine pure components are exhaustive and not a global
+solution of the Krenn--Gu problem.
+
+### Nonzero additive holonomy is empty
+
+The tangent branch of the resonant triangle reduction is now closed
+in
+
+```text
+P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md
+verify_p4_resonant_nonzero_additive_holonomy_obstruction.py
+audit_p4_resonant_nonzero_additive_holonomy_obstruction.py
+```
+
+When `delta!=0`, the three nonzero products
+
+```text
+q_ij=y_i y_j
+```
+
+have catalecticant rank two and the full opposite plane as their
+annihilator.  They are therefore cut quadrics.  A proper cut support
+is excluded by the earlier partner-rank argument.  A full `2+2` cut
+is excluded because its factorization `y_i y_j` must use an anchor,
+whereas every rank-three crossed partner avoids both anchors.
+
+If all three cuts have full `1+3` support, each factorization is on
+the internal sheet: the other sheet is fully supported, while the
+factors already lie in coordinate hyperplanes.  Three distinct
+singleton labels collapse the factors to a coordinate line, and two
+labels collapse them to a coordinate two-plane.  Hence the labels
+coincide.  All three local planes then lie in one coordinate
+hyperplane, so the restriction suspends a pure `P_3`.  Perfect
+pairing gives pair-image rank at most two, contradicting the triangle
+hypothesis.
+
+Thus
+
+```text
+Omega!=0                 empty,
+Omega=0, delta!=0        empty,
+Omega=0, delta=0         open flat binary-cubic branch.
+```
+
+This is a symbolic cut/duality proof and uses no component search.
+
+### The one-kernel-zero flat chart is a binary-cubic problem
+
+The one-kernel-zero, otherwise-distinct part of the last resonant
+branch is closed in
+
+```text
+P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md
+verify_p4_resonant_flat_kernel_zero_binary_cubic.py
+audit_p4_resonant_flat_kernel_zero_binary_cubic.py
+```
+
+A kernel row with one zero coordinate and three otherwise-distinct
+projective columns has the Borel normal form
+
+```text
+y=(1,0,1,1),       x=(0,1,1,lambda).
+```
+
+Every synchronized partner lies in the exact pencil `A+t A_sharp`.
+For two partner parameters `t,u`, put the binary-cubic coefficients
+in `C=[Y K J X]`.  A fixed `2 x 2` minor makes `K,J` independent.
+One compression minor is `8(lambda-1)F`, while the complete third
+compound factors as
+
+```text
+C_3(C)=8F N.
+```
+
+Purity therefore forces both `rank C=3` and `rank C<=2`.  The one- and
+two-infinite projective pencil sheets close by the analogous factor
+`lambda*u^2-1` and the nonzero minor `-8lambda^4`.  Consequently no
+flat triangle can lie in this one-kernel-zero chart.
+
+### WITHDRAWN: overstrong projective collision classification
+
+The following claimed exhaustiveness was withdrawn.  It used full row
+`GL2` to classify projective columns, but purity fixes each kernel
+line and permits only Borel row gauge.  The displayed balanced family
+and normal-form identities are exact; the claim that they exhaust the
+flat branch and the four-dimensional component conclusion are not.
+
+The withdrawn record is
+
+```text
+P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md
+verify_p4_resonant_flat_triangle_classification_withdrawn_overstrong.py
+audit_p4_resonant_flat_triangle_classification_withdrawn_overstrong.py
+```
+
+A zero source column propagates to all synchronized partners and
+descends to the embedded pure-`P3` obstruction.  A `2+1+1`
+projective collision makes every active row proportional to a
+two-supported row, so `X=x^3=0`.  A `1+3` split makes all three planes
+coincide and their square has dimension two.
+
+The sole survivor is the balanced `2+2` family
+
+```text
+U0=span(a_bar,b_bar),
+U1=span(a,b),
+U2=span(a,b+s*a_bar),
+U3=span(a,b+t*a_bar),                    s+t!=0.
+```
+
+Its restricted permanent is exactly `-4(s+t) x0*x1*x2*x3`; all three
+triangle pair images have rank three and unique rank-two relations.
+Thus the flat branch is nonempty, but its normalized two parameters
+plus the source torus sweep dimension at most four.  Every nonzero
+pure-incidence component has dimension at least five by its
+twenty-variable/fifteen-equation Segre chart.  Hence the complete
+rank-two-relation triangle cannot be the generic graph of a missing
+component.
+
+### WITHDRAWN: overstrong pure rank-two-relation star obstruction
+
+The star conclusion below depended on the withdrawn complete triangle
+classification.  Its tree gauge, pencil matching, and constant
+balanced-chart coefficient remain local lemmas, but the global star
+obstruction is not established.
+
+The other three-edge graph is closed in
+
+```text
+P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md
+verify_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py
+audit_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py
+```
+
+Because a star is a tree, the three rank-two relations can be gauged
+independently to
+
+```text
+y0*xi=x0*yi.
+```
+
+Thus all three leaf row-pairs lie in the synchronizer of the center.
+For a generic four-point center this is the projective pencil
+`A+t*A_sharp`.  Two pencil members have pair rank below three only
+when their parameters form one of three disjoint pairs, cut out by
+two of
+
+```text
+lambda*t*u-1,
+lambda*t*u-t-u+1,
+lambda*t*u-lambda*t-lambda*u+1.
+```
+
+The rank-drop graph is therefore a matching.  Among three leaves some
+pair has rank three, so it and the center form the already classified
+generic flat triangle, a contradiction.
+
+The collision boundary is smaller.  Zero columns make the whole
+degree-four product zero.  A `2+1+1` center forces all active rows to
+one two-supported vector, whose fourth power is zero.  A `1+3`
+center makes every leaf the same plane and drops center-leaf rank to
+two.  Finally, at the balanced `2+2` center, the coefficient selecting
+the center kernel, one leaf kernel, and two leaf active rows is
+
+```text
+a(a+beta*b_bar)(b+alpha*a_bar)(b+gamma*a_bar)=a^2*b^2=4,
+```
+
+contradicting purity.
+
+Consequently an all-pair-rank-at-least-three missing component cannot
+be supported by a star or generic triangle whose selected relations
+are all rank two.  The remaining compatibility problem is genuinely
+mixed rank one/rank two.
+
+### Corrected Borel proof: the mixed `(2,2,1)` triangle is empty
+
+The earlier proof was correctly withdrawn because its balanced-center
+normalization used full row `GL2` while retaining the transformed first rows
+as purity kernels.  The missing Borel chart is now closed, so the global
+obstruction for this stated rank-three triangle stratum is restored in
+
+```text
+P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md
+verify_p4_mixed_two_rank_two_triangle_obstruction.py
+audit_p4_mixed_two_rank_two_triangle_obstruction.py
+```
+
+Gauge the two rank-two edges, which share a vertex, into a
+synchronization `V`.  For a generic four-point center the two leaves
+lie on the same totally synchronized adjugate pencil.  The
+`2+1+1` collision synchronizer is totally synchronized too.  Thus the
+leaf-leaf edge already has a rank-two relation, contradicting its
+assumed unique rank-one relation.  Zero and `1+3` centers force the
+previous embedded-`P3` or pair-rank collapses.
+
+The support-two equal-ratio boundary retains the valid annihilator argument.
+Its leaves have rows
+
+```text
+y_i=a+beta_i*b_bar,
+x_i=b+alpha_i*a_bar.
+```
+
+A rank-one leaf-leaf relation must factor through one pure kernel
+row.  If `beta_i!=0`, that kernel has support four and zero
+degree-one annihilator.  If `beta_i=0`, its annihilator is the line
+`C*a_bar`, but the other synchronized leaf plane never contains
+`a_bar`.  Both orientations are impossible.
+
+The formerly missing full-support `2+2` center instead has marked center
+`(a+b,b)` and synchronized leaves
+
+```text
+y_i=a+b-r_i*b_bar-s_i*a_bar,
+x_i=b-s_i*a_bar.
+```
+
+Put `Delta=r_2s_3-r_3s_2`.  Four maximal minors of the leaf-pair product
+matrix are `Delta` times the signed pairs
+
+```text
+s_2s_3(r_2+r_3) +/- (s_2+s_3),
+r_2r_3(s_2+s_3) +/- (r_2+r_3).
+```
+
+If the pair rank is at most three and `Delta!=0`, subtracting the two pairs
+forces `s_2+s_3=r_2+r_3=0`, which makes `Delta=0`, a contradiction.  Hence
+pair rank at most three forces `Delta=0`.  The leaf commutator is exactly
+
+```text
+y_2*x_3-x_2*y_3=Delta*(0,1,-1,-1,1,0).
+```
+
+At pair rank three this is the unique relation and has alternating
+coefficient matrix of determinant one.  It therefore has rank two, never the
+required rank one.  Thus `(2,2,1)` cannot occur on an exceptional rank-three
+triangle.  Any remaining mixed triangle has at most one rank-two edge; mixed
+stars with one or two rank-two spokes and lower pair-rank strata remain
+separate.
+
+### Borel-generic repair of the flat binary cubic
+
+The correct full-kernel-support chart is now closed in
+
+```text
+P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md
+verify_p4_resonant_flat_generic_binary_cubic.py
+audit_p4_resonant_flat_generic_binary_cubic.py
+```
+
+Purity fixes each kernel line.  With full kernel support, diagonal
+source scaling and Borel row gauge—not full `GL2`—give
+
+```text
+y=(1,1,1,1),       x=(0,1,p,q),
+pq(p-1)(q-1)(p-q)!=0.
+```
+
+The synchronizer is the pencil generated by `A=(y;x)` and
+
+```text
+y_sharp=(0,p+q-1,p(1-p+q),q(1+p-q)),
+x_sharp=pq(-1,1,1,1).
+```
+
+For finite partner parameters `t,u`, let `C=[Y K J X]`.  Put
+
+```text
+H=p^2-2pq-2p+q^2-2q+1,
+
+F=p^2q^2 H t^2u^2
+  -6p^2q^2(t^2u+tu^2)
+  -pq(p+q+1)(t^2+4tu+u^2)
+  -2(pq+p+q)(t+u)-3.
+```
+
+One compression minor is
+
+```text
+-8(p-1)(p-q)(q-1)F,
+```
+
+all sixteen `3 x 3` minors of `C` are divisible by `F`, and
+
+```text
+det C=-16pq(p-1)(p-q)(q-1)F^2.
+```
+
+The compressed span cannot be a line: three `K,J` minors would force
+the two parameters `{t,u}` to contain the three distinct values
+
+```text
+-1/p,       -1/q,       -1/(pq).
+```
+
+Thus purity forces `rank C=3` and `rank C<=2`, a contradiction.
+This is the true generic finite-partner theorem.  The remaining projective
+sheet is handled next.
+
+### The projective sheet is an additive-parallelogram rank-drop seam
+
+The synchronized pencil has now been compactified without moving the fixed
+kernel flag:
+
+```text
+P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md
+verify_p4_resonant_flat_projective_partner.py
+audit_p4_resonant_flat_projective_partner.py
+```
+
+Put one partner at `A_sharp` and the other at `A+u*A_sharp`.  Three
+compression minors share
+
+```text
+G=pq(p^2-2pq-2p+q^2-2q+1)u^2-6pqu-p-q-1.
+```
+
+All full `3 x 3` minors are divisible by `G`.  If the first three cubic
+coefficients collapse to the line needed for purity, three smaller minors
+leave exactly
+
+```text
+q=p+1, u=-1/(2p),
+p=q+1, u=-1/(2q),
+p+q=1, u=-1/(2pq).
+```
+
+For the affine ratios `(0,1,p,q)`, these are the three equations equating
+the sums on opposite edges of a perfect matching.  The compactification
+therefore sees exactly an additive parallelogram, or weak Sidon failure.
+
+Each curve is a real pure `P4` family: the compressed/full cubic ranks are
+`(1,2)`.  But the product image of `(A_sharp,A+u*A_sharp)` has rank exactly
+two on all three curves, so none remains in the all-rank-three-relation
+triangle.  If both partners are `A_sharp`, two incompatible affine
+difference factors exclude purity.  The complete projective partner sheet
+is therefore empty in the intended triangle stratum.
+
+The affine-ratio collisions are handled next.
+
+### Full-support collisions are presymplectic rank-drop seams
+
+The legal affine-ratio multiplicities are `1+1+1+1`, `2+1+1`, `2+2`,
+`3+1`, and the rank-one `4` collapse.  The three collision types are now
+classified in
+
+```text
+P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md
+verify_p4_resonant_flat_full_kernel_collision.py
+audit_p4_resonant_flat_full_kernel_collision.py
+```
+
+For `2+1+1` and `3+1`, the synchronizer pencil's point at infinity has
+local rank one.  Every admissible finite partner has the same active row
+`x`; since `x` has support at most two in the squarefree algebra, `x^3=0`.
+The required escaping coefficient therefore vanishes.
+
+The `2+2` center has a three-dimensional synchronizer
+`span(A,B_0,B_1)`.  Its alternating multiplication form satisfies
+
+```text
+omega(A,B_0)=omega(A,B_1)=0,
+omega(B_0,B_1)=w!=0.
+```
+
+Thus `A` is the radical of a presymplectic projective plane, and compatible
+flat triples are exactly lines through `A`.  Writing a direction as
+`D=rB_0+sB_1` and the other planes as `A+tD,A+uD`, the four compression
+minors factor into `t+u` times signed binary factors and
+
+```text
+det C=-64rs(t+u)^2.
+```
+
+Purity leaves only `u=-t` with `rt,st in {+1,-1}`.  After rescaling `D`,
+these are four signed points.  Their compressed/full ranks are `(1,2)`,
+but the product image of `(A+D,A-D)` has rank two at every point.  Both
+one- and two-endpoint projective sheets are empty.  Hence no `2+2` pure
+point belongs to the all-rank-three triangle.
+
+Together with the finite and projective distinct-ratio theorems, this
+excludes the complete full-kernel-support flat triangle.  The
+smaller-support analysis follows next.
+
+### The corrected complete triangle has one annihilator-line survivor
+
+The smaller kernel supports have now been classified in
+
+```text
+P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md
+verify_p4_rank_two_relation_triangle_corrected_classification.py
+audit_p4_rank_two_relation_triangle_corrected_classification.py
+```
+
+Zero source columns descend to a pure `P3` and force all triangle pair
+images to have rank at most two.  With no zero column, kernel support three
+either lies in the previous distinct-ratio theorem or has a common active
+row of support at most two, so its active cube is zero.  Kernel support one
+has a single underlying plane whose square has dimension two.
+
+Kernel support two is the unique survivor.  Put
+
+```text
+a=X0+X1,       a_bar=X0-X1,
+b=X2+X3,       b_bar=X2-X3.
+```
+
+Every pure rank-three triangle with three rank-two relations is, up to the
+allowed symmetries,
+
+```text
+U0=span(b_bar,a_bar),
+Ui=span(a,b+alpha_i*a_bar),       i=1,2,3,
+alpha_1+alpha_2+alpha_3 != 0.
+```
+
+The leaf products have fixed independent generators `a^2`, `ab`, and a
+quadratic with nonzero `b^2` part, so all three pair ranks are exactly
+three.  The triple coefficients are
+
+```text
+Y=0,
+K=a^2*b,
+J=a*b^2,
+X=(sum alpha_i)b^2*a_bar-(sum_{i<j}alpha_i alpha_j)K.
+```
+
+Perfect pairing forces the opposite plane `span(b_bar,a_bar)`.  All sixteen
+degree-four coefficients then vanish except
+
+```text
+-4(alpha_1+alpha_2+alpha_3)x0*x1*x2*x3.
+```
+
+This corrects the withdrawn empty-triangle claim.  The old balanced family
+was an exact slice, but not exhaustive under the legal Borel gauge.  The
+star is re-audited next; the mixed `(2,2,1)` compatibility remains after it.
+
+### The rank-two-relation star is repaired
+
+The formerly withdrawn star obstruction now has a valid Borel proof:
+
+```text
+P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md
+verify_p4_rank_two_relation_star_obstruction.py
+audit_p4_rank_two_relation_star_obstruction.py
+```
+
+Tree gauge synchronizes all three leaves with the center.  For four
+distinct projective columns, the three exact rank-drop pairs in the
+adjugate pencil are disjoint.  Three leaves therefore contain a rank-three
+pair, and the corrected triangle theorem forces the center kernel onto a
+two-coordinate line, contradicting support three or four.
+
+Collision pencils with support-three/full kernels have a common active row
+of support at most two, so their required active fourth power is zero.
+Kernel support one already drops the center-leaf pair rank.  For support
+two, both the distinct and equal finite-ratio charts contain the constant
+forbidden coefficient
+
+```text
+a^2*b^2=4X0X1X2X3.
+```
+
+The missing Borel chart was the full-support `2+2` center
+`(y,x)=(a+b,b)`.  Its synchronized leaves have
+
+```text
+y_i=c_i(a+b)-r_i*b_bar-s_i*a_bar,
+x_i=c_i*b-s_i*a_bar.
+```
+
+A center-leaf `3 x 3` minor is `4c_i^3`, so rank three permits `c_i=1`.
+Putting `E=s_1s_2+s_1s_3+s_2s_3`, two kernel-marked coefficients are
+`-4E` and `-4(E-1)`.  Purity would require `E=0=E-1`, a contradiction.
+
+Thus the rank-two-relation star is genuinely empty.  The old file stays
+withdrawn because its proof moved the kernel flag; the replacement theorem
+is the authoritative result.  The mixed `(2,2,1)` triangle is the next
+Borel compatibility frontier.  The global conjecture remains open.
+
+### A two-rank-two-spoke mixed star is the tenth component
+
+The presymplectic chart left open by the graph obstructions produces a
+component rather than another contradiction:
+
+```text
+P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md
+verify_p4_two_rank_two_spoke_mixed_star_component.py
+audit_p4_two_rank_two_spoke_mixed_star_component.py
+```
+
+With `a,a_bar` and `b,b_bar` the opposite directions on two complementary
+binary blocks, take
+
+```text
+U0=span(a+b,b),
+U1=span(a+b-b_bar-s*a_bar,b-s*a_bar),
+U2=span(a+b+b_bar-t*a_bar,b-t*a_bar),
+U3=span(b_bar,(s+t-1-st,s+t+1+st,-s-t,-s-t)).
+```
+
+The only nonzero restricted coefficient is
+
+```text
+T_1111=-4(s+t).
+```
+
+The three center pair images have rank three and unique relation-matrix
+ranks `(2,2,1)`; the three leaf pair images have rank four.  Thus the
+exceptional graph is exactly the previously open two-rank-two-spoke mixed
+star, with pair profile `(3,3,3,4,4,4)`.
+
+The active row is governed by `d=(1+st)/(s+t)`.  The Cayley coordinate
+`c(z)=(z-1)/(z+1)` turns this into the torus law `c(d)=c(s)c(t)`.  This
+identifies the survivor as a toric multiplication graph inside the
+presymplectic synchronizer plane.
+
+At `(s,t)=(2,3)`, the diagonal-source family tangent has the exact minor
+`-1/2`.  In the universal Segre incidence, a `15 x 15` Jacobian minor is
+`345600000`, so the incidence is smooth of dimension five.  The irreducible
+family closure is therefore a component.  Its exceptional relation-rank
+multiset `{1,2,2}` separates it from all seven earlier fivefolds, and its
+dimension separates it from the two sixfolds.  The certified lower bound is
+now ten pure-`P4` component orbits.  Its marked `P5` fibres, special toric
+boundary, component exhaustiveness, and the global conjecture remain open.
+
+### The `{1,2,2}` rank-three star is completely classified
+
+The component family is now the output of a reverse normal-form theorem, not
+only a construction:
+
+```text
+P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md
+verify_p4_two_rank_two_spoke_mixed_star_classification.py
+audit_p4_two_rank_two_spoke_mixed_star_classification.py
+```
+
+Two rank-two spokes synchronize their leaves with the center.  All ordinary
+two-dimensional synchronizer pencils are totally isotropic and would create
+an extra leaf relation.  The only dimension-jump centers are full-support
+`2+2` and support-two equal ratio.
+
+For the full-support center, the all-kernel coefficient gives
+`r_2=-r_1`.  Four remaining purity expressions obey
+
+```text
+F2-F3=-(H+Q),
+F4-F3=H,
+F0-F3=-H*r^2-2H-3Q,
+F3=E*(s+t)-H+Q*s*t.
+```
+
+Nonzero purity and full leaf-pair rank therefore force, in order,
+
+```text
+Q=-H,       r^2=1,       E/H=(1+s*t)/(s+t).
+```
+
+After the legal sign, scale, and active-row-shift gauges this is exactly the
+tenth-component family.
+
+For the support-two equal-ratio center, the three Borel-distinct rank-one
+spoke orientations were checked separately.  The kernel-kernel orientation
+makes the active coefficient zero.  The other two force the fourth plane to
+`span(a_bar,b_bar)`, whose product image with the center has rank two.  Hence
+no second rank-three star family exists in that chart.
+
+The next all-rank-three graph frontier is now a triangle with exactly one
+rank-two relation.  Special divisors of the tenth component and lower
+pair-image ranks remain separate.
+
+### The tenth component has no generic marked `H31` lift
+
+The complete marking chart of the new component admits a shorter obstruction
+than the expected Fitting-divisor analysis:
+
+```text
+P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py
+audit_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py
+```
+
+Keep the first row `alpha_i` of each normal-form plane fixed and write every
+compatible active row as `beta_i+h_i alpha_i`.  For each deleted source
+coordinate `q`, the fourteen mixed extension coefficients form a `14 x 8`
+matrix `M_q(h)` over `C(s,t)[h0,h1,h2,h3]`.  Exact module normal form gives
+
+```text
+NF_Mq(A_q)=0,       NF_Mq(B_q)!=0
+```
+
+for all four `q`, where `A_q,B_q` are the two diagonal rows.  Hence every
+mixed-zero extension kills `A_q` and cannot be a genuine binary neighbour.
+This includes every marking divisor; no rank assumption on `M_q` and no
+ternary contraction are needed.
+
+There are also explicit polynomial mixed-kernel directions `k_q(h)`.  Their
+diagonal values are
+
+```text
+A_q(k_q)=0,
+(B_0(k_0),B_1(k_1),B_2(k_2),B_3(k_3))
+  =(4(s+t),4(s+t),4(s+t),-4(s+t)).
+```
+
+Thus the obstruction is best understood as an asymmetric cokernel class, not
+as degeneration of the whole extension map.  The primary function-field
+module calculation and the independent subset-DP audit pass.  All ten known
+pure-`P_4` component orbits are now generically closed for `H31`.  The tenth
+component's weighted `H22` fibre, special toric boundary, component
+exhaustiveness, and the global conjecture remain open.
+
+### Dense-marking weighted `H22` obstruction on the tenth component
+
+The first weighted continuation is now exact but deliberately partial:
+
+```text
+P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md
+verify_p5_h22_two_rank_two_spoke_mixed_star_dense_marking_obstruction.py
+audit_p5_h22_two_rank_two_spoke_mixed_star_dense_marking_obstruction.py
+```
+
+Use Cayley parameters `u=c(s)`, `v=c(t)`, and `rho=c(r)`.  The component law
+becomes `d=(1+uv)/(1-uv)`, and clearing the three row denominators makes the
+four planes polynomial.  The squarefree top form must still be pulled back to
+the original `X_i` coordinates: the permanent is not invariant under the
+Hadamard block change to `(a,a_bar,b,b_bar)`.  An initial shortcut that ignored
+this was rejected before theorem status; the independent subset-DP audit now
+guards the corrected pullback.
+
+At the canonical marking, the first eight mixed rows have two nonzero
+factored determinants.  The `D_23` determinant is
+
+```text
+4096 rho^3 uv(rho-1)(rho+1)
+ (u-1)^2(u+1)^3(u+v)(v-1)^2(v+1)^3(uv-1)^4.
+```
+
+The `D_01` determinant is the product of the expected toric coordinate
+factors and two additional low-degree factors displayed in the theorem.
+Therefore both mixed matrices have rank eight on a dense open of the full
+component/slope/marking space, so no binary extension exists there.
+
+At the rational component points `(s,t)=(2,3),(3,5),(5,7)`, exact module
+normal form over `C(rho)[h0,h1,h2,h3]` gives the eight standard free-module
+generators in both directions.  These are complete all-marking, all-slope
+fibres, not evaluations.  They do not prove the generic component's complete
+marked fibre empty: possible dominant pieces of the remaining determinantal
+divisors still need a symbolic cover.  The global conjecture remains open.
+
+### The first component is a fixed apolar triangle bundle
+
+The remaining generic graph shape contains the original component in a much
+simpler normal form:
+
+```text
+P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md
+verify_p4_first_component_apolar_triangle_normal_form.py
+audit_p4_first_component_apolar_triangle_normal_form.py
+```
+
+After preserving the two rank-one zero-product rows, a Borel shift
+synchronizes the rank-two edge.  Its equation becomes a factorization of
+
+```text
+(X2+X3)(X0+X2).
+```
+
+On the dense missing-coordinate branch, the vanishing coefficients force the
+second factor to be the signed coordinate reflection of the first.  Equality
+of the three nonzero coefficients then makes the coordinates `0,2,3` equal;
+the remaining coordinate is normalized by the unused source torus.  The
+triangle modes become
+
+```text
+U1=span((1,1,1,1),(0,0,1,1)),
+U2=span((1,0,1,0),(1,-1,1,1)),
+U3=span((0,0,1,-1),(1,0,-1,0)).
+```
+
+Only their all-kernel and all-active triple products survive, with covectors
+`(-1,-1,-1,1)` and `(1,1,-1,-1)`.  Hence the opposite plane is any two-plane
+in the first covector's kernel.  Its dense chart is
+
+```text
+U0=span((1,0,p,1+p),(0,1,q,1+q)),
+```
+
+and the restriction is
+
+```text
+-2(p*e0+q*e1) tensor e1 tensor e1 tensor e1.
+```
+
+The generic pair profile is `(4,4,4,3,3,3)`, with triangle relation ranks
+`(2,1,1)`.  Setting `e=i=l=1,c=-1-q,j=-p/q` in the old family and applying
+`diag(-1,-1,1,1)` gives identical Pluecker vectors.  Thus this is the old
+first component, expressed as a `P^2` apolar fibre plus the three-dimensional
+source torus.  The other Borel orientations and support collisions of the
+same triangle remain to be classified.
+
+### The crossed `(2,1,1)` support problem is an octahedron
+
+The first component normal form left one precise reverse question: could the
+same crossed Borel orientation produce another full-support triangle when
+the two binary zero-product supports collide differently?  This is now
+classified exactly in
+
+```text
+P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md
+verify_p4_crossed_211_triangle_support_classification.py
+audit_p4_crossed_211_triangle_support_classification.py
+```
+
+A genuine zero product is an opposite binary pair
+`(Xi+Xj)(Xi-Xj)=0`, labeled by `{i,j}`.  The six labels are the vertices of
+the octahedron `J(4,2)=L(K4)`, giving three support orbits.
+
+For equal labels, the rank-two edge factorization has target `X0X1`.
+Nonzero active cubic forces one factor outside that binary block; its six
+coefficient equations then force both factors to use exactly one common
+outside coordinate.  All three triangle planes lie in a coordinate
+hyperplane.
+
+For disjoint labels, the target is the complete bipartite quadratic `ab`.
+Writing the two factors in binary blocks gives
+
+```text
+[u u'] [v' v]^T = a b^T,
+det(u,u') det(v',v)=0.
+```
+
+The internal zero coefficients force one block projection to vanish.  The
+four resulting anchor forms either collapse `U1` or `U2`, or add a second
+zero product to edge `13` or `23`, dropping that pair image to rank at most
+two.  Thus the disjoint orbit is empty on the stated stratum.
+
+For one-coordinate overlap, normalize the target to
+`(X2+X3)(X0+X2)`.  The three coefficients incident with the missing
+coordinate force the second factor to be the signed reflection of the first.
+Equality of the three nonzero coefficients makes coordinates `0,2,3`
+equal.  If the missing-coordinate entries vanish the triangle lies in a
+coordinate hyperplane; otherwise the unused source torus gives exactly
+
+```text
+U1=span((1,1,1,1),(0,0,1,1)),
+U2=span((1,0,1,0),(1,-1,1,1)),
+U3=span((0,0,1,-1),(1,0,-1,0)).
+```
+
+The symbolic minors `(-2r^2,-2r,r^2)` certify pair ranks three before the
+last source scaling.  An independent source-permuted, unequally scaled
+subset-DP replay recovers pure support at exactly `0111,1111` and relation
+ranks `(2,1,1)`.  No ideal or finite-field search is used.
+
+Conceptually, the same proof is simultaneously a `D4` root-support orbit
+calculation, a symmetric rank-two completion problem on `K2`, `K_(2,2)`, or
+`K3`, and an apolar `Gr(2,3)` construction.  The remaining triangle frontier
+is confined to common-factor/radical Borel orientations, support-one zero
+products, and lower pair-image ranks.
+
+### Equal support hides an eleventh, six-dimensional component
+
+The common-factor orientation excluded from the crossed theorem is nonempty.
+Put
+
+```text
+a=X0+X1,       a_bar=X0-X1,
+b=X2+X3,       b_bar=X2-X3,
+
+U0=span(a+p*b,a_bar+q*b),
+U1=span(a,a_bar+b),
+U2=span(a,r*a_bar+b),
+U3=span(b_bar,a_bar).
+```
+
+The two rank-one relations are the same exact zero-divisor pair
+`a*a_bar=0`; the rank-two relation is `y1*x2-x1*y2=0`.  This is the
+homological synchronization law `x2-x1 in Ann(a)=(a_bar)`, leaving the affine
+parameter `r`.
+
+All kernel-containing triangle cubics span the single line `C*a^2*b_bar`.
+Its degree-one annihilator is `span(a,a_bar,b)`, so `U0` is the dense chart
+of an apolar `Gr(2,3)=P^2`.  Exact permanent expansion leaves only
+
+```text
+T_0111=-4p(r+1),
+T_1111=-4(1+q(r+1)).
+```
+
+The generic pair profile is `(4,4,4,3,3,3)` and the triangle relation ranks
+are `(2,1,1)`.  Restoring `diag(t0,t1,t2,1)`, the six-parameter family has a
+Grassmann-chart tangent minor `3/128` at `(p,q,r)=(1,2,2)`.  On the universal
+Segre incidence, a fourteen-by-fourteen Jacobian minor is `-9/2`, and the
+family tangent bounds the full rank by fourteen.  Hence the incidence is
+smooth of dimension six there and the irreducible family closure is a full
+component.
+
+The earlier six-dimensional component has sorted pair profile
+`(2,3,3,4,4,4)`; the new one has `(3,3,3,4,4,4)`.  It is also dimensionally
+distinct from every fivefold.  The certified lower bound is therefore eleven
+component orbits.  An independent `F101` audit, after source permutation and
+unequal diagonal scaling, recovers family tangent rank six, incidence rank
+fourteen, the pair profile, and the two-point pure support by subset-DP
+permanents.  No search is used.
+
+The new component's generic `H31` and weighted `H22` fibres were open at this
+checkpoint.  Thus the earlier statement that all ten known components were
+generically closed for `H31` was a correct historical checkpoint but was not
+yet the current exhaustive known-component status.
+
+### The eleventh component has no generic marked `H31` lift
+
+Use the intrinsic marked rows
+
+```text
+alpha0=(1+q(r+1))u-p(r+1)v,  beta0=u,
+alpha1=a,                     beta1=a_bar+b,
+alpha2=a,                     beta2=r*a_bar+b,
+alpha3=b_bar,                 beta3=a_bar,
+beta_i(h)=beta_i+h_i*alpha_i.
+```
+
+The only pure coefficient is `T_1111=-4p(r+1)`.  For each deleted source
+coordinate `d`, form the fourteen-by-eight mixed binary extension matrix
+`M_d` and the two diagonal rows `A_d,B_d` over
+`C(p,q,r)[h0,h1,h2,h3]`.  Exact polynomial module reduction gives
+
+```text
+A_d in Row(M_d),       B_d notin Row(M_d),
+module basis sizes = (4,4,8,8).
+```
+
+The first inclusion is structural.  `A_0=A_1=0`.  For the other deletions,
+the reduced module contains `e0,e1,p*e2,p*e3,p*e4`; since `p` is a unit in
+the component function field, these rows synthesize
+
+```text
+A2=(-2,-2Q,-2Q,2p,0,0,0,0),
+A3=( 2, 2Q, 2Q,2p,0,0,0,0),  Q=1+q(r+1).
+```
+
+Hence every solution of the mixed equations has zero all-kernel diagonal,
+contradicting the two nonzero binary diagonals required by `H31`.  This holds
+simultaneously for every marking parameter, even on mixed-rank divisors.  At
+`(p,q,r)=(1,2,2)`, adjoining `A_d` preserves mixed ranks `(4,4,7,7)` while
+adjoining `B_d` raises them to `(5,5,8,8)`, so the cokernel asymmetry is
+genuine.
+
+An independent subset-DP permanent construction reproduces the complete
+all-marking module statement at `(1,2,2)` and `(2,1,3)`.  No search or
+ternary-rank test is used.  All eleven certified pure-`P4` components are
+now generically closed for `H31`.  The eleventh component's weighted `H22`
+fibre, special parameter/projective boundary, component exhaustiveness, and
+the global conjecture remain open.
+
+Primary theorem and verifier:
+
+```text
+P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h31_equal_support_common_factor_component_generic_obstruction.py
+audit_p5_h31_equal_support_common_factor_component_generic_obstruction.py
+```
+
+### The exact-zero-divisor block kills weighted `H22`
+
+The eleventh component's weighted continuation is simpler than its `H31`
+module.  Restore arbitrary diagonal source scalings `t0,t1,t2,t3`, merge
+`X0,X1` with homogeneous weights `(lambda,mu)`, and append fifth-coordinate
+entries `x_i` to the four kernel rows.  With `R=r+1` and `Q=1+qR`, they become
+
+```text
+A0=(*,p*t2,p*t3,x0),
+A1=(lambda*t0+mu*t1,0,0,x1),
+A2=(lambda*t0+mu*t1,0,0,x2),
+A3=(0,t2,-t3,x3).
+```
+
+Rows `A1,A2` must occupy the merged and fifth channels in every permanent
+matching.  The residual two-channel permanent is
+
+```text
+p*t2*(-t3)+p*t3*t2=0.
+```
+
+Therefore the all-kernel binary diagonal is identically zero for every
+extension, marking, source scaling, and projective merge weight.  One of the
+two binary `Delta2` neighbours required by `H22` cannot exist, before any
+mixed equation or ternary-rank condition is considered.
+
+This is simultaneously the squarefree exact-zero-divisor identity
+`b*b_bar=0`, cancellation of the trivial/sign characters on a two-point
+group, and a saturated two-channel tensor-network cut.  A separate subset-DP
+permanent audit, with independent row scalings and a within-block source
+swap, reproduces the zero polynomial.
+
+The eleventh component is now generically closed for both `H31` and weighted
+`H22`.  Ten of the eleven certified components are generically closed for
+weighted `H22`; the tenth component's marking divisors are the sole remaining
+generic known-component weighted frontier.  Special pure-factor degenerations,
+projective boundaries, component exhaustiveness, and the global conjecture
+remain open.
+
+Primary theorem and verifiers:
+
+```text
+P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h22_equal_support_common_factor_component_generic_obstruction.py
+audit_p5_h22_equal_support_common_factor_component_generic_obstruction.py
+```
+
+### A fixed-vertex Segre join closes the last generic known-component fibre
+
+The tenth component's weighted marking divisors become small after forgetting
+the marking coordinates.  In canonical `(alpha,beta)` bases, write `C_w(z)`
+for the sixteen weighted `23` binary coefficients, linear in the eight
+extension entries.  If a Borel shift
+
+```text
+beta_i'=beta_i+h_i*alpha_i
+```
+
+diagonalizes the tensor with nonzero all-kernel coefficient `A`, then
+
+```text
+C_w=A*product_(i:w_i=1)(-h_i),   w!=1111.
+```
+
+Thus, after normalizing `C_0000=1`, the fifteen coordinates other than the
+free all-active `C_1111` form a rank-one Boolean array.  Eliminating the four
+`h_i` gives exactly
+
+```text
+C_S*C_empty^(|S|-1)=product_(i in S) C_{i},
+2 <= |S| <= 3,
+```
+
+namely six quadratic and four cubic toric binomials.
+
+For the Cayley component, put
+
+```text
+K=x3+rho*(1-u*v)*y0,
+L=-2*(u+1)*(v+1),
+M=-4*(u+v).
+```
+
+Four coefficients are
+
+```text
+C_1000=M*K,
+C_1010=C_1100=C_1110=L*K.
+```
+
+On `K!=0`, the `{0,1}`, `{0,2}`, and `{0,1,2}` binomials force `L=M`, but
+`M-L=2*(u-1)*(v-1)` is a unit in `C(u,v,rho)`.  Substituting all eight
+extension variables into the full natural toric system closes `K=0` too:
+
+```text
+<C_0000-1, six quadrics, four cubics>=(1)
+```
+
+over `C(u,v,rho)`.  Hence the weighted `23` neighbour cannot be binary
+`Delta2` in any marking; no ternary-rank test is reached.  An independent
+audit uses the original `(s,t)` component rows and subset-DP permanents, and
+gets reduced basis `{1}` over `C(rho)` at `(2,3)` and `(3,5)`.
+
+All eleven certified pure-`P4` components are now generically closed for both
+`H31` and weighted `H22`.  The live front moves to component exhaustiveness
+and special parameter/projective boundaries.  This remains a finite
+component theorem, not a global graph proof.
+
+Primary theorem and verifiers:
+
+```text
+P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py
+audit_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py
+```
+
+### Transverse binary polarity detects a twelfth component
+
+The common-active support-two `(2,1,1)` orientation has a complete local
+annihilator reduction.  Normalize an exact pair `a*c=0`, so the two leaf
+kernel rows are both `a`, the common active row is `c`, and the rank-two edge
+synchronizes the other leaf rows as `m,m+r*c`.  Split their complementary
+binary parts as
+
+```text
+s=u*X2+v*X3,       t=p*X2+q*X3,
+A=u*q+v*p,         Q=u*q-v*p.
+```
+
+The four maximal minors of the three kernel-rich cubics factor as
+
+```text
+ 4*q*A*(E+2*delta*u*v),
+ 4*p*A*(E+2*delta*u*v),
+-4*(gamma-delta)*Q*(E-2*gamma*u*v),
+ 4*(gamma+delta)*Q*(E+2*gamma*u*v),
+E=(2*beta+r)*A.
+```
+
+Thus `A=0` is the graph of the split exact-zero-divisor polarity, `Q=0` is
+the diagonal in `P1 x P1`, and the transverse sheet forces
+`gamma^2=delta^2`, i.e. a single-coordinate `1+3` projection.  The first two
+sheets return to the eleventh component or its `q=0` boundary.
+
+One transverse sheet is
+
+```text
+a=(1,1,0,0), c=(1,-1,0,0), b=(0,0,1,1),
+m=b+c, m_r=b+(1+r)c,
+d=(0,(r+2)(k+1),1,k),
+n=(-(k-1)(r+2),0,-1,k),
+U0=span(n,c), U1=span(a,m), U2=span(a,m_r), U3=span(d,c).
+```
+
+Its restriction is identically `-4*x0*x1*x2*x3`.  At
+`(r,k)=(-4/3,2)`, the pair profile is `(3,3,4,3,3,3)` with four rank-one
+relations and one rank-two relation.  Every three-mode kernel-rich cubic
+span has rank two.  Restoring the source torus gives a rank-five family
+tangent with minor `2`; the universal Segre-incidence Jacobian has rank
+fourteen with minor `-131072`.  Fourteen selected equations define a regular
+six-dimensional local ring, but along its excess implicit direction the
+omitted `1001` equation begins with `12h^2`.  It is therefore nonzero in that
+ring, so the full incidence has local dimension at most five.  The family
+gives the matching lower bound and its irreducible closure is a component.
+Its sorted pair profile `(3,3,3,3,3,4)` differs from every earlier fivefold;
+dimension separates the three earlier sixfolds.  The certified component
+lower bound is twelve.
+
+The apparent sixth tangent direction is quadratically obstructed.  The
+displayed family is a dense normal form for the new component.  Its generic
+`H31/H22` fibres, component exhaustiveness, and the
+global conjecture remain open.  The eleven-component generic-closure theorem
+is retained as a historical checkpoint, not a claim about the newly found
+twelfth component.
+
+Primary theorem and verifiers:
+
+```text
+P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md
+research_figures/P4_TRANSVERSE_COMMON_FACTOR_COMPONENT_GRAPH.svg
+verify_p4_transverse_common_factor_component.py
+audit_p4_transverse_common_factor_component.py
+```
+
+### The twelfth component has no generic marked `H31` fibre
+
+Use the intrinsic marking
+
+```text
+alpha=(n,a,a,d),       beta=(c,m,m_r,c),
+beta_i(h)=beta_i+h_i*alpha_i
+```
+
+over `C(r,k)[h0,h1,h2,h3]`.  For each deleted coordinate `j`, let `M_j`
+be the fourteen-row mixed extension matrix and `A_j,B_j` its all-kernel and
+all-active diagonal rows.  Exact polynomial module reduction gives
+
+```text
+A_j in Row(M_j),       B_j notin Row(M_j),
+module sizes (7,7,8,8).
+```
+
+The first two all-kernel rows vanish identically.  The other two are
+
+```text
+A_2=2k(1,r+2,r+2,1,0,0,0,0),
+A_3=2(1,-k(r+2),-k(r+2),-1,0,0,0,0),
+```
+
+and the reduced modules contain the required standard-basis rows.  At
+`(r,k)=(1,2)`, mixed ranks `(6,6,7,7)` are unchanged by adjoining `A_j`
+and rise to `(7,7,8,8)` after adjoining `B_j`.  An independent subset-DP
+audit reproduces all four all-marking modules at `(1,2)` and `(2,3)`.
+
+Thus every mixed-zero extension kills one required binary diagonal before
+any ternary-rank test.  All twelve certified components are generically
+closed for `H31`; the twelfth component's weighted `H22` fibre, special
+boundaries, component exhaustiveness, and the global conjecture remain open.
+
+Primary theorem and verifiers:
+
+```text
+P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h31_transverse_common_factor_component_generic_obstruction.py
+audit_p5_h31_transverse_common_factor_component_generic_obstruction.py
+```
+
+### Binary polarity kills the twelfth component's weighted `H22` fibre
+
+For the weighted `01` neighbor, restore arbitrary source scalings and
+homogeneous merge weights.  The repeated kernel rows `a,a` are supported only
+on the merged and fifth channels.  Every perfect matching assigns them to
+those channels, leaving the kernel rows `n,d` on `X2,X3`:
+
+```text
+n -> (-t2,k*t3),       d -> (t2,k*t3).
+```
+
+Their residual permanent is
+
+```text
+(-t2)*(k*t3)+(k*t3)*t2=0,
+```
+
+the exact-zero-divisor identity `(-X2+kX3)(X2+kX3)=0`.  Hence the
+all-kernel diagonal vanishes for every extension, marking, slope, and source
+scaling before any mixed equation is imposed.  An independent subset-DP
+audit with arbitrary kernel-row scalings and a within-block source swap
+reproduces the zero polynomial.
+
+All twelve certified pure-`P4` components are now generically closed for
+both `H31` and weighted `H22`.  Special parameter/projective boundaries,
+component exhaustiveness, and the global conjecture remain open.
+
+Primary theorem and verifiers:
+
+```text
+P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h22_transverse_common_factor_component_generic_obstruction.py
+audit_p5_h22_transverse_common_factor_component_generic_obstruction.py
+```
+
+### The dense common-kernel `YY` triangle is empty
+
+For the common-kernel Borel orientation of a `(2,1,1)` relation triangle,
+normalize the exact pair to
+
+```text
+a=X0+X1,       c=X0-X1,       a*c=0.
+```
+
+In the kernel/kernel leaf chart the rank-two edge synchronizes the rows as
+
+```text
+y1=y2=a,       y3=c,
+x1=m=beta*c+s, x2=m+r*c,
+x3=d=gamma*a+delta*c+t,
+s=uX2+vX3,     t=pX2+qX3.
+```
+
+The seven kernel-containing triple products have the same span as
+
+```text
+C0=a^2*d,       C1=a*m*d,       C2=m*(m+r*c)*c.
+```
+
+Set `A=u*q+v*p`, `Q=u*q-v*p`, and `E=(2*beta+r)*A`.  Their four maximal
+minors factor exactly as
+
+```text
+8q*u*v*A,
+8p*u*v*A,
+4Q*(E-2gamma*u*v),
+4Q*(E+2gamma*u*v).
+```
+
+On `u*v*p*q!=0`, rank at most two forces `A=0`; then `Q!=0` and the last
+two factors force `gamma=0`.  Thus `s*t=0`, `d=delta*c+t`, and the all-active
+cubic obeys
+
+```text
+m*(m+r*c)*d=delta*C2-beta*(beta+r)*C0.
+```
+
+Any opposite plane annihilating the kernel-rich cubics therefore annihilates
+the required pure cubic.  This is an exact global contradiction on the dense
+chart, not a sampled calculation.  In binary invariant-theory language
+`A=0` is a quadratic polarity graph; in commutative algebra it is an exact
+zero-divisor pair; in apolar geometry the active class has fallen into the
+mixed span.  The mixed `YX`, active `XX`, support-one, and lower-pair-rank
+strata remain.
+
+Primary theorem and verifiers:
+
+```text
+P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md
+verify_p4_common_kernel_yy_211_triangle_obstruction.py
+audit_p4_common_kernel_yy_211_triangle_obstruction.py
+```
+
+### The mixed common-kernel leaf always has a second relation
+
+For the `YX` leaf orientation, the common exact pair gives
+
+```text
+y1=x2=a=X0+X1,       y3=c=X0-X1,
+x1=b,                 y2=d,
+b*d=a^2.
+```
+
+Write the binary coefficients of `b,d` as `(b0,b1)` and `(d0,d1)`, and
+their complementary parts as `(s2,s3)` and `(t2,t3)`.  With
+`Delta=b0*d1-b1*d0`, the four cross coefficients of `b*d=a^2` imply
+
+```text
+Delta*s_j=Delta*t_j=0,       j=2,3.
+```
+
+If `Delta!=0`, both complementary parts vanish and the pair-product image is
+the line `C*X0*X1`.  If `Delta=0`, the nonzero `01` coefficient gives
+
+```text
+b=B+s,       d=lambda*(B-s),
+lambda*b0*b1=1,       s^2=0.
+```
+
+Thus `s` lies on a coordinate ray, but this boundary still cannot produce a
+rank-three pair: all four products lie in `span(a^2,a*s)`.  Besides the
+given relation `b*d=a^2`, one has
+
+```text
+lambda^(-1)*a*d+a*b-(b0+b1)*a^2=0.
+```
+
+Hence the common-kernel `YX` orientation is empty throughout the genuine
+support-two exact-pair stratum.  The active `XX` orientation is the remaining
+dense common-kernel case.
+
+Primary theorem and verifiers:
+
+```text
+P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md
+verify_p4_common_kernel_yx_211_factorisation_obstruction.py
+audit_p4_common_kernel_yx_211_factorisation_obstruction.py
+```
+
+### An Eisenstein norm quadric gives a thirteenth component
+
+The remaining `XX` common-kernel orientation has rows
+
+```text
+a=X0+X1, c=X0-X1, b=X2+X3, b_bar=X2-X3,
+m=alpha*a+beta*c+b,
+m_r=m+r*c,
+d=gamma*a+b,
+x0=b-(alpha+gamma)*a-(2*beta+r)*c,
+
+U0=span(b_bar,x0),
+U1=span(m,a),
+U2=span(m_r,a),
+U3=span(c,d).
+```
+
+The common-kernel triangle relations are
+
+```text
+y1*x2-x1*y2=0,       x1*y3=0,       x2*y3=0.
+```
+
+All kernel-rich cubics reduce to `C0=m*m_r*c`, `C1=m*m_r*d`, and
+`C2=a*m*d`, with the exact compression
+
+```text
+C1=(2*beta+r)*C0+(2*alpha+gamma)*C2-2F*(0,0,1,1),
+F=alpha^2+alpha*gamma+gamma^2-3*beta^2-3*beta*r-r^2.
+```
+
+The full restriction has only
+
+```text
+T_1001=-4F,       T_1111=4.
+```
+
+Hence `F=0` is a pure family.  Writing `N(x,y)=x^2+xy+y^2`, its equation is
+
+```text
+N(alpha,gamma)=N(r+beta,beta).
+```
+
+Over `C`, Eisenstein factorization turns this into `UV=ST`; the projective
+parameter surface is the Segre quadric `P1 x P1`.  The affine radial
+direction duplicates a block source scaling, leaving two quadric directions
+plus the three-dimensional diagonal source torus.
+
+At `(alpha,beta,r,gamma)=(2,1,1,1)`, the generic pair profile is
+`(4,4,4,3,3,3)` and relation ranks are `(2,1,1)`.  A family tangent minor is
+`1/864`; the universal Segre-incidence Jacobian has rank fifteen with minor
+`-2/81`.  The family is therefore a smooth five-dimensional irreducible
+component.  An independent mod-101 Pluecker-dual audit with source order
+`(2,0,3,1)` and scales `(2,3,5,7)` obtains ranks `5/15` and incidence minor
+`86`.
+
+The coincident support-octahedron labels distinguish this from the first
+apolar triangle; dimension and reversed kernel/active incidence distinguish
+it from the eleventh equal-support sixfold.  The certified lower bound is now
+thirteen components.  Generic `H31/H22` fibres for this new component are
+open, so the earlier twelve-component closure statement is historical.
+
+Primary theorem, graph, and verifiers:
+
+```text
+P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md
+research_figures/P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg
+verify_p4_eisenstein_norm_common_kernel_component.py
+audit_p4_eisenstein_norm_common_kernel_component.py
+```
+
+### The Eisenstein component has no generic marked `H31` fibre
+
+Use the intrinsic marking
+
+```text
+alpha_rows=(b_bar,m,m_r,c),
+beta_rows=(x0,a,a,d),
+beta_i(h)=beta_i+h_i*alpha_i.
+```
+
+To avoid an algebraic coefficient field, set `beta=1` on the norm quadric
+and project from `(alpha,beta,r,gamma)=(2,1,1,1)`.  For line direction
+`(u,v,1)`, put
+
+```text
+D=u^2+u*v+v^2-1,
+lambda=(5-5u-4v)/D,
+alpha=2+u*lambda,
+r=1+lambda,
+gamma=1+v*lambda.
+```
+
+This makes the norm equation identically zero and gives the dominant
+component function field `C(u,v)`.  Over the full marking ring
+`C(u,v)[h0,h1,h2,h3]`, exact row-module reduction gives, for all four source
+deletions,
+
+```text
+A_j in Row(M_j),       B_j notin Row(M_j),
+module sizes (10,10,10,10).
+```
+
+At `(u,v)=(2,0)`, the mixed ranks and ranks after adjoining `A_j` are all
+seven; adjoining `B_j` raises all four to eight.  An independent subset-DP
+constructor verifies every marking module at the norm-quadric points
+`(-4/3,1,-2/3,1)` and `(2,1,-4,1)`.
+
+Thus every mixed-zero extension kills the all-kernel binary diagonal before
+any ternary rank test.  All thirteen certified components are generically
+closed for `H31`; the new component's weighted `H22` fibre remains open.
+
+Primary theorem and verifiers:
+
+```text
+P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h31_eisenstein_norm_component_generic_obstruction.py
+audit_p5_h31_eisenstein_norm_component_generic_obstruction.py
+```
+
+### A diagonal-product ideal closes the weighted Eisenstein fibre
+
+For the weighted `01` projection, retain the rational component field
+`C(u,v)` and intrinsic marked rows.  With finite slope `rho`, marking
+variables `h0,...,h3`, and eight extension entries `z`, let `I_mix` be the
+ideal generated by the fourteen mixed binary coefficients.  Let `A,B` be
+the all-kernel and all-active diagonal coefficients.
+
+Treating every slope, marking, and extension coordinate as a polynomial
+variable, exact reduction gives
+
+```text
+A*B in I_mix,
+finite-chart reduced basis size 48.
+```
+
+Thus the mixed extension scheme lies in `V(A) union V(B)`; one required
+binary diagonal always vanishes.  This product statement survives the
+slope-torsion divisor where a fixed row-module membership does not.  On the
+homogeneous infinite-slope chart the same product membership holds, with
+reduced basis size `10`.
+
+At `(u,v,rho)=(2,0,2)` the mixed rank is seven, remains seven after adjoining
+`A`, and rises to eight after adjoining `B`.  Independent subset-DP ideal
+constructors at `(-4/3,1,-2/3,1)` and `(2,1,-4,1)` reproduce the finite and
+infinite product certificates.
+
+The thirteenth component is therefore generically closed for weighted
+`H22`; all thirteen certified components are now generically closed for both
+marked types.  Special component divisors and component exhaustiveness
+remain open.
+
+Primary theorem and verifiers:
+
+```text
+P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md
+verify_p5_h22_eisenstein_norm_component_generic_obstruction.py
+audit_p5_h22_eisenstein_norm_component_generic_obstruction.py
+```
+
+### Any support-one triangle is lower-rank or embedded `P3`
+
+For a coordinate zero divisor `e=Xi`, `Ann_R1(e)=C*e`.  If two rank-one
+edges share a common-mode factor and both are support-one, all three factors
+are `e`.  In `YY` and `XX`, the synchronization makes the two leaf planes
+coincide and their product image lies in `span(e*x,x^2)`.  In `YX`, the four
+products lie in `span(e*y,x*e)`.  Every common-factor orientation has pair
+rank at most two.
+
+For the crossed orientation, equal singleton supports collapse the common
+plane.  Distinct supports normalize to
+
+```text
+x1=y3=X0,       y2=x3=X1,       p*q=X0*X1.
+```
+
+With `Delta=p0*q1-p1*q0`, the off-edge coefficients imply
+`Delta*s_k=Delta*t_k=0`.  The nonrigid branch has
+
+```text
+p=P+s,
+q=lambda*(P-s),
+2*lambda*p0*p1=1,
+s^2=0.
+```
+
+Thus `s` uses at most one of `X2,X3`.  The rank-three survivor puts all three
+triangle planes in a coordinate three-space `H`.  Since
+`R=R_H tensor C[X_missing]/(X_missing^2)`, all sixteen four-mode coefficients
+factor as the missing-coordinate functional on `U0` times the restricted
+ternary tensor.  A nonzero pure survivor is therefore in the embedded-`P3`
+component.
+
+The same conclusion holds when only one rank-one edge is support-one.  A
+genuine mixed support-one/support-two pair cannot have a common factor, so
+only the crossed orientation remains.  If the two supports overlap, its
+synchronization is again a factorization of one edge monomial.  If they are
+disjoint, normalize it to
+
+```text
+y1*x2=X0*(X1-X2).
+```
+
+Vanishing of the three edges incident with `X3` shows that a factorization
+using `X3` in both factors would have `q_i=-k*p_i` for `i<3`.  Its internal
+edge coefficients would then satisfy
+
+```text
+E01*E02+2*k*p0^2*E12=0,
+```
+
+whereas the target has `(E01,E02,E12)=(1,-1,0)`.  If exactly one factor used
+`X3`, the other would be supported only there, which is equally impossible.
+Thus both factors lie in `span(X0,X1,X2)`, and the same Frobenius--Kunneth
+argument identifies every pure survivor with the embedded-`P3` component.
+The support-one boundary is complete; genuinely lower pair-image ranks are
+the remaining triangle frontier.
+
+### Pair-image rank one is impossible for nonzero pure `P4`
+
+Suppose two row planes `U,V` have one-dimensional product image.  Writing
+`uv=B(u,v)Q`, the annihilator bound `dim Ann_R1(u)<=1` makes `B`
+nondegenerate.  Its null pairs therefore form the graph of a projective
+isomorphism `P(U)->P(V)`.
+
+The full projectivized zero-product incidence in the squarefree algebra is
+the union of six curves
+
+```text
+C_pq={([aX_p+bX_q],[aX_p-bX_q]):[a:b] in P1}.
+```
+
+The graph is irreducible, so it lies in one `C_pq`; both row planes are the
+coordinate plane `span(X_p,X_q)`.  Their product coefficient is the binary
+form `ad+bc`, whose matrix has determinant `-1`.  Frobenius pairing with any
+nonzero opposite product leaves this rank-two binary slice, whereas every
+slice of a nonzero decomposable four-tensor has rank one.  Thus every pair
+image in a nonzero pure `P4` restriction has rank at least two.
+
+This removes the rank-zero/rank-one strata without a chart computation.  The
+single-pair secant/tangent theorem now covers the exact lower boundary; the
+remaining issue is compatibility and purity for its rank-two kernels.
+
+```text
+P4_RANK_ONE_PAIR_OBSTRUCTION.md
+verify_p4_rank_one_pair_obstruction.py
+audit_p4_rank_one_pair_obstruction.py
+```
+
+### Tangent rank-two pairs are orthogonal graphs or radical flags
+
+For a tangent rank-two pair, the single-pair theorem gives
+
+```text
+U0=U1=span(e,w),       e=X0,       |supp(w)|>=2.
+```
+
+In the basis `(e,w)`, the opposite two-mode slice has matrix
+
+```text
+[0 Q]
+[Q R],
+```
+
+where `Q(a,b)` is the top coefficient of `(e*w)ab` and `R(a,b)` that
+of `w^2ab`.  Symmetry and nonzero purity force both tangent factors onto the
+`w` row.  Thus the complete condition is
+
+```text
+Q(U2,U3)=0,       rank(R|U2 x U3)=1 nonzero.
+```
+
+For full support `w=w1X1+w2X2+w3X3`, `Q` is nondegenerate on
+`W=span(X1,X2,X3)`, with determinant `2w1w2w3`, and has radical `C*e` on
+`R1`.  Dimension forces one opposite plane to be `span(e,u)`.  The other is
+either a graph over the polar plane `u^perp_Q`, where its graph functional is
+proportional to the linear form defined by `w^2`, or another plane through
+`e` satisfying one anti-diagonal product equation.
+
+For support two, normalize `w=H=X1+X2` and `S=X1-X2`.  The form `Q` has
+radical `K=span(e,S)` and a hyperbolic quotient `span(H,X3)`.  If an opposite
+plane projects to zero, the restriction is embedded `P3`.  Otherwise the two
+projections are orthogonal lines.  The determinant of the remaining `R`
+matrix is
+
+```text
+-e_A*e_B*z_A*z_B.
+```
+
+Away from the coordinate-three-space branch, `z_Az_B!=0`; purity therefore
+forces one intersection with `K` to be the annihilator line `C*S`.  These are
+the non-embedded polar flags.  Exact representatives of the full-support
+graph and support-two flag have profiles `(2,3,4,3,4,4)` and
+`(2,4,3,4,3,4)` and nonzero pure restrictions.
+
+This is a complete tangent-stratum classification, not yet a component
+classification.  The two families have the same sorted rank profile as the
+known six-dimensional lower-pair component, but their double Segre
+intersection distinguishes the tangent kernel.  Closure and deformation
+compatibility are now the live issue.
+
+```text
+P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md
+verify_p4_tangent_rank_two_pair_purity_classification.py
+audit_p4_tangent_rank_two_pair_purity_classification.py
+```
+
+### The full-support tangent graph is a fourteenth component
+
+Normalize
+
+```text
+w=X1+aX2+bX3,       u=X1+cX2+dX3,
+f1=ad+bc,            f2=b+d,             f3=a+c,
+L1=2b^2(a-c),        L2=2a^2(b-d),
+E=2(ab+bc+ad).
+```
+
+The dense polar graph has
+
+```text
+U0=U1=span(e,(0,1,a,b)),
+U2=span(e,(0,1,c,d)),
+U3=span((tL1,f2,-f1,0),(tL2,f3,0,-f1)).
+```
+
+Its only coefficients are
+
+```text
+T1100=L1,       T1101=L2,
+T1110=tE L1,    T1111=tE L2,
+```
+
+so the restriction is pure.  At `(a,b,c,d,t)=(1,1,2,3,1)`, row reduction
+puts all planes in pivot chart `01`.  The family chart minor on rows
+`(2,3,10,11,12)` is `3/2`, proving five independent parameters.
+
+The target-Segre incidence at that point has Jacobian rank thirteen.  Rows
+`2,...,14` and columns `0,...,11,19` give determinant `-34560`.  After
+formally solving those thirteen equations, the two residual quadratic
+initial forms on the seven-dimensional tangent space are
+
+```text
+-tau4*tau5,
+-(tau4-tau5)^2.
+```
+
+Their gcd is one, so they form a height-two regular sequence and the local
+dimension is at most five.  The family supplies equality and is therefore an
+irreducible component.  A separate subset-DP implementation with truncated
+quadratic jets reproduces both initial forms exactly.
+
+The generic pair profile is `(2,3,4,3,4,4)`.  Its sorted profile occurs on
+the earlier six-dimensional lower-pair component but on no earlier
+fivefold; dimension separates the former and rank profile the latter.  This
+raises the certified lower bound to fourteen component orbits.  Generic
+marked `H31/H22` fibres for the new component are open.
+
+```text
+P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md
+research_figures/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg
+verify_p4_full_support_tangent_pair_component.py
+audit_p4_full_support_tangent_pair_component.py
+```
+
+### Support-two tangent flags are a boundary of the known sixfold
+
+The support-two flag family has a common quadratic tangent direction rather
+than the two coprime obstructions of the full-support graph.  That direction
+integrates explicitly into the six-dimensional lower-pair component.
+
+In old source coordinates set
+
+```text
+e=E3,
+H=alpha*E0+beta*E2,
+S=alpha*E0-beta*E2,
+Z=tau*E1.
+```
+
+Apply `diag(alpha*epsilon,tau,beta*epsilon,1)` to the sixfold normal form and
+take
+
+```text
+s=sigma/epsilon+s0,       d=D,
+b=epsilon/sigma+B*epsilon^2,
+e1=epsilon/sigma+C*epsilon^2,
+h0=s0-D.
+```
+
+The rank-two edge planes have Pluecker valuation one and both limit to
+`span(e,H)`.  The two opposite planes have valuations two and one.  Their
+limits are
+
+```text
+span(e+pS,H+lambda*Z+qS),
+span(S,H-lambda*Z+r*e),
+```
+
+where
+
+```text
+lambda=2/sigma,
+p=-1/(sigma(B-C)),
+q=2p(C*sigma^2+h0)/sigma-1,
+r=2D/sigma.
+```
+
+These equations are dominant onto the dense polar-flag parameters.  The
+opposite flag orientation follows by a mode swap, and closure adds the
+remaining chart boundary.  Thus every support-two tangent survivor is either
+embedded `P3` or belongs to the closure of the known sixfold; no fifteenth
+component occurs there.
+
+```text
+P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md
+verify_p4_support_two_tangent_flag_boundary_inclusion.py
+audit_p4_support_two_tangent_flag_boundary_inclusion.py
+```
+
+### A disjoint secant kernel gives component fifteen
+
+For a rank-two secant edge with disjoint zero-product supports, normalize
+
+```text
+a=X0+sX1,       a_bar=X0-sX1,
+b=X2+tX3,       b_bar=X2-tX3.
+```
+
+The two cross-products `q=a*b_bar` and `r=b*a_bar` have complementary
+Witt decompositions
+
+```text
+P=span(a,b_bar),       K=span(a_bar,b),
+rad(Q_q)=K,            rad(Q_r)=P.
+```
+
+Purity selects one cross-product.  For opposite planes `A,B`, it becomes
+`Q_q(A,B)=0` and `rank(Q_r|A x B)=1`.  Projection to `P` makes the two plane
+images orthogonal, while projection to `K` forces at least one image to be a
+line.  The two maximal branches choose which opposite plane has line
+`K` projection; they are mode-swap equivalents.  Lower projection ranks are
+flag degenerations of these branches.
+
+A dense branch is
+
+```text
+ell=a+lambda*b_bar,       ell_bar=a-lambda*b_bar,
+k=a_bar+m*b,              k_bar=b+n*a_bar,
+U2=span(k,ell),
+U3=span(k_bar,ell_bar+rho*a_bar).
+```
+
+Its only coefficients are
+
+```text
+T1000=-4st(mn+1),       T1001=-4m*rho*st.
+```
+
+At `(1,2,3,4,5,6)`, the family chart minor is `48/1331`.  In pivot-`02`
+coordinates the universal Segre-incidence Jacobian has rank fourteen; the
+selected minor is
+
+```text
+136141760102400/19487171.
+```
+
+Thus the family closure is a smooth six-dimensional component.  Its generic
+pair profile is `(2,3,4,3,4,4)`.  The rank-two kernel points have disjoint
+supports `{0,1}` and `{2,3}`, unlike the overlapping supports on the earlier
+six-dimensional lower-pair component.  This raises the certified lower bound
+to fifteen component orbits.
+
+```text
+P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md
+verify_p4_disjoint_secant_lower_pair_component.py
+audit_p4_disjoint_secant_lower_pair_component.py
+```
+
+### The overlapping secant chart is the original lower-pair sixfold
+
+For overlapping supports `{0,1}` and `{0,2}`, put
+
+```text
+a=X0+sX1,       a_bar=X0-sX1,
+b=X0+tX2,       b_bar=X0-tX2,
+c=sX1+tX2.
+```
+
+The two cross-products have radical planes
+
+```text
+P=span(a,b_bar),       K=span(a_bar,b),
+P intersection K=C*c.
+```
+
+In the adapted basis `(c,a,a_bar,X3)`, their catalecticants are two stars,
+pairing only `a--X3` and `a_bar--X3`.  Opposite polar flags have an `R`
+matrix with determinant `m*n*lambda^2`; the two maximal branches are `m=0`
+and `n=0`, exchanged by an opposite-mode swap.
+
+On `m=0`, a dense branch is
+
+```text
+U0=span(a,b),
+U1=span(a_bar,b_bar),
+U2=span(c,a+lambda*X3+u*a_bar),
+U3=span(c+n*a_bar,a-lambda*X3+v*a_bar).
+```
+
+Only `T1010=-2lambda*nst` and `T1011=2lambda*st(u-v)` survive.  At
+`(s,t,lambda,u,n,v)=(1,1,-2,7,-1,3)`, the family minor is `-1/13824` and
+the pivot-`01` Segre-incidence minor is `280/729`, giving a smooth sixfold.
+
+Transforming the original sixfold certificate `(a,c,d,b,e)=(1,2,4,1,2)` by
+
+```text
+(E0,E1,E2,E3)->(E3,-E0,E2,E1)
+```
+
+and reordering modes as `(0,3,2,1)` gives exactly this same point.  Since the
+incidence is smooth of local dimension six there, the two irreducible
+six-dimensional closures coincide.  The polar-flag family is therefore a
+new dense normal form for the known overlapping lower-pair component, not
+component sixteen.
+
+```text
+P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md
+verify_p4_overlapping_secant_lower_pair_classification.py
+audit_p4_overlapping_secant_lower_pair_classification.py
+```
+
+### Support-one secants are component-fifteen boundaries
+
+For a secant rank-two edge containing a support-one zero product, normalize
+the singleton to `e tensor e`, `e=X0`.  A second singleton point, or a binary
+zero product whose support contains `0`, makes the two cross-products
+proportional and drops the pair image to rank one.  The only exact-rank-two
+case is therefore
+
+```text
+a=X1+tX2,       a_bar=X1-tX2,
+U0=span(e,a),   U1=span(e,a_bar).
+```
+
+In the adapted basis `(e,a_bar,a,X3)`, the two cross-product
+catalecticants are coordinate stars sharing the radical line `C*e`.
+Opposite-plane purity has determinant `m*n*lambda^2`.  On `m=0`, the pure
+family is
+
+```text
+U2=span(e,a_bar+lambda*X3+u*a),
+U3=span(e+n*a,a_bar-lambda*X3+v*a),
+```
+
+with only
+
+```text
+T1010=2lambda*n*t,       T1011=-2lambda*t(u-v)
+```
+
+nonzero.  Split the singleton by `g_plus=e+epsilon*X3` and
+`g_minus=e-epsilon*X3`, then set
+
+```text
+L=2epsilon/lambda,       M=-2u*epsilon/lambda,
+N=1/n,                   rho=-1+2v*epsilon/(lambda*n).
+```
+
+The planes
+
+```text
+span(g_plus,a),
+span(g_minus,a_bar),
+span(g_minus+M*a,g_plus+L*a_bar),
+span(a+N*g_minus,g_plus-L*a_bar+rho*g_minus)
+```
+
+are a punctured arc in the maximal disjoint-secant flag chart.  Their
+Pluecker valuations are `(0,0,1,1)`; the leading wedges of the last two are
+`(2/lambda)pl(U2)` and `-2/(lambda*n)pl(U3)`.  Thus the target is in
+component fifteen.  Closure and the opposite-mode swap cover every flag
+boundary.  No sixteenth component occurs.
+
+```text
+P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md
+verify_p4_support_one_secant_boundary_inclusion.py
+audit_p4_support_one_secant_boundary_inclusion.py
+```
+
+### The all-rank-two-relation triangle is a component-eleven divisor
+
+The corrected support-two flat triangle
+
+```text
+T0=span(b_bar,a_bar),
+Ti=span(a,b+alpha_i*a_bar),       i=1,2,3,
+sum_i alpha_i!=0
+```
+
+has all six pair images of rank three.  The three leaf relations have
+coefficient rank two, while the three relations from `T0` have coefficient
+rank one.  Thus it simultaneously exposes a rank-two triangle and a
+rank-one star.
+
+It is not a sixteenth component.  Apply
+`diag(1,1,alpha_1,alpha_1)` and set
+
+```text
+p=0,       r=alpha_2/alpha_1,       q=alpha_1/alpha_3.
+```
+
+In mode order `(3,1,2,0)`, the component-eleven planes become exactly the
+four `T_i`.  The pure coefficient identity is
+
+```text
+1+q(r+1)=(alpha_1+alpha_2+alpha_3)/alpha_3.
+```
+
+The dense chart `alpha_1*alpha_3!=0` therefore equals the `p=0` divisor of
+the equal-support sixfold.  Closedness supplies all parameter endpoints.
+
+```text
+P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md
+verify_p4_all_rank_two_relation_triangle_component_inclusion.py
+audit_p4_all_rank_two_relation_triangle_component_inclusion.py
+```
+
+### The disjoint mixed star is complete on its affine Borel chart
+
+With `a,a_bar` and `b,b_bar` the opposite directions on the two binary
+blocks, normalize
+
+```text
+y0=b_bar,   x1=x2=a,   y3=a_bar,   x3=b,
+x0=A*a+B*a_bar+b-b_bar.
+```
+
+On the affine leaf chart, the two remaining kernel rows are forced to be
+
+```text
+y1=-A*f*a+a_bar+f*b+phi*b_bar,
+y2=-A*j*a+eta*a_bar+j*b+kappa*b_bar.
+```
+
+All forbidden coefficients are exactly `N*(j,kappa,eta)^T`, with
+
+```text
+N=[[0,1,phi],
+   [B*f+1,1-B*phi,f+phi],
+   [A^2*f+B,0,B*f+1]].
+```
+
+Writing `delta=Bf+1`, `J=f+Bphi^2`, and `D=A^2f+B` gives
+
+```text
+det N=D*J-delta^2.
+```
+
+For rank two the kernel is `(J,phi*delta,-delta)`, exactly the old
+component-eight family.  Rank one is equivalent to `delta=J=D=0`; its
+kernel is the projective line `(h,-phi,1)` plus `(1,0,0)`.  Explicit formal
+arcs from `D*J=delta^2` recover every finite `h` and the endpoint, so no
+extra component occurs where the cross product vanishes.
+
+```text
+P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md
+verify_p4_disjoint_mixed_star_affine_classification.py
+audit_p4_disjoint_mixed_star_affine_classification.py
+```
+
+### The projective disjoint mixed-star chart has no vertical component
+
+Homogenize the first leaf row by `[h:g:p]` and replace the affine purity
+matrix by
+
+```text
+N=[[0,h,p],
+   [B*g+h,h-B*p,g+p],
+   [A^2*g+B*h,0,B*g+h]].
+```
+
+Its determinant
+
+```text
+A^2*B*g*p^2+A^2*g^2*h-B^2*g^2*h+B^2*h*p^2
+-B*g*h^2-h^3
+```
+
+is the irreducible homogenization of the component-eight equation.  The
+rank-one base is completely described by four one-dimensional strata:
+the two affine sign pairs, the `h=0,B!=0` sign pair, the single
+`h=0,B=0,A!=0` section, and the `h=0,A=B=0` projective line.
+
+The projectivized kernel incidence lies in `A^2 x P^2 x P^2`, of dimension
+six, and has three equations.  Every component therefore has dimension at
+least three.  The rank-one base plus its `P^1` kernel fiber has dimension
+only two, so it supports no vertical component.  The unique-kernel graph
+over the irreducible rank-two determinant locus is consequently dense in
+the whole incidence.  Every projective boundary point lies in component
+eight.
+
+```text
+P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md
+verify_p4_disjoint_mixed_star_projective_classification.py
+audit_p4_disjoint_mixed_star_projective_classification.py
+```
+
+Primary theorem and verifiers:
+
+```text
+P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md
+verify_p4_support_one_211_triangle_reduction.py
+audit_p4_support_one_211_triangle_reduction.py
+```
+
+### Arbitrary-order permanent kernel deletion and the exact-minimal boundary
+
+The `P_5` source-row tricolour cover and kernel Hall hierarchy extend
+without any order-five special feature.  If
+
+```text
+P_m(phi_0,...,phi_(m-1))=Delta_3,
+```
+
+then for every source subset `S` of size `2<=s<=m-1` and every colour,
+at least `s` local `S`-row spans contain that coordinate covector.  The
+proof pins `s-1` modes to the target colour and leaves `m-s+1` source
+vectors competing for only `m-s` undeleted source rows.
+
+The singleton boundary follows from a different exact mechanism.  Delete
+one fixed source row in all modes.  The restricted diagonal target is a
+sum of three decomposable tensors.  The rank-one dependence lemma excludes
+three surviving terms; a coordinate-plane quotient excludes exactly two;
+one cannot vanish.  Hence every source row is realized as each of the three
+coordinate covectors somewhere, forcing at least `3m` coordinate cells.
+
+If the whole row table has exactly `3m` nonzero cells, those cells are the
+three coordinate covers.  Pure nonvanishing makes each colour class a
+perfect matching.  Their union is a properly three-coloured cubic
+bipartite graph on `2m>4` vertices.  Bogdanov's theorem supplies a mixed
+perfect matching, and its colour word has exactly one supported edge at
+each mode, so its coefficient is one nonzero monomial.  Thus the
+exact-minimal coordinate-only branch is impossible for all `m>=3`.
+
+```text
+ARBITRARY_PERMANENT_KERNEL_DELETION_HIERARCHY.md
+verify_arbitrary_permanent_kernel_deletion_hierarchy.py
+audit_arbitrary_permanent_kernel_deletion_hierarchy.py
+```
+
+### Root `m=7` symbolic route boundaries
+
+For two residual vertices the common cofactor matrix is always
+`J=[[0,1],[1,0]]`.  The corrected Gram block is therefore exactly
+
+```text
+a_u tensor b_v+b_u tensor a_v,
+```
+
+and every such family has a legal residual-edge realization.  The new Gram
+theorem adds no obstruction on this cell; the displayed Hall data actually
+saturate the rank-two scalar Schur chart.  That displayed construction is
+nevertheless excluded by one lower-jet coefficient: varying two roots in
+the `e_0` tangent directions kills every incident graph edge, while the
+all-zero GHZ derivative equals one.
+
+The majority hierarchy is also now known to be insufficient in this cell.
+On the bipartition `P={p_0,...,p_6}`, `B={b_0,...,b_6}`, the three cyclic
+matchings `p_j b_(j+2c)` realize the canonical blocker incidence, all local
+ranks, both port spans, sharp Hall, and the three pure coefficients.  Every
+`7+r`-set contains at least `r` internal edges of each pure matching, so all
+majority ideal-power memberships hold simultaneously on overlapping sets.
+The mixed word `0022111` still has one unique matching and coefficient one.
+
+Finally, the current lower-frame theorem only forces spans of complementary
+cofactors.  A formal support model satisfies every such span with no affine
+even four-cube.  The smallest admissible four-terminal Hirota overlay has a
+`4 x 6` hidden-class incidence map of rank four, so arbitrary visible data
+can be completed.  Retaining a blocker core does not preserve Wick
+log-quadraticity: the all-ones six-vertex example has bosonic conditional
+cumulant `15-9-9-9=-12`.  Its distinct alternating Hirota defect is
+`15-9+9-9=6`.  A usable next cumulant theorem must force named intermediate
+cofactors or identify/annihilate hidden overlay classes.
+
+```text
+ROOT_M7_SYMBOLIC_ROUTE_BOUNDARY_THEOREMS.md
+verify_root_m7_symbolic_route_boundary_theorems.py
+audit_root_m7_symbolic_route_boundary_theorems.py
+```
+
+### The arbitrary permanent support floor is `3m+2`
+
+The mode-side concision bound and source-side singleton cover are
+transverse.  Every local map is injective, hence has at least three nonzero
+rows, while every source-row/colour pair has a coordinate representative.
+At total support `3m+1`, at most one row is noncoordinate and the mode
+degrees are one four and the rest three.
+
+If all rows are coordinate, the three colour graphs have edge counts
+`m,m,m+1`; each has a unique perfect matching.  If the exceptional row is
+noncoordinate, either it is unused beside three coordinate matchings, or it
+repairs the unique missing-colour mode by replacing one doubled coordinate
+edge.  In the repair case the omitted edge and every off-label use of the
+repair row share one source endpoint.  Bogdanov supplies a mixed matching
+in the three pure matchings.  Its word has no second term: one exceptional
+edge cannot make an alternating cycle, and the two repair exceptions cannot
+occur together.  Hence every restriction has at least `3m+2` cells.
+
+At coordinate-only equality, choose one pure matching per colour.  Two cells
+remain.  Any cancellation of a mixed backbone matching must use both, so
+its symmetric difference is one alternating four-cycle.  If a two-colour
+factor has two cycle components, complementary mixed orientations are
+edge-disjoint and one escapes that fixed rectangle.  Equality therefore
+requires three Hamilton pair-factors plus one universal colour-compatible
+transposition and exact binomial cancellation.
+
+```text
+ARBITRARY_PERMANENT_THREE_M_PLUS_TWO_SUPPORT_BOUND.md
+verify_arbitrary_permanent_three_m_plus_two_support_bound.py
+audit_arbitrary_permanent_three_m_plus_two_support_bound.py
+```
+
+### Four-root named cofactors and hidden-overlay surjectivity
+
+For the all-root derivative, parity leaves only the two endpoint classes.
+Rank two forces their blocker cofactors to form a basis of the binary
+diagonal plane.  At a four-root derivative the only deletion classes are
+`empty,Q,{r_k,q_0},{r_k,q_1}`.  Quotienting by that diagonal plane leaves
+
+```text
+h_k tensor bar(C_I)+q_k tensor bar(C_(I union Q))=0.
+```
+
+Thus rank two makes both named cofactors individually diagonal; rank one
+makes one exact combination diagonal.  Expanding the all-root endpoint
+forms as `g_t=sum_k L_(kt)h_k` shows that the ideal of active `h_k` contains
+the coprime monomials `X=product x_i` and `Y=product y_i`.  At least two
+internal four-root sectors are active.
+
+The scalar four-terminal overlay itself has no hidden common-weight
+constraint.  A sparse four-core graph realizes
+
+```text
+(x_01,x_02,x_03,x_12,x_13,x_23)=(-d,f,-e,b,-a,c),
+```
+
+a signed coordinate permutation of determinant one.  The elimination ideal
+is zero, and two isolated unit core edges embed the construction into the
+actual eight-vertex core unchanged.  Future work must use the coloured
+cofactor equations, not scalar Hirota identities alone.
+
+```text
+ROOT_M7_FOUR_ROOT_HIDDEN_PAIR_COFACTOR_THEOREM.md
+verify_root_m7_four_root_hidden_pair_cofactor_theorem.py
+audit_root_m7_four_root_hidden_pair_cofactor_theorem.py
+ROOT_M7_HIROTA_HIDDEN_OVERLAY_SURJECTIVITY_NOGO.md
+verify_root_m7_hirota_hidden_overlay_surjectivity_nogo.py
+audit_root_m7_hirota_hidden_overlay_surjectivity_nogo.py
+```
+
+### Equality rectangles and coloured quotient minors
+
+The arbitrary-order `3m+2` equality stratum is now localized without
+assuming coordinate-only rows.  Choose a mandatory coordinate cell for
+every source/colour pair and one pure perfect matching per colour.  The two
+remaining physical cells have source set `P_*`.  For any word induced by a
+matching in the three-colour backbone, every eligible non-backbone physical
+cell has source in `P_*`.  Bogdanov supplies a mixed backbone matching.
+Alternating-cycle parity then excludes `|P_*|<2`; at equality the two excess
+cells must have distinct source endpoints.
+
+After collapsing coloured parallel copies back to physical row cells, any
+second term for the same backbone word differs by the unique cross
+four-cycle on those two sources.  Its whole coefficient is
+
+```text
+AD+BC,
+```
+
+so cancellation forces cross-ratio `-1`.  Only a closed odd cycle whose
+ratio variables telescope is immediately contradictory; unrelated odd
+collections are not.  The exact remaining problem is therefore the
+consistency of a signed two-source rectangle system, not a support census.
+
+```text
+ARBITRARY_PERMANENT_EQUALITY_EXCEPTIONAL_SOURCE_RECTANGLE_THEOREM.md
+verify_arbitrary_permanent_equality_exceptional_source_rectangle_theorem.py
+audit_arbitrary_permanent_equality_exceptional_source_rectangle_theorem.py
+ARBITRARY_PERMANENT_EQUALITY_NEGATIVE_GAIN_GRAPH_THEOREM.md
+verify_arbitrary_permanent_equality_negative_gain_graph_theorem.py
+audit_arbitrary_permanent_equality_negative_gain_graph_theorem.py
+ARBITRARY_PERMANENT_EQUALITY_PURE_MATCHING_CUBE_THEOREM.md
+verify_arbitrary_permanent_equality_pure_matching_cube_theorem.py
+audit_arbitrary_permanent_equality_pure_matching_cube_theorem.py
+ARBITRARY_PERMANENT_EQUALITY_BACKBONE_COLORING_GLUE_THEOREM.md
+verify_arbitrary_permanent_equality_backbone_coloring_glue_theorem.py
+audit_arbitrary_permanent_equality_backbone_coloring_glue_theorem.py
+```
+
+Writing
+
+```text
+g_(i,c)=r_(i,p_2)[c]/r_(i,p_1)[c]
+```
+
+turns every `H`-induced rectangle equation into `g_u/g_v=-1`.  For one fixed
+pure backbone, the gain graph is canonically bipartite by the two exceptional
+source labels, so no single-backbone odd-cycle argument can work.  When the
+graphs from all choices of pure matchings are glued by identifying the same
+physical ratio states, the union must still be bipartite but has no automatic
+source bipartition.  The exact next theorem is combinatorial: prove that
+alternating-cycle changes of pure matchings force an odd cycle in this glued
+graph, or isolate a global two-colouring normal form compatible with the
+remaining coefficients.
+
+Localization applies to a pure backbone matching too.  Any other matching
+for the same pure word can introduce new edges only at `p_1,p_2`; its
+symmetric difference is therefore the unique four-cycle cross transposition.
+Each colour has at most two pure matchings, and every switch must use both
+excess cells.  Physical-cell incidence permits at most one switch when the
+excess modes differ or either excess cell is coordinate.  In the remaining
+co-located noncoordinate branch, the equality mode-degree ledger permits at
+most two switches.  Thus all pure-backbone choices form a face of
+`{0,1}^k`, `k<=2`, and number at most four.  If a switch exists, its pure
+coefficient is `w(M)(1+rho)=lambda_c!=0`, so its transport ratio is not the
+mixed cancellation gain `-1`.  The all-backbone problem is now at most two
+symbolic binary switches, not an unbounded matching-family search.
+
+The gluing itself has a complete `F_2` descent criterion.  Make one vertex
+for every connected component of every fixed-backbone cancellation graph.
+Two component vertices sharing a ratio state are joined with the xor of that
+state's two canonical source-side labels.  The all-backbone union is
+bipartite exactly when every cycle in this component-overlap graph has label
+sum zero.  In particular, two adjacent cube backbones are incompatible if
+one common component connects two shared states and exactly one state flips
+source side under the pure switch.  Proving that some switch must straddle in
+this sense is now the next equality lemma.
+
+The proposed rank-two hidden-pair bridge fails even with simultaneous common
+root edges.  Four sparse tangent blocks
+
+```text
+E_12=a x_1x_2, E_34=b x_3x_4,
+E_03=c y_0y_3, E_24=d y_2y_4
+```
+
+and endpoint forms supported only at roots zero and one give a rank-two
+all-root frame spanning `X,Y`, exactly two endpoint-active coprime internal
+sectors, and five hidden pairs of scalar-form rank at most one.  An arbitrary
+residual--residual value only adds `r h_k` to `q_k` and preserves the claim.
+This is a tangent-jet countermodel, not a full lower-cofactor or `P_7`
+realization.  It proves that the missing bridge must use actual lower
+cofactor values.
+
+Quotienting those lower cofactors by the binary diagonal plane does produce
+a complete abstract invariant.  In every active sector,
+
+```text
+bar(C_k) wedge bar(E_k)=0,
+```
+
+so all two-word coefficient minors vanish.  These minors generate the
+rank-one determinantal elimination ideal for unrestricted hidden scalar
+forms, and no nonzero linear visible invariant exists.  At least two of the
+five sectors are active; hence every product of four sector minors vanishes,
+giving five degree-eight active-label-free equations.  Common hafnian
+realizability may impose more.  The next concrete target is to force a
+selected minor nonzero from `P_7` incidence or a deeper cofactor value.
+
+```text
+ROOT_M7_SIMULTANEOUS_RANK_ONE_HIDDEN_PAIR_REALIZATION_NOGO.md
+verify_root_m7_simultaneous_rank_one_hidden_pair_realization_nogo.py
+audit_root_m7_simultaneous_rank_one_hidden_pair_realization_nogo.py
+ROOT_M7_COFACTOR_QUOTIENT_WEDGE_INVARIANT.md
+verify_root_m7_cofactor_quotient_wedge_invariant.py
+audit_root_m7_cofactor_quotient_wedge_invariant.py
+```
+
+### Symbolic local-to-global pivot: Wick completion, common residual Gram, and majority ideals
+
+The complete coloured partial-matching family has a single exact completion
+criterion.  In the vertex-exclusive algebra
+
+```text
+A=K[x_(i,c)]/<x_(i,c)x_(i,d)>,
+```
+
+it is `M=exp(Q_W)`.  Hence a proposed family comes from one common edge
+system iff `log M` has only degree two.  All four-, six-, and higher-point
+block cumulants vanish.  Synchronous contraction gives the necessary Fermat
+shadow
+
+```text
+haf([t^T W_ij t])=t_0^n+t_1^n+t_2^n,
+```
+
+whose three mixed Hessians are explicit sums of one- and two-edge deletion
+hafnians.
+
+For any even contracted residual set `Q`, put `A_pq=B_pq(z_p,z_q)`,
+`h=haf(A)`, `C_pq=haf(A[Q-{p,q}])`, and
+`(R_u x)_p=B_up(x,z_p)`.  Exact matching partition gives
+
+```text
+H_uv=hB_uv+R_u^T C R_v.
+```
+
+Thus all corrected port blocks possess one common symmetric Gram completion
+of rank at most `rank C`.  Anchoring a nonsingular cross block gives the
+Schur defect
+
+```text
+S=G_UX-G_UA(G_DA)^(-1)G_DX,
+rank S<=rank(C)-3|A|.
+```
+
+This supplies small gauge-invariant minors and quadrilateral holonomy tests.
+Localization at all residual coordinate forms also proves the arbitrary-`Q`
+torus dichotomy: either a coordinate-nonzero residual choice has `h=0`, or
+the whole restricted residual hafnian is one coordinate monomial.
+
+A separate majority count gives a nested ideal hierarchy.  On `n=2m`
+vertices, if `|S|=m+r` and the complement is nonempty, every matching has
+`a=d+r>=r` internal `S` edges.  Therefore each GHZ pure tensor on `S` lies in
+the `r`th power of the internal-edge ideal.  For `r=1`, the full common
+kernel of the pair-contraction maps--including entangled tensors--must
+annihilate all three diagonal pure tensors.
+
+Finally, the generic hafnian family cannot be moved into the spinor family
+by fixed edge signs or phases: the `K_3,3` restriction would turn a permanent
+into a diagonally reweighted determinant, and three coefficient ratios give
+an immediate characteristic-not-two contradiction.  Nonzero complex
+principal-hafnian support also fails delta-matroid exchange by an explicit
+six-vertex cancellation example.  Spinor tools are therefore legal only
+after a proved support-specific specialization.
+
+The global conjecture and enlarged Hall-satisfying `P_7` branch remain
+`UNKNOWN`.  The next exact target is the intersection of forced lower
+mixed-jet frames with common Gram/Schur minors and one partition-closed
+four-/six-point cumulant or overlapping majority-set ideal condition.
+
+```text
+BLOCK_SQUARE_ZERO_WICK_COMPLETION_THEOREM.md
+RESIDUAL_HAFNIAN_COMMON_COFACTOR_GRAM_THEOREM.md
+MAJORITY_SUBSET_INTERNAL_EDGE_IDEAL_HIERARCHY.md
+BOSONIC_HAFNIAN_SPINOR_NO_TRANSFER.md
+```
+
+### One-switch equality: switch-core rigidity and cut normal form
+
+Suppose exactly one colour `c` has two pure matchings, with four switch
+entries `A,B,C,D` on modes `a,b` and exceptional sources `p_1,p_2`.  Their
+common residual pure weight factors the required coefficient as
+
+```text
+lambda_c=W_c(AD+BC)!=0.
+```
+
+Any nonmonochromatic backbone matching using both selected switch edges has
+the same residual factor and the unique cross partner, so its forbidden
+coefficient is `W_F(AD+BC)!=0`.  Such a matching cannot exist.  Deleting the
+two switch modes and exceptional sources therefore leaves a common residual
+backbone with a unique perfect matching: any second residual matching would
+extend either to a forbidden nonmonochromatic matching in the selected
+backbone or to a third pure `c` matching.  Contracting that unique residual
+matching produces an acyclic dependency digraph and a triangular
+biadjacency support.
+
+For the two cancellation fibres, make a bipartite component-incidence graph
+with one edge per shared ratio state.  Exactly the two switch-state edges
+carry label one.  Cut--cycle duality says that equality at the gluing level
+is possible exactly when this marked pair is a cut: both marked edges are
+bridges, or both are nonbridges in one two-edge series cut.  Equivalently,
+every incidence cycle contains both marked edges or neither.  The local
+straddling obstruction is the parallel-edge two-cycle special case; longer
+cycles give the full criterion.
+
+The next arbitrary-order target is no longer merely "force straddling".  It
+is to prove that the triangular residual permanent equations place one
+marked incidence edge on a cycle avoiding the other, thereby excluding the
+bridge-or-series normal form.
+
+```text
+ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_CUT_NORMAL_FORM_THEOREM.md
+verify_arbitrary_permanent_equality_one_switch_cut_normal_form_theorem.py
+audit_arbitrary_permanent_equality_one_switch_cut_normal_form_theorem.py
+```
+
+### Two-switch equality: excess-plane and component separation
+
+In the only possible two-switch ledger, the two noncoordinate excess rows
+sit at one mode `a`, the two switch colours are `c,d`, and the third colour
+is `e`.  There is exactly one mandatory coordinate cell at `a`.
+Localization forces it to have colour `e`: if it had colour `c` or `d`, both
+pure matchings of that colour would omit it at a nonexceptional source.
+
+Writing the excess rows as
+
+```text
+(A,C,E_1), (B,D,E_2)
+```
+
+local concision gives `AD-BC!=0`.  Equivalently the two switch-colour gain
+ratios at the common mode are distinct.  In a fibre where those states have
+the same exceptional-source side, an even cancellation path would make the
+ratios equal, so they lie in different components.  Each switch state is
+also separated from its mandatory partner at `b_c` or `b_d`: the nonzero
+pure coefficient says their gains are not negatives, while any connecting
+path would have odd length and force exactly that equality.
+
+Thus the obvious same-mode pair cannot furnish a straddling obstruction, and
+the same-colour core pairs cannot route one either.  A future contradiction
+must connect to a ratio state away from the common excess mode; cross-colour
+pairs at `b_c,b_d` remain unanalysed.  The excess plane is a point of
+`Gr(2,3)`, where there is no quadratic Pluecker relation.  The two known
+rectangles can also be made simultaneously determinant-signed.  A third row
+pair would obstruct one common signing, but that orientation failure is not
+a bosonic permanent contradiction.  Matchgate identities remain
+inapplicable without a complete deletion-closed signature.
+
+```text
+ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCESS_PLANE_SEPARATION_THEOREM.md
+verify_arbitrary_permanent_equality_two_switch_excess_plane_separation_theorem.py
+audit_arbitrary_permanent_equality_two_switch_excess_plane_separation_theorem.py
+```
+
+### Zero-switch equality is excluded
+
+Assume every full colour-eligibility graph `G_c` has a unique pure perfect
+matching `M_c`.  It has the `m` mandatory colour cells plus at most the two
+excess cells.  Every nonexceptional source therefore has degree one and its
+mandatory edge is forced.  Contracting `M_c` leaves an acyclic dependency
+digraph with at most two nonmatching arcs.
+
+For any mixed matching in `H=M_0 union M_1 union M_2`, the two colours at the
+exceptional sources are distinct: equal terminal colours would make the
+rectangle partner a second pure matching of that colour.  A colour also
+cannot occur at the first exceptional source in one mixed matching and at
+the second in another, because the two cross cells would again create its
+pure switch.  Hence the two nonempty port-colour sets are disjoint.
+
+Every pair `M_a union M_b` is one Hamilton cycle.  If its two-factor had
+multiple components, choosing colours componentwise gives either a mixed
+matching with equal terminal colours, or, in the two-component split-port
+case, two complementary hybrids whose rectangle partners create switches in
+both colours.
+
+Bogdanov supplies a mixed matching for `m>=3`, so both disjoint port-colour
+sets are nonempty subsets of three colours and one is a singleton `{c}`.
+Every mixed matching would have to use the fixed `M_c` edge at that port.
+But any other `M_c` edge is a chord of the Hamilton cycle made by the other
+two colours.  Removing the chord endpoints leaves two even path interiors;
+their alternating matchings plus the chord form a mixed backbone matching
+that avoids the fixed port edge.  Contradiction.
+
+Thus every `3m+2` equality survivor has one or two switchable colours.
+
+```text
+ARBITRARY_PERMANENT_EQUALITY_ZERO_SWITCH_EXCLUSION_THEOREM.md
+verify_arbitrary_permanent_equality_zero_switch_exclusion_theorem.py
+audit_arbitrary_permanent_equality_zero_switch_exclusion_theorem.py
+```
+
+### One-switch equality exclusion
+
+Assume `c` is the unique switch colour and `d,e` are nonswitch.  Every pair
+of selected pure matchings is one alternating Hamilton cycle.  If, for
+example, `M_c union M_d` had multiple components, selecting colours by
+component either creates a mixed matching using both selected `c` switch
+edges, contradicting the nonzero pure switch factor, or gives two split-port
+hybrids whose rectangle partners create a second pure `d` matching.  The
+same argument treats `M_c union M_e`; the zero-switch component argument
+treats `M_d union M_e`.  Pairwise Hamiltonicity also excludes shared
+physical cells.
+
+Now each exceptional `M_d` edge `f_s=(i_s,p_s)` is a chord of the Hamilton
+cycle `M_c union M_e`.  A bipartite Hamilton-cycle chord extends to a perfect
+matching `F_s`.  The mixed coefficient of `F_s` forces the cross cell
+
+```text
+r_(i_s,p_(3-s))[d] !=0.
+```
+
+Doing this for `s=1,2` transposes both exceptional edges of `M_d` and creates
+a second pure `d` matching, contradicting that `d` is nonswitch.  Thus the
+one-switch equality stratum is empty at every order, and every equality
+survivor must have exactly two switches.
+
+```text
+ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_EXCLUSION_THEOREM.md
+verify_arbitrary_permanent_equality_one_switch_exclusion_theorem.py
+audit_arbitrary_permanent_equality_one_switch_exclusion_theorem.py
+```
+
+### Two-switch port completion and Hall shores
+
+Let `A_0={a,b_c,b_d}` and let `Q={q,p_1,p_2}`, where the unique coordinate
+third-colour cell at `a` has source `q`.  Deleting `A_0,Q` from any pure
+backbone gives one switch-independent residual graph `R`; outside `A_0` the
+physical support is coordinate-only with exactly one cell per colour.
+
+`R` has a perfect matching exactly when an opposite-source backbone contains
+the direct mixed completion that uses `a--e--q` and routes `b_c,b_d` to the
+two exceptional sources in colours `c,d`.  The exceptional-source cross
+partner then forces the missing rectangle between the two degree-four modes.
+If `R` fails Hall, the same equation could still follow indirectly from other
+mixed coefficients.
+
+If `R` has no perfect matching, a minimal Hall-deficient mode set `S` with
+`T=N_R(S)` has `|T|=|S|-1`.  There is one residual `c` port to `q`, one `d`
+port to `q`, and two `e` ports to `p_1,p_2`.  Both switch-colour port modes
+lie in `S`, at least one third-colour port lies in `S`, and the `c,d`
+restrictions are bijections onto `T`.  Their internal union is one
+alternating path between the port modes plus cycles.  The connected shore
+`S union T` has cut type `(1,1,1)` if one `e` port lies in `S`, and
+`(1,1,3)` if both do.
+
+A fixed `m=6` support realizes the latter Hall shore while satisfying
+`3m+2` cells, the exact `3,4,4,3,3,3` degree ledger, rank three at every mode,
+exactly two pure switches, and every source-subset Hall quota.  It is not a
+solution of the mixed coefficient equations.  It is a rigorous no-go for
+forcing the third rectangle from ledger/rank/Hall data alone.
+
+The three-edge shore is now excluded by a full-support tight-cut flattening.
+Its `c,d` ports have the same outside source `q`, so Laplace expansion has
+only two distinct complement minors:
+
+```text
+P_m=(L_c+L_d) O_q+L_e O_p.
+```
+
+Thus its shore flattening has rank at most two, while the corresponding
+nontrivial flattening of `Delta_3` has rank three.  This is an arbitrary-order
+contradiction and packages all mixed coefficients at once.  At this
+three-edge checkpoint, the sole no-completion shore still open was
+`(1,1,3)`.
+
+```text
+ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_PORT_COMPLETION_SHORE_THEOREM.md
+verify_arbitrary_permanent_equality_two_switch_port_completion_shore_theorem.py
+audit_arbitrary_permanent_equality_two_switch_port_completion_shore_theorem.py
+ARBITRARY_PERMANENT_EQUALITY_THREE_EDGE_SHORE_FLATTENING_EXCLUSION.md
+verify_arbitrary_permanent_equality_three_edge_shore_flattening_exclusion.py
+audit_arbitrary_permanent_equality_three_edge_shore_flattening_exclusion.py
+```
+
+The five-edge shore is now excluded as well.  For either switch colour `h`,
+the restrictions of `M_h,M_e` to the defect-one shore have boundary patterns
+`{H}` and `{E_1,E_2,I}`.  The conservation law `outgoing-incoming=1` forces
+the internal pairing
+
+```text
+H <-> E_(iota_h),      E_(3-iota_h) <-> I.
+```
+
+The pure `h`-switch toggles the exterior `H`--`E_s` pairing without changing
+`iota_h`.  The aligned backbone therefore splits `M_h symmetric-difference
+M_e` into at least two cycles.  Flipping only the aligned cycle produces a
+mixed perfect matching using `u_(e,s)--e--p_s` and
+`b_h--h--p_(3-s)`.  Exceptional-source localization says its only possible
+partner is their transposition, but the residual coordinate-only mode
+`u_(e,s)` has no `e`-cell to `p_(3-s)`.  Its forbidden mixed coefficient is
+therefore one nonzero monomial.
+
+Both no-completion shores are excluded.  The residual graph `R` must have a
+perfect matching, and the direct completion forces
+
+```text
+g_(b_c,c)=-g_(b_d,d).
+```
+
+This cross-colour equation is the new two-switch frontier; it is not yet a
+contradiction with the pure switch factors or the excess-plane inequality.
+
+```text
+ARBITRARY_PERMANENT_EQUALITY_FIVE_EDGE_SHORE_KEMPE_EXCLUSION.md
+verify_arbitrary_permanent_equality_five_edge_shore_kempe_exclusion.py
+audit_arbitrary_permanent_equality_five_edge_shore_kempe_exclusion.py
+```
+
+### Two-switch equality exclusion and strict support
+
+Let `c,d` be the switch colours and `e` the nonswitch colour.  Choose the
+pure `c,d` matchings so that their common excess mode `a` is routed to
+opposite exceptional sources.  Such a fibre exists because all four
+combinations of the two pure choices can be selected as backbones.  Then
+
+```text
+p_1 --c-- a --d-- p_2
+```
+
+lies in one alternating component of `M_c union M_d`.  If another component
+existed, choosing `c` on the marked component and `d` on the other would give
+a mixed matching using both selected `c` switch edges, contradicting
+switch-core rigidity.  Thus `M_c union M_d` is Hamilton.
+
+The switch--nonswitch component argument also makes `M_c union M_e` and
+`M_d union M_e` Hamilton, so `M_e` is physically edge-disjoint from the
+switch matchings.  Its exceptional edges are genuine chords of the
+`M_c union M_d` Hamilton cycle.  Extending both chords and applying
+two-source localization forces both `e` cross cells, creating a second pure
+`M_e`.  This contradicts that `e` is nonswitch.
+
+The zero-, one-, and two-switch branches exhaust the pure-matching cube and
+are all excluded.  Therefore no `3m+2` equality restriction exists.  Together
+with the previous `3m+2` lower bound, integrality gives
+
+```text
+support(P_m -> Delta_3) >= 3m+3       for every m>=3.
+```
+
+This remains a strict permanent-support theorem, not the global Krenn--Gu
+proof; larger-support restrictions and their graph-side realization remain
+open.
+
+```text
+ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCLUSION_THEOREM.md
+verify_arbitrary_permanent_equality_two_switch_exclusion_theorem.py
+audit_arbitrary_permanent_equality_two_switch_exclusion_theorem.py
+```
+
+### The three-excess layer is an `S_2/S_3` port system
+
+Assume support is exactly `3m+3` and remove a mandatory `3m`-cell
+tricolour coordinate cover.  Let `P_*` be the source endpoints of the three
+excess physical cells.  Bogdanov supplies a mixed backbone matching, whose
+zero coefficient needs an alternating cancellation cycle.  Such a cycle
+uses at least two new source endpoints, so
+
+```text
+2 <= |P_*| <= 3.
+```
+
+For a fixed matching `F` in the selected backbone, exceptional-source
+localization puts every new cell of a same-word matching at `P_*`.  Its
+symmetric difference with `F` has only one alternating cycle: two disjoint
+cycles would require at least four exceptional sources.  Hence the
+alternative is a transposition or a three-cycle of the modes that `F`
+matches into `P_*`.  If `X` is their mode--source coefficient matrix, with
+absent physical cells entered as zero, the complete backbone-word
+coefficient is exactly
+
+```text
+W_F per(X),          X of size 2 x 2 or 3 x 3.
+```
+
+It follows without enumeration that every backbone-word coefficient has at
+most six physical matching terms.  Pure words are sharper.  A full
+colour-eligibility graph has at most three cells beyond one selected pure
+matching; after contraction these give at most three loopless nonmatching
+arcs.  Such a digraph has at most one directed cycle, of length two or three.
+Thus every colour has at most two pure matchings, related by one alternating
+four- or six-cycle, and the pure backbones form a Boolean cube of dimension
+at most three and size at most `2^3=8`.  The interior at arbitrary `m` has
+been factored into `W_F`; only the two- or three-port boundary remains on
+this localized face.
+
+There is a sharp new bypass.  The matrix
+
+```text
+    [ 1  0  0 ]
+L = [ t  1  1 ],       t != 0,
+    [ 0 -1  1 ]
+```
+
+has nonzero diagonal and exactly three off-diagonal cells using all three
+source endpoints, but `per(L)=0`.  Its diagonal cancels by transposing ports
+two and three while port one remains fixed.  Thus a Hamilton chord at port
+one need not force either cross cell out of that port.
+
+For a chord row `s`, the fixed-row channel is exactly
+
+```text
+L_(s,s) per(L_(hat s,hat s)).
+```
+
+If the complementary `2 x 2` permanent is nonzero, cancellation forces an
+outgoing cross cell from `s`.  If this holds at all three chord rows, the
+three forced outgoing arcs contain a directed two- or three-cycle and hence
+give a second pure matching.  The next symbolic target is to exclude the
+fixed-port bypass rectangles or prove the complementary minors nonzero from
+global backbone compatibility.
+
+```text
+ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md
+verify_arbitrary_permanent_three_excess_port_permutation_theorem.py
+audit_arbitrary_permanent_three_excess_port_permutation_theorem.py
+```
+
+### Matching-covered cycle/theta core and the `B_3` phase variety
+
+At exact support `3m+3`, the physical mode--source support graph is
+matching-covered.  Any edge outside all perfect matchings could be deleted
+without changing the permanent, giving a forbidden `3m+2` restriction.  If
+the support were disconnected, its permanent would factor across a
+nontrivial mode partition and have flattening rank one, while `Delta_3` has
+rank three there.
+
+A matching-covered theorem of de Carvalho and Little puts any three
+prescribed edges in a conformal subgraph made from at most two alternating
+circuits.  Their sharper classification and bipartiteness reduce the carrier
+to an induced even circuit or an even subdivision of the three-edge theta
+graph.  These arbitrary-length cores have exactly two or three internal
+perfect matchings, and their complements have perfect matchings.  This does
+not yet prevent cross edges or force coefficient cancellation to remain
+inside the carrier.
+
+The three-source port matrix also admits a complete phase normalization.
+For transposition gains `a,b,c` and oriented three-cycle gains `u,v`, every
+forbidden backbone-word coefficient satisfies
+
+```text
+1+a+b+c+u+v=0,
+uv=abc.
+```
+
+The second equation is the unique cubic circuit of the Birkhoff polytope
+`B_3`.  The three complementary fixed-row channels are `1+c,1+b,1+a`.
+Their simultaneous vanishing sets `a=b=c=-1`, after which the remaining
+equations are `u+v=2`, `uv=-1`, with complex solutions
+`1+sqrt(2),1-sqrt(2)`.  A full-support port matrix realizes this point.
+Therefore one three-port coefficient cannot prove that a complementary
+minor is nonzero, even when every gain is nonzero.
+
+The proposed phase-decorated `B_3` exchange complex would glue these
+additive and multiplicative equations across physical cell identifications
+and the at-most-eight pure backbones.  Its missing definition is the
+incidence alignment between those backbones and the matching supplied by the
+conformal cycle/theta theorem.  This is the next exact construction target;
+its obstruction remains unknown.
+
+```text
+ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md
+verify_arbitrary_permanent_three_excess_conformal_birkhoff_reduction.py
+audit_arbitrary_permanent_three_excess_conformal_birkhoff_reduction.py
+```

@@ -1,0 +1,82 @@
+{
+  "role": "construction",
+  "date_utc": "2026-08-01T14:43:55Z",
+  "git_commit": "f997c8366b461f3952faef0d35b512318341909d",
+  "claim_label": "VERIFIED",
+  "discovery_claim_label": "CANDIDATE",
+  "independent_verifier_complete": true,
+  "scope": "Complete diagonal source-torus DVR/Puiseux atlas over the two component-20 zero-restriction base points (p,q)=(0,1),(-1,0), for arbitrary positive local valuations/residues and D=diag(c0*t^x0,c1*t^x1,c2*t^x2,1), including exact nonzero-P4 min-plus locus, leading planes, rank profiles, component-placement evidence, centre symmetry, and pointwise H31/H22 obstructions.",
+  "method": "Exact symbolic Plucker limits, Z3 real-linear min-plus exhaustion on every ultrametric branch and exact axis, exact SymPy minors/permanents for all 16 charts, explicit centre isomorphism, and pointwise Hall-support arguments.",
+  "exact_result": {
+    "E": "3*x0+x1+x2+z+a0-m0-m1-m2-m3",
+    "z": "min(x0,x1,x2)",
+    "a0": "min(r+x1,s+x2,w)",
+    "m0": "min(r+x0+x1,s+x0+x2,w+x0,x1+x2,x1,x2)",
+    "m1_at_p0": "min(x0+x1,s+x0+x2,x0)",
+    "m2_at_p0": "min(r+x0+x1,x0+x2,x0)",
+    "m3": "min(x0+x1,x0+x2)",
+    "pminus1_symmetry": "exchange m1 and m2",
+    "nonzero_P4_condition": "x1=x2=0 and x0<=-min(r,s)",
+    "strata": ["interior x0<-h", "wall x0=-h"]
+  },
+  "residue_branches": {
+    "r_lt_s": "w=r, sigma=pi; includes v=0",
+    "s_lt_r": "w=s, sigma=-theta; includes u=0",
+    "equal_no_cancellation": "r=s=w=h and pi*theta*(pi-theta)!=0",
+    "equal_higher_cancellation": "r=s=h, w>h, pi=theta!=0; includes u=v",
+    "constant": "u=v=0 gives identically zero restriction"
+  },
+  "centre_isomorphism": {
+    "source": "diag(1,-1,-1,1)",
+    "mode_action": "swap modes 1 and 2",
+    "profile_action": "01<->02 and 13<->23",
+    "U0_plucker_action": "(a,b,c,d,e,f)->(-a,-b,c,d,-e,-f)"
+  },
+  "placement_by_stratum": {
+    "interior": "component 20 and component 18 closures; additionally component 15 iff the profile has rank 2",
+    "wall": "component 20 and component 16 closures; not the component 18 common-singleton family"
+  },
+  "expected_chart_ids": [
+    "p0_r_lt_s_interior",
+    "p0_r_lt_s_wall",
+    "p0_s_lt_r_interior",
+    "p0_s_lt_r_wall",
+    "p0_equal_no_cancellation_interior",
+    "p0_equal_no_cancellation_wall",
+    "p0_equal_higher_cancellation_interior",
+    "p0_equal_higher_cancellation_wall",
+    "pm1_r_lt_s_interior",
+    "pm1_r_lt_s_wall",
+    "pm1_s_lt_r_interior",
+    "pm1_s_lt_r_wall",
+    "pm1_equal_no_cancellation_interior",
+    "pm1_equal_no_cancellation_wall",
+    "pm1_equal_higher_cancellation_interior",
+    "pm1_equal_higher_cancellation_wall"
+  ],
+  "expected_pair_profiles": {
+    "p0_r_lt_s_interior": [2, 3, 3, 3, 3, 3],
+    "p0_r_lt_s_wall": [3, 4, 4, 3, 3, 3],
+    "p0_s_lt_r_interior": [3, 2, 3, 3, 3, 3],
+    "p0_s_lt_r_wall": [4, 3, 4, 3, 3, 3],
+    "p0_equal_no_cancellation_interior": [3, 3, 3, 3, 3, 3],
+    "p0_equal_no_cancellation_wall": [4, 4, 4, 3, 3, 3],
+    "p0_equal_higher_cancellation_interior": [3, 3, 2, 3, 3, 3],
+    "p0_equal_higher_cancellation_wall": [4, 4, 3, 3, 3, 3],
+    "pm1_r_lt_s_interior": [3, 2, 3, 3, 3, 3],
+    "pm1_r_lt_s_wall": [4, 3, 4, 3, 3, 3],
+    "pm1_s_lt_r_interior": [2, 3, 3, 3, 3, 3],
+    "pm1_s_lt_r_wall": [3, 4, 4, 3, 3, 3],
+    "pm1_equal_no_cancellation_interior": [3, 3, 3, 3, 3, 3],
+    "pm1_equal_no_cancellation_wall": [4, 4, 4, 3, 3, 3],
+    "pm1_equal_higher_cancellation_interior": [3, 3, 2, 3, 3, 3],
+    "pm1_equal_higher_cancellation_wall": [4, 4, 3, 3, 3, 3]
+  },
+  "limitations": [
+    "Independently verified construction output; the discovery claim label remains CANDIDATE.",
+    "The exhaustion covers diagonal source-torus DVR/Puiseux arcs only; it does not classify arbitrary non-diagonal source changes.",
+    "Component placement records closure inclusions, not equality or uniqueness of irreducible component.",
+    "The H31/H22 conclusions are pointwise necessary-condition obstructions for the displayed limiting Segre directions.",
+    "No finite-field computation is used, and no conclusion here resolves the global Krenn-Gu conjecture."
+  ]
+}

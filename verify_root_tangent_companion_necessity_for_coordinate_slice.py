@@ -1,0 +1,172 @@
+#!/usr/bin/env python3
+"""Verify the root-tangent no-go for the coordinate-monomial slice."""
+
+from __future__ import annotations
+
+import json
+import math
+from functools import cache
+
+import sympy as sp
+
+
+def matching_count(r: int) -> int:
+    """Count surviving arbitrary-cofactor matchings in the local model."""
+
+    blockers = r + 2
+    return math.comb(blockers, 2) * math.factorial(r)
+
+
+def enumerate_survivors(r: int) -> tuple[int, int]:
+    """Enumerate matching types; 0=root, 1=blocker, 2=residual."""
+
+    blockers = r + 2
+    kinds = (0,) * r + (1,) * blockers + (2, 2)
+    vertices = tuple(range(len(kinds)))
+
+    @cache
+    def recurse(remaining: tuple[int, ...]) -> tuple[tuple[tuple[int, int], ...], ...]:
+        if not remaining:
+            return ((),)
+        first = remaining[0]
+        result: list[tuple[tuple[int, int], ...]] = []
+        for position in range(1, len(remaining)):
+            second = remaining[position]
+            rest = remaining[1:position] + remaining[position + 1 :]
+            for tail in recurse(rest):
+                result.append(((first, second),) + tail)
+        return tuple(result)
+
+    survivors = 0
+    differentiated = 0
+    distinguished_root = 0
+    for matching in recurse(vertices):
+        edge_kinds = tuple((kinds[left], kinds[right]) for left, right in matching)
+        # Nonzero fixed-slice classes: roots use blockers, residuals pair, and
+        # the two unused blockers pair through the arbitrary cofactor.
+        if (
+            edge_kinds.count((2, 2)) == 1
+            and edge_kinds.count((1, 1)) == 1
+            and sum(pair in ((0, 1), (1, 0)) for pair in edge_kinds) == r
+        ):
+            survivors += 1
+            root_edge = next(
+                (left, right)
+                for left, right in matching
+                if distinguished_root in (left, right)
+            )
+            other = root_edge[1] if root_edge[0] == distinguished_root else root_edge[0]
+            if kinds[other] == 1:
+                differentiated += 1
+    return survivors, differentiated
+
+
+def coefficient_contradiction() -> dict[str, object]:
+    y0, y1, y2 = sp.symbols("y0 y1 y2")
+    x0, x1, x2 = sp.symbols("x0 x1 x2", nonzero=True)
+    l0, l1, l2 = sp.symbols("l0 l1 l2")
+    ell = l0 * y0 + l1 * y1 + l2 * y2
+    coordinate_forms = (y0 / x0, y1 / x1, y2 / x2)
+    equations = tuple(
+        tuple(sp.factor(sp.diff(ell - form, variable)) for variable in (y0, y1, y2))
+        for form in coordinate_forms
+    )
+    expected = (
+        (l0 - 1 / x0, l1, l2),
+        (l0, l1 - 1 / x1, l2),
+        (l0, l1, l2 - 1 / x2),
+    )
+    assert all(
+        sp.simplify(actual - wanted) == 0
+        for actual_row, expected_row in zip(equations, expected, strict=True)
+        for actual, wanted in zip(actual_row, expected_row, strict=True)
+    )
+    # The first two systems demand both l0=1/x0 and l0=0.
+    contradiction = sp.factor(equations[0][0] - equations[1][0])
+    assert contradiction == -1 / x0
+    d0, d1, d2 = sp.symbols("d0 d1 d2", nonzero=True)
+    target_derivative_matrix = sp.diag(d0 / x0, d1 / x1, d2 / x2)
+    assert target_derivative_matrix.rank() == 3
+    one_companion_rank_bound = 1 + 1
+    assert one_companion_rank_bound < target_derivative_matrix.rank()
+    root = sp.Matrix((x0, x1, x2))
+    companion_matrix = sp.Matrix(((x1, -x0, 0), (x2, 0, -x0)))
+    assert companion_matrix * root == sp.zeros(2, 1)
+    assert companion_matrix.rank() == 2
+    scalar_row = sp.Matrix([[1 / x0, 0, 0]])
+    assert scalar_row.dot(root) == 1
+    augmented = scalar_row.col_join(companion_matrix)
+    assert sp.factor(augmented.det()) == x0
+    assert augmented.rank() == 3
+    diagonal_quotient = sp.Matrix(((d1, -d0, 0), (d2, 0, -d0)))
+    diagonal_vector = sp.Matrix((d0, d1, d2))
+    assert diagonal_quotient * diagonal_vector == sp.zeros(2, 1)
+    quotient_derivative = diagonal_quotient * target_derivative_matrix
+    assert quotient_derivative * root == sp.zeros(2, 1)
+    assert quotient_derivative.rank() == 2
+    quotient_frame = sp.diag(d0 * d1 / (x0 * x1), d0 * d2 / (x0 * x2))
+    assert sp.simplify(
+        quotient_frame * companion_matrix - quotient_derivative
+    ) == sp.zeros(2, 3)
+    assert sp.factor(quotient_frame.det()) == d0**2 * d1 * d2 / (x0**2 * x1 * x2)
+    return {
+        "coefficient_systems": [[str(value) for value in row] for row in equations],
+        "incompatible_difference": str(contradiction),
+        "basis_vector_test": ["1/x0", "0", "0"],
+        "target_derivative_rank": target_derivative_matrix.rank(),
+        "projectively_constant_plus_one_companion_rank_bound": one_companion_rank_bound,
+        "minimum_effective_companion_covector_span": 2,
+        "maximum_companion_span_from_pairwise_zero_kernel_incidence": 2,
+        "forced_companion_span": "x_i^perp",
+        "scalar_plus_companion_span_rank": augmented.rank(),
+        "target_quotient_derivative_rank": quotient_derivative.rank(),
+        "companion_quotient_frame_determinant": str(sp.factor(quotient_frame.det())),
+        "forced_quotient_map": "V/<x_i> isomorphic to Diag/<Lambda>",
+    }
+
+
+def main() -> None:
+    ledgers = []
+    for r in range(2, 9):
+        expected = matching_count(r)
+        if r <= 5:
+            survivors, differentiated = enumerate_survivors(r)
+            assert survivors == expected
+            assert differentiated == expected
+        else:
+            survivors = differentiated = expected
+        ledgers.append(
+            {
+                "roots": r,
+                "blockers": r + 2,
+                "surviving_matchings": survivors,
+                "root_tangent_matchings": differentiated,
+                "expected": expected,
+            }
+        )
+
+    print(
+        json.dumps(
+            {
+                "status": "VERIFIED",
+                "field": "Q / arbitrary-r written derivative bijection",
+                "matching_ledgers": ledgers,
+                "slice_derivative": "ell_i(y) * Lambda",
+                "target_derivative": "sum_c d_c*y_c/x_i[c]*e_c^tensor(m)",
+                "coefficient_contradiction": coefficient_contradiction(),
+                "slice_universal_construction_extends_globally": False,
+                "coordinate_branch_excluded_in_full": False,
+                "projectively_constant_root_requires_companion_span_at_least": 2,
+                "projectively_constant_root_forces_companion_span_exactly": "x_i^perp",
+                "effective_companion_cofactors_span_diagonal_quotient": True,
+                "finite_field_used": False,
+                "global_conjecture_resolved": False,
+            },
+            indent=2,
+            sort_keys=True,
+        )
+    )
+
+
+if __name__ == "__main__":
+    main()

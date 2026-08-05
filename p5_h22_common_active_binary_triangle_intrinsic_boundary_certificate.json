@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "role": "construction",
+  "date_utc": "2026-08-01T13:27:10Z",
+  "git_commit": "3b23ef9e7803dbf9f3e89684971f8707f2d41d7f",
+  "claim_label": "VERIFIED",
+  "discovery_claim_label": "CANDIDATE",
+  "scope": "weighted H22 over the generic point of component twenty's intrinsic wall q=p+1, over Q(p), excluding p=0,-1,-1/2 and component-parameter infinity",
+  "inputs": {
+    "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md": "ddd3dd8a441db26e6a0fa238842c56ed369133151944a203acc66e3d4bd4ad51",
+    "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md": "49149b81ad2a50982d69f03d6e391808ced2beaddff0115f0c86039dd361c823",
+    "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md": "52168b35b43c40c483919c8fa1dd37e7c147cae5f331320d8656bf6a1ed309a9"
+  },
+  "method": "direct replacement-basis reconstruction, exact characteristic-zero permanent expansion, and complete normalized projective elimination of the individual and shared weighted incidences",
+  "replacement_normal_form": {
+    "base_divisor": "q=p+1",
+    "alpha": [
+      "-A+B",
+      "e",
+      "e",
+      "e+A+B"
+    ],
+    "beta": [
+      "p*(p+1)/(2*p+1)*e-(2*p+1)*A+C",
+      "(p+1)*A+p*B+C",
+      "p*A+(p+1)*B+C",
+      "e"
+    ],
+    "pure_support": {
+      "1111": "-2*p*(p+1)"
+    },
+    "function_field": "Q(p)",
+    "excluded_component_parameters": [
+      "p=0",
+      "p=-1",
+      "p=-1/2",
+      "p=infinity"
+    ]
+  },
+  "projective_weight_cover": {
+    "finite_chart": "[lambda:1]",
+    "homogeneous_weight_infinity": "[1:0]",
+    "individual_binary_projections": {
+      "finite_D01": [
+        "1"
+      ],
+      "finite_D23": [
+        "1"
+      ],
+      "infinity_D01": [
+        "1"
+      ],
+      "infinity_D23": [
+        "1"
+      ]
+    },
+    "shared_H22_projections": {
+      "finite_D01_binary_orientation": [
+        "1"
+      ],
+      "finite_D23_binary_orientation": [
+        "1"
+      ],
+      "infinity_D01_binary_orientation": [
+        "1"
+      ],
+      "infinity_D23_binary_orientation": [
+        "1"
+      ]
+    }
+  },
+  "survivor_ledger": {
+    "individual_genuine_binary_survivors": [],
+    "shared_H22_survivors": []
+  },
+  "failed_leads": [
+    {
+      "claim": "a weighted merge can restore a genuine binary incidence although all four coordinate deletions are obstructed",
+      "status": "REFUTED",
+      "reason": "all four exact individual finite/infinity weighted binary projections are the unit ideal over Q(p)"
+    }
+  ],
+  "conclusion": "generic intrinsic-wall weighted H22 fibre of component twenty is empty",
+  "conclusion_label": "VERIFIED",
+  "limitations": "verified after a fresh no-import replay; only the generic point of q=p+1 is covered; p=0,-1,-1/2, component-parameter infinity, mixed source-torus/projective limits, and every unrelated special fibre remain open here; the verified p+q=0 wall is separate; no pure-P4 exhaustiveness, arbitrary-order local-to-global, prize-graph, or global Krenn-Gu claim",
+  "finite_field_computation_used": false,
+  "broad_brute_force_used": false,
+  "independent_verifier_complete": true,
+  "global_krenn_gu_resolved": false
+}

@@ -1,0 +1,8 @@
+# Symbolic computation baseline for the verifier/generator scripts.
+# External binaries used by some replay packages are NOT pip-installable:
+# Singular, msolve, kissat, glucose, drat-trim must be on PATH where a
+# certificate's README says so; every affected script is fail-closed
+# (timeout/error recorded, never treated as success) when they are absent.
+sympy>=1.14
+numpy>=2.0
+python-sat>=1.8

@@ -1,17 +1,53 @@
+# Python
 __pycache__/
 *.pyc
+
+# Scratch space (kept on disk for reference, never committed)
+tmp/
+.claude/
+
+# Solver run inputs and outputs (regenerable from the Python generators)
+*.sing
+*.ms
+*.out
+*.stdout
 *.log
+*.result
+
+# SAT/proof artifacts (regenerable; replay packages keep manifests only)
+*.cnf
+*.drat
+
+# Brute-force CEGAR state and catalogue dumps (produced by package_*.py)
+research_snapshots/*/states/
+*_cegar_state.json
+sat_catalogue*.json
+*_core_charts.json
+fresh_singular_replay.json
+q5_311_zero_forest_seeds*.json
+rare_support_cover.json
+zero_forest_records.json
+rare_zero_probe.json
+focused_ledger.json
+audit_c10.json
+audit_c4c6.json
+degree_one_macaulay_certificates.json
+
+# Per-project generated intermediates (long-standing rules)
 *_candidate*.json
 search_seed_*_best.json
 weighted_seed_*_best.json
 killer_*.json
 prism_stratum*.json
 prism_*.sing
-*.sing
 *_orbits.json
 triangle_support*.json
-*.cnf
-*.result
-*.drat
-tmp/
-.claude/
+
+# Leftover generated files kept on disk for reference, never re-added
+research_snapshots/2026-07-27-p5-coordinate-cegar/*/manifest.json
+!research_snapshots/2026-07-27-p5-coordinate-cegar/three_partial_c10_audit/manifest.json
+research_snapshots/2026-07-27-p5-coordinate-cegar/*/.gitattributes
+research_snapshots/2026-07-27-p5-tree-chart-cover/*.gz
+research_snapshots/2026-08-04-p4-equal-support-rank-two-strata/scripts/star_purity_data.json
+research_snapshots/2026-08-04-p4-equal-support-rank-two-strata/scripts/triangle_data.json
+research_snapshots/2026-08-04-p4-equal-support-rank-two-strata/scripts/activedet_equal.txt

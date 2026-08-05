@@ -37,6 +37,25 @@ DEPENDENCIES = (
     ROOT / "P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md",
     ROOT
     / "P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+    ROOT
+    / "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+    ROOT / "P4_EMBEDDED_P3_PURE_COMPONENT.md",
+    ROOT
+    / "P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
+    ROOT
+    / "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
+    ROOT
+    / "P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md",
+    ROOT
+    / "P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md",
+    ROOT
+    / "P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md",
+    ROOT
+    / "P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md",
+    ROOT
+    / "P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md",
+    ROOT
+    / "P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md",
     ROOT / "P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md",
     ROOT / "P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md",
     ROOT / "P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md",
@@ -259,7 +278,7 @@ def main() -> None:
                 "second_component_survivor_divisor_classified": True,
                 "second_component_boundary_marked_fibre_excluded": True,
                 "second_component_whole_marked_fibre_excluded": True,
-                "known_pure_component_orbits_at_least": 8,
+                "known_pure_component_orbits_at_least": 9,
                 "three_one_three_components_exist": True,
                 "three_one_three_components_pair_product_profile": [
                     4,
@@ -299,8 +318,19 @@ def main() -> None:
                 "disjoint_mixed_star_component_exists": True,
                 "disjoint_mixed_star_component_supports": ["01", "01", "23"],
                 "disjoint_mixed_star_component_generic_marked_fibre_excluded": True,
+                "embedded_P3_component_exists": True,
+                "embedded_P3_component_pair_profile": [4, 4, 4, 2, 2, 2],
+                "embedded_P3_component_generic_marked_fibre_excluded": True,
+                "embedded_P3_component_complete_marked_fibre_excluded": True,
+                "embedded_P3_component_normalized_chart_marked_fibre_excluded": True,
+                "embedded_P3_component_nine_insertion_points_closed": True,
+                "embedded_P3_component_support_two_A_zero_boundary_H31_excluded": True,
+                "embedded_P3_component_r_zero_A_nonzero_boundary_H31_excluded": True,
+                "embedded_P3_component_complete_affine_B_nonzero_H31_excluded": True,
+                "embedded_P3_component_projective_compactification_H31_excluded": True,
                 "seven_previously_known_components_generic_marked_fibres_excluded": True,
                 "all_eight_known_components_generic_marked_fibres_excluded": True,
+                "all_nine_known_components_generic_marked_fibres_excluded": True,
                 "mixed_determinantal_five_primes_classified": True,
                 "mixed_determinantal_additional_component_orbits": 0,
                 "remaining_exceptional_pair_graphs": [
@@ -344,9 +374,13 @@ def main() -> None:
                 "diagonal_quadric_component_generic_weighted_incidence_empty": True,
                 "diagonal_quadric_component_projective_join_fibre_empty": True,
                 "diagonal_quadric_component_properness_transport": True,
-                "known_components_generic_weighted_H22_empty_count": 7,
-                "certified_pure_component_orbit_count": 8,
-                "disjoint_mixed_star_component_generic_weighted_incidence_empty": False,
+                "known_components_generic_weighted_H22_empty_count": 9,
+                "certified_pure_component_orbit_count": 9,
+                "disjoint_mixed_star_component_generic_weighted_incidence_empty": True,
+                "embedded_P3_component_generic_weighted_incidence_empty": True,
+                "embedded_P3_component_rank_two_projected_line_H22_boundary_excluded": True,
+                "embedded_P3_component_rank_one_projection_collapse_excluded": True,
+                "embedded_P3_component_complete_normalized_chart_weighted_H22_excluded": True,
                 "six_dimensional_component_diagonal_pencils": [
                     "x0_equals_x1",
                     "x2_equals_x3",
@@ -358,7 +392,8 @@ def main() -> None:
                 "first_rank_two_component_projective_boundary_closed": False,
                 "diagonal_quadric_component_special_divisors_closed": False,
                 "seven_previously_known_components_generic_H22_incidence_empty": True,
-                "all_eight_known_components_generic_H22_incidence_empty": False,
+                "all_eight_known_components_generic_H22_incidence_empty": True,
+                "all_nine_known_components_generic_H22_incidence_empty": True,
                 "all_H22_excluded": False,
                 "source_contractions": [
                     "P4_to_pure_or_Delta2",

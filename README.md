@@ -5,6 +5,2237 @@
 **UNRESOLVED globally.**  This repository does not yet contain a proof or
 counterexample for all even `n >= 6` and `d >= 3`.
 
+### Start here: 3 August 2026 continuation
+
+The shortest route into the current symbolic `P_7` frontier is
+[`SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md`](SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md).
+It separates proved statements from formal-cofactor and quotient-shadow
+controls, gives the ranked cross-depth program, and records the exact
+`UNKNOWN` boundaries.  The component-20 special-fibre continuation remains
+separate in
+[`NEXT_INSTANCE_HANDOFF_2026-07-31.md`](NEXT_INSTANCE_HANDOFF_2026-07-31.md).
+
+The formal Euler--Hessian response jets now have an exact physical
+interpretation: an edge derivative is the response of the same graph after
+deleting that edge's two endpoints, and a disjoint second derivative is the
+corresponding four-vertex deletion response.  This converts the missing
+analytic jet into a synchronized principal-deletion deck.  It also exposes a
+sharp legality obstruction.  A mixed word with `r` roots can carry an even
+deletion set only when `r` is even and large enough, so root polarization
+cannot expose these decks in the odd-root `P_5` or `P_7` branches.  Four-root
+`P_6` is parity-compatible: a clean `2 x 3` permanental fan has determinant
+`-2` and recovers all six pair-deletion faces, but the required clean shore
+and nuisance separation are not yet forced.  See
+[`RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md`](RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md).
+
+On that clean `P_6` fan, target diagonality has now been translated exactly.
+If the fan is invertible, each target-colour deck vector lies in the inverse
+image of `Seg(P^1 x P^2)` and therefore obeys three pulled-back `2 x 2`
+minor equations.  This does not force a coordinate boundary: for every
+invertible fan the pulled-back Segre cone meets the full six-coordinate
+torus, and three such points can retain the required ranks `(2,3)`.  An
+explicit all-nonzero permanental family has determinant
+`-2 Vandermonde(t)^2 sum(t)` and supports a full-torus three-colour target
+slice together with a nonzero legal root--root shore.  Thus GHZ rank-one
+equations alone cannot force a zero shore, a singular fan, or a zero face.
+Physical hafnian-deck integrability, target-clean nuisance separation, and
+synchronized depth-four compatibility remain unknown.  See
+[`P6_CLEAN_TWO_BY_THREE_SELECTOR_SEGRE_PULLBACK_AND_TORUS_PERMISSION_THEOREM.md`](P6_CLEAN_TWO_BY_THREE_SELECTOR_SEGRE_PULLBACK_AND_TORUS_PERMISSION_THEOREM.md).
+
+Scalar physical integrability cannot rescue that obstruction.  Split an
+eight-vertex nonroot graph into a four-vertex core and a four-window.  For
+arbitrary desired six-face values `y_pq`, core edges one, core--window edges
+`tau`, and window edges `(y_pq-12 tau^2)/3` realize all six faces on one
+common graph.  This is a split surjection onto `K^6`; its complete seventy-
+label four-deletion deck and all thirty-six partner stresses have closed
+form.  Every torus face vector has a full-edge-torus realization, so the
+physical scalar face locus meets every pulled-back Segre chart.  Three pure-
+colour sections also coexist in one invertible diagonal block graph, but a
+mixed-colour coefficient equals `-10/3`, exposing the genuinely tensorial
+remaining obstruction.  See
+[`P6_PHYSICAL_SIX_FACE_HAFNIAN_SECTION_FOUR_DECK_SYNCHRONIZATION_AND_SEGRE_SHARPNESS.md`](P6_PHYSICAL_SIX_FACE_HAFNIAN_SECTION_FOUR_DECK_SYNCHRONIZATION_AND_SEGRE_SHARPNESS.md).
+
+That canonical section now has an exact tensorial no-go, even after every
+off-diagonal colour entry is freed.  The complete `5+1` mixed layer is one
+`72 x 56` axis operator for each colour pair.  A two-coordinate
+complement-sum covariant of the six pure faces makes its kernel exactly the
+five-dimensional space of directed core circulations; every off-diagonal
+entry touching the four-window is therefore zero.  A `4+2` word is then
+forced to equal `3b_pq`, which is nonzero for all eighteen exact Segre
+entries.  GHZ-to-GHZ local gauges are only a common colour permutation and
+vertexwise diagonal scalings, so they cannot erase this obstruction.  This
+excludes the canonical scalar section and its target-stabilizer orbit, not
+other scalar realizations in the large six-face fibre.  See
+[`P6_AXIS_COMPLEMENT_SUM_COVARIANT_OFFDIAGONAL_AND_GAUGE_NO_GO.md`](P6_AXIS_COMPLEMENT_SUM_COVARIANT_OFFDIAGONAL_AND_GAUGE_NO_GO.md).
+
+The canonical obstruction is not fibre-invariant.  For an arbitrary scalar
+point of the six-face fibre, the exact dimension of the `5+1` axis kernel
+visible on the four-window is the **axis port defect**
+`delta=44-rank(M)+rank(M_C)`.  At the `tau=0` coordinate-boundary section,
+the same three prescribed Segre columns have axis ranks `(19,7)`, nullity
+`37`, and `delta=32`.  Exact symmetric-form congruence then cancels every
+`5+1` coefficient and every `4+2` coefficient whose two minority vertices
+are the window pair.  The remaining mixed core/window placement is
+`Y_(i,q)(DX)_(i,p)`.  Nonsingular Gram completions cannot make all of these
+terms vanish, because that would force three complementary products of the
+face column to agree, contrary to each exact target column.  Singular Gram
+completions are closed by the row-support theorem below; other scalar fibres
+and the full two- and three-colour systems remain unknown.  See
+[`P6_ARBITRARY_FIBRE_AXIS_PORT_DEFECT_AND_TWO_COLOUR_GRAM_ESCAPE_THEOREM.md`](P6_ARBITRARY_FIBRE_AXIS_PORT_DEFECT_AND_TWO_COLOUR_GRAM_ESCAPE_THEOREM.md).
+
+The `tau=0` section is now excluded at arbitrary port rank, including the
+entire five-dimensional core-circulation kernel.  The both-window and
+both-core `4+2` equations force all six symmetrized row-pair products of each
+core--window matrix onto one face-column line.  Because every exact column
+has full support and violates the rank-one tetrad identities, an injectivity
+lemma leaves exactly two nonzero rows.  The mixed core/window equations make
+the two row supports complementary and force one surviving row pair to be
+opposites, which restores the forbidden tetrad identity.  This also closes
+all singular Gram factors.  Combining it with the nonzero-`tau` axis theorem
+and a hybrid zero/nonzero argument excludes every point of the explicit
+three-parameter split-surjective section family.  Other points of the full
+six-face scalar fibre remain unknown.  See
+[`P6_TAU_ZERO_SINGULAR_GRAM_TETRAD_SUPPORT_AND_FOUR_PLUS_TWO_NO_GO.md`](P6_TAU_ZERO_SINGULAR_GRAM_TETRAD_SUPPORT_AND_FOUR_PLUS_TWO_NO_GO.md).
+
+The full six-face fibre really is larger than that excluded section.  A
+second exact rational realization uses the matching core
+`a_01=3,a_23=1`, zero window edges, and two active core--window rows whose
+hyperbolic product is `y_pq=r_p s_q+s_p r_q`.  For every colour pair its
+axis data are `(rank M,rank M_C,nullity,delta)=(30,2,26,16)`, with a
+coordinate kernel supported on the inactive two-vertex shore.  One exact
+kernel deformation cancels the window-pair, inactive-core-pair, and one
+active-row `4+2` family, but transfers the obstruction to the other active
+row as `s_p^(d)r_q^(c)`; on face `45` this is the prescribed nonzero face
+value.  Thus neither the tau-section tetrad nor the first obstruction's
+location is fibre-invariant.  Complete cancellation on this fibre and an
+unrestricted P6 obstruction remain unknown.  See
+[`P6_TWO_SHORE_HYPERBOLIC_SCALAR_FIBRE_AXIS_DEFECT_AND_FOUR_PLUS_TWO_TRANSFER_THEOREM.md`](P6_TWO_SHORE_HYPERBOLIC_SCALAR_FIBRE_AXIS_DEFECT_AND_FOUR_PLUS_TWO_TRANSFER_THEOREM.md).
+
+Four residual vertices also admit a complete **even-depth** physical
+integrability test, so the unavailable singleton and triple residual decks
+can be eliminated rather than exposed.  After normalization by the empty
+deck, the six pair decks must be `a_ij+L_i L_j` for four common port-linear
+forms.  Their three complementary products agree, and the full residual
+deck is forced by one explicit quartic Wick identity.  Conversely these
+common-row and top equations reconstruct a graph, so the criterion is exact.
+This can be combined with the clean `P_6` Segre equations if the complete
+optional-blocker response polynomials are legally synchronized.  A fixed
+all-blockers-present tensor coefficient does not supply those subset
+convolutions, so that exposure remains unknown.  See
+[`FOUR_RESIDUAL_EVEN_WICK_TOWER_AND_P6_SYNCHRONIZATION_THEOREM.md`](FOUR_RESIDUAL_EVEN_WICK_TOWER_AND_P6_SYNCHRONIZATION_THEOREM.md).
+
+At one corrected two-port response depth, the universal algebraic obstruction
+is now completely identified.  After subtracting `hB_uv`, the scalar port
+array is exactly the off-diagonal projection of the symmetric rank-at-most-`q`
+variety, where `q` is the residual order.  Its ideal is the elimination ideal
+of the `(q+1)`-minors after the latent diagonal entries are removed; one fixed
+nonsingular hafnian cofactor form already fills this whole variety, including
+the full-support `h=0` core for `q>=4`.  Thus no additional hafnian-specific
+polynomial exists at this single depth.  For two residuals, four scalar ports
+are dominant and five are minimal: their ideal is generated by one explicit
+12-term degree-five pentad.  Evaluating five block ports promotes it to a
+basis-independent tensor obstruction, although a legal witness window
+exposing five compatible corrected responses is not yet forced.  See
+[`RESIDUAL_TWO_PORT_FACTOR_ANALYSIS_IDEAL_AND_FIVE_PORT_PENTAD_THEOREM.md`](RESIDUAL_TWO_PORT_FACTOR_ANALYSIS_IDEAL_AND_FIVE_PORT_PENTAD_THEOREM.md).
+
+The five-port pentad now has a sharp legality boundary.  In every
+two-residual `P_5/P_6/P_7` cell, the residual-present corrected pair lies at
+the maximal allowed root depth, while its direct correction lies two depths
+beyond the root budget.  Thus the `h=0` branch is parity-eligible, but the
+`h!=0` correction is not available from one root window.  More decisively,
+every residual-null polar/marked-star/fan selector can activate at most three
+named pair blocks: a nonzero block forces one of the three target-colour
+neighbourhoods to equal that pair.  Every pentad monomial needs five blocks,
+so the determinant-cleared polar pentad is termwise zero.  The surviving
+route requires a target-compatible mixed-label sensor rather than another
+null-polar fan.  See
+[`LEGAL_FIVE_PORT_PENTAD_WINDOW_ROOT_BUDGET_AND_NULL_POLAR_SPARSITY_THEOREM.md`](LEGAL_FIVE_PORT_PENTAD_WINDOW_ROOT_BUDGET_AND_NULL_POLAR_SPARSITY_THEOREM.md).
+
+The surviving target-compatible route is now exact on the full-sensor
+simple-incidence stratum.  Injectivity of the 219-label sensor supplies a
+linear selector for every named residual-pair coordinate, so all 21
+five-blocker pentads form one `S_7`-equivariant degree-five covariant.  Any
+nonzero component excludes the entire nonzero target line from `h=0`.
+Target incidence alone does not force the obstruction: an exact ambient
+simple-incidence control has pentad `-6`.  On the pinned open, `h=0` is one
+degree-eight numerator and the complete 21-coordinate pair sector is
+equivalent to degree-17 rank-one alignment with the two reconstructed
+stars, including the zero cases.  The legal GHZ fibre meeting this
+full-sensor incidence stratum remains unknown.  See
+[`P7_TARGET_LINE_H0_PAIR_PROJECTION_PENTAD_AND_STAR_ALIGNMENT_THEOREM.md`](P7_TARGET_LINE_H0_PAIR_PROJECTION_PENTAD_AND_STAR_ALIGNMENT_THEOREM.md).
+
+Those target-line tests now pull back without introducing a free
+219-vector.  For the legal polynomial companion map, the variable diagonal
+incidence ideal is the maximal-minor ideal `I_219(pi_Delta Gamma)`.  On a
+simple-incidence chart, signed `218 x 218` minors give the unique line vector
+`q(z)`, so the degree-5 pentad, degree-8 gate, and degree-17 alignment become
+polynomial covariants in the legal graph parameters.  More precisely, an
+invertible amplitude of relative weight 15 gives one Laurent ideal
+`<eta(q), tau q_01ij-khat_ij(q)>` which is necessary and sufficient for the
+complete 21-entry `h=0` pair sector and glues across minor charts.  Exact
+ambient controls with `d_0=d_1=32805`, pentad `-6`, and alignment
+`-2152336050` prove that even gated simple incidence does not force this
+ideal; whether its legal localization is the unit ideal remains unknown.
+See
+[`LEGAL_COMPANION_SIMPLE_INCIDENCE_WEIGHTED_PULLBACK_IDEAL_AND_NONFORCING_THEOREM.md`](LEGAL_COMPANION_SIMPLE_INCIDENCE_WEIGHTED_PULLBACK_IDEAL_AND_NONFORCING_THEOREM.md).
+
+Projective dimension now gives a legal, parameter-free obstruction to one
+possible unit proof.  Every injective 219-label companion image meets the
+third secant of the five-qutrit Segre in dimension at least eight.  The
+inverse image of the complete seven-port two-factor-analysis variety has
+codimension exactly eight, so their intersection is nonempty for every legal
+full sensor.  Hence neither the complete factor-analysis ideal nor any eight
+chosen homogeneous gate/pentad/alignment components can eliminate the whole
+mandatory border-GHZ family.  On an expected zero-dimensional proper chart,
+the remaining `h=0` and star-alignment question reduces to a finite Artinian
+Laurent quotient; multiplication by the degree-eight gate gives its exact
+norm/unit test.  The forced intersection may still lie entirely on the
+nonconcise, pair-zero, pinned, or root-torus boundary, so the full localized
+pair ideal remains undecided.  See
+[`LEGAL_P7_SECANT_FACTOR_CODIMENSION_BARRIER_AND_ARTINIAN_PAIR_IDEAL_REDUCTION.md`](LEGAL_P7_SECANT_FACTOR_CODIMENSION_BARRIER_AND_ARTINIAN_PAIR_IDEAL_REDUCTION.md).
+
+For the committed legal sensor, that finite reduction is now explicit at
+the structural level.  The certified first 219 sensor rows replace all
+preimage variables and augmented minors by 24 determinant-cleared residuals.
+On the 32-dimensional ordered rank-three secant space, these residuals and
+the exact seven-variable two-factor ideal (35 cubics, 21 pentads,
+codimension eight, degree 259) have expected dimension zero.  Kruskal
+uniqueness gives six ordered lifts on the torus-concise open, while one
+generic exterior/pair contraction localizes simultaneously at simple
+incidence and a nonzero named pair.  The resulting finite algebra is zero
+exactly when the committed intersection is boundary-trapped and nonzero
+exactly when it has a good-open survivor; a further Laurent quotient decides
+the `h=0` star-alignment sector.  That algebra has not yet been constructed,
+so neither outcome is asserted.  See
+[`COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md`](COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md).
+
+The primitive `P_7` branch has two new complementary reductions.  The 35
+remaining leaf quadrics are equivalent to one projective collinearity
+`u wedge v=0`; when it holds, the nonzero affine scale is unique.  On the
+corank-one Schur-pencil stratum this becomes 595 highly dependent homogeneous
+degree-67 equations, while the deeper rank-drop stratum is retained.  The
+exceptional class `a_j=R/4` has size at most four, and size four lies on one
+explicit symmetric cubic.  Independently, every primitive square forces the
+full `28 x 28` hafnian Hessian to kill the eight-dimensional vertex-incidence
+space.  It descends to a 20-dimensional zero-row-sum quotient; on its
+invertible chart the four-/six-hafnian deck reconstructs the primitive edge
+component and leaves exactly an additive eight-parameter gauge.  A fixed
+ambient primitive control has quotient rank 20, so the forced corank-eight
+bound is sharp without asserting that the control is a physical square.  See
+[`P7_PRIMITIVE_BOOLEAN_SQUARE_COMPLEMENT_RADIAL_AND_EXCEPTIONAL_CLIQUE_THEOREM.md`](P7_PRIMITIVE_BOOLEAN_SQUARE_COMPLEMENT_RADIAL_AND_EXCEPTIONAL_CLIQUE_THEOREM.md)
+and
+[`P7_PRIMITIVE_BOOLEAN_SQUARE_QUOTIENT_HESSIAN_CORANK_AND_TOMOGRAPHY.md`](P7_PRIMITIVE_BOOLEAN_SQUARE_QUOTIENT_HESSIAN_CORANK_AND_TOMOGRAPHY.md).
+
+The apparent additive eight-parameter fibre in that quotient theorem is now
+rigid on the primitive edge torus.  Writing an additive change as
+`Q -> Q+ell U`, two primitive endpoints must obey the exact quadratic law
+`U(Q+Q')=0`.  In every Boolean algebra on at least eight vertices, a nonzero
+gauge has support at most four and forces every edge outside that support to
+vanish.  Hence no primitive full-edge graph has a second additive-gauge
+partner.  At P7 the fixed Lefschetz isomorphism
+`ell^2:A_3 -> A_5` converts feasibility over any quotient representative
+into 56 explicit quadratic equations; if a torus solution exists, it is
+unique.  Consequently the quotient-Hessian-open `H_4/H_6` deck determines at
+most one primitive torus graph, although existence and the quotient-singular
+branch remain unknown.  See
+[`P7_PRIMITIVE_ADDITIVE_GAUGE_RIGIDITY_AND_COORDINATE_BOUNDARY_THEOREM.md`](P7_PRIMITIVE_ADDITIVE_GAUGE_RIGIDITY_AND_COORDINATE_BOUNDARY_THEOREM.md).
+
+The quotient-singular primitive branch now has an exact low-degree apolar
+model.  For the primitive four-form `H=Q^2/2`, the full Hessian kernel is
+precisely the quadratic annihilator `Ann_2(H)`, so excess quotient corank is
+an actual annihilator rather than an unexplained determinant zero.  On the
+seven-leaf radial chart, the 20-dimensional quotient is conjugate to
+`G -> J(G(JN)-(partial G)N)` on the total-zero leaf-edge hyperplane.  Its
+determinant is a nonzero degree-20 polynomial on the 14-dimensional
+primitive leaf space.  The physical singular branch is therefore the lifted
+quadratic/bilinear incidence `N=F^2/2`, `AF=tJN`, and
+`G(JN)=(partial G)N`.  This replaces the degree-67 eliminated shadow, but
+does not yet prove that its full-edge physical intersection is empty.  See
+[`P7_PRIMITIVE_QUOTIENT_SINGULAR_APOLAR_RADIAL_BILINEAR_INCIDENCE_THEOREM.md`](P7_PRIMITIVE_QUOTIENT_SINGULAR_APOLAR_RADIAL_BILINEAR_INCIDENCE_THEOREM.md).
+
+The necessary seven-leaf equation in that lift now excludes a whole
+symmetry family without a parameter search.  If the leaf quadratic has
+cyclic-distance weights `a,b,c`, followed by arbitrary nonzero vertex
+switching, primitivity becomes a `C_7`-equivariant linear kernel in the
+reciprocal switches.  Fourier decomposition leaves three quadratic symbols
+per character.  One fixed degree-four Macaulay minor is nonzero at the
+trivial character and is `-2^13 3^2 t^3(t+1)` modulo `Phi_7` at every
+nontrivial character.  Hence the kernel is injective for every nonzero
+`(a,b,c)`: no nonzero switched-circulant square is primitive, including on
+the coordinate boundaries.  General asymmetric primitive squares and the
+physical singular torus remain unknown.  See
+[`SEVEN_LEAF_SWITCHED_CIRCULANT_PRIMITIVE_SQUARE_NO_GO_THEOREM.md`](SEVEN_LEAF_SWITCHED_CIRCULANT_PRIMITIVE_SQUARE_NO_GO_THEOREM.md).
+
+The remaining physical intersection has a lower-degree annihilator model.
+For a primitive leaf square `N=F^2/2`, the radial extension equation
+`AF=tJN` is equivalent to `F(2ell A+tF)=0`.  Hence every full-edge P7
+extension forces the leaf multiplication map
+`mu_2(F):A_2->A_4` to have rank at most 20.  Rank 20 gives one annihilator
+line and one quotient-collinearity test; rank at most 19 is retained as a
+separate incidence.  The quotient-singular equation factors through the
+same `F` as `2t Phi_N(G)=F(2AG-t(partial G)F)`.  Adjointness of the
+degree-two and degree-three multiplication maps gives
+`rank(D|P)<=rank mu_2(F)`, so leaf rank at most 19 is automatically
+quotient-singular.  Neither the rank-20 structured-syzygy branch nor the
+lower-rank physical torus branch is yet known to exist.  See
+[`P7_PHYSICAL_LEAF_ANNIHILATOR_EXTENSION_AND_QUOTIENT_SYZYGY_THEOREM.md`](P7_PHYSICAL_LEAF_ANNIHILATOR_EXTENSION_AND_QUOTIENT_SYZYGY_THEOREM.md).
+
+Projectively, that rank condition has an exact geometric meaning.  The
+seven-leaf four-hafnian map `F -> F^2/2` is the linear projection of the
+quadratic Veronese `P^20` from the 195-dimensional projectivized kernel of
+Boolean multiplication `Sym^2(A_2)->A_4`.  Its differential at `F` is
+`K -> FK`, so its ramification kernel is exactly `Ann_2(F)`.  The physical
+annihilator `2ell A+tF` is therefore a structured Veronese tangent swallowed
+by the projection center.  Every radial P7 extension lies off the generic
+full-Jacobian four-deck tomography chart; rank 20 gives one tangent-center
+point, while rank at most 19 gives a positive-dimensional intersection.
+This rules out generic local inversion as a solution of the physical
+branch, but does not prove the structured ramification torus empty.  See
+[`SEVEN_LEAF_HAFNIAN_PROJECTED_VERONESE_RAMIFICATION_AND_STRUCTURED_TANGENT_THEOREM.md`](SEVEN_LEAF_HAFNIAN_PROJECTED_VERONESE_RAMIFICATION_AND_STRUCTURED_TANGENT_THEOREM.md).
+
+Full edge support imposes a further apolar constraint: multiplication
+`A_1->A_3` by `F` is injective.  Therefore the quotient by the complete
+multiplication annihilator is Artinian Gorenstein of socle degree five with
+Hilbert vector `(1,7,rho,rho,7,1)`, where `rho=rank mu_2(F)`.  Essential
+cubic annihilators modulo `A_1 Ann_2(F)` have dimension at least
+`max(0,6rho-112)`: rank 20 forces at least eight and rank 19 forces at least
+two, while rank at most 18 is a separate resonance problem.  The physical
+cubic `2AG-t(partial G)F` can be zero, quadratically generated, or essential;
+Hilbert data alone forces none of the three.  Thus the count explains the
+rank-20 square determinant and rank-19 automatic singularity without
+promoting either branch to existence or emptiness.  See
+[`P7_LEAF_APOLAR_GORENSTEIN_HILBERT_RESONANCE_AND_ESSENTIAL_SYZYGY_THEOREM.md`](P7_LEAF_APOLAR_GORENSTEIN_HILBERT_RESONANCE_AND_ESSENTIAL_SYZYGY_THEOREM.md).
+
+The physical equations do decide the structured placement enough to close
+the quotient-singularity test.  On the total-zero quadratic hyperplane,
+`T=I+ell partial` has spectrum `1^14,6^6` and inverse
+`I-ell partial/6`.  For the physical annihilator `K=2ell A+tF`, the nonzero
+quadratic
+`H=sigma(K)Omega-21K` transports to a nonzero total-zero `G=T^(-1)H` with
+`C_G=2AG-t(partial G)F` in `Ann_3(F)`.  Consequently every physical P7 leaf
+extension is automatically quotient singular, including leaf rank 20.  Its
+essential class is exactly `-(t sigma(K)/2)[ell F]`.  On rank 20 the nonzero
+class `[Omega]` is killed by multiplication by `[A]`, so the middle second
+higher Hessian vanishes.  This removes the separate structured determinant;
+it still neither constructs nor excludes a full-edge physical extension.
+See
+[`P7_STRUCTURED_CUBIC_BOOLEAN_LEFSCHETZ_TRANSPORT_AND_MIDDLE_HESSIAN_VANISHING_THEOREM.md`](P7_STRUCTURED_CUBIC_BOOLEAN_LEFSCHETZ_TRANSPORT_AND_MIDDLE_HESSIAN_VANISHING_THEOREM.md).
+
+The extension equations also force the mixed-Lefschetz kernel
+`(ell^2 A)F=0`.  After complementing five-sets, multiplication by
+`ell^2 A` is one symmetric weighted-Kneser pencil on the 21 leaf edges.
+Mixed Hard Lefschetz on `(P^1)^7` makes that pencil invertible whenever the
+real star coefficients of `A` have one sign, excluding both Kähler
+chambers.  Over every characteristic-zero field, an exact `S_6` block
+decomposition excludes the entire orbit `A=(p,q,q,q,q,q,q)`, `pq!=0`:
+off its sole wall `p=-2q` the pencil is invertible, while on the wall its
+nine-dimensional kernel has every exceptional-star edge zero and therefore
+contains no full-edge `F`.  General mixed-sign stars remain unknown.  See
+[`P7_PHYSICAL_EXTENSION_MIXED_HARD_LEFSCHETZ_SIGN_CHAMBER_AND_ONE_EXCEPTIONAL_ORBIT_OBSTRUCTION.md`](P7_PHYSICAL_EXTENSION_MIXED_HARD_LEFSCHETZ_SIGN_CHAMBER_AND_ONE_EXCEPTIONAL_ORBIT_OBSTRUCTION.md).
+
+That 21-dimensional mixed kernel now has an exact Boolean-down compression.
+Writing `r_i=sum_j f_ij`, `alpha=sum_i a_i`, and
+`delta_ij=alpha-2(a_i+a_j)`, the physical condition is equivalent to the 21
+local equations
+`delta_ij f_ij+a_i r_j+a_j r_i=0`.  A fixed invertible rational matrix
+`J`, with determinant `2^16 3^6`, sends this local pencil to the weighted
+Kneser pencil.  Away from the explicit divisors `a_i delta_ij=0`, the entire
+kernel is therefore controlled by a symmetric `7 x 7` master Hessian:
+`f_ij=-a_i a_j(x_i+x_j)/delta_ij`.  Full edge support becomes the seven-
+variable condition `x_i+x_j!=0` for every pair.  The generic Hessian
+incidence, exceptional divisors, and remaining nonlinear physical equations
+are still unresolved.  See
+[`P7_PHYSICAL_MIXED_KERNEL_BOOLEAN_DOWN_DESCENT_AND_SEVEN_BY_SEVEN_MASTER_HESSIAN.md`](P7_PHYSICAL_MIXED_KERNEL_BOOLEAN_DOWN_DESCENT_AND_SEVEN_BY_SEVEN_MASTER_HESSIAN.md).
+
+The master Hessian now closes every nonzero star with at most two coordinate
+values.  `S_m x S_n` edge-module decomposition factors the `2+5` and `3+4`
+weighted-Kneser pencils without enumerating parameters.  Every `2+5` wall and
+every nontrivial `3+4` wall has a kernel missing a whole edge orbit.  The sole
+remaining `3+4` block-constant cubic
+`t^3+2t^2+3t+4=0` does carry a full-edge mixed kernel, but one primitive
+five-set coefficient factors into two polynomials whose resultants with the
+cubic are `256` and `1280`; it can never vanish in characteristic zero.
+Together with the preceding `1+6` theorem, this excludes all one- and two-
+level physical stars.  Three-level and general stars remain unknown.  See
+[`P7_PHYSICAL_EXTENSION_TWO_LEVEL_STAR_ORBIT_COMPLETE_EXCLUSION_THEOREM.md`](P7_PHYSICAL_EXTENSION_TWO_LEVEL_STAR_ORBIT_COMPLETE_EXCLUSION_THEOREM.md).
+
+The denominator walls of the master Hessian also have an exact model.  Their
+graph is forced to be a disjoint union of complementary-value complete
+bipartites, plus at most one midpoint clique.  If `R_W` is its unsigned
+incidence matrix, exceptional mixed kernels are precisely radicals of a
+partial master Hessian restricted to `ker R_W^T`; wall-edge values are then
+reconstructed linearly.  This excludes midpoint cliques `K_5,K_6,K_7` and
+every midpoint `K_4` carrying an additional outside wall.  A bare midpoint
+`K_4` survives only on
+`3bcd+2h(bc+bd+cd)+12h^3=0`; its good-support and nonlinear physical tests,
+midpoint `K_3`, and general bipartite wall systems remain unknown.  See
+[`P7_PHYSICAL_MIXED_KERNEL_EXCEPTIONAL_WALL_GRAPH_AND_RESTRICTED_HESSIAN_THEOREM.md`](P7_PHYSICAL_MIXED_KERNEL_EXCEPTIONAL_WALL_GRAPH_AND_RESTRICTED_HESSIAN_THEOREM.md).
+
+After either generic or exceptional mixed-kernel reconstruction, the
+remaining nonlinear equations also compress invariantly.  Two quartet
+covariants `Psi=coeff(F^2/2)` and `Lambda=-coeff(F ell A)` automatically lie
+in the same 14-dimensional Boolean primitive space.  Primitivity is
+`ell Psi=0`; the full annihilator is exactly `t Psi=Lambda`, or, after
+eliminating the amplitude, `Psi wedge Lambda=0` with both covariants nonzero.
+This is projective stationarity of the Boolean squaring map in the prescribed
+physical direction.  A denominator-free version retains every wall, while a
+single real Gram discriminator replaces the wedge only over the reals.
+Existence of a good stationary point remains unknown.  See
+[`P7_PHYSICAL_EXTENSION_BOOLEAN_SQUARE_PROJECTIVE_STATIONARITY_MASTER_SYSTEM.md`](P7_PHYSICAL_EXTENSION_BOOLEAN_SQUARE_PROJECTIVE_STATIONARITY_MASTER_SYSTEM.md).
+
+Vertex switching supplies no missing legal GHZ direction: it acts by
+diagonal congruence on every shore Hessian and only by a common projective
+scalar on the full root tensor.  For the fixed legal sensor, two coprime
+degree-18 maximal-flattening factors prove that every nonzero uniform-edge
+graph, together with its entire switching saturation, has flattening rank
+exactly nine and border rank at least nine while all nine shore Hessians stay
+invertible.  Thus any surviving GHZ point must use genuinely nonuniform
+switching-quotient directions.  See
+[`P7_LEGAL_NONROOT_SWITCHING_COVARIANCE_AND_UNIFORM_CURVE_SECANT_SATURATION.md`](P7_LEGAL_NONROOT_SWITCHING_COVARIANCE_AND_UNIFORM_CURVE_SECANT_SATURATION.md).
+
+The newest arbitrary-order tool is **shallow hafnian-Hessian tomography**.
+For a residual graph on `q=2m` vertices, let `c` be its two-deletion
+cofactor vector and `D` its four-deletion Hessian.  Euler gives
+`D a=(m-1)c`.  At the all-one full-torus point, `D` is `(q-5)!!` times the
+Kneser adjacency matrix `KG(q,2)`, with exact nonzero determinant
+
+```text
+((q-5)!!)^binom(q,2) binom(q-2,2) (-(q-3))^(q-1).
+```
+
+Thus `a=(m-1)D^(-1)c` on a nonempty open at every even order.  A complete
+determinant-cleared `(h,c,D)` representability iff supplies the missing
+nonlinear Hessian-deck and scalar stresses; the visible Kneser support and
+four-set equalities alone are generically insufficient from `q=8` onward.
+This is a polar-map/Lefschetz-type certificate, but not a Lorentzian one:
+the all-one Hessian has multiple positive eigenvalues.  See
+[`RESIDUAL_HAFNIAN_HESSIAN_KNESER_ETALE_AND_JET_INTEGRABILITY_THEOREM.md`](RESIDUAL_HAFNIAN_HESSIAN_KNESER_ETALE_AND_JET_INTEGRABILITY_THEOREM.md).
+
+The same Euler identities now unmix an arbitrary-order common-cofactor
+response
+
+```text
+L=hU+sum_e c_e T_e.
+```
+
+On `det D!=0`, value plus first response jet uniquely recover `U,T` when
+`h!=0`; at `h=0` they have one exact vector-space gauge.  First and second
+response jets recover all channels at every `h` through the newly defined
+Euler--Hessian connection `G-J dot D^(-1)g`, while the singular divisor has
+the polynomial obstruction `adj(D)g=0`.  Applied to the blocker aggregate,
+this would extract honest arbitrary-residual permanent channels and recover
+the support bound `3r+9`.  The transfer is conditional: the current scalar
+`P_7` shallow deck does not legally expose the tensor-valued response jets.
+See
+[`ARBITRARY_ORDER_HAFNIAN_EULER_HESSIAN_CHANNEL_UNMIXING_AND_SINGULAR_DISCRIMINANT.md`](ARBITRARY_ORDER_HAFNIAN_EULER_HESSIAN_CHANNEL_UNMIXING_AND_SINGULAR_DISCRIMINANT.md).
+
+The theorem aligns with the existing legal `P_7` sensor without requiring
+the full nested cofactor tower.  On one eight-shore, the labeled `H_4/H_6`
+data rationally recover all 28 shore edges; one cyclic eight-row `H_4`
+partner system recovers the omitted star and all 36 nonroot edges.  More
+symmetrically, the nine shore inverses glue exactly when their overlap
+weights agree: local `H_4/H_8` realization then forces all 84 `H_6` values.
+The common GHZ/sensor/Hessian open and every singular-Hessian branch remain
+unknown.  See
+[`SHALLOW_HAFNIAN_HESSIAN_TWO_DECK_INVERSION_AND_P7_LEGAL_SENSOR_INTERFACE.md`](SHALLOW_HAFNIAN_HESSIAN_TWO_DECK_INVERSION_AND_P7_LEGAL_SENSOR_INTERFACE.md).
+
+Along any nonzero scalar jet line `(h,c,D)=t(h_0,c_0,D_0)`, reconstruction
+and the scalar stress are projective, but every nonlinear four-deck equation
+is affine-linear in the single amplitude `t`.  Hence a Hessian-open line has
+at most one nonzero physical point.  For `P_7`, all nine shore determinants,
+Euler stresses, and overlap tests are projective, while the four-deck
+equations must choose one common amplitude.  An ambient nonlegal map can send
+the physical all-one deck to GHZ, whereas the same deck under the fixed legal
+rank-219 sensor has border rank at least nine by an exact `9 x 9` flattening
+minor.  These controls prove that neither incidence geometry alone nor legal
+sensor observability alone decides the missing intersection.  See
+[`ARBITRARY_HAFNIAN_JET_LINE_PROJECTIVE_AFFINE_SEPARATION_AND_P7_GHZ_BOUNDARY.md`](ARBITRARY_HAFNIAN_JET_LINE_PROJECTIVE_AFFINE_SEPARATION_AND_P7_GHZ_BOUNDARY.md).
+
+The last full-support singular pinned branch also has a new symbolic normal
+form.  Boolean `sl_2` duality sends `ell Q_B^2=0` from five-set equations to
+56 local triangle identities in the edge row sums.  Some row sum must be
+nonzero on every edge-torus solution.  Centering there rationally expresses
+all 21 off-star edges through seven star weights and eight row sums away
+from 21 explicit denominator divisors; the exceptional numerator equations
+are retained exactly.  The same reduction proves complementary four-set
+hafnians and excludes the reciprocal-rank-one torus stratum.  It does not
+yet decide whether its residual incidence locus contains a torus point.  The
+star triangles and row closure now form one `28 x 28` linear pencil with a
+nonzero symmetric degree-21 determinant `P(a)`.  Every torus solution lies on
+`P=0`, while `P(1,...,1)=5*8^6*3^15`; hence the generic star fibre is empty.
+The remaining interface is exactly 35 leaf-triangle quadrics, every
+denominator collision is classified by
+`Delta_jk=0 iff y_j+y_k=0`, and at most three edge row sums can vanish.  See
+[`P7_PRIMITIVE_BOOLEAN_SQUARE_DUAL_TRIANGLE_STAR_NORMAL_FORM.md`](P7_PRIMITIVE_BOOLEAN_SQUARE_DUAL_TRIANGLE_STAR_NORMAL_FORM.md)
+and
+[`P7_PRIMITIVE_BOOLEAN_SQUARE_STAR_CLOSURE_DISCRIMINANT_AND_ZERO_ROW_BOUNDARY_THEOREM.md`](P7_PRIMITIVE_BOOLEAN_SQUARE_STAR_CLOSURE_DISCRIMINANT_AND_ZERO_ROW_BOUNDARY_THEOREM.md).
+
+The same primitive-square system has an intrinsic zeon-calculus form.
+Boolean lowering obeys a corrected Leibniz rule, so `ell Q^2=0` is
+equivalent to the harmonic-square identity
+`Q(DQ)=sum_i z_i(partial_i Q)^2`.  Contracting it over the third vertex
+gives one off-diagonal matrix Riccati equation for the edge matrix `B`; a
+second contraction gives the global Casimir
+`(sum_i r_i)^2=4(sum_i r_i^2-sum_(i<j)b_ij^2)`.  Over the reals this excludes
+both closed row-sum cones `|sum r_i|>=2||r||`, including every constant-row
+stratum, and forces row-sum coefficient of variation greater than one when
+the mean is nonzero.
+The complex torus is not excluded because the edge-square sum is not a
+Hermitian norm.  See
+[`P7_PRIMITIVE_ZEON_HARMONIC_SQUARE_RICCATI_AND_REAL_ROW_CONE_OBSTRUCTION.md`](P7_PRIMITIVE_ZEON_HARMONIC_SQUARE_RICCATI_AND_REAL_ROW_CONE_OBSTRUCTION.md).
+
+The legal `P_7` sensor on which this new inverse relies is a three-part
+symbolic observability theorem.  First, arbitrary-order pinned partner
+equations,
+viewed through the square-free strong-Lefschetz mechanism, recover every
+nonroot edge rationally from consecutive named hafnian decks whenever the
+root surplus is at least three.  Second, one explicit legal five-root chart
+has full rank on all `126+84+9=219` shallow cofactor labels.  Third, adjoining
+the three-dimensional diagonal GHZ target raises that chart's rank from 219
+to 222, so its sensor image meets the target space only at zero.  Hence the
+capacity and legal-label problems are solved on a nonempty graph-side open
+set, but every actual GHZ completion must enter a proper target-incidence or
+sensor-rank-drop locus.  See
+[`PINNED_HAFNIAN_STAR_SYSTEM_AND_RATIONAL_EDGE_TOMOGRAPHY_THEOREM.md`](PINNED_HAFNIAN_STAR_SYSTEM_AND_RATIONAL_EDGE_TOMOGRAPHY_THEOREM.md)
+and
+[`P7_FULL_MIXED_ROOT_219_LABEL_SENSOR_AND_PINNED_STAR_GATING_BOUNDARY.md`](P7_FULL_MIXED_ROOT_219_LABEL_SENSOR_AND_PINNED_STAR_GATING_BOUNDARY.md).
+
+On an arbitrary full sensor, the GHZ condition now has a compact exact form.
+The 24-dimensional companion cokernel restricts to a `24 x 3` diagonal
+target map; target incidence is exactly rank at most two.  It is a
+codimension-22 Schubert condition in the ambient Grassmannian, and its
+generic point determines a single projective cofactor line with 218
+sensor-dependent linear relations.  There is no sensor-independent
+cofactor relation from incidence alone.  On the pinned open, that line has
+an explicit determinant-cleared integrability test: degree-nine partner
+stresses can exclude the entire line, while four-hafnian realization fixes
+at most one nonzero amplitude.  See
+[`FIVE_ROOT_DIAGONAL_TARGET_INCIDENCE_SCHUBERT_DUALITY_AND_COFACTOR_LINE_THEOREM.md`](FIVE_ROOT_DIAGONAL_TARGET_INCIDENCE_SCHUBERT_DUALITY_AND_COFACTOR_LINE_THEOREM.md)
+and
+[`P7_TARGET_INCIDENCE_DETERMINANT_CLEARED_HAFNIAN_INTEGRABILITY_THEOREM.md`](P7_TARGET_INCIDENCE_DETERMINANT_CLEARED_HAFNIAN_INTEGRABILITY_THEOREM.md).
+
+There is also unavoidable low-border-rank geometry inside every full sensor.
+The third secant of the five-qutrit Segre has projective dimension 32, so
+every projective 218-plane sensor image meets it in dimension at least eight.
+A torus-concise honest rank-three point in that mandatory family can be sent
+to a diagonal GHZ tensor by legal root-local basis changes while preserving
+sensor rank and blocker/nonblocker contractions.  Whether the family escapes
+the nonconcise/collision/lower-rank boundary is unknown.  At an actual
+three-term incidence point, local-basis transversality is exactly a rank-22
+test on the 30 single-flip coordinate words.  See
+[`P7_LEGAL_LOCAL_BASIS_BORDER_GHZ_INTERSECTION_AND_SINGLE_FLIP_TRANSVERSALITY_THEOREM.md`](P7_LEGAL_LOCAL_BASIS_BORDER_GHZ_INTERSECTION_AND_SINGLE_FLIP_TRANSVERSALITY_THEOREM.md).
+
+The determinant-cleared line tests now have an exact legal torus covariance.
+Scaling all root edges at a nonroot endpoint preserves the sensor image and
+target incidence, sends the reconstructed graph through vertex scaling, and
+makes every projective degree-nine, overlap, Euler, and four-deck stress a
+semi-invariant.  Only the affine radial normalization moves, by the total
+endpoint-product character.  Thus endpoint magnitudes cannot force a
+projective obstruction; the remaining test must use scale-free directions or
+nonexistence of the legal incidence line.  See
+[`P7_LEGAL_ENDPOINT_TORUS_COVARIANCE_AND_AFFINE_LINE_NORMALIZATION_WALL.md`](P7_LEGAL_ENDPOINT_TORUS_COVARIANCE_AND_AFFINE_LINE_NORMALIZATION_WALL.md).
+
+The same program now reaches `P_6`.  With four roots, six blockers, two
+residual nonblockers, and zero root--root blocks, one legal integer chart
+labels all `binom(8,4)=70` principal four-hafnians in 81 root channels.
+Relative to the companion data, these recover all 28 nonroot edges up to
+finitely many algebraic branches.  The displayed sensor is target-free and
+places any compatible full sensor on an ambient codimension-nine incidence
+locus.  See
+[`P6_FOUR_ROOT_FULL_H4_SENSOR_AND_TARGET_INCIDENCE_BOUNDARY.md`](P6_FOUR_ROOT_FULL_H4_SENSOR_AND_TARGET_INCIDENCE_BOUNDARY.md).
+
+The dimension-deficient `P_5` cell still admits nonlinear physical
+tomography.  One legal three-root chart has a surjective `27 x 35` companion
+sensor, and its composite with the seven-vertex four-hafnian map has full
+Jacobian rank 21.  Thus known companion data recover the 21 nonroot edges up
+to finitely many algebraic branches despite the impossibility of linearly
+labeling all 35 four-hafnians.  The corresponding projective four-hafnian
+image gives a new compressed target-incidence object: among arbitrary
+surjective sensors, inverse images of the diagonal target that meet the
+physical deck variety lie in codimension at least four.  The legal pullback
+and nonzero GHZ incidence remain unknown.  See
+[`P5_COMPRESSED_H4_PHYSICAL_TOMOGRAPHY_AND_TARGET_TANGENT_BOUNDARY.md`](P5_COMPRESSED_H4_PHYSICAL_TOMOGRAPHY_AND_TARGET_TANGENT_BOUNDARY.md).
+
+The pinned singular locus is now sharper but not eliminated.  In the
+eight-vertex `P_7` shore, every kernel vector of the pinned four-hafnian
+matrix has full support at a full-edge-torus point.  Circuits of
+sizes one through four are impossible by a square-free annihilator argument,
+support five is excluded by an exact binary-quadratic reduction, and support
+six reduces to the invertible complement-inclusion operator `W_(2,4)(6)` on
+a reciprocal polarization edge form.  Support seven factors through
+edge-to-triangle inclusion and the invertible middle Boolean Lefschetz map.
+The only remaining torus branch is now the primitive Boolean-square locus:
+after normalizing the eight kernel entries, `ell Q_B^2=0`, so the graph
+quadratic square lies in a 14-dimensional primitive middle-degree space.
+Whether that locus meets the full 28-edge torus is unknown.
+The threshold cannot simply be transferred to `P_6`: an explicit
+all-edge-nonzero graph over `Q(omega)` has pinned rank six instead of seven,
+with nonzero four- and six-hafnians.  Its escape is the primitive-cube-root
+resonance class of a five-vertex zero four-deck.  See
+[`PINNED_H4_STAR_TORUS_CIRCUIT_GIRTH_AND_P6_CUBIC_ESCAPE.md`](PINNED_H4_STAR_TORUS_CIRCUIT_GIRTH_AND_P6_CUBIC_ESCAPE.md),
+[`P7_PINNED_H4_TORUS_SUPPORT_FIVE_BINARY_QUADRATIC_EXCLUSION.md`](P7_PINNED_H4_TORUS_SUPPORT_FIVE_BINARY_QUADRATIC_EXCLUSION.md),
+[`P7_PINNED_H4_TORUS_SUPPORT_SIX_RECIPROCAL_POLARIZATION_EXCLUSION.md`](P7_PINNED_H4_TORUS_SUPPORT_SIX_RECIPROCAL_POLARIZATION_EXCLUSION.md),
+and
+[`P7_PINNED_H4_TORUS_SUPPORT_SEVEN_BOOLEAN_LEFSCHETZ_EXCLUSION.md`](P7_PINNED_H4_TORUS_SUPPORT_SEVEN_BOOLEAN_LEFSCHETZ_EXCLUSION.md).
+
+The generic open cannot be silently globalized.  On a nine-vertex
+double-star stratum, the complete `H_4/H_6/H_8` deck has an exact
+two-dimensional fibre: the center edge is wholly invisible and reciprocal
+shore scaling gives the second gauge, despite 21 nonzero four-hafnians.
+Conversely, the zero four-hafnian deck cannot meet the full edge torus in
+characteristic zero.  This rigidity-style result identifies a sharp
+coordinate/singular boundary rather than a counterexample.  See
+[`P7_COMBINED_SHALLOW_DECK_DOUBLE_STAR_GAUGE_AND_ZERO_TORUS_BOUNDARY.md`](P7_COMBINED_SHALLOW_DECK_DOUBLE_STAR_GAUGE_AND_ZERO_TORUS_BOUNDARY.md).
+
+The earlier nonlinear route uses the complete principal four-hafnian deck.
+For every named graph on `n>=6` vertices, the Jacobian of that deck at the
+all-one graph is the classical `2`-subset versus `4`-subset inclusion matrix
+and has full column rank.  Hence all edges are generically finite algebraic
+over the four-hafnians.  Applied conditionally to the nine nonroots of the
+two-residual `P_7` cell, a legally labeled depth-five deck would recover the
+root-budget-invisible pair up to finitely many branches.  The theorem is not
+global: `A` and `-A` have the same deck, and a one-edge affine line lies in
+the zero fibre.  Its 126 labels exceed the 32 channels of one five-root
+two-plane jet but fit within the 243 channels of the full root tensor; the
+full 219-label sensor above now attains that larger chart.  See
+[`PRINCIPAL_FOUR_HAFNIAN_GENERIC_EDGE_TOMOGRAPHY_AND_P7_SINGULAR_FIBRE_BOUNDARY.md`](PRINCIPAL_FOUR_HAFNIAN_GENERIC_EDGE_TOMOGRAPHY_AND_P7_SINGULAR_FIBRE_BOUNDARY.md).
+
+The accompanying arbitrary-word theorem proves why a nonlinear step is
+necessary.  Restricting any perfect matching to `r` probe roots partitions it
+into root--root pairs and an injection of the remaining roots into nonroots;
+therefore a word with `j` root--root edges deletes exactly `r-2j` nonroots.
+For the active `r=5` cell the direct pair and one-residual singleton sit at
+depth seven and are absent from every linear mixed-root observation.  Exact
+physical fibres and incident-edge scaling make the boundary sharp.  See
+[`MIXED_ROOT_DELETION_FILTRATION_AND_HERALD_FREE_PAIR_NO_GO.md`](MIXED_ROOT_DELETION_FILTRATION_AND_HERALD_FREE_PAIR_NO_GO.md).
+
+Lower mixed-root jets nevertheless have an exact label theory.  A deletion
+cofactor is individually observable precisely when its companion-incidence
+column has a dual tangent selector; the entire ambiguity is
+`ker(Gamma) tensor W`.  Legal arbitrary-order charts expose all even deletion
+classes when `q` varied roots are available, while the balanced `P_5`--`P_7`
+root budgets do not supply that complete common-core chart.  If future
+cross-depth data expose the square-free deletion algebra and multiplication,
+its graded automorphism group is only monomial, collapsing the current `GL`
+gauge.  See
+[`LOWER_MIXED_ROOT_JET_DELETION_LABEL_TOMOGRAPHY_AND_SQUAREFREE_GAUGE_THEOREM.md`](LOWER_MIXED_ROOT_JET_DELETION_LABEL_TOMOGRAPHY_AND_SQUAREFREE_GAUGE_THEOREM.md).
+
+Finally, the actual five-root sharing patterns no longer leave two-fan
+co-occurrence as an abstract question.  Equal, one-root-sharing, and disjoint
+pairs exhaust the geometry.  Shared-root fans are transverse exactly off a
+binary-Veronese boundary under the natural complementary-row
+nondegeneracy; explicit legal graph-side `P_7` sectors attain stacked ranks
+six and five.  If all ten shores are present and no transverse wedge occurs,
+the five projective root row-lines are forced to be concurrent or coplanar,
+unless a root lies on the Veronese boundary.  Full GHZ compatibility remains
+unknown.  See
+[`P7_FIVE_ROOT_TWO_FAN_SHARING_AND_SHARED_ROOT_VERONESE_TRANSVERSALITY.md`](P7_FIVE_ROOT_TWO_FAN_SHARING_AND_SHARED_ROOT_VERONESE_TRANSVERSALITY.md).
+
+The newest symbolic layer identifies the exact observability obstruction.
+With `q` residual vertices, every root-saturated principal-cofactor
+observation lies in the upper staircase `|S|+|T|>=2q`, while response
+division, cumulants, discriminants, and zeon catalecticants require lower
+subset faces.  Exact physical affine-line families show that even retaining
+all eligible residual depths does not recover the missing coefficients.  See
+[`RESIDUAL_DEPTH_OBSERVABILITY_STAIRCASE_AND_ALL_DEPTH_KERNEL_THEOREM.md`](RESIDUAL_DEPTH_OBSERVABILITY_STAIRCASE_AND_ALL_DEPTH_KERNEL_THEOREM.md).
+
+There is a positive arbitrary-order theorem once a square residual--port
+chart is legally exposed.  All even permanental compounds are simultaneously
+invertible on a nonempty open set, so the full relative response reconstructs
+every principal hafnian cofactor.  One residual graph exists exactly when the
+recovered tower satisfies the nested partner-expansion equations; clearing
+the compound determinants makes these explicit polynomial obstructions.
+The missing step is legal labeled exposure, not algebraic integrability.  See
+[`HIGHER_RESIDUAL_PERMANENTAL_TOMOGRAPHY_NESTED_COFACTOR_STRESS_AND_CUMULANT_INTERFACE.md`](HIGHER_RESIDUAL_PERMANENTAL_TOMOGRAPHY_NESTED_COFACTOR_STRESS_AND_CUMULANT_INTERFACE.md).
+
+For the active four-port `P_7` window, retaining both tangent variables of a
+nonprojective root pair gives a `4 x 6` permanental fan
+`K(A,B)c=vec(A X(c) B^T)`.  One fan has rank at most four and generically
+leaves a two-dimensional invisible face space.  Two fans recover all six
+faces exactly when their kernels are transverse; an explicit integer pair
+has stacked rank six.  Legal co-occurrence, nuisance separation, and the
+synchronized direct depth remain unknown.  See
+[`NONPROJECTIVE_ROOT_PAIR_FAN_SELECTOR_TOMOGRAPHY_THEOREM.md`](NONPROJECTIVE_ROOT_PAIR_FAN_SELECTOR_TOMOGRAPHY_THEOREM.md).
+
+Finally, changing root/kernel charts cannot by itself globalize the surviving
+coordinate-monomial label.  Overlaps carry exact transition gains and trivial
+cycle holonomy, yet one fixed residual edge realizes all nine coordinate
+labels on overlapping torus-plane charts; nine torus-line evaluations can
+even interpolate arbitrary values.  A useful cross-root obstruction must use
+a target-normalized evaluation circuit or cofactor-valued tangent data.  See
+[`CROSS_ROOT_COORDINATE_MONOMIAL_CHART_HOLONOMY_AND_NINE_CHART_NO_GO.md`](CROSS_ROOT_COORDINATE_MONOMIAL_CHART_HOLONOMY_AND_NINE_CHART_NO_GO.md).
+
+The preceding continuation replaces the residual-hafnian rank question by an
+exact all-depth response calculus.  The common-cofactor Gram decomposition
+has been independently audited, but a complete-support family with
+`haf(A)=0` and `rank C(A)=|Q|` proves that torus cancellation gives no
+universal rank drop.  The surviving intrinsic equation is the Hadamard
+stress `(A Hadamard C(A))1=haf(A)1`.  See
+[`RESIDUAL_HAFNIAN_COMMON_GRAM_AUDIT_AND_TORUS_ZERO_FULL_RANK_SHARPNESS.md`](RESIDUAL_HAFNIAN_COMMON_GRAM_AUDIT_AND_TORUS_ZERO_FULL_RANK_SHARPNESS.md).
+
+Retaining compatible residual deletion depths exposes a stronger invented
+object.  After dividing by the port-only moment `M`, the entire response
+tower is `exp(Q_A+Q_R)`: its residual logarithm has degree at most two, every
+higher residual cumulant vanishes, and every depth is reconstructed by one
+loop-hafnian family.  For two residual vertices the division-free observable
+is `MZ-Y_0Y_1=hM^2`.  See
+[`RESIDUAL_DEPTH_LOOP_HAFNIAN_CUMULANT_AND_TWO_PORT_DISCRIMINANT_THEOREM.md`](RESIDUAL_DEPTH_LOOP_HAFNIAN_CUMULANT_AND_TWO_PORT_DISCRIMINANT_THEOREM.md).
+
+The same structure has square-free apolar, or zeon, catalecticants.  For one
+fixed residual-present response, every `k`-leg all-port-degree matrix factors
+through the `k`th permanental compound of one incidence matrix, giving rank
+at most
+`min{binom(q,k),binom(r+k-1,k)}` when that incidence has rank `r`.  Doubled
+identity incidence attains the binomial bound, so this is a sharp structural
+test rather than a hidden solution.  See
+[`RESIDUAL_ZEON_APOLAR_MULTI_LEG_CATALECTICANT_THEOREM.md`](RESIDUAL_ZEON_APOLAR_MULTI_LEG_CATALECTICANT_THEOREM.md).
+
+On exactly two residual nonblockers, the torus-zero/non-coordinate branch
+does transport the strict permanent theorem without an extra factorization
+hypothesis.  It forces `I+p_0+p_1>=3r+9`; equivalently a displayed graph cut
+of size at most `3r+8` forces the residual restriction to be a nonzero
+coordinate monomial.  This gives the exact `18/21/24` support staircase for
+the `P_5/P_6/P_7` second-surplus cells.  The coordinate-monomial branch is
+locally universal and remains open globally.  See
+[`ARBITRARY_ORDER_TWO_RESIDUAL_STRICT_SUPPORT_STAIRCASE_AND_COORDINATE_FORCING.md`](ARBITRARY_ORDER_TWO_RESIDUAL_STRICT_SUPPORT_STAIRCASE_AND_COORDINATE_FORCING.md).
+
+The 3 August symbolic continuation closes three tempting shortcuts without
+using a support or word enumeration.  First, the generic six-vertex hafnian
+has no determinant-style cubic polar condensation
+`h^2=P_3((partial h/partial x_ij))`; principal-cofactor dominance then puts
+the first possible scalar cross-depth relation at weighted degree at least
+eight.  This is a proof-route no-go, not a Krenn--Gu obstruction.  See
+[`SIX_BLOCKER_HAFNIAN_POLAR_CUBIC_CONDENSATION_NO_GO.md`](SIX_BLOCKER_HAFNIAN_POLAR_CUBIC_CONDENSATION_NO_GO.md).
+
+There is nevertheless an exact cross-depth derivative calculus.  After one
+clean root--blocker shore, complementary blocker-edge derivatives expose all
+six direct and residual-present pair faces with one common factor.  A legal
+two-root physical sector replaces those unit derivatives by the six `2 x 2`
+permanents of its `2 x 4` incidence matrix.  All four standard marked stars
+require those six weights to share one nonzero value; in the projectively
+constant branch the matrix, and hence every such marked sector, is zero.
+Thus the formal derivative exists but is not implemented by the 31
+projective root jets.  See
+[`P7_CROSS_DEPTH_HAFNIAN_DERIVATIVE_AND_PROJECTIVE_MARKED_STAR_BOUNDARY.md`](P7_CROSS_DEPTH_HAFNIAN_DERIVATIVE_AND_PROJECTIVE_MARKED_STAR_BOUNDARY.md).
+
+Second, the extremal rank-six `2+2+1` quotient has only five abstract support
+graphs.  The disjoint `3K2` case was already excluded; an explicit
+characteristic-zero unit certificate now also excludes `P3 disjoint-union
+K2`.  Only `P4`, `K1,3`, and `K3` remain, and exact quotient-core controls
+show that all three survive the currently forced degree-three and degree-one
+shadows.  Their full physical lifts remain unknown.  See
+[`P7_221_OVERLAPPING_RANK_SIX_SUPPORT_CLASSIFICATION_AND_P3K2_CUBIC_OBSTRUCTION.md`](P7_221_OVERLAPPING_RANK_SIX_SUPPORT_CLASSIFICATION_AND_P3K2_CUBIC_OBSTRUCTION.md).
+
+Third, the eighteen tagged fixed-complement windows cover all fifteen
+four-subsets of the six double blockers.  Conditional legal top selectors
+would therefore force every common-null `m4=z4=0`, and the six-point
+`m6=z6=0` follows.  A rational common-block sharpness control nevertheless
+has three unit pure coefficients, only the canonical clean axes, both full
+blocker-singleton rows, and a freely varying empty scalar when the direct
+blocker graph is zero.  Thus the missing datum is legal cross-depth
+co-occurrence with a nonzero direct pair, not merely another singleton row.
+The control is not a target-compatible physical `P_7` construction.  See
+[`P7_COMPLETE_FOUR_FACE_NULL_STRATUM_AND_PAIRED_DEPTH_SHARPNESS.md`](P7_COMPLETE_FOUR_FACE_NULL_STRATUM_AND_PAIRED_DEPTH_SHARPNESS.md).
+
+The latest arbitrary-order symbolic checkpoint replaces the proposed
+`P_7` shell search by a permanent kernel-deletion hierarchy.  For every
+restriction `P_m -> Delta_3`, every source subset of size `s=2,...,m-1`
+obeys an exact Hall quota, every source row is covered by all three target
+coordinate covectors, and at least `3m` coordinate-row cells are forced.
+The exact-minimal coordinate-only `3m`-cell branch is empty at every
+`m>=3`: its three pure supports form a properly three-coloured cubic
+bipartite graph, and the published nonmonochromatic-matching theorem gives
+a unique forbidden mixed monomial.  This yields bounds 15, 18, and 21 at
+`P_5`, `P_6`, and `P_7` without a support or word enumeration.  See
+[`ARBITRARY_PERMANENT_KERNEL_DELETION_HIERARCHY.md`](ARBITRARY_PERMANENT_KERNEL_DELETION_HIERARCHY.md).
+
+The actual five-root/two-residual cell now has a sharp symbolic route
+diagnosis.  Its common Gram completion is exactly the old rank-two two-port
+factorisation and is automatic; the displayed Hall construction is killed
+by one lower two-root derivative coefficient; a cyclic three-matching
+survivor satisfies every majority-ideal power simultaneously on all
+overlapping sets while retaining one unique mixed word; and the current
+lower-frame theorem logically forces no
+partition-closed Wick/Hirota window.  The missing next lemma must constrain
+named intermediate cofactors or their hidden overlay classes.  The
+arbitrary tangent-completed `P_7` system and the global conjecture remain
+unknown.  See
+[`ROOT_M7_SYMBOLIC_ROUTE_BOUNDARY_THEOREMS.md`](ROOT_M7_SYMBOLIC_ROUTE_BOUNDARY_THEOREMS.md).
+
+The permanent support bound is now three cells stronger.  Local concision on
+the mode side and the singleton tricolour cover on the source side exclude
+the entire `3m+1` stratum, and the new equality classification excludes
+`3m+2`; every `P_m -> Delta_3` restriction therefore needs at least `3m+3`
+nonzero row cells.  Thus `P_7` needs at least 24.  The eliminated equality
+case was reduced for coordinate and noncoordinate cells alike: the two excess
+cells must have distinct source endpoints, and every mixed backbone
+coefficient is either unique or cancels through the unique cross
+four-cycle on those sources, with exact equation `AD+BC=0`.  A closed odd
+cycle of these signed rectangles is impossible when its ratios telescope.
+For one fixed pure backbone, the auxiliary all-negative gain graph on
+mode--colour ratio states is canonically bipartite, so that route alone is
+empty.  The intermediate question was whether gluing the graphs from all
+choices of pure matchings forces an odd cycle after shared ratio states are
+identified.  Every pure switch is the exceptional-source four-cycle, and
+physical-cell incidence plus the equality degree ledger allow at most two
+switchable colours.  Hence the pure backbones form a Boolean cube of
+dimension at most two and number at most four.  The two-switch case requires
+both excess cells to be noncoordinate and co-located at one mode.  The
+zero-switch stratum is now excluded at every order: exceptional-port
+cancellation forces each pair of unique pure matchings to form a Hamilton
+cycle, and a chord of the other two-colour cycle contradicts the forced
+singleton port colour.  The one-switch stratum is now excluded too.  Every
+pair of selected pure matchings would have to form a Hamilton cycle; the two
+exceptional edges of either nonswitch colour are then chords of the cycle
+formed by the other colours.  Their chord-extension mixed matchings force
+both cross cells and switch that nonswitch colour, a contradiction.  Thus
+every equality survivor would have exactly two switchable colours.  Global
+bipartiteness is equivalent to balance of an
+`F_2`-labelled
+component-overlap graph; a pure switch is excluded as soon as one common
+cancellation component connects two shared states and exactly one changes
+source side.  In the one-switch branch, the pure coefficient first supplied
+a stronger normal form: no nonmonochromatic matching in either selected
+backbone may use both switch edges, the backbone outside the four-vertex
+switch core has a unique perfect matching and triangular support, and the
+two marked overlap edges must be a cut.  Abstract bridge-or-series models
+survive that cut-space test, but the later Hamilton-chord argument excludes
+their realization by a full permanent backbone.  In the sole
+two-switch branch, the excess two-plane has nonzero switch-colour minor
+`AD-BC`; this separates the two switch states at the common excess mode in
+every same-source-side fibre, and separates each switch state from its
+mandatory partner in every fibre.  Thus the obvious same-mode straddling
+route is impossible, and any gain-based survivor would have to use a ratio
+state away from the common excess mode.  `Gr(2,3)` supplies no quadratic Pluecker
+relation, while matchgate identities remain conditional on a deletion-closed
+boundary signature not yet derived.  The direct mixed-backbone route to the
+rectangle between the two degree-four switch modes is now an exact residual
+Hall dichotomy: a residual perfect matching forces it, while every failure
+contains a connected shore of coloured cut type `(1,1,1)` or `(1,1,3)`.
+The three-edge shore is now excluded at every order: its switch-colour ports
+end at the same outside source, so exact tight-cut Laplace expansion gives
+only two distinct complement tensors, while every nontrivial flattening of
+`Delta_3` has rank three.  The five-edge shore is also excluded: defect-one
+boundary balance gives an internal pairing bit, while a pure switch toggles
+the exterior pairing; the aligned backbone admits a one-cycle flip whose
+mixed monomial has no exceptional-source cross partner.  Hence every
+two-switch equality survivor has a residual perfect matching and the direct
+cross-colour switch-mode rectangle is forced.  A fixed six-mode support
+still shows why ledger, local rank, pure-switch, and Hall data alone do not
+imply this conclusion; the mixed-coefficient localization step is essential.
+The last two-switch stratum is now excluded by an even shorter Hamilton
+argument.  Choose the two switch matchings to route their shared excess mode
+`a` to opposite exceptional sources.  Their union contains
+`p_1--a--p_2`; switch-core rigidity makes the whole union Hamilton.  The two
+exceptional edges of the nonswitch colour are then Hamilton chords, whose
+localized extensions force that colour to switch.  This contradiction
+eliminates all `3m+2` equality and yields the strict `3m+3` support bound.
+See
+[`ARBITRARY_PERMANENT_THREE_M_PLUS_TWO_SUPPORT_BOUND.md`](ARBITRARY_PERMANENT_THREE_M_PLUS_TWO_SUPPORT_BOUND.md)
+and
+[`ARBITRARY_PERMANENT_EQUALITY_EXCEPTIONAL_SOURCE_RECTANGLE_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_EXCEPTIONAL_SOURCE_RECTANGLE_THEOREM.md)
+and
+[`ARBITRARY_PERMANENT_EQUALITY_NEGATIVE_GAIN_GRAPH_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_NEGATIVE_GAIN_GRAPH_THEOREM.md)
+and
+[`ARBITRARY_PERMANENT_EQUALITY_PURE_MATCHING_CUBE_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_PURE_MATCHING_CUBE_THEOREM.md)
+and
+[`ARBITRARY_PERMANENT_EQUALITY_ZERO_SWITCH_EXCLUSION_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_ZERO_SWITCH_EXCLUSION_THEOREM.md)
+and
+[`ARBITRARY_PERMANENT_EQUALITY_BACKBONE_COLORING_GLUE_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_BACKBONE_COLORING_GLUE_THEOREM.md)
+and
+[`ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_CUT_NORMAL_FORM_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_CUT_NORMAL_FORM_THEOREM.md)
+and
+[`ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_EXCLUSION_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_EXCLUSION_THEOREM.md)
+and
+[`ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCESS_PLANE_SEPARATION_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCESS_PLANE_SEPARATION_THEOREM.md).
+See also
+[`ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_PORT_COMPLETION_SHORE_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_PORT_COMPLETION_SHORE_THEOREM.md)
+and
+[`ARBITRARY_PERMANENT_EQUALITY_THREE_EDGE_SHORE_FLATTENING_EXCLUSION.md`](ARBITRARY_PERMANENT_EQUALITY_THREE_EDGE_SHORE_FLATTENING_EXCLUSION.md)
+and
+[`ARBITRARY_PERMANENT_EQUALITY_FIVE_EDGE_SHORE_KEMPE_EXCLUSION.md`](ARBITRARY_PERMANENT_EQUALITY_FIVE_EDGE_SHORE_KEMPE_EXCLUSION.md).
+See the equality closure and strict support corollary in
+[`ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCLUSION_THEOREM.md`](ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCLUSION_THEOREM.md).
+
+The first permitted layer, support exactly `3m+3`, also has an
+arbitrary-order symbolic normal form.  Relative to a mandatory `3m`-cell
+coordinate cover, the three excess cells have two or three exceptional
+source endpoints.  For any fixed backbone word, every other physical term
+agrees off those sources and is a single transposition or three-cycle of
+their port assignments.  Its complete coefficient is therefore a common
+nonzero interior monomial times a `2 x 2` or `3 x 3` permanent.  In
+particular, every backbone-word coefficient has at most six physical terms
+independently of `m`.  Pure colour graphs are sharper: contracting one pure
+matching leaves at most three nonmatching arcs, hence at most one directed
+cycle.  Every colour has at most two pure matchings, related by one
+alternating four- or six-cycle, and there are at most eight pure backbones.
+This is a finite boundary theorem, not a matching census.  A sharp
+three-port matrix shows why the previous Hamilton-chord proof does not
+automatically continue: the other two ports can cancel while the
+distinguished chord port stays fixed.
+The exact missing lemma is now nonvanishing of the complementary `2 x 2`
+permanent for each chord extension, or a global argument excluding these
+fixed-port bypass rectangles.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md).
+
+Minimality supplies a second translation of the `3m+3` boundary.  Its
+physical support graph is matching-covered: an edge in no perfect matching
+could be deleted, contradicting the strict bound, while a disconnected
+support would factor and have flattening rank one instead of the target rank
+three.  A published three-edge theorem and bipartiteness therefore put the
+three excess cells in a conformal even circuit or an even subdivision of the
+three-edge theta graph.  These arbitrary-length cores have exactly two or
+three internal perfect matchings.  On the coefficient side, the normalized
+transposition gains `a,b,c` and three-cycle gains `u,v` obey
+
+```text
+1+a+b+c+u+v=0,       uv=abc.
+```
+
+The second equation is the unique cubic toric circuit of the Birkhoff
+polytope `B_3`.  All three complementary port minors can still vanish on one
+consistent complex point, so no single coefficient can exclude
+the fixed-port bypass.  The proposed new global object is a phase-decorated
+`B_3` exchange complex gluing these equations across the at-most-eight pure
+backbones.  Its still-missing datum is the incidence alignment between those
+backbones and the matching of the conformal cycle/theta core.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md`](ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md).
+
+The same matching-covered translation has a constant arbitrary-order ear
+budget.  Starting from any conformal cycle, Hetyei's bipartite ear theorem
+builds the support by exactly `m+3` odd ears.  Their `2m+6` endpoint events
+must give every one of the `2m` vertices its first post-birth endpoint use,
+leaving exactly six replay events: three on the mode shore and three on the
+source shore.  Vertexwise, the replay number is exactly `deg(v)-3`, so the
+source replays are exactly the exceptional-source incidences of the three
+excess cells.  Mode replays only record mode degree surplus; the mandatory
+cover need not be cubic on that shore.  This is a new constant-resource
+schedule, not an exclusion; a long chain of first-use ears can still
+survive.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_SIX_TOKEN_EAR_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_SIX_TOKEN_EAR_THEOREM.md).
+
+The proposed phase gluing now has an exact no-go.  Its six permutation terms
+are one projective `B_3` phase point, and changing the distinguished backbone
+is only the chart action
+
+```text
+(R_tau w)_rho=w_(tau rho)/w_tau.
+```
+
+Thus repeated representatives of one coefficient add no equation.  On a
+genuinely incidence-aligned cube face, path independence forces the switch
+permutations to commute, excluding distinct transpositions and mixed
+transposition/three-cycle transport.  Both surviving abelian cases have
+exact `Q(sqrt(3))` countermodels as abstract chart local systems.  They do
+not realize distinct physical pure backbones.  The next viable target is
+therefore a theorem forcing nonabelian port holonomy or an isolated mixed
+coefficient, not further single-fibre phase elimination.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_B3_PHASE_HOLONOMY_NOGO.md`](ARBITRARY_PERMANENT_THREE_EXCESS_B3_PHASE_HOLONOMY_NOGO.md).
+
+The conformal/backbone incidence gap now has a sharp conditional boundary.
+If both internal matchings of the induced conformal circuit occur in one
+selected same-word coefficient, exceptional-source localization collapses
+that circuit to `C_4` or `C_6`, independent of `m`.  The missing alignment
+is exactly a three-colour residual matching-extension condition; uncoloured
+conformality does not imply it.  A 12-vertex, 21-cell symbolic model realizes
+one aligned induced `C_6` cancellation while retaining matching-coveredness,
+local rank three, and three pure backbones, so one circuit is insufficient.
+
+For a theta, the three internal matching monomials form a torically free
+two-simplex.  If all three align in one coefficient, the theta becomes the
+minimal six-vertex theta.  Its bare three-term coefficient has every
+complementary channel nonzero, but the two completing chords recreate the
+full simultaneous-minor-zero bypass exactly.  Several aligned cycle
+binomials contradict precisely when their exponent vectors have an integer
+relation of odd coefficient sum.  Forcing that odd exchange-lattice relation,
+or coefficient-inducedness of one core, is the new exact target.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_CORE_ALIGNMENT_BOUNDARY.md`](ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_CORE_ALIGNMENT_BOUNDARY.md).
+
+The replay/core bridge is now sharp.  Source replay partition `3` is
+impossible; only `2+1` and `1+1+1` survive.  On one anchored three-port
+matrix, the three transposition exchanges and two oriented three-cycle
+exchanges have rank four and the unique primitive relation
+
+```text
+lambda_+ + lambda_- - lambda_12 - lambda_13 - lambda_23=0.
+```
+
+Its coefficient sum is odd, so isolating all five as negative binomials gives
+`1=-1`; every proper subset is lattice-independent.  This all-five closure
+is not forced by the ear budget.  An exact `m=6` base with source replay
+`2+1` has no aligned conformal carrier containing all three excess cells,
+and a colour-preserving splice yields the same nonalignment for every
+`m>=9`.  These are structural counterfamilies, not full restrictions.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_REPLAY_EXCHANGE_CLOSURE_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_REPLAY_EXCHANGE_CLOSURE_THEOREM.md).
+
+The matchgate translation now has an exact boundary as well.  A `3 x 3`
+permanent satisfies a Plucker-type identity with the quartic defect
+
+```text
+2 x_13 x_23 x_31 x_32.
+```
+
+The bare theta kills this term, but its two completing chords support it.  An
+exact `21`-cell, `m=6` model has the complete conformal `K_3,3`, the exact
+six-token budget, local rank three, pure backbones, and an exact
+`Q(sqrt(2))` zero coefficient with nonzero defect.  For a word-eligible
+conformal theta, Pfaffian eligibility would exclude simultaneous eligibility
+of both chords by the conformal-`K_3,3` characterization, but the six-token
+theorem does not imply Pfaffianity.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_BOSONIC_PLUCKER_DEFECT_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_BOSONIC_PLUCKER_DEFECT_THEOREM.md).
+
+Cross-coefficient equations now eliminate that completed `K_3,3` model.
+Replacing any selected set of port rows by singleton diagonal selectors
+contracts a coefficient to the corresponding principal permanent.  The
+`Q(sqrt(2))` bypass survives the central equation and all twelve
+distance-one words, but every distance-two flip is one nonzero matching.
+At arbitrary order this excludes any coefficient-induced conformal `K_3,3`
+whose three excess cells form its diagonal matching.  Forcing precisely that
+incidence and coefficient-inducedness is now the remaining bridge.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_HAMMING_FACE_PINCH_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_HAMMING_FACE_PINCH_THEOREM.md).
+
+The diagonal-incidence restriction is no longer needed once the full port
+tensor is retained.  Define its bosonic boundary-entanglement rank as the
+largest one-versus-two flattening rank.  For a tight completed theta, the
+three-excess degree ledger leaves only mode profiles `1+1+1` and `2+1+0`;
+the port tensor has boundary-entanglement rank at least two in both.  Hence
+an exterior-decoupled completed theta cannot equal the zero/rank-one slice
+of `Delta_3` for `m>=4`.  Any surviving two-chord case must export nonempty
+boundary sectors, which is now the exact global target.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_ENTANGLEMENT_RANK_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_ENTANGLEMENT_RANK_THEOREM.md).
+
+That boundary target is now resolved for simultaneous chord completion.
+Quotient each core input space by its outgoing boundary covectors.  Every
+nonempty boundary sector then vanishes termwise, while the projected port
+tensor keeps rank at least two.  Tightness makes every exterior mode cubic
+with one mandatory cell of each colour; a conformal exterior matching is
+therefore uniquely selected by its colour word, so the empty exterior tensor
+is nonzero.  The projected `Delta_3` slice has rank at most one, giving a
+contradiction.  Thus, in the tight `3m+3` setup with all excess cells in the
+core and local rank three, an aligned conformal minimal theta cannot have
+both completing chords eligible in one coefficient for any `m>=4`.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_APOLAR_BOUNDARY_QUOTIENT_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_APOLAR_BOUNDARY_QUOTIENT_THEOREM.md).
+
+The same quotient now reaches one layer farther when exactly one completing
+chord is eligible.  In the hard diagonal-`1+1+1`, four-boundary-cell case,
+exterior cubicity gives a colour-by-colour cut transport law.  It either
+kills every projected diagonal direction or confines the port tensor to one
+repeated-colour chart.  The only chart there that can imitate `Delta_3`
+sets an aligned theta-edge coefficient to zero, so it lies precisely on the
+nonalignment divisor.  Thus the aligned one-chord `s=4` branch is excluded;
+when `s=3`, all boundary quotients are lines and a unique exterior selector
+retains port rank two.  Hence the entire aligned diagonal-`1+1+1` one-chord
+profile is excluded.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_CUT_COLOR_EXCLUSION_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_CUT_COLOR_EXCLUSION_THEOREM.md).
+
+The `2+1+0` profile exposes the sharp limit of that ordinary quotient.  An
+exact `m=6`, 21-cell model satisfies the support/degree ledgers, local rank,
+pure backbones, matching-coveredness, conformality, and one complete zero
+mixed coefficient, yet has apolar survival profile `(3,2,0)`: one boundary
+span fills its whole port space, so both the core tensor and `Delta_3` vanish
+after quotient.  Its backbone-alignment defect is exactly one, not zero.
+This is a countermodel to the method, not a restriction, and motivates a
+derived apolar boundary signature retaining exterior-power boundary data.
+See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_APOLAR_SATURATION_BOUNDARY.md`](ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_APOLAR_SATURATION_BOUNDARY.md).
+
+Alignment supplies the missing incidence.  In the physical eight-cell
+`2+1+0` port it forces the zero-excess mode to export exactly the other two
+colours; an apolar rank minor and cut-colour transport then exclude all
+surplus placements.  If the second chord is physically present in another
+colour but ineligible at the aligned word, its full tensor terms survive,
+but the aligned-colour coordinate slice removes them exactly.  The
+four-placement physical ledger then reduces to a nonzero Segre minor or a
+nonzero port slice
+against a transported zero target.  Thus the complete aligned one-chord
+`2+1+0` profile is excluded for `m>=4`; the bare aligned theta remains open.
+See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_210_ALIGNMENT_DESATURATION_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_210_ALIGNMENT_DESATURATION_THEOREM.md)
+and
+[`ARBITRARY_PERMANENT_THREE_EXCESS_INELIGIBLE_NINTH_CELL_EXCLUSION_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_INELIGIBLE_NINTH_CELL_EXCLUSION_THEOREM.md).
+
+The bare theta has a different boundary.  Exact `1+1+1` and `2+1+0`
+one-open-port charts, together with a `3+0+0` zero-absorption chart, show
+that boundary-sector killing, deletion of
+word-ineligible chord directions, and ordinary flattenings can leave
+exactly a nonzero monochromatic target slice.  The local defect-free theta
+still supplies a new route: its signless permanental cofactor equation and
+the alternating Segre minor clash by a factor of two.  Making that clash
+global requires a marked pair-deletion response jet and one exterior toric
+cross-ratio; the present product quotient kills precisely those marked
+sectors.  This is a rigorous method boundary and a conditional new target,
+not a bare-theta exclusion.  See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_BARE_THETA_ABSORPTION_AND_COFACTOR_RESPONSE_BOUNDARY.md`](ARBITRARY_PERMANENT_THREE_EXCESS_BARE_THETA_ABSORPTION_AND_COFACTOR_RESPONSE_BOUNDARY.md).
+
+The marked exterior matrix is exactly the degree-one zeon response
+`Omega=Y C_per(W) Z`.  An exact tight `m=5` support has all currently
+isolated colour, alignment, conformality, and matching-covered hypotheses
+but a transverse marked block with determinant one.  It fails the full
+restriction by the known `(0,2,2;1)` quotient, so this is a sharp method
+boundary, not a conjecture counterexample.  Relative to a unique exterior
+matching, the response is an alternating-path matrix; a common alternating
+separator forces rank one.  One exterior channel supplies that separator
+automatically at `m=4`, although the legal target marking is still missing.
+See
+[`ARBITRARY_PERMANENT_THREE_EXCESS_MARKED_RESPONSE_TORIC_HOLONOMY_BOUNDARY.md`](ARBITRARY_PERMANENT_THREE_EXCESS_MARKED_RESPONSE_TORIC_HOLONOMY_BOUNDARY.md).
+
+The strict support theorem also transfers back to the graph whenever one of
+the root--blocker extraction lemmas applies.  Five roots with five tight
+blockers require at least 18 active contracted root--blocker covectors.  More
+generally, `r` roots with `r+1` blockers and one residual port require at
+least `3r+6` active covectors, including the port row.  A purely graph-side
+sufficient contradiction is
+
+```text
+e_G(R,B)+e_G(B,Q)<=3r+5.
+```
+
+Thus the sharp extracted-cut targets are at most 17, 20, and 23 active cells
+for the `P_5`, `P_6`, and conditionally factorized `P_7` routes.  This does
+not force any such sparse extraction in every hypothetical graph; it only
+closes the old equality shell once an established extraction applies.  See
+[`GRAPH_EXTRACTION_STRICT_SUPPORT_TRANSFER_COROLLARY.md`](GRAPH_EXTRACTION_STRICT_SUPPORT_TRANSFER_COROLLARY.md).
+
+Two complementary cell-level transfers are also settled.  The all-root and
+four-root jets give five exact hidden-pair equations; on each rank-two chart
+the two named intermediate cofactors are individually binary-diagonal, and
+at least two internal four-root sectors must be active.  Common tangent-edge
+realizability still does not force rank two: an exact sparse counterfamily
+has a rank-two all-root frame and coprime active sectors while all five
+hidden pairs have rank at most one.  What does survive elimination is a
+coloured quotient-wedge invariant: every active sector has all `2 x 2`
+cofactor minors zero, and at least two active sectors yield five
+active-label-free degree-eight products.  Conversely, the smallest scalar
+Hirota overlay has no further common-weight equation at all.  Any next
+obstruction must force a selected coloured minor nonzero using lower
+cofactor values or `P_7` incidence structure.  See
+[`ROOT_M7_FOUR_ROOT_HIDDEN_PAIR_COFACTOR_THEOREM.md`](ROOT_M7_FOUR_ROOT_HIDDEN_PAIR_COFACTOR_THEOREM.md)
+and
+[`ROOT_M7_SIMULTANEOUS_RANK_ONE_HIDDEN_PAIR_REALIZATION_NOGO.md`](ROOT_M7_SIMULTANEOUS_RANK_ONE_HIDDEN_PAIR_REALIZATION_NOGO.md),
+[`ROOT_M7_COFACTOR_QUOTIENT_WEDGE_INVARIANT.md`](ROOT_M7_COFACTOR_QUOTIENT_WEDGE_INVARIANT.md),
+and
+[`ROOT_M7_HIROTA_HIDDEN_OVERLAY_SURJECTIVITY_NOGO.md`](ROOT_M7_HIROTA_HIDDEN_OVERLAY_SURJECTIVITY_NOGO.md).
+
+A frontier-specific literature translation now organizes the next symbolic
+work around gain-graph holonomy, matching toric relations, quiver
+semi-invariants, coloured deletion cumulants, conditional matchgate charts,
+and exact tensor-restriction invariant theory.  It also defines two proposed
+research objects--the multi-backbone gain diagram and the bound
+deletion-depth cofactor quiver--and records the proof obligation and failure
+boundary for each.  See
+[`SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md`](SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md).
+
+A separate, nonblocking method-transfer track is recorded in
+[`ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md`](ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md).
+It contains an exact root-of-unity permanent selector, its legal heralded
+symmetric-hafnian seed lift and fixed-left `P_4` no-go, and a quotient-closed
+catalogue for the first six-blocker surplus.  These are bounded inputs to the
+construction/gluing strategies and do not change the global status or the
+immediate component/fibre proof priorities.
+
+At this checkpoint the lower-pair pure-`P_4` locus is exhausted and the
+exactly-one-kernel `triangle-(1,1,1)` residual is completely placed in
+component closures.  Three exact component theorems arising from that
+placement first raised the certified lower bound from eighteen to twenty-one
+pure-`P_4` component orbits: the common-kernel vertical fivefold, the
+common-active binary-triangle fivefold, and the coincident-support rank-one
+star sixfold.  The formerly open common-kernel active/active chart in the
+`triangle-(2,1,1)` cell now supplies a fourth new theorem: its unequal
+complementary directions form component **twenty-two**, a smooth
+five-dimensional orbit.  All six Borel-flag orbits and every projective
+direction boundary in that triangle cell are now classified.  The outward common-center-kernel
+orientation of the first star now supplies component **twenty-three**, a
+smooth fivefold with profile `(3,3,3,4,4,4)`.  The disjoint-binary
+split-center mixed orientation now supplies component **twenty-four**, another
+smooth fivefold with the same profile and relation word but a distinct
+center/leaf kernel-endpoint word.  An exact eight-signature support ledger
+now shows that every other mixed-center support is empty or lower-pair.  The
+disjoint-binary unequal-endpoint two-inward chart supplies component
+**twenty-five**, again a smooth fivefold with the same coarse pair profile.
+An exact support-one/support-two theorem excludes the equal-endpoint inward
+stratum completely.  A second eight-signature ledger places every
+unequal-endpoint support boundary in component twenty-five, an already
+classified outward/mixed orientation, or the lower-pair locus.  Consequently
+the entire star `(2,1,1)` cell is closed.  The final star `(1,1,1)` cell is
+now closed too.  The all-center and all-double orientations are empty; the
+one- and two-double-spoke ledgers lie in known closures; the no-double
+endpoint signature `(2,1,0,0)` reduces to lower-pair or completed triangle
+charts; and the remaining `(1,1,1,0)` collision ledger lies in component 21,
+the split-cubic components `L_1,L_2,L_3`, or a completed exterior triangle.
+The dangerous three-factor source-triangle sheet has one saturated prime and
+is exactly `L_3`; a previously suggested rational point is replayed as
+non-pure.  Together with the lower-pair theorem, this proves that the
+twenty-five certified pure-`P_4` component closures are exhaustive.
+See
+[`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md)
+and
+[`P4_NO_DOUBLE_ENDPOINT_STAR_1110_COLLISION_CLASSIFICATION.md`](P4_NO_DOUBLE_ENDPOINT_STAR_1110_COLLISION_CLASSIFICATION.md).
+
+Generic marked `H31` fibres are now proved empty on all twenty-five
+components.  Generic weighted `H22` is proved empty on the first twenty-one
+and components twenty-three and twenty-four.  Component twenty-two's `D01`
+orbit is closed;
+its complementary `D23` orbit has exact Q1/Q2/Q3 and broad factor covers.
+Inside the old `h1=0` residual the divisor `R*h2=1` is closed, and on
+`rho=0,h1!=0` the whole `h2=0` branch and the open `h2*E!=0` are closed;
+an exact seven-minor saturation now closes `rho=0,E=0,h1*h2!=0` as well.
+Thus the complete generic-component `rho=0` slice is empty.  The complete
+`rho=-1` slice is empty too: a universal kernel kills both diagonals on the
+rank-seven locus, and five exact cofactors leave only Q3 and one new Q4
+rank-drop marking, whose full incidence ideals are unit.  The complete `h0=0`
+intersection of the `h1=0,2h3=s,G=G2=0` residual is now empty too: after
+the prior factor cover and `R*h2=1` divisor, its exact genuine-incidence
+ideal is unit over `Q(A,R,D)`, while the remaining parameter residue is
+proper and zero-dimensional.  On the complementary `h0!=0` part, the fixed
+mixed minor on rows `01234578` factors as the already inverted chart factors
+times one explicit nine-term cubic cofactor `P`.  Hence the exact nonempty
+open `P!=0` has zero mixed kernel and is empty; an explicit point over
+`Q(sqrt(29665))` proves nonvacuity.  On `P=0`, Cramer reduction produces a
+sextic survivor polynomial, and an exact nonzero resultant with a second
+fixed maximal minor closes the entire displayed `h1=0` residual.  On the
+remaining `h1!=0` locus, the divisor `H=2*A*h1+1=0` now has a second fixed
+maximal minor: away from `rho=0,-1`, rank drop is confined to
+`h2*f2*f7*f8*U*V=0`.  Inside `h2=0`, the three further divisors
+`rho=1`, `f6=0`, and `f8=0` are now exactly empty by eight specialized
+rational-function-field determinants and an independent reconstruction.
+The complementary `h2=0` branch is now closed too.  Sparse pivot reduction
+turns its first two selected `8 x 8` minors into `6 x 6` determinants forcing
+`W=0` and then a polynomial `P=0` linear in `h3`.  The `f7/W` resultant is a
+coefficient-field unit, `P`'s leading and constant coefficients are coprime,
+and two terminal `6 x 6` numerators have exact gcd
+`rho*(rho+1)^2`; these roots were already excluded.  Thus the entire
+`H=h2=0,rho*(rho+1)!=0` branch is empty.  The other five divisors in the
+broader `H=0` cover remain open, but their first cross-intersection is now
+closed: on `f2=s*h2+1=0` and `f7=0`, three fixed maximal minors successively
+force one linear value of `h0`, then `2*h3+s=0`, and finally a nonzero
+coefficient-field unit.  Thus `H=f2=f7=0` is empty over `Q(A,R,D)`; the rest
+of `f2=0`, including its `f8` and residual branches, remains open.  The first
+`f8` subintersection is empty too: on
+`f2=f8=2*h3+s=0`, one maximal minor forces a unique linear `h0`, and a
+terminal maximal minor is a nonzero coefficient-field unit.  The rest of
+`f2=f8=0` remains open.  See
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_E_ZERO_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_E_ZERO_OBSTRUCTION.md) and
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_MINUS_ONE_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_MINUS_ONE_OBSTRUCTION.md),
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md), together with
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_COFACTOR_OPEN_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_COFACTOR_OPEN_OBSTRUCTION.md) and
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_SECOND_COFACTOR_COVER_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_SECOND_COFACTOR_COVER_OBSTRUCTION.md), together with
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_TWO_MINOR_FACTOR_COVER_PARTIAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_TWO_MINOR_FACTOR_COVER_PARTIAL_OBSTRUCTION.md) and
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_H2_ZERO_PARTIAL_CLOSURE.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_H2_ZERO_PARTIAL_CLOSURE.md), together with
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_SIX_BY_SIX_TERMINAL_REDUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_SIX_BY_SIX_TERMINAL_REDUCTION.md) and
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_TERMINAL_COMPLETE_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_TERMINAL_COMPLETE_OBSTRUCTION.md), together with
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_F2_F7_INTERSECTION_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_F2_F7_INTERSECTION_OBSTRUCTION.md) and
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_F2_F8_H3_SLOPE_INTERSECTION_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_F2_F8_H3_SLOPE_INTERSECTION_OBSTRUCTION.md).
+Component
+twenty-three's generic weighted fibre is now completely closed.  After the
+infinity and `lambda=0,+/-1` closures, two exact minors leave the ordinary
+residual `F=0,h2!=0,(h3=0 or H=0)`; a localized full-module certificate closes
+`h3=0`, while an exact selected minor modulo `<F,H>` closes `H=0` after a
+coprime-linear-form split.  On the genuine component divisor `r=0`, an exact
+twelve-minor tree plus endpoint and projective-weight modules first closed the
+complete weighted fibre over `Q(t)`.  A stronger eight-minor localized unit
+certificate and six exact endpoint/projective modules now close every point
+of its constant-profile open `t(t-1)(t+1)!=0`.  Two nine-minor and exact
+endpoint-module certificates close the retained special all-pair points
+`t=+/-1`, so the normalized divisor `r=0,t!=0` is empty.  A legal
+permanent-preserving involution `(r,t)->(-t,-r)` exchanges the homogeneous
+weight coordinates in both contractions and transfers these open and point
+theorems to the complete normalized divisor `t=0,r!=0`.  On the omitted
+`s=1, k=infinity` chart, the all-pair boundary `r^2!=1` is also empty for both
+marked `H31` and homogeneous weighted `H22`.  The marked calculation covers
+all four source insertions and every projective extension direction; the
+weighted calculation contains the required `B01` diagonal at every finite
+weight and has the full mixed module at projective weight.  This chart
+includes the common `r=t=0` boundary point and maps to component twenty-two's
+`2A+R=0` curve, with `r=0` on the component-thirteen intersection.  Its
+`r=+/-1` endpoints have lower-pair profile `(3,3,3,4,4,2)` and are separately
+empty for both marked `H31` and weighted `H22` in the same fixed normalized
+order.  Thus the entire `s=1` normalized `k=infinity` diagonal line is closed
+for these two lifting types.  On the finite part of the distinct
+`s=0,rt=1` face, the full all-pair locus `r!=0,+/-1`, with arbitrary `k`, is
+also empty for both marked `H31` and weighted `H22`; this includes its
+all-rank-three divisor `k=0`, all finite weights, and projective weight.  At
+the delicate marked `k=0` intersection, the surviving third-row candidates
+have forbidden pure coefficient exactly `4`.  The two finite
+`r=+/-1` endpoint lines are separately empty for both marked `H31` and
+weighted `H22`, including `k=0`; they are tangent polar-flag lower-pair
+boundaries, not the secant endpoints on the `s=1,k=infinity` line.  The two
+projective parameter endpoints `(r,t)=(infinity,0),(0,infinity)` are also
+empty for complete marked `H31` and homogeneous weighted `H22` at every
+finite `k`, including the further drop at `k=0`; their genuine shared-binary
+`H22` line is killed only at the exact ternary-compatibility stage.  The
+separate `s=0,k=infinity` corner surface and arbitrary order remain separate.  See
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md),
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_AFFINE_CONSTANT_PROFILE_OPEN_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_AFFINE_CONSTANT_PROFILE_OPEN_OBSTRUCTION.md), and
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_T_PLUS_MINUS_ONE_SPECIAL_ALL_PAIR_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_T_PLUS_MINUS_ONE_SPECIAL_ALL_PAIR_OBSTRUCTION.md), together with
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_T_DIVISOR_SYMMETRY_TRANSFER.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_T_DIVISOR_SYMMETRY_TRANSFER.md) and
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md),
+[`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md), and
+[`P5_COMPONENT23_K_INFINITY_LOWER_PAIR_ENDPOINTS_OBSTRUCTION.md`](P5_COMPONENT23_K_INFINITY_LOWER_PAIR_ENDPOINTS_OBSTRUCTION.md), together with
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md) and
+[`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md`](P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md), together with
+[`P5_COMPONENT23_S_ZERO_RT_ONE_LOWER_PAIR_ENDPOINT_LINES_OBSTRUCTION.md`](P5_COMPONENT23_S_ZERO_RT_ONE_LOWER_PAIR_ENDPOINT_LINES_OBSTRUCTION.md) and
+[`P5_COMPONENT23_S_ZERO_RT_ONE_PROJECTIVE_PARAMETER_ENDPOINTS_OBSTRUCTION.md`](P5_COMPONENT23_S_ZERO_RT_ONE_PROJECTIVE_PARAMETER_ENDPOINTS_OBSTRUCTION.md).
+The exact parameter-compactification ledger also shows why these charts are
+not exhaustive.  On `s=1`, the two infinity curves
+`r=infinity,t=k` and `t=infinity,r=-k` are now empty for complete marked
+`H31` and homogeneous weighted `H22` at every finite `k`.  Their simultaneous
+triple-infinity intersection is a single smooth compactification point, not
+an exceptional direction family, and its two complete fibres are empty too.
+See
+[`P5_COMPONENT23_S_ONE_PARAMETER_INFINITY_CURVES_OBSTRUCTION.md`](P5_COMPONENT23_S_ONE_PARAMETER_INFINITY_CURVES_OBSTRUCTION.md) and
+[`P5_COMPONENT23_S_ONE_TRIPLE_PARAMETER_INFINITY_CORNER_OBSTRUCTION.md`](P5_COMPONENT23_S_ONE_TRIPLE_PARAMETER_INFINITY_CORNER_OBSTRUCTION.md).
+At `s=0,k=infinity` there is a separate two-parameter
+all-pair surface, generically of profile `(3,3,3,3,3,4)`.  Its affine
+finite-`(r,t)` marked-`H31` fibre is empty: the exact projection splits into
+seven open branches plus diagonal, antidiagonal, center, coordinate, and
+lower-pair endpoint strata, each with a uniform rank/transverse obstruction.
+Its affine
+`r=0` divisor is now closed for complete homogeneous weighted ternary `H22`:
+on the finite chart the complete
+shared binary-incidence projection has a genuine survivor family, disproving
+module survival as a sufficient obstruction criterion, but an exact
+one-third-row determinant kills every member before a ternary lift.  A
+corner-only tensor-mode swap `(2 3)` fixes both contractions and homogeneous
+weight, transferring this theorem to the complete finite `t=0` divisor,
+including `lambda=0`; a separate projective-weight saturation and uniform
+one-third-row determinant close `[1:0]` on both coordinate divisors.  The
+natural projective `r/t` boundary of this corner is also empty for complete
+marked `H31` and homogeneous weighted `H22`, including both infinity curves
+and their common point.  Thus marked `H31` is closed on the whole displayed
+`P^1_r x P^1_t` corner.  For weighted `H22`, the complete generic point over
+`Q(r,t)` is empty for every marking and homogeneous weight: seven ordinary
+minors leave only a rank-seven line with required `B01=0`, while exact
+modules close `lambda=+/-1` and projective weight.  This is a function-field
+theorem, not an integral-open closure.  The antidiagonal `t=-r`, `r!=0` is
+separately empty at all homogeneous weights, including the rank-drop values
+`r^2=-1`; after the already closed axes, diagonal, hyperbola, and projective
+boundary, the final finite special divisors `r=+/-1` and `t=+/-1` are now
+empty too.  Their ordinary and projective shared-binary modules have genuine
+survivor lines, but uniform one-`gamma` determinants obstruct every ternary
+lift; exact mode-swap and signed reciprocal-weight symmetries transport the
+base `r=1` calculation to all four lines.  Their omitted intersections are
+exactly the previously closed axes, diagonal, hyperbola, antidiagonal, and
+projective boundary.  Consequently homogeneous weighted `H22`, as well as
+marked `H31`, is empty on the whole displayed normalized
+`P^1_r x P^1_t` corner.  On the nonredundant all-pair part of
+`r*t=1`, seven exact ordinary
+minors leave one rank-seven line whose required `B01` diagonal is zero, while
+exact row modules close both exceptional finite weights and projective weight.
+The `s=infinity` face contributes only the zero tensor;
+source-torus compactification and arbitrary
+ambient/Grassmann degenerations remain unknown.  See
+[`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_FINITE_CORNER_OBSTRUCTION.md`](P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_FINITE_CORNER_OBSTRUCTION.md) and
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_COORDINATE_SURVIVOR.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_COORDINATE_SURVIVOR.md), together with
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_R_T_COORDINATE_SYMMETRY_TRANSFER.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_R_T_COORDINATE_SYMMETRY_TRANSFER.md) and
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_PROJECTIVE_WEIGHT_COORDINATE_DIVISORS_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_PROJECTIVE_WEIGHT_COORDINATE_DIVISORS_OBSTRUCTION.md), together with
+[`P5_COMPONENT23_S_ZERO_K_INFINITY_PROJECTIVE_R_T_BOUNDARY_OBSTRUCTION.md`](P5_COMPONENT23_S_ZERO_K_INFINITY_PROJECTIVE_R_T_BOUNDARY_OBSTRUCTION.md) and
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_RT_ONE_ALL_PAIR_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_RT_ONE_ALL_PAIR_OBSTRUCTION.md), together with
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_GENERIC_INTERIOR_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_GENERIC_INTERIOR_OBSTRUCTION.md) and
+[`P5_H22_COMPONENT23_S_ZERO_K_INFINITY_ANTIDIAGONAL_OBSTRUCTION.md`](P5_H22_COMPONENT23_S_ZERO_K_INFINITY_ANTIDIAGONAL_OBSTRUCTION.md), together with
+[`P5_H22_COMPONENT23_S_ZERO_K_INFINITY_UNIT_PARAMETER_LINES_OBSTRUCTION.md`](P5_H22_COMPONENT23_S_ZERO_K_INFINITY_UNIT_PARAMETER_LINES_OBSTRUCTION.md).
+Component twenty-four's complete generic weighted fibre is empty across both
+pair orbits and both homogeneous-weight charts.  On component twenty-five,
+generic marked `H31` is empty.  Weighted `H22` is empty at both weight-
+infinity endpoints and on a dense finite-`D01` extension chart; the residual
+`D01` divisor has empty `lambda=+/-1` slices and a two-factor cover for
+`lambda^2!=1`.  The `A=0` branch is generically empty over the weight function
+field, and exact retained-weight elimination confines every ordinary terminal
+candidate to `(js-1)lambda-(js+1)=0`.  That divisor is generically populated
+at the normalized fixed-vertex level by an exact rational section, but its
+unique marking makes the opposite finite-`D01` diagonal identically zero.
+Hence the divisor-generic terminal section is nongenuine and closed; an
+independent paired-`D23` minor supplies the dense-open ternary obstruction.
+On the parallel `B=0` branch, a corrected full-quadratic-field solve proves
+that no component dominates the ordinary weight line over the generic
+component point.  The two linear Segre equations have determinant
+`-32 e j lambda s^2 Q^7(lambda-1)T/(R^3H)`; after solving them in `K`, the
+last equation is a nonzero multiple of an explicit quadratic `N(lambda)`.
+The retained linear divisor `T=0` and the denominator boundary `H=0` are now
+empty over the full quadratic field.  On the exceptional divisor `N=0`, an
+exact nonpoint slice over `Q(s)` proves that the normalized `D01` section is
+generically a genuine shared binary incidence, while all four paired `D23`
+one-marked maps have rank four.  Thus generic `N=0` is a verified false
+positive rather than a counterexample.  Its retained intersections with
+`e=0,j=0,s=0,lambda=0` are now empty too.  The only new `lambda=0`
+standing family has a genuine two-parameter binary section, but four exact
+coefficient quadrics generate the unit ideal and force the paired mode-zero
+map to rank four; the split `e=s=0,k=+/-j` corners are killed by two
+complementary mode-one minors.  The leading-weight divisor `A_2=0` is now
+empty too.  Its two linear factors route to standing chart boundaries; on
+the genuine quadratic factor the full degree-four algebra gives a nonzero
+opposite-diagonal norm and four paired-`D23` minor-norm numerators with gcd
+one.  A separate exact quotient closes the nonmonic leading boundary
+`3(js)^2+js-1=0`.  The reciprocal constant-weight divisor `A_0=0` is now
+closed too: the existing `lambda=0` theorem handles one root, while on the
+nonzero companion the full four-dimensional `C_0=0` algebra again gives a
+nonzero opposite norm and four paired norm numerators with gcd one; a
+separate exact quotient closes `3(js)^2-js-1=0`.  On the exact nonpoint slice
+`e=1,j=2`, the retained
+opposite-diagonal and simultaneous rank-norm residual is now completely
+closed: its opposite norm is explicit, the four paired norm numerators have
+gcd `(2s^2+1)^2=R^2`, and the sole new ordinary denominator fibre is a
+degree-four `lambda=5` false positive with four nonzero paired minors.  The
+global opposite-diagonal-zero divisor is now classified too: the marked
+opposite diagonal is `kG`, and `Res_lambda(N,G)` has one new irreducible
+factor `U(a,b)` after the standing and `A_0A_2` factors; every point on that
+locus is nongenuine.  On the retained ordinary `B=N=0,G!=0` sheet, two exact
+sparse paired-`D23` minors now force every simultaneous rank-drop point into
+`w=0`, `k=1`, or `Tbar=A=0`.  The `k=1` branch is entirely old
+`a=+/-1` or `b=+/-1` boundary, while the complete joint branch is the
+irreducible sextic `3b^6-3b^4-6b^2-2=0` and has an exact rank-four `D23`
+witness.  On the last divisor `w=0`, a mode-one sparse cofactor minor is
+`8X_-^2X_+`; the common conjugate norm of `X_-` and `X_+` is a retained unit.
+Thus every alternative in this sparse cover is closed on the retained
+ordinary sheet.  One genuine projective leaf face is now partially closed as
+well.  On `a=1,g=0,es=1`, the generic finite-`D01` fibre over
+`Q(s,k,lambda)` and the `D01` weight-at-infinity endpoint over `Q(s,k)` are
+empty for every marking: in two independent source bases the all-alpha row
+lies in the fourteen-mixed-row extension module.  This is only a generic
+weight-function-field theorem.  Special finite weights, all `D23`, the
+other chart/source/ambient/projective boundaries remain open on this sign
+sheet:
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_ES_ONE_D01_GENERIC_WEIGHT_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_ES_ONE_D01_GENERIC_WEIGHT_OBSTRUCTION.md).
+The opposite `es=-1` sheet is now closed for generic finite `D01` as well,
+and direct all-marking modules additionally close `lambda=0,+/-1` and weight
+infinity.  The generic transfer is legal under `X0<->X1`, `s->-s`, and
+`lambda->1/lambda`, while the endpoint certificates do not use this
+inversion.  Parameter-dependent special finite weights, every `D23` chart,
+and the remaining compactification boundaries stay open:
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_ES_MINUS_ONE_D01_WEIGHT_CLOSURE.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_ES_MINUS_ONE_D01_WEIGHT_CLOSURE.md).
+Generic finite `D23` is now closed on both sign sheets as well.  On `es=1`,
+the complete normalized binary Segre incidence is exactly one affine line.
+One paired-`D01` minor has nonzero factor `X=s+2(1-lambda)t`; on `X=0`, a
+second independent minor is the coefficient-field unit `k^2`.  A legal
+ambient pair swap, `s,k->-s,-k`, and reciprocal-weight transfer carries this
+closure to `es=-1`.  Direct specialization also closes the generic
+ordinary-weight `D23` fibre on `k=0,s!=0`.  Its normalized incidence ideal
+becomes two reduced affine lines, including a specialization-only branch;
+their paired-`D01` rank profiles are respectively `(4,4,4,3)` with one
+`(4,4,2,3)` point, and `(3,4,4,3)`, so both are empty.  Special finite
+weights, `D23` weight infinity, `s=0`, and the other projective charts remain
+open:
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_GENERIC_D23_AFFINE_LINE_RANK_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_GENERIC_D23_AFFINE_LINE_RANK_OBSTRUCTION.md), together with
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_K_ZERO_GENERIC_D23_RANK_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_K_ZERO_GENERIC_D23_RANK_OBSTRUCTION.md).
+An earlier narrower cover is retained only as a withdrawn descent-only failed
+route because it split `1,k` coefficients while the free extensions may be
+quadratic-field-valued.  See
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_SURVIVOR.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_SURVIVOR.md),
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_GENERIC_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_GENERIC_OBSTRUCTION.md), the withdrawn diagnostic
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_GENERIC_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_GENERIC_OBSTRUCTION.md), and the corrected theorem
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_FULL_FIELD_GENERIC_WEIGHT_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_FULL_FIELD_GENERIC_WEIGHT_OBSTRUCTION.md), together with the boundary and false-positive packages
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_T_ZERO_AND_H_BOUNDARY_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_T_ZERO_AND_H_BOUNDARY_OBSTRUCTION.md) and
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_ALGEBRAIC_FALSE_POSITIVE.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_ALGEBRAIC_FALSE_POSITIVE.md) and
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_GENERIC_FALSE_POSITIVE.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_GENERIC_FALSE_POSITIVE.md), together with the retained-divisor closures
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_LINEAR_SOLVE_DIVISORS_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_LINEAR_SOLVE_DIVISORS_OBSTRUCTION.md) and
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A2_ZERO_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A2_ZERO_OBSTRUCTION.md), together with
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A0_COMPANION_DIVISOR_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A0_COMPANION_DIVISOR_OBSTRUCTION.md) and
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_OPPOSITE_DIAGONAL_DIVISOR.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_OPPOSITE_DIAGONAL_DIVISOR.md), together with
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_E1_J2_SLICE_COMPLETE_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_E1_J2_SLICE_COMPLETE_OBSTRUCTION.md), and the sparse-cover pair
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_SPARSE_TWO_MINOR_COVER.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_SPARSE_TWO_MINOR_COVER.md) and
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_SPARSE_COVER_NON_W_BRANCHES_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_SPARSE_COVER_NON_W_BRANCHES_OBSTRUCTION.md), completed by
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_W_ZERO_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_W_ZERO_OBSTRUCTION.md).
+Finite `D23` has a three-branch necessary cover and its full
+`lambda=1` all-marking slice is empty.  The other displayed finite branches
+remain unknown.  The remaining special/projective
+boundaries are not promoted by those function-field theorems.  On component
+nineteen, the finite `q=0` weighted-`H22` divisor is now independently closed
+through both rank-jump endpoints `phi=+/-1` on `p*phi!=0`.  Direct
+specialization was essential: the finite `D23` projection gains the embedded
+generator `h1^2*h2`, which removes false `lambda=1` survivors.  The `p=0`
+zero-tensor boundary and `phi=0` chart boundary remain separate.  The
+singular-basis divisor `q=phi` is also independently closed on `p*phi!=0`
+using a regular row-swap basis; all eight exact function-field incidence
+ideals are unit, and its only parameter-aware closure lies at the lower-pair
+boundary `phi=0`.  On the ordinary `p=0` divisor, a regular replacement basis
+and an eight-certificate aggregate now close the complete projective
+weighted-`H22` fibre over the entire nonzero all-pair-open locus
+`q*phi*(q-phi)!=0`.  This includes `q=+/-1`, `phi=+/-1`, both
+`q*phi=+/-1` divisors, their survivor jumps, and the reciprocal
+weight-at-infinity chart.  The zero sub-divisor `q=phi` is a smooth
+codimension-two zero base with projectivized first-normal fibre `P1`.  Exact
+construction and a 16-chart no-import audit verify empty weighted-`H22`
+incidence on that whole associated-graded `P1`, including `phi=+/-1`.
+A parameter-aware finite cover now closes every characteristic-zero DVR or
+Puiseux arc through that base whose nonzero generic point stays in the
+displayed finite component chart.  It retains arbitrary marking/extension
+poles, detects the hidden `q*phi=1`, `lambda=-1` sheet missed by the generic
+coefficient field, and kills that sheet by a fixed rank-four marked minor.
+Ambient-component, source/projective, omitted Grassmann-chart, and
+multi-parameter approaches remain `UNKNOWN`.  The `q=0` and `phi=0` loci are
+lower-pair boundaries.
+Other divisors remain separate.  On component
+twenty, the entire finite normalized `(p+q)(p-q+1)!=0` sheet is now closed,
+including every special-divisor intersection inside that open.  The intrinsic
+`p-q+1=0` chart wall is also closed over its generic point for marked `H31`
+and weighted `H22`; its two finite zero-restriction base points also have
+empty compactified Segre-direction incidences.  Their complete diagonal
+source-torus DVR/Puiseux atlases are now independently verified: exactly
+sixteen nonzero leading charts occur, all lie in older component closures,
+and a pointwise three-kernel Hall deficiency closes marked `H31` and weighted
+`H22` on every chart.  On `p+q=0`, an
+independently verified DVR/Puiseux classification exhausts every diagonal
+source-torus arc into lower-pair strata or two explicit higher-rank charts.
+Exact marked `H31` certificates close both charts, the embedded-`P_3`
+projective strata, the exceptional component-fifteen lower-pair fibres, and
+both component-fourteen infinity endpoints.  A separate nine-stratum
+aggregate audit and twelve direct mask-6 certificates now verify the same
+whole diagonal-DVR wall for weighted `H22`.  Non-diagonal source changes and
+the full embedded-`P_3` projective weighted-`H22` closure remain open.  The
+five-root no-torus locus has also been pushed from a hypersurface envelope to
+codimension at least two.  Every blocker surplus now has one exact
+arbitrary-order multi-port cofactor expansion.  The first surplus is an
+ordinary port-permanent; five roots with seven blockers give its first
+genuine two-port case, whose canonical minimal incidence cell is
+`012+2(01+02+12)` and contains three overlapping pure-`P_5` systems.  No
+multi-row factorisation, and hence no higher permanent extraction, follows
+automatically.  On
+the separate common-port `P_6` wall, an exact
+rank-five configuration now extracts a necessary finite bilinear-gate
+problem from the first nonlinear factorisation condition and exactly excludes
+its unique four-gate branch.  Perfect-pairing certificates now exclude the
+other 52 covers as well, so that displayed rank-five model cannot satisfy the
+first nonlinear condition.  A first exact two-copy gluing test is now known:
+when two five-root/six-blocker configurations share four roots and all six
+blockers, zero exchanged-root coupling makes their two `P_6` restrictions the
+same port-swap constraint.  Nonzero coupling forces one-dimensional
+common-root incident spans at the exchanged vertices but leaves root/port rows
+locally arbitrary; an exact rational model gives two nonproportional `P_6`
+pullbacks.  Thus local incidence cannot exclude either maximal-overlap case;
+the exact global matching identity instead places the two endpoint `P_6`
+tensors at opposite corners of a rank-one GHZ coefficient hypercube.  Its
+mixed corners are four-root/two-port cofactor tensors, not known `P_6`
+restrictions.  Eliminating those companions, five-blocker overlap, or
+different ports is still required.  At order twelve the cofactor identity
+sharpens completely modulo the GHZ diagonal plane.  The quotient map has
+rank zero or one; the latter has exactly the isotropic conic/rulings as its
+decomposable diagonal locus, and its target frame is classified by three
+affine ratio points.  The quotient-zero branch would give an open `P1 x P1`
+surface, but it now has the sharper necessary condition
+`J_H=Lambda_H(ker Lambda_H^off)` meeting `(C^*)^3`, followed by an effective
+two-row Laplace factorization.  Two exact common-row cores fail this test:
+one has `J_H=0`, while a nonzero diagonal-cofactor example has
+`J_H=span(-1,1,0)`.  Both extend to all-nonzero local edge systems but violate
+the global endpoint identity.  A double-kernel contraction, combined with
+`subrank(P_4)=2`, excludes any core with two fully supported kernel modes and
+classifies every nonempty pairwise support intersection as a necessary pure
+or binary `P_4` deletion.  A triple-kernel contraction first confines three
+support-two modes to the distinct-missing-colour pattern; their three forced
+pure cofactors then splice into a forbidden concise `P_4`.  Thus a torus-
+intersecting `J_H` permits at most two support-at-least-two kernel modes.
+Moreover, the same cofactor map is now forced at arbitrary even ambient order
+whenever four roots have exactly six blockers, so this kernel ledger is a
+genuine local-to-global necessary condition there.  Any projectively constant
+common-root row is excluded not only for direct `P_6`, but termwise for the
+arbitrary six-blocker cofactor.  More generally, at every blocker surplus a
+first-polar contraction excludes rank-two row families as well: every root's
+incident covectors across its blocker union must span the full target dual.
+For first surplus the common port-row family must also span the full target
+dual.  More generally the same holds for every port-row family whenever the
+joint port forms admit a simultaneous permanent factorization; in particular
+both rows in `W_uv=a_u tensor b_v+b_u tensor a_v` must span three.
+With exactly two residual nonblockers, the actual matching form now has the
+exact recursion `W_uv=h*B_uv+a_u tensor b_v+b_u tensor a_v`.  On their
+simultaneous-kernel spaces, either the residual edge is a nonzero coordinate
+monomial or torus kernel vectors can be chosen with `h=0`, making the
+two-row factorization automatic and extracting `P_(r+2)`.  This reduces that
+ambient-order cell to a coordinate-killer branch and an all-full-span
+permanent branch; neither is yet excluded in full.  The coordinate-monomial
+branch is now known to be locally slice-universal: every blocker-admissible
+surplus-two cofactor datum has an exact realization with one-dimensional
+torus residual kernels and a coordinate-monomial residual edge, and every
+factorized all-full-span `P_(r+2)` datum embeds as a subfamily.  Consequently
+the cofactor equation, blocker incidence, row spans, and matching recursion
+alone cannot close this branch; an off-slice or genuinely global compatibility
+condition is necessary.  This is a no-go theorem for that proof route, not a
+graph witness.  The first missing off-slice equation is now exact as well:
+differentiating at any fully supported root makes the rank-one slice model
+vary by one scalar `ell_i(y)`, while the three GHZ coefficients must vary
+independently as `y_c/x_i[c]`.  Hence that local universal construction
+cannot itself be a full witness.  Any genuine extension needs a
+nonprojective root--blocker tangent or effective root--root/root--residual
+companions spanning exactly the full two-dimensional annihilator of the root
+vector; together with the scalar row direction they span the target dual.
+Modulo the scalar GHZ tensor, their aggregate cofactor classes must also span
+the two-dimensional diagonal quotient, giving an exact tangent/cofactor
+frame isomorphism.
+One companion still gives derivative rank at most two against the GHZ rank
+three.  This proves the necessity of the companion layer, not
+its inconsistency.  In fact, transpose symmetry and the sharing of one
+companion-cofactor class by the two ends of a root--root edge do not supply
+the missing contradiction: for every `r>=3`, an explicit root cycle realizes
+arbitrary quotient frames with honest bilinear edge blocks and shared formal
+cofactor classes.  This is a first-jet realization only; complementary-
+hafnian realizability and mixed second derivatives remain open:
+[`ROOT_TANGENT_CYCLE_FRAME_SYMMETRY_REALIZATION.md`](ROOT_TANGENT_CYCLE_FRAME_SYMMETRY_REALIZATION.md).
+The minimal blocks in that cycle are now ruled out at the next order.  With
+`x_i=(1,1,1)`, quotient classes `q_i=(1,t_i)`, and the tangent direction
+`(0,1,t_i)` at both ends of edge `i`, every graph-side mixed second-derivative
+matching vanishes, while the GHZ Hessian is `(0,1,t_i^2)`.  This proves that
+the minimal first-jet realization cannot itself extend.  Even the
+four-dimensional tangent--tangent correction on that edge only rescales the
+fixed quotient class `(1,t_i)` and cannot produce `(1,t_i^2)` when
+`t_i!=0,1`.  Additional companion cofactors remain available, so the general
+second-jet problem stays open:
+[`ROOT_TANGENT_MINIMAL_CYCLE_SECOND_JET_OBSTRUCTION.md`](ROOT_TANGENT_MINIMAL_CYCLE_SECOND_JET_OBSTRUCTION.md).
+More generally, for scalar tangent complements `S_a=ker(a)` and
+`S_b=ker(b)`, the coordinatewise mixed-Hessian map
+`S_a tensor S_b -> K^3/<(1,1,1)>` has rank one exactly on the three resonant
+loci `a_c=b_c=0`, `a_p b_p=a_q b_q`; off them it has rank two.  Thus a
+nonresonant root pair requires at least two independent accessible
+double-deletion cofactor quotient classes.  This is only a necessary
+second-jet condition; realizing or excluding those classes remains open:
+[`ROOT_MIXED_SECOND_JET_QUOTIENT_RANK_CLASSIFICATION.md`](ROOT_MIXED_SECOND_JET_QUOTIENT_RANK_CLASSIFICATION.md).
+If every pair among `r>=3` roots is resonant, the covectors themselves are
+now classified.  They are either one repeated balanced coordinate-pair
+covector, or, only for `r=3`, the three coordinate covectors.  Hence for
+`r>=4` avoiding every rank-two pair forces the single uniform balanced
+pattern.  Excluding or realizing that exceptional pattern remains open:
+[`ROOT_MIXED_SECOND_JET_RESONANCE_CLIQUE_CLASSIFICATION.md`](ROOT_MIXED_SECOND_JET_RESONANCE_CLIQUE_CLASSIFICATION.md).
+The uniform exception alternates at higher order: its restricted
+coordinatewise mixed-jet quotient has rank one at every even order and rank
+two at every odd order, so every root triple already needs a full
+two-dimensional aggregate cofactor span.  The three-axis exception instead
+has identically zero triple product.  These are necessary jet conditions,
+not graph nonrealizability results:
+[`ROOT_RESONANT_MIXED_JET_PARITY_CLASSIFICATION.md`](ROOT_RESONANT_MIXED_JET_PARITY_CLASSIFICATION.md).
+This parity jump now closes one concrete companion topology.  If `r>=4`
+projectively constant roots have exactly two effective residual companion
+endpoints and no effective root--root restricted tangent channel, every
+pair derivative has at most one cofactor line and hence forces uniform
+resonance.  But three varied roots cannot match injectively to two endpoints,
+so the graph triple derivative is zero against the GHZ rank-two triple jet.
+A survivor must introduce nonprojective blocker variation, a root--root
+channel, or a third nonroot companion endpoint:
+[`ROOT_TWO_RESIDUAL_ONLY_COMPANION_THIRD_JET_OBSTRUCTION.md`](ROOT_TWO_RESIDUAL_ONLY_COMPANION_THIRD_JET_OBSTRUCTION.md).
+Quantitatively, if there are `t` effective nonroot endpoints and still no
+root--root restricted channel, then `t>=ceiling(2r/3)`.  Each coordinate-axis
+tangent covector must occur at least `r-t` times, and at most `3t-2r` roots
+may be non-axis.  Thus no bounded endpoint set can support arbitrary root
+order in this topology:
+[`ROOT_FINITE_NONROOT_COMPANION_ENDPOINT_COUNT_OBSTRUCTION.md`](ROOT_FINITE_NONROOT_COMPANION_ENDPOINT_COUNT_OBSTRUCTION.md).
+With root--root channels restored, the higher-jet condition becomes an exact
+matching problem: every root subset missing at least one of the three axis
+covector types must admit a matching saturating all of its roots, using
+one-tangent edges to fixed endpoints and tangent--tangent edges internally.
+Existence of such a matching is only necessary; complementary cofactors and
+mixed-colour cancellation remain to be imposed:
+[`ROOT_RESTRICTED_JET_COMPANION_MATCHING_SATURATION_NECESSITY.md`](ROOT_RESTRICTED_JET_COMPANION_MATCHING_SATURATION_NECESSITY.md).
+The full-root jet gives a stronger conclusion when there are at most one
+effective nonroot endpoint.  Arbitrary root--root tangent matchings then all
+use the same complementary deletion set, so the graph derivative has actual
+tensor-image rank at most one.  Exact decomposable-form rank forces at least
+two distinct coordinate-axis tangent covector types; with no endpoint and an
+odd number of roots, all three types are forced.  Thus the uniform balanced
+resonance cannot use dense root--root edges to evade a zero/one-endpoint
+topology:
+[`ROOT_AT_MOST_ONE_ENDPOINT_FULL_JET_AXIS_NECESSITY.md`](ROOT_AT_MOST_ONE_ENDPOINT_FULL_JET_AXIS_NECESSITY.md).
+The deletion argument has a general endpoint-subset form: with `r` roots and
+`t` effective fixed endpoints, the full-root derivative uses at most
+`sum_(ell congruent r mod 2) binomial(t,ell)` complementary cofactor classes.
+For exactly two endpoints this bound is two.  Exact pure-tensor dependence
+then forces either an axis tangent root or support of every tangent covector
+on one common coordinate pair.  This applies directly to the five-root/
+seven-blocker/two-residual cell at order fourteen, without suppressing
+root--root tangent edges:
+[`ROOT_FINITE_ENDPOINT_FULL_JET_COFACTOR_SPAN_BOUND.md`](ROOT_FINITE_ENDPOINT_FULL_JET_COFACTOR_SPAN_BOUND.md).
+This two-endpoint bound is sharp even after imposing the current support-level
+local-to-global conditions.  For every `r>=2`, an exact legal loopless
+symmetric block graph realizes the two independent diagonal cofactor classes,
+full blocker-row span at every root, and a companion matching saturating every
+root subset.  The same graph has an explicit nonzero mixed undifferentiated
+coefficient, so it is not a GHZ witness.  Consequently full-root frames,
+row span, and matching support cannot finish the reduction; the next theorem
+must use actual lower-subset cofactor values, mixed-colour identities, or
+nonprojective variation:
+[`ROOT_ARBITRARY_ORDER_TWO_ENDPOINT_FULL_JET_FRAME_SHARPNESS_NOGO.md`](ROOT_ARBITRARY_ORDER_TWO_ENDPOINT_FULL_JET_FRAME_SHARPNESS_NOGO.md).
+The missing lower-subset condition is now exact for every mixed root set of
+size at least two.  Grouping companion partial matchings by their outside
+deletion set expresses the graph jet through actual complementary-hafnian
+cofactors.  Equality with GHZ forces those cofactors to contain a completely
+classified diagonal frame: rank `3-|A|` when the tangent covectors include
+the axis-colour set `A`, rank two with one prescribed binary diagonal
+combination on a common coordinate-pair locus, and the full rank-three
+diagonal plane otherwise.  This is a value condition, not merely support
+saturation.  It already excludes the sharp two-endpoint construction for
+every `r>=3` by one explicit two-root/all-colour-1 coefficient.  The theorem
+is necessary only; simultaneous principal-hafnian realization,
+nonprojective root--blocker variation, and arbitrary-order gluing remain
+open:
+[`ROOT_ARBITRARY_LOWER_MIXED_JET_COFACTOR_FRAME_NECESSITY.md`](ROOT_ARBITRARY_LOWER_MIXED_JET_COFACTOR_FRAME_NECESSITY.md).
+The two top parity cofactors do not themselves supply the missing cross-subset
+contradiction.  For every odd blocker count `m>=5`, one legal alternating
+blocker path with two residual endpoints realizes the exact binary frame
+`D0+D1,D0-D1`, zero mixed words, zero residual edge, rank-three row families
+at both ports, and every factorized four-vertex block
+`W_uv=a_u tensor b_v+b_u tensor a_v`.  Its complete principal one-blocker
+deletion ledger is explicit: odd deletions vanish and even deletions are
+fixed split-colour monomials, allowing the third port direction to hide on a
+zero cofactor.  Thus top principal-hafnian compatibility plus full port span
+cannot close the five-root/seven-blocker axis cell.  The construction has no
+root-row solution of `P_m(H;a;b)=Delta_3`, so it is a proof-route no-go, not
+a graph witness; lower-root deletion equations or that shared mixed identity
+remain essential:
+[`ROOT_ARBITRARY_TWO_ENDPOINT_BINARY_COFACTOR_PORT_COMPATIBILITY_REALIZATION.md`](ROOT_ARBITRARY_TWO_ENDPOINT_BINARY_COFACTOR_PORT_COMPATIBILITY_REALIZATION.md).
+That explicit gadget is nevertheless killed by the first shared permanent
+identity.  For each colour, its `a` and `b` port rows are both supported on
+the same single blocker, so the final two rows of every pure-colour
+`P_m(H;a;b)` coefficient have only one common column.  A two-row Laplace
+expansion makes all three pure coefficients identically zero for every root
+family `H` and every odd `m>=5`.  More generally, each desired colour needs
+nonempty supports in both port families whose union contains at least two
+blockers.  This colourwise Hall condition is strictly stronger than separate
+full row span:
+[`ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md`](ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md).
+The condition is jointly attainable with every current local rank test and
+all three desired pure coefficients.  An exact integer `m=7` construction
+keeps the binary endpoint cofactors, zero mixed endpoint words, two
+rank-three Hall-satisfying port families, five rank-three root-row families,
+and seven concise local maps, and has pure `P_7` coefficients `(1,1,1)`.
+It still fails globally: exact enumeration of all `3^7` coefficients finds
+33 forbidden nonzero mixed words, beginning with `0000102 -> 1`, where a
+single permanent term survives.  Thus Hall support, concision, and pure
+nonvanishing do not close the branch; simultaneous mixed-word cancellation
+is the next genuine condition.  Whether another Hall-satisfying system can
+meet it remains unknown:
+[`ROOT_M7_HALL_SATISFYING_TWO_PORT_PURE_P7_CONSTRUCTION.md`](ROOT_M7_HALL_SATISFYING_TWO_PORT_PURE_P7_CONSTRUCTION.md).
+Reweighting that support cannot repair the failure.  With every displayed
+root and port entry symbolic, each pure coefficient and the first mixed
+coefficient is a unique monomial, and an exact identity
+`C0*C1*C2=C_0000102*Q` makes the mixed coefficient nonzero whenever the
+three pure coefficients are nonzero.  Equivalently,
+`<C_0000102>:(C0*C1*C2)^infinity=<1>`.  The entire fixed support stratum is
+therefore excluded before imposing Hall or rank conditions.  Its sole
+one-edge matching escape is the new port incidence `a_(1,0)`; if port
+supports stay fixed, at least two new root incidences are necessary.  These
+are deformation necessities, not a solution on the enlarged support:
+[`ROOT_M7_FIXED_SUPPORT_PURE_MIXED_MONOMIAL_SATURATION_OBSTRUCTION.md`](ROOT_M7_FIXED_SUPPORT_PURE_MIXED_MONOMIAL_SATURATION_OBSTRUCTION.md).
+The unique one-edge matching escape `a_(1,0)` is excluded too.  It adds the
+same port binomial `P=alpha_0*beta_1+beta_0*gamma` to both the pure `0^7`
+coefficient and `C_0000102`, so the same saturated identity persists and
+cancelling the mixed word cancels the pure word.  No single further
+incidence breaks this shared factor.  Exactly 30 minimal two-incidence
+candidates do: ten crossed root swaps and twenty root--port exchanges.
+Separate unique mixed words also identify `b_(5,1)` and `a_(5,2)` as
+independent port-pressure directions.  These classify necessary support
+deformations only; arbitrary enlarged support remains open:
+[`ROOT_M7_ONE_EDGE_A10_SHARED_PURE_MIXED_FACTOR_OBSTRUCTION.md`](ROOT_M7_ONE_EDGE_A10_SHARED_PURE_MIXED_FACTOR_OBSTRUCTION.md).
+All 30 minimal two-incidence enlargements of that support are excluded as
+well.  The fixed coloured-path/labelled-port stabilizer is trivial, so these
+are 30 singleton orbits.  Exact symbolic permanents give a principal
+saturation certificate in every case: 15 use `C_0000102`, 14 use the
+unchanged monomial `C_1112101`, and the last uses `C_1112220`, with the
+selected mixed coefficient dividing `C0*C1*C2`.  Eighteen supports preserve
+the endpoint cofactors and are still tensor-excluded; the other twelve are
+independently endpoint-illegal.  Larger support shells remain open:
+[`ROOT_M7_THIRTY_TWO_INCIDENCE_SUPPORTS_PRINCIPAL_SATURATION_EXCLUSION.md`](ROOT_M7_THIRTY_TWO_INCIDENCE_SUPPORTS_PRINCIPAL_SATURATION_EXCLUSION.md).
+The transverse three-port pressure support is excluded independently.  Adding
+`a_(1,0)`, `b_(5,1)`, and `a_(5,2)` addresses the unique one-edge directions
+suggested by three different mixed words, but the latter two are invisible
+to `0000102`; its coefficient still shares the full colour-zero port
+binomial with `C0`.  The same principal saturation is therefore the unit
+ideal.  This support contains none of the preceding 30 pair-shell supports,
+preserves endpoint legality at odd blockers, and admits exact full-rank/Hall
+specializations, so the failure is tensorial rather than concision:
+[`ROOT_M7_THREE_PORT_PRESSURE_ENLARGEMENT_SHARED_FACTOR_OBSTRUCTION.md`](ROOT_M7_THREE_PORT_PRESSURE_ENLARGEMENT_SHARED_FACTOR_OBSTRUCTION.md).
+The exact endpoint-legal hitting problem for the five presently certified
+mixed words has relative minimum two.  Across 104 legal missing incidences
+there is no singleton transversal; across all 5,356 pairs the sole
+transversal is `H_6[3,0],H_5[4,0]`, with trivial stabilizer.  It is not a
+full survivor: `C_0101122` still divides `C0*C1*C2`, so its full mixed
+saturation is the unit ideal.  This is explicitly a five-certificate result,
+not a universal arbitrary-support lower bound:
+[`ROOT_M7_ENDPOINT_LEGAL_CERTIFICATE_HITTING_MINIMUM_TWO_EXCLUSION.md`](ROOT_M7_ENDPOINT_LEGAL_CERTIFICATE_HITTING_MINIMUM_TWO_EXCLUSION.md).
+The complete one-incidence shell above that unique pair is now excluded as
+well.  Of its 102 endpoint-legal extensions, 101 retain the exact
+`C_0101122 | C0*C1*C2` certificate.  The sole escape is `a_5[2]`, where the
+new coefficient `C_0101112` divides the same pure product.  Thus this entire
+102-support shell has empty mixed saturation on the pure-nonzero locus.  This
+does not classify triples that do not contain the unique pair:
+[`ROOT_M7_UNIQUE_PAIR_THIRD_INCIDENCE_SHELL_EXCLUSION.md`](ROOT_M7_UNIQUE_PAIR_THIRD_INCIDENCE_SHELL_EXCLUSION.md).
+The full endpoint-legal three-incidence shell is now closed, not only the
+subshell containing that pair.  Exact division over all
+`binomial(104,3)=182,104` supports leaves nine relative survivors after the
+six prior certificate words.  The single new word `2002000` divides
+`C0*C1*C2` on all nine, so the complete shell has zero tensor survivors.
+Four-or-more additions and arbitrary Hall-satisfying `P_7` remain unknown:
+[`ROOT_M7_ALL_ENDPOINT_LEGAL_THREE_INCIDENCE_SUPPORTS_EXCLUSION.md`](ROOT_M7_ALL_ENDPOINT_LEGAL_THREE_INCIDENCE_SUPPORTS_EXCLUSION.md).
+The one-incidence extension shell above the nine relative triples is closed
+too.  It has 908 distinct legal quadruples: 898 retain the `C_2002000`
+certificate, while ten escapes split between eight `C_0220212` and two
+`C_0210220` exact divisibilities.  This is not the complete 4,598,126-support
+quadruple shell, which remains unknown:
+[`ROOT_M7_RELATIVE_TRIPLE_FOURTH_INCIDENCE_SHELL_EXCLUSION.md`](ROOT_M7_RELATIVE_TRIPLE_FOURTH_INCIDENCE_SHELL_EXCLUSION.md).
+No complete quadruple-shell enumeration is being pursued.  The frontier has
+instead been translated into four arbitrary-order symbolic conditions.  The
+complete coloured partial-hafnian family is an exponential quadratic in the
+vertex-exclusive square-zero algebra; equivalently its logarithm has only
+degree two, so every higher block cumulant vanishes.  On the synchronous
+ternary slice, a witness would pull the hafnian back to the Fermat form
+`t_0^n+t_1^n+t_2^n`; its three mixed Hessians give compact identities in the
+actual one- and two-edge-deletion hafnians:
+[`BLOCK_SQUARE_ZERO_WICK_COMPLETION_THEOREM.md`](BLOCK_SQUARE_ZERO_WICK_COMPLETION_THEOREM.md).
+For an arbitrary even residual set `Q`, every two-port tensor now has the
+exact common factorization
+`H_uv=haf(A)B_uv+R_u^T C(A)R_v`.  All corrected port pairs share the same
+hafnian-cofactor middle form, hence obey common Gram minors and anchored
+Schur/holonomy rank defects.  The accompanying localization theorem extends
+the torus-zero/coordinate-monomial dichotomy from two residual vertices to
+every even `Q`:
+[`RESIDUAL_HAFNIAN_COMMON_COFACTOR_GRAM_THEOREM.md`](RESIDUAL_HAFNIAN_COMMON_COFACTOR_GRAM_THEOREM.md).
+That Gram bound is now sharp on the torus-zero branch at every even residual
+order.  With all residual weights one except `A_01=-(q-2)`, the residual
+hafnian vanishes but
+`det C(A)=2^(q-2)(q-1)(q-3)^3((q-5)!!)^q` is nonzero.  The middle form needs
+exactly `q/2` synchronized bosonic channels in its canonical completion, but
+physical off-diagonal data can admit lower-rank completions (already one
+channel at `q=4`).  Only the two-residual case guarantees one channel before
+such incidence or completion collapse.  Graph structure can still help: a
+residual separator of size `s` bounds the designated cofactor cross-rank by
+`2^(s-1)`, and an articulation gives cross-rank one.  This affects `P_7` only
+when every relevant port pair is proved to cross the separator.  Thus the
+next useful condition is a cross-localizing separator, Schur defect, or
+deeper deletion identity, not `haf(A)=0` alone:
+[`RESIDUAL_HAFNIAN_TORUS_ZERO_FULL_RANK_COFACTOR_BOUNDARY.md`](RESIDUAL_HAFNIAN_TORUS_ZERO_FULL_RANK_COFACTOR_BOUNDARY.md).
+The deeper deletion tower now has one exact generating object.  After
+dividing the response with all `q` residual vertices present by the direct
+port Wick family, the residual-relative polynomial has degree at most `q`;
+its degree-`2t` layer is a permanental compound of one common incidence
+matrix weighted by the corresponding principal-hafnian cofactors.  On
+disjoint port charts, all one-leg flattenings across degrees factor through
+one common incidence span of dimension at most `q`.  At `q=2` this is a
+complete dual-Wick tangent classification with explicit four-/six-point
+equations; at `q=4`
+the first new datum is the synchronized quartic permanent compound.  An
+actual `P_7` obstruction still needs a partition-closed lower-jet window that
+exposes those coefficients:
+[`RESIDUAL_RELATIVE_RESPONSE_POLYNOMIAL_DUAL_WICK_THEOREM.md`](RESIDUAL_RELATIVE_RESPONSE_POLYNOMIAL_DUAL_WICK_THEOREM.md).
+That exposure problem now has an exact positive/negative boundary.  In the
+canonical minimal profile `012,01,01,02,02,12,12`, every nonzero pure `P_5`
+matrix contains a marked three-root shore with nonzero permanent and a
+double-only four-blocker complement.  The identity proving this is
+`sum per(H[J,D])per(H[R\J,B_c\D])=6per(H)`, with the sum over marked
+three-column shores.  A rank-two companion selector would therefore expose
+the residual-present and residual-absent **top** four-port coefficients on
+one clean window.  It still does not expose the empty and pair faces required
+by the dual-Wick recursion.  This is a real information loss: a legal
+one-parameter two-residual graph-response family has fixed top pair
+`(m_1234,z_1234)=(0,1)` and varying `(m_34,z_12)`.  The exact remaining
+target is thus a full-rank observation matrix on a partition-closed deletion
+cube, or a projected identity eliminating its hidden lower faces:
+[`P7_DELETION_CUBE_OBSERVABILITY_AND_CLEAN_WINDOW_BOUNDARY.md`](P7_DELETION_CUBE_OBSERVABILITY_AND_CLEAN_WINDOW_BOUNDARY.md).
+The seven-vertex root/residual budget makes that information loss structural
+for the current principal-cofactor mechanism.  With `q` retained residual
+vertices, only
+`z_S` with `|S|>=q` and direct `m_S` with `|S|>=2q` can be isolated.  Thus
+`q=2` misses every direct pair, while `q=4` misses all direct layers and even
+the residual-present pairs.  Granting the entire `q=2` budget-visible window,
+the residual scalar, and all four marked-star observations still gives a
+dominant thirteen-coordinate response map (exact Jacobian minor `360`), so
+there is no visible polynomial identity.  The four-point insertion becomes
+observable only on the sharp additive locus
+`z_12+z_34=z_13+z_24=z_14+z_23`.  At `q=4` its right-hand side is instead a
+genuine quartic permanent, with an exact identity-incidence defect equal to
+one:
+[`P7_ROOT_BUDGET_DUAL_WICK_OBSERVABILITY_AND_QUARTIC_ESCAPE.md`](P7_ROOT_BUDGET_DUAL_WICK_OBSERVABILITY_AND_QUARTIC_ESCAPE.md).
+Both proposed shortcuts from that boundary are now sharply tested.  A common
+canonical system of three pure `P_7` matrices with axis multiplicity `2+2+1`
+has rank-two lower frames only at root pairs whose marked-shore products all
+vanish; every nonzero clean shore lands at rank one.  Conversely, a balanced
+edge weighting on the graph of rank-at-least-two root pairs forces a rank-two
+shore by a weighted marked-Laplace identity.  This leaves exactly the
+all-axis singleton patterns `4+1`, `3+1+1`, and `2+2+1` outside that positive
+argument.  Nor can one eliminate the hidden pair faces using only overlapping
+top windows: even granting all six clean windows and independent top
+selectors, their twelve `M/Z` top values plus the pure two-port aggregate have
+dense image and zero elimination ideal.  The next invariant must use actual
+pair/empty faces or mixed-colour/shared-block coupling:
+[`P7_SELECTOR_MATROID_RANK_COOCCURRENCE_AND_TOP_PROJECTION_BOUNDARY.md`](P7_SELECTOR_MATROID_RANK_COOCCURRENCE_AND_TOP_PROJECTION_BOUNDARY.md).
+Even optimistically granting every marked-star row on one clean window per
+colour does not close the pair layer: any three four-windows on the six
+double blockers recover at most five of a target window's six pair faces,
+and the bound is sharp.  The sensor obstruction is itself sharp.  The four
+tetrahedral-fan windows `1234,1256,1356,1456` recover all six target pairs by
+closed formulas: alternating shores give `x_12-x_13` and `x_12-x_14`, after
+which the four target vertex degrees invert the whole `K_4`.  Four is
+therefore the exact minimum in the marked-star model.  The remaining graph
+problem is to force that fourth compatible fan window and then expose the
+empty face:
+[`P7_THREE_CLEAN_WINDOW_PAIR_FACE_RECOVERY_NO_GO.md`](P7_THREE_CLEAN_WINDOW_PAIR_FACE_RECOVERY_NO_GO.md).
+[`P7_FOUR_CLEAN_WINDOW_TETRAHEDRAL_PAIR_TOMOGRAPHY_THEOREM.md`](P7_FOUR_CLEAN_WINDOW_TETRAHEDRAL_PAIR_TOMOGRAPHY_THEOREM.md).
+The first genuinely mixed-colour circuit is now identified.  For one
+physical blocker pair, its nine corrected two-residual responses form the
+`3 x 3` matrix `D=a_u b_v^T+b_u a_v^T`, so `det D=0`.  Those nine entries are
+a minimal algebraic-matroid circuit: every proper coordinate subset is
+independent.  This explains why adding scalar charts does not help.  One
+common symmetric block construction realizes their diagonal pair/top data
+independently as a three-chart fibre product, and even pair-plus-top data are
+dominant within each chart.  The exceptional all-axis lower jets also admit
+an exact formal diagonal deletion-state realization, while small companion
+graphs satisfy all axis-deficient matching conditions without selecting the
+two residual faces.  The precise next lemma is therefore a legal selector for
+the six off-diagonal entries of one corrected pair block, or an elimination
+that recovers its determinant from aggregated mixed words:
+[`P7_MIXED_COLOR_PAIR_CIRCUIT_AND_AXIS_JET_BOUNDARY.md`](P7_MIXED_COLOR_PAIR_CIRCUIT_AND_AXIS_JET_BOUNDARY.md).
+Two symbolic continuations now sharpen both sides of that boundary.  First,
+in the strict tangent-only branch with exactly the two residual endpoints,
+pair/triple rank-two equations forbid three roots of one axis type.  This
+conditionally excludes `4+1` and `3+1+1`.  The reduction is sharp: one common
+family of endpoint forms and tangent root--root blocks realizes every lower
+root equation for `2+2+1` against a globally consistent formal cofactor
+ledger.  Simultaneous principal-hafnian realization of that ledger is still
+open:
+[`P7_TWO_ENDPOINT_AXIS_MULTIPLICITY_REDUCTION_AND_221_COMMON_JET_MODEL.md`](P7_TWO_ENDPOINT_AXIS_MULTIPLICITY_REDUCTION_AND_221_COMMON_JET_MODEL.md).
+The formal `2+2+1` ledger has now passed the strongest scalar
+principal-hafnian test.  Explicit seven-core/seven-terminal graphs realize
+every prescribed cofactor separately in all three monochromatic charts; the
+hard colour-2 chart is exact over `Q(sqrt(21))`.  Thus scalar hafnian
+condensation or inverse-minor algebra cannot exclude the ledger.  The terminal
+block mismatch in those first certificates is not intrinsic.  Exact
+squarefree Wick deconvolution and a determinant-one four-core factorization
+now realize all 186 prescribed scalar cofactors with one common terminal
+block over `Q(sqrt(21))`.  This common terminal matrix is already sufficient
+to glue the three scalar charts edgewise into one honest bilinear block graph:
+the three core--core diagonal evaluations and the three core--terminal
+evaluations are independent entries of the same physical blocks.  The
+canonical diagonal lift recovers all 186 prescribed and six free pure values,
+but has an exact forbidden mixed coefficient `1/7`.  Thus pure-chart
+coexistence is solved.  The later compound theorems exclude every
+off-diagonal completion and every core alignment of these particular scalar
+certificates; the remaining synchronization question concerns different
+scalar lifts of the same pure ledgers:
+[`P7_221_FORMAL_LEDGER_SCALAR_HAFNIAN_REALIZABILITY_AND_SYNCHRONIZATION_GAP.md`](P7_221_FORMAL_LEDGER_SCALAR_HAFNIAN_REALIZABILITY_AND_SYNCHRONIZATION_GAP.md).
+[`P7_221_COMMON_TERMINAL_BLOCK_SCALAR_HAFNIAN_REALIZABILITY.md`](P7_221_COMMON_TERMINAL_BLOCK_SCALAR_HAFNIAN_REALIZABILITY.md).
+[`P7_221_DIAGONAL_BLOCK_GLUING_AND_MIXED_WORD_BOUNDARY.md`](P7_221_DIAGONAL_BLOCK_GLUING_AND_MIXED_WORD_BOUNDARY.md).
+
+Squarefree Wick deconvolution now localizes that mixed problem without
+enumerating blocker words.  For every mixed blocker word `sigma`, all 62
+prescribed deletion faces vanish, so its terminal-presence signature is
+`alpha_sigma*x_(P\Q)+beta_sigma*x_P`.  Removing the common terminal Gaussian
+changes only the top coefficient:
+`Phi_sigma=alpha_sigma*x_(P\Q)+(beta_sigma-M_ab*alpha_sigma)*x_P`.
+Consequently every degree-one and degree-three common-core face, and every
+degree-five face except `P\Q`, vanishes.  The full synchronization problem is
+therefore concentrated on exactly two unprescribed faces per mixed word; this
+is a localization theorem, not yet an off-diagonal block construction:
+[`P7_221_TENSOR_COEFFICIENT_WICK_DECONVOLUTION_TWO_FACE_LOCALIZATION.md`](P7_221_TENSOR_COEFFICIENT_WICK_DECONVOLUTION_TWO_FACE_LOCALIZATION.md).
+The resulting bosonic compound hierarchy now separates the useful degrees.
+For seven cores,
+`Phi^(k)=sum_(|S|=k) haf(A[Z\S]) product_(i in S)L_i`, and every cubic
+coefficient is an exact directional derivative of a singleton coefficient in
+a rank-at-most-two core-block direction.  Nevertheless the scalar map to all
+seven singleton and 35 cubic responses is dominant: one fixed `42 x 42`
+Jacobian minor is nonzero.  Thus degrees one and three carry no universal
+scalar polynomial obstruction.  Degree five is generically observable: its
+21 faces are `C_5^per(R)a`, and at `R=I_7` this fifth permanental compound is
+the complement permutation matrix.  When only `P\Q` is free, invertibility
+forces all 21 core edges onto one inverse-column line.  The exact incidence
+of the fixed word `2220000` has compound rank 21 over `Q(sqrt(21))`.
+
+For the indexwise fixed pure charts, a much sparser row of that compound gives
+
+```text
+Phi_125ab-Phi_145ab-Phi_235ab+Phi_345ab
+  =2(805+52 sqrt(21))/49 !=0.
+```
+
+All twelve arbitrary cross-colour core edges cancel from this four-face
+permanental-compound selector, while the ledger requires all four mixed faces
+to vanish.  More strongly, after an arbitrary bijection of the colour-0 and
+colour-2 cores, the same rectangle still isolates one of two nonzero
+colour-2 edges for a mixed word constructed from the alignment.  Thus no core
+alignment and no off-diagonal core-edge completion repairs these fixed pure
+certificates.
+
+The word must be chosen adaptively.  One explicit alignment and word has a
+six-parameter family satisfying all 20 degree-five faces and even one point
+satisfying all seven singleton faces; after substitution, however, the three
+cubic faces `124,125,12a` generate the unit ideal by an explicit
+Nullstellensatz certificate.  Different scalar realizations of the pure
+ledgers remain unexcluded:
+[`P7_SEVEN_CORE_BOSONIC_COMPOUND_FIRST_THIRD_JET_BOUNDARY.md`](P7_SEVEN_CORE_BOSONIC_COMPOUND_FIRST_THIRD_JET_BOUNDARY.md).
+[`SEVEN_CORE_FIFTH_PERMANENTAL_COMPOUND_OBSERVABILITY_THEOREM.md`](SEVEN_CORE_FIFTH_PERMANENTAL_COMPOUND_OBSERVABILITY_THEOREM.md).
+[`P7_221_FIXED_DIAGONAL_LIFT_DEGREE5_MIXED_CIRCUIT_OBSTRUCTION.md`](P7_221_FIXED_DIAGONAL_LIFT_DEGREE5_MIXED_CIRCUIT_OBSTRUCTION.md).
+[`P7_221_ARBITRARY_ALIGNMENT_DEGREE5_RECTANGLE_OBSTRUCTION.md`](P7_221_ARBITRARY_ALIGNMENT_DEGREE5_RECTANGLE_OBSTRUCTION.md).
+[`P7_221_ALIGNED_CORE_DEGREE5_AFFINE_COMPLETION.md`](P7_221_ALIGNED_CORE_DEGREE5_AFFINE_COMPLETION.md).
+[`P7_221_ALIGNED_CORE_DEGREE3_THREE_FACE_NULLSTELLENSATZ_OBSTRUCTION.md`](P7_221_ALIGNED_CORE_DEGREE3_THREE_FACE_NULLSTELLENSATZ_OBSTRUCTION.md).
+
+A fibre-uniform single-word determinant argument is now ruled out even before
+varying the scalar formulas.  Relabel the verified colour-2 chart so that its
+two identical incidence rows occupy two positions of `2220000`.  The resulting
+fifth permanental compound has exact rank six, and an explicit
+`Q(sqrt(21))` assignment of the cross-colour core edges makes all 21
+degree-five faces zero.  In general, every word has an exact dichotomy:
+nonsingular compounds force an inverse-column line and adjugate circuits,
+whereas singular compounds are controlled by their left and right kernels.
+The displayed escape is only for one word and one degree; it does not evade
+the alignment-adaptive fixed-chart obstruction or solve the cubic equations.
+It proves that the next fibre theorem must couple words, degrees, or singular
+kernels:
+[`P7_PURE_CHART_FIFTH_COMPOUND_FIBRE_DICHOTOMY_AND_SINGULAR_ESCAPE.md`](P7_PURE_CHART_FIFTH_COMPOUND_FIBRE_DICHOTOMY_AND_SINGULAR_ESCAPE.md).
+
+The same rectangle also has a coordinate-free consequence for the full
+tensor graph.  Quotient each core dual space by the span of its seven
+core--terminal incidence covectors.  Projecting any two core modes kills
+every degree-five matching term except the term using the core edge between
+those modes, so every physical four-face rectangle has flattening rank at
+most one.  The formal rectangle `(rho-2)(D_0+D_1)` has rank two whenever the
+two projected GHZ diagonal directions remain independent.  Hence any
+physical realization must make them dependent for every one of the 21 core
+pairs.  A sparse legal projected model attains rank one when a direction is
+killed, so this is an exact conditional obstruction and degeneracy law, not a
+global proof:
+[`P7_221_DEGREE5_INCIDENCE_QUOTIENT_RECTANGLE_FLATTENING_THEOREM.md`](P7_221_DEGREE5_INCIDENCE_QUOTIENT_RECTANGLE_FLATTENING_THEOREM.md).
+
+The quotient is essential.  The unprojected binary GHZ contraction is itself
+in the physical image: a graph with two core edges and ten sparse incidence
+vectors realizes exactly
+`((rho-2)D_0,0,0,(rho-2)D_1)` on the four faces, and hence realizes the
+contracted tensor `(rho-2)(D_0+D_1)`.  It does not realize the common `D_2`
+baseline or the full tuple.  Thus no covariant of that single unprojected
+contraction can be the missing separator:
+[`P7_221_FOUR_FACE_BINARY_GHZ_PHYSICAL_COUNTERMODEL.md`](P7_221_FOUR_FACE_BINARY_GHZ_PHYSICAL_COUNTERMODEL.md).
+
+All 21 quotient conditions nevertheless glue into a complete symbolic
+dichotomy.  At each mode the two binary diagonal images have one of five
+intrinsic types: zero, either pure axis, a common line, or a genuine plane.
+A genuine plane is incompatible with another genuine plane or a common-line
+mode.  Consequently either every terminal-incidence span meets the binary
+colour plane, or one exceptional mode misses it while each of the other six
+spans contains an actual pure colour axis.  Both strata have sharp abstract
+quotient models, so the next step is to combine this classification with the
+remaining colour or degree equations:
+[`P7_221_ALL_PAIR_INCIDENCE_QUOTIENT_BINARY_COHERENCE_CLASSIFICATION.md`](P7_221_ALL_PAIR_INCIDENCE_QUOTIENT_BINARY_COHERENCE_CLASSIFICATION.md).
+
+Using all three colours strengthens that dichotomy.  Three individual
+prescribed faces have exact deconvolved tensors
+
+```text
+Phi_1234a=(1+43rho/21)D_0-6D_1,
+Phi_1235b=rho D_0+2(1+rho)D_2/7,
+Phi_1345b=rho D_1+2(1+rho)D_2/7.
+```
+
+The same quotient argument forces the three diagonal pair tensors to span at
+most one dimension for every core pair.  Recording, at each mode, which
+colours survive and which pairs remain projectively independent gives an
+exact support criterion: an independent colour pair at one mode cannot have
+both colours survive at any other mode.  Since there are only three colour
+pairs, at most three of seven quotient maps have rank at least two.  Thus at
+least four terminal-incidence spans meet the three-colour diagonal space in
+dimension at least two.  A three-mode model, one independent mode per colour
+pair, attains the bound; smaller face-specific quotients or further degree
+equations are required next:
+[`P7_221_TRICOLOUR_INCIDENCE_QUOTIENT_PROJECTIVE_SUPPORT_THEOREM.md`](P7_221_TRICOLOUR_INCIDENCE_QUOTIENT_PROJECTIVE_SUPPORT_THEOREM.md).
+Those face-specific quotients now glue by an exact Mayer--Vietoris sequence.
+For two terminal sets `F,G`, the overlap defect is
+`(U(F) intersect U(G))/U(F intersect G)`, and every common physical edge line
+must die in both face quotients or descend to the same line in the union
+quotient.  This is not yet an obstruction: one rational seven-mode incidence
+system kills all 21 pairwise and seven triple defects, attains quotient ranks
+`(2,2,2,1,1,1,1)`, and passes all 17 active common-edge comparisons.  Hence
+the next gluing invariant must retain the five-row residual permanents,
+unprojected face equations, or joint degrees rather than only projective edge
+lines:
+[`P7_221_FACE_SPECIFIC_QUOTIENT_MAYER_VIETORIS_AND_SHARP_LIFT.md`](P7_221_FACE_SPECIFIC_QUOTIENT_MAYER_VIETORIS_AND_SHARP_LIFT.md).
+Second, the aggregated-selector alternative is now exact in the factorized
+`h=0` branch.  Contracting any five blocker legs in their two residual-row
+common null spaces kills the twenty competing surplus-two Laplace terms
+termwise and leaves a scalar multiple of the selected full `3 x 3` corrected
+pair block.  Its rank-two determinant forces at most four of the seven null
+spaces to meet the coordinate torus; equivalently at least three residual
+row spans contain a target coordinate covector.  This activates the mixed
+circuit without reconstructing six deletion faces.  The `h!=0` branch,
+where the selected block can have rank three, remains open:
+[`P7_RESIDUAL_NULL_POLAR_SELECTOR_H0_THEOREM.md`](P7_RESIDUAL_NULL_POLAR_SELECTOR_H0_THEOREM.md).
+That three-blocker incidence bound is already sharp against the canonical
+profile and all pure data.  Root-row planes and residual polar planes are
+independent local objects: arbitrary incidence positions and colour labels
+can be prescribed while retaining blocker types
+`012,01,01,02,02,12,12`, local rank three, all three nonzero pure `P_5`
+permanents, and all three nonzero residual pure-pair factors.  A fixed exact
+example attains three incidences, clusters them on `t,01,01`, and labels all
+three by colour zero.  It deliberately fails to claim the mixed-word tensor
+identity or the stronger per-colour kernel Hall quotas.  Therefore the binary
+incidence count plus pure coefficients alone is exhausted:
+[`P7_RESIDUAL_NULL_INCIDENCE_CANONICAL_PROFILE_SHARPNESS.md`](P7_RESIDUAL_NULL_INCIDENCE_CANONICAL_PROFILE_SHARPNESS.md).
+Restoring those per-colour quotas and the full polar rank yields a strict
+upgrade.  For any two source rows of any `P_m -> Delta_3`, every target colour
+lies in their local span in at least two modes.  Equality at only three
+incidence modes would force the three coordinate planes `01,02,12`.  A polar
+contraction through the third plane then leaves a nonzero rank-one diagonal,
+while the selected two rank-two local row maps compose through the
+nondegenerate two-channel pairing to rank exactly two.  Contradiction.  The
+equality-at-four boundary further has exactly six symbolic incidence types.
+Five have a unique size-two colour neighbourhood with rank-two endpoints; the
+sixth first forces a singleton endpoint to collapse and then gives the same
+rank contradiction on a second polar slice.  Thus every source-row pair needs
+at least five coordinate-incidence modes; for factorized `P_7` residual rows,
+at most two of seven common null spaces are torus-capable:
+[`ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md`](ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md).
+[`ARBITRARY_PERMANENT_FIVE_MODE_ROW_PAIR_INCIDENCE_THEOREM.md`](ARBITRARY_PERMANENT_FIVE_MODE_ROW_PAIR_INCIDENCE_THEOREM.md).
+The five-mode bound is sharp for the polar/canonical/pure subsystem.  Equality
+at five has exactly nineteen colour-orbit types; polar rank leaves three, and
+one exact Type-D4 `P_7` model has all 21 polar identities, the canonical
+`012,01,01,02,02,12,12` root spans, local concision, and all three nonzero
+pure permanents and residual factors.  It deliberately does not satisfy the
+full mixed tensor identity, so any sixth-mode theorem must use that identity
+rather than incidence rank alone:
+[`FIVE_MODE_ROW_PAIR_INCIDENCE_EQUALITY_POLAR_CLASSIFICATION_SHARPNESS.md`](FIVE_MODE_ROW_PAIR_INCIDENCE_EQUALITY_POLAR_CLASSIFICATION_SHARPNESS.md).
+The `h!=0` branch now has a precise conditional analogue.  If a legal
+selector independently exposes synchronized residual-absent and
+residual-present principal tensors with the same direct blocks and root
+cofactors, their difference `T_Q-hT_0` cancels every direct block and restores
+the factorized residual response.  Away from
+`product_c(z_0[c]z_1[c]-h)=0`, the four-mode theorem applies unchanged.  A
+persistent coordinate-monomial escape must be target-aligned,
+`h=z_0[c]z_1[c]`, and that resonance is sharp for all scalar two-depth
+subtractions because canceling `hB` also deletes colour `c`.  Jointly exposed
+`B,W` still obey common-root matrix-pencil minors/resultants; `W` alone is
+affine-surjective.  The essential legality gap is that one top `P_7` equation
+does not expose `T_0`.  In the strict two-endpoint model, companion
+independence does legally expose synchronized top values, but only on one
+root-null shore line per blocker.  That observation has an eight-dimensional
+kernel on a `3 x 3` pair block, and an exact `h!=0` response family fixes every
+exposed top value while varying lower direct/corrected pairs.  Full determinant
+activation still requires a three-direction, partition-closed shore:
+[`P7_SYNCHRONIZED_TWO_DEPTH_POLAR_SELECTOR_AND_ALIGNED_RESONANCE_BOUNDARY.md`](P7_SYNCHRONIZED_TWO_DEPTH_POLAR_SELECTOR_AND_ALIGNED_RESONANCE_BOUNDARY.md).
+[`P7_STRICT_TWO_ENDPOINT_SYNCHRONIZED_TOP_FACE_AND_SHORE_LINE_BOUNDARY.md`](P7_STRICT_TWO_ENDPOINT_SYNCHRONIZED_TOP_FACE_AND_SHORE_LINE_BOUNDARY.md).
+The top-data obstruction is now completely sharp at arbitrary port
+dimension.  When `h!=0`, the direct term in
+`W_uv=hB_uv+a_u tensor b_v+b_u tensor a_v` makes the map to top two-port data
+surjective, so no top-only polynomial can force synchronized two-row
+factorization.  A companion deletion depth recovers the corrected channel
+`z-hm`; top data alone do not.  Consequently the extracted `P_5` support
+bound `18` and one-port `P_6` bound `21` remain unconditional under their
+existing extraction hypotheses, whereas the two-port `P_7` bound `24`
+remains conditional on a legal synchronized/factorized extraction:
+[`GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md`](GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md).
+The graph-side fan is now forced without a shell or word enumeration.  For
+every retained two-subset of the four unmarked columns, fixed-complement
+Laplace expansion gives the full nonzero pure permanent.  Thus all six clean
+windows occur in each pure colour, and the tetrahedral fan
+`1234,1256,1356,1456` occurs graph-side.  The same rational model has zero
+shore product at both `rho>=2` root pairs for every window.  This does not
+make the distinguished empty/residual companion forms dependent: `rho` is a
+cofactor-image rank, not an observation rank.  Actual marked-star exposure
+remains open:
+[`P7_FIXED_COMPLEMENT_LAPLACE_FAN_COVER_AND_LOWER_FRAME_SEPARATION.md`](P7_FIXED_COMPLEMENT_LAPLACE_FAN_COVER_AND_LOWER_FRAME_SEPARATION.md).
+
+That distinction survives the complete nonempty lower-root system.  A
+jet-orthogonal splice combines the fixed rational pure sector with the common
+`2+2+1` tangent model.  All 31 mixed lower-root GHZ equations and all 18
+colour-tagged graph windows coexist, every `rho>=2` shore product is still
+zero, and explicit coefficient minors make the two distinguished companion
+forms independent at every root pair.  This is one common bilinear block
+system but only a formal complementary-cofactor ledger; common tensor-valued
+principal-hafnian realization, mixed blocker cancellation, and legal
+marked-star rows are still unknown:
+[`P7_221_JET_ORTHOGONAL_SPLICE_AND_FORMAL_FIXED_WINDOW_NO_GO.md`](P7_221_JET_ORTHOGONAL_SPLICE_AND_FORMAL_FIXED_WINDOW_NO_GO.md).
+
+The forced fan lies on a target-null boundary.  Each canonical window uses
+at least two common-null blocker axes, so its seven-blocker GHZ word vanishes.
+Independent top selectors would therefore force both its direct and
+residual-present four-point responses to be zero, leaving the vacuum-free
+equation `sum_e z_e m_(W-e)=0` rather than a nonzero face from which to divide.
+The 31 root-jet deletion labels contain no blocker deletions, whereas the
+pair-face labels delete five blockers; at the formal level the latter are a
+polynomial-ring extension and have zero elimination ideal over the former.
+An honest two-residual response family
+`M=1+t`, `Phi=lambda-lambda*t`, `Z=lambda` fixes every nonempty response in
+this chart while the empty scalar varies.  Root singleton companions and the
+needed blocker singleton depths are different edge families:
+[`P7_GHZ_NULL_FAN_DUAL_WICK_DEFECT_AND_SINGLETON_DEPTH_SEPARATION.md`](P7_GHZ_NULL_FAN_DUAL_WICK_DEFECT_AND_SINGLETON_DEPTH_SEPARATION.md).
+
+More generally, for every even `S` of size `2d>=4`, the dual-Wick defect
+obeys
+`sum_(|e|=2) z_e m_(S-e)-z_S=(d-1)h m_S`.  Cross-window minors eliminate
+`h` without an empty face, and any compatible nonzero four- or six-point
+moment recovers it.  The physical GHZ response family above shows that the
+simultaneous moment-null alternative is real and that neither physicality
+nor the presently exposed nonempty data forces the additive or nonzero-face
+locus:
+[`P7_VACUUM_FREE_DUAL_WICK_PROJECTIVIZATION_AND_EMPTY_SCALAR_ESCAPE.md`](P7_VACUUM_FREE_DUAL_WICK_PROJECTIVIZATION_AND_EMPTY_SCALAR_ESCAPE.md).
+
+The residual-permanent route now has a stronger common-quotient obstruction.
+Quotienting any three core modes by their full terminal-incidence spans kills
+every physical degree-five term, while three exact prescribed faces have
+independent diagonal coefficients.  Hence each colour survives on at most
+two modes and the sum of the seven restricted quotient ranks is at most six;
+some mode's complete diagonal colour space lies in its terminal-incidence
+span.  This rules out the older rank-sum-ten Mayer--Vietoris lift as a
+physical five-terminal lift:
+[`P7_221_THREE_MODE_RESIDUAL_ANNIHILATION_AND_FULL_QUOTIENT_RANK_SUM_BOUND.md`](P7_221_THREE_MODE_RESIDUAL_ANNIHILATION_AND_FULL_QUOTIENT_RANK_SUM_BOUND.md).
+
+At equality six the three colour supports are distinct two-mode sets.  They
+cannot be pairwise disjoint.  Degree-five Laplace descent would otherwise
+force all fifteen four-point projected core hafnians on the six active modes
+to vanish, but a characteristic-zero six-vertex lemma says that such an edge
+system has matching number at most two, contradicting the three forced
+disjoint core edges.  An overlapping triangle attains the quotient shadow,
+so overlap and rank below six remain genuine open strata:
+[`P7_221_EXTREMAL_RANK_SIX_DISJOINT_SUPPORT_DEGREE3_HAFNIAN_OBSTRUCTION.md`](P7_221_EXTREMAL_RANK_SIX_DISJOINT_SUPPORT_DEGREE3_HAFNIAN_OBSTRUCTION.md).
+
+Finally, the minimal tangent-companion cycle boundary is closed.  Its second
+jet forces each edge's quotient class to be one of the three Hadamard
+idempotents `A=[1:0], B=[0:1], C=[1:1]`; the consecutive third jet excludes
+`C` and leaves only an even alternating `A/B` cycle.  Uniform `A` and uniform
+`B` full-root derivatives then select the two alternating perfect matchings.
+Both delete the same complete root set and hence lie on one common principal-
+cofactor line, whereas the two GHZ targets are independent pure tensors.
+Thus the whole minimal-cycle topology is excluded; off-cycle or otherwise
+nonminimal companion systems remain open:
+[`ROOT_TANGENT_MINIMAL_CYCLE_IDEMPOTENT_SECOND_THIRD_JET_CLASSIFICATION.md`](ROOT_TANGENT_MINIMAL_CYCLE_IDEMPOTENT_SECOND_THIRD_JET_CLASSIFICATION.md).
+A separate majority-subset theorem says that, on `|S|=m+r` vertices of an
+order-`2m` witness, each contracted monochromatic pure tensor lies in the
+`r`th power of the internal-edge ideal.  At `r=1`, every entangled tensor
+killed by all internal pair contractions must kill all three diagonal pure
+tensors; this strictly extends decomposable multi-star tests:
+[`MAJORITY_SUBSET_INTERNAL_EDGE_IDEAL_HIERARCHY.md`](MAJORITY_SUBSET_INTERNAL_EDGE_IDEAL_HIERARCHY.md).
+Finally, a six-vertex `K_3,3` coefficient obstruction proves that no fixed
+edge signing or reweighting converts generic principal hafnians to a spinor/
+Pfaffian family, and an explicit cancellation example shows that nonzero
+principal-hafnian support need not be a delta-matroid.  Matchgate and spinor
+tools therefore require an additional specialization; the square-zero
+cumulants are the universal bosonic replacement:
+[`BOSONIC_HAFNIAN_SPINOR_NO_TRANSFER.md`](BOSONIC_HAFNIAN_SPINOR_NO_TRANSFER.md).
+These results do not close the enlarged Hall-satisfying `P_7` branch.  They
+replace support-shell growth by a precise next target: intersect the forced
+lower mixed-jet frames with the common Gram/Schur minors and one overlapping
+majority-set ideal or four-/six-point cumulant equation.
+Even scalar complementary-hafnian algebra supplies no hidden relation on
+the desired diagonal classes.  For every scalar `2m`-vertex hafnian, the
+Jacobian of the complete principal-cofactor map at a perfect-matching point
+has determinant `(-1)^(m-1)(m-1)`.  Hence the map is etale and dominant in
+characteristic zero, and three independent diagonal edge systems locally
+realize arbitrary diagonal cofactor arrays.  Mixed-colour cancellation,
+which those diagonal systems generally fail, is therefore the next genuine
+compatibility:
+[`HAFNIAN_PRINCIPAL_COFACTOR_GRADIENT_DOMINANCE.md`](HAFNIAN_PRINCIPAL_COFACTOR_GRADIENT_DOMINANCE.md).
+All six
+known common-port missing-colour profiles still admit exact full-span
+incidence models, so none is eliminated by these rank conditions alone.
+Other all-full-span cores and the synchronized curves remain open:
+[`SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md`](SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md),
+[`SIX_BLOCKER_NONZERO_CROSS_PORT_FREEDOM.md`](SIX_BLOCKER_NONZERO_CROSS_PORT_FREEDOM.md),
+[`SIX_BLOCKER_MAXIMAL_OVERLAP_GHZ_HYPERCUBE.md`](SIX_BLOCKER_MAXIMAL_OVERLAP_GHZ_HYPERCUBE.md),
+[`SIX_BLOCKER_ORDER12_ISOTROPIC_P6_CURVE.md`](SIX_BLOCKER_ORDER12_ISOTROPIC_P6_CURVE.md),
+[`SIX_BLOCKER_ORDER12_QUOTIENT_RANK_FRAME_CLASSIFICATION.md`](SIX_BLOCKER_ORDER12_QUOTIENT_RANK_FRAME_CLASSIFICATION.md),
+[`SIX_BLOCKER_ORDER12_ZERO_QUOTIENT_CORE_NO_CONCISE_P6.md`](SIX_BLOCKER_ORDER12_ZERO_QUOTIENT_CORE_NO_CONCISE_P6.md),
+[`SIX_BLOCKER_ORDER12_NONZERO_DIAGONAL_COFACTOR_NO_TORUS_P6.md`](SIX_BLOCKER_ORDER12_NONZERO_DIAGONAL_COFACTOR_NO_TORUS_P6.md),
+[`SIX_BLOCKER_ORDER12_KERNEL_SUPPORT_COVER_NO_TORUS_P6.md`](SIX_BLOCKER_ORDER12_KERNEL_SUPPORT_COVER_NO_TORUS_P6.md),
+[`SIX_BLOCKER_ORDER12_THREE_KERNEL_PURE_COFACTOR_COMPATIBILITY_OBSTRUCTION.md`](SIX_BLOCKER_ORDER12_THREE_KERNEL_PURE_COFACTOR_COMPATIBILITY_OBSTRUCTION.md),
+[`FOUR_ROOT_SIX_BLOCKER_ARBITRARY_ORDER_KERNEL_SUPPORT_OBSTRUCTION.md`](FOUR_ROOT_SIX_BLOCKER_ARBITRARY_ORDER_KERNEL_SUPPORT_OBSTRUCTION.md),
+[`SIX_BLOCKER_ARBITRARY_COFACTOR_PROJECTIVELY_CONSTANT_ROW_OBSTRUCTION.md`](SIX_BLOCKER_ARBITRARY_COFACTOR_PROJECTIVELY_CONSTANT_ROW_OBSTRUCTION.md),
+[`P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md`](P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md), and the all-surplus generalization
+[`ARBITRARY_SURPLUS_COMMON_ROW_FULL_SPAN_OBSTRUCTION.md`](ARBITRARY_SURPLUS_COMMON_ROW_FULL_SPAN_OBSTRUCTION.md), together with
+[`TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md`](TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md) and
+[`TWO_RESIDUAL_COORDINATE_MONOMIAL_SLICE_UNIVERSALITY_NOGO.md`](TWO_RESIDUAL_COORDINATE_MONOMIAL_SLICE_UNIVERSALITY_NOGO.md), together with
+[`ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md`](ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md).
+These are strong local algebraic-geometric
+reductions, not a global proof:
+special `P_5/P_6` restrictions and the final local-to-global graph step are
+still missing.
+
 Separately, the repository now contains an exact rational positive
 Question-2 witness for [`n=6, k=4, d=4`](Q2_N6_K4_D4_CONSTRUCTION.md).
 It has two red heralds and therefore is not a Question-1 counterexample.
@@ -46,6 +2277,28 @@ strictly advance the finite frontier:
 - the order-four permanent tensor has exact subrank two over `C`; in
   particular, four fully supported zero-coupled roots require at least
   five blocker vertices in total.
+- at every even ambient order, `r` fully supported pairwise-zero roots with
+  total blocker union `r+1` extract `P_(r+1) -> Delta_3`.  An arbitrary
+  positive odd residual set becomes one extra linear port row of the
+  permanent.  Thus four roots and five blockers give `P_5 -> Delta_3`, while
+  five roots and six blockers give the separate problem `P_6 -> Delta_3`.
+- five fully supported pairwise-zero roots whose three colour-blocker sets
+  have tight total union five likewise extract `P_5 -> Delta_3` at arbitrary
+  ambient order.  Excluding `P_5 -> Delta_3` would therefore force blocker
+  surplus at least six, but neither surplus nor coordinate-boundary roots
+  are yet excluded.
+- in the projective space of ten nonzero five-root blocks, the closure of the
+  true no-torus locus has codimension at least two.  A general point of any
+  one boundary-resultant divisor has one simple boundary root and 23 simple
+  torus roots.  Whole-zero-block affine strata have codimension nine.
+- a smooth expected-dimensional four-root complete intersection always meets
+  the coordinate torus.  Hence any hypothetical eight-vertex witness forces
+  all 70 induced four-root schemes onto the singular-or-excess locus.
+- an unrestricted `P_6 -> Delta_3` restriction must satisfy an exact
+  `240 x 6` simultaneous-kernel condition.  Coordinate-column restrictions
+  and the natural zero-row lift of the known support-four `P_5` family are
+  impossible; the six-blocker maps reduce to six common-port deletion
+  profiles, but the dense `P_6` problem remains open.
 - more sharply, any nonzero decomposable restriction of the order-four
   permanent tensor through rank-at-least-two local maps has rank two in
   at least two modes.  The two rare `q5_311` deletions therefore force
@@ -105,6 +2358,978 @@ strictly advance the finite frontier:
   case.  No additional component occurs on this stratum; mixed edge
   orientations, triangle geometry, and lower pair-rank boundaries
   remain.
+- the exact rank-two pair-image boundary now has a computation-free
+  pencil classification.  Its projective kernel is a line in the
+  `2 x 2` Segre quadric ambient space.  The line cannot be a Segre
+  ruling because every nonzero degree-one element of the squarefree
+  algebra has annihilator dimension at most one.  A secant kernel
+  forces the existing `2+2` or `1+3` block centers; a tangent kernel
+  forces coincident planes through one coordinate line (and the
+  transverse generator must use at least two other coordinates).
+  Thus a single rank-two exceptional pair has no third kernel type,
+  although compatibility of several such pencils and the exceptional
+  triangle remain open:
+  [`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md).
+- the all-rank-two-relation triangle now has an intrinsic symbolic
+  holonomy.  Off the trivial-holonomy divisor, three Borel row shifts
+  remove the constant relation terms, all six mixed triple products
+  vanish, and each cross-product has the opposite local plane as its
+  full degree-one annihilator.  Its symmetric zero-diagonal
+  catalecticant has rank two, so it is a weighted cut: `1+3` or
+  `2+2`, with the latter governed by one tetrad.  This reduces the
+  nonresonant triangle to cyclic cut compatibility:
+  [`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md).
+- the full-support all-`1+3` part of that cyclic problem is now empty.
+  A triangle cut has only an internal factorization or a fully
+  supported sign-reflection factorization.  Since every opposite
+  annihilator plane lies in a coordinate hyperplane, only the internal
+  sheet is possible.  The three singleton labels must coincide;
+  otherwise the planes collapse into a coordinate two-plane.  With a
+  common label the restriction is an embedded pure `P_3`, whose perfect
+  pairing forces all three alleged rank-three pair images to have rank
+  at most two.  Thus no new component occurs there; `2+2` cycles,
+  proper cut-support boundaries, and the resonant divisor remained at
+  that checkpoint:
+  [`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md).
+- every full-support `2+2` bridge is now impossible as well.  Writing
+  it as `q=ab` across two binary blocks, every factorization of `q`
+  contains the anchor `a` or `b`.  Its annihilator is
+  `span(a_bar,b_bar)`, but every plane with a rank-three product and a
+  unique rank-two relation against that annihilator is a crossed graph
+  `span(alpha*a+tau*b_bar,-tau*a_bar+beta*b)` with `tau!=0`; such a
+  plane contains neither anchor.  The bridge therefore cannot factor.
+  Combining both cut theorems empties the full-support nonresonant
+  triangle.  At that checkpoint, proper cut-support boundaries and
+  the resonant holonomy divisor remained:
+  [`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md).
+- the proper cut-support boundary is now empty too.  Every nonzero
+  proper cut is either one edge or a two-edge star.  A one-edge
+  annihilator forces every rank-two-relation partner into the same
+  coordinate plane, making the product rank at most one.  A two-edge
+  star and both its partners lie in one coordinate hyperplane, turning
+  the restriction into an embedded `P_3`; perfect pairing makes every
+  alleged rank-three pair have rank at most two.  Consequently the
+  complete nonresonant all-rank-two-relation triangle is empty.  Only
+  the trivial-holonomy resonant divisor remains:
+  [`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md).
+- the resonant divisor is now an affine-holonomy problem.  After
+  normalizing projective transport, the relations are
+  `A_ij*y_i*y_j+y_i*x_j-x_i*y_j=0` and the residual gauge invariant is
+  `delta=A_12+A_23-A_13`.  If `delta!=0`, all kernel-rich triple
+  products vanish and the three one-kernel products coincide, giving
+  a tangent-Segre first jet; the three kernel-pair products are
+  rank-two cuts.  If `delta=0`, all triple products depend only on
+  Hamming weight and factor through `Sym^3(C^2) -> R_3`, with its
+  first three coefficients compressed to a plane.  These two small
+  incidences, not the original plane equations, are the remaining
+  triangle frontier:
+  [`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md).
+- the nonzero additive-holonomy branch is empty.  Its tangent-Segre
+  first jet makes the three kernel-pair products into nonzero
+  rank-two cuts with the opposite planes as annihilators.  Proper
+  supports descend to a rank-deficient partner; a full `2+2` cut
+  contradicts the anchor/crossed-graph lemma; and three full `1+3`
+  cuts force a common coordinate hyperplane and hence an embedded
+  pure `P_3`, where perfect pairing makes every pair image have rank
+  at most two.  The triangle frontier is therefore reduced to the
+  flat synchronized binary cubic `Omega=delta=0`:
+  [`P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md`](P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md).
+- the Borel-generic flat binary cubic is empty.  Purity fixes the
+  kernel lines, so the correct normal form is
+  `y=(1,1,1,1), x=(0,1,p,q)`, not a full-`GL_2` cross-ratio form.
+  Its synchronizer is a two-dimensional pencil.  For
+  `C=[Y K J X]`, one compression minor is a unit times a
+  biquadratic `F`, every `3 x 3` minor of `C` is divisible by `F`,
+  and `det C` is a unit times `F^2`.  Three small `K,J` minors rule
+  out a one-dimensional compressed span.  This excludes the
+  full-kernel-support, distinct-affine-ratio, finite-partner chart.
+  A companion compound identity excludes the otherwise-distinct
+  one-kernel-zero chart:
+  [`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md),
+  [`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md).
+- the projective partner sheets over that same generic center are now
+  classified exactly.  With one partner at infinity, purity occurs on
+  precisely three rational curves, characterized invariantly by a repeated
+  disjoint pair sum among the four affine ratios: an additive
+  parallelogram.  On every such curve the infinite partner and its finite
+  neighbor have product-image rank two, so all three leave the
+  rank-three-relation triangle stratum.  With both partners at infinity,
+  the compression and escape ranks are incompatible.  Hence the complete
+  projective sheet is empty for the intended triangle.  The next theorem
+  handles the Borel affine-ratio collisions; smaller kernel supports remain:
+  [`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
+- the remaining full-support affine-ratio collisions are now classified
+  without leaving the Borel gauge.  For multiplicities `2+1+1` and `3+1`,
+  the synchronizer's projective point has local rank one and every finite
+  partner shares an active row whose squarefree cube is zero.  For `2+2`,
+  the synchronizer is a presymplectic projective plane; flat triples are
+  lines through its radical.  Exactly four signed finite points are pure,
+  and all four have a rank-two noncentral pair; both projective endpoint
+  sheets are empty.  Combined with the distinct-ratio theorems, this
+  excludes every full-kernel-support flat rank-three-relation triangle:
+  [`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
+- the smaller kernel supports complete the corrected triangle
+  classification, and they reveal a survivor rather than another
+  obstruction.  Up to source symmetry it is
+  `U_0=span(b_bar,a_bar)` and
+  `U_i=span(a,b+alpha_i*a_bar)` for `i=1,2,3`, where `a,a_bar` and
+  `b,b_bar` are opposite binary directions on complementary coordinate
+  pairs.  All three leaf-pair images have rank three with rank-two flat
+  relations, and the full restriction is exactly
+  `-4(sum_i alpha_i)x_0x_1x_2x_3`.  It is nonzero precisely when the sum of
+  the three parameters is nonzero.  Zero columns, kernel supports one and
+  three, all other support-two directions, and all projective endpoints are
+  excluded.  This replaces the withdrawn empty-triangle claim with a
+  complete Borel classification:
+  [`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
+- that corrected survivor is not a sixteenth component.  It also carries a
+  rank-one star from its opposite plane.  After the block source scaling
+  `diag(1,1,alpha_1,alpha_1)`, set
+  `p=0`, `r=alpha_2/alpha_1`, and `q=alpha_1/alpha_3` in component eleven.
+  The four row spaces agree exactly, in mode order `(3,1,2,0)`, and the
+  component coefficient satisfies
+  `1+q(r+1)=(alpha_1+alpha_2+alpha_3)/alpha_3`.
+  Hence the entire all-rank-two-relation triangle is the closure of the
+  `p=0` divisor of the equal-support sixfold:
+  [`P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md`](P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md).
+- the dependent rank-two-relation star is now reproved rather than merely
+  resurrected from the withdrawn argument.  Four-distinct centers reduce
+  by the exact adjugate-pencil matching to the corrected support-two
+  triangle; collision centers have zero active fourth power; both
+  support-two charts have a constant forbidden coefficient `4`; and the
+  previously missing full-support `2+2` Borel chart has two kernel-marked
+  words forcing the same quadratic `E` to equal both zero and one.  Thus no
+  pure rank-three star can have three rank-two unique relations:
+  [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md).
+- the mixed rank-three triangle with coefficient-rank pattern `(2,2,1)` is
+  now excluded in every Borel chart.  Ordinary synchronizer pencils are
+  totally isotropic; the support-two equal-ratio boundary closes by the
+  squarefree degree-one annihilator; and the missing full-support `2+2`
+  chart is a presymplectic plane.  There four maximal minors force
+  `Delta=r_2s_3-r_3s_2=0`, so the leaf relation is alternating with
+  coefficient matrix `[[0,1],[-1,0]]` and rank two, contradicting the
+  required rank one.  This leaves one-rank-two-edge triangles and the lower
+  pair-rank boundary, not the `(2,2,1)` pattern:
+  [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md).
+- the analogous `(2,2,1)` **star** does exist and supplies a tenth pure-`P_4`
+  component orbit.  In the full-support `2+2` presymplectic chart, purity
+  leaves a rational two-parameter family with only
+  `T_1111=-4(s+t)`.  Its pair profile is `(3,3,3,4,4,4)` and the three
+  center relations have coefficient ranks `(2,2,1)`.  Under the Cayley map
+  `c(z)=(z-1)/(z+1)`, the compatibility law
+  `d=(1+st)/(s+t)` becomes the torus multiplication law `c(d)=c(s)c(t)`.
+  Exact family and incidence minors prove that its diagonal-source closure
+  is a smooth five-dimensional component at `(s,t)=(2,3)`:
+  [`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md).
+  A reverse Borel analysis proves this is the complete rank-three star
+  stratum with relation-rank multiset `{1,2,2}`.  Ordinary synchronizer
+  pencils force an extra leaf relation; the support-two equal-ratio center
+  gives either the zero tensor or a rank-two center pair; and the full
+  `2+2` equations force the displayed Cayley law:
+  [`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md).
+- the tenth component's complete generic weighted `H22` fibre is empty.
+  Projecting the Borel marking incidence away from its free all-active
+  coordinate turns the other fifteen binary coefficients into a fixed-vertex
+  Segre join.  On `C_0000!=0`, six quadrics and four cubics are its canonical
+  toric equations.  Substitution of the eight extension variables in the
+  weighted `23` direction gives the unit ideal over `C(u,v,rho)`.  Off one
+  linear pivot divisor, three of those binomials visibly contradict
+  `2(u-1)(v-1)!=0`:
+  [`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+- the original first component is now rewritten as an apolar triangle bundle.
+  Three fixed planes have relation-rank pattern `(2,1,1)` and only their
+  all-kernel/all-active degree-three products survive.  The fourth plane is
+  an arbitrary two-plane in the kernel of the all-kernel covector, with dense
+  chart
+  `span((1,0,p,1+p),(0,1,q,1+q))`.  The full tensor is simply
+  `-2(p e_0+q e_1) tensor e_1 tensor e_1 tensor e_1`; restoring the source
+  torus gives the known fivefold.  An exact Pluecker map identifies this with
+  the old five-parameter family:
+  [`P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md`](P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md).
+- the crossed Borel orientation of that `(2,1,1)` triangle is now classified
+  on the complete genuine support-two stratum.  The six binary zero-product
+  labels form the octahedron `J(4,2)=L(K_4)`.  Equal labels force the three
+  triangle planes into a coordinate hyperplane; opposite (disjoint) labels
+  force a collapsed plane or a second pair relation; and adjacent labels
+  have one dense factorization orbit, exactly the fixed apolar triangle
+  above.  The proof is a `2 x 2` exterior-product identity plus three
+  squarefree coefficient ratios, with no elimination:
+  [`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md).
+  The support octahedron is shown in
+  [`research_figures/P4_CROSSED_211_TRIANGLE_SUPPORT_OCTAHEDRON.png`](research_figures/P4_CROSSED_211_TRIANGLE_SUPPORT_OCTAHEDRON.png).
+- the equal-support common-factor orientation does not collapse: it supplies
+  an eleventh component orbit, and a second six-dimensional one.  In binary
+  block notation its normalized family is
+  `U0=span(a+p b,a_bar+q b)`,
+  `U1=span(a,a_bar+b)`, `U2=span(a,r a_bar+b)`, and
+  `U3=span(b_bar,a_bar)`.  Only
+  `T_0111=-4p(r+1)` and `T_1111=-4(1+q(r+1))` survive.  A family tangent
+  minor `3/128` and a Segre-incidence minor `-9/2` prove that its
+  diagonal-source closure is a smooth six-dimensional component.  Its
+  sorted pair profile `(3,3,3,4,4,4)` distinguishes it from the previous
+  sixfold's `(2,3,3,4,4,4)`:
+  [`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md).
+- the eleventh component's complete generic marked `H31` fibre is empty.
+  Over `C(p,q,r)[h0,h1,h2,h3]`, the all-kernel diagonal row lies in the
+  polynomial row module of the fourteen mixed extension rows for every
+  deleted coordinate, while the all-active row survives in the cokernel.
+  The shared exact zero divisor makes two of the four inclusions identically
+  zero and the other two explicit standard-basis combinations:
+  [`P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+- the same component's generic weighted `H22` fibre is empty by an even
+  shorter identity.  Under arbitrary source scalings and homogeneous merge
+  weights, two kernel rows saturate the merged and fifth channels.  The
+  residual two-channel permanent is
+  `p*t2*(-t3)+p*t3*t2=0`, the exact-zero-divisor relation
+  `(X2+X3)(X2-X3)=0`.  Thus one required binary neighbour always has zero
+  all-kernel diagonal, simultaneously in every marking and weighted slope:
+  [`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+- the remaining transverse common-factor polarity sheet detects a twelfth
+  pure-`P_4` component orbit.  If `s,t` are the complementary binary parts
+  of the synchronized active row and common kernel, their determinant
+  `Q=[s,t]` and split polar pairing `A=<s,t>` factor all four three-cubic
+  apolar minors.  The sheets `A=0` and `Q=0` return to the eleventh component
+  or its boundary, while `AQ!=0` forces a one-coordinate `1+3` projection.
+  One exact two-parameter sheet has only `T_1111=-4`; at
+  `(r,k)=(-4/3,2)` its pair profile is `(3,3,4,3,3,3)`, every three-mode
+  kernel-rich cubic span has rank two, and the universal Segre-incidence
+  Jacobian has rank fourteen.  The apparent sixth tangent direction is
+  obstructed by the omitted incidence equation with exact leading term
+  `12h^2`; the five source-torus family directions therefore fill a new
+  five-dimensional component.  Its five-edge exceptional
+  graph and theorem are in
+  [`P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md`](P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md).
+  Its complete generic marked `H31` fibre is empty as well.  Over
+  `C(r,k)[h0,h1,h2,h3]`, the all-kernel diagonal belongs to the fourteen-row
+  mixed module for every deleted coordinate, while the all-active diagonal
+  survives.  The reduced module sizes are `(7,7,8,8)`, so all twelve
+  certified components are generically closed for `H31`:
+  [`P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+  Its generic weighted `H22` fibre is empty by a shorter binary-polarity
+  identity.  The repeated kernel rows saturate the merged/fifth channels and
+  leave the residual permanent
+  `(-t2)*(k*t3)+(k*t3)*t2=0`.  Thus all twelve certified components are now
+  generically closed for both marked types:
+  [`P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+- the dense common-kernel/kernel-leaf orientation of the same `(2,1,1)`
+  triangle is empty.  After exact-pair synchronization, its seven
+  kernel-rich cubics reduce to three columns.  Four maximal minors force the
+  complementary binary directions onto the split-polar graph and remove the
+  remaining `a` component.  On that graph the all-active cubic is exactly
+  `delta*C2-beta*(beta+r)*C0`, a linear combination of kernel-rich cubics.
+  Any opposite plane killing the mixed coefficients therefore kills the pure
+  coefficient too:
+  [`P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md`](P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md).
+- the mixed `YX` common-kernel orientation is empty on the entire genuine
+  support-two exact-pair stratum.  Its synchronization law is a factorization
+  `b*d=a^2`.  The complementary coefficients either vanish, giving pair-image
+  rank one, or form reflected partners `B+s,B-s` with `s^2=0`.  In the latter
+  case a second exact relation confines the pair image to
+  `span(a^2,a*s)`, of rank at most two.  Thus it can never be the required
+  rank-three edge:
+  [`P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md`](P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md).
+- the active `XX` orientation is a survivor: it supplies a thirteenth
+  component.  Its normalized parameters lie on the Eisenstein norm quadric
+  `N(alpha,gamma)=N(r+beta,beta)`, where `N(x,y)=x^2+xy+y^2`.
+  Over `C` this is the Segre equation `UV=ST`, so the projective moduli are
+  `P^1 x P^1`.  On the quadric the restriction is exactly `4*x0*x1*x2*x3`.
+  A family tangent minor `1/864` and universal incidence minor `-2/81`
+  certify a smooth five-dimensional component:
+  [`P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md`](P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md).
+  Its graph is in
+  [`research_figures/P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg`](research_figures/P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg).
+  Its complete generic marked `H31` fibre is empty.  A rational projection of
+  the norm quadric gives function field `C(u,v)`; over the entire marking ring,
+  all four all-kernel diagonals belong to their fourteen-row mixed modules,
+  while the all-active classes survive.  Thus all thirteen components
+  certified at that checkpoint
+  components are generically closed for `H31`:
+  [`P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
+  Its weighted `H22` fibre is empty as well.  On the full polynomial ring in
+  weighted slope, markings, and extension entries, the product of the two
+  diagonal coefficients belongs to the fourteen-generator mixed ideal; the
+  same holds on the projective infinite-slope chart.  Thus every mixed-zero
+  extension loses at least one binary diagonal, and all thirteen components
+  then known are generically closed for both marked types:
+  [`P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
+  Support-one common zero divisors and lower-pair-rank strata remained at
+  that checkpoint.
+- the unequal-complement continuation of the same active/active orientation
+  is a twenty-second component rather than a missing boundary of component
+  thirteen.  Four linear apolar sheets are one symmetry orbit.  At
+  `(A,R,D)=(1,1,2)`, exact family/incidence minors `-1/5184` and `1/23328`
+  prove a smooth fivefold with profile `(4,4,4,3,3,3)` and relation ranks
+  `(2,1,1)`.  Equal complements return to component thirteen; every other
+  projective direction is lower-pair, embedded-`P_3`, or zero.  Together
+  with the five other flag orbits, this completely closes the
+  `triangle-(2,1,1)` cell:
+  [`P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md`](P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md),
+  [`P4_211_TRIANGLE_COMPLETE_CLASSIFICATION.md`](P4_211_TRIANGLE_COMPLETE_CLASSIFICATION.md).
+  Its complete generic marked `H31` fibre is empty.  Exact projection leaves
+  four binary marking branches, and a uniform mode-three one-marked minor
+  excludes all four; the other two source deletions are killed by row-module
+  identities:
+  [`P5_H31_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_GENERIC_OBSTRUCTION.md).
+  Generic weighted `H22` remains open: exact binary survivors exist at
+  rational points, but their one-marked ternary maps have rank four, so they
+  are not counterexamples:
+  [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_SURVIVOR_RECONNAISSANCE.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_SURVIVOR_RECONNAISSANCE.md).
+  The full finite `D01` pair orbit is now closed by a three-prime radical
+  decomposition and two fixed one-marked minors per branch, including every
+  finite weight and the H31 weight-at-infinity endpoint.  This does not
+  transport to the complementary-support `D23` pair orbit, which remains
+  unknown:
+  [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D01_PAIR_ORBIT_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D01_PAIR_ORBIT_OBSTRUCTION.md).
+  On `D23`, three exact projection branches and seven primary `h1=0`
+  factors have unit one-marked ideals.  The remaining
+  `h1=0,2h3=s,G=G2=0` saturation is closed on `h0=0` by a coefficient-field
+  unit ideal; on `h0!=0`, a first cofactor closes `P!=0` and an exact
+  resultant with a second fixed cofactor closes `P=0`.  Thus the entire
+  displayed `h1=0` residual is empty.  The complete generic-component
+  `rho=0` and `rho=-1` slices are empty as well.  The unexhausted `h1!=0`
+  chart away from those two weights remains unknown:
+  [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md) and
+  [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md),
+  [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_SECOND_COFACTOR_COVER_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_SECOND_COFACTOR_COVER_OBSTRUCTION.md), and
+  [`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_MINUS_ONE_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_MINUS_ONE_OBSTRUCTION.md).
+- the outward common-center-kernel orientation in the star-`(2,1,1)` cell
+  contains component twenty-three.  Its implicit pure hypersurface is
+  `1-rt=ks(t-r)`; exact family/incidence minors `-3/4` and `-9600` prove a
+  smooth fivefold with pair profile `(3,3,3,4,4,4)` and relation word
+  `(2,1,1)`.  A complete support-one/support-two and `YY/YX/XX` flag ledger
+  routes every other point in this orientation to components eleven or
+  twelve, lower-pair, or zero.  Its complete generic marked `H31` fibre is
+  empty: two deletions are
+  row-module obstructed, and each of the other two has one exact marking with
+  a uniform rank-four one-marked minor:
+  [`P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md`](P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md),
+  [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+  Exact weighted closure covers all markings at generic weight infinity and
+  at every finite weight.  On ordinary weights, exact selected minors confine
+  the residual to `F=0` and three factors.  Full localized mixed modules close
+  `h2=0` and `h3=0`; on `H=0`, a selected minor reduces to a unit times `C/L`,
+  while `gcd(L,C)=1`, so `C!=0` has full rank and `C=0` returns to `h3=0`.
+  Thus component twenty-three's complete generic weighted-`H22` fibre is
+  empty:
+  [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md),
+  [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md),
+  [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ORDINARY_F_H2_ZERO_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ORDINARY_F_H2_ZERO_OBSTRUCTION.md), and
+  [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ORDINARY_RESIDUAL_OBSTRUCTION.md`](P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ORDINARY_RESIDUAL_OBSTRUCTION.md).
+- the disjoint-binary split-center mixed orientation in the same star cell
+  contains component twenty-four.  Exact purity splits into a lower-pair
+  branch and two sign sheets exchanged by `X_2<->X_3`.  The nonzero sheet is
+  a smooth fivefold: family/incidence minors `-1/81` and
+  `-57671680/6561` certify local dimension five, including the full
+  projective moving-leaf direction.  Its generic pair profile and relation
+  word equal component twenty-three's, but one rank-one spoke uses the center
+  kernel and the other a leaf kernel, rather than both using the center.
+  The complete mixed-center support ledger routes every other support to
+  lower-pair or zero.  The inward endpoint strata are separate.
+  Its complete generic marked `H31` fibre is empty: one deletion is killed by
+  a row-module identity, the other three project to four exact branches, and
+  the fixed mode-zero rows-0137 minor makes every saturated branch ideal
+  unit.  Its generic weighted `H22` fibre is empty too: exact projection of
+  both pair orbits and both homogeneous-weight charts gives six branches,
+  including one irreducible quadratic-weight prime, and the same
+  `N0[0137]` minor makes every branch ideal unit.  Special/projective fibres
+  remain open:
+  [`P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md`](P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md),
+  [`P4_MIXED_CENTER_STAR_211_COMPLETE_CLASSIFICATION.md`](P4_MIXED_CENTER_STAR_211_COMPLETE_CLASSIFICATION.md),
+  [`P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
+  [`P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+- the disjoint-binary unequal-endpoint two-inward chart contains component
+  twenty-five.  Its purity tensor has four entries forming a rank-one
+  `2 x 2` matrix on the irreducible hypersurface
+  `(ej+k^2)(1+ejs^2)=(e+j)^2`.  Exact family/incidence minors `-7/27` and
+  `81920/3` prove a smooth fivefold with pair profile
+  `(3,3,3,4,4,4)` and relation word `(2,1,1)`.  The two distinct inward
+  center endpoints separate it from components twenty-three and
+  twenty-four.  A complete eight-signature reverse theorem includes both
+  projective leaf hyperplanes and makes this the sole genuine two-inward
+  all-pair closure.  Generic marked `H31` is empty.  For weighted `H22`, both
+  infinity endpoints and a dense finite-`D01` chart are empty.  The ordinary
+  finite-`D01` residual splits into `A=0` and `B=0`; on `A=0`, exact quotient
+  reduction leaves one parameter and two terminal Segre equations whose ideal
+  is unit over the weight function field.  Exact retained-weight projection
+  identifies the sole ordinary residual as
+  `(js-1)lambda-(js+1)=0`; that divisor, `B=0`, and the remaining
+  finite/projective fibres remain open:
+  [`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md`](P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md),
+  [`P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
+  [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_LINEAR_REDUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_LINEAR_REDUCTION.md),
+  [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_GENERIC_WEIGHT_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_GENERIC_WEIGHT_OBSTRUCTION.md), and
+  [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_WEIGHT_COVER.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_WEIGHT_COVER.md).
+  The equal-endpoint two-inward stratum is empty: support one forces the zero
+  tensor, nonsingular binary complement has fixed forbidden coefficient
+  `-4Q`, and both singleton-complement charts are zero or lower-pair:
+  [`P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md`](P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md),
+  [`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md`](P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md).
+- in the remaining star-`(1,1,1)` cell, the strict all-three-arrows-to-center
+  orientation is empty.  All three leaf active rows would be the unique
+  polar partner of the center kernel, and every singleton/binary polar has
+  zero squarefree cube.  Double-endpoint boundaries and the other
+  mixed/radical support collisions remain separate:
+  [`P4_ALL_CENTER_KERNEL_STAR_111_OBSTRUCTION.md`](P4_ALL_CENTER_KERNEL_STAR_111_OBSTRUCTION.md).
+  The all-three kernel--kernel orientation is also empty by an exact
+  singleton/binary support split.  Stars with only one or two double-endpoint
+  spokes remain open:
+  [`P4_ALL_DOUBLE_ENDPOINT_STAR_111_OBSTRUCTION.md`](P4_ALL_DOUBLE_ENDPOINT_STAR_111_OBSTRUCTION.md).
+- the entire boundary where at least one rank-one edge is support-one
+  produces no new
+  component.  A support-one zero divisor has annihilator equal to its own
+  coordinate line, so every common-factor orientation makes the leaf pair
+  rank at most two.  In the crossed orientation, factorizing `X0*X1`
+  gives either a rigid binary branch or reflected factors `P+s,P-s` with
+  `s^2=0`.  The latter uses only one extra coordinate, placing the entire
+  triangle in a coordinate three-space.  For a mixed support-one/support-two
+  pair, overlapping supports return to the same edge factorization, while
+  disjoint supports give the two-edge star `X0*(X1-X2)`.  Its three missing-
+  coordinate equations force both factors into `span(X0,X1,X2)`; otherwise
+  the internal edge coefficients obey an identity violated by the star.
+  Frobenius--Kunneth then identifies every nonzero pure survivor as an
+  embedded pure-`P3` suspension:
+  [`P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md`](P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md).
+  At that checkpoint only genuinely lower-pair-rank strata remained; the
+  later rank-one obstruction and rank-two exhaustion theorem below close
+  those strata as a source of further components.
+- pair-image ranks zero and one are globally impossible for a nonzero pure
+  `P_4` restriction.  If `dim(UV)=1`, the induced nondegenerate annihilator
+  correspondence `P(U)->P(V)` lies in the projective zero-product locus.
+  That locus is only the union of six coordinate-pair rational curves, so
+  irreducibility forces `U=V=span(X_p,X_q)`.  Multiplication on that plane is
+  the rank-two hyperbolic form `ad+bc`; its nonzero Frobenius slice cannot be
+  decomposable.  Hence exact pair rank two is the true lower boundary:
+  [`P4_RANK_ONE_PAIR_OBSTRUCTION.md`](P4_RANK_ONE_PAIR_OBSTRUCTION.md).
+- the tangent half of that exact-rank-two boundary now has a complete purity
+  classification.  If the common tangent plane is `span(X0,w)`, purity of
+  the opposite pair is equivalent to orthogonality for the catalecticant of
+  `X0*w` and rank one for the catalecticant of `w^2`.  Full three-coordinate
+  support makes the first form a nondegenerate ternary quadratic space and
+  forces one opposite plane through `X0`; its partner is an explicit graph
+  over a polar plane.  Support two gives a hyperbolic quotient with radical
+  `span(X0,w_bar)`: survivors are either embedded `P3` or polar flags meeting
+  the radical in `C*w_bar`.  Exact non-embedded representatives have sorted
+  pair profile `(2,3,3,4,4,4)`.  Their component containment is the next
+  question:
+  [`P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md`](P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md).
+- the dense full-support polar-graph branch is a fourteenth pure-`P4`
+  component, not a boundary of the earlier sixfold.  With five parameters
+  `(a,b,c,d,t)`, its restriction factors exactly as
+  `y0*y1*(x2+tE*y2)*(L1*x3+L2*y3)`.  At `(1,1,2,3,1)` the family tangent
+  minor is `3/2`, while the universal incidence has rank thirteen and minor
+  `-34560`.  Its two excess tangent directions have coprime initial
+  obstructions `tau4*tau5` and `(tau4-tau5)^2`, so the local dimension is
+  exactly five.  The sorted pair profile `(2,3,3,4,4,4)` separates it from
+  all earlier fivefolds, and dimension separates the earlier lower-rank
+  sixfold.  Its marked `H31` and weighted `H22` fibres are closed in the next
+  two theorems:
+  [`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md`](P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md).
+  A graph picture is in
+  [`research_figures/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg`](research_figures/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg).
+- component fourteen's complete generic marked `H31` fibre is empty.  A
+  diagonal source-torus quotient reduces its five-parameter polar-graph
+  family to two moduli `(p,q)`.  Open Fitting projection then leaves exactly
+  six rational marking sheets.  The equality `U0=U1` pairs them by an exact
+  marked mode swap, and on the three prototype extension pencils the same
+  two marked minors have gcd `R_j*A_j*B_j`, with every `R_j` a nonzero
+  element of `C(p,q)`.  Hence every genuine neighbour has marked rank four:
+  [`P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md).
+- component fourteen's complete generic weighted `H22` fibre is empty too.
+  Eliminating each finite slope confines common markings to two
+  mode-symmetric rational curves.  Along a prototype curve the mixed kernel
+  is one-dimensional, and two cleared marked minors have slope gcd
+  `r*(rP-1)*((P-1)r-1)*(r+1)^2`; away from `r=-1`, its first three factors
+  are exactly the forbidden binary-diagonal zeros.  At `r=-1` the binary
+  incidence is empty, while slope infinity is literally the already-closed
+  component-fourteen `H31` sheet.  Thus both fifth-coordinate partition
+  types are generically excluded:
+  [`P5_H22_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md).
+- the support-two polar flags do not supply component fifteen.  An explicit
+  one-parameter Pluecker degeneration starts in the earlier six-dimensional
+  lower-pair component, scales the two block coordinates by `epsilon`, and
+  tunes two plane parameters through second order.  The two secant kernel
+  points coalesce to the tangent point at valuation one; the opposite planes
+  retain the full radical flag at valuations two and one.  The limiting
+  parameters cover every dense flag
+  `span(e+pS,H+lambda*Z+qS), span(S,H-lambda*Z+r*e)`.
+  Hence support-two tangent purity is either embedded `P3` or a boundary of
+  the known sixfold.  Together with component fourteen, this completes the
+  tangent half of exact pair rank two:
+  [`P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md`](P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md).
+- the disjoint `2+2` secant half produces a fifteenth component orbit.  The
+  two cross-products of the rank-two edge define complementary hyperbolic
+  planes `P,K`.  Purity is exactly an orthogonal-line condition in `P` and a
+  rank-one projection condition in `K`; the two maximal flag branches are
+  exchanged by swapping the opposite modes, and their closures contain all
+  smaller disjoint-secant strata.  A six-parameter family restricts as
+  `-4st*y0*x1*x2*((mn+1)*x3+m*rho*y3)`.  At
+  `(s,t,lambda,m,n,rho)=(1,2,3,4,5,6)`, its family minor is `48/1331` and
+  the universal incidence has rank fourteen with a nonzero `14 x 14` minor,
+  proving a smooth sixfold.  The disjoint kernel supports `{0,1},{2,3}`
+  separate it from the earlier overlapping `1+3` sixfold:
+  [`P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md`](P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md).
+- component fifteen's complete generic marked `H31` fibre is empty.  The
+  diagonal source torus reduces its six parameters to three moduli
+  `(p,q,rho)`.  For every deleted source coordinate, open Fitting projection
+  leaves the same single marking point
+  `(0,0,(p*q+1)/rho,0)`.  Its mixed extension space is a projective line;
+  two mode-zero minors factor as `A*B` times coprime binary linear forms.
+  Thus every genuine binary neighbour has marked rank four.  All seventeen
+  known pure-`P4` components are now generically closed for `H31`, while
+  the weighted `H22` side is closed in the next theorem:
+  [`P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
+- component fifteen's complete generic weighted `H22` fibre is empty too.
+  Retaining the finite weight in the Fitting projection leaves the same
+  single marking section.  Away from the two isotropic weights, three
+  marked minors reduce after `A*B` to `x*F(u)`, `rho*x+F(u)*y`, and `y`,
+  which cover the whole extension `P^1`; the isotropic weights have unit
+  binary ideals, and weight infinity is the preceding `H31` deletion.
+  Consequently all seventeen known pure-`P4` components are now generically
+  closed for both `H31` and `H22`:
+  [`P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
+- the overlapping `1+3` secant center creates no sixteenth component.  Its
+  two cross-product catalecticants are rank-two stars whose radical planes
+  meet in one line.  In an adapted basis, opposite-plane purity has
+  determinant `m*n*lambda^2`, splitting into two mode-swapped polar-flag
+  branches.  A six-parameter branch is smooth, with family minor
+  `-1/13824` and incidence minor `280/729`, but a source transformation and
+  mode order `(0,3,2,1)` identify its certificate point with the original
+  six-dimensional lower-pair component.  Smoothness makes the two charts the
+  same irreducible component.  Thus every genuine support-two single
+  rank-two edge is classified:
+  [`P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md`](P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md).
+- support-one secants are not a sixteenth component.  Exact pair rank two
+  forces the singleton zero product to be disjoint from the other genuine
+  binary zero product; the overlapping cases have rank one.  In the adapted
+  basis the purity problem is again a pair of coordinate stars with
+  determinant `m*n*lambda^2`.  On the dense `m=0` branch, splitting
+  `X0^2=0` to `(X0+epsilon X3)(X0-epsilon X3)=0` and setting
+  `L=2epsilon/lambda`, `M=-2u epsilon/lambda`, `N=1/n`, and
+  `rho=-1+2v epsilon/(lambda*n)` gives an exact arc inside component
+  fifteen.  The four Pluecker valuations are `(0,0,1,1)`, and their leading
+  wedges recover the target planes.  Closure and a mode swap cover every
+  remaining flag.  Hence **every nonzero pure `P_4` tuple having any pair
+  image of rank at most two lies in one of four already certified component
+  closures**: embedded `P3`, the old lower-pair sixfold, component fourteen,
+  or component fifteen:
+  [`P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md`](P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md),
+  [`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
+  Simultaneous rank-two edges remain relevant only to the intersection
+  poset of these closures, not to component exhaustiveness of the
+  lower-pair locus.
+- the singular kernel fibres of the overlapping mixed orientation do
+  produce components sixteen and seventeen.  The affine contraction matrix
+  drops to rank one on exactly four lines, so its opposite-plane fibre jumps
+  to `Gr(2,3)=P^2`.  Three lines carry a directed triangle of three rank-one
+  exact-zero-divisor relations.  Their source-support labels form either
+  `K_(1,3)` or `P_4`, with invariant degree sequences `(3,1,1,1)` and
+  `(2,2,1,1)`.  Exact family minors `1/16,1/8` and universal-incidence minors
+  `-192,28800` prove two smooth fivefolds; the fourth line is the first
+  apolar component.  Homogenizing both moving leaf rows adds no further
+  component: one boundary is zero or lower-pair, the other is zero or
+  lower-pair, and their corner is zero or an embedded `P_3` suspension.
+  Therefore this complete projective orientation chart raises the certified
+  lower bound to **seventeen** component orbits:
+  [`P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md`](P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md),
+  [`P4_OVERLAPPING_MIXED_ORIENTATION_PROJECTIVE_EXHAUSTION.md`](P4_OVERLAPPING_MIXED_ORIENTATION_PROJECTIVE_EXHAUSTION.md).
+- the complete cyclic rank-one triangle orientation is now classified by a
+  `C^*`-gain graph on the source-coordinate `K_4`.  Three distinct support
+  labels form only a star, path, or triangle.  Forest switching gives
+  components sixteen and seventeen; on the source triangle, purity forces
+  neutral holonomy `nu=lambda*mu`, and then every leaf-pair rank drops to
+  two.  Repeated adjacent labels make the kernel and escape cubics equal and
+  hence give zero; repeated disjoint labels have an exact opening into the
+  projectively exhausted `{01,01,23}` mixed star, so they lie in component
+  eight.  All-equal labels have pair rank one.  Thus no eighteenth component
+  occurs anywhere in this support-two cyclic orientation:
+  [`P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_CLASSIFICATION.md`](P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_CLASSIFICATION.md).
+- the transitive rank-one triangle orientation also creates no eighteenth
+  component.  The source of two arrows has a one-dimensional annihilator,
+  forcing all three exact zero products to share the same factor pair.
+  Legal Borel shifts reduce the purity determinant to the hyperbolic binary
+  pairing `S=b_2*d_3+b_3*d_2`.  On the genuine support-two null cone, the
+  only nonzero branch has `delta=0`, pair profile `(4,3,4,3,3,3)`, and an
+  explicit projective arc with parameter `r=alpha/epsilon` into component
+  eleven.  The support-one null cone has its desired covector equal to a
+  forbidden covector and is therefore zero; coincident-factor boundaries
+  have lower pair rank.  Together with the cyclic theorem, both tournament
+  orientations of a rank-one relation triangle are classified:
+  [`P4_TRANSITIVE_RANK_ONE_TRIANGLE_CLASSIFICATION.md`](P4_TRANSITIVE_RANK_ONE_TRIANGLE_CLASSIFICATION.md).
+- the support-one boundary omitted by the cyclic theorem is now closed by a
+  toric graph-lifting argument.  Treating `X_i^2=0` as a loop at source
+  vertex `i`, the fourteen possible three-label support orbits reduce to
+  only `{0,01,23}`, `{0,12,13}`, and `{0,1,23}` under plane-rank and apolar
+  separation.  Replacing each loop by
+  `(X_i+epsilon X_j)(X_i-epsilon X_j)=0` opens these three types into,
+  respectively, a source path, star, and path.  The moving apolar plane has
+  an explicit pivot correction, so the whole fibre—not just one point—lies
+  in component seventeen, sixteen, or seventeen.  Thus both the genuine
+  support-two and singleton parts of the cyclic orientation are complete:
+  [`P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_ONE_BOUNDARY.md`](P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_ONE_BOUNDARY.md).
+- the all-pair-ranks-at-least-three component problem has an
+  exact eight-cell reduction.  Perfect pairing forces the rank-three edges
+  to block all three 1-factors of the source `K_4`; every minimal blocker is
+  one of four stars or four triangles.  Each selected edge relation has
+  coefficient rank one or two, leaving only four relation-rank multisets per
+  graph shape.  The `222` star, `221` star, `222` triangle, and `221`
+  triangle cells were already resolved at that checkpoint.  The later
+  component and collision theorems close all four cells with at least two
+  rank-one relations, including every double-spoke and no-double boundary of
+  `star-(1,1,1)`.  Together with lower-pair exhaustion, all twenty-five
+  certified component closures are now exhaustive:
+  [`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md).
+- the common-singleton family in the `triangle-(1,1,1)` cell is now a
+  certified eighteenth component orbit.  Its rational five-parameter chart
+  has all pair ranks three.  A fifteen-equation graph slice has exact local
+  dimension zero over `F_32003`; an integral height argument lifts this to a
+  five-dimensional characteristic-zero incidence germ.  The closed condition
+  `all six pair ranks <=3` separates the resulting irreducible component from
+  every previous orbit, each of which has a certified rank-four pair:
+  [`P4_COMMON_SINGLETON_COMPONENT.md`](P4_COMMON_SINGLETON_COMPONENT.md).
+- the two extreme kernel--kernel boundaries of that same cell create no
+  further component.  If all three selected relations are kernel--kernel,
+  their kernel rows share one singleton; the common-singleton branch is
+  component eighteen, while the complementary-edge branch has an explicit
+  arc into component sixteen.  If exactly two relations are kernel--kernel,
+  a binary exact pair and its complementary binary direction force the
+  complete normal form onto a projective component-eleven boundary.  Thus
+  this left only the exactly-one-kernel pattern in `triangle-(1,1,1)`:
+  [`P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md`](P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md),
+  [`P4_TWO_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md`](P4_TWO_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md).
+- the exactly-one-kernel pattern is now completely placed.  Its eight-entry
+  orientation/support reduction splits into known component boundaries and
+  three new component orbits.  The dependent `tau=0` common-active sheet is
+  an exact component-eleven boundary; the mixed-chain transverse sheet lies
+  in component eight.  The common-kernel vertical family is a new
+  five-dimensional component nineteen, with generic kernel-endpoint
+  signature `(2,1,1,0)`:
+  [`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md),
+  [`P4_COMMON_ACTIVE_TAU_ZERO_COMPONENT_ELEVEN_INCLUSION.md`](P4_COMMON_ACTIVE_TAU_ZERO_COMPONENT_ELEVEN_INCLUSION.md),
+  [`P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md`](P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md),
+  [`P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md`](P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md).
+- component nineteen's complete generic marked `H31` fibre is empty.  Exact
+  projection leaves four marking lines on deletions two and three and none on
+  deletions zero and one.  Two one-marked minors cover every punctured line;
+  separate endpoint syzygies avoid dividing by the line parameter.  Nonzero
+  pure transverse entries complete the global-row contradiction.  Its generic
+  weighted-`H22` fibre is empty as well: exact shared compatibility leaves one
+  finite branch, and a fixed mode-three rank-four determinant excludes its
+  complete common genuine kernel.  Its special divisor `q=0` is now closed
+  over `p*phi!=0`, including the separately reconstructed rank-jump endpoints
+  `phi=+1` and `phi=-1`.  The direct finite `D23` ideal contains the essential
+  generator `h1^2*h2`; at the endpoints the shared kernel grows to dimension
+  three, but independent fixed rank-four minors still exclude the entire
+  genuine locus.  The divisor `q=phi` is independently closed on `p*phi!=0`
+  with a regular intrinsic basis: every function-field incidence projection
+  is unit, and the sole parameter-aware `D01` closure occurs at `phi=0`, where
+  pair `23` has rank exactly two.  On `p=0`, the ordinary tensor is
+  `T1111=4(q-phi)` and the exact all-pair-open locus is
+  `q*phi*(q-phi)!=0`.  Eight live exact replays and a polynomial case ledger
+  now exhaust the complete projective weighted fibre over that whole locus.
+  Direct specializations close `q=+/-1`, `phi=+/-1`, and `q*phi=+/-1`,
+  including the enlarged `Y=0` survivor sheet at the reciprocal sign
+  crossings; an independent coefficient syzygy closes the reciprocal
+  weight-at-infinity chart.  At the projectivized zero base `q=phi`, the
+  complete associated-graded first-normal `P1` has empty weighted incidence
+  in all 16 direction/weight/orientation charts.  A separate exact
+  parameter-aware reduction closes every characteristic-zero DVR/Puiseux arc
+  with nonzero generic restriction inside the displayed finite chart.  Its
+  four-open/two-weight atlas finds one extra sheet `q*phi=1,lambda=-1`; the
+  complete kernel has a fixed `D23` mode-three rank-four minor on its genuine
+  locus.  Marking, extension, inverse-diagonal, and weight poles are allowed
+  over the fraction field.  A separate no-import audit preserves an exact
+  `1/s` necessary-incidence escape, proving that the naive genuine-binary
+  properness argument fails, then kills the escape by its target-local minor.
+  Ambient/source/projective, omitted Grassmann-chart,
+  and multi-parameter approaches remain `UNKNOWN`; the lower-pair boundaries
+  `q=0` and `phi=0` remain separate.  A stronger
+  historical construction package is retained as `REFUTED` because its
+  advertised stacked minor fails exact replay.  Other special/projective
+  boundaries remain open:
+  [`P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md),
+  [`P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md),
+  [`P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_OBSTRUCTION_VERIFICATION.md),
+  [`P5_H22_COMPONENT19_Q0_PHI_ENDPOINTS_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_Q0_PHI_ENDPOINTS_OBSTRUCTION_VERIFICATION.md),
+  [`P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md),
+  [`P5_H22_COMPONENT19_P0_FINITE_BOUNDARY_GEOMETRY_RECONNAISSANCE.md`](P5_H22_COMPONENT19_P0_FINITE_BOUNDARY_GEOMETRY_RECONNAISSANCE.md),
+  [`P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md`](P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md),
+  [`P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md`](P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md),
+  [`P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md),
+  [`P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md`](P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md),
+  [`P5_H22_COMPONENT19_Q_EQ_PHI_FIRST_NORMAL_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_Q_EQ_PHI_FIRST_NORMAL_NO_IMPORT_VERIFICATION.md),
+  [`P5_H22_COMPONENT19_ZERO_BASE_VALUATIVE_FINITE_COVER_CANDIDATE.md`](P5_H22_COMPONENT19_ZERO_BASE_VALUATIVE_FINITE_COVER_CANDIDATE.md),
+  [`P5_H22_COMPONENT19_ZERO_BASE_VALUATIVE_REDUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_ZERO_BASE_VALUATIVE_REDUCTION_VERIFICATION.md),
+  and [`P5_H22_COMPONENT19_Z0_LAURENT_FIELD_NO_IMPORT_VERIFICATION.md`](P5_H22_COMPONENT19_Z0_LAURENT_FIELD_NO_IMPORT_VERIFICATION.md).
+- the `tau!=0` common-active binary sheet is a new five-dimensional component
+  twenty.  Its generic profile is `(4,4,4,3,3,3)`, its intrinsic rank-one
+  kernel signature is `(2,2,0,0)`, and its apparent sixth tangent direction
+  is excluded by an exact integral local-height certificate.  The singleton
+  sheet is an explicit projective boundary of the same component:
+  [`P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md`](P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md).
+- component twenty's complete generic marked `H31` fibre is empty.  Exact
+  open-incidence projection leaves no markings on deletions zero and three
+  and exactly two isolated markings on each of deletions one and two.  At all
+  four survivors the same mode-three minor has ratio
+  `4pq(p+q)(p-q+1)` to the genuine binary diagonal; a pure transverse entry
+  `+pq` or `-pq` completes the global-row contradiction.  Its generic
+  weighted-`H22` fibre is empty by an exhaustive shared-orientation split:
+  finite individual `D01` has exact necessary marking ideal `<h3,h0,F>`, the
+  shared system is unit on that entire locus, and the opposite finite plus
+  both infinity orientations are unit directly.  All special/projective
+  component boundaries remain open:
+  [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md),
+  [`P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md).
+- the generic marked `H31` fibre is also empty on component twenty's nine
+  principal affine special divisors.  Exact global projection gives the
+  deletion-three base factor
+  `p(p+1)q(q-1)(q-p)(q-p-2)(2pq-p+q)` and exposes the additional marking-axis
+  discriminants `q=1/2` and `p=-1/2`.  Bidirectional characteristic-zero
+  projection, rank-six kernel certificates, and uniform mode-three minors
+  close all 39 divisor-generic marking strata.  Base-divisor intersections,
+  the `p+q=0` normalization boundary, parameter infinity,
+  source-torus/projective limits, and weighted `H22` remain open:
+  [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_SPECIAL_DIVISOR_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_SPECIAL_DIVISOR_OBSTRUCTION.md).
+- one global saturated calculation strengthens that divisor-by-divisor
+  theorem to the complete finite normalized sheet
+  `(p+q)(p-q+1)!=0`, including all special intersections in the open.  Its
+  deletion zero projects to the unit ideal, while the other three marking
+  projections have `6,6,7` primary components.  All maximal mode-three
+  minors and the deleted pure transverse column give unit ideals on the
+  genuine-binary incidence.  The `p+q=0` and `p-q+1=0` walls,
+  parameter infinity, source-torus/projective limits, and weighted `H22` are
+  excluded from this normalized-affine theorem:
+  [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_NORMALIZED_AFFINE_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_NORMALIZED_AFFINE_OBSTRUCTION.md).
+- on the intrinsic-basis wall `p-q+1=0`, specialization of the generic basis
+  is invalid.  A replacement basis taken directly from `U0` has sole pure
+  coefficient `T_1111=-2p(p+1)`.  Exact characteristic-zero elimination over
+  `C(p)` gives the unit projected ideal for every source deletion, so no
+  genuine binary neighbour exists over the generic point.  A fresh no-import
+  weighted-`H22` audit independently makes all four individual and all four
+  complete shared finite/infinity orientation projections unit.  At the
+  exceptional values `p=0,-1`, the ordinary restrictions are zero, but the
+  coefficient-map base ideal is transverse and its complete exceptional
+  `P1` of Segre directions is closed for marked `H31` and shared weighted
+  `H22`: all `16+16` exact projections are unit with the direction retained
+  polynomially.  At `p=-1/2`, the straight fixed-source limit is the
+  zero-tensor `k=infinity` edge in component fifteen's closure; every actual
+  nonzero diagonal arc is already in the verified half-centre atlas.
+  Complete diagonal source-torus DVR/Puiseux atlases over `p=0,-1` are now
+  independently verified.  The nonzero cone is exactly
+  `x1=x2=0,x0<=-min(val(u),val(v))`; its sixteen residue/face charts lie in
+  components 18 and 16, with six lower-pair interiors also in component 15.
+  All charts have kernel rows `(K0,e,e,e)`, so direct Hall deficiency closes
+  every marked-`H31` deletion and both homogeneous weighted-`H22` directions.
+  Parameter infinity and mixed or non-diagonal source limits remain open:
+  [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md),
+  [`P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION_CANDIDATE.md`](P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION_CANDIDATE.md),
+  [`COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md`](COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md),
+  [`P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md`](P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md),
+  [`COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_CANDIDATE.md`](COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_CANDIDATE.md),
+  [`COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_VERIFICATION.md`](COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_VERIFICATION.md), and
+  [`P4_COMPONENT20_TRANSVERSE_BASE_DIAGONAL_FAN_PROOF_B.md`](P4_COMPONENT20_TRANSVERSE_BASE_DIAGONAL_FAN_PROOF_B.md).
+- a `VERIFIED` valuative classification of the `p+q=0` diagonal
+  source-torus wall proves the exact min-plus weight conditions and leaves two
+  explicit higher-rank charts, `B_full` with profile `(4,4,4,3,3,3)` and
+  `B_drop` with profile `(4,4,3,3,3,3)`.  The formulas, exceptional centres,
+  infinity strata, and failed shortcuts have exact replays.  An independent
+  Laurent-first-coefficient audit verifies exhaustion for all DVR/Puiseux
+  arcs under the diagonal source torus.  Placement in older component
+  intersections and non-diagonal source changes are not claimed.  This is a
+  `P_4` boundary theorem, not by itself an `H31` or `H22` closure:
+  [`P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md`](P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md).
+- on the two displayed `p+q=0` charts, exact characteristic-zero projection
+  leaves a doubled marking on `B_full` and two marking lines on `B_drop`.
+  Uniform mode-three fixed-minor identities, direct rank-five exceptional
+  kernels at `a=0,-1`, and four unit projections for the `a=-1/2` replacement
+  family prove marked `H31` emptiness on every displayed chart.  Direct exact
+  certificates additionally close the exceptional `a=0,-1`, `y<0`
+  component-fifteen fibres and both special component-fourteen infinity
+  endpoint faces.  Together with the embedded-`P_3` projective closure, fresh
+  independent audits verify the whole diagonal-DVR wall.  Non-diagonal or
+  arbitrary `GL_4` source changes remain open:
+  [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md).
+- the two special lower-pair `H31` certificates used by that aggregate wall
+  theorem are replayable separately:
+  [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md)
+  and
+  [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md`](P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md).
+- weighted `H22` on the same diagonal-DVR wall is now `VERIFIED`.  A fresh
+  aggregate audit proves the exact `3+1+2+3=9` stratum partition, replays the
+  six historical closures, and identifies the three formerly open rows with
+  exactly twelve actual normal-support-mask-6 flags.  Direct original-wall
+  calculations make both all-alpha weighted diagonals vanish on every one of
+  those flags, including both homogeneous weight endpoints.  Separate
+  certificates close both component-fourteen infinity endpoints.  The old
+  partial checkpoint remains available with its historical `UNKNOWN` label,
+  and the two refuted overstrong transports remain visible.  The theorem does
+  not close the unrelated full projective embedded-`P_3` problem or any
+  non-diagonal source change:
+  [`P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md`](P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md).
+- the final mixed-chain vertical fibre opens into a new six-dimensional
+  coincident-support rank-one star, component twenty-one.  Its generic profile
+  is `(3,4,4,3,3,4)`.  A rank-thirteen incidence germ has one excess tangent
+  direction, but the omitted equations have nonzero quadratic terms
+  `7h^2/60` and `-7h^2/20`; hence the local dimension is exactly six.  The
+  entire projective residual fibre is its homogeneous boundary.  This closes
+  the full `triangle-(1,1,1)` cell:
+  [`P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md`](P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md).
+- component twenty-one's complete generic marked `H31` fibre is empty.  Two
+  source deletions fail by Hall deficiency.  For the other two, exact
+  polynomial row-module identities over `C(p,q,kappa,ell)` put the all-kernel
+  diagonal in the fourteen-row mixed module for every affine marking.  Its
+  generic weighted-`H22` fibre is empty too: `D01` is Hall-deficient for every
+  homogeneous weight, finite `D23` all-alpha incidence has zero all-beta
+  diagonal, and the infinity all-alpha row is in the mixed module.  Four
+  divisor-generic special fibres are now closed for both `H31` and `H22`: the
+  finite endpoints `p=0` and `q=0`, the genuine mode-three projective divisor,
+  and the clean mode-zero vertical-plane open.  The last of these has now
+  been strengthened to its complete normalized projective compactification:
+  exact elimination gives ten finite minimal primes and three primes at
+  `ell=infinity`, and branchwise/direct mode-three certificates close every
+  intersection for both `H31` and `H22`.  On each divisor `q=+p` and
+  `q=-p`, exact saturated projection over `Q(p,kappa,ell)` gives one shared
+  binary branch for every finite and projective homogeneous weight when
+  `p*(ell^2-1)!=0`; a uniform mode-three rank-four minor kills it, including
+  the displayed branch at `kappa=0`.  Direct endpoint eliminations also close
+  all four `ell=+/-1` intersections for every homogeneous weight and every
+  `kappa`, including the `kappa=0` rank-two kernels and all
+  specialization-only marking branches.  At the collapsed raw `p=q=0`
+  zero-basis degeneration, the complete first projectivized normal
+  exceptional line is now closed too: `[P:Q]` maps to the vertical plane
+  `<Q A-P C,B>`, and a direct eight-ideal calculation closes the formerly
+  omitted `alpha=infinity` endpoint.  This includes all first-normal
+  DVR/Puiseux valuation directions at finite `kappa`.  The normalized
+  `kappa=infinity` first-normal atlas is now empty as well: the regular row
+  `A+t(B+h_2 C)` has exceptional row `B+h_2 C`, eight direct unit ideals
+  close finite `(p,q)` and both `ell`/weight charts, and simultaneous
+  vanishing of `p,q` transfers to the certified vertical sheet at
+  `kappa=0`.  Its mode-zero plane now has a complete normalized projective
+  closure too: the affine `(p,q)` chart compactifies to a `P^2`; its line at
+  infinity and the exceptional line over the unique zero-tensor centre both
+  equal the certified vertical plane `<Q A-P C,B>` at `kappa=0`.  Thus the
+  full normalized `U_0`-projective blow-up is empty, removing the earlier
+  `p/q`-pole boundary in this Grassmann compactification.  The complete
+  normalized `ell=infinity` face is empty as well: four direct exact unit
+  ideals close finite `(p,q,kappa)`, while the vertical and zero-point
+  boundaries transfer to the finite-`kappa` blow-up package and the whole
+  `kappa=infinity` edge transfers to the projective blow-up theorem.  Four
+  global polynomial unit ideals on the full finite `(p,q,kappa,ell)` sheet,
+  together with these boundary packages, now close the entire displayed
+  normalized parameter base `Bl_c(P^2) x P^1_kappa x P^1_ell`, including
+  every simultaneous parameter intersection.  Twelve further exact unit
+  ideals close the complete `h0=infinity,p!=0` boundary, the nonzero joint
+  `(1/h0,p)` first normal, and every nonzero monomial `(p,(1/h0)q)`
+  DVR/Puiseux normal, for both marked `H31` and weighted `H22`.  At each of
+  `h1,h2,h3=infinity` the boundary has zero `P4` restriction, but 24 direct
+  unit ideals close every nonzero first normal and every nonzero monomial
+  `(s_i p,s_i q)` DVR/Puiseux normal.  At all six pairwise marking-pole
+  corners, 24 more direct unit ideals close every weighted normal with
+  nonzero `P4` restriction; the controlling monomials are
+  `(s_jp,s_0s_jq)` for pairs containing zero and `(s_is_jp,s_is_jq)` for the
+  other pairs.  All four triple and the quadruple marking-pole corners are
+  closed on the same nonzero-`P4` weighted-normal boundary: their 20 marked
+  `H31` orientations are Hall-deficient and ten direct homogeneous weighted-
+  `H22` ideals are unit.  Extension poles over the finite nonzero component
+  sheet are now partly classified.  For marked `H31`, the extension map is
+  injective away from `kappa=0,ell=epsilon,q=epsilon*p`; on either sign curve
+  it has one explicit kernel line.  Every such line is now closed too: after
+  arbitrary finite marking transport, one necessary marked-`H31` obstruction
+  entry is identically one, so subordinate terms cannot cancel its pole.
+  Hence every fixed-order marked-`H31` extension-pole arc over the finite
+  nonzero sheet is empty.  For homogeneous weighted `H22` at weight infinity, ten exact
+  minors give full extension rank everywhere on `(p,q)!=(0,0)`, so every
+  extension-pole arc there is closed.  At finite weight on
+  `p*ell*(ell^2-1)!=0`, three exact maximal minors now classify the complete
+  extension rank-drop locus as `lambda=1` or
+  `(kappa=0,lambda=-1)`.  Both loci have rank seven and an explicit unique
+  kernel line.  Their complete first normals, including all component and
+  weight tangents and arbitrary subordinate extensions, have at most one of
+  the four required diagonals; hence neither contains genuine weighted
+  `H22`.  Finite marking tangents are included by triangular invariance.
+  The omitted finite divisors are now classified as well.  For `p!=0`, the
+  same rank-drop locus and first-normal obstruction hold at `ell=0,+/-1`;
+  at the unit endpoints `lambda=1` has a rank-six kernel plane, and every
+  projective direction in it is closed.  On `p=0,q!=0`, arbitrary finite
+  `ell` has exactly the same two rank-drop loci, with all kernel-line or
+  kernel-plane first normals empty.  Thus the whole displayed finite nonzero
+  component sheet is classified at extension-rank and complete-first-normal
+  level.  Possible higher-order arcs after a zero first normal, the remaining
+  iterated zero normals over the separately classified `p=q=0` base, parameter-
+  boundary/marking-pole intersections, and arbitrary
+  ambient/source/projective degenerations remain separate; in particular,
+  a `P5` leading term whose `P4` restriction vanishes is still unclassified:
+  [`P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
+  [`P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md),
+  [`P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md`](P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md),
+  [`P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md), and
+  [`P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md), together with
+  [`P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md) and
+  [`P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md`](P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md),
+  [`P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md), and
+  [`P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md), together with
+  [`P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md) and
+  [`P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md), together with
+  [`P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md) and
+  [`P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md), together with
+  [`P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md),
+  [`P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md),
+  [`P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md`](P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md),
+  [`P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md`](P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md), and
+  [`P5_COMPONENT21_FINITE_WEIGHT_EXTENSION_KERNEL_RATIONAL_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_FINITE_WEIGHT_EXTENSION_KERNEL_RATIONAL_NORMAL_OBSTRUCTION.md), strengthened on the generic finite chart by
+  [`P5_COMPONENT21_FINITE_H22_EXTENSION_RANK_DROP_GENERIC_NORMAL_CLOSURE.md`](P5_COMPONENT21_FINITE_H22_EXTENSION_RANK_DROP_GENERIC_NORMAL_CLOSURE.md), and completed on the finite boundary divisors by
+  [`P5_COMPONENT21_FINITE_H22_EXTENSION_ELL_ZERO_UNIT_ENDPOINT_NORMAL_CLOSURE.md`](P5_COMPONENT21_FINITE_H22_EXTENSION_ELL_ZERO_UNIT_ENDPOINT_NORMAL_CLOSURE.md) and
+  [`P5_COMPONENT21_FINITE_H22_EXTENSION_P_ZERO_NONZERO_Q_NORMAL_CLOSURE.md`](P5_COMPONENT21_FINITE_H22_EXTENSION_P_ZERO_NONZERO_Q_NORMAL_CLOSURE.md), while the raw zero-base extension-kernel first normals are classified by
+  [`P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_RAW_KERNEL_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_RAW_KERNEL_NORMAL_OBSTRUCTION.md).  On ordinary finite weights, the first
+  zero-normal kernel is exactly tangent to the universal kernel family and
+  every complete second normal is empty by
+  [`P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_ORDINARY_WEIGHT_SECOND_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_ORDINARY_WEIGHT_SECOND_NORMAL_OBSTRUCTION.md).
+  At `lambda=-1`, exact projective covers of the `kappa!=0` kernel `P1` and
+  the `kappa=0` kernel `P2`, including every crossing and the exceptional
+  line, now show that every complete second normal is empty too.  The exact
+  zero-second-normal product loci are retained without claiming that they
+  integrate at higher order; `lambda=+1` and further iteration remain open:
+  [`P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_LAMBDA_MINUS_ONE_SECOND_NORMAL_OBSTRUCTION.md`](P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_LAMBDA_MINUS_ONE_SECOND_NORMAL_OBSTRUCTION.md).
+- component eighteen's complete generic marked `H31` and weighted `H22`
+  fibres are empty.  In its intrinsic pure marking, three kernel rows equal
+  the common singleton `e`.  After any source-coordinate deletion or either
+  homogeneous weighted merge, those three extended rows occupy at most two
+  columns, so Hall deficiency makes the all-kernel binary diagonal vanish
+  identically before any mixed equation or ternary-rank test.  Thus all
+  the first eighteen certified components are generically closed for both
+  fifth-mode partition types.  The three later componentwise theorem pairs
+  now extend the same generic joint `H31/H22` closure through component
+  twenty-one; special/projective fibres remain separate:
+  [`P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md),
+  [`P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md).
+- the two directed-triangle components are now generically closed for marked
+  `H31`.  Over each component function field, the genuine-binary-neighbour
+  projection has only eleven marked sheets in total: six points and one line
+  on the support-star component, one point and three lines on the support-path
+  component.  Ten sheets reduce to binary extension pencils whose two-minor
+  gcd is a nonzero factor times `A*B`; the sole projective-plane fibre has
+  three residual minors `z0,z1,z2`, with its endpoint closed by one
+  `A*B^2` minor.  Hence every genuine neighbour makes a one-marked map have
+  rank four, excluding an `H31` lift on components sixteen and seventeen:
+  [`P5_H31_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md`](P5_H31_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md).
+- the same two components are now generically closed for weighted `H22` as
+  well.  Translating the two weighted contractions into open Fitting
+  projections makes the support-star marking loci disjoint already at the
+  binary level.  On the support-path component every common marking is
+  confined to one projective line.  A single symbolic marked minor excludes every
+  ordinary slope there; exact kernel-diagonal identities, two binary-minor
+  gcds, and two alternate minors close every exceptional slope without
+  division.  Hence both fifth-coordinate partition types, `H31` and `H22`,
+  have empty generic fibre over components sixteen and seventeen:
+  [`P5_H22_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md`](P5_H22_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md).
+- a gauge audit had withdrawn three overstrong follow-on claims.  Full row
+  `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
+  legal.  The historical withdrawn files remain conspicuously labeled, while
+  the corrected triangle, star, and mixed-triangle theorems above now replace
+  all three claims with marked proofs:
+  [`P4_BOREL_GAUGE_CORRECTION.md`](P4_BOREL_GAUGE_CORRECTION.md),
+  [`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md),
+  [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md),
+  [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md).
 - a mixed zero-product orientation produces a sixth
   symmetry-inequivalent component.  The normalized rank-two
   contraction condition is a `3 x 4` determinantal problem whose
@@ -168,8 +3393,8 @@ strictly advance the finite frontier:
   covered by three affine lines.  On all five survivor closures, the
   same mode-zero `0247` marked minor gives a saturated unit ideal.
   Generic weighted `H22` incidence is therefore empty on five of the
-  seven certified component orbits; their boundaries remain, and the
-  two earlier rank-two components are tracked below.
+  seven component orbits certified at that checkpoint; their boundaries
+  remained, and the two earlier rank-two components are tracked below.
 - the first rank-two component is now generically excluded from
   weighted `H22`.  Its `01` mixed matrix is everywhere injective by an
   eight-chart projective-kernel cover.  Its exact `23` projection has
@@ -184,8 +3409,9 @@ strictly advance the finite frontier:
   only the zero-vector base point, and its blow-up exceptional
   five-space is linearly disjoint from the extension plane.  Properness
   transports this empty projective fibre to the generic point.  Thus
-  all seven certified component orbits are generically closed, while
-  component exhaustiveness and special parameter/slope divisors remain:
+  all seven component orbits certified at that checkpoint are generically
+  closed, while component exhaustiveness and special parameter/slope divisors
+  remained at that checkpoint:
   [`P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md).
 - a disjoint-support mixed star supplies an eighth certified
   pure-`P_4` component orbit.  Normalize its three rank-one
@@ -196,6 +3422,21 @@ strictly advance the finite frontier:
   Segre-incidence Jacobian has rank fifteen.  Support disjointness
   separates it from the overlapping mixed component:
   [`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
+  Its full affine Borel stratum is now classified in reverse.  After the
+  exact-pair normalization, every forbidden coefficient is one entry of
+  `N*(j,kappa,eta)^T`, where `det(N)` is exactly the displayed irreducible
+  hypersurface.  Rank two recovers the published family.  Rank one occurs
+  only when `Bf+1=f+B*phi^2=A^2*f+B=0`; its entire exceptional `P^1` kernel
+  is filled by explicit formal arcs from rank two.  Hence no extra component
+  hides in the vanished-cross-product boundary of this affine chart:
+  [`P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md`](P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md).
+  Homogenizing the leaf row closes the complementary projective chart.  The
+  determinant base is an irreducible threefold.  Its complete rank-one locus
+  has dimension one and `P^1` kernel fibers, hence dimension two; but the
+  three-equation kernel incidence in a sixfold has no component below
+  dimension three.  There is therefore no vertical component, and every
+  projective boundary point is also in component eight:
+  [`P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md`](P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md).
   Its generic marked `H31` fibre is now empty.  Exact function-field
   projection leaves no genuine marking for source coordinates zero
   and one and one marking each for coordinates two and three; on both
@@ -203,22 +3444,65 @@ strictly advance the finite frontier:
   `+/-f*(b*f+1)*(1-a^2*f^2)/(a^2*f+b)*A*B^2`, so every genuine binary
   extension has rank four:
   [`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
-  Its generic weighted `H22` incidence is now empty as well.  A
-  `t`-free linear elimination of the four marked extensions reduces
-  each weighted pencil to an exact `10 x 4` system.  One `4 x 4`
-  minor factors exactly as a nowhere-vanishing unit times `t_1 t_2`,
-  and the sheet restrictions factor further into four explicit
-  strata; three unit-ideal chart certificates give `t_1=t_2=t_3=0`
-  for the other pencil.  On all five strata, two mode-zero one-marked
-  minors cannot vanish on a genuine binary survivor, so no ternary
-  lift exists:
+  Its generic weighted `H22` incidence is now empty as well.  Passing
+  first to the Fitting rank locus turns `D_23^r` into the marking line
+  `t_1=t_2=t_3=0` and `D_01^r` into an exact degree-five scheme over
+  the component field.  The relation `t_1*t_2=0`, two further factored
+  cover relations, and one- or two-minor ternary obstructions close all
+  five markings:
   [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
-  The modular marking loci that suggested this route are retained in
-  [`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md).
-  With this, all eight certified pure-`P_4` component orbits are
-  generically closed for both marked `H31` and weighted `H22`; their
-  special parameter/slope divisors, projective boundaries, and
-  component exhaustiveness remain open.
+  The equal- and opposite-weight slope divisors are now closed more
+  strongly at the binary level: at `r=1` the mixed kernel forces the
+  first diagonal to vanish, while at `r=-1` it forces the second:
+  [`P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md).
+  Factoring the component equation closes twelve further generic
+  parameter/coordinate branches with twenty-four exact Fitting ideals:
+  [`P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md).
+  The remaining visible coupled coefficient in the degree-five cover
+  is also closed; its `D_01` obstruction moves to mode one while its
+  `D_23` obstruction stays in mode zero:
+  [`P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md).
+- an embedded pure-`P_3` suspension supplies a ninth certified
+  pure-`P_4` component orbit.  Three local planes lie in one
+  source-coordinate hyperplane and form one of the exact pure-`P_3`
+  sign charts; the fourth plane freely supplies the missing
+  coordinate.  The six-parameter family has only
+  `T_0010=-2/B,T_0110=-2A/B`.  Its family tangent has rank six and a
+  `14 x 14` Segre-incidence minor is `114688/2187`, proving component
+  status.  Its generic pair profile `(4,4,4,2,2,2)` separates it from
+  the previous six-dimensional component and all seven fivefolds:
+  [`P4_EMBEDDED_P3_PURE_COMPONENT.md`](P4_EMBEDDED_P3_PURE_COMPONENT.md).
+  Its generic marked `H31` fibre is empty already at the binary level.
+  The embedded `P_3` turns source-coordinate-zero extension into a
+  six-column apolar insertion map.  Its rank-drop support is exactly
+  three signed projective lines plus three coordinate points; on a
+  generic projected mode-zero line, every possible kernel kills the
+  required all-alpha diagonal:
+  [`P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
+  The generic weighted `H22` fibre is empty at binary level too:
+  `D_23^r` has a structural zero diagonal, while `D_01^r` is the same
+  insertion arrangement on a slope-dependent projective line:
+  [`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
+  The nine exceptional `H31` insertion points are now closed on the
+  entire normalized affine chart.  Exact truncated-Segre relations
+  leave five binary survivor families; four fail small one-marked
+  covers, while the deepest rank-three point fails a constant stacked
+  determinant `8`:
+  [`P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md).
+  The weighted `H22` boundary is now closed whenever its projected
+  mode-zero image is still a line.  Four arrangement strata leave six
+  binary marked families; factored one-marked covers exclude them,
+  with constant stacked determinants `8` and `-8` at the two deepest
+  rank-three points:
+  [`P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md).
+  The rank-one projection collapse is now empty at binary compatibility
+  too.  The other required marked slice becomes an insertion pencil
+  with singular fibres only at `S=+/-1`; their kernels kill,
+  respectively, its pure diagonal and the first slice's alpha
+  diagonal:
+  [`P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md).
+  Thus its full normalized weighted `H22` chart is closed; the omitted
+  normalization/projective boundary remains open.
 - all five minimal primes in the mixed `3 x 4` determinantal chart are
   now identified.  Two are the sixth component, one is a subfamily of
   the six-dimensional component, and the remaining two are explicit
@@ -485,6 +3769,91 @@ strictly advance the finite frontier:
   zero-coupling equations have a simultaneous projective solution over
   `C`; the intersection number is 24.  The solution is not yet
   guaranteed to avoid the 15 coordinate hyperplanes.
+- at every transverse five-root solution, the four incident internal
+  covectors at vertex `i` span exactly `x_i^perp`.  Hence the zero coordinates
+  of `x_i` are precisely its internal colour-blocker flags.  A finite reduced
+  five-root intersection consists of 24 such transverse points; the
+  positive-dimensional/nonreduced branch and boundary exclusion remain open:
+  [`FIVE_ROOT_BOUNDARY_TRANSVERSAL_BLOCKER_CLASSIFICATION.md`](FIVE_ROOT_BOUNDARY_TRANSVERSAL_BLOCKER_CLASSIFICATION.md).
+- for each of the fifteen five-root coordinate boundaries, the ten induced
+  bilinear forms have a single irreducible boundary-resultant hypersurface.
+  Its degree is `12` in each incident edge block and `10` in each nonincident
+  block, total `108`.  Away from their union, the degree-24 five-root
+  intersection lies in the coordinate torus.  Hence every induced `K_5` is
+  boundary-resultant-special, tight-extracts `P_5 -> Delta_3`, or has blocker
+  surplus at least six:
+  [`FIVE_ROOT_TORUS_RESULTANT_DICHOTOMY.md`](FIVE_ROOT_TORUS_RESULTANT_DICHOTOMY.md).
+- none of those resultant hypersurfaces is a component of the true no-torus
+  locus.  A fixed simple boundary root can be completed to a reduced
+  degree-24 fibre with 23 torus roots, and a 24-versus-15 pigeonhole argument
+  puts every no-torus finite-etale fibre in the exceptional part of some
+  boundary incidence.  Consequently the projective no-torus closure has
+  codimension at least two; independent block projectivization gives the
+  affine version, including codimension-nine zero-block strata:
+  [`FIVE_ROOT_NO_TORUS_CODIMENSION_TWO_THEOREM.md`](FIVE_ROOT_NO_TORUS_CODIMENSION_TWO_THEOREM.md).
+- for four supported roots on ten vertices, a blocker union of five leaves a
+  unique simultaneous-kernel nonblocker and extracts `P_5 -> Delta_3`; six
+  blockers are the exact persistent-surplus alternative:
+  [`ONE_NONBLOCKER_SURPLUS_PERMANENT_EXTRACTION.md`](ONE_NONBLOCKER_SURPLUS_PERMANENT_EXTRACTION.md).
+- for five supported roots at arbitrary ambient order, a tight five-vertex
+  total blocker union makes all three colour-blocker sets coincide.  The
+  matching sum factors into an order-five permanent pullback times a residual
+  hafnian, and the target forces that residual scalar and all three diagonal
+  coefficients to be nonzero.  Thus this tight case also extracts
+  `P_5 -> Delta_3`:
+  [`FIVE_ROOT_TIGHT_BLOCKER_P5_EXTRACTION.md`](FIVE_ROOT_TIGHT_BLOCKER_P5_EXTRACTION.md).
+- the first blocker surplus is now exact at arbitrary ambient order.  For
+  total blocker union `r+1`, every odd residual matching is one effective
+  linear port row, so the surviving tensor is a local image of `P_(r+1)`.
+  For five roots this makes six blockers exactly `P_6 -> Delta_3`, not a
+  hidden `P_5` case:
+  [`ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION.md`](ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION.md).
+- the next blocker surplus has an exact arbitrary-order expansion as well.
+  With `r` roots and `r+2` blockers it is a two-port tensor: each coefficient
+  is a sum over the two unused blocker vertices of a permanent cofactor times
+  a residual matching functional.  At five roots and seven blockers the
+  canonical minimal profile `012+2(01+02+12)` contains three overlapping
+  pure-`P_5` systems, but does not reduce to a single `P_6` permanent.  A
+  two-row factorisation hypothesis would yield `P_7`; that hypothesis is not
+  proved:
+  [`TWO_PORT_SEVEN_BLOCKER_REDUCTION.md`](TWO_PORT_SEVEN_BLOCKER_REDUCTION.md).
+- the resulting `P_6` problem has a precise simultaneous-kernel formulation.
+  Five fixed maps must leave a three-dimensional diagonal image on the
+  kernel of their `240 x 6` off-diagonal contraction matrix.  The extracted
+  blocker maps have only six common-port deletion profiles; their coordinate
+  contractions expose at most `Delta_2`.  Six-cycle parity excludes every
+  coordinate-column restriction, and off-diagonal rank excludes every
+  zero-row lift of the known support-four `P_5` family:
+  [`P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md`](P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md).
+- in the `1+1+1` common-port profile, the three overlapping pure-`P_5`
+  deletions are exactly a marked `R_2 x R_3 -> R_5` Frobenius incidence.
+  The 27 cubic products lie in a four-space in the original rank-six example,
+  all 24 mixed products can lie on one line, and the complete linear
+  relaxation is consistent.  The remaining obstruction is nonlinear shared
+  factorisation, not another dimension count:
+  [`P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md`](P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md).
+- that nonlinear wall now has an exact rank-five checkpoint.  The nine
+  forbidden quadrics span only a five-space while the three marked classes
+  remain independent; the mixed allowance is a two-plane with two explicit
+  decomposable generators.  A `5 x 5` bilinear catalecticant must have rank at
+  most two on the two unknown full-mode planes.  Twenty-two split minors give
+  sixteen bilinear gates and 53 minimal gate covers, with a unique four-gate
+  cover.  That unique branch forces the two alternating coordinate
+  three-planes, but each has an explicit catalecticant minor equal to `-4` or
+  `4`, so it is impossible.  Every other cover contains gates whose span has
+  an invertible pairing, which cannot vanish between two three-planes in a
+  five-space.  Thus all 53 covers are impossible for this displayed model.
+  Other rank-five configurations, and hence the general common-port profile,
+  remain open:
+  [`P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md`](P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md),
+  [`P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md`](P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md),
+  [`P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md`](P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md).
+- independently, a Koszul and Chow-ring argument proves that every smooth
+  expected-dimensional four-root complete intersection meets the torus.
+  Combining this with tight four-blocker factorisation and the exact subrank
+  two of `P_4` forces all 70 four-root schemes in a hypothetical eight-vertex
+  witness to be singular or excess-dimensional:
+  [`FOUR_ROOT_SMOOTH_TORUS_OBSTRUCTION.md`](FOUR_ROOT_SMOOTH_TORUS_OBSTRUCTION.md).
 - every contraction of the order-five permanent tensor by a vector of
   coordinate support at most three has subrank at most two over `C`;
   the support-three case has exact subrank two.
@@ -743,6 +4112,13 @@ are:
 - [`P5_H31_DIAGONAL_QUADRIC_NORMALIZATION_BOUNDARY_OBSTRUCTION.md`](P5_H31_DIAGONAL_QUADRIC_NORMALIZATION_BOUNDARY_OBSTRUCTION.md)
 - [`P5_H31_DIAGONAL_QUADRIC_OUTER_BOUNDARY_OBSTRUCTION.md`](P5_H31_DIAGONAL_QUADRIC_OUTER_BOUNDARY_OBSTRUCTION.md)
 - [`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md)
+- [`P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md)
+- [`P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md)
 
 Of 1,680 covered local signatures with at least four coordinate rows,
 1,170 are excluded immediately by local signature type.  The remaining
@@ -783,167 +4159,91 @@ genus-two trisections on the deepest `q=0,3` marking intersections have
   calculation on a common smooth diagonal quadric proves that no
   component-sized nonzero-pure family lives away from the block-line
   jump locus; the three ruling patterns reduce to one empty and two
-  one-dimensional normalized loci.  Exhaustiveness of the
-  eight-component list still requires classifying the remaining
-  star/triangle block-line degeneracies and lower-rank boundaries.
-  The previously unclassified in-out path orientation is now
-  classified on its dense overlap-one chart: the open-chart branches
-  are two chart translates of the sixth component (identically
-  vanishing embedding identities) and one five-dimensional slice of
-  the seventh (rank-fourteen incidence Jacobian plus exact
-  containment).  The rank-drop deep stratum carries the first
-  component in one branch — and its other branch, crossed with the
-  full diagonal source torus, is a **certified ninth
-  five-dimensional pure-compression component**: family tangent rank
-  five equals the smooth incidence dimension five at an exact
-  rational point, and all eight previously certified components are
-  excluded by torus-invariant rank monotonicity, dimension, or an
-  exact chart-confinement argument.  Its generic point has an
-  all-rank-one relation triangle, the configuration slot the
-  directed classifications had left open.  The ninth component now
-  has a standalone theorem with a free rational two-parameter normal
-  form whose only nonzero coefficient is `T_1111=-2`, a directed
-  three-cycle of identical zero products with indegrees `(1,1,1,0)`
-  and pairwise distinct supports, the exact `(5,15)`
-  tangent/incidence certificate, a two-prime independent audit, and
-  an exploratory (not yet exact) `H31` modular census with
-  line-shaped marking loci:
-  [`P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md`](P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md).
-  Closure equations then identify the disjoint chart's singular deep
-  walls: a Pluecker obstruction shows they avoid the eighth's
-  closure, a calibrated semicontinuity sieve excludes all nine
-  certified components, and the coincident-support configuration
-  supplies an identically pure five-parameter family with family
-  tangent rank six equal to its smooth incidence dimension — a
-  **tenth, six-dimensional component orbit** of maximal-rank-sum
-  profile `(3,3,4,3,4,4)`, containing one wall exactly and the
-  other as a limit.  The equal-support case and the
-  rank-two-dominated strata are analyzed as well: the
-  rank-two-dominated star stratum is generically empty, its
-  triangle reduces to a proper chord condition with no component,
-  and the equal-support chart exposes an always-pure six-parameter
-  family whose profile multiset matches the tenth component's.
-  The expected alignment is **refuted**: an exact characteristic-zero
-  six-hyperplane slice standard basis, against the family's rank-six
-  tangent, pins the pure locus's local dimension at a generic sample
-  of that family to exactly six — its
-  points are singular incidence points (tangent seven with a
-  second-order obstructed normal), so this is the first component
-  certified without a smooth incidence point — and the closed,
-  symmetry-stable invariant "some mode's plane is a coordinate
-  2-plane" holds identically on the family (`U_3` is a coordinate
-  plane) yet fails at the tenth's certificate point.  The
-  equal-support sixfold is therefore an **eleventh component
-  orbit**, now with a standalone theorem, consolidated exact
-  verifier, and two-prime independent audit:
-  [`P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md`](P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md),
-  [`research_snapshots/2026-08-04-p4-equal-support-rank-two-strata/`](research_snapshots/2026-08-04-p4-equal-support-rank-two-strata/README.md).
-  A full sweep of the remaining exhaustiveness strata then closes
-  every deep stratum of the equal-support chart into the eleventh
-  or the zero restriction and finds, in the coincident-support
-  chart's remaining case branches, a **twelfth** and a
-  **thirteenth component orbit** — both fivefolds of generic
-  pair-rank sum **19**, strictly below the range visible to every
-  earlier profile-based census, both certified at singular
-  incidence points by the same characteristic-zero slice
-  standard-basis pattern and separated by the rank-sum bound on
-  their closures, local dimension, and coordinate-plane incidence
-  invariants:
-  [`research_snapshots/2026-08-04-p4-exhaustiveness-sweep-census-thirteen/`](research_snapshots/2026-08-04-p4-exhaustiveness-sweep-census-thirteen/README.md).
-  The twelfth and thirteenth now carry standalone theorems, exact
-  verifiers, and independent audits:
-  [`P4_SPLIT_PAIR_PURE_COMPONENT.md`](P4_SPLIT_PAIR_PURE_COMPONENT.md),
-  [`P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md`](P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md).
-  A follow-up sweep then closes two of that snapshot's honest
-  tails — the `Zc` wall is the seventh component's `b=e` wall (a
-  char-0 six-slice pins its local dimension at six), and the `e=1`
-  case-alpha leaf lies in the eleventh, its earlier survivor strata
-  being chart artifacts of an empty stratum — while the case-`Y`
-  survivor walls of the coincident-support chart yield **three
-  further component orbits**: the fourteenth and fifteenth by the
-  classical smooth-point argument (incidence rank fifteen, the
-  first such since the seventh) and the sixteenth by a slice
-  certificate on a conic-bundle family whose constrained tangent
-  needed a correction to the discovery script:
-  [`research_snapshots/2026-08-04-p4-exhaustiveness-tails-census-sixteen/`](research_snapshots/2026-08-04-p4-exhaustiveness-tails-census-sixteen/README.md).
-  The certified component lower bound is **sixteen**;
-  exhaustiveness is still open (each snapshot lists its honest
-  tails).  The tenth (coincident-support) component's `H31` and
-  weighted `H22` obstructions are now both closed at **binary**
-  level over its generic point — two frames die by polynomial
-  identities valid at every chart point, the others by unit marking
-  projections and universal reconstruction kernels, with the
-  interior codim-1 survivor divisors `{c=0}` and `{b+e=0}` closed
-  at ternary level by nine unit Fitting certificates and a
-  slope scoreboard covering `r in {0, 1, -1, infinity}` — the
-  concentrated two-word support makes it the cleanest component
-  closure so far, with independent modular audits:
-  [`P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md),
-  [`P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md).
-  The ninth (all-rank-one triangle) closes the same way but from
-  the opposite extreme — a SINGLE-word tensor, so a reconstruction
-  kernel exists in all four `H31` frames for every marking; its
-  line-shaped marking loci close with polynomial line parameters,
-  and both weighted pencils close at ternary level by three unit
-  Fitting minors, with independent modular audits:
-  [`P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md),
-  [`P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
-  The eleventh (equal-support sixfold) is now closed for both
-  frames as well, and goes past the generic statement: its
-  interior survivor locus is computed **exactly** as an elimination
-  ideal — five explicit strata — and every sheet of all five is
-  closed by a single-minor Fitting certificate, while the weighted
-  `H22` projections eliminate the slope as a ring variable, so no
-  slope divisor is left open at the covered points:
-  [`P5_H31_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md),
-  [`P5_H22_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md).
-  The first ELEVEN certified component orbits are now generically
-  closed for both frames; the twelfth through sixteenth
-  components' exact `H31`/`H22` obstructions are the frontier
-  before the census can shrink:
-  [`P4_INOUT_PATH_STRATUM_WORKING_NOTE.md`](P4_INOUT_PATH_STRATUM_WORKING_NOTE.md).
-  What it would take to finish `P_5 -> Delta_3` is now itself
-  written down: an obligation ledger states the master theorem,
-  tabulates every discharged and outstanding obligation against
-  the verified documents, and assesses the remainder honestly —
-  the programme is structurally on track but quantitatively early,
-  with the bottom two thirds of each component's obligation tree
-  (divisor recursion, boundaries) existing for only two of
-  twenty-six component-frame pairs, and the cover hypothesis not
-  yet a theorem.  A companion meta-theorem supplies the rigorous
-  generic-to-pointwise transfer that converts these generic
-  closures into the pointwise form the master theorem consumes:
-  [`P5_DELTA3_OBLIGATION_LEDGER.md`](P5_DELTA3_OBLIGATION_LEDGER.md),
-  [`P5_POINTWISE_SPECIALIZATION_META_THEOREM.md`](P5_POINTWISE_SPECIALIZATION_META_THEOREM.md).
-  The `H31`/`H22` frontier census is unchanged and
-  `P_5 -> Delta_3` remains unresolved.
-  On all eight certified pure-`P_4` component orbits, the generic
-  weighted `H22` incidence is empty.  Six proofs combine unit
+  one-dimensional normalized loci.  The embedded-`P_3` suspension has
+  since proved that the eight-component list was incomplete; the
+  resulting nine-component list was still not exhaustive: the two-rank-two-
+  spoke mixed star above has since supplied a tenth component.
+  On the eight pure-`P_4` component orbits known before that
+  suspension, the generic weighted `H22` incidence is empty.  Six
+  earlier proofs combine unit
   binary projections, projective-kernel covers, and one- or two-minor
   ternary Fitting obstructions.  The diagonal-quadric proof instead
-  uses an empty projective Segre-join fibre and properness.  The
-  eighth, disjoint mixed-star proof eliminates the four marked
-  extensions by a `t`-free linear solve, factors the `01` marking
-  determinants exactly into `t_1 t_2` and two further stratum
-  factors, certifies `t_1=t_2=t_3=0` for the `23` pencil by three
-  unit-ideal charts, and closes all five strata with two-minor
-  Fitting ideals.  All eight orbits are generically closed for both
-  `H31` and weighted `H22`.  Special component/slope boundaries and
-  component exhaustiveness remain open.
-  A boundary-divisor atlas now systematizes every excluded divisor
-  across the eight `H31`/`H22` theorems and closes the eighth
-  component's slope divisors `r in {0, 1, -1, infinity}` for both
-  weighted pencils: at `r = +-1` the weighted subconfiguration
-  becomes a pure `P_3`-type compression whose reconstruction kernel
-  kills every marking at binary level via exact two-row unit
-  identities, and the `r = 0/infinity` pencil boundaries are exactly
-  the four `H31` coordinate frames, so the verified `H31` theorem
-  transports.  The one open slope locus is the coupled divisor
-  `af(r+1)-(r-1)=0`, where the generic mode-zero certificate
-  provably fails and a mode-three replacement is designed with
-  modular evidence but its Groebner run is timeout-null:
-  [`P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`](P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md),
-  [`research_snapshots/2026-08-04-p5-h22-slope-divisor-closures/`](research_snapshots/2026-08-04-p5-h22-slope-divisor-closures/README.md).
+  uses an empty projective Segre-join fibre and properness.  On the
+  disjoint mixed-star component, exact Fitting minors recover a
+  `D_23` line and a degree-five `D_01` marking scheme, then exclude
+  every genuine binary direction.  Thus those eight orbits are
+  generically closed for both `H31` and weighted `H22`.  The ninth
+  orbit is now generically closed for `H31` as well, by a three-line
+  apolar insertion arrangement.  Restoring the slope closes its
+  generic weighted `H22` fibre by the same arrangement plus one
+  structural zero diagonal.  Thus all nine orbits known at that checkpoint
+  are generically closed for both marked types.  The new tenth component's
+  generic `H31` fibre is now empty as well.  Over its component function field,
+  the all-alpha diagonal row belongs to the polynomial row module of the
+  fourteen mixed extension rows for every deleted coordinate and every
+  marking, while an explicit syzygy direction has nonzero all-beta diagonal.
+  Hence every mixed-zero extension kills one required binary diagonal before
+  any ternary test.  On its weighted `H22` side, the earlier Cayley calculation
+  gives two factored rank-eight minors on a dense total-space open and complete
+  modules at three rational component points.  The later fixed-vertex
+  Segre-join translation removes all four marking variables: the natural six
+  quadrics and four cubics give the unit ideal over `C(u,v,rho)` in the
+  weighted `23` direction.  Thus its complete generic weighted fibre is
+  empty.  The later equal-support
+  common-factor triangle raises the component count to eleven.  Its generic
+  `H31` fibre is now empty by an all-marking polynomial row-module identity,
+  so all eleven certified components are generically closed for `H31`.  Its
+  weighted `H22` fibre is also empty: a two-channel permanent cancellation
+  forces one binary diagonal to vanish for every marking and slope.  Thus all
+  eleven components known at that checkpoint are generically closed for both
+  `H31` and weighted `H22`.  The transverse binary-polarity theorem has since
+  supplied a twelfth, five-dimensional component by a quadratic transverse
+  obstruction.  Its generic `H31` fibre is now empty by an all-marking
+  polynomial row-module inclusion, so all twelve known components are
+  generically closed for `H31`.  Its weighted `H22` fibre is also empty by
+  the residual polarity identity `(-t2)*(k*t3)+(k*t3)*t2=0`.  All twelve
+  are therefore generically closed for both marked types.  At that checkpoint
+  the live finite frontier was component exhaustiveness and the special
+  parameter/projective boundaries.  Component exhaustiveness is now closed;
+  the special fibres remain.  The
+  ninth orbit's entire
+  normalized `H31` chart is closed as well, and its weighted boundary
+  is closed on every rank-two projected-line stratum.  The rank-one
+  projected-image collapse is now closed by the complementary marked
+  contraction too, so its entire normalized weighted chart is empty.
+  On the `H31` side, the omitted support-two normalization divisor
+  `A=0`, `B!=0` is now empty as well.  Its singular insertion pencil
+  has one exceptional line; the only matrix-pencil resonance is
+  closed by a stacked determinant and a fixed third-contraction
+  coefficient `4`.  The complementary `r=0`, `A B!=0` divisor is now
+  closed too: its insertion determinant is three signed planes times
+  one tangent--Segre factor, and exact one-marked covers close every
+  Fitting stratum.  Thus the ninth orbit's whole affine `B!=0` chart
+  is empty for `H31`.  Its projective compactification is now closed
+  too: homogeneous normal support `[C:A:B]` either has support one,
+  giving the zero restriction, or enters a closed `C'B'!=0` affine
+  chart by source symmetry.  Hence the ninth component's complete
+  marked `H31` fibre is empty.
+  Other component and slope boundaries stay open,
+  although the eighth component's full equal- and opposite-weight
+  slope fibres are now excluded already at the binary level, twelve
+  generic parameter/coordinate boundary branches are closed, and the
+  principal coupled slope-parameter divisor is closed by a cross-mode
+  Fitting obstruction.  An intrinsic content factorization of the
+  seven selected `D_23` maximal minors now closes four further rational
+  boundary sheets `af=+/-1,a phi=+/-1`; on those sheets the generic
+  `D_23` binary incidence is itself empty.  The corresponding `D_01`
+  minor/pivot ledger also exposes the compactified endpoint `r=0`.
+  There `D_01` fails at binary level, and the rank-six `D_23`
+  degeneration fails an unsplit two-minor Fitting obstruction.
+  Normalizing the further divisor `a^2 f^2+2bf+1=0` exposes a new
+  irreducible quadratic component branch, and full unsplit two-minor
+  ideals exclude both weighted directions there as well.  Three
+  further rational slope graphs are excluded by six unsplit identities;
+  one genuine mode-zero degeneration is repaired by the fixed mode-one
+  `0457` minor.  An exact source-torus quotient
+  `(a,b,f,phi)~(af,bf,1,phi/f)` reduces the dense component base to a
+  two-dimensional surface without changing either weighted slope.
 Thus this does not remove the 240 signatures from the fail-closed
 census and `P_5 -> Delta_3` remains unresolved.
 
@@ -1325,6 +4625,10 @@ the essential remaining case.
 - [`EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md`](EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md)
 - [`FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md`](FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md)
 - [`FIVE_ROOT_ZERO_COUPLING_INTERSECTION_LEMMA.md`](FIVE_ROOT_ZERO_COUPLING_INTERSECTION_LEMMA.md)
+- [`FIVE_ROOT_BOUNDARY_TRANSVERSAL_BLOCKER_CLASSIFICATION.md`](FIVE_ROOT_BOUNDARY_TRANSVERSAL_BLOCKER_CLASSIFICATION.md)
+- [`FIVE_ROOT_TORUS_RESULTANT_DICHOTOMY.md`](FIVE_ROOT_TORUS_RESULTANT_DICHOTOMY.md)
+- [`ONE_NONBLOCKER_SURPLUS_PERMANENT_EXTRACTION.md`](ONE_NONBLOCKER_SURPLUS_PERMANENT_EXTRACTION.md)
+- [`FIVE_ROOT_TIGHT_BLOCKER_P5_EXTRACTION.md`](FIVE_ROOT_TIGHT_BLOCKER_P5_EXTRACTION.md)
 - [`SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md`](SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md)
 - [`SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md`](SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md)
 - [`FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md`](FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md)
@@ -1477,6 +4781,34 @@ python audit_exact_three_blocker_permanent_rank.py
 python verify_fourth_order_permanent_subrank.py
 python audit_fourth_order_permanent_subrank.py
 python verify_five_root_zero_coupling_intersection.py
+uv run --with sympy python verify_five_root_boundary_transversal_blocker_classification.py
+python audit_five_root_boundary_transversal_blocker_classification.py
+python verify_one_nonblocker_surplus_permanent_extraction.py
+python audit_one_nonblocker_surplus_permanent_extraction.py
+python verify_odd_residual_port_permanent_extraction.py
+python audit_odd_residual_port_permanent_extraction.py
+uv run --with sympy python verify_five_root_tight_blocker_p5_extraction.py
+python audit_five_root_tight_blocker_p5_extraction.py
+uv run --with sympy python verify_p4_common_singleton_component.py
+python audit_p4_common_singleton_component.py
+uv run --with sympy python verify_p5_h31_common_singleton_component_generic_obstruction.py
+python audit_p5_h31_common_singleton_component_generic_obstruction.py
+uv run --with sympy python verify_p5_h22_common_singleton_component_generic_obstruction.py
+python audit_p5_h22_common_singleton_component_generic_obstruction.py
+python verify_five_root_torus_resultant_dichotomy.py
+python audit_five_root_torus_resultant_dichotomy.py
+python verify_five_root_no_torus_codimension_two.py
+python audit_five_root_no_torus_codimension_two.py
+python verify_four_root_smooth_torus_obstruction.py
+python audit_four_root_smooth_torus_obstruction.py
+uv run --with sympy python verify_p4_triple_kernel_rank_one_triangle_classification.py
+python audit_p4_triple_kernel_rank_one_triangle_classification.py
+uv run --with sympy python verify_p4_two_kernel_rank_one_triangle_classification.py
+python audit_p4_two_kernel_rank_one_triangle_classification.py
+python verify_p6_simultaneous_kernel_and_natural_lift.py
+python audit_p6_simultaneous_kernel_and_natural_lift.py
+python verify_p6_common_port_111_frobenius_reduction.py
+python audit_p6_common_port_111_frobenius_reduction.py
 python verify_support_three_p5_contraction_subrank.py
 python audit_support_three_p5_contraction_subrank.py
 python verify_support_four_p5_contraction_restriction.py

@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "role": "construction",
+  "date_utc": "2026-08-01T13:14:31Z",
+  "git_commit": "f089d5bc9f9a9f0c3550d6e0f9ca2686a8fb55f4",
+  "claim_label": "VERIFIED",
+  "discovery_claim_label": "CANDIDATE",
+  "scope": "generic weighted H22 fibre of component twenty, the common-active binary triangle, over Q(p,q); the p+q=0 wall and every other special parameter divisor are excluded",
+  "inputs": {
+    "P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md": "dcaae5365f5e2072e798c2ee52dea47c0d5c48f073ed7553ae5f758e9830f0b2",
+    "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md": "73596e624c6a6e093b861b5c366582cd4b61bc39197d01690f295c9e7194722c",
+    "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md": "52168b35b43c40c483919c8fa1dd37e7c147cae5f331320d8656bf6a1ed309a9"
+  },
+  "method": "exact characteristic-zero permanent reconstruction and staged projective elimination for one shared marking, homogeneous weight, and extension vector",
+  "normal_form": {
+    "alpha": [
+      "-p*(p+1)*A+q*(q-1)*B+(p-q+1)*C",
+      "e",
+      "e",
+      "e+A+B"
+    ],
+    "beta": [
+      "-(p-q+1)*e-(p+q)*A+(p+q)*B",
+      "(p+1)*A+(q-1)*B+C",
+      "p*A+q*B+C",
+      "e"
+    ],
+    "pure_support": {
+      "1111": "2*(p+q)*(p-q+1)"
+    },
+    "function_field": "Q(p,q)"
+  },
+  "projective_weight_cover": {
+    "finite_chart": "[lambda:1]",
+    "infinity": "[1:0]",
+    "D01_finite_binary_marking_projection": [
+      "h3",
+      "h0",
+      "F"
+    ],
+    "F": "lambda*h1*h2*q*(q-1)+lambda*h1*p*q*(p+1)+lambda*h2*p*(p+1)*(q-1)+h1*p*q*(p+q)+h2*(p+q)*(p+1)*(q-1)+lambda*p*q*(p+1)*(q-1)",
+    "finite_shared_D01_binary_after_restriction": [
+      "1"
+    ],
+    "finite_shared_D23_binary": [
+      "1"
+    ],
+    "infinity_shared_D01_binary": [
+      "1"
+    ],
+    "infinity_shared_D23_binary": [
+      "1"
+    ]
+  },
+  "branch_logic": {
+    "common_requirements": "both mixed systems vanish on the same extension and both all-beta diagonals are nonzero",
+    "orientation_cover": "at least one all-alpha diagonal is nonzero, so normalize either A01=1 or A23=1",
+    "conclusion": "all four finite/infinity normalized orientation branches are empty"
+  },
+  "failed_attempts": [
+    {
+      "status": "TIMEOUT",
+      "scope": "unrestricted individual finite D23 binary projection, not needed by the staged shared proof",
+      "timeout_seconds": 120,
+      "result_used_as_evidence": false,
+      "process_cleanup": "no task-related Singular or exploration process remained"
+    },
+    {
+      "status": "ABANDONED",
+      "scope": "random fixed-minor reconnaissance after h0=h3=0",
+      "reason": "the exact staged shared projections returned the unit ideal directly; no broad minor family was needed",
+      "result_used_as_evidence": false
+    }
+  ],
+  "conclusion": "generic weighted H22 fibre of component twenty is empty",
+  "conclusion_label": "VERIFIED",
+  "limitations": "verified after a fresh no-import replay; generic function-field calculation only; the separately verified p+q=0 diagonal-DVR wall is not recomputed or used to fill the generic proof; no claim about other special/projective component fibres, pure-P4 component exhaustiveness, arbitrary-order local-to-global reduction, a prize graph, or the global Krenn-Gu conjecture",
+  "finite_field_computation_used": false,
+  "broad_brute_force_used": false,
+  "independent_verifier_complete": true,
+  "global_krenn_gu_resolved": false
+}

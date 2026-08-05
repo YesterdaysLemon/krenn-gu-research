@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">Directed zero-divisor triangle components</title>
+  <desc id="desc">Two panels compare the same directed triangle on modes U1, U2, U3. Its edge support labels form a star in the first panel and a path in the second.</desc>
+  <defs>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2878b5"/>
+    </marker>
+    <style>
+      .panel { fill:#fbfcfe; stroke:#c9d3df; stroke-width:2; rx:18; }
+      .heading { font:700 26px system-ui, sans-serif; fill:#182433; }
+      .sub { font:16px system-ui, sans-serif; fill:#536273; }
+      .mode { fill:#ffffff; stroke:#24364b; stroke-width:3; }
+      .modeText { font:700 20px system-ui, sans-serif; fill:#182433; text-anchor:middle; dominant-baseline:middle; }
+      .arrow { fill:none; stroke:#2878b5; stroke-width:4; marker-end:url(#arrowBlue); }
+      .labelBox { fill:#eef6fc; stroke:#8cb9da; stroke-width:1.5; rx:9; }
+      .edgeLabel { font:700 16px system-ui, sans-serif; fill:#155a8a; text-anchor:middle; dominant-baseline:middle; }
+      .sourceEdge { stroke:#d05a47; stroke-width:5; stroke-linecap:round; }
+      .sourceNode { fill:#fff7f3; stroke:#b84534; stroke-width:3; }
+      .sourceText { font:700 18px system-ui, sans-serif; fill:#7e2e23; text-anchor:middle; dominant-baseline:middle; }
+      .caption { font:700 18px system-ui, sans-serif; fill:#7e2e23; text-anchor:middle; }
+      .degree { font:16px ui-monospace, SFMono-Regular, Consolas, monospace; fill:#536273; text-anchor:middle; }
+    </style>
+  </defs>
+
+  <rect x="25" y="25" width="555" height="600" class="panel"/>
+  <rect x="620" y="25" width="555" height="600" class="panel"/>
+
+  <text x="302" y="68" class="heading" text-anchor="middle">Component 16: support star</text>
+  <text x="897" y="68" class="heading" text-anchor="middle">Component 17: support path</text>
+  <text x="302" y="96" class="sub" text-anchor="middle">same directed mode triangle</text>
+  <text x="897" y="96" class="sub" text-anchor="middle">same directed mode triangle</text>
+
+  <!-- Left directed triangle -->
+  <circle cx="302" cy="145" r="34" class="mode"/><text x="302" y="145" class="modeText">U1</text>
+  <circle cx="165" cy="345" r="34" class="mode"/><text x="165" y="345" class="modeText">U2</text>
+  <circle cx="439" cy="345" r="34" class="mode"/><text x="439" y="345" class="modeText">U3</text>
+  <path d="M282 173 Q222 235 181 314" class="arrow"/>
+  <path d="M200 345 L400 345" class="arrow"/>
+  <path d="M421 315 Q378 235 322 173" class="arrow"/>
+  <rect x="198" y="222" width="48" height="30" class="labelBox"/><text x="222" y="237" class="edgeLabel">12</text>
+  <rect x="278" y="330" width="48" height="30" class="labelBox"/><text x="302" y="345" class="edgeLabel">02</text>
+  <rect x="358" y="222" width="48" height="30" class="labelBox"/><text x="382" y="237" class="edgeLabel">23</text>
+
+  <!-- Right directed triangle -->
+  <circle cx="897" cy="145" r="34" class="mode"/><text x="897" y="145" class="modeText">U1</text>
+  <circle cx="760" cy="345" r="34" class="mode"/><text x="760" y="345" class="modeText">U2</text>
+  <circle cx="1034" cy="345" r="34" class="mode"/><text x="1034" y="345" class="modeText">U3</text>
+  <path d="M877 173 Q817 235 776 314" class="arrow"/>
+  <path d="M795 345 L995 345" class="arrow"/>
+  <path d="M1016 315 Q973 235 917 173" class="arrow"/>
+  <rect x="793" y="222" width="48" height="30" class="labelBox"/><text x="817" y="237" class="edgeLabel">01</text>
+  <rect x="873" y="330" width="48" height="30" class="labelBox"/><text x="897" y="345" class="edgeLabel">02</text>
+  <rect x="953" y="222" width="48" height="30" class="labelBox"/><text x="977" y="237" class="edgeLabel">23</text>
+
+  <!-- Left source star -->
+  <text x="302" y="405" class="caption">support graph on source coordinates</text>
+  <line x1="302" y1="475" x2="205" y2="530" class="sourceEdge"/>
+  <line x1="302" y1="475" x2="302" y2="560" class="sourceEdge"/>
+  <line x1="302" y1="475" x2="399" y2="530" class="sourceEdge"/>
+  <circle cx="302" cy="475" r="25" class="sourceNode"/><text x="302" y="475" class="sourceText">X2</text>
+  <circle cx="205" cy="530" r="25" class="sourceNode"/><text x="205" y="530" class="sourceText">X0</text>
+  <circle cx="302" cy="560" r="25" class="sourceNode"/><text x="302" y="560" class="sourceText">X1</text>
+  <circle cx="399" cy="530" r="25" class="sourceNode"/><text x="399" y="530" class="sourceText">X3</text>
+  <text x="302" y="605" class="degree">degrees (3,1,1,1)</text>
+
+  <!-- Right source path -->
+  <text x="897" y="405" class="caption">support graph on source coordinates</text>
+  <line x1="720" y1="530" x2="838" y2="530" class="sourceEdge"/>
+  <line x1="838" y1="530" x2="956" y2="530" class="sourceEdge"/>
+  <line x1="956" y1="530" x2="1074" y2="530" class="sourceEdge"/>
+  <circle cx="720" cy="530" r="25" class="sourceNode"/><text x="720" y="530" class="sourceText">X1</text>
+  <circle cx="838" cy="530" r="25" class="sourceNode"/><text x="838" y="530" class="sourceText">X0</text>
+  <circle cx="956" cy="530" r="25" class="sourceNode"/><text x="956" y="530" class="sourceText">X2</text>
+  <circle cx="1074" cy="530" r="25" class="sourceNode"/><text x="1074" y="530" class="sourceText">X3</text>
+  <text x="897" y="585" class="degree">degrees (2,2,1,1)</text>
+</svg>

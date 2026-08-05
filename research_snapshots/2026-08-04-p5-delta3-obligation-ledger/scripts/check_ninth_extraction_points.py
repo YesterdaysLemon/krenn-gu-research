@@ -27,8 +27,8 @@ import sys
 from fractions import Fraction
 from pathlib import Path
 
-REPO = "/home/user/open-graph-theory-with-prize"
-sys.path.insert(0, REPO)
+REPO = Path(__file__).resolve().parents[3]
+sys.path.insert(0, str(REPO))
 
 import sympy as sp  # noqa: E402
 

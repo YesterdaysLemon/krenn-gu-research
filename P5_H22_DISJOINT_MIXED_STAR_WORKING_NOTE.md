@@ -2,21 +2,41 @@
 
 ## Status
 
-This exploratory handoff is now superseded.  The generic weighted
-`H22` incidence of the eighth component is excluded over `C` in
-[`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
-by exactly the route proposed below: a `t`-free linear elimination of
-the marked extensions, one exactly factored `4 x 4` determinant for
-the `01` marking locus, unit-ideal chart certificates for the `23`
-locus, and small Fitting ideals on the resulting strata.  The two
-modular marking loci recorded here are exactly the characteristic-zero
-loci of that theorem.  This note is retained as the historical record
-of the finite-field diagnostics.
+This is a superseded exploratory handoff, not a theorem.  The
+determinantal route proposed below has now been completed over
+characteristic zero in
+[`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+The calculations here are retained as provenance for the modular
+pattern and the failed broad elimination.
 
 The eighth pure-`P_4` component is proved in
 [`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md),
 and its generic marked `H31` incidence is excluded in
 [`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+Its generic weighted `H22` incidence is now closed on a dense open set
+by the theorem linked above.
+Subsequent exact boundary theorems close `r=+/-1`, twelve
+parameter-pivot branches, the principal coupled slope divisor, and four
+rational sheets `af=+/-1,a phi=+/-1`.  The last package also records an
+intrinsic content factorization of all seven selected `D_23` maximal
+minors:
+[`P5_H22_DISJOINT_MIXED_STAR_AF_APHI_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_AF_APHI_BOUNDARY_OBSTRUCTION.md).
+The compactified endpoint `r=0` is closed as well, together with an
+intrinsic content ledger for the seven selected `D_01` maximal minors
+and their rank pivot:
+[`P5_H22_DISJOINT_MIXED_STAR_ZERO_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_ZERO_SLOPE_BOUNDARY_OBSTRUCTION.md).
+A further coefficient normalization closes a new irreducible quadratic
+component branch by full unsplit two-minor ideals in both directions:
+[`P5_H22_DISJOINT_MIXED_STAR_COEFFICIENT_QUADRATIC_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COEFFICIENT_QUADRATIC_BOUNDARY_OBSTRUCTION.md).
+Three rational slope graphs are subsequently closed by six unsplit
+identities; one real mode-zero degeneration is repaired by the
+mode-one `0457` minor:
+[`P5_H22_DISJOINT_MIXED_STAR_LINEAR_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_LINEAR_SLOPE_BOUNDARY_OBSTRUCTION.md).
+The exact source-torus quotient reduces the dense component base to the
+slice `f=1`, and the remaining certificate factors and null calculations
+are separated in the current frontier ledger:
+[`P5_H22_DISJOINT_MIXED_STAR_TORUS_QUOTIENT.md`](P5_H22_DISJOINT_MIXED_STAR_TORUS_QUOTIENT.md),
+[`P5_H22_DISJOINT_MIXED_STAR_CERTIFICATE_DIVISOR_FRONTIER.md`](P5_H22_DISJOINT_MIXED_STAR_CERTIFICATE_DIVISOR_FRONTIER.md).
 
 No computation described below proves a statement over `C`.  In
 particular, several direct characteristic-zero Groebner calculations
@@ -112,7 +132,7 @@ algebra on the `14 x 8` mixed coefficient matrix:
 
 That would turn the observed finite-field collapse into a short
 function-field argument and avoids a brute-force construction search.
-Until those identities are derived and independently replayed, the
-eighth component's weighted `H22` incidence remains open, as do special
-parameter/slope divisors, projective boundaries, component
-exhaustiveness, and the global prize conjecture.
+Those identities are now derived and independently replayed in the
+theorem package.  Special parameter/slope divisors, projective
+boundaries, component exhaustiveness, and the global prize conjecture
+remain open.

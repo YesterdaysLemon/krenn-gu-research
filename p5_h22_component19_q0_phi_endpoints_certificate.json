@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "role": "construction",
+  "date_utc": "2026-08-01T15:28:56Z",
+  "git_commit": "6e6e02ad34c8462f2fc08087ee6fc73e3e543f28",
+  "claim_label": "VERIFIED",
+  "discovery_claim_label": "CANDIDATE",
+  "scope": "component nineteen weighted H22 fibres at q=0, phi=+1 and phi=-1 separately over Q(p), p!=0",
+  "method": "separate direct endpoint plane reconstruction, exact permanents and pair minors, complete finite/infinity shared binary-orientation elimination, exact three-dimensional shared kernels, saturated one-marked rank stratification, and fixed transverse minors",
+  "expected_common_result": {
+    "pair_profile": [3, 4, 4, 3, 3, 3],
+    "pure_support": {"1111": "4*p"},
+    "only_shared_orientation": "A23",
+    "shared_weight": "[1:1]",
+    "shared_mixed_rank": 5,
+    "shared_kernel_dimension": 3,
+    "genuine_survivor": false,
+    "obstructing_minor": "-64*epsilon*C*(C-p*E)^2"
+  },
+  "sign_specific": {
+    "phi=+1": {
+      "marking": "h=(1,0,t,0)",
+      "kernel_frame": [
+        ["0", "-1/p", "1/p", "0", "1", "0", "0", "0"],
+        ["0", "0", "0", "0", "0", "1", "0", "0"],
+        ["p", "0", "-1", "0", "0", "0", "0", "1"]
+      ],
+      "obstructing_minor": "-64*C*(C-p*E)^2"
+    },
+    "phi=-1": {
+      "marking": "h=(-1,0,t,0)",
+      "kernel_frame": [
+        ["0", "-1/p", "-1/p", "0", "1", "0", "0", "0"],
+        ["0", "0", "0", "0", "0", "1", "0", "0"],
+        ["-p", "0", "1", "0", "0", "0", "0", "1"]
+      ],
+      "obstructing_minor": "64*C*(C-p*E)^2"
+    }
+  },
+  "limitations": [
+    "Both endpoints were independently verified; the construction discovery label remains CANDIDATE.",
+    "Only q=0, phi=+1 or -1, p!=0 in the finite opposite-plane chart is covered.",
+    "Projective opposite-plane boundaries, p=0, component exhaustiveness, arbitrary-order reduction, the prize graph, and the global Krenn-Gu conjecture are not addressed."
+  ]
+}

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="640" viewBox="0 0 920 640" role="img" aria-labelledby="title desc">
+  <title id="title">Exceptional graph of the transverse common-factor P4 component seed</title>
+  <desc id="desc">Four modes form a complete graph. Edges 01, 02, 13, and 23 are rank-one relations in blue; edge 12 is a rank-two relation in magenta; edge 03 is an ordinary rank-four pair in dashed gray.</desc>
+  <defs>
+    <style>
+      .bg { fill: #fbfaf7; }
+      .node { fill: #fff; stroke: #20242b; stroke-width: 4; }
+      .rank1 { stroke: #2176c7; stroke-width: 9; stroke-linecap: round; }
+      .rank2 { stroke: #b03a8d; stroke-width: 11; stroke-linecap: round; }
+      .rank4 { stroke: #7b818a; stroke-width: 5; stroke-dasharray: 14 12; stroke-linecap: round; }
+      .label { font: 700 32px system-ui, sans-serif; fill: #20242b; text-anchor: middle; dominant-baseline: middle; }
+      .edge-label { font: 600 20px system-ui, sans-serif; fill: #20242b; text-anchor: middle; paint-order: stroke; stroke: #fbfaf7; stroke-width: 8; stroke-linejoin: round; }
+      .heading { font: 700 28px system-ui, sans-serif; fill: #20242b; text-anchor: middle; }
+      .legend { font: 500 19px system-ui, sans-serif; fill: #333840; }
+    </style>
+  </defs>
+  <rect class="bg" width="920" height="640" rx="28"/>
+  <text class="heading" x="460" y="48">Transverse common-factor seed: five exceptional edges</text>
+
+  <!-- K4 edges -->
+  <line class="rank1" x1="190" y1="160" x2="190" y2="480"/>
+  <line class="rank1" x1="190" y1="160" x2="730" y2="480"/>
+  <line class="rank4" x1="190" y1="160" x2="730" y2="160"/>
+  <line class="rank2" x1="190" y1="480" x2="730" y2="480"/>
+  <line class="rank1" x1="190" y1="480" x2="730" y2="160"/>
+  <line class="rank1" x1="730" y1="480" x2="730" y2="160"/>
+
+  <!-- edge labels -->
+  <text class="edge-label" x="142" y="326">rank 1</text>
+  <text class="edge-label" x="405" y="286">rank 1</text>
+  <text class="edge-label" x="460" y="137">rank 4</text>
+  <text class="edge-label" x="460" y="516">rank 2</text>
+  <text class="edge-label" x="514" y="357">rank 1</text>
+  <text class="edge-label" x="778" y="326">rank 1</text>
+
+  <!-- nodes -->
+  <circle class="node" cx="190" cy="160" r="42"/>
+  <circle class="node" cx="190" cy="480" r="42"/>
+  <circle class="node" cx="730" cy="480" r="42"/>
+  <circle class="node" cx="730" cy="160" r="42"/>
+  <text class="label" x="190" y="162">0</text>
+  <text class="label" x="190" y="482">1</text>
+  <text class="label" x="730" y="482">2</text>
+  <text class="label" x="730" y="162">3</text>
+
+  <!-- legend -->
+  <line class="rank1" x1="170" y1="585" x2="235" y2="585"/>
+  <text class="legend" x="252" y="592">unique decomposable relation</text>
+  <line class="rank2" x1="500" y1="585" x2="565" y2="585"/>
+  <text class="legend" x="582" y="592">unique rank-two relation</text>
+  <line class="rank4" x1="170" y1="616" x2="235" y2="616"/>
+  <text class="legend" x="252" y="623">no pair relation</text>
+</svg>

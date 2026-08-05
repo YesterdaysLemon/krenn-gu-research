@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "role": "construction",
+  "date_utc": "2026-08-01T12:49:29Z",
+  "git_commit": "bb7fb22c44b8348d993b6ed655ac007120dc0099",
+  "claim_label": "VERIFIED",
+  "discovery_claim_label": "CANDIDATE",
+  "scope": "generic weighted H22 fibre of component twenty-one, the coincident-support rank-one star",
+  "inputs": {
+    "P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md": "1b535667beed409fe08d4fa9011f2fbc455d4d4c6a7d0c2aecc089a107cdc447",
+    "P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md": "8516673bfb7bffd5aa0cba6f92cc54aeb534845d0c43bcd07e1bdfee77e02220",
+    "P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md": "da64a3ee55d5dfa361a70cb771196f76f93d13b3d61df358442a22e1e72de1a8"
+  },
+  "method": "exact characteristic-zero Hall support, normalized mixed-incidence projection with beta-diagonal reduction, and an infinity row-module certificate",
+  "normal_form": {
+    "alpha": [
+      "q*(A+p*B)-p*(C+q*B)",
+      "ell*A+C",
+      "C",
+      "D"
+    ],
+    "beta": [
+      "A+p*B",
+      "A",
+      "B+kappa*A",
+      "A+ell*C"
+    ],
+    "pure_support": {"1111": "4*p"},
+    "function_field": "Q(p,q,kappa,ell)"
+  },
+  "D01": {
+    "all_alpha_diagonal": "0",
+    "reason": "the first three alpha rows have a two-column Hall neighborhood after every homogeneous D01 contraction",
+    "finite_and_endpoints_covered": true,
+    "genuine_binary_incidence_empty": true
+  },
+  "D23_finite": {
+    "chart": "[lambda:1]",
+    "all_alpha_normalized_projection": ["lambda+1", "h3", "F1", "F2", "F3"],
+    "definitions": {
+      "Delta": "p^2-q^2",
+      "E": "ell^2-1",
+      "F1": "kappa*Delta*E*h0*h1-Delta*h0*h2-p*E*h1*h2+kappa*ell*Delta*h0-q*kappa*E*h1+(q-p*ell)*h2+kappa*(p-q*ell)",
+      "F2": "(h2-kappa)*(h2+kappa)*(p*E*h1+p*ell+Delta*h0-q)",
+      "F3": "(h2-kappa)*(h2+kappa)*((ell-1)*h1+1)*((ell+1)*h1+1)"
+    },
+    "all_beta_remainder_in_normalized_mixed_ideal": "0",
+    "conclusion": "every mixed kernel with nonzero all-alpha diagonal has zero all-beta diagonal",
+    "genuine_binary_incidence_empty": true
+  },
+  "D23_infinity": {
+    "weight": "[1:0]",
+    "all_alpha_in_mixed_row_module": true,
+    "all_beta_normal_form_nonzero": true,
+    "genuine_binary_incidence_empty": true
+  },
+  "retained_survivor": {
+    "weight": "[-1:1]",
+    "marking": "h0=1/(p-q), h1=0, h2=kappa, h3=0",
+    "extension": ["-q/kappa", "-1/kappa", "0", "0", "-p/(kappa*(p-q))", "0", "1", "0"],
+    "all_alpha_diagonal": "4*(p-q)/kappa",
+    "all_beta_diagonal": "0",
+    "status": "exact one-diagonal survivor only; not binary"
+  },
+  "shared_compatibility": {
+    "possible_orientation": "D01 nonzero pure and D23 genuinely binary",
+    "status": "empty before compatibility because D23 has no genuine binary incidence"
+  },
+  "conclusion": "generic weighted H22 fibre of component twenty-one is empty",
+  "conclusion_label": "VERIFIED",
+  "limitations": "verified after a fresh no-import replay; generic function-field theorem only; no special-parameter or projective component-boundary fibres, pure-P4 component exhaustiveness, arbitrary-order local-to-global reduction, prize graph, or global Krenn-Gu conclusion",
+  "finite_field_computation_used": false,
+  "broad_brute_force_used": false,
+  "independent_verifier_complete": true,
+  "global_krenn_gu_resolved": false
+}

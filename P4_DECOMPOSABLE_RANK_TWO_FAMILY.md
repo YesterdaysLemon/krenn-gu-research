@@ -27,6 +27,10 @@ It shows that one rare deleted-`P_4` slice in `q5_311` cannot be excluded
 in isolation: the simultaneous compatibility of the two deletions is
 essential.
 
+A later source normalization turns this family into a fixed exceptional
+triangle plus an apolar `P^2` fibre, making its geometry much more explicit:
+[`P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md`](P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md).
+
 ## Coefficient convention
 
 Write the two coordinate rows of `L_r` as

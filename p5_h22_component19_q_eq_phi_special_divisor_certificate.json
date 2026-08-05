@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "role": "construction",
+  "date_utc": "2026-08-01T15:45:15Z",
+  "git_commit": "3738e5a0d2fb94658a80808c0ff60eee3173eb56",
+  "claim_label": "VERIFIED",
+  "discovery_claim_label": "CANDIDATE",
+  "scope": "component nineteen weighted H22 fibre on the finite divisor q=phi, on its exact nonzero all-pair-open locus p*phi!=0",
+  "method": "direct denominator-free q=phi intrinsic basis, exact characteristic-zero permanents and pair minors, complete finite/infinity binary-orientation incidence, and parameter-aware elimination over Q[p,phi]",
+  "expected": {
+    "mode0_basis_change_determinant": "-1",
+    "pure_support": {"1111": "4*p"},
+    "exact_open": "p*phi!=0",
+    "pair_profile": [4, 4, 3, 3, 3, 3],
+    "function_field_binary_ideals": {
+      "D01_finite": ["1"],
+      "D01_infinity": ["1"],
+      "D23_finite": ["1"],
+      "D23_infinity": ["1"]
+    },
+    "parameter_aware_D01_binary_projection": ["h3", "h2", "h0", "phi"],
+    "parameter_aware_D23_binary_projection": ["1"],
+    "all_shared_orientation_projections": ["1"],
+    "conclusion": "weighted H22 fibre empty on p*phi!=0"
+  },
+  "boundaries": {
+    "p=0": "the pure coefficient 4*p vanishes",
+    "phi=0": "the pure tensor remains nonzero for p!=0, but pair 23 has rank exactly two; the D01 binary projection closure is supported here",
+    "projective opposite-plane boundary": "not part of this finite Grassmann chart calculation"
+  },
+  "limitations": [
+    "Independently verified on the stated open; the construction discovery label remains CANDIDATE.",
+    "Only the finite q=phi opposite-plane chart is covered; projective component boundaries remain open.",
+    "No claim is made about component exhaustiveness, arbitrary-order local-to-global reduction, the prize graph, or the global Krenn-Gu conjecture."
+  ]
+}

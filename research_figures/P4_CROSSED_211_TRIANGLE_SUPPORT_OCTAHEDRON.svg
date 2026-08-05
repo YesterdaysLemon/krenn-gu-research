@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="500" viewBox="0 0 820 500">
+  <defs>
+    <style>
+      .bg { fill: #fbfaf6; }
+      .edge { stroke: #7d8790; stroke-width: 2; opacity: .68; }
+      .opposite { stroke: #c45a49; stroke-width: 3; stroke-dasharray: 9 7; }
+      .chosen { stroke: #27866d; stroke-width: 6; }
+      .node { fill: #ffffff; stroke: #26343d; stroke-width: 2.5; }
+      .label { font: 600 20px ui-monospace, SFMono-Regular, Consolas, monospace; fill: #17232b; text-anchor: middle; dominant-baseline: middle; }
+      .title { font: 700 25px ui-sans-serif, system-ui, sans-serif; fill: #17232b; text-anchor: middle; }
+      .sub { font: 16px ui-sans-serif, system-ui, sans-serif; fill: #46545d; text-anchor: middle; }
+      .legend { font: 15px ui-sans-serif, system-ui, sans-serif; fill: #34434c; }
+    </style>
+  </defs>
+  <rect class="bg" width="820" height="500" rx="18"/>
+  <text class="title" x="410" y="36">Support labels form the octahedron J(4,2)=L(K4)</text>
+  <text class="sub" x="410" y="62">adjacent = overlap once; opposite = disjoint</text>
+
+  <!-- K_{2,2,2}: all pairs except the three opposite pairs. -->
+  <g class="edge">
+    <line x1="410" y1="105" x2="155" y2="185"/><line x1="410" y1="105" x2="155" y2="335"/>
+    <line x1="410" y1="105" x2="665" y2="185"/><line x1="410" y1="105" x2="665" y2="335"/>
+    <line x1="410" y1="415" x2="155" y2="185"/><line x1="410" y1="415" x2="155" y2="335"/>
+    <line x1="410" y1="415" x2="665" y2="185"/><line x1="410" y1="415" x2="665" y2="335"/>
+    <line x1="155" y1="185" x2="665" y2="185"/><line x1="155" y1="185" x2="665" y2="335"/>
+    <line x1="155" y1="335" x2="665" y2="185"/><line x1="155" y1="335" x2="665" y2="335"/>
+  </g>
+
+  <!-- One opposite pair and the adjacent pair used in the theorem. -->
+  <line class="opposite" x1="410" y1="105" x2="410" y2="415"/>
+  <line class="chosen" x1="410" y1="415" x2="155" y2="185"/>
+
+  <g>
+    <circle class="node" cx="410" cy="105" r="38"/><text class="label" x="410" y="105">{01}</text>
+    <circle class="node" cx="410" cy="415" r="38"/><text class="label" x="410" y="415">{23}</text>
+    <circle class="node" cx="155" cy="185" r="38"/><text class="label" x="155" y="185">{02}</text>
+    <circle class="node" cx="665" cy="335" r="38"/><text class="label" x="665" y="335">{13}</text>
+    <circle class="node" cx="155" cy="335" r="38"/><text class="label" x="155" y="335">{03}</text>
+    <circle class="node" cx="665" cy="185" r="38"/><text class="label" x="665" y="185">{12}</text>
+  </g>
+
+  <g transform="translate(55 458)">
+    <line class="chosen" x1="0" y1="0" x2="42" y2="0"/><text class="legend" x="52" y="5">overlap branch -> first apolar component</text>
+    <line class="opposite" x1="420" y1="0" x2="462" y2="0"/><text class="legend" x="472" y="5">disjoint branch -> rank drop</text>
+  </g>
+</svg>
