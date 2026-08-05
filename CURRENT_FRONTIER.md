@@ -189,6 +189,12 @@ work into a theorem.
 
 ## 5. Candid audit (stabilization pass, 2026-08-05)
 
+The complete pass record — what was done, replayed, could not be
+replayed, and needs human review — is
+[`STABILIZATION_AUDIT_REPORT.md`](STABILIZATION_AUDIT_REPORT.md).  The
+per-file merge resolution record is
+[`MERGE_AUDIT_REPORT.md`](MERGE_AUDIT_REPORT.md).
+
 **Replayed and passed on this machine** (Singular 4.3.2 under WSL;
 sympy 1.14):
 

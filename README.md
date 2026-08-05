@@ -4739,13 +4739,18 @@ the essential remaining case.
 - [`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md)
 - [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md)
 - [`MERGE_AUDIT_REPORT.md`](MERGE_AUDIT_REPORT.md)
+- [`STABILIZATION_AUDIT_REPORT.md`](STABILIZATION_AUDIT_REPORT.md)
+- [`CURRENT_FRONTIER.md`](CURRENT_FRONTIER.md)
+- [`THEOREM_LEDGER.json`](THEOREM_LEDGER.json)
 
 Merge provenance: this index was reconciled after merge `72780ac`
 folded the former `main` line (components 9--16, obligation ledger,
 divisor atlas, meta-theorem) into the canonical symbolic line.  The
 per-file resolution record, including the two independent weighted-`H22`
 proofs of the eighth component, is in
-[`MERGE_AUDIT_REPORT.md`](MERGE_AUDIT_REPORT.md).
+[`MERGE_AUDIT_REPORT.md`](MERGE_AUDIT_REPORT.md); the full
+stabilization pass record is in
+[`STABILIZATION_AUDIT_REPORT.md`](STABILIZATION_AUDIT_REPORT.md).
 
 Each theorem-level claim requires:
 
