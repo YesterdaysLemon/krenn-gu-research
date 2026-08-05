@@ -1,0 +1,55 @@
+name: hygiene
+
+# Lightweight integrity floor.  Runs the same checks a contributor can
+# run locally with `python check_hygiene.py`:
+#   1. every tracked Python file compiles;
+#   2. no generated solver artifact is tracked;
+#   3. local Markdown links resolve;
+#   4. THEOREM_LEDGER.json references and doc-referenced scripts exist;
+#   5. the five fast verifiers run and exit zero;
+#   6. dependency/solver versions are displayed.
+#
+# Plus the one fully self-contained unittest module.  The other three
+# test_*.py files read tmp/ audit fixtures produced by the certificate
+# replay chains; they stay manual (see CURRENT_FRONTIER.md, audit
+# section) because their inputs are regenerable, not tracked.
+#
+# Expensive certificate replays (Singular Groebner runs, SAT/DRAT
+# chains) are deliberately NOT in CI; they remain manual, documented
+# per certificate, and reproducible via the pinned requirements.lock.txt
+# and the Containerfile.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  hygiene:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          # full history: provenance checks may need more than a tip
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: requirements.lock.txt
+
+      - name: Install pinned dependencies
+        run: python -m pip install -r requirements.lock.txt
+
+      - name: Run hygiene checks
+        run: python check_hygiene.py
+
+      - name: Run the self-contained test module
+        run: python -m unittest -v test_fourteen_vertex_cycle_cover_lattice.py
