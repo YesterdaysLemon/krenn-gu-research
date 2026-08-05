@@ -1,0 +1,19 @@
+{
+  "verified": true,
+  "field": "C(a,b,f)[phi]/(Phi), slope fixed at r=-1",
+  "component": "disjoint mixed-star fivefold (eighth orbit)",
+  "statement": "at slope r=-1 neither weighted H22 pencil has a genuine binary Delta_2 extension for any marking; the r=-1 slope divisor is closed at binary level for both pencils over the generic component point",
+  "certificates": {
+    "d23_dead_columns": "slot-0 pair (x0,y0) of all sixteen words vanishes mod Phi for every marking: universal kernel plane span(e_x0,e_y0), A=B=0 on it",
+    "d23_rabinowitsch": "ideal(14 rows, Phi, w*A*B-1) = (1): no genuine binary survivor for any marking",
+    "d01_dead_columns": "slot-3 pair (x3,y3) of all sixteen words vanishes mod Phi for every marking: universal kernel plane span(e_x3,e_y3), A=B=0 on it",
+    "d01_rabinowitsch": "ideal(14 rows, Phi, w*A*B-1) = (1): no genuine binary survivor for any marking",
+    "modular_replay": {
+      "p11_D23": "no genuine survivor",
+      "p11_D01": "no genuine survivor",
+      "p13_D23": "no genuine survivor",
+      "p13_D01": "no genuine survivor"
+    }
+  },
+  "elapsed_seconds": 33.635
+}

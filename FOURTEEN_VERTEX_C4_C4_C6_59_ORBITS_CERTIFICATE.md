@@ -10,7 +10,7 @@ perfect matching. It is not an unconditional classification of the
 complete factor family and is not a proof of the Krenn--Gu conjecture.
 
 This file is retained as the 59-orbit checkpoint. It is superseded by
-[`FOURTEEN_VERTEX_C4_C4_C6_60_ORBITS_KAPPA3_CERTIFICATE.md`](FOURTEEN_VERTEX_C4_C4_C6_60_ORBITS_KAPPA3_CERTIFICATE.md).
+[`FOURTEEN_VERTEX_C4_C4_C6_61_ORBITS_KAPPA3_CERTIFICATE.md`](FOURTEEN_VERTEX_C4_C4_C6_61_ORBITS_KAPPA3_CERTIFICATE.md).
 
 The excluded orbit set is
 

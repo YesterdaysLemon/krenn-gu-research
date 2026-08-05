@@ -1,0 +1,12 @@
+{
+  "verified": true,
+  "component": "disjoint mixed-star fivefold (eighth orbit)",
+  "statement": "the H22 pencil slope boundaries r=0,infinity are exactly the four H31 coordinate frames; the verified H31 generic theorem closes them (q=0,1 at binary level, q=2,3 at ternary level via the (0,1,3,7) minor identity det = +-R*A*B^2)",
+  "h31_citation": "P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md, eqs (6)-(10); verified by verify_p5_h31_disjoint_mixed_star_component_generic_obstruction.py",
+  "checks": {
+    "r0": "D_01^0 = q=0 frame, D_23^0 = q=2 frame (exact)",
+    "r_infinity": "after the uniform column scaling, D_01^inf = q=1 frame and D_23^inf = q=3 frame (exact limits)",
+    "modular_L2_root": "p=11: L_2 root t0=4 equals the observed lone D_23^0 survivor marking"
+  },
+  "elapsed_seconds": 5.366
+}
