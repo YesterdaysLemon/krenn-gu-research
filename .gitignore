@@ -42,3 +42,12 @@ prism_stratum*.json
 prism_*.sing
 *_orbits.json
 triangle_support*.json
+
+# Leftover generated files kept on disk for reference, never re-added
+research_snapshots/2026-07-27-p5-coordinate-cegar/*/manifest.json
+!research_snapshots/2026-07-27-p5-coordinate-cegar/three_partial_c10_audit/manifest.json
+research_snapshots/2026-07-27-p5-coordinate-cegar/*/.gitattributes
+research_snapshots/2026-07-27-p5-tree-chart-cover/*.gz
+research_snapshots/2026-08-04-p4-equal-support-rank-two-strata/scripts/star_purity_data.json
+research_snapshots/2026-08-04-p4-equal-support-rank-two-strata/scripts/triangle_data.json
+research_snapshots/2026-08-04-p4-equal-support-rank-two-strata/scripts/activedet_equal.txt
