@@ -476,6 +476,9 @@ STALE_ALLOWLIST_FILES = {
 STALE_ALLOWLIST_PREFIXES = (
     "tools/migration/",
     "tests/test_migration_tools.py",
+    # Batch approval files record old paths in their member lists by
+    # design; they are provenance, not stale references.
+    "catalog/batches/",
 )
 STALE_SCAN_EXTENSIONS = (".md", ".py", ".yml", ".yaml", ".sh", ".json")
 
