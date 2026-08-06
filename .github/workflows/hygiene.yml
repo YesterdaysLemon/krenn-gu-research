@@ -23,6 +23,9 @@ on:
   push:
     branches: [main]
   pull_request:
+  # Manual trigger: protects against missed pull_request deliveries and
+  # lets a reviewer re-run the floor on demand.
+  workflow_dispatch:
 
 permissions:
   contents: read
