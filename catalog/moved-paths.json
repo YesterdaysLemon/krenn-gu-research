@@ -14171,65 +14171,73 @@
       "old_path": "ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md",
       "new_path": "docs/ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md",
       "reason": "navigation -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "navigation-docs-phase2"
     },
     {
       "old_path": "LITERATURE_REVIEW_2026-07-30.md",
       "new_path": "docs/LITERATURE_REVIEW_2026-07-30.md",
       "reason": "navigation -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "navigation-docs-phase2"
     },
     {
       "old_path": "NEXT_INSTANCE_HANDOFF_2026-07-31.md",
       "new_path": "docs/NEXT_INSTANCE_HANDOFF_2026-07-31.md",
       "reason": "navigation -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "navigation-docs-phase2"
     },
     {
       "old_path": "SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md",
       "new_path": "docs/SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md",
       "reason": "navigation -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "navigation-docs-phase2"
     },
     {
       "old_path": "MERGE_AUDIT_REPORT.md",
       "new_path": "docs/audits/MERGE_AUDIT_REPORT.md",
       "reason": "audit_report -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "navigation-docs-phase2"
     },
     {
       "old_path": "STABILIZATION_AUDIT_REPORT.md",
       "new_path": "docs/audits/STABILIZATION_AUDIT_REPORT.md",
       "reason": "audit_report -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "navigation-docs-phase2"
     },
     {
       "old_path": "CURRENT_FRONTIER.md",
       "new_path": "docs/current-frontier.md",
       "reason": "navigation -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "navigation-docs-phase2"
     },
     {
       "old_path": "RESEARCH_NOTES.md",
       "new_path": "docs/research-notes.md",
       "reason": "navigation -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "navigation-docs-phase2"
     },
     {
       "old_path": "cancellation_transport.py",
