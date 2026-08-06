@@ -48,7 +48,7 @@ decisive bottlenecks; and a candid replay audit.
 
 ### 4. Machine-readable ledger (priority 4)
 
-[`THEOREM_LEDGER.json`](THEOREM_LEDGER.json) — 72 entries with name,
+[`THEOREM_LEDGER.json`](THEOREM_LEDGER.json) — 85 entries with name,
 status, assumptions/excluded divisors, dependencies, primary verifier,
 independent audit, expected runtime, external binaries, and
 drift-detection SHA-256 prefixes.  Status vocabulary is documented in
@@ -56,9 +56,9 @@ the file header.  Global status field: `UNRESOLVED`.
 
 ### 5. CI and hygiene checks (priority 5)
 
-- [`check_hygiene.py`](check_hygiene.py): compiles all 1,686 tracked
+- [`check_hygiene.py`](check_hygiene.py): compiles all 1,687 tracked
   Python files, rejects tracked solver artifacts, resolves all local
-  markdown links, validates the ledger and all 1,346 script references
+  markdown links, validates the ledger and all 1,348 script references
   in docs (10 historical dangling references allowlisted with
   provenance), runs five fast verifiers, and prints dependency/solver
   versions.  Runs from a clean checkout with pinned dependencies only.
@@ -212,11 +212,12 @@ audit reports that record the removal are allowlisted.
 
 ### 6. CI result
 
-The workflow did execute automatically on this PR.  First run after the
-review fixes (run 31059889926) **failed** on the CRLF/LF hash artifact
-described above; after switching the ledger hashes to git blobs, run
-31060102504 **completed with status success**.  All seven local checks
-and the CI job agree.
+The workflow did execute automatically on this PR.  The first run after
+the review fixes (run 31059889926) **failed** on the CRLF/LF hash
+artifact described above; after switching the ledger hashes to git
+blobs, run 31060102504 succeeded, and the current-tip run 31060230290
+is the latest **completed with status success**.  All seven local
+checks and the CI job agree.
 
 ### Ledger completeness statement
 

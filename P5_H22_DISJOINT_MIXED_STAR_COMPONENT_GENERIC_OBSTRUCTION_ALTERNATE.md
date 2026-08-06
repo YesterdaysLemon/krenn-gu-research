@@ -159,9 +159,10 @@ det = u_1 (phi(t_0-1)-f) t_2                (mod Phi, t_1=0),
 det = u_2 ((af(r+1)-(r-1))t_1-(r+1)) t_3    (mod Phi, t_2=0),  (5')
 ```
 
-with `u_1,u_2` nonzero in `K(r)` (invertible on the declared dense open),
-certified by the same
-is the union of four explicit strata:
+with `u_1,u_2` nonzero in `K(r)` and invertible on the declared dense
+open, certified by the same inverted-product unit-ideal calculations.
+Hence the complete `01` marking locus is the union of four explicit
+strata:
 
 ```text
 t_1=t_2=0;          t_1=0, phi(t_0-1)=f;

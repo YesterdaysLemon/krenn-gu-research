@@ -1318,7 +1318,7 @@
     {
       "name": "Eighth-component weighted H22 closure - alternate t-free elimination proof",
       "document": "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md",
-      "document_sha256_16": "f7a18bf17ae9cce7",
+      "document_sha256_16": "f9811e81cf033cb6",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
