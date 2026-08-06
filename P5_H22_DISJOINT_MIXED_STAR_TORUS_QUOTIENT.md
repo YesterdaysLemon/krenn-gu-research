@@ -136,10 +136,10 @@ may exist.  The global prize conjecture remains unresolved.
 Run:
 
 ```text
-tmp/codex_verify_env/Scripts/python.exe \
+python \
   verify_p5_h22_disjoint_mixed_star_torus_quotient.py
 
-tmp/codex_verify_env/Scripts/python.exe \
+python \
   audit_p5_h22_disjoint_mixed_star_torus_quotient.py
 ```
 

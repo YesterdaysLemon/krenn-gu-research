@@ -218,10 +218,10 @@ nonexistence proof is claimed.
 Run:
 
 ```text
-tmp/codex_verify_env/Scripts/python.exe \
+python \
   verify_p5_h22_disjoint_mixed_star_af_aphi_boundary_obstruction.py
 
-tmp/codex_verify_env/Scripts/python.exe \
+python \
   audit_p5_h22_disjoint_mixed_star_af_aphi_boundary_obstruction.py
 ```
 

@@ -13,11 +13,15 @@ Checks:
   2. no generated solver artifact class is tracked (.sing/.ms/.out/
      .stdout/.drat/.cnf/.log and the brute-force JSON dump patterns);
   3. local Markdown links resolve (files and directories);
-  4. every document, verifier, and audit named in THEOREM_LEDGER.json
-     exists, and every verify_*/audit_* script referenced by name in a
-     Markdown document exists somewhere in the tracked tree;
-  5. the fast verifier set runs and exits zero;
-  6. dependency and solver versions are displayed.
+  4. THEOREM_LEDGER.json integrity: documents exist, every non-null
+     document_sha256_16 is recomputed and matched, mapped verifier/
+     audit scripts are tracked, verified entries carry provenance that
+     explains any null field, and the component_census summary matches
+     the entry counts;
+  5. no machine-specific checkout paths, vendored-env prefixes, or
+     unguarded sys.path injections;
+  6. the fast verifier set runs and exits zero;
+  7. dependency and solver versions are displayed.
 
 Exit code 0 only if all checks pass.  The fast verifier set is the
 only execution step; expensive certificate replays remain manual.
@@ -317,11 +321,61 @@ def check_fast_verifiers() -> None:
     if bad:
         failures.append("fast verifier failures:\n  " + "\n  ".join(bad))
     else:
-        print(f"[5] verifiers: {len(FAST_VERIFIERS)} fast verifiers pass")
+        print(f"[6] verifiers: {len(FAST_VERIFIERS)} fast verifiers pass")
+
+
+# Files that legitimately NAME the forbidden patterns in order to record
+# their removal (the audit reports) or to enforce them (this checker).
+PORTABILITY_ALLOWLIST = {
+    "check_hygiene.py",
+    "MERGE_AUDIT_REPORT.md",
+    "STABILIZATION_AUDIT_REPORT.md",
+}
+FORBIDDEN_PORTABILITY = (
+    "PYTHONPATH=tmp/python_deps",
+    "tmp/codex_verify_env",
+    "/home/user/open-graph-theory-with-prize",
+)
+HOME_LITERAL = re.compile(r'["\'](/home/[^"\']*)["\']')
+SYSPATH_LITERAL = re.compile(
+    r"sys\.path\.(?:insert|append)\s*\([^)]*[\"']([^\"']+)[\"']")
+MACHINE_SPECIFIC = re.compile(r"(/home/|C:[\\/]|tmp/python_deps|"
+                              r"tmp/codex_verify_env)")
+
+
+def check_portability(files: list[str]) -> None:
+    offenders = []
+    for rel in files:
+        base = pathlib.PurePosixPath(rel).name
+        if base in PORTABILITY_ALLOWLIST:
+            continue
+        if not rel.endswith((".py", ".md", ".sh", ".yml", ".yaml")):
+            continue
+        text = (ROOT / rel).read_text(encoding="utf-8", errors="replace")
+        for pat in FORBIDDEN_PORTABILITY:
+            if pat in text:
+                offenders.append(f"{rel}: contains {pat!r}")
+        if rel.endswith(".py"):
+            for m in HOME_LITERAL.finditer(text):
+                offenders.append(
+                    f"{rel}: hardcoded home path {m.group(1)!r}")
+            for m in SYSPATH_LITERAL.finditer(text):
+                if MACHINE_SPECIFIC.search(m.group(1)):
+                    offenders.append(
+                        f"{rel}: machine-specific sys.path injection "
+                        f"{m.group(1)!r}")
+    if offenders:
+        failures.append(
+            "portability regressions:\n  " + "\n  ".join(offenders[:30])
+            + (f"\n  ... ({len(offenders) - 30} more)"
+               if len(offenders) > 30 else ""))
+    else:
+        print("[5] portability: no machine-specific checkout paths, "
+              "vendored-env prefixes, or unguarded sys.path injections")
 
 
 def show_versions() -> None:
-    print("[6] versions:")
+    print("[7] versions:")
     try:
         import numpy
         import sympy
@@ -346,6 +400,7 @@ def main() -> int:
     check_no_generated(files)
     check_markdown_links(files)
     check_ledger(files)
+    check_portability(files)
     check_fast_verifiers()
     show_versions()
     if failures:

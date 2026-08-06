@@ -217,7 +217,7 @@ This is a structural route, not a search through plane coefficients.
 Run:
 
 ```text
-tmp/codex_verify_env/Scripts/python.exe \
+python \
   verify_p4_common_smooth_diagonal_quadric_obstruction.py
 
 python audit_p4_common_smooth_diagonal_quadric_obstruction.py

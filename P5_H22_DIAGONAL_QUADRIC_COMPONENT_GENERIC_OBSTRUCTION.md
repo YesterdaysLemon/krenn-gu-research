@@ -260,10 +260,10 @@ in
 Run:
 
 ```text
-tmp/codex_verify_env/Scripts/python.exe \
+python \
   verify_p5_h22_diagonal_quadric_component_generic_obstruction.py
 
-tmp/codex_verify_env/Scripts/python.exe \
+python \
   audit_p5_h22_diagonal_quadric_component_generic_obstruction.py
 ```
 

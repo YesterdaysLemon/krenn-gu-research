@@ -5,11 +5,11 @@ name: hygiene
 #   1. every tracked Python file compiles;
 #   2. no generated solver artifact is tracked;
 #   3. local Markdown links resolve;
-#   4. THEOREM_LEDGER.json references and doc-referenced scripts exist;
-#   5. the five fast verifiers run and exit zero;
-#   6. dependency/solver versions are displayed.
-#
-# Plus the one fully self-contained unittest module.  The other three
+#   4. THEOREM_LEDGER.json integrity (existence, recomputed hashes,
+#      provenance contract, census-vs-entries validation);
+#   5. portability regression scan (no machine-specific paths);
+#   6. the five fast verifiers run and exit zero;
+#   7. dependency/solver versions are displayed.
 # test_*.py files read tmp/ audit fixtures produced by the certificate
 # replay chains; they stay manual (see CURRENT_FRONTIER.md, audit
 # section) because their inputs are regenerable, not tracked.

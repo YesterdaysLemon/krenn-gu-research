@@ -232,7 +232,7 @@ and then address component exhaustiveness.
 Run
 
 ```text
-tmp/codex_verify_env/Scripts/python.exe \
+python \
   verify_p5_h22_mixed_orientation_component_generic_obstruction.py
 
 python audit_p5_h22_mixed_orientation_component_generic_obstruction.py

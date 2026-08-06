@@ -184,7 +184,7 @@ The separate `H22` case remains open.
 Run:
 
 ```text
-tmp/codex_verify_env/Scripts/python.exe \
+python \
   verify_p5_h31_mixed_orientation_component_generic_obstruction.py
 
 python audit_p5_h31_mixed_orientation_component_generic_obstruction.py

@@ -536,7 +536,7 @@
     {
       "name": "Generic marked H31 fibre empty: disjoint mixed star",
       "document": "P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "8a146d26e79841c3",
+      "document_sha256_16": "4dccb4c70250b1c2",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -670,7 +670,7 @@
     {
       "name": "Generic marked H31 fibre empty: mixed orientation",
       "document": "P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "17b4cfc9d0c06ed7",
+      "document_sha256_16": "b03b2e944e489708",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -765,7 +765,7 @@
     {
       "name": "Generic marked H31 fibre empty: two rank two spoke mixed star",
       "document": "P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "f5a5d5e57949e003",
+      "document_sha256_16": "0a0caaf5be9a44ba",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -902,7 +902,7 @@
     {
       "name": "Generic weighted H22 fibre empty: diagonal quadric",
       "document": "P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "12ec144e618af231",
+      "document_sha256_16": "111600d991aa9c4f",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -942,7 +942,7 @@
     {
       "name": "Generic weighted H22 fibre empty: disjoint mixed star",
       "document": "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "8d92b1fb3ddbee23",
+      "document_sha256_16": "bb66ea92d650db7f",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1063,7 +1063,7 @@
     {
       "name": "Generic weighted H22 fibre empty: first rank two",
       "document": "P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "5920db91564e6c63",
+      "document_sha256_16": "e8f580faa7017986",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1103,7 +1103,7 @@
     {
       "name": "Generic weighted H22 fibre empty: mixed orientation",
       "document": "P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "4e3f8637a072f68c",
+      "document_sha256_16": "cb1c37ab04b7e65c",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1123,7 +1123,7 @@
     {
       "name": "Generic weighted H22 fibre empty: one three components",
       "document": "P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "28aa991219f090e8",
+      "document_sha256_16": "63ade8e6320a258d",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1301,7 +1301,7 @@
     {
       "name": "Eighth-component weighted H22 closure - canonical determinantal proof",
       "document": "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "8d92b1fb3ddbee23",
+      "document_sha256_16": "bb66ea92d650db7f",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1355,7 +1355,7 @@
     {
       "name": "Eighth-component torus quotient and certificate-divisor frontier",
       "document": "P5_H22_DISJOINT_MIXED_STAR_TORUS_QUOTIENT.md",
-      "document_sha256_16": "ed2eaff3851709b4",
+      "document_sha256_16": "9e61ee13f3d37309",
       "status": "verified",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1535,7 +1535,7 @@
     {
       "name": "Weighted H22 disjoint mixed-star working note",
       "document": "P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md",
-      "document_sha256_16": "254d6c7cd2571ee9",
+      "document_sha256_16": "b34b53d2800008d9",
       "status": "superseded",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],

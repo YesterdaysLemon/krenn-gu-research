@@ -87,10 +87,10 @@ for `D_23`, both are nonzero at the two tested points.
 Run the two exact finite-field censuses with:
 
 ```text
-tmp/codex_verify_env/Scripts/python.exe \
+python \
   explore_p5_h22_disjoint_mixed_star_modular.py 11 2
 
-tmp/codex_verify_env/Scripts/python.exe \
+python \
   explore_p5_h22_disjoint_mixed_star_modular.py 13 2
 ```
 

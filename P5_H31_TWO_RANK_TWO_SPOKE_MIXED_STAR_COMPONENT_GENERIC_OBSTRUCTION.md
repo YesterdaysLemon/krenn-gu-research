@@ -222,10 +222,10 @@ global problem.  The active symbolic fronts are now:
 Run:
 
 ```text
-tmp/codex_verify_env/Scripts/python.exe \
+python \
   verify_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py
 
-tmp/codex_verify_env/Scripts/python.exe \
+python \
   audit_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py
 ```
 

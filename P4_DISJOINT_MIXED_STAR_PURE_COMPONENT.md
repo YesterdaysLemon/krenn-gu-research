@@ -300,10 +300,10 @@ The global prize conjecture remains unresolved.
 Run:
 
 ```text
-tmp/codex_verify_env/Scripts/python.exe \
+python \
   verify_p4_disjoint_mixed_star_pure_component.py
 
-tmp/codex_verify_env/Scripts/python.exe \
+python \
   audit_p4_disjoint_mixed_star_pure_component.py
 ```
 

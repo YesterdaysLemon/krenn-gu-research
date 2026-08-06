@@ -316,7 +316,7 @@ excluded in
 Run:
 
 ```text
-tmp/codex_verify_env/Scripts/python.exe \
+python \
   verify_p4_radical_star_component_classification.py
 
 python audit_p4_radical_star_component_classification.py
