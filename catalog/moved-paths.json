@@ -6,23 +6,28 @@
   "pilot_package": "claims/p5/h22/disjoint-mixed-star",
   "status_model": {
     "moved": "already executed",
-    "pilot": "approved and executed pilot batch",
-    "approved": "high-confidence, executable as a named batch",
-    "review_required": "proposal only; execute_moves.py refuses these until promoted"
+    "pilot": "the executed pilot batch",
+    "proposed_high_confidence": "classifier says high confidence, but this is NOT operational approval; a human must promote members into a named batch file before execution",
+    "review_required": "medium/low confidence proposal; needs human review before it may even be batched"
+  },
+  "approval_model": {
+    "rule": "no classification confidence is executable on its own; execute_moves.py runs only batches listed in catalog/batches/*.json with reviewer, base SHA, and member list",
+    "batch_directory": "catalog/batches"
   },
   "counts": {
     "total_classified_moves": 2015,
     "moved": 36,
     "pilot": 0,
-    "approved": 369,
+    "proposed_high_confidence": 369,
     "review_required": 1610,
     "unclassified": 348,
     "root_files_before": 2363,
     "root_dirs_before": 3,
     "root_entries_before": 2366,
-    "projected_root_if_approved_only": 1967,
-    "projected_root_if_review_also_approved": 357,
-    "projected_root_with_unclassified_still_at_root": 705,
+    "projected_root_if_moved_only": 2336,
+    "projected_root_if_high_confidence_batches_executed": 1967,
+    "projected_root_if_all_classified_executed": 357,
+    "projection_note": "unclassified files are not members of any move set, so every projection already leaves them at the root; do not add unclassified_count again",
     "collisions": 0,
     "double_moves": 0,
     "overlap_cycles": 0
@@ -41,7 +46,7 @@
     {
       "old_path": "THEOREM_LEDGER.json",
       "new_path": "catalog/theorem-ledger.json",
-      "reason": "catalog -> None [already applied at HEAD]",
+      "reason": "catalog -> None",
       "status": "moved",
       "claim_family": null,
       "confidence": "high"
@@ -1098,7 +1103,7 @@
       "old_path": "audit_all_quadrangle_p5_obstruction.py",
       "new_path": "claims/arbitrary-order/audit_all_quadrangle_p5_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1106,7 +1111,7 @@
       "old_path": "audit_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1114,7 +1119,7 @@
       "old_path": "audit_arbitrary_order_degree_six_kotzig_port_obstruction.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_order_degree_six_kotzig_port_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1122,7 +1127,7 @@
       "old_path": "audit_arbitrary_order_two_residual_strict_support_staircase_and_coordinate_forcing.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_order_two_residual_strict_support_staircase_and_coordinate_forcing.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1130,7 +1135,7 @@
       "old_path": "audit_arbitrary_permanent_equality_backbone_coloring_glue_theorem.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_equality_backbone_coloring_glue_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1138,7 +1143,7 @@
       "old_path": "audit_arbitrary_permanent_equality_exceptional_source_rectangle_theorem.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_equality_exceptional_source_rectangle_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1146,7 +1151,7 @@
       "old_path": "audit_arbitrary_permanent_equality_five_edge_shore_kempe_exclusion.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_equality_five_edge_shore_kempe_exclusion.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1154,7 +1159,7 @@
       "old_path": "audit_arbitrary_permanent_equality_negative_gain_graph_theorem.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_equality_negative_gain_graph_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1162,7 +1167,7 @@
       "old_path": "audit_arbitrary_permanent_equality_one_switch_cut_normal_form_theorem.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_equality_one_switch_cut_normal_form_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1170,7 +1175,7 @@
       "old_path": "audit_arbitrary_permanent_equality_one_switch_exclusion_theorem.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_equality_one_switch_exclusion_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1178,7 +1183,7 @@
       "old_path": "audit_arbitrary_permanent_equality_pure_matching_cube_theorem.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_equality_pure_matching_cube_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1186,7 +1191,7 @@
       "old_path": "audit_arbitrary_permanent_equality_three_edge_shore_flattening_exclusion.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_equality_three_edge_shore_flattening_exclusion.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1194,7 +1199,7 @@
       "old_path": "audit_arbitrary_permanent_equality_two_switch_excess_plane_separation_theorem.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_equality_two_switch_excess_plane_separation_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1202,7 +1207,7 @@
       "old_path": "audit_arbitrary_permanent_equality_two_switch_exclusion_theorem.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_equality_two_switch_exclusion_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1210,7 +1215,7 @@
       "old_path": "audit_arbitrary_permanent_equality_two_switch_port_completion_shore_theorem.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_equality_two_switch_port_completion_shore_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1218,7 +1223,7 @@
       "old_path": "audit_arbitrary_permanent_equality_zero_switch_exclusion_theorem.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_equality_zero_switch_exclusion_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1226,7 +1231,7 @@
       "old_path": "audit_arbitrary_permanent_five_mode_row_pair_incidence_theorem.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_five_mode_row_pair_incidence_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1234,7 +1239,7 @@
       "old_path": "audit_arbitrary_permanent_four_mode_row_pair_incidence_theorem.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_four_mode_row_pair_incidence_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1242,7 +1247,7 @@
       "old_path": "audit_arbitrary_permanent_kernel_deletion_hierarchy.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_kernel_deletion_hierarchy.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1250,7 +1255,7 @@
       "old_path": "audit_arbitrary_permanent_three_excess_apolar_boundary_quotient_theorem.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_apolar_boundary_quotient_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1258,7 +1263,7 @@
       "old_path": "audit_arbitrary_permanent_three_excess_b3_phase_holonomy_nogo.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_b3_phase_holonomy_nogo.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1266,7 +1271,7 @@
       "old_path": "audit_arbitrary_permanent_three_excess_bare_theta_absorption_and_cofactor_response_boundary.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_bare_theta_absorption_and_cofactor_response_boundary.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1274,7 +1279,7 @@
       "old_path": "audit_arbitrary_permanent_three_excess_bosonic_plucker_defect_theorem.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_bosonic_plucker_defect_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1282,7 +1287,7 @@
       "old_path": "audit_arbitrary_permanent_three_excess_boundary_delta_matroid_theorem.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_boundary_delta_matroid_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1290,7 +1295,7 @@
       "old_path": "audit_arbitrary_permanent_three_excess_boundary_entanglement_rank_theorem.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_boundary_entanglement_rank_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1298,7 +1303,7 @@
       "old_path": "audit_arbitrary_permanent_three_excess_boundary_jet_dominance_nogo.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_boundary_jet_dominance_nogo.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1306,7 +1311,7 @@
       "old_path": "audit_arbitrary_permanent_three_excess_conformal_birkhoff_reduction.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_conformal_birkhoff_reduction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1314,7 +1319,7 @@
       "old_path": "audit_arbitrary_permanent_three_excess_conformal_core_alignment_boundary.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_conformal_core_alignment_boundary.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1322,7 +1327,7 @@
       "old_path": "audit_arbitrary_permanent_three_excess_hamming_face_pinch_theorem.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_hamming_face_pinch_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1330,7 +1335,7 @@
       "old_path": "audit_arbitrary_permanent_three_excess_ineligible_ninth_cell_exclusion_theorem.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_ineligible_ninth_cell_exclusion_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1338,7 +1343,7 @@
       "old_path": "audit_arbitrary_permanent_three_excess_marked_response_toric_holonomy_boundary.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_marked_response_toric_holonomy_boundary.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1346,7 +1351,7 @@
       "old_path": "audit_arbitrary_permanent_three_excess_one_chord_210_alignment_desaturation_theorem.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_one_chord_210_alignment_desaturation_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1354,7 +1359,7 @@
       "old_path": "audit_arbitrary_permanent_three_excess_one_chord_apolar_saturation_boundary.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_one_chord_apolar_saturation_boundary.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1362,7 +1367,7 @@
       "old_path": "audit_arbitrary_permanent_three_excess_one_chord_cut_color_exclusion_theorem.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_one_chord_cut_color_exclusion_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1370,7 +1375,7 @@
       "old_path": "audit_arbitrary_permanent_three_excess_port_permutation_theorem.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_port_permutation_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1378,7 +1383,7 @@
       "old_path": "audit_arbitrary_permanent_three_excess_replay_exchange_closure_theorem.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_replay_exchange_closure_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1386,7 +1391,7 @@
       "old_path": "audit_arbitrary_permanent_three_excess_six_token_ear_theorem.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_six_token_ear_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1394,7 +1399,7 @@
       "old_path": "audit_arbitrary_permanent_three_excess_zeon_boundary_jet_theorem.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_zeon_boundary_jet_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1402,7 +1407,7 @@
       "old_path": "audit_arbitrary_permanent_three_m_plus_two_support_bound.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_m_plus_two_support_bound.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1410,7 +1415,7 @@
       "old_path": "audit_arbitrary_surplus_common_row_full_span_obstruction.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_surplus_common_row_full_span_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1418,7 +1423,7 @@
       "old_path": "audit_bosonic_hafnian_spinor_no_transfer.py",
       "new_path": "claims/arbitrary-order/audit_bosonic_hafnian_spinor_no_transfer.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1426,7 +1431,7 @@
       "old_path": "audit_component20_intrinsic_wall_exceptional_fibres_candidate.py",
       "new_path": "claims/arbitrary-order/audit_component20_intrinsic_wall_exceptional_fibres_candidate.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1434,7 +1439,7 @@
       "old_path": "audit_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py",
       "new_path": "claims/arbitrary-order/audit_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1442,7 +1447,7 @@
       "old_path": "audit_five_mode_row_pair_incidence_equality_polar_classification_sharpness.py",
       "new_path": "claims/arbitrary-order/audit_five_mode_row_pair_incidence_equality_polar_classification_sharpness.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1450,7 +1455,7 @@
       "old_path": "audit_five_regular_balanced_bridge_diagonal_backbone.py",
       "new_path": "claims/arbitrary-order/audit_five_regular_balanced_bridge_diagonal_backbone.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1458,7 +1463,7 @@
       "old_path": "audit_five_root_boundary_transversal_blocker_classification.py",
       "new_path": "claims/arbitrary-order/audit_five_root_boundary_transversal_blocker_classification.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1466,7 +1471,7 @@
       "old_path": "audit_five_root_tight_blocker_p5_extraction.py",
       "new_path": "claims/arbitrary-order/audit_five_root_tight_blocker_p5_extraction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1474,7 +1479,7 @@
       "old_path": "audit_five_root_torus_resultant_dichotomy.py",
       "new_path": "claims/arbitrary-order/audit_five_root_torus_resultant_dichotomy.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1482,7 +1487,7 @@
       "old_path": "audit_five_row_projective_normal_forms.py",
       "new_path": "claims/arbitrary-order/audit_five_row_projective_normal_forms.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1490,7 +1495,7 @@
       "old_path": "audit_four_blocker_ideal_obstruction.py",
       "new_path": "claims/arbitrary-order/audit_four_blocker_ideal_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1498,7 +1503,7 @@
       "old_path": "audit_four_regular_balanced_bridge_obstruction.py",
       "new_path": "claims/arbitrary-order/audit_four_regular_balanced_bridge_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1506,7 +1511,7 @@
       "old_path": "audit_four_root_six_blocker_arbitrary_order_kernel_support_obstruction.py",
       "new_path": "claims/arbitrary-order/audit_four_root_six_blocker_arbitrary_order_kernel_support_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1514,7 +1519,7 @@
       "old_path": "audit_four_root_smooth_torus_obstruction.py",
       "new_path": "claims/arbitrary-order/audit_four_root_smooth_torus_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1522,7 +1527,7 @@
       "old_path": "audit_graph_extraction_strict_support_transfer_corollary.py",
       "new_path": "claims/arbitrary-order/audit_graph_extraction_strict_support_transfer_corollary.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1530,7 +1535,7 @@
       "old_path": "audit_graph_extraction_top_two_port_synchronization_observability_boundary.py",
       "new_path": "claims/arbitrary-order/audit_graph_extraction_top_two_port_synchronization_observability_boundary.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1538,7 +1543,7 @@
       "old_path": "audit_hafnian_principal_cofactor_gradient_dominance.py",
       "new_path": "claims/arbitrary-order/audit_hafnian_principal_cofactor_gradient_dominance.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1546,7 +1551,7 @@
       "old_path": "audit_higher_residual_permanental_tomography_nested_cofactor_stress_and_cumulant_interface.py",
       "new_path": "claims/arbitrary-order/audit_higher_residual_permanental_tomography_nested_cofactor_stress_and_cumulant_interface.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1554,7 +1559,7 @@
       "old_path": "audit_residual_hafnian_common_gram_audit_and_torus_zero_full_rank_sharpness.py",
       "new_path": "claims/arbitrary-order/audit_residual_hafnian_common_gram_audit_and_torus_zero_full_rank_sharpness.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1562,7 +1567,7 @@
       "old_path": "audit_residual_hafnian_torus_zero_full_rank_cofactor_boundary.py",
       "new_path": "claims/arbitrary-order/audit_residual_hafnian_torus_zero_full_rank_cofactor_boundary.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1570,7 +1575,7 @@
       "old_path": "audit_root_m7_all_endpoint_legal_three_incidence_supports_exclusion.py",
       "new_path": "claims/arbitrary-order/audit_root_m7_all_endpoint_legal_three_incidence_supports_exclusion.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1578,7 +1583,7 @@
       "old_path": "audit_root_m7_cofactor_quotient_wedge_invariant.py",
       "new_path": "claims/arbitrary-order/audit_root_m7_cofactor_quotient_wedge_invariant.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1586,7 +1591,7 @@
       "old_path": "audit_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py",
       "new_path": "claims/arbitrary-order/audit_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1594,7 +1599,7 @@
       "old_path": "audit_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py",
       "new_path": "claims/arbitrary-order/audit_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1602,7 +1607,7 @@
       "old_path": "audit_root_m7_four_root_hidden_pair_cofactor_theorem.py",
       "new_path": "claims/arbitrary-order/audit_root_m7_four_root_hidden_pair_cofactor_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1610,7 +1615,7 @@
       "old_path": "audit_root_m7_hall_satisfying_two_port_pure_p7_construction.py",
       "new_path": "claims/arbitrary-order/audit_root_m7_hall_satisfying_two_port_pure_p7_construction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1618,7 +1623,7 @@
       "old_path": "audit_root_m7_hirota_hidden_overlay_surjectivity_nogo.py",
       "new_path": "claims/arbitrary-order/audit_root_m7_hirota_hidden_overlay_surjectivity_nogo.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1626,7 +1631,7 @@
       "old_path": "audit_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py",
       "new_path": "claims/arbitrary-order/audit_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1634,7 +1639,7 @@
       "old_path": "audit_root_m7_relative_triple_fourth_incidence_shell_exclusion.py",
       "new_path": "claims/arbitrary-order/audit_root_m7_relative_triple_fourth_incidence_shell_exclusion.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1642,7 +1647,7 @@
       "old_path": "audit_root_m7_simultaneous_rank_one_hidden_pair_realization_nogo.py",
       "new_path": "claims/arbitrary-order/audit_root_m7_simultaneous_rank_one_hidden_pair_realization_nogo.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1650,7 +1655,7 @@
       "old_path": "audit_root_m7_symbolic_route_boundary_theorems.py",
       "new_path": "claims/arbitrary-order/audit_root_m7_symbolic_route_boundary_theorems.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1658,7 +1663,7 @@
       "old_path": "audit_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py",
       "new_path": "claims/arbitrary-order/audit_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1666,7 +1671,7 @@
       "old_path": "audit_root_m7_three_port_pressure_enlargement_shared_factor_obstruction.py",
       "new_path": "claims/arbitrary-order/audit_root_m7_three_port_pressure_enlargement_shared_factor_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1674,7 +1679,7 @@
       "old_path": "audit_root_m7_unique_pair_third_incidence_shell_exclusion.py",
       "new_path": "claims/arbitrary-order/audit_root_m7_unique_pair_third_incidence_shell_exclusion.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1682,7 +1687,7 @@
       "old_path": "audit_root_of_unity_block_permanent_selector.py",
       "new_path": "claims/arbitrary-order/audit_root_of_unity_block_permanent_selector.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1690,7 +1695,7 @@
       "old_path": "audit_root_of_unity_selector_symmetric_hafnian_lift.py",
       "new_path": "claims/arbitrary-order/audit_root_of_unity_selector_symmetric_hafnian_lift.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1698,7 +1703,7 @@
       "old_path": "audit_root_tangent_companion_necessity_for_coordinate_slice.py",
       "new_path": "claims/arbitrary-order/audit_root_tangent_companion_necessity_for_coordinate_slice.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1706,7 +1711,7 @@
       "old_path": "audit_root_tangent_cycle_frame_symmetry_realization.py",
       "new_path": "claims/arbitrary-order/audit_root_tangent_cycle_frame_symmetry_realization.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1714,7 +1719,7 @@
       "old_path": "audit_root_tangent_minimal_cycle_idempotent_second_third_jet_classification.py",
       "new_path": "claims/arbitrary-order/audit_root_tangent_minimal_cycle_idempotent_second_third_jet_classification.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1722,7 +1727,7 @@
       "old_path": "audit_root_tangent_minimal_cycle_second_jet_obstruction.py",
       "new_path": "claims/arbitrary-order/audit_root_tangent_minimal_cycle_second_jet_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1730,7 +1735,7 @@
       "old_path": "audit_six_blocker_admissible_quotient_catalogue.py",
       "new_path": "claims/arbitrary-order/audit_six_blocker_admissible_quotient_catalogue.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1738,7 +1743,7 @@
       "old_path": "audit_six_blocker_arbitrary_cofactor_projectively_constant_row_obstruction.py",
       "new_path": "claims/arbitrary-order/audit_six_blocker_arbitrary_cofactor_projectively_constant_row_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1746,7 +1751,7 @@
       "old_path": "audit_six_blocker_hafnian_polar_cubic_condensation_no_go.py",
       "new_path": "claims/arbitrary-order/audit_six_blocker_hafnian_polar_cubic_condensation_no_go.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1754,7 +1759,7 @@
       "old_path": "audit_six_blocker_maximal_overlap_ghz_hypercube.py",
       "new_path": "claims/arbitrary-order/audit_six_blocker_maximal_overlap_ghz_hypercube.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1762,7 +1767,7 @@
       "old_path": "audit_six_blocker_maximal_overlap_port_swap_collapse.py",
       "new_path": "claims/arbitrary-order/audit_six_blocker_maximal_overlap_port_swap_collapse.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1770,7 +1775,7 @@
       "old_path": "audit_six_blocker_nonzero_cross_port_freedom.py",
       "new_path": "claims/arbitrary-order/audit_six_blocker_nonzero_cross_port_freedom.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1778,7 +1783,7 @@
       "old_path": "audit_six_blocker_order12_isotropic_p6_curve.py",
       "new_path": "claims/arbitrary-order/audit_six_blocker_order12_isotropic_p6_curve.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1786,7 +1791,7 @@
       "old_path": "audit_six_blocker_order12_kernel_support_cover_no_torus_p6.py",
       "new_path": "claims/arbitrary-order/audit_six_blocker_order12_kernel_support_cover_no_torus_p6.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1794,7 +1799,7 @@
       "old_path": "audit_six_blocker_order12_nonzero_diagonal_cofactor_no_torus_p6.py",
       "new_path": "claims/arbitrary-order/audit_six_blocker_order12_nonzero_diagonal_cofactor_no_torus_p6.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1802,7 +1807,7 @@
       "old_path": "audit_six_blocker_order12_quotient_rank_frame_classification.py",
       "new_path": "claims/arbitrary-order/audit_six_blocker_order12_quotient_rank_frame_classification.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1810,7 +1815,7 @@
       "old_path": "audit_six_blocker_order12_three_kernel_pure_cofactor_compatibility_obstruction.py",
       "new_path": "claims/arbitrary-order/audit_six_blocker_order12_three_kernel_pure_cofactor_compatibility_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1818,7 +1823,7 @@
       "old_path": "audit_six_blocker_order12_zero_quotient_cofactor_syzygy.py",
       "new_path": "claims/arbitrary-order/audit_six_blocker_order12_zero_quotient_cofactor_syzygy.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1826,7 +1831,7 @@
       "old_path": "audit_six_blocker_order12_zero_quotient_core_no_concise_p6.py",
       "new_path": "claims/arbitrary-order/audit_six_blocker_order12_zero_quotient_core_no_concise_p6.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1834,7 +1839,7 @@
       "old_path": "audit_support_four_p5_contraction_restriction.py",
       "new_path": "claims/arbitrary-order/audit_support_four_p5_contraction_restriction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1842,7 +1847,7 @@
       "old_path": "audit_support_three_p5_contraction_subrank.py",
       "new_path": "claims/arbitrary-order/audit_support_three_p5_contraction_subrank.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1850,7 +1855,7 @@
       "old_path": "audit_two_residual_coordinate_monomial_slice_universality_nogo.py",
       "new_path": "claims/arbitrary-order/audit_two_residual_coordinate_monomial_slice_universality_nogo.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1858,7 +1863,7 @@
       "old_path": "audit_two_residual_nonblocker_two_port_factorisation.py",
       "new_path": "claims/arbitrary-order/audit_two_residual_nonblocker_two_port_factorisation.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1866,7 +1871,7 @@
       "old_path": "verify_adjacent_port_determinant_transport_lemma.py",
       "new_path": "claims/arbitrary-order/verify_adjacent_port_determinant_transport_lemma.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1874,7 +1879,7 @@
       "old_path": "verify_all_quadrangle_p5_obstruction.py",
       "new_path": "claims/arbitrary-order/verify_all_quadrangle_p5_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1882,7 +1887,7 @@
       "old_path": "verify_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1890,7 +1895,7 @@
       "old_path": "verify_arbitrary_order_degree_six_kotzig_port_obstruction.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_order_degree_six_kotzig_port_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1898,7 +1903,7 @@
       "old_path": "verify_arbitrary_order_two_residual_strict_support_staircase_and_coordinate_forcing.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_order_two_residual_strict_support_staircase_and_coordinate_forcing.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1906,7 +1911,7 @@
       "old_path": "verify_arbitrary_permanent_equality_backbone_coloring_glue_theorem.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_equality_backbone_coloring_glue_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1914,7 +1919,7 @@
       "old_path": "verify_arbitrary_permanent_equality_exceptional_source_rectangle_theorem.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_equality_exceptional_source_rectangle_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1922,7 +1927,7 @@
       "old_path": "verify_arbitrary_permanent_equality_five_edge_shore_kempe_exclusion.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_equality_five_edge_shore_kempe_exclusion.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1930,7 +1935,7 @@
       "old_path": "verify_arbitrary_permanent_equality_negative_gain_graph_theorem.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_equality_negative_gain_graph_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1938,7 +1943,7 @@
       "old_path": "verify_arbitrary_permanent_equality_one_switch_cut_normal_form_theorem.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_equality_one_switch_cut_normal_form_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1946,7 +1951,7 @@
       "old_path": "verify_arbitrary_permanent_equality_one_switch_exclusion_theorem.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_equality_one_switch_exclusion_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1954,7 +1959,7 @@
       "old_path": "verify_arbitrary_permanent_equality_pure_matching_cube_theorem.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_equality_pure_matching_cube_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1962,7 +1967,7 @@
       "old_path": "verify_arbitrary_permanent_equality_three_edge_shore_flattening_exclusion.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_equality_three_edge_shore_flattening_exclusion.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1970,7 +1975,7 @@
       "old_path": "verify_arbitrary_permanent_equality_two_switch_excess_plane_separation_theorem.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_equality_two_switch_excess_plane_separation_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1978,7 +1983,7 @@
       "old_path": "verify_arbitrary_permanent_equality_two_switch_exclusion_theorem.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_equality_two_switch_exclusion_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1986,7 +1991,7 @@
       "old_path": "verify_arbitrary_permanent_equality_two_switch_port_completion_shore_theorem.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_equality_two_switch_port_completion_shore_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -1994,7 +1999,7 @@
       "old_path": "verify_arbitrary_permanent_equality_zero_switch_exclusion_theorem.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_equality_zero_switch_exclusion_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2002,7 +2007,7 @@
       "old_path": "verify_arbitrary_permanent_five_mode_row_pair_incidence_theorem.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_five_mode_row_pair_incidence_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2010,7 +2015,7 @@
       "old_path": "verify_arbitrary_permanent_four_mode_row_pair_incidence_theorem.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_four_mode_row_pair_incidence_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2018,7 +2023,7 @@
       "old_path": "verify_arbitrary_permanent_kernel_deletion_hierarchy.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_kernel_deletion_hierarchy.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2026,7 +2031,7 @@
       "old_path": "verify_arbitrary_permanent_three_excess_apolar_boundary_quotient_theorem.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_apolar_boundary_quotient_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2034,7 +2039,7 @@
       "old_path": "verify_arbitrary_permanent_three_excess_b3_phase_holonomy_nogo.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_b3_phase_holonomy_nogo.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2042,7 +2047,7 @@
       "old_path": "verify_arbitrary_permanent_three_excess_bare_theta_absorption_and_cofactor_response_boundary.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_bare_theta_absorption_and_cofactor_response_boundary.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2050,7 +2055,7 @@
       "old_path": "verify_arbitrary_permanent_three_excess_bosonic_plucker_defect_theorem.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_bosonic_plucker_defect_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2058,7 +2063,7 @@
       "old_path": "verify_arbitrary_permanent_three_excess_boundary_delta_matroid_theorem.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_boundary_delta_matroid_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2066,7 +2071,7 @@
       "old_path": "verify_arbitrary_permanent_three_excess_boundary_entanglement_rank_theorem.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_boundary_entanglement_rank_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2074,7 +2079,7 @@
       "old_path": "verify_arbitrary_permanent_three_excess_boundary_jet_dominance_nogo.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_boundary_jet_dominance_nogo.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2082,7 +2087,7 @@
       "old_path": "verify_arbitrary_permanent_three_excess_conformal_birkhoff_reduction.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_conformal_birkhoff_reduction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2090,7 +2095,7 @@
       "old_path": "verify_arbitrary_permanent_three_excess_conformal_core_alignment_boundary.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_conformal_core_alignment_boundary.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2098,7 +2103,7 @@
       "old_path": "verify_arbitrary_permanent_three_excess_hamming_face_pinch_theorem.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_hamming_face_pinch_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2106,7 +2111,7 @@
       "old_path": "verify_arbitrary_permanent_three_excess_ineligible_ninth_cell_exclusion_theorem.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_ineligible_ninth_cell_exclusion_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2114,7 +2119,7 @@
       "old_path": "verify_arbitrary_permanent_three_excess_marked_response_toric_holonomy_boundary.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_marked_response_toric_holonomy_boundary.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2122,7 +2127,7 @@
       "old_path": "verify_arbitrary_permanent_three_excess_one_chord_210_alignment_desaturation_theorem.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_one_chord_210_alignment_desaturation_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2130,7 +2135,7 @@
       "old_path": "verify_arbitrary_permanent_three_excess_one_chord_apolar_saturation_boundary.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_one_chord_apolar_saturation_boundary.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2138,7 +2143,7 @@
       "old_path": "verify_arbitrary_permanent_three_excess_one_chord_cut_color_exclusion_theorem.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_one_chord_cut_color_exclusion_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2146,7 +2151,7 @@
       "old_path": "verify_arbitrary_permanent_three_excess_port_permutation_theorem.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_port_permutation_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2154,7 +2159,7 @@
       "old_path": "verify_arbitrary_permanent_three_excess_replay_exchange_closure_theorem.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_replay_exchange_closure_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2162,7 +2167,7 @@
       "old_path": "verify_arbitrary_permanent_three_excess_six_token_ear_theorem.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_six_token_ear_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2170,7 +2175,7 @@
       "old_path": "verify_arbitrary_permanent_three_excess_zeon_boundary_jet_theorem.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_zeon_boundary_jet_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2178,7 +2183,7 @@
       "old_path": "verify_arbitrary_permanent_three_m_plus_two_support_bound.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_m_plus_two_support_bound.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2186,7 +2191,7 @@
       "old_path": "verify_arbitrary_surplus_common_row_full_span_obstruction.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_surplus_common_row_full_span_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2194,7 +2199,7 @@
       "old_path": "verify_bosonic_hafnian_spinor_no_transfer.py",
       "new_path": "claims/arbitrary-order/verify_bosonic_hafnian_spinor_no_transfer.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2202,7 +2207,7 @@
       "old_path": "verify_even_cycle_feasible_set_expansion.py",
       "new_path": "claims/arbitrary-order/verify_even_cycle_feasible_set_expansion.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2210,7 +2215,7 @@
       "old_path": "verify_five_mode_row_pair_incidence_equality_polar_classification_sharpness.py",
       "new_path": "claims/arbitrary-order/verify_five_mode_row_pair_incidence_equality_polar_classification_sharpness.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2218,7 +2223,7 @@
       "old_path": "verify_five_regular_balanced_bridge_diagonal_backbone.py",
       "new_path": "claims/arbitrary-order/verify_five_regular_balanced_bridge_diagonal_backbone.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2226,7 +2231,7 @@
       "old_path": "verify_five_root_boundary_transversal_blocker_classification.py",
       "new_path": "claims/arbitrary-order/verify_five_root_boundary_transversal_blocker_classification.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2234,7 +2239,7 @@
       "old_path": "verify_five_root_tight_blocker_p5_extraction.py",
       "new_path": "claims/arbitrary-order/verify_five_root_tight_blocker_p5_extraction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2242,7 +2247,7 @@
       "old_path": "verify_five_root_torus_resultant_dichotomy.py",
       "new_path": "claims/arbitrary-order/verify_five_root_torus_resultant_dichotomy.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2250,7 +2255,7 @@
       "old_path": "verify_five_row_projective_normal_forms.py",
       "new_path": "claims/arbitrary-order/verify_five_row_projective_normal_forms.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2258,7 +2263,7 @@
       "old_path": "verify_four_blocker_ideal_obstruction.py",
       "new_path": "claims/arbitrary-order/verify_four_blocker_ideal_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2266,7 +2271,7 @@
       "old_path": "verify_four_regular_balanced_bridge_obstruction.py",
       "new_path": "claims/arbitrary-order/verify_four_regular_balanced_bridge_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2274,7 +2279,7 @@
       "old_path": "verify_four_root_six_blocker_arbitrary_order_kernel_support_obstruction.py",
       "new_path": "claims/arbitrary-order/verify_four_root_six_blocker_arbitrary_order_kernel_support_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2282,7 +2287,7 @@
       "old_path": "verify_four_root_smooth_torus_obstruction.py",
       "new_path": "claims/arbitrary-order/verify_four_root_smooth_torus_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2290,7 +2295,7 @@
       "old_path": "verify_graph_extraction_strict_support_transfer_corollary.py",
       "new_path": "claims/arbitrary-order/verify_graph_extraction_strict_support_transfer_corollary.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2298,7 +2303,7 @@
       "old_path": "verify_graph_extraction_top_two_port_synchronization_observability_boundary.py",
       "new_path": "claims/arbitrary-order/verify_graph_extraction_top_two_port_synchronization_observability_boundary.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2306,7 +2311,7 @@
       "old_path": "verify_hafnian_principal_cofactor_gradient_dominance.py",
       "new_path": "claims/arbitrary-order/verify_hafnian_principal_cofactor_gradient_dominance.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2314,7 +2319,7 @@
       "old_path": "verify_higher_residual_permanental_tomography_nested_cofactor_stress_and_cumulant_interface.py",
       "new_path": "claims/arbitrary-order/verify_higher_residual_permanental_tomography_nested_cofactor_stress_and_cumulant_interface.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2322,7 +2327,7 @@
       "old_path": "verify_minimal_singleton_circuit_rectangle_theorem.py",
       "new_path": "claims/arbitrary-order/verify_minimal_singleton_circuit_rectangle_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2330,7 +2335,7 @@
       "old_path": "verify_partial_minimal_singleton_circuit_dichotomy.py",
       "new_path": "claims/arbitrary-order/verify_partial_minimal_singleton_circuit_dichotomy.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2338,7 +2343,7 @@
       "old_path": "verify_residual_hafnian_common_gram_audit_and_torus_zero_full_rank_sharpness.py",
       "new_path": "claims/arbitrary-order/verify_residual_hafnian_common_gram_audit_and_torus_zero_full_rank_sharpness.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2346,7 +2351,7 @@
       "old_path": "verify_residual_hafnian_torus_zero_full_rank_cofactor_boundary.py",
       "new_path": "claims/arbitrary-order/verify_residual_hafnian_torus_zero_full_rank_cofactor_boundary.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2354,7 +2359,7 @@
       "old_path": "verify_root_m7_all_endpoint_legal_three_incidence_supports_exclusion.py",
       "new_path": "claims/arbitrary-order/verify_root_m7_all_endpoint_legal_three_incidence_supports_exclusion.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2362,7 +2367,7 @@
       "old_path": "verify_root_m7_cofactor_quotient_wedge_invariant.py",
       "new_path": "claims/arbitrary-order/verify_root_m7_cofactor_quotient_wedge_invariant.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2370,7 +2375,7 @@
       "old_path": "verify_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py",
       "new_path": "claims/arbitrary-order/verify_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2378,7 +2383,7 @@
       "old_path": "verify_root_m7_four_root_hidden_pair_cofactor_theorem.py",
       "new_path": "claims/arbitrary-order/verify_root_m7_four_root_hidden_pair_cofactor_theorem.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2386,7 +2391,7 @@
       "old_path": "verify_root_m7_hall_satisfying_two_port_pure_p7_construction.py",
       "new_path": "claims/arbitrary-order/verify_root_m7_hall_satisfying_two_port_pure_p7_construction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2394,7 +2399,7 @@
       "old_path": "verify_root_m7_hirota_hidden_overlay_surjectivity_nogo.py",
       "new_path": "claims/arbitrary-order/verify_root_m7_hirota_hidden_overlay_surjectivity_nogo.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2402,7 +2407,7 @@
       "old_path": "verify_root_m7_relative_triple_fourth_incidence_shell_exclusion.py",
       "new_path": "claims/arbitrary-order/verify_root_m7_relative_triple_fourth_incidence_shell_exclusion.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2410,7 +2415,7 @@
       "old_path": "verify_root_m7_simultaneous_rank_one_hidden_pair_realization_nogo.py",
       "new_path": "claims/arbitrary-order/verify_root_m7_simultaneous_rank_one_hidden_pair_realization_nogo.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2418,7 +2423,7 @@
       "old_path": "verify_root_m7_symbolic_route_boundary_theorems.py",
       "new_path": "claims/arbitrary-order/verify_root_m7_symbolic_route_boundary_theorems.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2426,7 +2431,7 @@
       "old_path": "verify_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py",
       "new_path": "claims/arbitrary-order/verify_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2434,7 +2439,7 @@
       "old_path": "verify_root_m7_three_port_pressure_enlargement_shared_factor_obstruction.py",
       "new_path": "claims/arbitrary-order/verify_root_m7_three_port_pressure_enlargement_shared_factor_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2442,7 +2447,7 @@
       "old_path": "verify_root_m7_unique_pair_third_incidence_shell_exclusion.py",
       "new_path": "claims/arbitrary-order/verify_root_m7_unique_pair_third_incidence_shell_exclusion.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2450,7 +2455,7 @@
       "old_path": "verify_root_of_unity_block_permanent_selector.py",
       "new_path": "claims/arbitrary-order/verify_root_of_unity_block_permanent_selector.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2458,7 +2463,7 @@
       "old_path": "verify_root_of_unity_selector_symmetric_hafnian_lift.py",
       "new_path": "claims/arbitrary-order/verify_root_of_unity_selector_symmetric_hafnian_lift.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2466,7 +2471,7 @@
       "old_path": "verify_root_tangent_companion_necessity_for_coordinate_slice.py",
       "new_path": "claims/arbitrary-order/verify_root_tangent_companion_necessity_for_coordinate_slice.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2474,7 +2479,7 @@
       "old_path": "verify_root_tangent_cycle_frame_symmetry_realization.py",
       "new_path": "claims/arbitrary-order/verify_root_tangent_cycle_frame_symmetry_realization.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2482,7 +2487,7 @@
       "old_path": "verify_root_tangent_minimal_cycle_idempotent_second_third_jet_classification.py",
       "new_path": "claims/arbitrary-order/verify_root_tangent_minimal_cycle_idempotent_second_third_jet_classification.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2490,7 +2495,7 @@
       "old_path": "verify_root_tangent_minimal_cycle_second_jet_obstruction.py",
       "new_path": "claims/arbitrary-order/verify_root_tangent_minimal_cycle_second_jet_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2498,7 +2503,7 @@
       "old_path": "verify_six_blocker_admissible_quotient_catalogue.py",
       "new_path": "claims/arbitrary-order/verify_six_blocker_admissible_quotient_catalogue.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2506,7 +2511,7 @@
       "old_path": "verify_six_blocker_arbitrary_cofactor_projectively_constant_row_obstruction.py",
       "new_path": "claims/arbitrary-order/verify_six_blocker_arbitrary_cofactor_projectively_constant_row_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2514,7 +2519,7 @@
       "old_path": "verify_six_blocker_hafnian_polar_cubic_condensation_no_go.py",
       "new_path": "claims/arbitrary-order/verify_six_blocker_hafnian_polar_cubic_condensation_no_go.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2522,7 +2527,7 @@
       "old_path": "verify_six_blocker_maximal_overlap_ghz_hypercube.py",
       "new_path": "claims/arbitrary-order/verify_six_blocker_maximal_overlap_ghz_hypercube.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2530,7 +2535,7 @@
       "old_path": "verify_six_blocker_maximal_overlap_port_swap_collapse.py",
       "new_path": "claims/arbitrary-order/verify_six_blocker_maximal_overlap_port_swap_collapse.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2538,7 +2543,7 @@
       "old_path": "verify_six_blocker_nonzero_cross_port_freedom.py",
       "new_path": "claims/arbitrary-order/verify_six_blocker_nonzero_cross_port_freedom.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2546,7 +2551,7 @@
       "old_path": "verify_six_blocker_order12_isotropic_p6_curve.py",
       "new_path": "claims/arbitrary-order/verify_six_blocker_order12_isotropic_p6_curve.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2554,7 +2559,7 @@
       "old_path": "verify_six_blocker_order12_kernel_support_cover_no_torus_p6.py",
       "new_path": "claims/arbitrary-order/verify_six_blocker_order12_kernel_support_cover_no_torus_p6.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2562,7 +2567,7 @@
       "old_path": "verify_six_blocker_order12_nonzero_diagonal_cofactor_no_torus_p6.py",
       "new_path": "claims/arbitrary-order/verify_six_blocker_order12_nonzero_diagonal_cofactor_no_torus_p6.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2570,7 +2575,7 @@
       "old_path": "verify_six_blocker_order12_quotient_rank_frame_classification.py",
       "new_path": "claims/arbitrary-order/verify_six_blocker_order12_quotient_rank_frame_classification.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2578,7 +2583,7 @@
       "old_path": "verify_six_blocker_order12_three_kernel_pure_cofactor_compatibility_obstruction.py",
       "new_path": "claims/arbitrary-order/verify_six_blocker_order12_three_kernel_pure_cofactor_compatibility_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2586,7 +2591,7 @@
       "old_path": "verify_six_blocker_order12_zero_quotient_cofactor_syzygy.py",
       "new_path": "claims/arbitrary-order/verify_six_blocker_order12_zero_quotient_cofactor_syzygy.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2594,7 +2599,7 @@
       "old_path": "verify_six_blocker_order12_zero_quotient_core_no_concise_p6.py",
       "new_path": "claims/arbitrary-order/verify_six_blocker_order12_zero_quotient_core_no_concise_p6.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2602,7 +2607,7 @@
       "old_path": "verify_support_four_p5_contraction_restriction.py",
       "new_path": "claims/arbitrary-order/verify_support_four_p5_contraction_restriction.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2610,7 +2615,7 @@
       "old_path": "verify_support_three_p5_contraction_subrank.py",
       "new_path": "claims/arbitrary-order/verify_support_three_p5_contraction_subrank.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2618,7 +2623,7 @@
       "old_path": "verify_two_residual_coordinate_monomial_slice_universality_nogo.py",
       "new_path": "claims/arbitrary-order/verify_two_residual_coordinate_monomial_slice_universality_nogo.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2626,7 +2631,7 @@
       "old_path": "verify_two_residual_nonblocker_two_port_factorisation.py",
       "new_path": "claims/arbitrary-order/verify_two_residual_nonblocker_two_port_factorisation.py",
       "reason": "claim_script -> arbitrary-order",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
     },
@@ -2682,7 +2687,7 @@
       "old_path": "EIGHT_VERTEX_DEGREE4_FRONTIER.md",
       "new_path": "claims/finite/n08/EIGHT_VERTEX_DEGREE4_FRONTIER.md",
       "reason": "claim_document -> finite/eight-vertex",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "finite/eight-vertex",
       "confidence": "high"
     },
@@ -2698,7 +2703,7 @@
       "old_path": "EIGHT_VERTEX_ENTRY84_BOUNDARY.md",
       "new_path": "claims/finite/n08/EIGHT_VERTEX_ENTRY84_BOUNDARY.md",
       "reason": "claim_document -> finite/eight-vertex",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "finite/eight-vertex",
       "confidence": "high"
     },
@@ -2714,7 +2719,7 @@
       "old_path": "verify_eight_vertex_degree4_frontier.py",
       "new_path": "claims/finite/n08/verify_eight_vertex_degree4_frontier.py",
       "reason": "claim_script -> finite/eight-vertex",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "finite/eight-vertex",
       "confidence": "high"
     },
@@ -2722,7 +2727,7 @@
       "old_path": "verify_eight_vertex_entry84_boundary.py",
       "new_path": "claims/finite/n08/verify_eight_vertex_entry84_boundary.py",
       "reason": "claim_script -> finite/eight-vertex",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "finite/eight-vertex",
       "confidence": "high"
     },
@@ -2762,7 +2767,7 @@
       "old_path": "TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md",
       "new_path": "claims/finite/n10/TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md",
       "reason": "claim_document -> finite/ten-vertex",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "finite/ten-vertex",
       "confidence": "high"
     },
@@ -2778,7 +2783,7 @@
       "old_path": "verify_ten_vertex_five_regular_equality_boundary.py",
       "new_path": "claims/finite/n10/verify_ten_vertex_five_regular_equality_boundary.py",
       "reason": "claim_script -> finite/ten-vertex",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "finite/ten-vertex",
       "confidence": "high"
     },
@@ -3034,7 +3039,7 @@
       "old_path": "FOURTEEN_VERTEX_NO_ONE_TERM_SUPPORT.md",
       "new_path": "claims/finite/n14/FOURTEEN_VERTEX_NO_ONE_TERM_SUPPORT.md",
       "reason": "claim_document -> finite/fourteen-vertex",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "finite/fourteen-vertex",
       "confidence": "high"
     },
@@ -3050,7 +3055,7 @@
       "old_path": "EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md",
       "new_path": "claims/legacy/EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md",
       "reason": "withdrawn_document -> legacy",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "legacy",
       "confidence": "high"
     },
@@ -3058,7 +3063,7 @@
       "old_path": "EIGHT_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
       "new_path": "claims/legacy/EIGHT_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
       "reason": "legacy_document -> legacy",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "legacy",
       "confidence": "high"
     },
@@ -3066,7 +3071,7 @@
       "old_path": "FULL_ADMISSIBLE_POTENTIAL_CONE_LEMMA.md",
       "new_path": "claims/legacy/FULL_ADMISSIBLE_POTENTIAL_CONE_LEMMA.md",
       "reason": "legacy_document -> legacy",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "legacy",
       "confidence": "high"
     },
@@ -3074,7 +3079,7 @@
       "old_path": "P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md",
       "new_path": "claims/legacy/P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md",
       "reason": "withdrawn_document -> legacy",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "legacy",
       "confidence": "high"
     },
@@ -3082,7 +3087,7 @@
       "old_path": "P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md",
       "new_path": "claims/legacy/P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md",
       "reason": "withdrawn_document -> legacy",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "legacy",
       "confidence": "high"
     },
@@ -3090,7 +3095,7 @@
       "old_path": "P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md",
       "new_path": "claims/legacy/P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md",
       "reason": "withdrawn_document -> legacy",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "legacy",
       "confidence": "high"
     },
@@ -3098,7 +3103,7 @@
       "old_path": "SIX_PERMUTED_POTENTIALS_LEMMA.md",
       "new_path": "claims/legacy/SIX_PERMUTED_POTENTIALS_LEMMA.md",
       "reason": "legacy_document -> legacy",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "legacy",
       "confidence": "high"
     },
@@ -3106,7 +3111,7 @@
       "old_path": "STATE_LIFT_CYCLE_FIBRE_LEMMA.md",
       "new_path": "claims/legacy/STATE_LIFT_CYCLE_FIBRE_LEMMA.md",
       "reason": "legacy_document -> legacy",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "legacy",
       "confidence": "high"
     },
@@ -3114,7 +3119,7 @@
       "old_path": "TEN_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
       "new_path": "claims/legacy/TEN_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
       "reason": "legacy_document -> legacy",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "legacy",
       "confidence": "high"
     },
@@ -3122,7 +3127,7 @@
       "old_path": "TWELVE_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION_WITHDRAWN_LEGACY.md",
       "new_path": "claims/legacy/TWELVE_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION_WITHDRAWN_LEGACY.md",
       "reason": "withdrawn_document -> legacy",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "legacy",
       "confidence": "high"
     },
@@ -7594,7 +7599,7 @@
       "old_path": "P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/all-rank-one-triangle/P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/all-rank-one-triangle",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/all-rank-one-triangle",
       "confidence": "high"
     },
@@ -7602,7 +7607,7 @@
       "old_path": "audit_p5_h22_all_rank_one_triangle_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/all-rank-one-triangle/audit_p5_h22_all_rank_one_triangle_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/all-rank-one-triangle",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/all-rank-one-triangle",
       "confidence": "high"
     },
@@ -7610,7 +7615,7 @@
       "old_path": "verify_p5_h22_all_rank_one_triangle_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/all-rank-one-triangle/verify_p5_h22_all_rank_one_triangle_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/all-rank-one-triangle",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/all-rank-one-triangle",
       "confidence": "high"
     },
@@ -7618,7 +7623,7 @@
       "old_path": "P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/coincident-support/P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/coincident-support",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/coincident-support",
       "confidence": "high"
     },
@@ -7626,7 +7631,7 @@
       "old_path": "P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md",
       "new_path": "claims/p5/h22/coincident-support/P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md",
       "reason": "claim_document -> p5/h22/coincident-support",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/coincident-support",
       "confidence": "high"
     },
@@ -7642,7 +7647,7 @@
       "old_path": "audit_p5_h22_coincident_support_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/coincident-support/audit_p5_h22_coincident_support_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/coincident-support",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/coincident-support",
       "confidence": "high"
     },
@@ -7658,7 +7663,7 @@
       "old_path": "verify_p5_h22_coincident_support_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/coincident-support/verify_p5_h22_coincident_support_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/coincident-support",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/coincident-support",
       "confidence": "high"
     },
@@ -8138,7 +8143,7 @@
       "old_path": "P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/common-center-kernel-star-component-r-zero-divisor/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/common-center-kernel-star-component-r-zero-divisor",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/common-center-kernel-star-component-r-zero-divisor",
       "confidence": "high"
     },
@@ -8146,7 +8151,7 @@
       "old_path": "audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py",
       "new_path": "claims/p5/h22/common-center-kernel-star-component-r-zero-divisor/audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/common-center-kernel-star-component-r-zero-divisor",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/common-center-kernel-star-component-r-zero-divisor",
       "confidence": "high"
     },
@@ -8154,7 +8159,7 @@
       "old_path": "verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py",
       "new_path": "claims/p5/h22/common-center-kernel-star-component-r-zero-divisor/verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/common-center-kernel-star-component-r-zero-divisor",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/common-center-kernel-star-component-r-zero-divisor",
       "confidence": "high"
     },
@@ -8378,7 +8383,7 @@
       "old_path": "P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/common-singleton",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/common-singleton",
       "confidence": "high"
     },
@@ -8386,7 +8391,7 @@
       "old_path": "audit_p5_h22_common_singleton_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/common-singleton/audit_p5_h22_common_singleton_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/common-singleton",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/common-singleton",
       "confidence": "high"
     },
@@ -8394,7 +8399,7 @@
       "old_path": "verify_p5_h22_common_singleton_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/common-singleton/verify_p5_h22_common_singleton_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/common-singleton",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/common-singleton",
       "confidence": "high"
     },
@@ -8850,7 +8855,7 @@
       "old_path": "P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/diagonal-quadric/P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/diagonal-quadric",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/diagonal-quadric",
       "confidence": "high"
     },
@@ -8866,7 +8871,7 @@
       "old_path": "audit_p5_h22_diagonal_quadric_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/diagonal-quadric/audit_p5_h22_diagonal_quadric_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/diagonal-quadric",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/diagonal-quadric",
       "confidence": "high"
     },
@@ -8874,7 +8879,7 @@
       "old_path": "verify_p5_h22_diagonal_quadric_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/diagonal-quadric/verify_p5_h22_diagonal_quadric_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/diagonal-quadric",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/diagonal-quadric",
       "confidence": "high"
     },
@@ -8882,7 +8887,7 @@
       "old_path": "P5_H22_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/directed-zero-divisor-triangle-components/P5_H22_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/directed-zero-divisor-triangle-components",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/directed-zero-divisor-triangle-components",
       "confidence": "high"
     },
@@ -8890,7 +8895,7 @@
       "old_path": "audit_p5_h22_directed_zero_divisor_triangle_components_generic_obstruction.py",
       "new_path": "claims/p5/h22/directed-zero-divisor-triangle-components/audit_p5_h22_directed_zero_divisor_triangle_components_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/directed-zero-divisor-triangle-components",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/directed-zero-divisor-triangle-components",
       "confidence": "high"
     },
@@ -8898,7 +8903,7 @@
       "old_path": "verify_p5_h22_directed_zero_divisor_triangle_components_generic_obstruction.py",
       "new_path": "claims/p5/h22/directed-zero-divisor-triangle-components/verify_p5_h22_directed_zero_divisor_triangle_components_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/directed-zero-divisor-triangle-components",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/directed-zero-divisor-triangle-components",
       "confidence": "high"
     },
@@ -9186,7 +9191,7 @@
       "old_path": "P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/disjoint-secant/P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/disjoint-secant",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/disjoint-secant",
       "confidence": "high"
     },
@@ -9194,7 +9199,7 @@
       "old_path": "audit_p5_h22_disjoint_secant_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/disjoint-secant/audit_p5_h22_disjoint_secant_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/disjoint-secant",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/disjoint-secant",
       "confidence": "high"
     },
@@ -9202,7 +9207,7 @@
       "old_path": "verify_p5_h22_disjoint_secant_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/disjoint-secant/verify_p5_h22_disjoint_secant_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/disjoint-secant",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/disjoint-secant",
       "confidence": "high"
     },
@@ -9210,7 +9215,7 @@
       "old_path": "P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/eisenstein-norm/P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/eisenstein-norm",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/eisenstein-norm",
       "confidence": "high"
     },
@@ -9218,7 +9223,7 @@
       "old_path": "audit_p5_h22_eisenstein_norm_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/eisenstein-norm/audit_p5_h22_eisenstein_norm_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/eisenstein-norm",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/eisenstein-norm",
       "confidence": "high"
     },
@@ -9226,7 +9231,7 @@
       "old_path": "verify_p5_h22_eisenstein_norm_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/eisenstein-norm/verify_p5_h22_eisenstein_norm_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/eisenstein-norm",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/eisenstein-norm",
       "confidence": "high"
     },
@@ -9234,7 +9239,7 @@
       "old_path": "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/embedded-p3",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/embedded-p3",
       "confidence": "high"
     },
@@ -9314,7 +9319,7 @@
       "old_path": "audit_p5_h22_embedded_p3_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/embedded-p3",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/embedded-p3",
       "confidence": "high"
     },
@@ -9362,7 +9367,7 @@
       "old_path": "verify_p5_h22_embedded_p3_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/embedded-p3/verify_p5_h22_embedded_p3_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/embedded-p3",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/embedded-p3",
       "confidence": "high"
     },
@@ -9394,7 +9399,7 @@
       "old_path": "P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/equal-support-common-factor/P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/equal-support-common-factor",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/equal-support-common-factor",
       "confidence": "high"
     },
@@ -9402,7 +9407,7 @@
       "old_path": "audit_p5_h22_equal_support_common_factor_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/equal-support-common-factor/audit_p5_h22_equal_support_common_factor_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/equal-support-common-factor",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/equal-support-common-factor",
       "confidence": "high"
     },
@@ -9410,7 +9415,7 @@
       "old_path": "verify_p5_h22_equal_support_common_factor_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/equal-support-common-factor/verify_p5_h22_equal_support_common_factor_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/equal-support-common-factor",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/equal-support-common-factor",
       "confidence": "high"
     },
@@ -9418,7 +9423,7 @@
       "old_path": "P5_H22_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/equal-support-sixfold/P5_H22_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/equal-support-sixfold",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/equal-support-sixfold",
       "confidence": "high"
     },
@@ -9426,7 +9431,7 @@
       "old_path": "verify_p5_h22_equal_support_sixfold_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/equal-support-sixfold/verify_p5_h22_equal_support_sixfold_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/equal-support-sixfold",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/equal-support-sixfold",
       "confidence": "high"
     },
@@ -9434,7 +9439,7 @@
       "old_path": "P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/first-rank-two/P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/first-rank-two",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/first-rank-two",
       "confidence": "high"
     },
@@ -9442,7 +9447,7 @@
       "old_path": "audit_p5_h22_first_rank_two_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/first-rank-two/audit_p5_h22_first_rank_two_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/first-rank-two",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/first-rank-two",
       "confidence": "high"
     },
@@ -9450,7 +9455,7 @@
       "old_path": "verify_p5_h22_first_rank_two_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/first-rank-two/verify_p5_h22_first_rank_two_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/first-rank-two",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/first-rank-two",
       "confidence": "high"
     },
@@ -9458,7 +9463,7 @@
       "old_path": "P5_H22_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/full-support-tangent/P5_H22_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/full-support-tangent",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/full-support-tangent",
       "confidence": "high"
     },
@@ -9466,7 +9471,7 @@
       "old_path": "audit_p5_h22_full_support_tangent_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/full-support-tangent/audit_p5_h22_full_support_tangent_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/full-support-tangent",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/full-support-tangent",
       "confidence": "high"
     },
@@ -9474,7 +9479,7 @@
       "old_path": "verify_p5_h22_full_support_tangent_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/full-support-tangent/verify_p5_h22_full_support_tangent_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/full-support-tangent",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/full-support-tangent",
       "confidence": "high"
     },
@@ -9482,7 +9487,7 @@
       "old_path": "P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/mixed-orientation/P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/mixed-orientation",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/mixed-orientation",
       "confidence": "high"
     },
@@ -9490,7 +9495,7 @@
       "old_path": "audit_p5_h22_mixed_orientation_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/mixed-orientation/audit_p5_h22_mixed_orientation_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/mixed-orientation",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/mixed-orientation",
       "confidence": "high"
     },
@@ -9498,7 +9503,7 @@
       "old_path": "verify_p5_h22_mixed_orientation_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/mixed-orientation/verify_p5_h22_mixed_orientation_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/mixed-orientation",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/mixed-orientation",
       "confidence": "high"
     },
@@ -9506,7 +9511,7 @@
       "old_path": "P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/one-three-components/P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/one-three-components",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/one-three-components",
       "confidence": "high"
     },
@@ -9514,7 +9519,7 @@
       "old_path": "audit_p5_h22_one_three_components_generic_obstruction.py",
       "new_path": "claims/p5/h22/one-three-components/audit_p5_h22_one_three_components_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/one-three-components",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/one-three-components",
       "confidence": "high"
     },
@@ -9522,7 +9527,7 @@
       "old_path": "verify_p5_h22_one_three_components_generic_obstruction.py",
       "new_path": "claims/p5/h22/one-three-components/verify_p5_h22_one_three_components_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/one-three-components",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/one-three-components",
       "confidence": "high"
     },
@@ -9562,7 +9567,7 @@
       "old_path": "P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/six-dimensional/P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/six-dimensional",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/six-dimensional",
       "confidence": "high"
     },
@@ -9570,7 +9575,7 @@
       "old_path": "P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/six-dimensional/P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/six-dimensional",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/six-dimensional",
       "confidence": "high"
     },
@@ -9578,7 +9583,7 @@
       "old_path": "audit_p5_h22_six_dimensional_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/six-dimensional/audit_p5_h22_six_dimensional_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/six-dimensional",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/six-dimensional",
       "confidence": "high"
     },
@@ -9594,7 +9599,7 @@
       "old_path": "verify_p5_h22_six_dimensional_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/six-dimensional/verify_p5_h22_six_dimensional_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/six-dimensional",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/six-dimensional",
       "confidence": "high"
     },
@@ -9610,7 +9615,7 @@
       "old_path": "P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/split-center-mixed-star/P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/split-center-mixed-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/split-center-mixed-star",
       "confidence": "high"
     },
@@ -9618,7 +9623,7 @@
       "old_path": "audit_p5_h22_split_center_mixed_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/split-center-mixed-star/audit_p5_h22_split_center_mixed_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/split-center-mixed-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/split-center-mixed-star",
       "confidence": "high"
     },
@@ -9626,7 +9631,7 @@
       "old_path": "verify_p5_h22_split_center_mixed_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/split-center-mixed-star/verify_p5_h22_split_center_mixed_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/split-center-mixed-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/split-center-mixed-star",
       "confidence": "high"
     },
@@ -9634,7 +9639,7 @@
       "old_path": "P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/transverse-common-factor/P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/transverse-common-factor",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/transverse-common-factor",
       "confidence": "high"
     },
@@ -9642,7 +9647,7 @@
       "old_path": "audit_p5_h22_transverse_common_factor_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/transverse-common-factor/audit_p5_h22_transverse_common_factor_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/transverse-common-factor",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/transverse-common-factor",
       "confidence": "high"
     },
@@ -9650,7 +9655,7 @@
       "old_path": "verify_p5_h22_transverse_common_factor_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/transverse-common-factor/verify_p5_h22_transverse_common_factor_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/transverse-common-factor",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/transverse-common-factor",
       "confidence": "high"
     },
@@ -9658,7 +9663,7 @@
       "old_path": "P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/two-rank-two-spoke-mixed-star/P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/two-rank-two-spoke-mixed-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/two-rank-two-spoke-mixed-star",
       "confidence": "high"
     },
@@ -9666,7 +9671,7 @@
       "old_path": "P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/two-rank-two-spoke-mixed-star/P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/two-rank-two-spoke-mixed-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/two-rank-two-spoke-mixed-star",
       "confidence": "high"
     },
@@ -9674,7 +9679,7 @@
       "old_path": "audit_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/two-rank-two-spoke-mixed-star/audit_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/two-rank-two-spoke-mixed-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/two-rank-two-spoke-mixed-star",
       "confidence": "high"
     },
@@ -9690,7 +9695,7 @@
       "old_path": "verify_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/two-rank-two-spoke-mixed-star/verify_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/two-rank-two-spoke-mixed-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/two-rank-two-spoke-mixed-star",
       "confidence": "high"
     },
@@ -10090,7 +10095,7 @@
       "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor",
       "confidence": "high"
     },
@@ -10106,7 +10111,7 @@
       "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_TERNARY_FALSE_POSITIVE.md",
       "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_TERNARY_FALSE_POSITIVE.md",
       "reason": "claim_document -> p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor",
       "confidence": "high"
     },
@@ -10122,7 +10127,7 @@
       "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_generic_obstruction.py",
       "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor",
       "confidence": "high"
     },
@@ -10146,7 +10151,7 @@
       "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_generic_obstruction.py",
       "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor",
       "confidence": "high"
     },
@@ -10234,7 +10239,7 @@
       "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A0_COMPANION_DIVISOR_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A0_COMPANION_DIVISOR_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b",
       "confidence": "high"
     },
@@ -10242,7 +10247,7 @@
       "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A2_ZERO_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A2_ZERO_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b",
       "confidence": "high"
     },
@@ -10250,7 +10255,7 @@
       "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_ALGEBRAIC_FALSE_POSITIVE.md",
       "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_ALGEBRAIC_FALSE_POSITIVE.md",
       "reason": "claim_document -> p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b",
       "confidence": "high"
     },
@@ -10258,7 +10263,7 @@
       "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_SPARSE_COVER_NON_W_BRANCHES_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_SPARSE_COVER_NON_W_BRANCHES_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b",
       "confidence": "high"
     },
@@ -10266,7 +10271,7 @@
       "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_SPARSE_TWO_MINOR_COVER.md",
       "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_SPARSE_TWO_MINOR_COVER.md",
       "reason": "claim_document -> p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b",
       "confidence": "high"
     },
@@ -10274,7 +10279,7 @@
       "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_W_ZERO_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_W_ZERO_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b",
       "confidence": "high"
     },
@@ -10290,7 +10295,7 @@
       "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_GENERIC_FALSE_POSITIVE.md",
       "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_GENERIC_FALSE_POSITIVE.md",
       "reason": "claim_document -> p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b",
       "confidence": "high"
     },
@@ -10298,7 +10303,7 @@
       "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_LINEAR_SOLVE_DIVISORS_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_LINEAR_SOLVE_DIVISORS_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b",
       "confidence": "high"
     },
@@ -10306,7 +10311,7 @@
       "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_OPPOSITE_DIAGONAL_DIVISOR.md",
       "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_OPPOSITE_DIAGONAL_DIVISOR.md",
       "reason": "claim_document -> p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b",
       "confidence": "high"
     },
@@ -10322,7 +10327,7 @@
       "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b",
       "confidence": "high"
     },
@@ -10330,7 +10335,7 @@
       "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_T_ZERO_AND_H_BOUNDARY_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_T_ZERO_AND_H_BOUNDARY_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b",
       "confidence": "high"
     },
@@ -10794,7 +10799,7 @@
       "old_path": "P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/all-rank-one-triangle/P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/all-rank-one-triangle",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/all-rank-one-triangle",
       "confidence": "high"
     },
@@ -10802,7 +10807,7 @@
       "old_path": "audit_p5_h31_all_rank_one_triangle_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/all-rank-one-triangle/audit_p5_h31_all_rank_one_triangle_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/all-rank-one-triangle",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/all-rank-one-triangle",
       "confidence": "high"
     },
@@ -10818,7 +10823,7 @@
       "old_path": "verify_p5_h31_all_rank_one_triangle_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/all-rank-one-triangle/verify_p5_h31_all_rank_one_triangle_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/all-rank-one-triangle",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/all-rank-one-triangle",
       "confidence": "high"
     },
@@ -10826,7 +10831,7 @@
       "old_path": "P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/coincident-support-rank-one-star/P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/coincident-support-rank-one-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/coincident-support-rank-one-star",
       "confidence": "high"
     },
@@ -10834,7 +10839,7 @@
       "old_path": "audit_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/coincident-support-rank-one-star/audit_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/coincident-support-rank-one-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/coincident-support-rank-one-star",
       "confidence": "high"
     },
@@ -10842,7 +10847,7 @@
       "old_path": "verify_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/coincident-support-rank-one-star/verify_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/coincident-support-rank-one-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/coincident-support-rank-one-star",
       "confidence": "high"
     },
@@ -10850,7 +10855,7 @@
       "old_path": "P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/coincident-support/P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/coincident-support",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/coincident-support",
       "confidence": "high"
     },
@@ -10858,7 +10863,7 @@
       "old_path": "audit_p5_h31_coincident_support_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/coincident-support/audit_p5_h31_coincident_support_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/coincident-support",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/coincident-support",
       "confidence": "high"
     },
@@ -10866,7 +10871,7 @@
       "old_path": "verify_p5_h31_coincident_support_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/coincident-support/verify_p5_h31_coincident_support_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/coincident-support",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/coincident-support",
       "confidence": "high"
     },
@@ -10874,7 +10879,7 @@
       "old_path": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-active-binary-triangle",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/common-active-binary-triangle",
       "confidence": "high"
     },
@@ -10882,7 +10887,7 @@
       "old_path": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_SPECIAL_DIVISOR_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_SPECIAL_DIVISOR_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-active-binary-triangle",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/common-active-binary-triangle",
       "confidence": "high"
     },
@@ -10890,7 +10895,7 @@
       "old_path": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-active-binary-triangle",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/common-active-binary-triangle",
       "confidence": "high"
     },
@@ -10898,7 +10903,7 @@
       "old_path": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_NORMALIZED_AFFINE_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_NORMALIZED_AFFINE_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-active-binary-triangle",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/common-active-binary-triangle",
       "confidence": "high"
     },
@@ -10906,7 +10911,7 @@
       "old_path": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-active-binary-triangle",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/common-active-binary-triangle",
       "confidence": "high"
     },
@@ -10914,7 +10919,7 @@
       "old_path": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-active-binary-triangle",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/common-active-binary-triangle",
       "confidence": "high"
     },
@@ -10922,7 +10927,7 @@
       "old_path": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-active-binary-triangle",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/common-active-binary-triangle",
       "confidence": "high"
     },
@@ -10930,7 +10935,7 @@
       "old_path": "audit_p5_h31_common_active_binary_triangle_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/common-active-binary-triangle",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/common-active-binary-triangle",
       "confidence": "high"
     },
@@ -10986,7 +10991,7 @@
       "old_path": "verify_p5_h31_common_active_binary_triangle_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/common-active-binary-triangle",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/common-active-binary-triangle",
       "confidence": "high"
     },
@@ -11042,7 +11047,7 @@
       "old_path": "P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-center-kernel-star/P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-center-kernel-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/common-center-kernel-star",
       "confidence": "high"
     },
@@ -11050,7 +11055,7 @@
       "old_path": "P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-center-kernel-star/P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-center-kernel-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/common-center-kernel-star",
       "confidence": "high"
     },
@@ -11058,7 +11063,7 @@
       "old_path": "P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_FINITE_CORNER_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-center-kernel-star/P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_FINITE_CORNER_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-center-kernel-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/common-center-kernel-star",
       "confidence": "high"
     },
@@ -11066,7 +11071,7 @@
       "old_path": "P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-center-kernel-star/P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-center-kernel-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/common-center-kernel-star",
       "confidence": "high"
     },
@@ -11074,7 +11079,7 @@
       "old_path": "audit_p5_h31_common_center_kernel_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/common-center-kernel-star/audit_p5_h31_common_center_kernel_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/common-center-kernel-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/common-center-kernel-star",
       "confidence": "high"
     },
@@ -11106,7 +11111,7 @@
       "old_path": "verify_p5_h31_common_center_kernel_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/common-center-kernel-star/verify_p5_h31_common_center_kernel_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/common-center-kernel-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/common-center-kernel-star",
       "confidence": "high"
     },
@@ -11138,7 +11143,7 @@
       "old_path": "P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-kernel-vertical-triangle/P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-kernel-vertical-triangle",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/common-kernel-vertical-triangle",
       "confidence": "high"
     },
@@ -11146,7 +11151,7 @@
       "old_path": "audit_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/common-kernel-vertical-triangle/audit_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/common-kernel-vertical-triangle",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/common-kernel-vertical-triangle",
       "confidence": "high"
     },
@@ -11154,7 +11159,7 @@
       "old_path": "verify_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/common-kernel-vertical-triangle/verify_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/common-kernel-vertical-triangle",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/common-kernel-vertical-triangle",
       "confidence": "high"
     },
@@ -11162,7 +11167,7 @@
       "old_path": "P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-singleton/P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-singleton",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/common-singleton",
       "confidence": "high"
     },
@@ -11170,7 +11175,7 @@
       "old_path": "audit_p5_h31_common_singleton_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/common-singleton/audit_p5_h31_common_singleton_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/common-singleton",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/common-singleton",
       "confidence": "high"
     },
@@ -11178,7 +11183,7 @@
       "old_path": "verify_p5_h31_common_singleton_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/common-singleton/verify_p5_h31_common_singleton_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/common-singleton",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/common-singleton",
       "confidence": "high"
     },
@@ -11354,7 +11359,7 @@
       "old_path": "P5_H31_DIAGONAL_QUADRIC_ELLIPTIC_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/diagonal-quadric-elliptic/P5_H31_DIAGONAL_QUADRIC_ELLIPTIC_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/diagonal-quadric-elliptic",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/diagonal-quadric-elliptic",
       "confidence": "high"
     },
@@ -11474,7 +11479,7 @@
       "old_path": "P5_H31_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/directed-zero-divisor-triangle-components/P5_H31_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/directed-zero-divisor-triangle-components",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/directed-zero-divisor-triangle-components",
       "confidence": "high"
     },
@@ -11482,7 +11487,7 @@
       "old_path": "audit_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py",
       "new_path": "claims/p5/h31/directed-zero-divisor-triangle-components/audit_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/directed-zero-divisor-triangle-components",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/directed-zero-divisor-triangle-components",
       "confidence": "high"
     },
@@ -11490,7 +11495,7 @@
       "old_path": "verify_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py",
       "new_path": "claims/p5/h31/directed-zero-divisor-triangle-components/verify_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/directed-zero-divisor-triangle-components",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/directed-zero-divisor-triangle-components",
       "confidence": "high"
     },
@@ -11498,7 +11503,7 @@
       "old_path": "P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/disjoint-mixed-star/P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/disjoint-mixed-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/disjoint-mixed-star",
       "confidence": "high"
     },
@@ -11506,7 +11511,7 @@
       "old_path": "audit_p5_h31_disjoint_mixed_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/disjoint-mixed-star/audit_p5_h31_disjoint_mixed_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/disjoint-mixed-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/disjoint-mixed-star",
       "confidence": "high"
     },
@@ -11514,7 +11519,7 @@
       "old_path": "verify_p5_h31_disjoint_mixed_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/disjoint-mixed-star/verify_p5_h31_disjoint_mixed_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/disjoint-mixed-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/disjoint-mixed-star",
       "confidence": "high"
     },
@@ -11522,7 +11527,7 @@
       "old_path": "P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/disjoint-secant/P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/disjoint-secant",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/disjoint-secant",
       "confidence": "high"
     },
@@ -11530,7 +11535,7 @@
       "old_path": "audit_p5_h31_disjoint_secant_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/disjoint-secant/audit_p5_h31_disjoint_secant_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/disjoint-secant",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/disjoint-secant",
       "confidence": "high"
     },
@@ -11538,7 +11543,7 @@
       "old_path": "verify_p5_h31_disjoint_secant_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/disjoint-secant/verify_p5_h31_disjoint_secant_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/disjoint-secant",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/disjoint-secant",
       "confidence": "high"
     },
@@ -11546,7 +11551,7 @@
       "old_path": "P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/eisenstein-norm/P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/eisenstein-norm",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/eisenstein-norm",
       "confidence": "high"
     },
@@ -11554,7 +11559,7 @@
       "old_path": "audit_p5_h31_eisenstein_norm_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/eisenstein-norm/audit_p5_h31_eisenstein_norm_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/eisenstein-norm",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/eisenstein-norm",
       "confidence": "high"
     },
@@ -11562,7 +11567,7 @@
       "old_path": "verify_p5_h31_eisenstein_norm_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/eisenstein-norm/verify_p5_h31_eisenstein_norm_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/eisenstein-norm",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/eisenstein-norm",
       "confidence": "high"
     },
@@ -11762,7 +11767,7 @@
       "old_path": "P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/embedded-p3",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/embedded-p3",
       "confidence": "high"
     },
@@ -11802,7 +11807,7 @@
       "old_path": "audit_p5_h31_embedded_p3_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/embedded-p3/audit_p5_h31_embedded_p3_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/embedded-p3",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/embedded-p3",
       "confidence": "high"
     },
@@ -11842,7 +11847,7 @@
       "old_path": "verify_p5_h31_embedded_p3_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/embedded-p3/verify_p5_h31_embedded_p3_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/embedded-p3",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/embedded-p3",
       "confidence": "high"
     },
@@ -11882,7 +11887,7 @@
       "old_path": "P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/equal-support-common-factor/P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/equal-support-common-factor",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/equal-support-common-factor",
       "confidence": "high"
     },
@@ -11890,7 +11895,7 @@
       "old_path": "audit_p5_h31_equal_support_common_factor_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/equal-support-common-factor/audit_p5_h31_equal_support_common_factor_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/equal-support-common-factor",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/equal-support-common-factor",
       "confidence": "high"
     },
@@ -11898,7 +11903,7 @@
       "old_path": "verify_p5_h31_equal_support_common_factor_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/equal-support-common-factor/verify_p5_h31_equal_support_common_factor_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/equal-support-common-factor",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/equal-support-common-factor",
       "confidence": "high"
     },
@@ -11906,7 +11911,7 @@
       "old_path": "P5_H31_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/equal-support-sixfold/P5_H31_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/equal-support-sixfold",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/equal-support-sixfold",
       "confidence": "high"
     },
@@ -11914,7 +11919,7 @@
       "old_path": "verify_p5_h31_equal_support_sixfold_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/equal-support-sixfold/verify_p5_h31_equal_support_sixfold_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/equal-support-sixfold",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/equal-support-sixfold",
       "confidence": "high"
     },
@@ -11922,7 +11927,7 @@
       "old_path": "P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/full-support-tangent/P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/full-support-tangent",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/full-support-tangent",
       "confidence": "high"
     },
@@ -11930,7 +11935,7 @@
       "old_path": "audit_p5_h31_full_support_tangent_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/full-support-tangent/audit_p5_h31_full_support_tangent_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/full-support-tangent",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/full-support-tangent",
       "confidence": "high"
     },
@@ -11938,7 +11943,7 @@
       "old_path": "verify_p5_h31_full_support_tangent_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/full-support-tangent/verify_p5_h31_full_support_tangent_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/full-support-tangent",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/full-support-tangent",
       "confidence": "high"
     },
@@ -12042,7 +12047,7 @@
       "old_path": "P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/mixed-orientation/P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/mixed-orientation",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/mixed-orientation",
       "confidence": "high"
     },
@@ -12050,7 +12055,7 @@
       "old_path": "audit_p5_h31_mixed_orientation_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/mixed-orientation/audit_p5_h31_mixed_orientation_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/mixed-orientation",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/mixed-orientation",
       "confidence": "high"
     },
@@ -12058,7 +12063,7 @@
       "old_path": "verify_p5_h31_mixed_orientation_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/mixed-orientation/verify_p5_h31_mixed_orientation_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/mixed-orientation",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/mixed-orientation",
       "confidence": "high"
     },
@@ -12066,7 +12071,7 @@
       "old_path": "P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/one-three/P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/one-three",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/one-three",
       "confidence": "high"
     },
@@ -12074,7 +12079,7 @@
       "old_path": "audit_p5_h31_one_three_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/one-three/audit_p5_h31_one_three_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/one-three",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/one-three",
       "confidence": "high"
     },
@@ -12082,7 +12087,7 @@
       "old_path": "verify_p5_h31_one_three_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/one-three/verify_p5_h31_one_three_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/one-three",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/one-three",
       "confidence": "high"
     },
@@ -12186,7 +12191,7 @@
       "old_path": "P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/six-dimensional/P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/six-dimensional",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/six-dimensional",
       "confidence": "high"
     },
@@ -12194,7 +12199,7 @@
       "old_path": "audit_p5_h31_six_dimensional_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/six-dimensional/audit_p5_h31_six_dimensional_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/six-dimensional",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/six-dimensional",
       "confidence": "high"
     },
@@ -12202,7 +12207,7 @@
       "old_path": "verify_p5_h31_six_dimensional_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/six-dimensional/verify_p5_h31_six_dimensional_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/six-dimensional",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/six-dimensional",
       "confidence": "high"
     },
@@ -12210,7 +12215,7 @@
       "old_path": "P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/split-center-mixed-star/P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/split-center-mixed-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/split-center-mixed-star",
       "confidence": "high"
     },
@@ -12218,7 +12223,7 @@
       "old_path": "audit_p5_h31_split_center_mixed_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/split-center-mixed-star/audit_p5_h31_split_center_mixed_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/split-center-mixed-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/split-center-mixed-star",
       "confidence": "high"
     },
@@ -12226,7 +12231,7 @@
       "old_path": "verify_p5_h31_split_center_mixed_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/split-center-mixed-star/verify_p5_h31_split_center_mixed_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/split-center-mixed-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/split-center-mixed-star",
       "confidence": "high"
     },
@@ -12258,7 +12263,7 @@
       "old_path": "P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/transverse-common-factor/P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/transverse-common-factor",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/transverse-common-factor",
       "confidence": "high"
     },
@@ -12266,7 +12271,7 @@
       "old_path": "audit_p5_h31_transverse_common_factor_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/transverse-common-factor/audit_p5_h31_transverse_common_factor_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/transverse-common-factor",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/transverse-common-factor",
       "confidence": "high"
     },
@@ -12274,7 +12279,7 @@
       "old_path": "verify_p5_h31_transverse_common_factor_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/transverse-common-factor/verify_p5_h31_transverse_common_factor_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/transverse-common-factor",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/transverse-common-factor",
       "confidence": "high"
     },
@@ -12282,7 +12287,7 @@
       "old_path": "P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/two-rank-two-spoke-mixed-star/P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/two-rank-two-spoke-mixed-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/two-rank-two-spoke-mixed-star",
       "confidence": "high"
     },
@@ -12290,7 +12295,7 @@
       "old_path": "audit_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/two-rank-two-spoke-mixed-star/audit_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/two-rank-two-spoke-mixed-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/two-rank-two-spoke-mixed-star",
       "confidence": "high"
     },
@@ -12298,7 +12303,7 @@
       "old_path": "verify_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/two-rank-two-spoke-mixed-star/verify_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/two-rank-two-spoke-mixed-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/two-rank-two-spoke-mixed-star",
       "confidence": "high"
     },
@@ -12306,7 +12311,7 @@
       "old_path": "P5_H31_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/unequal-complement-common-kernel/P5_H31_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/unequal-complement-common-kernel",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/unequal-complement-common-kernel",
       "confidence": "high"
     },
@@ -12314,7 +12319,7 @@
       "old_path": "audit_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/unequal-complement-common-kernel/audit_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/unequal-complement-common-kernel",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/unequal-complement-common-kernel",
       "confidence": "high"
     },
@@ -12322,7 +12327,7 @@
       "old_path": "verify_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/unequal-complement-common-kernel/verify_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/unequal-complement-common-kernel",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/unequal-complement-common-kernel",
       "confidence": "high"
     },
@@ -12330,7 +12335,7 @@
       "old_path": "P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/unequal-endpoint-inward-star/P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/unequal-endpoint-inward-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/unequal-endpoint-inward-star",
       "confidence": "high"
     },
@@ -12338,7 +12343,7 @@
       "old_path": "audit_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/unequal-endpoint-inward-star/audit_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/unequal-endpoint-inward-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/unequal-endpoint-inward-star",
       "confidence": "high"
     },
@@ -12346,7 +12351,7 @@
       "old_path": "verify_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/unequal-endpoint-inward-star/verify_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/unequal-endpoint-inward-star",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/unequal-endpoint-inward-star",
       "confidence": "high"
     },
@@ -14130,7 +14135,7 @@
       "old_path": "ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md",
       "new_path": "docs/ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md",
       "reason": "navigation -> None",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": null,
       "confidence": "high"
     },
@@ -14138,7 +14143,7 @@
       "old_path": "LITERATURE_REVIEW_2026-07-30.md",
       "new_path": "docs/LITERATURE_REVIEW_2026-07-30.md",
       "reason": "navigation -> None",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": null,
       "confidence": "high"
     },
@@ -14146,7 +14151,7 @@
       "old_path": "NEXT_INSTANCE_HANDOFF_2026-07-31.md",
       "new_path": "docs/NEXT_INSTANCE_HANDOFF_2026-07-31.md",
       "reason": "navigation -> None",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": null,
       "confidence": "high"
     },
@@ -14154,7 +14159,7 @@
       "old_path": "SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md",
       "new_path": "docs/SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md",
       "reason": "navigation -> None",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": null,
       "confidence": "high"
     },
@@ -14162,7 +14167,7 @@
       "old_path": "MERGE_AUDIT_REPORT.md",
       "new_path": "docs/audits/MERGE_AUDIT_REPORT.md",
       "reason": "audit_report -> None",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": null,
       "confidence": "high"
     },
@@ -14170,7 +14175,7 @@
       "old_path": "STABILIZATION_AUDIT_REPORT.md",
       "new_path": "docs/audits/STABILIZATION_AUDIT_REPORT.md",
       "reason": "audit_report -> None",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": null,
       "confidence": "high"
     },
@@ -14178,7 +14183,7 @@
       "old_path": "CURRENT_FRONTIER.md",
       "new_path": "docs/current-frontier.md",
       "reason": "navigation -> None",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": null,
       "confidence": "high"
     },
@@ -14186,7 +14191,7 @@
       "old_path": "RESEARCH_NOTES.md",
       "new_path": "docs/research-notes.md",
       "reason": "navigation -> None",
-      "status": "approved",
+      "status": "proposed_high_confidence",
       "claim_family": null,
       "confidence": "high"
     },

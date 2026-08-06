@@ -503,20 +503,33 @@ def check_stale_paths(files: list[str]) -> None:
     moves = manifest.get("moves", [])
     old_paths = {m["old_path"] for m in moves}
     new_paths = {m["new_path"] for m in moves}
+    # Enforcement applies only to EXECUTED moves (status "moved").
+    # Planned-but-unexecuted moves still sit at their old location, so
+    # referencing them there is correct until a batch actually runs.
+    executed = [m for m in moves if m["status"] == "moved"]
     current_basenames = {pathlib.PurePosixPath(f).name for f in files}
-    # An old path is enforceable when it is unambiguous: a sub-path
-    # move (contains "/"), or a root file whose name no longer exists
-    # anywhere in the tracked tree (i.e. it was renamed away).  Root
-    # moves that keep their filename are ambiguous — the bare name is
-    # still correct at the new location — and are not enforced here.
+    # Full old paths enforceable when unambiguous: sub-path moves, or
+    # root files renamed away entirely.
     checkables = sorted(
-        old for old in old_paths
+        old for old in {m["old_path"] for m in executed}
         if "/" in old
         or pathlib.PurePosixPath(old).name not in current_basenames)
-    if not checkables:
-        print("[9] stale paths: no enforceable old paths")
-        return
-    pat = re.compile("|".join(re.escape(o) for o in checkables))
+    # Executed root->package moves keeping the filename: enforced
+    # context-aware via bare-basename reference scanning.
+    moved_by_base = {}
+    for m in executed:
+        old, new = m["old_path"], m["new_path"]
+        if ("/" not in old
+                and pathlib.PurePosixPath(old).name
+                == pathlib.PurePosixPath(new).name):
+            moved_by_base[pathlib.PurePosixPath(old).name] = new
+    pat = (re.compile("|".join(re.escape(o) for o in checkables))
+           if checkables else None)
+    # Precompute the (bounded) set of new paths that can embed an old
+    # path, so per-file masking never scans the whole move table.
+    maskable_for_checkables = sorted(
+        np for np in new_paths
+        if any(c in np for c in checkables)) if checkables else []
     stale = []
     for rel in files:
         if not rel.endswith(STALE_SCAN_EXTENSIONS):
@@ -527,7 +540,13 @@ def check_stale_paths(files: list[str]) -> None:
             continue
         text = (ROOT / rel).read_text(encoding="utf-8",
                                       errors="replace")
-        if not pat.search(text):
+        if pat is None and not moved_by_base:
+            continue
+        pat_hit = pat is not None and pat.search(text)
+        # Cheap prefilter for the bare-basename scan: only bases that
+        # actually occur in this file need context analysis.
+        bases_here = {b for b in moved_by_base if b in text}
+        if not pat_hit and not bases_here:
             continue
         if rel.endswith(".json"):
             try:
@@ -543,14 +562,26 @@ def check_stale_paths(files: list[str]) -> None:
                 stale.append((rel, h))
             continue
         # Mask current (correct) paths so an old string inside a new
-        # path cannot false-positive, then re-scan.
+        # path cannot false-positive, then re-scan.  Only the small
+        # relevant subsets are masked, never the whole move table.
         masked = text
-        for np in new_paths:
+        for np in maskable_for_checkables:
             if np in masked:
                 masked = masked.replace(np, "")
-        for m in pat.finditer(masked):
-            stale.append((rel, m.group(0)))
-            break  # one report per file per old path is enough
+        for base in bases_here:
+            np = moved_by_base[base]
+            if np in masked:
+                masked = masked.replace(np, "")
+        if pat_hit:
+            for m in pat.finditer(masked):
+                stale.append((rel, m.group(0)))
+                break  # one report per file per old path is enough
+        if bases_here:
+            for ctx, base in find_stale_bare_refs(
+                    masked, rel,
+                    {b: moved_by_base[b] for b in bases_here}):
+                stale.append((rel, f"{base} ({ctx})"))
+    enforced = len(checkables) + len(moved_by_base)
     if stale:
         failures.append(
             "stale legacy paths found (manifest-aware):\n  "
@@ -558,8 +589,67 @@ def check_stale_paths(files: list[str]) -> None:
             + (f"\n  ... ({len(stale) - 30} more)"
                if len(stale) > 30 else ""))
     else:
-        print(f"[9] stale paths: {len(checkables)} enforceable old "
-              "paths, none present outside provenance")
+        print(f"[9] stale paths: {enforced} enforceable old paths "
+              f"({len(checkables)} full-path, {len(moved_by_base)} "
+              "root-to-package), none present outside provenance")
+
+
+# Context-aware stale-REFERENCE detection for root->package moves that
+# keep their filename (review item: root-to-package coverage).  A bare
+# basename is actionable only where it resolves to the OLD location:
+#   - a markdown link in a ROOT document (](base) resolves to root);
+#   - a fenced replay command anywhere outside the destination package
+#     (documented commands run from the repository root);
+#   - a python subprocess/command string outside the package;
+#   - a shell/yaml python invocation outside the package.
+# Inside the destination package the same basename is a valid sibling
+# reference and must not be flagged.
+def find_stale_bare_refs(text: str, rel: str,
+                         moved_by_base: dict) -> list:
+    rel_dir = str(pathlib.PurePosixPath(rel).parent)
+    if rel_dir == ".":
+        rel_dir = ""
+    hits = []
+    for base, new in moved_by_base.items():
+        pkg_dir = str(pathlib.PurePosixPath(new).parent)
+        in_package = rel_dir == pkg_dir or rel_dir.startswith(
+            pkg_dir + "/")
+        if in_package:
+            continue
+        esc = re.escape(base)
+        if rel.endswith(".md"):
+            # inline links in root documents resolve to the old path
+            if rel_dir == "" and re.search(
+                    r"\]\(" + esc + r"(#[^)\s]*)?\)", text):
+                hits.append(("markdown link", base))
+                continue
+            if rel_dir == "" and re.search(
+                    r"^\s*\[[^\]]+\]:\s*" + esc + r"\s*$", text,
+                    re.M):
+                hits.append(("reference-style link", base))
+                continue
+            # fenced replay commands (run from the repository root)
+            in_fence = False
+            for line in text.splitlines():
+                if line.lstrip().startswith("```"):
+                    in_fence = not in_fence
+                    continue
+                if in_fence and re.match(
+                        r"\s*(python3?|wsl[^\n]*python3?)\s+" + esc
+                        + r"(\s|$)", line):
+                    hits.append(("fenced replay command", base))
+                    break
+        elif rel.endswith(".py"):
+            if re.search(
+                    r"(subprocess|sys\.executable|python)[^\n]{0,100}?"
+                    r"[\"']" + esc + r"[\"']", text):
+                hits.append(("python command string", base))
+        elif rel.endswith((".yml", ".yaml", ".sh")):
+            if re.search(
+                    r"python3?\s+[\"']?" + esc + r"[\"']?(\s|$)",
+                    text, re.M):
+                hits.append(("command reference", base))
+    return hits
 
 
 def main() -> int:

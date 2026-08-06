@@ -216,7 +216,7 @@ def rewrite_markdown(old_to_new: dict, sources: list[str],
                     if len(olds) > 1:
                         stats["ambiguous"].append(
                             f"{rel}: replay command basename {base} "
-                            f"matches {len(olds)} moves")
+                            f"matches {len(olds)} moves)")
             out_lines.append(line)
         final = "\n".join(out_lines)
         if text.endswith("\n"):
@@ -231,6 +231,12 @@ def rewrite_markdown(old_to_new: dict, sources: list[str],
 
 
 def blob_sha16(root: pathlib.Path, rel: str) -> str:
+    """SHA-256 of the committed git blob for *rel* under *root*.
+
+    Hashes the index blob (git show :rel) so the value is identical on
+    every platform regardless of working-tree line endings.  Inject a
+    different callable via update_ledger(hash_func=...) in tests.
+    """
     proc = subprocess.run(
         ["git", "show", f":{rel}"], cwd=root, capture_output=True)
     if proc.returncode != 0:
@@ -239,7 +245,7 @@ def blob_sha16(root: pathlib.Path, rel: str) -> str:
 
 
 def update_ledger(old_to_new: dict, root: pathlib.Path,
-                  rehash: bool = True) -> dict:
+                  rehash: bool = True, hash_func=None) -> dict:
     ledger_path = root / "catalog" / "theorem-ledger.json"
     ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
     moved_entries = 0
@@ -264,10 +270,11 @@ def update_ledger(old_to_new: dict, root: pathlib.Path,
                 if n in (doc, e.get("primary_verifier"),
                          e.get("independent_audit")) and o not in legacy:
                     legacy.append(o)
-            if rehash and pathlib.Path(doc).exists():
+            if rehash and (root / doc).exists():
+                hf = hash_func or blob_sha16
                 try:
-                    e["document_sha256_16"] = blob_sha16(root, doc)
-                except ValueError:
+                    e["document_sha256_16"] = hf(root, doc)
+                except (ValueError, subprocess.SubprocessError):
                     pass
             moved_entries += 1
     ledger_path.write_text(

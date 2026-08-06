@@ -2,17 +2,39 @@
 """Execute manifest moves with git mv, rollback, and recovery reports.
 
 Phase 4/5 machinery.  Reads catalog/moved-paths.json and performs
-``git mv`` for entries whose status matches --status, then flips those
-entries to "moved".  Pure moves only: no file content is touched here,
-so Git rename detection stays intact and reviewers can separate
+``git mv`` for the entries of an EXPLICITLY APPROVED batch, then flips
+those entries to "moved".  Pure moves only: no file content is touched
+here, so Git rename detection stays intact and reviewers can separate
 relocation from later reference rewrites.
+
+Approval model: classifier confidence is NOT operational approval.
+Every executable batch is a committed JSON file under
+``catalog/batches/`` recording who/what approved it, the base SHA, and
+the exact member list.  This tool requires ``--batch-id`` (a file
+under catalog/batches/) or ``--batch-file`` (an explicit path); there
+is no ``--status`` mode that can sweep an entire status class across
+the repository.
+
+Batch file format::
+
+    {
+      "batch_id": "p5-h22-pilot",
+      "approved_by": "human reviewer name or role",
+      "approved_at": "2026-08-06",
+      "base_sha": "f6d2cc4...",
+      "members": ["OLD_PATH", ...],
+      "notes": "optional"
+    }
 
 Safety contract (independently re-verified here, not trusted from the
 builder):
 
-  - status gating: "review_required" entries are REFUSED with a clear
-    error; only "approved", "pilot", or an explicit --batch name list
-    may execute;
+  - every member must exist in the manifest with status
+    "proposed_high_confidence", "pilot", or "review_required"
+    (execution is allowed for review_required members ONLY when a
+    human placed them in a batch file — the batch itself is the
+    approval);
+  - already-moved members are skipped, not re-moved;
   - unique sources and unique FINAL destinations within the batch;
   - no source/destination overlap cycles inside the batch;
   - every source exists, every destination is free, every destination
@@ -39,13 +61,43 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 CATALOG = ROOT / "catalog"
+BATCH_DIR = CATALOG / "batches"
 
-EXECUTABLE_STATUSES = {"approved", "pilot"}
+# Member statuses a batch may legitimately execute.  The batch file
+# itself is the approval artifact; the manifest status only records
+# classifier confidence.
+EXECUTABLE_MEMBER_STATUSES = {
+    "proposed_high_confidence", "pilot", "review_required", "moved",
+}
 
 
 def git(*args: str) -> subprocess.CompletedProcess:
     return subprocess.run(["git", *args], cwd=ROOT, capture_output=True,
                           text=True)
+
+
+def load_batch(batch_id: str | None,
+               batch_file: str | None) -> tuple[dict, pathlib.Path]:
+    """Load and structurally validate a batch definition."""
+    if batch_id is not None:
+        path = BATCH_DIR / f"{batch_id}.json"
+    else:
+        path = pathlib.Path(batch_file)
+    if not path.exists():
+        raise SystemExit(
+            f"batch file not found: {path}. Create a committed batch "
+            "file under catalog/batches/ with approved_by, base_sha, "
+            "and members.")
+    batch = json.loads(path.read_text(encoding="utf-8"))
+    for field in ("batch_id", "approved_by", "base_sha", "members"):
+        if field not in batch:
+            raise SystemExit(f"batch file missing required field: "
+                             f"{field} ({path})")
+    if not batch["members"]:
+        raise SystemExit(f"batch {batch['batch_id']} has no members")
+    if not isinstance(batch["members"], list):
+        raise SystemExit("batch members must be a list of old_paths")
+    return batch, path
 
 
 def validate_batch(batch: list[dict], manifest: dict) -> list[str]:
@@ -81,51 +133,39 @@ def validate_batch(batch: list[dict], manifest: dict) -> list[str]:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--status", default=None,
-                    help="manifest status to execute; one of "
-                         + ", ".join(sorted(EXECUTABLE_STATUSES)))
-    ap.add_argument("--batch", nargs="*", default=None,
-                    help="explicit old_path list (must already be "
-                         "approved/pilot status)")
+    group = ap.add_mutually_exclusive_group(required=True)
+    group.add_argument("--batch-id", default=None,
+                       help="name of a committed batch file under "
+                            "catalog/batches/ (without .json)")
+    group.add_argument("--batch-file", default=None,
+                       help="explicit path to a batch file")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
-    if args.status is None and args.batch is None:
-        ap.error("provide --status or --batch")
-    if args.status == "review_required":
-        print("REFUSED: review_required entries are proposals only. "
-              "Promote them to approved after human review, then "
-              "re-run.")
-        return 2
+    batch_def, batch_path = load_batch(args.batch_id, args.batch_file)
 
     manifest_path = CATALOG / "moved-paths.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    moves = manifest["moves"]
-    by_src = {m["old_path"]: m for m in moves}
+    by_src = {m["old_path"]: m for m in manifest["moves"]}
 
-    if args.batch is not None:
-        batch = []
-        for src in args.batch:
-            m = by_src.get(src)
-            if m is None:
-                print(f"REFUSED: {src} is not in the manifest")
-                return 2
-            if m["status"] not in EXECUTABLE_STATUSES | {"moved"}:
-                print(f"REFUSED: {src} has status {m['status']!r}; "
-                      "only approved/pilot entries may execute")
-                return 2
-            if m["status"] == "moved":
-                print(f"skipping already-moved: {src}")
-                continue
-            batch.append(m)
-    else:
-        if args.status not in EXECUTABLE_STATUSES:
-            ap.error(f"--status must be one of "
-                     f"{sorted(EXECUTABLE_STATUSES)}")
-        batch = [m for m in moves if m["status"] == args.status]
+    batch = []
+    for src in batch_def["members"]:
+        m = by_src.get(src)
+        if m is None:
+            print(f"REFUSED: {src} is not in the manifest")
+            return 2
+        if m["status"] not in EXECUTABLE_MEMBER_STATUSES:
+            print(f"REFUSED: {src} has manifest status "
+                  f"{m['status']!r}; only proposed/pilot/review/"
+                  "moved members may appear in a batch")
+            return 2
+        if m["status"] == "moved":
+            print(f"skipping already-moved: {src}")
+            continue
+        batch.append(m)
 
     if not batch:
-        print("nothing to move")
+        print("nothing to move (all batch members already moved)")
         return 0
 
     problems = validate_batch(batch, manifest)
@@ -141,7 +181,6 @@ def main() -> int:
         print(dirty[:500])
         return 1
 
-    # Pre-flight against the working tree.
     errors = []
     for m in batch:
         src = ROOT / m["old_path"]
@@ -151,17 +190,21 @@ def main() -> int:
         if dst.exists():
             errors.append(f"destination exists: {m['new_path']}")
         if not dst.parent.exists() and not args.dry_run:
-            # parent dirs are created at move time; validate the
-            # intended parent chain is inside the repo
             try:
                 dst.parent.relative_to(ROOT)
             except ValueError:
-                errors.append(f"destination escapes repo: {m['new_path']}")
+                errors.append(
+                    f"destination escapes repo: {m['new_path']}")
     if errors:
         print("PRE-FLIGHT FAILED — no moves performed:")
         for e in errors:
             print("  -", e)
         return 1
+
+    print(f"batch {batch_def['batch_id']!r} approved by "
+          f"{batch_def['approved_by']!r} "
+          f"(base {str(batch_def['base_sha'])[:12]}), "
+          f"{len(batch)} members")
 
     performed = []
     try:
@@ -189,7 +232,8 @@ def main() -> int:
         stamp = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
         report_path = CATALOG / f"recovery-{stamp}.json"
         report_path.write_text(json.dumps({
-            "invocation": vars(args),
+            "batch": {k: v for k, v in batch_def.items()
+                      if k != "members"},
             "failure": str(exc),
             "performed_before_failure": [m["old_path"] for m in
                                          performed],
@@ -213,6 +257,7 @@ def main() -> int:
 
     for m in performed:
         m["status"] = "moved"
+        m["executed_batch"] = batch_def["batch_id"]
     manifest_path.write_text(
         json.dumps(manifest, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8")

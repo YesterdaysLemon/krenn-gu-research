@@ -110,13 +110,18 @@ def normalize(dest: str) -> str:
 
 
 def status_for(e: dict, is_pilot: bool, already_moved: set[str]) -> str:
-    """Confidence-gated status assignment."""
+    """Confidence-gated status assignment.
+
+    No confidence level is operational approval: high confidence
+    yields "proposed_high_confidence", which a human must promote into
+    a named batch before execution.
+    """
     if e["old_path"] in already_moved:
         return "moved"
     if is_pilot:
         return "pilot"
     if e.get("confidence") in AUTO_APPROVE_CONFIDENCE:
-        return "approved"
+        return "proposed_high_confidence"
     return "review_required"
 
 
@@ -233,7 +238,8 @@ def main() -> int:
 
     moved = [r for r in records if r["status"] == "moved"]
     pilot_records = [r for r in records if r["status"] == "pilot"]
-    approved = [r for r in records if r["status"] == "approved"]
+    proposed = [r for r in records
+                if r["status"] == "proposed_high_confidence"]
     review = [r for r in records if r["status"] == "review_required"]
 
     # Honest projected root counts, split by gate.  Root counts are
@@ -258,10 +264,10 @@ def main() -> int:
                     if r["old_path"] in moves}
         return len(left) + len(dirs | new_dirs | fixed_dirs)
 
-    mechanically_approved = {r["old_path"] for r in moved + pilot_records
-                             + approved}
-    review_proposed = mechanically_approved | {r["old_path"]
-                                               for r in review}
+    mechanically_moved = {r["old_path"] for r in moved + pilot_records}
+    all_proposed = mechanically_moved | {r["old_path"]
+                                         for r in proposed}
+    all_classified = all_proposed | {r["old_path"] for r in review}
     unclassified_count = classification["unclassified_count"]
 
     manifest = {
@@ -272,28 +278,44 @@ def main() -> int:
         "pilot_package": PILOT_DIR,
         "status_model": {
             "moved": "already executed",
-            "pilot": "approved and executed pilot batch",
-            "approved": "high-confidence, executable as a named batch",
-            "review_required": "proposal only; execute_moves.py "
-                               "refuses these until promoted",
+            "pilot": "the executed pilot batch",
+            "proposed_high_confidence": "classifier says high "
+                                        "confidence, but this is NOT "
+                                        "operational approval; a human "
+                                        "must promote members into a "
+                                        "named batch file before "
+                                        "execution",
+            "review_required": "medium/low confidence proposal; needs "
+                               "human review before it may even be "
+                               "batched",
+        },
+        "approval_model": {
+            "rule": "no classification confidence is executable on its "
+                    "own; execute_moves.py runs only batches listed in "
+                    "catalog/batches/*.json with reviewer, base SHA, "
+                    "and member list",
+            "batch_directory": "catalog/batches",
         },
         "counts": {
             "total_classified_moves": len(records),
             "moved": len(moved),
             "pilot": len(pilot_records),
-            "approved": len(approved),
+            "proposed_high_confidence": len(proposed),
             "review_required": len(review),
             "unclassified": unclassified_count,
             "root_files_before": len(root_files_base),
             "root_dirs_before": len(dirs_base),
             "root_entries_before": len(root_files_base) + len(dirs_base),
-            "projected_root_if_approved_only":
-                remaining_root_if(mechanically_approved),
-            "projected_root_if_review_also_approved":
-                remaining_root_if(review_proposed),
-            "projected_root_with_unclassified_still_at_root":
-                remaining_root_if(review_proposed)
-                + unclassified_count,
+            "projected_root_if_moved_only":
+                remaining_root_if(mechanically_moved),
+            "projected_root_if_high_confidence_batches_executed":
+                remaining_root_if(all_proposed),
+            "projected_root_if_all_classified_executed":
+                remaining_root_if(all_classified),
+            "projection_note": "unclassified files are not members of "
+                               "any move set, so every projection "
+                               "already leaves them at the root; do "
+                               "not add unclassified_count again",
             "collisions": len(collisions),
             "double_moves": len(double_moves),
             "overlap_cycles": len(cycles),
@@ -322,18 +344,19 @@ def main() -> int:
         return 1
 
     print(f"moves={len(records)} moved={len(moved)} "
-          f"pilot={len(pilot_records)} approved={len(approved)} "
+          f"pilot={len(pilot_records)} "
+          f"proposed_high_confidence={len(proposed)} "
           f"review_required={len(review)} "
           f"collisions=0 double_moves=0 cycles=0")
     print(f"root entries: before={len(root_files_base) + len(dirs_base)}")
-    print(f"projected if approved-only: "
-          f"{manifest['counts']['projected_root_if_approved_only']}")
-    print(f"projected if review also approved: "
-          f"{manifest['counts']['projected_root_if_review_also_approved']}")
-    print(f"projected with unclassified still at root: "
-          f"{manifest['counts']['projected_root_with_unclassified_still_at_root']}")
-    print(f"unclassified (stay at root until decided): "
-          f"{unclassified_count}")
+    print(f"projected if moved-only: "
+          f"{manifest['counts']['projected_root_if_moved_only']}")
+    print(f"projected if high-confidence batches executed: "
+          f"{manifest['counts']['projected_root_if_high_confidence_batches_executed']}")
+    print(f"projected if all classified executed: "
+          f"{manifest['counts']['projected_root_if_all_classified_executed']}")
+    print(f"(every projection already leaves the {unclassified_count} "
+          f"unclassified files at the root)")
     return 0
 
 
