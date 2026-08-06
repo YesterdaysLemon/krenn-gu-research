@@ -17,6 +17,7 @@ put until a human decides.  No file is moved by this tool.
 
 from __future__ import annotations
 
+import argparse
 import ast
 import collections
 import json
@@ -89,17 +90,39 @@ TOOL_GENERATE_PREFIXES = (
 )
 
 
-def tracked_files() -> list[str]:
+def tracked_files(ref: str | None = None) -> list[str]:
+    cmd = (["git", "ls-tree", "-r", "--name-only", ref] if ref
+           else ["git", "ls-files"])
     out = subprocess.run(
-        ["git", "ls-files"], cwd=ROOT, capture_output=True, text=True,
-        check=True)
+        cmd, cwd=ROOT, capture_output=True, text=True, check=True)
     return [l for l in out.stdout.splitlines() if l.strip()]
 
 
-def load_ledger(files: list[str]) -> dict:
+def read_at(ref: str | None, rel: str) -> str:
+    """Read a tracked file's content at *ref*, or from the working
+    tree when ref is None.  Git stores LF bytes, so content read this
+    way is identical on every platform."""
+    if ref is None:
+        return (ROOT / rel).read_text(encoding="utf-8", errors="replace")
+    proc = subprocess.run(
+        ["git", "show", f"{ref}:{rel}"], cwd=ROOT, capture_output=True,
+        text=True, encoding="utf-8", errors="replace")
+    if proc.returncode != 0:
+        raise FileNotFoundError(f"{ref}:{rel}")
+    return proc.stdout
+
+
+def resolve_ref(ref: str) -> str:
+    out = subprocess.run(
+        ["git", "rev-parse", ref], cwd=ROOT, capture_output=True,
+        text=True, check=True)
+    return out.stdout.strip()
+
+
+def load_ledger(files: list[str], ref: str | None = None) -> dict:
     for cand in ("catalog/theorem-ledger.json", "THEOREM_LEDGER.json"):
         if cand in files:
-            return json.loads((ROOT / cand).read_text(encoding="utf-8"))
+            return json.loads(read_at(ref, cand))
     return {}
 
 
@@ -161,17 +184,41 @@ def p5_family_slug(frame: str, stem: str, families: dict) -> tuple:
     return slugify(core), generic, None
 
 
-def collect_markdown_links(files: list[str]) -> dict:
-    """Local markdown links resolved against the source file's dir."""
+def normalize_link_target(base_dir: str, target: str) -> str | None:
+    """Resolve *target* against *base_dir* textually (posix).  Returns
+    the normalized repo-relative path, or None if it escapes the repo
+    or is malformed."""
+    parts = [] if base_dir in ("", ".") else base_dir.split("/")
+    for part in target.split("/"):
+        if part in ("", "."):
+            continue
+        if part == "..":
+            if not parts:
+                return None
+            parts.pop()
+        else:
+            parts.append(part)
+    return "/".join(parts) if parts else None
+
+
+def collect_markdown_links(files: list[str],
+                           ref: str | None = None) -> dict:
+    """Local markdown links resolved against the source file's dir.
+    Resolution is textual, against the tracked-file set, so it works
+    for any git ref."""
+    fileset = set(files)
     resolved, broken = [], []
     for rel in files:
         if not rel.endswith(".md"):
             continue
-        text = (ROOT / rel).read_text(encoding="utf-8", errors="replace")
-        base = (ROOT / rel).parent
+        text = read_at(ref, rel)
+        base_dir = str(pathlib.PurePosixPath(rel).parent)
+        if base_dir == ".":
+            base_dir = ""
         for m in MD_LINK.finditer(text):
             target = m.group(1).strip()
-            if target.startswith(("http://", "https://", "mailto:", "#")):
+            if target.startswith(("http://", "https://", "mailto:",
+                                  "#")):
                 continue
             target = target.split("#", 1)[0].strip()
             if not target or "," in target:
@@ -180,29 +227,27 @@ def collect_markdown_links(files: list[str]) -> dict:
                 continue
             if target.startswith("tmp/"):
                 continue
-            dst = (base / target).resolve()
-            if dst.exists():
-                try:
-                    resolved.append(
-                        (rel, str(dst.relative_to(ROOT))))
-                except ValueError:
-                    broken.append((rel, m.group(1)))
+            norm = normalize_link_target(base_dir, target)
+            if norm is not None and norm in fileset:
+                resolved.append((rel, norm))
             else:
                 broken.append((rel, m.group(1)))
     return {"resolved_count": len(resolved), "broken": broken}
 
 
-def collect_script_refs(files: list[str]) -> dict:
+def collect_script_refs(files: list[str],
+                        ref: str | None = None) -> dict:
     refs = collections.Counter()
     for rel in files:
         if not rel.endswith(".md"):
             continue
-        text = (ROOT / rel).read_text(encoding="utf-8", errors="replace")
+        text = read_at(ref, rel)
         refs.update(SCRIPT_REF.findall(text))
     return refs
 
 
-def collect_imports(root_mods: set[str], files: list[str]) -> dict:
+def collect_imports(root_mods: set[str], files: list[str],
+                    ref: str | None = None) -> dict:
     """Static import graph among root-level python modules."""
     importers = collections.Counter()
     edges = collections.defaultdict(list)
@@ -210,10 +255,8 @@ def collect_imports(root_mods: set[str], files: list[str]) -> dict:
     for rel in files:
         if not rel.endswith(".py") or "/" in rel:
             continue
-        path = ROOT / rel
         try:
-            tree = ast.parse(path.read_text(encoding="utf-8",
-                                            errors="replace"))
+            tree = ast.parse(read_at(ref, rel))
         except SyntaxError:
             continue
         stem = pathlib.PurePosixPath(rel).stem
@@ -228,7 +271,7 @@ def collect_imports(root_mods: set[str], files: list[str]) -> dict:
                 if n in root_mods and n != stem:
                     importers[n] += 1
                     edges[n].append(rel)
-        text = path.read_text(encoding="utf-8", errors="replace")
+        text = read_at(ref, rel)
         subprocess_refs.update(SUBPROCESS_PY.findall(text))
     return {"importers": importers, "edges": edges,
             "subprocess_refs": subprocess_refs}
@@ -286,6 +329,15 @@ def classify(rel: str, ctx: dict) -> dict | None:
             "docs/architecture/GRASSMANNIAN_PLUECKER_ATTACK_PLAN.md",
             "navigation"),
     }
+    # The ledger itself moved during the infrastructure phase; it must
+    # appear in every move manifest so no tracked source disappears.
+    if name == "THEOREM_LEDGER.json":
+        return {"old_path": rel,
+                "proposed_path": "catalog/theorem-ledger.json",
+                "category": "catalog", "claim_family": None,
+                "confidence": "high",
+                "evidence": ["ledger relocated to catalog/ in the "
+                             "infrastructure phase"]}
     if name in fixed_docs:
         dst, cat = fixed_docs[name]
         return {"old_path": rel, "proposed_path": dst, "category": cat,
@@ -494,13 +546,21 @@ def classify(rel: str, ctx: dict) -> dict | None:
 
 
 def main() -> int:
-    files = tracked_files()
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument(
+        "--ref", default=None,
+        help="git ref to inspect (tag/branch/commit); defaults to the "
+             "working tree. The pre-migration inventory must be built "
+             "from --ref pre-layout-migration-v1.")
+    args = ap.parse_args()
+    ref = resolve_ref(args.ref) if args.ref else None
+    files = tracked_files(ref)
     root_files = [f for f in files if "/" not in f]
     root_dirs = sorted({f.split("/")[0] for f in files if "/" in f})
     root_mods = {pathlib.PurePosixPath(f).stem
                  for f in root_files if f.endswith(".py")}
 
-    ledger = load_ledger(files)
+    ledger = load_ledger(files, ref)
     ledger_doc_status = {}
     ledger_refs = []
     for e in ledger.get("entries", []):
@@ -522,9 +582,9 @@ def main() -> int:
             if have:
                 triples[stem] = have
 
-    links = collect_markdown_links(files)
-    script_refs = collect_script_refs(files)
-    graph = collect_imports(root_mods, files)
+    links = collect_markdown_links(files, ref)
+    script_refs = collect_script_refs(files, ref)
+    graph = collect_imports(root_mods, files, ref)
 
     h31_families, h22_families = build_family_maps(root_files)
     ctx = {"ledger_doc_status": ledger_doc_status, "triples": triples,
@@ -589,7 +649,8 @@ def main() -> int:
 
     classification = {
         "generated_by": "tools/migration/inventory_layout.py",
-        "starting_commit": subprocess.run(
+        "inspected_ref": args.ref,
+        "starting_commit": ref if ref else subprocess.run(
             ["git", "rev-parse", "HEAD"], cwd=ROOT,
             capture_output=True, text=True).stdout.strip(),
         "total_tracked_entries": len(files),
