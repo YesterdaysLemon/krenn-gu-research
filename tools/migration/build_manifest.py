@@ -170,11 +170,16 @@ def main() -> int:
     # ledger relocation).
     head_tracked = tracked_files(None)
     already_moved = set()
+    prior_executed_batch = {}
     manifest_path = CATALOG / "moved-paths.json"
     if manifest_path.exists():
         prior = json.loads(manifest_path.read_text(encoding="utf-8"))
-        already_moved = {m["old_path"] for m in prior.get("moves", [])
-                         if m.get("status") in ("moved", "pilot")}
+        for m in prior.get("moves", []):
+            if m.get("status") in ("moved", "pilot"):
+                already_moved.add(m["old_path"])
+                if m.get("executed_batch"):
+                    prior_executed_batch[m["old_path"]] = (
+                        m["executed_batch"])
 
     records, seen_src = [], set()
     collisions, double_moves, cycles = [], [], []
@@ -206,6 +211,8 @@ def main() -> int:
             "claim_family": e.get("claim_family"),
             "confidence": e.get("confidence"),
         }
+        if rec["status"] == "moved" and old in prior_executed_batch:
+            rec["executed_batch"] = prior_executed_batch[old]
         if (rec["status"] != "moved"
                 and rec["old_path"] not in head_tracked
                 and rec["new_path"] in head_tracked):
