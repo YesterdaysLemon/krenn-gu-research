@@ -6,7 +6,7 @@ Starting commit: `f6d2cc426c05d99fcff08ddb1c95f3f1481a373a` (tag `pre-layout-mig
 
 - total tracked entries: **2500**
 - root-level files: **2363** (+ 3 directories = 2366 entries, GitHub truncates at 1,000)
-- classified by rules: **2015** ({'medium': 1188, 'low': 444, 'high': 383})
+- classified by rules: **2015** ({'medium': 1179, 'low': 426, 'high': 410})
 - unclassified (need human decision): **348**
 
 ## Root files by extension
@@ -29,8 +29,7 @@ Starting commit: `f6d2cc426c05d99fcff08ddb1c95f3f1481a373a` (tag `pre-layout-mig
 - `arbitrary-order`: 323
 - `p5/frontier`: 227
 - `p7`: 183
-- `p4/components`: 103
-- `p4/classifications`: 88
+- `p4/classifications`: 164
 - `p4/boundaries`: 85
 - `p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b`: 43
 - `p6`: 39
@@ -52,10 +51,11 @@ Starting commit: `f6d2cc426c05d99fcff08ddb1c95f3f1481a373a` (tag `pre-layout-mig
 - `p5/h22/two-rank-two-spoke-mixed-star`: 6
 - `p5/h22/diagonal-quadric`: 4
 - `p5/h31/all-rank-one-triangle`: 4
-- `p5/h22/all-rank-one-triangle`: 3
-- `p5/h22/common-active-binary-triangle-component-generic`: 3
-- `p5/h22/common-active-binary-triangle-intrinsic-boundary`: 3
-- `p5/h22/common-active-binary-triangle-p-plus-q-exceptional-fibres`: 3
+- `p4/components/all-rank-one-triangle`: 3
+- `p4/components/diagonal-quadric`: 3
+- `p4/components/disjoint-mixed-star`: 3
+- `p4/components/embedded-p3`: 3
+- `p4/components/equal-support-sixfold`: 3
 
 ## Classification by category
 
