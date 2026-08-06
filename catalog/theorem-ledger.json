@@ -941,7 +941,7 @@
     },
     {
       "name": "Generic weighted H22 fibre empty: disjoint mixed star",
-      "document": "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "9bd9c67e4eff422f",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -950,13 +950,19 @@
         "slope r transcendental; special slopes excluded"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h22_disjoint_mixed_star_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h22/disjoint-mixed-star/verify_p5_h22_disjoint_mixed_star_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h22_disjoint_mixed_star_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h22/disjoint-mixed-star/audit_p5_h22_disjoint_mixed_star_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes-hours (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h22/disjoint-mixed-star",
+      "legacy_paths": [
+        "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h22_disjoint_mixed_star_component_generic_obstruction.py",
+        "verify_p5_h22_disjoint_mixed_star_component_generic_obstruction.py"
       ]
     },
     {
@@ -1300,37 +1306,49 @@
     },
     {
       "name": "Eighth-component weighted H22 closure - canonical determinantal proof",
-      "document": "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "9bd9c67e4eff422f",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h22_disjoint_mixed_star_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h22/disjoint-mixed-star/verify_p5_h22_disjoint_mixed_star_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h22_disjoint_mixed_star_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h22/disjoint-mixed-star/audit_p5_h22_disjoint_mixed_star_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "hours (not replayed in the 2026-08-05 pass)",
       "external_binaries": [
         "Singular >= 4.3"
       ],
-      "note": "Primary proof on the canonical line; status unchanged by the stabilization pass."
+      "note": "Primary proof on the canonical line; status unchanged by the stabilization pass.",
+      "claim_package": "claims/p5/h22/disjoint-mixed-star",
+      "legacy_paths": [
+        "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h22_disjoint_mixed_star_component_generic_obstruction.py",
+        "verify_p5_h22_disjoint_mixed_star_component_generic_obstruction.py"
+      ]
     },
     {
       "name": "Eighth-component weighted H22 closure - alternate t-free elimination proof",
-      "document": "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md",
+      "document": "claims/p5/h22/disjoint-mixed-star/alternate/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md",
       "document_sha256_16": "f9811e81cf033cb6",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py",
+      "primary_verifier": "claims/p5/h22/disjoint-mixed-star/alternate/verify_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py",
+      "independent_audit": "claims/p5/h22/disjoint-mixed-star/alternate/audit_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "1327 s verifier + 167 s audit (measured 2026-08-05)",
       "external_binaries": [
         "Singular >= 4.3 (verifier); audit is pure Python"
       ],
-      "note": "Independent of the canonical proof; no shared computation. See MERGE_AUDIT_REPORT.md."
+      "note": "Independent of the canonical proof; no shared computation. See MERGE_AUDIT_REPORT.md.",
+      "claim_package": "claims/p5/h22/disjoint-mixed-star/alternate",
+      "legacy_paths": [
+        "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md",
+        "audit_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py",
+        "verify_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py"
+      ]
     },
     {
       "name": "Eighth-component boundary closures (slopes r=0,+-1,inf; parameter pivots; coupled divisor; af=+-1 sheets; coefficient-quadratic branch; linear slopes)",
@@ -1354,7 +1372,7 @@
     },
     {
       "name": "Eighth-component torus quotient and certificate-divisor frontier",
-      "document": "P5_H22_DISJOINT_MIXED_STAR_TORUS_QUOTIENT.md",
+      "document": "claims/p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_TORUS_QUOTIENT.md",
       "document_sha256_16": "a5a61d6ad03ff9ea",
       "status": "verified",
       "assumptions_and_excluded_divisors": [],
@@ -1365,7 +1383,11 @@
       "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "Reduces the dense component base to f=1 without changing slopes."
+      "note": "Reduces the dense component base to f=1 without changing slopes.",
+      "claim_package": "claims/p5/h22/disjoint-mixed-star/boundaries",
+      "legacy_paths": [
+        "P5_H22_DISJOINT_MIXED_STAR_TORUS_QUOTIENT.md"
+      ]
     },
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
@@ -1534,7 +1556,7 @@
     },
     {
       "name": "Weighted H22 disjoint mixed-star working note",
-      "document": "P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md",
+      "document": "claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md",
       "document_sha256_16": "62c493a2bdb8c372",
       "status": "superseded",
       "assumptions_and_excluded_divisors": [],
@@ -1545,7 +1567,11 @@
       "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "Exploratory finite-field handoff; superseded by both characteristic-zero proofs."
+      "note": "Exploratory finite-field handoff; superseded by both characteristic-zero proofs.",
+      "claim_package": "claims/p5/h22/disjoint-mixed-star",
+      "legacy_paths": [
+        "P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md"
+      ]
     },
     {
       "name": "Transfer track: root-of-unity selector, hafnian lift, quotient catalogue",

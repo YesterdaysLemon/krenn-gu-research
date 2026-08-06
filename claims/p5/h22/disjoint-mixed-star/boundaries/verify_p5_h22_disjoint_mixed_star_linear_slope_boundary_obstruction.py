@@ -7,6 +7,23 @@ import hashlib
 import json
 from pathlib import Path
 
+import sys
+HERE = Path(__file__).resolve().parent
+
+
+def _repo_root() -> Path:
+    for candidate in (HERE, *HERE.parents):
+        if (candidate / ".git").exists():
+            return candidate
+    return HERE
+
+
+REPO_ROOT = _repo_root()
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
+if str(HERE.parent) not in sys.path:
+    sys.path.insert(0, str(HERE.parent))
+
 import sympy as sp
 
 from verify_p5_h22_disjoint_mixed_star_component_generic_obstruction import (
@@ -23,15 +40,12 @@ from verify_p5_h22_disjoint_mixed_star_coupled_slope_boundary_obstruction import
 )
 
 
-ROOT = Path(__file__).resolve().parent
 THEOREM = (
-    ROOT
-    / "P5_H22_DISJOINT_MIXED_STAR_LINEAR_SLOPE_BOUNDARY_OBSTRUCTION.md"
+    HERE / "P5_H22_DISJOINT_MIXED_STAR_LINEAR_SLOPE_BOUNDARY_OBSTRUCTION.md"
 )
-COMPONENT = ROOT / "P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md"
+COMPONENT = REPO_ROOT / "P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md"
 GENERIC = (
-    ROOT
-    / "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
+    HERE / "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
 a, b, f, phi, r = sp.symbols("a b f phi r")
 SLOPE_GRAPHS = {
@@ -186,8 +200,7 @@ def main() -> None:
         "verified": True,
     }
     output = (
-        ROOT
-        / "tmp"
+        REPO_ROOT / "tmp"
         / "p5_h22_disjoint_mixed_star_linear_slope_verified.json"
     )
     output.parent.mkdir(parents=True, exist_ok=True)

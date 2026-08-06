@@ -63,7 +63,15 @@ import sys
 import time
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent / "research_snapshots" / "2026-08-04-p5-h22-slope-divisor-closures" / "scripts"))
+def _repo_root():
+    for candidate in Path(__file__).resolve().parents:
+        if (candidate / ".git").exists():
+            return candidate
+    return Path(__file__).resolve().parent
+
+
+_REPO_ROOT = _repo_root()
+sys.path.insert(0, str(_REPO_ROOT / "research_snapshots" / "2026-08-04-p5-h22-slope-divisor-closures" / "scripts"))
 
 import sympy as sp
 
@@ -81,7 +89,7 @@ from slope_common import (
     resultant_certificate,
 )
 
-OUT = Path(__file__).resolve().parent / "research_snapshots" / "2026-08-04-p5-h22-slope-divisor-closures"
+OUT = _REPO_ROOT / "research_snapshots" / "2026-08-04-p5-h22-slope-divisor-closures"
 
 
 def zero_column(rows, column):

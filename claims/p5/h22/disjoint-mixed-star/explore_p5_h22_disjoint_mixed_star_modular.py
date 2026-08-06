@@ -11,7 +11,15 @@ import itertools
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
+def _repo_root():
+    for candidate in Path(__file__).resolve().parents:
+        if (candidate / ".git").exists():
+            return candidate
+    return Path(__file__).resolve().parent
+
+
+_REPO_ROOT = _repo_root()
+sys.path.insert(0, str(_REPO_ROOT))
 
 import audit_p5_h31_disjoint_mixed_star_component_generic_obstruction as A
 from audit_p5_h31_marked_basis_open_branch import rank_mod

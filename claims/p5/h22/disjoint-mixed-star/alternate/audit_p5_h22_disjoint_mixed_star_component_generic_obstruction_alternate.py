@@ -26,15 +26,26 @@ import itertools
 import json
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+import sys
+HERE = Path(__file__).resolve().parent
+
+
+def _repo_root() -> Path:
+    for candidate in (HERE, *HERE.parents):
+        if (candidate / ".git").exists():
+            return candidate
+    return HERE
+
+
+REPO_ROOT = _repo_root()
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
 THEOREM = (
-    ROOT
-    / "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_"
+    HERE / "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_"
     "ALTERNATE.md"
 )
 PRIMARY = (
-    ROOT
-    / "verify_p5_h22_disjoint_mixed_star_component_generic_"
+    HERE / "verify_p5_h22_disjoint_mixed_star_component_generic_"
     "obstruction_alternate.py"
 )
 SAMPLES = {
@@ -434,8 +445,7 @@ def main() -> None:
         "source_sha256": sha256(Path(__file__)),
     }
     output_path = (
-        ROOT
-        / "tmp"
+        REPO_ROOT / "tmp"
         / (
             "p5_h22_disjoint_mixed_star_component_generic_"
             "obstruction_alternate_audit.json"

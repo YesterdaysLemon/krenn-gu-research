@@ -15,7 +15,7 @@ This does not close special parameter or projective boundary points,
 prove that the nine known components are exhaustive, or resolve the global
 prize problem.  The generic weighted `H22` fibre has since been closed
 in
-[`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 
 ## Component function field
 

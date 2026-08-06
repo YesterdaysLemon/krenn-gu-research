@@ -28,7 +28,7 @@ The former-`main` `t`-free `14 x 8 -> 10 x 4` elimination proof was
 recovered as three `*_ALTERNATE` files with paths rewired and no logic
 changed:
 
-- [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md)
+- [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md`](claims/p5/h22/disjoint-mixed-star/alternate/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md)
 - `verify_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py`
 - `audit_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py`
 

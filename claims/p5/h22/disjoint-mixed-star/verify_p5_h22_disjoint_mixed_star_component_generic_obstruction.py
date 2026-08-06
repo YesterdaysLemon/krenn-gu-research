@@ -11,19 +11,31 @@ from pathlib import Path
 
 import sympy as sp
 
+import sys
+HERE = Path(__file__).resolve().parent
+
+
+def _repo_root() -> Path:
+    for candidate in (HERE, *HERE.parents):
+        if (candidate / ".git").exists():
+            return candidate
+    return HERE
+
+
+REPO_ROOT = _repo_root()
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
 from p5_high_coordinate_tree_chart_cegar import (
     singular_command_with_timeout,
 )
 from verify_p4_disjoint_mixed_star_pure_component import family, relation
 
 
-ROOT = Path(__file__).resolve().parent
 THEOREM = (
-    ROOT
-    / "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
+    HERE / "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
-COMPONENT = ROOT / "P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md"
-WORKING_NOTE = ROOT / "P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md"
+COMPONENT = REPO_ROOT / "P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md"
+WORKING_NOTE = HERE / "P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md"
 MIXED_WORDS = tuple(
     word
     for word in itertools.product((0, 1), repeat=4)
@@ -553,8 +565,7 @@ def main() -> None:
         "verified": True,
     }
     output = (
-        ROOT
-        / "tmp"
+        REPO_ROOT / "tmp"
         / "p5_h22_disjoint_mixed_star_component_generic_verified.json"
     )
     output.parent.mkdir(parents=True, exist_ok=True)

@@ -12,12 +12,25 @@ import json
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
+import sys
+HERE = Path(__file__).resolve().parent
+
+
+def _repo_root() -> Path:
+    for candidate in (HERE, *HERE.parents):
+        if (candidate / ".git").exists():
+            return candidate
+    return HERE
+
+
+REPO_ROOT = _repo_root()
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
 import audit_p5_h31_disjoint_mixed_star_component_generic_obstruction as A
 import explore_p5_h22_disjoint_mixed_star_modular as E
 from audit_p5_h31_marked_basis_open_branch import rank_mod
 
 
-ROOT = Path(__file__).resolve().parent
 MINOR_0137 = (0, 1, 3, 7)
 MINOR_0157 = (0, 1, 5, 7)
 SAMPLES = {
@@ -177,8 +190,7 @@ def main() -> None:
         "audited": True,
     }
     output = (
-        ROOT
-        / "tmp"
+        REPO_ROOT / "tmp"
         / "p5_h22_disjoint_mixed_star_component_generic_audited.json"
     )
     output.parent.mkdir(parents=True, exist_ok=True)

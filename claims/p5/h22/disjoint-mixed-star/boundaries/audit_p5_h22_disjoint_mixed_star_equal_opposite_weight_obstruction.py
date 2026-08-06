@@ -12,11 +12,27 @@ import json
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
+import sys
+HERE = Path(__file__).resolve().parent
+
+
+def _repo_root() -> Path:
+    for candidate in (HERE, *HERE.parents):
+        if (candidate / ".git").exists():
+            return candidate
+    return HERE
+
+
+REPO_ROOT = _repo_root()
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
+if str(HERE.parent) not in sys.path:
+    sys.path.insert(0, str(HERE.parent))
+
 import audit_p5_h31_disjoint_mixed_star_component_generic_obstruction as A
 import explore_p5_h22_disjoint_mixed_star_modular as E
 
 
-ROOT = Path(__file__).resolve().parent
 SAMPLES = {
     7: (1, 1, 1, 1),
     11: (1, 2, 7, 3),
@@ -108,8 +124,7 @@ def main() -> None:
         "audited": True,
     }
     output = (
-        ROOT
-        / "tmp"
+        REPO_ROOT / "tmp"
         / "p5_h22_disjoint_mixed_star_equal_opposite_weight_audited.json"
     )
     output.parent.mkdir(parents=True, exist_ok=True)
