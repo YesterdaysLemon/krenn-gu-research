@@ -1144,13 +1144,13 @@ Fitting locus is one marking line for `D_23^r` and an exact degree-five
 scheme for `D_01^r`; a three-chart factor cover and one- or two-minor
 ternary obstructions close every genuine binary direction:
 
-- [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 At the special slopes `r=1` and `r=-1`, the entire binary incidence is
 empty: the mixed kernel lies in the first diagonal hyperplane at equal
 weight and in the second at opposite weight:
 
-- [`P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md)
+- [`P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md`](claims/p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md)
 
 Factoring the component relation on its coordinate and pivot divisors
 produces twelve generic rank-two branches.  Twenty-four exact Fitting
@@ -1158,8 +1158,8 @@ ideals close them.  The last visible coupled coefficient in the
 degree-five marking cover is also closed by switching the `D_01`
 obstruction from local mode zero to mode one:
 
-- [`P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md)
-- [`P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md)
+- [`P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md`](claims/p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md)
+- [`P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md`](claims/p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md)
 
 Other hidden coefficient divisors and component boundaries remain.
 The embedded pure-`P_3` suspension has since proved that the earlier
@@ -1233,7 +1233,7 @@ Thus the ninth component is closed in full for `H31`; exhaustiveness
 of the new component list remains open.  The earlier modular pattern and
 timed-out broad route remain as provenance:
 
-- [`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md)
+- [`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md)
 
 The later two-rank-two-spoke mixed star gives a tenth component.  Its complete
 marked-basis fibre over the generic component point is now empty for `H31`.

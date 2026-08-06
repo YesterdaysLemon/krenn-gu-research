@@ -4,7 +4,7 @@ Audience: a human mathematician assessing what this repository
 actually proves.  Stabilization pass, 2026-08-05.  Nothing in this
 document is a new claim; every statement cites the document that owns
 it.  The machine-readable companion is
-[`THEOREM_LEDGER.json`](THEOREM_LEDGER.json).
+[`catalog/theorem-ledger.json`](catalog/theorem-ledger.json).
 
 **The global conjecture is UNRESOLVED.**  For even `n >= 6`,
 `d >= 3`, and complex `d x d` blocks `W_ij`, the matching-sum tensor
@@ -88,7 +88,7 @@ The attack then runs through the pure-`P_4` compression components:
   single exception is the equal-support sixfold, whose claim rests on
   its self-contained primary verifier together with the P4 component
   audit `audit_p4_equal_support_sixfold_pure_component.py` (recorded in
-  [`THEOREM_LEDGER.json`](THEOREM_LEDGER.json) as an explicit
+  [`catalog/theorem-ledger.json`](catalog/theorem-ledger.json) as an explicit
   `none_exists`, not an unmapped gap).  The twenty-fifth component's
   `H31` closure is carried by the README checkpoint narrative.
 - **Generic weighted `H22` fibre**: proved empty on components
@@ -103,7 +103,7 @@ The attack then runs through the pure-`P_4` compression components:
   closure exist and are both retained: the canonical determinantal
   marking-chart proof and the recovered `t`-free `14 x 8 -> 10 x 4`
   elimination proof
-  ([`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md)).
+  ([`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md`](claims/p5/h22/disjoint-mixed-star/alternate/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md)).
   Both proofs are retained.  The alternate proof and audit were replayed
   during this stabilization pass; the canonical proof retains its prior
   status but was not replayed during this pass.  See

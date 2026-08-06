@@ -13,7 +13,7 @@ Checks:
   2. no generated solver artifact class is tracked (.sing/.ms/.out/
      .stdout/.drat/.cnf/.log and the brute-force JSON dump patterns);
   3. local Markdown links resolve (files and directories);
-  4. THEOREM_LEDGER.json integrity: documents exist, every non-null
+  4. catalog/theorem-ledger.json integrity: documents exist, every
      document_sha256_16 is recomputed and matched, mapped verifier/
      audit scripts are tracked, verified entries carry provenance that
      explains any null field, and the component_census summary matches
@@ -31,6 +31,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import pathlib
 import py_compile
 import re
@@ -212,9 +213,9 @@ def _blob_sha16(rel: str) -> str:
 
 
 def check_ledger(files: list[str]) -> None:
-    ledger_path = ROOT / "THEOREM_LEDGER.json"
+    ledger_path = ROOT / "catalog" / "theorem-ledger.json"
     if not ledger_path.exists():
-        failures.append("THEOREM_LEDGER.json missing")
+        failures.append("catalog/theorem-ledger.json missing")
         return
     ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
     by_base = {}
@@ -406,6 +407,254 @@ def show_versions() -> None:
         print(f"    {tool}: {found or 'not on PATH (manual replays only)'}")
 
 
+# Root-layout enforcement (warning-only during the migration; set
+# KG_LAYOUT_STRICT=1 to fail, e.g. once bulk migration is complete).
+ALLOWED_ROOT_FILES = {
+    "README.md", "LICENSE", "CONTRIBUTING.md", "CITATION.cff",
+    "pyproject.toml", "requirements.txt", "requirements.lock.txt",
+    "Containerfile", ".gitignore",
+}
+ALLOWED_ROOT_DIRS = {
+    ".github", "claims", "docs", "src", "tools", "tests", "catalog",
+    "research_snapshots", "research_figures",
+}
+ROOT_COUNT_TARGET = 30
+FORBIDDEN_ROOT_PATTERNS = (
+    re.compile(r"^P[4-7]_.*\.md$"),
+    re.compile(r"^ARBITRARY_.*\.md$"),
+    re.compile(r"^(verify|audit|explore|certify|package|generate|"
+               r"probe|derive|check|close|retry|extract)_"
+               r"[a-z0-9_]*\.py$"),
+)
+
+
+def check_root_layout(files: list[str]) -> None:
+    root_files = sorted(f for f in files if "/" not in f)
+    root_dirs = sorted({f.split("/")[0] for f in files if "/" in f})
+    violations = []
+    for f in root_files:
+        if f in ALLOWED_ROOT_FILES:
+            continue
+        for pat in FORBIDDEN_ROOT_PATTERNS:
+            if pat.match(f):
+                violations.append(f)
+                break
+    entries = len(root_files) + len(root_dirs)
+    strict = os.environ.get("KG_LAYOUT_STRICT") == "1"
+    problems = []
+    if entries > ROOT_COUNT_TARGET:
+        problems.append(
+            f"{entries} root entries exceed the target of "
+            f"{ROOT_COUNT_TARGET} (migration in progress)")
+    if violations:
+        problems.append(
+            f"{len(violations)} root files match forbidden patterns, "
+            f"e.g. {violations[:3]}")
+    if problems:
+        label = "HYGIENE FAILURES" if strict else "LAYOUT WARNINGS"
+        print(f"[8] root layout ({'strict' if strict else 'warning-only'}):")
+        for p in problems:
+            print(f"    {p}")
+        if strict:
+            failures.extend(f"root layout: {p}" for p in problems)
+    else:
+        print(f"[8] root layout: {entries} entries, no forbidden "
+              "patterns")
+
+
+# Manifest-aware stale-path enforcement (PR review item 6).  After a
+# move, the old path must not reappear anywhere except provenance.
+STALE_ALLOWLIST_FILES = {
+    "catalog/moved-paths.json",
+    "catalog/layout-classification.json",
+    "catalog/unclassified-files.json",
+    "docs/architecture/layout-migration-report.md",
+    "docs/architecture/layout-inventory.md",
+    "MERGE_AUDIT_REPORT.md",
+    "STABILIZATION_AUDIT_REPORT.md",
+}
+STALE_ALLOWLIST_PREFIXES = (
+    "tools/migration/",
+    "tests/test_migration_tools.py",
+    # Batch approval files record old paths in their member lists by
+    # design; they are provenance, not stale references.
+    "catalog/batches/",
+)
+STALE_SCAN_EXTENSIONS = (".md", ".py", ".yml", ".yaml", ".sh", ".json")
+
+
+def _json_strings_outside_legacy(node, out: list) -> None:
+    """Collect JSON string values, skipping legacy_paths fields."""
+    if isinstance(node, dict):
+        for k, v in node.items():
+            if k == "legacy_paths":
+                continue
+            _json_strings_outside_legacy(v, out)
+    elif isinstance(node, list):
+        for item in node:
+            _json_strings_outside_legacy(item, out)
+    elif isinstance(node, str):
+        out.append(node)
+
+
+def check_stale_paths(files: list[str]) -> None:
+    manifest_path = ROOT / "catalog" / "moved-paths.json"
+    if not manifest_path.exists():
+        print("[9] stale paths: no manifest, nothing to enforce")
+        return
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    moves = manifest.get("moves", [])
+    old_paths = {m["old_path"] for m in moves}
+    new_paths = {m["new_path"] for m in moves}
+    # Enforcement applies only to EXECUTED moves (status "moved").
+    # Planned-but-unexecuted moves still sit at their old location, so
+    # referencing them there is correct until a batch actually runs.
+    executed = [m for m in moves if m["status"] == "moved"]
+    current_basenames = {pathlib.PurePosixPath(f).name for f in files}
+    # Full old paths enforceable when unambiguous: sub-path moves, or
+    # root files renamed away entirely.
+    checkables = sorted(
+        old for old in {m["old_path"] for m in executed}
+        if "/" in old
+        or pathlib.PurePosixPath(old).name not in current_basenames)
+    # Executed root->package moves keeping the filename: enforced
+    # context-aware via bare-basename reference scanning.
+    moved_by_base = {}
+    for m in executed:
+        old, new = m["old_path"], m["new_path"]
+        if ("/" not in old
+                and pathlib.PurePosixPath(old).name
+                == pathlib.PurePosixPath(new).name):
+            moved_by_base[pathlib.PurePosixPath(old).name] = new
+    pat = (re.compile("|".join(re.escape(o) for o in checkables))
+           if checkables else None)
+    # Precompute the (bounded) set of new paths that can embed an old
+    # path, so per-file masking never scans the whole move table.
+    maskable_for_checkables = sorted(
+        np for np in new_paths
+        if any(c in np for c in checkables)) if checkables else []
+    stale = []
+    for rel in files:
+        if not rel.endswith(STALE_SCAN_EXTENSIONS):
+            continue
+        if rel in STALE_ALLOWLIST_FILES:
+            continue
+        if rel.startswith(STALE_ALLOWLIST_PREFIXES):
+            continue
+        text = (ROOT / rel).read_text(encoding="utf-8",
+                                      errors="replace")
+        if pat is None and not moved_by_base:
+            continue
+        pat_hit = pat is not None and pat.search(text)
+        # Cheap prefilter for the bare-basename scan: only bases that
+        # actually occur in this file need context analysis.
+        bases_here = {b for b in moved_by_base if b in text}
+        if not pat_hit and not bases_here:
+            continue
+        if rel.endswith(".json"):
+            try:
+                data = json.loads(text)
+            except json.JSONDecodeError:
+                stale.append((rel, "unparseable JSON containing an "
+                                   "old path"))
+                continue
+            strings = []
+            _json_strings_outside_legacy(data, strings)
+            hits = sorted({s for s in strings if s in checkables})
+            for h in hits:
+                stale.append((rel, h))
+            continue
+        # Mask current (correct) paths so an old string inside a new
+        # path cannot false-positive, then re-scan.  Only the small
+        # relevant subsets are masked, never the whole move table.
+        masked = text
+        for np in maskable_for_checkables:
+            if np in masked:
+                masked = masked.replace(np, "")
+        for base in bases_here:
+            np = moved_by_base[base]
+            if np in masked:
+                masked = masked.replace(np, "")
+        if pat_hit:
+            for m in pat.finditer(masked):
+                stale.append((rel, m.group(0)))
+                break  # one report per file per old path is enough
+        if bases_here:
+            for ctx, base in find_stale_bare_refs(
+                    masked, rel,
+                    {b: moved_by_base[b] for b in bases_here}):
+                stale.append((rel, f"{base} ({ctx})"))
+    enforced = len(checkables) + len(moved_by_base)
+    if stale:
+        failures.append(
+            "stale legacy paths found (manifest-aware):\n  "
+            + "\n  ".join(f"{r}: {p}" for r, p in stale[:30])
+            + (f"\n  ... ({len(stale) - 30} more)"
+               if len(stale) > 30 else ""))
+    else:
+        print(f"[9] stale paths: {enforced} enforceable old paths "
+              f"({len(checkables)} full-path, {len(moved_by_base)} "
+              "root-to-package), none present outside provenance")
+
+
+# Context-aware stale-REFERENCE detection for root->package moves that
+# keep their filename (review item: root-to-package coverage).  A bare
+# basename is actionable only where it resolves to the OLD location:
+#   - a markdown link in a ROOT document (](base) resolves to root);
+#   - a fenced replay command anywhere outside the destination package
+#     (documented commands run from the repository root);
+#   - a python subprocess/command string outside the package;
+#   - a shell/yaml python invocation outside the package.
+# Inside the destination package the same basename is a valid sibling
+# reference and must not be flagged.
+def find_stale_bare_refs(text: str, rel: str,
+                         moved_by_base: dict) -> list:
+    rel_dir = str(pathlib.PurePosixPath(rel).parent)
+    if rel_dir == ".":
+        rel_dir = ""
+    hits = []
+    for base, new in moved_by_base.items():
+        pkg_dir = str(pathlib.PurePosixPath(new).parent)
+        in_package = rel_dir == pkg_dir or rel_dir.startswith(
+            pkg_dir + "/")
+        if in_package:
+            continue
+        esc = re.escape(base)
+        if rel.endswith(".md"):
+            # inline links in root documents resolve to the old path
+            if rel_dir == "" and re.search(
+                    r"\]\(" + esc + r"(#[^)\s]*)?\)", text):
+                hits.append(("markdown link", base))
+                continue
+            if rel_dir == "" and re.search(
+                    r"^\s*\[[^\]]+\]:\s*" + esc + r"\s*$", text,
+                    re.M):
+                hits.append(("reference-style link", base))
+                continue
+            # fenced replay commands (run from the repository root)
+            in_fence = False
+            for line in text.splitlines():
+                if line.lstrip().startswith("```"):
+                    in_fence = not in_fence
+                    continue
+                if in_fence and re.match(
+                        r"\s*(python3?|wsl[^\n]*python3?)\s+" + esc
+                        + r"(\s|$)", line):
+                    hits.append(("fenced replay command", base))
+                    break
+        elif rel.endswith(".py"):
+            if re.search(
+                    r"(subprocess|sys\.executable|python)[^\n]{0,100}?"
+                    r"[\"']" + esc + r"[\"']", text):
+                hits.append(("python command string", base))
+        elif rel.endswith((".yml", ".yaml", ".sh")):
+            if re.search(
+                    r"python3?\s+[\"']?" + esc + r"[\"']?(\s|$)",
+                    text, re.M):
+                hits.append(("command reference", base))
+    return hits
+
+
 def main() -> int:
     files = tracked_files()
     check_compiles(files)
@@ -413,6 +662,8 @@ def main() -> int:
     check_markdown_links(files)
     check_ledger(files)
     check_portability(files)
+    check_root_layout(files)
+    check_stale_paths(files)
     check_fast_verifiers()
     show_versions()
     if failures:

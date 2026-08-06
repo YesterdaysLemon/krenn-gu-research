@@ -5,7 +5,7 @@ name: hygiene
 #   1. every tracked Python file compiles;
 #   2. no generated solver artifact is tracked;
 #   3. local Markdown links resolve;
-#   4. THEOREM_LEDGER.json integrity (existence, recomputed hashes,
+#   4. catalog/theorem-ledger.json integrity (existence, recomputed hashes,
 #      provenance contract, census-vs-entries validation);
 #   5. portability regression scan (no machine-specific paths);
 #   6. the five fast verifiers run and exit zero;
@@ -23,6 +23,9 @@ on:
   push:
     branches: [main]
   pull_request:
+  # Manual trigger: protects against missed pull_request deliveries and
+  # lets a reviewer re-run the floor on demand.
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -50,6 +53,9 @@ jobs:
 
       - name: Run hygiene checks
         run: python check_hygiene.py
+
+      - name: Run migration-tool tests
+        run: python -m unittest -v tests.test_migration_tools
 
       - name: Run the self-contained test module
         run: python -m unittest -v test_fourteen_vertex_cycle_cover_lattice.py
