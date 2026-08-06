@@ -28,7 +28,7 @@ The former-`main` `t`-free `14 x 8 -> 10 x 4` elimination proof was
 recovered as three `*_ALTERNATE` files with paths rewired and no logic
 changed:
 
-- [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md`](claims/p5/h22/disjoint-mixed-star/alternate/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md)
+- [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md`](../../claims/p5/h22/disjoint-mixed-star/alternate/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md)
 - `verify_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py`
 - `audit_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py`
 
@@ -40,7 +40,7 @@ two proofs is in [`MERGE_AUDIT_REPORT.md`](MERGE_AUDIT_REPORT.md).
 
 ### 3. Human-facing frontier (priority 3)
 
-[`CURRENT_FRONTIER.md`](CURRENT_FRONTIER.md) was written for a human
+[`CURRENT_FRONTIER.md`](../current-frontier.md) was written for a human
 mathematician: what is proved exactly; what remains conditional, local,
 generic, fibrewise, or boundary-limited; the shortest route to the
 conjecture (frontier reduction, O-Cover, O-H31, O-H22); the three most
@@ -48,7 +48,7 @@ decisive bottlenecks; and a candid replay audit.
 
 ### 4. Machine-readable ledger (priority 4)
 
-[`THEOREM_LEDGER.json`](catalog/theorem-ledger.json) — 85 entries with name,
+[`THEOREM_LEDGER.json`](../../catalog/theorem-ledger.json) — 85 entries with name,
 status, assumptions/excluded divisors, dependencies, primary verifier,
 independent audit, expected runtime, external binaries, and
 drift-detection SHA-256 prefixes.  Status vocabulary is documented in
@@ -56,13 +56,13 @@ the file header.  Global status field: `UNRESOLVED`.
 
 ### 5. CI and hygiene checks (priority 5)
 
-- [`check_hygiene.py`](check_hygiene.py): compiles all 1,687 tracked
+- [`check_hygiene.py`](../../check_hygiene.py): compiles all 1,687 tracked
   Python files, rejects tracked solver artifacts, resolves all local
   markdown links, validates the ledger and all 1,348 script references
   in docs (10 historical dangling references allowlisted with
   provenance), runs five fast verifiers, and prints dependency/solver
   versions.  Runs from a clean checkout with pinned dependencies only.
-- [`.github/workflows/hygiene.yml`](.github/workflows/hygiene.yml):
+- [`.github/workflows/hygiene.yml`](../../.github/workflows/hygiene.yml):
   runs the same checks on push/PR.
 
 ### 6. Machine-specific commands removed (priority 6)
@@ -75,7 +75,7 @@ verifiers were re-run and pass.  One residual `sys.path` injection was
 guarded to activate only if the directory exists.  The remaining
 `wsl.exe` mentions are documented optional `--singular-command`
 fallbacks, not required paths.  Reproducible environments are pinned in
-[`requirements.lock.txt`](requirements.lock.txt) (sympy 1.14.0,
+[`requirements.lock.txt`](../../requirements.lock.txt) (sympy 1.14.0,
 numpy 2.5.1, python-sat 1.9.dev7, mpmath 1.3.0) and
 [`Containerfile`](Containerfile) (Ubuntu 24.04 + Singular + pinned
 pip deps).
@@ -122,7 +122,7 @@ These are not defects in the code; they are places where agent work
 cannot substitute for mathematical judgment:
 
 1. **The exhaustiveness claim and its quantifier scope** (bottleneck B3
-   in [`CURRENT_FRONTIER.md`](CURRENT_FRONTIER.md)).  The claim that 25
+   in [`CURRENT_FRONTIER.md`](../current-frontier.md)).  The claim that 25
    component closures cover the all-pair-rank exceptional locus needs a
    human to check the quantifiers and the symmetry-group coverage.  The
    obligation ledger's warning — a component census is a lower bound,

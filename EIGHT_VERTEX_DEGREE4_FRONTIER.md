@@ -30,7 +30,7 @@ The CNF uses four proved local consequences of an exact witness:
    non-coordinate selected killer is proportional to each nonzero
    nonmatching-colour column of the spare block.
 
-The proofs are in `RESEARCH_NOTES.md`.
+The proofs are in `docs/research-notes.md`.
 
 By vertex, neighbour, and global-colour symmetry, a hypothetical
 degree-four vertex is labelled as vertex 0 with neighbours 1,2,3,4:

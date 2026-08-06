@@ -128,20 +128,29 @@ def _remap_target(target: str, old_to_new: dict, written_from: str,
     # Idempotency: already-correct at the current location -> untouched.
     if _resolves_at(root, now_from, bare):
         return None
+    new_abs = None
+    # Interpretation 1: the link was written relative to the source's
+    # PRE-move location (the usual case for a freshly moved source).
     norm = normalize_rel(written_from, bare)
-    if norm is None:
-        return None
-    new_abs = old_to_new.get(norm)
+    if norm is not None:
+        if norm in old_to_new:
+            new_abs = old_to_new[norm]
+        elif moved_source and written_from != now_from and \
+                _resolves_at(root, written_from, bare):
+            # target not moved but still at the pre-move location:
+            # re-anchor so it keeps resolving.
+            new_abs = norm
+    # Interpretation 2: the link was ALREADY re-anchored relative to
+    # the source's current (post-move) location in an earlier
+    # migration pass, and its target has since moved again.  Resolve
+    # against the current location and remap if the resolved path is a
+    # moved source.
     if new_abs is None:
-        if not moved_source:
-            return None
-        # Moved source, target not in the move map: re-anchor only if
-        # the target actually exists at the source's pre-move location.
-        if written_from == now_from:
-            return None
-        if not _resolves_at(root, written_from, bare):
-            return None
-        new_abs = norm
+        norm_now = normalize_rel(now_from, bare)
+        if norm_now is not None and norm_now in old_to_new:
+            new_abs = old_to_new[norm_now]
+    if new_abs is None:
+        return None
     counter["n"] += 1
     return relative_to(now_from, new_abs) + frag
 

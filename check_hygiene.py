@@ -470,8 +470,11 @@ STALE_ALLOWLIST_FILES = {
     "catalog/unclassified-files.json",
     "docs/architecture/layout-migration-report.md",
     "docs/architecture/layout-inventory.md",
-    "MERGE_AUDIT_REPORT.md",
-    "STABILIZATION_AUDIT_REPORT.md",
+    # Per-batch dry-run reports record the approved old paths by
+    # design; they are provenance, not stale references.
+    "docs/architecture/navigation-docs-phase2-dry-run.md",
+    "docs/audits/MERGE_AUDIT_REPORT.md",
+    "docs/audits/STABILIZATION_AUDIT_REPORT.md",
 }
 STALE_ALLOWLIST_PREFIXES = (
     "tools/migration/",
@@ -526,6 +529,16 @@ def check_stale_paths(files: list[str]) -> None:
                 and pathlib.PurePosixPath(old).name
                 == pathlib.PurePosixPath(new).name):
             moved_by_base[pathlib.PurePosixPath(old).name] = new
+    # Renamed root files (basename changed): the display label of a
+    # correct link still spells the old name, so we must not flag a
+    # link whose TARGET already points at the new location.
+    renamed_base_to_new = {}
+    for m in executed:
+        old, new = m["old_path"], m["new_path"]
+        if ("/" not in old
+                and pathlib.PurePosixPath(old).name
+                != pathlib.PurePosixPath(new).name):
+            renamed_base_to_new[pathlib.PurePosixPath(old).name] = new
     pat = (re.compile("|".join(re.escape(o) for o in checkables))
            if checkables else None)
     # Precompute the (bounded) set of new paths that can embed an old
@@ -575,6 +588,16 @@ def check_stale_paths(files: list[str]) -> None:
             np = moved_by_base[base]
             if np in masked:
                 masked = masked.replace(np, "")
+        # Mask markdown links whose target resolves to the new location
+        # of a renamed root file, so their display label (which spells
+        # the old basename) is not mistaken for a stale path.
+        for base, new in renamed_base_to_new.items():
+            masked = re.sub(
+                r"\[[^\]]*\]\(" + re.escape(new) + r"(#[^)\s]*)?\)",
+                "[link]()", masked)
+        # Recompute pat_hit on the masked text; masking may have
+        # removed the only occurrence of a checkable.
+        pat_hit = pat is not None and pat.search(masked)
         if pat_hit:
             for m in pat.finditer(masked):
                 stale.append((rel, m.group(0)))

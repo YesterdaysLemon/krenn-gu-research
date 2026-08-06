@@ -33,7 +33,7 @@ cycle or theta.  Splicing in a cubic three-coloured circulant preserves every
 degree and pure matching and gives the same structural nonalignment for all
 `m>=9`.  Full mixed equations might still force alignment in a genuine
 restriction.  See
-[`ARBITRARY_PERMANENT_THREE_EXCESS_REPLAY_EXCHANGE_CLOSURE_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_REPLAY_EXCHANGE_CLOSURE_THEOREM.md).
+[`ARBITRARY_PERMANENT_THREE_EXCESS_REPLAY_EXCHANGE_CLOSURE_THEOREM.md`](../ARBITRARY_PERMANENT_THREE_EXCESS_REPLAY_EXCHANGE_CLOSURE_THEOREM.md).
 
 ## 2 August 2026: bosonic Plucker defect and Pfaffian boundary
 
@@ -50,7 +50,7 @@ and a `Q(sqrt(2))` mixed zero with nonzero defect.  It is non-Pfaffian by the
 conformal-even-`K_3,3` characterization.  Thus the next useful targets are to
 prove Pfaffian eligibility, force at least one chord sector to vanish, or use
 other coefficients to contradict the defect completion.  See
-[`ARBITRARY_PERMANENT_THREE_EXCESS_BOSONIC_PLUCKER_DEFECT_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_BOSONIC_PLUCKER_DEFECT_THEOREM.md).
+[`ARBITRARY_PERMANENT_THREE_EXCESS_BOSONIC_PLUCKER_DEFECT_THEOREM.md`](../ARBITRARY_PERMANENT_THREE_EXCESS_BOSONIC_PLUCKER_DEFECT_THEOREM.md).
 
 ## 2 August 2026: Hamming-face pinching kills the completed bypass
 
@@ -67,7 +67,7 @@ needed singleton alternate colour in a coefficient-induced diagonal-excess
 `K_3,3`.  Therefore that entire completed-theta case is excluded at every
 order.  The open step is to force a conformal carrier into this aligned,
 coefficient-induced incidence class.  See
-[`ARBITRARY_PERMANENT_THREE_EXCESS_HAMMING_FACE_PINCH_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_HAMMING_FACE_PINCH_THEOREM.md).
+[`ARBITRARY_PERMANENT_THREE_EXCESS_HAMMING_FACE_PINCH_THEOREM.md`](../ARBITRARY_PERMANENT_THREE_EXCESS_HAMMING_FACE_PINCH_THEOREM.md).
 
 ## 2 August 2026: boundary-entanglement rank covers both mode profiles
 
@@ -84,7 +84,7 @@ three-mode slice for `m>=4`, so a completed theta is impossible.  Therefore
 any surviving two-chord case must use nonempty boundary sectors to cancel
 the rank-two port tensor.  Eliminating or controlling those sectors is now
 the precise convolution problem.  See
-[`ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_ENTANGLEMENT_RANK_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_ENTANGLEMENT_RANK_THEOREM.md).
+[`ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_ENTANGLEMENT_RANK_THEOREM.md`](../ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_ENTANGLEMENT_RANK_THEOREM.md).
 
 ## 2 August 2026: the apolar boundary quotient excludes both chords
 
@@ -102,7 +102,7 @@ rank-at-least-two permanent port tensor versus a zero/rank-one `Delta_3`
 slice.  Therefore simultaneous eligibility of both completing chords is
 excluded for every `m>=4` under the tight aligned conformal completed-theta
 hypotheses.  See
-[`ARBITRARY_PERMANENT_THREE_EXCESS_APOLAR_BOUNDARY_QUOTIENT_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_APOLAR_BOUNDARY_QUOTIENT_THEOREM.md).
+[`ARBITRARY_PERMANENT_THREE_EXCESS_APOLAR_BOUNDARY_QUOTIENT_THEOREM.md`](../ARBITRARY_PERMANENT_THREE_EXCESS_APOLAR_BOUNDARY_QUOTIENT_THEOREM.md).
 
 ## 2 August 2026: conformal-core alignment and chord completion
 
@@ -123,7 +123,7 @@ aligned cycle equations `x^lambda=-1` are inconsistent exactly when their
 exchange vectors have an integer dependency with odd coefficient sum.  The
 open task is to force such an odd dependency or isolate one coefficient from
 all nonempty boundary sectors.  See
-[`ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_CORE_ALIGNMENT_BOUNDARY.md`](ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_CORE_ALIGNMENT_BOUNDARY.md).
+[`ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_CORE_ALIGNMENT_BOUNDARY.md`](../ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_CORE_ALIGNMENT_BOUNDARY.md).
 
 ## 2 August 2026: `B_3` phase charts and the nonabelian-holonomy target
 
@@ -143,7 +143,7 @@ dimension-up-to-three cube with one fixed transposition, and its rebases also
 realize cyclic `C_3` transport.  This is not a construction of distinct
 physical pure backbones.  Hence phase equations alone do not close either
 abelian branch.  See
-[`ARBITRARY_PERMANENT_THREE_EXCESS_B3_PHASE_HOLONOMY_NOGO.md`](ARBITRARY_PERMANENT_THREE_EXCESS_B3_PHASE_HOLONOMY_NOGO.md).
+[`ARBITRARY_PERMANENT_THREE_EXCESS_B3_PHASE_HOLONOMY_NOGO.md`](../ARBITRARY_PERMANENT_THREE_EXCESS_B3_PHASE_HOLONOMY_NOGO.md).
 
 ## 2 August 2026: the six-token odd-ear budget
 
@@ -162,7 +162,7 @@ the mandatory cover is not known to be mode-cubic.  The last ear must be a
 single edge.  This does not yet force incompatible port transport: long
 first-use chains and all shore partitions `3`, `2+1`, and `1+1+1` remain
 possible.  See
-[`ARBITRARY_PERMANENT_THREE_EXCESS_SIX_TOKEN_EAR_THEOREM.md`](ARBITRARY_PERMANENT_THREE_EXCESS_SIX_TOKEN_EAR_THEOREM.md).
+[`ARBITRARY_PERMANENT_THREE_EXCESS_SIX_TOKEN_EAR_THEOREM.md`](../ARBITRARY_PERMANENT_THREE_EXCESS_SIX_TOKEN_EAR_THEOREM.md).
 
 ## 2 August 2026: strict-support transfer to root--blocker cuts
 
@@ -184,7 +184,7 @@ These are bounds on the extracted active cut, not on the total graph.  A
 two-port `P_7` bound of 24 is conditional on the still-unproved synchronized
 factorization.  No theorem here forces the requisite sparse extraction, so
 the global conjecture remains unresolved.  See
-[`GRAPH_EXTRACTION_STRICT_SUPPORT_TRANSFER_COROLLARY.md`](GRAPH_EXTRACTION_STRICT_SUPPORT_TRANSFER_COROLLARY.md).
+[`GRAPH_EXTRACTION_STRICT_SUPPORT_TRANSFER_COROLLARY.md`](../GRAPH_EXTRACTION_STRICT_SUPPORT_TRANSFER_COROLLARY.md).
 
 ## 31 July 2026: the corrected projective flat sheet
 
@@ -209,7 +209,7 @@ Segre/Kronecker boundary.  When both partners equal `A^#` projectively,
 compression forces one quadratic factor while the escape condition forces
 two incompatible affine differences.  That sheet is empty.  Exact primary
 and independent subset-product replays are in
-[`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
+[`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](../P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
 
 The full-support affine-ratio collisions have since been closed as well.
 The honest resonant frontier is now smaller kernel supports, their collision

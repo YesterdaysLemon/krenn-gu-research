@@ -1588,7 +1588,7 @@
     },
     {
       "name": "Transfer track: root-of-unity selector, hafnian lift, quotient catalogue",
-      "document": "ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md",
+      "document": "docs/ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md",
       "document_sha256_16": "26f3ff99dcf8ac15",
       "status": "exploratory",
       "assumptions_and_excluded_divisors": [],
@@ -1599,11 +1599,14 @@
       "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "Exact bounded inputs to construction/gluing strategies; no theorem promotion."
+      "note": "Exact bounded inputs to construction/gluing strategies; no theorem promotion.",
+      "legacy_paths": [
+        "ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md"
+      ]
     },
     {
       "name": "P6/P7 symbolic reductions (ARBITRARY_PERMANENT_* family)",
-      "document": "SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md",
+      "document": "docs/SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md",
       "document_sha256_16": "3f6147c628581929",
       "status": "exploratory",
       "assumptions_and_excluded_divisors": [],
@@ -1614,7 +1617,10 @@
       "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "Mix of proved statements and formal-cofactor/quotient-shadow controls; per-doc status governs."
+      "note": "Mix of proved statements and formal-cofactor/quotient-shadow controls; per-doc status governs.",
+      "legacy_paths": [
+        "SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md"
+      ]
     },
     {
       "name": "Component 19/20 and embedded-P3 boundary candidates (23 CANDIDATE docs)",

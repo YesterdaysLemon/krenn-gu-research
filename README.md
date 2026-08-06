@@ -8,12 +8,12 @@ counterexample for all even `n >= 6` and `d >= 3`.
 ### Start here: 3 August 2026 continuation
 
 The shortest route into the current symbolic `P_7` frontier is
-[`SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md`](SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md).
+[`SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md`](docs/SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md).
 It separates proved statements from formal-cofactor and quotient-shadow
 controls, gives the ranked cross-depth program, and records the exact
 `UNKNOWN` boundaries.  The component-20 special-fibre continuation remains
 separate in
-[`NEXT_INSTANCE_HANDOFF_2026-07-31.md`](NEXT_INSTANCE_HANDOFF_2026-07-31.md).
+[`NEXT_INSTANCE_HANDOFF_2026-07-31.md`](docs/NEXT_INSTANCE_HANDOFF_2026-07-31.md).
 
 The formal Euler--Hessian response jets now have an exact physical
 interpretation: an edge derivative is the response of the same graph after
@@ -1123,10 +1123,10 @@ and exact tensor-restriction invariant theory.  It also defines two proposed
 research objects--the multi-backbone gain diagram and the bound
 deletion-depth cofactor quiver--and records the proof obligation and failure
 boundary for each.  See
-[`SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md`](SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md).
+[`SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md`](docs/SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md).
 
 A separate, nonblocking method-transfer track is recorded in
-[`ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md`](ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md).
+[`ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md`](docs/ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md).
 It contains an exact root-of-unity permanent selector, its legal heralded
 symmetric-hafnian seed lift and fixed-left `P_4` no-go, and a quotient-closed
 catalogue for the first six-blocker surplus.  These are bounded inputs to the
@@ -4721,7 +4721,7 @@ the essential remaining case.
 - [`TEN_VERTEX_C10_EQUALITY_CERTIFICATE.md`](TEN_VERTEX_C10_EQUALITY_CERTIFICATE.md)
 - [`TEN_VERTEX_ODD_FACTOR_EQUALITY_CERTIFICATE.md`](TEN_VERTEX_ODD_FACTOR_EQUALITY_CERTIFICATE.md)
 - [`TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md`](TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md)
-- [`RESEARCH_NOTES.md`](RESEARCH_NOTES.md)
+- [`RESEARCH_NOTES.md`](docs/research-notes.md)
 - [`P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md`](P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md)
 - [`P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md`](P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md)
 - [`P4_SPLIT_PAIR_PURE_COMPONENT.md`](P4_SPLIT_PAIR_PURE_COMPONENT.md)
@@ -4738,9 +4738,9 @@ the essential remaining case.
 - [`P5_POINTWISE_SPECIALIZATION_META_THEOREM.md`](P5_POINTWISE_SPECIALIZATION_META_THEOREM.md)
 - [`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md)
 - [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md`](claims/p5/h22/disjoint-mixed-star/alternate/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md)
-- [`MERGE_AUDIT_REPORT.md`](MERGE_AUDIT_REPORT.md)
-- [`STABILIZATION_AUDIT_REPORT.md`](STABILIZATION_AUDIT_REPORT.md)
-- [`CURRENT_FRONTIER.md`](CURRENT_FRONTIER.md)
+- [`MERGE_AUDIT_REPORT.md`](docs/audits/MERGE_AUDIT_REPORT.md)
+- [`STABILIZATION_AUDIT_REPORT.md`](docs/audits/STABILIZATION_AUDIT_REPORT.md)
+- [`CURRENT_FRONTIER.md`](docs/current-frontier.md)
 - [`catalog/theorem-ledger.json`](catalog/theorem-ledger.json)
 
 Merge provenance: this index was reconciled after merge `72780ac`
@@ -4748,9 +4748,9 @@ folded the former `main` line (components 9--16, obligation ledger,
 divisor atlas, meta-theorem) into the canonical symbolic line.  The
 per-file resolution record, including the two independent weighted-`H22`
 proofs of the eighth component, is in
-[`MERGE_AUDIT_REPORT.md`](MERGE_AUDIT_REPORT.md); the full
+[`MERGE_AUDIT_REPORT.md`](docs/audits/MERGE_AUDIT_REPORT.md); the full
 stabilization pass record is in
-[`STABILIZATION_AUDIT_REPORT.md`](STABILIZATION_AUDIT_REPORT.md).
+[`STABILIZATION_AUDIT_REPORT.md`](docs/audits/STABILIZATION_AUDIT_REPORT.md).
 
 Each theorem-level claim requires:
 
@@ -5609,7 +5609,7 @@ reconstructed 4,716,109-clause checkpoint with SHA-256
 That audit also leaves all 27 selectors SAT.  These are certified support
 exclusions and exact finite null results; the global conjecture remains
 unresolved.  Full artifact details and the continuing orbit-49 frontier
-are recorded in [`RESEARCH_NOTES.md`](RESEARCH_NOTES.md).
+are recorded in [`RESEARCH_NOTES.md`](docs/research-notes.md).
 
 Orbit 44 is now excluded by a much smaller exact boundary.  Under selector
 276, the 4,716,109-clause predecessor has exactly 24 factor assignments.

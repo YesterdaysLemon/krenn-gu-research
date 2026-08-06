@@ -79,7 +79,7 @@ aggregates.  The separate quotient audit rebuilds the graph6 catalogue,
 perfect matchings, distinguished colourings, normal-type propagation,
 automorphism actions, orbit sizes, and stabilizers.
 
-Canonical artifact hashes are recorded in `RESEARCH_NOTES.md` after a
+Canonical artifact hashes are recorded in `docs/research-notes.md` after a
 fresh replay.
 
 ## Boundary

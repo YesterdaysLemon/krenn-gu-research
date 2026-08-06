@@ -25,7 +25,7 @@ component occurs.
 For the dated continuation map, including the now-certified
 common-singleton component and the residual strata in the last triangle
 cell, see
-[`NEXT_INSTANCE_HANDOFF_2026-07-31.md`](NEXT_INSTANCE_HANDOFF_2026-07-31.md).
+[`NEXT_INSTANCE_HANDOFF_2026-07-31.md`](docs/NEXT_INSTANCE_HANDOFF_2026-07-31.md).
 
 Combined with the separately proved lower-pair exhaustion, this is now a
 component-exhaustiveness theorem for the pure-`P_4` incidence: the twenty-five

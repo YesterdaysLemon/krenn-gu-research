@@ -12,7 +12,7 @@ that proof is
 [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 Both proofs are retained: identical claim, disjoint computation paths.
 The overlap and independence ledger is in
-[`MERGE_AUDIT_REPORT.md`](../../../../../MERGE_AUDIT_REPORT.md).
+[`MERGE_AUDIT_REPORT.md`](../../../../../docs/audits/MERGE_AUDIT_REPORT.md).
 
 This is an exact characteristic-zero obstruction on the generic
 diagonal-source orbit of the eighth pure-`P_4` component proved in
