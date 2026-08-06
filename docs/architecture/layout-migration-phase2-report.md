@@ -140,12 +140,15 @@ size; no basename special case was needed.
 Run on the final working tree:
 
 - `python check_hygiene.py`: all checks passed — 1,697 Python files
-  compile; no generated artifacts tracked; 759 markdown files, all
+  compile; no generated artifacts tracked; 760 markdown files, all
   local links resolve; ledger 85 entries, hashes recomputed 85/85,
   provenance and census consistent; portability clean; stale paths 44
   enforced, none present; provenance invariant 44/44; five fast
   verifiers pass.
-- `python -m unittest tests.test_migration_tools`: 67 tests, OK.
+- `python -m unittest tests.test_migration_tools`: 72 tests, OK
+  (67 at execution time; the final contract tests — mandatory
+  mapping hash, committed batch-file enforcement — were added with the
+  review fixes).
 - `python -m unittest test_fourteen_vertex_cycle_cover_lattice.py`:
   OK.
 

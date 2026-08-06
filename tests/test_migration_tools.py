@@ -933,5 +933,80 @@ class LedgerMetadataIntegrationTests(unittest.TestCase):
                          "claims/p5/h22/fam")
 
 
+
+
+class FinalContractTests(unittest.TestCase):
+    """Phase 2 final review: mandatory mapping hash + committed batch
+    file enforcement."""
+
+    def setUp(self):
+        self.tmp = pathlib.Path(tempfile.mkdtemp())
+        _gitinit(self.tmp)
+        (self.tmp / "A.md").write_text("a\n", encoding="utf-8")
+        _git(self.tmp, "add", "-A")
+        _git(self.tmp, "commit", "-q", "-m", "base")
+        self.base = _head_sha(self.tmp)
+        self.moves = [{"old_path": "A.md", "new_path": "docs/A.md",
+                       "status": "proposed_high_confidence"}]
+        _write_manifest(self.tmp, self.moves)
+        self.manifest_moves = json.loads(
+            (self.tmp / "catalog" / "moved-paths.json")
+            .read_text())["moves"]
+
+    def test_missing_mapping_hash_refused(self):
+        batch = make_batch(
+            batch_id="no-hash", approved_by="t",
+            approved_at="2026-08-06", base_sha=self.base,
+            members=["A.md"], root=self.tmp)
+        del batch["mapping_sha256"]
+        problems = contract_validate(batch, self.tmp,
+                                     self.manifest_moves)
+        self.assertTrue(any("mapping_sha256" in p
+                            for p in problems), problems)
+
+    def test_present_valid_mapping_hash_accepted(self):
+        batch = make_batch(
+            batch_id="ok", approved_by="t", approved_at="2026-08-06",
+            base_sha=self.base, members=["A.md"], root=self.tmp)
+        self.assertEqual(
+            contract_validate(batch, self.tmp, self.manifest_moves), [])
+
+    def test_external_batch_file_refused(self):
+        import sys as _sys
+        _sys.path.insert(0, str(pathlib.Path(__file__).resolve()
+                                .parents[1] / "tools" / "migration"))
+        from execute_moves import _resolve_committed_batch_path
+        outside = pathlib.Path(tempfile.mkdtemp()) / "evil.json"
+        outside.write_text("{}", encoding="utf-8")
+        with self.assertRaises(SystemExit) as ctx:
+            _resolve_committed_batch_path(None, str(outside))
+        self.assertIn("outside catalog/batches", str(ctx.exception))
+
+    def test_untracked_batch_file_refused(self):
+        import sys as _sys
+        _sys.path.insert(0, str(pathlib.Path(__file__).resolve()
+                                .parents[1] / "tools" / "migration"))
+        from execute_moves import _resolve_committed_batch_path
+        # inside the repo's catalog/batches dir but NOT git-tracked:
+        # write into the REAL repo catalog/batches, untracked.
+        repo = pathlib.Path(__file__).resolve().parents[1]
+        target = repo / "catalog" / "batches" / "_untracked_test_batch.json"
+        target.write_text("{}", encoding="utf-8")
+        try:
+            with self.assertRaises(SystemExit) as ctx:
+                _resolve_committed_batch_path(None, str(target))
+            self.assertIn("untracked", str(ctx.exception))
+        finally:
+            target.unlink(missing_ok=True)
+
+    def test_batch_id_resolves_into_catalog_batches(self):
+        import sys as _sys
+        _sys.path.insert(0, str(pathlib.Path(__file__).resolve()
+                                .parents[1] / "tools" / "migration"))
+        from execute_moves import _resolve_committed_batch_path, BATCH_DIR
+        path = _resolve_committed_batch_path("some-batch", None)
+        self.assertEqual(path, BATCH_DIR / "some-batch.json")
+
+
 if __name__ == "__main__":
     unittest.main()

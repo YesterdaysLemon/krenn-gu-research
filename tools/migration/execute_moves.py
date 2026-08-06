@@ -76,13 +76,50 @@ def git(*args: str) -> subprocess.CompletedProcess:
                           text=True)
 
 
+def _resolve_committed_batch_path(batch_id: str | None,
+                                  batch_file: str | None) -> pathlib.Path:
+    """Resolve the batch file, enforcing the committed-approval model.
+
+    An executable batch must be a committed artifact under
+    ``catalog/batches/``.  ``--batch-id`` names a file there directly.
+    An explicit ``--batch-file`` is accepted only if it resolves inside
+    ``catalog/batches/``, stays inside the repository, and is tracked
+    by git (``git ls-files --error-unmatch``).  External or untracked
+    batch files are refused.
+    """
+    if batch_id is not None:
+        return BATCH_DIR / f"{batch_id}.json"
+    raw = pathlib.Path(batch_file)
+    path = (raw if raw.is_absolute()
+            else (ROOT / raw)).resolve()
+    batch_dir = BATCH_DIR.resolve()
+    try:
+        path.relative_to(batch_dir)
+    except ValueError:
+        raise SystemExit(
+            f"refusing batch file outside catalog/batches/: {path}. "
+            "Executable batches must be committed artifacts under "
+            "catalog/batches/.")
+    try:
+        path.relative_to(ROOT.resolve())
+    except ValueError:
+        raise SystemExit(
+            f"refusing batch file outside the repository: {path}.")
+    rel = path.relative_to(ROOT.resolve()).as_posix()
+    proc = subprocess.run(
+        ["git", "ls-files", "--error-unmatch", rel], cwd=ROOT,
+        capture_output=True, text=True)
+    if proc.returncode != 0:
+        raise SystemExit(
+            f"refusing untracked batch file: {rel}. Commit the batch "
+            "under catalog/batches/ before executing it.")
+    return path
+
+
 def load_batch(batch_id: str | None,
                batch_file: str | None) -> tuple[dict, pathlib.Path]:
     """Load and structurally validate a frozen batch definition."""
-    if batch_id is not None:
-        path = BATCH_DIR / f"{batch_id}.json"
-    else:
-        path = pathlib.Path(batch_file)
+    path = _resolve_committed_batch_path(batch_id, batch_file)
     if not path.exists():
         raise SystemExit(
             f"batch file not found: {path}. Create a committed frozen "
@@ -91,7 +128,7 @@ def load_batch(batch_id: str | None,
             "member_count, moves).")
     batch = json.loads(path.read_text(encoding="utf-8"))
     for field in ("batch_id", "approved_by", "approved_at", "base_sha",
-                  "moves", "member_count"):
+                  "moves", "member_count", "mapping_sha256"):
         if field not in batch:
             raise SystemExit(
                 f"batch file missing required field: {field} ({path})")
@@ -140,7 +177,9 @@ def main() -> int:
                        help="name of a committed batch file under "
                             "catalog/batches/ (without .json)")
     group.add_argument("--batch-file", default=None,
-                       help="explicit path to a batch file")
+                       help="explicit path to a batch file; must "
+                            "resolve inside catalog/batches/, stay "
+                            "inside the repository, and be git-tracked")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 

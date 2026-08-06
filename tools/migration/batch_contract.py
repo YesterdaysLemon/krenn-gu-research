@@ -25,8 +25,17 @@ Batch file schema (catalog/batches/<batch_id>.json)::
 ``canonical_mapping_hash`` is deterministic: the SHA-256 of the JSON
 serialization of the sorted move mappings with sorted keys and no
 whitespace.  It depends only on the mappings, never on manifest churn
-(status flips, counts), so it is the durable integrity check; the
-``manifest_sha256`` is supplementary provenance.
+(status flips, counts), so it is the durable integrity check and is
+MANDATORY: ``validate_batch`` refuses a batch without a
+``mapping_sha256`` that matches its own ``moves``.
+
+``manifest_sha256`` is INFORMATIONAL approval-time provenance, not an
+execution gate.  It records the exact manifest state the approver saw,
+but the full manifest naturally changes as execution statuses flip
+(entries move proposed -> moved), so it cannot be validated at
+execution time without spurious refusals.  The canonical mapping hash
+is the durable old->new approval binding; the mapping-vs-manifest
+equality check covers destination drift.
 """
 
 from __future__ import annotations
@@ -107,7 +116,7 @@ def validate_batch(batch: dict, root: pathlib.Path,
     """
     problems = []
     for field in ("batch_id", "approved_by", "approved_at", "base_sha",
-                  "member_count", "moves"):
+                  "member_count", "moves", "mapping_sha256"):
         if not batch.get(field) and batch.get(field) != 0:
             problems.append(f"batch missing required field: {field}")
     if problems:
@@ -140,14 +149,14 @@ def validate_batch(batch: dict, root: pathlib.Path,
     if len(dsts) != len(set(dsts)):
         problems.append("batch has duplicate destinations")
 
-    # Mapping hash must match the frozen mapping (catches any drift in
-    # the batch file itself after approval).
-    if batch.get("mapping_sha256"):
-        actual = canonical_mapping_hash(batch["moves"])
-        if actual != batch["mapping_sha256"]:
-            problems.append(
-                "batch mapping_sha256 does not match its own moves "
-                "(batch altered after approval)")
+    # mapping_sha256 is mandatory (checked above) and must match the
+    # frozen mapping (catches any drift in the batch file itself after
+    # approval).
+    actual = canonical_mapping_hash(batch["moves"])
+    if actual != batch["mapping_sha256"]:
+        problems.append(
+            "batch mapping_sha256 does not match its own moves "
+            "(batch altered after approval)")
 
     # Every batch mapping must equal the CURRENT manifest mapping
     # (catches destination drift in the manifest after approval).
