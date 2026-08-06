@@ -9,14 +9,14 @@ theorem for the eighth pure-`P_4` component as proved on the former
 materially different argument (a determinantal marking chart with a
 degree-five `01` Fitting scheme and seven selected `8 x 8` minors);
 that proof is
-[`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 Both proofs are retained: identical claim, disjoint computation paths.
 The overlap and independence ledger is in
-[`MERGE_AUDIT_REPORT.md`](MERGE_AUDIT_REPORT.md).
+[`MERGE_AUDIT_REPORT.md`](../../../../../MERGE_AUDIT_REPORT.md).
 
 This is an exact characteristic-zero obstruction on the generic
 diagonal-source orbit of the eighth pure-`P_4` component proved in
-[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
+[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](../../../../../P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
 
 For the two weighted diagonal-hyperplane pencils required by `H22`:
 
@@ -39,7 +39,7 @@ component's projective boundary, all of `H22`, component
 exhaustiveness, or the global prize problem.
 
 This theorem replaces the exploratory finite-field working note
-[`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md),
+[`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](../P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md),
 whose two modular marking loci are exactly the characteristic-zero
 loci proved here.
 
@@ -230,7 +230,7 @@ both pencils are now closed over the generic component point —
 two-row unit identities, `r = 0/infinity` by exact identification
 with the four `H31` coordinate frames and transport of the verified
 `H31` theorem:
-[`P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`](P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md),
+[`P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`](../../../../../P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md),
 `verify_p5_h22_disjoint_mixed_star_slope_r1_binary_obstruction.py`,
 `verify_p5_h22_disjoint_mixed_star_slope_rm1_binary_obstruction.py`,
 `verify_slope_boundary_frame_identifications.py`.  The coupled
@@ -242,9 +242,9 @@ intersections, and the projective boundary remain open.
 Run:
 
 ```text
-python verify_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py
+python claims/p5/h22/disjoint-mixed-star/alternate/verify_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py
 
-python audit_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py
+python claims/p5/h22/disjoint-mixed-star/alternate/audit_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py
 ```
 
 The primary verifier reconstructs the marked weighted systems for

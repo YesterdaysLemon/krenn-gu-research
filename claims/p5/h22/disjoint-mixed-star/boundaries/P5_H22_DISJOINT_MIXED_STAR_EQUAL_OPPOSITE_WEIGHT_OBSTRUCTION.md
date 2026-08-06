@@ -11,7 +11,7 @@ binary `Delta_2` extension.  Thus no ternary lifting argument is needed
 on these two residual-torus divisors.
 
 This extends
-[`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
+[`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
 across two special slope fibres.  It does not close all exceptional
 slopes, component-parameter divisors, projective marking boundaries,
 component exhaustiveness, or the global Krenn--Gu conjecture.
