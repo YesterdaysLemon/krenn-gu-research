@@ -5176,25 +5176,28 @@
       "old_path": "P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md",
       "new_path": "claims/p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md",
       "reason": "claim_document -> p4/components/disjoint-mixed-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p4/components/disjoint-mixed-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p4-components-stage3"
     },
     {
       "old_path": "audit_p4_disjoint_mixed_star_pure_component.py",
       "new_path": "claims/p4/components/disjoint-mixed-star/audit_p4_disjoint_mixed_star_pure_component.py",
       "reason": "claim_script -> p4/components/disjoint-mixed-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p4/components/disjoint-mixed-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p4-components-stage3"
     },
     {
       "old_path": "verify_p4_disjoint_mixed_star_pure_component.py",
       "new_path": "claims/p4/components/disjoint-mixed-star/verify_p4_disjoint_mixed_star_pure_component.py",
       "reason": "claim_script -> p4/components/disjoint-mixed-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p4/components/disjoint-mixed-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p4-components-stage3"
     },
     {
       "old_path": "P4_EMBEDDED_P3_PURE_COMPONENT.md",
@@ -5224,25 +5227,28 @@
       "old_path": "P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md",
       "new_path": "claims/p4/components/equal-support-sixfold/P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md",
       "reason": "claim_document -> p4/components/equal-support-sixfold",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p4/components/equal-support-sixfold",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p4-components-stage3"
     },
     {
       "old_path": "audit_p4_equal_support_sixfold_pure_component.py",
       "new_path": "claims/p4/components/equal-support-sixfold/audit_p4_equal_support_sixfold_pure_component.py",
       "reason": "claim_script -> p4/components/equal-support-sixfold",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p4/components/equal-support-sixfold",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p4-components-stage3"
     },
     {
       "old_path": "verify_p4_equal_support_sixfold_pure_component.py",
       "new_path": "claims/p4/components/equal-support-sixfold/verify_p4_equal_support_sixfold_pure_component.py",
       "reason": "claim_script -> p4/components/equal-support-sixfold",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p4/components/equal-support-sixfold",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p4-components-stage3"
     },
     {
       "old_path": "P4_MIXED_ORIENTATION_PURE_COMPONENT.md",
@@ -5320,25 +5326,28 @@
       "old_path": "P4_SPLIT_PAIR_PURE_COMPONENT.md",
       "new_path": "claims/p4/components/split-pair/P4_SPLIT_PAIR_PURE_COMPONENT.md",
       "reason": "claim_document -> p4/components/split-pair",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p4/components/split-pair",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p4-components-stage3"
     },
     {
       "old_path": "audit_p4_split_pair_pure_component.py",
       "new_path": "claims/p4/components/split-pair/audit_p4_split_pair_pure_component.py",
       "reason": "claim_script -> p4/components/split-pair",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p4/components/split-pair",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p4-components-stage3"
     },
     {
       "old_path": "verify_p4_split_pair_pure_component.py",
       "new_path": "claims/p4/components/split-pair/verify_p4_split_pair_pure_component.py",
       "reason": "claim_script -> p4/components/split-pair",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p4/components/split-pair",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p4-components-stage3"
     },
     {
       "old_path": "P5_ALL_FULL_BOUNDARY_OBSTRUCTION.md",
