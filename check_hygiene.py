@@ -462,6 +462,106 @@ def check_root_layout(files: list[str]) -> None:
               "patterns")
 
 
+# Manifest-aware stale-path enforcement (PR review item 6).  After a
+# move, the old path must not reappear anywhere except provenance.
+STALE_ALLOWLIST_FILES = {
+    "catalog/moved-paths.json",
+    "catalog/layout-classification.json",
+    "catalog/unclassified-files.json",
+    "docs/architecture/layout-migration-report.md",
+    "docs/architecture/layout-inventory.md",
+    "MERGE_AUDIT_REPORT.md",
+    "STABILIZATION_AUDIT_REPORT.md",
+}
+STALE_ALLOWLIST_PREFIXES = (
+    "tools/migration/",
+    "tests/test_migration_tools.py",
+)
+STALE_SCAN_EXTENSIONS = (".md", ".py", ".yml", ".yaml", ".sh", ".json")
+
+
+def _json_strings_outside_legacy(node, out: list) -> None:
+    """Collect JSON string values, skipping legacy_paths fields."""
+    if isinstance(node, dict):
+        for k, v in node.items():
+            if k == "legacy_paths":
+                continue
+            _json_strings_outside_legacy(v, out)
+    elif isinstance(node, list):
+        for item in node:
+            _json_strings_outside_legacy(item, out)
+    elif isinstance(node, str):
+        out.append(node)
+
+
+def check_stale_paths(files: list[str]) -> None:
+    manifest_path = ROOT / "catalog" / "moved-paths.json"
+    if not manifest_path.exists():
+        print("[9] stale paths: no manifest, nothing to enforce")
+        return
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    moves = manifest.get("moves", [])
+    old_paths = {m["old_path"] for m in moves}
+    new_paths = {m["new_path"] for m in moves}
+    current_basenames = {pathlib.PurePosixPath(f).name for f in files}
+    # An old path is enforceable when it is unambiguous: a sub-path
+    # move (contains "/"), or a root file whose name no longer exists
+    # anywhere in the tracked tree (i.e. it was renamed away).  Root
+    # moves that keep their filename are ambiguous — the bare name is
+    # still correct at the new location — and are not enforced here.
+    checkables = sorted(
+        old for old in old_paths
+        if "/" in old
+        or pathlib.PurePosixPath(old).name not in current_basenames)
+    if not checkables:
+        print("[9] stale paths: no enforceable old paths")
+        return
+    pat = re.compile("|".join(re.escape(o) for o in checkables))
+    stale = []
+    for rel in files:
+        if not rel.endswith(STALE_SCAN_EXTENSIONS):
+            continue
+        if rel in STALE_ALLOWLIST_FILES:
+            continue
+        if rel.startswith(STALE_ALLOWLIST_PREFIXES):
+            continue
+        text = (ROOT / rel).read_text(encoding="utf-8",
+                                      errors="replace")
+        if not pat.search(text):
+            continue
+        if rel.endswith(".json"):
+            try:
+                data = json.loads(text)
+            except json.JSONDecodeError:
+                stale.append((rel, "unparseable JSON containing an "
+                                   "old path"))
+                continue
+            strings = []
+            _json_strings_outside_legacy(data, strings)
+            hits = sorted({s for s in strings if s in checkables})
+            for h in hits:
+                stale.append((rel, h))
+            continue
+        # Mask current (correct) paths so an old string inside a new
+        # path cannot false-positive, then re-scan.
+        masked = text
+        for np in new_paths:
+            if np in masked:
+                masked = masked.replace(np, "")
+        for m in pat.finditer(masked):
+            stale.append((rel, m.group(0)))
+            break  # one report per file per old path is enough
+    if stale:
+        failures.append(
+            "stale legacy paths found (manifest-aware):\n  "
+            + "\n  ".join(f"{r}: {p}" for r, p in stale[:30])
+            + (f"\n  ... ({len(stale) - 30} more)"
+               if len(stale) > 30 else ""))
+    else:
+        print(f"[9] stale paths: {len(checkables)} enforceable old "
+              "paths, none present outside provenance")
+
+
 def main() -> int:
     files = tracked_files()
     check_compiles(files)
@@ -470,6 +570,7 @@ def main() -> int:
     check_ledger(files)
     check_portability(files)
     check_root_layout(files)
+    check_stale_paths(files)
     check_fast_verifiers()
     show_versions()
     if failures:

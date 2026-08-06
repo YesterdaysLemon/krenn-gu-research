@@ -5,7 +5,7 @@ name: hygiene
 #   1. every tracked Python file compiles;
 #   2. no generated solver artifact is tracked;
 #   3. local Markdown links resolve;
-#   4. THEOREM_LEDGER.json integrity (existence, recomputed hashes,
+#   4. catalog/theorem-ledger.json integrity (existence, recomputed hashes,
 #      provenance contract, census-vs-entries validation);
 #   5. portability regression scan (no machine-specific paths);
 #   6. the five fast verifiers run and exit zero;
