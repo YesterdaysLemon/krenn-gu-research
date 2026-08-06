@@ -91,9 +91,10 @@ and in the `23` pencil
 (r-1)(bf+1)(a^2bf^2+2a^2f+b)/(a^2 f+b).             (3)
 ```
 
-Every factor has a nonzero resultant with `Phi`, so each coefficient
-vanishes **nowhere** on the component, for every marking and both
-`phi`-conjugates.  Solving the four single-`1` words for `y` and
+Every factor has a nonzero resultant with `Phi`, so each coefficient is
+nonzero in `K(r)` and therefore invertible on the declared generic dense
+open; its zero locus is contained in the explicitly excluded
+parameter/slope divisors.  Solving the four single-`1` words for `y` and
 substituting into the ten remaining mixed words therefore converts
 the binary-extension condition exactly: the kernel of the `14 x 8`
 mixed matrix is nonzero at a marking if and only if the reduced
@@ -122,15 +123,16 @@ Their `4 x 4` determinant satisfies the exact identity
 det G_(0011,0110,1001,1011) = u * t_1 t_2   (mod Phi),   (5)
 ```
 
-where `u` is a nowhere-vanishing unit of the component field: its
-factors lie in the list
+where `u` is nonzero in `K(r)`, hence invertible on the declared generic
+dense open; its factors lie in the list
 
 ```text
 2, a, b, f, r, r-1, r+1, af-1, af+1, bf+1, a^2f+b,
 a^2f^2+2bf+1, b^2f^2+bf+1-a^2f^2, af(r+1)-(r-1), phi,
 ```
 
-all invertible modulo `Phi`.  The replayed certificate inverts
+each with a nonzero resultant against `Phi`, hence invertible in `K(r)`
+on the declared dense open.  The replayed certificate inverts
 `t_1 t_2` and returns the unit ideal, and the determinant's exact
 factorization is recorded in the verifier ledger.  A nonzero kernel
 forces all `4 x 4` minors of (4) to vanish; by (5) this forces
@@ -157,8 +159,8 @@ det = u_1 (phi(t_0-1)-f) t_2                (mod Phi, t_1=0),
 det = u_2 ((af(r+1)-(r-1))t_1-(r+1)) t_3    (mod Phi, t_2=0),  (5')
 ```
 
-with `u_1,u_2` nowhere-vanishing units, certified by the same
-inverted-product unit ideals.  Hence the complete `01` marking locus
+with `u_1,u_2` nonzero in `K(r)` (invertible on the declared dense open),
+certified by the same
 is the union of four explicit strata:
 
 ```text

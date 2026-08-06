@@ -97,9 +97,11 @@ The attack then runs through the pure-`P_4` compression components:
   closure exist and are both retained: the canonical determinantal
   marking-chart proof and the recovered `t`-free `14 x 8 -> 10 x 4`
   elimination proof
-  ([`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md),
-  both replayed in the stabilization pass; see
-  [`MERGE_AUDIT_REPORT.md`](MERGE_AUDIT_REPORT.md)).
+  ([`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md)).
+  Both proofs are retained.  The alternate proof and audit were replayed
+  during this stabilization pass; the canonical proof retains its prior
+  status but was not replayed during this pass.  See
+  [`MERGE_AUDIT_REPORT.md`](MERGE_AUDIT_REPORT.md).
 
 ### 1.4 Transfer-track inputs (bounded, no theorem promotion)
 

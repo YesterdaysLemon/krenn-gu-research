@@ -6,9 +6,10 @@ Characteristic-zero certificates over the component function field
     K = C(a,b,f)[phi]/(Phi),  slope r transcendental:
 
 1.  In both weighted pencils, the four single-one mixed words have
-    t-free own-extension coefficients that vanish nowhere on Phi=0
-    (nonzero resultants).  Eliminating the four marked-extension
-    variables reduces the 14 x 8 mixed system to an exact 10 x 4
+    t-free own-extension coefficients that are nonzero in K(r) (nonzero
+    resultants), hence invertible on the declared generic dense open.
+    Eliminating the four marked-extension variables reduces the 14 x 8
+    mixed system to an exact 10 x 4
     system G(t) x = 0 with x nonzero whenever the kernel is nonzero.
 2.  D_01 marking locus: one-minor locus certificates prove that every
     kernel marking satisfies t1*t2 = 0, and on the two sheets the
@@ -253,10 +254,11 @@ def build_direction(direction: str):
 
 
 def resultant_certificate(expr):
-    """Nonzero resultant with Phi proves the expression vanishes
-    nowhere on Phi=0 over the algebraic closure of C(a,b,f,r).  A
-    phi-free reduction is itself a nonzero parameter function and
-    vanishes nowhere."""
+    """Nonzero resultant with Phi proves the expression is nonzero in
+    K(r) = Frac(C(a,b,f,r)[phi]/(Phi)), hence invertible on the declared
+    generic dense open; its zero locus is contained in the explicitly
+    excluded parameter/slope divisors.  A phi-free reduction is itself a
+    nonzero parameter function with the same property."""
     reduced = phi_normal_form(expr)
     assert reduced != 0
     if phi not in reduced.free_symbols:
