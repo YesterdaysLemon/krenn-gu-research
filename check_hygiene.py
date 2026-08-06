@@ -25,6 +25,7 @@ only execution step; expensive certificate replays remain manual.
 
 from __future__ import annotations
 
+import hashlib
 import json
 import pathlib
 import py_compile
@@ -171,6 +172,29 @@ def check_markdown_links(files: list[str]) -> None:
               "resolve")
 
 
+VERIFIED_STATUSES = {"verified", "verified_finite", "verified_generic"}
+# Provenance values that explain WHY a field is null (an explicit,
+# auditable reason) as opposed to being silently unmapped.
+PROVENANCE_VALUES = {
+    "independent_modular_audit", "companion_point_check_script",
+    "script_is_the_verifier", "in_document_proof_only",
+    "historical_certificate_chain",
+    "per_divisor_verify_scripts_named_in_atlas",
+    "per_divisor_docs_P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_*",
+    "not_yet_mapped", "none_exists",
+}
+NULL_EXPLAIN_VALUES = {
+    "in_document_proof_only", "historical_certificate_chain",
+    "per_divisor_verify_scripts_named_in_atlas",
+    "per_divisor_docs_P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_*",
+    "not_yet_mapped", "none_exists",
+}
+
+
+def _sha16(path: pathlib.Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()[:16]
+
+
 def check_ledger(files: list[str]) -> None:
     ledger_path = ROOT / "THEOREM_LEDGER.json"
     if not ledger_path.exists():
@@ -178,18 +202,77 @@ def check_ledger(files: list[str]) -> None:
         return
     ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
     by_base = {}
+    tracked_set = set(files)
     for rel in files:
         by_base.setdefault(pathlib.PurePosixPath(rel).name, []).append(rel)
-    missing = []
+    hash_checked = 0
+    hash_bad = 0
+    issues = []
+
     for entry in ledger["entries"]:
+        name = entry.get("name", "<unnamed>")
         doc = entry["document"].split(" (")[0]
-        if not (ROOT / doc).exists():
-            missing.append(f"ledger doc: {doc}")
+        doc_path = ROOT / doc
+        if not doc_path.exists():
+            issues.append(f"ledger doc missing: {doc} ({name})")
+        else:
+            recorded = entry.get("document_sha256_16")
+            if recorded is not None:
+                actual = _sha16(doc_path)
+                if actual != recorded:
+                    hash_bad += 1
+                    issues.append(
+                        f"hash mismatch: {doc} recorded={recorded} "
+                        f"actual={actual} ({name})")
+                else:
+                    hash_checked += 1
+        # mapped script references must exist in the tracked tree
         for key in ("primary_verifier", "independent_audit"):
             ref = entry.get(key)
-            if ref and ref not in by_base:
-                missing.append(
-                    f"ledger {key}: {ref} (entry: {entry['name']})")
+            if ref and (ref not in tracked_set and ref not in by_base):
+                issues.append(
+                    f"ledger {key} not tracked: {ref} ({name})")
+        # provenance contract for verified statuses
+        if entry.get("status") in VERIFIED_STATUSES:
+            for field, refkey in (("verifier_provenance", "primary_verifier"),
+                                  ("audit_provenance", "independent_audit")):
+                prov = entry.get(field)
+                ref = entry.get(refkey)
+                if prov is None or prov not in PROVENANCE_VALUES:
+                    issues.append(
+                        f"{field} missing/unknown for verified entry: "
+                        f"{prov!r} ({name})")
+                elif ref is None and prov not in NULL_EXPLAIN_VALUES:
+                    issues.append(
+                        f"{field}={prov!r} but {refkey} is null; need an "
+                        f"explicit null reason ({name})")
+                elif ref is not None and prov == "none_exists":
+                    issues.append(
+                        f"{refkey} mapped but {field}='none_exists' "
+                        f"({name})")
+    # validate the summary blocks against the entries themselves
+    h31 = [e for e in ledger["entries"]
+           if e.get("name", "").startswith("Generic marked H31")]
+    h22 = [e for e in ledger["entries"]
+           if e.get("name", "").startswith("Generic weighted H22")]
+    census = ledger.get("component_census", {})
+    checks = {
+        "h31_generic_docs_mapped": len(h31),
+        "h31_generic_docs_with_independent_audit":
+            sum(1 for e in h31 if e.get("independent_audit")),
+        "h22_generic_docs_mapped": len(h22),
+    }
+    for key, expected in checks.items():
+        recorded = census.get(key)
+        if recorded != expected:
+            issues.append(
+                f"component_census.{key}={recorded} but entries give "
+                f"{expected}")
+    if ledger.get("global_status") != "UNRESOLVED":
+        issues.append(
+            f"global_status must stay UNRESOLVED, got "
+            f"{ledger.get('global_status')!r}")
+
     # every proof-side script named in a markdown doc must exist
     # somewhere in the tracked tree (root or snapshot script dirs)
     md_text = ""
@@ -205,18 +288,21 @@ def check_ledger(files: list[str]) -> None:
         if name in KNOWN_DANGLING_SCRIPTS:
             continue
         dangling.append(name)
-    if missing or dangling:
-        all_issues = missing + [f"referenced script: {d}" for d in dangling]
+    for d in dangling:
+        issues.append(f"referenced script: {d}")
+
+    if issues:
         failures.append(
-            "ledger/reference integrity:\n  " + "\n  ".join(all_issues[:30])
-            + (f"\n  ... ({len(all_issues) - 30} more)"
-               if len(all_issues) > 30 else "")
-        )
+            "ledger/reference integrity:\n  " + "\n  ".join(issues[:30])
+            + (f"\n  ... ({len(issues) - 30} more)"
+               if len(issues) > 30 else ""))
     else:
-        print(f"[4] ledger: {len(ledger['entries'])} entries consistent; "
-              f"{len(referenced)} referenced scripts exist "
-              f"({len(KNOWN_DANGLING_SCRIPTS)} historical dangling refs "
-              "allowlisted)")
+        print(f"[4] ledger: {len(ledger['entries'])} entries "
+              f"({ledger.get('completeness')}); hashes recomputed "
+              f"{hash_checked} ok / {hash_bad} bad; provenance and "
+              f"census summary consistent; {len(referenced)} referenced "
+              f"scripts exist ({len(KNOWN_DANGLING_SCRIPTS)} historical "
+              "dangling refs allowlisted)")
 
 
 def check_fast_verifiers() -> None:

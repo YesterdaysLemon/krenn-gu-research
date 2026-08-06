@@ -1,6 +1,8 @@
 {
-  "schema_version": 1,
-  "generated": "2026-08-05 stabilization pass",
+  "schema_version": 2,
+  "generated": "2026-08-06 (rebuilt per PR #28 review)",
+  "coverage_scope": "Curated partial index of the load-bearing backbone: the frontier reduction, the master theorem schema, the finite certificates, the arbitrary-order structural theorems, and every on-disk H31/H22 generic component theorem doc with its primary verifier and independent audit. This is NOT a complete mapping of every certificate document in the repository (~736 .md docs); component-boundary and divisor-level certificates are represented by their atlas entries, not individually. Entries added only when the backing document and prover exist on disk.",
+  "completeness": "partial_curated",
   "conventions": {
     "status_values": [
       "verified",
@@ -15,32 +17,50 @@
       "framework",
       "open"
     ],
+    "provenance_values": [
+      "independent_modular_audit",
+      "companion_point_check_script",
+      "script_is_the_verifier",
+      "in_document_proof_only",
+      "historical_certificate_chain",
+      "per_divisor_verify_scripts_named_in_atlas",
+      "per_divisor_docs_P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_*",
+      "not_yet_mapped",
+      "none_exists"
+    ],
+    "audit_provenance_semantics": {
+      "independent_modular_audit": "a distinct audit script exists and is mapped",
+      "none_exists": "no independent audit exists for this claim (an explicit absence, not an unmapped gap)",
+      "not_yet_mapped": "an audit may exist but has not been entered into this ledger",
+      "historical_certificate_chain": "the audit is the SAT/DRAT replay chain, not one script"
+    },
     "verified": "exact symbolic proof over C with replayable verifier",
     "verified_finite": "computer-assisted finite certificate (SAT/DRAT chain)",
     "verified_generic": "proved over the component function field at the generic point; divisor/boundary exclusions listed in assumptions",
-    "partial": "part of the claim is open",
-    "candidate": "discovery-run report, not independently verified",
-    "exploratory": "bounded experiment or transfer input, no theorem claim",
     "policy": "modular evidence, numerical experiments, timeouts, and failed solver runs are never proofs; they are corroboration or diagnostics only",
-    "document_sha256_16": "first 16 hex chars of the document's SHA-256 at ledger-generation time, for drift detection"
+    "document_sha256_16": "first 16 hex chars of the document SHA-256; check_hygiene.py recomputes and compares every non-null value"
   },
   "global_status": "UNRESOLVED",
   "component_census": {
     "certified_pure_p4_orbits": 25,
-    "generic_h31_empty": "all 25",
-    "generic_h22_empty": "all except component 22 D23 pencil (D01 closed)",
+    "h31_generic_docs_mapped": 24,
+    "h31_generic_docs_with_independent_audit": 23,
+    "h22_generic_docs_mapped": 22,
+    "generic_h22_open_exception": "component 22 D23 pencil",
     "exhaustiveness_claim": "all-pair-rank exceptional-graph reduction; requires quantifier review (bottleneck B3)"
   },
   "entries": [
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "418a81f548b43768",
+      "document_sha256_16": "924c5fce1bb7146e",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": null,
       "independent_audit": null,
+      "audit_provenance": null,
       "expected_runtime": null,
       "external_binaries": [],
       "note": "Global conjecture. UNRESOLVED. Everything below is progress toward it."
@@ -56,7 +76,9 @@
       ],
       "dependencies": [],
       "primary_verifier": "verify_p5_high_coordinate_partial_frontier.py",
+      "verifier_provenance": "script_is_the_verifier",
       "independent_audit": "audit_p5_high_coordinate_partial_frontier.py",
+      "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + census replay)",
       "external_binaries": [],
       "note": "Reduces the whole problem to two normalized 5-row families; 510 fail-closed signatures (240 H31 + 270 H22) funnel into the component programme."
@@ -73,7 +95,9 @@
       ],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "in_document_proof_only",
       "independent_audit": null,
+      "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
       "note": "Proved implication: schema + (star) => conjecture. Per-component tables written at the 13-component census; superseded where the README checkpoint (25 components) extends them."
@@ -86,7 +110,9 @@
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "in_document_proof_only",
       "independent_audit": null,
+      "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
       "note": "Rigorous transfer converting generic function-field closures into pointwise statements off explicit divisors; demonstrated on component 9."
@@ -98,13 +124,15 @@
       "status": "verified",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
-      "expected_runtime": "~462 s for component 9 H31 (measured this pass)",
+      "primary_verifier": "research_snapshots/2026-08-04-p5-delta3-obligation-ledger/scripts/extract_p5_h31_ninth_explicit_divisors.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "research_snapshots/2026-08-04-p5-delta3-obligation-ledger/scripts/check_ninth_extraction_points.py",
+      "audit_provenance": "companion_point_check_script",
+      "expected_runtime": "~462 s for component 9 H31 (measured 2026-08-05)",
       "external_binaries": [
         "Singular >= 4.3"
       ],
-      "note": "Replayed in the stabilization pass; ledger reproduced byte-for-byte except timings. Component 10 extraction is timeout_null at 840 s (open, M5)."
+      "note": "Replayed 2026-08-05; ledger reproduced byte-for-byte except timings. Component 10 extraction is timeout_null at 840 s (open, M5)."
     },
     {
       "name": "n=6 complete: no complex solution, all d>=3",
@@ -118,12 +146,15 @@
       ],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "historical_certificate_chain",
       "independent_audit": null,
+      "audit_provenance": "historical_certificate_chain",
       "expected_runtime": "hours for full replay (manual)",
       "external_binaries": [
         "kissat or glucose",
         "drat-trim"
-      ]
+      ],
+      "note": "Verifier/audit chain is the packaging + DRAT replay scripts named in the certificate map; not a single script."
     },
     {
       "name": "Eight-vertex 4-regular exclusion",
@@ -133,7 +164,9 @@
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "historical_certificate_chain",
       "independent_audit": null,
+      "audit_provenance": "historical_certificate_chain",
       "expected_runtime": null,
       "external_binaries": [
         "kissat or glucose",
@@ -148,7 +181,9 @@
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "historical_certificate_chain",
       "independent_audit": null,
+      "audit_provenance": "historical_certificate_chain",
       "expected_runtime": null,
       "external_binaries": [
         "kissat or glucose",
@@ -164,7 +199,9 @@
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "historical_certificate_chain",
       "independent_audit": null,
+      "audit_provenance": "historical_certificate_chain",
       "expected_runtime": null,
       "external_binaries": [
         "kissat or glucose",
@@ -179,7 +216,9 @@
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "historical_certificate_chain",
       "independent_audit": null,
+      "audit_provenance": "historical_certificate_chain",
       "expected_runtime": null,
       "external_binaries": [
         "kissat or glucose",
@@ -195,7 +234,9 @@
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "historical_certificate_chain",
       "independent_audit": null,
+      "audit_provenance": "historical_certificate_chain",
       "expected_runtime": null,
       "external_binaries": [
         "kissat or glucose",
@@ -210,14 +251,15 @@
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact symbolic proof over C",
-        "independent finite-field audit in doc"
+        "independent finite-field audit recorded in doc"
       ],
       "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
+      "primary_verifier": "verify_four_regular_balanced_bridge_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_four_regular_balanced_bridge_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
       "expected_runtime": "seconds-to-minutes (sympy)",
-      "external_binaries": [],
-      "note": "Arbitrary even order; independent F_5/F_7 audit per the document."
+      "external_binaries": []
     },
     {
       "name": "Arbitrary Order Degree Six Kotzig Port Obstruction",
@@ -226,14 +268,15 @@
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact symbolic proof over C",
-        "independent finite-field audit in doc"
+        "independent finite-field audit recorded in doc"
       ],
       "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
+      "primary_verifier": "verify_arbitrary_order_degree_six_kotzig_port_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_arbitrary_order_degree_six_kotzig_port_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
       "expected_runtime": "seconds-to-minutes (sympy)",
-      "external_binaries": [],
-      "note": "Arbitrary even order; independent F_5/F_7 audit per the document."
+      "external_binaries": []
     },
     {
       "name": "Four Blocker Ideal Obstruction",
@@ -242,14 +285,15 @@
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact symbolic proof over C",
-        "independent finite-field audit in doc"
+        "independent finite-field audit recorded in doc"
       ],
       "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
+      "primary_verifier": "verify_four_blocker_ideal_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_four_blocker_ideal_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
       "expected_runtime": "seconds-to-minutes (sympy)",
-      "external_binaries": [],
-      "note": "Arbitrary even order; independent F_5/F_7 audit per the document."
+      "external_binaries": []
     },
     {
       "name": "Exact Three Blocker Permanent Rank Lemma",
@@ -258,30 +302,15 @@
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact symbolic proof over C",
-        "independent finite-field audit in doc"
+        "independent finite-field audit recorded in doc"
       ],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "in_document_proof_only",
       "independent_audit": null,
+      "audit_provenance": "none_exists",
       "expected_runtime": "seconds-to-minutes (sympy)",
-      "external_binaries": [],
-      "note": "Arbitrary even order; independent F_5/F_7 audit per the document."
-    },
-    {
-      "name": "Fourth Order Permanent Subrank Obstruction",
-      "document": "FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md",
-      "document_sha256_16": "7b87f6d540cac49b",
-      "status": "verified",
-      "assumptions_and_excluded_divisors": [
-        "exact symbolic proof over C",
-        "independent finite-field audit in doc"
-      ],
-      "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
-      "expected_runtime": "seconds-to-minutes (sympy)",
-      "external_binaries": [],
-      "note": "Arbitrary even order; independent F_5/F_7 audit per the document."
+      "external_binaries": []
     },
     {
       "name": "Support Three P5 Contraction Subrank",
@@ -290,14 +319,33 @@
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact symbolic proof over C",
-        "independent finite-field audit in doc"
+        "independent finite-field audit recorded in doc"
       ],
       "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
+      "primary_verifier": "verify_support_three_p5_contraction_subrank.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_support_three_p5_contraction_subrank.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "seconds-to-minutes (sympy)",
+      "external_binaries": []
+    },
+    {
+      "name": "Fourth Order Permanent Subrank Obstruction",
+      "document": "FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md",
+      "document_sha256_16": "7b87f6d540cac49b",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact symbolic proof over C",
+        "independent finite-field audit recorded in doc"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_fourth_order_permanent_subrank.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_fourth_order_permanent_subrank.py",
+      "audit_provenance": "independent_modular_audit",
       "expected_runtime": "seconds-to-minutes (sympy)",
       "external_binaries": [],
-      "note": "Arbitrary even order; independent F_5/F_7 audit per the document."
+      "note": "24,336-pair F_5 audit recorded in the doc."
     },
     {
       "name": "Support-four P5 contraction restriction (positive, shows extension is false)",
@@ -306,167 +354,35 @@
       "status": "verified",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
-      "primary_verifier": null,
+      "primary_verifier": "verify_support_four_p5_contraction_restriction.py",
+      "verifier_provenance": "script_is_the_verifier",
       "independent_audit": null,
+      "audit_provenance": "none_exists",
       "expected_runtime": "seconds (sympy)",
       "external_binaries": [],
       "note": "Positive restriction of the contracted quartic, not of P_5 itself."
     },
     {
-      "name": "Generic marked H31 fibre empty: first rank-two component",
-      "document": "README.md (Start-here checkpoint section)",
-      "document_sha256_16": null,
+      "name": "Generic marked H31 fibre empty: all rank one triangle",
+      "document": "P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "311cd0ee24e6215b",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
         "denominator/slope divisors excluded, not proved"
       ],
       "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
+      "primary_verifier": "verify_p5_h31_all_rank_one_triangle_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h31_all_rank_one_triangle_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
       ]
     },
     {
-      "name": "Generic marked H31 fibre empty: diagonal-quadric component",
-      "document": "README.md (Start-here checkpoint section)",
-      "document_sha256_16": null,
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "denominator/slope divisors excluded, not proved"
-      ],
-      "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
-      "expected_runtime": "minutes (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic marked H31 fibre empty: split-cubic L_1 1+3 component",
-      "document": "P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "9d781dbd8ed9894b",
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "denominator/slope divisors excluded, not proved"
-      ],
-      "dependencies": [],
-      "primary_verifier": "verify_p5_h31_one_three_component_generic_obstruction.py",
-      "independent_audit": null,
-      "expected_runtime": "minutes (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic marked H31 fibre empty: split-cubic L_2 1+3 component",
-      "document": "P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "9d781dbd8ed9894b",
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "denominator/slope divisors excluded, not proved"
-      ],
-      "dependencies": [],
-      "primary_verifier": "verify_p5_h31_one_three_component_generic_obstruction.py",
-      "independent_audit": null,
-      "expected_runtime": "minutes (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic marked H31 fibre empty: split-cubic L_3 1+3 component",
-      "document": "P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "9d781dbd8ed9894b",
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "denominator/slope divisors excluded, not proved"
-      ],
-      "dependencies": [],
-      "primary_verifier": "verify_p5_h31_one_three_component_generic_obstruction.py",
-      "independent_audit": null,
-      "expected_runtime": "minutes (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic marked H31 fibre empty: mixed-orientation component",
-      "document": "P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "17b4cfc9d0c06ed7",
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "denominator/slope divisors excluded, not proved"
-      ],
-      "dependencies": [],
-      "primary_verifier": "verify_p5_h31_mixed_orientation_component_generic_obstruction.py",
-      "independent_audit": null,
-      "expected_runtime": "minutes (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic marked H31 fibre empty: six-dimensional component",
-      "document": "P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "c1af9f8ecdfc975b",
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "denominator/slope divisors excluded, not proved"
-      ],
-      "dependencies": [],
-      "primary_verifier": "verify_p5_h31_six_dimensional_component_generic_obstruction.py",
-      "independent_audit": null,
-      "expected_runtime": "minutes (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic marked H31 fibre empty: disjoint mixed-star component (eighth)",
-      "document": "P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "8a146d26e79841c3",
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "denominator/slope divisors excluded, not proved"
-      ],
-      "dependencies": [],
-      "primary_verifier": "verify_p5_h31_disjoint_mixed_star_component_generic_obstruction.py",
-      "independent_audit": null,
-      "expected_runtime": "minutes (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic marked H31 fibre empty: embedded P_3 suspension (ninth)",
-      "document": "P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "53e1f2ab6b1719d9",
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "denominator/slope divisors excluded, not proved"
-      ],
-      "dependencies": [],
-      "primary_verifier": "verify_p5_h31_embedded_p3_component_generic_obstruction.py",
-      "independent_audit": null,
-      "expected_runtime": "minutes (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic marked H31 fibre empty: coincident-support component (tenth)",
+      "name": "Generic marked H31 fibre empty: coincident support",
       "document": "P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "66cd7a7fdf5e2dae",
       "status": "verified_generic",
@@ -476,218 +392,54 @@
       ],
       "dependencies": [],
       "primary_verifier": "verify_p5_h31_coincident_support_component_generic_obstruction.py",
-      "independent_audit": null,
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h31_coincident_support_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
       ]
     },
     {
-      "name": "Generic marked H31 fibre empty: equal-support sixfold (eleventh)",
-      "document": "P5_H31_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "c149ab4837190031",
+      "name": "Generic marked H31 fibre empty: coincident support rank one star",
+      "document": "P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "8516673bfb7bffd5",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
         "denominator/slope divisors excluded, not proved"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h31_equal_support_sixfold_component_generic_obstruction.py",
-      "independent_audit": null,
+      "primary_verifier": "verify_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
       ]
     },
     {
-      "name": "Generic marked H31 fibre empty: split-pair component (twelfth)",
-      "document": "README.md (Start-here checkpoint section)",
-      "document_sha256_16": null,
+      "name": "Generic marked H31 fibre empty: common active binary triangle",
+      "document": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "73596e624c6a6e09",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
         "denominator/slope divisors excluded, not proved"
       ],
       "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
+      "primary_verifier": "verify_p5_h31_common_active_binary_triangle_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h31_common_active_binary_triangle_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
       ]
     },
     {
-      "name": "Generic marked H31 fibre empty: single-word quadrilateral (thirteenth)",
-      "document": "README.md (Start-here checkpoint section)",
-      "document_sha256_16": null,
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "denominator/slope divisors excluded, not proved"
-      ],
-      "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
-      "expected_runtime": "minutes (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic marked H31 fibre empty: fourteenth component",
-      "document": "README.md (Start-here checkpoint section)",
-      "document_sha256_16": null,
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "denominator/slope divisors excluded, not proved"
-      ],
-      "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
-      "expected_runtime": "minutes (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic marked H31 fibre empty: fifteenth component",
-      "document": "README.md (Start-here checkpoint section)",
-      "document_sha256_16": null,
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "denominator/slope divisors excluded, not proved"
-      ],
-      "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
-      "expected_runtime": "minutes (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic marked H31 fibre empty: sixteenth component",
-      "document": "README.md (Start-here checkpoint section)",
-      "document_sha256_16": null,
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "denominator/slope divisors excluded, not proved"
-      ],
-      "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
-      "expected_runtime": "minutes (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic marked H31 fibre empty: directed zero-divisor triangle components (sixteen/seventeen)",
-      "document": "P5_H31_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "f4c45391a5a2a573",
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "denominator/slope divisors excluded, not proved"
-      ],
-      "dependencies": [],
-      "primary_verifier": "verify_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py",
-      "independent_audit": null,
-      "expected_runtime": "minutes (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic marked H31 fibre empty: common-singleton component (eighteenth)",
-      "document": "P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "36669ebc45e73e2a",
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "denominator/slope divisors excluded, not proved"
-      ],
-      "dependencies": [],
-      "primary_verifier": "verify_p5_h31_common_singleton_component_generic_obstruction.py",
-      "independent_audit": null,
-      "expected_runtime": "minutes (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic marked H31 fibre empty: component nineteen",
-      "document": "README.md (Start-here checkpoint section)",
-      "document_sha256_16": null,
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "denominator/slope divisors excluded, not proved"
-      ],
-      "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
-      "expected_runtime": "minutes (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic marked H31 fibre empty: component twenty",
-      "document": "README.md (Start-here checkpoint section)",
-      "document_sha256_16": null,
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "denominator/slope divisors excluded, not proved"
-      ],
-      "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
-      "expected_runtime": "minutes (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic marked H31 fibre empty: common-kernel vertical triangle (twenty-one)",
-      "document": "P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "3b49c47626131fa1",
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "denominator/slope divisors excluded, not proved"
-      ],
-      "dependencies": [],
-      "primary_verifier": "verify_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py",
-      "independent_audit": null,
-      "expected_runtime": "minutes (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic marked H31 fibre empty: unequal-complement common-kernel (twenty-two)",
-      "document": "P5_H31_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "22ed050835787696",
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "denominator/slope divisors excluded, not proved"
-      ],
-      "dependencies": [],
-      "primary_verifier": "verify_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py",
-      "independent_audit": null,
-      "expected_runtime": "minutes (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic marked H31 fibre empty: common-center-kernel star (twenty-three)",
+      "name": "Generic marked H31 fibre empty: common center kernel star",
       "document": "P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "0fed90c1b7a37a36",
       "status": "verified_generic",
@@ -697,14 +449,283 @@
       ],
       "dependencies": [],
       "primary_verifier": "verify_p5_h31_common_center_kernel_star_component_generic_obstruction.py",
-      "independent_audit": null,
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h31_common_center_kernel_star_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
       ]
     },
     {
-      "name": "Generic marked H31 fibre empty: split-center mixed star (twenty-four)",
+      "name": "Generic marked H31 fibre empty: common kernel vertical triangle",
+      "document": "P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "3b49c47626131fa1",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic marked H31 fibre empty: common singleton",
+      "document": "P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "36669ebc45e73e2a",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h31_common_singleton_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h31_common_singleton_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic marked H31 fibre empty: diagonal quadric elliptic",
+      "document": "P5_H31_DIAGONAL_QUADRIC_ELLIPTIC_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "e39af356577f61c8",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h31_diagonal_quadric_elliptic_generic.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h31_diagonal_quadric_elliptic_generic.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic marked H31 fibre empty: directed zero divisor triangle components",
+      "document": "P5_H31_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "f4c45391a5a2a573",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic marked H31 fibre empty: disjoint mixed star",
+      "document": "P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "8a146d26e79841c3",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h31_disjoint_mixed_star_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h31_disjoint_mixed_star_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic marked H31 fibre empty: disjoint secant",
+      "document": "P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "de708ee14055f6aa",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h31_disjoint_secant_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h31_disjoint_secant_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic marked H31 fibre empty: eisenstein norm",
+      "document": "P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "53a4fcf813344ea8",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h31_eisenstein_norm_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h31_eisenstein_norm_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic marked H31 fibre empty: embedded p3",
+      "document": "P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "53e1f2ab6b1719d9",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h31_embedded_p3_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h31_embedded_p3_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic marked H31 fibre empty: equal support common factor",
+      "document": "P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "0c4375caedb413c9",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h31_equal_support_common_factor_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h31_equal_support_common_factor_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic marked H31 fibre empty: equal support sixfold",
+      "document": "P5_H31_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "c149ab4837190031",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h31_equal_support_sixfold_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": null,
+      "audit_provenance": "none_exists",
+      "expected_runtime": "minutes (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ],
+      "note": "Independent modular audit does not exist; the claim rests on the self-contained primary verifier together with the P4 component audit audit_p4_equal_support_sixfold_pure_component.py."
+    },
+    {
+      "name": "Generic marked H31 fibre empty: full support tangent",
+      "document": "P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "ff0f61b826e2685a",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h31_full_support_tangent_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h31_full_support_tangent_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic marked H31 fibre empty: mixed orientation",
+      "document": "P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "17b4cfc9d0c06ed7",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h31_mixed_orientation_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h31_mixed_orientation_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic marked H31 fibre empty: one three",
+      "document": "P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "9d781dbd8ed9894b",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h31_one_three_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h31_one_three_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic marked H31 fibre empty: six dimensional",
+      "document": "P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "c1af9f8ecdfc975b",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h31_six_dimensional_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h31_six_dimensional_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic marked H31 fibre empty: split center mixed star",
       "document": "P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "7bbf11df7d27c5e0",
       "status": "verified_generic",
@@ -714,14 +735,73 @@
       ],
       "dependencies": [],
       "primary_verifier": "verify_p5_h31_split_center_mixed_star_component_generic_obstruction.py",
-      "independent_audit": null,
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h31_split_center_mixed_star_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
       ]
     },
     {
-      "name": "Generic marked H31 fibre empty: unequal-endpoint inward star (twenty-five)",
+      "name": "Generic marked H31 fibre empty: transverse common factor",
+      "document": "P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "33baaf262fefa0fa",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h31_transverse_common_factor_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h31_transverse_common_factor_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic marked H31 fibre empty: two rank two spoke mixed star",
+      "document": "P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "f5a5d5e57949e003",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic marked H31 fibre empty: unequal complement common kernel",
+      "document": "P5_H31_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "22ed050835787696",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic marked H31 fibre empty: unequal endpoint inward star",
       "document": "P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "0910891dc0182108",
       "status": "verified_generic",
@@ -731,11 +811,474 @@
       ],
       "dependencies": [],
       "primary_verifier": "verify_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py",
-      "independent_audit": null,
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
       ]
+    },
+    {
+      "name": "Generic weighted H22 fibre empty: all rank one triangle",
+      "document": "P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "a4fcffb6e6e7f05d",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved",
+        "slope r transcendental; special slopes excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h22_all_rank_one_triangle_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h22_all_rank_one_triangle_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes-hours (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic weighted H22 fibre empty: coincident support",
+      "document": "P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "6f857eabce32362a",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved",
+        "slope r transcendental; special slopes excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h22_coincident_support_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h22_coincident_support_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes-hours (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic weighted H22 fibre empty: common center kernel star component r zero divisor",
+      "document": "P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "61072c056fea81ff",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved",
+        "slope r transcendental; special slopes excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes-hours (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic weighted H22 fibre empty: common singleton",
+      "document": "P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "da64a3ee55d5dfa3",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved",
+        "slope r transcendental; special slopes excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h22_common_singleton_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h22_common_singleton_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes-hours (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic weighted H22 fibre empty: diagonal quadric",
+      "document": "P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "12ec144e618af231",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved",
+        "slope r transcendental; special slopes excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h22_diagonal_quadric_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h22_diagonal_quadric_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes-hours (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic weighted H22 fibre empty: directed zero divisor triangle components",
+      "document": "P5_H22_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "6edd321a940f9f0d",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved",
+        "slope r transcendental; special slopes excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h22_directed_zero_divisor_triangle_components_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h22_directed_zero_divisor_triangle_components_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes-hours (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic weighted H22 fibre empty: disjoint mixed star",
+      "document": "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "8d92b1fb3ddbee23",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved",
+        "slope r transcendental; special slopes excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h22_disjoint_mixed_star_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h22_disjoint_mixed_star_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes-hours (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic weighted H22 fibre empty: disjoint secant",
+      "document": "P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "9d82875a227921c3",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved",
+        "slope r transcendental; special slopes excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h22_disjoint_secant_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h22_disjoint_secant_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes-hours (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic weighted H22 fibre empty: eisenstein norm",
+      "document": "P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "ac1ee977c8afe536",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved",
+        "slope r transcendental; special slopes excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h22_eisenstein_norm_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h22_eisenstein_norm_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes-hours (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic weighted H22 fibre empty: embedded p3",
+      "document": "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "dfc2ca99ac668605",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved",
+        "slope r transcendental; special slopes excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h22_embedded_p3_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h22_embedded_p3_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes-hours (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic weighted H22 fibre empty: equal support common factor",
+      "document": "P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "44c4156eb6f3a32d",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved",
+        "slope r transcendental; special slopes excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h22_equal_support_common_factor_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h22_equal_support_common_factor_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes-hours (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic weighted H22 fibre empty: equal support sixfold",
+      "document": "P5_H22_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "950c958bff6f52e8",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved",
+        "slope r transcendental; special slopes excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h22_equal_support_sixfold_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": null,
+      "audit_provenance": "none_exists",
+      "expected_runtime": "minutes-hours (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ],
+      "note": "Independent modular audit does not exist; the claim rests on the self-contained primary verifier together with the P4 component audit audit_p4_equal_support_sixfold_pure_component.py."
+    },
+    {
+      "name": "Generic weighted H22 fibre empty: first rank two",
+      "document": "P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "5920db91564e6c63",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved",
+        "slope r transcendental; special slopes excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h22_first_rank_two_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h22_first_rank_two_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes-hours (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic weighted H22 fibre empty: full support tangent",
+      "document": "P5_H22_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "7bb41c1bde78cb3c",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved",
+        "slope r transcendental; special slopes excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h22_full_support_tangent_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h22_full_support_tangent_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes-hours (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic weighted H22 fibre empty: mixed orientation",
+      "document": "P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "4e3f8637a072f68c",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved",
+        "slope r transcendental; special slopes excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h22_mixed_orientation_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h22_mixed_orientation_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes-hours (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic weighted H22 fibre empty: one three components",
+      "document": "P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "28aa991219f090e8",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved",
+        "slope r transcendental; special slopes excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h22_one_three_components_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h22_one_three_components_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes-hours (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic weighted H22 fibre empty: six dimensional",
+      "document": "P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "0078d2c536d84060",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved",
+        "slope r transcendental; special slopes excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h22_six_dimensional_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h22_six_dimensional_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes-hours (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic weighted H22 fibre empty: split center mixed star",
+      "document": "P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "f584ae7b9c4368c6",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved",
+        "slope r transcendental; special slopes excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h22_split_center_mixed_star_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h22_split_center_mixed_star_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes-hours (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic weighted H22 fibre empty: transverse common factor",
+      "document": "P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "5b1c85f89cd45b9c",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved",
+        "slope r transcendental; special slopes excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h22_transverse_common_factor_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h22_transverse_common_factor_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes-hours (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic weighted H22 fibre empty: two rank two spoke mixed star",
+      "document": "P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "4e023750f2428cd4",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved",
+        "slope r transcendental; special slopes excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes-hours (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic weighted H22 fibre empty: unequal endpoint inward star component finite d01 branch a exceptional divisor",
+      "document": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "faf4c1c2cbbb6166",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved",
+        "slope r transcendental; special slopes excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_generic_obstruction.py",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "minutes-hours (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Generic weighted H22 fibre empty: unequal endpoint inward star component finite d01 branch b",
+      "document": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "73fcbabd4eefd114",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "over the component function field (generic point)",
+        "denominator/slope divisors excluded, not proved",
+        "slope r transcendental; special slopes excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": null,
+      "verifier_provenance": "in_document_proof_only",
+      "independent_audit": null,
+      "audit_provenance": "none_exists",
+      "expected_runtime": "minutes-hours (sympy + Singular)",
+      "external_binaries": [
+        "Singular >= 4.3"
+      ]
+    },
+    {
+      "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
+      "document": "README.md",
+      "document_sha256_16": "924c5fce1bb7146e",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "twenty-five certified pure-P_4 component orbits",
+        "generic H31 empty on all 25 (per dedicated component docs where present)",
+        "generic H22 empty on all except component 22 D23 pencil",
+        "exhaustiveness within the all-pair-rank exceptional-graph reduction"
+      ],
+      "dependencies": [],
+      "primary_verifier": null,
+      "verifier_provenance": "in_document_proof_only",
+      "independent_audit": null,
+      "audit_provenance": "none_exists",
+      "expected_runtime": null,
+      "external_binaries": [],
+      "note": "Checkpoint narrative. Bottleneck B3: exhaustiveness quantifiers need human review; a component census is a lower bound until the cover statement is verified."
     },
     {
       "name": "Exhaustiveness: 25 component closures cover the all-pair-rank exceptional locus",
@@ -747,178 +1290,13 @@
         "up to source/mode symmetry"
       ],
       "dependencies": [],
-      "primary_verifier": null,
+      "primary_verifier": "verify_p4_all_pair_rank_exceptional_graph_reduction.py",
+      "verifier_provenance": "script_is_the_verifier",
       "independent_audit": null,
+      "audit_provenance": "not_yet_mapped",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "BOTTLENECK B3: needs human review of quantifier scope; the ledger insists a census alone is a lower bound."
-    },
-    {
-      "name": "Generic weighted H22 fibre empty: components 1-8",
-      "document": "P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "5920db91564e6c63",
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "slope r transcendental; special slopes excluded"
-      ],
-      "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
-      "expected_runtime": "minutes-hours (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic weighted H22 fibre empty: embedded P_3 (ninth)",
-      "document": "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "dfc2ca99ac668605",
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "slope r transcendental; special slopes excluded"
-      ],
-      "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
-      "expected_runtime": "minutes-hours (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic weighted H22 fibre empty: coincident-support (tenth)",
-      "document": "P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "6f857eabce32362a",
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "slope r transcendental; special slopes excluded"
-      ],
-      "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
-      "expected_runtime": "minutes-hours (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic weighted H22 fibre empty: equal-support sixfold (eleventh)",
-      "document": "P5_H22_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "950c958bff6f52e8",
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "slope r transcendental; special slopes excluded"
-      ],
-      "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
-      "expected_runtime": "minutes-hours (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic weighted H22 fibre empty: directed zero-divisor triangles",
-      "document": "P5_H22_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "6edd321a940f9f0d",
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "slope r transcendental; special slopes excluded"
-      ],
-      "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
-      "expected_runtime": "minutes-hours (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic weighted H22 fibre empty: common-singleton (eighteenth)",
-      "document": "P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "da64a3ee55d5dfa3",
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "slope r transcendental; special slopes excluded"
-      ],
-      "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
-      "expected_runtime": "minutes-hours (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic weighted H22 fibre empty: common-kernel vertical triangle (twenty-one)",
-      "document": "P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_VERIFICATION.md",
-      "document_sha256_16": null,
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "slope r transcendental; special slopes excluded"
-      ],
-      "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
-      "expected_runtime": "minutes-hours (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ],
-      "note": "Discovery candidate plus independent verification doc; the theorem is the verification, not the candidate report."
-    },
-    {
-      "name": "Generic weighted H22 fibre empty: common-center-kernel star (twenty-three)",
-      "document": "README.md (Start-here checkpoint section)",
-      "document_sha256_16": null,
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "slope r transcendental; special slopes excluded"
-      ],
-      "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
-      "expected_runtime": "minutes-hours (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic weighted H22 fibre empty: split-center mixed star (twenty-four)",
-      "document": "P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "f584ae7b9c4368c6",
-      "status": "verified_generic",
-      "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "slope r transcendental; special slopes excluded"
-      ],
-      "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
-      "expected_runtime": "minutes-hours (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
-    },
-    {
-      "name": "Generic weighted H22: component twenty-two D01 pencil",
-      "document": "README.md (Start-here checkpoint section)",
-      "document_sha256_16": null,
-      "status": "partial",
-      "assumptions_and_excluded_divisors": [],
-      "dependencies": [],
-      "primary_verifier": null,
-      "independent_audit": null,
-      "expected_runtime": null,
-      "external_binaries": [],
-      "note": "D01 orbit closed; D23 orbit divisor-by-divisor in progress. BOTTLENECK B2."
+      "note": "BOTTLENECK B3: needs human review of quantifier scope."
     },
     {
       "name": "Eighth-component weighted H22 closure - canonical determinantal proof",
@@ -928,22 +1306,27 @@
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
       "primary_verifier": "verify_p5_h22_disjoint_mixed_star_component_generic_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
       "independent_audit": "audit_p5_h22_disjoint_mixed_star_component_generic_obstruction.py",
-      "expected_runtime": "hours (not replayed in this pass)",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "hours (not replayed in the 2026-08-05 pass)",
       "external_binaries": [
         "Singular >= 4.3"
-      ]
+      ],
+      "note": "Primary proof on the canonical line; status unchanged by the stabilization pass."
     },
     {
       "name": "Eighth-component weighted H22 closure - alternate t-free elimination proof",
       "document": "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md",
-      "document_sha256_16": "d3660b84c1f5fc3c",
+      "document_sha256_16": "f7a18bf17ae9cce7",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
       "primary_verifier": "verify_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py",
+      "verifier_provenance": "script_is_the_verifier",
       "independent_audit": "audit_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py",
-      "expected_runtime": "1327 s verifier + 167 s audit (measured this pass)",
+      "audit_provenance": "independent_modular_audit",
+      "expected_runtime": "1327 s verifier + 167 s audit (measured 2026-08-05)",
       "external_binaries": [
         "Singular >= 4.3 (verifier); audit is pure Python"
       ],
@@ -960,7 +1343,9 @@
       ],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "per_divisor_verify_scripts_named_in_atlas",
       "independent_audit": null,
+      "audit_provenance": "not_yet_mapped",
       "expected_runtime": "minutes each (Singular)",
       "external_binaries": [
         "Singular >= 4.3"
@@ -975,20 +1360,39 @@
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "in_document_proof_only",
       "independent_audit": null,
+      "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
       "note": "Reduces the dense component base to f=1 without changing slopes."
     },
     {
+      "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
+      "document": "README.md",
+      "document_sha256_16": "924c5fce1bb7146e",
+      "status": "partial",
+      "assumptions_and_excluded_divisors": [],
+      "dependencies": [],
+      "primary_verifier": null,
+      "verifier_provenance": "per_divisor_docs_P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_*",
+      "independent_audit": null,
+      "audit_provenance": "not_yet_mapped",
+      "expected_runtime": null,
+      "external_binaries": [],
+      "note": "D01 orbit closed; D23 orbit divisor-by-divisor in progress. BOTTLENECK B2."
+    },
+    {
       "name": "Eight Vertex Balanced All Bridge Set Tree Obstruction Withdrawn Overstrong",
       "document": "EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md",
-      "document_sha256_16": "aeb0acee4fa5b399",
+      "document_sha256_16": "b761ee695d646b5c",
       "status": "withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "none_exists",
       "independent_audit": null,
+      "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
       "note": "Retained as audit trail; not linked as live certificates."
@@ -996,12 +1400,14 @@
     {
       "name": "Twelve Vertex Degree Six Kotzig Port Obstruction Withdrawn Legacy",
       "document": "TWELVE_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION_WITHDRAWN_LEGACY.md",
-      "document_sha256_16": "1e587d7499361f08",
+      "document_sha256_16": "6189bb2738050d84",
       "status": "withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "none_exists",
       "independent_audit": null,
+      "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
       "note": "Retained as audit trail; not linked as live certificates."
@@ -1014,7 +1420,9 @@
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "none_exists",
       "independent_audit": null,
+      "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
       "note": "Retained as audit trail; not linked as live certificates."
@@ -1027,7 +1435,9 @@
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "none_exists",
       "independent_audit": null,
+      "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
       "note": "Retained as audit trail; not linked as live certificates."
@@ -1040,7 +1450,9 @@
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "none_exists",
       "independent_audit": null,
+      "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
       "note": "Retained as audit trail; not linked as live certificates."
@@ -1053,7 +1465,9 @@
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "none_exists",
       "independent_audit": null,
+      "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
       "note": "Retained as audit trail; not linked as live certificates."
@@ -1066,7 +1480,9 @@
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "none_exists",
       "independent_audit": null,
+      "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
       "note": "Header marks withdrawn subsets of claims; read the header before citing."
@@ -1079,7 +1495,9 @@
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "none_exists",
       "independent_audit": null,
+      "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
       "note": "Header marks withdrawn subsets of claims; read the header before citing."
@@ -1087,12 +1505,14 @@
     {
       "name": "Full Admissible Potential Cone Lemma",
       "document": "FULL_ADMISSIBLE_POTENTIAL_CONE_LEMMA.md",
-      "document_sha256_16": "b038c13a76b2c9c5",
+      "document_sha256_16": "9c6fc2eb936fef7f",
       "status": "partially_withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "none_exists",
       "independent_audit": null,
+      "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
       "note": "Header marks withdrawn subsets of claims; read the header before citing."
@@ -1105,7 +1525,9 @@
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "none_exists",
       "independent_audit": null,
+      "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
       "note": "Header marks withdrawn subsets of claims; read the header before citing."
@@ -1118,7 +1540,9 @@
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "none_exists",
       "independent_audit": null,
+      "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
       "note": "Exploratory finite-field handoff; superseded by both characteristic-zero proofs."
@@ -1131,7 +1555,9 @@
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "none_exists",
       "independent_audit": null,
+      "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
       "note": "Exact bounded inputs to construction/gluing strategies; no theorem promotion."
@@ -1144,20 +1570,24 @@
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "none_exists",
       "independent_audit": null,
+      "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
       "note": "Mix of proved statements and formal-cofactor/quotient-shadow controls; per-doc status governs."
     },
     {
       "name": "Component 19/20 and embedded-P3 boundary candidates (23 CANDIDATE docs)",
-      "document": "P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md (representative)",
-      "document_sha256_16": null,
+      "document": "P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md",
+      "document_sha256_16": "4bfafa0aca56be83",
       "status": "candidate",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
       "primary_verifier": null,
+      "verifier_provenance": "none_exists",
       "independent_audit": null,
+      "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
       "note": "Discovery-run reports. 9 of 23 have matching VERIFICATION docs; 14 do not. Not theorems until independently verified."

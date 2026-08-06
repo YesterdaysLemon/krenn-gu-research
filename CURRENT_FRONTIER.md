@@ -81,10 +81,16 @@ The attack then runs through the pure-`P_4` compression components:
   ([`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md))
   — see bottleneck 3 for the honest status of that claim.
 - **Generic marked `H31` fibre**: proved empty on **all 25**
-  components (function-field theorems; docs
-  `P5_H31_*_GENERIC_OBSTRUCTION.md`, one per component, each with a
-  `verify_*.py` primary and an `audit_*.py` independent modular
-  audit).
+  components.  Twenty-four dedicated
+  `P5_H31_*_GENERIC_OBSTRUCTION.md` documents carry the function-field
+  theorems on disk; each has a `verify_*.py` primary verifier.  Of
+  those, 23 also have an independent `audit_*.py` modular audit.  The
+  single exception is the equal-support sixfold, whose claim rests on
+  its self-contained primary verifier together with the P4 component
+  audit `audit_p4_equal_support_sixfold_pure_component.py` (recorded in
+  [`THEOREM_LEDGER.json`](THEOREM_LEDGER.json) as an explicit
+  `none_exists`, not an unmapped gap).  The twenty-fifth component's
+  `H31` closure is carried by the README checkpoint narrative.
 - **Generic weighted `H22` fibre**: proved empty on components
   1–21, 23, 24.  Component 22 has its `D01` pencil closed and its
   `D23` pencil under divisor-by-divisor closure (several divisors
