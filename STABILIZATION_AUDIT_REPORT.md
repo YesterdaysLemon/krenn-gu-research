@@ -136,6 +136,96 @@ cannot substitute for mathematical judgment:
    status tables are superseded where they conflict with the README
    checkpoint.
 
+## Corrections made in response to the PR #28 review (2026-08-06)
+
+Commits `5539615`, `25fb9e3`, `22d843c`, `c298e62`.  No theorem claim
+was added or weakened; every change is wording, provenance, or tooling.
+
+### 1. Replay contradiction resolved
+
+`CURRENT_FRONTIER.md` no longer says both proofs were replayed.  The
+eighth-component weighted-`H22` paragraph now reads: "Both proofs are
+retained.  The alternate proof and audit were replayed during this
+stabilization pass; the canonical proof retains its prior status but was
+not replayed during this pass."  A repo-wide search found no equivalent
+claim elsewhere (`MERGE_AUDIT_REPORT.md`, this report, and the PR
+description were already correct).
+
+### 2. Generic nonvanishing language corrected
+
+The alternate package (theorem doc, verifier docstring, and the restored
+`RESEARCH_NOTES.md` alternate section) no longer says coefficients
+"vanish nowhere on the component" or that factors are "nowhere-vanishing
+units".  Every such statement now reads: nonzero in `K(r)`, and therefore
+invertible on the declared generic dense open; the zero locus is
+contained in the explicitly excluded parameter/slope divisors.  This is a
+wording/proof-scope correction; the generic theorem itself is unchanged.
+The canonical proof was not touched.
+
+### 3. Ledger contract strengthened
+
+- The ledger is now **explicitly a curated partial index**:
+  `coverage_scope` describes what it covers (the load-bearing backbone:
+  frontier reduction, master schema, finite certificates, arbitrary-order
+  structural theorems, and every on-disk H31/H22 generic component doc),
+  and `completeness` is `partial_curated`.  It is not a claim to map all
+  ~736 certificate docs.
+- `check_hygiene.py` now **recomputes and compares every non-null
+  `document_sha256_16`** (85/85 pass).  The hash is over the committed
+  git blob (`git show :path`), not working-tree bytes, so it is
+  identical on every platform regardless of checkout line endings — the
+  first CI failure on this branch was exactly the CRLF/LF artifact this
+  removes.
+- Every `verified`/`verified_generic`/`verified_finite` entry must carry
+  `verifier_provenance` and `audit_provenance` from a controlled
+  vocabulary; a null `primary_verifier` or `independent_audit` must be
+  explained (`in_document_proof_only`, `historical_certificate_chain`,
+  `not_yet_mapped`, or `none_exists`).  "No independent audit exists" is
+  therefore distinguished from "audit not yet entered", and the checker
+  rejects entries that conflate the two.
+- The `component_census` summary is validated against the entries
+  (mapped counts and audit counts), and `global_status` is pinned to
+  `UNRESOLVED`.
+- The frontier's H31 claim is reconciled with the actual mapping: 24
+  dedicated H31 docs on disk, all with a `verify_*.py` primary, 23 of 24
+  with an independent `audit_*.py`; the equal-support sixfold exception
+  is stated explicitly in both the frontier and the ledger.
+
+### 4. Container scope narrowed
+
+The `Containerfile` header now states it provides a **pinned
+Python/Singular symbolic baseline only**.  It does not provide msolve,
+Kissat, Glucose, drat-trim, or compiler tooling; the "any documented
+command runs with zero setup" claim was removed.  It also notes that
+Ubuntu 24.04's system `python3` (3.12) is not necessarily the Python
+3.13 used by CI and the lockfile-generation machine.
+
+### 5. Portability regression check added
+
+`check_hygiene.py` has a new step that rejects newly introduced
+`PYTHONPATH=tmp/python_deps`, `tmp/codex_verify_env`, hardcoded
+`/home/` checkout paths, and machine-specific `sys.path` injections.
+The pre-existing offenders were fixed in the same pass: 39 vendored-env
+replay commands across 22 docs now use the pinned runtime, and four
+`find_root()` fallbacks dropped their dead `/home/user` candidate.  The
+audit reports that record the removal are allowlisted.
+
+### 6. CI result
+
+The workflow did execute automatically on this PR.  First run after the
+review fixes (run 31059889926) **failed** on the CRLF/LF hash artifact
+described above; after switching the ledger hashes to git blobs, run
+31060102504 **completed with status success**.  All seven local checks
+and the CI job agree.
+
+### Ledger completeness statement
+
+The ledger is **curated and partial by design**, not complete: it maps
+the backbone claims to their on-disk documents and prover scripts with
+enforced hashes and provenance, and says so in its own header.  Adding
+entries for the remaining certificate docs is future work and is not
+required for the ledger's stated scope.
+
 ## Policy reaffirmed
 
 - The global conjecture remains **UNRESOLVED**; this pass did not weaken
