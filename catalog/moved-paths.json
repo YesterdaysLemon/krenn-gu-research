@@ -8884,7 +8884,7 @@
       "old_path": "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "pilot: claim_document in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "high"
     },
@@ -8892,7 +8892,7 @@
       "old_path": "P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md",
       "new_path": "claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md",
       "reason": "pilot: claim_document in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "high"
     },
@@ -8900,7 +8900,7 @@
       "old_path": "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md",
       "new_path": "claims/p5/h22/disjoint-mixed-star/alternate/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md",
       "reason": "pilot: claim_document in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "high"
     },
@@ -8908,7 +8908,7 @@
       "old_path": "audit_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py",
       "new_path": "claims/p5/h22/disjoint-mixed-star/alternate/audit_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py",
       "reason": "pilot: claim_script in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "medium"
     },
@@ -8916,7 +8916,7 @@
       "old_path": "verify_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py",
       "new_path": "claims/p5/h22/disjoint-mixed-star/alternate/verify_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py",
       "reason": "pilot: claim_script in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "medium"
     },
@@ -8924,7 +8924,7 @@
       "old_path": "audit_p5_h22_disjoint_mixed_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/disjoint-mixed-star/audit_p5_h22_disjoint_mixed_star_component_generic_obstruction.py",
       "reason": "pilot: claim_script in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "high"
     },
@@ -8932,7 +8932,7 @@
       "old_path": "P5_H22_DISJOINT_MIXED_STAR_AF_APHI_BOUNDARY_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_AF_APHI_BOUNDARY_OBSTRUCTION.md",
       "reason": "pilot: claim_document in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "high"
     },
@@ -8940,7 +8940,7 @@
       "old_path": "P5_H22_DISJOINT_MIXED_STAR_CERTIFICATE_DIVISOR_FRONTIER.md",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_CERTIFICATE_DIVISOR_FRONTIER.md",
       "reason": "pilot: claim_document in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "medium"
     },
@@ -8948,7 +8948,7 @@
       "old_path": "P5_H22_DISJOINT_MIXED_STAR_COEFFICIENT_QUADRATIC_BOUNDARY_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_COEFFICIENT_QUADRATIC_BOUNDARY_OBSTRUCTION.md",
       "reason": "pilot: claim_document in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "high"
     },
@@ -8956,7 +8956,7 @@
       "old_path": "P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md",
       "reason": "pilot: claim_document in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "high"
     },
@@ -8964,7 +8964,7 @@
       "old_path": "P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md",
       "reason": "pilot: claim_document in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "high"
     },
@@ -8972,7 +8972,7 @@
       "old_path": "P5_H22_DISJOINT_MIXED_STAR_LINEAR_SLOPE_BOUNDARY_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_LINEAR_SLOPE_BOUNDARY_OBSTRUCTION.md",
       "reason": "pilot: claim_document in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "high"
     },
@@ -8980,7 +8980,7 @@
       "old_path": "P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md",
       "reason": "pilot: claim_document in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "high"
     },
@@ -8988,7 +8988,7 @@
       "old_path": "P5_H22_DISJOINT_MIXED_STAR_TORUS_QUOTIENT.md",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_TORUS_QUOTIENT.md",
       "reason": "pilot: claim_document in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "high"
     },
@@ -8996,7 +8996,7 @@
       "old_path": "P5_H22_DISJOINT_MIXED_STAR_ZERO_SLOPE_BOUNDARY_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_ZERO_SLOPE_BOUNDARY_OBSTRUCTION.md",
       "reason": "pilot: claim_document in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "high"
     },
@@ -9004,7 +9004,7 @@
       "old_path": "audit_p5_h22_disjoint_mixed_star_af_aphi_boundary_obstruction.py",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/audit_p5_h22_disjoint_mixed_star_af_aphi_boundary_obstruction.py",
       "reason": "pilot: claim_script in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "medium"
     },
@@ -9012,7 +9012,7 @@
       "old_path": "audit_p5_h22_disjoint_mixed_star_coefficient_quadratic_boundary_obstruction.py",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/audit_p5_h22_disjoint_mixed_star_coefficient_quadratic_boundary_obstruction.py",
       "reason": "pilot: claim_script in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "medium"
     },
@@ -9020,7 +9020,7 @@
       "old_path": "audit_p5_h22_disjoint_mixed_star_coupled_slope_boundary_obstruction.py",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/audit_p5_h22_disjoint_mixed_star_coupled_slope_boundary_obstruction.py",
       "reason": "pilot: claim_script in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "medium"
     },
@@ -9028,7 +9028,7 @@
       "old_path": "audit_p5_h22_disjoint_mixed_star_equal_opposite_weight_obstruction.py",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/audit_p5_h22_disjoint_mixed_star_equal_opposite_weight_obstruction.py",
       "reason": "pilot: claim_script in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "medium"
     },
@@ -9036,7 +9036,7 @@
       "old_path": "audit_p5_h22_disjoint_mixed_star_linear_slope_boundary_obstruction.py",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/audit_p5_h22_disjoint_mixed_star_linear_slope_boundary_obstruction.py",
       "reason": "pilot: claim_script in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "medium"
     },
@@ -9044,7 +9044,7 @@
       "old_path": "audit_p5_h22_disjoint_mixed_star_parameter_pivot_boundary_obstruction.py",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/audit_p5_h22_disjoint_mixed_star_parameter_pivot_boundary_obstruction.py",
       "reason": "pilot: claim_script in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "medium"
     },
@@ -9052,7 +9052,7 @@
       "old_path": "audit_p5_h22_disjoint_mixed_star_torus_quotient.py",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/audit_p5_h22_disjoint_mixed_star_torus_quotient.py",
       "reason": "pilot: claim_script in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "medium"
     },
@@ -9060,7 +9060,7 @@
       "old_path": "audit_p5_h22_disjoint_mixed_star_zero_slope_boundary_obstruction.py",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/audit_p5_h22_disjoint_mixed_star_zero_slope_boundary_obstruction.py",
       "reason": "pilot: claim_script in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "medium"
     },
@@ -9068,7 +9068,7 @@
       "old_path": "verify_p5_h22_disjoint_mixed_star_af_aphi_boundary_obstruction.py",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/verify_p5_h22_disjoint_mixed_star_af_aphi_boundary_obstruction.py",
       "reason": "pilot: claim_script in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "medium"
     },
@@ -9076,7 +9076,7 @@
       "old_path": "verify_p5_h22_disjoint_mixed_star_coefficient_quadratic_boundary_obstruction.py",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/verify_p5_h22_disjoint_mixed_star_coefficient_quadratic_boundary_obstruction.py",
       "reason": "pilot: claim_script in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "medium"
     },
@@ -9084,7 +9084,7 @@
       "old_path": "verify_p5_h22_disjoint_mixed_star_coupled_slope_boundary_obstruction.py",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/verify_p5_h22_disjoint_mixed_star_coupled_slope_boundary_obstruction.py",
       "reason": "pilot: claim_script in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "medium"
     },
@@ -9092,7 +9092,7 @@
       "old_path": "verify_p5_h22_disjoint_mixed_star_equal_opposite_weight_obstruction.py",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/verify_p5_h22_disjoint_mixed_star_equal_opposite_weight_obstruction.py",
       "reason": "pilot: claim_script in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "medium"
     },
@@ -9100,7 +9100,7 @@
       "old_path": "verify_p5_h22_disjoint_mixed_star_linear_slope_boundary_obstruction.py",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/verify_p5_h22_disjoint_mixed_star_linear_slope_boundary_obstruction.py",
       "reason": "pilot: claim_script in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "medium"
     },
@@ -9108,7 +9108,7 @@
       "old_path": "verify_p5_h22_disjoint_mixed_star_parameter_pivot_boundary_obstruction.py",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/verify_p5_h22_disjoint_mixed_star_parameter_pivot_boundary_obstruction.py",
       "reason": "pilot: claim_script in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "medium"
     },
@@ -9116,7 +9116,7 @@
       "old_path": "verify_p5_h22_disjoint_mixed_star_slope_r1_binary_obstruction.py",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/verify_p5_h22_disjoint_mixed_star_slope_r1_binary_obstruction.py",
       "reason": "pilot: claim_script in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "medium"
     },
@@ -9124,7 +9124,7 @@
       "old_path": "verify_p5_h22_disjoint_mixed_star_slope_rm1_binary_obstruction.py",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/verify_p5_h22_disjoint_mixed_star_slope_rm1_binary_obstruction.py",
       "reason": "pilot: claim_script in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "medium"
     },
@@ -9132,7 +9132,7 @@
       "old_path": "verify_p5_h22_disjoint_mixed_star_torus_quotient.py",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/verify_p5_h22_disjoint_mixed_star_torus_quotient.py",
       "reason": "pilot: claim_script in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "medium"
     },
@@ -9140,7 +9140,7 @@
       "old_path": "verify_p5_h22_disjoint_mixed_star_zero_slope_boundary_obstruction.py",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/verify_p5_h22_disjoint_mixed_star_zero_slope_boundary_obstruction.py",
       "reason": "pilot: claim_script in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "medium"
     },
@@ -9148,7 +9148,7 @@
       "old_path": "explore_p5_h22_disjoint_mixed_star_modular.py",
       "new_path": "claims/p5/h22/disjoint-mixed-star/explore_p5_h22_disjoint_mixed_star_modular.py",
       "reason": "pilot: claim_script in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "medium"
     },
@@ -9156,7 +9156,7 @@
       "old_path": "verify_p5_h22_disjoint_mixed_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/disjoint-mixed-star/verify_p5_h22_disjoint_mixed_star_component_generic_obstruction.py",
       "reason": "pilot: claim_script in p5/h22/disjoint-mixed-star",
-      "status": "pilot",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star",
       "confidence": "high"
     },
