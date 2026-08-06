@@ -38,7 +38,10 @@
     "verified_finite": "computer-assisted finite certificate (SAT/DRAT chain)",
     "verified_generic": "proved over the component function field at the generic point; divisor/boundary exclusions listed in assumptions",
     "policy": "modular evidence, numerical experiments, timeouts, and failed solver runs are never proofs; they are corroboration or diagnostics only",
-    "document_sha256_16": "first 16 hex chars of the SHA-256 of the committed git blob (git show :path), not the working-tree bytes; identical on every platform because the index stores LF. check_hygiene.py recomputes and compares every non-null value."
+    "document_sha256_16": "first 16 hex chars of the SHA-256 of the committed git blob (git show :path), not the working-tree bytes; identical on every platform because the index stores LF. check_hygiene.py recomputes and compares every non-null value.",
+    "claim_package": "the claim package root directory, e.g. claims/p5/h22/disjoint-mixed-star",
+    "proof_variant": "canonical | alternate | null — which independent proof of the same claim this entry documents",
+    "subpackage": "null | alternate | boundaries — subdirectory of the claim package holding the entry's files"
   },
   "global_status": "UNRESOLVED",
   "component_census": {
@@ -963,7 +966,9 @@
         "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
         "audit_p5_h22_disjoint_mixed_star_component_generic_obstruction.py",
         "verify_p5_h22_disjoint_mixed_star_component_generic_obstruction.py"
-      ]
+      ],
+      "proof_variant": "canonical",
+      "subpackage": null
     },
     {
       "name": "Generic weighted H22 fibre empty: disjoint secant",
@@ -1325,7 +1330,9 @@
         "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
         "audit_p5_h22_disjoint_mixed_star_component_generic_obstruction.py",
         "verify_p5_h22_disjoint_mixed_star_component_generic_obstruction.py"
-      ]
+      ],
+      "proof_variant": "canonical",
+      "subpackage": null
     },
     {
       "name": "Eighth-component weighted H22 closure - alternate t-free elimination proof",
@@ -1343,12 +1350,14 @@
         "Singular >= 4.3 (verifier); audit is pure Python"
       ],
       "note": "Independent of the canonical proof; no shared computation. See MERGE_AUDIT_REPORT.md.",
-      "claim_package": "claims/p5/h22/disjoint-mixed-star/alternate",
+      "claim_package": "claims/p5/h22/disjoint-mixed-star",
       "legacy_paths": [
         "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md",
         "audit_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py",
         "verify_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py"
-      ]
+      ],
+      "proof_variant": "alternate",
+      "subpackage": "alternate"
     },
     {
       "name": "Eighth-component boundary closures (slopes r=0,+-1,inf; parameter pivots; coupled divisor; af=+-1 sheets; coefficient-quadratic branch; linear slopes)",
@@ -1384,10 +1393,12 @@
       "expected_runtime": null,
       "external_binaries": [],
       "note": "Reduces the dense component base to f=1 without changing slopes.",
-      "claim_package": "claims/p5/h22/disjoint-mixed-star/boundaries",
+      "claim_package": "claims/p5/h22/disjoint-mixed-star",
       "legacy_paths": [
         "P5_H22_DISJOINT_MIXED_STAR_TORUS_QUOTIENT.md"
-      ]
+      ],
+      "proof_variant": null,
+      "subpackage": "boundaries"
     },
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
@@ -1571,7 +1582,9 @@
       "claim_package": "claims/p5/h22/disjoint-mixed-star",
       "legacy_paths": [
         "P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md"
-      ]
+      ],
+      "proof_variant": "canonical",
+      "subpackage": null
     },
     {
       "name": "Transfer track: root-of-unity selector, hafnian lift, quotient catalogue",
