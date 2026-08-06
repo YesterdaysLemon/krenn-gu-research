@@ -473,6 +473,7 @@ STALE_ALLOWLIST_FILES = {
     # Per-batch dry-run reports record the approved old paths by
     # design; they are provenance, not stale references.
     "docs/architecture/navigation-docs-phase2-dry-run.md",
+    "docs/architecture/layout-migration-phase2-report.md",
     "docs/audits/MERGE_AUDIT_REPORT.md",
     "docs/audits/STABILIZATION_AUDIT_REPORT.md",
 }

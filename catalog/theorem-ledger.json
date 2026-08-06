@@ -56,7 +56,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "2efff2011d2b2a0a",
+      "document_sha256_16": "cc62bc61954192b4",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -162,7 +162,7 @@
     {
       "name": "Eight-vertex 4-regular exclusion",
       "document": "EIGHT_VERTEX_4REGULAR_CERTIFICATE.md",
-      "document_sha256_16": "05183ec03825212a",
+      "document_sha256_16": "5cfc33467f82cc83",
       "status": "verified_finite",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1274,7 +1274,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "2efff2011d2b2a0a",
+      "document_sha256_16": "cc62bc61954192b4",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -1294,7 +1294,7 @@
     {
       "name": "Exhaustiveness: 25 component closures cover the all-pair-rank exceptional locus",
       "document": "P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md",
-      "document_sha256_16": "f49e650463607393",
+      "document_sha256_16": "f6560f24246955e9",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "within the all-pair-rank exceptional-graph reduction",
@@ -1337,7 +1337,7 @@
     {
       "name": "Eighth-component weighted H22 closure - alternate t-free elimination proof",
       "document": "claims/p5/h22/disjoint-mixed-star/alternate/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md",
-      "document_sha256_16": "664bd74f7b86695c",
+      "document_sha256_16": "6d10179002d9791e",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1403,7 +1403,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "2efff2011d2b2a0a",
+      "document_sha256_16": "cc62bc61954192b4",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1523,7 +1523,7 @@
     {
       "name": "Ten Vertex Degree Six Kotzig Port Obstruction",
       "document": "TEN_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
-      "document_sha256_16": "9dd2542dda67bbf2",
+      "document_sha256_16": "9488c66fbb681206",
       "status": "partially_withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1589,7 +1589,7 @@
     {
       "name": "Transfer track: root-of-unity selector, hafnian lift, quotient catalogue",
       "document": "docs/ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md",
-      "document_sha256_16": "26f3ff99dcf8ac15",
+      "document_sha256_16": "0c2969aaa613fd41",
       "status": "exploratory",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
