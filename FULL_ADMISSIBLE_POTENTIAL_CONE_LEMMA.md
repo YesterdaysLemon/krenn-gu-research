@@ -171,7 +171,7 @@ Run
 
 ```text
 python verify_full_admissible_potential_cone.py
-PYTHONPATH=tmp/python_deps python audit_full_admissible_potential_cone.py
+python audit_full_admissible_potential_cone.py
 ```
 
 The verifier reconstructs the 24 local states, all 48 saturated

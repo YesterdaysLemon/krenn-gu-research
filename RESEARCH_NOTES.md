@@ -11221,6 +11221,41 @@ verify_p5_h22_disjoint_mixed_star_component_generic_obstruction.py
 audit_p5_h22_disjoint_mixed_star_component_generic_obstruction.py
 ```
 
+### Generic weighted `H22` theorem on the eighth component — alternate proof
+
+The former `main` line reached the same conclusion by a materially
+different argument, recovered in the 2026-08-05 stabilization pass and
+retained as an explicit independent alternate.  Its key structural step
+is a `t`-free elimination: in either weighted pencil, the mixed word
+`e_m` contains the marked extension `y_m` with coefficient equal to the
+`3 x 3` weighted permanent of the other three `alpha` rows.  These four
+coefficients are independent of the marking and have nonzero resultants
+against `Phi`, so they are nonzero in `K(r)` and invertible on the
+declared generic dense open (their zero locus is contained in the
+explicitly excluded parameter/slope divisors).  Solving the
+four single-`1` words for `y` converts the `14 x 8` mixed system into
+an exact `10 x 4` system `G(t)x=0` whose kernel is nonzero exactly
+when the full binary extension kernel is.
+
+For `D_01`, the `4 x 4` minor of `G` in rows `0011,0110,1001,1011`
+reduces modulo `Phi` to a unit of `K(r)` times `t_1 t_2`; the
+sheet restrictions factor further into four exact strata.  For `D_23`,
+the ideal of all `4 x 4` minors of `G` plus `Phi` is the unit ideal on
+each chart `t_1!=0`, `t_2!=0`, `t_3!=0`.  On all five strata, adjoining
+the mode-zero one-marked minors in rows `(0,1,3,7)` and `(0,1,5,7)` and
+inverting the product of the two diagonal coefficients gives the unit
+ideal.
+
+Both this proof and the determinantal marking-chart proof above are
+exact over `C` and share no computation; the overlap/independence
+ledger is in `MERGE_AUDIT_REPORT.md`.  The alternate package:
+
+```text
+P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md
+verify_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py
+audit_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py
+```
+
 ### Equal- and opposite-weight slope fibres
 
 The generic weighted theorem uses a determinantal marking chart that

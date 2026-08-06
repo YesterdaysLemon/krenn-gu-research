@@ -116,7 +116,7 @@ checker returns `s VERIFIED`.
 Run:
 
 ```text
-PYTHONPATH=tmp/python_deps python certify_eight_vertex_balanced_set_trees.py
+python certify_eight_vertex_balanced_set_trees.py
 python run_kissat_proof.py \
   --kissat tmp/kissat_wsl_lf/build/kissat \
   --cnf tmp/eight_vertex_balanced_set_trees_all_profiles.cnf \
@@ -133,7 +133,7 @@ python run_drat_trim.py \
   --stderr tmp/eight_vertex_balanced_set_trees_drat_trim.stderr.log \
   --output tmp/eight_vertex_balanced_set_trees_drat_replay.json \
   --forward
-PYTHONPATH=tmp/python_deps python audit_eight_vertex_balanced_set_trees.py
+python audit_eight_vertex_balanced_set_trees.py
 ```
 
 The primary generator enumerates multiplicity profiles by integer

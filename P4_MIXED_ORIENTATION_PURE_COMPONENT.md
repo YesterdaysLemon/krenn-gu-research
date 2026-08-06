@@ -249,7 +249,7 @@ components' `H22` incidences remain open.
 Run:
 
 ```text
-tmp/codex_verify_env/Scripts/python.exe \
+python \
   verify_p4_mixed_orientation_pure_component.py
 
 python audit_p4_mixed_orientation_pure_component.py

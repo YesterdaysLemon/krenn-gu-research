@@ -67,11 +67,11 @@ cb27bbb5b2d3d4c4bbf77b3eeb4041eae51777761a1a0597c4fb06d959625a0b.
 Run the three complete replays with:
 
 ```text
-PYTHONPATH=tmp/python_deps python \
+python \
   verify_p5_c10_binary_fork_obstruction.py
-PYTHONPATH=tmp/python_deps python \
+python \
   verify_p5_c10_triangle_obstruction.py
-PYTHONPATH=tmp/python_deps python \
+python \
   verify_p5_c10_odd_cycle5_obstruction.py
 ```
 

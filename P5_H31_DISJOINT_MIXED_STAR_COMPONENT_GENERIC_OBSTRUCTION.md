@@ -186,10 +186,10 @@ The global conjecture remains unresolved.
 Run:
 
 ```text
-tmp/codex_verify_env/Scripts/python.exe \
+python \
   verify_p5_h31_disjoint_mixed_star_component_generic_obstruction.py
 
-tmp/codex_verify_env/Scripts/python.exe \
+python \
   audit_p5_h31_disjoint_mixed_star_component_generic_obstruction.py
 ```
 

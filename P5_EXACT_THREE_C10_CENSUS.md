@@ -49,14 +49,14 @@ actions, verifies every packed-audit representative, and compares the
 two exact sets:
 
 ```text
-PYTHONPATH=tmp/python_deps python \
+python \
   verify_p5_exact_three_c10_audit.py
 ```
 
 For a from-scratch regeneration of the 25,194,240 labelled supports:
 
 ```text
-PYTHONPATH=tmp/python_deps python \
+python \
   audit_p5_exact_three_partial_boundary.py \
   --shape c10 \
   --catalogue tmp/p5_c10_exact_three_partial_supports.json \

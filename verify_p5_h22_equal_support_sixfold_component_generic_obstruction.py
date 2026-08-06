@@ -25,8 +25,7 @@ HERE = Path(__file__).resolve().parent
 
 
 def find_root() -> Path:
-    for candidate in (HERE, *HERE.parents,
-                      Path("/home/user/open-graph-theory-with-prize")):
+    for candidate in (HERE, *HERE.parents):
         if (candidate / "P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md").exists():
             return candidate
     return HERE

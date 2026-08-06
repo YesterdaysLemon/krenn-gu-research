@@ -177,7 +177,7 @@ problem remains unresolved.
 Run
 
 ```text
-tmp/codex_verify_env/Scripts/python.exe \
+python \
   verify_p5_h22_one_three_components_generic_obstruction.py
 
 python audit_p5_h22_one_three_components_generic_obstruction.py

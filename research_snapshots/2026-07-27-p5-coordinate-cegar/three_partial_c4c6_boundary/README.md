@@ -14,7 +14,7 @@ The package stores hashes rather than duplicating roughly 110 MB of
 deterministically regenerated Singular source.  Run:
 
 ```text
-PYTHONPATH=tmp/python_deps python \
+python \
   verify_p5_exact_three_c4c6_boundary_obstruction.py
 ```
 

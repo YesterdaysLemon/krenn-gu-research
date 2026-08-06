@@ -161,7 +161,7 @@ problem remains unresolved.
 Run
 
 ```text
-tmp/codex_verify_env/Scripts/python.exe \
+python \
   verify_p5_h22_first_rank_two_component_generic_obstruction.py
 
 python audit_p5_h22_first_rank_two_component_generic_obstruction.py

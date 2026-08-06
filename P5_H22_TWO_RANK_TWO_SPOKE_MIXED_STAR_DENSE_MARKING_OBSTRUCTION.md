@@ -200,10 +200,10 @@ symbolic task.
 Run:
 
 ```text
-tmp/codex_verify_env/Scripts/python.exe \
+python \
   verify_p5_h22_two_rank_two_spoke_mixed_star_dense_marking_obstruction.py
 
-tmp/codex_verify_env/Scripts/python.exe \
+python \
   audit_p5_h22_two_rank_two_spoke_mixed_star_dense_marking_obstruction.py
 ```
 

@@ -79,7 +79,7 @@ comes from the reconstructed CNF and DRAT proof above.
 
 ## One-command replay
 
-With the repository runtime and `tmp/python_deps` on `PYTHONPATH`, run:
+With the pinned repository runtime (`requirements.txt`) installed, run:
 
 ```text
 python verify_fourteen_vertex_c4_c4_c6_orbit3.py

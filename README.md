@@ -4722,6 +4722,35 @@ the essential remaining case.
 - [`TEN_VERTEX_ODD_FACTOR_EQUALITY_CERTIFICATE.md`](TEN_VERTEX_ODD_FACTOR_EQUALITY_CERTIFICATE.md)
 - [`TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md`](TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md)
 - [`RESEARCH_NOTES.md`](RESEARCH_NOTES.md)
+- [`P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md`](P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md)
+- [`P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md`](P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md)
+- [`P4_SPLIT_PAIR_PURE_COMPONENT.md`](P4_SPLIT_PAIR_PURE_COMPONENT.md)
+- [`P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md`](P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md)
+- [`P4_INOUT_PATH_STRATUM_WORKING_NOTE.md`](P4_INOUT_PATH_STRATUM_WORKING_NOTE.md)
+- [`P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H31_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`](P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md)
+- [`P5_DELTA3_OBLIGATION_LEDGER.md`](P5_DELTA3_OBLIGATION_LEDGER.md)
+- [`P5_POINTWISE_SPECIALIZATION_META_THEOREM.md`](P5_POINTWISE_SPECIALIZATION_META_THEOREM.md)
+- [`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md)
+- [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md`](P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md)
+- [`MERGE_AUDIT_REPORT.md`](MERGE_AUDIT_REPORT.md)
+- [`STABILIZATION_AUDIT_REPORT.md`](STABILIZATION_AUDIT_REPORT.md)
+- [`CURRENT_FRONTIER.md`](CURRENT_FRONTIER.md)
+- [`THEOREM_LEDGER.json`](THEOREM_LEDGER.json)
+
+Merge provenance: this index was reconciled after merge `72780ac`
+folded the former `main` line (components 9--16, obligation ledger,
+divisor atlas, meta-theorem) into the canonical symbolic line.  The
+per-file resolution record, including the two independent weighted-`H22`
+proofs of the eighth component, is in
+[`MERGE_AUDIT_REPORT.md`](MERGE_AUDIT_REPORT.md); the full
+stabilization pass record is in
+[`STABILIZATION_AUDIT_REPORT.md`](STABILIZATION_AUDIT_REPORT.md).
 
 Each theorem-level claim requires:
 
@@ -4739,8 +4768,8 @@ With the bundled dependencies on `PYTHONPATH`, run:
 
 ```text
 python verify_q2_n6_k4_d4_construction.py
-PYTHONPATH=tmp/python_deps python verify_q2_n6_k4_d4_family.py
-PYTHONPATH=tmp/python_deps python verify_q2_herald_promotion_rank_barrier.py
+python verify_q2_n6_k4_d4_family.py
+python verify_q2_herald_promotion_rank_barrier.py
 python verify_six_vertex_final.py
 python verify_eight_vertex_4regular.py
 python verify_eight_vertex_16edge.py
@@ -4825,26 +4854,26 @@ python verify_p5_kernel_hall_hierarchy.py
 python audit_p5_kernel_hall_hierarchy.py
 python verify_p5_source_row_tricolour_cover.py
 python audit_p5_source_row_tricolour_cover.py
-PYTHONPATH=tmp/python_deps python verify_p5_exact_three_c4c6_boundary_obstruction.py
-PYTHONPATH=tmp/python_deps python verify_p5_exact_three_c10_audit.py
-PYTHONPATH=tmp/python_deps python verify_p5_exact_three_c10_boundary_obstruction.py
-PYTHONPATH=tmp/python_deps python verify_p5_c10_binary_fork_obstruction.py
-PYTHONPATH=tmp/python_deps python verify_p5_c10_triangle_obstruction.py
-PYTHONPATH=tmp/python_deps python verify_p5_c10_odd_cycle5_obstruction.py
-PYTHONPATH=tmp/python_deps python verify_p5_c10_scalar_span_obstruction.py
-PYTHONPATH=tmp/python_deps python verify_p5_c10_degree_one_macaulay_obstruction.py
-PYTHONPATH=tmp/python_deps python verify_p5_c10_ten_equation_affine_core.py
-PYTHONPATH=tmp/python_deps python probe_p5_c10_joint_affine_class.py
+python verify_p5_exact_three_c4c6_boundary_obstruction.py
+python verify_p5_exact_three_c10_audit.py
+python verify_p5_exact_three_c10_boundary_obstruction.py
+python verify_p5_c10_binary_fork_obstruction.py
+python verify_p5_c10_triangle_obstruction.py
+python verify_p5_c10_odd_cycle5_obstruction.py
+python verify_p5_c10_scalar_span_obstruction.py
+python verify_p5_c10_degree_one_macaulay_obstruction.py
+python verify_p5_c10_ten_equation_affine_core.py
+python probe_p5_c10_joint_affine_class.py
 python verify_three_colour_blocker_union.py
 python audit_three_colour_blocker_union.py
 python verify_four_blocker_ideal_obstruction.py
 python audit_four_blocker_ideal_obstruction.py
-PYTHONPATH=tmp/python_deps python certify_eight_vertex_balanced_set_trees.py
-PYTHONPATH=tmp/python_deps python audit_eight_vertex_balanced_set_trees.py
-PYTHONPATH=tmp/python_deps python certify_ten_vertex_balanced_set_trees.py
-PYTHONPATH=tmp/python_deps python audit_ten_vertex_balanced_set_trees.py
-PYTHONPATH=tmp/python_deps python certify_twelve_vertex_complement_profile.py
-PYTHONPATH=tmp/python_deps python audit_twelve_vertex_complement_profile.py
+python certify_eight_vertex_balanced_set_trees.py
+python audit_eight_vertex_balanced_set_trees.py
+python certify_ten_vertex_balanced_set_trees.py
+python audit_ten_vertex_balanced_set_trees.py
+python certify_twelve_vertex_complement_profile.py
+python audit_twelve_vertex_complement_profile.py
 python verify_full_admissible_potential_cone.py
 python audit_full_admissible_potential_cone.py
 python audit_twelve_vertex_port_cell_orbits.py
@@ -4882,13 +4911,21 @@ python -m unittest -v test_search_witness.py
 python -m unittest -v test_fourteen_vertex_two_even_cycle_rule_sat.py test_fourteen_vertex_minimum_activity_certificate.py
 ```
 
-The current regression suite has 53 tests.  The final audit JSON for every
-claimed theorem must contain `"verified": true`.
+The final audit JSON for every claimed theorem must contain
+`"verified": true`.  `test_search_witness.py` (53 tests) and the two
+order-14 SAT test modules read `tmp/` audit fixtures produced by the
+replay chains above, so they pass only after those chains have run on
+the local checkout; `test_fourteen_vertex_cycle_cover_lattice.py` is
+the one fully self-contained module and runs from a clean checkout.
 
-The `tmp/` directory contains large pinned CNFs and proof traces.  Some DRAT
-files are hundreds of megabytes; do not replace them with solver summaries,
-because the raw proof and its independent replay are part of the evidence
-contract.
+The `tmp/` directory is scratch space, gitignored since the 2026-08-05
+stabilization pass.  Large CNFs, DRAT proof traces, and audit fixtures
+are regenerated by the packaging scripts above (for example
+`package_p5_exact_three_coordinate_tree_charts.py`); they are not
+tracked because every one is produced by committed Python code.  The
+evidence contract is therefore: replay the generator, replay the
+independent DRAT check, and compare the SHA-256 recorded in the
+certificate document.
 
 ## Current continuation
 

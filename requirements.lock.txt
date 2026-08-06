@@ -1,0 +1,8 @@
+# Pinned environment for the stabilization baseline (2026-08-05).
+# Generated from a clean checkout with:
+#   python -m pip install -r requirements.txt && python -m pip freeze
+# Python: 3.13.14 (Windows Store build; CI uses CPython 3.13 on ubuntu-latest)
+mpmath==1.3.0
+numpy==2.5.1
+python-sat==1.9.dev7
+sympy==1.14.0

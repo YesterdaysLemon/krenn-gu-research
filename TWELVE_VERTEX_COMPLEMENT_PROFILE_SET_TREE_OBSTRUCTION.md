@@ -124,11 +124,11 @@ independent reconstruction of the base CNF.
 With the bundled dependencies on `PYTHONPATH`, run:
 
 ```text
-PYTHONPATH=tmp/python_deps python \
+python \
   explore_twelve_vertex_complement_set_tree_cnf.py
-PYTHONPATH=tmp/python_deps python \
+python \
   explore_twelve_vertex_complement_chain_orbits.py
-PYTHONPATH=tmp/python_deps python \
+python \
   certify_twelve_vertex_complement_profile.py
 python run_kissat_proof.py \
   --kissat tmp/kissat_wsl_lf/build/kissat \
@@ -146,7 +146,7 @@ python run_drat_trim.py \
   --stderr tmp/twelve_vertex_complement_profile_drat_trim.stderr.log \
   --output tmp/twelve_vertex_complement_profile_drat_replay.json \
   --forward
-PYTHONPATH=tmp/python_deps python \
+python \
   audit_twelve_vertex_complement_profile.py
 ```
 

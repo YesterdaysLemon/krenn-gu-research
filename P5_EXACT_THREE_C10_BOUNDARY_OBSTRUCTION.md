@@ -66,7 +66,7 @@ witness, pair quota, and exact Singular source, then checks its committed
 hash and recorded unit-ideal result:
 
 ```text
-PYTHONPATH=tmp/python_deps python \
+python \
   verify_p5_exact_three_c10_boundary_obstruction.py
 ```
 
@@ -74,7 +74,7 @@ A fresh exact-CAS replay can be sharded.  For example, this reruns ten
 cases:
 
 ```text
-PYTHONPATH=tmp/python_deps python \
+python \
   verify_p5_exact_three_c10_boundary_obstruction.py \
   --rerun-singular --limit 10
 ```

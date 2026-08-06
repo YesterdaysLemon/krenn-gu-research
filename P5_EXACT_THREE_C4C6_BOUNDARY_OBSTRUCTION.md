@@ -56,7 +56,7 @@ mapping, signature witness, pair quota, and exact Singular source, then
 checks its committed hash and recorded unit-ideal result:
 
 ```text
-PYTHONPATH=tmp/python_deps python \
+python \
   verify_p5_exact_three_c4c6_boundary_obstruction.py
 ```
 
@@ -65,7 +65,7 @@ roughly 110 MB of mechanically regenerated text.  A fresh exact-CAS
 replay can be sharded.  For example, this reruns ten cases locally:
 
 ```text
-PYTHONPATH=tmp/python_deps python \
+python \
   verify_p5_exact_three_c4c6_boundary_obstruction.py \
   --rerun-singular --limit 10
 ```

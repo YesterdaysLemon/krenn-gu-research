@@ -67,9 +67,9 @@ SHA-256
 Run the complete fork and triangle replays with:
 
 ```text
-PYTHONPATH=tmp/python_deps python \
+python \
   verify_p5_c10_binary_fork_obstruction.py
-PYTHONPATH=tmp/python_deps python \
+python \
   verify_p5_c10_triangle_obstruction.py
 ```
 
