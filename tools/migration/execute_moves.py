@@ -65,6 +65,7 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
 from batch_contract import validate_batch as contract_validate
+from build_manifest import recompute_manifest_summary
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 CATALOG = ROOT / "catalog"
@@ -170,6 +171,26 @@ def validate_batch_geometry(batch: list[dict], manifest: dict) -> list:
     return problems
 
 
+
+def finalize_execution(manifest: dict, performed: list[dict],
+                       batch_id: str, root: pathlib.Path) -> dict:
+    """Flip statuses and recompute the summary for executed moves.
+
+    This is the executor's single state transition, called inside the
+    rollback-safe transaction in ``main`` before the manifest is
+    written.  It deliberately re-derives the summary from the records
+    (``build_manifest.recompute_manifest_summary``) rather than trusting
+    any pre-existing counts, so an execution can never leave a stale
+    summary behind.  If the recomputation raises, the caller's rollback
+    runs and the manifest is never written stale.
+
+    Returns the updated manifest (records mutated in place).
+    """
+    for m in performed:
+        m["status"] = "moved"
+        m["executed_batch"] = batch_id
+    return recompute_manifest_summary(manifest, root)
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     group = ap.add_mutually_exclusive_group(required=True)
@@ -268,6 +289,20 @@ def main() -> int:
                     f"git mv failed for {m['old_path']}: "
                     f"{proc.stderr.strip()}")
             performed.append(m)
+        # Flip statuses and recompute the summary counts from the
+        # records INSIDE the rollback-safe transaction, before any
+        # manifest write.  If the recomputation raises, the except
+        # block rolls back every performed git mv and the manifest is
+        # left unmodified — a failure here can never leave the
+        # filesystem moved while the manifest is stale.  This is the
+        # single source of truth for the summary
+        # (build_manifest.recompute_manifest_summary).
+        if not args.dry_run and performed:
+            manifest = finalize_execution(
+                manifest, performed, batch_def["batch_id"], ROOT)
+            manifest_path.write_text(
+                json.dumps(manifest, indent=2, ensure_ascii=False)
+                + "\n", encoding="utf-8")
     except Exception as exc:  # noqa: BLE001 - rollback on any failure
         print(f"FAILURE mid-batch: {exc}")
         print(f"rolling back {len(performed)} performed moves ...")
@@ -303,12 +338,6 @@ def main() -> int:
         print(f"\ndry-run complete: {len(batch)} moves would execute")
         return 0
 
-    for m in performed:
-        m["status"] = "moved"
-        m["executed_batch"] = batch_def["batch_id"]
-    manifest_path.write_text(
-        json.dumps(manifest, indent=2, ensure_ascii=False) + "\n",
-        encoding="utf-8")
     print(f"\nmoved: {len(performed)} files; manifest updated "
           f"(executed_batch={batch_def['batch_id']!r})")
     return 0

@@ -16,7 +16,7 @@ The overlap and independence ledger is in
 
 This is an exact characteristic-zero obstruction on the generic
 diagonal-source orbit of the eighth pure-`P_4` component proved in
-[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](../../../../../P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
+[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](../../../../p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
 
 For the two weighted diagonal-hyperplane pencils required by `H22`:
 

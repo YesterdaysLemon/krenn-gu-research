@@ -16,10 +16,16 @@ for _p in Path(__file__).resolve().parents:
 from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__, also=[".."])
+# The disjoint-mixed-star P4 component package moved in Stage 3; expose
+# its directory so the bare-name import below resolves.
+sys.path.insert(
+    0, str(REPO_ROOT / "claims" / "p4" / "components"
+           / "disjoint-mixed-star"))
 
 import sympy as sp
 
-from verify_p4_disjoint_mixed_star_pure_component import family
+from verify_p4_disjoint_mixed_star_pure_component import (  # noqa: E402
+    family)
 from verify_p5_h22_disjoint_mixed_star_component_generic_obstruction import (
     D23_BASE_ROWS,
     D23_EXTRA_ROWS,
@@ -37,7 +43,9 @@ from verify_p5_h22_disjoint_mixed_star_component_generic_obstruction import (
 THEOREM = (
     HERE / "P5_H22_DISJOINT_MIXED_STAR_AF_APHI_BOUNDARY_OBSTRUCTION.md"
 )
-COMPONENT = REPO_ROOT / "P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md"
+COMPONENT = (
+    REPO_ROOT / "claims" / "p4" / "components" / "disjoint-mixed-star"
+    / "P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md")
 GENERIC = (
     HERE / "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
 )

@@ -447,13 +447,38 @@ def classify(rel: str, ctx: dict) -> dict | None:
         # P4 components.
         if stem.startswith(("P4_", "verify_p4_", "audit_p4_")):
             low = stem.lower()
-            if any(k in low for k in ("pure_component", "component")):
+            if "pure_component" in low:
+                # Pure-component claim packages get a per-component
+                # directory: theorem doc + verifier + audit live
+                # together in claims/p4/components/<component>/.
+                slug = low
+                for prefix in ("verify_", "audit_"):
+                    if slug.startswith(prefix):
+                        slug = slug[len(prefix):]
+                for suffix in ("_pure_component",):
+                    if slug.endswith(suffix):
+                        slug = slug[:-len(suffix)]
+                # match the H22 pilot dash convention and drop the
+                # redundant p4_ prefix (already under claims/p4/).
+                if slug.startswith("p4_"):
+                    slug = slug[len("p4_"):]
+                slug = slug.replace("_", "-")
                 sub = "components"
+                dest = f"claims/p4/components/{slug}/{name}"
+                family = f"p4/components/{slug}"
+                conf = "high"
             elif any(k in low for k in ("classification", "exhaustion",
-                                        "reduction", "census")):
+                                        "reduction", "census",
+                                        "component")):
                 sub = "classifications"
+                dest = f"claims/p4/{sub}/{name}"
+                family = f"p4/{sub}"
+                conf = None
             else:
                 sub = "boundaries"
+                dest = f"claims/p4/{sub}/{name}"
+                family = f"p4/{sub}"
+                conf = None
             cat = ("claim_document" if ext == ".md"
                    else "claim_script" if ext in (".py", ".cpp")
                    else "claim_data")
@@ -462,10 +487,12 @@ def classify(rel: str, ctx: dict) -> dict | None:
                 ev.append(f"theorem ledger status={ledger_status}")
             if stem in ctx["triples"]:
                 ev.append("part of verify/audit triple")
+            if conf is None:
+                conf = "medium" if len(ev) >= 2 else "low"
             return {"old_path": rel,
-                    "proposed_path": f"claims/p4/{sub}/{name}",
-                    "category": cat, "claim_family": f"p4/{sub}",
-                    "confidence": "medium" if len(ev) >= 2 else "low",
+                    "proposed_path": dest,
+                    "category": cat, "claim_family": family,
+                    "confidence": conf,
                     "evidence": ev}
         # P6 / P7.
         if stem.startswith(("P6_", "verify_p6_", "audit_p6_")):

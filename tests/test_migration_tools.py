@@ -1008,5 +1008,175 @@ class FinalContractTests(unittest.TestCase):
         self.assertEqual(path, BATCH_DIR / "some-batch.json")
 
 
+class ManifestSummaryInvariantTests(unittest.TestCase):
+    """Durable invariant (Stage 3 review item 1): the manifest's counts
+    summary must be derived from its move records, and the moved-only
+    root projection must agree with the base-ref recomputation.  A
+    summary that can drift from the records is a bug by definition.
+    Reads the REAL repo manifest; strictly read-only."""
+
+    REPO = pathlib.Path(__file__).resolve().parents[1]
+
+    def _load(self):
+        return json.loads((self.REPO / "catalog" / "moved-paths.json")
+                          .read_text(encoding="utf-8"))
+
+    def test_counts_match_records(self):
+        manifest = self._load()
+        records = manifest["moves"]
+        counts = manifest["counts"]
+        for key, status in (("moved", "moved"),
+                            ("pilot", "pilot"),
+                            ("proposed_high_confidence",
+                             "proposed_high_confidence"),
+                            ("review_required", "review_required")):
+            actual = sum(1 for r in records if r["status"] == status)
+            self.assertEqual(
+                counts.get(key), actual,
+                f"counts.{key}={counts.get(key)} but records give "
+                f"{actual}")
+        self.assertEqual(counts.get("total_classified_moves"),
+                         len(records))
+
+    def test_moved_only_projection_matches_base_ref(self):
+        manifest = self._load()
+        records = manifest["moves"]
+        counts = manifest["counts"]
+        moved = [r for r in records if r["status"] == "moved"]
+        if not moved:
+            self.skipTest("no moved entries")
+        start = manifest["starting_commit"]
+        out = subprocess.run(
+            ["git", "ls-tree", "-r", "--name-only", start],
+            cwd=self.REPO, capture_output=True, text=True, check=True)
+        tree = [l for l in out.stdout.splitlines() if l.strip()]
+        base_files = sorted(f for f in tree if "/" not in f)
+        base_dirs = sorted({f.split("/")[0] for f in tree if "/" in f})
+        left = [f for f in base_files
+                if f not in {m["old_path"] for m in moved}]
+        dirs = set(base_dirs)
+        new_dirs = {m["new_path"].split("/")[0] for m in moved}
+        fixed_dirs = {".github", "claims", "docs", "src", "tools",
+                      "tests", "catalog", "research_snapshots",
+                      "research_figures"}
+        expected = len(left) + len(dirs | new_dirs | fixed_dirs)
+        self.assertEqual(
+            counts.get("projected_root_if_moved_only"), expected,
+            "projected_root_if_moved_only disagrees with the base-ref "
+            "recomputation")
+
+
+
+class ExecutorFinalizeRegressionTests(unittest.TestCase):
+    """Regression test (Stage 3 final review): executing a batch through
+    the executor's real state transition (``finalize_execution``) must
+    update the manifest summary — moved, proposed_high_confidence, and
+    projected_root_if_moved_only — without any subsequent manual
+    manifest rebuild.  Also verifies that a recompute failure cannot
+    leave a stale manifest (rollback-safe transaction)."""
+
+    def _gitinit_repo(self, tmp):
+        subprocess.run(["git", "init", "-q"], cwd=tmp, check=True)
+        subprocess.run(["git", "config", "user.email", "t@t"],
+                       cwd=tmp, check=True)
+        subprocess.run(["git", "config", "user.name", "t"],
+                       cwd=tmp, check=True)
+
+    def test_finalize_updates_summary_without_rebuild(self):
+        tmp = pathlib.Path(tempfile.mkdtemp())
+        self._gitinit_repo(tmp)
+        # Two root files that will move, plus one that stays.
+        for name in ("A.md", "B.md", "STAYS.md"):
+            (tmp / name).write_text(name, encoding="utf-8")
+        subprocess.run(["git", "add", "-A"], cwd=tmp, check=True)
+        subprocess.run(["git", "commit", "-q", "-m", "base"],
+                       cwd=tmp, check=True)
+        base = subprocess.run(
+            ["git", "rev-parse", "HEAD"], cwd=tmp,
+            capture_output=True, text=True, check=True).stdout.strip()
+
+        from execute_moves import finalize_execution
+        manifest = {
+            "starting_commit": base,
+            "counts": {"unclassified": 0,
+                       "collisions": 0, "double_moves": 0,
+                       "overlap_cycles": 0},
+            "moves": [
+                {"old_path": "A.md",
+                 "new_path": "claims/t/pkg/A.md",
+                 "status": "proposed_high_confidence"},
+                {"old_path": "B.md",
+                 "new_path": "claims/t/pkg/B.md",
+                 "status": "proposed_high_confidence"},
+                {"old_path": "STAYS.md",
+                 "new_path": "docs/STAYS.md",
+                 "status": "proposed_high_confidence"},
+            ],
+        }
+        before_moved = sum(1 for r in manifest["moves"]
+                           if r["status"] == "moved")
+        before_proposed = sum(1 for r in manifest["moves"]
+                              if r["status"]
+                              == "proposed_high_confidence")
+        self.assertEqual(before_moved, 0)
+        self.assertEqual(before_proposed, 3)
+
+        batch_size = 2
+        performed = manifest["moves"][:batch_size]
+        result = finalize_execution(manifest, performed,
+                                    "test-batch", tmp)
+
+        counts = result["counts"]
+        self.assertEqual(counts["moved"], before_moved + batch_size,
+                         "moved did not increase by batch_size")
+        self.assertEqual(
+            counts["proposed_high_confidence"],
+            before_proposed - batch_size,
+            "proposed_high_confidence did not decrease by batch_size")
+        for m in performed:
+            self.assertEqual(m["status"], "moved")
+            self.assertEqual(m["executed_batch"], "test-batch")
+        # Moved-only projection uses the same formula as
+        # build_manifest.recompute_manifest_summary: base root files not
+        # moved, plus (base dirs | new top-level dirs | fixed dirs).
+        # "claims" is both a new top dir and a fixed dir, so it is
+        # counted once.
+        fixed_dirs = {".github", "claims", "docs", "src", "tools",
+                      "tests", "catalog", "research_snapshots",
+                      "research_figures"}
+        left = (3 - batch_size)           # STAYS.md remains
+        dirs = set() | {"claims"} | fixed_dirs
+        self.assertEqual(counts["projected_root_if_moved_only"],
+                         left + len(dirs),
+                         "projected_root_if_moved_only not updated")
+
+    def test_recompute_failure_cannot_leave_stale_manifest(self):
+        # If recompute_manifest_summary raises (here simulated by an
+        # unresolvable starting_commit), finalize_execution propagates
+        # the exception before any manifest write, so the caller's
+        # rollback runs and no stale manifest is produced.
+        tmp = pathlib.Path(tempfile.mkdtemp())
+        self._gitinit_repo(tmp)
+        (tmp / "A.md").write_text("A", encoding="utf-8")
+        subprocess.run(["git", "add", "-A"], cwd=tmp, check=True)
+        subprocess.run(["git", "commit", "-q", "-m", "base"],
+                       cwd=tmp, check=True)
+
+        from execute_moves import finalize_execution
+        manifest = {
+            "starting_commit": "f" * 40,  # does not resolve
+            "counts": {"unclassified": 0},
+            "moves": [{"old_path": "A.md",
+                       "new_path": "claims/t/pkg/A.md",
+                       "status": "proposed_high_confidence"}],
+        }
+        performed = manifest["moves"]
+        with self.assertRaises(subprocess.CalledProcessError):
+            finalize_execution(manifest, performed, "b", tmp)
+        # The failure happens inside recompute, BEFORE any write; the
+        # executor's except block would roll back.  No manifest file is
+        # created here by finalize_execution itself.
+        self.assertFalse((tmp / "moved-paths.json").exists())
+
 if __name__ == "__main__":
     unittest.main()

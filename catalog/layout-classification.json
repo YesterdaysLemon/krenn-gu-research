@@ -23,9 +23,17 @@
     "finite/eight-vertex": 11,
     "legacy": 10,
     "finite/fourteen-vertex": 31,
-    "p4/classifications": 88,
+    "p4/classifications": 164,
     "p4/boundaries": 85,
-    "p4/components": 103,
+    "p4/components/all-rank-one-triangle": 3,
+    "p4/components/diagonal-quadric": 3,
+    "p4/components/disjoint-mixed-star": 3,
+    "p4/components/embedded-p3": 3,
+    "p4/components/equal-support-sixfold": 3,
+    "p4/components/mixed-orientation": 3,
+    "p4/components/single-word-quadrilateral": 3,
+    "p4/components/six-dimensional": 3,
+    "p4/components/split-pair": 3,
     "p5/boundaries": 31,
     "p5/frontier": 227,
     "p5/coordinate-cegar": 24,
@@ -233,9 +241,9 @@
     "shared_library": 35
   },
   "confidence_counts": {
-    "medium": 1188,
-    "low": 444,
-    "high": 383
+    "medium": 1179,
+    "low": 426,
+    "high": 410
   },
   "classified_count": 2015,
   "unclassified_count": 348,
@@ -5309,10 +5317,10 @@
     },
     {
       "old_path": "P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md",
-      "proposed_path": "claims/p4/components/P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md",
+      "proposed_path": "claims/p4/components/all-rank-one-triangle/P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
-      "confidence": "medium",
+      "claim_family": "p4/components/all-rank-one-triangle",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_",
         "part of verify/audit triple"
@@ -5320,9 +5328,9 @@
     },
     {
       "old_path": "P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md",
-      "proposed_path": "claims/p4/components/P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md",
+      "proposed_path": "claims/p4/classifications/P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
@@ -5341,9 +5349,9 @@
     },
     {
       "old_path": "P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md",
-      "proposed_path": "claims/p4/components/P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md",
+      "proposed_path": "claims/p4/classifications/P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
@@ -5374,9 +5382,9 @@
     },
     {
       "old_path": "P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md",
-      "proposed_path": "claims/p4/components/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md",
+      "proposed_path": "claims/p4/classifications/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
@@ -5396,9 +5404,9 @@
     },
     {
       "old_path": "P4_COMMON_ACTIVE_TAU_ZERO_COMPONENT_ELEVEN_INCLUSION.md",
-      "proposed_path": "claims/p4/components/P4_COMMON_ACTIVE_TAU_ZERO_COMPONENT_ELEVEN_INCLUSION.md",
+      "proposed_path": "claims/p4/classifications/P4_COMMON_ACTIVE_TAU_ZERO_COMPONENT_ELEVEN_INCLUSION.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
@@ -5407,9 +5415,9 @@
     },
     {
       "old_path": "P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md",
-      "proposed_path": "claims/p4/components/P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md",
+      "proposed_path": "claims/p4/classifications/P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
@@ -5418,9 +5426,9 @@
     },
     {
       "old_path": "P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md",
-      "proposed_path": "claims/p4/components/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md",
+      "proposed_path": "claims/p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
@@ -5462,9 +5470,9 @@
     },
     {
       "old_path": "P4_COMMON_SINGLETON_COMPONENT.md",
-      "proposed_path": "claims/p4/components/P4_COMMON_SINGLETON_COMPONENT.md",
+      "proposed_path": "claims/p4/classifications/P4_COMMON_SINGLETON_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
@@ -5484,9 +5492,9 @@
     },
     {
       "old_path": "P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md",
-      "proposed_path": "claims/p4/components/P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md",
+      "proposed_path": "claims/p4/classifications/P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -5494,9 +5502,9 @@
     },
     {
       "old_path": "P4_COMPONENT20_TRANSVERSE_BASE_DIAGONAL_FAN_PROOF_B.md",
-      "proposed_path": "claims/p4/components/P4_COMPONENT20_TRANSVERSE_BASE_DIAGONAL_FAN_PROOF_B.md",
+      "proposed_path": "claims/p4/classifications/P4_COMPONENT20_TRANSVERSE_BASE_DIAGONAL_FAN_PROOF_B.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -5559,9 +5567,9 @@
     },
     {
       "old_path": "P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md",
-      "proposed_path": "claims/p4/components/P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md",
+      "proposed_path": "claims/p4/classifications/P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
@@ -5570,10 +5578,10 @@
     },
     {
       "old_path": "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md",
-      "proposed_path": "claims/p4/components/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md",
+      "proposed_path": "claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
-      "confidence": "medium",
+      "claim_family": "p4/components/diagonal-quadric",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_",
         "part of verify/audit triple"
@@ -5581,9 +5589,9 @@
     },
     {
       "old_path": "P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md",
-      "proposed_path": "claims/p4/components/P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md",
+      "proposed_path": "claims/p4/classifications/P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
@@ -5614,10 +5622,10 @@
     },
     {
       "old_path": "P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md",
-      "proposed_path": "claims/p4/components/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md",
+      "proposed_path": "claims/p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
-      "confidence": "medium",
+      "claim_family": "p4/components/disjoint-mixed-star",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_",
         "part of verify/audit triple"
@@ -5625,9 +5633,9 @@
     },
     {
       "old_path": "P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md",
-      "proposed_path": "claims/p4/components/P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md",
+      "proposed_path": "claims/p4/classifications/P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
@@ -5636,9 +5644,9 @@
     },
     {
       "old_path": "P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md",
-      "proposed_path": "claims/p4/components/P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md",
+      "proposed_path": "claims/p4/classifications/P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
@@ -5647,10 +5655,10 @@
     },
     {
       "old_path": "P4_EMBEDDED_P3_PURE_COMPONENT.md",
-      "proposed_path": "claims/p4/components/P4_EMBEDDED_P3_PURE_COMPONENT.md",
+      "proposed_path": "claims/p4/components/embedded-p3/P4_EMBEDDED_P3_PURE_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
-      "confidence": "medium",
+      "claim_family": "p4/components/embedded-p3",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_",
         "part of verify/audit triple"
@@ -5669,9 +5677,9 @@
     },
     {
       "old_path": "P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md",
-      "proposed_path": "claims/p4/components/P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md",
+      "proposed_path": "claims/p4/classifications/P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
@@ -5680,10 +5688,10 @@
     },
     {
       "old_path": "P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md",
-      "proposed_path": "claims/p4/components/P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md",
+      "proposed_path": "claims/p4/components/equal-support-sixfold/P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
-      "confidence": "medium",
+      "claim_family": "p4/components/equal-support-sixfold",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_",
         "part of verify/audit triple"
@@ -5691,9 +5699,9 @@
     },
     {
       "old_path": "P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md",
-      "proposed_path": "claims/p4/components/P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md",
+      "proposed_path": "claims/p4/classifications/P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
@@ -5702,9 +5710,9 @@
     },
     {
       "old_path": "P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md",
-      "proposed_path": "claims/p4/components/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md",
+      "proposed_path": "claims/p4/classifications/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
@@ -5724,9 +5732,9 @@
     },
     {
       "old_path": "P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md",
-      "proposed_path": "claims/p4/components/P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md",
+      "proposed_path": "claims/p4/classifications/P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -5766,9 +5774,9 @@
     },
     {
       "old_path": "P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md",
-      "proposed_path": "claims/p4/components/P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md",
+      "proposed_path": "claims/p4/classifications/P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
@@ -5799,10 +5807,10 @@
     },
     {
       "old_path": "P4_MIXED_ORIENTATION_PURE_COMPONENT.md",
-      "proposed_path": "claims/p4/components/P4_MIXED_ORIENTATION_PURE_COMPONENT.md",
+      "proposed_path": "claims/p4/components/mixed-orientation/P4_MIXED_ORIENTATION_PURE_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
-      "confidence": "medium",
+      "claim_family": "p4/components/mixed-orientation",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_",
         "part of verify/audit triple"
@@ -5929,9 +5937,9 @@
     },
     {
       "old_path": "P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md",
-      "proposed_path": "claims/p4/components/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md",
+      "proposed_path": "claims/p4/classifications/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
@@ -5940,9 +5948,9 @@
     },
     {
       "old_path": "P4_PURE_RANK_TWO_COMPONENT_THEOREM.md",
-      "proposed_path": "claims/p4/components/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md",
+      "proposed_path": "claims/p4/classifications/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -5950,9 +5958,9 @@
     },
     {
       "old_path": "P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md",
-      "proposed_path": "claims/p4/components/P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md",
+      "proposed_path": "claims/p4/classifications/P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
@@ -5982,9 +5990,9 @@
     },
     {
       "old_path": "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md",
-      "proposed_path": "claims/p4/components/P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md",
+      "proposed_path": "claims/p4/classifications/P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
@@ -6118,10 +6126,10 @@
     },
     {
       "old_path": "P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md",
-      "proposed_path": "claims/p4/components/P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md",
+      "proposed_path": "claims/p4/components/single-word-quadrilateral/P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
-      "confidence": "medium",
+      "claim_family": "p4/components/single-word-quadrilateral",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_",
         "part of verify/audit triple"
@@ -6129,10 +6137,10 @@
     },
     {
       "old_path": "P4_SIX_DIMENSIONAL_PURE_COMPONENT.md",
-      "proposed_path": "claims/p4/components/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md",
+      "proposed_path": "claims/p4/components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
-      "confidence": "medium",
+      "claim_family": "p4/components/six-dimensional",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_",
         "part of verify/audit triple"
@@ -6140,9 +6148,9 @@
     },
     {
       "old_path": "P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md",
-      "proposed_path": "claims/p4/components/P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md",
+      "proposed_path": "claims/p4/classifications/P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
@@ -6151,10 +6159,10 @@
     },
     {
       "old_path": "P4_SPLIT_PAIR_PURE_COMPONENT.md",
-      "proposed_path": "claims/p4/components/P4_SPLIT_PAIR_PURE_COMPONENT.md",
+      "proposed_path": "claims/p4/components/split-pair/P4_SPLIT_PAIR_PURE_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
-      "confidence": "medium",
+      "claim_family": "p4/components/split-pair",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_",
         "part of verify/audit triple"
@@ -6217,9 +6225,9 @@
     },
     {
       "old_path": "P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md",
-      "proposed_path": "claims/p4/components/P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md",
+      "proposed_path": "claims/p4/classifications/P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
@@ -6272,9 +6280,9 @@
     },
     {
       "old_path": "P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md",
-      "proposed_path": "claims/p4/components/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md",
+      "proposed_path": "claims/p4/classifications/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
@@ -6283,9 +6291,9 @@
     },
     {
       "old_path": "P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md",
-      "proposed_path": "claims/p4/components/P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md",
+      "proposed_path": "claims/p4/classifications/P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
@@ -6305,9 +6313,9 @@
     },
     {
       "old_path": "P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md",
-      "proposed_path": "claims/p4/components/P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md",
+      "proposed_path": "claims/p4/classifications/P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
@@ -12151,19 +12159,19 @@
     },
     {
       "old_path": "audit_p4_all_rank_one_triangle_pure_component.py",
-      "proposed_path": "claims/p4/components/audit_p4_all_rank_one_triangle_pure_component.py",
+      "proposed_path": "claims/p4/components/all-rank-one-triangle/audit_p4_all_rank_one_triangle_pure_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
-      "confidence": "low",
+      "claim_family": "p4/components/all-rank-one-triangle",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_"
       ]
     },
     {
       "old_path": "audit_p4_all_rank_two_relation_triangle_component_inclusion.py",
-      "proposed_path": "claims/p4/components/audit_p4_all_rank_two_relation_triangle_component_inclusion.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_all_rank_two_relation_triangle_component_inclusion.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -12171,9 +12179,9 @@
     },
     {
       "old_path": "audit_p4_coincident_support_rank_one_star_component.py",
-      "proposed_path": "claims/p4/components/audit_p4_coincident_support_rank_one_star_component.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_coincident_support_rank_one_star_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -12201,9 +12209,9 @@
     },
     {
       "old_path": "audit_p4_common_active_binary_triangle_component.py",
-      "proposed_path": "claims/p4/components/audit_p4_common_active_binary_triangle_component.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_common_active_binary_triangle_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -12221,9 +12229,9 @@
     },
     {
       "old_path": "audit_p4_common_active_tau_zero_component_eleven_inclusion.py",
-      "proposed_path": "claims/p4/components/audit_p4_common_active_tau_zero_component_eleven_inclusion.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_common_active_tau_zero_component_eleven_inclusion.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -12231,9 +12239,9 @@
     },
     {
       "old_path": "audit_p4_common_center_kernel_star_211_component.py",
-      "proposed_path": "claims/p4/components/audit_p4_common_center_kernel_star_211_component.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_common_center_kernel_star_211_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -12241,9 +12249,9 @@
     },
     {
       "old_path": "audit_p4_common_kernel_vertical_triangle_component.py",
-      "proposed_path": "claims/p4/components/audit_p4_common_kernel_vertical_triangle_component.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_common_kernel_vertical_triangle_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -12281,9 +12289,9 @@
     },
     {
       "old_path": "audit_p4_common_singleton_component.py",
-      "proposed_path": "claims/p4/components/audit_p4_common_singleton_component.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_common_singleton_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -12301,9 +12309,9 @@
     },
     {
       "old_path": "audit_p4_component19_p0_finite_boundary_geometry.py",
-      "proposed_path": "claims/p4/components/audit_p4_component19_p0_finite_boundary_geometry.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_component19_p0_finite_boundary_geometry.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -12361,9 +12369,9 @@
     },
     {
       "old_path": "audit_p4_diagonal_quadric_one_three_components.py",
-      "proposed_path": "claims/p4/components/audit_p4_diagonal_quadric_one_three_components.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_diagonal_quadric_one_three_components.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -12371,19 +12379,19 @@
     },
     {
       "old_path": "audit_p4_diagonal_quadric_pure_component.py",
-      "proposed_path": "claims/p4/components/audit_p4_diagonal_quadric_pure_component.py",
+      "proposed_path": "claims/p4/components/diagonal-quadric/audit_p4_diagonal_quadric_pure_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
-      "confidence": "low",
+      "claim_family": "p4/components/diagonal-quadric",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_"
       ]
     },
     {
       "old_path": "audit_p4_directed_zero_divisor_triangle_components.py",
-      "proposed_path": "claims/p4/components/audit_p4_directed_zero_divisor_triangle_components.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_directed_zero_divisor_triangle_components.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -12411,19 +12419,19 @@
     },
     {
       "old_path": "audit_p4_disjoint_mixed_star_pure_component.py",
-      "proposed_path": "claims/p4/components/audit_p4_disjoint_mixed_star_pure_component.py",
+      "proposed_path": "claims/p4/components/disjoint-mixed-star/audit_p4_disjoint_mixed_star_pure_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
-      "confidence": "low",
+      "claim_family": "p4/components/disjoint-mixed-star",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_"
       ]
     },
     {
       "old_path": "audit_p4_disjoint_secant_lower_pair_component.py",
-      "proposed_path": "claims/p4/components/audit_p4_disjoint_secant_lower_pair_component.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_disjoint_secant_lower_pair_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -12431,9 +12439,9 @@
     },
     {
       "old_path": "audit_p4_eisenstein_norm_common_kernel_component.py",
-      "proposed_path": "claims/p4/components/audit_p4_eisenstein_norm_common_kernel_component.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_eisenstein_norm_common_kernel_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -12441,10 +12449,10 @@
     },
     {
       "old_path": "audit_p4_embedded_p3_pure_component.py",
-      "proposed_path": "claims/p4/components/audit_p4_embedded_p3_pure_component.py",
+      "proposed_path": "claims/p4/components/embedded-p3/audit_p4_embedded_p3_pure_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
-      "confidence": "low",
+      "claim_family": "p4/components/embedded-p3",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_"
       ]
@@ -12461,9 +12469,9 @@
     },
     {
       "old_path": "audit_p4_equal_support_common_factor_component.py",
-      "proposed_path": "claims/p4/components/audit_p4_equal_support_common_factor_component.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_equal_support_common_factor_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -12471,19 +12479,19 @@
     },
     {
       "old_path": "audit_p4_equal_support_sixfold_pure_component.py",
-      "proposed_path": "claims/p4/components/audit_p4_equal_support_sixfold_pure_component.py",
+      "proposed_path": "claims/p4/components/equal-support-sixfold/audit_p4_equal_support_sixfold_pure_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
-      "confidence": "low",
+      "claim_family": "p4/components/equal-support-sixfold",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_"
       ]
     },
     {
       "old_path": "audit_p4_first_component_apolar_triangle_normal_form.py",
-      "proposed_path": "claims/p4/components/audit_p4_first_component_apolar_triangle_normal_form.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_first_component_apolar_triangle_normal_form.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -12491,9 +12499,9 @@
     },
     {
       "old_path": "audit_p4_full_support_tangent_pair_component.py",
-      "proposed_path": "claims/p4/components/audit_p4_full_support_tangent_pair_component.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_full_support_tangent_pair_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -12531,9 +12539,9 @@
     },
     {
       "old_path": "audit_p4_mixed_chain_transverse_component_inclusion.py",
-      "proposed_path": "claims/p4/components/audit_p4_mixed_chain_transverse_component_inclusion.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_mixed_chain_transverse_component_inclusion.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -12561,10 +12569,10 @@
     },
     {
       "old_path": "audit_p4_mixed_orientation_pure_component.py",
-      "proposed_path": "claims/p4/components/audit_p4_mixed_orientation_pure_component.py",
+      "proposed_path": "claims/p4/components/mixed-orientation/audit_p4_mixed_orientation_pure_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
-      "confidence": "low",
+      "claim_family": "p4/components/mixed-orientation",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_"
       ]
@@ -12661,9 +12669,9 @@
     },
     {
       "old_path": "audit_p4_pure_rank_two_component.py",
-      "proposed_path": "claims/p4/components/audit_p4_pure_rank_two_component.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_pure_rank_two_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -12671,9 +12679,9 @@
     },
     {
       "old_path": "audit_p4_pure_rank_two_component_chart_closure.py",
-      "proposed_path": "claims/p4/components/audit_p4_pure_rank_two_component_chart_closure.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_pure_rank_two_component_chart_closure.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -12681,9 +12689,9 @@
     },
     {
       "old_path": "audit_p4_pure_rank_two_component_toric_boundary.py",
-      "proposed_path": "claims/p4/components/audit_p4_pure_rank_two_component_toric_boundary.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_pure_rank_two_component_toric_boundary.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -12711,9 +12719,9 @@
     },
     {
       "old_path": "audit_p4_radical_star_component_classification.py",
-      "proposed_path": "claims/p4/components/audit_p4_radical_star_component_classification.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_radical_star_component_classification.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -12831,29 +12839,29 @@
     },
     {
       "old_path": "audit_p4_single_word_quadrilateral_pure_component.py",
-      "proposed_path": "claims/p4/components/audit_p4_single_word_quadrilateral_pure_component.py",
+      "proposed_path": "claims/p4/components/single-word-quadrilateral/audit_p4_single_word_quadrilateral_pure_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
-      "confidence": "low",
+      "claim_family": "p4/components/single-word-quadrilateral",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_"
       ]
     },
     {
       "old_path": "audit_p4_six_dimensional_pure_component.py",
-      "proposed_path": "claims/p4/components/audit_p4_six_dimensional_pure_component.py",
+      "proposed_path": "claims/p4/components/six-dimensional/audit_p4_six_dimensional_pure_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
-      "confidence": "low",
+      "claim_family": "p4/components/six-dimensional",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_"
       ]
     },
     {
       "old_path": "audit_p4_split_center_mixed_star_211_component.py",
-      "proposed_path": "claims/p4/components/audit_p4_split_center_mixed_star_211_component.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_split_center_mixed_star_211_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -12861,10 +12869,10 @@
     },
     {
       "old_path": "audit_p4_split_pair_pure_component.py",
-      "proposed_path": "claims/p4/components/audit_p4_split_pair_pure_component.py",
+      "proposed_path": "claims/p4/components/split-pair/audit_p4_split_pair_pure_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
-      "confidence": "low",
+      "claim_family": "p4/components/split-pair",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_"
       ]
@@ -12921,9 +12929,9 @@
     },
     {
       "old_path": "audit_p4_transverse_common_factor_component.py",
-      "proposed_path": "claims/p4/components/audit_p4_transverse_common_factor_component.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_transverse_common_factor_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -12971,9 +12979,9 @@
     },
     {
       "old_path": "audit_p4_two_rank_two_spoke_mixed_star_component.py",
-      "proposed_path": "claims/p4/components/audit_p4_two_rank_two_spoke_mixed_star_component.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_two_rank_two_spoke_mixed_star_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -12981,9 +12989,9 @@
     },
     {
       "old_path": "audit_p4_unequal_complement_common_kernel_component.py",
-      "proposed_path": "claims/p4/components/audit_p4_unequal_complement_common_kernel_component.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_unequal_complement_common_kernel_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -13001,9 +13009,9 @@
     },
     {
       "old_path": "audit_p4_unequal_endpoint_inward_star_211_component.py",
-      "proposed_path": "claims/p4/components/audit_p4_unequal_endpoint_inward_star_211_component.py",
+      "proposed_path": "claims/p4/classifications/audit_p4_unequal_endpoint_inward_star_211_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -18690,19 +18698,19 @@
     },
     {
       "old_path": "verify_p4_all_rank_one_triangle_pure_component.py",
-      "proposed_path": "claims/p4/components/verify_p4_all_rank_one_triangle_pure_component.py",
+      "proposed_path": "claims/p4/components/all-rank-one-triangle/verify_p4_all_rank_one_triangle_pure_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
-      "confidence": "low",
+      "claim_family": "p4/components/all-rank-one-triangle",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_"
       ]
     },
     {
       "old_path": "verify_p4_all_rank_two_relation_triangle_component_inclusion.py",
-      "proposed_path": "claims/p4/components/verify_p4_all_rank_two_relation_triangle_component_inclusion.py",
+      "proposed_path": "claims/p4/classifications/verify_p4_all_rank_two_relation_triangle_component_inclusion.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -18710,9 +18718,9 @@
     },
     {
       "old_path": "verify_p4_coincident_support_rank_one_star_component.py",
-      "proposed_path": "claims/p4/components/verify_p4_coincident_support_rank_one_star_component.py",
+      "proposed_path": "claims/p4/classifications/verify_p4_coincident_support_rank_one_star_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -18740,9 +18748,9 @@
     },
     {
       "old_path": "verify_p4_common_active_binary_triangle_component.py",
-      "proposed_path": "claims/p4/components/verify_p4_common_active_binary_triangle_component.py",
+      "proposed_path": "claims/p4/classifications/verify_p4_common_active_binary_triangle_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -18760,9 +18768,9 @@
     },
     {
       "old_path": "verify_p4_common_active_tau_zero_component_eleven_inclusion.py",
-      "proposed_path": "claims/p4/components/verify_p4_common_active_tau_zero_component_eleven_inclusion.py",
+      "proposed_path": "claims/p4/classifications/verify_p4_common_active_tau_zero_component_eleven_inclusion.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -18770,9 +18778,9 @@
     },
     {
       "old_path": "verify_p4_common_center_kernel_star_211_component.py",
-      "proposed_path": "claims/p4/components/verify_p4_common_center_kernel_star_211_component.py",
+      "proposed_path": "claims/p4/classifications/verify_p4_common_center_kernel_star_211_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -18780,9 +18788,9 @@
     },
     {
       "old_path": "verify_p4_common_kernel_vertical_triangle_component.py",
-      "proposed_path": "claims/p4/components/verify_p4_common_kernel_vertical_triangle_component.py",
+      "proposed_path": "claims/p4/classifications/verify_p4_common_kernel_vertical_triangle_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -18820,9 +18828,9 @@
     },
     {
       "old_path": "verify_p4_common_singleton_component.py",
-      "proposed_path": "claims/p4/components/verify_p4_common_singleton_component.py",
+      "proposed_path": "claims/p4/classifications/verify_p4_common_singleton_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -18890,9 +18898,9 @@
     },
     {
       "old_path": "verify_p4_diagonal_quadric_one_three_components.py",
-      "proposed_path": "claims/p4/components/verify_p4_diagonal_quadric_one_three_components.py",
+      "proposed_path": "claims/p4/classifications/verify_p4_diagonal_quadric_one_three_components.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -18900,19 +18908,19 @@
     },
     {
       "old_path": "verify_p4_diagonal_quadric_pure_component.py",
-      "proposed_path": "claims/p4/components/verify_p4_diagonal_quadric_pure_component.py",
+      "proposed_path": "claims/p4/components/diagonal-quadric/verify_p4_diagonal_quadric_pure_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
-      "confidence": "low",
+      "claim_family": "p4/components/diagonal-quadric",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_"
       ]
     },
     {
       "old_path": "verify_p4_directed_zero_divisor_triangle_components.py",
-      "proposed_path": "claims/p4/components/verify_p4_directed_zero_divisor_triangle_components.py",
+      "proposed_path": "claims/p4/classifications/verify_p4_directed_zero_divisor_triangle_components.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -18940,19 +18948,19 @@
     },
     {
       "old_path": "verify_p4_disjoint_mixed_star_pure_component.py",
-      "proposed_path": "claims/p4/components/verify_p4_disjoint_mixed_star_pure_component.py",
+      "proposed_path": "claims/p4/components/disjoint-mixed-star/verify_p4_disjoint_mixed_star_pure_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
-      "confidence": "low",
+      "claim_family": "p4/components/disjoint-mixed-star",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_"
       ]
     },
     {
       "old_path": "verify_p4_disjoint_secant_lower_pair_component.py",
-      "proposed_path": "claims/p4/components/verify_p4_disjoint_secant_lower_pair_component.py",
+      "proposed_path": "claims/p4/classifications/verify_p4_disjoint_secant_lower_pair_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -18960,9 +18968,9 @@
     },
     {
       "old_path": "verify_p4_eisenstein_norm_common_kernel_component.py",
-      "proposed_path": "claims/p4/components/verify_p4_eisenstein_norm_common_kernel_component.py",
+      "proposed_path": "claims/p4/classifications/verify_p4_eisenstein_norm_common_kernel_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -18970,10 +18978,10 @@
     },
     {
       "old_path": "verify_p4_embedded_p3_pure_component.py",
-      "proposed_path": "claims/p4/components/verify_p4_embedded_p3_pure_component.py",
+      "proposed_path": "claims/p4/components/embedded-p3/verify_p4_embedded_p3_pure_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
-      "confidence": "low",
+      "claim_family": "p4/components/embedded-p3",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_"
       ]
@@ -18990,9 +18998,9 @@
     },
     {
       "old_path": "verify_p4_equal_support_common_factor_component.py",
-      "proposed_path": "claims/p4/components/verify_p4_equal_support_common_factor_component.py",
+      "proposed_path": "claims/p4/classifications/verify_p4_equal_support_common_factor_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -19000,19 +19008,19 @@
     },
     {
       "old_path": "verify_p4_equal_support_sixfold_pure_component.py",
-      "proposed_path": "claims/p4/components/verify_p4_equal_support_sixfold_pure_component.py",
+      "proposed_path": "claims/p4/components/equal-support-sixfold/verify_p4_equal_support_sixfold_pure_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
-      "confidence": "low",
+      "claim_family": "p4/components/equal-support-sixfold",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_"
       ]
     },
     {
       "old_path": "verify_p4_first_component_apolar_triangle_normal_form.py",
-      "proposed_path": "claims/p4/components/verify_p4_first_component_apolar_triangle_normal_form.py",
+      "proposed_path": "claims/p4/classifications/verify_p4_first_component_apolar_triangle_normal_form.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -19020,9 +19028,9 @@
     },
     {
       "old_path": "verify_p4_full_support_tangent_pair_component.py",
-      "proposed_path": "claims/p4/components/verify_p4_full_support_tangent_pair_component.py",
+      "proposed_path": "claims/p4/classifications/verify_p4_full_support_tangent_pair_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -19070,9 +19078,9 @@
     },
     {
       "old_path": "verify_p4_mixed_chain_transverse_component_inclusion.py",
-      "proposed_path": "claims/p4/components/verify_p4_mixed_chain_transverse_component_inclusion.py",
+      "proposed_path": "claims/p4/classifications/verify_p4_mixed_chain_transverse_component_inclusion.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -19100,10 +19108,10 @@
     },
     {
       "old_path": "verify_p4_mixed_orientation_pure_component.py",
-      "proposed_path": "claims/p4/components/verify_p4_mixed_orientation_pure_component.py",
+      "proposed_path": "claims/p4/components/mixed-orientation/verify_p4_mixed_orientation_pure_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
-      "confidence": "low",
+      "claim_family": "p4/components/mixed-orientation",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_"
       ]
@@ -19210,9 +19218,9 @@
     },
     {
       "old_path": "verify_p4_pure_rank_two_component.py",
-      "proposed_path": "claims/p4/components/verify_p4_pure_rank_two_component.py",
+      "proposed_path": "claims/p4/classifications/verify_p4_pure_rank_two_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -19220,9 +19228,9 @@
     },
     {
       "old_path": "verify_p4_pure_rank_two_component_chart_closure.py",
-      "proposed_path": "claims/p4/components/verify_p4_pure_rank_two_component_chart_closure.py",
+      "proposed_path": "claims/p4/classifications/verify_p4_pure_rank_two_component_chart_closure.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -19230,9 +19238,9 @@
     },
     {
       "old_path": "verify_p4_pure_rank_two_component_toric_boundary.py",
-      "proposed_path": "claims/p4/components/verify_p4_pure_rank_two_component_toric_boundary.py",
+      "proposed_path": "claims/p4/classifications/verify_p4_pure_rank_two_component_toric_boundary.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -19260,9 +19268,9 @@
     },
     {
       "old_path": "verify_p4_radical_star_component_classification.py",
-      "proposed_path": "claims/p4/components/verify_p4_radical_star_component_classification.py",
+      "proposed_path": "claims/p4/classifications/verify_p4_radical_star_component_classification.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -19390,29 +19398,29 @@
     },
     {
       "old_path": "verify_p4_single_word_quadrilateral_pure_component.py",
-      "proposed_path": "claims/p4/components/verify_p4_single_word_quadrilateral_pure_component.py",
+      "proposed_path": "claims/p4/components/single-word-quadrilateral/verify_p4_single_word_quadrilateral_pure_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
-      "confidence": "low",
+      "claim_family": "p4/components/single-word-quadrilateral",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_"
       ]
     },
     {
       "old_path": "verify_p4_six_dimensional_pure_component.py",
-      "proposed_path": "claims/p4/components/verify_p4_six_dimensional_pure_component.py",
+      "proposed_path": "claims/p4/components/six-dimensional/verify_p4_six_dimensional_pure_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
-      "confidence": "low",
+      "claim_family": "p4/components/six-dimensional",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_"
       ]
     },
     {
       "old_path": "verify_p4_split_center_mixed_star_211_component.py",
-      "proposed_path": "claims/p4/components/verify_p4_split_center_mixed_star_211_component.py",
+      "proposed_path": "claims/p4/classifications/verify_p4_split_center_mixed_star_211_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -19420,10 +19428,10 @@
     },
     {
       "old_path": "verify_p4_split_pair_pure_component.py",
-      "proposed_path": "claims/p4/components/verify_p4_split_pair_pure_component.py",
+      "proposed_path": "claims/p4/components/split-pair/verify_p4_split_pair_pure_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
-      "confidence": "low",
+      "claim_family": "p4/components/split-pair",
+      "confidence": "high",
       "evidence": [
         "filename prefix P4_"
       ]
@@ -19480,9 +19488,9 @@
     },
     {
       "old_path": "verify_p4_transverse_common_factor_component.py",
-      "proposed_path": "claims/p4/components/verify_p4_transverse_common_factor_component.py",
+      "proposed_path": "claims/p4/classifications/verify_p4_transverse_common_factor_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -19530,9 +19538,9 @@
     },
     {
       "old_path": "verify_p4_two_rank_two_spoke_mixed_star_component.py",
-      "proposed_path": "claims/p4/components/verify_p4_two_rank_two_spoke_mixed_star_component.py",
+      "proposed_path": "claims/p4/classifications/verify_p4_two_rank_two_spoke_mixed_star_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -19540,9 +19548,9 @@
     },
     {
       "old_path": "verify_p4_unequal_complement_common_kernel_component.py",
-      "proposed_path": "claims/p4/components/verify_p4_unequal_complement_common_kernel_component.py",
+      "proposed_path": "claims/p4/classifications/verify_p4_unequal_complement_common_kernel_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"
@@ -19560,9 +19568,9 @@
     },
     {
       "old_path": "verify_p4_unequal_endpoint_inward_star_211_component.py",
-      "proposed_path": "claims/p4/components/verify_p4_unequal_endpoint_inward_star_211_component.py",
+      "proposed_path": "claims/p4/classifications/verify_p4_unequal_endpoint_inward_star_211_component.py",
       "category": "claim_script",
-      "claim_family": "p4/components",
+      "claim_family": "p4/classifications",
       "confidence": "low",
       "evidence": [
         "filename prefix P4_"

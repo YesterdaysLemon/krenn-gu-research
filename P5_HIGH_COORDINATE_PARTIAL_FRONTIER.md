@@ -785,7 +785,7 @@ function-field projection and determinantal identity above.  Its
 generic weighted `H22` incidence is now empty as well: the two weighted
 mixed matrices have a line and a degree-five Fitting scheme, and small
 one-marked minors exclude every genuine binary direction:
-[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
+[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](claims/p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
 [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 At the special slopes `r=1` and `r=-1`, a stronger binary theorem
 forces respectively the first and second diagonal to vanish:

@@ -4,7 +4,7 @@
 
 This is an exact characteristic-zero theorem on the eleventh certified
 pure-`P_4` component orbit, the equal-support sixfold of
-[`P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md`](P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md).
+[`P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md`](claims/p4/components/equal-support-sixfold/P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md).
 
 The complete marked-basis `H31` fibre over the generic point of that
 component is empty, and the theorem goes one step past the generic

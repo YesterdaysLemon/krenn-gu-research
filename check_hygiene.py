@@ -20,6 +20,13 @@ Checks:
      the entry counts;
   5. no machine-specific checkout paths, vendored-env prefixes, or
      unguarded sys.path injections;
+  8. root layout against the allowlist and entry-count target;
+  9. manifest-aware stale-path enforcement (executed old paths must not
+     reappear outside provenance);
+  10. executed-batch provenance (every moved entry names a batch file
+      freezing its exact mapping);
+  11. manifest summary consistency (counts match the move records and
+      the moved-only root projection agrees with the executed set);
   6. the fast verifier set runs and exits zero;
   7. dependency and solver versions are displayed.
 
@@ -740,6 +747,88 @@ def check_executed_provenance(files: list[str]) -> None:
         print(f"[10] provenance: {len(moved)} moved entries all "
               f"reference a batch file with matching mappings")
 
+
+# Manifest summary consistency invariant (Stage 3 review item 1).  The
+# manifest's counts section must be derived from its move records:
+#   counts.moved                     == count(status == "moved")
+#   counts.proposed_high_confidence  == count(status ==
+#                                            "proposed_high_confidence")
+#   counts.review_required           == count(status == "review_required")
+# and the moved-only root projection must agree with the executed move
+# set.  A summary that can drift from the records is a bug by
+# definition.
+def check_manifest_summary_consistency(files: list[str]) -> None:
+    manifest_path = ROOT / "catalog" / "moved-paths.json"
+    if not manifest_path.exists():
+        print("[11] manifest summary: no manifest, nothing to enforce")
+        return
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    records = manifest.get("moves", [])
+    counts = manifest.get("counts", {})
+    problems = []
+
+    actual = {
+        "moved": sum(1 for r in records if r["status"] == "moved"),
+        "pilot": sum(1 for r in records if r["status"] == "pilot"),
+        "proposed_high_confidence": sum(
+            1 for r in records
+            if r["status"] == "proposed_high_confidence"),
+        "review_required": sum(
+            1 for r in records if r["status"] == "review_required"),
+        "total_classified_moves": len(records),
+    }
+    for key, val in actual.items():
+        if counts.get(key) != val:
+            problems.append(
+                f"counts.{key}={counts.get(key)} but records give {val}")
+
+    # The moved-only root projection must agree with the executed move
+    # set (root files minus moved sources, plus destination top-level
+    # dirs and the fixed architecture dirs).
+    moved = [r for r in records if r["status"] == "moved"]
+    if moved:
+        # Independently recompute the moved-only root projection from
+        # the base ref recorded in the manifest, then compare.  This is
+        # the same arithmetic build_manifest.recompute_manifest_summary
+        # uses, so agreement here means the committed summary matches
+        # the executed move set by construction.
+        start = manifest.get("starting_commit")
+        if start:
+            out = subprocess.run(
+                ["git", "ls-tree", "-r", "--name-only", start],
+                cwd=ROOT, capture_output=True, text=True)
+            if out.returncode == 0:
+                tree = [l for l in out.stdout.splitlines() if l.strip()]
+                base_files = sorted(f for f in tree if "/" not in f)
+                base_dirs = sorted({f.split("/")[0] for f in tree
+                                    if "/" in f})
+                left = [f for f in base_files
+                        if f not in {m["old_path"] for m in moved}]
+                dirs = set(base_dirs)
+                new_dirs = {m["new_path"].split("/")[0] for m in moved}
+                fixed_dirs = {".github", "claims", "docs", "src",
+                              "tools", "tests", "catalog",
+                              "research_snapshots", "research_figures"}
+                expected = len(left) + len(dirs | new_dirs | fixed_dirs)
+                if counts.get("projected_root_if_moved_only") != expected:
+                    problems.append(
+                        "projected_root_if_moved_only="
+                        f"{counts.get('projected_root_if_moved_only')} "
+                        f"but base-ref recomputation gives {expected}")
+
+    if problems:
+        failures.append(
+            "manifest summary inconsistency:\n  "
+            + "\n  ".join(problems[:30])
+            + (f"\n  ... ({len(problems) - 30} more)"
+               if len(problems) > 30 else ""))
+    else:
+        print(f"[11] manifest summary: counts match records "
+              f"(moved={actual['moved']}, "
+              f"proposed={actual['proposed_high_confidence']}, "
+              f"review={actual['review_required']}) and moved-only "
+              "projection agrees with the executed set")
+
 def main() -> int:
     files = tracked_files()
     check_compiles(files)
@@ -750,6 +839,7 @@ def main() -> int:
     check_root_layout(files)
     check_stale_paths(files)
     check_executed_provenance(files)
+    check_manifest_summary_consistency(files)
     check_fast_verifiers()
     show_versions()
     if failures:

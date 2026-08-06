@@ -21,39 +21,39 @@ certified orbits.  The certified lower bound is therefore eight
 component orbits: seven fivefolds and one sixfold.
 
 The embedded-`P_3` suspension in
-[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](P4_EMBEDDED_P3_PURE_COMPONENT.md)
+[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](../../../../P4_EMBEDDED_P3_PURE_COMPONENT.md)
 later raised the repository-wide lower bound to nine.  The two-rank-two-spoke
 mixed star in
-[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md)
+[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](../../../../P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md)
 has since raised it to ten.  Nothing in this theorem depends on those later
 components.
 
 The component construction alone was not a classification.  The subsequent
 reverse theorem
-[`P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md`](P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md)
+[`P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md`](../../../../P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md)
 now proves that its closure exhausts the full affine Borel chart, including
 the exceptional `P^1` fibers where the original cross-product coordinates
 vanish.  The homogeneous incidence theorem
-[`P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md`](P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md)
+[`P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md`](../../../../P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md)
 closes the complementary projective leaf chart as well.  Thus this entire
 orientation/support stratum is classified.
 A subsequent exact function-field
 theorem excludes the generic marked `H31` fibre:
-[`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 Its generic weighted `H22` incidence is now excluded as well:
-[`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 The equal- and opposite-weight slope fibres are excluded by the
 stronger binary theorem
-[`P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md`](claims/p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md).
+[`P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md`](../../../p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md).
 Twelve generic parameter/coordinate branches and the principal coupled
 slope-parameter divisor are excluded in
-[`P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md`](claims/p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md)
+[`P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md`](../../../p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md)
 and
-[`P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md`](claims/p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md).
+[`P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md`](../../../p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md).
 The component's boundaries, component exhaustiveness, and the global
 prize problem remain open.  The earlier finite-field structure and
 timed-out broad route remain as provenance in
-[`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md).
+[`P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md`](../../../p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md).
 
 ## Squarefree support geometry
 
@@ -291,7 +291,7 @@ The surviving exact target is to combine this complete stratum with the
 remaining rank-one/rank-two graph orientations and decide
 all-pair-ranks-at-least-three component exhaustiveness.  The entire
 lower-pair locus is classified separately in
-[`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
+[`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](../../../../P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
 
 The global prize conjecture remains unresolved.
 

@@ -11,7 +11,7 @@ with support pattern
 ```
 
 as in
-[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
+[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](claims/p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
 On the full affine Borel chart where the first moving kernel row has nonzero
 coefficient in the direction opposite `X_0+X_1`, every such tuple lies in
 the closure of component eight.  This includes the rank-one fibers where

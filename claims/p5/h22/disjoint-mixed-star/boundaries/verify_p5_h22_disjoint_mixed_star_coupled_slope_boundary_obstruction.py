@@ -16,10 +16,16 @@ for _p in Path(__file__).resolve().parents:
 from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__, also=[".."])
+# The disjoint-mixed-star P4 component package moved in Stage 3; expose
+# its directory so the bare-name import below resolves.
+sys.path.insert(
+    0, str(REPO_ROOT / "claims" / "p4" / "components"
+           / "disjoint-mixed-star"))
 
 import sympy as sp
 
-from verify_p4_disjoint_mixed_star_pure_component import family
+from verify_p4_disjoint_mixed_star_pure_component import (  # noqa: E402
+    family)
 from verify_p5_h22_disjoint_mixed_star_component_generic_obstruction import (
     build_model,
     markers,

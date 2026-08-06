@@ -18,7 +18,7 @@ checkpoint:
 This closes the dense five-prime determinantal chart, not the complete
 pure-compression locus.  A disjoint-support mixed star outside this
 chart has since produced an eighth component in
-[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
+[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](claims/p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
 Degenerate normalizations, other exceptional graphs, and lower-rank
 boundary charts remain.
 

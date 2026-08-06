@@ -21,7 +21,7 @@ four-cycle of edges `{01},{02},{13},{23}` — a relation
 quadrilateral, the pattern complementary to the ninth component's
 all-rank-one triangle.  Together with the companion split-pair
 fivefold
-([`P4_SPLIT_PAIR_PURE_COMPONENT.md`](P4_SPLIT_PAIR_PURE_COMPONENT.md),
+([`P4_SPLIT_PAIR_PURE_COMPONENT.md`](claims/p4/components/split-pair/P4_SPLIT_PAIR_PURE_COMPONENT.md),
 found in the same sweep), the certified census lower bound is
 thirteen component orbits: ten fivefolds and three sixfolds.
 

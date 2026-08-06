@@ -14,7 +14,7 @@ are both **split** across the coordinate splitting
 of `span(X_0,X_1)` and a line of `Pi=span(X_2,X_3)` — with the same
 `span(X_0,X_1)`-line and `B`-conjugate `Pi`-lines.  Together with
 the companion single-word quadrilateral fivefold
-([`P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md`](P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md),
+([`P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md`](../../../../P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md),
 found in the same sweep), the certified census lower bound is
 thirteen component orbits: ten fivefolds and three sixfolds.
 
@@ -39,7 +39,7 @@ dimension zero at the sample, so the Krull height bound pins the
 local dimension to exactly five.
 
 The component was located in the case-Z rank-two branch sweep of
-[`research_snapshots/2026-08-04-p4-exhaustiveness-sweep-census-thirteen/`](research_snapshots/2026-08-04-p4-exhaustiveness-sweep-census-thirteen/README.md)
+[`research_snapshots/2026-08-04-p4-exhaustiveness-sweep-census-thirteen/`](../../../../research_snapshots/2026-08-04-p4-exhaustiveness-sweep-census-thirteen/README.md)
 (scripts `s03`, `s04`, `s06`, `s07`).  The calibrated `24 x 24`
 semicontinuity sieve against the eleven previously certified
 components leaves only the diagonal-quadric fivefold as a candidate
@@ -367,9 +367,9 @@ these walls is classified.
 Run:
 
 ```text
-python verify_p4_split_pair_pure_component.py
+python claims/p4/components/split-pair/verify_p4_split_pair_pure_component.py
 
-python audit_p4_split_pair_pure_component.py
+python claims/p4/components/split-pair/audit_p4_split_pair_pure_component.py
 ```
 
 The primary verifier proves the identical three-word structure (4)

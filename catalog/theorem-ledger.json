@@ -56,7 +56,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "cc62bc61954192b4",
+      "document_sha256_16": "9c9197f1524a6e71",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -71,7 +71,7 @@
     {
       "name": "Frontier reduction: any P5->Delta3 restriction forces an H31 or H22 local family",
       "document": "P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md",
-      "document_sha256_16": "8f9e4f7b20d38cfb",
+      "document_sha256_16": "fcaf90b5c839af0e",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact reductions over C",
@@ -539,7 +539,7 @@
     {
       "name": "Generic marked H31 fibre empty: disjoint mixed star",
       "document": "P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "afd00411760c22fd",
+      "document_sha256_16": "7ee374b474b1889b",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -634,7 +634,7 @@
     {
       "name": "Generic marked H31 fibre empty: equal support sixfold",
       "document": "P5_H31_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "60696c973c7e2ffe",
+      "document_sha256_16": "7414cbc1e31b1462",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -905,7 +905,7 @@
     {
       "name": "Generic weighted H22 fibre empty: diagonal quadric",
       "document": "P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "bd21d0aa595a4cd4",
+      "document_sha256_16": "f30f9826f2b12a6a",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -945,7 +945,7 @@
     {
       "name": "Generic weighted H22 fibre empty: disjoint mixed star",
       "document": "claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "15d18411e5a76079",
+      "document_sha256_16": "284bbec609743a09",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1053,7 +1053,7 @@
     {
       "name": "Generic weighted H22 fibre empty: equal support sixfold",
       "document": "P5_H22_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "5841fee10eca3ff9",
+      "document_sha256_16": "3490146a38a886b1",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1274,7 +1274,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "cc62bc61954192b4",
+      "document_sha256_16": "9c9197f1524a6e71",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -1312,7 +1312,7 @@
     {
       "name": "Eighth-component weighted H22 closure - canonical determinantal proof",
       "document": "claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "15d18411e5a76079",
+      "document_sha256_16": "284bbec609743a09",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1337,7 +1337,7 @@
     {
       "name": "Eighth-component weighted H22 closure - alternate t-free elimination proof",
       "document": "claims/p5/h22/disjoint-mixed-star/alternate/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md",
-      "document_sha256_16": "6d10179002d9791e",
+      "document_sha256_16": "4263b8cb71f7a82f",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1403,7 +1403,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "cc62bc61954192b4",
+      "document_sha256_16": "9c9197f1524a6e71",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1568,7 +1568,7 @@
     {
       "name": "Weighted H22 disjoint mixed-star working note",
       "document": "claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md",
-      "document_sha256_16": "7b9f869c3f6826be",
+      "document_sha256_16": "25a6d03e106a1ee6",
       "status": "superseded",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],

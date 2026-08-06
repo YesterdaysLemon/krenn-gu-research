@@ -1,0 +1,54 @@
+{
+  "batch_id": "p4-components-stage3",
+  "approved_by": "YesterdaysLemon (repository owner), Stage 3 P4 component migration instruction",
+  "approved_at": "2026-08-06",
+  "base_sha": "7fb12b2fc5933ac313f3451dc72855fc394e6f93",
+  "manifest_sha256": "5eb8afc79ec44d183183f13419971a0bc4f02de74674e0c2ad8bdd69dce6c823",
+  "mapping_sha256": "17058a8819de3bcf051b81ba441249415493053c546f9a441d604941fa0fa327",
+  "member_count": 9,
+  "moves": [
+    {
+      "old_path": "P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md",
+      "new_path": "claims/p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md"
+    },
+    {
+      "old_path": "P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md",
+      "new_path": "claims/p4/components/equal-support-sixfold/P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md"
+    },
+    {
+      "old_path": "P4_SPLIT_PAIR_PURE_COMPONENT.md",
+      "new_path": "claims/p4/components/split-pair/P4_SPLIT_PAIR_PURE_COMPONENT.md"
+    },
+    {
+      "old_path": "audit_p4_disjoint_mixed_star_pure_component.py",
+      "new_path": "claims/p4/components/disjoint-mixed-star/audit_p4_disjoint_mixed_star_pure_component.py"
+    },
+    {
+      "old_path": "audit_p4_equal_support_sixfold_pure_component.py",
+      "new_path": "claims/p4/components/equal-support-sixfold/audit_p4_equal_support_sixfold_pure_component.py"
+    },
+    {
+      "old_path": "audit_p4_split_pair_pure_component.py",
+      "new_path": "claims/p4/components/split-pair/audit_p4_split_pair_pure_component.py"
+    },
+    {
+      "old_path": "verify_p4_disjoint_mixed_star_pure_component.py",
+      "new_path": "claims/p4/components/disjoint-mixed-star/verify_p4_disjoint_mixed_star_pure_component.py"
+    },
+    {
+      "old_path": "verify_p4_equal_support_sixfold_pure_component.py",
+      "new_path": "claims/p4/components/equal-support-sixfold/verify_p4_equal_support_sixfold_pure_component.py"
+    },
+    {
+      "old_path": "verify_p4_split_pair_pure_component.py",
+      "new_path": "claims/p4/components/split-pair/verify_p4_split_pair_pure_component.py"
+    }
+  ],
+  "rationale": "First real mathematical claim-family migration. Three complete P4 pure-component theorem packages (theorem doc + primary verifier + independent audit each) move into claims/p4/components/<component>/. Selection favoured packages with clearly matched triples, high-confidence ownership, no ambiguous shared scripts, and replayable proofs. P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT is deferred to Stage 4 because its verifier both imports a moving package and is imported by two root P5 verifiers (ambiguous cross-package Python dependency). This instruction approves only this exact mapping; it does not approve later P4 batches.",
+  "notes": "Packages: disjoint-mixed-star, split-pair, equal-support-sixfold. Shared dependency verify_p4_mixed_orientation_pure_component stays at root. No theorem prose altered; relocation only.",
+  "packages": [
+    "disjoint-mixed-star",
+    "split-pair",
+    "equal-support-sixfold"
+  ]
+}

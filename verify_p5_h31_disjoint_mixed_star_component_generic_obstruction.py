@@ -11,8 +11,15 @@ from pathlib import Path
 
 import sympy as sp
 
+import sys
+
 from p5_high_coordinate_tree_chart_cegar import singular_command_with_timeout
-from verify_p4_disjoint_mixed_star_pure_component import family, relation
+
+sys.path.insert(
+    0, str(Path(__file__).resolve().parent
+           / "claims" / "p4" / "components" / "disjoint-mixed-star"))
+from verify_p4_disjoint_mixed_star_pure_component import (  # noqa: E402
+    family, relation)
 from verify_p5_h31_marked_basis_open_branch import (
     marked_extension,
     mixed_matrix,
@@ -24,8 +31,12 @@ THEOREM = (
     ROOT
     / "P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
-COMPONENT = ROOT / "P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md"
-COMPONENT_PRIMARY = ROOT / "verify_p4_disjoint_mixed_star_pure_component.py"
+COMPONENT = (
+    ROOT / "claims" / "p4" / "components" / "disjoint-mixed-star"
+    / "P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md")
+COMPONENT_PRIMARY = (
+    ROOT / "claims" / "p4" / "components" / "disjoint-mixed-star"
+    / "verify_p4_disjoint_mixed_star_pure_component.py")
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
 MARKED_ROWS = (0, 1, 3, 7)
