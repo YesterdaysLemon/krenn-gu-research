@@ -13,21 +13,14 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import sys
-HERE = Path(__file__).resolve().parent
 
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
-def _repo_root() -> Path:
-    for candidate in (HERE, *HERE.parents):
-        if (candidate / ".git").exists():
-            return candidate
-    return HERE
-
-
-REPO_ROOT = _repo_root()
-if str(REPO_ROOT) not in sys.path:
-    sys.path.insert(0, str(REPO_ROOT))
-if str(HERE.parent) not in sys.path:
-    sys.path.insert(0, str(HERE.parent))
+REPO_ROOT, HERE = bootstrap(__file__, also=[".."])
 
 import audit_p5_h31_disjoint_mixed_star_component_generic_obstruction as A
 import explore_p5_h22_disjoint_mixed_star_modular as E

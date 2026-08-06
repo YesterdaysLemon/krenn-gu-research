@@ -11,15 +11,16 @@ import itertools
 import sys
 from pathlib import Path
 
-def _repo_root():
-    for candidate in Path(__file__).resolve().parents:
-        if (candidate / ".git").exists():
-            return candidate
-    return Path(__file__).resolve().parent
+import sys
 
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
-_REPO_ROOT = _repo_root()
-sys.path.insert(0, str(_REPO_ROOT))
+REPO_ROOT, HERE = bootstrap(__file__)
+sys.path.insert(0, str(REPO_ROOT))
 
 import audit_p5_h31_disjoint_mixed_star_component_generic_obstruction as A
 from audit_p5_h31_marked_basis_open_branch import rank_mod

@@ -29,15 +29,16 @@ import sys
 import time
 from pathlib import Path
 
-def _repo_root():
-    for candidate in Path(__file__).resolve().parents:
-        if (candidate / ".git").exists():
-            return candidate
-    return Path(__file__).resolve().parent
+import sys
 
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
-_REPO_ROOT = _repo_root()
-sys.path.insert(0, str(_REPO_ROOT / "research_snapshots" / "2026-08-04-p5-h22-slope-divisor-closures" / "scripts"))
+REPO_ROOT, HERE = bootstrap(__file__)
+sys.path.insert(0, str(REPO_ROOT / "research_snapshots" / "2026-08-04-p5-h22-slope-divisor-closures" / "scripts"))
 
 import sympy as sp
 
@@ -51,7 +52,7 @@ from slope_common import (
     sing,
 )
 
-OUT = _REPO_ROOT / "research_snapshots" / "2026-08-04-p5-h22-slope-divisor-closures"
+OUT = REPO_ROOT / "research_snapshots" / "2026-08-04-p5-h22-slope-divisor-closures"
 TIMEOUT = 550
 
 
