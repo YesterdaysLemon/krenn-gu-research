@@ -4741,7 +4741,7 @@ the essential remaining case.
 - [`MERGE_AUDIT_REPORT.md`](MERGE_AUDIT_REPORT.md)
 - [`STABILIZATION_AUDIT_REPORT.md`](STABILIZATION_AUDIT_REPORT.md)
 - [`CURRENT_FRONTIER.md`](CURRENT_FRONTIER.md)
-- [`THEOREM_LEDGER.json`](THEOREM_LEDGER.json)
+- [`THEOREM_LEDGER.json`](catalog/theorem-ledger.json)
 
 Merge provenance: this index was reconciled after merge `72780ac`
 folded the former `main` line (components 9--16, obligation ledger,

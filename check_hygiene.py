@@ -13,7 +13,7 @@ Checks:
   2. no generated solver artifact class is tracked (.sing/.ms/.out/
      .stdout/.drat/.cnf/.log and the brute-force JSON dump patterns);
   3. local Markdown links resolve (files and directories);
-  4. THEOREM_LEDGER.json integrity: documents exist, every non-null
+  4. catalog/theorem-ledger.json integrity: documents exist, every
      document_sha256_16 is recomputed and matched, mapped verifier/
      audit scripts are tracked, verified entries carry provenance that
      explains any null field, and the component_census summary matches
@@ -31,6 +31,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import pathlib
 import py_compile
 import re
@@ -212,9 +213,9 @@ def _blob_sha16(rel: str) -> str:
 
 
 def check_ledger(files: list[str]) -> None:
-    ledger_path = ROOT / "THEOREM_LEDGER.json"
+    ledger_path = ROOT / "catalog" / "theorem-ledger.json"
     if not ledger_path.exists():
-        failures.append("THEOREM_LEDGER.json missing")
+        failures.append("catalog/theorem-ledger.json missing")
         return
     ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
     by_base = {}
@@ -406,6 +407,61 @@ def show_versions() -> None:
         print(f"    {tool}: {found or 'not on PATH (manual replays only)'}")
 
 
+# Root-layout enforcement (warning-only during the migration; set
+# KG_LAYOUT_STRICT=1 to fail, e.g. once bulk migration is complete).
+ALLOWED_ROOT_FILES = {
+    "README.md", "LICENSE", "CONTRIBUTING.md", "CITATION.cff",
+    "pyproject.toml", "requirements.txt", "requirements.lock.txt",
+    "Containerfile", ".gitignore",
+}
+ALLOWED_ROOT_DIRS = {
+    ".github", "claims", "docs", "src", "tools", "tests", "catalog",
+    "research_snapshots", "research_figures",
+}
+ROOT_COUNT_TARGET = 30
+FORBIDDEN_ROOT_PATTERNS = (
+    re.compile(r"^P[4-7]_.*\.md$"),
+    re.compile(r"^ARBITRARY_.*\.md$"),
+    re.compile(r"^(verify|audit|explore|certify|package|generate|"
+               r"probe|derive|check|close|retry|extract)_"
+               r"[a-z0-9_]*\.py$"),
+)
+
+
+def check_root_layout(files: list[str]) -> None:
+    root_files = sorted(f for f in files if "/" not in f)
+    root_dirs = sorted({f.split("/")[0] for f in files if "/" in f})
+    violations = []
+    for f in root_files:
+        if f in ALLOWED_ROOT_FILES:
+            continue
+        for pat in FORBIDDEN_ROOT_PATTERNS:
+            if pat.match(f):
+                violations.append(f)
+                break
+    entries = len(root_files) + len(root_dirs)
+    strict = os.environ.get("KG_LAYOUT_STRICT") == "1"
+    problems = []
+    if entries > ROOT_COUNT_TARGET:
+        problems.append(
+            f"{entries} root entries exceed the target of "
+            f"{ROOT_COUNT_TARGET} (migration in progress)")
+    if violations:
+        problems.append(
+            f"{len(violations)} root files match forbidden patterns, "
+            f"e.g. {violations[:3]}")
+    if problems:
+        label = "HYGIENE FAILURES" if strict else "LAYOUT WARNINGS"
+        print(f"[8] root layout ({'strict' if strict else 'warning-only'}):")
+        for p in problems:
+            print(f"    {p}")
+        if strict:
+            failures.extend(f"root layout: {p}" for p in problems)
+    else:
+        print(f"[8] root layout: {entries} entries, no forbidden "
+              "patterns")
+
+
 def main() -> int:
     files = tracked_files()
     check_compiles(files)
@@ -413,6 +469,7 @@ def main() -> int:
     check_markdown_links(files)
     check_ledger(files)
     check_portability(files)
+    check_root_layout(files)
     check_fast_verifiers()
     show_versions()
     if failures:

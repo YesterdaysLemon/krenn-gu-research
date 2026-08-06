@@ -48,7 +48,7 @@ decisive bottlenecks; and a candid replay audit.
 
 ### 4. Machine-readable ledger (priority 4)
 
-[`THEOREM_LEDGER.json`](THEOREM_LEDGER.json) — 85 entries with name,
+[`THEOREM_LEDGER.json`](catalog/theorem-ledger.json) — 85 entries with name,
 status, assumptions/excluded divisors, dependencies, primary verifier,
 independent audit, expected runtime, external binaries, and
 drift-detection SHA-256 prefixes.  Status vocabulary is documented in
