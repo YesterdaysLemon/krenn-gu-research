@@ -51,5 +51,8 @@ jobs:
       - name: Run hygiene checks
         run: python check_hygiene.py
 
+      - name: Run migration-tool tests
+        run: python -m unittest -v tests.test_migration_tools
+
       - name: Run the self-contained test module
         run: python -m unittest -v test_fourteen_vertex_cycle_cover_lattice.py

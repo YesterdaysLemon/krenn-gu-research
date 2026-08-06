@@ -4,194 +4,243 @@
 Phase 4 machinery.  After execute_moves.py has performed pure git-mv
 operations, every reference to a moved file must be re-anchored:
 
-  1. Markdown links: resolved against the SOURCE file's location at
-     the time the link was written (its old location if the source was
-     also moved), mapped through catalog/moved-paths.json, and
-     re-expressed relative to the source's NEW location.  URL fragments
-     are preserved; external URLs are untouched; ambiguous or
-     nonexistent targets are reported, never guessed.
+  1. Markdown links (inline ``[text](target)`` and reference-style
+     ``[text]: target`` definitions, including image links): resolved
+     against the SOURCE file's location at the time the link was
+     written (its old location if the source was also moved), the
+     resolved path is NORMALIZED before the manifest lookup, mapped
+     through catalog/moved-paths.json, and re-expressed relative to
+     the source's NEW location.  URL fragments are preserved; external
+     URLs are untouched; ambiguous or nonexistent targets are reported,
+     never guessed.
   2. Fenced replay commands: lines of the form
      ``python <script>.py [args]`` inside ```text/```bash blocks are
      rewritten to the script's new root-relative path when the script
-     was moved.  Other code-block content is untouched.
+     was moved and its basename is unambiguous.  Other code-block
+     content is untouched.
   3. Theorem ledger: entries whose document, primary_verifier, or
      independent_audit was moved get updated paths, a claim_package
      field, a legacy_paths list, and recomputed committed-blob hashes.
 
 Nothing here changes theorem wording; only path expressions move.
+
+Functions take an explicit *root* so the test suite can exercise them
+against a synthetic fixture tree without touching the real repository.
 """
 
 from __future__ import annotations
 
+import hashlib
 import json
 import pathlib
 import re
 import subprocess
 import sys
 
-ROOT = pathlib.Path(__file__).resolve().parents[2]
-CATALOG = ROOT / "catalog"
-
 MD_LINK = re.compile(r"(\]\()([^)\s]+)(\))")
+REF_LINK = re.compile(r"^(\s*\[[^\]]+\]:\s*)(\S+)(\s*)$", re.M)
 REPLAY_LINE = re.compile(r"^(\s*(?:python3?|wsl[^\n]*python3?)\s+)"
                          r"([A-Za-z0-9_]+\.py)(\s.*)?$")
 FENCE = re.compile(r"^```")
 
 
-def load_move_map() -> tuple[dict, dict]:
+def normalize_rel(base_dir: str, target: str) -> str | None:
+    """Resolve *target* against *base_dir* and normalize textually.
+
+    Returns the normalized repo-relative path, or None when the target
+    escapes the repository root (too many '..') or normalizes to
+    nothing.  This is the ONLY path used for manifest lookups and for
+    re-expression — never the raw join.
+    """
+    parts = [] if base_dir in ("", ".") else base_dir.split("/")
+    for part in target.split("/"):
+        if part in ("", "."):
+            continue
+        if part == "..":
+            if not parts:
+                return None
+            parts.pop()
+        else:
+            parts.append(part)
+    return "/".join(parts) if parts else None
+
+
+def relative_to(src_dir: str, dst_path: str) -> str:
+    """Express *dst_path* (repo-relative) from *src_dir*."""
+    src_parts = [] if src_dir in ("", ".") else src_dir.split("/")
+    dst_parts = dst_path.split("/")
+    common = 0
+    for a, b in zip(src_parts, dst_parts):
+        if a == b:
+            common += 1
+        else:
+            break
+    ups = [".."] * (len(src_parts) - common)
+    rest = dst_parts[common:]
+    if not ups:
+        return "/".join(rest) if rest else dst_parts[-1]
+    if not rest:
+        return "/".join(ups)
+    return "/".join(ups + rest)
+
+
+def load_move_map(root: pathlib.Path) -> dict:
     manifest = json.loads(
-        (CATALOG / "moved-paths.json").read_text(encoding="utf-8"))
-    old_to_new = {m["old_path"]: m["new_path"]
-                  for m in manifest["moves"] if m["status"] == "moved"}
-    return old_to_new, manifest
+        (root / "catalog" / "moved-paths.json").read_text(
+            encoding="utf-8"))
+    return {m["old_path"]: m["new_path"]
+            for m in manifest["moves"] if m["status"] == "moved"}
 
 
-def blob_sha16(rel: str) -> str:
-    import hashlib
-    proc = subprocess.run(
-        ["git", "show", f":{rel}"], cwd=ROOT, capture_output=True)
-    if proc.returncode != 0:
-        raise ValueError(f"not a tracked blob: {rel}")
-    return hashlib.sha256(proc.stdout).hexdigest()[:16]
+def _resolves_at(root, base_dir, bare):
+    """True when *bare* resolves to an existing path from base_dir."""
+    norm = normalize_rel(base_dir, bare)
+    if norm is None:
+        return False
+    return (root / norm).exists()
 
 
-def rewrite_markdown(old_to_new: dict, sources: list[str]) -> dict:
+def _remap_target(target: str, old_to_new: dict, written_from: str,
+                  now_from: str, moved_source: bool,
+                  counter: dict, root) -> str | None:
+    """Map a link target to its new expression, or None to leave it.
+
+    Idempotency guard: a target that ALREADY resolves from the source's
+    current location is left untouched, so re-running the rewriter never
+    re-anchors an already-correct relative link.
+    """
+    if target.startswith(("http://", "https://", "mailto:", "#")):
+        return None
+    frag = ""
+    bare = target
+    if "#" in target:
+        bare, frag = target.split("#", 1)
+        frag = "#" + frag
+    bare = bare.strip()
+    if not bare or "," in bare:
+        return None
+    if "/" not in bare and "." not in bare:
+        return None
+    if bare.startswith("tmp/"):
+        return None
+    # Idempotency: already-correct at the current location -> untouched.
+    if _resolves_at(root, now_from, bare):
+        return None
+    norm = normalize_rel(written_from, bare)
+    if norm is None:
+        return None
+    new_abs = old_to_new.get(norm)
+    if new_abs is None:
+        if not moved_source:
+            return None
+        # Moved source, target not in the move map: re-anchor only if
+        # the target actually exists at the source's pre-move location.
+        if written_from == now_from:
+            return None
+        if not _resolves_at(root, written_from, bare):
+            return None
+        new_abs = norm
+    counter["n"] += 1
+    return relative_to(now_from, new_abs) + frag
+
+
+def rewrite_markdown(old_to_new: dict, sources: list[str],
+                     root: pathlib.Path) -> dict:
     """Rewrite local links in every markdown file.  Returns stats."""
     stats = {"links_rewritten": 0, "replay_rewritten": 0,
              "files_touched": 0, "ambiguous": []}
+    base_to_olds = {}
+    for o in old_to_new:
+        base_to_olds.setdefault(
+            pathlib.PurePosixPath(o).name, []).append(o)
+
     for rel in sources:
         if not rel.endswith(".md"):
             continue
-        path = ROOT / rel
+        path = root / rel
         if not path.exists():
             continue
-        # Where the file's links were written relative to.
         old_rel = None
         for o, n in old_to_new.items():
             if n == rel:
                 old_rel = o
                 break
-        written_from = pathlib.PurePosixPath(
-            old_rel if old_rel else rel).parent
-        now_from = pathlib.PurePosixPath(rel).parent
+        written_from = str(pathlib.PurePosixPath(
+            old_rel if old_rel else rel).parent)
+        if written_from == ".":
+            written_from = ""
+        now_from = str(pathlib.PurePosixPath(rel).parent)
+        if now_from == ".":
+            now_from = ""
         moved_source = old_rel is not None
 
         text = path.read_text(encoding="utf-8")
-        changed = 0
+        counter = {"n": 0}
         replay_changed = 0
 
-        def link_sub(m):
-            nonlocal changed
-            target = m.group(2)
-            if target.startswith(("http://", "https://", "mailto:",
-                                  "#")):
+        def inline_sub(m):
+            new = _remap_target(m.group(2), old_to_new, written_from,
+                                now_from, moved_source, counter, root)
+            if new is None:
                 return m.group(0)
-            frag = ""
-            bare = target
-            if "#" in target:
-                bare, frag = target.split("#", 1)
-                frag = "#" + frag
-            bare = bare.strip()
-            if not bare or "," in bare:
-                return m.group(0)
-            if "/" not in bare and "." not in bare:
-                return m.group(0)
-            if bare.startswith("tmp/"):
-                return m.group(0)
-            # Resolve where the link pointed, relative to where the
-            # links were written.
-            resolved = (written_from / bare)
-            resolved_str = str(pathlib.PurePosixPath(resolved))
-            # Normalize ./ and collapse .. segments textually.
-            parts = []
-            for part in resolved_str.split("/"):
-                if part in ("", "."):
-                    continue
-                if part == "..":
-                    if parts:
-                        parts.pop()
-                    else:
-                        return m.group(0)  # escapes repo; leave alone
-                else:
-                    parts.append(part)
-            new_target_abs = old_to_new.get(resolved_str)
-            if new_target_abs is None and not moved_source:
-                # target not moved, source not moved: link stays as is
-                return m.group(0)
-            new_abs = new_target_abs if new_target_abs is not None \
-                else resolved_str
-            # Re-express from the source's current location.
-            try:
-                new_rel = str(pathlib.PurePosixPath(
-                    pathlib.PurePosixPath("/" + new_abs).relative_to(
-                        pathlib.PurePosixPath("/") / now_from
-                        if str(now_from) != "." else
-                        pathlib.PurePosixPath("/"))))
-            except ValueError:
-                # compute relative manually
-                src_parts = ([] if str(now_from) == "."
-                             else str(now_from).split("/"))
-                dst_parts = new_abs.split("/")
-                common = 0
-                for a, b in zip(src_parts, dst_parts):
-                    if a == b:
-                        common += 1
-                    else:
-                        break
-                ups = [".."] * (len(src_parts) - common)
-                rest = dst_parts[common:]
-                if not ups and not rest:
-                    new_rel = dst_parts[-1]
-                elif not ups:
-                    new_rel = "/".join(rest)
-                else:
-                    new_rel = "/".join(ups + rest)
-            changed += 1
-            return m.group(1) + new_rel + frag + m.group(3)
+            return m.group(1) + new + m.group(3)
 
-        new_text = MD_LINK.sub(link_sub, text)
+        def refdef_sub(m):
+            new = _remap_target(m.group(2), old_to_new, written_from,
+                                now_from, moved_source, counter, root)
+            if new is None:
+                return m.group(0)
+            return m.group(1) + new + m.group(3)
 
-        # Fenced replay-command lines.
+        new_text = MD_LINK.sub(inline_sub, text)
+        new_text = REF_LINK.sub(refdef_sub, new_text)
+
         out_lines = []
         in_fence = False
-        for line in new_text.splitlines(keepends=False):
+        for line in new_text.splitlines():
             if FENCE.match(line):
                 in_fence = not in_fence
                 out_lines.append(line)
                 continue
             if in_fence:
                 m = REPLAY_LINE.match(line)
-                if m and m.group(2) in {
-                        pathlib.PurePosixPath(o).name
-                        for o in old_to_new}:
-                    # find the old path with this basename
+                if m:
                     base = m.group(2)
-                    olds = [o for o in old_to_new
-                            if pathlib.PurePosixPath(o).name == base]
+                    olds = base_to_olds.get(base, [])
                     if len(olds) == 1:
                         new = old_to_new[olds[0]]
                         out_lines.append(m.group(1) + new
                                          + (m.group(3) or ""))
                         replay_changed += 1
                         continue
-                    stats["ambiguous"].append(
-                        f"{rel}: replay command basename {base} "
-                        f"matches {len(olds)} moves")
+                    if len(olds) > 1:
+                        stats["ambiguous"].append(
+                            f"{rel}: replay command basename {base} "
+                            f"matches {len(olds)} moves")
             out_lines.append(line)
         final = "\n".join(out_lines)
         if text.endswith("\n"):
             final += "\n"
 
-        if changed or replay_changed:
+        if counter["n"] or replay_changed:
             path.write_text(final, encoding="utf-8")
             stats["files_touched"] += 1
-            stats["links_rewritten"] += changed
+            stats["links_rewritten"] += counter["n"]
             stats["replay_rewritten"] += replay_changed
     return stats
 
 
-def update_ledger(old_to_new: dict) -> dict:
-    ledger_path = CATALOG / "theorem-ledger.json"
+def blob_sha16(root: pathlib.Path, rel: str) -> str:
+    proc = subprocess.run(
+        ["git", "show", f":{rel}"], cwd=root, capture_output=True)
+    if proc.returncode != 0:
+        raise ValueError(f"not a tracked blob: {rel}")
+    return hashlib.sha256(proc.stdout).hexdigest()[:16]
+
+
+def update_ledger(old_to_new: dict, root: pathlib.Path,
+                  rehash: bool = True) -> dict:
+    ledger_path = root / "catalog" / "theorem-ledger.json"
     ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
     moved_entries = 0
     for e in ledger["entries"]:
@@ -207,20 +256,19 @@ def update_ledger(old_to_new: dict) -> dict:
                 touched = True
         if touched:
             doc = e["document"].split(" (")[0]
-            # claim package = deepest package dir for claim docs
             if doc.startswith("claims/"):
                 e["claim_package"] = str(
                     pathlib.PurePosixPath(doc).parent)
             legacy = e.setdefault("legacy_paths", [])
             for o, n in old_to_new.items():
-                if n == doc and o not in legacy:
+                if n in (doc, e.get("primary_verifier"),
+                         e.get("independent_audit")) and o not in legacy:
                     legacy.append(o)
-                if n == e.get("primary_verifier") and o not in legacy:
-                    legacy.append(o)
-                if n == e.get("independent_audit") and o not in legacy:
-                    legacy.append(o)
-            if pathlib.Path(doc).exists():
-                e["document_sha256_16"] = blob_sha16(doc)
+            if rehash and pathlib.Path(doc).exists():
+                try:
+                    e["document_sha256_16"] = blob_sha16(root, doc)
+                except ValueError:
+                    pass
             moved_entries += 1
     ledger_path.write_text(
         json.dumps(ledger, indent=2, ensure_ascii=False) + "\n",
@@ -229,16 +277,17 @@ def update_ledger(old_to_new: dict) -> dict:
 
 
 def main() -> int:
-    old_to_new, _manifest = load_move_map()
+    root = pathlib.Path(__file__).resolve().parents[2]
+    old_to_new = load_move_map(root)
     if not old_to_new:
         print("no moved entries in manifest")
         return 1
     out = subprocess.run(
-        ["git", "ls-files"], cwd=ROOT, capture_output=True, text=True,
+        ["git", "ls-files"], cwd=root, capture_output=True, text=True,
         check=True)
     sources = [l for l in out.stdout.splitlines() if l.strip()]
-    stats = rewrite_markdown(old_to_new, sources)
-    led = update_ledger(old_to_new)
+    stats = rewrite_markdown(old_to_new, sources, root)
+    led = update_ledger(old_to_new, root)
     print(json.dumps({**stats, **led}, indent=2))
     if stats["ambiguous"]:
         print("\nAMBIGUOUS (not rewritten):")

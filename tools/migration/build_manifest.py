@@ -120,6 +120,32 @@ def status_for(e: dict, is_pilot: bool, already_moved: set[str]) -> str:
     return "review_required"
 
 
+def validate_records(records: list[dict]) -> tuple[list, list, list]:
+    """Post-transformation validation of final destinations.
+
+    Returns (collisions, double_moves, cycles).  Checked on the FINAL
+    new_path values, after every layout transformation.
+    """
+    collisions, double_moves, cycles = [], [], []
+    seen_src, seen_dst = set(), {}
+    for r in records:
+        old, dst = r["old_path"], r["new_path"]
+        if old in seen_src:
+            double_moves.append(old)
+        seen_src.add(old)
+        if dst in seen_dst:
+            collisions.append({"new_path": dst,
+                               "sources": [seen_dst[dst], old]})
+        else:
+            seen_dst[dst] = old
+    for r in records:
+        if (r["new_path"] in seen_src
+                and r["new_path"] != r["old_path"]):
+            cycles.append({"source": r["old_path"],
+                           "destination_is_also_source": r["new_path"]})
+    return collisions, double_moves, cycles
+
+
 def main() -> int:
     cls_path = CATALOG / "layout-classification.json"
     classification = json.loads(cls_path.read_text(encoding="utf-8"))
