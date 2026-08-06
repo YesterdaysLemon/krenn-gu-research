@@ -22,7 +22,7 @@ block permanent survives.  Its proof uses commuting square-zero variables,
 the same Frobenius-algebra language already used throughout this repository.
 
 The transfer is now written and independently replayed in
-[`ROOT_OF_UNITY_BLOCK_PERMANENT_SELECTOR.md`](ROOT_OF_UNITY_BLOCK_PERMANENT_SELECTOR.md).
+[`ROOT_OF_UNITY_BLOCK_PERMANENT_SELECTOR.md`](../ROOT_OF_UNITY_BLOCK_PERMANENT_SELECTOR.md).
 It changes the counterexample-oriented side of the strategy:
 
 - Route E now has a postselection-safe exact matching-sector filter, rather
@@ -34,7 +34,7 @@ It changes the counterexample-oriented side of the strategy:
 
 The four-row seed now has a legal eight-vertex symmetric hafnian lift with
 ordinary fixed herald modes; see
-[`ROOT_OF_UNITY_SELECTOR_SYMMETRIC_HAFNIAN_LIFT.md`](ROOT_OF_UNITY_SELECTOR_SYMMETRIC_HAFNIAN_LIFT.md).
+[`ROOT_OF_UNITY_SELECTOR_SYMMETRIC_HAFNIAN_LIFT.md`](../ROOT_OF_UNITY_SELECTOR_SYMMETRIC_HAFNIAN_LIFT.md).
 This removes bare graph symmetry as an intrinsic obstruction.  It does not
 change the current proof-side priority because composition with the fixed
 Question-2 module and herald removal are still unproved.  In fact the whole
@@ -49,7 +49,7 @@ to control concentrated extension sets, and uses a second to turn the
 remaining exceptional vertices into a cover.
 
 Our first quotient-closed layer is now finite and replayable in
-[`SIX_BLOCKER_ADMISSIBLE_QUOTIENT_CATALOGUE.md`](SIX_BLOCKER_ADMISSIBLE_QUOTIENT_CATALOGUE.md):
+[`SIX_BLOCKER_ADMISSIBLE_QUOTIENT_CATALOGUE.md`](../SIX_BLOCKER_ADMISSIBLE_QUOTIENT_CATALOGUE.md):
 six local first-surplus profiles and `1,791` two-copy blocker-incidence
 quotients, or `10,746` after the six possible root intersection sizes.
 
@@ -58,7 +58,7 @@ root coupling gives one duplicate port-swap constraint; nonzero coupling
 leaves the two endpoint `P_6` pullbacks locally free.  The full graph identity
 then puts them at opposite corners of a rank-one GHZ coefficient hypercube,
 whose mixed corners are four-root/two-port cofactor tensors.  See
-[`SIX_BLOCKER_MAXIMAL_OVERLAP_GHZ_HYPERCUBE.md`](SIX_BLOCKER_MAXIMAL_OVERLAP_GHZ_HYPERCUBE.md).
+[`SIX_BLOCKER_MAXIMAL_OVERLAP_GHZ_HYPERCUBE.md`](../SIX_BLOCKER_MAXIMAL_OVERLAP_GHZ_HYPERCUBE.md).
 At order twelve the quotient and frame geometry is now classified.  The
 rank-one branch is exactly the isotropic conic/rulings, while the rank-zero
 branch would be an open `P1 x P1` diagonal surface.  Two explicit all-nonzero

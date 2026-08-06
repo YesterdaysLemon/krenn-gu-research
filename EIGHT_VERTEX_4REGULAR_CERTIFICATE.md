@@ -21,7 +21,7 @@ is a nonzero monochromatic singleton
 alpha e_c outer(e_c),   alpha != 0.
 ```
 
-The full proof is in `RESEARCH_NOTES.md` under “Degree-four singleton
+The full proof is in `docs/research-notes.md` under “Degree-four singleton
 theorem.”
 
 ## Complete graph classification

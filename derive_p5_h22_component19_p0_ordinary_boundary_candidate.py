@@ -20,7 +20,7 @@ CERTIFICATE = ROOT / "p5_h22_component19_p0_ordinary_boundary_certificate.json"
 INPUTS = tuple(ROOT / name for name in (
     "P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md",
     "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_VERIFICATION.md",
-    "NEXT_INSTANCE_HANDOFF_2026-07-31.md",
+    "docs/NEXT_INSTANCE_HANDOFF_2026-07-31.md",
 ))
 
 WORDS4 = tuple(itertools.product((0, 1), repeat=4))

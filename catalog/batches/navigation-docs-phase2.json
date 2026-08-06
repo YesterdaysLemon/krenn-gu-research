@@ -1,0 +1,45 @@
+{
+  "batch_id": "navigation-docs-phase2",
+  "approved_by": "YesterdaysLemon (repository owner), Phase 2 migration instruction",
+  "approved_at": "2026-08-06",
+  "base_sha": "081c54b1a3446776dcc66e72f62bd8e74f39cc7c",
+  "manifest_sha256": "9eead53142a35c8678a5097a7794c0d74ba1d027d9c56e4ec1baf07ef42ba350",
+  "mapping_sha256": "b981092ec090fca61c7c81d763bb81ab8903a271809a7c85d8291500b58db8a0",
+  "member_count": 8,
+  "moves": [
+    {
+      "old_path": "ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md",
+      "new_path": "docs/ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md"
+    },
+    {
+      "old_path": "CURRENT_FRONTIER.md",
+      "new_path": "docs/current-frontier.md"
+    },
+    {
+      "old_path": "LITERATURE_REVIEW_2026-07-30.md",
+      "new_path": "docs/LITERATURE_REVIEW_2026-07-30.md"
+    },
+    {
+      "old_path": "MERGE_AUDIT_REPORT.md",
+      "new_path": "docs/audits/MERGE_AUDIT_REPORT.md"
+    },
+    {
+      "old_path": "NEXT_INSTANCE_HANDOFF_2026-07-31.md",
+      "new_path": "docs/NEXT_INSTANCE_HANDOFF_2026-07-31.md"
+    },
+    {
+      "old_path": "RESEARCH_NOTES.md",
+      "new_path": "docs/research-notes.md"
+    },
+    {
+      "old_path": "STABILIZATION_AUDIT_REPORT.md",
+      "new_path": "docs/audits/STABILIZATION_AUDIT_REPORT.md"
+    },
+    {
+      "old_path": "SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md",
+      "new_path": "docs/SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md"
+    }
+  ],
+  "rationale": "First real bulk batch: repository navigation / project-status / audit documents with fixed, high-confidence destinations under docs/, docs/audits/. Moves human-facing documents rather than interdependent Python modules; tests root-to-docs link rewriting; low mathematical execution risk. NEXT_INSTANCE_HANDOFF_2026-07-31.md is hashed as an INPUTS member by derive_p5_h22_component19_p0_ordinary_boundary_candidate.py and derive_p5_h22_component19_p0_qphi_one_ordinary_obstruction_candidate.py; their path constants are updated in the reference-rewrite commit. SPARSE_RESULTANT_CORES_ATTACK_PLAN.md and GRASSMANNIAN_PLUECKER_ATTACK_PLAN.md were considered but no longer exist on current main (stale classification entries only), so they are excluded. Approval applies only to this exact mapping; it does not extend to later batches.",
+  "notes": "No executable proof scripts moved; no Singular/SAT/DRAT replays required. No theorem prose altered — relocation only."
+}

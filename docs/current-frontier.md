@@ -4,7 +4,7 @@ Audience: a human mathematician assessing what this repository
 actually proves.  Stabilization pass, 2026-08-05.  Nothing in this
 document is a new claim; every statement cites the document that owns
 it.  The machine-readable companion is
-[`catalog/theorem-ledger.json`](catalog/theorem-ledger.json).
+[`catalog/theorem-ledger.json`](../catalog/theorem-ledger.json).
 
 **The global conjecture is UNRESOLVED.**  For even `n >= 6`,
 `d >= 3`, and complex `d x d` blocks `W_ij`, the matching-sum tensor
@@ -24,7 +24,7 @@ makes `d = 3` the essential case.
 ### 1.1 Complete finite cases (computer-assisted, independently replayed)
 
 - **`n = 6`, all `d >= 3`: no complex solution.**  Map:
-  [`SIX_VERTEX_CERTIFICATE.md`](SIX_VERTEX_CERTIFICATE.md).  Method:
+  [`SIX_VERTEX_CERTIFICATE.md`](../SIX_VERTEX_CERTIFICATE.md).  Method:
   exhaustive support reduction, exact Laurent/algebraic conflict
   extraction, byte-checked selector-CNF compilation, independent SAT
   decision, DRAT replay, SHA-256 hash-chain audit.
@@ -42,7 +42,7 @@ makes `d = 3` the essential case.
   (365/425, 292/328, 67/93 selectors excluded) — each exclusion is a
   certified finite null result, **not** a family theorem.  Maps:
   `FOURTEEN_VERTEX_*` certificates,
-  [`FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md`](FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md).
+  [`FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md`](../FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md).
 
 ### 1.2 Arbitrary-order structural theorems
 
@@ -71,14 +71,14 @@ finite-field or modular audits where stated):
 Every hypothetical restriction `P_5 -> Delta_3` reduces — by a verified
 chain of exact reductions — to a local map of one of two normalized
 families, **H31** or **H22**
-([`P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md`](P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md)).
+([`P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md`](../P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md)).
 The attack then runs through the pure-`P_4` compression components:
 
 - **Census**: twenty-five certified pure-`P_4` component orbits
   (fivefolds and sixfolds), each with an exact family-tangent /
   incidence certificate.  The all-pair-rank-exceptional-graph
   reduction claims these twenty-five closures are exhaustive
-  ([`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md))
+  ([`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](../P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md))
   — see bottleneck 3 for the honest status of that claim.
 - **Generic marked `H31` fibre**: proved empty on **all 25**
   components.  Twenty-four dedicated
@@ -88,7 +88,7 @@ The attack then runs through the pure-`P_4` compression components:
   single exception is the equal-support sixfold, whose claim rests on
   its self-contained primary verifier together with the P4 component
   audit `audit_p4_equal_support_sixfold_pure_component.py` (recorded in
-  [`catalog/theorem-ledger.json`](catalog/theorem-ledger.json) as an explicit
+  [`catalog/theorem-ledger.json`](../catalog/theorem-ledger.json) as an explicit
   `none_exists`, not an unmapped gap).  The twenty-fifth component's
   `H31` closure is carried by the README checkpoint narrative.
 - **Generic weighted `H22` fibre**: proved empty on components
@@ -98,16 +98,16 @@ The attack then runs through the pure-`P_4` compression components:
 - **Partial boundary closures**: equal/opposite-weight slopes,
   parameter-pivot branches, coupled slope divisors, `r = 0` endpoints,
   elliptic-end divisors — see
-  [`P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`](P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md).
+  [`P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`](../P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md).
 - **Two independent proofs** of the eighth component's weighted-`H22`
   closure exist and are both retained: the canonical determinantal
   marking-chart proof and the recovered `t`-free `14 x 8 -> 10 x 4`
   elimination proof
-  ([`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md`](claims/p5/h22/disjoint-mixed-star/alternate/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md)).
+  ([`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md`](../claims/p5/h22/disjoint-mixed-star/alternate/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md)).
   Both proofs are retained.  The alternate proof and audit were replayed
   during this stabilization pass; the canonical proof retains its prior
   status but was not replayed during this pass.  See
-  [`MERGE_AUDIT_REPORT.md`](MERGE_AUDIT_REPORT.md).
+  [`MERGE_AUDIT_REPORT.md`](audits/MERGE_AUDIT_REPORT.md).
 
 ### 1.4 Transfer-track inputs (bounded, no theorem promotion)
 
@@ -123,19 +123,19 @@ construction/gluing strategies; none changes the global status.
 
 | Limitation | Where it lives |
 |---|---|
-| **Generic, not pointwise**: every component closure is over the component function field.  Points where a certificate denominator vanishes (parameter divisors, slope divisors) are excluded, not proved.  The pointwise upgrade requires the extraction pass (below). | [`P5_POINTWISE_SPECIALIZATION_META_THEOREM.md`](P5_POINTWISE_SPECIALIZATION_META_THEOREM.md); extraction scripts in `research_snapshots/2026-08-04-p5-delta3-obligation-ledger/scripts/` |
-| **Boundary-limited**: projective/chart boundaries of the component parametrizations are mostly untouched (24 boundary programmes named in the ledger). | [`P5_DELTA3_OBLIGATION_LEDGER.md`](P5_DELTA3_OBLIGATION_LEDGER.md) II.5/III.2 |
+| **Generic, not pointwise**: every component closure is over the component function field.  Points where a certificate denominator vanishes (parameter divisors, slope divisors) are excluded, not proved.  The pointwise upgrade requires the extraction pass (below). | [`P5_POINTWISE_SPECIALIZATION_META_THEOREM.md`](../P5_POINTWISE_SPECIALIZATION_META_THEOREM.md); extraction scripts in `research_snapshots/2026-08-04-p5-delta3-obligation-ledger/scripts/` |
+| **Boundary-limited**: projective/chart boundaries of the component parametrizations are mostly untouched (24 boundary programmes named in the ledger). | [`P5_DELTA3_OBLIGATION_LEDGER.md`](../P5_DELTA3_OBLIGATION_LEDGER.md) II.5/III.2 |
 | **Component 22's `D23` pencil** is not fully closed generically. | README lines 1176–1227; `P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_*` docs |
 | **Components 19/20 and embedded-`P_3` boundaries**: 23 `*_CANDIDATE.md` documents exist; 9 have matching `*_VERIFICATION.md` docs, 14 do not.  Candidates are discovery-run reports, not theorems, until independently verified. | `P5_H22_COMPONENT19_*`, `COMPONENT20_INTRINSIC_*`, `P5_H22_EMBEDDED_P3_*` |
 | **Order-14 results are finite orbit theorems**, not family theorems; 60/36/26 orbits remain SAT in `C4+C10`/`C6+C8`/`C4+C4+C6`. | `FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md` |
-| **Stale ledger**: the 2026-08-04 obligation ledger was written against the 13-component census; the canonical line has since certified 25.  Its master-theorem schema and obligation structure remain valid; its per-component status tables are superseded where they conflict with the README checkpoint. | [`P5_DELTA3_OBLIGATION_LEDGER.md`](P5_DELTA3_OBLIGATION_LEDGER.md) header |
+| **Stale ledger**: the 2026-08-04 obligation ledger was written against the 13-component census; the canonical line has since certified 25.  Its master-theorem schema and obligation structure remain valid; its per-component status tables are superseded where they conflict with the README checkpoint. | [`P5_DELTA3_OBLIGATION_LEDGER.md`](../P5_DELTA3_OBLIGATION_LEDGER.md) header |
 
 ---
 
 ## 3. Shortest logical route to the conjecture
 
 The ledger states the route as one theorem schema
-([`P5_DELTA3_OBLIGATION_LEDGER.md`](P5_DELTA3_OBLIGATION_LEDGER.md) I.4):
+([`P5_DELTA3_OBLIGATION_LEDGER.md`](../P5_DELTA3_OBLIGATION_LEDGER.md) I.4):
 
 1. **(Frontier reduction ⋆)** — any restriction forces an H31 or H22
    local family.  *Done* (verified reductions;
@@ -165,7 +165,7 @@ never promoted into proofs.
 **B1 — The divisor/boundary recursion (the bulk of the tree).**
 Each generic theorem hides finitely many inverted denominators.  The
 meta-theorem's extraction pass converts them into explicit curves
-([`P5_POINTWISE_SPECIALIZATION_META_THEOREM.md`](P5_POINTWISE_SPECIALIZATION_META_THEOREM.md));
+([`P5_POINTWISE_SPECIALIZATION_META_THEOREM.md`](../P5_POINTWISE_SPECIALIZATION_META_THEOREM.md));
 the ninth component extracts in seconds to minutes (replayed in this
 pass), the tenth times out (840 s budget, structurally diagnosed: 14
 independent multilinear equations; see
@@ -185,7 +185,7 @@ this closes, (O-H22) has a 24-of-25 hole at generic points.
 the master theorem's load-bearing hypothesis.  The canonical line
 claims the 25 closures are exhaustive *within the all-pair-rank
 exceptional-graph reduction*
-([`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md));
+([`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](../P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md));
 the ledger's warning still stands: a component census is a lower bound,
 and the cover must be verified as `X_nz ⊆ union` up to the symmetry
 group, including every support-degenerate and lower-rank tail.  This is
@@ -199,9 +199,9 @@ work into a theorem.
 
 The complete pass record — what was done, replayed, could not be
 replayed, and needs human review — is
-[`STABILIZATION_AUDIT_REPORT.md`](STABILIZATION_AUDIT_REPORT.md).  The
+[`STABILIZATION_AUDIT_REPORT.md`](audits/STABILIZATION_AUDIT_REPORT.md).  The
 per-file merge resolution record is
-[`MERGE_AUDIT_REPORT.md`](MERGE_AUDIT_REPORT.md).
+[`MERGE_AUDIT_REPORT.md`](audits/MERGE_AUDIT_REPORT.md).
 
 **Replayed and passed on this machine** (Singular 4.3.2 under WSL;
 sympy 1.14):

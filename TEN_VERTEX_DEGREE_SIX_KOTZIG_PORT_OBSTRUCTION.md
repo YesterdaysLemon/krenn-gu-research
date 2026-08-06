@@ -196,7 +196,7 @@ All machine-readable outputs retain
 "global_conjecture_resolved": false
 ```
 
-Exact SHA-256 bindings are recorded in `RESEARCH_NOTES.md`.
+Exact SHA-256 bindings are recorded in `docs/research-notes.md`.
 
 ## Remaining boundary
 

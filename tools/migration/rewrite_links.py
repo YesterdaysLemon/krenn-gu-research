@@ -37,6 +37,8 @@ import re
 import subprocess
 import sys
 
+from package_metadata import resolve_claim_package_metadata
+
 MD_LINK = re.compile(r"(\]\()([^)\s]+)(\))")
 REF_LINK = re.compile(r"^(\s*\[[^\]]+\]:\s*)(\S+)(\s*)$", re.M)
 REPLAY_LINE = re.compile(r"^(\s*(?:python3?|wsl[^\n]*python3?)\s+)"
@@ -126,20 +128,29 @@ def _remap_target(target: str, old_to_new: dict, written_from: str,
     # Idempotency: already-correct at the current location -> untouched.
     if _resolves_at(root, now_from, bare):
         return None
+    new_abs = None
+    # Interpretation 1: the link was written relative to the source's
+    # PRE-move location (the usual case for a freshly moved source).
     norm = normalize_rel(written_from, bare)
-    if norm is None:
-        return None
-    new_abs = old_to_new.get(norm)
+    if norm is not None:
+        if norm in old_to_new:
+            new_abs = old_to_new[norm]
+        elif moved_source and written_from != now_from and \
+                _resolves_at(root, written_from, bare):
+            # target not moved but still at the pre-move location:
+            # re-anchor so it keeps resolving.
+            new_abs = norm
+    # Interpretation 2: the link was ALREADY re-anchored relative to
+    # the source's current (post-move) location in an earlier
+    # migration pass, and its target has since moved again.  Resolve
+    # against the current location and remap if the resolved path is a
+    # moved source.
     if new_abs is None:
-        if not moved_source:
-            return None
-        # Moved source, target not in the move map: re-anchor only if
-        # the target actually exists at the source's pre-move location.
-        if written_from == now_from:
-            return None
-        if not _resolves_at(root, written_from, bare):
-            return None
-        new_abs = norm
+        norm_now = normalize_rel(now_from, bare)
+        if norm_now is not None and norm_now in old_to_new:
+            new_abs = old_to_new[norm_now]
+    if new_abs is None:
+        return None
     counter["n"] += 1
     return relative_to(now_from, new_abs) + frag
 
@@ -245,7 +256,8 @@ def blob_sha16(root: pathlib.Path, rel: str) -> str:
 
 
 def update_ledger(old_to_new: dict, root: pathlib.Path,
-                  rehash: bool = True, hash_func=None) -> dict:
+                  rehash: bool = True, hash_func=None,
+                  manifest_moves=None) -> dict:
     ledger_path = root / "catalog" / "theorem-ledger.json"
     ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
     moved_entries = 0
@@ -262,9 +274,12 @@ def update_ledger(old_to_new: dict, root: pathlib.Path,
                 touched = True
         if touched:
             doc = e["document"].split(" (")[0]
-            if doc.startswith("claims/"):
-                e["claim_package"] = str(
-                    pathlib.PurePosixPath(doc).parent)
+            meta = resolve_claim_package_metadata(
+                doc, manifest_moves)
+            if meta is not None:
+                e["claim_package"] = meta["claim_package"]
+                e["proof_variant"] = meta["proof_variant"]
+                e["subpackage"] = meta["subpackage"]
             legacy = e.setdefault("legacy_paths", [])
             for o, n in old_to_new.items():
                 if n in (doc, e.get("primary_verifier"),
@@ -286,6 +301,12 @@ def update_ledger(old_to_new: dict, root: pathlib.Path,
 def main() -> int:
     root = pathlib.Path(__file__).resolve().parents[2]
     old_to_new = load_move_map(root)
+    try:
+        manifest = json.loads((root / "catalog" / "moved-paths.json")
+                              .read_text(encoding="utf-8"))
+        moves = manifest.get("moves", [])
+    except (OSError, json.JSONDecodeError):
+        moves = None
     if not old_to_new:
         print("no moved entries in manifest")
         return 1
@@ -294,7 +315,7 @@ def main() -> int:
         check=True)
     sources = [l for l in out.stdout.splitlines() if l.strip()]
     stats = rewrite_markdown(old_to_new, sources, root)
-    led = update_ledger(old_to_new, root)
+    led = update_ledger(old_to_new, root, manifest_moves=moves)
     print(json.dumps({**stats, **led}, indent=2))
     if stats["ambiguous"]:
         print("\nAMBIGUOUS (not rewritten):")
