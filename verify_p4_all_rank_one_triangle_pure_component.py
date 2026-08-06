@@ -10,7 +10,14 @@ from pathlib import Path
 
 import sympy as sp
 
-from verify_p4_disjoint_mixed_star_pure_component import (
+import sys
+
+# The disjoint-mixed-star P4 component package moved in Stage 3; expose
+# its directory so the bare-name import below resolves.
+sys.path.insert(
+    0, str(Path(__file__).resolve().parent / "claims" / "p4"
+           / "components" / "disjoint-mixed-star"))
+from verify_p4_disjoint_mixed_star_pure_component import (  # noqa: E402
     family as eighth_family,
 )
 from verify_p4_mixed_orientation_pure_component import (
@@ -27,7 +34,9 @@ from verify_p4_mixed_orientation_pure_component import (
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md"
 WORKING_NOTE = ROOT / "P4_INOUT_PATH_STRATUM_WORKING_NOTE.md"
-EIGHTH = ROOT / "P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md"
+EIGHTH = (
+    ROOT / "claims" / "p4" / "components" / "disjoint-mixed-star"
+    / "P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md")
 RADICAL_STAR = ROOT / "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md"
 SEVENTH = ROOT / "P4_SIX_DIMENSIONAL_PURE_COMPONENT.md"
 WORDS = tuple(itertools.product((0, 1), repeat=4))

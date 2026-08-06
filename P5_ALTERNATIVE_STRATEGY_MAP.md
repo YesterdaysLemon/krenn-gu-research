@@ -1128,7 +1128,7 @@ produced an eighth five-dimensional component.  Its normalized pure
 condition is one irreducible cubic hypersurface, and exact rank-five
 family/rank-fifteen incidence certificates prove component status:
 
-- [`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md)
+- [`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](claims/p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md)
 
 Its generic marked `H31` fibre is now empty.  Function-field
 projection gives unit ideals for source coordinates zero and one and

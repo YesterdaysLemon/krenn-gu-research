@@ -53,9 +53,17 @@ from pathlib import Path
 
 import sympy as sp
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P4_SPLIT_PAIR_PURE_COMPONENT.md"
-PRIMARY = ROOT / "verify_p4_split_pair_pure_component.py"
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+THEOREM = HERE / "P4_SPLIT_PAIR_PURE_COMPONENT.md"
+PRIMARY = HERE / "verify_p4_split_pair_pure_component.py"
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PAIRS = tuple(itertools.combinations(range(4), 2))
@@ -951,7 +959,7 @@ def main() -> None:
         "source": Path(__file__).name,
         "source_sha256": sha256(Path(__file__)),
     }
-    output_path = ROOT / "tmp" / "p4_split_pair_pure_component_audit.json"
+    output_path = REPO_ROOT / "tmp" / "p4_split_pair_pure_component_audit.json"
     output_path.parent.mkdir(exist_ok=True)
     output_path.write_text(
         json.dumps(result, indent=2, sort_keys=True) + "\n",

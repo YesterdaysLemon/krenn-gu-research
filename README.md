@@ -3421,7 +3421,7 @@ strictly advance the finite frontier:
   its diagonal-source family tangent has rank five and the universal
   Segre-incidence Jacobian has rank fifteen.  Support disjointness
   separates it from the overlapping mixed component:
-  [`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
+  [`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](claims/p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
   Its full affine Borel stratum is now classified in reverse.  After the
   exact-pair normalization, every forbidden coefficient is one entry of
   `N*(j,kappa,eta)^T`, where `det(N)` is exactly the displayed irreducible
@@ -4723,8 +4723,8 @@ the essential remaining case.
 - [`TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md`](TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md)
 - [`RESEARCH_NOTES.md`](docs/research-notes.md)
 - [`P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md`](P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md)
-- [`P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md`](P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md)
-- [`P4_SPLIT_PAIR_PURE_COMPONENT.md`](P4_SPLIT_PAIR_PURE_COMPONENT.md)
+- [`P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md`](claims/p4/components/equal-support-sixfold/P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md)
+- [`P4_SPLIT_PAIR_PURE_COMPONENT.md`](claims/p4/components/split-pair/P4_SPLIT_PAIR_PURE_COMPONENT.md)
 - [`P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md`](P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md)
 - [`P4_INOUT_PATH_STRATUM_WORKING_NOTE.md`](P4_INOUT_PATH_STRATUM_WORKING_NOTE.md)
 - [`P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md)

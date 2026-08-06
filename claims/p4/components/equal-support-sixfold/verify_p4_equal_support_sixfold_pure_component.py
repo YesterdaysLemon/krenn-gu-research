@@ -43,10 +43,18 @@ from pathlib import Path
 
 import sympy as sp
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md"
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+THEOREM = HERE / "P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md"
 SNAPSHOT_README = (
-    ROOT
+    REPO_ROOT
     / "research_snapshots"
     / "2026-08-04-p4-equal-support-rank-two-strata"
     / "README.md"
@@ -915,7 +923,7 @@ def main() -> None:
         "source_sha256": sha256(Path(__file__)),
     }
     output_path = (
-        ROOT / "tmp" / "p4_equal_support_sixfold_pure_component_verified.json"
+        REPO_ROOT / "tmp" / "p4_equal_support_sixfold_pure_component_verified.json"
     )
     output_path.parent.mkdir(exist_ok=True)
     output_path.write_text(

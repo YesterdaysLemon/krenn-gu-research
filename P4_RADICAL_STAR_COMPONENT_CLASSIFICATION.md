@@ -39,7 +39,7 @@ the other mixed edge orientations, the triangle configuration,
 coincident coordinate-pair supports, rank-two-or-lower pair images, or
 the whole pure-compression locus.  A disjoint-support mixed orientation
 has since produced an eighth component in
-[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
+[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](claims/p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
 
 ## Why exceptional pairs form a small graph
 

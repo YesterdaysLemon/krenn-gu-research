@@ -13,7 +13,7 @@ from the six previously certified five-dimensional component orbits.
 Consequently there are at least seven symmetry-inequivalent
 pure-compression components at this checkpoint.  A disjoint-support
 mixed star has since raised the certified lower bound to eight in
-[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
+[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](claims/p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
 The embedded pure-`P_3` suspension in
 [`P4_EMBEDDED_P3_PURE_COMPONENT.md`](P4_EMBEDDED_P3_PURE_COMPONENT.md)
 has since raised it again to nine.

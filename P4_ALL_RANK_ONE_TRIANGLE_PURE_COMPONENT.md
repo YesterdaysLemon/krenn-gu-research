@@ -117,7 +117,7 @@ T_1111=-2,                                          (9)
 and all fifteen other coefficients vanish **identically** in `(p,q)`.
 There is no defining hypersurface: unlike the eighth component's
 irreducible `Phi` in
-[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md),
+[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](claims/p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md),
 the family (6) is free.  Every parameter pair gives a nonzero pure
 restriction, all four planes stay rank two for all `(p,q)`, and the
 component is rational: the parametrization by

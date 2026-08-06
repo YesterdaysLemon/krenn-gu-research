@@ -402,7 +402,7 @@ classification remain open.  The replay scripts are
    component**; boundary leaves of both remain.  The eleventh
    component now has a standalone theorem with consolidated
    verifier and two-prime independent audit in
-   [`P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md`](P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md);
+   [`P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md`](claims/p4/components/equal-support-sixfold/P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md);
    its `H31`/`H22` obstructions stay open;
 3. the remaining exhaustiveness strata are now swept in
    [`research_snapshots/2026-08-04-p4-exhaustiveness-sweep-census-thirteen/`](research_snapshots/2026-08-04-p4-exhaustiveness-sweep-census-thirteen/README.md):
@@ -420,7 +420,7 @@ classification remain open.  The replay scripts are
    rank-sum bound, local dimension, and coordinate-plane incidence
    invariants.  Both now have standalone theorems with verifiers
    and independent audits
-   ([`P4_SPLIT_PAIR_PURE_COMPONENT.md`](P4_SPLIT_PAIR_PURE_COMPONENT.md),
+   ([`P4_SPLIT_PAIR_PURE_COMPONENT.md`](claims/p4/components/split-pair/P4_SPLIT_PAIR_PURE_COMPONENT.md),
    [`P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md`](P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md));
 4. that sweep's honest tails are taken up in
    [`research_snapshots/2026-08-04-p4-exhaustiveness-tails-census-sixteen/`](research_snapshots/2026-08-04-p4-exhaustiveness-tails-census-sixteen/README.md):

@@ -30,7 +30,7 @@ Krull height bound its local dimension is at most six, which the
 rank-six family tangent then meets exactly.
 
 The component was located in the equal-support in-out chart of
-[`research_snapshots/2026-08-04-p4-equal-support-rank-two-strata/`](research_snapshots/2026-08-04-p4-equal-support-rank-two-strata/README.md)
+[`research_snapshots/2026-08-04-p4-equal-support-rank-two-strata/`](../../../../research_snapshots/2026-08-04-p4-equal-support-rank-two-strata/README.md)
 (steps 22--29; the snapshot's Task A conclusion plus its integration
 addendum).  This document is its standalone theorem: the free
 rational normal form with the apolar purity mechanism, the slice
@@ -379,9 +379,9 @@ of these is classified.
 Run:
 
 ```text
-python verify_p4_equal_support_sixfold_pure_component.py
+python claims/p4/components/equal-support-sixfold/verify_p4_equal_support_sixfold_pure_component.py
 
-python audit_p4_equal_support_sixfold_pure_component.py
+python claims/p4/components/equal-support-sixfold/audit_p4_equal_support_sixfold_pure_component.py
 ```
 
 The primary verifier proves the identical-purity statement (4)--(6)

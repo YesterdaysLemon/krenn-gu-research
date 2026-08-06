@@ -17,7 +17,7 @@ together with properness, excludes the generic incidence.
 Consequently generic weighted `H22` incidence is empty on all seven
 component orbits certified at this checkpoint.  A disjoint-support
 mixed-star eighth component has since been certified in
-[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md);
+[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](claims/p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md);
 its generic weighted `H22` incidence is not covered here.
 
 This does **not** classify all pure-`P_4` components, close special
