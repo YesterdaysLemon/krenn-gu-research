@@ -39,6 +39,31 @@ CATALOG = ROOT / "catalog"
 PILOT_FAMILY = "p5/h22/disjoint-mixed-star"
 PILOT_DIR = f"claims/{PILOT_FAMILY}"
 
+# Pilot package internal layout (spec Phase 4): canonical
+# theorem/verifier/audit at the package root, the alternate
+# independent proof in alternate/, directly associated boundary
+# documents and their scripts in boundaries/, and the working note
+# and certificate-divisor frontier at the package root.
+PILOT_BOUNDARY_MARKERS = (
+    "AF_APHI_BOUNDARY", "CERTIFICATE_DIVISOR_FRONTIER",
+    "COEFFICIENT_QUADRATIC_BOUNDARY", "COUPLED_SLOPE_BOUNDARY",
+    "EQUAL_OPPOSITE_WEIGHT", "LINEAR_SLOPE_BOUNDARY",
+    "PARAMETER_PIVOT_BOUNDARY", "SLOPE_R1_BINARY",
+    "SLOPE_RM1_BINARY", "TORUS_QUOTIENT", "ZERO_SLOPE_BOUNDARY",
+)
+
+
+def pilot_destination(old: str, base_dst: str) -> str:
+    """Place a pilot file into the spec package layout."""
+    name = pathlib.PurePosixPath(old).name
+    stem = pathlib.PurePosixPath(old).stem.upper()
+    pkg = pathlib.PurePosixPath(base_dst)
+    if "_ALTERNATE" in stem:
+        return str(pkg / "alternate" / name)
+    if any(marker in stem for marker in PILOT_BOUNDARY_MARKERS):
+        return str(pkg / "boundaries" / name)
+    return str(pkg / name)
+
 
 def tracked_files() -> set[str]:
     out = subprocess.run(
@@ -86,6 +111,9 @@ def main() -> int:
         if old not in tracked:
             raise ValueError(f"source not tracked: {old}")
         is_pilot = e.get("claim_family") == PILOT_FAMILY
+        if is_pilot:
+            dst = normalize(pilot_destination(
+                old, str(pathlib.PurePosixPath(dst).parent)))
         rec = {
             "old_path": old,
             "new_path": dst,
@@ -107,8 +135,9 @@ def main() -> int:
         f for f in tracked if "/" not in f)
     dirs_now = sorted({f.split("/")[0] for f in tracked if "/" in f})
     planned_moved_sources = {r["old_path"] for r in records}
-    # Root entries after a FULL migration = everything still at root that
-    # was not classified to move, plus the top-level dirs that remain.
+    # Root entries after a FULL migration = everything still at root
+    # that was not classified to move, plus the top-level dirs that
+    # remain.
     remaining_root_files = [
         f for f in root_files_now if f not in planned_moved_sources]
     remaining_root_dirs = sorted(
@@ -169,9 +198,9 @@ def main() -> int:
     print(f"root entries: before={len(root_files_now) + len(dirs_now)} "
           f"estimated_after_full={est_after}")
     print(f"unclassified={classification['unclassified_count']}")
-    print("\nPilot package files:")
-    for f in sorted(pilot_files):
-        print("  ", f)
+    print("\nPilot package layout:")
+    for r in sorted(pilot_records, key=lambda r: r["new_path"]):
+        print(f"  {r['old_path']}\n    -> {r['new_path']}")
     return 0
 
 

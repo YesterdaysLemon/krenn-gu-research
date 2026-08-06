@@ -1,19 +1,19 @@
 # Layout inventory (pre-migration)
 
-Starting commit: `f6d2cc426c05d99fcff08ddb1c95f3f1481a373a` (tag `pre-layout-migration-v1`).
+Starting commit: `84210725e2760b5a78dc151012691eee1a36bf21` (tag `pre-layout-migration-v1`).
 
 ## Headline counts
 
-- total tracked entries: **2500**
-- root-level files: **2363** (+ 3 directories = 2366 entries, GitHub truncates at 1,000)
-- classified by rules: **2015** ({'medium': 1188, 'low': 444, 'high': 383})
+- total tracked entries: **2508**
+- root-level files: **2362** (+ 7 directories = 2369 entries, GitHub truncates at 1,000)
+- classified by rules: **2014** ({'medium': 1188, 'low': 444, 'high': 382})
 - unclassified (need human decision): **348**
 
 ## Root files by extension
 
 - `.py`: 1597
 - `.md`: 738
-- `.json`: 20
+- `.json`: 19
 - `.cpp`: 4
 - `(none)`: 2
 - `.txt`: 2
@@ -21,8 +21,12 @@ Starting commit: `f6d2cc426c05d99fcff08ddb1c95f3f1481a373a` (tag `pre-layout-mig
 ## Top-level directories
 
 - `.github/`
+- `catalog/`
+- `docs/`
 - `research_figures/`
 - `research_snapshots/`
+- `src/`
+- `tools/`
 
 ## Classification by destination family (top 30)
 
@@ -67,7 +71,6 @@ Starting commit: `f6d2cc426c05d99fcff08ddb1c95f3f1481a373a` (tag `pre-layout-mig
 - `withdrawn_document`: 5
 - `legacy_document`: 5
 - `audit_report`: 2
-- `catalog`: 1
 
 ## Shared-library candidates (imported by >=3 root scripts)
 

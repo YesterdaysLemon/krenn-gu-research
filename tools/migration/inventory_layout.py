@@ -285,8 +285,6 @@ def classify(rel: str, ctx: dict) -> dict | None:
         "GRASSMANNIAN_PLUECKER_ATTACK_PLAN.md": (
             "docs/architecture/GRASSMANNIAN_PLUECKER_ATTACK_PLAN.md",
             "navigation"),
-        "THEOREM_LEDGER.json": (
-            "catalog/theorem-ledger.json", "catalog"),
     }
     if name in fixed_docs:
         dst, cat = fixed_docs[name]
