@@ -188,3 +188,81 @@ No theorem claim changed.  The global conjecture remains UNRESOLVED.
 Candidate, withdrawn, exploratory, and superseded entries keep their
 labels; the alternate proof remains an independent alternate, not a
 replacement.
+## Review pass 1 fixes (machinery hardening)
+
+The pilot was accepted; the review required the reusable machinery to be
+trustworthy at repository scale before the bulk migration.  All seven
+items were addressed; the 35-file pilot itself was not redone.
+
+### 1. Replay claim corrected
+
+The summary wording no longer says "all replayed".  Accurate statement:
+**35 files moved; the canonical verifier and both independent audits
+were replayed from the new locations; the alternate verifier and all
+boundary verifiers/audits were compile- and import-tested only.**
+
+### 2. True pre-migration base
+
+`inventory_layout.py` gained `--ref` and now inspects any git ref via
+git objects (`ls-tree`/`show`), reading content at that ref and
+resolving links textually against the tracked set.  The inventory and
+manifest were regenerated from `pre-layout-migration-v1` (`f6d2cc4`),
+so the starting commit, the 2,363 root files / 2,366 entries counts,
+and every downstream figure agree across the inventory, manifest, PR
+body, and this report.  The `THEOREM_LEDGER.json ->
+catalog/theorem-ledger.json` relocation is a first-class manifest
+entry, so every move appears in the manifest.
+
+### 3. Confidence-gated executable batches
+
+Manifest statuses are now `moved` / `pilot` / `approved` /
+`review_required`.  Only high-confidence classifications auto-approve;
+medium/low stay `review_required` proposals.  `execute_moves.py`
+refuses `review_required`.  Current split: 36 moved, 369 approved,
+1,610 review_required, 348 unclassified.  Projected root counts are
+reported per gate: approved-only 1,967, review-also-approved 357,
+with-unclassified 705.
+
+### 4. Final-destination validation and rollback
+
+`build_manifest.py` computes the FINAL destination (base proposal, then
+pilot-layout transformation, then normalization) and validates
+uniqueness, double-moves, and source/destination overlap cycles on that
+final value (`validate_records`, also unit-tested).  `execute_moves.py`
+independently re-verifies unique sources/destinations, overlap cycles,
+parent-path validity, and manifest health; it executes in deterministic
+order and, on ANY failure, rolls back the moves performed in that
+invocation in reverse order and writes `catalog/recovery-<ts>.json`
+without touching the manifest.
+
+### 5. Rewriter repair + test suite in CI
+
+The rewriter's manifest lookup and relative-path calculation now use the
+NORMALIZED resolved path, and an existence-based guard makes it
+idempotent (two consecutive runs rewrite 0 links).  Reference-style
+definitions, image links, and fenced replay commands with arguments are
+handled; duplicate replay basenames are reported and skipped.
+`tests/test_migration_tools.py` (27 tests) covers the full review
+checklist and runs as a dedicated CI step against a synthetic post-move
+fixture tree.
+
+### 6. Manifest-aware stale-path enforcement
+
+`check_hygiene.py` rejects moved old paths in tracked
+`.md/.py/.yml/.yaml/.sh/.json` files, except in the provenance allowlist
+(catalog migration files, audit reports, migration report/inventory,
+`tools/migration/`, migration tests).  JSON hits are checked
+structurally so `legacy_paths` fields are exempt.  Root-file moves that
+keep their filename are ambiguous and not enforced; sub-path moves and
+renamed-away root files are.
+
+### 7. Consolidated import/path strategy
+
+The duplicated `_repo_root()`/`sys.path.insert()` blocks were replaced
+by one helper, `src/krenn_gu/bootstrap.py`.  `find_repo_root()` walks
+upward to a repository MARKER file (`Containerfile`,
+`requirements.lock.txt`, `catalog/theorem-ledger.json`) — not `.git` —
+so it works in clean checkouts and source archives.  Every moved script
+shares the identical header; `claim_package` is the package root and
+`alternate`/`boundaries` are recorded via `proof_variant`/`subpackage`
+fields.
