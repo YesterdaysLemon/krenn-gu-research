@@ -37,6 +37,8 @@ import re
 import subprocess
 import sys
 
+from package_metadata import resolve_claim_package_metadata
+
 MD_LINK = re.compile(r"(\]\()([^)\s]+)(\))")
 REF_LINK = re.compile(r"^(\s*\[[^\]]+\]:\s*)(\S+)(\s*)$", re.M)
 REPLAY_LINE = re.compile(r"^(\s*(?:python3?|wsl[^\n]*python3?)\s+)"
@@ -245,7 +247,8 @@ def blob_sha16(root: pathlib.Path, rel: str) -> str:
 
 
 def update_ledger(old_to_new: dict, root: pathlib.Path,
-                  rehash: bool = True, hash_func=None) -> dict:
+                  rehash: bool = True, hash_func=None,
+                  manifest_moves=None) -> dict:
     ledger_path = root / "catalog" / "theorem-ledger.json"
     ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
     moved_entries = 0
@@ -262,9 +265,12 @@ def update_ledger(old_to_new: dict, root: pathlib.Path,
                 touched = True
         if touched:
             doc = e["document"].split(" (")[0]
-            if doc.startswith("claims/"):
-                e["claim_package"] = str(
-                    pathlib.PurePosixPath(doc).parent)
+            meta = resolve_claim_package_metadata(
+                doc, manifest_moves)
+            if meta is not None:
+                e["claim_package"] = meta["claim_package"]
+                e["proof_variant"] = meta["proof_variant"]
+                e["subpackage"] = meta["subpackage"]
             legacy = e.setdefault("legacy_paths", [])
             for o, n in old_to_new.items():
                 if n in (doc, e.get("primary_verifier"),
@@ -286,6 +292,12 @@ def update_ledger(old_to_new: dict, root: pathlib.Path,
 def main() -> int:
     root = pathlib.Path(__file__).resolve().parents[2]
     old_to_new = load_move_map(root)
+    try:
+        manifest = json.loads((root / "catalog" / "moved-paths.json")
+                              .read_text(encoding="utf-8"))
+        moves = manifest.get("moves", [])
+    except (OSError, json.JSONDecodeError):
+        moves = None
     if not old_to_new:
         print("no moved entries in manifest")
         return 1
@@ -294,7 +306,7 @@ def main() -> int:
         check=True)
     sources = [l for l in out.stdout.splitlines() if l.strip()]
     stats = rewrite_markdown(old_to_new, sources, root)
-    led = update_ledger(old_to_new, root)
+    led = update_ledger(old_to_new, root, manifest_moves=moves)
     print(json.dumps({**stats, **led}, indent=2))
     if stats["ambiguous"]:
         print("\nAMBIGUOUS (not rewritten):")

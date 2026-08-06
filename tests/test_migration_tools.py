@@ -542,5 +542,396 @@ class StaleReferenceTests(unittest.TestCase):
                             for ctx, b in hits), hits)
 
 
+
+
+# ------------------------------------------------------------------
+# Phase 2: frozen batch contract, package metadata, provenance
+# ------------------------------------------------------------------
+
+from batch_contract import (  # noqa: E402
+    canonical_mapping_hash,
+    make_batch,
+    validate_batch as contract_validate,
+    validate_executed_provenance,
+)
+from package_metadata import (  # noqa: E402
+    resolve_claim_package_metadata,
+)
+
+
+def _gitinit(tmp):
+    _git(tmp, "init", "-q")
+    _git(tmp, "config", "user.email", "test@example.com")
+    _git(tmp, "config", "user.name", "test")
+
+
+def _write_manifest(tmp, moves, extra=None):
+    (tmp / "catalog").mkdir(exist_ok=True)
+    manifest = {
+        "moves": moves,
+        "collision_report": [],
+        "double_move_report": [],
+        "overlap_cycle_report": [],
+    }
+    if extra:
+        manifest.update(extra)
+    (tmp / "catalog" / "moved-paths.json").write_text(
+        json.dumps(manifest, indent=2), encoding="utf-8")
+    return manifest
+
+
+def _head_sha(tmp):
+    return _git(tmp, "rev-parse", "HEAD").stdout.strip()
+
+
+class BatchIntegrityTests(unittest.TestCase):
+    """Frozen batch approval contract (Phase 2 item 1A)."""
+
+    def setUp(self):
+        self.tmp = pathlib.Path(tempfile.mkdtemp())
+        _gitinit(self.tmp)
+        (self.tmp / "A.md").write_text("a\n", encoding="utf-8")
+        (self.tmp / "B.md").write_text("b\n", encoding="utf-8")
+        _git(self.tmp, "add", "-A")
+        _git(self.tmp, "commit", "-q", "-m", "base")
+        self.base = _head_sha(self.tmp)
+        self.moves = [
+            {"old_path": "A.md", "new_path": "docs/A.md",
+             "status": "proposed_high_confidence"},
+            {"old_path": "B.md", "new_path": "docs/B.md",
+             "status": "proposed_high_confidence"},
+        ]
+        _write_manifest(self.tmp, self.moves)
+
+    def _make(self, **kw):
+        args = dict(
+            batch_id="test-batch", approved_by="tester",
+            approved_at="2026-08-06", base_sha=self.base,
+            members=["A.md", "B.md"], root=self.tmp)
+        args.update(kw)
+        return make_batch(**args)
+
+    def test_valid_frozen_batch_accepted(self):
+        batch = self._make()
+        manifest = json.loads((self.tmp / "catalog" /
+                               "moved-paths.json").read_text())
+        self.assertEqual(contract_validate(batch, self.tmp,
+                                           manifest["moves"]), [])
+
+    def test_mapping_hash_is_deterministic(self):
+        b1 = self._make()
+        b2 = self._make()
+        self.assertEqual(b1["mapping_sha256"], b2["mapping_sha256"])
+        # order-independent
+        rev = dict(canonical_mapping_hash=reversed)
+        manual = canonical_mapping_hash(
+            [{"old_path": "B.md", "new_path": "docs/B.md"},
+             {"old_path": "A.md", "new_path": "docs/A.md"}])
+        self.assertEqual(b1["mapping_sha256"], manual)
+
+    def test_altered_destination_refused(self):
+        batch = self._make()
+        batch["moves"][0]["new_path"] = "docs/EVIL.md"
+        manifest = json.loads((self.tmp / "catalog" /
+                               "moved-paths.json").read_text())
+        problems = contract_validate(batch, self.tmp, manifest["moves"])
+        self.assertTrue(any("mapping_sha256" in p or "drift" in p
+                            for p in problems), problems)
+
+    def test_altered_member_count_refused(self):
+        batch = self._make()
+        batch["member_count"] = 99
+        manifest = json.loads((self.tmp / "catalog" /
+                               "moved-paths.json").read_text())
+        problems = contract_validate(batch, self.tmp, manifest["moves"])
+        self.assertTrue(any("member_count" in p for p in problems))
+
+    def test_wrong_mapping_hash_refused(self):
+        batch = self._make()
+        batch["mapping_sha256"] = "0" * 64
+        manifest = json.loads((self.tmp / "catalog" /
+                               "moved-paths.json").read_text())
+        problems = contract_validate(batch, self.tmp, manifest["moves"])
+        self.assertTrue(any("mapping_sha256" in p for p in problems))
+
+    def test_missing_approved_at_refused(self):
+        batch = self._make()
+        del batch["approved_at"]
+        manifest = json.loads((self.tmp / "catalog" /
+                               "moved-paths.json").read_text())
+        problems = contract_validate(batch, self.tmp, manifest["moves"])
+        self.assertTrue(any("approved_at" in p for p in problems))
+
+    def test_duplicate_source_refused(self):
+        batch = self._make()
+        batch["moves"].append({"old_path": "A.md",
+                               "new_path": "docs/A2.md"})
+        batch["member_count"] = len(batch["moves"])
+        batch["mapping_sha256"] = canonical_mapping_hash(batch["moves"])
+        manifest = json.loads((self.tmp / "catalog" /
+                               "moved-paths.json").read_text())
+        problems = contract_validate(batch, self.tmp, manifest["moves"])
+        self.assertTrue(any("duplicate source" in p
+                            for p in problems))
+
+    def test_duplicate_destination_refused(self):
+        batch = self._make()
+        batch["moves"].append({"old_path": "C.md",
+                               "new_path": "docs/A.md"})
+        batch["member_count"] = len(batch["moves"])
+        batch["mapping_sha256"] = canonical_mapping_hash(batch["moves"])
+        manifest = json.loads((self.tmp / "catalog" /
+                               "moved-paths.json").read_text())
+        problems = contract_validate(batch, self.tmp, manifest["moves"])
+        self.assertTrue(any("duplicate destination" in p
+                            for p in problems)
+                        or any("missing from manifest" in p
+                               for p in problems))
+
+    def test_unresolvable_base_sha_refused(self):
+        batch = self._make(base_sha="f" * 40)
+        manifest = json.loads((self.tmp / "catalog" /
+                               "moved-paths.json").read_text())
+        problems = contract_validate(batch, self.tmp, manifest["moves"])
+        self.assertTrue(any("base_sha" in p for p in problems))
+
+    def test_manifest_drift_after_approval_refused(self):
+        batch = self._make()
+        # manifest destination drifts after approval
+        manifest = json.loads((self.tmp / "catalog" /
+                               "moved-paths.json").read_text())
+        manifest["moves"][0]["new_path"] = "docs/DRIFTED.md"
+        (self.tmp / "catalog" / "moved-paths.json").write_text(
+            json.dumps(manifest))
+        problems = contract_validate(batch, self.tmp, manifest["moves"])
+        self.assertTrue(any("drift" in p for p in problems), problems)
+
+    def test_stale_batch_source_missing_refused(self):
+        batch = self._make()
+        manifest = json.loads((self.tmp / "catalog" /
+                               "moved-paths.json").read_text())
+        manifest["moves"] = [m for m in manifest["moves"]
+                             if m["old_path"] != "B.md"]
+        problems = contract_validate(batch, self.tmp, manifest["moves"])
+        self.assertTrue(any("missing from manifest" in p
+                            for p in problems))
+
+    def test_make_batch_rejects_already_moved(self):
+        for m in self.moves:
+            m["status"] = "moved"
+        _write_manifest(self.tmp, self.moves)
+        with self.assertRaises(ValueError):
+            self._make()
+
+
+class ProvenanceTests(unittest.TestCase):
+    """Executed-batch provenance invariant (Phase 2 item 1C)."""
+
+    def setUp(self):
+        self.tmp = pathlib.Path(tempfile.mkdtemp())
+        _gitinit(self.tmp)
+        (self.tmp / "A.md").write_text("a\n", encoding="utf-8")
+        _git(self.tmp, "add", "-A")
+        _git(self.tmp, "commit", "-q", "-m", "base")
+        self.base = _head_sha(self.tmp)
+
+    def _batch_file(self, moves, bid="exec-batch"):
+        (self.tmp / "catalog" / "batches").mkdir(parents=True,
+                                                 exist_ok=True)
+        batch = {
+            "batch_id": bid, "approved_by": "t",
+            "approved_at": "2026-08-06", "base_sha": self.base,
+            "member_count": len(moves), "moves": moves,
+            "mapping_sha256": canonical_mapping_hash(moves),
+        }
+        (self.tmp / "catalog" / "batches" / f"{bid}.json").write_text(
+            json.dumps(batch), encoding="utf-8")
+
+    def test_valid_provenance_passes(self):
+        moves = [{"old_path": "A.md", "new_path": "docs/A.md"}]
+        self._batch_file(moves)
+        manifest_moves = [{"old_path": "A.md", "new_path": "docs/A.md",
+                           "status": "moved",
+                           "executed_batch": "exec-batch"}]
+        self.assertEqual(
+            validate_executed_provenance(manifest_moves, self.tmp), [])
+
+    def test_missing_executed_batch_fails(self):
+        manifest_moves = [{"old_path": "A.md", "new_path": "docs/A.md",
+                           "status": "moved"}]
+        problems = validate_executed_provenance(manifest_moves,
+                                                self.tmp)
+        self.assertTrue(any("lacks executed_batch" in p
+                            for p in problems))
+
+    def test_missing_batch_file_fails(self):
+        manifest_moves = [{"old_path": "A.md", "new_path": "docs/A.md",
+                           "status": "moved",
+                           "executed_batch": "ghost-batch"}]
+        problems = validate_executed_provenance(manifest_moves,
+                                                self.tmp)
+        self.assertTrue(any("file missing" in p for p in problems))
+
+    def test_mapping_mismatch_fails(self):
+        moves = [{"old_path": "A.md", "new_path": "docs/A.md"}]
+        self._batch_file(moves)
+        manifest_moves = [{"old_path": "A.md",
+                           "new_path": "docs/OTHER.md",
+                           "status": "moved",
+                           "executed_batch": "exec-batch"}]
+        problems = validate_executed_provenance(manifest_moves,
+                                                self.tmp)
+        self.assertTrue(any("mapping differs" in p for p in problems))
+
+
+class PackageMetadataTests(unittest.TestCase):
+    """Structural claim-package metadata (Phase 2 item 1B)."""
+
+    PKG = "claims/p5/h22/disjoint-mixed-star"
+
+    def test_canonical_theorem_at_package_root(self):
+        meta = resolve_claim_package_metadata(
+            self.PKG + "/P5_H22_THEOREM.md")
+        self.assertEqual(meta["claim_package"], self.PKG)
+        self.assertEqual(meta["proof_variant"], "canonical")
+        self.assertIsNone(meta["subpackage"])
+
+    def test_alternate_proof_subpackage(self):
+        meta = resolve_claim_package_metadata(
+            self.PKG + "/alternate/P5_H22_THEOREM_ALTERNATE.md")
+        self.assertEqual(meta["claim_package"], self.PKG)
+        self.assertEqual(meta["proof_variant"], "alternate")
+        self.assertEqual(meta["subpackage"], "alternate")
+
+    def test_boundary_subpackage(self):
+        meta = resolve_claim_package_metadata(
+            self.PKG + "/boundaries/P5_H22_BOUNDARY.md")
+        self.assertEqual(meta["claim_package"], self.PKG)
+        self.assertIsNone(meta["proof_variant"])
+        self.assertEqual(meta["subpackage"], "boundaries")
+
+    def test_verifier_under_alternate(self):
+        meta = resolve_claim_package_metadata(
+            self.PKG + "/alternate/verify_x_alternate.py")
+        self.assertEqual(meta["claim_package"], self.PKG)
+        self.assertIsNone(meta["proof_variant"])  # scripts carry none
+        self.assertEqual(meta["subpackage"], "alternate")
+
+    def test_audit_under_boundaries(self):
+        meta = resolve_claim_package_metadata(
+            self.PKG + "/boundaries/audit_x.py")
+        self.assertEqual(meta["claim_package"], self.PKG)
+        self.assertIsNone(meta["proof_variant"])
+        self.assertEqual(meta["subpackage"], "boundaries")
+
+    def test_working_note_not_canonical(self):
+        meta = resolve_claim_package_metadata(
+            self.PKG + "/P5_H22_WORKING_NOTE.md")
+        self.assertEqual(meta["claim_package"], self.PKG)
+        self.assertIsNone(meta["proof_variant"])
+
+    def test_non_claim_document_is_none(self):
+        self.assertIsNone(
+            resolve_claim_package_metadata("docs/index.md"))
+        self.assertIsNone(resolve_claim_package_metadata("README.md"))
+
+    def test_manifest_family_authoritative(self):
+        moves = [{"old_path": "X.md",
+                  "new_path": "claims/p5/h31/fam/X.md",
+                  "claim_family": "p5/h31/fam"}]
+        meta = resolve_claim_package_metadata("claims/p5/h31/fam/X.md",
+                                             moves)
+        self.assertEqual(meta["claim_package"], "claims/p5/h31/fam")
+
+
+class LedgerMetadataIntegrationTests(unittest.TestCase):
+    """update_ledger derives package metadata structurally."""
+
+    def setUp(self):
+        self.tmp = pathlib.Path(tempfile.mkdtemp())
+        _gitinit(self.tmp)
+        (self.tmp / "catalog").mkdir()
+        pkg = self.tmp / "claims" / "p5" / "h22" / "fam"
+        (pkg / "alternate").mkdir(parents=True)
+        (pkg / "boundaries").mkdir(parents=True)
+        (pkg / "THEOREM.md").write_text("t\n", encoding="utf-8")
+        (pkg / "alternate" / "THEOREM_ALTERNATE.md").write_text(
+            "alt\n", encoding="utf-8")
+        (pkg / "boundaries" / "BOUNDARY.md").write_text(
+            "b\n", encoding="utf-8")
+        _git(self.tmp, "add", "-A")
+        _git(self.tmp, "commit", "-q", "-m", "dest")
+        self.ledger = {"entries": [
+            {"name": "theorem", "document": "THEOREM.md",
+             "document_sha256_16": "0" * 16, "status": "verified"},
+            {"name": "alternate", "document": "THEOREM_ALTERNATE.md",
+             "document_sha256_16": "0" * 16, "status": "verified"},
+            {"name": "boundary", "document": "BOUNDARY.md",
+             "document_sha256_16": "0" * 16, "status": "verified"},
+        ]}
+        (self.tmp / "catalog" / "theorem-ledger.json").write_text(
+            json.dumps(self.ledger), encoding="utf-8")
+        self.moves = {
+            "THEOREM.md": "claims/p5/h22/fam/THEOREM.md",
+            "THEOREM_ALTERNATE.md":
+                "claims/p5/h22/fam/alternate/THEOREM_ALTERNATE.md",
+            "BOUNDARY.md":
+                "claims/p5/h22/fam/boundaries/BOUNDARY.md",
+        }
+        self.manifest_moves = [
+            {"old_path": o, "new_path": n, "claim_family": "p5/h22/fam"}
+            for o, n in self.moves.items()]
+
+    def _load(self):
+        return json.loads((self.tmp / "catalog" /
+                           "theorem-ledger.json").read_text())
+
+    def test_metadata_derived_structurally(self):
+        update_ledger(self.moves, self.tmp,
+                      manifest_moves=self.manifest_moves)
+        d = self._load()
+        by = {e["name"]: e for e in d["entries"]}
+        self.assertEqual(by["theorem"]["claim_package"],
+                         "claims/p5/h22/fam")
+        self.assertEqual(by["theorem"]["proof_variant"], "canonical")
+        self.assertIsNone(by["theorem"]["subpackage"])
+        self.assertEqual(by["alternate"]["proof_variant"], "alternate")
+        self.assertEqual(by["alternate"]["subpackage"], "alternate")
+        self.assertEqual(by["boundary"]["subpackage"], "boundaries")
+        self.assertIsNone(by["boundary"]["proof_variant"])
+        # status preserved
+        for e in d["entries"]:
+            self.assertEqual(e["status"], "verified")
+
+    def test_hashes_recomputed_for_moved_docs(self):
+        update_ledger(self.moves, self.tmp,
+                      manifest_moves=self.manifest_moves)
+        d = self._load()
+        for e in d["entries"]:
+            self.assertNotEqual(e["document_sha256_16"], "0" * 16)
+
+    def test_idempotent_second_pass(self):
+        update_ledger(self.moves, self.tmp,
+                      manifest_moves=self.manifest_moves)
+        first = self._load()
+        update_ledger(self.moves, self.tmp,
+                      manifest_moves=self.manifest_moves)
+        second = self._load()
+        self.assertEqual(first, second)
+
+    def test_foreign_cwd_operation(self):
+        elsewhere = pathlib.Path(tempfile.mkdtemp())
+        old = os.getcwd()
+        try:
+            os.chdir(elsewhere)
+            update_ledger(self.moves, self.tmp,
+                          manifest_moves=self.manifest_moves)
+        finally:
+            os.chdir(old)
+        d = self._load()
+        self.assertEqual(d["entries"][0]["claim_package"],
+                         "claims/p5/h22/fam")
+
+
 if __name__ == "__main__":
     unittest.main()

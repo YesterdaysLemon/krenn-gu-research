@@ -1,40 +1,43 @@
 #!/usr/bin/env python3
 """Execute manifest moves with git mv, rollback, and recovery reports.
 
-Phase 4/5 machinery.  Reads catalog/moved-paths.json and performs
-``git mv`` for the entries of an EXPLICITLY APPROVED batch, then flips
-those entries to "moved".  Pure moves only: no file content is touched
-here, so Git rename detection stays intact and reviewers can separate
-relocation from later reference rewrites.
+Phase 4/5 machinery, hardened in Phase 2.  Reads
+catalog/moved-paths.json and performs ``git mv`` for the entries of an
+EXPLICITLY APPROVED, FROZEN batch, then flips those entries to
+"moved" and records the executing batch id.  Pure moves only: no file
+content is touched here, so Git rename detection stays intact and
+reviewers can separate relocation from later reference rewrites.
 
 Approval model: classifier confidence is NOT operational approval.
 Every executable batch is a committed JSON file under
-``catalog/batches/`` recording who/what approved it, the base SHA, and
-the exact member list.  This tool requires ``--batch-id`` (a file
-under catalog/batches/) or ``--batch-file`` (an explicit path); there
-is no ``--status`` mode that can sweep an entire status class across
-the repository.
-
-Batch file format::
+``catalog/batches/`` that freezes the exact old_path -> new_path
+mappings it approves (see tools/migration/batch_contract.py):
 
     {
-      "batch_id": "p5-h22-pilot",
-      "approved_by": "human reviewer name or role",
-      "approved_at": "2026-08-06",
-      "base_sha": "f6d2cc4...",
-      "members": ["OLD_PATH", ...],
-      "notes": "optional"
+      "batch_id": "...",
+      "approved_by": "...",
+      "approved_at": "YYYY-MM-DD",
+      "base_sha": "...",
+      "manifest_sha256": "...",
+      "mapping_sha256": "...",
+      "member_count": N,
+      "moves": [{"old_path": "...", "new_path": "..."}, ...]
     }
 
-Safety contract (independently re-verified here, not trusted from the
-builder):
+Before the FIRST git mv, this tool verifies (refusing outright on any
+failure):
 
-  - every member must exist in the manifest with status
-    "proposed_high_confidence", "pilot", or "review_required"
-    (execution is allowed for review_required members ONLY when a
-    human placed them in a batch file — the batch itself is the
-    approval);
-  - already-moved members are skipped, not re-moved;
+  - approved_at is present;
+  - the batch base_sha resolves in this repository;
+  - member_count equals the number of recorded mappings;
+  - no duplicate sources or destinations;
+  - the batch mapping_sha256 matches its own moves (batch unaltered
+    since approval);
+  - every batch mapping equals the CURRENT manifest mapping
+    (manifest has not drifted since approval).
+
+Additional safety contract (independently re-verified here):
+
   - unique sources and unique FINAL destinations within the batch;
   - no source/destination overlap cycles inside the batch;
   - every source exists, every destination is free, every destination
@@ -59,16 +62,13 @@ import pathlib
 import subprocess
 import sys
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+
+from batch_contract import validate_batch as contract_validate
+
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 CATALOG = ROOT / "catalog"
 BATCH_DIR = CATALOG / "batches"
-
-# Member statuses a batch may legitimately execute.  The batch file
-# itself is the approval artifact; the manifest status only records
-# classifier confidence.
-EXECUTABLE_MEMBER_STATUSES = {
-    "proposed_high_confidence", "pilot", "review_required", "moved",
-}
 
 
 def git(*args: str) -> subprocess.CompletedProcess:
@@ -78,29 +78,31 @@ def git(*args: str) -> subprocess.CompletedProcess:
 
 def load_batch(batch_id: str | None,
                batch_file: str | None) -> tuple[dict, pathlib.Path]:
-    """Load and structurally validate a batch definition."""
+    """Load and structurally validate a frozen batch definition."""
     if batch_id is not None:
         path = BATCH_DIR / f"{batch_id}.json"
     else:
         path = pathlib.Path(batch_file)
     if not path.exists():
         raise SystemExit(
-            f"batch file not found: {path}. Create a committed batch "
-            "file under catalog/batches/ with approved_by, base_sha, "
-            "and members.")
+            f"batch file not found: {path}. Create a committed frozen "
+            "batch under catalog/batches/ (batch_id, approved_by, "
+            "approved_at, base_sha, manifest_sha256, mapping_sha256, "
+            "member_count, moves).")
     batch = json.loads(path.read_text(encoding="utf-8"))
-    for field in ("batch_id", "approved_by", "base_sha", "members"):
+    for field in ("batch_id", "approved_by", "approved_at", "base_sha",
+                  "moves", "member_count"):
         if field not in batch:
-            raise SystemExit(f"batch file missing required field: "
-                             f"{field} ({path})")
-    if not batch["members"]:
-        raise SystemExit(f"batch {batch['batch_id']} has no members")
-    if not isinstance(batch["members"], list):
-        raise SystemExit("batch members must be a list of old_paths")
+            raise SystemExit(
+                f"batch file missing required field: {field} ({path})")
+    if not batch["moves"]:
+        raise SystemExit(f"batch {batch['batch_id']} has no moves")
+    if not isinstance(batch["moves"], list):
+        raise SystemExit("batch moves must be a list of mappings")
     return batch, path
 
 
-def validate_batch(batch: list[dict], manifest: dict) -> list[str]:
+def validate_batch_geometry(batch: list[dict], manifest: dict) -> list:
     """Independently re-verify the batch; return a list of problems."""
     problems = []
     if manifest.get("collision_report"):
@@ -122,8 +124,8 @@ def validate_batch(batch: list[dict], manifest: dict) -> list[str]:
         if dst in seen_src and dst != src:
             problems.append(
                 f"overlap cycle: {dst} is both destination and source")
-        sp = pathlib.PurePosixPath(src)
         dp = pathlib.PurePosixPath(dst)
+        sp = pathlib.PurePosixPath(src)
         if ".." in dp.parts or dp.is_absolute():
             problems.append(f"invalid destination path: {dst}")
         if not sp.name or not dp.name:
@@ -146,34 +148,41 @@ def main() -> int:
 
     manifest_path = CATALOG / "moved-paths.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    by_src = {m["old_path"]: m for m in manifest["moves"]}
+    manifest_moves = manifest["moves"]
+    by_src = {m["old_path"]: m for m in manifest_moves}
 
+    # 1. Frozen-contract validation — refusal before the first git mv.
+    contract_problems = contract_validate(batch_def, ROOT,
+                                          manifest_moves)
+    if contract_problems:
+        print("BATCH CONTRACT VIOLATION — refusing before the first "
+              "git mv:")
+        for p in contract_problems:
+            print("  -", p)
+        return 2
+
+    # 2. Geometry validation.
+    geometry_problems = validate_batch_geometry(batch_def["moves"],
+                                                manifest)
+    if geometry_problems:
+        print("GEOMETRY VALIDATION FAILED — no moves performed:")
+        for p in geometry_problems:
+            print("  -", p)
+        return 1
+
+    # 3. Build the execution list; already-moved members are skipped,
+    #    not re-moved.
     batch = []
-    for src in batch_def["members"]:
-        m = by_src.get(src)
-        if m is None:
-            print(f"REFUSED: {src} is not in the manifest")
-            return 2
-        if m["status"] not in EXECUTABLE_MEMBER_STATUSES:
-            print(f"REFUSED: {src} has manifest status "
-                  f"{m['status']!r}; only proposed/pilot/review/"
-                  "moved members may appear in a batch")
-            return 2
+    for bm in batch_def["moves"]:
+        m = by_src[bm["old_path"]]
         if m["status"] == "moved":
-            print(f"skipping already-moved: {src}")
+            print(f"skipping already-moved: {bm['old_path']}")
             continue
         batch.append(m)
 
     if not batch:
         print("nothing to move (all batch members already moved)")
         return 0
-
-    problems = validate_batch(batch, manifest)
-    if problems:
-        print("VALIDATION FAILED — no moves performed:")
-        for p in problems:
-            print("  -", p)
-        return 1
 
     dirty = git("status", "--porcelain").stdout.strip()
     if dirty and not args.dry_run:
@@ -203,8 +212,8 @@ def main() -> int:
 
     print(f"batch {batch_def['batch_id']!r} approved by "
           f"{batch_def['approved_by']!r} "
-          f"(base {str(batch_def['base_sha'])[:12]}), "
-          f"{len(batch)} members")
+          f"(base {str(batch_def['base_sha'])[:12]}, approved "
+          f"{batch_def['approved_at']}), {len(batch)} members")
 
     performed = []
     try:
@@ -233,7 +242,7 @@ def main() -> int:
         report_path = CATALOG / f"recovery-{stamp}.json"
         report_path.write_text(json.dumps({
             "batch": {k: v for k, v in batch_def.items()
-                      if k != "members"},
+                      if k != "moves"},
             "failure": str(exc),
             "performed_before_failure": [m["old_path"] for m in
                                          performed],
@@ -261,7 +270,8 @@ def main() -> int:
     manifest_path.write_text(
         json.dumps(manifest, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8")
-    print(f"\nmoved: {len(performed)} files; manifest updated")
+    print(f"\nmoved: {len(performed)} files; manifest updated "
+          f"(executed_batch={batch_def['batch_id']!r})")
     return 0
 
 

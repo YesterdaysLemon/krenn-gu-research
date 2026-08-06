@@ -655,6 +655,67 @@ def find_stale_bare_refs(text: str, rel: str,
     return hits
 
 
+
+# Executed-batch provenance invariant (Phase 2, item 1C).  Every
+# manifest entry with status "moved" must name an executed_batch, the
+# named batch file must exist, and the batch must freeze the entry's
+# exact old/new mapping.  Batch provenance is a durable integrity
+# invariant, not a one-time record.
+def check_executed_provenance(files: list[str]) -> None:
+    manifest_path = ROOT / "catalog" / "moved-paths.json"
+    if not manifest_path.exists():
+        print("[10] provenance: no manifest, nothing to enforce")
+        return
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    moved = [m for m in manifest.get("moves", [])
+             if m.get("status") == "moved"]
+    problems = []
+    batch_cache = {}
+    for m in moved:
+        bid = m.get("executed_batch")
+        if not bid:
+            problems.append(
+                f"moved entry lacks executed_batch: {m['old_path']}")
+            continue
+        if bid not in batch_cache:
+            bpath = ROOT / "catalog" / "batches" / f"{bid}.json"
+            if not bpath.exists():
+                problems.append(
+                    f"executed_batch file missing for {m['old_path']}: "
+                    f"catalog/batches/{bid}.json")
+                batch_cache[bid] = None
+                continue
+            try:
+                batch_cache[bid] = json.loads(
+                    bpath.read_text(encoding="utf-8"))
+            except json.JSONDecodeError:
+                problems.append(
+                    f"executed_batch file unparseable: {bid}")
+                batch_cache[bid] = None
+                continue
+        b = batch_cache[bid]
+        if b is None:
+            continue
+        bmap = {mv["old_path"]: mv["new_path"]
+                for mv in b.get("moves", [])}
+        if m["old_path"] not in bmap:
+            problems.append(
+                f"batch {bid} does not contain {m['old_path']}")
+        elif bmap[m["old_path"]] != m["new_path"]:
+            problems.append(
+                f"batch {bid} mapping differs for {m['old_path']}: "
+                f"batch {bmap[m['old_path']]} vs manifest "
+                f"{m['new_path']}")
+    if problems:
+        failures.append(
+            "executed-batch provenance violations:\n  "
+            + "\n  ".join(problems[:30])
+            + (f"\n  ... ({len(problems) - 30} more)"
+               if len(problems) > 30 else ""))
+    else:
+        print(f"[10] provenance: {len(moved)} moved entries all "
+              f"reference a batch file with matching mappings")
+
 def main() -> int:
     files = tracked_files()
     check_compiles(files)
@@ -664,6 +725,7 @@ def main() -> int:
     check_portability(files)
     check_root_layout(files)
     check_stale_paths(files)
+    check_executed_provenance(files)
     check_fast_verifiers()
     show_versions()
     if failures:
