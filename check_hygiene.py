@@ -195,8 +195,20 @@ NULL_EXPLAIN_VALUES = {
 }
 
 
-def _sha16(path: pathlib.Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()[:16]
+def _blob_sha16(rel: str) -> str:
+    """SHA-256 of the tracked git blob, not the working-tree bytes.
+
+    Hashing the blob makes the hash identical on every platform: git
+    normalizes line endings at commit time (LF in the index), while the
+    working tree may be CRLF on Windows.  The ledger pins the committed
+    content, which is what a clean checkout reproduces.
+    """
+    proc = subprocess.run(
+        ["git", "show", f":{rel}"], cwd=ROOT, capture_output=True,
+    )
+    if proc.returncode != 0:
+        raise ValueError(f"not a tracked blob: {rel}")
+    return hashlib.sha256(proc.stdout).hexdigest()[:16]
 
 
 def check_ledger(files: list[str]) -> None:
@@ -222,7 +234,7 @@ def check_ledger(files: list[str]) -> None:
         else:
             recorded = entry.get("document_sha256_16")
             if recorded is not None:
-                actual = _sha16(doc_path)
+                actual = _blob_sha16(doc)
                 if actual != recorded:
                     hash_bad += 1
                     issues.append(

@@ -38,7 +38,7 @@
     "verified_finite": "computer-assisted finite certificate (SAT/DRAT chain)",
     "verified_generic": "proved over the component function field at the generic point; divisor/boundary exclusions listed in assumptions",
     "policy": "modular evidence, numerical experiments, timeouts, and failed solver runs are never proofs; they are corroboration or diagnostics only",
-    "document_sha256_16": "first 16 hex chars of the document SHA-256; check_hygiene.py recomputes and compares every non-null value"
+    "document_sha256_16": "first 16 hex chars of the SHA-256 of the committed git blob (git show :path), not the working-tree bytes; identical on every platform because the index stores LF. check_hygiene.py recomputes and compares every non-null value."
   },
   "global_status": "UNRESOLVED",
   "component_census": {
@@ -53,7 +53,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "924c5fce1bb7146e",
+      "document_sha256_16": "1dfda3a6e5a786ae",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -68,7 +68,7 @@
     {
       "name": "Frontier reduction: any P5->Delta3 restriction forces an H31 or H22 local family",
       "document": "P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md",
-      "document_sha256_16": "7d817f91a5a24512",
+      "document_sha256_16": "048ca8b9e7d29755",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact reductions over C",
@@ -86,7 +86,7 @@
     {
       "name": "Master theorem schema (O-Cover, O-H31, O-H22)",
       "document": "P5_DELTA3_OBLIGATION_LEDGER.md",
-      "document_sha256_16": "d67d63c718c2ed23",
+      "document_sha256_16": "8db9f2224b0547e2",
       "status": "framework",
       "assumptions_and_excluded_divisors": [
         "(O-Cover) explicit finite closed cover of X_nz up to symmetry",
@@ -105,7 +105,7 @@
     {
       "name": "Generic-to-pointwise specialization meta-theorem",
       "document": "P5_POINTWISE_SPECIALIZATION_META_THEOREM.md",
-      "document_sha256_16": "746bfc0f989606ce",
+      "document_sha256_16": "e2fc66d372f0a870",
       "status": "verified",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -120,7 +120,7 @@
     {
       "name": "Divisor extraction pass machinery (M1)",
       "document": "research_snapshots/2026-08-04-p5-delta3-obligation-ledger/scripts/extract_p5_h31_ninth_explicit_divisors.py",
-      "document_sha256_16": "7188bcc76ab7a9f8",
+      "document_sha256_16": "3288a66c7cb8d0e7",
       "status": "verified",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -137,7 +137,7 @@
     {
       "name": "n=6 complete: no complex solution, all d>=3",
       "document": "SIX_VERTEX_CERTIFICATE.md",
-      "document_sha256_16": "9bf3fec224caecfa",
+      "document_sha256_16": "f601555e3ab0ade9",
       "status": "verified_finite",
       "assumptions_and_excluded_divisors": [
         "exhaustive support reduction",
@@ -159,7 +159,7 @@
     {
       "name": "Eight-vertex 4-regular exclusion",
       "document": "EIGHT_VERTEX_4REGULAR_CERTIFICATE.md",
-      "document_sha256_16": "2267d251a2aaeccd",
+      "document_sha256_16": "05183ec03825212a",
       "status": "verified_finite",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -176,7 +176,7 @@
     {
       "name": "Eight-vertex degree-four frontier through 17 edges",
       "document": "EIGHT_VERTEX_17EDGE_CERTIFICATE.md",
-      "document_sha256_16": "c64fdca07c8caa25",
+      "document_sha256_16": "b27a7b62d225e1c1",
       "status": "verified_finite",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -194,7 +194,7 @@
     {
       "name": "Eight-vertex full singleton macro-family (7,938 labelled supports)",
       "document": "EIGHT_VERTEX_FULL_SINGLETON_FAMILY_CERTIFICATE.md",
-      "document_sha256_16": "823b1cc977b69c36",
+      "document_sha256_16": "a15cde86b6fb232e",
       "status": "verified_finite",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -211,7 +211,7 @@
     {
       "name": "Ten-vertex 5-regular 25-edge exclusion (105 entries)",
       "document": "TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md",
-      "document_sha256_16": "6bf71eb01630c1a5",
+      "document_sha256_16": "e3490ba8e276f996",
       "status": "verified_finite",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -229,7 +229,7 @@
     {
       "name": "Order-14 equality families: six types closed, three partial",
       "document": "FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md",
-      "document_sha256_16": "a398289fe078d034",
+      "document_sha256_16": "3572d015ab709d8f",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -247,7 +247,7 @@
     {
       "name": "Four Regular Balanced Bridge Obstruction",
       "document": "FOUR_REGULAR_BALANCED_BRIDGE_OBSTRUCTION.md",
-      "document_sha256_16": "9091a32f393e28ed",
+      "document_sha256_16": "f0c0f8ae0dfe9ba0",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact symbolic proof over C",
@@ -264,7 +264,7 @@
     {
       "name": "Arbitrary Order Degree Six Kotzig Port Obstruction",
       "document": "ARBITRARY_ORDER_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
-      "document_sha256_16": "0a5cc70c377f376a",
+      "document_sha256_16": "02601a7a8959f76c",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact symbolic proof over C",
@@ -281,7 +281,7 @@
     {
       "name": "Four Blocker Ideal Obstruction",
       "document": "FOUR_BLOCKER_IDEAL_OBSTRUCTION.md",
-      "document_sha256_16": "73d9dc6802581f8e",
+      "document_sha256_16": "69c6b28c7be67181",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact symbolic proof over C",
@@ -298,7 +298,7 @@
     {
       "name": "Exact Three Blocker Permanent Rank Lemma",
       "document": "EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md",
-      "document_sha256_16": "c5149c49a995e87f",
+      "document_sha256_16": "aabba14d7d3b5407",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact symbolic proof over C",
@@ -315,7 +315,7 @@
     {
       "name": "Support Three P5 Contraction Subrank",
       "document": "SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md",
-      "document_sha256_16": "5ff8155eedc27893",
+      "document_sha256_16": "892f2445b19bf7e3",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact symbolic proof over C",
@@ -332,7 +332,7 @@
     {
       "name": "Fourth Order Permanent Subrank Obstruction",
       "document": "FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md",
-      "document_sha256_16": "7b87f6d540cac49b",
+      "document_sha256_16": "2b4e18cb0ce60d64",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact symbolic proof over C",
@@ -350,7 +350,7 @@
     {
       "name": "Support-four P5 contraction restriction (positive, shows extension is false)",
       "document": "SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md",
-      "document_sha256_16": "cf6fecfa856231fa",
+      "document_sha256_16": "03943207e990fb12",
       "status": "verified",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -365,7 +365,7 @@
     {
       "name": "Generic marked H31 fibre empty: all rank one triangle",
       "document": "P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "311cd0ee24e6215b",
+      "document_sha256_16": "a333d92de5b2278a",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -384,7 +384,7 @@
     {
       "name": "Generic marked H31 fibre empty: coincident support",
       "document": "P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "66cd7a7fdf5e2dae",
+      "document_sha256_16": "f58710072d552bd1",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -403,7 +403,7 @@
     {
       "name": "Generic marked H31 fibre empty: coincident support rank one star",
       "document": "P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "8516673bfb7bffd5",
+      "document_sha256_16": "c06364a6a0cb77bc",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -422,7 +422,7 @@
     {
       "name": "Generic marked H31 fibre empty: common active binary triangle",
       "document": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "73596e624c6a6e09",
+      "document_sha256_16": "4712d037cb90606c",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -441,7 +441,7 @@
     {
       "name": "Generic marked H31 fibre empty: common center kernel star",
       "document": "P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "0fed90c1b7a37a36",
+      "document_sha256_16": "4414795d961c9ef7",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -460,7 +460,7 @@
     {
       "name": "Generic marked H31 fibre empty: common kernel vertical triangle",
       "document": "P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "3b49c47626131fa1",
+      "document_sha256_16": "b30a25b6fdd3565a",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -479,7 +479,7 @@
     {
       "name": "Generic marked H31 fibre empty: common singleton",
       "document": "P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "36669ebc45e73e2a",
+      "document_sha256_16": "022176181572e950",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -498,7 +498,7 @@
     {
       "name": "Generic marked H31 fibre empty: diagonal quadric elliptic",
       "document": "P5_H31_DIAGONAL_QUADRIC_ELLIPTIC_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "e39af356577f61c8",
+      "document_sha256_16": "9d7a708209cc6010",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -517,7 +517,7 @@
     {
       "name": "Generic marked H31 fibre empty: directed zero divisor triangle components",
       "document": "P5_H31_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "f4c45391a5a2a573",
+      "document_sha256_16": "d556465084e154cd",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -536,7 +536,7 @@
     {
       "name": "Generic marked H31 fibre empty: disjoint mixed star",
       "document": "P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "4dccb4c70250b1c2",
+      "document_sha256_16": "1e14014ec98892a6",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -555,7 +555,7 @@
     {
       "name": "Generic marked H31 fibre empty: disjoint secant",
       "document": "P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "de708ee14055f6aa",
+      "document_sha256_16": "4f74ef079d7454c2",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -574,7 +574,7 @@
     {
       "name": "Generic marked H31 fibre empty: eisenstein norm",
       "document": "P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "53a4fcf813344ea8",
+      "document_sha256_16": "7254c16c2f6ad64e",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -593,7 +593,7 @@
     {
       "name": "Generic marked H31 fibre empty: embedded p3",
       "document": "P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "53e1f2ab6b1719d9",
+      "document_sha256_16": "27b6b67b8a6e2eda",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -612,7 +612,7 @@
     {
       "name": "Generic marked H31 fibre empty: equal support common factor",
       "document": "P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "0c4375caedb413c9",
+      "document_sha256_16": "e175ade855ff8608",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -631,7 +631,7 @@
     {
       "name": "Generic marked H31 fibre empty: equal support sixfold",
       "document": "P5_H31_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "c149ab4837190031",
+      "document_sha256_16": "60696c973c7e2ffe",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -651,7 +651,7 @@
     {
       "name": "Generic marked H31 fibre empty: full support tangent",
       "document": "P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "ff0f61b826e2685a",
+      "document_sha256_16": "adbea2e822ad80e1",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -670,7 +670,7 @@
     {
       "name": "Generic marked H31 fibre empty: mixed orientation",
       "document": "P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "b03b2e944e489708",
+      "document_sha256_16": "a1b4b68aa2d49784",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -689,7 +689,7 @@
     {
       "name": "Generic marked H31 fibre empty: one three",
       "document": "P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "9d781dbd8ed9894b",
+      "document_sha256_16": "2102d231dc6936a4",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -708,7 +708,7 @@
     {
       "name": "Generic marked H31 fibre empty: six dimensional",
       "document": "P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "c1af9f8ecdfc975b",
+      "document_sha256_16": "2f9b72fd4dab026b",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -727,7 +727,7 @@
     {
       "name": "Generic marked H31 fibre empty: split center mixed star",
       "document": "P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "7bbf11df7d27c5e0",
+      "document_sha256_16": "a24dfd6afdb02cac",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -746,7 +746,7 @@
     {
       "name": "Generic marked H31 fibre empty: transverse common factor",
       "document": "P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "33baaf262fefa0fa",
+      "document_sha256_16": "e9856c65a328bfb2",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -765,7 +765,7 @@
     {
       "name": "Generic marked H31 fibre empty: two rank two spoke mixed star",
       "document": "P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "0a0caaf5be9a44ba",
+      "document_sha256_16": "7712f94bddec0b1c",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -784,7 +784,7 @@
     {
       "name": "Generic marked H31 fibre empty: unequal complement common kernel",
       "document": "P5_H31_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "22ed050835787696",
+      "document_sha256_16": "900239027d4d86b6",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -803,7 +803,7 @@
     {
       "name": "Generic marked H31 fibre empty: unequal endpoint inward star",
       "document": "P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "0910891dc0182108",
+      "document_sha256_16": "5e0c4fc7842ef2b8",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -822,7 +822,7 @@
     {
       "name": "Generic weighted H22 fibre empty: all rank one triangle",
       "document": "P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "a4fcffb6e6e7f05d",
+      "document_sha256_16": "a7971d4a6eb89c2a",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -842,7 +842,7 @@
     {
       "name": "Generic weighted H22 fibre empty: coincident support",
       "document": "P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "6f857eabce32362a",
+      "document_sha256_16": "b71e0f40c3041a66",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -862,7 +862,7 @@
     {
       "name": "Generic weighted H22 fibre empty: common center kernel star component r zero divisor",
       "document": "P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "61072c056fea81ff",
+      "document_sha256_16": "6ab6e9e9273e41a7",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -882,7 +882,7 @@
     {
       "name": "Generic weighted H22 fibre empty: common singleton",
       "document": "P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "da64a3ee55d5dfa3",
+      "document_sha256_16": "3462ef1bd6ef1274",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -902,7 +902,7 @@
     {
       "name": "Generic weighted H22 fibre empty: diagonal quadric",
       "document": "P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "111600d991aa9c4f",
+      "document_sha256_16": "bd21d0aa595a4cd4",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -922,7 +922,7 @@
     {
       "name": "Generic weighted H22 fibre empty: directed zero divisor triangle components",
       "document": "P5_H22_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "6edd321a940f9f0d",
+      "document_sha256_16": "c24d246ef284f21b",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -942,7 +942,7 @@
     {
       "name": "Generic weighted H22 fibre empty: disjoint mixed star",
       "document": "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "bb66ea92d650db7f",
+      "document_sha256_16": "9bd9c67e4eff422f",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -962,7 +962,7 @@
     {
       "name": "Generic weighted H22 fibre empty: disjoint secant",
       "document": "P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "9d82875a227921c3",
+      "document_sha256_16": "dd9ec7910e645df8",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -982,7 +982,7 @@
     {
       "name": "Generic weighted H22 fibre empty: eisenstein norm",
       "document": "P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "ac1ee977c8afe536",
+      "document_sha256_16": "d9b4d5a14082c963",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1002,7 +1002,7 @@
     {
       "name": "Generic weighted H22 fibre empty: embedded p3",
       "document": "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "dfc2ca99ac668605",
+      "document_sha256_16": "3846fa784dbbd6f0",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1022,7 +1022,7 @@
     {
       "name": "Generic weighted H22 fibre empty: equal support common factor",
       "document": "P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "44c4156eb6f3a32d",
+      "document_sha256_16": "692f3eaf86f288ce",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1042,7 +1042,7 @@
     {
       "name": "Generic weighted H22 fibre empty: equal support sixfold",
       "document": "P5_H22_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "950c958bff6f52e8",
+      "document_sha256_16": "5841fee10eca3ff9",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1063,7 +1063,7 @@
     {
       "name": "Generic weighted H22 fibre empty: first rank two",
       "document": "P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "e8f580faa7017986",
+      "document_sha256_16": "a0ba6dc8e2090f1b",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1083,7 +1083,7 @@
     {
       "name": "Generic weighted H22 fibre empty: full support tangent",
       "document": "P5_H22_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "7bb41c1bde78cb3c",
+      "document_sha256_16": "97415e74c5fe15c0",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1103,7 +1103,7 @@
     {
       "name": "Generic weighted H22 fibre empty: mixed orientation",
       "document": "P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "cb1c37ab04b7e65c",
+      "document_sha256_16": "cf03b91b99e027b0",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1123,7 +1123,7 @@
     {
       "name": "Generic weighted H22 fibre empty: one three components",
       "document": "P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "63ade8e6320a258d",
+      "document_sha256_16": "8f1c9569a222db66",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1143,7 +1143,7 @@
     {
       "name": "Generic weighted H22 fibre empty: six dimensional",
       "document": "P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "0078d2c536d84060",
+      "document_sha256_16": "64e4e3817a8643b0",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1163,7 +1163,7 @@
     {
       "name": "Generic weighted H22 fibre empty: split center mixed star",
       "document": "P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "f584ae7b9c4368c6",
+      "document_sha256_16": "b9ccbac26df4b81f",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1183,7 +1183,7 @@
     {
       "name": "Generic weighted H22 fibre empty: transverse common factor",
       "document": "P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "5b1c85f89cd45b9c",
+      "document_sha256_16": "fe9e5692a1bcd6f5",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1203,7 +1203,7 @@
     {
       "name": "Generic weighted H22 fibre empty: two rank two spoke mixed star",
       "document": "P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "4e023750f2428cd4",
+      "document_sha256_16": "a591525420657efe",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1223,7 +1223,7 @@
     {
       "name": "Generic weighted H22 fibre empty: unequal endpoint inward star component finite d01 branch a exceptional divisor",
       "document": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "faf4c1c2cbbb6166",
+      "document_sha256_16": "edec92a721c60ece",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1243,7 +1243,7 @@
     {
       "name": "Generic weighted H22 fibre empty: unequal endpoint inward star component finite d01 branch b",
       "document": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "73fcbabd4eefd114",
+      "document_sha256_16": "afb5ccaf7f342313",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1263,7 +1263,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "924c5fce1bb7146e",
+      "document_sha256_16": "1dfda3a6e5a786ae",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -1283,7 +1283,7 @@
     {
       "name": "Exhaustiveness: 25 component closures cover the all-pair-rank exceptional locus",
       "document": "P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md",
-      "document_sha256_16": "a55021e711a1a47a",
+      "document_sha256_16": "f49e650463607393",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "within the all-pair-rank exceptional-graph reduction",
@@ -1301,7 +1301,7 @@
     {
       "name": "Eighth-component weighted H22 closure - canonical determinantal proof",
       "document": "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "bb66ea92d650db7f",
+      "document_sha256_16": "9bd9c67e4eff422f",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1335,7 +1335,7 @@
     {
       "name": "Eighth-component boundary closures (slopes r=0,+-1,inf; parameter pivots; coupled divisor; af=+-1 sheets; coefficient-quadratic branch; linear slopes)",
       "document": "P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md",
-      "document_sha256_16": "d0891bda0555cce6",
+      "document_sha256_16": "5d39e174aaa26d01",
       "status": "partial",
       "assumptions_and_excluded_divisors": [
         "over the generic component point",
@@ -1355,7 +1355,7 @@
     {
       "name": "Eighth-component torus quotient and certificate-divisor frontier",
       "document": "P5_H22_DISJOINT_MIXED_STAR_TORUS_QUOTIENT.md",
-      "document_sha256_16": "9e61ee13f3d37309",
+      "document_sha256_16": "a5a61d6ad03ff9ea",
       "status": "verified",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1370,7 +1370,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "924c5fce1bb7146e",
+      "document_sha256_16": "1dfda3a6e5a786ae",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1385,7 +1385,7 @@
     {
       "name": "Eight Vertex Balanced All Bridge Set Tree Obstruction Withdrawn Overstrong",
       "document": "EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md",
-      "document_sha256_16": "b761ee695d646b5c",
+      "document_sha256_16": "b0c3de63671245f1",
       "status": "withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1400,7 +1400,7 @@
     {
       "name": "Twelve Vertex Degree Six Kotzig Port Obstruction Withdrawn Legacy",
       "document": "TWELVE_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION_WITHDRAWN_LEGACY.md",
-      "document_sha256_16": "6189bb2738050d84",
+      "document_sha256_16": "7986d2fe8cbc0670",
       "status": "withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1415,7 +1415,7 @@
     {
       "name": "State Lift Cycle Fibre Lemma",
       "document": "STATE_LIFT_CYCLE_FIBRE_LEMMA.md",
-      "document_sha256_16": "5c3d60c92828a357",
+      "document_sha256_16": "83b753ee04d42aa6",
       "status": "withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1430,7 +1430,7 @@
     {
       "name": "P4 Mixed Two Rank Two Triangle Obstruction Withdrawn Pending Borel Audit",
       "document": "P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md",
-      "document_sha256_16": "0316b9a6d49cd00d",
+      "document_sha256_16": "acb05d9680a0d499",
       "status": "withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1445,7 +1445,7 @@
     {
       "name": "P4 Rank Two Relation Star Obstruction Withdrawn Overstrong",
       "document": "P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md",
-      "document_sha256_16": "2f8fd74d32b6caf6",
+      "document_sha256_16": "bf12acba54452a66",
       "status": "withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1460,7 +1460,7 @@
     {
       "name": "P4 Resonant Flat Triangle Classification Withdrawn Overstrong",
       "document": "P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md",
-      "document_sha256_16": "fcee828cb6d3b2b0",
+      "document_sha256_16": "c4f517ca65aceb85",
       "status": "withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1475,7 +1475,7 @@
     {
       "name": "Eight Vertex Degree Six Kotzig Port Obstruction",
       "document": "EIGHT_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
-      "document_sha256_16": "41156a8acbb976bf",
+      "document_sha256_16": "53c148274a32ce99",
       "status": "partially_withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1490,7 +1490,7 @@
     {
       "name": "Ten Vertex Degree Six Kotzig Port Obstruction",
       "document": "TEN_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
-      "document_sha256_16": "979ca286196a7901",
+      "document_sha256_16": "9dd2542dda67bbf2",
       "status": "partially_withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1505,7 +1505,7 @@
     {
       "name": "Full Admissible Potential Cone Lemma",
       "document": "FULL_ADMISSIBLE_POTENTIAL_CONE_LEMMA.md",
-      "document_sha256_16": "9c6fc2eb936fef7f",
+      "document_sha256_16": "61dbab22c09f7724",
       "status": "partially_withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1520,7 +1520,7 @@
     {
       "name": "Six Permuted Potentials Lemma",
       "document": "SIX_PERMUTED_POTENTIALS_LEMMA.md",
-      "document_sha256_16": "d0d578c56a03afb3",
+      "document_sha256_16": "5772acd528f67aec",
       "status": "partially_withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1535,7 +1535,7 @@
     {
       "name": "Weighted H22 disjoint mixed-star working note",
       "document": "P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md",
-      "document_sha256_16": "b34b53d2800008d9",
+      "document_sha256_16": "62c493a2bdb8c372",
       "status": "superseded",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1550,7 +1550,7 @@
     {
       "name": "Transfer track: root-of-unity selector, hafnian lift, quotient catalogue",
       "document": "ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md",
-      "document_sha256_16": "0bf5c57a2d827853",
+      "document_sha256_16": "26f3ff99dcf8ac15",
       "status": "exploratory",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1565,7 +1565,7 @@
     {
       "name": "P6/P7 symbolic reductions (ARBITRARY_PERMANENT_* family)",
       "document": "SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md",
-      "document_sha256_16": "aeb7498f45427d2e",
+      "document_sha256_16": "3f6147c628581929",
       "status": "exploratory",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1580,7 +1580,7 @@
     {
       "name": "Component 19/20 and embedded-P3 boundary candidates (23 CANDIDATE docs)",
       "document": "P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md",
-      "document_sha256_16": "4bfafa0aca56be83",
+      "document_sha256_16": "83d229b1d23233a2",
       "status": "candidate",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
