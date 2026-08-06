@@ -7,37 +7,33 @@ catalog/moved-paths.json with, for every classified file:
   { "old_path", "new_path", "reason", "status", "claim_family",
     "confidence" }
 
-Statuses (confidence-gated; only explicitly approved batches are
-executable):
+plus a collision report, destination-subtree counts, and the estimated
+post-migration root entry count.  Statuses:
 
   "moved"           -> already executed by execute_moves.py;
   "pilot"           -> the disjoint mixed-star H22 pilot package
                        (approved and executed in the first PR);
-  "approved"        -> high-confidence classification, approved for
-                       execution as a named batch;
-  "review_required" -> medium- or low-confidence classification; a
-                       PROPOSAL only. execute_moves.py refuses to move
-                       these until a human promotes them to
-                       "approved";
+  "proposed_high_confidence"
+                    -> classifier says high confidence; NOT executable
+                       without a committed batch file;
+  "review_required" -> medium/low confidence proposal;
   "unclassified"    -> not in this manifest at all; see
                        catalog/unclassified-files.json.
 
-Sources are validated against the classification's base ref (its
-starting_commit), because old_path names the pre-migration location;
-the executor independently re-verifies executability against HEAD.
+The ``counts`` summary section is always DERIVED from the move records
+via :func:`recompute_manifest_summary`, both at build time and after
+``execute_moves.py`` flips statuses (which calls the same function).
+This keeps summary and records internally consistent by construction.
 
 Guarantees enforced here (checked AFTER every destination
 transformation, including the pilot layout rules):
-  - no duplicate final destination paths;
+  - no duplicate destination paths;
   - no source appears twice;
   - no source/destination overlap cycles (a file cannot move onto a
     path that is itself a source being moved);
   - destination paths normalized (posix, no '.'/'..', no duplicate
-    '/').
-
-The projected post-migration root count is split into mechanically
-approved moves, review-required proposals, and truly unclassified
-files, so the estimate is honest about what still needs human review.
+    '/');
+  - the set of moved sources is a subset of tracked root files.
 
 This tool moves nothing.
 """
@@ -69,6 +65,15 @@ PILOT_BOUNDARY_MARKERS = (
     "PARAMETER_PIVOT_BOUNDARY", "SLOPE_R1_BINARY",
     "SLOPE_RM1_BINARY", "TORUS_QUOTIENT", "ZERO_SLOPE_BOUNDARY",
 )
+
+# Root entries retained by the target architecture (used by the
+# moved-only root projection; observed values always win in reports).
+FIXED_ROOT = {"README.md", "LICENSE", "CONTRIBUTING.md",
+              "CITATION.cff", "pyproject.toml", "requirements.txt",
+              "requirements.lock.txt", "Containerfile",
+              ".gitignore"}
+FIXED_DIRS = {".github", "claims", "docs", "src", "tools", "tests",
+              "catalog", "research_snapshots", "research_figures"}
 
 # Only high-confidence classifications are auto-approved.  Medium and
 # low confidence stay review_required until a human promotes them.
@@ -110,12 +115,7 @@ def normalize(dest: str) -> str:
 
 
 def status_for(e: dict, is_pilot: bool, already_moved: set[str]) -> str:
-    """Confidence-gated status assignment.
-
-    No confidence level is operational approval: high confidence
-    yields "proposed_high_confidence", which a human must promote into
-    a named batch before execution.
-    """
+    """Confidence-gated status assignment."""
     if e["old_path"] in already_moved:
         return "moved"
     if is_pilot:
@@ -125,7 +125,88 @@ def status_for(e: dict, is_pilot: bool, already_moved: set[str]) -> str:
     return "review_required"
 
 
-def validate_records(records: list[dict]) -> tuple[list, list, list]:
+def recompute_manifest_summary(manifest: dict, root: pathlib.Path,
+                               classification: dict | None = None) -> dict:
+    """Derive the manifest's ``counts`` section from its move records.
+
+    Single source of truth for the summary: after ``execute_moves.py``
+    flips statuses it calls this function, so summary and records agree
+    by construction.  Root-projection inputs come from the
+    classification when available (build time), else are re-derived
+    from the base ref recorded in the manifest (post-execution).
+    """
+    records = manifest["moves"]
+    moved = [r for r in records if r["status"] == "moved"]
+    pilot = [r for r in records if r["status"] == "pilot"]
+    proposed = [r for r in records
+                if r["status"] == "proposed_high_confidence"]
+    review = [r for r in records if r["status"] == "review_required"]
+
+    # Base root tree is ALWAYS derived from git at the recorded
+    # starting commit, never from classification entries (which contain
+    # only classified files, not the full base root).  This makes the
+    # projection independent of how many files are classified.
+    start = manifest.get("starting_commit")
+    out = subprocess.run(
+        ["git", "ls-tree", "-r", "--name-only", start], cwd=root,
+        capture_output=True, text=True, check=True)
+    tree = [l for l in out.stdout.splitlines() if l.strip()]
+    base_files = sorted(f for f in tree if "/" not in f)
+    base_dirs = sorted({f.split("/")[0] for f in tree if "/" in f})
+    if classification is not None:
+        unclassified = classification["unclassified_count"]
+    else:
+        unclassified = manifest.get("counts", {}).get("unclassified", 0)
+
+    def remaining_root_if(moves: set) -> int:
+        left = [f for f in base_files if f not in moves]
+        dirs = set(base_dirs)
+        for m in moves:
+            dirs.discard(m.split("/")[0])
+        new_dirs = {r["new_path"].split("/")[0] for r in records
+                    if r["old_path"] in moves}
+        return len(left) + len(dirs | new_dirs | FIXED_DIRS)
+
+    mechanically_moved = {r["old_path"] for r in moved + pilot}
+    all_proposed = mechanically_moved | {r["old_path"] for r in proposed}
+    all_classified = all_proposed | {r["old_path"] for r in review}
+
+    subtree = collections.Counter(
+        r["new_path"].split("/", 2)[0] if "/" in r["new_path"]
+        else r["new_path"] for r in records)
+    manifest["destination_subtree_counts"] = dict(
+        sorted(subtree.items(), key=lambda kv: -kv[1]))
+
+    counts = {
+        "total_classified_moves": len(records),
+        "moved": len(moved),
+        "pilot": len(pilot),
+        "proposed_high_confidence": len(proposed),
+        "review_required": len(review),
+        "unclassified": unclassified,
+        "root_files_before": len(base_files),
+        "root_dirs_before": len(base_dirs),
+        "root_entries_before": len(base_files) + len(base_dirs),
+        "projected_root_if_moved_only":
+            remaining_root_if(mechanically_moved),
+        "projected_root_if_high_confidence_batches_executed":
+            remaining_root_if(all_proposed),
+        "projected_root_if_all_classified_executed":
+            remaining_root_if(all_classified),
+        "projection_note": "unclassified files are not members of any "
+                           "move set, so every projection already "
+                           "leaves them at the root; do not add "
+                           "unclassified again",
+    }
+    # Preserve collision/cycle tallies set at build time.
+    for key in ("collisions", "double_moves", "overlap_cycles"):
+        if key in manifest.get("counts", {}):
+            counts[key] = manifest["counts"][key]
+    manifest["counts"] = counts
+    return manifest
+
+
+def validate_records(records: list) -> tuple:
     """Post-transformation validation of final destinations.
 
     Returns (collisions, double_moves, cycles).  Checked on the FINAL
@@ -163,11 +244,9 @@ def main() -> int:
     tracked = tracked_files(base_ref)
 
     # Preserve any moves already executed (status moved) so a rebuild
-    # does not re-plan them.
-    # Moves that are already physically applied at HEAD (source gone,
-    # destination present) are recorded as moved even if a prior
-    # manifest never tracked them (e.g. the infrastructure-phase
-    # ledger relocation).
+    # does not re-plan them.  Moves that are already physically applied
+    # at HEAD (source gone, destination present) are recorded as moved
+    # even if a prior manifest never tracked them.
     head_tracked = tracked_files(None)
     already_moved = set()
     prior_executed_batch = {}
@@ -183,7 +262,6 @@ def main() -> int:
 
     records, seen_src = [], set()
     collisions, double_moves, cycles = [], [], []
-    subtree_counts = collections.Counter()
 
     for e in entries:
         old = e["old_path"]
@@ -219,63 +297,12 @@ def main() -> int:
             rec["status"] = "moved"
             rec["reason"] += " [already applied at HEAD]"
         records.append(rec)
-        subtree_counts[dst.split("/", 2)[0]
-                       if "/" in dst else dst] += 1
 
-    # Final-destination uniqueness (post-transformation).
-    seen_dst = {}
-    for r in records:
-        if r["new_path"] in seen_dst:
-            collisions.append({
-                "new_path": r["new_path"],
-                "sources": [seen_dst[r["new_path"]], r["old_path"]],
-            })
-        else:
-            seen_dst[r["new_path"]] = r["old_path"]
-
-    # Source/destination overlap cycles: a destination that is itself
-    # a source scheduled to move would be clobbered mid-batch.
-    sources = {r["old_path"] for r in records}
-    for r in records:
-        if r["new_path"] in sources and r["new_path"] != r["old_path"]:
-            cycles.append({
-                "source": r["old_path"],
-                "destination_is_also_source": r["new_path"],
-            })
-
-    moved = [r for r in records if r["status"] == "moved"]
-    pilot_records = [r for r in records if r["status"] == "pilot"]
-    proposed = [r for r in records
-                if r["status"] == "proposed_high_confidence"]
-    review = [r for r in records if r["status"] == "review_required"]
-
-    # Honest projected root counts, split by gate.  Root counts are
-    # measured at the base ref (pre-migration state).
-    root_files_base = sorted(f for f in tracked if "/" not in f)
-    dirs_base = sorted({f.split("/")[0] for f in tracked if "/" in f})
-
-    fixed_root = {"README.md", "LICENSE", "CONTRIBUTING.md",
-                  "CITATION.cff", "pyproject.toml", "requirements.txt",
-                  "requirements.lock.txt", "Containerfile",
-                  ".gitignore", ".gitignore"}
-    fixed_dirs = {".github", "claims", "docs", "src", "tools", "tests",
-                  "catalog", "research_snapshots", "research_figures"}
-
-    def remaining_root_if(moves: set[str]) -> int:
-        left = [f for f in root_files_base if f not in moves]
-        dirs = set(dirs_base)
-        for m in moves:
-            top = m.split("/")[0]
-            dirs.discard(top)
-        new_dirs = {r["new_path"].split("/")[0] for r in records
-                    if r["old_path"] in moves}
-        return len(left) + len(dirs | new_dirs | fixed_dirs)
-
-    mechanically_moved = {r["old_path"] for r in moved + pilot_records}
-    all_proposed = mechanically_moved | {r["old_path"]
-                                         for r in proposed}
-    all_classified = all_proposed | {r["old_path"] for r in review}
-    unclassified_count = classification["unclassified_count"]
+    # Final-destination uniqueness and overlap-cycle checks run on the
+    # FINAL new_path values (post pilot-layout transformation).
+    collisions, double_moves2, cycles = validate_records(records)
+    double_moves.extend(d for d in double_moves2 if d not in
+                        double_moves)
 
     manifest = {
         "generated_by": "tools/migration/build_manifest.py",
@@ -304,25 +331,6 @@ def main() -> int:
             "batch_directory": "catalog/batches",
         },
         "counts": {
-            "total_classified_moves": len(records),
-            "moved": len(moved),
-            "pilot": len(pilot_records),
-            "proposed_high_confidence": len(proposed),
-            "review_required": len(review),
-            "unclassified": unclassified_count,
-            "root_files_before": len(root_files_base),
-            "root_dirs_before": len(dirs_base),
-            "root_entries_before": len(root_files_base) + len(dirs_base),
-            "projected_root_if_moved_only":
-                remaining_root_if(mechanically_moved),
-            "projected_root_if_high_confidence_batches_executed":
-                remaining_root_if(all_proposed),
-            "projected_root_if_all_classified_executed":
-                remaining_root_if(all_classified),
-            "projection_note": "unclassified files are not members of "
-                               "any move set, so every projection "
-                               "already leaves them at the root; do "
-                               "not add unclassified_count again",
             "collisions": len(collisions),
             "double_moves": len(double_moves),
             "overlap_cycles": len(cycles),
@@ -330,10 +338,9 @@ def main() -> int:
         "collision_report": collisions,
         "double_move_report": double_moves,
         "overlap_cycle_report": cycles,
-        "destination_subtree_counts": dict(
-            sorted(subtree_counts.items(), key=lambda kv: -kv[1])),
         "moves": sorted(records, key=lambda r: r["new_path"]),
     }
+    manifest = recompute_manifest_summary(manifest, ROOT, classification)
 
     manifest_path.write_text(
         json.dumps(manifest, indent=2, ensure_ascii=False) + "\n",
@@ -350,19 +357,20 @@ def main() -> int:
             print("  overlap-cycle:", c)
         return 1
 
-    print(f"moves={len(records)} moved={len(moved)} "
-          f"pilot={len(pilot_records)} "
-          f"proposed_high_confidence={len(proposed)} "
-          f"review_required={len(review)} "
+    c = manifest["counts"]
+    print(f"moves={c['total_classified_moves']} moved={c['moved']} "
+          f"pilot={c['pilot']} "
+          f"proposed_high_confidence={c['proposed_high_confidence']} "
+          f"review_required={c['review_required']} "
           f"collisions=0 double_moves=0 cycles=0")
-    print(f"root entries: before={len(root_files_base) + len(dirs_base)}")
+    print(f"root entries: before={c['root_entries_before']}")
     print(f"projected if moved-only: "
-          f"{manifest['counts']['projected_root_if_moved_only']}")
+          f"{c['projected_root_if_moved_only']}")
     print(f"projected if high-confidence batches executed: "
-          f"{manifest['counts']['projected_root_if_high_confidence_batches_executed']}")
+          f"{c['projected_root_if_high_confidence_batches_executed']}")
     print(f"projected if all classified executed: "
-          f"{manifest['counts']['projected_root_if_all_classified_executed']}")
-    print(f"(every projection already leaves the {unclassified_count} "
+          f"{c['projected_root_if_all_classified_executed']}")
+    print(f"(every projection already leaves the {c['unclassified']} "
           f"unclassified files at the root)")
     return 0
 

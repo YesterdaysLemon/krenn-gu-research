@@ -1008,5 +1008,63 @@ class FinalContractTests(unittest.TestCase):
         self.assertEqual(path, BATCH_DIR / "some-batch.json")
 
 
+class ManifestSummaryInvariantTests(unittest.TestCase):
+    """Durable invariant (Stage 3 review item 1): the manifest's counts
+    summary must be derived from its move records, and the moved-only
+    root projection must agree with the base-ref recomputation.  A
+    summary that can drift from the records is a bug by definition.
+    Reads the REAL repo manifest; strictly read-only."""
+
+    REPO = pathlib.Path(__file__).resolve().parents[1]
+
+    def _load(self):
+        return json.loads((self.REPO / "catalog" / "moved-paths.json")
+                          .read_text(encoding="utf-8"))
+
+    def test_counts_match_records(self):
+        manifest = self._load()
+        records = manifest["moves"]
+        counts = manifest["counts"]
+        for key, status in (("moved", "moved"),
+                            ("pilot", "pilot"),
+                            ("proposed_high_confidence",
+                             "proposed_high_confidence"),
+                            ("review_required", "review_required")):
+            actual = sum(1 for r in records if r["status"] == status)
+            self.assertEqual(
+                counts.get(key), actual,
+                f"counts.{key}={counts.get(key)} but records give "
+                f"{actual}")
+        self.assertEqual(counts.get("total_classified_moves"),
+                         len(records))
+
+    def test_moved_only_projection_matches_base_ref(self):
+        manifest = self._load()
+        records = manifest["moves"]
+        counts = manifest["counts"]
+        moved = [r for r in records if r["status"] == "moved"]
+        if not moved:
+            self.skipTest("no moved entries")
+        start = manifest["starting_commit"]
+        out = subprocess.run(
+            ["git", "ls-tree", "-r", "--name-only", start],
+            cwd=self.REPO, capture_output=True, text=True, check=True)
+        tree = [l for l in out.stdout.splitlines() if l.strip()]
+        base_files = sorted(f for f in tree if "/" not in f)
+        base_dirs = sorted({f.split("/")[0] for f in tree if "/" in f})
+        left = [f for f in base_files
+                if f not in {m["old_path"] for m in moved}]
+        dirs = set(base_dirs)
+        new_dirs = {m["new_path"].split("/")[0] for m in moved}
+        fixed_dirs = {".github", "claims", "docs", "src", "tools",
+                      "tests", "catalog", "research_snapshots",
+                      "research_figures"}
+        expected = len(left) + len(dirs | new_dirs | fixed_dirs)
+        self.assertEqual(
+            counts.get("projected_root_if_moved_only"), expected,
+            "projected_root_if_moved_only disagrees with the base-ref "
+            "recomputation")
+
+
 if __name__ == "__main__":
     unittest.main()

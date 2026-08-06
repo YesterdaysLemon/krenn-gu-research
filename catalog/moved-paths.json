@@ -16,18 +16,18 @@
   },
   "counts": {
     "total_classified_moves": 2015,
-    "moved": 44,
+    "moved": 53,
     "pilot": 0,
-    "proposed_high_confidence": 388,
+    "proposed_high_confidence": 379,
     "review_required": 1583,
     "unclassified": 348,
     "root_files_before": 2363,
     "root_dirs_before": 3,
     "root_entries_before": 2366,
-    "projected_root_if_moved_only": 2328,
+    "projected_root_if_moved_only": 2319,
     "projected_root_if_high_confidence_batches_executed": 1940,
     "projected_root_if_all_classified_executed": 357,
-    "projection_note": "unclassified files are not members of any move set, so every projection already leaves them at the root; do not add unclassified_count again",
+    "projection_note": "unclassified files are not members of any move set, so every projection already leaves them at the root; do not add unclassified again",
     "collisions": 0,
     "double_moves": 0,
     "overlap_cycles": 0
@@ -35,13 +35,6 @@
   "collision_report": [],
   "double_move_report": [],
   "overlap_cycle_report": [],
-  "destination_subtree_counts": {
-    "claims": 1760,
-    "tools": 211,
-    "src": 35,
-    "docs": 8,
-    "catalog": 1
-  },
   "moves": [
     {
       "old_path": "THEOREM_LEDGER.json",
@@ -16216,5 +16209,12 @@
       "claim_family": null,
       "confidence": "medium"
     }
-  ]
+  ],
+  "destination_subtree_counts": {
+    "claims": 1760,
+    "tools": 211,
+    "src": 35,
+    "docs": 8,
+    "catalog": 1
+  }
 }
