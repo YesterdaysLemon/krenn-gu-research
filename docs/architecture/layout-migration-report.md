@@ -7,18 +7,32 @@ or reworded.
 
 ## Provenance anchors
 
-- Starting commit: `f6d2cc4` (tag `pre-layout-migration-v1`, the
-  merged stabilization pass).
+- Starting state: tag `pre-layout-migration-v1` (commit `f6d2cc4`,
+  the merged stabilization pass).  The inventory and manifest are
+  built from this ref via `git ls-tree`/`git show`, so every count in
+  this report is measured against the true pre-migration tree.
 - Pilot commits on `layout-migration-pilot`:
   - `34fc7ea` inventory, classification, manifest tooling;
-  - `8421072` infrastructure (ledger move to `catalog/`, warning-mode
-    root enforcement, `src/krenn_gu/paths.py`);
+  - `8421072` infrastructure (ledger move to `catalog/`, root-layout
+    enforcement, shared path module);
   - `7731a54` tooling fixes (pilot layout, executor);
   - `a6b8bbb` **pure `git mv`** of the 35 pilot files;
   - `457494d` reference/path rewrites;
-  - final commit: ledger hash refresh + this report.
-- Machine-readable record: `catalog/moved-paths.json` (every move with
-  old path, new path, reason, status).
+  - `823256b` validation, report, final hashes;
+  - `fce2c3c` consolidated import/path strategy;
+  - `b175a9b` true-base inventory and confidence gating;
+  - `da43490` rewriter repair and the 27-test suite;
+  - `65f4288` manifest-aware stale-path enforcement;
+  - `8107d1a` ledger `proof_variant`/`subpackage` fields;
+  - `b519f4b` review-pass report update;
+  - final commit: count corrections, batch approval model,
+    context-aware stale references, real hash-update tests.
+- Machine-readable record: `catalog/moved-paths.json` (every move
+  with old path, new path, reason, status, confidence); the ledger
+  relocation itself is entry number 36, so no tracked source is
+  missing from the manifest.
+- The pilot's approval record:
+  `catalog/batches/p5-h22-disjoint-mixed-star-pilot.json`.
 
 ## Scope of this PR
 
@@ -36,22 +50,36 @@ The bulk root evacuation follows in later PRs after review.
 
 ## Root counts
 
-| Measure | Before | After pilot |
-|---|---|---|
-| root-level files | 2,363 | 2,327 |
-| root-level directories | 3 | 8 |
-| total root entries (GitHub listing) | 2,366 | 2,335 |
+Three distinct moments, all measured from git objects:
 
-GitHub still truncates at 1,000 entries; the pilot was never expected
-to fix that — the bulk evacuation will.  The target remains fewer than
-30 entries at the end of the full migration (manifest estimate for the
-full classified set: 360 entries, i.e. the 348 unclassified files plus
-fixed entries decide the remainder — those need human classification
-decisions, recorded in `catalog/unclassified-files.json`).
+| Moment | Root files | Root dirs | Entries |
+|---|---|---|---|
+| Before migration (tag `f6d2cc4`) | 2,363 | 3 | **2,366** |
+| Immediately after the 35 pure moves (`a6b8bbb`) | 2,327 | 8 | **2,335** |
+| Final PR head | 2,327 | 9 | **2,336** |
 
-## Files moved (35, all `R100` renames)
+The post-move count is net −31 relative to the tag: −36 root files
+(35 pilot files + the ledger) and +5 top-level directories that the
+migration infrastructure created (`claims/`, `catalog/`, `docs/`,
+`src/`, `tools/`).  The final head adds exactly one more entry: the
+`tests/` directory holding the migration test suite.  GitHub still
+truncates at 1,000 entries; only the bulk evacuation fixes that.
+
+Projected root entries after future batches (unclassified files are
+not members of any move set, so every projection already leaves them
+at the root):
+
+- moved-only (today): 2,336;
+- if all 369 high-confidence proposals were batched and executed:
+  1,967;
+- if all 2,015 classified proposals were batched and executed: 357 —
+  composed of the 348 unclassified files plus retained root files and
+  the fixed entry-point/directory set.
+
+## Files moved (35 pilot + 1 ledger, all `R100` renames)
 
 ```text
+catalog/theorem-ledger.json            (was THEOREM_LEDGER.json)
 claims/p5/h22/disjoint-mixed-star/
   P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md
   verify_p5_h22_disjoint_mixed_star_component_generic_obstruction.py
@@ -69,59 +97,48 @@ claims/p5/h22/disjoint-mixed-star/boundaries/
   + P5_H22_DISJOINT_MIXED_STAR_CERTIFICATE_DIVISOR_FRONTIER.md
 ```
 
-Git recorded all 35 as `R100` (100% similarity) renames, so history
-follow-through is preserved for every file.
+Git recorded all 35 pilot moves as `R100` (100% similarity) renames,
+so history follow-through is preserved for every file.
 
 ## Links rewritten
 
-- `tools/migration/rewrite_links.py` re-anchored **117 markdown links**
-  (72 in the first pass, 45 after a targeted rerun for intra-package
-  links) and **4 fenced replay commands** across **27 file edits**,
-  zero ambiguous targets.  URL fragments preserved; external URLs
-  untouched; code blocks untouched except documented replay lines.
-- Post-rewrite link check: **all 757 markdown files, every local link
-  resolves** (checker step [3]).
-- The remaining mentions of the old filenames outside
-  `catalog/moved-paths.json` are non-link prose and code-fence file
-  lists; a scripted sweep confirms **zero broken path references** to
-  any moved basename.
+`tools/migration/rewrite_links.py` re-anchored **117 markdown links**
+and **4 fenced replay commands** across 27 file edits, zero ambiguous
+targets.  Inline links, reference-style definitions, image links,
+fragments, and fenced commands with arguments are all handled; the
+rewriter resolves each target against the source's *written* location,
+normalizes before the manifest lookup, and is idempotent (an
+existence guard leaves already-correct links untouched — two
+consecutive runs rewrite nothing).  Post-rewrite check: all 758
+markdown files' local links resolve.  Remaining old-filename mentions
+outside the manifest are non-link prose and code-fence file lists; a
+scripted sweep confirms zero broken path references to any moved
+basename.
 
 ## Ledger entries changed
 
-Five entries in `catalog/theorem-ledger.json` were repointed:
+Five entries in `catalog/theorem-ledger.json` were repointed to the
+package paths and gained `claim_package` (always the package root),
+`proof_variant` (`canonical`/`alternate`), `subpackage`
+(`null`/`alternate`/`boundaries`), and `legacy_paths`; committed-blob
+hashes recomputed (85/85 validate).  **Status, assumptions, and
+provenance fields untouched** — nothing upgraded or downgraded.
 
-| Entry | Change |
-|---|---|
-| Generic weighted H22 fibre empty: disjoint mixed star | document/verifier/audit → package paths |
-| Eighth-component weighted H22 closure — canonical | same, plus `claim_package`, `legacy_paths` |
-| Eighth-component weighted H22 closure — alternate | same |
-| Eighth-component boundary closures (atlas entry) | atlas doc unchanged; atlas scripts moved (no ledger script refs) |
-| Eighth-component torus quotient | document → boundaries path |
+## Import/path strategy
 
-All entries gained `claim_package` and `legacy_paths` where moved;
-committed-blob hashes recomputed (85/85 validate); **status,
-assumptions, and provenance fields untouched** — no status upgraded or
-downgraded.
-
-## Imports that required refactoring
-
-- The 23 moved Python scripts replaced
-  `ROOT = Path(__file__).resolve().parent` with an explicit `HERE` +
-  discovered `REPO_ROOT` (the repo's established find-root pattern).
-  Sibling package docs resolve via `HERE`; root-level dependencies
-  (the P4 component doc, `tmp/`) via `REPO_ROOT`; root-module imports
-  get `REPO_ROOT` on `sys.path`; `boundaries/` scripts additionally
-  expose the package root for the canonical verifier they import.
-- Two snapshot scripts
-  (`research_snapshots/2026-08-04-p5-h22-slope-divisor-closures/scripts/verify_p5_h22_disjoint_mixed_star_slope_divisor_symbolic_fitting.py`
-  and `..._special_slope_reduced_fitting.py`) import the moved
-  canonical verifier; both got the package path appended to their
-  existing `sys.path` bootstrap.
-- No new `sys.path` hacks were invented: the pattern is the same one
-  already used by the obligation-ledger scripts and four root
-  verifiers.
-- All 23 moved scripts compile **and import** from a clean checkout
-  (subprocess-tested).
+One strategy, documented in `src/krenn_gu/bootstrap.py`: every moved
+script shares the same header — a self-locating `src/` insertion and
+one `bootstrap(__file__)` call that returns `(REPO_ROOT, HERE)` and
+installs `sys.path`.  Root discovery walks upward to a repository
+MARKER file (`Containerfile`, `requirements.lock.txt`,
+`catalog/theorem-ledger.json`), **not** `.git`, so it works from clean
+checkouts and source archives alike.  (The pilot's first iteration
+used per-script `_repo_root()` helpers; review pass 1 consolidated
+them into this single module.)  `boundaries/` scripts pass
+`also=[".."]` to reach the package-root verifier they import; the two
+snapshot scripts importing the moved canonical verifier got the
+package path appended to their existing bootstrap.  All 23 moved
+scripts compile and import from a clean checkout.
 
 ## Commands that changed
 
@@ -134,8 +151,41 @@ python claims/p5/h22/disjoint-mixed-star/alternate/verify_p5_h22_disjoint_mixed_
 python claims/p5/h22/disjoint-mixed-star/alternate/audit_p5_h22_disjoint_mixed_star_component_generic_obstruction_alternate.py
 ```
 
-The ledger's replay-command documentation and the docs' fenced
-commands were rewritten to match.
+Ledger replay documentation and the docs' fenced commands were
+rewritten to match.
+
+## Approval model and the manifest status vocabulary
+
+Classifier confidence is not operational approval.  Manifest statuses:
+
+- `moved` — executed (records `executed_batch`);
+- `pilot` — the executed pilot batch;
+- `proposed_high_confidence` — the classifier's high-confidence
+  proposals; NOT executable on their own;
+- `review_required` — medium/low-confidence proposals.
+
+`execute_moves.py` requires `--batch-id` (a committed file under
+`catalog/batches/`) or `--batch-file`; there is no mode that sweeps a
+status class across the repository.  Every batch file records
+`approved_by`, `approved_at`, `base_sha`, and the exact member list.
+Current split: 36 moved / 369 proposed_high_confidence / 1,610
+review_required / 348 unclassified.
+
+## Enforcement
+
+`check_hygiene.py` enforces the migration durably:
+
+- **stale paths** (executed moves only): full old paths are rejected
+  in tracked `.md/.py/.yml/.yaml/.sh/.json` outside the provenance
+  allowlist; the 35 root-to-package moves that kept their filename are
+  enforced context-aware — markdown links in root documents, fenced
+  replay commands, python subprocess/command strings, and shell/yaml
+  command references — while the same basename remains valid inside
+  the destination package.  Planned-but-unexecuted moves are not
+  enforced (they are still correctly at their old paths);
+- **root layout** (warning-only during the migration): allowlist,
+  <30-entry target, forbidden `P4_*/P5_*/verify_*` root patterns;
+- the migration tool suite (39 tests) runs in CI.
 
 ## Verifiers and audits replayed
 
@@ -144,7 +194,7 @@ commands were rewritten to match.
 | canonical audit (`audit_..._component_generic_obstruction.py`) | **passed** from the new location (86 s) |
 | alternate audit (`alternate/audit_..._alternate.py`) | **passed** from the new location (168 s); `independent_of_primary_imports: true` |
 | canonical verifier (`verify_..._component_generic_obstruction.py`) | **replayed clean under WSL with Singular 4.3.2, ~108 s: `verified: true`, EXIT_CODE=0** |
-| alternate verifier | not replayed this session (already replayed pre-migration, 1,327 s; script content unchanged except path bootstrap — hash in the ledger) |
+| alternate verifier | not replayed after the move (already replayed pre-migration, 1,327 s; content unchanged except the path bootstrap) |
 | boundary verifiers/audits | not replayed (hours of Singular each); all import-tested |
 | the two snapshot scripts importing the canonical verifier | import-tested only |
 
@@ -161,9 +211,10 @@ commands were rewritten to match.
 ## Structural problems the pilot exposed (and the fixes)
 
 1. **`ROOT = parent` constants break on any depth change.**  Every
-   moved script assumed it lived at the repository root.  Fixed with
-   the established `_repo_root()` discovery pattern; future package
-   moves get the same treatment via tooling.
+   moved script assumed it lived at the repository root.  The first
+   fix used per-script `_repo_root()` discovery; review pass 1 then
+   consolidated everything into the single `src/krenn_gu/bootstrap.py`
+   helper with marker-file (not `.git`) root discovery.
 2. **Cross-package imports are position-sensitive.**  Moved modules
    imported by root and snapshot scripts needed `sys.path` updates in
    exactly two places (found by a repo-wide importer scan, not by
@@ -172,6 +223,19 @@ commands were rewritten to match.
    earlier good rewrites** (intra-package markdown links).  The
    link-checker caught it; lesson recorded: validation must run after
    every commit, and reverts must be scoped by path.
+4. **The rewriter was not idempotent**: re-running re-anchored
+   already-correct relative links.  Fixed with an existence-based
+   guard and a normalized-path manifest lookup; proved by tests and by
+   two consecutive zero-rewrite runs on the real tree.
+5. **Confidence was conflated with approval**: the first manifest made
+   all high-confidence entries executable via `--status approved`.
+   Replaced by the batch-file model above.
+6. **Stale enforcement originally skipped root-to-package moves** that
+   kept their filename (35 of 36 executed moves).  Now covered by
+   context-aware reference scanning restricted to executed moves.
+7. **Projected root counts double-counted the unclassified files.**
+   Corrected; the manifest carries an explicit note that every
+   projection already leaves them at the root.
 
 ## Unclassified files
 
@@ -188,81 +252,3 @@ No theorem claim changed.  The global conjecture remains UNRESOLVED.
 Candidate, withdrawn, exploratory, and superseded entries keep their
 labels; the alternate proof remains an independent alternate, not a
 replacement.
-## Review pass 1 fixes (machinery hardening)
-
-The pilot was accepted; the review required the reusable machinery to be
-trustworthy at repository scale before the bulk migration.  All seven
-items were addressed; the 35-file pilot itself was not redone.
-
-### 1. Replay claim corrected
-
-The summary wording no longer says "all replayed".  Accurate statement:
-**35 files moved; the canonical verifier and both independent audits
-were replayed from the new locations; the alternate verifier and all
-boundary verifiers/audits were compile- and import-tested only.**
-
-### 2. True pre-migration base
-
-`inventory_layout.py` gained `--ref` and now inspects any git ref via
-git objects (`ls-tree`/`show`), reading content at that ref and
-resolving links textually against the tracked set.  The inventory and
-manifest were regenerated from `pre-layout-migration-v1` (`f6d2cc4`),
-so the starting commit, the 2,363 root files / 2,366 entries counts,
-and every downstream figure agree across the inventory, manifest, PR
-body, and this report.  The `THEOREM_LEDGER.json ->
-catalog/theorem-ledger.json` relocation is a first-class manifest
-entry, so every move appears in the manifest.
-
-### 3. Confidence-gated executable batches
-
-Manifest statuses are now `moved` / `pilot` / `approved` /
-`review_required`.  Only high-confidence classifications auto-approve;
-medium/low stay `review_required` proposals.  `execute_moves.py`
-refuses `review_required`.  Current split: 36 moved, 369 approved,
-1,610 review_required, 348 unclassified.  Projected root counts are
-reported per gate: approved-only 1,967, review-also-approved 357,
-with-unclassified 705.
-
-### 4. Final-destination validation and rollback
-
-`build_manifest.py` computes the FINAL destination (base proposal, then
-pilot-layout transformation, then normalization) and validates
-uniqueness, double-moves, and source/destination overlap cycles on that
-final value (`validate_records`, also unit-tested).  `execute_moves.py`
-independently re-verifies unique sources/destinations, overlap cycles,
-parent-path validity, and manifest health; it executes in deterministic
-order and, on ANY failure, rolls back the moves performed in that
-invocation in reverse order and writes `catalog/recovery-<ts>.json`
-without touching the manifest.
-
-### 5. Rewriter repair + test suite in CI
-
-The rewriter's manifest lookup and relative-path calculation now use the
-NORMALIZED resolved path, and an existence-based guard makes it
-idempotent (two consecutive runs rewrite 0 links).  Reference-style
-definitions, image links, and fenced replay commands with arguments are
-handled; duplicate replay basenames are reported and skipped.
-`tests/test_migration_tools.py` (27 tests) covers the full review
-checklist and runs as a dedicated CI step against a synthetic post-move
-fixture tree.
-
-### 6. Manifest-aware stale-path enforcement
-
-`check_hygiene.py` rejects moved old paths in tracked
-`.md/.py/.yml/.yaml/.sh/.json` files, except in the provenance allowlist
-(catalog migration files, audit reports, migration report/inventory,
-`tools/migration/`, migration tests).  JSON hits are checked
-structurally so `legacy_paths` fields are exempt.  Root-file moves that
-keep their filename are ambiguous and not enforced; sub-path moves and
-renamed-away root files are.
-
-### 7. Consolidated import/path strategy
-
-The duplicated `_repo_root()`/`sys.path.insert()` blocks were replaced
-by one helper, `src/krenn_gu/bootstrap.py`.  `find_repo_root()` walks
-upward to a repository MARKER file (`Containerfile`,
-`requirements.lock.txt`, `catalog/theorem-ledger.json`) — not `.git` —
-so it works in clean checkouts and source archives.  Every moved script
-shares the identical header; `claim_package` is the package root and
-`alternate`/`boundaries` are recorded via `proof_variant`/`subpackage`
-fields.
