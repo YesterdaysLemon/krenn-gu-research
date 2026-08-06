@@ -127,8 +127,11 @@ On the final head: `check_hygiene.py` all green (1,697 files compile;
 761 markdown files, all links resolve; ledger 85/85 hashes; provenance
 53/53; portability clean; 5 fast verifiers pass).  72 migration-tool
 tests OK.  `test_fourteen_vertex_cycle_cover_lattice.py` OK.  Rewriter
-idempotent (second pass 0/0/0).  CI run ID and exact head SHA recorded
-on the PR (see below).
+idempotent (second pass 0/0/0).  CI run
+[31128660002](https://github.com/YesterdaysLemon/open-graph-theory-with-prize/actions/runs/31128660002)
+passed (**success**) on the pure-migration head `3807a06` (hygiene
+all checks, 72 migration tests).  A final bookkeeping commit carries
+this report text; its own CI run is recorded on the PR.
 
 ## Stop condition
 
