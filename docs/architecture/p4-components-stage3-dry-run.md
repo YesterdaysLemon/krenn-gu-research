@@ -75,10 +75,23 @@ imported moved module)
 - verify_p4_all_rank_one_triangle_pure_component.py
 - verify_p5_h31_disjoint_mixed_star_component_generic_obstruction.py
 
-The five already-migrated H22 scripts import via the centralized
-bootstrap (repo root on sys.path), which keeps resolving after the P4
-move.  The two root scripts import bare module names; they are repaired
-in Commit C to use the bootstrap (no new path hacks).
+The four already-migrated H22 scripts (the canonical H22 verifier and
+the three boundary scripts above) import via the centralized bootstrap
+(repo root on sys.path), which keeps resolving after the P4 move.  The
+two root scripts (`verify_p4_all_rank_one_triangle_pure_component.py`,
+`verify_p5_h31_disjoint_mixed_star_component_generic_obstruction.py`)
+import bare module names; they are repaired in Commit C.
+
+Repair mechanism (accurate): because the imported P4 module itself
+moved out of the repo root, each importer inserts an explicit
+repo-relative `sys.path` entry pointing at the moved package directory
+(`claims/p4/components/disjoint-mixed-star`) before the bare-name
+import, and repoints the component-doc / primary-script constants to
+the package path.  This is a per-importer shim, not the centralized
+bootstrap helper itself (which discovers the repo root but does not
+know package directories).  Avoiding proliferation of these shims is
+Stage 4 debt: if a clean single mechanism emerges (e.g. a package
+registry in the bootstrap), the shims should be consolidated then.
 
 ### Outbound refs from the disjoint-mixed-star verifier to files that
 stay in place
@@ -89,8 +102,9 @@ stay in place
 - `P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md` (doc)
 - `verify_p4_mixed_orientation_pure_component` (module import)
 
-Repaired in Commit C to repo-root resolution via the centralized
-bootstrap.
+Repaired in Commit C: the moved verifier switches to the centralized
+bootstrap, uses `HERE` for its own package files and `REPO_ROOT` for
+the root-resident files above (which stay in place).
 
 ## Shared dependencies deliberately left in place
 

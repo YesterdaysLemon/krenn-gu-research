@@ -61,8 +61,10 @@ move set.)
 ## Replay results (Step 13)
 
 Every moved verifier and every moved audit was replayed post-migration
-from the new locations.  The three verifiers that need Singular ran in
-WSL (Singular 4.3.2); the disjoint-mixed-star verifier is pure sympy.
+from the new locations.  The two verifiers that need Singular
+(split-pair and equal-support-sixfold) ran in WSL (Singular 4.3.2);
+the disjoint-mixed-star verifier is pure SymPy and needs no external
+binary.
 
 | Package | Verifier | Audit |
 |---|---|---|
@@ -124,14 +126,15 @@ strings, replay commands, the ledger, and workflow comments.
 ## Validation floor (Step 18)
 
 On the final head: `check_hygiene.py` all green (1,697 files compile;
-761 markdown files, all links resolve; ledger 85/85 hashes; provenance
-53/53; portability clean; 5 fast verifiers pass).  72 migration-tool
+764 markdown files, all links resolve; ledger 85/85 hashes; provenance
+53/53; portability clean; 5 fast verifiers pass).  74 migration-tool
 tests OK.  `test_fourteen_vertex_cycle_cover_lattice.py` OK.  Rewriter
 idempotent (second pass 0/0/0).  CI run
 [31128660002](https://github.com/YesterdaysLemon/open-graph-theory-with-prize/actions/runs/31128660002)
 passed (**success**) on the pure-migration head `3807a06` (hygiene
-all checks, 72 migration tests).  A final bookkeeping commit carries
-this report text; its own CI run is recorded on the PR.
+all checks, migration tests).  A final bookkeeping commit carries this
+report text and the manifest-accounting invariant; its own CI run is
+recorded on the PR.
 
 ## Stop condition
 
