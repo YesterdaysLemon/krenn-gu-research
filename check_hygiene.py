@@ -46,6 +46,10 @@ import shutil
 import subprocess
 import sys
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent
+                       / "tools" / "migration"))
+from replay_command import match_replay  # noqa: E402
+
 ROOT = pathlib.Path(__file__).resolve().parent
 
 GENERATED_SUFFIXES = {
@@ -644,6 +648,31 @@ def find_stale_bare_refs(text: str, rel: str,
     if rel_dir == ".":
         rel_dir = ""
     hits = []
+    # Fenced replay commands (run from the repository root), scanned
+    # once per file.  The grammar is shared with the rewriter via
+    # replay_command.match_replay, so plain, uv-wrapped, and
+    # continuation-line forms can never drift between the two
+    # machines.
+    fenced_stale = set()
+    if rel.endswith(".md") and moved_by_base:
+        lines = text.splitlines()
+        in_fence = False
+        i = 0
+        while i < len(lines):
+            line = lines[i]
+            if line.lstrip().startswith("```"):
+                in_fence = not in_fence
+                i += 1
+                continue
+            if in_fence:
+                rm = match_replay(lines, i)
+                if rm:
+                    base_c, end, _form = rm
+                    if base_c in moved_by_base:
+                        fenced_stale.add(base_c)
+                    i = end + 1
+                    continue
+            i += 1
     for base, new in moved_by_base.items():
         pkg_dir = str(pathlib.PurePosixPath(new).parent)
         in_package = rel_dir == pkg_dir or rel_dir.startswith(
@@ -662,17 +691,9 @@ def find_stale_bare_refs(text: str, rel: str,
                     re.M):
                 hits.append(("reference-style link", base))
                 continue
-            # fenced replay commands (run from the repository root)
-            in_fence = False
-            for line in text.splitlines():
-                if line.lstrip().startswith("```"):
-                    in_fence = not in_fence
-                    continue
-                if in_fence and re.match(
-                        r"\s*(python3?|wsl[^\n]*python3?)\s+" + esc
-                        + r"(\s|$)", line):
-                    hits.append(("fenced replay command", base))
-                    break
+            if base in fenced_stale:
+                hits.append(("fenced replay command", base))
+                continue
         elif rel.endswith(".py"):
             if re.search(
                     r"(subprocess|sys\.executable|python)[^\n]{0,100}?"

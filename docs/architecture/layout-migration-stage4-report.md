@@ -140,14 +140,22 @@ map); inventory verified passing before any Stage 4 move.
 - Rewriter first pass: 67 links re-anchored across 39 files, 10 fenced
   replay commands repointed, 0 ambiguities.  Second pass: **0 links, 0
   commands, 0 ambiguities** (idempotent).
-- Machinery gap (recorded, fixed manually): the rewriter's replay
-  matcher only covers single-line `python <file>.py` fences.  Three
-  docs needed manual repairs: the embedded-p3 `uv run --with sympy`
-  form, the mixed-orientation continuation line, and the Stage 3
-  leftover continuation lines in the moved DMS theorem doc (4 commands
-  total).  Same gap applies to the bare-basename stale scanner; the
-  manual repairs keep the tree stale-clean.  No broad rewriter
-  redesign — recorded as deferred debt.
+- Machinery gap found and fixed narrowly (post-merge review): the
+  rewriter's replay matcher only covered single-line
+  `python <file>.py` fences.  Three docs first needed manual repairs
+  (the embedded-p3 `uv run --with sympy` form, the mixed-orientation
+  continuation line, and the Stage 3 leftover continuation lines in
+  the moved DMS theorem doc — 4 commands).  The fix is a single shared
+  grammar, `tools/migration/replay_command.py`, now used by BOTH
+  `rewrite_links.py` and the stale-reference scanner in
+  `check_hygiene.py`, so the two machines cannot drift.  It covers the
+  plain, `python3`/`wsl`, `uv run …` and continuation-line forms with
+  one parsing function; 17 regression tests (exact Stage 4 forms plus
+  negative/control cases) bring the migration suite to 98.  With the
+  extended grammar the rewriter mechanically repaired 20 further stale
+  pilot-era continuation-line replay commands (moved H22 package docs
+  and their boundaries) that the old matcher had never reached; a
+  second pass is again 0/0/0.
 - Python: 34 `.py` files changed in commit C (12 moved Stage-4 scripts
   switched to the centralized bootstrap; 3 Stage-3-moved scripts
   repointed to the moving packages; 19 staying consumers — P5
@@ -169,7 +177,7 @@ repository root; outputs in `tmp/`, untracked):
 | diagonal-quadric | **verified=true** (pure sympy, ~2 s) | audited=true, independent=true (~1 s) |
 | embedded-p3 | **verified=true** (pure sympy, ~1 s) | audited=true, independent=true (<1 s) |
 | mixed-orientation | **verified=true** (Singular via WSL fallback, ~8 s) | audited=true, independent=true (~3 s) |
-| single-word-quadrilateral | **verified=true** (Singular ds slice, run under WSL python, 438 s) | audited=true, independent=true (~1 s) |
+| single-word-quadrilateral | **verified=true** (Singular ds slice under WSL, run via WSL python, 438 s) | audited=true, independent=true (~1 s) |
 | six-dimensional | **verified=true** (pure sympy, ~2 s) | audited=true, independent=true (<1 s) |
 
 The moved DMS verifier (Stage 3, content changed only by the MO expose
@@ -211,10 +219,13 @@ commands, the ledger, workflow comments, and Python string paths.
 - **Rollback was NOT invoked** — no mid-batch failure.
 - **Migration-tool bugs found:** one pre-existing consumer breakage
   from Stage 3 (common-singleton inventory; fixed narrowly + documented
-  above) and the replay-fence matcher gap (documented, manual repair).
+  above) and the replay-fence matcher gap (found by this batch's
+  manual repairs, then fixed narrowly via the shared
+  `replay_command.py` grammar — see "Link and import rewrites").
   No defect in the executor, contract validator, or summary
   recomputation.
-- **New regression tests:** 5 (ExposeClaimPackageTests).  No executor
+- **New regression tests:** 5 (ExposeClaimPackageTests) + 17
+  (replay-command grammar/rewriter/stale-scanner forms).  No executor
   regression test was needed (none was broken).
 
 ## Validation floor (Step 21)
@@ -222,22 +233,16 @@ commands, the ledger, workflow comments, and Python string paths.
 On the final head: `check_hygiene.py` all green (1,697 files compile;
 all markdown links resolve; ledger 85/85 hashes; provenance 71/71;
 stale paths 71 enforced, none present; portability clean; 5 fast
-verifiers pass).  81 migration-tool tests OK.
+verifiers pass).  98 migration-tool tests OK.
 `test_fourteen_vertex_cycle_cover_lattice.py` OK (14 tests).  Rewriter
-idempotent (second pass 0/0/0).  CI run __CI_RUN__ on the exact final
-head __FINAL_SHA__.
+idempotent (second pass 0/0/0).  CI run [31150732265](https://github.com/YesterdaysLemon/open-graph-theory-with-prize/actions/runs/31150732265), manually dispatched on the exact final head `a4ad1545b75d5172678ef6a3f0685a04bfc249d8` (**success**; the report-fill amend that lands this line carries its own PR CI run, recorded on the PR).
 
 ## Deferred debt (for Stage 5)
 
-1. The replay-fence matcher in `rewrite_links.py` does not cover
-   continuation-line (`python \` + filename) or `uv run` command
-   forms; the matching stale-bare-reference scanner has the same
-   blind spot.  Both were repaired manually this stage; a narrow
-   rewriter extension is Stage 5 material.
-2. The large `claims/p4/classifications/` population (medium/low
+1. The large `claims/p4/classifications/` population (medium/low
    confidence) remains at root — a different ownership problem,
    explicitly out of scope here.
-3. `verify_p4_common_singleton_component.py`'s fragment inventory
+2. `verify_p4_common_singleton_component.py`'s fragment inventory
    still scans nine root scripts that may move in later stages; its
    manifest-aware resolver already handles those moves without edits.
 
