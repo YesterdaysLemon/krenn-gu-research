@@ -27,7 +27,7 @@ at least nine symmetry-inequivalent pure-P_4 components.             (2)
 
 A later two-rank-two-spoke mixed-star component has raised the current
 repository-wide lower bound to ten in
-[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](../../../../P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md).
+[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](../../classifications/star/two-rank-two-spoke-mixed-star-component/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md).
 
 The theorem is at the pure-`P_4` plane level.  A later apolar
 insertion theorem excludes its generic marked `H31` fibre:

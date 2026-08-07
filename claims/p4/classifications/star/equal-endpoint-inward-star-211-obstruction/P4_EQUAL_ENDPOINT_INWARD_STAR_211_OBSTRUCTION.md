@@ -93,8 +93,8 @@ possibilities for `p`.
 ## Replay
 
 ```text
-uv run --with sympy python verify_p4_equal_endpoint_inward_star_211_obstruction.py
-uv run --with sympy python audit_p4_equal_endpoint_inward_star_211_obstruction.py
+uv run --with sympy python claims/p4/classifications/star/equal-endpoint-inward-star-211-obstruction/verify_p4_equal_endpoint_inward_star_211_obstruction.py
+uv run --with sympy python claims/p4/classifications/star/equal-endpoint-inward-star-211-obstruction/audit_p4_equal_endpoint_inward_star_211_obstruction.py
 ```
 
 The primary verifier reconstructs all coefficient identities and the rank

@@ -233,7 +233,7 @@ normal forms are exhaustive: the `2+2` determinant is the irreducible
 determinant is the three-factor split cubic.  Hence this stratum
 contains exactly those four certified component closures:
 
-- [`P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md`](P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md)
+- [`P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md`](claims/p4/classifications/star/radical-star/P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md)
 
 The mixed kernel-edge orientation omitted by that radical
 classification produces a sixth component.  With two fixed

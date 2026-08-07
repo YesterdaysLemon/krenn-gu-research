@@ -20,18 +20,18 @@ ROOT = Path(__file__).resolve().parent
 
 RESOLUTION_PACKAGES = (
     "P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md",
-    "P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md",
-    "P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md",
+    "claims/p4/classifications/star/rank-two-relation-star-obstruction/P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md",
+    "claims/p4/classifications/star/two-rank-two-spoke-mixed-star-classification/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md",
     "claims/p4/classifications/triangle-211/all-rank-two-relation-triangle-inclusion/P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md",
     "P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md",
     "claims/p4/classifications/triangle-211/211-triangle-complete/P4_211_TRIANGLE_COMPLETE_CLASSIFICATION.md",
     "claims/p4/classifications/triangle-211/unequal-endpoint-inward-star-211-complete/P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md",
-    "P4_ALL_CENTER_KERNEL_STAR_111_OBSTRUCTION.md",
-    "P4_ALL_DOUBLE_ENDPOINT_STAR_111_OBSTRUCTION.md",
-    "P4_ONE_DOUBLE_ENDPOINT_STAR_111_CLASSIFICATION.md",
-    "P4_TWO_DOUBLE_ENDPOINT_STAR_111_COMPLETE_CLASSIFICATION.md",
-    "P4_MIXED_ENDPOINT_STAR_111_COMPLETE_CLASSIFICATION.md",
-    "P4_NO_DOUBLE_ENDPOINT_STAR_1110_COLLISION_CLASSIFICATION.md",
+    "claims/p4/classifications/star/all-center-kernel-star-111-obstruction/P4_ALL_CENTER_KERNEL_STAR_111_OBSTRUCTION.md",
+    "claims/p4/classifications/star/all-double-endpoint-star-111-obstruction/P4_ALL_DOUBLE_ENDPOINT_STAR_111_OBSTRUCTION.md",
+    "claims/p4/classifications/star/one-double-endpoint-star-111/P4_ONE_DOUBLE_ENDPOINT_STAR_111_CLASSIFICATION.md",
+    "claims/p4/classifications/star/two-double-endpoint-star-111-complete/P4_TWO_DOUBLE_ENDPOINT_STAR_111_COMPLETE_CLASSIFICATION.md",
+    "claims/p4/classifications/star/mixed-endpoint-star-111-complete/P4_MIXED_ENDPOINT_STAR_111_COMPLETE_CLASSIFICATION.md",
+    "claims/p4/classifications/star/no-double-endpoint-star-1110-collision/P4_NO_DOUBLE_ENDPOINT_STAR_1110_COLLISION_CLASSIFICATION.md",
     "P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md",
 )
 

@@ -24,7 +24,8 @@ DEPENDENCIES = (
     / "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md"),
     ROOT / "P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md",
     ROOT / "P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md",
-    ROOT / "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md",
+    ROOT / "claims" / "p4" / "classifications" / "star"
+    / "radical-star" / "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md",
     (
     ROOT / "claims" / "p4" / "components" / "mixed-orientation"
     / "P4_MIXED_ORIENTATION_PURE_COMPONENT.md"),

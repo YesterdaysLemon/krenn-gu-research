@@ -9,10 +9,18 @@ import shutil
 import subprocess
 from pathlib import Path
 
+import sys
+
 import sympy as sp
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P4_NO_DOUBLE_ENDPOINT_STAR_1110_COLLISION_CLASSIFICATION.md"
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+THEOREM = HERE / "P4_NO_DOUBLE_ENDPOINT_STAR_1110_COLLISION_CLASSIFICATION.md"
 BITS = tuple(itertools.product((0, 1), repeat=4))
 PAIRS = tuple(itertools.combinations(range(4), 2))
 
@@ -469,11 +477,14 @@ def main() -> None:
     assert "T=-D-G-S" in theorem
     assert "UNRESOLVED" in theorem
     for dependency in (
-        "P4_COINCIDENT_SUPPORT_STAR_REVERSE_CLASSIFICATION.md",
-        "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md",
-        "P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md",
+        REPO_ROOT / "claims" / "p4" / "classifications" / "star"
+        / "coincident-support-star-reverse"
+        / "P4_COINCIDENT_SUPPORT_STAR_REVERSE_CLASSIFICATION.md",
+        REPO_ROOT / "claims" / "p4" / "classifications" / "star"
+        / "radical-star" / "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md",
+        REPO_ROOT / "P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md",
     ):
-        assert (ROOT / dependency).exists()
+        assert dependency.exists()
 
     X = tuple(sp.eye(4).col(index) for index in range(4))
     old, corrected = source_triangle(X)

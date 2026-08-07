@@ -181,8 +181,8 @@ two double spokes and is closed by the subsequent two-double classification.
 ## Replay
 
 ```text
-uv run --with sympy python verify_p4_one_double_endpoint_star_111_classification.py
-uv run --with sympy python audit_p4_one_double_endpoint_star_111_classification.py
+uv run --with sympy python claims/p4/classifications/star/one-double-endpoint-star-111/verify_p4_one_double_endpoint_star_111_classification.py
+uv run --with sympy python claims/p4/classifications/star/one-double-endpoint-star-111/audit_p4_one_double_endpoint_star_111_classification.py
 ```
 
 The primary replay reconstructs every displayed permanent coefficient,

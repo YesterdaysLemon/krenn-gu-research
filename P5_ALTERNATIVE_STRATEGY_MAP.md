@@ -986,7 +986,7 @@ double-contraction radical.  Exhaustive dense normal forms recover
 exactly the irreducible second component and the three split-cubic
 components, with no further component on this stratum:
 
-- [`P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md`](P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md)
+- [`P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md`](claims/p4/classifications/star/radical-star/P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md)
 
 The rank-two-relation triangle has also become discrete.  Away from
 trivial holonomy, its three bridge catalecticants are weighted

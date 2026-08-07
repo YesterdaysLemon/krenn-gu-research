@@ -113,7 +113,7 @@ It has rank one exactly on the bihomogeneous hypersurface
 
 The Borel coefficients `c,n` disappear.  On the dense leaf chart `a=g=1`,
 (9) is precisely the irreducible component-twenty-five equation proved in
-[`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md`](../../../../../P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md).
+[`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md`](../../star/unequal-endpoint-inward-star-211/P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md).
 Equation (9) is not divisible by `a` or `g`, so its projective closure also
 contains both omitted leaf hyperplanes and has no extra boundary component.
 For example `(a,e,g,j,k,s)=(1,1,0,1,2,1)` is a pure all-pair point with

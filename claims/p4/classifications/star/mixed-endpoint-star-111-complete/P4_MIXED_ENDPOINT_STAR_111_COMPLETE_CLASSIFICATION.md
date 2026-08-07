@@ -42,9 +42,9 @@ same cubic again vanishes.  For two distinct genuine binary labels there are
 only two source-graph possibilities:
 
 1. adjacent labels are the complete overlapping chart in
-   [`P4_OVERLAPPING_MIXED_ORIENTATION_PROJECTIVE_EXHAUSTION.md`](P4_OVERLAPPING_MIXED_ORIENTATION_PROJECTIVE_EXHAUSTION.md);
+   [`P4_OVERLAPPING_MIXED_ORIENTATION_PROJECTIVE_EXHAUSTION.md`](../../../../../P4_OVERLAPPING_MIXED_ORIENTATION_PROJECTIVE_EXHAUSTION.md);
 2. disjoint labels are the complete component-eight chart in
-   [`P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md`](P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md).
+   [`P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md`](../disjoint-mixed-star-projective/P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md).
 
 It remains only to classify a singleton third label outside the common
 binary support.
@@ -135,7 +135,7 @@ AC=0.                                             (9)
 If any of these pair images has rank below three, the lower-pair theorem
 applies.  Otherwise (9) is a cyclic rank-one triangle with a singleton
 label, so the complete toric-boundary theorem
-[`P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_ONE_BOUNDARY.md`](P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_ONE_BOUNDARY.md)
+[`P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_ONE_BOUNDARY.md`](../../../../../P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_ONE_BOUNDARY.md)
 places it in component sixteen or seventeen.
 
 ### The branch `b!=0`
@@ -155,7 +155,7 @@ y_1y_2=0,       x_1y_3=0,       x_2y_3=0.         (11)
 On the all-pair locus all three images have rank exactly three, and (11)
 has exactly one kernel--kernel edge.  The complete exactly-one-kernel
 triangle placement recorded in
-[`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md)
+[`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](../../../../../P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md)
 puts every such point in an already certified component closure.
 
 This exhausts the singleton boundary and hence the whole orientation (1).
@@ -163,8 +163,8 @@ This exhausts the singleton boundary and hence the whole orientation (1).
 ## Replay
 
 ```text
-uv run --with sympy python verify_p4_mixed_endpoint_star_111_complete_classification.py
-uv run --with sympy python audit_p4_mixed_endpoint_star_111_complete_classification.py
+uv run --with sympy python claims/p4/classifications/star/mixed-endpoint-star-111-complete/verify_p4_mixed_endpoint_star_111_complete_classification.py
+uv run --with sympy python claims/p4/classifications/star/mixed-endpoint-star-111-complete/audit_p4_mixed_endpoint_star_111_complete_classification.py
 ```
 
 The primary verifier reconstructs all coefficients in (3), both exact

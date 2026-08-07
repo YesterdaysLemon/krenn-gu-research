@@ -10,13 +10,13 @@ five-dimensional component orbit, component twenty-five.
 
 The complete reverse support and projective leaf-boundary classification is
 proved subsequently in
-[`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/unequal-endpoint-inward-star-211-complete/P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md).
+[`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md`](../../triangle-211/unequal-endpoint-inward-star-211-complete/P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md).
 This component's `P_5` fibres, special fibres, and the
 arbitrary-order local-to-global step remain open.  The Krenn--Gu conjecture
 remains **UNRESOLVED**.
 
 The equal-endpoint inward stratum is excluded separately in
-[`P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md`](P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md).
+[`P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md`](../equal-endpoint-inward-star-211-obstruction/P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md).
 
 ## Normal form and purity equation
 
@@ -119,8 +119,8 @@ component twenty-three and the mixed-orientation component twenty-four.
 ## Replay and boundary
 
 ```text
-uv run --with sympy python verify_p4_unequal_endpoint_inward_star_211_component.py
-uv run --with sympy python audit_p4_unequal_endpoint_inward_star_211_component.py
+uv run --with sympy python claims/p4/classifications/star/unequal-endpoint-inward-star-211/verify_p4_unequal_endpoint_inward_star_211_component.py
+uv run --with sympy python claims/p4/classifications/star/unequal-endpoint-inward-star-211/audit_p4_unequal_endpoint_inward_star_211_component.py
 ```
 
 The primary verifier reconstructs (1)--(9) over exact characteristic-zero

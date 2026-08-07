@@ -4,7 +4,7 @@
 
 This is an exact exploratory checkpoint, not a complete component
 theorem.  It opens the mixed-orientation stratum left unclassified by
-[`P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md`](P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md):
+[`P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md`](claims/p4/classifications/star/radical-star/P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md):
 two rank-one exceptional relations in directed **path** position.
 The chart identities below are exact and replayed.  The `F_4` branch
 is now settled: it is contained in the six-dimensional seventh

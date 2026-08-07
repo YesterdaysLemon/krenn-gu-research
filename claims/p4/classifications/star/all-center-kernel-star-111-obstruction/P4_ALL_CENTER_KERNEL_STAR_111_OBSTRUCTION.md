@@ -51,8 +51,8 @@ possibilities in characteristic zero.
 ## Replay
 
 ```text
-uv run --with sympy python verify_p4_all_center_kernel_star_111_obstruction.py
-uv run --with sympy python audit_p4_all_center_kernel_star_111_obstruction.py
+uv run --with sympy python claims/p4/classifications/star/all-center-kernel-star-111-obstruction/verify_p4_all_center_kernel_star_111_obstruction.py
+uv run --with sympy python claims/p4/classifications/star/all-center-kernel-star-111-obstruction/audit_p4_all_center_kernel_star_111_obstruction.py
 ```
 
 The primary verifier checks both zero-divisor supports symbolically.  The

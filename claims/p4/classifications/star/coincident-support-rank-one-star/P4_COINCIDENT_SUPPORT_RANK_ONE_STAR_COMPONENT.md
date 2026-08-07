@@ -19,7 +19,7 @@ lower bound is therefore twenty-one symmetry-inequivalent pure-`P_4`
 component orbits.
 
 The mixed-chain vertical fibre left open in equation (22) of
-[`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md)
+[`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](../../../../../P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md)
 is a boundary of this component.  Together with the other residual-placement
 theorems, this closes the exactly-one-kernel rank-one triangle cell at the
 pure-`P_4` level.  It does not settle the marked `P_5` fibres of the new
@@ -271,8 +271,8 @@ closure.
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_p4_coincident_support_rank_one_star_component.py
-python audit_p4_coincident_support_rank_one_star_component.py
+uv run --with sympy python claims/p4/classifications/star/coincident-support-rank-one-star/verify_p4_coincident_support_rank_one_star_component.py
+python claims/p4/classifications/star/coincident-support-rank-one-star/audit_p4_coincident_support_rank_one_star_component.py
 ```
 
 The primary verifier checks (4)--(22) over `Q`, including the exact

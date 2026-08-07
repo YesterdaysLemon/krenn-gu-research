@@ -25,10 +25,10 @@ DEPENDENCIES = {
     "audit_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py": (
         "b0c7f0971d40c8e558425c20dc62cb887f378a3eb0ae5cbe5ce54c4df8c7d86f"
     ),
-    "P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md": (
+    "claims/p4/classifications/star/coincident-support-rank-one-star/P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md": (
         "1b535667beed409fe08d4fa9011f2fbc455d4d4c6a7d0c2aecc089a107cdc447"
     ),
-    "verify_p4_coincident_support_rank_one_star_component.py": (
+    "claims/p4/classifications/star/coincident-support-rank-one-star/verify_p4_coincident_support_rank_one_star_component.py": (
         "a170054715c8fc8ec7f1fc1e0dba896c0fdc7d72ed58e41e7f9b8bba23af4adf"
     ),
 }

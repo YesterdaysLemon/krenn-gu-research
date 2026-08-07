@@ -11,7 +11,7 @@ obstruction by that route.
 
 The star obstruction has since been reproved with the corrected Borel
 triangle classification and a separate full-support `2+2` chart:
-[`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md).
+[`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](claims/p4/classifications/star/rank-two-relation-star-obstruction/P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md).
 This file remains withdrawn because its original proof route is invalid;
 use the replacement theorem for the current result.
 

@@ -211,8 +211,8 @@ exhausted by the lower-pair and completed triangle theorems.
 ## Replay
 
 ```text
-uv run --with sympy python verify_p4_no_double_endpoint_star_1110_collision_classification.py
-uv run --with sympy python audit_p4_no_double_endpoint_star_1110_collision_classification.py
+uv run --with sympy python claims/p4/classifications/star/no-double-endpoint-star-1110-collision/verify_p4_no_double_endpoint_star_1110_collision_classification.py
+uv run --with sympy python claims/p4/classifications/star/no-double-endpoint-star-1110-collision/audit_p4_no_double_endpoint_star_1110_collision_classification.py
 ```
 
 The primary verifier reconstructs all permanent coefficients, exact

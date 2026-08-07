@@ -23,8 +23,8 @@ VERTICAL_AUDIT = (
     ROOT
     / "audit_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py"
 )
-P4_THEOREM = ROOT / "P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md"
-P4_PRIMARY = ROOT / "verify_p4_coincident_support_rank_one_star_component.py"
+P4_THEOREM = ROOT / "claims/p4/classifications/star/coincident-support-rank-one-star/P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md"
+P4_PRIMARY = ROOT / "claims/p4/classifications/star/coincident-support-rank-one-star/verify_p4_coincident_support_rank_one_star_component.py"
 PINNED = {
     VERTICAL_THEOREM: "8a61d156778ccc7a388790ee9c0af12a905d2d072b2dc368a4bf978470648982",
     VERTICAL_PRIMARY: "2626ab1af6c22fb724f6a530fa07083d232986905e14d2f52da51e07cf502ccc",

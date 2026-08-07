@@ -1169,7 +1169,7 @@ twenty-five certified pure-`P_4` component closures are exhaustive.
 See
 [`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md)
 and
-[`P4_NO_DOUBLE_ENDPOINT_STAR_1110_COLLISION_CLASSIFICATION.md`](P4_NO_DOUBLE_ENDPOINT_STAR_1110_COLLISION_CLASSIFICATION.md).
+[`P4_NO_DOUBLE_ENDPOINT_STAR_1110_COLLISION_CLASSIFICATION.md`](claims/p4/classifications/star/no-double-endpoint-star-1110-collision/P4_NO_DOUBLE_ENDPOINT_STAR_1110_COLLISION_CLASSIFICATION.md).
 
 Generic marked `H31` fibres are now proved empty on all twenty-five
 components.  Generic weighted `H22` is proved empty on the first twenty-one
@@ -2500,7 +2500,7 @@ strictly advance the finite frontier:
   previously missing full-support `2+2` Borel chart has two kernel-marked
   words forcing the same quadratic `E` to equal both zero and one.  Thus no
   pure rank-three star can have three rank-two unique relations:
-  [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md).
+  [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](claims/p4/classifications/star/rank-two-relation-star-obstruction/P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md).
 - the mixed rank-three triangle with coefficient-rank pattern `(2,2,1)` is
   now excluded in every Borel chart.  Ordinary synchronizer pencils are
   totally isotropic; the support-two equal-ratio boundary closes by the
@@ -2520,13 +2520,13 @@ strictly advance the finite frontier:
   `d=(1+st)/(s+t)` becomes the torus multiplication law `c(d)=c(s)c(t)`.
   Exact family and incidence minors prove that its diagonal-source closure
   is a smooth five-dimensional component at `(s,t)=(2,3)`:
-  [`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md).
+  [`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](claims/p4/classifications/star/two-rank-two-spoke-mixed-star-component/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md).
   A reverse Borel analysis proves this is the complete rank-three star
   stratum with relation-rank multiset `{1,2,2}`.  Ordinary synchronizer
   pencils force an extra leaf relation; the support-two equal-ratio center
   gives either the zero tensor or a rank-two center pair; and the full
   `2+2` equations force the displayed Cayley law:
-  [`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md).
+  [`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md`](claims/p4/classifications/star/two-rank-two-spoke-mixed-star-classification/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md).
 - the tenth component's complete generic weighted `H22` fibre is empty.
   Projecting the Borel marking incidence away from its free all-active
   coordinate turns the other fifteen binary coefficients into a fixed-vertex
@@ -2702,7 +2702,7 @@ strictly advance the finite frontier:
   empty: two deletions are
   row-module obstructed, and each of the other two has one exact marking with
   a uniform rank-four one-marked minor:
-  [`P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md`](P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md),
+  [`P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md`](claims/p4/classifications/star/common-center-kernel-star-211/P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md),
   [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
   Exact weighted closure covers all markings at generic weight infinity and
   at every finite weight.  On ordinary weights, exact selected minors confine
@@ -2754,7 +2754,7 @@ strictly advance the finite frontier:
   identifies the sole ordinary residual as
   `(js-1)lambda-(js+1)=0`; that divisor, `B=0`, and the remaining
   finite/projective fibres remain open:
-  [`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md`](P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md),
+  [`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md`](claims/p4/classifications/star/unequal-endpoint-inward-star-211/P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md),
   [`P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
   [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_LINEAR_REDUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_LINEAR_REDUCTION.md),
   [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_GENERIC_WEIGHT_OBSTRUCTION.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_GENERIC_WEIGHT_OBSTRUCTION.md), and
@@ -2762,18 +2762,18 @@ strictly advance the finite frontier:
   The equal-endpoint two-inward stratum is empty: support one forces the zero
   tensor, nonsingular binary complement has fixed forbidden coefficient
   `-4Q`, and both singleton-complement charts are zero or lower-pair:
-  [`P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md`](P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md),
+  [`P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md`](claims/p4/classifications/star/equal-endpoint-inward-star-211-obstruction/P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md),
   [`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/unequal-endpoint-inward-star-211-complete/P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md).
 - in the remaining star-`(1,1,1)` cell, the strict all-three-arrows-to-center
   orientation is empty.  All three leaf active rows would be the unique
   polar partner of the center kernel, and every singleton/binary polar has
   zero squarefree cube.  Double-endpoint boundaries and the other
   mixed/radical support collisions remain separate:
-  [`P4_ALL_CENTER_KERNEL_STAR_111_OBSTRUCTION.md`](P4_ALL_CENTER_KERNEL_STAR_111_OBSTRUCTION.md).
+  [`P4_ALL_CENTER_KERNEL_STAR_111_OBSTRUCTION.md`](claims/p4/classifications/star/all-center-kernel-star-111-obstruction/P4_ALL_CENTER_KERNEL_STAR_111_OBSTRUCTION.md).
   The all-three kernel--kernel orientation is also empty by an exact
   singleton/binary support split.  Stars with only one or two double-endpoint
   spokes remain open:
-  [`P4_ALL_DOUBLE_ENDPOINT_STAR_111_OBSTRUCTION.md`](P4_ALL_DOUBLE_ENDPOINT_STAR_111_OBSTRUCTION.md).
+  [`P4_ALL_DOUBLE_ENDPOINT_STAR_111_OBSTRUCTION.md`](claims/p4/classifications/star/all-double-endpoint-star-111-obstruction/P4_ALL_DOUBLE_ENDPOINT_STAR_111_OBSTRUCTION.md).
 - the entire boundary where at least one rank-one edge is support-one
   produces no new
   component.  A support-one zero divisor has annihilator equal to its own
@@ -3172,7 +3172,7 @@ strictly advance the finite frontier:
   `7h^2/60` and `-7h^2/20`; hence the local dimension is exactly six.  The
   entire projective residual fibre is its homogeneous boundary.  This closes
   the full `triangle-(1,1,1)` cell:
-  [`P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md`](P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md).
+  [`P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md`](claims/p4/classifications/star/coincident-support-rank-one-star/P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md).
 - component twenty-one's complete generic marked `H31` fibre is empty.  Two
   source deletions fail by Hall deficiency.  For the other two, exact
   polynomial row-module identities over `C(p,q,kappa,ell)` put the all-kernel
@@ -3429,14 +3429,14 @@ strictly advance the finite frontier:
   only when `Bf+1=f+B*phi^2=A^2*f+B=0`; its entire exceptional `P^1` kernel
   is filled by explicit formal arcs from rank two.  Hence no extra component
   hides in the vanished-cross-product boundary of this affine chart:
-  [`P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md`](P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md).
+  [`P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md`](claims/p4/classifications/star/disjoint-mixed-star-affine/P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md).
   Homogenizing the leaf row closes the complementary projective chart.  The
   determinant base is an irreducible threefold.  Its complete rank-one locus
   has dimension one and `P^1` kernel fibers, hence dimension two; but the
   three-equation kernel incidence in a sixfold has no component below
   dimension three.  There is therefore no vertical component, and every
   projective boundary point is also in component eight:
-  [`P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md`](P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md).
+  [`P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md`](claims/p4/classifications/star/disjoint-mixed-star-projective/P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md).
   Its generic marked `H31` fibre is now empty.  Exact function-field
   projection leaves no genuine marking for source coordinates zero
   and one and one marking each for coordinates two and three; on both
