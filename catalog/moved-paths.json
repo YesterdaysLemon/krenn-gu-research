@@ -16,16 +16,16 @@
   },
   "counts": {
     "total_classified_moves": 2015,
-    "moved": 165,
+    "moved": 207,
     "pilot": 0,
     "proposed_high_confidence": 361,
-    "review_required": 1489,
+    "review_required": 1447,
     "unclassified": 348,
     "root_files_before": 2363,
     "root_dirs_before": 3,
     "root_entries_before": 2366,
-    "projected_root_if_moved_only": 2207,
-    "projected_root_if_high_confidence_batches_executed": 1846,
+    "projected_root_if_moved_only": 2165,
+    "projected_root_if_high_confidence_batches_executed": 1804,
     "projected_root_if_all_classified_executed": 357,
     "projection_note": "unclassified files are not members of any move set, so every projection already leaves them at the root; do not add unclassified again",
     "collisions": 0,
@@ -3401,49 +3401,55 @@
       "old_path": "P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md",
       "new_path": "claims/p4/boundaries/pair-geometry/support-one-secant/P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md",
       "reason": "claim_document -> p4/boundaries/pair-geometry/support-one-secant",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/boundaries/pair-geometry/support-one-secant",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "audit_p4_support_one_secant_boundary_inclusion.py",
       "new_path": "claims/p4/boundaries/pair-geometry/support-one-secant/audit_p4_support_one_secant_boundary_inclusion.py",
       "reason": "claim_script -> p4/boundaries/pair-geometry/support-one-secant",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/boundaries/pair-geometry/support-one-secant",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "verify_p4_support_one_secant_boundary_inclusion.py",
       "new_path": "claims/p4/boundaries/pair-geometry/support-one-secant/verify_p4_support_one_secant_boundary_inclusion.py",
       "reason": "claim_script -> p4/boundaries/pair-geometry/support-one-secant",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/boundaries/pair-geometry/support-one-secant",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md",
       "new_path": "claims/p4/boundaries/pair-geometry/support-two-tangent-flag/P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md",
       "reason": "claim_document -> p4/boundaries/pair-geometry/support-two-tangent-flag",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/boundaries/pair-geometry/support-two-tangent-flag",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "audit_p4_support_two_tangent_flag_boundary_inclusion.py",
       "new_path": "claims/p4/boundaries/pair-geometry/support-two-tangent-flag/audit_p4_support_two_tangent_flag_boundary_inclusion.py",
       "reason": "claim_script -> p4/boundaries/pair-geometry/support-two-tangent-flag",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/boundaries/pair-geometry/support-two-tangent-flag",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "verify_p4_support_two_tangent_flag_boundary_inclusion.py",
       "new_path": "claims/p4/boundaries/pair-geometry/support-two-tangent-flag/verify_p4_support_two_tangent_flag_boundary_inclusion.py",
       "reason": "claim_script -> p4/boundaries/pair-geometry/support-two-tangent-flag",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/boundaries/pair-geometry/support-two-tangent-flag",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "verify_p4_common_active_binary_triangle_p_plus_q_boundary.py",
@@ -3945,289 +3951,325 @@
       "old_path": "P4_DECOMPOSABLE_RANK_TWO_FAMILY.md",
       "new_path": "claims/p4/classifications/pair-geometry/decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md",
       "reason": "claim_document -> p4/classifications/pair-geometry/decomposable-rank-two-family",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/decomposable-rank-two-family",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "audit_p4_decomposable_rank_two_family.py",
       "new_path": "claims/p4/classifications/pair-geometry/decomposable-rank-two-family/audit_p4_decomposable_rank_two_family.py",
       "reason": "claim_script -> p4/classifications/pair-geometry/decomposable-rank-two-family",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/decomposable-rank-two-family",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "verify_p4_decomposable_rank_two_family.py",
       "new_path": "claims/p4/classifications/pair-geometry/decomposable-rank-two-family/verify_p4_decomposable_rank_two_family.py",
       "reason": "claim_script -> p4/classifications/pair-geometry/decomposable-rank-two-family",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/decomposable-rank-two-family",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md",
       "new_path": "claims/p4/classifications/pair-geometry/decomposable-restriction-rank-drop/P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md",
       "reason": "claim_document -> p4/classifications/pair-geometry/decomposable-restriction-rank-drop",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/decomposable-restriction-rank-drop",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "audit_p4_decomposable_restriction_rank_drop.py",
       "new_path": "claims/p4/classifications/pair-geometry/decomposable-restriction-rank-drop/audit_p4_decomposable_restriction_rank_drop.py",
       "reason": "claim_script -> p4/classifications/pair-geometry/decomposable-restriction-rank-drop",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/decomposable-restriction-rank-drop",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "verify_p4_decomposable_restriction_rank_drop.py",
       "new_path": "claims/p4/classifications/pair-geometry/decomposable-restriction-rank-drop/verify_p4_decomposable_restriction_rank_drop.py",
       "reason": "claim_script -> p4/classifications/pair-geometry/decomposable-restriction-rank-drop",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/decomposable-restriction-rank-drop",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md",
       "new_path": "claims/p4/classifications/pair-geometry/disjoint-secant-lower-pair/P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md",
       "reason": "claim_document -> p4/classifications/pair-geometry/disjoint-secant-lower-pair",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/disjoint-secant-lower-pair",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "audit_p4_disjoint_secant_lower_pair_component.py",
       "new_path": "claims/p4/classifications/pair-geometry/disjoint-secant-lower-pair/audit_p4_disjoint_secant_lower_pair_component.py",
       "reason": "claim_script -> p4/classifications/pair-geometry/disjoint-secant-lower-pair",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/disjoint-secant-lower-pair",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "verify_p4_disjoint_secant_lower_pair_component.py",
       "new_path": "claims/p4/classifications/pair-geometry/disjoint-secant-lower-pair/verify_p4_disjoint_secant_lower_pair_component.py",
       "reason": "claim_script -> p4/classifications/pair-geometry/disjoint-secant-lower-pair",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/disjoint-secant-lower-pair",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md",
       "new_path": "claims/p4/classifications/pair-geometry/full-support-tangent-pair/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md",
       "reason": "claim_document -> p4/classifications/pair-geometry/full-support-tangent-pair",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/full-support-tangent-pair",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "audit_p4_full_support_tangent_pair_component.py",
       "new_path": "claims/p4/classifications/pair-geometry/full-support-tangent-pair/audit_p4_full_support_tangent_pair_component.py",
       "reason": "claim_script -> p4/classifications/pair-geometry/full-support-tangent-pair",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/full-support-tangent-pair",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "verify_p4_full_support_tangent_pair_component.py",
       "new_path": "claims/p4/classifications/pair-geometry/full-support-tangent-pair/verify_p4_full_support_tangent_pair_component.py",
       "reason": "claim_script -> p4/classifications/pair-geometry/full-support-tangent-pair",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/full-support-tangent-pair",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md",
       "new_path": "claims/p4/classifications/pair-geometry/lower-pair-rank-exhaustion/P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md",
       "reason": "claim_document -> p4/classifications/pair-geometry/lower-pair-rank-exhaustion",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/lower-pair-rank-exhaustion",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md",
       "new_path": "claims/p4/classifications/pair-geometry/overlapping-secant-lower-pair/P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md",
       "reason": "claim_document -> p4/classifications/pair-geometry/overlapping-secant-lower-pair",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/overlapping-secant-lower-pair",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "audit_p4_overlapping_secant_lower_pair_classification.py",
       "new_path": "claims/p4/classifications/pair-geometry/overlapping-secant-lower-pair/audit_p4_overlapping_secant_lower_pair_classification.py",
       "reason": "claim_script -> p4/classifications/pair-geometry/overlapping-secant-lower-pair",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/overlapping-secant-lower-pair",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "verify_p4_overlapping_secant_lower_pair_classification.py",
       "new_path": "claims/p4/classifications/pair-geometry/overlapping-secant-lower-pair/verify_p4_overlapping_secant_lower_pair_classification.py",
       "reason": "claim_script -> p4/classifications/pair-geometry/overlapping-secant-lower-pair",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/overlapping-secant-lower-pair",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md",
       "new_path": "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md",
       "reason": "claim_document -> p4/classifications/pair-geometry/pure-rank-two",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/pure-rank-two",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "P4_PURE_RANK_TWO_COMPONENT_THEOREM.md",
       "new_path": "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md",
       "reason": "claim_document -> p4/classifications/pair-geometry/pure-rank-two",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/pure-rank-two",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md",
       "new_path": "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md",
       "reason": "claim_document -> p4/classifications/pair-geometry/pure-rank-two",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/pure-rank-two",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "audit_p4_pure_rank_two_component.py",
       "new_path": "claims/p4/classifications/pair-geometry/pure-rank-two/audit_p4_pure_rank_two_component.py",
       "reason": "claim_script -> p4/classifications/pair-geometry/pure-rank-two",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/pure-rank-two",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "audit_p4_pure_rank_two_component_chart_closure.py",
       "new_path": "claims/p4/classifications/pair-geometry/pure-rank-two/audit_p4_pure_rank_two_component_chart_closure.py",
       "reason": "claim_script -> p4/classifications/pair-geometry/pure-rank-two",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/pure-rank-two",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "audit_p4_pure_rank_two_toric_slice_segre.py",
       "new_path": "claims/p4/classifications/pair-geometry/pure-rank-two/audit_p4_pure_rank_two_toric_slice_segre.py",
       "reason": "claim_script -> p4/classifications/pair-geometry/pure-rank-two",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/pure-rank-two",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md",
       "new_path": "claims/p4/classifications/pair-geometry/pure-rank-two/boundaries/P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md",
       "reason": "claim_document -> p4/classifications/pair-geometry/pure-rank-two",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/pure-rank-two",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "audit_p4_pure_rank_two_component_toric_boundary.py",
       "new_path": "claims/p4/classifications/pair-geometry/pure-rank-two/boundaries/audit_p4_pure_rank_two_component_toric_boundary.py",
       "reason": "claim_script -> p4/classifications/pair-geometry/pure-rank-two",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/pure-rank-two",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "verify_p4_pure_rank_two_component_toric_boundary.py",
       "new_path": "claims/p4/classifications/pair-geometry/pure-rank-two/boundaries/verify_p4_pure_rank_two_component_toric_boundary.py",
       "reason": "claim_script -> p4/classifications/pair-geometry/pure-rank-two",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/pure-rank-two",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "verify_p4_pure_rank_two_component.py",
       "new_path": "claims/p4/classifications/pair-geometry/pure-rank-two/verify_p4_pure_rank_two_component.py",
       "reason": "claim_script -> p4/classifications/pair-geometry/pure-rank-two",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/pure-rank-two",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "verify_p4_pure_rank_two_component_chart_closure.py",
       "new_path": "claims/p4/classifications/pair-geometry/pure-rank-two/verify_p4_pure_rank_two_component_chart_closure.py",
       "reason": "claim_script -> p4/classifications/pair-geometry/pure-rank-two",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/pure-rank-two",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "verify_p4_pure_rank_two_toric_slice_segre.py",
       "new_path": "claims/p4/classifications/pair-geometry/pure-rank-two/verify_p4_pure_rank_two_toric_slice_segre.py",
       "reason": "claim_script -> p4/classifications/pair-geometry/pure-rank-two",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/pure-rank-two",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "P4_RANK_ONE_PAIR_OBSTRUCTION.md",
       "new_path": "claims/p4/classifications/pair-geometry/rank-one-pair-obstruction/P4_RANK_ONE_PAIR_OBSTRUCTION.md",
       "reason": "claim_document -> p4/classifications/pair-geometry/rank-one-pair-obstruction",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/rank-one-pair-obstruction",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "audit_p4_rank_one_pair_obstruction.py",
       "new_path": "claims/p4/classifications/pair-geometry/rank-one-pair-obstruction/audit_p4_rank_one_pair_obstruction.py",
       "reason": "claim_script -> p4/classifications/pair-geometry/rank-one-pair-obstruction",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/rank-one-pair-obstruction",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "verify_p4_rank_one_pair_obstruction.py",
       "new_path": "claims/p4/classifications/pair-geometry/rank-one-pair-obstruction/verify_p4_rank_one_pair_obstruction.py",
       "reason": "claim_script -> p4/classifications/pair-geometry/rank-one-pair-obstruction",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/rank-one-pair-obstruction",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md",
       "new_path": "claims/p4/classifications/pair-geometry/rank-two-pair-kernel-geometry/P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md",
       "reason": "claim_document -> p4/classifications/pair-geometry/rank-two-pair-kernel-geometry",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/rank-two-pair-kernel-geometry",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "verify_p4_rank_two_pair_kernel_geometry.py",
       "new_path": "claims/p4/classifications/pair-geometry/rank-two-pair-kernel-geometry/verify_p4_rank_two_pair_kernel_geometry.py",
       "reason": "claim_script -> p4/classifications/pair-geometry/rank-two-pair-kernel-geometry",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/rank-two-pair-kernel-geometry",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md",
       "new_path": "claims/p4/classifications/pair-geometry/tangent-rank-two-pair-purity/P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md",
       "reason": "claim_document -> p4/classifications/pair-geometry/tangent-rank-two-pair-purity",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/tangent-rank-two-pair-purity",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "audit_p4_tangent_rank_two_pair_purity_classification.py",
       "new_path": "claims/p4/classifications/pair-geometry/tangent-rank-two-pair-purity/audit_p4_tangent_rank_two_pair_purity_classification.py",
       "reason": "claim_script -> p4/classifications/pair-geometry/tangent-rank-two-pair-purity",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/tangent-rank-two-pair-purity",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "verify_p4_tangent_rank_two_pair_purity_classification.py",
       "new_path": "claims/p4/classifications/pair-geometry/tangent-rank-two-pair-purity/verify_p4_tangent_rank_two_pair_purity_classification.py",
       "reason": "claim_script -> p4/classifications/pair-geometry/tangent-rank-two-pair-purity",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/pair-geometry/tangent-rank-two-pair-purity",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-pair-geometry-stage7"
     },
     {
       "old_path": "P4_ALL_CENTER_KERNEL_STAR_111_OBSTRUCTION.md",
