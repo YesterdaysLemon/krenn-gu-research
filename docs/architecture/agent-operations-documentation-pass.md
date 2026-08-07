@@ -115,9 +115,14 @@ All local Markdown links in the new documents resolve.  No scientific
 verifier/audit replay was required or performed: no scientific
 content or executable research code changed.
 
-CI: substantive-head `workflow_dispatch` run ID and exact SHA are
-recorded below; final PR CI must pass hygiene, migration tests,
-14-vertex tests, and the rewriter fixed-point check.
+CI bookkeeping (per the established convention): the substantive-head
+workflow dispatch [31223729630](https://github.com/YesterdaysLemon/open-graph-theory-with-prize/actions/runs/31223729630)
+passed (**success**) on the exact substantive head
+`db8427b13ec33747caf39fd60e4560104def2d95`; the subsequent report-fill
+bookkeeping commit carries its own PR CI run, recorded on the PR.
+The final PR-triggered workflow must pass hygiene, migration tests,
+14-vertex tests, and the rewriter fixed-point check on the resulting
+PR head.
 
 ## Stop condition
 
