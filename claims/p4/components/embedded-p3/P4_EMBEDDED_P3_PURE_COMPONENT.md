@@ -297,7 +297,7 @@ previous eight.
 ## Relation to the triangle cut reduction
 
 The family was exposed by the cut-catalecticant analysis in
-[`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](../../../../P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md).
+[`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](../../classifications/rank-two-triangle/nonresonant/cut-reduction/P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md).
 A common `1+3` cut forces three local planes into one coordinate
 hyperplane.  Instead of contributing a rank-three exceptional
 triangle, the pair images drop to rank two and the problem becomes
@@ -306,7 +306,7 @@ discarding it as degenerate, produces the component above.
 
 The compatible-label implication is now a theorem rather than only
 the construction heuristic:
-[`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](../../../../P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md).
+[`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](../../boundaries/rank-two-triangle/nonresonant/one-three/P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md).
 For three full-support `1+3` bridges, the factorization dichotomy
 forces all singleton labels to coincide; the perfect degree
 `2`/degree `1` pairing in the resulting three-variable algebra then

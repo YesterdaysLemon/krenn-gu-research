@@ -32,7 +32,7 @@ y=(1,0,1,1),       x=(0,1,1,lambda)
 is valid when the kernel row has one zero coordinate and the other
 columns are otherwise distinct.  Its compound-matrix obstruction is
 still exact, now recorded as
-[`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md).
+[`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](claims/p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic/P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md).
 
 It is not the generic full-kernel-support normal form.  Consequently:
 
@@ -62,18 +62,18 @@ pq(p-1)(q-1)(p-q)!=0.
 
 The exact synchronizer and binary-cubic compound obstruction on the
 dense finite-partner chart are proved in
-[`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md).
+[`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](claims/p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic/P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md).
 
 Thus the correction does not merely retract scope: it replaces the
 invalid generic normalization with a valid two-modulus Borel theorem.
 The projective partner sheets over that center are now classified as three
 additive-parallelogram pure curves, all lying on the lower-pair-rank seam,
 plus an empty double-infinity sheet:
-[`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
+[`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](claims/p4/classifications/rank-two-triangle/resonant/flat-projective-partner/P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
 The full-support affine-ratio collisions are now classified too: the
 `2+1+1` and `3+1` active cubes vanish, while all four pure `2+2` seams have
 a rank-two partner pair:
-[`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
+[`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](claims/p4/classifications/rank-two-triangle/resonant/flat-full-kernel-collision/P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
 The smaller-kernel-support strata are now classified too.  They contain one
 genuine support-two annihilator-line family rather than another
 obstruction:
@@ -82,7 +82,7 @@ The dependent star and mixed `(2,2,1)` arguments have now also been replaced
 by Borel-legal proofs:
 [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](claims/p4/classifications/star/rank-two-relation-star-obstruction/P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md)
 and
-[`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md).
+[`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](claims/p4/boundaries/rank-two-triangle/mixed/two-rank-two/P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md).
 The honest unresolved boundary is instead the one-rank-two-edge mixed
 triangle, other mixed-star patterns, and lower pair-image ranks.  The crossed
 genuine support-two orientation of that triangle is now classified in

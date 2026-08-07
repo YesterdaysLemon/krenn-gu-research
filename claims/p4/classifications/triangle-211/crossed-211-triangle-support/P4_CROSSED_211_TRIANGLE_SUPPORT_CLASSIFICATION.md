@@ -209,7 +209,7 @@ Now either `U_1` collapses or edge `23` acquires the second zero product
 `x_2y_3=aa_bar=0`.  This excludes the disjoint branch without solving an
 ideal.  It is the four-vertex specialization of the hyperbolic-block anchor
 lemma in
-[`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](../../../../../P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md).
+[`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](../../../boundaries/rank-two-triangle/nonresonant/two-two/P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md).
 
 ## One-coordinate overlap has one dense orbit
 

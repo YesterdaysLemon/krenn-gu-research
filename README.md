@@ -2378,7 +2378,7 @@ strictly advance the finite frontier:
   catalecticant has rank two, so it is a weighted cut: `1+3` or
   `2+2`, with the latter governed by one tetrad.  This reduces the
   nonresonant triangle to cyclic cut compatibility:
-  [`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md).
+  [`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](claims/p4/classifications/rank-two-triangle/nonresonant/cut-reduction/P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md).
 - the full-support all-`1+3` part of that cyclic problem is now empty.
   A triangle cut has only an internal factorization or a fully
   supported sign-reflection factorization.  Since every opposite
@@ -2390,7 +2390,7 @@ strictly advance the finite frontier:
   at most two.  Thus no new component occurs there; `2+2` cycles,
   proper cut-support boundaries, and the resonant divisor remained at
   that checkpoint:
-  [`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md).
+  [`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](claims/p4/boundaries/rank-two-triangle/nonresonant/one-three/P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md).
 - every full-support `2+2` bridge is now impossible as well.  Writing
   it as `q=ab` across two binary blocks, every factorization of `q`
   contains the anchor `a` or `b`.  Its annihilator is
@@ -2401,7 +2401,7 @@ strictly advance the finite frontier:
   Combining both cut theorems empties the full-support nonresonant
   triangle.  At that checkpoint, proper cut-support boundaries and
   the resonant holonomy divisor remained:
-  [`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md).
+  [`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](claims/p4/boundaries/rank-two-triangle/nonresonant/two-two/P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md).
 - the proper cut-support boundary is now empty too.  Every nonzero
   proper cut is either one edge or a two-edge star.  A one-edge
   annihilator forces every rank-two-relation partner into the same
@@ -2411,7 +2411,7 @@ strictly advance the finite frontier:
   alleged rank-three pair have rank at most two.  Consequently the
   complete nonresonant all-rank-two-relation triangle is empty.  Only
   the trivial-holonomy resonant divisor remains:
-  [`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md).
+  [`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](claims/p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut/P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md).
 - the resonant divisor is now an affine-holonomy problem.  After
   normalizing projective transport, the relations are
   `A_ij*y_i*y_j+y_i*x_j-x_i*y_j=0` and the residual gauge invariant is
@@ -2423,7 +2423,7 @@ strictly advance the finite frontier:
   first three coefficients compressed to a plane.  These two small
   incidences, not the original plane equations, are the remaining
   triangle frontier:
-  [`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md).
+  [`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](claims/p4/classifications/rank-two-triangle/resonant/affine-holonomy-reduction/P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md).
 - the nonzero additive-holonomy branch is empty.  Its tangent-Segre
   first jet makes the three kernel-pair products into nonzero
   rank-two cuts with the opposite planes as annihilators.  Proper
@@ -2433,7 +2433,7 @@ strictly advance the finite frontier:
   pure `P_3`, where perfect pairing makes every pair image have rank
   at most two.  The triangle frontier is therefore reduced to the
   flat synchronized binary cubic `Omega=delta=0`:
-  [`P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md`](P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md).
+  [`P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md`](claims/p4/boundaries/rank-two-triangle/resonant/nonzero-additive-holonomy/P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md).
 - the Borel-generic flat binary cubic is empty.  Purity fixes the
   kernel lines, so the correct normal form is
   `y=(1,1,1,1), x=(0,1,p,q)`, not a full-`GL_2` cross-ratio form.
@@ -2445,8 +2445,8 @@ strictly advance the finite frontier:
   full-kernel-support, distinct-affine-ratio, finite-partner chart.
   A companion compound identity excludes the otherwise-distinct
   one-kernel-zero chart:
-  [`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md),
-  [`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md).
+  [`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](claims/p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic/P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md),
+  [`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](claims/p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic/P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md).
 - the projective partner sheets over that same generic center are now
   classified exactly.  With one partner at infinity, purity occurs on
   precisely three rational curves, characterized invariantly by a repeated
@@ -2457,7 +2457,7 @@ strictly advance the finite frontier:
   the compression and escape ranks are incompatible.  Hence the complete
   projective sheet is empty for the intended triangle.  The next theorem
   handles the Borel affine-ratio collisions; smaller kernel supports remain:
-  [`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
+  [`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](claims/p4/classifications/rank-two-triangle/resonant/flat-projective-partner/P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
 - the remaining full-support affine-ratio collisions are now classified
   without leaving the Borel gauge.  For multiplicities `2+1+1` and `3+1`,
   the synchronizer's projective point has local rank one and every finite
@@ -2467,7 +2467,7 @@ strictly advance the finite frontier:
   and all four have a rank-two noncentral pair; both projective endpoint
   sheets are empty.  Combined with the distinct-ratio theorems, this
   excludes every full-kernel-support flat rank-three-relation triangle:
-  [`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
+  [`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](claims/p4/classifications/rank-two-triangle/resonant/flat-full-kernel-collision/P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
 - the smaller kernel supports complete the corrected triangle
   classification, and they reveal a survivor rather than another
   obstruction.  Up to source symmetry it is
@@ -2510,7 +2510,7 @@ strictly advance the finite frontier:
   coefficient matrix `[[0,1],[-1,0]]` and rank two, contradicting the
   required rank one.  This leaves one-rank-two-edge triangles and the lower
   pair-rank boundary, not the `(2,2,1)` pattern:
-  [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md).
+  [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](claims/p4/boundaries/rank-two-triangle/mixed/two-rank-two/P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md).
 - the analogous `(2,2,1)` **star** does exist and supplies a tenth pure-`P_4`
   component orbit.  In the full-support `2+2` presymplectic chart, purity
   leaves a rational two-parameter family with only

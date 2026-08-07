@@ -997,8 +997,8 @@ latter, and cyclic compatibility forces one common singleton.  The
 result is an embedded pure `P_3`, whose perfect pairing drops the
 three pair ranks from three to at most two:
 
-- [`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md)
-- [`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md)
+- [`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](claims/p4/classifications/rank-two-triangle/nonresonant/cut-reduction/P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md)
+- [`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](claims/p4/boundaries/rank-two-triangle/nonresonant/one-three/P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md)
 
 A second hyperbolic-block argument excludes every full-support
 `2+2` bridge.  Such a bridge is `q=ab`, and every factorization
@@ -1006,7 +1006,7 @@ contains the anchor `a` or `b`.  But a rank-three partner of
 `Ann(q)=span(a_bar,b_bar)` has crossed-graph form with nonzero
 off-diagonal coupling and contains neither anchor:
 
-- [`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md)
+- [`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](claims/p4/boundaries/rank-two-triangle/nonresonant/two-two/P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md)
 
 The proper bridge-support boundary is now closed as well.  A nonzero
 proper cut has one edge or is a two-edge star.  The former forces its
@@ -1014,7 +1014,7 @@ partner back into a coordinate two-plane and product rank one; the
 latter puts all three triangle planes in one coordinate hyperplane,
 where the pure-`P_3` pairing forces pair rank at most two:
 
-- [`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md)
+- [`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](claims/p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut/P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md)
 
 The complete nonresonant triangle is therefore empty.  Only the
 resonant holonomy divisor remains.
@@ -1032,7 +1032,7 @@ three local bases synchronize and multiplication factors through a
 binary cubic `Sym^3(C^2) -> R_3`; purity compresses its first three
 coefficients to a plane while the fourth escapes:
 
-- [`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md)
+- [`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](claims/p4/classifications/rank-two-triangle/resonant/affine-holonomy-reduction/P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md)
 
 The complementary mixed zero-product orientation produces a sixth
 component.  Its normalized kernel contractions form a `3 x 4`

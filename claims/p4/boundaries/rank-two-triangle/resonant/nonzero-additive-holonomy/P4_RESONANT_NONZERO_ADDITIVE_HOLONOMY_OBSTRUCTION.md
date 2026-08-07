@@ -4,7 +4,7 @@
 
 This is an exact characteristic-zero obstruction for the
 `delta!=0` branch of
-[`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md).
+[`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](../../../../classifications/rank-two-triangle/resonant/affine-holonomy-reduction/P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md).
 The proof reuses the already proved support, anchor, and
 coordinate-hyperplane lemmas; no elimination or component search is
 used.
@@ -21,7 +21,7 @@ compressed binary cubic `Sym^3(C^2) -> R_3`.
 
 The Borel-generic part of the final flat branch has since been
 excluded in
-[`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md).
+[`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](../flat-generic-binary-cubic/P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md).
 Its projective partner and collision boundaries, component
 exhaustiveness, the other exceptional/lower-rank graphs, and the
 global Krenn--Gu conjecture remain open.
@@ -81,7 +81,7 @@ Suppose one `q_ij` has proper cut support.  It has either one edge or
 two adjacent edges.
 
 The proof of
-[`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md)
+[`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](../../nonresonant/degenerate-cut/P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md)
 uses only:
 
 1. the opposite-plane identity `U_k=Ann(q_ij)`;
@@ -111,7 +111,7 @@ U_3=span(a_bar,b_bar).
 ```
 
 The crossed-graph lemma in
-[`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md)
+[`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](../../nonresonant/two-two/P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md)
 again uses only the two rank-three partner relations.  It proves that
 neither `U_1` nor `U_2` contains either anchor line `C a,C b`.
 
@@ -141,7 +141,7 @@ q_ij=y_i y_j.
 
 Each factor already lies in a coordinate hyperplane by (5), applied
 to the other two cuts.  The full `1+3` factorization lemma from
-[`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md)
+[`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](../../nonresonant/one-three/P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md)
 says that the non-internal factorization sheet is fully supported.
 It is therefore impossible here.  Both factors lie inside the
 three-coordinate block of their cut:
@@ -205,8 +205,8 @@ empty; other Borel boundaries remain.
 Run:
 
 ```text
-python verify_p4_resonant_nonzero_additive_holonomy_obstruction.py
-python audit_p4_resonant_nonzero_additive_holonomy_obstruction.py
+python claims/p4/boundaries/rank-two-triangle/resonant/nonzero-additive-holonomy/verify_p4_resonant_nonzero_additive_holonomy_obstruction.py
+python claims/p4/boundaries/rank-two-triangle/resonant/nonzero-additive-holonomy/audit_p4_resonant_nonzero_additive_holonomy_obstruction.py
 ```
 
 The primary verifier replays the cut ranks, support alternatives,

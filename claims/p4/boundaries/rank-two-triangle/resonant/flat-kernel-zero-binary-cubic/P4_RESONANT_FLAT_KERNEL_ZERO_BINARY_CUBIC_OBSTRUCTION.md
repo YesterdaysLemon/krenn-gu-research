@@ -4,7 +4,7 @@
 
 This is an exact characteristic-zero obstruction for the
 one-kernel-zero chart of the last triangle branch in
-[`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md).
+[`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](../../../../classifications/rank-two-triangle/resonant/affine-holonomy-reduction/P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md).
 It uses projective normalization, a two-dimensional adjugate pencil,
 and one compound-matrix identity.  It uses no component enumeration
 or elimination.
@@ -18,7 +18,7 @@ theorem, not the generic full-kernel-support theorem.
 The earlier claim that this chart and its projective-column collision
 analysis classified the complete flat branch was overstrong.  The
 full-support Borel chart is treated separately in
-[`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md).
+[`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](../flat-generic-binary-cubic/P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md).
 Other Borel collision/projective-parameter boundaries,
 pure-component exhaustiveness, and the global Krenn--Gu conjecture
 remain open.
@@ -309,8 +309,8 @@ moduli problem.
 Run:
 
 ```text
-python verify_p4_resonant_flat_kernel_zero_binary_cubic.py
-python audit_p4_resonant_flat_kernel_zero_binary_cubic.py
+python claims/p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic/verify_p4_resonant_flat_kernel_zero_binary_cubic.py
+python claims/p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic/audit_p4_resonant_flat_kernel_zero_binary_cubic.py
 ```
 
 The primary verifier derives the synchronization pencil, recomputes

@@ -13,7 +13,7 @@ obstruction does not.
 **Replacement available.**  The missing full-support `2+2` Borel chart has
 since been closed by a presymplectic commutator and four exact maximal minors.
 The corrected global theorem for the stated rank-three triangle stratum is
-[`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md).
+[`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](claims/p4/boundaries/rank-two-triangle/mixed/two-rank-two/P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md).
 This file remains only as an audit trail for the invalid earlier proof.
 
 The withdrawn theorem had claimed an exact obstruction on the

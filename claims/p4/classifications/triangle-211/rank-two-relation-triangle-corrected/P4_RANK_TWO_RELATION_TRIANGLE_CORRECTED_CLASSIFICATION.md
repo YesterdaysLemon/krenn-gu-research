@@ -109,9 +109,9 @@ a finite list without moving the kernel line.
 All ratio multiplicities and both projective partner sheets are already
 closed by
 
-- [`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](../../../../../P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md),
-- [`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](../../../../../P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md),
-- [`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](../../../../../P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
+- [`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](../../../boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic/P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md),
+- [`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](../../rank-two-triangle/resonant/flat-projective-partner/P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md),
+- [`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](../../rank-two-triangle/resonant/flat-full-kernel-collision/P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
 
 Thus `k=4` is empty.
 
@@ -121,7 +121,7 @@ With no zero source column, normalize the missing kernel coordinate to have
 active value one.  If the three finite ratios are distinct, the exact
 one-kernel-zero compound theorem applies:
 
-[`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](../../../../../P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md).
+[`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](../../../boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic/P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md).
 
 The two collision types are
 

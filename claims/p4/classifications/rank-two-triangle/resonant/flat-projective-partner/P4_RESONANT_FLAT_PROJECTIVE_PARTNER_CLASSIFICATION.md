@@ -11,7 +11,7 @@ pq(p-1)(q-1)(p-q)!=0.                                      (1)
 ```
 
 Together with
-[`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md),
+[`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](../../../../boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic/P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md),
 it proves that no pure all-rank-three-relation triangle occurs over this
 center, even when one or both synchronized partners lie at infinity in
 their pencil.
@@ -24,10 +24,10 @@ lower-pair-rank Segre/Kronecker boundary, not counterexamples to the
 rank-three triangle theorem.
 
 The full-support affine-ratio collisions have since been classified in
-[`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
+[`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](../flat-full-kernel-collision/P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
 The smaller-support strata have since been classified and contain one
 explicit support-two survivor:
-[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/rank-two-relation-triangle-corrected/P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
+[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](../../../triangle-211/rank-two-relation-triangle-corrected/P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
 This is not a
 classification of every pure `P_4` component and not a proof or
 counterexample for the global Krenn--Gu conjecture.
@@ -244,8 +244,8 @@ between the three languages.
 Run:
 
 ```text
-python verify_p4_resonant_flat_projective_partner.py
-python audit_p4_resonant_flat_projective_partner.py
+python claims/p4/classifications/rank-two-triangle/resonant/flat-projective-partner/verify_p4_resonant_flat_projective_partner.py
+python claims/p4/classifications/rank-two-triangle/resonant/flat-projective-partner/audit_p4_resonant_flat_projective_partner.py
 ```
 
 The primary verifier reconstructs the pencil, factors the compression and

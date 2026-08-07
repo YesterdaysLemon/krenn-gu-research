@@ -144,9 +144,9 @@ theorem.
 
 The star carrying the same relation-rank multiset is not empty; it is now
 constructed and completely classified in
-[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](claims/p4/classifications/star/two-rank-two-spoke-mixed-star-component/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md)
+[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](../../../../classifications/star/two-rank-two-spoke-mixed-star-component/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md)
 and
-[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md`](claims/p4/classifications/star/two-rank-two-spoke-mixed-star-classification/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md).
+[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md`](../../../../classifications/star/two-rank-two-spoke-mixed-star-classification/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md).
 
 The proof is symbolic and constant-size.  It enumerates Borel normal-form
 types, not graph instances or finite fields.
@@ -156,8 +156,8 @@ types, not graph instances or finite fields.
 Run:
 
 ```text
-python verify_p4_mixed_two_rank_two_triangle_obstruction.py
-python audit_p4_mixed_two_rank_two_triangle_obstruction.py
+python claims/p4/boundaries/rank-two-triangle/mixed/two-rank-two/verify_p4_mixed_two_rank_two_triangle_obstruction.py
+python claims/p4/boundaries/rank-two-triangle/mixed/two-rank-two/audit_p4_mixed_two_rank_two_triangle_obstruction.py
 ```
 
 The primary verifier reconstructs the synchronizer identities, the

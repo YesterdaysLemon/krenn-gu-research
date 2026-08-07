@@ -19,20 +19,20 @@ partner chart, this theorem excludes that case by an exact
 binary-cubic compound identity.
 
 This corrects the scope of
-[`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md),
+[`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](../flat-kernel-zero-binary-cubic/P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md),
 which is a valid one-kernel-zero boundary theorem.  The earlier
 “complete” projective-column classification was withdrawn because it
 moved the fixed kernel line:
-[`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md).
+[`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md`](../../../../../../P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md).
 
 The projective partner sheets over this same center have since been
 classified and excluded from the all-rank-three-relation triangle in
-[`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
+[`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](../../../../classifications/rank-two-triangle/resonant/flat-projective-partner/P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
 The full-support affine-ratio collisions have also since been classified
 and excluded from the rank-three triangle in
-[`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
+[`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](../../../../classifications/rank-two-triangle/resonant/flat-full-kernel-collision/P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
 The smaller-support strata have since been classified in
-[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/rank-two-relation-triangle-corrected/P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
+[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](../../../../classifications/triangle-211/rank-two-relation-triangle-corrected/P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
 They contain one explicit support-two survivor.  Thus this is a generic
 obstruction, not a component-exhaustiveness proof,
 or global solution of the Krenn--Gu conjecture.
@@ -190,15 +190,15 @@ The companion projective, full-support-collision, and smaller-support
 theorems now give the complete corrected classification.  The flat triangle
 is not empty: its unique Borel normal form is the support-two
 annihilator-line family in
-[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/rank-two-relation-triangle-corrected/P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
+[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](../../../../classifications/triangle-211/rank-two-relation-triangle-corrected/P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
 
 ## Verification
 
 Run:
 
 ```text
-python verify_p4_resonant_flat_generic_binary_cubic.py
-python audit_p4_resonant_flat_generic_binary_cubic.py
+python claims/p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic/verify_p4_resonant_flat_generic_binary_cubic.py
+python claims/p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic/audit_p4_resonant_flat_generic_binary_cubic.py
 ```
 
 The primary verifier derives (4), recomputes all squarefree triple

@@ -7,8 +7,8 @@ collision in the full-kernel-support flat rank-two-relation triangle.
 
 Combined with the distinct-ratio finite and projective theorems,
 
-- [`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md),
-- [`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md),
+- [`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](../../../../boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic/P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md),
+- [`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](../flat-projective-partner/P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md),
 
 it proves:
 
@@ -24,7 +24,7 @@ planes have pair-image rank two.  The projective endpoints are empty.
 
 The smaller-support strata have since been classified and contain one
 support-two annihilator-line survivor:
-[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/rank-two-relation-triangle-corrected/P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
+[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](../../../triangle-211/rank-two-relation-triangle-corrected/P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
 This is not a classification of every pure `P_4` component and not a proof or
 counterexample for the global Krenn--Gu conjecture.
 
@@ -271,7 +271,7 @@ subspaces is developed by Prazmowska--Prazmowski--Zynel,
 
 The rank-two seam (17) then lands in the smallest Kronecker/Segre pencil
 boundary classified intrinsically in
-[`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](claims/p4/classifications/pair-geometry/rank-two-pair-kernel-geometry/P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md),
+[`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](../../../pair-geometry/rank-two-pair-kernel-geometry/P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md),
 next to De Teran--Dopico--Landsberg,
 [Irreducible components of matrix pencils with bounded normal rank](https://arxiv.org/abs/1606.02574).
 Equations (2)--(19) are direct squarefree-algebra calculations; neither
@@ -282,8 +282,8 @@ paper contains this particular collision-to-rank-drop implication.
 Run:
 
 ```text
-python verify_p4_resonant_flat_full_kernel_collision.py
-python audit_p4_resonant_flat_full_kernel_collision.py
+python claims/p4/classifications/rank-two-triangle/resonant/flat-full-kernel-collision/verify_p4_resonant_flat_full_kernel_collision.py
+python claims/p4/classifications/rank-two-triangle/resonant/flat-full-kernel-collision/audit_p4_resonant_flat_full_kernel_collision.py
 ```
 
 The primary verifier reconstructs all three synchronizer spaces, checks the
