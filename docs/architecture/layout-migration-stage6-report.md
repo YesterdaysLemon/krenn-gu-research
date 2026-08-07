@@ -252,11 +252,13 @@ Rewriter idempotent (second pass 0/0/0).  No generated solver
 artifacts committed.  Root: 2,258 → 2,207.
 
 CI bookkeeping (per the established convention): the substantive-head
-`workflow_dispatch` run ID and the exact substantive-head SHA are
-recorded in the single report-fill bookkeeping commit that follows
-the substantive head; the final PR-triggered workflow must pass
-hygiene, migration tests, cycle-cover tests, and the rewriter
-fixed-point check on the resulting PR head.
+workflow dispatch [31210469788](https://github.com/YesterdaysLemon/open-graph-theory-with-prize/actions/runs/31210469788)
+passed (**success**) on the exact substantive head
+`5a3cb2cee8636caebfaec1d8e5f0ef60a7cf4856`; the subsequent report-fill
+bookkeeping commit carries its own PR CI run, recorded on the PR.
+The final PR-triggered workflow must pass hygiene, migration tests,
+cycle-cover tests, and the rewriter fixed-point check on the
+resulting PR head.
 
 ## Selected / excluded / deferred / shared / already migrated elsewhere
 
