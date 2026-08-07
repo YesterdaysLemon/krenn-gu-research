@@ -68,10 +68,14 @@ Lean build was run.  Facts established:
   no-solution obstruction for even N ≥ 6, D ≥ 3;
 - twelve Formal-Conjectures wrapper theorems with a per-wrapper
   `#print axioms` audit module;
-- no `sorry` and no project-specific `axiom` declarations in either
-  edition's sources; the project's own README records the expected
-  axiom closure as `propext`, `Classical.choice`, `Quot.sound`
-  (ordinary foundational assumptions), excluding `sorryAx`,
+- no `sorry`/`sorryAx` admissions and no project-specific `axiom`
+  declarations in the repository-owned Lean proof sources of either
+  edition; the pinned Formal Conjectures dependency intentionally
+  contains open catalogue declarations using `answer(sorry)` — what
+  matters for the completed wrappers is their actual axiom dependency
+  footprints; the project's own README records the expected axiom
+  closure as `propext`, `Classical.choice`, `Quot.sound` (ordinary
+  foundational assumptions), excluding `sorryAx`,
   `Lean.ofReduceBool`, `Lean.trustCompiler` — recorded as the
   project's claim, with a fresh build as the decisive confirmation;
 - the N=4 base case uses committed CNF/LRAT certificates checked by
@@ -83,9 +87,10 @@ recorded as a candidate external formalization; its integer-weight
 statement is not yet audited against this repository's formulations,
 and no definitional equivalence or formal closure of this
 repository's obligations is claimed.  At this high-level pass no
-project-specific axiom/admission concerns were found (none present in
-the sources), but that finding inherits the pending-correspondence
-caveat and awaits a build-level audit.
+project-specific axiom/admission concerns were found (none present
+in the repository-owned sources; the pending item is build-level
+confirmation of the wrapper axiom footprints), but that finding
+inherits the pending-correspondence caveat.
 
 ## Non-interference confirmation
 

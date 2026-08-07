@@ -258,7 +258,7 @@ interfaces:
 4. certificate/checker soundness;
 5. final master implication.
 
-## 8. When may the global status change?
+## 8. How may the global status change?
 
 Never because:
 
@@ -269,11 +269,18 @@ Never because:
 - a generic theorem has no known bad divisor;
 - an agent says there are no remaining cases.
 
-A transition away from **UNRESOLVED** requires a dedicated
-proof-consolidation audit.
+The global conjecture may be resolved either by a complete proof or
+by a rigorous counterexample/refutation.  A transition away from
+**UNRESOLVED** therefore requires a dedicated resolution audit of one
+of two kinds.
 
-That audit should reconstruct the global DAG from first principles
-and adversarially check:
+### Route A — proof
+
+A claimed proof requires a dedicated proof-consolidation audit that
+reconstructs the global DAG from first principles and adversarially
+checks every definition, quantifier, normalization, case-cover edge,
+specialization step, certificate bridge, and proof leaf used **by the
+claimed proof route**:
 
 - quantifier order;
 - definitions;
@@ -291,8 +298,35 @@ and adversarially check:
 - Lean axiom/admission footprint;
 - every final implication edge.
 
-Only after no unresolved load-bearing leaf or edge remains should the
-repository consider changing global status.
+Only after no unresolved leaf or edge load-bearing **for that proof
+route** remains should the repository consider changing global
+status.  Unrelated, abandoned, or superseded research branches need
+not be closed merely because they exist in the repository.
+
+### Route B — counterexample/refutation
+
+A claimed counterexample does not require closing the proof DAG.  It
+requires a dedicated counterexample-validation audit checking at
+minimum:
+
+- exact original conjecture formulation;
+- correct graph/matching/color conventions;
+- coefficient domain;
+- all quantifiers and dimension restrictions;
+- exact witness data;
+- all nonzero/support conditions;
+- exact rather than numerical verification;
+- deterministic/reproducible checking;
+- provenance and immutable witness hash;
+- at least one independent verification route where practical;
+- correspondence to the Lean formulation if formal refutation is
+  claimed.
+
+A valid counterexample resolves the conjecture negatively even if
+attempted proof programmes still contain open obligations.
+
+Keep the global status **UNRESOLVED** during either audit, and do not
+change it merely because one agent reports success.
 
 ## 9. Future machine-readable obligation graph
 

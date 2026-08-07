@@ -51,9 +51,15 @@ characteristic, support condition, or genericity statement silently.
 A file move or documentation cleanup never changes mathematical
 status.
 
-The global Krenn–Gu conjecture must remain **UNRESOLVED** until a
-dedicated proof-consolidation audit establishes that every
-load-bearing obligation and implication is closed.
+The global Krenn–Gu status remains **UNRESOLVED** until a dedicated
+resolution audit validates either:
+
+- a complete proof route, for which every edge and leaf load-bearing
+  **for that claimed proof** is closed (not every open research
+  obligation in the repository; unrelated, abandoned, or superseded
+  branches need not be closed merely because they exist); or
+- an exact counterexample/refutation satisfying the original
+  definitions and quantifiers and independently validated.
 
 ## 3. Evidence is multi-axis
 
@@ -165,7 +171,15 @@ When doing mathematical research:
   numerical observation into a proof.
 
 If work appears to close a major frontier, do not immediately rewrite
-the global status.  Trigger an adversarial proof-obligation review.
+the global status:
+
+- a candidate proof triggers an adversarial proof-consolidation
+  audit;
+- a candidate counterexample triggers an adversarial
+  counterexample-validation audit (escalate an apparent exact
+  counterexample rather than casually promoting or dismissing it);
+- neither changes global status merely because one agent reports
+  success.
 
 ## 8. Software and verifier mode
 
@@ -252,6 +266,8 @@ the relevant claim package and its own README/status documents.
 Stop and report rather than silently repairing when:
 
 - a claimed proof contradicts its verifier;
+- an apparent exact counterexample appears anywhere in the work —
+  escalate it for dedicated validation before any status claim;
 - a supposedly independent audit is not independent;
 - a live theorem appears to rely on a withdrawn step;
 - an exhaustive case split is not actually exhaustive;

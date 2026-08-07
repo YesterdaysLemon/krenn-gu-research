@@ -55,13 +55,18 @@ Read-only inspection (no build run) established the following:
   integer targets (six arbitrary-integer, six `{-1,0,1}`-restricted);
   `lean/TwelveTheoremsAudit.lean` applies `#check` and
   `#print axioms` to each.
-- No `sorry` and no project-specific `axiom` declarations appear in
-  the Lean sources; the README records the expected final axiom
-  closure as `propext`, `Classical.choice`, `Quot.sound` (ordinary
-  foundational/classical assumptions) and explicitly excludes
-  `sorryAx`, `Lean.ofReduceBool`, and `Lean.trustCompiler`.  This
-  record is the project's own claim; a fresh `lake build` + audit
-  run is the decisive confirmation.
+- Read-only inspection found no `sorry`/`sorryAx` admissions and no
+  project-specific `axiom` declarations in the **repository-owned
+  Lean proof sources** at the inspected commit.  The pinned Formal
+  Conjectures dependency intentionally contains open catalogue
+  declarations using `answer(sorry)`; what matters for the completed
+  wrapper theorems is whether their actual axiom dependency
+  footprints contain `sorryAx`.  The external project reports that
+  they do not (expected final axiom closure `propext`,
+  `Classical.choice`, `Quot.sound` — ordinary foundational/classical
+  assumptions — and explicitly no `sorryAx`, `Lean.ofReduceBool`, or
+  `Lean.trustCompiler`), but Stage 8.5 did not perform a fresh
+  `lake build`, so build-level confirmation remains pending.
 - The `N = 4` base case uses four committed CNF/LRAT certificate
   pairs checked by mathlib's `lrat_proof` elaborator, so the external
   SAT producer is not trusted by the kernel.  A Python program is
@@ -133,14 +138,28 @@ Possible architectures include:
 
 - a small checker implemented and verified in Lean;
 - reflection where certificate data are evaluated inside Lean;
-- an external checker plus a separately formalized soundness theorem
-  and carefully delimited trust boundary.
+- an external checker plus a separately formalized soundness
+  theorem and carefully delimited trust boundary;
+- **proof-producing elaborator/tactic:** an external producer emits
+  a certificate; a Lean elaborator/tactic checks/parses the
+  certificate and constructs an ordinary proof term; the Lean kernel
+  checks that term.  The producer is untrusted for soundness, and
+  tactic bugs cannot normally bypass kernel checking, although the
+  semantic connection between the certified instance and the
+  mathematical theorem must still be proved.
 
 Do not say an external Python/SAT/CAS run is Lean-verified merely
 because Lean formalizes the surrounding mathematics.
 
-(The external project's LRAT usage is an example of the third
-pattern: an untrusted SAT producer, a kernel-checked proof trace.)
+(The external project's LRAT usage follows the proof-producing
+elaborator/tactic pattern: at the inspected commit,
+`Mathlib.Tactic.Sat.FromLRAT` provides `lrat_proof`; the project
+invokes `lrat_proof` on committed CNF/LRAT data, and the generated
+result is an ordinary Lean proof term subsequently checked by the
+Lean kernel.  The SAT producer is untrusted.  The semantic bridge
+from the propositional certificates to `EqSystemN` remains a
+separate proof obligation; no separately formalized checker-soundness
+theorem was found or claimed in this inspection.)
 
 ### L4 — obligations close formally
 
