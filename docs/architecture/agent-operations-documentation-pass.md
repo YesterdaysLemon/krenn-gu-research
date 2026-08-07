@@ -129,6 +129,14 @@ The final PR-triggered workflow must pass hygiene, migration tests,
 14-vertex tests, and the rewriter fixed-point check on the resulting
 PR head.
 
+A focused documentation-only precision pass (proof-or-counterexample
+resolution rule, counterexample audit route, LRAT trust model,
+axiom-wording qualification) followed as new substantive head
+`3d07613d22f5658725e1927d1adb652eb8fb36c3`; its dispatch
+[31224934066](https://github.com/YesterdaysLemon/open-graph-theory-with-prize/actions/runs/31224934066)
+passed (**success**) on that exact head.  One subsequent report-only
+bookkeeping commit carries its own PR CI run, recorded on the PR.
+
 ## Stop condition
 
 No Stage 9, no Lean formalization project, no proof-obligation JSON
