@@ -24,17 +24,17 @@ The embedded-`P_3` suspension in
 [`P4_EMBEDDED_P3_PURE_COMPONENT.md`](../embedded-p3/P4_EMBEDDED_P3_PURE_COMPONENT.md)
 later raised the repository-wide lower bound to nine.  The two-rank-two-spoke
 mixed star in
-[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](../../../../P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md)
+[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](../../classifications/star/two-rank-two-spoke-mixed-star-component/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md)
 has since raised it to ten.  Nothing in this theorem depends on those later
 components.
 
 The component construction alone was not a classification.  The subsequent
 reverse theorem
-[`P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md`](../../../../P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md)
+[`P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md`](../../classifications/star/disjoint-mixed-star-affine/P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md)
 now proves that its closure exhausts the full affine Borel chart, including
 the exceptional `P^1` fibers where the original cross-product coordinates
 vanish.  The homogeneous incidence theorem
-[`P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md`](../../../../P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md)
+[`P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md`](../../classifications/star/disjoint-mixed-star-projective/P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md)
 closes the complementary projective leaf chart as well.  Thus this entire
 orientation/support stratum is classified.
 A subsequent exact function-field

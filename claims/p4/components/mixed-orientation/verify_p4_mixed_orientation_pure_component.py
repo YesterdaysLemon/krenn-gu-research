@@ -28,7 +28,9 @@ KNOWN_SECOND = (
     REPO_ROOT / "claims" / "p4" / "components" / "diagonal-quadric"
     / "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md")
 KNOWN_THREE = REPO_ROOT / "P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md"
-RADICAL_STAR = REPO_ROOT / "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md"
+RADICAL_STAR = (
+    REPO_ROOT / "claims" / "p4" / "classifications" / "star"
+    / "radical-star" / "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md")
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
 PAIRS = tuple(itertools.combinations(range(4), 2))

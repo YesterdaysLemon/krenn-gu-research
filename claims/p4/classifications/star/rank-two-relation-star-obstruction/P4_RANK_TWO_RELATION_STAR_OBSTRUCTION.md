@@ -84,7 +84,7 @@ Among three leaves, some pair consequently still has image rank three.
 The center and those two leaves form a triangle of three rank-three pairs
 with rank-two relations.  The corrected theorem
 
-[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/rank-two-relation-triangle-corrected/P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md)
+[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](../../triangle-211/rank-two-relation-triangle-corrected/P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md)
 
 forces the kernel of every triangle mode onto one common two-coordinate
 line.  This contradicts the present center, whose kernel support is three
@@ -248,8 +248,8 @@ repository results.
 Run:
 
 ```text
-python verify_p4_rank_two_relation_star_obstruction.py
-python audit_p4_rank_two_relation_star_obstruction.py
+python claims/p4/classifications/star/rank-two-relation-star-obstruction/verify_p4_rank_two_relation_star_obstruction.py
+python claims/p4/classifications/star/rank-two-relation-star-obstruction/audit_p4_rank_two_relation_star_obstruction.py
 ```
 
 The primary verifier checks the three pencil resultants, projective endpoint

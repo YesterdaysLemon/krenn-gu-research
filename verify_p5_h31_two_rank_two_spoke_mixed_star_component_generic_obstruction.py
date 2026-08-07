@@ -9,9 +9,23 @@ import json
 import subprocess
 from pathlib import Path
 
+import sys
+
 import sympy as sp
 
-from verify_p4_two_rank_two_spoke_mixed_star_component import family
+# The two-rank-two-spoke mixed-star P4 classification package moved in
+# Stage 6; expose it through the shared helper so the bare-name import
+# below resolves.
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import expose_claim_package  # noqa: E402
+
+expose_claim_package(
+    Path(__file__).resolve().parent,
+    "claims/p4/classifications/star/two-rank-two-spoke-mixed-star-component")
+from verify_p4_two_rank_two_spoke_mixed_star_component import family  # noqa: E402
 from verify_p5_h31_marked_basis_open_branch import mixed_matrix
 
 
@@ -20,8 +34,8 @@ THEOREM = (
     ROOT
     / "P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
-COMPONENT = ROOT / "P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md"
-CLASSIFICATION = ROOT / "P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md"
+COMPONENT = ROOT / "claims/p4/classifications/star/two-rank-two-spoke-mixed-star-component/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md"
+CLASSIFICATION = ROOT / "claims/p4/classifications/star/two-rank-two-spoke-mixed-star-classification/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md"
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
 SINGULAR = ("wsl.exe", "--exec", "/usr/bin/Singular", "-q")

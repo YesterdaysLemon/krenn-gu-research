@@ -144,9 +144,9 @@ theorem.
 
 The star carrying the same relation-rank multiset is not empty; it is now
 constructed and completely classified in
-[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md)
+[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](claims/p4/classifications/star/two-rank-two-spoke-mixed-star-component/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md)
 and
-[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md).
+[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md`](claims/p4/classifications/star/two-rank-two-spoke-mixed-star-classification/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md).
 
 The proof is symbolic and constant-size.  It enumerates Borel normal-form
 types, not graph instances or finite fields.

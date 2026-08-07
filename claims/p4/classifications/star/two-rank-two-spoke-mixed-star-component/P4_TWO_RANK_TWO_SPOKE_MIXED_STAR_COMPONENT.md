@@ -23,20 +23,20 @@ global Krenn--Gu prize conditions and not a proof of component exhaustiveness.
 
 A companion reverse-normal-form theorem now proves that this family exhausts
 the entire rank-three star stratum with relation-rank multiset `{1,2,2}`:
-[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md).
+[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md`](../two-rank-two-spoke-mixed-star-classification/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md).
 
 The complete marked-basis fibre over the generic component point is now
 excluded for `H31` by a uniform polynomial row-module identity:
-[`P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../../P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 
 For weighted `H22`, the earlier dense-open theorem and three complete rational
 fibres are recorded in
-[`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md`](P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md).
+[`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md`](../../../../../P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md).
 The complete generic marked fibre is subsequently proved empty by projecting
 the Borel marking incidence to a fixed-vertex Segre join:
-[`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../../P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 
-![Exceptional graph of the new mixed-star component](research_figures/p4_two_rank_two_spoke_mixed_star.png)
+![Exceptional graph of the new mixed-star component](../../../../../research_figures/p4_two_rank_two_spoke_mixed_star.png)
 
 ## Presymplectic construction
 
@@ -241,8 +241,8 @@ conclusion is claimed.
 Run:
 
 ```text
-uv run --with sympy python verify_p4_two_rank_two_spoke_mixed_star_component.py
-uv run --with sympy python audit_p4_two_rank_two_spoke_mixed_star_component.py
+uv run --with sympy python claims/p4/classifications/star/two-rank-two-spoke-mixed-star-component/verify_p4_two_rank_two_spoke_mixed_star_component.py
+uv run --with sympy python claims/p4/classifications/star/two-rank-two-spoke-mixed-star-component/audit_p4_two_rank_two_spoke_mixed_star_component.py
 ```
 
 The primary verifier checks (4)--(13) over the rationals.  The audit permutes

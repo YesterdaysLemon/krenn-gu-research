@@ -8,10 +8,17 @@ import itertools
 import json
 from pathlib import Path
 
+import sys
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md"
-PRIMARY = ROOT / "verify_p4_radical_star_component_classification.py"
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+THEOREM = HERE / "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md"
+PRIMARY = HERE / "verify_p4_radical_star_component_classification.py"
 MODULI = (101, 103)
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 SOURCE_PAIRS = tuple(itertools.combinations(range(4), 2))
@@ -266,7 +273,7 @@ def main() -> None:
         "source_sha256": sha256(Path(__file__)),
     }
     output_path = (
-        ROOT / "tmp" / "p4_radical_star_component_classification_audit.json"
+        REPO_ROOT / "tmp" / "p4_radical_star_component_classification_audit.json"
     )
     output_path.parent.mkdir(exist_ok=True)
     output_path.write_text(

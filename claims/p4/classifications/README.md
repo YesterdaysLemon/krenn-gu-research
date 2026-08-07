@@ -13,6 +13,7 @@ Krenn–Gu conjecture remains **UNRESOLVED**.
 | spine | directory | packages | migration batch |
 |---|---|---|---|
 | triangle / 211 | [`triangle-211/`](triangle-211/) | 14 | `p4-triangle-211-stage5` |
+| star / mixed-star | [`star/`](star/) | 17 | `p4-star-stage6` |
 
 ## Pending
 

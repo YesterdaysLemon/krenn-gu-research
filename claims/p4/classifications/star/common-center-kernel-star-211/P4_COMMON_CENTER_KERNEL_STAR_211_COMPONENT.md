@@ -212,8 +212,8 @@ unequal-support boundary ledger.
 ## Replay
 
 ```text
-uv run --with sympy python verify_p4_common_center_kernel_star_211_component.py
-uv run --with sympy python audit_p4_common_center_kernel_star_211_component.py
+uv run --with sympy python claims/p4/classifications/star/common-center-kernel-star-211/verify_p4_common_center_kernel_star_211_component.py
+uv run --with sympy python claims/p4/classifications/star/common-center-kernel-star-211/audit_p4_common_center_kernel_star_211_component.py
 ```
 
 Both scripts use exact characteristic-zero arithmetic.  The audit rebuilds

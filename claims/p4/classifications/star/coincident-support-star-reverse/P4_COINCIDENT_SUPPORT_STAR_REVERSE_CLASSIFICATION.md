@@ -149,8 +149,8 @@ so the boundary remains on the all-pair-ranks-at-least-three locus.
 ## Replay
 
 ```text
-uv run --with sympy python verify_p4_coincident_support_star_reverse_classification.py
-uv run --with sympy python audit_p4_coincident_support_star_reverse_classification.py
+uv run --with sympy python claims/p4/classifications/star/coincident-support-star-reverse/verify_p4_coincident_support_star_reverse_classification.py
+uv run --with sympy python claims/p4/classifications/star/coincident-support-star-reverse/audit_p4_coincident_support_star_reverse_classification.py
 ```
 
 Both scripts use exact characteristic-zero arithmetic.  The audit rebuilds

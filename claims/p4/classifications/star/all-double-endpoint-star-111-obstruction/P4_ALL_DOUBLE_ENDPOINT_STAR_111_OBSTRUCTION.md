@@ -81,8 +81,8 @@ support-two boundary inside this endpoint orientation.
 ## Replay
 
 ```text
-uv run --with sympy python verify_p4_all_double_endpoint_star_111_obstruction.py
-uv run --with sympy python audit_p4_all_double_endpoint_star_111_obstruction.py
+uv run --with sympy python claims/p4/classifications/star/all-double-endpoint-star-111-obstruction/verify_p4_all_double_endpoint_star_111_obstruction.py
+uv run --with sympy python claims/p4/classifications/star/all-double-endpoint-star-111-obstruction/audit_p4_all_double_endpoint_star_111_obstruction.py
 ```
 
 The primary verifier reconstructs the singleton gauge, the three mixed

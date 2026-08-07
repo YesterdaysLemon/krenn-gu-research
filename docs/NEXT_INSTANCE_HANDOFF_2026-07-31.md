@@ -514,7 +514,7 @@ Six statements organize the current frontier.
    a separate exact theorem closes all surviving `H31` markings, every finite
    `H22` weight, and projective `H22` at both points.  These are fixed-order
    theorems and do not supply arbitrary-order gluing:
-   [`P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md`](../P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md),
+   [`P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md`](../claims/p4/classifications/star/common-center-kernel-star-211/P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md),
    [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md`](../P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md),
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md`](../P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md),
@@ -750,7 +750,7 @@ Six statements organize the current frontier.
    Finite `D23` has a three-branch
    necessary cover whose full `lambda=1` slice is empty.  The other displayed
    finite branches remain open:
-   [`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md`](../P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md),
+   [`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md`](../claims/p4/classifications/star/unequal-endpoint-inward-star-211/P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md),
    [`P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PARTIAL.md`](../P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PARTIAL.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_K_ZERO_GENERIC_D23_RANK_OBSTRUCTION.md`](../P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_K_ZERO_GENERIC_D23_RANK_OBSTRUCTION.md),
@@ -778,7 +778,7 @@ Six statements organize the current frontier.
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md`](../P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md), and
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_LAMBDA_ONE_OBSTRUCTION.md`](../P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_LAMBDA_ONE_OBSTRUCTION.md).
    The equal-endpoint two-inward stratum is empty by
-   [`P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md`](../P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md),
+   [`P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md`](../claims/p4/classifications/star/equal-endpoint-inward-star-211-obstruction/P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md),
    and the unequal-endpoint ledger is complete by
    [`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md`](../claims/p4/classifications/triangle-211/unequal-endpoint-inward-star-211-complete/P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md).
 3. **The common-singleton family is component orbit eighteen.**  An exact
@@ -798,7 +798,7 @@ Six statements organize the current frontier.
    [`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](../P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md),
    [`P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md`](../P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md),
    [`P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md`](../claims/p4/classifications/triangle-211/common-active-binary-triangle/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md), and
-   [`P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md`](../P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md).
+   [`P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md`](../claims/p4/classifications/star/coincident-support-rank-one-star/P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md).
 5. **The remaining component question is a one-cell `K_4` problem.**
    Perfect pairing forces the rank-three edges to contain a star or triangle;
    the three selected relations have matrix ranks one or two.  Seven of the
@@ -2028,8 +2028,8 @@ uv run --with sympy python claims/p4/classifications/triangle-211/common-active-
 uv run --with sympy python verify_p4_mixed_chain_transverse_component_inclusion.py
 uv run --with sympy python audit_p4_mixed_chain_transverse_component_inclusion.py
 
-uv run --with sympy python verify_p4_coincident_support_rank_one_star_component.py
-python audit_p4_coincident_support_rank_one_star_component.py
+uv run --with sympy python claims/p4/classifications/star/coincident-support-rank-one-star/verify_p4_coincident_support_rank_one_star_component.py
+python claims/p4/classifications/star/coincident-support-rank-one-star/audit_p4_coincident_support_rank_one_star_component.py
 
 python verify_p6_simultaneous_kernel_and_natural_lift.py
 python audit_p6_simultaneous_kernel_and_natural_lift.py
@@ -2165,8 +2165,8 @@ uv run --with sympy python audit_p4_unequal_complement_common_kernel_component.p
 python claims/p4/classifications/triangle-211/211-triangle-complete/verify_p4_211_triangle_complete_classification.py
 python claims/p4/classifications/triangle-211/211-triangle-complete/audit_p4_211_triangle_complete_classification.py
 
-uv run --with sympy python verify_p4_coincident_support_star_reverse_classification.py
-uv run --with sympy python audit_p4_coincident_support_star_reverse_classification.py
+uv run --with sympy python claims/p4/classifications/star/coincident-support-star-reverse/verify_p4_coincident_support_star_reverse_classification.py
+uv run --with sympy python claims/p4/classifications/star/coincident-support-star-reverse/audit_p4_coincident_support_star_reverse_classification.py
 
 uv run --with sympy python verify_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py
 uv run --with sympy python audit_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py
@@ -2188,8 +2188,8 @@ uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_compone
 uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_rho_zero_h1_nonzero_supplement.py
 uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_rho_zero_h1_nonzero_supplement.py
 
-uv run --with sympy python verify_p4_common_center_kernel_star_211_component.py
-uv run --with sympy python audit_p4_common_center_kernel_star_211_component.py
+uv run --with sympy python claims/p4/classifications/star/common-center-kernel-star-211/verify_p4_common_center_kernel_star_211_component.py
+uv run --with sympy python claims/p4/classifications/star/common-center-kernel-star-211/audit_p4_common_center_kernel_star_211_component.py
 
 uv run --with sympy python verify_p5_h31_common_center_kernel_star_component_generic_obstruction.py
 uv run --with sympy python audit_p5_h31_common_center_kernel_star_component_generic_obstruction.py
@@ -2218,32 +2218,32 @@ uv run --with sympy python claims/p4/classifications/triangle-211/split-center-m
 uv run --with sympy python claims/p4/classifications/triangle-211/mixed-center-star-211-complete/verify_p4_mixed_center_star_211_complete_classification.py
 uv run --with sympy python claims/p4/classifications/triangle-211/mixed-center-star-211-complete/audit_p4_mixed_center_star_211_complete_classification.py
 
-uv run --with sympy python verify_p4_unequal_endpoint_inward_star_211_component.py
-uv run --with sympy python audit_p4_unequal_endpoint_inward_star_211_component.py
+uv run --with sympy python claims/p4/classifications/star/unequal-endpoint-inward-star-211/verify_p4_unequal_endpoint_inward_star_211_component.py
+uv run --with sympy python claims/p4/classifications/star/unequal-endpoint-inward-star-211/audit_p4_unequal_endpoint_inward_star_211_component.py
 
-uv run --with sympy python verify_p4_equal_endpoint_inward_star_211_obstruction.py
-uv run --with sympy python audit_p4_equal_endpoint_inward_star_211_obstruction.py
+uv run --with sympy python claims/p4/classifications/star/equal-endpoint-inward-star-211-obstruction/verify_p4_equal_endpoint_inward_star_211_obstruction.py
+uv run --with sympy python claims/p4/classifications/star/equal-endpoint-inward-star-211-obstruction/audit_p4_equal_endpoint_inward_star_211_obstruction.py
 
 uv run --with sympy python claims/p4/classifications/triangle-211/unequal-endpoint-inward-star-211-complete/verify_p4_unequal_endpoint_inward_star_211_complete_classification.py
 uv run --with sympy python claims/p4/classifications/triangle-211/unequal-endpoint-inward-star-211-complete/audit_p4_unequal_endpoint_inward_star_211_complete_classification.py
 
-uv run --with sympy python verify_p4_all_center_kernel_star_111_obstruction.py
-uv run --with sympy python audit_p4_all_center_kernel_star_111_obstruction.py
+uv run --with sympy python claims/p4/classifications/star/all-center-kernel-star-111-obstruction/verify_p4_all_center_kernel_star_111_obstruction.py
+uv run --with sympy python claims/p4/classifications/star/all-center-kernel-star-111-obstruction/audit_p4_all_center_kernel_star_111_obstruction.py
 
-uv run --with sympy python verify_p4_all_double_endpoint_star_111_obstruction.py
-uv run --with sympy python audit_p4_all_double_endpoint_star_111_obstruction.py
+uv run --with sympy python claims/p4/classifications/star/all-double-endpoint-star-111-obstruction/verify_p4_all_double_endpoint_star_111_obstruction.py
+uv run --with sympy python claims/p4/classifications/star/all-double-endpoint-star-111-obstruction/audit_p4_all_double_endpoint_star_111_obstruction.py
 
-uv run --with sympy python verify_p4_one_double_endpoint_star_111_classification.py
-uv run --with sympy python audit_p4_one_double_endpoint_star_111_classification.py
+uv run --with sympy python claims/p4/classifications/star/one-double-endpoint-star-111/verify_p4_one_double_endpoint_star_111_classification.py
+uv run --with sympy python claims/p4/classifications/star/one-double-endpoint-star-111/audit_p4_one_double_endpoint_star_111_classification.py
 
-uv run --with sympy python verify_p4_two_double_endpoint_star_111_complete_classification.py
-uv run --with sympy python audit_p4_two_double_endpoint_star_111_complete_classification.py
+uv run --with sympy python claims/p4/classifications/star/two-double-endpoint-star-111-complete/verify_p4_two_double_endpoint_star_111_complete_classification.py
+uv run --with sympy python claims/p4/classifications/star/two-double-endpoint-star-111-complete/audit_p4_two_double_endpoint_star_111_complete_classification.py
 
-uv run --with sympy python verify_p4_mixed_endpoint_star_111_complete_classification.py
-uv run --with sympy python audit_p4_mixed_endpoint_star_111_complete_classification.py
+uv run --with sympy python claims/p4/classifications/star/mixed-endpoint-star-111-complete/verify_p4_mixed_endpoint_star_111_complete_classification.py
+uv run --with sympy python claims/p4/classifications/star/mixed-endpoint-star-111-complete/audit_p4_mixed_endpoint_star_111_complete_classification.py
 
-uv run --with sympy python verify_p4_no_double_endpoint_star_1110_collision_classification.py
-uv run --with sympy python audit_p4_no_double_endpoint_star_1110_collision_classification.py
+uv run --with sympy python claims/p4/classifications/star/no-double-endpoint-star-1110-collision/verify_p4_no_double_endpoint_star_1110_collision_classification.py
+uv run --with sympy python claims/p4/classifications/star/no-double-endpoint-star-1110-collision/audit_p4_no_double_endpoint_star_1110_collision_classification.py
 
 uv run --with sympy python verify_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py
 uv run --with sympy python audit_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py

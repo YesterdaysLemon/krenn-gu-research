@@ -7,13 +7,24 @@ import itertools
 import json
 from pathlib import Path
 
+import sys
+
 import sympy as sp
 
-ROOT = Path(__file__).resolve().parent
-COMP18 = ROOT / "P4_COMMON_SINGLETON_COMPONENT.md"
-COMP21 = ROOT / "P4_COINCIDENT_SUPPORT_STAR_REVERSE_CLASSIFICATION.md"
-MIXED_CHAIN = ROOT / "P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md"
-TRIPLE_KERNEL = ROOT / "claims/p4/classifications/triangle-211/triple-kernel-rank-one-triangle/P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md"
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+COMP18 = REPO_ROOT / "P4_COMMON_SINGLETON_COMPONENT.md"
+COMP21 = (
+    REPO_ROOT / "claims" / "p4" / "classifications" / "star"
+    / "coincident-support-star-reverse"
+    / "P4_COINCIDENT_SUPPORT_STAR_REVERSE_CLASSIFICATION.md")
+MIXED_CHAIN = REPO_ROOT / "P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md"
+TRIPLE_KERNEL = REPO_ROOT / "claims/p4/classifications/triangle-211/triple-kernel-rank-one-triangle/P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md"
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PAIRS = tuple(itertools.combinations(range(4), 2))
 SOURCE_PAIRS = tuple(itertools.combinations(range(4), 2))

@@ -45,7 +45,7 @@ y_2=-Aj a+eta a_bar+j b+kappa b_bar.                (4)
 ```
 
 The affine chart in
-[`P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md`](P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md)
+[`P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md`](../disjoint-mixed-star-affine/P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md)
 is `h!=0`.
 
 ## The homogeneous kernel incidence
@@ -168,8 +168,8 @@ vertical component.
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_p4_disjoint_mixed_star_projective_classification.py
-python audit_p4_disjoint_mixed_star_projective_classification.py
+uv run --with sympy python claims/p4/classifications/star/disjoint-mixed-star-projective/verify_p4_disjoint_mixed_star_projective_classification.py
+python claims/p4/classifications/star/disjoint-mixed-star-projective/audit_p4_disjoint_mixed_star_projective_classification.py
 ```
 
 The primary verifier reconstructs the homogeneous permanent coefficients,

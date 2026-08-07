@@ -571,7 +571,7 @@ illegal full-row normalization; the new theorem recovers the complete
 three-parameter marked family without moving a kernel line.
 
 That corrected survivor is now the valid input to a repaired star theorem:
-[`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](../P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md).
+[`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](../claims/p4/classifications/star/rank-two-relation-star-obstruction/P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md).
 The adjugate-pencil rank-drop graph is a matching of three edges, so three
 leaves over a four-distinct center contain a rank-three pair; the corrected
 triangle then forces a support-two kernel, contradicting a support-three or
@@ -619,7 +619,7 @@ patterns, and lower pair-image ranks.
 
 The first of those “other” mixed stars is not an obstruction but a new
 component:
-[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](../P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md).
+[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](../claims/p4/classifications/star/two-rank-two-spoke-mixed-star-component/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md).
 Two rank-two spokes again place two leaves in the full-support `2+2`
 synchronizer plane.  A star requires their presymplectic determinant to be
 nonzero, the opposite of the triangle rank-drop condition above.  A third
@@ -649,7 +649,7 @@ That literature does not state the squarefree permanent component or its
 `(2,2,1)` relation-rank invariant.
 
 The reverse normal-form calculation is now complete as well:
-[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md`](../P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md).
+[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md`](../claims/p4/classifications/star/two-rank-two-spoke-mixed-star-classification/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md).
 The ordinary Kronecker pencils are totally isotropic and cannot give a star
 with full leaf-pair rank.  In the full-support presymplectic chart, four
 linear syzygies among the purity coefficients force the signs `r_1=-r_2=1`
@@ -1246,7 +1246,7 @@ See
 
 The disjoint mixed-star component now has a reverse classification on its
 whole affine Borel chart as well:
-[`P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md`](../P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md).
+[`P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md`](../claims/p4/classifications/star/disjoint-mixed-star-affine/P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md).
 The three remaining purity coefficients are not an opaque hypersurface
 system; they are the entries of one kernel incidence `Nv=0`.  Its determinant
 is the already known irreducible component-eight equation, in the compressed
@@ -1265,7 +1265,7 @@ resolution: keeping the kernel line removes the false appearance of a new
 boundary component.
 
 Homogenizing that incidence closes the projective leaf chart too:
-[`P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md`](../P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md).
+[`P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md`](../claims/p4/classifications/star/disjoint-mixed-star-projective/P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md).
 The homogeneous determinant is irreducible over
 `A^2_(A,B) x P^2_[h:g:p]`.  Its rank-one base is a finite union of curves;
 adding the projective kernel line gives dimension two.  The full kernel

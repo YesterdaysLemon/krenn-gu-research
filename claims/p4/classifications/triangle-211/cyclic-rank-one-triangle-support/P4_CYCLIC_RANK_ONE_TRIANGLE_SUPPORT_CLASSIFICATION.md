@@ -158,7 +158,7 @@ exceptional graph becomes a three-edge star with profile
 
 Its support multiset is exactly `{01,01,23}` with the disjoint mixed-star
 orientation.  The complete projective theorem
-[`P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md`](../../../../../P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md)
+[`P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md`](../../star/disjoint-mixed-star-projective/P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md)
 places every punctured point of (10) in component eight.  Letting `k->0`
 places the cyclic triangle in the same closure.  The apparent transverse
 tangent is therefore an actual component-eight opening, not a new

@@ -11,7 +11,7 @@ with support pattern
 ```
 
 as in
-[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](claims/p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
+[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](../../../components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
 On the full affine Borel chart where the first moving kernel row has nonzero
 coefficient in the direction opposite `X_0+X_1`, every such tuple lies in
 the closure of component eight.  This includes the rank-one fibers where
@@ -21,7 +21,7 @@ Thus the family in the component theorem is the complete affine stratum,
 not merely a construction.  The complementary projective leaf chart remains
 a separate boundary problem in this note.  It is subsequently closed by the
 homogeneous kernel-incidence theorem
-[`P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md`](P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md),
+[`P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md`](../disjoint-mixed-star-projective/P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md),
 so the full disjoint mixed-star orientation is now exhausted.
 
 ## Normalize the three exact pairs
@@ -218,8 +218,8 @@ but here all maps are the explicit permanent coefficients (9).
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_p4_disjoint_mixed_star_affine_classification.py
-python audit_p4_disjoint_mixed_star_affine_classification.py
+uv run --with sympy python claims/p4/classifications/star/disjoint-mixed-star-affine/verify_p4_disjoint_mixed_star_affine_classification.py
+python claims/p4/classifications/star/disjoint-mixed-star-affine/audit_p4_disjoint_mixed_star_affine_classification.py
 ```
 
 The primary verifier reconstructs (9)--(23), the determinant, the generic

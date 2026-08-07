@@ -45,7 +45,7 @@ R=C[X_0,X_1,X_2,X_3]/(X_0^2,X_1^2,X_2^2,X_3^2).
 The first relation in (2) points toward the common mode three, while
 the second points away from it.  This mixed orientation is not the
 double-contraction radical orientation classified in
-[`P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md`](../../../../P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md).
+[`P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md`](../../classifications/star/radical-star/P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md).
 
 For every nonzero word in the three kernel bits of modes one, two, and
 three, contract `P_4` to a covector on mode zero.  Four of the seven

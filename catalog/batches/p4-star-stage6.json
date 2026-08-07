@@ -1,0 +1,236 @@
+{
+  "batch_id": "p4-star-stage6",
+  "approved_by": "YesterdaysLemon (repository owner), Stage 6 P4 star/mixed-star classification migration instruction",
+  "approved_at": "2026-08-07",
+  "base_sha": "50a8eb8866c43cdbe1851a62f46fa9413cf6a980",
+  "manifest_sha256": "8ecfe9506236d4be069cad6feff141e04a7ffbf945b8a0a72dd456927c046de4",
+  "mapping_sha256": "25c91c812a1f0138b0a12a477406836d8f0bb97d3cb0caf42d2e6cde4de57fb7",
+  "member_count": 51,
+  "moves": [
+    {
+      "old_path": "P4_ALL_CENTER_KERNEL_STAR_111_OBSTRUCTION.md",
+      "new_path": "claims/p4/classifications/star/all-center-kernel-star-111-obstruction/P4_ALL_CENTER_KERNEL_STAR_111_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P4_ALL_DOUBLE_ENDPOINT_STAR_111_OBSTRUCTION.md",
+      "new_path": "claims/p4/classifications/star/all-double-endpoint-star-111-obstruction/P4_ALL_DOUBLE_ENDPOINT_STAR_111_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md",
+      "new_path": "claims/p4/classifications/star/coincident-support-rank-one-star/P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md"
+    },
+    {
+      "old_path": "P4_COINCIDENT_SUPPORT_STAR_REVERSE_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/star/coincident-support-star-reverse/P4_COINCIDENT_SUPPORT_STAR_REVERSE_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md",
+      "new_path": "claims/p4/classifications/star/common-center-kernel-star-211/P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md"
+    },
+    {
+      "old_path": "P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/star/disjoint-mixed-star-affine/P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/star/disjoint-mixed-star-projective/P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md",
+      "new_path": "claims/p4/classifications/star/equal-endpoint-inward-star-211-obstruction/P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P4_MIXED_ENDPOINT_STAR_111_COMPLETE_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/star/mixed-endpoint-star-111-complete/P4_MIXED_ENDPOINT_STAR_111_COMPLETE_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_NO_DOUBLE_ENDPOINT_STAR_1110_COLLISION_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/star/no-double-endpoint-star-1110-collision/P4_NO_DOUBLE_ENDPOINT_STAR_1110_COLLISION_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_ONE_DOUBLE_ENDPOINT_STAR_111_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/star/one-double-endpoint-star-111/P4_ONE_DOUBLE_ENDPOINT_STAR_111_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/star/radical-star/P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md",
+      "new_path": "claims/p4/classifications/star/rank-two-relation-star-obstruction/P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P4_TWO_DOUBLE_ENDPOINT_STAR_111_COMPLETE_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/star/two-double-endpoint-star-111-complete/P4_TWO_DOUBLE_ENDPOINT_STAR_111_COMPLETE_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/star/two-rank-two-spoke-mixed-star-classification/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md",
+      "new_path": "claims/p4/classifications/star/two-rank-two-spoke-mixed-star-component/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md"
+    },
+    {
+      "old_path": "P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md",
+      "new_path": "claims/p4/classifications/star/unequal-endpoint-inward-star-211/P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md"
+    },
+    {
+      "old_path": "audit_p4_all_center_kernel_star_111_obstruction.py",
+      "new_path": "claims/p4/classifications/star/all-center-kernel-star-111-obstruction/audit_p4_all_center_kernel_star_111_obstruction.py"
+    },
+    {
+      "old_path": "audit_p4_all_double_endpoint_star_111_obstruction.py",
+      "new_path": "claims/p4/classifications/star/all-double-endpoint-star-111-obstruction/audit_p4_all_double_endpoint_star_111_obstruction.py"
+    },
+    {
+      "old_path": "audit_p4_coincident_support_rank_one_star_component.py",
+      "new_path": "claims/p4/classifications/star/coincident-support-rank-one-star/audit_p4_coincident_support_rank_one_star_component.py"
+    },
+    {
+      "old_path": "audit_p4_coincident_support_star_reverse_classification.py",
+      "new_path": "claims/p4/classifications/star/coincident-support-star-reverse/audit_p4_coincident_support_star_reverse_classification.py"
+    },
+    {
+      "old_path": "audit_p4_common_center_kernel_star_211_component.py",
+      "new_path": "claims/p4/classifications/star/common-center-kernel-star-211/audit_p4_common_center_kernel_star_211_component.py"
+    },
+    {
+      "old_path": "audit_p4_disjoint_mixed_star_affine_classification.py",
+      "new_path": "claims/p4/classifications/star/disjoint-mixed-star-affine/audit_p4_disjoint_mixed_star_affine_classification.py"
+    },
+    {
+      "old_path": "audit_p4_disjoint_mixed_star_projective_classification.py",
+      "new_path": "claims/p4/classifications/star/disjoint-mixed-star-projective/audit_p4_disjoint_mixed_star_projective_classification.py"
+    },
+    {
+      "old_path": "audit_p4_equal_endpoint_inward_star_211_obstruction.py",
+      "new_path": "claims/p4/classifications/star/equal-endpoint-inward-star-211-obstruction/audit_p4_equal_endpoint_inward_star_211_obstruction.py"
+    },
+    {
+      "old_path": "audit_p4_mixed_endpoint_star_111_complete_classification.py",
+      "new_path": "claims/p4/classifications/star/mixed-endpoint-star-111-complete/audit_p4_mixed_endpoint_star_111_complete_classification.py"
+    },
+    {
+      "old_path": "audit_p4_no_double_endpoint_star_1110_collision_classification.py",
+      "new_path": "claims/p4/classifications/star/no-double-endpoint-star-1110-collision/audit_p4_no_double_endpoint_star_1110_collision_classification.py"
+    },
+    {
+      "old_path": "audit_p4_one_double_endpoint_star_111_classification.py",
+      "new_path": "claims/p4/classifications/star/one-double-endpoint-star-111/audit_p4_one_double_endpoint_star_111_classification.py"
+    },
+    {
+      "old_path": "audit_p4_radical_star_component_classification.py",
+      "new_path": "claims/p4/classifications/star/radical-star/audit_p4_radical_star_component_classification.py"
+    },
+    {
+      "old_path": "audit_p4_rank_two_relation_star_obstruction.py",
+      "new_path": "claims/p4/classifications/star/rank-two-relation-star-obstruction/audit_p4_rank_two_relation_star_obstruction.py"
+    },
+    {
+      "old_path": "audit_p4_two_double_endpoint_star_111_complete_classification.py",
+      "new_path": "claims/p4/classifications/star/two-double-endpoint-star-111-complete/audit_p4_two_double_endpoint_star_111_complete_classification.py"
+    },
+    {
+      "old_path": "audit_p4_two_rank_two_spoke_mixed_star_classification.py",
+      "new_path": "claims/p4/classifications/star/two-rank-two-spoke-mixed-star-classification/audit_p4_two_rank_two_spoke_mixed_star_classification.py"
+    },
+    {
+      "old_path": "audit_p4_two_rank_two_spoke_mixed_star_component.py",
+      "new_path": "claims/p4/classifications/star/two-rank-two-spoke-mixed-star-component/audit_p4_two_rank_two_spoke_mixed_star_component.py"
+    },
+    {
+      "old_path": "audit_p4_unequal_endpoint_inward_star_211_component.py",
+      "new_path": "claims/p4/classifications/star/unequal-endpoint-inward-star-211/audit_p4_unequal_endpoint_inward_star_211_component.py"
+    },
+    {
+      "old_path": "verify_p4_all_center_kernel_star_111_obstruction.py",
+      "new_path": "claims/p4/classifications/star/all-center-kernel-star-111-obstruction/verify_p4_all_center_kernel_star_111_obstruction.py"
+    },
+    {
+      "old_path": "verify_p4_all_double_endpoint_star_111_obstruction.py",
+      "new_path": "claims/p4/classifications/star/all-double-endpoint-star-111-obstruction/verify_p4_all_double_endpoint_star_111_obstruction.py"
+    },
+    {
+      "old_path": "verify_p4_coincident_support_rank_one_star_component.py",
+      "new_path": "claims/p4/classifications/star/coincident-support-rank-one-star/verify_p4_coincident_support_rank_one_star_component.py"
+    },
+    {
+      "old_path": "verify_p4_coincident_support_star_reverse_classification.py",
+      "new_path": "claims/p4/classifications/star/coincident-support-star-reverse/verify_p4_coincident_support_star_reverse_classification.py"
+    },
+    {
+      "old_path": "verify_p4_common_center_kernel_star_211_component.py",
+      "new_path": "claims/p4/classifications/star/common-center-kernel-star-211/verify_p4_common_center_kernel_star_211_component.py"
+    },
+    {
+      "old_path": "verify_p4_disjoint_mixed_star_affine_classification.py",
+      "new_path": "claims/p4/classifications/star/disjoint-mixed-star-affine/verify_p4_disjoint_mixed_star_affine_classification.py"
+    },
+    {
+      "old_path": "verify_p4_disjoint_mixed_star_projective_classification.py",
+      "new_path": "claims/p4/classifications/star/disjoint-mixed-star-projective/verify_p4_disjoint_mixed_star_projective_classification.py"
+    },
+    {
+      "old_path": "verify_p4_equal_endpoint_inward_star_211_obstruction.py",
+      "new_path": "claims/p4/classifications/star/equal-endpoint-inward-star-211-obstruction/verify_p4_equal_endpoint_inward_star_211_obstruction.py"
+    },
+    {
+      "old_path": "verify_p4_mixed_endpoint_star_111_complete_classification.py",
+      "new_path": "claims/p4/classifications/star/mixed-endpoint-star-111-complete/verify_p4_mixed_endpoint_star_111_complete_classification.py"
+    },
+    {
+      "old_path": "verify_p4_no_double_endpoint_star_1110_collision_classification.py",
+      "new_path": "claims/p4/classifications/star/no-double-endpoint-star-1110-collision/verify_p4_no_double_endpoint_star_1110_collision_classification.py"
+    },
+    {
+      "old_path": "verify_p4_one_double_endpoint_star_111_classification.py",
+      "new_path": "claims/p4/classifications/star/one-double-endpoint-star-111/verify_p4_one_double_endpoint_star_111_classification.py"
+    },
+    {
+      "old_path": "verify_p4_radical_star_component_classification.py",
+      "new_path": "claims/p4/classifications/star/radical-star/verify_p4_radical_star_component_classification.py"
+    },
+    {
+      "old_path": "verify_p4_rank_two_relation_star_obstruction.py",
+      "new_path": "claims/p4/classifications/star/rank-two-relation-star-obstruction/verify_p4_rank_two_relation_star_obstruction.py"
+    },
+    {
+      "old_path": "verify_p4_two_double_endpoint_star_111_complete_classification.py",
+      "new_path": "claims/p4/classifications/star/two-double-endpoint-star-111-complete/verify_p4_two_double_endpoint_star_111_complete_classification.py"
+    },
+    {
+      "old_path": "verify_p4_two_rank_two_spoke_mixed_star_classification.py",
+      "new_path": "claims/p4/classifications/star/two-rank-two-spoke-mixed-star-classification/verify_p4_two_rank_two_spoke_mixed_star_classification.py"
+    },
+    {
+      "old_path": "verify_p4_two_rank_two_spoke_mixed_star_component.py",
+      "new_path": "claims/p4/classifications/star/two-rank-two-spoke-mixed-star-component/verify_p4_two_rank_two_spoke_mixed_star_component.py"
+    },
+    {
+      "old_path": "verify_p4_unequal_endpoint_inward_star_211_component.py",
+      "new_path": "claims/p4/classifications/star/unequal-endpoint-inward-star-211/verify_p4_unequal_endpoint_inward_star_211_component.py"
+    }
+  ],
+  "rationale": "Stage 6: P4 star/mixed-star classification spine. 17 complete star classification packages (theorem + primary verifier + independent audit each) move from the root into the nested hierarchy claims/p4/classifications/star/<package>/. Human review refined the flat classifier destinations durably in layout-classification.json before freezing (39 p4/classifications records plus 12 p4/boundaries records whose documents are star-cell-specific orientation theorems). Excluded: the withdrawn rank-two-relation-star sibling (legacy bucket), shared machinery (directed-zero-divisor, common-singleton, all-pair-rank reducer), P5 downstream consumers, and all non-star boundary/global classifications. Zero intra-batch Python imports; two Singular-dependent packages; Stage 5 triangle-211 star packages and Stage 3/4 component packages stay as cross-spine dependencies.",
+  "notes": "The 12 records originally classified p4/boundaries were reassigned by human review: each document states it closes/excludes a star (1,1,1) or (2,1,1) cell orientation, so ownership is genuinely star-specific (Stage 6 instruction section 8). The withdrawn overstrong sibling keeps its proposed claims/legacy/ destination and is not part of this batch. Slug collision between the two-rank-two-spoke-mixed-star classification and component packages is resolved by keeping each distinguishing word.",
+  "packages": [
+    "all-center-kernel-star-111-obstruction",
+    "all-double-endpoint-star-111-obstruction",
+    "coincident-support-rank-one-star",
+    "coincident-support-star-reverse",
+    "common-center-kernel-star-211",
+    "disjoint-mixed-star-affine",
+    "disjoint-mixed-star-projective",
+    "equal-endpoint-inward-star-211-obstruction",
+    "mixed-endpoint-star-111-complete",
+    "no-double-endpoint-star-1110-collision",
+    "one-double-endpoint-star-111",
+    "radical-star",
+    "rank-two-relation-star-obstruction",
+    "two-double-endpoint-star-111-complete",
+    "two-rank-two-spoke-mixed-star-classification",
+    "two-rank-two-spoke-mixed-star-component",
+    "unequal-endpoint-inward-star-211"
+  ]
+}

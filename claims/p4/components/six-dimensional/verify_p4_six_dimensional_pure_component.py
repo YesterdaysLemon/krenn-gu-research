@@ -24,7 +24,9 @@ THEOREM = HERE / "P4_SIX_DIMENSIONAL_PURE_COMPONENT.md"
 MIXED = (
     REPO_ROOT / "claims" / "p4" / "components" / "mixed-orientation"
     / "P4_MIXED_ORIENTATION_PURE_COMPONENT.md")
-RADICAL_STAR = REPO_ROOT / "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md"
+RADICAL_STAR = (
+    REPO_ROOT / "claims" / "p4" / "classifications" / "star"
+    / "radical-star" / "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md")
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
 PAIRS = tuple(itertools.combinations(range(4), 2))

@@ -20,7 +20,7 @@ exhaustiveness, or settle the global Krenn--Gu conjecture.
 ## Intrinsic pure bases
 
 Use the family from
-[`P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md`](P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md):
+[`P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md`](claims/p4/classifications/star/coincident-support-rank-one-star/P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md):
 
 ```text
 A=X0+X1,   C=X0-X1,   B=X2+X3,   D=X2-X3,

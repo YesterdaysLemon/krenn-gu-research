@@ -46,7 +46,9 @@ WORKING_NOTE = REPO_ROOT / "P4_INOUT_PATH_STRATUM_WORKING_NOTE.md"
 EIGHTH = (
     REPO_ROOT / "claims" / "p4" / "components" / "disjoint-mixed-star"
     / "P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md")
-RADICAL_STAR = REPO_ROOT / "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md"
+RADICAL_STAR = (
+    REPO_ROOT / "claims" / "p4" / "classifications" / "star"
+    / "radical-star" / "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md")
 SEVENTH = (
     REPO_ROOT / "claims" / "p4" / "components" / "six-dimensional"
     / "P4_SIX_DIMENSIONAL_PURE_COMPONENT.md")

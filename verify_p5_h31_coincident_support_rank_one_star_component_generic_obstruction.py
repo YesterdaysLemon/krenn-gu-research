@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parent
 THEOREM = (
     ROOT / "P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
-COMPONENT = ROOT / "P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md"
+COMPONENT = ROOT / "claims/p4/classifications/star/coincident-support-rank-one-star/P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md"
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
 

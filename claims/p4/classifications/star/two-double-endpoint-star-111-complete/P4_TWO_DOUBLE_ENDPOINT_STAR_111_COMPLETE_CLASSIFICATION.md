@@ -254,8 +254,8 @@ selected rank-three condition is already in the lower-pair locus.
 ## Exact replay and boundaries
 
 ```text
-uv run --with sympy python verify_p4_two_double_endpoint_star_111_complete_classification.py
-uv run --with sympy python audit_p4_two_double_endpoint_star_111_complete_classification.py
+uv run --with sympy python claims/p4/classifications/star/two-double-endpoint-star-111-complete/verify_p4_two_double_endpoint_star_111_complete_classification.py
+uv run --with sympy python claims/p4/classifications/star/two-double-endpoint-star-111-complete/audit_p4_two_double_endpoint_star_111_complete_classification.py
 ```
 
 The primary verifier reconstructs every displayed coefficient and placement

@@ -8,7 +8,7 @@ exceptional pair images have rank three, all three leaf-pair images have rank
 four, and the three unique relation matrices have ranks `(2,2,1)`.  Up to the
 allowed source/mode symmetries, every such tuple lies in the Cayley-toric
 family of
-[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md).
+[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](../two-rank-two-spoke-mixed-star-component/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md).
 
 Thus that family is not merely a component construction: it is the complete
 dense rank-three graph stratum.  Special divisors where a pair rank drops,
@@ -170,8 +170,8 @@ of the tenth component also remain.
 Run:
 
 ```text
-uv run --with sympy python verify_p4_two_rank_two_spoke_mixed_star_classification.py
-uv run --with sympy python audit_p4_two_rank_two_spoke_mixed_star_classification.py
+uv run --with sympy python claims/p4/classifications/star/two-rank-two-spoke-mixed-star-classification/verify_p4_two_rank_two_spoke_mixed_star_classification.py
+uv run --with sympy python claims/p4/classifications/star/two-rank-two-spoke-mixed-star-classification/audit_p4_two_rank_two_spoke_mixed_star_classification.py
 ```
 
 The primary verifier reconstructs (4)--(11) and all three support-two Borel

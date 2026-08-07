@@ -7,14 +7,25 @@ import itertools
 import json
 from pathlib import Path
 
+import sys
+
 import sympy as sp
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P4_MIXED_ENDPOINT_STAR_111_COMPLETE_CLASSIFICATION.md"
-OVERLAPPING = ROOT / "P4_OVERLAPPING_MIXED_ORIENTATION_PROJECTIVE_EXHAUSTION.md"
-DISJOINT = ROOT / "P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md"
-CYCLIC_SINGLETON = ROOT / "P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_ONE_BOUNDARY.md"
-ONE_KERNEL_TRIANGLE = ROOT / "P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md"
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+THEOREM = HERE / "P4_MIXED_ENDPOINT_STAR_111_COMPLETE_CLASSIFICATION.md"
+OVERLAPPING = REPO_ROOT / "P4_OVERLAPPING_MIXED_ORIENTATION_PROJECTIVE_EXHAUSTION.md"
+DISJOINT = (
+    REPO_ROOT / "claims" / "p4" / "classifications" / "star"
+    / "disjoint-mixed-star-projective"
+    / "P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md")
+CYCLIC_SINGLETON = REPO_ROOT / "P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_ONE_BOUNDARY.md"
+ONE_KERNEL_TRIANGLE = REPO_ROOT / "P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md"
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PAIRS = tuple(itertools.combinations(range(4), 2))
 QUADRATIC_WORDS = tuple(itertools.combinations(range(4), 2))

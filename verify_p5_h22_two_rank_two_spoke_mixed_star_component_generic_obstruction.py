@@ -14,7 +14,7 @@ import sympy as sp
 
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
-COMPONENT = ROOT / "P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md"
+COMPONENT = ROOT / "claims/p4/classifications/star/two-rank-two-spoke-mixed-star-component/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md"
 DENSE = ROOT / "P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md"
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
