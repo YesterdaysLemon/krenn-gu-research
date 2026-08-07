@@ -5,6 +5,16 @@
 **UNRESOLVED globally.**  This repository does not yet contain a proof or
 counterexample for all even `n >= 6` and `d >= 3`.
 
+## Working with the research repository
+
+- Agent/contributor operating contract: [`AGENTS.md`](AGENTS.md)
+- Proof-obligation architecture:
+  [`docs/proof-obligation-architecture.md`](docs/proof-obligation-architecture.md)
+- Formalization/Lean interface:
+  [`docs/formalization-interface.md`](docs/formalization-interface.md)
+- Active layout-migration runbook:
+  [`docs/architecture/layout-migration-runbook.md`](docs/architecture/layout-migration-runbook.md)
+
 ### Start here: 3 August 2026 continuation
 
 The shortest route into the current symbolic `P_7` frontier is
