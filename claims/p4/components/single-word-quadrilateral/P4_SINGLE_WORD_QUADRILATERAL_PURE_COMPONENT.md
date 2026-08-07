@@ -21,7 +21,7 @@ four-cycle of edges `{01},{02},{13},{23}` — a relation
 quadrilateral, the pattern complementary to the ninth component's
 all-rank-one triangle.  Together with the companion split-pair
 fivefold
-([`P4_SPLIT_PAIR_PURE_COMPONENT.md`](claims/p4/components/split-pair/P4_SPLIT_PAIR_PURE_COMPONENT.md),
+([`P4_SPLIT_PAIR_PURE_COMPONENT.md`](../split-pair/P4_SPLIT_PAIR_PURE_COMPONENT.md),
 found in the same sweep), the certified census lower bound is
 thirteen component orbits: ten fivefolds and three sixfolds.
 
@@ -42,7 +42,7 @@ and the Krull height bound pins the local dimension to exactly
 five.
 
 The component was located in the case-Z rank-two branch sweep of
-[`research_snapshots/2026-08-04-p4-exhaustiveness-sweep-census-thirteen/`](research_snapshots/2026-08-04-p4-exhaustiveness-sweep-census-thirteen/README.md)
+[`research_snapshots/2026-08-04-p4-exhaustiveness-sweep-census-thirteen/`](../../../../research_snapshots/2026-08-04-p4-exhaustiveness-sweep-census-thirteen/README.md)
 (scripts `s03`, `s04`, `s08`, `s07`).  The calibrated `24 x 24`
 semicontinuity sieve against the eleven previously certified
 components leaves only the tenth (coincident-support sixfold) as a
@@ -401,9 +401,9 @@ these walls is classified.
 Run:
 
 ```text
-python verify_p4_single_word_quadrilateral_pure_component.py
+python claims/p4/components/single-word-quadrilateral/verify_p4_single_word_quadrilateral_pure_component.py
 
-python audit_p4_single_word_quadrilateral_pure_component.py
+python claims/p4/components/single-word-quadrilateral/audit_p4_single_word_quadrilateral_pure_component.py
 ```
 
 The primary verifier proves the forced-kernel facts (4) (rank of

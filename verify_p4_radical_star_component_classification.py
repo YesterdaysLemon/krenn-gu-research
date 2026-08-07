@@ -13,7 +13,9 @@ import sympy as sp
 
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md"
-TWO_TWO_THEOREM = ROOT / "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md"
+TWO_TWO_THEOREM = (
+    ROOT / "claims" / "p4" / "components" / "diagonal-quadric"
+    / "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md")
 ONE_THREE_THEOREM = ROOT / "P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md"
 SMOOTH_THEOREM = ROOT / "P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md"
 WORDS = tuple(itertools.product((0, 1), repeat=4))

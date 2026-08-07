@@ -7,7 +7,7 @@ This is an exact algebraic-geometric theorem over `C`.
 The all-rank-two plane locus on which `P_4` restricts to a nonzero
 decomposable tensor has an irreducible component which is not in the
 source/mode symmetry orbit of the component described in
-[`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](P4_PURE_RANK_TWO_COMPONENT_THEOREM.md).
+[`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](../../../../P4_PURE_RANK_TWO_COMPONENT_THEOREM.md).
 The new component has dimension five.  A dense three-parameter normal
 form is an irreducible hypersurface in `P^2 x P^2`; its orbit under
 diagonal source rescaling fills the component.
@@ -306,8 +306,8 @@ exist.
 Run:
 
 ```text
-python verify_p4_diagonal_quadric_pure_component.py
-python audit_p4_diagonal_quadric_pure_component.py
+python claims/p4/components/diagonal-quadric/verify_p4_diagonal_quadric_pure_component.py
+python claims/p4/components/diagonal-quadric/audit_p4_diagonal_quadric_pure_component.py
 ```
 
 The primary verifier expands (5)--(8), checks irreducibility, derives

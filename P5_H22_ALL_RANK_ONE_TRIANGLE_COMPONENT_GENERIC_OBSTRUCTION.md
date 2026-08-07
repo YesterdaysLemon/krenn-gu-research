@@ -4,7 +4,7 @@
 
 This is an exact characteristic-zero obstruction on the generic
 diagonal-source orbit of the ninth pure-`P_4` component proved in
-[`P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md`](P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md).
+[`P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md`](claims/p4/components/all-rank-one-triangle/P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md).
 
 Restoring the source-torus slope turns the two `H22` neighbours into
 weighted diagonal-hyperplane pencils.  Generically both pencils have

@@ -13,11 +13,14 @@ operations, every reference to a moved file must be re-anchored:
      the source's NEW location.  URL fragments are preserved; external
      URLs are untouched; ambiguous or nonexistent targets are reported,
      never guessed.
-  2. Fenced replay commands: lines of the form
-     ``python <script>.py [args]`` inside ```text/```bash blocks are
-     rewritten to the script's new root-relative path when the script
-     was moved and its basename is unambiguous.  Other code-block
-     content is untouched.
+  2. Fenced replay commands: ``python <script>.py [args]``,
+     ``uv run ... python <script>.py``, and continuation-line
+     ``python \\`` + ``<script>.py`` commands inside ```text/```bash
+     blocks are rewritten to the script's new root-relative path when
+     the script was moved and its basename is unambiguous.  The
+     grammar lives in ``replay_command.py`` and is shared with the
+     stale-reference scanner, so the two machines cannot drift.  Other
+     code-block content is untouched.
   3. Theorem ledger: entries whose document, primary_verifier, or
      independent_audit was moved get updated paths, a claim_package
      field, a legacy_paths list, and recomputed committed-blob hashes.
@@ -38,11 +41,10 @@ import subprocess
 import sys
 
 from package_metadata import resolve_claim_package_metadata
+from replay_command import match_replay
 
 MD_LINK = re.compile(r"(\]\()([^)\s]+)(\))")
 REF_LINK = re.compile(r"^(\s*\[[^\]]+\]:\s*)(\S+)(\s*)$", re.M)
-REPLAY_LINE = re.compile(r"^(\s*(?:python3?|wsl[^\n]*python3?)\s+)"
-                         r"([A-Za-z0-9_]+\.py)(\s.*)?$")
 FENCE = re.compile(r"^```")
 
 
@@ -206,29 +208,42 @@ def rewrite_markdown(old_to_new: dict, sources: list[str],
         new_text = MD_LINK.sub(inline_sub, text)
         new_text = REF_LINK.sub(refdef_sub, new_text)
 
+        lines = new_text.splitlines()
         out_lines = []
         in_fence = False
-        for line in new_text.splitlines():
+        i = 0
+        while i < len(lines):
+            line = lines[i]
             if FENCE.match(line):
                 in_fence = not in_fence
                 out_lines.append(line)
+                i += 1
                 continue
             if in_fence:
-                m = REPLAY_LINE.match(line)
-                if m:
-                    base = m.group(2)
+                rm = match_replay(lines, i)
+                if rm:
+                    base, end, form = rm
                     olds = base_to_olds.get(base, [])
                     if len(olds) == 1:
                         new = old_to_new[olds[0]]
-                        out_lines.append(m.group(1) + new
-                                         + (m.group(3) or ""))
+                        if form == "line":
+                            out_lines.append(
+                                line.replace(base, new, 1))
+                        else:
+                            out_lines.append(lines[i])
+                            out_lines.append(
+                                lines[i + 1].replace(base, new, 1))
                         replay_changed += 1
+                        i = end + 1
                         continue
                     if len(olds) > 1:
                         stats["ambiguous"].append(
                             f"{rel}: replay command basename {base} "
                             f"matches {len(olds)} moves)")
+                        i = end + 1
+                        continue
             out_lines.append(line)
+            i += 1
         final = "\n".join(out_lines)
         if text.endswith("\n"):
             final += "\n"

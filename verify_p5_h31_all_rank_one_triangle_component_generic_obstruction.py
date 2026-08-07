@@ -22,6 +22,7 @@ import itertools
 import json
 import os
 import subprocess
+import sys
 from pathlib import Path
 
 import sympy as sp
@@ -32,10 +33,26 @@ THEOREM = (
     ROOT
     / "P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
-COMPONENT = ROOT / "P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md"
+COMPONENT = (
+    ROOT / "claims" / "p4" / "components" / "all-rank-one-triangle"
+    / "P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md")
 COMPONENT_PRIMARY = (
-    ROOT / "verify_p4_all_rank_one_triangle_pure_component.py"
+    ROOT / "claims" / "p4" / "components" / "all-rank-one-triangle"
+    / "verify_p4_all_rank_one_triangle_pure_component.py"
 )
+
+if COMPONENT_PRIMARY.exists():
+    # The all-rank-one-triangle P4 package moved in Stage 4; expose its
+    # directory (shared helper) so the guarded bare-name import in
+    # main() resolves.
+    for _p in Path(__file__).resolve().parents:
+        if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+            sys.path.insert(0, str(_p / "src"))
+            break
+    from krenn_gu.bootstrap import expose_claim_package  # noqa: E402
+
+    expose_claim_package(
+        ROOT, "claims/p4/components/all-rank-one-triangle")
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 MIXED_WORDS = tuple(
     word for word in WORDS if word not in ((0, 0, 0, 0), (1, 1, 1, 1))

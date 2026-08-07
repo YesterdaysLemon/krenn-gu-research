@@ -24,12 +24,24 @@ repository root (4 for ``claims/p5/h22/<family>/``, 5 for a
 ``.../boundaries/`` or ``.../alternate/`` subdirectory).  Scripts that
 also import siblings one level up (e.g. a ``boundaries/`` verifier that
 reuses the package-root verifier) pass ``also=[".."]``.
+
+Legacy bare-name imports of a module that now lives inside a moved
+claim package (hyphenated directory names are not importable as
+packages) are handled by :func:`expose_claim_package`, the single
+shared place for that ``sys.path`` mutation (Stage 4 consolidation of
+the Stage 3 per-importer shims)::
+
+    from krenn_gu.bootstrap import bootstrap, expose_claim_package
+
+    REPO_ROOT, HERE = bootstrap(__file__)
+    expose_claim_package(REPO_ROOT, "claims/p4/components/split-pair")
+    from verify_p4_split_pair_pure_component import ...
 """
 
 from __future__ import annotations
 
 import sys
-from pathlib import Path
+from pathlib import Path, PurePath
 
 # Files that exist only at the repository root.  Any one of these
 # identifies the root; we do not rely on ``.git``.
@@ -72,3 +84,51 @@ def bootstrap(script_file, also=()):
         if str(p) not in sys.path:
             sys.path.insert(0, str(p))
     return repo_root, here
+
+
+def expose_claim_package(repo_root, rel_package_path):
+    """Expose a claim package directory to legacy bare-name imports.
+
+    Appends ``repo_root / rel_package_path`` to ``sys.path`` so modules
+    inside a moved claim package (whose hyphenated directory name is not
+    a Python package) keep importing by bare module name.  This is the
+    single shared replacement for the per-importer ``sys.path`` shims
+    that Stage 3 introduced for the moved disjoint-mixed-star package.
+
+    *repo_root* is the resolved repository root (as returned by
+    :func:`bootstrap`); *rel_package_path* is a POSIX-style path
+    relative to it, e.g. ``"claims/p4/components/disjoint-mixed-star"``.
+    The directory must exist; absolute paths, escapes outside the
+    repository, and missing directories are refused loudly rather than
+    silently leaving the import broken.  Idempotent: calling it twice
+    for the same package adds the path only once.
+    """
+    root = Path(repo_root).resolve()
+    raw = str(rel_package_path)
+    # Refuse absolute paths BEFORE any normalization: "/etc/passwd" and
+    # "C:\\..." must never be silently turned into repo-relative paths.
+    # PurePath treats "/etc/passwd" as drive-relative on Windows, so a
+    # bare leading-slash check is required alongside is_absolute().
+    if PurePath(raw).is_absolute() or raw.lstrip().startswith(("/", "\\")):
+        raise ValueError(
+            f"claim package path must be repository-relative: "
+            f"{rel_package_path!r}")
+    rel = raw.replace("\\", "/").strip("/ ")
+    if not rel or rel.startswith("/") or ".." in rel.split("/"):
+        raise ValueError(
+            f"claim package path must be repository-relative: "
+            f"{rel_package_path!r}")
+    pkg = (root / rel).resolve()
+    try:
+        pkg.relative_to(root)
+    except ValueError as exc:
+        raise ValueError(
+            f"claim package path escapes the repository: "
+            f"{rel_package_path!r}") from exc
+    if not pkg.is_dir():
+        raise FileNotFoundError(
+            f"claim package directory does not exist: {pkg}")
+    entry = str(pkg)
+    if entry not in sys.path:
+        sys.path.append(entry)
+    return pkg

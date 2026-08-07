@@ -287,7 +287,7 @@ separation rather than to a larger permanent ideal.
 
 Following the common `1+3` cut instead of discarding the pair-rank
 drop exposes a ninth component:
-[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](../P4_EMBEDDED_P3_PURE_COMPONENT.md).
+[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](../claims/p4/components/embedded-p3/P4_EMBEDDED_P3_PURE_COMPONENT.md).
 It is the one-coordinate suspension of the already classified pure
 `P_3` sign chart.  The construction is six-dimensional and a rational
 rank-fourteen Segre-incidence certificate proves that its closure is

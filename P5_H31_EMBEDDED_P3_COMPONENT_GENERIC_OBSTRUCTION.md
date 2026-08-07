@@ -4,7 +4,7 @@
 
 This is an exact characteristic-zero theorem on a dense open subset of
 the ninth pure-`P_4` component constructed in
-[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](P4_EMBEDDED_P3_PURE_COMPONENT.md).
+[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](claims/p4/components/embedded-p3/P4_EMBEDDED_P3_PURE_COMPONENT.md).
 
 The complete marked `H31` fibre over the generic point of that
 component is empty.  In fact, no marked binary neighbour exists: the

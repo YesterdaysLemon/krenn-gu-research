@@ -307,7 +307,7 @@ component theorem.
 
 All ten previously certified component orbits are either five-dimensional
 or belong to the six-dimensional component in
-[`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](P4_SIX_DIMENSIONAL_PURE_COMPONENT.md).
+[`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](claims/p4/components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md).
 That component has generic pair profile
 
 ```text

@@ -13,12 +13,22 @@ from pathlib import Path
 import sympy as sp
 
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P4_MIXED_ORIENTATION_PURE_COMPONENT.md"
-KNOWN_FIRST = ROOT / "P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
-KNOWN_SECOND = ROOT / "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md"
-KNOWN_THREE = ROOT / "P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md"
-RADICAL_STAR = ROOT / "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md"
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+THEOREM = HERE / "P4_MIXED_ORIENTATION_PURE_COMPONENT.md"
+KNOWN_FIRST = REPO_ROOT / "P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
+KNOWN_SECOND = (
+    REPO_ROOT / "claims" / "p4" / "components" / "diagonal-quadric"
+    / "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md")
+KNOWN_THREE = REPO_ROOT / "P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md"
+RADICAL_STAR = REPO_ROOT / "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md"
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
 PAIRS = tuple(itertools.combinations(range(4), 2))
@@ -596,7 +606,7 @@ def main() -> None:
         "source_sha256": sha256(Path(__file__)),
     }
     output_path = (
-        ROOT / "tmp" / "p4_mixed_orientation_pure_component_verified.json"
+        REPO_ROOT / "tmp" / "p4_mixed_orientation_pure_component_verified.json"
     )
     output_path.parent.mkdir(exist_ok=True)
     output_path.write_text(

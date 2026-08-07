@@ -5,7 +5,7 @@
 This is an exact characteristic-zero obstruction on the generic
 diagonal-source orbit of the diagonal-quadric pure-`P_4` component
 proved in
-[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md).
+[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md).
 
 For each of the weighted diagonal directions `D01` and `D23`, the
 generic binary `H22` extension incidence is empty.  The proof replaces

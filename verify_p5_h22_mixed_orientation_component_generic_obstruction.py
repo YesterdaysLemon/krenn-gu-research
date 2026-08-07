@@ -20,7 +20,9 @@ THEOREM = (
     ROOT
     / "P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
-COMPONENT = ROOT / "P4_MIXED_ORIENTATION_PURE_COMPONENT.md"
+COMPONENT = (
+    ROOT / "claims" / "p4" / "components" / "mixed-orientation"
+    / "P4_MIXED_ORIENTATION_PURE_COMPONENT.md")
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 MIXED_WORDS = tuple(
     bits

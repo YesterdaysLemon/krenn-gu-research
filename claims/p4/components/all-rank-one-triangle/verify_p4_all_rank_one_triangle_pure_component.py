@@ -12,11 +12,21 @@ import sympy as sp
 
 import sys
 
-# The disjoint-mixed-star P4 component package moved in Stage 3; expose
-# its directory so the bare-name import below resolves.
-sys.path.insert(
-    0, str(Path(__file__).resolve().parent / "claims" / "p4"
-           / "components" / "disjoint-mixed-star"))
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import (  # noqa: E402
+    bootstrap,
+    expose_claim_package,
+)
+
+REPO_ROOT, HERE = bootstrap(__file__)
+# Expose the two packages whose verifiers this script imports by bare
+# name (disjoint-mixed-star moved in Stage 3; mixed-orientation moves
+# in this batch).
+expose_claim_package(REPO_ROOT, "claims/p4/components/disjoint-mixed-star")
+expose_claim_package(REPO_ROOT, "claims/p4/components/mixed-orientation")
 from verify_p4_disjoint_mixed_star_pure_component import (  # noqa: E402
     family as eighth_family,
 )
@@ -31,14 +41,15 @@ from verify_p4_mixed_orientation_pure_component import (
 )
 
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md"
-WORKING_NOTE = ROOT / "P4_INOUT_PATH_STRATUM_WORKING_NOTE.md"
+THEOREM = HERE / "P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md"
+WORKING_NOTE = REPO_ROOT / "P4_INOUT_PATH_STRATUM_WORKING_NOTE.md"
 EIGHTH = (
-    ROOT / "claims" / "p4" / "components" / "disjoint-mixed-star"
+    REPO_ROOT / "claims" / "p4" / "components" / "disjoint-mixed-star"
     / "P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md")
-RADICAL_STAR = ROOT / "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md"
-SEVENTH = ROOT / "P4_SIX_DIMENSIONAL_PURE_COMPONENT.md"
+RADICAL_STAR = REPO_ROOT / "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md"
+SEVENTH = (
+    REPO_ROOT / "claims" / "p4" / "components" / "six-dimensional"
+    / "P4_SIX_DIMENSIONAL_PURE_COMPONENT.md")
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PAIRS = tuple(itertools.combinations(range(4), 2))
 COORD_PAIRS = PAIRS
@@ -511,7 +522,7 @@ def main() -> None:
         "source_sha256": sha256(Path(__file__)),
     }
     output_path = (
-        ROOT / "tmp" / "p4_all_rank_one_triangle_pure_component_verified.json"
+        REPO_ROOT / "tmp" / "p4_all_rank_one_triangle_pure_component_verified.json"
     )
     output_path.parent.mkdir(exist_ok=True)
     output_path.write_text(

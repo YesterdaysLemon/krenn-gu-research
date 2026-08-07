@@ -250,6 +250,127 @@ class RewriteMarkdownTests(unittest.TestCase):
         stats = rewrite_markdown(self.m, ["README.md"], self.tmp)
         self.assertEqual(stats["replay_rewritten"], 0)
 
+    def test_replay_uv_run_form(self):
+        # Stage 4 embedded-p3 form: `uv run --with sympy python ...`
+        write_md(self.tmp, "README.md",
+                 "```text\nuv run --with sympy python verify_a.py\n```\n")
+        stats = rewrite_markdown(self.m, ["README.md"], self.tmp)
+        self.assertEqual(stats["replay_rewritten"], 1)
+        self.assertIn(
+            "uv run --with sympy python claims/p5/h22/pkg/verify_a.py",
+            read_md(self.tmp, "README.md"))
+
+    def test_replay_uv_run_with_extra_flags(self):
+        write_md(self.tmp, "README.md",
+                 "```text\nuv run --with sympy --quiet python "
+                 "verify_a.py --limit 2\n```\n")
+        stats = rewrite_markdown(self.m, ["README.md"], self.tmp)
+        self.assertEqual(stats["replay_rewritten"], 1)
+        self.assertIn(
+            "uv run --with sympy --quiet python "
+            "claims/p5/h22/pkg/verify_a.py --limit 2",
+            read_md(self.tmp, "README.md"))
+
+    def test_replay_continuation_line_form(self):
+        # Stage 4 mixed-orientation / Stage 3 disjoint-mixed-star form:
+        # `python \` + indented script name.
+        write_md(self.tmp, "README.md",
+                 "```text\npython \\\n  verify_a.py\n```\n")
+        stats = rewrite_markdown(self.m, ["README.md"], self.tmp)
+        self.assertEqual(stats["replay_rewritten"], 1)
+        self.assertIn("python \\\n  claims/p5/h22/pkg/verify_a.py",
+                      read_md(self.tmp, "README.md"))
+
+    def test_replay_continuation_with_args(self):
+        write_md(self.tmp, "README.md",
+                 "```text\npython \\\n  verify_a.py --limit 10\n```\n")
+        stats = rewrite_markdown(self.m, ["README.md"], self.tmp)
+        self.assertEqual(stats["replay_rewritten"], 1)
+        self.assertIn("claims/p5/h22/pkg/verify_a.py --limit 10",
+                      read_md(self.tmp, "README.md"))
+
+    def test_bare_filename_list_not_rewritten(self):
+        # fenced prose: bare filenames with no launcher must not move
+        write_md(self.tmp, "README.md",
+                 "```text\nverify_a.py\npython is great\n"
+                 "run the script manually\n```\n")
+        stats = rewrite_markdown(self.m, ["README.md"], self.tmp)
+        self.assertEqual(stats["replay_rewritten"], 0)
+        self.assertEqual(stats["ambiguous"], [])
+
+    def test_dangling_continuation_not_rewritten(self):
+        # launcher with backslash but no script token on the next line
+        write_md(self.tmp, "README.md",
+                 "```text\npython \\\nsome prose, not a script\n```\n")
+        stats = rewrite_markdown(self.m, ["README.md"], self.tmp)
+        self.assertEqual(stats["replay_rewritten"], 0)
+
+    def test_pathlike_script_not_rewritten(self):
+        # an already-correct full-path command is not a replay-command
+        # token and must not be double-rewritten
+        write_md(self.tmp, "README.md",
+                 "```text\npython claims/p5/h22/pkg/verify_a.py\n```\n")
+        stats = rewrite_markdown(self.m, ["README.md"], self.tmp)
+        self.assertEqual(stats["replay_rewritten"], 0)
+        self.assertIn("python claims/p5/h22/pkg/verify_a.py",
+                      read_md(self.tmp, "README.md"))
+
+    def test_wsl_form_still_rewritten(self):
+        write_md(self.tmp, "README.md",
+                 "```text\nwsl --exec python3 verify_a.py\n```\n")
+        stats = rewrite_markdown(self.m, ["README.md"], self.tmp)
+        self.assertEqual(stats["replay_rewritten"], 1)
+        self.assertIn("claims/p5/h22/pkg/verify_a.py",
+                      read_md(self.tmp, "README.md"))
+
+
+class ReplayCommandGrammarTests(unittest.TestCase):
+    """Shared grammar (tools/migration/replay_command.py) — the single
+    source of truth for both the rewriter and the stale scanner."""
+
+    def _match(self, text):
+        from replay_command import match_replay
+        lines = text.splitlines()
+        out = []
+        i = 0
+        while i < len(lines):
+            rm = match_replay(lines, i)
+            if rm:
+                base, end, form = rm
+                out.append((base, end - i, form))
+                i = end + 1
+            else:
+                i += 1
+        return out
+
+    def test_plain_python(self):
+        self.assertEqual(self._match("python verify_a.py"),
+                         [("verify_a.py", 0, "line")])
+
+    def test_python3_and_wsl(self):
+        self.assertEqual(self._match("python3 verify_a.py"),
+                         [("verify_a.py", 0, "line")])
+        self.assertEqual(self._match("wsl --exec python3 verify_a.py"),
+                         [("verify_a.py", 0, "line")])
+
+    def test_uv_run_wrapper(self):
+        self.assertEqual(
+            self._match("uv run --with sympy python verify_a.py"),
+            [("verify_a.py", 0, "line")])
+
+    def test_continuation(self):
+        self.assertEqual(self._match("python \\\n  verify_a.py"),
+                         [("verify_a.py", 1, "continuation")])
+
+    def test_negatives(self):
+        self.assertEqual(self._match("verify_a.py"), [])
+        self.assertEqual(self._match("run verify_a.py"), [])
+        self.assertEqual(self._match("python \\\nprose text"), [])
+        self.assertEqual(self._match("python path/to/verify_a.py"), [])
+        self.assertEqual(self._match("python -m module"), [])
+        self.assertEqual(self._match("python"), [])
+        self.assertEqual(self._match("uv run --with sympy ls"), [])
+
 
 class CollisionTests(unittest.TestCase):
     def test_final_destination_collisions(self):
@@ -541,6 +662,36 @@ class StaleReferenceTests(unittest.TestCase):
         self.assertTrue(any(ctx == "command reference"
                             for ctx, b in hits), hits)
 
+
+    def test_stale_uv_run_replay_command_fails(self):
+        # Stage 4 embedded-p3 form
+        text = ("```text\nuv run --with sympy python " + self.BASE
+                + "\n```\n")
+        hits = find_stale_bare_refs(text, "README.md", self.MOVED)
+        self.assertTrue(any(ctx == "fenced replay command"
+                            for ctx, b in hits), hits)
+
+    def test_stale_continuation_replay_command_fails(self):
+        # Stage 4 mixed-orientation / Stage 3 DMS form
+        text = "```text\npython \\\n  " + self.BASE + "\n```\n"
+        hits = find_stale_bare_refs(text, "README.md", self.MOVED)
+        self.assertTrue(any(ctx == "fenced replay command"
+                            for ctx, b in hits), hits)
+
+    def test_rewritten_uv_and_continuation_commands_valid(self):
+        new = self.MOVED[self.BASE]
+        for text in ("```text\nuv run --with sympy python " + new
+                     + "\n```\n",
+                     "```text\npython \\\n  " + new + "\n```\n"):
+            hits = find_stale_bare_refs(text, "README.md", self.MOVED)
+            self.assertEqual(hits, [], text)
+
+    def test_fenced_prose_with_basename_not_flagged(self):
+        # bare filename lists / prose inside fences are not commands
+        text = ("```text\n" + self.BASE + "\n"
+                "run the verifier manually\n```\n")
+        hits = find_stale_bare_refs(text, "README.md", self.MOVED)
+        self.assertEqual(hits, [])
 
 
 
@@ -1177,6 +1328,97 @@ class ExecutorFinalizeRegressionTests(unittest.TestCase):
         # executor's except block would roll back.  No manifest file is
         # created here by finalize_execution itself.
         self.assertFalse((tmp / "moved-paths.json").exists())
+
+
+class ExposeClaimPackageTests(unittest.TestCase):
+    """Stage 4: the single shared helper that exposes a moved claim
+    package (hyphenated directory, not a Python package) to legacy
+    bare-name imports.  Replaces the per-importer sys.path shims Stage 3
+    left for the moved disjoint-mixed-star package."""
+
+    def _import_helper(self):
+        import importlib.util
+        src = (pathlib.Path(__file__).resolve().parents[1]
+               / "src" / "krenn_gu" / "bootstrap.py")
+        spec = importlib.util.spec_from_file_location(
+            "kg_bootstrap_stage4", src)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        return mod
+
+    def _make_repo(self, tmp, package_rel):
+        # A marker file makes this dir discoverable as a repo root.
+        (tmp / "catalog").mkdir(parents=True, exist_ok=True)
+        (tmp / "catalog" / "theorem-ledger.json").write_text(
+            "{}", encoding="utf-8")
+        pkg = tmp / package_rel
+        pkg.mkdir(parents=True, exist_ok=True)
+        return pkg
+
+    def test_expose_adds_package_and_import_resolves(self):
+        mod = self._import_helper()
+        tmp = pathlib.Path(tempfile.mkdtemp())
+        rel = "claims/p4/components/disjoint-mixed-star"
+        pkg = self._make_repo(tmp, rel)
+        (pkg / "mod_under_test_stage4.py").write_text(
+            "VALUE = 42\n", encoding="utf-8")
+        import sys as _sys
+        try:
+            self.assertNotIn(str(pkg), _sys.path)
+            out = mod.expose_claim_package(tmp, rel)
+            self.assertEqual(out, pkg.resolve())
+            self.assertIn(str(pkg), _sys.path)
+            import mod_under_test_stage4 as m
+            self.assertEqual(m.VALUE, 42)
+        finally:
+            _sys.modules.pop("mod_under_test_stage4", None)
+            if str(pkg) in _sys.path:
+                _sys.path.remove(str(pkg))
+
+    def test_expose_is_idempotent(self):
+        mod = self._import_helper()
+        tmp = pathlib.Path(tempfile.mkdtemp())
+        rel = "claims/p4/components/split-pair"
+        pkg = self._make_repo(tmp, rel)
+        import sys as _sys
+        try:
+            mod.expose_claim_package(tmp, rel)
+            mod.expose_claim_package(tmp, rel)
+            self.assertEqual(_sys.path.count(str(pkg)), 1)
+        finally:
+            if str(pkg) in _sys.path:
+                _sys.path.remove(str(pkg))
+
+    def test_missing_package_raises(self):
+        mod = self._import_helper()
+        tmp = pathlib.Path(tempfile.mkdtemp())
+        self._make_repo(tmp, "claims/p4/components/exists")
+        with self.assertRaises(FileNotFoundError):
+            mod.expose_claim_package(
+                tmp, "claims/p4/components/no-such-package")
+
+    def test_absolute_and_escaping_paths_refused(self):
+        mod = self._import_helper()
+        tmp = pathlib.Path(tempfile.mkdtemp())
+        self._make_repo(tmp, "claims/p4/components/x")
+        with self.assertRaises(ValueError):
+            mod.expose_claim_package(tmp, "/etc/passwd")
+        with self.assertRaises(ValueError):
+            mod.expose_claim_package(tmp, "../outside")
+
+    def test_no_git_dependency(self):
+        # The helper must work from a tree with no .git directory: it
+        # resolves paths, it never shells out to git.
+        mod = self._import_helper()
+        tmp = pathlib.Path(tempfile.mkdtemp())
+        rel = "claims/p4/components/no-git"
+        pkg = self._make_repo(tmp, rel)
+        self.assertFalse((tmp / ".git").exists())
+        out = mod.expose_claim_package(tmp, rel)
+        self.assertEqual(out, pkg.resolve())
+        import sys as _sys
+        if str(pkg) in _sys.path:
+            _sys.path.remove(str(pkg))
 
 if __name__ == "__main__":
     unittest.main()

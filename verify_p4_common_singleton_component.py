@@ -167,9 +167,33 @@ def replay_local_standard_basis(source: str) -> dict[str, int]:
     }
 
 
+def _fragment_source_path(filename: str) -> Path:
+    """Resolve a fragment-source script to its current location.
+
+    The inventory scans the *text* of other verifiers (it never imports
+    them).  Several of those verifiers are claim packages that the layout
+    migration has moved out of the root, so a bare ``ROOT / filename``
+    lookup goes stale.  This resolver first tries the root, then consults
+    the executed-move map in ``catalog/moved-paths.json`` so it keeps
+    finding each source at its post-migration path.
+    """
+    direct = ROOT / filename
+    if direct.exists():
+        return direct
+    manifest_path = ROOT / "catalog" / "moved-paths.json"
+    if manifest_path.exists():
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        for move in manifest.get("moves", []):
+            if move.get("status") == "moved" and move.get("old_path") == filename:
+                candidate = ROOT / move["new_path"]
+                if candidate.exists():
+                    return candidate
+    return direct
+
+
 def verify_known_component_inventory() -> dict[str, list[int]]:
     for filename, fragments in PROFILE_SOURCE_FRAGMENTS.items():
-        text = (ROOT / filename).read_text(encoding="utf-8")
+        text = _fragment_source_path(filename).read_text(encoding="utf-8")
         for fragment in fragments:
             assert fragment in text, (filename, fragment)
     assert all(max(profile) == 4 for profile in KNOWN_COMPONENT_PROFILES.values())

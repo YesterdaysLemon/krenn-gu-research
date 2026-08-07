@@ -771,7 +771,7 @@ quadrics.  A radical-plane normal form yields a second
 five-dimensional component, parametrized before diagonal-source orbit
 by an irreducible `(3,3)` hypersurface in `P^2 x P^2`:
 
-- [`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md)
+- [`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md)
 
 At one rational point of this component, exact marked projection leaves
 only two markings, one for each of `q=0,3`; a uniform
@@ -1042,7 +1042,7 @@ diagonal-source orbit.  A directed pure-kernel endpoint invariant
 separates it from the three split-cubic branches despite the shared
 coarse jump signature `(0,1)`:
 
-- [`P4_MIXED_ORIENTATION_PURE_COMPONENT.md`](P4_MIXED_ORIENTATION_PURE_COMPONENT.md)
+- [`P4_MIXED_ORIENTATION_PURE_COMPONENT.md`](claims/p4/components/mixed-orientation/P4_MIXED_ORIENTATION_PURE_COMPONENT.md)
 
 Its generic marked `H31` fibre is empty.  Function-field projection
 leaves four rational sheets, and exact all-extension determinants plus
@@ -1061,7 +1061,7 @@ survive.  A rank-six family map and rank-fourteen smooth
 Segre-incidence certificate prove component status.  Its generic pair
 profile is `(4,3,2,4,4,3)`:
 
-- [`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](P4_SIX_DIMENSIONAL_PURE_COMPONENT.md)
+- [`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](claims/p4/components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md)
 
 This component's generic marked fibre is empty as well.  The variables
 `s=a+c,u=1-sb,v=1-se` expose a pure reconstruction kernel for one

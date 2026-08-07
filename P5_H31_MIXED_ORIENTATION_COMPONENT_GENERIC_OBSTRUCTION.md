@@ -4,7 +4,7 @@
 
 This is an exact characteristic-zero theorem on a dense open subset of
 the mixed-orientation component proved in
-[`P4_MIXED_ORIENTATION_PURE_COMPONENT.md`](P4_MIXED_ORIENTATION_PURE_COMPONENT.md).
+[`P4_MIXED_ORIENTATION_PURE_COMPONENT.md`](claims/p4/components/mixed-orientation/P4_MIXED_ORIENTATION_PURE_COMPONENT.md).
 
 The complete marked-basis fibre over the generic point of that
 component has no `H31` lift.  The theorem does not close special

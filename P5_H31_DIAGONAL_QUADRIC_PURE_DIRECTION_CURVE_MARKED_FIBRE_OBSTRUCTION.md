@@ -28,7 +28,7 @@ boundary compactification, a classification of further components, an
 ## The pure-direction curve
 
 In the normal form of
-[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md),
+[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md),
 set
 
 ```text

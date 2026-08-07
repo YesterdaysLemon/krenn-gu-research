@@ -13,9 +13,9 @@ pair-product relations.
 
 This is a lower bound, not a classification.  The generic marked
 `H31` fibre has since been excluded in
-[`P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md);
+[`P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md);
 the generic weighted `H22` incidence has since been excluded in
-[`P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md).
 Its special parameter/projective boundary remains.  Nothing here
 settles all of `H22` or the global prize problem.
 
@@ -45,7 +45,7 @@ R=C[X_0,X_1,X_2,X_3]/(X_0^2,X_1^2,X_2^2,X_3^2).
 The first relation in (2) points toward the common mode three, while
 the second points away from it.  This mixed orientation is not the
 double-contraction radical orientation classified in
-[`P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md`](P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md).
+[`P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md`](../../../../P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md).
 
 For every nonzero word in the three kernel bits of modes one, two, and
 three, contract `P_4` to a covector on mode zero.  Four of the seven
@@ -222,7 +222,7 @@ d'=-q(d+p+q)/(d+q).                                (15)
 ```
 
 All remaining primes in (4) have since been identified in
-[`P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md`](P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md).
+[`P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md`](../../../../P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md).
 The prime `(d+q,a+c+p)` is a proper subfamily of the six-dimensional
 component, while the last two primes are symmetry charts of `L_2` and
 `L_1`.
@@ -249,10 +249,9 @@ components' `H22` incidences remain open.
 Run:
 
 ```text
-python \
-  verify_p4_mixed_orientation_pure_component.py
+python claims/p4/components/mixed-orientation/verify_p4_mixed_orientation_pure_component.py
 
-python audit_p4_mixed_orientation_pure_component.py
+python claims/p4/components/mixed-orientation/audit_p4_mixed_orientation_pure_component.py
 ```
 
 The primary verifier reconstructs the contraction matrix and the five

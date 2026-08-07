@@ -13,8 +13,12 @@ import sympy as sp
 
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md"
-MIXED = ROOT / "P4_MIXED_ORIENTATION_PURE_COMPONENT.md"
-SIX_DIMENSIONAL = ROOT / "P4_SIX_DIMENSIONAL_PURE_COMPONENT.md"
+MIXED = (
+    ROOT / "claims" / "p4" / "components" / "mixed-orientation"
+    / "P4_MIXED_ORIENTATION_PURE_COMPONENT.md")
+SIX_DIMENSIONAL = (
+    ROOT / "claims" / "p4" / "components" / "six-dimensional"
+    / "P4_SIX_DIMENSIONAL_PURE_COMPONENT.md")
 ONE_THREE = ROOT / "P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md"
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PERMUTATIONS = tuple(itertools.permutations(range(4)))

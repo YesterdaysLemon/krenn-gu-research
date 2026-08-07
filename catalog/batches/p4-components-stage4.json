@@ -1,0 +1,93 @@
+{
+  "batch_id": "p4-components-stage4",
+  "approved_by": "YesterdaysLemon (repository owner), Stage 4 P4 component migration instruction",
+  "approved_at": "2026-08-06",
+  "base_sha": "1025f88cf5e978ec0886d95e75087b6e28c0d8bb",
+  "manifest_sha256": "300f26d022cfdfcc438658e486f80998f33956d977e7201b98c882a72a04a049",
+  "mapping_sha256": "5833e9f2e17fce64c03563093d76e870065ea49190a96e567ec06538d37c6f91",
+  "member_count": 18,
+  "moves": [
+    {
+      "old_path": "P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md",
+      "new_path": "claims/p4/components/all-rank-one-triangle/P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md"
+    },
+    {
+      "old_path": "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md",
+      "new_path": "claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md"
+    },
+    {
+      "old_path": "P4_EMBEDDED_P3_PURE_COMPONENT.md",
+      "new_path": "claims/p4/components/embedded-p3/P4_EMBEDDED_P3_PURE_COMPONENT.md"
+    },
+    {
+      "old_path": "P4_MIXED_ORIENTATION_PURE_COMPONENT.md",
+      "new_path": "claims/p4/components/mixed-orientation/P4_MIXED_ORIENTATION_PURE_COMPONENT.md"
+    },
+    {
+      "old_path": "P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md",
+      "new_path": "claims/p4/components/single-word-quadrilateral/P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md"
+    },
+    {
+      "old_path": "P4_SIX_DIMENSIONAL_PURE_COMPONENT.md",
+      "new_path": "claims/p4/components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md"
+    },
+    {
+      "old_path": "audit_p4_all_rank_one_triangle_pure_component.py",
+      "new_path": "claims/p4/components/all-rank-one-triangle/audit_p4_all_rank_one_triangle_pure_component.py"
+    },
+    {
+      "old_path": "audit_p4_diagonal_quadric_pure_component.py",
+      "new_path": "claims/p4/components/diagonal-quadric/audit_p4_diagonal_quadric_pure_component.py"
+    },
+    {
+      "old_path": "audit_p4_embedded_p3_pure_component.py",
+      "new_path": "claims/p4/components/embedded-p3/audit_p4_embedded_p3_pure_component.py"
+    },
+    {
+      "old_path": "audit_p4_mixed_orientation_pure_component.py",
+      "new_path": "claims/p4/components/mixed-orientation/audit_p4_mixed_orientation_pure_component.py"
+    },
+    {
+      "old_path": "audit_p4_single_word_quadrilateral_pure_component.py",
+      "new_path": "claims/p4/components/single-word-quadrilateral/audit_p4_single_word_quadrilateral_pure_component.py"
+    },
+    {
+      "old_path": "audit_p4_six_dimensional_pure_component.py",
+      "new_path": "claims/p4/components/six-dimensional/audit_p4_six_dimensional_pure_component.py"
+    },
+    {
+      "old_path": "verify_p4_all_rank_one_triangle_pure_component.py",
+      "new_path": "claims/p4/components/all-rank-one-triangle/verify_p4_all_rank_one_triangle_pure_component.py"
+    },
+    {
+      "old_path": "verify_p4_diagonal_quadric_pure_component.py",
+      "new_path": "claims/p4/components/diagonal-quadric/verify_p4_diagonal_quadric_pure_component.py"
+    },
+    {
+      "old_path": "verify_p4_embedded_p3_pure_component.py",
+      "new_path": "claims/p4/components/embedded-p3/verify_p4_embedded_p3_pure_component.py"
+    },
+    {
+      "old_path": "verify_p4_mixed_orientation_pure_component.py",
+      "new_path": "claims/p4/components/mixed-orientation/verify_p4_mixed_orientation_pure_component.py"
+    },
+    {
+      "old_path": "verify_p4_single_word_quadrilateral_pure_component.py",
+      "new_path": "claims/p4/components/single-word-quadrilateral/verify_p4_single_word_quadrilateral_pure_component.py"
+    },
+    {
+      "old_path": "verify_p4_six_dimensional_pure_component.py",
+      "new_path": "claims/p4/components/six-dimensional/verify_p4_six_dimensional_pure_component.py"
+    }
+  ],
+  "rationale": "Stage 4 throughput test: all six remaining high-confidence P4 pure-component theorem packages (theorem + primary verifier + independent audit each) move into claims/p4/components/<family>/, completing the nine high-confidence pure-component package set. The batch deliberately exercises the dependency chain mixed-orientation -> disjoint-mixed-star (moved Stage 3) -> all-rank-one-triangle -> downstream P5 verifiers. This instruction approves only this exact mapping; it does not approve other P4 files or later batches.",
+  "notes": "No exclusions: all six triples verified present, unambiguous, and replayable. Singular-dependent replays use the established WSL environment. No theorem prose altered; relocation only.",
+  "packages": [
+    "all-rank-one-triangle",
+    "diagonal-quadric",
+    "embedded-p3",
+    "mixed-orientation",
+    "single-word-quadrilateral",
+    "six-dimensional"
+  ]
+}
