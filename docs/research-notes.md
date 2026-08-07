@@ -209,7 +209,7 @@ Segre/Kronecker boundary.  When both partners equal `A^#` projectively,
 compression forces one quadratic factor while the escape condition forces
 two incompatible affine differences.  That sheet is empty.  Exact primary
 and independent subset-product replays are in
-[`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](../P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
+[`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](../claims/p4/classifications/rank-two-triangle/resonant/flat-projective-partner/P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
 
 The full-support affine-ratio collisions have since been closed as well.
 The honest resonant frontier is now smaller kernel supports, their collision

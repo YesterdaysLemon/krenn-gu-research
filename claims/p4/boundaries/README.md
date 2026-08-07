@@ -12,16 +12,17 @@ assumptions, and provenance are unchanged by relocation.  The global
 Krenn–Gu conjecture remains **UNRESOLVED**.
 
 Boundary claims are kept semantically separate from classification
-claims (see [`../classifications/`](../classifications/)); Stage 7's
-human review moves a claim across that line only when the document's
-own mathematical role proves it, and every such reassignment is
-recorded in the migration report.
+claims (see [`../classifications/`](../classifications/)); the
+per-stage human review moves a claim across that line only when the
+document's own mathematical role proves it, and every such
+reassignment is recorded in the migration report.
 
 ## Migrated boundary spines
 
 | spine | directory | packages | migration batch |
 |---|---|---|---|
 | pair geometry | [`pair-geometry/`](pair-geometry/) | 2 | `p4-pair-geometry-stage7` |
+| rank-two-triangle (nonresonant/resonant/mixed obstructions) | [`rank-two-triangle/`](rank-two-triangle/) | 7 | `p4-rank-two-triangle-stage8` |
 
 ## Pending
 

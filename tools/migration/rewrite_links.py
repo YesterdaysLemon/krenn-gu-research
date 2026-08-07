@@ -29,6 +29,12 @@ Nothing here changes theorem wording; only path expressions move.
 
 Functions take an explicit *root* so the test suite can exercise them
 against a synthetic fixture tree without touching the real repository.
+
+The CLI selects source files through ``git ls-files``, so it sees the
+Git index (including staged additions) rather than the raw worktree;
+authoritative use therefore requires the index-complete candidate
+tree that ``check_hygiene.py`` enforces (no nonignored untracked
+files, no unstaged tracked changes).
 """
 
 from __future__ import annotations

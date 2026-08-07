@@ -4,7 +4,7 @@
 
 This is an exact characteristic-zero obstruction for the second
 full-support cut type left by
-[`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md).
+[`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](../../../../classifications/rank-two-triangle/nonresonant/cut-reduction/P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md).
 It is a proof in two hyperbolic binary planes; no elimination or
 component search is used.
 
@@ -32,7 +32,7 @@ If even one `Q_ij` is a full-support `2+2` cut, the triangle is
 impossible.
 
 Together with
-[`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md),
+[`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](../one-three/P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md),
 this proves:
 
 ```text
@@ -42,7 +42,7 @@ cuts have full support is empty.                                    (2)
 
 The proper support boundaries of the `1+3` and `2+2` bridges have
 since been excluded in
-[`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md).
+[`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](../degenerate-cut/P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md).
 The remaining triangle frontier is now confined to the resonant,
 trivial-holonomy divisor.
 
@@ -284,8 +284,8 @@ those papers.
 Run:
 
 ```text
-python verify_p4_nonresonant_two_two_triangle_obstruction.py
-python audit_p4_nonresonant_two_two_triangle_obstruction.py
+python claims/p4/boundaries/rank-two-triangle/nonresonant/two-two/verify_p4_nonresonant_two_two_triangle_obstruction.py
+python claims/p4/boundaries/rank-two-triangle/nonresonant/two-two/audit_p4_nonresonant_two_two_triangle_obstruction.py
 ```
 
 The primary verifier checks the full cut and its annihilator, the

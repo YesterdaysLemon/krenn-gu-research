@@ -56,7 +56,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "78fe103bb50d24d0",
+      "document_sha256_16": "9a0ed172f5f67fbe",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1274,7 +1274,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "78fe103bb50d24d0",
+      "document_sha256_16": "9a0ed172f5f67fbe",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -1294,7 +1294,7 @@
     {
       "name": "Exhaustiveness: 25 component closures cover the all-pair-rank exceptional locus",
       "document": "P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md",
-      "document_sha256_16": "7598ce0f2e19383b",
+      "document_sha256_16": "95804c14d93c8dbe",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "within the all-pair-rank exceptional-graph reduction",
@@ -1403,7 +1403,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "78fe103bb50d24d0",
+      "document_sha256_16": "9a0ed172f5f67fbe",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1463,7 +1463,7 @@
     {
       "name": "P4 Mixed Two Rank Two Triangle Obstruction Withdrawn Pending Borel Audit",
       "document": "P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md",
-      "document_sha256_16": "acb05d9680a0d499",
+      "document_sha256_16": "5f924f06f6974eb2",
       "status": "withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1493,7 +1493,7 @@
     {
       "name": "P4 Resonant Flat Triangle Classification Withdrawn Overstrong",
       "document": "P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md",
-      "document_sha256_16": "59fdd9525bc44f58",
+      "document_sha256_16": "393abf4579d631c9",
       "status": "withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],

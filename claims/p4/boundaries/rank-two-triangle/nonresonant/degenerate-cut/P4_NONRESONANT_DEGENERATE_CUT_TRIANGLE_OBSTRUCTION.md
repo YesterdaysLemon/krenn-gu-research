@@ -4,15 +4,15 @@
 
 This is an exact characteristic-zero boundary theorem for the
 rank-two-relation triangle reduced to cuts in
-[`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md).
+[`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](../../../../classifications/rank-two-triangle/nonresonant/cut-reduction/P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md).
 It closes every proper bridge-support boundary by two coordinate
 normal forms and one perfect-pairing inequality.  No elimination or
 component search is used.
 
 Combined with the full-support theorems
 
-- [`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md),
-- [`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md),
+- [`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](../one-three/P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md),
+- [`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](../two-two/P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md),
 
 it proves:
 
@@ -24,7 +24,7 @@ Thus the all-rank-two-relation triangle frontier is now confined to
 the resonant divisor where the multiplicative projective holonomy is
 trivial.  That divisor has since split into tangent-jet and
 binary-cubic incidences in
-[`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md).
+[`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](../../../../classifications/rank-two-triangle/resonant/affine-holonomy-reduction/P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md).
 Component exhaustiveness, the other lower-pair-rank strata, and the
 global Krenn--Gu conjecture remain open.
 
@@ -191,8 +191,8 @@ proof.
 Run:
 
 ```text
-python verify_p4_nonresonant_degenerate_cut_triangle_obstruction.py
-python audit_p4_nonresonant_degenerate_cut_triangle_obstruction.py
+python claims/p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut/verify_p4_nonresonant_degenerate_cut_triangle_obstruction.py
+python claims/p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut/audit_p4_nonresonant_degenerate_cut_triangle_obstruction.py
 ```
 
 The primary verifier checks both catalecticants and annihilators,

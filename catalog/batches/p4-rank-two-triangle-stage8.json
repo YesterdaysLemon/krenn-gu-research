@@ -1,0 +1,154 @@
+{
+  "batch_id": "p4-rank-two-triangle-stage8",
+  "approved_by": "YesterdaysLemon (repository owner), Stage 8 P4 resonant/nonresonant rank-two triangle migration instruction",
+  "approved_at": "2026-08-07",
+  "base_sha": "3e5119e827040103d1d598e549ecf0d9d5cf4f57",
+  "manifest_sha256": "98fbe027c39ed85805e97ebacb1854bec075f7f31837388d6fa4c2b0fbf2d78b",
+  "mapping_sha256": "e628b126377820690f9c6fc46197b1f52798b302c4146a6676f3e5bf185c7762",
+  "member_count": 32,
+  "moves": [
+    {
+      "old_path": "P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/mixed/two-rank-two/P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut/P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/one-three/P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md",
+      "new_path": "claims/p4/classifications/rank-two-triangle/nonresonant/cut-reduction/P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md"
+    },
+    {
+      "old_path": "P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/two-two/P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/rank-two-triangle/resonant/flat-full-kernel-collision/P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic/P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic/P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/rank-two-triangle/resonant/flat-projective-partner/P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/resonant/nonzero-additive-holonomy/P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md",
+      "new_path": "claims/p4/classifications/rank-two-triangle/resonant/affine-holonomy-reduction/P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md"
+    },
+    {
+      "old_path": "audit_p4_mixed_two_rank_two_triangle_obstruction.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/mixed/two-rank-two/audit_p4_mixed_two_rank_two_triangle_obstruction.py"
+    },
+    {
+      "old_path": "audit_p4_nonresonant_degenerate_cut_triangle_obstruction.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut/audit_p4_nonresonant_degenerate_cut_triangle_obstruction.py"
+    },
+    {
+      "old_path": "audit_p4_nonresonant_one_three_triangle_obstruction.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/one-three/audit_p4_nonresonant_one_three_triangle_obstruction.py"
+    },
+    {
+      "old_path": "audit_p4_nonresonant_two_two_triangle_obstruction.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/two-two/audit_p4_nonresonant_two_two_triangle_obstruction.py"
+    },
+    {
+      "old_path": "audit_p4_resonant_flat_full_kernel_collision.py",
+      "new_path": "claims/p4/classifications/rank-two-triangle/resonant/flat-full-kernel-collision/audit_p4_resonant_flat_full_kernel_collision.py"
+    },
+    {
+      "old_path": "audit_p4_resonant_flat_generic_binary_cubic.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic/audit_p4_resonant_flat_generic_binary_cubic.py"
+    },
+    {
+      "old_path": "audit_p4_resonant_flat_kernel_zero_binary_cubic.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic/audit_p4_resonant_flat_kernel_zero_binary_cubic.py"
+    },
+    {
+      "old_path": "audit_p4_resonant_flat_projective_partner.py",
+      "new_path": "claims/p4/classifications/rank-two-triangle/resonant/flat-projective-partner/audit_p4_resonant_flat_projective_partner.py"
+    },
+    {
+      "old_path": "audit_p4_resonant_nonzero_additive_holonomy_obstruction.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/resonant/nonzero-additive-holonomy/audit_p4_resonant_nonzero_additive_holonomy_obstruction.py"
+    },
+    {
+      "old_path": "audit_p4_resonant_rank_two_triangle_affine_holonomy.py",
+      "new_path": "claims/p4/classifications/rank-two-triangle/resonant/affine-holonomy-reduction/audit_p4_resonant_rank_two_triangle_affine_holonomy.py"
+    },
+    {
+      "old_path": "verify_p4_mixed_two_rank_two_triangle_obstruction.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/mixed/two-rank-two/verify_p4_mixed_two_rank_two_triangle_obstruction.py"
+    },
+    {
+      "old_path": "verify_p4_nonresonant_degenerate_cut_triangle_obstruction.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut/verify_p4_nonresonant_degenerate_cut_triangle_obstruction.py"
+    },
+    {
+      "old_path": "verify_p4_nonresonant_one_three_triangle_obstruction.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/one-three/verify_p4_nonresonant_one_three_triangle_obstruction.py"
+    },
+    {
+      "old_path": "verify_p4_nonresonant_rank_two_triangle_cut_reduction.py",
+      "new_path": "claims/p4/classifications/rank-two-triangle/nonresonant/cut-reduction/verify_p4_nonresonant_rank_two_triangle_cut_reduction.py"
+    },
+    {
+      "old_path": "verify_p4_nonresonant_two_two_triangle_obstruction.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/two-two/verify_p4_nonresonant_two_two_triangle_obstruction.py"
+    },
+    {
+      "old_path": "verify_p4_resonant_flat_full_kernel_collision.py",
+      "new_path": "claims/p4/classifications/rank-two-triangle/resonant/flat-full-kernel-collision/verify_p4_resonant_flat_full_kernel_collision.py"
+    },
+    {
+      "old_path": "verify_p4_resonant_flat_generic_binary_cubic.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic/verify_p4_resonant_flat_generic_binary_cubic.py"
+    },
+    {
+      "old_path": "verify_p4_resonant_flat_kernel_zero_binary_cubic.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic/verify_p4_resonant_flat_kernel_zero_binary_cubic.py"
+    },
+    {
+      "old_path": "verify_p4_resonant_flat_projective_partner.py",
+      "new_path": "claims/p4/classifications/rank-two-triangle/resonant/flat-projective-partner/verify_p4_resonant_flat_projective_partner.py"
+    },
+    {
+      "old_path": "verify_p4_resonant_nonzero_additive_holonomy_obstruction.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/resonant/nonzero-additive-holonomy/verify_p4_resonant_nonzero_additive_holonomy_obstruction.py"
+    },
+    {
+      "old_path": "verify_p4_resonant_rank_two_triangle_affine_holonomy.py",
+      "new_path": "claims/p4/classifications/rank-two-triangle/resonant/affine-holonomy-reduction/verify_p4_resonant_rank_two_triangle_affine_holonomy.py"
+    }
+  ],
+  "rationale": "Stage 8: the live resonant/nonresonant rank-two-triangle spine. 11 packages (4 classification \u2014 the cut reduction, the affine-holonomy reduction, and the two flat classifications \u2014 plus 7 boundary obstruction packages across the nonresonant, resonant, and mixed branches) move from the root into claims/p4/classifications/rank-two-triangle/<branch>/<package>/ and claims/p4/boundaries/rank-two-triangle/<branch>/<package>/. This stage preserves a live theorem chain while keeping its two withdrawn historical neighbors visible and distinct: both withdrawn artifacts (the overstrong resonant flat classification and the mixed triangle pending Borel audit) stay at root with their claims/legacy/ proposals and are NOT batch members. The classifier's classifications/boundaries bucketing agreed with human ownership review for every package (zero reassignments).",
+  "notes": "Lineage: mixed/two-rank-two supersedes the withdrawn pending-Borel-audit artifact; flat-generic-binary-cubic and flat-kernel-zero-binary-cubic are the valid successors named by the withdrawn overstrong classification. The rank-two-relation-triangle-corrected package (Stage 5, triangle-211) is the recovered complete Borel classification and stays stable. cut-reduction has no independent audit and affine-holonomy uses shortened script stems \u2014 both documented states. Source classifier families: 27 p4/boundaries + 5 p4/classifications.",
+  "packages": [
+    "p4/classifications/rank-two-triangle/nonresonant/cut-reduction",
+    "p4/classifications/rank-two-triangle/resonant/affine-holonomy-reduction",
+    "p4/classifications/rank-two-triangle/resonant/flat-full-kernel-collision",
+    "p4/classifications/rank-two-triangle/resonant/flat-projective-partner",
+    "p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut",
+    "p4/boundaries/rank-two-triangle/nonresonant/one-three",
+    "p4/boundaries/rank-two-triangle/nonresonant/two-two",
+    "p4/boundaries/rank-two-triangle/resonant/nonzero-additive-holonomy",
+    "p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic",
+    "p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic",
+    "p4/boundaries/rank-two-triangle/mixed/two-rank-two"
+  ]
+}

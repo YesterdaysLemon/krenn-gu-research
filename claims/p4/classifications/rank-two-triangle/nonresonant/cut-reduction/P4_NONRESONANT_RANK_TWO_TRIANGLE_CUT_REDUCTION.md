@@ -95,15 +95,15 @@ for three discrete `1+3`/`2+2` cuts and their rank-one weights.
 
 The full-support case in which all three bridges have type `1+3` has
 since been excluded in
-[`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md).
+[`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](../../../../boundaries/rank-two-triangle/nonresonant/one-three/P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md).
 The factorization sheets force all three singleton labels to agree,
 which suspends a pure `P_3` restriction and drops every triangle pair
 rank to at most two.  A companion hyperbolic-block theorem excludes
 every full-support cycle containing a `2+2` bridge:
-[`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md).
+[`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](../../../../boundaries/rank-two-triangle/nonresonant/two-two/P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md).
 A final coordinate-support theorem excludes the one-edge and
 two-edge bridge boundaries:
-[`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md).
+[`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](../../../../boundaries/rank-two-triangle/nonresonant/degenerate-cut/P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md).
 Thus the complete nonresonant triangle is empty.  This does **not**
 classify the resonant divisor `Omega=0`, prove that the nine known
 pure-`P_4` components are exhaustive, or settle the global
@@ -111,7 +111,7 @@ Krenn--Gu conjecture.
 
 The resonant divisor has since been reduced to an affine-holonomy
 dichotomy in
-[`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md):
+[`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](../../resonant/affine-holonomy-reduction/P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md):
 nonzero additive holonomy gives a tangent-Segre first jet and a cyclic
 kernel-cut system, while zero additive holonomy gives a compressed
 binary-cubic map.  Those two incidences remain unresolved.
@@ -348,7 +348,7 @@ representative `1+3`/`2+2` cut normal forms:
 
 ```text
 uv run --with sympy \
-  python verify_p4_nonresonant_rank_two_triangle_cut_reduction.py
+  python claims/p4/classifications/rank-two-triangle/nonresonant/cut-reduction/verify_p4_nonresonant_rank_two_triangle_cut_reduction.py
 ```
 
 It is not a search and is not a substitute for the proof.
@@ -356,10 +356,10 @@ It is not a search and is not a substitute for the proof.
 The next symbolic compatible-label step is replayed by:
 
 ```text
-python verify_p4_nonresonant_one_three_triangle_obstruction.py
-python audit_p4_nonresonant_one_three_triangle_obstruction.py
-python verify_p4_nonresonant_two_two_triangle_obstruction.py
-python audit_p4_nonresonant_two_two_triangle_obstruction.py
-python verify_p4_nonresonant_degenerate_cut_triangle_obstruction.py
-python audit_p4_nonresonant_degenerate_cut_triangle_obstruction.py
+python claims/p4/boundaries/rank-two-triangle/nonresonant/one-three/verify_p4_nonresonant_one_three_triangle_obstruction.py
+python claims/p4/boundaries/rank-two-triangle/nonresonant/one-three/audit_p4_nonresonant_one_three_triangle_obstruction.py
+python claims/p4/boundaries/rank-two-triangle/nonresonant/two-two/verify_p4_nonresonant_two_two_triangle_obstruction.py
+python claims/p4/boundaries/rank-two-triangle/nonresonant/two-two/audit_p4_nonresonant_two_two_triangle_obstruction.py
+python claims/p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut/verify_p4_nonresonant_degenerate_cut_triangle_obstruction.py
+python claims/p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut/audit_p4_nonresonant_degenerate_cut_triangle_obstruction.py
 ```

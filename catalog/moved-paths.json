@@ -16,16 +16,16 @@
   },
   "counts": {
     "total_classified_moves": 2015,
-    "moved": 207,
+    "moved": 239,
     "pilot": 0,
     "proposed_high_confidence": 361,
-    "review_required": 1447,
+    "review_required": 1415,
     "unclassified": 348,
     "root_files_before": 2363,
     "root_dirs_before": 3,
     "root_entries_before": 2366,
-    "projected_root_if_moved_only": 2165,
-    "projected_root_if_high_confidence_batches_executed": 1804,
+    "projected_root_if_moved_only": 2133,
+    "projected_root_if_high_confidence_batches_executed": 1772,
     "projected_root_if_all_classified_executed": 357,
     "projection_note": "unclassified files are not members of any move set, so every projection already leaves them at the root; do not add unclassified again",
     "collisions": 0,
@@ -3182,64 +3182,8 @@
       "confidence": "medium"
     },
     {
-      "old_path": "P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md",
-      "new_path": "claims/p4/boundaries/P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md",
-      "reason": "claim_document -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "medium"
-    },
-    {
-      "old_path": "P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md",
-      "new_path": "claims/p4/boundaries/P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md",
-      "reason": "claim_document -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "medium"
-    },
-    {
-      "old_path": "P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md",
-      "new_path": "claims/p4/boundaries/P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md",
-      "reason": "claim_document -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "medium"
-    },
-    {
-      "old_path": "P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md",
-      "new_path": "claims/p4/boundaries/P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md",
-      "reason": "claim_document -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "medium"
-    },
-    {
       "old_path": "P4_RADICAL_CROSSED_211_TRIANGLE_OBSTRUCTION.md",
       "new_path": "claims/p4/boundaries/P4_RADICAL_CROSSED_211_TRIANGLE_OBSTRUCTION.md",
-      "reason": "claim_document -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "medium"
-    },
-    {
-      "old_path": "P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md",
-      "new_path": "claims/p4/boundaries/P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md",
-      "reason": "claim_document -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
-      "old_path": "P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md",
-      "new_path": "claims/p4/boundaries/P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md",
-      "reason": "claim_document -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
-      "old_path": "P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md",
-      "new_path": "claims/p4/boundaries/P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md",
       "reason": "claim_document -> p4/boundaries",
       "status": "review_required",
       "claim_family": "p4/boundaries",
@@ -3294,40 +3238,8 @@
       "confidence": "low"
     },
     {
-      "old_path": "audit_p4_mixed_two_rank_two_triangle_obstruction.py",
-      "new_path": "claims/p4/boundaries/audit_p4_mixed_two_rank_two_triangle_obstruction.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
       "old_path": "audit_p4_mixed_two_rank_two_triangle_obstruction_withdrawn_pending_borel_audit.py",
       "new_path": "claims/p4/boundaries/audit_p4_mixed_two_rank_two_triangle_obstruction_withdrawn_pending_borel_audit.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
-      "old_path": "audit_p4_nonresonant_degenerate_cut_triangle_obstruction.py",
-      "new_path": "claims/p4/boundaries/audit_p4_nonresonant_degenerate_cut_triangle_obstruction.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
-      "old_path": "audit_p4_nonresonant_one_three_triangle_obstruction.py",
-      "new_path": "claims/p4/boundaries/audit_p4_nonresonant_one_three_triangle_obstruction.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
-      "old_path": "audit_p4_nonresonant_two_two_triangle_obstruction.py",
-      "new_path": "claims/p4/boundaries/audit_p4_nonresonant_two_two_triangle_obstruction.py",
       "reason": "claim_script -> p4/boundaries",
       "status": "review_required",
       "claim_family": "p4/boundaries",
@@ -3344,54 +3256,6 @@
     {
       "old_path": "audit_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py",
       "new_path": "claims/p4/boundaries/audit_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
-      "old_path": "audit_p4_resonant_flat_full_kernel_collision.py",
-      "new_path": "claims/p4/boundaries/audit_p4_resonant_flat_full_kernel_collision.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
-      "old_path": "audit_p4_resonant_flat_generic_binary_cubic.py",
-      "new_path": "claims/p4/boundaries/audit_p4_resonant_flat_generic_binary_cubic.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
-      "old_path": "audit_p4_resonant_flat_kernel_zero_binary_cubic.py",
-      "new_path": "claims/p4/boundaries/audit_p4_resonant_flat_kernel_zero_binary_cubic.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
-      "old_path": "audit_p4_resonant_flat_projective_partner.py",
-      "new_path": "claims/p4/boundaries/audit_p4_resonant_flat_projective_partner.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
-      "old_path": "audit_p4_resonant_nonzero_additive_holonomy_obstruction.py",
-      "new_path": "claims/p4/boundaries/audit_p4_resonant_nonzero_additive_holonomy_obstruction.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
-      "old_path": "audit_p4_resonant_rank_two_triangle_affine_holonomy.py",
-      "new_path": "claims/p4/boundaries/audit_p4_resonant_rank_two_triangle_affine_holonomy.py",
       "reason": "claim_script -> p4/boundaries",
       "status": "review_required",
       "claim_family": "p4/boundaries",
@@ -3452,6 +3316,195 @@
       "executed_batch": "p4-pair-geometry-stage7"
     },
     {
+      "old_path": "P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/mixed/two-rank-two/P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md",
+      "reason": "claim_document -> p4/boundaries/rank-two-triangle/mixed/two-rank-two",
+      "status": "moved",
+      "claim_family": "p4/boundaries/rank-two-triangle/mixed/two-rank-two",
+      "confidence": "medium",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "audit_p4_mixed_two_rank_two_triangle_obstruction.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/mixed/two-rank-two/audit_p4_mixed_two_rank_two_triangle_obstruction.py",
+      "reason": "claim_script -> p4/boundaries/rank-two-triangle/mixed/two-rank-two",
+      "status": "moved",
+      "claim_family": "p4/boundaries/rank-two-triangle/mixed/two-rank-two",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "verify_p4_mixed_two_rank_two_triangle_obstruction.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/mixed/two-rank-two/verify_p4_mixed_two_rank_two_triangle_obstruction.py",
+      "reason": "claim_script -> p4/boundaries/rank-two-triangle/mixed/two-rank-two",
+      "status": "moved",
+      "claim_family": "p4/boundaries/rank-two-triangle/mixed/two-rank-two",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut/P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md",
+      "reason": "claim_document -> p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut",
+      "status": "moved",
+      "claim_family": "p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut",
+      "confidence": "medium",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "audit_p4_nonresonant_degenerate_cut_triangle_obstruction.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut/audit_p4_nonresonant_degenerate_cut_triangle_obstruction.py",
+      "reason": "claim_script -> p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut",
+      "status": "moved",
+      "claim_family": "p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "verify_p4_nonresonant_degenerate_cut_triangle_obstruction.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut/verify_p4_nonresonant_degenerate_cut_triangle_obstruction.py",
+      "reason": "claim_script -> p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut",
+      "status": "moved",
+      "claim_family": "p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/one-three/P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md",
+      "reason": "claim_document -> p4/boundaries/rank-two-triangle/nonresonant/one-three",
+      "status": "moved",
+      "claim_family": "p4/boundaries/rank-two-triangle/nonresonant/one-three",
+      "confidence": "medium",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "audit_p4_nonresonant_one_three_triangle_obstruction.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/one-three/audit_p4_nonresonant_one_three_triangle_obstruction.py",
+      "reason": "claim_script -> p4/boundaries/rank-two-triangle/nonresonant/one-three",
+      "status": "moved",
+      "claim_family": "p4/boundaries/rank-two-triangle/nonresonant/one-three",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "verify_p4_nonresonant_one_three_triangle_obstruction.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/one-three/verify_p4_nonresonant_one_three_triangle_obstruction.py",
+      "reason": "claim_script -> p4/boundaries/rank-two-triangle/nonresonant/one-three",
+      "status": "moved",
+      "claim_family": "p4/boundaries/rank-two-triangle/nonresonant/one-three",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/two-two/P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md",
+      "reason": "claim_document -> p4/boundaries/rank-two-triangle/nonresonant/two-two",
+      "status": "moved",
+      "claim_family": "p4/boundaries/rank-two-triangle/nonresonant/two-two",
+      "confidence": "medium",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "audit_p4_nonresonant_two_two_triangle_obstruction.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/two-two/audit_p4_nonresonant_two_two_triangle_obstruction.py",
+      "reason": "claim_script -> p4/boundaries/rank-two-triangle/nonresonant/two-two",
+      "status": "moved",
+      "claim_family": "p4/boundaries/rank-two-triangle/nonresonant/two-two",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "verify_p4_nonresonant_two_two_triangle_obstruction.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/two-two/verify_p4_nonresonant_two_two_triangle_obstruction.py",
+      "reason": "claim_script -> p4/boundaries/rank-two-triangle/nonresonant/two-two",
+      "status": "moved",
+      "claim_family": "p4/boundaries/rank-two-triangle/nonresonant/two-two",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic/P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md",
+      "reason": "claim_document -> p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic",
+      "status": "moved",
+      "claim_family": "p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "audit_p4_resonant_flat_generic_binary_cubic.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic/audit_p4_resonant_flat_generic_binary_cubic.py",
+      "reason": "claim_script -> p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic",
+      "status": "moved",
+      "claim_family": "p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "verify_p4_resonant_flat_generic_binary_cubic.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic/verify_p4_resonant_flat_generic_binary_cubic.py",
+      "reason": "claim_script -> p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic",
+      "status": "moved",
+      "claim_family": "p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic/P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md",
+      "reason": "claim_document -> p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic",
+      "status": "moved",
+      "claim_family": "p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "audit_p4_resonant_flat_kernel_zero_binary_cubic.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic/audit_p4_resonant_flat_kernel_zero_binary_cubic.py",
+      "reason": "claim_script -> p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic",
+      "status": "moved",
+      "claim_family": "p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "verify_p4_resonant_flat_kernel_zero_binary_cubic.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic/verify_p4_resonant_flat_kernel_zero_binary_cubic.py",
+      "reason": "claim_script -> p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic",
+      "status": "moved",
+      "claim_family": "p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/resonant/nonzero-additive-holonomy/P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md",
+      "reason": "claim_document -> p4/boundaries/rank-two-triangle/resonant/nonzero-additive-holonomy",
+      "status": "moved",
+      "claim_family": "p4/boundaries/rank-two-triangle/resonant/nonzero-additive-holonomy",
+      "confidence": "medium",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "audit_p4_resonant_nonzero_additive_holonomy_obstruction.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/resonant/nonzero-additive-holonomy/audit_p4_resonant_nonzero_additive_holonomy_obstruction.py",
+      "reason": "claim_script -> p4/boundaries/rank-two-triangle/resonant/nonzero-additive-holonomy",
+      "status": "moved",
+      "claim_family": "p4/boundaries/rank-two-triangle/resonant/nonzero-additive-holonomy",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "verify_p4_resonant_nonzero_additive_holonomy_obstruction.py",
+      "new_path": "claims/p4/boundaries/rank-two-triangle/resonant/nonzero-additive-holonomy/verify_p4_resonant_nonzero_additive_holonomy_obstruction.py",
+      "reason": "claim_script -> p4/boundaries/rank-two-triangle/resonant/nonzero-additive-holonomy",
+      "status": "moved",
+      "claim_family": "p4/boundaries/rank-two-triangle/resonant/nonzero-additive-holonomy",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
       "old_path": "verify_p4_common_active_binary_triangle_p_plus_q_boundary.py",
       "new_path": "claims/p4/boundaries/verify_p4_common_active_binary_triangle_p_plus_q_boundary.py",
       "reason": "claim_script -> p4/boundaries",
@@ -3508,40 +3561,8 @@
       "confidence": "low"
     },
     {
-      "old_path": "verify_p4_mixed_two_rank_two_triangle_obstruction.py",
-      "new_path": "claims/p4/boundaries/verify_p4_mixed_two_rank_two_triangle_obstruction.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
       "old_path": "verify_p4_mixed_two_rank_two_triangle_obstruction_withdrawn_pending_borel_audit.py",
       "new_path": "claims/p4/boundaries/verify_p4_mixed_two_rank_two_triangle_obstruction_withdrawn_pending_borel_audit.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
-      "old_path": "verify_p4_nonresonant_degenerate_cut_triangle_obstruction.py",
-      "new_path": "claims/p4/boundaries/verify_p4_nonresonant_degenerate_cut_triangle_obstruction.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
-      "old_path": "verify_p4_nonresonant_one_three_triangle_obstruction.py",
-      "new_path": "claims/p4/boundaries/verify_p4_nonresonant_one_three_triangle_obstruction.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
-      "old_path": "verify_p4_nonresonant_two_two_triangle_obstruction.py",
-      "new_path": "claims/p4/boundaries/verify_p4_nonresonant_two_two_triangle_obstruction.py",
       "reason": "claim_script -> p4/boundaries",
       "status": "review_required",
       "claim_family": "p4/boundaries",
@@ -3558,54 +3579,6 @@
     {
       "old_path": "verify_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py",
       "new_path": "claims/p4/boundaries/verify_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
-      "old_path": "verify_p4_resonant_flat_full_kernel_collision.py",
-      "new_path": "claims/p4/boundaries/verify_p4_resonant_flat_full_kernel_collision.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
-      "old_path": "verify_p4_resonant_flat_generic_binary_cubic.py",
-      "new_path": "claims/p4/boundaries/verify_p4_resonant_flat_generic_binary_cubic.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
-      "old_path": "verify_p4_resonant_flat_kernel_zero_binary_cubic.py",
-      "new_path": "claims/p4/boundaries/verify_p4_resonant_flat_kernel_zero_binary_cubic.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
-      "old_path": "verify_p4_resonant_flat_projective_partner.py",
-      "new_path": "claims/p4/boundaries/verify_p4_resonant_flat_projective_partner.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
-      "old_path": "verify_p4_resonant_nonzero_additive_holonomy_obstruction.py",
-      "new_path": "claims/p4/boundaries/verify_p4_resonant_nonzero_additive_holonomy_obstruction.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
-      "old_path": "verify_p4_resonant_rank_two_triangle_affine_holonomy.py",
-      "new_path": "claims/p4/boundaries/verify_p4_resonant_rank_two_triangle_affine_holonomy.py",
       "reason": "claim_script -> p4/boundaries",
       "status": "review_required",
       "claim_family": "p4/boundaries",
@@ -3732,14 +3705,6 @@
       "confidence": "medium"
     },
     {
-      "old_path": "P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md",
-      "new_path": "claims/p4/classifications/P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md",
-      "reason": "claim_document -> p4/classifications",
-      "status": "review_required",
-      "claim_family": "p4/classifications",
-      "confidence": "medium"
-    },
-    {
       "old_path": "P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md",
       "new_path": "claims/p4/classifications/P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md",
       "reason": "claim_document -> p4/classifications",
@@ -3754,30 +3719,6 @@
       "status": "review_required",
       "claim_family": "p4/classifications",
       "confidence": "medium"
-    },
-    {
-      "old_path": "P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md",
-      "new_path": "claims/p4/classifications/P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md",
-      "reason": "claim_document -> p4/classifications",
-      "status": "review_required",
-      "claim_family": "p4/classifications",
-      "confidence": "low"
-    },
-    {
-      "old_path": "P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md",
-      "new_path": "claims/p4/classifications/P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md",
-      "reason": "claim_document -> p4/classifications",
-      "status": "review_required",
-      "claim_family": "p4/classifications",
-      "confidence": "low"
-    },
-    {
-      "old_path": "P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md",
-      "new_path": "claims/p4/classifications/P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md",
-      "reason": "claim_document -> p4/classifications",
-      "status": "review_required",
-      "claim_family": "p4/classifications",
-      "confidence": "low"
     },
     {
       "old_path": "P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md",
@@ -4270,6 +4211,105 @@
       "claim_family": "p4/classifications/pair-geometry/tangent-rank-two-pair-purity",
       "confidence": "low",
       "executed_batch": "p4-pair-geometry-stage7"
+    },
+    {
+      "old_path": "P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md",
+      "new_path": "claims/p4/classifications/rank-two-triangle/nonresonant/cut-reduction/P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md",
+      "reason": "claim_document -> p4/classifications/rank-two-triangle/nonresonant/cut-reduction",
+      "status": "moved",
+      "claim_family": "p4/classifications/rank-two-triangle/nonresonant/cut-reduction",
+      "confidence": "medium",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "verify_p4_nonresonant_rank_two_triangle_cut_reduction.py",
+      "new_path": "claims/p4/classifications/rank-two-triangle/nonresonant/cut-reduction/verify_p4_nonresonant_rank_two_triangle_cut_reduction.py",
+      "reason": "claim_script -> p4/classifications/rank-two-triangle/nonresonant/cut-reduction",
+      "status": "moved",
+      "claim_family": "p4/classifications/rank-two-triangle/nonresonant/cut-reduction",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md",
+      "new_path": "claims/p4/classifications/rank-two-triangle/resonant/affine-holonomy-reduction/P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md",
+      "reason": "claim_document -> p4/classifications/rank-two-triangle/resonant/affine-holonomy-reduction",
+      "status": "moved",
+      "claim_family": "p4/classifications/rank-two-triangle/resonant/affine-holonomy-reduction",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "audit_p4_resonant_rank_two_triangle_affine_holonomy.py",
+      "new_path": "claims/p4/classifications/rank-two-triangle/resonant/affine-holonomy-reduction/audit_p4_resonant_rank_two_triangle_affine_holonomy.py",
+      "reason": "claim_script -> p4/classifications/rank-two-triangle/resonant/affine-holonomy-reduction",
+      "status": "moved",
+      "claim_family": "p4/classifications/rank-two-triangle/resonant/affine-holonomy-reduction",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "verify_p4_resonant_rank_two_triangle_affine_holonomy.py",
+      "new_path": "claims/p4/classifications/rank-two-triangle/resonant/affine-holonomy-reduction/verify_p4_resonant_rank_two_triangle_affine_holonomy.py",
+      "reason": "claim_script -> p4/classifications/rank-two-triangle/resonant/affine-holonomy-reduction",
+      "status": "moved",
+      "claim_family": "p4/classifications/rank-two-triangle/resonant/affine-holonomy-reduction",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/rank-two-triangle/resonant/flat-full-kernel-collision/P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md",
+      "reason": "claim_document -> p4/classifications/rank-two-triangle/resonant/flat-full-kernel-collision",
+      "status": "moved",
+      "claim_family": "p4/classifications/rank-two-triangle/resonant/flat-full-kernel-collision",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "audit_p4_resonant_flat_full_kernel_collision.py",
+      "new_path": "claims/p4/classifications/rank-two-triangle/resonant/flat-full-kernel-collision/audit_p4_resonant_flat_full_kernel_collision.py",
+      "reason": "claim_script -> p4/classifications/rank-two-triangle/resonant/flat-full-kernel-collision",
+      "status": "moved",
+      "claim_family": "p4/classifications/rank-two-triangle/resonant/flat-full-kernel-collision",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "verify_p4_resonant_flat_full_kernel_collision.py",
+      "new_path": "claims/p4/classifications/rank-two-triangle/resonant/flat-full-kernel-collision/verify_p4_resonant_flat_full_kernel_collision.py",
+      "reason": "claim_script -> p4/classifications/rank-two-triangle/resonant/flat-full-kernel-collision",
+      "status": "moved",
+      "claim_family": "p4/classifications/rank-two-triangle/resonant/flat-full-kernel-collision",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/rank-two-triangle/resonant/flat-projective-partner/P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md",
+      "reason": "claim_document -> p4/classifications/rank-two-triangle/resonant/flat-projective-partner",
+      "status": "moved",
+      "claim_family": "p4/classifications/rank-two-triangle/resonant/flat-projective-partner",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "audit_p4_resonant_flat_projective_partner.py",
+      "new_path": "claims/p4/classifications/rank-two-triangle/resonant/flat-projective-partner/audit_p4_resonant_flat_projective_partner.py",
+      "reason": "claim_script -> p4/classifications/rank-two-triangle/resonant/flat-projective-partner",
+      "status": "moved",
+      "claim_family": "p4/classifications/rank-two-triangle/resonant/flat-projective-partner",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
+    },
+    {
+      "old_path": "verify_p4_resonant_flat_projective_partner.py",
+      "new_path": "claims/p4/classifications/rank-two-triangle/resonant/flat-projective-partner/verify_p4_resonant_flat_projective_partner.py",
+      "reason": "claim_script -> p4/classifications/rank-two-triangle/resonant/flat-projective-partner",
+      "status": "moved",
+      "claim_family": "p4/classifications/rank-two-triangle/resonant/flat-projective-partner",
+      "confidence": "low",
+      "executed_batch": "p4-rank-two-triangle-stage8"
     },
     {
       "old_path": "P4_ALL_CENTER_KERNEL_STAR_111_OBSTRUCTION.md",
@@ -5208,14 +5248,6 @@
     {
       "old_path": "verify_p4_mixed_determinantal_prime_classification.py",
       "new_path": "claims/p4/classifications/verify_p4_mixed_determinantal_prime_classification.py",
-      "reason": "claim_script -> p4/classifications",
-      "status": "review_required",
-      "claim_family": "p4/classifications",
-      "confidence": "low"
-    },
-    {
-      "old_path": "verify_p4_nonresonant_rank_two_triangle_cut_reduction.py",
-      "new_path": "claims/p4/classifications/verify_p4_nonresonant_rank_two_triangle_cut_reduction.py",
       "reason": "claim_script -> p4/classifications",
       "status": "review_required",
       "claim_family": "p4/classifications",

@@ -5856,13 +5856,14 @@
     },
     {
       "old_path": "P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md",
-      "proposed_path": "claims/p4/boundaries/P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md",
+      "proposed_path": "claims/p4/boundaries/rank-two-triangle/mixed/two-rank-two/P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md",
       "category": "claim_document",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/rank-two-triangle/mixed/two-rank-two",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
-        "part of verify/audit triple"
+        "part of verify/audit triple",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
@@ -5877,46 +5878,50 @@
     },
     {
       "old_path": "P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md",
-      "proposed_path": "claims/p4/boundaries/P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md",
+      "proposed_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut/P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md",
       "category": "claim_document",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
-        "part of verify/audit triple"
+        "part of verify/audit triple",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
       "old_path": "P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md",
-      "proposed_path": "claims/p4/boundaries/P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md",
+      "proposed_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/one-three/P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md",
       "category": "claim_document",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/rank-two-triangle/nonresonant/one-three",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
-        "part of verify/audit triple"
+        "part of verify/audit triple",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
       "old_path": "P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md",
-      "proposed_path": "claims/p4/classifications/P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md",
+      "proposed_path": "claims/p4/classifications/rank-two-triangle/nonresonant/cut-reduction/P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md",
       "category": "claim_document",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/rank-two-triangle/nonresonant/cut-reduction",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
-        "part of verify/audit triple"
+        "part of verify/audit triple",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
       "old_path": "P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md",
-      "proposed_path": "claims/p4/boundaries/P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md",
+      "proposed_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/two-two/P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md",
       "category": "claim_document",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/rank-two-triangle/nonresonant/two-two",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
-        "part of verify/audit triple"
+        "part of verify/audit triple",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
@@ -6107,42 +6112,46 @@
     },
     {
       "old_path": "P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md",
-      "proposed_path": "claims/p4/classifications/P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md",
+      "proposed_path": "claims/p4/classifications/rank-two-triangle/resonant/flat-full-kernel-collision/P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md",
       "category": "claim_document",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/rank-two-triangle/resonant/flat-full-kernel-collision",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
       "old_path": "P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md",
-      "proposed_path": "claims/p4/boundaries/P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md",
+      "proposed_path": "claims/p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic/P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md",
       "category": "claim_document",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
       "old_path": "P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md",
-      "proposed_path": "claims/p4/boundaries/P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md",
+      "proposed_path": "claims/p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic/P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md",
       "category": "claim_document",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
       "old_path": "P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md",
-      "proposed_path": "claims/p4/classifications/P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md",
+      "proposed_path": "claims/p4/classifications/rank-two-triangle/resonant/flat-projective-partner/P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md",
       "category": "claim_document",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/rank-two-triangle/resonant/flat-projective-partner",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
@@ -6157,23 +6166,25 @@
     },
     {
       "old_path": "P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md",
-      "proposed_path": "claims/p4/boundaries/P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md",
+      "proposed_path": "claims/p4/boundaries/rank-two-triangle/resonant/nonzero-additive-holonomy/P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md",
       "category": "claim_document",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/rank-two-triangle/resonant/nonzero-additive-holonomy",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
-        "part of verify/audit triple"
+        "part of verify/audit triple",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
       "old_path": "P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md",
-      "proposed_path": "claims/p4/classifications/P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md",
+      "proposed_path": "claims/p4/classifications/rank-two-triangle/resonant/affine-holonomy-reduction/P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md",
       "category": "claim_document",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/rank-two-triangle/resonant/affine-holonomy-reduction",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
@@ -12667,12 +12678,13 @@
     },
     {
       "old_path": "audit_p4_mixed_two_rank_two_triangle_obstruction.py",
-      "proposed_path": "claims/p4/boundaries/audit_p4_mixed_two_rank_two_triangle_obstruction.py",
+      "proposed_path": "claims/p4/boundaries/rank-two-triangle/mixed/two-rank-two/audit_p4_mixed_two_rank_two_triangle_obstruction.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/rank-two-triangle/mixed/two-rank-two",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
@@ -12698,32 +12710,35 @@
     },
     {
       "old_path": "audit_p4_nonresonant_degenerate_cut_triangle_obstruction.py",
-      "proposed_path": "claims/p4/boundaries/audit_p4_nonresonant_degenerate_cut_triangle_obstruction.py",
+      "proposed_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut/audit_p4_nonresonant_degenerate_cut_triangle_obstruction.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
       "old_path": "audit_p4_nonresonant_one_three_triangle_obstruction.py",
-      "proposed_path": "claims/p4/boundaries/audit_p4_nonresonant_one_three_triangle_obstruction.py",
+      "proposed_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/one-three/audit_p4_nonresonant_one_three_triangle_obstruction.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/rank-two-triangle/nonresonant/one-three",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
       "old_path": "audit_p4_nonresonant_two_two_triangle_obstruction.py",
-      "proposed_path": "claims/p4/boundaries/audit_p4_nonresonant_two_two_triangle_obstruction.py",
+      "proposed_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/two-two/audit_p4_nonresonant_two_two_triangle_obstruction.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/rank-two-triangle/nonresonant/two-two",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
@@ -12869,42 +12884,46 @@
     },
     {
       "old_path": "audit_p4_resonant_flat_full_kernel_collision.py",
-      "proposed_path": "claims/p4/boundaries/audit_p4_resonant_flat_full_kernel_collision.py",
+      "proposed_path": "claims/p4/classifications/rank-two-triangle/resonant/flat-full-kernel-collision/audit_p4_resonant_flat_full_kernel_collision.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/classifications/rank-two-triangle/resonant/flat-full-kernel-collision",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
       "old_path": "audit_p4_resonant_flat_generic_binary_cubic.py",
-      "proposed_path": "claims/p4/boundaries/audit_p4_resonant_flat_generic_binary_cubic.py",
+      "proposed_path": "claims/p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic/audit_p4_resonant_flat_generic_binary_cubic.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
       "old_path": "audit_p4_resonant_flat_kernel_zero_binary_cubic.py",
-      "proposed_path": "claims/p4/boundaries/audit_p4_resonant_flat_kernel_zero_binary_cubic.py",
+      "proposed_path": "claims/p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic/audit_p4_resonant_flat_kernel_zero_binary_cubic.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
       "old_path": "audit_p4_resonant_flat_projective_partner.py",
-      "proposed_path": "claims/p4/boundaries/audit_p4_resonant_flat_projective_partner.py",
+      "proposed_path": "claims/p4/classifications/rank-two-triangle/resonant/flat-projective-partner/audit_p4_resonant_flat_projective_partner.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/classifications/rank-two-triangle/resonant/flat-projective-partner",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
@@ -12919,22 +12938,24 @@
     },
     {
       "old_path": "audit_p4_resonant_nonzero_additive_holonomy_obstruction.py",
-      "proposed_path": "claims/p4/boundaries/audit_p4_resonant_nonzero_additive_holonomy_obstruction.py",
+      "proposed_path": "claims/p4/boundaries/rank-two-triangle/resonant/nonzero-additive-holonomy/audit_p4_resonant_nonzero_additive_holonomy_obstruction.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/rank-two-triangle/resonant/nonzero-additive-holonomy",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
       "old_path": "audit_p4_resonant_rank_two_triangle_affine_holonomy.py",
-      "proposed_path": "claims/p4/boundaries/audit_p4_resonant_rank_two_triangle_affine_holonomy.py",
+      "proposed_path": "claims/p4/classifications/rank-two-triangle/resonant/affine-holonomy-reduction/audit_p4_resonant_rank_two_triangle_affine_holonomy.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/classifications/rank-two-triangle/resonant/affine-holonomy-reduction",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
@@ -19253,12 +19274,13 @@
     },
     {
       "old_path": "verify_p4_mixed_two_rank_two_triangle_obstruction.py",
-      "proposed_path": "claims/p4/boundaries/verify_p4_mixed_two_rank_two_triangle_obstruction.py",
+      "proposed_path": "claims/p4/boundaries/rank-two-triangle/mixed/two-rank-two/verify_p4_mixed_two_rank_two_triangle_obstruction.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/rank-two-triangle/mixed/two-rank-two",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
@@ -19284,42 +19306,46 @@
     },
     {
       "old_path": "verify_p4_nonresonant_degenerate_cut_triangle_obstruction.py",
-      "proposed_path": "claims/p4/boundaries/verify_p4_nonresonant_degenerate_cut_triangle_obstruction.py",
+      "proposed_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut/verify_p4_nonresonant_degenerate_cut_triangle_obstruction.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
       "old_path": "verify_p4_nonresonant_one_three_triangle_obstruction.py",
-      "proposed_path": "claims/p4/boundaries/verify_p4_nonresonant_one_three_triangle_obstruction.py",
+      "proposed_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/one-three/verify_p4_nonresonant_one_three_triangle_obstruction.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/rank-two-triangle/nonresonant/one-three",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
       "old_path": "verify_p4_nonresonant_rank_two_triangle_cut_reduction.py",
-      "proposed_path": "claims/p4/classifications/verify_p4_nonresonant_rank_two_triangle_cut_reduction.py",
+      "proposed_path": "claims/p4/classifications/rank-two-triangle/nonresonant/cut-reduction/verify_p4_nonresonant_rank_two_triangle_cut_reduction.py",
       "category": "claim_script",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/rank-two-triangle/nonresonant/cut-reduction",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
       "old_path": "verify_p4_nonresonant_two_two_triangle_obstruction.py",
-      "proposed_path": "claims/p4/boundaries/verify_p4_nonresonant_two_two_triangle_obstruction.py",
+      "proposed_path": "claims/p4/boundaries/rank-two-triangle/nonresonant/two-two/verify_p4_nonresonant_two_two_triangle_obstruction.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/rank-two-triangle/nonresonant/two-two",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
@@ -19477,42 +19503,46 @@
     },
     {
       "old_path": "verify_p4_resonant_flat_full_kernel_collision.py",
-      "proposed_path": "claims/p4/boundaries/verify_p4_resonant_flat_full_kernel_collision.py",
+      "proposed_path": "claims/p4/classifications/rank-two-triangle/resonant/flat-full-kernel-collision/verify_p4_resonant_flat_full_kernel_collision.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/classifications/rank-two-triangle/resonant/flat-full-kernel-collision",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
       "old_path": "verify_p4_resonant_flat_generic_binary_cubic.py",
-      "proposed_path": "claims/p4/boundaries/verify_p4_resonant_flat_generic_binary_cubic.py",
+      "proposed_path": "claims/p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic/verify_p4_resonant_flat_generic_binary_cubic.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
       "old_path": "verify_p4_resonant_flat_kernel_zero_binary_cubic.py",
-      "proposed_path": "claims/p4/boundaries/verify_p4_resonant_flat_kernel_zero_binary_cubic.py",
+      "proposed_path": "claims/p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic/verify_p4_resonant_flat_kernel_zero_binary_cubic.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
       "old_path": "verify_p4_resonant_flat_projective_partner.py",
-      "proposed_path": "claims/p4/boundaries/verify_p4_resonant_flat_projective_partner.py",
+      "proposed_path": "claims/p4/classifications/rank-two-triangle/resonant/flat-projective-partner/verify_p4_resonant_flat_projective_partner.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/classifications/rank-two-triangle/resonant/flat-projective-partner",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
@@ -19527,22 +19557,24 @@
     },
     {
       "old_path": "verify_p4_resonant_nonzero_additive_holonomy_obstruction.py",
-      "proposed_path": "claims/p4/boundaries/verify_p4_resonant_nonzero_additive_holonomy_obstruction.py",
+      "proposed_path": "claims/p4/boundaries/rank-two-triangle/resonant/nonzero-additive-holonomy/verify_p4_resonant_nonzero_additive_holonomy_obstruction.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/rank-two-triangle/resonant/nonzero-additive-holonomy",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {
       "old_path": "verify_p4_resonant_rank_two_triangle_affine_holonomy.py",
-      "proposed_path": "claims/p4/boundaries/verify_p4_resonant_rank_two_triangle_affine_holonomy.py",
+      "proposed_path": "claims/p4/classifications/rank-two-triangle/resonant/affine-holonomy-reduction/verify_p4_resonant_rank_two_triangle_affine_holonomy.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/classifications/rank-two-triangle/resonant/affine-holonomy-reduction",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage8_human_review: P4 rank-two-triangle live spine package"
       ]
     },
     {

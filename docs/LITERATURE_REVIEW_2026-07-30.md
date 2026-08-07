@@ -196,7 +196,7 @@ relate multiplicative local-system behavior to resonance loci of
 arrangements.  Neither paper contains the repository's obstruction,
 but together they suggest separating discrete cut labels from the
 holonomy divisor.  That separation yields
-[`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](../P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md):
+[`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](../claims/p4/boundaries/rank-two-triangle/nonresonant/one-three/P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md):
 a full `1+3` bridge factors either internally or by a fully supported
 sign reflection.  Coordinate-hyperplane annihilators exclude the
 reflection sheet, force all three singleton labels to agree, and then
@@ -208,14 +208,14 @@ language more literally.  A full cut `q=ab` has an anchor in every
 linear factorization, while every rank-three partner of
 `Ann(q)=span(a_bar,b_bar)` is an off-diagonal graph avoiding both
 anchors.  Their incidence is empty:
-[`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](../P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md).
+[`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](../claims/p4/boundaries/rank-two-triangle/nonresonant/two-two/P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md).
 Combined with the `1+3` theorem, this empties the entire full-support
 nonresonant triangle.  The support boundary itself has only one-edge
 and two-edge normal forms.  The first collapses the partner product to
 rank one; the second transports one coordinate hyperplane around the
 triangle and suspends a pure `P_3`, whose Poincare pairing forces rank
 at most two:
-[`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](../P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md).
+[`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](../claims/p4/boundaries/rank-two-triangle/nonresonant/degenerate-cut/P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md).
 Thus the complete nonresonant triangle is empty, leaving only trivial
 holonomy.
 
@@ -226,7 +226,7 @@ their unique cohomology class is
 tangent-Segre tensor and a cyclic system of kernel cuts; the zero
 class synchronizes the local bases and factors multiplication through
 `Sym^3(C^2) -> R_3`:
-[`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](../P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md).
+[`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](../claims/p4/classifications/rank-two-triangle/resonant/affine-holonomy-reduction/P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md).
 This is where arrangement local systems, tangent developables, and
 binary-form geometry meet the squarefree permanent problem.
 
@@ -275,7 +275,7 @@ formulation of the blocker hierarchy remains the arbitrary-order
 follow-up.
 
 That triangle translation has now produced a second exact reduction:
-[`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](../P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md).
+[`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](../claims/p4/classifications/rank-two-triangle/nonresonant/cut-reduction/P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md).
 The three rank-two relation matrices carry a multiplicative
 projective holonomy.  Away from the trivial-holonomy divisor, basis
 shifts remove their three constant terms and force all six mixed
@@ -421,7 +421,7 @@ Consequently the ninth component is now closed in full for `H31`.
 
 The same “translate before eliminate” principle now closes the
 nonzero additive-holonomy part of the resonant rank-two triangle:
-[`P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md`](../P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md).
+[`P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md`](../claims/p4/boundaries/rank-two-triangle/resonant/nonzero-additive-holonomy/P4_RESONANT_NONZERO_ADDITIVE_HOLONOMY_OBSTRUCTION.md).
 The affine connection first becomes a tangent-Segre jet; its three
 kernel-pair products then become cut quadrics.  The obstruction is
 not a tangent-rank calculation by itself.  It passes through the
@@ -486,13 +486,13 @@ matrix has a common biquadratic cofactor `F`; purity forces `F=0`,
 all `3 x 3` minors then vanish, and three small `K,J` minors prevent
 the compressed span from becoming a line.  This repairs the generic
 theorem without moving the flag:
-[`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](../P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md).
+[`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](../claims/p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic/P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md).
 The one-kernel-zero otherwise-distinct chart remains valid as a
 separate boundary theorem:
-[`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](../P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md).
+[`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](../claims/p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic/P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md).
 
 The projective pencil closure over the distinct-ratio center is now exact:
-[`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](../P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
+[`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](../claims/p4/classifications/rank-two-triangle/resonant/flat-projective-partner/P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md).
 With one partner at infinity, the pure binary-cubic incidence is the union
 of three rational curves.  In the marked affine ratios
 `(r_0,r_1,r_2,r_3)=(0,1,p,q)`, they are precisely
@@ -521,7 +521,7 @@ specific implication among them.
 
 The full-support collision strata now have an equally small foreign
 description:
-[`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](../P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
+[`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](../claims/p4/classifications/rank-two-triangle/resonant/flat-full-kernel-collision/P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
 For `2+1+1` and `3+1`, the synchronizer remains a pencil but its point at
 infinity is a rank-one local map.  Every admissible partner keeps one common
 active row, whose squarefree cube vanishes because its support has size at
@@ -589,7 +589,7 @@ constant.  None of the literature sources alone states the star
 obstruction in this marked squarefree setting.
 
 The mixed `(2,2,1)` triangle is now repaired by one further translation:
-[`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](../P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md).
+[`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md`](../claims/p4/boundaries/rank-two-triangle/mixed/two-rank-two/P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION.md).
 Two rank-two edges put both leaves in the center's synchronizer variety.  All
 ordinary two-dimensional pencils are totally isotropic, so their leaf edge
 already has an alternating, coefficient-rank-two relation.  The only new

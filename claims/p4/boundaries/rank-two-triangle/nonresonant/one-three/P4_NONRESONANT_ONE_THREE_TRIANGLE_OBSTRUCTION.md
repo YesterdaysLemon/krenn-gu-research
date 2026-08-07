@@ -4,7 +4,7 @@
 
 This is an exact characteristic-zero obstruction on the unresolved
 all-rank-two-relation triangle from
-[`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md).
+[`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](../../../../classifications/rank-two-triangle/nonresonant/cut-reduction/P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md).
 It is a symbolic support-and-pairing proof; no component search or
 elimination is used.
 
@@ -75,12 +75,12 @@ finish, component exhaustiveness or the global Krenn--Gu problem.
 
 Triangles containing a full-support `2+2` bridge are now excluded by
 the companion anchor/crossed-graph theorem
-[`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md).
+[`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](../two-two/P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md).
 Together, the two theorems empty the entire full-support nonresonant
 triangle.
 
 The one-edge and two-edge cut boundaries are now excluded in
-[`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md),
+[`P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md`](../degenerate-cut/P4_NONRESONANT_DEGENERATE_CUT_TRIANGLE_OBSTRUCTION.md),
 so the complete nonresonant triangle is empty.
 
 ## A factorization lemma for a triangle cut
@@ -255,13 +255,13 @@ Purity makes that flattening rank one.  Therefore `r_ij<=2`, proving
 If one deliberately drops the rank-three hypothesis at this last
 step, (18) lands in the complete pure-`P_3` sign-rectangle
 classification:
-[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md).
+[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](../../../../../../P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md).
 Allowing the fourth plane to supply coordinate `s` is precisely the
 six-dimensional suspension component in
-[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](claims/p4/components/embedded-p3/P4_EMBEDDED_P3_PURE_COMPONENT.md).
+[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](../../../../components/embedded-p3/P4_EMBEDDED_P3_PURE_COMPONENT.md).
 That component is not merely generically excluded from `H31`; its
 entire marked projective fibre is closed by
-[`P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md).
+[`P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md`](../../../../../../P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md).
 
 ## The neighboring mathematical languages
 
@@ -290,8 +290,8 @@ inequality.
 Run:
 
 ```text
-python verify_p4_nonresonant_one_three_triangle_obstruction.py
-python audit_p4_nonresonant_one_three_triangle_obstruction.py
+python claims/p4/boundaries/rank-two-triangle/nonresonant/one-three/verify_p4_nonresonant_one_three_triangle_obstruction.py
+python claims/p4/boundaries/rank-two-triangle/nonresonant/one-three/audit_p4_nonresonant_one_three_triangle_obstruction.py
 ```
 
 The primary verifier checks the catalecticant, the reflection identity
