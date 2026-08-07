@@ -1178,5 +1178,96 @@ class ExecutorFinalizeRegressionTests(unittest.TestCase):
         # created here by finalize_execution itself.
         self.assertFalse((tmp / "moved-paths.json").exists())
 
+
+class ExposeClaimPackageTests(unittest.TestCase):
+    """Stage 4: the single shared helper that exposes a moved claim
+    package (hyphenated directory, not a Python package) to legacy
+    bare-name imports.  Replaces the per-importer sys.path shims Stage 3
+    left for the moved disjoint-mixed-star package."""
+
+    def _import_helper(self):
+        import importlib.util
+        src = (pathlib.Path(__file__).resolve().parents[1]
+               / "src" / "krenn_gu" / "bootstrap.py")
+        spec = importlib.util.spec_from_file_location(
+            "kg_bootstrap_stage4", src)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        return mod
+
+    def _make_repo(self, tmp, package_rel):
+        # A marker file makes this dir discoverable as a repo root.
+        (tmp / "catalog").mkdir(parents=True, exist_ok=True)
+        (tmp / "catalog" / "theorem-ledger.json").write_text(
+            "{}", encoding="utf-8")
+        pkg = tmp / package_rel
+        pkg.mkdir(parents=True, exist_ok=True)
+        return pkg
+
+    def test_expose_adds_package_and_import_resolves(self):
+        mod = self._import_helper()
+        tmp = pathlib.Path(tempfile.mkdtemp())
+        rel = "claims/p4/components/disjoint-mixed-star"
+        pkg = self._make_repo(tmp, rel)
+        (pkg / "mod_under_test_stage4.py").write_text(
+            "VALUE = 42\n", encoding="utf-8")
+        import sys as _sys
+        try:
+            self.assertNotIn(str(pkg), _sys.path)
+            out = mod.expose_claim_package(tmp, rel)
+            self.assertEqual(out, pkg.resolve())
+            self.assertIn(str(pkg), _sys.path)
+            import mod_under_test_stage4 as m
+            self.assertEqual(m.VALUE, 42)
+        finally:
+            _sys.modules.pop("mod_under_test_stage4", None)
+            if str(pkg) in _sys.path:
+                _sys.path.remove(str(pkg))
+
+    def test_expose_is_idempotent(self):
+        mod = self._import_helper()
+        tmp = pathlib.Path(tempfile.mkdtemp())
+        rel = "claims/p4/components/split-pair"
+        pkg = self._make_repo(tmp, rel)
+        import sys as _sys
+        try:
+            mod.expose_claim_package(tmp, rel)
+            mod.expose_claim_package(tmp, rel)
+            self.assertEqual(_sys.path.count(str(pkg)), 1)
+        finally:
+            if str(pkg) in _sys.path:
+                _sys.path.remove(str(pkg))
+
+    def test_missing_package_raises(self):
+        mod = self._import_helper()
+        tmp = pathlib.Path(tempfile.mkdtemp())
+        self._make_repo(tmp, "claims/p4/components/exists")
+        with self.assertRaises(FileNotFoundError):
+            mod.expose_claim_package(
+                tmp, "claims/p4/components/no-such-package")
+
+    def test_absolute_and_escaping_paths_refused(self):
+        mod = self._import_helper()
+        tmp = pathlib.Path(tempfile.mkdtemp())
+        self._make_repo(tmp, "claims/p4/components/x")
+        with self.assertRaises(ValueError):
+            mod.expose_claim_package(tmp, "/etc/passwd")
+        with self.assertRaises(ValueError):
+            mod.expose_claim_package(tmp, "../outside")
+
+    def test_no_git_dependency(self):
+        # The helper must work from a tree with no .git directory: it
+        # resolves paths, it never shells out to git.
+        mod = self._import_helper()
+        tmp = pathlib.Path(tempfile.mkdtemp())
+        rel = "claims/p4/components/no-git"
+        pkg = self._make_repo(tmp, rel)
+        self.assertFalse((tmp / ".git").exists())
+        out = mod.expose_claim_package(tmp, rel)
+        self.assertEqual(out, pkg.resolve())
+        import sys as _sys
+        if str(pkg) in _sys.path:
+            _sys.path.remove(str(pkg))
+
 if __name__ == "__main__":
     unittest.main()

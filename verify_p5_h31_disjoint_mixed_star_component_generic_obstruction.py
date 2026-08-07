@@ -15,9 +15,19 @@ import sys
 
 from p5_high_coordinate_tree_chart_cegar import singular_command_with_timeout
 
-sys.path.insert(
-    0, str(Path(__file__).resolve().parent
-           / "claims" / "p4" / "components" / "disjoint-mixed-star"))
+# The disjoint-mixed-star P4 component package moved in Stage 3;
+# expose it through the shared helper (Stage 4 consolidation of the
+# Stage 3 per-importer shims) so the bare-name import below
+# resolves.
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import expose_claim_package  # noqa: E402
+
+expose_claim_package(
+    Path(__file__).resolve().parent,
+    "claims/p4/components/disjoint-mixed-star")
 from verify_p4_disjoint_mixed_star_pure_component import (  # noqa: E402
     family, relation)
 from verify_p5_h31_marked_basis_open_branch import (
