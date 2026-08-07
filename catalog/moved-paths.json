@@ -16,16 +16,16 @@
   },
   "counts": {
     "total_classified_moves": 2015,
-    "moved": 114,
+    "moved": 165,
     "pilot": 0,
     "proposed_high_confidence": 361,
-    "review_required": 1540,
+    "review_required": 1489,
     "unclassified": 348,
     "root_files_before": 2363,
     "root_dirs_before": 3,
     "root_entries_before": 2366,
-    "projected_root_if_moved_only": 2258,
-    "projected_root_if_high_confidence_batches_executed": 1897,
+    "projected_root_if_moved_only": 2207,
+    "projected_root_if_high_confidence_batches_executed": 1846,
     "projected_root_if_all_classified_executed": 357,
     "projection_note": "unclassified files are not members of any move set, so every projection already leaves them at the root; do not add unclassified again",
     "collisions": 0,
@@ -4177,409 +4177,460 @@
       "old_path": "P4_ALL_CENTER_KERNEL_STAR_111_OBSTRUCTION.md",
       "new_path": "claims/p4/classifications/star/all-center-kernel-star-111-obstruction/P4_ALL_CENTER_KERNEL_STAR_111_OBSTRUCTION.md",
       "reason": "claim_document -> p4/classifications/star/all-center-kernel-star-111-obstruction",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/all-center-kernel-star-111-obstruction",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "audit_p4_all_center_kernel_star_111_obstruction.py",
       "new_path": "claims/p4/classifications/star/all-center-kernel-star-111-obstruction/audit_p4_all_center_kernel_star_111_obstruction.py",
       "reason": "claim_script -> p4/classifications/star/all-center-kernel-star-111-obstruction",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/all-center-kernel-star-111-obstruction",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "verify_p4_all_center_kernel_star_111_obstruction.py",
       "new_path": "claims/p4/classifications/star/all-center-kernel-star-111-obstruction/verify_p4_all_center_kernel_star_111_obstruction.py",
       "reason": "claim_script -> p4/classifications/star/all-center-kernel-star-111-obstruction",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/all-center-kernel-star-111-obstruction",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "P4_ALL_DOUBLE_ENDPOINT_STAR_111_OBSTRUCTION.md",
       "new_path": "claims/p4/classifications/star/all-double-endpoint-star-111-obstruction/P4_ALL_DOUBLE_ENDPOINT_STAR_111_OBSTRUCTION.md",
       "reason": "claim_document -> p4/classifications/star/all-double-endpoint-star-111-obstruction",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/all-double-endpoint-star-111-obstruction",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "audit_p4_all_double_endpoint_star_111_obstruction.py",
       "new_path": "claims/p4/classifications/star/all-double-endpoint-star-111-obstruction/audit_p4_all_double_endpoint_star_111_obstruction.py",
       "reason": "claim_script -> p4/classifications/star/all-double-endpoint-star-111-obstruction",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/all-double-endpoint-star-111-obstruction",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "verify_p4_all_double_endpoint_star_111_obstruction.py",
       "new_path": "claims/p4/classifications/star/all-double-endpoint-star-111-obstruction/verify_p4_all_double_endpoint_star_111_obstruction.py",
       "reason": "claim_script -> p4/classifications/star/all-double-endpoint-star-111-obstruction",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/all-double-endpoint-star-111-obstruction",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md",
       "new_path": "claims/p4/classifications/star/coincident-support-rank-one-star/P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md",
       "reason": "claim_document -> p4/classifications/star/coincident-support-rank-one-star",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/coincident-support-rank-one-star",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "audit_p4_coincident_support_rank_one_star_component.py",
       "new_path": "claims/p4/classifications/star/coincident-support-rank-one-star/audit_p4_coincident_support_rank_one_star_component.py",
       "reason": "claim_script -> p4/classifications/star/coincident-support-rank-one-star",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/coincident-support-rank-one-star",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "verify_p4_coincident_support_rank_one_star_component.py",
       "new_path": "claims/p4/classifications/star/coincident-support-rank-one-star/verify_p4_coincident_support_rank_one_star_component.py",
       "reason": "claim_script -> p4/classifications/star/coincident-support-rank-one-star",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/coincident-support-rank-one-star",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "P4_COINCIDENT_SUPPORT_STAR_REVERSE_CLASSIFICATION.md",
       "new_path": "claims/p4/classifications/star/coincident-support-star-reverse/P4_COINCIDENT_SUPPORT_STAR_REVERSE_CLASSIFICATION.md",
       "reason": "claim_document -> p4/classifications/star/coincident-support-star-reverse",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/coincident-support-star-reverse",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "audit_p4_coincident_support_star_reverse_classification.py",
       "new_path": "claims/p4/classifications/star/coincident-support-star-reverse/audit_p4_coincident_support_star_reverse_classification.py",
       "reason": "claim_script -> p4/classifications/star/coincident-support-star-reverse",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/coincident-support-star-reverse",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "verify_p4_coincident_support_star_reverse_classification.py",
       "new_path": "claims/p4/classifications/star/coincident-support-star-reverse/verify_p4_coincident_support_star_reverse_classification.py",
       "reason": "claim_script -> p4/classifications/star/coincident-support-star-reverse",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/coincident-support-star-reverse",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md",
       "new_path": "claims/p4/classifications/star/common-center-kernel-star-211/P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md",
       "reason": "claim_document -> p4/classifications/star/common-center-kernel-star-211",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/common-center-kernel-star-211",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "audit_p4_common_center_kernel_star_211_component.py",
       "new_path": "claims/p4/classifications/star/common-center-kernel-star-211/audit_p4_common_center_kernel_star_211_component.py",
       "reason": "claim_script -> p4/classifications/star/common-center-kernel-star-211",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/common-center-kernel-star-211",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "verify_p4_common_center_kernel_star_211_component.py",
       "new_path": "claims/p4/classifications/star/common-center-kernel-star-211/verify_p4_common_center_kernel_star_211_component.py",
       "reason": "claim_script -> p4/classifications/star/common-center-kernel-star-211",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/common-center-kernel-star-211",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md",
       "new_path": "claims/p4/classifications/star/disjoint-mixed-star-affine/P4_DISJOINT_MIXED_STAR_AFFINE_CLASSIFICATION.md",
       "reason": "claim_document -> p4/classifications/star/disjoint-mixed-star-affine",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/disjoint-mixed-star-affine",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "audit_p4_disjoint_mixed_star_affine_classification.py",
       "new_path": "claims/p4/classifications/star/disjoint-mixed-star-affine/audit_p4_disjoint_mixed_star_affine_classification.py",
       "reason": "claim_script -> p4/classifications/star/disjoint-mixed-star-affine",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/disjoint-mixed-star-affine",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "verify_p4_disjoint_mixed_star_affine_classification.py",
       "new_path": "claims/p4/classifications/star/disjoint-mixed-star-affine/verify_p4_disjoint_mixed_star_affine_classification.py",
       "reason": "claim_script -> p4/classifications/star/disjoint-mixed-star-affine",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/disjoint-mixed-star-affine",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md",
       "new_path": "claims/p4/classifications/star/disjoint-mixed-star-projective/P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md",
       "reason": "claim_document -> p4/classifications/star/disjoint-mixed-star-projective",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/disjoint-mixed-star-projective",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "audit_p4_disjoint_mixed_star_projective_classification.py",
       "new_path": "claims/p4/classifications/star/disjoint-mixed-star-projective/audit_p4_disjoint_mixed_star_projective_classification.py",
       "reason": "claim_script -> p4/classifications/star/disjoint-mixed-star-projective",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/disjoint-mixed-star-projective",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "verify_p4_disjoint_mixed_star_projective_classification.py",
       "new_path": "claims/p4/classifications/star/disjoint-mixed-star-projective/verify_p4_disjoint_mixed_star_projective_classification.py",
       "reason": "claim_script -> p4/classifications/star/disjoint-mixed-star-projective",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/disjoint-mixed-star-projective",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md",
       "new_path": "claims/p4/classifications/star/equal-endpoint-inward-star-211-obstruction/P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md",
       "reason": "claim_document -> p4/classifications/star/equal-endpoint-inward-star-211-obstruction",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/equal-endpoint-inward-star-211-obstruction",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "audit_p4_equal_endpoint_inward_star_211_obstruction.py",
       "new_path": "claims/p4/classifications/star/equal-endpoint-inward-star-211-obstruction/audit_p4_equal_endpoint_inward_star_211_obstruction.py",
       "reason": "claim_script -> p4/classifications/star/equal-endpoint-inward-star-211-obstruction",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/equal-endpoint-inward-star-211-obstruction",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "verify_p4_equal_endpoint_inward_star_211_obstruction.py",
       "new_path": "claims/p4/classifications/star/equal-endpoint-inward-star-211-obstruction/verify_p4_equal_endpoint_inward_star_211_obstruction.py",
       "reason": "claim_script -> p4/classifications/star/equal-endpoint-inward-star-211-obstruction",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/equal-endpoint-inward-star-211-obstruction",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "P4_MIXED_ENDPOINT_STAR_111_COMPLETE_CLASSIFICATION.md",
       "new_path": "claims/p4/classifications/star/mixed-endpoint-star-111-complete/P4_MIXED_ENDPOINT_STAR_111_COMPLETE_CLASSIFICATION.md",
       "reason": "claim_document -> p4/classifications/star/mixed-endpoint-star-111-complete",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/mixed-endpoint-star-111-complete",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "audit_p4_mixed_endpoint_star_111_complete_classification.py",
       "new_path": "claims/p4/classifications/star/mixed-endpoint-star-111-complete/audit_p4_mixed_endpoint_star_111_complete_classification.py",
       "reason": "claim_script -> p4/classifications/star/mixed-endpoint-star-111-complete",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/mixed-endpoint-star-111-complete",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "verify_p4_mixed_endpoint_star_111_complete_classification.py",
       "new_path": "claims/p4/classifications/star/mixed-endpoint-star-111-complete/verify_p4_mixed_endpoint_star_111_complete_classification.py",
       "reason": "claim_script -> p4/classifications/star/mixed-endpoint-star-111-complete",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/mixed-endpoint-star-111-complete",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "P4_NO_DOUBLE_ENDPOINT_STAR_1110_COLLISION_CLASSIFICATION.md",
       "new_path": "claims/p4/classifications/star/no-double-endpoint-star-1110-collision/P4_NO_DOUBLE_ENDPOINT_STAR_1110_COLLISION_CLASSIFICATION.md",
       "reason": "claim_document -> p4/classifications/star/no-double-endpoint-star-1110-collision",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/no-double-endpoint-star-1110-collision",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "audit_p4_no_double_endpoint_star_1110_collision_classification.py",
       "new_path": "claims/p4/classifications/star/no-double-endpoint-star-1110-collision/audit_p4_no_double_endpoint_star_1110_collision_classification.py",
       "reason": "claim_script -> p4/classifications/star/no-double-endpoint-star-1110-collision",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/no-double-endpoint-star-1110-collision",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "verify_p4_no_double_endpoint_star_1110_collision_classification.py",
       "new_path": "claims/p4/classifications/star/no-double-endpoint-star-1110-collision/verify_p4_no_double_endpoint_star_1110_collision_classification.py",
       "reason": "claim_script -> p4/classifications/star/no-double-endpoint-star-1110-collision",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/no-double-endpoint-star-1110-collision",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "P4_ONE_DOUBLE_ENDPOINT_STAR_111_CLASSIFICATION.md",
       "new_path": "claims/p4/classifications/star/one-double-endpoint-star-111/P4_ONE_DOUBLE_ENDPOINT_STAR_111_CLASSIFICATION.md",
       "reason": "claim_document -> p4/classifications/star/one-double-endpoint-star-111",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/one-double-endpoint-star-111",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "audit_p4_one_double_endpoint_star_111_classification.py",
       "new_path": "claims/p4/classifications/star/one-double-endpoint-star-111/audit_p4_one_double_endpoint_star_111_classification.py",
       "reason": "claim_script -> p4/classifications/star/one-double-endpoint-star-111",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/one-double-endpoint-star-111",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "verify_p4_one_double_endpoint_star_111_classification.py",
       "new_path": "claims/p4/classifications/star/one-double-endpoint-star-111/verify_p4_one_double_endpoint_star_111_classification.py",
       "reason": "claim_script -> p4/classifications/star/one-double-endpoint-star-111",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/one-double-endpoint-star-111",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md",
       "new_path": "claims/p4/classifications/star/radical-star/P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md",
       "reason": "claim_document -> p4/classifications/star/radical-star",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/radical-star",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "audit_p4_radical_star_component_classification.py",
       "new_path": "claims/p4/classifications/star/radical-star/audit_p4_radical_star_component_classification.py",
       "reason": "claim_script -> p4/classifications/star/radical-star",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/radical-star",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "verify_p4_radical_star_component_classification.py",
       "new_path": "claims/p4/classifications/star/radical-star/verify_p4_radical_star_component_classification.py",
       "reason": "claim_script -> p4/classifications/star/radical-star",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/radical-star",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md",
       "new_path": "claims/p4/classifications/star/rank-two-relation-star-obstruction/P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md",
       "reason": "claim_document -> p4/classifications/star/rank-two-relation-star-obstruction",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/rank-two-relation-star-obstruction",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "audit_p4_rank_two_relation_star_obstruction.py",
       "new_path": "claims/p4/classifications/star/rank-two-relation-star-obstruction/audit_p4_rank_two_relation_star_obstruction.py",
       "reason": "claim_script -> p4/classifications/star/rank-two-relation-star-obstruction",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/rank-two-relation-star-obstruction",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "verify_p4_rank_two_relation_star_obstruction.py",
       "new_path": "claims/p4/classifications/star/rank-two-relation-star-obstruction/verify_p4_rank_two_relation_star_obstruction.py",
       "reason": "claim_script -> p4/classifications/star/rank-two-relation-star-obstruction",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/rank-two-relation-star-obstruction",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "P4_TWO_DOUBLE_ENDPOINT_STAR_111_COMPLETE_CLASSIFICATION.md",
       "new_path": "claims/p4/classifications/star/two-double-endpoint-star-111-complete/P4_TWO_DOUBLE_ENDPOINT_STAR_111_COMPLETE_CLASSIFICATION.md",
       "reason": "claim_document -> p4/classifications/star/two-double-endpoint-star-111-complete",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/two-double-endpoint-star-111-complete",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "audit_p4_two_double_endpoint_star_111_complete_classification.py",
       "new_path": "claims/p4/classifications/star/two-double-endpoint-star-111-complete/audit_p4_two_double_endpoint_star_111_complete_classification.py",
       "reason": "claim_script -> p4/classifications/star/two-double-endpoint-star-111-complete",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/two-double-endpoint-star-111-complete",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "verify_p4_two_double_endpoint_star_111_complete_classification.py",
       "new_path": "claims/p4/classifications/star/two-double-endpoint-star-111-complete/verify_p4_two_double_endpoint_star_111_complete_classification.py",
       "reason": "claim_script -> p4/classifications/star/two-double-endpoint-star-111-complete",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/two-double-endpoint-star-111-complete",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md",
       "new_path": "claims/p4/classifications/star/two-rank-two-spoke-mixed-star-classification/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md",
       "reason": "claim_document -> p4/classifications/star/two-rank-two-spoke-mixed-star-classification",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/two-rank-two-spoke-mixed-star-classification",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "audit_p4_two_rank_two_spoke_mixed_star_classification.py",
       "new_path": "claims/p4/classifications/star/two-rank-two-spoke-mixed-star-classification/audit_p4_two_rank_two_spoke_mixed_star_classification.py",
       "reason": "claim_script -> p4/classifications/star/two-rank-two-spoke-mixed-star-classification",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/two-rank-two-spoke-mixed-star-classification",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "verify_p4_two_rank_two_spoke_mixed_star_classification.py",
       "new_path": "claims/p4/classifications/star/two-rank-two-spoke-mixed-star-classification/verify_p4_two_rank_two_spoke_mixed_star_classification.py",
       "reason": "claim_script -> p4/classifications/star/two-rank-two-spoke-mixed-star-classification",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/two-rank-two-spoke-mixed-star-classification",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md",
       "new_path": "claims/p4/classifications/star/two-rank-two-spoke-mixed-star-component/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md",
       "reason": "claim_document -> p4/classifications/star/two-rank-two-spoke-mixed-star-component",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/two-rank-two-spoke-mixed-star-component",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "audit_p4_two_rank_two_spoke_mixed_star_component.py",
       "new_path": "claims/p4/classifications/star/two-rank-two-spoke-mixed-star-component/audit_p4_two_rank_two_spoke_mixed_star_component.py",
       "reason": "claim_script -> p4/classifications/star/two-rank-two-spoke-mixed-star-component",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/two-rank-two-spoke-mixed-star-component",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "verify_p4_two_rank_two_spoke_mixed_star_component.py",
       "new_path": "claims/p4/classifications/star/two-rank-two-spoke-mixed-star-component/verify_p4_two_rank_two_spoke_mixed_star_component.py",
       "reason": "claim_script -> p4/classifications/star/two-rank-two-spoke-mixed-star-component",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/two-rank-two-spoke-mixed-star-component",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md",
       "new_path": "claims/p4/classifications/star/unequal-endpoint-inward-star-211/P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md",
       "reason": "claim_document -> p4/classifications/star/unequal-endpoint-inward-star-211",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/unequal-endpoint-inward-star-211",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "audit_p4_unequal_endpoint_inward_star_211_component.py",
       "new_path": "claims/p4/classifications/star/unequal-endpoint-inward-star-211/audit_p4_unequal_endpoint_inward_star_211_component.py",
       "reason": "claim_script -> p4/classifications/star/unequal-endpoint-inward-star-211",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/unequal-endpoint-inward-star-211",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "verify_p4_unequal_endpoint_inward_star_211_component.py",
       "new_path": "claims/p4/classifications/star/unequal-endpoint-inward-star-211/verify_p4_unequal_endpoint_inward_star_211_component.py",
       "reason": "claim_script -> p4/classifications/star/unequal-endpoint-inward-star-211",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p4/classifications/star/unequal-endpoint-inward-star-211",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p4-star-stage6"
     },
     {
       "old_path": "P4_211_TRIANGLE_COMPLETE_CLASSIFICATION.md",
