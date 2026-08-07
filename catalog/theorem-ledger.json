@@ -56,7 +56,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "9c9197f1524a6e71",
+      "document_sha256_16": "f432eb5dbc901b04",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -71,7 +71,7 @@
     {
       "name": "Frontier reduction: any P5->Delta3 restriction forces an H31 or H22 local family",
       "document": "P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md",
-      "document_sha256_16": "fcaf90b5c839af0e",
+      "document_sha256_16": "18ac852c182cf5ea",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact reductions over C",
@@ -368,7 +368,7 @@
     {
       "name": "Generic marked H31 fibre empty: all rank one triangle",
       "document": "P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "a333d92de5b2278a",
+      "document_sha256_16": "e5fcbea3b4479d27",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -596,7 +596,7 @@
     {
       "name": "Generic marked H31 fibre empty: embedded p3",
       "document": "P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "27b6b67b8a6e2eda",
+      "document_sha256_16": "4803fd70c8a8c5ba",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -673,7 +673,7 @@
     {
       "name": "Generic marked H31 fibre empty: mixed orientation",
       "document": "P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "a1b4b68aa2d49784",
+      "document_sha256_16": "77383cf849eca2f5",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -711,7 +711,7 @@
     {
       "name": "Generic marked H31 fibre empty: six dimensional",
       "document": "P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "2f9b72fd4dab026b",
+      "document_sha256_16": "373a1331fecf0199",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -825,7 +825,7 @@
     {
       "name": "Generic weighted H22 fibre empty: all rank one triangle",
       "document": "P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "a7971d4a6eb89c2a",
+      "document_sha256_16": "2912c2ff47e87fd6",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -905,7 +905,7 @@
     {
       "name": "Generic weighted H22 fibre empty: diagonal quadric",
       "document": "P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "f30f9826f2b12a6a",
+      "document_sha256_16": "9d68e8fb67665bcc",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1013,7 +1013,7 @@
     {
       "name": "Generic weighted H22 fibre empty: embedded p3",
       "document": "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "3846fa784dbbd6f0",
+      "document_sha256_16": "195e90667d8f35cd",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1114,7 +1114,7 @@
     {
       "name": "Generic weighted H22 fibre empty: mixed orientation",
       "document": "P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "cf03b91b99e027b0",
+      "document_sha256_16": "7c584d4a42d8087b",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1154,7 +1154,7 @@
     {
       "name": "Generic weighted H22 fibre empty: six dimensional",
       "document": "P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "64e4e3817a8643b0",
+      "document_sha256_16": "6ad6eda7badfe454",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1274,7 +1274,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "9c9197f1524a6e71",
+      "document_sha256_16": "f432eb5dbc901b04",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -1403,7 +1403,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "9c9197f1524a6e71",
+      "document_sha256_16": "f432eb5dbc901b04",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
