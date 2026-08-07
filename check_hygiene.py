@@ -8,6 +8,21 @@ with one command:
 
     python check_hygiene.py
 
+Authoritative local validation operates on an INDEX-COMPLETE candidate
+tree.  Every file-selection check below enumerates files through
+``git ls-files`` (which includes staged additions but not untracked
+files), and ledger hashes use ``git show :path`` index blobs.  The
+completeness precondition (check 12) therefore requires that the Git
+index already contains the complete candidate commit: nonignored
+untracked files and unstaged changes to tracked files are forbidden;
+staged changes are allowed.  CI's clean checkout satisfies the same
+invariant automatically.  The intended local workflow is:
+
+    git add -A
+    python check_hygiene.py
+    python tools/migration/rewrite_links.py
+    git diff --exit-code
+
 Checks:
   1. every tracked Python file compiles;
   2. no generated solver artifact class is tracked (.sing/.ms/.out/
@@ -27,6 +42,9 @@ Checks:
       freezing its exact mapping);
   11. manifest summary consistency (counts match the move records and
       the moved-only root projection agrees with the executed set);
+  12. candidate-index completeness (no nonignored untracked files and
+      no unstaged tracked changes, so the tracked-file checks above
+      cover the whole candidate commit);
   6. the fast verifier set runs and exits zero;
   7. dependency and solver versions are displayed.
 
@@ -115,6 +133,51 @@ def tracked_files() -> list[str]:
         check=True,
     )
     return [line for line in out.stdout.splitlines() if line.strip()]
+
+
+def check_index_complete() -> None:
+    """Candidate-index completeness precondition.
+
+    The Git index must contain the complete candidate commit:
+    nonignored untracked files and unstaged changes to tracked files
+    are forbidden; staged changes are allowed.  All tracked-file
+    checks (compile, generated artifacts, Markdown links, ledger
+    hashes, portability, root layout, stale paths, provenance, and
+    manifest summary) enumerate through ``git ls-files``, and the
+    rewriter's fixed-point flow shares the same selection, so a file
+    outside the index is outside every check.  Enforcing the
+    invariant here makes the local floor a faithful mirror of CI
+    (whose clean checkout always satisfies it).
+    """
+    untracked = [
+        line
+        for line in subprocess.run(
+            ["git", "ls-files", "--others", "--exclude-standard"],
+            cwd=ROOT, capture_output=True, text=True, check=True,
+        ).stdout.splitlines()
+        if line.strip()
+    ]
+    unstaged = subprocess.run(
+        ["git", "diff", "--quiet"], cwd=ROOT
+    ).returncode != 0
+    problems = []
+    if untracked:
+        shown = "\n    ".join(untracked[:20])
+        more = (f"\n    ... ({len(untracked) - 20} more)"
+                if len(untracked) > 20 else "")
+        problems.append(
+            "nonignored untracked files are not staged "
+            f"(`git add` them or ignore them):\n    {shown}{more}")
+    if unstaged:
+        problems.append(
+            "unstaged changes to tracked files "
+            "(stage them with `git add`)")
+    if problems:
+        failures.append(
+            "candidate index incomplete:\n  " + "\n  ".join(problems))
+    else:
+        print("[12] candidate index: complete (no nonignored untracked "
+              "files, no unstaged tracked changes)")
 
 
 def check_compiles(files: list[str]) -> None:
@@ -866,6 +929,7 @@ def check_manifest_summary_consistency(files: list[str]) -> None:
               "projection agrees with the executed set")
 
 def main() -> int:
+    check_index_complete()
     files = tracked_files()
     check_compiles(files)
     check_no_generated(files)

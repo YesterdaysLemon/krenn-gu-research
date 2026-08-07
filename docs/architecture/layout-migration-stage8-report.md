@@ -97,14 +97,27 @@ verification: all 21 live scripts were replayed independently.
   records byte-identical with `executed_batch` preserved 207/207,
   counts unchanged before execution, no unrelated record touched,
   both withdrawn legacy records untouched.
-- **Stage 8 is the first stage with zero classifier-category
-  reassignments.**  For all 11 packages, the flat classifier's
-  `p4/classifications` vs `p4/boundaries` bucketing agreed with the
-  human ownership review of each document's mathematical role:
-  reductions/classifications stayed classification; obstructions and
-  boundary theorems stayed boundary.  No theorem was moved into
+- **Stage 8 is the first stage with zero claim-document /
+  package-category reassignments.**  At the claim-document level, the
+  flat classifier's `p4/classifications` vs `p4/boundaries`
+  bucketing agreed with the human ownership review for every package:
+  the four classification claim documents were already
+  coarse-classified `p4/classifications`, and the seven obstruction
+  claim documents were already coarse-classified `p4/boundaries`.
+  Six `claim_script` records were refined from the rough
+  `p4/boundaries` bucket into the classification packages owned by
+  their classification documents (the affine-holonomy,
+  full-kernel-collision, and projective-partner verify/audit pairs);
+  this is consistent with the recorded source-family arithmetic:
+  27 boundaries-source records = 21 boundary-triple records + 6
+  script records refined into classification packages, and 5
+  classifications-source records = 4 classification documents + the
+  nonresonant cut-reduction verifier.  No theorem was moved into
   `boundaries` merely because the old classifier put it there, and no
   true obstruction was moved into `classifications` for symmetry.
+  The frozen batch rationale's "zero reassignments" wording is
+  package-level shorthand for this claim-document statement; the
+  frozen batch artifact itself is unchanged.
 
 ## Root-count accounting (observed)
 
@@ -259,20 +272,42 @@ form).  Final CI proves committed-tree rewriter closure.
 
 ## Machinery behavior
 
-Stage 8 required **no machinery change** — the preferred outcome.
-All replay forms in the moving docs were covered by the shared
-grammar as fixed in Stage 7; no new defect appeared, no regression
-test was needed, and no abstraction was added.
+Stage 8 required **no migration-machinery change** — the preferred
+outcome for the executor, rewriter, and grammar.  All replay forms in
+the moving docs were covered by the shared grammar as fixed in
+Stage 7.
+
+The first substantive-head dispatch did, however, expose one genuine
+**validation-workflow** defect: the local floor can appear green
+while a newly created, nonignored, not-yet-staged file is completely
+outside every tracked-file check (Markdown links, stale references,
+rewriter coverage), because `check_hygiene.py` and the rewriter
+enumerate through plain `git ls-files`.  Fixed narrowly by a
+candidate-index completeness precondition: authoritative local
+validation now requires an index-complete candidate tree (no
+nonignored untracked files, no unstaged tracked changes; staged
+changes allowed).  The intended workflow is `git add -A` before the
+floor; CI's clean checkout satisfies the invariant automatically.
+Five focused regression tests in a synthetic Git repository cover
+the precondition; migration-tool suite 112 → 117.  No replay-command
+grammar, executor, or batch-contract change was made.
 
 ## Validation floor (Step 34)
 
 On the final head: `check_hygiene.py` all green (1,698 files compile;
 all markdown local links resolve; ledger 85/85 hashes; provenance
 239/239; stale paths 239 enforced, none present; portability clean;
-5 fast verifiers pass).  112 migration-tool tests OK.
+5 fast verifiers pass; candidate-index completeness precondition
+green).  117 migration-tool tests OK.
 `test_fourteen_vertex_cycle_cover_lattice.py` OK (14 tests).
 Rewriter idempotent (second pass 0/0/0).  No generated solver
 artifacts committed.  Root: 2,165 → 2,133.
+
+The 21 scientific verifier/audit replays are **not repeated** for the
+validation-workflow hardening: no claim document, verifier, audit, or
+path content changed in the final integrity pass (only
+`check_hygiene.py`, the migration-tool tests, and report prose), so
+the existing replay evidence above remains valid and is preserved.
 
 CI bookkeeping (per the established convention): the substantive-head
 `workflow_dispatch` run ID and the exact substantive-head SHA are

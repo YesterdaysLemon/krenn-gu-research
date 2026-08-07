@@ -1579,5 +1579,73 @@ class ExposeClaimPackageTests(unittest.TestCase):
         if str(pkg) in _sys.path:
             _sys.path.remove(str(pkg))
 
+
+import check_hygiene  # noqa: E402
+
+
+class CandidateIndexCompletenessTests(unittest.TestCase):
+    """Stage 8 hardening: the authoritative local floor must fail when
+    the Git index does not contain the complete candidate commit
+    (nonignored untracked files or unstaged tracked changes), because
+    every tracked-file check enumerates through `git ls-files`.  A
+    synthetic temporary Git repository proves the precondition."""
+
+    def setUp(self):
+        self.tmp = pathlib.Path(tempfile.mkdtemp())
+        _gitinit(self.tmp)
+        (self.tmp / "README.md").write_text("base\n", encoding="utf-8")
+        _git(self.tmp, "add", "README.md")
+        _git(self.tmp, "commit", "-q", "-m", "base")
+        self._orig_root = check_hygiene.ROOT
+        self._orig_failures = check_hygiene.failures
+        check_hygiene.ROOT = self.tmp
+        check_hygiene.failures = []
+
+    def tearDown(self):
+        check_hygiene.ROOT = self._orig_root
+        check_hygiene.failures = self._orig_failures
+
+    def _run(self):
+        check_hygiene.failures = []
+        check_hygiene.check_index_complete()
+        return list(check_hygiene.failures)
+
+    def test_untracked_nonignored_file_fails(self):
+        (self.tmp / "NEW_DOC.md").write_text("new\n", encoding="utf-8")
+        failures = self._run()
+        self.assertTrue(failures)
+        self.assertIn("candidate index incomplete", failures[0])
+        self.assertIn("NEW_DOC.md", failures[0])
+
+    def test_ignored_untracked_file_allowed(self):
+        (self.tmp / ".gitignore").write_text("scratch.txt\n",
+                                             encoding="utf-8")
+        _git(self.tmp, "add", ".gitignore")
+        _git(self.tmp, "commit", "-q", "-m", "ignore")
+        (self.tmp / "scratch.txt").write_text("x\n", encoding="utf-8")
+        self.assertEqual(self._run(), [])
+
+    def test_unstaged_modification_fails(self):
+        (self.tmp / "README.md").write_text("changed\n",
+                                            encoding="utf-8")
+        failures = self._run()
+        self.assertTrue(failures)
+        self.assertIn("unstaged changes", failures[0])
+
+    def test_staged_new_file_passes(self):
+        (self.tmp / "NEW_DOC.md").write_text("new\n", encoding="utf-8")
+        _git(self.tmp, "add", "NEW_DOC.md")
+        self.assertEqual(self._run(), [])
+        # the staged addition is enumerated as a candidate file
+        self.assertIn("NEW_DOC.md", check_hygiene.tracked_files())
+
+    def test_staged_modification_with_clean_worktree_passes(self):
+        (self.tmp / "README.md").write_text("changed\n",
+                                            encoding="utf-8")
+        _git(self.tmp, "add", "README.md")
+        self.assertEqual(self._run(), [])
+
+
+
 if __name__ == "__main__":
     unittest.main()

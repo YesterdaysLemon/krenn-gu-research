@@ -285,3 +285,20 @@ Stage 8 requires **no machinery change**.  All replay forms in the
 moving docs (single-line `uv run --with sympy python`, single-line
 `python`, and the uv-continuation form in the cut-reduction doc) are
 covered by the shared grammar as fixed in Stage 7.
+
+## Post-execution review clarification (appended after merge review)
+
+The "zero classifier-category reassignments" statement above is
+precise at the **claim-document / package-category level**: all 11
+claim documents kept the classifier's coarse bucket.  Six
+`claim_script` records (the affine-holonomy, full-kernel-collision,
+and projective-partner verify/audit pairs) were originally
+coarse-classified under `p4/boundaries` and were correctly refined
+into the classification packages owned by their classification
+documents.  This matches the source-family arithmetic recorded in
+this dry-run (27 boundaries-source = 21 boundary-triple records + 6
+refined script records; 5 classifications-source = 4 documents + the
+cut-reduction verifier).  The refinement is correct and the frozen
+batch is unchanged; see
+[`layout-migration-stage8-report.md`](layout-migration-stage8-report.md)
+for the definitive wording.
