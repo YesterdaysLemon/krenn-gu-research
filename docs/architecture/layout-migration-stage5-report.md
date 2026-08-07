@@ -219,8 +219,8 @@ stale paths 114 enforced, none present; portability clean; 5 fast
 verifiers pass).  103 migration-tool tests OK.
 `test_fourteen_vertex_cycle_cover_lattice.py` OK (14 tests).  Rewriter
 idempotent (second pass 0/0/0).  No generated solver artifacts
-committed.  CI: substantive-head workflow dispatch __CI_RUN__ on the
-exact substantive head __SUBSTANTIVE_SHA__; the subsequent report-fill
+committed.  CI: substantive-head workflow dispatch
+[31159062067](https://github.com/YesterdaysLemon/open-graph-theory-with-prize/actions/runs/31159062067) passed (**success**) on the exact substantive head `478cef66dca1baced15790512e4b5da4baf6e287`; the subsequent report-fill
 bookkeeping commit carries its own PR CI run, recorded on the PR.
 
 ## Stop condition
