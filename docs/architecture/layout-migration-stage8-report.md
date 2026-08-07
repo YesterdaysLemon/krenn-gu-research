@@ -276,10 +276,22 @@ artifacts committed.  Root: 2,165 → 2,133.
 
 CI bookkeeping (per the established convention): the substantive-head
 `workflow_dispatch` run ID and the exact substantive-head SHA are
-recorded in the single report-fill bookkeeping commit that follows
-the substantive head; the final PR-triggered workflow must pass
-hygiene, migration tests, 14-vertex tests, and the rewriter
-fixed-point check on the resulting PR head.
+recorded here, and the final PR-triggered workflow must pass hygiene,
+migration tests, 14-vertex tests, and the rewriter fixed-point check
+on the resulting PR head.
+
+- First dispatch [31219014091](https://github.com/YesterdaysLemon/open-graph-theory-with-prize/actions/runs/31219014091)
+  on `011db9f999cf74904e22c7d22992db7914321707` **failed**: the
+  classifications README's companion link used one too many parent
+  segments and resolved to a nonexistent path.  The local floor had
+  passed because the link check counts HEAD-tracked markdown and the
+  new READMEs were not yet committed at that moment.
+- Navigation fix commit `3fa86eb` corrected the link depth; the
+  re-run [31219192731](https://github.com/YesterdaysLemon/open-graph-theory-with-prize/actions/runs/31219192731)
+  passed (**success**) on the corrected substantive head
+  `3fa86ebb251a76be67b039144a4456437e92d3ac`, which is the true
+  substantive head.  No migration machinery, theorem claim, or batch
+  mapping changed as a result.
 
 ## Selected / excluded / deferred / shared / historical
 
