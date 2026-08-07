@@ -617,12 +617,53 @@ class StaleReferenceTests(unittest.TestCase):
         hits = find_stale_bare_refs(text, "README.md", self.MOVED)
         self.assertEqual(hits, [])
 
-    def test_sibling_reference_inside_package_valid(self):
-        # inside the destination package the basename is a sibling.
+    def test_fenced_replay_command_inside_package_stale(self):
+        # Fenced replay commands are documented as commands executed
+        # from the REPOSITORY ROOT, so a moved script's bare basename
+        # is stale in a fence even when the document sits inside that
+        # script's destination package.
         text = "```text\npython " + self.BASE + "\n```\n"
         hits = find_stale_bare_refs(
             text, "claims/p5/h22/disjoint-mixed-star/README.md",
             self.MOVED)
+        self.assertTrue(any(ctx == "fenced replay command"
+                            for ctx, b in hits), hits)
+
+    def test_uv_run_replay_command_inside_package_stale(self):
+        text = ("```text\nuv run --with sympy python " + self.BASE
+                + "\n```\n")
+        hits = find_stale_bare_refs(
+            text, "claims/p5/h22/disjoint-mixed-star/README.md",
+            self.MOVED)
+        self.assertTrue(any(ctx == "fenced replay command"
+                            for ctx, b in hits), hits)
+
+    def test_continuation_replay_command_inside_package_stale(self):
+        text = "```text\npython \\\n  " + self.BASE + "\n```\n"
+        hits = find_stale_bare_refs(
+            text, "claims/p5/h22/disjoint-mixed-star/README.md",
+            self.MOVED)
+        self.assertTrue(any(ctx == "fenced replay command"
+                            for ctx, b in hits), hits)
+
+    def test_rewritten_command_inside_package_valid(self):
+        # the full root-relative rewritten form stays valid anywhere.
+        text = ("```text\npython claims/p5/h22/disjoint-mixed-star/"
+                + self.BASE + "\n```\n")
+        hits = find_stale_bare_refs(
+            text, "claims/p5/h22/disjoint-mixed-star/README.md",
+            self.MOVED)
+        self.assertEqual(hits, [])
+
+    def test_sibling_non_command_reference_inside_package_valid(self):
+        # ordinary sibling references (markdown links inside the
+        # package, prose mentions) keep package-local resolution.
+        md = self.BASE.replace(".py", ".md")
+        moved = {md: "claims/p5/h22/disjoint-mixed-star/" + md}
+        text = "See [theorem](" + md + ").\n"
+        hits = find_stale_bare_refs(
+            text, "claims/p5/h22/disjoint-mixed-star/THEOREM.md",
+            moved)
         self.assertEqual(hits, [])
 
     def test_stale_root_markdown_link_fails(self):

@@ -59,14 +59,15 @@ confidence field is promoted.
 
 ## Classification refinement (durable, rebuild-safe)
 
-For the 43 selected classification records (plus the 1 support
-script), `catalog/layout-classification.json` — the durable source —
-was edited:
+For the 43 selected records, including the 1 support script,
+`catalog/layout-classification.json` — the durable source — was
+edited:
 
 ```text
-claim_family:  p4/classifications
+claim_family:  p4/classifications  (or null for the one support script)
            ->  p4/classifications/triangle-211/<package-slug>
 proposed_path: claims/p4/classifications/<file>
+               (or tools/explore/<file> for the support script)
            ->  claims/p4/classifications/triangle-211/<package-slug>/<file>
 evidence:      + "stage5_human_review: triangle/211 classification spine package"
 ```
@@ -262,7 +263,7 @@ during rewrites (README.md).  No entries fabricated.
 |---|---|
 | member count | 43 |
 | package count | 14 (one of them +1 owned support file) |
-| confidence composition | 43 review_required (medium doc / low script) + 1 tool_script medium; 0 high-confidence; no promotions |
+| confidence composition | all 43 members review_required (14 medium docs, 28 low claim_scripts, 1 medium tool_script — the analyze support, reassigned from tools/explore); 0 high-confidence; no promotions |
 | destination collisions | none (14 new package directories) |
 | source/destination cycles | none |
 | expected stale-path count increase | +43 (all root→package basename-preserving; 71 → 114) |

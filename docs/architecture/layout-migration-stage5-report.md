@@ -55,7 +55,7 @@ replayed end-to-end without losing scientific or provenance integrity.
   confidence field was promoted and no status was silently upgraded —
   the batch is an ownership/destination decision, recorded by approval,
   not a confidence promotion.
-- **43 classification records refined** in
+- **43 selected records, including the 1 support script,** refined in
   `catalog/layout-classification.json` (the durable source), then the
   manifest regenerated through the normal `build_manifest.py`
   machinery.  Verified against the committed manifest: exactly 43
@@ -83,7 +83,7 @@ stale_paths_enforced (after)          114   (71 before + 43 = 114 ✓)
 remaining_proposed_high_confidence    361   (unchanged; no high members)
 remaining_review_required             1540  (1583 - 43)
 remaining_unclassified                348
-remaining_p4_classifications_proposals 122  (164 - 43, per classification summary)
+remaining_p4_classifications_proposals 122  (164 - 42 = 122; the 43rd member, analyze_p4_common_active_binary_triangle_local_dimension.py, was originally a tool_script proposed for tools/explore/ with no P4 classification family — human review reassigned it as owned support for common-active-binary-triangle)
 ```
 
 ## Executor acceptance test — real-world scaling
@@ -208,15 +208,17 @@ continuation-line `python \` + filename).
   through `package_metadata.resolve_claim_package_metadata` (manifest
   `claim_family` authoritative; canonical/verifier/audit share the
   package root; working notes are never canonical).  5 new regression
-  tests (`NestedClassificationMetadataTests`); migration suite
-  **98 → 103**.
+  tests (`NestedClassificationMetadataTests`); plus the Stage 4/5
+  fenced replay-command policy tests (fenced commands are root-run
+  everywhere, including inside the destination package) replacing one
+  superseded sibling test — migration suite **98 → 107**.
 
 ## Validation floor (Step 25)
 
 On the final head: `check_hygiene.py` all green (1,698 files compile;
 all markdown links resolve; ledger 85/85 hashes; provenance 114/114;
 stale paths 114 enforced, none present; portability clean; 5 fast
-verifiers pass).  103 migration-tool tests OK.
+verifiers pass).  107 migration-tool tests OK.
 `test_fourteen_vertex_cycle_cover_lattice.py` OK (14 tests).  Rewriter
 idempotent (second pass 0/0/0).  No generated solver artifacts
 committed.  CI: substantive-head workflow dispatch
