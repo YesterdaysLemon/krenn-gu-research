@@ -324,9 +324,15 @@ on the resulting PR head.
 - Navigation fix commit `3fa86eb` corrected the link depth; the
   re-run [31219192731](https://github.com/YesterdaysLemon/open-graph-theory-with-prize/actions/runs/31219192731)
   passed (**success**) on the corrected substantive head
-  `3fa86ebb251a76be67b039144a4456437e92d3ac`, which is the true
-  substantive head.  No migration machinery, theorem claim, or batch
-  mapping changed as a result.
+  `3fa86ebb251a76be67b039144a4456437e92d3ac`.  No migration
+  machinery, theorem claim, or batch mapping changed as a result.
+- The validation-workflow hardening commit `53dabff` is itself a new
+  substantive tooling head; its dispatch
+  [31221275796](https://github.com/YesterdaysLemon/open-graph-theory-with-prize/actions/runs/31221275796)
+  passed (**success**) on the exact substantive head
+  `53dabff24c6c1311a26e0e9b5ecb6a01420a43c1`, confirming the
+  candidate-index completeness precondition and the 117-test suite on
+  CI.
 
 ## Selected / excluded / deferred / shared / historical
 
