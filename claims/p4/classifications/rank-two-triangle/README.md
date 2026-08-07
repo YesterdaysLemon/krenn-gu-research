@@ -6,7 +6,7 @@ classification spine, moved as Stage 8 batch
 spine is the **live** resonant / nonresonant rank-two-relation
 triangle chain: reductions and classifications only.  The companion
 obstruction / boundary theorems of the same chain live under
-[`../../../boundaries/rank-two-triangle/`](../../../boundaries/rank-two-triangle/),
+[`../../boundaries/rank-two-triangle/`](../../boundaries/rank-two-triangle/),
 and the distinction is preserved by directory, not filename.
 
 The chain proceeds: the nonresonant cut reduction reduces all
