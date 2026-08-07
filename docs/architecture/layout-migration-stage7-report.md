@@ -11,6 +11,25 @@ boundary-inclusion packages — moved from the repository root into
 ownership complexity rather than raw file count, and the existing
 machinery carried it with one narrow grammar fix.
 
+**Erratum (bookkeeping, post-merge):** two counts in this report were
+transposed or imprecise and are corrected below.  The frozen batch
+artifact and its executed mapping are unchanged.
+
+1. The replay table in "Replay results" must read **14 verifiers and
+   13 audits** (27 moved scripts total).  The batch contains
+   14 verifier scripts, 13 audit scripts, and 15 claim documents;
+   rank-two-pair-kernel-geometry has no independent audit.  The
+   originally printed "13 verifiers / 14 audits" row entries are
+   swapped and are superseded by this erratum.
+2. The lower-pair exhaustion corollary's replay is not "eight sibling
+   scripts": it comprises **eight sibling pair-geometry replay groups,
+   15 scripts total — seven verifier+audit pairs plus the audit-less
+   rank-two-pair-kernel-geometry verifier** (exactly the fence listed
+   in its own document).  The corrected wording supersedes the older
+   phrasing in this report and in the historical pre-execution
+   artifacts (`p4-pair-geometry-stage7-dry-run.md` and the
+   pair-geometry README), which are left immutable.
+
 > No theorem claim, assumption, scope, proof status, provenance
 > status, or global-resolution status changed as a result of this
 > migration. The global Krenn–Gu conjecture remains **UNRESOLVED**.
@@ -137,8 +156,10 @@ boundaries`) expressed everything; **no metadata-model extension was
 needed and no regression test was required for it**.
 
 The lower-pair exhaustion corollary is a **document-only package**:
-its stated replay is the union of the eight sibling pair-geometry
-scripts (all in this batch), and no dedicated verifier/audit exists.
+its stated replay comprises eight sibling pair-geometry replay groups
+— 15 scripts total: seven verifier+audit pairs plus the audit-less
+rank-two-pair-kernel-geometry verifier (all in this batch) — and no
+dedicated verifier/audit exists (see the erratum above).
 The rank-two-pair-kernel-geometry package likewise has no independent
 audit — its document states the verifier is a tiny exact replay of the
 completed symbolic proof.  Both are intentional documented states,
@@ -198,8 +219,8 @@ sympy-only checks).
 
 | class | scripts | result | runtime |
 |---|---|---|---|
-| sympy-only verifiers | 13 | all rc=0 | ≤2.5 s each |
-| sympy-only audits | 14 | all rc=0 | ≤3.9 s each |
+| sympy-only verifiers | 14 | all rc=0 | ≤2.5 s each |
+| sympy-only audits | 13 | all rc=0 | ≤3.9 s each |
 
 Preflight note: the same 27 scripts ran rc=0 from the root before the
 moves (≤3.8 s each), establishing the pre/post replayability
