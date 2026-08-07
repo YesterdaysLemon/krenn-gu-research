@@ -289,6 +289,25 @@ class RewriteMarkdownTests(unittest.TestCase):
         self.assertIn("claims/p5/h22/pkg/verify_a.py --limit 10",
                       read_md(self.tmp, "README.md"))
 
+    def test_replay_uv_continuation_line_form(self):
+        # Stage 7 rank-two-pair-kernel-geometry form: the uv wrapper
+        # carries the backslash and the `python ...` part follows on
+        # the next line.
+        write_md(self.tmp, "README.md",
+                 "```text\nuv run --with sympy \\\n  python verify_a.py\n"
+                 "```\n")
+        stats = rewrite_markdown(self.m, ["README.md"], self.tmp)
+        self.assertEqual(stats["replay_rewritten"], 1)
+        self.assertIn("uv run --with sympy \\\n"
+                      "  python claims/p5/h22/pkg/verify_a.py",
+                      read_md(self.tmp, "README.md"))
+
+    def test_replay_uv_continuation_dangling_not_rewritten(self):
+        write_md(self.tmp, "README.md",
+                 "```text\nuv run --with sympy \\\nsome prose\n```\n")
+        stats = rewrite_markdown(self.m, ["README.md"], self.tmp)
+        self.assertEqual(stats["replay_rewritten"], 0)
+
     def test_bare_filename_list_not_rewritten(self):
         # fenced prose: bare filenames with no launcher must not move
         write_md(self.tmp, "README.md",
@@ -361,6 +380,20 @@ class ReplayCommandGrammarTests(unittest.TestCase):
     def test_continuation(self):
         self.assertEqual(self._match("python \\\n  verify_a.py"),
                          [("verify_a.py", 1, "continuation")])
+
+    def test_uv_continuation(self):
+        self.assertEqual(
+            self._match("uv run --with sympy \\\n  python verify_a.py"),
+            [("verify_a.py", 1, "continuation")])
+        self.assertEqual(
+            self._match("uv run --with sympy \\\n  python verify_a.py"
+                        " --limit 2"),
+            [("verify_a.py", 1, "continuation")])
+        # dangling uv continuation: no python launcher on the next line
+        self.assertEqual(
+            self._match("uv run --with sympy \\\nprose text"), [])
+        self.assertEqual(
+            self._match("uv run --with sympy \\\n  verify_a.py"), [])
 
     def test_negatives(self):
         self.assertEqual(self._match("verify_a.py"), [])
@@ -646,6 +679,15 @@ class StaleReferenceTests(unittest.TestCase):
         self.assertTrue(any(ctx == "fenced replay command"
                             for ctx, b in hits), hits)
 
+    def test_uv_continuation_replay_command_inside_package_stale(self):
+        text = ("```text\nuv run --with sympy \\\n  python " + self.BASE
+                + "\n```\n")
+        hits = find_stale_bare_refs(
+            text, "claims/p5/h22/disjoint-mixed-star/README.md",
+            self.MOVED)
+        self.assertTrue(any(ctx == "fenced replay command"
+                            for ctx, b in hits), hits)
+
     def test_rewritten_command_inside_package_valid(self):
         # the full root-relative rewritten form stays valid anywhere.
         text = ("```text\npython claims/p5/h22/disjoint-mixed-star/"
@@ -715,6 +757,14 @@ class StaleReferenceTests(unittest.TestCase):
     def test_stale_continuation_replay_command_fails(self):
         # Stage 4 mixed-orientation / Stage 3 DMS form
         text = "```text\npython \\\n  " + self.BASE + "\n```\n"
+        hits = find_stale_bare_refs(text, "README.md", self.MOVED)
+        self.assertTrue(any(ctx == "fenced replay command"
+                            for ctx, b in hits), hits)
+
+    def test_stale_uv_continuation_replay_command_fails(self):
+        # Stage 7 rank-two-pair-kernel-geometry form
+        text = ("```text\nuv run --with sympy \\\n  python " + self.BASE
+                + "\n```\n")
         hits = find_stale_bare_refs(text, "README.md", self.MOVED)
         self.assertTrue(any(ctx == "fenced replay command"
                             for ctx, b in hits), hits)
