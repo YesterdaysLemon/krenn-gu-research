@@ -11,10 +11,25 @@ import shutil
 import subprocess
 from pathlib import Path
 
-import analyze_p4_common_active_binary_triangle_local_dimension as analysis
+import sys
 
-ROOT = Path(__file__).resolve().parent
-GRAPH_SLICE = ROOT / "tmp" / "p4_common_active_binary_local_graph_slice.sing"
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import (  # noqa: E402
+    bootstrap,
+    expose_claim_package,
+)
+
+REPO_ROOT, HERE = bootstrap(__file__)
+# Expose this package so the bare-name import of the owned analyze
+# support module below resolves after the Stage 5 move.
+expose_claim_package(
+    REPO_ROOT,
+    "claims/p4/classifications/triangle-211/common-active-binary-triangle")
+import analyze_p4_common_active_binary_triangle_local_dimension as analysis  # noqa: E402
+GRAPH_SLICE = REPO_ROOT / "tmp" / "p4_common_active_binary_local_graph_slice.sing"
 PRIME = 101
 EXPECTED_GRAPH_SLICE_SHA256 = (
     "346598947e89b7d088b016bbe559942e56d8791fe3879b388d6bb38b922f594d"

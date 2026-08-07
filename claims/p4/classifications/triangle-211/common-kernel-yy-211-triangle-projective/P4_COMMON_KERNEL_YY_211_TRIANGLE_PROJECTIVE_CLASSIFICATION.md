@@ -12,7 +12,7 @@ y_1x_2-x_1y_2=0                                  (1)
 
 in the `triangle-(2,1,1)` cell.  The dense complementary-binary torus is
 empty by
-[`P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md`](P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md).
+[`P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md`](../../../../../P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md).
 This theorem classifies its complete projective boundary:
 
 - a vanishing or coordinate-supported synchronized complement is lower-pair
@@ -202,8 +202,8 @@ global conjecture remains **UNRESOLVED**.
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_p4_common_kernel_yy_211_triangle_projective_classification.py
-uv run --with sympy python audit_p4_common_kernel_yy_211_triangle_projective_classification.py
+uv run --with sympy python claims/p4/classifications/triangle-211/common-kernel-yy-211-triangle-projective/verify_p4_common_kernel_yy_211_triangle_projective_classification.py
+uv run --with sympy python claims/p4/classifications/triangle-211/common-kernel-yy-211-triangle-projective/audit_p4_common_kernel_yy_211_triangle_projective_classification.py
 ```
 
 Both scripts use exact squarefree multiplication over `Q(zeta)` with

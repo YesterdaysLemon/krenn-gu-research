@@ -13,7 +13,7 @@ y_1 x_2-x_1 y_2=0.                                  (1)
 
 Assume the shared exact pair in (1) has genuine two-coordinate support.  The
 dense complementary-binary chart is classified in
-[`P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md`](P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md).
+[`P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md`](../../../../../P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md).
 This theorem closes every omitted projective boundary of that chart:
 
 1. a vanishing synchronized complement has pair image of dimension at most
@@ -213,8 +213,8 @@ orientation and remains **UNKNOWN**.
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_p4_common_active_211_triangle_projective_boundary_classification.py
-uv run --with sympy python audit_p4_common_active_211_triangle_projective_boundary_classification.py
+uv run --with sympy python claims/p4/classifications/triangle-211/common-active-211-triangle-projective-boundary/verify_p4_common_active_211_triangle_projective_boundary_classification.py
+uv run --with sympy python claims/p4/classifications/triangle-211/common-active-211-triangle-projective-boundary/audit_p4_common_active_211_triangle_projective_boundary_classification.py
 ```
 
 The primary verifier reconstructs (4)--(17), the escape condition, the

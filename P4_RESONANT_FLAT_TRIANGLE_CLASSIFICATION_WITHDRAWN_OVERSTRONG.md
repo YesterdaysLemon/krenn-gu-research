@@ -15,7 +15,7 @@ and the true full-support Borel chart is
 
 The complete Borel classification has now been recovered by a different
 support-stratified proof:
-[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
+[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/rank-two-relation-triangle-corrected/P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
 Its survivor is the three-parameter marked family
 `U_i=span(a,b+alpha_i*a_bar)` with nonzero sum of the `alpha_i`.  The family
 displayed below is the exact `alpha_1=0` slice, not the whole Borel moduli

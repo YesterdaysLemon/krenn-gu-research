@@ -162,8 +162,8 @@ support and additional-edge boundaries explicitly separated above.
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_p4_transitive_rank_one_triangle_classification.py
-python audit_p4_transitive_rank_one_triangle_classification.py
+uv run --with sympy python claims/p4/classifications/triangle-211/transitive-rank-one-triangle/verify_p4_transitive_rank_one_triangle_classification.py
+python claims/p4/classifications/triangle-211/transitive-rank-one-triangle/audit_p4_transitive_rank_one_triangle_classification.py
 ```
 
 The primary verifier checks (5)--(13), the support-one collapse, and the

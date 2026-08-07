@@ -113,7 +113,7 @@ It has rank one exactly on the bihomogeneous hypersurface
 
 The Borel coefficients `c,n` disappear.  On the dense leaf chart `a=g=1`,
 (9) is precisely the irreducible component-twenty-five equation proved in
-[`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md`](P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md).
+[`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md`](../../../../../P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md).
 Equation (9) is not divisible by `a` or `g`, so its projective closure also
 contains both omitted leaf hyperplanes and has no extra boundary component.
 For example `(a,e,g,j,k,s)=(1,1,0,1,2,1)` is a pure all-pair point with
@@ -125,8 +125,8 @@ the unequal-endpoint inward orientation.
 ## Replay
 
 ```text
-uv run --with sympy python verify_p4_unequal_endpoint_inward_star_211_complete_classification.py
-uv run --with sympy python audit_p4_unequal_endpoint_inward_star_211_complete_classification.py
+uv run --with sympy python claims/p4/classifications/triangle-211/unequal-endpoint-inward-star-211-complete/verify_p4_unequal_endpoint_inward_star_211_complete_classification.py
+uv run --with sympy python claims/p4/classifications/triangle-211/unequal-endpoint-inward-star-211-complete/audit_p4_unequal_endpoint_inward_star_211_complete_classification.py
 ```
 
 The primary verifier reconstructs all eight support signatures, every

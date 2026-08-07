@@ -27,7 +27,7 @@ v=pA+qB+C,       u=v+A-B.                            (1)
 ```
 
 For the normalized family in
-[`P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md`](P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md),
+[`P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md`](claims/p4/classifications/triangle-211/common-active-binary-triangle/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md),
 write the two rows of `U0` as
 
 ```text

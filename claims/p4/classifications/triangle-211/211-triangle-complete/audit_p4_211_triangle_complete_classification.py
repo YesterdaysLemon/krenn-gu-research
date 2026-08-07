@@ -7,9 +7,17 @@ import itertools
 import json
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
-PRIMARY = ROOT / "verify_p4_211_triangle_complete_classification.py"
-THEOREM = ROOT / "P4_211_TRIANGLE_COMPLETE_CLASSIFICATION.md"
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+PRIMARY = HERE / "verify_p4_211_triangle_complete_classification.py"
+THEOREM = HERE / "P4_211_TRIANGLE_COMPLETE_CLASSIFICATION.md"
 
 
 def main() -> None:

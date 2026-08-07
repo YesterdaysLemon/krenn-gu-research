@@ -7,7 +7,15 @@ import itertools
 import json
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
 SOURCES = {
     "support_one": (
         "P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md",
@@ -52,6 +60,23 @@ SOURCES = {
 }
 
 
+def _source_path(filename):
+    """Locate a source theorem document after the Stage 5 migration.
+
+    Six sources still live at the repository root; three moved into
+    sibling classification packages of the same triangle/211 spine.
+    Search the package, the root, then the spine's sibling packages;
+    fail closed if the document cannot be found.
+    """
+    for cand in (HERE / filename, REPO_ROOT / filename):
+        if cand.exists():
+            return cand
+    for cand in sorted(HERE.parent.glob("*/" + filename)):
+        return cand
+    raise FileNotFoundError(filename)
+
+
+
 def main() -> None:
     states = ("A", "B", "C")
     flag_orbits = tuple(
@@ -70,7 +95,7 @@ def main() -> None:
 
     checked = {}
     for name, (filename, fragments) in SOURCES.items():
-        text = (ROOT / filename).read_text(encoding="utf-8")
+        text = _source_path(filename).read_text(encoding="utf-8")
         for fragment in fragments:
             assert fragment in text, (filename, fragment)
         checked[name] = filename

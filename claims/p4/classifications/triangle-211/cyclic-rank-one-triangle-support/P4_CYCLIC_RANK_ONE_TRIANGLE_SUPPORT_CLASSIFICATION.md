@@ -65,7 +65,7 @@ source triangle:   degree sequence (2,2,2,0).       (4)
 
 The star and path are trees, so switching removes all three gains.  Their
 normal forms are precisely the two apolar directed triangles in
-[`P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md`](P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md).
+[`P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md`](../../../../../P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md).
 All three leaf-pair ranks are three; the kernel and active triple covectors
 are independent; and the opposite apolar `P^2` produces components sixteen
 and seventeen.
@@ -158,7 +158,7 @@ exceptional graph becomes a three-edge star with profile
 
 Its support multiset is exactly `{01,01,23}` with the disjoint mixed-star
 orientation.  The complete projective theorem
-[`P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md`](P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md)
+[`P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md`](../../../../../P4_DISJOINT_MIXED_STAR_PROJECTIVE_CLASSIFICATION.md)
 places every punctured point of (10) in component eight.  Letting `k->0`
 places the cyclic triangle in the same closure.  The apparent transverse
 tangent is therefore an actual component-eight opening, not a new
@@ -189,8 +189,8 @@ from the component-exhaustiveness frontier.
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_p4_cyclic_rank_one_triangle_support_classification.py
-python audit_p4_cyclic_rank_one_triangle_support_classification.py
+uv run --with sympy python claims/p4/classifications/triangle-211/cyclic-rank-one-triangle-support/verify_p4_cyclic_rank_one_triangle_support_classification.py
+python claims/p4/classifications/triangle-211/cyclic-rank-one-triangle-support/audit_p4_cyclic_rank_one_triangle_support_classification.py
 ```
 
 The primary verifier checks the three source-graph types, every sign sheet,

@@ -141,7 +141,7 @@ component seventeen.
 
 On `F`, the relation-rank word is `(2,1,1)`, and the two rank-one support
 labels are adjacent.  The crossed-triangle support theorem
-[`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md)
+[`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/crossed-211-triangle-support/P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md)
 identifies its full-support part and its apolar `P^2` with the first
 component.  The common point of the four lines is contained in their
 closures and creates no further component.

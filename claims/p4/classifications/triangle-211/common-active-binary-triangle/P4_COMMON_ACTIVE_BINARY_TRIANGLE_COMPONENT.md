@@ -4,7 +4,7 @@
 
 **Exact characteristic-zero component theorem.**  The genuine-binary
 `tau!=0` common-active residual in equations (9)--(10) of
-[`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md)
+[`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](../../../../../P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md)
 is a five-dimensional irreducible component of the pure `P_4` compression
 locus.  Its generic pair profile is
 
@@ -316,8 +316,8 @@ tau!=0, binary exact pair     -> component 20.       (26)
 Run:
 
 ```text
-uv run --with sympy python verify_p4_common_active_binary_triangle_component.py
-uv run --with sympy python audit_p4_common_active_binary_triangle_component.py
+uv run --with sympy python claims/p4/classifications/triangle-211/common-active-binary-triangle/verify_p4_common_active_binary_triangle_component.py
+uv run --with sympy python claims/p4/classifications/triangle-211/common-active-binary-triangle/audit_p4_common_active_binary_triangle_component.py
 ```
 
 The primary verifier regenerates the characteristic-zero identities and the
