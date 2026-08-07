@@ -15,7 +15,8 @@ fence state):
     uv run --with sympy python verify_foo.py      uv environment wrap
     python \\                                      continuation line
       verify_foo.py [args]
-
+    uv run --with sympy \\                         uv continuation line
+      python verify_foo.py [args]
 The script name is always a bare basename (``[A-Za-z0-9_]+\\.py``);
 anything path-like on the script position is not a replay command, and
 arbitrary fenced prose or bare filename lists never match.
@@ -35,6 +36,11 @@ LAUNCHER = re.compile(r"^\s*(?:(?:" + _UV_RUN + r")?" + _PYTHON + r")\s+")
 # A launcher whose command continues on the next line (`python \`).
 LAUNCHER_CONTINUATION = re.compile(
     r"^\s*(?:(?:" + _UV_RUN + r")?" + _PYTHON + r")\s*\\$")
+# A uv environment wrapper whose command continues on the next line
+# (`uv run --with sympy \` with the `python ...` part on the
+# following line).
+LAUNCHER_UV_CONTINUATION = re.compile(
+    r"^\s*(?:" + _UV_RUN + r")\\$")
 # The script token: bare basename, optional trailing arguments.
 SCRIPT = re.compile(r"^\s*([A-Za-z0-9_]+\.py)(\s.*)?$")
 
@@ -60,4 +66,11 @@ def match_replay(lines, index):
         sm = SCRIPT.match(lines[index + 1])
         if sm:
             return sm.group(1), index + 1, "continuation"
+    u = LAUNCHER_UV_CONTINUATION.match(line)
+    if u and index + 1 < len(lines):
+        lm = LAUNCHER.match(lines[index + 1])
+        if lm:
+            sm = SCRIPT.match(lines[index + 1][lm.end():])
+            if sm:
+                return sm.group(1), index + 1, "continuation"
     return None

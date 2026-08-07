@@ -27,7 +27,7 @@ prize problem.
 ## Toric-Segre reduction
 
 The three monomial plane maps of
-[`P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md`](P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md)
+[`P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md`](claims/p4/classifications/pair-geometry/pure-rank-two/boundaries/P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md)
 restrict at `E=0` to a secant line of the Segre variety.  In the
 canonical slice coordinates its two pure directions are
 

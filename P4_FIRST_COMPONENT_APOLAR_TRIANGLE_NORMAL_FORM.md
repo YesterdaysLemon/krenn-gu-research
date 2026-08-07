@@ -129,7 +129,7 @@ triangle relations have coefficient ranks `(2,1,1)`.
 
 ## Equivalence with the original family
 
-In [`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](P4_DECOMPOSABLE_RANK_TWO_FAMILY.md),
+In [`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](claims/p4/classifications/pair-geometry/decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md),
 set
 
 ```text
@@ -147,7 +147,7 @@ Pluecker vectors become exactly those of (1), (6).  Conversely every point of
 the dense chart `q!=0` arises from (12).  The diagonal-source orbit of the
 two-parameter apolar family is therefore precisely the original
 five-dimensional component, whose smooth component certificate remains
-[`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](P4_PURE_RANK_TWO_COMPONENT_THEOREM.md).
+[`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md).
 
 ## Foreign-language payoff and frontier
 

@@ -52,7 +52,7 @@ The placement is explicit.  Reorder the modes as `(2,3,0,1)`.  For `r=+1`
 use source order `(X2,X1,X0,X3)`, and for `r=-1` use
 `(X3,X1,X0,X2)`.  In both cases the four row spaces become the overlapping
 secant normal form of
-[`P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md`](P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md)
+[`P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md`](claims/p4/classifications/pair-geometry/overlapping-secant-lower-pair/P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md)
 at
 
 ```text

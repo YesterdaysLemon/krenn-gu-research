@@ -1,0 +1,195 @@
+{
+  "batch_id": "p4-pair-geometry-stage7",
+  "approved_by": "YesterdaysLemon (repository owner), Stage 7 P4 pair-geometry classification/boundary migration instruction",
+  "approved_at": "2026-08-07",
+  "base_sha": "51fbc33568cd08ad11101b4f569e17a3ac001040",
+  "manifest_sha256": "39ebb68f0b52d6501447e2fe06f0348f54fda656c217d161226a7818c3c32e85",
+  "mapping_sha256": "dbe3558f58f446fd6f6f6acb2a6d623219c351071bdac1b802aeb0f40d499ead",
+  "member_count": 42,
+  "moves": [
+    {
+      "old_path": "P4_DECOMPOSABLE_RANK_TWO_FAMILY.md",
+      "new_path": "claims/p4/classifications/pair-geometry/decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md"
+    },
+    {
+      "old_path": "P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md",
+      "new_path": "claims/p4/classifications/pair-geometry/decomposable-restriction-rank-drop/P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md"
+    },
+    {
+      "old_path": "P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md",
+      "new_path": "claims/p4/classifications/pair-geometry/disjoint-secant-lower-pair/P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md"
+    },
+    {
+      "old_path": "P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md",
+      "new_path": "claims/p4/classifications/pair-geometry/full-support-tangent-pair/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md"
+    },
+    {
+      "old_path": "P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md",
+      "new_path": "claims/p4/classifications/pair-geometry/lower-pair-rank-exhaustion/P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md"
+    },
+    {
+      "old_path": "P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/pair-geometry/overlapping-secant-lower-pair/P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md",
+      "new_path": "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md"
+    },
+    {
+      "old_path": "P4_PURE_RANK_TWO_COMPONENT_THEOREM.md",
+      "new_path": "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
+    },
+    {
+      "old_path": "P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md",
+      "new_path": "claims/p4/classifications/pair-geometry/pure-rank-two/boundaries/P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md"
+    },
+    {
+      "old_path": "P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md",
+      "new_path": "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md"
+    },
+    {
+      "old_path": "P4_RANK_ONE_PAIR_OBSTRUCTION.md",
+      "new_path": "claims/p4/classifications/pair-geometry/rank-one-pair-obstruction/P4_RANK_ONE_PAIR_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md",
+      "new_path": "claims/p4/classifications/pair-geometry/rank-two-pair-kernel-geometry/P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md"
+    },
+    {
+      "old_path": "P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md",
+      "new_path": "claims/p4/boundaries/pair-geometry/support-one-secant/P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md"
+    },
+    {
+      "old_path": "P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md",
+      "new_path": "claims/p4/boundaries/pair-geometry/support-two-tangent-flag/P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md"
+    },
+    {
+      "old_path": "P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/pair-geometry/tangent-rank-two-pair-purity/P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "audit_p4_decomposable_rank_two_family.py",
+      "new_path": "claims/p4/classifications/pair-geometry/decomposable-rank-two-family/audit_p4_decomposable_rank_two_family.py"
+    },
+    {
+      "old_path": "audit_p4_decomposable_restriction_rank_drop.py",
+      "new_path": "claims/p4/classifications/pair-geometry/decomposable-restriction-rank-drop/audit_p4_decomposable_restriction_rank_drop.py"
+    },
+    {
+      "old_path": "audit_p4_disjoint_secant_lower_pair_component.py",
+      "new_path": "claims/p4/classifications/pair-geometry/disjoint-secant-lower-pair/audit_p4_disjoint_secant_lower_pair_component.py"
+    },
+    {
+      "old_path": "audit_p4_full_support_tangent_pair_component.py",
+      "new_path": "claims/p4/classifications/pair-geometry/full-support-tangent-pair/audit_p4_full_support_tangent_pair_component.py"
+    },
+    {
+      "old_path": "audit_p4_overlapping_secant_lower_pair_classification.py",
+      "new_path": "claims/p4/classifications/pair-geometry/overlapping-secant-lower-pair/audit_p4_overlapping_secant_lower_pair_classification.py"
+    },
+    {
+      "old_path": "audit_p4_pure_rank_two_component.py",
+      "new_path": "claims/p4/classifications/pair-geometry/pure-rank-two/audit_p4_pure_rank_two_component.py"
+    },
+    {
+      "old_path": "audit_p4_pure_rank_two_component_chart_closure.py",
+      "new_path": "claims/p4/classifications/pair-geometry/pure-rank-two/audit_p4_pure_rank_two_component_chart_closure.py"
+    },
+    {
+      "old_path": "audit_p4_pure_rank_two_component_toric_boundary.py",
+      "new_path": "claims/p4/classifications/pair-geometry/pure-rank-two/boundaries/audit_p4_pure_rank_two_component_toric_boundary.py"
+    },
+    {
+      "old_path": "audit_p4_pure_rank_two_toric_slice_segre.py",
+      "new_path": "claims/p4/classifications/pair-geometry/pure-rank-two/audit_p4_pure_rank_two_toric_slice_segre.py"
+    },
+    {
+      "old_path": "audit_p4_rank_one_pair_obstruction.py",
+      "new_path": "claims/p4/classifications/pair-geometry/rank-one-pair-obstruction/audit_p4_rank_one_pair_obstruction.py"
+    },
+    {
+      "old_path": "audit_p4_support_one_secant_boundary_inclusion.py",
+      "new_path": "claims/p4/boundaries/pair-geometry/support-one-secant/audit_p4_support_one_secant_boundary_inclusion.py"
+    },
+    {
+      "old_path": "audit_p4_support_two_tangent_flag_boundary_inclusion.py",
+      "new_path": "claims/p4/boundaries/pair-geometry/support-two-tangent-flag/audit_p4_support_two_tangent_flag_boundary_inclusion.py"
+    },
+    {
+      "old_path": "audit_p4_tangent_rank_two_pair_purity_classification.py",
+      "new_path": "claims/p4/classifications/pair-geometry/tangent-rank-two-pair-purity/audit_p4_tangent_rank_two_pair_purity_classification.py"
+    },
+    {
+      "old_path": "verify_p4_decomposable_rank_two_family.py",
+      "new_path": "claims/p4/classifications/pair-geometry/decomposable-rank-two-family/verify_p4_decomposable_rank_two_family.py"
+    },
+    {
+      "old_path": "verify_p4_decomposable_restriction_rank_drop.py",
+      "new_path": "claims/p4/classifications/pair-geometry/decomposable-restriction-rank-drop/verify_p4_decomposable_restriction_rank_drop.py"
+    },
+    {
+      "old_path": "verify_p4_disjoint_secant_lower_pair_component.py",
+      "new_path": "claims/p4/classifications/pair-geometry/disjoint-secant-lower-pair/verify_p4_disjoint_secant_lower_pair_component.py"
+    },
+    {
+      "old_path": "verify_p4_full_support_tangent_pair_component.py",
+      "new_path": "claims/p4/classifications/pair-geometry/full-support-tangent-pair/verify_p4_full_support_tangent_pair_component.py"
+    },
+    {
+      "old_path": "verify_p4_overlapping_secant_lower_pair_classification.py",
+      "new_path": "claims/p4/classifications/pair-geometry/overlapping-secant-lower-pair/verify_p4_overlapping_secant_lower_pair_classification.py"
+    },
+    {
+      "old_path": "verify_p4_pure_rank_two_component.py",
+      "new_path": "claims/p4/classifications/pair-geometry/pure-rank-two/verify_p4_pure_rank_two_component.py"
+    },
+    {
+      "old_path": "verify_p4_pure_rank_two_component_chart_closure.py",
+      "new_path": "claims/p4/classifications/pair-geometry/pure-rank-two/verify_p4_pure_rank_two_component_chart_closure.py"
+    },
+    {
+      "old_path": "verify_p4_pure_rank_two_component_toric_boundary.py",
+      "new_path": "claims/p4/classifications/pair-geometry/pure-rank-two/boundaries/verify_p4_pure_rank_two_component_toric_boundary.py"
+    },
+    {
+      "old_path": "verify_p4_pure_rank_two_toric_slice_segre.py",
+      "new_path": "claims/p4/classifications/pair-geometry/pure-rank-two/verify_p4_pure_rank_two_toric_slice_segre.py"
+    },
+    {
+      "old_path": "verify_p4_rank_one_pair_obstruction.py",
+      "new_path": "claims/p4/classifications/pair-geometry/rank-one-pair-obstruction/verify_p4_rank_one_pair_obstruction.py"
+    },
+    {
+      "old_path": "verify_p4_rank_two_pair_kernel_geometry.py",
+      "new_path": "claims/p4/classifications/pair-geometry/rank-two-pair-kernel-geometry/verify_p4_rank_two_pair_kernel_geometry.py"
+    },
+    {
+      "old_path": "verify_p4_support_one_secant_boundary_inclusion.py",
+      "new_path": "claims/p4/boundaries/pair-geometry/support-one-secant/verify_p4_support_one_secant_boundary_inclusion.py"
+    },
+    {
+      "old_path": "verify_p4_support_two_tangent_flag_boundary_inclusion.py",
+      "new_path": "claims/p4/boundaries/pair-geometry/support-two-tangent-flag/verify_p4_support_two_tangent_flag_boundary_inclusion.py"
+    },
+    {
+      "old_path": "verify_p4_tangent_rank_two_pair_purity_classification.py",
+      "new_path": "claims/p4/classifications/pair-geometry/tangent-rank-two-pair-purity/verify_p4_tangent_rank_two_pair_purity_classification.py"
+    }
+  ],
+  "rationale": "Stage 7: P4 pair-geometry spine. 12 packages (10 classification, 2 boundary) covering the rank-one/rank-two pair obstructions, the secant/tangent lower-pair components, the decomposable rank-two family and rank-drop theorem, the lower-pair exhaustion corollary, the four-document pure-rank-two cluster (canonical theorem, chart closure, toric boundary subclaim in the boundaries/ subpackage, Segre slice reduction), and the two support-degeneration boundary inclusions, move from the root into claims/p4/classifications/pair-geometry/<package>/ and claims/p4/boundaries/pair-geometry/<package>/. Human review reassigned 11 p4/boundaries records to pair-geometry classifications (their documents are structural theorems, not boundary inclusions) and kept the two genuine boundary inclusions under p4/boundaries. Excluded: global pair-rank reduction machinery, shared component verifiers, marked-delta2 and mixed-determinantal classifications (deferred), P5 consumers, legacy artifacts.",
+  "notes": "Cross-category batch: 19 members originate in p4/boundaries and 23 in p4/classifications; family-population arithmetic is reported per source family. rank-two-pair-kernel-geometry has no independent audit (its document states the verifier is a tiny exact replay of the completed symbolic proof); lower-pair-rank-exhaustion is a corollary document whose stated replay is the union of eight sibling pair-geometry scripts. The pure-rank-two toric-slice-segre scripts use a shorter stem than their document and are consolidated into the document's package.",
+  "packages": [
+    "p4/classifications/pair-geometry/decomposable-rank-two-family",
+    "p4/classifications/pair-geometry/decomposable-restriction-rank-drop",
+    "p4/classifications/pair-geometry/disjoint-secant-lower-pair",
+    "p4/classifications/pair-geometry/full-support-tangent-pair",
+    "p4/classifications/pair-geometry/lower-pair-rank-exhaustion",
+    "p4/classifications/pair-geometry/overlapping-secant-lower-pair",
+    "p4/classifications/pair-geometry/pure-rank-two",
+    "p4/classifications/pair-geometry/rank-one-pair-obstruction",
+    "p4/classifications/pair-geometry/rank-two-pair-kernel-geometry",
+    "p4/classifications/pair-geometry/tangent-rank-two-pair-purity",
+    "p4/boundaries/pair-geometry/support-one-secant",
+    "p4/boundaries/pair-geometry/support-two-tangent-flag"
+  ]
+}

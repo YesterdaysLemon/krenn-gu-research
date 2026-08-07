@@ -8,13 +8,28 @@ import itertools
 import math
 import subprocess
 from dataclasses import dataclass
+from pathlib import Path
+
+import sys
 
 import sympy as sp
 
 from p5_high_coordinate_tree_chart_cegar import (
     singular_command_with_timeout,
 )
-from verify_p4_pure_rank_two_toric_slice_segre import (
+# The pure-rank-two pair-geometry package moved in Stage 7; expose the
+# package root through the shared helper so the bare-name import below
+# resolves.
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import expose_claim_package  # noqa: E402
+
+expose_claim_package(
+    Path(__file__).resolve().parent,
+    "claims/p4/classifications/pair-geometry/pure-rank-two")
+from verify_p4_pure_rank_two_toric_slice_segre import (  # noqa: E402
     add,
     affine_rank,
     classify_slice,

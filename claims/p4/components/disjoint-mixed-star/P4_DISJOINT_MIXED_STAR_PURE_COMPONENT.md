@@ -291,7 +291,7 @@ The surviving exact target is to combine this complete stratum with the
 remaining rank-one/rank-two graph orientations and decide
 all-pair-ranks-at-least-three component exhaustiveness.  The entire
 lower-pair locus is classified separately in
-[`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](../../../../P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
+[`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](../../classifications/pair-geometry/lower-pair-rank-exhaustion/P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
 
 The global prize conjecture remains unresolved.
 

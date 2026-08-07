@@ -5,7 +5,7 @@
 This is an exact characteristic-zero obstruction on the generic
 diagonal-source orbit of the first all-rank-two pure-compression
 component proved in
-[`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](P4_PURE_RANK_TWO_COMPONENT_THEOREM.md).
+[`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md).
 
 The weighted `01` mixed-coefficient matrix has full column rank for
 every marked basis.  The weighted `23` binary projection has two

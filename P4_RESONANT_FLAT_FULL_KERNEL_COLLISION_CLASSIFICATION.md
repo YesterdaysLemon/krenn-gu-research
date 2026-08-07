@@ -271,7 +271,7 @@ subspaces is developed by Prazmowska--Prazmowski--Zynel,
 
 The rank-two seam (17) then lands in the smallest Kronecker/Segre pencil
 boundary classified intrinsically in
-[`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md),
+[`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](claims/p4/classifications/pair-geometry/rank-two-pair-kernel-geometry/P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md),
 next to De Teran--Dopico--Landsberg,
 [Irreducible components of matrix pencils with bounded normal rank](https://arxiv.org/abs/1606.02574).
 Equations (2)--(19) are direct squarefree-algebra calculations; neither

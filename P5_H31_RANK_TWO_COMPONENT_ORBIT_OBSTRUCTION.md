@@ -5,14 +5,14 @@
 This is an exact characteristic-zero obstruction.
 
 Take any admissible member of the five-parameter family in
-[`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](P4_DECOMPOSABLE_RANK_TWO_FAMILY.md),
+[`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](claims/p4/classifications/pair-geometry/decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md),
 and apply arbitrary permutations of its four source coordinates and
 four tensor modes.  No resulting pure `P_4` compression can be the pure
 member of an `H31` pure/`Delta_2` pencil with rank-three ternary local
 maps.
 
 By
-[`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](P4_PURE_RANK_TWO_COMPONENT_THEOREM.md),
+[`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md),
 the displayed family is a dense chart in a generically smooth
 five-dimensional component of the plane locus.  This theorem excludes
 the displayed **marked row section** and its source/mode symmetry

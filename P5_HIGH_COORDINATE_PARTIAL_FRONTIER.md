@@ -161,7 +161,7 @@ The known five-parameter family of all-rank-two maps sending `P_4` to
 a pure tensor is now known to be a dense chart in a generically smooth
 five-dimensional component of the pure-compression locus:
 
-- [`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](P4_PURE_RANK_TWO_COMPONENT_THEOREM.md)
+- [`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md)
 
 That component is not exhaustive.  Recasting `P_4` as the Frobenius
 intersection form of
@@ -657,7 +657,7 @@ divisor; exact mixed-kernel and marked-map analysis excludes the
 displayed marked section of that divisor in all four
 distinguished-source orientations:
 
-- [`P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md`](P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md)
+- [`P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md)
 - [`P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md)
 
 The first-plane line at infinity and the coupled three-plane toric base
@@ -668,8 +668,8 @@ all-rank plane/orientation pairs; no vertex supports a nonzero pure
 slice:
 
 - [`P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md`](P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md)
-- [`P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md`](P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md)
-- [`P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md`](P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md)
+- [`P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md`](claims/p4/classifications/pair-geometry/pure-rank-two/boundaries/P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md)
+- [`P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md)
 
 The 21 genuine toric plane/orientation cases now have a complete marked
 incidence.  The 17 pure-direction types, both projective charts of the

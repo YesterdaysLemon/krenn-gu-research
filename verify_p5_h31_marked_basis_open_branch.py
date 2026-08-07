@@ -13,8 +13,8 @@ import sympy as sp
 
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P5_H31_MARKED_BASIS_OPEN_BRANCH.md"
-FAMILY = ROOT / "P4_DECOMPOSABLE_RANK_TWO_FAMILY.md"
-COMPONENT = ROOT / "P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
+FAMILY = ROOT / "claims/p4/classifications/pair-geometry/decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md"
+COMPONENT = ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
 BITS4 = tuple(itertools.product((0, 1), repeat=4))
 BITS3 = tuple(itertools.product((0, 1), repeat=3))
 PERMUTATIONS = tuple(itertools.permutations(range(4)))

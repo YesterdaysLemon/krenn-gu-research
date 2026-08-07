@@ -50,7 +50,7 @@ independent target directions.
 
 ## Rank-drop dichotomy
 
-[`P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md`](P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md)
+[`P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md`](claims/p4/classifications/pair-geometry/decomposable-restriction-rank-drop/P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md)
 proves that a nonzero decomposable restriction of `P_4`, through four
 maps of rank at least two, has rank two in at least two modes.  Apply
 this to each rare deletion.  The original maps have rank three, and
@@ -102,7 +102,7 @@ This is an arbitrary-chart theorem over `C`, not a finite ledger
 observation.
 
 The lower bound is sharp even over the integers.  The family in
-[`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](P4_DECOMPOSABLE_RANK_TWO_FAMILY.md)
+[`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](claims/p4/classifications/pair-geometry/decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md)
 has all four maps of rank two and sends `P_4` to a nonzero pure tensor.
 Therefore no theorem about one rare deletion in isolation can finish
 this branch.  A successful obstruction must use the fact that the same

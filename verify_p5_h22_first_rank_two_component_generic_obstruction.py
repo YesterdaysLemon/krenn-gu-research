@@ -27,7 +27,7 @@ from verify_p5_h31_marked_basis_fibre_classification import rows
 
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md"
-COMPONENT = ROOT / "P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
+COMPONENT = ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
 EXPECTED_D23_PROJECTION = (
     "(L^2*Q^2*C*r^2+2*L^2*Q^2*C*r+L^2*Q^2*C+L*Q^2*C^2*r^2+2*L*Q^2*C^2*r+L*Q^2*C^2-L*Q*C*r^2+L*Q*C*r+2*L*Q*C+Q*C^2*r+Q*C^2-C*r+C)*t2+(L^3*Q*r^2-L^3*Q+L^2*Q*C*r^2-L^2*Q*C+L^2*r-L^2)*t3+(-L^2*Q*C*r-L^2*Q*C-L*Q*C^2*r-L*Q*C^2+L*C*r-L*C)",
     "t1",

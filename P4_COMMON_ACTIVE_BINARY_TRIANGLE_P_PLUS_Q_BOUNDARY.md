@@ -524,12 +524,12 @@ uv run --with sympy --with z3-solver python \
 uv run --with sympy python \
   audit_p4_common_active_binary_triangle_p_plus_q_boundary.py
 
-uv run --with sympy python verify_p4_rank_two_pair_kernel_geometry.py
-uv run --with sympy python verify_p4_tangent_rank_two_pair_purity_classification.py
-uv run --with sympy python verify_p4_support_two_tangent_flag_boundary_inclusion.py
-uv run --with sympy python verify_p4_full_support_tangent_pair_component.py
-uv run --with sympy python verify_p4_disjoint_secant_lower_pair_component.py
-uv run --with sympy python verify_p4_support_one_secant_boundary_inclusion.py
+uv run --with sympy python claims/p4/classifications/pair-geometry/rank-two-pair-kernel-geometry/verify_p4_rank_two_pair_kernel_geometry.py
+uv run --with sympy python claims/p4/classifications/pair-geometry/tangent-rank-two-pair-purity/verify_p4_tangent_rank_two_pair_purity_classification.py
+uv run --with sympy python claims/p4/boundaries/pair-geometry/support-two-tangent-flag/verify_p4_support_two_tangent_flag_boundary_inclusion.py
+uv run --with sympy python claims/p4/classifications/pair-geometry/full-support-tangent-pair/verify_p4_full_support_tangent_pair_component.py
+uv run --with sympy python claims/p4/classifications/pair-geometry/disjoint-secant-lower-pair/verify_p4_disjoint_secant_lower_pair_component.py
+uv run --with sympy python claims/p4/boundaries/pair-geometry/support-one-secant/verify_p4_support_one_secant_boundary_inclusion.py
 ```
 
 The first command reconstructs (1)--(3), checks the generic min-plus theorem,

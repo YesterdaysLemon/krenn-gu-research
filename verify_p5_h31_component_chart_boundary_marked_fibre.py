@@ -32,7 +32,7 @@ ROOT = Path(__file__).resolve().parent
 THEOREM = (
     ROOT / "P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md"
 )
-PLANE = ROOT / "P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md"
+PLANE = ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md"
 CANONICAL = ROOT / "P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md"
 GENERATOR = (
     ROOT / "derive_p5_h31_chart_boundary_marked_fibre_elimination.py"

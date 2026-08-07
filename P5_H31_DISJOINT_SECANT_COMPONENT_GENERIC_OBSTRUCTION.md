@@ -15,7 +15,7 @@ remain open.
 ## Three moduli, not six
 
 Use the notation of
-[`P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md`](P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md).
+[`P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md`](claims/p4/classifications/pair-geometry/disjoint-secant-lower-pair/P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md).
 On the generic torus chart apply
 
 ```text

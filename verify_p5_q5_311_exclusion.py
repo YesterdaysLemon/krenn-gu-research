@@ -13,7 +13,7 @@ import sympy as sp
 
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P5_Q5_311_EXCLUSION_THEOREM.md"
-RANK_DROP = ROOT / "P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md"
+RANK_DROP = ROOT / "claims/p4/classifications/pair-geometry/decomposable-restriction-rank-drop/P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md"
 SHARED_DROP = ROOT / "P5_Q5_311_SHARED_DROP_OBSTRUCTION.md"
 P3_CLASSIFICATION = (
     ROOT / "P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md"

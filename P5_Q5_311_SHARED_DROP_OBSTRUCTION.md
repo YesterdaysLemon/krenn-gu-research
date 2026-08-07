@@ -12,7 +12,7 @@ P_5 -> Delta_3,
 
 the two rare deleted-`P_4` slices cannot lose rank in the same remaining
 mode.  Combined with
-[`P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md`](P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md),
+[`P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md`](claims/p4/classifications/pair-geometry/decomposable-restriction-rank-drop/P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md),
 their two rank-drop sets must therefore be disjoint two-element sets
 partitioning the four remaining modes.
 
