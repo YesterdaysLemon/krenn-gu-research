@@ -5571,24 +5571,28 @@
     },
     {
       "old_path": "P4_DECOMPOSABLE_RANK_TWO_FAMILY.md",
-      "proposed_path": "claims/p4/boundaries/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md",
+      "proposed_path": "claims/p4/classifications/pair-geometry/decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md",
       "category": "claim_document",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/classifications/pair-geometry/decomposable-rank-two-family",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
-        "part of verify/audit triple"
+        "part of verify/audit triple",
+        "stage7_human_review: P4 pair-geometry spine package",
+        "stage7_human_review: reclassified p4/boundaries -> pair-geometry classification; the document's status states it is a structural component/rank theorem, not a boundary inclusion"
       ]
     },
     {
       "old_path": "P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md",
-      "proposed_path": "claims/p4/boundaries/P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md",
+      "proposed_path": "claims/p4/classifications/pair-geometry/decomposable-restriction-rank-drop/P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md",
       "category": "claim_document",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/classifications/pair-geometry/decomposable-restriction-rank-drop",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
-        "part of verify/audit triple"
+        "part of verify/audit triple",
+        "stage7_human_review: P4 pair-geometry spine package",
+        "stage7_human_review: reclassified p4/boundaries -> pair-geometry classification; the document's status states it is a structural component/rank theorem, not a boundary inclusion"
       ]
     },
     {
@@ -5661,13 +5665,14 @@
     },
     {
       "old_path": "P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md",
-      "proposed_path": "claims/p4/classifications/P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md",
+      "proposed_path": "claims/p4/classifications/pair-geometry/disjoint-secant-lower-pair/P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/pair-geometry/disjoint-secant-lower-pair",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
-        "part of verify/audit triple"
+        "part of verify/audit triple",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
@@ -5739,13 +5744,14 @@
     },
     {
       "old_path": "P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md",
-      "proposed_path": "claims/p4/classifications/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md",
+      "proposed_path": "claims/p4/classifications/pair-geometry/full-support-tangent-pair/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md",
       "category": "claim_document",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/pair-geometry/full-support-tangent-pair",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
-        "part of verify/audit triple"
+        "part of verify/audit triple",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
@@ -5761,12 +5767,13 @@
     },
     {
       "old_path": "P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md",
-      "proposed_path": "claims/p4/classifications/P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md",
+      "proposed_path": "claims/p4/classifications/pair-geometry/lower-pair-rank-exhaustion/P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md",
       "category": "claim_document",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/pair-geometry/lower-pair-rank-exhaustion",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
@@ -5959,55 +5966,60 @@
     },
     {
       "old_path": "P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md",
-      "proposed_path": "claims/p4/classifications/P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md",
+      "proposed_path": "claims/p4/classifications/pair-geometry/overlapping-secant-lower-pair/P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md",
       "category": "claim_document",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/pair-geometry/overlapping-secant-lower-pair",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
-        "part of verify/audit triple"
+        "part of verify/audit triple",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
       "old_path": "P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md",
-      "proposed_path": "claims/p4/classifications/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md",
+      "proposed_path": "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md",
       "category": "claim_document",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/pair-geometry/pure-rank-two",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
-        "part of verify/audit triple"
+        "part of verify/audit triple",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
       "old_path": "P4_PURE_RANK_TWO_COMPONENT_THEOREM.md",
-      "proposed_path": "claims/p4/classifications/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md",
+      "proposed_path": "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md",
       "category": "claim_document",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/pair-geometry/pure-rank-two",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
       "old_path": "P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md",
-      "proposed_path": "claims/p4/classifications/P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md",
+      "proposed_path": "claims/p4/classifications/pair-geometry/pure-rank-two/boundaries/P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md",
       "category": "claim_document",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/pair-geometry/pure-rank-two",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
-        "part of verify/audit triple"
+        "part of verify/audit triple",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
       "old_path": "P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md",
-      "proposed_path": "claims/p4/classifications/P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md",
+      "proposed_path": "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md",
       "category": "claim_document",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/pair-geometry/pure-rank-two",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
@@ -6035,24 +6047,28 @@
     },
     {
       "old_path": "P4_RANK_ONE_PAIR_OBSTRUCTION.md",
-      "proposed_path": "claims/p4/boundaries/P4_RANK_ONE_PAIR_OBSTRUCTION.md",
+      "proposed_path": "claims/p4/classifications/pair-geometry/rank-one-pair-obstruction/P4_RANK_ONE_PAIR_OBSTRUCTION.md",
       "category": "claim_document",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/classifications/pair-geometry/rank-one-pair-obstruction",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
-        "part of verify/audit triple"
+        "part of verify/audit triple",
+        "stage7_human_review: P4 pair-geometry spine package",
+        "stage7_human_review: reclassified p4/boundaries -> pair-geometry classification; the document's status states it is a structural component/rank theorem, not a boundary inclusion"
       ]
     },
     {
       "old_path": "P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md",
-      "proposed_path": "claims/p4/boundaries/P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md",
+      "proposed_path": "claims/p4/classifications/pair-geometry/rank-two-pair-kernel-geometry/P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md",
       "category": "claim_document",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/classifications/pair-geometry/rank-two-pair-kernel-geometry",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
-        "part of verify/audit triple"
+        "part of verify/audit triple",
+        "stage7_human_review: P4 pair-geometry spine package",
+        "stage7_human_review: reclassified p4/boundaries -> pair-geometry classification; the document's status states it is a structural component/rank theorem, not a boundary inclusion"
       ]
     },
     {
@@ -6218,35 +6234,38 @@
     },
     {
       "old_path": "P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md",
-      "proposed_path": "claims/p4/boundaries/P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md",
+      "proposed_path": "claims/p4/boundaries/pair-geometry/support-one-secant/P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md",
       "category": "claim_document",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/pair-geometry/support-one-secant",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
-        "part of verify/audit triple"
+        "part of verify/audit triple",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
       "old_path": "P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md",
-      "proposed_path": "claims/p4/boundaries/P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md",
+      "proposed_path": "claims/p4/boundaries/pair-geometry/support-two-tangent-flag/P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md",
       "category": "claim_document",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/pair-geometry/support-two-tangent-flag",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
-        "part of verify/audit triple"
+        "part of verify/audit triple",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
       "old_path": "P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md",
-      "proposed_path": "claims/p4/classifications/P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md",
+      "proposed_path": "claims/p4/classifications/pair-geometry/tangent-rank-two-pair-purity/P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md",
       "category": "claim_document",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/pair-geometry/tangent-rank-two-pair-purity",
       "confidence": "medium",
       "evidence": [
         "filename prefix P4_",
-        "part of verify/audit triple"
+        "part of verify/audit triple",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
@@ -12407,22 +12426,26 @@
     },
     {
       "old_path": "audit_p4_decomposable_rank_two_family.py",
-      "proposed_path": "claims/p4/boundaries/audit_p4_decomposable_rank_two_family.py",
+      "proposed_path": "claims/p4/classifications/pair-geometry/decomposable-rank-two-family/audit_p4_decomposable_rank_two_family.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/classifications/pair-geometry/decomposable-rank-two-family",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package",
+        "stage7_human_review: reclassified p4/boundaries -> pair-geometry classification; the document's status states it is a structural component/rank theorem, not a boundary inclusion"
       ]
     },
     {
       "old_path": "audit_p4_decomposable_restriction_rank_drop.py",
-      "proposed_path": "claims/p4/boundaries/audit_p4_decomposable_restriction_rank_drop.py",
+      "proposed_path": "claims/p4/classifications/pair-geometry/decomposable-restriction-rank-drop/audit_p4_decomposable_restriction_rank_drop.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/classifications/pair-geometry/decomposable-restriction-rank-drop",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package",
+        "stage7_human_review: reclassified p4/boundaries -> pair-geometry classification; the document's status states it is a structural component/rank theorem, not a boundary inclusion"
       ]
     },
     {
@@ -12489,12 +12512,13 @@
     },
     {
       "old_path": "audit_p4_disjoint_secant_lower_pair_component.py",
-      "proposed_path": "claims/p4/classifications/audit_p4_disjoint_secant_lower_pair_component.py",
+      "proposed_path": "claims/p4/classifications/pair-geometry/disjoint-secant-lower-pair/audit_p4_disjoint_secant_lower_pair_component.py",
       "category": "claim_script",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/pair-geometry/disjoint-secant-lower-pair",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
@@ -12560,12 +12584,13 @@
     },
     {
       "old_path": "audit_p4_full_support_tangent_pair_component.py",
-      "proposed_path": "claims/p4/classifications/audit_p4_full_support_tangent_pair_component.py",
+      "proposed_path": "claims/p4/classifications/pair-geometry/full-support-tangent-pair/audit_p4_full_support_tangent_pair_component.py",
       "category": "claim_script",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/pair-geometry/full-support-tangent-pair",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
@@ -12724,52 +12749,57 @@
     },
     {
       "old_path": "audit_p4_overlapping_secant_lower_pair_classification.py",
-      "proposed_path": "claims/p4/classifications/audit_p4_overlapping_secant_lower_pair_classification.py",
+      "proposed_path": "claims/p4/classifications/pair-geometry/overlapping-secant-lower-pair/audit_p4_overlapping_secant_lower_pair_classification.py",
       "category": "claim_script",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/pair-geometry/overlapping-secant-lower-pair",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
       "old_path": "audit_p4_pure_rank_two_component.py",
-      "proposed_path": "claims/p4/classifications/audit_p4_pure_rank_two_component.py",
+      "proposed_path": "claims/p4/classifications/pair-geometry/pure-rank-two/audit_p4_pure_rank_two_component.py",
       "category": "claim_script",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/pair-geometry/pure-rank-two",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
       "old_path": "audit_p4_pure_rank_two_component_chart_closure.py",
-      "proposed_path": "claims/p4/classifications/audit_p4_pure_rank_two_component_chart_closure.py",
+      "proposed_path": "claims/p4/classifications/pair-geometry/pure-rank-two/audit_p4_pure_rank_two_component_chart_closure.py",
       "category": "claim_script",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/pair-geometry/pure-rank-two",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
       "old_path": "audit_p4_pure_rank_two_component_toric_boundary.py",
-      "proposed_path": "claims/p4/classifications/audit_p4_pure_rank_two_component_toric_boundary.py",
+      "proposed_path": "claims/p4/classifications/pair-geometry/pure-rank-two/boundaries/audit_p4_pure_rank_two_component_toric_boundary.py",
       "category": "claim_script",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/pair-geometry/pure-rank-two",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
       "old_path": "audit_p4_pure_rank_two_toric_slice_segre.py",
-      "proposed_path": "claims/p4/boundaries/audit_p4_pure_rank_two_toric_slice_segre.py",
+      "proposed_path": "claims/p4/classifications/pair-geometry/pure-rank-two/audit_p4_pure_rank_two_toric_slice_segre.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/classifications/pair-geometry/pure-rank-two",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
@@ -12795,12 +12825,14 @@
     },
     {
       "old_path": "audit_p4_rank_one_pair_obstruction.py",
-      "proposed_path": "claims/p4/boundaries/audit_p4_rank_one_pair_obstruction.py",
+      "proposed_path": "claims/p4/classifications/pair-geometry/rank-one-pair-obstruction/audit_p4_rank_one_pair_obstruction.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/classifications/pair-geometry/rank-one-pair-obstruction",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package",
+        "stage7_human_review: reclassified p4/boundaries -> pair-geometry classification; the document's status states it is a structural component/rank theorem, not a boundary inclusion"
       ]
     },
     {
@@ -12958,32 +12990,35 @@
     },
     {
       "old_path": "audit_p4_support_one_secant_boundary_inclusion.py",
-      "proposed_path": "claims/p4/boundaries/audit_p4_support_one_secant_boundary_inclusion.py",
+      "proposed_path": "claims/p4/boundaries/pair-geometry/support-one-secant/audit_p4_support_one_secant_boundary_inclusion.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/pair-geometry/support-one-secant",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
       "old_path": "audit_p4_support_two_tangent_flag_boundary_inclusion.py",
-      "proposed_path": "claims/p4/boundaries/audit_p4_support_two_tangent_flag_boundary_inclusion.py",
+      "proposed_path": "claims/p4/boundaries/pair-geometry/support-two-tangent-flag/audit_p4_support_two_tangent_flag_boundary_inclusion.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/pair-geometry/support-two-tangent-flag",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
       "old_path": "audit_p4_tangent_rank_two_pair_purity_classification.py",
-      "proposed_path": "claims/p4/classifications/audit_p4_tangent_rank_two_pair_purity_classification.py",
+      "proposed_path": "claims/p4/classifications/pair-geometry/tangent-rank-two-pair-purity/audit_p4_tangent_rank_two_pair_purity_classification.py",
       "category": "claim_script",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/pair-geometry/tangent-rank-two-pair-purity",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
@@ -18967,22 +19002,26 @@
     },
     {
       "old_path": "verify_p4_decomposable_rank_two_family.py",
-      "proposed_path": "claims/p4/boundaries/verify_p4_decomposable_rank_two_family.py",
+      "proposed_path": "claims/p4/classifications/pair-geometry/decomposable-rank-two-family/verify_p4_decomposable_rank_two_family.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/classifications/pair-geometry/decomposable-rank-two-family",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package",
+        "stage7_human_review: reclassified p4/boundaries -> pair-geometry classification; the document's status states it is a structural component/rank theorem, not a boundary inclusion"
       ]
     },
     {
       "old_path": "verify_p4_decomposable_restriction_rank_drop.py",
-      "proposed_path": "claims/p4/boundaries/verify_p4_decomposable_restriction_rank_drop.py",
+      "proposed_path": "claims/p4/classifications/pair-geometry/decomposable-restriction-rank-drop/verify_p4_decomposable_restriction_rank_drop.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/classifications/pair-geometry/decomposable-restriction-rank-drop",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package",
+        "stage7_human_review: reclassified p4/boundaries -> pair-geometry classification; the document's status states it is a structural component/rank theorem, not a boundary inclusion"
       ]
     },
     {
@@ -19049,12 +19088,13 @@
     },
     {
       "old_path": "verify_p4_disjoint_secant_lower_pair_component.py",
-      "proposed_path": "claims/p4/classifications/verify_p4_disjoint_secant_lower_pair_component.py",
+      "proposed_path": "claims/p4/classifications/pair-geometry/disjoint-secant-lower-pair/verify_p4_disjoint_secant_lower_pair_component.py",
       "category": "claim_script",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/pair-geometry/disjoint-secant-lower-pair",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
@@ -19120,12 +19160,13 @@
     },
     {
       "old_path": "verify_p4_full_support_tangent_pair_component.py",
-      "proposed_path": "claims/p4/classifications/verify_p4_full_support_tangent_pair_component.py",
+      "proposed_path": "claims/p4/classifications/pair-geometry/full-support-tangent-pair/verify_p4_full_support_tangent_pair_component.py",
       "category": "claim_script",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/pair-geometry/full-support-tangent-pair",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
@@ -19304,52 +19345,57 @@
     },
     {
       "old_path": "verify_p4_overlapping_secant_lower_pair_classification.py",
-      "proposed_path": "claims/p4/classifications/verify_p4_overlapping_secant_lower_pair_classification.py",
+      "proposed_path": "claims/p4/classifications/pair-geometry/overlapping-secant-lower-pair/verify_p4_overlapping_secant_lower_pair_classification.py",
       "category": "claim_script",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/pair-geometry/overlapping-secant-lower-pair",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
       "old_path": "verify_p4_pure_rank_two_component.py",
-      "proposed_path": "claims/p4/classifications/verify_p4_pure_rank_two_component.py",
+      "proposed_path": "claims/p4/classifications/pair-geometry/pure-rank-two/verify_p4_pure_rank_two_component.py",
       "category": "claim_script",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/pair-geometry/pure-rank-two",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
       "old_path": "verify_p4_pure_rank_two_component_chart_closure.py",
-      "proposed_path": "claims/p4/classifications/verify_p4_pure_rank_two_component_chart_closure.py",
+      "proposed_path": "claims/p4/classifications/pair-geometry/pure-rank-two/verify_p4_pure_rank_two_component_chart_closure.py",
       "category": "claim_script",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/pair-geometry/pure-rank-two",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
       "old_path": "verify_p4_pure_rank_two_component_toric_boundary.py",
-      "proposed_path": "claims/p4/classifications/verify_p4_pure_rank_two_component_toric_boundary.py",
+      "proposed_path": "claims/p4/classifications/pair-geometry/pure-rank-two/boundaries/verify_p4_pure_rank_two_component_toric_boundary.py",
       "category": "claim_script",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/pair-geometry/pure-rank-two",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
       "old_path": "verify_p4_pure_rank_two_toric_slice_segre.py",
-      "proposed_path": "claims/p4/boundaries/verify_p4_pure_rank_two_toric_slice_segre.py",
+      "proposed_path": "claims/p4/classifications/pair-geometry/pure-rank-two/verify_p4_pure_rank_two_toric_slice_segre.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/classifications/pair-geometry/pure-rank-two",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
@@ -19375,22 +19421,26 @@
     },
     {
       "old_path": "verify_p4_rank_one_pair_obstruction.py",
-      "proposed_path": "claims/p4/boundaries/verify_p4_rank_one_pair_obstruction.py",
+      "proposed_path": "claims/p4/classifications/pair-geometry/rank-one-pair-obstruction/verify_p4_rank_one_pair_obstruction.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/classifications/pair-geometry/rank-one-pair-obstruction",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package",
+        "stage7_human_review: reclassified p4/boundaries -> pair-geometry classification; the document's status states it is a structural component/rank theorem, not a boundary inclusion"
       ]
     },
     {
       "old_path": "verify_p4_rank_two_pair_kernel_geometry.py",
-      "proposed_path": "claims/p4/boundaries/verify_p4_rank_two_pair_kernel_geometry.py",
+      "proposed_path": "claims/p4/classifications/pair-geometry/rank-two-pair-kernel-geometry/verify_p4_rank_two_pair_kernel_geometry.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/classifications/pair-geometry/rank-two-pair-kernel-geometry",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package",
+        "stage7_human_review: reclassified p4/boundaries -> pair-geometry classification; the document's status states it is a structural component/rank theorem, not a boundary inclusion"
       ]
     },
     {
@@ -19548,32 +19598,35 @@
     },
     {
       "old_path": "verify_p4_support_one_secant_boundary_inclusion.py",
-      "proposed_path": "claims/p4/boundaries/verify_p4_support_one_secant_boundary_inclusion.py",
+      "proposed_path": "claims/p4/boundaries/pair-geometry/support-one-secant/verify_p4_support_one_secant_boundary_inclusion.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/pair-geometry/support-one-secant",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
       "old_path": "verify_p4_support_two_tangent_flag_boundary_inclusion.py",
-      "proposed_path": "claims/p4/boundaries/verify_p4_support_two_tangent_flag_boundary_inclusion.py",
+      "proposed_path": "claims/p4/boundaries/pair-geometry/support-two-tangent-flag/verify_p4_support_two_tangent_flag_boundary_inclusion.py",
       "category": "claim_script",
-      "claim_family": "p4/boundaries",
+      "claim_family": "p4/boundaries/pair-geometry/support-two-tangent-flag",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
       "old_path": "verify_p4_tangent_rank_two_pair_purity_classification.py",
-      "proposed_path": "claims/p4/classifications/verify_p4_tangent_rank_two_pair_purity_classification.py",
+      "proposed_path": "claims/p4/classifications/pair-geometry/tangent-rank-two-pair-purity/verify_p4_tangent_rank_two_pair_purity_classification.py",
       "category": "claim_script",
-      "claim_family": "p4/classifications",
+      "claim_family": "p4/classifications/pair-geometry/tangent-rank-two-pair-purity",
       "confidence": "low",
       "evidence": [
-        "filename prefix P4_"
+        "filename prefix P4_",
+        "stage7_human_review: P4 pair-geometry spine package"
       ]
     },
     {
