@@ -178,7 +178,7 @@ exact tangent-cone certificate proves component status, and a
 diagonal-quadric jump invariant separates it from every symmetry
 translate of the first component:
 
-- [`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md)
+- [`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md)
 
 The same diagonal-quadric map has now exposed three more components.
 For a `1+3` block line, the radical-plane normal form reduces the pure
@@ -254,7 +254,7 @@ does not: the new sorted pure-kernel endpoint indegrees are
 `(2,1,0,0)`, versus `(1,1,1,0)` on all three split-cubic branches.
 Thus at least six symmetry-inequivalent component orbits exist:
 
-- [`P4_MIXED_ORIENTATION_PURE_COMPONENT.md`](P4_MIXED_ORIENTATION_PURE_COMPONENT.md)
+- [`P4_MIXED_ORIENTATION_PURE_COMPONENT.md`](claims/p4/components/mixed-orientation/P4_MIXED_ORIENTATION_PURE_COMPONENT.md)
 
 The sixth component is generically excluded from `H31`.  Exact
 function-field projection leaves no marking for distinguished
@@ -282,7 +282,7 @@ fourteen in twenty variables.  This proves a rational
 six-dimensional component.  Its pair profile `(4,3,2,4,4,3)` and
 dimension place it outside all six certified fivefold orbits:
 
-- [`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](P4_SIX_DIMENSIONAL_PURE_COMPONENT.md)
+- [`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](claims/p4/components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md)
 
 The new component is also generically excluded from `H31`.  The
 apolar parameters

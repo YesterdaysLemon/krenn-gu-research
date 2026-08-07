@@ -18,9 +18,13 @@ ROOT = Path(__file__).resolve().parent
 THEOREM = (
     ROOT / "P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
-COMPONENT = ROOT / "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md"
+COMPONENT = (
+    ROOT / "claims" / "p4" / "components" / "diagonal-quadric"
+    / "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md")
 WORKING_NOTE = ROOT / "P5_H22_DIAGONAL_QUADRIC_WORKING_NOTE.md"
-EIGHTH_COMPONENT = ROOT / "P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md"
+EIGHTH_COMPONENT = (
+    ROOT / "claims" / "p4" / "components" / "disjoint-mixed-star"
+    / "P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md")
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 SPECIALIZATION = (
     sp.Rational(-2, 3),

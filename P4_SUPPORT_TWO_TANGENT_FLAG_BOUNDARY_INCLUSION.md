@@ -6,7 +6,7 @@
 support-two polar flag in the tangent rank-two pair classification lies,
 up to source and mode symmetry, in the closure of the six-dimensional
 lower-pair component from
-[`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](P4_SIX_DIMENSIONAL_PURE_COMPONENT.md).
+[`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](claims/p4/components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md).
 
 Together with the embedded-`P_3` alternative, this proves that support-two
 tangent kernels create no new pure-`P_4` component.  The full-support tangent

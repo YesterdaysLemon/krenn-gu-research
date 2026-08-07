@@ -98,7 +98,7 @@ not a new five-dimensional component.  Its identity is exact.  The
 `F_4` point tensor is supported on precisely the words
 `1010, 1110` in the Grassmann charts with pivots
 `(02),(02),(01),(02)` — the apolar support of
-[`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](P4_SIX_DIMENSIONAL_PURE_COMPONENT.md).
+[`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](claims/p4/components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md).
 Writing `m_0,...,m_15` for the `F_4` chart coordinates, the sixfold
 family matches with
 
@@ -365,7 +365,7 @@ classification remain open.  The replay scripts are
    free rational two-parameter normal form, separating invariants,
    the exact `(5,15)` certificate, and a two-prime independent
    audit:
-   [`P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md`](P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md);
+   [`P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md`](claims/p4/components/all-rank-one-triangle/P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md);
    its exact `H31`/`H22` obstructions are now BOTH closed over
    `C(p,q)` resp. `C(p,q,r)` — the single-word support gives a
    reconstruction kernel in all four `H31` frames (every mixed
@@ -421,7 +421,7 @@ classification remain open.  The replay scripts are
    invariants.  Both now have standalone theorems with verifiers
    and independent audits
    ([`P4_SPLIT_PAIR_PURE_COMPONENT.md`](claims/p4/components/split-pair/P4_SPLIT_PAIR_PURE_COMPONENT.md),
-   [`P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md`](P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md));
+   [`P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md`](claims/p4/components/single-word-quadrilateral/P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md));
 4. that sweep's honest tails are taken up in
    [`research_snapshots/2026-08-04-p4-exhaustiveness-tails-census-sixteen/`](research_snapshots/2026-08-04-p4-exhaustiveness-tails-census-sixteen/README.md):
    the `Zc` wall is identified as the **seventh** component's

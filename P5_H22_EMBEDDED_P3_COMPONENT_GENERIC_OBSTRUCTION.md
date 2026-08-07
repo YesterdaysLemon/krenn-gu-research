@@ -4,7 +4,7 @@
 
 This is an exact characteristic-zero theorem on the generic
 diagonal-source orbit of the ninth pure-`P_4` component constructed in
-[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](P4_EMBEDDED_P3_PURE_COMPONENT.md).
+[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](claims/p4/components/embedded-p3/P4_EMBEDDED_P3_PURE_COMPONENT.md).
 
 Both weighted neighboring diagonal pencils have empty binary
 `Delta_2` incidence at the generic component point.  Consequently the

@@ -15,7 +15,9 @@ ROOT = Path(__file__).resolve().parent
 THEOREM = (
     ROOT / "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
-COMPONENT = ROOT / "P4_EMBEDDED_P3_PURE_COMPONENT.md"
+COMPONENT = (
+    ROOT / "claims" / "p4" / "components" / "embedded-p3"
+    / "P4_EMBEDDED_P3_PURE_COMPONENT.md")
 H31 = ROOT / "P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
 WORDS3 = tuple(itertools.product((0, 1), repeat=3))
 WORDS4 = tuple(itertools.product((0, 1), repeat=4))

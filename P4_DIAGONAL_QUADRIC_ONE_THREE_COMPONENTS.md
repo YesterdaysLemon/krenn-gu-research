@@ -10,7 +10,7 @@ Each has dimension five.  They are mutually inequivalent, and they are
 inequivalent to both components previously proved in
 [`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](P4_PURE_RANK_TWO_COMPONENT_THEOREM.md)
 and
-[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md)
+[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md)
 under source-coordinate permutations, diagonal source rescaling, and
 mode permutations.
 

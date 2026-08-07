@@ -11,10 +11,18 @@ from pathlib import Path
 import sympy as sp
 
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md"
-KNOWN_COMPONENT = ROOT / "P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
-KNOWN_CLOSURE = ROOT / "P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md"
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+THEOREM = HERE / "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md"
+KNOWN_COMPONENT = REPO_ROOT / "P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
+KNOWN_CLOSURE = REPO_ROOT / "P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md"
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 
@@ -419,7 +427,7 @@ def main() -> None:
         "source": Path(__file__).name,
         "source_sha256": sha256(Path(__file__)),
     }
-    output_path = ROOT / "tmp" / "p4_diagonal_quadric_pure_component_verified.json"
+    output_path = REPO_ROOT / "tmp" / "p4_diagonal_quadric_pure_component_verified.json"
     output_path.parent.mkdir(exist_ok=True)
     output_path.write_text(
         json.dumps(output, indent=2) + "\n",

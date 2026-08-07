@@ -22,7 +22,7 @@ This result does **not** classify every component of `X`.  In fact, a
 second five-dimensional component has since been constructed using the
 squarefree intersection algebra and lines on diagonal quadrics:
 
-- [`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md)
+- [`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md)
 
 Thus exhaustiveness of the family in this note is false.  Its component
 and complete marked-fibre theorems remain valid with their stated

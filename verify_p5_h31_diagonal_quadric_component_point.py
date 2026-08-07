@@ -21,8 +21,12 @@ from verify_p5_h31_marked_basis_open_branch import (
 
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md"
-COMPONENT = ROOT / "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md"
-COMPONENT_PRIMARY = ROOT / "verify_p4_diagonal_quadric_pure_component.py"
+COMPONENT = (
+    ROOT / "claims" / "p4" / "components" / "diagonal-quadric"
+    / "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md")
+COMPONENT_PRIMARY = (
+    ROOT / "claims" / "p4" / "components" / "diagonal-quadric"
+    / "verify_p4_diagonal_quadric_pure_component.py")
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
 

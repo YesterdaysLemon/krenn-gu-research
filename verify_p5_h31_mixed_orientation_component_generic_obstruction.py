@@ -23,8 +23,12 @@ ROOT = Path(__file__).resolve().parent
 THEOREM = (
     ROOT / "P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
-COMPONENT = ROOT / "P4_MIXED_ORIENTATION_PURE_COMPONENT.md"
-COMPONENT_PRIMARY = ROOT / "verify_p4_mixed_orientation_pure_component.py"
+COMPONENT = (
+    ROOT / "claims" / "p4" / "components" / "mixed-orientation"
+    / "P4_MIXED_ORIENTATION_PURE_COMPONENT.md")
+COMPONENT_PRIMARY = (
+    ROOT / "claims" / "p4" / "components" / "mixed-orientation"
+    / "verify_p4_mixed_orientation_pure_component.py")
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
 

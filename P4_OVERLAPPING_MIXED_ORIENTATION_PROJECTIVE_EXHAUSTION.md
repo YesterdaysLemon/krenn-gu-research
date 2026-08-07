@@ -235,7 +235,7 @@ M=0,       P+Q!=0.                                 (19)
 Then the restriction to the three leaf modes has only its all-active
 coefficient.  The fourth plane supplies the missing coordinate exactly as
 in
-[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](P4_EMBEDDED_P3_PURE_COMPONENT.md).
+[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](claims/p4/components/embedded-p3/P4_EMBEDDED_P3_PURE_COMPONENT.md).
 Hence every genuine corner point is an embedded pure-`P_3` suspension.
 
 ## Consequence

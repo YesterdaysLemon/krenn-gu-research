@@ -208,7 +208,7 @@ four-mode restricted tensor factors as
 
 If (20) is nonzero and pure, its ternary factor is a nonzero pure `P_3`
 restriction.  This is exactly the embedded-`P_3` suspension component from
-[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](P4_EMBEDDED_P3_PURE_COMPONENT.md), not
+[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](claims/p4/components/embedded-p3/P4_EMBEDDED_P3_PURE_COMPONENT.md), not
 a new component.
 
 ## Across the mathematical fence

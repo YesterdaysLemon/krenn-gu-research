@@ -14,7 +14,7 @@ are both **split** across the coordinate splitting
 of `span(X_0,X_1)` and a line of `Pi=span(X_2,X_3)` — with the same
 `span(X_0,X_1)`-line and `B`-conjugate `Pi`-lines.  Together with
 the companion single-word quadrilateral fivefold
-([`P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md`](../../../../P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md),
+([`P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md`](../single-word-quadrilateral/P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md),
 found in the same sweep), the certified census lower bound is
 thirteen component orbits: ten fivefolds and three sixfolds.
 

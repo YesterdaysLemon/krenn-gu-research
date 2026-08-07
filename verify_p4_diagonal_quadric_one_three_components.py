@@ -14,7 +14,9 @@ import sympy as sp
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md"
 KNOWN_FIRST = ROOT / "P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
-KNOWN_SECOND = ROOT / "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md"
+KNOWN_SECOND = (
+    ROOT / "claims" / "p4" / "components" / "diagonal-quadric"
+    / "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md")
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PAIRS = tuple(itertools.combinations(range(4), 2))

@@ -16,9 +16,15 @@ for _p in Path(__file__).resolve().parents:
     if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
         sys.path.insert(0, str(_p / "src"))
         break
-from krenn_gu.bootstrap import bootstrap  # noqa: E402
+from krenn_gu.bootstrap import (  # noqa: E402
+    bootstrap,
+    expose_claim_package,
+)
 
 REPO_ROOT, HERE = bootstrap(__file__)
+# The mixed-orientation package moved in Stage 4; expose it so the
+# bare-name import below resolves.
+expose_claim_package(REPO_ROOT, "claims/p4/components/mixed-orientation")
 
 from verify_p4_mixed_orientation_pure_component import (  # noqa: E402
     coefficients,
@@ -31,7 +37,9 @@ from verify_p4_mixed_orientation_pure_component import (  # noqa: E402
 
 
 THEOREM = HERE / "P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md"
-OVERLAPPING = REPO_ROOT / "P4_MIXED_ORIENTATION_PURE_COMPONENT.md"
+OVERLAPPING = (
+    REPO_ROOT / "claims" / "p4" / "components" / "mixed-orientation"
+    / "P4_MIXED_ORIENTATION_PURE_COMPONENT.md")
 PRIME_CLASSIFICATION = (
     REPO_ROOT / "P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md")
 RADICAL_STAR = (

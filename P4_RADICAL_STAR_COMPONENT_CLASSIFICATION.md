@@ -166,7 +166,7 @@ U_0=span((E,-F,-F,-E),(A,-B,B,A)).                 (8)
 ```
 
 The four planes (6)--(8) are precisely the normal form in
-[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md).
+[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md).
 Only a `2 x 2` active block remains, and its determinant is `-16 Psi`,
 where
 
@@ -301,10 +301,10 @@ plane tuple.”  Its unresolved generic alternatives are:
 3. the lower pair-image-rank and coincident/support-one zero-product
    boundaries.  One rank-two-edge stratum now supplies the
    six-dimensional component in
-   [`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](P4_SIX_DIMENSIONAL_PURE_COMPONENT.md),
+   [`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](claims/p4/components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md),
    while the common `1+3` triple-rank-drop stratum supplies a distinct
    six-dimensional embedded-`P_3` component in
-   [`P4_EMBEDDED_P3_PURE_COMPONENT.md`](P4_EMBEDDED_P3_PURE_COMPONENT.md).
+   [`P4_EMBEDDED_P3_PURE_COMPONENT.md`](claims/p4/components/embedded-p3/P4_EMBEDDED_P3_PURE_COMPONENT.md).
    The full lower-rank boundary is still not classified.
 
 The common smooth diagonal-quadric semisimple case is separately

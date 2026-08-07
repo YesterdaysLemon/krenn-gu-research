@@ -22,8 +22,12 @@ ROOT = Path(__file__).resolve().parent
 THEOREM = (
     ROOT / "P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
-COMPONENT = ROOT / "P4_SIX_DIMENSIONAL_PURE_COMPONENT.md"
-COMPONENT_PRIMARY = ROOT / "verify_p4_six_dimensional_pure_component.py"
+COMPONENT = (
+    ROOT / "claims" / "p4" / "components" / "six-dimensional"
+    / "P4_SIX_DIMENSIONAL_PURE_COMPONENT.md")
+COMPONENT_PRIMARY = (
+    ROOT / "claims" / "p4" / "components" / "six-dimensional"
+    / "verify_p4_six_dimensional_pure_component.py")
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
 

@@ -4,7 +4,7 @@
 
 This is an exact characteristic-zero obstruction at one all-rank-two
 point of the diagonal-quadric component proved in
-[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md).
+[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md).
 
 For this plane tuple, every marking of the pure tensor, every choice of
 the distinguished common source coordinate, and every binary

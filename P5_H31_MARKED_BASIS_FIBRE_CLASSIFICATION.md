@@ -21,7 +21,7 @@ This does not classify the toric and Schubert boundary planes in the
 projective closure of the component.  Moreover, the known component is
 now proved **not** to be the only all-rank-two pure-compression
 component; see
-[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md).
+[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md).
 
 ## The marked-basis bundle
 

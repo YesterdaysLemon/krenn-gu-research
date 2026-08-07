@@ -19,7 +19,7 @@ component, `H22`, or the prize problem.
 ## A rational curve in the `(3,3)` component
 
 In the normal form of
-[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md),
+[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md),
 set
 
 ```text

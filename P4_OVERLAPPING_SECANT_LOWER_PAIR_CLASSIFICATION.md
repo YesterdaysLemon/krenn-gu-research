@@ -10,7 +10,7 @@ branches.  Their closures exhaust this overlapping `1+3` secant stratum.
 
 Each maximal branch has six parameters after restoring the two binary source
 ratios.  Its closure is exactly the six-dimensional component already proved
-in [`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](P4_SIX_DIMENSIONAL_PURE_COMPONENT.md),
+in [`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](claims/p4/components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md),
 not a sixteenth component.  The identification uses an explicit common
 smooth point and source/mode transformation.
 
@@ -186,7 +186,7 @@ At the earlier sixfold certificate
 ```
 
 its four planes are those of
-[`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](P4_SIX_DIMENSIONAL_PURE_COMPONENT.md).
+[`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](claims/p4/components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md).
 Transform an old source row by
 
 ```text

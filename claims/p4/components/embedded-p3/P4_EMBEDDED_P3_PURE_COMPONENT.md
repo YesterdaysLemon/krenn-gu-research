@@ -27,20 +27,20 @@ at least nine symmetry-inequivalent pure-P_4 components.             (2)
 
 A later two-rank-two-spoke mixed-star component has raised the current
 repository-wide lower bound to ten in
-[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md).
+[`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](../../../../P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md).
 
 The theorem is at the pure-`P_4` plane level.  A later apolar
 insertion theorem excludes its generic marked `H31` fibre:
-[`P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
 The same insertion arrangement, after restoring the source-torus
 slope, excludes its generic weighted `H22` fibre:
-[`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
 Its entire rank-two projected-line weighted boundary is excluded by
 six symbolic one-marked factor covers:
-[`P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md).
+[`P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md`](../../../../P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md).
 The rank-one collapse is excluded by the complementary insertion
 pencil:
-[`P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md).
+[`P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md`](../../../../P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md).
 The component theorem itself does not classify the full
 pure-compression locus, analyze the remaining normalization and
 projective boundaries,
@@ -129,7 +129,7 @@ Their normals are
 ```
 
 which is one of the six sign charts in
-[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md).
+[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](../../../../P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md).
 The restricted `P_3` has only
 
 ```text
@@ -297,7 +297,7 @@ previous eight.
 ## Relation to the triangle cut reduction
 
 The family was exposed by the cut-catalecticant analysis in
-[`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md).
+[`P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md`](../../../../P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION.md).
 A common `1+3` cut forces three local planes into one coordinate
 hyperplane.  Instead of contributing a rank-three exceptional
 triangle, the pair images drop to rank two and the problem becomes
@@ -306,7 +306,7 @@ discarding it as degenerate, produces the component above.
 
 The compatible-label implication is now a theorem rather than only
 the construction heuristic:
-[`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md).
+[`P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md`](../../../../P4_NONRESONANT_ONE_THREE_TRIANGLE_OBSTRUCTION.md).
 For three full-support `1+3` bridges, the factorization dichotomy
 forces all singleton labels to coincide; the perfect degree
 `2`/degree `1` pairing in the resulting three-variable algebra then
@@ -321,8 +321,8 @@ structurally forced suspension component.
 Run
 
 ```text
-uv run --with sympy python verify_p4_embedded_p3_pure_component.py
-python audit_p4_embedded_p3_pure_component.py
+uv run --with sympy python claims/p4/components/embedded-p3/verify_p4_embedded_p3_pure_component.py
+python claims/p4/components/embedded-p3/audit_p4_embedded_p3_pure_component.py
 ```
 
 The primary verifier expands all sixteen coefficients symbolically,

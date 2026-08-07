@@ -21,7 +21,7 @@ certified orbits.  The certified lower bound is therefore eight
 component orbits: seven fivefolds and one sixfold.
 
 The embedded-`P_3` suspension in
-[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](../../../../P4_EMBEDDED_P3_PURE_COMPONENT.md)
+[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](../embedded-p3/P4_EMBEDDED_P3_PURE_COMPONENT.md)
 later raised the repository-wide lower bound to nine.  The two-rank-two-spoke
 mixed star in
 [`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md`](../../../../P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md)
@@ -300,11 +300,9 @@ The global prize conjecture remains unresolved.
 Run:
 
 ```text
-python \
-  verify_p4_disjoint_mixed_star_pure_component.py
+python claims/p4/components/disjoint-mixed-star/verify_p4_disjoint_mixed_star_pure_component.py
 
-python \
-  audit_p4_disjoint_mixed_star_pure_component.py
+python claims/p4/components/disjoint-mixed-star/audit_p4_disjoint_mixed_star_pure_component.py
 ```
 
 The primary verifier reconstructs (5)--(11), proves irreducibility,

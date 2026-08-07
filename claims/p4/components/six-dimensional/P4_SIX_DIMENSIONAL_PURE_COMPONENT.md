@@ -13,14 +13,14 @@ from the six previously certified five-dimensional component orbits.
 Consequently there are at least seven symmetry-inequivalent
 pure-compression components at this checkpoint.  A disjoint-support
 mixed star has since raised the certified lower bound to eight in
-[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](claims/p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
+[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](../disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
 The embedded pure-`P_3` suspension in
-[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](P4_EMBEDDED_P3_PURE_COMPONENT.md)
+[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](../embedded-p3/P4_EMBEDDED_P3_PURE_COMPONENT.md)
 has since raised it again to nine.
 
 This is not a classification of every component.  The generic marked
 `H31` fibre has since been excluded in
-[`P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md);
+[`P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md);
 its special parameter/projective boundary remains.  Nothing here
 settles `H22` or the global prize problem.
 
@@ -182,7 +182,7 @@ planes.  Hence this component is inequivalent to all six of them.
 ## The determinantal prime was a subfamily
 
 The mixed-orientation determinantal calculation in
-[`P4_MIXED_ORIENTATION_PURE_COMPONENT.md`](P4_MIXED_ORIENTATION_PURE_COMPONENT.md)
+[`P4_MIXED_ORIENTATION_PURE_COMPONENT.md`](../mixed-orientation/P4_MIXED_ORIENTATION_PURE_COMPONENT.md)
 also produced the linear prime
 
 ```text
@@ -212,8 +212,8 @@ certificate (3), with `d!=a+c`, removes that sample degeneracy.
 Run
 
 ```text
-python verify_p4_six_dimensional_pure_component.py
-python audit_p4_six_dimensional_pure_component.py
+python claims/p4/components/six-dimensional/verify_p4_six_dimensional_pure_component.py
+python claims/p4/components/six-dimensional/audit_p4_six_dimensional_pure_component.py
 ```
 
 The primary verifier derives (2), the rank-six family tangent, the
