@@ -15,6 +15,7 @@ Krenn–Gu conjecture remains **UNRESOLVED**.
 | triangle / 211 | [`triangle-211/`](triangle-211/) | 14 | `p4-triangle-211-stage5` |
 | star / mixed-star | [`star/`](star/) | 17 | `p4-star-stage6` |
 | pair geometry (secant/tangent, lower-pair, pure rank-two) | [`pair-geometry/`](pair-geometry/) | 10 (+2 boundary packages under [`../boundaries/pair-geometry/`](../boundaries/pair-geometry/)) | `p4-pair-geometry-stage7` |
+| rank-two-triangle (resonant/nonresonant reductions and flat classifications) | [`rank-two-triangle/`](rank-two-triangle/) | 4 (+7 boundary packages under [`../boundaries/rank-two-triangle/`](../boundaries/rank-two-triangle/)) | `p4-rank-two-triangle-stage8` |
 
 ## Pending
 

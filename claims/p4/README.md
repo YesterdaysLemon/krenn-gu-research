@@ -40,16 +40,24 @@ Classification spines migrated from the root live under
 [`classifications/`](classifications/): triangle / 211
 ([`classifications/triangle-211/`](classifications/triangle-211/),
 Stage 5), star / mixed-star
-([`classifications/star/`](classifications/star/), Stage 6), and
-pair geometry — secant/tangent lower-pair strata and the pure
-rank-two component cluster
+([`classifications/star/`](classifications/star/), Stage 6), pair
+geometry — secant/tangent lower-pair strata and the pure rank-two
+component cluster
 ([`classifications/pair-geometry/`](classifications/pair-geometry/),
-Stage 7).  Genuine boundary inclusions are kept under
+Stage 7), and rank-two-triangle — the live resonant/nonresonant
+rank-two-relation triangle chain (reductions and flat
+classifications;
+[`classifications/rank-two-triangle/`](classifications/rank-two-triangle/),
+Stage 8).  Genuine boundary theorems and obstructions are kept under
 [`boundaries/`](boundaries/) (Stage 7 established
-[`boundaries/pair-geometry/`](boundaries/pair-geometry/)).  Migration
-completeness is not mathematical exhaustiveness: each spine README
-states its own scope and the global conjecture remains
-**UNRESOLVED**.
+[`boundaries/pair-geometry/`](boundaries/pair-geometry/); Stage 8
+established
+[`boundaries/rank-two-triangle/`](boundaries/rank-two-triangle/)).
+Withdrawn historical attempts in the rank-two-triangle lineage stay
+at the root pending a dedicated legacy stage and are labeled
+withdrawn, not live.  Migration completeness is not mathematical
+exhaustiveness: each spine README states its own scope and the
+global conjecture remains **UNRESOLVED**.
 
 ## Structure
 
