@@ -137,10 +137,10 @@ Run:
 
 ```text
 python \
-  verify_p5_h22_disjoint_mixed_star_torus_quotient.py
+  claims/p5/h22/disjoint-mixed-star/boundaries/verify_p5_h22_disjoint_mixed_star_torus_quotient.py
 
 python \
-  audit_p5_h22_disjoint_mixed_star_torus_quotient.py
+  claims/p5/h22/disjoint-mixed-star/boundaries/audit_p5_h22_disjoint_mixed_star_torus_quotient.py
 ```
 
 The primary verifier reconstructs the four symbolic family matrices,

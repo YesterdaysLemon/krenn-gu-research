@@ -4,7 +4,7 @@
 
 **Exact characteristic-zero component-containment theorem.**  The complete
 rank-three triangle with three coefficient-rank-two relations, classified in
-[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md),
+[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](../rank-two-relation-triangle-corrected/P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md),
 does not give a sixteenth pure-`P_4` component.  Its entire closure lies in
 the six-dimensional equal-support common-factor component eleven.
 
@@ -44,7 +44,7 @@ triangle and, simultaneously, a rank-one star.
 ## Component eleven on `p=0`
 
 The equal-support component from
-[`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md)
+[`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](../../../../../P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md)
 has planes
 
 ```text
@@ -127,8 +127,8 @@ the visible relation graph, but not the ambient irreducible component.
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_p4_all_rank_two_relation_triangle_component_inclusion.py
-python audit_p4_all_rank_two_relation_triangle_component_inclusion.py
+uv run --with sympy python claims/p4/classifications/triangle-211/all-rank-two-relation-triangle-inclusion/verify_p4_all_rank_two_relation_triangle_component_inclusion.py
+python claims/p4/classifications/triangle-211/all-rank-two-relation-triangle-inclusion/audit_p4_all_rank_two_relation_triangle_component_inclusion.py
 ```
 
 The primary verifier proves the symbolic Pluecker identities, permanent

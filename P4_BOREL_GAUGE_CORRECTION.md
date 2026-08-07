@@ -77,7 +77,7 @@ a rank-two partner pair:
 The smaller-kernel-support strata are now classified too.  They contain one
 genuine support-two annihilator-line family rather than another
 obstruction:
-[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
+[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/rank-two-relation-triangle-corrected/P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
 The dependent star and mixed `(2,2,1)` arguments have now also been replaced
 by Borel-legal proofs:
 [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md)
@@ -86,7 +86,7 @@ and
 The honest unresolved boundary is instead the one-rank-two-edge mixed
 triangle, other mixed-star patterns, and lower pair-image ranks.  The crossed
 genuine support-two orientation of that triangle is now classified in
-[`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md):
+[`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/crossed-211-triangle-support/P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md):
 only the one-coordinate-overlap orbit survives at full source support, and it
 is the first apolar component.  Common-factor/radical orientations,
 support-one products, and lower pair ranks remain.

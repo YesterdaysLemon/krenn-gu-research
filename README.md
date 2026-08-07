@@ -2481,7 +2481,7 @@ strictly advance the finite frontier:
   three, all other support-two directions, and all projective endpoints are
   excluded.  This replaces the withdrawn empty-triangle claim with a
   complete Borel classification:
-  [`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
+  [`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/rank-two-relation-triangle-corrected/P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
 - that corrected survivor is not a sixteenth component.  It also carries a
   rank-one star from its opposite plane.  After the block source scaling
   `diag(1,1,alpha_1,alpha_1)`, set
@@ -2491,7 +2491,7 @@ strictly advance the finite frontier:
   `1+q(r+1)=(alpha_1+alpha_2+alpha_3)/alpha_3`.
   Hence the entire all-rank-two-relation triangle is the closure of the
   `p=0` divisor of the equal-support sixfold:
-  [`P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md`](P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md).
+  [`P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md`](claims/p4/classifications/triangle-211/all-rank-two-relation-triangle-inclusion/P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md).
 - the dependent rank-two-relation star is now reproved rather than merely
   resurrected from the withdrawn argument.  Four-distinct centers reduce
   by the exact adjugate-pencil matching to the corrected support-two
@@ -2554,7 +2554,7 @@ strictly advance the finite frontier:
   have one dense factorization orbit, exactly the fixed apolar triangle
   above.  The proof is a `2 x 2` exterior-product identity plus three
   squarefree coefficient ratios, with no elimination:
-  [`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md).
+  [`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/crossed-211-triangle-support/P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md).
   The support octahedron is shown in
   [`research_figures/P4_CROSSED_211_TRIANGLE_SUPPORT_OCTAHEDRON.png`](research_figures/P4_CROSSED_211_TRIANGLE_SUPPORT_OCTAHEDRON.png).
 - the equal-support common-factor orientation does not collapse: it supplies
@@ -2664,7 +2664,7 @@ strictly advance the finite frontier:
   with the five other flag orbits, this completely closes the
   `triangle-(2,1,1)` cell:
   [`P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md`](P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md),
-  [`P4_211_TRIANGLE_COMPLETE_CLASSIFICATION.md`](P4_211_TRIANGLE_COMPLETE_CLASSIFICATION.md).
+  [`P4_211_TRIANGLE_COMPLETE_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/211-triangle-complete/P4_211_TRIANGLE_COMPLETE_CLASSIFICATION.md).
   Its complete generic marked `H31` fibre is empty.  Exact projection leaves
   four binary marking branches, and a uniform mode-three one-marked minor
   excludes all four; the other two source deletions are killed by row-module
@@ -2733,8 +2733,8 @@ strictly advance the finite frontier:
   including one irreducible quadratic-weight prime, and the same
   `N0[0137]` minor makes every branch ideal unit.  Special/projective fibres
   remain open:
-  [`P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md`](P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md),
-  [`P4_MIXED_CENTER_STAR_211_COMPLETE_CLASSIFICATION.md`](P4_MIXED_CENTER_STAR_211_COMPLETE_CLASSIFICATION.md),
+  [`P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md`](claims/p4/classifications/triangle-211/split-center-mixed-star-211/P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md),
+  [`P4_MIXED_CENTER_STAR_211_COMPLETE_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/mixed-center-star-211-complete/P4_MIXED_CENTER_STAR_211_COMPLETE_CLASSIFICATION.md),
   [`P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
   [`P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 - the disjoint-binary unequal-endpoint two-inward chart contains component
@@ -2763,7 +2763,7 @@ strictly advance the finite frontier:
   tensor, nonsingular binary complement has fixed forbidden coefficient
   `-4Q`, and both singleton-complement charts are zero or lower-pair:
   [`P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md`](P4_EQUAL_ENDPOINT_INWARD_STAR_211_OBSTRUCTION.md),
-  [`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md`](P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md).
+  [`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/unequal-endpoint-inward-star-211-complete/P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md).
 - in the remaining star-`(1,1,1)` cell, the strict all-three-arrows-to-center
   orientation is empty.  All three leaf active rows would be the unique
   polar partner of the center kernel, and every singleton/binary polar has
@@ -2942,7 +2942,7 @@ strictly advance the finite frontier:
   projectively exhausted `{01,01,23}` mixed star, so they lie in component
   eight.  All-equal labels have pair rank one.  Thus no eighteenth component
   occurs anywhere in this support-two cyclic orientation:
-  [`P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_CLASSIFICATION.md`](P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_CLASSIFICATION.md).
+  [`P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/cyclic-rank-one-triangle-support/P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_CLASSIFICATION.md).
 - the transitive rank-one triangle orientation also creates no eighteenth
   component.  The source of two arrows has a one-dimensional annihilator,
   forcing all three exact zero products to share the same factor pair.
@@ -2954,7 +2954,7 @@ strictly advance the finite frontier:
   forbidden covector and is therefore zero; coincident-factor boundaries
   have lower pair rank.  Together with the cyclic theorem, both tournament
   orientations of a rank-one relation triangle are classified:
-  [`P4_TRANSITIVE_RANK_ONE_TRIANGLE_CLASSIFICATION.md`](P4_TRANSITIVE_RANK_ONE_TRIANGLE_CLASSIFICATION.md).
+  [`P4_TRANSITIVE_RANK_ONE_TRIANGLE_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/transitive-rank-one-triangle/P4_TRANSITIVE_RANK_ONE_TRIANGLE_CLASSIFICATION.md).
 - the support-one boundary omitted by the cyclic theorem is now closed by a
   toric graph-lifting argument.  Treating `X_i^2=0` as a loop at source
   vertex `i`, the fourteen possible three-label support orbits reduce to
@@ -2994,8 +2994,8 @@ strictly advance the finite frontier:
   a binary exact pair and its complementary binary direction force the
   complete normal form onto a projective component-eleven boundary.  Thus
   this left only the exactly-one-kernel pattern in `triangle-(1,1,1)`:
-  [`P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md`](P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md),
-  [`P4_TWO_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md`](P4_TWO_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md).
+  [`P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/triple-kernel-rank-one-triangle/P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md),
+  [`P4_TWO_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/two-kernel-rank-one-triangle/P4_TWO_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md).
 - the exactly-one-kernel pattern is now completely placed.  Its eight-entry
   orientation/support reduction splits into known component boundaries and
   three new component orbits.  The dependent `tau=0` common-active sheet is
@@ -3065,7 +3065,7 @@ strictly advance the finite frontier:
   kernel signature is `(2,2,0,0)`, and its apparent sixth tangent direction
   is excluded by an exact integral local-height certificate.  The singleton
   sheet is an explicit projective boundary of the same component:
-  [`P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md`](P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md).
+  [`P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md`](claims/p4/classifications/triangle-211/common-active-binary-triangle/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md).
 - component twenty's complete generic marked `H31` fibre is empty.  Exact
   open-incidence projection leaves no markings on deletions zero and three
   and exactly two isolated markings on each of deletions one and two.  At all
@@ -4830,10 +4830,10 @@ python verify_five_root_no_torus_codimension_two.py
 python audit_five_root_no_torus_codimension_two.py
 python verify_four_root_smooth_torus_obstruction.py
 python audit_four_root_smooth_torus_obstruction.py
-uv run --with sympy python verify_p4_triple_kernel_rank_one_triangle_classification.py
-python audit_p4_triple_kernel_rank_one_triangle_classification.py
-uv run --with sympy python verify_p4_two_kernel_rank_one_triangle_classification.py
-python audit_p4_two_kernel_rank_one_triangle_classification.py
+uv run --with sympy python claims/p4/classifications/triangle-211/triple-kernel-rank-one-triangle/verify_p4_triple_kernel_rank_one_triangle_classification.py
+python claims/p4/classifications/triangle-211/triple-kernel-rank-one-triangle/audit_p4_triple_kernel_rank_one_triangle_classification.py
+uv run --with sympy python claims/p4/classifications/triangle-211/two-kernel-rank-one-triangle/verify_p4_two_kernel_rank_one_triangle_classification.py
+python claims/p4/classifications/triangle-211/two-kernel-rank-one-triangle/audit_p4_two_kernel_rank_one_triangle_classification.py
 python verify_p6_simultaneous_kernel_and_natural_lift.py
 python audit_p6_simultaneous_kernel_and_natural_lift.py
 python verify_p6_common_port_111_frobenius_reduction.py

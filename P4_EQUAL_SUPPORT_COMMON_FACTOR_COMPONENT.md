@@ -29,7 +29,7 @@ exhaustiveness, and the global Krenn--Gu conjecture remain open.
 
 The `p=0` divisor is now identified exactly with the corrected
 all-rank-two-relation triangle in
-[`P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md`](P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md).
+[`P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md`](claims/p4/classifications/triangle-211/all-rank-two-relation-triangle-inclusion/P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md).
 That family has pair profile `(3,3,3,3,3,3)` and relation-rank word
 `(1,1,1,2,2,2)`; it is a boundary of this component, not another component.
 
@@ -75,7 +75,7 @@ y_2x_3=0,               coefficient rank 1.         (5)
 
 The last two relations are the same exact zero-divisor pair `a a_bar=0`.
 They have equal support label `{0,1}` in the support octahedron from
-[`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md).
+[`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/crossed-211-triangle-support/P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md).
 This is the common-factor orbit that the crossed theorem deliberately did
 not cover.
 

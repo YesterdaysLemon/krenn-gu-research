@@ -10,7 +10,7 @@ five-dimensional component orbit, component twenty-five.
 
 The complete reverse support and projective leaf-boundary classification is
 proved subsequently in
-[`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md`](P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md).
+[`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/unequal-endpoint-inward-star-211-complete/P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md).
 This component's `P_5` fibres, special fibres, and the
 arbitrary-order local-to-global step remain open.  The Krenn--Gu conjecture
 remains **UNRESOLVED**.

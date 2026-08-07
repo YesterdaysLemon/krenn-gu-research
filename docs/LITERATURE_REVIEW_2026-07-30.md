@@ -543,7 +543,7 @@ triangle.  Only smaller kernel supports remain in that branch.
 
 The smaller supports change the conclusion from obstruction to
 classification:
-[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](../P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
+[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](../claims/p4/classifications/triangle-211/rank-two-relation-triangle-corrected/P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
 After zero-column descent to `P_3`, the kernel-support stratification has
 only one survivor.  On complementary binary blocks choose opposite
 zero-product directions `a,a_bar` and `b,b_bar`.  Then
@@ -686,7 +686,7 @@ remain to be compared with known star and lower-rank component closures.
 
 The crossed Borel orientation of that triangle is now classified on the
 whole genuine support-two stratum:
-[`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](../P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md).
+[`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](../claims/p4/classifications/triangle-211/crossed-211-triangle-support/P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md).
 A binary zero product is an opposite signed pair
 `(X_i+X_j)(X_i-X_j)=0`; its support is an edge `{i,j}` of `K_4`.  The six
 supports therefore form the octahedron `J(4,2)=L(K_4)`, or equivalently the
@@ -1242,7 +1242,7 @@ relation graphs can jump on a boundary without creating a new irreducible
 component.
 
 See
-[`P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md`](../P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md).
+[`P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md`](../claims/p4/classifications/triangle-211/all-rank-two-relation-triangle-inclusion/P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md).
 
 The disjoint mixed-star component now has a reverse classification on its
 whole affine Borel chart as well:

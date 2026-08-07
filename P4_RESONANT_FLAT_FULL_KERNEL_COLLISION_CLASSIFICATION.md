@@ -24,7 +24,7 @@ planes have pair-image rank two.  The projective endpoints are empty.
 
 The smaller-support strata have since been classified and contain one
 support-two annihilator-line survivor:
-[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
+[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/rank-two-relation-triangle-corrected/P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
 This is not a classification of every pure `P_4` component and not a proof or
 counterexample for the global Krenn--Gu conjecture.
 

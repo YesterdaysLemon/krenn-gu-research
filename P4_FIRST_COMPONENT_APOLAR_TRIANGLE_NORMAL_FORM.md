@@ -170,7 +170,7 @@ closures.
 
 The crossed orientation with genuine support-two zero products is now
 classified completely in
-[`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md):
+[`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/crossed-211-triangle-support/P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md):
 equal labels force a coordinate hyperplane, disjoint labels force a pair-rank
 drop, and one-coordinate overlap gives exactly the triangle above.  The
 remaining question is confined to the other Borel orientations and

@@ -45,7 +45,7 @@ edge open inside `triangle-(1,1,1)`.  The two open star cells, the
 conjecture remain unresolved.
 
 That final stratum now has the finite, explicitly open normal-form ledger in
-[`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md);
+[`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](../../../../../P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md);
 the reduction does not yet place all six residual fibres in components.
 
 ## The two double edges force one genuine exact pair
@@ -165,7 +165,7 @@ plane.  Absorbing `lambda` into the active row and writing
 ## Exact placement in component eleven
 
 The survivor in
-[`P4_TRANSITIVE_RANK_ONE_TRIANGLE_CLASSIFICATION.md`](P4_TRANSITIVE_RANK_ONE_TRIANGLE_CLASSIFICATION.md)
+[`P4_TRANSITIVE_RANK_ONE_TRIANGLE_CLASSIFICATION.md`](../transitive-rank-one-triangle/P4_TRANSITIVE_RANK_ONE_TRIANGLE_CLASSIFICATION.md)
 has planes
 
 ```text
@@ -203,8 +203,8 @@ This proves component-eleven containment for the complete normal form (2).
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_p4_two_kernel_rank_one_triangle_classification.py
-python audit_p4_two_kernel_rank_one_triangle_classification.py
+uv run --with sympy python claims/p4/classifications/triangle-211/two-kernel-rank-one-triangle/verify_p4_two_kernel_rank_one_triangle_classification.py
+python claims/p4/classifications/triangle-211/two-kernel-rank-one-triangle/audit_p4_two_kernel_rank_one_triangle_classification.py
 ```
 
 The primary verifier reconstructs (6)--(10), proves the pure normal form,

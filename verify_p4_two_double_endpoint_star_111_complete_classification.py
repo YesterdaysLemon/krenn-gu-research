@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parent
 COMP18 = ROOT / "P4_COMMON_SINGLETON_COMPONENT.md"
 COMP21 = ROOT / "P4_COINCIDENT_SUPPORT_STAR_REVERSE_CLASSIFICATION.md"
 MIXED_CHAIN = ROOT / "P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md"
-TRIPLE_KERNEL = ROOT / "P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md"
+TRIPLE_KERNEL = ROOT / "claims/p4/classifications/triangle-211/triple-kernel-rank-one-triangle/P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md"
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PAIRS = tuple(itertools.combinations(range(4), 2))
 SOURCE_PAIRS = tuple(itertools.combinations(range(4), 2))

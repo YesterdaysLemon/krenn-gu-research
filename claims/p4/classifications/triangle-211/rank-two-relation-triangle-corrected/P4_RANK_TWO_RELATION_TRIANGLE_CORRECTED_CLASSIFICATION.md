@@ -51,7 +51,7 @@ not an obstruction.  It corrects the withdrawn flat-triangle record and
 provides the honest input for the repaired star and mixed-triangle
 arguments.  Subsequent work identifies the whole family with the `p=0`
 divisor of component eleven:
-[`P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md`](P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md).
+[`P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md`](../all-rank-two-relation-triangle-inclusion/P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md).
 It therefore creates no additional component.  This does not prove full
 pure-component exhaustiveness, construct a Krenn--Gu graph, or settle the
 global conjecture.
@@ -109,9 +109,9 @@ a finite list without moving the kernel line.
 All ratio multiplicities and both projective partner sheets are already
 closed by
 
-- [`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md),
-- [`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md),
-- [`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
+- [`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](../../../../../P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md),
+- [`P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md`](../../../../../P4_RESONANT_FLAT_PROJECTIVE_PARTNER_CLASSIFICATION.md),
+- [`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](../../../../../P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
 
 Thus `k=4` is empty.
 
@@ -121,7 +121,7 @@ With no zero source column, normalize the missing kernel coordinate to have
 active value one.  If the three finite ratios are distinct, the exact
 one-kernel-zero compound theorem applies:
 
-[`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md).
+[`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](../../../../../P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md).
 
 The two collision types are
 
@@ -358,8 +358,8 @@ marked extension problem.
 Run:
 
 ```text
-python verify_p4_rank_two_relation_triangle_corrected_classification.py
-python audit_p4_rank_two_relation_triangle_corrected_classification.py
+python claims/p4/classifications/triangle-211/rank-two-relation-triangle-corrected/verify_p4_rank_two_relation_triangle_corrected_classification.py
+python claims/p4/classifications/triangle-211/rank-two-relation-triangle-corrected/audit_p4_rank_two_relation_triangle_corrected_classification.py
 ```
 
 The primary verifier reconstructs every remaining Borel synchronizer,

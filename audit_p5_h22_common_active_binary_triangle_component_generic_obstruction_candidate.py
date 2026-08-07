@@ -30,7 +30,7 @@ CANDIDATE_SCRIPT = ROOT / (
 CANDIDATE_CERTIFICATE = ROOT / (
     "p5_h22_common_active_binary_triangle_component_generic_certificate.json"
 )
-P4_REPORT = ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md"
+P4_REPORT = ROOT / "claims/p4/classifications/triangle-211/common-active-binary-triangle/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md"
 P4_SCRIPT = ROOT / "verify_p4_common_active_binary_triangle_component.py"
 H31_REPORT = ROOT / (
     "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md"

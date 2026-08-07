@@ -56,7 +56,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "f432eb5dbc901b04",
+      "document_sha256_16": "37de5f96d331ad9d",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -425,7 +425,7 @@
     {
       "name": "Generic marked H31 fibre empty: common active binary triangle",
       "document": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "4712d037cb90606c",
+      "document_sha256_16": "551273911112b4b7",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -730,7 +730,7 @@
     {
       "name": "Generic marked H31 fibre empty: split center mixed star",
       "document": "P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "a24dfd6afdb02cac",
+      "document_sha256_16": "05c0dc3cf8e10e2e",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -945,7 +945,7 @@
     {
       "name": "Generic weighted H22 fibre empty: disjoint mixed star",
       "document": "claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "284bbec609743a09",
+      "document_sha256_16": "343721662b8877ed",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1274,7 +1274,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "f432eb5dbc901b04",
+      "document_sha256_16": "37de5f96d331ad9d",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -1294,7 +1294,7 @@
     {
       "name": "Exhaustiveness: 25 component closures cover the all-pair-rank exceptional locus",
       "document": "P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md",
-      "document_sha256_16": "f6560f24246955e9",
+      "document_sha256_16": "7f95ea47ab920b12",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "within the all-pair-rank exceptional-graph reduction",
@@ -1312,7 +1312,7 @@
     {
       "name": "Eighth-component weighted H22 closure - canonical determinantal proof",
       "document": "claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "284bbec609743a09",
+      "document_sha256_16": "343721662b8877ed",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1382,7 +1382,7 @@
     {
       "name": "Eighth-component torus quotient and certificate-divisor frontier",
       "document": "claims/p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_TORUS_QUOTIENT.md",
-      "document_sha256_16": "a5a61d6ad03ff9ea",
+      "document_sha256_16": "2de6aeb532441690",
       "status": "verified",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1403,7 +1403,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "f432eb5dbc901b04",
+      "document_sha256_16": "37de5f96d331ad9d",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1493,7 +1493,7 @@
     {
       "name": "P4 Resonant Flat Triangle Classification Withdrawn Overstrong",
       "document": "P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md",
-      "document_sha256_16": "c4f517ca65aceb85",
+      "document_sha256_16": "59fdd9525bc44f58",
       "status": "withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1568,7 +1568,7 @@
     {
       "name": "Weighted H22 disjoint mixed-star working note",
       "document": "claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md",
-      "document_sha256_16": "25a6d03e106a1ee6",
+      "document_sha256_16": "713f0b67c7cd5253",
       "status": "superseded",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],

@@ -48,7 +48,7 @@ Krenn--Gu conjecture.
 
 The equal-support common-factor orientation has since supplied a new
 six-dimensional component rather than an obstruction:
-[`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md).
+[`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](../../../../../P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md).
 That result is consistent with this theorem because its two rank-one edges
 share a common-mode factor, whereas (1) uses two independent common-mode
 rows.
@@ -71,7 +71,7 @@ J(4,2)=L(K_4),
 the octahedral graph.  Two labels are adjacent when they overlap once and
 opposite when they are disjoint.  Equality, opposition, and adjacency in
 this octahedron are exactly the three branches above.  A picture is in
-[`research_figures/P4_CROSSED_211_TRIANGLE_SUPPORT_OCTAHEDRON.svg`](research_figures/P4_CROSSED_211_TRIANGLE_SUPPORT_OCTAHEDRON.svg).
+[`research_figures/P4_CROSSED_211_TRIANGLE_SUPPORT_OCTAHEDRON.svg`](../../../../../research_figures/P4_CROSSED_211_TRIANGLE_SUPPORT_OCTAHEDRON.svg).
 
 The signed forms `X_i plus-or-minus X_j` are also the roots of type `D_4`.
 The relation pattern therefore has a small Coxeter-arrangement shadow:
@@ -80,7 +80,7 @@ ordered pair of octahedron vertices.
 
 ![The six two-coordinate support labels as an octahedron; an adjacent pair
 leads to the first apolar component and an opposite pair forces rank
-drop.](research_figures/P4_CROSSED_211_TRIANGLE_SUPPORT_OCTAHEDRON.png)
+drop.](../../../../../research_figures/P4_CROSSED_211_TRIANGLE_SUPPORT_OCTAHEDRON.png)
 
 ## The Borel reduction is legal
 
@@ -209,7 +209,7 @@ Now either `U_1` collapses or edge `23` acquires the second zero product
 `x_2y_3=aa_bar=0`.  This excludes the disjoint branch without solving an
 ideal.  It is the four-vertex specialization of the hyperbolic-block anchor
 lemma in
-[`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md).
+[`P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md`](../../../../../P4_NONRESONANT_TWO_TWO_TRIANGLE_OBSTRUCTION.md).
 
 ## One-coordinate overlap has one dense orbit
 
@@ -323,8 +323,8 @@ apolarity supplies the opposite plane.
 Run:
 
 ```text
-uv run --with sympy python verify_p4_crossed_211_triangle_support_classification.py
-uv run --with sympy python audit_p4_crossed_211_triangle_support_classification.py
+uv run --with sympy python claims/p4/classifications/triangle-211/crossed-211-triangle-support/verify_p4_crossed_211_triangle_support_classification.py
+uv run --with sympy python claims/p4/classifications/triangle-211/crossed-211-triangle-support/audit_p4_crossed_211_triangle_support_classification.py
 ```
 
 The primary verifier checks (9)--(23), the three generic rank minors, all

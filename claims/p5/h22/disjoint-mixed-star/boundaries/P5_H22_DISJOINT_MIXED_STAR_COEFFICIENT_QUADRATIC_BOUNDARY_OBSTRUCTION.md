@@ -156,10 +156,10 @@ Run:
 
 ```text
 python \
-  verify_p5_h22_disjoint_mixed_star_coefficient_quadratic_boundary_obstruction.py
+  claims/p5/h22/disjoint-mixed-star/boundaries/verify_p5_h22_disjoint_mixed_star_coefficient_quadratic_boundary_obstruction.py
 
 python \
-  audit_p5_h22_disjoint_mixed_star_coefficient_quadratic_boundary_obstruction.py
+  claims/p5/h22/disjoint-mixed-star/boundaries/audit_p5_h22_disjoint_mixed_star_coefficient_quadratic_boundary_obstruction.py
 ```
 
 The primary verifier derives (4), checks irreducibility of `Q`, builds

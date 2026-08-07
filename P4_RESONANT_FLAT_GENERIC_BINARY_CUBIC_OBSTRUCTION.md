@@ -32,7 +32,7 @@ The full-support affine-ratio collisions have also since been classified
 and excluded from the rank-three triangle in
 [`P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md`](P4_RESONANT_FLAT_FULL_KERNEL_COLLISION_CLASSIFICATION.md).
 The smaller-support strata have since been classified in
-[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
+[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/rank-two-relation-triangle-corrected/P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
 They contain one explicit support-two survivor.  Thus this is a generic
 obstruction, not a component-exhaustiveness proof,
 or global solution of the Krenn--Gu conjecture.
@@ -190,7 +190,7 @@ The companion projective, full-support-collision, and smaller-support
 theorems now give the complete corrected classification.  The flat triangle
 is not empty: its unique Borel normal form is the support-two
 annihilator-line family in
-[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
+[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/rank-two-relation-triangle-corrected/P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
 
 ## Verification
 

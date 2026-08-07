@@ -144,7 +144,7 @@ u=A,       v=B,       u^perp=C,       v^perp=D.    (10)
 ```
 
 Its complete purity split and projective closure are the theorem in
-[`P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md`](P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md):
+[`P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md`](../split-center-mixed-star-211/P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md):
 the determinant-nonzero branch is lower-pair, while the two sign sheets form
 one source-symmetry orbit, component twenty-four.  This proves the complete
 mixed-orientation classification.
@@ -152,8 +152,8 @@ mixed-orientation classification.
 ## Replay
 
 ```text
-uv run --with sympy python verify_p4_mixed_center_star_211_complete_classification.py
-uv run --with sympy python audit_p4_mixed_center_star_211_complete_classification.py
+uv run --with sympy python claims/p4/classifications/triangle-211/mixed-center-star-211-complete/verify_p4_mixed_center_star_211_complete_classification.py
+uv run --with sympy python claims/p4/classifications/triangle-211/mixed-center-star-211-complete/audit_p4_mixed_center_star_211_complete_classification.py
 ```
 
 The primary verifier enumerates the eight support signatures, reconstructs

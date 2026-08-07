@@ -1286,7 +1286,7 @@ The disjoint case is the rank-one `K_(2,2)` matrix-completion identity
 factorization of a triangle-supported quadratic.  This closes every support
 collision in that orientation without Gröbner elimination:
 
-- [`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md)
+- [`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/crossed-211-triangle-support/P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md)
 
 The remaining generic triangle work is no longer an undifferentiated
 support problem.  It is confined to common-factor/radical Borel

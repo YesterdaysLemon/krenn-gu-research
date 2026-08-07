@@ -59,3 +59,12 @@ jobs:
 
       - name: Run the self-contained test module
         run: python -m unittest -v test_fourteen_vertex_cycle_cover_lattice.py
+
+      - name: Rewriter closure (committed head is a fixed point)
+        # A clean committed PR head must already be a fixed point of the
+        # migration rewriter: running it must rewrite nothing.  This
+        # catches the Stage 4 class of failure where rewrites were
+        # generated locally but never staged into the merged commit.
+        run: |
+          python tools/migration/rewrite_links.py
+          git diff --exit-code

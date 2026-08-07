@@ -14,7 +14,7 @@ most two.
 The two sign sheets are exchanged by a source-coordinate transposition.  The
 classification includes the complete projective direction of the moving
 leaf row.  The generic marked `H31` fibre is subsequently excluded in
-[`P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../../P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 This note does not classify overlapping or singleton center supports, the
 remaining inward/equal-endpoint star strata, weighted `H22`, special fibres,
 or the global local-to-global step.  Subsequent exact theorems close the
@@ -207,8 +207,8 @@ component twenty-four.
 ## Replay
 
 ```text
-uv run --with sympy python verify_p4_split_center_mixed_star_211_component.py
-uv run --with sympy python audit_p4_split_center_mixed_star_211_component.py
+uv run --with sympy python claims/p4/classifications/triangle-211/split-center-mixed-star-211/verify_p4_split_center_mixed_star_211_component.py
+uv run --with sympy python claims/p4/classifications/triangle-211/split-center-mixed-star-211/audit_p4_split_center_mixed_star_211_component.py
 ```
 
 Both scripts use exact characteristic-zero arithmetic.  The audit rebuilds

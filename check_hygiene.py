@@ -635,13 +635,21 @@ def check_stale_paths(files: list[str]) -> None:
 # Context-aware stale-REFERENCE detection for root->package moves that
 # keep their filename (review item: root-to-package coverage).  A bare
 # basename is actionable only where it resolves to the OLD location:
+#   - a fenced replay command ANYWHERE, including inside the
+#     destination package: fenced replay commands are documented as
+#     commands executed from the repository root, so a moved script's
+#     bare basename is stale in a fence even when the Markdown
+#     document sits inside that script's destination package.  This is
+#     checked before the in-package sibling exemption (Stage 4/5
+#     policy: the rewriter repoints these commands regardless of the
+#     source's location, and hygiene must agree, otherwise rewrites
+#     that are generated but never committed stay invisible);
 #   - a markdown link in a ROOT document (](base) resolves to root);
-#   - a fenced replay command anywhere outside the destination package
-#     (documented commands run from the repository root);
 #   - a python subprocess/command string outside the package;
 #   - a shell/yaml python invocation outside the package.
-# Inside the destination package the same basename is a valid sibling
-# reference and must not be flagged.
+# Inside the destination package other bare references (prose mentions,
+# hashes of the sibling file) remain valid sibling references and must
+# not be flagged.
 def find_stale_bare_refs(text: str, rel: str,
                          moved_by_base: dict) -> list:
     rel_dir = str(pathlib.PurePosixPath(rel).parent)
@@ -677,10 +685,16 @@ def find_stale_bare_refs(text: str, rel: str,
         pkg_dir = str(pathlib.PurePosixPath(new).parent)
         in_package = rel_dir == pkg_dir or rel_dir.startswith(
             pkg_dir + "/")
-        if in_package:
-            continue
         esc = re.escape(base)
         if rel.endswith(".md"):
+            # Fenced replay commands run from the repository root, so
+            # they are stale even inside the destination package.
+            # Checked BEFORE the in-package sibling exemption.
+            if base in fenced_stale:
+                hits.append(("fenced replay command", base))
+                continue
+            if in_package:
+                continue
             # inline links in root documents resolve to the old path
             if rel_dir == "" and re.search(
                     r"\]\(" + esc + r"(#[^)\s]*)?\)", text):
@@ -691,15 +705,16 @@ def find_stale_bare_refs(text: str, rel: str,
                     re.M):
                 hits.append(("reference-style link", base))
                 continue
-            if base in fenced_stale:
-                hits.append(("fenced replay command", base))
-                continue
         elif rel.endswith(".py"):
+            if in_package:
+                continue
             if re.search(
                     r"(subprocess|sys\.executable|python)[^\n]{0,100}?"
                     r"[\"']" + esc + r"[\"']", text):
                 hits.append(("python command string", base))
         elif rel.endswith((".yml", ".yaml", ".sh")):
+            if in_package:
+                continue
             if re.search(
                     r"python3?\s+[\"']?" + esc + r"[\"']?(\s|$)",
                     text, re.M):

@@ -174,10 +174,10 @@ Run:
 
 ```text
 python \
-  verify_p5_h22_disjoint_mixed_star_equal_opposite_weight_obstruction.py
+  claims/p5/h22/disjoint-mixed-star/boundaries/verify_p5_h22_disjoint_mixed_star_equal_opposite_weight_obstruction.py
 
 python \
-  audit_p5_h22_disjoint_mixed_star_equal_opposite_weight_obstruction.py
+  claims/p5/h22/disjoint-mixed-star/boundaries/audit_p5_h22_disjoint_mixed_star_equal_opposite_weight_obstruction.py
 ```
 
 The primary verifier reconstructs the component family and all four

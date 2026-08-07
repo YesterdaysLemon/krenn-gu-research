@@ -617,12 +617,53 @@ class StaleReferenceTests(unittest.TestCase):
         hits = find_stale_bare_refs(text, "README.md", self.MOVED)
         self.assertEqual(hits, [])
 
-    def test_sibling_reference_inside_package_valid(self):
-        # inside the destination package the basename is a sibling.
+    def test_fenced_replay_command_inside_package_stale(self):
+        # Fenced replay commands are documented as commands executed
+        # from the REPOSITORY ROOT, so a moved script's bare basename
+        # is stale in a fence even when the document sits inside that
+        # script's destination package.
         text = "```text\npython " + self.BASE + "\n```\n"
         hits = find_stale_bare_refs(
             text, "claims/p5/h22/disjoint-mixed-star/README.md",
             self.MOVED)
+        self.assertTrue(any(ctx == "fenced replay command"
+                            for ctx, b in hits), hits)
+
+    def test_uv_run_replay_command_inside_package_stale(self):
+        text = ("```text\nuv run --with sympy python " + self.BASE
+                + "\n```\n")
+        hits = find_stale_bare_refs(
+            text, "claims/p5/h22/disjoint-mixed-star/README.md",
+            self.MOVED)
+        self.assertTrue(any(ctx == "fenced replay command"
+                            for ctx, b in hits), hits)
+
+    def test_continuation_replay_command_inside_package_stale(self):
+        text = "```text\npython \\\n  " + self.BASE + "\n```\n"
+        hits = find_stale_bare_refs(
+            text, "claims/p5/h22/disjoint-mixed-star/README.md",
+            self.MOVED)
+        self.assertTrue(any(ctx == "fenced replay command"
+                            for ctx, b in hits), hits)
+
+    def test_rewritten_command_inside_package_valid(self):
+        # the full root-relative rewritten form stays valid anywhere.
+        text = ("```text\npython claims/p5/h22/disjoint-mixed-star/"
+                + self.BASE + "\n```\n")
+        hits = find_stale_bare_refs(
+            text, "claims/p5/h22/disjoint-mixed-star/README.md",
+            self.MOVED)
+        self.assertEqual(hits, [])
+
+    def test_sibling_non_command_reference_inside_package_valid(self):
+        # ordinary sibling references (markdown links inside the
+        # package, prose mentions) keep package-local resolution.
+        md = self.BASE.replace(".py", ".md")
+        moved = {md: "claims/p5/h22/disjoint-mixed-star/" + md}
+        text = "See [theorem](" + md + ").\n"
+        hits = find_stale_bare_refs(
+            text, "claims/p5/h22/disjoint-mixed-star/THEOREM.md",
+            moved)
         self.assertEqual(hits, [])
 
     def test_stale_root_markdown_link_fails(self):
@@ -993,6 +1034,74 @@ class PackageMetadataTests(unittest.TestCase):
         meta = resolve_claim_package_metadata("claims/p5/h31/fam/X.md",
                                              moves)
         self.assertEqual(meta["claim_package"], "claims/p5/h31/fam")
+
+
+class NestedClassificationMetadataTests(unittest.TestCase):
+    """Stage 5: nested classification-spine package metadata.
+
+    The triangle/211 spine introduces a deeper family hierarchy
+    (``claims/p4/classifications/triangle-211/<package>/``).  The
+    resolver must attribute the canonical theorem, its primary
+    verifier, and its independent audit to the SAME package root,
+    treat the neighbor classification theorem as a separate package,
+    and never mark a working note canonical."""
+
+    FAM = "p4/classifications/triangle-211/211-triangle-complete"
+    PKG = "claims/" + FAM
+
+    def _moves(self):
+        return [
+            {"old_path": "P4_X_CLASSIFICATION.md",
+             "new_path": self.PKG + "/P4_X_CLASSIFICATION.md",
+             "claim_family": self.FAM},
+            {"old_path": "verify_p4_x_classification.py",
+             "new_path": self.PKG
+                         + "/verify_p4_x_classification.py",
+             "claim_family": self.FAM},
+            {"old_path": "audit_p4_x_classification.py",
+             "new_path": self.PKG + "/audit_p4_x_classification.py",
+             "claim_family": self.FAM},
+        ]
+
+    def test_canonical_theorem(self):
+        meta = resolve_claim_package_metadata(
+            self.PKG + "/P4_X_CLASSIFICATION.md", self._moves())
+        self.assertEqual(meta["claim_package"], self.PKG)
+        self.assertEqual(meta["proof_variant"], "canonical")
+        self.assertIsNone(meta["subpackage"])
+
+    def test_primary_verifier_same_package(self):
+        meta = resolve_claim_package_metadata(
+            self.PKG + "/verify_p4_x_classification.py",
+            self._moves())
+        self.assertEqual(meta["claim_package"], self.PKG)
+        self.assertIsNone(meta["proof_variant"])
+
+    def test_independent_audit_same_package(self):
+        meta = resolve_claim_package_metadata(
+            self.PKG + "/audit_p4_x_classification.py", self._moves())
+        self.assertEqual(meta["claim_package"], self.PKG)
+        self.assertIsNone(meta["proof_variant"])
+
+    def test_neighbor_classification_is_separate_package(self):
+        meta = resolve_claim_package_metadata(
+            "claims/p4/classifications/triangle-211/"
+            "crossed-211-triangle-support/"
+            "P4_CROSSED_SUPPORT_CLASSIFICATION.md",
+            self._moves())
+        self.assertEqual(
+            meta["claim_package"],
+            "claims/p4/classifications/triangle-211/"
+            "crossed-211-triangle-support")
+        self.assertEqual(meta["proof_variant"], "canonical")
+
+    def test_working_note_not_canonical(self):
+        meta = resolve_claim_package_metadata(
+            "claims/p4/classifications/triangle-211/"
+            "211-triangle-complete/P4_NOTES_WORKING_NOTE.md",
+            self._moves())
+        self.assertEqual(meta["claim_package"], self.PKG)
+        self.assertIsNone(meta["proof_variant"])
 
 
 class LedgerMetadataIntegrationTests(unittest.TestCase):

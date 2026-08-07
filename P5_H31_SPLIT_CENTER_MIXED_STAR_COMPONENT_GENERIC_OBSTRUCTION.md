@@ -17,7 +17,7 @@ conjecture remains **UNRESOLVED**.
 ## Generic pure basis
 
 Use the `epsilon=1`, `h=1` chart of
-[`P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md`](P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md)
+[`P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md`](claims/p4/classifications/triangle-211/split-center-mixed-star-211/P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md)
 over `K=C(k,s,t)`.  Put
 
 ```text

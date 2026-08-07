@@ -4,11 +4,31 @@
 from __future__ import annotations
 
 import itertools
+from pathlib import Path
 import json
 
 import sympy as sp
 
-from verify_p4_split_center_mixed_star_211_component import reverse_purity_ledger
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import (  # noqa: E402
+    bootstrap,
+    expose_claim_package,
+)
+
+REPO_ROOT, HERE = bootstrap(__file__)
+# Expose the split-center package (moved in the same Stage 5 batch)
+# so the bare-name import below resolves.
+expose_claim_package(
+    REPO_ROOT,
+    "claims/p4/classifications/triangle-211/split-center-mixed-star-211")
+from verify_p4_split_center_mixed_star_211_component import (  # noqa: E402
+    reverse_purity_ledger,
+)
 
 BITS = tuple(itertools.product((0, 1), repeat=4))
 PAIRS = tuple(itertools.combinations(range(4), 2))

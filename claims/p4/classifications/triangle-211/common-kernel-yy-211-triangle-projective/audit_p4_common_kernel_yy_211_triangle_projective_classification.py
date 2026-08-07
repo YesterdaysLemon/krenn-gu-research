@@ -10,11 +10,19 @@ from pathlib import Path
 
 import sympy as sp
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P4_COMMON_KERNEL_YY_211_TRIANGLE_PROJECTIVE_CLASSIFICATION.md"
-PRIMARY = ROOT / "verify_p4_common_kernel_yy_211_triangle_projective_classification.py"
-COMPONENT13 = ROOT / "P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md"
-DENSE = ROOT / "P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md"
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+THEOREM = HERE / "P4_COMMON_KERNEL_YY_211_TRIANGLE_PROJECTIVE_CLASSIFICATION.md"
+PRIMARY = HERE / "verify_p4_common_kernel_yy_211_triangle_projective_classification.py"
+COMPONENT13 = REPO_ROOT / "P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md"
+DENSE = REPO_ROOT / "P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md"
 PAIRS = tuple(itertools.combinations(range(4), 2))
 MASKS3 = (14, 13, 11, 7)
 
