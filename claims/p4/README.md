@@ -34,6 +34,23 @@ independent audit under their preserved filenames; cross-package
 imports use the shared `krenn_gu.bootstrap.expose_claim_package`
 helper.
 
+## Migrated classification and boundary spines
+
+Classification spines migrated from the root live under
+[`classifications/`](classifications/): triangle / 211
+([`classifications/triangle-211/`](classifications/triangle-211/),
+Stage 5), star / mixed-star
+([`classifications/star/`](classifications/star/), Stage 6), and
+pair geometry — secant/tangent lower-pair strata and the pure
+rank-two component cluster
+([`classifications/pair-geometry/`](classifications/pair-geometry/),
+Stage 7).  Genuine boundary inclusions are kept under
+[`boundaries/`](boundaries/) (Stage 7 established
+[`boundaries/pair-geometry/`](boundaries/pair-geometry/)).  Migration
+completeness is not mathematical exhaustiveness: each spine README
+states its own scope and the global conjecture remains
+**UNRESOLVED**.
+
 ## Structure
 
 Each component package holds its theorem document, primary verifier,

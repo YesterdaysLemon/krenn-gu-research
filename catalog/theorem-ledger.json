@@ -56,7 +56,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "0f31e97bb2330b37",
+      "document_sha256_16": "78fe103bb50d24d0",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -71,7 +71,7 @@
     {
       "name": "Frontier reduction: any P5->Delta3 restriction forces an H31 or H22 local family",
       "document": "P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md",
-      "document_sha256_16": "58735aa98fab3e42",
+      "document_sha256_16": "8a30d75c93a130ea",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact reductions over C",
@@ -558,7 +558,7 @@
     {
       "name": "Generic marked H31 fibre empty: disjoint secant",
       "document": "P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "4f74ef079d7454c2",
+      "document_sha256_16": "10007e42f74f7c2d",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -654,7 +654,7 @@
     {
       "name": "Generic marked H31 fibre empty: full support tangent",
       "document": "P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "adbea2e822ad80e1",
+      "document_sha256_16": "52d9f474cf6d2a7c",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1074,7 +1074,7 @@
     {
       "name": "Generic weighted H22 fibre empty: first rank two",
       "document": "P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "a0ba6dc8e2090f1b",
+      "document_sha256_16": "0088bb098ef7c491",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1274,7 +1274,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "0f31e97bb2330b37",
+      "document_sha256_16": "78fe103bb50d24d0",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -1294,7 +1294,7 @@
     {
       "name": "Exhaustiveness: 25 component closures cover the all-pair-rank exceptional locus",
       "document": "P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md",
-      "document_sha256_16": "0eda61c6ac7a7432",
+      "document_sha256_16": "7598ce0f2e19383b",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "within the all-pair-rank exceptional-graph reduction",
@@ -1403,7 +1403,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "0f31e97bb2330b37",
+      "document_sha256_16": "78fe103bb50d24d0",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
