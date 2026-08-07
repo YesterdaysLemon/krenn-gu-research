@@ -30,10 +30,10 @@ embedded `P_3`.  Their complete geometry is nevertheless controlled by
 orthogonal complements and radical flags, without a permanent-ideal search.
 Subsequent work separates the two non-embedded outcomes.  The full-support
 graph is a new five-dimensional component in
-[`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md`](P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md),
+[`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md`](../full-support-tangent-pair/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md),
 while every dense support-two polar flag lies on the known six-dimensional
 lower-pair component by
-[`P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md`](P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md).
+[`P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md`](../../../boundaries/pair-geometry/support-two-tangent-flag/P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md).
 
 ## Purity becomes two bilinear forms
 
@@ -257,8 +257,8 @@ the rank and radical of two small bilinear forms.
 Run:
 
 ```text
-uv run --with sympy python verify_p4_tangent_rank_two_pair_purity_classification.py
-python audit_p4_tangent_rank_two_pair_purity_classification.py
+uv run --with sympy python claims/p4/classifications/pair-geometry/tangent-rank-two-pair-purity/verify_p4_tangent_rank_two_pair_purity_classification.py
+python claims/p4/classifications/pair-geometry/tangent-rank-two-pair-purity/audit_p4_tangent_rank_two_pair_purity_classification.py
 ```
 
 The primary verifier derives (4), (7)--(8), (10)--(11), and (16), and checks

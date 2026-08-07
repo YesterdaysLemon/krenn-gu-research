@@ -13,7 +13,7 @@ import sympy as sp
 
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md"
-KNOWN_FIRST = ROOT / "P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
+KNOWN_FIRST = ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
 KNOWN_SECOND = (
     ROOT / "claims" / "p4" / "components" / "diagonal-quadric"
     / "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md")

@@ -62,11 +62,11 @@ known support-two sixfold boundary; disjoint secants give another new
 component; overlapping secants recover the earlier sixfold; and support-one
 secants are valuative boundaries of the disjoint component:
 
-- [`P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md`](P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md)
-- [`P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md`](P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md)
-- [`P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md`](P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md)
-- [`P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md`](P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md)
-- [`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md)
+- [`P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md`](../tangent-rank-two-pair-purity/P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md)
+- [`P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md`](../disjoint-secant-lower-pair/P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md)
+- [`P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md`](../overlapping-secant-lower-pair/P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md)
+- [`P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md`](../../../boundaries/pair-geometry/support-one-secant/P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md)
+- [`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](../lower-pair-rank-exhaustion/P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md)
 
 The component count in older passages of this theorem is historical.  The
 live lower-pair frontier is now the intersection geometry of the four known
@@ -298,7 +298,7 @@ consequences, and representative secant normal forms is provided by
 
 ```text
 uv run --with sympy \
-  python verify_p4_rank_two_pair_kernel_geometry.py
+  python claims/p4/classifications/pair-geometry/rank-two-pair-kernel-geometry/verify_p4_rank_two_pair_kernel_geometry.py
 ```
 
 The replay is not a search and is not needed as a substitute for the

@@ -211,7 +211,7 @@ Six statements organize the current frontier.
 1. **The lower-pair locus is exhausted.**  If a nonzero pure `P_4`
    compression has `min r_ij<=2`, it lies in one of four known component
    closures.  See
-   [`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](../P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
+   [`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](../claims/p4/classifications/pair-geometry/lower-pair-rank-exhaustion/P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
 2. **All twenty-five certified components are generically closed for marked
    `H31`; the first twenty-one and components twenty-three and twenty-four are
    also generically closed for weighted `H22`.**

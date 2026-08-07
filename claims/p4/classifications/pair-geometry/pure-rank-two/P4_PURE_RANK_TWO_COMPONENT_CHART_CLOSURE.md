@@ -131,8 +131,8 @@ targets supplied by this component description.
 Run:
 
 ```text
-python verify_p4_pure_rank_two_component_chart_closure.py
-python audit_p4_pure_rank_two_component_chart_closure.py
+python claims/p4/classifications/pair-geometry/pure-rank-two/verify_p4_pure_rank_two_component_chart_closure.py
+python claims/p4/classifications/pair-geometry/pure-rank-two/audit_p4_pure_rank_two_component_chart_closure.py
 ```
 
 The primary verifier derives (3)--(9) symbolically and checks the

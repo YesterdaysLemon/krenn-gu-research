@@ -21,8 +21,8 @@ from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
 THEOREM = HERE / "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md"
-KNOWN_COMPONENT = REPO_ROOT / "P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
-KNOWN_CLOSURE = REPO_ROOT / "P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md"
+KNOWN_COMPONENT = REPO_ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
+KNOWN_CLOSURE = REPO_ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md"
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 

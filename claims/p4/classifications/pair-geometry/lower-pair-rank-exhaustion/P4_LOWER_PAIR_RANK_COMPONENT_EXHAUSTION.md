@@ -34,7 +34,7 @@ Choose a pair with `r_ij<=2`.
 
 ### Ranks zero and one
 
-[`P4_RANK_ONE_PAIR_OBSTRUCTION.md`](P4_RANK_ONE_PAIR_OBSTRUCTION.md) proves
+[`P4_RANK_ONE_PAIR_OBSTRUCTION.md`](../rank-one-pair-obstruction/P4_RANK_ONE_PAIR_OBSTRUCTION.md) proves
 that ranks zero and one are impossible for a nonzero pure restriction.  Its
 key step projectivizes the zero-product correspondence.  The squarefree
 zero-product locus is a union of six projective lines; irreducibility forces
@@ -47,7 +47,7 @@ Hence `r_ij=2`.
 
 The multiplication kernel is a projective line in `P(U_i tensor U_j)`.
 By
-[`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md),
+[`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](../rank-two-pair-kernel-geometry/P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md),
 its intersection with the Segre quadric has only two possible schemes:
 
 - two points: a secant kernel;
@@ -65,16 +65,16 @@ U_i=U_j=span(X_0,w),       w in span(X_1,X_2,X_3),  (2)
 
 with `w` supported on at least two coordinates.  The opposite-plane purity
 classification in
-[`P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md`](P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md)
+[`P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md`](../tangent-rank-two-pair-purity/P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md)
 has two cases.
 
 - If `w` has full three-coordinate support, the nondegenerate ternary polar
   graph is precisely component fourteen, certified in
-  [`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md`](P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md).
+  [`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md`](../full-support-tangent-pair/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md).
 - If `w` has two-coordinate support, the polar form has a radical.  Every
   survivor is either embedded `P_3` or a radical flag.  The explicit
   Pluecker degeneration in
-  [`P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md`](P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md)
+  [`P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md`](../../../boundaries/pair-geometry/support-two-tangent-flag/P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md)
   places every radical flag in the original lower-pair sixfold.
 
 This exhausts tangent kernels.
@@ -86,16 +86,16 @@ pairs are distinct.
 
 - Disjoint `2+2` supports give the complementary-Witt flag classification
   and component fifteen in
-  [`P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md`](P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md).
+  [`P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md`](../disjoint-secant-lower-pair/P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md).
 - Supports meeting in one coordinate give the common-radical two-star
   classification in
-  [`P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md`](P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md).
+  [`P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md`](../overlapping-secant-lower-pair/P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md).
   An explicit common smooth point identifies that chart with the original
   lower-pair sixfold.
 
 If a secant point has support one, exact rank two forces its support to be
 disjoint from the other binary zero product.  The valuative arc in
-[`P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md`](P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md)
+[`P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md`](../../../boundaries/pair-geometry/support-one-secant/P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md)
 splits the singleton into a disjoint binary block.  Every punctured point is
 in component fifteen, and leading Pluecker coordinates recover the target.
 Thus the support-one case also belongs to the component-fifteen closure.
@@ -125,28 +125,28 @@ The corollary introduces no search or elimination.  Its proof is the
 disjoint union of the exact cases above.  The complete symbolic replay is:
 
 ```text
-uv run --with sympy python verify_p4_rank_one_pair_obstruction.py
-python audit_p4_rank_one_pair_obstruction.py
+uv run --with sympy python claims/p4/classifications/pair-geometry/rank-one-pair-obstruction/verify_p4_rank_one_pair_obstruction.py
+python claims/p4/classifications/pair-geometry/rank-one-pair-obstruction/audit_p4_rank_one_pair_obstruction.py
 
-uv run --with sympy python verify_p4_rank_two_pair_kernel_geometry.py
+uv run --with sympy python claims/p4/classifications/pair-geometry/rank-two-pair-kernel-geometry/verify_p4_rank_two_pair_kernel_geometry.py
 
-uv run --with sympy python verify_p4_tangent_rank_two_pair_purity_classification.py
-python audit_p4_tangent_rank_two_pair_purity_classification.py
+uv run --with sympy python claims/p4/classifications/pair-geometry/tangent-rank-two-pair-purity/verify_p4_tangent_rank_two_pair_purity_classification.py
+python claims/p4/classifications/pair-geometry/tangent-rank-two-pair-purity/audit_p4_tangent_rank_two_pair_purity_classification.py
 
-uv run --with sympy python verify_p4_full_support_tangent_pair_component.py
-python audit_p4_full_support_tangent_pair_component.py
+uv run --with sympy python claims/p4/classifications/pair-geometry/full-support-tangent-pair/verify_p4_full_support_tangent_pair_component.py
+python claims/p4/classifications/pair-geometry/full-support-tangent-pair/audit_p4_full_support_tangent_pair_component.py
 
-uv run --with sympy python verify_p4_support_two_tangent_flag_boundary_inclusion.py
-python audit_p4_support_two_tangent_flag_boundary_inclusion.py
+uv run --with sympy python claims/p4/boundaries/pair-geometry/support-two-tangent-flag/verify_p4_support_two_tangent_flag_boundary_inclusion.py
+python claims/p4/boundaries/pair-geometry/support-two-tangent-flag/audit_p4_support_two_tangent_flag_boundary_inclusion.py
 
-uv run --with sympy python verify_p4_disjoint_secant_lower_pair_component.py
-python audit_p4_disjoint_secant_lower_pair_component.py
+uv run --with sympy python claims/p4/classifications/pair-geometry/disjoint-secant-lower-pair/verify_p4_disjoint_secant_lower_pair_component.py
+python claims/p4/classifications/pair-geometry/disjoint-secant-lower-pair/audit_p4_disjoint_secant_lower_pair_component.py
 
-uv run --with sympy python verify_p4_overlapping_secant_lower_pair_classification.py
-python audit_p4_overlapping_secant_lower_pair_classification.py
+uv run --with sympy python claims/p4/classifications/pair-geometry/overlapping-secant-lower-pair/verify_p4_overlapping_secant_lower_pair_classification.py
+python claims/p4/classifications/pair-geometry/overlapping-secant-lower-pair/audit_p4_overlapping_secant_lower_pair_classification.py
 
-uv run --with sympy python verify_p4_support_one_secant_boundary_inclusion.py
-python audit_p4_support_one_secant_boundary_inclusion.py
+uv run --with sympy python claims/p4/boundaries/pair-geometry/support-one-secant/verify_p4_support_one_secant_boundary_inclusion.py
+python claims/p4/boundaries/pair-geometry/support-one-secant/audit_p4_support_one_secant_boundary_inclusion.py
 ```
 
 The primary programs use symbolic polynomial identities and exact rational

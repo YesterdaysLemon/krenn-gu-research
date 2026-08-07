@@ -19,21 +19,21 @@ THEOREM = ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
 COMPONENT = ROOT / "claims/p4/classifications/triangle-211/common-active-binary-triangle/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md"
 INPUTS = (
     COMPONENT,
-    ROOT / "P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md",
-    ROOT / "P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md",
-    ROOT / "P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md",
-    ROOT / "P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md",
-    ROOT / "P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md",
-    ROOT / "P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md",
-    ROOT / "P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md",
+    ROOT / "claims/p4/classifications/pair-geometry/lower-pair-rank-exhaustion/P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md",
+    ROOT / "claims/p4/classifications/pair-geometry/rank-two-pair-kernel-geometry/P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md",
+    ROOT / "claims/p4/classifications/pair-geometry/tangent-rank-two-pair-purity/P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md",
+    ROOT / "claims/p4/boundaries/pair-geometry/support-two-tangent-flag/P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md",
+    ROOT / "claims/p4/classifications/pair-geometry/full-support-tangent-pair/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md",
+    ROOT / "claims/p4/classifications/pair-geometry/disjoint-secant-lower-pair/P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md",
+    ROOT / "claims/p4/boundaries/pair-geometry/support-one-secant/P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md",
 )
 CLASSIFICATION_VERIFIERS = (
-    "verify_p4_rank_two_pair_kernel_geometry.py",
-    "verify_p4_tangent_rank_two_pair_purity_classification.py",
-    "verify_p4_support_two_tangent_flag_boundary_inclusion.py",
-    "verify_p4_full_support_tangent_pair_component.py",
-    "verify_p4_disjoint_secant_lower_pair_component.py",
-    "verify_p4_support_one_secant_boundary_inclusion.py",
+    "claims/p4/classifications/pair-geometry/rank-two-pair-kernel-geometry/verify_p4_rank_two_pair_kernel_geometry.py",
+    "claims/p4/classifications/pair-geometry/tangent-rank-two-pair-purity/verify_p4_tangent_rank_two_pair_purity_classification.py",
+    "claims/p4/boundaries/pair-geometry/support-two-tangent-flag/verify_p4_support_two_tangent_flag_boundary_inclusion.py",
+    "claims/p4/classifications/pair-geometry/full-support-tangent-pair/verify_p4_full_support_tangent_pair_component.py",
+    "claims/p4/classifications/pair-geometry/disjoint-secant-lower-pair/verify_p4_disjoint_secant_lower_pair_component.py",
+    "claims/p4/boundaries/pair-geometry/support-one-secant/verify_p4_support_one_secant_boundary_inclusion.py",
 )
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
@@ -1079,32 +1079,33 @@ def replay_classification_verifiers() -> list[dict[str, object]]:
                 (filename, completed.returncode, completed.stdout, completed.stderr)
             )
         payload = json.loads(completed.stdout)
-        if filename == "verify_p4_rank_two_pair_kernel_geometry.py":
+        base = Path(filename).name
+        if base == "verify_p4_rank_two_pair_kernel_geometry.py":
             assert payload["verified"] is True
             assert payload["secant_representative_pair_ranks"] == {"1+3": 2, "2+2": 2}
-        elif filename == "verify_p4_tangent_rank_two_pair_purity_classification.py":
+        elif base == "verify_p4_tangent_rank_two_pair_purity_classification.py":
             assert payload["status"] == "pass"
             assert payload["nonembedded_survivors"] is True
-        elif filename == "verify_p4_support_two_tangent_flag_boundary_inclusion.py":
+        elif base == "verify_p4_support_two_tangent_flag_boundary_inclusion.py":
             assert payload["status"] == "pass"
             assert payload["new_component"] is False
             assert payload["containing_component_dimension"] == 6
-        elif filename == "verify_p4_full_support_tangent_pair_component.py":
+        elif base == "verify_p4_full_support_tangent_pair_component.py":
             assert payload["status"] == "pass"
             assert payload["component_number"] == 14
             assert payload["pair_profile"] == [2, 3, 4, 3, 4, 4]
-        elif filename == "verify_p4_disjoint_secant_lower_pair_component.py":
+        elif base == "verify_p4_disjoint_secant_lower_pair_component.py":
             assert payload["status"] == "pass"
             assert payload["component_number"] == 15
             assert payload["rank_two_kernel_type"] == "reduced secant"
         else:
-            assert filename == "verify_p4_support_one_secant_boundary_inclusion.py"
+            assert base == "verify_p4_support_one_secant_boundary_inclusion.py"
             assert payload["status"] == "pass"
             assert payload["containing_component"] == 15
             assert payload["new_component"] is False
         results.append(
             {
-                "verifier": filename,
+                "verifier": base,
                 "sha256": sha256(path),
                 "parsed_claim_fields_passed": True,
             }

@@ -122,7 +122,7 @@ that number `0,1,2,3` with (4) gives eight coarse cells.
 | triangle | `(1,1,1)` | exhausted: tournament strata lie in known closures, the fully kernel--kernel stratum lies in components sixteen or eighteen, the exactly-two-kernel stratum lies in component eleven, and the exactly-one-kernel ledger closes through components eight, eleven, twelve, eighteen, nineteen, twenty, and twenty-one; see [`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md) |
 
 The lower-pair locus `min r_ij<=2` is exhausted separately in
-[`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
+[`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](claims/p4/classifications/pair-geometry/lower-pair-rank-exhaustion/P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
 Every all-pair row in the table is now exhausted as well.  Therefore the
 current twenty-five-component list is exhaustive.
 

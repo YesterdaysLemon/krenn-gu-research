@@ -10,9 +10,17 @@ from dataclasses import dataclass
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
-PRIMARY = ROOT / "verify_p4_pure_rank_two_component.py"
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+THEOREM = HERE / "P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
+PRIMARY = HERE / "verify_p4_pure_rank_two_component.py"
 MODULUS = 101
 VARIABLE_COUNT = 20
 
@@ -317,7 +325,7 @@ def main() -> None:
         "source": Path(__file__).name,
         "source_sha256": sha256(Path(__file__)),
     }
-    output_path = ROOT / "tmp" / "p4_pure_rank_two_component_audit.json"
+    output_path = REPO_ROOT / "tmp" / "p4_pure_rank_two_component_audit.json"
     output_path.parent.mkdir(exist_ok=True)
     output_path.write_text(
         json.dumps(output, indent=2) + "\n",

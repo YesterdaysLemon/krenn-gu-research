@@ -10,8 +10,16 @@ from collections import Counter
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md"
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+THEOREM = HERE / "P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md"
 PRIME = 3
 PAIRS = tuple(itertools.combinations(range(4), 2))
 COMPLEMENT = (5, 4, 3, 2, 1, 0)
@@ -242,7 +250,7 @@ def main() -> None:
         "global_conjecture_resolved": False,
     }
     output_path = (
-        ROOT / "tmp" / "p4_decomposable_restriction_rank_drop_audited.json"
+        REPO_ROOT / "tmp" / "p4_decomposable_restriction_rank_drop_audited.json"
     )
     output_path.parent.mkdir(exist_ok=True)
     output_path.write_text(

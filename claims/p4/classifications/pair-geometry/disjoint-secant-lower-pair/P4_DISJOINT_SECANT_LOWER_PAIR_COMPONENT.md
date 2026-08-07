@@ -26,13 +26,13 @@ symmetry-inequivalent pure-`P_4` component orbits.
 
 The overlapping secant center is subsequently identified with the earlier
 sixfold in
-[`P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md`](P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md).
+[`P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md`](../overlapping-secant-lower-pair/P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md).
 Support-one secants are subsequently placed in this component's closure in
-[`P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md`](P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md).
+[`P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md`](../../../boundaries/pair-geometry/support-one-secant/P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md).
 The component's generic marked `H31` fibre is subsequently proved empty in
-[`P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../../P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
 Its generic weighted `H22` fibre is subsequently proved empty in
-[`P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../../P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
 The full pure-`P_4` component exhaustiveness problem away from the
 lower-pair locus and the global Krenn--Gu conjecture remain open.
 
@@ -254,8 +254,8 @@ any tensor coefficient is expanded.
 Run:
 
 ```text
-uv run --with sympy python verify_p4_disjoint_secant_lower_pair_component.py
-python audit_p4_disjoint_secant_lower_pair_component.py
+uv run --with sympy python claims/p4/classifications/pair-geometry/disjoint-secant-lower-pair/verify_p4_disjoint_secant_lower_pair_component.py
+python claims/p4/classifications/pair-geometry/disjoint-secant-lower-pair/audit_p4_disjoint_secant_lower_pair_component.py
 ```
 
 The primary verifier derives (12), the chart formulas, both exact minors,

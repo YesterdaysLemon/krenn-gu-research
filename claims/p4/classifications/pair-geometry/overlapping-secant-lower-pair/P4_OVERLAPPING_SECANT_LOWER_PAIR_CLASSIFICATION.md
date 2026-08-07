@@ -10,7 +10,7 @@ branches.  Their closures exhaust this overlapping `1+3` secant stratum.
 
 Each maximal branch has six parameters after restoring the two binary source
 ratios.  Its closure is exactly the six-dimensional component already proved
-in [`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](claims/p4/components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md),
+in [`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](../../../components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md),
 not a sixteenth component.  The identification uses an explicit common
 smooth point and source/mode transformation.
 
@@ -18,7 +18,7 @@ Together with the disjoint-secant component and the tangent classification,
 this closes every genuine support-two exact-rank-two pair kernel.  The
 support-one secants are subsequently placed in the disjoint-component
 closure by
-[`P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md`](P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md).
+[`P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md`](../../../boundaries/pair-geometry/support-one-secant/P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md).
 Compatibility of several lower-rank edges remains relevant to the closure
 intersection poset, but no longer to exhaustiveness of the lower-pair locus.
 
@@ -186,7 +186,7 @@ At the earlier sixfold certificate
 ```
 
 its four planes are those of
-[`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](claims/p4/components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md).
+[`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](../../../components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md).
 Transform an old source row by
 
 ```text
@@ -233,8 +233,8 @@ component is available.
 Run:
 
 ```text
-uv run --with sympy python verify_p4_overlapping_secant_lower_pair_classification.py
-python audit_p4_overlapping_secant_lower_pair_classification.py
+uv run --with sympy python claims/p4/classifications/pair-geometry/overlapping-secant-lower-pair/verify_p4_overlapping_secant_lower_pair_classification.py
+python claims/p4/classifications/pair-geometry/overlapping-secant-lower-pair/audit_p4_overlapping_secant_lower_pair_classification.py
 ```
 
 The primary verifier derives (10), (14), both exact minors, the pair profile,

@@ -16,7 +16,7 @@ the global Krenn--Gu conjecture remain open.
 ## The five-parameter family has a two-parameter quotient
 
 Start from the polar-graph family in
-[`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md`](P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md),
+[`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md`](claims/p4/classifications/pair-geometry/full-support-tangent-pair/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md),
 with parameters `(a,b,c,d,t)`.  On the generic torus chart put
 
 ```text

@@ -14,7 +14,7 @@ import sympy as sp
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md"
 DEPENDENCIES = (
-    ROOT / "P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md",
+    ROOT / "claims/p4/classifications/pair-geometry/decomposable-restriction-rank-drop/P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md",
     ROOT / "P5_Q5_311_SHARED_DROP_OBSTRUCTION.md",
     ROOT / "P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md",
 )

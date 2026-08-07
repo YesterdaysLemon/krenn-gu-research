@@ -19,7 +19,7 @@ MATCHINGS = (
 ROOT = Path(__file__).resolve().parent
 
 RESOLUTION_PACKAGES = (
-    "P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md",
+    "claims/p4/classifications/pair-geometry/lower-pair-rank-exhaustion/P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md",
     "claims/p4/classifications/star/rank-two-relation-star-obstruction/P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md",
     "claims/p4/classifications/star/two-rank-two-spoke-mixed-star-classification/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md",
     "claims/p4/classifications/triangle-211/all-rank-two-relation-triangle-inclusion/P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md",

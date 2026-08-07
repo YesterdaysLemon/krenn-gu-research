@@ -231,7 +231,7 @@ This is where arrangement local systems, tangent developables, and
 binary-form geometry meet the squarefree permanent problem.
 
 This translation already gives a new exact repository theorem:
-[`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](../P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md).
+[`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](../claims/p4/classifications/pair-geometry/rank-two-pair-kernel-geometry/P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md).
 For a pair of local two-planes whose product image has rank two, the
 projective kernel is a line in `P^3`.  The rank-one relations form the
 Segre quadric.  The kernel line cannot be a ruling because a nonzero
@@ -1076,7 +1076,7 @@ pair-image ranks remain there.
 
 The bottom of that lower-rank frontier is now removed by viewing
 annihilation as a correspondence rather than a list of equations:
-[`P4_RANK_ONE_PAIR_OBSTRUCTION.md`](../P4_RANK_ONE_PAIR_OBSTRUCTION.md).
+[`P4_RANK_ONE_PAIR_OBSTRUCTION.md`](../claims/p4/classifications/pair-geometry/rank-one-pair-obstruction/P4_RANK_ONE_PAIR_OBSTRUCTION.md).
 The projectivized zero-product locus of the squarefree algebra is a reducible
 curve: six `P1` components, one per source-coordinate pair.  A one-dimensional
 pair product would induce a nondegenerate bilinear form between the two row
@@ -1092,7 +1092,7 @@ four-tensor.  Exact rank two is therefore not just the next unexamined case;
 it is the sharp minimum for every pair image in the pure locus.
 
 The tangent half of exact rank two is now classified in
-[`P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md`](../P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md).
+[`P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md`](../claims/p4/classifications/pair-geometry/tangent-rank-two-pair-purity/P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md).
 Here the Kronecker-pencil label alone is not enough: purity couples the
 tangent edge to two catalecticant forms on the opposite planes.  With full
 support, the first form is a nondegenerate ternary quadratic space and its
@@ -1113,7 +1113,7 @@ fresh coefficient elimination.
 
 That closure analysis has already separated the dense full-support graph as
 a fourteenth component:
-[`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md`](../P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md).
+[`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md`](../claims/p4/classifications/pair-geometry/full-support-tangent-pair/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md).
 The polar-plane parameterization supplies a five-dimensional rational
 family.  At its exact certificate point the incidence tangent space is
 seven-dimensional, so a Jacobian-only analysis would overestimate it.  The
@@ -1134,7 +1134,7 @@ closed generically.
 
 The degenerate support-two polar flags have the opposite deformation
 behavior:
-[`P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md`](../P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md).
+[`P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md`](../claims/p4/boundaries/pair-geometry/support-two-tangent-flag/P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md).
 Their shared quadratic direction integrates into the earlier
 six-dimensional lower-pair component.  A critical source scaling makes its
 two secant kernel points collide, while second-order jets of the plane
@@ -1153,7 +1153,7 @@ block centers, subsequently closed in the paragraphs below.
 
 The disjoint `2+2` secant center is now classified and contributes a
 fifteenth component orbit:
-[`P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md`](../P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md).
+[`P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md`](../claims/p4/classifications/pair-geometry/disjoint-secant-lower-pair/P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md).
 Its two cross-products have complementary radicals, splitting the source
 space into two hyperbolic planes `P` and `K`.  The permanent purity equations
 become an orthogonal flag in `P` together with a rank-one graph map in `K`.
@@ -1172,7 +1172,7 @@ center and compatibility when more than one pair edge has rank two.
 
 The overlapping `1+3` secant center is also complete, but it recovers an
 old component rather than creating a new one:
-[`P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md`](../P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md).
+[`P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md`](../claims/p4/classifications/pair-geometry/overlapping-secant-lower-pair/P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md).
 The two radical planes now meet in a line.  Modulo that line, the two
 catalecticants are coordinate stars sharing one active direction.  The
 opposite-plane incidence factors as `mn lambda^2`, so its maximal strata are
@@ -1188,7 +1188,7 @@ support-two single-edge secant and tangent kernels are classified.
 ### 31 July addendum: the lower-pair locus is exhausted
 
 The remaining support-one secant degeneration is now closed in
-[`P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md`](../P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md).
+[`P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md`](../claims/p4/boundaries/pair-geometry/support-one-secant/P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md).
 A singleton zero product and a binary zero product can give pair rank two
 only when their coordinate supports are disjoint.  Their two catalecticants
 then become coordinate stars with a common radical line.  The same
@@ -1208,7 +1208,7 @@ coordinate remembers the subspace that an ordinary matrix limit forgets.
 Combining that boundary theorem with the projective zero-product
 correspondence, Segre line classification, orthogonal tangent flags, and the
 two secant block classifications gives
-[`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](../P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md):
+[`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](../claims/p4/classifications/pair-geometry/lower-pair-rank-exhaustion/P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md):
 every nonzero pure `P4` point having any pair image of rank at most two lies
 in the union of the embedded-`P3` component, the original lower-pair
 sixfold, the full-support tangent component fourteen, and the disjoint

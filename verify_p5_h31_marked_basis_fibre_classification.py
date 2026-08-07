@@ -18,8 +18,8 @@ from verify_p5_h31_marked_basis_open_branch import (
 
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md"
-FAMILY = ROOT / "P4_DECOMPOSABLE_RANK_TWO_FAMILY.md"
-COMPONENT = ROOT / "P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
+FAMILY = ROOT / "claims/p4/classifications/pair-geometry/decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md"
+COMPONENT = ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
 OPEN_BRANCH = ROOT / "P5_H31_MARKED_BASIS_OPEN_BRANCH.md"
 
 

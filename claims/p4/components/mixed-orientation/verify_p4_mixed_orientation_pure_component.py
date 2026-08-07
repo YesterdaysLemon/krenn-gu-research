@@ -23,7 +23,7 @@ from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
 THEOREM = HERE / "P4_MIXED_ORIENTATION_PURE_COMPONENT.md"
-KNOWN_FIRST = REPO_ROOT / "P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
+KNOWN_FIRST = REPO_ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
 KNOWN_SECOND = (
     REPO_ROOT / "claims" / "p4" / "components" / "diagonal-quadric"
     / "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md")

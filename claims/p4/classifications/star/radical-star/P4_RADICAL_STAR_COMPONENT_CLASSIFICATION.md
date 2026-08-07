@@ -235,7 +235,7 @@ plane tuple.”  Its unresolved generic alternatives are:
    individual exact rank-two pair is now reduced, without elimination,
    to a secant `2+2`/`1+3` block center or a coincident-plane tangent
    through a coordinate line in
-   [`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](../../../../../P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md);
+   [`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](../../pair-geometry/rank-two-pair-kernel-geometry/P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md);
    compatibility among several pencils and with rank-one edges is now
    partially classified.  A proposed pure rank-two-star obstruction and a
    proposed mixed `(2,2,1)` triangle obstruction were withdrawn after a

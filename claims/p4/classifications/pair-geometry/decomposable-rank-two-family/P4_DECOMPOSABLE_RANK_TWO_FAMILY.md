@@ -4,7 +4,7 @@
 
 This is an exact construction over `C`.  It proves that the rank-drop
 theorem in
-[`P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md`](P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md)
+[`P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md`](../decomposable-restriction-rank-drop/P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md)
 is sharp.
 
 There are four rank-two maps
@@ -29,7 +29,7 @@ essential.
 
 A later source normalization turns this family into a fixed exceptional
 triangle plus an apolar `P^2` fibre, making its geometry much more explicit:
-[`P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md`](P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md).
+[`P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md`](../../../../../P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md).
 
 ## Coefficient convention
 
@@ -119,8 +119,8 @@ All 15 other coefficients vanish as integer identities.
 Run:
 
 ```text
-python verify_p4_decomposable_rank_two_family.py
-python audit_p4_decomposable_rank_two_family.py
+python claims/p4/classifications/pair-geometry/decomposable-rank-two-family/verify_p4_decomposable_rank_two_family.py
+python claims/p4/classifications/pair-geometry/decomposable-rank-two-family/audit_p4_decomposable_rank_two_family.py
 ```
 
 The primary verifier expands all 16 permanents symbolically for the

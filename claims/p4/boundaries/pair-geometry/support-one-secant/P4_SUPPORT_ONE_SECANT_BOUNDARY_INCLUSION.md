@@ -6,7 +6,7 @@
 `P_4` restriction has an exact rank-two pair whose Segre-secant kernel
 contains a support-one zero product.  Then, up to source and mode symmetry,
 it lies in the closure of the disjoint-secant component proved in
-[`P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md`](P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md).
+[`P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md`](../../../classifications/pair-geometry/disjoint-secant-lower-pair/P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md).
 It therefore creates no sixteenth component.
 
 Together with the tangent, disjoint-support, and overlapping-support
@@ -164,8 +164,8 @@ variety.
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_p4_support_one_secant_boundary_inclusion.py
-python audit_p4_support_one_secant_boundary_inclusion.py
+uv run --with sympy python claims/p4/boundaries/pair-geometry/support-one-secant/verify_p4_support_one_secant_boundary_inclusion.py
+python claims/p4/boundaries/pair-geometry/support-one-secant/audit_p4_support_one_secant_boundary_inclusion.py
 ```
 
 The primary verifier checks the support dichotomy, star determinant, pure

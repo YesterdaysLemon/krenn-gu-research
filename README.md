@@ -2369,7 +2369,7 @@ strictly advance the finite frontier:
   Thus a single rank-two exceptional pair has no third kernel type,
   although compatibility of several such pencils and the exceptional
   triangle remain open:
-  [`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md).
+  [`P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md`](claims/p4/classifications/pair-geometry/rank-two-pair-kernel-geometry/P4_RANK_TWO_PAIR_KERNEL_GEOMETRY.md).
 - the all-rank-two-relation triangle now has an intrinsic symbolic
   holonomy.  Off the trivial-holonomy divisor, three Borel row shifts
   remove the constant relation terms, all six mixed triple products
@@ -2799,7 +2799,7 @@ strictly advance the finite frontier:
   irreducibility forces `U=V=span(X_p,X_q)`.  Multiplication on that plane is
   the rank-two hyperbolic form `ad+bc`; its nonzero Frobenius slice cannot be
   decomposable.  Hence exact pair rank two is the true lower boundary:
-  [`P4_RANK_ONE_PAIR_OBSTRUCTION.md`](P4_RANK_ONE_PAIR_OBSTRUCTION.md).
+  [`P4_RANK_ONE_PAIR_OBSTRUCTION.md`](claims/p4/classifications/pair-geometry/rank-one-pair-obstruction/P4_RANK_ONE_PAIR_OBSTRUCTION.md).
 - the tangent half of that exact-rank-two boundary now has a complete purity
   classification.  If the common tangent plane is `span(X0,w)`, purity of
   the opposite pair is equivalent to orthogonality for the catalecticant of
@@ -2811,7 +2811,7 @@ strictly advance the finite frontier:
   the radical in `C*w_bar`.  Exact non-embedded representatives have sorted
   pair profile `(2,3,3,4,4,4)`.  Their component containment is the next
   question:
-  [`P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md`](P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md).
+  [`P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md`](claims/p4/classifications/pair-geometry/tangent-rank-two-pair-purity/P4_TANGENT_RANK_TWO_PAIR_PURITY_CLASSIFICATION.md).
 - the dense full-support polar-graph branch is a fourteenth pure-`P4`
   component, not a boundary of the earlier sixfold.  With five parameters
   `(a,b,c,d,t)`, its restriction factors exactly as
@@ -2823,7 +2823,7 @@ strictly advance the finite frontier:
   all earlier fivefolds, and dimension separates the earlier lower-rank
   sixfold.  Its marked `H31` and weighted `H22` fibres are closed in the next
   two theorems:
-  [`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md`](P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md).
+  [`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md`](claims/p4/classifications/pair-geometry/full-support-tangent-pair/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md).
   A graph picture is in
   [`research_figures/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg`](research_figures/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg).
 - component fourteen's complete generic marked `H31` fibre is empty.  A
@@ -2855,7 +2855,7 @@ strictly advance the finite frontier:
   Hence support-two tangent purity is either embedded `P3` or a boundary of
   the known sixfold.  Together with component fourteen, this completes the
   tangent half of exact pair rank two:
-  [`P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md`](P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md).
+  [`P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md`](claims/p4/boundaries/pair-geometry/support-two-tangent-flag/P4_SUPPORT_TWO_TANGENT_FLAG_BOUNDARY_INCLUSION.md).
 - the disjoint `2+2` secant half produces a fifteenth component orbit.  The
   two cross-products of the rank-two edge define complementary hyperbolic
   planes `P,K`.  Purity is exactly an orthogonal-line condition in `P` and a
@@ -2867,7 +2867,7 @@ strictly advance the finite frontier:
   the universal incidence has rank fourteen with a nonzero `14 x 14` minor,
   proving a smooth sixfold.  The disjoint kernel supports `{0,1},{2,3}`
   separate it from the earlier overlapping `1+3` sixfold:
-  [`P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md`](P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md).
+  [`P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md`](claims/p4/classifications/pair-geometry/disjoint-secant-lower-pair/P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md).
 - component fifteen's complete generic marked `H31` fibre is empty.  The
   diagonal source torus reduces its six parameters to three moduli
   `(p,q,rho)`.  For every deleted source coordinate, open Fitting projection
@@ -2897,7 +2897,7 @@ strictly advance the finite frontier:
   six-dimensional lower-pair component.  Smoothness makes the two charts the
   same irreducible component.  Thus every genuine support-two single
   rank-two edge is classified:
-  [`P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md`](P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md).
+  [`P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md`](claims/p4/classifications/pair-geometry/overlapping-secant-lower-pair/P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md).
 - support-one secants are not a sixteenth component.  Exact pair rank two
   forces the singleton zero product to be disjoint from the other genuine
   binary zero product; the overlapping cases have rank one.  In the adapted
@@ -2912,8 +2912,8 @@ strictly advance the finite frontier:
   image of rank at most two lies in one of four already certified component
   closures**: embedded `P3`, the old lower-pair sixfold, component fourteen,
   or component fifteen:
-  [`P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md`](P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md),
-  [`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
+  [`P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md`](claims/p4/boundaries/pair-geometry/support-one-secant/P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md),
+  [`P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md`](claims/p4/classifications/pair-geometry/lower-pair-rank-exhaustion/P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md).
   Simultaneous rank-two edges remain relevant only to the intersection
   poset of these closures, not to component exhaustiveness of the
   lower-pair locus.
@@ -4079,8 +4079,8 @@ are:
 - [`P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md`](P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md)
 - [`P5_Q4_211_EXCLUSION_THEOREM.md`](P5_Q4_211_EXCLUSION_THEOREM.md)
 - [`P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md`](P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md)
-- [`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](P4_PURE_RANK_TWO_COMPONENT_THEOREM.md)
-- [`P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md`](P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md)
+- [`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md)
+- [`P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md)
 - [`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md)
 - [`P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md`](P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md)
 - [`P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md)
@@ -4101,8 +4101,8 @@ are:
 - [`P5_H31_MARKED_BASIS_OPEN_BRANCH.md`](P5_H31_MARKED_BASIS_OPEN_BRANCH.md)
 - [`P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md`](P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md)
 - [`P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md`](P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md)
-- [`P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md`](P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md)
-- [`P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md`](P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md)
+- [`P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md`](claims/p4/classifications/pair-geometry/pure-rank-two/boundaries/P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md)
+- [`P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md)
 - [`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md)
 - [`P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md`](P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md)
 - [`P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md`](P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md)
@@ -4285,7 +4285,7 @@ pure, and both alternatives contradict the nonzero rare slices.
 Therefore the complete normalized `q5_311` branch is excluded over `C`.
 The rank-drop theorem and its 10,880,000-profile finite-field audit
 program are in
-[`P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md`](P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md).
+[`P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md`](claims/p4/classifications/pair-geometry/decomposable-restriction-rank-drop/P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md).
 The primary theorem replay passes; the large finite-field census remains
 pending at this checkpoint.
 The shared-case obstruction is in
@@ -4295,13 +4295,13 @@ The complete branch theorem is in
 
 The theorem is sharp.  A symbolic five-parameter family and an
 independent exact-integer audit are in
-[`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](P4_DECOMPOSABLE_RANK_TWO_FAMILY.md).
+[`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](claims/p4/classifications/pair-geometry/decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md).
 An exact Grassmann-incidence Jacobian calculation proves that its
 closure is a generically smooth five-dimensional component:
-[`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](P4_PURE_RANK_TWO_COMPONENT_THEOREM.md).
+[`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md).
 Its preferred-chart closure and unique nonzero internal boundary
 divisor are explicit in
-[`P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md`](P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md).
+[`P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md).
 This confirms that the remaining target is simultaneous two-deletion
 compatibility.  Exact classifications of both zero and nonzero
 decomposable `P_3` restrictions through rank-at-least-two maps are in

@@ -6,7 +6,7 @@ This is an exact characteristic-zero classification and obstruction.
 
 For every finite-parameter member of the five-parameter all-rank-two
 family in
-[`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](P4_DECOMPOSABLE_RANK_TWO_FAMILY.md),
+[`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](claims/p4/classifications/pair-geometry/decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md),
 classify every marked row basis over its four planes that admits a
 neighbouring binary `Delta_2` slice.  Every such binary extension has an
 injective one-marked map in at least one mode and a transverse pure

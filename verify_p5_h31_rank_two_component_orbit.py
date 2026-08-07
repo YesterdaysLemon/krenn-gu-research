@@ -13,7 +13,7 @@ import sympy as sp
 
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md"
-COMPONENT = ROOT / "P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
+COMPONENT = ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
 ORIENTATION_THREE = ROOT / "P5_H31_KNOWN_RANK_TWO_FAMILY_OBSTRUCTION.md"
 BITS4 = tuple(itertools.product((0, 1), repeat=4))
 BITS3 = tuple(itertools.product((0, 1), repeat=3))

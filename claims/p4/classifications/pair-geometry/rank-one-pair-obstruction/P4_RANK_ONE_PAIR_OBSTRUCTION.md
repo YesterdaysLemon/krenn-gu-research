@@ -127,8 +127,8 @@ combination rules out the entire stratum without elimination or enumeration.
 Run:
 
 ```text
-uv run --with sympy python verify_p4_rank_one_pair_obstruction.py
-python audit_p4_rank_one_pair_obstruction.py
+uv run --with sympy python claims/p4/classifications/pair-geometry/rank-one-pair-obstruction/verify_p4_rank_one_pair_obstruction.py
+python claims/p4/classifications/pair-geometry/rank-one-pair-obstruction/audit_p4_rank_one_pair_obstruction.py
 ```
 
 The primary verifier checks the six curve parameterizations, the general

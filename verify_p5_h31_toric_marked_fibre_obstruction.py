@@ -31,8 +31,8 @@ from verify_p5_h31_marked_basis_open_branch import (
 
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md"
-TORIC = ROOT / "P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md"
-SEGRE = ROOT / "P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md"
+TORIC = ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/boundaries/P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md"
+SEGRE = ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md"
 GENERATOR = ROOT / "derive_p5_h31_toric_marked_fibre_elimination.py"
 
 

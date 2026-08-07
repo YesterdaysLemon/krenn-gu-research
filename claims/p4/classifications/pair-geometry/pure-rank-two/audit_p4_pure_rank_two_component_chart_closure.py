@@ -9,9 +9,17 @@ import json
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md"
-PRIMARY = ROOT / "verify_p4_pure_rank_two_component_chart_closure.py"
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+THEOREM = HERE / "P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md"
+PRIMARY = HERE / "verify_p4_pure_rank_two_component_chart_closure.py"
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 
 
@@ -126,7 +134,7 @@ def main() -> None:
         "source_sha256": sha256(Path(__file__)),
     }
     output_path = (
-        ROOT / "tmp" / "p4_pure_rank_two_component_chart_closure_audit.json"
+        REPO_ROOT / "tmp" / "p4_pure_rank_two_component_chart_closure_audit.json"
     )
     output_path.parent.mkdir(exist_ok=True)
     output_path.write_text(

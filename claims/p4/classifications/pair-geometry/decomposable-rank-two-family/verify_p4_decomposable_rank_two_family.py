@@ -11,8 +11,16 @@ from pathlib import Path
 import sympy as sp
 
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P4_DECOMPOSABLE_RANK_TWO_FAMILY.md"
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+THEOREM = HERE / "P4_DECOMPOSABLE_RANK_TWO_FAMILY.md"
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
 
 
@@ -119,7 +127,7 @@ def main() -> None:
         "global_conjecture_resolved": False,
     }
     output_path = (
-        ROOT / "tmp" / "p4_decomposable_rank_two_family_verified.json"
+        REPO_ROOT / "tmp" / "p4_decomposable_rank_two_family_verified.json"
     )
     output_path.parent.mkdir(exist_ok=True)
     output_path.write_text(

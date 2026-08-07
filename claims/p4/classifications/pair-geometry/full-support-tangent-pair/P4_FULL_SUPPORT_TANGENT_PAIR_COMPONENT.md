@@ -211,7 +211,7 @@ rank-two edges.  Therefore the component in this note is inequivalent to all
 thirteen earlier orbits.
 
 Its exceptional graph is shown in
-[`research_figures/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg`](research_figures/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg).
+[`research_figures/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg`](../../../../../research_figures/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT_GRAPH.svg).
 
 ## Across the mathematical fence
 
@@ -235,8 +235,8 @@ misclassify it.
 Run:
 
 ```text
-uv run --with sympy python verify_p4_full_support_tangent_pair_component.py
-python audit_p4_full_support_tangent_pair_component.py
+uv run --with sympy python claims/p4/classifications/pair-geometry/full-support-tangent-pair/verify_p4_full_support_tangent_pair_component.py
+python claims/p4/classifications/pair-geometry/full-support-tangent-pair/audit_p4_full_support_tangent_pair_component.py
 ```
 
 The primary verifier proves (7), (13), the family minor, (16), (17), the

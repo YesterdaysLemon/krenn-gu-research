@@ -482,7 +482,7 @@ def main() -> None:
         / "P4_COINCIDENT_SUPPORT_STAR_REVERSE_CLASSIFICATION.md",
         REPO_ROOT / "claims" / "p4" / "classifications" / "star"
         / "radical-star" / "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md",
-        REPO_ROOT / "P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md",
+        REPO_ROOT / "claims/p4/classifications/pair-geometry/lower-pair-rank-exhaustion/P4_LOWER_PAIR_RANK_COMPONENT_EXHAUSTION.md",
     ):
         assert dependency.exists()
 

@@ -25,7 +25,7 @@ deleted-`P_4` slices in `q5_311`.  It does not yet exclude that branch,
 `P_5 -> Delta_3`, or the arbitrary-order Krenn--Gu conjecture.
 
 The rank-two conclusion is sharp.  The exact five-parameter family in
-[`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](P4_DECOMPOSABLE_RANK_TWO_FAMILY.md)
+[`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](../decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md)
 has all four local maps of rank two and maps `P_4` to a nonzero pure
 tensor.  Thus the simultaneous compatibility of the two rare deletions,
 not either deletion alone, is the remaining source of a contradiction.
@@ -188,9 +188,9 @@ it to rank three.
 This first replaces an unconstrained pair of rank-one `P_4`
 compressions by a small rank-drop incidence dichotomy.  The shared case
 is subsequently excluded in
-[`P5_Q5_311_SHARED_DROP_OBSTRUCTION.md`](P5_Q5_311_SHARED_DROP_OBSTRUCTION.md),
+[`P5_Q5_311_SHARED_DROP_OBSTRUCTION.md`](../../../../../P5_Q5_311_SHARED_DROP_OBSTRUCTION.md),
 and the disjoint `2+2` case is excluded in
-[`P5_Q5_311_EXCLUSION_THEOREM.md`](P5_Q5_311_EXCLUSION_THEOREM.md).
+[`P5_Q5_311_EXCLUSION_THEOREM.md`](../../../../../P5_Q5_311_EXCLUSION_THEOREM.md).
 In particular, the all-rank-two family linked above shows why
 simultaneous compatibility was necessary: nonzero pure compression of
 one deleted slice is genuinely possible over `C`.
@@ -200,8 +200,8 @@ one deleted slice is genuinely possible over `C`.
 Run:
 
 ```text
-python verify_p4_decomposable_restriction_rank_drop.py
-python audit_p4_decomposable_restriction_rank_drop.py
+python claims/p4/classifications/pair-geometry/decomposable-restriction-rank-drop/verify_p4_decomposable_restriction_rank_drop.py
+python claims/p4/classifications/pair-geometry/decomposable-restriction-rank-drop/audit_p4_decomposable_restriction_rank_drop.py
 ```
 
 The primary verifier reconstructs the pair-image ranks, complement

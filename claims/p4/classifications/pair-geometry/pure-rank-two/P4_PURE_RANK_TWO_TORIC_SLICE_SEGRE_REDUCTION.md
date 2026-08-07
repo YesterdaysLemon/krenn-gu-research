@@ -46,10 +46,10 @@ This theorem itself is a plane-level reduction.  Its 21 residual cases
 are now closed at the complete marked-fibre level, including both
 first-plane charts and every binary extension direction:
 
-- [`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md)
+- [`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](../../../../../P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md)
 
 The marked-plane distinction is explained and witnessed in
-[`P5_H31_MARKED_BASIS_OPEN_BRANCH.md`](P5_H31_MARKED_BASIS_OPEN_BRANCH.md).
+[`P5_H31_MARKED_BASIS_OPEN_BRANCH.md`](../../../../../P5_H31_MARKED_BASIS_OPEN_BRANCH.md).
 The internal `E=0` divisor and first-plane Schubert boundary have since
 been closed at complete marked-fibre level.  The second
 diagonal-quadric pure-compression component, and any further component,
@@ -58,7 +58,7 @@ remain outside these theorems.
 ## Orbit invariance
 
 The last three plane configurations are the monomial maps recorded in
-[`P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md`](P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md).
+[`P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md`](boundaries/P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md).
 Inside a toric orbit, changing its torus parameters acts by invertible
 diagonal transformations on source coordinates and target row bases.
 It preserves:
@@ -152,8 +152,8 @@ all-rank orbit/orientation pairs, before imposing the neighbouring
 Run:
 
 ```text
-python verify_p4_pure_rank_two_toric_slice_segre.py
-python audit_p4_pure_rank_two_toric_slice_segre.py
+python claims/p4/classifications/pair-geometry/pure-rank-two/verify_p4_pure_rank_two_toric_slice_segre.py
+python claims/p4/classifications/pair-geometry/pure-rank-two/audit_p4_pure_rank_two_toric_slice_segre.py
 ```
 
 The primary verifier reconstructs the full face lattice, builds every

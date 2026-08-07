@@ -4,7 +4,7 @@
 
 This is an exact characteristic-zero obstruction for the complete
 five-parameter family constructed in
-[`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](P4_DECOMPOSABLE_RANK_TWO_FAMILY.md).
+[`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](claims/p4/classifications/pair-geometry/decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md).
 
 No member of that family can simultaneously be:
 

@@ -5,7 +5,7 @@
 This is an exact characteristic-zero obstruction.
 
 The chart closure theorem
-[`P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md`](P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md)
+[`P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md)
 finds one nonzero all-rank-two boundary divisor inside the preferred
 Grassmann chart of the known component.  For the displayed marked row
 normal form, no point of that divisor, in any of its four

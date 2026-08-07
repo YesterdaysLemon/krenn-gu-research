@@ -13,7 +13,7 @@ import sympy as sp
 
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P5_H31_KNOWN_RANK_TWO_FAMILY_OBSTRUCTION.md"
-PURE_FAMILY = ROOT / "P4_DECOMPOSABLE_RANK_TWO_FAMILY.md"
+PURE_FAMILY = ROOT / "claims/p4/classifications/pair-geometry/decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md"
 BITS = tuple(itertools.product((0, 1), repeat=4))
 
 

@@ -6,7 +6,7 @@
 support-two polar flag in the tangent rank-two pair classification lies,
 up to source and mode symmetry, in the closure of the six-dimensional
 lower-pair component from
-[`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](claims/p4/components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md).
+[`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](../../../components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md).
 
 Together with the embedded-`P_3` alternative, this proves that support-two
 tangent kernels create no new pure-`P_4` component.  The full-support tangent
@@ -211,8 +211,8 @@ support three: nondegenerate polar form -> two obstructed directions -> new five
 Run:
 
 ```text
-uv run --with sympy python verify_p4_support_two_tangent_flag_boundary_inclusion.py
-python audit_p4_support_two_tangent_flag_boundary_inclusion.py
+uv run --with sympy python claims/p4/boundaries/pair-geometry/support-two-tangent-flag/verify_p4_support_two_tangent_flag_boundary_inclusion.py
+python claims/p4/boundaries/pair-geometry/support-two-tangent-flag/audit_p4_support_two_tangent_flag_boundary_inclusion.py
 ```
 
 The primary verifier derives every Pluecker leading vector and matches it to
