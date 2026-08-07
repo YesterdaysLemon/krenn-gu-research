@@ -1,0 +1,201 @@
+{
+  "batch_id": "p4-triangle-211-stage5",
+  "approved_by": "YesterdaysLemon (repository owner), Stage 5 P4 triangle/211 classification migration instruction",
+  "approved_at": "2026-08-06",
+  "base_sha": "f77994ddf778b13bb083224f64cfead37d7e8ab2",
+  "manifest_sha256": "03d28669cf46bc756bac71804158d51f17e2405faa7b89cd85bc15b21246509f",
+  "mapping_sha256": "2838344305e6432707e98d1fa68f5865ae17c6029805204087198fb208ee37fd",
+  "member_count": 43,
+  "moves": [
+    {
+      "old_path": "P4_211_TRIANGLE_COMPLETE_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/triangle-211/211-triangle-complete/P4_211_TRIANGLE_COMPLETE_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md",
+      "new_path": "claims/p4/classifications/triangle-211/all-rank-two-relation-triangle-inclusion/P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md"
+    },
+    {
+      "old_path": "P4_COMMON_ACTIVE_211_TRIANGLE_PROJECTIVE_BOUNDARY_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/triangle-211/common-active-211-triangle-projective-boundary/P4_COMMON_ACTIVE_211_TRIANGLE_PROJECTIVE_BOUNDARY_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md",
+      "new_path": "claims/p4/classifications/triangle-211/common-active-binary-triangle/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md"
+    },
+    {
+      "old_path": "P4_COMMON_KERNEL_YY_211_TRIANGLE_PROJECTIVE_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/triangle-211/common-kernel-yy-211-triangle-projective/P4_COMMON_KERNEL_YY_211_TRIANGLE_PROJECTIVE_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/triangle-211/crossed-211-triangle-support/P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/triangle-211/cyclic-rank-one-triangle-support/P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_MIXED_CENTER_STAR_211_COMPLETE_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/triangle-211/mixed-center-star-211-complete/P4_MIXED_CENTER_STAR_211_COMPLETE_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/triangle-211/rank-two-relation-triangle-corrected/P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md",
+      "new_path": "claims/p4/classifications/triangle-211/split-center-mixed-star-211/P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md"
+    },
+    {
+      "old_path": "P4_TRANSITIVE_RANK_ONE_TRIANGLE_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/triangle-211/transitive-rank-one-triangle/P4_TRANSITIVE_RANK_ONE_TRIANGLE_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/triangle-211/triple-kernel-rank-one-triangle/P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_TWO_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/triangle-211/two-kernel-rank-one-triangle/P4_TWO_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/triangle-211/unequal-endpoint-inward-star-211-complete/P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPLETE_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "analyze_p4_common_active_binary_triangle_local_dimension.py",
+      "new_path": "claims/p4/classifications/triangle-211/common-active-binary-triangle/analyze_p4_common_active_binary_triangle_local_dimension.py"
+    },
+    {
+      "old_path": "audit_p4_211_triangle_complete_classification.py",
+      "new_path": "claims/p4/classifications/triangle-211/211-triangle-complete/audit_p4_211_triangle_complete_classification.py"
+    },
+    {
+      "old_path": "audit_p4_all_rank_two_relation_triangle_component_inclusion.py",
+      "new_path": "claims/p4/classifications/triangle-211/all-rank-two-relation-triangle-inclusion/audit_p4_all_rank_two_relation_triangle_component_inclusion.py"
+    },
+    {
+      "old_path": "audit_p4_common_active_211_triangle_projective_boundary_classification.py",
+      "new_path": "claims/p4/classifications/triangle-211/common-active-211-triangle-projective-boundary/audit_p4_common_active_211_triangle_projective_boundary_classification.py"
+    },
+    {
+      "old_path": "audit_p4_common_active_binary_triangle_component.py",
+      "new_path": "claims/p4/classifications/triangle-211/common-active-binary-triangle/audit_p4_common_active_binary_triangle_component.py"
+    },
+    {
+      "old_path": "audit_p4_common_kernel_yy_211_triangle_projective_classification.py",
+      "new_path": "claims/p4/classifications/triangle-211/common-kernel-yy-211-triangle-projective/audit_p4_common_kernel_yy_211_triangle_projective_classification.py"
+    },
+    {
+      "old_path": "audit_p4_crossed_211_triangle_support_classification.py",
+      "new_path": "claims/p4/classifications/triangle-211/crossed-211-triangle-support/audit_p4_crossed_211_triangle_support_classification.py"
+    },
+    {
+      "old_path": "audit_p4_cyclic_rank_one_triangle_support_classification.py",
+      "new_path": "claims/p4/classifications/triangle-211/cyclic-rank-one-triangle-support/audit_p4_cyclic_rank_one_triangle_support_classification.py"
+    },
+    {
+      "old_path": "audit_p4_mixed_center_star_211_complete_classification.py",
+      "new_path": "claims/p4/classifications/triangle-211/mixed-center-star-211-complete/audit_p4_mixed_center_star_211_complete_classification.py"
+    },
+    {
+      "old_path": "audit_p4_rank_two_relation_triangle_corrected_classification.py",
+      "new_path": "claims/p4/classifications/triangle-211/rank-two-relation-triangle-corrected/audit_p4_rank_two_relation_triangle_corrected_classification.py"
+    },
+    {
+      "old_path": "audit_p4_split_center_mixed_star_211_component.py",
+      "new_path": "claims/p4/classifications/triangle-211/split-center-mixed-star-211/audit_p4_split_center_mixed_star_211_component.py"
+    },
+    {
+      "old_path": "audit_p4_transitive_rank_one_triangle_classification.py",
+      "new_path": "claims/p4/classifications/triangle-211/transitive-rank-one-triangle/audit_p4_transitive_rank_one_triangle_classification.py"
+    },
+    {
+      "old_path": "audit_p4_triple_kernel_rank_one_triangle_classification.py",
+      "new_path": "claims/p4/classifications/triangle-211/triple-kernel-rank-one-triangle/audit_p4_triple_kernel_rank_one_triangle_classification.py"
+    },
+    {
+      "old_path": "audit_p4_two_kernel_rank_one_triangle_classification.py",
+      "new_path": "claims/p4/classifications/triangle-211/two-kernel-rank-one-triangle/audit_p4_two_kernel_rank_one_triangle_classification.py"
+    },
+    {
+      "old_path": "audit_p4_unequal_endpoint_inward_star_211_complete_classification.py",
+      "new_path": "claims/p4/classifications/triangle-211/unequal-endpoint-inward-star-211-complete/audit_p4_unequal_endpoint_inward_star_211_complete_classification.py"
+    },
+    {
+      "old_path": "verify_p4_211_triangle_complete_classification.py",
+      "new_path": "claims/p4/classifications/triangle-211/211-triangle-complete/verify_p4_211_triangle_complete_classification.py"
+    },
+    {
+      "old_path": "verify_p4_all_rank_two_relation_triangle_component_inclusion.py",
+      "new_path": "claims/p4/classifications/triangle-211/all-rank-two-relation-triangle-inclusion/verify_p4_all_rank_two_relation_triangle_component_inclusion.py"
+    },
+    {
+      "old_path": "verify_p4_common_active_211_triangle_projective_boundary_classification.py",
+      "new_path": "claims/p4/classifications/triangle-211/common-active-211-triangle-projective-boundary/verify_p4_common_active_211_triangle_projective_boundary_classification.py"
+    },
+    {
+      "old_path": "verify_p4_common_active_binary_triangle_component.py",
+      "new_path": "claims/p4/classifications/triangle-211/common-active-binary-triangle/verify_p4_common_active_binary_triangle_component.py"
+    },
+    {
+      "old_path": "verify_p4_common_kernel_yy_211_triangle_projective_classification.py",
+      "new_path": "claims/p4/classifications/triangle-211/common-kernel-yy-211-triangle-projective/verify_p4_common_kernel_yy_211_triangle_projective_classification.py"
+    },
+    {
+      "old_path": "verify_p4_crossed_211_triangle_support_classification.py",
+      "new_path": "claims/p4/classifications/triangle-211/crossed-211-triangle-support/verify_p4_crossed_211_triangle_support_classification.py"
+    },
+    {
+      "old_path": "verify_p4_cyclic_rank_one_triangle_support_classification.py",
+      "new_path": "claims/p4/classifications/triangle-211/cyclic-rank-one-triangle-support/verify_p4_cyclic_rank_one_triangle_support_classification.py"
+    },
+    {
+      "old_path": "verify_p4_mixed_center_star_211_complete_classification.py",
+      "new_path": "claims/p4/classifications/triangle-211/mixed-center-star-211-complete/verify_p4_mixed_center_star_211_complete_classification.py"
+    },
+    {
+      "old_path": "verify_p4_rank_two_relation_triangle_corrected_classification.py",
+      "new_path": "claims/p4/classifications/triangle-211/rank-two-relation-triangle-corrected/verify_p4_rank_two_relation_triangle_corrected_classification.py"
+    },
+    {
+      "old_path": "verify_p4_split_center_mixed_star_211_component.py",
+      "new_path": "claims/p4/classifications/triangle-211/split-center-mixed-star-211/verify_p4_split_center_mixed_star_211_component.py"
+    },
+    {
+      "old_path": "verify_p4_transitive_rank_one_triangle_classification.py",
+      "new_path": "claims/p4/classifications/triangle-211/transitive-rank-one-triangle/verify_p4_transitive_rank_one_triangle_classification.py"
+    },
+    {
+      "old_path": "verify_p4_triple_kernel_rank_one_triangle_classification.py",
+      "new_path": "claims/p4/classifications/triangle-211/triple-kernel-rank-one-triangle/verify_p4_triple_kernel_rank_one_triangle_classification.py"
+    },
+    {
+      "old_path": "verify_p4_two_kernel_rank_one_triangle_classification.py",
+      "new_path": "claims/p4/classifications/triangle-211/two-kernel-rank-one-triangle/verify_p4_two_kernel_rank_one_triangle_classification.py"
+    },
+    {
+      "old_path": "verify_p4_unequal_endpoint_inward_star_211_complete_classification.py",
+      "new_path": "claims/p4/classifications/triangle-211/unequal-endpoint-inward-star-211-complete/verify_p4_unequal_endpoint_inward_star_211_complete_classification.py"
+    }
+  ],
+  "rationale": "Stage 5: first P4 classification spine. 14 complete triangle/211 classification packages (theorem + primary verifier + independent audit, plus one solely-imported analyze support script) move from the root into the nested hierarchy claims/p4/classifications/triangle-211/<package>/. Human review refined the flat classifier destinations durably in layout-classification.json before freezing. Excluded: directed-zero-divisor (shared machinery imported by six root scripts across four families) and nonresonant-rank-two-triangle-cut (no independent audit; replay depends on unselected boundary pairs). This instruction approves only this exact mapping; it does not approve other classification records, boundary files, global classification files, or later batches.",
+  "notes": "All 28 preflight replays rc=0 before freezing. Singular-dependent replays use the established WSL environment. No theorem prose altered; relocation only.",
+  "packages": [
+    "211-triangle-complete",
+    "all-rank-two-relation-triangle-inclusion",
+    "common-active-211-triangle-projective-boundary",
+    "common-active-binary-triangle",
+    "common-kernel-yy-211-triangle-projective",
+    "crossed-211-triangle-support",
+    "cyclic-rank-one-triangle-support",
+    "mixed-center-star-211-complete",
+    "rank-two-relation-triangle-corrected",
+    "split-center-mixed-star-211",
+    "transitive-rank-one-triangle",
+    "triple-kernel-rank-one-triangle",
+    "two-kernel-rank-one-triangle",
+    "unequal-endpoint-inward-star-211-complete"
+  ]
+}

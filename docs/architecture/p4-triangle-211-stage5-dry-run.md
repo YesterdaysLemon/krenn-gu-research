@@ -27,8 +27,9 @@ spine (`split-center-mixed-star-211`) is included because the selected
 inseparable-dependency rule requires moving them together.  One
 directly owned support script moves with its package.
 
-**Batch: 14 packages / 44 files** (preferred range 13–15 packages,
-39–54 files — hit on both).
+**Batch: 14 packages / 43 files** (14 triples = 42 files + 1 owned
+support script; preferred range 13–15 packages, 39–54 files — hit on
+both).
 
 ## Selection decisions
 
@@ -86,7 +87,7 @@ committed manifest:
   never canonical) — 5 new regression tests
   (`NestedClassificationMetadataTests`), suite 98 -> 103.
 
-## File mapping (exact, 44 moves)
+## File mapping (exact, 43 moves)
 
 | old path | new path |
 |---|---|
@@ -249,7 +250,7 @@ in `tmp/` (gitignored).
 
 ### Ledger references
 
-Zero ledger entries reference any of the 44 moving files (the ledger
+Zero ledger entries reference any of the 43 moving files (the ledger
 is a curated partial index; the entries whose names mention these
 components point at the P5 H22/H31 consumer docs, which stay).  No
 repoints; hash refresh only for ledger docs whose content changes
@@ -259,15 +260,15 @@ during rewrites (README.md).  No entries fabricated.
 
 | measure | value |
 |---|---|
-| member count | 44 |
-| package count | 14 (+1 owned support file) |
+| member count | 43 |
+| package count | 14 (one of them +1 owned support file) |
 | confidence composition | 43 review_required (medium doc / low script) + 1 tool_script medium; 0 high-confidence; no promotions |
 | destination collisions | none (14 new package directories) |
 | source/destination cycles | none |
-| expected stale-path count increase | +44 (all root→package basename-preserving; 71 → 115) |
-| expected root-entry decrease | −44 (2,301 → 2,257; all 44 sources are root files) |
+| expected stale-path count increase | +43 (all root→package basename-preserving; 71 → 114) |
+| expected root-entry decrease | −43 (2,301 → 2,258; all 43 sources are root files) |
 | ledger entries affected | 0 repointed; hash refresh only for touched ledger docs |
-| manifest summary expectations | moved 71 → 115; review_required 1583 → 1539; proposed_high_confidence 361 (unchanged); projected_root_if_moved_only 2301 → 2257 (executor recomputes, no rebuild) |
+| manifest summary expectations | moved 71 → 114; review_required 1583 → 1540; proposed_high_confidence 361 (unchanged); projected_root_if_moved_only 2301 → 2258 (executor recomputes, no rebuild) |
 
 ## Exclusions
 
