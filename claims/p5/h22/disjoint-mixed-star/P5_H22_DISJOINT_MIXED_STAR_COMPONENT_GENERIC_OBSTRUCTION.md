@@ -300,10 +300,10 @@ Run:
 
 ```text
 python \
-  verify_p5_h22_disjoint_mixed_star_component_generic_obstruction.py
+  claims/p5/h22/disjoint-mixed-star/verify_p5_h22_disjoint_mixed_star_component_generic_obstruction.py
 
 python \
-  audit_p5_h22_disjoint_mixed_star_component_generic_obstruction.py
+  claims/p5/h22/disjoint-mixed-star/audit_p5_h22_disjoint_mixed_star_component_generic_obstruction.py
 ```
 
 The primary verifier reconstructs the component family, both weighted

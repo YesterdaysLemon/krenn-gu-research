@@ -183,10 +183,10 @@ Run:
 
 ```text
 python \
-  verify_p5_h22_disjoint_mixed_star_coupled_slope_boundary_obstruction.py
+  claims/p5/h22/disjoint-mixed-star/boundaries/verify_p5_h22_disjoint_mixed_star_coupled_slope_boundary_obstruction.py
 
 python \
-  audit_p5_h22_disjoint_mixed_star_coupled_slope_boundary_obstruction.py
+  claims/p5/h22/disjoint-mixed-star/boundaries/audit_p5_h22_disjoint_mixed_star_coupled_slope_boundary_obstruction.py
 ```
 
 The primary verifier reconstructs the rational slope, checks (1)--(8),

@@ -88,10 +88,10 @@ Run the two exact finite-field censuses with:
 
 ```text
 python \
-  explore_p5_h22_disjoint_mixed_star_modular.py 11 2
+  claims/p5/h22/disjoint-mixed-star/explore_p5_h22_disjoint_mixed_star_modular.py 11 2
 
 python \
-  explore_p5_h22_disjoint_mixed_star_modular.py 13 2
+  claims/p5/h22/disjoint-mixed-star/explore_p5_h22_disjoint_mixed_star_modular.py 13 2
 ```
 
 These censuses are corroboration only.  Two fields and one slope do not

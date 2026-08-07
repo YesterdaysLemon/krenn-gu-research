@@ -945,7 +945,7 @@
     {
       "name": "Generic weighted H22 fibre empty: disjoint mixed star",
       "document": "claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "284bbec609743a09",
+      "document_sha256_16": "343721662b8877ed",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1312,7 +1312,7 @@
     {
       "name": "Eighth-component weighted H22 closure - canonical determinantal proof",
       "document": "claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "284bbec609743a09",
+      "document_sha256_16": "343721662b8877ed",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1382,7 +1382,7 @@
     {
       "name": "Eighth-component torus quotient and certificate-divisor frontier",
       "document": "claims/p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_TORUS_QUOTIENT.md",
-      "document_sha256_16": "a5a61d6ad03ff9ea",
+      "document_sha256_16": "2de6aeb532441690",
       "status": "verified",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1568,7 +1568,7 @@
     {
       "name": "Weighted H22 disjoint mixed-star working note",
       "document": "claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_WORKING_NOTE.md",
-      "document_sha256_16": "25a6d03e106a1ee6",
+      "document_sha256_16": "713f0b67c7cd5253",
       "status": "superseded",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
