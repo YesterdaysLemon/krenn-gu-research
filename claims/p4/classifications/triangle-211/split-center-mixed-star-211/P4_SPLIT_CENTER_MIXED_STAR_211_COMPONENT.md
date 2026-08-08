@@ -14,7 +14,7 @@ most two.
 The two sign sheets are exchanged by a source-coordinate transposition.  The
 classification includes the complete projective direction of the moving
 leaf row.  The generic marked `H31` fibre is subsequently excluded in
-[`P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../../P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../p5/h31/split-center-mixed-star/P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 This note does not classify overlapping or singleton center supports, the
 remaining inward/equal-endpoint star strata, weighted `H22`, special fibres,
 or the global local-to-global step.  Subsequent exact theorems close the

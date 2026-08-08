@@ -4,9 +4,9 @@
 
 This is an exact characteristic-zero theorem on the eleventh certified
 pure-`P_4` component orbit
-([`P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md`](claims/p4/components/equal-support-sixfold/P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md)),
+([`P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md`](../../../p4/components/equal-support-sixfold/P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md)),
 companion to the marked `H31` theorem
-[`P5_H31_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md)
+[`P5_H31_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md`](../../h31/equal-support-sixfold/P5_H31_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md)
 and using its gauge.
 
 The generic weighted `H22` incidence of the component is empty — and
@@ -111,7 +111,7 @@ empty, with no open slope divisor at the covered points.**
 Run
 
 ```text
-python verify_p5_h22_equal_support_sixfold_component_generic_obstruction.py
+python claims/p5/h22/equal-support-sixfold/verify_p5_h22_equal_support_sixfold_component_generic_obstruction.py
 ```
 
 (after the `H31` companion, whose theorem file it hashes as a

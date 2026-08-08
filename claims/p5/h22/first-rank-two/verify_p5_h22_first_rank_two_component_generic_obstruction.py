@@ -6,13 +6,11 @@ from __future__ import annotations
 import hashlib
 import json
 import subprocess
+import sys
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import sympy as sp
-
-from p5_high_coordinate_tree_chart_cegar import singular_command_with_timeout
-import sys
 
 # Stage 9 moved the H22 mixed-orientation generic package into
 # claims/p5/h22/mixed-orientation/; expose it through the shared
@@ -21,10 +19,16 @@ for _p in Path(__file__).resolve().parents:
     if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
         sys.path.insert(0, str(_p / "src"))
         break
-from krenn_gu.bootstrap import expose_claim_package  # noqa: E402
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
 
 expose_claim_package(
-    Path(__file__).resolve().parent, "claims/p5/h22/mixed-orientation")
+    REPO_ROOT, "claims/p5/h22/mixed-orientation")
+
+from p5_high_coordinate_tree_chart_cegar import (  # noqa: E402
+    singular_command_with_timeout,
+)
 from verify_p5_h22_mixed_orientation_component_generic_obstruction import (
     MIXED_WORDS,
     WORDS,
@@ -38,9 +42,12 @@ from verify_p5_h22_mixed_orientation_component_generic_obstruction import (
 from verify_p5_h31_marked_basis_fibre_classification import rows
 
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md"
-COMPONENT = ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
+ROOT = REPO_ROOT
+THEOREM = HERE / "P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md"
+COMPONENT = (
+    ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two"
+    / "P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
+)
 EXPECTED_D23_PROJECTION = (
     "(L^2*Q^2*C*r^2+2*L^2*Q^2*C*r+L^2*Q^2*C+L*Q^2*C^2*r^2+2*L*Q^2*C^2*r+L*Q^2*C^2-L*Q*C*r^2+L*Q*C*r+2*L*Q*C+Q*C^2*r+Q*C^2-C*r+C)*t2+(L^3*Q*r^2-L^3*Q+L^2*Q*C*r^2-L^2*Q*C+L^2*r-L^2)*t3+(-L^2*Q*C*r-L^2*Q*C-L*Q*C^2*r-L*Q*C^2+L*C*r-L*C)",
     "t1",

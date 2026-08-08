@@ -14,7 +14,7 @@ Krenn--Gu conjecture remains **UNRESOLVED**.
 ## The hypersurface function field
 
 Use the normal form from
-[`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md`](claims/p4/classifications/star/unequal-endpoint-inward-star-211/P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md):
+[`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md`](../../../p4/classifications/star/unequal-endpoint-inward-star-211/P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md):
 
 ```text
 A=X_0+X_1,  C=X_0-X_1,  B=X_2+X_3,  D=X_2-X_3,
@@ -122,10 +122,10 @@ Run:
 
 ```text
 uv run --with sympy python \
-  verify_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py
+  claims/p5/h31/unequal-endpoint-inward-star/verify_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py
 
 uv run --with sympy python \
-  audit_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py
+  claims/p5/h31/unequal-endpoint-inward-star/audit_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py
 ```
 
 The primary verifier reconstructs (1)--(6) and performs all four exact

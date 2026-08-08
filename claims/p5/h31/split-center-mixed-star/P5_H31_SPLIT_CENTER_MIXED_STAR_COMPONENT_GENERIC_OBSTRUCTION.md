@@ -17,7 +17,7 @@ conjecture remains **UNRESOLVED**.
 ## Generic pure basis
 
 Use the `epsilon=1`, `h=1` chart of
-[`P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md`](claims/p4/classifications/triangle-211/split-center-mixed-star-211/P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md)
+[`P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md`](../../../p4/classifications/triangle-211/split-center-mixed-star-211/P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md)
 over `K=C(k,s,t)`.  Put
 
 ```text
@@ -125,8 +125,8 @@ the theorem.
 ## Replay
 
 ```text
-uv run --with sympy python verify_p5_h31_split_center_mixed_star_component_generic_obstruction.py
-uv run --with sympy python audit_p5_h31_split_center_mixed_star_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/split-center-mixed-star/verify_p5_h31_split_center_mixed_star_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/split-center-mixed-star/audit_p5_h31_split_center_mixed_star_component_generic_obstruction.py
 ```
 
 The primary verifier computes the function-field row module, all three exact

@@ -7,7 +7,6 @@ import hashlib
 import itertools
 import json
 from pathlib import Path
-
 import sys
 
 # Stage 9 moved the H22 mixed-orientation generic package into
@@ -17,10 +16,12 @@ for _p in Path(__file__).resolve().parents:
     if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
         sys.path.insert(0, str(_p / "src"))
         break
-from krenn_gu.bootstrap import expose_claim_package  # noqa: E402
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
 
 expose_claim_package(
-    Path(__file__).resolve().parent, "claims/p5/h22/mixed-orientation")
+    REPO_ROOT, "claims/p5/h22/mixed-orientation")
 from audit_p5_h22_mixed_orientation_component_generic_obstruction import (
     determinant_mod,
     diagonal_row,
@@ -33,9 +34,9 @@ from audit_p5_h22_mixed_orientation_component_generic_obstruction import (
 from audit_p5_h31_marked_basis_fibre_classification import family_rows
 
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md"
-PRIMARY = ROOT / "verify_p5_h22_first_rank_two_component_generic_obstruction.py"
+ROOT = REPO_ROOT
+THEOREM = HERE / "P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md"
+PRIMARY = HERE / "verify_p5_h22_first_rank_two_component_generic_obstruction.py"
 SAMPLES = {
     5: (1, 1, 3, 2),
     7: (1, 1, 2, 2),

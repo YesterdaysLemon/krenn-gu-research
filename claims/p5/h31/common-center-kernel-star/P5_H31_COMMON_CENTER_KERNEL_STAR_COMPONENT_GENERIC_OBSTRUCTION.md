@@ -114,8 +114,8 @@ empty.
 ## Replay
 
 ```text
-uv run --with sympy python verify_p5_h31_common_center_kernel_star_component_generic_obstruction.py
-uv run --with sympy python audit_p5_h31_common_center_kernel_star_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/common-center-kernel-star/verify_p5_h31_common_center_kernel_star_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/common-center-kernel-star/audit_p5_h31_common_center_kernel_star_component_generic_obstruction.py
 ```
 
 The primary replay performs the exact function-field row-module reductions,

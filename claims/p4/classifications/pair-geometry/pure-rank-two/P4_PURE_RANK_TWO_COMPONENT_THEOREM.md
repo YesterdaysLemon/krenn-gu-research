@@ -202,7 +202,7 @@ The rank-one pure-hyperplane boundary has already been excluded in
 
 The generic weighted `H22` incidence on this component has since been
 excluded in
-[`P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../../P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../p5/h22/first-rank-two/P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md).
 The weighted `01` mixed matrix is injective for every marking by an
 eight-chart projective-kernel cover.  The weighted `23` projection has
 two sheets, excluded by mode-two marked minors `0147` and `0137`.

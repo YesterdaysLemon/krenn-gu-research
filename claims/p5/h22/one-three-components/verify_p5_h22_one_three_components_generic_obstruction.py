@@ -7,13 +7,11 @@ import hashlib
 import itertools
 import json
 import subprocess
+import sys
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import sympy as sp
-
-from p5_high_coordinate_tree_chart_cegar import singular_command_with_timeout
-import sys
 
 # Stage 9 moved the H22 mixed-orientation generic package into
 # claims/p5/h22/mixed-orientation/; expose it through the shared
@@ -22,10 +20,17 @@ for _p in Path(__file__).resolve().parents:
     if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
         sys.path.insert(0, str(_p / "src"))
         break
-from krenn_gu.bootstrap import expose_claim_package  # noqa: E402
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
 
 expose_claim_package(
-    Path(__file__).resolve().parent, "claims/p5/h22/mixed-orientation")
+    REPO_ROOT, "claims/p5/h22/mixed-orientation")
+expose_claim_package(REPO_ROOT, "claims/p5/h31/one-three")
+
+from p5_high_coordinate_tree_chart_cegar import (  # noqa: E402
+    singular_command_with_timeout,
+)
 from verify_p5_h22_mixed_orientation_component_generic_obstruction import (
     MIXED_WORDS,
     WORDS,
@@ -41,11 +46,12 @@ from verify_p5_h31_one_three_component_generic_obstruction import (
 )
 
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md"
+ROOT = REPO_ROOT
+THEOREM = HERE / "P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md"
 COMPONENT = ROOT / "P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md"
 CANONICAL_PRIMARY = (
-    ROOT / "verify_p5_h31_one_three_component_generic_obstruction.py"
+    ROOT / "claims/p5/h31/one-three"
+    / "verify_p5_h31_one_three_component_generic_obstruction.py"
 )
 EXPECTED_PROJECTIONS = {
     "L1": {
