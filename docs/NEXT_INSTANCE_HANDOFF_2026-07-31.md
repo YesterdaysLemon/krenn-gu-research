@@ -220,16 +220,16 @@ Six statements organize the current frontier.
    open.  The first eighteen have empty
    fibres over the generic point by the earlier componentwise theorems.
    For the first seventeen, component fifteen was the last completed case:
-   [`P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md)
+   [`P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h31/disjoint-secant/P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md)
    and
-   [`P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
+   [`P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h22/disjoint-secant/P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
    Component eighteen is closed by the common-singleton Hall deficiency:
-   [`P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md)
+   [`P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h31/common-singleton/P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md)
    and
-   [`P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md).
+   [`P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md).
    Component nineteen is closed by exact open-incidence projection and
    two-minor covers, including the marking-line intersection:
-   [`P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
+   [`P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h31/common-kernel-vertical-triangle/P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
    Its weighted-`H22` shared incidence leaves one exact finite branch, whose
    complete common kernel has a fixed nonzero rank-four transverse minor:
    [`P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](../P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md).
@@ -323,7 +323,7 @@ Six statements organize the current frontier.
    Component twenty-one's exact all-marking row-module certificate closes its
    generic `H31` fibre, while homogeneous Hall deficiency plus finite
    beta-diagonal and infinity row-module identities close weighted `H22`:
-   [`P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
+   [`P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h31/coincident-support-rank-one-star/P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
    [`P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](../P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md).
    Both generic fibre types are also empty at the generic points of four
    natural compactification divisors: `p=0`, `q=0`, the genuine mode-three
@@ -1977,11 +1977,11 @@ uv run --with sympy python audit_root_m7_endpoint_legal_certificate_hitting_mini
 uv run --with sympy python verify_hafnian_principal_cofactor_gradient_dominance.py
 python audit_hafnian_principal_cofactor_gradient_dominance.py
 
-uv run --with sympy python verify_p5_h31_disjoint_secant_component_generic_obstruction.py
-python audit_p5_h31_disjoint_secant_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/disjoint-secant/verify_p5_h31_disjoint_secant_component_generic_obstruction.py
+python claims/p5/h31/disjoint-secant/audit_p5_h31_disjoint_secant_component_generic_obstruction.py
 
-uv run --with sympy python verify_p5_h22_disjoint_secant_component_generic_obstruction.py
-python audit_p5_h22_disjoint_secant_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h22/disjoint-secant/verify_p5_h22_disjoint_secant_component_generic_obstruction.py
+python claims/p5/h22/disjoint-secant/audit_p5_h22_disjoint_secant_component_generic_obstruction.py
 
 uv run --with sympy python verify_p4_all_pair_rank_exceptional_graph_reduction.py
 python audit_p4_all_pair_rank_exceptional_graph_reduction.py
@@ -1989,11 +1989,11 @@ python audit_p4_all_pair_rank_exceptional_graph_reduction.py
 uv run --with sympy python verify_p4_common_singleton_component.py
 python audit_p4_common_singleton_component.py
 
-uv run --with sympy python verify_p5_h31_common_singleton_component_generic_obstruction.py
-python audit_p5_h31_common_singleton_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/common-singleton/verify_p5_h31_common_singleton_component_generic_obstruction.py
+python claims/p5/h31/common-singleton/audit_p5_h31_common_singleton_component_generic_obstruction.py
 
-uv run --with sympy python verify_p5_h22_common_singleton_component_generic_obstruction.py
-python audit_p5_h22_common_singleton_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h22/common-singleton/verify_p5_h22_common_singleton_component_generic_obstruction.py
+python claims/p5/h22/common-singleton/audit_p5_h22_common_singleton_component_generic_obstruction.py
 
 uv run --with sympy python verify_five_root_boundary_transversal_blocker_classification.py
 python audit_five_root_boundary_transversal_blocker_classification.py
@@ -2046,11 +2046,11 @@ python audit_p6_common_port_111_unique_four_gate_obstruction.py
 uv run --with sympy python verify_p6_common_port_111_all_gate_covers_obstruction.py
 python audit_p6_common_port_111_all_gate_covers_obstruction.py
 
-uv run --with sympy python verify_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py
-uv run --with sympy python audit_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/coincident-support-rank-one-star/verify_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/coincident-support-rank-one-star/audit_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py
 
-uv run --with sympy python verify_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py
-python audit_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/common-kernel-vertical-triangle/verify_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py
+python claims/p5/h31/common-kernel-vertical-triangle/audit_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py
 
 uv run --with sympy python verify_p5_h31_common_active_binary_triangle_component_generic_obstruction.py
 uv run --with sympy python audit_p5_h31_common_active_binary_triangle_component_generic_obstruction.py

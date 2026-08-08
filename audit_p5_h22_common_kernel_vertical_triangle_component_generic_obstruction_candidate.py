@@ -33,12 +33,12 @@ CANDIDATE_CERTIFICATE = ROOT / (
 P4_REPORT = ROOT / "P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md"
 P4_SCRIPT = ROOT / "verify_p4_common_kernel_vertical_triangle_component.py"
 H31_REPORT = ROOT / (
-    "P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md"
+    "claims/p5/h31/common-kernel-vertical-triangle/P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
 H31_SCRIPT = ROOT / (
-    "verify_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py"
+    "claims/p5/h31/common-kernel-vertical-triangle/verify_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py"
 )
-H22_DEFINITION = ROOT / "P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md"
+H22_DEFINITION = ROOT / "claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md"
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 MIXED_WORDS = WORDS[1:-1]

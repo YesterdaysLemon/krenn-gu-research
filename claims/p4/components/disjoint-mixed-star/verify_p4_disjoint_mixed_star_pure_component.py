@@ -46,7 +46,7 @@ RADICAL_STAR = (
     REPO_ROOT / "claims" / "p4" / "classifications" / "star"
     / "radical-star" / "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md")
 H31_OBSTRUCTION = (
-    REPO_ROOT
+    REPO_ROOT / "claims" / "p5" / "h31" / "disjoint-mixed-star"
     / "P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
 WORDS = tuple(itertools.product((0, 1), repeat=4))

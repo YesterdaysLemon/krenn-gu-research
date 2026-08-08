@@ -1,0 +1,357 @@
+{
+  "batch_id": "p5-generic-obstructions-stage9",
+  "approved_by": "YesterdaysLemon (repository owner), Stage 9 P5 component-level generic H31/H22 obstruction migration instruction",
+  "approved_at": "2026-08-07",
+  "base_sha": "cd9a37c",
+  "manifest_sha256": "cae189abc65080a51437cd734ff94126c110993a02e57fa3c24bc1b47269367f",
+  "mapping_sha256": "68d20c08b987c2465395ec485647dc37c958d8400a8d05dede37559256a47f23",
+  "member_count": 86,
+  "moves": [
+    {
+      "old_path": "P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/all-rank-one-triangle/P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/coincident-support/P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/diagonal-quadric/P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H22_DIAGONAL_QUADRIC_WORKING_NOTE.md",
+      "new_path": "claims/p5/h22/diagonal-quadric/P5_H22_DIAGONAL_QUADRIC_WORKING_NOTE.md"
+    },
+    {
+      "old_path": "P5_H22_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/directed-zero-divisor-triangle-components/P5_H22_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/disjoint-secant/P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/eisenstein-norm/P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/equal-support-common-factor/P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H22_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/full-support-tangent/P5_H22_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/mixed-orientation/P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/six-dimensional/P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/transverse-common-factor/P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/two-rank-two-spoke-mixed-star/P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/all-rank-one-triangle/P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/coincident-support/P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/coincident-support-rank-one-star/P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/common-kernel-vertical-triangle/P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/common-singleton/P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/directed-zero-divisor-triangle-components/P5_H31_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/disjoint-mixed-star/P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/disjoint-secant/P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/eisenstein-norm/P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/equal-support-common-factor/P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/full-support-tangent/P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/mixed-orientation/P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/six-dimensional/P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/transverse-common-factor/P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/two-rank-two-spoke-mixed-star/P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "audit_p5_h22_all_rank_one_triangle_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/all-rank-one-triangle/audit_p5_h22_all_rank_one_triangle_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h22_coincident_support_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/coincident-support/audit_p5_h22_coincident_support_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h22_common_singleton_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/common-singleton/audit_p5_h22_common_singleton_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h22_diagonal_quadric_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/diagonal-quadric/audit_p5_h22_diagonal_quadric_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h22_directed_zero_divisor_triangle_components_generic_obstruction.py",
+      "new_path": "claims/p5/h22/directed-zero-divisor-triangle-components/audit_p5_h22_directed_zero_divisor_triangle_components_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h22_disjoint_secant_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/disjoint-secant/audit_p5_h22_disjoint_secant_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h22_eisenstein_norm_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/eisenstein-norm/audit_p5_h22_eisenstein_norm_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h22_equal_support_common_factor_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/equal-support-common-factor/audit_p5_h22_equal_support_common_factor_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h22_full_support_tangent_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/full-support-tangent/audit_p5_h22_full_support_tangent_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h22_mixed_orientation_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/mixed-orientation/audit_p5_h22_mixed_orientation_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h22_six_dimensional_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/six-dimensional/audit_p5_h22_six_dimensional_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h22_transverse_common_factor_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/transverse-common-factor/audit_p5_h22_transverse_common_factor_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/two-rank-two-spoke-mixed-star/audit_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h31_all_rank_one_triangle_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/all-rank-one-triangle/audit_p5_h31_all_rank_one_triangle_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h31_coincident_support_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/coincident-support/audit_p5_h31_coincident_support_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/coincident-support-rank-one-star/audit_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/common-kernel-vertical-triangle/audit_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h31_common_singleton_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/common-singleton/audit_p5_h31_common_singleton_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py",
+      "new_path": "claims/p5/h31/directed-zero-divisor-triangle-components/audit_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h31_disjoint_mixed_star_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/disjoint-mixed-star/audit_p5_h31_disjoint_mixed_star_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h31_disjoint_secant_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/disjoint-secant/audit_p5_h31_disjoint_secant_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h31_eisenstein_norm_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/eisenstein-norm/audit_p5_h31_eisenstein_norm_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h31_equal_support_common_factor_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/equal-support-common-factor/audit_p5_h31_equal_support_common_factor_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h31_full_support_tangent_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/full-support-tangent/audit_p5_h31_full_support_tangent_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h31_mixed_orientation_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/mixed-orientation/audit_p5_h31_mixed_orientation_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h31_six_dimensional_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/six-dimensional/audit_p5_h31_six_dimensional_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h31_transverse_common_factor_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/transverse-common-factor/audit_p5_h31_transverse_common_factor_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/two-rank-two-spoke-mixed-star/audit_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "explore_p5_h31_all_rank_one_triangle_modular.py",
+      "new_path": "claims/p5/h31/all-rank-one-triangle/explore_p5_h31_all_rank_one_triangle_modular.py"
+    },
+    {
+      "old_path": "verify_p5_h22_all_rank_one_triangle_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/all-rank-one-triangle/verify_p5_h22_all_rank_one_triangle_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h22_coincident_support_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/coincident-support/verify_p5_h22_coincident_support_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h22_common_singleton_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/common-singleton/verify_p5_h22_common_singleton_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h22_diagonal_quadric_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/diagonal-quadric/verify_p5_h22_diagonal_quadric_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h22_directed_zero_divisor_triangle_components_generic_obstruction.py",
+      "new_path": "claims/p5/h22/directed-zero-divisor-triangle-components/verify_p5_h22_directed_zero_divisor_triangle_components_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h22_disjoint_secant_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/disjoint-secant/verify_p5_h22_disjoint_secant_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h22_eisenstein_norm_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/eisenstein-norm/verify_p5_h22_eisenstein_norm_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h22_equal_support_common_factor_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/equal-support-common-factor/verify_p5_h22_equal_support_common_factor_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h22_full_support_tangent_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/full-support-tangent/verify_p5_h22_full_support_tangent_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h22_mixed_orientation_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/mixed-orientation/verify_p5_h22_mixed_orientation_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h22_six_dimensional_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/six-dimensional/verify_p5_h22_six_dimensional_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h22_transverse_common_factor_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/transverse-common-factor/verify_p5_h22_transverse_common_factor_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/two-rank-two-spoke-mixed-star/verify_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_all_rank_one_triangle_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/all-rank-one-triangle/verify_p5_h31_all_rank_one_triangle_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_coincident_support_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/coincident-support/verify_p5_h31_coincident_support_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/coincident-support-rank-one-star/verify_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/common-kernel-vertical-triangle/verify_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_common_singleton_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/common-singleton/verify_p5_h31_common_singleton_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py",
+      "new_path": "claims/p5/h31/directed-zero-divisor-triangle-components/verify_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_disjoint_mixed_star_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/disjoint-mixed-star/verify_p5_h31_disjoint_mixed_star_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_disjoint_secant_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/disjoint-secant/verify_p5_h31_disjoint_secant_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_eisenstein_norm_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/eisenstein-norm/verify_p5_h31_eisenstein_norm_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_equal_support_common_factor_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/equal-support-common-factor/verify_p5_h31_equal_support_common_factor_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_full_support_tangent_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/full-support-tangent/verify_p5_h31_full_support_tangent_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_mixed_orientation_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/mixed-orientation/verify_p5_h31_mixed_orientation_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_six_dimensional_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/six-dimensional/verify_p5_h31_six_dimensional_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_transverse_common_factor_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/transverse-common-factor/verify_p5_h31_transverse_common_factor_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/two-rank-two-spoke-mixed-star/verify_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py"
+    }
+  ],
+  "rationale": "Stage 9: the first large P5 component-level generic obstruction migration. 28 packages (86 files) move from the repository root into claims/p5/h31/<family>/ and claims/p5/h22/<family>/. Every package is a ledger verified_generic generic component theorem with its claim document, primary verifier, and independent audit (the pilot's H22 disjoint-mixed-star package is already migrated, so only its H31 side moves; three families are H31-only and one is H22-only because the counterpart is absent, candidate-only, or already migrated - recorded asymmetries, not manufactured symmetry). The batch is the generic horizontal layer only: no boundary/divisor recursion, no exceptional fibres, no candidate/partial/withdrawn material, no frontier documents. Selection used ledger status, separability of the generic core from boundary descendants, and green preflight replay (57/57 mandatory verifiers/audits); classifier confidence played no role. Equal-support-sixfold was deferred after preflight proved both verifiers already broken pre-move by a stale root path constant left by the Stage 3 component move; migration does not repair it.",
+  "notes": "Source classifier families: 84 proposed_high_confidence + 2 review_required members (the diagonal-quadric superseded working note and the all-rank-one-triangle modular explore script). Zero classification refinements were needed: every destination equals the classifier's proposed_path (manifest regeneration byte-identical). Singular conventions vary across the moved verifiers (shared helper, self-contained WSL-aware, two direct-[Singular] scripts); all replayed green pre-move, the direct-Singular pair via WSL Singular 4.3.2. Staying-root consumers needing Commit D repair: first-rank-two and one-three-components H22 verify/audit (import moving mixed-orientation), and the four research_snapshots/2026-08-04-p5-delta3-obligation-ledger scripts (import the moving all-rank-one-triangle H31 verifier)."
+}

@@ -18,7 +18,7 @@ THEOREM = (
     / "P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md"
 )
 COMPONENT = ROOT / "claims/p4/classifications/star/two-rank-two-spoke-mixed-star-component/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md"
-H31 = ROOT / "P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
+H31 = ROOT / "claims/p5/h31/two-rank-two-spoke-mixed-star/P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 MIXED_WORDS = WORDS[1:-1]
 PERMUTATIONS = tuple(itertools.permutations(range(4)))

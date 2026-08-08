@@ -39,7 +39,7 @@ closes the complementary projective leaf chart as well.  Thus this entire
 orientation/support stratum is classified.
 A subsequent exact function-field
 theorem excludes the generic marked `H31` fibre:
-[`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../p5/h31/disjoint-mixed-star/P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 Its generic weighted `H22` incidence is now excluded as well:
 [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 The equal- and opposite-weight slope fibres are excluded by the

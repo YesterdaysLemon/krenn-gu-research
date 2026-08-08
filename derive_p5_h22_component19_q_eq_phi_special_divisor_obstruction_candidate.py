@@ -20,7 +20,7 @@ CERTIFICATE = ROOT / "p5_h22_component19_q_eq_phi_special_divisor_certificate.js
 INPUTS = tuple(ROOT / name for name in (
     "P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md",
     "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_VERIFICATION.md",
-    "P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
+    "claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
 ))
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))

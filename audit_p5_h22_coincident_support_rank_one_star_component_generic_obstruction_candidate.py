@@ -33,12 +33,12 @@ CANDIDATE_CERTIFICATE = ROOT / (
 P4_REPORT = ROOT / "claims/p4/classifications/star/coincident-support-rank-one-star/P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md"
 P4_SCRIPT = ROOT / "claims/p4/classifications/star/coincident-support-rank-one-star/verify_p4_coincident_support_rank_one_star_component.py"
 H31_REPORT = ROOT / (
-    "P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
+    "claims/p5/h31/coincident-support-rank-one-star/P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
 H31_SCRIPT = ROOT / (
-    "verify_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py"
+    "claims/p5/h31/coincident-support-rank-one-star/verify_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py"
 )
-H22_DEFINITION = ROOT / "P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md"
+H22_DEFINITION = ROOT / "claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md"
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 MIXED_WORDS = WORDS[1:-1]

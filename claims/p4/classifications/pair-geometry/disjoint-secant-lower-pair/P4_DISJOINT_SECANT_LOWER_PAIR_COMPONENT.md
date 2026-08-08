@@ -30,9 +30,9 @@ sixfold in
 Support-one secants are subsequently placed in this component's closure in
 [`P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md`](../../../boundaries/pair-geometry/support-one-secant/P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md).
 The component's generic marked `H31` fibre is subsequently proved empty in
-[`P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../../P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../p5/h31/disjoint-secant/P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
 Its generic weighted `H22` fibre is subsequently proved empty in
-[`P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../../P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../p5/h22/disjoint-secant/P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
 The full pure-`P_4` component exhaustiveness problem away from the
 lower-pair locus and the global Krenn--Gu conjecture remain open.
 
