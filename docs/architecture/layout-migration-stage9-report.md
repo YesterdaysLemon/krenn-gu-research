@@ -332,6 +332,13 @@ Because executable code changed, the correction commit is a new
 substantive head with its own `workflow_dispatch`; the final
 PR-triggered CI must pass on the exact final head (recorded below).
 
+- Corrected substantive head dispatch
+  [31240609202](https://github.com/YesterdaysLemon/open-graph-theory-with-prize/actions/runs/31240609202)
+  passed (**success**) on the exact corrected substantive head
+  `bffa91832e6fa5cddb1555c61b5e278b90904d18`.  No migration machinery,
+  theorem claim, or batch mapping changed as a result.
+
+
 ## Fresh-agent documentation audit
 
 This stage was executed by a fresh agent from the Stage 9 prompt plus
