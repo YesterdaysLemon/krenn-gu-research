@@ -21,15 +21,18 @@ remains **UNRESOLVED**.
 
 | directory | contents |
 |---|---|
-| [`h31/`](h31/) | generic marked-`H31` obstruction packages (15) |
-| [`h22/`](h22/) | generic weighted-`H22` obstruction packages (13) |
+| [`h31/`](h31/) | generic marked-`H31` obstruction packages (21) |
+| [`h22/`](h22/) | generic weighted-`H22` obstruction packages (17) |
 
 The H22 disjoint-mixed-star package was migrated first, in the layout
 migration pilot; it lives at
 [`h22/disjoint-mixed-star/`](h22/disjoint-mixed-star/) together with
 its boundary subpackages and is the structural template for this
 spine.  Stage 9 (`p5-generic-obstructions-stage9`) migrated the 28
-generic packages listed in the side READMEs.
+generic packages listed in the side READMEs.  Stage 10
+(`p5-deferred-generics-stage10`) recovered and migrated nine further
+generic packages (25 files), while leaving all boundary and divisor
+descendants at the repository root.
 
 ## Pairing by underlying P4 family
 
@@ -44,12 +47,20 @@ asymmetries (never manufactured symmetry):
   moved in Stage 9;
 - `diagonal-quadric` H22 moved in Stage 9; its H31 side is the
   elliptic-generic theorem, inseparable from its boundary forest and
-  deliberately not migrated.
+  deliberately not migrated;
+- `equal-support-sixfold` has migrated H31 and H22 generic theorems,
+  but each has a primary verifier only: no P5 independent audit exists;
+- `common-center-kernel-star`, `unequal-complement-common-kernel`,
+  `unequal-endpoint-inward-star`, and `split-center-mixed-star` are
+  H31-only in this spine because their H22 work is partial, boundary
+  recursive, or depends on candidate-only evidence;
+- `first-rank-two` is H22-only here; `one-three` / `one-three-components`
+  is the additional two-sided Stage 10 pair.
 
 ## Scope boundary
 
 The following P5 layers are **not** part of this spine and were not
-moved by Stage 9: pointwise/divisor closures, boundary obstruction
+moved by Stage 9 or Stage 10: pointwise/divisor closures, boundary obstruction
 trees, exceptional-fibre work, the `q4_211` / `q5_221` / component19 /
 component21 / component23 programmes, and the frontier documents
 (`P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md`,
