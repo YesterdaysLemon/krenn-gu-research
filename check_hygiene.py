@@ -28,14 +28,18 @@ Checks:
   2. no generated solver artifact class is tracked (.sing/.ms/.out/
      .stdout/.drat/.cnf/.log and the brute-force JSON dump patterns);
   3. local Markdown links resolve (files and directories);
-  4. catalog/theorem-ledger.json integrity: documents exist, every
-     document_sha256_16 is recomputed and matched, mapped verifier/
-     audit scripts are tracked, verified entries carry provenance that
-     explains any null field, and the component_census summary matches
-     the entry counts;
+  4. catalog/theorem-ledger.json integrity: the Stage 11.5 evidence
+     semantics contract is present, status values are declared,
+     dependencies remain explicitly unpopulated, documents exist,
+     every document_sha256_16 is recomputed and matched, mapped
+     verifier/audit scripts are tracked, verified entries carry
+     provenance that explains any null field, and the component_census
+     summary matches the entry counts;
   5. no machine-specific checkout paths, vendored-env prefixes, or
      unguarded sys.path injections;
-  8. root layout against the allowlist and entry-count target;
+  8. root layout against an exact justified allowlist and entry-count
+     target (new debt fails now; grandfathered debt is warning-only
+     until the migration reaches its end state);
   9. manifest-aware stale-path enforcement (executed old paths must not
      reappear outside provenance);
   10. executed-batch provenance (every moved entry names a batch file
@@ -251,11 +255,16 @@ def check_markdown_links(files: list[str]) -> None:
               "resolve")
 
 
+LEDGER_SCHEMA_VERSION = 3
+LEDGER_CONTRACT_DOCUMENT = "docs/evidence-semantics-contract.md"
+LEDGER_DEPENDENCIES_STATE = "reserved_unpopulated"
+
 VERIFIED_STATUSES = {"verified", "verified_finite", "verified_generic"}
 # Provenance values that explain WHY a field is null (an explicit,
 # auditable reason) as opposed to being silently unmapped.
 PROVENANCE_VALUES = {
     "independent_modular_audit", "companion_point_check_script",
+    "independent_exact_identity_audit",
     "script_is_the_verifier", "in_document_proof_only",
     "historical_certificate_chain",
     "per_divisor_verify_scripts_named_in_atlas",
@@ -268,6 +277,95 @@ NULL_EXPLAIN_VALUES = {
     "per_divisor_docs_P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_*",
     "not_yet_mapped", "none_exists",
 }
+
+
+def ledger_semantic_issues(ledger: dict) -> list[str]:
+    """Validate the machine-enforceable part of the evidence contract.
+
+    This deliberately checks representation, not mathematical truth.  In
+    particular, it cannot determine whether a theorem's stated scope or
+    status is correct; that remains a scientific review obligation.
+    """
+    issues = []
+    if ledger.get("schema_version") != LEDGER_SCHEMA_VERSION:
+        issues.append(
+            f"schema_version must be {LEDGER_SCHEMA_VERSION}, got "
+            f"{ledger.get('schema_version')!r}")
+    if ledger.get("evidence_semantics_contract") != \
+            LEDGER_CONTRACT_DOCUMENT:
+        issues.append(
+            "evidence_semantics_contract must point to "
+            f"{LEDGER_CONTRACT_DOCUMENT}")
+    if ledger.get("completeness") != "partial_curated":
+        issues.append(
+            "completeness must remain 'partial_curated' until a dedicated "
+            "coverage audit changes the ledger's role")
+
+    conventions = ledger.get("conventions")
+    if not isinstance(conventions, dict):
+        return issues + ["conventions must be an object"]
+
+    status_values = conventions.get("status_values")
+    status_semantics = conventions.get("status_semantics")
+    if not isinstance(status_values, list) or not status_values:
+        issues.append("conventions.status_values must be a nonempty list")
+        status_values = []
+    elif len(status_values) != len(set(status_values)):
+        issues.append("conventions.status_values contains duplicates")
+    if not isinstance(status_semantics, dict):
+        issues.append("conventions.status_semantics must be an object")
+        status_semantics = {}
+    for status in status_values:
+        if not isinstance(status_semantics.get(status), str):
+            issues.append(
+                f"status {status!r} lacks a string semantic definition")
+
+    provenance_values = conventions.get("provenance_values")
+    if not isinstance(provenance_values, list) or \
+            set(provenance_values) != PROVENANCE_VALUES:
+        issues.append(
+            "conventions.provenance_values must match the hygiene "
+            "provenance vocabulary")
+
+    dependency_contract = conventions.get("dependencies")
+    if not isinstance(dependency_contract, dict):
+        issues.append("conventions.dependencies must be an object")
+    else:
+        if dependency_contract.get("state") != \
+                LEDGER_DEPENDENCIES_STATE:
+            issues.append(
+                "conventions.dependencies.state must be "
+                f"{LEDGER_DEPENDENCIES_STATE!r}")
+        if dependency_contract.get("empty_array_means") != "not_recorded":
+            issues.append(
+                "conventions.dependencies.empty_array_means must be "
+                "'not_recorded'")
+
+    entries = ledger.get("entries")
+    if not isinstance(entries, list):
+        return issues + ["entries must be a list"]
+    allowed = set(status_values)
+    for index, entry in enumerate(entries):
+        label = entry.get("name", f"entry {index}")
+        status = entry.get("status")
+        if status not in allowed:
+            issues.append(
+                f"undeclared status {status!r} ({label})")
+        dependencies = entry.get("dependencies")
+        if not isinstance(dependencies, list):
+            issues.append(f"dependencies must be an array ({label})")
+        elif dependencies:
+            issues.append(
+                "dependencies is reserved/unpopulated; typed relationships "
+                f"belong in a future proof-obligation graph ({label})")
+        if not isinstance(entry.get("assumptions_and_excluded_divisors"),
+                          list):
+            issues.append(
+                "assumptions_and_excluded_divisors must be an array "
+                f"({label})")
+        if not isinstance(entry.get("external_binaries"), list):
+            issues.append(f"external_binaries must be an array ({label})")
+    return issues
 
 
 def _blob_sha16(rel: str) -> str:
@@ -298,7 +396,12 @@ def check_ledger(files: list[str]) -> None:
         by_base.setdefault(pathlib.PurePosixPath(rel).name, []).append(rel)
     hash_checked = 0
     hash_bad = 0
-    issues = []
+    issues = ledger_semantic_issues(ledger)
+
+    contract_path = ROOT / LEDGER_CONTRACT_DOCUMENT
+    if not contract_path.exists():
+        issues.append(
+            f"evidence semantics contract missing: {LEDGER_CONTRACT_DOCUMENT}")
 
     for entry in ledger["entries"]:
         name = entry.get("name", "<unnamed>")
@@ -341,24 +444,18 @@ def check_ledger(files: list[str]) -> None:
                     issues.append(
                         f"{refkey} mapped but {field}='none_exists' "
                         f"({name})")
-    # validate the summary blocks against the entries themselves
-    h31 = [e for e in ledger["entries"]
-           if e.get("name", "").startswith("Generic marked H31")]
-    h22 = [e for e in ledger["entries"]
-           if e.get("name", "").startswith("Generic weighted H22")]
+    # The component census is a curated navigation snapshot.  Do not derive
+    # scientific counts from display-name prefixes or composite statuses.
     census = ledger.get("component_census", {})
-    checks = {
-        "h31_generic_docs_mapped": len(h31),
-        "h31_generic_docs_with_independent_audit":
-            sum(1 for e in h31 if e.get("independent_audit")),
-        "h22_generic_docs_mapped": len(h22),
-    }
-    for key, expected in checks.items():
-        recorded = census.get(key)
-        if recorded != expected:
-            issues.append(
-                f"component_census.{key}={recorded} but entries give "
-                f"{expected}")
+    if not isinstance(census, dict) or not isinstance(
+            census.get("semantics"), str):
+        issues.append("component_census must declare its curated semantics")
+    for key in ("certified_pure_p4_orbits", "h31_generic_docs_mapped",
+                "h31_generic_docs_with_independent_audit",
+                "h22_generic_docs_mapped"):
+        value = census.get(key) if isinstance(census, dict) else None
+        if not isinstance(value, int) or value < 0:
+            issues.append(f"component_census.{key} must be a nonnegative int")
     if ledger.get("global_status") != "UNRESOLVED":
         issues.append(
             f"global_status must stay UNRESOLVED, got "
@@ -388,10 +485,12 @@ def check_ledger(files: list[str]) -> None:
             + (f"\n  ... ({len(issues) - 30} more)"
                if len(issues) > 30 else ""))
     else:
-        print(f"[4] ledger: {len(ledger['entries'])} entries "
-              f"({ledger.get('completeness')}); hashes recomputed "
+        print(f"[4] ledger: schema v{ledger.get('schema_version')}, "
+              f"{len(ledger['entries'])} entries "
+              f"({ledger.get('completeness')}); contract present; "
+              f"hashes recomputed "
               f"{hash_checked} ok / {hash_bad} bad; provenance and "
-              f"census summary consistent; {len(referenced)} referenced "
+              f"curated census shape consistent; {len(referenced)} referenced "
               f"scripts exist ({len(KNOWN_DANGLING_SCRIPTS)} historical "
               "dangling refs allowlisted)")
 
@@ -482,17 +581,41 @@ def show_versions() -> None:
 
 
 # Root-layout enforcement (warning-only during the migration; set
-# KG_LAYOUT_STRICT=1 to fail, e.g. once bulk migration is complete).
-ALLOWED_ROOT_FILES = {
-    "README.md", "LICENSE", "CONTRIBUTING.md", "CITATION.cff",
-    "pyproject.toml", "requirements.txt", "requirements.lock.txt",
-    "Containerfile", ".gitignore",
+# KG_LAYOUT_STRICT=1 only after a dedicated end-state activation review).
+# Every exception is named and justified.  Filename patterns below are
+# diagnostics for prioritizing ordinary research artifacts; they are not an
+# alternative allowlist and they never authorize a move.
+ROOT_FILE_JUSTIFICATIONS = {
+    ".gitignore": "repository configuration",
+    "AGENTS.md": "repository-wide scientific and agent operating contract",
+    "CITATION.cff": "repository citation metadata",
+    "CONTRIBUTING.md": "repository-wide contributor entrypoint",
+    "Containerfile": "repository environment configuration",
+    "LICENSE": "repository license",
+    "README.md": "top-level navigation and project status",
+    "check_hygiene.py": "explicit repository-wide validation entrypoint",
+    "pyproject.toml": "project configuration",
+    "requirements.lock.txt": "locked project dependencies",
+    "requirements.txt": "project dependencies",
 }
-ALLOWED_ROOT_DIRS = {
-    ".github", "claims", "docs", "src", "tools", "tests", "catalog",
-    "research_snapshots", "research_figures",
+ROOT_DIR_JUSTIFICATIONS = {
+    ".github": "repository automation configuration",
+    "catalog": "machine-readable repository catalogs",
+    "claims": "claim-centered scientific packages",
+    "docs": "repository documentation",
+    "research_figures": "curated research figures",
+    "research_snapshots": "pinned research snapshots",
+    "src": "shared implementation",
+    "tests": "repository tests",
+    "tools": "repository tooling",
 }
+ALLOWED_ROOT_FILES = set(ROOT_FILE_JUSTIFICATIONS)
+ALLOWED_ROOT_DIRS = set(ROOT_DIR_JUSTIFICATIONS)
 ROOT_COUNT_TARGET = 30
+ROOT_UNIVERSE_BASELINE_COUNT = 2363
+ROOT_UNIVERSE_BASELINE_SHA256 = (
+    "2f4f1af23a89fa3ca56fe2114676c6324385aa1dbd7e5b6ddf35863511edd76c"
+)
 FORBIDDEN_ROOT_PATTERNS = (
     re.compile(r"^P[4-7]_.*\.md$"),
     re.compile(r"^ARBITRARY_.*\.md$"),
@@ -502,38 +625,141 @@ FORBIDDEN_ROOT_PATTERNS = (
 )
 
 
-def check_root_layout(files: list[str]) -> None:
+def root_layout_issues(files: list[str]) -> tuple[list[str], int, int, int]:
+    """Return end-state root-policy issues and measured entry counts."""
     root_files = sorted(f for f in files if "/" not in f)
     root_dirs = sorted({f.split("/")[0] for f in files if "/" in f})
-    violations = []
+    research_pattern_matches = []
     for f in root_files:
-        if f in ALLOWED_ROOT_FILES:
-            continue
         for pat in FORBIDDEN_ROOT_PATTERNS:
             if pat.match(f):
-                violations.append(f)
+                research_pattern_matches.append(f)
                 break
     entries = len(root_files) + len(root_dirs)
-    strict = os.environ.get("KG_LAYOUT_STRICT") == "1"
     problems = []
     if entries > ROOT_COUNT_TARGET:
         problems.append(
             f"{entries} root entries exceed the target of "
             f"{ROOT_COUNT_TARGET} (migration in progress)")
-    if violations:
+    unjustified_files = sorted(set(root_files) - ALLOWED_ROOT_FILES)
+    unjustified_dirs = sorted(set(root_dirs) - ALLOWED_ROOT_DIRS)
+    if unjustified_files:
         problems.append(
-            f"{len(violations)} root files match forbidden patterns, "
-            f"e.g. {violations[:3]}")
+            f"{len(unjustified_files)} root files lack an end-state "
+            f"allowlist justification, e.g. {unjustified_files[:3]}")
+    if unjustified_dirs:
+        problems.append(
+            f"{len(unjustified_dirs)} root directories lack an end-state "
+            f"allowlist justification: {unjustified_dirs[:3]}")
+    if research_pattern_matches:
+        problems.append(
+            f"{len(research_pattern_matches)} root files match ordinary "
+            f"research-artifact patterns, e.g. "
+            f"{research_pattern_matches[:3]}")
+    return problems, entries, len(root_files), len(root_dirs)
+
+
+def root_debt_baseline() -> tuple[set[str], list[str]]:
+    """Load unresolved grandfathered debt from the frozen root universe."""
+    issues = []
+    classification_path = ROOT / "catalog" / "layout-classification.json"
+    unclassified_path = ROOT / "catalog" / "unclassified-files.json"
+    try:
+        classification = json.loads(
+            classification_path.read_text(encoding="utf-8"))
+        classified = {
+            entry["old_path"] for entry in classification["entries"]
+        }
+    except (OSError, KeyError, TypeError, json.JSONDecodeError) as exc:
+        issues.append(f"cannot load classified root-debt baseline: {exc}")
+        classified = set()
+    try:
+        unclassified_data = json.loads(
+            unclassified_path.read_text(encoding="utf-8"))
+        unclassified = set(unclassified_data["files"])
+        if unclassified_data.get("unclassified_count") != len(unclassified):
+            issues.append(
+                "catalog/unclassified-files.json count does not match files")
+    except (OSError, KeyError, TypeError, json.JSONDecodeError) as exc:
+        issues.append(f"cannot load unclassified root-debt baseline: {exc}")
+        unclassified = set()
+    root_universe = classified | unclassified
+    encoded = ("\n".join(sorted(root_universe)) + "\n").encode("utf-8")
+    digest = hashlib.sha256(encoded).hexdigest()
+    if len(root_universe) != ROOT_UNIVERSE_BASELINE_COUNT:
+        issues.append(
+            f"root universe has {len(root_universe)} paths, expected "
+            f"{ROOT_UNIVERSE_BASELINE_COUNT}")
+    if digest != ROOT_UNIVERSE_BASELINE_SHA256:
+        issues.append(
+            f"root-universe hash {digest} does not match frozen "
+            f"{ROOT_UNIVERSE_BASELINE_SHA256}")
+
+    manifest_path = ROOT / "catalog" / "moved-paths.json"
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        retired = {
+            entry["old_path"] for entry in manifest["moves"]
+            if entry.get("status") == "moved"
+        }
+    except (OSError, KeyError, TypeError, json.JSONDecodeError) as exc:
+        issues.append(f"cannot load retired root paths: {exc}")
+        retired = set()
+
+    # Debt is a monotonically shrinking subset.  Executed old paths are
+    # retired immediately, so neither the ratchet nor the separate stale-path
+    # checker permits their reappearance.
+    return root_universe - retired - ALLOWED_ROOT_FILES, issues
+
+
+def root_debt_ratchet_issues(
+        files: list[str], debt_baseline: set[str]) -> list[str]:
+    """Reject new root debt and unknown top-level directories.
+
+    Membership in ``debt_baseline`` only grandfathers a path pending
+    ownership review.  It is not a destination, classification, or move
+    approval.
+    """
+    root_files = {f for f in files if "/" not in f}
+    root_dirs = {f.split("/")[0] for f in files if "/" in f}
+    new_debt = sorted(root_files - ALLOWED_ROOT_FILES - debt_baseline)
+    unknown_dirs = sorted(root_dirs - ALLOWED_ROOT_DIRS)
+    issues = []
+    if new_debt:
+        issues.append(
+            f"new unapproved root debt: {new_debt[:10]}"
+            + (f" ({len(new_debt)} total)" if len(new_debt) > 10 else ""))
+    if unknown_dirs:
+        issues.append(f"unapproved top-level directories: {unknown_dirs}")
+    return issues
+
+
+def check_root_layout(files: list[str]) -> None:
+    problems, entries, root_file_count, root_dir_count = \
+        root_layout_issues(files)
+    debt_baseline, baseline_issues = root_debt_baseline()
+    ratchet_issues = (root_debt_ratchet_issues(files, debt_baseline)
+                      if not baseline_issues else [])
+    for issue in baseline_issues + ratchet_issues:
+        failures.append(f"root layout ratchet: {issue}")
+    strict = os.environ.get("KG_LAYOUT_STRICT") == "1"
     if problems:
         label = "HYGIENE FAILURES" if strict else "LAYOUT WARNINGS"
         print(f"[8] root layout ({'strict' if strict else 'warning-only'}):")
+        print(f"    measured {root_file_count} files + "
+              f"{root_dir_count} directories")
         for p in problems:
             print(f"    {p}")
         if strict:
             failures.extend(f"root layout: {p}" for p in problems)
     else:
-        print(f"[8] root layout: {entries} entries, no forbidden "
-              "patterns")
+        print(f"[8] root layout: {entries} entries, every root file and "
+              "directory explicitly justified")
+    if not baseline_issues and not ratchet_issues:
+        debt_count = len({f for f in files if "/" not in f}
+                         - ALLOWED_ROOT_FILES)
+        print(f"    root-debt ratchet: {debt_count} grandfathered paths, "
+              "0 new paths")
 
 
 # Manifest-aware stale-path enforcement (PR review item 6).  After a

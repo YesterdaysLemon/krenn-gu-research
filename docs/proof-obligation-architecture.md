@@ -10,6 +10,10 @@ compose into a proof.
 
 It does not assert that the required obligations are currently closed.
 
+Vocabulary, lifecycle, evidence/audit semantics, typed relationship
+rules, and the theorem-ledger boundary are authoritative in
+`docs/evidence-semantics-contract.md`.
+
 ## 1. The target shape
 
 The desired end state is a proof DAG, not a pile of successful
@@ -61,9 +65,11 @@ answer:
 - Is there a Lean counterpart?
 - What remains open?
 
-Do not create a machine-readable schema for these fields until the
-actual post-migration proof DAG has been inventoried and the existing
-theorem ledger has been reviewed for overlap.
+Stage 11.5 reviewed the theorem ledger's semantics and reserved its
+empty `dependencies` arrays as unpopulated.  Do not create a
+machine-readable proof-DAG schema until the actual post-migration
+obligations have been inventoried under the evidence-semantics
+contract.
 
 ## 3. Certificate discharge rule
 
@@ -420,27 +426,34 @@ change it merely because one agent reports success.
 After the layout migration is substantially complete, perform a
 dedicated proof-DAG inventory.
 
-Only then decide whether to extend the theorem ledger or create a
-separate machine-readable graph.
+Stage 11.5 chose the safe boundary: the theorem ledger remains a
+partial curated claim index, and a future typed proof-obligation graph
+must be separate.  Do not create two overlapping status databases:
+the graph should reference claim/evidence records under the shared
+contract rather than copy composite ledger status as truth.
 
-Do not create two overlapping status databases accidentally.
-
-Review the existing ledger fields for an explicit semantic contract
-before reusing them.  Do not mechanically derive mathematical
-dependencies from imports, hashes, subprocess inventories, or filename
-families; record executable, provenance, audit, and historical
-relationships separately from direct live proof premises.
+The current ledger `dependencies: []` means `not recorded`, never
+`none`.  Do not mechanically derive mathematical dependencies from
+imports, hashes, subprocess inventories, display-name prefixes, or
+filename families.  Record executable, provenance, audit,
+corroboration, frontier, and historical relationships separately from
+direct live proof premises.
 
 A future schema may need separate fields for:
 
 ```text
+node_kind
 mathematical_status
 scope
-dependencies
+lifecycle_status
+verification_status
+attempt_outcome
+typed_relationships
 evidence_mode
 certificate
 primary_checker
-independent_audit
+audit_outcome
+audit_independence_scope
 formalization_status
 formal_theorem
 formal_assumptions

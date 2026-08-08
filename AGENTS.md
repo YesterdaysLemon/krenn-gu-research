@@ -79,6 +79,15 @@ but remain unproved.
 
 Preserve all of these distinctions.
 
+`proved`, `verified`, `verified_generic`, `partial`, `candidate`,
+`experimental`, `superseded`, `withdrawn`, `failed`, `timeout`, and
+`inconclusive` do not form one ladder.  In particular, failure,
+timeout, and inconclusive are attempt/run outcomes; withdrawn and
+superseded are lifecycle states; and genericity is scope.  Use the
+authoritative vocabulary and typed-relationship rules in:
+
+`docs/evidence-semantics-contract.md`.
+
 ## 4. Computational certificates and proof obligations
 
 A certificate is not automatically a proof of the global theorem.
@@ -213,6 +222,19 @@ Use `git mv`; preserve history and scientific content.
 
 Do not opportunistically edit mathematics during migration.
 
+### Root-exit invariant
+
+Ordinary research documents, verifiers, audits, experiments,
+generators, and similar executable artifacts must eventually leave
+repository root.  Existing root debt may remain only while ownership
+and evidence boundaries are investigated.  It is not permanently
+root-owned merely because a safe batch is not yet known.
+
+The no-new-debt ratchet and exact end-state allowlist are defined in
+`docs/evidence-semantics-contract.md` and enforced by
+`check_hygiene.py`.  Root-exit pressure never authorizes a move,
+resolves ambiguous ownership, or changes scientific status.
+
 ### Proof-boundary ownership
 
 - Reconstruct filesystem/classification, executable/provenance, and
@@ -265,6 +287,10 @@ Frozen migration approvals:
 
 Curated theorem/provenance index:
 `catalog/theorem-ledger.json`.
+
+Evidence vocabulary, relationship types, ledger semantics, and root
+end state:
+`docs/evidence-semantics-contract.md`.
 
 Proof-obligation philosophy:
 `docs/proof-obligation-architecture.md`.

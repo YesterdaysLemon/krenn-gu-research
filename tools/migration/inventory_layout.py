@@ -285,25 +285,37 @@ def classify(rel: str, ctx: dict) -> dict | None:
     name, stem, ext = p.name, p.stem, p.suffix.lower()
     evidence, confidence = [], "high"
 
-    # Status-marker documents.
+    ledger_statuses = ctx["ledger_doc_statuses"].get(rel, set())
+
+    # Status-marker documents.  A filename is a triage signal, not ownership.
+    # Only an unambiguous all-withdrawn ledger surface gets high confidence;
+    # every filename-only or conflicting case requires human review.
     if ext == ".md" and WITHDRAWN_RE.search(name):
+        all_withdrawn = ledger_statuses == {"withdrawn"}
         return {"old_path": rel,
                 "proposed_path": f"claims/legacy/{name}",
                 "category": "withdrawn_document",
-                "claim_family": "legacy", "confidence": "high",
-                "evidence": ["filename WITHDRAWN marker"]}
+                "claim_family": "legacy",
+                "confidence": "high" if all_withdrawn else "low",
+                "evidence": ["filename WITHDRAWN marker",
+                             "all ledger claims withdrawn" if all_withdrawn
+                             else "ledger surface absent, mixed, or not all "
+                                  "withdrawn; human proof-boundary review "
+                                  "required"]}
 
-    ledger_status = ctx["ledger_doc_status"].get(rel)
     # Withdrawn claims go to legacy.  Superseded documents stay with
-    # their family package as provenance (claim-package principle), so
-    # only withdrawn statuses route here.
-    if ledger_status in ("withdrawn", "partially_withdrawn") \
-            and ext == ".md":
+    # their family package as provenance (claim-package principle).
+    # A document can index several claims, and partially withdrawn
+    # artifacts can retain live subclaims.  Only an unambiguous all-withdrawn
+    # document routes automatically; every mixed lifecycle requires proof-
+    # boundary review.
+    if ledger_statuses == {"withdrawn"} and ext == ".md":
         return {"old_path": rel,
                 "proposed_path": f"claims/legacy/{name}",
                 "category": "legacy_document",
                 "claim_family": "legacy", "confidence": "high",
-                "evidence": [f"theorem ledger status={ledger_status}"]}
+                "evidence": ["all theorem-ledger claims for document "
+                             "have status=withdrawn"]}
 
     # Navigation/meta documents with fixed destinations.
     fixed_docs = {
@@ -588,11 +600,11 @@ def main() -> int:
                  for f in root_files if f.endswith(".py")}
 
     ledger = load_ledger(files, ref)
-    ledger_doc_status = {}
+    ledger_doc_statuses = collections.defaultdict(set)
     ledger_refs = []
     for e in ledger.get("entries", []):
         doc = e.get("document", "").split(" (")[0]
-        ledger_doc_status[doc] = e.get("status")
+        ledger_doc_statuses[doc].add(e.get("status"))
         for key in ("document", "primary_verifier", "independent_audit"):
             v = e.get(key)
             if v:
@@ -614,7 +626,8 @@ def main() -> int:
     graph = collect_imports(root_mods, files, ref)
 
     h31_families, h22_families = build_family_maps(root_files)
-    ctx = {"ledger_doc_status": ledger_doc_status, "triples": triples,
+    ctx = {"ledger_doc_statuses": dict(ledger_doc_statuses),
+           "triples": triples,
            "importers": graph["importers"],
            "h31_families": h31_families,
            "h22_families": h22_families}

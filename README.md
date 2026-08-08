@@ -10,6 +10,8 @@ counterexample for all even `n >= 6` and `d >= 3`.
 - Agent/contributor operating contract: [`AGENTS.md`](AGENTS.md)
 - Proof-obligation architecture:
   [`docs/proof-obligation-architecture.md`](docs/proof-obligation-architecture.md)
+- Evidence semantics and root-exit contract:
+  [`docs/evidence-semantics-contract.md`](docs/evidence-semantics-contract.md)
 - Formalization/Lean interface:
   [`docs/formalization-interface.md`](docs/formalization-interface.md)
 - Active layout-migration runbook:
