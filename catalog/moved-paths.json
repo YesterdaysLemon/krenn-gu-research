@@ -16,16 +16,16 @@
   },
   "counts": {
     "total_classified_moves": 2015,
-    "moved": 239,
+    "moved": 325,
     "pilot": 0,
-    "proposed_high_confidence": 361,
-    "review_required": 1415,
+    "proposed_high_confidence": 277,
+    "review_required": 1413,
     "unclassified": 348,
     "root_files_before": 2363,
     "root_dirs_before": 3,
     "root_entries_before": 2366,
-    "projected_root_if_moved_only": 2133,
-    "projected_root_if_high_confidence_batches_executed": 1772,
+    "projected_root_if_moved_only": 2047,
+    "projected_root_if_high_confidence_batches_executed": 1770,
     "projected_root_if_all_classified_executed": 357,
     "projection_note": "unclassified files are not members of any move set, so every projection already leaves them at the root; do not add unclassified again",
     "collisions": 0,
@@ -7796,33 +7796,37 @@
       "old_path": "P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/all-rank-one-triangle/P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/all-rank-one-triangle",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/all-rank-one-triangle",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h22_all_rank_one_triangle_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/all-rank-one-triangle/audit_p5_h22_all_rank_one_triangle_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/all-rank-one-triangle",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/all-rank-one-triangle",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h22_all_rank_one_triangle_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/all-rank-one-triangle/verify_p5_h22_all_rank_one_triangle_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/all-rank-one-triangle",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/all-rank-one-triangle",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/coincident-support/P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/coincident-support",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/coincident-support",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md",
@@ -7844,9 +7848,10 @@
       "old_path": "audit_p5_h22_coincident_support_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/coincident-support/audit_p5_h22_coincident_support_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/coincident-support",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/coincident-support",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py",
@@ -7860,9 +7865,10 @@
       "old_path": "verify_p5_h22_coincident_support_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/coincident-support/verify_p5_h22_coincident_support_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/coincident-support",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/coincident-support",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md",
@@ -8580,25 +8586,28 @@
       "old_path": "P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/common-singleton",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/common-singleton",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h22_common_singleton_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/common-singleton/audit_p5_h22_common_singleton_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/common-singleton",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/common-singleton",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h22_common_singleton_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/common-singleton/verify_p5_h22_common_singleton_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/common-singleton",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/common-singleton",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H22_COMPONENT19_P0_FINITE_BOUNDARY_GEOMETRY_RECONNAISSANCE.md",
@@ -9052,57 +9061,64 @@
       "old_path": "P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/diagonal-quadric/P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/diagonal-quadric",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/diagonal-quadric",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H22_DIAGONAL_QUADRIC_WORKING_NOTE.md",
       "new_path": "claims/p5/h22/diagonal-quadric/P5_H22_DIAGONAL_QUADRIC_WORKING_NOTE.md",
       "reason": "claim_document -> p5/h22/diagonal-quadric",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/h22/diagonal-quadric",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h22_diagonal_quadric_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/diagonal-quadric/audit_p5_h22_diagonal_quadric_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/diagonal-quadric",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/diagonal-quadric",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h22_diagonal_quadric_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/diagonal-quadric/verify_p5_h22_diagonal_quadric_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/diagonal-quadric",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/diagonal-quadric",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H22_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/directed-zero-divisor-triangle-components/P5_H22_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/directed-zero-divisor-triangle-components",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/directed-zero-divisor-triangle-components",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h22_directed_zero_divisor_triangle_components_generic_obstruction.py",
       "new_path": "claims/p5/h22/directed-zero-divisor-triangle-components/audit_p5_h22_directed_zero_divisor_triangle_components_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/directed-zero-divisor-triangle-components",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/directed-zero-divisor-triangle-components",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h22_directed_zero_divisor_triangle_components_generic_obstruction.py",
       "new_path": "claims/p5/h22/directed-zero-divisor-triangle-components/verify_p5_h22_directed_zero_divisor_triangle_components_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/directed-zero-divisor-triangle-components",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/directed-zero-divisor-triangle-components",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
@@ -9423,49 +9439,55 @@
       "old_path": "P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/disjoint-secant/P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/disjoint-secant",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-secant",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h22_disjoint_secant_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/disjoint-secant/audit_p5_h22_disjoint_secant_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/disjoint-secant",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-secant",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h22_disjoint_secant_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/disjoint-secant/verify_p5_h22_disjoint_secant_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/disjoint-secant",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-secant",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/eisenstein-norm/P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/eisenstein-norm",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/eisenstein-norm",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h22_eisenstein_norm_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/eisenstein-norm/audit_p5_h22_eisenstein_norm_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/eisenstein-norm",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/eisenstein-norm",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h22_eisenstein_norm_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/eisenstein-norm/verify_p5_h22_eisenstein_norm_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/eisenstein-norm",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/eisenstein-norm",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
@@ -9631,25 +9653,28 @@
       "old_path": "P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/equal-support-common-factor/P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/equal-support-common-factor",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/equal-support-common-factor",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h22_equal_support_common_factor_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/equal-support-common-factor/audit_p5_h22_equal_support_common_factor_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/equal-support-common-factor",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/equal-support-common-factor",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h22_equal_support_common_factor_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/equal-support-common-factor/verify_p5_h22_equal_support_common_factor_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/equal-support-common-factor",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/equal-support-common-factor",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H22_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md",
@@ -9695,49 +9720,55 @@
       "old_path": "P5_H22_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/full-support-tangent/P5_H22_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/full-support-tangent",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/full-support-tangent",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h22_full_support_tangent_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/full-support-tangent/audit_p5_h22_full_support_tangent_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/full-support-tangent",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/full-support-tangent",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h22_full_support_tangent_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/full-support-tangent/verify_p5_h22_full_support_tangent_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/full-support-tangent",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/full-support-tangent",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/mixed-orientation/P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/mixed-orientation",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/mixed-orientation",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h22_mixed_orientation_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/mixed-orientation/audit_p5_h22_mixed_orientation_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/mixed-orientation",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/mixed-orientation",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h22_mixed_orientation_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/mixed-orientation/verify_p5_h22_mixed_orientation_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/mixed-orientation",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/mixed-orientation",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md",
@@ -9799,9 +9830,10 @@
       "old_path": "P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/six-dimensional/P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/six-dimensional",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/six-dimensional",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md",
@@ -9815,9 +9847,10 @@
       "old_path": "audit_p5_h22_six_dimensional_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/six-dimensional/audit_p5_h22_six_dimensional_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/six-dimensional",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/six-dimensional",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h22_six_dimensional_equal_weight_binary_obstruction.py",
@@ -9831,9 +9864,10 @@
       "old_path": "verify_p5_h22_six_dimensional_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/six-dimensional/verify_p5_h22_six_dimensional_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/six-dimensional",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/six-dimensional",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h22_six_dimensional_equal_weight_binary_obstruction.py",
@@ -9871,33 +9905,37 @@
       "old_path": "P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/transverse-common-factor/P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/transverse-common-factor",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/transverse-common-factor",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h22_transverse_common_factor_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/transverse-common-factor/audit_p5_h22_transverse_common_factor_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/transverse-common-factor",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/transverse-common-factor",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h22_transverse_common_factor_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/transverse-common-factor/verify_p5_h22_transverse_common_factor_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/transverse-common-factor",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/transverse-common-factor",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/two-rank-two-spoke-mixed-star/P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/two-rank-two-spoke-mixed-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/two-rank-two-spoke-mixed-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md",
@@ -9911,9 +9949,10 @@
       "old_path": "audit_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/two-rank-two-spoke-mixed-star/audit_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/two-rank-two-spoke-mixed-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/two-rank-two-spoke-mixed-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h22_two_rank_two_spoke_mixed_star_dense_marking_obstruction.py",
@@ -9927,9 +9966,10 @@
       "old_path": "verify_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/two-rank-two-spoke-mixed-star/verify_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/two-rank-two-spoke-mixed-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/two-rank-two-spoke-mixed-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h22_two_rank_two_spoke_mixed_star_dense_marking_obstruction.py",
@@ -11031,81 +11071,91 @@
       "old_path": "P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/all-rank-one-triangle/P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/all-rank-one-triangle",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/all-rank-one-triangle",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h31_all_rank_one_triangle_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/all-rank-one-triangle/audit_p5_h31_all_rank_one_triangle_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/all-rank-one-triangle",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/all-rank-one-triangle",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "explore_p5_h31_all_rank_one_triangle_modular.py",
       "new_path": "claims/p5/h31/all-rank-one-triangle/explore_p5_h31_all_rank_one_triangle_modular.py",
       "reason": "claim_script -> p5/h31/all-rank-one-triangle",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/h31/all-rank-one-triangle",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h31_all_rank_one_triangle_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/all-rank-one-triangle/verify_p5_h31_all_rank_one_triangle_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/all-rank-one-triangle",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/all-rank-one-triangle",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/coincident-support-rank-one-star/P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/coincident-support-rank-one-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/coincident-support-rank-one-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/coincident-support-rank-one-star/audit_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/coincident-support-rank-one-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/coincident-support-rank-one-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/coincident-support-rank-one-star/verify_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/coincident-support-rank-one-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/coincident-support-rank-one-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/coincident-support/P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/coincident-support",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/coincident-support",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h31_coincident_support_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/coincident-support/audit_p5_h31_coincident_support_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/coincident-support",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/coincident-support",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h31_coincident_support_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/coincident-support/verify_p5_h31_coincident_support_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/coincident-support",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/coincident-support",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
@@ -11375,49 +11425,55 @@
       "old_path": "P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-kernel-vertical-triangle/P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-kernel-vertical-triangle",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-kernel-vertical-triangle",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/common-kernel-vertical-triangle/audit_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/common-kernel-vertical-triangle",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-kernel-vertical-triangle",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/common-kernel-vertical-triangle/verify_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/common-kernel-vertical-triangle",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-kernel-vertical-triangle",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-singleton/P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-singleton",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-singleton",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h31_common_singleton_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/common-singleton/audit_p5_h31_common_singleton_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/common-singleton",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-singleton",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h31_common_singleton_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/common-singleton/verify_p5_h31_common_singleton_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/common-singleton",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-singleton",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md",
@@ -11711,97 +11767,109 @@
       "old_path": "P5_H31_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/directed-zero-divisor-triangle-components/P5_H31_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/directed-zero-divisor-triangle-components",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/directed-zero-divisor-triangle-components",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py",
       "new_path": "claims/p5/h31/directed-zero-divisor-triangle-components/audit_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/directed-zero-divisor-triangle-components",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/directed-zero-divisor-triangle-components",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py",
       "new_path": "claims/p5/h31/directed-zero-divisor-triangle-components/verify_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/directed-zero-divisor-triangle-components",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/directed-zero-divisor-triangle-components",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/disjoint-mixed-star/P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/disjoint-mixed-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/disjoint-mixed-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h31_disjoint_mixed_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/disjoint-mixed-star/audit_p5_h31_disjoint_mixed_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/disjoint-mixed-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/disjoint-mixed-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h31_disjoint_mixed_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/disjoint-mixed-star/verify_p5_h31_disjoint_mixed_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/disjoint-mixed-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/disjoint-mixed-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/disjoint-secant/P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/disjoint-secant",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/disjoint-secant",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h31_disjoint_secant_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/disjoint-secant/audit_p5_h31_disjoint_secant_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/disjoint-secant",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/disjoint-secant",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h31_disjoint_secant_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/disjoint-secant/verify_p5_h31_disjoint_secant_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/disjoint-secant",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/disjoint-secant",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/eisenstein-norm/P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/eisenstein-norm",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/eisenstein-norm",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h31_eisenstein_norm_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/eisenstein-norm/audit_p5_h31_eisenstein_norm_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/eisenstein-norm",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/eisenstein-norm",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h31_eisenstein_norm_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/eisenstein-norm/verify_p5_h31_eisenstein_norm_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/eisenstein-norm",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/eisenstein-norm",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H31_ELLIPTIC_END_COORDINATE_FULL_RANK_CHART.md",
@@ -12119,25 +12187,28 @@
       "old_path": "P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/equal-support-common-factor/P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/equal-support-common-factor",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/equal-support-common-factor",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h31_equal_support_common_factor_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/equal-support-common-factor/audit_p5_h31_equal_support_common_factor_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/equal-support-common-factor",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/equal-support-common-factor",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h31_equal_support_common_factor_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/equal-support-common-factor/verify_p5_h31_equal_support_common_factor_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/equal-support-common-factor",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/equal-support-common-factor",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H31_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md",
@@ -12159,25 +12230,28 @@
       "old_path": "P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/full-support-tangent/P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/full-support-tangent",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/full-support-tangent",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h31_full_support_tangent_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/full-support-tangent/audit_p5_h31_full_support_tangent_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/full-support-tangent",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/full-support-tangent",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h31_full_support_tangent_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/full-support-tangent/verify_p5_h31_full_support_tangent_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/full-support-tangent",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/full-support-tangent",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md",
@@ -12279,25 +12353,28 @@
       "old_path": "P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/mixed-orientation/P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/mixed-orientation",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/mixed-orientation",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h31_mixed_orientation_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/mixed-orientation/audit_p5_h31_mixed_orientation_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/mixed-orientation",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/mixed-orientation",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h31_mixed_orientation_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/mixed-orientation/verify_p5_h31_mixed_orientation_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/mixed-orientation",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/mixed-orientation",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md",
@@ -12423,25 +12500,28 @@
       "old_path": "P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/six-dimensional/P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/six-dimensional",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/six-dimensional",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h31_six_dimensional_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/six-dimensional/audit_p5_h31_six_dimensional_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/six-dimensional",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/six-dimensional",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h31_six_dimensional_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/six-dimensional/verify_p5_h31_six_dimensional_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/six-dimensional",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/six-dimensional",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
@@ -12495,49 +12575,55 @@
       "old_path": "P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/transverse-common-factor/P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/transverse-common-factor",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/transverse-common-factor",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h31_transverse_common_factor_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/transverse-common-factor/audit_p5_h31_transverse_common_factor_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/transverse-common-factor",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/transverse-common-factor",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h31_transverse_common_factor_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/transverse-common-factor/verify_p5_h31_transverse_common_factor_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/transverse-common-factor",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/transverse-common-factor",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/two-rank-two-spoke-mixed-star/P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/two-rank-two-spoke-mixed-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/two-rank-two-spoke-mixed-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "audit_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/two-rank-two-spoke-mixed-star/audit_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/two-rank-two-spoke-mixed-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/two-rank-two-spoke-mixed-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "verify_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/two-rank-two-spoke-mixed-star/verify_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/two-rank-two-spoke-mixed-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/two-rank-two-spoke-mixed-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-generic-obstructions-stage9"
     },
     {
       "old_path": "P5_H31_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_GENERIC_OBSTRUCTION.md",
