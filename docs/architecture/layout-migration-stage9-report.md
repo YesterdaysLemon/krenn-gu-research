@@ -277,7 +277,7 @@ successful result (`strategy_a_slimgb`, 0.6 s, generator
   `8ef250728c039de5ad0470d32de45f2346caffdd` (verified by blob-hash
   comparison against `4ee0cdc`).
 - The earlier statement that generated solver outputs went only to
-  gitignored `tmp/` or stdout was **incorrect**: it held for all 57
+  gitignored `tmp/` or stdout was **incorrect**: it held for all 56
   mandatory verifier/audit replays, but not for this optional snapshot
   smoke test.
 - A full `git diff 4ee0cdc..HEAD` scan confirmed no other tracked
@@ -326,7 +326,7 @@ semantic success for scripts that encode inconclusive results; and
 moved-path scans must cover fail-open `.exists()` provenance
 constants, which an import probe cannot catch.
 
-### Corrected substantive head
+### First corrected substantive head
 
 Because executable code changed, the correction commit is a new
 substantive head with its own `workflow_dispatch`; the final
@@ -337,6 +337,29 @@ PR-triggered CI must pass on the exact final head (recorded below).
   passed (**success**) on the exact corrected substantive head
   `bffa91832e6fa5cddb1555c61b5e278b90904d18`.  No migration machinery,
   theorem claim, or batch mapping changed as a result.
+
+### Final independent merge-gate correction
+
+The final independent merge-gate review compared every Python
+docstring changed between the Stage 9 base and the candidate head.  It
+found one further mechanical-repair defect:
+
+- Commit D had inserted an eleven-line bootstrap block *inside* the
+  module docstring of
+  `claims/p5/h31/coincident-support/audit_p5_h31_coincident_support_component_generic_obstruction.py`.
+  The text was inert at runtime, so import and replay probes could not
+  detect it, but it corrupted the independent audit's explanatory
+  prose.  The injected text was removed, restoring that docstring to
+  the Stage 9 base text; no executable or mathematical logic changed.
+- The same review corrected a transposed dry-run inventory split:
+  the frozen batch contains 46 H31 files and 40 H22 files, not 44 and
+  42.  The total (86), package counts (15 and 13), mapping, and catalog
+  arithmetic were already correct.
+
+The affected independent audit was replayed after the correction.  A
+new authoritative validation floor and exact-head PR CI are required;
+their run identifiers belong in PR #38 metadata rather than another
+report-only bookkeeping commit.
 
 
 ## Fresh-agent documentation audit

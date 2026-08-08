@@ -298,8 +298,8 @@ members by starting manifest status:
                                      the all-rank-one-triangle explore script)
 members by category:            29 claim documents, 56 scripts,
                                 1 exploration script
-members by spine:               h31: 44 files / 15 packages
-                                h22: 42 files / 13 packages
+members by spine:               h31: 46 files / 15 packages
+                                h22: 40 files / 13 packages
 ```
 
 The full 86-row old→new table lives in
