@@ -222,6 +222,20 @@ ramp-up stage).  All Python repairs used the shared
 `bootstrap`/`expose_claim_package` helpers; no per-importer shims and
 no package-specific path hacks were added.
 
+## CI bookkeeping
+
+Per the established convention: the substantive-head `workflow_dispatch`
+run ID and the exact substantive-head SHA are recorded here, and the
+final PR-triggered workflow must pass hygiene, migration tests,
+14-vertex tests, and the rewriter fixed-point check on the resulting
+PR head.
+
+- Substantive head dispatch
+  [31239784636](https://github.com/YesterdaysLemon/open-graph-theory-with-prize/actions/runs/31239784636)
+  passed (**success**) on the exact substantive head
+  `3f88a68e85b950c3d6ed58bdf659bc479a5f0fca`.  No migration machinery,
+  theorem claim, or batch mapping changed as a result.
+
 ## Validation floor
 
 On the final head: `check_hygiene.py` all green (ledger 85/85 hashes,
