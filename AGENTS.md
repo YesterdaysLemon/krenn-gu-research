@@ -213,6 +213,23 @@ Use `git mv`; preserve history and scientific content.
 
 Do not opportunistically edit mathematics during migration.
 
+### Proof-boundary ownership
+
+- Reconstruct filesystem/classification, executable/provenance, and
+  mathematical proof-obligation topology separately; they may
+  legitimately disagree.
+- Do not infer mathematical ownership or logical dependence from a
+  filename, import, subprocess call, or hash alone.
+- Move a generic core separately only after demonstrating that its
+  specialization, boundary, exceptional-fibre, and case-coverage
+  descendants are not pieces of the same obligation.
+- Preserve the actual, potentially asymmetric theorem/verifier/audit
+  surface.  Candidate, partial, historical, or refuted artifacts must
+  not become verified proof evidence merely through code reuse or
+  proximity.
+- When proof-boundary ownership remains ambiguous, investigate before
+  migrating.
+
 ## 10. Candidate-tree validation
 
 Authoritative local validation uses an index-complete candidate tree.

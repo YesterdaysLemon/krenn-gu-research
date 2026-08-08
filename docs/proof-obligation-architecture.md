@@ -35,7 +35,9 @@ Conceptually:
 
 Every edge must be justified.
 
-Every leaf must be closed.
+Every load-bearing leaf in the claimed proof route must be closed.
+Unrelated, abandoned, or superseded branches need not be closed merely
+because the repository preserves them.
 
 The global theorem is not established while an unresolved leaf or
 unjustified implication remains.
@@ -198,7 +200,92 @@ The excluded-divisor list is part of the proof obligation.
 
 "No generic counterexample was found" is not a pointwise theorem.
 
-## 6. Withdrawn and superseded lineage
+## 6. Graph layers and typed relationships
+
+A proof-obligation inventory must not collapse three different graphs:
+
+```text
+filesystem/classification
+  where an artifact lives or appears structurally owned
+
+executable/provenance
+  what code imports, calls, replays, or hashes
+
+mathematical proof obligations
+  what claim, reduction, case cover, specialization, or boundary
+  is needed for another mathematical conclusion
+```
+
+The graphs can legitimately disagree.  An imported row constructor may
+be shared implementation rather than a theorem premise.  A hash may pin
+a historical or corroborating artifact rather than establish logical
+dependence.  Conversely, theorem prose can express a case union even
+when no parent verifier executes every child.
+
+A future graph should distinguish at least the following conceptual
+relationships.  These names describe semantics; they do not freeze
+machine-readable field names.
+
+Mathematical relationships:
+
+- **logical dependency** — one claim requires another as a premise;
+- **reduction dependency** — a proved transformation replaces an
+  obligation with another precise obligation;
+- **case coverage** — children jointly exhaust a split, so no child
+  alone proves the parent;
+- **specialization** — a generic result descends to a locus under
+  proved hypotheses;
+- **boundary descendant** — a divisor, fibre, endpoint, or projective
+  chart remains after a generic result;
+- **residual refinement** — a partial factor/minor cover narrows the
+  remaining obligation; and
+- **symmetry transfer** — a proved relabelling or involution transports
+  closure between charts.
+
+Evidence and implementation relationships:
+
+- **primary evidence** — a primary verifier checks or replays a claim;
+- **provenance dependency** — an immutable artifact is recorded or
+  hashed for lineage or replay;
+- **executable dependency** — code imports, calls, or subprocesses
+  other code;
+- **shared implementation** — claims reuse machinery without one
+  mathematically implying another;
+- **audit edge** — a distinct audit supports a claim but is not a
+  mathematical premise; and
+- **corroboration** — computation supports confidence without being the
+  proof route.
+
+Lifecycle and synthesis relationships:
+
+- **frontier consumer** — a broader, possibly open synthesis
+  incorporates a local result;
+- **historical or superseded** — lineage is preserved but not
+  proof-active; and
+- **refutation of argument** — an attempted route is invalidated
+  without necessarily deciding its target claim.
+
+Node status, scope, and edge type are orthogonal.  Candidate, partial,
+withdrawn, superseded, and refuted nodes may remain visible, but must
+not become live premises merely because they are nearby, imported, or
+hashed.  An independent audit must likewise be represented as evidence,
+not as an extra mathematical hypothesis.
+
+Generic-to-boundary closure is commonly a tree rather than one edge:
+
+```text
+generic claim
+  -> divisor or specialization obligations
+       -> branch cover
+            -> exceptional fibres or residual factors
+  -> projective boundary
+  -> exhaustive closure theorem
+```
+
+Represent the exhaustive union explicitly.  Do not infer it from a
+directory listing or from all child verifiers returning success.
+
+## 7. Withdrawn and superseded lineage
 
 Failed proofs are scientifically useful when clearly labeled.
 
@@ -215,7 +302,7 @@ corrected live claim
 
 but the withdrawn node cannot be used as a live proof dependency.
 
-## 7. Formalization target
+## 8. Formalization target
 
 If the global conjecture already has a Lean formulation, that
 formalization can become the semantic endpoint of the DAG.
@@ -258,7 +345,7 @@ interfaces:
 4. certificate/checker soundness;
 5. final master implication.
 
-## 8. How may the global status change?
+## 9. How may the global status change?
 
 Never because:
 
@@ -328,7 +415,7 @@ attempted proof programmes still contain open obligations.
 Keep the global status **UNRESOLVED** during either audit, and do not
 change it merely because one agent reports success.
 
-## 9. Future machine-readable obligation graph
+## 10. Future machine-readable obligation graph
 
 After the layout migration is substantially complete, perform a
 dedicated proof-DAG inventory.
@@ -337,6 +424,12 @@ Only then decide whether to extend the theorem ledger or create a
 separate machine-readable graph.
 
 Do not create two overlapping status databases accidentally.
+
+Review the existing ledger fields for an explicit semantic contract
+before reusing them.  Do not mechanically derive mathematical
+dependencies from imports, hashes, subprocess inventories, or filename
+families; record executable, provenance, audit, and historical
+relationships separately from direct live proof premises.
 
 A future schema may need separate fields for:
 
