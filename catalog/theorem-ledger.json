@@ -1,9 +1,12 @@
 {
-  "schema_version": 2,
-  "generated": "2026-08-06 (rebuilt per PR #28 review)",
-  "coverage_scope": "Curated partial index of the load-bearing backbone: the frontier reduction, the master theorem schema, the finite certificates, the arbitrary-order structural theorems, and every on-disk H31/H22 generic component theorem doc with its primary verifier and independent audit. This is NOT a complete mapping of every certificate document in the repository (~736 .md docs); component-boundary and divisor-level certificates are represented by their atlas entries, not individually. Entries added only when the backing document and prover exist on disk.",
+  "schema_version": 3,
+  "generated": "2026-08-08 (Stage 11.5 evidence-semantics contract)",
+  "evidence_semantics_contract": "docs/evidence-semantics-contract.md",
+  "ledger_role": "partial_claim_index_not_proof_graph",
+  "coverage_scope": "Curated partial index of the load-bearing backbone: the frontier reduction, the master theorem schema, finite certificates, arbitrary-order structural theorems, and selected on-disk H31/H22 component-level claim documents. This is NOT a complete mapping of every claim, proof obligation, boundary/divisor certificate, evidence carrier, or relationship in the repository. A backing document exists for every entry; primary and audit carriers are mapped when present or their absence/indexing state is recorded.",
   "completeness": "partial_curated",
   "conventions": {
+    "status_field_semantics": "legacy composite summary of mathematical state, scope, evidence assessment, and lifecycle at this entry's granularity; it is not a single proof-strength ladder and must be read with the owning document",
     "status_values": [
       "verified",
       "verified_finite",
@@ -17,8 +20,23 @@
       "framework",
       "open"
     ],
+    "status_semantics": {
+      "verified": "an exact mathematical claim is accepted at the entry's stated scope; the evidence carrier may be a mapped script, an in-document proof, or an explicitly recorded certificate chain; independent audit and formalization are separate",
+      "verified_finite": "an exact finite claim is accepted through the recorded finite certificate or exhaustive computation and its stated bridge; it says nothing beyond that finite scope",
+      "verified_generic": "an exact claim is accepted over the stated component function field or generic point only; excluded divisors, special fibres, and projective boundaries remain separate obligations unless explicitly closed",
+      "partial": "one or more exact subclaims are accepted, but the stated parent obligation or case cover remains incomplete",
+      "candidate": "a proposed claim or route has not passed the review needed to become a live accepted result",
+      "exploratory": "the entry records reconnaissance, search, translation, or a research programme and is not a proof-active conclusion",
+      "withdrawn": "the formerly claimed conclusion or route is explicitly non-live and cannot be used as a mathematical premise; preserved identities or diagnostics retain only their stated narrower scope",
+      "partially_withdrawn": "a specified part of the earlier claim or route is non-live while separately identified surviving subclaims retain their stated status",
+      "superseded": "a later artifact replaces this one for live use; this entry remains only for lineage unless an explicit surviving subclaim is identified",
+      "framework": "an organizational theorem schema or proof architecture, not a claim that all named obligations are closed",
+      "open": "the target claim is unresolved at the entry's stated scope"
+    },
+    "axis_separation": "scope, evidence mode, independent-audit status, formalization status, lifecycle, and execution outcome are independent; proved, verified, experimental, failed, timeout, and inconclusive are defined in the contract document and must not be collapsed into one ladder",
     "provenance_values": [
       "independent_modular_audit",
+      "independent_exact_identity_audit",
       "companion_point_check_script",
       "script_is_the_verifier",
       "in_document_proof_only",
@@ -29,14 +47,20 @@
       "none_exists"
     ],
     "audit_provenance_semantics": {
-      "independent_modular_audit": "a distinct audit script exists and is mapped",
-      "none_exists": "no independent audit exists for this claim (an explicit absence, not an unmapped gap)",
-      "not_yet_mapped": "an audit may exist but has not been entered into this ledger",
+      "independent_modular_audit": "legacy broad mapping label: a distinct audit script exists; the literal method and independence scope must be read from that audit and may be exact-rational or share construction machinery",
+      "independent_exact_identity_audit": "a distinct exact audit rederives the specifically named identities and does not assert a broader theorem conclusion",
+      "none_exists": "no carrier exists for this field and exact claim at this entry's granularity; this is an explicit absence, not an unmapped gap",
+      "not_yet_mapped": "a carrier may exist for this field but has not been entered into this ledger",
       "historical_certificate_chain": "the audit is the SAT/DRAT replay chain, not one script"
     },
-    "verified": "exact symbolic proof over C with replayable verifier",
-    "verified_finite": "computer-assisted finite certificate (SAT/DRAT chain)",
-    "verified_generic": "proved over the component function field at the generic point; divisor/boundary exclusions listed in assumptions",
+    "dependencies": {
+      "state": "reserved_unpopulated",
+      "empty_array_means": "not_recorded",
+      "policy": "every current entry must retain an empty array; do not infer independence or absence of mathematical premises; typed mathematical, executable, provenance, audit, corroboration, and historical relationships belong in a separately reviewed proof-obligation graph"
+    },
+    "assumptions_and_excluded_divisors": "non-exhaustive compact scope summary for navigation; the owning mathematical document controls and must be reviewed before the entry is used",
+    "primary_verifier": "mapped primary evidence carrier when one is recorded; it is an evidence relationship, not a mathematical dependency",
+    "independent_audit": "mapped audit carrier when one is recorded; independence is scoped to the recorded method and shared machinery must still be disclosed",
     "policy": "modular evidence, numerical experiments, timeouts, and failed solver runs are never proofs; they are corroboration or diagnostics only",
     "document_sha256_16": "first 16 hex chars of the SHA-256 of the committed git blob (git show :path), not the working-tree bytes; identical on every platform because the index stores LF. check_hygiene.py recomputes and compares every non-null value.",
     "claim_package": "the claim package root directory, e.g. claims/p5/h22/disjoint-mixed-star",
@@ -45,6 +69,7 @@
   },
   "global_status": "UNRESOLVED",
   "component_census": {
+    "semantics": "curated navigation snapshot, not a proof-coverage computation; counts are not derived from display-name prefixes, ledger status, or directory membership",
     "certified_pure_p4_orbits": 25,
     "h31_generic_docs_mapped": 24,
     "h31_generic_docs_with_independent_audit": 23,
@@ -56,7 +81,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "add98dd882d23d9c",
+      "document_sha256_16": "fd5671c400e6f815",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1546,29 +1571,47 @@
       ]
     },
     {
-      "name": "Generic weighted H22 fibre empty: unequal endpoint inward star component finite d01 branch b",
+      "name": "Open finite-D01 Branch B obligation after withdrawal of the coefficient-splitting route",
       "document": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "afb5ccaf7f342313",
-      "status": "verified_generic",
+      "status": "open",
       "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "denominator/slope divisors excluded, not proved",
-        "slope r transcendental; special slopes excluded"
+        "coefficient splitting over K-valued free extensions is invalid",
+        "the old claimed generic obstruction is withdrawn",
+        "the complete finite-D01 Branch B remains UNKNOWN after the separate generic-weight theorem leaves exceptional divisors"
       ],
       "dependencies": [],
       "primary_verifier": null,
-      "verifier_provenance": "in_document_proof_only",
+      "verifier_provenance": "none_exists",
       "independent_audit": null,
       "audit_provenance": "none_exists",
-      "expected_runtime": "minutes-hours (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
-      ]
+      "expected_runtime": null,
+      "external_binaries": [],
+      "note": "This entry tracks the open target only. The exact scripts mapped by the adjacent entry verify the narrower descent identities and the failed inference, not this obligation."
+    },
+    {
+      "name": "Verified descent-only identities from the withdrawn finite-D01 Branch B route",
+      "document": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "afb5ccaf7f342313",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero permanent and resultant identities only",
+        "base-descending diagnostic scope",
+        "no generic-emptiness conclusion"
+      ],
+      "dependencies": [],
+      "primary_verifier": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_reduction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_reduction.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds",
+      "external_binaries": [],
+      "note": "The primary and audit successfully preserve the refutation of the old generic inference. Their success is not a generic-emptiness theorem; the open target is represented by the adjacent entry and the corrected full-field route is separate."
     },
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "add98dd882d23d9c",
+      "document_sha256_16": "fd5671c400e6f815",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -1697,7 +1740,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "add98dd882d23d9c",
+      "document_sha256_16": "fd5671c400e6f815",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1917,11 +1960,15 @@
       ]
     },
     {
-      "name": "Component 19/20 and embedded-P3 boundary candidates (23 CANDIDATE docs)",
+      "name": "Non-proof-active boundary-candidate collection checkpoint; representative frozen certificate refuted",
       "document": "P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md",
       "document_sha256_16": "83d229b1d23233a2",
-      "status": "candidate",
-      "assumptions_and_excluded_divisors": [],
+      "status": "exploratory",
+      "assumptions_and_excluded_divisors": [
+        "collection-level navigation only; no status inheritance to the 23 underlying documents",
+        "the representative component-19 frozen certificate is REFUTED",
+        "per-document status and evidence govern"
+      ],
       "dependencies": [],
       "primary_verifier": null,
       "verifier_provenance": "none_exists",
@@ -1929,7 +1976,7 @@
       "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "Discovery-run reports. 9 of 23 have matching VERIFICATION docs; 14 do not. Not theorems until independently verified."
+      "note": "The earlier aggregate candidate label was unsafe because the pinned representative document is a refuted frozen certificate and the collection is heterogeneous. This entry is exploratory navigation only; it is never proof-active."
     }
   ]
 }

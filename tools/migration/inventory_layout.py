@@ -285,25 +285,40 @@ def classify(rel: str, ctx: dict) -> dict | None:
     name, stem, ext = p.name, p.stem, p.suffix.lower()
     evidence, confidence = [], "high"
 
-    # Status-marker documents.
+    ledger_statuses = ctx["ledger_doc_statuses"].get(rel, set())
+    ledger_status_label = ", ".join(
+        sorted(status for status in ledger_statuses
+               if isinstance(status, str)))
+
+    # Status-marker documents.  A filename is a triage signal, not ownership.
+    # Only an unambiguous all-withdrawn ledger surface gets high confidence;
+    # every filename-only or conflicting case requires human review.
     if ext == ".md" and WITHDRAWN_RE.search(name):
+        all_withdrawn = ledger_statuses == {"withdrawn"}
         return {"old_path": rel,
                 "proposed_path": f"claims/legacy/{name}",
                 "category": "withdrawn_document",
-                "claim_family": "legacy", "confidence": "high",
-                "evidence": ["filename WITHDRAWN marker"]}
+                "claim_family": "legacy",
+                "confidence": "high" if all_withdrawn else "low",
+                "evidence": ["filename WITHDRAWN marker",
+                             "all ledger claims withdrawn" if all_withdrawn
+                             else "ledger surface absent, mixed, or not all "
+                                  "withdrawn; human proof-boundary review "
+                                  "required"]}
 
-    ledger_status = ctx["ledger_doc_status"].get(rel)
     # Withdrawn claims go to legacy.  Superseded documents stay with
-    # their family package as provenance (claim-package principle), so
-    # only withdrawn statuses route here.
-    if ledger_status in ("withdrawn", "partially_withdrawn") \
-            and ext == ".md":
+    # their family package as provenance (claim-package principle).
+    # A document can index several claims, and partially withdrawn
+    # artifacts can retain live subclaims.  Only an unambiguous all-withdrawn
+    # document routes automatically; every mixed lifecycle requires proof-
+    # boundary review.
+    if ledger_statuses == {"withdrawn"} and ext == ".md":
         return {"old_path": rel,
                 "proposed_path": f"claims/legacy/{name}",
                 "category": "legacy_document",
                 "claim_family": "legacy", "confidence": "high",
-                "evidence": [f"theorem ledger status={ledger_status}"]}
+                "evidence": ["all theorem-ledger claims for document "
+                             "have status=withdrawn"]}
 
     # Navigation/meta documents with fixed destinations.
     fixed_docs = {
@@ -355,8 +370,11 @@ def classify(rel: str, ctx: dict) -> dict | None:
                 cat = "claim_document" if ext == ".md" else (
                     "claim_script" if ext == ".py" else "claim_data")
                 ev = [f"filename prefix {pfx}_"]
-                if ledger_status:
-                    ev.append(f"theorem ledger status={ledger_status}")
+                if ledger_status_label:
+                    ev.append(
+                        "theorem ledger claim statuses="
+                        f"{ledger_status_label}; document is a multimap, "
+                        "so status does not inherit between claims")
                 if stem in ctx["triples"]:
                     ev.append("part of verify/audit triple")
                     confidence = "high"
@@ -381,8 +399,11 @@ def classify(rel: str, ctx: dict) -> dict | None:
                     ev.append("family generic theorem doc")
                 if stem in ctx["triples"]:
                     ev.append("part of verify/audit triple")
-                if ledger_status:
-                    ev.append(f"theorem ledger status={ledger_status}")
+                if ledger_status_label:
+                    ev.append(
+                        "theorem ledger claim statuses="
+                        f"{ledger_status_label}; document is a multimap, "
+                        "so status does not inherit between claims")
                 cat = "claim_document" if ext == ".md" else "claim_script"
                 high = matched is not None and (
                     len(ev) >= 3 or generic)
@@ -407,8 +428,11 @@ def classify(rel: str, ctx: dict) -> dict | None:
                     ev.append("family generic theorem doc")
                 if stem in ctx["triples"]:
                     ev.append("part of verify/audit triple")
-                if ledger_status:
-                    ev.append(f"theorem ledger status={ledger_status}")
+                if ledger_status_label:
+                    ev.append(
+                        "theorem ledger claim statuses="
+                        f"{ledger_status_label}; document is a multimap, "
+                        "so status does not inherit between claims")
                 cat = ("claim_document" if ext == ".md"
                        else "claim_script")
                 high = matched is not None and (
@@ -435,8 +459,11 @@ def classify(rel: str, ctx: dict) -> dict | None:
                    else "claim_script" if ext in (".py", ".cpp")
                    else "claim_data")
             ev = ["filename prefix P5_"]
-            if ledger_status:
-                ev.append(f"theorem ledger status={ledger_status}")
+            if ledger_status_label:
+                ev.append(
+                    "theorem ledger claim statuses="
+                    f"{ledger_status_label}; document is a multimap, "
+                    "so status does not inherit between claims")
             if stem in ctx["triples"]:
                 ev.append("part of verify/audit triple")
             return {"old_path": rel,
@@ -483,8 +510,11 @@ def classify(rel: str, ctx: dict) -> dict | None:
                    else "claim_script" if ext in (".py", ".cpp")
                    else "claim_data")
             ev = ["filename prefix P4_"]
-            if ledger_status:
-                ev.append(f"theorem ledger status={ledger_status}")
+            if ledger_status_label:
+                ev.append(
+                    "theorem ledger claim statuses="
+                    f"{ledger_status_label}; document is a multimap, "
+                    "so status does not inherit between claims")
             if stem in ctx["triples"]:
                 ev.append("part of verify/audit triple")
             if conf is None:
@@ -498,8 +528,11 @@ def classify(rel: str, ctx: dict) -> dict | None:
         if stem.startswith(("P6_", "verify_p6_", "audit_p6_")):
             cat = "claim_document" if ext == ".md" else "claim_script"
             ev = ["filename prefix P6_"]
-            if ledger_status:
-                ev.append(f"theorem ledger status={ledger_status}")
+            if ledger_status_label:
+                ev.append(
+                    "theorem ledger claim statuses="
+                    f"{ledger_status_label}; document is a multimap, "
+                    "so status does not inherit between claims")
             return {"old_path": rel,
                     "proposed_path": f"claims/p6/{name}",
                     "category": cat, "claim_family": "p6",
@@ -507,8 +540,11 @@ def classify(rel: str, ctx: dict) -> dict | None:
         if stem.startswith(("P7_", "verify_p7_", "audit_p7_")):
             cat = "claim_document" if ext == ".md" else "claim_script"
             ev = ["filename prefix P7_"]
-            if ledger_status:
-                ev.append(f"theorem ledger status={ledger_status}")
+            if ledger_status_label:
+                ev.append(
+                    "theorem ledger claim statuses="
+                    f"{ledger_status_label}; document is a multimap, "
+                    "so status does not inherit between claims")
             return {"old_path": rel,
                     "proposed_path": f"claims/p7/{name}",
                     "category": cat, "claim_family": "p7",
@@ -519,8 +555,11 @@ def classify(rel: str, ctx: dict) -> dict | None:
                    else "claim_script" if ext in (".py", ".cpp")
                    else "claim_data")
             ev = ["filename prefix in arbitrary-order family"]
-            if ledger_status:
-                ev.append(f"theorem ledger status={ledger_status}")
+            if ledger_status_label:
+                ev.append(
+                    "theorem ledger claim statuses="
+                    f"{ledger_status_label}; document is a multimap, "
+                    "so status does not inherit between claims")
             if stem in ctx["triples"]:
                 ev.append("part of verify/audit triple")
             return {"old_path": rel,
@@ -533,8 +572,11 @@ def classify(rel: str, ctx: dict) -> dict | None:
     if ext == ".py":
         if any(stem.startswith(p) for p in TOOL_EXPLORE_PREFIXES):
             ev = ["tool prefix (exploration/derivation)"]
-            if ledger_status:
-                ev.append(f"theorem ledger status={ledger_status}")
+            if ledger_status_label:
+                ev.append(
+                    "theorem ledger claim statuses="
+                    f"{ledger_status_label}; document is a multimap, "
+                    "so status does not inherit between claims")
             return {"old_path": rel,
                     "proposed_path": f"tools/explore/{name}",
                     "category": "tool_script", "claim_family": None,
@@ -588,11 +630,11 @@ def main() -> int:
                  for f in root_files if f.endswith(".py")}
 
     ledger = load_ledger(files, ref)
-    ledger_doc_status = {}
+    ledger_doc_statuses = collections.defaultdict(set)
     ledger_refs = []
     for e in ledger.get("entries", []):
         doc = e.get("document", "").split(" (")[0]
-        ledger_doc_status[doc] = e.get("status")
+        ledger_doc_statuses[doc].add(e.get("status"))
         for key in ("document", "primary_verifier", "independent_audit"):
             v = e.get(key)
             if v:
@@ -614,7 +656,8 @@ def main() -> int:
     graph = collect_imports(root_mods, files, ref)
 
     h31_families, h22_families = build_family_maps(root_files)
-    ctx = {"ledger_doc_status": ledger_doc_status, "triples": triples,
+    ctx = {"ledger_doc_statuses": dict(ledger_doc_statuses),
+           "triples": triples,
            "importers": graph["importers"],
            "h31_families": h31_families,
            "h22_families": h22_families}

@@ -9,6 +9,11 @@ It governs file movement and migration provenance only.
 
 It does not authorize mathematical changes.
 
+The evidence vocabulary, typed-relationship rules, theorem-ledger
+semantics, and root end state are defined in
+`docs/evidence-semantics-contract.md`.  This runbook must be applied
+under that contract.
+
 The global Krenn–Gu conjecture remains **UNRESOLVED**.
 
 ## 1. Core migration invariant
@@ -27,6 +32,12 @@ Cross-links and imports do not establish ownership.
 Shared dependencies remain shared.
 
 Withdrawn/superseded work remains explicitly historical.
+
+Every ordinary scientific or executable root artifact is eventual
+root-exit debt.  Presence in the frozen debt universe permits it to
+remain pending review; it does not supply ownership, destination, or
+move approval.  Root cleanliness is an end-state constraint, not a
+batch-selection heuristic.
 
 ## 2. Authoritative migration artifacts
 
@@ -74,6 +85,38 @@ links, replay commands, downstream consumers, snapshots, ledger
 references, and external tools.
 
 Classify related files by ownership rather than filename similarity.
+
+Confirm that every proposed root source belongs to the frozen
+root-debt universe.  A new loose root artifact is a hygiene failure,
+not a new migration candidate.
+
+For a family with generic, divisor, exceptional-fibre, projective, or
+partial descendants, also reconstruct the proof boundary:
+
+1. identify the mathematical owner and the latest synthesis of the
+   obligation, not only the earliest or most generic file;
+2. enumerate case-coverage, specialization, boundary, residual, and
+   symmetry-transfer relationships;
+3. distinguish those mathematical relationships from imports,
+   subprocesses, hashes, shared implementation, audits, and
+   corroboration;
+4. classify live verified, partial, candidate, historical,
+   superseded, and refuted members without changing their status;
+5. identify staying frontier consumers and cross-family/shared-code
+   owners; and
+6. determine whether the proposed package would strand a child needed
+   for the same theorem or case-exhaustion argument.
+
+A boundary family is migration-ready only when its exact live surface,
+statuses, consumers, shared ownership, and theorem boundary are known,
+and the package can move without rewriting scientific meaning.  If
+that test fails, defer the family rather than forcing structural
+symmetry.
+
+Ledger lifecycle is not ownership.  A `partially_withdrawn` document
+can retain live subclaims and must not be routed wholesale to legacy.
+Multiple ledger entries can share one document; consumers must retain
+the full entry set rather than use last-write-wins status lookup.
 
 ### C. Human ownership review
 

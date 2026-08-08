@@ -48,6 +48,7 @@ from build_manifest import (  # noqa: E402
     pilot_destination,
     validate_records,
 )
+from inventory_layout import classify  # noqa: E402
 
 
 def make_fixture(tmp: pathlib.Path, moves: dict[str, str]) -> dict:
@@ -1581,6 +1582,302 @@ class ExposeClaimPackageTests(unittest.TestCase):
 
 
 import check_hygiene  # noqa: E402
+
+
+class EvidenceSemanticsContractTests(unittest.TestCase):
+    """Stage 11.5: ledger placeholders must not imply proof edges."""
+
+    @staticmethod
+    def _ledger():
+        return {
+            "schema_version": 3,
+            "evidence_semantics_contract":
+                "docs/evidence-semantics-contract.md",
+            "ledger_role": "partial_claim_index_not_proof_graph",
+            "completeness": "partial_curated",
+            "conventions": {
+                "status_field_semantics": "legacy composite summary",
+                "status_values":
+                    sorted(check_hygiene.LEDGER_STATUS_VALUES),
+                "status_semantics": {
+                    status: f"semantic definition for {status}"
+                    for status in check_hygiene.LEDGER_STATUS_VALUES
+                },
+                "axis_separation": "axes remain independent",
+                "provenance_values":
+                    sorted(check_hygiene.PROVENANCE_VALUES),
+                "audit_provenance_semantics": {
+                    "independent_modular_audit": "scoped legacy label",
+                    "independent_exact_identity_audit":
+                        "exact identities only",
+                    "none_exists": "explicit absence",
+                    "not_yet_mapped": "indexing gap",
+                    "historical_certificate_chain": "historical chain",
+                },
+                "dependencies": {
+                    "state": "reserved_unpopulated",
+                    "empty_array_means": "not_recorded",
+                    "policy": "typed relationships require a future graph",
+                },
+            },
+            "entries": [{
+                "name": "test obligation",
+                "status": "open",
+                "dependencies": [],
+                "assumptions_and_excluded_divisors": [],
+                "external_binaries": [],
+            }],
+        }
+
+    def test_valid_reserved_dependencies_contract(self):
+        self.assertEqual(
+            check_hygiene.ledger_semantic_issues(self._ledger()), [])
+
+    def test_nonempty_dependencies_rejected_before_typed_graph(self):
+        ledger = self._ledger()
+        ledger["entries"][0]["dependencies"] = ["some theorem"]
+        issues = check_hygiene.ledger_semantic_issues(ledger)
+        self.assertTrue(any("reserved/unpopulated" in i for i in issues))
+
+    def test_ledger_role_cannot_drift_into_proof_graph(self):
+        ledger = self._ledger()
+        ledger["ledger_role"] = "complete_proof_dag"
+        issues = check_hygiene.ledger_semantic_issues(ledger)
+        self.assertTrue(any("not a proof DAG" in i for i in issues))
+
+    def test_status_vocabulary_is_schema_pinned(self):
+        ledger = self._ledger()
+        ledger["conventions"]["status_values"].append("globally_proved")
+        ledger["conventions"]["status_semantics"]["globally_proved"] = \
+            "unsafe extension"
+        issues = check_hygiene.ledger_semantic_issues(ledger)
+        self.assertTrue(any("schema-v3 status vocabulary" in i
+                            for i in issues))
+
+    def test_empty_dependencies_cannot_mean_no_dependencies(self):
+        ledger = self._ledger()
+        ledger["conventions"]["dependencies"]["empty_array_means"] = \
+            "no_dependencies"
+        issues = check_hygiene.ledger_semantic_issues(ledger)
+        self.assertTrue(any("not_recorded" in i for i in issues))
+
+    def test_undeclared_status_rejected(self):
+        ledger = self._ledger()
+        ledger["entries"][0]["status"] = "globally_proved"
+        issues = check_hygiene.ledger_semantic_issues(ledger)
+        self.assertTrue(any("undeclared status" in i for i in issues))
+
+    def test_branch_b_open_target_and_verified_identities_are_split(self):
+        root = pathlib.Path(__file__).resolve().parents[1]
+        ledger = json.loads((root / "catalog" / "theorem-ledger.json")
+                            .read_text(encoding="utf-8"))
+        matching = [
+            e for e in ledger["entries"]
+            if e["document"].endswith(
+                "FINITE_D01_BRANCH_B_GENERIC_OBSTRUCTION.md")]
+        self.assertEqual({e["status"] for e in matching},
+                         {"open", "verified"})
+        open_entry = next(e for e in matching if e["status"] == "open")
+        identities = next(e for e in matching if e["status"] == "verified")
+        self.assertIsNone(open_entry["primary_verifier"])
+        self.assertIn("UNKNOWN", " ".join(
+            open_entry["assumptions_and_excluded_divisors"]))
+        self.assertTrue(identities["primary_verifier"].endswith(
+            "finite_d01_branch_b_reduction.py"))
+        self.assertTrue(identities["independent_audit"].endswith(
+            "finite_d01_branch_b_reduction.py"))
+        self.assertIn("not a generic-emptiness theorem", identities["note"])
+
+    def test_heterogeneous_candidate_collection_is_not_proof_active(self):
+        root = pathlib.Path(__file__).resolve().parents[1]
+        ledger = json.loads((root / "catalog" / "theorem-ledger.json")
+                            .read_text(encoding="utf-8"))
+        entry = next(
+            e for e in ledger["entries"]
+            if e["document"] ==
+            "P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md")
+        self.assertEqual(entry["status"], "exploratory")
+        self.assertIn("the representative component-19 frozen certificate "
+                      "is REFUTED",
+                      entry["assumptions_and_excluded_divisors"])
+        self.assertIn("never proof-active", entry["note"])
+
+    @staticmethod
+    def _classification_context(statuses):
+        return {
+            "ledger_doc_statuses": {"SURVIVING_LEMMA.md": set(statuses)},
+            "triples": {},
+            "h22_families": {},
+            "h31_families": {},
+            "importers": {},
+        }
+
+    def test_all_withdrawn_document_can_route_to_legacy(self):
+        record = classify(
+            "SURVIVING_LEMMA.md",
+            self._classification_context({"withdrawn"}))
+        self.assertEqual(record["proposed_path"],
+                         "claims/legacy/SURVIVING_LEMMA.md")
+
+    def test_partially_withdrawn_does_not_auto_route_to_legacy(self):
+        record = classify(
+            "SURVIVING_LEMMA.md",
+            self._classification_context({"partially_withdrawn"}))
+        self.assertTrue(record is None or
+                        not record["proposed_path"].startswith(
+                            "claims/legacy/"))
+
+    def test_withdrawn_filename_cannot_override_live_ledger_status(self):
+        ctx = self._classification_context(set())
+        ctx["ledger_doc_statuses"] = {
+            "SURVIVING_LEMMA_WITHDRAWN.md": {"verified"}
+        }
+        record = classify("SURVIVING_LEMMA_WITHDRAWN.md", ctx)
+        self.assertEqual(record["confidence"], "low")
+        self.assertIn("human proof-boundary review required",
+                      record["evidence"][1])
+
+    def test_mixed_document_statuses_do_not_use_last_write_wins(self):
+        record = classify(
+            "SURVIVING_LEMMA.md",
+            self._classification_context({"open", "verified"}))
+        self.assertTrue(record is None or
+                        not record["proposed_path"].startswith(
+                            "claims/legacy/"))
+
+    def test_nonwithdrawn_classification_uses_multimap_statuses(self):
+        ctx = self._classification_context(set())
+        ctx["ledger_doc_statuses"] = {
+            "SIX_VERTEX_CERTIFICATE.md": {"open", "verified_finite"}
+        }
+        record = classify("SIX_VERTEX_CERTIFICATE.md", ctx)
+        self.assertEqual(record["proposed_path"],
+                         "claims/finite/n06/SIX_VERTEX_CERTIFICATE.md")
+        evidence = " ".join(record["evidence"])
+        self.assertIn("open, verified_finite", evidence)
+        self.assertIn("status does not inherit", evidence)
+
+
+class RootExitPolicyTests(unittest.TestCase):
+    """Stage 11.5: root debt may stay for review but cannot grow."""
+
+    def test_frozen_baseline_path_set_resolves_exactly(self):
+        baseline, issues = check_hygiene.root_debt_baseline()
+        self.assertEqual(issues, [])
+        root_files = {
+            f for f in check_hygiene.tracked_files() if "/" not in f
+        }
+        self.assertEqual(baseline,
+                         root_files - check_hygiene.ALLOWED_ROOT_FILES)
+
+    def test_catalog_universe_rejects_duplicates_and_overlap(self):
+        classification = {
+            "classified_count": 2,
+            "entries": [{"old_path": "A.py"}, {"old_path": "A.py"}],
+        }
+        unclassified = {
+            "unclassified_count": 2,
+            "files": ["A.py", "B.py"],
+        }
+        _universe, issues = check_hygiene.catalog_root_universe(
+            classification, unclassified)
+        self.assertTrue(any("duplicate old_path" in i for i in issues))
+        self.assertTrue(any("overlap" in i for i in issues))
+
+    def test_catalog_universe_requires_normalized_root_basenames(self):
+        classification = {
+            "classified_count": 2,
+            "entries": [
+                {"old_path": "./A.py"},
+                {"old_path": "scratch/B.py"},
+            ],
+        }
+        unclassified = {"unclassified_count": 0, "files": []}
+        _universe, issues = check_hygiene.catalog_root_universe(
+            classification, unclassified)
+        self.assertTrue(any("normalized root basenames" in i
+                            for i in issues))
+
+    def test_catalog_universe_reordering_is_semantically_neutral(self):
+        first = {
+            "classified_count": 2,
+            "entries": [{"old_path": "A.py"}, {"old_path": "B.py"}],
+        }
+        second = {
+            "classified_count": 2,
+            "entries": list(reversed(first["entries"])),
+        }
+        unclassified = {"unclassified_count": 1, "files": ["C.py"]}
+        first_set, first_issues = check_hygiene.catalog_root_universe(
+            first, unclassified)
+        second_set, second_issues = check_hygiene.catalog_root_universe(
+            second, unclassified)
+        self.assertEqual(first_issues, [])
+        self.assertEqual(second_issues, [])
+        self.assertEqual(first_set, second_set)
+        self.assertEqual(
+            check_hygiene.root_universe_fingerprint(first_set),
+            check_hygiene.root_universe_fingerprint(second_set))
+
+    def test_catalog_add_remove_and_same_count_rename_change_fingerprint(self):
+        baseline = {"A.py", "B.py"}
+        count, digest = check_hygiene.root_universe_fingerprint(baseline)
+        added = check_hygiene.root_universe_fingerprint(
+            baseline | {"C.py"})
+        removed = check_hygiene.root_universe_fingerprint({"A.py"})
+        renamed = check_hygiene.root_universe_fingerprint(
+            {"A.py", "C.py"})
+        self.assertNotEqual(added, (count, digest))
+        self.assertNotEqual(removed, (count, digest))
+        self.assertEqual(renamed[0], count)
+        self.assertNotEqual(renamed[1], digest)
+
+    def test_retired_old_path_cannot_reappear_as_grandfathered_debt(self):
+        baseline, issues = check_hygiene.root_debt_baseline()
+        self.assertEqual(issues, [])
+        retired = "THEOREM_LEDGER.json"
+        self.assertNotIn(retired, baseline)
+        ratchet = check_hygiene.root_debt_ratchet_issues(
+            [retired], baseline)
+        self.assertTrue(any("new unapproved root debt" in i
+                            for i in ratchet))
+
+    def test_grandfathered_debt_and_permanent_entries_pass_ratchet(self):
+        files = ["README.md", "check_hygiene.py", "OLD_RESEARCH.py",
+                 "claims/pkg/theorem.md"]
+        self.assertEqual(
+            check_hygiene.root_debt_ratchet_issues(
+                files, {"OLD_RESEARCH.py"}), [])
+
+    def test_unretired_deletion_is_not_a_legal_debt_reduction(self):
+        issues = check_hygiene.root_debt_ratchet_issues(
+            ["README.md"], {"OLD_RESEARCH.py"})
+        self.assertTrue(any("disappeared without manifest retirement" in i
+                            for i in issues))
+
+    def test_new_root_debt_fails_even_without_forbidden_prefix(self):
+        issues = check_hygiene.root_debt_ratchet_issues(
+            ["README.md", "analyze_new_result.py"], set())
+        self.assertTrue(any("new unapproved root debt" in i
+                            for i in issues))
+
+    def test_same_count_root_rename_does_not_evade_ratchet(self):
+        issues = check_hygiene.root_debt_ratchet_issues(
+            ["RENAMED_RESEARCH.py"], {"OLD_RESEARCH.py"})
+        self.assertTrue(issues)
+
+    def test_unknown_top_level_directory_fails(self):
+        issues = check_hygiene.root_debt_ratchet_issues(
+            ["scratch/result.py"], set())
+        self.assertTrue(any("top-level directories" in i for i in issues))
+
+    def test_exact_allowlist_reports_all_unjustified_files(self):
+        problems, entries, root_files, root_dirs = \
+            check_hygiene.root_layout_issues(
+                ["README.md", "analyze_result.py", "claims/a.md"])
+        self.assertEqual((entries, root_files, root_dirs), (3, 2, 1))
+        self.assertTrue(any("lack an end-state allowlist justification" in p
+                            for p in problems))
 
 
 class CandidateIndexCompletenessTests(unittest.TestCase):

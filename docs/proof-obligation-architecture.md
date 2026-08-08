@@ -10,6 +10,10 @@ compose into a proof.
 
 It does not assert that the required obligations are currently closed.
 
+Vocabulary, lifecycle, evidence/audit semantics, typed relationship
+rules, and the theorem-ledger boundary are authoritative in
+`docs/evidence-semantics-contract.md`.
+
 ## 1. The target shape
 
 The desired end state is a proof DAG, not a pile of successful
@@ -35,7 +39,9 @@ Conceptually:
 
 Every edge must be justified.
 
-Every leaf must be closed.
+Every load-bearing leaf in the claimed proof route must be closed.
+Unrelated, abandoned, or superseded branches need not be closed merely
+because the repository preserves them.
 
 The global theorem is not established while an unresolved leaf or
 unjustified implication remains.
@@ -59,9 +65,11 @@ answer:
 - Is there a Lean counterpart?
 - What remains open?
 
-Do not create a machine-readable schema for these fields until the
-actual post-migration proof DAG has been inventoried and the existing
-theorem ledger has been reviewed for overlap.
+Stage 11.5 reviewed the theorem ledger's semantics and reserved its
+empty `dependencies` arrays as unpopulated.  Do not create a
+machine-readable proof-DAG schema until the actual post-migration
+obligations have been inventoried under the evidence-semantics
+contract.
 
 ## 3. Certificate discharge rule
 
@@ -198,7 +206,96 @@ The excluded-divisor list is part of the proof obligation.
 
 "No generic counterexample was found" is not a pointwise theorem.
 
-## 6. Withdrawn and superseded lineage
+## 6. Graph layers and typed relationships
+
+A proof-obligation inventory must not collapse three different graphs:
+
+```text
+filesystem/classification
+  where an artifact lives or appears structurally owned
+
+executable/provenance
+  what code imports, calls, replays, or hashes
+
+mathematical proof obligations
+  what claim, reduction, case cover, specialization, or boundary
+  is needed for another mathematical conclusion
+```
+
+The graphs can legitimately disagree.  An imported row constructor may
+be shared implementation rather than a theorem premise.  A hash may pin
+a historical or corroborating artifact rather than establish logical
+dependence.  Conversely, theorem prose can express a case union even
+when no parent verifier executes every child.
+
+A future graph should distinguish at least the following contract
+relationships.  Their named endpoint roles and direction semantics are
+defined in `docs/evidence-semantics-contract.md`; do not replace them with an
+untyped generic arrow.
+
+Mathematical relationships:
+
+- **`mathematical_dependency`** — one dependent claim requires another
+  claim as a premise;
+- **`reduction_dependency`** — a proved transformation replaces an
+  obligation with another precise obligation;
+- **`case_coverage`** — children jointly exhaust a split, so no child
+  alone proves the parent;
+- **`specialization`** — a generic result descends to a locus under
+  proved hypotheses;
+- **`boundary_obligation`** — a divisor, fibre, endpoint, or projective
+  chart remains after a generic result;
+- **`residual_refinement`** — a partial factor/minor cover narrows the
+  remaining obligation; and
+- **`symmetry_transfer`** — a proved relabelling or involution transports
+  closure between charts.
+
+Evidence and implementation relationships:
+
+- **`primary_evidence`** — a primary verifier checks or replays a claim;
+- **`provenance_dependency`** — an immutable artifact is recorded or
+  hashed for lineage or replay;
+- **`implementation_dependency`** — code imports, calls, or subprocesses
+  other code;
+- **`shared_implementation`** — claims reuse machinery without one
+  mathematically implying another;
+- **`independent_audit`** — a distinct audit supports a claim at a stated
+  layer but is not a
+  mathematical premise; and
+- **`corroboration`** — computation supports confidence without being the
+  proof route.
+
+Lifecycle and synthesis relationships:
+
+- **`frontier_consumer`** — a broader, possibly open synthesis
+  incorporates a local result;
+- **`historical_evidence`** — superseded, withdrawn, failed, or earlier
+  lineage is preserved but not
+  proof-active; and
+- **`refutation_of_argument`** — an attempted route is invalidated
+  without necessarily deciding its target claim.
+
+Node status, scope, and edge type are orthogonal.  Candidate, partial,
+withdrawn, superseded, and refuted nodes may remain visible, but must
+not become live premises merely because they are nearby, imported, or
+hashed.  An independent audit must likewise be represented as evidence,
+not as an extra mathematical hypothesis.
+
+Generic-to-boundary closure is commonly a tree rather than one edge:
+
+```text
+generic claim
+  -> divisor or specialization obligations
+       -> branch cover
+            -> exceptional fibres or residual factors
+  -> projective boundary
+  -> exhaustive closure theorem
+```
+
+Represent the exhaustive union explicitly.  Do not infer it from a
+directory listing or from all child verifiers returning success.
+
+## 7. Withdrawn and superseded lineage
 
 Failed proofs are scientifically useful when clearly labeled.
 
@@ -215,7 +312,7 @@ corrected live claim
 
 but the withdrawn node cannot be used as a live proof dependency.
 
-## 7. Formalization target
+## 8. Formalization target
 
 If the global conjecture already has a Lean formulation, that
 formalization can become the semantic endpoint of the DAG.
@@ -258,7 +355,7 @@ interfaces:
 4. certificate/checker soundness;
 5. final master implication.
 
-## 8. How may the global status change?
+## 9. How may the global status change?
 
 Never because:
 
@@ -328,26 +425,39 @@ attempted proof programmes still contain open obligations.
 Keep the global status **UNRESOLVED** during either audit, and do not
 change it merely because one agent reports success.
 
-## 9. Future machine-readable obligation graph
+## 10. Future machine-readable obligation graph
 
 After the layout migration is substantially complete, perform a
 dedicated proof-DAG inventory.
 
-Only then decide whether to extend the theorem ledger or create a
-separate machine-readable graph.
+Stage 11.5 chose the safe boundary: the theorem ledger remains a
+partial curated claim index, and a future typed proof-obligation graph
+must be separate.  Do not create two overlapping status databases:
+the graph should reference claim/evidence records under the shared
+contract rather than copy composite ledger status as truth.
 
-Do not create two overlapping status databases accidentally.
+The current ledger `dependencies: []` means `not recorded`, never
+`none`.  Do not mechanically derive mathematical dependencies from
+imports, hashes, subprocess inventories, display-name prefixes, or
+filename families.  Record executable, provenance, audit,
+corroboration, frontier, and historical relationships separately from
+direct live proof premises.
 
 A future schema may need separate fields for:
 
 ```text
+node_kind
 mathematical_status
 scope
-dependencies
+lifecycle_status
+verification_status
+attempt_outcome
+typed_relationships
 evidence_mode
 certificate
 primary_checker
-independent_audit
+audit_outcome
+audit_independence_scope
 formalization_status
 formal_theorem
 formal_assumptions
