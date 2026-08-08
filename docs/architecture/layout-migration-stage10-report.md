@@ -261,9 +261,21 @@ the approval-time manifest hash remains informational provenance.
 
 ## CI bookkeeping
 
-The migration workflow is dispatched only after the substantive final report
-and navigation commit exists.  Its exact run ID, tested SHA, and conclusion
-are recorded by the permitted report-only bookkeeping commit.
+The migration workflow was dispatched only after the substantive final report
+and navigation commit existed:
+
+- workflow: `hygiene`;
+- run: [31267513035](https://github.com/YesterdaysLemon/open-graph-theory-with-prize/actions/runs/31267513035);
+- tested SHA: `9462d914c25a660e0abac827317eb0c02f68a207`;
+- conclusion: **success** (33 seconds);
+- all hygiene, migration-tool, self-contained-test, and rewriter-closure steps
+  passed.
+
+The runner emitted an informational GitHub Actions Node.js 20 deprecation
+annotation for `actions/checkout@v4` / `actions/setup-python@v5`; GitHub forced
+Node.js 24 and the job passed.  This unrelated workflow-maintenance notice was
+not broadened into Stage 10 scope.  The commit that records this paragraph is
+report-only and therefore does not invalidate the tested substantive tree.
 
 ## Stop condition
 
