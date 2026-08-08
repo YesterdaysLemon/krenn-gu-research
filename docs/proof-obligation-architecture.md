@@ -228,47 +228,51 @@ a historical or corroborating artifact rather than establish logical
 dependence.  Conversely, theorem prose can express a case union even
 when no parent verifier executes every child.
 
-A future graph should distinguish at least the following conceptual
-relationships.  These names describe semantics; they do not freeze
-machine-readable field names.
+A future graph should distinguish at least the following contract
+relationships.  Their named endpoint roles and direction semantics are
+defined in `docs/evidence-semantics-contract.md`; do not replace them with an
+untyped generic arrow.
 
 Mathematical relationships:
 
-- **logical dependency** — one claim requires another as a premise;
-- **reduction dependency** — a proved transformation replaces an
+- **`mathematical_dependency`** — one dependent claim requires another
+  claim as a premise;
+- **`reduction_dependency`** — a proved transformation replaces an
   obligation with another precise obligation;
-- **case coverage** — children jointly exhaust a split, so no child
+- **`case_coverage`** — children jointly exhaust a split, so no child
   alone proves the parent;
-- **specialization** — a generic result descends to a locus under
+- **`specialization`** — a generic result descends to a locus under
   proved hypotheses;
-- **boundary descendant** — a divisor, fibre, endpoint, or projective
+- **`boundary_obligation`** — a divisor, fibre, endpoint, or projective
   chart remains after a generic result;
-- **residual refinement** — a partial factor/minor cover narrows the
+- **`residual_refinement`** — a partial factor/minor cover narrows the
   remaining obligation; and
-- **symmetry transfer** — a proved relabelling or involution transports
+- **`symmetry_transfer`** — a proved relabelling or involution transports
   closure between charts.
 
 Evidence and implementation relationships:
 
-- **primary evidence** — a primary verifier checks or replays a claim;
-- **provenance dependency** — an immutable artifact is recorded or
+- **`primary_evidence`** — a primary verifier checks or replays a claim;
+- **`provenance_dependency`** — an immutable artifact is recorded or
   hashed for lineage or replay;
-- **executable dependency** — code imports, calls, or subprocesses
+- **`implementation_dependency`** — code imports, calls, or subprocesses
   other code;
-- **shared implementation** — claims reuse machinery without one
+- **`shared_implementation`** — claims reuse machinery without one
   mathematically implying another;
-- **audit edge** — a distinct audit supports a claim but is not a
+- **`independent_audit`** — a distinct audit supports a claim at a stated
+  layer but is not a
   mathematical premise; and
-- **corroboration** — computation supports confidence without being the
+- **`corroboration`** — computation supports confidence without being the
   proof route.
 
 Lifecycle and synthesis relationships:
 
-- **frontier consumer** — a broader, possibly open synthesis
+- **`frontier_consumer`** — a broader, possibly open synthesis
   incorporates a local result;
-- **historical or superseded** — lineage is preserved but not
+- **`historical_evidence`** — superseded, withdrawn, failed, or earlier
+  lineage is preserved but not
   proof-active; and
-- **refutation of argument** — an attempted route is invalidated
+- **`refutation_of_argument`** — an attempted route is invalidated
   without necessarily deciding its target claim.
 
 Node status, scope, and edge type are orthogonal.  Candidate, partial,

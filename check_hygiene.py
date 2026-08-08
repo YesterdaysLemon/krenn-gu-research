@@ -33,8 +33,8 @@ Checks:
      dependencies remain explicitly unpopulated, documents exist,
      every document_sha256_16 is recomputed and matched, mapped
      verifier/audit scripts are tracked, verified entries carry
-     provenance that explains any null field, and the component_census
-     summary matches the entry counts;
+     provenance that explains any null field, and component_census is
+     explicitly marked as a curated navigation snapshot with valid shape;
   5. no machine-specific checkout paths, vendored-env prefixes, or
      unguarded sys.path injections;
   8. root layout against an exact justified allowlist and entry-count
@@ -257,7 +257,13 @@ def check_markdown_links(files: list[str]) -> None:
 
 LEDGER_SCHEMA_VERSION = 3
 LEDGER_CONTRACT_DOCUMENT = "docs/evidence-semantics-contract.md"
+LEDGER_ROLE = "partial_claim_index_not_proof_graph"
 LEDGER_DEPENDENCIES_STATE = "reserved_unpopulated"
+LEDGER_STATUS_VALUES = {
+    "verified", "verified_finite", "verified_generic", "partial",
+    "candidate", "exploratory", "withdrawn", "partially_withdrawn",
+    "superseded", "framework", "open",
+}
 
 VERIFIED_STATUSES = {"verified", "verified_finite", "verified_generic"}
 # Provenance values that explain WHY a field is null (an explicit,
@@ -296,6 +302,10 @@ def ledger_semantic_issues(ledger: dict) -> list[str]:
         issues.append(
             "evidence_semantics_contract must point to "
             f"{LEDGER_CONTRACT_DOCUMENT}")
+    if ledger.get("ledger_role") != LEDGER_ROLE:
+        issues.append(
+            f"ledger_role must remain {LEDGER_ROLE!r}; the theorem ledger "
+            "is not a proof DAG")
     if ledger.get("completeness") != "partial_curated":
         issues.append(
             "completeness must remain 'partial_curated' until a dedicated "
@@ -312,13 +322,25 @@ def ledger_semantic_issues(ledger: dict) -> list[str]:
         status_values = []
     elif len(status_values) != len(set(status_values)):
         issues.append("conventions.status_values contains duplicates")
+    if set(status_values) != LEDGER_STATUS_VALUES:
+        issues.append(
+            "conventions.status_values must match the schema-v3 status "
+            "vocabulary")
     if not isinstance(status_semantics, dict):
         issues.append("conventions.status_semantics must be an object")
         status_semantics = {}
+    elif set(status_semantics) != LEDGER_STATUS_VALUES:
+        issues.append(
+            "conventions.status_semantics must define exactly the "
+            "schema-v3 status vocabulary")
     for status in status_values:
         if not isinstance(status_semantics.get(status), str):
             issues.append(
                 f"status {status!r} lacks a string semantic definition")
+    for key in ("status_field_semantics", "axis_separation"):
+        if not isinstance(conventions.get(key), str) or not \
+                conventions[key].strip():
+            issues.append(f"conventions.{key} must be a nonempty string")
 
     provenance_values = conventions.get("provenance_values")
     if not isinstance(provenance_values, list) or \
@@ -340,6 +362,29 @@ def ledger_semantic_issues(ledger: dict) -> list[str]:
             issues.append(
                 "conventions.dependencies.empty_array_means must be "
                 "'not_recorded'")
+        if not isinstance(dependency_contract.get("policy"), str) or not \
+                dependency_contract["policy"].strip():
+            issues.append(
+                "conventions.dependencies.policy must be a nonempty string")
+
+    audit_semantics = conventions.get("audit_provenance_semantics")
+    required_audit_semantics = {
+        "independent_modular_audit",
+        "independent_exact_identity_audit",
+        "none_exists",
+        "not_yet_mapped",
+        "historical_certificate_chain",
+    }
+    if not isinstance(audit_semantics, dict):
+        issues.append(
+            "conventions.audit_provenance_semantics must be an object")
+    else:
+        for provenance in sorted(required_audit_semantics):
+            if not isinstance(audit_semantics.get(provenance), str) or not \
+                    audit_semantics[provenance].strip():
+                issues.append(
+                    "audit provenance lacks a semantic definition: "
+                    f"{provenance}")
 
     entries = ledger.get("entries")
     if not isinstance(entries, list):
@@ -659,6 +704,74 @@ def root_layout_issues(files: list[str]) -> tuple[list[str], int, int, int]:
     return problems, entries, len(root_files), len(root_dirs)
 
 
+def catalog_root_universe(
+        classification: dict, unclassified_data: dict
+        ) -> tuple[set[str], list[str]]:
+    """Return the exact root-path set represented by the two catalogs."""
+    issues = []
+    entries = classification.get("entries")
+    if not isinstance(entries, list):
+        return set(), [
+            "catalog/layout-classification.json entries must be an array"]
+    classified_paths = []
+    for index, entry in enumerate(entries):
+        old_path = entry.get("old_path") if isinstance(entry, dict) else None
+        if not isinstance(old_path, str):
+            issues.append(
+                "catalog/layout-classification.json has a non-string "
+                f"old_path at entry {index}")
+        else:
+            classified_paths.append(old_path)
+    if classification.get("classified_count") != len(classified_paths):
+        issues.append(
+            "catalog/layout-classification.json classified_count does not "
+            "match entries")
+    if len(classified_paths) != len(set(classified_paths)):
+        issues.append(
+            "catalog/layout-classification.json contains duplicate old_path "
+            "values")
+
+    unclassified_paths = unclassified_data.get("files")
+    if not isinstance(unclassified_paths, list) or not all(
+            isinstance(path, str) for path in unclassified_paths):
+        issues.append(
+            "catalog/unclassified-files.json files must be an array of "
+            "strings")
+        unclassified_paths = []
+    if unclassified_data.get("unclassified_count") != \
+            len(unclassified_paths):
+        issues.append(
+            "catalog/unclassified-files.json count does not match files")
+    if len(unclassified_paths) != len(set(unclassified_paths)):
+        issues.append(
+            "catalog/unclassified-files.json contains duplicate paths")
+
+    classified = set(classified_paths)
+    unclassified = set(unclassified_paths)
+    overlap = sorted(classified & unclassified)
+    if overlap:
+        issues.append(
+            "classified and unclassified root catalogs overlap: "
+            f"{overlap[:10]}")
+    root_universe = classified | unclassified
+    malformed = sorted(
+        path for path in root_universe
+        if not path or path != path.strip() or "/" in path or "\\" in path
+        or pathlib.PurePosixPath(path).name != path
+        or path in {".", ".."})
+    if malformed:
+        issues.append(
+            "root-universe paths must be normalized root basenames: "
+            f"{malformed[:10]}")
+    return root_universe, issues
+
+
+def root_universe_fingerprint(root_universe: set[str]) -> tuple[int, str]:
+    """Return the order-independent frozen-universe count and digest."""
+    encoded = ("\n".join(sorted(root_universe)) + "\n").encode("utf-8")
+    return len(root_universe), hashlib.sha256(encoded).hexdigest()
+
+
 def root_debt_baseline() -> tuple[set[str], list[str]]:
     """Load unresolved grandfathered debt from the frozen root universe."""
     issues = []
@@ -667,28 +780,22 @@ def root_debt_baseline() -> tuple[set[str], list[str]]:
     try:
         classification = json.loads(
             classification_path.read_text(encoding="utf-8"))
-        classified = {
-            entry["old_path"] for entry in classification["entries"]
-        }
-    except (OSError, KeyError, TypeError, json.JSONDecodeError) as exc:
+    except (OSError, TypeError, json.JSONDecodeError) as exc:
         issues.append(f"cannot load classified root-debt baseline: {exc}")
-        classified = set()
+        classification = {}
     try:
         unclassified_data = json.loads(
             unclassified_path.read_text(encoding="utf-8"))
-        unclassified = set(unclassified_data["files"])
-        if unclassified_data.get("unclassified_count") != len(unclassified):
-            issues.append(
-                "catalog/unclassified-files.json count does not match files")
-    except (OSError, KeyError, TypeError, json.JSONDecodeError) as exc:
+    except (OSError, TypeError, json.JSONDecodeError) as exc:
         issues.append(f"cannot load unclassified root-debt baseline: {exc}")
-        unclassified = set()
-    root_universe = classified | unclassified
-    encoded = ("\n".join(sorted(root_universe)) + "\n").encode("utf-8")
-    digest = hashlib.sha256(encoded).hexdigest()
-    if len(root_universe) != ROOT_UNIVERSE_BASELINE_COUNT:
+        unclassified_data = {}
+    root_universe, catalog_issues = catalog_root_universe(
+        classification, unclassified_data)
+    issues.extend(catalog_issues)
+    count, digest = root_universe_fingerprint(root_universe)
+    if count != ROOT_UNIVERSE_BASELINE_COUNT:
         issues.append(
-            f"root universe has {len(root_universe)} paths, expected "
+            f"root universe has {count} paths, expected "
             f"{ROOT_UNIVERSE_BASELINE_COUNT}")
     if digest != ROOT_UNIVERSE_BASELINE_SHA256:
         issues.append(
@@ -698,6 +805,12 @@ def root_debt_baseline() -> tuple[set[str], list[str]]:
     manifest_path = ROOT / "catalog" / "moved-paths.json"
     try:
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        for entry in manifest["moves"]:
+            if entry.get("executed_batch") and \
+                    entry.get("status") != "moved":
+                issues.append(
+                    "executed root path no longer has status='moved': "
+                    f"{entry.get('old_path')}")
         retired = {
             entry["old_path"] for entry in manifest["moves"]
             if entry.get("status") == "moved"
@@ -707,14 +820,14 @@ def root_debt_baseline() -> tuple[set[str], list[str]]:
         retired = set()
 
     # Debt is a monotonically shrinking subset.  Executed old paths are
-    # retired immediately, so neither the ratchet nor the separate stale-path
-    # checker permits their reappearance.
+    # retired immediately.  The ratchet also rejects disappearance without
+    # retirement, so a direct delete cannot create a later resurrection slot.
     return root_universe - retired - ALLOWED_ROOT_FILES, issues
 
 
 def root_debt_ratchet_issues(
         files: list[str], debt_baseline: set[str]) -> list[str]:
-    """Reject new root debt and unknown top-level directories.
+    """Reject new debt, unretired deletion, and unknown directories.
 
     Membership in ``debt_baseline`` only grandfathers a path pending
     ownership review.  It is not a destination, classification, or move
@@ -723,12 +836,19 @@ def root_debt_ratchet_issues(
     root_files = {f for f in files if "/" not in f}
     root_dirs = {f.split("/")[0] for f in files if "/" in f}
     new_debt = sorted(root_files - ALLOWED_ROOT_FILES - debt_baseline)
+    unretired_missing = sorted(debt_baseline - root_files)
     unknown_dirs = sorted(root_dirs - ALLOWED_ROOT_DIRS)
     issues = []
     if new_debt:
         issues.append(
             f"new unapproved root debt: {new_debt[:10]}"
             + (f" ({len(new_debt)} total)" if len(new_debt) > 10 else ""))
+    if unretired_missing:
+        issues.append(
+            "grandfathered root debt disappeared without manifest "
+            f"retirement: {unretired_missing[:10]}"
+            + (f" ({len(unretired_missing)} total)"
+               if len(unretired_missing) > 10 else ""))
     if unknown_dirs:
         issues.append(f"unapproved top-level directories: {unknown_dirs}")
     return issues

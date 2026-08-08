@@ -78,17 +78,23 @@ Relationship type, source status, target status, and scope are independent.
 An edge is never inferred solely from a filename, directory, import,
 subprocess, hash, or shared data constructor.
 
+The relationship roles below are authoritative; there is no generic
+untyped-arrow convention.  A future schema must either use the named roles
+shown here or declare an equivalent direction for each type.  Consumers must
+not reverse an edge, treat every edge as `premise -> conclusion`, or traverse
+heterogeneous relationships as though they had one common direction.
+
 ### Proof-active mathematical relationships
 
-| Relationship | Direction and meaning | Minimum acceptance condition |
+| Relationship | Named roles and meaning | Minimum acceptance condition |
 |---|---|---|
-| `mathematical_dependency` | child conclusion is used as a premise of the parent claim | the owning mathematical prose states the implication and preserves all hypotheses and scope |
-| `reduction_dependency` | source obligation is reduced to a precise target obligation | a proved soundness implication in the direction needed by the parent |
-| `case_coverage` | a parent is exhausted jointly by a named set of children | an explicit cover theorem; isolated child edges or a directory listing are insufficient |
-| `specialization` | a generic result is transported to a locus | a proved specialization argument with legality, denominators, and hypotheses stated |
-| `boundary_obligation` | a divisor, exceptional fibre, endpoint, or projective chart remains after another result | the residual scope is stated; the parent is not closed until the required boundary route is closed |
-| `residual_refinement` | an exact partial result narrows the remaining obligation | the surviving residual and any lost cases are explicit |
-| `symmetry_transfer` | a relabelling, involution, or chart symmetry transports a conclusion | the map, preserved hypotheses, and coverage of the target chart are proved |
+| `mathematical_dependency` | `dependent_claim` uses `premise_claim`; the dependency direction is dependent to prerequisite, while proof flow runs from the premise to the dependent conclusion | the owning mathematical prose states the implication and preserves all hypotheses and scope |
+| `reduction_dependency` | `original_obligation` is reduced to `reduced_target`; closing the target closes the original only through the recorded soundness implication | a proved soundness implication in the direction needed by the original obligation |
+| `case_coverage` | `parent_claim` is exhausted jointly by one named `case_group` containing the children | an explicit cover theorem; isolated child edges or a directory listing are insufficient |
+| `specialization` | `generic_source` is transported to a `specialized_target` locus | a proved specialization argument with legality, denominators, and hypotheses stated |
+| `boundary_obligation` | analysis of `parent_scope` leaves a named `residual_boundary` such as a divisor, exceptional fibre, endpoint, or projective chart | the residual scope is stated; the parent is not closed until the required boundary route is closed |
+| `residual_refinement` | an `exact_partial_result` narrows an `original_obligation` to a stated `remaining_residual` | the surviving residual and any lost cases are explicit |
+| `symmetry_transfer` | a proved map transports a conclusion from `source_chart` to `target_chart` | the map, preserved hypotheses, and coverage of the target chart are proved |
 
 `case_coverage` is set-valued: no single child proves the parent merely because
 all children have ordinary dependency edges.  `specialization` and
@@ -97,17 +103,17 @@ boundary obligation without proving any specialization to it.
 
 ### Evidence, implementation, and history relationships
 
-| Relationship | Meaning | Proof-active? |
+| Relationship | Named roles and meaning | Proof-active? |
 |---|---|---|
-| `primary_evidence` | a verifier, checker, certificate, or in-document proof supports a claim | evidence for the node, not an extra theorem premise |
-| `implementation_dependency` | code imports, calls, or subprocesses other code | no |
-| `shared_implementation` | several claims reuse neutral machinery | no |
-| `provenance_dependency` | a hash or recorded artifact pins lineage or replay input | no, unless a separate mathematical edge is proved |
-| `independent_audit` | a distinct route checks a claim or evidence carrier at a stated layer | no; it raises confidence but is not a mathematical hypothesis |
-| `corroboration` | evidence supports confidence without forming the proof route | no |
-| `historical_evidence` | a superseded, withdrawn, failed, or earlier artifact is retained for lineage | no |
-| `frontier_consumer` | a synthesis records a local result inside a broader open programme | no implication that the broader frontier is closed |
-| `refutation_of_argument` | an audit invalidates a route or inference | no implication that the target proposition is false |
+| `primary_evidence` | `claim` is supported by an `evidence_carrier`, such as a verifier, checker, certificate, or in-document proof | evidence for the node, not an extra theorem premise |
+| `implementation_dependency` | `consumer_implementation` imports, calls, or subprocesses `used_implementation` | no |
+| `shared_implementation` | named `claims` reuse one `shared_component` | no |
+| `provenance_dependency` | `record` pins a `lineage_or_replay_artifact` by hash or immutable identifier | no, unless a separate mathematical edge is proved |
+| `independent_audit` | an `audit_carrier` checks a `claim_or_evidence_carrier` at a stated layer | no; it raises confidence but is not a mathematical hypothesis |
+| `corroboration` | `corroborating_evidence` supports a `claim` without forming the proof route | no |
+| `historical_evidence` | a `current_record` retains a superseded, withdrawn, failed, or earlier `historical_artifact` for lineage | no |
+| `frontier_consumer` | a broader `synthesis_consumer` records a `local_result` inside an open programme | no implication that the broader frontier is closed |
+| `refutation_of_argument` | an `audit_or_countercheck` invalidates an `argument_or_inference` | no implication that the target proposition is false |
 
 An audit's independence is scoped.  A no-import rederivation may be independent
 at the implementation and algebraic-derivation layers.  An audit that shares
@@ -203,11 +209,24 @@ silently expand the baseline.  `check_hygiene.py` fails if:
 
 - a new non-allowlisted root file appears outside that frozen universe; or
 - an executed old path reappears after retirement from active debt; or
+- a grandfathered path disappears without a manifest-recorded migration
+  retirement; or
 - an unapproved top-level directory appears.
 
 Grandfathering means only that an existing path may remain while ownership is
 reviewed.  It is not a classification, destination, status, approval, or
-waiver.  A same-count rename does not evade the ratchet.
+waiver.  A same-count rename does not evade the ratchet, and direct deletion
+is not a legal debt-reduction transaction that can reserve a path for later
+recreation.
+
+The frozen catalogs contribute only their root-path set to this ratchet.
+Their classification and status-evidence strings are snapshot provenance,
+not current scientific metadata or migration authority.
+
+An allowed top-level directory is likewise not a dumping ground.  Its
+allowance covers only the ownership class named by its justification; placing
+an artifact under `tools/`, `docs/`, or another allowed directory still
+requires that directory to be its real owner.
 
 ### Phase R2 -- reviewed debt reduction (active migration workflow)
 

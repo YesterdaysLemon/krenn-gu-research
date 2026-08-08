@@ -211,17 +211,21 @@ or to move it for structural symmetry.
 
 The migration test suite now covers:
 
-- schema/contract linkage and declared status vocabulary;
+- schema/contract linkage, the non-proof-DAG ledger role, and the pinned
+  status vocabulary;
 - the reserved `dependencies` field and the exact meaning of `[]`;
 - rejection of undeclared statuses;
 - separate Branch B open-target and verified-identity entries;
 - non-proof-active handling for the heterogeneous boundary-candidate
   collection;
 - multimap lifecycle handling in the classifier;
+- ordinary non-withdrawn classification after the multimap conversion;
 - no automatic legacy route for `partially_withdrawn` or mixed-status docs;
 - grandfathered root debt versus new root debt;
 - same-count root renames;
+- rejection of direct disappearance without manifest retirement;
 - reappearance of an already retired old path;
+- duplicate, overlapping, or non-normalized root-universe catalog entries;
 - unknown top-level directories; and
 - end-state allowlist reporting for prefix-unmatched files.
 

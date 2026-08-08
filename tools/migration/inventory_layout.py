@@ -286,6 +286,9 @@ def classify(rel: str, ctx: dict) -> dict | None:
     evidence, confidence = [], "high"
 
     ledger_statuses = ctx["ledger_doc_statuses"].get(rel, set())
+    ledger_status_label = ", ".join(
+        sorted(status for status in ledger_statuses
+               if isinstance(status, str)))
 
     # Status-marker documents.  A filename is a triage signal, not ownership.
     # Only an unambiguous all-withdrawn ledger surface gets high confidence;
@@ -367,8 +370,11 @@ def classify(rel: str, ctx: dict) -> dict | None:
                 cat = "claim_document" if ext == ".md" else (
                     "claim_script" if ext == ".py" else "claim_data")
                 ev = [f"filename prefix {pfx}_"]
-                if ledger_status:
-                    ev.append(f"theorem ledger status={ledger_status}")
+                if ledger_status_label:
+                    ev.append(
+                        "theorem ledger claim statuses="
+                        f"{ledger_status_label}; document is a multimap, "
+                        "so status does not inherit between claims")
                 if stem in ctx["triples"]:
                     ev.append("part of verify/audit triple")
                     confidence = "high"
@@ -393,8 +399,11 @@ def classify(rel: str, ctx: dict) -> dict | None:
                     ev.append("family generic theorem doc")
                 if stem in ctx["triples"]:
                     ev.append("part of verify/audit triple")
-                if ledger_status:
-                    ev.append(f"theorem ledger status={ledger_status}")
+                if ledger_status_label:
+                    ev.append(
+                        "theorem ledger claim statuses="
+                        f"{ledger_status_label}; document is a multimap, "
+                        "so status does not inherit between claims")
                 cat = "claim_document" if ext == ".md" else "claim_script"
                 high = matched is not None and (
                     len(ev) >= 3 or generic)
@@ -419,8 +428,11 @@ def classify(rel: str, ctx: dict) -> dict | None:
                     ev.append("family generic theorem doc")
                 if stem in ctx["triples"]:
                     ev.append("part of verify/audit triple")
-                if ledger_status:
-                    ev.append(f"theorem ledger status={ledger_status}")
+                if ledger_status_label:
+                    ev.append(
+                        "theorem ledger claim statuses="
+                        f"{ledger_status_label}; document is a multimap, "
+                        "so status does not inherit between claims")
                 cat = ("claim_document" if ext == ".md"
                        else "claim_script")
                 high = matched is not None and (
@@ -447,8 +459,11 @@ def classify(rel: str, ctx: dict) -> dict | None:
                    else "claim_script" if ext in (".py", ".cpp")
                    else "claim_data")
             ev = ["filename prefix P5_"]
-            if ledger_status:
-                ev.append(f"theorem ledger status={ledger_status}")
+            if ledger_status_label:
+                ev.append(
+                    "theorem ledger claim statuses="
+                    f"{ledger_status_label}; document is a multimap, "
+                    "so status does not inherit between claims")
             if stem in ctx["triples"]:
                 ev.append("part of verify/audit triple")
             return {"old_path": rel,
@@ -495,8 +510,11 @@ def classify(rel: str, ctx: dict) -> dict | None:
                    else "claim_script" if ext in (".py", ".cpp")
                    else "claim_data")
             ev = ["filename prefix P4_"]
-            if ledger_status:
-                ev.append(f"theorem ledger status={ledger_status}")
+            if ledger_status_label:
+                ev.append(
+                    "theorem ledger claim statuses="
+                    f"{ledger_status_label}; document is a multimap, "
+                    "so status does not inherit between claims")
             if stem in ctx["triples"]:
                 ev.append("part of verify/audit triple")
             if conf is None:
@@ -510,8 +528,11 @@ def classify(rel: str, ctx: dict) -> dict | None:
         if stem.startswith(("P6_", "verify_p6_", "audit_p6_")):
             cat = "claim_document" if ext == ".md" else "claim_script"
             ev = ["filename prefix P6_"]
-            if ledger_status:
-                ev.append(f"theorem ledger status={ledger_status}")
+            if ledger_status_label:
+                ev.append(
+                    "theorem ledger claim statuses="
+                    f"{ledger_status_label}; document is a multimap, "
+                    "so status does not inherit between claims")
             return {"old_path": rel,
                     "proposed_path": f"claims/p6/{name}",
                     "category": cat, "claim_family": "p6",
@@ -519,8 +540,11 @@ def classify(rel: str, ctx: dict) -> dict | None:
         if stem.startswith(("P7_", "verify_p7_", "audit_p7_")):
             cat = "claim_document" if ext == ".md" else "claim_script"
             ev = ["filename prefix P7_"]
-            if ledger_status:
-                ev.append(f"theorem ledger status={ledger_status}")
+            if ledger_status_label:
+                ev.append(
+                    "theorem ledger claim statuses="
+                    f"{ledger_status_label}; document is a multimap, "
+                    "so status does not inherit between claims")
             return {"old_path": rel,
                     "proposed_path": f"claims/p7/{name}",
                     "category": cat, "claim_family": "p7",
@@ -531,8 +555,11 @@ def classify(rel: str, ctx: dict) -> dict | None:
                    else "claim_script" if ext in (".py", ".cpp")
                    else "claim_data")
             ev = ["filename prefix in arbitrary-order family"]
-            if ledger_status:
-                ev.append(f"theorem ledger status={ledger_status}")
+            if ledger_status_label:
+                ev.append(
+                    "theorem ledger claim statuses="
+                    f"{ledger_status_label}; document is a multimap, "
+                    "so status does not inherit between claims")
             if stem in ctx["triples"]:
                 ev.append("part of verify/audit triple")
             return {"old_path": rel,
@@ -545,8 +572,11 @@ def classify(rel: str, ctx: dict) -> dict | None:
     if ext == ".py":
         if any(stem.startswith(p) for p in TOOL_EXPLORE_PREFIXES):
             ev = ["tool prefix (exploration/derivation)"]
-            if ledger_status:
-                ev.append(f"theorem ledger status={ledger_status}")
+            if ledger_status_label:
+                ev.append(
+                    "theorem ledger claim statuses="
+                    f"{ledger_status_label}; document is a multimap, "
+                    "so status does not inherit between claims")
             return {"old_path": rel,
                     "proposed_path": f"tools/explore/{name}",
                     "category": "tool_script", "claim_family": None,
