@@ -367,7 +367,7 @@
     },
     {
       "name": "Generic marked H31 fibre empty: all rank one triangle",
-      "document": "P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h31/all-rank-one-triangle/P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "e5fcbea3b4479d27",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -375,18 +375,26 @@
         "denominator/slope divisors excluded, not proved"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h31_all_rank_one_triangle_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h31/all-rank-one-triangle/verify_p5_h31_all_rank_one_triangle_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h31_all_rank_one_triangle_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h31/all-rank-one-triangle/audit_p5_h31_all_rank_one_triangle_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h31/all-rank-one-triangle",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h31_all_rank_one_triangle_component_generic_obstruction.py",
+        "verify_p5_h31_all_rank_one_triangle_component_generic_obstruction.py"
       ]
     },
     {
       "name": "Generic marked H31 fibre empty: coincident support",
-      "document": "P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h31/coincident-support/P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "f58710072d552bd1",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -394,18 +402,26 @@
         "denominator/slope divisors excluded, not proved"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h31_coincident_support_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h31/coincident-support/verify_p5_h31_coincident_support_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h31_coincident_support_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h31/coincident-support/audit_p5_h31_coincident_support_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h31/coincident-support",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h31_coincident_support_component_generic_obstruction.py",
+        "verify_p5_h31_coincident_support_component_generic_obstruction.py"
       ]
     },
     {
       "name": "Generic marked H31 fibre empty: coincident support rank one star",
-      "document": "P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h31/coincident-support-rank-one-star/P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "1e7568db785c7030",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -413,13 +429,21 @@
         "denominator/slope divisors excluded, not proved"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h31/coincident-support-rank-one-star/verify_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h31/coincident-support-rank-one-star/audit_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h31/coincident-support-rank-one-star",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py",
+        "verify_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py"
       ]
     },
     {
@@ -462,7 +486,7 @@
     },
     {
       "name": "Generic marked H31 fibre empty: common kernel vertical triangle",
-      "document": "P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h31/common-kernel-vertical-triangle/P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "b30a25b6fdd3565a",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -470,18 +494,26 @@
         "denominator/slope divisors excluded, not proved"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h31/common-kernel-vertical-triangle/verify_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h31/common-kernel-vertical-triangle/audit_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h31/common-kernel-vertical-triangle",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py",
+        "verify_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py"
       ]
     },
     {
       "name": "Generic marked H31 fibre empty: common singleton",
-      "document": "P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h31/common-singleton/P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "022176181572e950",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -489,13 +521,21 @@
         "denominator/slope divisors excluded, not proved"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h31_common_singleton_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h31/common-singleton/verify_p5_h31_common_singleton_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h31_common_singleton_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h31/common-singleton/audit_p5_h31_common_singleton_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h31/common-singleton",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h31_common_singleton_component_generic_obstruction.py",
+        "verify_p5_h31_common_singleton_component_generic_obstruction.py"
       ]
     },
     {
@@ -519,7 +559,7 @@
     },
     {
       "name": "Generic marked H31 fibre empty: directed zero divisor triangle components",
-      "document": "P5_H31_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h31/directed-zero-divisor-triangle-components/P5_H31_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "d556465084e154cd",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -527,18 +567,26 @@
         "denominator/slope divisors excluded, not proved"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h31/directed-zero-divisor-triangle-components/verify_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py",
+      "independent_audit": "claims/p5/h31/directed-zero-divisor-triangle-components/audit_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h31/directed-zero-divisor-triangle-components",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H31_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py",
+        "verify_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py"
       ]
     },
     {
       "name": "Generic marked H31 fibre empty: disjoint mixed star",
-      "document": "P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h31/disjoint-mixed-star/P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "7ee374b474b1889b",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -546,18 +594,26 @@
         "denominator/slope divisors excluded, not proved"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h31_disjoint_mixed_star_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h31/disjoint-mixed-star/verify_p5_h31_disjoint_mixed_star_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h31_disjoint_mixed_star_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h31/disjoint-mixed-star/audit_p5_h31_disjoint_mixed_star_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h31/disjoint-mixed-star",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h31_disjoint_mixed_star_component_generic_obstruction.py",
+        "verify_p5_h31_disjoint_mixed_star_component_generic_obstruction.py"
       ]
     },
     {
       "name": "Generic marked H31 fibre empty: disjoint secant",
-      "document": "P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h31/disjoint-secant/P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "10007e42f74f7c2d",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -565,18 +621,26 @@
         "denominator/slope divisors excluded, not proved"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h31_disjoint_secant_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h31/disjoint-secant/verify_p5_h31_disjoint_secant_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h31_disjoint_secant_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h31/disjoint-secant/audit_p5_h31_disjoint_secant_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h31/disjoint-secant",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h31_disjoint_secant_component_generic_obstruction.py",
+        "verify_p5_h31_disjoint_secant_component_generic_obstruction.py"
       ]
     },
     {
       "name": "Generic marked H31 fibre empty: eisenstein norm",
-      "document": "P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h31/eisenstein-norm/P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "7254c16c2f6ad64e",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -584,13 +648,21 @@
         "denominator/slope divisors excluded, not proved"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h31_eisenstein_norm_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h31/eisenstein-norm/verify_p5_h31_eisenstein_norm_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h31_eisenstein_norm_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h31/eisenstein-norm/audit_p5_h31_eisenstein_norm_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h31/eisenstein-norm",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h31_eisenstein_norm_component_generic_obstruction.py",
+        "verify_p5_h31_eisenstein_norm_component_generic_obstruction.py"
       ]
     },
     {
@@ -614,7 +686,7 @@
     },
     {
       "name": "Generic marked H31 fibre empty: equal support common factor",
-      "document": "P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h31/equal-support-common-factor/P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "e175ade855ff8608",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -622,13 +694,21 @@
         "denominator/slope divisors excluded, not proved"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h31_equal_support_common_factor_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h31/equal-support-common-factor/verify_p5_h31_equal_support_common_factor_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h31_equal_support_common_factor_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h31/equal-support-common-factor/audit_p5_h31_equal_support_common_factor_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h31/equal-support-common-factor",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h31_equal_support_common_factor_component_generic_obstruction.py",
+        "verify_p5_h31_equal_support_common_factor_component_generic_obstruction.py"
       ]
     },
     {
@@ -653,7 +733,7 @@
     },
     {
       "name": "Generic marked H31 fibre empty: full support tangent",
-      "document": "P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h31/full-support-tangent/P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "52d9f474cf6d2a7c",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -661,18 +741,26 @@
         "denominator/slope divisors excluded, not proved"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h31_full_support_tangent_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h31/full-support-tangent/verify_p5_h31_full_support_tangent_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h31_full_support_tangent_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h31/full-support-tangent/audit_p5_h31_full_support_tangent_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h31/full-support-tangent",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h31_full_support_tangent_component_generic_obstruction.py",
+        "verify_p5_h31_full_support_tangent_component_generic_obstruction.py"
       ]
     },
     {
       "name": "Generic marked H31 fibre empty: mixed orientation",
-      "document": "P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h31/mixed-orientation/P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "77383cf849eca2f5",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -680,13 +768,21 @@
         "denominator/slope divisors excluded, not proved"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h31_mixed_orientation_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h31/mixed-orientation/verify_p5_h31_mixed_orientation_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h31_mixed_orientation_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h31/mixed-orientation/audit_p5_h31_mixed_orientation_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h31/mixed-orientation",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h31_mixed_orientation_component_generic_obstruction.py",
+        "verify_p5_h31_mixed_orientation_component_generic_obstruction.py"
       ]
     },
     {
@@ -710,7 +806,7 @@
     },
     {
       "name": "Generic marked H31 fibre empty: six dimensional",
-      "document": "P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h31/six-dimensional/P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "373a1331fecf0199",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -718,13 +814,21 @@
         "denominator/slope divisors excluded, not proved"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h31_six_dimensional_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h31/six-dimensional/verify_p5_h31_six_dimensional_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h31_six_dimensional_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h31/six-dimensional/audit_p5_h31_six_dimensional_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h31/six-dimensional",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h31_six_dimensional_component_generic_obstruction.py",
+        "verify_p5_h31_six_dimensional_component_generic_obstruction.py"
       ]
     },
     {
@@ -748,7 +852,7 @@
     },
     {
       "name": "Generic marked H31 fibre empty: transverse common factor",
-      "document": "P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h31/transverse-common-factor/P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "e9856c65a328bfb2",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -756,18 +860,26 @@
         "denominator/slope divisors excluded, not proved"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h31_transverse_common_factor_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h31/transverse-common-factor/verify_p5_h31_transverse_common_factor_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h31_transverse_common_factor_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h31/transverse-common-factor/audit_p5_h31_transverse_common_factor_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h31/transverse-common-factor",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h31_transverse_common_factor_component_generic_obstruction.py",
+        "verify_p5_h31_transverse_common_factor_component_generic_obstruction.py"
       ]
     },
     {
       "name": "Generic marked H31 fibre empty: two rank two spoke mixed star",
-      "document": "P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h31/two-rank-two-spoke-mixed-star/P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "7712f94bddec0b1c",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -775,13 +887,21 @@
         "denominator/slope divisors excluded, not proved"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h31/two-rank-two-spoke-mixed-star/verify_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h31/two-rank-two-spoke-mixed-star/audit_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h31/two-rank-two-spoke-mixed-star",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
+        "verify_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py"
       ]
     },
     {
@@ -824,7 +944,7 @@
     },
     {
       "name": "Generic weighted H22 fibre empty: all rank one triangle",
-      "document": "P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h22/all-rank-one-triangle/P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "2912c2ff47e87fd6",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -833,18 +953,26 @@
         "slope r transcendental; special slopes excluded"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h22_all_rank_one_triangle_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h22/all-rank-one-triangle/verify_p5_h22_all_rank_one_triangle_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h22_all_rank_one_triangle_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h22/all-rank-one-triangle/audit_p5_h22_all_rank_one_triangle_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes-hours (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h22/all-rank-one-triangle",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h22_all_rank_one_triangle_component_generic_obstruction.py",
+        "verify_p5_h22_all_rank_one_triangle_component_generic_obstruction.py"
       ]
     },
     {
       "name": "Generic weighted H22 fibre empty: coincident support",
-      "document": "P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h22/coincident-support/P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "b71e0f40c3041a66",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -853,13 +981,21 @@
         "slope r transcendental; special slopes excluded"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h22_coincident_support_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h22/coincident-support/verify_p5_h22_coincident_support_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h22_coincident_support_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h22/coincident-support/audit_p5_h22_coincident_support_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes-hours (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h22/coincident-support",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h22_coincident_support_component_generic_obstruction.py",
+        "verify_p5_h22_coincident_support_component_generic_obstruction.py"
       ]
     },
     {
@@ -884,7 +1020,7 @@
     },
     {
       "name": "Generic weighted H22 fibre empty: common singleton",
-      "document": "P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "3462ef1bd6ef1274",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -893,18 +1029,26 @@
         "slope r transcendental; special slopes excluded"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h22_common_singleton_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h22/common-singleton/verify_p5_h22_common_singleton_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h22_common_singleton_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h22/common-singleton/audit_p5_h22_common_singleton_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes-hours (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h22/common-singleton",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h22_common_singleton_component_generic_obstruction.py",
+        "verify_p5_h22_common_singleton_component_generic_obstruction.py"
       ]
     },
     {
       "name": "Generic weighted H22 fibre empty: diagonal quadric",
-      "document": "P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h22/diagonal-quadric/P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "9d68e8fb67665bcc",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -913,18 +1057,26 @@
         "slope r transcendental; special slopes excluded"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h22_diagonal_quadric_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h22/diagonal-quadric/verify_p5_h22_diagonal_quadric_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h22_diagonal_quadric_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h22/diagonal-quadric/audit_p5_h22_diagonal_quadric_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes-hours (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h22/diagonal-quadric",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h22_diagonal_quadric_component_generic_obstruction.py",
+        "verify_p5_h22_diagonal_quadric_component_generic_obstruction.py"
       ]
     },
     {
       "name": "Generic weighted H22 fibre empty: directed zero divisor triangle components",
-      "document": "P5_H22_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h22/directed-zero-divisor-triangle-components/P5_H22_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "c24d246ef284f21b",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -933,13 +1085,21 @@
         "slope r transcendental; special slopes excluded"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h22_directed_zero_divisor_triangle_components_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h22/directed-zero-divisor-triangle-components/verify_p5_h22_directed_zero_divisor_triangle_components_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h22_directed_zero_divisor_triangle_components_generic_obstruction.py",
+      "independent_audit": "claims/p5/h22/directed-zero-divisor-triangle-components/audit_p5_h22_directed_zero_divisor_triangle_components_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes-hours (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h22/directed-zero-divisor-triangle-components",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H22_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h22_directed_zero_divisor_triangle_components_generic_obstruction.py",
+        "verify_p5_h22_directed_zero_divisor_triangle_components_generic_obstruction.py"
       ]
     },
     {
@@ -972,7 +1132,7 @@
     },
     {
       "name": "Generic weighted H22 fibre empty: disjoint secant",
-      "document": "P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h22/disjoint-secant/P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "dd9ec7910e645df8",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -981,18 +1141,26 @@
         "slope r transcendental; special slopes excluded"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h22_disjoint_secant_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h22/disjoint-secant/verify_p5_h22_disjoint_secant_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h22_disjoint_secant_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h22/disjoint-secant/audit_p5_h22_disjoint_secant_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes-hours (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h22/disjoint-secant",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h22_disjoint_secant_component_generic_obstruction.py",
+        "verify_p5_h22_disjoint_secant_component_generic_obstruction.py"
       ]
     },
     {
       "name": "Generic weighted H22 fibre empty: eisenstein norm",
-      "document": "P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h22/eisenstein-norm/P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "d9b4d5a14082c963",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -1001,13 +1169,21 @@
         "slope r transcendental; special slopes excluded"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h22_eisenstein_norm_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h22/eisenstein-norm/verify_p5_h22_eisenstein_norm_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h22_eisenstein_norm_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h22/eisenstein-norm/audit_p5_h22_eisenstein_norm_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes-hours (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h22/eisenstein-norm",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h22_eisenstein_norm_component_generic_obstruction.py",
+        "verify_p5_h22_eisenstein_norm_component_generic_obstruction.py"
       ]
     },
     {
@@ -1032,7 +1208,7 @@
     },
     {
       "name": "Generic weighted H22 fibre empty: equal support common factor",
-      "document": "P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h22/equal-support-common-factor/P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "692f3eaf86f288ce",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -1041,13 +1217,21 @@
         "slope r transcendental; special slopes excluded"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h22_equal_support_common_factor_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h22/equal-support-common-factor/verify_p5_h22_equal_support_common_factor_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h22_equal_support_common_factor_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h22/equal-support-common-factor/audit_p5_h22_equal_support_common_factor_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes-hours (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h22/equal-support-common-factor",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h22_equal_support_common_factor_component_generic_obstruction.py",
+        "verify_p5_h22_equal_support_common_factor_component_generic_obstruction.py"
       ]
     },
     {
@@ -1093,7 +1277,7 @@
     },
     {
       "name": "Generic weighted H22 fibre empty: full support tangent",
-      "document": "P5_H22_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h22/full-support-tangent/P5_H22_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "97415e74c5fe15c0",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -1102,18 +1286,26 @@
         "slope r transcendental; special slopes excluded"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h22_full_support_tangent_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h22/full-support-tangent/verify_p5_h22_full_support_tangent_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h22_full_support_tangent_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h22/full-support-tangent/audit_p5_h22_full_support_tangent_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes-hours (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h22/full-support-tangent",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H22_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h22_full_support_tangent_component_generic_obstruction.py",
+        "verify_p5_h22_full_support_tangent_component_generic_obstruction.py"
       ]
     },
     {
       "name": "Generic weighted H22 fibre empty: mixed orientation",
-      "document": "P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h22/mixed-orientation/P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "7c584d4a42d8087b",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -1122,13 +1314,21 @@
         "slope r transcendental; special slopes excluded"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h22_mixed_orientation_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h22/mixed-orientation/verify_p5_h22_mixed_orientation_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h22_mixed_orientation_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h22/mixed-orientation/audit_p5_h22_mixed_orientation_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes-hours (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h22/mixed-orientation",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h22_mixed_orientation_component_generic_obstruction.py",
+        "verify_p5_h22_mixed_orientation_component_generic_obstruction.py"
       ]
     },
     {
@@ -1153,7 +1353,7 @@
     },
     {
       "name": "Generic weighted H22 fibre empty: six dimensional",
-      "document": "P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h22/six-dimensional/P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "6ad6eda7badfe454",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -1162,13 +1362,21 @@
         "slope r transcendental; special slopes excluded"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h22_six_dimensional_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h22/six-dimensional/verify_p5_h22_six_dimensional_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h22_six_dimensional_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h22/six-dimensional/audit_p5_h22_six_dimensional_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes-hours (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h22/six-dimensional",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h22_six_dimensional_component_generic_obstruction.py",
+        "verify_p5_h22_six_dimensional_component_generic_obstruction.py"
       ]
     },
     {
@@ -1193,7 +1401,7 @@
     },
     {
       "name": "Generic weighted H22 fibre empty: transverse common factor",
-      "document": "P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h22/transverse-common-factor/P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "fe9e5692a1bcd6f5",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -1202,18 +1410,26 @@
         "slope r transcendental; special slopes excluded"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h22_transverse_common_factor_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h22/transverse-common-factor/verify_p5_h22_transverse_common_factor_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h22_transverse_common_factor_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h22/transverse-common-factor/audit_p5_h22_transverse_common_factor_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes-hours (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h22/transverse-common-factor",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h22_transverse_common_factor_component_generic_obstruction.py",
+        "verify_p5_h22_transverse_common_factor_component_generic_obstruction.py"
       ]
     },
     {
       "name": "Generic weighted H22 fibre empty: two rank two spoke mixed star",
-      "document": "P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document": "claims/p5/h22/two-rank-two-spoke-mixed-star/P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "document_sha256_16": "a591525420657efe",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -1222,13 +1438,21 @@
         "slope r transcendental; special slopes excluded"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h22/two-rank-two-spoke-mixed-star/verify_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h22/two-rank-two-spoke-mixed-star/audit_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes-hours (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h22/two-rank-two-spoke-mixed-star",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py",
+        "verify_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py"
       ]
     },
     {

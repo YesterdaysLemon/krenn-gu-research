@@ -5,7 +5,7 @@
 This is an exact characteristic-zero obstruction on the generic
 diagonal-source orbit of the six-dimensional pure-compression
 component proved in
-[`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](claims/p4/components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md).
+[`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](../../../p4/components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md).
 
 Restoring the source-torus slope changes the two `H22` neighbors into
 weighted diagonal-hyperplane pencils.  Generically:
@@ -43,7 +43,7 @@ D_23^r(q)=(q_0,q_1,r q_2+q_3,q_4).                  (1)
 
 The slope `r` belongs in the component function field.  Setting `r=1`
 too early gives the valid but exceptional equal-weight boundary in
-[`P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md`](P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md);
+[`P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md`](../../../../P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md);
 it does not represent the generic orbit.
 
 ## Apolar basis and markings
@@ -210,8 +210,8 @@ reduction to the other certified pure components.
 Run
 
 ```text
-python verify_p5_h22_six_dimensional_component_generic_obstruction.py
-python audit_p5_h22_six_dimensional_component_generic_obstruction.py
+python claims/p5/h22/six-dimensional/verify_p5_h22_six_dimensional_component_generic_obstruction.py
+python claims/p5/h22/six-dimensional/audit_p5_h22_six_dimensional_component_generic_obstruction.py
 ```
 
 The primary verifier reconstructs (2), computes both exact

@@ -127,8 +127,8 @@ global graph conjecture.
 Run:
 
 ```text
-uv run --with sympy python verify_p5_h22_transverse_common_factor_component_generic_obstruction.py
-uv run --with sympy python audit_p5_h22_transverse_common_factor_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h22/transverse-common-factor/verify_p5_h22_transverse_common_factor_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h22/transverse-common-factor/audit_p5_h22_transverse_common_factor_component_generic_obstruction.py
 ```
 
 The primary verifier reconstructs the component rows, pure coefficient,

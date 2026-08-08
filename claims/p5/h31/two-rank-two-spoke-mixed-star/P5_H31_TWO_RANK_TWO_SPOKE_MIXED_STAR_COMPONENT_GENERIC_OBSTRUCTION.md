@@ -9,15 +9,15 @@ mixed-star component is empty for `H31`.
 Together with the earlier component theorems, this closed all ten component
 orbits certified at this checkpoint.  The later equal-support common-factor
 triangle has supplied an eleventh component in
-[`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md),
+[`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](../../../../P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md),
 whose generic marked `H31` fibre is subsequently closed in
-[`P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](../equal-support-common-factor/P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
 That later theorem is not part of the present proof.  This theorem also does
 not close the tenth component's special parameter/projective boundary, its
 weighted `H22` fibre, component exhaustiveness, or the global Krenn--Gu prize
 problem.
 
-![The mixed-star exceptional graph](research_figures/p4_two_rank_two_spoke_mixed_star.png)
+![The mixed-star exceptional graph](../../../../research_figures/p4_two_rank_two_spoke_mixed_star.png)
 
 ## The toric component and its marked bases
 
@@ -223,10 +223,10 @@ Run:
 
 ```text
 python \
-  verify_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py
+  claims/p5/h31/two-rank-two-spoke-mixed-star/verify_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py
 
 python \
-  audit_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py
+  claims/p5/h31/two-rank-two-spoke-mixed-star/audit_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py
 ```
 
 The primary verifier reconstructs (1)--(5), proves all four global identities

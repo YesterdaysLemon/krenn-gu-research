@@ -2,6 +2,17 @@
 """Independent modular audit of the tenth-component generic H31 obstruction.
 
 Imports nothing from the primary verifier.  Rebuilds the concentrated bases
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+ROOT = REPO_ROOT
+
 from the raw working-note planes with its own dynamic-programming permanent,
 then, at two finite-field parameter samples:
 

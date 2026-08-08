@@ -22,7 +22,7 @@ INPUTS = tuple(ROOT / name for name in (
     "P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md",
     "P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_VERIFICATION.md",
     "p5_h22_common_kernel_vertical_triangle_component_generic_certificate.json",
-    "P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
+    "claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
 ))
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))

@@ -9,14 +9,14 @@ component is empty for `H31`.
 Consequently all thirteen currently certified pure-`P_4` component orbits
 are generically closed for `H31`.  The new component's weighted `H22` fibre
 is subsequently proved empty in
-[`P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](../../h22/eisenstein-norm/P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
 Special parameter/projective boundaries, component exhaustiveness, and the
 global Krenn--Gu conjecture remain open.
 
 ## Intrinsic rows on the norm quadric
 
 Use the normal form from
-[`P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md`](P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md):
+[`P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md`](../../../../P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md):
 
 ```text
 a=X_0+X_1,       c=X_0-X_1,
@@ -136,8 +136,8 @@ consequence of (9), because it is a different projection incidence.
 Run:
 
 ```text
-uv run --with sympy python verify_p5_h31_eisenstein_norm_component_generic_obstruction.py
-uv run --with sympy python audit_p5_h31_eisenstein_norm_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/eisenstein-norm/verify_p5_h31_eisenstein_norm_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/eisenstein-norm/audit_p5_h31_eisenstein_norm_component_generic_obstruction.py
 ```
 
 The primary verifier proves (2)--(10) over `C(u,v)[h_0,h_1,h_2,h_3]`.  The

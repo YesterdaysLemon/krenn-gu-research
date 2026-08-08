@@ -40,7 +40,7 @@ OUT = HERE / "extract_p5_h31_tenth_explicit_divisors.json"
 
 spec = importlib.util.spec_from_file_location(
     "tenth_verifier",
-    REPO / "verify_p5_h31_coincident_support_component_generic_obstruction.py",
+    REPO / "claims/p5/h31/coincident-support/verify_p5_h31_coincident_support_component_generic_obstruction.py",
 )
 tenth = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(tenth)

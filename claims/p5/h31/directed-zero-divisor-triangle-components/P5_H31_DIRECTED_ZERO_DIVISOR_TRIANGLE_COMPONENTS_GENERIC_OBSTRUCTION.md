@@ -16,7 +16,7 @@ and the global Krenn--Gu conjecture remain open.
 ## Pure bases and the marked extension problem
 
 Use the families in
-[`P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md`](P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md).
+[`P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md`](../../../../P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md).
 Write their pure-factor bases as `(alpha_i,beta_i)`, with
 
 ```text
@@ -161,8 +161,8 @@ on every special boundary.
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py
-python audit_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/directed-zero-divisor-triangle-components/verify_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py
+python claims/p5/h31/directed-zero-divisor-triangle-components/audit_p5_h31_directed_zero_divisor_triangle_components_generic_obstruction.py
 ```
 
 The primary verifier reconstructs all eight open Fitting projections over

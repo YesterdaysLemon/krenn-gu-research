@@ -2545,7 +2545,7 @@ strictly advance the finite frontier:
   weighted `23` direction gives the unit ideal over `C(u,v,rho)`.  Off one
   linear pivot divisor, three of those binomials visibly contradict
   `2(u-1)(v-1)!=0`:
-  [`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+  [`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/two-rank-two-spoke-mixed-star/P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 - the original first component is now rewritten as an apolar triangle bundle.
   Three fixed planes have relation-rank pattern `(2,1,1)` and only their
   all-kernel/all-active degree-three products survive.  The fourth plane is
@@ -2585,7 +2585,7 @@ strictly advance the finite frontier:
   deleted coordinate, while the all-active row survives in the cokernel.
   The shared exact zero divisor makes two of the four inclusions identically
   zero and the other two explicit standard-basis combinations:
-  [`P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+  [`P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/equal-support-common-factor/P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
 - the same component's generic weighted `H22` fibre is empty by an even
   shorter identity.  Under arbitrary source scalings and homogeneous merge
   weights, two kernel rows saturate the merged and fifth channels.  The
@@ -2593,7 +2593,7 @@ strictly advance the finite frontier:
   `p*t2*(-t3)+p*t3*t2=0`, the exact-zero-divisor relation
   `(X2+X3)(X2-X3)=0`.  Thus one required binary neighbour always has zero
   all-kernel diagonal, simultaneously in every marking and weighted slope:
-  [`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+  [`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/equal-support-common-factor/P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
 - the remaining transverse common-factor polarity sheet detects a twelfth
   pure-`P_4` component orbit.  If `s,t` are the complementary binary parts
   of the synchronized active row and common kernel, their determinant
@@ -2614,13 +2614,13 @@ strictly advance the finite frontier:
   mixed module for every deleted coordinate, while the all-active diagonal
   survives.  The reduced module sizes are `(7,7,8,8)`, so all twelve
   certified components are generically closed for `H31`:
-  [`P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+  [`P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/transverse-common-factor/P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
   Its generic weighted `H22` fibre is empty by a shorter binary-polarity
   identity.  The repeated kernel rows saturate the merged/fifth channels and
   leave the residual permanent
   `(-t2)*(k*t3)+(k*t3)*t2=0`.  Thus all twelve certified components are now
   generically closed for both marked types:
-  [`P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+  [`P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/transverse-common-factor/P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
 - the dense common-kernel/kernel-leaf orientation of the same `(2,1,1)`
   triangle is empty.  After exact-pair synchronization, its seven
   kernel-rich cubics reduce to three columns.  Four maximal minors force the
@@ -2654,14 +2654,14 @@ strictly advance the finite frontier:
   while the all-active classes survive.  Thus all thirteen components
   certified at that checkpoint
   components are generically closed for `H31`:
-  [`P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
+  [`P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/eisenstein-norm/P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
   Its weighted `H22` fibre is empty as well.  On the full polynomial ring in
   weighted slope, markings, and extension entries, the product of the two
   diagonal coefficients belongs to the fourteen-generator mixed ideal; the
   same holds on the projective infinite-slope chart.  Thus every mixed-zero
   extension loses at least one binary diagonal, and all thirteen components
   then known are generically closed for both marked types:
-  [`P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
+  [`P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/eisenstein-norm/P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
   Support-one common zero divisors and lower-pair-rank strata remained at
   that checkpoint.
 - the unequal-complement continuation of the same active/active orientation
@@ -2843,7 +2843,7 @@ strictly advance the finite frontier:
   marked mode swap, and on the three prototype extension pencils the same
   two marked minors have gcd `R_j*A_j*B_j`, with every `R_j` a nonzero
   element of `C(p,q)`.  Hence every genuine neighbour has marked rank four:
-  [`P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md).
+  [`P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/full-support-tangent/P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md).
 - component fourteen's complete generic weighted `H22` fibre is empty too.
   Eliminating each finite slope confines common markings to two
   mode-symmetric rational curves.  Along a prototype curve the mixed kernel
@@ -2853,7 +2853,7 @@ strictly advance the finite frontier:
   incidence is empty, while slope infinity is literally the already-closed
   component-fourteen `H31` sheet.  Thus both fifth-coordinate partition
   types are generically excluded:
-  [`P5_H22_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md).
+  [`P5_H22_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/full-support-tangent/P5_H22_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md).
 - the support-two polar flags do not supply component fifteen.  An explicit
   one-parameter Pluecker degeneration starts in the earlier six-dimensional
   lower-pair component, scales the two block coordinates by `epsilon`, and
@@ -2887,7 +2887,7 @@ strictly advance the finite frontier:
   Thus every genuine binary neighbour has marked rank four.  All seventeen
   known pure-`P4` components are now generically closed for `H31`, while
   the weighted `H22` side is closed in the next theorem:
-  [`P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
+  [`P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/disjoint-secant/P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
 - component fifteen's complete generic weighted `H22` fibre is empty too.
   Retaining the finite weight in the Fitting projection leaves the same
   single marking section.  Away from the two isotropic weights, three
@@ -2896,7 +2896,7 @@ strictly advance the finite frontier:
   binary ideals, and weight infinity is the preceding `H31` deletion.
   Consequently all seventeen known pure-`P4` components are now generically
   closed for both `H31` and `H22`:
-  [`P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
+  [`P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/disjoint-secant/P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
 - the overlapping `1+3` secant center creates no sixteenth component.  Its
   two cross-product catalecticants are rank-two stars whose radical planes
   meet in one line.  In an adapted basis, opposite-plane purity has
@@ -3056,7 +3056,7 @@ strictly advance the finite frontier:
   historical construction package is retained as `REFUTED` because its
   advertised stacked minor fails exact replay.  Other special/projective
   boundaries remain open:
-  [`P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md),
+  [`P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/common-kernel-vertical-triangle/P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md),
   [`P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md),
   [`P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_OBSTRUCTION_VERIFICATION.md),
   [`P5_H22_COMPONENT19_Q0_PHI_ENDPOINTS_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_Q0_PHI_ENDPOINTS_OBSTRUCTION_VERIFICATION.md),
@@ -3268,7 +3268,7 @@ strictly advance the finite frontier:
   boundary/marking-pole intersections, and arbitrary
   ambient/source/projective degenerations remain separate; in particular,
   a `P5` leading term whose `P4` restriction vanishes is still unclassified:
-  [`P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
+  [`P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/coincident-support-rank-one-star/P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
   [`P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md),
   [`P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md`](P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md),
   [`P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md`](P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md), and
@@ -3309,8 +3309,8 @@ strictly advance the finite frontier:
   fifth-mode partition types.  The three later componentwise theorem pairs
   now extend the same generic joint `H31/H22` closure through component
   twenty-one; special/projective fibres remain separate:
-  [`P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md),
-  [`P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md).
+  [`P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/common-singleton/P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md),
+  [`P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md).
 - the two directed-triangle components are now generically closed for marked
   `H31`.  Over each component function field, the genuine-binary-neighbour
   projection has only eleven marked sheets in total: six points and one line
@@ -3320,7 +3320,7 @@ strictly advance the finite frontier:
   three residual minors `z0,z1,z2`, with its endpoint closed by one
   `A*B^2` minor.  Hence every genuine neighbour makes a one-marked map have
   rank four, excluding an `H31` lift on components sixteen and seventeen:
-  [`P5_H31_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md`](P5_H31_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md).
+  [`P5_H31_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md`](claims/p5/h31/directed-zero-divisor-triangle-components/P5_H31_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md).
 - the same two components are now generically closed for weighted `H22` as
   well.  Translating the two weighted contractions into open Fitting
   projections makes the support-star marking loci disjoint already at the
@@ -3330,7 +3330,7 @@ strictly advance the finite frontier:
   gcds, and two alternate minors close every exceptional slope without
   division.  Hence both fifth-coordinate partition types, `H31` and `H22`,
   have empty generic fibre over components sixteen and seventeen:
-  [`P5_H22_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md`](P5_H22_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md).
+  [`P5_H22_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md`](claims/p5/h22/directed-zero-divisor-triangle-components/P5_H22_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md).
 - a gauge audit had withdrawn three overstrong follow-on claims.  Full row
   `GL_2` moves the purity-fixed kernel line; only Borel row gauge is
   legal.  The historical withdrawn files remain conspicuously labeled, while
@@ -3422,7 +3422,7 @@ strictly advance the finite frontier:
   all seven component orbits certified at that checkpoint are generically
   closed, while component exhaustiveness and special parameter/slope divisors
   remained at that checkpoint:
-  [`P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md).
+  [`P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/diagonal-quadric/P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md).
 - a disjoint-support mixed star supplies an eighth certified
   pure-`P_4` component orbit.  Normalize its three rank-one
   zero-product supports to `{01,01,23}`.  The pure condition is the
@@ -3453,7 +3453,7 @@ strictly advance the finite frontier:
   survivors a mode-zero minor is
   `+/-f*(b*f+1)*(1-a^2*f^2)/(a^2*f+b)*A*B^2`, so every genuine binary
   extension has rank four:
-  [`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+  [`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/disjoint-mixed-star/P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
   Its generic weighted `H22` incidence is now empty as well.  Passing
   first to the Fitting rank locus turns `D_23^r` into the marking line
   `t_1=t_2=t_3=0` and `D_01^r` into an exact degree-five scheme over
@@ -4121,10 +4121,10 @@ are:
 - [`P5_H31_SECONDARY_GATE_EXCLUSION.md`](P5_H31_SECONDARY_GATE_EXCLUSION.md)
 - [`P5_H31_DIAGONAL_QUADRIC_NORMALIZATION_BOUNDARY_OBSTRUCTION.md`](P5_H31_DIAGONAL_QUADRIC_NORMALIZATION_BOUNDARY_OBSTRUCTION.md)
 - [`P5_H31_DIAGONAL_QUADRIC_OUTER_BOUNDARY_OBSTRUCTION.md`](P5_H31_DIAGONAL_QUADRIC_OUTER_BOUNDARY_OBSTRUCTION.md)
-- [`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
-- [`P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md)
-- [`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md)
-- [`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/disjoint-mixed-star/P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/equal-support-common-factor/P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/equal-support-common-factor/P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/two-rank-two-spoke-mixed-star/P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
 - [`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
 - [`P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md`](claims/p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md)
 - [`P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md`](claims/p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md)
@@ -4737,10 +4737,10 @@ the essential remaining case.
 - [`P4_SPLIT_PAIR_PURE_COMPONENT.md`](claims/p4/components/split-pair/P4_SPLIT_PAIR_PURE_COMPONENT.md)
 - [`P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md`](claims/p4/components/single-word-quadrilateral/P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md)
 - [`P4_INOUT_PATH_STRATUM_WORKING_NOTE.md`](P4_INOUT_PATH_STRATUM_WORKING_NOTE.md)
-- [`P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md)
-- [`P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md)
-- [`P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md)
-- [`P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/all-rank-one-triangle/P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/all-rank-one-triangle/P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/coincident-support/P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/coincident-support/P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md)
 - [`P5_H31_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md)
 - [`P5_H22_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md)
 - [`P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`](P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md)
@@ -4830,10 +4830,10 @@ uv run --with sympy python verify_five_root_tight_blocker_p5_extraction.py
 python audit_five_root_tight_blocker_p5_extraction.py
 uv run --with sympy python verify_p4_common_singleton_component.py
 python audit_p4_common_singleton_component.py
-uv run --with sympy python verify_p5_h31_common_singleton_component_generic_obstruction.py
-python audit_p5_h31_common_singleton_component_generic_obstruction.py
-uv run --with sympy python verify_p5_h22_common_singleton_component_generic_obstruction.py
-python audit_p5_h22_common_singleton_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/common-singleton/verify_p5_h31_common_singleton_component_generic_obstruction.py
+python claims/p5/h31/common-singleton/audit_p5_h31_common_singleton_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h22/common-singleton/verify_p5_h22_common_singleton_component_generic_obstruction.py
+python claims/p5/h22/common-singleton/audit_p5_h22_common_singleton_component_generic_obstruction.py
 python verify_five_root_torus_resultant_dichotomy.py
 python audit_five_root_torus_resultant_dichotomy.py
 python verify_five_root_no_torus_codimension_two.py

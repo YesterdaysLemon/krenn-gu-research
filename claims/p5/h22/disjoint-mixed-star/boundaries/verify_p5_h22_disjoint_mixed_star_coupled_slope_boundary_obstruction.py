@@ -19,6 +19,11 @@ from krenn_gu.bootstrap import (  # noqa: E402
 )
 
 REPO_ROOT, HERE = bootstrap(__file__, also=[".."])
+
+# Stage 9 moved the H22 mixed-orientation generic package into
+# claims/p5/h22/mixed-orientation/; expose it through the shared
+# helper so the bare-name import below resolves.
+expose_claim_package(REPO_ROOT, "claims/p5/h22/mixed-orientation")
 # The disjoint-mixed-star P4 component package moved in Stage 3;
 # expose it through the shared helper (Stage 4 consolidation of the
 # Stage 3 per-importer shims) so the bare-name import below

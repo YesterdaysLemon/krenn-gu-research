@@ -5,7 +5,7 @@
 This is an exact characteristic-zero obstruction on the generic
 diagonal-source orbit of the diagonal-quadric pure-`P_4` component
 proved in
-[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md).
+[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](../../../p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md).
 
 For each of the weighted diagonal directions `D01` and `D23`, the
 generic binary `H22` extension incidence is empty.  The proof replaces
@@ -17,7 +17,7 @@ together with properness, excludes the generic incidence.
 Consequently generic weighted `H22` incidence is empty on all seven
 component orbits certified at this checkpoint.  A disjoint-support
 mixed-star eighth component has since been certified in
-[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](claims/p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md);
+[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](../../../p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md);
 its generic weighted `H22` incidence is not covered here.
 
 This does **not** classify all pure-`P_4` components, close special
@@ -261,10 +261,10 @@ Run:
 
 ```text
 python \
-  verify_p5_h22_diagonal_quadric_component_generic_obstruction.py
+  claims/p5/h22/diagonal-quadric/verify_p5_h22_diagonal_quadric_component_generic_obstruction.py
 
 python \
-  audit_p5_h22_diagonal_quadric_component_generic_obstruction.py
+  claims/p5/h22/diagonal-quadric/audit_p5_h22_diagonal_quadric_component_generic_obstruction.py
 ```
 
 The primary verifier reconstructs (1)--(5), the exact extension maps,

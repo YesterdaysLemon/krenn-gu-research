@@ -743,7 +743,7 @@ component lower bound to eleven.
 
 The tenth component's generic `H31` obstruction adds a module-theoretic
 translation:
-[`P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h31/two-rank-two-spoke-mixed-star/P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 The four marking parameters form an affine chart on `(P^1)^4`; the two
 diagonal coefficient rows are opposite decomposable vertices of the binary
 Segre tensor cube.  A binary neighbor would be an intersection of the
@@ -789,7 +789,7 @@ weighted lift.
 The eleventh component shows that the module translation becomes still
 sharper when the exceptional triangle is built from an exact zero-divisor
 pair.  Its generic marked `H31` theorem is
-[`P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h31/equal-support-common-factor/P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
 Over the full marking ring `C(p,q,r)[h0,h1,h2,h3]`, the all-kernel diagonal
 row lies in the mixed row module for every deleted coordinate, whereas the
 all-active diagonal has nonzero normal form.  For the two shared-support
@@ -808,7 +808,7 @@ rank test.
 
 The weighted `H22` continuation answers that question more directly than
 expected:
-[`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h22/equal-support-common-factor/P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
 After arbitrary diagonal source scaling and an arbitrary homogeneous merge
 of `X0,X1`, the repeated kernel rows `a,a` are supported only on the merged
 and fifth target channels.  They saturate that two-channel cut.  The remaining
@@ -834,7 +834,7 @@ closed for weighted `H22`; the tenth component's marking divisors remained.
 
 Those divisors are now closed by a translation from marked decompositions to
 a fixed-vertex Segre join:
-[`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h22/two-rank-two-spoke-mixed-star/P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 If `C_w` are the canonical binary tensor coordinates and the active rows move
 by `beta_i -> beta_i+h_i alpha_i`, then every coordinate except the free
 all-active `C_1111` must satisfy
@@ -900,7 +900,7 @@ fibre was not yet classified at that checkpoint.
 
 The twelfth component's `H31` side is now closed by the same module language
 that succeeded on the tenth and eleventh components:
-[`P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h31/transverse-common-factor/P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
 The exact-pair block makes the first two all-kernel diagonals identically
 zero.  The other two are supported in four standard-basis summands of the
 mixed presentation module.  Polynomial row reduction over the entire
@@ -915,7 +915,7 @@ certified pure components are now generically closed for `H31`; the new
 generic known-component frontier is its weighted `H22` fibre.
 
 That weighted fibre collapses to the polarity involution itself:
-[`P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h22/transverse-common-factor/P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
 The repeated rows `a,a` saturate the merged/fifth channels.  The residual
 two-channel matrix has rows `(-t2,k*t3)` and `(t2,k*t3)`, so its permanent
 vanishes.  Equivalently,
@@ -1007,7 +1007,7 @@ frontier.
 
 The `H31` side of that reopened frontier is now closed by combining the
 quadric's rationality with presentation-module geometry:
-[`P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h31/eisenstein-norm/P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
 Projection from a rational point gives a dominant two-parameter chart of the
 norm quadric, so the extension problem lives over the honest rational
 function field `C(u,v)`, without an algebraic coefficient extension.  In the
@@ -1027,7 +1027,7 @@ component question.
 
 That final generic fibre is now closed by changing from module membership to
 a reducible scheme containment:
-[`P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h22/eisenstein-norm/P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
 For the weighted `01` projection, the fourteen mixed coefficients define an
 extension scheme `V(I_mix)`.  Neither diagonal has to vanish uniformly on
 every slope divisor.  Instead, exact ideal reduction proves
@@ -1281,7 +1281,7 @@ exceptional graph acquires extra edges or a lower-rank pair.
 
 The disjoint-secant component's marked `H31` fibre is now empty over its
 generic point:
-[`P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h31/disjoint-secant/P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
 The key invariant-theory move is to divide the six-parameter flag family by
 the three-dimensional diagonal source torus.  The surviving moduli are
 `p=m/lambda`, `q=lambda*n`, and `rho`; all four deleted-coordinate Fitting
@@ -1292,7 +1292,7 @@ Fitting support is a reduced section and the marked-rank degeneracy divisor
 has no residual point on its `P^1` fibre.
 
 The weighted continuation closes component fifteen as well:
-[`P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h22/disjoint-secant/P5_H22_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md).
 Retaining the weight `u` in the elimination target proves that the finite
 Fitting support is the same constant marking section, with no vertical slope
 component.  Over its extension `P^1`, three marked minors reduce to the

@@ -10,7 +10,7 @@ Together with the earlier component theorems, all eleven currently certified
 pure-`P_4` component orbits are now generically closed for `H31`.  This does
 not by itself close the eleventh component's weighted `H22` fibre; that fibre
 is subsequently closed by the direct exact-zero-divisor identity in
-[`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](../../h22/equal-support-common-factor/P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
 Special parameter/projective boundaries, component exhaustiveness, and the
 global Krenn--Gu conjecture remain open.
 
@@ -30,7 +30,7 @@ K=C(p,q,r).
 ```
 
 The four planes from
-[`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md)
+[`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](../../../../P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md)
 are
 
 ```text
@@ -209,7 +209,7 @@ minor: it holds over the whole marking chart.
 
 The theorem closes only the generic `H31` fibre of the eleventh component.
 The suggested exact-zero-divisor continuation succeeds in
-[`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md):
+[`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](../../h22/equal-support-common-factor/P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md):
 one weighted binary projection has identically zero all-kernel diagonal by a
 two-channel permanent cancellation.  That later result is not part of the
 present proof.
@@ -223,8 +223,8 @@ further pure-`P_4` components and the global graph problem also remain open.
 Run:
 
 ```text
-uv run --with sympy python verify_p5_h31_equal_support_common_factor_component_generic_obstruction.py
-uv run --with sympy python audit_p5_h31_equal_support_common_factor_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/equal-support-common-factor/verify_p5_h31_equal_support_common_factor_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/equal-support-common-factor/audit_p5_h31_equal_support_common_factor_component_generic_obstruction.py
 ```
 
 The primary verifier reconstructs (2)--(8), proves (12) and (15), and

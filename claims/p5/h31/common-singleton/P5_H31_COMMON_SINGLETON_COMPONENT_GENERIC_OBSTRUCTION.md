@@ -10,7 +10,7 @@ Consequently the generic marked `H31` fibre over component eighteen is empty.
 The obstruction occurs before the fourteen mixed binary equations, so it
 requires neither elimination nor a Fitting cover.  This theorem closes the
 generic `H31` fibre only; the companion Hall argument closes weighted `H22`:
-[`P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](../../h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md).
 Neither theorem classifies the component's projective boundary, closes
 special fibres of the universal `P_5` incidence, or proves the
 arbitrary-order conjecture.
@@ -24,7 +24,7 @@ K=C(L,M,a,b,c)
 ```
 
 subject to the dense-open conditions in
-[`P4_COMMON_SINGLETON_COMPONENT.md`](P4_COMMON_SINGLETON_COMPONENT.md).  Put
+[`P4_COMMON_SINGLETON_COMPONENT.md`](../../../../P4_COMMON_SINGLETON_COMPONENT.md).  Put
 
 ```text
 e=(1,0,0,0),
@@ -130,8 +130,8 @@ projective boundary presentations of component eighteen.
 ## Replay
 
 ```text
-uv run --with sympy python verify_p5_h31_common_singleton_component_generic_obstruction.py
-python audit_p5_h31_common_singleton_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/common-singleton/verify_p5_h31_common_singleton_component_generic_obstruction.py
+python claims/p5/h31/common-singleton/audit_p5_h31_common_singleton_component_generic_obstruction.py
 ```
 
 The primary verifier reconstructs the rational component chart and its

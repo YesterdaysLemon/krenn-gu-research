@@ -263,7 +263,7 @@ coordinates two and three.  Four all-extension determinant identities,
 together with nonzero pure transverse entries, exclude every survivor.
 Its special parameter divisors and projective boundary remain:
 
-- [`P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/mixed-orientation/P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 A lower-pair-rank prime of the same determinantal calculation opens
 into a larger component.  Put `h=a+c-d` and take
@@ -298,7 +298,7 @@ pure tensor.  Each of coordinates zero, two, and three has one
 rational marking, and three selected mode-zero minors generate the
 unit ideal after inverting the two binary diagonals:
 
-- [`P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/six-dimensional/P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 The same component also supplies the first generic weighted `H22`
 obstruction.  The relevant neighboring source bases are diagonal
@@ -325,7 +325,7 @@ diagonals zero.  On every genuine direction, the mode-zero marked map
 has rank four: the saturated ideal of its `0127` and `0137` minors is
 unit.  Hence the binary sheet has no ternary lift:
 
-- [`P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/six-dimensional/P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 The mixed-orientation fivefold is now generically excluded from
 weighted `H22` as well.  Over `C(d,p,q,r)`, the weighted `01`
@@ -337,7 +337,7 @@ closed sheets.  On each sheet, the saturated ideal of mode-three
 minors `0267` and `0467` is unit, so every survivor has marked rank
 four:
 
-- [`P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/mixed-orientation/P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 All three split-cubic `1+3` components are now generically excluded
 from weighted `H22`.  Every weighted `01` binary projection is unit,
@@ -749,7 +749,7 @@ coordinates zero and one have unit genuine-neighbour projection;
 coordinates two and three each leave one marking, and the same
 mode-zero `0137` minor is `+/-R*A*B^2`, where
 `R=f*(b*f+1)*(1-a^2*f^2)/(a^2*f+b)`:
-[`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/disjoint-mixed-star/P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 The
 common-smooth-quadric semisimple
 case is no longer part of that completeness test: the remaining
@@ -770,7 +770,7 @@ as well.  Its proof identifies marked binary extension with the
 intersection of an extension eight-plane and a projective Segre join;
 one exact empty projective fibre and properness replace the unfinished
 generic quadratic-field elimination:
-[`P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/diagonal-quadric/P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md).
 Thus the seven previously certified component orbits are generically
 closed for weighted `H22`.  A disjoint-support mixed star has since
 produced an eighth component with irreducible normalized equation

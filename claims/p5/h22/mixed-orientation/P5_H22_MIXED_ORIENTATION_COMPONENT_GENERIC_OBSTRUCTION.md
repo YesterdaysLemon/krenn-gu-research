@@ -5,7 +5,7 @@
 This is an exact characteristic-zero obstruction on the generic
 diagonal-source orbit of the mixed-orientation pure-compression
 component proved in
-[`P4_MIXED_ORIENTATION_PURE_COMPONENT.md`](claims/p4/components/mixed-orientation/P4_MIXED_ORIENTATION_PURE_COMPONENT.md).
+[`P4_MIXED_ORIENTATION_PURE_COMPONENT.md`](../../../p4/components/mixed-orientation/P4_MIXED_ORIENTATION_PURE_COMPONENT.md).
 
 For the two weighted diagonal-hyperplane pencils required by `H22`:
 
@@ -233,9 +233,9 @@ Run
 
 ```text
 python \
-  verify_p5_h22_mixed_orientation_component_generic_obstruction.py
+  claims/p5/h22/mixed-orientation/verify_p5_h22_mixed_orientation_component_generic_obstruction.py
 
-python audit_p5_h22_mixed_orientation_component_generic_obstruction.py
+python claims/p5/h22/mixed-orientation/audit_p5_h22_mixed_orientation_component_generic_obstruction.py
 ```
 
 The primary verifier reconstructs (2), proves the eight exact

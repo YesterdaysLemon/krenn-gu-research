@@ -20,18 +20,19 @@ for _p in Path(__file__).resolve().parents:
     if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
         sys.path.insert(0, str(_p / "src"))
         break
-from krenn_gu.bootstrap import expose_claim_package  # noqa: E402
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
 
+REPO_ROOT, HERE = bootstrap(__file__)
 expose_claim_package(
-    Path(__file__).resolve().parent,
+    REPO_ROOT,
     "claims/p4/classifications/star/two-rank-two-spoke-mixed-star-component")
 from verify_p4_two_rank_two_spoke_mixed_star_component import family  # noqa: E402
 from verify_p5_h31_marked_basis_open_branch import mixed_matrix
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = REPO_ROOT
 THEOREM = (
-    ROOT
+    HERE
     / "P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
 COMPONENT = ROOT / "claims/p4/classifications/star/two-rank-two-spoke-mixed-star-component/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT.md"

@@ -10,12 +10,23 @@ from pathlib import Path
 
 import sympy as sp
 
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+ROOT = REPO_ROOT
+
 from analyze_p4_common_singleton_local_dimension import common_singleton_family
 from verify_p4_directed_zero_divisor_triangle_components import coefficients
 from verify_p5_h31_marked_basis_open_branch import mixed_matrix
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md"
+ROOT = REPO_ROOT
+THEOREM = HERE / "P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md"
 COMPONENT = ROOT / "P4_COMMON_SINGLETON_COMPONENT.md"
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 SAMPLE = (-3, -2, -1, -1, -1)

@@ -12,13 +12,24 @@ from pathlib import Path
 import sympy as sp
 
 
-ROOT = Path(__file__).resolve().parent
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+ROOT = REPO_ROOT
+
+ROOT = REPO_ROOT
 THEOREM = (
-    ROOT
+    HERE
     / "P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
 PRIMARY = (
-    ROOT
+    HERE
     / "verify_p5_h31_two_rank_two_spoke_mixed_star_component_generic_obstruction.py"
 )
 WORDS = tuple(itertools.product((0, 1), repeat=4))

@@ -13,21 +13,22 @@ import sympy as sp
 
 import sys
 
-from p5_high_coordinate_tree_chart_cegar import singular_command_with_timeout
-
 # The disjoint-mixed-star P4 component package moved in Stage 3;
 # expose it through the shared helper (Stage 4 consolidation of the
 # Stage 3 per-importer shims) so the bare-name import below
-# resolves.
+# resolves.  Stage 9 moved this verifier into
+# claims/p5/h31/disjoint-mixed-star/, so the helper now receives
+# the resolved repository root via bootstrap().
 for _p in Path(__file__).resolve().parents:
     if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
         sys.path.insert(0, str(_p / "src"))
         break
-from krenn_gu.bootstrap import expose_claim_package  # noqa: E402
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
 
+REPO_ROOT, HERE = bootstrap(__file__)
+from p5_high_coordinate_tree_chart_cegar import singular_command_with_timeout  # noqa: E402
 expose_claim_package(
-    Path(__file__).resolve().parent,
-    "claims/p4/components/disjoint-mixed-star")
+    REPO_ROOT, "claims/p4/components/disjoint-mixed-star")
 from verify_p4_disjoint_mixed_star_pure_component import (  # noqa: E402
     family, relation)
 from verify_p5_h31_marked_basis_open_branch import (
@@ -36,9 +37,9 @@ from verify_p5_h31_marked_basis_open_branch import (
 )
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = REPO_ROOT
 THEOREM = (
-    ROOT
+    HERE
     / "P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
 COMPONENT = (

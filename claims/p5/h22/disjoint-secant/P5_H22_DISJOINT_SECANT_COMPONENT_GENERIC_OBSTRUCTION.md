@@ -15,7 +15,7 @@ component exhaustiveness, and the global Krenn--Gu conjecture remain open.
 ## The three-modulus pure basis
 
 Work over `K=C(p,q,rho)` in the source-torus quotient and pure bases of
-[`P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md):
+[`P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md`](../../h31/disjoint-secant/P5_H31_DISJOINT_SECANT_COMPONENT_GENERIC_OBSTRUCTION.md):
 
 ```text
 a=(1,1,0,0),          a_bar=(1,-1,0,0),
@@ -148,9 +148,9 @@ arguments do not settle every special parameter boundary.
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_p5_h31_disjoint_secant_component_generic_obstruction.py
-uv run --with sympy python verify_p5_h22_disjoint_secant_component_generic_obstruction.py
-python audit_p5_h22_disjoint_secant_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/disjoint-secant/verify_p5_h31_disjoint_secant_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h22/disjoint-secant/verify_p5_h22_disjoint_secant_component_generic_obstruction.py
+python claims/p5/h22/disjoint-secant/audit_p5_h22_disjoint_secant_component_generic_obstruction.py
 ```
 
 The primary verifier works over `C(p,q,rho)` and proves the retained-slope

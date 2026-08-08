@@ -19,7 +19,7 @@ exhaustiveness, or the global Krenn--Gu conjecture.
 ## The intrinsic pure marking
 
 Use the normal form of
-[`P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md`](P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md):
+[`P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md`](../../../../P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md):
 
 ```text
 A=X0+X1,       Abar=X0-X1,
@@ -218,9 +218,9 @@ component boundary remain open.
 
 ```text
 uv run --with sympy python \
-  verify_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py
+  claims/p5/h31/common-kernel-vertical-triangle/verify_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py
 
-python audit_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py
+python claims/p5/h31/common-kernel-vertical-triangle/audit_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py
 ```
 
 The primary verifier reconstructs (1)--(4), checks all sixteen pure

@@ -8,6 +8,19 @@ import itertools
 import json
 from pathlib import Path
 
+import sys
+
+# Stage 9 moved the H22 mixed-orientation generic package into
+# claims/p5/h22/mixed-orientation/; expose it through the shared
+# helper so the bare-name import below resolves.
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import expose_claim_package  # noqa: E402
+
+expose_claim_package(
+    Path(__file__).resolve().parent, "claims/p5/h22/mixed-orientation")
 from audit_p5_h22_mixed_orientation_component_generic_obstruction import (
     determinant_mod,
     diagonal_row,

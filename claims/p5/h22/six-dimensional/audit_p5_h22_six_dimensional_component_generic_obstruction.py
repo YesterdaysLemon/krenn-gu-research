@@ -9,12 +9,23 @@ import json
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parent
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+ROOT = REPO_ROOT
+
+ROOT = REPO_ROOT
 THEOREM = (
-    ROOT / "P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md"
+    HERE / "P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
 PRIMARY = (
-    ROOT / "verify_p5_h22_six_dimensional_component_generic_obstruction.py"
+    HERE / "verify_p5_h22_six_dimensional_component_generic_obstruction.py"
 )
 SAMPLES = {
     7: (3, 5, 5, 2, 2),

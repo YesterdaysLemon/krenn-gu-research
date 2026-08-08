@@ -15,7 +15,7 @@ needed.
 At this checkpoint, ten of the eleven certified pure-`P_4` component orbits
 were generically closed for weighted `H22`; the tenth component remained.
 That final generic known-component fibre is subsequently closed by
-[`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../two-rank-two-spoke-mixed-star/P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 
 This theorem does not classify special pure-factor degenerations or the
 projective boundary of the eleventh component, prove component
@@ -32,7 +32,7 @@ R=r+1,           Q=1+qR.                            (1)
 ```
 
 For the component in
-[`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md),
+[`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](../../../../P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md),
 an intrinsic kernel/active marking is
 
 ```text
@@ -139,8 +139,8 @@ None of these finite component results is a global graph proof.
 Run:
 
 ```text
-uv run --with sympy python verify_p5_h22_equal_support_common_factor_component_generic_obstruction.py
-uv run --with sympy python audit_p5_h22_equal_support_common_factor_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h22/equal-support-common-factor/verify_p5_h22_equal_support_common_factor_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h22/equal-support-common-factor/audit_p5_h22_equal_support_common_factor_component_generic_obstruction.py
 ```
 
 The primary verifier reconstructs the component's intrinsic marking, checks

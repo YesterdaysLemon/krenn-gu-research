@@ -4,7 +4,7 @@
 
 This is an exact characteristic-zero theorem on a dense open subset of
 the mixed-orientation component proved in
-[`P4_MIXED_ORIENTATION_PURE_COMPONENT.md`](claims/p4/components/mixed-orientation/P4_MIXED_ORIENTATION_PURE_COMPONENT.md).
+[`P4_MIXED_ORIENTATION_PURE_COMPONENT.md`](../../../p4/components/mixed-orientation/P4_MIXED_ORIENTATION_PURE_COMPONENT.md).
 
 The complete marked-basis fibre over the generic point of that
 component has no `H31` lift.  The theorem does not close special
@@ -185,9 +185,9 @@ Run:
 
 ```text
 python \
-  verify_p5_h31_mixed_orientation_component_generic_obstruction.py
+  claims/p5/h31/mixed-orientation/verify_p5_h31_mixed_orientation_component_generic_obstruction.py
 
-python audit_p5_h31_mixed_orientation_component_generic_obstruction.py
+python claims/p5/h31/mixed-orientation/audit_p5_h31_mixed_orientation_component_generic_obstruction.py
 ```
 
 The primary verifier reconstructs (1)--(3), performs all four exact

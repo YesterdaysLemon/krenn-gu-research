@@ -258,8 +258,8 @@ def main() -> None:
         "all_pure_components_classified": False,
         "generic_P5_fibres_excluded_by_this_theorem": False,
         "generic_P5_companion_theorems": [
-            "P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
-            "P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
+            "claims/p5/h31/common-singleton/P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
+            "claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
         ],
         "global_conjecture_resolved": False,
         "theorem": THEOREM.name,

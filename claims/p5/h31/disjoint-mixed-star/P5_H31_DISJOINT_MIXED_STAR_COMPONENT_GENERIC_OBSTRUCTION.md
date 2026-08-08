@@ -4,7 +4,7 @@
 
 This is an exact characteristic-zero theorem on a dense open subset of
 the eighth pure-`P_4` component proved in
-[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](claims/p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
+[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](../../../p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
 
 The complete marked-basis fibre over the generic point of that
 component has no `H31` lift.  Thus all eight pure-component orbits
@@ -15,7 +15,7 @@ This does not close special parameter or projective boundary points,
 prove that the nine known components are exhaustive, or resolve the global
 prize problem.  The generic weighted `H22` fibre has since been closed
 in
-[`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../../h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 
 ## Component function field
 
@@ -187,10 +187,10 @@ Run:
 
 ```text
 python \
-  verify_p5_h31_disjoint_mixed_star_component_generic_obstruction.py
+  claims/p5/h31/disjoint-mixed-star/verify_p5_h31_disjoint_mixed_star_component_generic_obstruction.py
 
 python \
-  audit_p5_h31_disjoint_mixed_star_component_generic_obstruction.py
+  claims/p5/h31/disjoint-mixed-star/audit_p5_h31_disjoint_mixed_star_component_generic_obstruction.py
 ```
 
 The primary verifier reconstructs (1)--(4), performs all four exact

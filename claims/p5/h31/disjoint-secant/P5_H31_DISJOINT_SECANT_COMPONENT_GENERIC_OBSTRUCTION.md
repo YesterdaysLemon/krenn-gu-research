@@ -15,7 +15,7 @@ remain open.
 ## Three moduli, not six
 
 Use the notation of
-[`P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md`](claims/p4/classifications/pair-geometry/disjoint-secant-lower-pair/P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md).
+[`P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md`](../../../p4/classifications/pair-geometry/disjoint-secant-lower-pair/P4_DISJOINT_SECANT_LOWER_PAIR_COMPONENT.md).
 On the generic torus chart apply
 
 ```text
@@ -138,8 +138,8 @@ of the conjecture.
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_p5_h31_disjoint_secant_component_generic_obstruction.py
-python audit_p5_h31_disjoint_secant_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/disjoint-secant/verify_p5_h31_disjoint_secant_component_generic_obstruction.py
+python claims/p5/h31/disjoint-secant/audit_p5_h31_disjoint_secant_component_generic_obstruction.py
 ```
 
 The primary verifier works over `C(p,q,rho)` and proves the source-torus

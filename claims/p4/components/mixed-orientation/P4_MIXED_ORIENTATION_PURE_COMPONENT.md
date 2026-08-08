@@ -13,9 +13,9 @@ pair-product relations.
 
 This is a lower bound, not a classification.  The generic marked
 `H31` fibre has since been excluded in
-[`P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md);
+[`P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../p5/h31/mixed-orientation/P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md);
 the generic weighted `H22` incidence has since been excluded in
-[`P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../p5/h22/mixed-orientation/P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md).
 Its special parameter/projective boundary remains.  Nothing here
 settles all of `H22` or the global prize problem.
 

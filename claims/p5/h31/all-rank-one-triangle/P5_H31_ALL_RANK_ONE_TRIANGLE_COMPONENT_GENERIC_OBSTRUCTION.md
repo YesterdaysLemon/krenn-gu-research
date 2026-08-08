@@ -4,7 +4,7 @@
 
 This is an exact characteristic-zero theorem on a dense open subset of
 the ninth pure-`P_4` component proved in
-[`P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md`](claims/p4/components/all-rank-one-triangle/P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md).
+[`P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md`](../../../p4/components/all-rank-one-triangle/P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md).
 
 The complete marked-basis fibre over the generic point of that
 component has no `H31` lift.  Thus the first nine certified
@@ -19,7 +19,7 @@ This does not close special parameter or projective boundary points,
 prove the component census exhaustive, or resolve the global prize
 problem.  The companion generic weighted `H22` theorem for this
 component is
-[`P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](../../h22/all-rank-one-triangle/P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
 
 ## Component function field
 
@@ -244,9 +244,9 @@ conjecture remains unresolved.
 Run:
 
 ```text
-python verify_p5_h31_all_rank_one_triangle_component_generic_obstruction.py
+python claims/p5/h31/all-rank-one-triangle/verify_p5_h31_all_rank_one_triangle_component_generic_obstruction.py
 
-python audit_p5_h31_all_rank_one_triangle_component_generic_obstruction.py
+python claims/p5/h31/all-rank-one-triangle/audit_p5_h31_all_rank_one_triangle_component_generic_obstruction.py
 ```
 
 The primary verifier reconstructs (2)--(4) against the component

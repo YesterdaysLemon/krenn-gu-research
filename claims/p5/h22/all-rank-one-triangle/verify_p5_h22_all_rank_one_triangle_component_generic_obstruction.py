@@ -27,9 +27,19 @@ from pathlib import Path
 import sympy as sp
 
 
-ROOT = Path(__file__).resolve().parent
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+ROOT = REPO_ROOT
+expose_claim_package(REPO_ROOT, "claims/p4/components/all-rank-one-triangle")  # noqa: E402
+
+ROOT = REPO_ROOT
 THEOREM = (
-    ROOT
+    HERE
     / "P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
 COMPONENT = (

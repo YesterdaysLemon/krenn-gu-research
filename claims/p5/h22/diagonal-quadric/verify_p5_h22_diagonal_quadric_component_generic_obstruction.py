@@ -11,17 +11,28 @@ from pathlib import Path
 
 import sympy as sp
 
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+ROOT = REPO_ROOT
+
 from p5_high_coordinate_tree_chart_cegar import singular_command_with_timeout
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = REPO_ROOT
 THEOREM = (
-    ROOT / "P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md"
+    HERE / "P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
 COMPONENT = (
     ROOT / "claims" / "p4" / "components" / "diagonal-quadric"
     / "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md")
-WORKING_NOTE = ROOT / "P5_H22_DIAGONAL_QUADRIC_WORKING_NOTE.md"
+WORKING_NOTE = HERE / "P5_H22_DIAGONAL_QUADRIC_WORKING_NOTE.md"
 EIGHTH_COMPONENT = (
     ROOT / "claims" / "p4" / "components" / "disjoint-mixed-star"
     / "P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md")

@@ -18,6 +18,13 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO))
+sys.path.insert(0, str(REPO / "src"))
+from krenn_gu.bootstrap import expose_claim_package  # noqa: E402
+
+# Stage 9 moved the ninth component's H31 generic package into
+# claims/p5/h31/all-rank-one-triangle/; expose it through the shared
+# helper so the bare-name import below resolves.
+expose_claim_package(REPO, "claims/p5/h31/all-rank-one-triangle")
 
 import sympy as sp  # noqa: E402
 

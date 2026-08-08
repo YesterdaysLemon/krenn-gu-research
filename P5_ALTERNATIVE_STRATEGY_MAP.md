@@ -1048,7 +1048,7 @@ Its generic marked `H31` fibre is empty.  Function-field projection
 leaves four rational sheets, and exact all-extension determinants plus
 pure transverse entries exclude all of them:
 
-- [`P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/mixed-orientation/P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 The lower-pair-rank boundary contains a seventh component orbit, now
 of dimension six.  In its apolar normal form only
@@ -1069,7 +1069,7 @@ distinguished coordinate.  The other three coordinates have one
 rational marking each, all excluded by three-minor Fitting
 certificates:
 
-- [`P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/six-dimensional/P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 For `H22`, retaining the residual source-torus slope gives a complete
 generic component obstruction.  The weighted `01` pencil has no binary
@@ -1077,7 +1077,7 @@ neighbor.  The weighted `23` pencil has one rational marking sheet and
 a two-dimensional extension kernel, but every genuine direction makes
 one of two mode-zero marked minors nonzero:
 
-- [`P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/six-dimensional/P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 The mixed-orientation fivefold has a second generic weighted `H22`
 obstruction.  The weighted `01` pencil is killed by an exact
@@ -1087,7 +1087,7 @@ close the remaining `P^3`.  For the weighted `23` pencil, five
 low-degree eliminated marking relations give a three-closure cover,
 and the mode-three `0267/0467` Fitting ideal is unit on every closure:
 
-- [`P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/mixed-orientation/P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 The three split-cubic `1+3` branches give a unified third transport.
 All weighted `01` projections and the `L_3` weighted `23` projection
@@ -1120,7 +1120,7 @@ empty in both weighted directions: fifteen standard charts are unit,
 the last gives only the zero-vector base point, and the exceptional
 tangent five-space is disjoint.  Properness proves generic emptiness:
 
-- [`P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/diagonal-quadric/P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 Thus the seven previously certified component orbits are generically
 closed for weighted `H22`.  A disjoint-support mixed star has since
@@ -1137,7 +1137,7 @@ markings the same `0137` minor is `+/-R*A*B^2`, with
 `R=f*(bf+1)*(1-a^2*f^2)/(a^2*f+b)`, excluding every genuine binary
 extension:
 
-- [`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/disjoint-mixed-star/P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 Its generic weighted `H22` incidence is now empty.  The mixed-matrix
 Fitting locus is one marking line for `D_23^r` and an exact degree-five
@@ -1244,7 +1244,7 @@ diagonal.  Explicit global syzygy lines retain the nonzero all-beta diagonal,
 so this is an asymmetric cokernel statement rather than collapse of the
 extension map:
 
-- [`P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/two-rank-two-spoke-mixed-star/P5_H31_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 Its weighted `H22` analysis first reached a dense-open symbolic checkpoint.
 Cayley parameters turn the component law into `d=(1+uv)/(1-uv)` and give one
@@ -1259,7 +1259,7 @@ slope.  The selected determinantal divisors were left open at that checkpoint:
 They are now closed by changing from marking coordinates to the fixed-vertex
 Segre join:
 
-- [`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/two-rank-two-spoke-mixed-star/P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 On the nonzero all-kernel chart, the fifteen coordinates other than the free
 all-active coordinate form a Boolean rank-one array.  Its six quadratic and
@@ -1307,7 +1307,7 @@ and `-9/2` certify a smooth incidence point.  The sorted pair profile
 component.  The certified lower bound is now eleven component orbits, and
 its complete generic marked `H31` fibre is now empty:
 
-- [`P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/equal-support-common-factor/P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 For each deleted coordinate, the all-kernel binary diagonal belongs to the
 row module of the fourteen mixed rows over
@@ -1320,7 +1320,7 @@ generically closed for `H31`.
 The same component's generic weighted `H22` fibre is empty for a still more
 structural reason:
 
-- [`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/equal-support-common-factor/P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 For the weighted `01` projection, two identical-support kernel rows can only
 occupy the merged and fifth target channels.  The other two rows are forced
@@ -1362,7 +1362,7 @@ lower bound to twelve.
 The displayed two-parameter sheet is a dense normal form.  Its complete
 generic marked `H31` fibre is now empty:
 
-- [`P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/transverse-common-factor/P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 Over `C(r,k)[h0,h1,h2,h3]`, the all-kernel binary diagonal belongs to the
 fourteen-row mixed module for all four deleted coordinates, while the
@@ -1374,7 +1374,7 @@ both types was a historical eleven-component checkpoint.
 
 That last generic fibre is now closed by the binary-polarity cut:
 
-- [`P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/transverse-common-factor/P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 The repeated kernel rows `a,a` consume the merged and fifth channels in the
 weighted `01` neighbor.  The remaining two rows restrict to
@@ -1467,7 +1467,7 @@ former twelve-component generic-closure theorem is now historical.
 
 The thirteenth component's complete generic marked `H31` fibre is now empty:
 
-- [`P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/eisenstein-norm/P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 Projecting the norm quadric rationally from `(2,1,1,1)` gives the dominant
 function-field chart `C(u,v)`.  Over
@@ -1486,7 +1486,7 @@ known-component closure statement is restored at count thirteen.
 
 That weighted fibre is now closed scheme-theoretically:
 
-- [`P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/eisenstein-norm/P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 For the weighted `01` neighbor, let `I_mix` be the ideal of the fourteen
 mixed coefficients and `A,B` the two diagonal coefficients.  Over the full
@@ -1533,7 +1533,7 @@ The earlier
 quadratic-function-field experiments and their null outcomes remain
 recorded as provenance:
 
-- [`P5_H22_DIAGONAL_QUADRIC_WORKING_NOTE.md`](P5_H22_DIAGONAL_QUADRIC_WORKING_NOTE.md)
+- [`P5_H22_DIAGONAL_QUADRIC_WORKING_NOTE.md`](claims/p5/h22/diagonal-quadric/P5_H22_DIAGONAL_QUADRIC_WORKING_NOTE.md)
 
 The five primes in the mixed determinantal chart are exhausted: they
 map to the sixth component, the six-dimensional component, `L_2`, and

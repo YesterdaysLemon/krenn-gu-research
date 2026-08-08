@@ -4,14 +4,14 @@
 
 This is an exact characteristic-zero obstruction on the generic
 diagonal-source orbit of the ninth pure-`P_4` component proved in
-[`P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md`](claims/p4/components/all-rank-one-triangle/P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md).
+[`P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md`](../../../p4/components/all-rank-one-triangle/P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md).
 
 Restoring the source-torus slope turns the two `H22` neighbours into
 weighted diagonal-hyperplane pencils.  Generically both pencils have
 nonempty binary survivor sheets, and every survivor is excluded at
 ternary level: a relevant pure binary plane cannot be generic on this
 component in a hypothetical `H22` restriction.  Together with
-[`P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md)
+[`P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](../../h31/all-rank-one-triangle/P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md)
 this closes both generic local frames of the ninth certified orbit,
 so the first nine known pure-component orbits are now generically
 closed for `H31` and weighted `H22`.  The newly certified tenth
@@ -207,9 +207,9 @@ unresolved.
 Run:
 
 ```text
-python verify_p5_h22_all_rank_one_triangle_component_generic_obstruction.py
+python claims/p5/h22/all-rank-one-triangle/verify_p5_h22_all_rank_one_triangle_component_generic_obstruction.py
 
-python audit_p5_h22_all_rank_one_triangle_component_generic_obstruction.py
+python claims/p5/h22/all-rank-one-triangle/audit_p5_h22_all_rank_one_triangle_component_generic_obstruction.py
 ```
 
 The primary verifier reconstructs the family against the component

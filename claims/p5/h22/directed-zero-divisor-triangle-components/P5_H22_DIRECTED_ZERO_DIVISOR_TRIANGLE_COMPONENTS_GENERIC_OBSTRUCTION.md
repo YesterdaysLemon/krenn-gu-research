@@ -17,7 +17,7 @@ and the global Krenn--Gu conjecture remain open.
 ## From a graph lift to two Fitting incidences
 
 Use the pure-factor bases `(alpha_i,beta_i)` of
-[`P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md`](P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md),
+[`P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md`](../../../../P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md),
 with the path basis change
 
 ```text
@@ -201,8 +201,8 @@ seventeen known pure-`P_4` components exhaust the full pure locus.
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_p5_h22_directed_zero_divisor_triangle_components_generic_obstruction.py
-python audit_p5_h22_directed_zero_divisor_triangle_components_generic_obstruction.py
+uv run --with sympy python claims/p5/h22/directed-zero-divisor-triangle-components/verify_p5_h22_directed_zero_divisor_triangle_components_generic_obstruction.py
+python claims/p5/h22/directed-zero-divisor-triangle-components/audit_p5_h22_directed_zero_divisor_triangle_components_generic_obstruction.py
 ```
 
 The primary verifier eliminates the finite slopes, checks every finite and

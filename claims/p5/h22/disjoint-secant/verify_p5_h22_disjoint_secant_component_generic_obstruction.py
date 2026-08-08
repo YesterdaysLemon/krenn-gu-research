@@ -9,6 +9,20 @@ import subprocess
 
 import sympy as sp
 
+import sys
+from pathlib import Path
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+ROOT = REPO_ROOT
+expose_claim_package(REPO_ROOT, "claims/p5/h31/disjoint-secant")  # noqa: E402
+expose_claim_package(REPO_ROOT, "claims/p5/h22/full-support-tangent")  # noqa: E402
+
 from verify_p5_h31_disjoint_secant_component_generic_obstruction import (
     normalized_family,
     shifted_beta,

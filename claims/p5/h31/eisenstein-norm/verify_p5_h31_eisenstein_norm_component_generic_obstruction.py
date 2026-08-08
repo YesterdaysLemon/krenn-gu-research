@@ -11,14 +11,25 @@ from pathlib import Path
 
 import sympy as sp
 
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+ROOT = REPO_ROOT
+
 from verify_p5_h31_marked_basis_open_branch import mixed_matrix
 
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
 SINGULAR = ("wsl.exe", "--exec", "/usr/bin/Singular", "-q")
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md"
+ROOT = REPO_ROOT
+THEOREM = HERE / "P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md"
 COMPONENT = ROOT / "P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md"
 
 

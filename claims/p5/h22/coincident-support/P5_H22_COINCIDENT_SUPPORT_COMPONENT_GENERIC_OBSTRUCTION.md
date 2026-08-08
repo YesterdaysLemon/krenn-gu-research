@@ -5,7 +5,7 @@
 This is an exact characteristic-zero obstruction on the generic
 diagonal-source orbit of the six-dimensional coincident-support
 component proved in
-[`P4_INOUT_PATH_STRATUM_WORKING_NOTE.md`](P4_INOUT_PATH_STRATUM_WORKING_NOTE.md)
+[`P4_INOUT_PATH_STRATUM_WORKING_NOTE.md`](../../../../P4_INOUT_PATH_STRATUM_WORKING_NOTE.md)
 ("A tenth component through the singular walls") and certified by
 `branch_ambient_certificates.py`.
 
@@ -38,7 +38,7 @@ or the global prize problem.
 
 Use the concentrated pure-factor bases of the `H31` companion
 theorem
-[`P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md),
+[`P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](../../h31/coincident-support/P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md),
 with the working note's parameter `r` renamed `c` and
 
 ```text
@@ -158,8 +158,8 @@ boundary atlas is uniform here.
 ## Why this closes generic weighted `H22`
 
 By the frontier reduction
-([`P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md`](P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md),
-[`P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md`](P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md)
+([`P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md`](../../../../P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md),
+[`P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md`](../../../../P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md)
 (13)-(14)), an `H22` local family has `(a,b) != (0,0)`; `a != 0`
 forces a sharp weighted `D_01` extension of the pure binary plane and
 `b != 0` a sharp weighted `D_23` extension.  The first is impossible
@@ -222,8 +222,8 @@ by (3).  Both interior divisors are closed for weighted `H22`.
 Run
 
 ```text
-python verify_p5_h22_coincident_support_component_generic_obstruction.py
-python audit_p5_h22_coincident_support_component_generic_obstruction.py
+python claims/p5/h22/coincident-support/verify_p5_h22_coincident_support_component_generic_obstruction.py
+python claims/p5/h22/coincident-support/audit_p5_h22_coincident_support_component_generic_obstruction.py
 ```
 
 The primary verifier replays (1), the identity (3) with `k,r,t`

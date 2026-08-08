@@ -15,7 +15,7 @@ global Krenn--Gu conjecture remain open.
 ## The weighted `01` neighbour
 
 Use the intrinsic kernel and marked active rows from
-[`P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md):
+[`P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](../../h31/eisenstein-norm/P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md):
 
 ```text
 alpha_rows=(b_bar,m,m_r,c),
@@ -122,8 +122,8 @@ specialize differently and remain open.
 Run:
 
 ```text
-uv run --with sympy python verify_p5_h22_eisenstein_norm_component_generic_obstruction.py
-uv run --with sympy python audit_p5_h22_eisenstein_norm_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h22/eisenstein-norm/verify_p5_h22_eisenstein_norm_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h22/eisenstein-norm/audit_p5_h22_eisenstein_norm_component_generic_obstruction.py
 ```
 
 The primary verifier constructs both projective slope charts over

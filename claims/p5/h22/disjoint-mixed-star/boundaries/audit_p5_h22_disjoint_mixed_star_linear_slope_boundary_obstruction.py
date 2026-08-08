@@ -16,9 +16,17 @@ for _p in Path(__file__).resolve().parents:
     if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
         sys.path.insert(0, str(_p / "src"))
         break
-from krenn_gu.bootstrap import bootstrap  # noqa: E402
+from krenn_gu.bootstrap import (  # noqa: E402
+    bootstrap,
+    expose_claim_package,
+)
 
 REPO_ROOT, HERE = bootstrap(__file__, also=[".."])
+
+# Stage 9 moved the H31 disjoint-mixed-star generic package into
+# claims/p5/h31/disjoint-mixed-star/; expose it through the shared
+# helper so the bare-name import below resolves.
+expose_claim_package(REPO_ROOT, "claims/p5/h31/disjoint-mixed-star")
 
 import audit_p5_h31_disjoint_mixed_star_component_generic_obstruction as A
 from audit_p5_h31_marked_basis_open_branch import rank_mod

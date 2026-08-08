@@ -16,7 +16,7 @@ the global Krenn--Gu conjecture remain open.
 ## The five-parameter family has a two-parameter quotient
 
 Start from the polar-graph family in
-[`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md`](claims/p4/classifications/pair-geometry/full-support-tangent-pair/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md),
+[`P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md`](../../../p4/classifications/pair-geometry/full-support-tangent-pair/P4_FULL_SUPPORT_TANGENT_PAIR_COMPONENT.md),
 with parameters `(a,b,c,d,t)`.  On the generic torus chart put
 
 ```text
@@ -137,8 +137,8 @@ settled here.
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_p5_h31_full_support_tangent_component_generic_obstruction.py
-python audit_p5_h31_full_support_tangent_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/full-support-tangent/verify_p5_h31_full_support_tangent_component_generic_obstruction.py
+python claims/p5/h31/full-support-tangent/audit_p5_h31_full_support_tangent_component_generic_obstruction.py
 ```
 
 The primary verifier works over `C(p,q)`.  It launches each of the three

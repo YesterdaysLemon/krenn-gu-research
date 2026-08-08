@@ -7,7 +7,7 @@
 empty.
 
 The proof works in the two-parameter source-torus quotient `C(p,q)` from
-[`P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md`](../../h31/full-support-tangent/P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md).
 It eliminates both finite weighted slopes, retains the slope-marking
 relation before projection, checks the exceptional slope `r=-1`, and treats
 both points at infinity.  Special parameter/projective component boundaries,
@@ -166,9 +166,9 @@ generic `H31` and `H22` fibres both remain open.
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_p5_h31_full_support_tangent_component_generic_obstruction.py
-uv run --with sympy python verify_p5_h22_full_support_tangent_component_generic_obstruction.py
-python audit_p5_h22_full_support_tangent_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/full-support-tangent/verify_p5_h31_full_support_tangent_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h22/full-support-tangent/verify_p5_h22_full_support_tangent_component_generic_obstruction.py
+python claims/p5/h22/full-support-tangent/audit_p5_h22_full_support_tangent_component_generic_obstruction.py
 ```
 
 The primary verifier uses exact Fitting ideals, rational kernel identities,

@@ -18,7 +18,7 @@ GENERIC_THEOREM = ROOT / (
     "P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_"
     "GENERIC_OBSTRUCTION_VERIFICATION.md"
 )
-CONVENTION = ROOT / "P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md"
+CONVENTION = ROOT / "claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md"
 PAIRS = tuple(itertools.combinations(range(4), 2))
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 p, phi = sp.symbols("p phi", nonzero=True)

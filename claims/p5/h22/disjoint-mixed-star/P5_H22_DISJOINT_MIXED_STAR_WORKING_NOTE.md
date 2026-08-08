@@ -12,7 +12,7 @@ pattern and the failed broad elimination.
 The eighth pure-`P_4` component is proved in
 [`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](../../../p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md),
 and its generic marked `H31` incidence is excluded in
-[`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../../h31/disjoint-mixed-star/P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 Its generic weighted `H22` incidence is now closed on a dense open set
 by the theorem linked above.
 Subsequent exact boundary theorems close `r=+/-1`, twelve

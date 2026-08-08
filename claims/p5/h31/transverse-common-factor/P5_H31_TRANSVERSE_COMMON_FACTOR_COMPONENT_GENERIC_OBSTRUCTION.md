@@ -10,7 +10,7 @@ Together with the earlier component theorems, all twelve currently certified
 pure-`P_4` component orbits are now generically closed for `H31`.  The new
 component's weighted `H22` fibre is subsequently closed by the direct
 binary-polarity identity in
-[`P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](../../h22/transverse-common-factor/P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
 Special parameter/projective boundaries, component exhaustiveness, and the
 global Krenn--Gu conjecture remain open.
 
@@ -32,7 +32,7 @@ n=-(k-1)(r+2)X_0-X_2+kX_3.                         (1)
 ```
 
 The dense component normal form from
-[`P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md`](P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md)
+[`P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md`](../../../../P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md)
 is
 
 ```text
@@ -183,8 +183,8 @@ the global prize problem.
 Run:
 
 ```text
-uv run --with sympy python verify_p5_h31_transverse_common_factor_component_generic_obstruction.py
-uv run --with sympy python audit_p5_h31_transverse_common_factor_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/transverse-common-factor/verify_p5_h31_transverse_common_factor_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/transverse-common-factor/audit_p5_h31_transverse_common_factor_component_generic_obstruction.py
 ```
 
 The primary verifier reconstructs (1)--(12) and proves the four function-

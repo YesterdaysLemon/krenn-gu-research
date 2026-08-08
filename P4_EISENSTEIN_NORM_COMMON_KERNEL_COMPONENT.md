@@ -27,9 +27,9 @@ inequivalent pure-`P_4` component orbits.  It is not component exhaustiveness
 or a global proof of the Krenn--Gu conjecture.  Its generic marked `H31` and
 weighted `H22` fibres were open at this checkpoint.  The generic `H31` fibre
 is subsequently proved empty in
-[`P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/eisenstein-norm/P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
 The generic weighted `H22` fibre is subsequently proved empty in
-[`P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/eisenstein-norm/P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
 Special boundaries and the remaining support-one common-zero-divisor strata
 remain open.
 

@@ -4,7 +4,7 @@
 
 This is an exact characteristic-zero theorem on a dense open subset of
 the six-dimensional coincident-support component proved in
-[`P4_INOUT_PATH_STRATUM_WORKING_NOTE.md`](P4_INOUT_PATH_STRATUM_WORKING_NOTE.md)
+[`P4_INOUT_PATH_STRATUM_WORKING_NOTE.md`](../../../../P4_INOUT_PATH_STRATUM_WORKING_NOTE.md)
 ("A tenth component through the singular walls") and certified by
 `branch_ambient_certificates.py`.
 
@@ -259,7 +259,7 @@ mode 3; modes 0, 1, 2 all stay rank four.)
 ## Excluded divisors (atlas record)
 
 Following the conventions of
-[`P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`](P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md):
+[`P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`](../../../../P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md):
 
 * chart/normalization divisors: `k=0` (pure coefficient `-2kP`; also
   the `k`-gauge) and `P=bec+b+e=0` (pure coefficient and validity of
@@ -295,8 +295,8 @@ Following the conventions of
 Run
 
 ```text
-python verify_p5_h31_coincident_support_component_generic_obstruction.py
-python audit_p5_h31_coincident_support_component_generic_obstruction.py
+python claims/p5/h31/coincident-support/verify_p5_h31_coincident_support_component_generic_obstruction.py
+python claims/p5/h31/coincident-support/audit_p5_h31_coincident_support_component_generic_obstruction.py
 ```
 
 The primary verifier replays, over exact rationals with `k` symbolic:
@@ -332,4 +332,4 @@ codimension-two survivor strata, the divisors `k=0` and `P=0`, the
 chart closure, and the projective boundary.  Component
 exhaustiveness and the global conjecture remain open.  The weighted
 `H22` companion statement is proved in
-[`P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](../../h22/coincident-support/P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md).

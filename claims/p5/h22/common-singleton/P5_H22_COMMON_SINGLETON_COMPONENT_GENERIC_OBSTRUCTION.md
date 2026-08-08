@@ -156,7 +156,7 @@ Together with the existing componentwise results, this closes the generic
 weighted `H22` fibre on all eighteen currently certified pure-`P_4`
 component orbits.  The companion support obstruction closes component
 eighteen's marked `H31` fibre:
-[`P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](../../h31/common-singleton/P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md).
 The remaining all-pair-rank cells, component exhaustiveness, special `P_5`
 fibres, contraction/gluing to the graph problem, and the global Krenn--Gu
 conjecture remain open.
@@ -167,9 +167,9 @@ Run
 
 ```text
 uv run --with sympy python \
-  verify_p5_h22_common_singleton_component_generic_obstruction.py
+  claims/p5/h22/common-singleton/verify_p5_h22_common_singleton_component_generic_obstruction.py
 
-python audit_p5_h22_common_singleton_component_generic_obstruction.py
+python claims/p5/h22/common-singleton/audit_p5_h22_common_singleton_component_generic_obstruction.py
 ```
 
 The primary verifier reconstructs the rational component chart, checks the

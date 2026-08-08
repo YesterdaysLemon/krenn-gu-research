@@ -213,8 +213,8 @@ into a complete `P_4` classification.  The global graph problem remains open.
 Run:
 
 ```text
-uv run --with sympy python verify_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py
-uv run --with sympy python audit_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h22/two-rank-two-spoke-mixed-star/verify_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h22/two-rank-two-spoke-mixed-star/audit_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py
 ```
 
 The primary verifier reconstructs (1)--(4), proves (3), builds all eleven

@@ -20,7 +20,7 @@ has since raised it again to nine.
 
 This is not a classification of every component.  The generic marked
 `H31` fibre has since been excluded in
-[`P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md);
+[`P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../p5/h31/six-dimensional/P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md);
 its special parameter/projective boundary remains.  Nothing here
 settles `H22` or the global prize problem.
 
