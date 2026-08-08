@@ -4,7 +4,7 @@
 
 This is an exact characteristic-zero theorem on the eleventh certified
 pure-`P_4` component orbit, the equal-support sixfold of
-[`P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md`](claims/p4/components/equal-support-sixfold/P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md).
+[`P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md`](../../../p4/components/equal-support-sixfold/P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md).
 
 The complete marked-basis `H31` fibre over the generic point of that
 component is empty, and the theorem goes one step past the generic
@@ -19,7 +19,7 @@ What is *not* claimed: the component's projective boundary, component
 exhaustiveness for the pure-`P_4` locus, the `H31` census as a whole,
 and the global prize problem all remain open.  The companion weighted
 `H22` theorem is
-[`P5_H22_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md`](../../h22/equal-support-sixfold/P5_H22_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md).
 
 ## Gauge and normal form
 
@@ -150,7 +150,7 @@ rather than excluded.**
 Run
 
 ```text
-python verify_p5_h31_equal_support_sixfold_component_generic_obstruction.py
+python claims/p5/h31/equal-support-sixfold/verify_p5_h31_equal_support_sixfold_component_generic_obstruction.py
 ```
 
 The verifier is self-contained (sympy + Singular).  It checks the raw

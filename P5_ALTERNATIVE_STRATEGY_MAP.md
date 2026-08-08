@@ -966,7 +966,7 @@ and on the other two every survivor has a one-marked determinant
 the resulting five-component checkpoint was not exhaustive:
 
 - [`P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md`](P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md)
-- [`P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/one-three/P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 The common-smooth-diagonal-quadric branch is now structurally closed
 away from the block-line base locus.  After normalization to a smooth
@@ -1095,7 +1095,7 @@ are unit.  The remaining `L_1` scheme has two rational sheets and the
 `L_2` scheme has three line closures; the same mode-zero `0247` minor
 has saturated unit ideal on all five:
 
-- [`P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md`](P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md`](claims/p5/h22/one-three-components/P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md)
 
 The first rank-two component gives a fourth transport.  Its weighted
 `01` mixed matrix is injective for every marking by an eight-chart
@@ -1103,7 +1103,7 @@ projective-kernel cover.  Its exact weighted `23` projection has two
 rational sheets.  The mode-two `0147` minor excludes the first and the
 `0137` minor excludes the second:
 
-- [`P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/first-rank-two/P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 At equal source weights, both pencils are already empty at binary
 level; in the second pencil, two mixed coefficient rows alone force the

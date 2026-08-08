@@ -7,9 +7,18 @@ import hashlib
 import itertools
 import json
 import subprocess
+import sys
 from pathlib import Path
 
 import sympy as sp
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
 
 from p5_high_coordinate_tree_chart_cegar import singular_command_with_timeout
 from verify_p4_diagonal_quadric_one_three_components import branch_planes
@@ -20,8 +29,8 @@ from verify_p5_h31_marked_basis_open_branch import (
 )
 
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md"
+ROOT = REPO_ROOT
+THEOREM = HERE / "P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md"
 COMPONENT = ROOT / "P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md"
 COMPONENT_PRIMARY = ROOT / "verify_p4_diagonal_quadric_one_three_components.py"
 WORDS = tuple(itertools.product((0, 1), repeat=4))

@@ -5,12 +5,21 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+import sys
 
 import sympy as sp
 
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 from verify_p5_h31_marked_basis_open_branch import mixed_matrix
 
-ROOT = Path(__file__).resolve().parent
+ROOT = HERE
 PRIMARY = ROOT / "verify_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py"
 THEOREM = ROOT / "P5_H31_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_GENERIC_OBSTRUCTION.md"
 

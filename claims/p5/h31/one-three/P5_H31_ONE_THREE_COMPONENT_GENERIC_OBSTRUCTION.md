@@ -4,7 +4,7 @@
 
 This is an exact characteristic-zero theorem on dense open subsets of
 the three pure-`P_4` components proved in
-[`P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md`](P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md).
+[`P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md`](../../../../P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md).
 
 At the generic point of each component, no marked binary pure
 restriction can lift to an `H31` restriction:
@@ -23,7 +23,7 @@ It also does not classify all pure-`P_4` components, exclude all of
 ## Canonical marked bases
 
 Use the normal form and parameters `S,D,G,T` from
-[`P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md`](P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md):
+[`P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md`](../../../../P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md):
 
 ```text
 P=G-T,  Q=D-S,
@@ -237,8 +237,8 @@ The separate `H22` case remains open.
 Run:
 
 ```text
-python verify_p5_h31_one_three_component_generic_obstruction.py
-python audit_p5_h31_one_three_component_generic_obstruction.py
+python claims/p5/h31/one-three/verify_p5_h31_one_three_component_generic_obstruction.py
+python claims/p5/h31/one-three/audit_p5_h31_one_three_component_generic_obstruction.py
 ```
 
 The primary verifier reconstructs the canonical bases (2)--(4),

@@ -14,6 +14,18 @@ from derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_c
 )
 from verify_p5_h22_unequal_endpoint_inward_star_component_partial import coordinates
 from verify_p5_h31_marked_basis_open_branch import one_marked_map
+import sys
+from pathlib import Path
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/p5/h31/unequal-endpoint-inward-star")
+
 from verify_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction import (
     pure_basis,
 )

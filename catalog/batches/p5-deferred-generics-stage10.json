@@ -1,0 +1,113 @@
+{
+  "batch_id": "p5-deferred-generics-stage10",
+  "approved_by": "YesterdaysLemon (repository owner), Stage 10 deferred generic P5 migration instruction",
+  "approved_at": "2026-08-08",
+  "base_sha": "45a2bcde25d1a3318581fd7102100a25b8f8a1ec",
+  "manifest_sha256": "6c4314b2f2762f0affc5fe48ad60b7220620c06e3a9beae36365afefaf640e35",
+  "mapping_sha256": "e39d17c3ed855ef5a1342560ebf61e9b313246142f24af23940bc3ff8af472db",
+  "member_count": 25,
+  "moves": [
+    {
+      "old_path": "P5_H22_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/equal-support-sixfold/P5_H22_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/first-rank-two/P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/one-three-components/P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/common-center-kernel-star/P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/equal-support-sixfold/P5_H31_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/one-three/P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/split-center-mixed-star/P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/unequal-complement-common-kernel/P5_H31_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/unequal-endpoint-inward-star/P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "audit_p5_h22_first_rank_two_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/first-rank-two/audit_p5_h22_first_rank_two_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h22_one_three_components_generic_obstruction.py",
+      "new_path": "claims/p5/h22/one-three-components/audit_p5_h22_one_three_components_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h31_common_center_kernel_star_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/common-center-kernel-star/audit_p5_h31_common_center_kernel_star_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h31_one_three_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/one-three/audit_p5_h31_one_three_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h31_split_center_mixed_star_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/split-center-mixed-star/audit_p5_h31_split_center_mixed_star_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/unequal-complement-common-kernel/audit_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/unequal-endpoint-inward-star/audit_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h22_equal_support_sixfold_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/equal-support-sixfold/verify_p5_h22_equal_support_sixfold_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h22_first_rank_two_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/first-rank-two/verify_p5_h22_first_rank_two_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h22_one_three_components_generic_obstruction.py",
+      "new_path": "claims/p5/h22/one-three-components/verify_p5_h22_one_three_components_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_common_center_kernel_star_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/common-center-kernel-star/verify_p5_h31_common_center_kernel_star_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_equal_support_sixfold_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/equal-support-sixfold/verify_p5_h31_equal_support_sixfold_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_one_three_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/one-three/verify_p5_h31_one_three_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_split_center_mixed_star_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/split-center-mixed-star/verify_p5_h31_split_center_mixed_star_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/unequal-complement-common-kernel/verify_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/unequal-endpoint-inward-star/verify_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py"
+    }
+  ],
+  "rationale": "Stage 10: migrate the smallest coherent recovered/deferred generic P5 layer after separate operational repair. Nine live ledger verified_generic packages (six H31, three H22; 25 files) move as theorem + primary + existing independent audit when one exists. Equal-support-sixfold is included on both sides after its pre-existing stale P4 path constants were repaired and both primaries replayed honestly; each side explicitly has no P5 independent audit. No boundary/divisor recursion, exceptional fibre, candidate, partial theorem, exploration, or generator moves.",
+  "notes": "Role inventory: 9 theorem documents, 9 primary verifiers, 7 independent audits; all 16 mandatory executables replayed semantically green before freezing. Source records: 25 proposed_high_confidence/high; classifier confidence is not approval. Deferred: common-active-binary-triangle, embedded-p3 boundary chains, common-center H22 partial tree, diagonal-quadric elliptic forest, unequal-complement/unequal-endpoint H22 recursions, and split-center H22 candidate-derived dependency. Staying repair surface: 31 exact-name import consumers plus one frontier provenance consumer. Approval applies only to this exact mapping."
+}

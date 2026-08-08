@@ -346,7 +346,7 @@ has two rational points and the `L_2` scheme is covered by three
 affine lines.  On all five survivor closures, the same mode-zero
 `0247` minor generates a unit ideal after diagonal saturation:
 
-- [`P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md`](P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md`](claims/p5/h22/one-three-components/P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md)
 
 The first rank-two component is now generically excluded from weighted
 `H22` too.  The weighted `01` mixed matrix is injective for every
@@ -354,7 +354,7 @@ marking by an eight-chart projective cover.  The exact weighted `23`
 projection has two sheets, excluded by the mode-two `0147` and `0137`
 minors:
 
-- [`P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/first-rank-two/P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 The equal-weight specialization remains a separately verified boundary
 certificate:
@@ -402,7 +402,7 @@ where `A,B` are the required nonzero binary diagonals and `c` is
 nonzero on the generic chart.  Their special parameter divisors and
 projective boundaries remain:
 
-- [`P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/one-three/P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 At one rational point of the second component, the complete marking
 fibre has already been excluded.  Exact binary projection leaves one

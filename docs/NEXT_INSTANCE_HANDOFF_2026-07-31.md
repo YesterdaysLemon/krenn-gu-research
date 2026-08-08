@@ -403,7 +403,7 @@ Six statements organize the current frontier.
    Its complete generic marked `H31` fibre is empty after exact projection to
    four marking branches and four uniform one-marked minors:
    [`P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md`](../P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md),
-   [`P5_H31_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H31_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_GENERIC_OBSTRUCTION.md).
+   [`P5_H31_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h31/unequal-complement-common-kernel/P5_H31_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_GENERIC_OBSTRUCTION.md).
    Generic weighted `H22` remains open on this component.  Two exact rational
    binary survivors are proved to be false positives by eight nonzero
    one-marked rank-four minors:
@@ -515,7 +515,7 @@ Six statements organize the current frontier.
    `H22` weight, and projective `H22` at both points.  These are fixed-order
    theorems and do not supply arbitrary-order gluing:
    [`P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md`](../claims/p4/classifications/star/common-center-kernel-star-211/P4_COMMON_CENTER_KERNEL_STAR_211_COMPONENT.md),
-   [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
+   [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h31/common-center-kernel-star/P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md`](../P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md),
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md`](../P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md),
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ONE_ALL_MARKING_OBSTRUCTION.md`](../P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ONE_ALL_MARKING_OBSTRUCTION.md),
@@ -676,7 +676,7 @@ Six statements organize the current frontier.
    of both pair orbits and all six finite/infinity branches:
    [`P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md`](../claims/p4/classifications/triangle-211/split-center-mixed-star-211/P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md),
    [`P4_MIXED_CENTER_STAR_211_COMPLETE_CLASSIFICATION.md`](../claims/p4/classifications/triangle-211/mixed-center-star-211-complete/P4_MIXED_CENTER_STAR_211_COMPLETE_CLASSIFICATION.md),
-   [`P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
+   [`P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h31/split-center-mixed-star/P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
    [`P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
    Component twenty-five is the disjoint-binary unequal-endpoint two-inward
    star fivefold.  Its irreducible purity hypersurface and exact smooth
@@ -751,7 +751,7 @@ Six statements organize the current frontier.
    necessary cover whose full `lambda=1` slice is empty.  The other displayed
    finite branches remain open:
    [`P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md`](../claims/p4/classifications/star/unequal-endpoint-inward-star-211/P4_UNEQUAL_ENDPOINT_INWARD_STAR_211_COMPONENT.md),
-   [`P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
+   [`P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h31/unequal-endpoint-inward-star/P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PARTIAL.md`](../P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PARTIAL.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_K_ZERO_GENERIC_D23_RANK_OBSTRUCTION.md`](../P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_K_ZERO_GENERIC_D23_RANK_OBSTRUCTION.md),
    [`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_RESIDUAL_FACTOR_COVER.md`](../P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_RESIDUAL_FACTOR_COVER.md),
@@ -2168,8 +2168,8 @@ python claims/p4/classifications/triangle-211/211-triangle-complete/audit_p4_211
 uv run --with sympy python claims/p4/classifications/star/coincident-support-star-reverse/verify_p4_coincident_support_star_reverse_classification.py
 uv run --with sympy python claims/p4/classifications/star/coincident-support-star-reverse/audit_p4_coincident_support_star_reverse_classification.py
 
-uv run --with sympy python verify_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py
-uv run --with sympy python audit_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/unequal-complement-common-kernel/verify_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/unequal-complement-common-kernel/audit_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py
 
 uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_survivor_reconnaissance.py
 uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_survivor_reconnaissance.py
@@ -2191,8 +2191,8 @@ uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_compone
 uv run --with sympy python claims/p4/classifications/star/common-center-kernel-star-211/verify_p4_common_center_kernel_star_211_component.py
 uv run --with sympy python claims/p4/classifications/star/common-center-kernel-star-211/audit_p4_common_center_kernel_star_211_component.py
 
-uv run --with sympy python verify_p5_h31_common_center_kernel_star_component_generic_obstruction.py
-uv run --with sympy python audit_p5_h31_common_center_kernel_star_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/common-center-kernel-star/verify_p5_h31_common_center_kernel_star_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/common-center-kernel-star/audit_p5_h31_common_center_kernel_star_component_generic_obstruction.py
 
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_partial.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_partial.py
@@ -2245,8 +2245,8 @@ uv run --with sympy python claims/p4/classifications/star/mixed-endpoint-star-11
 uv run --with sympy python claims/p4/classifications/star/no-double-endpoint-star-1110-collision/verify_p4_no_double_endpoint_star_1110_collision_classification.py
 uv run --with sympy python claims/p4/classifications/star/no-double-endpoint-star-1110-collision/audit_p4_no_double_endpoint_star_1110_collision_classification.py
 
-uv run --with sympy python verify_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py
-uv run --with sympy python audit_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/unequal-endpoint-inward-star/verify_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/unequal-endpoint-inward-star/audit_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py
 
 uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_partial.py
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_partial.py
@@ -2287,8 +2287,8 @@ uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_f
 uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_finite_d23_lambda_one.py
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_finite_d23_lambda_one.py
 
-uv run --with sympy python verify_p5_h31_split_center_mixed_star_component_generic_obstruction.py
-uv run --with sympy python audit_p5_h31_split_center_mixed_star_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/split-center-mixed-star/verify_p5_h31_split_center_mixed_star_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/split-center-mixed-star/audit_p5_h31_split_center_mixed_star_component_generic_obstruction.py
 
 uv run --with sympy python verify_p5_h22_split_center_mixed_star_component_generic_obstruction.py
 uv run --with sympy python audit_p5_h22_split_center_mixed_star_component_generic_obstruction.py

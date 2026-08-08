@@ -5,7 +5,7 @@
 This is an exact characteristic-zero obstruction on the generic
 diagonal-source orbits of the three split-cubic pure-compression
 components proved in
-[`P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md`](P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md).
+[`P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md`](../../../../P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md).
 
 For all three components, the weighted `01` diagonal pencil has no
 binary `Delta_2` extension.  The third component also has no binary
@@ -33,7 +33,7 @@ L_3: T=-D-G-S.
 ```
 
 Use the canonical marked bases constructed in
-[`P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md`](../../h31/one-three/P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md).
 Their only nonzero pure coefficients are
 
 ```text
@@ -178,9 +178,9 @@ Run
 
 ```text
 python \
-  verify_p5_h22_one_three_components_generic_obstruction.py
+  claims/p5/h22/one-three-components/verify_p5_h22_one_three_components_generic_obstruction.py
 
-python audit_p5_h22_one_three_components_generic_obstruction.py
+python claims/p5/h22/one-three-components/audit_p5_h22_one_three_components_generic_obstruction.py
 ```
 
 The primary verifier reconstructs the three canonical bases, proves

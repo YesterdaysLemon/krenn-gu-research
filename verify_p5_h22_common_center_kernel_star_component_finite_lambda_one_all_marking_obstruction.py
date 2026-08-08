@@ -15,6 +15,18 @@ from verify_p5_h22_common_center_kernel_star_component_partial import (
     coefficient_row,
     singular_command,
 )
+import sys
+from pathlib import Path
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/p5/h31/common-center-kernel-star")
+
 from verify_p5_h31_common_center_kernel_star_component_generic_obstruction import (
     rows,
     shifted,

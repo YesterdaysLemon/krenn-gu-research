@@ -16,15 +16,15 @@
   },
   "counts": {
     "total_classified_moves": 2015,
-    "moved": 325,
+    "moved": 350,
     "pilot": 0,
-    "proposed_high_confidence": 277,
+    "proposed_high_confidence": 252,
     "review_required": 1413,
     "unclassified": 348,
     "root_files_before": 2363,
     "root_dirs_before": 3,
     "root_entries_before": 2366,
-    "projected_root_if_moved_only": 2047,
+    "projected_root_if_moved_only": 2022,
     "projected_root_if_high_confidence_batches_executed": 1770,
     "projected_root_if_all_classified_executed": 357,
     "projection_note": "unclassified files are not members of any move set, so every projection already leaves them at the root; do not add unclassified again",
@@ -9680,41 +9680,46 @@
       "old_path": "P5_H22_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/equal-support-sixfold/P5_H22_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/equal-support-sixfold",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/equal-support-sixfold",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "verify_p5_h22_equal_support_sixfold_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/equal-support-sixfold/verify_p5_h22_equal_support_sixfold_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/equal-support-sixfold",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/equal-support-sixfold",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/first-rank-two/P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/first-rank-two",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/first-rank-two",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "audit_p5_h22_first_rank_two_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/first-rank-two/audit_p5_h22_first_rank_two_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/first-rank-two",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/first-rank-two",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "verify_p5_h22_first_rank_two_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/first-rank-two/verify_p5_h22_first_rank_two_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/first-rank-two",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/first-rank-two",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "P5_H22_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md",
@@ -9774,25 +9779,28 @@
       "old_path": "P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/one-three-components/P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/one-three-components",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/one-three-components",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "audit_p5_h22_one_three_components_generic_obstruction.py",
       "new_path": "claims/p5/h22/one-three-components/audit_p5_h22_one_three_components_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/one-three-components",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/one-three-components",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "verify_p5_h22_one_three_components_generic_obstruction.py",
       "new_path": "claims/p5/h22/one-three-components/verify_p5_h22_one_three_components_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/one-three-components",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/one-three-components",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "audit_p5_h22_p_plus_q_diagonal_dvr_coverage.py",
@@ -11329,9 +11337,10 @@
       "old_path": "P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-center-kernel-star/P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-center-kernel-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-center-kernel-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md",
@@ -11361,9 +11370,10 @@
       "old_path": "audit_p5_h31_common_center_kernel_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/common-center-kernel-star/audit_p5_h31_common_center_kernel_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/common-center-kernel-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-center-kernel-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "audit_p5_h31_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py",
@@ -11393,9 +11403,10 @@
       "old_path": "verify_p5_h31_common_center_kernel_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/common-center-kernel-star/verify_p5_h31_common_center_kernel_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/common-center-kernel-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-center-kernel-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "verify_p5_h31_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py",
@@ -12214,17 +12225,19 @@
       "old_path": "P5_H31_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/equal-support-sixfold/P5_H31_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/equal-support-sixfold",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/equal-support-sixfold",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "verify_p5_h31_equal_support_sixfold_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/equal-support-sixfold/verify_p5_h31_equal_support_sixfold_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/equal-support-sixfold",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/equal-support-sixfold",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md",
@@ -12380,25 +12393,28 @@
       "old_path": "P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/one-three/P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/one-three",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/one-three",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "audit_p5_h31_one_three_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/one-three/audit_p5_h31_one_three_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/one-three",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/one-three",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "verify_p5_h31_one_three_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/one-three/verify_p5_h31_one_three_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/one-three",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/one-three",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md",
@@ -12527,25 +12543,28 @@
       "old_path": "P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/split-center-mixed-star/P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/split-center-mixed-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/split-center-mixed-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "audit_p5_h31_split_center_mixed_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/split-center-mixed-star/audit_p5_h31_split_center_mixed_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/split-center-mixed-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/split-center-mixed-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "verify_p5_h31_split_center_mixed_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/split-center-mixed-star/verify_p5_h31_split_center_mixed_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/split-center-mixed-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/split-center-mixed-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md",
@@ -12629,49 +12648,55 @@
       "old_path": "P5_H31_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/unequal-complement-common-kernel/P5_H31_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/unequal-complement-common-kernel",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/unequal-complement-common-kernel",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "audit_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/unequal-complement-common-kernel/audit_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/unequal-complement-common-kernel",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/unequal-complement-common-kernel",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "verify_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/unequal-complement-common-kernel/verify_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/unequal-complement-common-kernel",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/unequal-complement-common-kernel",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/unequal-endpoint-inward-star/P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/unequal-endpoint-inward-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/unequal-endpoint-inward-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "audit_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/unequal-endpoint-inward-star/audit_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/unequal-endpoint-inward-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/unequal-endpoint-inward-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "verify_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/unequal-endpoint-inward-star/verify_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/unequal-endpoint-inward-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/unequal-endpoint-inward-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-deferred-generics-stage10"
     },
     {
       "old_path": "P6_ARBITRARY_FIBRE_AXIS_PORT_DEFECT_AND_TWO_COLOUR_GRAM_ESCAPE_THEOREM.md",

@@ -7,9 +7,19 @@ import itertools
 import json
 import shutil
 import subprocess
+import sys
 import time
+from pathlib import Path
 
 import sympy as sp
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
 
 from verify_p5_h31_marked_basis_open_branch import mixed_matrix, permanent
 

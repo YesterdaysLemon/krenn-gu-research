@@ -13,7 +13,7 @@ Krenn--Gu conjecture remain separate and **UNRESOLVED**.
 ## Intrinsic marked rows
 
 Use the first sheet from
-[`P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md`](P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md),
+[`P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md`](../../../../P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md),
 over `K=C(A,R,D)`.  Put `s=2A+R` and
 
 ```text
@@ -82,8 +82,8 @@ row to vanish, contradicting the `H31` local rank requirement.
 ## Replay
 
 ```text
-uv run --with sympy python verify_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py
-uv run --with sympy python audit_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/unequal-complement-common-kernel/verify_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/unequal-complement-common-kernel/audit_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py
 ```
 
 The primary replay proves the bidirectional elimination ideals, the two row

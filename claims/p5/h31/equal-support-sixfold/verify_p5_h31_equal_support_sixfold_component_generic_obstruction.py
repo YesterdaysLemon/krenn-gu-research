@@ -16,25 +16,30 @@ import hashlib
 import itertools
 import json
 import subprocess
+import sys
 import time
 from pathlib import Path
 
 import sympy as sp
 
-HERE = Path(__file__).resolve().parent
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
+REPO_ROOT, HERE = bootstrap(__file__)
 
-def find_root() -> Path:
-    for candidate in (HERE, *HERE.parents):
-        if (candidate / "P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md").exists():
-            return candidate
-    return HERE
-
-
-ROOT = find_root()
+ROOT = REPO_ROOT
 THEOREM = HERE / "P5_H31_EQUAL_SUPPORT_SIXFOLD_COMPONENT_GENERIC_OBSTRUCTION.md"
-COMPONENT = ROOT / "P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md"
-COMPONENT_PRIMARY = ROOT / "verify_p4_equal_support_sixfold_pure_component.py"
+COMPONENT = (
+    ROOT / "claims/p4/components/equal-support-sixfold"
+    / "P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md"
+)
+COMPONENT_PRIMARY = (
+    ROOT / "claims/p4/components/equal-support-sixfold"
+    / "verify_p4_equal_support_sixfold_pure_component.py"
+)
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 MIXED = tuple(w for w in WORDS if w not in ((0, 0, 0, 0), (1, 1, 1, 1)))

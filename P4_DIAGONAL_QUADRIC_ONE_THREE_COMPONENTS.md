@@ -18,9 +18,9 @@ Thus there are at least five symmetry-inequivalent all-rank-two pure
 `P_4` components.  This is a lower bound, not a classification.
 The generic marked `H31` fibres of the three new components have since
 been excluded in
-[`P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md);
+[`P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/one-three/P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md);
 their generic weighted `H22` incidences have since been excluded in
-[`P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md`](P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md).
+[`P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md`](claims/p5/h22/one-three-components/P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md).
 Their special parameter/projective boundaries remain.  Nothing here
 settles all of `H22` or resolves the global prize problem.
 
