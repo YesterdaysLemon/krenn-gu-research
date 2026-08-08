@@ -251,6 +251,41 @@ A layout migration must not:
 If replay exposes a mathematical inconsistency, stop migration of the
 affected package and report the scientific issue separately.
 
+### Replay and repository-state hygiene
+
+Post-move scientific replay must not silently dirty tracked repository
+state.
+
+- After each replay tier, check `git status` / the tracked diff for
+  unintended changes to result, certificate, or snapshot artifacts.
+- Output-writing research/snapshot scripts must be run in a sandbox or
+  copy, or not used as migration smoke tests at all, unless their
+  tracked-output behavior is explicitly intended for this migration.
+- `rc=0` alone is not a semantic success criterion for optional
+  exploration/support scripts.  A script can exit 0 while encoding an
+  inconclusive result (for example a `timeout_null`) in its output.
+  Read the output before calling a replay green.
+
+### Stale optional-dependency audit
+
+Replay success does not prove that optional provenance dependencies
+still resolve.  After a batch moves files, scan executable path
+constants, not just imports:
+
+- every root-relative `Path` construction;
+- every optional dependency guarded by `.exists()` (these fail open and
+  can silently drop a hash/provenance entry while still returning
+  `rc=0`);
+- hash and provenance inventories;
+- subprocess targets;
+- sibling theorem/verifier/audit constants.
+
+Classify each occurrence rather than blindly replacing filenames:
+same-package `HERE / basename` uses and historical prose strings are
+legitimate; only executable root-relative references to moved paths
+must be repaired.  An import probe is not sufficient for this audit
+because fail-open `.exists()` paths are never exercised at import time.
+
 ## 9. End of migration
 
 When the root migration is substantially complete, preserve this

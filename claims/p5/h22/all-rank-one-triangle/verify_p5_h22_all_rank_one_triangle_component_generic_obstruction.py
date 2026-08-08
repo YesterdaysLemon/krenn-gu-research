@@ -63,7 +63,7 @@ if COMPONENT_PRIMARY.exists():
     expose_claim_package(
         ROOT, "claims/p4/components/all-rank-one-triangle")
 H31_THEOREM = (
-    ROOT
+    ROOT / "claims" / "p5" / "h31" / "all-rank-one-triangle"
     / "P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
 WORDS = tuple(itertools.product((0, 1), repeat=4))

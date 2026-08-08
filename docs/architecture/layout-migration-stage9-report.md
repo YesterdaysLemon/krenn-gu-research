@@ -169,13 +169,20 @@ not on the Windows PATH; Singular 4.3.2 was used through WSL for the
 two direct-`["Singular"]` coincident-support verifiers (299 s / 45 s),
 the established Stage 3 manual-replay convention.  The other
 Singular-touching scripts are self-wsl-aware and ran from Windows.
-No verifier or audit was claimed without execution; generated solver
-outputs went to gitignored `tmp/` or stdout only.
+No verifier or audit was claimed without execution; the 56 mandatory
+verifier/audit replays wrote only to gitignored `tmp/` or stdout.
+One optional downstream smoke test was an exception: it wrote a tracked
+snapshot JSON and later required restoration (see Post-review
+corrections).
 
 Downstream sampling (post-move, executed): three pilot
 disjoint-mixed-star boundary audits (rc=0, census outputs intact),
 the frontier verifier (rc=0 after the Stage 9 constant repoints), and
-one obligation-ledger snapshot script (rc=0).
+obligation-ledger snapshot scripts.  One snapshot script
+(`retry_frame_q2_extraction.py`) exited rc=0 but recorded
+`timeout_null` — an inconclusive result that its caller wrongly logged
+as green; the tracked JSON it overwrote was restored (see Post-review
+corrections).
 
 ## Preflight finding deferred a family
 
@@ -245,6 +252,86 @@ green); `tests.test_migration_tools` 117 tests OK;
 `test_fourteen_vertex_cycle_cover_lattice.py` 14 tests OK; rewriter
 idempotent (second pass 0/0/0/0).  Root: 2,134 → 2,048.
 
+## Post-review corrections
+
+Independent review found two integrity defects after the first
+bookkeeping head.  Both were narrow migration/process errors, not
+mathematics.  Corrected in a single post-review correction commit;
+the pure-move history was not rewritten.
+
+### Defect 1: accidental tracked scientific-output mutation
+
+Downstream sampling executed
+`research_snapshots/2026-08-04-p5-delta3-obligation-ledger/scripts/retry_frame_q2_extraction.py`
+as a smoke test.  That script writes its tracked ledger JSON even when
+its computation is inconclusive and exits rc=0 after recording
+`timeout_null`.  The replay therefore overwrote the committed
+successful result (`strategy_a_slimgb`, 0.6 s, generator
+`p^2*q^3-p^2*q+p*q^2+p*q`, factors `1, p, q, q+1, p*q-p+1`) with a
+`timeout_null` record.
+
+- The execution was reported as rc=0 "green"; that was wrong —
+  `timeout_null` is inconclusive and rc=0 is not a semantic success
+  criterion for output-writing exploration/support scripts.
+- The JSON was restored byte-for-byte to the Stage 9 base blob
+  `8ef250728c039de5ad0470d32de45f2346caffdd` (verified by blob-hash
+  comparison against `4ee0cdc`).
+- The earlier statement that generated solver outputs went only to
+  gitignored `tmp/` or stdout was **incorrect**: it held for all 57
+  mandatory verifier/audit replays, but not for this optional snapshot
+  smoke test.
+- A full `git diff 4ee0cdc..HEAD` scan confirmed no other tracked
+  result/certificate/snapshot artifact was mutated as a replay side
+  effect; the JSON above was the sole computational-output change in
+  the whole Stage 9 diff.
+
+### Defect 2: silent stale provenance dependency (fail-open)
+
+`claims/p5/h22/all-rank-one-triangle/verify_p5_h22_all_rank_one_triangle_component_generic_obstruction.py`
+still defined `H31_THEOREM` at the repository root after Stage 9 moved
+the file, and its dependency inventory is guarded by `if path.exists()`
+— the stale path therefore silently dropped the H31 dependency while
+the verifier returned rc=0.  The earlier import probe could not catch
+this because fail-open `.exists()` paths are never exercised at import
+time.
+
+- Repaired mechanically to
+  `claims/p5/h31/all-rank-one-triangle/P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`;
+  theorem logic untouched.
+- Replayed post-repair: rc=0, `verified: true`, and the dependency map
+  again contains
+  `P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`
+  hashed from its new location.
+- The same systematic scan found one more Stage-9-broken executable
+  dependency: `claims/p4/components/disjoint-mixed-star/verify_p4_disjoint_mixed_star_pure_component.py`
+  hashes the same moved H31 theorem in an **unguarded** dependency map
+  (would crash loudly); repointed and replayed green with the
+  dependency present.
+- All other 78 basename occurrences were classified: same-package
+  `HERE /` references, already-repointed `claims/...` constants,
+  docstring prose, and two legitimate JSON status fields naming the
+  companion theorem by display name.  No other executable root-relative
+  reference to a Stage-9-moved path remains.
+- Other successful verifier/audit replays were preserved, not rerun
+  (no other executable was materially affected).
+
+### Process lessons recorded
+
+Both defects exposed stable migration rules, now added to the
+migration runbook (section 8, "Replay and repository-state hygiene"
+and "Stale optional-dependency audit"): replay must not silently dirty
+tracked state; check `git status` after replay tiers; output-writing
+snapshot scripts need a sandbox or explicit intent; rc=0 is not
+semantic success for scripts that encode inconclusive results; and
+moved-path scans must cover fail-open `.exists()` provenance
+constants, which an import probe cannot catch.
+
+### Corrected substantive head
+
+Because executable code changed, the correction commit is a new
+substantive head with its own `workflow_dispatch`; the final
+PR-triggered CI must pass on the exact final head (recorded below).
+
 ## Fresh-agent documentation audit
 
 This stage was executed by a fresh agent from the Stage 9 prompt plus
@@ -307,9 +394,12 @@ convention precedent (Stage 3 WSL Singular) and the consumer-repair
 pattern (Stages 6/7); no old report was needed to understand any
 current invariant.
 
-**Permanent documentation changes: none.**  No friction item met all
-four threshold criteria for a permanent AGENTS.md/runbook edit; all
-findings are recorded here and in the dry-run instead.
+**Permanent documentation changes.**  The initial friction audit made
+no permanent edits (no friction item met all four threshold criteria).
+However, the post-review corrections exposed two genuinely stable
+migration rules — replay repository-state hygiene and fail-open
+optional-dependency auditing — that were added to the migration
+runbook (section 8).  These are permanent policy, not Stage 9 state.
 
 ## Selected / excluded / deferred
 
