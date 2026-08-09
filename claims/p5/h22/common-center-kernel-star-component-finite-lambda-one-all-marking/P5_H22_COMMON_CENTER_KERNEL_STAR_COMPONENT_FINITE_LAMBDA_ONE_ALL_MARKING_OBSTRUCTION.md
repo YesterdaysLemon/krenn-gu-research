@@ -7,7 +7,7 @@
 component is empty for every affine marking \((h_0,h_1,h_2,h_3)\).
 
 This closes the intrinsic \(\lambda=1\) wall left by
-`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md`.
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md`](../../../../P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md).
 It does not close that supplement's other explicit residual intersections,
 the full generic finite fibre, or the global Krenn--Gu conjecture.
 
@@ -59,6 +59,6 @@ calculation is used in this proof.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_finite_lambda_one_all_marking_obstruction.py
-uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_finite_lambda_one_all_marking_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-finite-lambda-one-all-marking/verify_p5_h22_common_center_kernel_star_component_finite_lambda_one_all_marking_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-finite-lambda-one-all-marking/audit_p5_h22_common_center_kernel_star_component_finite_lambda_one_all_marking_obstruction.py
 ```
