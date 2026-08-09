@@ -18,7 +18,7 @@ and awaiting two fresh Tier-2 merge-gate reviews.**
   the owner for repeated confirmation; Codex is responsible for resolving
   them.
 
-The previous contract required human-approved batches even though the batch
+The previous contracts required human-approved batches even though the batch
 schema and executor require only a nonempty actual-reviewer identity.  That
 wording conflicted with the owner's standing delegation and would have forced
 repeated approval prompts unrelated to scientific judgment.
@@ -50,6 +50,8 @@ only and is never approval or review authority.
 ## Changed surfaces
 
 - `AGENTS.md` records the standing delegation and owner gates.
+- `docs/evidence-semantics-contract.md` applies the same authorized-review
+  rule to active Phase R2 root-debt reduction.
 - `docs/architecture/layout-migration-runbook.md` replaces human-only review
   wording with authorized-review rules and actual-reviewer attribution.
 - `tools/migration/batch_contract.py` documents the required `approved_by`

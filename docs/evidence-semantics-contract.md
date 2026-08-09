@@ -236,9 +236,17 @@ Grandfathered debt can leave root only through the normal migration contract:
    mathematical proof-obligation topology separately;
 2. resolve ownership and evidence boundaries;
 3. perform a documented dry run;
-4. obtain an exact frozen human-approved batch;
+4. obtain an exact frozen batch reviewed by an authorized reviewer;
 5. use `git mv` through the transaction-aware workflow; and
 6. validate paths, blobs, provenance, replays, and root arithmetic.
+
+Authorized review follows
+`docs/architecture/layout-migration-runbook.md`.  Under the repository
+owner's standing delegation dated 2026-08-08, Codex may act as the actual
+reviewer for routine, non-ambiguous, evidence-backed exact layout mappings;
+the batch must identify Codex and the delegation basis.  Scientific status or
+scope, genuinely ambiguous proof-boundary ownership, and architectural choices
+requiring owner preference remain owner-gated.
 
 Root-exit pressure never resolves ambiguous ownership.  When a family is
 mathematically entangled, it remains grandfathered debt until its boundary is
