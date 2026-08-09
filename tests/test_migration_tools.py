@@ -797,6 +797,58 @@ class StaleReferenceTests(unittest.TestCase):
         )
         self.assertEqual(hits, [])
 
+    def test_python_path_name_root_cwd_inside_package_fails(self):
+        text = (
+            'P4_SCRIPT = ROOT / "' + self.MOVED[self.BASE] + '"\n'
+            "subprocess.run((sys.executable, P4_SCRIPT.name), cwd=ROOT)\n"
+        )
+        hits = find_stale_bare_refs(
+            text,
+            "claims/p5/h22/disjoint-mixed-star/boundaries/tool.py",
+            self.MOVED,
+        )
+        self.assertIn(("python Path.name command", self.BASE), hits)
+
+    def test_python_path_name_package_cwd_inside_package_valid(self):
+        text = (
+            'P4_SCRIPT = ROOT / "' + self.MOVED[self.BASE] + '"\n'
+            "subprocess.run((sys.executable, P4_SCRIPT.name), "
+            "cwd=P4_SCRIPT.parent)\n"
+        )
+        hits = find_stale_bare_refs(
+            text,
+            "claims/p5/h22/disjoint-mixed-star/boundaries/tool.py",
+            self.MOVED,
+        )
+        self.assertEqual(hits, [])
+
+    def test_full_destination_path_name_reaches_stale_path_gate(self):
+        tmp = pathlib.Path(tempfile.mkdtemp())
+        new = self.MOVED[self.BASE]
+        make_fixture(tmp, self.MOVED)
+        helper = pathlib.PurePosixPath(new).parent / "helper.py"
+        helper_path = tmp / helper
+        helper_path.write_text(
+            'P4_SCRIPT = ROOT / "' + new + '"\n'
+            "subprocess.run((sys.executable, P4_SCRIPT.name), cwd=ROOT)\n",
+            encoding="utf-8",
+        )
+        original_root = check_hygiene.ROOT
+        original_failures = check_hygiene.failures
+        try:
+            check_hygiene.ROOT = tmp
+            check_hygiene.failures = []
+            check_hygiene.check_stale_paths(
+                [new, helper.as_posix(), "catalog/moved-paths.json"])
+            self.assertTrue(check_hygiene.failures)
+            self.assertIn(
+                self.BASE + " (python Path.name command)",
+                check_hygiene.failures[0],
+            )
+        finally:
+            check_hygiene.ROOT = original_root
+            check_hygiene.failures = original_failures
+
     def test_yaml_command_reference_fails(self):
         text = "run: python " + self.BASE + "\n"
         hits = find_stale_bare_refs(text, ".github/x.yml", self.MOVED)

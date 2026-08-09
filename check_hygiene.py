@@ -1061,26 +1061,33 @@ def check_stale_paths(files: list[str]) -> None:
 #     that are generated but never committed stay invisible);
 #   - a markdown link in a ROOT document (](base) resolves to root);
 #   - a python subprocess/command string outside the package;
+#   - a moved Python path truncated to ``.name`` inside the package when
+#     the same call explicitly sets ``cwd`` to repository root;
 #   - a shell/yaml python invocation outside the package.
 # Inside the destination package other bare references (prose mentions,
 # hashes of the sibling file) remain valid sibling references and must
 # not be flagged.
-def _python_path_name_commands(text: str, moved_by_base: dict) -> set[str]:
+def _python_path_name_commands(
+        text: str, moved_by_base: dict) -> tuple[set[str], set[str]]:
     """Find moved script paths truncated to ``PATH.name`` in Python argv.
 
     A correct destination assignment such as ``SCRIPT = ROOT / new_path``
     is still operationally stale when a command later passes
     ``SCRIPT.name`` from repository root: the attribute discards the package
     directory.  This bounded AST check follows only simple assigned names
-    into list/tuple argv expressions supplied directly to a call.  Arbitrary
-    metadata and display uses of ``.name`` are intentionally ignored.
+    into list/tuple argv expressions supplied directly to a call.  The
+    second result records the definite repository-root variant where that
+    same call explicitly supplies ``cwd=ROOT`` or ``cwd=REPO_ROOT``; this
+    must not be hidden by the destination-package sibling exemption.
+    Arbitrary metadata and display uses of ``.name`` are intentionally
+    ignored.
     """
     try:
         tree = ast.parse(text)
     except SyntaxError:
         # The compile phase reports syntax errors.  Stale-path checking must
         # not replace that clearer failure with a parser traceback.
-        return set()
+        return set(), set()
 
     assigned_bases: dict[str, set[str]] = {}
     for node in ast.walk(tree):
@@ -1110,6 +1117,7 @@ def _python_path_name_commands(text: str, moved_by_base: dict) -> set[str]:
                 assigned_bases.setdefault(target.id, set()).update(bases)
 
     stale = set()
+    repository_root_stale = set()
     for call in (node for node in ast.walk(tree)
                  if isinstance(node, ast.Call)):
         for argv in (arg for arg in call.args
@@ -1131,13 +1139,23 @@ def _python_path_name_commands(text: str, moved_by_base: dict) -> set[str]:
             )
             if not has_python:
                 continue
+            call_stale = set()
             for part in parts:
                 if not (isinstance(part, ast.Attribute)
                         and part.attr == "name"
                         and isinstance(part.value, ast.Name)):
                     continue
-                stale.update(assigned_bases.get(part.value.id, set()))
-    return stale
+                call_stale.update(assigned_bases.get(part.value.id, set()))
+            stale.update(call_stale)
+            has_repository_root_cwd = any(
+                keyword.arg == "cwd"
+                and isinstance(keyword.value, ast.Name)
+                and keyword.value.id in {"ROOT", "REPO_ROOT"}
+                for keyword in call.keywords
+            )
+            if has_repository_root_cwd:
+                repository_root_stale.update(call_stale)
+    return stale, repository_root_stale
 
 
 def find_stale_bare_refs(text: str, rel: str,
@@ -1171,9 +1189,9 @@ def find_stale_bare_refs(text: str, rel: str,
                     i = end + 1
                     continue
             i += 1
-    path_name_commands = (
+    path_name_commands, root_cwd_path_name_commands = (
         _python_path_name_commands(text, moved_by_base)
-        if rel.endswith(".py") else set()
+        if rel.endswith(".py") else (set(), set())
     )
     for base, new in moved_by_base.items():
         pkg_dir = str(pathlib.PurePosixPath(new).parent)
@@ -1200,6 +1218,11 @@ def find_stale_bare_refs(text: str, rel: str,
                 hits.append(("reference-style link", base))
                 continue
         elif rel.endswith(".py"):
+            # An explicit repository-root cwd makes PATH.name stale even
+            # when the caller lives inside the moved script's package.
+            if base in root_cwd_path_name_commands:
+                hits.append(("python Path.name command", base))
+                continue
             if in_package:
                 continue
             if base in path_name_commands:
