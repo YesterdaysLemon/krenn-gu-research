@@ -336,8 +336,8 @@ coefficient (22).
 Run
 
 ```text
-python verify_p5_h31_embedded_p3_component_support_two_boundary.py
-python audit_p5_h31_embedded_p3_component_support_two_boundary.py
+python claims/p5/h31/embedded-p3/verify_p5_h31_embedded_p3_component_support_two_boundary.py
+python claims/p5/h31/embedded-p3/audit_p5_h31_embedded_p3_component_support_two_boundary.py
 ```
 
 The primary verifier reconstructs the insertion pencil, all binary

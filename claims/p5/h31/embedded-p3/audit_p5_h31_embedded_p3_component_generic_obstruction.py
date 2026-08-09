@@ -6,15 +6,23 @@ from __future__ import annotations
 import hashlib
 import itertools
 import json
+import sys
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parent
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 THEOREM = (
-    ROOT / "P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
+    HERE / "P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
 PRIMARY = (
-    ROOT / "verify_p5_h31_embedded_p3_component_generic_obstruction.py"
+    HERE / "verify_p5_h31_embedded_p3_component_generic_obstruction.py"
 )
 WORDS = tuple(itertools.product((0, 1), repeat=3))
 ALPHA = (

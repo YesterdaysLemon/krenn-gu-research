@@ -31,12 +31,20 @@ PRIMARY = ROOT / (
     "derive_p5_h22_embedded_p3_component_r_zero_t_nonzero_"
     "weight_endpoints_obstruction_candidate.py"
 )
-H31_R_ZERO_NOTE = ROOT / "P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md"
-H31_R_ZERO_PRIMARY = ROOT / "verify_p5_h31_embedded_p3_component_r_zero_boundary.py"
+H31_R_ZERO_NOTE = (
+    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
+    / "P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md"
+)
+H31_R_ZERO_PRIMARY = (
+    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
+    / "verify_p5_h31_embedded_p3_component_r_zero_boundary.py"
+)
 H31_NORMALIZED_NOTE = ROOT / (
+    "claims/p5/h31/embedded-p3/"
     "P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md"
 )
 H31_NORMALIZED_PRIMARY = ROOT / (
+    "claims/p5/h31/embedded-p3/"
     "verify_p5_h31_embedded_p3_component_normalized_boundary.py"
 )
 

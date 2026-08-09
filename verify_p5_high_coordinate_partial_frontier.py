@@ -50,17 +50,17 @@ DEPENDENCIES = (
     (
     ROOT / "claims" / "p4" / "components" / "embedded-p3"
     / "P4_EMBEDDED_P3_PURE_COMPONENT.md"),
-    ROOT
+    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
     / "P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
     ROOT
     / "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
-    ROOT
+    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
     / "P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md",
-    ROOT
+    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
     / "P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md",
-    ROOT
+    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
     / "P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md",
-    ROOT
+    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
     / "P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md",
     ROOT
     / "P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md",

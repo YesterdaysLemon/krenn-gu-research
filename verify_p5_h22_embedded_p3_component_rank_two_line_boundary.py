@@ -24,7 +24,7 @@ THEOREM = (
 )
 GENERIC = ROOT / "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
 H31_BOUNDARY = (
-    ROOT
+    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
     / "P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md"
 )
 WORDS3 = tuple(itertools.product((0, 1), repeat=3))

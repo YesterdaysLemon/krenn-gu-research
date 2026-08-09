@@ -14,7 +14,7 @@ inputs:
   verify_p5_h31_embedded_p3_component_r_zero_boundary.py: c0a9069d8d4cc0522e592a797eacd1fd092f932655b712ceac1c4261c2ee5c10
 method: exact characteristic-zero reconstruction in original coordinates, structural zero-column obstructions, and coefficientwise identification of D01 at [0:1] with the verified deletion-zero H31 direction
 command: |
-  uv run --with sympy python verify_p5_h31_embedded_p3_component_r_zero_boundary.py
+  uv run --with sympy python claims/p5/h31/embedded-p3/verify_p5_h31_embedded_p3_component_r_zero_boundary.py
   uv run --with sympy python derive_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_obstruction_candidate.py
 outputs:
   derive_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_obstruction_candidate.py: hash reported by replay

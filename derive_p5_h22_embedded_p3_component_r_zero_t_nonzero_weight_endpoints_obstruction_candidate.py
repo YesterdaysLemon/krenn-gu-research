@@ -23,8 +23,14 @@ REPORT = ROOT / (
     "ENDPOINTS_OBSTRUCTION_CANDIDATE.md"
 )
 SOURCE = ROOT / "P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION_CANDIDATE.md"
-H31_NOTE = ROOT / "P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md"
-H31_VERIFIER = ROOT / "verify_p5_h31_embedded_p3_component_r_zero_boundary.py"
+H31_NOTE = (
+    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
+    / "P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md"
+)
+H31_VERIFIER = (
+    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
+    / "verify_p5_h31_embedded_p3_component_r_zero_boundary.py"
+)
 VERIFICATION_REPORT = ROOT / (
     "P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_T_NONZERO_WEIGHT_"
     "ENDPOINTS_VERIFICATION.md"

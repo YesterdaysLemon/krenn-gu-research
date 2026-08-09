@@ -1,18 +1,24 @@
-# P5 generic marked-`H31` obstruction packages
+# P5 marked-`H31` obstruction packages
 
-Each subdirectory is one migrated component-level generic
-marked-`H31` claim package: theorem document + primary verifier + an
-independent audit where one exists, moved together with preserved
-filenames.  Stage 9 used batch `p5-generic-obstructions-stage9`
+Most subdirectories are migrated component-level generic marked-`H31`
+claim packages: theorem document + primary verifier + an independent
+audit where one exists, moved together with preserved filenames.  The
+`embedded-p3/` package is the one exception: it contains the complete
+five-triple generic, boundary, and projective closure forest.  Stage 9
+used batch `p5-generic-obstructions-stage9`
 (mapping_sha256
 `68d20c08b987c2465395ec485647dc37c958d8400a8d05dede37559256a47f23`).
 Stage 10 used batch `p5-deferred-generics-stage10` (mapping_sha256
 `e39d17c3ed855ef5a1342560ebf61e9b313246142f24af23940bc3ff8af472db`).
+Stage 16 used batch `p5-h31-embedded-p3-stage16` (mapping_sha256
+`db3bf4cc6309334ffc2a9983456f8674d9df5f22c3f921c969bcc4af414d5fb7`).
 
-Every theorem here is a **generic/function-field** statement: the
-marked `H31` fibre is empty at the generic point of the named P4
-component (or on a dense open subset).  None closes special divisors,
-projective boundaries, or the pointwise locus.
+Except for the `embedded-p3/` closure forest described below, every
+theorem in the generic-package table is a **generic/function-field**
+statement: the marked `H31` fibre is empty at the generic point of the
+named P4 component (or on a dense open subset).  Those generic theorems
+do not close special divisors, projective boundaries, or the pointwise
+locus.
 
 | package | theorem | verifier | audit |
 |---|---|---|---|
@@ -38,6 +44,24 @@ projective boundaries, or the pointwise locus.
 | `unequal-complement-common-kernel/` | `P5_H31_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_GENERIC_OBSTRUCTION.md` | `verify_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py` | `audit_p5_h31_unequal_complement_common_kernel_component_generic_obstruction.py` |
 | `unequal-endpoint-inward-star/` | `P5_H31_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_GENERIC_OBSTRUCTION.md` | `verify_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py` | `audit_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction.py` |
 
+## Embedded-P3 closure forest
+
+The five triples in `embedded-p3/` are one proof-obligation forest.  The
+normalized, support-two, and `r=0` theorems close the affine charts used
+by the projective case-union theorem.
+
+| scope | theorem | verifier | audit |
+|---|---|---|---|
+| dense generic point | `P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md` | `verify_p5_h31_embedded_p3_component_generic_obstruction.py` | `audit_p5_h31_embedded_p3_component_generic_obstruction.py` |
+| normalized `A B r != 0` chart | `P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md` | `verify_p5_h31_embedded_p3_component_normalized_boundary.py` | `audit_p5_h31_embedded_p3_component_normalized_boundary.py` |
+| support-two `A=0, B!=0` divisor | `P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md` | `verify_p5_h31_embedded_p3_component_support_two_boundary.py` | `audit_p5_h31_embedded_p3_component_support_two_boundary.py` |
+| `r=0, A B!=0` divisor | `P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md` | `verify_p5_h31_embedded_p3_component_r_zero_boundary.py` | `audit_p5_h31_embedded_p3_component_r_zero_boundary.py` |
+| full projective ninth component | `P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md` | `verify_p5_h31_embedded_p3_component_projective_closure.py` | `audit_p5_h31_embedded_p3_component_projective_closure.py` |
+
+Only the generic triple has a curated theorem-ledger entry, whose status
+remains `verified_generic`.  Each audit is modular corroboration and does
+not replace its theorem's characteristic-zero proof.
+
 ## Extras
 
 `all-rank-one-triangle/` also carries
@@ -62,11 +86,13 @@ and is not part of the characteristic-zero verification.
 
 ## Not migrated here
 
-The H31 diagonal-quadric **elliptic**, embedded-p3, and
+The H31 diagonal-quadric **elliptic** and
 common-active-binary-triangle generic documents remain at the
 repository root with their boundary forests: their generic cores are
 not separable from descendant evidence at this granularity.  The
-equal-support-sixfold package is present with its actual primary-only
-evidence structure; migration did not create an audit or promote its
-status.  Migration status changes no theorem claim; the global
-conjecture remains **UNRESOLVED**.
+separate weighted-H22 embedded-P3 programme also remains at root; its
+projective coverage is still open and it is not part of the closed H31
+forest above.  The equal-support-sixfold package is present with its
+actual primary-only evidence structure; migration did not create an
+audit or promote its status.  Migration status changes no theorem
+claim; the global conjecture remains **UNRESOLVED**.

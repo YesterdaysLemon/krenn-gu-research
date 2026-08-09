@@ -3490,7 +3490,7 @@ strictly advance the finite frontier:
   three signed projective lines plus three coordinate points; on a
   generic projected mode-zero line, every possible kernel kills the
   required all-alpha diagonal:
-  [`P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
+  [`P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
   The generic weighted `H22` fibre is empty at binary level too:
   `D_23^r` has a structural zero diagonal, while `D_01^r` is the same
   insertion arrangement on a slope-dependent projective line:
@@ -3500,7 +3500,7 @@ strictly advance the finite frontier:
   leave five binary survivor families; four fail small one-marked
   covers, while the deepest rank-three point fails a constant stacked
   determinant `8`:
-  [`P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md).
+  [`P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md`](claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md).
   The weighted `H22` boundary is now closed whenever its projected
   mode-zero image is still a line.  Four arrangement strata leave six
   binary marked families; factored one-marked covers exclude them,

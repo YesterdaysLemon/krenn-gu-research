@@ -137,8 +137,8 @@ that paper is required here.
 Run
 
 ```text
-python verify_p5_h31_embedded_p3_component_projective_closure.py
-python audit_p5_h31_embedded_p3_component_projective_closure.py
+python claims/p5/h31/embedded-p3/verify_p5_h31_embedded_p3_component_projective_closure.py
+python claims/p5/h31/embedded-p3/audit_p5_h31_embedded_p3_component_projective_closure.py
 ```
 
 The primary verifier reconstructs (4), checks the three support-one

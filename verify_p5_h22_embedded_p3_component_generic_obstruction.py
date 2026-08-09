@@ -18,7 +18,10 @@ THEOREM = (
 COMPONENT = (
     ROOT / "claims" / "p4" / "components" / "embedded-p3"
     / "P4_EMBEDDED_P3_PURE_COMPONENT.md")
-H31 = ROOT / "P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
+H31 = (
+    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
+    / "P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
+)
 WORDS3 = tuple(itertools.product((0, 1), repeat=3))
 WORDS4 = tuple(itertools.product((0, 1), repeat=4))
 

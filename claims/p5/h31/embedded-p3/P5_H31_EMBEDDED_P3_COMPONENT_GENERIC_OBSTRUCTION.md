@@ -4,7 +4,7 @@
 
 This is an exact characteristic-zero theorem on a dense open subset of
 the ninth pure-`P_4` component constructed in
-[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](claims/p4/components/embedded-p3/P4_EMBEDDED_P3_PURE_COMPONENT.md).
+[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](../../../p4/components/embedded-p3/P4_EMBEDDED_P3_PURE_COMPONENT.md).
 
 The complete marked `H31` fibre over the generic point of that
 component is empty.  In fact, no marked binary neighbour exists: the
@@ -313,8 +313,8 @@ six maximal minors, and a projective line avoiding nine points.
 Run
 
 ```text
-python verify_p5_h31_embedded_p3_component_generic_obstruction.py
-python audit_p5_h31_embedded_p3_component_generic_obstruction.py
+python claims/p5/h31/embedded-p3/verify_p5_h31_embedded_p3_component_generic_obstruction.py
+python claims/p5/h31/embedded-p3/audit_p5_h31_embedded_p3_component_generic_obstruction.py
 ```
 
 The primary verifier reconstructs the pure tensors, the insertion
@@ -343,4 +343,4 @@ its projective compactification is closed separately in
 [`P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md).
 Hence the complete marked `H31` fibre of the ninth component is empty.
 Its generic weighted `H22` fibre is closed separately in
-[`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
