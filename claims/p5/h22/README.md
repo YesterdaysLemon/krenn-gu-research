@@ -8,11 +8,16 @@ filenames.  Stage 9 used batch `p5-generic-obstructions-stage9`
 `68d20c08b987c2465395ec485647dc37c958d8400a8d05dede37559256a47f23`).
 Stage 10 used batch `p5-deferred-generics-stage10` (mapping_sha256
 `e39d17c3ed855ef5a1342560ebf61e9b313246142f24af23940bc3ff8af472db`).
+Stage 13 used batch `p5-h22-split-center-stage13` (mapping_sha256
+`fd1d3e4163068b2e0e16f6e6161a52f822a4d02acd74bdd5e80e5bc6ba341154`).
 
 Every theorem here is a **generic/function-field** statement: the
 weighted `H22` incidence is empty at the generic point of the named
-P4 component (or on a dense open subset).  None closes special
-divisors, slope/projective boundaries, or the pointwise locus.
+P4 component (or on a dense open subset).  None closes every special
+component-parameter divisor or the global pointwise locus.  Weight
+scope is package-specific: the split-center package covers every finite
+`[lambda:1]` weight and `[1:0]`, while other packages may leave
+slope/projective boundaries open.
 
 | package | theorem | verifier | audit |
 |---|---|---|---|
@@ -30,6 +35,7 @@ divisors, slope/projective boundaries, or the pointwise locus.
 | `mixed-orientation/` | `P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md` | `verify_p5_h22_mixed_orientation_component_generic_obstruction.py` | `audit_p5_h22_mixed_orientation_component_generic_obstruction.py` |
 | `one-three-components/` | `P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md` | `verify_p5_h22_one_three_components_generic_obstruction.py` | `audit_p5_h22_one_three_components_generic_obstruction.py` |
 | `six-dimensional/` | `P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md` | `verify_p5_h22_six_dimensional_component_generic_obstruction.py` | `audit_p5_h22_six_dimensional_component_generic_obstruction.py` |
+| `split-center-mixed-star/` | `P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md` | `verify_p5_h22_split_center_mixed_star_component_generic_obstruction.py` | `audit_p5_h22_split_center_mixed_star_component_generic_obstruction.py` |
 | `transverse-common-factor/` | `P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md` | `verify_p5_h22_transverse_common_factor_component_generic_obstruction.py` | `audit_p5_h22_transverse_common_factor_component_generic_obstruction.py` |
 | `two-rank-two-spoke-mixed-star/` | `P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md` | `verify_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py` | `audit_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py` |
 
@@ -53,6 +59,12 @@ mirroring the pilot's treatment of its working note.
   `p5_high_coordinate_tree_chart_cegar.py` (Singular timeout helper)
   and `verify_p5_h31_marked_basis_open_branch.py` remain at the
   repository root.
+- The split-center verifier specifically imports `build_model` and
+  `project` from
+  `derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py`,
+  and `one_marked_map` from
+  `verify_p5_h31_marked_basis_open_branch.py`.  Both shared providers
+  remain at the repository root pending their own ownership decisions.
 - Intra-batch sibling edges: `disjoint-secant` imports its H31 sibling
   and the `full-support-tangent` H22 verifier; `full-support-tangent`
   imports its H31 sibling.  These resolve through
@@ -63,10 +75,11 @@ mirroring the pilot's treatment of its working note.
 ## Not migrated here
 
 The H22 common-center-kernel-star partial theorem, unequal-complement
-and unequal-endpoint recursion, split-center theorem with its
-candidate-derived dependency, and embedded-p3 / common-active-binary-
+and unequal-endpoint recursion, and embedded-p3 / common-active-binary-
 triangle documents remain at the repository root with their boundary
-forests or open recursion.  The equal-support-sixfold package is
-present with its actual primary-only evidence structure; migration did
-not create an audit or promote its status.  Migration status changes no
-theorem claim; the global conjecture remains **UNRESOLVED**.
+forests or open recursion.  The split-center theorem package is present,
+but its candidate-housed shared construction remains at root pending a
+separate ownership decision.  The equal-support-sixfold package is present
+with its actual primary-only evidence structure; migration did not create
+an audit or promote its status.  Migration status changes no theorem claim;
+the global conjecture remains **UNRESOLVED**.
