@@ -1,7 +1,7 @@
 # Layout migration report — Stage 14 (dependency portability and stale-path enforcement)
 
 Status: **the bounded Stage 14 correctness repair is complete locally and
-ready for two fresh Tier-2 merge-gate reviews.**  The stage repairs four
+awaiting fresh exact-head Tier-2 merge-gate reviews.**  The stage repairs four
 hidden moved-script command paths across three root H22 audits, restores
 foreign-working-directory execution for one migrated P4 analyzer, and teaches
 hygiene to reject the `Path(...).name` command pattern that hid those failures.
@@ -19,6 +19,8 @@ hygiene to reject the `Path(...).name` command pattern that hid those failures.
 - Runtime repair commit: `f6d94228549f5223013abdd9526073670d408c6f`.
 - Enforcement and regression commit:
   `97d401c99028304c8addf54da94ad6bc5834c6c2`.
+- Explicit-root-working-directory hardening commit:
+  `39c3af551c93c8399121f57ccd50875096d1e11e`.
 - The Stage 13 mandatory program audit first identified the common-active
   stale path and analyzer bootstrap-order defect in
   [`layout-migration-stage13-report.md`](layout-migration-stage13-report.md).
@@ -91,16 +93,28 @@ The new bounded AST check:
 3. inspects list/tuple argv expressions supplied directly to calls;
 4. requires a Python launcher (`python`, `python3`, or `sys.executable`) and
    the assigned variable's `.name`; and
-5. preserves the existing destination-package and provenance exemptions.
+5. preserves the destination-package and provenance exemptions for genuine
+   sibling use, but does not let package location suppress an explicitly
+   repository-root `cwd` command.
 
 Original Python text is used for this check, because masking a correct current
 destination would otherwise hide the destructive `.name` operation.  Syntax
 errors remain the compile phase's responsibility.
 
-Six focused regressions cover a retired bare assignment, a correct full
+Nine focused regressions cover a retired bare assignment, a correct full
 destination still truncated by `.name`, `sys.executable`, a correct
-repository-relative command, metadata-only `.name`, and the existing
-in-package exemption.  The real repository has zero remaining violations.
+repository-relative command, metadata-only `.name`, the ordinary in-package
+exemption, an explicit `cwd=ROOT` override, a package-directory `cwd`, and an
+end-to-end `check_stale_paths()` fixture proving that original Python text
+reaches the AST gate.  The real repository has zero remaining violations.
+
+The first adversarial enforcement review found that the initial implementation
+applied the destination-package exemption before the AST result.  A caller
+inside the destination package could therefore pass `SCRIPT.name` while the
+same call explicitly set `cwd=ROOT`.  The hardening commit records definite
+`ROOT`/`REPO_ROOT` calls separately and checks them before the sibling
+exemption; ambiguous no-`cwd` use and `cwd=SCRIPT.parent` retain the existing
+package-local policy.
 
 ## Semantic replay
 
@@ -114,8 +128,8 @@ Its owning P4 primary and independent audit passed with the same standard
 basis data `(18, 0, 9)`; the primary kept
 `global_conjecture_resolved: false`.
 
-All three repaired H22 audits were then replayed at exact committed head
-`97d401c99028304c8addf54da94ad6bc5834c6c2`:
+All three repaired H22 audits were then replayed at exact committed report
+candidate `540f842fe3e8ad0ed8d7beb2fca25320c9aa545f`:
 
 | audit | wall time | semantic result |
 |---|---:|---|
@@ -123,8 +137,9 @@ All three repaired H22 audits were then replayed at exact committed head
 | coincident-support rank-one star | 19.085 s | pass; generic H22 empty; special/projective boundary fibres false; global false |
 | common-kernel vertical triangle | 52.872 s | pass; generic H22 empty; special/projective boundary fibres false; global false |
 
-Each output embedded the exact `97d401c` Git commit.  Replays changed no
-tracked output.
+Each output embedded the exact `540f842` Git commit.  Replays changed no
+tracked output.  The later adversarial-review fix changes only hygiene and its
+tests; it does not touch the replayed runtime or scientific files.
 
 ## Validation floor
 
@@ -134,9 +149,9 @@ The index-complete substantive tree passes:
 - Ruff for the modified hygiene/tests with only their unchanged baseline
   `F841`/`E741` findings excluded;
 - `py_compile` for all six changed Python files;
-- all 24 focused stale-reference tests;
+- all 27 focused stale-reference tests;
 - `check_hygiene.py` on the real repository in 20.020 seconds;
-- all 149 migration-tool tests;
+- all 152 migration-tool tests;
 - all 14 fourteen-vertex cycle-cover lattice tests; and
 - migration-rewriter fixed point with a clean working tree.
 
