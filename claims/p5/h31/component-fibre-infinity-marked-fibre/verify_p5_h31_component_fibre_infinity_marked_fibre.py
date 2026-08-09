@@ -7,38 +7,46 @@ import hashlib
 import json
 import re
 import subprocess
+import sys
 import time
 from dataclasses import dataclass
 from pathlib import Path
 
 import sympy as sp
 
-from derive_p5_h31_fibre_infinity_marked_fibre_elimination import (
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__, also=["."])
+
+from derive_p5_h31_fibre_infinity_marked_fibre_elimination import (  # noqa: E402
     rows,
     singular_program,
 )
-from p5_high_coordinate_tree_chart_cegar import (
+
+from p5_high_coordinate_tree_chart_cegar import (  # noqa: E402
     singular_command_with_timeout,
 )
-from verify_p5_h31_marked_basis_open_branch import (
+from verify_p5_h31_marked_basis_open_branch import (  # noqa: E402
     marked_extension,
     mixed_matrix,
     one_marked_map,
     permanent,
 )
 
-
-ROOT = Path(__file__).resolve().parent
 THEOREM = (
-    ROOT / "P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md"
+    HERE / "P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md"
 )
 CANONICAL = (
-    ROOT
+    REPO_ROOT
     / "claims/p5/h31/component-fiber-infinity/P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md"
 )
-PLANE = ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
+PLANE = REPO_ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
 GENERATOR = (
-    ROOT / "derive_p5_h31_fibre_infinity_marked_fibre_elimination.py"
+    HERE / "derive_p5_h31_fibre_infinity_marked_fibre_elimination.py"
 )
 
 A, D, E = sp.symbols("A D E")

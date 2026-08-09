@@ -9,7 +9,6 @@ from pathlib import Path
 
 import sympy as sp
 
-
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md"
 DEPENDENCIES = (
@@ -94,7 +93,9 @@ DEPENDENCIES = (
     ROOT / "P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md",
     ROOT
     / "claims/p5/h31/component-fiber-infinity/P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md",
-    ROOT / "P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md",
+    ROOT
+    / "claims/p5/h31/component-fibre-infinity-marked-fibre"
+    / "P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md",
     ROOT / "claims" / "p5" / "h31" / "internal-e0-marked-fibre"
     / "P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md",
     ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/boundaries/P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md",

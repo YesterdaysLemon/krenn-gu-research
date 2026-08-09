@@ -1,0 +1,29 @@
+{
+  "batch_id": "p5-h31-component-fibre-infinity-marked-fibre-stage24",
+  "approved_by": "Codex (exact mapping reviewer under repository-owner standing delegation dated 2026-08-08)",
+  "approved_at": "2026-08-09",
+  "base_sha": "26f7a48817de6f9e4b435966dc836c5a03e9a5bb",
+  "manifest_sha256": "0cc191a112b2cda2a525939b1a6ca7749c617478c58a914a3c6e3951fa2f24a8",
+  "mapping_sha256": "103e5de3343c1271841a84cfa79903c9d9e8c6f2c318adc8325c3b8cd1a3ace1",
+  "member_count": 4,
+  "moves": [
+    {
+      "old_path": "P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/component-fibre-infinity-marked-fibre/P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "audit_p5_h31_component_fibre_infinity_marked_fibre.py",
+      "new_path": "claims/p5/h31/component-fibre-infinity-marked-fibre/audit_p5_h31_component_fibre_infinity_marked_fibre.py"
+    },
+    {
+      "old_path": "derive_p5_h31_fibre_infinity_marked_fibre_elimination.py",
+      "new_path": "claims/p5/h31/component-fibre-infinity-marked-fibre/derive_p5_h31_fibre_infinity_marked_fibre_elimination.py"
+    },
+    {
+      "old_path": "verify_p5_h31_component_fibre_infinity_marked_fibre.py",
+      "new_path": "claims/p5/h31/component-fibre-infinity-marked-fibre/verify_p5_h31_component_fibre_infinity_marked_fibre.py"
+    }
+  ],
+  "rationale": "Stage 24: migrate the exact complete first-plane Schubert-infinity marked-fibre theorem, characteristic-zero primary, modular audit, and uniquely owned elimination generator after independent topology, status, provenance, and mechanical audits established one routine divisor-scoped proof leaf.",
+  "notes": "Exact mapping reviewed by Codex under the repository-owner standing delegation dated 2026-08-08. Preserve the live canonical-predecessor lineage, the 21-component/25-chart/154-product characteristic-zero scope, the modular-QA shared-helper qualification, the scope-local internal-E0/additional/global false fields, the blocked chart-boundary fourteen-versus-sixteen family, all unadjudicated attribution and component-provenance conflicts, zero selected-artifact ledger entries, and global Krenn-Gu UNRESOLVED."
+}
