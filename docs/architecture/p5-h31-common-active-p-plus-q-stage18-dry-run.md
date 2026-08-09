@@ -88,7 +88,8 @@ shared P4 diagonal-DVR arc exhaustion (stays P4-owned)
        -> already-migrated embedded-P3 projective closure
        => the stated whole p+q=0 marked-H31 wall is closed
 
-weighted H22, broader component closure, gluing, and global stay open
+weighted H22 on this wall is separately VERIFIED and outside Stage 18;
+broader component closure, gluing, and global stay open
 ```
 
 The aggregate theorem explicitly consumes both child certificates. The
