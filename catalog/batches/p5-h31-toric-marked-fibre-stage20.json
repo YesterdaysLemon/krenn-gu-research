@@ -1,0 +1,25 @@
+{
+  "batch_id": "p5-h31-toric-marked-fibre-stage20",
+  "approved_by": "Codex (exact mapping reviewer under repository-owner standing delegation dated 2026-08-08)",
+  "approved_at": "2026-08-08",
+  "base_sha": "0c368f1f0b1467ccb2ab2e57517ce742aa2bf9ec",
+  "manifest_sha256": "1398c2c84219d32cd26c50e68d4315f448a84d3cee8723cdb1a068bf0e566d30",
+  "mapping_sha256": "48c99b929b824d4cf5709406aa846beb4a3f47cf18f570e936910ee9408621a2",
+  "member_count": 3,
+  "moves": [
+    {
+      "old_path": "P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/toric-marked-fibre/P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "audit_p5_h31_toric_marked_fibre_obstruction.py",
+      "new_path": "claims/p5/h31/toric-marked-fibre/audit_p5_h31_toric_marked_fibre_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_toric_marked_fibre_obstruction.py",
+      "new_path": "claims/p5/h31/toric-marked-fibre/verify_p5_h31_toric_marked_fibre_obstruction.py"
+    }
+  ],
+  "rationale": "Stage 20: migrate the exact theorem, characteristic-zero primary, and downstream-independent modular audit for the complete marked-H31 obstruction on the 21 genuine toric base-orbit/orientation cases of the first known pure-rank-two component after independent topology, provenance, and mechanical audits established one routine scoped proof leaf.",
+  "notes": "Exact mapping reviewed by Codex under the repository-owner standing delegation dated 2026-08-08. Classifier confidence is proposal evidence only. Preserve first-component toric scope, the shared construction/data limits of the modular audit, the broader second-component provenance conflict without adjudication, shared root helpers, zero selected-artifact ledger entries, and global Krenn-Gu UNRESOLVED."
+}
