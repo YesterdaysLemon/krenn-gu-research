@@ -129,7 +129,7 @@ change.
 The index-complete candidate tree passes:
 
 - Ruff and `py_compile` for both moved executables;
-- `check_hygiene.py`: 1,698 Python files compile, all 799 Markdown files have
+- `check_hygiene.py`: 1,698 Python files compile, all 800 Markdown files have
   resolving local links, all 86 ledger document hashes match, no new root
   debt exists, and all 353 retired paths and batch-provenance records pass;
 - all 143 migration-tool tests;
