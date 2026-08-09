@@ -17,18 +17,18 @@
     "batch_directory": "catalog/batches"
   },
   "counts": {
-    "total_classified_moves": 2056,
+    "total_classified_moves": 2124,
     "moved": 998,
     "pilot": 0,
-    "proposed_high_confidence": 52,
+    "proposed_high_confidence": 120,
     "review_required": 1006,
-    "unclassified": 307,
+    "unclassified": 239,
     "root_files_before": 2363,
     "root_dirs_before": 3,
     "root_entries_before": 2366,
     "projected_root_if_moved_only": 1374,
-    "projected_root_if_high_confidence_batches_executed": 1322,
-    "projected_root_if_all_classified_executed": 316,
+    "projected_root_if_high_confidence_batches_executed": 1254,
+    "projected_root_if_all_classified_executed": 248,
     "projection_note": "unclassified files are not members of any move set, so every projection already leaves them at the root; do not add unclassified again",
     "collisions": 0,
     "double_moves": 0,
@@ -3336,6 +3336,14 @@
       "confidence": "medium"
     },
     {
+      "old_path": "verify_six_vertex_final.py",
+      "new_path": "claims/finite/n06/verify_six_vertex_final.py",
+      "reason": "claim_script -> finite/six-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/six-vertex",
+      "confidence": "high"
+    },
+    {
       "old_path": "EIGHT_VERTEX_16EDGE_CERTIFICATE.md",
       "new_path": "claims/finite/n08/EIGHT_VERTEX_16EDGE_CERTIFICATE.md",
       "reason": "claim_document -> finite/eight-vertex",
@@ -3408,6 +3416,94 @@
       "confidence": "medium"
     },
     {
+      "old_path": "audit_eight_vertex_balanced_set_trees.py",
+      "new_path": "claims/finite/n08/audit_eight_vertex_balanced_set_trees.py",
+      "reason": "claim_script -> finite/eight-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "audit_eight_vertex_parity_hafnian_supports.py",
+      "new_path": "claims/finite/n08/audit_eight_vertex_parity_hafnian_supports.py",
+      "reason": "claim_script -> finite/eight-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "certify_eight_vertex_balanced_set_trees.py",
+      "new_path": "claims/finite/n08/certify_eight_vertex_balanced_set_trees.py",
+      "reason": "claim_script -> finite/eight-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "certify_eight_vertex_parity_hafnian_supports.py",
+      "new_path": "claims/finite/n08/certify_eight_vertex_parity_hafnian_supports.py",
+      "reason": "claim_script -> finite/eight-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "eight_vertex_local_degree4_support.py",
+      "new_path": "claims/finite/n08/eight_vertex_local_degree4_support.py",
+      "reason": "claim_script -> finite/eight-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_cancellation_transport_manifest.py",
+      "new_path": "claims/finite/n08/verify_cancellation_transport_manifest.py",
+      "reason": "claim_script -> finite/eight-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_catalogue_selector.py",
+      "new_path": "claims/finite/n08/verify_catalogue_selector.py",
+      "reason": "claim_script -> finite/eight-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_eight_vertex_16edge.py",
+      "new_path": "claims/finite/n08/verify_eight_vertex_16edge.py",
+      "reason": "claim_script -> finite/eight-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_eight_vertex_4regular.py",
+      "new_path": "claims/finite/n08/verify_eight_vertex_4regular.py",
+      "reason": "claim_script -> finite/eight-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_eight_vertex_degree3_e19.py",
+      "new_path": "claims/finite/n08/verify_eight_vertex_degree3_e19.py",
+      "reason": "claim_script -> finite/eight-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_eight_vertex_degree4_e17.py",
+      "new_path": "claims/finite/n08/verify_eight_vertex_degree4_e17.py",
+      "reason": "claim_script -> finite/eight-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high"
+    },
+    {
       "old_path": "verify_eight_vertex_degree4_frontier.py",
       "new_path": "claims/finite/n08/verify_eight_vertex_degree4_frontier.py",
       "reason": "claim_script -> finite/eight-vertex",
@@ -3418,6 +3514,54 @@
     {
       "old_path": "verify_eight_vertex_entry84_boundary.py",
       "new_path": "claims/finite/n08/verify_eight_vertex_entry84_boundary.py",
+      "reason": "claim_script -> finite/eight-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_eight_vertex_three_amplitude_forks.py",
+      "new_path": "claims/finite/n08/verify_eight_vertex_three_amplitude_forks.py",
+      "reason": "claim_script -> finite/eight-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_five_regular_double_c4_singleton_family.py",
+      "new_path": "claims/finite/n08/verify_five_regular_double_c4_singleton_family.py",
+      "reason": "claim_script -> finite/eight-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_five_regular_full_singleton_family.py",
+      "new_path": "claims/finite/n08/verify_five_regular_full_singleton_family.py",
+      "reason": "claim_script -> finite/eight-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_matching_rectangle_manifest.py",
+      "new_path": "claims/finite/n08/verify_matching_rectangle_manifest.py",
+      "reason": "claim_script -> finite/eight-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_skeleton_laurent_batch.py",
+      "new_path": "claims/finite/n08/verify_skeleton_laurent_batch.py",
+      "reason": "claim_script -> finite/eight-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_unary_cycle_relation_family.py",
+      "new_path": "claims/finite/n08/verify_unary_cycle_relation_family.py",
       "reason": "claim_script -> finite/eight-vertex",
       "status": "proposed_high_confidence",
       "claim_family": "finite/eight-vertex",
@@ -3472,8 +3616,72 @@
       "confidence": "medium"
     },
     {
+      "old_path": "audit_ten_vertex_balanced_set_trees.py",
+      "new_path": "claims/finite/n10/audit_ten_vertex_balanced_set_trees.py",
+      "reason": "claim_script -> finite/ten-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/ten-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "certify_ten_vertex_balanced_set_trees.py",
+      "new_path": "claims/finite/n10/certify_ten_vertex_balanced_set_trees.py",
+      "reason": "claim_script -> finite/ten-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/ten-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_ten_vertex_c10_equality_family.py",
+      "new_path": "claims/finite/n10/verify_ten_vertex_c10_equality_family.py",
+      "reason": "claim_script -> finite/ten-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/ten-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_ten_vertex_c4_c6_equality_family.py",
+      "new_path": "claims/finite/n10/verify_ten_vertex_c4_c6_equality_family.py",
+      "reason": "claim_script -> finite/ten-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/ten-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_ten_vertex_equality_factor_lattice.py",
+      "new_path": "claims/finite/n10/verify_ten_vertex_equality_factor_lattice.py",
+      "reason": "claim_script -> finite/ten-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/ten-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_ten_vertex_equality_factor_lattice_final.py",
+      "new_path": "claims/finite/n10/verify_ten_vertex_equality_factor_lattice_final.py",
+      "reason": "claim_script -> finite/ten-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/ten-vertex",
+      "confidence": "high"
+    },
+    {
       "old_path": "verify_ten_vertex_five_regular_equality_boundary.py",
       "new_path": "claims/finite/n10/verify_ten_vertex_five_regular_equality_boundary.py",
+      "reason": "claim_script -> finite/ten-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/ten-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_ten_vertex_odd_factor_equality_family.py",
+      "new_path": "claims/finite/n10/verify_ten_vertex_odd_factor_equality_family.py",
+      "reason": "claim_script -> finite/ten-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/ten-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_ten_vertex_three_amplitude_certificate.py",
+      "new_path": "claims/finite/n10/verify_ten_vertex_three_amplitude_certificate.py",
       "reason": "claim_script -> finite/ten-vertex",
       "status": "proposed_high_confidence",
       "claim_family": "finite/ten-vertex",
@@ -3494,6 +3702,30 @@
       "status": "review_required",
       "claim_family": "finite/twelve-vertex",
       "confidence": "medium"
+    },
+    {
+      "old_path": "audit_twelve_vertex_complement_profile.py",
+      "new_path": "claims/finite/n12/audit_twelve_vertex_complement_profile.py",
+      "reason": "claim_script -> finite/twelve-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/twelve-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "audit_twelve_vertex_port_cell_orbits.py",
+      "new_path": "claims/finite/n12/audit_twelve_vertex_port_cell_orbits.py",
+      "reason": "claim_script -> finite/twelve-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/twelve-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "certify_twelve_vertex_complement_profile.py",
+      "new_path": "claims/finite/n12/certify_twelve_vertex_complement_profile.py",
+      "reason": "claim_script -> finite/twelve-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/twelve-vertex",
+      "confidence": "high"
     },
     {
       "old_path": "FOURTEEN_VERTEX_C3_C3_C4_C4_FAMILY_CERTIFICATE.md",
@@ -3742,6 +3974,318 @@
       "status": "review_required",
       "claim_family": "finite/fourteen-vertex",
       "confidence": "medium"
+    },
+    {
+      "old_path": "certify_fourteen_vertex_binomial_trinomial.py",
+      "new_path": "claims/finite/n14/certify_fourteen_vertex_binomial_trinomial.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "certify_fourteen_vertex_c3_c4_c7_family.py",
+      "new_path": "claims/finite/n14/certify_fourteen_vertex_c3_c4_c7_family.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "certify_fourteen_vertex_matching_fork.py",
+      "new_path": "claims/finite/n14/certify_fourteen_vertex_matching_fork.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_binomial_support_closure_augmentation.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_binomial_support_closure_augmentation.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_binomial_trinomial.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_binomial_trinomial.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c3_c3_c4_c4_family.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c3_c3_c4_c4_family.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c3_c3_c8_family.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c3_c3_c8_family.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c3_c4_c7_family.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c3_c4_c7_family.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c3_c5_c6_family.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c3_c5_c6_family.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_10_orbit1.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_10_orbit1.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_58_orbits.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_58_orbits.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit2.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit2.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit3.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit3.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit44_core24.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit44_core24.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit44_extension.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit44_extension.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit5.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit5.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit6.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit6.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit7.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit7.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit8.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit8.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c5_c5_family.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c5_c5_family.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_108_orbits.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_108_orbits.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_117_orbits.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_117_orbits.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_118_orbits.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_118_orbits.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_119_orbits.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_119_orbits.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_121_orbits_kappa3.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_121_orbits_kappa3.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_122_orbits_kappa3.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_122_orbits_kappa3.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_123_orbits_kappa3.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_123_orbits_kappa3.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_124_orbits_kappa3.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_124_orbits_kappa3.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_125_orbits_kappa3.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_125_orbits_kappa3.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_130_orbits_kappa3.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_130_orbits_kappa3.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_orbits0_2.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_orbits0_2.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_minimal_circuit_frontiers.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_minimal_circuit_frontiers.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_one_extra_cycle_core.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_one_extra_cycle_core.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_partial_circuit_binomial_branch.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_partial_circuit_binomial_branch.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_partial_circuit_binomial_selection_chain.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_partial_circuit_binomial_selection_chain.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_two_even_cycle_minimum_activity_augmentation.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_two_even_cycle_minimum_activity_augmentation.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_two_even_cycle_one_extra_cycle_augmentation.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_two_even_cycle_one_extra_cycle_augmentation.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_unforced_factor_choice_core.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_unforced_factor_choice_core.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_materialized_dimacs_clause_subset.py",
+      "new_path": "claims/finite/n14/verify_materialized_dimacs_clause_subset.py",
+      "reason": "claim_script -> finite/fourteen-vertex",
+      "status": "proposed_high_confidence",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high"
     },
     {
       "old_path": "EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md",
@@ -17486,7 +18030,7 @@
     }
   ],
   "destination_subtree_counts": {
-    "claims": 1806,
+    "claims": 1874,
     "tools": 208,
     "src": 33,
     "docs": 8,

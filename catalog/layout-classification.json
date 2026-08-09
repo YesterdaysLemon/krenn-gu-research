@@ -27,17 +27,17 @@
     "p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b": 43,
     "p6": 39,
     "p5/h22/disjoint-mixed-star": 35,
-    "finite/fourteen-vertex": 31,
+    "finite/fourteen-vertex": 70,
     "p5/boundaries": 31,
     "p5/coordinate-cegar": 24,
     "p5/h31/common-active-binary-triangle": 21,
     "p5/h22/embedded-p3": 20,
     "p5/h31/embedded-p3": 15,
     "p5/h31/common-center-kernel-star": 12,
-    "finite/eight-vertex": 11,
+    "finite/eight-vertex": 28,
     "legacy": 10,
     "p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor": 9,
-    "finite/ten-vertex": 7,
+    "finite/ten-vertex": 15,
     "p5/h22/common-active-binary-triangle-p-plus-q-boundary": 7,
     "p5/h22/coincident-support": 6,
     "p5/h22/six-dimensional": 6,
@@ -171,7 +171,7 @@
     "p5/h31/two-rank-two-spoke-mixed-star": 3,
     "p5/h31/unequal-complement-common-kernel": 3,
     "p5/h31/unequal-endpoint-inward-star": 3,
-    "finite/twelve-vertex": 2,
+    "finite/twelve-vertex": 5,
     "p5/h22/common-active-binary-triangle-p-plus-q-b-full-infinity-finite-pair": 2,
     "p5/h22/common-active-binary-triangle-p-plus-q-generic-d01-infinity": 2,
     "p5/h22/common-active-binary-triangle-p-plus-q-infinity-endpoint-compatibility": 2,
@@ -198,7 +198,7 @@
     "p5/h31/elliptic-end-t2-divisor-q3": 2,
     "p5/h31/elliptic-end-t3-divisor-q3": 2,
     "p5/h31/equal-support-sixfold": 2,
-    "finite/six-vertex": 1,
+    "finite/six-vertex": 2,
     "p5/h22/common-active-binary-triangle-p-plus-q-b-drop-finite-d23": 1,
     "p5/h22/common-active-binary-triangle-p-plus-q-b-full-infinity-finite-pair-verifier": 1,
     "p5/h22/common-active-binary-triangle-p-plus-q-diagonal-dvr-coverage-audit": 1,
@@ -251,17 +251,17 @@
     "audit_report": 2,
     "catalog": 1,
     "tool_script": 209,
-    "claim_script": 1113,
+    "claim_script": 1181,
     "shared_library": 33
   },
   "confidence_counts": {
     "medium": 1180,
     "low": 426,
-    "high": 450
+    "high": 518
   },
-  "classified_count": 2056,
-  "unclassified_count": 307,
-  "estimated_root_entries_after_full_migration": 315,
+  "classified_count": 2124,
+  "unclassified_count": 239,
+  "estimated_root_entries_after_full_migration": 247,
   "verify_audit_triples": {
     "ADJACENT_PORT_DETERMINANT_TRANSPORT_LEMMA": [
       "verify_adjacent_port_determinant_transport_lemma.py"
@@ -26103,6 +26103,771 @@
       "evidence": [
         "stage27_authorized_review: explicitly named primary verifier in paired arbitrary-order claim document",
         "paired doc UNIVERSAL_FIVE_BLOCKER_DIVISIBILITY_LEMMA.md"
+      ]
+    },
+    {
+      "old_path": "audit_eight_vertex_balanced_set_trees.py",
+      "proposed_path": "claims/finite/n08/audit_eight_vertex_balanced_set_trees.py",
+      "category": "claim_script",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md"
+      ]
+    },
+    {
+      "old_path": "audit_eight_vertex_parity_hafnian_supports.py",
+      "proposed_path": "claims/finite/n08/audit_eight_vertex_parity_hafnian_supports.py",
+      "category": "claim_script",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md"
+      ]
+    },
+    {
+      "old_path": "audit_ten_vertex_balanced_set_trees.py",
+      "proposed_path": "claims/finite/n10/audit_ten_vertex_balanced_set_trees.py",
+      "category": "claim_script",
+      "claim_family": "finite/ten-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by TEN_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md"
+      ]
+    },
+    {
+      "old_path": "audit_twelve_vertex_complement_profile.py",
+      "proposed_path": "claims/finite/n12/audit_twelve_vertex_complement_profile.py",
+      "category": "claim_script",
+      "claim_family": "finite/twelve-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by TWELVE_VERTEX_COMPLEMENT_PROFILE_SET_TREE_OBSTRUCTION.md"
+      ]
+    },
+    {
+      "old_path": "audit_twelve_vertex_port_cell_orbits.py",
+      "proposed_path": "claims/finite/n12/audit_twelve_vertex_port_cell_orbits.py",
+      "category": "claim_script",
+      "claim_family": "finite/twelve-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by TWELVE_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md"
+      ]
+    },
+    {
+      "old_path": "certify_eight_vertex_balanced_set_trees.py",
+      "proposed_path": "claims/finite/n08/certify_eight_vertex_balanced_set_trees.py",
+      "category": "claim_script",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md"
+      ]
+    },
+    {
+      "old_path": "certify_eight_vertex_parity_hafnian_supports.py",
+      "proposed_path": "claims/finite/n08/certify_eight_vertex_parity_hafnian_supports.py",
+      "category": "claim_script",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md"
+      ]
+    },
+    {
+      "old_path": "certify_fourteen_vertex_binomial_trinomial.py",
+      "proposed_path": "claims/finite/n14/certify_fourteen_vertex_binomial_trinomial.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_NO_ONE_TERM_SUPPORT.md"
+      ]
+    },
+    {
+      "old_path": "certify_fourteen_vertex_c3_c4_c7_family.py",
+      "proposed_path": "claims/finite/n14/certify_fourteen_vertex_c3_c4_c7_family.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C3_C4_C7_FAMILY_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "certify_fourteen_vertex_matching_fork.py",
+      "proposed_path": "claims/finite/n14/certify_fourteen_vertex_matching_fork.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_NO_ONE_TERM_SUPPORT.md"
+      ]
+    },
+    {
+      "old_path": "certify_ten_vertex_balanced_set_trees.py",
+      "proposed_path": "claims/finite/n10/certify_ten_vertex_balanced_set_trees.py",
+      "category": "claim_script",
+      "claim_family": "finite/ten-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by TEN_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md"
+      ]
+    },
+    {
+      "old_path": "certify_twelve_vertex_complement_profile.py",
+      "proposed_path": "claims/finite/n12/certify_twelve_vertex_complement_profile.py",
+      "category": "claim_script",
+      "claim_family": "finite/twelve-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by TWELVE_VERTEX_COMPLEMENT_PROFILE_SET_TREE_OBSTRUCTION.md"
+      ]
+    },
+    {
+      "old_path": "eight_vertex_local_degree4_support.py",
+      "proposed_path": "claims/finite/n08/eight_vertex_local_degree4_support.py",
+      "category": "claim_script",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by EIGHT_VERTEX_DEGREE4_FRONTIER.md"
+      ]
+    },
+    {
+      "old_path": "verify_cancellation_transport_manifest.py",
+      "proposed_path": "claims/finite/n08/verify_cancellation_transport_manifest.py",
+      "category": "claim_script",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by EIGHT_VERTEX_DEGREE3_E19_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_catalogue_selector.py",
+      "proposed_path": "claims/finite/n08/verify_catalogue_selector.py",
+      "category": "claim_script",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by EIGHT_VERTEX_17EDGE_CERTIFICATE.md",
+        "named by EIGHT_VERTEX_DEGREE3_E19_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_eight_vertex_16edge.py",
+      "proposed_path": "claims/finite/n08/verify_eight_vertex_16edge.py",
+      "category": "claim_script",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by EIGHT_VERTEX_16EDGE_CERTIFICATE.md",
+        "named by EIGHT_VERTEX_DEGREE4_FRONTIER.md"
+      ]
+    },
+    {
+      "old_path": "verify_eight_vertex_4regular.py",
+      "proposed_path": "claims/finite/n08/verify_eight_vertex_4regular.py",
+      "category": "claim_script",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by EIGHT_VERTEX_4REGULAR_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_eight_vertex_degree3_e19.py",
+      "proposed_path": "claims/finite/n08/verify_eight_vertex_degree3_e19.py",
+      "category": "claim_script",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by EIGHT_VERTEX_DEGREE3_E19_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_eight_vertex_degree4_e17.py",
+      "proposed_path": "claims/finite/n08/verify_eight_vertex_degree4_e17.py",
+      "category": "claim_script",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by EIGHT_VERTEX_17EDGE_CERTIFICATE.md",
+        "named by EIGHT_VERTEX_DEGREE4_FRONTIER.md"
+      ]
+    },
+    {
+      "old_path": "verify_eight_vertex_three_amplitude_forks.py",
+      "proposed_path": "claims/finite/n08/verify_eight_vertex_three_amplitude_forks.py",
+      "category": "claim_script",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by EIGHT_VERTEX_FULL_SINGLETON_FAMILY_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_five_regular_double_c4_singleton_family.py",
+      "proposed_path": "claims/finite/n08/verify_five_regular_double_c4_singleton_family.py",
+      "category": "claim_script",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by EIGHT_VERTEX_DOUBLE_C4_FAMILY_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_five_regular_full_singleton_family.py",
+      "proposed_path": "claims/finite/n08/verify_five_regular_full_singleton_family.py",
+      "category": "claim_script",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by EIGHT_VERTEX_FULL_SINGLETON_FAMILY_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_binomial_support_closure_augmentation.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_binomial_support_closure_augmentation.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C4_C4_C6_ORBIT8_PARTIAL_BINOMIAL_SUPPORT_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_binomial_trinomial.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_binomial_trinomial.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_NO_ONE_TERM_SUPPORT.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c3_c3_c4_c4_family.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c3_c3_c4_c4_family.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C3_C3_C4_C4_FAMILY_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c3_c3_c8_family.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c3_c3_c8_family.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C3_C3_C8_FAMILY_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c3_c4_c7_family.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c3_c4_c7_family.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C3_C4_C7_FAMILY_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c3_c5_c6_family.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c3_c5_c6_family.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C3_C5_C6_FAMILY_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_10_orbit1.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c4_10_orbit1.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C4_C10_ORBIT1_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_58_orbits.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_58_orbits.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C4_C4_C6_59_ORBITS_CERTIFICATE.md",
+        "named by FOURTEEN_VERTEX_C4_C4_C6_61_ORBITS_KAPPA3_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit2.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit2.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C4_C4_C6_ORBIT2_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit3.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit3.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C4_C4_C6_ORBIT3_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit44_core24.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit44_core24.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C4_C4_C6_ORBIT44_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit44_extension.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit44_extension.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C4_C4_C6_ORBIT44_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit5.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit5.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C4_C4_C6_59_ORBITS_CERTIFICATE.md",
+        "named by FOURTEEN_VERTEX_C4_C4_C6_61_ORBITS_KAPPA3_CERTIFICATE.md",
+        "named by FOURTEEN_VERTEX_C4_C4_C6_ORBIT5_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit6.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit6.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C4_C4_C6_61_ORBITS_KAPPA3_CERTIFICATE.md",
+        "named by FOURTEEN_VERTEX_C4_C4_C6_ORBIT6_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit7.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit7.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C4_C4_C6_61_ORBITS_KAPPA3_CERTIFICATE.md",
+        "named by FOURTEEN_VERTEX_C4_C4_C6_ORBIT7_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit8.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit8.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C4_C4_C6_ORBIT8_CERTIFICATE.md",
+        "named by FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c5_c5_family.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c4_c5_c5_family.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C4_C5_C5_FAMILY_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_108_orbits.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_108_orbits.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C6_C8_108_ORBITS_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_117_orbits.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_117_orbits.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C6_C8_117_ORBITS_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_118_orbits.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_118_orbits.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C6_C8_118_ORBITS_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_119_orbits.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_119_orbits.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C6_C8_119_ORBITS_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_121_orbits_kappa3.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_121_orbits_kappa3.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C6_C8_121_ORBITS_KAPPA3_CERTIFICATE.md",
+        "named by FOURTEEN_VERTEX_C6_C8_122_ORBITS_KAPPA3_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_122_orbits_kappa3.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_122_orbits_kappa3.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C6_C8_122_ORBITS_KAPPA3_CERTIFICATE.md",
+        "named by FOURTEEN_VERTEX_C6_C8_123_ORBITS_KAPPA3_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_123_orbits_kappa3.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_123_orbits_kappa3.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C6_C8_123_ORBITS_KAPPA3_CERTIFICATE.md",
+        "named by FOURTEEN_VERTEX_C6_C8_124_ORBITS_KAPPA3_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_124_orbits_kappa3.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_124_orbits_kappa3.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C6_C8_124_ORBITS_KAPPA3_CERTIFICATE.md",
+        "named by FOURTEEN_VERTEX_C6_C8_125_ORBITS_KAPPA3_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_125_orbits_kappa3.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_125_orbits_kappa3.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C6_C8_125_ORBITS_KAPPA3_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_130_orbits_kappa3.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_130_orbits_kappa3.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C6_C8_130_ORBITS_KAPPA3_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_orbits0_2.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_orbits0_2.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C6_C8_ORBITS0_2_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_minimal_circuit_frontiers.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_minimal_circuit_frontiers.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_one_extra_cycle_core.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_one_extra_cycle_core.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_ONE_EXTRA_CYCLE_LEMMA.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_partial_circuit_binomial_branch.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_partial_circuit_binomial_branch.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C4_C4_C6_ORBIT8_PARTIAL_BINOMIAL_SUPPORT_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_partial_circuit_binomial_selection_chain.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_partial_circuit_binomial_selection_chain.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C4_C4_C6_ORBIT8_PARTIAL_BINOMIAL_SUPPORT_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_two_even_cycle_minimum_activity_augmentation.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_two_even_cycle_minimum_activity_augmentation.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C6_C8_ORBITS0_2_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_two_even_cycle_one_extra_cycle_augmentation.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_two_even_cycle_one_extra_cycle_augmentation.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_ONE_EXTRA_CYCLE_LEMMA.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourteen_vertex_unforced_factor_choice_core.py",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_unforced_factor_choice_core.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C4_C4_C6_ORBIT3_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_matching_rectangle_manifest.py",
+      "proposed_path": "claims/finite/n08/verify_matching_rectangle_manifest.py",
+      "category": "claim_script",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by EIGHT_VERTEX_DEGREE3_E19_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_materialized_dimacs_clause_subset.py",
+      "proposed_path": "claims/finite/n14/verify_materialized_dimacs_clause_subset.py",
+      "category": "claim_script",
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by FOURTEEN_VERTEX_C4_C4_C6_ORBIT44_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_six_vertex_final.py",
+      "proposed_path": "claims/finite/n06/verify_six_vertex_final.py",
+      "category": "claim_script",
+      "claim_family": "finite/six-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by SIX_VERTEX_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_skeleton_laurent_batch.py",
+      "proposed_path": "claims/finite/n08/verify_skeleton_laurent_batch.py",
+      "category": "claim_script",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by EIGHT_VERTEX_17EDGE_CERTIFICATE.md",
+        "named by EIGHT_VERTEX_DEGREE3_E19_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_ten_vertex_c10_equality_family.py",
+      "proposed_path": "claims/finite/n10/verify_ten_vertex_c10_equality_family.py",
+      "category": "claim_script",
+      "claim_family": "finite/ten-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by TEN_VERTEX_C10_EQUALITY_CERTIFICATE.md",
+        "named by TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md"
+      ]
+    },
+    {
+      "old_path": "verify_ten_vertex_c4_c6_equality_family.py",
+      "proposed_path": "claims/finite/n10/verify_ten_vertex_c4_c6_equality_family.py",
+      "category": "claim_script",
+      "claim_family": "finite/ten-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by TEN_VERTEX_C4_C6_FAMILY_CERTIFICATE.md",
+        "named by TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md"
+      ]
+    },
+    {
+      "old_path": "verify_ten_vertex_equality_factor_lattice.py",
+      "proposed_path": "claims/finite/n10/verify_ten_vertex_equality_factor_lattice.py",
+      "category": "claim_script",
+      "claim_family": "finite/ten-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by TEN_VERTEX_C4_C6_SUPPORT_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_ten_vertex_equality_factor_lattice_final.py",
+      "proposed_path": "claims/finite/n10/verify_ten_vertex_equality_factor_lattice_final.py",
+      "category": "claim_script",
+      "claim_family": "finite/ten-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by TEN_VERTEX_C4_C6_SUPPORT_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_ten_vertex_odd_factor_equality_family.py",
+      "proposed_path": "claims/finite/n10/verify_ten_vertex_odd_factor_equality_family.py",
+      "category": "claim_script",
+      "claim_family": "finite/ten-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md",
+        "named by TEN_VERTEX_ODD_FACTOR_EQUALITY_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_ten_vertex_three_amplitude_certificate.py",
+      "proposed_path": "claims/finite/n10/verify_ten_vertex_three_amplitude_certificate.py",
+      "category": "claim_script",
+      "claim_family": "finite/ten-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by TEN_VERTEX_C4_C6_SUPPORT_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "verify_unary_cycle_relation_family.py",
+      "proposed_path": "claims/finite/n08/verify_unary_cycle_relation_family.py",
+      "category": "claim_script",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high",
+      "evidence": [
+        "stage28_authorized_review: named carrier with one bounded finite destination",
+        "named by EIGHT_VERTEX_FULL_SINGLETON_FAMILY_CERTIFICATE.md"
       ]
     }
   ]
