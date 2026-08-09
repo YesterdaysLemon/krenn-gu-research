@@ -1,0 +1,73 @@
+{
+  "batch_id": "p5-h31-embedded-p3-stage16",
+  "approved_by": "Codex (exact mapping reviewer under repository-owner standing delegation dated 2026-08-08)",
+  "approved_at": "2026-08-08",
+  "base_sha": "2eda840131e73e699a99b58efb190d5eaf1023c1",
+  "manifest_sha256": "16ff7b355d83890b1acb321b994eecbfb2f83ac2f5a87c0e7cf2fba127e345b9",
+  "mapping_sha256": "db3bf4cc6309334ffc2a9983456f8674d9df5f22c3f921c969bcc4af414d5fb7",
+  "member_count": 15,
+  "moves": [
+    {
+      "old_path": "P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "audit_p5_h31_embedded_p3_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/embedded-p3/audit_p5_h31_embedded_p3_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h31_embedded_p3_component_normalized_boundary.py",
+      "new_path": "claims/p5/h31/embedded-p3/audit_p5_h31_embedded_p3_component_normalized_boundary.py"
+    },
+    {
+      "old_path": "audit_p5_h31_embedded_p3_component_projective_closure.py",
+      "new_path": "claims/p5/h31/embedded-p3/audit_p5_h31_embedded_p3_component_projective_closure.py"
+    },
+    {
+      "old_path": "audit_p5_h31_embedded_p3_component_r_zero_boundary.py",
+      "new_path": "claims/p5/h31/embedded-p3/audit_p5_h31_embedded_p3_component_r_zero_boundary.py"
+    },
+    {
+      "old_path": "audit_p5_h31_embedded_p3_component_support_two_boundary.py",
+      "new_path": "claims/p5/h31/embedded-p3/audit_p5_h31_embedded_p3_component_support_two_boundary.py"
+    },
+    {
+      "old_path": "verify_p5_h31_embedded_p3_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/embedded-p3/verify_p5_h31_embedded_p3_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_embedded_p3_component_normalized_boundary.py",
+      "new_path": "claims/p5/h31/embedded-p3/verify_p5_h31_embedded_p3_component_normalized_boundary.py"
+    },
+    {
+      "old_path": "verify_p5_h31_embedded_p3_component_projective_closure.py",
+      "new_path": "claims/p5/h31/embedded-p3/verify_p5_h31_embedded_p3_component_projective_closure.py"
+    },
+    {
+      "old_path": "verify_p5_h31_embedded_p3_component_r_zero_boundary.py",
+      "new_path": "claims/p5/h31/embedded-p3/verify_p5_h31_embedded_p3_component_r_zero_boundary.py"
+    },
+    {
+      "old_path": "verify_p5_h31_embedded_p3_component_support_two_boundary.py",
+      "new_path": "claims/p5/h31/embedded-p3/verify_p5_h31_embedded_p3_component_support_two_boundary.py"
+    }
+  ],
+  "rationale": "Stage 16: migrate the complete five-triple H31 embedded-P3 closure forest after independent topology, semantic, and mechanical audits established that the generic, normalized, support-two, r=0, and projective case-union records are inseparable pieces of one non-ambiguous obligation. The separate H22 embedded-P3 forest, shared marked-basis helper, upstream P4 anchor, and downstream consumers remain excluded.",
+  "notes": "Exact mapping reviewed by Codex under the repository-owner standing delegation dated 2026-08-08. Classifier confidence is proposal evidence only. Preserve the generic ledger status verified_generic, the modular-audit evidence boundary, all theorem scopes and exclusions, historical frozen hashes, and global Krenn-Gu UNRESOLVED."
+}
