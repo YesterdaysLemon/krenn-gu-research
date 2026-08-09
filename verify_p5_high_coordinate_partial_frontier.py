@@ -92,7 +92,8 @@ DEPENDENCIES = (
     ROOT / "P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md",
     ROOT / "P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md",
     ROOT / "P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md",
-    ROOT / "P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md",
+    ROOT / "claims" / "p5" / "h31" / "internal-e0-marked-fibre"
+    / "P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md",
     ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/boundaries/P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md",
     ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md",
     ROOT / "P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md",
