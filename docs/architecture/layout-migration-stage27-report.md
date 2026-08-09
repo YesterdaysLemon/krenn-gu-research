@@ -1,7 +1,7 @@
 # Layout migration Stage 27 report
 
-Status: **MIGRATION COMPLETE AND VALIDATED ON BRANCH; AWAITING EXACT-HEAD
-REVIEW/CI AND HEAD-GUARDED MERGE.**
+Status: **MIGRATION COMPLETE AND VALIDATED; PUBLICATION IS TRACKED IN PULL
+REQUEST #61.**
 
 The global Krenn-Gu conjecture remains **UNRESOLVED**. Stage 27 changes
 filesystem ownership, executable paths, navigation, and mechanically derived
@@ -16,6 +16,9 @@ formalization status, owner-gated conflict, or global status.
 - Dry-run/catalog checkpoint: `4622d37`.
 - Frozen-batch commit: `e0177ca`.
 - Pure-move commit: `5ab2f65`.
+- Repair/navigation/report commit:
+  `8a62b06e776abc34b842a55d112227fd0353b8b6`.
+- Substantive tree: `960fb55880119d59ad102e45de4c13775cccae90`.
 - Batch ID: `high-order-symbolic-forest-stage27`.
 - Members: 587 distinct root files.
 - Canonical mapping SHA-256:
@@ -30,6 +33,8 @@ formalization status, owner-gated conflict, or global status.
   `769ffecc5308d457d447f8369f8085491bd2eb732ed643aa6855be5305b1c450`.
 - Actual reviewer: `Codex (exact mapping reviewer under repository-owner
   standing delegation dated 2026-08-08)`.
+- Publication surface:
+  [pull request #61](https://github.com/YesterdaysLemon/open-graph-theory-with-prize/pull/61).
 
 The mapping and source-identity digests are portable approval evidence. The
 reviewed ownership analysis is in
@@ -175,6 +180,16 @@ The index-complete candidate tree passes:
 - fixed-point `python tools/migration/rewrite_links.py` (`0/0/0`, no
   ambiguity); and
 - `git diff --exit-code` plus `git diff --cached --check`.
+
+The substantive head
+`8a62b06e776abc34b842a55d112227fd0353b8b6` also passed both GitHub Actions
+executions of the complete workflow:
+
+- [pull-request run 31337593052](https://github.com/YesterdaysLemon/open-graph-theory-with-prize/actions/runs/31337593052): `success`;
+- [manual workflow-dispatch run 31337600486](https://github.com/YesterdaysLemon/open-graph-theory-with-prize/actions/runs/31337600486): `success`.
+
+Each run checked hygiene, all migration-tool tests, the self-contained lattice
+tests, and rewriter closure against that exact substantive SHA.
 
 Singular, msolve, kissat, glucose, and drat-trim are not installed on this
 runner. No SAT, Singular, brute-force, or broad theorem rerun was justified by
