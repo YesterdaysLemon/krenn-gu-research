@@ -32,7 +32,10 @@ ROOT = Path(__file__).resolve().parent
 THEOREM = (
     ROOT / "P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md"
 )
-CANONICAL = ROOT / "P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md"
+CANONICAL = (
+    ROOT
+    / "claims/p5/h31/component-fiber-infinity/P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md"
+)
 PLANE = ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
 GENERATOR = (
     ROOT / "derive_p5_h31_fibre_infinity_marked_fibre_elimination.py"

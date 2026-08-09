@@ -7,7 +7,7 @@ This is an exact characteristic-zero obstruction.
 The first plane of the known pure rank-two component has a projective
 line at infinity outside the finite five-parameter chart.  The earlier
 theorem
-[`P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md`](P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md)
+[`P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md`](claims/p5/h31/component-fiber-infinity/P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md)
 excluded one canonical marked-row section of this divisor.
 
 The complete marked-basis fibre is now excluded.  For every plane tuple

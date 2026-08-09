@@ -20,7 +20,7 @@ distinguished-source orientations.
 
 This canonical-section result has since been upgraded to a complete
 exclusion of the marked-basis fibre over those planes in
-[`P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md`](P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md).
+[`P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md`](../../../../P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md).
 Kernel-row shifts preserve the plane and pure deletion but change the
 neighbouring `Delta_2` equations; the newer theorem includes all of
 them.
@@ -33,7 +33,7 @@ Delta_1(12) Delta_2(12) Delta_3(03)=0,
 
 including its intersections with the divisor treated here.  Its
 genuine toric marked-basis fibres have since been excluded in
-[`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](claims/p5/h31/toric-marked-fibre/P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md).
+[`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](../toric-marked-fibre/P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md).
 The internal `E=0` divisor has since been closed at complete
 marked-fibre level.  A second pure-compression component has since been
 proved separately; this first-component Schubert theorem does not
@@ -191,8 +191,8 @@ obstruction.
 Run:
 
 ```text
-python verify_p5_h31_component_fiber_infinity.py
-python audit_p5_h31_component_fiber_infinity.py
+python claims/p5/h31/component-fiber-infinity/verify_p5_h31_component_fiber_infinity.py
+python claims/p5/h31/component-fiber-infinity/audit_p5_h31_component_fiber_infinity.py
 ```
 
 The primary verifier derives (1)--(5), reconstructs every mixed-kernel

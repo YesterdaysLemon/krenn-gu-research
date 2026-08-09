@@ -3,7 +3,7 @@
 Most subdirectories are migrated component-level generic marked-`H31`
 claim packages: theorem document + primary verifier + an independent
 audit where one exists, moved together with preserved filenames.  There
-are six scoped exceptions.  The `embedded-p3/` package contains the
+are seven scoped exceptions.  The `embedded-p3/` package contains the
 complete five-triple generic, boundary, and projective component-closure
 forest.  The three single-gate directories form one complete
 rank-one-gate obstruction forest, not a generic package or complete
@@ -18,6 +18,10 @@ second or further component, or a whole-component theorem.
 The `component-chart-boundary/` package is the exact canonical-section
 obstruction on one nonzero preferred-chart divisor of that first component;
 it is not the later complete marked-fibre strengthening.
+The `component-fiber-infinity/` package is the exact canonical marked-row
+section obstruction on the first-plane Schubert-infinity divisor where the
+other three selected preferred Pluecker coordinates remain nonzero; it is not
+the later complete marked-fibre strengthening or a whole-component theorem.
 Stage 9 used batch `p5-generic-obstructions-stage9`
 (mapping_sha256
 `68d20c08b987c2465395ec485647dc37c958d8400a8d05dede37559256a47f23`).
@@ -37,11 +41,15 @@ Stage 20 used batch `p5-h31-toric-marked-fibre-stage20` (mapping_sha256
 Stage 22 used batch `p5-h31-component-chart-boundary-stage22`
 (mapping_sha256
 `7130acd031ab499906c6c463298292de459ce7a60eac566a35986d40d3763837`).
+Stage 23 used batch `p5-h31-component-fiber-infinity-stage23`
+(mapping_sha256
+`3874be216b1210251aea1150fa655e7ea5bde0c035df0d8c9d51d18b0d57a454`).
 
 Except for the `embedded-p3/` component-closure forest, the diagonal `p+q=0`
 wall subforest, the single-gate branch forest, and the internal-`E=0` divisor
 leaf, toric marked-fibre boundary leaf, and canonical chart-boundary section
-leaf described below, every theorem in the generic-package table is a
+leaf and canonical first-plane Schubert-infinity section leaf described below,
+every theorem in the generic-package table is a
 **generic/function-field** statement: the marked `H31` fibre is empty at the
 generic point of the named P4 component (or on a dense open subset).  Those
 generic theorems do not close special divisors, projective boundaries, or the
@@ -180,9 +188,12 @@ The primary is the characteristic-zero replay.  The no-primary-import audit
 uses separately implemented dynamic-programming permanents and modular row
 reduction over `F5/F7`; it is modular QA, not the characteristic-zero proof.
 This leaf does not cover arbitrary kernel-row shifts or the complete
-marked-basis fibre.  The later full marked-fibre theorem and its uniquely
-owned elimination generator remain at repository root as a separate future
-four-file package.  This leaf is not generic, a whole-component theorem, or
+marked-basis fibre.  The later full marked-fibre theorem, primary, audit, and
+uniquely owned elimination generator remain together as grandfathered root
+debt.  Their proposed Stage 23 batch was deferred because the theorem says
+fourteen certificate strata while the primary asserts and reports sixteen;
+the [deferred audit](../../../docs/architecture/p5-h31-component-chart-boundary-marked-fibre-stage23-dry-run.md)
+preserves that owner-gated contradiction.  This leaf is not generic, a whole-component theorem, or
 component-closure evidence, and it changes no status for later components,
 weighted `H22`, `P5 -> Delta3`, or the global conjecture.
 
@@ -191,6 +202,39 @@ leaf's `D=0, a!=0` chart is recorded without adjudication in the
 [Stage 22 dry run](../../../docs/architecture/p5-h31-component-chart-boundary-stage22-dry-run.md).
 Retargeting that link does not endorse either attribution.  No selected
 artifact has a curated theorem-ledger entry.
+
+## First-plane Schubert-infinity canonical section
+
+The triple in `component-fiber-infinity/` gives an exact
+characteristic-zero obstruction for the displayed canonical marked-row normal
+form on `Delta_0(01)=0` in the first component, restricted to the locus where
+the other three selected preferred Pluecker coordinates remain nonzero.  It
+has `H,N != 0`, `E` arbitrary, projective fibre direction
+`(A,D)!=(0,0)`, and all four distinguished-source orientations.
+
+| scope | theorem | verifier | audit |
+|---|---|---|---|
+| canonical marked sections on the first-plane Schubert-infinity locus | `P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md` | `verify_p5_h31_component_fiber_infinity.py` | `audit_p5_h31_component_fiber_infinity.py` |
+
+The primary is the characteristic-zero replay.  The audit imports no primary
+or scientific/computational repository helper and separately implements a
+dynamic-programming permanent, modular row reduction, and exhaustive
+projective scans over `F5/F7`; its sole repository import is path-only
+bootstrap after migration.  It is modular QA, not the characteristic-zero
+proof.
+
+This leaf covers only the displayed canonical marking.  The later
+`P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md` family adds all
+kernel-row shifts and the complete marked-basis fibre and remains together at
+root as grandfathered debt pending a separately reviewed four-file batch.
+Internal `E=0` and genuine toric packages separately provide complete
+marked-fibre coverage on their own scoped intersections.  This leaf is not an
+entire projective-boundary closure, a generic theorem, a whole-component
+theorem, or component-exhaustiveness evidence.  It changes no status for a
+second component, weighted `H22`, `P5 -> Delta3`, or the global conjecture.
+The primary's historical `remaining_known_component_geometry` field does not
+reopen the later toric closure.  No selected artifact has a curated
+theorem-ledger entry.
 
 ## Single-gate obstruction forest
 
@@ -236,7 +280,12 @@ and is not part of the characteristic-zero verification.
 - The canonical chart-boundary primary consumes the separately owned P4
   chart-closure document and root rank-two-orbit theorem.  Its later complete
   marked-fibre strengthening and uniquely owned elimination generator remain
-  together at root for a separate migration stage.
+  together as grandfathered root debt pending scientific reconciliation and
+  a separate migration review.
+- The canonical first-plane Schubert-infinity primary consumes the separately
+  owned P4 chart closure and the migrated canonical chart-boundary checkpoint.
+  Its complete marked-fibre successor and uniquely consumed generator remain
+  together as grandfathered root debt for a later four-file review.
 - The single-gate reduction consumes the separately owned root
   `P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`; the two importing modular
   audits expose `single-gate-p3/` through the shared bootstrap helper.
@@ -260,7 +309,7 @@ normalized-affine, and intrinsic-boundary sibling files outside the migrated
 common-active component closure.  The
 all-rank-two P4/H31 component and boundary forests also remain at root except
 for the exact internal-`E=0` divisor, toric marked-fibre boundary, and
-canonical chart-boundary section leaves;
+canonical chart-boundary and first-plane Schubert-infinity section leaves;
 the single-gate forest closes only their rank-one-gate branch.  The
 separate weighted-H22 embedded-P3 programme also remains at root; its
 projective coverage is still open and it is not part of the closed H31
