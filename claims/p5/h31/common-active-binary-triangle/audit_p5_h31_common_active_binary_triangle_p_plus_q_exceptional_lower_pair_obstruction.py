@@ -8,13 +8,22 @@ import itertools
 import json
 import shutil
 import subprocess
+import sys
 from datetime import UTC, datetime
 from pathlib import Path
 
 import sympy as sp
 
-ROOT = Path(__file__).resolve().parent
-NOTE = ROOT / "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md"
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+ROOT = REPO_ROOT
+NOTE = HERE / "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md"
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 
 
@@ -196,7 +205,15 @@ def singular_spot(family, expected):
         '"AUDIT:"+string((size(L)==0)&&(size(R)==0));', "quit;",
     ))
     command = (shutil.which("Singular"), "-q") if shutil.which("Singular") else ("wsl.exe","--exec","/usr/bin/Singular","-q")
-    result = subprocess.run(command, input=program, text=True, capture_output=True, timeout=30, check=False)
+    result = subprocess.run(
+        command,
+        input=program,
+        cwd=ROOT,
+        text=True,
+        capture_output=True,
+        timeout=30,
+        check=False,
+    )
     assert result.returncode == 0 and "AUDIT:1" in result.stdout and not result.stderr.strip(), result
     return {"family": family, "distinguished": 3, "ideal": list(map(conv,expected)), "bidirectional_equality": True}
 
@@ -214,7 +231,7 @@ def main():
         "scope": "independent reconstruction of component-15 exceptional lower-pair H31 fibres at a=0,-1",
         "inputs": {NOTE.name: hashlib.sha256(NOTE.read_bytes()).hexdigest()},
         "method": "no-import permanent construction, exact kernel replay, and independent elimination spot audits",
-        "command": "uv run --with sympy python audit_p5_h31_common_active_binary_triangle_p_plus_q_exceptional_lower_pair_obstruction.py",
+        "command": "uv run --with sympy python claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_p_plus_q_exceptional_lower_pair_obstruction.py",
         "outputs": {},
         "limitations": "verified only for exceptional component-15 diagonal-DVR H31 fibres; H22, arbitrary GL4, local-to-global, and the global conjecture remain open",
         "independent_code_path": True, "imports_primary_or_helper": False,

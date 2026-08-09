@@ -88,8 +88,8 @@ evidence.  The bounded direct endpoint reconstruction above replaces it.
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py
-uv run --with sympy python audit_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py
+uv run --with sympy python claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py
+uv run --with sympy python claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py
 ```
 
 Both commands are exact and bounded.  They use characteristic zero with

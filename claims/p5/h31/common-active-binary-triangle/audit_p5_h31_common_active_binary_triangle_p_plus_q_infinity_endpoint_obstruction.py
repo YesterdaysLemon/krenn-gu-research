@@ -7,15 +7,28 @@ import hashlib
 import json
 import shutil
 import subprocess
+import sys
 from datetime import UTC, datetime
 from pathlib import Path
 
 import sympy as sp
 
-from verify_p5_h31_marked_basis_open_branch import marked_extension, mixed_matrix
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md"
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+ROOT = REPO_ROOT
+
+from verify_p5_h31_marked_basis_open_branch import (  # noqa: E402
+    marked_extension,
+    mixed_matrix,
+)
+
+THEOREM = HERE / "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md"
 FIXED_ROWS = (0, 1, 2, 7)
 
 
@@ -200,7 +213,7 @@ def main() -> None:
                 "scope": "separate exact reconstruction of both component-14 infinity endpoint H31 faces",
                 "inputs": {THEOREM.name: sha256(THEOREM)},
                 "method": "fresh saturated elimination and complete-kernel marked-minor reconstruction",
-                "command": "uv run --with sympy python audit_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py",
+                "command": "uv run --with sympy python claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py",
                 "outputs": {},
                 "limitations": "verified endpoint H31 only; H22, other projective limits, gluing, and the global conjecture remain open",
                 "saturated_projections": projections,

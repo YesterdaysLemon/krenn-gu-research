@@ -313,9 +313,9 @@ Six statements organize the current frontier.
    embedded-`P_3` projective strata, and two directly verified special
    lower-pair families:
    [`P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md`](../P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md),
-   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md`](../P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md),
-   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md`](../P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md), and
-   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md`](../P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md).
+   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md`](../claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md),
+   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md`](../claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md), and
+   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md`](../claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md).
    The same exact wall is now closed for weighted `H22`: a fresh independent
    aggregate audit checks all nine strata and the twelve wall-specific mask-6
    flags without claiming the full projective embedded-`P_3` component:
@@ -875,7 +875,7 @@ component-fourteen faces at the infinity endpoint `y=-r` have separate
 direct obstruction certificates and fresh audits.  Together with the
 complete embedded-`P_3` projective closure, this verifies the whole
 diagonal-DVR wall for marked `H31`:
-[`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md`](../P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md).
+[`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md`](../claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md).
 
 Weighted `H22` is now also `VERIFIED` on the whole diagonal-DVR wall.  A fresh
 aggregate audit reconstructs the exact `3+1+2+3=9` stratum partition, replays
@@ -2067,14 +2067,14 @@ uv run --with sympy python audit_p5_h31_common_active_binary_triangle_intrinsic_
 uv run --with sympy --with z3-solver python verify_p4_common_active_binary_triangle_p_plus_q_boundary.py
 uv run --with sympy --with z3-solver python audit_p4_common_active_binary_triangle_p_plus_q_boundary.py
 
-uv run --with sympy python verify_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
-uv run --with sympy python audit_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
+uv run --with sympy python claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
+uv run --with sympy python claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
 
-uv run --with sympy python verify_p5_h31_common_active_binary_triangle_p_plus_q_exceptional_lower_pair_obstruction.py
-uv run --with sympy python audit_p5_h31_common_active_binary_triangle_p_plus_q_exceptional_lower_pair_obstruction.py
+uv run --with sympy python claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_p_plus_q_exceptional_lower_pair_obstruction.py
+uv run --with sympy python claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_p_plus_q_exceptional_lower_pair_obstruction.py
 
-uv run --with sympy python verify_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py
-uv run --with sympy python audit_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py
+uv run --with sympy python claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py
+uv run --with sympy python claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py
 
 uv run --with sympy python verify_p5_h22_common_active_binary_triangle_p_plus_q_boundary_partial.py
 uv run --with sympy python audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_partial.py
