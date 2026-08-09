@@ -18,16 +18,16 @@
   },
   "counts": {
     "total_classified_moves": 2015,
-    "moved": 395,
+    "moved": 398,
     "pilot": 0,
     "proposed_high_confidence": 242,
-    "review_required": 1378,
+    "review_required": 1375,
     "unclassified": 348,
     "root_files_before": 2363,
     "root_dirs_before": 3,
     "root_entries_before": 2366,
-    "projected_root_if_moved_only": 1977,
-    "projected_root_if_high_confidence_batches_executed": 1735,
+    "projected_root_if_moved_only": 1974,
+    "projected_root_if_high_confidence_batches_executed": 1732,
     "projected_root_if_all_classified_executed": 357,
     "projection_note": "unclassified files are not members of any move set, so every projection already leaves them at the root; do not add unclassified again",
     "collisions": 0,
@@ -11531,25 +11531,28 @@
       "old_path": "P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/component-chart-boundary/P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/component-chart-boundary",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/h31/component-chart-boundary",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-h31-component-chart-boundary-stage22"
     },
     {
       "old_path": "audit_p5_h31_component_chart_boundary.py",
       "new_path": "claims/p5/h31/component-chart-boundary/audit_p5_h31_component_chart_boundary.py",
       "reason": "claim_script -> p5/h31/component-chart-boundary",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/h31/component-chart-boundary",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-h31-component-chart-boundary-stage22"
     },
     {
       "old_path": "verify_p5_h31_component_chart_boundary.py",
       "new_path": "claims/p5/h31/component-chart-boundary/verify_p5_h31_component_chart_boundary.py",
       "reason": "claim_script -> p5/h31/component-chart-boundary",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/h31/component-chart-boundary",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-h31-component-chart-boundary-stage22"
     },
     {
       "old_path": "P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md",
