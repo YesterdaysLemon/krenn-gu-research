@@ -5,18 +5,10 @@ from __future__ import annotations
 
 import json
 import subprocess
-
-import sympy as sp
-
-from derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate import (
-    build_model,
-)
-from verify_p5_h22_common_center_kernel_star_component_partial import (
-    coefficient_row,
-    singular_command,
-)
 import sys
 from pathlib import Path
+
+import sympy as sp
 
 for _p in Path(__file__).resolve().parents:
     if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
@@ -24,12 +16,20 @@ for _p in Path(__file__).resolve().parents:
         break
 from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
 
-REPO_ROOT, HERE = bootstrap(__file__)
+REPO_ROOT, _ = bootstrap(__file__)
 expose_claim_package(REPO_ROOT, "claims/p5/h31/common-center-kernel-star")
 
-from verify_p5_h31_common_center_kernel_star_component_generic_obstruction import (
+from verify_p5_h31_common_center_kernel_star_component_generic_obstruction import (  # noqa: E402
     rows,
     shifted,
+)
+
+from derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate import (  # noqa: E402
+    build_model,
+)
+from verify_p5_h22_common_center_kernel_star_component_partial import (  # noqa: E402
+    coefficient_row,
+    singular_command,
 )
 
 r, t = sp.symbols("r t")
