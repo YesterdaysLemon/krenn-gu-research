@@ -105,6 +105,28 @@ The governance/mechanical audit independently verified:
 - Merged main passes hygiene, all 152 migration-tool tests, and all 14
   fourteen-vertex cycle-cover lattice tests.
 
+## Correction exact-head review
+
+The substantive correction was frozen as exact commit
+`e18eeaaa8a8508c6d0c9bf6ec3e079b3f68a7aa8` and reviewed read-only by two
+fresh referees:
+
+- `/root/stage16_correction_semantic_referee`: **PASS**, with no actionable
+  scientific or status finding.  The referee checked the complete H31
+  projective theorem, the partial H22 frontier, the absence of a third
+  migrated closure exception, ledger scope, and preserved H22 refuted/open
+  lineage.
+- `/root/stage16_correction_mechanical_referee`: **PASS**, with no blocking
+  governance or mechanical finding.  The referee independently reproduced
+  the two-file diff boundary, debt arithmetic, frozen baseline and allowlist,
+  Stage 16 batch and `R100` transaction, PR #44–46 lineage and CI, and the
+  complete candidate-tree validation floor in a disposable detached replay.
+
+The report-only commit that persists these verdicts changes no theorem,
+executable, catalog, ledger, migration contract, baseline, or allowlist.  Its
+final no-drift confirmation is part of the merge gate rather than a new
+scientific review cycle.
+
 ## Open scientific obligations
 
 This checkpoint leaves explicit:
@@ -132,9 +154,11 @@ Stages 14–16 or block this navigation correction:
    revision should hash a Git blob or canonical JSON instead.
 3. The Stage 14 stale-command guard does not yet follow command-variable
    indirection and misses `cwd=str(ROOT)` in a destination package.
-4. Exact-head Tier-2 referee identities and final verdicts should be persisted
-   durably rather than left only in ephemeral review channels or reports whose
-   merge-gate section still uses prospective wording.
+4. Older exact-head Tier-2 referee identities and final verdicts are not all
+   persisted durably: PR discussions are empty and earlier stage reports retain
+   prospective merge-gate wording.  This checkpoint records its own referee
+   identities and exact reviewed commit, but the older provenance should be
+   normalized in a bounded follow-up.
 5. Historical batch `p4-components-stage3` retains an unresolvable
    `base_sha`; its executed mapping provenance is intact, but full historical
    batch-contract validation is not reproducible from the current object
