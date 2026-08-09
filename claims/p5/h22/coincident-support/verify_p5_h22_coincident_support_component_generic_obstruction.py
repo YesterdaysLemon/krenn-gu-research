@@ -2,9 +2,10 @@
 """Verify the generic weighted H22 obstruction on the tenth
 (coincident-support) pure-compression component.
 
-Self-contained (sympy + Singular on PATH).  Identities are exact over
+Self-contained apart from the shared repository Windows/WSL Singular wrapper,
+with native Singular retained on POSIX. Identities are exact over
 Z[b,e,k,m,c,r,t]; the four Groebner projections are over C(b,e,m,c,r) and,
-for the special slopes 1,-1,0, over C(b,e,m,c).  Fail-closed.
+for the special slopes 1,-1,0, over C(b,e,m,c). Fail-closed.
 """
 
 from __future__ import annotations
@@ -12,23 +13,28 @@ from __future__ import annotations
 import hashlib
 import itertools
 import json
+import os
 import subprocess
+import sys
 import time
 from pathlib import Path
 
 import sympy as sp
 
-HERE = Path(__file__).resolve().parent
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
+REPO_ROOT, HERE = bootstrap(__file__)
 
-def find_root() -> Path:
-    for candidate in (HERE, *HERE.parents):
-        if (candidate / "P4_INOUT_PATH_STRATUM_WORKING_NOTE.md").exists():
-            return candidate
-    return HERE
+if os.name == "nt":
+    from p5_high_coordinate_tree_chart_cegar import (
+        singular_command_with_timeout,
+    )
 
-
-ROOT = find_root()
+ROOT = REPO_ROOT
 THEOREM = HERE / "P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md"
 COMPANION = (
     ROOT / "claims" / "p5" / "h31" / "coincident-support"
@@ -157,7 +163,11 @@ def singular_str(expr):
 def run_singular(program: str, timeout: float):
     start = time.time()
     completed = subprocess.run(
-        ["Singular", "-q"],
+        (
+            singular_command_with_timeout(timeout)
+            if os.name == "nt"
+            else ("Singular", "-q")
+        ),
         input=program,
         text=True,
         encoding="utf-8",

@@ -6,17 +6,25 @@ from __future__ import annotations
 import hashlib
 import itertools
 import json
+import sys
 from collections import Counter
 from pathlib import Path
 
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
-ROOT = Path(__file__).resolve().parent
+REPO_ROOT, HERE = bootstrap(__file__)
+
+ROOT = REPO_ROOT
 THEOREM = (
-    ROOT
+    HERE
     / "P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md"
 )
 PRIMARY = (
-    ROOT
+    HERE
     / "verify_p5_h22_six_dimensional_equal_weight_binary_obstruction.py"
 )
 SAMPLES = {

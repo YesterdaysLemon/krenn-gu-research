@@ -1,0 +1,25 @@
+{
+  "batch_id": "p5-h22-six-dimensional-equal-weight-stage21",
+  "approved_by": "Codex (exact mapping reviewer under repository-owner standing delegation dated 2026-08-08)",
+  "approved_at": "2026-08-09",
+  "base_sha": "7352a0615ae1bfbccb118a1a0ec2d725ea432ff1",
+  "manifest_sha256": "3b82e4fec1304eea532dd7f88eb816c55d0048ea50a2fc2c18ecb13402b9c181",
+  "mapping_sha256": "f7427206126ecc290b0a926c1731eb5eb557aca7d784547d4c64df2dc2b41cf0",
+  "member_count": 3,
+  "moves": [
+    {
+      "old_path": "P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/six-dimensional/P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "audit_p5_h22_six_dimensional_equal_weight_binary_obstruction.py",
+      "new_path": "claims/p5/h22/six-dimensional/audit_p5_h22_six_dimensional_equal_weight_binary_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h22_six_dimensional_equal_weight_binary_obstruction.py",
+      "new_path": "claims/p5/h22/six-dimensional/verify_p5_h22_six_dimensional_equal_weight_binary_obstruction.py"
+    }
+  ],
+  "rationale": "Stage 21: migrate the exact theorem, characteristic-zero primary, and downstream-independent modular audit for the equal-weight r=1 binary H22 obstruction at the generic six-dimensional component function-field normal-form point after independent topology, status, provenance, and mechanical audits established one routine scoped proof leaf.",
+  "notes": "Exact mapping reviewed by Codex under the repository-owner standing delegation dated 2026-08-08. Classifier confidence is proposal evidence only. Preserve the distinction between every marking at the generic function-field point and pointwise closure of the full geometric r=1 divisor, the theorem-specified-model limit on modular audit independence, all open slope/parameter/projective siblings, zero selected-artifact ledger entries, and global Krenn-Gu UNRESOLVED."
+}

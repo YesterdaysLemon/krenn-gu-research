@@ -18,16 +18,16 @@
   },
   "counts": {
     "total_classified_moves": 2015,
-    "moved": 392,
+    "moved": 395,
     "pilot": 0,
-    "proposed_high_confidence": 243,
-    "review_required": 1380,
+    "proposed_high_confidence": 242,
+    "review_required": 1378,
     "unclassified": 348,
     "root_files_before": 2363,
     "root_dirs_before": 3,
     "root_entries_before": 2366,
-    "projected_root_if_moved_only": 1980,
-    "projected_root_if_high_confidence_batches_executed": 1737,
+    "projected_root_if_moved_only": 1977,
+    "projected_root_if_high_confidence_batches_executed": 1735,
     "projected_root_if_all_classified_executed": 357,
     "projection_note": "unclassified files are not members of any move set, so every projection already leaves them at the root; do not add unclassified again",
     "collisions": 0,
@@ -9849,9 +9849,10 @@
       "old_path": "P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/six-dimensional/P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/six-dimensional",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/six-dimensional",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-h22-six-dimensional-equal-weight-stage21"
     },
     {
       "old_path": "audit_p5_h22_six_dimensional_component_generic_obstruction.py",
@@ -9866,9 +9867,10 @@
       "old_path": "audit_p5_h22_six_dimensional_equal_weight_binary_obstruction.py",
       "new_path": "claims/p5/h22/six-dimensional/audit_p5_h22_six_dimensional_equal_weight_binary_obstruction.py",
       "reason": "claim_script -> p5/h22/six-dimensional",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/h22/six-dimensional",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-h22-six-dimensional-equal-weight-stage21"
     },
     {
       "old_path": "verify_p5_h22_six_dimensional_component_generic_obstruction.py",
@@ -9883,9 +9885,10 @@
       "old_path": "verify_p5_h22_six_dimensional_equal_weight_binary_obstruction.py",
       "new_path": "claims/p5/h22/six-dimensional/verify_p5_h22_six_dimensional_equal_weight_binary_obstruction.py",
       "reason": "claim_script -> p5/h22/six-dimensional",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/h22/six-dimensional",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-h22-six-dimensional-equal-weight-stage21"
     },
     {
       "old_path": "P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",

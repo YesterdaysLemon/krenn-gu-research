@@ -43,7 +43,7 @@ D_23^r(q)=(q_0,q_1,r q_2+q_3,q_4).                  (1)
 
 The slope `r` belongs in the component function field.  Setting `r=1`
 too early gives the valid but exceptional equal-weight boundary in
-[`P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md`](../../../../P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md);
+[`P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md`](P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md);
 it does not represent the generic orbit.
 
 ## Apolar basis and markings

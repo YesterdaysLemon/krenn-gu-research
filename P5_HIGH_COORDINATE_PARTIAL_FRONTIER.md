@@ -371,7 +371,7 @@ the `1000` equation forces the marking `t_0=1`, and then the `1110`
 row is `su/(u-v)` times the required first diagonal.  Thus no binary
 `Delta_2` neighbor exists before the third target row is considered:
 
-- [`P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md`](P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md)
+- [`P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md`](claims/p5/h22/six-dimensional/P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md)
 
 The generic weighted theorems close the seven previously certified
 component orbits.  The final diagonal-quadric case uses the projective

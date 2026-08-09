@@ -1109,7 +1109,7 @@ At equal source weights, both pencils are already empty at binary
 level; in the second pencil, two mixed coefficient rows alone force the
 contradiction:
 
-- [`P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md`](P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md)
+- [`P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md`](claims/p5/h22/six-dimensional/P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md)
 
 The weighted theorems show why that specialization was insufficient.
 The diagonal-quadric component supplies the final generic transport.
