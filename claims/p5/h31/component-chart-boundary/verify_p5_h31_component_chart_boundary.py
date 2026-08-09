@@ -11,7 +11,6 @@ from pathlib import Path
 
 import sympy as sp
 
-
 for _p in Path(__file__).resolve().parents:
     if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
         sys.path.insert(0, str(_p / "src"))
