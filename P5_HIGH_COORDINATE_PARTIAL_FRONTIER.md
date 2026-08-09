@@ -658,7 +658,7 @@ displayed marked section of that divisor in all four
 distinguished-source orientations:
 
 - [`P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md)
-- [`P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md)
+- [`P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md`](claims/p5/h31/component-chart-boundary/P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md)
 
 The first-plane line at infinity and the coupled three-plane toric base
 have also been classified at plane level.  The toric base has 12

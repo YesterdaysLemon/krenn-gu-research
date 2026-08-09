@@ -91,7 +91,7 @@ The exact table is:
 
 The first row, `rho=(-1,0,0)`, is `E=0`.  It lies inside the preferred
 Grassmann chart.  Its canonical marked section is excluded by
-[`P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md`](../../../../../../P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md);
+[`P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md`](../../../../../p5/h31/component-chart-boundary/P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md);
 its full marked-basis fibre has since been excluded in
 [`P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md`](../../../../../p5/h31/internal-e0-marked-fibre/P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md).
 

@@ -7,7 +7,7 @@ This is an exact characteristic-zero obstruction.
 The preferred four-Grassmannian chart of the known pure rank-two
 component has one nonzero divisor outside the finite five-parameter
 family.  The earlier theorem
-[`P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md`](P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md)
+[`P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md`](claims/p5/h31/component-chart-boundary/P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md)
 excluded one canonical marked row section of that divisor.
 
 The complete marked-basis fibre is now excluded.  For every plane tuple

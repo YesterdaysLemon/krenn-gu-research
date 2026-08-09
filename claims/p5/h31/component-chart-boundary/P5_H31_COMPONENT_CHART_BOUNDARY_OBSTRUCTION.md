@@ -5,7 +5,7 @@
 This is an exact characteristic-zero obstruction.
 
 The chart closure theorem
-[`P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md)
+[`P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md`](../../../p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md)
 finds one nonzero all-rank-two boundary divisor inside the preferred
 Grassmann chart of the known component.  For the displayed marked row
 normal form, no point of that divisor, in any of its four
@@ -13,16 +13,16 @@ distinguished-source orientations, can lift to an `H31`
 pure/`Delta_2` pencil with rank-three ternary local maps.
 
 Together with
-[`P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md`](P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md),
+[`P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md`](../../../../P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md),
 this excludes the canonical marked sections over the component chart
 and its displayed internal divisor.  It does not exclude every marked
 basis over those planes: kernel-row shifts are additional `H31` data,
 as shown by
-[`P5_H31_MARKED_BASIS_OPEN_BRANCH.md`](P5_H31_MARKED_BASIS_OPEN_BRANCH.md).
+[`P5_H31_MARKED_BASIS_OPEN_BRANCH.md`](../../../../P5_H31_MARKED_BASIS_OPEN_BRANCH.md).
 The full marked-basis fibre, the Schubert boundary, and additional
 components were not classified by this canonical-section theorem.  The
 complete marked fibre over this divisor has since been excluded in
-[`P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md`](P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md).
+[`P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md`](../../../../P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md).
 The Schubert boundary has since been closed separately.  Additional
 components remain outside its scope.
 
@@ -204,8 +204,8 @@ rank three of the full local map.  This proves the theorem.
 Run:
 
 ```text
-python verify_p5_h31_component_chart_boundary.py
-python audit_p5_h31_component_chart_boundary.py
+python claims/p5/h31/component-chart-boundary/verify_p5_h31_component_chart_boundary.py
+python claims/p5/h31/component-chart-boundary/audit_p5_h31_component_chart_boundary.py
 ```
 
 The primary verifier reconstructs all four mixed matrices, their

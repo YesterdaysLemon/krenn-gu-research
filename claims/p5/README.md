@@ -15,7 +15,10 @@ broader common-active component family.  The H31
 generic or complete-component package.  The H31 `toric-marked-fibre/`
 directory is the exact complete marked-fibre obstruction over the 21 genuine
 toric base cases of the first component, not a generic or whole-component
-package and not a closure of its projective interior.  The H22
+package and not a closure of its projective interior.  The H31
+`component-chart-boundary/` directory is the exact canonical marked-row
+section on one nonzero preferred-chart divisor of the first component, not
+the later complete marked-fibre strengthening or a component closure.  The H22
 `disjoint-mixed-star/` pilot also contains a partial, explicitly scoped
 boundary subtree. The H22 `six-dimensional/` package additionally contains
 the equal-weight `r=1` binary leaf at the generic component function-field
@@ -27,8 +30,9 @@ not close the same components' special divisors, projective boundaries,
 exceptional fibres, or slope divisors, and they do not imply the
 pointwise statements.  Outside the exact embedded-P3 H31 closure forest, the
 scoped H31 `p+q=0` wall and single-gate branch forests, the internal-`E=0`
-divisor leaf, the toric marked-fibre boundary leaf, and the disjoint-mixed-star
-H22 boundary subpackages, and the six-dimensional H22 equal-weight
+divisor leaf, the toric marked-fibre boundary leaf, the canonical H31
+chart-boundary section leaf, the disjoint-mixed-star H22 boundary subpackages,
+and the six-dimensional H22 equal-weight
 normal-form-point leaf, pointwise boundary/divisor closures for these and the
 other components remain elsewhere (mostly still at the repository root) and
 are separate future work.
@@ -41,7 +45,7 @@ remains **UNRESOLVED**.
 
 | directory | contents |
 |---|---|
-| [`h31/`](h31/) | marked-`H31` obstruction packages (28 directories; one complete component-closure forest, one flat three-triple `p+q=0` wall subforest, one three-package rank-one-gate forest, one internal-`E=0` divisor leaf, and one toric marked-fibre boundary leaf) |
+| [`h31/`](h31/) | marked-`H31` obstruction packages (29 directories; one complete component-closure forest, one flat three-triple `p+q=0` wall subforest, one three-package rank-one-gate forest, one internal-`E=0` divisor leaf, one toric marked-fibre boundary leaf, and one canonical chart-boundary section leaf) |
 | [`h22/`](h22/) | weighted-`H22` obstruction packages (18; the disjoint-mixed-star pilot has a partial boundary subtree and six-dimensional also has one equal-weight generic-point leaf) |
 
 The H22 disjoint-mixed-star package was migrated first, in the layout
@@ -71,6 +75,10 @@ equal-weight `r=1` binary leaf at the generic six-dimensional component
 function-field normal-form point while leaving the full geometric divisor,
 other slopes, parameter/projective boundaries, and component exhaustiveness
 separately owned.
+Stage 22 (`p5-h31-component-chart-boundary-stage22`) migrated the exact
+canonical marked-row section on one nonzero preferred-chart divisor while
+leaving the complete marked-fibre successor, its uniquely owned generator,
+other component boundaries, and component exhaustiveness separately owned.
 
 ## Pairing by underlying P4 family
 
@@ -97,10 +105,13 @@ asymmetries (never manufactured symmetry):
 - `common-active-binary-triangle` now contains only the complete H31
   diagonal `p+q=0` wall subforest; its remaining H31 siblings and all H22
   common-active wall work remain separately owned at root;
-- `internal-e0-marked-fibre` and `toric-marked-fibre` are H31-only scoped
+- `internal-e0-marked-fibre`, `toric-marked-fibre`, and
+  `component-chart-boundary` are H31-only scoped
   leaves; they participate in the separately established first-component
-  synthesis but neither is a generic or complete-component package.  The
-  toric leaf closes only the 21 genuine toric base-orbit/orientation cases;
+  synthesis but none is a generic or complete-component package.  The
+  toric leaf closes only the 21 genuine toric base-orbit/orientation cases,
+  while the chart-boundary leaf closes only the displayed canonical marked
+  sections and not the later complete marked-basis fibre;
 - `common-center-kernel-star`, `unequal-complement-common-kernel`,
   `unequal-endpoint-inward-star`, and `split-center-mixed-star` are
   H31-only in this spine because their H22 work is partial, boundary
@@ -112,7 +123,8 @@ asymmetries (never manufactured symmetry):
 
 Except for the exact H31 embedded-P3 component-closure forest, the scoped H31
 `p+q=0` wall and single-gate branch forests, the internal-`E=0` divisor leaf,
-the toric marked-fibre boundary leaf, and the scoped H22 disjoint-mixed-star
+the toric marked-fibre boundary leaf, the canonical H31 chart-boundary section
+leaf, and the scoped H22 disjoint-mixed-star
 boundary subpackages, and the H22 six-dimensional equal-weight
 normal-form-point leaf, the following P5 layers are **not** part of this spine:
 pointwise/divisor closures, boundary obstruction trees, exceptional-fibre
