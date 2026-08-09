@@ -1,0 +1,25 @@
+{
+  "batch_id": "p5-h31-component-fiber-infinity-stage23",
+  "approved_by": "Codex (exact mapping reviewer under repository-owner standing delegation dated 2026-08-08)",
+  "approved_at": "2026-08-09",
+  "base_sha": "97abc5f2c0cedc3707d0c97b85382df8d1747d74",
+  "manifest_sha256": "c6c5b192a13da3016fe4d70f784c8cc7991b471e26c119eeec5b8a8d36f1dc36",
+  "mapping_sha256": "3874be216b1210251aea1150fa655e7ea5bde0c035df0d8c9d51d18b0d57a454",
+  "member_count": 3,
+  "moves": [
+    {
+      "old_path": "P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/component-fiber-infinity/P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "audit_p5_h31_component_fiber_infinity.py",
+      "new_path": "claims/p5/h31/component-fiber-infinity/audit_p5_h31_component_fiber_infinity.py"
+    },
+    {
+      "old_path": "verify_p5_h31_component_fiber_infinity.py",
+      "new_path": "claims/p5/h31/component-fiber-infinity/verify_p5_h31_component_fiber_infinity.py"
+    }
+  ],
+  "rationale": "Stage 23: migrate the exact canonical first-plane Schubert-infinity theorem, characteristic-zero primary, and independent modular audit after independent topology, status, provenance, and mechanical audits established one routine scoped proof leaf.",
+  "notes": "Exact mapping reviewed by Codex under the repository-owner standing delegation dated 2026-08-08. Preserve the displayed-canonical-marking versus complete-marked-fibre distinction, the modular-QA-only audit role, the scope-local H31/P5/global false fields, the historical remaining-known-geometry output field, the unadjudicated P4 attribution and broader component conflicts, zero selected-artifact ledger entries, and global Krenn-Gu UNRESOLVED. The initially preferred complete chart-boundary marked-fibre family was explicitly deferred because its theorem says fourteen certificate strata while its primary asserts and reports sixteen."
+}
