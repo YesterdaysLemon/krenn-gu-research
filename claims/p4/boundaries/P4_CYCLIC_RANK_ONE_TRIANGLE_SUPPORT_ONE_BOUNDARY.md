@@ -151,8 +151,8 @@ toric initial forms of gained forest edges.
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_p4_cyclic_rank_one_triangle_support_one_boundary.py
-python audit_p4_cyclic_rank_one_triangle_support_one_boundary.py
+uv run --with sympy python claims/p4/boundaries/verify_p4_cyclic_rank_one_triangle_support_one_boundary.py
+python claims/p4/boundaries/audit_p4_cyclic_rank_one_triangle_support_one_boundary.py
 ```
 
 The primary verifier performs the fourteen-orbit calculation over a rational

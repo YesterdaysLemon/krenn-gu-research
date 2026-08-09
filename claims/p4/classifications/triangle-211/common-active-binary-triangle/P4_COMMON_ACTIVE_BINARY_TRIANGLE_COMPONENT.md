@@ -4,7 +4,7 @@
 
 **Exact characteristic-zero component theorem.**  The genuine-binary
 `tau!=0` common-active residual in equations (9)--(10) of
-[`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](../../../../../P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md)
+[`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](../../P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md)
 is a five-dimensional irreducible component of the pure `P_4` compression
 locus.  Its generic pair profile is
 

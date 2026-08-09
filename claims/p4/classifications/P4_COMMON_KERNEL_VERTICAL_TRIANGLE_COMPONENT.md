@@ -248,8 +248,8 @@ charts.
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_p4_common_kernel_vertical_triangle_component.py
-python audit_p4_common_kernel_vertical_triangle_component.py
+uv run --with sympy python claims/p4/classifications/verify_p4_common_kernel_vertical_triangle_component.py
+python claims/p4/classifications/audit_p4_common_kernel_vertical_triangle_component.py
 ```
 
 The primary verifier checks (5)--(22) over `Q`, including the family and

@@ -197,7 +197,7 @@ and returned `s VERIFIED`.  Its log is
 The fail-closed top-level audit
 
 ```text
-python verify_six_vertex_final.py
+python claims/finite/n06/verify_six_vertex_final.py
 ```
 
 checks the CNF and proof hashes, all four solver results, the external solver

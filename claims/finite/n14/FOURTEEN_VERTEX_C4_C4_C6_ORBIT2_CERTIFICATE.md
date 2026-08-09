@@ -49,7 +49,7 @@ The independent `drat-trim` checker returned `s VERIFIED`.
 With the pinned repository runtime (`requirements.txt`) installed, run:
 
 ```text
-python verify_fourteen_vertex_c4_c4_c6_orbit2.py
+python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit2.py
 ```
 
 The final audit is

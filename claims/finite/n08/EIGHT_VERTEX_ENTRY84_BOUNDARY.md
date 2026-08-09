@@ -115,7 +115,7 @@ independently:
 Run:
 
 ```text
-python verify_eight_vertex_entry84_boundary.py
+python claims/finite/n08/verify_eight_vertex_entry84_boundary.py
 python -m unittest -v \
   test_search_witness.EquationSystemTests.test_exact20_entry84_boundary
 ```

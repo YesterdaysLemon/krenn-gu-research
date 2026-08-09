@@ -102,7 +102,7 @@ SHA-256
 With the bundled dependencies on `PYTHONPATH`, run:
 
 ```text
-python verify_ten_vertex_c4_c6_equality_family.py
+python claims/finite/n10/verify_ten_vertex_c4_c6_equality_family.py
 ```
 
 Success writes a final JSON containing `"verified": true`.

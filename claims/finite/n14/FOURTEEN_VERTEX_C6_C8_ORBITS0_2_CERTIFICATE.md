@@ -67,7 +67,7 @@ The independent `drat-trim` checker returned `s VERIFIED`.
 With the pinned repository runtime (`requirements.txt`) installed, run:
 
 ```text
-python verify_fourteen_vertex_c6_8_orbits0_2.py
+python claims/finite/n14/verify_fourteen_vertex_c6_8_orbits0_2.py
 ```
 
 The verifier reconstructs all 400 learned-certificate transports, audits

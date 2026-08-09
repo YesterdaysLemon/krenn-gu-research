@@ -63,13 +63,13 @@ its induced coefficient a single nonzero monomial.
 The finite chain is reconstructed by:
 
 ```text
-python scout_twelve_vertex_six_potential_cells.py
-python count_twelve_vertex_port_cell_orbits.py
-python audit_twelve_vertex_port_cell_orbits.py
-python write_twelve_vertex_orbit_input.py
+python tools/explore/scout_twelve_vertex_six_potential_cells.py
+python tools/explore/count_twelve_vertex_port_cell_orbits.py
+python claims/finite/n12/audit_twelve_vertex_port_cell_orbits.py
+python tools/generate/write_twelve_vertex_orbit_input.py
 g++ -O3 -std=c++20 exhaust_twelve_vertex_six_potential_orbits.cpp
 g++ -O3 -std=c++20 audit_twelve_vertex_six_potential_orbits.cpp
-python compare_twelve_vertex_six_potential_orbit_audit.py
+python tools/explore/compare_twelve_vertex_six_potential_orbit_audit.py
 ```
 
 The two compiled enumerators use different exact-cover tie orders and

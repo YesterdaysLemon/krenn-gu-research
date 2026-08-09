@@ -129,8 +129,8 @@ The exact hashes and replay command are in
 With the repository runtime and bundled dependencies on `PYTHONPATH`, run:
 
 ```text
-python verify_fourteen_vertex_minimal_circuit_frontiers.py
-python verify_fourteen_vertex_c4_c4_c6_orbit8.py
+python claims/finite/n14/verify_fourteen_vertex_minimal_circuit_frontiers.py
+python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit8.py
 ```
 
 The first audit checks every aggregate augmentation/condition/proof hash

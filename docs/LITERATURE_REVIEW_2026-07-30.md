@@ -664,7 +664,7 @@ literatures when considered separately.
 The final remaining generic graph shape already contains the repository's
 first component, but its old coordinates obscured that fact.  The new apolar
 normal form is
-[`P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md`](../P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md).
+[`P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md`](../claims/p4/classifications/P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md).
 Two overlapping binary zero products and one synchronized edge reduce the
 triangle to a factorization of a fixed three-term squarefree quadratic.  Its
 dense factorization has only one apparent parameter, removed by the unused
@@ -722,7 +722,7 @@ specialization by itself.
 The equal-support common-factor orbit then gives the opposite answer: it is
 not obstructed but component-sized.  Its exact normal form and smoothness
 certificate are in
-[`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](../P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md).
+[`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](../claims/p4/classifications/P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md).
 The shared pair `a a_bar=0` gives the two-periodic complex
 
 ```text
@@ -863,7 +863,7 @@ closes all eleven certified components generically for both marked types.
 
 The next common-factor sheet is controlled by a different classical binary
 geometry:
-[`P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md`](../P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md).
+[`P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md`](../claims/p4/classifications/P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md).
 For two complementary-block linear forms `s=uX2+vX3` and
 `t=pX2+qX3`, the determinant `Q=uq-vp` cuts out the diagonal in
 `P^1 x P^1`, whereas the squarefree polar pairing `A=uq+vp` cuts out the
@@ -933,7 +933,7 @@ exhaustiveness and special parameter/projective boundaries.
 
 The same binary polarity also closes the dense common-kernel `YY` chart of
 the remaining `(2,1,1)` exceptional triangle:
-[`P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md`](../P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md).
+[`P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md`](../claims/p4/boundaries/P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md).
 Here the neighboring theories do more than supply terminology.  The
 rank-two cubic-span condition factors through the symmetric squarefree
 pairing `A=uq+vp` and determinant pairing `Q=uq-vp`.  In the dense torus its
@@ -958,7 +958,7 @@ class collapses into the mixed apolar span.
 
 The mixed `YX` common-kernel orientation reduces to a still smaller
 factorization scheme:
-[`P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md`](../P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md).
+[`P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md`](../claims/p4/boundaries/P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md).
 The synchronization law becomes `b*d=a^2`.  Looking only at off-diagonal
 coefficients makes this a symmetric rank-two matrix-completion problem with
 one prescribed edge.  Its determinant split is complete: the rigid branch
@@ -976,7 +976,7 @@ coordinate-ray boundary, without primary decomposition or point search.
 
 The final active/active common-kernel orientation crosses into arithmetic
 geometry rather than collapsing:
-[`P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md`](../P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md).
+[`P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md`](../claims/p4/classifications/P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md).
 Its four normalized parameters satisfy
 
 ```text
@@ -1052,7 +1052,7 @@ boundaries, not a remaining generic fibre of a known component.
 
 The next support boundary is controlled by an even more elementary
 Kunneth translation:
-[`P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md`](../P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md).
+[`P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md`](../claims/p4/classifications/P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md).
 A coordinate zero divisor `X_i` has no independent linear annihilator, so a
 common-factor support-one triangle immediately loses pair rank.  In the
 crossed case, the remaining synchronization is a factorization of the edge
@@ -1309,7 +1309,7 @@ does not specialize automatically to the parameter-boundary fibres.
 
 The all-pair-ranks-at-least-three component question now has a standalone
 combinatorial reduction:
-[`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](../P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md).
+[`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](../claims/p4/classifications/P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md).
 The perfect degree-two Frobenius pairing gives
 `r_ij+r_kl<=7` on every opposite edge pair.  Hence the rank-three edges meet
 all three 1-factors of `K_4`.  The minimal blockers of that 1-factorization

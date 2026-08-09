@@ -17,9 +17,9 @@ This component theorem itself does **not** classify the other open
 all-pair-rank cells, settle special `P_5` fibres, or prove the global
 Krenn--Gu conjecture.  Its generic marked `H31` and weighted `H22` fibres are
 closed separately in
-[`P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/common-singleton/P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md)
+[`P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](../../p5/h31/common-singleton/P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md)
 and
-[`P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md`](../../p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md).
 
 ## Family
 
@@ -229,8 +229,8 @@ orbit eighteen.
 ## Replay
 
 ```text
-uv run --with sympy python verify_p4_common_singleton_component.py
-python audit_p4_common_singleton_component.py
+uv run --with sympy python claims/p4/classifications/verify_p4_common_singleton_component.py
+python claims/p4/classifications/audit_p4_common_singleton_component.py
 ```
 
 The primary replay regenerates every incidence equation, family identity,

@@ -108,7 +108,7 @@ genericity, numerical tolerances, or a lattice calculation.
 Run:
 
 ```text
-python verify_fourteen_vertex_c3_c3_c8_family.py
+python claims/finite/n14/verify_fourteen_vertex_c3_c3_c8_family.py
 ```
 
 The verifier uses a fresh smallest-vertex matching recursion, reconstructs

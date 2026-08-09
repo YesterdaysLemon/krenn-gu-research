@@ -19,7 +19,7 @@ lower bound is therefore twenty-one symmetry-inequivalent pure-`P_4`
 component orbits.
 
 The mixed-chain vertical fibre left open in equation (22) of
-[`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](../../../../../P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md)
+[`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](../../P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md)
 is a boundary of this component.  Together with the other residual-placement
 theorems, this closes the exactly-one-kernel rank-one triangle cell at the
 pure-`P_4` level.  It does not settle the marked `P_5` fibres of the new

@@ -13,7 +13,7 @@ Krenn--Gu conjecture remain separate and **UNRESOLVED**.
 ## Intrinsic marked rows
 
 Use the first sheet from
-[`P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md`](../../../../P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md),
+[`P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md`](../../../p4/classifications/P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md),
 over `K=C(A,R,D)`.  Put `s=2A+R` and
 
 ```text

@@ -125,12 +125,12 @@ With the bundled dependencies on `PYTHONPATH`, run:
 
 ```text
 python \
-  explore_twelve_vertex_complement_set_tree_cnf.py
+  tools/explore/explore_twelve_vertex_complement_set_tree_cnf.py
 python \
-  explore_twelve_vertex_complement_chain_orbits.py
+  tools/explore/explore_twelve_vertex_complement_chain_orbits.py
 python \
-  certify_twelve_vertex_complement_profile.py
-python run_kissat_proof.py \
+  claims/finite/n12/certify_twelve_vertex_complement_profile.py
+python tools/generate/run_kissat_proof.py \
   --kissat tmp/kissat_wsl_lf/build/kissat \
   --cnf tmp/twelve_vertex_complement_profile_selector.cnf \
   --proof tmp/twelve_vertex_complement_profile_selector.drat \
@@ -138,7 +138,7 @@ python run_kissat_proof.py \
   --stderr tmp/twelve_vertex_complement_profile_kissat.stderr.log \
   --output tmp/twelve_vertex_complement_profile_kissat_run.json \
   --configuration unsat
-python run_drat_trim.py \
+python tools/generate/run_drat_trim.py \
   --drat-trim tmp/drat-trim/drat-trim \
   --cnf tmp/twelve_vertex_complement_profile_selector.cnf \
   --proof tmp/twelve_vertex_complement_profile_selector.drat \
@@ -147,7 +147,7 @@ python run_drat_trim.py \
   --output tmp/twelve_vertex_complement_profile_drat_replay.json \
   --forward
 python \
-  audit_twelve_vertex_complement_profile.py
+  claims/finite/n12/audit_twelve_vertex_complement_profile.py
 ```
 
 Principal SHA-256 values are:

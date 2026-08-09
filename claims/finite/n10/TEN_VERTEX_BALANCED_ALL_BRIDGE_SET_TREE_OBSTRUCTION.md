@@ -61,8 +61,8 @@ The corrected CNF has 49,216 variables and 122,539 clauses.  Kissat's
 Run:
 
 ```text
-python certify_ten_vertex_balanced_set_trees.py
-python run_kissat_proof.py \
+python claims/finite/n10/certify_ten_vertex_balanced_set_trees.py
+python tools/generate/run_kissat_proof.py \
   --kissat tmp/kissat_wsl_lf/build/kissat \
   --cnf tmp/ten_vertex_balanced_set_trees_all_orbits.cnf \
   --proof tmp/ten_vertex_balanced_set_trees_all_orbits.drat \
@@ -70,7 +70,7 @@ python run_kissat_proof.py \
   --stderr tmp/ten_vertex_balanced_set_trees_kissat.stderr.log \
   --output tmp/ten_vertex_balanced_set_trees_kissat_run.json \
   --configuration unsat
-python run_drat_trim.py \
+python tools/generate/run_drat_trim.py \
   --drat-trim tmp/drat-trim/drat-trim \
   --cnf tmp/ten_vertex_balanced_set_trees_all_orbits.cnf \
   --proof tmp/ten_vertex_balanced_set_trees_all_orbits.drat \
@@ -78,7 +78,7 @@ python run_drat_trim.py \
   --stderr tmp/ten_vertex_balanced_set_trees_drat_trim.stderr.log \
   --output tmp/ten_vertex_balanced_set_trees_drat_replay.json \
   --forward
-python audit_ten_vertex_balanced_set_trees.py
+python claims/finite/n10/audit_ten_vertex_balanced_set_trees.py
 ```
 
 The primary generator uses integer compositions, least-vertex recursive

@@ -8,9 +8,9 @@ The all-rank-two locus on which `P_4` restricts to a nonzero
 decomposable tensor has at least three more irreducible components.
 Each has dimension five.  They are mutually inequivalent, and they are
 inequivalent to both components previously proved in
-[`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md)
+[`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md)
 and
-[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md)
+[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](../components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md)
 under source-coordinate permutations, diagonal source rescaling, and
 mode permutations.
 
@@ -18,9 +18,9 @@ Thus there are at least five symmetry-inequivalent all-rank-two pure
 `P_4` components.  This is a lower bound, not a classification.
 The generic marked `H31` fibres of the three new components have since
 been excluded in
-[`P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/one-three/P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md);
+[`P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md`](../../p5/h31/one-three/P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md);
 their generic weighted `H22` incidences have since been excluded in
-[`P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md`](claims/p5/h22/one-three-components/P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md).
+[`P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md`](../../p5/h22/one-three-components/P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md).
 Their special parameter/projective boundaries remain.  Nothing here
 settles all of `H22` or resolves the global prize problem.
 
@@ -338,8 +338,8 @@ marked fibre, alongside the conceptual component classification.
 Run:
 
 ```text
-python verify_p4_diagonal_quadric_one_three_components.py
-python audit_p4_diagonal_quadric_one_three_components.py
+python claims/p4/classifications/verify_p4_diagonal_quadric_one_three_components.py
+python claims/p4/classifications/audit_p4_diagonal_quadric_one_three_components.py
 ```
 
 The primary verifier checks the cubic map (4), the radical calculation

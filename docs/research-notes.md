@@ -946,7 +946,7 @@ UNSAT.  CaDiCaL's 186,169,429-byte DRAT proof is independently replayed by
 `s VERIFIED`.  The fail-closed audit,
 
 ```text
-python verify_eight_vertex_degree3_e19.py
+python claims/finite/n08/verify_eight_vertex_degree3_e19.py
 tmp/eight_vertex_degree3_e19_final_audit.json: "verified": true
 ```
 
@@ -2036,7 +2036,7 @@ class 5: 10,052,726
 The fail-closed audit is
 
 ```text
-python verify_eight_vertex_4regular.py
+python claims/finite/n08/verify_eight_vertex_4regular.py
 tmp/eight_vertex_4regular_final_audit.json: "verified": true
 ```
 
@@ -2062,7 +2062,7 @@ UNSAT for the materialized at-most-15 CNF.  CaDiCaL produced a
 resolution steps and returned `s VERIFIED`.  The fail-closed audit is
 
 ```text
-python verify_eight_vertex_degree4_frontier.py
+python claims/finite/n08/verify_eight_vertex_degree4_frontier.py
 tmp/eight_vertex_degree4_frontier_audit.json: "verified": true
 ```
 
@@ -2080,7 +2080,7 @@ UNSAT; independent `drat-trim` replay uses 211,119,420 resolution steps and
 returns `s VERIFIED`.  The fail-closed audit,
 
 ```text
-python verify_eight_vertex_16edge.py
+python claims/finite/n08/verify_eight_vertex_16edge.py
 tmp/eight_vertex_16edge_audit.json: "verified": true
 ```
 
@@ -2099,7 +2099,7 @@ and 3,349,145 clauses.  CaDiCaL 1.9.5 returns UNSAT, and independent
 audit,
 
 ```text
-python verify_eight_vertex_degree4_e17.py
+python claims/finite/n08/verify_eight_vertex_degree4_e17.py
 tmp/eight_vertex_degree4_e17_final_audit.json: "verified": true
 ```
 

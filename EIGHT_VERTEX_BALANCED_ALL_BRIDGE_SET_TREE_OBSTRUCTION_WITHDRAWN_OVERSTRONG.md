@@ -116,8 +116,8 @@ checker returns `s VERIFIED`.
 Run:
 
 ```text
-python certify_eight_vertex_balanced_set_trees.py
-python run_kissat_proof.py \
+python claims/finite/n08/certify_eight_vertex_balanced_set_trees.py
+python tools/generate/run_kissat_proof.py \
   --kissat tmp/kissat_wsl_lf/build/kissat \
   --cnf tmp/eight_vertex_balanced_set_trees_all_profiles.cnf \
   --proof tmp/eight_vertex_balanced_set_trees_all_profiles.drat \
@@ -125,7 +125,7 @@ python run_kissat_proof.py \
   --stderr tmp/eight_vertex_balanced_set_trees_kissat.stderr.log \
   --output tmp/eight_vertex_balanced_set_trees_kissat_run.json \
   --configuration unsat
-python run_drat_trim.py \
+python tools/generate/run_drat_trim.py \
   --drat-trim tmp/drat-trim/drat-trim \
   --cnf tmp/eight_vertex_balanced_set_trees_all_profiles.cnf \
   --proof tmp/eight_vertex_balanced_set_trees_all_profiles.drat \
@@ -133,7 +133,7 @@ python run_drat_trim.py \
   --stderr tmp/eight_vertex_balanced_set_trees_drat_trim.stderr.log \
   --output tmp/eight_vertex_balanced_set_trees_drat_replay.json \
   --forward
-python audit_eight_vertex_balanced_set_trees.py
+python claims/finite/n08/audit_eight_vertex_balanced_set_trees.py
 ```
 
 The primary generator enumerates multiplicity profiles by integer

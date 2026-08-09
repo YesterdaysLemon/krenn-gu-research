@@ -24,7 +24,7 @@ makes `d = 3` the essential case.
 ### 1.1 Complete finite cases (computer-assisted, independently replayed)
 
 - **`n = 6`, all `d >= 3`: no complex solution.**  Map:
-  [`SIX_VERTEX_CERTIFICATE.md`](../SIX_VERTEX_CERTIFICATE.md).  Method:
+  [`SIX_VERTEX_CERTIFICATE.md`](../claims/finite/n06/SIX_VERTEX_CERTIFICATE.md).  Method:
   exhaustive support reduction, exact Laurent/algebraic conflict
   extraction, byte-checked selector-CNF compilation, independent SAT
   decision, DRAT replay, SHA-256 hash-chain audit.
@@ -42,7 +42,7 @@ makes `d = 3` the essential case.
   (365/425, 292/328, 67/93 selectors excluded) — each exclusion is a
   certified finite null result, **not** a family theorem.  Maps:
   `FOURTEEN_VERTEX_*` certificates,
-  [`FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md`](../FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md).
+  [`FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md`](../claims/finite/n14/FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md).
 
 ### 1.2 Arbitrary-order structural theorems
 
@@ -78,7 +78,7 @@ The attack then runs through the pure-`P_4` compression components:
   (fivefolds and sixfolds), each with an exact family-tangent /
   incidence certificate.  The all-pair-rank-exceptional-graph
   reduction claims these twenty-five closures are exhaustive
-  ([`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](../P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md))
+  ([`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](../claims/p4/classifications/P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md))
   — see bottleneck 3 for the honest status of that claim.
 - **Generic marked `H31` fibre**: proved empty on **all 25**
   components.  Twenty-four dedicated
@@ -185,7 +185,7 @@ this closes, (O-H22) has a 24-of-25 hole at generic points.
 the master theorem's load-bearing hypothesis.  The canonical line
 claims the 25 closures are exhaustive *within the all-pair-rank
 exceptional-graph reduction*
-([`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](../P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md));
+([`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](../claims/p4/classifications/P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md));
 the ledger's warning still stands: a component census is a lower bound,
 and the cover must be verified as `X_nz ⊆ union` up to the symmetry
 group, including every support-degenerate and lower-rank tail.  This is

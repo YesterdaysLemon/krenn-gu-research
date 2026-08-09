@@ -132,7 +132,7 @@ s VERIFIED
 Run:
 
 ```text
-python verify_eight_vertex_degree4_e17.py
+python claims/finite/n08/verify_eight_vertex_degree4_e17.py
 ```
 
 The verifier:

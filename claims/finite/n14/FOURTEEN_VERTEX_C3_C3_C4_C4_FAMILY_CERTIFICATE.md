@@ -155,7 +155,7 @@ The independent audit semantically replays all 394,068 witnesses.  Only
 Run:
 
 ```text
-python verify_fourteen_vertex_c3_c3_c4_c4_family.py
+python claims/finite/n14/verify_fourteen_vertex_c3_c3_c4_c4_family.py
 ```
 
 The verifier independently regenerates the factor census, automorphisms,

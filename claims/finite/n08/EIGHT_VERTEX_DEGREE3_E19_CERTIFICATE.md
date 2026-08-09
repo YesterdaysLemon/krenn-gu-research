@@ -195,7 +195,7 @@ s VERIFIED
 Run:
 
 ```text
-python verify_eight_vertex_degree3_e19.py
+python claims/finite/n08/verify_eight_vertex_degree3_e19.py
 ```
 
 The verifier replays both algebraic-conflict stages, reconstructs the

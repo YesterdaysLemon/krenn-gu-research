@@ -33,7 +33,7 @@ repository now certifies at least
 This is not component exhaustiveness, does not yet close either marked `P_5`
 fibre, and does not prove or disprove the global Krenn--Gu prize conjecture.
 
-![The directed mode triangles and their source-support star and path.](research_figures/p4_directed_zero_divisor_triangle_components.svg)
+![The directed mode triangles and their source-support star and path.](../../../research_figures/p4_directed_zero_divisor_triangle_components.svg)
 
 ## The squarefree-algebra normal forms
 
@@ -279,8 +279,8 @@ the two normal forms or the component theorem here.
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_p4_directed_zero_divisor_triangle_components.py
-python audit_p4_directed_zero_divisor_triangle_components.py
+uv run --with sympy python claims/p4/classifications/verify_p4_directed_zero_divisor_triangle_components.py
+python claims/p4/classifications/audit_p4_directed_zero_divisor_triangle_components.py
 ```
 
 The primary verifier proves all permanent, covector, pair-minor, family

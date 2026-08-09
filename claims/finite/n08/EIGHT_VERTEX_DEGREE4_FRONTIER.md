@@ -88,7 +88,7 @@ s VERIFIED
 Run:
 
 ```text
-python verify_eight_vertex_degree4_frontier.py
+python claims/finite/n08/verify_eight_vertex_degree4_frontier.py
 ```
 
 It pins the CNF, both solver outputs, the proof, and the proof-checker log,
@@ -119,7 +119,7 @@ CaDiCaL's 243,459,151-byte proof was independently replayed by
 steps.  The fail-closed audit is:
 
 ```text
-python verify_eight_vertex_16edge.py
+python claims/finite/n08/verify_eight_vertex_16edge.py
 tmp/eight_vertex_16edge_audit.json: "verified": true
 ```
 
@@ -143,6 +143,6 @@ CaDiCaL's 853,663,837-byte proof was independently replayed by
 steps.  The fail-closed audit is:
 
 ```text
-python verify_eight_vertex_degree4_e17.py
+python claims/finite/n08/verify_eight_vertex_degree4_e17.py
 tmp/eight_vertex_degree4_e17_final_audit.json: "verified": true
 ```

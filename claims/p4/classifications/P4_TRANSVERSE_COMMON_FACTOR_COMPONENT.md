@@ -21,15 +21,15 @@ On a dense open of the component the pair-image profile, in edge order
 The unique relation on edge `12` has coefficient rank two.  The four
 relations on `01,02,13,23` have coefficient rank one, and `03` has full pair
 rank four.  The resulting five-edge exceptional graph is pictured in
-[`research_figures/P4_TRANSVERSE_COMMON_FACTOR_COMPONENT_GRAPH.svg`](research_figures/P4_TRANSVERSE_COMMON_FACTOR_COMPONENT_GRAPH.svg).
+[`research_figures/P4_TRANSVERSE_COMMON_FACTOR_COMPONENT_GRAPH.svg`](../../../research_figures/P4_TRANSVERSE_COMMON_FACTOR_COMPONENT_GRAPH.svg).
 
 This raises the certified lower bound from eleven to twelve symmetry-
 inequivalent pure-`P_4` component orbits.  It is not component exhaustiveness,
 does not prove component exhaustiveness or the global Krenn--Gu conjecture.
 Its generic `H31` fibre is subsequently proved empty in
-[`P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/transverse-common-factor/P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](../../p5/h31/transverse-common-factor/P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
 Its generic weighted `H22` fibre is also empty by the binary-polarity cut in
-[`P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/transverse-common-factor/P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](../../p5/h22/transverse-common-factor/P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
 
 ## The orientation collapses to one exact pair
 
@@ -306,8 +306,8 @@ This proves that the new component is a twelfth symmetry orbit.
 Run:
 
 ```text
-uv run --with sympy python verify_p4_transverse_common_factor_component.py
-python audit_p4_transverse_common_factor_component.py
+uv run --with sympy python claims/p4/classifications/verify_p4_transverse_common_factor_component.py
+python claims/p4/classifications/audit_p4_transverse_common_factor_component.py
 ```
 
 The primary verifier checks (3)--(22) over `Q`, including the four factored

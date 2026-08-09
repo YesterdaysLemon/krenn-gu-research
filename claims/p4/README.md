@@ -76,7 +76,7 @@ documented:
 
 - component census and exhaustiveness: the checkpoint section of the
   top-level [`README.md`](../../README.md) and
-  [`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](../../P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md);
+  [`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](classifications/P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md);
 - migration mechanics and provenance:
   [`docs/architecture/layout-migration-stage4-report.md`](../../docs/architecture/layout-migration-stage4-report.md)
   and [`catalog/moved-paths.json`](../../catalog/moved-paths.json).

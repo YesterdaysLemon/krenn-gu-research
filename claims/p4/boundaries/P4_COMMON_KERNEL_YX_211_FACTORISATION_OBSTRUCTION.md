@@ -142,8 +142,8 @@ problem.
 Run:
 
 ```text
-uv run --with sympy python verify_p4_common_kernel_yx_211_factorisation_obstruction.py
-python audit_p4_common_kernel_yx_211_factorisation_obstruction.py
+uv run --with sympy python claims/p4/boundaries/verify_p4_common_kernel_yx_211_factorisation_obstruction.py
+python claims/p4/boundaries/audit_p4_common_kernel_yx_211_factorisation_obstruction.py
 ```
 
 The primary verifier checks every coefficient identity, the determinant

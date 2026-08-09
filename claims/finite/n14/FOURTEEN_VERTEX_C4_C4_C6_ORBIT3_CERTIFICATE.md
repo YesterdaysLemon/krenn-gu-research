@@ -71,7 +71,7 @@ equations, the four core clauses, the target activity, the one-relation
 lattice basis, and the final SAT contradiction:
 
 ```text
-python verify_fourteen_vertex_unforced_factor_choice_core.py
+python claims/finite/n14/verify_fourteen_vertex_unforced_factor_choice_core.py
 ```
 
 This compact witness concerns one fixed support; the global orbit theorem
@@ -82,7 +82,7 @@ comes from the reconstructed CNF and DRAT proof above.
 With the pinned repository runtime (`requirements.txt`) installed, run:
 
 ```text
-python verify_fourteen_vertex_c4_c4_c6_orbit3.py
+python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit3.py
 ```
 
 The final audit is

@@ -30,7 +30,7 @@ K=C(p,q,r).
 ```
 
 The four planes from
-[`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](../../../../P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md)
+[`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](../../../p4/classifications/P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md)
 are
 
 ```text

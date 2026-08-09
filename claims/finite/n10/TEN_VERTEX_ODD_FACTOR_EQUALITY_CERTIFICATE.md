@@ -18,7 +18,7 @@ or the global conjecture.
 
 The all-odd `C3+C7` and `C5+C5` cases are also consequences of the
 arbitrary-order analytic theorem in
-[`ODD_FULL_FACTOR_ONE_TERM_THEOREM.md`](claims/arbitrary-order/ODD_FULL_FACTOR_ONE_TERM_THEOREM.md).
+[`ODD_FULL_FACTOR_ONE_TERM_THEOREM.md`](../../arbitrary-order/ODD_FULL_FACTOR_ONE_TERM_THEOREM.md).
 The mixed odd/even `C3+C3+C4` case still needs the finite audit here.
 
 ## Immediate obstruction
@@ -72,11 +72,11 @@ SHA-256
 With the bundled dependencies on `PYTHONPATH`, run:
 
 ```text
-python verify_ten_vertex_odd_factor_equality_family.py --orbits tmp/ten_vertex_c3_c7_equality_support_orbits.json --certificates tmp/ten_vertex_c3_c7_equality_support_one_term.json --output tmp/ten_vertex_c3_c7_equality_family_verified.json
+python claims/finite/n10/verify_ten_vertex_odd_factor_equality_family.py --orbits tmp/ten_vertex_c3_c7_equality_support_orbits.json --certificates tmp/ten_vertex_c3_c7_equality_support_one_term.json --output tmp/ten_vertex_c3_c7_equality_family_verified.json
 
-python verify_ten_vertex_odd_factor_equality_family.py --orbits tmp/ten_vertex_c5_c5_equality_support_orbits.json --certificates tmp/ten_vertex_c5_c5_equality_support_one_term.json --output tmp/ten_vertex_c5_c5_equality_family_verified.json
+python claims/finite/n10/verify_ten_vertex_odd_factor_equality_family.py --orbits tmp/ten_vertex_c5_c5_equality_support_orbits.json --certificates tmp/ten_vertex_c5_c5_equality_support_one_term.json --output tmp/ten_vertex_c5_c5_equality_family_verified.json
 
-python verify_ten_vertex_odd_factor_equality_family.py --orbits tmp/ten_vertex_c3_c3_c4_equality_support_orbits.json --certificates tmp/ten_vertex_c3_c3_c4_equality_support_one_term.json --output tmp/ten_vertex_c3_c3_c4_equality_family_verified.json
+python claims/finite/n10/verify_ten_vertex_odd_factor_equality_family.py --orbits tmp/ten_vertex_c3_c3_c4_equality_support_orbits.json --certificates tmp/ten_vertex_c3_c3_c4_equality_support_one_term.json --output tmp/ten_vertex_c3_c3_c4_equality_family_verified.json
 ```
 
 All three outputs must contain `"verified": true`.

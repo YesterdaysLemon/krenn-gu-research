@@ -214,7 +214,7 @@ different materialized extensions and two different raw proofs.
 With the bundled dependencies on `PYTHONPATH`, run:
 
 ```text
-python verify_fourteen_vertex_c4_c4_c6_orbit44_core24.py
+python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit44_core24.py
 ```
 
 This performs the compact end-to-end audit and a redundant fresh forward
@@ -222,14 +222,14 @@ DRAT replay.  To check every stage while trusting the already verified
 stored replay record, run:
 
 ```text
-python verify_fourteen_vertex_c4_c4_c6_orbit44_core24.py \
+python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit44_core24.py \
   --skip-fresh-drat-replay
 ```
 
 The independent larger path is:
 
 ```text
-python verify_fourteen_vertex_c4_c4_c6_orbit44_extension.py
+python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit44_extension.py
 ```
 
 Both theorem paths retain `"global_conjecture_resolved": false`.

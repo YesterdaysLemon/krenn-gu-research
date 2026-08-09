@@ -80,7 +80,7 @@ possible target matchings:
 Run:
 
 ```text
-python verify_fourteen_vertex_no_one_term_support.py
+python src/krenn_gu/verify_fourteen_vertex_no_one_term_support.py
 ```
 
 Pinned audit:
@@ -111,8 +111,8 @@ five activities, and both Laurent exponent differences.
 Run:
 
 ```text
-python certify_fourteen_vertex_binomial_trinomial.py
-python verify_fourteen_vertex_binomial_trinomial.py
+python claims/finite/n14/certify_fourteen_vertex_binomial_trinomial.py
+python claims/finite/n14/verify_fourteen_vertex_binomial_trinomial.py
 ```
 
 Pinned final audit:

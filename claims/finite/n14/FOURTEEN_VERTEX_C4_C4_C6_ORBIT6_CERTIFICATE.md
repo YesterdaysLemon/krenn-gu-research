@@ -60,7 +60,7 @@ Independent forward `drat-trim` verification returned `s VERIFIED`.
 With the pinned repository runtime (`requirements.txt`) installed, run:
 
 ```text
-python verify_fourteen_vertex_c4_c4_c6_orbit6.py
+python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit6.py
 ```
 
 The verifier checks the connectivity prerequisite and source hashes,

@@ -69,7 +69,7 @@ lattice no-goods        1,378
 With the bundled dependencies on `PYTHONPATH`, run:
 
 ```text
-python verify_five_regular_double_c4_singleton_family.py
+python claims/finite/n08/verify_five_regular_double_c4_singleton_family.py
 ```
 
 Success writes an aggregate JSON containing `"verified": true`:

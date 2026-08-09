@@ -48,7 +48,7 @@ Krenn--Gu conjecture.
 
 The equal-support common-factor orientation has since supplied a new
 six-dimensional component rather than an obstruction:
-[`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](../../../../../P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md).
+[`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](../../P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md).
 That result is consistent with this theorem because its two rank-one edges
 share a common-mode factor, whereas (1) uses two independent common-mode
 rows.

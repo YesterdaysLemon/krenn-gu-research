@@ -221,7 +221,7 @@ L_3: T=-D-G-S.                                     (14)
 ```
 
 Their component status and mutual inequivalence were certified in
-[`P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md`](../../../../../P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md).
+[`P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md`](../../P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md).
 
 ## What remains
 
@@ -295,7 +295,7 @@ plane tuple.”  Its unresolved generic alternatives are:
    [`P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md`](../two-rank-two-spoke-mixed-star-classification/P4_TWO_RANK_TWO_SPOKE_MIXED_STAR_CLASSIFICATION.md).
    The known first component's dense one-rank-two triangle orientation now has
    a fixed-triangle/apolar-`P^2` normal form:
-   [`P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md`](../../../../../P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md).
+   [`P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md`](../../P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md).
    Its other Borel orientations/support collisions and special lower-pair-rank
    boundaries remain open;
 3. the lower pair-image-rank and coincident/support-one zero-product
@@ -309,7 +309,7 @@ plane tuple.”  Its unresolved generic alternatives are:
 
 The common smooth diagonal-quadric semisimple case is separately
 excluded in
-[`P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md`](../../../../../P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md).
+[`P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md`](../../../boundaries/P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md).
 
 ## Verification
 

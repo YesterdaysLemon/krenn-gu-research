@@ -218,9 +218,9 @@ Run:
 
 ```text
 python \
-  verify_p4_common_smooth_diagonal_quadric_obstruction.py
+  claims/p4/boundaries/verify_p4_common_smooth_diagonal_quadric_obstruction.py
 
-python audit_p4_common_smooth_diagonal_quadric_obstruction.py
+python claims/p4/boundaries/audit_p4_common_smooth_diagonal_quadric_obstruction.py
 ```
 
 The primary verifier reconstructs the spinor lines and annihilator

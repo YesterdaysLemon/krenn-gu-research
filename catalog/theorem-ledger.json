@@ -164,7 +164,7 @@
     },
     {
       "name": "n=6 complete: no complex solution, all d>=3",
-      "document": "SIX_VERTEX_CERTIFICATE.md",
+      "document": "claims/finite/n06/SIX_VERTEX_CERTIFICATE.md",
       "document_sha256_16": "f601555e3ab0ade9",
       "status": "verified_finite",
       "assumptions_and_excluded_divisors": [
@@ -182,11 +182,17 @@
         "kissat or glucose",
         "drat-trim"
       ],
-      "note": "Verifier/audit chain is the packaging + DRAT replay scripts named in the certificate map; not a single script."
+      "note": "Verifier/audit chain is the packaging + DRAT replay scripts named in the certificate map; not a single script.",
+      "claim_package": "claims/finite/six-vertex",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "SIX_VERTEX_CERTIFICATE.md"
+      ]
     },
     {
       "name": "Eight-vertex 4-regular exclusion",
-      "document": "EIGHT_VERTEX_4REGULAR_CERTIFICATE.md",
+      "document": "claims/finite/n08/EIGHT_VERTEX_4REGULAR_CERTIFICATE.md",
       "document_sha256_16": "5cfc33467f82cc83",
       "status": "verified_finite",
       "assumptions_and_excluded_divisors": [],
@@ -199,11 +205,17 @@
       "external_binaries": [
         "kissat or glucose",
         "drat-trim"
+      ],
+      "claim_package": "claims/finite/eight-vertex",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "EIGHT_VERTEX_4REGULAR_CERTIFICATE.md"
       ]
     },
     {
       "name": "Eight-vertex degree-four frontier through 17 edges",
-      "document": "EIGHT_VERTEX_17EDGE_CERTIFICATE.md",
+      "document": "claims/finite/n08/EIGHT_VERTEX_17EDGE_CERTIFICATE.md",
       "document_sha256_16": "b27a7b62d225e1c1",
       "status": "verified_finite",
       "assumptions_and_excluded_divisors": [],
@@ -217,11 +229,17 @@
         "kissat or glucose",
         "drat-trim"
       ],
-      "note": "Exact-18-edge degree-four case remains OPEN (named active frontier)."
+      "note": "Exact-18-edge degree-four case remains OPEN (named active frontier).",
+      "claim_package": "claims/finite/eight-vertex",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "EIGHT_VERTEX_17EDGE_CERTIFICATE.md"
+      ]
     },
     {
       "name": "Eight-vertex full singleton macro-family (7,938 labelled supports)",
-      "document": "EIGHT_VERTEX_FULL_SINGLETON_FAMILY_CERTIFICATE.md",
+      "document": "claims/finite/n08/EIGHT_VERTEX_FULL_SINGLETON_FAMILY_CERTIFICATE.md",
       "document_sha256_16": "a15cde86b6fb232e",
       "status": "verified_finite",
       "assumptions_and_excluded_divisors": [],
@@ -234,11 +252,17 @@
       "external_binaries": [
         "kissat or glucose",
         "drat-trim"
+      ],
+      "claim_package": "claims/finite/eight-vertex",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "EIGHT_VERTEX_FULL_SINGLETON_FAMILY_CERTIFICATE.md"
       ]
     },
     {
       "name": "Ten-vertex 5-regular 25-edge exclusion (105 entries)",
-      "document": "TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md",
+      "document": "claims/finite/n10/TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md",
       "document_sha256_16": "e3490ba8e276f996",
       "status": "verified_finite",
       "assumptions_and_excluded_divisors": [],
@@ -252,11 +276,17 @@
         "kissat or glucose",
         "drat-trim"
       ],
-      "note": "Sub-105-entry branch and non-5-regular exact-25 supports open."
+      "note": "Sub-105-entry branch and non-5-regular exact-25 supports open.",
+      "claim_package": "claims/finite/ten-vertex",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md"
+      ]
     },
     {
       "name": "Order-14 equality families: six types closed, three partial",
-      "document": "FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md",
+      "document": "claims/finite/n14/FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md",
       "document_sha256_16": "3572d015ab709d8f",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
@@ -270,7 +300,13 @@
         "kissat or glucose",
         "drat-trim"
       ],
-      "note": "C4+C10 365/425, C6+C8 292/328, C4+C4+C6 67/93 selectors excluded. Each exclusion is a certified finite null result; no family theorem yet."
+      "note": "C4+C10 365/425, C6+C8 292/328, C4+C4+C6 67/93 selectors excluded. Each exclusion is a certified finite null result; no family theorem yet.",
+      "claim_package": "claims/finite/fourteen-vertex",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md"
+      ]
     },
     {
       "name": "Four Regular Balanced Bridge Obstruction",
@@ -1701,7 +1737,7 @@
     },
     {
       "name": "Exhaustiveness: 25 component closures cover the all-pair-rank exceptional locus",
-      "document": "P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md",
+      "document": "claims/p4/classifications/P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md",
       "document_sha256_16": "95804c14d93c8dbe",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
@@ -1709,13 +1745,20 @@
         "up to source/mode symmetry"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p4_all_pair_rank_exceptional_graph_reduction.py",
+      "primary_verifier": "claims/p4/classifications/verify_p4_all_pair_rank_exceptional_graph_reduction.py",
       "verifier_provenance": "script_is_the_verifier",
       "independent_audit": null,
       "audit_provenance": "not_yet_mapped",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "BOTTLENECK B3: needs human review of quantifier scope."
+      "note": "BOTTLENECK B3: needs human review of quantifier scope.",
+      "claim_package": "claims/p4/classifications",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md",
+        "verify_p4_all_pair_rank_exceptional_graph_reduction.py"
+      ]
     },
     {
       "name": "Eighth-component weighted H22 closure - canonical determinantal proof",

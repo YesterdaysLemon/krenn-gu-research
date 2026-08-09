@@ -86,7 +86,7 @@ lambda Delta != 0
 ```
 
 and the normal form (3) in
-[`P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md`](P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md).
+[`P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md`](claims/p4/classifications/P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md).
 In lexicographic order on the eight binary choices at the other modes,
 the following four-row minors of the `8 x 4` matrices in (2) are:
 

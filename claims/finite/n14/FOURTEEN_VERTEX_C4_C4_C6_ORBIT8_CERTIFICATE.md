@@ -169,7 +169,7 @@ With the repository runtime and bundled dependencies on `PYTHONPATH`,
 run:
 
 ```text
-python verify_fourteen_vertex_c4_c4_c6_orbit8.py
+python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit8.py
 ```
 
 This binds the predecessor frontier, reconstructs all five support
@@ -180,7 +180,7 @@ For a fresh replay of all 160 relation-selection branches and all three
 mandatory-unit algebra certificates before those checks, run:
 
 ```text
-python verify_fourteen_vertex_c4_c4_c6_orbit8.py \
+python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit8.py \
   --full-support-replay
 ```
 

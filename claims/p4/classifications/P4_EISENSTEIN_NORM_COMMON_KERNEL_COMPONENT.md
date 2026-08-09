@@ -20,16 +20,16 @@ The triangle relation on `12` has coefficient rank two.  The relations on
 `13,23` have coefficient rank one and are the same exact zero-divisor pair,
 with the active leaf rows annihilating the common kernel row.  The graph is
 shown in
-[`research_figures/P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg`](research_figures/P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg).
+[`research_figures/P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg`](../../../research_figures/P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg).
 
 This raises the certified lower bound from twelve to thirteen symmetry-
 inequivalent pure-`P_4` component orbits.  It is not component exhaustiveness
 or a global proof of the Krenn--Gu conjecture.  Its generic marked `H31` and
 weighted `H22` fibres were open at this checkpoint.  The generic `H31` fibre
 is subsequently proved empty in
-[`P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/eisenstein-norm/P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](../../p5/h31/eisenstein-norm/P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
 The generic weighted `H22` fibre is subsequently proved empty in
-[`P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/eisenstein-norm/P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md`](../../p5/h22/eisenstein-norm/P5_H22_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md).
 Special boundaries and the remaining support-one common-zero-divisor strata
 remain open.
 
@@ -222,8 +222,8 @@ twelve previously certified component orbits.
 Run:
 
 ```text
-uv run --with sympy python verify_p4_eisenstein_norm_common_kernel_component.py
-python audit_p4_eisenstein_norm_common_kernel_component.py
+uv run --with sympy python claims/p4/classifications/verify_p4_eisenstein_norm_common_kernel_component.py
+python claims/p4/classifications/audit_p4_eisenstein_norm_common_kernel_component.py
 ```
 
 The primary verifier checks (2)--(18) over characteristic zero.  The

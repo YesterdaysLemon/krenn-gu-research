@@ -214,19 +214,19 @@ also SAT and has yielded a third support, so orbit 8 remains open.
 With the bundled dependencies on `PYTHONPATH`, run:
 
 ```text
-python verify_fourteen_vertex_partial_circuit_binomial_selection_chain.py \
+python claims/finite/n14/verify_fourteen_vertex_partial_circuit_binomial_selection_chain.py \
   tmp/fourteen_vertex_c4_c4_c6_orbit8_partial_binomial_selection_cegar_minimal_v5.json \
   --output tmp/fourteen_vertex_c4_c4_c6_orbit8_partial_binomial_selection_cegar_minimal_v5_verified.json
 
-python verify_fourteen_vertex_binomial_support_closure_augmentation.py \
+python claims/finite/n14/verify_fourteen_vertex_binomial_support_closure_augmentation.py \
   tmp/fourteen_vertex_c4_c4_c6_orbit8_binomial1_augmentation.json \
   --output tmp/fourteen_vertex_c4_c4_c6_orbit8_binomial1_augmentation_verified.json
 
-python verify_fourteen_vertex_partial_circuit_binomial_selection_chain.py \
+python claims/finite/n14/verify_fourteen_vertex_partial_circuit_binomial_selection_chain.py \
   tmp/fourteen_vertex_c4_c4_c6_orbit8_support2_partial_binomial_selection_cegar.json \
   --output tmp/fourteen_vertex_c4_c4_c6_orbit8_support2_partial_binomial_selection_cegar_verified.json
 
-python verify_fourteen_vertex_binomial_support_closure_augmentation.py \
+python claims/finite/n14/verify_fourteen_vertex_binomial_support_closure_augmentation.py \
   tmp/fourteen_vertex_c4_c4_c6_orbit8_binomial2_augmentation.json \
   --output tmp/fourteen_vertex_c4_c4_c6_orbit8_binomial2_augmentation_verified.json
 ```

@@ -15,7 +15,7 @@ y_1 x_2-x_1 y_2=0.                                  (1)
 Then the product image `U_1U_2` has dimension at most two, contradicting the
 assumed rank-three edge.  Thus this entire orientation is empty on the
 all-pair frontier.  Together with
-[`P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md`](P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md),
+[`P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md`](../classifications/P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md),
 the statement includes support-one boundaries as lower-pair or embedded
 `P_3` strata.
 
@@ -144,8 +144,8 @@ The global conjecture remains **UNRESOLVED**.
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_p4_radical_crossed_211_triangle_obstruction.py
-uv run --with sympy python audit_p4_radical_crossed_211_triangle_obstruction.py
+uv run --with sympy python claims/p4/boundaries/verify_p4_radical_crossed_211_triangle_obstruction.py
+uv run --with sympy python claims/p4/boundaries/audit_p4_radical_crossed_211_triangle_obstruction.py
 ```
 
 The independent audit rebuilds the squarefree product maps and never imports

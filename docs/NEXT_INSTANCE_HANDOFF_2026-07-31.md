@@ -402,7 +402,7 @@ Six statements organize the current frontier.
    Component twenty-two is the unequal-complement common-kernel fivefold.
    Its complete generic marked `H31` fibre is empty after exact projection to
    four marking branches and four uniform one-marked minors:
-   [`P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md`](../P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md),
+   [`P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md`](../claims/p4/classifications/P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md),
    [`P5_H31_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h31/unequal-complement-common-kernel/P5_H31_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_GENERIC_OBSTRUCTION.md).
    Generic weighted `H22` remains open on this component.  Two exact rational
    binary survivors are proved to be false positives by eight nonzero
@@ -787,7 +787,7 @@ Six statements organize the current frontier.
    family is irreducible of dimension five, and the closed condition that all
    six pair ranks are at most three separates it from the previous seventeen
    orbits.  See
-   [`P4_COMMON_SINGLETON_COMPONENT.md`](../P4_COMMON_SINGLETON_COMPONENT.md).
+   [`P4_COMMON_SINGLETON_COMPONENT.md`](../claims/p4/classifications/P4_COMMON_SINGLETON_COMPONENT.md).
    Its generic `H31/H22` fibres are the two cases just cited.
 4. **The full `triangle-(1,1,1)` cell is now closed.**  The final
    exactly-one-kernel stratum splits among old component boundaries and three
@@ -795,15 +795,15 @@ Six statements organize the current frontier.
    common-active binary branch is component twenty, with its singleton sheet
    as a boundary; and the mixed-chain vertical branch lies on the new
    coincident-support rank-one star sixfold, component twenty-one.  See
-   [`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](../P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md),
-   [`P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md`](../P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md),
+   [`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](../claims/p4/classifications/P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md),
+   [`P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md`](../claims/p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md),
    [`P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md`](../claims/p4/classifications/triangle-211/common-active-binary-triangle/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md), and
    [`P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md`](../claims/p4/classifications/star/coincident-support-rank-one-star/P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md).
 5. **The remaining component question is a one-cell `K_4` problem.**
    Perfect pairing forces the rank-three edges to contain a star or triangle;
    the three selected relations have matrix ranks one or two.  Seven of the
    eight coarse cells are resolved and only star `(1,1,1)` remains.  See
-   [`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](../P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md).
+   [`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](../claims/p4/classifications/P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md).
 6. **All gate-cover branches are impossible for the displayed rank-five
    `P_6` model.**  The unique four-gate branch forces alternating coordinate
    planes and then violates a remaining minor.  Each of the other 52 gate
@@ -1983,11 +1983,11 @@ python claims/p5/h31/disjoint-secant/audit_p5_h31_disjoint_secant_component_gene
 uv run --with sympy python claims/p5/h22/disjoint-secant/verify_p5_h22_disjoint_secant_component_generic_obstruction.py
 python claims/p5/h22/disjoint-secant/audit_p5_h22_disjoint_secant_component_generic_obstruction.py
 
-uv run --with sympy python verify_p4_all_pair_rank_exceptional_graph_reduction.py
-python audit_p4_all_pair_rank_exceptional_graph_reduction.py
+uv run --with sympy python claims/p4/classifications/verify_p4_all_pair_rank_exceptional_graph_reduction.py
+python claims/p4/classifications/audit_p4_all_pair_rank_exceptional_graph_reduction.py
 
-uv run --with sympy python verify_p4_common_singleton_component.py
-python audit_p4_common_singleton_component.py
+uv run --with sympy python claims/p4/classifications/verify_p4_common_singleton_component.py
+python claims/p4/classifications/audit_p4_common_singleton_component.py
 
 uv run --with sympy python claims/p5/h31/common-singleton/verify_p5_h31_common_singleton_component_generic_obstruction.py
 python claims/p5/h31/common-singleton/audit_p5_h31_common_singleton_component_generic_obstruction.py
@@ -2019,14 +2019,14 @@ python claims/p4/classifications/triangle-211/triple-kernel-rank-one-triangle/au
 uv run --with sympy python claims/p4/classifications/triangle-211/two-kernel-rank-one-triangle/verify_p4_two_kernel_rank_one_triangle_classification.py
 python claims/p4/classifications/triangle-211/two-kernel-rank-one-triangle/audit_p4_two_kernel_rank_one_triangle_classification.py
 
-uv run --with sympy python verify_p4_common_kernel_vertical_triangle_component.py
-python audit_p4_common_kernel_vertical_triangle_component.py
+uv run --with sympy python claims/p4/classifications/verify_p4_common_kernel_vertical_triangle_component.py
+python claims/p4/classifications/audit_p4_common_kernel_vertical_triangle_component.py
 
 uv run --with sympy python claims/p4/classifications/triangle-211/common-active-binary-triangle/verify_p4_common_active_binary_triangle_component.py
 uv run --with sympy python claims/p4/classifications/triangle-211/common-active-binary-triangle/audit_p4_common_active_binary_triangle_component.py
 
-uv run --with sympy python verify_p4_mixed_chain_transverse_component_inclusion.py
-uv run --with sympy python audit_p4_mixed_chain_transverse_component_inclusion.py
+uv run --with sympy python claims/p4/classifications/verify_p4_mixed_chain_transverse_component_inclusion.py
+uv run --with sympy python claims/p4/classifications/audit_p4_mixed_chain_transverse_component_inclusion.py
 
 uv run --with sympy python claims/p4/classifications/star/coincident-support-rank-one-star/verify_p4_coincident_support_rank_one_star_component.py
 python claims/p4/classifications/star/coincident-support-rank-one-star/audit_p4_coincident_support_rank_one_star_component.py
@@ -2156,11 +2156,11 @@ uv run --with sympy python claims/p4/classifications/triangle-211/common-active-
 uv run --with sympy python claims/p4/classifications/triangle-211/common-kernel-yy-211-triangle-projective/verify_p4_common_kernel_yy_211_triangle_projective_classification.py
 uv run --with sympy python claims/p4/classifications/triangle-211/common-kernel-yy-211-triangle-projective/audit_p4_common_kernel_yy_211_triangle_projective_classification.py
 
-uv run --with sympy python verify_p4_radical_crossed_211_triangle_obstruction.py
-uv run --with sympy python audit_p4_radical_crossed_211_triangle_obstruction.py
+uv run --with sympy python claims/p4/boundaries/verify_p4_radical_crossed_211_triangle_obstruction.py
+uv run --with sympy python claims/p4/boundaries/audit_p4_radical_crossed_211_triangle_obstruction.py
 
-uv run --with sympy python verify_p4_unequal_complement_common_kernel_component.py
-uv run --with sympy python audit_p4_unequal_complement_common_kernel_component.py
+uv run --with sympy python claims/p4/classifications/verify_p4_unequal_complement_common_kernel_component.py
+uv run --with sympy python claims/p4/classifications/audit_p4_unequal_complement_common_kernel_component.py
 
 python claims/p4/classifications/triangle-211/211-triangle-complete/verify_p4_211_triangle_complete_classification.py
 python claims/p4/classifications/triangle-211/211-triangle-complete/audit_p4_211_triangle_complete_classification.py

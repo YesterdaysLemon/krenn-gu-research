@@ -310,10 +310,10 @@ mixed chain, vertical branch                    -> component 21 boundary. (23)
 The placement certificates are:
 
 - [`P4_COMMON_ACTIVE_TAU_ZERO_COMPONENT_ELEVEN_INCLUSION.md`](P4_COMMON_ACTIVE_TAU_ZERO_COMPONENT_ELEVEN_INCLUSION.md),
-- [`P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md`](claims/p4/classifications/triangle-211/common-active-binary-triangle/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md),
+- [`P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md`](triangle-211/common-active-binary-triangle/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md),
 - [`P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md`](P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md),
 - [`P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md`](P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md), and
-- [`P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md`](claims/p4/classifications/star/coincident-support-rank-one-star/P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md).
+- [`P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md`](star/coincident-support-rank-one-star/P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md).
 
 Equations (4), (12), and (18) remain transparent exact replay data for the
 original reduction.  The placement notes each carry their own verifier and

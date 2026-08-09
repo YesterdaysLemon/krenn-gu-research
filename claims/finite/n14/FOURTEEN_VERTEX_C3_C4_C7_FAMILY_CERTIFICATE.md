@@ -38,7 +38,7 @@ perfect-matching family `A`, restoring `f` adds exactly one matching `Q`,
 and every member of `A` pairs `x` to one common full-edge neighbour, the
 adjacent exact-activation lemma gives a cancellation-transport
 contradiction.  See
-[`MATCHING_FORK_TRANSPORT_LEMMA.md`](MATCHING_FORK_TRANSPORT_LEMMA.md).
+[`MATCHING_FORK_TRANSPORT_LEMMA.md`](../../../MATCHING_FORK_TRANSPORT_LEMMA.md).
 
 ## Stage 1: classify one colour factor
 
@@ -133,7 +133,7 @@ or a matching fork.  Both are impossible, proving the theorem.
 Run:
 
 ```text
-python certify_fourteen_vertex_c3_c4_c7_family.py
+python claims/finite/n14/certify_fourteen_vertex_c3_c4_c7_family.py
 ```
 
 Outputs:
@@ -160,7 +160,7 @@ matching-fork triples.  Its canonical JSON hash is
 Run:
 
 ```text
-python verify_fourteen_vertex_c3_c4_c7_family.py
+python claims/finite/n14/verify_fourteen_vertex_c3_c4_c7_family.py
 ```
 
 The verifier does not call the producer.  It:

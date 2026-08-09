@@ -90,9 +90,9 @@ lattice no-goods        1,441
 With the bundled dependencies on `PYTHONPATH`, run:
 
 ```text
-python verify_five_regular_full_singleton_family.py
-python verify_unary_cycle_relation_family.py
-python verify_eight_vertex_three_amplitude_forks.py
+python claims/finite/n08/verify_five_regular_full_singleton_family.py
+python claims/finite/n08/verify_unary_cycle_relation_family.py
+python claims/finite/n08/verify_eight_vertex_three_amplitude_forks.py
 ```
 
 Success writes:

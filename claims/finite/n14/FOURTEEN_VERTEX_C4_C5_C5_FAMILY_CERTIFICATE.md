@@ -38,7 +38,7 @@ compatible ordered thirds                              0
 A two-edge one-term set activates a unique supported perfect matching in a
 forbidden coefficient.  Every matching fork satisfies the arbitrary-order
 cancellation-transport lemma in
-[`MATCHING_FORK_TRANSPORT_LEMMA.md`](MATCHING_FORK_TRANSPORT_LEMMA.md).
+[`MATCHING_FORK_TRANSPORT_LEMMA.md`](../../../MATCHING_FORK_TRANSPORT_LEMMA.md).
 Thus all eliminations are exact algebraic contradictions over the complex
 numbers, not heuristic filters.
 
@@ -52,7 +52,7 @@ third singleton colour class.
 Run:
 
 ```text
-python verify_fourteen_vertex_c4_c5_c5_family.py
+python claims/finite/n14/verify_fourteen_vertex_c4_c5_c5_family.py
 ```
 
 The verifier:

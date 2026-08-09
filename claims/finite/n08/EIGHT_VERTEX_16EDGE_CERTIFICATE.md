@@ -155,7 +155,7 @@ s VERIFIED
 Run:
 
 ```text
-python verify_eight_vertex_16edge.py
+python claims/finite/n08/verify_eight_vertex_16edge.py
 ```
 
 It pins every source and decision artifact, replays the algebraic conflict,

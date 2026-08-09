@@ -157,8 +157,8 @@ triangle is translated into its three-cubic apolar compression.
 Run:
 
 ```text
-uv run --with sympy python verify_p4_common_kernel_yy_211_triangle_obstruction.py
-python audit_p4_common_kernel_yy_211_triangle_obstruction.py
+uv run --with sympy python claims/p4/boundaries/verify_p4_common_kernel_yy_211_triangle_obstruction.py
+python claims/p4/boundaries/audit_p4_common_kernel_yy_211_triangle_obstruction.py
 ```
 
 The primary verifier checks (2)--(13) over the rational function field.  The

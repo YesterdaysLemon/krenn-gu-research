@@ -19,7 +19,7 @@ exhaustiveness, or the global Krenn--Gu conjecture.
 ## The intrinsic pure marking
 
 Use the normal form of
-[`P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md`](../../../../P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md):
+[`P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md`](../../../p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md):
 
 ```text
 A=X0+X1,       Abar=X0-X1,

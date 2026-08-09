@@ -124,7 +124,7 @@ order-14 `C3+C4+C7` equality family.  Starting from all 44,226 possible
 singleton colour factors, a catalogue of 168 two-edge one-term sets and
 4,368 matching-fork triples leaves zero compatible three-colour supports.
 The independent replay is documented in
-[`FOURTEEN_VERTEX_C3_C4_C7_FAMILY_CERTIFICATE.md`](FOURTEEN_VERTEX_C3_C4_C7_FAMILY_CERTIFICATE.md).
+[`FOURTEEN_VERTEX_C3_C4_C7_FAMILY_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C3_C4_C7_FAMILY_CERTIFICATE.md).
 
 ## `C3+C5+C6` consequence and boundary
 
@@ -137,7 +137,7 @@ Unlike `C3+C4+C7`, matching forks alone do not finish this factor type.
 Each of the nine residual orbits is instead closed by an independently
 replayed three-relation signed-lattice contradiction.  The complete finite
 theorem is documented in
-[`FOURTEEN_VERTEX_C3_C5_C6_FAMILY_CERTIFICATE.md`](FOURTEEN_VERTEX_C3_C5_C6_FAMILY_CERTIFICATE.md).
+[`FOURTEEN_VERTEX_C3_C5_C6_FAMILY_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C3_C5_C6_FAMILY_CERTIFICATE.md).
 
 The arbitrary-order boundary remains open: it is not proved that every
 mixed or all-even equality support contains a one-term obstruction, a

@@ -45,7 +45,7 @@ edge open inside `triangle-(1,1,1)`.  The two open star cells, the
 conjecture remain unresolved.
 
 That final stratum now has the finite, explicitly open normal-form ledger in
-[`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](../../../../../P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md);
+[`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](../../P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md);
 the reduction does not yet place all six residual fibres in components.
 
 ## The two double edges force one genuine exact pair

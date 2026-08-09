@@ -82,10 +82,10 @@ The family proofs are:
 Run:
 
 ```text
-python verify_ten_vertex_c10_equality_family.py --certificates tmp/ten_vertex_c10_equality_support_transport_final2.json
-python verify_ten_vertex_c4_c6_equality_family.py
-python verify_ten_vertex_odd_factor_equality_family.py --orbits tmp/ten_vertex_c5_c5_equality_support_orbits.json --certificates tmp/ten_vertex_c5_c5_equality_support_one_term.json --output tmp/ten_vertex_c5_c5_equality_family_verified.json
-python verify_ten_vertex_five_regular_equality_boundary.py
+python claims/finite/n10/verify_ten_vertex_c10_equality_family.py --certificates tmp/ten_vertex_c10_equality_support_transport_final2.json
+python claims/finite/n10/verify_ten_vertex_c4_c6_equality_family.py
+python claims/finite/n10/verify_ten_vertex_odd_factor_equality_family.py --orbits tmp/ten_vertex_c5_c5_equality_support_orbits.json --certificates tmp/ten_vertex_c5_c5_equality_support_one_term.json --output tmp/ten_vertex_c5_c5_equality_family_verified.json
+python claims/finite/n10/verify_ten_vertex_five_regular_equality_boundary.py
 ```
 
 Pinned aggregate:

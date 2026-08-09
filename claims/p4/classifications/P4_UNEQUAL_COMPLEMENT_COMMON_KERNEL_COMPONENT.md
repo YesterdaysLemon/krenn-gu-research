@@ -279,8 +279,8 @@ family from all twenty-one previously certified orbits.
 ## Replay
 
 ```text
-uv run --with sympy python verify_p4_unequal_complement_common_kernel_component.py
-uv run --with sympy python audit_p4_unequal_complement_common_kernel_component.py
+uv run --with sympy python claims/p4/classifications/verify_p4_unequal_complement_common_kernel_component.py
+uv run --with sympy python claims/p4/classifications/audit_p4_unequal_complement_common_kernel_component.py
 ```
 
 Both replays use exact characteristic-zero arithmetic.  The audit rebuilds

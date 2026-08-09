@@ -40,7 +40,7 @@ full-factor/colour orbits                               9
 
 The one-term sets give a supported monomial in a forbidden amplitude.
 Each matching fork satisfies the arbitrary-order cancellation-transport
-lemma in [`MATCHING_FORK_TRANSPORT_LEMMA.md`](MATCHING_FORK_TRANSPORT_LEMMA.md).
+lemma in [`MATCHING_FORK_TRANSPORT_LEMMA.md`](../../../MATCHING_FORK_TRANSPORT_LEMMA.md).
 Those elementary obstructions eliminate all but the final 156 ordered
 supports.
 
@@ -96,7 +96,7 @@ finite proof by a different route.  It:
 Run:
 
 ```text
-python verify_fourteen_vertex_c3_c5_c6_family.py
+python claims/finite/n14/verify_fourteen_vertex_c3_c5_c6_family.py
 ```
 
 The final audit is:

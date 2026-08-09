@@ -75,8 +75,8 @@ orbits, for 59 of 93.
 With the pinned repository runtime (`requirements.txt`) installed, run:
 
 ```text
-python verify_fourteen_vertex_c4_c4_c6_58_orbits.py
-python verify_fourteen_vertex_c4_c4_c6_orbit5.py
+python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_58_orbits.py
+python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit5.py
 ```
 
 The commands reconstruct their complete rule layers, compare the exact

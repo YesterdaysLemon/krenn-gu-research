@@ -208,7 +208,7 @@ four-mode restricted tensor factors as
 
 If (20) is nonzero and pure, its ternary factor is a nonzero pure `P_3`
 restriction.  This is exactly the embedded-`P_3` suspension component from
-[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](claims/p4/components/embedded-p3/P4_EMBEDDED_P3_PURE_COMPONENT.md), not
+[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](../components/embedded-p3/P4_EMBEDDED_P3_PURE_COMPONENT.md), not
 a new component.
 
 ## Across the mathematical fence
@@ -232,8 +232,8 @@ where Frobenius duality finishes the graph classification.
 Run:
 
 ```text
-uv run --with sympy python verify_p4_support_one_211_triangle_reduction.py
-python audit_p4_support_one_211_triangle_reduction.py
+uv run --with sympy python claims/p4/classifications/verify_p4_support_one_211_triangle_reduction.py
+python claims/p4/classifications/audit_p4_support_one_211_triangle_reduction.py
 ```
 
 The primary verifier checks the one-edge factorization dichotomy, the

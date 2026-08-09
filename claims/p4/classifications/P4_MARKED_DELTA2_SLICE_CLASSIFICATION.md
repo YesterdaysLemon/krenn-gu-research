@@ -243,15 +243,15 @@ explicit determinant strata.  Their full third-colour lifts are both
 impossible in normalized `q4_211`.  See
 [`P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md`](P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md)
 and
-[`P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md`](P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md).
+[`P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md`](../../../P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md).
 
 ## Verification
 
 Run:
 
 ```text
-python verify_p4_marked_delta2_slice_classification.py
-python audit_p4_marked_delta2_slice_classification.py
+python claims/p4/classifications/verify_p4_marked_delta2_slice_classification.py
+python claims/p4/classifications/audit_p4_marked_delta2_slice_classification.py
 ```
 
 The primary verifier expands all sixteen coefficients in (4), checks

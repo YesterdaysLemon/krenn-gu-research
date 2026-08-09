@@ -129,7 +129,7 @@ triangle relations have coefficient ranks `(2,1,1)`.
 
 ## Equivalence with the original family
 
-In [`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](claims/p4/classifications/pair-geometry/decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md),
+In [`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](pair-geometry/decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md),
 set
 
 ```text
@@ -147,7 +147,7 @@ Pluecker vectors become exactly those of (1), (6).  Conversely every point of
 the dense chart `q!=0` arises from (12).  The diagonal-source orbit of the
 two-parameter apolar family is therefore precisely the original
 five-dimensional component, whose smooth component certificate remains
-[`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md).
+[`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md).
 
 ## Foreign-language payoff and frontier
 
@@ -170,7 +170,7 @@ closures.
 
 The crossed orientation with genuine support-two zero products is now
 classified completely in
-[`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/crossed-211-triangle-support/P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md):
+[`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](triangle-211/crossed-211-triangle-support/P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md):
 equal labels force a coordinate hyperplane, disjoint labels force a pair-rank
 drop, and one-coordinate overlap gives exactly the triangle above.  The
 remaining question is confined to the other Borel orientations and
@@ -188,8 +188,8 @@ form the six-dimensional eleventh component in
 Run:
 
 ```text
-uv run --with sympy python verify_p4_first_component_apolar_triangle_normal_form.py
-uv run --with sympy python audit_p4_first_component_apolar_triangle_normal_form.py
+uv run --with sympy python claims/p4/classifications/verify_p4_first_component_apolar_triangle_normal_form.py
+uv run --with sympy python claims/p4/classifications/audit_p4_first_component_apolar_triangle_normal_form.py
 ```
 
 The primary verifier checks (2)--(13), including the exact Pluecker

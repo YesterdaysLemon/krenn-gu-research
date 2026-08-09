@@ -132,9 +132,9 @@ tmp/ten_vertex_c4_c6_equality_factor_lattice_final_verified.json
 With the bundled dependencies on `PYTHONPATH`, run:
 
 ```text
-python verify_ten_vertex_equality_factor_lattice.py
-python verify_ten_vertex_equality_factor_lattice_final.py
-python verify_ten_vertex_three_amplitude_certificate.py
+python claims/finite/n10/verify_ten_vertex_equality_factor_lattice.py
+python claims/finite/n10/verify_ten_vertex_equality_factor_lattice_final.py
+python claims/finite/n10/verify_ten_vertex_three_amplitude_certificate.py
 ```
 
 Both commands must finish successfully, and the final JSON must contain

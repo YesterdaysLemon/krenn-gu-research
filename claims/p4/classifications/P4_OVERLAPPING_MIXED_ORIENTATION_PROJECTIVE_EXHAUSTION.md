@@ -141,7 +141,7 @@ component seventeen.
 
 On `F`, the relation-rank word is `(2,1,1)`, and the two rank-one support
 labels are adjacent.  The crossed-triangle support theorem
-[`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/crossed-211-triangle-support/P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md)
+[`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](triangle-211/crossed-211-triangle-support/P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md)
 identifies its full-support part and its apolar `P^2` with the first
 component.  The common point of the four lines is contained in their
 closures and creates no further component.
@@ -235,7 +235,7 @@ M=0,       P+Q!=0.                                 (19)
 Then the restriction to the three leaf modes has only its all-active
 coefficient.  The fourth plane supplies the missing coordinate exactly as
 in
-[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](claims/p4/components/embedded-p3/P4_EMBEDDED_P3_PURE_COMPONENT.md).
+[`P4_EMBEDDED_P3_PURE_COMPONENT.md`](../components/embedded-p3/P4_EMBEDDED_P3_PURE_COMPONENT.md).
 Hence every genuine corner point is an embedded pure-`P_3` suspension.
 
 ## Consequence
@@ -256,8 +256,8 @@ component in this chart.
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_p4_overlapping_mixed_orientation_projective_exhaustion.py
-python audit_p4_overlapping_mixed_orientation_projective_exhaustion.py
+uv run --with sympy python claims/p4/classifications/verify_p4_overlapping_mixed_orientation_projective_exhaustion.py
+python claims/p4/classifications/audit_p4_overlapping_mixed_orientation_projective_exhaustion.py
 ```
 
 The primary verifier reconstructs (4)--(5) from permanents, proves the

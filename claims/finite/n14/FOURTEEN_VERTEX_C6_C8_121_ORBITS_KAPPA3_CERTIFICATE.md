@@ -97,7 +97,7 @@ Independent forward `drat-trim` verification returned `s VERIFIED`.
 With the pinned repository runtime (`requirements.txt`) installed, run:
 
 ```text
-python verify_fourteen_vertex_c6_8_121_orbits_kappa3.py
+python claims/finite/n14/verify_fourteen_vertex_c6_8_121_orbits_kappa3.py
 ```
 
 The verifier reconstructs the complete v18 predecessor rule base,

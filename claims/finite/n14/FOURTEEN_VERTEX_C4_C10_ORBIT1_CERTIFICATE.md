@@ -57,7 +57,7 @@ The independent `drat-trim` checker returned `s VERIFIED`.
 With the pinned repository runtime (`requirements.txt`) installed, run:
 
 ```text
-python verify_fourteen_vertex_c4_10_orbit1.py
+python claims/finite/n14/verify_fourteen_vertex_c4_10_orbit1.py
 ```
 
 The verifier reconstructs all learned clauses, audits all selectors,

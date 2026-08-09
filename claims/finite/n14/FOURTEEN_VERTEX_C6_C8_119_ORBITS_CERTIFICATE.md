@@ -70,7 +70,7 @@ Independent forward `drat-trim` verification returned `s VERIFIED`.
 With the pinned repository runtime (`requirements.txt`) installed, run:
 
 ```text
-python verify_fourteen_vertex_c6_8_119_orbits.py
+python claims/finite/n14/verify_fourteen_vertex_c6_8_119_orbits.py
 ```
 
 The verifier first replays the complete 118-orbit predecessor. It then

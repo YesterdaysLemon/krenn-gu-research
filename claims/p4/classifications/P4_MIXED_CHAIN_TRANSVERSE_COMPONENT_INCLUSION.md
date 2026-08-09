@@ -189,8 +189,8 @@ as the closure of the `phi!=0` points, although it is not part of the
 ## Replay
 
 ```text
-uv run --with sympy python verify_p4_mixed_chain_transverse_component_inclusion.py
-uv run --with sympy python audit_p4_mixed_chain_transverse_component_inclusion.py
+uv run --with sympy python claims/p4/classifications/verify_p4_mixed_chain_transverse_component_inclusion.py
+uv run --with sympy python claims/p4/classifications/audit_p4_mixed_chain_transverse_component_inclusion.py
 ```
 
 The primary verifier reconstructs the target restriction and all six pair

@@ -160,8 +160,8 @@ or the local-to-global graph step.
 Run:
 
 ```text
-uv run --with sympy python verify_p4_common_active_tau_zero_component_eleven_inclusion.py
-uv run --with sympy python audit_p4_common_active_tau_zero_component_eleven_inclusion.py
+uv run --with sympy python claims/p4/classifications/verify_p4_common_active_tau_zero_component_eleven_inclusion.py
+uv run --with sympy python claims/p4/classifications/audit_p4_common_active_tau_zero_component_eleven_inclusion.py
 ```
 
 The primary verifier proves (4)--(5) and all four symbolic identities in

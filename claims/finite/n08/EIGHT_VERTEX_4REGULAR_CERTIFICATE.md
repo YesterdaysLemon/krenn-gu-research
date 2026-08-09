@@ -108,7 +108,7 @@ trace.
 Run:
 
 ```text
-python verify_eight_vertex_4regular.py
+python claims/finite/n08/verify_eight_vertex_4regular.py
 ```
 
 The verifier pins all four graph catalogues (including the two historical

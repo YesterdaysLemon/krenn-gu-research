@@ -212,8 +212,8 @@ two-stratum orbit description, not a point search.
 Run:
 
 ```text
-python verify_p4_marked_delta2_alternating_gate.py
-python audit_p4_marked_delta2_alternating_gate.py
+python claims/p4/boundaries/verify_p4_marked_delta2_alternating_gate.py
+python claims/p4/boundaries/audit_p4_marked_delta2_alternating_gate.py
 ```
 
 The primary verifier expands all sixteen coefficients in both normal

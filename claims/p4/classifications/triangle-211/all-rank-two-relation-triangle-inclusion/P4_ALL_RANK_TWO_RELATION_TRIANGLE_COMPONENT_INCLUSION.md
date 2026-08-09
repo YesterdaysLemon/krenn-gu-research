@@ -44,7 +44,7 @@ triangle and, simultaneously, a rank-one star.
 ## Component eleven on `p=0`
 
 The equal-support component from
-[`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](../../../../../P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md)
+[`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](../../P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md)
 has planes
 
 ```text

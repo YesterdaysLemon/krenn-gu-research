@@ -102,7 +102,7 @@ SHA-256
 With the bundled dependencies on `PYTHONPATH`, run:
 
 ```text
-python verify_ten_vertex_c10_equality_family.py --certificates tmp/ten_vertex_c10_equality_support_transport_final2.json
+python claims/finite/n10/verify_ten_vertex_c10_equality_family.py --certificates tmp/ten_vertex_c10_equality_support_transport_final2.json
 ```
 
 Success writes a final JSON containing `"verified": true`.

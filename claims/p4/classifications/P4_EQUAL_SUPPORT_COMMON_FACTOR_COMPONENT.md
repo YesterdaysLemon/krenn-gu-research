@@ -21,15 +21,15 @@ eleven symmetry-inequivalent pure-`P_4` component orbits.
 This is a component construction and smoothness theorem, not a complete
 classification of the common-factor Borel orientation.  Its generic marked
 `H31` fibre is subsequently proved empty in
-[`P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/equal-support-common-factor/P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](../../p5/h31/equal-support-common-factor/P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
 Its generic weighted `H22` fibre is subsequently proved empty in
-[`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/equal-support-common-factor/P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md`](../../p5/h22/equal-support-common-factor/P5_H22_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md).
 Its special pure-factor degenerations and projective boundary, component
 exhaustiveness, and the global Krenn--Gu conjecture remain open.
 
 The `p=0` divisor is now identified exactly with the corrected
 all-rank-two-relation triangle in
-[`P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md`](claims/p4/classifications/triangle-211/all-rank-two-relation-triangle-inclusion/P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md).
+[`P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md`](triangle-211/all-rank-two-relation-triangle-inclusion/P4_ALL_RANK_TWO_RELATION_TRIANGLE_COMPONENT_INCLUSION.md).
 That family has pair profile `(3,3,3,3,3,3)` and relation-rank word
 `(1,1,1,2,2,2)`; it is a boundary of this component, not another component.
 
@@ -75,7 +75,7 @@ y_2x_3=0,               coefficient rank 1.         (5)
 
 The last two relations are the same exact zero-divisor pair `a a_bar=0`.
 They have equal support label `{0,1}` in the support octahedron from
-[`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/crossed-211-triangle-support/P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md).
+[`P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md`](triangle-211/crossed-211-triangle-support/P4_CROSSED_211_TRIANGLE_SUPPORT_CLASSIFICATION.md).
 This is the common-factor orbit that the crossed theorem deliberately did
 not cover.
 
@@ -307,7 +307,7 @@ component theorem.
 
 All ten previously certified component orbits are either five-dimensional
 or belong to the six-dimensional component in
-[`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](claims/p4/components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md).
+[`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](../components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md).
 That component has generic pair profile
 
 ```text
@@ -337,8 +337,8 @@ exact zero divisor -> affine synchronization parameter
 Run:
 
 ```text
-uv run --with sympy python verify_p4_equal_support_common_factor_component.py
-python audit_p4_equal_support_common_factor_component.py
+uv run --with sympy python claims/p4/classifications/verify_p4_equal_support_common_factor_component.py
+python claims/p4/classifications/audit_p4_equal_support_common_factor_component.py
 ```
 
 The primary verifier checks (3)--(27) over `Q`, including the exact family

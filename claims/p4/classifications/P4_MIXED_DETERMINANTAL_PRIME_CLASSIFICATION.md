@@ -4,7 +4,7 @@
 
 This is an exact characteristic-zero classification of the five
 minimal primes in the mixed zero-product normal form of
-[`P4_MIXED_ORIENTATION_PURE_COMPONENT.md`](claims/p4/components/mixed-orientation/P4_MIXED_ORIENTATION_PURE_COMPONENT.md).
+[`P4_MIXED_ORIENTATION_PURE_COMPONENT.md`](../components/mixed-orientation/P4_MIXED_ORIENTATION_PURE_COMPONENT.md).
 
 On the dense overlapping-support chart used there, the five primes
 produce no component orbit beyond the seven certified at that
@@ -18,7 +18,7 @@ checkpoint:
 This closes the dense five-prime determinantal chart, not the complete
 pure-compression locus.  A disjoint-support mixed star outside this
 chart has since produced an eighth component in
-[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](claims/p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
+[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](../components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
 Degenerate normalizations, other exceptional graphs, and lower-rank
 boundary charts remain.
 
@@ -64,7 +64,7 @@ b=1/a,             e=0
 ```
 
 of the six-dimensional component in
-[`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](claims/p4/components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md).
+[`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](../components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md).
 Thus `P2` is not another component orbit.
 
 ## The two split-cubic primes
@@ -153,8 +153,8 @@ globally.
 Run
 
 ```text
-python verify_p4_mixed_determinantal_prime_classification.py
-python audit_p4_mixed_determinantal_prime_classification.py
+python claims/p4/classifications/verify_p4_mixed_determinantal_prime_classification.py
+python claims/p4/classifications/audit_p4_mixed_determinantal_prime_classification.py
 ```
 
 The primary verifier reconstructs the five prime specializations,
