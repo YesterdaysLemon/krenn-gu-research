@@ -1859,7 +1859,7 @@ class EvidenceSemanticsContractTests(unittest.TestCase):
         }
         record = classify("SURVIVING_LEMMA_WITHDRAWN.md", ctx)
         self.assertEqual(record["confidence"], "low")
-        self.assertIn("human proof-boundary review required",
+        self.assertIn("owner proof-boundary review required",
                       record["evidence"][1])
 
     def test_mixed_document_statuses_do_not_use_last_write_wins(self):

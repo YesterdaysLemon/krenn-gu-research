@@ -41,7 +41,7 @@ batch-selection heuristic.
 
 ## 2. Authoritative migration artifacts
 
-Human-reviewed source classification:
+Durable source classification:
 
 `catalog/layout-classification.json`.
 
@@ -59,12 +59,24 @@ Migration reports:
 
 ## 3. Approval model
 
-Classifier confidence is not approval.
+Classifier confidence is neither approval nor review authority.
 
 No proposed move is executable merely because it is high-confidence.
 
 Execution requires an exact named frozen batch containing the approved
 old-path to new-path mapping and its mapping hash.
+
+Under the repository owner's standing delegation dated 2026-08-08,
+Codex may act as the actual reviewer for routine, non-ambiguous,
+evidence-backed exact layout mappings, then freeze and execute those exact
+mappings.  The batch `approved_by` value must identify Codex as the actual
+reviewer and record the delegation basis.  Do not attribute an exact mapping
+review to the repository owner unless the owner actually reviewed that
+mapping.
+
+The standing delegation does not cover scientific status or scope, genuinely
+ambiguous proof-boundary ownership, or architectural choices requiring owner
+preference.  Those decisions remain owner-gated.
 
 Every executed manifest entry records `executed_batch`.
 
@@ -118,13 +130,15 @@ can retain live subclaims and must not be routed wholesale to legacy.
 Multiple ledger entries can share one document; consumers must retain
 the full entry set rather than use last-write-wins status lookup.
 
-### C. Human ownership review
+### C. Authorized ownership review
 
-Resolve the exact package boundary.
+Resolve the exact package boundary from filesystem/classification,
+executable/provenance, and mathematical proof-obligation evidence.
 
 Update the durable source classification.
 
-Do not silently promote classifier confidence.
+Apply the review-authority gates in Section 3.  Do not silently promote
+classifier confidence or treat it as review authority.
 
 ### D. Dry-run
 
@@ -143,6 +157,8 @@ Record:
 Create a committed batch artifact.
 
 Validate its exact mapping and mandatory mapping hash.
+
+Record the actual reviewer and authority basis in `approved_by`.
 
 Approval applies only to that mapping.
 

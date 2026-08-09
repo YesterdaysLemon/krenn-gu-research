@@ -23,8 +23,8 @@ The remaining P4 classification records (other component/spine
 families, boundaries, global classification machinery, atlases,
 working notes) remain at the repository root under
 `proposed_high_confidence` / `review_required` until they pass the
-same human-review + frozen-batch process.  Nothing may be executed
-without an explicit approved batch in `catalog/batches/`.
+same authorized-review + frozen-batch process.  Nothing may be executed
+without an exact authorized-reviewed batch in `catalog/batches/`.
 
 Cross-family references between classification packages, component
 packages, and the P5 reduction are links, not ownership.

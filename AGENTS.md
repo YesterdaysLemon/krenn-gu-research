@@ -214,9 +214,19 @@ The active layout-migration procedure is documented separately:
 
 `docs/architecture/layout-migration-runbook.md`.
 
-Do not infer migration approval from classifier confidence.
+Do not infer migration approval or review authority from classifier
+confidence.
 
-Only exact, frozen, human-approved batches are executable.
+Only exact, frozen batches reviewed by an authorized reviewer are
+executable.
+
+Under the repository owner's standing delegation dated 2026-08-08,
+Codex may review, freeze, and execute routine, non-ambiguous,
+evidence-backed exact layout mappings.  The batch `approved_by` value
+must identify Codex as the actual reviewer and record the delegation
+basis.  This delegation does not cover scientific status or scope,
+genuinely ambiguous proof-boundary ownership, or architectural choices
+requiring owner preference; those remain owner-gated.
 
 Use `git mv`; preserve history and scientific content.
 

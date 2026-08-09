@@ -13,8 +13,8 @@ Krenn–Gu conjecture remains **UNRESOLVED**.
 
 Boundary claims are kept semantically separate from classification
 claims (see [`../classifications/`](../classifications/)); the
-per-stage human review moves a claim across that line only when the
-document's own mathematical role proves it, and every such
+per-stage authorized ownership review moves a claim across that line
+only when the document's own mathematical role proves it, and every such
 reassignment is recorded in the migration report.
 
 ## Migrated boundary spines
@@ -27,6 +27,6 @@ reassignment is recorded in the migration report.
 ## Pending
 
 The remaining P4 boundary records remain at the repository root under
-`review_required` until they pass the same human-review +
-frozen-batch process.  Nothing may be executed without an explicit
-approved batch in `catalog/batches/`.
+`review_required` until they pass the same authorized-review +
+frozen-batch process.  Nothing may be executed without an exact
+authorized-reviewed batch in `catalog/batches/`.
