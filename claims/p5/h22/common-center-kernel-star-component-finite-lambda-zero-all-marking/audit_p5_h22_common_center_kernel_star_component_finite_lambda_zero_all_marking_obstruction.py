@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import itertools
 import json
+import shutil
 import subprocess
 
 import sympy as sp
@@ -82,6 +83,19 @@ def vector(expression, substitutions):
     )
 
 
+def singular_command():
+    native = shutil.which("Singular")
+    if native:
+        return (native, "-q")
+    wsl = shutil.which("wsl.exe")
+    if wsl:
+        return (wsl, "--exec", "/usr/bin/Singular", "-q")
+    raise RuntimeError(
+        "Singular is required: install native Singular or Windows WSL "
+        "with /usr/bin/Singular"
+    )
+
+
 def branch(label, models, substitutions, variables):
     generators = ",".join(
         vector(values[word], substitutions) for values in models for word in MIXED
@@ -111,7 +125,7 @@ def branch(label, models, substitutions, variables):
         )
     )
     completed = subprocess.run(
-        ("wsl.exe", "--exec", "/usr/bin/Singular", "-q"),
+        singular_command(),
         input=program,
         text=True,
         capture_output=True,

@@ -17,6 +17,9 @@ Stage 21 used batch `p5-h22-six-dimensional-equal-weight-stage21`
 Stage 25 used batch `p5-h22-finite-lambda-one-all-marking-stage25`
 (mapping_sha256
 `611abb78c553a124a4cf02308950ec5ace6c9f5f1e2e727ece7f043f3b1f59ba`).
+Stage 26 used batch `p5-h22-finite-lambda-zero-all-marking-stage26`
+(mapping_sha256
+`06622ad9c8ab149021fd4d3a5c412327db4a28cd2f210d339418d118a7e85131`).
 
 Every theorem in the generic table is a **generic/function-field** statement:
 the
@@ -46,6 +49,29 @@ slope/projective boundaries open.
 | `split-center-mixed-star/` | `P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md` | `verify_p5_h22_split_center_mixed_star_component_generic_obstruction.py` | `audit_p5_h22_split_center_mixed_star_component_generic_obstruction.py` |
 | `transverse-common-factor/` | `P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md` | `verify_p5_h22_transverse_common_factor_component_generic_obstruction.py` | `audit_p5_h22_transverse_common_factor_component_generic_obstruction.py` |
 | `two-rank-two-spoke-mixed-star/` | `P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md` | `verify_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py` | `audit_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py` |
+
+## Component-23 finite lambda-zero all-marking leaf
+
+The
+[`common-center-kernel-star-component-finite-lambda-zero-all-marking/`](common-center-kernel-star-component-finite-lambda-zero-all-marking/)
+package is the exact characteristic-zero obstruction over `Q(r,t)` for the
+finite `lambda=0` slice and every affine marking at the generic point of the
+common-center-kernel-star component. It depends load-bearingly on the prior
+dense-open supplement's factor cover `h2*h3*H0=0`; its primary closes only
+the three residual branches `h2=0`, `h3=0`, and `H0=0`. It does not itself
+prove that factor cover or the whole generic finite theorem.
+
+The no-repository-import audit is exact-`Q` branch-module QA at
+`(r,t)=(2,4)`, where it uses the `H0=0` solution `h3=3/8`. It does not audit
+the factor cover and is not an independent generic `Q(r,t)` proof. The later
+ordinary-residual theorem consumes the complete `lambda=0,1,-1` slices and
+the ordinary residual branches to close the generic finite case union. The
+leaf's chronological `generic_finite_all_markings_closed: false` and
+residual-`UNKNOWN` fields remain leaf-local and unchanged.
+
+This leaf does not close special or projective component fibres, the whole
+common-center-kernel-star component, component exhaustiveness, any separate
+H31 certificate-stratum conflict, or the global conjecture.
 
 ## Component-23 finite lambda-one all-marking leaf
 
@@ -127,10 +153,11 @@ mirroring the pilot's treatment of its working note.
 
 ## Not migrated here
 
-Except for the scoped component-23 `lambda=1` leaf described above, the H22
-common-center-kernel-star partial theorem, its remaining finite case-union
-files, and its special/projective/source-torus boundary forest remain at the
-repository root. Their chronological and terminal statuses are unchanged.
+Except for the scoped component-23 `lambda=0` and `lambda=1` leaves described
+above, the H22 common-center-kernel-star partial theorem, its generic
+case-union core and shared providers, and its special/projective/source-torus
+boundary forest remain at the repository root. Their chronological and
+terminal statuses are unchanged.
 Unequal-complement and unequal-endpoint recursion, and embedded-p3 /
 common-active-binary-triangle documents remain at the repository root with
 their boundary forests or open recursion.  The split-center theorem package
