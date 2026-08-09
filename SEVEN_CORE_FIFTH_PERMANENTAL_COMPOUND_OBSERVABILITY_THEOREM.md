@@ -179,7 +179,7 @@ multiple and (17) fixes every other prescribed coordinate; if all fixed
 Thus an invertible fifth compound turns any prescribed same-colour data into
 explicit two-by-two proportionality tests.  The fixed-chart four-face circuit
 in
-[`P7_221_FIXED_DIAGONAL_LIFT_DEGREE5_MIXED_CIRCUIT_OBSTRUCTION.md`](P7_221_FIXED_DIAGONAL_LIFT_DEGREE5_MIXED_CIRCUIT_OBSTRUCTION.md)
+[`P7_221_FIXED_DIAGONAL_LIFT_DEGREE5_MIXED_CIRCUIT_OBSTRUCTION.md`](claims/p7/P7_221_FIXED_DIAGONAL_LIFT_DEGREE5_MIXED_CIRCUIT_OBSTRUCTION.md)
 is a sparse projected obstruction for the current charts; it is not repeated
 here.
 

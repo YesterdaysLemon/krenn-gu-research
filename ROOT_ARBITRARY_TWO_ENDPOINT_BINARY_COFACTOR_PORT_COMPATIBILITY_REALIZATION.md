@@ -148,7 +148,7 @@ h=B_(q_0,q_1)(z_0,z_1).                             (10)
 
 Here `h=0`, so (10) is exactly (2), including all diagonal and off-diagonal
 blocker inputs.  Therefore the construction lies on the factorized side of
-[`TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md`](TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md),
+[`TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md`](claims/arbitrary-order/TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md),
 while meeting its necessary full-span port condition.
 
 What remains missing is decisive: no root-row family `H` is provided for

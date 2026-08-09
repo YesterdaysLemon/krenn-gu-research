@@ -164,7 +164,7 @@ def main() -> None:
         augment_result = run(
             [
                 sys.executable,
-                "augment_fourteen_vertex_rule_cnf_with_binomial_support_closures.py",
+                "tools/generate/augment_fourteen_vertex_rule_cnf_with_binomial_support_closures.py",
                 "--base-cnf",
                 str(current_cnf),
                 "--verified-support",

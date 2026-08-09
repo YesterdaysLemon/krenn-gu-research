@@ -1,0 +1,2361 @@
+{
+  "batch_id": "high-order-symbolic-forest-stage27",
+  "approved_by": "Codex (exact mapping reviewer under repository-owner standing delegation dated 2026-08-08)",
+  "approved_at": "2026-08-09",
+  "base_sha": "7c332c7a307542395add3420ed62b47ebd72287c",
+  "manifest_sha256": "17d477c63ebc0aef8b420913df767be9b2958eb160598eebefef3e89b3745a7c",
+  "mapping_sha256": "cc379f4cf74ebb7c8ffbf428e8a68acca6f18703e3f5e95d70183f2f5887f7b0",
+  "member_count": 587,
+  "moves": [
+    {
+      "old_path": "ADJACENT_PORT_DETERMINANT_TRANSPORT_LEMMA.md",
+      "new_path": "claims/arbitrary-order/ADJACENT_PORT_DETERMINANT_TRANSPORT_LEMMA.md"
+    },
+    {
+      "old_path": "ALL_QUADRANGLE_P5_OBSTRUCTION.md",
+      "new_path": "claims/arbitrary-order/ALL_QUADRANGLE_P5_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "ARBITRARY_HAFNIAN_JET_LINE_PROJECTIVE_AFFINE_SEPARATION_AND_P7_GHZ_BOUNDARY.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_HAFNIAN_JET_LINE_PROJECTIVE_AFFINE_SEPARATION_AND_P7_GHZ_BOUNDARY.md"
+    },
+    {
+      "old_path": "ARBITRARY_ORDER_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_ORDER_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "ARBITRARY_ORDER_HAFNIAN_EULER_HESSIAN_CHANNEL_UNMIXING_AND_SINGULAR_DISCRIMINANT.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_ORDER_HAFNIAN_EULER_HESSIAN_CHANNEL_UNMIXING_AND_SINGULAR_DISCRIMINANT.md"
+    },
+    {
+      "old_path": "ARBITRARY_ORDER_TWO_RESIDUAL_STRICT_SUPPORT_STAIRCASE_AND_COORDINATE_FORCING.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_ORDER_TWO_RESIDUAL_STRICT_SUPPORT_STAIRCASE_AND_COORDINATE_FORCING.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_EQUALITY_BACKBONE_COLORING_GLUE_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_EQUALITY_BACKBONE_COLORING_GLUE_THEOREM.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_EQUALITY_EXCEPTIONAL_SOURCE_RECTANGLE_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_EQUALITY_EXCEPTIONAL_SOURCE_RECTANGLE_THEOREM.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_EQUALITY_FIVE_EDGE_SHORE_KEMPE_EXCLUSION.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_EQUALITY_FIVE_EDGE_SHORE_KEMPE_EXCLUSION.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_EQUALITY_NEGATIVE_GAIN_GRAPH_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_EQUALITY_NEGATIVE_GAIN_GRAPH_THEOREM.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_CUT_NORMAL_FORM_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_CUT_NORMAL_FORM_THEOREM.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_EXCLUSION_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_EXCLUSION_THEOREM.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_EQUALITY_PURE_MATCHING_CUBE_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_EQUALITY_PURE_MATCHING_CUBE_THEOREM.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_EQUALITY_THREE_EDGE_SHORE_FLATTENING_EXCLUSION.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_EQUALITY_THREE_EDGE_SHORE_FLATTENING_EXCLUSION.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCESS_PLANE_SEPARATION_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCESS_PLANE_SEPARATION_THEOREM.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCLUSION_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_EXCLUSION_THEOREM.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_PORT_COMPLETION_SHORE_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_EQUALITY_TWO_SWITCH_PORT_COMPLETION_SHORE_THEOREM.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_EQUALITY_ZERO_SWITCH_EXCLUSION_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_EQUALITY_ZERO_SWITCH_EXCLUSION_THEOREM.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_FIVE_MODE_ROW_PAIR_INCIDENCE_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_FIVE_MODE_ROW_PAIR_INCIDENCE_THEOREM.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_KERNEL_DELETION_HIERARCHY.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_KERNEL_DELETION_HIERARCHY.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_THREE_EXCESS_APOLAR_BOUNDARY_QUOTIENT_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_APOLAR_BOUNDARY_QUOTIENT_THEOREM.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_THREE_EXCESS_B3_PHASE_HOLONOMY_NOGO.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_B3_PHASE_HOLONOMY_NOGO.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_THREE_EXCESS_BARE_THETA_ABSORPTION_AND_COFACTOR_RESPONSE_BOUNDARY.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_BARE_THETA_ABSORPTION_AND_COFACTOR_RESPONSE_BOUNDARY.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_THREE_EXCESS_BOSONIC_PLUCKER_DEFECT_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_BOSONIC_PLUCKER_DEFECT_THEOREM.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_DELTA_MATROID_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_DELTA_MATROID_THEOREM.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_ENTANGLEMENT_RANK_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_ENTANGLEMENT_RANK_THEOREM.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_JET_DOMINANCE_NOGO.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_BOUNDARY_JET_DOMINANCE_NOGO.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_CORE_ALIGNMENT_BOUNDARY.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_CORE_ALIGNMENT_BOUNDARY.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_THREE_EXCESS_HAMMING_FACE_PINCH_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_HAMMING_FACE_PINCH_THEOREM.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_THREE_EXCESS_INELIGIBLE_NINTH_CELL_EXCLUSION_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_INELIGIBLE_NINTH_CELL_EXCLUSION_THEOREM.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_THREE_EXCESS_MARKED_RESPONSE_TORIC_HOLONOMY_BOUNDARY.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_MARKED_RESPONSE_TORIC_HOLONOMY_BOUNDARY.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_210_ALIGNMENT_DESATURATION_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_210_ALIGNMENT_DESATURATION_THEOREM.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_APOLAR_SATURATION_BOUNDARY.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_APOLAR_SATURATION_BOUNDARY.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_CUT_COLOR_EXCLUSION_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_ONE_CHORD_CUT_COLOR_EXCLUSION_THEOREM.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_THREE_EXCESS_REPLAY_EXCHANGE_CLOSURE_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_REPLAY_EXCHANGE_CLOSURE_THEOREM.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_THREE_EXCESS_SIX_TOKEN_EAR_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_SIX_TOKEN_EAR_THEOREM.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_THREE_EXCESS_ZEON_BOUNDARY_JET_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_ZEON_BOUNDARY_JET_THEOREM.md"
+    },
+    {
+      "old_path": "ARBITRARY_PERMANENT_THREE_M_PLUS_TWO_SUPPORT_BOUND.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_M_PLUS_TWO_SUPPORT_BOUND.md"
+    },
+    {
+      "old_path": "ARBITRARY_SURPLUS_COMMON_ROW_FULL_SPAN_OBSTRUCTION.md",
+      "new_path": "claims/arbitrary-order/ARBITRARY_SURPLUS_COMMON_ROW_FULL_SPAN_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "BOSONIC_HAFNIAN_SPINOR_NO_TRANSFER.md",
+      "new_path": "claims/arbitrary-order/BOSONIC_HAFNIAN_SPINOR_NO_TRANSFER.md"
+    },
+    {
+      "old_path": "DOUBLE_STAR_ANNIHILATION_LEMMA.md",
+      "new_path": "claims/arbitrary-order/DOUBLE_STAR_ANNIHILATION_LEMMA.md"
+    },
+    {
+      "old_path": "EVEN_CYCLE_FEASIBLE_SET_EXPANSION.md",
+      "new_path": "claims/arbitrary-order/EVEN_CYCLE_FEASIBLE_SET_EXPANSION.md"
+    },
+    {
+      "old_path": "EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md",
+      "new_path": "claims/arbitrary-order/EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md"
+    },
+    {
+      "old_path": "FIVE_MODE_ROW_PAIR_INCIDENCE_EQUALITY_POLAR_CLASSIFICATION_SHARPNESS.md",
+      "new_path": "claims/arbitrary-order/FIVE_MODE_ROW_PAIR_INCIDENCE_EQUALITY_POLAR_CLASSIFICATION_SHARPNESS.md"
+    },
+    {
+      "old_path": "FIVE_REGULAR_BALANCED_BRIDGE_DIAGONAL_BACKBONE.md",
+      "new_path": "claims/arbitrary-order/FIVE_REGULAR_BALANCED_BRIDGE_DIAGONAL_BACKBONE.md"
+    },
+    {
+      "old_path": "FIVE_ROOT_BOUNDARY_TRANSVERSAL_BLOCKER_CLASSIFICATION.md",
+      "new_path": "claims/arbitrary-order/FIVE_ROOT_BOUNDARY_TRANSVERSAL_BLOCKER_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "FIVE_ROOT_NO_TORUS_CODIMENSION_TWO_THEOREM.md",
+      "new_path": "claims/arbitrary-order/FIVE_ROOT_NO_TORUS_CODIMENSION_TWO_THEOREM.md"
+    },
+    {
+      "old_path": "FIVE_ROOT_TIGHT_BLOCKER_P5_EXTRACTION.md",
+      "new_path": "claims/arbitrary-order/FIVE_ROOT_TIGHT_BLOCKER_P5_EXTRACTION.md"
+    },
+    {
+      "old_path": "FIVE_ROOT_TORUS_RESULTANT_DICHOTOMY.md",
+      "new_path": "claims/arbitrary-order/FIVE_ROOT_TORUS_RESULTANT_DICHOTOMY.md"
+    },
+    {
+      "old_path": "FIVE_ROOT_ZERO_COUPLING_INTERSECTION_LEMMA.md",
+      "new_path": "claims/arbitrary-order/FIVE_ROOT_ZERO_COUPLING_INTERSECTION_LEMMA.md"
+    },
+    {
+      "old_path": "FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md",
+      "new_path": "claims/arbitrary-order/FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md"
+    },
+    {
+      "old_path": "FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md",
+      "new_path": "claims/arbitrary-order/FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "FOUR_BLOCKER_IDEAL_OBSTRUCTION.md",
+      "new_path": "claims/arbitrary-order/FOUR_BLOCKER_IDEAL_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "FOUR_REGULAR_BALANCED_BRIDGE_OBSTRUCTION.md",
+      "new_path": "claims/arbitrary-order/FOUR_REGULAR_BALANCED_BRIDGE_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "FOUR_RESIDUAL_EVEN_WICK_TOWER_AND_P6_SYNCHRONIZATION_THEOREM.md",
+      "new_path": "claims/arbitrary-order/FOUR_RESIDUAL_EVEN_WICK_TOWER_AND_P6_SYNCHRONIZATION_THEOREM.md"
+    },
+    {
+      "old_path": "FOUR_ROOT_SIX_BLOCKER_ARBITRARY_ORDER_KERNEL_SUPPORT_OBSTRUCTION.md",
+      "new_path": "claims/arbitrary-order/FOUR_ROOT_SIX_BLOCKER_ARBITRARY_ORDER_KERNEL_SUPPORT_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "FOUR_ROOT_SMOOTH_TORUS_OBSTRUCTION.md",
+      "new_path": "claims/arbitrary-order/FOUR_ROOT_SMOOTH_TORUS_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "FULL_COLOUR_SUPPORT_ORBIT_LEMMA.md",
+      "new_path": "claims/arbitrary-order/FULL_COLOUR_SUPPORT_ORBIT_LEMMA.md"
+    },
+    {
+      "old_path": "GRAPH_EXTRACTION_STRICT_SUPPORT_TRANSFER_COROLLARY.md",
+      "new_path": "claims/arbitrary-order/GRAPH_EXTRACTION_STRICT_SUPPORT_TRANSFER_COROLLARY.md"
+    },
+    {
+      "old_path": "GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md",
+      "new_path": "claims/arbitrary-order/GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md"
+    },
+    {
+      "old_path": "HAFNIAN_CONVOLUTION_SPLIT_LEMMA.md",
+      "new_path": "claims/arbitrary-order/HAFNIAN_CONVOLUTION_SPLIT_LEMMA.md"
+    },
+    {
+      "old_path": "HAFNIAN_PRINCIPAL_COFACTOR_GRADIENT_DOMINANCE.md",
+      "new_path": "claims/arbitrary-order/HAFNIAN_PRINCIPAL_COFACTOR_GRADIENT_DOMINANCE.md"
+    },
+    {
+      "old_path": "HIGHER_RESIDUAL_PERMANENTAL_TOMOGRAPHY_NESTED_COFACTOR_STRESS_AND_CUMULANT_INTERFACE.md",
+      "new_path": "claims/arbitrary-order/HIGHER_RESIDUAL_PERMANENTAL_TOMOGRAPHY_NESTED_COFACTOR_STRESS_AND_CUMULANT_INTERFACE.md"
+    },
+    {
+      "old_path": "INTEGER_SIGNED_LATTICE_TRANSPORT_THEOREM.md",
+      "new_path": "claims/arbitrary-order/INTEGER_SIGNED_LATTICE_TRANSPORT_THEOREM.md"
+    },
+    {
+      "old_path": "MINIMAL_SINGLETON_CIRCUIT_RECTANGLE_THEOREM.md",
+      "new_path": "claims/arbitrary-order/MINIMAL_SINGLETON_CIRCUIT_RECTANGLE_THEOREM.md"
+    },
+    {
+      "old_path": "MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md",
+      "new_path": "claims/arbitrary-order/MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md"
+    },
+    {
+      "old_path": "ODD_FULL_FACTOR_ONE_TERM_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ODD_FULL_FACTOR_ONE_TERM_THEOREM.md"
+    },
+    {
+      "old_path": "ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION.md",
+      "new_path": "claims/arbitrary-order/ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION.md"
+    },
+    {
+      "old_path": "ONE_NONBLOCKER_SURPLUS_PERMANENT_EXTRACTION.md",
+      "new_path": "claims/arbitrary-order/ONE_NONBLOCKER_SURPLUS_PERMANENT_EXTRACTION.md"
+    },
+    {
+      "old_path": "P6_ARBITRARY_FIBRE_AXIS_PORT_DEFECT_AND_TWO_COLOUR_GRAM_ESCAPE_THEOREM.md",
+      "new_path": "claims/p6/P6_ARBITRARY_FIBRE_AXIS_PORT_DEFECT_AND_TWO_COLOUR_GRAM_ESCAPE_THEOREM.md"
+    },
+    {
+      "old_path": "P6_AXIS_COMPLEMENT_SUM_COVARIANT_OFFDIAGONAL_AND_GAUGE_NO_GO.md",
+      "new_path": "claims/p6/P6_AXIS_COMPLEMENT_SUM_COVARIANT_OFFDIAGONAL_AND_GAUGE_NO_GO.md"
+    },
+    {
+      "old_path": "P6_CLEAN_TWO_BY_THREE_SELECTOR_SEGRE_PULLBACK_AND_TORUS_PERMISSION_THEOREM.md",
+      "new_path": "claims/p6/P6_CLEAN_TWO_BY_THREE_SELECTOR_SEGRE_PULLBACK_AND_TORUS_PERMISSION_THEOREM.md"
+    },
+    {
+      "old_path": "P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md",
+      "new_path": "claims/p6/P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md",
+      "new_path": "claims/p6/P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md"
+    },
+    {
+      "old_path": "P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md",
+      "new_path": "claims/p6/P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md"
+    },
+    {
+      "old_path": "P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md",
+      "new_path": "claims/p6/P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P6_FOUR_ROOT_FULL_H4_SENSOR_AND_TARGET_INCIDENCE_BOUNDARY.md",
+      "new_path": "claims/p6/P6_FOUR_ROOT_FULL_H4_SENSOR_AND_TARGET_INCIDENCE_BOUNDARY.md"
+    },
+    {
+      "old_path": "P6_PHYSICAL_SIX_FACE_HAFNIAN_SECTION_FOUR_DECK_SYNCHRONIZATION_AND_SEGRE_SHARPNESS.md",
+      "new_path": "claims/p6/P6_PHYSICAL_SIX_FACE_HAFNIAN_SECTION_FOUR_DECK_SYNCHRONIZATION_AND_SEGRE_SHARPNESS.md"
+    },
+    {
+      "old_path": "P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md",
+      "new_path": "claims/p6/P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md",
+      "new_path": "claims/p6/P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md"
+    },
+    {
+      "old_path": "P6_TAU_ZERO_SINGULAR_GRAM_TETRAD_SUPPORT_AND_FOUR_PLUS_TWO_NO_GO.md",
+      "new_path": "claims/p6/P6_TAU_ZERO_SINGULAR_GRAM_TETRAD_SUPPORT_AND_FOUR_PLUS_TWO_NO_GO.md"
+    },
+    {
+      "old_path": "P6_TWO_SHORE_HYPERBOLIC_SCALAR_FIBRE_AXIS_DEFECT_AND_FOUR_PLUS_TWO_TRANSFER_THEOREM.md",
+      "new_path": "claims/p6/P6_TWO_SHORE_HYPERBOLIC_SCALAR_FIBRE_AXIS_DEFECT_AND_FOUR_PLUS_TWO_TRANSFER_THEOREM.md"
+    },
+    {
+      "old_path": "P7_221_ALIGNED_CORE_DEGREE3_THREE_FACE_NULLSTELLENSATZ_OBSTRUCTION.md",
+      "new_path": "claims/p7/P7_221_ALIGNED_CORE_DEGREE3_THREE_FACE_NULLSTELLENSATZ_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P7_221_ALIGNED_CORE_DEGREE5_AFFINE_COMPLETION.md",
+      "new_path": "claims/p7/P7_221_ALIGNED_CORE_DEGREE5_AFFINE_COMPLETION.md"
+    },
+    {
+      "old_path": "P7_221_ALL_PAIR_INCIDENCE_QUOTIENT_BINARY_COHERENCE_CLASSIFICATION.md",
+      "new_path": "claims/p7/P7_221_ALL_PAIR_INCIDENCE_QUOTIENT_BINARY_COHERENCE_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P7_221_ARBITRARY_ALIGNMENT_DEGREE5_RECTANGLE_OBSTRUCTION.md",
+      "new_path": "claims/p7/P7_221_ARBITRARY_ALIGNMENT_DEGREE5_RECTANGLE_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P7_221_COMMON_TERMINAL_BLOCK_SCALAR_HAFNIAN_REALIZABILITY.md",
+      "new_path": "claims/p7/P7_221_COMMON_TERMINAL_BLOCK_SCALAR_HAFNIAN_REALIZABILITY.md"
+    },
+    {
+      "old_path": "P7_221_DEGREE5_INCIDENCE_QUOTIENT_RECTANGLE_FLATTENING_THEOREM.md",
+      "new_path": "claims/p7/P7_221_DEGREE5_INCIDENCE_QUOTIENT_RECTANGLE_FLATTENING_THEOREM.md"
+    },
+    {
+      "old_path": "P7_221_DIAGONAL_BLOCK_GLUING_AND_MIXED_WORD_BOUNDARY.md",
+      "new_path": "claims/p7/P7_221_DIAGONAL_BLOCK_GLUING_AND_MIXED_WORD_BOUNDARY.md"
+    },
+    {
+      "old_path": "P7_221_EXTREMAL_RANK_SIX_DISJOINT_SUPPORT_DEGREE3_HAFNIAN_OBSTRUCTION.md",
+      "new_path": "claims/p7/P7_221_EXTREMAL_RANK_SIX_DISJOINT_SUPPORT_DEGREE3_HAFNIAN_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P7_221_FACE_SPECIFIC_QUOTIENT_MAYER_VIETORIS_AND_SHARP_LIFT.md",
+      "new_path": "claims/p7/P7_221_FACE_SPECIFIC_QUOTIENT_MAYER_VIETORIS_AND_SHARP_LIFT.md"
+    },
+    {
+      "old_path": "P7_221_FIXED_DIAGONAL_LIFT_DEGREE5_MIXED_CIRCUIT_OBSTRUCTION.md",
+      "new_path": "claims/p7/P7_221_FIXED_DIAGONAL_LIFT_DEGREE5_MIXED_CIRCUIT_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P7_221_FORMAL_LEDGER_SCALAR_HAFNIAN_REALIZABILITY_AND_SYNCHRONIZATION_GAP.md",
+      "new_path": "claims/p7/P7_221_FORMAL_LEDGER_SCALAR_HAFNIAN_REALIZABILITY_AND_SYNCHRONIZATION_GAP.md"
+    },
+    {
+      "old_path": "P7_221_FOUR_FACE_BINARY_GHZ_PHYSICAL_COUNTERMODEL.md",
+      "new_path": "claims/p7/P7_221_FOUR_FACE_BINARY_GHZ_PHYSICAL_COUNTERMODEL.md"
+    },
+    {
+      "old_path": "P7_221_JET_ORTHOGONAL_SPLICE_AND_FORMAL_FIXED_WINDOW_NO_GO.md",
+      "new_path": "claims/p7/P7_221_JET_ORTHOGONAL_SPLICE_AND_FORMAL_FIXED_WINDOW_NO_GO.md"
+    },
+    {
+      "old_path": "P7_221_OVERLAPPING_RANK_SIX_SUPPORT_CLASSIFICATION_AND_P3K2_CUBIC_OBSTRUCTION.md",
+      "new_path": "claims/p7/P7_221_OVERLAPPING_RANK_SIX_SUPPORT_CLASSIFICATION_AND_P3K2_CUBIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P7_221_TENSOR_COEFFICIENT_WICK_DECONVOLUTION_TWO_FACE_LOCALIZATION.md",
+      "new_path": "claims/p7/P7_221_TENSOR_COEFFICIENT_WICK_DECONVOLUTION_TWO_FACE_LOCALIZATION.md"
+    },
+    {
+      "old_path": "P7_221_THREE_MODE_RESIDUAL_ANNIHILATION_AND_FULL_QUOTIENT_RANK_SUM_BOUND.md",
+      "new_path": "claims/p7/P7_221_THREE_MODE_RESIDUAL_ANNIHILATION_AND_FULL_QUOTIENT_RANK_SUM_BOUND.md"
+    },
+    {
+      "old_path": "P7_221_TRICOLOUR_INCIDENCE_QUOTIENT_PROJECTIVE_SUPPORT_THEOREM.md",
+      "new_path": "claims/p7/P7_221_TRICOLOUR_INCIDENCE_QUOTIENT_PROJECTIVE_SUPPORT_THEOREM.md"
+    },
+    {
+      "old_path": "P7_COMBINED_SHALLOW_DECK_DOUBLE_STAR_GAUGE_AND_ZERO_TORUS_BOUNDARY.md",
+      "new_path": "claims/p7/P7_COMBINED_SHALLOW_DECK_DOUBLE_STAR_GAUGE_AND_ZERO_TORUS_BOUNDARY.md"
+    },
+    {
+      "old_path": "P7_COMPLETE_FOUR_FACE_NULL_STRATUM_AND_PAIRED_DEPTH_SHARPNESS.md",
+      "new_path": "claims/p7/P7_COMPLETE_FOUR_FACE_NULL_STRATUM_AND_PAIRED_DEPTH_SHARPNESS.md"
+    },
+    {
+      "old_path": "P7_CROSS_DEPTH_HAFNIAN_DERIVATIVE_AND_PROJECTIVE_MARKED_STAR_BOUNDARY.md",
+      "new_path": "claims/p7/P7_CROSS_DEPTH_HAFNIAN_DERIVATIVE_AND_PROJECTIVE_MARKED_STAR_BOUNDARY.md"
+    },
+    {
+      "old_path": "P7_DELETION_CUBE_OBSERVABILITY_AND_CLEAN_WINDOW_BOUNDARY.md",
+      "new_path": "claims/p7/P7_DELETION_CUBE_OBSERVABILITY_AND_CLEAN_WINDOW_BOUNDARY.md"
+    },
+    {
+      "old_path": "P7_FIVE_ROOT_TWO_FAN_SHARING_AND_SHARED_ROOT_VERONESE_TRANSVERSALITY.md",
+      "new_path": "claims/p7/P7_FIVE_ROOT_TWO_FAN_SHARING_AND_SHARED_ROOT_VERONESE_TRANSVERSALITY.md"
+    },
+    {
+      "old_path": "P7_FIXED_COMPLEMENT_LAPLACE_FAN_COVER_AND_LOWER_FRAME_SEPARATION.md",
+      "new_path": "claims/p7/P7_FIXED_COMPLEMENT_LAPLACE_FAN_COVER_AND_LOWER_FRAME_SEPARATION.md"
+    },
+    {
+      "old_path": "P7_FOUR_CLEAN_WINDOW_TETRAHEDRAL_PAIR_TOMOGRAPHY_THEOREM.md",
+      "new_path": "claims/p7/P7_FOUR_CLEAN_WINDOW_TETRAHEDRAL_PAIR_TOMOGRAPHY_THEOREM.md"
+    },
+    {
+      "old_path": "P7_FULL_MIXED_ROOT_219_LABEL_SENSOR_AND_PINNED_STAR_GATING_BOUNDARY.md",
+      "new_path": "claims/p7/P7_FULL_MIXED_ROOT_219_LABEL_SENSOR_AND_PINNED_STAR_GATING_BOUNDARY.md"
+    },
+    {
+      "old_path": "P7_GHZ_NULL_FAN_DUAL_WICK_DEFECT_AND_SINGLETON_DEPTH_SEPARATION.md",
+      "new_path": "claims/p7/P7_GHZ_NULL_FAN_DUAL_WICK_DEFECT_AND_SINGLETON_DEPTH_SEPARATION.md"
+    },
+    {
+      "old_path": "P7_LEAF_APOLAR_GORENSTEIN_HILBERT_RESONANCE_AND_ESSENTIAL_SYZYGY_THEOREM.md",
+      "new_path": "claims/p7/P7_LEAF_APOLAR_GORENSTEIN_HILBERT_RESONANCE_AND_ESSENTIAL_SYZYGY_THEOREM.md"
+    },
+    {
+      "old_path": "P7_LEGAL_ENDPOINT_TORUS_COVARIANCE_AND_AFFINE_LINE_NORMALIZATION_WALL.md",
+      "new_path": "claims/p7/P7_LEGAL_ENDPOINT_TORUS_COVARIANCE_AND_AFFINE_LINE_NORMALIZATION_WALL.md"
+    },
+    {
+      "old_path": "P7_LEGAL_LOCAL_BASIS_BORDER_GHZ_INTERSECTION_AND_SINGLE_FLIP_TRANSVERSALITY_THEOREM.md",
+      "new_path": "claims/p7/P7_LEGAL_LOCAL_BASIS_BORDER_GHZ_INTERSECTION_AND_SINGLE_FLIP_TRANSVERSALITY_THEOREM.md"
+    },
+    {
+      "old_path": "P7_LEGAL_NONROOT_SWITCHING_COVARIANCE_AND_UNIFORM_CURVE_SECANT_SATURATION.md",
+      "new_path": "claims/p7/P7_LEGAL_NONROOT_SWITCHING_COVARIANCE_AND_UNIFORM_CURVE_SECANT_SATURATION.md"
+    },
+    {
+      "old_path": "P7_MIXED_COLOR_PAIR_CIRCUIT_AND_AXIS_JET_BOUNDARY.md",
+      "new_path": "claims/p7/P7_MIXED_COLOR_PAIR_CIRCUIT_AND_AXIS_JET_BOUNDARY.md"
+    },
+    {
+      "old_path": "P7_PHYSICAL_EXTENSION_BOOLEAN_SQUARE_PROJECTIVE_STATIONARITY_MASTER_SYSTEM.md",
+      "new_path": "claims/p7/P7_PHYSICAL_EXTENSION_BOOLEAN_SQUARE_PROJECTIVE_STATIONARITY_MASTER_SYSTEM.md"
+    },
+    {
+      "old_path": "P7_PHYSICAL_EXTENSION_MIXED_HARD_LEFSCHETZ_SIGN_CHAMBER_AND_ONE_EXCEPTIONAL_ORBIT_OBSTRUCTION.md",
+      "new_path": "claims/p7/P7_PHYSICAL_EXTENSION_MIXED_HARD_LEFSCHETZ_SIGN_CHAMBER_AND_ONE_EXCEPTIONAL_ORBIT_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P7_PHYSICAL_EXTENSION_TWO_LEVEL_STAR_ORBIT_COMPLETE_EXCLUSION_THEOREM.md",
+      "new_path": "claims/p7/P7_PHYSICAL_EXTENSION_TWO_LEVEL_STAR_ORBIT_COMPLETE_EXCLUSION_THEOREM.md"
+    },
+    {
+      "old_path": "P7_PHYSICAL_LEAF_ANNIHILATOR_EXTENSION_AND_QUOTIENT_SYZYGY_THEOREM.md",
+      "new_path": "claims/p7/P7_PHYSICAL_LEAF_ANNIHILATOR_EXTENSION_AND_QUOTIENT_SYZYGY_THEOREM.md"
+    },
+    {
+      "old_path": "P7_PHYSICAL_MIXED_KERNEL_BOOLEAN_DOWN_DESCENT_AND_SEVEN_BY_SEVEN_MASTER_HESSIAN.md",
+      "new_path": "claims/p7/P7_PHYSICAL_MIXED_KERNEL_BOOLEAN_DOWN_DESCENT_AND_SEVEN_BY_SEVEN_MASTER_HESSIAN.md"
+    },
+    {
+      "old_path": "P7_PHYSICAL_MIXED_KERNEL_EXCEPTIONAL_WALL_GRAPH_AND_RESTRICTED_HESSIAN_THEOREM.md",
+      "new_path": "claims/p7/P7_PHYSICAL_MIXED_KERNEL_EXCEPTIONAL_WALL_GRAPH_AND_RESTRICTED_HESSIAN_THEOREM.md"
+    },
+    {
+      "old_path": "P7_PINNED_H4_TORUS_SUPPORT_FIVE_BINARY_QUADRATIC_EXCLUSION.md",
+      "new_path": "claims/p7/P7_PINNED_H4_TORUS_SUPPORT_FIVE_BINARY_QUADRATIC_EXCLUSION.md"
+    },
+    {
+      "old_path": "P7_PINNED_H4_TORUS_SUPPORT_SEVEN_BOOLEAN_LEFSCHETZ_EXCLUSION.md",
+      "new_path": "claims/p7/P7_PINNED_H4_TORUS_SUPPORT_SEVEN_BOOLEAN_LEFSCHETZ_EXCLUSION.md"
+    },
+    {
+      "old_path": "P7_PINNED_H4_TORUS_SUPPORT_SIX_RECIPROCAL_POLARIZATION_EXCLUSION.md",
+      "new_path": "claims/p7/P7_PINNED_H4_TORUS_SUPPORT_SIX_RECIPROCAL_POLARIZATION_EXCLUSION.md"
+    },
+    {
+      "old_path": "P7_PRIMITIVE_ADDITIVE_GAUGE_RIGIDITY_AND_COORDINATE_BOUNDARY_THEOREM.md",
+      "new_path": "claims/p7/P7_PRIMITIVE_ADDITIVE_GAUGE_RIGIDITY_AND_COORDINATE_BOUNDARY_THEOREM.md"
+    },
+    {
+      "old_path": "P7_PRIMITIVE_BOOLEAN_SQUARE_COMPLEMENT_RADIAL_AND_EXCEPTIONAL_CLIQUE_THEOREM.md",
+      "new_path": "claims/p7/P7_PRIMITIVE_BOOLEAN_SQUARE_COMPLEMENT_RADIAL_AND_EXCEPTIONAL_CLIQUE_THEOREM.md"
+    },
+    {
+      "old_path": "P7_PRIMITIVE_BOOLEAN_SQUARE_DUAL_TRIANGLE_STAR_NORMAL_FORM.md",
+      "new_path": "claims/p7/P7_PRIMITIVE_BOOLEAN_SQUARE_DUAL_TRIANGLE_STAR_NORMAL_FORM.md"
+    },
+    {
+      "old_path": "P7_PRIMITIVE_BOOLEAN_SQUARE_QUOTIENT_HESSIAN_CORANK_AND_TOMOGRAPHY.md",
+      "new_path": "claims/p7/P7_PRIMITIVE_BOOLEAN_SQUARE_QUOTIENT_HESSIAN_CORANK_AND_TOMOGRAPHY.md"
+    },
+    {
+      "old_path": "P7_PRIMITIVE_BOOLEAN_SQUARE_STAR_CLOSURE_DISCRIMINANT_AND_ZERO_ROW_BOUNDARY_THEOREM.md",
+      "new_path": "claims/p7/P7_PRIMITIVE_BOOLEAN_SQUARE_STAR_CLOSURE_DISCRIMINANT_AND_ZERO_ROW_BOUNDARY_THEOREM.md"
+    },
+    {
+      "old_path": "P7_PRIMITIVE_QUOTIENT_SINGULAR_APOLAR_RADIAL_BILINEAR_INCIDENCE_THEOREM.md",
+      "new_path": "claims/p7/P7_PRIMITIVE_QUOTIENT_SINGULAR_APOLAR_RADIAL_BILINEAR_INCIDENCE_THEOREM.md"
+    },
+    {
+      "old_path": "P7_PRIMITIVE_ZEON_HARMONIC_SQUARE_RICCATI_AND_REAL_ROW_CONE_OBSTRUCTION.md",
+      "new_path": "claims/p7/P7_PRIMITIVE_ZEON_HARMONIC_SQUARE_RICCATI_AND_REAL_ROW_CONE_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P7_PURE_CHART_FIFTH_COMPOUND_FIBRE_DICHOTOMY_AND_SINGULAR_ESCAPE.md",
+      "new_path": "claims/p7/P7_PURE_CHART_FIFTH_COMPOUND_FIBRE_DICHOTOMY_AND_SINGULAR_ESCAPE.md"
+    },
+    {
+      "old_path": "P7_RESIDUAL_NULL_INCIDENCE_CANONICAL_PROFILE_SHARPNESS.md",
+      "new_path": "claims/p7/P7_RESIDUAL_NULL_INCIDENCE_CANONICAL_PROFILE_SHARPNESS.md"
+    },
+    {
+      "old_path": "P7_RESIDUAL_NULL_POLAR_SELECTOR_H0_THEOREM.md",
+      "new_path": "claims/p7/P7_RESIDUAL_NULL_POLAR_SELECTOR_H0_THEOREM.md"
+    },
+    {
+      "old_path": "P7_ROOT_BUDGET_DUAL_WICK_OBSERVABILITY_AND_QUARTIC_ESCAPE.md",
+      "new_path": "claims/p7/P7_ROOT_BUDGET_DUAL_WICK_OBSERVABILITY_AND_QUARTIC_ESCAPE.md"
+    },
+    {
+      "old_path": "P7_SELECTOR_MATROID_RANK_COOCCURRENCE_AND_TOP_PROJECTION_BOUNDARY.md",
+      "new_path": "claims/p7/P7_SELECTOR_MATROID_RANK_COOCCURRENCE_AND_TOP_PROJECTION_BOUNDARY.md"
+    },
+    {
+      "old_path": "P7_SEVEN_CORE_BOSONIC_COMPOUND_FIRST_THIRD_JET_BOUNDARY.md",
+      "new_path": "claims/p7/P7_SEVEN_CORE_BOSONIC_COMPOUND_FIRST_THIRD_JET_BOUNDARY.md"
+    },
+    {
+      "old_path": "P7_STRICT_TWO_ENDPOINT_SYNCHRONIZED_TOP_FACE_AND_SHORE_LINE_BOUNDARY.md",
+      "new_path": "claims/p7/P7_STRICT_TWO_ENDPOINT_SYNCHRONIZED_TOP_FACE_AND_SHORE_LINE_BOUNDARY.md"
+    },
+    {
+      "old_path": "P7_STRUCTURED_CUBIC_BOOLEAN_LEFSCHETZ_TRANSPORT_AND_MIDDLE_HESSIAN_VANISHING_THEOREM.md",
+      "new_path": "claims/p7/P7_STRUCTURED_CUBIC_BOOLEAN_LEFSCHETZ_TRANSPORT_AND_MIDDLE_HESSIAN_VANISHING_THEOREM.md"
+    },
+    {
+      "old_path": "P7_SYNCHRONIZED_TWO_DEPTH_POLAR_SELECTOR_AND_ALIGNED_RESONANCE_BOUNDARY.md",
+      "new_path": "claims/p7/P7_SYNCHRONIZED_TWO_DEPTH_POLAR_SELECTOR_AND_ALIGNED_RESONANCE_BOUNDARY.md"
+    },
+    {
+      "old_path": "P7_TARGET_INCIDENCE_DETERMINANT_CLEARED_HAFNIAN_INTEGRABILITY_THEOREM.md",
+      "new_path": "claims/p7/P7_TARGET_INCIDENCE_DETERMINANT_CLEARED_HAFNIAN_INTEGRABILITY_THEOREM.md"
+    },
+    {
+      "old_path": "P7_TARGET_LINE_H0_PAIR_PROJECTION_PENTAD_AND_STAR_ALIGNMENT_THEOREM.md",
+      "new_path": "claims/p7/P7_TARGET_LINE_H0_PAIR_PROJECTION_PENTAD_AND_STAR_ALIGNMENT_THEOREM.md"
+    },
+    {
+      "old_path": "P7_THREE_CLEAN_WINDOW_PAIR_FACE_RECOVERY_NO_GO.md",
+      "new_path": "claims/p7/P7_THREE_CLEAN_WINDOW_PAIR_FACE_RECOVERY_NO_GO.md"
+    },
+    {
+      "old_path": "P7_TWO_ENDPOINT_AXIS_MULTIPLICITY_REDUCTION_AND_221_COMMON_JET_MODEL.md",
+      "new_path": "claims/p7/P7_TWO_ENDPOINT_AXIS_MULTIPLICITY_REDUCTION_AND_221_COMMON_JET_MODEL.md"
+    },
+    {
+      "old_path": "P7_VACUUM_FREE_DUAL_WICK_PROJECTIVIZATION_AND_EMPTY_SCALAR_ESCAPE.md",
+      "new_path": "claims/p7/P7_VACUUM_FREE_DUAL_WICK_PROJECTIVIZATION_AND_EMPTY_SCALAR_ESCAPE.md"
+    },
+    {
+      "old_path": "PARTIAL_MINIMAL_SINGLETON_CIRCUIT_DICHOTOMY.md",
+      "new_path": "claims/arbitrary-order/PARTIAL_MINIMAL_SINGLETON_CIRCUIT_DICHOTOMY.md"
+    },
+    {
+      "old_path": "RECIPROCAL_PORT_ORIENTATION_CORRECTION.md",
+      "new_path": "claims/arbitrary-order/RECIPROCAL_PORT_ORIENTATION_CORRECTION.md"
+    },
+    {
+      "old_path": "RESIDUAL_HAFNIAN_COMMON_COFACTOR_GRAM_THEOREM.md",
+      "new_path": "claims/arbitrary-order/RESIDUAL_HAFNIAN_COMMON_COFACTOR_GRAM_THEOREM.md"
+    },
+    {
+      "old_path": "RESIDUAL_HAFNIAN_COMMON_GRAM_AUDIT_AND_TORUS_ZERO_FULL_RANK_SHARPNESS.md",
+      "new_path": "claims/arbitrary-order/RESIDUAL_HAFNIAN_COMMON_GRAM_AUDIT_AND_TORUS_ZERO_FULL_RANK_SHARPNESS.md"
+    },
+    {
+      "old_path": "RESIDUAL_HAFNIAN_HESSIAN_KNESER_ETALE_AND_JET_INTEGRABILITY_THEOREM.md",
+      "new_path": "claims/arbitrary-order/RESIDUAL_HAFNIAN_HESSIAN_KNESER_ETALE_AND_JET_INTEGRABILITY_THEOREM.md"
+    },
+    {
+      "old_path": "RESIDUAL_HAFNIAN_TORUS_ZERO_FULL_RANK_COFACTOR_BOUNDARY.md",
+      "new_path": "claims/arbitrary-order/RESIDUAL_HAFNIAN_TORUS_ZERO_FULL_RANK_COFACTOR_BOUNDARY.md"
+    },
+    {
+      "old_path": "RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md",
+      "new_path": "claims/arbitrary-order/RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md"
+    },
+    {
+      "old_path": "ROOT_M7_ALL_ENDPOINT_LEGAL_THREE_INCIDENCE_SUPPORTS_EXCLUSION.md",
+      "new_path": "claims/arbitrary-order/ROOT_M7_ALL_ENDPOINT_LEGAL_THREE_INCIDENCE_SUPPORTS_EXCLUSION.md"
+    },
+    {
+      "old_path": "ROOT_M7_COFACTOR_QUOTIENT_WEDGE_INVARIANT.md",
+      "new_path": "claims/arbitrary-order/ROOT_M7_COFACTOR_QUOTIENT_WEDGE_INVARIANT.md"
+    },
+    {
+      "old_path": "ROOT_M7_ENDPOINT_LEGAL_CERTIFICATE_HITTING_MINIMUM_TWO_EXCLUSION.md",
+      "new_path": "claims/arbitrary-order/ROOT_M7_ENDPOINT_LEGAL_CERTIFICATE_HITTING_MINIMUM_TWO_EXCLUSION.md"
+    },
+    {
+      "old_path": "ROOT_M7_FIXED_SUPPORT_PURE_MIXED_MONOMIAL_SATURATION_OBSTRUCTION.md",
+      "new_path": "claims/arbitrary-order/ROOT_M7_FIXED_SUPPORT_PURE_MIXED_MONOMIAL_SATURATION_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "ROOT_M7_FOUR_ROOT_HIDDEN_PAIR_COFACTOR_THEOREM.md",
+      "new_path": "claims/arbitrary-order/ROOT_M7_FOUR_ROOT_HIDDEN_PAIR_COFACTOR_THEOREM.md"
+    },
+    {
+      "old_path": "ROOT_M7_HALL_SATISFYING_TWO_PORT_PURE_P7_CONSTRUCTION.md",
+      "new_path": "claims/arbitrary-order/ROOT_M7_HALL_SATISFYING_TWO_PORT_PURE_P7_CONSTRUCTION.md"
+    },
+    {
+      "old_path": "ROOT_M7_HIROTA_HIDDEN_OVERLAY_SURJECTIVITY_NOGO.md",
+      "new_path": "claims/arbitrary-order/ROOT_M7_HIROTA_HIDDEN_OVERLAY_SURJECTIVITY_NOGO.md"
+    },
+    {
+      "old_path": "ROOT_M7_ONE_EDGE_A10_SHARED_PURE_MIXED_FACTOR_OBSTRUCTION.md",
+      "new_path": "claims/arbitrary-order/ROOT_M7_ONE_EDGE_A10_SHARED_PURE_MIXED_FACTOR_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "ROOT_M7_RELATIVE_TRIPLE_FOURTH_INCIDENCE_SHELL_EXCLUSION.md",
+      "new_path": "claims/arbitrary-order/ROOT_M7_RELATIVE_TRIPLE_FOURTH_INCIDENCE_SHELL_EXCLUSION.md"
+    },
+    {
+      "old_path": "ROOT_M7_SIMULTANEOUS_RANK_ONE_HIDDEN_PAIR_REALIZATION_NOGO.md",
+      "new_path": "claims/arbitrary-order/ROOT_M7_SIMULTANEOUS_RANK_ONE_HIDDEN_PAIR_REALIZATION_NOGO.md"
+    },
+    {
+      "old_path": "ROOT_M7_SYMBOLIC_ROUTE_BOUNDARY_THEOREMS.md",
+      "new_path": "claims/arbitrary-order/ROOT_M7_SYMBOLIC_ROUTE_BOUNDARY_THEOREMS.md"
+    },
+    {
+      "old_path": "ROOT_M7_THIRTY_TWO_INCIDENCE_SUPPORTS_PRINCIPAL_SATURATION_EXCLUSION.md",
+      "new_path": "claims/arbitrary-order/ROOT_M7_THIRTY_TWO_INCIDENCE_SUPPORTS_PRINCIPAL_SATURATION_EXCLUSION.md"
+    },
+    {
+      "old_path": "ROOT_M7_THREE_PORT_PRESSURE_ENLARGEMENT_SHARED_FACTOR_OBSTRUCTION.md",
+      "new_path": "claims/arbitrary-order/ROOT_M7_THREE_PORT_PRESSURE_ENLARGEMENT_SHARED_FACTOR_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "ROOT_M7_UNIQUE_PAIR_THIRD_INCIDENCE_SHELL_EXCLUSION.md",
+      "new_path": "claims/arbitrary-order/ROOT_M7_UNIQUE_PAIR_THIRD_INCIDENCE_SHELL_EXCLUSION.md"
+    },
+    {
+      "old_path": "ROOT_OF_UNITY_BLOCK_PERMANENT_SELECTOR.md",
+      "new_path": "claims/arbitrary-order/ROOT_OF_UNITY_BLOCK_PERMANENT_SELECTOR.md"
+    },
+    {
+      "old_path": "ROOT_OF_UNITY_SELECTOR_SYMMETRIC_HAFNIAN_LIFT.md",
+      "new_path": "claims/arbitrary-order/ROOT_OF_UNITY_SELECTOR_SYMMETRIC_HAFNIAN_LIFT.md"
+    },
+    {
+      "old_path": "ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md",
+      "new_path": "claims/arbitrary-order/ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md"
+    },
+    {
+      "old_path": "ROOT_TANGENT_CYCLE_FRAME_SYMMETRY_REALIZATION.md",
+      "new_path": "claims/arbitrary-order/ROOT_TANGENT_CYCLE_FRAME_SYMMETRY_REALIZATION.md"
+    },
+    {
+      "old_path": "ROOT_TANGENT_MINIMAL_CYCLE_IDEMPOTENT_SECOND_THIRD_JET_CLASSIFICATION.md",
+      "new_path": "claims/arbitrary-order/ROOT_TANGENT_MINIMAL_CYCLE_IDEMPOTENT_SECOND_THIRD_JET_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "ROOT_TANGENT_MINIMAL_CYCLE_SECOND_JET_OBSTRUCTION.md",
+      "new_path": "claims/arbitrary-order/ROOT_TANGENT_MINIMAL_CYCLE_SECOND_JET_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "SIX_BLOCKER_ADMISSIBLE_QUOTIENT_CATALOGUE.md",
+      "new_path": "claims/arbitrary-order/SIX_BLOCKER_ADMISSIBLE_QUOTIENT_CATALOGUE.md"
+    },
+    {
+      "old_path": "SIX_BLOCKER_ARBITRARY_COFACTOR_PROJECTIVELY_CONSTANT_ROW_OBSTRUCTION.md",
+      "new_path": "claims/arbitrary-order/SIX_BLOCKER_ARBITRARY_COFACTOR_PROJECTIVELY_CONSTANT_ROW_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "SIX_BLOCKER_HAFNIAN_POLAR_CUBIC_CONDENSATION_NO_GO.md",
+      "new_path": "claims/arbitrary-order/SIX_BLOCKER_HAFNIAN_POLAR_CUBIC_CONDENSATION_NO_GO.md"
+    },
+    {
+      "old_path": "SIX_BLOCKER_MAXIMAL_OVERLAP_GHZ_HYPERCUBE.md",
+      "new_path": "claims/arbitrary-order/SIX_BLOCKER_MAXIMAL_OVERLAP_GHZ_HYPERCUBE.md"
+    },
+    {
+      "old_path": "SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md",
+      "new_path": "claims/arbitrary-order/SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md"
+    },
+    {
+      "old_path": "SIX_BLOCKER_NONZERO_CROSS_PORT_FREEDOM.md",
+      "new_path": "claims/arbitrary-order/SIX_BLOCKER_NONZERO_CROSS_PORT_FREEDOM.md"
+    },
+    {
+      "old_path": "SIX_BLOCKER_ORDER12_ISOTROPIC_P6_CURVE.md",
+      "new_path": "claims/arbitrary-order/SIX_BLOCKER_ORDER12_ISOTROPIC_P6_CURVE.md"
+    },
+    {
+      "old_path": "SIX_BLOCKER_ORDER12_KERNEL_SUPPORT_COVER_NO_TORUS_P6.md",
+      "new_path": "claims/arbitrary-order/SIX_BLOCKER_ORDER12_KERNEL_SUPPORT_COVER_NO_TORUS_P6.md"
+    },
+    {
+      "old_path": "SIX_BLOCKER_ORDER12_NONZERO_DIAGONAL_COFACTOR_NO_TORUS_P6.md",
+      "new_path": "claims/arbitrary-order/SIX_BLOCKER_ORDER12_NONZERO_DIAGONAL_COFACTOR_NO_TORUS_P6.md"
+    },
+    {
+      "old_path": "SIX_BLOCKER_ORDER12_QUOTIENT_RANK_FRAME_CLASSIFICATION.md",
+      "new_path": "claims/arbitrary-order/SIX_BLOCKER_ORDER12_QUOTIENT_RANK_FRAME_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "SIX_BLOCKER_ORDER12_THREE_KERNEL_PURE_COFACTOR_COMPATIBILITY_OBSTRUCTION.md",
+      "new_path": "claims/arbitrary-order/SIX_BLOCKER_ORDER12_THREE_KERNEL_PURE_COFACTOR_COMPATIBILITY_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "SIX_BLOCKER_ORDER12_ZERO_QUOTIENT_COFACTOR_SYZYGY.md",
+      "new_path": "claims/arbitrary-order/SIX_BLOCKER_ORDER12_ZERO_QUOTIENT_COFACTOR_SYZYGY.md"
+    },
+    {
+      "old_path": "SIX_BLOCKER_ORDER12_ZERO_QUOTIENT_CORE_NO_CONCISE_P6.md",
+      "new_path": "claims/arbitrary-order/SIX_BLOCKER_ORDER12_ZERO_QUOTIENT_CORE_NO_CONCISE_P6.md"
+    },
+    {
+      "old_path": "SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md",
+      "new_path": "claims/arbitrary-order/SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md"
+    },
+    {
+      "old_path": "SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md",
+      "new_path": "claims/arbitrary-order/SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md"
+    },
+    {
+      "old_path": "THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md",
+      "new_path": "claims/arbitrary-order/THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md"
+    },
+    {
+      "old_path": "THREE_COLOUR_BLOCKER_UNION_LEMMA.md",
+      "new_path": "claims/arbitrary-order/THREE_COLOUR_BLOCKER_UNION_LEMMA.md"
+    },
+    {
+      "old_path": "THREE_COLOUR_DIAGONAL_MATCHING_BALANCE_THEOREM.md",
+      "new_path": "claims/arbitrary-order/THREE_COLOUR_DIAGONAL_MATCHING_BALANCE_THEOREM.md"
+    },
+    {
+      "old_path": "THREE_COLOUR_HYPERPLANE_ANNIHILATION_THEOREM.md",
+      "new_path": "claims/arbitrary-order/THREE_COLOUR_HYPERPLANE_ANNIHILATION_THEOREM.md"
+    },
+    {
+      "old_path": "TWO_PORT_SEVEN_BLOCKER_REDUCTION.md",
+      "new_path": "claims/arbitrary-order/TWO_PORT_SEVEN_BLOCKER_REDUCTION.md"
+    },
+    {
+      "old_path": "TWO_RESIDUAL_COORDINATE_MONOMIAL_SLICE_UNIVERSALITY_NOGO.md",
+      "new_path": "claims/arbitrary-order/TWO_RESIDUAL_COORDINATE_MONOMIAL_SLICE_UNIVERSALITY_NOGO.md"
+    },
+    {
+      "old_path": "TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md",
+      "new_path": "claims/arbitrary-order/TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md"
+    },
+    {
+      "old_path": "UNIVERSAL_FIVE_BLOCKER_DIVISIBILITY_LEMMA.md",
+      "new_path": "claims/arbitrary-order/UNIVERSAL_FIVE_BLOCKER_DIVISIBILITY_LEMMA.md"
+    },
+    {
+      "old_path": "analyze_dimacs_extension_clause_core.py",
+      "new_path": "tools/explore/analyze_dimacs_extension_clause_core.py"
+    },
+    {
+      "old_path": "audit_all_quadrangle_p5_obstruction.py",
+      "new_path": "claims/arbitrary-order/audit_all_quadrangle_p5_obstruction.py"
+    },
+    {
+      "old_path": "audit_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py"
+    },
+    {
+      "old_path": "audit_arbitrary_order_degree_six_kotzig_port_obstruction.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_order_degree_six_kotzig_port_obstruction.py"
+    },
+    {
+      "old_path": "audit_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py"
+    },
+    {
+      "old_path": "audit_arbitrary_order_two_residual_strict_support_staircase_and_coordinate_forcing.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_order_two_residual_strict_support_staircase_and_coordinate_forcing.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_equality_backbone_coloring_glue_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_equality_backbone_coloring_glue_theorem.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_equality_exceptional_source_rectangle_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_equality_exceptional_source_rectangle_theorem.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_equality_five_edge_shore_kempe_exclusion.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_equality_five_edge_shore_kempe_exclusion.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_equality_negative_gain_graph_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_equality_negative_gain_graph_theorem.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_equality_one_switch_cut_normal_form_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_equality_one_switch_cut_normal_form_theorem.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_equality_one_switch_exclusion_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_equality_one_switch_exclusion_theorem.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_equality_pure_matching_cube_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_equality_pure_matching_cube_theorem.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_equality_three_edge_shore_flattening_exclusion.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_equality_three_edge_shore_flattening_exclusion.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_equality_two_switch_excess_plane_separation_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_equality_two_switch_excess_plane_separation_theorem.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_equality_two_switch_exclusion_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_equality_two_switch_exclusion_theorem.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_equality_two_switch_port_completion_shore_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_equality_two_switch_port_completion_shore_theorem.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_equality_zero_switch_exclusion_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_equality_zero_switch_exclusion_theorem.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_five_mode_row_pair_incidence_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_five_mode_row_pair_incidence_theorem.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_four_mode_row_pair_incidence_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_four_mode_row_pair_incidence_theorem.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_kernel_deletion_hierarchy.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_kernel_deletion_hierarchy.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_three_excess_apolar_boundary_quotient_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_apolar_boundary_quotient_theorem.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_three_excess_b3_phase_holonomy_nogo.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_b3_phase_holonomy_nogo.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_three_excess_bare_theta_absorption_and_cofactor_response_boundary.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_bare_theta_absorption_and_cofactor_response_boundary.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_three_excess_bosonic_plucker_defect_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_bosonic_plucker_defect_theorem.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_three_excess_boundary_delta_matroid_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_boundary_delta_matroid_theorem.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_three_excess_boundary_entanglement_rank_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_boundary_entanglement_rank_theorem.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_three_excess_boundary_jet_dominance_nogo.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_boundary_jet_dominance_nogo.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_three_excess_conformal_birkhoff_reduction.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_conformal_birkhoff_reduction.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_three_excess_conformal_core_alignment_boundary.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_conformal_core_alignment_boundary.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_three_excess_hamming_face_pinch_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_hamming_face_pinch_theorem.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_three_excess_ineligible_ninth_cell_exclusion_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_ineligible_ninth_cell_exclusion_theorem.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_three_excess_marked_response_toric_holonomy_boundary.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_marked_response_toric_holonomy_boundary.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_three_excess_one_chord_210_alignment_desaturation_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_one_chord_210_alignment_desaturation_theorem.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_three_excess_one_chord_apolar_saturation_boundary.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_one_chord_apolar_saturation_boundary.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_three_excess_one_chord_cut_color_exclusion_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_one_chord_cut_color_exclusion_theorem.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_three_excess_port_permutation_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_port_permutation_theorem.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_three_excess_replay_exchange_closure_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_replay_exchange_closure_theorem.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_three_excess_six_token_ear_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_six_token_ear_theorem.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_three_excess_zeon_boundary_jet_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_excess_zeon_boundary_jet_theorem.py"
+    },
+    {
+      "old_path": "audit_arbitrary_permanent_three_m_plus_two_support_bound.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_permanent_three_m_plus_two_support_bound.py"
+    },
+    {
+      "old_path": "audit_arbitrary_surplus_common_row_full_span_obstruction.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_surplus_common_row_full_span_obstruction.py"
+    },
+    {
+      "old_path": "audit_bosonic_hafnian_spinor_no_transfer.py",
+      "new_path": "claims/arbitrary-order/audit_bosonic_hafnian_spinor_no_transfer.py"
+    },
+    {
+      "old_path": "audit_exact_three_blocker_permanent_rank.py",
+      "new_path": "claims/arbitrary-order/audit_exact_three_blocker_permanent_rank.py"
+    },
+    {
+      "old_path": "audit_five_mode_row_pair_incidence_equality_polar_classification_sharpness.py",
+      "new_path": "claims/arbitrary-order/audit_five_mode_row_pair_incidence_equality_polar_classification_sharpness.py"
+    },
+    {
+      "old_path": "audit_five_regular_balanced_bridge_diagonal_backbone.py",
+      "new_path": "claims/arbitrary-order/audit_five_regular_balanced_bridge_diagonal_backbone.py"
+    },
+    {
+      "old_path": "audit_five_root_boundary_transversal_blocker_classification.py",
+      "new_path": "claims/arbitrary-order/audit_five_root_boundary_transversal_blocker_classification.py"
+    },
+    {
+      "old_path": "audit_five_root_no_torus_codimension_two.py",
+      "new_path": "claims/arbitrary-order/audit_five_root_no_torus_codimension_two.py"
+    },
+    {
+      "old_path": "audit_five_root_tight_blocker_p5_extraction.py",
+      "new_path": "claims/arbitrary-order/audit_five_root_tight_blocker_p5_extraction.py"
+    },
+    {
+      "old_path": "audit_five_root_torus_resultant_dichotomy.py",
+      "new_path": "claims/arbitrary-order/audit_five_root_torus_resultant_dichotomy.py"
+    },
+    {
+      "old_path": "audit_five_row_projective_normal_forms.py",
+      "new_path": "claims/arbitrary-order/audit_five_row_projective_normal_forms.py"
+    },
+    {
+      "old_path": "audit_four_blocker_ideal_obstruction.py",
+      "new_path": "claims/arbitrary-order/audit_four_blocker_ideal_obstruction.py"
+    },
+    {
+      "old_path": "audit_four_regular_balanced_bridge_obstruction.py",
+      "new_path": "claims/arbitrary-order/audit_four_regular_balanced_bridge_obstruction.py"
+    },
+    {
+      "old_path": "audit_four_residual_even_wick_tower_and_p6_synchronization.py",
+      "new_path": "claims/arbitrary-order/audit_four_residual_even_wick_tower_and_p6_synchronization.py"
+    },
+    {
+      "old_path": "audit_four_root_six_blocker_arbitrary_order_kernel_support_obstruction.py",
+      "new_path": "claims/arbitrary-order/audit_four_root_six_blocker_arbitrary_order_kernel_support_obstruction.py"
+    },
+    {
+      "old_path": "audit_four_root_smooth_torus_obstruction.py",
+      "new_path": "claims/arbitrary-order/audit_four_root_smooth_torus_obstruction.py"
+    },
+    {
+      "old_path": "audit_fourth_order_permanent_subrank.py",
+      "new_path": "claims/arbitrary-order/audit_fourth_order_permanent_subrank.py"
+    },
+    {
+      "old_path": "audit_graph_extraction_strict_support_transfer_corollary.py",
+      "new_path": "claims/arbitrary-order/audit_graph_extraction_strict_support_transfer_corollary.py"
+    },
+    {
+      "old_path": "audit_graph_extraction_top_two_port_synchronization_observability_boundary.py",
+      "new_path": "claims/arbitrary-order/audit_graph_extraction_top_two_port_synchronization_observability_boundary.py"
+    },
+    {
+      "old_path": "audit_hafnian_convolution_split.py",
+      "new_path": "claims/arbitrary-order/audit_hafnian_convolution_split.py"
+    },
+    {
+      "old_path": "audit_hafnian_principal_cofactor_gradient_dominance.py",
+      "new_path": "claims/arbitrary-order/audit_hafnian_principal_cofactor_gradient_dominance.py"
+    },
+    {
+      "old_path": "audit_higher_residual_permanental_tomography_nested_cofactor_stress_and_cumulant_interface.py",
+      "new_path": "claims/arbitrary-order/audit_higher_residual_permanental_tomography_nested_cofactor_stress_and_cumulant_interface.py"
+    },
+    {
+      "old_path": "audit_multi_star_blocker_factorisation.py",
+      "new_path": "claims/arbitrary-order/audit_multi_star_blocker_factorisation.py"
+    },
+    {
+      "old_path": "audit_odd_residual_port_permanent_extraction.py",
+      "new_path": "claims/arbitrary-order/audit_odd_residual_port_permanent_extraction.py"
+    },
+    {
+      "old_path": "audit_one_nonblocker_surplus_permanent_extraction.py",
+      "new_path": "claims/arbitrary-order/audit_one_nonblocker_surplus_permanent_extraction.py"
+    },
+    {
+      "old_path": "audit_p6_arbitrary_fibre_axis_port_defect_and_two_colour_gram_escape.py",
+      "new_path": "claims/p6/audit_p6_arbitrary_fibre_axis_port_defect_and_two_colour_gram_escape.py"
+    },
+    {
+      "old_path": "audit_p6_axis_complement_sum_covariant_offdiagonal_and_gauge_no_go.py",
+      "new_path": "claims/p6/audit_p6_axis_complement_sum_covariant_offdiagonal_and_gauge_no_go.py"
+    },
+    {
+      "old_path": "audit_p6_clean_two_by_three_selector_segre_pullback_and_torus_permission.py",
+      "new_path": "claims/p6/audit_p6_clean_two_by_three_selector_segre_pullback_and_torus_permission.py"
+    },
+    {
+      "old_path": "audit_p6_common_port_111_all_gate_covers_obstruction.py",
+      "new_path": "claims/p6/audit_p6_common_port_111_all_gate_covers_obstruction.py"
+    },
+    {
+      "old_path": "audit_p6_common_port_111_frobenius_reduction.py",
+      "new_path": "claims/p6/audit_p6_common_port_111_frobenius_reduction.py"
+    },
+    {
+      "old_path": "audit_p6_common_port_111_rank_five_catalecticant.py",
+      "new_path": "claims/p6/audit_p6_common_port_111_rank_five_catalecticant.py"
+    },
+    {
+      "old_path": "audit_p6_common_port_111_unique_four_gate_obstruction.py",
+      "new_path": "claims/p6/audit_p6_common_port_111_unique_four_gate_obstruction.py"
+    },
+    {
+      "old_path": "audit_p6_four_root_full_h4_sensor_and_target_incidence_boundary.py",
+      "new_path": "claims/p6/audit_p6_four_root_full_h4_sensor_and_target_incidence_boundary.py"
+    },
+    {
+      "old_path": "audit_p6_physical_six_face_hafnian_section_four_deck_synchronization_and_segre_sharpness.py",
+      "new_path": "claims/p6/audit_p6_physical_six_face_hafnian_section_four_deck_synchronization_and_segre_sharpness.py"
+    },
+    {
+      "old_path": "audit_p6_projectively_constant_source_row_obstruction.py",
+      "new_path": "claims/p6/audit_p6_projectively_constant_source_row_obstruction.py"
+    },
+    {
+      "old_path": "audit_p6_simultaneous_kernel_and_natural_lift.py",
+      "new_path": "claims/p6/audit_p6_simultaneous_kernel_and_natural_lift.py"
+    },
+    {
+      "old_path": "audit_p6_tau_zero_singular_gram_tetrad_support_and_four_plus_two_no_go.py",
+      "new_path": "claims/p6/audit_p6_tau_zero_singular_gram_tetrad_support_and_four_plus_two_no_go.py"
+    },
+    {
+      "old_path": "audit_p6_two_shore_hyperbolic_scalar_fibre_axis_defect_and_four_plus_two_transfer.py",
+      "new_path": "claims/p6/audit_p6_two_shore_hyperbolic_scalar_fibre_axis_defect_and_four_plus_two_transfer.py"
+    },
+    {
+      "old_path": "audit_p7_221_aligned_core_degree3_three_face_nullstellensatz_obstruction.py",
+      "new_path": "claims/p7/audit_p7_221_aligned_core_degree3_three_face_nullstellensatz_obstruction.py"
+    },
+    {
+      "old_path": "audit_p7_221_aligned_core_degree5_affine_completion.py",
+      "new_path": "claims/p7/audit_p7_221_aligned_core_degree5_affine_completion.py"
+    },
+    {
+      "old_path": "audit_p7_221_all_pair_incidence_quotient_binary_coherence.py",
+      "new_path": "claims/p7/audit_p7_221_all_pair_incidence_quotient_binary_coherence.py"
+    },
+    {
+      "old_path": "audit_p7_221_arbitrary_alignment_degree5_rectangle_obstruction.py",
+      "new_path": "claims/p7/audit_p7_221_arbitrary_alignment_degree5_rectangle_obstruction.py"
+    },
+    {
+      "old_path": "audit_p7_221_common_terminal_block_scalar_hafnian_realizability.py",
+      "new_path": "claims/p7/audit_p7_221_common_terminal_block_scalar_hafnian_realizability.py"
+    },
+    {
+      "old_path": "audit_p7_221_degree5_incidence_quotient_rectangle_flattening.py",
+      "new_path": "claims/p7/audit_p7_221_degree5_incidence_quotient_rectangle_flattening.py"
+    },
+    {
+      "old_path": "audit_p7_221_diagonal_block_gluing_and_mixed_word_boundary.py",
+      "new_path": "claims/p7/audit_p7_221_diagonal_block_gluing_and_mixed_word_boundary.py"
+    },
+    {
+      "old_path": "audit_p7_221_extremal_rank_six_disjoint_support_degree3_hafnian_obstruction.py",
+      "new_path": "claims/p7/audit_p7_221_extremal_rank_six_disjoint_support_degree3_hafnian_obstruction.py"
+    },
+    {
+      "old_path": "audit_p7_221_face_specific_quotient_mayer_vietoris_and_sharp_lift.py",
+      "new_path": "claims/p7/audit_p7_221_face_specific_quotient_mayer_vietoris_and_sharp_lift.py"
+    },
+    {
+      "old_path": "audit_p7_221_fixed_diagonal_lift_degree5_mixed_circuit_obstruction.py",
+      "new_path": "claims/p7/audit_p7_221_fixed_diagonal_lift_degree5_mixed_circuit_obstruction.py"
+    },
+    {
+      "old_path": "audit_p7_221_formal_ledger_scalar_hafnian_realizability_and_synchronization_gap.py",
+      "new_path": "claims/p7/audit_p7_221_formal_ledger_scalar_hafnian_realizability_and_synchronization_gap.py"
+    },
+    {
+      "old_path": "audit_p7_221_four_face_binary_ghz_physical_countermodel.py",
+      "new_path": "claims/p7/audit_p7_221_four_face_binary_ghz_physical_countermodel.py"
+    },
+    {
+      "old_path": "audit_p7_221_jet_orthogonal_splice_and_formal_fixed_window_no_go.py",
+      "new_path": "claims/p7/audit_p7_221_jet_orthogonal_splice_and_formal_fixed_window_no_go.py"
+    },
+    {
+      "old_path": "audit_p7_221_overlapping_rank_six_support_classification_and_p3k2_cubic_obstruction.py",
+      "new_path": "claims/p7/audit_p7_221_overlapping_rank_six_support_classification_and_p3k2_cubic_obstruction.py"
+    },
+    {
+      "old_path": "audit_p7_221_tensor_coefficient_wick_deconvolution_two_face_localization.py",
+      "new_path": "claims/p7/audit_p7_221_tensor_coefficient_wick_deconvolution_two_face_localization.py"
+    },
+    {
+      "old_path": "audit_p7_221_three_mode_residual_annihilation_and_full_quotient_rank_sum_bound.py",
+      "new_path": "claims/p7/audit_p7_221_three_mode_residual_annihilation_and_full_quotient_rank_sum_bound.py"
+    },
+    {
+      "old_path": "audit_p7_221_tricolour_incidence_quotient_projective_support.py",
+      "new_path": "claims/p7/audit_p7_221_tricolour_incidence_quotient_projective_support.py"
+    },
+    {
+      "old_path": "audit_p7_combined_shallow_deck_double_star_gauge.py",
+      "new_path": "claims/p7/audit_p7_combined_shallow_deck_double_star_gauge.py"
+    },
+    {
+      "old_path": "audit_p7_complete_four_face_null_stratum_and_paired_depth_sharpness.py",
+      "new_path": "claims/p7/audit_p7_complete_four_face_null_stratum_and_paired_depth_sharpness.py"
+    },
+    {
+      "old_path": "audit_p7_cross_depth_hafnian_derivative_and_projective_marked_star_boundary.py",
+      "new_path": "claims/p7/audit_p7_cross_depth_hafnian_derivative_and_projective_marked_star_boundary.py"
+    },
+    {
+      "old_path": "audit_p7_deletion_cube_observability_and_clean_window_boundary.py",
+      "new_path": "claims/p7/audit_p7_deletion_cube_observability_and_clean_window_boundary.py"
+    },
+    {
+      "old_path": "audit_p7_five_root_two_fan_sharing_and_shared_root_veronese_transversality.py",
+      "new_path": "claims/p7/audit_p7_five_root_two_fan_sharing_and_shared_root_veronese_transversality.py"
+    },
+    {
+      "old_path": "audit_p7_fixed_complement_laplace_fan_cover_and_lower_frame_separation.py",
+      "new_path": "claims/p7/audit_p7_fixed_complement_laplace_fan_cover_and_lower_frame_separation.py"
+    },
+    {
+      "old_path": "audit_p7_four_clean_window_tetrahedral_pair_tomography.py",
+      "new_path": "claims/p7/audit_p7_four_clean_window_tetrahedral_pair_tomography.py"
+    },
+    {
+      "old_path": "audit_p7_full_mixed_root_219_label_sensor_and_pinned_star_gating_boundary.py",
+      "new_path": "claims/p7/audit_p7_full_mixed_root_219_label_sensor_and_pinned_star_gating_boundary.py"
+    },
+    {
+      "old_path": "audit_p7_ghz_null_fan_dual_wick_defect_and_singleton_depth_separation.py",
+      "new_path": "claims/p7/audit_p7_ghz_null_fan_dual_wick_defect_and_singleton_depth_separation.py"
+    },
+    {
+      "old_path": "audit_p7_leaf_apolar_gorenstein_hilbert_resonance_and_essential_syzygy.py",
+      "new_path": "claims/p7/audit_p7_leaf_apolar_gorenstein_hilbert_resonance_and_essential_syzygy.py"
+    },
+    {
+      "old_path": "audit_p7_legal_endpoint_torus_covariance_and_affine_line_normalization.py",
+      "new_path": "claims/p7/audit_p7_legal_endpoint_torus_covariance_and_affine_line_normalization.py"
+    },
+    {
+      "old_path": "audit_p7_legal_local_basis_border_ghz_intersection_and_single_flip_transversality.py",
+      "new_path": "claims/p7/audit_p7_legal_local_basis_border_ghz_intersection_and_single_flip_transversality.py"
+    },
+    {
+      "old_path": "audit_p7_legal_nonroot_switching_covariance_and_uniform_curve_secant_saturation.py",
+      "new_path": "claims/p7/audit_p7_legal_nonroot_switching_covariance_and_uniform_curve_secant_saturation.py"
+    },
+    {
+      "old_path": "audit_p7_mixed_color_pair_circuit_and_axis_jet_boundary.py",
+      "new_path": "claims/p7/audit_p7_mixed_color_pair_circuit_and_axis_jet_boundary.py"
+    },
+    {
+      "old_path": "audit_p7_physical_extension_boolean_square_projective_stationarity.py",
+      "new_path": "claims/p7/audit_p7_physical_extension_boolean_square_projective_stationarity.py"
+    },
+    {
+      "old_path": "audit_p7_physical_extension_mixed_hard_lefschetz_sign_chamber_and_one_exceptional_orbit.py",
+      "new_path": "claims/p7/audit_p7_physical_extension_mixed_hard_lefschetz_sign_chamber_and_one_exceptional_orbit.py"
+    },
+    {
+      "old_path": "audit_p7_physical_extension_two_level_star_orbit_complete_exclusion.py",
+      "new_path": "claims/p7/audit_p7_physical_extension_two_level_star_orbit_complete_exclusion.py"
+    },
+    {
+      "old_path": "audit_p7_physical_leaf_annihilator_extension_and_quotient_syzygy.py",
+      "new_path": "claims/p7/audit_p7_physical_leaf_annihilator_extension_and_quotient_syzygy.py"
+    },
+    {
+      "old_path": "audit_p7_physical_mixed_kernel_boolean_down_descent.py",
+      "new_path": "claims/p7/audit_p7_physical_mixed_kernel_boolean_down_descent.py"
+    },
+    {
+      "old_path": "audit_p7_physical_mixed_kernel_exceptional_wall_graph.py",
+      "new_path": "claims/p7/audit_p7_physical_mixed_kernel_exceptional_wall_graph.py"
+    },
+    {
+      "old_path": "audit_p7_pinned_h4_torus_support_five_binary_quadratic_exclusion.py",
+      "new_path": "claims/p7/audit_p7_pinned_h4_torus_support_five_binary_quadratic_exclusion.py"
+    },
+    {
+      "old_path": "audit_p7_pinned_h4_torus_support_seven_boolean_lefschetz_exclusion.py",
+      "new_path": "claims/p7/audit_p7_pinned_h4_torus_support_seven_boolean_lefschetz_exclusion.py"
+    },
+    {
+      "old_path": "audit_p7_pinned_h4_torus_support_six_reciprocal_polarization_exclusion.py",
+      "new_path": "claims/p7/audit_p7_pinned_h4_torus_support_six_reciprocal_polarization_exclusion.py"
+    },
+    {
+      "old_path": "audit_p7_primitive_additive_gauge_rigidity_and_coordinate_boundary.py",
+      "new_path": "claims/p7/audit_p7_primitive_additive_gauge_rigidity_and_coordinate_boundary.py"
+    },
+    {
+      "old_path": "audit_p7_primitive_boolean_square_dual_triangle_star_normal_form.py",
+      "new_path": "claims/p7/audit_p7_primitive_boolean_square_dual_triangle_star_normal_form.py"
+    },
+    {
+      "old_path": "audit_p7_primitive_boolean_square_quotient_hessian_corank_and_tomography.py",
+      "new_path": "claims/p7/audit_p7_primitive_boolean_square_quotient_hessian_corank_and_tomography.py"
+    },
+    {
+      "old_path": "audit_p7_primitive_boolean_square_star_closure_discriminant.py",
+      "new_path": "claims/p7/audit_p7_primitive_boolean_square_star_closure_discriminant.py"
+    },
+    {
+      "old_path": "audit_p7_primitive_complement_radial_and_exceptional_clique.py",
+      "new_path": "claims/p7/audit_p7_primitive_complement_radial_and_exceptional_clique.py"
+    },
+    {
+      "old_path": "audit_p7_primitive_quotient_singular_apolar_radial_bilinear_incidence.py",
+      "new_path": "claims/p7/audit_p7_primitive_quotient_singular_apolar_radial_bilinear_incidence.py"
+    },
+    {
+      "old_path": "audit_p7_primitive_zeon_harmonic_square_riccati.py",
+      "new_path": "claims/p7/audit_p7_primitive_zeon_harmonic_square_riccati.py"
+    },
+    {
+      "old_path": "audit_p7_pure_chart_fifth_compound_fibre_dichotomy_and_singular_escape.py",
+      "new_path": "claims/p7/audit_p7_pure_chart_fifth_compound_fibre_dichotomy_and_singular_escape.py"
+    },
+    {
+      "old_path": "audit_p7_residual_null_incidence_canonical_profile_sharpness.py",
+      "new_path": "claims/p7/audit_p7_residual_null_incidence_canonical_profile_sharpness.py"
+    },
+    {
+      "old_path": "audit_p7_residual_null_polar_selector_h0_theorem.py",
+      "new_path": "claims/p7/audit_p7_residual_null_polar_selector_h0_theorem.py"
+    },
+    {
+      "old_path": "audit_p7_root_budget_dual_wick_observability_and_quartic_escape.py",
+      "new_path": "claims/p7/audit_p7_root_budget_dual_wick_observability_and_quartic_escape.py"
+    },
+    {
+      "old_path": "audit_p7_selector_matroid_rank_cooccurrence_and_top_projection_boundary.py",
+      "new_path": "claims/p7/audit_p7_selector_matroid_rank_cooccurrence_and_top_projection_boundary.py"
+    },
+    {
+      "old_path": "audit_p7_seven_core_bosonic_compound_first_third_jet_boundary.py",
+      "new_path": "claims/p7/audit_p7_seven_core_bosonic_compound_first_third_jet_boundary.py"
+    },
+    {
+      "old_path": "audit_p7_strict_two_endpoint_synchronized_top_face_and_shore_line_boundary.py",
+      "new_path": "claims/p7/audit_p7_strict_two_endpoint_synchronized_top_face_and_shore_line_boundary.py"
+    },
+    {
+      "old_path": "audit_p7_structured_cubic_boolean_lefschetz_transport_and_middle_hessian_vanishing.py",
+      "new_path": "claims/p7/audit_p7_structured_cubic_boolean_lefschetz_transport_and_middle_hessian_vanishing.py"
+    },
+    {
+      "old_path": "audit_p7_synchronized_two_depth_polar_selector_and_aligned_resonance_boundary.py",
+      "new_path": "claims/p7/audit_p7_synchronized_two_depth_polar_selector_and_aligned_resonance_boundary.py"
+    },
+    {
+      "old_path": "audit_p7_target_incidence_determinant_cleared_hafnian_integrability.py",
+      "new_path": "claims/p7/audit_p7_target_incidence_determinant_cleared_hafnian_integrability.py"
+    },
+    {
+      "old_path": "audit_p7_target_line_h0_pair_projection_pentad_and_star_alignment.py",
+      "new_path": "claims/p7/audit_p7_target_line_h0_pair_projection_pentad_and_star_alignment.py"
+    },
+    {
+      "old_path": "audit_p7_three_clean_window_pair_face_recovery_no_go.py",
+      "new_path": "claims/p7/audit_p7_three_clean_window_pair_face_recovery_no_go.py"
+    },
+    {
+      "old_path": "audit_p7_two_endpoint_axis_multiplicity_reduction_and_221_common_jet_model.py",
+      "new_path": "claims/p7/audit_p7_two_endpoint_axis_multiplicity_reduction_and_221_common_jet_model.py"
+    },
+    {
+      "old_path": "audit_p7_vacuum_free_dual_wick_projectivization_and_empty_scalar_escape.py",
+      "new_path": "claims/p7/audit_p7_vacuum_free_dual_wick_projectivization_and_empty_scalar_escape.py"
+    },
+    {
+      "old_path": "audit_residual_hafnian_common_cofactor_gram.py",
+      "new_path": "claims/arbitrary-order/audit_residual_hafnian_common_cofactor_gram.py"
+    },
+    {
+      "old_path": "audit_residual_hafnian_common_gram_audit_and_torus_zero_full_rank_sharpness.py",
+      "new_path": "claims/arbitrary-order/audit_residual_hafnian_common_gram_audit_and_torus_zero_full_rank_sharpness.py"
+    },
+    {
+      "old_path": "audit_residual_hafnian_hessian_kneser_etale_and_jet_integrability.py",
+      "new_path": "claims/arbitrary-order/audit_residual_hafnian_hessian_kneser_etale_and_jet_integrability.py"
+    },
+    {
+      "old_path": "audit_residual_hafnian_torus_zero_full_rank_cofactor_boundary.py",
+      "new_path": "claims/arbitrary-order/audit_residual_hafnian_torus_zero_full_rank_cofactor_boundary.py"
+    },
+    {
+      "old_path": "audit_response_jet_principal_deletion_deck_and_root_parity_legality.py",
+      "new_path": "claims/arbitrary-order/audit_response_jet_principal_deletion_deck_and_root_parity_legality.py"
+    },
+    {
+      "old_path": "audit_root_m7_all_endpoint_legal_three_incidence_supports_exclusion.py",
+      "new_path": "claims/arbitrary-order/audit_root_m7_all_endpoint_legal_three_incidence_supports_exclusion.py"
+    },
+    {
+      "old_path": "audit_root_m7_cofactor_quotient_wedge_invariant.py",
+      "new_path": "claims/arbitrary-order/audit_root_m7_cofactor_quotient_wedge_invariant.py"
+    },
+    {
+      "old_path": "audit_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py",
+      "new_path": "claims/arbitrary-order/audit_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py"
+    },
+    {
+      "old_path": "audit_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py",
+      "new_path": "claims/arbitrary-order/audit_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py"
+    },
+    {
+      "old_path": "audit_root_m7_four_root_hidden_pair_cofactor_theorem.py",
+      "new_path": "claims/arbitrary-order/audit_root_m7_four_root_hidden_pair_cofactor_theorem.py"
+    },
+    {
+      "old_path": "audit_root_m7_hall_satisfying_two_port_pure_p7_construction.py",
+      "new_path": "claims/arbitrary-order/audit_root_m7_hall_satisfying_two_port_pure_p7_construction.py"
+    },
+    {
+      "old_path": "audit_root_m7_hirota_hidden_overlay_surjectivity_nogo.py",
+      "new_path": "claims/arbitrary-order/audit_root_m7_hirota_hidden_overlay_surjectivity_nogo.py"
+    },
+    {
+      "old_path": "audit_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py",
+      "new_path": "claims/arbitrary-order/audit_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py"
+    },
+    {
+      "old_path": "audit_root_m7_relative_triple_fourth_incidence_shell_exclusion.py",
+      "new_path": "claims/arbitrary-order/audit_root_m7_relative_triple_fourth_incidence_shell_exclusion.py"
+    },
+    {
+      "old_path": "audit_root_m7_simultaneous_rank_one_hidden_pair_realization_nogo.py",
+      "new_path": "claims/arbitrary-order/audit_root_m7_simultaneous_rank_one_hidden_pair_realization_nogo.py"
+    },
+    {
+      "old_path": "audit_root_m7_symbolic_route_boundary_theorems.py",
+      "new_path": "claims/arbitrary-order/audit_root_m7_symbolic_route_boundary_theorems.py"
+    },
+    {
+      "old_path": "audit_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py",
+      "new_path": "claims/arbitrary-order/audit_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py"
+    },
+    {
+      "old_path": "audit_root_m7_three_port_pressure_enlargement_shared_factor_obstruction.py",
+      "new_path": "claims/arbitrary-order/audit_root_m7_three_port_pressure_enlargement_shared_factor_obstruction.py"
+    },
+    {
+      "old_path": "audit_root_m7_unique_pair_third_incidence_shell_exclusion.py",
+      "new_path": "claims/arbitrary-order/audit_root_m7_unique_pair_third_incidence_shell_exclusion.py"
+    },
+    {
+      "old_path": "audit_root_of_unity_block_permanent_selector.py",
+      "new_path": "claims/arbitrary-order/audit_root_of_unity_block_permanent_selector.py"
+    },
+    {
+      "old_path": "audit_root_of_unity_selector_symmetric_hafnian_lift.py",
+      "new_path": "claims/arbitrary-order/audit_root_of_unity_selector_symmetric_hafnian_lift.py"
+    },
+    {
+      "old_path": "audit_root_tangent_companion_necessity_for_coordinate_slice.py",
+      "new_path": "claims/arbitrary-order/audit_root_tangent_companion_necessity_for_coordinate_slice.py"
+    },
+    {
+      "old_path": "audit_root_tangent_cycle_frame_symmetry_realization.py",
+      "new_path": "claims/arbitrary-order/audit_root_tangent_cycle_frame_symmetry_realization.py"
+    },
+    {
+      "old_path": "audit_root_tangent_minimal_cycle_idempotent_second_third_jet_classification.py",
+      "new_path": "claims/arbitrary-order/audit_root_tangent_minimal_cycle_idempotent_second_third_jet_classification.py"
+    },
+    {
+      "old_path": "audit_root_tangent_minimal_cycle_second_jet_obstruction.py",
+      "new_path": "claims/arbitrary-order/audit_root_tangent_minimal_cycle_second_jet_obstruction.py"
+    },
+    {
+      "old_path": "audit_six_blocker_admissible_quotient_catalogue.py",
+      "new_path": "claims/arbitrary-order/audit_six_blocker_admissible_quotient_catalogue.py"
+    },
+    {
+      "old_path": "audit_six_blocker_arbitrary_cofactor_projectively_constant_row_obstruction.py",
+      "new_path": "claims/arbitrary-order/audit_six_blocker_arbitrary_cofactor_projectively_constant_row_obstruction.py"
+    },
+    {
+      "old_path": "audit_six_blocker_hafnian_polar_cubic_condensation_no_go.py",
+      "new_path": "claims/arbitrary-order/audit_six_blocker_hafnian_polar_cubic_condensation_no_go.py"
+    },
+    {
+      "old_path": "audit_six_blocker_maximal_overlap_ghz_hypercube.py",
+      "new_path": "claims/arbitrary-order/audit_six_blocker_maximal_overlap_ghz_hypercube.py"
+    },
+    {
+      "old_path": "audit_six_blocker_maximal_overlap_port_swap_collapse.py",
+      "new_path": "claims/arbitrary-order/audit_six_blocker_maximal_overlap_port_swap_collapse.py"
+    },
+    {
+      "old_path": "audit_six_blocker_nonzero_cross_port_freedom.py",
+      "new_path": "claims/arbitrary-order/audit_six_blocker_nonzero_cross_port_freedom.py"
+    },
+    {
+      "old_path": "audit_six_blocker_order12_isotropic_p6_curve.py",
+      "new_path": "claims/arbitrary-order/audit_six_blocker_order12_isotropic_p6_curve.py"
+    },
+    {
+      "old_path": "audit_six_blocker_order12_kernel_support_cover_no_torus_p6.py",
+      "new_path": "claims/arbitrary-order/audit_six_blocker_order12_kernel_support_cover_no_torus_p6.py"
+    },
+    {
+      "old_path": "audit_six_blocker_order12_nonzero_diagonal_cofactor_no_torus_p6.py",
+      "new_path": "claims/arbitrary-order/audit_six_blocker_order12_nonzero_diagonal_cofactor_no_torus_p6.py"
+    },
+    {
+      "old_path": "audit_six_blocker_order12_quotient_rank_frame_classification.py",
+      "new_path": "claims/arbitrary-order/audit_six_blocker_order12_quotient_rank_frame_classification.py"
+    },
+    {
+      "old_path": "audit_six_blocker_order12_three_kernel_pure_cofactor_compatibility_obstruction.py",
+      "new_path": "claims/arbitrary-order/audit_six_blocker_order12_three_kernel_pure_cofactor_compatibility_obstruction.py"
+    },
+    {
+      "old_path": "audit_six_blocker_order12_zero_quotient_cofactor_syzygy.py",
+      "new_path": "claims/arbitrary-order/audit_six_blocker_order12_zero_quotient_cofactor_syzygy.py"
+    },
+    {
+      "old_path": "audit_six_blocker_order12_zero_quotient_core_no_concise_p6.py",
+      "new_path": "claims/arbitrary-order/audit_six_blocker_order12_zero_quotient_core_no_concise_p6.py"
+    },
+    {
+      "old_path": "audit_support_four_p5_contraction_restriction.py",
+      "new_path": "claims/arbitrary-order/audit_support_four_p5_contraction_restriction.py"
+    },
+    {
+      "old_path": "audit_support_three_p5_contraction_subrank.py",
+      "new_path": "claims/arbitrary-order/audit_support_three_p5_contraction_subrank.py"
+    },
+    {
+      "old_path": "audit_three_colour_balanced_bridge_intersection.py",
+      "new_path": "claims/arbitrary-order/audit_three_colour_balanced_bridge_intersection.py"
+    },
+    {
+      "old_path": "audit_three_colour_blocker_union.py",
+      "new_path": "claims/arbitrary-order/audit_three_colour_blocker_union.py"
+    },
+    {
+      "old_path": "audit_three_colour_diagonal_matching_balance.py",
+      "new_path": "claims/arbitrary-order/audit_three_colour_diagonal_matching_balance.py"
+    },
+    {
+      "old_path": "audit_two_port_seven_blocker_reduction.py",
+      "new_path": "claims/arbitrary-order/audit_two_port_seven_blocker_reduction.py"
+    },
+    {
+      "old_path": "audit_two_residual_coordinate_monomial_slice_universality_nogo.py",
+      "new_path": "claims/arbitrary-order/audit_two_residual_coordinate_monomial_slice_universality_nogo.py"
+    },
+    {
+      "old_path": "audit_two_residual_nonblocker_two_port_factorisation.py",
+      "new_path": "claims/arbitrary-order/audit_two_residual_nonblocker_two_port_factorisation.py"
+    },
+    {
+      "old_path": "audit_universal_five_blocker_divisibility.py",
+      "new_path": "claims/arbitrary-order/audit_universal_five_blocker_divisibility.py"
+    },
+    {
+      "old_path": "augment_degree3_anchor_reciprocal_dichotomy.py",
+      "new_path": "tools/generate/augment_degree3_anchor_reciprocal_dichotomy.py"
+    },
+    {
+      "old_path": "augment_degree3_pure_tensor_support.py",
+      "new_path": "tools/generate/augment_degree3_pure_tensor_support.py"
+    },
+    {
+      "old_path": "augment_dimacs.py",
+      "new_path": "tools/generate/augment_dimacs.py"
+    },
+    {
+      "old_path": "augment_fourteen_vertex_rule_cnf_with_binomial_support_closures.py",
+      "new_path": "tools/generate/augment_fourteen_vertex_rule_cnf_with_binomial_support_closures.py"
+    },
+    {
+      "old_path": "augment_fourteen_vertex_rule_cnf_with_partial_circuit_supports.py",
+      "new_path": "tools/generate/augment_fourteen_vertex_rule_cnf_with_partial_circuit_supports.py"
+    },
+    {
+      "old_path": "condition_dimacs_on_selector_set.py",
+      "new_path": "tools/generate/condition_dimacs_on_selector_set.py"
+    },
+    {
+      "old_path": "explore_twelve_vertex_complement_matching_chains.py",
+      "new_path": "tools/explore/explore_twelve_vertex_complement_matching_chains.py"
+    },
+    {
+      "old_path": "extract_fourteen_vertex_transport_residuals.py",
+      "new_path": "tools/explore/extract_fourteen_vertex_transport_residuals.py"
+    },
+    {
+      "old_path": "materialize_verified_dimacs_clause_set.py",
+      "new_path": "tools/generate/materialize_verified_dimacs_clause_set.py"
+    },
+    {
+      "old_path": "reorient_fourteen_vertex_minimum_activity_certificates.py",
+      "new_path": "tools/generate/reorient_fourteen_vertex_minimum_activity_certificates.py"
+    },
+    {
+      "old_path": "retrofit_fourteen_vertex_c4_c4_c6_chain_minimum_certificates.py",
+      "new_path": "tools/generate/retrofit_fourteen_vertex_c4_c4_c6_chain_minimum_certificates.py"
+    },
+    {
+      "old_path": "solve_dimacs_pysat.py",
+      "new_path": "tools/generate/solve_dimacs_pysat.py"
+    },
+    {
+      "old_path": "verify_adjacent_port_determinant_transport_lemma.py",
+      "new_path": "claims/arbitrary-order/verify_adjacent_port_determinant_transport_lemma.py"
+    },
+    {
+      "old_path": "verify_all_quadrangle_p5_obstruction.py",
+      "new_path": "claims/arbitrary-order/verify_all_quadrangle_p5_obstruction.py"
+    },
+    {
+      "old_path": "verify_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py"
+    },
+    {
+      "old_path": "verify_arbitrary_order_degree_six_kotzig_port_obstruction.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_order_degree_six_kotzig_port_obstruction.py"
+    },
+    {
+      "old_path": "verify_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py"
+    },
+    {
+      "old_path": "verify_arbitrary_order_two_residual_strict_support_staircase_and_coordinate_forcing.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_order_two_residual_strict_support_staircase_and_coordinate_forcing.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_equality_backbone_coloring_glue_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_equality_backbone_coloring_glue_theorem.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_equality_exceptional_source_rectangle_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_equality_exceptional_source_rectangle_theorem.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_equality_five_edge_shore_kempe_exclusion.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_equality_five_edge_shore_kempe_exclusion.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_equality_negative_gain_graph_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_equality_negative_gain_graph_theorem.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_equality_one_switch_cut_normal_form_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_equality_one_switch_cut_normal_form_theorem.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_equality_one_switch_exclusion_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_equality_one_switch_exclusion_theorem.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_equality_pure_matching_cube_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_equality_pure_matching_cube_theorem.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_equality_three_edge_shore_flattening_exclusion.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_equality_three_edge_shore_flattening_exclusion.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_equality_two_switch_excess_plane_separation_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_equality_two_switch_excess_plane_separation_theorem.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_equality_two_switch_exclusion_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_equality_two_switch_exclusion_theorem.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_equality_two_switch_port_completion_shore_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_equality_two_switch_port_completion_shore_theorem.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_equality_zero_switch_exclusion_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_equality_zero_switch_exclusion_theorem.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_five_mode_row_pair_incidence_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_five_mode_row_pair_incidence_theorem.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_four_mode_row_pair_incidence_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_four_mode_row_pair_incidence_theorem.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_kernel_deletion_hierarchy.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_kernel_deletion_hierarchy.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_three_excess_apolar_boundary_quotient_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_apolar_boundary_quotient_theorem.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_three_excess_b3_phase_holonomy_nogo.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_b3_phase_holonomy_nogo.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_three_excess_bare_theta_absorption_and_cofactor_response_boundary.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_bare_theta_absorption_and_cofactor_response_boundary.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_three_excess_bosonic_plucker_defect_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_bosonic_plucker_defect_theorem.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_three_excess_boundary_delta_matroid_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_boundary_delta_matroid_theorem.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_three_excess_boundary_entanglement_rank_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_boundary_entanglement_rank_theorem.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_three_excess_boundary_jet_dominance_nogo.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_boundary_jet_dominance_nogo.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_three_excess_conformal_birkhoff_reduction.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_conformal_birkhoff_reduction.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_three_excess_conformal_core_alignment_boundary.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_conformal_core_alignment_boundary.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_three_excess_hamming_face_pinch_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_hamming_face_pinch_theorem.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_three_excess_ineligible_ninth_cell_exclusion_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_ineligible_ninth_cell_exclusion_theorem.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_three_excess_marked_response_toric_holonomy_boundary.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_marked_response_toric_holonomy_boundary.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_three_excess_one_chord_210_alignment_desaturation_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_one_chord_210_alignment_desaturation_theorem.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_three_excess_one_chord_apolar_saturation_boundary.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_one_chord_apolar_saturation_boundary.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_three_excess_one_chord_cut_color_exclusion_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_one_chord_cut_color_exclusion_theorem.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_three_excess_port_permutation_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_port_permutation_theorem.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_three_excess_replay_exchange_closure_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_replay_exchange_closure_theorem.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_three_excess_six_token_ear_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_six_token_ear_theorem.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_three_excess_zeon_boundary_jet_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_excess_zeon_boundary_jet_theorem.py"
+    },
+    {
+      "old_path": "verify_arbitrary_permanent_three_m_plus_two_support_bound.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_permanent_three_m_plus_two_support_bound.py"
+    },
+    {
+      "old_path": "verify_arbitrary_surplus_common_row_full_span_obstruction.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_surplus_common_row_full_span_obstruction.py"
+    },
+    {
+      "old_path": "verify_bosonic_hafnian_spinor_no_transfer.py",
+      "new_path": "claims/arbitrary-order/verify_bosonic_hafnian_spinor_no_transfer.py"
+    },
+    {
+      "old_path": "verify_even_cycle_feasible_set_expansion.py",
+      "new_path": "claims/arbitrary-order/verify_even_cycle_feasible_set_expansion.py"
+    },
+    {
+      "old_path": "verify_exact_three_blocker_permanent_rank.py",
+      "new_path": "claims/arbitrary-order/verify_exact_three_blocker_permanent_rank.py"
+    },
+    {
+      "old_path": "verify_five_mode_row_pair_incidence_equality_polar_classification_sharpness.py",
+      "new_path": "claims/arbitrary-order/verify_five_mode_row_pair_incidence_equality_polar_classification_sharpness.py"
+    },
+    {
+      "old_path": "verify_five_regular_balanced_bridge_diagonal_backbone.py",
+      "new_path": "claims/arbitrary-order/verify_five_regular_balanced_bridge_diagonal_backbone.py"
+    },
+    {
+      "old_path": "verify_five_root_boundary_transversal_blocker_classification.py",
+      "new_path": "claims/arbitrary-order/verify_five_root_boundary_transversal_blocker_classification.py"
+    },
+    {
+      "old_path": "verify_five_root_no_torus_codimension_two.py",
+      "new_path": "claims/arbitrary-order/verify_five_root_no_torus_codimension_two.py"
+    },
+    {
+      "old_path": "verify_five_root_tight_blocker_p5_extraction.py",
+      "new_path": "claims/arbitrary-order/verify_five_root_tight_blocker_p5_extraction.py"
+    },
+    {
+      "old_path": "verify_five_root_torus_resultant_dichotomy.py",
+      "new_path": "claims/arbitrary-order/verify_five_root_torus_resultant_dichotomy.py"
+    },
+    {
+      "old_path": "verify_five_root_zero_coupling_intersection.py",
+      "new_path": "claims/arbitrary-order/verify_five_root_zero_coupling_intersection.py"
+    },
+    {
+      "old_path": "verify_five_row_projective_normal_forms.py",
+      "new_path": "claims/arbitrary-order/verify_five_row_projective_normal_forms.py"
+    },
+    {
+      "old_path": "verify_four_blocker_ideal_obstruction.py",
+      "new_path": "claims/arbitrary-order/verify_four_blocker_ideal_obstruction.py"
+    },
+    {
+      "old_path": "verify_four_regular_balanced_bridge_obstruction.py",
+      "new_path": "claims/arbitrary-order/verify_four_regular_balanced_bridge_obstruction.py"
+    },
+    {
+      "old_path": "verify_four_residual_even_wick_tower_and_p6_synchronization.py",
+      "new_path": "claims/arbitrary-order/verify_four_residual_even_wick_tower_and_p6_synchronization.py"
+    },
+    {
+      "old_path": "verify_four_root_six_blocker_arbitrary_order_kernel_support_obstruction.py",
+      "new_path": "claims/arbitrary-order/verify_four_root_six_blocker_arbitrary_order_kernel_support_obstruction.py"
+    },
+    {
+      "old_path": "verify_four_root_smooth_torus_obstruction.py",
+      "new_path": "claims/arbitrary-order/verify_four_root_smooth_torus_obstruction.py"
+    },
+    {
+      "old_path": "verify_fourth_order_permanent_subrank.py",
+      "new_path": "claims/arbitrary-order/verify_fourth_order_permanent_subrank.py"
+    },
+    {
+      "old_path": "verify_graph_extraction_strict_support_transfer_corollary.py",
+      "new_path": "claims/arbitrary-order/verify_graph_extraction_strict_support_transfer_corollary.py"
+    },
+    {
+      "old_path": "verify_graph_extraction_top_two_port_synchronization_observability_boundary.py",
+      "new_path": "claims/arbitrary-order/verify_graph_extraction_top_two_port_synchronization_observability_boundary.py"
+    },
+    {
+      "old_path": "verify_hafnian_convolution_split.py",
+      "new_path": "claims/arbitrary-order/verify_hafnian_convolution_split.py"
+    },
+    {
+      "old_path": "verify_hafnian_principal_cofactor_gradient_dominance.py",
+      "new_path": "claims/arbitrary-order/verify_hafnian_principal_cofactor_gradient_dominance.py"
+    },
+    {
+      "old_path": "verify_higher_residual_permanental_tomography_nested_cofactor_stress_and_cumulant_interface.py",
+      "new_path": "claims/arbitrary-order/verify_higher_residual_permanental_tomography_nested_cofactor_stress_and_cumulant_interface.py"
+    },
+    {
+      "old_path": "verify_integer_signed_lattice_transport.py",
+      "new_path": "claims/arbitrary-order/verify_integer_signed_lattice_transport.py"
+    },
+    {
+      "old_path": "verify_minimal_singleton_circuit_rectangle_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_minimal_singleton_circuit_rectangle_theorem.py"
+    },
+    {
+      "old_path": "verify_multi_star_blocker_factorisation.py",
+      "new_path": "claims/arbitrary-order/verify_multi_star_blocker_factorisation.py"
+    },
+    {
+      "old_path": "verify_odd_full_factor_one_term_mechanism.py",
+      "new_path": "claims/arbitrary-order/verify_odd_full_factor_one_term_mechanism.py"
+    },
+    {
+      "old_path": "verify_odd_residual_port_permanent_extraction.py",
+      "new_path": "claims/arbitrary-order/verify_odd_residual_port_permanent_extraction.py"
+    },
+    {
+      "old_path": "verify_one_nonblocker_surplus_permanent_extraction.py",
+      "new_path": "claims/arbitrary-order/verify_one_nonblocker_surplus_permanent_extraction.py"
+    },
+    {
+      "old_path": "verify_p6_arbitrary_fibre_axis_port_defect_and_two_colour_gram_escape.py",
+      "new_path": "claims/p6/verify_p6_arbitrary_fibre_axis_port_defect_and_two_colour_gram_escape.py"
+    },
+    {
+      "old_path": "verify_p6_axis_complement_sum_covariant_offdiagonal_and_gauge_no_go.py",
+      "new_path": "claims/p6/verify_p6_axis_complement_sum_covariant_offdiagonal_and_gauge_no_go.py"
+    },
+    {
+      "old_path": "verify_p6_clean_two_by_three_selector_segre_pullback_and_torus_permission.py",
+      "new_path": "claims/p6/verify_p6_clean_two_by_three_selector_segre_pullback_and_torus_permission.py"
+    },
+    {
+      "old_path": "verify_p6_common_port_111_all_gate_covers_obstruction.py",
+      "new_path": "claims/p6/verify_p6_common_port_111_all_gate_covers_obstruction.py"
+    },
+    {
+      "old_path": "verify_p6_common_port_111_frobenius_reduction.py",
+      "new_path": "claims/p6/verify_p6_common_port_111_frobenius_reduction.py"
+    },
+    {
+      "old_path": "verify_p6_common_port_111_rank_five_catalecticant.py",
+      "new_path": "claims/p6/verify_p6_common_port_111_rank_five_catalecticant.py"
+    },
+    {
+      "old_path": "verify_p6_common_port_111_unique_four_gate_obstruction.py",
+      "new_path": "claims/p6/verify_p6_common_port_111_unique_four_gate_obstruction.py"
+    },
+    {
+      "old_path": "verify_p6_four_root_full_h4_sensor_and_target_incidence_boundary.py",
+      "new_path": "claims/p6/verify_p6_four_root_full_h4_sensor_and_target_incidence_boundary.py"
+    },
+    {
+      "old_path": "verify_p6_physical_six_face_hafnian_section_four_deck_synchronization_and_segre_sharpness.py",
+      "new_path": "claims/p6/verify_p6_physical_six_face_hafnian_section_four_deck_synchronization_and_segre_sharpness.py"
+    },
+    {
+      "old_path": "verify_p6_projectively_constant_source_row_obstruction.py",
+      "new_path": "claims/p6/verify_p6_projectively_constant_source_row_obstruction.py"
+    },
+    {
+      "old_path": "verify_p6_simultaneous_kernel_and_natural_lift.py",
+      "new_path": "claims/p6/verify_p6_simultaneous_kernel_and_natural_lift.py"
+    },
+    {
+      "old_path": "verify_p6_tau_zero_singular_gram_tetrad_support_and_four_plus_two_no_go.py",
+      "new_path": "claims/p6/verify_p6_tau_zero_singular_gram_tetrad_support_and_four_plus_two_no_go.py"
+    },
+    {
+      "old_path": "verify_p6_two_shore_hyperbolic_scalar_fibre_axis_defect_and_four_plus_two_transfer.py",
+      "new_path": "claims/p6/verify_p6_two_shore_hyperbolic_scalar_fibre_axis_defect_and_four_plus_two_transfer.py"
+    },
+    {
+      "old_path": "verify_p7_221_aligned_core_degree3_three_face_nullstellensatz_obstruction.py",
+      "new_path": "claims/p7/verify_p7_221_aligned_core_degree3_three_face_nullstellensatz_obstruction.py"
+    },
+    {
+      "old_path": "verify_p7_221_aligned_core_degree5_affine_completion.py",
+      "new_path": "claims/p7/verify_p7_221_aligned_core_degree5_affine_completion.py"
+    },
+    {
+      "old_path": "verify_p7_221_all_pair_incidence_quotient_binary_coherence.py",
+      "new_path": "claims/p7/verify_p7_221_all_pair_incidence_quotient_binary_coherence.py"
+    },
+    {
+      "old_path": "verify_p7_221_arbitrary_alignment_degree5_rectangle_obstruction.py",
+      "new_path": "claims/p7/verify_p7_221_arbitrary_alignment_degree5_rectangle_obstruction.py"
+    },
+    {
+      "old_path": "verify_p7_221_common_terminal_block_scalar_hafnian_realizability.py",
+      "new_path": "claims/p7/verify_p7_221_common_terminal_block_scalar_hafnian_realizability.py"
+    },
+    {
+      "old_path": "verify_p7_221_degree5_incidence_quotient_rectangle_flattening.py",
+      "new_path": "claims/p7/verify_p7_221_degree5_incidence_quotient_rectangle_flattening.py"
+    },
+    {
+      "old_path": "verify_p7_221_diagonal_block_gluing_and_mixed_word_boundary.py",
+      "new_path": "claims/p7/verify_p7_221_diagonal_block_gluing_and_mixed_word_boundary.py"
+    },
+    {
+      "old_path": "verify_p7_221_extremal_rank_six_disjoint_support_degree3_hafnian_obstruction.py",
+      "new_path": "claims/p7/verify_p7_221_extremal_rank_six_disjoint_support_degree3_hafnian_obstruction.py"
+    },
+    {
+      "old_path": "verify_p7_221_face_specific_quotient_mayer_vietoris_and_sharp_lift.py",
+      "new_path": "claims/p7/verify_p7_221_face_specific_quotient_mayer_vietoris_and_sharp_lift.py"
+    },
+    {
+      "old_path": "verify_p7_221_fixed_diagonal_lift_degree5_mixed_circuit_obstruction.py",
+      "new_path": "claims/p7/verify_p7_221_fixed_diagonal_lift_degree5_mixed_circuit_obstruction.py"
+    },
+    {
+      "old_path": "verify_p7_221_formal_ledger_scalar_hafnian_realizability_and_synchronization_gap.py",
+      "new_path": "claims/p7/verify_p7_221_formal_ledger_scalar_hafnian_realizability_and_synchronization_gap.py"
+    },
+    {
+      "old_path": "verify_p7_221_four_face_binary_ghz_physical_countermodel.py",
+      "new_path": "claims/p7/verify_p7_221_four_face_binary_ghz_physical_countermodel.py"
+    },
+    {
+      "old_path": "verify_p7_221_jet_orthogonal_splice_and_formal_fixed_window_no_go.py",
+      "new_path": "claims/p7/verify_p7_221_jet_orthogonal_splice_and_formal_fixed_window_no_go.py"
+    },
+    {
+      "old_path": "verify_p7_221_overlapping_rank_six_support_classification_and_p3k2_cubic_obstruction.py",
+      "new_path": "claims/p7/verify_p7_221_overlapping_rank_six_support_classification_and_p3k2_cubic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p7_221_tensor_coefficient_wick_deconvolution_two_face_localization.py",
+      "new_path": "claims/p7/verify_p7_221_tensor_coefficient_wick_deconvolution_two_face_localization.py"
+    },
+    {
+      "old_path": "verify_p7_221_three_mode_residual_annihilation_and_full_quotient_rank_sum_bound.py",
+      "new_path": "claims/p7/verify_p7_221_three_mode_residual_annihilation_and_full_quotient_rank_sum_bound.py"
+    },
+    {
+      "old_path": "verify_p7_221_tricolour_incidence_quotient_projective_support.py",
+      "new_path": "claims/p7/verify_p7_221_tricolour_incidence_quotient_projective_support.py"
+    },
+    {
+      "old_path": "verify_p7_combined_shallow_deck_double_star_gauge.py",
+      "new_path": "claims/p7/verify_p7_combined_shallow_deck_double_star_gauge.py"
+    },
+    {
+      "old_path": "verify_p7_complete_four_face_null_stratum_and_paired_depth_sharpness.py",
+      "new_path": "claims/p7/verify_p7_complete_four_face_null_stratum_and_paired_depth_sharpness.py"
+    },
+    {
+      "old_path": "verify_p7_cross_depth_hafnian_derivative_and_projective_marked_star_boundary.py",
+      "new_path": "claims/p7/verify_p7_cross_depth_hafnian_derivative_and_projective_marked_star_boundary.py"
+    },
+    {
+      "old_path": "verify_p7_deletion_cube_observability_and_clean_window_boundary.py",
+      "new_path": "claims/p7/verify_p7_deletion_cube_observability_and_clean_window_boundary.py"
+    },
+    {
+      "old_path": "verify_p7_five_root_two_fan_sharing_and_shared_root_veronese_transversality.py",
+      "new_path": "claims/p7/verify_p7_five_root_two_fan_sharing_and_shared_root_veronese_transversality.py"
+    },
+    {
+      "old_path": "verify_p7_fixed_complement_laplace_fan_cover_and_lower_frame_separation.py",
+      "new_path": "claims/p7/verify_p7_fixed_complement_laplace_fan_cover_and_lower_frame_separation.py"
+    },
+    {
+      "old_path": "verify_p7_four_clean_window_tetrahedral_pair_tomography.py",
+      "new_path": "claims/p7/verify_p7_four_clean_window_tetrahedral_pair_tomography.py"
+    },
+    {
+      "old_path": "verify_p7_full_mixed_root_219_label_sensor_and_pinned_star_gating_boundary.py",
+      "new_path": "claims/p7/verify_p7_full_mixed_root_219_label_sensor_and_pinned_star_gating_boundary.py"
+    },
+    {
+      "old_path": "verify_p7_ghz_null_fan_dual_wick_defect_and_singleton_depth_separation.py",
+      "new_path": "claims/p7/verify_p7_ghz_null_fan_dual_wick_defect_and_singleton_depth_separation.py"
+    },
+    {
+      "old_path": "verify_p7_leaf_apolar_gorenstein_hilbert_resonance_and_essential_syzygy.py",
+      "new_path": "claims/p7/verify_p7_leaf_apolar_gorenstein_hilbert_resonance_and_essential_syzygy.py"
+    },
+    {
+      "old_path": "verify_p7_legal_endpoint_torus_covariance_and_affine_line_normalization.py",
+      "new_path": "claims/p7/verify_p7_legal_endpoint_torus_covariance_and_affine_line_normalization.py"
+    },
+    {
+      "old_path": "verify_p7_legal_local_basis_border_ghz_intersection_and_single_flip_transversality.py",
+      "new_path": "claims/p7/verify_p7_legal_local_basis_border_ghz_intersection_and_single_flip_transversality.py"
+    },
+    {
+      "old_path": "verify_p7_legal_nonroot_switching_covariance_and_uniform_curve_secant_saturation.py",
+      "new_path": "claims/p7/verify_p7_legal_nonroot_switching_covariance_and_uniform_curve_secant_saturation.py"
+    },
+    {
+      "old_path": "verify_p7_mixed_color_pair_circuit_and_axis_jet_boundary.py",
+      "new_path": "claims/p7/verify_p7_mixed_color_pair_circuit_and_axis_jet_boundary.py"
+    },
+    {
+      "old_path": "verify_p7_physical_extension_boolean_square_projective_stationarity.py",
+      "new_path": "claims/p7/verify_p7_physical_extension_boolean_square_projective_stationarity.py"
+    },
+    {
+      "old_path": "verify_p7_physical_extension_mixed_hard_lefschetz_sign_chamber_and_one_exceptional_orbit.py",
+      "new_path": "claims/p7/verify_p7_physical_extension_mixed_hard_lefschetz_sign_chamber_and_one_exceptional_orbit.py"
+    },
+    {
+      "old_path": "verify_p7_physical_extension_two_level_star_orbit_complete_exclusion.py",
+      "new_path": "claims/p7/verify_p7_physical_extension_two_level_star_orbit_complete_exclusion.py"
+    },
+    {
+      "old_path": "verify_p7_physical_leaf_annihilator_extension_and_quotient_syzygy.py",
+      "new_path": "claims/p7/verify_p7_physical_leaf_annihilator_extension_and_quotient_syzygy.py"
+    },
+    {
+      "old_path": "verify_p7_physical_mixed_kernel_boolean_down_descent.py",
+      "new_path": "claims/p7/verify_p7_physical_mixed_kernel_boolean_down_descent.py"
+    },
+    {
+      "old_path": "verify_p7_physical_mixed_kernel_exceptional_wall_graph.py",
+      "new_path": "claims/p7/verify_p7_physical_mixed_kernel_exceptional_wall_graph.py"
+    },
+    {
+      "old_path": "verify_p7_pinned_h4_torus_support_five_binary_quadratic_exclusion.py",
+      "new_path": "claims/p7/verify_p7_pinned_h4_torus_support_five_binary_quadratic_exclusion.py"
+    },
+    {
+      "old_path": "verify_p7_pinned_h4_torus_support_seven_boolean_lefschetz_exclusion.py",
+      "new_path": "claims/p7/verify_p7_pinned_h4_torus_support_seven_boolean_lefschetz_exclusion.py"
+    },
+    {
+      "old_path": "verify_p7_pinned_h4_torus_support_six_reciprocal_polarization_exclusion.py",
+      "new_path": "claims/p7/verify_p7_pinned_h4_torus_support_six_reciprocal_polarization_exclusion.py"
+    },
+    {
+      "old_path": "verify_p7_primitive_additive_gauge_rigidity_and_coordinate_boundary.py",
+      "new_path": "claims/p7/verify_p7_primitive_additive_gauge_rigidity_and_coordinate_boundary.py"
+    },
+    {
+      "old_path": "verify_p7_primitive_boolean_square_dual_triangle_star_normal_form.py",
+      "new_path": "claims/p7/verify_p7_primitive_boolean_square_dual_triangle_star_normal_form.py"
+    },
+    {
+      "old_path": "verify_p7_primitive_boolean_square_quotient_hessian_corank_and_tomography.py",
+      "new_path": "claims/p7/verify_p7_primitive_boolean_square_quotient_hessian_corank_and_tomography.py"
+    },
+    {
+      "old_path": "verify_p7_primitive_boolean_square_star_closure_discriminant.py",
+      "new_path": "claims/p7/verify_p7_primitive_boolean_square_star_closure_discriminant.py"
+    },
+    {
+      "old_path": "verify_p7_primitive_complement_radial_and_exceptional_clique.py",
+      "new_path": "claims/p7/verify_p7_primitive_complement_radial_and_exceptional_clique.py"
+    },
+    {
+      "old_path": "verify_p7_primitive_quotient_singular_apolar_radial_bilinear_incidence.py",
+      "new_path": "claims/p7/verify_p7_primitive_quotient_singular_apolar_radial_bilinear_incidence.py"
+    },
+    {
+      "old_path": "verify_p7_primitive_zeon_harmonic_square_riccati.py",
+      "new_path": "claims/p7/verify_p7_primitive_zeon_harmonic_square_riccati.py"
+    },
+    {
+      "old_path": "verify_p7_pure_chart_fifth_compound_fibre_dichotomy_and_singular_escape.py",
+      "new_path": "claims/p7/verify_p7_pure_chart_fifth_compound_fibre_dichotomy_and_singular_escape.py"
+    },
+    {
+      "old_path": "verify_p7_residual_null_incidence_canonical_profile_sharpness.py",
+      "new_path": "claims/p7/verify_p7_residual_null_incidence_canonical_profile_sharpness.py"
+    },
+    {
+      "old_path": "verify_p7_residual_null_polar_selector_h0_theorem.py",
+      "new_path": "claims/p7/verify_p7_residual_null_polar_selector_h0_theorem.py"
+    },
+    {
+      "old_path": "verify_p7_root_budget_dual_wick_observability_and_quartic_escape.py",
+      "new_path": "claims/p7/verify_p7_root_budget_dual_wick_observability_and_quartic_escape.py"
+    },
+    {
+      "old_path": "verify_p7_selector_matroid_rank_cooccurrence_and_top_projection_boundary.py",
+      "new_path": "claims/p7/verify_p7_selector_matroid_rank_cooccurrence_and_top_projection_boundary.py"
+    },
+    {
+      "old_path": "verify_p7_seven_core_bosonic_compound_first_third_jet_boundary.py",
+      "new_path": "claims/p7/verify_p7_seven_core_bosonic_compound_first_third_jet_boundary.py"
+    },
+    {
+      "old_path": "verify_p7_strict_two_endpoint_synchronized_top_face_and_shore_line_boundary.py",
+      "new_path": "claims/p7/verify_p7_strict_two_endpoint_synchronized_top_face_and_shore_line_boundary.py"
+    },
+    {
+      "old_path": "verify_p7_structured_cubic_boolean_lefschetz_transport_and_middle_hessian_vanishing.py",
+      "new_path": "claims/p7/verify_p7_structured_cubic_boolean_lefschetz_transport_and_middle_hessian_vanishing.py"
+    },
+    {
+      "old_path": "verify_p7_synchronized_two_depth_polar_selector_and_aligned_resonance_boundary.py",
+      "new_path": "claims/p7/verify_p7_synchronized_two_depth_polar_selector_and_aligned_resonance_boundary.py"
+    },
+    {
+      "old_path": "verify_p7_target_incidence_determinant_cleared_hafnian_integrability.py",
+      "new_path": "claims/p7/verify_p7_target_incidence_determinant_cleared_hafnian_integrability.py"
+    },
+    {
+      "old_path": "verify_p7_target_line_h0_pair_projection_pentad_and_star_alignment.py",
+      "new_path": "claims/p7/verify_p7_target_line_h0_pair_projection_pentad_and_star_alignment.py"
+    },
+    {
+      "old_path": "verify_p7_three_clean_window_pair_face_recovery_no_go.py",
+      "new_path": "claims/p7/verify_p7_three_clean_window_pair_face_recovery_no_go.py"
+    },
+    {
+      "old_path": "verify_p7_two_endpoint_axis_multiplicity_reduction_and_221_common_jet_model.py",
+      "new_path": "claims/p7/verify_p7_two_endpoint_axis_multiplicity_reduction_and_221_common_jet_model.py"
+    },
+    {
+      "old_path": "verify_p7_vacuum_free_dual_wick_projectivization_and_empty_scalar_escape.py",
+      "new_path": "claims/p7/verify_p7_vacuum_free_dual_wick_projectivization_and_empty_scalar_escape.py"
+    },
+    {
+      "old_path": "verify_partial_minimal_singleton_circuit_dichotomy.py",
+      "new_path": "claims/arbitrary-order/verify_partial_minimal_singleton_circuit_dichotomy.py"
+    },
+    {
+      "old_path": "verify_reciprocal_port_orientation.py",
+      "new_path": "claims/arbitrary-order/verify_reciprocal_port_orientation.py"
+    },
+    {
+      "old_path": "verify_residual_hafnian_common_cofactor_gram.py",
+      "new_path": "claims/arbitrary-order/verify_residual_hafnian_common_cofactor_gram.py"
+    },
+    {
+      "old_path": "verify_residual_hafnian_common_gram_audit_and_torus_zero_full_rank_sharpness.py",
+      "new_path": "claims/arbitrary-order/verify_residual_hafnian_common_gram_audit_and_torus_zero_full_rank_sharpness.py"
+    },
+    {
+      "old_path": "verify_residual_hafnian_hessian_kneser_etale_and_jet_integrability.py",
+      "new_path": "claims/arbitrary-order/verify_residual_hafnian_hessian_kneser_etale_and_jet_integrability.py"
+    },
+    {
+      "old_path": "verify_residual_hafnian_torus_zero_full_rank_cofactor_boundary.py",
+      "new_path": "claims/arbitrary-order/verify_residual_hafnian_torus_zero_full_rank_cofactor_boundary.py"
+    },
+    {
+      "old_path": "verify_response_jet_principal_deletion_deck_and_root_parity_legality.py",
+      "new_path": "claims/arbitrary-order/verify_response_jet_principal_deletion_deck_and_root_parity_legality.py"
+    },
+    {
+      "old_path": "verify_root_m7_all_endpoint_legal_three_incidence_supports_exclusion.py",
+      "new_path": "claims/arbitrary-order/verify_root_m7_all_endpoint_legal_three_incidence_supports_exclusion.py"
+    },
+    {
+      "old_path": "verify_root_m7_cofactor_quotient_wedge_invariant.py",
+      "new_path": "claims/arbitrary-order/verify_root_m7_cofactor_quotient_wedge_invariant.py"
+    },
+    {
+      "old_path": "verify_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py",
+      "new_path": "claims/arbitrary-order/verify_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py"
+    },
+    {
+      "old_path": "verify_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py",
+      "new_path": "claims/arbitrary-order/verify_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py"
+    },
+    {
+      "old_path": "verify_root_m7_four_root_hidden_pair_cofactor_theorem.py",
+      "new_path": "claims/arbitrary-order/verify_root_m7_four_root_hidden_pair_cofactor_theorem.py"
+    },
+    {
+      "old_path": "verify_root_m7_hall_satisfying_two_port_pure_p7_construction.py",
+      "new_path": "claims/arbitrary-order/verify_root_m7_hall_satisfying_two_port_pure_p7_construction.py"
+    },
+    {
+      "old_path": "verify_root_m7_hirota_hidden_overlay_surjectivity_nogo.py",
+      "new_path": "claims/arbitrary-order/verify_root_m7_hirota_hidden_overlay_surjectivity_nogo.py"
+    },
+    {
+      "old_path": "verify_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py",
+      "new_path": "claims/arbitrary-order/verify_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py"
+    },
+    {
+      "old_path": "verify_root_m7_relative_triple_fourth_incidence_shell_exclusion.py",
+      "new_path": "claims/arbitrary-order/verify_root_m7_relative_triple_fourth_incidence_shell_exclusion.py"
+    },
+    {
+      "old_path": "verify_root_m7_simultaneous_rank_one_hidden_pair_realization_nogo.py",
+      "new_path": "claims/arbitrary-order/verify_root_m7_simultaneous_rank_one_hidden_pair_realization_nogo.py"
+    },
+    {
+      "old_path": "verify_root_m7_symbolic_route_boundary_theorems.py",
+      "new_path": "claims/arbitrary-order/verify_root_m7_symbolic_route_boundary_theorems.py"
+    },
+    {
+      "old_path": "verify_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py",
+      "new_path": "claims/arbitrary-order/verify_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py"
+    },
+    {
+      "old_path": "verify_root_m7_three_port_pressure_enlargement_shared_factor_obstruction.py",
+      "new_path": "claims/arbitrary-order/verify_root_m7_three_port_pressure_enlargement_shared_factor_obstruction.py"
+    },
+    {
+      "old_path": "verify_root_m7_unique_pair_third_incidence_shell_exclusion.py",
+      "new_path": "claims/arbitrary-order/verify_root_m7_unique_pair_third_incidence_shell_exclusion.py"
+    },
+    {
+      "old_path": "verify_root_of_unity_block_permanent_selector.py",
+      "new_path": "claims/arbitrary-order/verify_root_of_unity_block_permanent_selector.py"
+    },
+    {
+      "old_path": "verify_root_of_unity_selector_symmetric_hafnian_lift.py",
+      "new_path": "claims/arbitrary-order/verify_root_of_unity_selector_symmetric_hafnian_lift.py"
+    },
+    {
+      "old_path": "verify_root_tangent_companion_necessity_for_coordinate_slice.py",
+      "new_path": "claims/arbitrary-order/verify_root_tangent_companion_necessity_for_coordinate_slice.py"
+    },
+    {
+      "old_path": "verify_root_tangent_cycle_frame_symmetry_realization.py",
+      "new_path": "claims/arbitrary-order/verify_root_tangent_cycle_frame_symmetry_realization.py"
+    },
+    {
+      "old_path": "verify_root_tangent_minimal_cycle_idempotent_second_third_jet_classification.py",
+      "new_path": "claims/arbitrary-order/verify_root_tangent_minimal_cycle_idempotent_second_third_jet_classification.py"
+    },
+    {
+      "old_path": "verify_root_tangent_minimal_cycle_second_jet_obstruction.py",
+      "new_path": "claims/arbitrary-order/verify_root_tangent_minimal_cycle_second_jet_obstruction.py"
+    },
+    {
+      "old_path": "verify_six_blocker_admissible_quotient_catalogue.py",
+      "new_path": "claims/arbitrary-order/verify_six_blocker_admissible_quotient_catalogue.py"
+    },
+    {
+      "old_path": "verify_six_blocker_arbitrary_cofactor_projectively_constant_row_obstruction.py",
+      "new_path": "claims/arbitrary-order/verify_six_blocker_arbitrary_cofactor_projectively_constant_row_obstruction.py"
+    },
+    {
+      "old_path": "verify_six_blocker_hafnian_polar_cubic_condensation_no_go.py",
+      "new_path": "claims/arbitrary-order/verify_six_blocker_hafnian_polar_cubic_condensation_no_go.py"
+    },
+    {
+      "old_path": "verify_six_blocker_maximal_overlap_ghz_hypercube.py",
+      "new_path": "claims/arbitrary-order/verify_six_blocker_maximal_overlap_ghz_hypercube.py"
+    },
+    {
+      "old_path": "verify_six_blocker_maximal_overlap_port_swap_collapse.py",
+      "new_path": "claims/arbitrary-order/verify_six_blocker_maximal_overlap_port_swap_collapse.py"
+    },
+    {
+      "old_path": "verify_six_blocker_nonzero_cross_port_freedom.py",
+      "new_path": "claims/arbitrary-order/verify_six_blocker_nonzero_cross_port_freedom.py"
+    },
+    {
+      "old_path": "verify_six_blocker_order12_isotropic_p6_curve.py",
+      "new_path": "claims/arbitrary-order/verify_six_blocker_order12_isotropic_p6_curve.py"
+    },
+    {
+      "old_path": "verify_six_blocker_order12_kernel_support_cover_no_torus_p6.py",
+      "new_path": "claims/arbitrary-order/verify_six_blocker_order12_kernel_support_cover_no_torus_p6.py"
+    },
+    {
+      "old_path": "verify_six_blocker_order12_nonzero_diagonal_cofactor_no_torus_p6.py",
+      "new_path": "claims/arbitrary-order/verify_six_blocker_order12_nonzero_diagonal_cofactor_no_torus_p6.py"
+    },
+    {
+      "old_path": "verify_six_blocker_order12_quotient_rank_frame_classification.py",
+      "new_path": "claims/arbitrary-order/verify_six_blocker_order12_quotient_rank_frame_classification.py"
+    },
+    {
+      "old_path": "verify_six_blocker_order12_three_kernel_pure_cofactor_compatibility_obstruction.py",
+      "new_path": "claims/arbitrary-order/verify_six_blocker_order12_three_kernel_pure_cofactor_compatibility_obstruction.py"
+    },
+    {
+      "old_path": "verify_six_blocker_order12_zero_quotient_cofactor_syzygy.py",
+      "new_path": "claims/arbitrary-order/verify_six_blocker_order12_zero_quotient_cofactor_syzygy.py"
+    },
+    {
+      "old_path": "verify_six_blocker_order12_zero_quotient_core_no_concise_p6.py",
+      "new_path": "claims/arbitrary-order/verify_six_blocker_order12_zero_quotient_core_no_concise_p6.py"
+    },
+    {
+      "old_path": "verify_support_four_p5_contraction_restriction.py",
+      "new_path": "claims/arbitrary-order/verify_support_four_p5_contraction_restriction.py"
+    },
+    {
+      "old_path": "verify_support_three_p5_contraction_subrank.py",
+      "new_path": "claims/arbitrary-order/verify_support_three_p5_contraction_subrank.py"
+    },
+    {
+      "old_path": "verify_three_colour_balanced_bridge_intersection.py",
+      "new_path": "claims/arbitrary-order/verify_three_colour_balanced_bridge_intersection.py"
+    },
+    {
+      "old_path": "verify_three_colour_blocker_union.py",
+      "new_path": "claims/arbitrary-order/verify_three_colour_blocker_union.py"
+    },
+    {
+      "old_path": "verify_three_colour_diagonal_matching_balance.py",
+      "new_path": "claims/arbitrary-order/verify_three_colour_diagonal_matching_balance.py"
+    },
+    {
+      "old_path": "verify_two_port_seven_blocker_reduction.py",
+      "new_path": "claims/arbitrary-order/verify_two_port_seven_blocker_reduction.py"
+    },
+    {
+      "old_path": "verify_two_residual_coordinate_monomial_slice_universality_nogo.py",
+      "new_path": "claims/arbitrary-order/verify_two_residual_coordinate_monomial_slice_universality_nogo.py"
+    },
+    {
+      "old_path": "verify_two_residual_nonblocker_two_port_factorisation.py",
+      "new_path": "claims/arbitrary-order/verify_two_residual_nonblocker_two_port_factorisation.py"
+    },
+    {
+      "old_path": "verify_universal_five_blocker_divisibility.py",
+      "new_path": "claims/arbitrary-order/verify_universal_five_blocker_divisibility.py"
+    }
+  ],
+  "rationale": "Stage 27: migrate the exact independently reviewed 587-file high-order symbolic ownership forest (arbitrary-order, P6, P7, asymmetric evidence leaves, and a minimal bounded tool taper) so theorem/evidence packages remain coherent while reducing repository-root debt.",
+  "notes": "Exact mapping reviewed by Codex under the repository-owner standing delegation dated 2026-08-08. Preserve every theorem scope, partial/correction/lifecycle label, asymmetric evidence surface, finite-field corroboration boundary, tool-only role, the exclusion and unadjudicated status of all four owner-gated conflicts, arbitrary P7/local-to-global UNKNOWN, and global Krenn-Gu UNRESOLVED. Execute only with the repair inventory and validation contract frozen in docs/architecture/high-order-symbolic-forest-stage27-dry-run.md."
+}

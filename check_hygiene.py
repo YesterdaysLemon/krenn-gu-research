@@ -117,10 +117,10 @@ KNOWN_DANGLING_SCRIPTS = {
 
 FAST_VERIFIERS = [
     "verify_q2_n6_k4_d4_construction.py",
-    "verify_four_blocker_ideal_obstruction.py",
-    "verify_fourth_order_permanent_subrank.py",
-    "verify_exact_three_blocker_permanent_rank.py",
-    "verify_support_three_p5_contraction_subrank.py",
+    "claims/arbitrary-order/verify_four_blocker_ideal_obstruction.py",
+    "claims/arbitrary-order/verify_fourth_order_permanent_subrank.py",
+    "claims/arbitrary-order/verify_exact_three_blocker_permanent_rank.py",
+    "claims/arbitrary-order/verify_support_three_p5_contraction_subrank.py",
 ]
 
 SCRIPT_REF = re.compile(

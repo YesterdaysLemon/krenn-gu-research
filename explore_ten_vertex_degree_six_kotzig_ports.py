@@ -216,6 +216,8 @@ def main() -> None:
         "--theorem",
         type=Path,
         default=Path(
+            "claims",
+            "arbitrary-order",
             "THREE_COLOUR_DIAGONAL_MATCHING_BALANCE_THEOREM.md"
         ),
     )

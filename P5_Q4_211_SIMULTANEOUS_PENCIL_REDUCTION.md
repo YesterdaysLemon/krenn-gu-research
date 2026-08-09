@@ -339,7 +339,7 @@ see
 ## The known support-four family is transverse
 
 Apply (13) to the four integer maps in
-[`SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md`](SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md).
+[`SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md`](claims/arbitrary-order/SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md).
 Exact row reduction gives
 
 ```text

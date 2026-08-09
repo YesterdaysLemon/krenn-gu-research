@@ -352,7 +352,7 @@ one postselected sector.  A useful identity must eliminate the
 unobserved sectors; otherwise this language is only a reformulation.
 
 The root-of-unity block selector in
-[`ROOT_OF_UNITY_BLOCK_PERMANENT_SELECTOR.md`](ROOT_OF_UNITY_BLOCK_PERMANENT_SELECTOR.md)
+[`ROOT_OF_UNITY_BLOCK_PERMANENT_SELECTOR.md`](claims/arbitrary-order/ROOT_OF_UNITY_BLOCK_PERMANENT_SELECTOR.md)
 now supplies one exact postselection-safe filter.  In the commuting
 square-zero algebra it cancels every permanent term selecting rows from
 more than one prescribed block while retaining every within-block minor
@@ -417,7 +417,7 @@ independently over `Q` and `Q(omega)`.  The isolated seed now also has an exact
 eight-vertex loopless symmetric lift: all 105 full graph matchings are
 included, exactly 24 bipartite terms survive, and the constant columns arise
 from ordinary fixed `d=4` herald modes.  See
-[`ROOT_OF_UNITY_SELECTOR_SYMMETRIC_HAFNIAN_LIFT.md`](ROOT_OF_UNITY_SELECTOR_SYMMETRIC_HAFNIAN_LIFT.md).
+[`ROOT_OF_UNITY_SELECTOR_SYMMETRIC_HAFNIAN_LIFT.md`](claims/arbitrary-order/ROOT_OF_UNITY_SELECTOR_SYMMETRIC_HAFNIAN_LIFT.md).
 
 The resulting boundary is sharper.  If the entire left side is fixed, every
 completion on the four live right modes is a local restriction of `P_4`, so

@@ -25,7 +25,7 @@
 #
 # Build:  docker build -t kg-symbolic -f Containerfile .
 # Use:    docker run --rm -v "$PWD":/work -w /work kg-symbolic \
-#             python3 verify_support_three_p5_contraction_subrank.py
+#             python3 claims/arbitrary-order/verify_support_three_p5_contraction_subrank.py
 FROM ubuntu:24.04
 
 ENV DEBIAN_FRONTEND=noninteractive

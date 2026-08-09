@@ -139,7 +139,7 @@ the arbitrary-order classification.
 
 The restriction `|I|>=2` is deliberate.  The singleton derivative has rank
 two and its quotient-frame rigidity is already proved in
-[`ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md`](ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md).
+[`ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md`](claims/arbitrary-order/ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md).
 
 ## The full-jet sharpness construction fails the first lower two-root value
 

@@ -130,6 +130,6 @@ coordinate or target colour, and singleton rows chosen in different
 modes need not use different source coordinates.  There are 68 orbits
 of five singleton placements under source, mode, and target-colour
 symmetry.  The later
-[`FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md`](FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md)
+[`FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md`](claims/arbitrary-order/FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md)
 refines each local map into three geometric strata; the exact permanent
 cancellation equations across the five modes remain.

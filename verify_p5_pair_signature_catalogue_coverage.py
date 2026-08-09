@@ -8,19 +8,28 @@ import importlib.util
 import itertools
 import json
 import pathlib
+import sys
 from fractions import Fraction
 
 from pysat.formula import CNF, IDPool
 from pysat.solvers import Solver
 
 
-ROOT = pathlib.Path(__file__).resolve().parent
-import sys
+for _p in pathlib.Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
-sys.path.insert(0, str(ROOT))
+REPO_ROOT, ROOT = bootstrap(__file__)
 from integer_constant_lattice import IntegerConstantLattice  # noqa: E402
 
-NORMAL_PATH = ROOT / "audit_five_row_projective_normal_forms.py"
+NORMAL_PATH = (
+    REPO_ROOT
+    / "claims"
+    / "arbitrary-order"
+    / "audit_five_row_projective_normal_forms.py"
+)
 SPEC = importlib.util.spec_from_file_location("normal_audit", NORMAL_PATH)
 NORMAL = importlib.util.module_from_spec(SPEC)
 assert SPEC.loader is not None
