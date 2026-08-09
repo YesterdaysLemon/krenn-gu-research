@@ -7,7 +7,7 @@ Starting commit: `f6d2cc426c05d99fcff08ddb1c95f3f1481a373a` (tag `pre-layout-mig
 - total tracked entries: **2500**
 - root-level files: **2363** (+ 3 directories = 2366 entries, GitHub truncates at 1,000)
 - classified by rules: **2015** ({'medium': 1179, 'low': 426, 'high': 410})
-- unclassified (need human decision): **348**
+- unclassified (need authorized ownership review): **348**
 
 ## Root files by extension
 

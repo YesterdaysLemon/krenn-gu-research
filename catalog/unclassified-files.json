@@ -1,6 +1,6 @@
 {
   "unclassified_count": 348,
-  "note": "no rule classified these files; each needs an explicit human decision",
+  "note": "no rule classified these files; each needs authorized ownership review",
   "files": [
     ".gitignore",
     "BLOCK_SQUARE_ZERO_WICK_COMPLETION_THEOREM.md",

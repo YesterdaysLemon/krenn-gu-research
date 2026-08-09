@@ -12,7 +12,8 @@ Classification is deliberately conservative: every proposed move lists
 its evidence (filename family, theorem-ledger entry, matching
 verify/audit triple, import-graph role).  A file is only classified by
 a rule; anything no rule covers is reported as unclassified and stays
-put until a human decides.  No file is moved by this tool.
+put until authorized ownership review resolves it.  No file is moved by
+this tool.
 """
 
 from __future__ import annotations
@@ -292,7 +293,8 @@ def classify(rel: str, ctx: dict) -> dict | None:
 
     # Status-marker documents.  A filename is a triage signal, not ownership.
     # Only an unambiguous all-withdrawn ledger surface gets high confidence;
-    # every filename-only or conflicting case requires human review.
+    # every filename-only or conflicting case requires owner
+    # proof-boundary review.
     if ext == ".md" and WITHDRAWN_RE.search(name):
         all_withdrawn = ledger_statuses == {"withdrawn"}
         return {"old_path": rel,
@@ -303,7 +305,7 @@ def classify(rel: str, ctx: dict) -> dict | None:
                 "evidence": ["filename WITHDRAWN marker",
                              "all ledger claims withdrawn" if all_withdrawn
                              else "ledger surface absent, mixed, or not all "
-                                  "withdrawn; human proof-boundary review "
+                                  "withdrawn; owner proof-boundary review "
                                   "required"]}
 
     # Withdrawn claims go to legacy.  Superseded documents stay with
@@ -758,7 +760,7 @@ def main() -> int:
     (CATALOG / "unclassified-files.json").write_text(
         json.dumps({"unclassified_count": len(unclassified),
                     "note": "no rule classified these files; each needs "
-                            "an explicit human decision",
+                            "authorized ownership review",
                     "files": unclassified},
                    indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8")
@@ -775,7 +777,7 @@ def main() -> int:
               "GitHub truncates at 1,000)")
     md.append(f"- classified by rules: **{len(classified)}** "
               f"({dict(conf_counts)})")
-    md.append(f"- unclassified (need human decision): "
+    md.append(f"- unclassified (need authorized ownership review): "
               f"**{len(unclassified)}**\n")
     md.append("## Root files by extension\n")
     for ext, n in ext_counts.most_common():
