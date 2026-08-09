@@ -9,9 +9,8 @@ catalog/ledger path metadata. It does not change a theorem, quantifier,
 finite-case bound, lifecycle, evidence role, formalization status, owner-gated
 conflict, or global status.
 
-The repair candidate is index-complete and locally validated. Publication,
-exact final commit/tree identity, hosted CI, and merge remain pending and are
-not inferred from local results.
+The repair checkpoint is index-complete and locally validated. Publication,
+hosted CI, and merge remain pending and are not inferred from local results.
 
 ## Known transaction checkpoints
 
@@ -21,8 +20,8 @@ not inferred from local results.
 | frozen exact batch | `ade5d5be1d607b1e145387abccc03625ec5ecdb3` |
 | pure Stage 28 moves | `ed8dc6a01664858f3a24de3fc28e02f0c1661c58` |
 | migration-aware link/command rewrite checkpoint | `d25cd2ad357827370baae5cfaaffd695a7573cd3` |
-| final import/path/provenance repair | current staged candidate; commit pending |
-| final validated tree | current staged candidate; publication/CI pending |
+| final import/path/provenance repair | `da48c9ac1bd60c804b141e0f970deb5740d539ae` |
+| validated repair tree before this evidence-only report pin | `50a2a33fca0a94e35baa1a486da58b01ae0699c0` |
 
 Reviewed merged-main base:
 `5726180037986d27b9e445ee058e6c221b6d2d03`, tree
