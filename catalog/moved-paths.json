@@ -18,16 +18,16 @@
   },
   "counts": {
     "total_classified_moves": 2015,
-    "moved": 401,
+    "moved": 405,
     "pilot": 0,
     "proposed_high_confidence": 242,
-    "review_required": 1372,
+    "review_required": 1368,
     "unclassified": 348,
     "root_files_before": 2363,
     "root_dirs_before": 3,
     "root_entries_before": 2366,
-    "projected_root_if_moved_only": 1971,
-    "projected_root_if_high_confidence_batches_executed": 1729,
+    "projected_root_if_moved_only": 1967,
+    "projected_root_if_high_confidence_batches_executed": 1725,
     "projected_root_if_all_classified_executed": 357,
     "projection_note": "unclassified files are not members of any move set, so every projection already leaves them at the root; do not add unclassified again",
     "collisions": 0,
@@ -11593,33 +11593,37 @@
       "old_path": "P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/component-fibre-infinity-marked-fibre/P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/component-fibre-infinity-marked-fibre",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/h31/component-fibre-infinity-marked-fibre",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-h31-component-fibre-infinity-marked-fibre-stage24"
     },
     {
       "old_path": "audit_p5_h31_component_fibre_infinity_marked_fibre.py",
       "new_path": "claims/p5/h31/component-fibre-infinity-marked-fibre/audit_p5_h31_component_fibre_infinity_marked_fibre.py",
       "reason": "claim_script -> p5/h31/component-fibre-infinity-marked-fibre",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/h31/component-fibre-infinity-marked-fibre",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-h31-component-fibre-infinity-marked-fibre-stage24"
     },
     {
       "old_path": "derive_p5_h31_fibre_infinity_marked_fibre_elimination.py",
       "new_path": "claims/p5/h31/component-fibre-infinity-marked-fibre/derive_p5_h31_fibre_infinity_marked_fibre_elimination.py",
       "reason": "claim_script -> p5/h31/component-fibre-infinity-marked-fibre",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/h31/component-fibre-infinity-marked-fibre",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-h31-component-fibre-infinity-marked-fibre-stage24"
     },
     {
       "old_path": "verify_p5_h31_component_fibre_infinity_marked_fibre.py",
       "new_path": "claims/p5/h31/component-fibre-infinity-marked-fibre/verify_p5_h31_component_fibre_infinity_marked_fibre.py",
       "reason": "claim_script -> p5/h31/component-fibre-infinity-marked-fibre",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/h31/component-fibre-infinity-marked-fibre",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-h31-component-fibre-infinity-marked-fibre-stage24"
     },
     {
       "old_path": "P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md",
