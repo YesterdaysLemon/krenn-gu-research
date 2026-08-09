@@ -81,7 +81,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "46a35f11a74486d5",
+      "document_sha256_16": "b4c85f410832623b",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -700,21 +700,27 @@
     },
     {
       "name": "Generic marked H31 fibre empty: embedded p3",
-      "document": "P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "4803fd70c8a8c5ba",
+      "document": "claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "a278f75299162f43",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
         "denominator/slope divisors excluded, not proved"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h31_embedded_p3_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h31/embedded-p3/verify_p5_h31_embedded_p3_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h31_embedded_p3_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h31/embedded-p3/audit_p5_h31_embedded_p3_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
-      "expected_runtime": "minutes (sympy + Singular)",
-      "external_binaries": [
-        "Singular >= 4.3"
+      "expected_runtime": "seconds-to-minutes (sympy)",
+      "external_binaries": [],
+      "claim_package": "claims/p5/h31/embedded-p3",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h31_embedded_p3_component_generic_obstruction.py",
+        "verify_p5_h31_embedded_p3_component_generic_obstruction.py"
       ]
     },
     {
@@ -1177,7 +1183,7 @@
     {
       "name": "Generic weighted H22 fibre empty: disjoint mixed star",
       "document": "claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "343721662b8877ed",
+      "document_sha256_16": "7d21e310fb002c13",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1261,7 +1267,7 @@
     {
       "name": "Generic weighted H22 fibre empty: embedded p3",
       "document": "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "195e90667d8f35cd",
+      "document_sha256_16": "c83bb12ac58fba07",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1619,7 +1625,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "46a35f11a74486d5",
+      "document_sha256_16": "b4c85f410832623b",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -1657,7 +1663,7 @@
     {
       "name": "Eighth-component weighted H22 closure - canonical determinantal proof",
       "document": "claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "343721662b8877ed",
+      "document_sha256_16": "7d21e310fb002c13",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1748,7 +1754,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "46a35f11a74486d5",
+      "document_sha256_16": "b4c85f410832623b",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],

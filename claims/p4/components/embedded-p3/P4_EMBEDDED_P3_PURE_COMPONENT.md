@@ -31,7 +31,7 @@ repository-wide lower bound to ten in
 
 The theorem is at the pure-`P_4` plane level.  A later apolar
 insertion theorem excludes its generic marked `H31` fibre:
-[`P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
 The same insertion arrangement, after restoring the source-torus
 slope, excludes its generic weighted `H22` fibre:
 [`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).

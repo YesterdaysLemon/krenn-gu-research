@@ -1169,7 +1169,7 @@ coordinate zero gives a six-column apolar insertion map whose
 rank-drop support is three signed lines plus three points, and every
 generic line kernel kills the all-alpha diagonal:
 
-- [`P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 Restoring the weighted source-torus slope preserves this symbolic
 reduction.  The `D_23` direction has an identically zero all-alpha
@@ -1185,7 +1185,7 @@ are excluded by tiny neighboring one-marked covers; at the deepest
 point every neighboring map has rank three, but the stacked
 pure/neighbouring map has constant determinant `8`:
 
-- [`P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md)
+- [`P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md`](claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md)
 
 The analogous weighted boundary is also closed whenever the
 slope-dependent projected mode-zero image is a genuine line.  Four
@@ -1210,7 +1210,7 @@ one-marked rank closes the line, and the unique resonance `C=-1` is
 killed by a stacked determinant and the constant third-contraction
 coefficient `4`:
 
-- [`P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md)
+- [`P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md`](claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md)
 
 The complementary `r=0`, `A B!=0` divisor is now closed as well.
 Its `t!=0` part is the normalized chart after a signed source
@@ -1220,14 +1220,14 @@ the boundary into four zero-coordinate branches, nine signed-sheet
 second drops, and nine deepest families, all excluded by tiny
 one-marked covers:
 
-- [`P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md)
+- [`P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md`](claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md)
 
 The apparent projective compactification is now closed too.  Write the
 homogeneous absolute normal as `[C:A:B]`.  Support-one points give the
 zero pure restriction; every support-two or support-three point can
 be source-permuted into a closed chart with `C'B'!=0`:
 
-- [`P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md)
+- [`P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md`](claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md)
 
 Thus the ninth component is closed in full for `H31`; exhaustiveness
 of the new component list remains open.  The earlier modular pattern and

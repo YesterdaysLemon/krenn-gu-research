@@ -22,9 +22,9 @@ This theorem does not close the omitted normalization divisors
 `A r=0`, the projective boundary of the pure component, component
 exhaustiveness, or the global Krenn--Gu conjecture.  The normalized
 weighted `H22` boundary has since been closed separately by
-[`P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md)
+[`P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md`](../../../../P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md)
 and
-[`P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md).
+[`P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md`](../../../../P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md).
 
 ## Normalized component and insertion map
 
@@ -290,8 +290,8 @@ chart.
 Run
 
 ```text
-python verify_p5_h31_embedded_p3_component_normalized_boundary.py
-python audit_p5_h31_embedded_p3_component_normalized_boundary.py
+python claims/p5/h31/embedded-p3/verify_p5_h31_embedded_p3_component_normalized_boundary.py
+python claims/p5/h31/embedded-p3/audit_p5_h31_embedded_p3_component_normalized_boundary.py
 ```
 
 The primary verifier reconstructs the nine insertion kernels, the

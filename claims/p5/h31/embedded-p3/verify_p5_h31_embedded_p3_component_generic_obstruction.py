@@ -6,19 +6,28 @@ from __future__ import annotations
 import hashlib
 import itertools
 import json
+import sys
 from pathlib import Path
 
 import sympy as sp
 
-from verify_p5_h31_marked_basis_open_branch import mixed_matrix
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+from verify_p5_h31_marked_basis_open_branch import mixed_matrix  # noqa: E402
 
 
-ROOT = Path(__file__).resolve().parent
 THEOREM = (
-    ROOT / "P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
+    HERE / "P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
 COMPONENT = (
-    ROOT / "claims" / "p4" / "components" / "embedded-p3"
+    REPO_ROOT / "claims" / "p4" / "components" / "embedded-p3"
     / "P4_EMBEDDED_P3_PURE_COMPONENT.md")
 WORDS3 = tuple(itertools.product((0, 1), repeat=3))
 WORDS4 = tuple(itertools.product((0, 1), repeat=4))

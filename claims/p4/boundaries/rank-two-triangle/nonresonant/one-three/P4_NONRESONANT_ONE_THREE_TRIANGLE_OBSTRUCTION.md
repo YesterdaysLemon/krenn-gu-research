@@ -261,7 +261,7 @@ six-dimensional suspension component in
 [`P4_EMBEDDED_P3_PURE_COMPONENT.md`](../../../../components/embedded-p3/P4_EMBEDDED_P3_PURE_COMPONENT.md).
 That component is not merely generically excluded from `H31`; its
 entire marked projective fibre is closed by
-[`P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md`](../../../../../../P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md).
+[`P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md`](../../../../../p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md).
 
 ## The neighboring mathematical languages
 

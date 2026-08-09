@@ -12,7 +12,7 @@ that checkpoint have empty generic marked `H31` and weighted `H22`
 fibres.  The later embedded-`P_3` ninth component is not covered by
 this theorem, but its generic fibres have since been excluded by their
 own apolar insertion theorems:
-[`P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md),
+[`P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](../../h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md),
 [`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
 The special equal- and opposite-weight slopes have since been closed
 by a stronger binary obstruction:

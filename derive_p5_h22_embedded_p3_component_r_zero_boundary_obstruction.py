@@ -15,8 +15,14 @@ import sympy as sp
 
 ROOT = Path(__file__).resolve().parent
 NOTE = ROOT / "P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION_CANDIDATE.md"
-H31 = ROOT / "P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md"
-H31_VERIFY = ROOT / "verify_p5_h31_embedded_p3_component_r_zero_boundary.py"
+H31 = (
+    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
+    / "P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md"
+)
+H31_VERIFY = (
+    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
+    / "verify_p5_h31_embedded_p3_component_r_zero_boundary.py"
+)
 H22_GENERIC = ROOT / "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
 H22_RANK_TWO = (
     ROOT / "P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md"

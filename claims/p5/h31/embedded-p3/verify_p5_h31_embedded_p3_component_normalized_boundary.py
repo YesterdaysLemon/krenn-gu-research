@@ -6,24 +6,33 @@ from __future__ import annotations
 import hashlib
 import itertools
 import json
+import sys
 from pathlib import Path
 
 import sympy as sp
 
-from verify_p5_h31_marked_basis_open_branch import (
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+from verify_p5_h31_marked_basis_open_branch import (  # noqa: E402
     marked_extension,
     mixed_matrix,
     one_marked_map,
 )
 
 
-ROOT = Path(__file__).resolve().parent
 THEOREM = (
-    ROOT
+    HERE
     / "P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md"
 )
 GENERIC = (
-    ROOT / "P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
+    HERE / "P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
 WORDS3 = tuple(itertools.product((0, 1), repeat=3))
 PERMUTATIONS5 = tuple(itertools.permutations(range(5)))

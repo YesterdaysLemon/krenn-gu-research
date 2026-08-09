@@ -298,7 +298,7 @@ dense stratum that led to it.
 
 Its generic marked `H31` fibre then collapses through a second
 cross-specialty translation:
-[`P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
 The squarefree algebra is an Artinian Gorenstein complete
 intersection, so the extension map is a first variation of
 multiplication and its exceptional directions form a Lefschetz-style
@@ -333,7 +333,7 @@ ninth component and raises the generic `H31/H22` closure count from
 eight to all nine currently known component orbits.
 
 The insertion arrangement also makes its own boundary tractable:
-[`P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md`](../P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md).
+[`P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md`](../claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md).
 At its nine singular/projective points, exact kernel vectors replace
 elimination.  Requiring the second slice to be diagonal is just a
 truncated `2 x 2 x 2` Segre test; its three quadratic relations factor
@@ -370,7 +370,7 @@ or rank-two statement.
 
 The first omitted normalization divisor is now closed in the same
 language:
-[`P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md`](../P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md).
+[`P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md`](../claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md).
 On `A=0`, `B!=0`, the pure sign chart loses one support coordinate and
 the insertion presentation acquires a zero row.  Its Fitting support
 nevertheless has only one genuine branch, `rho=-Cp`.  The branch is
@@ -386,7 +386,7 @@ divisor, but not by itself the other mode-zero-plane chart or the
 projective compactification.
 
 The complementary mode-zero-plane chart is now closed in
-[`P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md`](../P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md).
+[`P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md`](../claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md).
 Its open `t!=0` part is transported to the normalized theorem by the
 signed source permutation `X_2'=-X_3,X_3'=-X_2`.  At the genuine
 corner `r=t=0`, the insertion tensor is a first variation of the
@@ -408,7 +408,7 @@ affine `B!=0` ninth-component chart is now empty for `H31`.
 
 Finally, the apparent projective boundary disappears after using the
 correct compactification:
-[`P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md`](../P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md).
+[`P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md`](../claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md).
 The absolute sign-rectangle normal is a point `[C:A:B] in P^2`.
 Support-one points are zero restrictions.  Every support-two or
 support-three point has two nonzero coordinates, which source symmetry
