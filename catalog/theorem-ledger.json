@@ -96,7 +96,7 @@
     {
       "name": "Frontier reduction: any P5->Delta3 restriction forces an H31 or H22 local family",
       "document": "P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md",
-      "document_sha256_16": "56b23fe36b5d97d8",
+      "document_sha256_16": "66ea30eaa865fd66",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact reductions over C",
@@ -1051,7 +1051,7 @@
     {
       "name": "Generic weighted H22 fibre empty: coincident support",
       "document": "claims/p5/h22/coincident-support/P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "4c4d8929eb9bb7c7",
+      "document_sha256_16": "ed0df77897f3f9f5",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1455,7 +1455,7 @@
     {
       "name": "Generic weighted H22 fibre empty: six dimensional",
       "document": "claims/p5/h22/six-dimensional/P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "72d9943a359888ec",
+      "document_sha256_16": "401808df53fb1a09",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",

@@ -1,17 +1,22 @@
-# P5 generic weighted-`H22` obstruction packages
+# P5 weighted-`H22` obstruction packages
 
-Each subdirectory is one migrated component-level generic
-weighted-`H22` claim package: theorem document + primary verifier + an
-independent audit where one exists, moved together with preserved
-filenames.  Stage 9 used batch `p5-generic-obstructions-stage9`
+Most subdirectories are migrated component-level generic weighted-`H22`
+claim packages: theorem document + primary verifier + an independent audit
+where one exists, moved together with preserved filenames. Scoped boundary
+leaves are labelled separately below. Stage 9 used batch
+`p5-generic-obstructions-stage9`
 (mapping_sha256
 `68d20c08b987c2465395ec485647dc37c958d8400a8d05dede37559256a47f23`).
 Stage 10 used batch `p5-deferred-generics-stage10` (mapping_sha256
 `e39d17c3ed855ef5a1342560ebf61e9b313246142f24af23940bc3ff8af472db`).
 Stage 13 used batch `p5-h22-split-center-stage13` (mapping_sha256
 `fd1d3e4163068b2e0e16f6e6161a52f822a4d02acd74bdd5e80e5bc6ba341154`).
+Stage 21 used batch `p5-h22-six-dimensional-equal-weight-stage21`
+(mapping_sha256
+`f7427206126ecc290b0a926c1731eb5eb557aca7d784547d4c64df2dc2b41cf0`).
 
-Every theorem here is a **generic/function-field** statement: the
+Every theorem in the generic table is a **generic/function-field** statement:
+the
 weighted `H22` incidence is empty at the generic point of the named
 P4 component (or on a dense open subset).  None closes every special
 component-parameter divisor or the global pointwise locus.  Weight
@@ -38,6 +43,29 @@ slope/projective boundaries open.
 | `split-center-mixed-star/` | `P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md` | `verify_p5_h22_split_center_mixed_star_component_generic_obstruction.py` | `audit_p5_h22_split_center_mixed_star_component_generic_obstruction.py` |
 | `transverse-common-factor/` | `P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md` | `verify_p5_h22_transverse_common_factor_component_generic_obstruction.py` | `audit_p5_h22_transverse_common_factor_component_generic_obstruction.py` |
 | `two-rank-two-spoke-mixed-star/` | `P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md` | `verify_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py` | `audit_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py` |
+
+## Six-dimensional equal-weight normal-form point
+
+The `six-dimensional/` package also contains the Stage 21 equal-weight
+triple:
+
+| scope | theorem | verifier | audit |
+|---|---|---|---|
+| binary `H22` incidence at the equal-weight `r=1` generic component function-field normal-form point | `P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md` | `verify_p5_h22_six_dimensional_equal_weight_binary_obstruction.py` | `audit_p5_h22_six_dimensional_equal_weight_binary_obstruction.py` |
+
+This is an exact characteristic-zero obstruction over `K=C(s,d,u,v)` for
+every marked basis and fifth-coordinate extension at that generic point. It
+is **not** a pointwise theorem for the full geometric `r=1` divisor and is not
+another generic whole-component theorem. Opposite weight `r=-1`, coupled
+slope divisors, slope/parameter intersections, component-parameter and
+projective boundaries, other components, all weighted `H22`, `P5 -> Delta3`,
+and the global conjecture remain outside this leaf.
+
+The audit imports no primary implementation and separately recomputes the
+permanent and modular nullspaces. It nevertheless duplicates the same
+theorem-specified normal form and tests one fixed admissible component sample
+over each of `F5` and `F7`; its exhaustive marking censuses are modular QA,
+not the characteristic-zero proof.
 
 The **disjoint-mixed-star** H22 package was migrated in the layout
 migration pilot (batch `p5-h22-disjoint-mixed-star-pilot`) and lives

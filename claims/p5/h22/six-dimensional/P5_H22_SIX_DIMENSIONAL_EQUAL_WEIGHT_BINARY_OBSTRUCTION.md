@@ -5,7 +5,7 @@
 This is an exact characteristic-zero obstruction on the equal-weight
 diagonal-source chart of the six-dimensional pure-compression component
 proved in
-[`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](claims/p4/components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md).
+[`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](../../../p4/components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md).
 
 The two neighboring `H22` contractions meet the pure `P_4` slice along
 the diagonal hyperplanes
@@ -203,8 +203,8 @@ compatibility is the honest next problem.
 Run
 
 ```text
-python verify_p5_h22_six_dimensional_equal_weight_binary_obstruction.py
-python audit_p5_h22_six_dimensional_equal_weight_binary_obstruction.py
+python claims/p5/h22/six-dimensional/verify_p5_h22_six_dimensional_equal_weight_binary_obstruction.py
+python claims/p5/h22/six-dimensional/audit_p5_h22_six_dimensional_equal_weight_binary_obstruction.py
 ```
 
 The primary verifier reconstructs (5)--(6), performs both exact

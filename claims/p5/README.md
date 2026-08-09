@@ -17,7 +17,10 @@ directory is the exact complete marked-fibre obstruction over the 21 genuine
 toric base cases of the first component, not a generic or whole-component
 package and not a closure of its projective interior.  The H22
 `disjoint-mixed-star/` pilot also contains a partial, explicitly scoped
-boundary subtree.
+boundary subtree. The H22 `six-dimensional/` package additionally contains
+the equal-weight `r=1` binary leaf at the generic component function-field
+normal-form point; it is not pointwise closure of the full geometric `r=1`
+divisor.
 
 **The generic packages are generic/function-field theorems.**  They do
 not close the same components' special divisors, projective boundaries,
@@ -25,9 +28,10 @@ exceptional fibres, or slope divisors, and they do not imply the
 pointwise statements.  Outside the exact embedded-P3 H31 closure forest, the
 scoped H31 `p+q=0` wall and single-gate branch forests, the internal-`E=0`
 divisor leaf, the toric marked-fibre boundary leaf, and the disjoint-mixed-star
-H22 boundary subpackages, pointwise boundary/divisor closures for these and
-the other components remain elsewhere (mostly still at the repository root)
-and are separate future work.
+H22 boundary subpackages, and the six-dimensional H22 equal-weight
+normal-form-point leaf, pointwise boundary/divisor closures for these and the
+other components remain elsewhere (mostly still at the repository root) and
+are separate future work.
 
 Migrating a generic theorem under this spine does not change its
 scope, status, or excluded divisors.  The global Krenn-Gu conjecture
@@ -38,7 +42,7 @@ remains **UNRESOLVED**.
 | directory | contents |
 |---|---|
 | [`h31/`](h31/) | marked-`H31` obstruction packages (28 directories; one complete component-closure forest, one flat three-triple `p+q=0` wall subforest, one three-package rank-one-gate forest, one internal-`E=0` divisor leaf, and one toric marked-fibre boundary leaf) |
-| [`h22/`](h22/) | generic weighted-`H22` obstruction packages (18; the disjoint-mixed-star pilot also has a partial boundary subtree) |
+| [`h22/`](h22/) | weighted-`H22` obstruction packages (18; the disjoint-mixed-star pilot has a partial boundary subtree and six-dimensional also has one equal-weight generic-point leaf) |
 
 The H22 disjoint-mixed-star package was migrated first, in the layout
 migration pilot; it lives at
@@ -62,6 +66,11 @@ first-component and later-component obligations separately owned.  Stage 20
 (`p5-h31-toric-marked-fibre-stage20`) migrated the exact first-component
 toric marked-fibre triple while leaving the projective base interior, second
 or further components, and component exhaustiveness separately owned.
+Stage 21 (`p5-h22-six-dimensional-equal-weight-stage21`) added the exact
+equal-weight `r=1` binary leaf at the generic six-dimensional component
+function-field normal-form point while leaving the full geometric divisor,
+other slopes, parameter/projective boundaries, and component exhaustiveness
+separately owned.
 
 ## Pairing by underlying P4 family
 
@@ -79,6 +88,9 @@ asymmetries (never manufactured symmetry):
   deliberately not migrated;
 - `equal-support-sixfold` has migrated H31 and H22 generic theorems,
   but each has a primary verifier only: no P5 independent audit exists;
+- `six-dimensional` has migrated H31 and H22 generic theorems, and its H22
+  package also carries the separately scoped equal-weight generic-point leaf;
+  that leaf is not pointwise closure of the full `r=1` divisor;
 - `embedded-p3` now has a complete projective H31 closure package,
   while its separate weighted-H22 programme remains at root with open
   projective coverage;
@@ -101,7 +113,8 @@ asymmetries (never manufactured symmetry):
 Except for the exact H31 embedded-P3 component-closure forest, the scoped H31
 `p+q=0` wall and single-gate branch forests, the internal-`E=0` divisor leaf,
 the toric marked-fibre boundary leaf, and the scoped H22 disjoint-mixed-star
-boundary subpackages, the following P5 layers are **not** part of this spine:
+boundary subpackages, and the H22 six-dimensional equal-weight
+normal-form-point leaf, the following P5 layers are **not** part of this spine:
 pointwise/divisor closures, boundary obstruction trees, exceptional-fibre
 work, the `q4_211` / `q5_221` / component19 / component21 / component23
 programmes, and the frontier documents
