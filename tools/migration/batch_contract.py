@@ -22,6 +22,16 @@ Batch file schema (catalog/batches/<batch_id>.json)::
       "notes": "..."                 (optional)
     }
 
+``approved_by`` identifies the actual mapping reviewer.  For a routine,
+non-ambiguous, evidence-backed mapping reviewed under the repository owner's
+standing delegation dated 2026-08-08, use wording such as::
+
+    Codex (exact mapping reviewer under repository-owner standing
+    delegation dated 2026-08-08)
+
+The delegating owner must not be recorded as the actual reviewer unless the
+owner reviewed the exact mapping.
+
 ``canonical_mapping_hash`` is deterministic: the SHA-256 of the JSON
 serialization of the sorted move mappings with sorted keys and no
 whitespace.  It depends only on the mappings, never on manifest churn

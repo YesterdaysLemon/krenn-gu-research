@@ -7,11 +7,13 @@
   "status_model": {
     "moved": "already executed",
     "pilot": "the executed pilot batch",
-    "proposed_high_confidence": "classifier says high confidence, but this is NOT operational approval; a human must promote members into a named batch file before execution",
-    "review_required": "medium/low confidence proposal; needs human review before it may even be batched"
+    "proposed_high_confidence": "classifier says high confidence; this is not review authority or operational approval and requires authorized review plus an exact frozen batch",
+    "review_required": "medium/low-confidence proposal; requires authorized ownership review before it may be batched"
   },
   "approval_model": {
-    "rule": "no classification confidence is executable on its own; execute_moves.py runs only batches listed in catalog/batches/*.json with reviewer, base SHA, and member list",
+    "rule": "classification confidence is never review authority or executable on its own; execute_moves.py runs only exact frozen batches with an actual reviewer, base SHA, member mapping, and mapping hash",
+    "standing_delegation": "repository-owner standing delegation dated 2026-08-08 authorizes Codex to act as actual reviewer for routine, non-ambiguous, evidence-backed exact layout mappings; approved_by must identify Codex and the delegation basis",
+    "owner_gates": "scientific status or scope, genuinely ambiguous proof-boundary ownership, and architectural choices requiring owner preference remain owner-gated",
     "batch_directory": "catalog/batches"
   },
   "counts": {
