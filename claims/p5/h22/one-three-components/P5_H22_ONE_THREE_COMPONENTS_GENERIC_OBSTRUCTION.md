@@ -5,7 +5,7 @@
 This is an exact characteristic-zero obstruction on the generic
 diagonal-source orbits of the three split-cubic pure-compression
 components proved in
-[`P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md`](../../../../P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md).
+[`P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md`](../../../p4/classifications/P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md).
 
 For all three components, the weighted `01` diagonal pencil has no
 binary `Delta_2` extension.  The third component also has no binary

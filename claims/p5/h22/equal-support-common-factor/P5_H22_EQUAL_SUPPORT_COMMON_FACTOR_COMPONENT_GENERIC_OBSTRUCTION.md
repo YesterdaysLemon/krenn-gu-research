@@ -32,7 +32,7 @@ R=r+1,           Q=1+qR.                            (1)
 ```
 
 For the component in
-[`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](../../../../P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md),
+[`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](../../../p4/classifications/P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md),
 an intrinsic kernel/active marking is
 
 ```text

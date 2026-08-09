@@ -965,7 +965,7 @@ and on the other two every survivor has a one-marked determinant
 `A^2B/c(S,D,G)`.  Their parameter/projective boundaries remain, and
 the resulting five-component checkpoint was not exhaustive:
 
-- [`P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md`](P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md)
+- [`P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md`](claims/p4/classifications/P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md)
 - [`P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/one-three/P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 The common-smooth-diagonal-quadric branch is now structurally closed
@@ -977,7 +977,7 @@ inverting every block discriminant `s_i(s_i^4-1)` makes all three unit
 ideals.  Therefore this semisimple branch cannot contain a new
 five-dimensional component:
 
-- [`P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md`](P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md)
+- [`P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md`](claims/p4/boundaries/P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md)
 
 The generic directed radical-star block locus is classified as well.
 Rank-one exceptional relations are coordinate-pair zero products.
@@ -1295,7 +1295,7 @@ orientations and support-one or lower-pair-rank boundaries.
 The first common-factor branch is now a new component rather than a boundary
 obstruction:
 
-- [`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md)
+- [`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](claims/p4/classifications/P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md)
 
 Two leaf kernel rows share the exact zero divisor `a`, while their rank-one
 edges share the active common-mode row `a_bar`.  The rank-two edge reduces to
@@ -1336,7 +1336,7 @@ pure-factor degenerations and projective boundary remain open.
 The residual common-factor orientation has now crossed the component
 boundary a second time:
 
-- [`P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md`](P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md)
+- [`P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md`](claims/p4/classifications/P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md)
 
 Write the complementary binary parts of the synchronized active row and the
 common kernel as `s=uX2+vX3` and `t=pX2+qX3`.  The three-cubic apolar
@@ -1391,7 +1391,7 @@ generically closed for both `H31` and weighted `H22`.
 The dense common-kernel/kernel-leaf orientation of the exceptional
 `(2,1,1)` triangle is also empty:
 
-- [`P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md`](P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md)
+- [`P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md`](claims/p4/boundaries/P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md)
 
 After synchronizing the exact pair, the seven kernel-containing cubics span
 three columns `C0,C1,C2`.  If
@@ -1422,7 +1422,7 @@ Thus it dies in every apolar quotient that kills the kernel-rich columns.
 This closes the dense `YY` Borel orientation without enumerating graphs.
 The mixed `YX` orientation is stronger still:
 
-- [`P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md`](P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md)
+- [`P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md`](claims/p4/boundaries/P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md)
 
 Its synchronization equation is the factorization `b*d=a^2`.  A two-by-two
 determinant `Delta` separates two branches.  If `Delta!=0`, both factors are
@@ -1441,7 +1441,7 @@ strata remain from this common-kernel split.
 The active `XX` orientation is not empty.  It is controlled by an Eisenstein
 norm quadric and supplies a thirteenth component:
 
-- [`P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md`](P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md)
+- [`P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md`](claims/p4/classifications/P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md)
 
 With `N(x,y)=x^2+xy+y^2`, the entire purity condition is
 
@@ -1512,7 +1512,7 @@ Thus all thirteen certified components are generically closed for both
 The double-support-one boundary of the `(2,1,1)` triangle is now reduced
 without elimination:
 
-- [`P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md`](P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md)
+- [`P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md`](claims/p4/classifications/P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md)
 
 Since `Ann_R1(X_i)=C X_i`, common-factor support-one orientations have leaf
 pair-image rank at most two.  In the crossed orientation, distinct support
@@ -1539,7 +1539,7 @@ The five primes in the mixed determinantal chart are exhausted: they
 map to the sixth component, the six-dimensional component, `L_2`, and
 `L_1`, with no further orbit:
 
-- [`P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md`](P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md)
+- [`P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md`](claims/p4/classifications/P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md)
 
 The
 nonzero preferred-chart divisor, first-plane Schubert boundary, and

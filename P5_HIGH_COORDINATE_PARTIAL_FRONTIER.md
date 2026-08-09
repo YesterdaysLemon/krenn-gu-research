@@ -200,7 +200,7 @@ distinct generic jump signatures
 Thus at least five symmetry-inequivalent components exist.  This is
 not yet an exhaustive classification:
 
-- [`P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md`](P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md)
+- [`P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md`](claims/p4/classifications/P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md)
 
 The most natural apparent continuation, with all four annihilator
 lines on one smooth diagonal quadric, is now closed away from the
@@ -219,7 +219,7 @@ solution has a `2+2` or `1+3` block line, and none of these loci can
 be a new five-dimensional component after restoring the
 three-dimensional diagonal source torus:
 
-- [`P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md`](P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md)
+- [`P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md`](claims/p4/boundaries/P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md)
 
 There is also an exact generic classification on the directed
 radical-star block locus.  A rank-one multiplication relation is
@@ -387,7 +387,7 @@ component orbit, the second embeds in the six-dimensional component,
 and the fourth and fifth are explicit source/mode symmetry charts of
 `L_2` and `L_1`.  Hence that dense chart contains no eighth component:
 
-- [`P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md`](P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md)
+- [`P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md`](claims/p4/classifications/P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md)
 
 The complete marked fibre over the generic point of each of the three
 new components is empty.  One branch has no neighbouring binary

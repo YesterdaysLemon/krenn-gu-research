@@ -32,7 +32,7 @@ n=-(k-1)(r+2)X_0-X_2+kX_3.                         (1)
 ```
 
 The dense component normal form from
-[`P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md`](../../../../P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md)
+[`P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md`](../../../p4/classifications/P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md)
 is
 
 ```text

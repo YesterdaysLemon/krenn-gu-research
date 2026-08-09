@@ -138,7 +138,7 @@ rederives every one of the 52 binomials, replays the final Smith lattice,
 and checks the 13-term terminal amplitude:
 
 ```text
-python verify_fourteen_vertex_partial_circuit_binomial_branch.py \
+python claims/finite/n14/verify_fourteen_vertex_partial_circuit_binomial_branch.py \
   tmp/fourteen_vertex_c4_c4_c6_orbit8_partial_binomial_closure_all22_r2.json \
   --output tmp/fourteen_vertex_c4_c4_c6_orbit8_partial_binomial_closure_all22_r2_verified.json
 ```

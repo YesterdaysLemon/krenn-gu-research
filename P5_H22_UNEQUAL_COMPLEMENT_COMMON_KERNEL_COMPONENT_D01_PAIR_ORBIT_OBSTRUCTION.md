@@ -19,7 +19,7 @@ component fibres and the global Krenn--Gu conjecture also remain
 ## Exact survivor decomposition
 
 Use the normalized component basis from
-[`P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md`](P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md)
+[`P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md`](claims/p4/classifications/P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md)
 over `K=C(A,R,D)`.  Put
 
 ```text

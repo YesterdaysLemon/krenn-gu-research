@@ -17,7 +17,7 @@ The Krenn--Gu conjecture remains **UNRESOLVED**.
 ## Model
 
 Use the component-twenty-two basis from
-[`P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md`](P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md)
+[`P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md`](claims/p4/classifications/P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md)
 on its first sheet.  At `(A,R,D)=(1,1,2)`, let `alpha_i,beta_i` be the four
 ordered basis pairs and replace
 

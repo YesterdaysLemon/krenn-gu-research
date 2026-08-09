@@ -202,9 +202,9 @@ their double contraction exposes a `P_3` sign chart with incompatible
 rank or coordinate support.  Thus the full two-cross marked boundary
 is empty.  See:
 
-- [`P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md`](P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md)
+- [`P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md`](claims/p4/classifications/P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md)
 - [`P5_Q4_211_MARKED_DELTA2_PAIR_IMAGE_OBSTRUCTION.md`](P5_Q4_211_MARKED_DELTA2_PAIR_IMAGE_OBSTRUCTION.md)
-- [`P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md`](P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md)
+- [`P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md`](claims/p4/classifications/P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md)
 - [`P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md`](P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md)
 
 ## Consequence and remaining boundary
@@ -241,12 +241,12 @@ Run:
 ```text
 python verify_p5_q4_211_adjacent_p4_pencil.py
 python audit_p5_q4_211_adjacent_p4_pencil.py
-python verify_p4_marked_delta2_slice_classification.py
-python audit_p4_marked_delta2_slice_classification.py
+python claims/p4/classifications/verify_p4_marked_delta2_slice_classification.py
+python claims/p4/classifications/audit_p4_marked_delta2_slice_classification.py
 python verify_p5_q4_211_marked_delta2_pair_image.py
 python audit_p5_q4_211_marked_delta2_pair_image.py
-python verify_p4_marked_delta2_alternating_gate.py
-python audit_p4_marked_delta2_alternating_gate.py
+python claims/p4/boundaries/verify_p4_marked_delta2_alternating_gate.py
+python claims/p4/boundaries/audit_p4_marked_delta2_alternating_gate.py
 python verify_p5_q4_211_alternating_gate_obstruction.py
 python audit_p5_q4_211_alternating_gate_obstruction.py
 python verify_p5_q4_211_one_cross_pencil_saturation.py

@@ -1,0 +1,817 @@
+{
+  "batch_id": "finite-p4-stage28",
+  "approved_by": "Codex (exact mapping reviewer under repository-owner standing delegation dated 2026-08-08)",
+  "approved_at": "2026-08-09",
+  "base_sha": "5726180037986d27b9e445ee058e6c221b6d2d03",
+  "manifest_sha256": "1b44664f26a50b310e3f4a984fef0e50449017ee7ccd434c8b3ac450ae4d5a32",
+  "mapping_sha256": "2715a521e40f5ad6815af2044af1b1c075bf1cf29de81b076c4de239db5cf9a6",
+  "member_count": 201,
+  "moves": [
+    {
+      "old_path": "EIGHT_VERTEX_16EDGE_CERTIFICATE.md",
+      "new_path": "claims/finite/n08/EIGHT_VERTEX_16EDGE_CERTIFICATE.md"
+    },
+    {
+      "old_path": "EIGHT_VERTEX_17EDGE_CERTIFICATE.md",
+      "new_path": "claims/finite/n08/EIGHT_VERTEX_17EDGE_CERTIFICATE.md"
+    },
+    {
+      "old_path": "EIGHT_VERTEX_4REGULAR_CERTIFICATE.md",
+      "new_path": "claims/finite/n08/EIGHT_VERTEX_4REGULAR_CERTIFICATE.md"
+    },
+    {
+      "old_path": "EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md",
+      "new_path": "claims/finite/n08/EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "EIGHT_VERTEX_DEGREE3_E19_CERTIFICATE.md",
+      "new_path": "claims/finite/n08/EIGHT_VERTEX_DEGREE3_E19_CERTIFICATE.md"
+    },
+    {
+      "old_path": "EIGHT_VERTEX_DEGREE4_FRONTIER.md",
+      "new_path": "claims/finite/n08/EIGHT_VERTEX_DEGREE4_FRONTIER.md"
+    },
+    {
+      "old_path": "EIGHT_VERTEX_DOUBLE_C4_FAMILY_CERTIFICATE.md",
+      "new_path": "claims/finite/n08/EIGHT_VERTEX_DOUBLE_C4_FAMILY_CERTIFICATE.md"
+    },
+    {
+      "old_path": "EIGHT_VERTEX_ENTRY84_BOUNDARY.md",
+      "new_path": "claims/finite/n08/EIGHT_VERTEX_ENTRY84_BOUNDARY.md"
+    },
+    {
+      "old_path": "EIGHT_VERTEX_FULL_SINGLETON_FAMILY_CERTIFICATE.md",
+      "new_path": "claims/finite/n08/EIGHT_VERTEX_FULL_SINGLETON_FAMILY_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C3_C3_C4_C4_FAMILY_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C3_C3_C4_C4_FAMILY_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C3_C3_C8_FAMILY_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C3_C3_C8_FAMILY_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C3_C4_C7_FAMILY_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C3_C4_C7_FAMILY_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C3_C5_C6_FAMILY_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C3_C5_C6_FAMILY_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C4_C10_ORBIT0_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C4_C10_ORBIT0_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C4_C10_ORBIT1_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C4_C10_ORBIT1_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C4_C4_C6_59_ORBITS_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C4_C4_C6_59_ORBITS_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C4_C4_C6_61_ORBITS_KAPPA3_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C4_C4_C6_61_ORBITS_KAPPA3_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C4_C4_C6_ORBIT2_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C4_C4_C6_ORBIT2_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C4_C4_C6_ORBIT3_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C4_C4_C6_ORBIT3_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C4_C4_C6_ORBIT44_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C4_C4_C6_ORBIT44_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C4_C4_C6_ORBIT5_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C4_C4_C6_ORBIT5_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C4_C4_C6_ORBIT6_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C4_C4_C6_ORBIT6_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C4_C4_C6_ORBIT7_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C4_C4_C6_ORBIT7_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C4_C4_C6_ORBIT8_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C4_C4_C6_ORBIT8_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C4_C4_C6_ORBIT8_PARTIAL_BINOMIAL_SUPPORT_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C4_C4_C6_ORBIT8_PARTIAL_BINOMIAL_SUPPORT_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C4_C5_C5_FAMILY_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C4_C5_C5_FAMILY_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C6_C8_108_ORBITS_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C6_C8_108_ORBITS_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C6_C8_117_ORBITS_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C6_C8_117_ORBITS_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C6_C8_118_ORBITS_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C6_C8_118_ORBITS_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C6_C8_119_ORBITS_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C6_C8_119_ORBITS_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C6_C8_121_ORBITS_KAPPA3_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C6_C8_121_ORBITS_KAPPA3_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C6_C8_122_ORBITS_KAPPA3_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C6_C8_122_ORBITS_KAPPA3_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C6_C8_123_ORBITS_KAPPA3_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C6_C8_123_ORBITS_KAPPA3_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C6_C8_124_ORBITS_KAPPA3_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C6_C8_124_ORBITS_KAPPA3_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C6_C8_125_ORBITS_KAPPA3_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C6_C8_125_ORBITS_KAPPA3_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C6_C8_130_ORBITS_KAPPA3_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C6_C8_130_ORBITS_KAPPA3_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_C6_C8_ORBITS0_2_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_C6_C8_ORBITS0_2_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_NO_ONE_TERM_SUPPORT.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_NO_ONE_TERM_SUPPORT.md"
+    },
+    {
+      "old_path": "FOURTEEN_VERTEX_ONE_EXTRA_CYCLE_LEMMA.md",
+      "new_path": "claims/finite/n14/FOURTEEN_VERTEX_ONE_EXTRA_CYCLE_LEMMA.md"
+    },
+    {
+      "old_path": "P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md",
+      "new_path": "claims/p4/classifications/P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md"
+    },
+    {
+      "old_path": "P4_BOREL_GAUGE_CORRECTION.md",
+      "new_path": "claims/p4/boundaries/P4_BOREL_GAUGE_CORRECTION.md"
+    },
+    {
+      "old_path": "P4_COMMON_ACTIVE_TAU_ZERO_COMPONENT_ELEVEN_INCLUSION.md",
+      "new_path": "claims/p4/classifications/P4_COMMON_ACTIVE_TAU_ZERO_COMPONENT_ELEVEN_INCLUSION.md"
+    },
+    {
+      "old_path": "P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md",
+      "new_path": "claims/p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md"
+    },
+    {
+      "old_path": "P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md",
+      "new_path": "claims/p4/boundaries/P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md",
+      "new_path": "claims/p4/boundaries/P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P4_COMMON_SINGLETON_COMPONENT.md",
+      "new_path": "claims/p4/classifications/P4_COMMON_SINGLETON_COMPONENT.md"
+    },
+    {
+      "old_path": "P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md",
+      "new_path": "claims/p4/boundaries/P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_ONE_BOUNDARY.md",
+      "new_path": "claims/p4/boundaries/P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_ONE_BOUNDARY.md"
+    },
+    {
+      "old_path": "P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md",
+      "new_path": "claims/p4/classifications/P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md"
+    },
+    {
+      "old_path": "P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md",
+      "new_path": "claims/p4/classifications/P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md"
+    },
+    {
+      "old_path": "P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md",
+      "new_path": "claims/p4/classifications/P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md"
+    },
+    {
+      "old_path": "P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md",
+      "new_path": "claims/p4/classifications/P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md"
+    },
+    {
+      "old_path": "P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md",
+      "new_path": "claims/p4/classifications/P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md"
+    },
+    {
+      "old_path": "P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md",
+      "new_path": "claims/p4/classifications/P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md"
+    },
+    {
+      "old_path": "P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md",
+      "new_path": "claims/p4/classifications/P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md"
+    },
+    {
+      "old_path": "P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md",
+      "new_path": "claims/p4/classifications/P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md"
+    },
+    {
+      "old_path": "P4_OVERLAPPING_MIXED_ORIENTATION_PROJECTIVE_EXHAUSTION.md",
+      "new_path": "claims/p4/classifications/P4_OVERLAPPING_MIXED_ORIENTATION_PROJECTIVE_EXHAUSTION.md"
+    },
+    {
+      "old_path": "P4_RADICAL_CROSSED_211_TRIANGLE_OBSTRUCTION.md",
+      "new_path": "claims/p4/boundaries/P4_RADICAL_CROSSED_211_TRIANGLE_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md",
+      "new_path": "claims/p4/classifications/P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md"
+    },
+    {
+      "old_path": "P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md",
+      "new_path": "claims/p4/classifications/P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md"
+    },
+    {
+      "old_path": "P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md",
+      "new_path": "claims/p4/classifications/P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md"
+    },
+    {
+      "old_path": "SIX_VERTEX_CERTIFICATE.md",
+      "new_path": "claims/finite/n06/SIX_VERTEX_CERTIFICATE.md"
+    },
+    {
+      "old_path": "TEN_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md",
+      "new_path": "claims/finite/n10/TEN_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "TEN_VERTEX_C10_EQUALITY_CERTIFICATE.md",
+      "new_path": "claims/finite/n10/TEN_VERTEX_C10_EQUALITY_CERTIFICATE.md"
+    },
+    {
+      "old_path": "TEN_VERTEX_C4_C6_FAMILY_CERTIFICATE.md",
+      "new_path": "claims/finite/n10/TEN_VERTEX_C4_C6_FAMILY_CERTIFICATE.md"
+    },
+    {
+      "old_path": "TEN_VERTEX_C4_C6_SUPPORT_CERTIFICATE.md",
+      "new_path": "claims/finite/n10/TEN_VERTEX_C4_C6_SUPPORT_CERTIFICATE.md"
+    },
+    {
+      "old_path": "TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md",
+      "new_path": "claims/finite/n10/TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md"
+    },
+    {
+      "old_path": "TEN_VERTEX_ODD_FACTOR_EQUALITY_CERTIFICATE.md",
+      "new_path": "claims/finite/n10/TEN_VERTEX_ODD_FACTOR_EQUALITY_CERTIFICATE.md"
+    },
+    {
+      "old_path": "TWELVE_VERTEX_COMPLEMENT_PROFILE_SET_TREE_OBSTRUCTION.md",
+      "new_path": "claims/finite/n12/TWELVE_VERTEX_COMPLEMENT_PROFILE_SET_TREE_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "TWELVE_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
+      "new_path": "claims/finite/n12/TWELVE_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "audit_eight_vertex_balanced_set_trees.py",
+      "new_path": "claims/finite/n08/audit_eight_vertex_balanced_set_trees.py"
+    },
+    {
+      "old_path": "audit_eight_vertex_parity_hafnian_supports.py",
+      "new_path": "claims/finite/n08/audit_eight_vertex_parity_hafnian_supports.py"
+    },
+    {
+      "old_path": "audit_p4_all_pair_rank_exceptional_graph_reduction.py",
+      "new_path": "claims/p4/classifications/audit_p4_all_pair_rank_exceptional_graph_reduction.py"
+    },
+    {
+      "old_path": "audit_p4_common_active_tau_zero_component_eleven_inclusion.py",
+      "new_path": "claims/p4/classifications/audit_p4_common_active_tau_zero_component_eleven_inclusion.py"
+    },
+    {
+      "old_path": "audit_p4_common_kernel_vertical_triangle_component.py",
+      "new_path": "claims/p4/classifications/audit_p4_common_kernel_vertical_triangle_component.py"
+    },
+    {
+      "old_path": "audit_p4_common_kernel_yx_211_factorisation_obstruction.py",
+      "new_path": "claims/p4/boundaries/audit_p4_common_kernel_yx_211_factorisation_obstruction.py"
+    },
+    {
+      "old_path": "audit_p4_common_kernel_yy_211_triangle_obstruction.py",
+      "new_path": "claims/p4/boundaries/audit_p4_common_kernel_yy_211_triangle_obstruction.py"
+    },
+    {
+      "old_path": "audit_p4_common_singleton_component.py",
+      "new_path": "claims/p4/classifications/audit_p4_common_singleton_component.py"
+    },
+    {
+      "old_path": "audit_p4_common_smooth_diagonal_quadric_obstruction.py",
+      "new_path": "claims/p4/boundaries/audit_p4_common_smooth_diagonal_quadric_obstruction.py"
+    },
+    {
+      "old_path": "audit_p4_cyclic_rank_one_triangle_support_one_boundary.py",
+      "new_path": "claims/p4/boundaries/audit_p4_cyclic_rank_one_triangle_support_one_boundary.py"
+    },
+    {
+      "old_path": "audit_p4_diagonal_quadric_one_three_components.py",
+      "new_path": "claims/p4/classifications/audit_p4_diagonal_quadric_one_three_components.py"
+    },
+    {
+      "old_path": "audit_p4_directed_zero_divisor_triangle_components.py",
+      "new_path": "claims/p4/classifications/audit_p4_directed_zero_divisor_triangle_components.py"
+    },
+    {
+      "old_path": "audit_p4_eisenstein_norm_common_kernel_component.py",
+      "new_path": "claims/p4/classifications/audit_p4_eisenstein_norm_common_kernel_component.py"
+    },
+    {
+      "old_path": "audit_p4_equal_support_common_factor_component.py",
+      "new_path": "claims/p4/classifications/audit_p4_equal_support_common_factor_component.py"
+    },
+    {
+      "old_path": "audit_p4_first_component_apolar_triangle_normal_form.py",
+      "new_path": "claims/p4/classifications/audit_p4_first_component_apolar_triangle_normal_form.py"
+    },
+    {
+      "old_path": "audit_p4_marked_delta2_alternating_gate.py",
+      "new_path": "claims/p4/boundaries/audit_p4_marked_delta2_alternating_gate.py"
+    },
+    {
+      "old_path": "audit_p4_marked_delta2_slice_classification.py",
+      "new_path": "claims/p4/classifications/audit_p4_marked_delta2_slice_classification.py"
+    },
+    {
+      "old_path": "audit_p4_mixed_chain_transverse_component_inclusion.py",
+      "new_path": "claims/p4/classifications/audit_p4_mixed_chain_transverse_component_inclusion.py"
+    },
+    {
+      "old_path": "audit_p4_mixed_determinantal_prime_classification.py",
+      "new_path": "claims/p4/classifications/audit_p4_mixed_determinantal_prime_classification.py"
+    },
+    {
+      "old_path": "audit_p4_overlapping_mixed_orientation_projective_exhaustion.py",
+      "new_path": "claims/p4/classifications/audit_p4_overlapping_mixed_orientation_projective_exhaustion.py"
+    },
+    {
+      "old_path": "audit_p4_radical_crossed_211_triangle_obstruction.py",
+      "new_path": "claims/p4/boundaries/audit_p4_radical_crossed_211_triangle_obstruction.py"
+    },
+    {
+      "old_path": "audit_p4_support_one_211_triangle_reduction.py",
+      "new_path": "claims/p4/classifications/audit_p4_support_one_211_triangle_reduction.py"
+    },
+    {
+      "old_path": "audit_p4_transverse_common_factor_component.py",
+      "new_path": "claims/p4/classifications/audit_p4_transverse_common_factor_component.py"
+    },
+    {
+      "old_path": "audit_p4_unequal_complement_common_kernel_component.py",
+      "new_path": "claims/p4/classifications/audit_p4_unequal_complement_common_kernel_component.py"
+    },
+    {
+      "old_path": "audit_ten_vertex_balanced_set_trees.py",
+      "new_path": "claims/finite/n10/audit_ten_vertex_balanced_set_trees.py"
+    },
+    {
+      "old_path": "audit_twelve_vertex_complement_profile.py",
+      "new_path": "claims/finite/n12/audit_twelve_vertex_complement_profile.py"
+    },
+    {
+      "old_path": "audit_twelve_vertex_port_cell_orbits.py",
+      "new_path": "claims/finite/n12/audit_twelve_vertex_port_cell_orbits.py"
+    },
+    {
+      "old_path": "certify_eight_vertex_balanced_set_trees.py",
+      "new_path": "claims/finite/n08/certify_eight_vertex_balanced_set_trees.py"
+    },
+    {
+      "old_path": "certify_eight_vertex_parity_hafnian_supports.py",
+      "new_path": "claims/finite/n08/certify_eight_vertex_parity_hafnian_supports.py"
+    },
+    {
+      "old_path": "certify_fourteen_vertex_binomial_trinomial.py",
+      "new_path": "claims/finite/n14/certify_fourteen_vertex_binomial_trinomial.py"
+    },
+    {
+      "old_path": "certify_fourteen_vertex_c3_c4_c7_family.py",
+      "new_path": "claims/finite/n14/certify_fourteen_vertex_c3_c4_c7_family.py"
+    },
+    {
+      "old_path": "certify_fourteen_vertex_matching_fork.py",
+      "new_path": "claims/finite/n14/certify_fourteen_vertex_matching_fork.py"
+    },
+    {
+      "old_path": "certify_ten_vertex_balanced_set_trees.py",
+      "new_path": "claims/finite/n10/certify_ten_vertex_balanced_set_trees.py"
+    },
+    {
+      "old_path": "certify_twelve_vertex_complement_profile.py",
+      "new_path": "claims/finite/n12/certify_twelve_vertex_complement_profile.py"
+    },
+    {
+      "old_path": "compare_twelve_vertex_six_potential_orbit_audit.py",
+      "new_path": "tools/explore/compare_twelve_vertex_six_potential_orbit_audit.py"
+    },
+    {
+      "old_path": "count_twelve_vertex_port_cell_orbits.py",
+      "new_path": "tools/explore/count_twelve_vertex_port_cell_orbits.py"
+    },
+    {
+      "old_path": "eight_vertex_degree4_support.py",
+      "new_path": "src/krenn_gu/eight_vertex_degree4_support.py"
+    },
+    {
+      "old_path": "eight_vertex_local_degree4_support.py",
+      "new_path": "claims/finite/n08/eight_vertex_local_degree4_support.py"
+    },
+    {
+      "old_path": "explore_twelve_vertex_complement_chain_orbits.py",
+      "new_path": "tools/explore/explore_twelve_vertex_complement_chain_orbits.py"
+    },
+    {
+      "old_path": "explore_twelve_vertex_complement_set_tree_cnf.py",
+      "new_path": "tools/explore/explore_twelve_vertex_complement_set_tree_cnf.py"
+    },
+    {
+      "old_path": "find_fourteen_vertex_one_extra_cycle_core.py",
+      "new_path": "tools/explore/find_fourteen_vertex_one_extra_cycle_core.py"
+    },
+    {
+      "old_path": "materialize_verified_dimacs_clause_subset.py",
+      "new_path": "tools/generate/materialize_verified_dimacs_clause_subset.py"
+    },
+    {
+      "old_path": "run_drat_trim.py",
+      "new_path": "tools/generate/run_drat_trim.py"
+    },
+    {
+      "old_path": "run_kissat_proof.py",
+      "new_path": "tools/generate/run_kissat_proof.py"
+    },
+    {
+      "old_path": "scout_twelve_vertex_six_potential_cells.py",
+      "new_path": "tools/explore/scout_twelve_vertex_six_potential_cells.py"
+    },
+    {
+      "old_path": "verify_cancellation_transport_manifest.py",
+      "new_path": "claims/finite/n08/verify_cancellation_transport_manifest.py"
+    },
+    {
+      "old_path": "verify_catalogue_selector.py",
+      "new_path": "claims/finite/n08/verify_catalogue_selector.py"
+    },
+    {
+      "old_path": "verify_eight_vertex_16edge.py",
+      "new_path": "claims/finite/n08/verify_eight_vertex_16edge.py"
+    },
+    {
+      "old_path": "verify_eight_vertex_4regular.py",
+      "new_path": "claims/finite/n08/verify_eight_vertex_4regular.py"
+    },
+    {
+      "old_path": "verify_eight_vertex_degree3_e19.py",
+      "new_path": "claims/finite/n08/verify_eight_vertex_degree3_e19.py"
+    },
+    {
+      "old_path": "verify_eight_vertex_degree4_e17.py",
+      "new_path": "claims/finite/n08/verify_eight_vertex_degree4_e17.py"
+    },
+    {
+      "old_path": "verify_eight_vertex_degree4_frontier.py",
+      "new_path": "claims/finite/n08/verify_eight_vertex_degree4_frontier.py"
+    },
+    {
+      "old_path": "verify_eight_vertex_entry84_boundary.py",
+      "new_path": "claims/finite/n08/verify_eight_vertex_entry84_boundary.py"
+    },
+    {
+      "old_path": "verify_eight_vertex_three_amplitude_forks.py",
+      "new_path": "claims/finite/n08/verify_eight_vertex_three_amplitude_forks.py"
+    },
+    {
+      "old_path": "verify_five_regular_double_c4_singleton_family.py",
+      "new_path": "claims/finite/n08/verify_five_regular_double_c4_singleton_family.py"
+    },
+    {
+      "old_path": "verify_five_regular_full_singleton_family.py",
+      "new_path": "claims/finite/n08/verify_five_regular_full_singleton_family.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_binomial_support_closure_augmentation.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_binomial_support_closure_augmentation.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_binomial_trinomial.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_binomial_trinomial.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c3_c3_c4_c4_family.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c3_c3_c4_c4_family.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c3_c3_c8_family.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c3_c3_c8_family.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c3_c4_c7_family.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c3_c4_c7_family.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c3_c5_c6_family.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c3_c5_c6_family.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_10_orbit1.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_10_orbit1.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_58_orbits.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_58_orbits.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit2.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit2.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit3.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit3.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit44_core24.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit44_core24.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit44_extension.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit44_extension.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit5.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit5.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit6.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit6.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit7.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit7.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit8.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit8.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c5_c5_family.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c5_c5_family.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_108_orbits.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_108_orbits.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_117_orbits.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_117_orbits.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_118_orbits.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_118_orbits.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_119_orbits.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_119_orbits.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_121_orbits_kappa3.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_121_orbits_kappa3.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_122_orbits_kappa3.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_122_orbits_kappa3.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_123_orbits_kappa3.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_123_orbits_kappa3.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_124_orbits_kappa3.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_124_orbits_kappa3.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_125_orbits_kappa3.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_125_orbits_kappa3.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_130_orbits_kappa3.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_130_orbits_kappa3.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_orbits0_2.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_orbits0_2.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_minimal_circuit_frontiers.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_minimal_circuit_frontiers.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_no_one_term_support.py",
+      "new_path": "src/krenn_gu/verify_fourteen_vertex_no_one_term_support.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_one_extra_cycle_core.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_one_extra_cycle_core.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_partial_circuit_binomial_branch.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_partial_circuit_binomial_branch.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_partial_circuit_binomial_selection_chain.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_partial_circuit_binomial_selection_chain.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_two_even_cycle_minimum_activity_augmentation.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_two_even_cycle_minimum_activity_augmentation.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_two_even_cycle_one_extra_cycle_augmentation.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_two_even_cycle_one_extra_cycle_augmentation.py"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_unforced_factor_choice_core.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_unforced_factor_choice_core.py"
+    },
+    {
+      "old_path": "verify_laurent_batch_manifest.py",
+      "new_path": "src/krenn_gu/verify_laurent_batch_manifest.py"
+    },
+    {
+      "old_path": "verify_matching_rectangle_manifest.py",
+      "new_path": "claims/finite/n08/verify_matching_rectangle_manifest.py"
+    },
+    {
+      "old_path": "verify_materialized_dimacs_clause_subset.py",
+      "new_path": "claims/finite/n14/verify_materialized_dimacs_clause_subset.py"
+    },
+    {
+      "old_path": "verify_p4_all_pair_rank_exceptional_graph_reduction.py",
+      "new_path": "claims/p4/classifications/verify_p4_all_pair_rank_exceptional_graph_reduction.py"
+    },
+    {
+      "old_path": "verify_p4_common_active_tau_zero_component_eleven_inclusion.py",
+      "new_path": "claims/p4/classifications/verify_p4_common_active_tau_zero_component_eleven_inclusion.py"
+    },
+    {
+      "old_path": "verify_p4_common_kernel_vertical_triangle_component.py",
+      "new_path": "claims/p4/classifications/verify_p4_common_kernel_vertical_triangle_component.py"
+    },
+    {
+      "old_path": "verify_p4_common_kernel_yx_211_factorisation_obstruction.py",
+      "new_path": "claims/p4/boundaries/verify_p4_common_kernel_yx_211_factorisation_obstruction.py"
+    },
+    {
+      "old_path": "verify_p4_common_kernel_yy_211_triangle_obstruction.py",
+      "new_path": "claims/p4/boundaries/verify_p4_common_kernel_yy_211_triangle_obstruction.py"
+    },
+    {
+      "old_path": "verify_p4_common_singleton_component.py",
+      "new_path": "claims/p4/classifications/verify_p4_common_singleton_component.py"
+    },
+    {
+      "old_path": "verify_p4_common_smooth_diagonal_quadric_obstruction.py",
+      "new_path": "claims/p4/boundaries/verify_p4_common_smooth_diagonal_quadric_obstruction.py"
+    },
+    {
+      "old_path": "verify_p4_cyclic_rank_one_triangle_support_one_boundary.py",
+      "new_path": "claims/p4/boundaries/verify_p4_cyclic_rank_one_triangle_support_one_boundary.py"
+    },
+    {
+      "old_path": "verify_p4_diagonal_quadric_one_three_components.py",
+      "new_path": "claims/p4/classifications/verify_p4_diagonal_quadric_one_three_components.py"
+    },
+    {
+      "old_path": "verify_p4_directed_zero_divisor_triangle_components.py",
+      "new_path": "claims/p4/classifications/verify_p4_directed_zero_divisor_triangle_components.py"
+    },
+    {
+      "old_path": "verify_p4_eisenstein_norm_common_kernel_component.py",
+      "new_path": "claims/p4/classifications/verify_p4_eisenstein_norm_common_kernel_component.py"
+    },
+    {
+      "old_path": "verify_p4_equal_support_common_factor_component.py",
+      "new_path": "claims/p4/classifications/verify_p4_equal_support_common_factor_component.py"
+    },
+    {
+      "old_path": "verify_p4_first_component_apolar_triangle_normal_form.py",
+      "new_path": "claims/p4/classifications/verify_p4_first_component_apolar_triangle_normal_form.py"
+    },
+    {
+      "old_path": "verify_p4_marked_delta2_alternating_gate.py",
+      "new_path": "claims/p4/boundaries/verify_p4_marked_delta2_alternating_gate.py"
+    },
+    {
+      "old_path": "verify_p4_marked_delta2_slice_classification.py",
+      "new_path": "claims/p4/classifications/verify_p4_marked_delta2_slice_classification.py"
+    },
+    {
+      "old_path": "verify_p4_mixed_chain_transverse_component_inclusion.py",
+      "new_path": "claims/p4/classifications/verify_p4_mixed_chain_transverse_component_inclusion.py"
+    },
+    {
+      "old_path": "verify_p4_mixed_determinantal_prime_classification.py",
+      "new_path": "claims/p4/classifications/verify_p4_mixed_determinantal_prime_classification.py"
+    },
+    {
+      "old_path": "verify_p4_overlapping_mixed_orientation_projective_exhaustion.py",
+      "new_path": "claims/p4/classifications/verify_p4_overlapping_mixed_orientation_projective_exhaustion.py"
+    },
+    {
+      "old_path": "verify_p4_radical_crossed_211_triangle_obstruction.py",
+      "new_path": "claims/p4/boundaries/verify_p4_radical_crossed_211_triangle_obstruction.py"
+    },
+    {
+      "old_path": "verify_p4_support_one_211_triangle_reduction.py",
+      "new_path": "claims/p4/classifications/verify_p4_support_one_211_triangle_reduction.py"
+    },
+    {
+      "old_path": "verify_p4_transverse_common_factor_component.py",
+      "new_path": "claims/p4/classifications/verify_p4_transverse_common_factor_component.py"
+    },
+    {
+      "old_path": "verify_p4_unequal_complement_common_kernel_component.py",
+      "new_path": "claims/p4/classifications/verify_p4_unequal_complement_common_kernel_component.py"
+    },
+    {
+      "old_path": "verify_six_vertex_final.py",
+      "new_path": "claims/finite/n06/verify_six_vertex_final.py"
+    },
+    {
+      "old_path": "verify_skeleton_laurent_batch.py",
+      "new_path": "claims/finite/n08/verify_skeleton_laurent_batch.py"
+    },
+    {
+      "old_path": "verify_ten_vertex_c10_equality_family.py",
+      "new_path": "claims/finite/n10/verify_ten_vertex_c10_equality_family.py"
+    },
+    {
+      "old_path": "verify_ten_vertex_c4_c6_equality_family.py",
+      "new_path": "claims/finite/n10/verify_ten_vertex_c4_c6_equality_family.py"
+    },
+    {
+      "old_path": "verify_ten_vertex_equality_factor_lattice.py",
+      "new_path": "claims/finite/n10/verify_ten_vertex_equality_factor_lattice.py"
+    },
+    {
+      "old_path": "verify_ten_vertex_equality_factor_lattice_final.py",
+      "new_path": "claims/finite/n10/verify_ten_vertex_equality_factor_lattice_final.py"
+    },
+    {
+      "old_path": "verify_ten_vertex_five_regular_equality_boundary.py",
+      "new_path": "claims/finite/n10/verify_ten_vertex_five_regular_equality_boundary.py"
+    },
+    {
+      "old_path": "verify_ten_vertex_odd_factor_equality_family.py",
+      "new_path": "claims/finite/n10/verify_ten_vertex_odd_factor_equality_family.py"
+    },
+    {
+      "old_path": "verify_ten_vertex_three_amplitude_certificate.py",
+      "new_path": "claims/finite/n10/verify_ten_vertex_three_amplitude_certificate.py"
+    },
+    {
+      "old_path": "verify_unary_cycle_relation_family.py",
+      "new_path": "claims/finite/n08/verify_unary_cycle_relation_family.py"
+    },
+    {
+      "old_path": "write_twelve_vertex_orbit_input.py",
+      "new_path": "tools/generate/write_twelve_vertex_orbit_input.py"
+    }
+  ],
+  "rationale": "Stage 28: migrate the exact independently reviewed 201-file bounded finite and conflict-free P4 ownership forest while preserving theorem/evidence boundaries and reducing root debt.",
+  "notes": "Exact mapping reviewed by Codex under the repository-owner standing delegation dated 2026-08-08. Preserve every finite order/support/case bound, P4 scope and lifecycle wall, ledger status and evidence provenance, the exclusion and unadjudicated status of all four owner-gated conflicts, arbitrary P7/local-to-global UNKNOWN, and global Krenn-Gu UNRESOLVED. Execute only with the repair inventory, two-anchor Component20 provenance checkpoint, and validation contract frozen in docs/architecture/finite-p4-stage28-dry-run.md."
+}

@@ -16,7 +16,7 @@ and the global Krenn--Gu conjecture remain open.
 ## Pure bases and the marked extension problem
 
 Use the families in
-[`P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md`](../../../../P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md).
+[`P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md`](../../../p4/classifications/P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md).
 Write their pure-factor bases as `(alpha_i,beta_i)`, with
 
 ```text

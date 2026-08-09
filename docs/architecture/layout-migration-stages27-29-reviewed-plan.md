@@ -1,7 +1,7 @@
 # Layout migration Stages 27-29 reviewed plan
 
-Status: **REVIEWED, CONFLICT-FREE PLAN; NO STAGE 27-29 MOVE HAS YET BEEN
-FROZEN OR EXECUTED.**
+Status: **STAGES 27-28 COMPLETE AND LOCALLY VALIDATED; STAGE 29 REMAINS
+REVIEWED, UNFROZEN, AND UNEXECUTED.**
 
 The global Krenn-Gu conjecture remains **UNRESOLVED**. This plan changes
 filesystem and executable-path ownership and corrects stale ledger mappings
@@ -384,12 +384,13 @@ algorithm change, assertion change, or evidence-schema change is required.
 
 One staying Component20 audit constructs `git diff` arguments from
 `Path.name`. Its `frozen_component_sources_unchanged()` guard is already false
-at the reviewed base against historical commit `f997c...`: three of its four
-sources moved or received link rewrites in earlier stages, and Stage 28 moves
-the fourth. Merely changing the arguments to repository-relative paths would
-therefore preserve a false guard. The Stage 28 freeze must retain the old
-provenance, establish an exact post-rewrite source checkpoint/blob set, and
-compare the four current repository-relative source blobs to that checkpoint.
+at the reviewed base against historical commit `f997c...`: three sources moved
+with path-only link/command rewrites in earlier stages; the fourth already
+received path-only link rewrites and moves in Stage 28. Merely changing the
+arguments to repository-relative paths would therefore preserve a false
+guard. The Stage 28 freeze must retain the old provenance, establish an exact
+post-rewrite source checkpoint/blob set, and compare the four current
+repository-relative source blobs to that checkpoint.
 A focused test must exercise the repaired guard. This is a bounded
 provenance/path repair; it does not consume or adjudicate the excluded
 Component20 claim package or rerun its mathematics.

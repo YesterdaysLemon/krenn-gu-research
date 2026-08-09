@@ -21,8 +21,8 @@ from krenn_gu.bootstrap import bootstrap  # noqa: E402
 REPO_ROOT, HERE = bootstrap(__file__)
 THEOREM = HERE / "P4_COMMON_KERNEL_YY_211_TRIANGLE_PROJECTIVE_CLASSIFICATION.md"
 PRIMARY = HERE / "verify_p4_common_kernel_yy_211_triangle_projective_classification.py"
-COMPONENT13 = REPO_ROOT / "P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md"
-DENSE = REPO_ROOT / "P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md"
+COMPONENT13 = REPO_ROOT / "claims/p4/classifications/P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md"
+DENSE = REPO_ROOT / "claims/p4/boundaries/P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md"
 PAIRS = tuple(itertools.combinations(range(4), 2))
 MASKS3 = (14, 13, 11, 7)
 

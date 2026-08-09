@@ -8,21 +8,31 @@ import itertools
 import json
 import subprocess
 from datetime import UTC, datetime
+import sys
 from pathlib import Path
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 
 import sympy as sp
 import z3
 
-ROOT = Path(__file__).resolve().parent
+ROOT = HERE
 SCRIPT = Path(__file__).resolve()
 REPORT = ROOT / "COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_CANDIDATE.md"
 CERTIFICATE = ROOT / "component20_intrinsic_zero_diagonal_dvr_atlas_certificate.json"
-INPUTS = tuple(ROOT / name for name in (
+INPUTS = tuple(REPO_ROOT / name for name in (
     "claims/p4/classifications/triangle-211/common-active-binary-triangle/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md",
     "COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md",
-    "P4_COMMON_SINGLETON_COMPONENT.md",
+    "claims/p4/classifications/P4_COMMON_SINGLETON_COMPONENT.md",
     "claims/p4/classifications/triangle-211/triple-kernel-rank-one-triangle/P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md",
-    "P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md",
+    "claims/p4/classifications/P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md",
     "claims/p4/boundaries/pair-geometry/support-one-secant/P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md",
     "claims/p5/h31/common-singleton/P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
     "claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",

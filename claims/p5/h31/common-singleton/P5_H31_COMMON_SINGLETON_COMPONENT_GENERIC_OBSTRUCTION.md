@@ -24,7 +24,7 @@ K=C(L,M,a,b,c)
 ```
 
 subject to the dense-open conditions in
-[`P4_COMMON_SINGLETON_COMPONENT.md`](../../../../P4_COMMON_SINGLETON_COMPONENT.md).  Put
+[`P4_COMMON_SINGLETON_COMPONENT.md`](../../../p4/classifications/P4_COMMON_SINGLETON_COMPONENT.md).  Put
 
 ```text
 e=(1,0,0,0),

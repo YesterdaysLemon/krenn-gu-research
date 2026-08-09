@@ -222,7 +222,7 @@ d'=-q(d+p+q)/(d+q).                                (15)
 ```
 
 All remaining primes in (4) have since been identified in
-[`P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md`](../../../../P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md).
+[`P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md`](../../classifications/P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md).
 The prime `(d+q,a+c+p)` is a proper subfamily of the six-dimensional
 component, while the last two primes are symmetry charts of `L_2` and
 `L_1`.

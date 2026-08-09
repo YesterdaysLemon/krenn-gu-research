@@ -16,7 +16,7 @@ global Krenn--Gu conjecture remain open.
 ## Intrinsic rows on the norm quadric
 
 Use the normal form from
-[`P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md`](../../../../P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md):
+[`P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md`](../../../p4/classifications/P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md):
 
 ```text
 a=X_0+X_1,       c=X_0-X_1,

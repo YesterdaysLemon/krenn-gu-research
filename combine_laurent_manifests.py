@@ -12,7 +12,17 @@ from eight_vertex_degree4_cegar import (
     write_augmented_cnf,
 )
 from search_witness import EquationSystem
-from verify_laurent_batch_manifest import (
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+from krenn_gu.verify_laurent_batch_manifest import (
     audit_conflict,
     structural_zero_indices,
 )

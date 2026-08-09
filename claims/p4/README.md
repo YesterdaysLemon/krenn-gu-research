@@ -59,6 +59,23 @@ withdrawn, not live.  Migration completeness is not mathematical
 exhaustiveness: each spine README states its own scope and the
 global conjecture remains **UNRESOLVED**.
 
+## Stage 28 finite/P4 tranche
+
+Stage 28 moved 68 conflict-free P4 ownership records: 18 under
+[`boundaries/`](boundaries/) and 50 under
+[`classifications/`](classifications/). The 24 claim documents retain their
+existing component, boundary, obstruction, reduction, lifecycle, and evidence
+scopes; the 44 carriers do not acquire new ledger roles by co-location.
+
+The all-pair-rank reduction remains a pure-`P_4` component-exhaustiveness
+record, not a marked-`P_5` or global theorem. Its ledger status remains
+`verified_generic`, its independent audit remains unmapped, and its
+`BOTTLENECK B3` quantifier-review note remains live. Stage 28 did not consume
+the weighted-`p+q`, Component20 proof-B, in/out working-note, marked-H31, or
+first/second-component conflict surfaces.
+
+See the [Stage 28 migration report](../../docs/architecture/layout-migration-stage28-report.md).
+
 ## Structure
 
 Each component package holds its theorem document, primary verifier,
@@ -76,7 +93,7 @@ documented:
 
 - component census and exhaustiveness: the checkpoint section of the
   top-level [`README.md`](../../README.md) and
-  [`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](../../P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md);
+  [`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](classifications/P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md);
 - migration mechanics and provenance:
   [`docs/architecture/layout-migration-stage4-report.md`](../../docs/architecture/layout-migration-stage4-report.md)
   and [`catalog/moved-paths.json`](../../catalog/moved-paths.json).

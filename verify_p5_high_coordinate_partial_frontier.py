@@ -5,11 +5,21 @@ from __future__ import annotations
 
 import hashlib
 import json
+import sys
 from pathlib import Path
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 
 import sympy as sp
 
-ROOT = Path(__file__).resolve().parent
+ROOT = HERE
 THEOREM = ROOT / "P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md"
 DEPENDENCIES = (
     ROOT / "P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md",
@@ -21,8 +31,8 @@ DEPENDENCIES = (
     (
     ROOT / "claims" / "p4" / "components" / "diagonal-quadric"
     / "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md"),
-    ROOT / "P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md",
-    ROOT / "P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md",
+    REPO_ROOT / "claims/p4/classifications/P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md",
+    REPO_ROOT / "claims/p4/boundaries/P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md",
     ROOT / "claims" / "p4" / "classifications" / "star"
     / "radical-star" / "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md",
     (
@@ -66,7 +76,7 @@ DEPENDENCIES = (
     / "P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md",
     ROOT
     / "P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md",
-    ROOT / "P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md",
+    REPO_ROOT / "claims/p4/classifications/P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md",
     ROOT / "claims/p5/h31/one-three"
     / "P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md",
     ROOT / "P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md",

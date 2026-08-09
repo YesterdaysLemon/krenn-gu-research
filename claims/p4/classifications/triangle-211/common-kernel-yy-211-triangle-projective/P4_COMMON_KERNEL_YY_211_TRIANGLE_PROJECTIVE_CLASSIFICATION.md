@@ -12,7 +12,7 @@ y_1x_2-x_1y_2=0                                  (1)
 
 in the `triangle-(2,1,1)` cell.  The dense complementary-binary torus is
 empty by
-[`P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md`](../../../../../P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md).
+[`P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md`](../../../boundaries/P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md).
 This theorem classifies its complete projective boundary:
 
 - a vanishing or coordinate-supported synchronized complement is lower-pair

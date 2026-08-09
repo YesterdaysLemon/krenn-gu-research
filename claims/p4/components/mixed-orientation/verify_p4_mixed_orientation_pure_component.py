@@ -27,7 +27,7 @@ KNOWN_FIRST = REPO_ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two
 KNOWN_SECOND = (
     REPO_ROOT / "claims" / "p4" / "components" / "diagonal-quadric"
     / "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md")
-KNOWN_THREE = REPO_ROOT / "P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md"
+KNOWN_THREE = REPO_ROOT / "claims/p4/classifications/P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md"
 RADICAL_STAR = (
     REPO_ROOT / "claims" / "p4" / "classifications" / "star"
     / "radical-star" / "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md")

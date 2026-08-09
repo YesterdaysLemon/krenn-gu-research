@@ -17,7 +17,7 @@ and the global Krenn--Gu conjecture remain open.
 ## From a graph lift to two Fitting incidences
 
 Use the pure-factor bases `(alpha_i,beta_i)` of
-[`P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md`](../../../../P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md),
+[`P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md`](../../../p4/classifications/P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md),
 with the path basis change
 
 ```text

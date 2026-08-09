@@ -8,15 +8,25 @@ import itertools
 import json
 import subprocess
 from datetime import UTC, datetime
+import sys
 from pathlib import Path
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 
 import sympy as sp
 
-ROOT = Path(__file__).resolve().parent
+ROOT = HERE
 SCRIPT = Path(__file__).resolve()
 REPORT = ROOT / "P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_AXES_COMPATIBILITY_OBSTRUCTION_CANDIDATE.md"
 CERTIFICATE = ROOT / "p5_h22_component19_p0_qphi_minus_one_axes_compatibility_certificate.json"
-SOURCE = ROOT / "P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md"
+SOURCE = REPO_ROOT / "claims/p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md"
 FRAME_REPORT = ROOT / "P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_AXES_VERIFICATION.md"
 H22_THEORY = ROOT / "P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md"
 

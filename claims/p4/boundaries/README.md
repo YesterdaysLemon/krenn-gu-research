@@ -24,9 +24,26 @@ reassignment is recorded in the migration report.
 | pair geometry | [`pair-geometry/`](pair-geometry/) | 2 | `p4-pair-geometry-stage7` |
 | rank-two-triangle (nonresonant/resonant/mixed obstructions) | [`rank-two-triangle/`](rank-two-triangle/) | 7 | `p4-rank-two-triangle-stage8` |
 
-## Pending
+## Stage 28 top-level boundary records
 
-The remaining P4 boundary records remain at the repository root under
-`review_required` until they pass the same authorized-review +
-frozen-batch process.  Nothing may be executed without an exact
-authorized-reviewed batch in `catalog/batches/`.
+- [`P4_BOREL_GAUGE_CORRECTION.md`](P4_BOREL_GAUGE_CORRECTION.md) preserves
+  the withdrawn status of its overstrong antecedents.
+- [`P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md`](P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md)
+- [`P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md`](P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md)
+- [`P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md`](P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md)
+- [`P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_ONE_BOUNDARY.md`](P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_ONE_BOUNDARY.md)
+- [`P4_RADICAL_CROSSED_211_TRIANGLE_OBSTRUCTION.md`](P4_RADICAL_CROSSED_211_TRIANGLE_OBSTRUCTION.md)
+
+The `verify_p4_marked_delta2_alternating_gate.py` and
+`audit_p4_marked_delta2_alternating_gate.py` carriers are intentionally
+boundary-owned while their theorem document is under
+[`../classifications/`](../classifications/). This asymmetric surface is
+preserved rather than converted into a new evidence claim.
+
+## Still excluded
+
+Stage 28 leaves the common-active weighted-`p+q` boundary triple, both
+Component20 proof-B records and conflict carriers, and the in/out-path working
+note and external tools at the repository root. Their ownership and any
+associated status conflicts remain unadjudicated. See the
+[Stage 28 report](../../../docs/architecture/layout-migration-stage28-report.md).

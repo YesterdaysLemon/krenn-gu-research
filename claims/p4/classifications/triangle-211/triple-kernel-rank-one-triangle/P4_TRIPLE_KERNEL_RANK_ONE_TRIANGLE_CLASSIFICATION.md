@@ -87,7 +87,7 @@ P_3(ell,v_i,v_j)=0       for i<j.                   (6)
 ```
 
 Equations (4)--(6), together with `T!=0`, are exactly the intrinsic family
-in [`P4_COMMON_SINGLETON_COMPONENT.md`](../../../../../P4_COMMON_SINGLETON_COMPONENT.md).
+in [`P4_COMMON_SINGLETON_COMPONENT.md`](../../P4_COMMON_SINGLETON_COMPONENT.md).
 This proves containment in component eighteen, including its special
 orthogonal-flag boundary.
 
@@ -209,7 +209,7 @@ span(e-C,A+e)                                      (17)
 ```
 
 from
-[`P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md`](../../../../../P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md).
+[`P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md`](../../P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md).
 
 For a row `z=z_A A+z_B B+z_e e+z_C C`, put
 
@@ -257,9 +257,9 @@ where every edge is doubly oriented because its unique relation is
 kernel--kernel.  Together with the exactly-two-kernel theorem cited above,
 this leaves only the pattern with exactly one kernel--kernel edge inside
 `triangle-(1,1,1)`; its finite residual normal forms are recorded in
-[`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](../../../../../P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md).
+[`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](../../P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md).
 The other three coarse cells listed in
-[`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](../../../../../P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md)
+[`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](../../P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md)
 also remain open.
 
 ## Exact replay

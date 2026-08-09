@@ -15,6 +15,14 @@ import time
 from pathlib import Path
 
 
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 PREFIX = "fourteen_vertex_c4_c4_c6"
 CNF_STEM = (
     f"{PREFIX}_rule_sat_late_combined_v7_orbit8_partial2_"
@@ -146,7 +154,7 @@ def main() -> None:
         verify_result = run(
             [
                 sys.executable,
-                "verify_fourteen_vertex_partial_circuit_binomial_branch.py",
+                str(REPO_ROOT / "claims" / "finite" / "n14" / "verify_fourteen_vertex_partial_circuit_binomial_branch.py"),
                 str(analysis),
                 "--output",
                 str(verified_support),
@@ -184,7 +192,7 @@ def main() -> None:
         audit_result = run(
             [
                 sys.executable,
-                "verify_fourteen_vertex_binomial_support_closure_augmentation.py",
+                str(REPO_ROOT / "claims" / "finite" / "n14" / "verify_fourteen_vertex_binomial_support_closure_augmentation.py"),
                 str(augmentation),
                 "--output",
                 str(verified_augmentation),

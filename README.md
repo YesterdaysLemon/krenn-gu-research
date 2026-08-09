@@ -1179,7 +1179,7 @@ is exactly `L_3`; a previously suggested rational point is replayed as
 non-pure.  Together with the lower-pair theorem, this proves that the
 twenty-five certified pure-`P_4` component closures are exhaustive.
 See
-[`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md)
+[`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](claims/p4/classifications/P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md)
 and
 [`P4_NO_DOUBLE_ENDPOINT_STAR_1110_COLLISION_CLASSIFICATION.md`](claims/p4/classifications/star/no-double-endpoint-star-1110-collision/P4_NO_DOUBLE_ENDPOINT_STAR_1110_COLLISION_CLASSIFICATION.md).
 
@@ -2557,7 +2557,7 @@ strictly advance the finite frontier:
   `-2(p e_0+q e_1) tensor e_1 tensor e_1 tensor e_1`; restoring the source
   torus gives the known fivefold.  An exact Pluecker map identifies this with
   the old five-parameter family:
-  [`P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md`](P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md).
+  [`P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md`](claims/p4/classifications/P4_FIRST_COMPONENT_APOLAR_TRIANGLE_NORMAL_FORM.md).
 - the crossed Borel orientation of that `(2,1,1)` triangle is now classified
   on the complete genuine support-two stratum.  The six binary zero-product
   labels form the octahedron `J(4,2)=L(K_4)`.  Equal labels force the three
@@ -2580,7 +2580,7 @@ strictly advance the finite frontier:
   diagonal-source closure is a smooth six-dimensional component.  Its
   sorted pair profile `(3,3,3,4,4,4)` distinguishes it from the previous
   sixfold's `(2,3,3,4,4,4)`:
-  [`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md).
+  [`P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md`](claims/p4/classifications/P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md).
 - the eleventh component's complete generic marked `H31` fibre is empty.
   Over `C(p,q,r)[h0,h1,h2,h3]`, the all-kernel diagonal row lies in the
   polynomial row module of the fourteen mixed extension rows for every
@@ -2610,7 +2610,7 @@ strictly advance the finite frontier:
   `12h^2`; the five source-torus family directions therefore fill a new
   five-dimensional component.  Its five-edge exceptional
   graph and theorem are in
-  [`P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md`](P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md).
+  [`P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md`](claims/p4/classifications/P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md).
   Its complete generic marked `H31` fibre is empty as well.  Over
   `C(r,k)[h0,h1,h2,h3]`, the all-kernel diagonal belongs to the fourteen-row
   mixed module for every deleted coordinate, while the all-active diagonal
@@ -2631,7 +2631,7 @@ strictly advance the finite frontier:
   `delta*C2-beta*(beta+r)*C0`, a linear combination of kernel-rich cubics.
   Any opposite plane killing the mixed coefficients therefore kills the pure
   coefficient too:
-  [`P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md`](P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md).
+  [`P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md`](claims/p4/boundaries/P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md).
 - the mixed `YX` common-kernel orientation is empty on the entire genuine
   support-two exact-pair stratum.  Its synchronization law is a factorization
   `b*d=a^2`.  The complementary coefficients either vanish, giving pair-image
@@ -2639,7 +2639,7 @@ strictly advance the finite frontier:
   case a second exact relation confines the pair image to
   `span(a^2,a*s)`, of rank at most two.  Thus it can never be the required
   rank-three edge:
-  [`P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md`](P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md).
+  [`P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md`](claims/p4/boundaries/P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md).
 - the active `XX` orientation is a survivor: it supplies a thirteenth
   component.  Its normalized parameters lie on the Eisenstein norm quadric
   `N(alpha,gamma)=N(r+beta,beta)`, where `N(x,y)=x^2+xy+y^2`.
@@ -2647,7 +2647,7 @@ strictly advance the finite frontier:
   `P^1 x P^1`.  On the quadric the restriction is exactly `4*x0*x1*x2*x3`.
   A family tangent minor `1/864` and universal incidence minor `-2/81`
   certify a smooth five-dimensional component:
-  [`P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md`](P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md).
+  [`P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md`](claims/p4/classifications/P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md).
   Its graph is in
   [`research_figures/P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg`](research_figures/P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT_GRAPH.svg).
   Its complete generic marked `H31` fibre is empty.  A rational projection of
@@ -2675,7 +2675,7 @@ strictly advance the finite frontier:
   projective direction is lower-pair, embedded-`P_3`, or zero.  Together
   with the five other flag orbits, this completely closes the
   `triangle-(2,1,1)` cell:
-  [`P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md`](P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md),
+  [`P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md`](claims/p4/classifications/P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md),
   [`P4_211_TRIANGLE_COMPLETE_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/211-triangle-complete/P4_211_TRIANGLE_COMPLETE_CLASSIFICATION.md).
   Its complete generic marked `H31` fibre is empty.  Exact projection leaves
   four binary marking branches, and a uniform mode-three one-marked minor
@@ -2802,7 +2802,7 @@ strictly advance the finite frontier:
   the internal edge coefficients obey an identity violated by the star.
   Frobenius--Kunneth then identifies every nonzero pure survivor as an
   embedded pure-`P3` suspension:
-  [`P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md`](P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md).
+  [`P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md`](claims/p4/classifications/P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md).
   At that checkpoint only genuinely lower-pair-rank strata remained; the
   later rank-one obstruction and rank-two exhaustion theorem below close
   those strata as a source of further components.
@@ -2944,8 +2944,8 @@ strictly advance the finite frontier:
   lower-pair, and their corner is zero or an embedded `P_3` suspension.
   Therefore this complete projective orientation chart raises the certified
   lower bound to **seventeen** component orbits:
-  [`P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md`](P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md),
-  [`P4_OVERLAPPING_MIXED_ORIENTATION_PROJECTIVE_EXHAUSTION.md`](P4_OVERLAPPING_MIXED_ORIENTATION_PROJECTIVE_EXHAUSTION.md).
+  [`P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md`](claims/p4/classifications/P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md),
+  [`P4_OVERLAPPING_MIXED_ORIENTATION_PROJECTIVE_EXHAUSTION.md`](claims/p4/classifications/P4_OVERLAPPING_MIXED_ORIENTATION_PROJECTIVE_EXHAUSTION.md).
 - the complete cyclic rank-one triangle orientation is now classified by a
   `C^*`-gain graph on the source-coordinate `K_4`.  Three distinct support
   labels form only a star, path, or triangle.  Forest switching gives
@@ -2979,7 +2979,7 @@ strictly advance the finite frontier:
   an explicit pivot correction, so the whole fibre—not just one point—lies
   in component seventeen, sixteen, or seventeen.  Thus both the genuine
   support-two and singleton parts of the cyclic orientation are complete:
-  [`P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_ONE_BOUNDARY.md`](P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_ONE_BOUNDARY.md).
+  [`P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_ONE_BOUNDARY.md`](claims/p4/boundaries/P4_CYCLIC_RANK_ONE_TRIANGLE_SUPPORT_ONE_BOUNDARY.md).
 - the all-pair-ranks-at-least-three component problem has an
   exact eight-cell reduction.  Perfect pairing forces the rank-three edges
   to block all three 1-factors of the source `K_4`; every minimal blocker is
@@ -2991,7 +2991,7 @@ strictly advance the finite frontier:
   rank-one relations, including every double-spoke and no-double boundary of
   `star-(1,1,1)`.  Together with lower-pair exhaustion, all twenty-five
   certified component closures are now exhaustive:
-  [`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md).
+  [`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](claims/p4/classifications/P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md).
 - the common-singleton family in the `triangle-(1,1,1)` cell is now a
   certified eighteenth component orbit.  Its rational five-parameter chart
   has all pair ranks three.  A fifteen-equation graph slice has exact local
@@ -2999,7 +2999,7 @@ strictly advance the finite frontier:
   five-dimensional characteristic-zero incidence germ.  The closed condition
   `all six pair ranks <=3` separates the resulting irreducible component from
   every previous orbit, each of which has a certified rank-four pair:
-  [`P4_COMMON_SINGLETON_COMPONENT.md`](P4_COMMON_SINGLETON_COMPONENT.md).
+  [`P4_COMMON_SINGLETON_COMPONENT.md`](claims/p4/classifications/P4_COMMON_SINGLETON_COMPONENT.md).
 - the two extreme kernel--kernel boundaries of that same cell create no
   further component.  If all three selected relations are kernel--kernel,
   their kernel rows share one singleton; the common-singleton branch is
@@ -3017,10 +3017,10 @@ strictly advance the finite frontier:
   in component eight.  The common-kernel vertical family is a new
   five-dimensional component nineteen, with generic kernel-endpoint
   signature `(2,1,1,0)`:
-  [`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md),
-  [`P4_COMMON_ACTIVE_TAU_ZERO_COMPONENT_ELEVEN_INCLUSION.md`](P4_COMMON_ACTIVE_TAU_ZERO_COMPONENT_ELEVEN_INCLUSION.md),
-  [`P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md`](P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md),
-  [`P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md`](P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md).
+  [`P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md`](claims/p4/classifications/P4_ONE_KERNEL_RANK_ONE_TRIANGLE_NORMAL_FORM_REDUCTION.md),
+  [`P4_COMMON_ACTIVE_TAU_ZERO_COMPONENT_ELEVEN_INCLUSION.md`](claims/p4/classifications/P4_COMMON_ACTIVE_TAU_ZERO_COMPONENT_ELEVEN_INCLUSION.md),
+  [`P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md`](claims/p4/classifications/P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md),
+  [`P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md`](claims/p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md).
 - component nineteen's complete generic marked `H31` fibre is empty.  Exact
   projection leaves four marking lines on deletions two and three and none on
   deletions zero and one.  Two one-marked minors cover every punctured line;
@@ -3340,7 +3340,7 @@ strictly advance the finite frontier:
   legal.  The historical withdrawn files remain conspicuously labeled, while
   the corrected triangle, star, and mixed-triangle theorems above now replace
   all three claims with marked proofs:
-  [`P4_BOREL_GAUGE_CORRECTION.md`](P4_BOREL_GAUGE_CORRECTION.md),
+  [`P4_BOREL_GAUGE_CORRECTION.md`](claims/p4/boundaries/P4_BOREL_GAUGE_CORRECTION.md),
   [`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md),
   [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md),
   [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md).
@@ -4096,7 +4096,7 @@ are:
 - [`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md)
 - [`P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md)
 - [`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md)
-- [`P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md`](P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md)
+- [`P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md`](claims/p4/classifications/P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md)
 - [`P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/one-three/P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md)
 - [`P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md`](P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md)
 - [`P5_H31_DIAGONAL_QUADRIC_CURVE_MARKED_FIBRE_OBSTRUCTION.md`](P5_H31_DIAGONAL_QUADRIC_CURVE_MARKED_FIBRE_OBSTRUCTION.md)
@@ -4537,9 +4537,9 @@ gate of each kind at distinct modes.  The resulting transverse and
 tangent normal forms are incompatible with, respectively, the
 triple-`n` contraction and a double-`n` decomposable-`P_3` sign chart:
 
-- [`P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md`](P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md)
+- [`P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md`](claims/p4/classifications/P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md)
 - [`P5_Q4_211_MARKED_DELTA2_PAIR_IMAGE_OBSTRUCTION.md`](P5_Q4_211_MARKED_DELTA2_PAIR_IMAGE_OBSTRUCTION.md)
-- [`P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md`](P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md)
+- [`P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md`](claims/p4/classifications/P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md)
 - [`P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md`](P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md)
 - [`P5_Q4_211_ONE_CROSS_PENCIL_SATURATION_REDUCTION.md`](P5_Q4_211_ONE_CROSS_PENCIL_SATURATION_REDUCTION.md)
 - [`P5_Q4_211_ONE_CROSS_DIRECTION_CONIC_REDUCTION.md`](P5_Q4_211_ONE_CROSS_DIRECTION_CONIC_REDUCTION.md)
@@ -4617,18 +4617,18 @@ the essential remaining case.
 
 ## Authoritative certificate maps
 
-- [`SIX_VERTEX_CERTIFICATE.md`](SIX_VERTEX_CERTIFICATE.md)
-- [`EIGHT_VERTEX_4REGULAR_CERTIFICATE.md`](EIGHT_VERTEX_4REGULAR_CERTIFICATE.md)
-- [`EIGHT_VERTEX_DEGREE4_FRONTIER.md`](EIGHT_VERTEX_DEGREE4_FRONTIER.md)
-- [`EIGHT_VERTEX_16EDGE_CERTIFICATE.md`](EIGHT_VERTEX_16EDGE_CERTIFICATE.md)
-- [`EIGHT_VERTEX_17EDGE_CERTIFICATE.md`](EIGHT_VERTEX_17EDGE_CERTIFICATE.md)
-- [`EIGHT_VERTEX_DEGREE3_E19_CERTIFICATE.md`](EIGHT_VERTEX_DEGREE3_E19_CERTIFICATE.md)
-- [`EIGHT_VERTEX_ENTRY84_BOUNDARY.md`](EIGHT_VERTEX_ENTRY84_BOUNDARY.md)
-- [`EIGHT_VERTEX_DOUBLE_C4_FAMILY_CERTIFICATE.md`](EIGHT_VERTEX_DOUBLE_C4_FAMILY_CERTIFICATE.md)
-- [`EIGHT_VERTEX_FULL_SINGLETON_FAMILY_CERTIFICATE.md`](EIGHT_VERTEX_FULL_SINGLETON_FAMILY_CERTIFICATE.md)
+- [`SIX_VERTEX_CERTIFICATE.md`](claims/finite/n06/SIX_VERTEX_CERTIFICATE.md)
+- [`EIGHT_VERTEX_4REGULAR_CERTIFICATE.md`](claims/finite/n08/EIGHT_VERTEX_4REGULAR_CERTIFICATE.md)
+- [`EIGHT_VERTEX_DEGREE4_FRONTIER.md`](claims/finite/n08/EIGHT_VERTEX_DEGREE4_FRONTIER.md)
+- [`EIGHT_VERTEX_16EDGE_CERTIFICATE.md`](claims/finite/n08/EIGHT_VERTEX_16EDGE_CERTIFICATE.md)
+- [`EIGHT_VERTEX_17EDGE_CERTIFICATE.md`](claims/finite/n08/EIGHT_VERTEX_17EDGE_CERTIFICATE.md)
+- [`EIGHT_VERTEX_DEGREE3_E19_CERTIFICATE.md`](claims/finite/n08/EIGHT_VERTEX_DEGREE3_E19_CERTIFICATE.md)
+- [`EIGHT_VERTEX_ENTRY84_BOUNDARY.md`](claims/finite/n08/EIGHT_VERTEX_ENTRY84_BOUNDARY.md)
+- [`EIGHT_VERTEX_DOUBLE_C4_FAMILY_CERTIFICATE.md`](claims/finite/n08/EIGHT_VERTEX_DOUBLE_C4_FAMILY_CERTIFICATE.md)
+- [`EIGHT_VERTEX_FULL_SINGLETON_FAMILY_CERTIFICATE.md`](claims/finite/n08/EIGHT_VERTEX_FULL_SINGLETON_FAMILY_CERTIFICATE.md)
 - [`ODD_FULL_FACTOR_ONE_TERM_THEOREM.md`](claims/arbitrary-order/ODD_FULL_FACTOR_ONE_TERM_THEOREM.md)
 - [`SINGLE_EVEN_CYCLE_RECTANGLE_THEOREM.md`](SINGLE_EVEN_CYCLE_RECTANGLE_THEOREM.md)
-- [`FOURTEEN_VERTEX_ONE_EXTRA_CYCLE_LEMMA.md`](FOURTEEN_VERTEX_ONE_EXTRA_CYCLE_LEMMA.md)
+- [`FOURTEEN_VERTEX_ONE_EXTRA_CYCLE_LEMMA.md`](claims/finite/n14/FOURTEEN_VERTEX_ONE_EXTRA_CYCLE_LEMMA.md)
 - [`EVEN_CYCLE_FEASIBLE_SET_EXPANSION.md`](claims/arbitrary-order/EVEN_CYCLE_FEASIBLE_SET_EXPANSION.md)
 - [`MINIMAL_SINGLETON_CIRCUIT_RECTANGLE_THEOREM.md`](claims/arbitrary-order/MINIMAL_SINGLETON_CIRCUIT_RECTANGLE_THEOREM.md)
 - [`PARTIAL_MINIMAL_SINGLETON_CIRCUIT_DICHOTOMY.md`](claims/arbitrary-order/PARTIAL_MINIMAL_SINGLETON_CIRCUIT_DICHOTOMY.md)
@@ -4690,51 +4690,51 @@ the essential remaining case.
 - [`RECIPROCAL_PORT_ORIENTATION_CORRECTION.md`](claims/arbitrary-order/RECIPROCAL_PORT_ORIENTATION_CORRECTION.md)
 - [`ARBITRARY_ORDER_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md`](claims/arbitrary-order/ARBITRARY_ORDER_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md)
 - [`UNIVERSAL_SATURATED_DIAGONAL_ZERO_LAYER_THEOREM.md`](UNIVERSAL_SATURATED_DIAGONAL_ZERO_LAYER_THEOREM.md)
-- [`EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md`](EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md)
-- [`TEN_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md`](TEN_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md)
-- [`TWELVE_VERTEX_COMPLEMENT_PROFILE_SET_TREE_OBSTRUCTION.md`](TWELVE_VERTEX_COMPLEMENT_PROFILE_SET_TREE_OBSTRUCTION.md)
+- [`EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md`](claims/finite/n08/EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md)
+- [`TEN_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md`](claims/finite/n10/TEN_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md)
+- [`TWELVE_VERTEX_COMPLEMENT_PROFILE_SET_TREE_OBSTRUCTION.md`](claims/finite/n12/TWELVE_VERTEX_COMPLEMENT_PROFILE_SET_TREE_OBSTRUCTION.md)
 - [`FULL_ADMISSIBLE_POTENTIAL_CONE_LEMMA.md`](FULL_ADMISSIBLE_POTENTIAL_CONE_LEMMA.md)
-- [`TWELVE_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md`](TWELVE_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md)
+- [`TWELVE_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md`](claims/finite/n12/TWELVE_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md)
 - [`INTEGER_SIGNED_LATTICE_TRANSPORT_THEOREM.md`](claims/arbitrary-order/INTEGER_SIGNED_LATTICE_TRANSPORT_THEOREM.md)
 - [`PARTIAL_CIRCUIT_BINOMIAL_CLOSURE_LEMMA.md`](PARTIAL_CIRCUIT_BINOMIAL_CLOSURE_LEMMA.md)
 - [`PINNED_FACTOR_SUPPORT_SYMMETRY_LEMMA.md`](PINNED_FACTOR_SUPPORT_SYMMETRY_LEMMA.md)
 - [`FULL_COLOUR_SUPPORT_ORBIT_LEMMA.md`](claims/arbitrary-order/FULL_COLOUR_SUPPORT_ORBIT_LEMMA.md)
 - [`COLOUR_SYMMETRIC_FACTOR_ORBIT_TRANSFER_LEMMA.md`](COLOUR_SYMMETRIC_FACTOR_ORBIT_TRANSFER_LEMMA.md)
-- [`FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md`](FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_NO_ONE_TERM_SUPPORT.md`](FOURTEEN_VERTEX_NO_ONE_TERM_SUPPORT.md)
+- [`FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_NO_ONE_TERM_SUPPORT.md`](claims/finite/n14/FOURTEEN_VERTEX_NO_ONE_TERM_SUPPORT.md)
 - [`MATCHING_FORK_TRANSPORT_LEMMA.md`](MATCHING_FORK_TRANSPORT_LEMMA.md)
-- [`FOURTEEN_VERTEX_C3_C4_C7_FAMILY_CERTIFICATE.md`](FOURTEEN_VERTEX_C3_C4_C7_FAMILY_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C3_C5_C6_FAMILY_CERTIFICATE.md`](FOURTEEN_VERTEX_C3_C5_C6_FAMILY_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C3_C3_C8_FAMILY_CERTIFICATE.md`](FOURTEEN_VERTEX_C3_C3_C8_FAMILY_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C3_C3_C4_C4_FAMILY_CERTIFICATE.md`](FOURTEEN_VERTEX_C3_C3_C4_C4_FAMILY_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C4_C5_C5_FAMILY_CERTIFICATE.md`](FOURTEEN_VERTEX_C4_C5_C5_FAMILY_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C4_C10_ORBIT0_CERTIFICATE.md`](FOURTEEN_VERTEX_C4_C10_ORBIT0_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C4_C10_ORBIT1_CERTIFICATE.md`](FOURTEEN_VERTEX_C4_C10_ORBIT1_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C6_C8_ORBITS0_2_CERTIFICATE.md`](FOURTEEN_VERTEX_C6_C8_ORBITS0_2_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C6_C8_108_ORBITS_CERTIFICATE.md`](FOURTEEN_VERTEX_C6_C8_108_ORBITS_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C6_C8_117_ORBITS_CERTIFICATE.md`](FOURTEEN_VERTEX_C6_C8_117_ORBITS_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C6_C8_118_ORBITS_CERTIFICATE.md`](FOURTEEN_VERTEX_C6_C8_118_ORBITS_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C6_C8_119_ORBITS_CERTIFICATE.md`](FOURTEEN_VERTEX_C6_C8_119_ORBITS_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C6_C8_121_ORBITS_KAPPA3_CERTIFICATE.md`](FOURTEEN_VERTEX_C6_C8_121_ORBITS_KAPPA3_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C6_C8_122_ORBITS_KAPPA3_CERTIFICATE.md`](FOURTEEN_VERTEX_C6_C8_122_ORBITS_KAPPA3_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C6_C8_123_ORBITS_KAPPA3_CERTIFICATE.md`](FOURTEEN_VERTEX_C6_C8_123_ORBITS_KAPPA3_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C6_C8_124_ORBITS_KAPPA3_CERTIFICATE.md`](FOURTEEN_VERTEX_C6_C8_124_ORBITS_KAPPA3_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C6_C8_125_ORBITS_KAPPA3_CERTIFICATE.md`](FOURTEEN_VERTEX_C6_C8_125_ORBITS_KAPPA3_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C6_C8_130_ORBITS_KAPPA3_CERTIFICATE.md`](FOURTEEN_VERTEX_C6_C8_130_ORBITS_KAPPA3_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C4_C4_C6_ORBIT2_CERTIFICATE.md`](FOURTEEN_VERTEX_C4_C4_C6_ORBIT2_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C4_C4_C6_ORBIT3_CERTIFICATE.md`](FOURTEEN_VERTEX_C4_C4_C6_ORBIT3_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C4_C4_C6_ORBIT5_CERTIFICATE.md`](FOURTEEN_VERTEX_C4_C4_C6_ORBIT5_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C4_C4_C6_ORBIT6_CERTIFICATE.md`](FOURTEEN_VERTEX_C4_C4_C6_ORBIT6_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C4_C4_C6_ORBIT7_CERTIFICATE.md`](FOURTEEN_VERTEX_C4_C4_C6_ORBIT7_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C4_C4_C6_ORBIT8_CERTIFICATE.md`](FOURTEEN_VERTEX_C4_C4_C6_ORBIT8_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C4_C4_C6_ORBIT8_PARTIAL_BINOMIAL_SUPPORT_CERTIFICATE.md`](FOURTEEN_VERTEX_C4_C4_C6_ORBIT8_PARTIAL_BINOMIAL_SUPPORT_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C4_C4_C6_ORBIT44_CERTIFICATE.md`](FOURTEEN_VERTEX_C4_C4_C6_ORBIT44_CERTIFICATE.md)
-- [`FOURTEEN_VERTEX_C4_C4_C6_61_ORBITS_KAPPA3_CERTIFICATE.md`](FOURTEEN_VERTEX_C4_C4_C6_61_ORBITS_KAPPA3_CERTIFICATE.md)
-- [`TEN_VERTEX_C4_C6_SUPPORT_CERTIFICATE.md`](TEN_VERTEX_C4_C6_SUPPORT_CERTIFICATE.md)
-- [`TEN_VERTEX_C4_C6_FAMILY_CERTIFICATE.md`](TEN_VERTEX_C4_C6_FAMILY_CERTIFICATE.md)
-- [`TEN_VERTEX_C10_EQUALITY_CERTIFICATE.md`](TEN_VERTEX_C10_EQUALITY_CERTIFICATE.md)
-- [`TEN_VERTEX_ODD_FACTOR_EQUALITY_CERTIFICATE.md`](TEN_VERTEX_ODD_FACTOR_EQUALITY_CERTIFICATE.md)
-- [`TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md`](TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md)
+- [`FOURTEEN_VERTEX_C3_C4_C7_FAMILY_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C3_C4_C7_FAMILY_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C3_C5_C6_FAMILY_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C3_C5_C6_FAMILY_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C3_C3_C8_FAMILY_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C3_C3_C8_FAMILY_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C3_C3_C4_C4_FAMILY_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C3_C3_C4_C4_FAMILY_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C4_C5_C5_FAMILY_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C4_C5_C5_FAMILY_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C4_C10_ORBIT0_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C4_C10_ORBIT0_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C4_C10_ORBIT1_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C4_C10_ORBIT1_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C6_C8_ORBITS0_2_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C6_C8_ORBITS0_2_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C6_C8_108_ORBITS_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C6_C8_108_ORBITS_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C6_C8_117_ORBITS_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C6_C8_117_ORBITS_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C6_C8_118_ORBITS_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C6_C8_118_ORBITS_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C6_C8_119_ORBITS_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C6_C8_119_ORBITS_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C6_C8_121_ORBITS_KAPPA3_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C6_C8_121_ORBITS_KAPPA3_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C6_C8_122_ORBITS_KAPPA3_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C6_C8_122_ORBITS_KAPPA3_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C6_C8_123_ORBITS_KAPPA3_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C6_C8_123_ORBITS_KAPPA3_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C6_C8_124_ORBITS_KAPPA3_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C6_C8_124_ORBITS_KAPPA3_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C6_C8_125_ORBITS_KAPPA3_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C6_C8_125_ORBITS_KAPPA3_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C6_C8_130_ORBITS_KAPPA3_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C6_C8_130_ORBITS_KAPPA3_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C4_C4_C6_ORBIT2_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C4_C4_C6_ORBIT2_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C4_C4_C6_ORBIT3_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C4_C4_C6_ORBIT3_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C4_C4_C6_ORBIT5_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C4_C4_C6_ORBIT5_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C4_C4_C6_ORBIT6_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C4_C4_C6_ORBIT6_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C4_C4_C6_ORBIT7_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C4_C4_C6_ORBIT7_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C4_C4_C6_ORBIT8_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C4_C4_C6_ORBIT8_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C4_C4_C6_ORBIT8_PARTIAL_BINOMIAL_SUPPORT_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C4_C4_C6_ORBIT8_PARTIAL_BINOMIAL_SUPPORT_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C4_C4_C6_ORBIT44_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C4_C4_C6_ORBIT44_CERTIFICATE.md)
+- [`FOURTEEN_VERTEX_C4_C4_C6_61_ORBITS_KAPPA3_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C4_C4_C6_61_ORBITS_KAPPA3_CERTIFICATE.md)
+- [`TEN_VERTEX_C4_C6_SUPPORT_CERTIFICATE.md`](claims/finite/n10/TEN_VERTEX_C4_C6_SUPPORT_CERTIFICATE.md)
+- [`TEN_VERTEX_C4_C6_FAMILY_CERTIFICATE.md`](claims/finite/n10/TEN_VERTEX_C4_C6_FAMILY_CERTIFICATE.md)
+- [`TEN_VERTEX_C10_EQUALITY_CERTIFICATE.md`](claims/finite/n10/TEN_VERTEX_C10_EQUALITY_CERTIFICATE.md)
+- [`TEN_VERTEX_ODD_FACTOR_EQUALITY_CERTIFICATE.md`](claims/finite/n10/TEN_VERTEX_ODD_FACTOR_EQUALITY_CERTIFICATE.md)
+- [`TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md`](claims/finite/n10/TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md)
 - [`RESEARCH_NOTES.md`](docs/research-notes.md)
 - [`P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md`](claims/p4/components/all-rank-one-triangle/P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md)
 - [`P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md`](claims/p4/components/equal-support-sixfold/P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md)
@@ -4784,22 +4784,22 @@ With the bundled dependencies on `PYTHONPATH`, run:
 python verify_q2_n6_k4_d4_construction.py
 python verify_q2_n6_k4_d4_family.py
 python verify_q2_herald_promotion_rank_barrier.py
-python verify_six_vertex_final.py
-python verify_eight_vertex_4regular.py
-python verify_eight_vertex_16edge.py
-python verify_eight_vertex_degree4_e17.py
-python verify_eight_vertex_degree3_e19.py
-python verify_eight_vertex_entry84_boundary.py
-python verify_five_regular_double_c4_singleton_family.py
-python verify_five_regular_full_singleton_family.py
-python verify_unary_cycle_relation_family.py
-python verify_eight_vertex_three_amplitude_forks.py
-python verify_ten_vertex_equality_factor_lattice.py
-python verify_ten_vertex_equality_factor_lattice_final.py
-python verify_ten_vertex_three_amplitude_certificate.py
-python verify_ten_vertex_c4_c6_equality_family.py
-python verify_ten_vertex_c10_equality_family.py --certificates tmp/ten_vertex_c10_equality_support_transport_final2.json
-python verify_ten_vertex_five_regular_equality_boundary.py
+python claims/finite/n06/verify_six_vertex_final.py
+python claims/finite/n08/verify_eight_vertex_4regular.py
+python claims/finite/n08/verify_eight_vertex_16edge.py
+python claims/finite/n08/verify_eight_vertex_degree4_e17.py
+python claims/finite/n08/verify_eight_vertex_degree3_e19.py
+python claims/finite/n08/verify_eight_vertex_entry84_boundary.py
+python claims/finite/n08/verify_five_regular_double_c4_singleton_family.py
+python claims/finite/n08/verify_five_regular_full_singleton_family.py
+python claims/finite/n08/verify_unary_cycle_relation_family.py
+python claims/finite/n08/verify_eight_vertex_three_amplitude_forks.py
+python claims/finite/n10/verify_ten_vertex_equality_factor_lattice.py
+python claims/finite/n10/verify_ten_vertex_equality_factor_lattice_final.py
+python claims/finite/n10/verify_ten_vertex_three_amplitude_certificate.py
+python claims/finite/n10/verify_ten_vertex_c4_c6_equality_family.py
+python claims/finite/n10/verify_ten_vertex_c10_equality_family.py --certificates tmp/ten_vertex_c10_equality_support_transport_final2.json
+python claims/finite/n10/verify_ten_vertex_five_regular_equality_boundary.py
 python claims/arbitrary-order/verify_odd_full_factor_one_term_mechanism.py
 python claims/arbitrary-order/verify_minimal_singleton_circuit_rectangle_theorem.py
 python claims/arbitrary-order/verify_partial_minimal_singleton_circuit_dichotomy.py
@@ -4832,8 +4832,8 @@ python claims/arbitrary-order/verify_odd_residual_port_permanent_extraction.py
 python claims/arbitrary-order/audit_odd_residual_port_permanent_extraction.py
 uv run --with sympy python claims/arbitrary-order/verify_five_root_tight_blocker_p5_extraction.py
 python claims/arbitrary-order/audit_five_root_tight_blocker_p5_extraction.py
-uv run --with sympy python verify_p4_common_singleton_component.py
-python audit_p4_common_singleton_component.py
+uv run --with sympy python claims/p4/classifications/verify_p4_common_singleton_component.py
+python claims/p4/classifications/audit_p4_common_singleton_component.py
 uv run --with sympy python claims/p5/h31/common-singleton/verify_p5_h31_common_singleton_component_generic_obstruction.py
 python claims/p5/h31/common-singleton/audit_p5_h31_common_singleton_component_generic_obstruction.py
 uv run --with sympy python claims/p5/h22/common-singleton/verify_p5_h22_common_singleton_component_generic_obstruction.py
@@ -4882,45 +4882,45 @@ python claims/arbitrary-order/verify_three_colour_blocker_union.py
 python claims/arbitrary-order/audit_three_colour_blocker_union.py
 python claims/arbitrary-order/verify_four_blocker_ideal_obstruction.py
 python claims/arbitrary-order/audit_four_blocker_ideal_obstruction.py
-python certify_eight_vertex_balanced_set_trees.py
-python audit_eight_vertex_balanced_set_trees.py
-python certify_ten_vertex_balanced_set_trees.py
-python audit_ten_vertex_balanced_set_trees.py
-python certify_twelve_vertex_complement_profile.py
-python audit_twelve_vertex_complement_profile.py
+python claims/finite/n08/certify_eight_vertex_balanced_set_trees.py
+python claims/finite/n08/audit_eight_vertex_balanced_set_trees.py
+python claims/finite/n10/certify_ten_vertex_balanced_set_trees.py
+python claims/finite/n10/audit_ten_vertex_balanced_set_trees.py
+python claims/finite/n12/certify_twelve_vertex_complement_profile.py
+python claims/finite/n12/audit_twelve_vertex_complement_profile.py
 python verify_full_admissible_potential_cone.py
 python audit_full_admissible_potential_cone.py
-python audit_twelve_vertex_port_cell_orbits.py
-python compare_twelve_vertex_six_potential_orbit_audit.py
+python claims/finite/n12/audit_twelve_vertex_port_cell_orbits.py
+python tools/explore/compare_twelve_vertex_six_potential_orbit_audit.py
 python claims/arbitrary-order/verify_integer_signed_lattice_transport.py
-python verify_fourteen_vertex_partial_circuit_binomial_branch.py tmp/fourteen_vertex_c4_c4_c6_orbit8_partial_binomial_closure_all22_r2.json --output tmp/fourteen_vertex_c4_c4_c6_orbit8_partial_binomial_closure_all22_r2_verified.json
-python verify_fourteen_vertex_partial_circuit_binomial_selection_chain.py tmp/fourteen_vertex_c4_c4_c6_orbit8_partial_binomial_selection_cegar_minimal_v5.json --output tmp/fourteen_vertex_c4_c4_c6_orbit8_partial_binomial_selection_cegar_minimal_v5_verified.json
-python verify_fourteen_vertex_binomial_support_closure_augmentation.py tmp/fourteen_vertex_c4_c4_c6_orbit8_binomial1_augmentation.json --output tmp/fourteen_vertex_c4_c4_c6_orbit8_binomial1_augmentation_verified.json
-python verify_fourteen_vertex_partial_circuit_binomial_selection_chain.py tmp/fourteen_vertex_c4_c4_c6_orbit8_support2_partial_binomial_selection_cegar.json --output tmp/fourteen_vertex_c4_c4_c6_orbit8_support2_partial_binomial_selection_cegar_verified.json
-python verify_fourteen_vertex_binomial_support_closure_augmentation.py tmp/fourteen_vertex_c4_c4_c6_orbit8_binomial2_augmentation.json --output tmp/fourteen_vertex_c4_c4_c6_orbit8_binomial2_augmentation_verified.json
-python verify_fourteen_vertex_minimal_circuit_frontiers.py
-python verify_fourteen_vertex_no_one_term_support.py
-python verify_fourteen_vertex_binomial_trinomial.py
-python certify_fourteen_vertex_matching_fork.py tmp/fourteen_vertex_direct_free_search_p500000_multiswitch.json
+python claims/finite/n14/verify_fourteen_vertex_partial_circuit_binomial_branch.py tmp/fourteen_vertex_c4_c4_c6_orbit8_partial_binomial_closure_all22_r2.json --output tmp/fourteen_vertex_c4_c4_c6_orbit8_partial_binomial_closure_all22_r2_verified.json
+python claims/finite/n14/verify_fourteen_vertex_partial_circuit_binomial_selection_chain.py tmp/fourteen_vertex_c4_c4_c6_orbit8_partial_binomial_selection_cegar_minimal_v5.json --output tmp/fourteen_vertex_c4_c4_c6_orbit8_partial_binomial_selection_cegar_minimal_v5_verified.json
+python claims/finite/n14/verify_fourteen_vertex_binomial_support_closure_augmentation.py tmp/fourteen_vertex_c4_c4_c6_orbit8_binomial1_augmentation.json --output tmp/fourteen_vertex_c4_c4_c6_orbit8_binomial1_augmentation_verified.json
+python claims/finite/n14/verify_fourteen_vertex_partial_circuit_binomial_selection_chain.py tmp/fourteen_vertex_c4_c4_c6_orbit8_support2_partial_binomial_selection_cegar.json --output tmp/fourteen_vertex_c4_c4_c6_orbit8_support2_partial_binomial_selection_cegar_verified.json
+python claims/finite/n14/verify_fourteen_vertex_binomial_support_closure_augmentation.py tmp/fourteen_vertex_c4_c4_c6_orbit8_binomial2_augmentation.json --output tmp/fourteen_vertex_c4_c4_c6_orbit8_binomial2_augmentation_verified.json
+python claims/finite/n14/verify_fourteen_vertex_minimal_circuit_frontiers.py
+python src/krenn_gu/verify_fourteen_vertex_no_one_term_support.py
+python claims/finite/n14/verify_fourteen_vertex_binomial_trinomial.py
+python claims/finite/n14/certify_fourteen_vertex_matching_fork.py tmp/fourteen_vertex_direct_free_search_p500000_multiswitch.json
 python verify_fourteen_vertex_cancellation_transport.py tmp/fourteen_vertex_direct_free_search_p500000_multiswitch.json tmp/fourteen_vertex_matching_fork_p500000_multiswitch.json --output tmp/fourteen_vertex_matching_fork_p500000_multiswitch_verified.json
-python certify_fourteen_vertex_c3_c4_c7_family.py
-python verify_fourteen_vertex_c3_c4_c7_family.py
-python verify_fourteen_vertex_c3_c5_c6_family.py
-python verify_fourteen_vertex_c3_c3_c8_family.py
-python verify_fourteen_vertex_c3_c3_c4_c4_family.py
-python verify_fourteen_vertex_c4_c5_c5_family.py
+python claims/finite/n14/certify_fourteen_vertex_c3_c4_c7_family.py
+python claims/finite/n14/verify_fourteen_vertex_c3_c4_c7_family.py
+python claims/finite/n14/verify_fourteen_vertex_c3_c5_c6_family.py
+python claims/finite/n14/verify_fourteen_vertex_c3_c3_c8_family.py
+python claims/finite/n14/verify_fourteen_vertex_c3_c3_c4_c4_family.py
+python claims/finite/n14/verify_fourteen_vertex_c4_c5_c5_family.py
 python verify_fourteen_vertex_c14_rectangle_theorem.py
 python verify_fourteen_vertex_c4_10_orbit0.py
-python verify_fourteen_vertex_c4_10_orbit1.py
-python verify_fourteen_vertex_c6_8_130_orbits_kappa3.py
-python verify_fourteen_vertex_c4_c4_c6_orbit2.py
-python verify_fourteen_vertex_c4_c4_c6_orbit3.py
-python verify_fourteen_vertex_c4_c4_c6_orbit5.py
-python verify_fourteen_vertex_c4_c4_c6_orbit6.py
-python verify_fourteen_vertex_c4_c4_c6_orbit7.py
-python verify_fourteen_vertex_c4_c4_c6_orbit8.py
-python verify_fourteen_vertex_c4_c4_c6_orbit44_core24.py
-python verify_fourteen_vertex_c4_c4_c6_58_orbits.py
+python claims/finite/n14/verify_fourteen_vertex_c4_10_orbit1.py
+python claims/finite/n14/verify_fourteen_vertex_c6_8_130_orbits_kappa3.py
+python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit2.py
+python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit3.py
+python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit5.py
+python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit6.py
+python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit7.py
+python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit8.py
+python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit44_core24.py
+python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_58_orbits.py
 python -m unittest -v test_search_witness.py
 python -m unittest -v test_fourteen_vertex_two_even_cycle_rule_sat.py test_fourteen_vertex_minimum_activity_certificate.py
 ```
@@ -5312,14 +5312,14 @@ splits into two `K_2,2` components.  The resulting exact 24-variable,
 72-clause support CNF excludes all weighted realizations, and an
 independent audit tests all `7^6 = 117,649` component-support products
 with zero survivors.  Both DRAT proofs replay successfully.  See
-[`EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md`](EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md).
+[`EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md`](claims/finite/n08/EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md).
 
 The same set-tree theorem closes order ten.  Its 104 balanced normal-type
 profiles form 10 orbits under independent bit flips and coordinate
 permutations.  All 10 orbit formulas are UNSAT in two independent
 encodings and solvers.  Kissat's corrected 122,539-clause UNSAT proof is
 independently replayed by `drat-trim`; see
-[`TEN_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md`](TEN_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md).
+[`TEN_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md`](claims/finite/n10/TEN_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md).
 
 At order twelve, the corrected set-tree plus all-size convolution system
 now excludes the complementary profile `6 x 000 + 6 x 111`.  After fixing
@@ -5329,7 +5329,7 @@ tree's 120 hard partner chains to 16 canonical leaves.  The combined
 DRAT proof passes a forward `drat-trim` replay, and an independently
 generated Glucose audit also finds all 17 branches UNSAT.  This is one
 profile, not a complete order-twelve theorem; see
-[`TWELVE_VERTEX_COMPLEMENT_PROFILE_SET_TREE_OBSTRUCTION.md`](TWELVE_VERTEX_COMPLEMENT_PROFILE_SET_TREE_OBSTRUCTION.md).
+[`TWELVE_VERTEX_COMPLEMENT_PROFILE_SET_TREE_OBSTRUCTION.md`](claims/finite/n12/TWELVE_VERTEX_COMPLEMENT_PROFILE_SET_TREE_OBSTRUCTION.md).
 
 A pinned census of 123 dense 20-edge support models found an elementary
 rectangle in every model.  In that enumeration order each model also had a
@@ -5433,7 +5433,7 @@ The entry-count theorem now proves that every 84-entry support in the
 support-level equality proof with the 7,938-support certificate excludes the
 entire 84-entry boundary.  It does not force this architecture below 84
 entries; the remaining 5-regular exact-20 boundary has at most 83 entries.
-See [`EIGHT_VERTEX_ENTRY84_BOUNDARY.md`](EIGHT_VERTEX_ENTRY84_BOUNDARY.md).
+See [`EIGHT_VERTEX_ENTRY84_BOUNDARY.md`](claims/finite/n08/EIGHT_VERTEX_ENTRY84_BOUNDARY.md).
 
 The same equality architecture exists for larger even `n`.  A first
 ten-vertex test has expanded to the complete `C4+C6` equality family.
@@ -5446,18 +5446,18 @@ one surviving nonzero monomial.  The independent audit verifies the
 catalogue, orbit coverage, activities, Laurent pairings, and survivors.
 This does not cover the other ten-vertex full-factor types or arbitrary
 supports.  See
-[`TEN_VERTEX_C4_C6_FAMILY_CERTIFICATE.md`](TEN_VERTEX_C4_C6_FAMILY_CERTIFICATE.md).
+[`TEN_VERTEX_C4_C6_FAMILY_CERTIFICATE.md`](claims/finite/n10/TEN_VERTEX_C4_C6_FAMILY_CERTIFICATE.md).
 
 The earlier one-support factor-lattice/DRAT proof remains as a redundant
 cross-check in
-[`TEN_VERTEX_C4_C6_SUPPORT_CERTIFICATE.md`](TEN_VERTEX_C4_C6_SUPPORT_CERTIFICATE.md).
+[`TEN_VERTEX_C4_C6_SUPPORT_CERTIFICATE.md`](claims/finite/n10/TEN_VERTEX_C4_C6_SUPPORT_CERTIFICATE.md).
 
 All three ten-vertex odd-component equality families are now closed as well.
 There are 5,558 `C3+C7`, 2,536 `C5+C5`, and 906 `C3+C3+C4` orbits, and
 every support has a forbidden colouring with exactly one active nonzero
 matching monomial.  Independent orbit and activity audits cover
 186,216,226,560 labelled coloured supports.  See
-[`TEN_VERTEX_ODD_FACTOR_EQUALITY_CERTIFICATE.md`](TEN_VERTEX_ODD_FACTOR_EQUALITY_CERTIFICATE.md).
+[`TEN_VERTEX_ODD_FACTOR_EQUALITY_CERTIFICATE.md`](claims/finite/n10/TEN_VERTEX_ODD_FACTOR_EQUALITY_CERTIFICATE.md).
 
 The remaining `C10` equality family is closed by a different direct motif.
 Three forbidden binomial amplitudes impose signed Laurent relations whose
@@ -5465,7 +5465,7 @@ exact combination forces cancellation of two terms in a forbidden
 trinomial, leaving its third supported monomial nonzero.  The independent
 audit replays this transport identity on all 23,204 support orbits,
 representing 491,794,208,640 labelled coloured supports.  See
-[`TEN_VERTEX_C10_EQUALITY_CERTIFICATE.md`](TEN_VERTEX_C10_EQUALITY_CERTIFICATE.md).
+[`TEN_VERTEX_C10_EQUALITY_CERTIFICATE.md`](claims/finite/n10/TEN_VERTEX_C10_EQUALITY_CERTIFICATE.md).
 
 These five cycle types exhaust every spanning 2-factor on ten vertices.
 Combining their audits with the entry-count and diagonal-singleton equality
@@ -5473,7 +5473,7 @@ theorem excludes the complete 105-entry, 5-regular exact-25 boundary:
 37,107 support orbits and 779,297,500,800 labelled coloured supports.  A
 hypothetical witness in that branch has at most 104 entries.  This is still
 a finite boundary theorem, not a global proof.  See
-[`TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md`](TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md).
+[`TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md`](claims/finite/n10/TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md).
 
 The one-term mechanism is not merely finite for all-odd full factors.
 At every even order `n >= 8`, choose a skeleton perfect matching with the
@@ -5496,7 +5496,7 @@ equation 118 transports its Laurent relation to two terms of a trinomial at
 equation 112, forcing them to cancel and leaving the third monomial nonzero.
 This is an exact two-amplitude contradiction for the explicit support, not
 the full `C3+C4+C7` family.  See
-[`FOURTEEN_VERTEX_NO_ONE_TERM_SUPPORT.md`](FOURTEEN_VERTEX_NO_ONE_TERM_SUPPORT.md).
+[`FOURTEEN_VERTEX_NO_ONE_TERM_SUPPORT.md`](claims/finite/n14/FOURTEEN_VERTEX_NO_ONE_TERM_SUPPORT.md).
 
 The repeated order-14 obstruction now has an arbitrary-order analytic
 form.  If adding one singleton edge to a singleton matching adds exactly one
@@ -5521,7 +5521,7 @@ matching forks reduces these to 3,654 fork-free factors in 18 orbits; only
 separate bitmask matcher reconstructs the catalogues and all orbit counts,
 returning `"verified": true`.  This is a full finite family theorem, but not
 the complete order-14 equality boundary or the global conjecture.  See
-[`FOURTEEN_VERTEX_C3_C4_C7_FAMILY_CERTIFICATE.md`](FOURTEEN_VERTEX_C3_C4_C7_FAMILY_CERTIFICATE.md).
+[`FOURTEEN_VERTEX_C3_C4_C7_FAMILY_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C3_C4_C7_FAMILY_CERTIFICATE.md).
 
 The `C3+C3+C8` family has a shorter terminal obstruction.  Of 44,250
 eligible singleton factors, exact activation counts eliminate 44,064 by a
@@ -5533,7 +5533,7 @@ then factor across the two components.  Required same-colour coefficients
 make both component factors nonzero, while assigning different constant
 colours to the components gives a forbidden nonzero coefficient.  The
 independent audit returns `"verified": true`.  See
-[`FOURTEEN_VERTEX_C3_C3_C8_FAMILY_CERTIFICATE.md`](FOURTEEN_VERTEX_C3_C3_C8_FAMILY_CERTIFICATE.md).
+[`FOURTEEN_VERTEX_C3_C3_C8_FAMILY_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C3_C3_C8_FAMILY_CERTIFICATE.md).
 
 The `C3+C3+C4+C4` family is now closed by an exhaustive hybrid
 one-term/transport calculation.  Fixing one of 14 admissible first-factor
@@ -5545,7 +5545,7 @@ rules and closes all but 394,068 connected candidates.  Four exact shards
 give one stable `C4` two-to-three matching fork for each residual support.
 The independent verifier regenerates the factor census and filters, replays
 all 394,068 witnesses, and reports zero survivors.  See
-[`FOURTEEN_VERTEX_C3_C3_C4_C4_FAMILY_CERTIFICATE.md`](FOURTEEN_VERTEX_C3_C3_C4_C4_FAMILY_CERTIFICATE.md).
+[`FOURTEEN_VERTEX_C3_C3_C4_C4_FAMILY_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C3_C3_C4_C4_FAMILY_CERTIFICATE.md).
 
 The `C4+C5+C5` family is also exhausted by the one-term/fork calculus.
 Starting from 44,195 singleton factors, exact one-term tests leave 4,495
@@ -5554,7 +5554,7 @@ those representatives only four compatible second factors remain.
 The exact size-four and size-five fork catalogues leave no compatible
 ordered third factor.  An independent verifier semantically replays all
 183,800 forks and regenerates the zero-survivor calculation.  See
-[`FOURTEEN_VERTEX_C4_C5_C5_FAMILY_CERTIFICATE.md`](FOURTEEN_VERTEX_C4_C5_C5_FAMILY_CERTIFICATE.md).
+[`FOURTEEN_VERTEX_C4_C5_C5_FAMILY_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C4_C5_C5_FAMILY_CERTIFICATE.md).
 
 The all-even `C4+C4+C6` family remains open.  The earlier recursive layer
 made 61 of its 93 pinned first-factor orbits finite theorems.  Its global
@@ -5569,13 +5569,13 @@ orbits
 `0--7, 12, 17--21, 23--35, 52--53, 58--62, 64--66, 69--92`.
 The remaining 32 are
 `8--11, 13--16, 22, 36--51, 54--57, 63, 67--68`. See
-[`FOURTEEN_VERTEX_C4_C4_C6_61_ORBITS_KAPPA3_CERTIFICATE.md`](FOURTEEN_VERTEX_C4_C4_C6_61_ORBITS_KAPPA3_CERTIFICATE.md).
+[`FOURTEEN_VERTEX_C4_C4_C6_61_ORBITS_KAPPA3_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C4_C4_C6_61_ORBITS_KAPPA3_CERTIFICATE.md).
 
 The later aggregate minimal-circuit frontier excludes four more selectors,
 so 65 of 93 are now closed under the same connectivity-at-least-three
 hypothesis.  The remaining 28 are
 `8--11, 13--16, 22, 36--41, 44--51, 54--55, 57, 63, 68`; see
-[`FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md`](FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md).
+[`FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md).
 
 A targeted signed-lattice continuation now excludes orbit 8 as well.
 Two exact relation-selection supports contribute 160 freshly replayed
@@ -5586,7 +5586,7 @@ certificates into 46 fresh support no-goods.  Conditioning the resulting
 58,902,708-byte DRAT proof.  Thus 66 of 93 selectors are now excluded and
 the 27 outside the certificates are
 `9--11, 13--16, 22, 36--41, 44--51, 54--55, 57, 63, 68`.  See
-[`FOURTEEN_VERTEX_C4_C4_C6_ORBIT8_CERTIFICATE.md`](FOURTEEN_VERTEX_C4_C4_C6_ORBIT8_CERTIFICATE.md).
+[`FOURTEEN_VERTEX_C4_C4_C6_ORBIT8_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C4_C4_C6_ORBIT8_CERTIFICATE.md).
 
 Colour symmetry now strengthens that frontier in two exact ways.  First,
 each of the 66 excluded factor orbits is impossible in any of the three
@@ -5641,7 +5641,7 @@ and passes forward `drat-trim`.  A separate end-to-end replay of the
 larger original 6,912-clause extension also passes.  Thus 67 of 93
 selectors are now excluded and the 26 outside the certificates are
 `9--11, 13--16, 22, 36--41, 45--51, 54--55, 57, 63, 68`.  See
-[`FOURTEEN_VERTEX_C4_C4_C6_ORBIT44_CERTIFICATE.md`](FOURTEEN_VERTEX_C4_C4_C6_ORBIT44_CERTIFICATE.md).
+[`FOURTEEN_VERTEX_C4_C4_C6_ORBIT44_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C4_C4_C6_ORBIT44_CERTIFICATE.md).
 
 The factor-CEGAR transport is substantially less brittle than at the
 earlier checkpoint.  Guarded-clause core extraction reduces each of 12
@@ -5660,7 +5660,7 @@ exact obstruction for one orbit-3 support.  The 61-orbit frontier is a
 finite theorem, not a proof of the complete `C4+C4+C6` family.
 
 The earlier two-support orbit-8 development remains documented in
-[`FOURTEEN_VERTEX_C4_C4_C6_ORBIT8_PARTIAL_BINOMIAL_SUPPORT_CERTIFICATE.md`](FOURTEEN_VERTEX_C4_C4_C6_ORBIT8_PARTIAL_BINOMIAL_SUPPORT_CERTIFICATE.md);
+[`FOURTEEN_VERTEX_C4_C4_C6_ORBIT8_PARTIAL_BINOMIAL_SUPPORT_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C4_C4_C6_ORBIT8_PARTIAL_BINOMIAL_SUPPORT_CERTIFICATE.md);
 it is now a predecessor of the complete conditional orbit certificate,
 not the active boundary.
 

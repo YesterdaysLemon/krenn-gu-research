@@ -65,7 +65,7 @@ source triangle:   degree sequence (2,2,2,0).       (4)
 
 The star and path are trees, so switching removes all three gains.  Their
 normal forms are precisely the two apolar directed triangles in
-[`P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md`](../../../../../P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md).
+[`P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md`](../../P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md).
 All three leaf-pair ranks are three; the kernel and active triple covectors
 are independent; and the opposite apolar `P^2` produces components sixteen
 and seventeen.
