@@ -1,0 +1,25 @@
+{
+  "batch_id": "p5-h22-finite-lambda-zero-all-marking-stage26",
+  "approved_by": "Codex (exact mapping reviewer under repository-owner standing delegation dated 2026-08-08)",
+  "approved_at": "2026-08-09",
+  "base_sha": "cd97b313b021e26ad6391fbb7a1cf08db958f8e6",
+  "manifest_sha256": "3039028bf9609ccbf47a9e1d22a27e17bc0b2c7aed325c755e7dfebd6f913b38",
+  "mapping_sha256": "06622ad9c8ab149021fd4d3a5c412327db4a28cd2f210d339418d118a7e85131",
+  "member_count": 3,
+  "moves": [
+    {
+      "old_path": "P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ZERO_ALL_MARKING_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-finite-lambda-zero-all-marking/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ZERO_ALL_MARKING_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "audit_p5_h22_common_center_kernel_star_component_finite_lambda_zero_all_marking_obstruction.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-finite-lambda-zero-all-marking/audit_p5_h22_common_center_kernel_star_component_finite_lambda_zero_all_marking_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h22_common_center_kernel_star_component_finite_lambda_zero_all_marking_obstruction.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-finite-lambda-zero-all-marking/verify_p5_h22_common_center_kernel_star_component_finite_lambda_zero_all_marking_obstruction.py"
+    }
+  ],
+  "rationale": "Stage 26: migrate the exact finite lambda-zero all-affine-marking theorem, characteristic-zero primary, and exact rational-specialization audit after independent topology, status, provenance, and mechanical audits established one routine generic-parameter proof leaf.",
+  "notes": "Exact mapping reviewed by Codex under the repository-owner standing delegation dated 2026-08-08. Preserve the Q(r,t) generic-parameter lambda-zero scope, the load-bearing dense-open h2*h3*H0 factor cover, the three residual branch certificates, every-affine-marking quantifier, later ordinary-residual case-union chronology, chronological generic-finite false and residual-UNKNOWN fields, the audit-only exact-Q specialization at (r,t)=(2,4), all shared-provider status boundaries, zero selected-artifact ledger entries, the owner-gated H31 fourteen-versus-sixteen conflict, and global Krenn-Gu UNRESOLVED."
+}
