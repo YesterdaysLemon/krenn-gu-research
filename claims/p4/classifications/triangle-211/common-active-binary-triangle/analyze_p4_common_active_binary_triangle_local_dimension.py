@@ -4,13 +4,10 @@
 from __future__ import annotations
 
 import itertools
+import sys
 from pathlib import Path
 
 import sympy as sp
-
-from verify_p4_directed_zero_divisor_triangle_components import coefficients
-
-import sys
 
 for _p in Path(__file__).resolve().parents:
     if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
@@ -19,6 +16,10 @@ for _p in Path(__file__).resolve().parents:
 from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
+from verify_p4_directed_zero_divisor_triangle_components import (  # noqa: E402
+    coefficients,
+)
+
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PAIRS = tuple(itertools.combinations(range(4), 2))
 ANCHOR = (0, 1, 1, 0)

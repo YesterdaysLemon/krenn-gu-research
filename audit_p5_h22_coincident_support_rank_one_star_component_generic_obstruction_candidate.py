@@ -528,10 +528,26 @@ def one_diagonal_survivor(
 
 def replay_dependencies() -> dict[str, Any]:
     p4 = run_json(
-        ("uv", "run", "--with", "sympy", "python", P4_SCRIPT.name), timeout=120
+        (
+            "uv",
+            "run",
+            "--with",
+            "sympy",
+            "python",
+            P4_SCRIPT.relative_to(ROOT).as_posix(),
+        ),
+        timeout=120,
     )
     h31 = run_json(
-        ("uv", "run", "--with", "sympy", "python", H31_SCRIPT.name), timeout=180
+        (
+            "uv",
+            "run",
+            "--with",
+            "sympy",
+            "python",
+            H31_SCRIPT.relative_to(ROOT).as_posix(),
+        ),
+        timeout=180,
     )
     require(p4.get("status") == "verified", "P4 component replay")
     require(h31.get("status") == "pass", "H31 replay")

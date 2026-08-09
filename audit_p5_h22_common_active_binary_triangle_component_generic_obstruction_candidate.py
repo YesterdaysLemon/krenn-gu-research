@@ -31,7 +31,10 @@ CANDIDATE_CERTIFICATE = ROOT / (
     "p5_h22_common_active_binary_triangle_component_generic_certificate.json"
 )
 P4_REPORT = ROOT / "claims/p4/classifications/triangle-211/common-active-binary-triangle/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md"
-P4_SCRIPT = ROOT / "verify_p4_common_active_binary_triangle_component.py"
+P4_SCRIPT = ROOT / (
+    "claims/p4/classifications/triangle-211/common-active-binary-triangle/"
+    "verify_p4_common_active_binary_triangle_component.py"
+)
 H31_REPORT = ROOT / (
     "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
@@ -430,10 +433,26 @@ def projection_certificates(
 
 def replay_dependencies() -> dict[str, Any]:
     p4 = run_json(
-        ("uv", "run", "--with", "sympy", "python", P4_SCRIPT.name), timeout=180
+        (
+            "uv",
+            "run",
+            "--with",
+            "sympy",
+            "python",
+            P4_SCRIPT.relative_to(ROOT).as_posix(),
+        ),
+        timeout=180,
     )
     h31 = run_json(
-        ("uv", "run", "--with", "sympy", "python", H31_SCRIPT.name), timeout=180
+        (
+            "uv",
+            "run",
+            "--with",
+            "sympy",
+            "python",
+            H31_SCRIPT.relative_to(ROOT).as_posix(),
+        ),
+        timeout=180,
     )
     require(p4.get("status") == "verified", "P4 component replay")
     require(h31.get("status") == "pass", "H31 replay")
