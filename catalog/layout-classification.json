@@ -19,7 +19,7 @@
     ".txt": 2
   },
   "classification_counts_by_family": {
-    "arbitrary-order": 323,
+    "arbitrary-order": 366,
     "p5/frontier": 227,
     "p7": 183,
     "p4/classifications": 122,
@@ -244,24 +244,24 @@
     "p5/h31/diagonal-quadric-pure-direction-curve-marked-fibre": 1
   },
   "classification_counts_by_category": {
-    "claim_document": 679,
+    "claim_document": 682,
     "navigation": 6,
     "withdrawn_document": 5,
     "legacy_document": 5,
     "audit_report": 2,
     "catalog": 1,
     "tool_script": 209,
-    "claim_script": 1073,
-    "shared_library": 35
+    "claim_script": 1113,
+    "shared_library": 33
   },
   "confidence_counts": {
-    "medium": 1179,
+    "medium": 1180,
     "low": 426,
-    "high": 410
+    "high": 450
   },
-  "classified_count": 2015,
-  "unclassified_count": 348,
-  "estimated_root_entries_after_full_migration": 356,
+  "classified_count": 2056,
+  "unclassified_count": 307,
+  "estimated_root_entries_after_full_migration": 315,
   "verify_audit_triples": {
     "ADJACENT_PORT_DETERMINANT_TRANSPORT_LEMMA": [
       "verify_adjacent_port_determinant_transport_lemma.py"
@@ -23435,22 +23435,28 @@
     },
     {
       "old_path": "verify_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py",
-      "proposed_path": "src/krenn_gu/verify_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py",
-      "category": "shared_library",
-      "claim_family": null,
-      "confidence": "medium",
+      "proposed_path": "claims/arbitrary-order/verify_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
       "evidence": [
-        "imported by 3 root scripts"
+        "exact name pairing with classified document",
+        "paired doc ROOT_M7_ENDPOINT_LEGAL_CERTIFICATE_HITTING_MINIMUM_TWO_EXCLUSION.md",
+        "stage27_authorized_review: primary verifier in complete 42-file ROOT_M7 ownership subtree",
+        "imported only by 3 sibling ROOT_M7 claim verifiers; import fan-in is not shared-library ownership"
       ]
     },
     {
       "old_path": "verify_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py",
-      "proposed_path": "src/krenn_gu/verify_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py",
-      "category": "shared_library",
-      "claim_family": null,
-      "confidence": "medium",
+      "proposed_path": "claims/arbitrary-order/verify_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
       "evidence": [
-        "imported by 6 root scripts"
+        "exact name pairing with classified document",
+        "paired doc ROOT_M7_ONE_EDGE_A10_SHARED_PURE_MIXED_FACTOR_OBSTRUCTION.md",
+        "stage27_authorized_review: primary verifier in complete 42-file ROOT_M7 ownership subtree",
+        "imported only by 6 sibling ROOT_M7 claim verifiers; import fan-in is not shared-library ownership"
       ]
     },
     {
@@ -25646,6 +25652,457 @@
       "evidence": [
         "exact name pairing with classified document",
         "paired doc TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md"
+      ]
+    },
+    {
+      "old_path": "ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION.md",
+      "proposed_path": "claims/arbitrary-order/ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "medium",
+      "evidence": [
+        "stage27_authorized_review: direct antecedent in the reviewed arbitrary-order proof forest",
+        "part of verify/audit triple"
+      ]
+    },
+    {
+      "old_path": "ONE_NONBLOCKER_SURPLUS_PERMANENT_EXTRACTION.md",
+      "proposed_path": "claims/arbitrary-order/ONE_NONBLOCKER_SURPLUS_PERMANENT_EXTRACTION.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "medium",
+      "evidence": [
+        "stage27_authorized_review: direct antecedent in the reviewed arbitrary-order proof forest",
+        "part of verify/audit triple"
+      ]
+    },
+    {
+      "old_path": "TWO_PORT_SEVEN_BLOCKER_REDUCTION.md",
+      "proposed_path": "claims/arbitrary-order/TWO_PORT_SEVEN_BLOCKER_REDUCTION.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "medium",
+      "evidence": [
+        "stage27_authorized_review: direct antecedent in the reviewed arbitrary-order proof forest",
+        "part of verify/audit triple"
+      ]
+    },
+    {
+      "old_path": "audit_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py",
+      "proposed_path": "claims/arbitrary-order/audit_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named audit carrier in paired arbitrary-order claim document",
+        "paired doc ARBITRARY_ORDER_HAFNIAN_EULER_HESSIAN_CHANNEL_UNMIXING_AND_SINGULAR_DISCRIMINANT.md"
+      ]
+    },
+    {
+      "old_path": "audit_exact_three_blocker_permanent_rank.py",
+      "proposed_path": "claims/arbitrary-order/audit_exact_three_blocker_permanent_rank.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named audit carrier in paired arbitrary-order claim document",
+        "paired doc EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md"
+      ]
+    },
+    {
+      "old_path": "audit_five_root_no_torus_codimension_two.py",
+      "proposed_path": "claims/arbitrary-order/audit_five_root_no_torus_codimension_two.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named audit carrier in paired arbitrary-order claim document",
+        "paired doc FIVE_ROOT_NO_TORUS_CODIMENSION_TWO_THEOREM.md"
+      ]
+    },
+    {
+      "old_path": "audit_four_residual_even_wick_tower_and_p6_synchronization.py",
+      "proposed_path": "claims/arbitrary-order/audit_four_residual_even_wick_tower_and_p6_synchronization.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named audit carrier in paired arbitrary-order claim document",
+        "paired doc FOUR_RESIDUAL_EVEN_WICK_TOWER_AND_P6_SYNCHRONIZATION_THEOREM.md"
+      ]
+    },
+    {
+      "old_path": "audit_fourth_order_permanent_subrank.py",
+      "proposed_path": "claims/arbitrary-order/audit_fourth_order_permanent_subrank.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named audit carrier in paired arbitrary-order claim document",
+        "paired doc FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md"
+      ]
+    },
+    {
+      "old_path": "audit_hafnian_convolution_split.py",
+      "proposed_path": "claims/arbitrary-order/audit_hafnian_convolution_split.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named audit carrier in paired arbitrary-order claim document",
+        "paired doc HAFNIAN_CONVOLUTION_SPLIT_LEMMA.md"
+      ]
+    },
+    {
+      "old_path": "audit_multi_star_blocker_factorisation.py",
+      "proposed_path": "claims/arbitrary-order/audit_multi_star_blocker_factorisation.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named audit carrier in paired arbitrary-order claim document",
+        "paired doc MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md"
+      ]
+    },
+    {
+      "old_path": "audit_odd_residual_port_permanent_extraction.py",
+      "proposed_path": "claims/arbitrary-order/audit_odd_residual_port_permanent_extraction.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named audit carrier in paired arbitrary-order claim document",
+        "paired doc ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION.md"
+      ]
+    },
+    {
+      "old_path": "audit_one_nonblocker_surplus_permanent_extraction.py",
+      "proposed_path": "claims/arbitrary-order/audit_one_nonblocker_surplus_permanent_extraction.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named audit carrier in paired arbitrary-order claim document",
+        "paired doc ONE_NONBLOCKER_SURPLUS_PERMANENT_EXTRACTION.md"
+      ]
+    },
+    {
+      "old_path": "audit_residual_hafnian_common_cofactor_gram.py",
+      "proposed_path": "claims/arbitrary-order/audit_residual_hafnian_common_cofactor_gram.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named audit carrier in paired arbitrary-order claim document",
+        "paired doc RESIDUAL_HAFNIAN_COMMON_COFACTOR_GRAM_THEOREM.md"
+      ]
+    },
+    {
+      "old_path": "audit_residual_hafnian_hessian_kneser_etale_and_jet_integrability.py",
+      "proposed_path": "claims/arbitrary-order/audit_residual_hafnian_hessian_kneser_etale_and_jet_integrability.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named audit carrier in paired arbitrary-order claim document",
+        "paired doc RESIDUAL_HAFNIAN_HESSIAN_KNESER_ETALE_AND_JET_INTEGRABILITY_THEOREM.md"
+      ]
+    },
+    {
+      "old_path": "audit_response_jet_principal_deletion_deck_and_root_parity_legality.py",
+      "proposed_path": "claims/arbitrary-order/audit_response_jet_principal_deletion_deck_and_root_parity_legality.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named audit carrier in paired arbitrary-order claim document",
+        "paired doc RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md"
+      ]
+    },
+    {
+      "old_path": "audit_three_colour_balanced_bridge_intersection.py",
+      "proposed_path": "claims/arbitrary-order/audit_three_colour_balanced_bridge_intersection.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named audit carrier in paired arbitrary-order claim document",
+        "paired doc THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md"
+      ]
+    },
+    {
+      "old_path": "audit_three_colour_blocker_union.py",
+      "proposed_path": "claims/arbitrary-order/audit_three_colour_blocker_union.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named audit carrier in paired arbitrary-order claim document",
+        "paired doc THREE_COLOUR_BLOCKER_UNION_LEMMA.md"
+      ]
+    },
+    {
+      "old_path": "audit_three_colour_diagonal_matching_balance.py",
+      "proposed_path": "claims/arbitrary-order/audit_three_colour_diagonal_matching_balance.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named audit carrier in paired arbitrary-order claim document",
+        "paired doc THREE_COLOUR_DIAGONAL_MATCHING_BALANCE_THEOREM.md"
+      ]
+    },
+    {
+      "old_path": "audit_two_port_seven_blocker_reduction.py",
+      "proposed_path": "claims/arbitrary-order/audit_two_port_seven_blocker_reduction.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named audit carrier in paired arbitrary-order claim document",
+        "paired doc TWO_PORT_SEVEN_BLOCKER_REDUCTION.md"
+      ]
+    },
+    {
+      "old_path": "audit_universal_five_blocker_divisibility.py",
+      "proposed_path": "claims/arbitrary-order/audit_universal_five_blocker_divisibility.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named audit carrier in paired arbitrary-order claim document",
+        "paired doc UNIVERSAL_FIVE_BLOCKER_DIVISIBILITY_LEMMA.md"
+      ]
+    },
+    {
+      "old_path": "verify_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py",
+      "proposed_path": "claims/arbitrary-order/verify_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named primary verifier in paired arbitrary-order claim document",
+        "paired doc ARBITRARY_ORDER_HAFNIAN_EULER_HESSIAN_CHANNEL_UNMIXING_AND_SINGULAR_DISCRIMINANT.md"
+      ]
+    },
+    {
+      "old_path": "verify_exact_three_blocker_permanent_rank.py",
+      "proposed_path": "claims/arbitrary-order/verify_exact_three_blocker_permanent_rank.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named primary verifier in paired arbitrary-order claim document",
+        "paired doc EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md"
+      ]
+    },
+    {
+      "old_path": "verify_five_root_no_torus_codimension_two.py",
+      "proposed_path": "claims/arbitrary-order/verify_five_root_no_torus_codimension_two.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named primary verifier in paired arbitrary-order claim document",
+        "paired doc FIVE_ROOT_NO_TORUS_CODIMENSION_TWO_THEOREM.md"
+      ]
+    },
+    {
+      "old_path": "verify_five_root_zero_coupling_intersection.py",
+      "proposed_path": "claims/arbitrary-order/verify_five_root_zero_coupling_intersection.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named primary verifier in paired arbitrary-order claim document",
+        "paired doc FIVE_ROOT_ZERO_COUPLING_INTERSECTION_LEMMA.md"
+      ]
+    },
+    {
+      "old_path": "verify_four_residual_even_wick_tower_and_p6_synchronization.py",
+      "proposed_path": "claims/arbitrary-order/verify_four_residual_even_wick_tower_and_p6_synchronization.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named primary verifier in paired arbitrary-order claim document",
+        "paired doc FOUR_RESIDUAL_EVEN_WICK_TOWER_AND_P6_SYNCHRONIZATION_THEOREM.md"
+      ]
+    },
+    {
+      "old_path": "verify_fourth_order_permanent_subrank.py",
+      "proposed_path": "claims/arbitrary-order/verify_fourth_order_permanent_subrank.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named primary verifier in paired arbitrary-order claim document",
+        "paired doc FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md"
+      ]
+    },
+    {
+      "old_path": "verify_hafnian_convolution_split.py",
+      "proposed_path": "claims/arbitrary-order/verify_hafnian_convolution_split.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named primary verifier in paired arbitrary-order claim document",
+        "paired doc HAFNIAN_CONVOLUTION_SPLIT_LEMMA.md"
+      ]
+    },
+    {
+      "old_path": "verify_integer_signed_lattice_transport.py",
+      "proposed_path": "claims/arbitrary-order/verify_integer_signed_lattice_transport.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named primary verifier in paired arbitrary-order claim document",
+        "paired doc INTEGER_SIGNED_LATTICE_TRANSPORT_THEOREM.md"
+      ]
+    },
+    {
+      "old_path": "verify_multi_star_blocker_factorisation.py",
+      "proposed_path": "claims/arbitrary-order/verify_multi_star_blocker_factorisation.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named primary verifier in paired arbitrary-order claim document",
+        "paired doc MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md"
+      ]
+    },
+    {
+      "old_path": "verify_odd_full_factor_one_term_mechanism.py",
+      "proposed_path": "claims/arbitrary-order/verify_odd_full_factor_one_term_mechanism.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named primary verifier in paired arbitrary-order claim document",
+        "paired doc ODD_FULL_FACTOR_ONE_TERM_THEOREM.md"
+      ]
+    },
+    {
+      "old_path": "verify_odd_residual_port_permanent_extraction.py",
+      "proposed_path": "claims/arbitrary-order/verify_odd_residual_port_permanent_extraction.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named primary verifier in paired arbitrary-order claim document",
+        "paired doc ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION.md"
+      ]
+    },
+    {
+      "old_path": "verify_one_nonblocker_surplus_permanent_extraction.py",
+      "proposed_path": "claims/arbitrary-order/verify_one_nonblocker_surplus_permanent_extraction.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named primary verifier in paired arbitrary-order claim document",
+        "paired doc ONE_NONBLOCKER_SURPLUS_PERMANENT_EXTRACTION.md"
+      ]
+    },
+    {
+      "old_path": "verify_reciprocal_port_orientation.py",
+      "proposed_path": "claims/arbitrary-order/verify_reciprocal_port_orientation.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named primary verifier in paired arbitrary-order claim document",
+        "paired doc RECIPROCAL_PORT_ORIENTATION_CORRECTION.md"
+      ]
+    },
+    {
+      "old_path": "verify_residual_hafnian_common_cofactor_gram.py",
+      "proposed_path": "claims/arbitrary-order/verify_residual_hafnian_common_cofactor_gram.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named primary verifier in paired arbitrary-order claim document",
+        "paired doc RESIDUAL_HAFNIAN_COMMON_COFACTOR_GRAM_THEOREM.md"
+      ]
+    },
+    {
+      "old_path": "verify_residual_hafnian_hessian_kneser_etale_and_jet_integrability.py",
+      "proposed_path": "claims/arbitrary-order/verify_residual_hafnian_hessian_kneser_etale_and_jet_integrability.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named primary verifier in paired arbitrary-order claim document",
+        "paired doc RESIDUAL_HAFNIAN_HESSIAN_KNESER_ETALE_AND_JET_INTEGRABILITY_THEOREM.md"
+      ]
+    },
+    {
+      "old_path": "verify_response_jet_principal_deletion_deck_and_root_parity_legality.py",
+      "proposed_path": "claims/arbitrary-order/verify_response_jet_principal_deletion_deck_and_root_parity_legality.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named primary verifier in paired arbitrary-order claim document",
+        "paired doc RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md"
+      ]
+    },
+    {
+      "old_path": "verify_three_colour_balanced_bridge_intersection.py",
+      "proposed_path": "claims/arbitrary-order/verify_three_colour_balanced_bridge_intersection.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named primary verifier in paired arbitrary-order claim document",
+        "paired doc THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md"
+      ]
+    },
+    {
+      "old_path": "verify_three_colour_blocker_union.py",
+      "proposed_path": "claims/arbitrary-order/verify_three_colour_blocker_union.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named primary verifier in paired arbitrary-order claim document",
+        "paired doc THREE_COLOUR_BLOCKER_UNION_LEMMA.md"
+      ]
+    },
+    {
+      "old_path": "verify_three_colour_diagonal_matching_balance.py",
+      "proposed_path": "claims/arbitrary-order/verify_three_colour_diagonal_matching_balance.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named primary verifier in paired arbitrary-order claim document",
+        "paired doc THREE_COLOUR_DIAGONAL_MATCHING_BALANCE_THEOREM.md"
+      ]
+    },
+    {
+      "old_path": "verify_two_port_seven_blocker_reduction.py",
+      "proposed_path": "claims/arbitrary-order/verify_two_port_seven_blocker_reduction.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named primary verifier in paired arbitrary-order claim document",
+        "paired doc TWO_PORT_SEVEN_BLOCKER_REDUCTION.md"
+      ]
+    },
+    {
+      "old_path": "verify_universal_five_blocker_divisibility.py",
+      "proposed_path": "claims/arbitrary-order/verify_universal_five_blocker_divisibility.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "stage27_authorized_review: explicitly named primary verifier in paired arbitrary-order claim document",
+        "paired doc UNIVERSAL_FIVE_BLOCKER_DIVISIBILITY_LEMMA.md"
       ]
     }
   ]

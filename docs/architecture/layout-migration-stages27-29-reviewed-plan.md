@@ -4,9 +4,10 @@ Status: **REVIEWED, CONFLICT-FREE PLAN; NO STAGE 27-29 MOVE HAS YET BEEN
 FROZEN OR EXECUTED.**
 
 The global Krenn-Gu conjecture remains **UNRESOLVED**. This plan changes
-filesystem and executable-path ownership only. It does not change a theorem,
-scope, lifecycle, evidence role, finite-case quantifier, formalization status,
-or global status.
+filesystem and executable-path ownership and corrects stale ledger mappings
+for already-documented evidence carriers. It does not change an underlying
+theorem, scope, lifecycle, evidence role, finite-case quantifier,
+formalization status, or global status.
 
 In this plan, an exact size, set, or hash refers to migration membership or
 identity, and a complete N-file subtree or forest refers to ownership closure.
@@ -261,6 +262,12 @@ verifiers and are preserved by the shared bootstrap with root imports:
 - `verify_odd_full_factor_one_term_mechanism.py`:
   `explore_random_even_cycle_forks.py`.
 
+A post-plan folded-AST scan also found 18 selected scripts that construct a
+co-moving theorem path as `Path(<root basename>)`. They need package-local
+`HERE` paths after the move. This selected-to-selected same-package path
+surface was absent from the initial external-path scan; it changes the repair
+inventory, not the 587-file mapping or proof boundary.
+
 Four selected arbitrary-order verifiers require final `REPO_ROOT` paths to
 one P7 primary and three P6 theorem documents. Staying consumers include the
 four `FAST_VERIFIERS` entries in `check_hygiene.py`, two P5 pair-signature
@@ -283,6 +290,16 @@ surfaces:
 
 The Stage 27 dry run must freeze the line-exact repair inventory before the
 batch is approved.
+
+The curated ledger has two stale evidence mappings in this forest. Exact
+Three Blocker and Support-four P5 contraction each explicitly name a primary
+and distinct finite-field audit in the owning document, while the ledger says
+one or both carriers do not exist. Stage 27 will record or retain both primary
+paths with `script_is_the_verifier` provenance and both audit paths with
+`independent_modular_audit` provenance, with an explicit scope wall: the
+audits independently reconstruct only their finite-field formula/coefficient
+layers and are corroborating evidence, not second characteristic-zero proofs.
+Mathematical status and scope remain unchanged.
 
 ## Stage 28: bounded finite forest plus conflict-free P4 packages
 
@@ -507,7 +524,9 @@ After Stage 29 merges:
   1,000-entry cap;
 - `main` and `origin/main` must agree and remain clean;
 - merged-main CI and the hygiene floor must be green;
-- the four conflicts and all excluded packages must remain untouched;
+- the four conflicts and all excluded packages must remain unadjudicated and
+  unmoved, and their mathematical content/status must remain untouched; only
+  separately frozen staying-consumer path/provenance repairs are permitted;
 - the global Krenn-Gu status must still be **UNRESOLVED**.
 
 At that point root readability is sufficient to pause layout work and return

@@ -17,18 +17,18 @@
     "batch_directory": "catalog/batches"
   },
   "counts": {
-    "total_classified_moves": 2015,
+    "total_classified_moves": 2056,
     "moved": 411,
     "pilot": 0,
-    "proposed_high_confidence": 242,
-    "review_required": 1362,
-    "unclassified": 348,
+    "proposed_high_confidence": 282,
+    "review_required": 1363,
+    "unclassified": 307,
     "root_files_before": 2363,
     "root_dirs_before": 3,
     "root_entries_before": 2366,
     "projected_root_if_moved_only": 1961,
-    "projected_root_if_high_confidence_batches_executed": 1719,
-    "projected_root_if_all_classified_executed": 357,
+    "projected_root_if_high_confidence_batches_executed": 1679,
+    "projected_root_if_all_classified_executed": 316,
     "projection_note": "unclassified files are not members of any move set, so every projection already leaves them at the root; do not add unclassified again",
     "collisions": 0,
     "double_moves": 0,
@@ -672,6 +672,22 @@
       "confidence": "low"
     },
     {
+      "old_path": "ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION.md",
+      "new_path": "claims/arbitrary-order/ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "review_required",
+      "claim_family": "arbitrary-order",
+      "confidence": "medium"
+    },
+    {
+      "old_path": "ONE_NONBLOCKER_SURPLUS_PERMANENT_EXTRACTION.md",
+      "new_path": "claims/arbitrary-order/ONE_NONBLOCKER_SURPLUS_PERMANENT_EXTRACTION.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "review_required",
+      "claim_family": "arbitrary-order",
+      "confidence": "medium"
+    },
+    {
       "old_path": "PARTIAL_CIRCUIT_BINOMIAL_CLOSURE_LEMMA.md",
       "new_path": "claims/arbitrary-order/PARTIAL_CIRCUIT_BINOMIAL_CLOSURE_LEMMA.md",
       "reason": "claim_document -> arbitrary-order",
@@ -1064,6 +1080,14 @@
       "confidence": "low"
     },
     {
+      "old_path": "TWO_PORT_SEVEN_BLOCKER_REDUCTION.md",
+      "new_path": "claims/arbitrary-order/TWO_PORT_SEVEN_BLOCKER_REDUCTION.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "review_required",
+      "claim_family": "arbitrary-order",
+      "confidence": "medium"
+    },
+    {
       "old_path": "TWO_RESIDUAL_COORDINATE_MONOMIAL_SLICE_UNIVERSALITY_NOGO.md",
       "new_path": "claims/arbitrary-order/TWO_RESIDUAL_COORDINATE_MONOMIAL_SLICE_UNIVERSALITY_NOGO.md",
       "reason": "claim_document -> arbitrary-order",
@@ -1114,6 +1138,14 @@
     {
       "old_path": "audit_arbitrary_order_degree_six_kotzig_port_obstruction.py",
       "new_path": "claims/arbitrary-order/audit_arbitrary_order_degree_six_kotzig_port_obstruction.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "audit_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py",
+      "new_path": "claims/arbitrary-order/audit_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py",
       "reason": "claim_script -> arbitrary-order",
       "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
@@ -1440,6 +1472,14 @@
       "confidence": "high"
     },
     {
+      "old_path": "audit_exact_three_blocker_permanent_rank.py",
+      "new_path": "claims/arbitrary-order/audit_exact_three_blocker_permanent_rank.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
       "old_path": "audit_five_mode_row_pair_incidence_equality_polar_classification_sharpness.py",
       "new_path": "claims/arbitrary-order/audit_five_mode_row_pair_incidence_equality_polar_classification_sharpness.py",
       "reason": "claim_script -> arbitrary-order",
@@ -1458,6 +1498,14 @@
     {
       "old_path": "audit_five_root_boundary_transversal_blocker_classification.py",
       "new_path": "claims/arbitrary-order/audit_five_root_boundary_transversal_blocker_classification.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "audit_five_root_no_torus_codimension_two.py",
+      "new_path": "claims/arbitrary-order/audit_five_root_no_torus_codimension_two.py",
       "reason": "claim_script -> arbitrary-order",
       "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
@@ -1504,6 +1552,14 @@
       "confidence": "high"
     },
     {
+      "old_path": "audit_four_residual_even_wick_tower_and_p6_synchronization.py",
+      "new_path": "claims/arbitrary-order/audit_four_residual_even_wick_tower_and_p6_synchronization.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
       "old_path": "audit_four_root_six_blocker_arbitrary_order_kernel_support_obstruction.py",
       "new_path": "claims/arbitrary-order/audit_four_root_six_blocker_arbitrary_order_kernel_support_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
@@ -1514,6 +1570,14 @@
     {
       "old_path": "audit_four_root_smooth_torus_obstruction.py",
       "new_path": "claims/arbitrary-order/audit_four_root_smooth_torus_obstruction.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "audit_fourth_order_permanent_subrank.py",
+      "new_path": "claims/arbitrary-order/audit_fourth_order_permanent_subrank.py",
       "reason": "claim_script -> arbitrary-order",
       "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
@@ -1536,6 +1600,14 @@
       "confidence": "high"
     },
     {
+      "old_path": "audit_hafnian_convolution_split.py",
+      "new_path": "claims/arbitrary-order/audit_hafnian_convolution_split.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
       "old_path": "audit_hafnian_principal_cofactor_gradient_dominance.py",
       "new_path": "claims/arbitrary-order/audit_hafnian_principal_cofactor_gradient_dominance.py",
       "reason": "claim_script -> arbitrary-order",
@@ -1552,6 +1624,38 @@
       "confidence": "high"
     },
     {
+      "old_path": "audit_multi_star_blocker_factorisation.py",
+      "new_path": "claims/arbitrary-order/audit_multi_star_blocker_factorisation.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "audit_odd_residual_port_permanent_extraction.py",
+      "new_path": "claims/arbitrary-order/audit_odd_residual_port_permanent_extraction.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "audit_one_nonblocker_surplus_permanent_extraction.py",
+      "new_path": "claims/arbitrary-order/audit_one_nonblocker_surplus_permanent_extraction.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "audit_residual_hafnian_common_cofactor_gram.py",
+      "new_path": "claims/arbitrary-order/audit_residual_hafnian_common_cofactor_gram.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
       "old_path": "audit_residual_hafnian_common_gram_audit_and_torus_zero_full_rank_sharpness.py",
       "new_path": "claims/arbitrary-order/audit_residual_hafnian_common_gram_audit_and_torus_zero_full_rank_sharpness.py",
       "reason": "claim_script -> arbitrary-order",
@@ -1560,8 +1664,24 @@
       "confidence": "high"
     },
     {
+      "old_path": "audit_residual_hafnian_hessian_kneser_etale_and_jet_integrability.py",
+      "new_path": "claims/arbitrary-order/audit_residual_hafnian_hessian_kneser_etale_and_jet_integrability.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
       "old_path": "audit_residual_hafnian_torus_zero_full_rank_cofactor_boundary.py",
       "new_path": "claims/arbitrary-order/audit_residual_hafnian_torus_zero_full_rank_cofactor_boundary.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "audit_response_jet_principal_deletion_deck_and_root_parity_legality.py",
+      "new_path": "claims/arbitrary-order/audit_response_jet_principal_deletion_deck_and_root_parity_legality.py",
       "reason": "claim_script -> arbitrary-order",
       "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
@@ -1848,6 +1968,38 @@
       "confidence": "high"
     },
     {
+      "old_path": "audit_three_colour_balanced_bridge_intersection.py",
+      "new_path": "claims/arbitrary-order/audit_three_colour_balanced_bridge_intersection.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "audit_three_colour_blocker_union.py",
+      "new_path": "claims/arbitrary-order/audit_three_colour_blocker_union.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "audit_three_colour_diagonal_matching_balance.py",
+      "new_path": "claims/arbitrary-order/audit_three_colour_diagonal_matching_balance.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "audit_two_port_seven_blocker_reduction.py",
+      "new_path": "claims/arbitrary-order/audit_two_port_seven_blocker_reduction.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
       "old_path": "audit_two_residual_coordinate_monomial_slice_universality_nogo.py",
       "new_path": "claims/arbitrary-order/audit_two_residual_coordinate_monomial_slice_universality_nogo.py",
       "reason": "claim_script -> arbitrary-order",
@@ -1858,6 +2010,14 @@
     {
       "old_path": "audit_two_residual_nonblocker_two_port_factorisation.py",
       "new_path": "claims/arbitrary-order/audit_two_residual_nonblocker_two_port_factorisation.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "audit_universal_five_blocker_divisibility.py",
+      "new_path": "claims/arbitrary-order/audit_universal_five_blocker_divisibility.py",
       "reason": "claim_script -> arbitrary-order",
       "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
@@ -1890,6 +2050,14 @@
     {
       "old_path": "verify_arbitrary_order_degree_six_kotzig_port_obstruction.py",
       "new_path": "claims/arbitrary-order/verify_arbitrary_order_degree_six_kotzig_port_obstruction.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py",
+      "new_path": "claims/arbitrary-order/verify_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py",
       "reason": "claim_script -> arbitrary-order",
       "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
@@ -2208,6 +2376,14 @@
       "confidence": "high"
     },
     {
+      "old_path": "verify_exact_three_blocker_permanent_rank.py",
+      "new_path": "claims/arbitrary-order/verify_exact_three_blocker_permanent_rank.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
       "old_path": "verify_five_mode_row_pair_incidence_equality_polar_classification_sharpness.py",
       "new_path": "claims/arbitrary-order/verify_five_mode_row_pair_incidence_equality_polar_classification_sharpness.py",
       "reason": "claim_script -> arbitrary-order",
@@ -2232,6 +2408,14 @@
       "confidence": "high"
     },
     {
+      "old_path": "verify_five_root_no_torus_codimension_two.py",
+      "new_path": "claims/arbitrary-order/verify_five_root_no_torus_codimension_two.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
       "old_path": "verify_five_root_tight_blocker_p5_extraction.py",
       "new_path": "claims/arbitrary-order/verify_five_root_tight_blocker_p5_extraction.py",
       "reason": "claim_script -> arbitrary-order",
@@ -2242,6 +2426,14 @@
     {
       "old_path": "verify_five_root_torus_resultant_dichotomy.py",
       "new_path": "claims/arbitrary-order/verify_five_root_torus_resultant_dichotomy.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_five_root_zero_coupling_intersection.py",
+      "new_path": "claims/arbitrary-order/verify_five_root_zero_coupling_intersection.py",
       "reason": "claim_script -> arbitrary-order",
       "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
@@ -2272,6 +2464,14 @@
       "confidence": "high"
     },
     {
+      "old_path": "verify_four_residual_even_wick_tower_and_p6_synchronization.py",
+      "new_path": "claims/arbitrary-order/verify_four_residual_even_wick_tower_and_p6_synchronization.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
       "old_path": "verify_four_root_six_blocker_arbitrary_order_kernel_support_obstruction.py",
       "new_path": "claims/arbitrary-order/verify_four_root_six_blocker_arbitrary_order_kernel_support_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
@@ -2282,6 +2482,14 @@
     {
       "old_path": "verify_four_root_smooth_torus_obstruction.py",
       "new_path": "claims/arbitrary-order/verify_four_root_smooth_torus_obstruction.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_fourth_order_permanent_subrank.py",
+      "new_path": "claims/arbitrary-order/verify_fourth_order_permanent_subrank.py",
       "reason": "claim_script -> arbitrary-order",
       "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
@@ -2304,6 +2512,14 @@
       "confidence": "high"
     },
     {
+      "old_path": "verify_hafnian_convolution_split.py",
+      "new_path": "claims/arbitrary-order/verify_hafnian_convolution_split.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
       "old_path": "verify_hafnian_principal_cofactor_gradient_dominance.py",
       "new_path": "claims/arbitrary-order/verify_hafnian_principal_cofactor_gradient_dominance.py",
       "reason": "claim_script -> arbitrary-order",
@@ -2320,8 +2536,48 @@
       "confidence": "high"
     },
     {
+      "old_path": "verify_integer_signed_lattice_transport.py",
+      "new_path": "claims/arbitrary-order/verify_integer_signed_lattice_transport.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
       "old_path": "verify_minimal_singleton_circuit_rectangle_theorem.py",
       "new_path": "claims/arbitrary-order/verify_minimal_singleton_circuit_rectangle_theorem.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_multi_star_blocker_factorisation.py",
+      "new_path": "claims/arbitrary-order/verify_multi_star_blocker_factorisation.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_odd_full_factor_one_term_mechanism.py",
+      "new_path": "claims/arbitrary-order/verify_odd_full_factor_one_term_mechanism.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_odd_residual_port_permanent_extraction.py",
+      "new_path": "claims/arbitrary-order/verify_odd_residual_port_permanent_extraction.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_one_nonblocker_surplus_permanent_extraction.py",
+      "new_path": "claims/arbitrary-order/verify_one_nonblocker_surplus_permanent_extraction.py",
       "reason": "claim_script -> arbitrary-order",
       "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
@@ -2336,6 +2592,22 @@
       "confidence": "high"
     },
     {
+      "old_path": "verify_reciprocal_port_orientation.py",
+      "new_path": "claims/arbitrary-order/verify_reciprocal_port_orientation.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_residual_hafnian_common_cofactor_gram.py",
+      "new_path": "claims/arbitrary-order/verify_residual_hafnian_common_cofactor_gram.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
       "old_path": "verify_residual_hafnian_common_gram_audit_and_torus_zero_full_rank_sharpness.py",
       "new_path": "claims/arbitrary-order/verify_residual_hafnian_common_gram_audit_and_torus_zero_full_rank_sharpness.py",
       "reason": "claim_script -> arbitrary-order",
@@ -2344,8 +2616,24 @@
       "confidence": "high"
     },
     {
+      "old_path": "verify_residual_hafnian_hessian_kneser_etale_and_jet_integrability.py",
+      "new_path": "claims/arbitrary-order/verify_residual_hafnian_hessian_kneser_etale_and_jet_integrability.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
       "old_path": "verify_residual_hafnian_torus_zero_full_rank_cofactor_boundary.py",
       "new_path": "claims/arbitrary-order/verify_residual_hafnian_torus_zero_full_rank_cofactor_boundary.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_response_jet_principal_deletion_deck_and_root_parity_legality.py",
+      "new_path": "claims/arbitrary-order/verify_response_jet_principal_deletion_deck_and_root_parity_legality.py",
       "reason": "claim_script -> arbitrary-order",
       "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
@@ -2362,6 +2650,14 @@
     {
       "old_path": "verify_root_m7_cofactor_quotient_wedge_invariant.py",
       "new_path": "claims/arbitrary-order/verify_root_m7_cofactor_quotient_wedge_invariant.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py",
+      "new_path": "claims/arbitrary-order/verify_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py",
       "reason": "claim_script -> arbitrary-order",
       "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
@@ -2394,6 +2690,14 @@
     {
       "old_path": "verify_root_m7_hirota_hidden_overlay_surjectivity_nogo.py",
       "new_path": "claims/arbitrary-order/verify_root_m7_hirota_hidden_overlay_surjectivity_nogo.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py",
+      "new_path": "claims/arbitrary-order/verify_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py",
       "reason": "claim_script -> arbitrary-order",
       "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
@@ -2616,6 +2920,38 @@
       "confidence": "high"
     },
     {
+      "old_path": "verify_three_colour_balanced_bridge_intersection.py",
+      "new_path": "claims/arbitrary-order/verify_three_colour_balanced_bridge_intersection.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_three_colour_blocker_union.py",
+      "new_path": "claims/arbitrary-order/verify_three_colour_blocker_union.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_three_colour_diagonal_matching_balance.py",
+      "new_path": "claims/arbitrary-order/verify_three_colour_diagonal_matching_balance.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_two_port_seven_blocker_reduction.py",
+      "new_path": "claims/arbitrary-order/verify_two_port_seven_blocker_reduction.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
       "old_path": "verify_two_residual_coordinate_monomial_slice_universality_nogo.py",
       "new_path": "claims/arbitrary-order/verify_two_residual_coordinate_monomial_slice_universality_nogo.py",
       "reason": "claim_script -> arbitrary-order",
@@ -2626,6 +2962,14 @@
     {
       "old_path": "verify_two_residual_nonblocker_two_port_factorisation.py",
       "new_path": "claims/arbitrary-order/verify_two_residual_nonblocker_two_port_factorisation.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "proposed_high_confidence",
+      "claim_family": "arbitrary-order",
+      "confidence": "high"
+    },
+    {
+      "old_path": "verify_universal_five_blocker_divisibility.py",
+      "new_path": "claims/arbitrary-order/verify_universal_five_blocker_divisibility.py",
       "reason": "claim_script -> arbitrary-order",
       "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
@@ -14890,22 +15234,6 @@
       "confidence": "medium"
     },
     {
-      "old_path": "verify_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py",
-      "new_path": "src/krenn_gu/verify_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py",
-      "reason": "shared_library -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "verify_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py",
-      "new_path": "src/krenn_gu/verify_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py",
-      "reason": "shared_library -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
       "old_path": "analyze_dimacs_extension_clause_core.py",
       "new_path": "tools/explore/analyze_dimacs_extension_clause_core.py",
       "reason": "tool_script -> None",
@@ -16571,9 +16899,9 @@
     }
   ],
   "destination_subtree_counts": {
-    "claims": 1763,
+    "claims": 1806,
     "tools": 208,
-    "src": 35,
+    "src": 33,
     "docs": 8,
     "catalog": 1
   }
