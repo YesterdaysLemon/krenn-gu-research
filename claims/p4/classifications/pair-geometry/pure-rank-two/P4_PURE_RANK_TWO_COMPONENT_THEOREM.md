@@ -181,7 +181,7 @@ chart.
 
 The 21 genuine toric base-plane/orientation cases have since been
 closed at complete marked-fibre level in
-[`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](../../../../../P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md).
+[`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](../../../../p5/h31/toric-marked-fibre/P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md).
 The nonzero divisor inside the preferred component chart is likewise
 closed at complete marked-fibre level in
 [`P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md`](../../../../../P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md).

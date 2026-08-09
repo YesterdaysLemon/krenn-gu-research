@@ -96,7 +96,8 @@ DEPENDENCIES = (
     / "P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md",
     ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/boundaries/P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md",
     ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md",
-    ROOT / "P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md",
+    ROOT / "claims" / "p5" / "h31" / "toric-marked-fibre"
+    / "P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md",
     ROOT / "claims/p5/h31/single-gate-rank-two-m-exclusion"
     / "P5_H31_SINGLE_GATE_RANK_TWO_M_EXCLUSION.md",
     ROOT / "claims/p5/h31/secondary-gate-exclusion"

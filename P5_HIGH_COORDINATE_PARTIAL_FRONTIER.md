@@ -676,7 +676,7 @@ incidence.  The 17 pure-direction types, both projective charts of the
 first-plane fibre, every row shift, and every binary extension
 direction are excluded by exact selected-minor unit ideals:
 
-- [`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md)
+- [`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](claims/p5/h31/toric-marked-fibre/P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md)
 
 The separate nonzero divisor inside the preferred component chart,
 the first-plane Schubert line at infinity, and the internal `E=0`

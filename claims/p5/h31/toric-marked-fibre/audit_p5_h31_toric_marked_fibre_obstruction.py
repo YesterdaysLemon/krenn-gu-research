@@ -13,11 +13,21 @@ from __future__ import annotations
 import hashlib
 import itertools
 import json
+import sys
 from pathlib import Path
 
 import sympy as sp
 
-from audit_p5_h31_marked_basis_fibre_classification import (
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+from audit_p5_h31_marked_basis_fibre_classification import (  # noqa: E402
     binary_extension_data,
     dot,
     extended_rows,
@@ -27,15 +37,14 @@ from audit_p5_h31_marked_basis_fibre_classification import (
     projective_vectors,
     rank_mod,
 )
-from derive_p5_h31_toric_marked_fibre_elimination import (
+from derive_p5_h31_toric_marked_fibre_elimination import (  # noqa: E402
     marked_rows,
     toric_cases,
 )
 
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md"
-PRIMARY = ROOT / "verify_p5_h31_toric_marked_fibre_obstruction.py"
+THEOREM = HERE / "P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md"
+PRIMARY = HERE / "verify_p5_h31_toric_marked_fibre_obstruction.py"
 
 r, s = sp.symbols("r s")
 t0, t1, t2, t3 = sp.symbols("t0:4")

@@ -33,7 +33,7 @@ Delta_1(12) Delta_2(12) Delta_3(03)=0,
 
 including its intersections with the divisor treated here.  Its
 genuine toric marked-basis fibres have since been excluded in
-[`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md).
+[`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](claims/p5/h31/toric-marked-fibre/P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md).
 The internal `E=0` divisor has since been closed at complete
 marked-fibre level.  A second pure-compression component has since been
 proved separately; this first-component Schubert theorem does not
