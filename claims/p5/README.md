@@ -4,17 +4,20 @@ This spine holds the migrated component-level `H31` and `H22`
 obstruction packages.  Almost every package is generic: it proves that
 the marked `H31` (respectively weighted `H22`) fibre is empty **at the
 generic point of one P4 component's function field** (or on a dense
-open subset of it).  The `h31/embedded-p3/` package is the sole closure
-exception and contains its generic, affine-boundary, and projective
-case-union forest together.
+open subset of it).  The `h31/embedded-p3/` package is the sole complete
+component-closure forest here; it contains the generic, affine-boundary,
+and projective case-union evidence together.  The H22
+`disjoint-mixed-star/` pilot also contains a partial, explicitly scoped
+boundary subtree, not a complete component closure.
 
 **The generic packages are generic/function-field theorems.**  They do
 not close the same components' special divisors, projective boundaries,
 exceptional fibres, or slope divisors, and they do not imply the
-pointwise statements.  Except for the exact embedded-P3 H31 closure
-forest, pointwise boundary/divisor closures for these and the other
-components remain elsewhere (mostly still at the repository root) and
-are separate future work.
+pointwise statements.  Outside the exact embedded-P3 H31 closure forest
+and the scoped disjoint-mixed-star H22 boundary subpackages, pointwise
+boundary/divisor closures for these and the other components remain
+elsewhere (mostly still at the repository root) and are separate future
+work.
 
 Migrating a generic theorem under this spine does not change its
 scope, status, or excluded divisors.  The global Krenn-Gu conjecture
@@ -25,7 +28,7 @@ remains **UNRESOLVED**.
 | directory | contents |
 |---|---|
 | [`h31/`](h31/) | marked-`H31` obstruction packages (22; one complete closure forest) |
-| [`h22/`](h22/) | generic weighted-`H22` obstruction packages (18) |
+| [`h22/`](h22/) | generic weighted-`H22` obstruction packages (18; the disjoint-mixed-star pilot also has a partial boundary subtree) |
 
 The H22 disjoint-mixed-star package was migrated first, in the layout
 migration pilot; it lives at
@@ -49,8 +52,8 @@ asymmetries (never manufactured symmetry):
 
 - `coincident-support-rank-one-star` and `common-kernel-vertical-triangle`
   are H31-only (no live generic H22 theorem exists for them);
-- `disjoint-mixed-star` H22 is the pilot package; only the H31 side
-  moved in Stage 9;
+- `disjoint-mixed-star` H22 is the pilot package and includes a partial
+  boundary subtree; only the H31 side moved in Stage 9;
 - `diagonal-quadric` H22 moved in Stage 9; its H31 side is the
   elliptic-generic theorem, inseparable from its boundary forest and
   deliberately not migrated;
@@ -68,11 +71,11 @@ asymmetries (never manufactured symmetry):
 
 ## Scope boundary
 
-Except for the exact H31 embedded-P3 closure forest, the following P5
-layers are **not** part of this spine: pointwise/divisor closures,
-boundary obstruction trees, exceptional-fibre work, the `q4_211` /
-`q5_221` / component19 / component21 / component23 programmes, and the
-frontier documents
+Except for the exact H31 embedded-P3 closure forest and the scoped H22
+disjoint-mixed-star boundary subpackages, the following P5 layers are **not**
+part of this spine: pointwise/divisor closures, boundary obstruction trees,
+exceptional-fibre work, the `q4_211` / `q5_221` / component19 / component21 /
+component23 programmes, and the frontier documents
 (`P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md`,
 `P5_DELTA3_OBLIGATION_LEDGER.md`,
 `P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`), which remain at the
