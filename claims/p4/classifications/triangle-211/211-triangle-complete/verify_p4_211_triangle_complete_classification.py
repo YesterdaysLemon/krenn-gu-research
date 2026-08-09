@@ -18,11 +18,11 @@ from krenn_gu.bootstrap import bootstrap  # noqa: E402
 REPO_ROOT, HERE = bootstrap(__file__)
 SOURCES = {
     "support_one": (
-        "P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md",
+        "claims/p4/classifications/P4_SUPPORT_ONE_211_TRIANGLE_REDUCTION.md",
         ("entire support-one boundary", "embedded-`P_3` suspension"),
     ),
     "AA_dense": (
-        "P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md",
+        "claims/p4/boundaries/P4_COMMON_KERNEL_YY_211_TRIANGLE_OBSTRUCTION.md",
         ("dense kernel--kernel leaf chart", "active cubic falls into"),
     ),
     "AA_projective": (
@@ -30,15 +30,15 @@ SOURCES = {
         ("complete projective boundary", "closure of component thirteen"),
     ),
     "AB": (
-        "P4_RADICAL_CROSSED_211_TRIANGLE_OBSTRUCTION.md",
+        "claims/p4/boundaries/P4_RADICAL_CROSSED_211_TRIANGLE_OBSTRUCTION.md",
         ("entire orientation is empty", "sixth Borel-flag orbit"),
     ),
     "AC": (
-        "P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md",
+        "claims/p4/boundaries/P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md",
         ("indicated orientation and support-two", "pair image has rank at most two"),
     ),
     "BB_dense": (
-        "P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md",
+        "claims/p4/classifications/P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md",
         ("twelfth pure", "common-active, support-two orientation"),
     ),
     "BB_projective": (
@@ -50,11 +50,11 @@ SOURCES = {
         ("full-source-support part", "first apolar component"),
     ),
     "CC_equal": (
-        "P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md",
+        "claims/p4/classifications/P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md",
         ("thirteenth pure", "Eisenstein norm quadric"),
     ),
     "CC_unequal": (
-        "P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md",
+        "claims/p4/classifications/P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md",
         ("component twenty-two", "complete", "UNRESOLVED"),
     ),
 }

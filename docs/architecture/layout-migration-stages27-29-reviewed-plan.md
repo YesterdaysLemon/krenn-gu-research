@@ -1,7 +1,7 @@
 # Layout migration Stages 27-29 reviewed plan
 
-Status: **STAGE 27 COMPLETE AND VALIDATED; STAGES 28-29 REMAIN REVIEWED,
-UNFROZEN, AND UNEXECUTED.**
+Status: **STAGES 27-28 COMPLETE AND LOCALLY VALIDATED; STAGE 29 REMAINS
+REVIEWED, UNFROZEN, AND UNEXECUTED.**
 
 The global Krenn-Gu conjecture remains **UNRESOLVED**. This plan changes
 filesystem and executable-path ownership and corrects stale ledger mappings

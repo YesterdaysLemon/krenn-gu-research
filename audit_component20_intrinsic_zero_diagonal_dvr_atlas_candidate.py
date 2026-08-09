@@ -19,10 +19,51 @@ SCRIPT = Path(__file__).resolve()
 REPORT = ROOT / "COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_VERIFICATION.md"
 CANDIDATE = ROOT / "COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_CANDIDATE.md"
 COMPONENT20 = ROOT / "claims/p4/classifications/triangle-211/common-active-binary-triangle/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md"
-COMPONENT18 = ROOT / "P4_COMMON_SINGLETON_COMPONENT.md"
+COMPONENT18 = ROOT / "claims/p4/classifications/P4_COMMON_SINGLETON_COMPONENT.md"
 COMPONENT15_BOUNDARY = ROOT / "claims/p4/boundaries/pair-geometry/support-one-secant/P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md"
 COMPONENT16_BOUNDARY = ROOT / "claims/p4/classifications/triangle-211/triple-kernel-rank-one-triangle/P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md"
 FROZEN_COMMIT = "f997c8366b461f3952faef0d35b512318341909d"
+REWRITE_CHECKPOINT = "d25cd2ad357827370baae5cfaaffd695a7573cd3"
+HISTORICAL_COMPONENT_SOURCES = (
+    (
+        "P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md",
+        "1581b3f3ff509c125a1fd3ec7cf00893be1b4bbf",
+    ),
+    (
+        "P4_COMMON_SINGLETON_COMPONENT.md",
+        "4cde2ae57902e10024430666071aafe3ec2e6933",
+    ),
+    (
+        "P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md",
+        "09e000de55598cc296119404f5a0ef5756a2826f",
+    ),
+    (
+        "P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md",
+        "fbdc270ba57ff790078a8d36de2b859c751a229f",
+    ),
+)
+CURRENT_COMPONENT_SOURCES = (
+    (
+        "claims/p4/classifications/triangle-211/common-active-binary-triangle/"
+        "P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md",
+        "eb3d499dc6c39902f9e0053c3280fdc1e1b16464",
+    ),
+    (
+        "claims/p4/classifications/P4_COMMON_SINGLETON_COMPONENT.md",
+        "099c4b8c943a79ecd28d72b5653cf59791bcb6d8",
+    ),
+    (
+        "claims/p4/boundaries/pair-geometry/support-one-secant/"
+        "P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md",
+        "4d3b26491b1e94d33da89fc52af3f3e31eb18c88",
+    ),
+    (
+        "claims/p4/classifications/triangle-211/"
+        "triple-kernel-rank-one-triangle/"
+        "P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md",
+        "358503edee64f8a52136a71e70c5391892dfe6a7",
+    ),
+)
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 SOURCE_PAIRS = tuple(itertools.combinations(range(4), 2))
@@ -52,37 +93,66 @@ def git_commit() -> str:
     ).stdout.strip()
 
 
-def frozen_component_sources_unchanged() -> bool:
-    component_sources = (
-        COMPONENT20,
-        COMPONENT18,
-        COMPONENT15_BOUNDARY,
-        COMPONENT16_BOUNDARY,
-    )
-    ancestor = subprocess.run(
-        ("git", "merge-base", "--is-ancestor", FROZEN_COMMIT, "HEAD"),
-        cwd=ROOT,
-        capture_output=True,
-        check=False,
-        timeout=15,
-    )
-    if ancestor.returncode != 0:
-        return False
+def _component_sources_unchanged(
+    repo_root: Path,
+    historical_commit: str,
+    rewrite_checkpoint: str,
+    historical_sources: tuple[tuple[str, str], ...],
+    current_sources: tuple[tuple[str, str], ...],
+) -> bool:
+    for commit in (historical_commit, rewrite_checkpoint):
+        ancestor = subprocess.run(
+            ("git", "merge-base", "--is-ancestor", commit, "HEAD"),
+            cwd=repo_root,
+            capture_output=True,
+            check=False,
+            timeout=15,
+        )
+        if ancestor.returncode != 0:
+            return False
+
+    for commit, sources in (
+        (historical_commit, historical_sources),
+        (rewrite_checkpoint, current_sources),
+    ):
+        for relative_path, expected_blob in sources:
+            blob = subprocess.run(
+                ("git", "rev-parse", f"{commit}:{relative_path}"),
+                cwd=repo_root,
+                text=True,
+                encoding="utf-8",
+                capture_output=True,
+                check=False,
+                timeout=15,
+            )
+            if blob.returncode != 0 or blob.stdout.strip() != expected_blob:
+                return False
+
     unchanged = subprocess.run(
         (
             "git",
             "diff",
             "--quiet",
-            FROZEN_COMMIT,
+            rewrite_checkpoint,
             "--",
-            *(path.name for path in component_sources),
+            *(relative_path for relative_path, _ in current_sources),
         ),
-        cwd=ROOT,
+        cwd=repo_root,
         capture_output=True,
         check=False,
         timeout=15,
     )
     return unchanged.returncode == 0
+
+
+def frozen_component_sources_unchanged() -> bool:
+    return _component_sources_unchanged(
+        ROOT,
+        FROZEN_COMMIT,
+        REWRITE_CHECKPOINT,
+        HISTORICAL_COMPONENT_SOURCES,
+        CURRENT_COMPONENT_SOURCES,
+    )
 
 
 def add(*rows: tuple[Any, ...]) -> tuple[sp.Expr, ...]:
@@ -909,7 +979,7 @@ def source_and_candidate_audit(
 def main() -> None:
     require(
         frozen_component_sources_unchanged(),
-        "frozen component sources changed or the frozen commit is not an ancestor",
+        "historical/checkpoint component-source provenance guard failed",
     )
     base = base_plucker_audit()
     fan = valuation_fan_audit()

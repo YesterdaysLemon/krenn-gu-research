@@ -41,7 +41,7 @@ OVERLAPPING = (
     REPO_ROOT / "claims" / "p4" / "components" / "mixed-orientation"
     / "P4_MIXED_ORIENTATION_PURE_COMPONENT.md")
 PRIME_CLASSIFICATION = (
-    REPO_ROOT / "P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md")
+    REPO_ROOT / "claims/p4/classifications/P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md")
 RADICAL_STAR = (
     REPO_ROOT / "claims" / "p4" / "classifications" / "star"
     / "radical-star" / "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md")

@@ -13,6 +13,15 @@ import time
 from pysat.formula import CNF
 from pysat.solvers import Solver
 
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 
 SELECTOR_ZERO = 232
 SURVIVING_ORBITS = [
@@ -169,7 +178,7 @@ def main() -> None:
         run(
             [
                 sys.executable,
-                "verify_fourteen_vertex_partial_circuit_binomial_branch.py",
+                str(HERE / "verify_fourteen_vertex_partial_circuit_binomial_branch.py"),
                 str(analysis),
                 "--output",
                 str(fresh_path),
@@ -202,8 +211,7 @@ def main() -> None:
     run(
         [
             sys.executable,
-            "verify_fourteen_vertex_binomial_support_"
-            "closure_augmentation.py",
+            str(HERE / "verify_fourteen_vertex_binomial_support_closure_augmentation.py"),
             str(augmentation),
             "--output",
             str(fresh_augmentation),
@@ -299,7 +307,7 @@ def main() -> None:
     run(
         [
             sys.executable,
-            "run_drat_trim.py",
+            str(REPO_ROOT / "tools" / "generate" / "run_drat_trim.py"),
             "--drat-trim",
             str(args.drat_trim),
             "--cnf",

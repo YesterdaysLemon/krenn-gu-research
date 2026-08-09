@@ -11,6 +11,15 @@ from pathlib import Path
 
 from pysat.formula import CNF
 
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 from verify_fourteen_vertex_c4_c4_c6_orbit6 import read_json, sha256
 
 
@@ -176,8 +185,7 @@ def main() -> None:
             run_quiet(
                 [
                     sys.executable,
-                    "verify_fourteen_vertex_partial_circuit_"
-                    "binomial_selection_chain.py",
+                    str(HERE / "verify_fourteen_vertex_partial_circuit_binomial_selection_chain.py"),
                     str(chain_path),
                     "--output",
                     str(recheck),
@@ -208,8 +216,7 @@ def main() -> None:
             run_quiet(
                 [
                     sys.executable,
-                    "verify_fourteen_vertex_partial_circuit_"
-                    "binomial_branch.py",
+                    str(HERE / "verify_fourteen_vertex_partial_circuit_binomial_branch.py"),
                     str(analysis_path),
                     "--output",
                     str(recheck),
@@ -266,8 +273,7 @@ def main() -> None:
         run_quiet(
             [
                 sys.executable,
-                "verify_fourteen_vertex_binomial_"
-                "support_closure_augmentation.py",
+                str(HERE / "verify_fourteen_vertex_binomial_support_closure_augmentation.py"),
                 str(augmentation_path),
                 "--output",
                 str(recheck),
@@ -323,7 +329,7 @@ def main() -> None:
     run_quiet(
         [
             sys.executable,
-            "run_drat_trim.py",
+            str(REPO_ROOT / "tools" / "generate" / "run_drat_trim.py"),
             "--drat-trim",
             str(args.drat_trim),
             "--cnf",

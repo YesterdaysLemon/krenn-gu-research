@@ -14,6 +14,14 @@ from pysat.formula import CNF
 from verify_fourteen_vertex_c6_8_128_orbits_kappa3 import read_json, sha256
 
 
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 @dataclass(frozen=True)
 class Step:
     excluded_orbits: int
@@ -26,6 +34,26 @@ class Step:
     base_extension_clauses: int
     global_cnf_sha256: str
     global_cnf_clauses: int
+
+
+def _resolve_repo_script(path_key: str) -> Path:
+    direct = REPO_ROOT / path_key
+    if direct.exists():
+        return direct
+    manifest = json.loads(
+        (REPO_ROOT / "catalog" / "moved-paths.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    for move in manifest.get("moves", []):
+        if (
+            move.get("status") == "moved"
+            and move.get("old_path") == path_key
+        ):
+            candidate = REPO_ROOT / move["new_path"]
+            if candidate.exists():
+                return candidate
+    return direct
 
 
 def run_quiet(command: list[str]) -> None:
@@ -59,7 +87,7 @@ def verify_step(
     run_quiet(
         [
             sys.executable,
-            step.predecessor_script,
+            str(_resolve_repo_script(step.predecessor_script)),
             "--output",
             str(predecessor_output),
         ]
@@ -104,8 +132,7 @@ def verify_step(
     run_quiet(
         [
             sys.executable,
-            "verify_fourteen_vertex_two_even_cycle_"
-            "minimum_activity_augmentation.py",
+            str(REPO_ROOT / "claims" / "finite" / "n14" / "verify_fourteen_vertex_two_even_cycle_minimum_activity_augmentation.py"),
             str(augmentation_path),
             "--output",
             str(augmentation_recheck),
@@ -167,7 +194,7 @@ def verify_step(
     run_quiet(
         [
             sys.executable,
-            "run_drat_trim.py",
+            str(REPO_ROOT / "tools" / "generate" / "run_drat_trim.py"),
             "--drat-trim",
             str(drat_trim),
             "--cnf",

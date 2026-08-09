@@ -6,11 +6,21 @@ from __future__ import annotations
 import itertools
 import json
 from fractions import Fraction
+import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
-PRIMARY = ROOT / "verify_p4_unequal_complement_common_kernel_component.py"
-THEOREM = ROOT / "P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md"
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
+ROOT = HERE
+PRIMARY = HERE / "verify_p4_unequal_complement_common_kernel_component.py"
+THEOREM = HERE / "P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md"
 PAIRS = tuple(itertools.combinations(range(4), 2))
 
 

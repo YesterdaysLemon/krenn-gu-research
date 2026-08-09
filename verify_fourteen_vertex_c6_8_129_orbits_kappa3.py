@@ -18,6 +18,14 @@ from verify_fourteen_vertex_c6_8_128_orbits_kappa3 import (
 )
 
 
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 UNSAT_ORBITS = sorted([*PREDECESSOR_UNSAT_ORBITS, 15])
 
 
@@ -116,8 +124,7 @@ def main() -> None:
     run_quiet(
         [
             sys.executable,
-            "verify_fourteen_vertex_two_even_cycle_"
-            "minimum_activity_augmentation.py",
+            str(REPO_ROOT / "claims" / "finite" / "n14" / "verify_fourteen_vertex_two_even_cycle_minimum_activity_augmentation.py"),
             str(args.orbit15_augmentation),
             "--output",
             str(augmentation_recheck),
@@ -184,7 +191,7 @@ def main() -> None:
     run_quiet(
         [
             sys.executable,
-            "run_drat_trim.py",
+            str(REPO_ROOT / "tools" / "generate" / "run_drat_trim.py"),
             "--drat-trim",
             str(args.drat_trim),
             "--cnf",

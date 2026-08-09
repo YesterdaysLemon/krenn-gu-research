@@ -11,7 +11,17 @@ from eight_vertex_degree4_cegar import symmetry_clauses
 from eight_vertex_sparse_exact import local_allowed_edges
 from learn_singular_fallback_clauses import singular_unit
 from search_witness import EquationSystem
-from verify_laurent_batch_manifest import audit_cnf
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+from krenn_gu.verify_laurent_batch_manifest import audit_cnf
 
 
 def sha256(path: Path) -> str:

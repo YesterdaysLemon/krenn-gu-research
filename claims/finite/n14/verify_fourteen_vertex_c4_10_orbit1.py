@@ -12,6 +12,15 @@ from pathlib import Path
 
 from pysat.formula import CNF
 
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 
 def sha256(path: Path) -> str:
     digest = hashlib.sha256()
@@ -72,8 +81,7 @@ def main() -> None:
     subprocess.run(
         [
             sys.executable,
-            "verify_fourteen_vertex_two_even_cycle_"
-            "minimum_activity_augmentation.py",
+            str(HERE / "verify_fourteen_vertex_two_even_cycle_minimum_activity_augmentation.py"),
             str(args.augmentation),
             "--output",
             str(reconstruction_output),
@@ -99,7 +107,7 @@ def main() -> None:
     subprocess.run(
         [
             sys.executable,
-            "audit_fourteen_vertex_c4_c4_c6_rule_sat_orbits.py",
+            str(REPO_ROOT / "audit_fourteen_vertex_c4_c4_c6_rule_sat_orbits.py"),
             "--cnf",
             str(global_cnf),
             "--first-selector",
@@ -141,7 +149,7 @@ def main() -> None:
     subprocess.run(
         [
             sys.executable,
-            "run_drat_trim.py",
+            str(REPO_ROOT / "tools" / "generate" / "run_drat_trim.py"),
             "--drat-trim",
             str(args.drat_trim),
             "--cnf",

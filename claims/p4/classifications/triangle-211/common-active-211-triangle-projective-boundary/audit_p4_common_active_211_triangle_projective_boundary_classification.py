@@ -21,8 +21,8 @@ from krenn_gu.bootstrap import bootstrap  # noqa: E402
 REPO_ROOT, HERE = bootstrap(__file__)
 THEOREM = HERE / "P4_COMMON_ACTIVE_211_TRIANGLE_PROJECTIVE_BOUNDARY_CLASSIFICATION.md"
 PRIMARY = HERE / "verify_p4_common_active_211_triangle_projective_boundary_classification.py"
-COMPONENT11 = REPO_ROOT / "P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md"
-COMPONENT12 = REPO_ROOT / "P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md"
+COMPONENT11 = REPO_ROOT / "claims/p4/classifications/P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md"
+COMPONENT12 = REPO_ROOT / "claims/p4/classifications/P4_TRANSVERSE_COMMON_FACTOR_COMPONENT.md"
 MASKS3 = (14, 13, 11, 7)
 PAIRS = tuple(itertools.combinations(range(4), 2))
 

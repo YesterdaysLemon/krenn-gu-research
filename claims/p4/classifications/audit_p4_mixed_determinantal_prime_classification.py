@@ -6,12 +6,20 @@ from __future__ import annotations
 import hashlib
 import itertools
 import json
+import sys
 from pathlib import Path
 
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md"
-PRIMARY = ROOT / "verify_p4_mixed_determinantal_prime_classification.py"
+REPO_ROOT, HERE = bootstrap(__file__)
+
+ROOT = HERE
+THEOREM = HERE / "P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md"
+PRIMARY = HERE / "verify_p4_mixed_determinantal_prime_classification.py"
 MODULI = (101, 103)
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PAIRS = tuple(itertools.combinations(range(4), 2))

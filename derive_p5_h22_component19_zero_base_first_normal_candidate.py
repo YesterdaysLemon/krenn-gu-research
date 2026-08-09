@@ -9,11 +9,21 @@ import json
 import shutil
 import subprocess
 from datetime import UTC, datetime
+import sys
 from pathlib import Path
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 
 import sympy as sp
 
-ROOT = Path(__file__).resolve().parent
+ROOT = HERE
 SCRIPT = Path(__file__).resolve()
 REPORT = ROOT / "P5_H22_COMPONENT19_ZERO_BASE_FIRST_NORMAL_CANDIDATE.md"
 GEOMETRY_CERTIFICATE = (
@@ -22,7 +32,7 @@ GEOMETRY_CERTIFICATE = (
 INCIDENCE_CERTIFICATE = (
     ROOT / "p5_h22_component19_zero_base_first_normal_incidence_certificate.json"
 )
-SOURCE = ROOT / "P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md"
+SOURCE = REPO_ROOT / "claims/p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md"
 RECONNAISSANCE = (
     ROOT / "P5_H22_COMPONENT19_P0_FINITE_BOUNDARY_GEOMETRY_RECONNAISSANCE.md"
 )

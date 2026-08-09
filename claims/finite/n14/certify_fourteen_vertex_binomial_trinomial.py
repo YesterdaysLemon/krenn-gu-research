@@ -9,7 +9,17 @@ from collections import Counter
 from pathlib import Path
 from typing import Sequence
 
-from verify_fourteen_vertex_no_one_term_support import (
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+from krenn_gu.verify_fourteen_vertex_no_one_term_support import (
     CYCLES,
     FULL_EDGES,
     N,

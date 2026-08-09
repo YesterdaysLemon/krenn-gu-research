@@ -5,6 +5,16 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 from verify_fourteen_vertex_c6_8_kappa3_extension_step import Step, verify_step
 
 

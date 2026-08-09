@@ -9,11 +9,21 @@ import json
 import shutil
 import subprocess
 from datetime import UTC, datetime
+import sys
 from pathlib import Path
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 
 import sympy as sp
 
-ROOT = Path(__file__).resolve().parent
+ROOT = HERE
 SCRIPT = Path(__file__).resolve()
 REPORT = ROOT / (
     "P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_"
@@ -22,7 +32,7 @@ REPORT = ROOT / (
 CERTIFICATE = ROOT / (
     "p5_h22_common_kernel_vertical_triangle_component_generic_certificate.json"
 )
-COMPONENT = ROOT / "P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md"
+COMPONENT = REPO_ROOT / "claims/p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md"
 H31 = ROOT / "claims/p5/h31/common-kernel-vertical-triangle/P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md"
 H22_DEFINITION = ROOT / "claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md"
 

@@ -9,12 +9,22 @@ import io
 import json
 import shutil
 import subprocess
+import sys
 from pathlib import Path
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 
 import analyze_p4_common_singleton_local_dimension as analysis
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P4_COMMON_SINGLETON_COMPONENT.md"
+ROOT = HERE
+THEOREM = HERE / "P4_COMMON_SINGLETON_COMPONENT.md"
 GRAPH_SLICE = ROOT / "tmp" / "p4_common_singleton_local_graph_slice.sing"
 PRIME = 32003
 EXPECTED_GRAPH_SLICE_SHA256 = (
@@ -177,15 +187,15 @@ def _fragment_source_path(filename: str) -> Path:
     the executed-move map in ``catalog/moved-paths.json`` so it keeps
     finding each source at its post-migration path.
     """
-    direct = ROOT / filename
+    direct = REPO_ROOT / filename
     if direct.exists():
         return direct
-    manifest_path = ROOT / "catalog" / "moved-paths.json"
+    manifest_path = REPO_ROOT / "catalog" / "moved-paths.json"
     if manifest_path.exists():
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
         for move in manifest.get("moves", []):
             if move.get("status") == "moved" and move.get("old_path") == filename:
-                candidate = ROOT / move["new_path"]
+                candidate = REPO_ROOT / move["new_path"]
                 if candidate.exists():
                     return candidate
     return direct

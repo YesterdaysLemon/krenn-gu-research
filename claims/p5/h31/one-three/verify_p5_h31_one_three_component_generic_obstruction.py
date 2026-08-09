@@ -16,9 +16,10 @@ for _p in Path(__file__).resolve().parents:
     if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
         sys.path.insert(0, str(_p / "src"))
         break
-from krenn_gu.bootstrap import bootstrap  # noqa: E402
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/p4/classifications")
 
 from p5_high_coordinate_tree_chart_cegar import singular_command_with_timeout
 from verify_p4_diagonal_quadric_one_three_components import branch_planes
@@ -31,8 +32,8 @@ from verify_p5_h31_marked_basis_open_branch import (
 
 ROOT = REPO_ROOT
 THEOREM = HERE / "P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md"
-COMPONENT = ROOT / "P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md"
-COMPONENT_PRIMARY = ROOT / "verify_p4_diagonal_quadric_one_three_components.py"
+COMPONENT = REPO_ROOT / "claims/p4/classifications/P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md"
+COMPONENT_PRIMARY = REPO_ROOT / "claims/p4/classifications/verify_p4_diagonal_quadric_one_three_components.py"
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
 

@@ -18,12 +18,12 @@ for _p in Path(__file__).resolve().parents:
 from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
-COMP18 = REPO_ROOT / "P4_COMMON_SINGLETON_COMPONENT.md"
+COMP18 = REPO_ROOT / "claims/p4/classifications/P4_COMMON_SINGLETON_COMPONENT.md"
 COMP21 = (
     REPO_ROOT / "claims" / "p4" / "classifications" / "star"
     / "coincident-support-star-reverse"
     / "P4_COINCIDENT_SUPPORT_STAR_REVERSE_CLASSIFICATION.md")
-MIXED_CHAIN = REPO_ROOT / "P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md"
+MIXED_CHAIN = REPO_ROOT / "claims/p4/classifications/P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md"
 TRIPLE_KERNEL = REPO_ROOT / "claims/p4/classifications/triangle-211/triple-kernel-rank-one-triangle/P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md"
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PAIRS = tuple(itertools.combinations(range(4), 2))

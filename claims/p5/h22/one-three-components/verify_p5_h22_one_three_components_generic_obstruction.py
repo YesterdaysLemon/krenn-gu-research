@@ -48,7 +48,7 @@ from verify_p5_h31_one_three_component_generic_obstruction import (
 
 ROOT = REPO_ROOT
 THEOREM = HERE / "P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md"
-COMPONENT = ROOT / "P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md"
+COMPONENT = REPO_ROOT / "claims/p4/classifications/P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md"
 CANONICAL_PRIMARY = (
     ROOT / "claims/p5/h31/one-three"
     / "verify_p5_h31_one_three_component_generic_obstruction.py"

@@ -6,20 +6,28 @@ from __future__ import annotations
 import hashlib
 import itertools
 import json
+import sys
 from pathlib import Path
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 
 import sympy as sp
 
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md"
+ROOT = HERE
+THEOREM = HERE / "P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md"
 MIXED = (
-    ROOT / "claims" / "p4" / "components" / "mixed-orientation"
-    / "P4_MIXED_ORIENTATION_PURE_COMPONENT.md")
+    REPO_ROOT / "claims/p4/components/mixed-orientation/P4_MIXED_ORIENTATION_PURE_COMPONENT.md")
 SIX_DIMENSIONAL = (
-    ROOT / "claims" / "p4" / "components" / "six-dimensional"
-    / "P4_SIX_DIMENSIONAL_PURE_COMPONENT.md")
-ONE_THREE = ROOT / "P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md"
+    REPO_ROOT / "claims/p4/components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md")
+ONE_THREE = HERE / "P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md"
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
 PAIRS = tuple(itertools.combinations(range(4), 2))

@@ -9,16 +9,26 @@ import json
 import shutil
 import subprocess
 from datetime import UTC, datetime
+import sys
 from pathlib import Path
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 
 import sympy as sp
 
-ROOT = Path(__file__).resolve().parent
+ROOT = HERE
 SCRIPT = Path(__file__).resolve()
 REPORT = ROOT / "P5_H22_COMPONENT19_Q0_PHI_ENDPOINTS_OBSTRUCTION_CANDIDATE.md"
 CERTIFICATE = ROOT / "p5_h22_component19_q0_phi_endpoints_certificate.json"
-INPUTS = tuple(ROOT / name for name in (
-    "P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md",
+INPUTS = tuple(REPO_ROOT / name for name in (
+    "claims/p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md",
     "P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_OBSTRUCTION_CANDIDATE.md",
     "p5_h22_component19_q0_special_divisor_certificate.json",
     "derive_p5_h22_component19_q0_special_divisor_obstruction_candidate.py",

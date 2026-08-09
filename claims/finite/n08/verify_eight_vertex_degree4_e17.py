@@ -9,6 +9,15 @@ import subprocess
 import sys
 from pathlib import Path
 
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 
 def sha256(path: Path) -> str:
     digest = hashlib.sha256()
@@ -113,7 +122,7 @@ def main() -> None:
     for manifest in local_manifests:
         run(
             [
-                "verify_laurent_batch_manifest.py",
+                str(REPO_ROOT / "src" / "krenn_gu" / "verify_laurent_batch_manifest.py"),
                 "--manifest",
                 str(manifest),
             ]
@@ -125,7 +134,7 @@ def main() -> None:
         )
     run(
         [
-            "verify_skeleton_laurent_batch.py",
+            str(HERE / "verify_skeleton_laurent_batch.py"),
             "--batch",
             str(batch),
             "--manifest",
@@ -136,7 +145,7 @@ def main() -> None:
     )
     run(
         [
-            "verify_catalogue_selector.py",
+            str(HERE / "verify_catalogue_selector.py"),
             "--manifest",
             str(selector_manifest),
             "--proof",

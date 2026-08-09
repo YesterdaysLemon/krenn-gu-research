@@ -4,13 +4,23 @@
 from __future__ import annotations
 
 import itertools
+import sys
 from pathlib import Path
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 
 import sympy as sp
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md"
-PRIMARY = ROOT / "verify_p4_mixed_chain_transverse_component_inclusion.py"
+ROOT = HERE
+THEOREM = HERE / "P4_MIXED_CHAIN_TRANSVERSE_COMPONENT_INCLUSION.md"
+PRIMARY = HERE / "verify_p4_mixed_chain_transverse_component_inclusion.py"
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 SOURCE_PAIRS = tuple(itertools.combinations(range(4), 2))
 

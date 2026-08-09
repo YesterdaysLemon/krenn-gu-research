@@ -9,6 +9,17 @@ from pathlib import Path
 
 from pysat.solvers import Glucose4
 
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 
 def sha256(path: Path) -> str:
     digest = hashlib.sha256()
@@ -173,9 +184,7 @@ def main() -> None:
         "eight_vertex_balanced_set_trees_certified.json",
     )
     primary = json.loads(primary_path.read_text(encoding="utf-8"))
-    theorem = Path(
-        "EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md"
-    )
+    theorem = HERE / "EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md"
     if (
         primary.get("verified") is not True
         or primary.get("theorem_sha256") != sha256(theorem)

@@ -16,7 +16,17 @@ from explore_random_minimal_singleton_sets import (
     contiguous_cycles,
 )
 from search_minimal_singleton_counterexample import mutate, state_key
-from verify_fourteen_vertex_no_one_term_support import perfect_matchings
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+from krenn_gu.verify_fourteen_vertex_no_one_term_support import perfect_matchings
 
 
 def extension_count(

@@ -30,7 +30,7 @@ PERMUTATIONS = tuple(itertools.permutations(range(4)))
 SINGULAR = ("wsl.exe", "--exec", "/usr/bin/Singular", "-q")
 ROOT = REPO_ROOT
 THEOREM = HERE / "P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md"
-COMPONENT = ROOT / "P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md"
+COMPONENT = REPO_ROOT / "claims/p4/classifications/P4_EISENSTEIN_NORM_COMMON_KERNEL_COMPONENT.md"
 
 
 def sha256(path: Path) -> str:

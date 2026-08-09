@@ -51,7 +51,19 @@ from cancellation_transport import (
     support_cancellation_transport_conflict,
     support_two_monomial_rectangle_conflict,
 )
-from eight_vertex_degree4_support import (
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/finite/n08")
+expose_claim_package(REPO_ROOT, "claims/finite/n14")
+
+from krenn_gu.eight_vertex_degree4_support import (
     complement_edges,
     decode_graph6,
     is_four_connected,

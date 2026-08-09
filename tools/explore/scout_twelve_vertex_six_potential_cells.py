@@ -18,6 +18,16 @@ from pathlib import Path
 import subprocess
 import time
 
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 from analyze_ten_vertex_degree_six_kotzig_port_survivors import (
     enumerate_coloured_matchings,
 )
@@ -177,16 +187,12 @@ def main() -> None:
     parser.add_argument(
         "--base-theorem",
         type=Path,
-        default=Path(
-            "claims",
-            "arbitrary-order",
-            "THREE_COLOUR_DIAGONAL_MATCHING_BALANCE_THEOREM.md"
-        ),
+        default=REPO_ROOT / "claims" / "arbitrary-order" / "THREE_COLOUR_DIAGONAL_MATCHING_BALANCE_THEOREM.md",
     )
     parser.add_argument(
         "--potential-lemma",
         type=Path,
-        default=Path("SIX_PERMUTED_POTENTIALS_LEMMA.md"),
+        default=REPO_ROOT / "SIX_PERMUTED_POTENTIALS_LEMMA.md",
     )
     parser.add_argument(
         "--output",

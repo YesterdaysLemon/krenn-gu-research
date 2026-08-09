@@ -11,6 +11,16 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Sequence
 
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 import analyze_fourteen_vertex_full_direct_motifs as engine
 from analyze_fourteen_vertex_portal_determinant_lattice import (
     contiguous_cycles,

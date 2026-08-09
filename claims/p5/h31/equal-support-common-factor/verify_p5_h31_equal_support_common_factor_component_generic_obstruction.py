@@ -27,7 +27,7 @@ from verify_p5_h31_marked_basis_open_branch import mixed_matrix
 
 ROOT = REPO_ROOT
 THEOREM = HERE / "P5_H31_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md"
-COMPONENT = ROOT / "P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md"
+COMPONENT = REPO_ROOT / "claims/p4/classifications/P4_EQUAL_SUPPORT_COMMON_FACTOR_COMPONENT.md"
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
 SINGULAR = ("wsl.exe", "--exec", "/usr/bin/Singular", "-q")

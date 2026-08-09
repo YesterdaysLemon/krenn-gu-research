@@ -19,6 +19,7 @@ for _p in Path(__file__).resolve().parents:
 from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/p4/classifications")
 ROOT = REPO_ROOT
 
 from analyze_p4_common_singleton_local_dimension import common_singleton_family
@@ -27,7 +28,7 @@ from verify_p5_h31_marked_basis_open_branch import mixed_matrix
 
 ROOT = REPO_ROOT
 THEOREM = HERE / "P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md"
-COMPONENT = ROOT / "P4_COMMON_SINGLETON_COMPONENT.md"
+COMPONENT = REPO_ROOT / "claims/p4/classifications/P4_COMMON_SINGLETON_COMPONENT.md"
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 SAMPLE = (-3, -2, -1, -1, -1)
 

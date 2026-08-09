@@ -17,6 +17,17 @@ import itertools
 import json
 from pathlib import Path
 
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 N = 8
 FULL = (1 << N) - 1
 TYPES = (1, 1, 2, 2, 4, 4, 7, 7)
@@ -242,9 +253,7 @@ def main() -> None:
     )
     kissat = json.loads(kissat_path.read_text(encoding="utf-8"))
     replay = json.loads(replay_path.read_text(encoding="utf-8"))
-    theorem = Path(
-        "EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md"
-    )
+    theorem = HERE / "EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md"
     if (
         primary.get("verified") is not True
         or primary.get("support_variables") != 24

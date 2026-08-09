@@ -7,6 +7,17 @@ import hashlib
 import json
 from pathlib import Path
 
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 
 def sha256(path: Path) -> str:
     digest = hashlib.sha256()
@@ -36,12 +47,12 @@ def main() -> None:
     parser.add_argument(
         "--primary-source",
         type=Path,
-        default=Path("exhaust_twelve_vertex_six_potential_orbits.cpp"),
+        default=REPO_ROOT / "exhaust_twelve_vertex_six_potential_orbits.cpp",
     )
     parser.add_argument(
         "--audit-source",
         type=Path,
-        default=Path("audit_twelve_vertex_six_potential_orbits.cpp"),
+        default=REPO_ROOT / "audit_twelve_vertex_six_potential_orbits.cpp",
     )
     parser.add_argument(
         "--output",

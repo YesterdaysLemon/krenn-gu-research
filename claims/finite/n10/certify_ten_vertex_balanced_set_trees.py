@@ -9,6 +9,17 @@ from pathlib import Path
 
 from pysat.solvers import Cadical195
 
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 N = 10
 FULL = (1 << N) - 1
 
@@ -249,9 +260,7 @@ def main() -> None:
         for clause in combined:
             handle.write(" ".join(map(str, clause)) + " 0\n")
 
-    theorem = Path(
-        "TEN_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md"
-    )
+    theorem = HERE / "TEN_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md"
     payload = {
         "verified": True,
         "status": (

@@ -6,17 +6,26 @@ from __future__ import annotations
 import hashlib
 import itertools
 import json
+import sys
 from pathlib import Path
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 
 import sympy as sp
 
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md"
-KNOWN_FIRST = ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
+ROOT = HERE
+THEOREM = HERE / "P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md"
+KNOWN_FIRST = REPO_ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
 KNOWN_SECOND = (
-    ROOT / "claims" / "p4" / "components" / "diagonal-quadric"
-    / "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md")
+    REPO_ROOT / "claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md")
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PAIRS = tuple(itertools.combinations(range(4), 2))

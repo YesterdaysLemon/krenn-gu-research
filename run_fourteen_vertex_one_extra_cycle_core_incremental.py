@@ -30,6 +30,14 @@ from run_fourteen_vertex_two_even_cycle_rule_sat_incremental import (
 )
 
 
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 def sha256(path: Path) -> str:
     digest = hashlib.sha256()
     with path.open("rb") as handle:
@@ -213,7 +221,7 @@ def main() -> None:
             )
             finder_arguments = [
                 sys.executable,
-                "find_fourteen_vertex_one_extra_cycle_core.py",
+                str(REPO_ROOT / "tools" / "explore" / "find_fourteen_vertex_one_extra_cycle_core.py"),
                 str(samples_path),
                 "--survivor-index",
                 "0",
@@ -279,7 +287,7 @@ def main() -> None:
                 subprocess.run(
                     [
                         sys.executable,
-                        "verify_fourteen_vertex_one_extra_cycle_core.py",
+                        str(REPO_ROOT / "claims" / "finite" / "n14" / "verify_fourteen_vertex_one_extra_cycle_core.py"),
                         str(candidate_path),
                         "--output",
                         str(audit_path),

@@ -12,6 +12,16 @@ from typing import Iterable, Sequence
 
 import numpy as np
 
+import sys
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 from explore_random_even_cycle_forks import (
     Edge,
     cycle_edges,

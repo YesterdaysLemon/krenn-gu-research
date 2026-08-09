@@ -14,6 +14,15 @@ from pathlib import Path
 
 from pysat.solvers import Solver
 
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 
 def sha256(path: Path) -> str:
     digest = hashlib.sha256()
@@ -143,7 +152,7 @@ def main() -> None:
                 result = subprocess.run(
                     [
                         sys.executable,
-                        "verify_fourteen_vertex_partial_circuit_binomial_branch.py",
+                        str(HERE / "verify_fourteen_vertex_partial_circuit_binomial_branch.py"),
                         str(analysis_path),
                         "--output",
                         str(replay_path),

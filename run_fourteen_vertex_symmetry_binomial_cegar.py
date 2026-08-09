@@ -20,6 +20,14 @@ from pysat.formula import CNF
 from pysat.solvers import Solver
 
 
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 def run(command: list[str]) -> subprocess.CompletedProcess[str]:
     print(f"[run] {' '.join(command)}", flush=True)
     result = subprocess.run(
@@ -189,8 +197,7 @@ def main() -> None:
         result = run(
             [
                 sys.executable,
-                "verify_fourteen_vertex_binomial_"
-                "support_closure_augmentation.py",
+                str(REPO_ROOT / "claims" / "finite" / "n14" / "verify_fourteen_vertex_binomial_support_closure_augmentation.py"),
                 str(augmentation),
                 "--output",
                 str(verified_augmentation),
@@ -366,7 +373,7 @@ def main() -> None:
             result = run(
                 [
                     sys.executable,
-                    "verify_fourteen_vertex_partial_circuit_binomial_branch.py",
+                    str(REPO_ROOT / "claims" / "finite" / "n14" / "verify_fourteen_vertex_partial_circuit_binomial_branch.py"),
                     str(analysis),
                     "--output",
                     str(verified_support),
@@ -422,8 +429,7 @@ def main() -> None:
                 result = run(
                     [
                         sys.executable,
-                        "verify_fourteen_vertex_binomial_"
-                        "support_closure_augmentation.py",
+                        str(REPO_ROOT / "claims" / "finite" / "n14" / "verify_fourteen_vertex_binomial_support_closure_augmentation.py"),
                         str(clause_set),
                         "--output",
                         str(verified_clause_set),
@@ -533,8 +539,7 @@ def main() -> None:
                 result = run(
                     [
                         sys.executable,
-                        "verify_fourteen_vertex_binomial_"
-                        "support_closure_augmentation.py",
+                        str(REPO_ROOT / "claims" / "finite" / "n14" / "verify_fourteen_vertex_binomial_support_closure_augmentation.py"),
                         str(augmentation),
                         "--output",
                         str(verified_augmentation),
