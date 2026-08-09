@@ -131,10 +131,10 @@ destinations:
 Frozen H22 output hashes remain historical provenance.  Operational
 paths/commands change; recorded historical input hashes do not.
 
-A read-only rewriter simulation predicts 21 Markdown-link rewrites across 10
-files, 11 fenced replay-command rewrites across 6 files, and relocation of one
-ledger triple.  Navigation must add this five-triple closure to
-`claims/p5/h31/README.md`, remove it from that page's pending list, qualify any
+A read-only virtual post-move rewriter simulation predicts 21 Markdown-link
+rewrites and 11 fenced replay-command rewrites across 14 Markdown files, plus
+relocation of one ledger triple.  Navigation must add this five-triple closure
+to `claims/p5/h31/README.md`, remove it from that page's pending list, qualify any
 generic-only blanket wording, and update `claims/p5/README.md` counts to H31
 `22` and H22 `18`.
 
