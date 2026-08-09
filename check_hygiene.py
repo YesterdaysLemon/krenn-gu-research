@@ -58,6 +58,7 @@ only execution step; expensive certificate replays remain manual.
 
 from __future__ import annotations
 
+import ast
 import hashlib
 import json
 import os
@@ -1024,8 +1025,13 @@ def check_stale_paths(files: list[str]) -> None:
                 stale.append((rel, m.group(0)))
                 break  # one report per file per old path is enough
         if bases_here:
+            # Python needs the original text here.  Masking a correct
+            # destination path would hide a later ``PATH.name`` use that
+            # discards the destination directory and recreates a stale root
+            # command.
+            bare_scan_text = text if rel.endswith(".py") else masked
             for ctx, base in find_stale_bare_refs(
-                    masked, rel,
+                    bare_scan_text, rel,
                     {b: moved_by_base[b] for b in bases_here}):
                 stale.append((rel, f"{base} ({ctx})"))
     enforced = len(checkables) + len(moved_by_base)
@@ -1059,6 +1065,81 @@ def check_stale_paths(files: list[str]) -> None:
 # Inside the destination package other bare references (prose mentions,
 # hashes of the sibling file) remain valid sibling references and must
 # not be flagged.
+def _python_path_name_commands(text: str, moved_by_base: dict) -> set[str]:
+    """Find moved script paths truncated to ``PATH.name`` in Python argv.
+
+    A correct destination assignment such as ``SCRIPT = ROOT / new_path``
+    is still operationally stale when a command later passes
+    ``SCRIPT.name`` from repository root: the attribute discards the package
+    directory.  This bounded AST check follows only simple assigned names
+    into list/tuple argv expressions supplied directly to a call.  Arbitrary
+    metadata and display uses of ``.name`` are intentionally ignored.
+    """
+    try:
+        tree = ast.parse(text)
+    except SyntaxError:
+        # The compile phase reports syntax errors.  Stale-path checking must
+        # not replace that clearer failure with a parser traceback.
+        return set()
+
+    assigned_bases: dict[str, set[str]] = {}
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Assign):
+            targets = node.targets
+            value = node.value
+        elif isinstance(node, ast.AnnAssign):
+            targets = [node.target]
+            value = node.value
+        else:
+            continue
+        if value is None:
+            continue
+        bases = set()
+        for part in ast.walk(value):
+            if not (isinstance(part, ast.Constant)
+                    and isinstance(part.value, str)):
+                continue
+            literal_base = pathlib.PurePosixPath(
+                part.value.replace("\\", "/")).name
+            if literal_base in moved_by_base:
+                bases.add(literal_base)
+        if not bases:
+            continue
+        for target in targets:
+            if isinstance(target, ast.Name):
+                assigned_bases.setdefault(target.id, set()).update(bases)
+
+    stale = set()
+    for call in (node for node in ast.walk(tree)
+                 if isinstance(node, ast.Call)):
+        for argv in (arg for arg in call.args
+                     if isinstance(arg, (ast.List, ast.Tuple))):
+            parts = list(ast.walk(argv))
+            has_python = any(
+                isinstance(part, ast.Constant)
+                and isinstance(part.value, str)
+                and pathlib.PurePosixPath(
+                    part.value.replace("\\", "/")).name.lower()
+                in {"python", "python3", "python.exe", "python3.exe"}
+                for part in parts
+            ) or any(
+                isinstance(part, ast.Attribute)
+                and part.attr == "executable"
+                and isinstance(part.value, ast.Name)
+                and part.value.id == "sys"
+                for part in parts
+            )
+            if not has_python:
+                continue
+            for part in parts:
+                if not (isinstance(part, ast.Attribute)
+                        and part.attr == "name"
+                        and isinstance(part.value, ast.Name)):
+                    continue
+                stale.update(assigned_bases.get(part.value.id, set()))
+    return stale
+
+
 def find_stale_bare_refs(text: str, rel: str,
                          moved_by_base: dict) -> list:
     rel_dir = str(pathlib.PurePosixPath(rel).parent)
@@ -1090,6 +1171,10 @@ def find_stale_bare_refs(text: str, rel: str,
                     i = end + 1
                     continue
             i += 1
+    path_name_commands = (
+        _python_path_name_commands(text, moved_by_base)
+        if rel.endswith(".py") else set()
+    )
     for base, new in moved_by_base.items():
         pkg_dir = str(pathlib.PurePosixPath(new).parent)
         in_package = rel_dir == pkg_dir or rel_dir.startswith(
@@ -1116,6 +1201,9 @@ def find_stale_bare_refs(text: str, rel: str,
                 continue
         elif rel.endswith(".py"):
             if in_package:
+                continue
+            if base in path_name_commands:
+                hits.append(("python Path.name command", base))
                 continue
             if re.search(
                     r"(subprocess|sys\.executable|python)[^\n]{0,100}?"

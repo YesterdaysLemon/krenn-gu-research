@@ -740,6 +740,63 @@ class StaleReferenceTests(unittest.TestCase):
             self.MOVED)
         self.assertEqual(hits, [])
 
+    def test_python_path_name_command_indirection_fails(self):
+        text = (
+            'P4_SCRIPT = ROOT / "' + self.BASE + '"\n'
+            "\n"
+            "# Deliberately separated from the assignment: AST-based, not "
+            "a bounded regex.\n"
+            'run_json(("uv", "run", "--with", "sympy", "python", '
+            "P4_SCRIPT.name), timeout=180)\n"
+        )
+        hits = find_stale_bare_refs(text, "some_script.py", self.MOVED)
+        self.assertIn(("python Path.name command", self.BASE), hits)
+
+    def test_python_destination_path_name_command_still_fails(self):
+        text = (
+            'P4_SCRIPT = ROOT / "' + self.MOVED[self.BASE] + '"\n'
+            'run_json(("python", P4_SCRIPT.name), timeout=180)\n'
+        )
+        hits = find_stale_bare_refs(text, "some_script.py", self.MOVED)
+        self.assertIn(("python Path.name command", self.BASE), hits)
+
+    def test_python_sys_executable_path_name_command_fails(self):
+        text = (
+            'P4_SCRIPT = ROOT / "' + self.MOVED[self.BASE] + '"\n'
+            "subprocess.run((sys.executable, P4_SCRIPT.name))\n"
+        )
+        hits = find_stale_bare_refs(text, "some_script.py", self.MOVED)
+        self.assertIn(("python Path.name command", self.BASE), hits)
+
+    def test_python_repo_relative_path_command_is_valid(self):
+        text = (
+            'P4_SCRIPT = ROOT / "' + self.MOVED[self.BASE] + '"\n'
+            'run_json(("python", '
+            "P4_SCRIPT.relative_to(ROOT).as_posix()), timeout=180)\n"
+        )
+        hits = find_stale_bare_refs(text, "some_script.py", self.MOVED)
+        self.assertEqual(hits, [])
+
+    def test_python_path_name_metadata_is_valid(self):
+        text = (
+            'P4_SCRIPT = ROOT / "' + self.MOVED[self.BASE] + '"\n'
+            'metadata = {"script": P4_SCRIPT.name}\n'
+        )
+        hits = find_stale_bare_refs(text, "some_script.py", self.MOVED)
+        self.assertEqual(hits, [])
+
+    def test_python_path_name_command_inside_package_valid(self):
+        text = (
+            'P4_SCRIPT = ROOT / "' + self.MOVED[self.BASE] + '"\n'
+            'run_json(("python", P4_SCRIPT.name), timeout=180)\n'
+        )
+        hits = find_stale_bare_refs(
+            text,
+            "claims/p5/h22/disjoint-mixed-star/boundaries/tool.py",
+            self.MOVED,
+        )
+        self.assertEqual(hits, [])
+
     def test_yaml_command_reference_fails(self):
         text = "run: python " + self.BASE + "\n"
         hits = find_stale_bare_refs(text, ".github/x.yml", self.MOVED)
