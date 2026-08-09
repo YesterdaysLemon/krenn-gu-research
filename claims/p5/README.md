@@ -31,6 +31,14 @@ nonzero.  Its arbitrary-`E` scope includes the `E=0` intersection on this leaf,
 not the separate whole internal-`E=0` divisor.  It does not close the rest of
 the projective boundary or a whole component; the canonical predecessor
 remains live and separately owned.  The H22
+`common-center-kernel-star-component-finite-lambda-one-all-marking/`
+directory is the exact characteristic-zero `lambda=1` all-affine-marking
+obstruction over `Q(r,t)` at the generic point of component twenty-three.
+It is one complete case-coverage leaf, not by itself the whole generic finite
+fibre and not pointwise closure of special or projective component fibres.
+Its audit is exact QA at `(r,t)=(2,4)`, not an independent generic proof. The
+later generic case-union theorem and the remaining boundary forest stay at
+root.  The H22
 `disjoint-mixed-star/` pilot also contains a partial, explicitly scoped
 boundary subtree. The H22 `six-dimensional/` package additionally contains
 the equal-weight `r=1` binary leaf at the generic component function-field
@@ -45,7 +53,8 @@ scoped H31 `p+q=0` wall and single-gate branch forests, the internal-`E=0`
 divisor leaf, the toric marked-fibre boundary leaf, the canonical H31
 chart-boundary and first-plane Schubert-infinity section leaves, the complete
 first-plane Schubert-infinity marked-fibre leaf, the
-disjoint-mixed-star H22 boundary subpackages,
+disjoint-mixed-star H22 boundary subpackages, the component-23 finite
+`lambda=1` all-affine-marking H22 leaf,
 and the six-dimensional H22 equal-weight
 normal-form-point leaf, pointwise boundary/divisor closures for these and the
 other components remain elsewhere (mostly still at the repository root) and
@@ -60,7 +69,7 @@ remains **UNRESOLVED**.
 | directory | contents |
 |---|---|
 | [`h31/`](h31/) | marked-`H31` obstruction packages (31 directories; one complete component-closure forest, one flat three-triple `p+q=0` wall subforest, one three-package rank-one-gate forest, one internal-`E=0` divisor leaf, one toric marked-fibre boundary leaf, one canonical chart-boundary section leaf, one canonical first-plane Schubert-infinity section leaf, and one complete first-plane Schubert-infinity marked-fibre leaf) |
-| [`h22/`](h22/) | weighted-`H22` obstruction packages (18; the disjoint-mixed-star pilot has a partial boundary subtree and six-dimensional also has one equal-weight generic-point leaf) |
+| [`h22/`](h22/) | weighted-`H22` obstruction packages (19; the disjoint-mixed-star pilot has a partial boundary subtree, six-dimensional also has one equal-weight generic-point leaf, and component twenty-three has one finite `lambda=1` all-affine-marking generic-point leaf) |
 
 The H22 disjoint-mixed-star package was migrated first, in the layout
 migration pilot; it lives at
@@ -109,6 +118,15 @@ boundary, later components, component exhaustiveness, and the global
 conjecture remain open.  The blocked complete chart-boundary marked-fibre
 family remains deferred with its fourteen-versus-sixteen certificate-stratum
 conflict unadjudicated.
+Stage 25 (`p5-h22-finite-lambda-one-all-marking-stage25`, mapping
+`611abb78c553a124a4cf02308950ec5ace6c9f5f1e2e727ece7f043f3b1f59ba`)
+migrated the exact component-23 finite `lambda=1` all-affine-marking leaf over
+`Q(r,t)`. The old partial theorem, dense-open supplement, `lambda=0` sibling,
+later ordinary case-union theorem, shared providers, and special/projective/
+source-torus boundary forest remain at root. The leaf's chronological false
+and residual-`UNKNOWN` fields remain unchanged; the later case union remains
+closed at its stated generic scope. The exact-Q audit at `(2,4)` is QA rather
+than a generic proof, and the global conjecture remains **UNRESOLVED**.
 
 ## Pairing by underlying P4 family
 
@@ -146,8 +164,11 @@ asymmetries (never manufactured symmetry):
   and the complete first-plane leaf adds all marked-basis shifts only on that
   same divisor.  Neither first-plane leaf closes the rest of the projective
   boundary or a whole component;
-- `common-center-kernel-star`, `unequal-complement-common-kernel`,
-  `unequal-endpoint-inward-star`, and `split-center-mixed-star` are
+- `common-center-kernel-star` now has only the scoped H22 finite `lambda=1`
+  leaf described above; its generic case-union core and boundary forest remain
+  at root, so this is not a matching whole-component generic package;
+- `unequal-complement-common-kernel`, `unequal-endpoint-inward-star`, and
+  `split-center-mixed-star` are
   H31-only in this spine because their H22 work is partial, boundary
   recursive, or depends on candidate-only evidence;
 - `first-rank-two` is H22-only here; `one-three` / `one-three-components`
@@ -159,12 +180,13 @@ Except for the exact H31 embedded-P3 component-closure forest, the scoped H31
 `p+q=0` wall and single-gate branch forests, the internal-`E=0` divisor leaf,
 the toric marked-fibre boundary leaf, the canonical H31 chart-boundary and
 first-plane Schubert-infinity section leaves, the complete first-plane
-Schubert-infinity marked-fibre leaf, and the scoped H22 disjoint-mixed-star
-boundary subpackages, and the H22 six-dimensional equal-weight
+Schubert-infinity marked-fibre leaf, the scoped H22 disjoint-mixed-star
+boundary subpackages, the component-23 finite `lambda=1` all-affine-marking
+H22 leaf, and the H22 six-dimensional equal-weight
 normal-form-point leaf, the following P5 layers are **not** part of this spine:
 pointwise/divisor closures, boundary obstruction trees, exceptional-fibre
-work, the `q4_211` / `q5_221` / component19 / component21 / component23
-programmes, and the frontier documents
+work, the `q4_211` / `q5_221` / component19 / component21 / remaining
+component-23 programmes, and the frontier documents
 (`P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md`,
 `P5_DELTA3_OBLIGATION_LEDGER.md`,
 `P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`), which remain at the

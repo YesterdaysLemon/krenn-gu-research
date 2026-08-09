@@ -518,7 +518,7 @@ Six statements organize the current frontier.
    [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h31/common-center-kernel-star/P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md`](../P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md),
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md`](../P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md),
-   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ONE_ALL_MARKING_OBSTRUCTION.md`](../P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ONE_ALL_MARKING_OBSTRUCTION.md),
+   [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ONE_ALL_MARKING_OBSTRUCTION.md`](../claims/p5/h22/common-center-kernel-star-component-finite-lambda-one-all-marking/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ONE_ALL_MARKING_OBSTRUCTION.md),
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ZERO_ALL_MARKING_OBSTRUCTION.md`](../P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_LAMBDA_ZERO_ALL_MARKING_OBSTRUCTION.md),
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ORDINARY_F_H2_ZERO_OBSTRUCTION.md`](../P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ORDINARY_F_H2_ZERO_OBSTRUCTION.md), and
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ORDINARY_RESIDUAL_OBSTRUCTION.md`](../P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ORDINARY_RESIDUAL_OBSTRUCTION.md), together with the divisor packages
@@ -2200,8 +2200,8 @@ uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_part
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_finite_all_marking_dense_open_supplement.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_finite_all_marking_dense_open_supplement.py
 
-uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_finite_lambda_one_all_marking_obstruction.py
-uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_finite_lambda_one_all_marking_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-finite-lambda-one-all-marking/verify_p5_h22_common_center_kernel_star_component_finite_lambda_one_all_marking_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-finite-lambda-one-all-marking/audit_p5_h22_common_center_kernel_star_component_finite_lambda_one_all_marking_obstruction.py
 
 uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_finite_lambda_zero_all_marking_obstruction.py
 uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_finite_lambda_zero_all_marking_obstruction.py

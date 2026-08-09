@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import itertools
 import json
+import shutil
 import subprocess
 
 import sympy as sp
@@ -78,6 +79,19 @@ def coefficient_vector(expression):
     )
 
 
+def singular_command():
+    native = shutil.which("Singular")
+    if native:
+        return (native, "-q")
+    wsl = shutil.which("wsl.exe")
+    if wsl:
+        return (wsl, "--exec", "/usr/bin/Singular", "-q")
+    raise RuntimeError(
+        "Singular is required: install native Singular or Windows WSL "
+        "with /usr/bin/Singular"
+    )
+
+
 def main():
     alpha, beta = component_rows()
     models = (model(alpha, beta, "D01"), model(alpha, beta, "D23"))
@@ -109,7 +123,7 @@ def main():
         )
     )
     completed = subprocess.run(
-        ("wsl.exe", "--exec", "/usr/bin/Singular", "-q"),
+        singular_command(),
         input=program,
         text=True,
         capture_output=True,

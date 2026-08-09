@@ -14,6 +14,9 @@ Stage 13 used batch `p5-h22-split-center-stage13` (mapping_sha256
 Stage 21 used batch `p5-h22-six-dimensional-equal-weight-stage21`
 (mapping_sha256
 `f7427206126ecc290b0a926c1731eb5eb557aca7d784547d4c64df2dc2b41cf0`).
+Stage 25 used batch `p5-h22-finite-lambda-one-all-marking-stage25`
+(mapping_sha256
+`611abb78c553a124a4cf02308950ec5ace6c9f5f1e2e727ece7f043f3b1f59ba`).
 
 Every theorem in the generic table is a **generic/function-field** statement:
 the
@@ -43,6 +46,28 @@ slope/projective boundaries open.
 | `split-center-mixed-star/` | `P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md` | `verify_p5_h22_split_center_mixed_star_component_generic_obstruction.py` | `audit_p5_h22_split_center_mixed_star_component_generic_obstruction.py` |
 | `transverse-common-factor/` | `P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md` | `verify_p5_h22_transverse_common_factor_component_generic_obstruction.py` | `audit_p5_h22_transverse_common_factor_component_generic_obstruction.py` |
 | `two-rank-two-spoke-mixed-star/` | `P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md` | `verify_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py` | `audit_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py` |
+
+## Component-23 finite lambda-one all-marking leaf
+
+The
+[`common-center-kernel-star-component-finite-lambda-one-all-marking/`](common-center-kernel-star-component-finite-lambda-one-all-marking/)
+package is the exact characteristic-zero obstruction over `Q(r,t)` for the
+finite `lambda=1` slice and every affine marking at the generic point of the
+common-center-kernel-star component. It is one complete case-coverage leaf,
+not a pointwise theorem for special component fibres and not by itself the
+whole generic finite fibre. The later ordinary-residual theorem at repository
+root combines this leaf with the complete `lambda=0,-1` slices and the
+ordinary residual branches to close the generic finite case union. The
+leaf's chronological `generic_finite_all_markings_closed: false` and
+residual-`UNKNOWN` fields remain unchanged.
+
+The primary's candidate-named model builder and migrated H31 row provider are
+shared implementation, not promoted theorem premises. The no-repository-import
+audit independently reconstructs exact `Q` at `(r,t)=(2,4)` but shares
+Singular standard-basis/reduction machinery; it is exact QA, not an
+independent generic `Q(r,t)` proof. Special/projective component fibres,
+wider source-torus or ambient degenerations, `P5 -> Delta3`, arbitrary-order
+gluing, and the global conjecture remain outside this leaf.
 
 ## Six-dimensional equal-weight normal-form point
 
@@ -102,12 +127,15 @@ mirroring the pilot's treatment of its working note.
 
 ## Not migrated here
 
-The H22 common-center-kernel-star partial theorem, unequal-complement
-and unequal-endpoint recursion, and embedded-p3 / common-active-binary-
-triangle documents remain at the repository root with their boundary
-forests or open recursion.  The split-center theorem package is present,
-but its candidate-housed shared construction remains at root pending a
-separate ownership decision.  The equal-support-sixfold package is present
+Except for the scoped component-23 `lambda=1` leaf described above, the H22
+common-center-kernel-star partial theorem, its remaining finite case-union
+files, and its special/projective/source-torus boundary forest remain at the
+repository root. Their chronological and terminal statuses are unchanged.
+Unequal-complement and unequal-endpoint recursion, and embedded-p3 /
+common-active-binary-triangle documents remain at the repository root with
+their boundary forests or open recursion.  The split-center theorem package
+is present, but its candidate-housed shared construction remains at root
+pending a separate ownership decision.  The equal-support-sixfold package is present
 with its actual primary-only evidence structure; migration did not create
 an audit or promote its status.  Migration status changes no theorem claim;
 the global conjecture remains **UNRESOLVED**.
