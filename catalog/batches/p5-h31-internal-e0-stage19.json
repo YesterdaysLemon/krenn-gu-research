@@ -1,0 +1,25 @@
+{
+  "batch_id": "p5-h31-internal-e0-stage19",
+  "approved_by": "Codex (exact mapping reviewer under repository-owner standing delegation dated 2026-08-08)",
+  "approved_at": "2026-08-08",
+  "base_sha": "d7433d7aad1fb6fa0ae26d711b93c8fd54ee80aa",
+  "manifest_sha256": "823a73851bc880704a392ebc279cffb21f552ebe1b945dd73e731e9485879adc",
+  "mapping_sha256": "0a345a2e89974d1e7f8b026cd568d1da6ecec62b0337412b9cc9a35c7edecd6a",
+  "member_count": 3,
+  "moves": [
+    {
+      "old_path": "P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/internal-e0-marked-fibre/P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "audit_p5_h31_internal_e0_marked_fibre.py",
+      "new_path": "claims/p5/h31/internal-e0-marked-fibre/audit_p5_h31_internal_e0_marked_fibre.py"
+    },
+    {
+      "old_path": "verify_p5_h31_internal_e0_marked_fibre.py",
+      "new_path": "claims/p5/h31/internal-e0-marked-fibre/verify_p5_h31_internal_e0_marked_fibre.py"
+    }
+  ],
+  "rationale": "Stage 19: migrate the exact theorem, characteristic-zero primary, and downstream-independent modular audit for the complete marked-H31 fibre obstruction on the internal E=0 divisor after independent topology, evidence-semantics, documentation, and mechanical audits established one non-ambiguous divisor-scoped proof leaf.",
+  "notes": "Exact mapping reviewed by Codex under the repository-owner standing delegation dated 2026-08-08. Classifier confidence is proposal evidence only. Preserve divisor-only scope, the shared toric-case/marked-row layer of the modular audit, the pre-existing broader-component status/provenance conflict without adjudication, zero selected-artifact ledger entries, and global Krenn-Gu UNRESOLVED."
+}
