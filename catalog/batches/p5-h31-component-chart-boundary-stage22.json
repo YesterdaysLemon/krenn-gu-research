@@ -1,0 +1,25 @@
+{
+  "batch_id": "p5-h31-component-chart-boundary-stage22",
+  "approved_by": "Codex (exact mapping reviewer under repository-owner standing delegation dated 2026-08-08)",
+  "approved_at": "2026-08-09",
+  "base_sha": "2040f9ff6ce077908eae83d3ce40e7cb8254fd39",
+  "manifest_sha256": "bd9b23bc2dbe624f646c27d665394917ec6afc1ac8ad0c71eb9e92ad0c667d91",
+  "mapping_sha256": "7130acd031ab499906c6c463298292de459ce7a60eac566a35986d40d3763837",
+  "member_count": 3,
+  "moves": [
+    {
+      "old_path": "P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/component-chart-boundary/P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "audit_p5_h31_component_chart_boundary.py",
+      "new_path": "claims/p5/h31/component-chart-boundary/audit_p5_h31_component_chart_boundary.py"
+    },
+    {
+      "old_path": "verify_p5_h31_component_chart_boundary.py",
+      "new_path": "claims/p5/h31/component-chart-boundary/verify_p5_h31_component_chart_boundary.py"
+    }
+  ],
+  "rationale": "Stage 22: migrate the exact canonical marked-row theorem, characteristic-zero primary, and downstream-independent modular audit for the nonzero component-chart boundary after independent topology, status, provenance, and mechanical audits established one routine scoped proof leaf.",
+  "notes": "Exact mapping reviewed by Codex under the repository-owner standing delegation dated 2026-08-08. Classifier confidence is proposal evidence only. Preserve the canonical-section versus complete-marked-fibre distinction, the modular-QA-only audit role, the unadjudicated P4 internal-E=0 versus selected D=0 attribution conflict, all excluded component and global scopes, zero selected-artifact ledger entries, and global Krenn-Gu UNRESOLVED."
+}
