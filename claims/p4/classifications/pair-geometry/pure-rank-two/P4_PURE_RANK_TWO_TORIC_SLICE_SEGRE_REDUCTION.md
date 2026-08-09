@@ -46,7 +46,7 @@ This theorem itself is a plane-level reduction.  Its 21 residual cases
 are now closed at the complete marked-fibre level, including both
 first-plane charts and every binary extension direction:
 
-- [`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](../../../../../P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md)
+- [`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](../../../../p5/h31/toric-marked-fibre/P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md)
 
 The marked-plane distinction is explained and witnessed in
 [`P5_H31_MARKED_BASIS_OPEN_BRANCH.md`](../../../../../P5_H31_MARKED_BASIS_OPEN_BRANCH.md).

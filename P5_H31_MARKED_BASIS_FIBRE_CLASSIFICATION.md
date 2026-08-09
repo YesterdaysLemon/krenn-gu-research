@@ -326,7 +326,7 @@ all-rank-two pure-compression family lifts to H31.                  (19)
 
 The marked-basis gap on the known finite family chart is closed.  The
 genuine toric base boundary was subsequently closed in
-[`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md).
+[`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](claims/p5/h31/toric-marked-fibre/P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md).
 The nonzero preferred-chart divisor was subsequently closed in
 [`P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md`](P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md).
 The first-plane infinity and internal `E=0` fibres were subsequently

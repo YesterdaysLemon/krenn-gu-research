@@ -12,17 +12,22 @@ complete component closure.  The H31 `common-active-binary-triangle/`
 directory contains the complete diagonal `p+q=0` wall subforest, not the
 broader common-active component family.  The H31
 `internal-e0-marked-fibre/` directory is one exact divisor-scoped leaf, not a
-generic or complete-component package.  The H22 `disjoint-mixed-star/` pilot
-also contains a partial, explicitly scoped boundary subtree.
+generic or complete-component package.  The H31 `toric-marked-fibre/`
+directory is the exact complete marked-fibre obstruction over the 21 genuine
+toric base cases of the first component, not a generic or whole-component
+package and not a closure of its projective interior.  The H22
+`disjoint-mixed-star/` pilot also contains a partial, explicitly scoped
+boundary subtree.
 
 **The generic packages are generic/function-field theorems.**  They do
 not close the same components' special divisors, projective boundaries,
 exceptional fibres, or slope divisors, and they do not imply the
 pointwise statements.  Outside the exact embedded-P3 H31 closure forest, the
 scoped H31 `p+q=0` wall and single-gate branch forests, the internal-`E=0`
-divisor leaf, and the disjoint-mixed-star H22 boundary subpackages, pointwise
-boundary/divisor closures for these and the other components remain
-elsewhere (mostly still at the repository root) and are separate future work.
+divisor leaf, the toric marked-fibre boundary leaf, and the disjoint-mixed-star
+H22 boundary subpackages, pointwise boundary/divisor closures for these and
+the other components remain elsewhere (mostly still at the repository root)
+and are separate future work.
 
 Migrating a generic theorem under this spine does not change its
 scope, status, or excluded divisors.  The global Krenn-Gu conjecture
@@ -32,7 +37,7 @@ remains **UNRESOLVED**.
 
 | directory | contents |
 |---|---|
-| [`h31/`](h31/) | marked-`H31` obstruction packages (27 directories; one complete component-closure forest, one flat three-triple `p+q=0` wall subforest, one three-package rank-one-gate forest, and one internal-`E=0` divisor leaf) |
+| [`h31/`](h31/) | marked-`H31` obstruction packages (28 directories; one complete component-closure forest, one flat three-triple `p+q=0` wall subforest, one three-package rank-one-gate forest, one internal-`E=0` divisor leaf, and one toric marked-fibre boundary leaf) |
 | [`h22/`](h22/) | generic weighted-`H22` obstruction packages (18; the disjoint-mixed-star pilot also has a partial boundary subtree) |
 
 The H22 disjoint-mixed-star package was migrated first, in the layout
@@ -53,7 +58,10 @@ obstruction forest while leaving every all-rank-two branch open.  Stage 18
 diagonal `p+q=0` H31 wall subforest while leaving the broader common-active
 family separately owned.  Stage 19 (`p5-h31-internal-e0-stage19`) migrated
 the exact internal-`E=0` marked-fibre divisor triple while leaving the other
-first-component and later-component obligations separately owned.
+first-component and later-component obligations separately owned.  Stage 20
+(`p5-h31-toric-marked-fibre-stage20`) migrated the exact first-component
+toric marked-fibre triple while leaving the projective base interior, second
+or further components, and component exhaustiveness separately owned.
 
 ## Pairing by underlying P4 family
 
@@ -77,9 +85,10 @@ asymmetries (never manufactured symmetry):
 - `common-active-binary-triangle` now contains only the complete H31
   diagonal `p+q=0` wall subforest; its remaining H31 siblings and all H22
   common-active wall work remain separately owned at root;
-- `internal-e0-marked-fibre` is H31-only and divisor-scoped; it participates
-  in the separately established first-component synthesis but is not itself
-  a generic or complete-component package;
+- `internal-e0-marked-fibre` and `toric-marked-fibre` are H31-only scoped
+  leaves; they participate in the separately established first-component
+  synthesis but neither is a generic or complete-component package.  The
+  toric leaf closes only the 21 genuine toric base-orbit/orientation cases;
 - `common-center-kernel-star`, `unequal-complement-common-kernel`,
   `unequal-endpoint-inward-star`, and `split-center-mixed-star` are
   H31-only in this spine because their H22 work is partial, boundary
@@ -91,10 +100,11 @@ asymmetries (never manufactured symmetry):
 
 Except for the exact H31 embedded-P3 component-closure forest, the scoped H31
 `p+q=0` wall and single-gate branch forests, the internal-`E=0` divisor leaf,
-and the scoped H22 disjoint-mixed-star boundary subpackages, the following P5
-layers are **not** part of this spine: pointwise/divisor closures, boundary
-obstruction trees, exceptional-fibre work, the `q4_211` / `q5_221` /
-component19 / component21 / component23 programmes, and the frontier documents
+the toric marked-fibre boundary leaf, and the scoped H22 disjoint-mixed-star
+boundary subpackages, the following P5 layers are **not** part of this spine:
+pointwise/divisor closures, boundary obstruction trees, exceptional-fibre
+work, the `q4_211` / `q5_221` / component19 / component21 / component23
+programmes, and the frontier documents
 (`P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md`,
 `P5_DELTA3_OBLIGATION_LEDGER.md`,
 `P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`), which remain at the

@@ -36,7 +36,7 @@ for `H31` or for the prize problem.
 ## Toric and Segre input
 
 Use the three monomial plane maps and common normal fan from
-[`P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md`](claims/p4/classifications/pair-geometry/pure-rank-two/boundaries/P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md).
+[`P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md`](../../../p4/classifications/pair-geometry/pure-rank-two/boundaries/P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md).
 For a toric orbit representative, contraction through its last three
 planes gives
 
@@ -45,7 +45,7 @@ Phi : (C^4)^* -> (C^2) tensor (C^2) tensor (C^2).                  (2)
 ```
 
 The exact Segre calculation in
-[`P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md)
+[`P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md`](../../../p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md)
 leaves the following genuine base orbits:
 
 | orbit type | toric normal(s) | pure slice | all-rank `q` |
@@ -204,8 +204,8 @@ hence vanish globally, contradicting target rank three.
 Run:
 
 ```text
-python verify_p5_h31_toric_marked_fibre_obstruction.py
-python audit_p5_h31_toric_marked_fibre_obstruction.py
+python claims/p5/h31/toric-marked-fibre/verify_p5_h31_toric_marked_fibre_obstruction.py
+python claims/p5/h31/toric-marked-fibre/audit_p5_h31_toric_marked_fibre_obstruction.py
 ```
 
 The primary verifier reconstructs the toric face/Segre data, reruns the

@@ -938,7 +938,7 @@ plane/orientation pairs.  The complete marked incidence now excludes
 all 21, including both pure directions of every secant, both
 first-plane charts, and every binary extension direction:
 
-- [`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md)
+- [`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](claims/p5/h31/toric-marked-fibre/P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md)
 
 The mixed rank profiles are now closed.  A unique primary gate with
 rank-two common-plane partners reduces to a marked `P_3` chart and four

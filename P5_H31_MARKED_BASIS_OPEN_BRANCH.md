@@ -157,7 +157,7 @@ extension by all-extension marked-minor covers.  The remaining
 known-component work was therefore on its projective toric and Schubert
 boundary planes.  The 21 genuine toric base cases have since been
 closed, including their complete marked fibres, in
-[`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md).
+[`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](claims/p5/h31/toric-marked-fibre/P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md).
 The nonzero preferred-chart divisor is also closed at complete
 marked-fibre level in
 [`P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md`](P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md).

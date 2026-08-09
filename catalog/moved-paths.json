@@ -18,16 +18,16 @@
   },
   "counts": {
     "total_classified_moves": 2015,
-    "moved": 389,
+    "moved": 392,
     "pilot": 0,
     "proposed_high_confidence": 243,
-    "review_required": 1383,
+    "review_required": 1380,
     "unclassified": 348,
     "root_files_before": 2363,
     "root_dirs_before": 3,
     "root_entries_before": 2366,
-    "projected_root_if_moved_only": 1983,
-    "projected_root_if_high_confidence_batches_executed": 1740,
+    "projected_root_if_moved_only": 1980,
+    "projected_root_if_high_confidence_batches_executed": 1737,
     "projected_root_if_all_classified_executed": 357,
     "projection_note": "unclassified files are not members of any move set, so every projection already leaves them at the root; do not add unclassified again",
     "collisions": 0,
@@ -12611,25 +12611,28 @@
       "old_path": "P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/toric-marked-fibre/P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/toric-marked-fibre",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/h31/toric-marked-fibre",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-h31-toric-marked-fibre-stage20"
     },
     {
       "old_path": "audit_p5_h31_toric_marked_fibre_obstruction.py",
       "new_path": "claims/p5/h31/toric-marked-fibre/audit_p5_h31_toric_marked_fibre_obstruction.py",
       "reason": "claim_script -> p5/h31/toric-marked-fibre",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/h31/toric-marked-fibre",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-h31-toric-marked-fibre-stage20"
     },
     {
       "old_path": "verify_p5_h31_toric_marked_fibre_obstruction.py",
       "new_path": "claims/p5/h31/toric-marked-fibre/verify_p5_h31_toric_marked_fibre_obstruction.py",
       "reason": "claim_script -> p5/h31/toric-marked-fibre",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/h31/toric-marked-fibre",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-h31-toric-marked-fibre-stage20"
     },
     {
       "old_path": "P5_H31_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",

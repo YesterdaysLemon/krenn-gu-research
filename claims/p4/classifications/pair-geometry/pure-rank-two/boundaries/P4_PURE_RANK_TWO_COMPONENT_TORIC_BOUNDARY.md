@@ -22,7 +22,7 @@ toric base specializations to 21 plane/orientation cases, and the
 complete marked-fibre theorem now excludes all 21:
 
 - [`P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md`](../P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md)
-- [`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](../../../../../../P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md)
+- [`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](../../../../../p5/h31/toric-marked-fibre/P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md)
 
 The full marked fibre over the internal `E=0` divisor has since been
 excluded in
