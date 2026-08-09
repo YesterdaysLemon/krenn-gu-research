@@ -22,7 +22,15 @@ the later complete marked-fibre strengthening or a component closure.  The H31
 `component-fiber-infinity/` directory is the exact canonical marked-row
 section on the first-plane Schubert-infinity locus where the other three
 selected preferred Pluecker coordinates remain nonzero, not its later complete
-marked-fibre strengthening or an entire projective-boundary closure.  The H22
+marked-fibre strengthening or an entire projective-boundary closure.  The H31
+`component-fibre-infinity-marked-fibre/` directory is the exact complete
+marked-basis-fibre strengthening on that same divisor, with `H,N != 0`, `E`
+arbitrary, `(A,D)!=(0,0)`, every kernel-row shift, all four orientations, and
+every binary `Delta_2` extension direction with both diagonal coefficients
+nonzero.  Its arbitrary-`E` scope includes the `E=0` intersection on this leaf,
+not the separate whole internal-`E=0` divisor.  It does not close the rest of
+the projective boundary or a whole component; the canonical predecessor
+remains live and separately owned.  The H22
 `disjoint-mixed-star/` pilot also contains a partial, explicitly scoped
 boundary subtree. The H22 `six-dimensional/` package additionally contains
 the equal-weight `r=1` binary leaf at the generic component function-field
@@ -35,7 +43,8 @@ exceptional fibres, or slope divisors, and they do not imply the
 pointwise statements.  Outside the exact embedded-P3 H31 closure forest, the
 scoped H31 `p+q=0` wall and single-gate branch forests, the internal-`E=0`
 divisor leaf, the toric marked-fibre boundary leaf, the canonical H31
-chart-boundary and first-plane Schubert-infinity section leaves, the
+chart-boundary and first-plane Schubert-infinity section leaves, the complete
+first-plane Schubert-infinity marked-fibre leaf, the
 disjoint-mixed-star H22 boundary subpackages,
 and the six-dimensional H22 equal-weight
 normal-form-point leaf, pointwise boundary/divisor closures for these and the
@@ -50,7 +59,7 @@ remains **UNRESOLVED**.
 
 | directory | contents |
 |---|---|
-| [`h31/`](h31/) | marked-`H31` obstruction packages (30 directories; one complete component-closure forest, one flat three-triple `p+q=0` wall subforest, one three-package rank-one-gate forest, one internal-`E=0` divisor leaf, one toric marked-fibre boundary leaf, one canonical chart-boundary section leaf, and one canonical first-plane Schubert-infinity section leaf) |
+| [`h31/`](h31/) | marked-`H31` obstruction packages (31 directories; one complete component-closure forest, one flat three-triple `p+q=0` wall subforest, one three-package rank-one-gate forest, one internal-`E=0` divisor leaf, one toric marked-fibre boundary leaf, one canonical chart-boundary section leaf, one canonical first-plane Schubert-infinity section leaf, and one complete first-plane Schubert-infinity marked-fibre leaf) |
 | [`h22/`](h22/) | weighted-`H22` obstruction packages (18; the disjoint-mixed-star pilot has a partial boundary subtree and six-dimensional also has one equal-weight generic-point leaf) |
 
 The H22 disjoint-mixed-star package was migrated first, in the layout
@@ -91,6 +100,15 @@ rest of the projective boundary, later components, and component
 exhaustiveness separately owned.  A different proposed complete chart-boundary
 marked-fibre batch was deferred because its theorem and primary disagree on
 the certificate-stratum count.
+Stage 24 (`p5-h31-component-fibre-infinity-marked-fibre-stage24`, mapping
+`103e5de3343c1271841a84cfa79903c9d9e8c6f2c318adc8325c3b8cd1a3ace1`)
+migrated that exact four-file complete marked-basis-fibre successor while
+retaining the canonical section as a separate live predecessor.  The package
+closes only the stated first-plane divisor; the rest of the projective
+boundary, later components, component exhaustiveness, and the global
+conjecture remain open.  The blocked complete chart-boundary marked-fibre
+family remains deferred with its fourteen-versus-sixteen certificate-stratum
+conflict unadjudicated.
 
 ## Pairing by underlying P4 family
 
@@ -118,14 +136,16 @@ asymmetries (never manufactured symmetry):
   diagonal `p+q=0` wall subforest; its remaining H31 siblings and all H22
   common-active wall work remain separately owned at root;
 - `internal-e0-marked-fibre`, `toric-marked-fibre`,
-  `component-chart-boundary`, and `component-fiber-infinity` are H31-only scoped
-  leaves; they participate in the separately established first-component
-  synthesis but none is a generic or complete-component package.  The
+  `component-chart-boundary`, `component-fiber-infinity`, and
+  `component-fibre-infinity-marked-fibre` are H31-only scoped leaves; they
+  participate in the separately established first-component synthesis but
+  none is a generic or complete-component package.  The
   toric leaf closes only the 21 genuine toric base-orbit/orientation cases,
   while the chart-boundary leaf closes only the displayed canonical marked
-  sections and the first-plane leaf closes only its displayed canonical
-  marking; neither canonical leaf includes the later complete marked-basis
-  fibre;
+  sections, the canonical first-plane leaf closes only its displayed marking,
+  and the complete first-plane leaf adds all marked-basis shifts only on that
+  same divisor.  Neither first-plane leaf closes the rest of the projective
+  boundary or a whole component;
 - `common-center-kernel-star`, `unequal-complement-common-kernel`,
   `unequal-endpoint-inward-star`, and `split-center-mixed-star` are
   H31-only in this spine because their H22 work is partial, boundary
@@ -138,7 +158,8 @@ asymmetries (never manufactured symmetry):
 Except for the exact H31 embedded-P3 component-closure forest, the scoped H31
 `p+q=0` wall and single-gate branch forests, the internal-`E=0` divisor leaf,
 the toric marked-fibre boundary leaf, the canonical H31 chart-boundary and
-first-plane Schubert-infinity section leaves, and the scoped H22 disjoint-mixed-star
+first-plane Schubert-infinity section leaves, the complete first-plane
+Schubert-infinity marked-fibre leaf, and the scoped H22 disjoint-mixed-star
 boundary subpackages, and the H22 six-dimensional equal-weight
 normal-form-point leaf, the following P5 layers are **not** part of this spine:
 pointwise/divisor closures, boundary obstruction trees, exceptional-fibre

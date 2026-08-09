@@ -6,9 +6,18 @@ from __future__ import annotations
 import hashlib
 import itertools
 import json
+import sys
 from pathlib import Path
 
-from audit_p5_h31_marked_basis_fibre_classification import (
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+from audit_p5_h31_marked_basis_fibre_classification import (  # noqa: E402
     binary_extension_data,
     dot,
     extended_rows,
@@ -19,13 +28,11 @@ from audit_p5_h31_marked_basis_fibre_classification import (
     rank_mod,
 )
 
-
-ROOT = Path(__file__).resolve().parent
 THEOREM = (
-    ROOT / "P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md"
+    HERE / "P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md"
 )
 PRIMARY = (
-    ROOT / "verify_p5_h31_component_fibre_infinity_marked_fibre.py"
+    HERE / "verify_p5_h31_component_fibre_infinity_marked_fibre.py"
 )
 
 CERTIFICATES = {

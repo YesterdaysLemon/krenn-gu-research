@@ -20,7 +20,7 @@ distinguished-source orientations.
 
 This canonical-section result has since been upgraded to a complete
 exclusion of the marked-basis fibre over those planes in
-[`P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md`](../../../../P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md).
+[`P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md`](../component-fibre-infinity-marked-fibre/P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md).
 Kernel-row shifts preserve the plane and pure deletion but change the
 neighbouring `Delta_2` equations; the newer theorem includes all of
 them.
