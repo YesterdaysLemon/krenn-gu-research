@@ -667,7 +667,7 @@ five genuine divisor orbits and four edge orbits, totalling 21
 all-rank plane/orientation pairs; no vertex supports a nonzero pure
 slice:
 
-- [`P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md`](P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md)
+- [`P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md`](claims/p5/h31/component-fiber-infinity/P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md)
 - [`P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md`](claims/p4/classifications/pair-geometry/pure-rank-two/boundaries/P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md)
 - [`P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md)
 

@@ -133,7 +133,7 @@
     "p5/h31/common-kernel-vertical-triangle": 3,
     "p5/h31/common-singleton": 3,
     "p5/h31/component-chart-boundary": 3,
-    "p5/h31/component-chart-boundary-marked-fibre": 3,
+    "p5/h31/component-chart-boundary-marked-fibre": 4,
     "p5/h31/component-fiber-infinity": 3,
     "p5/h31/component-fibre-infinity-marked-fibre": 3,
     "p5/h31/diagonal-quadric-component-point": 3,
@@ -250,8 +250,8 @@
     "legacy_document": 5,
     "audit_report": 2,
     "catalog": 1,
-    "tool_script": 211,
-    "claim_script": 1071,
+    "tool_script": 210,
+    "claim_script": 1072,
     "shared_library": 35
   },
   "confidence_counts": {
@@ -17498,12 +17498,12 @@
     },
     {
       "old_path": "derive_p5_h31_chart_boundary_marked_fibre_elimination.py",
-      "proposed_path": "tools/explore/derive_p5_h31_chart_boundary_marked_fibre_elimination.py",
-      "category": "tool_script",
-      "claim_family": null,
+      "proposed_path": "claims/p5/h31/component-chart-boundary-marked-fibre/derive_p5_h31_chart_boundary_marked_fibre_elimination.py",
+      "category": "claim_script",
+      "claim_family": "p5/h31/component-chart-boundary-marked-fibre",
       "confidence": "medium",
       "evidence": [
-        "tool prefix (exploration/derivation)"
+        "stage23_authorized_review: uniquely owned elimination generator imported and hashed by the family primary and named by the family theorem as its regeneration command; no other Python importer"
       ]
     },
     {

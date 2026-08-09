@@ -24,7 +24,10 @@ CHART_BOUNDARY = (
     REPO_ROOT
     / "claims/p5/h31/component-chart-boundary/P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md"
 )
-FIBER_BOUNDARY = REPO_ROOT / "P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md"
+FIBER_BOUNDARY = (
+    REPO_ROOT
+    / "claims/p5/h31/component-fiber-infinity/P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md"
+)
 GATE = (
     REPO_ROOT / "claims" / "p5" / "h31" / "secondary-gate-exclusion"
     / "P5_H31_SECONDARY_GATE_EXCLUSION.md"

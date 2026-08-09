@@ -18,16 +18,16 @@
   },
   "counts": {
     "total_classified_moves": 2015,
-    "moved": 398,
+    "moved": 401,
     "pilot": 0,
     "proposed_high_confidence": 242,
-    "review_required": 1375,
+    "review_required": 1372,
     "unclassified": 348,
     "root_files_before": 2363,
     "root_dirs_before": 3,
     "root_entries_before": 2366,
-    "projected_root_if_moved_only": 1974,
-    "projected_root_if_high_confidence_batches_executed": 1732,
+    "projected_root_if_moved_only": 1971,
+    "projected_root_if_high_confidence_batches_executed": 1729,
     "projected_root_if_all_classified_executed": 357,
     "projection_note": "unclassified files are not members of any move set, so every projection already leaves them at the root; do not add unclassified again",
     "collisions": 0,
@@ -11520,6 +11520,14 @@
       "confidence": "medium"
     },
     {
+      "old_path": "derive_p5_h31_chart_boundary_marked_fibre_elimination.py",
+      "new_path": "claims/p5/h31/component-chart-boundary-marked-fibre/derive_p5_h31_chart_boundary_marked_fibre_elimination.py",
+      "reason": "claim_script -> p5/h31/component-chart-boundary-marked-fibre",
+      "status": "review_required",
+      "claim_family": "p5/h31/component-chart-boundary-marked-fibre",
+      "confidence": "medium"
+    },
+    {
       "old_path": "verify_p5_h31_component_chart_boundary_marked_fibre.py",
       "new_path": "claims/p5/h31/component-chart-boundary-marked-fibre/verify_p5_h31_component_chart_boundary_marked_fibre.py",
       "reason": "claim_script -> p5/h31/component-chart-boundary-marked-fibre",
@@ -11558,25 +11566,28 @@
       "old_path": "P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/component-fiber-infinity/P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/component-fiber-infinity",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/h31/component-fiber-infinity",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-h31-component-fiber-infinity-stage23"
     },
     {
       "old_path": "audit_p5_h31_component_fiber_infinity.py",
       "new_path": "claims/p5/h31/component-fiber-infinity/audit_p5_h31_component_fiber_infinity.py",
       "reason": "claim_script -> p5/h31/component-fiber-infinity",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/h31/component-fiber-infinity",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-h31-component-fiber-infinity-stage23"
     },
     {
       "old_path": "verify_p5_h31_component_fiber_infinity.py",
       "new_path": "claims/p5/h31/component-fiber-infinity/verify_p5_h31_component_fiber_infinity.py",
       "reason": "claim_script -> p5/h31/component-fiber-infinity",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/h31/component-fiber-infinity",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-h31-component-fiber-infinity-stage23"
     },
     {
       "old_path": "P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md",
@@ -15549,14 +15560,6 @@
       "confidence": "medium"
     },
     {
-      "old_path": "derive_p5_h31_chart_boundary_marked_fibre_elimination.py",
-      "new_path": "tools/explore/derive_p5_h31_chart_boundary_marked_fibre_elimination.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
       "old_path": "derive_p5_h31_fibre_infinity_marked_fibre_elimination.py",
       "new_path": "tools/explore/derive_p5_h31_fibre_infinity_marked_fibre_elimination.py",
       "reason": "tool_script -> None",
@@ -16558,8 +16561,8 @@
     }
   ],
   "destination_subtree_counts": {
-    "claims": 1761,
-    "tools": 210,
+    "claims": 1762,
+    "tools": 209,
     "src": 35,
     "docs": 8,
     "catalog": 1
