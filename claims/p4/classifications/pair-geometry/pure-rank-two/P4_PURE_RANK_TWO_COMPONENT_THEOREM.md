@@ -196,7 +196,7 @@ but the generic and boundary marked fibres of the second component
 remain open, as does the existence of any further component.
 
 The rank-one pure-hyperplane boundary has already been excluded in
-[`P5_H31_SECONDARY_GATE_EXCLUSION.md`](../../../../../P5_H31_SECONDARY_GATE_EXCLUSION.md).
+[`P5_H31_SECONDARY_GATE_EXCLUSION.md`](../../../../p5/h31/secondary-gate-exclusion/P5_H31_SECONDARY_GATE_EXCLUSION.md).
 
 ## Consequence for the `H22` frontier
 

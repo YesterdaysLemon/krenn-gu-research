@@ -7,17 +7,28 @@ from collections import Counter
 import hashlib
 import itertools
 import json
+import sys
 from pathlib import Path
 
-from audit_p5_h31_single_gate_p3_reduction import (
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+ROOT = REPO_ROOT
+expose_claim_package(REPO_ROOT, "claims/p5/h31/single-gate-p3")
+
+from audit_p5_h31_single_gate_p3_reduction import (  # noqa: E402
     permanent,
     projective_points_2,
     rank_mod,
 )
 
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P5_H31_SECONDARY_GATE_EXCLUSION.md"
+THEOREM = HERE / "P5_H31_SECONDARY_GATE_EXCLUSION.md"
 BITS3 = tuple(itertools.product((0, 1), repeat=3))
 
 

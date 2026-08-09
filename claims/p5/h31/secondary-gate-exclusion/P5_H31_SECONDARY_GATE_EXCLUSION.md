@@ -11,7 +11,7 @@ rank after restriction to the common source three-space, then no
 rank-three ternary lift exists.
 
 Together with
-[`P5_H31_SINGLE_GATE_RANK_TWO_M_EXCLUSION.md`](P5_H31_SINGLE_GATE_RANK_TWO_M_EXCLUSION.md),
+[`P5_H31_SINGLE_GATE_RANK_TWO_M_EXCLUSION.md`](../single-gate-rank-two-m-exclusion/P5_H31_SINGLE_GATE_RANK_TWO_M_EXCLUSION.md),
 this excludes **every** `H31` pure/`Delta_2` pencil having a rank-one
 row pair on its pure hyperplane.
 
@@ -364,8 +364,8 @@ pure-`P_4` locus.
 Run:
 
 ```text
-python verify_p5_h31_secondary_gate_exclusion.py
-python audit_p5_h31_secondary_gate_exclusion.py
+python claims/p5/h31/secondary-gate-exclusion/verify_p5_h31_secondary_gate_exclusion.py
+python claims/p5/h31/secondary-gate-exclusion/audit_p5_h31_secondary_gate_exclusion.py
 ```
 
 The primary verifier reconstructs both pair-image normal forms, every
