@@ -33,7 +33,10 @@ THEOREM = (
     ROOT / "P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md"
 )
 PLANE = ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md"
-CANONICAL = ROOT / "P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md"
+CANONICAL = (
+    ROOT
+    / "claims/p5/h31/component-chart-boundary/P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md"
+)
 GENERATOR = (
     ROOT / "derive_p5_h31_chart_boundary_marked_fibre_elimination.py"
 )

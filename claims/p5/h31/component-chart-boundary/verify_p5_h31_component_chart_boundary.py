@@ -6,15 +6,24 @@ from __future__ import annotations
 import hashlib
 import itertools
 import json
+import sys
 from pathlib import Path
 
 import sympy as sp
 
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md"
-CHART = ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md"
-ORBIT = ROOT / "P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md"
+REPO_ROOT, HERE = bootstrap(__file__)
+THEOREM = HERE / "P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md"
+CHART = (
+    REPO_ROOT
+    / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md"
+)
+ORBIT = REPO_ROOT / "P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md"
 BITS4 = tuple(itertools.product((0, 1), repeat=4))
 BITS3 = tuple(itertools.product((0, 1), repeat=3))
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
@@ -516,7 +525,7 @@ def main() -> None:
         "source_sha256": sha256(Path(__file__)),
     }
     output_path = (
-        ROOT / "tmp" / "p5_h31_component_chart_boundary_verified.json"
+        REPO_ROOT / "tmp" / "p5_h31_component_chart_boundary_verified.json"
     )
     output_path.parent.mkdir(exist_ok=True)
     output_path.write_text(
