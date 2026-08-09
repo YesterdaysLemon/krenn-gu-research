@@ -120,7 +120,9 @@ def main() -> None:
             }
         )
 
-    theorem = Path("HAFNIAN_CONVOLUTION_SPLIT_LEMMA.md")
+    theorem = Path(__file__).resolve().with_name(
+        "HAFNIAN_CONVOLUTION_SPLIT_LEMMA.md"
+    )
     payload = {
         "verified": True,
         "status": "hafnian_convolution_identity_verified",

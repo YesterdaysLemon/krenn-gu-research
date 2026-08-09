@@ -212,8 +212,8 @@ use the determinant-signing obstruction.
 Run:
 
 ```text
-uv run --with sympy python verify_arbitrary_permanent_equality_two_switch_excess_plane_separation_theorem.py
-python audit_arbitrary_permanent_equality_two_switch_excess_plane_separation_theorem.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_equality_two_switch_excess_plane_separation_theorem.py
+python claims/arbitrary-order/audit_arbitrary_permanent_equality_two_switch_excess_plane_separation_theorem.py
 ```
 
 The primary verifier checks the determinant, gain inequalities, pure-switch

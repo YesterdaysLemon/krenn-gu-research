@@ -178,8 +178,8 @@ coordinate line.
 Run:
 
 ```text
-uv run --with sympy python verify_arbitrary_permanent_equality_exceptional_source_rectangle_theorem.py
-python audit_arbitrary_permanent_equality_exceptional_source_rectangle_theorem.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_equality_exceptional_source_rectangle_theorem.py
+python claims/arbitrary-order/audit_arbitrary_permanent_equality_exceptional_source_rectangle_theorem.py
 ```
 
 The scripts check the degree ledger, source localization bookkeeping,

@@ -7,6 +7,7 @@ import hashlib
 import importlib.util
 import itertools
 import json
+import sys
 from pathlib import Path
 
 from sympy import Matrix, ZZ
@@ -14,8 +15,19 @@ from sympy.polys.matrices import DomainMatrix
 from sympy.polys.matrices.normalforms import smith_normal_decomp
 
 
-ROOT = Path(__file__).resolve().parent
-NORMAL_PATH = ROOT / "audit_five_row_projective_normal_forms.py"
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, ROOT = bootstrap(__file__)
+NORMAL_PATH = (
+    REPO_ROOT
+    / "claims"
+    / "arbitrary-order"
+    / "audit_five_row_projective_normal_forms.py"
+)
 SPEC = importlib.util.spec_from_file_location("normal_audit", NORMAL_PATH)
 NORMAL = importlib.util.module_from_spec(SPEC)
 assert SPEC.loader is not None

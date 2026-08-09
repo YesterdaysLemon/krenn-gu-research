@@ -479,8 +479,8 @@ global Krenn--Gu:                                         UNRESOLVED.       (39)
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py
-python audit_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py
+python claims/arbitrary-order/audit_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py
 python -m py_compile verify_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py audit_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py
 uv run --with ruff ruff check verify_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py audit_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py
 ```
@@ -498,5 +498,5 @@ Dependencies and legality boundary:
 
 - [`RESIDUAL_HAFNIAN_COMMON_COFACTOR_GRAM_THEOREM.md`](RESIDUAL_HAFNIAN_COMMON_COFACTOR_GRAM_THEOREM.md)
 - [`RESIDUAL_HAFNIAN_HESSIAN_KNESER_ETALE_AND_JET_INTEGRABILITY_THEOREM.md`](RESIDUAL_HAFNIAN_HESSIAN_KNESER_ETALE_AND_JET_INTEGRABILITY_THEOREM.md)
-- [`P7_CROSS_DEPTH_HAFNIAN_DERIVATIVE_AND_PROJECTIVE_MARKED_STAR_BOUNDARY.md`](P7_CROSS_DEPTH_HAFNIAN_DERIVATIVE_AND_PROJECTIVE_MARKED_STAR_BOUNDARY.md)
+- [`P7_CROSS_DEPTH_HAFNIAN_DERIVATIVE_AND_PROJECTIVE_MARKED_STAR_BOUNDARY.md`](../p7/P7_CROSS_DEPTH_HAFNIAN_DERIVATIVE_AND_PROJECTIVE_MARKED_STAR_BOUNDARY.md)
 - [`ARBITRARY_ORDER_TWO_RESIDUAL_STRICT_SUPPORT_STAIRCASE_AND_COORDINATE_FORCING.md`](ARBITRARY_ORDER_TWO_RESIDUAL_STRICT_SUPPORT_STAIRCASE_AND_COORDINATE_FORCING.md)

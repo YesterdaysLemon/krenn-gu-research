@@ -206,8 +206,8 @@ edge.  Any future holonomy argument must keep this distinction.
 Run:
 
 ```text
-uv run --with sympy python verify_arbitrary_permanent_equality_pure_matching_cube_theorem.py
-python audit_arbitrary_permanent_equality_pure_matching_cube_theorem.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_equality_pure_matching_cube_theorem.py
+python claims/arbitrary-order/audit_arbitrary_permanent_equality_pure_matching_cube_theorem.py
 ```
 
 The scripts check the unique `2 x 2` transposition, the two-term pure

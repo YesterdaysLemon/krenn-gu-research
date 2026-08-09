@@ -137,8 +137,8 @@ The accompanying verifier reconstructs (1), checks transpose consistency,
 tests every transversal independently, and records all 64 patterns:
 
 ```text
-python verify_three_colour_balanced_bridge_intersection.py
-python audit_three_colour_balanced_bridge_intersection.py
+python claims/arbitrary-order/verify_three_colour_balanced_bridge_intersection.py
+python claims/arbitrary-order/audit_three_colour_balanced_bridge_intersection.py
 ```
 
 The second program does not import the first.  It rebuilds the types from

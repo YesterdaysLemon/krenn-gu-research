@@ -195,8 +195,8 @@ values are required.  See
 Run:
 
 ```text
-uv run --with sympy python verify_root_m7_four_root_hidden_pair_cofactor_theorem.py
-python audit_root_m7_four_root_hidden_pair_cofactor_theorem.py
+uv run --with sympy python claims/arbitrary-order/verify_root_m7_four_root_hidden_pair_cofactor_theorem.py
+python claims/arbitrary-order/audit_root_m7_four_root_hidden_pair_cofactor_theorem.py
 ```
 
 The scripts check the deletion parity ledger, the rank-two/rank-one quotient

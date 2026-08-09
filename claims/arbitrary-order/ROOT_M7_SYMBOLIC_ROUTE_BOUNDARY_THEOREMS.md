@@ -251,8 +251,8 @@ proper-blocker-subset moments.
 Run:
 
 ```text
-uv run --with sympy python verify_root_m7_symbolic_route_boundary_theorems.py
-python audit_root_m7_symbolic_route_boundary_theorems.py
+uv run --with sympy python claims/arbitrary-order/verify_root_m7_symbolic_route_boundary_theorems.py
+python claims/arbitrary-order/audit_root_m7_symbolic_route_boundary_theorems.py
 ```
 
 Both implementations check all 26 lower-frame root-subset cases and both

@@ -328,8 +328,8 @@ global Krenn--Gu:                            UNRESOLVED.                 (25)
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_arbitrary_order_two_residual_strict_support_staircase_and_coordinate_forcing.py
-python audit_arbitrary_order_two_residual_strict_support_staircase_and_coordinate_forcing.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_order_two_residual_strict_support_staircase_and_coordinate_forcing.py
+python claims/arbitrary-order/audit_arbitrary_order_two_residual_strict_support_staircase_and_coordinate_forcing.py
 python -m py_compile verify_arbitrary_order_two_residual_strict_support_staircase_and_coordinate_forcing.py audit_arbitrary_order_two_residual_strict_support_staircase_and_coordinate_forcing.py
 uv run --with ruff ruff check verify_arbitrary_order_two_residual_strict_support_staircase_and_coordinate_forcing.py audit_arbitrary_order_two_residual_strict_support_staircase_and_coordinate_forcing.py
 ```

@@ -283,8 +283,8 @@ factors as well as the quotient images of `A_ij`.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_221_face_specific_quotient_mayer_vietoris_and_sharp_lift.py
-python audit_p7_221_face_specific_quotient_mayer_vietoris_and_sharp_lift.py
+uv run --with sympy python claims/p7/verify_p7_221_face_specific_quotient_mayer_vietoris_and_sharp_lift.py
+python claims/p7/audit_p7_221_face_specific_quotient_mayer_vietoris_and_sharp_lift.py
 uv run --with ruff ruff check verify_p7_221_face_specific_quotient_mayer_vietoris_and_sharp_lift.py audit_p7_221_face_specific_quotient_mayer_vietoris_and_sharp_lift.py
 python -m py_compile verify_p7_221_face_specific_quotient_mayer_vietoris_and_sharp_lift.py audit_p7_221_face_specific_quotient_mayer_vietoris_and_sharp_lift.py
 ```

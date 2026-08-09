@@ -160,8 +160,8 @@ global Krenn--Gu conjecture:            UNRESOLVED.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_four_clean_window_tetrahedral_pair_tomography.py
-python audit_p7_four_clean_window_tetrahedral_pair_tomography.py
+uv run --with sympy python claims/p7/verify_p7_four_clean_window_tetrahedral_pair_tomography.py
+python claims/p7/audit_p7_four_clean_window_tetrahedral_pair_tomography.py
 python -m py_compile verify_p7_four_clean_window_tetrahedral_pair_tomography.py audit_p7_four_clean_window_tetrahedral_pair_tomography.py
 uv run --with ruff ruff check verify_p7_four_clean_window_tetrahedral_pair_tomography.py audit_p7_four_clean_window_tetrahedral_pair_tomography.py
 ```

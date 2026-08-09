@@ -360,8 +360,8 @@ global Krenn--Gu conjecture:                            UNRESOLVED.
 Run from the repository root:
 
 ```powershell
-uv run --with sympy python verify_p7_cross_depth_hafnian_derivative_and_projective_marked_star_boundary.py
-python audit_p7_cross_depth_hafnian_derivative_and_projective_marked_star_boundary.py
+uv run --with sympy python claims/p7/verify_p7_cross_depth_hafnian_derivative_and_projective_marked_star_boundary.py
+python claims/p7/audit_p7_cross_depth_hafnian_derivative_and_projective_marked_star_boundary.py
 python -m py_compile verify_p7_cross_depth_hafnian_derivative_and_projective_marked_star_boundary.py audit_p7_cross_depth_hafnian_derivative_and_projective_marked_star_boundary.py
 uv run --with ruff ruff check verify_p7_cross_depth_hafnian_derivative_and_projective_marked_star_boundary.py audit_p7_cross_depth_hafnian_derivative_and_projective_marked_star_boundary.py
 ```

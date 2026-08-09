@@ -351,8 +351,8 @@ global Krenn--Gu conjecture:                         UNRESOLVED.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_221_jet_orthogonal_splice_and_formal_fixed_window_no_go.py
-python audit_p7_221_jet_orthogonal_splice_and_formal_fixed_window_no_go.py
+uv run --with sympy python claims/p7/verify_p7_221_jet_orthogonal_splice_and_formal_fixed_window_no_go.py
+python claims/p7/audit_p7_221_jet_orthogonal_splice_and_formal_fixed_window_no_go.py
 python -m py_compile verify_p7_221_jet_orthogonal_splice_and_formal_fixed_window_no_go.py audit_p7_221_jet_orthogonal_splice_and_formal_fixed_window_no_go.py
 uv run --with ruff ruff check verify_p7_221_jet_orthogonal_splice_and_formal_fixed_window_no_go.py audit_p7_221_jet_orthogonal_splice_and_formal_fixed_window_no_go.py
 ```

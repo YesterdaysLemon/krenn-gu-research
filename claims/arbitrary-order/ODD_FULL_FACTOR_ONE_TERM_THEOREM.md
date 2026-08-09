@@ -135,7 +135,7 @@ arbitrary-order cubic matching bound.
 Run:
 
 ```text
-python verify_odd_full_factor_one_term_mechanism.py
+python claims/arbitrary-order/verify_odd_full_factor_one_term_mechanism.py
 ```
 
 Pinned audit:

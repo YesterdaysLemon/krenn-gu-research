@@ -136,8 +136,8 @@ not an etale certificate.  No claim is made there.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_hafnian_principal_cofactor_gradient_dominance.py
-python audit_hafnian_principal_cofactor_gradient_dominance.py
+uv run --with sympy python claims/arbitrary-order/verify_hafnian_principal_cofactor_gradient_dominance.py
+python claims/arbitrary-order/audit_hafnian_principal_cofactor_gradient_dominance.py
 ```
 
 The primary differentiates the exact six-vertex hafnian symbolically and

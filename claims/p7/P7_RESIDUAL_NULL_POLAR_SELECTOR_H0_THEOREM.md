@@ -24,7 +24,7 @@ Equivalently, at least three blockers have a residual two-row span containing
 a target coordinate covector.
 
 The later
-[`ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md`](ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md)
+[`ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md`](../arbitrary-order/ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md)
 combines this polar slice with the per-colour kernel Hall quotas and rules out
 equality at three.  A factorized `P_7` identity therefore has at least four
 such blockers.  The theorem below remains the direct determinant activation
@@ -260,8 +260,8 @@ to that branch without a new argument.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_residual_null_polar_selector_h0_theorem.py
-python audit_p7_residual_null_polar_selector_h0_theorem.py
+uv run --with sympy python claims/p7/verify_p7_residual_null_polar_selector_h0_theorem.py
+python claims/p7/audit_p7_residual_null_polar_selector_h0_theorem.py
 uv run --with sympy --with ruff python -m ruff check verify_p7_residual_null_polar_selector_h0_theorem.py audit_p7_residual_null_polar_selector_h0_theorem.py
 python -m py_compile verify_p7_residual_null_polar_selector_h0_theorem.py audit_p7_residual_null_polar_selector_h0_theorem.py
 ```

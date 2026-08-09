@@ -10,7 +10,9 @@ from pathlib import Path
 VERTICES = tuple(range(5))
 COLOURS = tuple(range(3))
 EDGES = tuple(itertools.combinations(VERTICES, 2))
-THEOREM = Path("FIVE_ROOT_TORUS_RESULTANT_DICHOTOMY.md")
+THEOREM = Path(__file__).resolve().with_name(
+    "FIVE_ROOT_TORUS_RESULTANT_DICHOTOMY.md"
+)
 
 
 def multiply_endpoint_classes(

@@ -400,8 +400,8 @@ contained in the principal hafnians themselves.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_combined_shallow_deck_double_star_gauge.py
-python audit_p7_combined_shallow_deck_double_star_gauge.py
+uv run --with sympy python claims/p7/verify_p7_combined_shallow_deck_double_star_gauge.py
+python claims/p7/audit_p7_combined_shallow_deck_double_star_gauge.py
 python -m py_compile verify_p7_combined_shallow_deck_double_star_gauge.py audit_p7_combined_shallow_deck_double_star_gauge.py
 uv run --with ruff ruff check verify_p7_combined_shallow_deck_double_star_gauge.py audit_p7_combined_shallow_deck_double_star_gauge.py
 ```

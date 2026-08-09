@@ -269,8 +269,8 @@ exchange-lattice target.  See
 Run:
 
 ```text
-uv run --with sympy python verify_arbitrary_permanent_three_excess_conformal_birkhoff_reduction.py
-python audit_arbitrary_permanent_three_excess_conformal_birkhoff_reduction.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_three_excess_conformal_birkhoff_reduction.py
+python claims/arbitrary-order/audit_arbitrary_permanent_three_excess_conformal_birkhoff_reduction.py
 ```
 
 The primary verifier checks the six normalized port monomials, equations

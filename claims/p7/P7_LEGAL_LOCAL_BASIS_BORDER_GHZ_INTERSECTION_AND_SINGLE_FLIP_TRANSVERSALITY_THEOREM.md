@@ -412,8 +412,8 @@ global Krenn--Gu:                                      UNRESOLVED.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_legal_local_basis_border_ghz_intersection_and_single_flip_transversality.py
-python audit_p7_legal_local_basis_border_ghz_intersection_and_single_flip_transversality.py
+uv run --with sympy python claims/p7/verify_p7_legal_local_basis_border_ghz_intersection_and_single_flip_transversality.py
+python claims/p7/audit_p7_legal_local_basis_border_ghz_intersection_and_single_flip_transversality.py
 python -m py_compile verify_p7_legal_local_basis_border_ghz_intersection_and_single_flip_transversality.py audit_p7_legal_local_basis_border_ghz_intersection_and_single_flip_transversality.py
 uv run --with ruff ruff check verify_p7_legal_local_basis_border_ghz_intersection_and_single_flip_transversality.py audit_p7_legal_local_basis_border_ghz_intersection_and_single_flip_transversality.py
 ```

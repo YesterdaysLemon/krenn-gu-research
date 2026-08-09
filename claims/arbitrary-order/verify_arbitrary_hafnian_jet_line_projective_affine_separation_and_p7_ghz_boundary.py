@@ -7,13 +7,21 @@ tensor-decomposition search and uses no finite-field calculation.
 from __future__ import annotations
 
 import importlib.util
+import sys
 from itertools import combinations, product
 from pathlib import Path
 
 from sympy import Matrix
 
-ROOT = Path(__file__).resolve().parent
-SENSOR_REPLAY = ROOT / (
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+SENSOR_REPLAY = REPO_ROOT / (
+    "claims/p7/"
     "verify_p7_full_mixed_root_219_label_sensor_and_pinned_star_gating_boundary.py"
 )
 EXPECTED_FLATTENING_MINOR = -18_494_220_325_114_867_735_328_060_700

@@ -36,7 +36,9 @@ def main() -> None:
         "tmp", "hafnian_convolution_split_verified.json"
     )
     primary = json.loads(primary_path.read_text(encoding="utf-8"))
-    theorem = Path("HAFNIAN_CONVOLUTION_SPLIT_LEMMA.md")
+    theorem = Path(__file__).resolve().with_name(
+        "HAFNIAN_CONVOLUTION_SPLIT_LEMMA.md"
+    )
     if (
         primary.get("verified") is not True
         or primary.get("theorem_sha256") != sha256(theorem)

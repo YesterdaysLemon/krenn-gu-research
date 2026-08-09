@@ -318,8 +318,8 @@ different scalar realization of the same ledger.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_221_formal_ledger_scalar_hafnian_realizability_and_synchronization_gap.py
-python audit_p7_221_formal_ledger_scalar_hafnian_realizability_and_synchronization_gap.py
+uv run --with sympy python claims/p7/verify_p7_221_formal_ledger_scalar_hafnian_realizability_and_synchronization_gap.py
+python claims/p7/audit_p7_221_formal_ledger_scalar_hafnian_realizability_and_synchronization_gap.py
 python -m py_compile verify_p7_221_formal_ledger_scalar_hafnian_realizability_and_synchronization_gap.py audit_p7_221_formal_ledger_scalar_hafnian_realizability_and_synchronization_gap.py
 uv run --with sympy --with ruff python -m ruff check verify_p7_221_formal_ledger_scalar_hafnian_realizability_and_synchronization_gap.py audit_p7_221_formal_ledger_scalar_hafnian_realizability_and_synchronization_gap.py
 ```

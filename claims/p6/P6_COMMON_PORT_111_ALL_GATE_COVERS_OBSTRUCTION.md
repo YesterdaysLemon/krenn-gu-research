@@ -156,8 +156,8 @@ has no pair of three-plane solutions for this `K`.
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_p6_common_port_111_all_gate_covers_obstruction.py
-python audit_p6_common_port_111_all_gate_covers_obstruction.py
+uv run --with sympy python claims/p6/verify_p6_common_port_111_all_gate_covers_obstruction.py
+python claims/p6/audit_p6_common_port_111_all_gate_covers_obstruction.py
 ```
 
 The primary verifier reconstructs the catalecticant, factors, gate matrices,

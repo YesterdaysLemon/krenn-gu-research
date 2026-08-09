@@ -278,8 +278,8 @@ theorem is presently certified in this repository.
 ## Exact replay
 
 ```text
-python verify_five_root_no_torus_codimension_two.py
-python audit_five_root_no_torus_codimension_two.py
+python claims/arbitrary-order/verify_five_root_no_torus_codimension_two.py
+python claims/arbitrary-order/audit_five_root_no_torus_codimension_two.py
 ```
 
 The primary verifier expands the relevant Chow products, checks all

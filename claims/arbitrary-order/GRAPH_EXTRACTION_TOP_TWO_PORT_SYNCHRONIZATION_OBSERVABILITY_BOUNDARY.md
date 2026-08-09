@@ -298,8 +298,8 @@ global Krenn--Gu:                            UNRESOLVED.               (19)
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_graph_extraction_top_two_port_synchronization_observability_boundary.py
-python audit_graph_extraction_top_two_port_synchronization_observability_boundary.py
+uv run --with sympy python claims/arbitrary-order/verify_graph_extraction_top_two_port_synchronization_observability_boundary.py
+python claims/arbitrary-order/audit_graph_extraction_top_two_port_synchronization_observability_boundary.py
 python -m py_compile verify_graph_extraction_top_two_port_synchronization_observability_boundary.py audit_graph_extraction_top_two_port_synchronization_observability_boundary.py
 uv run --with ruff ruff check verify_graph_extraction_top_two_port_synchronization_observability_boundary.py audit_graph_extraction_top_two_port_synchronization_observability_boundary.py
 ```

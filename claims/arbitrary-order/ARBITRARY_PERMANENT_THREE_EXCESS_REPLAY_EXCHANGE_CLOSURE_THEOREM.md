@@ -266,8 +266,8 @@ equations of a genuine restriction.
 Run:
 
 ```text
-uv run --with sympy python verify_arbitrary_permanent_three_excess_replay_exchange_closure_theorem.py
-python audit_arbitrary_permanent_three_excess_replay_exchange_closure_theorem.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_three_excess_replay_exchange_closure_theorem.py
+python claims/arbitrary-order/audit_arbitrary_permanent_three_excess_replay_exchange_closure_theorem.py
 ```
 
 The primary verifier proves the rank-four five-vector ledger symbolically,

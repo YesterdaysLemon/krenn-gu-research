@@ -321,8 +321,8 @@ The determinant route and all global claims remain **UNKNOWN/UNRESOLVED**.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_strict_two_endpoint_synchronized_top_face_and_shore_line_boundary.py
-python audit_p7_strict_two_endpoint_synchronized_top_face_and_shore_line_boundary.py
+uv run --with sympy python claims/p7/verify_p7_strict_two_endpoint_synchronized_top_face_and_shore_line_boundary.py
+python claims/p7/audit_p7_strict_two_endpoint_synchronized_top_face_and_shore_line_boundary.py
 uv run --with sympy --with ruff python -m ruff check verify_p7_strict_two_endpoint_synchronized_top_face_and_shore_line_boundary.py audit_p7_strict_two_endpoint_synchronized_top_face_and_shore_line_boundary.py
 python -m py_compile verify_p7_strict_two_endpoint_synchronized_top_face_and_shore_line_boundary.py audit_p7_strict_two_endpoint_synchronized_top_face_and_shore_line_boundary.py
 ```

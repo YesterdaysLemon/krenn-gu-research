@@ -276,8 +276,8 @@ global Krenn--Gu conjecture: UNRESOLVED.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_arbitrary_permanent_three_excess_ineligible_ninth_cell_exclusion_theorem.py
-python audit_arbitrary_permanent_three_excess_ineligible_ninth_cell_exclusion_theorem.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_three_excess_ineligible_ninth_cell_exclusion_theorem.py
+python claims/arbitrary-order/audit_arbitrary_permanent_three_excess_ineligible_ninth_cell_exclusion_theorem.py
 ```
 
 The primary verifier reconstructs the six-term physical permanent, the

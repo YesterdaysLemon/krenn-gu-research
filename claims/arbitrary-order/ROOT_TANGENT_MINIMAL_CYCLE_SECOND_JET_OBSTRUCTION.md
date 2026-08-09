@@ -204,8 +204,8 @@ global conjecture: UNRESOLVED.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_root_tangent_minimal_cycle_second_jet_obstruction.py
-python audit_root_tangent_minimal_cycle_second_jet_obstruction.py
+uv run --with sympy python claims/arbitrary-order/verify_root_tangent_minimal_cycle_second_jet_obstruction.py
+python claims/arbitrary-order/audit_root_tangent_minimal_cycle_second_jet_obstruction.py
 ```
 
 The primary proves the symbolic three-parameter identities and checks exact

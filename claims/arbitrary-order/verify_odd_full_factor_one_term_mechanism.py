@@ -9,11 +9,20 @@ from __future__ import annotations
 
 import itertools
 import json
+import sys
 from collections import Counter
 from pathlib import Path
 from typing import Sequence
 
-from explore_random_even_cycle_forks import (
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+from explore_random_even_cycle_forks import (  # noqa: E402
     Edge,
     cycle_edges,
     perfect_matchings,

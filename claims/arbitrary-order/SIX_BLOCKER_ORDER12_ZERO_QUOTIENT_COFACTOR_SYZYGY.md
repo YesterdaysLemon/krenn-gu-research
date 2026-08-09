@@ -229,8 +229,8 @@ blocker cofactor `C_I`.
 ## Replay
 
 ```text
-uv run --with sympy python verify_six_blocker_order12_zero_quotient_cofactor_syzygy.py
-uv run --with sympy python audit_six_blocker_order12_zero_quotient_cofactor_syzygy.py
+uv run --with sympy python claims/arbitrary-order/verify_six_blocker_order12_zero_quotient_cofactor_syzygy.py
+uv run --with sympy python claims/arbitrary-order/audit_six_blocker_order12_zero_quotient_cofactor_syzygy.py
 ```
 
 The primary verifier checks every cofactor coefficient, the exact rank-134

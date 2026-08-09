@@ -315,8 +315,8 @@ global Krenn--Gu:                                         UNRESOLVED.
 ## Exact replay
 
 ```powershell
-uv run --with sympy python verify_p7_target_line_h0_pair_projection_pentad_and_star_alignment.py
-python audit_p7_target_line_h0_pair_projection_pentad_and_star_alignment.py
+uv run --with sympy python claims/p7/verify_p7_target_line_h0_pair_projection_pentad_and_star_alignment.py
+python claims/p7/audit_p7_target_line_h0_pair_projection_pentad_and_star_alignment.py
 python -m py_compile verify_p7_target_line_h0_pair_projection_pentad_and_star_alignment.py audit_p7_target_line_h0_pair_projection_pentad_and_star_alignment.py
 uv run --with ruff ruff check verify_p7_target_line_h0_pair_projection_pentad_and_star_alignment.py audit_p7_target_line_h0_pair_projection_pentad_and_star_alignment.py
 ```

@@ -6,14 +6,24 @@ from __future__ import annotations
 import itertools
 import json
 import math
+import sys
 from pathlib import Path
 
 import sympy as sp
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "ARBITRARY_SURPLUS_COMMON_ROW_FULL_SPAN_OBSTRUCTION.md"
-DEPENDENCY = ROOT / "TWO_PORT_SEVEN_BLOCKER_REDUCTION.md"
-PROFILE_DEPENDENCY = ROOT / "P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md"
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+THEOREM = HERE / "ARBITRARY_SURPLUS_COMMON_ROW_FULL_SPAN_OBSTRUCTION.md"
+DEPENDENCY = HERE / "TWO_PORT_SEVEN_BLOCKER_REDUCTION.md"
+PROFILE_DEPENDENCY = (
+    REPO_ROOT
+    / "claims/p6/P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md"
+)
 
 
 def symbolic_product_grading(root_count: int, surplus: int) -> dict[str, int]:

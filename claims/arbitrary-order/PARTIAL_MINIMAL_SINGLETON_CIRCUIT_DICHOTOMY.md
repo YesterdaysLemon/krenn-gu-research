@@ -93,7 +93,7 @@ untouched cycles, a disjunction among their vanishing binomials.
 The combinatorial portions are replayed by:
 
 ```text
-python verify_partial_minimal_singleton_circuit_dichotomy.py
+python claims/arbitrary-order/verify_partial_minimal_singleton_circuit_dichotomy.py
 ```
 
 The verifier exhausts every subset of a matching on unions of two to six

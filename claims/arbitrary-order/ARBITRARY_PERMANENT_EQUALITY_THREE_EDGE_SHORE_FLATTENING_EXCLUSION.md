@@ -153,8 +153,8 @@ than inspecting their monomials one at a time.
 Run:
 
 ```text
-uv run --with sympy python verify_arbitrary_permanent_equality_three_edge_shore_flattening_exclusion.py
-python audit_arbitrary_permanent_equality_three_edge_shore_flattening_exclusion.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_equality_three_edge_shore_flattening_exclusion.py
+python claims/arbitrary-order/audit_arbitrary_permanent_equality_three_edge_shore_flattening_exclusion.py
 ```
 
 The primary verifier checks the two-complement factorization and its matrix

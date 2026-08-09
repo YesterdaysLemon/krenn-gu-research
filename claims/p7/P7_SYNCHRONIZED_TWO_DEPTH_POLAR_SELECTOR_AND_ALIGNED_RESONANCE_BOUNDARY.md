@@ -178,7 +178,7 @@ selector, now valid at every synchronized nonresonant contraction.
 The synchronized tensor `N` in (6) is itself the permanent tensor obtained by
 appending the two residual rows `a,b` to the five root rows.  At nonresonance
 all three diagonal coefficients are nonzero.  Applying
-[`ARBITRARY_PERMANENT_FIVE_MODE_ROW_PAIR_INCIDENCE_THEOREM.md`](ARBITRARY_PERMANENT_FIVE_MODE_ROW_PAIR_INCIDENCE_THEOREM.md)
+[`ARBITRARY_PERMANENT_FIVE_MODE_ROW_PAIR_INCIDENCE_THEOREM.md`](../arbitrary-order/ARBITRARY_PERMANENT_FIVE_MODE_ROW_PAIR_INCIDENCE_THEOREM.md)
 to the row pair `{a,b}` strengthens (15) to
 
 ```text
@@ -346,8 +346,8 @@ All unconditional P7 and global claims remain **UNRESOLVED**.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_synchronized_two_depth_polar_selector_and_aligned_resonance_boundary.py
-python audit_p7_synchronized_two_depth_polar_selector_and_aligned_resonance_boundary.py
+uv run --with sympy python claims/p7/verify_p7_synchronized_two_depth_polar_selector_and_aligned_resonance_boundary.py
+python claims/p7/audit_p7_synchronized_two_depth_polar_selector_and_aligned_resonance_boundary.py
 uv run --with sympy --with ruff python -m ruff check verify_p7_synchronized_two_depth_polar_selector_and_aligned_resonance_boundary.py audit_p7_synchronized_two_depth_polar_selector_and_aligned_resonance_boundary.py
 python -m py_compile verify_p7_synchronized_two_depth_polar_selector_and_aligned_resonance_boundary.py audit_p7_synchronized_two_depth_polar_selector_and_aligned_resonance_boundary.py
 ```

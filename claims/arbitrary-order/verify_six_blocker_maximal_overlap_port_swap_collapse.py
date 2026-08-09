@@ -5,12 +5,19 @@ from __future__ import annotations
 
 import itertools
 import json
+import sys
 from pathlib import Path
 
 import sympy as sp
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md"
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+THEOREM = HERE / "SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md"
 
 
 def profile(rows: sp.Matrix) -> int:
@@ -69,11 +76,11 @@ def main() -> None:
     assert "B_ab(x_a,x_b) != 0" in theorem
     assert "UNRESOLVED" in theorem
     for dependency in (
-        "ONE_NONBLOCKER_SURPLUS_PERMANENT_EXTRACTION.md",
-        "TWO_PORT_SEVEN_BLOCKER_REDUCTION.md",
-        "P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md",
+        HERE / "ONE_NONBLOCKER_SURPLUS_PERMANENT_EXTRACTION.md",
+        HERE / "TWO_PORT_SEVEN_BLOCKER_REDUCTION.md",
+        REPO_ROOT / "claims/p6/P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md",
     ):
-        assert (ROOT / dependency).exists()
+        assert dependency.exists()
 
     permanent_support_swap()
     ghz_coefficients()

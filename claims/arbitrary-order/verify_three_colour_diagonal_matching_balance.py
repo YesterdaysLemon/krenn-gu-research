@@ -100,7 +100,7 @@ def main() -> None:
     parser.add_argument(
         "--theorem",
         type=Path,
-        default=Path(
+        default=Path(__file__).resolve().with_name(
             "THREE_COLOUR_DIAGONAL_MATCHING_BALANCE_THEOREM.md"
         ),
     )

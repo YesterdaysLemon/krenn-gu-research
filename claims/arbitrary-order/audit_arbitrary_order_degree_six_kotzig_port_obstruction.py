@@ -110,7 +110,7 @@ def main() -> None:
             "primary and independent sign tables disagree"
         )
 
-    theorem = Path(
+    theorem = Path(__file__).resolve().with_name(
         "ARBITRARY_ORDER_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md"
     )
     payload = {

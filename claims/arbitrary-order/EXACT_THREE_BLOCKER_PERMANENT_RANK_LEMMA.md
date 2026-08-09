@@ -153,8 +153,8 @@ step.  A surplus fourth blocker is the other alternative.
 Run:
 
 ```text
-python verify_exact_three_blocker_permanent_rank.py
-python audit_exact_three_blocker_permanent_rank.py
+python claims/arbitrary-order/verify_exact_three_blocker_permanent_rank.py
+python claims/arbitrary-order/audit_exact_three_blocker_permanent_rank.py
 ```
 
 The primary verifier constructs (4), checks all flattening and slice

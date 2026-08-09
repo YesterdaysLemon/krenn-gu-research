@@ -523,8 +523,8 @@ global Krenn--Gu conjecture:                              UNRESOLVED.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_residual_hafnian_torus_zero_full_rank_cofactor_boundary.py
-python audit_residual_hafnian_torus_zero_full_rank_cofactor_boundary.py
+uv run --with sympy python claims/arbitrary-order/verify_residual_hafnian_torus_zero_full_rank_cofactor_boundary.py
+python claims/arbitrary-order/audit_residual_hafnian_torus_zero_full_rank_cofactor_boundary.py
 ```
 
 The primary verifier checks the symbolic determinant factorization, the

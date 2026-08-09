@@ -184,8 +184,8 @@ switch or an odd exchange-lattice relation.
 Run:
 
 ```text
-uv run --with sympy python verify_arbitrary_permanent_three_excess_apolar_boundary_quotient_theorem.py
-python audit_arbitrary_permanent_three_excess_apolar_boundary_quotient_theorem.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_three_excess_apolar_boundary_quotient_theorem.py
+python claims/arbitrary-order/audit_arbitrary_permanent_three_excess_apolar_boundary_quotient_theorem.py
 ```
 
 The primary verifier replays the projected canonical flattenings, the two

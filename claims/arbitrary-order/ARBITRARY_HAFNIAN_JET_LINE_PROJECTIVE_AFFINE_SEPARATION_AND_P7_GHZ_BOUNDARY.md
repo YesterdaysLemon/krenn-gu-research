@@ -58,7 +58,7 @@ searched.
 The complete open-jet representability theorem used below is proved in
 [`RESIDUAL_HAFNIAN_HESSIAN_KNESER_ETALE_AND_JET_INTEGRABILITY_THEOREM.md`](RESIDUAL_HAFNIAN_HESSIAN_KNESER_ETALE_AND_JET_INTEGRABILITY_THEOREM.md).
 The legal P7 sensor and its named companion blocks are fixed in
-[`P7_FULL_MIXED_ROOT_219_LABEL_SENSOR_AND_PINNED_STAR_GATING_BOUNDARY.md`](P7_FULL_MIXED_ROOT_219_LABEL_SENSOR_AND_PINNED_STAR_GATING_BOUNDARY.md).
+[`P7_FULL_MIXED_ROOT_219_LABEL_SENSOR_AND_PINNED_STAR_GATING_BOUNDARY.md`](../p7/P7_FULL_MIXED_ROOT_219_LABEL_SENSOR_AND_PINNED_STAR_GATING_BOUNDARY.md).
 
 ## 1. Arbitrary-order radial homogeneity
 
@@ -422,8 +422,8 @@ P7 nonrestriction and global Krenn--Gu:                     UNRESOLVED. (36)
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py
-python audit_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py
+python claims/arbitrary-order/audit_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py
 python -m py_compile verify_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py audit_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py
 uv run --with ruff ruff check verify_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py audit_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py
 ```

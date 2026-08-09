@@ -394,8 +394,8 @@ All five missing statements remain **UNKNOWN/UNRESOLVED**.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_root_budget_dual_wick_observability_and_quartic_escape.py
-python audit_p7_root_budget_dual_wick_observability_and_quartic_escape.py
+uv run --with sympy python claims/p7/verify_p7_root_budget_dual_wick_observability_and_quartic_escape.py
+python claims/p7/audit_p7_root_budget_dual_wick_observability_and_quartic_escape.py
 python -m py_compile verify_p7_root_budget_dual_wick_observability_and_quartic_escape.py audit_p7_root_budget_dual_wick_observability_and_quartic_escape.py
 uv run --with ruff ruff check verify_p7_root_budget_dual_wick_observability_and_quartic_escape.py audit_p7_root_budget_dual_wick_observability_and_quartic_escape.py
 ```

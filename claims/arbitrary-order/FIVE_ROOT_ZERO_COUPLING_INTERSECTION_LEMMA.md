@@ -134,7 +134,7 @@ remains, so additional work is still required.
 Run:
 
 ```text
-python verify_five_root_zero_coupling_intersection.py
+python claims/arbitrary-order/verify_five_root_zero_coupling_intersection.py
 ```
 
 The verifier expands the Chow product in the truncated ring, enumerates

@@ -263,8 +263,8 @@ global Krenn--Gu:                                           UNRESOLVED. (23)
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_221_degree5_incidence_quotient_rectangle_flattening.py
-python audit_p7_221_degree5_incidence_quotient_rectangle_flattening.py
+uv run --with sympy python claims/p7/verify_p7_221_degree5_incidence_quotient_rectangle_flattening.py
+python claims/p7/audit_p7_221_degree5_incidence_quotient_rectangle_flattening.py
 python -m py_compile verify_p7_221_degree5_incidence_quotient_rectangle_flattening.py audit_p7_221_degree5_incidence_quotient_rectangle_flattening.py
 uv run --with ruff ruff check verify_p7_221_degree5_incidence_quotient_rectangle_flattening.py audit_p7_221_degree5_incidence_quotient_rectangle_flattening.py
 ```

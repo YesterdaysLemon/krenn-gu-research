@@ -224,8 +224,8 @@ The proof deliberately separates three scopes:
 Run:
 
 ```text
-uv run --with sympy python verify_arbitrary_permanent_equality_zero_switch_exclusion_theorem.py
-python audit_arbitrary_permanent_equality_zero_switch_exclusion_theorem.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_equality_zero_switch_exclusion_theorem.py
+python claims/arbitrary-order/audit_arbitrary_permanent_equality_zero_switch_exclusion_theorem.py
 ```
 
 The primary verifier checks the physical `2 x 2` cross matching, port-set

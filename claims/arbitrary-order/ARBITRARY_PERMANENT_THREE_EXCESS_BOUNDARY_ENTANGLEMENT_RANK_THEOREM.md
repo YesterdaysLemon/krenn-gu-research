@@ -249,8 +249,8 @@ This recovers the top Hamming-face pinch as the simplest BER witness.
 Run:
 
 ```text
-uv run --with sympy python verify_arbitrary_permanent_three_excess_boundary_entanglement_rank_theorem.py
-python audit_arbitrary_permanent_three_excess_boundary_entanglement_rank_theorem.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_three_excess_boundary_entanglement_rank_theorem.py
+python claims/arbitrary-order/audit_arbitrary_permanent_three_excess_boundary_entanglement_rank_theorem.py
 ```
 
 The primary verifier expands the two canonical port tensors, reconstructs

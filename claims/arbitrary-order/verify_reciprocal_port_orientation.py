@@ -92,7 +92,7 @@ def main() -> None:
     ):
         raise AssertionError("diagnostic orientation example changed")
 
-    theorem = Path(
+    theorem = Path(__file__).resolve().with_name(
         "RECIPROCAL_PORT_ORIENTATION_CORRECTION.md"
     )
     payload = {

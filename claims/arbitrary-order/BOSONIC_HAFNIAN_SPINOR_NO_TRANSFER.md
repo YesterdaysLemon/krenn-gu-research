@@ -180,8 +180,8 @@ extra input it supplies no relation among the four visible hafnian products.
 Run:
 
 ```text
-uv run --with sympy python verify_bosonic_hafnian_spinor_no_transfer.py
-python audit_bosonic_hafnian_spinor_no_transfer.py
+uv run --with sympy python claims/arbitrary-order/verify_bosonic_hafnian_spinor_no_transfer.py
+python claims/arbitrary-order/audit_bosonic_hafnian_spinor_no_transfer.py
 ```
 
 The primary verifier checks the generic four-point defect, the exact

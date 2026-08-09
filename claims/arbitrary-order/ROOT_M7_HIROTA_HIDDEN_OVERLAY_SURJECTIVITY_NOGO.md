@@ -152,8 +152,8 @@ future obstruction must use.
 Run:
 
 ```text
-uv run --with sympy python verify_root_m7_hirota_hidden_overlay_surjectivity_nogo.py
-python audit_root_m7_hirota_hidden_overlay_surjectivity_nogo.py
+uv run --with sympy python claims/arbitrary-order/verify_root_m7_hirota_hidden_overlay_surjectivity_nogo.py
+python claims/arbitrary-order/audit_root_m7_hirota_hidden_overlay_surjectivity_nogo.py
 ```
 
 The primary verifier expands the four sparse hafnian products after the

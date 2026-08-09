@@ -157,7 +157,7 @@ def main() -> None:
         )
         command = [
             sys.executable,
-            "augment_fourteen_vertex_rule_cnf_with_"
+            "tools/generate/augment_fourteen_vertex_rule_cnf_with_"
             "binomial_support_closures.py",
             "--base-cnf",
             str(current_cnf),
@@ -397,7 +397,7 @@ def main() -> None:
                 result = run(
                     [
                         sys.executable,
-                        "augment_fourteen_vertex_rule_cnf_with_"
+                        "tools/generate/augment_fourteen_vertex_rule_cnf_with_"
                         "binomial_support_closures.py",
                         "--base-cnf",
                         str(current_cnf),
@@ -506,7 +506,7 @@ def main() -> None:
                 result = run(
                     [
                         sys.executable,
-                        "augment_fourteen_vertex_rule_cnf_with_"
+                        "tools/generate/augment_fourteen_vertex_rule_cnf_with_"
                         "binomial_support_closures.py",
                         "--base-cnf",
                         str(current_cnf),

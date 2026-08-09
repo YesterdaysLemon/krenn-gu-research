@@ -135,8 +135,8 @@ template hypotheses have been derived from a hypothetical minimal witness.
 From the repository root:
 
 ```text
-python verify_six_blocker_admissible_quotient_catalogue.py
-python audit_six_blocker_admissible_quotient_catalogue.py
+python claims/arbitrary-order/verify_six_blocker_admissible_quotient_catalogue.py
+python claims/arbitrary-order/audit_six_blocker_admissible_quotient_catalogue.py
 ```
 
 The primary verifier enumerates all labelled partial matchings, then quotients

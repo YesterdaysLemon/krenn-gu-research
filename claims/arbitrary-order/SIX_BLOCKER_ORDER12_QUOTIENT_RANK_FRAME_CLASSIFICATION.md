@@ -295,8 +295,8 @@ it is not a proof or counterexample to Krenn--Gu.
 ## Replay
 
 ```text
-uv run --with sympy python verify_six_blocker_order12_quotient_rank_frame_classification.py
-uv run --with sympy python audit_six_blocker_order12_quotient_rank_frame_classification.py
+uv run --with sympy python claims/arbitrary-order/verify_six_blocker_order12_quotient_rank_frame_classification.py
+uv run --with sympy python claims/arbitrary-order/audit_six_blocker_order12_quotient_rank_frame_classification.py
 ```
 
 The primary verifier checks the consequences of the quotient factorization,

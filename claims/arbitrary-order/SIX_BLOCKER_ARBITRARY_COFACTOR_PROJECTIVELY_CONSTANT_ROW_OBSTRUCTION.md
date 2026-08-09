@@ -138,7 +138,7 @@ truncation and no effective-block factorization enter this transfer.
 
 ## Relation to the direct `P_6` obstruction
 
-[`P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md`](P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md)
+[`P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md`](../p6/P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md)
 proves the analogous common-factor obstruction for a direct concise
 restriction of `P_6`.  The present theorem is stronger in the direction
 needed here: it proves the factor termwise for the cofactor sum (1), with
@@ -164,18 +164,18 @@ global Krenn--Gu conjecture: UNRESOLVED.
 Replay the direct and transfer dependencies first:
 
 ```text
-uv run --with sympy python verify_p6_projectively_constant_source_row_obstruction.py
-python audit_p6_projectively_constant_source_row_obstruction.py
+uv run --with sympy python claims/p6/verify_p6_projectively_constant_source_row_obstruction.py
+python claims/p6/audit_p6_projectively_constant_source_row_obstruction.py
 
-python verify_four_root_six_blocker_arbitrary_order_kernel_support_obstruction.py
-python audit_four_root_six_blocker_arbitrary_order_kernel_support_obstruction.py
+python claims/arbitrary-order/verify_four_root_six_blocker_arbitrary_order_kernel_support_obstruction.py
+python claims/arbitrary-order/audit_four_root_six_blocker_arbitrary_order_kernel_support_obstruction.py
 ```
 
 Then run:
 
 ```text
-uv run --with sympy python verify_six_blocker_arbitrary_cofactor_projectively_constant_row_obstruction.py
-python audit_six_blocker_arbitrary_cofactor_projectively_constant_row_obstruction.py
+uv run --with sympy python claims/arbitrary-order/verify_six_blocker_arbitrary_cofactor_projectively_constant_row_obstruction.py
+python claims/arbitrary-order/audit_six_blocker_arbitrary_cofactor_projectively_constant_row_obstruction.py
 ```
 
 The primary verifier expands all 15 complementary cofactors and all 360

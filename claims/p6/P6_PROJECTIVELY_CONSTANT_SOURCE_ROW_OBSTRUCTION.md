@@ -119,8 +119,8 @@ global Krenn--Gu conjecture: UNRESOLVED.
 ## Replay
 
 ```text
-uv run --with sympy python verify_p6_projectively_constant_source_row_obstruction.py
-python audit_p6_projectively_constant_source_row_obstruction.py
+uv run --with sympy python claims/p6/verify_p6_projectively_constant_source_row_obstruction.py
+python claims/p6/audit_p6_projectively_constant_source_row_obstruction.py
 ```
 
 The primary verifier expands the symbolic six-by-six permanent by subset

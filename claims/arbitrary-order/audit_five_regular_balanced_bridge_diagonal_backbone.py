@@ -92,7 +92,7 @@ def main() -> None:
     parser.add_argument(
         "--theorem",
         type=Path,
-        default=Path(
+        default=Path(__file__).resolve().with_name(
             "FIVE_REGULAR_BALANCED_BRIDGE_DIAGONAL_BACKBONE.md"
         ),
     )

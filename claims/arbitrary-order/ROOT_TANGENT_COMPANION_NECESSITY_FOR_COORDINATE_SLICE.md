@@ -218,15 +218,15 @@ argument.
 Replay the local construction first:
 
 ```powershell
-uv run --with sympy python verify_two_residual_coordinate_monomial_slice_universality_nogo.py
-uv run --with sympy python audit_two_residual_coordinate_monomial_slice_universality_nogo.py
+uv run --with sympy python claims/arbitrary-order/verify_two_residual_coordinate_monomial_slice_universality_nogo.py
+uv run --with sympy python claims/arbitrary-order/audit_two_residual_coordinate_monomial_slice_universality_nogo.py
 ```
 
 Then run:
 
 ```powershell
-uv run --with sympy python verify_root_tangent_companion_necessity_for_coordinate_slice.py
-uv run --with sympy python audit_root_tangent_companion_necessity_for_coordinate_slice.py
+uv run --with sympy python claims/arbitrary-order/verify_root_tangent_companion_necessity_for_coordinate_slice.py
+uv run --with sympy python claims/arbitrary-order/audit_root_tangent_companion_necessity_for_coordinate_slice.py
 ```
 
 The primary enumerates the surviving and differentiated matching classes

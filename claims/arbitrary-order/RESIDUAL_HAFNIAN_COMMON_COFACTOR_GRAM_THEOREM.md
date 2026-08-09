@@ -383,8 +383,8 @@ pairwise frame models locally universal.
 Run:
 
 ```text
-uv run --with sympy python verify_residual_hafnian_common_cofactor_gram.py
-python audit_residual_hafnian_common_cofactor_gram.py
+uv run --with sympy python claims/arbitrary-order/verify_residual_hafnian_common_cofactor_gram.py
+python claims/arbitrary-order/audit_residual_hafnian_common_cofactor_gram.py
 ```
 
 The primary verifier proves (5) by independent symbolic hafnian expansion

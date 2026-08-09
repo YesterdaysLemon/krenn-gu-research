@@ -454,8 +454,8 @@ global Krenn--Gu conjecture:                            UNRESOLVED.      (29)
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p6_clean_two_by_three_selector_segre_pullback_and_torus_permission.py
-python audit_p6_clean_two_by_three_selector_segre_pullback_and_torus_permission.py
+uv run --with sympy python claims/p6/verify_p6_clean_two_by_three_selector_segre_pullback_and_torus_permission.py
+python claims/p6/audit_p6_clean_two_by_three_selector_segre_pullback_and_torus_permission.py
 python -m py_compile verify_p6_clean_two_by_three_selector_segre_pullback_and_torus_permission.py audit_p6_clean_two_by_three_selector_segre_pullback_and_torus_permission.py
 uv run --with ruff ruff check verify_p6_clean_two_by_three_selector_segre_pullback_and_torus_permission.py audit_p6_clean_two_by_three_selector_segre_pullback_and_torus_permission.py
 ```
@@ -469,6 +469,6 @@ searches any graph, support, word, parameter family, or finite field.
 
 ## Dependencies
 
-- [`RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md`](RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md)
+- [`RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md`](../arbitrary-order/RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md)
 - [`P6_FOUR_ROOT_FULL_H4_SENSOR_AND_TARGET_INCIDENCE_BOUNDARY.md`](P6_FOUR_ROOT_FULL_H4_SENSOR_AND_TARGET_INCIDENCE_BOUNDARY.md)
-- [`NONPROJECTIVE_ROOT_PAIR_FAN_SELECTOR_TOMOGRAPHY_THEOREM.md`](NONPROJECTIVE_ROOT_PAIR_FAN_SELECTOR_TOMOGRAPHY_THEOREM.md)
+- [`NONPROJECTIVE_ROOT_PAIR_FAN_SELECTOR_TOMOGRAPHY_THEOREM.md`](../../NONPROJECTIVE_ROOT_PAIR_FAN_SELECTOR_TOMOGRAPHY_THEOREM.md)

@@ -149,8 +149,8 @@ contradiction.
 Run:
 
 ```text
-python verify_arbitrary_order_degree_six_kotzig_port_obstruction.py
-python audit_arbitrary_order_degree_six_kotzig_port_obstruction.py
+python claims/arbitrary-order/verify_arbitrary_order_degree_six_kotzig_port_obstruction.py
+python claims/arbitrary-order/audit_arbitrary_order_degree_six_kotzig_port_obstruction.py
 ```
 
 The first verifier reconstructs the 48 saturated diagonal transitions,

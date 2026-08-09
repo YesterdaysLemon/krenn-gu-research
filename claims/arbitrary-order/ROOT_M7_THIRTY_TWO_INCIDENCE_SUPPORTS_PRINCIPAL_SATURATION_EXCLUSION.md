@@ -131,8 +131,8 @@ global Krenn-Gu conjecture:                       UNRESOLVED.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py
-python audit_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py
+uv run --with sympy python claims/arbitrary-order/verify_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py
+python claims/arbitrary-order/audit_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py
 uv run --with sympy --with ruff python -m ruff check verify_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py audit_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py
 python -m py_compile verify_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py audit_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py
 ```

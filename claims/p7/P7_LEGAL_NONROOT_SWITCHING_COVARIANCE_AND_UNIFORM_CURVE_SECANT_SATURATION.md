@@ -37,7 +37,7 @@ global Krenn--Gu conjecture remain **UNRESOLVED**.
 The fixed legal matching companions are those in
 [`P7_FULL_MIXED_ROOT_219_LABEL_SENSOR_AND_PINNED_STAR_GATING_BOUNDARY.md`](P7_FULL_MIXED_ROOT_219_LABEL_SENSOR_AND_PINNED_STAR_GATING_BOUNDARY.md).
 The prior one-point control and radial jet theorem are in
-[`ARBITRARY_HAFNIAN_JET_LINE_PROJECTIVE_AFFINE_SEPARATION_AND_P7_GHZ_BOUNDARY.md`](ARBITRARY_HAFNIAN_JET_LINE_PROJECTIVE_AFFINE_SEPARATION_AND_P7_GHZ_BOUNDARY.md).
+[`ARBITRARY_HAFNIAN_JET_LINE_PROJECTIVE_AFFINE_SEPARATION_AND_P7_GHZ_BOUNDARY.md`](../arbitrary-order/ARBITRARY_HAFNIAN_JET_LINE_PROJECTIVE_AFFINE_SEPARATION_AND_P7_GHZ_BOUNDARY.md).
 Ordinary flattening rank as a secant obstruction is part of the standard
 tensor toolkit surveyed by Bernardi et al.,
 [*Hitchhiker guide to: Secant varieties and tensor decomposition*](https://arxiv.org/abs/1812.10267).
@@ -459,8 +459,8 @@ unit ideal.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_legal_nonroot_switching_covariance_and_uniform_curve_secant_saturation.py
-python audit_p7_legal_nonroot_switching_covariance_and_uniform_curve_secant_saturation.py
+uv run --with sympy python claims/p7/verify_p7_legal_nonroot_switching_covariance_and_uniform_curve_secant_saturation.py
+python claims/p7/audit_p7_legal_nonroot_switching_covariance_and_uniform_curve_secant_saturation.py
 python -m py_compile verify_p7_legal_nonroot_switching_covariance_and_uniform_curve_secant_saturation.py audit_p7_legal_nonroot_switching_covariance_and_uniform_curve_secant_saturation.py
 uv run --with ruff ruff check verify_p7_legal_nonroot_switching_covariance_and_uniform_curve_secant_saturation.py audit_p7_legal_nonroot_switching_covariance_and_uniform_curve_secant_saturation.py
 ```

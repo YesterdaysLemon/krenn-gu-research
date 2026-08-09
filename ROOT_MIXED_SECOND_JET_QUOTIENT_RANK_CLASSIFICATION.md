@@ -140,7 +140,7 @@ For the uniform scalar splitting used in the symmetric tangent-cycle
 construction, `a=b=e_0^*`.  None of (2) holds, so the mixed GHZ quotient has
 rank two.  The single common-edge cofactor line is therefore insufficient,
 recovering and strengthening the selected-direction obstruction in
-[`ROOT_TANGENT_MINIMAL_CYCLE_SECOND_JET_OBSTRUCTION.md`](ROOT_TANGENT_MINIMAL_CYCLE_SECOND_JET_OBSTRUCTION.md).
+[`ROOT_TANGENT_MINIMAL_CYCLE_SECOND_JET_OBSTRUCTION.md`](claims/arbitrary-order/ROOT_TANGENT_MINIMAL_CYCLE_SECOND_JET_OBSTRUCTION.md).
 
 On a resonant locus (2), one second-cofactor quotient line is necessary but
 the theorem does not assert it is sufficient.  Away from resonance, two

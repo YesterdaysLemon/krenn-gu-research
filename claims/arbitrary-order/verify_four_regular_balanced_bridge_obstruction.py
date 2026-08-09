@@ -295,7 +295,7 @@ def main() -> None:
     if configurations != 4_096:
         raise AssertionError("contracted configuration count changed")
 
-    theorem = Path(
+    theorem = Path(__file__).resolve().with_name(
         "FOUR_REGULAR_BALANCED_BRIDGE_OBSTRUCTION.md"
     )
     source = Path(__file__)

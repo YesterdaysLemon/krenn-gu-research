@@ -363,8 +363,8 @@ finite-field inference, Groebner elimination, or timeout enters the proof.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_leaf_apolar_gorenstein_hilbert_resonance_and_essential_syzygy.py
-python audit_p7_leaf_apolar_gorenstein_hilbert_resonance_and_essential_syzygy.py
+uv run --with sympy python claims/p7/verify_p7_leaf_apolar_gorenstein_hilbert_resonance_and_essential_syzygy.py
+python claims/p7/audit_p7_leaf_apolar_gorenstein_hilbert_resonance_and_essential_syzygy.py
 python -m py_compile verify_p7_leaf_apolar_gorenstein_hilbert_resonance_and_essential_syzygy.py audit_p7_leaf_apolar_gorenstein_hilbert_resonance_and_essential_syzygy.py
 uv run --with ruff ruff check verify_p7_leaf_apolar_gorenstein_hilbert_resonance_and_essential_syzygy.py audit_p7_leaf_apolar_gorenstein_hilbert_resonance_and_essential_syzygy.py
 ```

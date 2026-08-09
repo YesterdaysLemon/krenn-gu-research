@@ -188,8 +188,8 @@ additional cells is the remaining problem.
 Run:
 
 ```text
-uv run --with sympy python verify_arbitrary_permanent_kernel_deletion_hierarchy.py
-python audit_arbitrary_permanent_kernel_deletion_hierarchy.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_kernel_deletion_hierarchy.py
+python claims/arbitrary-order/audit_arbitrary_permanent_kernel_deletion_hierarchy.py
 ```
 
 The primary script gives symbolic sanity checks for the deletion-capacity

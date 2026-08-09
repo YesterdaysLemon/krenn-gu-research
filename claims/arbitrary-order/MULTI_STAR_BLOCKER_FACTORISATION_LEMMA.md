@@ -186,8 +186,8 @@ permanent reduction to an `(n-4)`-vertex pure minor.
 Run:
 
 ```text
-python verify_multi_star_blocker_factorisation.py
-python audit_multi_star_blocker_factorisation.py
+python claims/arbitrary-order/verify_multi_star_blocker_factorisation.py
+python claims/arbitrary-order/audit_multi_star_blocker_factorisation.py
 ```
 
 The primary verifier enumerates every perfect matching through order 12

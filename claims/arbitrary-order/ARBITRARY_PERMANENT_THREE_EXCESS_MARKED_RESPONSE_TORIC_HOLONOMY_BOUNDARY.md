@@ -445,8 +445,8 @@ global Krenn--Gu conjecture:                               UNRESOLVED.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_arbitrary_permanent_three_excess_marked_response_toric_holonomy_boundary.py
-python audit_arbitrary_permanent_three_excess_marked_response_toric_holonomy_boundary.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_three_excess_marked_response_toric_holonomy_boundary.py
+python claims/arbitrary-order/audit_arbitrary_permanent_three_excess_marked_response_toric_holonomy_boundary.py
 ```
 
 The primary verifier reconstructs `C_per(W)`, the abstract response family,

@@ -154,7 +154,9 @@ def main() -> None:
             global_identity_checks += 2
 
     source = Path(__file__)
-    theorem = Path("ADJACENT_PORT_DETERMINANT_TRANSPORT_LEMMA.md")
+    theorem = Path(__file__).resolve().with_name(
+        "ADJACENT_PORT_DETERMINANT_TRANSPORT_LEMMA.md"
+    )
     payload = {
         "verified": True,
         "status": "adjacent_port_determinant_transport_identity_verified",

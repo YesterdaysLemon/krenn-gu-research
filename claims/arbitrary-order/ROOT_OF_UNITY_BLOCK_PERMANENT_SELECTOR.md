@@ -121,7 +121,7 @@ within-block order-two permanents survive with nonzero weights.
 ## Effect on the Krenn--Gu strategy
 
 This changes the status of Routes E and F in
-[`P5_ALTERNATIVE_STRATEGY_MAP.md`](P5_ALTERNATIVE_STRATEGY_MAP.md):
+[`P5_ALTERNATIVE_STRATEGY_MAP.md`](../../P5_ALTERNATIVE_STRATEGY_MAP.md):
 
 - It is an identity entirely inside the selected squarefree matching degree.
   It therefore supplies the kind of postselection-safe cancellation that
@@ -173,10 +173,10 @@ for one of those five steps.  A numerical near-cancellation is not evidence.
 From the repository root:
 
 ```text
-uv run --with sympy python verify_root_of_unity_block_permanent_selector.py
-python audit_root_of_unity_block_permanent_selector.py
-uv run --with sympy python verify_root_of_unity_selector_symmetric_hafnian_lift.py
-python audit_root_of_unity_selector_symmetric_hafnian_lift.py
+uv run --with sympy python claims/arbitrary-order/verify_root_of_unity_block_permanent_selector.py
+python claims/arbitrary-order/audit_root_of_unity_block_permanent_selector.py
+uv run --with sympy python claims/arbitrary-order/verify_root_of_unity_selector_symmetric_hafnian_lift.py
+python claims/arbitrary-order/audit_root_of_unity_selector_symmetric_hafnian_lift.py
 ```
 
 The primary verifier expands (5), checks (3) modulo cyclotomic polynomials

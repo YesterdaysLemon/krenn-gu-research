@@ -89,7 +89,7 @@ An independent bitmask recursion exhaustively checks every deleted-vertex
 set on `C4,C6,...,C14`:
 
 ```text
-python verify_even_cycle_feasible_set_expansion.py
+python claims/arbitrary-order/verify_even_cycle_feasible_set_expansion.py
 ```
 
 It must write

@@ -304,8 +304,8 @@ physical tensor common core:    unresolved.            (26)
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_seven_core_bosonic_compound_first_third_jet_boundary.py
-python audit_p7_seven_core_bosonic_compound_first_third_jet_boundary.py
+uv run --with sympy python claims/p7/verify_p7_seven_core_bosonic_compound_first_third_jet_boundary.py
+python claims/p7/audit_p7_seven_core_bosonic_compound_first_third_jet_boundary.py
 uv run --with sympy --with ruff python -m ruff check verify_p7_seven_core_bosonic_compound_first_third_jet_boundary.py audit_p7_seven_core_bosonic_compound_first_third_jet_boundary.py
 python -m py_compile verify_p7_seven_core_bosonic_compound_first_third_jet_boundary.py audit_p7_seven_core_bosonic_compound_first_third_jet_boundary.py
 ```

@@ -169,8 +169,8 @@ case.  It does not contradict that case.
 ## Replay
 
 ```text
-uv run --with sympy python verify_five_root_boundary_transversal_blocker_classification.py
-python audit_five_root_boundary_transversal_blocker_classification.py
+uv run --with sympy python claims/arbitrary-order/verify_five_root_boundary_transversal_blocker_classification.py
+python claims/arbitrary-order/audit_five_root_boundary_transversal_blocker_classification.py
 ```
 
 The primary verifier realizes arbitrary endpoint gradients by bilinear

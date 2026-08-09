@@ -199,8 +199,8 @@ P7 and global Krenn--Gu:                        UNRESOLVED.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_six_blocker_hafnian_polar_cubic_condensation_no_go.py
-python audit_six_blocker_hafnian_polar_cubic_condensation_no_go.py
+uv run --with sympy python claims/arbitrary-order/verify_six_blocker_hafnian_polar_cubic_condensation_no_go.py
+python claims/arbitrary-order/audit_six_blocker_hafnian_polar_cubic_condensation_no_go.py
 python -m py_compile verify_six_blocker_hafnian_polar_cubic_condensation_no_go.py audit_six_blocker_hafnian_polar_cubic_condensation_no_go.py
 uv run --with ruff ruff check verify_six_blocker_hafnian_polar_cubic_condensation_no_go.py audit_six_blocker_hafnian_polar_cubic_condensation_no_go.py
 ```

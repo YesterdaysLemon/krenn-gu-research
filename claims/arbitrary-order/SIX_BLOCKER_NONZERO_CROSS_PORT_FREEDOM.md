@@ -245,8 +245,8 @@ The rank-one concentration (2) alone cannot provide that missing relation.
 ## Replay
 
 ```text
-uv run --with sympy python verify_six_blocker_nonzero_cross_port_freedom.py
-uv run --with sympy python audit_six_blocker_nonzero_cross_port_freedom.py
+uv run --with sympy python claims/arbitrary-order/verify_six_blocker_nonzero_cross_port_freedom.py
+uv run --with sympy python claims/arbitrary-order/audit_six_blocker_nonzero_cross_port_freedom.py
 ```
 
 The primary verifier checks the basis-free normal form, the universal edge

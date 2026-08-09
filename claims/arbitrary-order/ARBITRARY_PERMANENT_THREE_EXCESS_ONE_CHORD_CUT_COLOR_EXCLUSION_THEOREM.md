@@ -291,8 +291,8 @@ case and not a full restriction.
 Run:
 
 ```text
-uv run --with sympy python verify_arbitrary_permanent_three_excess_one_chord_cut_color_exclusion_theorem.py
-python audit_arbitrary_permanent_three_excess_one_chord_cut_color_exclusion_theorem.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_three_excess_one_chord_cut_color_exclusion_theorem.py
+python claims/arbitrary-order/audit_arbitrary_permanent_three_excess_one_chord_cut_color_exclusion_theorem.py
 ```
 
 The primary verifier checks the port permanent, decisive flattening minors,

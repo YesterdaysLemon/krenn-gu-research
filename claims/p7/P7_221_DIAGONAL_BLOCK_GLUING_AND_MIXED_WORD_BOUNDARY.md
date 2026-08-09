@@ -257,8 +257,8 @@ full P7 restriction and global Krenn--Gu:        UNRESOLVED. (20)
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_221_diagonal_block_gluing_and_mixed_word_boundary.py
-python audit_p7_221_diagonal_block_gluing_and_mixed_word_boundary.py
+uv run --with sympy python claims/p7/verify_p7_221_diagonal_block_gluing_and_mixed_word_boundary.py
+python claims/p7/audit_p7_221_diagonal_block_gluing_and_mixed_word_boundary.py
 python -m py_compile verify_p7_221_diagonal_block_gluing_and_mixed_word_boundary.py audit_p7_221_diagonal_block_gluing_and_mixed_word_boundary.py
 uv run --with ruff ruff check verify_p7_221_diagonal_block_gluing_and_mixed_word_boundary.py audit_p7_221_diagonal_block_gluing_and_mixed_word_boundary.py
 ```

@@ -212,8 +212,8 @@ copy of a single-fibre equation.
 Run:
 
 ```text
-uv run --with sympy python verify_arbitrary_permanent_three_excess_b3_phase_holonomy_nogo.py
-python audit_arbitrary_permanent_three_excess_b3_phase_holonomy_nogo.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_three_excess_b3_phase_holonomy_nogo.py
+python claims/arbitrary-order/audit_arbitrary_permanent_three_excess_b3_phase_holonomy_nogo.py
 ```
 
 The primary verifier constructs `S_3`, checks all six chart transitions and

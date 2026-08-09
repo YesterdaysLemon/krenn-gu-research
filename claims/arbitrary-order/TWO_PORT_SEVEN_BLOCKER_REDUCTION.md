@@ -142,8 +142,8 @@ incidence count alone.
 ## Replay
 
 ```text
-python verify_two_port_seven_blocker_reduction.py
-python audit_two_port_seven_blocker_reduction.py
+python claims/arbitrary-order/verify_two_port_seven_blocker_reduction.py
+python claims/arbitrary-order/audit_two_port_seven_blocker_reduction.py
 ```
 
 The primary replay enumerates the matching bijection and the canonical type

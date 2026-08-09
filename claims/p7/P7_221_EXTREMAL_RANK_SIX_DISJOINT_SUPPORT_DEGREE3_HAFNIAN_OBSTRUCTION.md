@@ -423,8 +423,8 @@ P7 and global Krenn--Gu:                            UNRESOLVED.           (40)
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_221_extremal_rank_six_disjoint_support_degree3_hafnian_obstruction.py
-python audit_p7_221_extremal_rank_six_disjoint_support_degree3_hafnian_obstruction.py
+uv run --with sympy python claims/p7/verify_p7_221_extremal_rank_six_disjoint_support_degree3_hafnian_obstruction.py
+python claims/p7/audit_p7_221_extremal_rank_six_disjoint_support_degree3_hafnian_obstruction.py
 python -m py_compile verify_p7_221_extremal_rank_six_disjoint_support_degree3_hafnian_obstruction.py audit_p7_221_extremal_rank_six_disjoint_support_degree3_hafnian_obstruction.py
 uv run --with ruff ruff check verify_p7_221_extremal_rank_six_disjoint_support_degree3_hafnian_obstruction.py audit_p7_221_extremal_rank_six_disjoint_support_degree3_hafnian_obstruction.py
 ```

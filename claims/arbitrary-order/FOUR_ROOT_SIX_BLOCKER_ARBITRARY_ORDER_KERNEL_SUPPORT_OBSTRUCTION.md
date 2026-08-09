@@ -157,21 +157,21 @@ global Krenn--Gu conjecture: UNRESOLVED.
 Replay the imported packages first:
 
 ```text
-python verify_two_port_seven_blocker_reduction.py
-python audit_two_port_seven_blocker_reduction.py
+python claims/arbitrary-order/verify_two_port_seven_blocker_reduction.py
+python claims/arbitrary-order/audit_two_port_seven_blocker_reduction.py
 
-uv run --with sympy python verify_six_blocker_order12_kernel_support_cover_no_torus_p6.py
-python audit_six_blocker_order12_kernel_support_cover_no_torus_p6.py
+uv run --with sympy python claims/arbitrary-order/verify_six_blocker_order12_kernel_support_cover_no_torus_p6.py
+python claims/arbitrary-order/audit_six_blocker_order12_kernel_support_cover_no_torus_p6.py
 
-uv run --with sympy python verify_six_blocker_order12_three_kernel_pure_cofactor_compatibility_obstruction.py
-python audit_six_blocker_order12_three_kernel_pure_cofactor_compatibility_obstruction.py
+uv run --with sympy python claims/arbitrary-order/verify_six_blocker_order12_three_kernel_pure_cofactor_compatibility_obstruction.py
+python claims/arbitrary-order/audit_six_blocker_order12_three_kernel_pure_cofactor_compatibility_obstruction.py
 ```
 
 Then run:
 
 ```text
-python verify_four_root_six_blocker_arbitrary_order_kernel_support_obstruction.py
-python audit_four_root_six_blocker_arbitrary_order_kernel_support_obstruction.py
+python claims/arbitrary-order/verify_four_root_six_blocker_arbitrary_order_kernel_support_obstruction.py
+python claims/arbitrary-order/audit_four_root_six_blocker_arbitrary_order_kernel_support_obstruction.py
 ```
 
 The primary verifier checks the exact matching bijection for residual sets of

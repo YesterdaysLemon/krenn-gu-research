@@ -240,8 +240,8 @@ triple-product incidence (12)--(17).
 Run:
 
 ```text
-python verify_p6_common_port_111_frobenius_reduction.py
-python audit_p6_common_port_111_frobenius_reduction.py
+python claims/p6/verify_p6_common_port_111_frobenius_reduction.py
+python claims/p6/audit_p6_common_port_111_frobenius_reduction.py
 ```
 
 The primary verifier builds squarefree products over `Q`, reconstructs the

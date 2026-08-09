@@ -241,14 +241,14 @@ all three modes.
 Run:
 
 ```text
-uv run --with sympy python verify_p6_common_port_111_rank_five_catalecticant.py
-python audit_p6_common_port_111_rank_five_catalecticant.py
+uv run --with sympy python claims/p6/verify_p6_common_port_111_rank_five_catalecticant.py
+python claims/p6/audit_p6_common_port_111_rank_five_catalecticant.py
 
-uv run --with sympy python verify_p6_common_port_111_unique_four_gate_obstruction.py
-python audit_p6_common_port_111_unique_four_gate_obstruction.py
+uv run --with sympy python claims/p6/verify_p6_common_port_111_unique_four_gate_obstruction.py
+python claims/p6/audit_p6_common_port_111_unique_four_gate_obstruction.py
 
-uv run --with sympy python verify_p6_common_port_111_all_gate_covers_obstruction.py
-python audit_p6_common_port_111_all_gate_covers_obstruction.py
+uv run --with sympy python claims/p6/verify_p6_common_port_111_all_gate_covers_obstruction.py
+python claims/p6/audit_p6_common_port_111_all_gate_covers_obstruction.py
 ```
 
 The primary verifier performs exact rational row reduction, reconstructs

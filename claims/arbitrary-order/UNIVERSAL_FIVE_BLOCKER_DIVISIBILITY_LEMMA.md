@@ -241,8 +241,8 @@ their omitted colours need not agree.
 Run:
 
 ```text
-python verify_universal_five_blocker_divisibility.py
-python audit_universal_five_blocker_divisibility.py
+python claims/arbitrary-order/verify_universal_five_blocker_divisibility.py
+python claims/arbitrary-order/audit_universal_five_blocker_divisibility.py
 ```
 
 The primary verifier reconstructs (3) symbolically, checks the rank-two

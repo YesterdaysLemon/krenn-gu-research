@@ -122,7 +122,9 @@ def main() -> None:
             )
 
     source = Path(__file__)
-    theorem = Path("MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md")
+    theorem = Path(__file__).resolve().with_name(
+        "MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md"
+    )
     payload = {
         "verified": True,
         "orders_checked": [4, 6, 8, 10, 12],

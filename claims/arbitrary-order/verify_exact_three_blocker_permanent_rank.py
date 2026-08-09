@@ -86,7 +86,9 @@ def main() -> None:
         raise AssertionError("three-colour diagonal flattening lost rank")
 
     source = Path(__file__)
-    theorem = Path("EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md")
+    theorem = Path(__file__).resolve().with_name(
+        "EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md"
+    )
     payload = {
         "verified": True,
         "permanent_tensor_nonzero_entries": sum(bool(value) for value in tensor),

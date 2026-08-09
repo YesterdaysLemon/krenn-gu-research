@@ -45,7 +45,7 @@ Hessian, and star opens.  `P_7` and global Krenn--Gu remain
 The arbitrary-order identity, Kneser etaleness, scalar Euler stress, and the
 complete determinant-cleared representability criterion for a candidate
 `(h,c,D)` jet are proved in
-[`RESIDUAL_HAFNIAN_HESSIAN_KNESER_ETALE_AND_JET_INTEGRABILITY_THEOREM.md`](RESIDUAL_HAFNIAN_HESSIAN_KNESER_ETALE_AND_JET_INTEGRABILITY_THEOREM.md).
+[`RESIDUAL_HAFNIAN_HESSIAN_KNESER_ETALE_AND_JET_INTEGRABILITY_THEOREM.md`](claims/arbitrary-order/RESIDUAL_HAFNIAN_HESSIAN_KNESER_ETALE_AND_JET_INTEGRABILITY_THEOREM.md).
 Sections 1--2 below restate the identity and its projected rank consequence
 only to make the legal P7 transfer self-contained.  The new content here is
 the alignment with the existing P7 sensor, the one-shore/star inverse, and

@@ -361,8 +361,8 @@ maximum-degree-five contradiction.
 Run:
 
 ```text
-python verify_five_regular_balanced_bridge_diagonal_backbone.py
-python audit_five_regular_balanced_bridge_diagonal_backbone.py
+python claims/arbitrary-order/verify_five_regular_balanced_bridge_diagonal_backbone.py
+python claims/arbitrary-order/audit_five_regular_balanced_bridge_diagonal_backbone.py
 ```
 
 The primary verifier reconstructs condition (1), all 64 diagonal sets,

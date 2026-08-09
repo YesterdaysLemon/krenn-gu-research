@@ -197,8 +197,8 @@ object.
 Run:
 
 ```text
-uv run --with sympy python verify_arbitrary_permanent_equality_negative_gain_graph_theorem.py
-python audit_arbitrary_permanent_equality_negative_gain_graph_theorem.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_equality_negative_gain_graph_theorem.py
+python claims/arbitrary-order/audit_arbitrary_permanent_equality_negative_gain_graph_theorem.py
 ```
 
 The primary verifier checks the rectangle-to-gain identity, odd-cycle

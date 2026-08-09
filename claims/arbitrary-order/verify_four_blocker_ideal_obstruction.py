@@ -210,7 +210,9 @@ def main() -> None:
     )
 
     source = Path(__file__)
-    theorem = Path("FOUR_BLOCKER_IDEAL_OBSTRUCTION.md")
+    theorem = Path(__file__).resolve().with_name(
+        "FOUR_BLOCKER_IDEAL_OBSTRUCTION.md"
+    )
     payload = {
         "verified": True,
         "four_vertex_labelled_patterns": len(patterns),

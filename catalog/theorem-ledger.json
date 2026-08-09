@@ -81,7 +81,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "a0cf89174c320e7b",
+      "document_sha256_16": "ffd2f8c2e68f58ef",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -274,121 +274,178 @@
     },
     {
       "name": "Four Regular Balanced Bridge Obstruction",
-      "document": "FOUR_REGULAR_BALANCED_BRIDGE_OBSTRUCTION.md",
-      "document_sha256_16": "f0c0f8ae0dfe9ba0",
+      "document": "claims/arbitrary-order/FOUR_REGULAR_BALANCED_BRIDGE_OBSTRUCTION.md",
+      "document_sha256_16": "43fd6f8e3980c7f3",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact symbolic proof over C",
         "independent finite-field audit recorded in doc"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_four_regular_balanced_bridge_obstruction.py",
+      "primary_verifier": "claims/arbitrary-order/verify_four_regular_balanced_bridge_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_four_regular_balanced_bridge_obstruction.py",
+      "independent_audit": "claims/arbitrary-order/audit_four_regular_balanced_bridge_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "seconds-to-minutes (sympy)",
-      "external_binaries": []
+      "external_binaries": [],
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "FOUR_REGULAR_BALANCED_BRIDGE_OBSTRUCTION.md",
+        "audit_four_regular_balanced_bridge_obstruction.py",
+        "verify_four_regular_balanced_bridge_obstruction.py"
+      ]
     },
     {
       "name": "Arbitrary Order Degree Six Kotzig Port Obstruction",
-      "document": "ARBITRARY_ORDER_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
-      "document_sha256_16": "02601a7a8959f76c",
+      "document": "claims/arbitrary-order/ARBITRARY_ORDER_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
+      "document_sha256_16": "2ef0eec1c61b1eae",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact symbolic proof over C",
         "independent finite-field audit recorded in doc"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_arbitrary_order_degree_six_kotzig_port_obstruction.py",
+      "primary_verifier": "claims/arbitrary-order/verify_arbitrary_order_degree_six_kotzig_port_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_arbitrary_order_degree_six_kotzig_port_obstruction.py",
+      "independent_audit": "claims/arbitrary-order/audit_arbitrary_order_degree_six_kotzig_port_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "seconds-to-minutes (sympy)",
-      "external_binaries": []
+      "external_binaries": [],
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "ARBITRARY_ORDER_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
+        "audit_arbitrary_order_degree_six_kotzig_port_obstruction.py",
+        "verify_arbitrary_order_degree_six_kotzig_port_obstruction.py"
+      ]
     },
     {
       "name": "Four Blocker Ideal Obstruction",
-      "document": "FOUR_BLOCKER_IDEAL_OBSTRUCTION.md",
-      "document_sha256_16": "69c6b28c7be67181",
+      "document": "claims/arbitrary-order/FOUR_BLOCKER_IDEAL_OBSTRUCTION.md",
+      "document_sha256_16": "b7fb5e2394539754",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact symbolic proof over C",
         "independent finite-field audit recorded in doc"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_four_blocker_ideal_obstruction.py",
+      "primary_verifier": "claims/arbitrary-order/verify_four_blocker_ideal_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_four_blocker_ideal_obstruction.py",
+      "independent_audit": "claims/arbitrary-order/audit_four_blocker_ideal_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "seconds-to-minutes (sympy)",
-      "external_binaries": []
+      "external_binaries": [],
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "FOUR_BLOCKER_IDEAL_OBSTRUCTION.md",
+        "audit_four_blocker_ideal_obstruction.py",
+        "verify_four_blocker_ideal_obstruction.py"
+      ]
     },
     {
       "name": "Exact Three Blocker Permanent Rank Lemma",
-      "document": "EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md",
-      "document_sha256_16": "aabba14d7d3b5407",
+      "document": "claims/arbitrary-order/EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md",
+      "document_sha256_16": "60f8f73ccc1a47d7",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact symbolic proof over C",
         "independent finite-field audit recorded in doc"
       ],
       "dependencies": [],
-      "primary_verifier": null,
-      "verifier_provenance": "in_document_proof_only",
-      "independent_audit": null,
-      "audit_provenance": "none_exists",
+      "primary_verifier": "claims/arbitrary-order/verify_exact_three_blocker_permanent_rank.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_exact_three_blocker_permanent_rank.py",
+      "audit_provenance": "independent_modular_audit",
       "expected_runtime": "seconds-to-minutes (sympy)",
-      "external_binaries": []
+      "external_binaries": [],
+      "note": "The written theorem is over C. The F_5 audit independently rechecks the slice-space and polarization calculations and reads the primary artifact only for rank agreement; it is scoped modular corroboration, not a second characteristic-zero proof.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "EXACT_THREE_BLOCKER_PERMANENT_RANK_LEMMA.md",
+        "audit_exact_three_blocker_permanent_rank.py",
+        "verify_exact_three_blocker_permanent_rank.py"
+      ]
     },
     {
       "name": "Support Three P5 Contraction Subrank",
-      "document": "SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md",
-      "document_sha256_16": "892f2445b19bf7e3",
+      "document": "claims/arbitrary-order/SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md",
+      "document_sha256_16": "abe85075500f1a7d",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact symbolic proof over C",
         "independent finite-field audit recorded in doc"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_support_three_p5_contraction_subrank.py",
+      "primary_verifier": "claims/arbitrary-order/verify_support_three_p5_contraction_subrank.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_support_three_p5_contraction_subrank.py",
+      "independent_audit": "claims/arbitrary-order/audit_support_three_p5_contraction_subrank.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "seconds-to-minutes (sympy)",
-      "external_binaries": []
+      "external_binaries": [],
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md",
+        "audit_support_three_p5_contraction_subrank.py",
+        "verify_support_three_p5_contraction_subrank.py"
+      ]
     },
     {
       "name": "Fourth Order Permanent Subrank Obstruction",
-      "document": "FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md",
-      "document_sha256_16": "2b4e18cb0ce60d64",
+      "document": "claims/arbitrary-order/FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md",
+      "document_sha256_16": "14973d65dd6f6c6d",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact symbolic proof over C",
         "independent finite-field audit recorded in doc"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_fourth_order_permanent_subrank.py",
+      "primary_verifier": "claims/arbitrary-order/verify_fourth_order_permanent_subrank.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_fourth_order_permanent_subrank.py",
+      "independent_audit": "claims/arbitrary-order/audit_fourth_order_permanent_subrank.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "seconds-to-minutes (sympy)",
       "external_binaries": [],
-      "note": "24,336-pair F_5 audit recorded in the doc."
+      "note": "24,336-pair F_5 audit recorded in the doc.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md",
+        "audit_fourth_order_permanent_subrank.py",
+        "verify_fourth_order_permanent_subrank.py"
+      ]
     },
     {
       "name": "Support-four P5 contraction restriction (positive, shows extension is false)",
-      "document": "SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md",
-      "document_sha256_16": "03943207e990fb12",
+      "document": "claims/arbitrary-order/SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md",
+      "document_sha256_16": "7445b9a46890e1a4",
       "status": "verified",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
-      "primary_verifier": "verify_support_four_p5_contraction_restriction.py",
+      "primary_verifier": "claims/arbitrary-order/verify_support_four_p5_contraction_restriction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": null,
-      "audit_provenance": "none_exists",
+      "independent_audit": "claims/arbitrary-order/audit_support_four_p5_contraction_restriction.py",
+      "audit_provenance": "independent_modular_audit",
       "expected_runtime": "seconds (sympy)",
       "external_binaries": [],
-      "note": "Positive restriction of the contracted quartic, not of P_5 itself."
+      "note": "Exact positive restriction over C of the support-four contraction, not of P_5 itself. The distinct audit independently reconstructs the coefficient calculation from the missing-coordinate rule over F_5 and F_7 using the displayed integer maps; this is scoped modular corroboration, not independent witness selection or a second characteristic-zero proof.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md",
+        "audit_support_four_p5_contraction_restriction.py",
+        "verify_support_four_p5_contraction_restriction.py"
+      ]
     },
     {
       "name": "Generic marked H31 fibre empty: all rank one triangle",
@@ -1625,7 +1682,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "a0cf89174c320e7b",
+      "document_sha256_16": "ffd2f8c2e68f58ef",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -1754,7 +1811,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "a0cf89174c320e7b",
+      "document_sha256_16": "ffd2f8c2e68f58ef",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1940,7 +1997,7 @@
     {
       "name": "Transfer track: root-of-unity selector, hafnian lift, quotient catalogue",
       "document": "docs/ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md",
-      "document_sha256_16": "0c2969aaa613fd41",
+      "document_sha256_16": "76b67cbf7175a14e",
       "status": "exploratory",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],

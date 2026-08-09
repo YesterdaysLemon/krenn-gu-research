@@ -332,8 +332,8 @@ finite-field calculation enters this proof.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_primitive_boolean_square_star_closure_discriminant.py
-python audit_p7_primitive_boolean_square_star_closure_discriminant.py
+uv run --with sympy python claims/p7/verify_p7_primitive_boolean_square_star_closure_discriminant.py
+python claims/p7/audit_p7_primitive_boolean_square_star_closure_discriminant.py
 python -m py_compile verify_p7_primitive_boolean_square_star_closure_discriminant.py audit_p7_primitive_boolean_square_star_closure_discriminant.py
 uv run --with ruff ruff check verify_p7_primitive_boolean_square_star_closure_discriminant.py audit_p7_primitive_boolean_square_star_closure_discriminant.py
 ```

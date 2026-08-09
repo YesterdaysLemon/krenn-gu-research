@@ -195,8 +195,8 @@ multichannel.
 Run:
 
 ```text
-python verify_graph_extraction_strict_support_transfer_corollary.py
-python audit_graph_extraction_strict_support_transfer_corollary.py
+python claims/arbitrary-order/verify_graph_extraction_strict_support_transfer_corollary.py
+python claims/arbitrary-order/audit_graph_extraction_strict_support_transfer_corollary.py
 ```
 
 The original primary verifier checks every affine support substitution and

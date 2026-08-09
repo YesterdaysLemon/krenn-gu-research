@@ -265,8 +265,8 @@ not perform the latter step; mixed-coefficient localization is essential.
 Run:
 
 ```text
-uv run --with sympy python verify_arbitrary_permanent_equality_two_switch_port_completion_shore_theorem.py
-python audit_arbitrary_permanent_equality_two_switch_port_completion_shore_theorem.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_equality_two_switch_port_completion_shore_theorem.py
+python claims/arbitrary-order/audit_arbitrary_permanent_equality_two_switch_port_completion_shore_theorem.py
 ```
 
 The primary verifier checks the rectangle-to-gain equation and the complete

@@ -16,7 +16,7 @@ those two remaining branches and is not a complete solution of the
 Krenn--Gu conjecture.
 
 The later
-[`P5_COORDINATE_PLANE_PAIR_COVER.md`](P5_COORDINATE_PLANE_PAIR_COVER.md)
+[`P5_COORDINATE_PLANE_PAIR_COVER.md`](../../P5_COORDINATE_PLANE_PAIR_COVER.md)
 strengthens this: every one of the ten source pairs must span a
 coordinate plane in some mode, forcing either a multiple-coordinate-row
 map or an axial `4+1` line map.
@@ -115,8 +115,8 @@ permanent monomial is zero, so the left side is zero.  This contradicts
 Run:
 
 ```text
-python verify_all_quadrangle_p5_obstruction.py
-python audit_all_quadrangle_p5_obstruction.py
+python claims/arbitrary-order/verify_all_quadrangle_p5_obstruction.py
+python claims/arbitrary-order/audit_all_quadrangle_p5_obstruction.py
 ```
 
 The primary verifier reconstructs the standard complete quadrangle,

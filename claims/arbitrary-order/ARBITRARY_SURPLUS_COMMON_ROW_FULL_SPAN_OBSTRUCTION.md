@@ -253,7 +253,7 @@ empty, 1, 1+1, 1+1+1, 2, 2+1
 ```
 
 from
-[`P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md`](P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md)
+[`P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md`](../p6/P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md)
 remain compatible with full root-row and port-row span at the linear
 incidence level.  Three full blocker modes can cycle a coordinate basis
 through every root row and through the port row, while each exceptional mode
@@ -283,15 +283,15 @@ global Krenn--Gu conjecture: UNRESOLVED.
 Replay the exact arbitrary-surplus dependency first:
 
 ```text
-python verify_two_port_seven_blocker_reduction.py
-python audit_two_port_seven_blocker_reduction.py
+python claims/arbitrary-order/verify_two_port_seven_blocker_reduction.py
+python claims/arbitrary-order/audit_two_port_seven_blocker_reduction.py
 ```
 
 Then run:
 
 ```text
-uv run --with sympy python verify_arbitrary_surplus_common_row_full_span_obstruction.py
-python audit_arbitrary_surplus_common_row_full_span_obstruction.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_surplus_common_row_full_span_obstruction.py
+python claims/arbitrary-order/audit_arbitrary_surplus_common_row_full_span_obstruction.py
 ```
 
 The primary verifier checks the product grading in representative tight and

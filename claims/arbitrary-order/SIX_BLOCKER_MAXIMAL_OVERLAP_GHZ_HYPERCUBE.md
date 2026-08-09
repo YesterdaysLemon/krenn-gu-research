@@ -218,8 +218,8 @@ permanents.
 ## Replay
 
 ```text
-python verify_six_blocker_maximal_overlap_ghz_hypercube.py
-python audit_six_blocker_maximal_overlap_ghz_hypercube.py
+python claims/arbitrary-order/verify_six_blocker_maximal_overlap_ghz_hypercube.py
+python claims/arbitrary-order/audit_six_blocker_maximal_overlap_ghz_hypercube.py
 ```
 
 The primary verifier compares the surviving matching monomials with (6) and

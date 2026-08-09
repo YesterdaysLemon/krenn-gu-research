@@ -233,8 +233,8 @@ for order at least five.
 Run:
 
 ```text
-python verify_fourth_order_permanent_subrank.py
-python audit_fourth_order_permanent_subrank.py
+python claims/arbitrary-order/verify_fourth_order_permanent_subrank.py
+python claims/arbitrary-order/audit_fourth_order_permanent_subrank.py
 ```
 
 The primary verifier reconstructs `P_4`, all three flattenings, the pair

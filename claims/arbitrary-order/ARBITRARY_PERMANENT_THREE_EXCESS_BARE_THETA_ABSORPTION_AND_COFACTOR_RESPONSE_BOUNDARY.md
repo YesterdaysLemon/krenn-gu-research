@@ -386,8 +386,8 @@ global Krenn--Gu conjecture:                              UNRESOLVED.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_arbitrary_permanent_three_excess_bare_theta_absorption_and_cofactor_response_boundary.py
-python audit_arbitrary_permanent_three_excess_bare_theta_absorption_and_cofactor_response_boundary.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_three_excess_bare_theta_absorption_and_cofactor_response_boundary.py
+python claims/arbitrary-order/audit_arbitrary_permanent_three_excess_bare_theta_absorption_and_cofactor_response_boundary.py
 ```
 
 The primary verifier reconstructs the cofactor matrix, all six anchor

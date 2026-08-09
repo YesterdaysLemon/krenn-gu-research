@@ -205,8 +205,8 @@ classification gaps, and it does not resolve the Krenn--Gu conjecture.
 ## Replay
 
 ```text
-python verify_odd_residual_port_permanent_extraction.py
-python audit_odd_residual_port_permanent_extraction.py
+python claims/arbitrary-order/verify_odd_residual_port_permanent_extraction.py
+python claims/arbitrary-order/audit_odd_residual_port_permanent_extraction.py
 ```
 
 The primary verifier compares the surviving matching polynomial and the

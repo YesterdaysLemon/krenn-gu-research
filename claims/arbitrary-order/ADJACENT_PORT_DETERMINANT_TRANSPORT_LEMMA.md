@@ -157,7 +157,7 @@ singleton factors always contain an odd signed dependency.
 Run:
 
 ```text
-python verify_adjacent_port_determinant_transport_lemma.py
+python claims/arbitrary-order/verify_adjacent_port_determinant_transport_lemma.py
 ```
 
 The verifier checks the local rational identity symbolically, checks its

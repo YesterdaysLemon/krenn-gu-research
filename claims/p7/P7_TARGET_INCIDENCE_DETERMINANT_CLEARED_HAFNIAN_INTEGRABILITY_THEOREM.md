@@ -432,8 +432,8 @@ global Krenn--Gu:                                      UNRESOLVED.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_target_incidence_determinant_cleared_hafnian_integrability.py
-python audit_p7_target_incidence_determinant_cleared_hafnian_integrability.py
+uv run --with sympy python claims/p7/verify_p7_target_incidence_determinant_cleared_hafnian_integrability.py
+python claims/p7/audit_p7_target_incidence_determinant_cleared_hafnian_integrability.py
 python -m py_compile verify_p7_target_incidence_determinant_cleared_hafnian_integrability.py audit_p7_target_incidence_determinant_cleared_hafnian_integrability.py
 uv run --with ruff ruff check verify_p7_target_incidence_determinant_cleared_hafnian_integrability.py audit_p7_target_incidence_determinant_cleared_hafnian_integrability.py
 ```

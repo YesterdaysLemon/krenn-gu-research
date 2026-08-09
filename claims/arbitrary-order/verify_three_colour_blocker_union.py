@@ -144,7 +144,9 @@ def main() -> None:
         raise AssertionError("diagonal-intersection rank check failed")
 
     source = Path(__file__)
-    theorem = Path("THREE_COLOUR_BLOCKER_UNION_LEMMA.md")
+    theorem = Path(__file__).resolve().with_name(
+        "THREE_COLOUR_BLOCKER_UNION_LEMMA.md"
+    )
     payload = {
         "verified": True,
         "minimum_blockers_per_colour": 2,

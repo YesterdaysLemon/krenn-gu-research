@@ -140,7 +140,7 @@ single component cycle.
 Run:
 
 ```text
-python verify_minimal_singleton_circuit_rectangle_theorem.py
+python claims/arbitrary-order/verify_minimal_singleton_circuit_rectangle_theorem.py
 ```
 
 The verifier independently:

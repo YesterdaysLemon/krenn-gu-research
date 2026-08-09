@@ -29,7 +29,7 @@ identity is neither checked nor claimed.  The theorem proves that no stronger
 incidence conclusion follows from the stated canonical and pure data alone.
 In particular, the example does **not** satisfy the stronger per-colour
 kernel Hall quotas obeyed by an actual permanent restriction.  The later
-[`ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md`](ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md)
+[`ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md`](../arbitrary-order/ARBITRARY_PERMANENT_FOUR_MODE_ROW_PAIR_INCIDENCE_THEOREM.md)
 uses those quotas and the full polar rank to improve the factorized lower
 bound from three blockers to four.
 
@@ -252,8 +252,8 @@ full factorized P7 identity
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_residual_null_incidence_canonical_profile_sharpness.py
-python audit_p7_residual_null_incidence_canonical_profile_sharpness.py
+uv run --with sympy python claims/p7/verify_p7_residual_null_incidence_canonical_profile_sharpness.py
+python claims/p7/audit_p7_residual_null_incidence_canonical_profile_sharpness.py
 uv run --with sympy --with ruff python -m ruff check verify_p7_residual_null_incidence_canonical_profile_sharpness.py audit_p7_residual_null_incidence_canonical_profile_sharpness.py
 python -m py_compile verify_p7_residual_null_incidence_canonical_profile_sharpness.py audit_p7_residual_null_incidence_canonical_profile_sharpness.py
 ```

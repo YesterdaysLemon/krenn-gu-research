@@ -380,8 +380,8 @@ global Krenn--Gu conjecture:                           UNRESOLVED.      (23)
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p6_physical_six_face_hafnian_section_four_deck_synchronization_and_segre_sharpness.py
-python audit_p6_physical_six_face_hafnian_section_four_deck_synchronization_and_segre_sharpness.py
+uv run --with sympy python claims/p6/verify_p6_physical_six_face_hafnian_section_four_deck_synchronization_and_segre_sharpness.py
+python claims/p6/audit_p6_physical_six_face_hafnian_section_four_deck_synchronization_and_segre_sharpness.py
 python -m py_compile verify_p6_physical_six_face_hafnian_section_four_deck_synchronization_and_segre_sharpness.py audit_p6_physical_six_face_hafnian_section_four_deck_synchronization_and_segre_sharpness.py
 uv run --with ruff ruff check verify_p6_physical_six_face_hafnian_section_four_deck_synchronization_and_segre_sharpness.py audit_p6_physical_six_face_hafnian_section_four_deck_synchronization_and_segre_sharpness.py
 ```
@@ -397,6 +397,6 @@ family, or finite field.
 ## Dependencies
 
 - [`P6_CLEAN_TWO_BY_THREE_SELECTOR_SEGRE_PULLBACK_AND_TORUS_PERMISSION_THEOREM.md`](P6_CLEAN_TWO_BY_THREE_SELECTOR_SEGRE_PULLBACK_AND_TORUS_PERMISSION_THEOREM.md)
-- [`RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md`](RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md)
-- [`HIGHER_RESIDUAL_PERMANENTAL_TOMOGRAPHY_NESTED_COFACTOR_STRESS_AND_CUMULANT_INTERFACE.md`](HIGHER_RESIDUAL_PERMANENTAL_TOMOGRAPHY_NESTED_COFACTOR_STRESS_AND_CUMULANT_INTERFACE.md)
-- [`RESIDUAL_DEPTH_LOOP_HAFNIAN_CUMULANT_AND_TWO_PORT_DISCRIMINANT_THEOREM.md`](RESIDUAL_DEPTH_LOOP_HAFNIAN_CUMULANT_AND_TWO_PORT_DISCRIMINANT_THEOREM.md)
+- [`RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md`](../arbitrary-order/RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md)
+- [`HIGHER_RESIDUAL_PERMANENTAL_TOMOGRAPHY_NESTED_COFACTOR_STRESS_AND_CUMULANT_INTERFACE.md`](../arbitrary-order/HIGHER_RESIDUAL_PERMANENTAL_TOMOGRAPHY_NESTED_COFACTOR_STRESS_AND_CUMULANT_INTERFACE.md)
+- [`RESIDUAL_DEPTH_LOOP_HAFNIAN_CUMULANT_AND_TWO_PORT_DISCRIMINANT_THEOREM.md`](../../RESIDUAL_DEPTH_LOOP_HAFNIAN_CUMULANT_AND_TWO_PORT_DISCRIMINANT_THEOREM.md)

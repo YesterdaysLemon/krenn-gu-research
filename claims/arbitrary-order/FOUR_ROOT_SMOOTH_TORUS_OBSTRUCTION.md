@@ -198,8 +198,8 @@ overlapping degeneracies are mutually incompatible.
 ## Replay
 
 ```text
-python verify_four_root_smooth_torus_obstruction.py
-python audit_four_root_smooth_torus_obstruction.py
+python claims/arbitrary-order/verify_four_root_smooth_torus_obstruction.py
+python claims/arbitrary-order/audit_four_root_smooth_torus_obstruction.py
 ```
 
 The primary verifier expands (8) in the truncated Chow ring and reconstructs

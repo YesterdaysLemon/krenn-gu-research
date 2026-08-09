@@ -335,8 +335,8 @@ arbitrary-order without enumerating the matching interiors.
 Run:
 
 ```text
-uv run --with sympy python verify_arbitrary_permanent_three_excess_conformal_core_alignment_boundary.py
-python audit_arbitrary_permanent_three_excess_conformal_core_alignment_boundary.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_three_excess_conformal_core_alignment_boundary.py
+python claims/arbitrary-order/audit_arbitrary_permanent_three_excess_conformal_core_alignment_boundary.py
 ```
 
 The primary verifier checks the cycle and theta port identities, the

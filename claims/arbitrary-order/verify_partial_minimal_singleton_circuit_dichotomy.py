@@ -287,7 +287,7 @@ def main() -> None:
     if single_touched_exceptions:
         raise AssertionError("one-cycle loop exception became possible")
     source = Path(__file__)
-    theorem = Path(
+    theorem = Path(__file__).resolve().with_name(
         "PARTIAL_MINIMAL_SINGLETON_CIRCUIT_DICHOTOMY.md"
     )
     payload = {

@@ -163,8 +163,8 @@ root--blocker tensors.
 Run:
 
 ```text
-python verify_three_colour_blocker_union.py
-python audit_three_colour_blocker_union.py
+python claims/arbitrary-order/verify_three_colour_blocker_union.py
+python claims/arbitrary-order/audit_three_colour_blocker_union.py
 ```
 
 The primary verifier exhausts every blocker-incidence assignment on at

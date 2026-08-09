@@ -125,8 +125,8 @@ the product on those three sectors need not vanish.
 Run:
 
 ```text
-uv run --with sympy python verify_root_m7_cofactor_quotient_wedge_invariant.py
-python audit_root_m7_cofactor_quotient_wedge_invariant.py
+uv run --with sympy python claims/arbitrary-order/verify_root_m7_cofactor_quotient_wedge_invariant.py
+python claims/arbitrary-order/audit_root_m7_cofactor_quotient_wedge_invariant.py
 ```
 
 The scripts check the determinantal parametrization, the affine-chart

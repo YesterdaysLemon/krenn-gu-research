@@ -173,17 +173,17 @@ global Krenn--Gu conjecture: UNRESOLVED.
 Replay the two exact root packages first:
 
 ```text
-python verify_six_blocker_order12_kernel_support_cover_no_torus_p6.py
-python audit_six_blocker_order12_kernel_support_cover_no_torus_p6.py
-uv run --with sympy python verify_fourth_order_permanent_subrank.py
-python audit_fourth_order_permanent_subrank.py
+python claims/arbitrary-order/verify_six_blocker_order12_kernel_support_cover_no_torus_p6.py
+python claims/arbitrary-order/audit_six_blocker_order12_kernel_support_cover_no_torus_p6.py
+uv run --with sympy python claims/arbitrary-order/verify_fourth_order_permanent_subrank.py
+python claims/arbitrary-order/audit_fourth_order_permanent_subrank.py
 ```
 
 Then run:
 
 ```text
-python verify_six_blocker_order12_three_kernel_pure_cofactor_compatibility_obstruction.py
-python audit_six_blocker_order12_three_kernel_pure_cofactor_compatibility_obstruction.py
+python claims/arbitrary-order/verify_six_blocker_order12_three_kernel_pure_cofactor_compatibility_obstruction.py
+python claims/arbitrary-order/audit_six_blocker_order12_three_kernel_pure_cofactor_compatibility_obstruction.py
 ```
 
 The primary verifier checks all 81 symbolic coefficient identities in the

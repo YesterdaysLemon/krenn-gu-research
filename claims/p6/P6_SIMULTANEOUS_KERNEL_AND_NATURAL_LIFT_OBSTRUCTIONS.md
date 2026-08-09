@@ -88,7 +88,7 @@ condition for `P_5`, with one additional source dimension.
 ## The five-root/six-blocker common-port normal form
 
 The `r=5`, `|B|=6` case extracted by
-[`ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION.md`](ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION.md)
+[`ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION.md`](../arbitrary-order/ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION.md)
 has more structure than six arbitrary local maps.  Index the source rows by
 the five roots and one common port `p`.  At blocker mode `u`, write
 
@@ -198,7 +198,7 @@ the 27 marked cubic products is the remaining condition.  See
 ## The support-four construction does not zero-row lift
 
 Let `A_0,...,A_3` be the four integer maps in
-[`SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md`](SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md),
+[`SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md`](../arbitrary-order/SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md),
 and define
 
 ```text
@@ -366,8 +366,8 @@ three and local maps are allowed to lower rank.
 Run:
 
 ```text
-python verify_p6_simultaneous_kernel_and_natural_lift.py
-python audit_p6_simultaneous_kernel_and_natural_lift.py
+python claims/p6/verify_p6_simultaneous_kernel_and_natural_lift.py
+python claims/p6/audit_p6_simultaneous_kernel_and_natural_lift.py
 ```
 
 The primary verifier reconstructs the `5!` permanent contractions over the

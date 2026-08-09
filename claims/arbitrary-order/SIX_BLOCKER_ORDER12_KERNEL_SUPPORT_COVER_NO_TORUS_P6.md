@@ -244,11 +244,11 @@ global Krenn--Gu conjecture: UNRESOLVED.
 ## Replay
 
 ```text
-python verify_six_blocker_order12_kernel_support_cover_no_torus_p6.py
-python audit_six_blocker_order12_kernel_support_cover_no_torus_p6.py
+python claims/arbitrary-order/verify_six_blocker_order12_kernel_support_cover_no_torus_p6.py
+python claims/arbitrary-order/audit_six_blocker_order12_kernel_support_cover_no_torus_p6.py
 
-uv run --with sympy python verify_fourth_order_permanent_subrank.py
-python audit_fourth_order_permanent_subrank.py
+uv run --with sympy python claims/arbitrary-order/verify_fourth_order_permanent_subrank.py
+python claims/arbitrary-order/audit_fourth_order_permanent_subrank.py
 ```
 
 The primary verifier checks the double- and triple-contraction edge ledgers,

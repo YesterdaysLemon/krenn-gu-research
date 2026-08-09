@@ -399,8 +399,8 @@ global Krenn--Gu conjecture:                           UNRESOLVED.      (24)
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p6_axis_complement_sum_covariant_offdiagonal_and_gauge_no_go.py
-python audit_p6_axis_complement_sum_covariant_offdiagonal_and_gauge_no_go.py
+uv run --with sympy python claims/p6/verify_p6_axis_complement_sum_covariant_offdiagonal_and_gauge_no_go.py
+python claims/p6/audit_p6_axis_complement_sum_covariant_offdiagonal_and_gauge_no_go.py
 python -m py_compile verify_p6_axis_complement_sum_covariant_offdiagonal_and_gauge_no_go.py audit_p6_axis_complement_sum_covariant_offdiagonal_and_gauge_no_go.py
 uv run --with ruff ruff check verify_p6_axis_complement_sum_covariant_offdiagonal_and_gauge_no_go.py audit_p6_axis_complement_sum_covariant_offdiagonal_and_gauge_no_go.py
 ```

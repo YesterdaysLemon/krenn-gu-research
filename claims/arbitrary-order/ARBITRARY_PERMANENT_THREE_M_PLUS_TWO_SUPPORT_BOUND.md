@@ -213,8 +213,8 @@ This is a necessary exceptional circuit locus, not a construction.
 Run:
 
 ```text
-uv run --with sympy python verify_arbitrary_permanent_three_m_plus_two_support_bound.py
-python audit_arbitrary_permanent_three_m_plus_two_support_bound.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_three_m_plus_two_support_bound.py
+python claims/arbitrary-order/audit_arbitrary_permanent_three_m_plus_two_support_bound.py
 ```
 
 The scripts check the two incidence ledgers, the repair cell, the

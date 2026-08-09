@@ -148,7 +148,7 @@ def main() -> None:
     ):
         raise AssertionError("corrected physical-port table changed")
 
-    theorem = Path(
+    theorem = Path(__file__).resolve().with_name(
         "ARBITRARY_ORDER_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md"
     )
     payload = {

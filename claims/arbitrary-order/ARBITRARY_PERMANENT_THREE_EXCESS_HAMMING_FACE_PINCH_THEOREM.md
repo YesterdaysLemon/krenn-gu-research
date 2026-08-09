@@ -243,8 +243,8 @@ neighbouring tensor coordinates.
 Run:
 
 ```text
-uv run --with sympy python verify_arbitrary_permanent_three_excess_hamming_face_pinch_theorem.py
-python audit_arbitrary_permanent_three_excess_hamming_face_pinch_theorem.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_three_excess_hamming_face_pinch_theorem.py
+python claims/arbitrary-order/audit_arbitrary_permanent_three_excess_hamming_face_pinch_theorem.py
 ```
 
 The primary verifier proves the symbolic row-replacement formula for the

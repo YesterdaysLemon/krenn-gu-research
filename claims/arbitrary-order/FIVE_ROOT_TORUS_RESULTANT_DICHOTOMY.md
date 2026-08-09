@@ -197,8 +197,8 @@ the remaining boundary branch, not its exclusion.
 ## Exact replay
 
 ```text
-python verify_five_root_torus_resultant_dichotomy.py
-python audit_five_root_torus_resultant_dichotomy.py
+python claims/arbitrary-order/verify_five_root_torus_resultant_dichotomy.py
+python claims/arbitrary-order/audit_five_root_torus_resultant_dichotomy.py
 ```
 
 The primary verifier expands the relevant Chow products directly and

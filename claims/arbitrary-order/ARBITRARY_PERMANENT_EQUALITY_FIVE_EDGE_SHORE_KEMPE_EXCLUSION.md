@@ -220,8 +220,8 @@ classical; see
 Run:
 
 ```text
-uv run --with sympy python verify_arbitrary_permanent_equality_five_edge_shore_kempe_exclusion.py
-python audit_arbitrary_permanent_equality_five_edge_shore_kempe_exclusion.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_equality_five_edge_shore_kempe_exclusion.py
+python claims/arbitrary-order/audit_arbitrary_permanent_equality_five_edge_shore_kempe_exclusion.py
 ```
 
 The primary verifier checks the defect-one boundary balances, invariance and

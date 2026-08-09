@@ -5,17 +5,24 @@ from __future__ import annotations
 
 import itertools
 import json
+import sys
 from pathlib import Path
 
 import sympy as sp
 
-ROOT = Path(__file__).resolve().parent
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
 THEOREM = (
-    ROOT / "SIX_BLOCKER_ARBITRARY_COFACTOR_PROJECTIVELY_CONSTANT_ROW_OBSTRUCTION.md"
+    HERE / "SIX_BLOCKER_ARBITRARY_COFACTOR_PROJECTIVELY_CONSTANT_ROW_OBSTRUCTION.md"
 )
 DEPENDENCIES = (
-    ROOT / "P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md",
-    ROOT / "FOUR_ROOT_SIX_BLOCKER_ARBITRARY_ORDER_KERNEL_SUPPORT_OBSTRUCTION.md",
+    REPO_ROOT / "claims/p6/P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md",
+    HERE / "FOUR_ROOT_SIX_BLOCKER_ARBITRARY_ORDER_KERNEL_SUPPORT_OBSTRUCTION.md",
 )
 MODES = range(6)
 PERMUTATIONS = tuple(itertools.permutations(range(4)))

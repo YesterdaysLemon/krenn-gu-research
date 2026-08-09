@@ -284,8 +284,8 @@ Lefschetz identities above.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_pinned_h4_torus_support_seven_boolean_lefschetz_exclusion.py
-python audit_p7_pinned_h4_torus_support_seven_boolean_lefschetz_exclusion.py
+uv run --with sympy python claims/p7/verify_p7_pinned_h4_torus_support_seven_boolean_lefschetz_exclusion.py
+python claims/p7/audit_p7_pinned_h4_torus_support_seven_boolean_lefschetz_exclusion.py
 python -m py_compile verify_p7_pinned_h4_torus_support_seven_boolean_lefschetz_exclusion.py audit_p7_pinned_h4_torus_support_seven_boolean_lefschetz_exclusion.py
 uv run --with ruff ruff check verify_p7_pinned_h4_torus_support_seven_boolean_lefschetz_exclusion.py audit_p7_pinned_h4_torus_support_seven_boolean_lefschetz_exclusion.py
 ```

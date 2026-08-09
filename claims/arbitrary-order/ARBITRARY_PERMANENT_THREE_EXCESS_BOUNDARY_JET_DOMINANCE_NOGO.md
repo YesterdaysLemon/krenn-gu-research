@@ -191,8 +191,8 @@ global Krenn--Gu conjecture: UNRESOLVED.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_arbitrary_permanent_three_excess_boundary_jet_dominance_nogo.py
-python audit_arbitrary_permanent_three_excess_boundary_jet_dominance_nogo.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_three_excess_boundary_jet_dominance_nogo.py
+python claims/arbitrary-order/audit_arbitrary_permanent_three_excess_boundary_jet_dominance_nogo.py
 ```
 
 The primary verifier differentiates the 20 exact response polynomials and

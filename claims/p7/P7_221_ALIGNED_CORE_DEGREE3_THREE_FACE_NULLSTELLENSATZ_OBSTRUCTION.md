@@ -204,8 +204,8 @@ unresolved.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_221_aligned_core_degree3_three_face_nullstellensatz_obstruction.py
-python audit_p7_221_aligned_core_degree3_three_face_nullstellensatz_obstruction.py
+uv run --with sympy python claims/p7/verify_p7_221_aligned_core_degree3_three_face_nullstellensatz_obstruction.py
+python claims/p7/audit_p7_221_aligned_core_degree3_three_face_nullstellensatz_obstruction.py
 python -m py_compile verify_p7_221_aligned_core_degree3_three_face_nullstellensatz_obstruction.py audit_p7_221_aligned_core_degree3_three_face_nullstellensatz_obstruction.py
 uv run --with ruff ruff check verify_p7_221_aligned_core_degree3_three_face_nullstellensatz_obstruction.py audit_p7_221_aligned_core_degree3_three_face_nullstellensatz_obstruction.py
 ```

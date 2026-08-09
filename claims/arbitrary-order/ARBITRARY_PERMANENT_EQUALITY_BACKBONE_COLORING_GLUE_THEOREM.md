@@ -150,8 +150,8 @@ in one canonically bipartite graph.
 Run:
 
 ```text
-uv run --with sympy python verify_arbitrary_permanent_equality_backbone_coloring_glue_theorem.py
-python audit_arbitrary_permanent_equality_backbone_coloring_glue_theorem.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_equality_backbone_coloring_glue_theorem.py
+python claims/arbitrary-order/audit_arbitrary_permanent_equality_backbone_coloring_glue_theorem.py
 ```
 
 The primary verifier checks the component-offset equations over `F_2`, the

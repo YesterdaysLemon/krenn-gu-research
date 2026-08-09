@@ -406,8 +406,8 @@ inference, parameter sweep, Groebner elimination, or timeout is used.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_physical_leaf_annihilator_extension_and_quotient_syzygy.py
-python audit_p7_physical_leaf_annihilator_extension_and_quotient_syzygy.py
+uv run --with sympy python claims/p7/verify_p7_physical_leaf_annihilator_extension_and_quotient_syzygy.py
+python claims/p7/audit_p7_physical_leaf_annihilator_extension_and_quotient_syzygy.py
 python -m py_compile verify_p7_physical_leaf_annihilator_extension_and_quotient_syzygy.py audit_p7_physical_leaf_annihilator_extension_and_quotient_syzygy.py
 uv run --with ruff ruff check verify_p7_physical_leaf_annihilator_extension_and_quotient_syzygy.py audit_p7_physical_leaf_annihilator_extension_and_quotient_syzygy.py
 ```

@@ -167,8 +167,8 @@ a geometric case split with one rigid exceptional shape.
 Run:
 
 ```text
-python verify_five_row_projective_normal_forms.py
-python audit_five_row_projective_normal_forms.py
+python claims/arbitrary-order/verify_five_row_projective_normal_forms.py
+python claims/arbitrary-order/audit_five_row_projective_normal_forms.py
 ```
 
 The primary verifier exhausts the edge-colour constraints on `K_4`,
@@ -183,7 +183,7 @@ configuration in the stated stratum.
 Projective row directions do not record their nonzero magnitudes.
 Those magnitudes still enter the permanent cancellation equations.
 The later
-[`P5_COORDINATE_PLANE_PAIR_COVER.md`](P5_COORDINATE_PLANE_PAIR_COVER.md)
+[`P5_COORDINATE_PLANE_PAIR_COVER.md`](../../P5_COORDINATE_PLANE_PAIR_COVER.md)
 combines the local strata across all five modes and forces either a
 multiple-coordinate-row map or an axial `4+1` line map.  Those branches
 still require the mixed-row permanent identities; the theorem above is

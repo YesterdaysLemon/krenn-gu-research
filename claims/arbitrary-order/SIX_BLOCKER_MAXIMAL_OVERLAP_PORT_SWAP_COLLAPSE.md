@@ -137,7 +137,7 @@ the `three_missing_singletons` type.  Deleting port row `a` gives six full
 profiles.  Adding the port row makes every full six-row map rank three, as
 required by the `P_6` extraction.  Thus the left marking is precisely the
 common-port `1+1+1` row-deletion pattern studied in
-[`P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md`](P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md),
+[`P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md`](../p6/P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md),
 while the right marking is an all-full deletion of the same maps.
 
 This covector table comes from honest nonzero incident edge blocks.  Take all
@@ -182,8 +182,8 @@ of the full GHZ matching identity remains `UNKNOWN`.
 ## Replay
 
 ```text
-uv run --with sympy python verify_six_blocker_maximal_overlap_port_swap_collapse.py
-uv run --with sympy python audit_six_blocker_maximal_overlap_port_swap_collapse.py
+uv run --with sympy python claims/arbitrary-order/verify_six_blocker_maximal_overlap_port_swap_collapse.py
+uv run --with sympy python claims/arbitrary-order/audit_six_blocker_maximal_overlap_port_swap_collapse.py
 ```
 
 The primary verifier checks the simultaneous `S_6` row-swap invariance, the

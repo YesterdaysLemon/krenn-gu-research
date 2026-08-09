@@ -79,7 +79,7 @@ architectures retained at least one reciprocal-but-forbidden unit.
 Run:
 
 ```text
-python verify_reciprocal_port_orientation.py
+python claims/arbitrary-order/verify_reciprocal_port_orientation.py
 ```
 
 The corrected generators now:

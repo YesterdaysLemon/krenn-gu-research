@@ -368,8 +368,8 @@ search, or parameter sweep enters the proof.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_primitive_additive_gauge_rigidity_and_coordinate_boundary.py
-python audit_p7_primitive_additive_gauge_rigidity_and_coordinate_boundary.py
+uv run --with sympy python claims/p7/verify_p7_primitive_additive_gauge_rigidity_and_coordinate_boundary.py
+python claims/p7/audit_p7_primitive_additive_gauge_rigidity_and_coordinate_boundary.py
 python -m py_compile verify_p7_primitive_additive_gauge_rigidity_and_coordinate_boundary.py audit_p7_primitive_additive_gauge_rigidity_and_coordinate_boundary.py
 uv run --with ruff ruff check verify_p7_primitive_additive_gauge_rigidity_and_coordinate_boundary.py audit_p7_primitive_additive_gauge_rigidity_and_coordinate_boundary.py
 ```

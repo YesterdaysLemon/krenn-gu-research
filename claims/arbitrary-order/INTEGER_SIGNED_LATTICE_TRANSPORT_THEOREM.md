@@ -126,7 +126,7 @@ coefficients.
 Run:
 
 ```text
-python verify_integer_signed_lattice_transport.py
+python claims/arbitrary-order/verify_integer_signed_lattice_transport.py
 ```
 
 The verifier checks curated saturated, nonsaturated, dependent, and odd

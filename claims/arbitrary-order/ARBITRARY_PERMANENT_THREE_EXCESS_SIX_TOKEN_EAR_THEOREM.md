@@ -210,8 +210,8 @@ distributed consistently as `3`, `2+1`, or `1+1+1` on each shore.
 Run:
 
 ```text
-uv run --with sympy python verify_arbitrary_permanent_three_excess_six_token_ear_theorem.py
-python audit_arbitrary_permanent_three_excess_six_token_ear_theorem.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_three_excess_six_token_ear_theorem.py
+python claims/arbitrary-order/audit_arbitrary_permanent_three_excess_six_token_ear_theorem.py
 ```
 
 The primary verifier checks the affine ear, endpoint, degree, and shore

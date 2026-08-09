@@ -9,7 +9,9 @@ from pathlib import Path
 
 VERTICES = tuple(range(5))
 EDGES = tuple(itertools.combinations(VERTICES, 2))
-THEOREM = Path("FIVE_ROOT_NO_TORUS_CODIMENSION_TWO_THEOREM.md")
+THEOREM = Path(__file__).resolve().with_name(
+    "FIVE_ROOT_NO_TORUS_CODIMENSION_TWO_THEOREM.md"
+)
 
 
 def chow_product(

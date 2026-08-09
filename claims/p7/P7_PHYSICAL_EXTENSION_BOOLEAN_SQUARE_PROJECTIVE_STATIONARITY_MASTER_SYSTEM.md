@@ -203,8 +203,8 @@ global Krenn--Gu:                     UNRESOLVED.     (21)
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_physical_extension_boolean_square_projective_stationarity.py
-python audit_p7_physical_extension_boolean_square_projective_stationarity.py
+uv run --with sympy python claims/p7/verify_p7_physical_extension_boolean_square_projective_stationarity.py
+python claims/p7/audit_p7_physical_extension_boolean_square_projective_stationarity.py
 python -m py_compile verify_p7_physical_extension_boolean_square_projective_stationarity.py audit_p7_physical_extension_boolean_square_projective_stationarity.py
 uv run --with ruff ruff check verify_p7_physical_extension_boolean_square_projective_stationarity.py audit_p7_physical_extension_boolean_square_projective_stationarity.py
 ```

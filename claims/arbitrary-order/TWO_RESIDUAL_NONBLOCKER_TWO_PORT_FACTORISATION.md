@@ -177,8 +177,8 @@ global Krenn--Gu conjecture: UNRESOLVED.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_two_residual_nonblocker_two_port_factorisation.py
-uv run --with sympy python audit_two_residual_nonblocker_two_port_factorisation.py
+uv run --with sympy python claims/arbitrary-order/verify_two_residual_nonblocker_two_port_factorisation.py
+uv run --with sympy python claims/arbitrary-order/audit_two_residual_nonblocker_two_port_factorisation.py
 ```
 
 The primary checks the exact four-vertex matching recursion, the Laplace

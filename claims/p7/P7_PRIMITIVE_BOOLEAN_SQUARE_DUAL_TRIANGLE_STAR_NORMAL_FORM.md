@@ -250,8 +250,8 @@ symbolic identities.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_primitive_boolean_square_dual_triangle_star_normal_form.py
-python audit_p7_primitive_boolean_square_dual_triangle_star_normal_form.py
+uv run --with sympy python claims/p7/verify_p7_primitive_boolean_square_dual_triangle_star_normal_form.py
+python claims/p7/audit_p7_primitive_boolean_square_dual_triangle_star_normal_form.py
 python -m py_compile verify_p7_primitive_boolean_square_dual_triangle_star_normal_form.py audit_p7_primitive_boolean_square_dual_triangle_star_normal_form.py
 uv run --with ruff ruff check verify_p7_primitive_boolean_square_dual_triangle_star_normal_form.py audit_p7_primitive_boolean_square_dual_triangle_star_normal_form.py
 ```

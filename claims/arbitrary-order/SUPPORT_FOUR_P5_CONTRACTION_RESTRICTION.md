@@ -120,8 +120,8 @@ support-three case.
 Run:
 
 ```text
-python verify_support_four_p5_contraction_restriction.py
-python audit_support_four_p5_contraction_restriction.py
+python claims/arbitrary-order/verify_support_four_p5_contraction_restriction.py
+python claims/arbitrary-order/audit_support_four_p5_contraction_restriction.py
 ```
 
 The primary verifier reconstructs all `5!` source terms and all
@@ -148,4 +148,4 @@ diagonalize a three-dimensional space of contractions, whereas the
 off-diagonal contraction matrix of every point in the family above has
 rank four and only a one-dimensional kernel.  Thus no point of this
 positive family lifts to `q4_211`; see
-[`P5_Q4_211_SIMULTANEOUS_PENCIL_REDUCTION.md`](P5_Q4_211_SIMULTANEOUS_PENCIL_REDUCTION.md).
+[`P5_Q4_211_SIMULTANEOUS_PENCIL_REDUCTION.md`](../../P5_Q4_211_SIMULTANEOUS_PENCIL_REDUCTION.md).

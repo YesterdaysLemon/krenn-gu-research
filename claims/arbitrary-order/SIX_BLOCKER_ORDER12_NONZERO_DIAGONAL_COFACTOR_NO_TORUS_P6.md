@@ -198,8 +198,8 @@ The zero-cofactor core has `J_H=0`; the present core has
 ## Replay
 
 ```text
-python verify_six_blocker_order12_nonzero_diagonal_cofactor_no_torus_p6.py
-python audit_six_blocker_order12_nonzero_diagonal_cofactor_no_torus_p6.py
+python claims/arbitrary-order/verify_six_blocker_order12_nonzero_diagonal_cofactor_no_torus_p6.py
+python claims/arbitrary-order/audit_six_blocker_order12_nonzero_diagonal_cofactor_no_torus_p6.py
 ```
 
 The primary verifier uses exact rational arithmetic for (6)--(9), checks all

@@ -810,9 +810,9 @@ Six statements organize the current frontier.
    spans contains an invertible pairing, which cannot vanish between two
    three-planes in a five-space.  This closes the displayed model, not all
    possible `dim K=5` configurations.  See
-   [`P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md`](../P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md)
+   [`P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md`](../claims/p6/P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md)
    and
-   [`P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md`](../P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md).
+   [`P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md`](../claims/p6/P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md).
 
 The unresolved cell is:
 
@@ -1234,13 +1234,13 @@ residual set; its matching contribution is one linear port row, giving
 `P_(r+1) -> Delta_3`.  Thus four roots and five blockers give `P_5`, while
 five roots and six blockers give the genuinely separate problem
 `P_6 -> Delta_3`.  See
-[`FIVE_ROOT_TIGHT_BLOCKER_P5_EXTRACTION.md`](../FIVE_ROOT_TIGHT_BLOCKER_P5_EXTRACTION.md),
-[`ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION.md`](../ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION.md),
+[`FIVE_ROOT_TIGHT_BLOCKER_P5_EXTRACTION.md`](../claims/arbitrary-order/FIVE_ROOT_TIGHT_BLOCKER_P5_EXTRACTION.md),
+[`ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION.md`](../claims/arbitrary-order/ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION.md),
 and
-[`FIVE_ROOT_BOUNDARY_TRANSVERSAL_BLOCKER_CLASSIFICATION.md`](../FIVE_ROOT_BOUNDARY_TRANSVERSAL_BLOCKER_CLASSIFICATION.md).
+[`FIVE_ROOT_BOUNDARY_TRANSVERSAL_BLOCKER_CLASSIFICATION.md`](../claims/arbitrary-order/FIVE_ROOT_BOUNDARY_TRANSVERSAL_BLOCKER_CLASSIFICATION.md).
 Every higher surplus has the corresponding exact joint-port cofactor
 expansion in
-[`TWO_PORT_SEVEN_BLOCKER_REDUCTION.md`](../TWO_PORT_SEVEN_BLOCKER_REDUCTION.md),
+[`TWO_PORT_SEVEN_BLOCKER_REDUCTION.md`](../claims/arbitrary-order/TWO_PORT_SEVEN_BLOCKER_REDUCTION.md),
 whose primary replay now also checks surplus three and nonempty residual
 sets.
 
@@ -1251,7 +1251,7 @@ degree-108 boundary-resultant divisor has one simple boundary root and 23
 simple torus roots.  The affine statement includes zero blocks separately;
 each whole-zero-block locus has codimension nine.  This still does not show
 that witness blocks avoid the codimension-two exception:
-[`FIVE_ROOT_NO_TORUS_CODIMENSION_TWO_THEOREM.md`](../FIVE_ROOT_NO_TORUS_CODIMENSION_TWO_THEOREM.md).
+[`FIVE_ROOT_NO_TORUS_CODIMENSION_TWO_THEOREM.md`](../claims/arbitrary-order/FIVE_ROOT_NO_TORUS_CODIMENSION_TWO_THEOREM.md).
 
 The resulting exact five-root alternatives are now:
 
@@ -1281,11 +1281,11 @@ coordinate planes, and a remaining catalecticant minor has value `-4` or `4`.
 Every other cover is excluded by an invertible pairing in its gate span.
 Thus the displayed rank-five model fails the first nonlinear condition, but
 other rank-five configurations and the general `1+1+1` profile remain open:
-[`P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md`](../P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md),
-[`P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md`](../P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md),
-[`P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md`](../P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md),
-[`P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md`](../P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md), and
-[`P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md`](../P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md).
+[`P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md`](../claims/p6/P6_SIMULTANEOUS_KERNEL_AND_NATURAL_LIFT_OBSTRUCTIONS.md),
+[`P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md`](../claims/p6/P6_COMMON_PORT_111_FROBENIUS_REDUCTION.md),
+[`P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md`](../claims/p6/P6_COMMON_PORT_111_RANK_FIVE_CATALYTICANT_CHECKPOINT.md),
+[`P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md`](../claims/p6/P6_COMMON_PORT_111_UNIQUE_FOUR_GATE_OBSTRUCTION.md), and
+[`P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md`](../claims/p6/P6_COMMON_PORT_111_ALL_GATE_COVERS_OBSTRUCTION.md).
 
 The first exact high-overlap gluing tests now separate both exchanged-root
 coupling cases.  If two five-root/six-blocker configurations share four roots
@@ -1301,8 +1301,8 @@ This disproves a local covector-incidence implication; the model has no
 blocker--blocker edges and is not a global witness.  The useful residual is
 therefore five-blocker overlap, different residual ports, or a genuinely
 global perfect-matching identity:
-[`SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md`](../SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md) and
-[`SIX_BLOCKER_NONZERO_CROSS_PORT_FREEDOM.md`](../SIX_BLOCKER_NONZERO_CROSS_PORT_FREEDOM.md).
+[`SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md`](../claims/arbitrary-order/SIX_BLOCKER_MAXIMAL_OVERLAP_PORT_SWAP_COLLAPSE.md) and
+[`SIX_BLOCKER_NONZERO_CROSS_PORT_FREEDOM.md`](../claims/arbitrary-order/SIX_BLOCKER_NONZERO_CROSS_PORT_FREEDOM.md).
 
 The first such global identity is now exact at arbitrary even ambient order.
 The two maximal-overlap endpoint `P_6` restrictions are opposite corners of
@@ -1311,7 +1311,7 @@ four-root/two-port cofactor expansion, and each colour's GHZ coefficient
 array is a rank-one Segre cube, so every Boolean square minor vanishes.  The
 intermediate corners are companion cofactor tensors, not automatically `P_6`
 restrictions; eliminating them remains the open gluing problem:
-[`SIX_BLOCKER_MAXIMAL_OVERLAP_GHZ_HYPERCUBE.md`](../SIX_BLOCKER_MAXIMAL_OVERLAP_GHZ_HYPERCUBE.md).
+[`SIX_BLOCKER_MAXIMAL_OVERLAP_GHZ_HYPERCUBE.md`](../claims/arbitrary-order/SIX_BLOCKER_MAXIMAL_OVERLAP_GHZ_HYPERCUBE.md).
 
 At ambient order twelve, where there are no further residual vertices, the
 hypercube sharpens to a synchronized `P_6` curve.  The full six-blocker tensor
@@ -1370,8 +1370,8 @@ cannot exclude this branch.  Compatibility away from the fixed root/kernel
 slice or a genuinely global identity is required.  This is a proof-route
 no-go, not a full graph realization or counterexample; both the cofactor
 incidence and all-full-span permanent branch remain open:
-[`TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md`](../TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md) and
-[`TWO_RESIDUAL_COORDINATE_MONOMIAL_SLICE_UNIVERSALITY_NOGO.md`](../TWO_RESIDUAL_COORDINATE_MONOMIAL_SLICE_UNIVERSALITY_NOGO.md).
+[`TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md`](../claims/arbitrary-order/TWO_RESIDUAL_NONBLOCKER_TWO_PORT_FACTORISATION.md) and
+[`TWO_RESIDUAL_COORDINATE_MONOMIAL_SLICE_UNIVERSALITY_NOGO.md`](../claims/arbitrary-order/TWO_RESIDUAL_COORDINATE_MONOMIAL_SLICE_UNIVERSALITY_NOGO.md).
 The first off-slice obstruction is now replayable.  If every root--blocker
 edge in that realization has its rank-one left endpoint, while root--root
 and root--residual tangent companions vanish, differentiating at a root
@@ -1390,7 +1390,7 @@ two-dimensional diagonal quotient; equivalently, the companion layer must
 realize `V/<x_i> -> Diag/<Lambda>` as an isomorphism.  Those companion
 identities, not further frozen-slice rank tests, are the next arbitrary-order
 algebraic layer:
-[`ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md`](../ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md).
+[`ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md`](../claims/arbitrary-order/ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md).
 The first cross-root symmetry test is now closed negatively as a proof
 route.  For every `r>=3`, choose distinct projective classes on an `r`-cycle;
 the two incident classes frame the diagonal quotient at each root, and one
@@ -1399,7 +1399,7 @@ covectors while its transpose realizes the reverse edge.  Thus shared
 undirected edge blocks and shared formal cofactor classes are compatible
 with all first-jet quotient frames.  The construction does not realize those
 classes as complementary hafnians and does not check mixed second jets:
-[`ROOT_TANGENT_CYCLE_FRAME_SYMMETRY_REALIZATION.md`](../ROOT_TANGENT_CYCLE_FRAME_SYMMETRY_REALIZATION.md).
+[`ROOT_TANGENT_CYCLE_FRAME_SYMMETRY_REALIZATION.md`](../claims/arbitrary-order/ROOT_TANGENT_CYCLE_FRAME_SYMMETRY_REALIZATION.md).
 The minimal edge blocks used in that construction nevertheless fail the GHZ
 mixed second jet exactly.  For normalized roots `(1,1,1)` and shared class
 `(1,t_i)`, tangent directions `(0,1,t_i)` isolate the common cycle edge.  Its
@@ -1409,7 +1409,7 @@ extension cannot be repaired by the four-dimensional tangent--tangent
 freedom on that edge alone: it only rescales `(1,t_i)`, which is independent
 of `(1,t_i^2)` for `t_i!=0,1`.  It must use additional effective companions
 or a nonprojective root--blocker layer; neither is excluded here:
-[`ROOT_TANGENT_MINIMAL_CYCLE_SECOND_JET_OBSTRUCTION.md`](../ROOT_TANGENT_MINIMAL_CYCLE_SECOND_JET_OBSTRUCTION.md).
+[`ROOT_TANGENT_MINIMAL_CYCLE_SECOND_JET_OBSTRUCTION.md`](../claims/arbitrary-order/ROOT_TANGENT_MINIMAL_CYCLE_SECOND_JET_OBSTRUCTION.md).
 For arbitrary scalar tangent complements, the full quotient rank is now
 classified.  The coordinatewise map
 `ker(a) tensor ker(b) -> K^3/<(1,1,1)>` has rank one exactly when some
@@ -1523,7 +1523,7 @@ first real obstruction: 33 mixed coefficients remain nonzero.  The first is
 no cancellation is available in that coefficient.  This is a bounded
 proof-route no-go, not a `P_7 -> Delta_3` restriction or counterexample.
 Arbitrary Hall-satisfying mixed-word cancellation remains unknown:
-[`ROOT_M7_HALL_SATISFYING_TWO_PORT_PURE_P7_CONSTRUCTION.md`](../ROOT_M7_HALL_SATISFYING_TWO_PORT_PURE_P7_CONSTRUCTION.md).
+[`ROOT_M7_HALL_SATISFYING_TWO_PORT_PURE_P7_CONSTRUCTION.md`](../claims/arbitrary-order/ROOT_M7_HALL_SATISFYING_TWO_PORT_PURE_P7_CONSTRUCTION.md).
 That precise support is now excluded for every reweighting, not merely at
 the displayed integer point.  Making every nonzero root/port entry symbolic
 leaves the three pure coefficients and `C_0000102` as unique monomials with
@@ -1533,7 +1533,7 @@ incidence that creates a second matching for this word is `a_(1,0)`; with
 port support frozen, a root-only deformation needs at least two new
 incidences.  This closes the fixed support stratum but does not prove that
 either enlargement can cancel all mixed words:
-[`ROOT_M7_FIXED_SUPPORT_PURE_MIXED_MONOMIAL_SATURATION_OBSTRUCTION.md`](../ROOT_M7_FIXED_SUPPORT_PURE_MIXED_MONOMIAL_SATURATION_OBSTRUCTION.md).
+[`ROOT_M7_FIXED_SUPPORT_PURE_MIXED_MONOMIAL_SATURATION_OBSTRUCTION.md`](../claims/arbitrary-order/ROOT_M7_FIXED_SUPPORT_PURE_MIXED_MONOMIAL_SATURATION_OBSTRUCTION.md).
 Adding the sole one-edge escape `a_(1,0)=gamma` still cannot work.  The same
 port binomial `alpha_0*beta_1+beta_0*gamma` factors both `C_0` and
 `C_0000102`, so their saturated obstruction survives even though both now
@@ -1544,7 +1544,7 @@ two-incidence candidates do, split into ten crossed root swaps and twenty
 root--port exchanges.  Other unique words separately point to `b_(5,1)` and
 `a_(5,2)`.  These are filters for the next support enlargement, not a full
 `P_7` solution:
-[`ROOT_M7_ONE_EDGE_A10_SHARED_PURE_MIXED_FACTOR_OBSTRUCTION.md`](../ROOT_M7_ONE_EDGE_A10_SHARED_PURE_MIXED_FACTOR_OBSTRUCTION.md).
+[`ROOT_M7_ONE_EDGE_A10_SHARED_PURE_MIXED_FACTOR_OBSTRUCTION.md`](../claims/arbitrary-order/ROOT_M7_ONE_EDGE_A10_SHARED_PURE_MIXED_FACTOR_OBSTRUCTION.md).
 The complete minimal two-incidence shell is now closed too.  The stabilizer
 of the fixed coloured path and labelled port supports is trivial, leaving 30
 singleton orbits.  For every orbit, one exact mixed coefficient divides
@@ -1553,7 +1553,7 @@ singleton orbits.  For every orbit, one exact mixed coefficient divides
 unit ideal.  Of these supports, 18 preserve endpoint legality and still fail
 tensorially; the remaining 12 are independently endpoint-illegal.  This is
 a complete bounded shell classification, not an arbitrary-support theorem:
-[`ROOT_M7_THIRTY_TWO_INCIDENCE_SUPPORTS_PRINCIPAL_SATURATION_EXCLUSION.md`](../ROOT_M7_THIRTY_TWO_INCIDENCE_SUPPORTS_PRINCIPAL_SATURATION_EXCLUSION.md).
+[`ROOT_M7_THIRTY_TWO_INCIDENCE_SUPPORTS_PRINCIPAL_SATURATION_EXCLUSION.md`](../claims/arbitrary-order/ROOT_M7_THIRTY_TWO_INCIDENCE_SUPPORTS_PRINCIPAL_SATURATION_EXCLUSION.md).
 The transverse three-port pressure enlargement is excluded separately.
 Adding `a_(1,0)`, `b_(5,1)`, and `a_(5,2)` follows the one-edge directions
 of three independent mixed words, but the latter two do not occur in
@@ -1563,7 +1563,7 @@ This support contains zero of the previous 30 pair-shell supports, all three
 new incidences lie on odd zero-cofactor blockers, and an exact specialization
 retains pure coefficients `(2,1,1)` plus every rank/Hall condition.  Larger
 transverse enlargements remain open:
-[`ROOT_M7_THREE_PORT_PRESSURE_ENLARGEMENT_SHARED_FACTOR_OBSTRUCTION.md`](../ROOT_M7_THREE_PORT_PRESSURE_ENLARGEMENT_SHARED_FACTOR_OBSTRUCTION.md).
+[`ROOT_M7_THREE_PORT_PRESSURE_ENLARGEMENT_SHARED_FACTOR_OBSTRUCTION.md`](../claims/arbitrary-order/ROOT_M7_THREE_PORT_PRESSURE_ENLARGEMENT_SHARED_FACTOR_OBSTRUCTION.md).
 An exhaustive endpoint-legal hitting calculation sharpens this support
 frontier without claiming a universal lower bound.  Of 104 legal missing
 incidences, no singleton breaks all five currently listed principal
@@ -1573,14 +1573,14 @@ trivial.  This gives relative minimum two for that five-word family only.
 The unique relative survivor is still tensorially impossible because
 `C_0101122` divides `C0*C1*C2`, so its full mixed saturation is the unit
 ideal.  Larger supports and a certificate-complete lower bound remain open:
-[`ROOT_M7_ENDPOINT_LEGAL_CERTIFICATE_HITTING_MINIMUM_TWO_EXCLUSION.md`](../ROOT_M7_ENDPOINT_LEGAL_CERTIFICATE_HITTING_MINIMUM_TWO_EXCLUSION.md).
+[`ROOT_M7_ENDPOINT_LEGAL_CERTIFICATE_HITTING_MINIMUM_TWO_EXCLUSION.md`](../claims/arbitrary-order/ROOT_M7_ENDPOINT_LEGAL_CERTIFICATE_HITTING_MINIMUM_TWO_EXCLUSION.md).
 The one-incidence shell above that unique pair is completely closed.  There
 are 102 endpoint-legal third incidences: 101 preserve the principal
 `C_0101122` certificate, and the unique escape `a_5[2]` is excluded by the
 replacement divisibility `C_0101112 | C0*C1*C2`.  Exact polynomial division
 and an independent no-import audit leave zero survivors.  This is not an
 enumeration of the other three-incidence supports, which remain open:
-[`ROOT_M7_UNIQUE_PAIR_THIRD_INCIDENCE_SHELL_EXCLUSION.md`](../ROOT_M7_UNIQUE_PAIR_THIRD_INCIDENCE_SHELL_EXCLUSION.md).
+[`ROOT_M7_UNIQUE_PAIR_THIRD_INCIDENCE_SHELL_EXCLUSION.md`](../claims/arbitrary-order/ROOT_M7_UNIQUE_PAIR_THIRD_INCIDENCE_SHELL_EXCLUSION.md).
 The stronger complete triple enumeration is also closed.  Among all
 `binomial(104,3)=182,104` endpoint-legal supports, the six frozen words leave
 only nine relative survivors.  Every one satisfies the exact divisibility
@@ -1588,13 +1588,13 @@ only nine relative survivors.  Every one satisfies the exact divisibility
 primary and no-import audit independently reproduce the entire census.
 Four-or-more additions, arbitrary enlarged support, and arbitrary `P_7`
 remain open:
-[`ROOT_M7_ALL_ENDPOINT_LEGAL_THREE_INCIDENCE_SUPPORTS_EXCLUSION.md`](../ROOT_M7_ALL_ENDPOINT_LEGAL_THREE_INCIDENCE_SUPPORTS_EXCLUSION.md).
+[`ROOT_M7_ALL_ENDPOINT_LEGAL_THREE_INCIDENCE_SUPPORTS_EXCLUSION.md`](../claims/arbitrary-order/ROOT_M7_ALL_ENDPOINT_LEGAL_THREE_INCIDENCE_SUPPORTS_EXCLUSION.md).
 The immediate fourth shell above those nine relative triples is also closed.
 Its 908 distinct legal quadruples split into 898 retaining `C_2002000` and
 ten escapes; exact replacement certificates `C_0220212` and `C_0210220`
 exclude the escapes in counts eight and two.  The complete 4,598,126-support
 quadruple universe was not enumerated and remains unknown:
-[`ROOT_M7_RELATIVE_TRIPLE_FOURTH_INCIDENCE_SHELL_EXCLUSION.md`](../ROOT_M7_RELATIVE_TRIPLE_FOURTH_INCIDENCE_SHELL_EXCLUSION.md).
+[`ROOT_M7_RELATIVE_TRIPLE_FOURTH_INCIDENCE_SHELL_EXCLUSION.md`](../claims/arbitrary-order/ROOT_M7_RELATIVE_TRIPLE_FOURTH_INCIDENCE_SHELL_EXCLUSION.md).
 Nor can one obtain a contradiction from scalar principal-cofactor algebra
 alone.  For the scalar `2m`-vertex hafnian, the Jacobian of all principal
 two-vertex cofactors at a fixed perfect-matching point splits into one
@@ -1605,21 +1605,21 @@ entries of every edge block locally realizes arbitrary triples of diagonal
 cofactor arrays.  Such diagonal blocks generally leave mixed-colour matching
 coefficients, so the remaining obstruction must use their cancellation or
 higher compatibility:
-[`HAFNIAN_PRINCIPAL_COFACTOR_GRADIENT_DOMINANCE.md`](../HAFNIAN_PRINCIPAL_COFACTOR_GRADIENT_DOMINANCE.md).
+[`HAFNIAN_PRINCIPAL_COFACTOR_GRADIENT_DOMINANCE.md`](../claims/arbitrary-order/HAFNIAN_PRINCIPAL_COFACTOR_GRADIENT_DOMINANCE.md).
 All surviving
 projectively varying cores with torus-intersecting `J_H`, the effective
 factorization, and the rank-one synchronized curves remain open:
-[`SIX_BLOCKER_ORDER12_ISOTROPIC_P6_CURVE.md`](../SIX_BLOCKER_ORDER12_ISOTROPIC_P6_CURVE.md),
-[`SIX_BLOCKER_ORDER12_QUOTIENT_RANK_FRAME_CLASSIFICATION.md`](../SIX_BLOCKER_ORDER12_QUOTIENT_RANK_FRAME_CLASSIFICATION.md),
-[`SIX_BLOCKER_ORDER12_ZERO_QUOTIENT_COFACTOR_SYZYGY.md`](../SIX_BLOCKER_ORDER12_ZERO_QUOTIENT_COFACTOR_SYZYGY.md),
-[`SIX_BLOCKER_ORDER12_ZERO_QUOTIENT_CORE_NO_CONCISE_P6.md`](../SIX_BLOCKER_ORDER12_ZERO_QUOTIENT_CORE_NO_CONCISE_P6.md),
-[`SIX_BLOCKER_ORDER12_NONZERO_DIAGONAL_COFACTOR_NO_TORUS_P6.md`](../SIX_BLOCKER_ORDER12_NONZERO_DIAGONAL_COFACTOR_NO_TORUS_P6.md),
-[`SIX_BLOCKER_ORDER12_KERNEL_SUPPORT_COVER_NO_TORUS_P6.md`](../SIX_BLOCKER_ORDER12_KERNEL_SUPPORT_COVER_NO_TORUS_P6.md),
-[`SIX_BLOCKER_ORDER12_THREE_KERNEL_PURE_COFACTOR_COMPATIBILITY_OBSTRUCTION.md`](../SIX_BLOCKER_ORDER12_THREE_KERNEL_PURE_COFACTOR_COMPATIBILITY_OBSTRUCTION.md),
-[`FOUR_ROOT_SIX_BLOCKER_ARBITRARY_ORDER_KERNEL_SUPPORT_OBSTRUCTION.md`](../FOUR_ROOT_SIX_BLOCKER_ARBITRARY_ORDER_KERNEL_SUPPORT_OBSTRUCTION.md),
-[`SIX_BLOCKER_ARBITRARY_COFACTOR_PROJECTIVELY_CONSTANT_ROW_OBSTRUCTION.md`](../SIX_BLOCKER_ARBITRARY_COFACTOR_PROJECTIVELY_CONSTANT_ROW_OBSTRUCTION.md),
-[`P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md`](../P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md), and
-[`ARBITRARY_SURPLUS_COMMON_ROW_FULL_SPAN_OBSTRUCTION.md`](../ARBITRARY_SURPLUS_COMMON_ROW_FULL_SPAN_OBSTRUCTION.md).
+[`SIX_BLOCKER_ORDER12_ISOTROPIC_P6_CURVE.md`](../claims/arbitrary-order/SIX_BLOCKER_ORDER12_ISOTROPIC_P6_CURVE.md),
+[`SIX_BLOCKER_ORDER12_QUOTIENT_RANK_FRAME_CLASSIFICATION.md`](../claims/arbitrary-order/SIX_BLOCKER_ORDER12_QUOTIENT_RANK_FRAME_CLASSIFICATION.md),
+[`SIX_BLOCKER_ORDER12_ZERO_QUOTIENT_COFACTOR_SYZYGY.md`](../claims/arbitrary-order/SIX_BLOCKER_ORDER12_ZERO_QUOTIENT_COFACTOR_SYZYGY.md),
+[`SIX_BLOCKER_ORDER12_ZERO_QUOTIENT_CORE_NO_CONCISE_P6.md`](../claims/arbitrary-order/SIX_BLOCKER_ORDER12_ZERO_QUOTIENT_CORE_NO_CONCISE_P6.md),
+[`SIX_BLOCKER_ORDER12_NONZERO_DIAGONAL_COFACTOR_NO_TORUS_P6.md`](../claims/arbitrary-order/SIX_BLOCKER_ORDER12_NONZERO_DIAGONAL_COFACTOR_NO_TORUS_P6.md),
+[`SIX_BLOCKER_ORDER12_KERNEL_SUPPORT_COVER_NO_TORUS_P6.md`](../claims/arbitrary-order/SIX_BLOCKER_ORDER12_KERNEL_SUPPORT_COVER_NO_TORUS_P6.md),
+[`SIX_BLOCKER_ORDER12_THREE_KERNEL_PURE_COFACTOR_COMPATIBILITY_OBSTRUCTION.md`](../claims/arbitrary-order/SIX_BLOCKER_ORDER12_THREE_KERNEL_PURE_COFACTOR_COMPATIBILITY_OBSTRUCTION.md),
+[`FOUR_ROOT_SIX_BLOCKER_ARBITRARY_ORDER_KERNEL_SUPPORT_OBSTRUCTION.md`](../claims/arbitrary-order/FOUR_ROOT_SIX_BLOCKER_ARBITRARY_ORDER_KERNEL_SUPPORT_OBSTRUCTION.md),
+[`SIX_BLOCKER_ARBITRARY_COFACTOR_PROJECTIVELY_CONSTANT_ROW_OBSTRUCTION.md`](../claims/arbitrary-order/SIX_BLOCKER_ARBITRARY_COFACTOR_PROJECTIVELY_CONSTANT_ROW_OBSTRUCTION.md),
+[`P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md`](../claims/p6/P6_PROJECTIVELY_CONSTANT_SOURCE_ROW_OBSTRUCTION.md), and
+[`ARBITRARY_SURPLUS_COMMON_ROW_FULL_SPAN_OBSTRUCTION.md`](../claims/arbitrary-order/ARBITRARY_SURPLUS_COMMON_ROW_FULL_SPAN_OBSTRUCTION.md).
 
 Two independently replayed Astra method transfers now sit behind this
 frontier.  The first is an exact root-of-unity selector in a bipartite
@@ -1632,8 +1632,8 @@ the direct fixed-left promotion is impossible by the exact subrank-two theorem
 for `P_4`.  Composition with the existing Question-2 module, retention of
 additional live modes, herald removal, and a Krenn--Gu counterexample are all
 unproved:
-[`ROOT_OF_UNITY_BLOCK_PERMANENT_SELECTOR.md`](../ROOT_OF_UNITY_BLOCK_PERMANENT_SELECTOR.md) and
-[`ROOT_OF_UNITY_SELECTOR_SYMMETRIC_HAFNIAN_LIFT.md`](../ROOT_OF_UNITY_SELECTOR_SYMMETRIC_HAFNIAN_LIFT.md).
+[`ROOT_OF_UNITY_BLOCK_PERMANENT_SELECTOR.md`](../claims/arbitrary-order/ROOT_OF_UNITY_BLOCK_PERMANENT_SELECTOR.md) and
+[`ROOT_OF_UNITY_SELECTOR_SYMMETRIC_HAFNIAN_LIFT.md`](../claims/arbitrary-order/ROOT_OF_UNITY_SELECTOR_SYMMETRIC_HAFNIAN_LIFT.md).
 
 The second classifies the same six common-port deletion profiles already used
 by the active `P_6` theorem and enumerates their two-copy incidence quotients:
@@ -1647,7 +1647,7 @@ hypercube, but its companion corners remain unclassified.  The useful
 algebraic lift must therefore attack those companion cofactors, five shared
 blockers, or different residual ports.  Full graph realizability remains
 open:
-[`SIX_BLOCKER_ADMISSIBLE_QUOTIENT_CATALOGUE.md`](../SIX_BLOCKER_ADMISSIBLE_QUOTIENT_CATALOGUE.md).
+[`SIX_BLOCKER_ADMISSIBLE_QUOTIENT_CATALOGUE.md`](../claims/arbitrary-order/SIX_BLOCKER_ADMISSIBLE_QUOTIENT_CATALOGUE.md).
 
 An exploratory wind-down calculation suggests a sharper next symbolic task,
 but it has not been promoted to a replayable theorem.  On the dense
@@ -1677,7 +1677,7 @@ one coordinate boundary.  It therefore meets the torus, which would force
 the impossible restriction `P_4 -> Delta_3`.  Any hypothetical eight-vertex
 witness must consequently make all 70 induced four-root schemes singular or
 excess-dimensional:
-[`FOUR_ROOT_SMOOTH_TORUS_OBSTRUCTION.md`](../FOUR_ROOT_SMOOTH_TORUS_OBSTRUCTION.md).
+[`FOUR_ROOT_SMOOTH_TORUS_OBSTRUCTION.md`](../claims/arbitrary-order/FOUR_ROOT_SMOOTH_TORUS_OBSTRUCTION.md).
 
 ## Why these translations were useful
 
@@ -1926,18 +1926,18 @@ uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_p
 uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_k_zero_generic_d23_rank_obstruction.py
 uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_k_zero_generic_d23_rank_obstruction.py
 
-uv run --with sympy python verify_arbitrary_surplus_common_row_full_span_obstruction.py
-uv run --with sympy python audit_arbitrary_surplus_common_row_full_span_obstruction.py
-uv run --with sympy python verify_two_residual_nonblocker_two_port_factorisation.py
-uv run --with sympy python audit_two_residual_nonblocker_two_port_factorisation.py
-uv run --with sympy python verify_two_residual_coordinate_monomial_slice_universality_nogo.py
-uv run --with sympy python audit_two_residual_coordinate_monomial_slice_universality_nogo.py
-uv run --with sympy python verify_root_tangent_companion_necessity_for_coordinate_slice.py
-uv run --with sympy python audit_root_tangent_companion_necessity_for_coordinate_slice.py
-uv run --with sympy python verify_root_tangent_cycle_frame_symmetry_realization.py
-python audit_root_tangent_cycle_frame_symmetry_realization.py
-uv run --with sympy python verify_root_tangent_minimal_cycle_second_jet_obstruction.py
-python audit_root_tangent_minimal_cycle_second_jet_obstruction.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_surplus_common_row_full_span_obstruction.py
+uv run --with sympy python claims/arbitrary-order/audit_arbitrary_surplus_common_row_full_span_obstruction.py
+uv run --with sympy python claims/arbitrary-order/verify_two_residual_nonblocker_two_port_factorisation.py
+uv run --with sympy python claims/arbitrary-order/audit_two_residual_nonblocker_two_port_factorisation.py
+uv run --with sympy python claims/arbitrary-order/verify_two_residual_coordinate_monomial_slice_universality_nogo.py
+uv run --with sympy python claims/arbitrary-order/audit_two_residual_coordinate_monomial_slice_universality_nogo.py
+uv run --with sympy python claims/arbitrary-order/verify_root_tangent_companion_necessity_for_coordinate_slice.py
+uv run --with sympy python claims/arbitrary-order/audit_root_tangent_companion_necessity_for_coordinate_slice.py
+uv run --with sympy python claims/arbitrary-order/verify_root_tangent_cycle_frame_symmetry_realization.py
+python claims/arbitrary-order/audit_root_tangent_cycle_frame_symmetry_realization.py
+uv run --with sympy python claims/arbitrary-order/verify_root_tangent_minimal_cycle_second_jet_obstruction.py
+python claims/arbitrary-order/audit_root_tangent_minimal_cycle_second_jet_obstruction.py
 uv run --with sympy python verify_root_mixed_second_jet_quotient_rank_classification.py
 python audit_root_mixed_second_jet_quotient_rank_classification.py
 uv run --with sympy python verify_root_mixed_second_jet_resonance_clique_classification.py
@@ -1962,20 +1962,20 @@ uv run --with sympy python verify_root_arbitrary_two_endpoint_binary_cofactor_po
 python audit_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py
 uv run --with sympy python verify_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py
 python audit_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py
-uv run --with sympy python verify_root_m7_hall_satisfying_two_port_pure_p7_construction.py
-python audit_root_m7_hall_satisfying_two_port_pure_p7_construction.py
-uv run --with sympy python verify_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py
-python audit_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py
-uv run --with sympy python verify_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py
-python audit_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py
-uv run --with sympy python verify_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py
-python audit_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py
-uv run --with sympy python verify_root_m7_three_port_pressure_enlargement_shared_factor_obstruction.py
-python audit_root_m7_three_port_pressure_enlargement_shared_factor_obstruction.py
-uv run --with sympy python verify_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py
-uv run --with sympy python audit_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py
-uv run --with sympy python verify_hafnian_principal_cofactor_gradient_dominance.py
-python audit_hafnian_principal_cofactor_gradient_dominance.py
+uv run --with sympy python claims/arbitrary-order/verify_root_m7_hall_satisfying_two_port_pure_p7_construction.py
+python claims/arbitrary-order/audit_root_m7_hall_satisfying_two_port_pure_p7_construction.py
+uv run --with sympy python claims/arbitrary-order/verify_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py
+python claims/arbitrary-order/audit_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py
+uv run --with sympy python claims/arbitrary-order/verify_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py
+python claims/arbitrary-order/audit_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py
+uv run --with sympy python claims/arbitrary-order/verify_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py
+python claims/arbitrary-order/audit_root_m7_thirty_two_incidence_supports_principal_saturation_exclusion.py
+uv run --with sympy python claims/arbitrary-order/verify_root_m7_three_port_pressure_enlargement_shared_factor_obstruction.py
+python claims/arbitrary-order/audit_root_m7_three_port_pressure_enlargement_shared_factor_obstruction.py
+uv run --with sympy python claims/arbitrary-order/verify_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py
+uv run --with sympy python claims/arbitrary-order/audit_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py
+uv run --with sympy python claims/arbitrary-order/verify_hafnian_principal_cofactor_gradient_dominance.py
+python claims/arbitrary-order/audit_hafnian_principal_cofactor_gradient_dominance.py
 
 uv run --with sympy python claims/p5/h31/disjoint-secant/verify_p5_h31_disjoint_secant_component_generic_obstruction.py
 python claims/p5/h31/disjoint-secant/audit_p5_h31_disjoint_secant_component_generic_obstruction.py
@@ -1995,23 +1995,23 @@ python claims/p5/h31/common-singleton/audit_p5_h31_common_singleton_component_ge
 uv run --with sympy python claims/p5/h22/common-singleton/verify_p5_h22_common_singleton_component_generic_obstruction.py
 python claims/p5/h22/common-singleton/audit_p5_h22_common_singleton_component_generic_obstruction.py
 
-uv run --with sympy python verify_five_root_boundary_transversal_blocker_classification.py
-python audit_five_root_boundary_transversal_blocker_classification.py
+uv run --with sympy python claims/arbitrary-order/verify_five_root_boundary_transversal_blocker_classification.py
+python claims/arbitrary-order/audit_five_root_boundary_transversal_blocker_classification.py
 
-python verify_five_root_torus_resultant_dichotomy.py
-python audit_five_root_torus_resultant_dichotomy.py
+python claims/arbitrary-order/verify_five_root_torus_resultant_dichotomy.py
+python claims/arbitrary-order/audit_five_root_torus_resultant_dichotomy.py
 
-python verify_five_root_no_torus_codimension_two.py
-python audit_five_root_no_torus_codimension_two.py
+python claims/arbitrary-order/verify_five_root_no_torus_codimension_two.py
+python claims/arbitrary-order/audit_five_root_no_torus_codimension_two.py
 
-python verify_odd_residual_port_permanent_extraction.py
-python audit_odd_residual_port_permanent_extraction.py
+python claims/arbitrary-order/verify_odd_residual_port_permanent_extraction.py
+python claims/arbitrary-order/audit_odd_residual_port_permanent_extraction.py
 
-uv run --with sympy python verify_five_root_tight_blocker_p5_extraction.py
-python audit_five_root_tight_blocker_p5_extraction.py
+uv run --with sympy python claims/arbitrary-order/verify_five_root_tight_blocker_p5_extraction.py
+python claims/arbitrary-order/audit_five_root_tight_blocker_p5_extraction.py
 
-python verify_four_root_smooth_torus_obstruction.py
-python audit_four_root_smooth_torus_obstruction.py
+python claims/arbitrary-order/verify_four_root_smooth_torus_obstruction.py
+python claims/arbitrary-order/audit_four_root_smooth_torus_obstruction.py
 
 uv run --with sympy python claims/p4/classifications/triangle-211/triple-kernel-rank-one-triangle/verify_p4_triple_kernel_rank_one_triangle_classification.py
 python claims/p4/classifications/triangle-211/triple-kernel-rank-one-triangle/audit_p4_triple_kernel_rank_one_triangle_classification.py
@@ -2031,20 +2031,20 @@ uv run --with sympy python audit_p4_mixed_chain_transverse_component_inclusion.p
 uv run --with sympy python claims/p4/classifications/star/coincident-support-rank-one-star/verify_p4_coincident_support_rank_one_star_component.py
 python claims/p4/classifications/star/coincident-support-rank-one-star/audit_p4_coincident_support_rank_one_star_component.py
 
-python verify_p6_simultaneous_kernel_and_natural_lift.py
-python audit_p6_simultaneous_kernel_and_natural_lift.py
+python claims/p6/verify_p6_simultaneous_kernel_and_natural_lift.py
+python claims/p6/audit_p6_simultaneous_kernel_and_natural_lift.py
 
-python verify_p6_common_port_111_frobenius_reduction.py
-python audit_p6_common_port_111_frobenius_reduction.py
+python claims/p6/verify_p6_common_port_111_frobenius_reduction.py
+python claims/p6/audit_p6_common_port_111_frobenius_reduction.py
 
-uv run --with sympy python verify_p6_common_port_111_rank_five_catalecticant.py
-python audit_p6_common_port_111_rank_five_catalecticant.py
+uv run --with sympy python claims/p6/verify_p6_common_port_111_rank_five_catalecticant.py
+python claims/p6/audit_p6_common_port_111_rank_five_catalecticant.py
 
-uv run --with sympy python verify_p6_common_port_111_unique_four_gate_obstruction.py
-python audit_p6_common_port_111_unique_four_gate_obstruction.py
+uv run --with sympy python claims/p6/verify_p6_common_port_111_unique_four_gate_obstruction.py
+python claims/p6/audit_p6_common_port_111_unique_four_gate_obstruction.py
 
-uv run --with sympy python verify_p6_common_port_111_all_gate_covers_obstruction.py
-python audit_p6_common_port_111_all_gate_covers_obstruction.py
+uv run --with sympy python claims/p6/verify_p6_common_port_111_all_gate_covers_obstruction.py
+python claims/p6/audit_p6_common_port_111_all_gate_covers_obstruction.py
 
 uv run --with sympy python claims/p5/h31/coincident-support-rank-one-star/verify_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py
 uv run --with sympy python claims/p5/h31/coincident-support-rank-one-star/audit_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py
@@ -2299,64 +2299,64 @@ uv run --with sympy python audit_p5_component21_divisor_generic_fibre_obstructio
 uv run --with sympy python verify_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py
 uv run --with sympy python audit_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py
 
-python verify_two_port_seven_blocker_reduction.py
-python audit_two_port_seven_blocker_reduction.py
+python claims/arbitrary-order/verify_two_port_seven_blocker_reduction.py
+python claims/arbitrary-order/audit_two_port_seven_blocker_reduction.py
 
-uv run --with sympy python verify_root_of_unity_block_permanent_selector.py
-python audit_root_of_unity_block_permanent_selector.py
+uv run --with sympy python claims/arbitrary-order/verify_root_of_unity_block_permanent_selector.py
+python claims/arbitrary-order/audit_root_of_unity_block_permanent_selector.py
 
-uv run --with sympy python verify_root_of_unity_selector_symmetric_hafnian_lift.py
-uv run --with sympy python audit_root_of_unity_selector_symmetric_hafnian_lift.py
+uv run --with sympy python claims/arbitrary-order/verify_root_of_unity_selector_symmetric_hafnian_lift.py
+uv run --with sympy python claims/arbitrary-order/audit_root_of_unity_selector_symmetric_hafnian_lift.py
 
-python verify_six_blocker_admissible_quotient_catalogue.py
-python audit_six_blocker_admissible_quotient_catalogue.py
+python claims/arbitrary-order/verify_six_blocker_admissible_quotient_catalogue.py
+python claims/arbitrary-order/audit_six_blocker_admissible_quotient_catalogue.py
 
-uv run --with sympy python verify_six_blocker_maximal_overlap_port_swap_collapse.py
-uv run --with sympy python audit_six_blocker_maximal_overlap_port_swap_collapse.py
+uv run --with sympy python claims/arbitrary-order/verify_six_blocker_maximal_overlap_port_swap_collapse.py
+uv run --with sympy python claims/arbitrary-order/audit_six_blocker_maximal_overlap_port_swap_collapse.py
 
-uv run --with sympy python verify_six_blocker_nonzero_cross_port_freedom.py
-uv run --with sympy python audit_six_blocker_nonzero_cross_port_freedom.py
+uv run --with sympy python claims/arbitrary-order/verify_six_blocker_nonzero_cross_port_freedom.py
+uv run --with sympy python claims/arbitrary-order/audit_six_blocker_nonzero_cross_port_freedom.py
 
-python verify_six_blocker_maximal_overlap_ghz_hypercube.py
-python audit_six_blocker_maximal_overlap_ghz_hypercube.py
+python claims/arbitrary-order/verify_six_blocker_maximal_overlap_ghz_hypercube.py
+python claims/arbitrary-order/audit_six_blocker_maximal_overlap_ghz_hypercube.py
 
-uv run --with sympy python verify_six_blocker_order12_isotropic_p6_curve.py
-uv run --with sympy python audit_six_blocker_order12_isotropic_p6_curve.py
+uv run --with sympy python claims/arbitrary-order/verify_six_blocker_order12_isotropic_p6_curve.py
+uv run --with sympy python claims/arbitrary-order/audit_six_blocker_order12_isotropic_p6_curve.py
 
-uv run --with sympy python verify_six_blocker_order12_quotient_rank_frame_classification.py
-uv run --with sympy python audit_six_blocker_order12_quotient_rank_frame_classification.py
+uv run --with sympy python claims/arbitrary-order/verify_six_blocker_order12_quotient_rank_frame_classification.py
+uv run --with sympy python claims/arbitrary-order/audit_six_blocker_order12_quotient_rank_frame_classification.py
 
-uv run --with sympy python verify_six_blocker_order12_zero_quotient_cofactor_syzygy.py
-uv run --with sympy python audit_six_blocker_order12_zero_quotient_cofactor_syzygy.py
+uv run --with sympy python claims/arbitrary-order/verify_six_blocker_order12_zero_quotient_cofactor_syzygy.py
+uv run --with sympy python claims/arbitrary-order/audit_six_blocker_order12_zero_quotient_cofactor_syzygy.py
 
-uv run --with sympy python verify_six_blocker_order12_zero_quotient_core_no_concise_p6.py
-python audit_six_blocker_order12_zero_quotient_core_no_concise_p6.py
+uv run --with sympy python claims/arbitrary-order/verify_six_blocker_order12_zero_quotient_core_no_concise_p6.py
+python claims/arbitrary-order/audit_six_blocker_order12_zero_quotient_core_no_concise_p6.py
 
-uv run --with sympy python verify_p6_projectively_constant_source_row_obstruction.py
-python audit_p6_projectively_constant_source_row_obstruction.py
+uv run --with sympy python claims/p6/verify_p6_projectively_constant_source_row_obstruction.py
+python claims/p6/audit_p6_projectively_constant_source_row_obstruction.py
 
-python verify_six_blocker_order12_nonzero_diagonal_cofactor_no_torus_p6.py
-python audit_six_blocker_order12_nonzero_diagonal_cofactor_no_torus_p6.py
+python claims/arbitrary-order/verify_six_blocker_order12_nonzero_diagonal_cofactor_no_torus_p6.py
+python claims/arbitrary-order/audit_six_blocker_order12_nonzero_diagonal_cofactor_no_torus_p6.py
 
-uv run --with sympy python verify_six_blocker_order12_kernel_support_cover_no_torus_p6.py
-python audit_six_blocker_order12_kernel_support_cover_no_torus_p6.py
+uv run --with sympy python claims/arbitrary-order/verify_six_blocker_order12_kernel_support_cover_no_torus_p6.py
+python claims/arbitrary-order/audit_six_blocker_order12_kernel_support_cover_no_torus_p6.py
 
-uv run --with sympy python verify_fourth_order_permanent_subrank.py
-python audit_fourth_order_permanent_subrank.py
+uv run --with sympy python claims/arbitrary-order/verify_fourth_order_permanent_subrank.py
+python claims/arbitrary-order/audit_fourth_order_permanent_subrank.py
 
-uv run --with sympy python verify_six_blocker_order12_three_kernel_pure_cofactor_compatibility_obstruction.py
-python audit_six_blocker_order12_three_kernel_pure_cofactor_compatibility_obstruction.py
+uv run --with sympy python claims/arbitrary-order/verify_six_blocker_order12_three_kernel_pure_cofactor_compatibility_obstruction.py
+python claims/arbitrary-order/audit_six_blocker_order12_three_kernel_pure_cofactor_compatibility_obstruction.py
 
-python verify_four_root_six_blocker_arbitrary_order_kernel_support_obstruction.py
-python audit_four_root_six_blocker_arbitrary_order_kernel_support_obstruction.py
+python claims/arbitrary-order/verify_four_root_six_blocker_arbitrary_order_kernel_support_obstruction.py
+python claims/arbitrary-order/audit_four_root_six_blocker_arbitrary_order_kernel_support_obstruction.py
 
-uv run --with sympy python verify_six_blocker_arbitrary_cofactor_projectively_constant_row_obstruction.py
-python audit_six_blocker_arbitrary_cofactor_projectively_constant_row_obstruction.py
+uv run --with sympy python claims/arbitrary-order/verify_six_blocker_arbitrary_cofactor_projectively_constant_row_obstruction.py
+python claims/arbitrary-order/audit_six_blocker_arbitrary_cofactor_projectively_constant_row_obstruction.py
 
-uv run --with sympy python verify_arbitrary_surplus_common_row_full_span_obstruction.py
-python audit_arbitrary_surplus_common_row_full_span_obstruction.py
-uv run --with sympy python verify_two_residual_nonblocker_two_port_factorisation.py
-uv run --with sympy python audit_two_residual_nonblocker_two_port_factorisation.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_surplus_common_row_full_span_obstruction.py
+python claims/arbitrary-order/audit_arbitrary_surplus_common_row_full_span_obstruction.py
+uv run --with sympy python claims/arbitrary-order/verify_two_residual_nonblocker_two_port_factorisation.py
+uv run --with sympy python claims/arbitrary-order/audit_two_residual_nonblocker_two_port_factorisation.py
 
 ```
 

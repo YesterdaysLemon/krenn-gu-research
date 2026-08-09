@@ -537,8 +537,8 @@ global Krenn--Gu:                                         UNRESOLVED.       (32)
 Run from the repository root:
 
 ```powershell
-uv run --with sympy python verify_response_jet_principal_deletion_deck_and_root_parity_legality.py
-python audit_response_jet_principal_deletion_deck_and_root_parity_legality.py
+uv run --with sympy python claims/arbitrary-order/verify_response_jet_principal_deletion_deck_and_root_parity_legality.py
+python claims/arbitrary-order/audit_response_jet_principal_deletion_deck_and_root_parity_legality.py
 python -m py_compile verify_response_jet_principal_deletion_deck_and_root_parity_legality.py audit_response_jet_principal_deletion_deck_and_root_parity_legality.py
 uv run --with ruff ruff check verify_response_jet_principal_deletion_deck_and_root_parity_legality.py audit_response_jet_principal_deletion_deck_and_root_parity_legality.py
 ```
@@ -555,6 +555,6 @@ parameter tuples.
 Dependencies:
 
 - [`ARBITRARY_ORDER_HAFNIAN_EULER_HESSIAN_CHANNEL_UNMIXING_AND_SINGULAR_DISCRIMINANT.md`](ARBITRARY_ORDER_HAFNIAN_EULER_HESSIAN_CHANNEL_UNMIXING_AND_SINGULAR_DISCRIMINANT.md)
-- [`MIXED_ROOT_DELETION_FILTRATION_AND_HERALD_FREE_PAIR_NO_GO.md`](MIXED_ROOT_DELETION_FILTRATION_AND_HERALD_FREE_PAIR_NO_GO.md)
-- [`NONPROJECTIVE_ROOT_PAIR_FAN_SELECTOR_TOMOGRAPHY_THEOREM.md`](NONPROJECTIVE_ROOT_PAIR_FAN_SELECTOR_TOMOGRAPHY_THEOREM.md)
-- [`P6_FOUR_ROOT_FULL_H4_SENSOR_AND_TARGET_INCIDENCE_BOUNDARY.md`](P6_FOUR_ROOT_FULL_H4_SENSOR_AND_TARGET_INCIDENCE_BOUNDARY.md)
+- [`MIXED_ROOT_DELETION_FILTRATION_AND_HERALD_FREE_PAIR_NO_GO.md`](../../MIXED_ROOT_DELETION_FILTRATION_AND_HERALD_FREE_PAIR_NO_GO.md)
+- [`NONPROJECTIVE_ROOT_PAIR_FAN_SELECTOR_TOMOGRAPHY_THEOREM.md`](../../NONPROJECTIVE_ROOT_PAIR_FAN_SELECTOR_TOMOGRAPHY_THEOREM.md)
+- [`P6_FOUR_ROOT_FULL_H4_SENSOR_AND_TARGET_INCIDENCE_BOUNDARY.md`](../p6/P6_FOUR_ROOT_FULL_H4_SENSOR_AND_TARGET_INCIDENCE_BOUNDARY.md)

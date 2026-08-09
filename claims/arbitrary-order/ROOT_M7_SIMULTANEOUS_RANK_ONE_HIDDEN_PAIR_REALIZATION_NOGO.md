@@ -127,8 +127,8 @@ global graph.
 Run:
 
 ```text
-uv run --with sympy python verify_root_m7_simultaneous_rank_one_hidden_pair_realization_nogo.py
-python audit_root_m7_simultaneous_rank_one_hidden_pair_realization_nogo.py
+uv run --with sympy python claims/arbitrary-order/verify_root_m7_simultaneous_rank_one_hidden_pair_realization_nogo.py
+python claims/arbitrary-order/audit_root_m7_simultaneous_rank_one_hidden_pair_realization_nogo.py
 ```
 
 The primary verifier reconstructs all five four-root hafnians, expands the

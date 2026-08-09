@@ -247,8 +247,8 @@ This proves (1).
 Run:
 
 ```text
-python verify_support_three_p5_contraction_subrank.py
-python audit_support_three_p5_contraction_subrank.py
+python claims/arbitrary-order/verify_support_three_p5_contraction_subrank.py
+python claims/arbitrary-order/audit_support_three_p5_contraction_subrank.py
 ```
 
 The primary verifier checks the symbolic quadratic determinant, the

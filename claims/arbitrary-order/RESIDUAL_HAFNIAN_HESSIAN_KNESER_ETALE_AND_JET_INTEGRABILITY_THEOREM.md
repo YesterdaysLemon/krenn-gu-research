@@ -467,8 +467,8 @@ global Krenn--Gu:                                      UNRESOLVED.       (32)
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_residual_hafnian_hessian_kneser_etale_and_jet_integrability.py
-python audit_residual_hafnian_hessian_kneser_etale_and_jet_integrability.py
+uv run --with sympy python claims/arbitrary-order/verify_residual_hafnian_hessian_kneser_etale_and_jet_integrability.py
+python claims/arbitrary-order/audit_residual_hafnian_hessian_kneser_etale_and_jet_integrability.py
 python -m py_compile verify_residual_hafnian_hessian_kneser_etale_and_jet_integrability.py audit_residual_hafnian_hessian_kneser_etale_and_jet_integrability.py
 uv run --with ruff ruff check verify_residual_hafnian_hessian_kneser_etale_and_jet_integrability.py audit_residual_hafnian_hessian_kneser_etale_and_jet_integrability.py
 ```

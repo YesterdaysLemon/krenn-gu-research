@@ -199,8 +199,8 @@ symbolic target than asking only for a local straddling pair.
 Run:
 
 ```text
-uv run --with sympy python verify_arbitrary_permanent_equality_one_switch_cut_normal_form_theorem.py
-python audit_arbitrary_permanent_equality_one_switch_cut_normal_form_theorem.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_equality_one_switch_cut_normal_form_theorem.py
+python claims/arbitrary-order/audit_arbitrary_permanent_equality_one_switch_cut_normal_form_theorem.py
 ```
 
 The primary verifier checks the shared pure/mixed switch factor and exact

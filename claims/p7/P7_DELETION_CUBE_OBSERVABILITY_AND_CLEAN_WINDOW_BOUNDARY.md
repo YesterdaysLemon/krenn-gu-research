@@ -437,8 +437,8 @@ All six items remain **UNKNOWN/UNRESOLVED**.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_deletion_cube_observability_and_clean_window_boundary.py
-python audit_p7_deletion_cube_observability_and_clean_window_boundary.py
+uv run --with sympy python claims/p7/verify_p7_deletion_cube_observability_and_clean_window_boundary.py
+python claims/p7/audit_p7_deletion_cube_observability_and_clean_window_boundary.py
 uv run --with sympy --with ruff python -m ruff check verify_p7_deletion_cube_observability_and_clean_window_boundary.py audit_p7_deletion_cube_observability_and_clean_window_boundary.py
 python -m py_compile verify_p7_deletion_cube_observability_and_clean_window_boundary.py audit_p7_deletion_cube_observability_and_clean_window_boundary.py
 ```

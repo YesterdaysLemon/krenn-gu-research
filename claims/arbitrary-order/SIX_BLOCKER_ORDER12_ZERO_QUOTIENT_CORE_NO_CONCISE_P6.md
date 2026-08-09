@@ -170,8 +170,8 @@ local cofactor core has values `(1,0)`.
 ## Replay
 
 ```text
-uv run --with sympy python verify_six_blocker_order12_zero_quotient_core_no_concise_p6.py
-python audit_six_blocker_order12_zero_quotient_core_no_concise_p6.py
+uv run --with sympy python claims/arbitrary-order/verify_six_blocker_order12_zero_quotient_core_no_concise_p6.py
+python claims/arbitrary-order/audit_six_blocker_order12_zero_quotient_core_no_concise_p6.py
 ```
 
 The primary verifier performs exact sparse rational row reduction of the

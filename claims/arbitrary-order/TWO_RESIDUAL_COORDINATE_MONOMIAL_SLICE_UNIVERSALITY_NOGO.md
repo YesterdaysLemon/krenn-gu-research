@@ -195,15 +195,15 @@ local-to-global input; broad elimination of (9) alone cannot supply it.
 Replay the dependency first:
 
 ```powershell
-uv run --with sympy python verify_two_residual_nonblocker_two_port_factorisation.py
-uv run --with sympy python audit_two_residual_nonblocker_two_port_factorisation.py
+uv run --with sympy python claims/arbitrary-order/verify_two_residual_nonblocker_two_port_factorisation.py
+uv run --with sympy python claims/arbitrary-order/audit_two_residual_nonblocker_two_port_factorisation.py
 ```
 
 Then run:
 
 ```powershell
-uv run --with sympy python verify_two_residual_coordinate_monomial_slice_universality_nogo.py
-uv run --with sympy python audit_two_residual_coordinate_monomial_slice_universality_nogo.py
+uv run --with sympy python claims/arbitrary-order/verify_two_residual_coordinate_monomial_slice_universality_nogo.py
+uv run --with sympy python claims/arbitrary-order/audit_two_residual_coordinate_monomial_slice_universality_nogo.py
 ```
 
 The primary reconstructs (4)--(12) exactly, checks the surviving matching

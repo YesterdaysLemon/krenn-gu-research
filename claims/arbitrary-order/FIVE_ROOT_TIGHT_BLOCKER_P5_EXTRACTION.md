@@ -250,8 +250,8 @@ intersection is the remaining local-to-global problem.
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_five_root_tight_blocker_p5_extraction.py
-python audit_five_root_tight_blocker_p5_extraction.py
+uv run --with sympy python claims/arbitrary-order/verify_five_root_tight_blocker_p5_extraction.py
+python claims/arbitrary-order/audit_five_root_tight_blocker_p5_extraction.py
 ```
 
 The primary verifier reconstructs the matching-factor Cartesian product

@@ -17,7 +17,7 @@ two full-span port families `a,b`, and root-row matrices `H_u` such that:
 6. the three pure coefficients of `P_7(H;a;b)` are exactly `(1,1,1)`.
 
 Thus the Hall condition added by
-[`ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md`](ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md)
+[`ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md`](../../ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md)
 is genuinely attainable jointly with all presently required rank and top-
 cofactor data.  It is still far from sufficient: the first lexicographic
 mixed word
@@ -212,8 +212,8 @@ global Krenn-Gu conjecture:                     UNRESOLVED.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_root_m7_hall_satisfying_two_port_pure_p7_construction.py
-python audit_root_m7_hall_satisfying_two_port_pure_p7_construction.py
+uv run --with sympy python claims/arbitrary-order/verify_root_m7_hall_satisfying_two_port_pure_p7_construction.py
+python claims/arbitrary-order/audit_root_m7_hall_satisfying_two_port_pure_p7_construction.py
 uv run --with sympy --with ruff python -m ruff check verify_root_m7_hall_satisfying_two_port_pure_p7_construction.py audit_root_m7_hall_satisfying_two_port_pure_p7_construction.py
 python -m py_compile verify_root_m7_hall_satisfying_two_port_pure_p7_construction.py audit_root_m7_hall_satisfying_two_port_pure_p7_construction.py
 ```

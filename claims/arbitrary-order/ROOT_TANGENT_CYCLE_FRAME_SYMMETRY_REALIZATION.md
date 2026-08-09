@@ -125,8 +125,8 @@ global Krenn--Gu conjecture: UNRESOLVED.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_root_tangent_cycle_frame_symmetry_realization.py
-python audit_root_tangent_cycle_frame_symmetry_realization.py
+uv run --with sympy python claims/arbitrary-order/verify_root_tangent_cycle_frame_symmetry_realization.py
+python claims/arbitrary-order/audit_root_tangent_cycle_frame_symmetry_realization.py
 ```
 
 The primary checks the generic quotient-coordinate formulas symbolically

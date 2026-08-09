@@ -209,8 +209,8 @@ order, or matchgate-realizable basis is proved independently.
 Run:
 
 ```text
-uv run --with sympy python verify_arbitrary_permanent_three_excess_bosonic_plucker_defect_theorem.py
-python audit_arbitrary_permanent_three_excess_bosonic_plucker_defect_theorem.py
+uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_three_excess_bosonic_plucker_defect_theorem.py
+python claims/arbitrary-order/audit_arbitrary_permanent_three_excess_bosonic_plucker_defect_theorem.py
 ```
 
 The primary verifier expands (1) symbolically, checks (3)--(4) exactly in

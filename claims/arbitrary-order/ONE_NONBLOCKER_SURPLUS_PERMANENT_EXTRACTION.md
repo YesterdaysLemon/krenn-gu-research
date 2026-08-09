@@ -137,8 +137,8 @@ for that tensor is asserted here.
 ## Replay
 
 ```text
-python verify_one_nonblocker_surplus_permanent_extraction.py
-python audit_one_nonblocker_surplus_permanent_extraction.py
+python claims/arbitrary-order/verify_one_nonblocker_surplus_permanent_extraction.py
+python claims/arbitrary-order/audit_one_nonblocker_surplus_permanent_extraction.py
 ```
 
 The primary verifier enumerates the surviving matching class through

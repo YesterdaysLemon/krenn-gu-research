@@ -172,8 +172,8 @@ matching.
 Run:
 
 ```text
-python verify_four_regular_balanced_bridge_obstruction.py
-python audit_four_regular_balanced_bridge_obstruction.py
+python claims/arbitrary-order/verify_four_regular_balanced_bridge_obstruction.py
+python claims/arbitrary-order/audit_four_regular_balanced_bridge_obstruction.py
 ```
 
 The verifier independently reconstructs:

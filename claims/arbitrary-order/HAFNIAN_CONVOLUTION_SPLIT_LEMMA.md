@@ -141,8 +141,8 @@ arbitrary-order necessary condition for every remaining all-bridge case.
 Run:
 
 ```text
-python verify_hafnian_convolution_split.py
-python audit_hafnian_convolution_split.py
+python claims/arbitrary-order/verify_hafnian_convolution_split.py
+python claims/arbitrary-order/audit_hafnian_convolution_split.py
 ```
 
 The primary verifier expands every convolution term through order 12,

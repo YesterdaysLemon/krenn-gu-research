@@ -124,10 +124,10 @@ The bounded Route-F problem is now sharper:
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_root_of_unity_selector_symmetric_hafnian_lift.py
-python audit_root_of_unity_selector_symmetric_hafnian_lift.py
-python verify_fourth_order_permanent_subrank.py
-python audit_fourth_order_permanent_subrank.py
+uv run --with sympy python claims/arbitrary-order/verify_root_of_unity_selector_symmetric_hafnian_lift.py
+python claims/arbitrary-order/audit_root_of_unity_selector_symmetric_hafnian_lift.py
+python claims/arbitrary-order/verify_fourth_order_permanent_subrank.py
+python claims/arbitrary-order/audit_fourth_order_permanent_subrank.py
 ```
 
 The primary verifier constructs the symmetric adjacency and coloured edge

@@ -331,8 +331,8 @@ exclusion of every core alignment of these particular charts.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p7_221_common_terminal_block_scalar_hafnian_realizability.py
-python audit_p7_221_common_terminal_block_scalar_hafnian_realizability.py
+uv run --with sympy python claims/p7/verify_p7_221_common_terminal_block_scalar_hafnian_realizability.py
+python claims/p7/audit_p7_221_common_terminal_block_scalar_hafnian_realizability.py
 python -m py_compile verify_p7_221_common_terminal_block_scalar_hafnian_realizability.py audit_p7_221_common_terminal_block_scalar_hafnian_realizability.py
 uv run --with ruff ruff check verify_p7_221_common_terminal_block_scalar_hafnian_realizability.py audit_p7_221_common_terminal_block_scalar_hafnian_realizability.py
 ```

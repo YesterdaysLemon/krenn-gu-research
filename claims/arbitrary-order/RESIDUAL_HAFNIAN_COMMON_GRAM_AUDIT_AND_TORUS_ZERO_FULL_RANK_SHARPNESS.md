@@ -395,8 +395,8 @@ global Krenn--Gu conjecture:                           UNRESOLVED.
 Run from the repository root:
 
 ```powershell
-uv run --with sympy python verify_residual_hafnian_common_gram_audit_and_torus_zero_full_rank_sharpness.py
-python audit_residual_hafnian_common_gram_audit_and_torus_zero_full_rank_sharpness.py
+uv run --with sympy python claims/arbitrary-order/verify_residual_hafnian_common_gram_audit_and_torus_zero_full_rank_sharpness.py
+python claims/arbitrary-order/audit_residual_hafnian_common_gram_audit_and_torus_zero_full_rank_sharpness.py
 python -m py_compile verify_residual_hafnian_common_gram_audit_and_torus_zero_full_rank_sharpness.py audit_residual_hafnian_common_gram_audit_and_torus_zero_full_rank_sharpness.py
 uv run --with ruff ruff check verify_residual_hafnian_common_gram_audit_and_torus_zero_full_rank_sharpness.py audit_residual_hafnian_common_gram_audit_and_torus_zero_full_rank_sharpness.py
 ```

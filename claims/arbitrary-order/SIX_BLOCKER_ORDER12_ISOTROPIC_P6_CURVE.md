@@ -262,8 +262,8 @@ coming from two bilinear row pencils.
 ## Replay
 
 ```text
-uv run --with sympy python verify_six_blocker_order12_isotropic_p6_curve.py
-uv run --with sympy python audit_six_blocker_order12_isotropic_p6_curve.py
+uv run --with sympy python claims/arbitrary-order/verify_six_blocker_order12_isotropic_p6_curve.py
+uv run --with sympy python claims/arbitrary-order/audit_six_blocker_order12_isotropic_p6_curve.py
 ```
 
 The primary verifier checks the exact matching partition, the four-corner

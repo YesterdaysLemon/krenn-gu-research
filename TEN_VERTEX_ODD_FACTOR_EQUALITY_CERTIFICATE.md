@@ -18,7 +18,7 @@ or the global conjecture.
 
 The all-odd `C3+C7` and `C5+C5` cases are also consequences of the
 arbitrary-order analytic theorem in
-[`ODD_FULL_FACTOR_ONE_TERM_THEOREM.md`](ODD_FULL_FACTOR_ONE_TERM_THEOREM.md).
+[`ODD_FULL_FACTOR_ONE_TERM_THEOREM.md`](claims/arbitrary-order/ODD_FULL_FACTOR_ONE_TERM_THEOREM.md).
 The mixed odd/even `C3+C3+C4` case still needs the finite audit here.
 
 ## Immediate obstruction

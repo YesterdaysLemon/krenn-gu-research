@@ -175,8 +175,8 @@ lower bound of four, this proves (1).
 Run:
 
 ```text
-python verify_four_blocker_ideal_obstruction.py
-python audit_four_blocker_ideal_obstruction.py
+python claims/arbitrary-order/verify_four_blocker_ideal_obstruction.py
+python claims/arbitrary-order/audit_four_blocker_ideal_obstruction.py
 ```
 
 The primary verifier reconstructs the 12 labelled four-vertex patterns
