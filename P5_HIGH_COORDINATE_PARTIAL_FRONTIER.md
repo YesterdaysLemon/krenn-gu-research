@@ -694,8 +694,8 @@ projective line arrangement.  Every component either has a transverse
 injective one-marked map or reaches one deepest intersection where a
 forced mixed `1122` coefficient is nonzero:
 
-- [`P5_H31_SINGLE_GATE_P3_REDUCTION.md`](P5_H31_SINGLE_GATE_P3_REDUCTION.md)
-- [`P5_H31_SINGLE_GATE_RANK_TWO_M_EXCLUSION.md`](P5_H31_SINGLE_GATE_RANK_TWO_M_EXCLUSION.md)
+- [`P5_H31_SINGLE_GATE_P3_REDUCTION.md`](claims/p5/h31/single-gate-p3/P5_H31_SINGLE_GATE_P3_REDUCTION.md)
+- [`P5_H31_SINGLE_GATE_RANK_TWO_M_EXCLUSION.md`](claims/p5/h31/single-gate-rank-two-m-exclusion/P5_H31_SINGLE_GATE_RANK_TWO_M_EXCLUSION.md)
 
 If another pair drops rank on the common plane, it becomes a unique
 secondary gate.  The common-plane data is then a `P_3 -> Delta_2`
@@ -703,7 +703,7 @@ restriction.  Pair-image polarity leaves only a line/complementary-
 plane stratum and a two-coordinate-plane stratum; one-marked minors and
 their deepest mixed-colour coefficients exclude both:
 
-- [`P5_H31_SECONDARY_GATE_EXCLUSION.md`](P5_H31_SECONDARY_GATE_EXCLUSION.md)
+- [`P5_H31_SECONDARY_GATE_EXCLUSION.md`](claims/p5/h31/secondary-gate-exclusion/P5_H31_SECONDARY_GATE_EXCLUSION.md)
 
 Consequently every `H31` lift with a rank-one pair on the pure
 hyperplane is impossible.  The complete marked fibre of the known

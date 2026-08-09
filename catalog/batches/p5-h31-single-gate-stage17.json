@@ -1,0 +1,49 @@
+{
+  "batch_id": "p5-h31-single-gate-stage17",
+  "approved_by": "Codex (exact mapping reviewer under repository-owner standing delegation dated 2026-08-08)",
+  "approved_at": "2026-08-08",
+  "base_sha": "7873c2026423af32dea6055fdee557ceebfcbe20",
+  "manifest_sha256": "79a7b498cffcc338ede0ae0ba2528582a9a5eb1ceafa7920c2bda072005335bc",
+  "mapping_sha256": "7525f91818132db42c0104a366f873441118befe50c0ffcf9d676fe1c765c6a0",
+  "member_count": 9,
+  "moves": [
+    {
+      "old_path": "P5_H31_SECONDARY_GATE_EXCLUSION.md",
+      "new_path": "claims/p5/h31/secondary-gate-exclusion/P5_H31_SECONDARY_GATE_EXCLUSION.md"
+    },
+    {
+      "old_path": "P5_H31_SINGLE_GATE_P3_REDUCTION.md",
+      "new_path": "claims/p5/h31/single-gate-p3/P5_H31_SINGLE_GATE_P3_REDUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_SINGLE_GATE_RANK_TWO_M_EXCLUSION.md",
+      "new_path": "claims/p5/h31/single-gate-rank-two-m-exclusion/P5_H31_SINGLE_GATE_RANK_TWO_M_EXCLUSION.md"
+    },
+    {
+      "old_path": "audit_p5_h31_secondary_gate_exclusion.py",
+      "new_path": "claims/p5/h31/secondary-gate-exclusion/audit_p5_h31_secondary_gate_exclusion.py"
+    },
+    {
+      "old_path": "audit_p5_h31_single_gate_p3_reduction.py",
+      "new_path": "claims/p5/h31/single-gate-p3/audit_p5_h31_single_gate_p3_reduction.py"
+    },
+    {
+      "old_path": "audit_p5_h31_single_gate_rank_two_m_exclusion.py",
+      "new_path": "claims/p5/h31/single-gate-rank-two-m-exclusion/audit_p5_h31_single_gate_rank_two_m_exclusion.py"
+    },
+    {
+      "old_path": "verify_p5_h31_secondary_gate_exclusion.py",
+      "new_path": "claims/p5/h31/secondary-gate-exclusion/verify_p5_h31_secondary_gate_exclusion.py"
+    },
+    {
+      "old_path": "verify_p5_h31_single_gate_p3_reduction.py",
+      "new_path": "claims/p5/h31/single-gate-p3/verify_p5_h31_single_gate_p3_reduction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_single_gate_rank_two_m_exclusion.py",
+      "new_path": "claims/p5/h31/single-gate-rank-two-m-exclusion/verify_p5_h31_single_gate_rank_two_m_exclusion.py"
+    }
+  ],
+  "rationale": "Stage 17: migrate the complete nine-file H31 rank-one-gate obstruction forest after independent topology, evidence-semantics, and mechanical audits established that the exact reduction, rank-two-M exclusion, and complementary secondary-gate exclusion are one non-ambiguous proof-obligation unit while remaining three distinct claim packages.",
+  "notes": "Exact mapping reviewed by Codex under the repository-owner standing delegation dated 2026-08-08. Classifier confidence is proposal evidence only. Preserve the reduction-vs-obstruction distinction, each characteristic-zero theorem scope, shared modular-audit helper disclosure, all-rank-two and global open boundaries, zero theorem-ledger edits, and global Krenn-Gu UNRESOLVED."
+}

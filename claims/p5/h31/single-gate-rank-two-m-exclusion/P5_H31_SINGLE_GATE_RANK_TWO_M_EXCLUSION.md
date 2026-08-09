@@ -34,7 +34,7 @@ does not enumerate ambient local maps or Grassmannians.
 ## Binary normal form
 
 The exact reduction in
-[`P5_H31_SINGLE_GATE_P3_REDUCTION.md`](P5_H31_SINGLE_GATE_P3_REDUCTION.md)
+[`P5_H31_SINGLE_GATE_P3_REDUCTION.md`](../single-gate-p3/P5_H31_SINGLE_GATE_P3_REDUCTION.md)
 puts the gate at mode zero and gives
 
 ```text
@@ -176,8 +176,8 @@ therefore the whole stated branch.
 Run:
 
 ```text
-python verify_p5_h31_single_gate_rank_two_m_exclusion.py
-python audit_p5_h31_single_gate_rank_two_m_exclusion.py
+python claims/p5/h31/single-gate-rank-two-m-exclusion/verify_p5_h31_single_gate_rank_two_m_exclusion.py
+python claims/p5/h31/single-gate-rank-two-m-exclusion/audit_p5_h31_single_gate_rank_two_m_exclusion.py
 ```
 
 The primary verifier reconstructs the binary extension system, all

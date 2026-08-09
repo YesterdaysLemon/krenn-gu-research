@@ -6,7 +6,7 @@ This is an exact characteristic-zero reduction of the `H31` frontier.
 It is not by itself an exclusion theorem.  Its ternary continuation now
 excludes the entire rank-two-`M` branch:
 
-- [`P5_H31_SINGLE_GATE_RANK_TWO_M_EXCLUSION.md`](P5_H31_SINGLE_GATE_RANK_TWO_M_EXCLUSION.md)
+- [`P5_H31_SINGLE_GATE_RANK_TWO_M_EXCLUSION.md`](../single-gate-rank-two-m-exclusion/P5_H31_SINGLE_GATE_RANK_TWO_M_EXCLUSION.md)
 
 Suppose two source hyperplanes
 
@@ -37,7 +37,7 @@ one-dimensional projective strata.  The cited follow-up excludes their
 ternary lifts.  A separate pair-image polarity theorem excludes the
 case where one of the three remaining pairs drops rank on `M`:
 
-- [`P5_H31_SECONDARY_GATE_EXCLUSION.md`](P5_H31_SECONDARY_GATE_EXCLUSION.md)
+- [`P5_H31_SECONDARY_GATE_EXCLUSION.md`](../secondary-gate-exclusion/P5_H31_SECONDARY_GATE_EXCLUSION.md)
 
 The all-rank-two pure-`P_4` locus, the full `H31` branch,
 `P_5 -> Delta_3`, and the global conjecture remain unresolved.
@@ -78,7 +78,7 @@ pairs on `M` send `P_3` to a nonzero pure tensor.
 
 Assume those three pairs have rank two on `M`.  The exact classification
 in
-[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md)
+[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](../../../../P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md)
 puts one oriented-edge chart, after permuting and rescaling modes and
 source coordinates, into the form
 
@@ -231,8 +231,8 @@ kernels and one final mixed-colour obstruction.
 Run:
 
 ```text
-python verify_p5_h31_single_gate_p3_reduction.py
-python audit_p5_h31_single_gate_p3_reduction.py
+python claims/p5/h31/single-gate-p3/verify_p5_h31_single_gate_p3_reduction.py
+python claims/p5/h31/single-gate-p3/audit_p5_h31_single_gate_p3_reduction.py
 ```
 
 The primary verifier reconstructs the marked `P_3` tensor, all eight
