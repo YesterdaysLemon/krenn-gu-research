@@ -69,10 +69,10 @@ only and is never approval or review authority.
   authorized-review plus exact-frozen-batch terminology.  Historical stage
   reports and attributions remain unchanged.
 
-There is no schema change.  Existing batch files, reviewer attributions,
-approval-time manifest hashes, mappings, statuses, counts, collision reports,
-and execution provenance remain byte-for-byte unchanged outside the generated
-policy metadata.
+There is no schema change.  Existing batch files, reviewer attributions, and
+approval-time manifest hashes remain byte-for-byte unchanged.  Manifest
+mappings, statuses, counts, collision reports, and execution provenance are
+unchanged; only its generated policy metadata changed.
 
 ## Validation and non-effects
 
@@ -82,9 +82,22 @@ reported `2,015` classified moves: `353` moved, `249`
 collisions, double moves, or overlap cycles.  The generated manifest diff is
 limited to the policy metadata described above.
 
-The final candidate floor must confirm full hygiene, all migration-tool tests,
-all fourteen-vertex lattice tests, Python compilation, a migration-rewriter
-fixed point, a clean candidate tree, and exact-head CI.
+The modified inventory generator was also run end-to-end in a disposable
+worktree at substantive head
+`9fef3d58c8a84fc73bad268ae8cd72a4194f7fba`, against the original frozen
+commit `f6d2cc426c05d99fcff08ddb1c95f3f1481a373a`.  It completed in `183.162`
+seconds with zero broken links and emitted both authorized-review labels.
+The evolved current classifier would otherwise change the historical frozen
+payload from `2,015 / 348` classified/unclassified files to `2,014 / 349`;
+those unrelated classification changes were intentionally discarded.  The
+committed inventory snapshots retain their original counts, file set,
+classification payload, and ref, changing only the two policy labels.
+
+The candidate floor confirms full hygiene (`1,698` Python files, `802`
+Markdown files, `86/86` ledger hashes, and zero new root debt), all `152`
+migration-tool tests, all `14` fourteen-vertex lattice tests, Python
+compilation, a migration-rewriter fixed point, and a clean candidate tree.
+Exact-head CI remains a merge gate.
 
 Root debt remains `2,004` files.  This is the second consecutive
 zero-reduction stage: Stage 14 closed a correctness blocker, and this stage
