@@ -7,17 +7,11 @@ import itertools
 import json
 import shutil
 import subprocess
+import sys
 import time
+from pathlib import Path
 
 import sympy as sp
-
-from derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate import (
-    build_model,
-    project,
-)
-from verify_p5_h31_marked_basis_open_branch import one_marked_map
-import sys
-from pathlib import Path
 
 for _p in Path(__file__).resolve().parents:
     if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
@@ -28,7 +22,12 @@ from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
 REPO_ROOT, HERE = bootstrap(__file__)
 expose_claim_package(REPO_ROOT, "claims/p5/h31/split-center-mixed-star")
 
-from verify_p5_h31_split_center_mixed_star_component_generic_obstruction import (
+from derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate import (  # noqa: E402
+    build_model,
+    project,
+)
+from verify_p5_h31_marked_basis_open_branch import one_marked_map  # noqa: E402
+from verify_p5_h31_split_center_mixed_star_component_generic_obstruction import (  # noqa: E402
     rows,
     shifted,
 )

@@ -1688,6 +1688,22 @@ class EvidenceSemanticsContractTests(unittest.TestCase):
             "finite_d01_branch_b_reduction.py"))
         self.assertIn("not a generic-emptiness theorem", identities["note"])
 
+    def test_split_center_h22_scope_covers_full_weight_line(self):
+        root = pathlib.Path(__file__).resolve().parents[1]
+        ledger = json.loads((root / "catalog" / "theorem-ledger.json")
+                            .read_text(encoding="utf-8"))
+        entry = next(
+            e for e in ledger["entries"]
+            if e["name"] ==
+            "Generic weighted H22 fibre empty: split center mixed star")
+        scope = " ".join(entry["assumptions_and_excluded_divisors"])
+        self.assertIn("component function field C(k,s,t)", scope)
+        self.assertIn("finite [lambda:1]", scope)
+        self.assertIn("infinite [1:0]", scope)
+        self.assertIn("component-parameter divisor fibres", scope)
+        self.assertNotIn("slope r", scope)
+        self.assertNotIn("special slopes excluded", scope)
+
     def test_heterogeneous_candidate_collection_is_not_proof_active(self):
         root = pathlib.Path(__file__).resolve().parents[1]
         ledger = json.loads((root / "catalog" / "theorem-ledger.json")

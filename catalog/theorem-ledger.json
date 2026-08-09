@@ -1480,9 +1480,9 @@
       "document_sha256_16": "b9ccbac26df4b81f",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
-        "over the component function field (generic point)",
-        "denominator/slope divisors excluded, not proved",
-        "slope r transcendental; special slopes excluded"
+        "over the component function field C(k,s,t) (generic point)",
+        "all homogeneous weights covered in the finite [lambda:1] and infinite [1:0] charts",
+        "special component-parameter divisor fibres and projective component-boundary fibres excluded, not proved"
       ],
       "dependencies": [],
       "primary_verifier": "verify_p5_h22_split_center_mixed_star_component_generic_obstruction.py",
