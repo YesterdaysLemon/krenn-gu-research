@@ -81,7 +81,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "fd5671c400e6f815",
+      "document_sha256_16": "46a35f11a74486d5",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1476,8 +1476,8 @@
     },
     {
       "name": "Generic weighted H22 fibre empty: split center mixed star",
-      "document": "P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "b9ccbac26df4b81f",
+      "document": "claims/p5/h22/split-center-mixed-star/P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "9df9c62969e16c97",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field C(k,s,t) (generic point)",
@@ -1485,13 +1485,21 @@
         "special component-parameter divisor fibres and projective component-boundary fibres excluded, not proved"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h22_split_center_mixed_star_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h22/split-center-mixed-star/verify_p5_h22_split_center_mixed_star_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h22_split_center_mixed_star_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h22/split-center-mixed-star/audit_p5_h22_split_center_mixed_star_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes-hours (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h22/split-center-mixed-star",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h22_split_center_mixed_star_component_generic_obstruction.py",
+        "verify_p5_h22_split_center_mixed_star_component_generic_obstruction.py"
       ]
     },
     {
@@ -1611,7 +1619,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "fd5671c400e6f815",
+      "document_sha256_16": "46a35f11a74486d5",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -1740,7 +1748,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "fd5671c400e6f815",
+      "document_sha256_16": "46a35f11a74486d5",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],

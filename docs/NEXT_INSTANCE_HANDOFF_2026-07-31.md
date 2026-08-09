@@ -677,7 +677,7 @@ Six statements organize the current frontier.
    [`P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md`](../claims/p4/classifications/triangle-211/split-center-mixed-star-211/P4_SPLIT_CENTER_MIXED_STAR_211_COMPONENT.md),
    [`P4_MIXED_CENTER_STAR_211_COMPLETE_CLASSIFICATION.md`](../claims/p4/classifications/triangle-211/mixed-center-star-211-complete/P4_MIXED_CENTER_STAR_211_COMPLETE_CLASSIFICATION.md),
    [`P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h31/split-center-mixed-star/P5_H31_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
-   [`P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+   [`P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h22/split-center-mixed-star/P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
    Component twenty-five is the disjoint-binary unequal-endpoint two-inward
    star fivefold.  Its irreducible purity hypersurface and exact smooth
    incidence certificate and complete projective reverse support ledger are
@@ -2290,8 +2290,8 @@ uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_f
 uv run --with sympy python claims/p5/h31/split-center-mixed-star/verify_p5_h31_split_center_mixed_star_component_generic_obstruction.py
 uv run --with sympy python claims/p5/h31/split-center-mixed-star/audit_p5_h31_split_center_mixed_star_component_generic_obstruction.py
 
-uv run --with sympy python verify_p5_h22_split_center_mixed_star_component_generic_obstruction.py
-uv run --with sympy python audit_p5_h22_split_center_mixed_star_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h22/split-center-mixed-star/verify_p5_h22_split_center_mixed_star_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h22/split-center-mixed-star/audit_p5_h22_split_center_mixed_star_component_generic_obstruction.py
 
 uv run --with sympy python verify_p5_component21_divisor_generic_fibre_obstructions.py
 uv run --with sympy python audit_p5_component21_divisor_generic_fibre_obstructions.py

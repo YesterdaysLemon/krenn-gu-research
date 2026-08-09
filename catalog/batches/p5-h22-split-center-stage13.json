@@ -1,0 +1,25 @@
+{
+  "batch_id": "p5-h22-split-center-stage13",
+  "approved_by": "YesterdaysLemon (repository owner), exact chat approval: Approved exactly as listed",
+  "approved_at": "2026-08-08",
+  "base_sha": "8acb404de48871f5fbc8d3b852434e886c3c2049",
+  "manifest_sha256": "3d254459159bd136f4d2e9cc4c6d1fcbd75384c5548fa1059df4b1e7edbf40d3",
+  "mapping_sha256": "fd1d3e4163068b2e0e16f6e6161a52f822a4d02acd74bdd5e80e5bc6ba341154",
+  "member_count": 3,
+  "moves": [
+    {
+      "old_path": "P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/split-center-mixed-star/P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "audit_p5_h22_split_center_mixed_star_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/split-center-mixed-star/audit_p5_h22_split_center_mixed_star_component_generic_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h22_split_center_mixed_star_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/split-center-mixed-star/verify_p5_h22_split_center_mixed_star_component_generic_obstruction.py"
+    }
+  ],
+  "rationale": "Stage 13: migrate the coherent split-center mixed-star H22 claim package after the Stage 12 ownership audit and Stage 13 exact-commit dry run established its theorem, primary-verifier, and no-import exact-rational audit boundary. The generic theorem covers the full projective weight line; special component-parameter divisors and projective component-boundary fibres remain excluded. No helper, H31 sibling, special fibre, or other root artifact moves.",
+  "notes": "Exact mapping approved by the repository owner in chat with the words Approved exactly as listed. Three members only: theorem document, exact Singular-backed primary, and exact-rational no-import corroborating audit. This migration does not change mathematical status, scope, or the global UNRESOLVED status."
+}
