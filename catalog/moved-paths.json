@@ -18,16 +18,16 @@
   },
   "counts": {
     "total_classified_moves": 2015,
-    "moved": 377,
+    "moved": 386,
     "pilot": 0,
-    "proposed_high_confidence": 246,
-    "review_required": 1392,
+    "proposed_high_confidence": 243,
+    "review_required": 1386,
     "unclassified": 348,
     "root_files_before": 2363,
     "root_dirs_before": 3,
     "root_entries_before": 2366,
-    "projected_root_if_moved_only": 1995,
-    "projected_root_if_high_confidence_batches_executed": 1749,
+    "projected_root_if_moved_only": 1986,
+    "projected_root_if_high_confidence_batches_executed": 1743,
     "projected_root_if_all_classified_executed": 357,
     "projection_note": "unclassified files are not members of any move set, so every projection already leaves them at the root; do not add unclassified again",
     "collisions": 0,
@@ -11206,25 +11206,28 @@
       "old_path": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-active-binary-triangle",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-active-binary-triangle",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-h31-common-active-p-plus-q-stage18"
     },
     {
       "old_path": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-active-binary-triangle",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-active-binary-triangle",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-h31-common-active-p-plus-q-stage18"
     },
     {
       "old_path": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-active-binary-triangle",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-active-binary-triangle",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-h31-common-active-p-plus-q-stage18"
     },
     {
       "old_path": "audit_p5_h31_common_active_binary_triangle_component_generic_obstruction.py",
@@ -11262,25 +11265,28 @@
       "old_path": "audit_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py",
       "new_path": "claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py",
       "reason": "claim_script -> p5/h31/common-active-binary-triangle",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/h31/common-active-binary-triangle",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-h31-common-active-p-plus-q-stage18"
     },
     {
       "old_path": "audit_p5_h31_common_active_binary_triangle_p_plus_q_exceptional_lower_pair_obstruction.py",
       "new_path": "claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_p_plus_q_exceptional_lower_pair_obstruction.py",
       "reason": "claim_script -> p5/h31/common-active-binary-triangle",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/h31/common-active-binary-triangle",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-h31-common-active-p-plus-q-stage18"
     },
     {
       "old_path": "audit_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py",
       "new_path": "claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py",
       "reason": "claim_script -> p5/h31/common-active-binary-triangle",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/h31/common-active-binary-triangle",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-h31-common-active-p-plus-q-stage18"
     },
     {
       "old_path": "verify_p5_h31_common_active_binary_triangle_component_generic_obstruction.py",
@@ -11318,25 +11324,28 @@
       "old_path": "verify_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py",
       "new_path": "claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py",
       "reason": "claim_script -> p5/h31/common-active-binary-triangle",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/h31/common-active-binary-triangle",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-h31-common-active-p-plus-q-stage18"
     },
     {
       "old_path": "verify_p5_h31_common_active_binary_triangle_p_plus_q_exceptional_lower_pair_obstruction.py",
       "new_path": "claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_p_plus_q_exceptional_lower_pair_obstruction.py",
       "reason": "claim_script -> p5/h31/common-active-binary-triangle",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/h31/common-active-binary-triangle",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-h31-common-active-p-plus-q-stage18"
     },
     {
       "old_path": "verify_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py",
       "new_path": "claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py",
       "reason": "claim_script -> p5/h31/common-active-binary-triangle",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/h31/common-active-binary-triangle",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-h31-common-active-p-plus-q-stage18"
     },
     {
       "old_path": "P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",

@@ -7,21 +7,35 @@ import hashlib
 import json
 import shutil
 import subprocess
+import sys
 from datetime import UTC, datetime
 from pathlib import Path
 
 import sympy as sp
 
-from verify_p5_h31_marked_basis_open_branch import marked_extension, mixed_matrix
 
-ROOT = Path(__file__).resolve().parent
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+ROOT = REPO_ROOT
+
+from verify_p5_h31_marked_basis_open_branch import (  # noqa: E402
+    marked_extension,
+    mixed_matrix,
+)
+
 THEOREM = (
-    ROOT
+    HERE
     / "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md"
 )
-P4_BOUNDARY = ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
+P4_BOUNDARY = REPO_ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
 GENERIC_COMPONENT_14 = (
-    ROOT / "claims/p5/h31/full-support-tangent/P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md"
+    REPO_ROOT / "claims" / "p5" / "h31" / "full-support-tangent"
+    / "P5_H31_FULL_SUPPORT_TANGENT_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
 GENERIC_MINOR_ROWS = ((0, 1, 4, 7), (0, 4, 5, 7))
 FIXED_MINOR_ROWS = (0, 1, 2, 7)
@@ -344,7 +358,7 @@ def main() -> None:
                     GENERIC_COMPONENT_14.name: sha256(GENERIC_COMPONENT_14),
                 },
                 "method": "exact saturated projections and direct complete-kernel marked-minor reconstruction",
-                "command": "uv run --with sympy python verify_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py",
+                "command": "uv run --with sympy python claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py",
                 "outputs": {THEOREM.name: sha256(THEOREM)},
                 "limitations": "verified only for two diagonal-source-torus infinity endpoints; H22, other projective faces, arbitrary GL4, local-to-global, and global conjecture open",
                 "plane_geometry": geometry,

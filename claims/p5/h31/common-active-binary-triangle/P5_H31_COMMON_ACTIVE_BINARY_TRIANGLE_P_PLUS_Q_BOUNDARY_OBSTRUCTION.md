@@ -322,10 +322,10 @@ marked `H31` lift.
 
 ```text
 uv run --with sympy python \
-  verify_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
+  claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
 
 uv run --with sympy python \
-  audit_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
+  claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
 ```
 
 The primary verifier independently constructs the permanent incidence over

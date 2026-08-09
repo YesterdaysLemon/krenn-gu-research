@@ -3,11 +3,13 @@
 Most subdirectories are migrated component-level generic marked-`H31`
 claim packages: theorem document + primary verifier + an independent
 audit where one exists, moved together with preserved filenames.  There
-are two scoped exceptions.  The `embedded-p3/` package contains the
+are three scoped exceptions.  The `embedded-p3/` package contains the
 complete five-triple generic, boundary, and projective component-closure
 forest.  The three single-gate directories form one complete
 rank-one-gate obstruction forest, not a generic package or complete
-component closure.  Stage 9 used batch `p5-generic-obstructions-stage9`
+component closure.  The `common-active-binary-triangle/` package contains
+the complete three-triple diagonal `p+q=0` wall subforest, not the broader
+common-active component family.  Stage 9 used batch `p5-generic-obstructions-stage9`
 (mapping_sha256
 `68d20c08b987c2465395ec485647dc37c958d8400a8d05dede37559256a47f23`).
 Stage 10 used batch `p5-deferred-generics-stage10` (mapping_sha256
@@ -16,13 +18,16 @@ Stage 16 used batch `p5-h31-embedded-p3-stage16` (mapping_sha256
 `db3bf4cc6309334ffc2a9983456f8674d9df5f22c3f921c969bcc4af414d5fb7`).
 Stage 17 used batch `p5-h31-single-gate-stage17` (mapping_sha256
 `7525f91818132db42c0104a366f873441118befe50c0ffcf9d676fe1c765c6a0`).
+Stage 18 used batch `p5-h31-common-active-p-plus-q-stage18`
+(mapping_sha256
+`7595460669d3e45b4a5c12924f846d02e3dddf36385822a577b2826aebcb04d9`).
 
-Except for the `embedded-p3/` component-closure forest and the single-gate
-branch forest described below, every theorem in the generic-package table is
-a **generic/function-field** statement: the marked `H31` fibre is empty at
-the generic point of the named P4 component (or on a dense open subset).
-Those generic theorems do not close special divisors, projective boundaries,
-or the pointwise locus.
+Except for the `embedded-p3/` component-closure forest, the diagonal `p+q=0`
+wall subforest, and the single-gate branch forest described below, every
+theorem in the generic-package table is a **generic/function-field**
+statement: the marked `H31` fibre is empty at the generic point of the named
+P4 component (or on a dense open subset).  Those generic theorems do not
+close special divisors, projective boundaries, or the pointwise locus.
 
 | package | theorem | verifier | audit |
 |---|---|---|---|
@@ -66,6 +71,33 @@ Only the generic triple has a curated theorem-ledger entry, whose status
 remains `verified_generic`.  Each audit is modular corroboration and does
 not replace its theorem's characteristic-zero proof.
 
+## Common-active `p+q=0` wall subforest
+
+The three triples in `common-active-binary-triangle/` form the complete
+marked-`H31` subforest on the diagonal-source-torus `p+q=0` wall.  The
+whole-wall theorem consumes the exceptional-lower-pair and infinity-endpoint
+children together
+with the separately owned P4 arc exhaustion and the already-migrated
+embedded-P3 projective closure.
+
+| scope / role | document | verifier | audit |
+|---|---|---|---|
+| whole diagonal `p+q=0` wall | `P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md` | `verify_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py` | `audit_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py` |
+| component-15 exceptional `a=0,-1` lower-pair fibres | `P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md` | `verify_p5_h31_common_active_binary_triangle_p_plus_q_exceptional_lower_pair_obstruction.py` | `audit_p5_h31_common_active_binary_triangle_p_plus_q_exceptional_lower_pair_obstruction.py` |
+| two component-14 infinity-endpoint faces | `P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md` | `verify_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py` | `audit_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py` |
+
+All three results retain their exact characteristic-zero `VERIFIED` scopes.
+The whole-wall and lower-pair audits are no-primary-import reconstructions.
+The endpoint primary and audit share the root marked-basis matrix constructor,
+so their independence is only downstream of that shared layer.  None of the
+three documents has a curated theorem-ledger entry.
+
+This package does not close weighted `H22`, non-diagonal source changes,
+component placement or compactification, local-to-global gluing, or the
+global conjecture.  The other 12 common-active generic, normalized,
+special-divisor, and intrinsic-boundary files remain at the repository root
+as separately owned sibling obligations.
+
 ## Single-gate obstruction forest
 
 These three sibling packages form one complete **rank-one-gate** obstruction
@@ -106,6 +138,9 @@ and is not part of the characteristic-zero verification.
 - The single-gate reduction consumes the separately owned root
   `P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`; the two importing modular
   audits expose `single-gate-p3/` through the shared bootstrap helper.
+- The common-active `p+q=0` aggregate consumes the separately owned root
+  `P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md` and the migrated
+  `embedded-p3/` projective closure; neither dependency was re-moved.
 - Already-migrated P4 anchors (components and star/pair-geometry
   classifications under [`../../p4/`](../../p4/)) are referenced by
   link and by `expose_claim_package`; they were not re-moved.
@@ -116,10 +151,11 @@ and is not part of the characteristic-zero verification.
 
 ## Not migrated here
 
-The H31 diagonal-quadric **elliptic** and
-common-active-binary-triangle generic documents remain at the
-repository root with their boundary forests: their generic cores are
-not separable from descendant evidence at this granularity.  The
+The H31 diagonal-quadric **elliptic** documents remain at the repository root
+with their boundary forest.  The 12 common-active generic, special-divisor,
+normalized-affine, and intrinsic-boundary sibling files outside the migrated
+`p+q=0` wall subforest also remain at root; Stage 18 did not claim a complete
+common-active component closure.  The
 all-rank-two P4/H31 component and boundary forests also remain at root;
 the single-gate forest closes only their rank-one-gate branch.  The
 separate weighted-H22 embedded-P3 programme also remains at root; its

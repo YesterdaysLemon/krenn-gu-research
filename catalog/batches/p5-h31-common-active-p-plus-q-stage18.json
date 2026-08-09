@@ -1,0 +1,49 @@
+{
+  "batch_id": "p5-h31-common-active-p-plus-q-stage18",
+  "approved_by": "Codex (exact mapping reviewer under repository-owner standing delegation dated 2026-08-08)",
+  "approved_at": "2026-08-08",
+  "base_sha": "fb87d7c33bfa75e24bc521074dca78c7f546b776",
+  "manifest_sha256": "e11e8c3e329936375e95ad513c715fd31d8eb5b4375bee06bb3fe0c013a6894a",
+  "mapping_sha256": "7595460669d3e45b4a5c12924f846d02e3dddf36385822a577b2826aebcb04d9",
+  "member_count": 9,
+  "moves": [
+    {
+      "old_path": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "audit_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py",
+      "new_path": "claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h31_common_active_binary_triangle_p_plus_q_exceptional_lower_pair_obstruction.py",
+      "new_path": "claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_p_plus_q_exceptional_lower_pair_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py",
+      "new_path": "claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py",
+      "new_path": "claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_common_active_binary_triangle_p_plus_q_exceptional_lower_pair_obstruction.py",
+      "new_path": "claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_p_plus_q_exceptional_lower_pair_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py",
+      "new_path": "claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py"
+    }
+  ],
+  "rationale": "Stage 18: migrate the complete nine-file marked-H31 p+q=0 wall subforest after independent topology, evidence-semantics, and mechanical audits established that the whole-wall aggregate and its exceptional-lower-pair and infinity-endpoint children are one non-ambiguous proof-obligation unit while the broader common-active family remains separately owned.",
+  "notes": "Exact mapping reviewed by Codex under the repository-owner standing delegation dated 2026-08-08. Classifier confidence is proposal evidence only. Preserve the exact diagonal-source-torus wall scope, shared endpoint-construction disclosure, timed-out global-ideal non-evidence, generic and H22 sibling boundaries, zero selected-artifact ledger entries, and global Krenn-Gu UNRESOLVED."
+}

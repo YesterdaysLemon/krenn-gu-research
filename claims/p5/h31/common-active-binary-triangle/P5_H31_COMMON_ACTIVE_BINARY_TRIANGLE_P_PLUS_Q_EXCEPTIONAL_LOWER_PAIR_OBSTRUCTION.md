@@ -201,8 +201,8 @@ are not counterexamples obtained by specializing a `y!=0` kernel.
 Replay with
 
 ```text
-uv run --with sympy python verify_p5_h31_common_active_binary_triangle_p_plus_q_exceptional_lower_pair_obstruction.py
-uv run --with sympy python audit_p5_h31_common_active_binary_triangle_p_plus_q_exceptional_lower_pair_obstruction.py
+uv run --with sympy python claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_p_plus_q_exceptional_lower_pair_obstruction.py
+uv run --with sympy python claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_p_plus_q_exceptional_lower_pair_obstruction.py
 ```
 
 The primary reconstructs all matrices from the standard marked-basis helper,

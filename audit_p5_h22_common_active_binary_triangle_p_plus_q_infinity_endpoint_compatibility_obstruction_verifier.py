@@ -28,6 +28,10 @@ CONSTRUCTION = (
 P4_BOUNDARY = ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
 H31_ENDPOINT = (
     ROOT
+    / "claims"
+    / "p5"
+    / "h31"
+    / "common-active-binary-triangle"
     / "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md"
 )
 

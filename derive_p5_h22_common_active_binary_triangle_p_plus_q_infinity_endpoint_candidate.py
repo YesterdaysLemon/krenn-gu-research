@@ -21,14 +21,26 @@ NOTE = (
 P4_BOUNDARY = ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
 H31_ENDPOINT = (
     ROOT
+    / "claims"
+    / "p5"
+    / "h31"
+    / "common-active-binary-triangle"
     / "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md"
 )
 H31_PRIMARY = (
     ROOT
+    / "claims"
+    / "p5"
+    / "h31"
+    / "common-active-binary-triangle"
     / "verify_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py"
 )
 H31_AUDIT = (
     ROOT
+    / "claims"
+    / "p5"
+    / "h31"
+    / "common-active-binary-triangle"
     / "audit_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py"
 )
 ENDPOINT_AUDIT_REPORT = (
