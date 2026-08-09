@@ -6,33 +6,49 @@ from __future__ import annotations
 import hashlib
 import json
 import subprocess
+import sys
 import time
 from dataclasses import dataclass
 from pathlib import Path
 
 import sympy as sp
 
-from derive_p5_h31_toric_marked_fibre_elimination import (
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+from derive_p5_h31_toric_marked_fibre_elimination import (  # noqa: E402
     marked_rows,
     singular,
     singular_program,
     toric_cases,
 )
-from p5_high_coordinate_tree_chart_cegar import (
+from p5_high_coordinate_tree_chart_cegar import (  # noqa: E402
     singular_command_with_timeout,
 )
-from verify_p5_h31_marked_basis_open_branch import (
+from verify_p5_h31_marked_basis_open_branch import (  # noqa: E402
     marked_extension,
     mixed_matrix,
     one_marked_map,
 )
 
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md"
-TORIC = ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/boundaries/P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md"
-SEGRE = ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md"
-GENERATOR = ROOT / "derive_p5_h31_toric_marked_fibre_elimination.py"
+THEOREM = HERE / "P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md"
+TORIC = (
+    REPO_ROOT / "claims" / "p4" / "classifications" / "pair-geometry"
+    / "pure-rank-two" / "boundaries"
+    / "P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md"
+)
+SEGRE = (
+    REPO_ROOT / "claims" / "p4" / "classifications" / "pair-geometry"
+    / "pure-rank-two" / "P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md"
+)
+GENERATOR = REPO_ROOT / "derive_p5_h31_toric_marked_fibre_elimination.py"
 
 r, s = sp.symbols("r s")
 t0, t1, t2, t3 = sp.symbols("t0:4")

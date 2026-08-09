@@ -26,7 +26,7 @@ complete marked-fibre theorem now excludes all 21:
 
 The full marked fibre over the internal `E=0` divisor has since been
 excluded in
-[`P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md`](../../../../../../P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md).
+[`P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md`](../../../../../p5/h31/internal-e0-marked-fibre/P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md).
 A second pure-compression component has since been proved in
 [`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](../../../../components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md);
 it is outside the toric geometry of this theorem.  Its generic marked
@@ -93,7 +93,7 @@ The first row, `rho=(-1,0,0)`, is `E=0`.  It lies inside the preferred
 Grassmann chart.  Its canonical marked section is excluded by
 [`P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md`](../../../../../../P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md);
 its full marked-basis fibre has since been excluded in
-[`P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md`](../../../../../../P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md).
+[`P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md`](../../../../../p5/h31/internal-e0-marked-fibre/P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md).
 
 ## Gate criterion
 
