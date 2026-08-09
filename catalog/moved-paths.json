@@ -11520,6 +11520,14 @@
       "confidence": "medium"
     },
     {
+      "old_path": "derive_p5_h31_chart_boundary_marked_fibre_elimination.py",
+      "new_path": "claims/p5/h31/component-chart-boundary-marked-fibre/derive_p5_h31_chart_boundary_marked_fibre_elimination.py",
+      "reason": "claim_script -> p5/h31/component-chart-boundary-marked-fibre",
+      "status": "review_required",
+      "claim_family": "p5/h31/component-chart-boundary-marked-fibre",
+      "confidence": "medium"
+    },
+    {
       "old_path": "verify_p5_h31_component_chart_boundary_marked_fibre.py",
       "new_path": "claims/p5/h31/component-chart-boundary-marked-fibre/verify_p5_h31_component_chart_boundary_marked_fibre.py",
       "reason": "claim_script -> p5/h31/component-chart-boundary-marked-fibre",
@@ -15549,14 +15557,6 @@
       "confidence": "medium"
     },
     {
-      "old_path": "derive_p5_h31_chart_boundary_marked_fibre_elimination.py",
-      "new_path": "tools/explore/derive_p5_h31_chart_boundary_marked_fibre_elimination.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
       "old_path": "derive_p5_h31_fibre_infinity_marked_fibre_elimination.py",
       "new_path": "tools/explore/derive_p5_h31_fibre_infinity_marked_fibre_elimination.py",
       "reason": "tool_script -> None",
@@ -16558,8 +16558,8 @@
     }
   ],
   "destination_subtree_counts": {
-    "claims": 1761,
-    "tools": 210,
+    "claims": 1762,
+    "tools": 209,
     "src": 35,
     "docs": 8,
     "catalog": 1
