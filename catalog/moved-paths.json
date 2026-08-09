@@ -16,15 +16,15 @@
   },
   "counts": {
     "total_classified_moves": 2015,
-    "moved": 350,
+    "moved": 353,
     "pilot": 0,
-    "proposed_high_confidence": 252,
+    "proposed_high_confidence": 249,
     "review_required": 1413,
     "unclassified": 348,
     "root_files_before": 2363,
     "root_dirs_before": 3,
     "root_entries_before": 2366,
-    "projected_root_if_moved_only": 2022,
+    "projected_root_if_moved_only": 2019,
     "projected_root_if_high_confidence_batches_executed": 1770,
     "projected_root_if_all_classified_executed": 357,
     "projection_note": "unclassified files are not members of any move set, so every projection already leaves them at the root; do not add unclassified again",
@@ -9889,25 +9889,28 @@
       "old_path": "P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h22/split-center-mixed-star/P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h22/split-center-mixed-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/split-center-mixed-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-h22-split-center-stage13"
     },
     {
       "old_path": "audit_p5_h22_split_center_mixed_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/split-center-mixed-star/audit_p5_h22_split_center_mixed_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/split-center-mixed-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/split-center-mixed-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-h22-split-center-stage13"
     },
     {
       "old_path": "verify_p5_h22_split_center_mixed_star_component_generic_obstruction.py",
       "new_path": "claims/p5/h22/split-center-mixed-star/verify_p5_h22_split_center_mixed_star_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h22/split-center-mixed-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/split-center-mixed-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-h22-split-center-stage13"
     },
     {
       "old_path": "P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md",
