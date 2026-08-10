@@ -17,18 +17,18 @@
     "batch_directory": "catalog/batches"
   },
   "counts": {
-    "total_classified_moves": 2124,
-    "moved": 1375,
+    "total_classified_moves": 2226,
+    "moved": 1477,
     "pilot": 0,
     "proposed_high_confidence": 45,
     "review_required": 704,
-    "unclassified": 239,
+    "unclassified": 137,
     "root_files_before": 2363,
     "root_dirs_before": 3,
     "root_entries_before": 2366,
-    "projected_root_if_moved_only": 997,
-    "projected_root_if_high_confidence_batches_executed": 952,
-    "projected_root_if_all_classified_executed": 248,
+    "projected_root_if_moved_only": 895,
+    "projected_root_if_high_confidence_batches_executed": 850,
+    "projected_root_if_all_classified_executed": 146,
     "projection_note": "unclassified files are not members of any move set, so every projection already leaves them at the root; do not add unclassified again",
     "collisions": 0,
     "double_moves": 0,
@@ -426,6 +426,15 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
+      "old_path": "BLOCK_SQUARE_ZERO_WICK_COMPLETION_THEOREM.md",
+      "new_path": "claims/arbitrary-order/BLOCK_SQUARE_ZERO_WICK_COMPLETION_THEOREM.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
       "old_path": "BOSONIC_HAFNIAN_SPINOR_NO_TRANSFER.md",
       "new_path": "claims/arbitrary-order/BOSONIC_HAFNIAN_SPINOR_NO_TRANSFER.md",
       "reason": "claim_document -> arbitrary-order",
@@ -473,6 +482,15 @@
       "status": "review_required",
       "claim_family": "arbitrary-order",
       "confidence": "low"
+    },
+    {
+      "old_path": "CROSS_ROOT_COORDINATE_MONOMIAL_CHART_HOLONOMY_AND_NINE_CHART_NO_GO.md",
+      "new_path": "claims/arbitrary-order/CROSS_ROOT_COORDINATE_MONOMIAL_CHART_HOLONOMY_AND_NINE_CHART_NO_GO.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
     },
     {
       "old_path": "DOUBLE_STAR_ANNIHILATION_LEMMA.md",
@@ -707,6 +725,33 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
+      "old_path": "LEGAL_FIVE_PORT_PENTAD_WINDOW_ROOT_BUDGET_AND_NULL_POLAR_SPARSITY_THEOREM.md",
+      "new_path": "claims/arbitrary-order/LEGAL_FIVE_PORT_PENTAD_WINDOW_ROOT_BUDGET_AND_NULL_POLAR_SPARSITY_THEOREM.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "LOWER_MIXED_ROOT_JET_DELETION_LABEL_TOMOGRAPHY_AND_SQUAREFREE_GAUGE_THEOREM.md",
+      "new_path": "claims/arbitrary-order/LOWER_MIXED_ROOT_JET_DELETION_LABEL_TOMOGRAPHY_AND_SQUAREFREE_GAUGE_THEOREM.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "MAJORITY_SUBSET_INTERNAL_EDGE_IDEAL_HIERARCHY.md",
+      "new_path": "claims/arbitrary-order/MAJORITY_SUBSET_INTERNAL_EDGE_IDEAL_HIERARCHY.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
       "old_path": "MATCHING_FORK_TRANSPORT_LEMMA.md",
       "new_path": "claims/arbitrary-order/MATCHING_FORK_TRANSPORT_LEMMA.md",
       "reason": "claim_document -> arbitrary-order",
@@ -724,6 +769,15 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
+      "old_path": "MIXED_ROOT_DELETION_FILTRATION_AND_HERALD_FREE_PAIR_NO_GO.md",
+      "new_path": "claims/arbitrary-order/MIXED_ROOT_DELETION_FILTRATION_AND_HERALD_FREE_PAIR_NO_GO.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
       "old_path": "MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md",
       "new_path": "claims/arbitrary-order/MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md",
       "reason": "claim_document -> arbitrary-order",
@@ -731,6 +785,15 @@
       "claim_family": "arbitrary-order",
       "confidence": "low",
       "executed_batch": "high-order-symbolic-forest-stage27"
+    },
+    {
+      "old_path": "NONPROJECTIVE_ROOT_PAIR_FAN_SELECTOR_TOMOGRAPHY_THEOREM.md",
+      "new_path": "claims/arbitrary-order/NONPROJECTIVE_ROOT_PAIR_FAN_SELECTOR_TOMOGRAPHY_THEOREM.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
     },
     {
       "old_path": "ODD_FULL_FACTOR_ONE_TERM_THEOREM.md",
@@ -785,6 +848,24 @@
       "confidence": "low"
     },
     {
+      "old_path": "PINNED_HAFNIAN_STAR_SYSTEM_AND_RATIONAL_EDGE_TOMOGRAPHY_THEOREM.md",
+      "new_path": "claims/arbitrary-order/PINNED_HAFNIAN_STAR_SYSTEM_AND_RATIONAL_EDGE_TOMOGRAPHY_THEOREM.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "PRINCIPAL_FOUR_HAFNIAN_GENERIC_EDGE_TOMOGRAPHY_AND_P7_SINGULAR_FIBRE_BOUNDARY.md",
+      "new_path": "claims/arbitrary-order/PRINCIPAL_FOUR_HAFNIAN_GENERIC_EDGE_TOMOGRAPHY_AND_P7_SINGULAR_FIBRE_BOUNDARY.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
       "old_path": "RECIPROCAL_PORT_ORIENTATION_CORRECTION.md",
       "new_path": "claims/arbitrary-order/RECIPROCAL_PORT_ORIENTATION_CORRECTION.md",
       "reason": "claim_document -> arbitrary-order",
@@ -792,6 +873,15 @@
       "claim_family": "arbitrary-order",
       "confidence": "low",
       "executed_batch": "high-order-symbolic-forest-stage27"
+    },
+    {
+      "old_path": "RESIDUAL_DEPTH_LOOP_HAFNIAN_CUMULANT_AND_TWO_PORT_DISCRIMINANT_THEOREM.md",
+      "new_path": "claims/arbitrary-order/RESIDUAL_DEPTH_LOOP_HAFNIAN_CUMULANT_AND_TWO_PORT_DISCRIMINANT_THEOREM.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
     },
     {
       "old_path": "RESIDUAL_HAFNIAN_COMMON_COFACTOR_GRAM_THEOREM.md",
@@ -830,6 +920,33 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
+      "old_path": "RESIDUAL_RELATIVE_RESPONSE_POLYNOMIAL_DUAL_WICK_THEOREM.md",
+      "new_path": "claims/arbitrary-order/RESIDUAL_RELATIVE_RESPONSE_POLYNOMIAL_DUAL_WICK_THEOREM.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "RESIDUAL_TWO_PORT_FACTOR_ANALYSIS_IDEAL_AND_FIVE_PORT_PENTAD_THEOREM.md",
+      "new_path": "claims/arbitrary-order/RESIDUAL_TWO_PORT_FACTOR_ANALYSIS_IDEAL_AND_FIVE_PORT_PENTAD_THEOREM.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "RESIDUAL_ZEON_APOLAR_MULTI_LEG_CATALECTICANT_THEOREM.md",
+      "new_path": "claims/arbitrary-order/RESIDUAL_ZEON_APOLAR_MULTI_LEG_CATALECTICANT_THEOREM.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
       "old_path": "RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md",
       "new_path": "claims/arbitrary-order/RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md",
       "reason": "claim_document -> arbitrary-order",
@@ -837,6 +954,69 @@
       "claim_family": "arbitrary-order",
       "confidence": "low",
       "executed_batch": "high-order-symbolic-forest-stage27"
+    },
+    {
+      "old_path": "ROOT_ARBITRARY_LOWER_MIXED_JET_COFACTOR_FRAME_NECESSITY.md",
+      "new_path": "claims/arbitrary-order/ROOT_ARBITRARY_LOWER_MIXED_JET_COFACTOR_FRAME_NECESSITY.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "ROOT_ARBITRARY_ORDER_TWO_ENDPOINT_FULL_JET_FRAME_SHARPNESS_NOGO.md",
+      "new_path": "claims/arbitrary-order/ROOT_ARBITRARY_ORDER_TWO_ENDPOINT_FULL_JET_FRAME_SHARPNESS_NOGO.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "ROOT_ARBITRARY_TWO_ENDPOINT_BINARY_COFACTOR_PORT_COMPATIBILITY_REALIZATION.md",
+      "new_path": "claims/arbitrary-order/ROOT_ARBITRARY_TWO_ENDPOINT_BINARY_COFACTOR_PORT_COMPATIBILITY_REALIZATION.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md",
+      "new_path": "claims/arbitrary-order/ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "ROOT_AT_MOST_ONE_ENDPOINT_FULL_JET_AXIS_NECESSITY.md",
+      "new_path": "claims/arbitrary-order/ROOT_AT_MOST_ONE_ENDPOINT_FULL_JET_AXIS_NECESSITY.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "ROOT_FINITE_ENDPOINT_FULL_JET_COFACTOR_SPAN_BOUND.md",
+      "new_path": "claims/arbitrary-order/ROOT_FINITE_ENDPOINT_FULL_JET_COFACTOR_SPAN_BOUND.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "ROOT_FINITE_NONROOT_COMPANION_ENDPOINT_COUNT_OBSTRUCTION.md",
+      "new_path": "claims/arbitrary-order/ROOT_FINITE_NONROOT_COMPANION_ENDPOINT_COUNT_OBSTRUCTION.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
     },
     {
       "old_path": "ROOT_M7_ALL_ENDPOINT_LEGAL_THREE_INCIDENCE_SUPPORTS_EXCLUSION.md",
@@ -965,6 +1145,24 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
+      "old_path": "ROOT_MIXED_SECOND_JET_QUOTIENT_RANK_CLASSIFICATION.md",
+      "new_path": "claims/arbitrary-order/ROOT_MIXED_SECOND_JET_QUOTIENT_RANK_CLASSIFICATION.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "ROOT_MIXED_SECOND_JET_RESONANCE_CLIQUE_CLASSIFICATION.md",
+      "new_path": "claims/arbitrary-order/ROOT_MIXED_SECOND_JET_RESONANCE_CLIQUE_CLASSIFICATION.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
       "old_path": "ROOT_OF_UNITY_BLOCK_PERMANENT_SELECTOR.md",
       "new_path": "claims/arbitrary-order/ROOT_OF_UNITY_BLOCK_PERMANENT_SELECTOR.md",
       "reason": "claim_document -> arbitrary-order",
@@ -981,6 +1179,24 @@
       "claim_family": "arbitrary-order",
       "confidence": "medium",
       "executed_batch": "high-order-symbolic-forest-stage27"
+    },
+    {
+      "old_path": "ROOT_RESONANT_MIXED_JET_PARITY_CLASSIFICATION.md",
+      "new_path": "claims/arbitrary-order/ROOT_RESONANT_MIXED_JET_PARITY_CLASSIFICATION.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "ROOT_RESTRICTED_JET_COMPANION_MATCHING_SATURATION_NECESSITY.md",
+      "new_path": "claims/arbitrary-order/ROOT_RESTRICTED_JET_COMPANION_MATCHING_SATURATION_NECESSITY.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
     },
     {
       "old_path": "ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md",
@@ -1017,6 +1233,15 @@
       "claim_family": "arbitrary-order",
       "confidence": "medium",
       "executed_batch": "high-order-symbolic-forest-stage27"
+    },
+    {
+      "old_path": "ROOT_TWO_RESIDUAL_ONLY_COMPANION_THIRD_JET_OBSTRUCTION.md",
+      "new_path": "claims/arbitrary-order/ROOT_TWO_RESIDUAL_ONLY_COMPANION_THIRD_JET_OBSTRUCTION.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
     },
     {
       "old_path": "SINGLE_EVEN_CYCLE_RECTANGLE_THEOREM.md",
@@ -1611,6 +1836,15 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
+      "old_path": "audit_block_square_zero_wick_completion.py",
+      "new_path": "claims/arbitrary-order/audit_block_square_zero_wick_completion.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
       "old_path": "audit_bosonic_hafnian_spinor_no_transfer.py",
       "new_path": "claims/arbitrary-order/audit_bosonic_hafnian_spinor_no_transfer.py",
       "reason": "claim_script -> arbitrary-order",
@@ -1634,6 +1868,15 @@
       "status": "proposed_high_confidence",
       "claim_family": "arbitrary-order",
       "confidence": "high"
+    },
+    {
+      "old_path": "audit_cross_root_coordinate_monomial_chart_holonomy_and_nine_chart_no_go.py",
+      "new_path": "claims/arbitrary-order/audit_cross_root_coordinate_monomial_chart_holonomy_and_nine_chart_no_go.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
     },
     {
       "old_path": "audit_exact_three_blocker_permanent_rank.py",
@@ -1807,6 +2050,42 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
+      "old_path": "audit_legal_five_port_pentad_window_root_budget_and_null_polar_sparsity.py",
+      "new_path": "claims/arbitrary-order/audit_legal_five_port_pentad_window_root_budget_and_null_polar_sparsity.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "audit_lower_mixed_root_jet_deletion_label_tomography_and_squarefree_gauge.py",
+      "new_path": "claims/arbitrary-order/audit_lower_mixed_root_jet_deletion_label_tomography_and_squarefree_gauge.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "audit_majority_subset_internal_edge_ideal.py",
+      "new_path": "claims/arbitrary-order/audit_majority_subset_internal_edge_ideal.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "audit_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py",
+      "new_path": "claims/arbitrary-order/audit_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
       "old_path": "audit_multi_star_blocker_factorisation.py",
       "new_path": "claims/arbitrary-order/audit_multi_star_blocker_factorisation.py",
       "reason": "claim_script -> arbitrary-order",
@@ -1814,6 +2093,15 @@
       "claim_family": "arbitrary-order",
       "confidence": "high",
       "executed_batch": "high-order-symbolic-forest-stage27"
+    },
+    {
+      "old_path": "audit_nonprojective_root_pair_fan_selector_tomography.py",
+      "new_path": "claims/arbitrary-order/audit_nonprojective_root_pair_fan_selector_tomography.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
     },
     {
       "old_path": "audit_odd_residual_port_permanent_extraction.py",
@@ -1832,6 +2120,33 @@
       "claim_family": "arbitrary-order",
       "confidence": "high",
       "executed_batch": "high-order-symbolic-forest-stage27"
+    },
+    {
+      "old_path": "audit_pinned_hafnian_star_system_and_rational_edge_tomography.py",
+      "new_path": "claims/arbitrary-order/audit_pinned_hafnian_star_system_and_rational_edge_tomography.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "audit_principal_four_hafnian_generic_edge_tomography.py",
+      "new_path": "claims/arbitrary-order/audit_principal_four_hafnian_generic_edge_tomography.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "audit_residual_depth_loop_hafnian_cumulant_and_two_port_discriminant.py",
+      "new_path": "claims/arbitrary-order/audit_residual_depth_loop_hafnian_cumulant_and_two_port_discriminant.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
     },
     {
       "old_path": "audit_residual_hafnian_common_cofactor_gram.py",
@@ -1870,6 +2185,33 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
+      "old_path": "audit_residual_relative_response_polynomial_dual_wick.py",
+      "new_path": "claims/arbitrary-order/audit_residual_relative_response_polynomial_dual_wick.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "audit_residual_two_port_factor_analysis_ideal_and_five_port_pentad.py",
+      "new_path": "claims/arbitrary-order/audit_residual_two_port_factor_analysis_ideal_and_five_port_pentad.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "audit_residual_zeon_apolar_multi_leg_catalecticant.py",
+      "new_path": "claims/arbitrary-order/audit_residual_zeon_apolar_multi_leg_catalecticant.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
       "old_path": "audit_response_jet_principal_deletion_deck_and_root_parity_legality.py",
       "new_path": "claims/arbitrary-order/audit_response_jet_principal_deletion_deck_and_root_parity_legality.py",
       "reason": "claim_script -> arbitrary-order",
@@ -1877,6 +2219,69 @@
       "claim_family": "arbitrary-order",
       "confidence": "high",
       "executed_batch": "high-order-symbolic-forest-stage27"
+    },
+    {
+      "old_path": "audit_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py",
+      "new_path": "claims/arbitrary-order/audit_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "audit_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py",
+      "new_path": "claims/arbitrary-order/audit_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "audit_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py",
+      "new_path": "claims/arbitrary-order/audit_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "audit_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py",
+      "new_path": "claims/arbitrary-order/audit_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "audit_root_at_most_one_endpoint_full_jet_axis_necessity.py",
+      "new_path": "claims/arbitrary-order/audit_root_at_most_one_endpoint_full_jet_axis_necessity.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "audit_root_finite_endpoint_full_jet_cofactor_span_bound.py",
+      "new_path": "claims/arbitrary-order/audit_root_finite_endpoint_full_jet_cofactor_span_bound.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "audit_root_finite_nonroot_companion_endpoint_count_obstruction.py",
+      "new_path": "claims/arbitrary-order/audit_root_finite_nonroot_companion_endpoint_count_obstruction.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
     },
     {
       "old_path": "audit_root_m7_all_endpoint_legal_three_incidence_supports_exclusion.py",
@@ -2005,6 +2410,24 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
+      "old_path": "audit_root_mixed_second_jet_quotient_rank_classification.py",
+      "new_path": "claims/arbitrary-order/audit_root_mixed_second_jet_quotient_rank_classification.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "audit_root_mixed_second_jet_resonance_clique_classification.py",
+      "new_path": "claims/arbitrary-order/audit_root_mixed_second_jet_resonance_clique_classification.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
       "old_path": "audit_root_of_unity_block_permanent_selector.py",
       "new_path": "claims/arbitrary-order/audit_root_of_unity_block_permanent_selector.py",
       "reason": "claim_script -> arbitrary-order",
@@ -2021,6 +2444,24 @@
       "claim_family": "arbitrary-order",
       "confidence": "high",
       "executed_batch": "high-order-symbolic-forest-stage27"
+    },
+    {
+      "old_path": "audit_root_resonant_mixed_jet_parity_classification.py",
+      "new_path": "claims/arbitrary-order/audit_root_resonant_mixed_jet_parity_classification.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "audit_root_restricted_jet_companion_matching_saturation_necessity.py",
+      "new_path": "claims/arbitrary-order/audit_root_restricted_jet_companion_matching_saturation_necessity.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
     },
     {
       "old_path": "audit_root_tangent_companion_necessity_for_coordinate_slice.py",
@@ -2057,6 +2498,15 @@
       "claim_family": "arbitrary-order",
       "confidence": "high",
       "executed_batch": "high-order-symbolic-forest-stage27"
+    },
+    {
+      "old_path": "audit_root_two_residual_only_companion_third_jet_obstruction.py",
+      "new_path": "claims/arbitrary-order/audit_root_two_residual_only_companion_third_jet_obstruction.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
     },
     {
       "old_path": "audit_six_blocker_admissible_quotient_catalogue.py",
@@ -2635,6 +3085,15 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
+      "old_path": "verify_block_square_zero_wick_completion.py",
+      "new_path": "claims/arbitrary-order/verify_block_square_zero_wick_completion.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
       "old_path": "verify_bosonic_hafnian_spinor_no_transfer.py",
       "new_path": "claims/arbitrary-order/verify_bosonic_hafnian_spinor_no_transfer.py",
       "reason": "claim_script -> arbitrary-order",
@@ -2642,6 +3101,15 @@
       "claim_family": "arbitrary-order",
       "confidence": "high",
       "executed_batch": "high-order-symbolic-forest-stage27"
+    },
+    {
+      "old_path": "verify_cross_root_coordinate_monomial_chart_holonomy_and_nine_chart_no_go.py",
+      "new_path": "claims/arbitrary-order/verify_cross_root_coordinate_monomial_chart_holonomy_and_nine_chart_no_go.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
     },
     {
       "old_path": "verify_even_cycle_feasible_set_expansion.py",
@@ -2842,6 +3310,33 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
+      "old_path": "verify_legal_five_port_pentad_window_root_budget_and_null_polar_sparsity.py",
+      "new_path": "claims/arbitrary-order/verify_legal_five_port_pentad_window_root_budget_and_null_polar_sparsity.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "verify_lower_mixed_root_jet_deletion_label_tomography_and_squarefree_gauge.py",
+      "new_path": "claims/arbitrary-order/verify_lower_mixed_root_jet_deletion_label_tomography_and_squarefree_gauge.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "verify_majority_subset_internal_edge_ideal.py",
+      "new_path": "claims/arbitrary-order/verify_majority_subset_internal_edge_ideal.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
       "old_path": "verify_minimal_singleton_circuit_rectangle_theorem.py",
       "new_path": "claims/arbitrary-order/verify_minimal_singleton_circuit_rectangle_theorem.py",
       "reason": "claim_script -> arbitrary-order",
@@ -2851,6 +3346,15 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
+      "old_path": "verify_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py",
+      "new_path": "claims/arbitrary-order/verify_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
       "old_path": "verify_multi_star_blocker_factorisation.py",
       "new_path": "claims/arbitrary-order/verify_multi_star_blocker_factorisation.py",
       "reason": "claim_script -> arbitrary-order",
@@ -2858,6 +3362,15 @@
       "claim_family": "arbitrary-order",
       "confidence": "high",
       "executed_batch": "high-order-symbolic-forest-stage27"
+    },
+    {
+      "old_path": "verify_nonprojective_root_pair_fan_selector_tomography.py",
+      "new_path": "claims/arbitrary-order/verify_nonprojective_root_pair_fan_selector_tomography.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
     },
     {
       "old_path": "verify_odd_full_factor_one_term_mechanism.py",
@@ -2896,6 +3409,24 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
+      "old_path": "verify_pinned_hafnian_star_system_and_rational_edge_tomography.py",
+      "new_path": "claims/arbitrary-order/verify_pinned_hafnian_star_system_and_rational_edge_tomography.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "verify_principal_four_hafnian_generic_edge_tomography.py",
+      "new_path": "claims/arbitrary-order/verify_principal_four_hafnian_generic_edge_tomography.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
       "old_path": "verify_reciprocal_port_orientation.py",
       "new_path": "claims/arbitrary-order/verify_reciprocal_port_orientation.py",
       "reason": "claim_script -> arbitrary-order",
@@ -2903,6 +3434,15 @@
       "claim_family": "arbitrary-order",
       "confidence": "high",
       "executed_batch": "high-order-symbolic-forest-stage27"
+    },
+    {
+      "old_path": "verify_residual_depth_loop_hafnian_cumulant_and_two_port_discriminant.py",
+      "new_path": "claims/arbitrary-order/verify_residual_depth_loop_hafnian_cumulant_and_two_port_discriminant.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
     },
     {
       "old_path": "verify_residual_hafnian_common_cofactor_gram.py",
@@ -2941,6 +3481,33 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
+      "old_path": "verify_residual_relative_response_polynomial_dual_wick.py",
+      "new_path": "claims/arbitrary-order/verify_residual_relative_response_polynomial_dual_wick.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "verify_residual_two_port_factor_analysis_ideal_and_five_port_pentad.py",
+      "new_path": "claims/arbitrary-order/verify_residual_two_port_factor_analysis_ideal_and_five_port_pentad.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "verify_residual_zeon_apolar_multi_leg_catalecticant.py",
+      "new_path": "claims/arbitrary-order/verify_residual_zeon_apolar_multi_leg_catalecticant.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
       "old_path": "verify_response_jet_principal_deletion_deck_and_root_parity_legality.py",
       "new_path": "claims/arbitrary-order/verify_response_jet_principal_deletion_deck_and_root_parity_legality.py",
       "reason": "claim_script -> arbitrary-order",
@@ -2948,6 +3515,69 @@
       "claim_family": "arbitrary-order",
       "confidence": "high",
       "executed_batch": "high-order-symbolic-forest-stage27"
+    },
+    {
+      "old_path": "verify_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py",
+      "new_path": "claims/arbitrary-order/verify_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "verify_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py",
+      "new_path": "claims/arbitrary-order/verify_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "verify_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py",
+      "new_path": "claims/arbitrary-order/verify_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "verify_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py",
+      "new_path": "claims/arbitrary-order/verify_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "verify_root_at_most_one_endpoint_full_jet_axis_necessity.py",
+      "new_path": "claims/arbitrary-order/verify_root_at_most_one_endpoint_full_jet_axis_necessity.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "verify_root_finite_endpoint_full_jet_cofactor_span_bound.py",
+      "new_path": "claims/arbitrary-order/verify_root_finite_endpoint_full_jet_cofactor_span_bound.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "verify_root_finite_nonroot_companion_endpoint_count_obstruction.py",
+      "new_path": "claims/arbitrary-order/verify_root_finite_nonroot_companion_endpoint_count_obstruction.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
     },
     {
       "old_path": "verify_root_m7_all_endpoint_legal_three_incidence_supports_exclusion.py",
@@ -3076,6 +3706,24 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
+      "old_path": "verify_root_mixed_second_jet_quotient_rank_classification.py",
+      "new_path": "claims/arbitrary-order/verify_root_mixed_second_jet_quotient_rank_classification.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "verify_root_mixed_second_jet_resonance_clique_classification.py",
+      "new_path": "claims/arbitrary-order/verify_root_mixed_second_jet_resonance_clique_classification.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
       "old_path": "verify_root_of_unity_block_permanent_selector.py",
       "new_path": "claims/arbitrary-order/verify_root_of_unity_block_permanent_selector.py",
       "reason": "claim_script -> arbitrary-order",
@@ -3092,6 +3740,24 @@
       "claim_family": "arbitrary-order",
       "confidence": "high",
       "executed_batch": "high-order-symbolic-forest-stage27"
+    },
+    {
+      "old_path": "verify_root_resonant_mixed_jet_parity_classification.py",
+      "new_path": "claims/arbitrary-order/verify_root_resonant_mixed_jet_parity_classification.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "verify_root_restricted_jet_companion_matching_saturation_necessity.py",
+      "new_path": "claims/arbitrary-order/verify_root_restricted_jet_companion_matching_saturation_necessity.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
     },
     {
       "old_path": "verify_root_tangent_companion_necessity_for_coordinate_slice.py",
@@ -3128,6 +3794,15 @@
       "claim_family": "arbitrary-order",
       "confidence": "high",
       "executed_batch": "high-order-symbolic-forest-stage27"
+    },
+    {
+      "old_path": "verify_root_two_residual_only_companion_third_jet_obstruction.py",
+      "new_path": "claims/arbitrary-order/verify_root_two_residual_only_companion_third_jet_obstruction.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
     },
     {
       "old_path": "verify_six_blocker_admissible_quotient_catalogue.py",
@@ -14733,6 +15408,33 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
+      "old_path": "COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md",
+      "new_path": "claims/p7/COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md",
+      "reason": "claim_document -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "LEGAL_COMPANION_SIMPLE_INCIDENCE_WEIGHTED_PULLBACK_IDEAL_AND_NONFORCING_THEOREM.md",
+      "new_path": "claims/p7/LEGAL_COMPANION_SIMPLE_INCIDENCE_WEIGHTED_PULLBACK_IDEAL_AND_NONFORCING_THEOREM.md",
+      "reason": "claim_document -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "LEGAL_P7_SECANT_FACTOR_CODIMENSION_BARRIER_AND_ARTINIAN_PAIR_IDEAL_REDUCTION.md",
+      "new_path": "claims/p7/LEGAL_P7_SECANT_FACTOR_CODIMENSION_BARRIER_AND_ARTINIAN_PAIR_IDEAL_REDUCTION.md",
+      "reason": "claim_document -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
       "old_path": "P7_221_ALIGNED_CORE_DEGREE3_THREE_FACE_NULLSTELLENSATZ_OBSTRUCTION.md",
       "new_path": "claims/p7/P7_221_ALIGNED_CORE_DEGREE3_THREE_FACE_NULLSTELLENSATZ_OBSTRUCTION.md",
       "reason": "claim_document -> p7",
@@ -15280,6 +15982,87 @@
       "claim_family": "p7",
       "confidence": "medium",
       "executed_batch": "high-order-symbolic-forest-stage27"
+    },
+    {
+      "old_path": "PINNED_H4_STAR_TORUS_CIRCUIT_GIRTH_AND_P6_CUBIC_ESCAPE.md",
+      "new_path": "claims/p7/PINNED_H4_STAR_TORUS_CIRCUIT_GIRTH_AND_P6_CUBIC_ESCAPE.md",
+      "reason": "claim_document -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "RESIDUAL_DEPTH_OBSERVABILITY_STAIRCASE_AND_ALL_DEPTH_KERNEL_THEOREM.md",
+      "new_path": "claims/p7/RESIDUAL_DEPTH_OBSERVABILITY_STAIRCASE_AND_ALL_DEPTH_KERNEL_THEOREM.md",
+      "reason": "claim_document -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "SEVEN_CORE_FIFTH_PERMANENTAL_COMPOUND_OBSERVABILITY_THEOREM.md",
+      "new_path": "claims/p7/SEVEN_CORE_FIFTH_PERMANENTAL_COMPOUND_OBSERVABILITY_THEOREM.md",
+      "reason": "claim_document -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "SEVEN_LEAF_HAFNIAN_PROJECTED_VERONESE_RAMIFICATION_AND_STRUCTURED_TANGENT_THEOREM.md",
+      "new_path": "claims/p7/SEVEN_LEAF_HAFNIAN_PROJECTED_VERONESE_RAMIFICATION_AND_STRUCTURED_TANGENT_THEOREM.md",
+      "reason": "claim_document -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "SEVEN_LEAF_SWITCHED_CIRCULANT_PRIMITIVE_SQUARE_NO_GO_THEOREM.md",
+      "new_path": "claims/p7/SEVEN_LEAF_SWITCHED_CIRCULANT_PRIMITIVE_SQUARE_NO_GO_THEOREM.md",
+      "reason": "claim_document -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "SHALLOW_HAFNIAN_HESSIAN_TWO_DECK_INVERSION_AND_P7_LEGAL_SENSOR_INTERFACE.md",
+      "new_path": "claims/p7/SHALLOW_HAFNIAN_HESSIAN_TWO_DECK_INVERSION_AND_P7_LEGAL_SENSOR_INTERFACE.md",
+      "reason": "claim_document -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "audit_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py",
+      "new_path": "claims/p7/audit_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py",
+      "reason": "claim_script -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "audit_legal_companion_simple_incidence_weighted_pullback_ideal.py",
+      "new_path": "claims/p7/audit_legal_companion_simple_incidence_weighted_pullback_ideal.py",
+      "reason": "claim_script -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "audit_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py",
+      "new_path": "claims/p7/audit_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py",
+      "reason": "claim_script -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
     },
     {
       "old_path": "audit_p7_221_aligned_core_degree3_three_face_nullstellensatz_obstruction.py",
@@ -15831,6 +16614,87 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
+      "old_path": "audit_pinned_h4_star_torus_circuit_girth_and_p6_cubic_escape.py",
+      "new_path": "claims/p7/audit_pinned_h4_star_torus_circuit_girth_and_p6_cubic_escape.py",
+      "reason": "claim_script -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "audit_residual_depth_observability_staircase_and_all_depth_kernel.py",
+      "new_path": "claims/p7/audit_residual_depth_observability_staircase_and_all_depth_kernel.py",
+      "reason": "claim_script -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "audit_seven_core_fifth_permanental_compound_observability.py",
+      "new_path": "claims/p7/audit_seven_core_fifth_permanental_compound_observability.py",
+      "reason": "claim_script -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "audit_seven_leaf_hafnian_projected_veronese_ramification.py",
+      "new_path": "claims/p7/audit_seven_leaf_hafnian_projected_veronese_ramification.py",
+      "reason": "claim_script -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "audit_seven_leaf_switched_circulant_primitive_square_no_go.py",
+      "new_path": "claims/p7/audit_seven_leaf_switched_circulant_primitive_square_no_go.py",
+      "reason": "claim_script -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "audit_shallow_hafnian_hessian_two_deck_inversion_and_p7_legal_sensor_interface.py",
+      "new_path": "claims/p7/audit_shallow_hafnian_hessian_two_deck_inversion_and_p7_legal_sensor_interface.py",
+      "reason": "claim_script -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "verify_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py",
+      "new_path": "claims/p7/verify_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py",
+      "reason": "claim_script -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "verify_legal_companion_simple_incidence_weighted_pullback_ideal.py",
+      "new_path": "claims/p7/verify_legal_companion_simple_incidence_weighted_pullback_ideal.py",
+      "reason": "claim_script -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "verify_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py",
+      "new_path": "claims/p7/verify_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py",
+      "reason": "claim_script -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
       "old_path": "verify_p7_221_aligned_core_degree3_three_face_nullstellensatz_obstruction.py",
       "new_path": "claims/p7/verify_p7_221_aligned_core_degree3_three_face_nullstellensatz_obstruction.py",
       "reason": "claim_script -> p7",
@@ -16378,6 +17242,60 @@
       "claim_family": "p7",
       "confidence": "medium",
       "executed_batch": "high-order-symbolic-forest-stage27"
+    },
+    {
+      "old_path": "verify_pinned_h4_star_torus_circuit_girth_and_p6_cubic_escape.py",
+      "new_path": "claims/p7/verify_pinned_h4_star_torus_circuit_girth_and_p6_cubic_escape.py",
+      "reason": "claim_script -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "verify_residual_depth_observability_staircase_and_all_depth_kernel.py",
+      "new_path": "claims/p7/verify_residual_depth_observability_staircase_and_all_depth_kernel.py",
+      "reason": "claim_script -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "verify_seven_core_fifth_permanental_compound_observability.py",
+      "new_path": "claims/p7/verify_seven_core_fifth_permanental_compound_observability.py",
+      "reason": "claim_script -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "verify_seven_leaf_hafnian_projected_veronese_ramification.py",
+      "new_path": "claims/p7/verify_seven_leaf_hafnian_projected_veronese_ramification.py",
+      "reason": "claim_script -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "verify_seven_leaf_switched_circulant_primitive_square_no_go.py",
+      "new_path": "claims/p7/verify_seven_leaf_switched_circulant_primitive_square_no_go.py",
+      "reason": "claim_script -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
+    },
+    {
+      "old_path": "verify_shallow_hafnian_hessian_two_deck_inversion_and_p7_legal_sensor_interface.py",
+      "new_path": "claims/p7/verify_shallow_hafnian_hessian_two_deck_inversion_and_p7_legal_sensor_interface.py",
+      "reason": "claim_script -> p7",
+      "status": "moved",
+      "claim_family": "p7",
+      "confidence": "high",
+      "executed_batch": "high-order-root-exit-stage30"
     },
     {
       "old_path": "ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md",
@@ -18407,7 +19325,7 @@
     }
   ],
   "destination_subtree_counts": {
-    "claims": 1874,
+    "claims": 1976,
     "tools": 208,
     "src": 33,
     "docs": 8,

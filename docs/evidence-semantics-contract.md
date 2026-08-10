@@ -237,8 +237,10 @@ Grandfathered debt can leave root only through the normal migration contract:
 2. resolve ownership and evidence boundaries;
 3. perform a documented dry run;
 4. obtain an exact frozen batch reviewed by an authorized reviewer;
-5. use `git mv` through the transaction-aware workflow; and
-6. validate paths, blobs, provenance, replays, and root arithmetic.
+5. pin each source path's Git blob at an ancestral reviewed base and refuse
+   source-identity drift before the first move;
+6. use `git mv` through the transaction-aware workflow; and
+7. validate paths, blobs, provenance, replays, and root arithmetic.
 
 Authorized review follows
 `docs/architecture/layout-migration-runbook.md`.  Under the repository

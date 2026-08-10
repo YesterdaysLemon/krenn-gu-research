@@ -19,9 +19,9 @@
     ".txt": 2
   },
   "classification_counts_by_family": {
-    "arbitrary-order": 366,
+    "arbitrary-order": 441,
     "p5/frontier": 227,
-    "p7": 183,
+    "p7": 210,
     "p4/classifications": 122,
     "p4/boundaries": 85,
     "p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b": 43,
@@ -244,24 +244,24 @@
     "p5/h31/diagonal-quadric-pure-direction-curve-marked-fibre": 1
   },
   "classification_counts_by_category": {
-    "claim_document": 682,
+    "claim_document": 716,
     "navigation": 6,
     "withdrawn_document": 5,
     "legacy_document": 5,
     "audit_report": 2,
     "catalog": 1,
     "tool_script": 209,
-    "claim_script": 1181,
+    "claim_script": 1249,
     "shared_library": 33
   },
   "confidence_counts": {
     "medium": 1180,
     "low": 426,
-    "high": 518
+    "high": 620
   },
-  "classified_count": 2124,
-  "unclassified_count": 239,
-  "estimated_root_entries_after_full_migration": 247,
+  "classified_count": 2226,
+  "unclassified_count": 137,
+  "estimated_root_entries_after_full_migration": 145,
   "verify_audit_triples": {
     "ADJACENT_PORT_DETERMINANT_TRANSPORT_LEMMA": [
       "verify_adjacent_port_determinant_transport_lemma.py"
@@ -426,9 +426,17 @@
       "verify_arbitrary_surplus_common_row_full_span_obstruction.py",
       "audit_arbitrary_surplus_common_row_full_span_obstruction.py"
     ],
+    "BLOCK_SQUARE_ZERO_WICK_COMPLETION_THEOREM": [
+      "verify_block_square_zero_wick_completion.py",
+      "audit_block_square_zero_wick_completion.py"
+    ],
     "BOSONIC_HAFNIAN_SPINOR_NO_TRANSFER": [
       "verify_bosonic_hafnian_spinor_no_transfer.py",
       "audit_bosonic_hafnian_spinor_no_transfer.py"
+    ],
+    "COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION": [
+      "verify_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py",
+      "audit_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py"
     ],
     "COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE": [
       "audit_component20_intrinsic_wall_exceptional_fibres_candidate.py"
@@ -508,12 +516,36 @@
       "verify_higher_residual_permanental_tomography_nested_cofactor_stress_and_cumulant_interface.py",
       "audit_higher_residual_permanental_tomography_nested_cofactor_stress_and_cumulant_interface.py"
     ],
+    "LEGAL_COMPANION_SIMPLE_INCIDENCE_WEIGHTED_PULLBACK_IDEAL_AND_NONFORCING_THEOREM": [
+      "verify_legal_companion_simple_incidence_weighted_pullback_ideal.py",
+      "audit_legal_companion_simple_incidence_weighted_pullback_ideal.py"
+    ],
+    "LEGAL_FIVE_PORT_PENTAD_WINDOW_ROOT_BUDGET_AND_NULL_POLAR_SPARSITY_THEOREM": [
+      "verify_legal_five_port_pentad_window_root_budget_and_null_polar_sparsity.py",
+      "audit_legal_five_port_pentad_window_root_budget_and_null_polar_sparsity.py"
+    ],
+    "LEGAL_P7_SECANT_FACTOR_CODIMENSION_BARRIER_AND_ARTINIAN_PAIR_IDEAL_REDUCTION": [
+      "verify_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py",
+      "audit_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py"
+    ],
+    "LOWER_MIXED_ROOT_JET_DELETION_LABEL_TOMOGRAPHY_AND_SQUAREFREE_GAUGE_THEOREM": [
+      "verify_lower_mixed_root_jet_deletion_label_tomography_and_squarefree_gauge.py",
+      "audit_lower_mixed_root_jet_deletion_label_tomography_and_squarefree_gauge.py"
+    ],
+    "MAJORITY_SUBSET_INTERNAL_EDGE_IDEAL_HIERARCHY": [
+      "verify_majority_subset_internal_edge_ideal.py",
+      "audit_majority_subset_internal_edge_ideal.py"
+    ],
     "MINIMAL_SINGLETON_CIRCUIT_RECTANGLE_THEOREM": [
       "verify_minimal_singleton_circuit_rectangle_theorem.py"
     ],
     "MIXED_ROOT_DELETION_FILTRATION_AND_HERALD_FREE_PAIR_NO_GO": [
       "verify_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py",
       "audit_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py"
+    ],
+    "NONPROJECTIVE_ROOT_PAIR_FAN_SELECTOR_TOMOGRAPHY_THEOREM": [
+      "verify_nonprojective_root_pair_fan_selector_tomography.py",
+      "audit_nonprojective_root_pair_fan_selector_tomography.py"
     ],
     "ODD_RESIDUAL_PORT_PERMANENT_EXTRACTION": [
       "verify_odd_residual_port_permanent_extraction.py",
@@ -1799,8 +1831,24 @@
       "verify_pinned_h4_star_torus_circuit_girth_and_p6_cubic_escape.py",
       "audit_pinned_h4_star_torus_circuit_girth_and_p6_cubic_escape.py"
     ],
+    "PINNED_HAFNIAN_STAR_SYSTEM_AND_RATIONAL_EDGE_TOMOGRAPHY_THEOREM": [
+      "verify_pinned_hafnian_star_system_and_rational_edge_tomography.py",
+      "audit_pinned_hafnian_star_system_and_rational_edge_tomography.py"
+    ],
+    "PRINCIPAL_FOUR_HAFNIAN_GENERIC_EDGE_TOMOGRAPHY_AND_P7_SINGULAR_FIBRE_BOUNDARY": [
+      "verify_principal_four_hafnian_generic_edge_tomography.py",
+      "audit_principal_four_hafnian_generic_edge_tomography.py"
+    ],
     "Q2_N6_K4_D4_CONSTRUCTION": [
       "verify_q2_n6_k4_d4_construction.py"
+    ],
+    "RESIDUAL_DEPTH_LOOP_HAFNIAN_CUMULANT_AND_TWO_PORT_DISCRIMINANT_THEOREM": [
+      "verify_residual_depth_loop_hafnian_cumulant_and_two_port_discriminant.py",
+      "audit_residual_depth_loop_hafnian_cumulant_and_two_port_discriminant.py"
+    ],
+    "RESIDUAL_DEPTH_OBSERVABILITY_STAIRCASE_AND_ALL_DEPTH_KERNEL_THEOREM": [
+      "verify_residual_depth_observability_staircase_and_all_depth_kernel.py",
+      "audit_residual_depth_observability_staircase_and_all_depth_kernel.py"
     ],
     "RESIDUAL_HAFNIAN_COMMON_GRAM_AUDIT_AND_TORUS_ZERO_FULL_RANK_SHARPNESS": [
       "verify_residual_hafnian_common_gram_audit_and_torus_zero_full_rank_sharpness.py",
@@ -1809,6 +1857,18 @@
     "RESIDUAL_HAFNIAN_TORUS_ZERO_FULL_RANK_COFACTOR_BOUNDARY": [
       "verify_residual_hafnian_torus_zero_full_rank_cofactor_boundary.py",
       "audit_residual_hafnian_torus_zero_full_rank_cofactor_boundary.py"
+    ],
+    "RESIDUAL_RELATIVE_RESPONSE_POLYNOMIAL_DUAL_WICK_THEOREM": [
+      "verify_residual_relative_response_polynomial_dual_wick.py",
+      "audit_residual_relative_response_polynomial_dual_wick.py"
+    ],
+    "RESIDUAL_TWO_PORT_FACTOR_ANALYSIS_IDEAL_AND_FIVE_PORT_PENTAD_THEOREM": [
+      "verify_residual_two_port_factor_analysis_ideal_and_five_port_pentad.py",
+      "audit_residual_two_port_factor_analysis_ideal_and_five_port_pentad.py"
+    ],
+    "RESIDUAL_ZEON_APOLAR_MULTI_LEG_CATALECTICANT_THEOREM": [
+      "verify_residual_zeon_apolar_multi_leg_catalecticant.py",
+      "audit_residual_zeon_apolar_multi_leg_catalecticant.py"
     ],
     "ROOT_ARBITRARY_LOWER_MIXED_JET_COFACTOR_FRAME_NECESSITY": [
       "verify_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py",
@@ -1937,6 +1997,18 @@
     "ROOT_TWO_RESIDUAL_ONLY_COMPANION_THIRD_JET_OBSTRUCTION": [
       "verify_root_two_residual_only_companion_third_jet_obstruction.py",
       "audit_root_two_residual_only_companion_third_jet_obstruction.py"
+    ],
+    "SEVEN_CORE_FIFTH_PERMANENTAL_COMPOUND_OBSERVABILITY_THEOREM": [
+      "verify_seven_core_fifth_permanental_compound_observability.py",
+      "audit_seven_core_fifth_permanental_compound_observability.py"
+    ],
+    "SEVEN_LEAF_HAFNIAN_PROJECTED_VERONESE_RAMIFICATION_AND_STRUCTURED_TANGENT_THEOREM": [
+      "verify_seven_leaf_hafnian_projected_veronese_ramification.py",
+      "audit_seven_leaf_hafnian_projected_veronese_ramification.py"
+    ],
+    "SEVEN_LEAF_SWITCHED_CIRCULANT_PRIMITIVE_SQUARE_NO_GO_THEOREM": [
+      "verify_seven_leaf_switched_circulant_primitive_square_no_go.py",
+      "audit_seven_leaf_switched_circulant_primitive_square_no_go.py"
     ],
     "SHALLOW_HAFNIAN_HESSIAN_TWO_DECK_INVERSION_AND_P7_LEGAL_SENSOR_INTERFACE": [
       "verify_shallow_hafnian_hessian_two_deck_inversion_and_p7_legal_sensor_interface.py",
@@ -26868,6 +26940,1162 @@
       "evidence": [
         "stage28_authorized_review: named carrier with one bounded finite destination",
         "named by EIGHT_VERTEX_FULL_SINGLETON_FAMILY_CERTIFICATE.md"
+      ]
+    },
+    {
+      "old_path": "BLOCK_SQUARE_ZERO_WICK_COMPLETION_THEOREM.md",
+      "proposed_path": "claims/arbitrary-order/BLOCK_SQUARE_ZERO_WICK_COMPLETION_THEOREM.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md",
+      "proposed_path": "claims/p7/COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md",
+      "category": "claim_document",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "CROSS_ROOT_COORDINATE_MONOMIAL_CHART_HOLONOMY_AND_NINE_CHART_NO_GO.md",
+      "proposed_path": "claims/arbitrary-order/CROSS_ROOT_COORDINATE_MONOMIAL_CHART_HOLONOMY_AND_NINE_CHART_NO_GO.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "LEGAL_COMPANION_SIMPLE_INCIDENCE_WEIGHTED_PULLBACK_IDEAL_AND_NONFORCING_THEOREM.md",
+      "proposed_path": "claims/p7/LEGAL_COMPANION_SIMPLE_INCIDENCE_WEIGHTED_PULLBACK_IDEAL_AND_NONFORCING_THEOREM.md",
+      "category": "claim_document",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "LEGAL_FIVE_PORT_PENTAD_WINDOW_ROOT_BUDGET_AND_NULL_POLAR_SPARSITY_THEOREM.md",
+      "proposed_path": "claims/arbitrary-order/LEGAL_FIVE_PORT_PENTAD_WINDOW_ROOT_BUDGET_AND_NULL_POLAR_SPARSITY_THEOREM.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "LEGAL_P7_SECANT_FACTOR_CODIMENSION_BARRIER_AND_ARTINIAN_PAIR_IDEAL_REDUCTION.md",
+      "proposed_path": "claims/p7/LEGAL_P7_SECANT_FACTOR_CODIMENSION_BARRIER_AND_ARTINIAN_PAIR_IDEAL_REDUCTION.md",
+      "category": "claim_document",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "LOWER_MIXED_ROOT_JET_DELETION_LABEL_TOMOGRAPHY_AND_SQUAREFREE_GAUGE_THEOREM.md",
+      "proposed_path": "claims/arbitrary-order/LOWER_MIXED_ROOT_JET_DELETION_LABEL_TOMOGRAPHY_AND_SQUAREFREE_GAUGE_THEOREM.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "MAJORITY_SUBSET_INTERNAL_EDGE_IDEAL_HIERARCHY.md",
+      "proposed_path": "claims/arbitrary-order/MAJORITY_SUBSET_INTERNAL_EDGE_IDEAL_HIERARCHY.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "MIXED_ROOT_DELETION_FILTRATION_AND_HERALD_FREE_PAIR_NO_GO.md",
+      "proposed_path": "claims/arbitrary-order/MIXED_ROOT_DELETION_FILTRATION_AND_HERALD_FREE_PAIR_NO_GO.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "NONPROJECTIVE_ROOT_PAIR_FAN_SELECTOR_TOMOGRAPHY_THEOREM.md",
+      "proposed_path": "claims/arbitrary-order/NONPROJECTIVE_ROOT_PAIR_FAN_SELECTOR_TOMOGRAPHY_THEOREM.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "PINNED_H4_STAR_TORUS_CIRCUIT_GIRTH_AND_P6_CUBIC_ESCAPE.md",
+      "proposed_path": "claims/p7/PINNED_H4_STAR_TORUS_CIRCUIT_GIRTH_AND_P6_CUBIC_ESCAPE.md",
+      "category": "claim_document",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "PINNED_HAFNIAN_STAR_SYSTEM_AND_RATIONAL_EDGE_TOMOGRAPHY_THEOREM.md",
+      "proposed_path": "claims/arbitrary-order/PINNED_HAFNIAN_STAR_SYSTEM_AND_RATIONAL_EDGE_TOMOGRAPHY_THEOREM.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "PRINCIPAL_FOUR_HAFNIAN_GENERIC_EDGE_TOMOGRAPHY_AND_P7_SINGULAR_FIBRE_BOUNDARY.md",
+      "proposed_path": "claims/arbitrary-order/PRINCIPAL_FOUR_HAFNIAN_GENERIC_EDGE_TOMOGRAPHY_AND_P7_SINGULAR_FIBRE_BOUNDARY.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "RESIDUAL_DEPTH_LOOP_HAFNIAN_CUMULANT_AND_TWO_PORT_DISCRIMINANT_THEOREM.md",
+      "proposed_path": "claims/arbitrary-order/RESIDUAL_DEPTH_LOOP_HAFNIAN_CUMULANT_AND_TWO_PORT_DISCRIMINANT_THEOREM.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "RESIDUAL_DEPTH_OBSERVABILITY_STAIRCASE_AND_ALL_DEPTH_KERNEL_THEOREM.md",
+      "proposed_path": "claims/p7/RESIDUAL_DEPTH_OBSERVABILITY_STAIRCASE_AND_ALL_DEPTH_KERNEL_THEOREM.md",
+      "category": "claim_document",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "RESIDUAL_RELATIVE_RESPONSE_POLYNOMIAL_DUAL_WICK_THEOREM.md",
+      "proposed_path": "claims/arbitrary-order/RESIDUAL_RELATIVE_RESPONSE_POLYNOMIAL_DUAL_WICK_THEOREM.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "RESIDUAL_TWO_PORT_FACTOR_ANALYSIS_IDEAL_AND_FIVE_PORT_PENTAD_THEOREM.md",
+      "proposed_path": "claims/arbitrary-order/RESIDUAL_TWO_PORT_FACTOR_ANALYSIS_IDEAL_AND_FIVE_PORT_PENTAD_THEOREM.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "RESIDUAL_ZEON_APOLAR_MULTI_LEG_CATALECTICANT_THEOREM.md",
+      "proposed_path": "claims/arbitrary-order/RESIDUAL_ZEON_APOLAR_MULTI_LEG_CATALECTICANT_THEOREM.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "ROOT_ARBITRARY_LOWER_MIXED_JET_COFACTOR_FRAME_NECESSITY.md",
+      "proposed_path": "claims/arbitrary-order/ROOT_ARBITRARY_LOWER_MIXED_JET_COFACTOR_FRAME_NECESSITY.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "ROOT_ARBITRARY_ORDER_TWO_ENDPOINT_FULL_JET_FRAME_SHARPNESS_NOGO.md",
+      "proposed_path": "claims/arbitrary-order/ROOT_ARBITRARY_ORDER_TWO_ENDPOINT_FULL_JET_FRAME_SHARPNESS_NOGO.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "ROOT_ARBITRARY_TWO_ENDPOINT_BINARY_COFACTOR_PORT_COMPATIBILITY_REALIZATION.md",
+      "proposed_path": "claims/arbitrary-order/ROOT_ARBITRARY_TWO_ENDPOINT_BINARY_COFACTOR_PORT_COMPATIBILITY_REALIZATION.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md",
+      "proposed_path": "claims/arbitrary-order/ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "ROOT_AT_MOST_ONE_ENDPOINT_FULL_JET_AXIS_NECESSITY.md",
+      "proposed_path": "claims/arbitrary-order/ROOT_AT_MOST_ONE_ENDPOINT_FULL_JET_AXIS_NECESSITY.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "ROOT_FINITE_ENDPOINT_FULL_JET_COFACTOR_SPAN_BOUND.md",
+      "proposed_path": "claims/arbitrary-order/ROOT_FINITE_ENDPOINT_FULL_JET_COFACTOR_SPAN_BOUND.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "ROOT_FINITE_NONROOT_COMPANION_ENDPOINT_COUNT_OBSTRUCTION.md",
+      "proposed_path": "claims/arbitrary-order/ROOT_FINITE_NONROOT_COMPANION_ENDPOINT_COUNT_OBSTRUCTION.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "ROOT_MIXED_SECOND_JET_QUOTIENT_RANK_CLASSIFICATION.md",
+      "proposed_path": "claims/arbitrary-order/ROOT_MIXED_SECOND_JET_QUOTIENT_RANK_CLASSIFICATION.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "ROOT_MIXED_SECOND_JET_RESONANCE_CLIQUE_CLASSIFICATION.md",
+      "proposed_path": "claims/arbitrary-order/ROOT_MIXED_SECOND_JET_RESONANCE_CLIQUE_CLASSIFICATION.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "ROOT_RESONANT_MIXED_JET_PARITY_CLASSIFICATION.md",
+      "proposed_path": "claims/arbitrary-order/ROOT_RESONANT_MIXED_JET_PARITY_CLASSIFICATION.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "ROOT_RESTRICTED_JET_COMPANION_MATCHING_SATURATION_NECESSITY.md",
+      "proposed_path": "claims/arbitrary-order/ROOT_RESTRICTED_JET_COMPANION_MATCHING_SATURATION_NECESSITY.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "ROOT_TWO_RESIDUAL_ONLY_COMPANION_THIRD_JET_OBSTRUCTION.md",
+      "proposed_path": "claims/arbitrary-order/ROOT_TWO_RESIDUAL_ONLY_COMPANION_THIRD_JET_OBSTRUCTION.md",
+      "category": "claim_document",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "SEVEN_CORE_FIFTH_PERMANENTAL_COMPOUND_OBSERVABILITY_THEOREM.md",
+      "proposed_path": "claims/p7/SEVEN_CORE_FIFTH_PERMANENTAL_COMPOUND_OBSERVABILITY_THEOREM.md",
+      "category": "claim_document",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "SEVEN_LEAF_HAFNIAN_PROJECTED_VERONESE_RAMIFICATION_AND_STRUCTURED_TANGENT_THEOREM.md",
+      "proposed_path": "claims/p7/SEVEN_LEAF_HAFNIAN_PROJECTED_VERONESE_RAMIFICATION_AND_STRUCTURED_TANGENT_THEOREM.md",
+      "category": "claim_document",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "SEVEN_LEAF_SWITCHED_CIRCULANT_PRIMITIVE_SQUARE_NO_GO_THEOREM.md",
+      "proposed_path": "claims/p7/SEVEN_LEAF_SWITCHED_CIRCULANT_PRIMITIVE_SQUARE_NO_GO_THEOREM.md",
+      "category": "claim_document",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "SHALLOW_HAFNIAN_HESSIAN_TWO_DECK_INVERSION_AND_P7_LEGAL_SENSOR_INTERFACE.md",
+      "proposed_path": "claims/p7/SHALLOW_HAFNIAN_HESSIAN_TWO_DECK_INVERSION_AND_P7_LEGAL_SENSOR_INTERFACE.md",
+      "category": "claim_document",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "fresh scope and proof-obligation ownership review",
+        "complete document/primary/audit triple",
+        "mathematical status and stated limitations unchanged"
+      ]
+    },
+    {
+      "old_path": "audit_block_square_zero_wick_completion.py",
+      "proposed_path": "claims/arbitrary-order/audit_block_square_zero_wick_completion.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by BLOCK_SQUARE_ZERO_WICK_COMPLETION_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py",
+      "proposed_path": "claims/p7/audit_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py",
+      "category": "claim_script",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_cross_root_coordinate_monomial_chart_holonomy_and_nine_chart_no_go.py",
+      "proposed_path": "claims/arbitrary-order/audit_cross_root_coordinate_monomial_chart_holonomy_and_nine_chart_no_go.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by CROSS_ROOT_COORDINATE_MONOMIAL_CHART_HOLONOMY_AND_NINE_CHART_NO_GO.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_legal_companion_simple_incidence_weighted_pullback_ideal.py",
+      "proposed_path": "claims/p7/audit_legal_companion_simple_incidence_weighted_pullback_ideal.py",
+      "category": "claim_script",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by LEGAL_COMPANION_SIMPLE_INCIDENCE_WEIGHTED_PULLBACK_IDEAL_AND_NONFORCING_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_legal_five_port_pentad_window_root_budget_and_null_polar_sparsity.py",
+      "proposed_path": "claims/arbitrary-order/audit_legal_five_port_pentad_window_root_budget_and_null_polar_sparsity.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by LEGAL_FIVE_PORT_PENTAD_WINDOW_ROOT_BUDGET_AND_NULL_POLAR_SPARSITY_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py",
+      "proposed_path": "claims/p7/audit_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py",
+      "category": "claim_script",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by LEGAL_P7_SECANT_FACTOR_CODIMENSION_BARRIER_AND_ARTINIAN_PAIR_IDEAL_REDUCTION.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_lower_mixed_root_jet_deletion_label_tomography_and_squarefree_gauge.py",
+      "proposed_path": "claims/arbitrary-order/audit_lower_mixed_root_jet_deletion_label_tomography_and_squarefree_gauge.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by LOWER_MIXED_ROOT_JET_DELETION_LABEL_TOMOGRAPHY_AND_SQUAREFREE_GAUGE_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_majority_subset_internal_edge_ideal.py",
+      "proposed_path": "claims/arbitrary-order/audit_majority_subset_internal_edge_ideal.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by MAJORITY_SUBSET_INTERNAL_EDGE_IDEAL_HIERARCHY.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py",
+      "proposed_path": "claims/arbitrary-order/audit_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by MIXED_ROOT_DELETION_FILTRATION_AND_HERALD_FREE_PAIR_NO_GO.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_nonprojective_root_pair_fan_selector_tomography.py",
+      "proposed_path": "claims/arbitrary-order/audit_nonprojective_root_pair_fan_selector_tomography.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by NONPROJECTIVE_ROOT_PAIR_FAN_SELECTOR_TOMOGRAPHY_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_pinned_h4_star_torus_circuit_girth_and_p6_cubic_escape.py",
+      "proposed_path": "claims/p7/audit_pinned_h4_star_torus_circuit_girth_and_p6_cubic_escape.py",
+      "category": "claim_script",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by PINNED_H4_STAR_TORUS_CIRCUIT_GIRTH_AND_P6_CUBIC_ESCAPE.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_pinned_hafnian_star_system_and_rational_edge_tomography.py",
+      "proposed_path": "claims/arbitrary-order/audit_pinned_hafnian_star_system_and_rational_edge_tomography.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by PINNED_HAFNIAN_STAR_SYSTEM_AND_RATIONAL_EDGE_TOMOGRAPHY_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_principal_four_hafnian_generic_edge_tomography.py",
+      "proposed_path": "claims/arbitrary-order/audit_principal_four_hafnian_generic_edge_tomography.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by PRINCIPAL_FOUR_HAFNIAN_GENERIC_EDGE_TOMOGRAPHY_AND_P7_SINGULAR_FIBRE_BOUNDARY.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_residual_depth_loop_hafnian_cumulant_and_two_port_discriminant.py",
+      "proposed_path": "claims/arbitrary-order/audit_residual_depth_loop_hafnian_cumulant_and_two_port_discriminant.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by RESIDUAL_DEPTH_LOOP_HAFNIAN_CUMULANT_AND_TWO_PORT_DISCRIMINANT_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_residual_depth_observability_staircase_and_all_depth_kernel.py",
+      "proposed_path": "claims/p7/audit_residual_depth_observability_staircase_and_all_depth_kernel.py",
+      "category": "claim_script",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by RESIDUAL_DEPTH_OBSERVABILITY_STAIRCASE_AND_ALL_DEPTH_KERNEL_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_residual_relative_response_polynomial_dual_wick.py",
+      "proposed_path": "claims/arbitrary-order/audit_residual_relative_response_polynomial_dual_wick.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by RESIDUAL_RELATIVE_RESPONSE_POLYNOMIAL_DUAL_WICK_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_residual_two_port_factor_analysis_ideal_and_five_port_pentad.py",
+      "proposed_path": "claims/arbitrary-order/audit_residual_two_port_factor_analysis_ideal_and_five_port_pentad.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by RESIDUAL_TWO_PORT_FACTOR_ANALYSIS_IDEAL_AND_FIVE_PORT_PENTAD_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_residual_zeon_apolar_multi_leg_catalecticant.py",
+      "proposed_path": "claims/arbitrary-order/audit_residual_zeon_apolar_multi_leg_catalecticant.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by RESIDUAL_ZEON_APOLAR_MULTI_LEG_CATALECTICANT_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py",
+      "proposed_path": "claims/arbitrary-order/audit_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by ROOT_ARBITRARY_LOWER_MIXED_JET_COFACTOR_FRAME_NECESSITY.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py",
+      "proposed_path": "claims/arbitrary-order/audit_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by ROOT_ARBITRARY_ORDER_TWO_ENDPOINT_FULL_JET_FRAME_SHARPNESS_NOGO.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py",
+      "proposed_path": "claims/arbitrary-order/audit_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by ROOT_ARBITRARY_TWO_ENDPOINT_BINARY_COFACTOR_PORT_COMPATIBILITY_REALIZATION.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py",
+      "proposed_path": "claims/arbitrary-order/audit_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_root_at_most_one_endpoint_full_jet_axis_necessity.py",
+      "proposed_path": "claims/arbitrary-order/audit_root_at_most_one_endpoint_full_jet_axis_necessity.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by ROOT_AT_MOST_ONE_ENDPOINT_FULL_JET_AXIS_NECESSITY.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_root_finite_endpoint_full_jet_cofactor_span_bound.py",
+      "proposed_path": "claims/arbitrary-order/audit_root_finite_endpoint_full_jet_cofactor_span_bound.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by ROOT_FINITE_ENDPOINT_FULL_JET_COFACTOR_SPAN_BOUND.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_root_finite_nonroot_companion_endpoint_count_obstruction.py",
+      "proposed_path": "claims/arbitrary-order/audit_root_finite_nonroot_companion_endpoint_count_obstruction.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by ROOT_FINITE_NONROOT_COMPANION_ENDPOINT_COUNT_OBSTRUCTION.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_root_mixed_second_jet_quotient_rank_classification.py",
+      "proposed_path": "claims/arbitrary-order/audit_root_mixed_second_jet_quotient_rank_classification.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by ROOT_MIXED_SECOND_JET_QUOTIENT_RANK_CLASSIFICATION.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_root_mixed_second_jet_resonance_clique_classification.py",
+      "proposed_path": "claims/arbitrary-order/audit_root_mixed_second_jet_resonance_clique_classification.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by ROOT_MIXED_SECOND_JET_RESONANCE_CLIQUE_CLASSIFICATION.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_root_resonant_mixed_jet_parity_classification.py",
+      "proposed_path": "claims/arbitrary-order/audit_root_resonant_mixed_jet_parity_classification.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by ROOT_RESONANT_MIXED_JET_PARITY_CLASSIFICATION.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_root_restricted_jet_companion_matching_saturation_necessity.py",
+      "proposed_path": "claims/arbitrary-order/audit_root_restricted_jet_companion_matching_saturation_necessity.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by ROOT_RESTRICTED_JET_COMPANION_MATCHING_SATURATION_NECESSITY.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_root_two_residual_only_companion_third_jet_obstruction.py",
+      "proposed_path": "claims/arbitrary-order/audit_root_two_residual_only_companion_third_jet_obstruction.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by ROOT_TWO_RESIDUAL_ONLY_COMPANION_THIRD_JET_OBSTRUCTION.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_seven_core_fifth_permanental_compound_observability.py",
+      "proposed_path": "claims/p7/audit_seven_core_fifth_permanental_compound_observability.py",
+      "category": "claim_script",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by SEVEN_CORE_FIFTH_PERMANENTAL_COMPOUND_OBSERVABILITY_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_seven_leaf_hafnian_projected_veronese_ramification.py",
+      "proposed_path": "claims/p7/audit_seven_leaf_hafnian_projected_veronese_ramification.py",
+      "category": "claim_script",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by SEVEN_LEAF_HAFNIAN_PROJECTED_VERONESE_RAMIFICATION_AND_STRUCTURED_TANGENT_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_seven_leaf_switched_circulant_primitive_square_no_go.py",
+      "proposed_path": "claims/p7/audit_seven_leaf_switched_circulant_primitive_square_no_go.py",
+      "category": "claim_script",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by SEVEN_LEAF_SWITCHED_CIRCULANT_PRIMITIVE_SQUARE_NO_GO_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "audit_shallow_hafnian_hessian_two_deck_inversion_and_p7_legal_sensor_interface.py",
+      "proposed_path": "claims/p7/audit_shallow_hafnian_hessian_two_deck_inversion_and_p7_legal_sensor_interface.py",
+      "category": "claim_script",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "exact audit carrier named by SHALLOW_HAFNIAN_HESSIAN_TWO_DECK_INVERSION_AND_P7_LEGAL_SENSOR_INTERFACE.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_block_square_zero_wick_completion.py",
+      "proposed_path": "claims/arbitrary-order/verify_block_square_zero_wick_completion.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by BLOCK_SQUARE_ZERO_WICK_COMPLETION_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py",
+      "proposed_path": "claims/p7/verify_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py",
+      "category": "claim_script",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_cross_root_coordinate_monomial_chart_holonomy_and_nine_chart_no_go.py",
+      "proposed_path": "claims/arbitrary-order/verify_cross_root_coordinate_monomial_chart_holonomy_and_nine_chart_no_go.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by CROSS_ROOT_COORDINATE_MONOMIAL_CHART_HOLONOMY_AND_NINE_CHART_NO_GO.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_legal_companion_simple_incidence_weighted_pullback_ideal.py",
+      "proposed_path": "claims/p7/verify_legal_companion_simple_incidence_weighted_pullback_ideal.py",
+      "category": "claim_script",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by LEGAL_COMPANION_SIMPLE_INCIDENCE_WEIGHTED_PULLBACK_IDEAL_AND_NONFORCING_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_legal_five_port_pentad_window_root_budget_and_null_polar_sparsity.py",
+      "proposed_path": "claims/arbitrary-order/verify_legal_five_port_pentad_window_root_budget_and_null_polar_sparsity.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by LEGAL_FIVE_PORT_PENTAD_WINDOW_ROOT_BUDGET_AND_NULL_POLAR_SPARSITY_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py",
+      "proposed_path": "claims/p7/verify_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py",
+      "category": "claim_script",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by LEGAL_P7_SECANT_FACTOR_CODIMENSION_BARRIER_AND_ARTINIAN_PAIR_IDEAL_REDUCTION.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_lower_mixed_root_jet_deletion_label_tomography_and_squarefree_gauge.py",
+      "proposed_path": "claims/arbitrary-order/verify_lower_mixed_root_jet_deletion_label_tomography_and_squarefree_gauge.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by LOWER_MIXED_ROOT_JET_DELETION_LABEL_TOMOGRAPHY_AND_SQUAREFREE_GAUGE_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_majority_subset_internal_edge_ideal.py",
+      "proposed_path": "claims/arbitrary-order/verify_majority_subset_internal_edge_ideal.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by MAJORITY_SUBSET_INTERNAL_EDGE_IDEAL_HIERARCHY.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py",
+      "proposed_path": "claims/arbitrary-order/verify_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by MIXED_ROOT_DELETION_FILTRATION_AND_HERALD_FREE_PAIR_NO_GO.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_nonprojective_root_pair_fan_selector_tomography.py",
+      "proposed_path": "claims/arbitrary-order/verify_nonprojective_root_pair_fan_selector_tomography.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by NONPROJECTIVE_ROOT_PAIR_FAN_SELECTOR_TOMOGRAPHY_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_pinned_h4_star_torus_circuit_girth_and_p6_cubic_escape.py",
+      "proposed_path": "claims/p7/verify_pinned_h4_star_torus_circuit_girth_and_p6_cubic_escape.py",
+      "category": "claim_script",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by PINNED_H4_STAR_TORUS_CIRCUIT_GIRTH_AND_P6_CUBIC_ESCAPE.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_pinned_hafnian_star_system_and_rational_edge_tomography.py",
+      "proposed_path": "claims/arbitrary-order/verify_pinned_hafnian_star_system_and_rational_edge_tomography.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by PINNED_HAFNIAN_STAR_SYSTEM_AND_RATIONAL_EDGE_TOMOGRAPHY_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_principal_four_hafnian_generic_edge_tomography.py",
+      "proposed_path": "claims/arbitrary-order/verify_principal_four_hafnian_generic_edge_tomography.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by PRINCIPAL_FOUR_HAFNIAN_GENERIC_EDGE_TOMOGRAPHY_AND_P7_SINGULAR_FIBRE_BOUNDARY.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_residual_depth_loop_hafnian_cumulant_and_two_port_discriminant.py",
+      "proposed_path": "claims/arbitrary-order/verify_residual_depth_loop_hafnian_cumulant_and_two_port_discriminant.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by RESIDUAL_DEPTH_LOOP_HAFNIAN_CUMULANT_AND_TWO_PORT_DISCRIMINANT_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_residual_depth_observability_staircase_and_all_depth_kernel.py",
+      "proposed_path": "claims/p7/verify_residual_depth_observability_staircase_and_all_depth_kernel.py",
+      "category": "claim_script",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by RESIDUAL_DEPTH_OBSERVABILITY_STAIRCASE_AND_ALL_DEPTH_KERNEL_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_residual_relative_response_polynomial_dual_wick.py",
+      "proposed_path": "claims/arbitrary-order/verify_residual_relative_response_polynomial_dual_wick.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by RESIDUAL_RELATIVE_RESPONSE_POLYNOMIAL_DUAL_WICK_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_residual_two_port_factor_analysis_ideal_and_five_port_pentad.py",
+      "proposed_path": "claims/arbitrary-order/verify_residual_two_port_factor_analysis_ideal_and_five_port_pentad.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by RESIDUAL_TWO_PORT_FACTOR_ANALYSIS_IDEAL_AND_FIVE_PORT_PENTAD_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_residual_zeon_apolar_multi_leg_catalecticant.py",
+      "proposed_path": "claims/arbitrary-order/verify_residual_zeon_apolar_multi_leg_catalecticant.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by RESIDUAL_ZEON_APOLAR_MULTI_LEG_CATALECTICANT_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py",
+      "proposed_path": "claims/arbitrary-order/verify_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by ROOT_ARBITRARY_LOWER_MIXED_JET_COFACTOR_FRAME_NECESSITY.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py",
+      "proposed_path": "claims/arbitrary-order/verify_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by ROOT_ARBITRARY_ORDER_TWO_ENDPOINT_FULL_JET_FRAME_SHARPNESS_NOGO.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py",
+      "proposed_path": "claims/arbitrary-order/verify_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by ROOT_ARBITRARY_TWO_ENDPOINT_BINARY_COFACTOR_PORT_COMPATIBILITY_REALIZATION.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py",
+      "proposed_path": "claims/arbitrary-order/verify_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_root_at_most_one_endpoint_full_jet_axis_necessity.py",
+      "proposed_path": "claims/arbitrary-order/verify_root_at_most_one_endpoint_full_jet_axis_necessity.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by ROOT_AT_MOST_ONE_ENDPOINT_FULL_JET_AXIS_NECESSITY.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_root_finite_endpoint_full_jet_cofactor_span_bound.py",
+      "proposed_path": "claims/arbitrary-order/verify_root_finite_endpoint_full_jet_cofactor_span_bound.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by ROOT_FINITE_ENDPOINT_FULL_JET_COFACTOR_SPAN_BOUND.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_root_finite_nonroot_companion_endpoint_count_obstruction.py",
+      "proposed_path": "claims/arbitrary-order/verify_root_finite_nonroot_companion_endpoint_count_obstruction.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by ROOT_FINITE_NONROOT_COMPANION_ENDPOINT_COUNT_OBSTRUCTION.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_root_mixed_second_jet_quotient_rank_classification.py",
+      "proposed_path": "claims/arbitrary-order/verify_root_mixed_second_jet_quotient_rank_classification.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by ROOT_MIXED_SECOND_JET_QUOTIENT_RANK_CLASSIFICATION.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_root_mixed_second_jet_resonance_clique_classification.py",
+      "proposed_path": "claims/arbitrary-order/verify_root_mixed_second_jet_resonance_clique_classification.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by ROOT_MIXED_SECOND_JET_RESONANCE_CLIQUE_CLASSIFICATION.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_root_resonant_mixed_jet_parity_classification.py",
+      "proposed_path": "claims/arbitrary-order/verify_root_resonant_mixed_jet_parity_classification.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by ROOT_RESONANT_MIXED_JET_PARITY_CLASSIFICATION.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_root_restricted_jet_companion_matching_saturation_necessity.py",
+      "proposed_path": "claims/arbitrary-order/verify_root_restricted_jet_companion_matching_saturation_necessity.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by ROOT_RESTRICTED_JET_COMPANION_MATCHING_SATURATION_NECESSITY.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_root_two_residual_only_companion_third_jet_obstruction.py",
+      "proposed_path": "claims/arbitrary-order/verify_root_two_residual_only_companion_third_jet_obstruction.py",
+      "category": "claim_script",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by ROOT_TWO_RESIDUAL_ONLY_COMPANION_THIRD_JET_OBSTRUCTION.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_seven_core_fifth_permanental_compound_observability.py",
+      "proposed_path": "claims/p7/verify_seven_core_fifth_permanental_compound_observability.py",
+      "category": "claim_script",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by SEVEN_CORE_FIFTH_PERMANENTAL_COMPOUND_OBSERVABILITY_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_seven_leaf_hafnian_projected_veronese_ramification.py",
+      "proposed_path": "claims/p7/verify_seven_leaf_hafnian_projected_veronese_ramification.py",
+      "category": "claim_script",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by SEVEN_LEAF_HAFNIAN_PROJECTED_VERONESE_RAMIFICATION_AND_STRUCTURED_TANGENT_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_seven_leaf_switched_circulant_primitive_square_no_go.py",
+      "proposed_path": "claims/p7/verify_seven_leaf_switched_circulant_primitive_square_no_go.py",
+      "category": "claim_script",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by SEVEN_LEAF_SWITCHED_CIRCULANT_PRIMITIVE_SQUARE_NO_GO_THEOREM.md",
+        "co-located with owning document; audit role or independence not strengthened"
+      ]
+    },
+    {
+      "old_path": "verify_shallow_hafnian_hessian_two_deck_inversion_and_p7_legal_sensor_interface.py",
+      "proposed_path": "claims/p7/verify_shallow_hafnian_hessian_two_deck_inversion_and_p7_legal_sensor_interface.py",
+      "category": "claim_script",
+      "claim_family": "p7",
+      "confidence": "high",
+      "evidence": [
+        "exact primary verifier named by SHALLOW_HAFNIAN_HESSIAN_TWO_DECK_INVERSION_AND_P7_LEGAL_SENSOR_INTERFACE.md",
+        "co-located with owning document; audit role or independence not strengthened"
       ]
     }
   ]

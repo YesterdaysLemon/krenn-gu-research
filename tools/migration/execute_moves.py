@@ -14,14 +14,17 @@ Every executable batch is a committed JSON file under
 mappings it approves (see tools/migration/batch_contract.py):
 
     {
+      "batch_schema_version": 2,
       "batch_id": "...",
       "approved_by": "...",
       "approved_at": "YYYY-MM-DD",
       "base_sha": "...",
       "manifest_sha256": "...",
       "mapping_sha256": "...",
+      "source_identity_sha256": "...",
       "member_count": N,
-      "moves": [{"old_path": "...", "new_path": "..."}, ...]
+      "moves": [{"old_path": "...", "new_path": "...",
+                 "source_blob": "..."}, ...]
     }
 
 Before the FIRST git mv, this tool verifies (refusing outright on any
@@ -35,6 +38,8 @@ failure):
     since approval);
   - every batch mapping equals the CURRENT manifest mapping
     (manifest has not drifted since approval).
+  - every executable batch uses schema v2, its reviewed base is an ancestor
+    of HEAD, and each source blob matches both the base and execution HEAD.
 
 Additional safety contract (independently re-verified here):
 
@@ -89,10 +94,11 @@ def _resolve_committed_batch_path(batch_id: str | None,
     batch files are refused.
     """
     if batch_id is not None:
-        return BATCH_DIR / f"{batch_id}.json"
-    raw = pathlib.Path(batch_file)
-    path = (raw if raw.is_absolute()
-            else (ROOT / raw)).resolve()
+        path = (BATCH_DIR / f"{batch_id}.json").resolve()
+    else:
+        raw = pathlib.Path(batch_file)
+        path = (raw if raw.is_absolute()
+                else (ROOT / raw)).resolve()
     batch_dir = BATCH_DIR.resolve()
     try:
         path.relative_to(batch_dir)
@@ -210,6 +216,21 @@ def main() -> int:
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     manifest_moves = manifest["moves"]
     by_src = {m["old_path"]: m for m in manifest_moves}
+
+    # Historical schema-v1 batches remain valid provenance for already
+    # executed moves, but every batch that can still mutate the tree must use
+    # schema v2 and pin per-source Git blobs.  This blocks a newly created
+    # legacy-shaped batch from bypassing the source-identity gate.
+    pending_members = [
+        bm for bm in batch_def["moves"]
+        if by_src.get(bm.get("old_path"), {}).get("status") != "moved"
+    ]
+    if pending_members and batch_def.get("batch_schema_version") != 2:
+        print("BATCH CONTRACT VIOLATION — refusing before the first "
+              "git mv:")
+        print("  - every executable batch must use "
+              "batch_schema_version=2 with frozen source blobs")
+        return 2
 
     # 1. Frozen-contract validation — refusal before the first git mv.
     contract_problems = contract_validate(batch_def, ROOT,

@@ -156,7 +156,12 @@ Record:
 
 Create a committed batch artifact.
 
-Validate its exact mapping and mandatory mapping hash.
+Use batch schema v2.  Validate its exact mapping and mandatory mapping hash,
+freeze every source path's Git blob at the reviewed merged-main base, and
+record the canonical source-identity hash.  The reviewed base must remain an
+ancestor of the execution head, and every source blob must still match at
+execution.  Historical schema-v1 batches remain provenance for already
+completed moves but may not execute a pending move.
 
 Record the actual reviewer and authority basis in `approved_by`.
 
