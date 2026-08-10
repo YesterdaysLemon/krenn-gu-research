@@ -1480,6 +1480,65 @@ class FinalContractTests(unittest.TestCase):
         finally:
             target.unlink(missing_ok=True)
 
+    def test_pending_schema_v1_batch_refused_before_first_move(self):
+        import contextlib
+        import io
+        from unittest import mock
+
+        import execute_moves
+
+        tmp = pathlib.Path(tempfile.mkdtemp())
+        catalog = tmp / "catalog"
+        catalog.mkdir()
+        source = tmp / "A.md"
+        destination = tmp / "docs" / "A.md"
+        source.write_text("unchanged\n", encoding="utf-8")
+        manifest = {
+            "moves": [{
+                "old_path": "A.md",
+                "new_path": "docs/A.md",
+                "status": "proposed_high_confidence",
+            }],
+            "collision_report": [],
+            "double_move_report": [],
+            "overlap_cycle_report": [],
+        }
+        manifest_path = catalog / "moved-paths.json"
+        manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+        manifest_before = manifest_path.read_bytes()
+        source_before = source.read_bytes()
+        legacy_batch = {
+            "batch_id": "legacy-pending",
+            "approved_by": "tester",
+            "approved_at": "2026-08-09",
+            "base_sha": self.base,
+            "member_count": 1,
+            "moves": [{
+                "old_path": "A.md",
+                "new_path": "docs/A.md",
+            }],
+            "mapping_sha256": canonical_mapping_hash(manifest["moves"]),
+        }
+        stdout = io.StringIO()
+        with mock.patch.object(execute_moves, "ROOT", tmp), \
+                mock.patch.object(execute_moves, "CATALOG", catalog), \
+                mock.patch.object(
+                    execute_moves, "load_batch",
+                    return_value=(legacy_batch,
+                                  catalog / "batches" /
+                                  "legacy-pending.json")), \
+                mock.patch.object(
+                    sys, "argv",
+                    ["execute_moves.py", "--batch-id", "legacy-pending"]), \
+                contextlib.redirect_stdout(stdout):
+            rc = execute_moves.main()
+
+        self.assertEqual(rc, 2)
+        self.assertIn("batch_schema_version=2", stdout.getvalue())
+        self.assertEqual(source.read_bytes(), source_before)
+        self.assertFalse(destination.exists())
+        self.assertEqual(manifest_path.read_bytes(), manifest_before)
+
     def test_batch_id_resolves_into_catalog_batches(self):
         import sys as _sys
         _sys.path.insert(0, str(pathlib.Path(__file__).resolve()
