@@ -9,6 +9,7 @@ validation.
 Batch file schema (catalog/batches/<batch_id>.json)::
 
     {
+      "batch_schema_version": 2,
       "batch_id": "...",
       "approved_by": "...",
       "approved_at": "YYYY-MM-DD",
@@ -16,8 +17,10 @@ Batch file schema (catalog/batches/<batch_id>.json)::
       "manifest_sha256": "<sha256 of catalog/moved-paths.json at
                            approval time>",
       "mapping_sha256": "<canonical_mapping_hash of `moves`>",
+      "source_identity_sha256": "<canonical source identity hash>",
       "member_count": N,
-      "moves": [ {"old_path": "...", "new_path": "..."}, ... ],
+      "moves": [ {"old_path": "...", "new_path": "...",
+                   "source_blob": "<Git blob oid at base_sha>"}, ... ],
       "rationale": "...",            (optional, recommended)
       "notes": "..."                 (optional)
     }
@@ -46,6 +49,12 @@ but the full manifest naturally changes as execution statuses flip
 execution time without spurious refusals.  The canonical mapping hash
 is the durable old->new approval binding; the mapping-vs-manifest
 equality check covers destination drift.
+
+Schema v2 also freezes every source Git blob, requires the reviewed base to
+be an ancestor of the execution head, and refuses execution if a source blob
+differs at either the reviewed base or the current committed head.  Historical
+schema-v1 batches remain provenance for completed moves; the executor refuses
+to use them for any still-pending move.
 """
 
 from __future__ import annotations
@@ -53,6 +62,10 @@ from __future__ import annotations
 import hashlib
 import json
 import pathlib
+import subprocess
+
+
+BATCH_SCHEMA_VERSION = 2
 
 
 def canonical_mapping_hash(moves) -> str:
@@ -71,6 +84,27 @@ def canonical_mapping_hash(moves) -> str:
     blob = json.dumps(canonical, sort_keys=True,
                       separators=(",", ":")).encode("utf-8")
     return hashlib.sha256(blob).hexdigest()
+
+
+def canonical_source_identity_hash(moves) -> str:
+    """SHA-256 over exact old/new mappings and their source Git blobs."""
+    canonical = sorted(
+        ({"old_path": m["old_path"], "new_path": m["new_path"],
+          "source_blob": m["source_blob"]}
+         for m in moves),
+        key=lambda d: (d["old_path"], d["new_path"], d["source_blob"]))
+    blob = json.dumps(canonical, sort_keys=True,
+                      separators=(",", ":")).encode("utf-8")
+    return hashlib.sha256(blob).hexdigest()
+
+
+def _git_blob(root: pathlib.Path, ref: str, rel: str) -> str | None:
+    proc = subprocess.run(
+        ["git", "rev-parse", "--verify", f"{ref}:{rel}"],
+        cwd=root, capture_output=True, text=True)
+    if proc.returncode != 0:
+        return None
+    return proc.stdout.strip()
 
 
 def manifest_sha256(root: pathlib.Path) -> str:
@@ -98,15 +132,23 @@ def make_batch(batch_id, approved_by, approved_at, base_sha, members,
             raise ValueError(f"{src} is not in the manifest")
         if m["status"] == "moved":
             raise ValueError(f"{src} is already moved")
+        source_blob = _git_blob(root, str(base_sha), m["old_path"])
+        if source_blob is None:
+            raise ValueError(
+                f"cannot resolve source blob at {base_sha}: "
+                f"{m['old_path']}")
         moves.append({"old_path": m["old_path"],
-                      "new_path": m["new_path"]})
+                      "new_path": m["new_path"],
+                      "source_blob": source_blob})
     batch = {
+        "batch_schema_version": BATCH_SCHEMA_VERSION,
         "batch_id": batch_id,
         "approved_by": approved_by,
         "approved_at": approved_at,
         "base_sha": base_sha,
         "manifest_sha256": manifest_sha256(root),
         "mapping_sha256": canonical_mapping_hash(moves),
+        "source_identity_sha256": canonical_source_identity_hash(moves),
         "member_count": len(moves),
         "moves": sorted(moves, key=lambda m: m["old_path"]),
     }
@@ -137,13 +179,61 @@ def validate_batch(batch: dict, root: pathlib.Path,
         problems.append("batch missing approved_at")
 
     # base_sha must resolve in this repository.
-    import subprocess
     proc = subprocess.run(
         ["git", "rev-parse", "--verify", str(batch["base_sha"]) + "^{commit}"],
         cwd=root, capture_output=True, text=True)
     if proc.returncode != 0:
         problems.append(
             f"batch base_sha does not resolve: {batch['base_sha']}")
+
+    schema_version = batch.get("batch_schema_version", 1)
+    if schema_version == BATCH_SCHEMA_VERSION:
+        source_digest = batch.get("source_identity_sha256")
+        if not source_digest:
+            problems.append(
+                "schema-v2 batch missing required field: "
+                "source_identity_sha256")
+        missing_blobs = [
+            m.get("old_path", "<unknown>") for m in batch["moves"]
+            if not isinstance(m, dict) or not m.get("source_blob")]
+        if missing_blobs:
+            problems.append(
+                "schema-v2 batch moves missing source_blob: "
+                f"{missing_blobs[:10]}")
+        if not missing_blobs:
+            actual_source_digest = canonical_source_identity_hash(
+                batch["moves"])
+            if source_digest != actual_source_digest:
+                problems.append(
+                    "batch source_identity_sha256 does not match its "
+                    "own source identities (batch altered after approval)")
+
+            # The reviewed merged-main base must be in the ancestry of the
+            # execution head.  Dry-run and batch commits may sit above it,
+            # so equality would be too strict.
+            ancestor = subprocess.run(
+                ["git", "merge-base", "--is-ancestor",
+                 str(batch["base_sha"]), "HEAD"], cwd=root)
+            if ancestor.returncode != 0:
+                problems.append(
+                    "batch base_sha is not an ancestor of execution HEAD")
+
+            for move in batch["moves"]:
+                old = move["old_path"]
+                frozen = move["source_blob"]
+                at_base = _git_blob(root, str(batch["base_sha"]), old)
+                at_head = _git_blob(root, "HEAD", old)
+                if at_base != frozen:
+                    problems.append(
+                        f"frozen source blob differs from base for {old}: "
+                        f"batch={frozen} base={at_base}")
+                if at_head != frozen:
+                    problems.append(
+                        f"source blob drift at execution HEAD for {old}: "
+                        f"batch={frozen} head={at_head}")
+    elif schema_version != 1:
+        problems.append(
+            f"unsupported batch_schema_version: {schema_version!r}")
 
     # member_count must equal the mapping list.
     if batch["member_count"] != len(batch["moves"]):

@@ -902,6 +902,7 @@ class StaleReferenceTests(unittest.TestCase):
 
 from batch_contract import (  # noqa: E402
     canonical_mapping_hash,
+    canonical_source_identity_hash,
     make_batch,
     validate_batch as contract_validate,
     validate_executed_provenance,
@@ -981,6 +982,52 @@ class BatchIntegrityTests(unittest.TestCase):
              {"old_path": "A.md", "new_path": "docs/A.md"}])
         self.assertEqual(b1["mapping_sha256"], manual)
 
+    def test_schema_v2_freezes_source_blobs_deterministically(self):
+        b1 = self._make()
+        b2 = self._make()
+        self.assertEqual(b1["batch_schema_version"], 2)
+        self.assertTrue(all(m.get("source_blob")
+                            for m in b1["moves"]))
+        self.assertEqual(b1["source_identity_sha256"],
+                         b2["source_identity_sha256"])
+        self.assertEqual(
+            b1["source_identity_sha256"],
+            canonical_source_identity_hash(reversed(b1["moves"])))
+
+    def test_altered_source_identity_refused(self):
+        batch = self._make()
+        batch["moves"][0]["source_blob"] = "0" * 40
+        manifest = json.loads((self.tmp / "catalog" /
+                               "moved-paths.json").read_text())
+        problems = contract_validate(batch, self.tmp, manifest["moves"])
+        self.assertTrue(any("source_identity_sha256" in p
+                            or "source blob" in p for p in problems),
+                        problems)
+
+    def test_execution_head_source_drift_refused(self):
+        batch = self._make()
+        (self.tmp / "A.md").write_text("changed\n", encoding="utf-8")
+        _git(self.tmp, "add", "A.md")
+        _git(self.tmp, "commit", "-q", "-m", "drift")
+        manifest = json.loads((self.tmp / "catalog" /
+                               "moved-paths.json").read_text())
+        problems = contract_validate(batch, self.tmp, manifest["moves"])
+        self.assertTrue(any("execution HEAD" in p for p in problems),
+                        problems)
+
+    def test_nonancestor_execution_head_refused(self):
+        batch = self._make()
+        tree = _git(self.tmp, "rev-parse", "HEAD^{tree}").stdout.strip()
+        unrelated = _git(
+            self.tmp, "commit-tree", tree, "-m", "unrelated root"
+        ).stdout.strip()
+        _git(self.tmp, "checkout", "-q", unrelated)
+        manifest = json.loads((self.tmp / "catalog" /
+                               "moved-paths.json").read_text())
+        problems = contract_validate(batch, self.tmp, manifest["moves"])
+        self.assertTrue(any("not an ancestor" in p for p in problems),
+                        problems)
+
     def test_altered_destination_refused(self):
         batch = self._make()
         batch["moves"][0]["new_path"] = "docs/EVIL.md"
@@ -1041,11 +1088,8 @@ class BatchIntegrityTests(unittest.TestCase):
                                for p in problems))
 
     def test_unresolvable_base_sha_refused(self):
-        batch = self._make(base_sha="f" * 40)
-        manifest = json.loads((self.tmp / "catalog" /
-                               "moved-paths.json").read_text())
-        problems = contract_validate(batch, self.tmp, manifest["moves"])
-        self.assertTrue(any("base_sha" in p for p in problems))
+        with self.assertRaisesRegex(ValueError, "cannot resolve source blob"):
+            self._make(base_sha="f" * 40)
 
     def test_manifest_drift_after_approval_refused(self):
         batch = self._make()
@@ -1419,13 +1463,32 @@ class FinalContractTests(unittest.TestCase):
         finally:
             target.unlink(missing_ok=True)
 
+    def test_untracked_batch_id_refused(self):
+        import sys as _sys
+        _sys.path.insert(0, str(pathlib.Path(__file__).resolve()
+                                .parents[1] / "tools" / "migration"))
+        from execute_moves import _resolve_committed_batch_path
+        repo = pathlib.Path(__file__).resolve().parents[1]
+        target = repo / "catalog" / "batches" / \
+            "_untracked_batch_id_test.json"
+        target.write_text("{}", encoding="utf-8")
+        try:
+            with self.assertRaises(SystemExit) as ctx:
+                _resolve_committed_batch_path(
+                    "_untracked_batch_id_test", None)
+            self.assertIn("untracked", str(ctx.exception))
+        finally:
+            target.unlink(missing_ok=True)
+
     def test_batch_id_resolves_into_catalog_batches(self):
         import sys as _sys
         _sys.path.insert(0, str(pathlib.Path(__file__).resolve()
                                 .parents[1] / "tools" / "migration"))
         from execute_moves import _resolve_committed_batch_path, BATCH_DIR
-        path = _resolve_committed_batch_path("some-batch", None)
-        self.assertEqual(path, BATCH_DIR / "some-batch.json")
+        path = _resolve_committed_batch_path(
+            "p5-frontier-stage29", None)
+        self.assertEqual(
+            path, (BATCH_DIR / "p5-frontier-stage29.json").resolve())
 
 
 class ManifestSummaryInvariantTests(unittest.TestCase):
