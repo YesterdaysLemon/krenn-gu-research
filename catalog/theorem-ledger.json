@@ -82,7 +82,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "75d3d69cd9b4a8ec",
+      "document_sha256_16": "9e3aab67bfa92189",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -494,6 +494,36 @@
         "MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md",
         "audit_maximal_torus_root_saturation_and_coordinate_absorption.py",
         "verify_maximal_torus_root_saturation_and_coordinate_absorption.py"
+      ]
+    },
+    {
+      "name": "Rigid-Colour Cofactor Annihilation and Backbone-Cancellation Boundary",
+      "document": "claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md",
+      "document_sha256_16": "96aecff02ad3e367",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact matching-bijection and alternating-cycle proofs over C",
+        "ternary r=1 complete nonzero matrix-unit branch at even n>=6",
+        "global c-rigidity is assumed only for the coefficient factorization and annihilating-deletion-deck equivalence",
+        "near-monochromatic, two-point, and minimal-deviation identities require no rigidity",
+        "the exact six-vertex graph refutes a backbone-cancellation shortcut but is not a Krenn-Gu witness",
+        "neither the rigid nor nonrigid r=1 boundary is excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_rigid_colour_cofactor_annihilation_and_backbone_cancellation_boundary.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_rigid_colour_cofactor_annihilation_and_backbone_cancellation_boundary.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "The arbitrary-order proof is the written coefficient partition and minimal-deviation symmetric-difference grouping. The scripts are bounded supporting checks of the 15-matchings/3^6-word gadget and exact deck conventions, not the arbitrary-order proof. The gadget cancels all selected Bogdanov-backbone mixed matchings but fails exactly six off-backbone words; global status remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md",
+        "audit_rigid_colour_cofactor_annihilation_and_backbone_cancellation_boundary.py",
+        "verify_rigid_colour_cofactor_annihilation_and_backbone_cancellation_boundary.py"
       ]
     },
     {
@@ -1910,7 +1940,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "75d3d69cd9b4a8ec",
+      "document_sha256_16": "9e3aab67bfa92189",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -2053,7 +2083,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "75d3d69cd9b4a8ec",
+      "document_sha256_16": "9e3aab67bfa92189",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
