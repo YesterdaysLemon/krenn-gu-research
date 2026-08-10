@@ -82,7 +82,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "9e3aab67bfa92189",
+      "document_sha256_16": "3c3ed56c3bdf8caf",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -524,6 +524,67 @@
         "RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md",
         "audit_rigid_colour_cofactor_annihilation_and_backbone_cancellation_boundary.py",
         "verify_rigid_colour_cofactor_annihilation_and_backbone_cancellation_boundary.py"
+      ]
+    },
+    {
+      "name": "Matrix-Unit Four-Switch, Minimal-Port, and Partial-Bridge Reduction Theorem",
+      "document": "claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md",
+      "document_sha256_16": "fd6bb6477aab95eb",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact matching, support, and alternating-cycle proofs over C",
+        "ternary r=1 complete nonzero matrix-unit branch at even n>=6",
+        "the minimum is over matching-induced nonconstant words and colours occurring in those words",
+        "the pure-support and k=3 normal forms are conditional on global minimum k>=3 and k=3 respectively",
+        "the fixed-colour partial-bridge conclusion imports the original double-star and multi-star hypotheses",
+        "the displayed six- and eight-vertex systems refute propagation shortcuts but are not Krenn-Gu witnesses",
+        "k=1,2,3, proper partial flags, arbitrary-order global rigidity, and the full r=1 branch remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_matrix_unit_four_switch_minimal_port_and_partial_bridge.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_matrix_unit_four_switch_minimal_port_and_partial_bridge.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "The arbitrary-order proof is the written four-switch, canonical-partition, matching-partition, and alternating-cycle argument. The scripts are bounded convention and exact-countermechanism checks, not a graph enumeration or substitutes for the proof. The theorem reduces a minimum word to at most four ports and identifies a partial-bridge boundary; it does not exclude that boundary or resolve the global conjecture.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md",
+        "audit_matrix_unit_four_switch_minimal_port_and_partial_bridge.py",
+        "verify_matrix_unit_four_switch_minimal_port_and_partial_bridge.py"
+      ]
+    },
+    {
+      "name": "Rigid-Colour Three-Block Binary Primitive and Quadratic-Bridge Theorem",
+      "document": "claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_BINARY_PRIMITIVE_AND_QUADRATIC_BRIDGE_THEOREM.md",
+      "document_sha256_16": "663a5fe8053f5bc1",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact hafnian-convolution, matching-partition, and incidence proofs over C",
+        "ternary r=1 complete nonzero matrix-unit branch at even n>=6 with one colour globally rigid",
+        "the annihilating principal-deletion system is imported from the upstream rigid-colour theorem",
+        "the symbolic exclusion applies to n=6 only",
+        "the arbitrary even mediator in the three-block primitive remains open",
+        "the infinite shift family omits physical completion and is a route countermechanism, not a witness"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_rigid_colour_three_block_binary_primitive_and_quadratic_bridge.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_rigid_colour_three_block_binary_primitive_and_quadratic_bridge.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "The arbitrary-order reductions are the written rigid-colour application of the imported hafnian convolution, binary-cut, and two-boundary identities; the order-six exclusion is the written three-cell incidence classification. The scripts are bounded supporting checks and do not establish arbitrary-order exhaustiveness. The globally rigid branch is excluded only at n=6; the arbitrary-order branch and global conjecture remain UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "RIGID_COLOUR_THREE_BLOCK_BINARY_PRIMITIVE_AND_QUADRATIC_BRIDGE_THEOREM.md",
+        "audit_rigid_colour_three_block_binary_primitive_and_quadratic_bridge.py",
+        "verify_rigid_colour_three_block_binary_primitive_and_quadratic_bridge.py"
       ]
     },
     {
@@ -1940,7 +2001,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "9e3aab67bfa92189",
+      "document_sha256_16": "3c3ed56c3bdf8caf",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -2083,7 +2144,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "9e3aab67bfa92189",
+      "document_sha256_16": "3c3ed56c3bdf8caf",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
