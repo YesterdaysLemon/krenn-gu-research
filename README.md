@@ -125,6 +125,18 @@ Krenn--Gu counterexample, and general cancelling completions remain open.
 See
 [`RIGID_COLOUR_THREE_BLOCK_PRIMITIVE_SHARPNESS_AND_DUAL_BRIDGE_COMPLETION_OBSTRUCTION.md`](claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_PRIMITIVE_SHARPNESS_AND_DUAL_BRIDGE_COMPLETION_OBSTRUCTION.md).
 
+The complete one-root matrix-unit branch now also has an exact parity and
+rigid-head reduction.  For each colour, an intersecting cross-edge support
+can be erased without changing the tensor, moving the realization into a
+globally rigid multi-root branch; two disjoint cross flags instead force a
+monochromatic bridge or the existing deeper blocker component.  The global
+parity-zero sector supplies binary bridge squares and ternary bridge
+hexagons, and every proper rigid core obeys an all-order Wick tower coupling
+its flags to pure principal hafnians of the other colours.  These moves do
+not preserve the exact induced word under bridge normalization and do not
+force a proper nonrigidity set to become global.  See
+[`MATRIX_UNIT_CROSS_PARITY_ERASURE_RIGID_HEAD_WICK_AND_BRIDGE_CORE_REDUCTION_THEOREM.md`](claims/arbitrary-order/MATRIX_UNIT_CROSS_PARITY_ERASURE_RIGID_HEAD_WICK_AND_BRIDGE_CORE_REDUCTION_THEOREM.md).
+
 On that clean `P_6` fan, target diagonality has now been translated exactly.
 If the fan is invertible, each target-colour deck vector lies in the inverse
 image of `Seg(P^1 x P^2)` and therefore obeys three pulled-back `2 x 2`

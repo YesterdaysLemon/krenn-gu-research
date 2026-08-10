@@ -104,6 +104,21 @@ shore with arbitrary binary matrix-unit chords leaves uniquely supported
 forbidden deletion words.  Partial or two-shore cancelling completions and
 the arbitrary-order globally rigid branch remain open.
 
+The
+[`cross-parity, rigid-head Wick, and bridge-core theorem`](MATRIX_UNIT_CROSS_PARITY_ERASURE_RIGID_HEAD_WICK_AND_BRIDGE_CORE_REDUCTION_THEOREM.md)
+returns to the full one-root matrix-unit branch.  A coordinate-sign
+projection separates the number of one-colour cross edges.  An intersecting
+cross support erases exactly to a globally rigid realization with at least
+two torus roots; two disjoint flags force a monochromatic bridge or the
+existing deeper blocker component.  The ternary parity-zero sector further
+produces explicit binary bridge squares and ternary bridge hexagons, while a
+rigid-head matching partition gives an all-order pure-hafnian Wick tower.
+In the no-deeper branch the non-bridge pairs on a nonrigidity set form a
+functional pseudoforest, sharply restricting the existing pure-support
+components.  Bridge normalization changes the exact word, proper
+nonrigidity sets need not propagate, and both the erased multi-root and
+deeper branches remain open.
+
 At the Stage 27 boundary, the owner-gated H22/H31, Component20/21/23,
 high-coordinate, and mixed-lifecycle conflict surfaces were excluded from
 that batch and remained at root, unmoved and unadjudicated at that stage.
