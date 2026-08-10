@@ -682,7 +682,7 @@ The separate nonzero divisor inside the preferred component chart,
 the first-plane Schubert line at infinity, and the internal `E=0`
 divisor are now closed at complete marked-fibre level:
 
-- [`P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md`](P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md)
+- [`P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md`](claims/p5/h31/component-chart-boundary-marked-fibre/P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md)
 - [`P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md`](claims/p5/h31/component-fibre-infinity-marked-fibre/P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md)
 - [`P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md`](claims/p5/h31/internal-e0-marked-fibre/P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md)
 

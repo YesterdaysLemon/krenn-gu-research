@@ -3,7 +3,7 @@
 Most subdirectories are migrated component-level generic marked-`H31`
 claim packages: theorem document + primary verifier + an independent
 audit where one exists, moved together with preserved filenames.  There
-are eight scoped exceptions.  The `embedded-p3/` package contains the
+are nine scoped exceptions.  The `embedded-p3/` package contains the
 complete five-triple generic, boundary, and projective component-closure
 forest.  The three single-gate directories form one complete
 rank-one-gate obstruction forest, not a generic package or complete
@@ -18,6 +18,11 @@ second or further component, or a whole-component theorem.
 The `component-chart-boundary/` package is the exact canonical-section
 obstruction on one nonzero preferred-chart divisor of that first component;
 it is not the later complete marked-fibre strengthening.
+The `component-chart-boundary-marked-fibre/` package is the exact complete
+marked-basis-fibre strengthening on that same divisor.  Its reconciliation
+distinguishes 13 irreducible projection components from 16 factor-certificate
+records (13 generic-basis plus 3 exceptional-basis records); it is not a
+whole-component theorem.
 The `component-fiber-infinity/` package is the exact canonical marked-row
 section obstruction on the first-plane Schubert-infinity divisor where the
 other three selected preferred Pluecker coordinates remain nonzero; it is not
@@ -55,11 +60,15 @@ Stage 23 used batch `p5-h31-component-fiber-infinity-stage23`
 Stage 24 used batch
 `p5-h31-component-fibre-infinity-marked-fibre-stage24` (mapping_sha256
 `103e5de3343c1271841a84cfa79903c9d9e8c6f2c318adc8325c3b8cd1a3ace1`).
+The reconciled chart-boundary complete marked-fibre package used batch
+`h31-cbmf-reconciled-root-exit` (mapping_sha256
+`9d9c85b5dc89958ea0127f6ed5f7fe8000b060294e17966a70321a36b709f39e`).
 
 Except for the `embedded-p3/` component-closure forest, the diagonal `p+q=0`
 wall subforest, the single-gate branch forest, and the internal-`E=0` divisor
 leaf, toric marked-fibre boundary leaf, and canonical chart-boundary section
-leaf, canonical first-plane Schubert-infinity section leaf, and complete
+leaf, complete chart-boundary marked-fibre leaf, canonical first-plane
+Schubert-infinity section leaf, and complete
 first-plane Schubert-infinity marked-fibre leaf described below,
 every theorem in the generic-package table is a
 **generic/function-field** statement: the marked `H31` fibre is empty at the
@@ -200,12 +209,12 @@ The primary is the characteristic-zero replay.  The no-primary-import audit
 uses separately implemented dynamic-programming permanents and modular row
 reduction over `F5/F7`; it is modular QA, not the characteristic-zero proof.
 This leaf does not cover arbitrary kernel-row shifts or the complete
-marked-basis fibre.  The later full marked-fibre theorem, primary, audit, and
-uniquely owned elimination generator remain together as grandfathered root
-debt.  Their proposed Stage 23 batch was deferred because the theorem says
-fourteen certificate strata while the primary asserts and reports sixteen;
-the [deferred audit](../../../docs/architecture/p5-h31-component-chart-boundary-marked-fibre-stage23-dry-run.md)
-preserves that owner-gated contradiction.  This leaf is not generic, a whole-component theorem, or
+marked-basis fibre.  The later full marked-fibre package is now separately
+owned in `component-chart-boundary-marked-fibre/`; its bounded reconciliation
+resolved the former component/record count contradiction without changing
+this canonical predecessor.  The historical
+[deferred audit](../../../docs/architecture/p5-h31-component-chart-boundary-marked-fibre-stage23-dry-run.md)
+preserves the pre-reconciliation state.  This leaf is not generic, a whole-component theorem, or
 component-closure evidence, and it changes no status for later components,
 weighted `H22`, `P5 -> Delta3`, or the global conjecture.
 
@@ -214,6 +223,35 @@ leaf's `D=0, a!=0` chart is recorded without adjudication in the
 [Stage 22 dry run](../../../docs/architecture/p5-h31-component-chart-boundary-stage22-dry-run.md).
 Retargeting that link does not endorse either attribution.  No selected
 artifact has a curated theorem-ledger entry.
+
+## First-component complete chart-boundary marked fibre
+
+The four-file package in `component-chart-boundary-marked-fibre/` gives an
+exact characteristic-zero obstruction for the complete marked-basis fibre on
+the same nonzero preferred-chart divisor as the canonical predecessor.  It
+covers every plane tuple on the divisor, every kernel-row shift, all four
+distinguished-source orientations, and every binary `Delta_2` extension
+direction with both diagonal coefficients nonzero.
+
+| scope | theorem | verifier | audit | generator |
+|---|---|---|---|---|
+| complete marked-basis fibre on the nonzero preferred-chart divisor | `P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md` | `verify_p5_h31_component_chart_boundary_marked_fibre.py` | `audit_p5_h31_component_chart_boundary_marked_fibre.py` | `derive_p5_h31_chart_boundary_marked_fibre_elimination.py` |
+
+The bounded owner-authorized reconciliation found 14 mixed binary equations,
+13 irreducible projection components, 16 factor-certificate records, 12
+selected minor entries, and 3 exceptional-basis records.  Two record overlaps
+are assigned explicitly, and two projection-closure-only loci are excluded by
+exact diagonal-row identities.  The default primary executes four saturated
+unit-ideal computations over characteristic zero; those unit ideals are the
+mechanical exhaustiveness proof.  The 16 local residual identities provide a
+human-auditable explanation, while the `F5/F7` audit remains modular QA only.
+See the
+[reconciliation audit](../../../docs/audits/h31-cbmf-characteristic-zero-reconciliation.md).
+
+This result remains confined to one divisor of the first known component.  It
+does not close the rest of that component, a second or further component,
+component exhaustiveness, weighted `H22`, `P5 -> Delta3`, gluing, or the
+global conjecture.  No selected artifact has a curated theorem-ledger entry.
 
 ## First-plane Schubert-infinity canonical section
 
@@ -283,9 +321,9 @@ independent of the family primary and characteristic-zero proof route, with a
 shared finite-field helper implementation.  This modular enumeration is QA;
 the characteristic-zero residual-cover ideals are the proof.
 
-This package does not consume or repair the separately blocked complete
-chart-boundary marked-fibre family, whose theorem says fourteen certificate
-strata while its primary constructs, asserts, and reports sixteen.  It also
+This package does not consume the separately owned, now-reconciled complete
+chart-boundary marked-fibre package; each remains scoped to its own divisor.
+It also
 does not adjudicate the pre-existing P4 attribution conflict between internal
 `E=0` and the separate nonzero-chart divisor `D=0,a!=0`, or the broader
 first/second-component status-provenance conflict.  It does not close the rest

@@ -273,9 +273,9 @@
     "claim_data": 17
   },
   "confidence_counts": {
-    "medium": 870,
+    "medium": 866,
     "low": 426,
-    "high": 948
+    "high": 952
   },
   "classified_count": 2244,
   "unclassified_count": 119,
@@ -9602,10 +9602,11 @@
       "proposed_path": "claims/p5/h31/component-chart-boundary-marked-fibre/P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md",
       "category": "claim_document",
       "claim_family": "p5/h31/component-chart-boundary-marked-fibre",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
         "filename prefix P5_H31_ family",
-        "family slug component-chart-boundary-marked-fibre (suffix-stripped fallback)"
+        "family slug component-chart-boundary-marked-fibre (suffix-stripped fallback)",
+        "owner-authorized characteristic-zero reconciliation audit supports precise outcome A; component and certificate-record terminology corrected without status drift"
       ]
     },
     {
@@ -15945,10 +15946,11 @@
       "proposed_path": "claims/p5/h31/component-chart-boundary-marked-fibre/audit_p5_h31_component_chart_boundary_marked_fibre.py",
       "category": "claim_script",
       "claim_family": "p5/h31/component-chart-boundary-marked-fibre",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
         "filename prefix P5_H31_ family",
-        "family slug component-chart-boundary-marked-fibre (suffix-stripped fallback)"
+        "family slug component-chart-boundary-marked-fibre (suffix-stripped fallback)",
+        "owner-authorized characteristic-zero reconciliation audit supports precise outcome A; component and certificate-record terminology corrected without status drift"
       ]
     },
     {
@@ -18406,9 +18408,10 @@
       "proposed_path": "claims/p5/h31/component-chart-boundary-marked-fibre/derive_p5_h31_chart_boundary_marked_fibre_elimination.py",
       "category": "claim_script",
       "claim_family": "p5/h31/component-chart-boundary-marked-fibre",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
-        "stage23_authorized_review: uniquely owned elimination generator imported and hashed by the family primary and named by the family theorem as its regeneration command; no other Python importer"
+        "stage23_authorized_review: uniquely owned elimination generator imported and hashed by the family primary and named by the family theorem as its regeneration command; no other Python importer",
+        "owner-authorized characteristic-zero reconciliation audit supports precise outcome A; component and certificate-record terminology corrected without status drift"
       ]
     },
     {
@@ -22712,10 +22715,11 @@
       "proposed_path": "claims/p5/h31/component-chart-boundary-marked-fibre/verify_p5_h31_component_chart_boundary_marked_fibre.py",
       "category": "claim_script",
       "claim_family": "p5/h31/component-chart-boundary-marked-fibre",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
         "filename prefix P5_H31_ family",
-        "family slug component-chart-boundary-marked-fibre (suffix-stripped fallback)"
+        "family slug component-chart-boundary-marked-fibre (suffix-stripped fallback)",
+        "owner-authorized characteristic-zero reconciliation audit supports precise outcome A; component and certificate-record terminology corrected without status drift"
       ]
     },
     {

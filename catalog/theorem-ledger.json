@@ -81,7 +81,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "5e2cca2e8c0db718",
+      "document_sha256_16": "948c5c52819e964e",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -96,7 +96,7 @@
     {
       "name": "Frontier reduction: any P5->Delta3 restriction forces an H31 or H22 local family",
       "document": "P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md",
-      "document_sha256_16": "2c76cd29b4452553",
+      "document_sha256_16": "886a35bd91f39ff9",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact reductions over C",
@@ -1756,7 +1756,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "5e2cca2e8c0db718",
+      "document_sha256_16": "948c5c52819e964e",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -1892,7 +1892,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "5e2cca2e8c0db718",
+      "document_sha256_16": "948c5c52819e964e",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
