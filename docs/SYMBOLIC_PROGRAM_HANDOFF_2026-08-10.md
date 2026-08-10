@@ -4,14 +4,14 @@
 
 The global Krenn--Gu conjecture remains **UNRESOLVED**. This document records
 the next exact symbolic obligations after the repository root exit.  The
-current checkpoint adds exact arbitrary-order all-bridge and balanced-sensor
-theorems plus one proved boundary for a characteristic-two route.  None
-closes both branches of the global extraction/gluing obligation or changes
-global status.
+current checkpoint adds exact arbitrary-order all-bridge, balanced-sensor,
+and maximal-torus-root theorems plus one proved boundary for a
+characteristic-two route.  None closes every branch of the global
+extraction/gluing obligation or changes global status.
 
 The operational base for this checkpoint is merged `main` at
-`633e1015b47421d5a857359548fe922d586ddc31`.  Its push hygiene workflow
-completed successfully in run `31422560905`.
+`cb77e5323b83705d791df7ea51a4b83c2f9248bf`.  Its push hygiene workflow
+completed successfully in run `31424280752`.
 
 - Stage 33 moved the final 305 root-debt artifacts through PR #69 and merged as
   `4263832e3ff338c5bd87528268cb8cb563866ec0`; both exact-head and exact
@@ -217,6 +217,33 @@ global Wick gate would construct an exact counterexample and therefore
 triggers the global-resolution audit.  See
 [`BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md`](../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md).
 
+### Maximal torus-root saturation
+
+Choose, over all vertex sets and torus-vector choices, a zero-coupled
+torus-root configuration of maximum cardinality `r`.  A one-open-slot
+contraction proves the set is proper.  Maximality then forces every outside
+mode to block at least one target colour, pointwise at the hypothetical
+witness.  This yields the exact universal dichotomy:
+
+- `r=1`: every physical edge block is one nonzero matrix unit.  Three pure
+  target matchings force a nonmonochromatic forbidden word, whose coefficient
+  requires additional compatible perfect matchings and alternating-cycle
+  cancellation.  No contradiction is known.
+- `r>=2`: writing the outside size as `r+s`, the original tensor equality is
+  exactly one complete fixed-order `s` physical principal-hafnian layer equal
+  to weighted `Delta_3`.  This is not the complete even tower.  Five-blocker
+  and incidence arguments give `s=0` only from `r>=5`, and at least
+  `max(0,r-2s)` triple blockers.
+
+In the exact two-residual cell, a noncoordinate residual restriction promotes
+both endpoints and recovers the existing `P_(r+2)` restriction.  A nonzero
+coordinate monomial promotes either endpoint separately, makes the other a
+blocker, and gives two overlapping physical `Lambda_(r+1,2)` identities.
+This removes the coordinate monomial as a residual branch but does not
+synchronize the direct pair blocks into one two-row permanental channel.
+Higher surplus and the `r=1` cancellation branch also remain open.  See
+[`MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md`](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md).
+
 ### New all-bridge closure
 
 In the simultaneous balanced all-bridge branch, let `D` be the physical graph
@@ -278,11 +305,13 @@ four-deck, or even-Wick data on one legal graph; repeating scalar-face or
 single-fibre exclusions cannot close it.
 
 The arbitrary-order two-port factorization remains a valid bridge.  The
-balanced full-sensor branch labels its coordinate-monomial residual edge as
-one pair member of the complete deck, but the all-balanced rank-drop branch
-and all-full-span gluing remain open.  The five-port pentad is exact, while
-the present null-polar implementation makes it vanish termwise.  Neither
-route currently closes local-to-global gluing.
+maximal-root theorem absorbs a coordinate-monomial two-residual edge into two
+overlapping deeper-blocker identities, but no theorem synchronizes their
+direct physical pair blocks.  The balanced full-sensor branch labels those
+blocks inside a complete deck, while the all-balanced rank-drop branch and
+the pole/Wick gate remain open.  The five-port pentad is exact, but the
+present null-polar implementation makes it vanish termwise.  None of these
+routes currently closes local-to-global gluing.
 
 ## Closed traps and non-evidence
 

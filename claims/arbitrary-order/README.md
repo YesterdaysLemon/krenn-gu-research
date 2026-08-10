@@ -49,6 +49,19 @@ rank-deficient is a proper closed boundary only in the ambient block-graph
 space; it is not excluded inside the hypothetical-witness locus.  The global
 conjecture therefore remains unresolved.
 
+The
+[`maximal torus-root theorem`](MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md)
+gives a second exact universal dichotomy at the witness point.  A
+maximum-cardinality zero-coupled torus-root set is either a single root, which
+forces every physical edge block to be one matrix unit and leaves an exact
+forbidden-word cancellation obligation, or has at least two roots, in which
+case every outside mode is a blocker and one complete fixed-surplus physical
+principal-hafnian layer equals the weighted diagonal tensor.  In the exact
+two-residual cell, the coordinate-monomial branch promotes to two overlapping
+surplus-two blocker identities rather than remaining a residual branch.
+Synchronization of their physical pair blocks, higher surplus, and the
+one-root cancellation branch remain open.
+
 At the Stage 27 boundary, the owner-gated H22/H31, Component20/21/23,
 high-coordinate, and mixed-lifecycle conflict surfaces were excluded from
 that batch and remained at root, unmoved and unadjudicated at that stage.
