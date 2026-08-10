@@ -18,15 +18,15 @@
   },
   "counts": {
     "total_classified_moves": 2249,
-    "moved": 1832,
+    "moved": 2052,
     "pilot": 0,
-    "proposed_high_confidence": 232,
+    "proposed_high_confidence": 12,
     "review_required": 185,
     "unclassified": 114,
     "root_files_before": 2363,
     "root_dirs_before": 3,
     "root_entries_before": 2366,
-    "projected_root_if_moved_only": 540,
+    "projected_root_if_moved_only": 320,
     "projected_root_if_high_confidence_batches_executed": 308,
     "projected_root_if_all_classified_executed": 123,
     "projection_note": "unclassified files are not members of any move set, so every projection already leaves them at the root; do not add unclassified again",
@@ -7654,33 +7654,37 @@
       "old_path": "P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md",
       "new_path": "claims/p5/boundaries/P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md",
       "reason": "claim_document -> p5/boundaries",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md",
       "new_path": "claims/p5/boundaries/P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md",
       "reason": "claim_document -> p5/boundaries",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT23_S_ZERO_K_INFINITY_PROJECTIVE_R_T_BOUNDARY_OBSTRUCTION.md",
       "new_path": "claims/p5/boundaries/P5_COMPONENT23_S_ZERO_K_INFINITY_PROJECTIVE_R_T_BOUNDARY_OBSTRUCTION.md",
       "reason": "claim_document -> p5/boundaries",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md",
       "new_path": "claims/p5/boundaries/P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md",
       "reason": "claim_document -> p5/boundaries",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPRESSED_H4_PHYSICAL_TOMOGRAPHY_AND_TARGET_TANGENT_BOUNDARY.md",
@@ -7713,9 +7717,10 @@
       "old_path": "P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md",
       "new_path": "claims/p5/boundaries/P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md",
       "reason": "claim_document -> p5/boundaries",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_ONE_PARTIAL_BOUNDARY_OBSTRUCTION.md",
@@ -7748,25 +7753,28 @@
       "old_path": "audit_p5_component21_divisor_generic_fibre_obstructions.py",
       "new_path": "claims/p5/boundaries/audit_p5_component21_divisor_generic_fibre_obstructions.py",
       "reason": "claim_script -> p5/boundaries",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py",
       "new_path": "claims/p5/boundaries/audit_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py",
       "reason": "claim_script -> p5/boundaries",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component23_s_zero_k_infinity_projective_r_t_boundary_obstruction.py",
       "new_path": "claims/p5/boundaries/audit_p5_component23_s_zero_k_infinity_projective_r_t_boundary_obstruction.py",
       "reason": "claim_script -> p5/boundaries",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_compressed_h4_physical_tomography_and_target_tangent_boundary.py",
@@ -7790,9 +7798,10 @@
       "old_path": "audit_p5_exact_two_partial_boundary.py",
       "new_path": "claims/p5/boundaries/audit_p5_exact_two_partial_boundary.py",
       "reason": "claim_script -> p5/boundaries",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_one_partial_boundary_obstruction.py",
@@ -7816,9 +7825,10 @@
       "old_path": "generate_p5_all_full_signature_system.py",
       "new_path": "claims/p5/boundaries/generate_p5_all_full_signature_system.py",
       "reason": "claim_script -> p5/boundaries",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_all_full_boundary_obstruction.py",
@@ -7833,25 +7843,28 @@
       "old_path": "verify_p5_component21_divisor_generic_fibre_obstructions.py",
       "new_path": "claims/p5/boundaries/verify_p5_component21_divisor_generic_fibre_obstructions.py",
       "reason": "claim_script -> p5/boundaries",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py",
       "new_path": "claims/p5/boundaries/verify_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py",
       "reason": "claim_script -> p5/boundaries",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component23_s_zero_k_infinity_projective_r_t_boundary_obstruction.py",
       "new_path": "claims/p5/boundaries/verify_p5_component23_s_zero_k_infinity_projective_r_t_boundary_obstruction.py",
       "reason": "claim_script -> p5/boundaries",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_compressed_h4_physical_tomography_and_target_tangent_boundary.py",
@@ -7884,17 +7897,19 @@
       "old_path": "verify_p5_exact_two_partial_boundary_obstruction.py",
       "new_path": "claims/p5/boundaries/verify_p5_exact_two_partial_boundary_obstruction.py",
       "reason": "claim_script -> p5/boundaries",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_nonunimodular_laurent_boundary.py",
       "new_path": "claims/p5/boundaries/verify_p5_nonunimodular_laurent_boundary.py",
       "reason": "claim_script -> p5/boundaries",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_one_partial_boundary_obstruction.py",
@@ -7945,25 +7960,28 @@
       "old_path": "P5_EXACT_THREE_MOTIF_QUOTIENT.md",
       "new_path": "claims/p5/coordinate-cegar/P5_EXACT_THREE_MOTIF_QUOTIENT.md",
       "reason": "claim_document -> p5/coordinate-cegar",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_HIGH_COORDINATE_CHART_ORBIT_CEGAR.md",
       "new_path": "claims/p5/coordinate-cegar/P5_HIGH_COORDINATE_CHART_ORBIT_CEGAR.md",
       "reason": "claim_document -> p5/coordinate-cegar",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md",
       "new_path": "claims/p5/coordinate-cegar/P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md",
       "reason": "claim_document -> p5/coordinate-cegar",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_Q4_211_B0_COORDINATE_NORMAL_REDUCTION.md",
@@ -8005,9 +8023,10 @@
       "old_path": "audit_p5_high_coordinate_partial_frontier.py",
       "new_path": "claims/p5/coordinate-cegar/audit_p5_high_coordinate_partial_frontier.py",
       "reason": "claim_script -> p5/coordinate-cegar",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_q4_211_b0_coordinate_normal.py",
@@ -8040,9 +8059,10 @@
       "old_path": "p5_tree_chart_cover.py",
       "new_path": "claims/p5/coordinate-cegar/p5_tree_chart_cover.py",
       "reason": "claim_script -> p5/coordinate-cegar",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_coordinate_plane_pair_cover.py",
@@ -8075,25 +8095,28 @@
       "old_path": "verify_p5_high_coordinate_chart_ledgers.py",
       "new_path": "claims/p5/coordinate-cegar/verify_p5_high_coordinate_chart_ledgers.py",
       "reason": "claim_script -> p5/coordinate-cegar",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_high_coordinate_chart_orbit_cover.py",
       "new_path": "claims/p5/coordinate-cegar/verify_p5_high_coordinate_chart_orbit_cover.py",
       "reason": "claim_script -> p5/coordinate-cegar",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_high_coordinate_partial_frontier.py",
       "new_path": "claims/p5/coordinate-cegar/verify_p5_high_coordinate_partial_frontier.py",
       "reason": "claim_script -> p5/coordinate-cegar",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_q4_211_b0_coordinate_normal.py",
@@ -8108,9 +8131,10 @@
       "old_path": "verify_p5_q5_311_rare_slice_cegar.py",
       "new_path": "claims/p5/coordinate-cegar/verify_p5_q5_311_rare_slice_cegar.py",
       "reason": "claim_script -> p5/coordinate-cegar",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_three_coordinate_cycle_dichotomy.py",
@@ -8143,9 +8167,10 @@
       "old_path": "P5_ALTERNATIVE_STRATEGY_MAP.md",
       "new_path": "claims/p5/frontier/P5_ALTERNATIVE_STRATEGY_MAP.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_C10_BINARY_FORK_OBSTRUCTION.md",
@@ -8187,9 +8212,10 @@
       "old_path": "P5_C10_TEN_EQUATION_AFFINE_CORE.md",
       "new_path": "claims/p5/frontier/P5_C10_TEN_EQUATION_AFFINE_CORE.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_C10_TRIANGLE_OBSTRUCTION.md",
@@ -8204,217 +8230,244 @@
       "old_path": "P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT21_FINITE_H22_EXTENSION_ELL_ZERO_UNIT_ENDPOINT_NORMAL_CLOSURE.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT21_FINITE_H22_EXTENSION_ELL_ZERO_UNIT_ENDPOINT_NORMAL_CLOSURE.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT21_FINITE_H22_EXTENSION_P_ZERO_NONZERO_Q_NORMAL_CLOSURE.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT21_FINITE_H22_EXTENSION_P_ZERO_NONZERO_Q_NORMAL_CLOSURE.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT21_FINITE_H22_EXTENSION_RANK_DROP_GENERIC_NORMAL_CLOSURE.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT21_FINITE_H22_EXTENSION_RANK_DROP_GENERIC_NORMAL_CLOSURE.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_LAMBDA_MINUS_ONE_SECOND_NORMAL_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_LAMBDA_MINUS_ONE_SECOND_NORMAL_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_ORDINARY_WEIGHT_SECOND_NORMAL_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_ORDINARY_WEIGHT_SECOND_NORMAL_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_RAW_KERNEL_NORMAL_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_RAW_KERNEL_NORMAL_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT21_FINITE_WEIGHT_EXTENSION_KERNEL_RATIONAL_NORMAL_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT21_FINITE_WEIGHT_EXTENSION_KERNEL_RATIONAL_NORMAL_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT23_K_INFINITY_LOWER_PAIR_ENDPOINTS_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT23_K_INFINITY_LOWER_PAIR_ENDPOINTS_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT23_S_ONE_PARAMETER_INFINITY_CURVES_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT23_S_ONE_PARAMETER_INFINITY_CURVES_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT23_S_ONE_TRIPLE_PARAMETER_INFINITY_CORNER_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT23_S_ONE_TRIPLE_PARAMETER_INFINITY_CORNER_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT23_S_ZERO_RT_ONE_LOWER_PAIR_ENDPOINT_LINES_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT23_S_ZERO_RT_ONE_LOWER_PAIR_ENDPOINT_LINES_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_COMPONENT23_S_ZERO_RT_ONE_PROJECTIVE_PARAMETER_ENDPOINTS_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_COMPONENT23_S_ZERO_RT_ONE_PROJECTIVE_PARAMETER_ENDPOINTS_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_DEGREE_SIX_INVARIANT_PULLBACK.md",
       "new_path": "claims/p5/frontier/P5_DEGREE_SIX_INVARIANT_PULLBACK.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_DELTA3_OBLIGATION_LEDGER.md",
       "new_path": "claims/p5/frontier/P5_DELTA3_OBLIGATION_LEDGER.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_FIVE_EQUATION_LAURENT_CORE.md",
@@ -8483,9 +8536,10 @@
       "old_path": "P5_POINTWISE_SPECIALIZATION_META_THEOREM.md",
       "new_path": "claims/p5/frontier/P5_POINTWISE_SPECIALIZATION_META_THEOREM.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_Q4_211_A0_ADJACENT_GRASSMANN_OBSTRUCTION.md",
@@ -8824,9 +8878,10 @@
       "old_path": "P5_Q5_311_RARE_SLICE_REDUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q5_311_RARE_SLICE_REDUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_Q5_311_SHARED_DROP_OBSTRUCTION.md",
@@ -8850,9 +8905,10 @@
       "old_path": "analyze_p5_degree_six_invariant_space.py",
       "new_path": "claims/p5/frontier/analyze_p5_degree_six_invariant_space.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_all_full_tricolour_obstruction.py",
@@ -8867,201 +8923,226 @@
       "old_path": "audit_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component21_extension_kernel_marked_h31_leading_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_component21_extension_kernel_marked_h31_leading_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component21_finite_base_extension_infinity_partial_closure.py",
       "new_path": "claims/p5/frontier/audit_p5_component21_finite_base_extension_infinity_partial_closure.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component21_finite_h22_extension_ell_zero_unit_endpoint_normal_closure.py",
       "new_path": "claims/p5/frontier/audit_p5_component21_finite_h22_extension_ell_zero_unit_endpoint_normal_closure.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component21_finite_h22_extension_p_zero_nonzero_q_normal_closure.py",
       "new_path": "claims/p5/frontier/audit_p5_component21_finite_h22_extension_p_zero_nonzero_q_normal_closure.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component21_finite_h22_extension_rank_drop_generic_normal_closure.py",
       "new_path": "claims/p5/frontier/audit_p5_component21_finite_h22_extension_rank_drop_generic_normal_closure.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component21_finite_h22_extension_zero_base_lambda_minus_one_second_normal_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_component21_finite_h22_extension_zero_base_lambda_minus_one_second_normal_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component21_finite_h22_extension_zero_base_ordinary_weight_second_normal_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_component21_finite_h22_extension_zero_base_ordinary_weight_second_normal_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component21_finite_h22_extension_zero_base_raw_kernel_normal_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_component21_finite_h22_extension_zero_base_raw_kernel_normal_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component21_finite_weight_extension_kernel_rational_normal_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_component21_finite_weight_extension_kernel_rational_normal_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component21_kappa_infinity_first_normal_complete_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_component21_kappa_infinity_first_normal_complete_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component21_normalized_parameter_compactification_complete_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_component21_normalized_parameter_compactification_complete_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component21_q_plus_minus_p_ell_endpoint_complete_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_component21_q_plus_minus_p_ell_endpoint_complete_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component21_single_marking_infinity_first_normal_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_component21_single_marking_infinity_first_normal_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component23_k_infinity_lower_pair_endpoints_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_component23_k_infinity_lower_pair_endpoints_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component23_s_one_parameter_infinity_curves_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_component23_s_one_parameter_infinity_curves_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component23_s_one_triple_parameter_infinity_corner_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_component23_s_one_triple_parameter_infinity_corner_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component23_s_zero_rt_one_lower_pair_endpoint_lines_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_component23_s_zero_rt_one_lower_pair_endpoint_lines_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_kernel_hall_hierarchy.py",
@@ -9463,9 +9544,10 @@
       "old_path": "verify_p5_c10_ten_equation_affine_core.py",
       "new_path": "claims/p5/frontier/verify_p5_c10_ten_equation_affine_core.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_c10_triangle_obstruction.py",
@@ -9480,209 +9562,235 @@
       "old_path": "verify_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component21_extension_kernel_marked_h31_leading_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_component21_extension_kernel_marked_h31_leading_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component21_finite_base_extension_infinity_partial_closure.py",
       "new_path": "claims/p5/frontier/verify_p5_component21_finite_base_extension_infinity_partial_closure.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component21_finite_h22_extension_ell_zero_unit_endpoint_normal_closure.py",
       "new_path": "claims/p5/frontier/verify_p5_component21_finite_h22_extension_ell_zero_unit_endpoint_normal_closure.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component21_finite_h22_extension_p_zero_nonzero_q_normal_closure.py",
       "new_path": "claims/p5/frontier/verify_p5_component21_finite_h22_extension_p_zero_nonzero_q_normal_closure.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component21_finite_h22_extension_rank_drop_generic_normal_closure.py",
       "new_path": "claims/p5/frontier/verify_p5_component21_finite_h22_extension_rank_drop_generic_normal_closure.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component21_finite_h22_extension_zero_base_lambda_minus_one_second_normal_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_component21_finite_h22_extension_zero_base_lambda_minus_one_second_normal_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component21_finite_h22_extension_zero_base_ordinary_weight_second_normal_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_component21_finite_h22_extension_zero_base_ordinary_weight_second_normal_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component21_finite_h22_extension_zero_base_raw_kernel_normal_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_component21_finite_h22_extension_zero_base_raw_kernel_normal_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component21_finite_weight_extension_kernel_rational_normal_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_component21_finite_weight_extension_kernel_rational_normal_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component21_kappa_infinity_first_normal_complete_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_component21_kappa_infinity_first_normal_complete_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component21_normalized_parameter_compactification_complete_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_component21_normalized_parameter_compactification_complete_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component21_q_plus_minus_p_ell_endpoint_complete_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_component21_q_plus_minus_p_ell_endpoint_complete_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component21_single_marking_infinity_first_normal_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_component21_single_marking_infinity_first_normal_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component23_k_infinity_lower_pair_endpoints_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_component23_k_infinity_lower_pair_endpoints_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component23_s_one_parameter_infinity_curves_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_component23_s_one_parameter_infinity_curves_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component23_s_one_triple_parameter_infinity_corner_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_component23_s_one_triple_parameter_infinity_corner_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component23_s_zero_rt_one_lower_pair_endpoint_lines_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_component23_s_zero_rt_one_lower_pair_endpoint_lines_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_degree_six_invariant_pullback.py",
       "new_path": "claims/p5/frontier/verify_p5_degree_six_invariant_pullback.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_five_equation_laurent_core.py",
@@ -10075,9 +10183,10 @@
       "old_path": "verify_p5_q5_311_rare_slice_support_cover.py",
       "new_path": "claims/p5/frontier/verify_p5_q5_311_rare_slice_support_cover.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_q5_311_shared_drop_obstruction.py",
@@ -11937,9 +12046,10 @@
       "old_path": "verify_slope_boundary_frame_identifications.py",
       "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/verify_slope_boundary_frame_identifications.py",
       "reason": "claim_script -> p5/h22/disjoint-mixed-star/boundaries",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h22/disjoint-mixed-star/boundaries",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "explore_p5_h22_disjoint_mixed_star_modular.py",
@@ -14213,33 +14323,37 @@
       "old_path": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-active-binary-triangle",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-active-binary-triangle",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_SPECIAL_DIVISOR_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_SPECIAL_DIVISOR_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-active-binary-triangle",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-active-binary-triangle",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-active-binary-triangle",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-active-binary-triangle",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_NORMALIZED_AFFINE_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_NORMALIZED_AFFINE_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-active-binary-triangle",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-active-binary-triangle",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md",
@@ -14272,33 +14386,37 @@
       "old_path": "audit_p5_h31_common_active_binary_triangle_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/common-active-binary-triangle",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-active-binary-triangle",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_common_active_binary_triangle_component_special_divisor_obstruction.py",
       "new_path": "claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_component_special_divisor_obstruction.py",
       "reason": "claim_script -> p5/h31/common-active-binary-triangle",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-active-binary-triangle",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py",
       "new_path": "claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py",
       "reason": "claim_script -> p5/h31/common-active-binary-triangle",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-active-binary-triangle",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_common_active_binary_triangle_normalized_affine_obstruction.py",
       "new_path": "claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_normalized_affine_obstruction.py",
       "reason": "claim_script -> p5/h31/common-active-binary-triangle",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-active-binary-triangle",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py",
@@ -14331,33 +14449,37 @@
       "old_path": "verify_p5_h31_common_active_binary_triangle_component_generic_obstruction.py",
       "new_path": "claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_component_generic_obstruction.py",
       "reason": "claim_script -> p5/h31/common-active-binary-triangle",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-active-binary-triangle",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_common_active_binary_triangle_component_special_divisor_obstruction.py",
       "new_path": "claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_component_special_divisor_obstruction.py",
       "reason": "claim_script -> p5/h31/common-active-binary-triangle",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-active-binary-triangle",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py",
       "new_path": "claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py",
       "reason": "claim_script -> p5/h31/common-active-binary-triangle",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-active-binary-triangle",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_common_active_binary_triangle_normalized_affine_obstruction.py",
       "new_path": "claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_normalized_affine_obstruction.py",
       "reason": "claim_script -> p5/h31/common-active-binary-triangle",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-active-binary-triangle",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py",
@@ -14399,25 +14521,28 @@
       "old_path": "P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-center-kernel-star/P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-center-kernel-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-center-kernel-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_FINITE_CORNER_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-center-kernel-star/P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_FINITE_CORNER_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-center-kernel-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-center-kernel-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/common-center-kernel-star/P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/common-center-kernel-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-center-kernel-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_common_center_kernel_star_component_generic_obstruction.py",
@@ -14432,25 +14557,28 @@
       "old_path": "audit_p5_h31_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py",
       "new_path": "claims/p5/h31/common-center-kernel-star/audit_p5_h31_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py",
       "reason": "claim_script -> p5/h31/common-center-kernel-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-center-kernel-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_common_center_kernel_star_component_s_zero_k_infinity_finite_corner_obstruction.py",
       "new_path": "claims/p5/h31/common-center-kernel-star/audit_p5_h31_common_center_kernel_star_component_s_zero_k_infinity_finite_corner_obstruction.py",
       "reason": "claim_script -> p5/h31/common-center-kernel-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-center-kernel-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py",
       "new_path": "claims/p5/h31/common-center-kernel-star/audit_p5_h31_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py",
       "reason": "claim_script -> p5/h31/common-center-kernel-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-center-kernel-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_common_center_kernel_star_component_generic_obstruction.py",
@@ -14465,25 +14593,28 @@
       "old_path": "verify_p5_h31_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py",
       "new_path": "claims/p5/h31/common-center-kernel-star/verify_p5_h31_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py",
       "reason": "claim_script -> p5/h31/common-center-kernel-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-center-kernel-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_common_center_kernel_star_component_s_zero_k_infinity_finite_corner_obstruction.py",
       "new_path": "claims/p5/h31/common-center-kernel-star/verify_p5_h31_common_center_kernel_star_component_s_zero_k_infinity_finite_corner_obstruction.py",
       "reason": "claim_script -> p5/h31/common-center-kernel-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-center-kernel-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py",
       "new_path": "claims/p5/h31/common-center-kernel-star/verify_p5_h31_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py",
       "reason": "claim_script -> p5/h31/common-center-kernel-star",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/common-center-kernel-star",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
@@ -14669,169 +14800,190 @@
       "old_path": "P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/diagonal-quadric-component-point/P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/diagonal-quadric-component-point",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/diagonal-quadric-component-point",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_diagonal_quadric_component_point.py",
       "new_path": "claims/p5/h31/diagonal-quadric-component-point/audit_p5_h31_diagonal_quadric_component_point.py",
       "reason": "claim_script -> p5/h31/diagonal-quadric-component-point",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/diagonal-quadric-component-point",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_diagonal_quadric_component_point.py",
       "new_path": "claims/p5/h31/diagonal-quadric-component-point/verify_p5_h31_diagonal_quadric_component_point.py",
       "reason": "claim_script -> p5/h31/diagonal-quadric-component-point",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/diagonal-quadric-component-point",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_DIAGONAL_QUADRIC_CURVE_MARKED_FIBRE_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/diagonal-quadric-curve-marked-fibre/P5_H31_DIAGONAL_QUADRIC_CURVE_MARKED_FIBRE_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/diagonal-quadric-curve-marked-fibre",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/diagonal-quadric-curve-marked-fibre",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_diagonal_quadric_curve_marked_fibre.py",
       "new_path": "claims/p5/h31/diagonal-quadric-curve-marked-fibre/audit_p5_h31_diagonal_quadric_curve_marked_fibre.py",
       "reason": "claim_script -> p5/h31/diagonal-quadric-curve-marked-fibre",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/diagonal-quadric-curve-marked-fibre",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_diagonal_quadric_curve_marked_fibre.py",
       "new_path": "claims/p5/h31/diagonal-quadric-curve-marked-fibre/verify_p5_h31_diagonal_quadric_curve_marked_fibre.py",
       "reason": "claim_script -> p5/h31/diagonal-quadric-curve-marked-fibre",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/diagonal-quadric-curve-marked-fibre",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_DIAGONAL_QUADRIC_E_CURVE_MARKED_FIBRE_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/diagonal-quadric-e-curve-marked-fibre/P5_H31_DIAGONAL_QUADRIC_E_CURVE_MARKED_FIBRE_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/diagonal-quadric-e-curve-marked-fibre",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/diagonal-quadric-e-curve-marked-fibre",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_diagonal_quadric_e_curve_marked_fibre.py",
       "new_path": "claims/p5/h31/diagonal-quadric-e-curve-marked-fibre/audit_p5_h31_diagonal_quadric_e_curve_marked_fibre.py",
       "reason": "claim_script -> p5/h31/diagonal-quadric-e-curve-marked-fibre",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/diagonal-quadric-e-curve-marked-fibre",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_diagonal_quadric_e_curve_marked_fibre.py",
       "new_path": "claims/p5/h31/diagonal-quadric-e-curve-marked-fibre/verify_p5_h31_diagonal_quadric_e_curve_marked_fibre.py",
       "reason": "claim_script -> p5/h31/diagonal-quadric-e-curve-marked-fibre",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/diagonal-quadric-e-curve-marked-fibre",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_DIAGONAL_QUADRIC_ELLIPTIC_GENERIC_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/diagonal-quadric-elliptic/P5_H31_DIAGONAL_QUADRIC_ELLIPTIC_GENERIC_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/diagonal-quadric-elliptic",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/diagonal-quadric-elliptic",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_diagonal_quadric_elliptic_generic.py",
       "new_path": "claims/p5/h31/diagonal-quadric-elliptic/audit_p5_h31_diagonal_quadric_elliptic_generic.py",
       "reason": "claim_script -> p5/h31/diagonal-quadric-elliptic",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/diagonal-quadric-elliptic",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_diagonal_quadric_elliptic_generic.py",
       "new_path": "claims/p5/h31/diagonal-quadric-elliptic/verify_p5_h31_diagonal_quadric_elliptic_generic.py",
       "reason": "claim_script -> p5/h31/diagonal-quadric-elliptic",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/diagonal-quadric-elliptic",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_DIAGONAL_QUADRIC_H0_RULING_MARKED_FIBRE_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/diagonal-quadric-h0-ruling-marked-fibre/P5_H31_DIAGONAL_QUADRIC_H0_RULING_MARKED_FIBRE_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/diagonal-quadric-h0-ruling-marked-fibre",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/diagonal-quadric-h0-ruling-marked-fibre",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_diagonal_quadric_h0_ruling.py",
       "new_path": "claims/p5/h31/diagonal-quadric-h0-ruling-marked-fibre/audit_p5_h31_diagonal_quadric_h0_ruling.py",
       "reason": "claim_script -> p5/h31/diagonal-quadric-h0-ruling-marked-fibre",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/diagonal-quadric-h0-ruling-marked-fibre",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_diagonal_quadric_h0_ruling.py",
       "new_path": "claims/p5/h31/diagonal-quadric-h0-ruling-marked-fibre/verify_p5_h31_diagonal_quadric_h0_ruling.py",
       "reason": "claim_script -> p5/h31/diagonal-quadric-h0-ruling-marked-fibre",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/diagonal-quadric-h0-ruling-marked-fibre",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_DIAGONAL_QUADRIC_NORMALIZATION_BOUNDARY_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/diagonal-quadric-normalization-boundary/P5_H31_DIAGONAL_QUADRIC_NORMALIZATION_BOUNDARY_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/diagonal-quadric-normalization-boundary",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/diagonal-quadric-normalization-boundary",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_diagonal_quadric_normalization_boundary.py",
       "new_path": "claims/p5/h31/diagonal-quadric-normalization-boundary/audit_p5_h31_diagonal_quadric_normalization_boundary.py",
       "reason": "claim_script -> p5/h31/diagonal-quadric-normalization-boundary",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/diagonal-quadric-normalization-boundary",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_diagonal_quadric_normalization_boundary.py",
       "new_path": "claims/p5/h31/diagonal-quadric-normalization-boundary/verify_p5_h31_diagonal_quadric_normalization_boundary.py",
       "reason": "claim_script -> p5/h31/diagonal-quadric-normalization-boundary",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/diagonal-quadric-normalization-boundary",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_DIAGONAL_QUADRIC_PURE_DIRECTION_CURVE_MARKED_FIBRE_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/diagonal-quadric-pure-direction-curve-marked-fibre/P5_H31_DIAGONAL_QUADRIC_PURE_DIRECTION_CURVE_MARKED_FIBRE_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/diagonal-quadric-pure-direction-curve-marked-fibre",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/diagonal-quadric-pure-direction-curve-marked-fibre",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_diagonal_quadric_pure_direction_curve.py",
       "new_path": "claims/p5/h31/diagonal-quadric-pure-direction-curve-marked-fibre/audit_p5_h31_diagonal_quadric_pure_direction_curve.py",
       "reason": "claim_script -> p5/h31/diagonal-quadric-pure-direction-curve-marked-fibre",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/diagonal-quadric-pure-direction-curve-marked-fibre",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_diagonal_quadric_pure_direction_curve.py",
       "new_path": "claims/p5/h31/diagonal-quadric-pure-direction-curve-marked-fibre/verify_p5_h31_diagonal_quadric_pure_direction_curve.py",
       "reason": "claim_script -> p5/h31/diagonal-quadric-pure-direction-curve-marked-fibre",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/diagonal-quadric-pure-direction-curve-marked-fibre",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS_GENERIC_OBSTRUCTION.md",
@@ -14918,57 +15070,64 @@
       "old_path": "P5_H31_DIAGONAL_QUADRIC_OUTER_BOUNDARY_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/disputed-ownership/first-second-component-provenance/diagonal-quadric-outer-boundary/P5_H31_DIAGONAL_QUADRIC_OUTER_BOUNDARY_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/disputed-ownership/first-second-component-provenance/diagonal-quadric-outer-boundary",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/disputed-ownership/first-second-component-provenance/diagonal-quadric-outer-boundary",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_diagonal_quadric_outer_boundary.py",
       "new_path": "claims/p5/h31/disputed-ownership/first-second-component-provenance/diagonal-quadric-outer-boundary/audit_p5_h31_diagonal_quadric_outer_boundary.py",
       "reason": "claim_script -> p5/h31/disputed-ownership/first-second-component-provenance/diagonal-quadric-outer-boundary",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/disputed-ownership/first-second-component-provenance/diagonal-quadric-outer-boundary",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_diagonal_quadric_outer_boundary.py",
       "new_path": "claims/p5/h31/disputed-ownership/first-second-component-provenance/diagonal-quadric-outer-boundary/verify_p5_h31_diagonal_quadric_outer_boundary.py",
       "reason": "claim_script -> p5/h31/disputed-ownership/first-second-component-provenance/diagonal-quadric-outer-boundary",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/disputed-ownership/first-second-component-provenance/diagonal-quadric-outer-boundary",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md",
       "new_path": "claims/p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification/P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md",
       "reason": "claim_document -> p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_marked_basis_fibre_classification.py",
       "new_path": "claims/p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification/audit_p5_h31_marked_basis_fibre_classification.py",
       "reason": "claim_script -> p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "derive_p5_h31_marked_basis_fibre_elimination.py",
       "new_path": "claims/p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification/derive_p5_h31_marked_basis_fibre_elimination.py",
       "reason": "claim_script -> p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_marked_basis_fibre_classification.py",
       "new_path": "claims/p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification/verify_p5_h31_marked_basis_fibre_classification.py",
       "reason": "claim_script -> p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_EISENSTEIN_NORM_COMPONENT_GENERIC_OBSTRUCTION.md",
@@ -15001,193 +15160,217 @@
       "old_path": "P5_H31_ELLIPTIC_END_COORDINATE_FULL_RANK_CHART.md",
       "new_path": "claims/p5/h31/elliptic-end-coordinate-full-rank-chart/P5_H31_ELLIPTIC_END_COORDINATE_FULL_RANK_CHART.md",
       "reason": "claim_document -> p5/h31/elliptic-end-coordinate-full-rank-chart",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/elliptic-end-coordinate-full-rank-chart",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_elliptic_end_coordinate_full_rank_chart.py",
       "new_path": "claims/p5/h31/elliptic-end-coordinate-full-rank-chart/audit_p5_h31_elliptic_end_coordinate_full_rank_chart.py",
       "reason": "claim_script -> p5/h31/elliptic-end-coordinate-full-rank-chart",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/elliptic-end-coordinate-full-rank-chart",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_elliptic_end_coordinate_full_rank_chart.py",
       "new_path": "claims/p5/h31/elliptic-end-coordinate-full-rank-chart/verify_p5_h31_elliptic_end_coordinate_full_rank_chart.py",
       "reason": "claim_script -> p5/h31/elliptic-end-coordinate-full-rank-chart",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/elliptic-end-coordinate-full-rank-chart",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_ELLIPTIC_END_GENUS_TWO_EXCEPTION_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/elliptic-end-genus-two-exception/P5_H31_ELLIPTIC_END_GENUS_TWO_EXCEPTION_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/elliptic-end-genus-two-exception",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/elliptic-end-genus-two-exception",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_elliptic_end_genus_two_exception.py",
       "new_path": "claims/p5/h31/elliptic-end-genus-two-exception/audit_p5_h31_elliptic_end_genus_two_exception.py",
       "reason": "claim_script -> p5/h31/elliptic-end-genus-two-exception",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/elliptic-end-genus-two-exception",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_elliptic_end_genus_two_exception.py",
       "new_path": "claims/p5/h31/elliptic-end-genus-two-exception/verify_p5_h31_elliptic_end_genus_two_exception.py",
       "reason": "claim_script -> p5/h31/elliptic-end-genus-two-exception",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/elliptic-end-genus-two-exception",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_elliptic_end_genus_two_q3.py",
       "new_path": "claims/p5/h31/elliptic-end-genus-two-q3/audit_p5_h31_elliptic_end_genus_two_q3.py",
       "reason": "claim_script -> p5/h31/elliptic-end-genus-two-q3",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/elliptic-end-genus-two-q3",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_elliptic_end_genus_two_q3.py",
       "new_path": "claims/p5/h31/elliptic-end-genus-two-q3/verify_p5_h31_elliptic_end_genus_two_q3.py",
       "reason": "claim_script -> p5/h31/elliptic-end-genus-two-q3",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/elliptic-end-genus-two-q3",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_elliptic_end_t2_divisor_q3.py",
       "new_path": "claims/p5/h31/elliptic-end-t2-divisor-q3/audit_p5_h31_elliptic_end_t2_divisor_q3.py",
       "reason": "claim_script -> p5/h31/elliptic-end-t2-divisor-q3",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/elliptic-end-t2-divisor-q3",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_elliptic_end_t2_divisor_q3.py",
       "new_path": "claims/p5/h31/elliptic-end-t2-divisor-q3/verify_p5_h31_elliptic_end_t2_divisor_q3.py",
       "reason": "claim_script -> p5/h31/elliptic-end-t2-divisor-q3",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/elliptic-end-t2-divisor-q3",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_ELLIPTIC_END_T2_DIVISOR_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/elliptic-end-t2-divisor/P5_H31_ELLIPTIC_END_T2_DIVISOR_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/elliptic-end-t2-divisor",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/elliptic-end-t2-divisor",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_elliptic_end_t2_divisor.py",
       "new_path": "claims/p5/h31/elliptic-end-t2-divisor/audit_p5_h31_elliptic_end_t2_divisor.py",
       "reason": "claim_script -> p5/h31/elliptic-end-t2-divisor",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/elliptic-end-t2-divisor",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_elliptic_end_t2_divisor.py",
       "new_path": "claims/p5/h31/elliptic-end-t2-divisor/verify_p5_h31_elliptic_end_t2_divisor.py",
       "reason": "claim_script -> p5/h31/elliptic-end-t2-divisor",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/elliptic-end-t2-divisor",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_elliptic_end_t3_divisor_q3.py",
       "new_path": "claims/p5/h31/elliptic-end-t3-divisor-q3/audit_p5_h31_elliptic_end_t3_divisor_q3.py",
       "reason": "claim_script -> p5/h31/elliptic-end-t3-divisor-q3",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/elliptic-end-t3-divisor-q3",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_elliptic_end_t3_divisor_q3.py",
       "new_path": "claims/p5/h31/elliptic-end-t3-divisor-q3/verify_p5_h31_elliptic_end_t3_divisor_q3.py",
       "reason": "claim_script -> p5/h31/elliptic-end-t3-divisor-q3",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/elliptic-end-t3-divisor-q3",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_ELLIPTIC_END_T3_DIVISOR_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/elliptic-end-t3-divisor/P5_H31_ELLIPTIC_END_T3_DIVISOR_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/elliptic-end-t3-divisor",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/elliptic-end-t3-divisor",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_elliptic_end_t3_divisor.py",
       "new_path": "claims/p5/h31/elliptic-end-t3-divisor/audit_p5_h31_elliptic_end_t3_divisor.py",
       "reason": "claim_script -> p5/h31/elliptic-end-t3-divisor",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/elliptic-end-t3-divisor",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_elliptic_end_t3_divisor.py",
       "new_path": "claims/p5/h31/elliptic-end-t3-divisor/verify_p5_h31_elliptic_end_t3_divisor.py",
       "reason": "claim_script -> p5/h31/elliptic-end-t3-divisor",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/elliptic-end-t3-divisor",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_ELLIPTIC_MIDDLE_COORDINATE_PIVOT_COMPLEMENT.md",
       "new_path": "claims/p5/h31/elliptic-middle-coordinate-pivot-complement/P5_H31_ELLIPTIC_MIDDLE_COORDINATE_PIVOT_COMPLEMENT.md",
       "reason": "claim_document -> p5/h31/elliptic-middle-coordinate-pivot-complement",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/elliptic-middle-coordinate-pivot-complement",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_elliptic_middle_coordinate_pivot_complement.py",
       "new_path": "claims/p5/h31/elliptic-middle-coordinate-pivot-complement/audit_p5_h31_elliptic_middle_coordinate_pivot_complement.py",
       "reason": "claim_script -> p5/h31/elliptic-middle-coordinate-pivot-complement",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/elliptic-middle-coordinate-pivot-complement",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_elliptic_middle_coordinate_pivot_complement.py",
       "new_path": "claims/p5/h31/elliptic-middle-coordinate-pivot-complement/verify_p5_h31_elliptic_middle_coordinate_pivot_complement.py",
       "reason": "claim_script -> p5/h31/elliptic-middle-coordinate-pivot-complement",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/elliptic-middle-coordinate-pivot-complement",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_ELLIPTIC_MIDDLE_COORDINATE_RANK_DROP.md",
       "new_path": "claims/p5/h31/elliptic-middle-coordinate-rank-drop/P5_H31_ELLIPTIC_MIDDLE_COORDINATE_RANK_DROP.md",
       "reason": "claim_document -> p5/h31/elliptic-middle-coordinate-rank-drop",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/elliptic-middle-coordinate-rank-drop",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_elliptic_middle_coordinate_rank_drop.py",
       "new_path": "claims/p5/h31/elliptic-middle-coordinate-rank-drop/audit_p5_h31_elliptic_middle_coordinate_rank_drop.py",
       "reason": "claim_script -> p5/h31/elliptic-middle-coordinate-rank-drop",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/elliptic-middle-coordinate-rank-drop",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_elliptic_middle_coordinate_rank_drop.py",
       "new_path": "claims/p5/h31/elliptic-middle-coordinate-rank-drop/verify_p5_h31_elliptic_middle_coordinate_rank_drop.py",
       "reason": "claim_script -> p5/h31/elliptic-middle-coordinate-rank-drop",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/elliptic-middle-coordinate-rank-drop",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
@@ -15427,49 +15610,55 @@
       "old_path": "P5_H31_KNOWN_RANK_TWO_FAMILY_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/known-rank-two-family/P5_H31_KNOWN_RANK_TWO_FAMILY_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/known-rank-two-family",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/known-rank-two-family",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_known_rank_two_family_obstruction.py",
       "new_path": "claims/p5/h31/known-rank-two-family/audit_p5_h31_known_rank_two_family_obstruction.py",
       "reason": "claim_script -> p5/h31/known-rank-two-family",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/known-rank-two-family",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_known_rank_two_family_obstruction.py",
       "new_path": "claims/p5/h31/known-rank-two-family/verify_p5_h31_known_rank_two_family_obstruction.py",
       "reason": "claim_script -> p5/h31/known-rank-two-family",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/known-rank-two-family",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_MARKED_BASIS_OPEN_BRANCH.md",
       "new_path": "claims/p5/h31/marked-basis-open-branch/P5_H31_MARKED_BASIS_OPEN_BRANCH.md",
       "reason": "claim_document -> p5/h31/marked-basis-open-branch",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/marked-basis-open-branch",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_marked_basis_open_branch.py",
       "new_path": "claims/p5/h31/marked-basis-open-branch/audit_p5_h31_marked_basis_open_branch.py",
       "reason": "claim_script -> p5/h31/marked-basis-open-branch",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/marked-basis-open-branch",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_marked_basis_open_branch.py",
       "new_path": "claims/p5/h31/marked-basis-open-branch/verify_p5_h31_marked_basis_open_branch.py",
       "reason": "claim_script -> p5/h31/marked-basis-open-branch",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/marked-basis-open-branch",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
@@ -15529,25 +15718,28 @@
       "old_path": "P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/rank-two-component-orbit/P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/rank-two-component-orbit",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/rank-two-component-orbit",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "audit_p5_h31_rank_two_component_orbit.py",
       "new_path": "claims/p5/h31/rank-two-component-orbit/audit_p5_h31_rank_two_component_orbit.py",
       "reason": "claim_script -> p5/h31/rank-two-component-orbit",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/rank-two-component-orbit",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_rank_two_component_orbit.py",
       "new_path": "claims/p5/h31/rank-two-component-orbit/verify_p5_h31_rank_two_component_orbit.py",
       "reason": "claim_script -> p5/h31/rank-two-component-orbit",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/rank-two-component-orbit",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "P5_H31_SECONDARY_GATE_EXCLUSION.md",
@@ -15706,9 +15898,10 @@
       "old_path": "derive_p5_h31_toric_marked_fibre_elimination.py",
       "new_path": "claims/p5/h31/toric-marked-fibre/derive_p5_h31_toric_marked_fibre_elimination.py",
       "reason": "claim_script -> p5/h31/toric-marked-fibre",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": "p5/h31/toric-marked-fibre",
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "verify_p5_h31_toric_marked_fibre_obstruction.py",
@@ -18281,9 +18474,10 @@
       "old_path": "p5_pair_support_semantics.py",
       "new_path": "src/krenn_gu/p5_pair_support_semantics.py",
       "reason": "shared_library -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "prism_laurent_reduction.py",
@@ -18684,17 +18878,19 @@
       "old_path": "analyze_p5_exact_three_motifs.py",
       "new_path": "tools/explore/analyze_p5_exact_three_motifs.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "analyze_p5_five_equation_template_classes.py",
       "new_path": "tools/explore/analyze_p5_five_equation_template_classes.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "analyze_rectangle_transport_census.py",
@@ -18764,9 +18960,10 @@
       "old_path": "certify_p5_high_coordinate_zero_forest_batch.py",
       "new_path": "tools/explore/certify_p5_high_coordinate_zero_forest_batch.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "check_hygiene.py",
@@ -18814,9 +19011,10 @@
       "old_path": "cover_p5_q5_311_rare_slice_supports.py",
       "new_path": "tools/explore/cover_p5_q5_311_rare_slice_supports.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "derive_component20_intrinsic_wall_exceptional_fibres_candidate.py",
@@ -18918,9 +19116,10 @@
       "old_path": "enumerate_p5_exact_k_partial_supports.py",
       "new_path": "tools/explore/enumerate_p5_exact_k_partial_supports.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "enumerate_ten_vertex_c4_c6_equality_orbits.py",
@@ -19050,9 +19249,10 @@
       "old_path": "extract_p5_high_coordinate_nullstellensatz.py",
       "new_path": "tools/explore/extract_p5_high_coordinate_nullstellensatz.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "find_fourteen_vertex_one_extra_cycle_core.py",
@@ -19107,25 +19307,28 @@
       "old_path": "maximize_p5_high_coordinate_chart_closure.py",
       "new_path": "tools/explore/maximize_p5_high_coordinate_chart_closure.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "maximize_p5_high_coordinate_zero_forest_closure.py",
       "new_path": "tools/explore/maximize_p5_high_coordinate_zero_forest_closure.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "maximize_p5_q5_311_rare_chart_closure.py",
       "new_path": "tools/explore/maximize_p5_q5_311_rare_chart_closure.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "minimize_fourteen_vertex_two_even_cycle_certificate_activation.py",
@@ -19139,9 +19342,10 @@
       "old_path": "minimize_p5_high_coordinate_gauge_forest.py",
       "new_path": "tools/explore/minimize_p5_high_coordinate_gauge_forest.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "minimize_singular_fallback_core.py",
@@ -19155,57 +19359,64 @@
       "old_path": "p5_high_coordinate_tree_chart_cegar.py",
       "new_path": "tools/explore/p5_high_coordinate_tree_chart_cegar.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "p5_q5_311_rare_slice_cegar.py",
       "new_path": "tools/explore/p5_q5_311_rare_slice_cegar.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "probe_p5_c10_joint_affine_class.py",
       "new_path": "tools/explore/probe_p5_c10_joint_affine_class.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "probe_p5_degree_six_invariants.py",
       "new_path": "tools/explore/probe_p5_degree_six_invariants.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "probe_p5_high_coordinate_split_scalar_span.py",
       "new_path": "tools/explore/probe_p5_high_coordinate_split_scalar_span.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "probe_p5_q5_311_rare_slice_core.py",
       "new_path": "tools/explore/probe_p5_q5_311_rare_slice_core.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "rank_p5_high_coordinate_chart_orbits.py",
       "new_path": "tools/explore/rank_p5_high_coordinate_chart_orbits.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "scout_kotzig_full_cone_cells.py",
@@ -19506,33 +19717,37 @@
       "old_path": "generate_p5_exact_three_partial_support_system.py",
       "new_path": "tools/generate/generate_p5_exact_three_partial_support_system.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "generate_p5_exact_two_partial_support_system.py",
       "new_path": "tools/generate/generate_p5_exact_two_partial_support_system.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "generate_p5_one_partial_support_system.py",
       "new_path": "tools/generate/generate_p5_one_partial_support_system.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "generate_p5_split_saturation_system.py",
       "new_path": "tools/generate/generate_p5_split_saturation_system.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "generate_partial_support_singular.py",
@@ -19826,41 +20041,46 @@
       "old_path": "package_p5_exact_three_c10_audit.py",
       "new_path": "tools/package/package_p5_exact_three_c10_audit.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "package_p5_exact_three_c4c6_boundary.py",
       "new_path": "tools/package/package_p5_exact_three_c4c6_boundary.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "package_p5_exact_three_coordinate_tree_charts.py",
       "new_path": "tools/package/package_p5_exact_three_coordinate_tree_charts.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "package_p5_high_coordinate_zero_forest_seeds.py",
       "new_path": "tools/package/package_p5_high_coordinate_zero_forest_seeds.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
       "old_path": "package_p5_q5_311_rare_slice_seeds.py",
       "new_path": "tools/package/package_p5_q5_311_rare_slice_seeds.py",
       "reason": "tool_script -> None",
-      "status": "proposed_high_confidence",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "high"
+      "confidence": "high",
+      "executed_batch": "p5-residual-root-exit-stage32"
     }
   ],
   "destination_subtree_counts": {
