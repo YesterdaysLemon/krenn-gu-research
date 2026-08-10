@@ -41,15 +41,15 @@ ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md"
 PINNED = {
     ROOT / "P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md": (
-        "77bc53e3451358bfc4764fce5e82f870040bf63846b556522a25e6e95d4da8e7"
+        "8e3e61aac9216a0e5c1a58625a8d7c9b3c1b249de2ba4c1bd19e2e96ad420188"
     ),
     ROOT
     / "verify_p5_component21_normalized_parameter_compactification_complete_obstruction.py": (
-        "c4cebc5eb8ea6f1fe63e83d9ad472c1208cce880dff32b1c8fb75682e78c9ecb"
+        "3763c98bff301e16823b34a55b4a40881378a1499d74e1c419e7eb1250c85004"
     ),
     ROOT
     / "audit_p5_component21_normalized_parameter_compactification_complete_obstruction.py": (
-        "3336ca78627ca3bc6ef7d69954be7319e7948a7733c52eb5da6a8ad2d9c5c541"
+        "09ffc0a2b29491b77d25233d240db4a68feaa5f0c3f6b3089257329849db9d79"
     ),
 }
 ZERO = (sp.Integer(0),) * 4

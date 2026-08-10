@@ -29,7 +29,7 @@ THEOREM = ROOT / "P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md"
 PRIMARY = ROOT / "verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py"
 DEPENDENCIES = {
     "claims/p5/boundaries/P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md": (
-        "c95e70fa3e553be9b5a0bfcb052f05cf667e41366edec021e9aa1ea240cfef36"
+        "648f436aa608ffe3e483717a7f2ed7b2c3c036cc32319063a19240f6870ab55e"
     ),
     "claims/p5/boundaries/verify_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py": (
         "3865eaaa58259be64317141870e0fd51b6c9f4b425d369d6e93904404a99e70a"

@@ -315,8 +315,8 @@ full P7 restriction and global Krenn--Gu:              UNRESOLVED.   (26)
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_two_endpoint_axis_multiplicity_reduction_and_221_common_jet_model.py
 python claims/p7/audit_p7_two_endpoint_axis_multiplicity_reduction_and_221_common_jet_model.py
-uv run --with sympy --with ruff python -m ruff check verify_p7_two_endpoint_axis_multiplicity_reduction_and_221_common_jet_model.py audit_p7_two_endpoint_axis_multiplicity_reduction_and_221_common_jet_model.py
-python -m py_compile verify_p7_two_endpoint_axis_multiplicity_reduction_and_221_common_jet_model.py audit_p7_two_endpoint_axis_multiplicity_reduction_and_221_common_jet_model.py
+uv run --with sympy --with ruff python -m ruff check claims/p7/verify_p7_two_endpoint_axis_multiplicity_reduction_and_221_common_jet_model.py claims/p7/audit_p7_two_endpoint_axis_multiplicity_reduction_and_221_common_jet_model.py
+python -m py_compile claims/p7/verify_p7_two_endpoint_axis_multiplicity_reduction_and_221_common_jet_model.py claims/p7/audit_p7_two_endpoint_axis_multiplicity_reduction_and_221_common_jet_model.py
 ```
 
 The primary verifier uses SymPy to check the unique mixed coefficients, all

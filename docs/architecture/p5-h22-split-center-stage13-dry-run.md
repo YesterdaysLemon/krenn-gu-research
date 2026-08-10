@@ -262,8 +262,8 @@ replay recorded:
 The preparatory repair also passes:
 
 ```powershell
-python -m ruff check verify_p5_h22_split_center_mixed_star_component_generic_obstruction.py audit_p5_h22_split_center_mixed_star_component_generic_obstruction.py
-python -m py_compile verify_p5_h22_split_center_mixed_star_component_generic_obstruction.py audit_p5_h22_split_center_mixed_star_component_generic_obstruction.py
+python -m ruff check claims/p5/h22/split-center-mixed-star/verify_p5_h22_split_center_mixed_star_component_generic_obstruction.py claims/p5/h22/split-center-mixed-star/audit_p5_h22_split_center_mixed_star_component_generic_obstruction.py
+python -m py_compile claims/p5/h22/split-center-mixed-star/verify_p5_h22_split_center_mixed_star_component_generic_obstruction.py claims/p5/h22/split-center-mixed-star/audit_p5_h22_split_center_mixed_star_component_generic_obstruction.py
 ```
 
 The baseline Ruff command had one pre-existing `E402` on the delayed H31

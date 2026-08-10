@@ -35,23 +35,23 @@ THEOREM = (
 )
 PINNED = {
     ROOT / "P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md": (
-        "d3f805cee8606dae8bf4c58a912d0bf864772da5e53d9b3dce8ef698e3904930"
+        "efcaac7d95ead192dfd4fd6167d3ee1c47eaaddef746fe5c0da85033ab132c1a"
     ),
     ROOT / "verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py": (
-        "5e6046fbbfa4b52139c1b70ee453ad397ec0d6bfe38684164711a1b5be3f5aff"
+        "2f2b64ccf1aca2e6960d8bc4c21a57be2e9cf601d192d85f7e15255b8fa9f697"
     ),
     ROOT / "audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py": (
-        "eb125d0af4a9f208b95803f1fbc901dde05a43307268eeeb65e6ad9e3203e7fa"
+        "e7f8c89c5437f8c3369563820e44e404f3f0603210b99fa1f26c831ecb541dc7"
     ),
     ROOT / "P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md": (
-        "faa82432588a2cc988d498fbfea831bdbf0c63028794b5cc28e90713b2ed127b"
+        "e4c11df96058efbabb09958e9ae4910b7b3747e19d3f2bc8179be36b075ad497"
     ),
     ROOT
     / "verify_p5_component21_kappa_infinity_first_normal_complete_obstruction.py": (
-        "7b86d3f69ce7bbfce5de744249c7cc50e5cded2a48fd92e0f2d0bee58acde7de"
+        "779ffd59a0d4e7e3a1e563110441661cabd4f3744c138eb6053f086385c1e68a"
     ),
     ROOT / "audit_p5_component21_kappa_infinity_first_normal_complete_obstruction.py": (
-        "3c73a81698303af379901eb9ebd0195c8825b162d3ea9b034e01db5be47f2464"
+        "ccc328fad2ce2508e9108beaab1b6dd5b8cd64860b42afdc43f82ba1a1360ab7"
     ),
 }
 

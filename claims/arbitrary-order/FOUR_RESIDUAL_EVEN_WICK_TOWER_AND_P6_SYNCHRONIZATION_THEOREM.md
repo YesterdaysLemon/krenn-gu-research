@@ -354,8 +354,8 @@ global Krenn--Gu conjecture:                           UNRESOLVED.       (20)
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_four_residual_even_wick_tower_and_p6_synchronization.py
 python claims/arbitrary-order/audit_four_residual_even_wick_tower_and_p6_synchronization.py
-python -m py_compile verify_four_residual_even_wick_tower_and_p6_synchronization.py audit_four_residual_even_wick_tower_and_p6_synchronization.py
-uvx ruff check verify_four_residual_even_wick_tower_and_p6_synchronization.py audit_four_residual_even_wick_tower_and_p6_synchronization.py
+python -m py_compile claims/arbitrary-order/verify_four_residual_even_wick_tower_and_p6_synchronization.py claims/arbitrary-order/audit_four_residual_even_wick_tower_and_p6_synchronization.py
+uvx ruff check claims/arbitrary-order/verify_four_residual_even_wick_tower_and_p6_synchronization.py claims/arbitrary-order/audit_four_residual_even_wick_tower_and_p6_synchronization.py
 ```
 
 The primary replay works symbolically with four generic incidence rows and

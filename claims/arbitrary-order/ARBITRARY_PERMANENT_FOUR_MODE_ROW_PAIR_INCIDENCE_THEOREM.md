@@ -224,8 +224,8 @@ All remain **UNKNOWN/UNRESOLVED**.
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_arbitrary_permanent_four_mode_row_pair_incidence_theorem.py
 python claims/arbitrary-order/audit_arbitrary_permanent_four_mode_row_pair_incidence_theorem.py
-uv run --with sympy --with ruff python -m ruff check verify_arbitrary_permanent_four_mode_row_pair_incidence_theorem.py audit_arbitrary_permanent_four_mode_row_pair_incidence_theorem.py
-python -m py_compile verify_arbitrary_permanent_four_mode_row_pair_incidence_theorem.py audit_arbitrary_permanent_four_mode_row_pair_incidence_theorem.py
+uv run --with sympy --with ruff python -m ruff check claims/arbitrary-order/verify_arbitrary_permanent_four_mode_row_pair_incidence_theorem.py claims/arbitrary-order/audit_arbitrary_permanent_four_mode_row_pair_incidence_theorem.py
+python -m py_compile claims/arbitrary-order/verify_arbitrary_permanent_four_mode_row_pair_incidence_theorem.py claims/arbitrary-order/audit_arbitrary_permanent_four_mode_row_pair_incidence_theorem.py
 ```
 
 The primary verifier checks the equality normal form, the partially polarized

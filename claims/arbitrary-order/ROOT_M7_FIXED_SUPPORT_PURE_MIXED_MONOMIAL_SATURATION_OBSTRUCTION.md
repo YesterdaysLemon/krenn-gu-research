@@ -173,8 +173,8 @@ global Krenn-Gu conjecture:                       UNRESOLVED.
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py
 python claims/arbitrary-order/audit_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py
-uv run --with sympy --with ruff python -m ruff check verify_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py audit_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py
-python -m py_compile verify_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py audit_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py
+uv run --with sympy --with ruff python -m ruff check claims/arbitrary-order/verify_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py claims/arbitrary-order/audit_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py
+python -m py_compile claims/arbitrary-order/verify_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py claims/arbitrary-order/audit_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py
 ```
 
 The primary verifier constructs the full symbolic `7 x 7` permanent matrices,

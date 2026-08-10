@@ -200,6 +200,7 @@ class RewriteMarkdownTests(unittest.TestCase):
         self.moves = {
             "DOC_A.md": "claims/p5/h22/pkg/DOC_A.md",
             "verify_a.py": "claims/p5/h22/pkg/verify_a.py",
+            "audit_a.py": "claims/p5/h22/pkg/audit_a.py",
             "dup_name.py": "claims/x/dup_name.py",
             "other/dup_name.py": "claims/y/dup_name.py",
         }
@@ -310,6 +311,45 @@ class RewriteMarkdownTests(unittest.TestCase):
         self.assertEqual(stats["replay_rewritten"], 1)
         self.assertIn(
             "python -m py_compile claims/p5/h22/pkg/verify_a.py",
+            read_md(self.tmp, "README.md"))
+
+    def test_replay_powershell_local_path(self):
+        write_md(self.tmp, "README.md",
+                 "```powershell\npython .\\verify_a.py\n```\n")
+        stats = rewrite_markdown(self.m, ["README.md"], self.tmp)
+        self.assertEqual(stats["replay_rewritten"], 1)
+        self.assertIn("python claims/p5/h22/pkg/verify_a.py",
+                      read_md(self.tmp, "README.md"))
+
+    def test_replay_powershell_multi_target_qa(self):
+        write_md(
+            self.tmp, "README.md",
+            "```powershell\n"
+            "uv run --with ruff python -m ruff check "
+            ".\\verify_a.py .\\audit_a.py\n"
+            "python -m py_compile .\\verify_a.py .\\audit_a.py\n"
+            "```\n")
+        stats = rewrite_markdown(self.m, ["README.md"], self.tmp)
+        self.assertEqual(stats["replay_rewritten"], 4)
+        text = read_md(self.tmp, "README.md")
+        self.assertIn(
+            "ruff check claims/p5/h22/pkg/verify_a.py "
+            "claims/p5/h22/pkg/audit_a.py", text)
+        self.assertIn(
+            "py_compile claims/p5/h22/pkg/verify_a.py "
+            "claims/p5/h22/pkg/audit_a.py", text)
+
+    def test_replay_tilde_fence_and_uvx_ruff(self):
+        write_md(
+            self.tmp, "README.md",
+            "~~~powershell\n"
+            "uvx ruff check verify_a.py audit_a.py\n"
+            "~~~\n")
+        stats = rewrite_markdown(self.m, ["README.md"], self.tmp)
+        self.assertEqual(stats["replay_rewritten"], 2)
+        self.assertIn(
+            "uvx ruff check claims/p5/h22/pkg/verify_a.py "
+            "claims/p5/h22/pkg/audit_a.py",
             read_md(self.tmp, "README.md"))
 
     def test_replay_continuation_line_form(self):
@@ -434,6 +474,29 @@ class ReplayCommandGrammarTests(unittest.TestCase):
         self.assertEqual(
             self._match("python -m py_compile verify_a.py"),
             [("verify_a.py", 0, "line")])
+
+    def test_powershell_local_path(self):
+        self.assertEqual(self._match("python .\\verify_a.py"),
+                         [("verify_a.py", 0, "line")])
+
+    def test_multi_target_api(self):
+        from replay_command import match_replay_targets
+        text = ("uv run --with ruff python -m ruff check "
+                ".\\verify_a.py .\\audit_a.py")
+        self.assertEqual(
+            match_replay_targets(text.splitlines(), 0),
+            (["verify_a.py", "audit_a.py"], 0, "line"))
+
+    def test_uvx_ruff_multi_target_api(self):
+        from replay_command import match_replay_targets
+        text = "uvx ruff check verify_a.py audit_a.py"
+        self.assertEqual(
+            match_replay_targets(text.splitlines(), 0),
+            (["verify_a.py", "audit_a.py"], 0, "line"))
+        text = "python -m py_compile .\\verify_a.py .\\audit_a.py"
+        self.assertEqual(
+            match_replay_targets(text.splitlines(), 0),
+            (["verify_a.py", "audit_a.py"], 0, "line"))
 
     def test_multi_target_qa_is_not_partially_matched(self):
         self.assertEqual(
@@ -736,6 +799,26 @@ class StaleReferenceTests(unittest.TestCase):
             self.MOVED)
         self.assertTrue(any(ctx == "fenced replay command"
                             for ctx, b in hits), hits)
+
+    def test_powershell_local_replay_inside_package_stale(self):
+        text = ("```powershell\npython .\\" + self.BASE + "\n```\n")
+        hits = find_stale_bare_refs(
+            text, "claims/p5/h22/disjoint-mixed-star/README.md",
+            self.MOVED)
+        self.assertTrue(any(ctx == "fenced replay command"
+                            for ctx, b in hits), hits)
+
+    def test_powershell_multi_target_qa_stale(self):
+        text = ("```powershell\npython -m py_compile .\\" + self.BASE
+                + " .\\unmoved_audit.py\n```\n")
+        hits = find_stale_bare_refs(text, "README.md", self.MOVED)
+        self.assertIn(("fenced replay command", self.BASE), hits)
+
+    def test_tilde_fence_uvx_qa_stale(self):
+        text = ("~~~powershell\nuvx ruff check " + self.BASE
+                + " unmoved_audit.py\n~~~\n")
+        hits = find_stale_bare_refs(text, "README.md", self.MOVED)
+        self.assertIn(("fenced replay command", self.BASE), hits)
 
     def test_continuation_replay_command_inside_package_stale(self):
         text = "```text\npython \\\n  " + self.BASE + "\n```\n"

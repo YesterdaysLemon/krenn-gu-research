@@ -137,19 +137,19 @@ or arbitrary ambient/projective boundaries.
 Replay the two pinned packages first:
 
 ```powershell
-uv run --with sympy python .\verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py
-uv run --with sympy python .\audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py
-uv run --with sympy python .\verify_p5_component21_kappa_infinity_first_normal_complete_obstruction.py
-uv run --with sympy python .\audit_p5_component21_kappa_infinity_first_normal_complete_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_kappa_infinity_first_normal_complete_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_kappa_infinity_first_normal_complete_obstruction.py
 ```
 
 Then run:
 
 ```powershell
-uv run --with sympy python .\verify_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py
-uv run --with sympy python .\audit_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py
-uv run --with sympy --with ruff python -m ruff check .\verify_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py .\audit_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py
-uv run --with sympy python -m py_compile .\verify_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py .\audit_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py
+uv run --with sympy --with ruff python -m ruff check claims/p5/frontier/verify_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py claims/p5/frontier/audit_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py
+uv run --with sympy python -m py_compile claims/p5/frontier/verify_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py claims/p5/frontier/audit_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py
 ```
 
 The primary verifies the homogeneous Pluecker surface, both vertical lines,

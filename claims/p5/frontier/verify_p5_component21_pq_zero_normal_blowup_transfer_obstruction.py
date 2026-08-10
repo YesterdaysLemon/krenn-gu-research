@@ -37,7 +37,7 @@ VERTICAL_AUDIT = (
 P4_THEOREM = REPO_ROOT / 'claims/p4/classifications/star/coincident-support-rank-one-star/P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md'
 P4_PRIMARY = REPO_ROOT / 'claims/p4/classifications/star/coincident-support-rank-one-star/verify_p4_coincident_support_rank_one_star_component.py'
 PINNED = {
-    VERTICAL_THEOREM: "c95e70fa3e553be9b5a0bfcb052f05cf667e41366edec021e9aa1ea240cfef36",
+    VERTICAL_THEOREM: "648f436aa608ffe3e483717a7f2ed7b2c3c036cc32319063a19240f6870ab55e",
     VERTICAL_PRIMARY: "3865eaaa58259be64317141870e0fd51b6c9f4b425d369d6e93904404a99e70a",
     VERTICAL_AUDIT: "5eb84e710ef524dd6d2f9fe193c4c67309c89e636df780ebb0d5a6e8662d4065",
     P4_THEOREM: "11422585ed24db3c3a1dd727a648267237d0624fe8574567859e404a6aabc18b",

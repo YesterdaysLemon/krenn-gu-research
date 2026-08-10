@@ -167,8 +167,8 @@ Then run:
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py
 python claims/arbitrary-order/audit_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py
-uv run --with sympy --with ruff python -m ruff check verify_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py audit_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py
-python -m py_compile verify_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py audit_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py
+uv run --with sympy --with ruff python -m ruff check claims/arbitrary-order/verify_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py claims/arbitrary-order/audit_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py
+python -m py_compile claims/arbitrary-order/verify_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py claims/arbitrary-order/audit_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py
 ```
 
 The primary checks the symbolic two-row Laplace coefficients at `m=7` and

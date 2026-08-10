@@ -116,8 +116,8 @@ Then run:
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_root_mixed_second_jet_resonance_clique_classification.py
 python claims/arbitrary-order/audit_root_mixed_second_jet_resonance_clique_classification.py
-uv run --with sympy --with ruff python -m ruff check verify_root_mixed_second_jet_resonance_clique_classification.py audit_root_mixed_second_jet_resonance_clique_classification.py
-python -m py_compile verify_root_mixed_second_jet_resonance_clique_classification.py audit_root_mixed_second_jet_resonance_clique_classification.py
+uv run --with sympy --with ruff python -m ruff check claims/arbitrary-order/verify_root_mixed_second_jet_resonance_clique_classification.py claims/arbitrary-order/audit_root_mixed_second_jet_resonance_clique_classification.py
+python -m py_compile claims/arbitrary-order/verify_root_mixed_second_jet_resonance_clique_classification.py claims/arbitrary-order/audit_root_mixed_second_jet_resonance_clique_classification.py
 ```
 
 The primary checks the determinant argument symbolically and exhausts a

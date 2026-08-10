@@ -286,8 +286,8 @@ The theorem is a localization, and all realization/global claims remain
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_221_tensor_coefficient_wick_deconvolution_two_face_localization.py
 python claims/p7/audit_p7_221_tensor_coefficient_wick_deconvolution_two_face_localization.py
-uv run --with sympy --with ruff python -m ruff check verify_p7_221_tensor_coefficient_wick_deconvolution_two_face_localization.py audit_p7_221_tensor_coefficient_wick_deconvolution_two_face_localization.py
-python -m py_compile verify_p7_221_tensor_coefficient_wick_deconvolution_two_face_localization.py audit_p7_221_tensor_coefficient_wick_deconvolution_two_face_localization.py
+uv run --with sympy --with ruff python -m ruff check claims/p7/verify_p7_221_tensor_coefficient_wick_deconvolution_two_face_localization.py claims/p7/audit_p7_221_tensor_coefficient_wick_deconvolution_two_face_localization.py
+python -m py_compile claims/p7/verify_p7_221_tensor_coefficient_wick_deconvolution_two_face_localization.py claims/p7/audit_p7_221_tensor_coefficient_wick_deconvolution_two_face_localization.py
 ```
 
 The primary verifier checks the 62-face count, a generic symbolic scalar

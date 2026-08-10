@@ -386,8 +386,8 @@ P7 nonrestriction and global Krenn--Gu:               UNRESOLVED.
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_ghz_null_fan_dual_wick_defect_and_singleton_depth_separation.py
 python claims/p7/audit_p7_ghz_null_fan_dual_wick_defect_and_singleton_depth_separation.py
-python -m py_compile verify_p7_ghz_null_fan_dual_wick_defect_and_singleton_depth_separation.py audit_p7_ghz_null_fan_dual_wick_defect_and_singleton_depth_separation.py
-uv run --with ruff ruff check verify_p7_ghz_null_fan_dual_wick_defect_and_singleton_depth_separation.py audit_p7_ghz_null_fan_dual_wick_defect_and_singleton_depth_separation.py
+python -m py_compile claims/p7/verify_p7_ghz_null_fan_dual_wick_defect_and_singleton_depth_separation.py claims/p7/audit_p7_ghz_null_fan_dual_wick_defect_and_singleton_depth_separation.py
+uv run --with ruff ruff check claims/p7/verify_p7_ghz_null_fan_dual_wick_defect_and_singleton_depth_separation.py claims/p7/audit_p7_ghz_null_fan_dual_wick_defect_and_singleton_depth_separation.py
 ```
 
 The primary replay checks the fan mixed-word vanishings, the selector

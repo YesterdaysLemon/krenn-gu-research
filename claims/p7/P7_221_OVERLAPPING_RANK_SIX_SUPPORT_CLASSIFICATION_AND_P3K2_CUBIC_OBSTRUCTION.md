@@ -364,8 +364,8 @@ P7 and global Krenn--Gu:                UNRESOLVED.       (27)
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_221_overlapping_rank_six_support_classification_and_p3k2_cubic_obstruction.py
 python claims/p7/audit_p7_221_overlapping_rank_six_support_classification_and_p3k2_cubic_obstruction.py
-python -m py_compile verify_p7_221_overlapping_rank_six_support_classification_and_p3k2_cubic_obstruction.py audit_p7_221_overlapping_rank_six_support_classification_and_p3k2_cubic_obstruction.py
-uv run --with ruff ruff check verify_p7_221_overlapping_rank_six_support_classification_and_p3k2_cubic_obstruction.py audit_p7_221_overlapping_rank_six_support_classification_and_p3k2_cubic_obstruction.py
+python -m py_compile claims/p7/verify_p7_221_overlapping_rank_six_support_classification_and_p3k2_cubic_obstruction.py claims/p7/audit_p7_221_overlapping_rank_six_support_classification_and_p3k2_cubic_obstruction.py
+uv run --with ruff ruff check claims/p7/verify_p7_221_overlapping_rank_six_support_classification_and_p3k2_cubic_obstruction.py claims/p7/audit_p7_221_overlapping_rank_six_support_classification_and_p3k2_cubic_obstruction.py
 ```
 
 The primary verifier checks both generic five-row Laplace splittings, the

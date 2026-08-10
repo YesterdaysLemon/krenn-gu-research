@@ -320,8 +320,8 @@ P7 and global Krenn--Gu:                          UNRESOLVED.             (23)
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_221_three_mode_residual_annihilation_and_full_quotient_rank_sum_bound.py
 python claims/p7/audit_p7_221_three_mode_residual_annihilation_and_full_quotient_rank_sum_bound.py
-python -m py_compile verify_p7_221_three_mode_residual_annihilation_and_full_quotient_rank_sum_bound.py audit_p7_221_three_mode_residual_annihilation_and_full_quotient_rank_sum_bound.py
-uv run --with ruff ruff check verify_p7_221_three_mode_residual_annihilation_and_full_quotient_rank_sum_bound.py audit_p7_221_three_mode_residual_annihilation_and_full_quotient_rank_sum_bound.py
+python -m py_compile claims/p7/verify_p7_221_three_mode_residual_annihilation_and_full_quotient_rank_sum_bound.py claims/p7/audit_p7_221_three_mode_residual_annihilation_and_full_quotient_rank_sum_bound.py
+uv run --with ruff ruff check claims/p7/verify_p7_221_three_mode_residual_annihilation_and_full_quotient_rank_sum_bound.py claims/p7/audit_p7_221_three_mode_residual_annihilation_and_full_quotient_rank_sum_bound.py
 ```
 
 The primary replay reconstructs the three exact Wick coefficients, checks

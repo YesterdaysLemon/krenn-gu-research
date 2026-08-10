@@ -392,8 +392,8 @@ global Krenn--Gu:                            UNRESOLVED.                 (26)
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_lower_mixed_root_jet_deletion_label_tomography_and_squarefree_gauge.py
 python claims/arbitrary-order/audit_lower_mixed_root_jet_deletion_label_tomography_and_squarefree_gauge.py
-python -m py_compile verify_lower_mixed_root_jet_deletion_label_tomography_and_squarefree_gauge.py audit_lower_mixed_root_jet_deletion_label_tomography_and_squarefree_gauge.py
-uv run --with ruff ruff check verify_lower_mixed_root_jet_deletion_label_tomography_and_squarefree_gauge.py audit_lower_mixed_root_jet_deletion_label_tomography_and_squarefree_gauge.py
+python -m py_compile claims/arbitrary-order/verify_lower_mixed_root_jet_deletion_label_tomography_and_squarefree_gauge.py claims/arbitrary-order/audit_lower_mixed_root_jet_deletion_label_tomography_and_squarefree_gauge.py
+uv run --with ruff ruff check claims/arbitrary-order/verify_lower_mixed_root_jet_deletion_label_tomography_and_squarefree_gauge.py claims/arbitrary-order/audit_lower_mixed_root_jet_deletion_label_tomography_and_squarefree_gauge.py
 ```
 
 The primary replay constructs the exact legal coefficient matrices at `q=4`

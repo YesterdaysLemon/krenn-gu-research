@@ -456,8 +456,8 @@ global Krenn--Gu conjecture:                            UNRESOLVED.      (29)
 ```powershell
 uv run --with sympy python claims/p6/verify_p6_clean_two_by_three_selector_segre_pullback_and_torus_permission.py
 python claims/p6/audit_p6_clean_two_by_three_selector_segre_pullback_and_torus_permission.py
-python -m py_compile verify_p6_clean_two_by_three_selector_segre_pullback_and_torus_permission.py audit_p6_clean_two_by_three_selector_segre_pullback_and_torus_permission.py
-uv run --with ruff ruff check verify_p6_clean_two_by_three_selector_segre_pullback_and_torus_permission.py audit_p6_clean_two_by_three_selector_segre_pullback_and_torus_permission.py
+python -m py_compile claims/p6/verify_p6_clean_two_by_three_selector_segre_pullback_and_torus_permission.py claims/p6/audit_p6_clean_two_by_three_selector_segre_pullback_and_torus_permission.py
+uv run --with ruff ruff check claims/p6/verify_p6_clean_two_by_three_selector_segre_pullback_and_torus_permission.py claims/p6/audit_p6_clean_two_by_three_selector_segre_pullback_and_torus_permission.py
 ```
 
 The primary replay proves the symbolic determinant factorization, constructs

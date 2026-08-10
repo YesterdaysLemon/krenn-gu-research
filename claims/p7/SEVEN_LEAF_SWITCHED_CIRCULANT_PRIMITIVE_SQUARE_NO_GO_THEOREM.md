@@ -278,8 +278,8 @@ finite-field inference, Groebner elimination, or timeout is used.
 ```powershell
 uv run --with sympy python claims/p7/verify_seven_leaf_switched_circulant_primitive_square_no_go.py
 python claims/p7/audit_seven_leaf_switched_circulant_primitive_square_no_go.py
-python -m py_compile verify_seven_leaf_switched_circulant_primitive_square_no_go.py audit_seven_leaf_switched_circulant_primitive_square_no_go.py
-uv run --with ruff ruff check verify_seven_leaf_switched_circulant_primitive_square_no_go.py audit_seven_leaf_switched_circulant_primitive_square_no_go.py
+python -m py_compile claims/p7/verify_seven_leaf_switched_circulant_primitive_square_no_go.py claims/p7/audit_seven_leaf_switched_circulant_primitive_square_no_go.py
+uv run --with ruff ruff check claims/p7/verify_seven_leaf_switched_circulant_primitive_square_no_go.py claims/p7/audit_seven_leaf_switched_circulant_primitive_square_no_go.py
 ```
 
 The primary verifier derives (12) directly from cyclic-distance hafnians,

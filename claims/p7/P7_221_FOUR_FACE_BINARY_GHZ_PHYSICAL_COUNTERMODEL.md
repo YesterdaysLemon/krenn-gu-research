@@ -187,8 +187,8 @@ full physical common core:          UNRESOLVED.          (13)
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_221_four_face_binary_ghz_physical_countermodel.py
 python claims/p7/audit_p7_221_four_face_binary_ghz_physical_countermodel.py
-python -m py_compile verify_p7_221_four_face_binary_ghz_physical_countermodel.py audit_p7_221_four_face_binary_ghz_physical_countermodel.py
-uv run --with ruff ruff check verify_p7_221_four_face_binary_ghz_physical_countermodel.py audit_p7_221_four_face_binary_ghz_physical_countermodel.py
+python -m py_compile claims/p7/verify_p7_221_four_face_binary_ghz_physical_countermodel.py claims/p7/audit_p7_221_four_face_binary_ghz_physical_countermodel.py
+uv run --with ruff ruff check claims/p7/verify_p7_221_four_face_binary_ghz_physical_countermodel.py claims/p7/audit_p7_221_four_face_binary_ghz_physical_countermodel.py
 ```
 
 The primary verifier reconstructs (4) from the formal cofactor ledger and

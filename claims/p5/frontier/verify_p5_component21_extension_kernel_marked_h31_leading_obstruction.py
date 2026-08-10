@@ -36,19 +36,19 @@ ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md"
 PINNED = {
     ROOT / "P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md": (
-        "21173708385ae3fa09160c4a3788dbdc96fff3710bfd766a175477c607b552a9"
+        "1c8f5c83aeae794782b684b1f35f3c25323470edae28c38a5c52d423b8a86502"
     ),
     ROOT / "verify_p5_component21_finite_base_extension_infinity_partial_closure.py": (
-        "db6055a20fdc3e9e0d5a4e7ac026f5c43201fa0b85e95019374d655c24b5a061"
+        "3c407f3b9612e1a51268f85c78778eb0ee23543438ee432838501f02f6a02229"
     ),
     ROOT / "audit_p5_component21_finite_base_extension_infinity_partial_closure.py": (
-        "2078feb22503e06343ce04e7710d6c49f0de0fbd6d16b4f41fb96a305fa1691c"
+        "965afa260b29fc02e624a0362c78644dd8f8604594cdcbef78cbf7c29a8b4ca6"
     ),
     ROOT / "verify_p5_component21_normalized_parameter_compactification_complete_obstruction.py": (
-        "c4cebc5eb8ea6f1fe63e83d9ad472c1208cce880dff32b1c8fb75682e78c9ecb"
+        "3763c98bff301e16823b34a55b4a40881378a1499d74e1c419e7eb1250c85004"
     ),
     ROOT / "verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py": (
-        "5e6046fbbfa4b52139c1b70ee453ad397ec0d6bfe38684164711a1b5be3f5aff"
+        "2f2b64ccf1aca2e6960d8bc4c21a57be2e9cf601d192d85f7e15255b8fa9f697"
     ),
 }
 SEVEN_ROWS = (0, 1, 2, 4, 5, 7, 8)

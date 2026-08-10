@@ -382,8 +382,8 @@ global Krenn--Gu conjecture:                           UNRESOLVED.      (23)
 ```powershell
 uv run --with sympy python claims/p6/verify_p6_physical_six_face_hafnian_section_four_deck_synchronization_and_segre_sharpness.py
 python claims/p6/audit_p6_physical_six_face_hafnian_section_four_deck_synchronization_and_segre_sharpness.py
-python -m py_compile verify_p6_physical_six_face_hafnian_section_four_deck_synchronization_and_segre_sharpness.py audit_p6_physical_six_face_hafnian_section_four_deck_synchronization_and_segre_sharpness.py
-uv run --with ruff ruff check verify_p6_physical_six_face_hafnian_section_four_deck_synchronization_and_segre_sharpness.py audit_p6_physical_six_face_hafnian_section_four_deck_synchronization_and_segre_sharpness.py
+python -m py_compile claims/p6/verify_p6_physical_six_face_hafnian_section_four_deck_synchronization_and_segre_sharpness.py claims/p6/audit_p6_physical_six_face_hafnian_section_four_deck_synchronization_and_segre_sharpness.py
+uv run --with ruff ruff check claims/p6/verify_p6_physical_six_face_hafnian_section_four_deck_synchronization_and_segre_sharpness.py claims/p6/audit_p6_physical_six_face_hafnian_section_four_deck_synchronization_and_segre_sharpness.py
 ```
 
 The primary replay constructs the symbolic seven-parameter section, checks

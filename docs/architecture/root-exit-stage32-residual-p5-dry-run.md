@@ -164,17 +164,24 @@ role; only moved paths and current document hashes may change.
 
 No SAT, Singular, brute-force, broad theorem, numerical, or sampling replay
 was run merely because paths moved.  Frozen science was trusted by Git blob
-identity.  The index-complete candidate records:
+identity.  A first post-execution review exposed an enforcement blind spot for
+PowerShell current-directory tokens, multi-target Ruff/``py_compile`` commands,
+tilde fences, and ``uvx ruff check``.  The shared rewriter/hygiene grammar now
+covers those forms atomically.  Its path-only repair retargeted 605 moved-script
+tokens across 135 Markdown files, including all 107 PowerShell-local tokens in
+the 12 Stage 32 documents that triggered the finding; no claim prose, status,
+result, or historical hash changed.  The index-complete candidate records:
 
 - hygiene PASS at `321 = 16 justified + 305 grandfathered`, with zero new
   debt, 1,716 Python files compiling, 857 Markdown files resolving, and all
   86 theorem-ledger hashes matching;
-- fixed-point link/command rewrite after 331 link and 176 replay-command
-  repairs, with zero ambiguity and zero second-pass changes;
+- fixed-point link/command rewrite after the original 331 link and 176 replay
+  repairs plus the 605-token grammar repair, with zero ambiguity and zero
+  second-pass changes;
 - all 96 live Component21 dependency-pin assertions matching after a
   bottom-up path/hash-only refresh, while 15 dated historical hashes remain
   frozen;
-- 170 migration tests, seven Stage 32 no-solver parity tests, and 14 focused
+- 179 migration tests, seven Stage 32 no-solver parity tests, and 14 focused
   lattice tests passing; and
 - static foreign-CWD, bootstrap, import-direction, and moved-path audits,
   without a scientific replay.

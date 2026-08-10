@@ -14,13 +14,14 @@ operations, every reference to a moved file must be re-anchored:
      URLs are untouched; ambiguous or nonexistent targets are reported,
      never guessed.
   2. Fenced replay commands: ``python <script>.py [args]``,
-     ``uv run ... python <script>.py``, and continuation-line
-     ``python \\`` + ``<script>.py`` commands inside ```text/```bash
-     blocks, plus ``command: ... python <script>.py`` fields inside
+     ``python .\\<script>.py``, ``uv run ... python <script>.py``, and
+     continuation-line ``python \\`` + ``<script>.py`` commands inside
+     backtick or tilde fences, plus
+     ``command: ... python <script>.py`` fields inside
      fenced YAML evidence headers or Markdown YAML front matter, are
      rewritten to the script's new root-relative path when moved.  The
-     same rule covers fenced ``ruff check <script>.py`` and
-     ``python -m py_compile <script>.py`` QA commands.  In every form,
+     same rule covers single- or multi-target fenced Ruff/``uvx ruff`` and
+     ``python -m py_compile`` QA commands.  In every form,
      rewriting occurs only when the script was moved and its basename is
      unambiguous.  The
      grammar lives in ``replay_command.py`` and is shared with the
@@ -52,11 +53,10 @@ import subprocess
 import sys
 
 from package_metadata import resolve_claim_package_metadata
-from replay_command import match_replay
+from replay_command import FENCE, match_replay_targets
 
 MD_LINK = re.compile(r"(\]\()([^)\s]+)(\))")
 REF_LINK = re.compile(r"^(\s*\[[^\]]+\]:\s*)(\S+)(\s*)$", re.M)
-FENCE = re.compile(r"^```")
 
 
 def normalize_rel(base_dir: str, target: str) -> str | None:
@@ -237,26 +237,39 @@ def rewrite_markdown(old_to_new: dict, sources: list[str],
                 i += 1
                 continue
             if in_fence or in_front_matter:
-                rm = match_replay(lines, i)
+                rm = match_replay_targets(lines, i)
                 if rm:
-                    base, end, form = rm
-                    olds = base_to_olds.get(base, [])
-                    if len(olds) == 1:
-                        new = old_to_new[olds[0]]
-                        if form == "line":
-                            out_lines.append(
-                                line.replace(base, new, 1))
-                        else:
-                            out_lines.append(lines[i])
-                            out_lines.append(
-                                lines[i + 1].replace(base, new, 1))
-                        replay_changed += 1
+                    bases, end, form = rm
+                    mappings = []
+                    ambiguous = []
+                    for base in bases:
+                        olds = base_to_olds.get(base, [])
+                        if len(olds) == 1:
+                            mappings.append((base, old_to_new[olds[0]]))
+                        elif len(olds) > 1:
+                            ambiguous.append((base, len(olds)))
+                    if ambiguous:
+                        for base, count in ambiguous:
+                            stats["ambiguous"].append(
+                                f"{rel}: replay command basename {base} "
+                                f"matches {count} moves)")
                         i = end + 1
                         continue
-                    if len(olds) > 1:
-                        stats["ambiguous"].append(
-                            f"{rel}: replay command basename {base} "
-                            f"matches {len(olds)} moves)")
+                    if mappings:
+                        target_index = i if form == "line" else i + 1
+                        target_line = lines[target_index]
+                        for base, new in mappings:
+                            for token in (f".\\{base}", f"./{base}", base):
+                                if token in target_line:
+                                    target_line = target_line.replace(
+                                        token, new, 1)
+                                    break
+                        if form == "line":
+                            out_lines.append(target_line)
+                        else:
+                            out_lines.append(lines[i])
+                            out_lines.append(target_line)
+                        replay_changed += len(mappings)
                         i = end + 1
                         continue
             out_lines.append(line)

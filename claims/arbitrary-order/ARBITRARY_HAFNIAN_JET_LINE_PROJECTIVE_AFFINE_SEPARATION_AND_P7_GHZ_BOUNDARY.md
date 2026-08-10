@@ -424,8 +424,8 @@ P7 nonrestriction and global Krenn--Gu:                     UNRESOLVED. (36)
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py
 python claims/arbitrary-order/audit_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py
-python -m py_compile verify_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py audit_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py
-uv run --with ruff ruff check verify_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py audit_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py
+python -m py_compile claims/arbitrary-order/verify_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py claims/arbitrary-order/audit_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py
+uv run --with ruff ruff check claims/arbitrary-order/verify_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py claims/arbitrary-order/audit_arbitrary_hafnian_jet_line_projective_affine_separation_and_p7_ghz_boundary.py
 ```
 
 The primary verifier checks the arbitrary exponent ledger, the exact Kneser

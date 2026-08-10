@@ -355,8 +355,8 @@ Run from the repository root:
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_residual_two_port_factor_analysis_ideal_and_five_port_pentad.py
 python claims/arbitrary-order/audit_residual_two_port_factor_analysis_ideal_and_five_port_pentad.py
-python -m py_compile verify_residual_two_port_factor_analysis_ideal_and_five_port_pentad.py audit_residual_two_port_factor_analysis_ideal_and_five_port_pentad.py
-uv run --with ruff ruff check verify_residual_two_port_factor_analysis_ideal_and_five_port_pentad.py audit_residual_two_port_factor_analysis_ideal_and_five_port_pentad.py
+python -m py_compile claims/arbitrary-order/verify_residual_two_port_factor_analysis_ideal_and_five_port_pentad.py claims/arbitrary-order/audit_residual_two_port_factor_analysis_ideal_and_five_port_pentad.py
+uv run --with ruff ruff check claims/arbitrary-order/verify_residual_two_port_factor_analysis_ideal_and_five_port_pentad.py claims/arbitrary-order/audit_residual_two_port_factor_analysis_ideal_and_five_port_pentad.py
 ```
 
 The primary verifier checks the pentad substitution, irreducibility data,

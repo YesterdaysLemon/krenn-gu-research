@@ -230,8 +230,8 @@ polynomial identities and fixed characteristic-zero incidence maps.
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_pinned_h4_torus_support_six_reciprocal_polarization_exclusion.py
 python claims/p7/audit_p7_pinned_h4_torus_support_six_reciprocal_polarization_exclusion.py
-python -m py_compile verify_p7_pinned_h4_torus_support_six_reciprocal_polarization_exclusion.py audit_p7_pinned_h4_torus_support_six_reciprocal_polarization_exclusion.py
-uv run --with ruff ruff check verify_p7_pinned_h4_torus_support_six_reciprocal_polarization_exclusion.py audit_p7_pinned_h4_torus_support_six_reciprocal_polarization_exclusion.py
+python -m py_compile claims/p7/verify_p7_pinned_h4_torus_support_six_reciprocal_polarization_exclusion.py claims/p7/audit_p7_pinned_h4_torus_support_six_reciprocal_polarization_exclusion.py
+uv run --with ruff ruff check claims/p7/verify_p7_pinned_h4_torus_support_six_reciprocal_polarization_exclusion.py claims/p7/audit_p7_pinned_h4_torus_support_six_reciprocal_polarization_exclusion.py
 ```
 
 The primary verifier checks the two hafnian row reductions, exact ranks and

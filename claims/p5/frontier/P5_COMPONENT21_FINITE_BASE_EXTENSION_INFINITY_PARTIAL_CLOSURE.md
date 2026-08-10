@@ -146,17 +146,17 @@ is precisely the part not promoted here.
 Replay the pinned finite component package first:
 
 ```powershell
-uv run --with sympy python .\verify_p5_component21_normalized_parameter_compactification_complete_obstruction.py
-uv run --with sympy python .\audit_p5_component21_normalized_parameter_compactification_complete_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_normalized_parameter_compactification_complete_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_normalized_parameter_compactification_complete_obstruction.py
 ```
 
 Then run:
 
 ```powershell
-uv run --with sympy python .\verify_p5_component21_finite_base_extension_infinity_partial_closure.py
-uv run --with sympy python .\audit_p5_component21_finite_base_extension_infinity_partial_closure.py
-uv run --with sympy --with ruff python -m ruff check .\verify_p5_component21_finite_base_extension_infinity_partial_closure.py .\audit_p5_component21_finite_base_extension_infinity_partial_closure.py
-uv run --with sympy python -m py_compile .\verify_p5_component21_finite_base_extension_infinity_partial_closure.py .\audit_p5_component21_finite_base_extension_infinity_partial_closure.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_finite_base_extension_infinity_partial_closure.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_finite_base_extension_infinity_partial_closure.py
+uv run --with sympy --with ruff python -m ruff check claims/p5/frontier/verify_p5_component21_finite_base_extension_infinity_partial_closure.py claims/p5/frontier/audit_p5_component21_finite_base_extension_infinity_partial_closure.py
+uv run --with sympy python -m py_compile claims/p5/frontier/verify_p5_component21_finite_base_extension_infinity_partial_closure.py claims/p5/frontier/audit_p5_component21_finite_base_extension_infinity_partial_closure.py
 ```
 
 The primary reconstructs the coefficient maps, the two Fitting covers, both

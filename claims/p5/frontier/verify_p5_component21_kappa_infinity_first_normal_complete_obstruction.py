@@ -45,9 +45,9 @@ PQ_PRIMARY = (
 )
 PQ_AUDIT = ROOT / "audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py"
 PINNED = {
-    PQ_THEOREM: "d3f805cee8606dae8bf4c58a912d0bf864772da5e53d9b3dce8ef698e3904930",
-    PQ_PRIMARY: "5e6046fbbfa4b52139c1b70ee453ad397ec0d6bfe38684164711a1b5be3f5aff",
-    PQ_AUDIT: "eb125d0af4a9f208b95803f1fbc901dde05a43307268eeeb65e6ad9e3203e7fa",
+    PQ_THEOREM: "efcaac7d95ead192dfd4fd6167d3ee1c47eaaddef746fe5c0da85033ab132c1a",
+    PQ_PRIMARY: "2f2b64ccf1aca2e6960d8bc4c21a57be2e9cf601d192d85f7e15255b8fa9f697",
+    PQ_AUDIT: "e7f8c89c5437f8c3369563820e44e404f3f0603210b99fa1f26c831ecb541dc7",
 }
 
 

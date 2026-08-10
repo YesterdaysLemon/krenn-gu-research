@@ -150,8 +150,8 @@ global Krenn--Gu conjecture:                       UNRESOLVED.
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_root_m7_all_endpoint_legal_three_incidence_supports_exclusion.py
 uv run --with sympy python claims/arbitrary-order/audit_root_m7_all_endpoint_legal_three_incidence_supports_exclusion.py
-uv run --with sympy --with ruff python -m ruff check verify_root_m7_all_endpoint_legal_three_incidence_supports_exclusion.py audit_root_m7_all_endpoint_legal_three_incidence_supports_exclusion.py
-python -m py_compile verify_root_m7_all_endpoint_legal_three_incidence_supports_exclusion.py audit_root_m7_all_endpoint_legal_three_incidence_supports_exclusion.py
+uv run --with sympy --with ruff python -m ruff check claims/arbitrary-order/verify_root_m7_all_endpoint_legal_three_incidence_supports_exclusion.py claims/arbitrary-order/audit_root_m7_all_endpoint_legal_three_incidence_supports_exclusion.py
+python -m py_compile claims/arbitrary-order/verify_root_m7_all_endpoint_legal_three_incidence_supports_exclusion.py claims/arbitrary-order/audit_root_m7_all_endpoint_legal_three_incidence_supports_exclusion.py
 ```
 
 The primary verifier reuses the pinned support constructors and checks the

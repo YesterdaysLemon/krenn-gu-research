@@ -147,8 +147,8 @@ Then run:
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_root_finite_nonroot_companion_endpoint_count_obstruction.py
 python claims/arbitrary-order/audit_root_finite_nonroot_companion_endpoint_count_obstruction.py
-uv run --with sympy --with ruff python -m ruff check verify_root_finite_nonroot_companion_endpoint_count_obstruction.py audit_root_finite_nonroot_companion_endpoint_count_obstruction.py
-python -m py_compile verify_root_finite_nonroot_companion_endpoint_count_obstruction.py audit_root_finite_nonroot_companion_endpoint_count_obstruction.py
+uv run --with sympy --with ruff python -m ruff check claims/arbitrary-order/verify_root_finite_nonroot_companion_endpoint_count_obstruction.py claims/arbitrary-order/audit_root_finite_nonroot_companion_endpoint_count_obstruction.py
+python -m py_compile claims/arbitrary-order/verify_root_finite_nonroot_companion_endpoint_count_obstruction.py claims/arbitrary-order/audit_root_finite_nonroot_companion_endpoint_count_obstruction.py
 ```
 
 The primary checks (6) with exact symbolic kernel bases and audits the

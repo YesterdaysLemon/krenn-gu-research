@@ -43,37 +43,37 @@ THEOREM = (
 )
 PINNED = {
     ROOT / "P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md": (
-        "d3f805cee8606dae8bf4c58a912d0bf864772da5e53d9b3dce8ef698e3904930"
+        "efcaac7d95ead192dfd4fd6167d3ee1c47eaaddef746fe5c0da85033ab132c1a"
     ),
     ROOT / "verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py": (
-        "5e6046fbbfa4b52139c1b70ee453ad397ec0d6bfe38684164711a1b5be3f5aff"
+        "2f2b64ccf1aca2e6960d8bc4c21a57be2e9cf601d192d85f7e15255b8fa9f697"
     ),
     ROOT / "audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py": (
-        "eb125d0af4a9f208b95803f1fbc901dde05a43307268eeeb65e6ad9e3203e7fa"
+        "e7f8c89c5437f8c3369563820e44e404f3f0603210b99fa1f26c831ecb541dc7"
     ),
     ROOT
     / "P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md": (
-        "71ca2e3e780fb1e6a8b8c8f62f0dca620dc67bda1415cbe0a02298b04ce2af16"
+        "cac9ec720925270d632023ebaa27e7c7a2f95fbf92a18fa717f07da2046d5d4b"
     ),
     ROOT
     / "verify_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py": (
-        "cb70de27499b85a365315ea535de65166e2780715f70e0a682b9c54d24b86c49"
+        "3b5d8817eb6824cb39a3c74b4efde7a9641af1509f6e48894d51a164e018a473"
     ),
     ROOT
     / "audit_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py": (
-        "8aa7aef73693c47fafd20324d02e8a3dee693eaaf57c074699f320b06d82ebb1"
+        "ee82699ed2db570586ac727e62e695344e55edf50d4677baded82bf0bf8f8073"
     ),
     ROOT
     / "P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md": (
-        "d7a8aa6b9c5677dd65cef18ee615419a6aed2da992734950189eb56bec61adc4"
+        "9d8bc13d1b8909fe59f9ca16ff9c74fbef7f9a9cdbbe279b30787195574765ed"
     ),
     ROOT
     / "verify_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py": (
-        "7016219b962cfea354c8d9951f79eda7da3053680043a7268a3a09083c6ee323"
+        "ebf040dd1b9e5389abcce20465e6ab86faedbe756fa8a8414136efbddf9310e6"
     ),
     ROOT
     / "audit_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py": (
-        "29358fe97a2eeb3697b5b90c113ed2f0bb206c3fd1cbde58f34b7bad8f85fa3a"
+        "5b2a7d84aacf9b9b5252f05f0353811cba84eb30e1d47d1073b122fd6216b728"
     ),
 }
 

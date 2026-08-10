@@ -355,10 +355,10 @@ global Krenn--Gu conjecture:                           UNRESOLVED.    (21)
 ## Replay
 
 ~~~powershell
-uv run --with sympy python verify_p6_two_shore_hyperbolic_scalar_fibre_axis_defect_and_four_plus_two_transfer.py
-python audit_p6_two_shore_hyperbolic_scalar_fibre_axis_defect_and_four_plus_two_transfer.py
-python -m py_compile verify_p6_two_shore_hyperbolic_scalar_fibre_axis_defect_and_four_plus_two_transfer.py audit_p6_two_shore_hyperbolic_scalar_fibre_axis_defect_and_four_plus_two_transfer.py
-uv run --with ruff ruff check verify_p6_two_shore_hyperbolic_scalar_fibre_axis_defect_and_four_plus_two_transfer.py audit_p6_two_shore_hyperbolic_scalar_fibre_axis_defect_and_four_plus_two_transfer.py
+uv run --with sympy python claims/p6/verify_p6_two_shore_hyperbolic_scalar_fibre_axis_defect_and_four_plus_two_transfer.py
+python claims/p6/audit_p6_two_shore_hyperbolic_scalar_fibre_axis_defect_and_four_plus_two_transfer.py
+python -m py_compile claims/p6/verify_p6_two_shore_hyperbolic_scalar_fibre_axis_defect_and_four_plus_two_transfer.py claims/p6/audit_p6_two_shore_hyperbolic_scalar_fibre_axis_defect_and_four_plus_two_transfer.py
+uv run --with ruff ruff check claims/p6/verify_p6_two_shore_hyperbolic_scalar_fibre_axis_defect_and_four_plus_two_transfer.py claims/p6/audit_p6_two_shore_hyperbolic_scalar_fibre_axis_defect_and_four_plus_two_transfer.py
 ~~~
 
 The primary replay checks the rational hyperbolic factors, pure face

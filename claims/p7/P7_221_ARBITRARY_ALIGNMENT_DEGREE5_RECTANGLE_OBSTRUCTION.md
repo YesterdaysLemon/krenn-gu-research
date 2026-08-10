@@ -289,8 +289,8 @@ global Krenn--Gu:                              UNRESOLVED.              (22)
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_221_arbitrary_alignment_degree5_rectangle_obstruction.py
 python claims/p7/audit_p7_221_arbitrary_alignment_degree5_rectangle_obstruction.py
-python -m py_compile verify_p7_221_arbitrary_alignment_degree5_rectangle_obstruction.py audit_p7_221_arbitrary_alignment_degree5_rectangle_obstruction.py
-uv run --with ruff ruff check verify_p7_221_arbitrary_alignment_degree5_rectangle_obstruction.py audit_p7_221_arbitrary_alignment_degree5_rectangle_obstruction.py
+python -m py_compile claims/p7/verify_p7_221_arbitrary_alignment_degree5_rectangle_obstruction.py claims/p7/audit_p7_221_arbitrary_alignment_degree5_rectangle_obstruction.py
+uv run --with ruff ruff check claims/p7/verify_p7_221_arbitrary_alignment_degree5_rectangle_obstruction.py claims/p7/audit_p7_221_arbitrary_alignment_degree5_rectangle_obstruction.py
 ```
 
 The primary verifier reconstructs the transformed row tables, checks (16)--

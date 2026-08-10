@@ -219,8 +219,8 @@ global Krenn--Gu:       UNRESOLVED.                  (19)
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_physical_mixed_kernel_exceptional_wall_graph.py
 python claims/p7/audit_p7_physical_mixed_kernel_exceptional_wall_graph.py
-python -m py_compile verify_p7_physical_mixed_kernel_exceptional_wall_graph.py audit_p7_physical_mixed_kernel_exceptional_wall_graph.py
-uv run --with ruff ruff check verify_p7_physical_mixed_kernel_exceptional_wall_graph.py audit_p7_physical_mixed_kernel_exceptional_wall_graph.py
+python -m py_compile claims/p7/verify_p7_physical_mixed_kernel_exceptional_wall_graph.py claims/p7/audit_p7_physical_mixed_kernel_exceptional_wall_graph.py
+uv run --with ruff ruff check claims/p7/verify_p7_physical_mixed_kernel_exceptional_wall_graph.py claims/p7/audit_p7_physical_mixed_kernel_exceptional_wall_graph.py
 ```
 
 The primary verifier proves the exceptional reconstruction as a universal

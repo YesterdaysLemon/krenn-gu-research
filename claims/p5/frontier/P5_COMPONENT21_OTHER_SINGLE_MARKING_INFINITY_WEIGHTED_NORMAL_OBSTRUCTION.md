@@ -170,17 +170,17 @@ are also outside this statement.
 Replay the pinned normalized component-21 package first:
 
 ```powershell
-uv run --with sympy python .\verify_p5_component21_normalized_parameter_compactification_complete_obstruction.py
-uv run --with sympy python .\audit_p5_component21_normalized_parameter_compactification_complete_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_normalized_parameter_compactification_complete_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_normalized_parameter_compactification_complete_obstruction.py
 ```
 
 Then run:
 
 ```powershell
-uv run --with sympy python .\verify_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py
-uv run --with sympy python .\audit_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py
-uv run --with sympy --with ruff python -m ruff check .\verify_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py .\audit_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py
-uv run --with sympy python -m py_compile .\verify_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py .\audit_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py
+uv run --with sympy --with ruff python -m ruff check claims/p5/frontier/verify_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py claims/p5/frontier/audit_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py
+uv run --with sympy python -m py_compile claims/p5/frontier/verify_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py claims/p5/frontier/audit_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py
 ```
 
 The primary reconstructs all 24 unit ideals and the exact homogeneous,

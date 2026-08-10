@@ -128,17 +128,17 @@ for the boundaries listed above.
 Replay the pinned finite-base partial closure first:
 
 ```powershell
-uv run --with sympy python .\verify_p5_component21_finite_base_extension_infinity_partial_closure.py
-uv run --with sympy python .\audit_p5_component21_finite_base_extension_infinity_partial_closure.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_finite_base_extension_infinity_partial_closure.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_finite_base_extension_infinity_partial_closure.py
 ```
 
 Then run:
 
 ```powershell
-uv run --with sympy python .\verify_p5_component21_extension_kernel_marked_h31_leading_obstruction.py
-uv run --with sympy python .\audit_p5_component21_extension_kernel_marked_h31_leading_obstruction.py
-uv run --with sympy --with ruff python -m ruff check .\verify_p5_component21_extension_kernel_marked_h31_leading_obstruction.py .\audit_p5_component21_extension_kernel_marked_h31_leading_obstruction.py
-uv run --with sympy python -m py_compile .\verify_p5_component21_extension_kernel_marked_h31_leading_obstruction.py .\audit_p5_component21_extension_kernel_marked_h31_leading_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_extension_kernel_marked_h31_leading_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_extension_kernel_marked_h31_leading_obstruction.py
+uv run --with sympy --with ruff python -m ruff check claims/p5/frontier/verify_p5_component21_extension_kernel_marked_h31_leading_obstruction.py claims/p5/frontier/audit_p5_component21_extension_kernel_marked_h31_leading_obstruction.py
+uv run --with sympy python -m py_compile claims/p5/frontier/verify_p5_component21_extension_kernel_marked_h31_leading_obstruction.py claims/p5/frontier/audit_p5_component21_extension_kernel_marked_h31_leading_obstruction.py
 ```
 
 The primary reconstructs all four marked kernel cases using the repository's

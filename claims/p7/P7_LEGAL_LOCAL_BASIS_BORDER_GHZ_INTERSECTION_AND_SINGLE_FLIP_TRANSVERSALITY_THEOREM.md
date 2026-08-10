@@ -414,8 +414,8 @@ global Krenn--Gu:                                      UNRESOLVED.
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_legal_local_basis_border_ghz_intersection_and_single_flip_transversality.py
 python claims/p7/audit_p7_legal_local_basis_border_ghz_intersection_and_single_flip_transversality.py
-python -m py_compile verify_p7_legal_local_basis_border_ghz_intersection_and_single_flip_transversality.py audit_p7_legal_local_basis_border_ghz_intersection_and_single_flip_transversality.py
-uv run --with ruff ruff check verify_p7_legal_local_basis_border_ghz_intersection_and_single_flip_transversality.py audit_p7_legal_local_basis_border_ghz_intersection_and_single_flip_transversality.py
+python -m py_compile claims/p7/verify_p7_legal_local_basis_border_ghz_intersection_and_single_flip_transversality.py claims/p7/audit_p7_legal_local_basis_border_ghz_intersection_and_single_flip_transversality.py
+uv run --with ruff ruff check claims/p7/verify_p7_legal_local_basis_border_ghz_intersection_and_single_flip_transversality.py claims/p7/audit_p7_legal_local_basis_border_ghz_intersection_and_single_flip_transversality.py
 ```
 
 The primary replay builds the 33 tangent coordinate words, verifies the

@@ -387,8 +387,8 @@ global Krenn--Gu conjecture:                             UNRESOLVED.
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py
 python claims/arbitrary-order/audit_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py
-python -m py_compile verify_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py audit_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py
-uv run --with ruff ruff check verify_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py audit_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py
+python -m py_compile claims/arbitrary-order/verify_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py claims/arbitrary-order/audit_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py
+uv run --with ruff ruff check claims/arbitrary-order/verify_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py claims/arbitrary-order/audit_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py
 ```
 
 The primary replay checks a generic symbolic three-root instance of (5), the

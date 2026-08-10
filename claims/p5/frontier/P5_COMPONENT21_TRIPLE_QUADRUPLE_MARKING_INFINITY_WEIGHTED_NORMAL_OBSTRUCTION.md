@@ -177,17 +177,17 @@ this theorem.
 Replay the pairwise package used as the pinned dependency:
 
 ```powershell
-uv run --with sympy python .\verify_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction.py
-uv run --with sympy python .\audit_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction.py
 ```
 
 Then run:
 
 ```powershell
-uv run --with sympy python .\verify_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py
-uv run --with sympy python .\audit_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py
-uv run --with sympy --with ruff python -m ruff check .\verify_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py .\audit_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py
-uv run --with sympy python -m py_compile .\verify_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py .\audit_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py
+uv run --with sympy --with ruff python -m ruff check claims/p5/frontier/verify_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py claims/p5/frontier/audit_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py
+uv run --with sympy python -m py_compile claims/p5/frontier/verify_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py claims/p5/frontier/audit_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py
 ```
 
 The primary reconstructs all five homogeneous charts, all five exact

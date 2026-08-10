@@ -214,8 +214,8 @@ global Krenn-Gu conjecture:                     UNRESOLVED.
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_root_m7_hall_satisfying_two_port_pure_p7_construction.py
 python claims/arbitrary-order/audit_root_m7_hall_satisfying_two_port_pure_p7_construction.py
-uv run --with sympy --with ruff python -m ruff check verify_root_m7_hall_satisfying_two_port_pure_p7_construction.py audit_root_m7_hall_satisfying_two_port_pure_p7_construction.py
-python -m py_compile verify_root_m7_hall_satisfying_two_port_pure_p7_construction.py audit_root_m7_hall_satisfying_two_port_pure_p7_construction.py
+uv run --with sympy --with ruff python -m ruff check claims/arbitrary-order/verify_root_m7_hall_satisfying_two_port_pure_p7_construction.py claims/arbitrary-order/audit_root_m7_hall_satisfying_two_port_pure_p7_construction.py
+python -m py_compile claims/arbitrary-order/verify_root_m7_hall_satisfying_two_port_pure_p7_construction.py claims/arbitrary-order/audit_root_m7_hall_satisfying_two_port_pure_p7_construction.py
 ```
 
 The primary constructs the legal integer blocks, verifies every span and

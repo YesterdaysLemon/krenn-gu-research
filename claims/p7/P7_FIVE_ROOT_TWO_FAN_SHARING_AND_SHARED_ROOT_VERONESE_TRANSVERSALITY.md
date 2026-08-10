@@ -440,8 +440,8 @@ global Krenn--Gu conjecture:                          UNRESOLVED.
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_five_root_two_fan_sharing_and_shared_root_veronese_transversality.py
 python claims/p7/audit_p7_five_root_two_fan_sharing_and_shared_root_veronese_transversality.py
-python -m py_compile verify_p7_five_root_two_fan_sharing_and_shared_root_veronese_transversality.py audit_p7_five_root_two_fan_sharing_and_shared_root_veronese_transversality.py
-uv run --with ruff ruff check verify_p7_five_root_two_fan_sharing_and_shared_root_veronese_transversality.py audit_p7_five_root_two_fan_sharing_and_shared_root_veronese_transversality.py
+python -m py_compile claims/p7/verify_p7_five_root_two_fan_sharing_and_shared_root_veronese_transversality.py claims/p7/audit_p7_five_root_two_fan_sharing_and_shared_root_veronese_transversality.py
+uv run --with ruff ruff check claims/p7/verify_p7_five_root_two_fan_sharing_and_shared_root_veronese_transversality.py claims/p7/audit_p7_five_root_two_fan_sharing_and_shared_root_veronese_transversality.py
 ```
 
 The primary verifier checks the hollow-sandwich reduction, both sides of the

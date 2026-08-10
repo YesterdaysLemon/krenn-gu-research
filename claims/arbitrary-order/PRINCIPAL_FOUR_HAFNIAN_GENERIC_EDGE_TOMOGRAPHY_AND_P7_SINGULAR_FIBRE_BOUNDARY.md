@@ -266,8 +266,8 @@ global Krenn--Gu:                    UNRESOLVED.        (14)
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_principal_four_hafnian_generic_edge_tomography.py
 python claims/arbitrary-order/audit_principal_four_hafnian_generic_edge_tomography.py
-python -m py_compile verify_principal_four_hafnian_generic_edge_tomography.py audit_principal_four_hafnian_generic_edge_tomography.py
-uv run --with ruff ruff check verify_principal_four_hafnian_generic_edge_tomography.py audit_principal_four_hafnian_generic_edge_tomography.py
+python -m py_compile claims/arbitrary-order/verify_principal_four_hafnian_generic_edge_tomography.py claims/arbitrary-order/audit_principal_four_hafnian_generic_edge_tomography.py
+uv run --with ruff ruff check claims/arbitrary-order/verify_principal_four_hafnian_generic_edge_tomography.py claims/arbitrary-order/audit_principal_four_hafnian_generic_edge_tomography.py
 ```
 
 The primary replay differentiates the symbolic four-hafnian formula, builds

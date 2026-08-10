@@ -29,13 +29,13 @@ PRIMARY = ROOT / "verify_p5_component21_extension_kernel_marked_h31_leading_obst
 THEOREM = ROOT / "P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md"
 PINNED = {
     ROOT / "P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md": (
-        "21173708385ae3fa09160c4a3788dbdc96fff3710bfd766a175477c607b552a9"
+        "1c8f5c83aeae794782b684b1f35f3c25323470edae28c38a5c52d423b8a86502"
     ),
     ROOT / "verify_p5_component21_finite_base_extension_infinity_partial_closure.py": (
-        "db6055a20fdc3e9e0d5a4e7ac026f5c43201fa0b85e95019374d655c24b5a061"
+        "3c407f3b9612e1a51268f85c78778eb0ee23543438ee432838501f02f6a02229"
     ),
     ROOT / "audit_p5_component21_finite_base_extension_infinity_partial_closure.py": (
-        "2078feb22503e06343ce04e7710d6c49f0de0fbd6d16b4f41fb96a305fa1691c"
+        "965afa260b29fc02e624a0362c78644dd8f8604594cdcbef78cbf7c29a8b4ca6"
     ),
 }
 WORDS4 = tuple(itertools.product((0, 1), repeat=4))

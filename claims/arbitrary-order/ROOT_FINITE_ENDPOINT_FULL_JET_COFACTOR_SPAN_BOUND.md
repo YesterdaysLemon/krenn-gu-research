@@ -193,8 +193,8 @@ branch is claimed empty here.
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_root_finite_endpoint_full_jet_cofactor_span_bound.py
 python claims/arbitrary-order/audit_root_finite_endpoint_full_jet_cofactor_span_bound.py
-uv run --with sympy --with ruff python -m ruff check verify_root_finite_endpoint_full_jet_cofactor_span_bound.py audit_root_finite_endpoint_full_jet_cofactor_span_bound.py
-python -m py_compile verify_root_finite_endpoint_full_jet_cofactor_span_bound.py audit_root_finite_endpoint_full_jet_cofactor_span_bound.py
+uv run --with sympy --with ruff python -m ruff check claims/arbitrary-order/verify_root_finite_endpoint_full_jet_cofactor_span_bound.py claims/arbitrary-order/audit_root_finite_endpoint_full_jet_cofactor_span_bound.py
+python -m py_compile claims/arbitrary-order/verify_root_finite_endpoint_full_jet_cofactor_span_bound.py claims/arbitrary-order/audit_root_finite_endpoint_full_jet_cofactor_span_bound.py
 ```
 
 The primary reconstructs the exact coefficient-form ranks on all small

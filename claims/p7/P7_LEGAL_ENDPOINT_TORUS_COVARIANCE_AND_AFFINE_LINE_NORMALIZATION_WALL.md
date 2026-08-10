@@ -371,8 +371,8 @@ global Krenn--Gu:                                      UNRESOLVED.
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_legal_endpoint_torus_covariance_and_affine_line_normalization.py
 python claims/p7/audit_p7_legal_endpoint_torus_covariance_and_affine_line_normalization.py
-python -m py_compile verify_p7_legal_endpoint_torus_covariance_and_affine_line_normalization.py audit_p7_legal_endpoint_torus_covariance_and_affine_line_normalization.py
-uv run --with ruff ruff check verify_p7_legal_endpoint_torus_covariance_and_affine_line_normalization.py audit_p7_legal_endpoint_torus_covariance_and_affine_line_normalization.py
+python -m py_compile claims/p7/verify_p7_legal_endpoint_torus_covariance_and_affine_line_normalization.py claims/p7/audit_p7_legal_endpoint_torus_covariance_and_affine_line_normalization.py
+uv run --with ruff ruff check claims/p7/verify_p7_legal_endpoint_torus_covariance_and_affine_line_normalization.py claims/p7/audit_p7_legal_endpoint_torus_covariance_and_affine_line_normalization.py
 ```
 
 The primary verifier checks the endpoint character of every legal matching

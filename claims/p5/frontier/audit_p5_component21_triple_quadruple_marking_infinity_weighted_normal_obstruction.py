@@ -35,13 +35,13 @@ PRIMARY = (
 )
 DEPENDENCIES = {
     "claims/p5/frontier/P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md": (
-        "5a344a6de7447cb226ce0035578988643425bb7ba87f954a5f824c6d12e37d7d"
+        "c3912db0023f703d92bf98343478ae4d332d93b4a0eda7d902fa2a0ae099728c"
     ),
     "claims/p5/frontier/verify_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction.py": (
-        "7807436d9051e4f1990f49d605b559e2f9b006dd1abd3b195fcd510eaa543580"
+        "d3fd735b6798aa99888ae74136394d3b6602a8ff59031770f6237b5dab997fad"
     ),
     "claims/p5/frontier/audit_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction.py": (
-        "972c2f7153ef030e399f592e9e59dda14964708420ffd52af84cb8ef63eaf392"
+        "a27e24c97e818acbec437ff8ee62089936eefd4355acdcd46613a0bc0fd1e5c0"
     ),
 }
 WORDS = tuple(itertools.product((0, 1), repeat=4))

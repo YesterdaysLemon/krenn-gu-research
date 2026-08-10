@@ -317,8 +317,8 @@ or finite field is searched.
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_primitive_boolean_square_quotient_hessian_corank_and_tomography.py
 python claims/p7/audit_p7_primitive_boolean_square_quotient_hessian_corank_and_tomography.py
-python -m py_compile verify_p7_primitive_boolean_square_quotient_hessian_corank_and_tomography.py audit_p7_primitive_boolean_square_quotient_hessian_corank_and_tomography.py
-uv run --with ruff ruff check verify_p7_primitive_boolean_square_quotient_hessian_corank_and_tomography.py audit_p7_primitive_boolean_square_quotient_hessian_corank_and_tomography.py
+python -m py_compile claims/p7/verify_p7_primitive_boolean_square_quotient_hessian_corank_and_tomography.py claims/p7/audit_p7_primitive_boolean_square_quotient_hessian_corank_and_tomography.py
+uv run --with ruff ruff check claims/p7/verify_p7_primitive_boolean_square_quotient_hessian_corank_and_tomography.py claims/p7/audit_p7_primitive_boolean_square_quotient_hessian_corank_and_tomography.py
 ```
 
 The primary verifier checks (11) on a basis of the complete 14-dimensional

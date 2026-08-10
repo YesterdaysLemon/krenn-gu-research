@@ -231,20 +231,20 @@ explicitly excluded directions above.
 From the repository root, first replay the pinned obstruction package:
 
 ```powershell
-uv run --with sympy python .\verify_p4_coincident_support_rank_one_star_component.py
-uv run --with sympy python .\verify_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py
-uv run --with sympy python .\audit_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py
-uv run --with sympy --with ruff python -m ruff check .\verify_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py .\audit_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py
-uv run --with sympy python -m py_compile .\verify_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py .\audit_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py
+uv run --with sympy python claims/p4/classifications/star/coincident-support-rank-one-star/verify_p4_coincident_support_rank_one_star_component.py
+uv run --with sympy python claims/p5/boundaries/verify_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py
+uv run --with sympy python claims/p5/boundaries/audit_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py
+uv run --with sympy --with ruff python -m ruff check claims/p5/boundaries/verify_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py claims/p5/boundaries/audit_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py
+uv run --with sympy python -m py_compile claims/p5/boundaries/verify_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py claims/p5/boundaries/audit_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py
 ```
 
 Then replay the transport certificate:
 
 ```powershell
-uv run --with sympy python .\verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py
-uv run --with sympy python .\audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py
-uv run --with sympy --with ruff python -m ruff check .\verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py .\audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py
-uv run --with sympy python -m py_compile .\verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py .\audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py
+uv run --with sympy --with ruff python -m ruff check claims/p5/frontier/verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py claims/p5/frontier/audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py
+uv run --with sympy python -m py_compile claims/p5/frontier/verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py claims/p5/frontier/audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py
 ```
 
 The audit imports no code from either primary verifier.  Both new programs

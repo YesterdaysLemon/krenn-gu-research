@@ -379,8 +379,8 @@ global Krenn--Gu conjecture:                           UNRESOLVED.
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_residual_zeon_apolar_multi_leg_catalecticant.py
 python claims/arbitrary-order/audit_residual_zeon_apolar_multi_leg_catalecticant.py
-python -m py_compile verify_residual_zeon_apolar_multi_leg_catalecticant.py audit_residual_zeon_apolar_multi_leg_catalecticant.py
-uv run --with ruff ruff check verify_residual_zeon_apolar_multi_leg_catalecticant.py audit_residual_zeon_apolar_multi_leg_catalecticant.py
+python -m py_compile claims/arbitrary-order/verify_residual_zeon_apolar_multi_leg_catalecticant.py claims/arbitrary-order/audit_residual_zeon_apolar_multi_leg_catalecticant.py
+uv run --with ruff ruff check claims/arbitrary-order/verify_residual_zeon_apolar_multi_leg_catalecticant.py claims/arbitrary-order/audit_residual_zeon_apolar_multi_leg_catalecticant.py
 ```
 
 The primary verifier checks the symbolic `q=4,k=2` all-depth factorization,
