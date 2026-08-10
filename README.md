@@ -21,6 +21,8 @@ counterexample for all even `n >= 6` and `d >= 3`.
   [P3 restrictions](claims/p3/restrictions/README.md),
   [P4](claims/p4/README.md), [P5](claims/p5/README.md),
   [P6](claims/p6/README.md), and [P7](claims/p7/README.md).
+- Phase R3 strict root-end-state enforcement:
+  [`docs/architecture/root-exit-phase-r3-enforcement-report.md`](docs/architecture/root-exit-phase-r3-enforcement-report.md)
 - Stage 33 final-residual reviewed dry-run record:
   [`docs/architecture/root-exit-stage33-final-residual-dry-run.md`](docs/architecture/root-exit-stage33-final-residual-dry-run.md)
 - Stage 32 residual-P5 root-exit record (historical):

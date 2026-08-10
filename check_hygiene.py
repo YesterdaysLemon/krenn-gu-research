@@ -37,9 +37,8 @@ Checks:
      explicitly marked as a curated navigation snapshot with valid shape;
   5. no machine-specific checkout paths, vendored-env prefixes, or
      unguarded sys.path injections;
-  8. root layout against an exact justified allowlist and entry-count
-     target (new debt fails now; grandfathered debt is warning-only
-     until the migration reaches its end state);
+  8. root layout against the active Phase-R3 exact justified allowlist
+     and 16-entry hard limit (every nonallowlisted root path fails);
   9. manifest-aware stale-path enforcement (executed old paths must not
      reappear outside provenance);
   10. executed-batch provenance (every moved entry names a batch file
@@ -61,7 +60,6 @@ from __future__ import annotations
 import ast
 import hashlib
 import json
-import os
 import pathlib
 import py_compile
 import re
@@ -626,21 +624,16 @@ def show_versions() -> None:
         print(f"    {tool}: {found or 'not on PATH (manual replays only)'}")
 
 
-# Root-layout enforcement (warning-only during the migration; set
-# KG_LAYOUT_STRICT=1 only after a dedicated end-state activation review).
-# Every exception is named and justified.  Filename patterns below are
-# diagnostics for prioritizing ordinary research artifacts; they are not an
-# alternative allowlist and they never authorize a move.
+# Phase-R3 root-layout enforcement is strict on every run.  Every exception is
+# named and justified.  Filename patterns below diagnose nonallowlisted
+# research artifacts; they are not an alternative allowlist and never
+# authorize a move.
 ROOT_FILE_JUSTIFICATIONS = {
     ".gitignore": "repository configuration",
     "AGENTS.md": "repository-wide scientific and agent operating contract",
-    "CITATION.cff": "repository citation metadata",
-    "CONTRIBUTING.md": "repository-wide contributor entrypoint",
     "Containerfile": "repository environment configuration",
-    "LICENSE": "repository license",
     "README.md": "top-level navigation and project status",
     "check_hygiene.py": "explicit repository-wide validation entrypoint",
-    "pyproject.toml": "project configuration",
     "requirements.lock.txt": "locked project dependencies",
     "requirements.txt": "project dependencies",
 }
@@ -657,7 +650,7 @@ ROOT_DIR_JUSTIFICATIONS = {
 }
 ALLOWED_ROOT_FILES = set(ROOT_FILE_JUSTIFICATIONS)
 ALLOWED_ROOT_DIRS = set(ROOT_DIR_JUSTIFICATIONS)
-ROOT_COUNT_TARGET = 30
+ROOT_COUNT_TARGET = 16
 ROOT_UNIVERSE_BASELINE_COUNT = 2363
 ROOT_UNIVERSE_BASELINE_SHA256 = (
     "2f4f1af23a89fa3ca56fe2114676c6324385aa1dbd7e5b6ddf35863511edd76c"
@@ -675,20 +668,25 @@ def root_layout_issues(files: list[str]) -> tuple[list[str], int, int, int]:
     """Return end-state root-policy issues and measured entry counts."""
     root_files = sorted(f for f in files if "/" not in f)
     root_dirs = sorted({f.split("/")[0] for f in files if "/" in f})
+    unjustified_files = sorted(set(root_files) - ALLOWED_ROOT_FILES)
+    unjustified_dirs = sorted(set(root_dirs) - ALLOWED_ROOT_DIRS)
     research_pattern_matches = []
-    for f in root_files:
+    for f in unjustified_files:
         for pat in FORBIDDEN_ROOT_PATTERNS:
             if pat.match(f):
                 research_pattern_matches.append(f)
                 break
     entries = len(root_files) + len(root_dirs)
     problems = []
+    allowlist_capacity = len(ALLOWED_ROOT_FILES) + len(ALLOWED_ROOT_DIRS)
+    if allowlist_capacity > ROOT_COUNT_TARGET:
+        problems.append(
+            f"exact allowlist permits {allowlist_capacity} root entries, "
+            f"exceeding the Phase-R3 hard limit of {ROOT_COUNT_TARGET}")
     if entries > ROOT_COUNT_TARGET:
         problems.append(
-            f"{entries} root entries exceed the target of "
-            f"{ROOT_COUNT_TARGET} (migration in progress)")
-    unjustified_files = sorted(set(root_files) - ALLOWED_ROOT_FILES)
-    unjustified_dirs = sorted(set(root_dirs) - ALLOWED_ROOT_DIRS)
+            f"{entries} root entries exceed the Phase-R3 hard limit of "
+            f"{ROOT_COUNT_TARGET}")
     if unjustified_files:
         problems.append(
             f"{len(unjustified_files)} root files lack an end-state "
@@ -863,16 +861,13 @@ def check_root_layout(files: list[str]) -> None:
                       if not baseline_issues else [])
     for issue in baseline_issues + ratchet_issues:
         failures.append(f"root layout ratchet: {issue}")
-    strict = os.environ.get("KG_LAYOUT_STRICT") == "1"
     if problems:
-        label = "HYGIENE FAILURES" if strict else "LAYOUT WARNINGS"
-        print(f"[8] root layout ({'strict' if strict else 'warning-only'}):")
+        print("[8] root layout (strict Phase R3):")
         print(f"    measured {root_file_count} files + "
               f"{root_dir_count} directories")
         for p in problems:
             print(f"    {p}")
-        if strict:
-            failures.extend(f"root layout: {p}" for p in problems)
+        failures.extend(f"root layout: {p}" for p in problems)
     else:
         print(f"[8] root layout: {entries} entries, every root file and "
               "directory explicitly justified")

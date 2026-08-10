@@ -192,10 +192,12 @@ The end state is intentionally strict:
 > experimental scripts, generators, result data, and similar loose scientific
 > artifacts must eventually leave repository root.
 
-The permanent root is limited to top-level navigation, repository
-configuration, licenses/citation/contribution metadata, and explicitly
-justified repository-wide entrypoints.  `check_hygiene.py` contains the exact
-path allowlist and a justification for every permitted file and directory.
+The permanent root is limited to the exact seven-file and nine-directory set
+justified in `check_hygiene.py`: repository navigation and operating contracts,
+environment/dependency configuration, the repository-wide validator, and the
+nine named ownership directories.  A new root metadata file is not
+pre-authorized; expanding this allowlist requires a fresh reviewed policy
+change.
 
 Root location is an operational state, not scientific metadata.  Moving a
 file cannot prove, verify, promote, withdraw, or supersede a claim.
@@ -228,9 +230,11 @@ allowance covers only the ownership class named by its justification; placing
 an artifact under `tools/`, `docs/`, or another allowed directory still
 requires that directory to be its real owner.
 
-### Phase R2 -- reviewed debt reduction (active migration workflow)
+### Phase R2 -- reviewed debt reduction (completed migration workflow)
 
-Grandfathered debt can leave root only through the normal migration contract:
+The frozen root universe reached zero debt in Stage 33.  The reviewed migration
+contract remains the authoritative history of how grandfathered debt left
+root:
 
 1. reconstruct filesystem/classification, executable/provenance, and
    mathematical proof-obligation topology separately;
@@ -261,14 +265,22 @@ document to a legacy package.  Only an unambiguous all-withdrawn document can
 use withdrawn status as supporting evidence for a legacy proposal, and even
 then classifier output is not move approval.
 
-### Phase R3 -- exact end-state enforcement (not yet active)
+### Phase R3 -- exact end-state enforcement (active)
 
-The current hygiene report compares the tree to the exact allowlist but keeps
-pre-existing debt warning-only.  Activate strict end-state enforcement only
-after a dedicated review confirms that grandfathered debt is zero and all
-remaining exceptions are intentional.  At that point CI must reject every
-nonallowlisted root path; the numeric root target is only a diagnostic, not a
-substitute for exact path policy.
+Phase R3 was activated after Stage 33 merged to `main` at
+`4263832e3ff338c5bd87528268cb8cb563866ec0`, its exact merged-main hygiene run
+passed, and fresh semantic and mechanical audits confirmed zero grandfathered
+and zero new debt.  At activation the tracked root contained exactly seven
+justified files and nine justified top-level directories.
+
+`python check_hygiene.py` now rejects every tracked top-level path outside that
+exact allowlist on every run; there is no warning-only environment bypass.  The
+16-entry hard limit also bounds allowlist capacity, but exact paths remain the
+authoritative policy.  The frozen manifest's moved-only projection remains 15
+because `AGENTS.md` postdates the 2,363-path inventory.  Its sole
+`review_required` row, for `check_hygiene.py`, is historical filename-classifier
+provenance: the live file is explicitly justified and is not root debt or move
+authority.
 
 At the Stage 11.5 baseline there are 2,023 tracked root entries: 2,014 files
 and 9 directories.  Seven present files have permanent justifications, so

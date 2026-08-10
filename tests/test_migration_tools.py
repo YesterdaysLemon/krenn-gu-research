@@ -2261,7 +2261,72 @@ class EvidenceSemanticsContractTests(unittest.TestCase):
 
 
 class RootExitPolicyTests(unittest.TestCase):
-    """Stage 11.5: root debt may stay for review but cannot grow."""
+    """Root-exit ratchet plus active Phase-R3 exact enforcement."""
+
+    def test_phase_r3_exact_allowlist_and_hard_limit(self):
+        self.assertEqual(check_hygiene.ALLOWED_ROOT_FILES, {
+            ".gitignore",
+            "AGENTS.md",
+            "Containerfile",
+            "README.md",
+            "check_hygiene.py",
+            "requirements.lock.txt",
+            "requirements.txt",
+        })
+        self.assertEqual(check_hygiene.ALLOWED_ROOT_DIRS, {
+            ".github",
+            "catalog",
+            "claims",
+            "docs",
+            "research_figures",
+            "research_snapshots",
+            "src",
+            "tests",
+            "tools",
+        })
+        self.assertEqual(check_hygiene.ROOT_COUNT_TARGET, 16)
+        self.assertEqual(
+            len(check_hygiene.ALLOWED_ROOT_FILES)
+            + len(check_hygiene.ALLOWED_ROOT_DIRS),
+            check_hygiene.ROOT_COUNT_TARGET)
+
+    def test_phase_r3_current_tree_is_exact_and_debt_free(self):
+        files = check_hygiene.tracked_files()
+        self.assertEqual(
+            check_hygiene.root_layout_issues(files),
+            ([], 16, 7, 9))
+        baseline, issues = check_hygiene.root_debt_baseline()
+        self.assertEqual(issues, [])
+        self.assertEqual(baseline, set())
+
+    def test_allowlisted_hygiene_entrypoint_is_not_a_pattern_failure(self):
+        problems, entries, root_files, root_dirs = \
+            check_hygiene.root_layout_issues(
+                ["check_hygiene.py", "claims/a.md"])
+        self.assertEqual((entries, root_files, root_dirs), (2, 1, 1))
+        self.assertEqual(problems, [])
+
+    def test_phase_r3_failure_cannot_be_disabled_by_environment(self):
+        from unittest import mock
+
+        original_failures = check_hygiene.failures
+        try:
+            check_hygiene.failures = []
+            with mock.patch.object(
+                    check_hygiene, "root_debt_baseline",
+                    return_value=(set(), [])), \
+                    mock.patch.dict(
+                        os.environ, {"KG_LAYOUT_STRICT": "0"}, clear=False):
+                check_hygiene.check_root_layout([
+                    "README.md",
+                    "analyze_result.py",
+                    "claims/a.md",
+                ])
+            self.assertTrue(any(
+                failure.startswith("root layout: ")
+                for failure in check_hygiene.failures))
+        finally:
+            check_hygiene.failures = original_failures
 
     def test_frozen_baseline_path_set_resolves_exactly(self):
         baseline, issues = check_hygiene.root_debt_baseline()

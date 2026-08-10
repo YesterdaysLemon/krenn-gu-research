@@ -150,6 +150,9 @@ was run.
 
 Fresh final semantic and mechanical referees accepted exact repair head
 `f69e42d6f595b6785956067bd5a549b988a67083`, including the three-row
-inverse-taper correction batch. Exact-head hosted CI, merge, and merged-main CI
-remain required. Only then may a fresh zero-debt program audit authorize the
-separate strict Phase-R3 enforcement tranche.
+inverse-taper correction batch. PR #69's exact-head hygiene run passed, the
+reviewed chain merged to `main` as
+`4263832e3ff338c5bd87528268cb8cb563866ec0`, and the push workflow for that
+exact merge passed. A fresh zero-debt program audit on the merged tree then
+authorized the separate strict Phase-R3 enforcement tranche recorded in
+[`root-exit-phase-r3-enforcement-report.md`](root-exit-phase-r3-enforcement-report.md).
