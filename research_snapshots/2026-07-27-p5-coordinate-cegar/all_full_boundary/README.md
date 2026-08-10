@@ -19,7 +19,7 @@ non-coordinate support, the four/five-coordinate-row branch, or the
 global Krenn--Gu conjecture.
 
 The mathematical statement and proof boundary are in
-[`P5_ALL_FULL_BOUNDARY_OBSTRUCTION.md`](../../../P5_ALL_FULL_BOUNDARY_OBSTRUCTION.md).
+[`P5_ALL_FULL_BOUNDARY_OBSTRUCTION.md`](../../../claims/p5/boundaries/P5_ALL_FULL_BOUNDARY_OBSTRUCTION.md).
 
 ## Package layout
 
@@ -64,8 +64,8 @@ parameters and three pure coefficients to be nonzero.
 From the repository root, run:
 
 ```text
-python audit_p5_all_full_boundary_obstruction.py
-python verify_p5_all_full_boundary_obstruction.py
+python claims/p5/boundaries/audit_p5_all_full_boundary_obstruction.py
+python claims/p5/boundaries/verify_p5_all_full_boundary_obstruction.py
 ```
 
 The audit does not trust the committed orbit list.  It reconstructs both

@@ -188,9 +188,9 @@ it to rank three.
 This first replaces an unconstrained pair of rank-one `P_4`
 compressions by a small rank-drop incidence dichotomy.  The shared case
 is subsequently excluded in
-[`P5_Q5_311_SHARED_DROP_OBSTRUCTION.md`](../../../../../P5_Q5_311_SHARED_DROP_OBSTRUCTION.md),
+[`P5_Q5_311_SHARED_DROP_OBSTRUCTION.md`](../../../../p5/frontier/P5_Q5_311_SHARED_DROP_OBSTRUCTION.md),
 and the disjoint `2+2` case is excluded in
-[`P5_Q5_311_EXCLUSION_THEOREM.md`](../../../../../P5_Q5_311_EXCLUSION_THEOREM.md).
+[`P5_Q5_311_EXCLUSION_THEOREM.md`](../../../../p5/frontier/P5_Q5_311_EXCLUSION_THEOREM.md).
 In particular, the all-rank-two family linked above shows why
 simultaneous compatibility was necessary: nonzero pure compression of
 one deleted slice is genuinely possible over `C`.

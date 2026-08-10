@@ -11,7 +11,7 @@ not exhaust either active coordinate-support branch and does not resolve
 the global Krenn--Gu conjecture.
 
 The mathematical statement and proof boundary are in
-[`P5_ALL_FULL_TRICOLOUR_OBSTRUCTION.md`](../../../P5_ALL_FULL_TRICOLOUR_OBSTRUCTION.md).
+[`P5_ALL_FULL_TRICOLOUR_OBSTRUCTION.md`](../../../claims/p5/frontier/P5_ALL_FULL_TRICOLOUR_OBSTRUCTION.md).
 
 ## Packaged systems
 
@@ -40,8 +40,8 @@ Thus each ideal has 151 equations in 27 variables over `Q`.  None of the
 From the repository root, run:
 
 ```text
-python audit_p5_all_full_tricolour_obstruction.py
-python verify_p5_all_full_tricolour_obstruction.py
+python claims/p5/frontier/audit_p5_all_full_tricolour_obstruction.py
+python claims/p5/frontier/verify_p5_all_full_tricolour_obstruction.py
 ```
 
 The audit reconstructs the orbit census independently.  The verifier

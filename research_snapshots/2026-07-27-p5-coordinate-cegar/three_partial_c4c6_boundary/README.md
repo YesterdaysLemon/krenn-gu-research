@@ -2,7 +2,7 @@
 
 This directory contains the compact replay evidence for the exact
 finite theorem documented in
-[`P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md`](../../../P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md).
+[`P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md`](../../../claims/p5/boundaries/P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md).
 
 `audit_c4c6.json` is the independent packed-array census of all
 25,194,240 labelled supports and its 5,993 final canonical orbits.
@@ -15,7 +15,7 @@ deterministically regenerated Singular source.  Run:
 
 ```text
 python \
-  verify_p5_exact_three_c4c6_boundary_obstruction.py
+  claims/p5/boundaries/verify_p5_exact_three_c4c6_boundary_obstruction.py
 ```
 
 to regenerate and hash-check all 5,993 sources.  Add

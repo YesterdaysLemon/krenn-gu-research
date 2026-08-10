@@ -18,16 +18,16 @@
   },
   "counts": {
     "total_classified_moves": 2124,
-    "moved": 1199,
+    "moved": 1375,
     "pilot": 0,
     "proposed_high_confidence": 45,
-    "review_required": 880,
+    "review_required": 704,
     "unclassified": 239,
     "root_files_before": 2363,
     "root_dirs_before": 3,
     "root_entries_before": 2366,
-    "projected_root_if_moved_only": 1173,
-    "projected_root_if_high_confidence_batches_executed": 1128,
+    "projected_root_if_moved_only": 997,
+    "projected_root_if_high_confidence_batches_executed": 952,
     "projected_root_if_all_classified_executed": 248,
     "projection_note": "unclassified files are not members of any move set, so every projection already leaves them at the root; do not add unclassified again",
     "collisions": 0,
@@ -6970,9 +6970,10 @@
       "old_path": "P5_ALL_FULL_BOUNDARY_OBSTRUCTION.md",
       "new_path": "claims/p5/boundaries/P5_ALL_FULL_BOUNDARY_OBSTRUCTION.md",
       "reason": "claim_document -> p5/boundaries",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md",
@@ -7010,25 +7011,28 @@
       "old_path": "P5_COMPRESSED_H4_PHYSICAL_TOMOGRAPHY_AND_TARGET_TANGENT_BOUNDARY.md",
       "new_path": "claims/p5/boundaries/P5_COMPRESSED_H4_PHYSICAL_TOMOGRAPHY_AND_TARGET_TANGENT_BOUNDARY.md",
       "reason": "claim_document -> p5/boundaries",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md",
       "new_path": "claims/p5/boundaries/P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md",
       "reason": "claim_document -> p5/boundaries",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md",
       "new_path": "claims/p5/boundaries/P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md",
       "reason": "claim_document -> p5/boundaries",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md",
@@ -7042,25 +7046,28 @@
       "old_path": "P5_ONE_PARTIAL_BOUNDARY_OBSTRUCTION.md",
       "new_path": "claims/p5/boundaries/P5_ONE_PARTIAL_BOUNDARY_OBSTRUCTION.md",
       "reason": "claim_document -> p5/boundaries",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q5_221_FINAL_MONOTONE_BOUNDARY_OBSTRUCTION.md",
       "new_path": "claims/p5/boundaries/P5_Q5_221_FINAL_MONOTONE_BOUNDARY_OBSTRUCTION.md",
       "reason": "claim_document -> p5/boundaries",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_all_full_boundary_obstruction.py",
       "new_path": "claims/p5/boundaries/audit_p5_all_full_boundary_obstruction.py",
       "reason": "claim_script -> p5/boundaries",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_component21_divisor_generic_fibre_obstructions.py",
@@ -7090,17 +7097,19 @@
       "old_path": "audit_p5_compressed_h4_physical_tomography_and_target_tangent_boundary.py",
       "new_path": "claims/p5/boundaries/audit_p5_compressed_h4_physical_tomography_and_target_tangent_boundary.py",
       "reason": "claim_script -> p5/boundaries",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_exact_three_partial_boundary.py",
       "new_path": "claims/p5/boundaries/audit_p5_exact_three_partial_boundary.py",
       "reason": "claim_script -> p5/boundaries",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_exact_two_partial_boundary.py",
@@ -7114,25 +7123,28 @@
       "old_path": "audit_p5_one_partial_boundary_obstruction.py",
       "new_path": "claims/p5/boundaries/audit_p5_one_partial_boundary_obstruction.py",
       "reason": "claim_script -> p5/boundaries",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q5_221_final_monotone_boundary.py",
       "new_path": "claims/p5/boundaries/audit_p5_q5_221_final_monotone_boundary.py",
       "reason": "claim_script -> p5/boundaries",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_all_full_boundary_obstruction.py",
       "new_path": "claims/p5/boundaries/verify_p5_all_full_boundary_obstruction.py",
       "reason": "claim_script -> p5/boundaries",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_component21_divisor_generic_fibre_obstructions.py",
@@ -7162,25 +7174,28 @@
       "old_path": "verify_p5_compressed_h4_physical_tomography_and_target_tangent_boundary.py",
       "new_path": "claims/p5/boundaries/verify_p5_compressed_h4_physical_tomography_and_target_tangent_boundary.py",
       "reason": "claim_script -> p5/boundaries",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_exact_three_c10_boundary_obstruction.py",
       "new_path": "claims/p5/boundaries/verify_p5_exact_three_c10_boundary_obstruction.py",
       "reason": "claim_script -> p5/boundaries",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_exact_three_c4c6_boundary_obstruction.py",
       "new_path": "claims/p5/boundaries/verify_p5_exact_three_c4c6_boundary_obstruction.py",
       "reason": "claim_script -> p5/boundaries",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_exact_two_partial_boundary_obstruction.py",
@@ -7202,41 +7217,46 @@
       "old_path": "verify_p5_one_partial_boundary_obstruction.py",
       "new_path": "claims/p5/boundaries/verify_p5_one_partial_boundary_obstruction.py",
       "reason": "claim_script -> p5/boundaries",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q5_221_final_monotone_boundary.py",
       "new_path": "claims/p5/boundaries/verify_p5_q5_221_final_monotone_boundary.py",
       "reason": "claim_script -> p5/boundaries",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/boundaries",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_COORDINATE_PLANE_PAIR_COVER.md",
       "new_path": "claims/p5/coordinate-cegar/P5_COORDINATE_PLANE_PAIR_COVER.md",
       "reason": "claim_document -> p5/coordinate-cegar",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_EXACT_THREE_C10_CENSUS.md",
       "new_path": "claims/p5/coordinate-cegar/P5_EXACT_THREE_C10_CENSUS.md",
       "reason": "claim_document -> p5/coordinate-cegar",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md",
       "new_path": "claims/p5/coordinate-cegar/P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md",
       "reason": "claim_document -> p5/coordinate-cegar",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_EXACT_THREE_MOTIF_QUOTIENT.md",
@@ -7266,33 +7286,37 @@
       "old_path": "P5_Q4_211_B0_COORDINATE_NORMAL_REDUCTION.md",
       "new_path": "claims/p5/coordinate-cegar/P5_Q4_211_B0_COORDINATE_NORMAL_REDUCTION.md",
       "reason": "claim_document -> p5/coordinate-cegar",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md",
       "new_path": "claims/p5/coordinate-cegar/P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md",
       "reason": "claim_document -> p5/coordinate-cegar",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md",
       "new_path": "claims/p5/coordinate-cegar/P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md",
       "reason": "claim_document -> p5/coordinate-cegar",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_coordinate_plane_pair_cover.py",
       "new_path": "claims/p5/coordinate-cegar/audit_p5_coordinate_plane_pair_cover.py",
       "reason": "claim_script -> p5/coordinate-cegar",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_high_coordinate_partial_frontier.py",
@@ -7306,49 +7330,55 @@
       "old_path": "audit_p5_q4_211_b0_coordinate_normal.py",
       "new_path": "claims/p5/coordinate-cegar/audit_p5_q4_211_b0_coordinate_normal.py",
       "reason": "claim_script -> p5/coordinate-cegar",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_three_coordinate_cycle_dichotomy.py",
       "new_path": "claims/p5/coordinate-cegar/audit_p5_three_coordinate_cycle_dichotomy.py",
       "reason": "claim_script -> p5/coordinate-cegar",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_two_singleton_coordinate_obstruction.py",
       "new_path": "claims/p5/coordinate-cegar/audit_p5_two_singleton_coordinate_obstruction.py",
       "reason": "claim_script -> p5/coordinate-cegar",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_coordinate_plane_pair_cover.py",
       "new_path": "claims/p5/coordinate-cegar/verify_p5_coordinate_plane_pair_cover.py",
       "reason": "claim_script -> p5/coordinate-cegar",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_exact_three_c10_audit.py",
       "new_path": "claims/p5/coordinate-cegar/verify_p5_exact_three_c10_audit.py",
       "reason": "claim_script -> p5/coordinate-cegar",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_exact_three_coordinate_tree_chart_obstruction.py",
       "new_path": "claims/p5/coordinate-cegar/verify_p5_exact_three_coordinate_tree_chart_obstruction.py",
       "reason": "claim_script -> p5/coordinate-cegar",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_high_coordinate_chart_ledgers.py",
@@ -7378,9 +7408,10 @@
       "old_path": "verify_p5_q4_211_b0_coordinate_normal.py",
       "new_path": "claims/p5/coordinate-cegar/verify_p5_q4_211_b0_coordinate_normal.py",
       "reason": "claim_script -> p5/coordinate-cegar",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q5_311_rare_slice_cegar.py",
@@ -7394,25 +7425,28 @@
       "old_path": "verify_p5_three_coordinate_cycle_dichotomy.py",
       "new_path": "claims/p5/coordinate-cegar/verify_p5_three_coordinate_cycle_dichotomy.py",
       "reason": "claim_script -> p5/coordinate-cegar",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_two_singleton_coordinate_obstruction.py",
       "new_path": "claims/p5/coordinate-cegar/verify_p5_two_singleton_coordinate_obstruction.py",
       "reason": "claim_script -> p5/coordinate-cegar",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/coordinate-cegar",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_ALL_FULL_TRICOLOUR_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_ALL_FULL_TRICOLOUR_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_ALTERNATIVE_STRATEGY_MAP.md",
@@ -7426,33 +7460,37 @@
       "old_path": "P5_C10_BINARY_FORK_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_C10_BINARY_FORK_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_C10_DEGREE_ONE_MACAULAY_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_C10_DEGREE_ONE_MACAULAY_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_C10_ODD_CYCLE5_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_C10_ODD_CYCLE5_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_C10_SCALAR_SPAN_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_C10_SCALAR_SPAN_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_C10_TEN_EQUATION_AFFINE_CORE.md",
@@ -7466,9 +7504,10 @@
       "old_path": "P5_C10_TRIANGLE_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_C10_TRIANGLE_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md",
@@ -7690,57 +7729,64 @@
       "old_path": "P5_FIVE_EQUATION_LAURENT_CORE.md",
       "new_path": "claims/p5/frontier/P5_FIVE_EQUATION_LAURENT_CORE.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_KERNEL_HALL_HIERARCHY.md",
       "new_path": "claims/p5/frontier/P5_KERNEL_HALL_HIERARCHY.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_NO_CUBIC_RESTRICTION_EQUATIONS.md",
       "new_path": "claims/p5/frontier/P5_NO_CUBIC_RESTRICTION_EQUATIONS.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_NO_QUADRATIC_RESTRICTION_EQUATIONS.md",
       "new_path": "claims/p5/frontier/P5_NO_QUADRATIC_RESTRICTION_EQUATIONS.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_NO_QUARTIC_RESTRICTION_EQUATIONS.md",
       "new_path": "claims/p5/frontier/P5_NO_QUARTIC_RESTRICTION_EQUATIONS.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_NO_QUINTIC_RESTRICTION_EQUATIONS.md",
       "new_path": "claims/p5/frontier/P5_NO_QUINTIC_RESTRICTION_EQUATIONS.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md",
       "new_path": "claims/p5/frontier/P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_POINTWISE_SPECIALIZATION_META_THEOREM.md",
@@ -7754,297 +7800,334 @@
       "old_path": "P5_Q4_211_A0_ADJACENT_GRASSMANN_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q4_211_A0_ADJACENT_GRASSMANN_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q4_211_A0_ADJACENT_REDUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q4_211_A0_ADJACENT_REDUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q4_211_A0_DISJOINT_P3_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q4_211_A0_DISJOINT_P3_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q4_211_ADJACENT_P4_PENCIL_REDUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q4_211_ADJACENT_P4_PENCIL_REDUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q4_211_B0_FINAL_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q4_211_B0_FINAL_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q4_211_B0_NONCOMMON_A_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q4_211_B0_NONCOMMON_A_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q4_211_DISJOINT_CONIC_POLARITY_REDUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q4_211_DISJOINT_CONIC_POLARITY_REDUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q4_211_DISJOINT_EXCLUSION_THEOREM.md",
       "new_path": "claims/p5/frontier/P5_Q4_211_DISJOINT_EXCLUSION_THEOREM.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q4_211_EXCLUSION_THEOREM.md",
       "new_path": "claims/p5/frontier/P5_Q4_211_EXCLUSION_THEOREM.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q4_211_GENERIC_EXCLUSION_THEOREM.md",
       "new_path": "claims/p5/frontier/P5_Q4_211_GENERIC_EXCLUSION_THEOREM.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q4_211_MARKED_DELTA2_PAIR_IMAGE_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q4_211_MARKED_DELTA2_PAIR_IMAGE_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q4_211_ONE_CROSS_COMMON_KERNEL_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q4_211_ONE_CROSS_COMMON_KERNEL_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q4_211_ONE_CROSS_DIRECTION_CONIC_REDUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q4_211_ONE_CROSS_DIRECTION_CONIC_REDUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q4_211_ONE_CROSS_DIRECTION_PLANE_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q4_211_ONE_CROSS_DIRECTION_PLANE_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q4_211_ONE_CROSS_PENCIL_SATURATION_REDUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q4_211_ONE_CROSS_PENCIL_SATURATION_REDUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q4_211_ONE_CROSS_TWO_GATE_REDUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q4_211_ONE_CROSS_TWO_GATE_REDUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q4_211_PARALLEL_INCIDENCE_KERNEL_REDUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q4_211_PARALLEL_INCIDENCE_KERNEL_REDUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q4_211_SIMULTANEOUS_PENCIL_REDUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q4_211_SIMULTANEOUS_PENCIL_REDUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q5_221_COVER_13_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q5_221_COVER_13_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q5_221_DISTINGUISHED_NORMAL_MULTIPLICITY_THEOREM.md",
       "new_path": "claims/p5/frontier/P5_Q5_221_DISTINGUISHED_NORMAL_MULTIPLICITY_THEOREM.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q5_221_EXTRA_CONTAINMENT_REDUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q5_221_EXTRA_CONTAINMENT_REDUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q5_221_H1_PARTNER_ALL_NORMAL_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q5_221_H1_PARTNER_ALL_NORMAL_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q5_221_HYPERPLANE_INCIDENCE_REDUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q5_221_HYPERPLANE_INCIDENCE_REDUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q5_221_MARKED_DOUBLE_ADJACENT_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q5_221_MARKED_DOUBLE_ADJACENT_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q5_221_MARKED_DOUBLE_DISJOINT_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q5_221_MARKED_DOUBLE_DISJOINT_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q5_221_MARKED_END_PATH_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q5_221_MARKED_END_PATH_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q5_221_MARKED_MIDDLE_PATH_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q5_221_MARKED_MIDDLE_PATH_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q5_221_PAIRED_MAJORITY_DROP_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q5_221_PAIRED_MAJORITY_DROP_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q5_221_REMAINING_FIXED_KERNEL_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q5_221_REMAINING_FIXED_KERNEL_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q5_221_REPEATED_MAJORITY_PAIR_COVER_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q5_221_REPEATED_MAJORITY_PAIR_COVER_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q5_221_STAR_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q5_221_STAR_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q5_221_TRIANGLE_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q5_221_TRIANGLE_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q5_221_TRIANGLE_WORKING_NOTE.md",
       "new_path": "claims/p5/frontier/P5_Q5_221_TRIANGLE_WORKING_NOTE.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q5_221_TWO_ALL_NORMAL_MODES_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q5_221_TWO_ALL_NORMAL_MODES_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q5_311_EXCLUSION_THEOREM.md",
       "new_path": "claims/p5/frontier/P5_Q5_311_EXCLUSION_THEOREM.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q5_311_RARE_AFFINE_CORE.md",
       "new_path": "claims/p5/frontier/P5_Q5_311_RARE_AFFINE_CORE.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_Q5_311_RARE_SLICE_REDUCTION.md",
@@ -8058,25 +8141,28 @@
       "old_path": "P5_Q5_311_SHARED_DROP_OBSTRUCTION.md",
       "new_path": "claims/p5/frontier/P5_Q5_311_SHARED_DROP_OBSTRUCTION.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_SOURCE_ROW_TRICOLOUR_COVER.md",
       "new_path": "claims/p5/frontier/P5_SOURCE_ROW_TRICOLOUR_COVER.md",
       "reason": "claim_document -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "medium"
+      "confidence": "medium",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_all_full_tricolour_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_all_full_tricolour_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py",
@@ -8282,353 +8368,397 @@
       "old_path": "audit_p5_kernel_hall_hierarchy.py",
       "new_path": "claims/p5/frontier/audit_p5_kernel_hall_hierarchy.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_pair_signature_catalogue_coverage.py",
       "new_path": "claims/p5/frontier/audit_p5_pair_signature_catalogue_coverage.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q4_211_a0_adjacent.py",
       "new_path": "claims/p5/frontier/audit_p5_q4_211_a0_adjacent.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q4_211_a0_adjacent_grassmann.py",
       "new_path": "claims/p5/frontier/audit_p5_q4_211_a0_adjacent_grassmann.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q4_211_a0_disjoint_p3.py",
       "new_path": "claims/p5/frontier/audit_p5_q4_211_a0_disjoint_p3.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q4_211_adjacent_p4_pencil.py",
       "new_path": "claims/p5/frontier/audit_p5_q4_211_adjacent_p4_pencil.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q4_211_alternating_gate_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_q4_211_alternating_gate_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q4_211_b0_final.py",
       "new_path": "claims/p5/frontier/audit_p5_q4_211_b0_final.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q4_211_b0_noncommon_a.py",
       "new_path": "claims/p5/frontier/audit_p5_q4_211_b0_noncommon_a.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q4_211_disjoint_conic_polarity.py",
       "new_path": "claims/p5/frontier/audit_p5_q4_211_disjoint_conic_polarity.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q4_211_disjoint_exclusion.py",
       "new_path": "claims/p5/frontier/audit_p5_q4_211_disjoint_exclusion.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q4_211_exclusion.py",
       "new_path": "claims/p5/frontier/audit_p5_q4_211_exclusion.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q4_211_generic_exclusion.py",
       "new_path": "claims/p5/frontier/audit_p5_q4_211_generic_exclusion.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q4_211_marked_delta2_pair_image.py",
       "new_path": "claims/p5/frontier/audit_p5_q4_211_marked_delta2_pair_image.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q4_211_one_cross_common_kernel.py",
       "new_path": "claims/p5/frontier/audit_p5_q4_211_one_cross_common_kernel.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q4_211_one_cross_direction_conic.py",
       "new_path": "claims/p5/frontier/audit_p5_q4_211_one_cross_direction_conic.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q4_211_one_cross_direction_plane.py",
       "new_path": "claims/p5/frontier/audit_p5_q4_211_one_cross_direction_plane.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q4_211_one_cross_pencil_saturation.py",
       "new_path": "claims/p5/frontier/audit_p5_q4_211_one_cross_pencil_saturation.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q4_211_one_cross_two_gate.py",
       "new_path": "claims/p5/frontier/audit_p5_q4_211_one_cross_two_gate.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q4_211_parallel_incidence.py",
       "new_path": "claims/p5/frontier/audit_p5_q4_211_parallel_incidence.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q4_211_simultaneous_pencil.py",
       "new_path": "claims/p5/frontier/audit_p5_q4_211_simultaneous_pencil.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q5_221_cover_13.py",
       "new_path": "claims/p5/frontier/audit_p5_q5_221_cover_13.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q5_221_distinguished_normal_multiplicity.py",
       "new_path": "claims/p5/frontier/audit_p5_q5_221_distinguished_normal_multiplicity.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q5_221_extra_containment_reduction.py",
       "new_path": "claims/p5/frontier/audit_p5_q5_221_extra_containment_reduction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q5_221_h1_partner_all_normal.py",
       "new_path": "claims/p5/frontier/audit_p5_q5_221_h1_partner_all_normal.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q5_221_hyperplane_incidence.py",
       "new_path": "claims/p5/frontier/audit_p5_q5_221_hyperplane_incidence.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q5_221_marked_double_adjacent.py",
       "new_path": "claims/p5/frontier/audit_p5_q5_221_marked_double_adjacent.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q5_221_marked_double_disjoint.py",
       "new_path": "claims/p5/frontier/audit_p5_q5_221_marked_double_disjoint.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q5_221_marked_end_path.py",
       "new_path": "claims/p5/frontier/audit_p5_q5_221_marked_end_path.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q5_221_marked_middle_path.py",
       "new_path": "claims/p5/frontier/audit_p5_q5_221_marked_middle_path.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q5_221_paired_majority_drop.py",
       "new_path": "claims/p5/frontier/audit_p5_q5_221_paired_majority_drop.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q5_221_remaining_fixed_kernel.py",
       "new_path": "claims/p5/frontier/audit_p5_q5_221_remaining_fixed_kernel.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q5_221_repeated_majority_pair_cover.py",
       "new_path": "claims/p5/frontier/audit_p5_q5_221_repeated_majority_pair_cover.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q5_221_star_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_q5_221_star_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q5_221_triangle_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_q5_221_triangle_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q5_221_two_all_normal_modes.py",
       "new_path": "claims/p5/frontier/audit_p5_q5_221_two_all_normal_modes.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q5_311_exclusion.py",
       "new_path": "claims/p5/frontier/audit_p5_q5_311_exclusion.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_q5_311_shared_drop_obstruction.py",
       "new_path": "claims/p5/frontier/audit_p5_q5_311_shared_drop_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "audit_p5_source_row_tricolour_cover.py",
       "new_path": "claims/p5/frontier/audit_p5_source_row_tricolour_cover.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_all_full_tricolour_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_all_full_tricolour_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_c10_binary_fork_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_c10_binary_fork_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_c10_degree_one_macaulay_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_c10_degree_one_macaulay_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_c10_odd_cycle5_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_c10_odd_cycle5_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_c10_scalar_span_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_c10_scalar_span_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_c10_ten_equation_affine_core.py",
@@ -8642,9 +8772,10 @@
       "old_path": "verify_p5_c10_triangle_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_c10_triangle_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py",
@@ -8858,345 +8989,388 @@
       "old_path": "verify_p5_five_equation_laurent_core.py",
       "new_path": "claims/p5/frontier/verify_p5_five_equation_laurent_core.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_kernel_hall_hierarchy.py",
       "new_path": "claims/p5/frontier/verify_p5_kernel_hall_hierarchy.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_no_cubic_restriction_equations.py",
       "new_path": "claims/p5/frontier/verify_p5_no_cubic_restriction_equations.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_no_quadratic_restriction_equations.py",
       "new_path": "claims/p5/frontier/verify_p5_no_quadratic_restriction_equations.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_no_quartic_restriction_equations.cpp",
       "new_path": "claims/p5/frontier/verify_p5_no_quartic_restriction_equations.cpp",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_no_quintic_restriction_equations.cpp",
       "new_path": "claims/p5/frontier/verify_p5_no_quintic_restriction_equations.cpp",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_pair_signature_catalogue_coverage.py",
       "new_path": "claims/p5/frontier/verify_p5_pair_signature_catalogue_coverage.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q4_211_a0_adjacent.py",
       "new_path": "claims/p5/frontier/verify_p5_q4_211_a0_adjacent.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q4_211_a0_adjacent_grassmann.py",
       "new_path": "claims/p5/frontier/verify_p5_q4_211_a0_adjacent_grassmann.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q4_211_a0_disjoint_p3.py",
       "new_path": "claims/p5/frontier/verify_p5_q4_211_a0_disjoint_p3.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q4_211_adjacent_p4_pencil.py",
       "new_path": "claims/p5/frontier/verify_p5_q4_211_adjacent_p4_pencil.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q4_211_alternating_gate_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_q4_211_alternating_gate_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q4_211_b0_final.py",
       "new_path": "claims/p5/frontier/verify_p5_q4_211_b0_final.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q4_211_b0_noncommon_a.py",
       "new_path": "claims/p5/frontier/verify_p5_q4_211_b0_noncommon_a.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q4_211_disjoint_conic_polarity.py",
       "new_path": "claims/p5/frontier/verify_p5_q4_211_disjoint_conic_polarity.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q4_211_disjoint_exclusion.py",
       "new_path": "claims/p5/frontier/verify_p5_q4_211_disjoint_exclusion.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q4_211_exclusion.py",
       "new_path": "claims/p5/frontier/verify_p5_q4_211_exclusion.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q4_211_generic_exclusion.py",
       "new_path": "claims/p5/frontier/verify_p5_q4_211_generic_exclusion.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q4_211_marked_delta2_pair_image.py",
       "new_path": "claims/p5/frontier/verify_p5_q4_211_marked_delta2_pair_image.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q4_211_one_cross_common_kernel.py",
       "new_path": "claims/p5/frontier/verify_p5_q4_211_one_cross_common_kernel.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q4_211_one_cross_direction_conic.py",
       "new_path": "claims/p5/frontier/verify_p5_q4_211_one_cross_direction_conic.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q4_211_one_cross_direction_plane.py",
       "new_path": "claims/p5/frontier/verify_p5_q4_211_one_cross_direction_plane.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q4_211_one_cross_pencil_saturation.py",
       "new_path": "claims/p5/frontier/verify_p5_q4_211_one_cross_pencil_saturation.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q4_211_one_cross_two_gate.py",
       "new_path": "claims/p5/frontier/verify_p5_q4_211_one_cross_two_gate.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q4_211_parallel_incidence.py",
       "new_path": "claims/p5/frontier/verify_p5_q4_211_parallel_incidence.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q4_211_simultaneous_pencil.py",
       "new_path": "claims/p5/frontier/verify_p5_q4_211_simultaneous_pencil.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q5_221_cover_13.py",
       "new_path": "claims/p5/frontier/verify_p5_q5_221_cover_13.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q5_221_distinguished_normal_multiplicity.py",
       "new_path": "claims/p5/frontier/verify_p5_q5_221_distinguished_normal_multiplicity.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q5_221_extra_containment_reduction.py",
       "new_path": "claims/p5/frontier/verify_p5_q5_221_extra_containment_reduction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q5_221_h1_partner_all_normal.py",
       "new_path": "claims/p5/frontier/verify_p5_q5_221_h1_partner_all_normal.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q5_221_hyperplane_incidence.py",
       "new_path": "claims/p5/frontier/verify_p5_q5_221_hyperplane_incidence.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q5_221_marked_double_adjacent.py",
       "new_path": "claims/p5/frontier/verify_p5_q5_221_marked_double_adjacent.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q5_221_marked_double_disjoint.py",
       "new_path": "claims/p5/frontier/verify_p5_q5_221_marked_double_disjoint.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q5_221_marked_end_path.py",
       "new_path": "claims/p5/frontier/verify_p5_q5_221_marked_end_path.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q5_221_marked_middle_path.py",
       "new_path": "claims/p5/frontier/verify_p5_q5_221_marked_middle_path.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q5_221_paired_majority_drop.py",
       "new_path": "claims/p5/frontier/verify_p5_q5_221_paired_majority_drop.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q5_221_remaining_fixed_kernel.py",
       "new_path": "claims/p5/frontier/verify_p5_q5_221_remaining_fixed_kernel.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q5_221_repeated_majority_pair_cover.py",
       "new_path": "claims/p5/frontier/verify_p5_q5_221_repeated_majority_pair_cover.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q5_221_star_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_q5_221_star_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q5_221_triangle_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_q5_221_triangle_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q5_221_two_all_normal_modes.py",
       "new_path": "claims/p5/frontier/verify_p5_q5_221_two_all_normal_modes.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q5_311_exclusion.py",
       "new_path": "claims/p5/frontier/verify_p5_q5_311_exclusion.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q5_311_rare_affine_core.py",
       "new_path": "claims/p5/frontier/verify_p5_q5_311_rare_affine_core.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_q5_311_rare_slice_support_cover.py",
@@ -9210,17 +9384,19 @@
       "old_path": "verify_p5_q5_311_shared_drop_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_q5_311_shared_drop_obstruction.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "verify_p5_source_row_tricolour_cover.py",
       "new_path": "claims/p5/frontier/verify_p5_source_row_tricolour_cover.py",
       "reason": "claim_script -> p5/frontier",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "p5/frontier",
-      "confidence": "low"
+      "confidence": "low",
+      "executed_batch": "p5-frontier-stage29"
     },
     {
       "old_path": "P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",

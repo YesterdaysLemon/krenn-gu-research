@@ -6,7 +6,17 @@ from __future__ import annotations
 from collections import Counter
 import hashlib
 import json
+import sys
 from pathlib import Path
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/p5/frontier")
 
 import audit_p5_pair_signature_catalogue_coverage as COVERAGE
 

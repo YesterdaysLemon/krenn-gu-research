@@ -3,8 +3,19 @@
 from __future__ import annotations
 
 import itertools
+import sys
+from pathlib import Path
 
 from pysat.formula import CNF, IDPool
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/p5/boundaries")
 
 import audit_p5_all_full_boundary_obstruction as ALL_FULL
 import p5_pair_support_semantics as SEMANTICS

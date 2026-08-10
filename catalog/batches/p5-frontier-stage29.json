@@ -1,0 +1,717 @@
+{
+  "batch_id": "p5-frontier-stage29",
+  "approved_by": "Codex (exact mapping reviewer under repository-owner standing delegation dated 2026-08-08)",
+  "approved_at": "2026-08-09",
+  "base_sha": "1544a930ddfc7012f2814873ff950fe271ecb965",
+  "manifest_sha256": "af4e69c84fea8d9a5979cdfc8196c97978d1584a7a53f0fbfab14023ed3a2959",
+  "mapping_sha256": "6577eb9544a8bcc5c20f0c6a204a7248b1db68ec15331d12281e791baccd5d7e",
+  "member_count": 176,
+  "moves": [
+    {
+      "old_path": "P5_ALL_FULL_BOUNDARY_OBSTRUCTION.md",
+      "new_path": "claims/p5/boundaries/P5_ALL_FULL_BOUNDARY_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_ALL_FULL_TRICOLOUR_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_ALL_FULL_TRICOLOUR_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_C10_BINARY_FORK_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_C10_BINARY_FORK_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_C10_DEGREE_ONE_MACAULAY_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_C10_DEGREE_ONE_MACAULAY_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_C10_ODD_CYCLE5_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_C10_ODD_CYCLE5_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_C10_SCALAR_SPAN_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_C10_SCALAR_SPAN_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_C10_TRIANGLE_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_C10_TRIANGLE_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_COMPRESSED_H4_PHYSICAL_TOMOGRAPHY_AND_TARGET_TANGENT_BOUNDARY.md",
+      "new_path": "claims/p5/boundaries/P5_COMPRESSED_H4_PHYSICAL_TOMOGRAPHY_AND_TARGET_TANGENT_BOUNDARY.md"
+    },
+    {
+      "old_path": "P5_COORDINATE_PLANE_PAIR_COVER.md",
+      "new_path": "claims/p5/coordinate-cegar/P5_COORDINATE_PLANE_PAIR_COVER.md"
+    },
+    {
+      "old_path": "P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md",
+      "new_path": "claims/p5/boundaries/P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_EXACT_THREE_C10_CENSUS.md",
+      "new_path": "claims/p5/coordinate-cegar/P5_EXACT_THREE_C10_CENSUS.md"
+    },
+    {
+      "old_path": "P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md",
+      "new_path": "claims/p5/boundaries/P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md",
+      "new_path": "claims/p5/coordinate-cegar/P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_FIVE_EQUATION_LAURENT_CORE.md",
+      "new_path": "claims/p5/frontier/P5_FIVE_EQUATION_LAURENT_CORE.md"
+    },
+    {
+      "old_path": "P5_KERNEL_HALL_HIERARCHY.md",
+      "new_path": "claims/p5/frontier/P5_KERNEL_HALL_HIERARCHY.md"
+    },
+    {
+      "old_path": "P5_NO_CUBIC_RESTRICTION_EQUATIONS.md",
+      "new_path": "claims/p5/frontier/P5_NO_CUBIC_RESTRICTION_EQUATIONS.md"
+    },
+    {
+      "old_path": "P5_NO_QUADRATIC_RESTRICTION_EQUATIONS.md",
+      "new_path": "claims/p5/frontier/P5_NO_QUADRATIC_RESTRICTION_EQUATIONS.md"
+    },
+    {
+      "old_path": "P5_NO_QUARTIC_RESTRICTION_EQUATIONS.md",
+      "new_path": "claims/p5/frontier/P5_NO_QUARTIC_RESTRICTION_EQUATIONS.md"
+    },
+    {
+      "old_path": "P5_NO_QUINTIC_RESTRICTION_EQUATIONS.md",
+      "new_path": "claims/p5/frontier/P5_NO_QUINTIC_RESTRICTION_EQUATIONS.md"
+    },
+    {
+      "old_path": "P5_ONE_PARTIAL_BOUNDARY_OBSTRUCTION.md",
+      "new_path": "claims/p5/boundaries/P5_ONE_PARTIAL_BOUNDARY_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md",
+      "new_path": "claims/p5/frontier/P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md"
+    },
+    {
+      "old_path": "P5_Q4_211_A0_ADJACENT_GRASSMANN_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q4_211_A0_ADJACENT_GRASSMANN_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_Q4_211_A0_ADJACENT_REDUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q4_211_A0_ADJACENT_REDUCTION.md"
+    },
+    {
+      "old_path": "P5_Q4_211_A0_DISJOINT_P3_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q4_211_A0_DISJOINT_P3_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_Q4_211_ADJACENT_P4_PENCIL_REDUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q4_211_ADJACENT_P4_PENCIL_REDUCTION.md"
+    },
+    {
+      "old_path": "P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_Q4_211_B0_COORDINATE_NORMAL_REDUCTION.md",
+      "new_path": "claims/p5/coordinate-cegar/P5_Q4_211_B0_COORDINATE_NORMAL_REDUCTION.md"
+    },
+    {
+      "old_path": "P5_Q4_211_B0_FINAL_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q4_211_B0_FINAL_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_Q4_211_B0_NONCOMMON_A_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q4_211_B0_NONCOMMON_A_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_Q4_211_DISJOINT_CONIC_POLARITY_REDUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q4_211_DISJOINT_CONIC_POLARITY_REDUCTION.md"
+    },
+    {
+      "old_path": "P5_Q4_211_DISJOINT_EXCLUSION_THEOREM.md",
+      "new_path": "claims/p5/frontier/P5_Q4_211_DISJOINT_EXCLUSION_THEOREM.md"
+    },
+    {
+      "old_path": "P5_Q4_211_EXCLUSION_THEOREM.md",
+      "new_path": "claims/p5/frontier/P5_Q4_211_EXCLUSION_THEOREM.md"
+    },
+    {
+      "old_path": "P5_Q4_211_GENERIC_EXCLUSION_THEOREM.md",
+      "new_path": "claims/p5/frontier/P5_Q4_211_GENERIC_EXCLUSION_THEOREM.md"
+    },
+    {
+      "old_path": "P5_Q4_211_MARKED_DELTA2_PAIR_IMAGE_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q4_211_MARKED_DELTA2_PAIR_IMAGE_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_Q4_211_ONE_CROSS_COMMON_KERNEL_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q4_211_ONE_CROSS_COMMON_KERNEL_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_Q4_211_ONE_CROSS_DIRECTION_CONIC_REDUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q4_211_ONE_CROSS_DIRECTION_CONIC_REDUCTION.md"
+    },
+    {
+      "old_path": "P5_Q4_211_ONE_CROSS_DIRECTION_PLANE_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q4_211_ONE_CROSS_DIRECTION_PLANE_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_Q4_211_ONE_CROSS_PENCIL_SATURATION_REDUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q4_211_ONE_CROSS_PENCIL_SATURATION_REDUCTION.md"
+    },
+    {
+      "old_path": "P5_Q4_211_ONE_CROSS_TWO_GATE_REDUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q4_211_ONE_CROSS_TWO_GATE_REDUCTION.md"
+    },
+    {
+      "old_path": "P5_Q4_211_PARALLEL_INCIDENCE_KERNEL_REDUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q4_211_PARALLEL_INCIDENCE_KERNEL_REDUCTION.md"
+    },
+    {
+      "old_path": "P5_Q4_211_SIMULTANEOUS_PENCIL_REDUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q4_211_SIMULTANEOUS_PENCIL_REDUCTION.md"
+    },
+    {
+      "old_path": "P5_Q5_221_COVER_13_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q5_221_COVER_13_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_Q5_221_DISTINGUISHED_NORMAL_MULTIPLICITY_THEOREM.md",
+      "new_path": "claims/p5/frontier/P5_Q5_221_DISTINGUISHED_NORMAL_MULTIPLICITY_THEOREM.md"
+    },
+    {
+      "old_path": "P5_Q5_221_EXTRA_CONTAINMENT_REDUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q5_221_EXTRA_CONTAINMENT_REDUCTION.md"
+    },
+    {
+      "old_path": "P5_Q5_221_FINAL_MONOTONE_BOUNDARY_OBSTRUCTION.md",
+      "new_path": "claims/p5/boundaries/P5_Q5_221_FINAL_MONOTONE_BOUNDARY_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_Q5_221_H1_PARTNER_ALL_NORMAL_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q5_221_H1_PARTNER_ALL_NORMAL_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_Q5_221_HYPERPLANE_INCIDENCE_REDUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q5_221_HYPERPLANE_INCIDENCE_REDUCTION.md"
+    },
+    {
+      "old_path": "P5_Q5_221_MARKED_DOUBLE_ADJACENT_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q5_221_MARKED_DOUBLE_ADJACENT_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_Q5_221_MARKED_DOUBLE_DISJOINT_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q5_221_MARKED_DOUBLE_DISJOINT_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_Q5_221_MARKED_END_PATH_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q5_221_MARKED_END_PATH_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_Q5_221_MARKED_MIDDLE_PATH_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q5_221_MARKED_MIDDLE_PATH_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_Q5_221_PAIRED_MAJORITY_DROP_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q5_221_PAIRED_MAJORITY_DROP_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_Q5_221_REMAINING_FIXED_KERNEL_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q5_221_REMAINING_FIXED_KERNEL_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_Q5_221_REPEATED_MAJORITY_PAIR_COVER_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q5_221_REPEATED_MAJORITY_PAIR_COVER_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_Q5_221_STAR_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q5_221_STAR_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_Q5_221_TRIANGLE_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q5_221_TRIANGLE_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_Q5_221_TRIANGLE_WORKING_NOTE.md",
+      "new_path": "claims/p5/frontier/P5_Q5_221_TRIANGLE_WORKING_NOTE.md"
+    },
+    {
+      "old_path": "P5_Q5_221_TWO_ALL_NORMAL_MODES_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q5_221_TWO_ALL_NORMAL_MODES_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_Q5_311_EXCLUSION_THEOREM.md",
+      "new_path": "claims/p5/frontier/P5_Q5_311_EXCLUSION_THEOREM.md"
+    },
+    {
+      "old_path": "P5_Q5_311_RARE_AFFINE_CORE.md",
+      "new_path": "claims/p5/frontier/P5_Q5_311_RARE_AFFINE_CORE.md"
+    },
+    {
+      "old_path": "P5_Q5_311_SHARED_DROP_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q5_311_SHARED_DROP_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "P5_SOURCE_ROW_TRICOLOUR_COVER.md",
+      "new_path": "claims/p5/frontier/P5_SOURCE_ROW_TRICOLOUR_COVER.md"
+    },
+    {
+      "old_path": "P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md",
+      "new_path": "claims/p5/coordinate-cegar/P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md"
+    },
+    {
+      "old_path": "P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md",
+      "new_path": "claims/p5/coordinate-cegar/P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md"
+    },
+    {
+      "old_path": "audit_p5_all_full_boundary_obstruction.py",
+      "new_path": "claims/p5/boundaries/audit_p5_all_full_boundary_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_all_full_tricolour_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_all_full_tricolour_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_compressed_h4_physical_tomography_and_target_tangent_boundary.py",
+      "new_path": "claims/p5/boundaries/audit_p5_compressed_h4_physical_tomography_and_target_tangent_boundary.py"
+    },
+    {
+      "old_path": "audit_p5_coordinate_plane_pair_cover.py",
+      "new_path": "claims/p5/coordinate-cegar/audit_p5_coordinate_plane_pair_cover.py"
+    },
+    {
+      "old_path": "audit_p5_exact_three_partial_boundary.py",
+      "new_path": "claims/p5/boundaries/audit_p5_exact_three_partial_boundary.py"
+    },
+    {
+      "old_path": "audit_p5_kernel_hall_hierarchy.py",
+      "new_path": "claims/p5/frontier/audit_p5_kernel_hall_hierarchy.py"
+    },
+    {
+      "old_path": "audit_p5_one_partial_boundary_obstruction.py",
+      "new_path": "claims/p5/boundaries/audit_p5_one_partial_boundary_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_pair_signature_catalogue_coverage.py",
+      "new_path": "claims/p5/frontier/audit_p5_pair_signature_catalogue_coverage.py"
+    },
+    {
+      "old_path": "audit_p5_q4_211_a0_adjacent.py",
+      "new_path": "claims/p5/frontier/audit_p5_q4_211_a0_adjacent.py"
+    },
+    {
+      "old_path": "audit_p5_q4_211_a0_adjacent_grassmann.py",
+      "new_path": "claims/p5/frontier/audit_p5_q4_211_a0_adjacent_grassmann.py"
+    },
+    {
+      "old_path": "audit_p5_q4_211_a0_disjoint_p3.py",
+      "new_path": "claims/p5/frontier/audit_p5_q4_211_a0_disjoint_p3.py"
+    },
+    {
+      "old_path": "audit_p5_q4_211_adjacent_p4_pencil.py",
+      "new_path": "claims/p5/frontier/audit_p5_q4_211_adjacent_p4_pencil.py"
+    },
+    {
+      "old_path": "audit_p5_q4_211_alternating_gate_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_q4_211_alternating_gate_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_q4_211_b0_coordinate_normal.py",
+      "new_path": "claims/p5/coordinate-cegar/audit_p5_q4_211_b0_coordinate_normal.py"
+    },
+    {
+      "old_path": "audit_p5_q4_211_b0_final.py",
+      "new_path": "claims/p5/frontier/audit_p5_q4_211_b0_final.py"
+    },
+    {
+      "old_path": "audit_p5_q4_211_b0_noncommon_a.py",
+      "new_path": "claims/p5/frontier/audit_p5_q4_211_b0_noncommon_a.py"
+    },
+    {
+      "old_path": "audit_p5_q4_211_disjoint_conic_polarity.py",
+      "new_path": "claims/p5/frontier/audit_p5_q4_211_disjoint_conic_polarity.py"
+    },
+    {
+      "old_path": "audit_p5_q4_211_disjoint_exclusion.py",
+      "new_path": "claims/p5/frontier/audit_p5_q4_211_disjoint_exclusion.py"
+    },
+    {
+      "old_path": "audit_p5_q4_211_exclusion.py",
+      "new_path": "claims/p5/frontier/audit_p5_q4_211_exclusion.py"
+    },
+    {
+      "old_path": "audit_p5_q4_211_generic_exclusion.py",
+      "new_path": "claims/p5/frontier/audit_p5_q4_211_generic_exclusion.py"
+    },
+    {
+      "old_path": "audit_p5_q4_211_marked_delta2_pair_image.py",
+      "new_path": "claims/p5/frontier/audit_p5_q4_211_marked_delta2_pair_image.py"
+    },
+    {
+      "old_path": "audit_p5_q4_211_one_cross_common_kernel.py",
+      "new_path": "claims/p5/frontier/audit_p5_q4_211_one_cross_common_kernel.py"
+    },
+    {
+      "old_path": "audit_p5_q4_211_one_cross_direction_conic.py",
+      "new_path": "claims/p5/frontier/audit_p5_q4_211_one_cross_direction_conic.py"
+    },
+    {
+      "old_path": "audit_p5_q4_211_one_cross_direction_plane.py",
+      "new_path": "claims/p5/frontier/audit_p5_q4_211_one_cross_direction_plane.py"
+    },
+    {
+      "old_path": "audit_p5_q4_211_one_cross_pencil_saturation.py",
+      "new_path": "claims/p5/frontier/audit_p5_q4_211_one_cross_pencil_saturation.py"
+    },
+    {
+      "old_path": "audit_p5_q4_211_one_cross_two_gate.py",
+      "new_path": "claims/p5/frontier/audit_p5_q4_211_one_cross_two_gate.py"
+    },
+    {
+      "old_path": "audit_p5_q4_211_parallel_incidence.py",
+      "new_path": "claims/p5/frontier/audit_p5_q4_211_parallel_incidence.py"
+    },
+    {
+      "old_path": "audit_p5_q4_211_simultaneous_pencil.py",
+      "new_path": "claims/p5/frontier/audit_p5_q4_211_simultaneous_pencil.py"
+    },
+    {
+      "old_path": "audit_p5_q5_221_cover_13.py",
+      "new_path": "claims/p5/frontier/audit_p5_q5_221_cover_13.py"
+    },
+    {
+      "old_path": "audit_p5_q5_221_distinguished_normal_multiplicity.py",
+      "new_path": "claims/p5/frontier/audit_p5_q5_221_distinguished_normal_multiplicity.py"
+    },
+    {
+      "old_path": "audit_p5_q5_221_extra_containment_reduction.py",
+      "new_path": "claims/p5/frontier/audit_p5_q5_221_extra_containment_reduction.py"
+    },
+    {
+      "old_path": "audit_p5_q5_221_final_monotone_boundary.py",
+      "new_path": "claims/p5/boundaries/audit_p5_q5_221_final_monotone_boundary.py"
+    },
+    {
+      "old_path": "audit_p5_q5_221_h1_partner_all_normal.py",
+      "new_path": "claims/p5/frontier/audit_p5_q5_221_h1_partner_all_normal.py"
+    },
+    {
+      "old_path": "audit_p5_q5_221_hyperplane_incidence.py",
+      "new_path": "claims/p5/frontier/audit_p5_q5_221_hyperplane_incidence.py"
+    },
+    {
+      "old_path": "audit_p5_q5_221_marked_double_adjacent.py",
+      "new_path": "claims/p5/frontier/audit_p5_q5_221_marked_double_adjacent.py"
+    },
+    {
+      "old_path": "audit_p5_q5_221_marked_double_disjoint.py",
+      "new_path": "claims/p5/frontier/audit_p5_q5_221_marked_double_disjoint.py"
+    },
+    {
+      "old_path": "audit_p5_q5_221_marked_end_path.py",
+      "new_path": "claims/p5/frontier/audit_p5_q5_221_marked_end_path.py"
+    },
+    {
+      "old_path": "audit_p5_q5_221_marked_middle_path.py",
+      "new_path": "claims/p5/frontier/audit_p5_q5_221_marked_middle_path.py"
+    },
+    {
+      "old_path": "audit_p5_q5_221_paired_majority_drop.py",
+      "new_path": "claims/p5/frontier/audit_p5_q5_221_paired_majority_drop.py"
+    },
+    {
+      "old_path": "audit_p5_q5_221_remaining_fixed_kernel.py",
+      "new_path": "claims/p5/frontier/audit_p5_q5_221_remaining_fixed_kernel.py"
+    },
+    {
+      "old_path": "audit_p5_q5_221_repeated_majority_pair_cover.py",
+      "new_path": "claims/p5/frontier/audit_p5_q5_221_repeated_majority_pair_cover.py"
+    },
+    {
+      "old_path": "audit_p5_q5_221_star_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_q5_221_star_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_q5_221_triangle_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_q5_221_triangle_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_q5_221_two_all_normal_modes.py",
+      "new_path": "claims/p5/frontier/audit_p5_q5_221_two_all_normal_modes.py"
+    },
+    {
+      "old_path": "audit_p5_q5_311_exclusion.py",
+      "new_path": "claims/p5/frontier/audit_p5_q5_311_exclusion.py"
+    },
+    {
+      "old_path": "audit_p5_q5_311_shared_drop_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_q5_311_shared_drop_obstruction.py"
+    },
+    {
+      "old_path": "audit_p5_source_row_tricolour_cover.py",
+      "new_path": "claims/p5/frontier/audit_p5_source_row_tricolour_cover.py"
+    },
+    {
+      "old_path": "audit_p5_three_coordinate_cycle_dichotomy.py",
+      "new_path": "claims/p5/coordinate-cegar/audit_p5_three_coordinate_cycle_dichotomy.py"
+    },
+    {
+      "old_path": "audit_p5_two_singleton_coordinate_obstruction.py",
+      "new_path": "claims/p5/coordinate-cegar/audit_p5_two_singleton_coordinate_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_all_full_boundary_obstruction.py",
+      "new_path": "claims/p5/boundaries/verify_p5_all_full_boundary_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_all_full_tricolour_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_all_full_tricolour_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_c10_binary_fork_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_c10_binary_fork_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_c10_degree_one_macaulay_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_c10_degree_one_macaulay_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_c10_odd_cycle5_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_c10_odd_cycle5_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_c10_scalar_span_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_c10_scalar_span_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_c10_triangle_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_c10_triangle_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_compressed_h4_physical_tomography_and_target_tangent_boundary.py",
+      "new_path": "claims/p5/boundaries/verify_p5_compressed_h4_physical_tomography_and_target_tangent_boundary.py"
+    },
+    {
+      "old_path": "verify_p5_coordinate_plane_pair_cover.py",
+      "new_path": "claims/p5/coordinate-cegar/verify_p5_coordinate_plane_pair_cover.py"
+    },
+    {
+      "old_path": "verify_p5_exact_three_c10_audit.py",
+      "new_path": "claims/p5/coordinate-cegar/verify_p5_exact_three_c10_audit.py"
+    },
+    {
+      "old_path": "verify_p5_exact_three_c10_boundary_obstruction.py",
+      "new_path": "claims/p5/boundaries/verify_p5_exact_three_c10_boundary_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_exact_three_c4c6_boundary_obstruction.py",
+      "new_path": "claims/p5/boundaries/verify_p5_exact_three_c4c6_boundary_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_exact_three_coordinate_tree_chart_obstruction.py",
+      "new_path": "claims/p5/coordinate-cegar/verify_p5_exact_three_coordinate_tree_chart_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_five_equation_laurent_core.py",
+      "new_path": "claims/p5/frontier/verify_p5_five_equation_laurent_core.py"
+    },
+    {
+      "old_path": "verify_p5_kernel_hall_hierarchy.py",
+      "new_path": "claims/p5/frontier/verify_p5_kernel_hall_hierarchy.py"
+    },
+    {
+      "old_path": "verify_p5_no_cubic_restriction_equations.py",
+      "new_path": "claims/p5/frontier/verify_p5_no_cubic_restriction_equations.py"
+    },
+    {
+      "old_path": "verify_p5_no_quadratic_restriction_equations.py",
+      "new_path": "claims/p5/frontier/verify_p5_no_quadratic_restriction_equations.py"
+    },
+    {
+      "old_path": "verify_p5_no_quartic_restriction_equations.cpp",
+      "new_path": "claims/p5/frontier/verify_p5_no_quartic_restriction_equations.cpp"
+    },
+    {
+      "old_path": "verify_p5_no_quintic_restriction_equations.cpp",
+      "new_path": "claims/p5/frontier/verify_p5_no_quintic_restriction_equations.cpp"
+    },
+    {
+      "old_path": "verify_p5_one_partial_boundary_obstruction.py",
+      "new_path": "claims/p5/boundaries/verify_p5_one_partial_boundary_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_pair_signature_catalogue_coverage.py",
+      "new_path": "claims/p5/frontier/verify_p5_pair_signature_catalogue_coverage.py"
+    },
+    {
+      "old_path": "verify_p5_q4_211_a0_adjacent.py",
+      "new_path": "claims/p5/frontier/verify_p5_q4_211_a0_adjacent.py"
+    },
+    {
+      "old_path": "verify_p5_q4_211_a0_adjacent_grassmann.py",
+      "new_path": "claims/p5/frontier/verify_p5_q4_211_a0_adjacent_grassmann.py"
+    },
+    {
+      "old_path": "verify_p5_q4_211_a0_disjoint_p3.py",
+      "new_path": "claims/p5/frontier/verify_p5_q4_211_a0_disjoint_p3.py"
+    },
+    {
+      "old_path": "verify_p5_q4_211_adjacent_p4_pencil.py",
+      "new_path": "claims/p5/frontier/verify_p5_q4_211_adjacent_p4_pencil.py"
+    },
+    {
+      "old_path": "verify_p5_q4_211_alternating_gate_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_q4_211_alternating_gate_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_q4_211_b0_coordinate_normal.py",
+      "new_path": "claims/p5/coordinate-cegar/verify_p5_q4_211_b0_coordinate_normal.py"
+    },
+    {
+      "old_path": "verify_p5_q4_211_b0_final.py",
+      "new_path": "claims/p5/frontier/verify_p5_q4_211_b0_final.py"
+    },
+    {
+      "old_path": "verify_p5_q4_211_b0_noncommon_a.py",
+      "new_path": "claims/p5/frontier/verify_p5_q4_211_b0_noncommon_a.py"
+    },
+    {
+      "old_path": "verify_p5_q4_211_disjoint_conic_polarity.py",
+      "new_path": "claims/p5/frontier/verify_p5_q4_211_disjoint_conic_polarity.py"
+    },
+    {
+      "old_path": "verify_p5_q4_211_disjoint_exclusion.py",
+      "new_path": "claims/p5/frontier/verify_p5_q4_211_disjoint_exclusion.py"
+    },
+    {
+      "old_path": "verify_p5_q4_211_exclusion.py",
+      "new_path": "claims/p5/frontier/verify_p5_q4_211_exclusion.py"
+    },
+    {
+      "old_path": "verify_p5_q4_211_generic_exclusion.py",
+      "new_path": "claims/p5/frontier/verify_p5_q4_211_generic_exclusion.py"
+    },
+    {
+      "old_path": "verify_p5_q4_211_marked_delta2_pair_image.py",
+      "new_path": "claims/p5/frontier/verify_p5_q4_211_marked_delta2_pair_image.py"
+    },
+    {
+      "old_path": "verify_p5_q4_211_one_cross_common_kernel.py",
+      "new_path": "claims/p5/frontier/verify_p5_q4_211_one_cross_common_kernel.py"
+    },
+    {
+      "old_path": "verify_p5_q4_211_one_cross_direction_conic.py",
+      "new_path": "claims/p5/frontier/verify_p5_q4_211_one_cross_direction_conic.py"
+    },
+    {
+      "old_path": "verify_p5_q4_211_one_cross_direction_plane.py",
+      "new_path": "claims/p5/frontier/verify_p5_q4_211_one_cross_direction_plane.py"
+    },
+    {
+      "old_path": "verify_p5_q4_211_one_cross_pencil_saturation.py",
+      "new_path": "claims/p5/frontier/verify_p5_q4_211_one_cross_pencil_saturation.py"
+    },
+    {
+      "old_path": "verify_p5_q4_211_one_cross_two_gate.py",
+      "new_path": "claims/p5/frontier/verify_p5_q4_211_one_cross_two_gate.py"
+    },
+    {
+      "old_path": "verify_p5_q4_211_parallel_incidence.py",
+      "new_path": "claims/p5/frontier/verify_p5_q4_211_parallel_incidence.py"
+    },
+    {
+      "old_path": "verify_p5_q4_211_simultaneous_pencil.py",
+      "new_path": "claims/p5/frontier/verify_p5_q4_211_simultaneous_pencil.py"
+    },
+    {
+      "old_path": "verify_p5_q5_221_cover_13.py",
+      "new_path": "claims/p5/frontier/verify_p5_q5_221_cover_13.py"
+    },
+    {
+      "old_path": "verify_p5_q5_221_distinguished_normal_multiplicity.py",
+      "new_path": "claims/p5/frontier/verify_p5_q5_221_distinguished_normal_multiplicity.py"
+    },
+    {
+      "old_path": "verify_p5_q5_221_extra_containment_reduction.py",
+      "new_path": "claims/p5/frontier/verify_p5_q5_221_extra_containment_reduction.py"
+    },
+    {
+      "old_path": "verify_p5_q5_221_final_monotone_boundary.py",
+      "new_path": "claims/p5/boundaries/verify_p5_q5_221_final_monotone_boundary.py"
+    },
+    {
+      "old_path": "verify_p5_q5_221_h1_partner_all_normal.py",
+      "new_path": "claims/p5/frontier/verify_p5_q5_221_h1_partner_all_normal.py"
+    },
+    {
+      "old_path": "verify_p5_q5_221_hyperplane_incidence.py",
+      "new_path": "claims/p5/frontier/verify_p5_q5_221_hyperplane_incidence.py"
+    },
+    {
+      "old_path": "verify_p5_q5_221_marked_double_adjacent.py",
+      "new_path": "claims/p5/frontier/verify_p5_q5_221_marked_double_adjacent.py"
+    },
+    {
+      "old_path": "verify_p5_q5_221_marked_double_disjoint.py",
+      "new_path": "claims/p5/frontier/verify_p5_q5_221_marked_double_disjoint.py"
+    },
+    {
+      "old_path": "verify_p5_q5_221_marked_end_path.py",
+      "new_path": "claims/p5/frontier/verify_p5_q5_221_marked_end_path.py"
+    },
+    {
+      "old_path": "verify_p5_q5_221_marked_middle_path.py",
+      "new_path": "claims/p5/frontier/verify_p5_q5_221_marked_middle_path.py"
+    },
+    {
+      "old_path": "verify_p5_q5_221_paired_majority_drop.py",
+      "new_path": "claims/p5/frontier/verify_p5_q5_221_paired_majority_drop.py"
+    },
+    {
+      "old_path": "verify_p5_q5_221_remaining_fixed_kernel.py",
+      "new_path": "claims/p5/frontier/verify_p5_q5_221_remaining_fixed_kernel.py"
+    },
+    {
+      "old_path": "verify_p5_q5_221_repeated_majority_pair_cover.py",
+      "new_path": "claims/p5/frontier/verify_p5_q5_221_repeated_majority_pair_cover.py"
+    },
+    {
+      "old_path": "verify_p5_q5_221_star_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_q5_221_star_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_q5_221_triangle_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_q5_221_triangle_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_q5_221_two_all_normal_modes.py",
+      "new_path": "claims/p5/frontier/verify_p5_q5_221_two_all_normal_modes.py"
+    },
+    {
+      "old_path": "verify_p5_q5_311_exclusion.py",
+      "new_path": "claims/p5/frontier/verify_p5_q5_311_exclusion.py"
+    },
+    {
+      "old_path": "verify_p5_q5_311_rare_affine_core.py",
+      "new_path": "claims/p5/frontier/verify_p5_q5_311_rare_affine_core.py"
+    },
+    {
+      "old_path": "verify_p5_q5_311_shared_drop_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_q5_311_shared_drop_obstruction.py"
+    },
+    {
+      "old_path": "verify_p5_source_row_tricolour_cover.py",
+      "new_path": "claims/p5/frontier/verify_p5_source_row_tricolour_cover.py"
+    },
+    {
+      "old_path": "verify_p5_three_coordinate_cycle_dichotomy.py",
+      "new_path": "claims/p5/coordinate-cegar/verify_p5_three_coordinate_cycle_dichotomy.py"
+    },
+    {
+      "old_path": "verify_p5_two_singleton_coordinate_obstruction.py",
+      "new_path": "claims/p5/coordinate-cegar/verify_p5_two_singleton_coordinate_obstruction.py"
+    }
+  ],
+  "rationale": "Stage29 exact reviewed conflict-free P5 frontier/boundary/coordinate ownership forest.",
+  "notes": "Exact mapping reviewed by Codex under the repository-owner standing delegation dated 2026-08-08. Preserve that complete q4_211 and q5_221 mean artifact closure only, not an exhaustive P5 case cover; the q5_221 working-note lifecycle remains superseded; P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION remains separately owned and does not prove P5; all four owner-gated conflicts remain excluded and unadjudicated; arbitrary P7/local-to-global remains UNKNOWN; and global Krenn-Gu remains UNRESOLVED. Execute only under the exact mapping, repair, and validation contract bound in docs/architecture/p5-frontier-stage29-dry-run.md."
+}

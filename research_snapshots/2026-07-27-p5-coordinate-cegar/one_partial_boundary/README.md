@@ -21,7 +21,7 @@ layer, the four/five-coordinate-row branch, or the global Krenn--Gu
 conjecture.
 
 The mathematical statement and proof boundary are in
-[`P5_ONE_PARTIAL_BOUNDARY_OBSTRUCTION.md`](../../../P5_ONE_PARTIAL_BOUNDARY_OBSTRUCTION.md).
+[`P5_ONE_PARTIAL_BOUNDARY_OBSTRUCTION.md`](../../../claims/p5/boundaries/P5_ONE_PARTIAL_BOUNDARY_OBSTRUCTION.md).
 
 ## Package layout
 
@@ -56,8 +56,8 @@ stratum represented by that support.
 From the repository root, run:
 
 ```text
-python audit_p5_one_partial_boundary_obstruction.py
-python verify_p5_one_partial_boundary_obstruction.py
+python claims/p5/boundaries/audit_p5_one_partial_boundary_obstruction.py
+python claims/p5/boundaries/verify_p5_one_partial_boundary_obstruction.py
 ```
 
 The audit does not trust the committed orbit list.  It reconstructs both

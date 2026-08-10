@@ -1,7 +1,9 @@
 # Layout migration Stages 27-29 reviewed plan
 
-Status: **STAGES 27-28 COMPLETE AND LOCALLY VALIDATED; STAGE 29 REMAINS
-REVIEWED, UNFROZEN, AND UNEXECUTED.**
+Status: **STAGES 27-28 COMPLETE, PUBLISHED, MERGED, AND MERGED-MAIN
+VALIDATED; STAGE 29 MOVE, MIGRATION-AWARE LINK/COMMAND REWRITE, FROZEN
+EXECUTABLE REPAIR, AND LOCAL VALIDATION COMPLETE; PUBLICATION, HOSTED CI,
+MERGE, AND MERGED-MAIN VALIDATION REMAIN PENDING.**
 
 The global Krenn-Gu conjecture remains **UNRESOLVED**. This plan changes
 filesystem and executable-path ownership and corrects stale ledger mappings
@@ -409,18 +411,19 @@ Start from current non-moved manifest members in
 `p5/frontier`, `p5/boundaries`, and `p5/coordinate-cegar`. Remove the exact
 high-coordinate conflict triple. Select a document only when every named
 current-root Python carrier is in those families, then select those carriers.
-From that intersection:
+On the original review base this gave `252 + 2 + 6 - 66 - 18 = 176`.
+After Stage 28 moved the P4 antecedents, the six q4_211 files enter the fresh
+closure directly. The merged-base refreeze is therefore:
 
 ```text
-252
-+ 2 omitted C++ primaries
-+ 6 omitted q4_211 reduction-triple files
+258 members after removing the high-coordinate conflict triple
++ 2 C++ primaries
 - 66 Component21 files
 - 18 Component23 files
 = 176
 ```
 
-The additions are:
+The files added during the original review were:
 
 - `verify_p5_no_quartic_restriction_equations.cpp`;
 - `verify_p5_no_quintic_restriction_equations.cpp`;
@@ -442,11 +445,12 @@ Explicit exclusions include:
 - all six `P5_COMPONENT23_*` triples;
 - every document/carrier whose closure crosses outside the selected
   intersection, including the alternative-strategy, component-boundary,
-  high-coordinate-chart, specialization-meta-theorem, and omitted
-  q5_311/evidence packages.
+  high-coordinate-chart, and specialization-meta-theorem packages, the
+  `P5_Q5_311_RARE_SLICE_REDUCTION` package, and other omitted evidence
+  packages.
 
-This is also a **Tier-2 path migration**. The consumer graph found 25
-distinct importer files: 8 staying inbound, 15 selected outbound, and 2
+This is also a **Tier-2 path migration**. The merged-base consumer graph finds
+26 distinct importer files: 8 staying inbound, 15 selected outbound, and 3
 internal-cross-only. The 40 import edges are preserved by the same exact
 bootstrap/exposure pattern. Remaining repairs are bounded to the
 high-coordinate staying consumer, q4 constituent paths, P3/P4 and research

@@ -81,7 +81,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "8b3ec40d98ce40f9",
+      "document_sha256_16": "d4c1c0fe5c6fe19d",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -463,7 +463,7 @@
     {
       "name": "Support-four P5 contraction restriction (positive, shows extension is false)",
       "document": "claims/arbitrary-order/SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md",
-      "document_sha256_16": "7445b9a46890e1a4",
+      "document_sha256_16": "b5806984afb34ec9",
       "status": "verified",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1718,7 +1718,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "8b3ec40d98ce40f9",
+      "document_sha256_16": "d4c1c0fe5c6fe19d",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -1854,7 +1854,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "8b3ec40d98ce40f9",
+      "document_sha256_16": "d4c1c0fe5c6fe19d",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
