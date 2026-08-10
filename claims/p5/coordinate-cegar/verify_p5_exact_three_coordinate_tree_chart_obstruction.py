@@ -10,6 +10,7 @@ import itertools
 import json
 import shutil
 import subprocess
+import sys
 import tempfile
 import time
 from collections import Counter
@@ -17,6 +18,15 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 from pysat.solvers import Solver
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/p5/boundaries")
 
 import audit_p5_all_full_boundary_obstruction as ALL_FULL
 import generate_p5_one_partial_support_system as GENERATOR
@@ -27,7 +37,7 @@ import p5_tree_chart_cover as COVER
 
 ROOT = Path(__file__).resolve().parent
 PACKAGE = (
-    ROOT
+    REPO_ROOT
     / "research_snapshots"
     / "2026-07-27-p5-tree-chart-cover"
 )

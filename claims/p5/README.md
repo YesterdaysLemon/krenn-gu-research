@@ -1,7 +1,10 @@
 # P5 obstruction claims
 
-This spine holds the migrated component-level `H31` and `H22`
-obstruction packages.  Almost every package is generic: it proves that
+This spine holds the migrated P5 obstruction packages.  The `h31/` and
+`h22/` subtrees contain the component-level packages, while `frontier/`,
+`boundaries/`, and `coordinate-cegar/` contain the separate Stage 29
+ownership forest.  Almost every package under `h31/` and `h22/` is generic:
+it proves that
 the marked `H31` (respectively weighted `H22`) fibre is empty **at the
 generic point of one P4 component's function field** (or on a dense
 open subset of it).  The `h31/embedded-p3/` package is the sole complete
@@ -77,6 +80,9 @@ remains **UNRESOLVED**.
 |---|---|
 | [`h31/`](h31/) | marked-`H31` obstruction packages (31 directories; one complete component-closure forest, one flat three-triple `p+q=0` wall subforest, one three-package rank-one-gate forest, one internal-`E=0` divisor leaf, one toric marked-fibre boundary leaf, one canonical chart-boundary section leaf, one canonical first-plane Schubert-infinity section leaf, and one complete first-plane Schubert-infinity marked-fibre leaf) |
 | [`h22/`](h22/) | weighted-`H22` obstruction packages (20; the disjoint-mixed-star pilot has a partial boundary subtree, six-dimensional also has one equal-weight generic-point leaf, and component twenty-three has separate finite `lambda=0` and `lambda=1` all-affine-marking generic-point leaves) |
+| [`frontier/`](frontier/) | Stage 29 frontier/reduction forest: 143 moved artifacts, including most of the normalized `q4_211` and `q5_221` ownership closure |
+| [`boundaries/`](boundaries/) | Stage 29 boundary packages: 17 moved artifacts, including the terminal normalized `q5_221` boundary triple |
+| [`coordinate-cegar/`](coordinate-cegar/) | Stage 29 coordinate and bounded-CEGAR packages: 16 moved artifacts, including the `q4_211` coordinate-normal triple |
 
 The H22 disjoint-mixed-star package was migrated first, in the layout
 migration pilot; it lives at
@@ -149,6 +155,21 @@ questions, the separate H31 certificate-stratum conflict, and the global
 conjecture remain outside this migration. The global conjecture remains
 **UNRESOLVED**.
 
+Stage 29 (`p5-frontier-stage29`, mapping
+`6577eb9544a8bcc5c20f0c6a204a7248b1db68ec15331d12281e791baccd5d7e`)
+moved 176 exact root artifacts into `frontier/`, `boundaries/`, and
+`coordinate-cegar/`.  The complete 60-file normalized `q4_211` forest and
+49-file normalized `q5_221` forest are ownership/evidence-carrier closures
+inside those branches, not an exhaustive P5 case cover.  The `q5_221`
+working note remains superseded.  The exact characteristic-zero
+`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION` theorem and its verifier/audit
+remain separately owned at root.  The four owner-gated conflicts and every
+excluded Component20/21/23, H22/H31, Branch B, high-coordinate, weighted
+`p+q`, internal-`E=0`, marked-basis, legacy, and withdrawn surface remain
+outside the Stage 29 forest.  The migration adjudicates none of their statuses
+or ownership conflicts.  Arbitrary P7/local-to-global remains **UNKNOWN**, and
+the global conjecture remains **UNRESOLVED**.
+
 ## Pairing by underlying P4 family
 
 Where both sides of a component have migrated generic theorems they
@@ -205,9 +226,10 @@ first-plane Schubert-infinity section leaves, the complete first-plane
 Schubert-infinity marked-fibre leaf, the scoped H22 disjoint-mixed-star
 boundary subpackages, the component-23 finite `lambda=1` all-affine-marking
 and `lambda=0` all-affine-marking H22 leaves, and the H22 six-dimensional equal-weight
-normal-form-point leaf, the following P5 layers are **not** part of this spine:
-pointwise/divisor closures, boundary obstruction trees, exceptional-fibre
-work, the `q4_211` / `q5_221` / component19 / component21 / remaining
+normal-form-point leaf, and the exact Stage 29 ownership forest described
+above, the following P5 layers are **not** part of this spine:
+pointwise/divisor closures, unselected boundary obstruction trees,
+exceptional-fibre work, the component19 / component21 / remaining
 component-23 programmes, and the frontier documents
 (`P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md`,
 `P5_DELTA3_OBLIGATION_LEDGER.md`,

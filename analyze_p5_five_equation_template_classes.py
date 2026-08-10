@@ -7,9 +7,19 @@ import argparse
 import hashlib
 import itertools
 import json
+import sys
 from collections import Counter, defaultdict
 from fractions import Fraction
 from pathlib import Path
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/p5/frontier")
 
 import generate_p5_one_partial_support_system as BASE
 import verify_p5_five_equation_laurent_core as CORE

@@ -5,12 +5,21 @@ from __future__ import annotations
 
 import hashlib
 import json
+import sys
 import time
 from collections import Counter
 from fractions import Fraction
 from pathlib import Path
 
 import sympy as sp
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
 
 import generate_p5_exact_three_partial_support_system as GENERATOR
 import verify_p5_c10_binary_fork_obstruction as FORK
@@ -21,7 +30,7 @@ import verify_p5_c10_triangle_obstruction as TRIANGLE
 
 ROOT = Path(__file__).resolve().parent
 MANIFEST = (
-    ROOT
+    REPO_ROOT
     / "research_snapshots"
     / "2026-07-27-p5-coordinate-cegar"
     / "three_partial_c10_audit"

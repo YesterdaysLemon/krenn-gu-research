@@ -9,9 +9,19 @@ import json
 import shlex
 import shutil
 import subprocess
+import sys
 from collections import Counter
 from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/p5/frontier")
 
 import audit_p5_exact_three_partial_boundary as AUDIT
 import audit_p5_exact_two_partial_boundary as TWO
@@ -21,7 +31,7 @@ import verify_p5_pair_signature_catalogue_coverage as COVERAGE
 
 ROOT = Path(__file__).resolve().parent
 PACKAGE = (
-    ROOT
+    REPO_ROOT
     / "research_snapshots"
     / "2026-07-27-p5-coordinate-cegar"
     / "three_partial_c10_boundary"

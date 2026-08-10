@@ -6,17 +6,25 @@ from __future__ import annotations
 import hashlib
 import itertools
 import json
+import sys
 from pathlib import Path
 
 import sympy as sp
 
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
-ROOT = Path(__file__).resolve().parent
+REPO_ROOT, HERE = bootstrap(__file__)
+
+ROOT = HERE
 THEOREM = ROOT / "P5_Q5_311_EXCLUSION_THEOREM.md"
-RANK_DROP = ROOT / "claims/p4/classifications/pair-geometry/decomposable-restriction-rank-drop/P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md"
+RANK_DROP = REPO_ROOT / "claims/p4/classifications/pair-geometry/decomposable-restriction-rank-drop/P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md"
 SHARED_DROP = ROOT / "P5_Q5_311_SHARED_DROP_OBSTRUCTION.md"
 P3_CLASSIFICATION = (
-    ROOT / "P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md"
+    REPO_ROOT / "P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md"
 )
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
 

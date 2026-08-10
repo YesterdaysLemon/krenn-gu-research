@@ -6,15 +6,24 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+import sys
 from collections import Counter
 from pathlib import Path
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
 
 import generate_p5_one_partial_support_system as GENERATOR
 
 
 ROOT = Path(__file__).resolve().parent
 BOUNDARY = (
-    ROOT
+    REPO_ROOT
     / "research_snapshots"
     / "2026-07-27-p5-coordinate-cegar"
     / "one_partial_boundary"

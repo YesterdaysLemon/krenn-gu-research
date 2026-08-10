@@ -96,10 +96,13 @@ characteristic-zero theorem with its own verifier/audit and an explicit wall:
 it does not prove P5 or the global conjecture. Its link is repaired; its
 ownership is not absorbed into this batch.
 
-No selected path is mapped by the theorem ledger. Stage 29 must not edit a
-ledger path, hash, status, scope, evidence role, audit provenance, dependency,
-or global field. Ledger completeness remains `partial_curated`, and the global
-status remains **UNRESOLVED**.
+No selected path is mapped by the theorem ledger. Stage 29 must not change a
+ledger path, status, scope, evidence role, audit provenance, dependency, or
+global field. If a migration-aware rewrite changes a ledger-owned document,
+only its `document_sha256_16` integrity field may be refreshed to the exact
+rewritten bytes; such a refresh is not evidence or status promotion. Ledger
+completeness remains `partial_curated`, and the global status remains
+**UNRESOLVED**.
 
 The exact batch excludes:
 
@@ -165,7 +168,9 @@ existing meaning; only filesystem resolution changes.
 
 The migration-aware Markdown simulation rewrites exactly 129 local links and
 172 replay commands across 76 files, with zero ambiguity. A second pass is an
-exact `0/0/0` fixed point. This simulation produces no theorem-ledger update.
+exact `0/0/0` fixed point. The simulation produces no automatic theorem-ledger
+update; that does not waive the document-hash integrity refresh required after
+a ledger-owned document is rewritten.
 
 The line-exact repair inventory and its fail-closed verifier are run-local
 freeze artifacts:
@@ -215,7 +220,9 @@ repair surface. The required transaction is:
 6. apply only the frozen import/path/semantic-key repairs and navigation/report
    additions;
 7. stage the index-complete candidate tree and require the rewriter fixed
-   point, zero stale executable references, and no ledger mutation;
+   point, zero stale executable references, and no ledger mutation except exact
+   `document_sha256_16` refreshes for rewritten ledger-owned documents, with
+   every scientific/evidence field unchanged;
 8. run the authoritative validation floor:
 
 ```text

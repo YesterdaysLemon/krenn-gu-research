@@ -6,17 +6,45 @@ from __future__ import annotations
 import hashlib
 import itertools
 import json
+import sys
 from collections import Counter
 from pathlib import Path
 
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
-ROOT = Path(__file__).resolve().parent
+REPO_ROOT, HERE = bootstrap(__file__)
+
+ROOT = HERE
 THEOREM = ROOT / "P5_Q4_211_EXCLUSION_THEOREM.md"
 PRIMARY = ROOT / "verify_p5_q4_211_exclusion.py"
 
 
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def resolve_repo_file(path_key: str) -> Path:
+    direct = ROOT / path_key
+    if direct.exists():
+        return direct
+    manifest = json.loads(
+        (REPO_ROOT / "catalog" / "moved-paths.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    for move in manifest.get("moves", []):
+        if (
+            move.get("status") == "moved"
+            and move.get("old_path") == path_key
+        ):
+            candidate = REPO_ROOT / move["new_path"]
+            if candidate.exists():
+                return candidate
+    return direct
 
 
 def main() -> None:
@@ -104,7 +132,7 @@ def main() -> None:
         "P5_Q4_211_B0_FINAL_OBSTRUCTION.md",
         "P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md",
     }
-    if not all((ROOT / filename).is_file() for filename in required_files):
+    if not all(resolve_repo_file(filename).is_file() for filename in required_files):
         raise AssertionError("case-cover theorem file missing")
 
     output = {

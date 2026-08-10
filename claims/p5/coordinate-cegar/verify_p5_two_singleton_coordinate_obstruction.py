@@ -6,17 +6,25 @@ from __future__ import annotations
 import hashlib
 import itertools
 import json
+import sys
 from pathlib import Path
 
 import sympy as sp
 
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
-ROOT = Path(__file__).resolve().parent
+REPO_ROOT, HERE = bootstrap(__file__)
+
+ROOT = HERE
 THEOREM = ROOT / "P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md"
 DEPENDENCIES = (
-    ROOT / "claims/p4/classifications/pair-geometry/decomposable-restriction-rank-drop/P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md",
-    ROOT / "P5_Q5_311_SHARED_DROP_OBSTRUCTION.md",
-    ROOT / "P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md",
+    REPO_ROOT / "claims/p4/classifications/pair-geometry/decomposable-restriction-rank-drop/P4_DECOMPOSABLE_RESTRICTION_RANK_DROP.md",
+    REPO_ROOT / "claims/p5/frontier/P5_Q5_311_SHARED_DROP_OBSTRUCTION.md",
+    REPO_ROOT / "P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md",
 )
 
 

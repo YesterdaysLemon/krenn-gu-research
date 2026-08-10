@@ -6,7 +6,17 @@ from __future__ import annotations
 import ast
 import json
 import re
+import sys
 from dataclasses import dataclass
+from pathlib import Path
+
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
 
 import generate_p5_exact_two_partial_support_system as GENERATOR
 

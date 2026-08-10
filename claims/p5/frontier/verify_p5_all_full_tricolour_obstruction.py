@@ -7,14 +7,22 @@ import hashlib
 import itertools
 import json
 import re
+import sys
 from collections import defaultdict
 from fractions import Fraction
 from pathlib import Path
 
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
-ROOT = Path(__file__).resolve().parent
+REPO_ROOT, HERE = bootstrap(__file__)
+
+ROOT = HERE
 BOUNDARY = (
-    ROOT
+    REPO_ROOT
     / "research_snapshots"
     / "2026-07-27-p5-coordinate-cegar"
     / "all_full_tricolour_boundary"
