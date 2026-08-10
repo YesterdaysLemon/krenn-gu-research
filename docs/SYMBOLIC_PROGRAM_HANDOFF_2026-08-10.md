@@ -9,8 +9,8 @@ proved boundary for a characteristic-two route; neither closes the global
 extraction/gluing obligation or changes global status.
 
 The operational base for this checkpoint is merged `main` at
-`70a6d03125a8164940bed3d27980d489724308aa`.  Its push hygiene workflow
-completed successfully in run `31386596996`.
+`84a2b6616e5d589156aac114d5fb6b8d87ac85cc`.  Its push hygiene workflow
+completed successfully in run `31421033178`.
 
 - Stage 33 moved the final 305 root-debt artifacts through PR #69 and merged as
   `4263832e3ff338c5bd87528268cb8cb563866ec0`; both exact-head and exact
@@ -213,9 +213,26 @@ Thus `Delta(D)<=3` is excluded at every even order `n>=6`, including selected
 matching overlaps and without a total-support-degree bound.  The exact proof
 and two no-import focused checks are in
 [`ALL_BRIDGE_ACTIVE_DECK_EXCLUSIVITY_AND_CUBIC_DIAGONAL_EXCLUSION.md`](../claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_EXCLUSIVITY_AND_CUBIC_DIAGONAL_EXCLUSION.md).
-Every remaining all-bridge witness has minimum saturated-diagonal degree at
-least three and maximum saturated-diagonal degree at least four; the
-`Delta(D)>=4` boundary and the deeper-blocker branch remain open.
+That first active-deck theorem gives minimum saturated-diagonal degree at
+least three and maximum saturated-diagonal degree at least four.
+
+The active-deck argument now closes that first remaining degree as well.  If
+`Delta(D)<=4`, every active colour graph is a union of isolated edges and
+even cycles.  Alternating cycle halves express each `Z^c` support as one
+perfect matching plus a partial matching.  Nonvanishing of the full hafnian
+then forbids cancellation on any matchable principal subgraph.  Mixed cuts
+force every pair of the three perfect matchings to form one Hamiltonian
+cycle, while any residual saturated edge is a proper chord producing a
+forbidden nonzero mixed cut.  Therefore
+
+```text
+Delta(D) >= 5.
+```
+
+The exact proof and two separate bounded checks are in
+[`ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FOUR_EXCLUSION.md`](../claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FOUR_EXCLUSION.md).
+The `Delta(D)>=5` all-bridge boundary, the deeper-blocker branch, and global
+extraction/gluing remain open.
 
 ### Characteristic-two route boundary
 

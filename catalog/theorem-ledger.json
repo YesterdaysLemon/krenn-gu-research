@@ -82,7 +82,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "c441f29ebc7ce762",
+      "document_sha256_16": "31e78db9c9519ec0",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -382,7 +382,7 @@
     {
       "name": "All-Bridge Active-Deck Exclusivity and Cubic Diagonal Exclusion",
       "document": "claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_EXCLUSIVITY_AND_CUBIC_DIAGONAL_EXCLUSION.md",
-      "document_sha256_16": "998b671f865ca208",
+      "document_sha256_16": "476d9c53beb0c26d",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact symbolic proof over C",
@@ -398,7 +398,7 @@
       "audit_provenance": "independent_exact_identity_audit",
       "expected_runtime": "seconds (standard library)",
       "external_binaries": [],
-      "note": "The characteristic-zero proof is the displayed Laplace/cofactor and zero-layer argument in the owning document. The two scripts are bounded supporting checks, not an exhaustive case cover or a substitute for that proof. Inputs include the simultaneous all-bridge normal form, mixed-cut hafnian products, the universal saturated zero layer, and Bogdanov's matching theorem. Delta(D)>=4, the deeper-blocker branch, global extraction/gluing, and the global conjecture remain open.",
+      "note": "The characteristic-zero proof is the displayed Laplace/cofactor and zero-layer argument in the owning document. The two scripts are bounded supporting checks, not an exhaustive case cover or a substitute for that proof. Inputs include the simultaneous all-bridge normal form, mixed-cut hafnian products, the universal saturated zero layer, and Bogdanov's matching theorem. This entry closes Delta(D)<=3; the following verified entry separately closes Delta(D)=4. The deeper-blocker branch, global extraction/gluing, and the global conjecture remain open.",
       "claim_package": "claims/arbitrary-order",
       "proof_variant": "canonical",
       "subpackage": null,
@@ -406,6 +406,35 @@
         "ALL_BRIDGE_ACTIVE_DECK_EXCLUSIVITY_AND_CUBIC_DIAGONAL_EXCLUSION.md",
         "audit_all_bridge_active_deck_exclusivity_and_cubic_diagonal_exclusion.py",
         "verify_all_bridge_active_deck_exclusivity_and_cubic_diagonal_exclusion.py"
+      ]
+    },
+    {
+      "name": "All-Bridge Active-Deck Maximum-Degree-Four Exclusion",
+      "document": "claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FOUR_EXCLUSION.md",
+      "document_sha256_16": "19d98ad25d3dcb4a",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact symbolic proof over C",
+        "simultaneous balanced all-bridge normal form",
+        "even n>=6",
+        "D is the physical saturated-diagonal graph and Delta(D)<=4",
+        "no bound on the full support graph"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_all_bridge_active_deck_maximum_degree_four_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_all_bridge_active_deck_maximum_degree_four_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "The proof is the written characteristic-zero path/cycle, two-matching noncancellation, Hamiltonicity, and chord-cut argument. The scripts are bounded supporting checks and do not enumerate all degree-four graphs. Delta(D)>=5, the deeper-blocker branch, global extraction/gluing, and the global conjecture remain open.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FOUR_EXCLUSION.md",
+        "audit_all_bridge_active_deck_maximum_degree_four_exclusion.py",
+        "verify_all_bridge_active_deck_maximum_degree_four_exclusion.py"
       ]
     },
     {
@@ -1822,7 +1851,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "c441f29ebc7ce762",
+      "document_sha256_16": "31e78db9c9519ec0",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -1965,7 +1994,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "c441f29ebc7ce762",
+      "document_sha256_16": "31e78db9c9519ec0",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],

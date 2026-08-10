@@ -23,9 +23,11 @@ global Krenn-Gu conjecture remains **UNRESOLVED**.
 The
 [`all-bridge active-deck theorem`](ALL_BRIDGE_ACTIVE_DECK_EXCLUSIVITY_AND_CUBIC_DIAGONAL_EXCLUSION.md)
 excludes the entire `Delta(D)<=3` boundary for the physical
-saturated-diagonal graph in the simultaneous balanced all-bridge branch.  It
-does not exclude `Delta(D)>=4`, the deeper-blocker branch, or the missing
-global extraction/gluing step.
+saturated-diagonal graph in the simultaneous balanced all-bridge branch.  The
+[`maximum-degree-four theorem`](ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FOUR_EXCLUSION.md)
+strengthens this to exclude `Delta(D)<=4` by a two-matching noncancellation
+and Hamiltonian-chord argument.  It does not exclude `Delta(D)>=5`, the
+deeper-blocker branch, or the missing global extraction/gluing step.
 
 The
 [`characteristic-two contraction lift obstruction`](CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md)
