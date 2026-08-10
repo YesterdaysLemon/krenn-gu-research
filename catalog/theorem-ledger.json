@@ -82,7 +82,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "2bad65ba7b2e3973",
+      "document_sha256_16": "75d3d69cd9b4a8ec",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -464,6 +464,36 @@
         "BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md",
         "audit_balanced_half_sensor_complete_deck_and_wick_globalization.py",
         "verify_balanced_half_sensor_complete_deck_and_wick_globalization.py"
+      ]
+    },
+    {
+      "name": "Maximal Torus-Root Saturation and Coordinate Absorption Theorem",
+      "document": "claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md",
+      "document_sha256_16": "1c57855a6d7d8a47",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact pointwise and matching-bijection proof over C",
+        "ternary hypothetical witness at even n>=6",
+        "maximum cardinality is over root sets and torus-vector choices",
+        "multi-star incidence conclusions apply only for maximum root count r>=2",
+        "coordinate absorption is scoped to the exact two-residual blocker cell",
+        "surplus-two synchronization, higher surplus, and the r=1 cancellation branch remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_maximal_torus_root_saturation_and_coordinate_absorption.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_maximal_torus_root_saturation_and_coordinate_absorption.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "The proof is the written maximum-cardinality saturation, fixed-surplus matching bijection, Laurent-unit classification, and coordinate one-root duality argument. The scripts are bounded supporting checks through ten vertices and exact rational kernel charts, not a global case enumeration or substitutes for the arbitrary-order proof. Coordinate residuals are absorbed into generally unsynchronized physical Lambda identities, not excluded; the global conjecture remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md",
+        "audit_maximal_torus_root_saturation_and_coordinate_absorption.py",
+        "verify_maximal_torus_root_saturation_and_coordinate_absorption.py"
       ]
     },
     {
@@ -1880,7 +1910,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "2bad65ba7b2e3973",
+      "document_sha256_16": "75d3d69cd9b4a8ec",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -2023,7 +2053,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "2bad65ba7b2e3973",
+      "document_sha256_16": "75d3d69cd9b4a8ec",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],

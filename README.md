@@ -72,6 +72,18 @@ every balanced sensor is identically rank-deficient.  Neither branch is yet
 excluded.  See
 [`BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md`](claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md).
 
+A maximum-cardinality torus-root configuration gives a complementary
+pointwise reduction.  If it has one root, every physical edge block is a
+single matrix unit and forbidden words require exact matching cancellation.
+If it has at least two roots, maximality forces every outside mode to block a
+target colour, and the original witness exposes one complete fixed-surplus
+physical principal-hafnian layer.  In the exact two-residual cell, a
+coordinate-monomial residual edge can be absorbed by promoting either
+residual, producing two overlapping surplus-two blocker identities.  This
+does not synchronize their physical pair blocks or exclude higher surplus or
+the one-root cancellation branch.  See
+[`MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md`](claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md).
+
 On that clean `P_6` fan, target diagonality has now been translated exactly.
 If the fan is invertible, each target-colour deck vector lies in the inverse
 image of `Seg(P^1 x P^2)` and therefore obeys three pulled-back `2 x 2`
@@ -1582,9 +1594,9 @@ exact recursion `W_uv=h*B_uv+a_u tensor b_v+b_u tensor a_v`.  On their
 simultaneous-kernel spaces, either the residual edge is a nonzero coordinate
 monomial or torus kernel vectors can be chosen with `h=0`, making the
 two-row factorization automatic and extracting `P_(r+2)`.  This reduces that
-ambient-order cell to a coordinate-killer branch and an all-full-span
-permanent branch; neither is yet excluded in full.  The coordinate-monomial
-branch is now known to be locally slice-universal: every blocker-admissible
+ambient-order cell to a coordinate-monomial branch and an all-full-span
+permanent branch.  The coordinate-monomial branch is locally slice-universal:
+every blocker-admissible
 surplus-two cofactor datum has an exact realization with one-dimensional
 torus residual kernels and a coordinate-monomial residual edge, and every
 factorized all-full-span `P_(r+2)` datum embeds as a subfamily.  Consequently
@@ -1599,6 +1611,12 @@ cannot itself be a full witness.  Any genuine extension needs a
 nonprojective root--blocker tangent or effective root--root/root--residual
 companions spanning exactly the full two-dimensional annihilator of the root
 vector; together with the scalar row direction they span the target dual.
+At the full two-residual cell, maximum-root promotion now absorbs the
+coordinate-monomial residual as a residual branch: promoting either endpoint
+turns the other into a blocker and yields two overlapping physical
+`Lambda_(r+1,2)` identities.  This is not an exclusion.  Their direct pair
+blocks remain unsynchronized, and the higher-surplus and one-root monomial
+cancellation branches remain open.
 Modulo the scalar GHZ tensor, their aggregate cofactor classes must also span
 the two-dimensional diagonal quotient, giving an exact tangent/cofactor
 frame isomorphism.
