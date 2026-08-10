@@ -74,14 +74,15 @@
     "h31_generic_docs_mapped": 24,
     "h31_generic_docs_with_independent_audit": 23,
     "h22_generic_docs_mapped": 22,
-    "generic_h22_open_exception": "component 22 D23 pencil",
+    "h22_generic_components_closed": 23,
+    "generic_h22_open_exception": "components 22 (D23 pencil) and 25 (finite-D23 and finite-D01 residuals)",
     "exhaustiveness_claim": "all-pair-rank exceptional-graph reduction; requires quantifier review (bottleneck B3)"
   },
   "entries": [
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "c129a1804b2e16db",
+      "document_sha256_16": "2eff3e421699036a",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1792,12 +1793,12 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "c129a1804b2e16db",
+      "document_sha256_16": "2eff3e421699036a",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
         "generic H31 empty on all 25 (per dedicated component docs where present)",
-        "generic H22 empty on all except component 22 D23 pencil",
+        "generic H22 empty on 23 of 25; components 22 and 25 remain open",
         "exhaustiveness within the all-pair-rank exceptional-graph reduction"
       ],
       "dependencies": [],
@@ -1821,17 +1822,18 @@
       "dependencies": [],
       "primary_verifier": "claims/p4/classifications/verify_p4_all_pair_rank_exceptional_graph_reduction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": null,
-      "audit_provenance": "not_yet_mapped",
+      "independent_audit": "claims/p4/classifications/audit_p4_all_pair_rank_exceptional_graph_reduction.py",
+      "audit_provenance": "independent_modular_audit",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "BOTTLENECK B3: needs human review of quantifier scope.",
+      "note": "BOTTLENECK B3: needs human review of quantifier scope. The mapped independent audit reconstructs only the constant-size matching combinatorics and F_5 rank-factorization check; it is not the B3 semantic composition audit or a replacement for the characteristic-zero proof.",
       "claim_package": "claims/p4/classifications",
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": [
         "P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md",
-        "verify_p4_all_pair_rank_exceptional_graph_reduction.py"
+        "verify_p4_all_pair_rank_exceptional_graph_reduction.py",
+        "audit_p4_all_pair_rank_exceptional_graph_reduction.py"
       ]
     },
     {
@@ -1934,7 +1936,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "c129a1804b2e16db",
+      "document_sha256_16": "2eff3e421699036a",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],

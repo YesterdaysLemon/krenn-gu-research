@@ -6,6 +6,16 @@ document is a new claim; every statement cites the document that owns
 it.  The machine-readable companion is
 [`catalog/theorem-ledger.json`](../catalog/theorem-ledger.json).
 
+> **Post-snapshot notice (2026-08-10).** This remains the 2026-08-05
+> stabilization snapshot. Use the
+> [post-root-exit symbolic programme handoff](SYMBOLIC_PROGRAM_HANDOFF_2026-08-10.md)
+> for current continuation. In particular, the owning Component 25 packages
+> show a second live generic weighted-`H22` hole, so the statements below that
+> call Component 22 the sole exception or report 24-of-25 generic closure are
+> stale. The corresponding theorem-ledger census text and P4 audit mapping were
+> corrected with the handoff. These are index/proof-graph corrections, not new
+> results; the B3 semantic composition audit remains open.
+
 **The global conjecture is UNRESOLVED.**  For even `n >= 6`,
 `d >= 3`, and complex `d x d` blocks `W_ij`, the matching-sum tensor
 
