@@ -95,6 +95,16 @@ exact, while permanent Hall quotas force `q<=r`; the unfactorized and higher
 mixed-root branches remain unknown.  See
 [`BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md`](claims/arbitrary-order/BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md).
 
+Opening two old roots does not automatically remove that affine ambiguity.
+The exact contraction has five matching sectors, and the gauge variation is
+the sum of a defect-row permanent and an essential old-root-companion term.
+At tight surplus, a one-mode outside star supports a sign-reversing matching
+involution that makes the affine gauge invisible to the entire graph tensor,
+not merely to its first two root contractions.  This is a conditional
+representation boundary: it constructs neither a tight diagonal layer nor a
+GHZ witness, and higher-surplus detection remains open.  See
+[`BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md`](claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md).
+
 The one-root branch now has a sharper exact cancellation normal form.
 Near-monochromatic words force the active pure-cofactor support to meet every
 vertex; two-point words force either a zero pure deletion cofactor or a

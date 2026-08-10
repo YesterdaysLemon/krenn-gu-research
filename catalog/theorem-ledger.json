@@ -82,7 +82,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "742380b004decf9b",
+      "document_sha256_16": "a215ba2c9e1fd458",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -525,6 +525,37 @@
         "BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md",
         "audit_balanced_fixed_surplus_truncation_fibre_nonobservability.py",
         "verify_balanced_fixed_surplus_truncation_fibre_nonobservability.py"
+      ]
+    },
+    {
+      "name": "Balanced Two-Open-Root Gauge Detector and Star-Invisibility Boundary",
+      "document": "claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md",
+      "document_sha256_16": "6132c65b749bf70f",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero matching-partition, repeated-row, and sign-reversing-involution proofs",
+        "the complete two-open equation starts from the fixed-surplus root contraction with r old roots and outside surplus 2q",
+        "the affine detector and companion formula assume the displayed physical common-two-row outside factorization with one persistent root row",
+        "injectivity detects only on a nonzero effective companion space and is not forced for every hypothetical witness",
+        "the exact full-tensor star gauge is a tight-surplus q=0 boundary and is not claimed at q>=1",
+        "tight-layer relevance is conditional; no tight diagonal restriction, GHZ witness, or Krenn-Gu counterexample is constructed",
+        "higher-surplus, unfactorized, and global gauge detection remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_two_open_root_gauge_detector_and_star_invisibility.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_two_open_root_gauge_detector_and_star_invisibility.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "The arbitrary-order proof is the written five-sector matching partition, defect-plus-companion permanent identity, and q=0 sign-reversing involution. The two scripts independently audit bounded sector, multiplicity, and involution conventions; they neither replace the written proof nor construct a hypothetical witness. The result is an exact observability boundary and leaves the global conjecture UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md",
+        "audit_balanced_two_open_root_gauge_detector_and_star_invisibility.py",
+        "verify_balanced_two_open_root_gauge_detector_and_star_invisibility.py"
       ]
     },
     {
@@ -2093,7 +2124,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "742380b004decf9b",
+      "document_sha256_16": "a215ba2c9e1fd458",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -2236,7 +2267,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "742380b004decf9b",
+      "document_sha256_16": "a215ba2c9e1fd458",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],

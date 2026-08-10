@@ -260,6 +260,24 @@ theorem, not a witness deformation; higher mixed-root equations and
 unfactorized outside blocks remain load-bearing.  See
 [`BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md`](../claims/arbitrary-order/BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md).
 
+Opening a second old root now has a complete exact formula.  Its contraction
+has five sectors: both roots cross outside; they meet each other; either root
+meets one pinned root while the other crosses; or they meet two ordered,
+distinct pinned roots.  On the common-two-row absorption cell, the affine
+gauge varies by a defect-row permanent plus a sum of old-root-companion
+permanents.  A selector or a nonzero injective companion map detects the
+gauge, but neither condition is forced at every hypothetical witness.
+
+The tight-surplus boundary is sharp.  If the repeated port row is supported
+at one outside mode, the outside graph is a star and the two gauge terms are
+paired by an exact fixed-point-free sign-reversing matching involution.  The
+entire graph tensor is unchanged.  This is conditional on a relevant tight
+layer and does not construct that layer, satisfy the unspecialized GHZ
+identity, or give a counterexample.  Therefore the next positive target is a
+higher-surplus or unfactorized selector theorem, not the unsupported claim
+that the first mixed-root equation must detect every gauge.  See
+[`BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md`](../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md).
+
 The `r=1` branch has three further exact controls.  Near-monochromatic words
 force the active pure-cofactor support to meet every vertex.  A word with two
 vertices in one colour and the rest in another gives a pure deletion-cofactor versus
