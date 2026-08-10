@@ -184,7 +184,7 @@ closed at complete marked-fibre level in
 [`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](../../../../p5/h31/toric-marked-fibre/P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md).
 The nonzero divisor inside the preferred component chart is likewise
 closed at complete marked-fibre level in
-[`P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md`](../../../../../P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md).
+[`P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md`](../../../../p5/h31/component-chart-boundary-marked-fibre/P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md).
 The complete marked fibre of this component, including its finite
 chart and all boundary divisors, has since been excluded.  The second
 diagonal-quadric component is genuinely distinct: at a rational point

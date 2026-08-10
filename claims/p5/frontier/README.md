@@ -50,8 +50,10 @@ conjecture.
 The batch excludes the high-coordinate conflict triple, all Component21 and
 Component23 triples, every closure-crossing package, and every Component20,
 H22, H31, Branch B, weighted-`p+q`, internal-`E=0`, marked-basis, legacy, or
-withdrawn conflict surface.  The four owner-gated conflicts remain
-unadjudicated; the marked-H31 fourteen-versus-sixteen theorem/primary
-contradiction remains a repository stop condition.  Arbitrary
+withdrawn conflict surface.  At the Stage 29 boundary, four owner-gated
+conflicts remained unadjudicated.  The marked-H31 component/record-count
+conflict was later resolved by its dedicated bounded characteristic-zero
+reconciliation; the P4 attribution, broader first/second-component
+provenance, and weighted-H22 `p+q=0` disagreements remain.  Arbitrary
 P7/local-to-global remains **UNKNOWN**, and the global Krenn-Gu conjecture
 remains **UNRESOLVED**.

@@ -7,7 +7,7 @@ This is an exact characteristic-zero obstruction.
 The preferred four-Grassmannian chart of the known pure rank-two
 component has one nonzero divisor outside the finite five-parameter
 family.  The earlier theorem
-[`P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md`](claims/p5/h31/component-chart-boundary/P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md)
+[`P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md`](../component-chart-boundary/P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md)
 excluded one canonical marked row section of that divisor.
 
 The complete marked-basis fibre is now excluded.  For every plane tuple
@@ -171,7 +171,7 @@ assigning the `q=2`, `A=1`, `t0=0`, `R!=0` overlap to the generic
 `R=0` record.  Equivalently, the other records impose respectively
 `t0!=0` and `R!=0`.  The human-readable component-to-record coverage
 table is in
-[`h31-cbmf-characteristic-zero-reconciliation.md`](docs/audits/h31-cbmf-characteristic-zero-reconciliation.md).
+[`h31-cbmf-characteristic-zero-reconciliation.md`](../../../../docs/audits/h31-cbmf-characteristic-zero-reconciliation.md).
 
 On each record, write an arbitrary extension in an exact basis of
 `ker M_q`.  Every selected determinant factors as
@@ -225,21 +225,21 @@ vanishes globally, contradicting rank three.  This proves the theorem.
 Run:
 
 ```text
-python verify_p5_h31_component_chart_boundary_marked_fibre.py
-python audit_p5_h31_component_chart_boundary_marked_fibre.py
+python claims/p5/h31/component-chart-boundary-marked-fibre/verify_p5_h31_component_chart_boundary_marked_fibre.py
+python claims/p5/h31/component-chart-boundary-marked-fibre/audit_p5_h31_component_chart_boundary_marked_fibre.py
 ```
 
 Independently replay the four saturated characteristic-zero
 unit-ideal computations with:
 
 ```text
-python verify_p5_h31_component_chart_boundary_marked_fibre.py --selected-unit-ideals --selected-timeout 900
+python claims/p5/h31/component-chart-boundary-marked-fibre/verify_p5_h31_component_chart_boundary_marked_fibre.py --selected-unit-ideals --selected-timeout 900
 ```
 
 Regenerate the four saturated projection ideals with:
 
 ```text
-python derive_p5_h31_chart_boundary_marked_fibre_elimination.py q --run
+python claims/p5/h31/component-chart-boundary-marked-fibre/derive_p5_h31_chart_boundary_marked_fibre_elimination.py q --run
 ```
 
 The primary verifier checks the normalization, reconstructs all

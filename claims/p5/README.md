@@ -120,17 +120,18 @@ canonical marked-row section on the first-plane Schubert-infinity locus while
 leaving arbitrary kernel-row shifts, its complete marked-fibre successor, the
 rest of the projective boundary, later components, and component
 exhaustiveness separately owned.  A different proposed complete chart-boundary
-marked-fibre batch was deferred because its theorem and primary disagree on
-the certificate-stratum count.
+marked-fibre batch was deferred at that time because its theorem and primary
+disagreed on the certificate-stratum count; the later bounded reconciliation
+distinguished component and record counts and resolved that stop condition.
 Stage 24 (`p5-h31-component-fibre-infinity-marked-fibre-stage24`, mapping
 `103e5de3343c1271841a84cfa79903c9d9e8c6f2c318adc8325c3b8cd1a3ace1`)
 migrated that exact four-file complete marked-basis-fibre successor while
 retaining the canonical section as a separate live predecessor.  The package
 closes only the stated first-plane divisor; the rest of the projective
 boundary, later components, component exhaustiveness, and the global
-conjecture remain open.  The blocked complete chart-boundary marked-fibre
-family remains deferred with its fourteen-versus-sixteen certificate-stratum
-conflict unadjudicated.
+conjecture remain open.  The complete chart-boundary marked-fibre family was
+later reconciled and migrated as its own exact four-file package without
+changing this first-plane result.
 Stage 25 (`p5-h22-finite-lambda-one-all-marking-stage25`, mapping
 `611abb78c553a124a4cf02308950ec5ace6c9f5f1e2e727ece7f043f3b1f59ba`)
 migrated the exact component-23 finite `lambda=1` all-affine-marking leaf over
@@ -152,7 +153,7 @@ later ordinary-residual theorem consumes `lambda=0,1,-1` and closes the
 generic finite union at its stated scope, so the new leaf's chronological
 false and residual-`UNKNOWN` fields require no promotion. The generic core,
 special/projective fibres, whole-component and component-exhaustiveness
-questions, the separate H31 certificate-stratum conflict, and the global
+questions, the then-separate H31 certificate-stratum conflict, and the global
 conjecture remain outside this migration. The global conjecture remains
 **UNRESOLVED**.
 
@@ -164,7 +165,7 @@ moved 176 exact root artifacts into `frontier/`, `boundaries/`, and
 inside those branches, not an exhaustive P5 case cover.  The `q5_221`
 working note remains superseded.  The exact characteristic-zero
 `P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION` theorem and its verifier/audit
-remain separately owned at root.  The four owner-gated conflicts and every
+remain separately owned at root.  At the Stage 29 boundary, four owner-gated conflicts and every
 excluded Component20/21/23, H22/H31, Branch B, high-coordinate, weighted
 `p+q`, internal-`E=0`, marked-basis, legacy, and withdrawn surface remain
 outside the Stage 29 forest.  The migration adjudicates none of their statuses
@@ -181,6 +182,16 @@ Component20 scientific adapter inside its claim package. Candidate, partial,
 superseded, scoped-refuted, open, and verified statuses were not normalized.
 The disputed package records rather than adjudicates ownership; the global
 conjecture remains **UNRESOLVED**.
+
+The later owner-authorized H31 chart-boundary marked-fibre reconciliation
+resolved only the former component-versus-certificate-record count conflict:
+equation (9) has 13 irreducible projection components, while the verifier has
+16 factor-certificate records (13 generic-basis and 3 exceptional-basis).
+The four-file family now lives in
+`h31/component-chart-boundary-marked-fibre/`; its exact selected unit ideals
+close only that divisor.  The P4 attribution, broader first/second-component
+provenance, and weighted-H22 `p+q=0` disagreements remain unadjudicated, and
+the global conjecture remains **UNRESOLVED**.
 
 ## Pairing by underlying P4 family
 
@@ -208,16 +219,18 @@ asymmetries (never manufactured symmetry):
   `p+q=0` wall subforest and a separate H22 forest; the H22 weighted-wall
   ownership disagreement remains explicit in the neutral disputed package;
 - `internal-e0-marked-fibre`, `toric-marked-fibre`,
-  `component-chart-boundary`, `component-fiber-infinity`, and
-  `component-fibre-infinity-marked-fibre` are H31-only scoped leaves; they
+  `component-chart-boundary`, `component-chart-boundary-marked-fibre`,
+  `component-fiber-infinity`, and `component-fibre-infinity-marked-fibre`
+  are H31-only scoped leaves; they
   participate in the separately established first-component synthesis but
   none is a generic or complete-component package.  The
   toric leaf closes only the 21 genuine toric base-orbit/orientation cases,
-  while the chart-boundary leaf closes only the displayed canonical marked
-  sections, the canonical first-plane leaf closes only its displayed marking,
-  and the complete first-plane leaf adds all marked-basis shifts only on that
-  same divisor.  Neither first-plane leaf closes the rest of the projective
-  boundary or a whole component;
+  while the canonical chart-boundary leaf closes only the displayed marked
+  sections and its complete successor adds all kernel-row shifts only on that
+  same divisor.  The canonical first-plane leaf likewise closes only its
+  displayed marking, and its complete successor adds all marked-basis shifts
+  only on that same divisor.  None of these divisor leaves closes the rest of
+  the projective boundary or a whole component;
 - `common-center-kernel-star` includes the separately scoped H22 finite
   `lambda=0` and `lambda=1` leaves plus its generic case-union and boundary
   forest; these distinct records do not become a matching whole-component

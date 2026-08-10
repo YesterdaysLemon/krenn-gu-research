@@ -138,7 +138,7 @@ factor ledger, while a report key ambiguously described those runs as
 default (and exposes a clearly labelled bounded local-check opt-out):
 
 ```text
-python verify_p5_h31_component_chart_boundary_marked_fibre.py \
+python claims/p5/h31/component-chart-boundary-marked-fibre/verify_p5_h31_component_chart_boundary_marked_fibre.py \
   --selected-unit-ideals --selected-timeout 900
 ```
 

@@ -22,7 +22,7 @@ as shown by
 The full marked-basis fibre, the Schubert boundary, and additional
 components were not classified by this canonical-section theorem.  The
 complete marked fibre over this divisor has since been excluded in
-[`P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md`](../../../../P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md).
+[`P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md`](../component-chart-boundary-marked-fibre/P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md).
 The Schubert boundary has since been closed separately.  Additional
 components remain outside its scope.
 

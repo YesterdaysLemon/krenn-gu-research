@@ -3,10 +3,24 @@ from __future__ import annotations
 import argparse
 import io
 import json
+import sys
 import unittest
 from unittest import mock
+from pathlib import Path
 
-import verify_p5_h31_component_chart_boundary_marked_fibre as verifier
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(
+    REPO_ROOT,
+    "claims/p5/h31/component-chart-boundary-marked-fibre",
+)
+
+import verify_p5_h31_component_chart_boundary_marked_fibre as verifier  # noqa: E402
 
 
 class H31ChartBoundaryMarkedFibreReconciliationTests(unittest.TestCase):
