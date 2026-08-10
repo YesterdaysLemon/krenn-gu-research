@@ -84,6 +84,17 @@ does not synchronize their physical pair blocks or exclude higher surplus or
 the one-root cancellation branch.  See
 [`MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md`](claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md).
 
+Rebalancing that fixed-surplus layer now gives a precise observability
+boundary.  At surplus `2q`, contracting the old roots annihilates every
+balanced even-deck column above depth `2q`; the first legal missing column
+appears exactly when `r>=q+2`.  This does not decide the uncontracted sensor:
+at surplus zero and on a suitable surplus-two cut, the same fixed-layer fibre
+contains a deficient canonical shore and generically full shores.  On a
+physical common-two-row Wick cell, a zero/single-open-root affine gauge is
+exact, while permanent Hall quotas force `q<=r`; the unfactorized and higher
+mixed-root branches remain unknown.  See
+[`BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md`](claims/arbitrary-order/BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md).
+
 The one-root branch now has a sharper exact cancellation normal form.
 Near-monochromatic words force the active pure-cofactor support to meet every
 vertex; two-point words force either a zero pure deletion cofactor or a

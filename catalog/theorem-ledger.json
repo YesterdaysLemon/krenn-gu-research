@@ -82,7 +82,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "a90fd2ad09e46d2e",
+      "document_sha256_16": "742380b004decf9b",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -494,6 +494,37 @@
         "MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md",
         "audit_maximal_torus_root_saturation_and_coordinate_absorption.py",
         "verify_maximal_torus_root_saturation_and_coordinate_absorption.py"
+      ]
+    },
+    {
+      "name": "Balanced Fixed-Surplus Truncation, Fibre Nonobservability, and Transverse Absorption Theorem",
+      "document": "claims/arbitrary-order/BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md",
+      "document_sha256_16": "7429446dd291fa10",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact matching-bijection, initial-term, edge-pointing, and imported Hall proofs over C",
+        "ternary maximum-root branch with r>=2 and outside surplus 2q",
+        "actual contracted deck-depth loss begins at r>=q+2; the r=q+1 truncation statement is vacuous",
+        "the q=1 full-shore construction asserts existence for a suitable cut, not every cut",
+        "fixed-layer fibre deformations need not preserve the uncontracted GHZ equation or maximum-root property",
+        "the affine absorption and q<=r Hall conclusions are conditional on the displayed physical common-row factorizations",
+        "higher mixed-root equations, unfactorized outside blocks, and all-balanced witness rank drop remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_fixed_surplus_truncation_fibre_nonobservability.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_fixed_surplus_truncation_fibre_nonobservability.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "The arbitrary-order proof is the written balanced regrouping, forced-depth matching argument, same-fibre leading-minor construction, physical edge-pointing identity, and imported permanent Hall hierarchy. The two scripts are bounded convention and exact-rank audits, not substitutes for those proofs. The result proves fixed-layer and first-jet nonobservability boundaries but constructs no witness and leaves the global conjecture UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md",
+        "audit_balanced_fixed_surplus_truncation_fibre_nonobservability.py",
+        "verify_balanced_fixed_surplus_truncation_fibre_nonobservability.py"
       ]
     },
     {
@@ -2062,7 +2093,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "a90fd2ad09e46d2e",
+      "document_sha256_16": "742380b004decf9b",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -2205,7 +2236,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "a90fd2ad09e46d2e",
+      "document_sha256_16": "742380b004decf9b",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
