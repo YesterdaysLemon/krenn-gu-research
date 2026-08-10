@@ -1,6 +1,6 @@
 # Root-exit Stage 33 final residual dry run
 
-Status: **EXECUTED; LOCALLY VALIDATED REPAIR CANDIDATE AWAITING FINAL EXACT-HEAD REVIEW**
+Status: **EXECUTED; FINAL EXACT-HEAD REVIEW ACCEPTED; AWAITING HOSTED CI**
 
 The global Krenn--Gu conjecture remains **UNRESOLVED**.  This transaction is
 layout, catalog, disputed-ownership, and infrastructure work.  It changes no
@@ -148,6 +148,8 @@ path, but the untracked historical fixture is absent. No fixture was generated
 and no SAT, Singular, brute-force, broad-theorem, numerical, or sampling replay
 was run.
 
-The repaired exact head still requires two fresh final referees, exact-head
-hosted CI, merge, and merged-main CI. Only then may a fresh zero-debt program
-audit authorize the separate strict Phase-R3 enforcement tranche.
+Fresh final semantic and mechanical referees accepted exact repair head
+`f69e42d6f595b6785956067bd5a549b988a67083`, including the three-row
+inverse-taper correction batch. Exact-head hosted CI, merge, and merged-main CI
+remain required. Only then may a fresh zero-debt program audit authorize the
+separate strict Phase-R3 enforcement tranche.
