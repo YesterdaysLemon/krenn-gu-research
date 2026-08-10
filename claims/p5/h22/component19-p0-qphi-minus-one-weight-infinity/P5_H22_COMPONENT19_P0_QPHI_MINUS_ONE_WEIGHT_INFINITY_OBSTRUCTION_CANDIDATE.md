@@ -9,7 +9,7 @@ scope: component 19 at p=0, q=-1/phi in the homogeneous weight [1:0] chart on ph
 inputs:
   P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md: ce333e8605b78e17c2e6b7cfe91fd369e89afe0d3aed65c7df35f82fee319634
 method: direct denominator-free divisor reconstruction, exact mixed-coefficient syzygy, and bounded elimination audits
-command: uv run --with sympy python derive_p5_h22_component19_p0_qphi_minus_one_weight_infinity_obstruction_candidate.py
+command: uv run --with sympy python claims/p5/h22/component19-p0-qphi-minus-one-weight-infinity/derive_p5_h22_component19_p0_qphi_minus_one_weight_infinity_obstruction_candidate.py
 outputs:
   - P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_WEIGHT_INFINITY_OBSTRUCTION_CANDIDATE.md
   - p5_h22_component19_p0_qphi_minus_one_weight_infinity_certificate.json

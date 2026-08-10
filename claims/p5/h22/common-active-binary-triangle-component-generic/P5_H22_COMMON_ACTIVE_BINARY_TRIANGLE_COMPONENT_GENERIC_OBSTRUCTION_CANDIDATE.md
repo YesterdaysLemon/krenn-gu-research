@@ -12,7 +12,7 @@ inputs:
   P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md: 73596e624c6a6e093b861b5c366582cd4b61bc39197d01690f295c9e7194722c
   P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md: 52168b35b43c40c483919c8fa1dd37e7c147cae5f331320d8656bf6a1ed309a9
 method: exact characteristic-zero permanent reconstruction and staged projective elimination for one shared marking, homogeneous weight, and extension vector
-command: uv run --with sympy python derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
+command: uv run --with sympy python claims/p5/h22/common-active-binary-triangle-component-generic/derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
 outputs:
   derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py: hash reported by replay
   p5_h22_common_active_binary_triangle_component_generic_certificate.json: hash reported by replay

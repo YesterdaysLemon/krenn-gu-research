@@ -11,7 +11,7 @@ inputs:
   - P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md sha256=5b1c85f89cd45b9c8f8d0604566145b4b7cd765d4cb350119d1bbf73b365e685
   - P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md sha256=28aa991219f090e82bd9a5cfc682cb12cf980eb12b437aa8bfdebddd1b10b3a8
 method: independent reconstruction of q=0 marked bases; exact squarefree permanents; bidirectional Singular ideal comparison over Q(p,phi); complete shared-kernel frame; fixed one-marked rank minor; explicit false-lead and boundary attacks
-command: uv run --with sympy python audit_p5_h22_component19_q0_special_divisor_obstruction_candidate.py
+command: uv run --with sympy python claims/p5/h22/component19-q0-special-divisor/audit_p5_h22_component19_q0_special_divisor_obstruction_candidate.py
 outputs:
   - audit_p5_h22_component19_q0_special_divisor_obstruction_candidate.py sha256=a62f0ca7cecce673561c3ab431b890c6ed7ac64521797a3d1326bcfd7b4c39ef
   - P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_OBSTRUCTION_VERIFICATION.md

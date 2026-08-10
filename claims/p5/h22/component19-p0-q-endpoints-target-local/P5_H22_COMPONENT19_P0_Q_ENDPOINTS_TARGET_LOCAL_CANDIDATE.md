@@ -10,7 +10,7 @@ inputs:
   - P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md sha256=ce333e8605b78e17c2e6b7cfe91fd369e89afe0d3aed65c7df35f82fee319634
   - audit_p5_h22_component19_p0_ordinary_obstruction_open.py sha256=a225c1f5e2c9a333448c95ffa999bebd4e685b9407fcfe488d798efdd8a73e75
 method: reuse the independently reconstructed ordinary shared frame, enumerate every individual and stacked one-marked minor exactly, and saturate the individual rank-four ideal by the genuine diagonal open
-command: uv run --with sympy python explore_p5_h22_component19_p0_q_endpoints.py --q 1; repeat with --q -1
+command: uv run --with sympy python claims/p5/h22/component19-p0-q-endpoints-target-local/explore_p5_h22_component19_p0_q_endpoints.py --q 1; repeat with --q -1
 outputs:
   - explore_p5_h22_component19_p0_q_endpoints.py sha256=f07ef6d0bc8d0afa8d05c62c26b80aa49096bc7218cfad483e999fdd367fac80
 limitations: discovery script imports a prior audit and is not independent; phi=0 and phi^2=1 are excluded; zero/projective and valuative fibres are not addressed

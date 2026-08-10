@@ -11,7 +11,7 @@ inputs:
   P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_AXES_VERIFICATION.md: e8d550934d401a8231acae0d7352ef9cfa9319402c920bb2835f7b518b833b16
   P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md: 7d817f91a5a24512e092dca125258ad5a3753bbb97b6199ad2b6c202c9d91965
 method: direct source reconstruction, complete shared extension frame, and fixed full two-contraction third-row stack determinants
-command: uv run --with sympy python derive_p5_h22_component19_p0_qphi_minus_one_axes_compatibility_obstruction.py
+command: uv run --with sympy python claims/p5/h22/component19-p0-qphi-minus-one-axes-compatibility/derive_p5_h22_component19_p0_qphi_minus_one_axes_compatibility_obstruction.py
 outputs: this report, its JSON certificate, and the bounded standalone replay
 limitations: construction result pending independent verification; only the two Y=0 residual axes are covered
 ```

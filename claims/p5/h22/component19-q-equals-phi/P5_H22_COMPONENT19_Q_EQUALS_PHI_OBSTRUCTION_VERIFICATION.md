@@ -9,7 +9,7 @@ scope: component 19 q=phi weighted-H22 obstruction over Q(p,phi) on p*phi!=0, pl
 inputs:
   - P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md sha256=ce333e8605b78e17c2e6b7cfe91fd369e89afe0d3aed65c7df35f82fee319634
 method: independent regular-basis reconstruction; exact squarefree permanents and pair minors; bidirectional finite/infinity incidence elimination over Q(p,phi); parameter-aware elimination over Q(p)[phi]; exact phi=0 pair-rank audit
-command: uv run --with sympy python audit_p5_h22_component19_q_equals_phi_obstruction_candidate.py
+command: uv run --with sympy python claims/p5/h22/component19-q-equals-phi/audit_p5_h22_component19_q_equals_phi_obstruction_candidate.py
 outputs:
   - audit_p5_h22_component19_q_equals_phi_obstruction_candidate.py sha256=a26310924838c4b7f81974e5901e5ee10ec4dd2e75a0fd01b791cf74b666f1ac
   - P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md

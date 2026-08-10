@@ -12,7 +12,7 @@ inputs:
   P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md: 3b49c47626131fa10729961bc700d46b518a102799504c3796fb0a5b932c5832
   P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md: da64a3ee55d5dfa361a70cb771196f76f93d13b3d61df358442a22e1e72de1a8
 method: exact characteristic-zero permanent reconstruction, projective binary and shared-compatibility elimination, complete shared-kernel frame, and one fixed one-marked minor
-command: uv run --with sympy python derive_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py
+command: uv run --with sympy python claims/p5/h22/common-kernel-vertical-triangle-component-generic/derive_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py
 outputs:
   derive_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py: hash reported by replay
   p5_h22_common_kernel_vertical_triangle_component_generic_certificate.json: hash reported by replay

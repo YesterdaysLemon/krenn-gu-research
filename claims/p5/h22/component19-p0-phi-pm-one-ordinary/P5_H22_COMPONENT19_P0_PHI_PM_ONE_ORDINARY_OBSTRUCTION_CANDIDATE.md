@@ -10,7 +10,7 @@ inputs:
   P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md: ce333e8605b78e17c2e6b7cfe91fd369e89afe0d3aed65c7df35f82fee319634
   P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md: 7d817f91a5a24512e092dca125258ad5a3753bbb97b6199ad2b6c202c9d91965
 method: direct sign-specialized finite incidence elimination, exact shared frame, complete individual one-marked classification, full two-contraction stacks, and third-colour diagonal obstruction
-command: uv run --with sympy python derive_p5_h22_component19_p0_phi_pm_one_ordinary_obstruction_candidate.py
+command: uv run --with sympy python claims/p5/h22/component19-p0-phi-pm-one-ordinary/derive_p5_h22_component19_p0_phi_pm_one_ordinary_obstruction_candidate.py
 outputs: this report, its JSON certificate, and the bounded standalone replay
 limitations: construction result pending independent verification; finite projective-weight chart only; all listed parameter intersections excluded
 ```

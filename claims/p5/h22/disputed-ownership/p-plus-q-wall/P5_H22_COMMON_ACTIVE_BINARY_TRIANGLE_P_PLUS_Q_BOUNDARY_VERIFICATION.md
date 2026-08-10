@@ -29,7 +29,7 @@ inputs:
   P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md: 52168b35b43c40c483919c8fa1dd37e7c147cae5f331320d8656bf6a1ed309a9
   verify_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py: e005093b4736e1154bd1abe28e0c5046b3acf5427daa7d6df919b67b3444ff97
 method: fresh Z3 real-linear partition proof, exact ledger/certificate comparison, and direct subprocess replay of every cited mathematical verifier without importing the primary aggregate verifier
-command: uv run --with z3-solver python audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
+command: uv run --with z3-solver python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
 outputs:
   audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py: 5c5ebd204d436d544d810f1567a04eb701b89eeb759975022397d77fd36f4973
 limitations: diagonal source tori only; no full embedded-P3 projective closure, non-diagonal or arbitrary GL4 source changes, arbitrary-order reduction, component exhaustiveness, prize graph, or global claim
@@ -123,8 +123,8 @@ therefore remains `UNKNOWN` without leaving an actual diagonal-wall gap.
 
 ```text
 uv run --with z3-solver python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
-uv run --with ruff ruff check audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
-python -m py_compile audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
+uv run --with ruff ruff check claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
+python -m py_compile claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
 git diff --check
 ```
 

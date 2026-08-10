@@ -15,7 +15,7 @@ inputs:
   P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_T_NONZERO_WEIGHT_ENDPOINTS_VERIFICATION.md: 8e4cbe9b66bd1e53f374ef36e9fd257b410014297d9760cdf5472598f505d838
   P5_H22_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_VERIFICATION.md: b83ddbe1e1f928dd18b9914c2c3433e612e315096888023a343af62ddf52c5c7
 method: exact normal-support census, Grassmann Pluecker chart reduction, matching-partner invariants under all source permutations, homogeneous-weight orientation tracking, and explicit nonzero pure counterexamples
-command: uv run --with sympy python derive_p5_h22_embedded_p3_projective_coverage_boundary.py
+command: uv run --with sympy python claims/p5/h22/embedded-p3/derive_p5_h22_embedded_p3_projective_coverage_boundary.py
 outputs:
   derive_p5_h22_embedded_p3_projective_coverage_boundary.py: 78561496ffad9791c72a3ad44dab2f9184a4803cf4e303e16be78e74079c3248
   P5_H22_EMBEDDED_P3_COMPONENT_PROJECTIVE_COVERAGE_BOUNDARY.md: hash reported by replay

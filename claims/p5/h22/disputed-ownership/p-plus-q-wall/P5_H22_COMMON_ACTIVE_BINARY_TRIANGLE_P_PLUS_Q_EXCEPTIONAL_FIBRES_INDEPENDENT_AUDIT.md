@@ -116,7 +116,7 @@ inputs:
   P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_FIBRES_OBSTRUCTION.md: 9a496917de3939751ebf434c6403030be6a7822cffcdfa50afd772df30c574c5
   verify_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_obstruction.py: aa1dc1ff7bd1a0200b3503c3da30f69bacee08e89d6de935b0369cbd24fbbcda
 method: independent subset-DP permanents, 12 exact projections, direct complete kernels, fixed minors, symmetry and residue exhaustion
-command: uv run --with sympy python audit_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_independent.py
+command: uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_independent.py
 outputs: this report and its audit script, with sha256 values emitted at replay
 limitations: conditional on verified P4 residue classification; no other centres, non-diagonal transformations, arbitrary-order gluing, or global result
 ```

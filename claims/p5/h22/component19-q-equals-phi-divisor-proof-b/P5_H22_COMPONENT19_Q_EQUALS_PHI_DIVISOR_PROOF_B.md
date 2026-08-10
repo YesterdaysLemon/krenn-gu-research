@@ -8,7 +8,7 @@ scope: component 19 weighted H22 on q=phi with p*phi!=0
 inputs:
   P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md: ce333e8605b78e17c2e6b7cfe91fd369e89afe0d3aed65c7df35f82fee319634
 method: regular intrinsic basis, subset-algebra permanents, fixed pair minors, direct finite/infinity equations, normalized compatibility identities, and a fixed full-rank extension minor
-command: uv run --with sympy python derive_p5_h22_component19_q_equals_phi_divisor_proof_b.py
+command: uv run --with sympy python claims/p5/h22/component19-q-equals-phi-divisor-proof-b/derive_p5_h22_component19_q_equals_phi_divisor_proof_b.py
 outputs:
   derive_p5_h22_component19_q_equals_phi_divisor_proof_b.py: sha256 emitted by replay JSON
   P5_H22_COMPONENT19_Q_EQUALS_PHI_DIVISOR_PROOF_B.md: sha256 emitted by replay JSON

@@ -9,7 +9,7 @@ scope: original one-neighbour component-14 infinity-endpoint analysis in P5_H22_
 inputs:
   P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_CANDIDATE.md: 19501c093f8a502346d80aa87a52015571a4842a3e1a473be35c0f0c9eb33f3a
 method: independent squarefree subset-DP permanents, bidirectional characteristic-zero elimination, direct complete kernels at every exceptional slope, and exhaustive fixed one-marked minors
-command: uv run --with sympy python audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_candidate_verifier.py
+command: uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_candidate_verifier.py
 outputs:
   audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_candidate_verifier.py: 0319d7144dc00599d4e8179bb0ab986927b7258f516503194c6f440e48ec97ad
   P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_INDEPENDENT_VERIFICATION.md: hash reported by replay

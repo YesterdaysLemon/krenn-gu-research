@@ -8,7 +8,7 @@ scope: ordinary component-19 p=0 boundary on q*phi*(q-phi)!=0
 inputs:
   P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md: ce333e8605b78e17c2e6b7cfe91fd369e89afe0d3aed65c7df35f82fee319634
 method: regular replacement basis, subset-algebra permanents, fixed pair and kernel minors, direct finite/infinity compatibility, complete kernel vectors, and complete one-marked four-minor generators
-command: uv run --with sympy python derive_p5_h22_component19_p0_ordinary_open_proof_b.py
+command: uv run --with sympy python claims/p5/h22/component19-p0-ordinary-open-proof-b/derive_p5_h22_component19_p0_ordinary_open_proof_b.py
 outputs:
   derive_p5_h22_component19_p0_ordinary_open_proof_b.py: sha256 emitted by replay JSON
   P5_H22_COMPONENT19_P0_ORDINARY_OPEN_PROOF_B.md: sha256 emitted by replay JSON

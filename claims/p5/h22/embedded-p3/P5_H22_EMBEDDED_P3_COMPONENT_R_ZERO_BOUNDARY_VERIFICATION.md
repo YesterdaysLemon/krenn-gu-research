@@ -12,7 +12,7 @@ inputs:
   P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md: 3471170831a745c05f2fb2f462719b42ad643da49d4ffe5f3ea56ffd07bfd9a1
   verify_p5_h31_embedded_p3_component_r_zero_boundary.py: c0a9069d8d4cc0522e592a797eacd1fd092f932655b712ceac1c4261c2ee5c10
 method: no-import exact corner elimination, saturated kernels, literal H31-model comparison, and homogeneous-weight transport audit
-command: uv run --with sympy python audit_p5_h22_embedded_p3_component_r_zero_boundary_independent.py
+command: uv run --with sympy python claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_r_zero_boundary_independent.py
 outputs:
   audit_p5_h22_embedded_p3_component_r_zero_boundary_independent.py: hash reported by replay
   P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_VERIFICATION.md: hash reported by replay

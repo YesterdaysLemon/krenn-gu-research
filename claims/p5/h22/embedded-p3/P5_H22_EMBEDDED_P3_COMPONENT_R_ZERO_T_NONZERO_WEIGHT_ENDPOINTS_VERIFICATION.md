@@ -14,7 +14,7 @@ inputs:
   P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md: 3d1914a582f3d38baa6fa182c77774acdb598c1fd884d266afbb23c483c7c8e7
   verify_p5_h31_embedded_p3_component_normalized_boundary.py: 4b7b09f8e3a56a5f5c70e20cc6d2024afc36c2c5afd93ce1d7b4362fa480577f
 method: fresh no-import original-coordinate permanent reconstruction, exact signed-swap and normalization transport, and separate characteristic-zero H31 theorem replays
-command: uv run --with sympy python audit_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_verifier.py
+command: uv run --with sympy python claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_verifier.py
 outputs:
   audit_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_verifier.py: hash reported by replay
   P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_T_NONZERO_WEIGHT_ENDPOINTS_VERIFICATION.md: hash reported by replay

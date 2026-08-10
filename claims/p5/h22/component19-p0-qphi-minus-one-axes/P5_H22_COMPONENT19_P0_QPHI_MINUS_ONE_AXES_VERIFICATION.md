@@ -9,7 +9,7 @@ scope: exact one-marked-rank classification of the genuine X=0 and Z=0 shared-ex
 inputs:
   - P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md sha256=ce333e8605b78e17c2e6b7cfe91fd369e89afe0d3aed65c7df35f82fee319634
 method: independent source reconstruction, exact shared-kernel replay, all eight one-marked maps on each axis, fixed rank-four obstruction minors, and exact maximal-rank witnesses on residual subloci
-command: uv run --with sympy python audit_p5_h22_component19_p0_qphi_minus_one_axes.py
+command: uv run --with sympy python claims/p5/h22/component19-p0-qphi-minus-one-axes/audit_p5_h22_component19_p0_qphi_minus_one_axes.py
 outputs:
   - audit_p5_h22_component19_p0_qphi_minus_one_axes.py sha256=9485634b18e9c50786b1ae1f5cbd7f06d3ae27bec3cf4052158a49210f546992
   - P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_AXES_VERIFICATION.md

@@ -1050,10 +1050,10 @@ def check_stale_paths(files: list[str]) -> None:
 # Context-aware stale-REFERENCE detection for root->package moves that
 # keep their filename (review item: root-to-package coverage).  A bare
 # basename is actionable only where it resolves to the OLD location:
-#   - a fenced replay command ANYWHERE, including inside the
-#     destination package: fenced replay commands are documented as
-#     commands executed from the repository root, so a moved script's
-#     bare basename is stale in a fence even when the Markdown
+#   - a fenced replay command or Markdown YAML-front-matter command
+#     ANYWHERE, including inside the destination package: these replay
+#     commands are documented as commands executed from the repository
+#     root, so a moved script's bare basename is stale even when the Markdown
 #     document sits inside that script's destination package.  This is
 #     checked before the in-package sibling exemption (Stage 4/5
 #     policy: the rewriter repoints these commands regardless of the
@@ -1164,8 +1164,9 @@ def find_stale_bare_refs(text: str, rel: str,
     if rel_dir == ".":
         rel_dir = ""
     hits = []
-    # Fenced replay commands (run from the repository root), scanned
-    # once per file.  The grammar is shared with the rewriter via
+    # Fenced and Markdown YAML-front-matter replay commands (run from the
+    # repository root), scanned once per file.  The grammar is shared with
+    # the rewriter via
     # replay_command.match_replay, so plain, uv-wrapped, and
     # continuation-line forms can never drift between the two
     # machines.
@@ -1173,14 +1174,19 @@ def find_stale_bare_refs(text: str, rel: str,
     if rel.endswith(".md") and moved_by_base:
         lines = text.splitlines()
         in_fence = False
+        in_front_matter = bool(lines and lines[0].strip() == "---")
         i = 0
         while i < len(lines):
             line = lines[i]
+            if in_front_matter and i > 0 and line.strip() == "---":
+                in_front_matter = False
+                i += 1
+                continue
             if line.lstrip().startswith("```"):
                 in_fence = not in_fence
                 i += 1
                 continue
-            if in_fence:
+            if in_fence or in_front_matter:
                 rm = match_replay(lines, i)
                 if rm:
                     base_c, end, _form = rm
@@ -1199,8 +1205,8 @@ def find_stale_bare_refs(text: str, rel: str,
             pkg_dir + "/")
         esc = re.escape(base)
         if rel.endswith(".md"):
-            # Fenced replay commands run from the repository root, so
-            # they are stale even inside the destination package.
+            # Fenced/front-matter replay commands run from the repository
+            # root, so they are stale even inside the destination package.
             # Checked BEFORE the in-package sibling exemption.
             if base in fenced_stale:
                 hits.append(("fenced replay command", base))

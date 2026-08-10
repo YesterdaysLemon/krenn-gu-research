@@ -9,7 +9,7 @@ scope: component 19 ordinary p=0,q*phi=-1 shared weight-at-infinity chart on phi
 inputs:
   P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md: ce333e8605b78e17c2e6b7cfe91fd369e89afe0d3aed65c7df35f82fee319634
 method: fresh regular p0 basis, direct infinity contractions, saturated mixed-coefficient identity, and direct phi=+/-1 endpoint replay
-command: uv run --with sympy python audit_p5_h22_component19_p0_qphim1_infinity_no_import.py
+command: uv run --with sympy python claims/p5/h22/component19-p0-qphim1-infinity-no-import/audit_p5_h22_component19_p0_qphim1_infinity_no_import.py
 outputs: replay stdout gives final path and sha256 pairs
 limitations: ordinary weight-at-infinity chart only; phi=0, phi^2=-1 zero tensor, finite weight, projectivized, valuative, closure, arbitrary-order, and global claims excluded
 ```

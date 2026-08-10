@@ -9,7 +9,7 @@ discovery_claim_label: CANDIDATE
 scope: q=0 and phi=+1 or phi=-1 separately over Q(p), p!=0
 inputs: paths and SHA-256 hashes emitted by replay
 method: separate endpoint reconstruction, projective shared incidence, exact three-kernels, saturated marked-rank strata
-command: uv run --with sympy python derive_p5_h22_component19_q0_phi_endpoints_obstruction_candidate.py
+command: uv run --with sympy python claims/p5/h22/component19-q0-phi-endpoints/derive_p5_h22_component19_q0_phi_endpoints_obstruction_candidate.py
 outputs: this report, its JSON certificate, and the standalone replay script
 limitations: independently verified at both endpoints; finite opposite-plane chart only; no global conclusion
 ```

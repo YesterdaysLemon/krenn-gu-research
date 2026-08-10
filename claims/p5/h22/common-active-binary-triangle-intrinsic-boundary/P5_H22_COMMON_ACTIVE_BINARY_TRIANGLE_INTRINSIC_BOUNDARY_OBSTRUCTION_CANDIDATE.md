@@ -12,7 +12,7 @@ inputs:
   P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md: 49149b81ad2a50982d69f03d6e391808ced2beaddff0115f0c86039dd361c823
   P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md: 52168b35b43c40c483919c8fa1dd37e7c147cae5f331320d8656bf6a1ed309a9
 method: direct replacement-basis reconstruction, exact characteristic-zero permanent expansion, and complete normalized projective elimination of the individual and shared weighted incidences
-command: uv run --with sympy python derive_p5_h22_common_active_binary_triangle_intrinsic_boundary_obstruction_candidate.py
+command: uv run --with sympy python claims/p5/h22/common-active-binary-triangle-intrinsic-boundary/derive_p5_h22_common_active_binary_triangle_intrinsic_boundary_obstruction_candidate.py
 outputs:
   derive_p5_h22_common_active_binary_triangle_intrinsic_boundary_obstruction_candidate.py: hash reported by replay
   p5_h22_common_active_binary_triangle_intrinsic_boundary_certificate.json: hash reported by replay

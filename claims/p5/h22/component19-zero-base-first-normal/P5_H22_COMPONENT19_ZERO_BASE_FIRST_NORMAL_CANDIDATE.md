@@ -10,7 +10,7 @@ inputs:
   P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md: ce333e8605b78e17c2e6b7cfe91fd369e89afe0d3aed65c7df35f82fee319634
   P5_H22_COMPONENT19_P0_FINITE_BOUNDARY_GEOMETRY_RECONNAISSANCE.md: a22b55ec24747983b60a5d479e93c012d8018871123d3ec1c80bf5d03a65c335
 method: direct normal-jet permanents, two regular normal-direction charts, exact pair ranks, structural D01 syzygies, and bounded characteristic-zero elimination
-command: uv run --with sympy python derive_p5_h22_component19_zero_base_first_normal_candidate.py
+command: uv run --with sympy python claims/p5/h22/component19-zero-base-first-normal/derive_p5_h22_component19_zero_base_first_normal_candidate.py
 outputs:
   - P5_H22_COMPONENT19_ZERO_BASE_FIRST_NORMAL_CANDIDATE.md
   - p5_h22_component19_zero_base_first_normal_geometry_certificate.json

@@ -12,7 +12,7 @@ inputs:
   P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md: 77bad167798b52ca6d623ded47d346255023a13f4122f672ffc485dff9c70f50
   P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_VERIFICATION.md: 43e714b95f8a092bee9bf3b9259916a66bf7e8ae5984b63bf259d7e41aa4f440
 method: exact p-chart blow-up rows, parameter-aware shared projections, complete diagonal/weight covers, explicit hidden-divisor and endpoint kernels, and fixed target-local minors
-command: uv run --with sympy python derive_p5_h22_component19_zero_base_valuative_finite_cover_candidate.py
+command: uv run --with sympy python claims/p5/h22/component19-zero-base-valuative-finite-cover/derive_p5_h22_component19_zero_base_valuative_finite_cover_candidate.py
 outputs:
   - P5_H22_COMPONENT19_ZERO_BASE_VALUATIVE_FINITE_COVER_CANDIDATE.md
   - p5_h22_component19_zero_base_valuative_finite_cover_certificate.json

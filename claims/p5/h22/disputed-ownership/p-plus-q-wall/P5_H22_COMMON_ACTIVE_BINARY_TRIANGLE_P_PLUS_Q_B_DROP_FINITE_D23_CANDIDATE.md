@@ -10,7 +10,7 @@ inputs:
   P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_PARTIAL.md: e2a0e57269890e621e797875af3bbf635a5a4268650fab1749cbfceb48f587ae
   verify_p5_h22_common_active_binary_triangle_p_plus_q_boundary_partial.py: 5f3df560d0db922fc729d73253ff5d331cebb9a337175315d6e5cfec67e8d407
 method: exact kernel stratification at r=0, rQ nonzero, and Q=0; targeted rank witnesses and explicit marked right kernels
-command: uv run --with sympy python construct_p5_h22_common_active_binary_triangle_p_plus_q_b_drop_finite_d23_candidate.py
+command: uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/construct_p5_h22_common_active_binary_triangle_p_plus_q_b_drop_finite_d23_candidate.py
 outputs:
   P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_B_DROP_FINITE_D23_CANDIDATE.md: hash reported by replay
 limitations: candidate pending independent replay; direct a-specializations, the paired D01 lift, arbitrary-order gluing, and the global conjecture are not claimed

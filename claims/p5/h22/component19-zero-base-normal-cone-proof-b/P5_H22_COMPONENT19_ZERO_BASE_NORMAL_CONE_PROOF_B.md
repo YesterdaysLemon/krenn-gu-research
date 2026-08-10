@@ -13,7 +13,7 @@ inputs:
   P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md: 40a1932b552411e64ec5a44a488ea99d0d4ac985126dddff2ff177fd1b941708
   P5_H22_COMPONENT19_P0_PHI_ENDPOINTS_NO_IMPORT_VERIFICATION.md: 128da2990f6800146375d78916279d0127eff372e3eab412d9d0f020bd6612b3
 method: exact normal expansion, pair-minor reconstruction, verified open-stratum routing, and fresh phi=+/-1 finite/infinity endpoint algebra
-command: uv run --with sympy python derive_p5_h22_component19_zero_base_normal_cone_proof_b.py
+command: uv run --with sympy python claims/p5/h22/component19-zero-base-normal-cone-proof-b/derive_p5_h22_component19_zero_base_normal_cone_proof_b.py
 outputs: replay stdout gives final path and sha256 pairs
 limitations: exact linear one-parameter arcs in the displayed component chart; no claim that the P1 leading tensor alone determines arbitrary higher-order, ramified, multi-parameter, or ambient-component valuative incidence
 ```

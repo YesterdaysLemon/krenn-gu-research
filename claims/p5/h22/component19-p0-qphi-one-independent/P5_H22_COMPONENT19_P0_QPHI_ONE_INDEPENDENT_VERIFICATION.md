@@ -9,7 +9,7 @@ scope: complete ordinary weighted-H22 obstruction at p=0, q*phi=1, phi^2!=1, inc
 inputs:
   - P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md sha256=ce333e8605b78e17c2e6b7cfe91fd369e89afe0d3aed65c7df35f82fee319634
 method: independent specialized-basis reconstruction; exact shared-orientation elimination over Q(phi) with both D23 diagonals and required D01 pure diagonal inverted; complete kernel and fixed-minor obstruction; separate phi=+/-1 audit
-command: uv run --with sympy python audit_p5_h22_component19_p0_qphi_equals_one.py
+command: uv run --with sympy python claims/p5/h22/component19-p0-qphi-one-independent/audit_p5_h22_component19_p0_qphi_equals_one.py
 outputs:
   - audit_p5_h22_component19_p0_qphi_equals_one.py sha256=60c9be43261e5172a95b8dfb5cf36d07e21ee8c4a0582401a8d503317a66d640
   - P5_H22_COMPONENT19_P0_QPHI_ONE_INDEPENDENT_VERIFICATION.md

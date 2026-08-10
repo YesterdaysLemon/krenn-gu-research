@@ -16,7 +16,7 @@ inputs:
   verify_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py: e96c3470204cc97998b00dcd74b6d170f1fe4b3e620c4596734c0b31950829f5
   P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md: da64a3ee55d5dfa361a70cb771196f76f93d13b3d61df358442a22e1e72de1a8
 method: fresh subset-DP permanents, direct finite/infinity homogeneous contractions, exact characteristic-zero Singular projection ideals, complete symbolic shared kernel, and a fixed transverse rank witness
-command: uv run --with sympy python audit_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py
+command: uv run --with sympy python claims/p5/h22/common-kernel-vertical-triangle-component-generic/audit_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py
 outputs:
   audit_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py: da0b1a6e46902950e4ba5b2a8040af569cf351ecde0c7a08cdca8f7055c66860
 limitations: generic function-field theorem only; no special-parameter or projective component-boundary fibres, P4 component exhaustiveness, arbitrary-order local-to-global reduction, prize graph, or global Krenn-Gu conclusion
@@ -173,8 +173,8 @@ prize graph, or resolve the global Krenn–Gu conjecture.
 
 ```text
 uv run --with sympy python claims/p5/h22/common-kernel-vertical-triangle-component-generic/audit_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py
-uv run --with ruff ruff check audit_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py
-python -m py_compile audit_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py
+uv run --with ruff ruff check claims/p5/h22/common-kernel-vertical-triangle-component-generic/audit_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py
+python -m py_compile claims/p5/h22/common-kernel-vertical-triangle-component-generic/audit_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py
 python -m json.tool p5_h22_common_kernel_vertical_triangle_component_generic_certificate.json
 git diff --check
 ```

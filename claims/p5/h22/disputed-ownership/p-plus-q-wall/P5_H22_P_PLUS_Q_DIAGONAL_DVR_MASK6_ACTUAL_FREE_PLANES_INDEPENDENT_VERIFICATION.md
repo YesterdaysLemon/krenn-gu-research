@@ -15,7 +15,7 @@ inputs:
   P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md: dfc2ca99ac668605b54a08b2a4dfb48f74abba97ae2ecc405121d21b8e7f3f4a
   P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md: 7d817f91a5a24512e092dca125258ad5a3753bbb97b6199ad2b6c202c9d91965
 method: no-import reconstruction from raw wall excess and leading formulas, explicit witnesses for all twelve flags, independent permanent expansion, and homogeneous all-alpha cofactor identities
-command: uv run --with sympy python audit_p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_independent.py
+command: uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_independent.py
 outputs:
   audit_p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_independent.py: hash reported by replay
   P5_H22_P_PLUS_Q_DIAGONAL_DVR_MASK6_ACTUAL_FREE_PLANES_INDEPENDENT_VERIFICATION.md: hash reported by replay

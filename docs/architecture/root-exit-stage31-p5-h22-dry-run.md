@@ -155,11 +155,16 @@ The repair then:
   retained claim-owned Singular adapter edge;
 - repaired 90 static cross-package path expressions plus the Component19 and
   weighted-wall dynamic dependency tables;
-- made Python and durable-JSON replay commands repository-relative, while
-  keeping basename-only output keys and historical replay hashes unchanged;
+- made Python, durable-JSON, fenced QA, and YAML evidence replay commands
+  repository-relative, while keeping basename-only output keys and historical
+  replay hashes unchanged;
+- extended the shared replay grammar and stale-path gate to cover fenced YAML
+  `command:` fields and Markdown YAML front matter, then repaired exactly 55
+  metadata commands and ten QA commands with regression coverage;
 - updated the 16 current weighted-wall dependency paths/hashes and only the
   eleven current-index theorem-ledger hash pins made stale by path/link
-  repair; and
+  repair, then refreshed six affected live dependency pins and one additional
+  current-index hash after the command repair; and
 - reached a fixed point in the Markdown/replay rewriter and refreshed the P5
   and H22 navigation without relabelling scientific status.
 
@@ -167,7 +172,7 @@ The index-complete candidate measures 536 root files plus nine justified
 directories: 545 total entries, sixteen justified entries, 529 grandfathered
 debt files, and zero new debt. Hygiene passes with 1,701 Python files, 850
 resolving Markdown files, all 86 ledger hashes, and 1,828 moved manifest
-entries. The 158 migration tests, 14 focused lattice tests, and five bounded
+entries. The 163 migration tests, 14 focused lattice tests, and five bounded
 weighted-H22 parity/consumer-graph tests pass. No scientific solver or search
 was rerun.
 

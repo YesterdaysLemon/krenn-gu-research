@@ -123,7 +123,7 @@ inputs:
   P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_GENERIC_D01_INFINITY_OBSTRUCTION.md: 3d279feb91958279b0d9f5e499f4599e64b9d4d40314c85a02521af4cee04430
   verify_p5_h22_common_active_binary_triangle_p_plus_q_generic_d01_infinity_obstruction.py: f942fb92608dcf8f594ffba2ab91008ea09e7d05e6782764501cca6dfc965a31
 method: independent subset-DP permanent and full symbolic matrix reconstruction
-command: uv run --with sympy python audit_p5_h22_common_active_binary_triangle_p_plus_q_generic_d01_infinity_b_drop.py
+command: uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_generic_d01_infinity_b_drop.py
 outputs: this report and the additive audit script; sha256 values emitted at replay
 limitations: generic B_drop D01-infinity only; no B_full, finite-D23, exceptional, non-diagonal, arbitrary-order, or global claim
 ```

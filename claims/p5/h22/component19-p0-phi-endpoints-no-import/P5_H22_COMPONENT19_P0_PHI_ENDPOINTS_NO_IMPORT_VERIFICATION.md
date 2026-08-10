@@ -9,7 +9,7 @@ scope: component 19 ordinary p=0,phi=e for e=+1,-1 over Q(q), with q*(q^2-1)!=0
 inputs:
   P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md: ce333e8605b78e17c2e6b7cfe91fd369e89afe0d3aed65c7df35f82fee319634
 method: fresh regular-basis permanents, direct finite/infinity incidence, complete shared kernel, exhaustive individual four-minors, and fixed full-target stacked minors
-command: uv run --with sympy python audit_p5_h22_component19_p0_phi_endpoints_no_import.py
+command: uv run --with sympy python claims/p5/h22/component19-p0-phi-endpoints-no-import/audit_p5_h22_component19_p0_phi_endpoints_no_import.py
 outputs: replay stdout gives final path and sha256 pairs
 limitations: ordinary phi endpoints on q*(q^2-1)!=0 only; q=0,+/-1, projectivized, valuative, closure, arbitrary-order, and global claims excluded
 ```

@@ -9,7 +9,7 @@ discovery_claim_label: CANDIDATE
 scope: component 19 finite divisor q=0 over Q(p,phi), with p*phi*(phi^2-1)!=0
 inputs: paths and SHA-256 hashes emitted by the replay
 method: direct specialized planes, exact permanents/minors, direct finite/infinity elimination, shared kernel and marked minor
-command: uv run --with sympy python derive_p5_h22_component19_q0_special_divisor_obstruction_candidate.py
+command: uv run --with sympy python claims/p5/h22/component19-q0-special-divisor/derive_p5_h22_component19_q0_special_divisor_obstruction_candidate.py
 outputs: this report, its JSON certificate, and the standalone replay script
 limitations: independently verified on the stated open; excluded parameter/projective boundaries remain open; no global conclusion
 ```

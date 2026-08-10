@@ -9,7 +9,7 @@ scope: ordinary finite component-19 p=0 weighted-H22 obstruction on q*phi*(q-phi
 inputs:
   - P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md sha256=ce333e8605b78e17c2e6b7cfe91fd369e89afe0d3aed65c7df35f82fee319634
 method: independent regular-basis reconstruction; exact pair ranks; bidirectional shared-incidence elimination over Q(q,phi); complete 28x8 kernel frame; exact one-marked minors; function-field saturation and explicit linear-factor case certificate
-command: uv run --with sympy python audit_p5_h22_component19_p0_ordinary_obstruction_open.py
+command: uv run --with sympy python claims/p5/h22/component19-p0-ordinary-obstruction-open/audit_p5_h22_component19_p0_ordinary_obstruction_open.py
 outputs:
   - audit_p5_h22_component19_p0_ordinary_obstruction_open.py sha256=a225c1f5e2c9a333448c95ffa999bebd4e685b9407fcfe488d798efdd8a73e75
   - P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md

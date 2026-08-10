@@ -7,12 +7,13 @@ machines missed the ``uv run`` wrapper and the continuation-line form,
 and four real replay commands had to be repaired by hand.  This module
 is the single source of truth for that grammar.
 
-Recognized forms (inside fenced code blocks only; callers enforce the
-fence state):
+Recognized forms (inside fenced code blocks or Markdown YAML front matter;
+callers enforce the container state):
 
     python verify_foo.py [args]                   single line
     python3 verify_foo.py / wsl ... python3 ...   single line
     uv run --with sympy python verify_foo.py      uv environment wrap
+    command: uv run ... python verify_foo.py      YAML evidence field
     python \\                                      continuation line
       verify_foo.py [args]
     uv run --with sympy \\                         uv continuation line
@@ -31,16 +32,23 @@ import re
 _UV_RUN = r"uv\s+run\s+(?:--\S+(?:\s+(?!-)\S+)?\s+)*"
 # The python launcher itself, optionally behind a wsl wrapper.
 _PYTHON = r"(?:wsl[^\n]*python3?|python3?)"
+# Evidence reports often store the exact replay in a fenced YAML header.
+# Treat its ``command:`` value as executable replay metadata, while keeping
+# arbitrary YAML fields and prose outside the grammar.
+_COMMAND_FIELD = r"(?:command\s*:\s*)?"
 # A complete launcher prefix ending in whitespace.
-LAUNCHER = re.compile(r"^\s*(?:(?:" + _UV_RUN + r")?" + _PYTHON + r")\s+")
+LAUNCHER = re.compile(
+    r"^\s*" + _COMMAND_FIELD
+    + r"(?:(?:" + _UV_RUN + r")?" + _PYTHON + r")\s+")
 # A launcher whose command continues on the next line (`python \`).
 LAUNCHER_CONTINUATION = re.compile(
-    r"^\s*(?:(?:" + _UV_RUN + r")?" + _PYTHON + r")\s*\\$")
+    r"^\s*" + _COMMAND_FIELD
+    + r"(?:(?:" + _UV_RUN + r")?" + _PYTHON + r")\s*\\$")
 # A uv environment wrapper whose command continues on the next line
 # (`uv run --with sympy \` with the `python ...` part on the
 # following line).
 LAUNCHER_UV_CONTINUATION = re.compile(
-    r"^\s*(?:" + _UV_RUN + r")\\$")
+    r"^\s*" + _COMMAND_FIELD + r"(?:" + _UV_RUN + r")\\$")
 # The script token: bare basename, optional trailing arguments.
 SCRIPT = re.compile(r"^\s*([A-Za-z0-9_]+\.py)(\s.*)?$")
 
@@ -52,8 +60,8 @@ def match_replay(lines, index):
     index of the last consumed line, and ``"line"`` or
     ``"continuation"`` — or ``None`` when ``lines[index]`` does not
     open a replay command.  Callers must apply this only inside fenced
-    code blocks; a launcher without a script token on the same or next
-    line is not a command.
+    code blocks or Markdown YAML front matter; a launcher without a script
+    token on the same or next line is not a command.
     """
     line = lines[index]
     m = LAUNCHER.match(line)

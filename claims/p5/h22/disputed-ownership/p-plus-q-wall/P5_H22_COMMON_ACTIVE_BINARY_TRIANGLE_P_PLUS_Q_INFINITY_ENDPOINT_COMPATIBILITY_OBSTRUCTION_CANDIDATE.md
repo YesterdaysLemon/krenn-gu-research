@@ -11,7 +11,7 @@ scope: off-wall gamma=0 finite-D01 plus finite-D23,r=0 surviving pair on both ma
 inputs:
   P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_CANDIDATE.md: 7d81633da73dfac074d77408ebc118c452a8a7a067d3b2c95fa2f4fe8d14e456
 method: independent complete kernels, shared-extension intersection, one fixed transverse minor, and one fixed stacked minor
-command: uv run --with sympy python derive_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_compatibility_obstruction.py
+command: uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/derive_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_compatibility_obstruction.py
 outputs:
   derive_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_compatibility_obstruction.py: hash reported by replay
   P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_COMPATIBILITY_OBSTRUCTION_CANDIDATE.md: hash reported by replay

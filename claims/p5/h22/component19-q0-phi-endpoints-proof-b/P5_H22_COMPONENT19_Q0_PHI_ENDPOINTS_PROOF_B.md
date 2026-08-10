@@ -10,7 +10,7 @@ inputs:
   P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_PROOF_B.md: 86b70a49969bf7e71bf0e50b90ae2927463f6c6fde3eb7e498e3b51e9e4a6c56
   derive_p5_h22_component19_q0_special_divisor_proof_b.py: 782ec5fed5fb93fc6cc6c222206ce3e009647c8a38b72c2cb321bcab00a40fc8
 method: fresh endpoint squarefree permanents, direct finite/infinity contractions, structural orientation split, complete kernel vectors plus fixed rank minors, and fixed one-marked minors
-command: uv run --with sympy python derive_p5_h22_component19_q0_phi_endpoints_proof_b.py
+command: uv run --with sympy python claims/p5/h22/component19-q0-phi-endpoints-proof-b/derive_p5_h22_component19_q0_phi_endpoints_proof_b.py
 outputs:
   derive_p5_h22_component19_q0_phi_endpoints_proof_b.py: sha256 emitted by replay JSON
   P5_H22_COMPONENT19_Q0_PHI_ENDPOINTS_PROOF_B.md: sha256 emitted by replay JSON

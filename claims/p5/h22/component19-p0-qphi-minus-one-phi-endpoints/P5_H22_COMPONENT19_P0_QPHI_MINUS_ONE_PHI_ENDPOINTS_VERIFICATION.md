@@ -9,7 +9,7 @@ scope: complete finite ordinary component-19 p=0 intersections q*phi=-1 and phi^
 inputs:
   P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md: ce333e8605b78e17c2e6b7cfe91fd369e89afe0d3aed65c7df35f82fee319634
 method: fresh regular-basis reconstruction, three-diagonal-saturated incidence elimination, complete shared kernel, exhaustive local maximal minors, fixed exact rank witnesses, and full 8x5 two-slice compatibility
-command: uv run --with sympy python audit_p5_h22_component19_p0_qphi_minus_one_phi_endpoints.py
+command: uv run --with sympy python claims/p5/h22/component19-p0-qphi-minus-one-phi-endpoints/audit_p5_h22_component19_p0_qphi_minus_one_phi_endpoints.py
 outputs:
   audit_p5_h22_component19_p0_qphi_minus_one_phi_endpoints.py: 89dbecbcf37a5a9afdf5ca50ec26e67ae2b2cf5fdfefc2ef23fdd575dd257327
   P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_PHI_ENDPOINTS_VERIFICATION.md: hash emitted by replay

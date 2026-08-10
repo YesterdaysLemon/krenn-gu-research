@@ -190,7 +190,7 @@ inputs:
   verify_p5_h22_common_active_binary_triangle_p_plus_q_boundary_partial.py: 5f3df560d0db922fc729d73253ff5d331cebb9a337175315d6e5cfec67e8d407
   audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_partial.py: 059b932257ee63f26aa6abbbb2c80014646aa2038c4f3c2997e7581d9bb29499
 method: exact characteristic-zero complete kernels, one fixed marked minor, and r-saturated finite-D23 kernel ideal
-command: uv run --with sympy python derive_p5_h22_common_active_binary_triangle_p_plus_q_b_full_infinity_finite_pair_obstruction.py
+command: uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/derive_p5_h22_common_active_binary_triangle_p_plus_q_b_full_infinity_finite_pair_obstruction.py
 outputs: candidate note and derivation script, with sha256 values emitted at replay
 limitations: generic B_full only; pending independent verification; no a=0,-1, B_drop, non-diagonal, arbitrary-order, or global claim
 ```

@@ -10,7 +10,7 @@ inputs:
   P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md: ebb4bc46e06b99d4d21e0dff96a35fb071d48dfeceeb926cb4b2643fdeeddbc3
   P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md: 77bad167798b52ca6d623ded47d346255023a13f4122f672ffc485dff9c70f50
 method: no-import polynomial-parameter elimination localized on exact opens, complete symbolic kernels, fixed target-local minors, and a generic-point partition over the DVR fraction field
-command: uv run --with sympy python audit_p5_h22_component19_zero_base_valuative_reduction.py
+command: uv run --with sympy python claims/p5/h22/component19-zero-base-valuative-reduction/audit_p5_h22_component19_zero_base_valuative_reduction.py
 outputs: replay stdout gives final path and sha256 pairs
 limitations: displayed component chart and DVR arcs only; no ambient-component, multi-parameter, component-exhaustiveness, or global Krenn-Gu claim
 ```
@@ -206,7 +206,7 @@ multi-parameter families.
 
 ```powershell
 uv run --with sympy python claims/p5/h22/component19-zero-base-valuative-reduction/audit_p5_h22_component19_zero_base_valuative_reduction.py
-uv run --with ruff ruff check audit_p5_h22_component19_zero_base_valuative_reduction.py
-python -m py_compile audit_p5_h22_component19_zero_base_valuative_reduction.py
+uv run --with ruff ruff check claims/p5/h22/component19-zero-base-valuative-reduction/audit_p5_h22_component19_zero_base_valuative_reduction.py
+python -m py_compile claims/p5/h22/component19-zero-base-valuative-reduction/audit_p5_h22_component19_zero_base_valuative_reduction.py
 git diff --check
 ```

@@ -16,7 +16,7 @@ inputs:
   verify_p5_h31_common_active_binary_triangle_component_generic_obstruction.py: d31d0a6255501839ac0d3024882bdd6e328b464fe90cd0dc799dd970dff5a1b5
   P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md: 52168b35b43c40c483919c8fa1dd37e7c147cae5f331320d8656bf6a1ed309a9
 method: fresh subset-DP permanents and five bounded characteristic-zero Singular projections for one shared marking, homogeneous weight, and extension vector
-command: uv run --with sympy python audit_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
+command: uv run --with sympy python claims/p5/h22/common-active-binary-triangle-component-generic/audit_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
 outputs:
   audit_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py: f0ea62d6a5e35729ba23b163fefd8aecfb6dd61dc99b2991d7d1e10aeca330bb
 limitations: generic function field only; separately verified p+q=0 diagonal-DVR wall not used; no other special/projective fibres, P4 component exhaustiveness, arbitrary-order local-to-global reduction, prize graph, or global Krenn-Gu conclusion
@@ -172,8 +172,8 @@ Krenn–Gu conjecture remain open.
 
 ```text
 uv run --with sympy python claims/p5/h22/common-active-binary-triangle-component-generic/audit_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
-uv run --with ruff ruff check audit_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
-python -m py_compile audit_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
+uv run --with ruff ruff check claims/p5/h22/common-active-binary-triangle-component-generic/audit_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
+python -m py_compile claims/p5/h22/common-active-binary-triangle-component-generic/audit_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
 python -m json.tool p5_h22_common_active_binary_triangle_component_generic_certificate.json
 git diff --check
 ```

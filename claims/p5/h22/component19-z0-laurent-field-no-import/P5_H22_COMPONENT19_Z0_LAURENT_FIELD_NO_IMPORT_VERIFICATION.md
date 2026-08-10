@@ -11,7 +11,7 @@ inputs:
   audit_p5_h22_component19_p0_finite_ordinary_aggregate.py: 65cafa89b709f0466d7fd51fc2555f60cec9246b6f68034ffa4ed94dc41180f7
   P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md: ebb4bc46e06b99d4d21e0dff96a35fb071d48dfeceeb926cb4b2643fdeeddbc3
 method: Laurent-field partition, live p0 replay, 40 parameter-aware saturated projections, reverse-branch compatibility minors, and exact 1/s escape algebra
-command: uv run --with sympy python audit_p5_h22_component19_z0_laurent_field_no_import.py
+command: uv run --with sympy python claims/p5/h22/component19-z0-laurent-field-no-import/audit_p5_h22_component19_z0_laurent_field_no_import.py
 outputs:
   audit_p5_h22_component19_z0_laurent_field_no_import.py: hash emitted by replay
   P5_H22_COMPONENT19_Z0_LAURENT_FIELD_NO_IMPORT_VERIFICATION.md: hash emitted by replay

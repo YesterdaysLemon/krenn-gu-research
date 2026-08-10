@@ -9,7 +9,7 @@ scope: component-19 Z0={p=0,q=phi}, phi!=0; smooth normal cone, projectivized fi
 inputs:
   P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md: ce333e8605b78e17c2e6b7cfe91fd369e89afe0d3aed65c7df35f82fee319634
 method: fresh squarefree permanents, Jacobian and regular-sequence normal geometry, two normalized ray charts, and 16 exact characteristic-zero saturated eliminations
-command: uv run --with sympy python audit_p5_h22_component19_q_eq_phi_first_normal_no_import.py
+command: uv run --with sympy python claims/p5/h22/component19-q-eq-phi-first-normal-no-import/audit_p5_h22_component19_q_eq_phi_first_normal_no_import.py
 outputs:
   audit_p5_h22_component19_q_eq_phi_first_normal_no_import.py: hash emitted by replay
   P5_H22_COMPONENT19_Q_EQ_PHI_FIRST_NORMAL_NO_IMPORT_VERIFICATION.md: hash emitted by replay

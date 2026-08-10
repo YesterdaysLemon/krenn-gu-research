@@ -9,7 +9,7 @@ discovery_claim_label: CANDIDATE
 scope: finite divisor q=phi on its exact nonzero all-pair-open locus p*phi!=0
 inputs: paths and SHA-256 hashes emitted by replay
 method: regular intrinsic basis, exact permanents/pair minors, finite/infinity shared incidence, parameter-aware elimination
-command: uv run --with sympy python derive_p5_h22_component19_q_eq_phi_special_divisor_obstruction_candidate.py
+command: uv run --with sympy python claims/p5/h22/component19-q-eq-phi-special-divisor/derive_p5_h22_component19_q_eq_phi_special_divisor_obstruction_candidate.py
 outputs: this report, its JSON certificate, and the standalone replay
 limitations: independently verified on the stated open; finite opposite-plane chart only; no global conclusion
 ```

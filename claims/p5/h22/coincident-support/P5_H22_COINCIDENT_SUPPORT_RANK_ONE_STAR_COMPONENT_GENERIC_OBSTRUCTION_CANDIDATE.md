@@ -12,7 +12,7 @@ inputs:
   P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md: 8516673bfb7bffd5aa0cba6f92cc54aeb534845d0c43bcd07e1bdfee77e02220
   P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md: da64a3ee55d5dfa361a70cb771196f76f93d13b3d61df358442a22e1e72de1a8
 method: exact characteristic-zero Hall support, normalized mixed-incidence projection with beta-diagonal reduction, and an infinity row-module certificate
-command: uv run --with sympy python derive_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
+command: uv run --with sympy python claims/p5/h22/coincident-support/derive_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
 outputs:
   derive_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py: hash reported by replay
   p5_h22_coincident_support_rank_one_star_component_generic_certificate.json: hash reported by replay

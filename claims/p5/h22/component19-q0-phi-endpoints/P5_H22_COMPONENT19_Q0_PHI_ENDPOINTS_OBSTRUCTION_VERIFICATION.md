@@ -9,7 +9,7 @@ scope: component 19 q=0 weighted-H22 endpoint obstruction at phi=+1 and phi=-1 o
 inputs:
   - P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md sha256=ce333e8605b78e17c2e6b7cfe91fd369e89afe0d3aed65c7df35f82fee319634
 method: separate exact reconstruction for epsilon=+1,-1; bidirectional function-field elimination; complete 28x8 shared-kernel calculation; exact diagonal forms; fixed one-marked rank minor; direct-D01 constructible-slope audit
-command: uv run --with sympy python audit_p5_h22_component19_q0_phi_endpoints_obstruction_candidate.py
+command: uv run --with sympy python claims/p5/h22/component19-q0-phi-endpoints/audit_p5_h22_component19_q0_phi_endpoints_obstruction_candidate.py
 outputs:
   - audit_p5_h22_component19_q0_phi_endpoints_obstruction_candidate.py sha256=8043c26ef7fb214033f8982c215fa21eb8fe0d9412ae10a46bb00e06382cb4a7
   - P5_H22_COMPONENT19_Q0_PHI_ENDPOINTS_OBSTRUCTION_VERIFICATION.md

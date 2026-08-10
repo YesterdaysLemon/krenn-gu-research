@@ -13,7 +13,7 @@ inputs:
   P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md: baf5531740cfd77207f31cf8e1de2b5b838701cbcae5ec778667e6e7f712d15e
   P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md: 7ae8c19e5a43ac7af2cac35892af59130555ab509495d5280745aad114eed056
 method: no-primary-import permanent reconstruction, exact support and matching transport, and an invariant free-plane counterexample
-command: uv run --with sympy python audit_p5_h22_embedded_p3_component_projective_closure_independent.py
+command: uv run --with sympy python claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_projective_closure_independent.py
 outputs:
   audit_p5_h22_embedded_p3_component_projective_closure_independent.py: hash reported by replay
   P5_H22_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_VERIFICATION.md: hash reported by replay

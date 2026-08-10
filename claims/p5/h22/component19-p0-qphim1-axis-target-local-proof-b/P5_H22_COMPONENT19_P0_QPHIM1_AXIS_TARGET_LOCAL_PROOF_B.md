@@ -9,7 +9,7 @@ scope: ordinary p=0,q*phi=-1 axis extensions X=Y=0,Z*t!=0 and Z=Y=0,X*t!=0
 inputs:
   P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md: ce333e8605b78e17c2e6b7cfe91fd369e89afe0d3aed65c7df35f82fee319634
 method: fresh regular p0 reconstruction, exact shared binary contractions, full-target one-marked maps, and fixed stacked four-minors
-command: uv run --with sympy python derive_p5_h22_component19_p0_qphim1_axis_target_local_proof_b.py
+command: uv run --with sympy python claims/p5/h22/component19-p0-qphim1-axis-target-local-proof-b/derive_p5_h22_component19_p0_qphim1_axis_target_local_proof_b.py
 outputs: replay stdout gives final path and sha256 pairs
 limitations: ordinary axis fibres only; phi^2=-1 zero tensor, projectivized, valuative, closure, arbitrary-order, and global claims excluded
 ```

@@ -11,7 +11,7 @@ inputs:
   P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md: ce333e8605b78e17c2e6b7cfe91fd369e89afe0d3aed65c7df35f82fee319634
   derive_p5_h22_component19_p0_ordinary_open_proof_b.py: 098e7f3ed19999f8e2445125ae4d5413eca2049c150845b734f8ac508c75f311
 method: regular p0 basis, exact finite/infinity contractions, complete linear kernels, and fixed one-marked minors
-command: uv run --with sympy python derive_p5_h22_component19_p0_qphi1_proof_b.py
+command: uv run --with sympy python claims/p5/h22/component19-p0-qphi1-proof-b/derive_p5_h22_component19_p0_qphi1_proof_b.py
 outputs: replay stdout gives final path and sha256 pairs
 limitations: ordinary fibre only; phi=+/-1 zero endpoints and projectivized directions are excluded; no valuative, closure, arbitrary-order, or global claim
 ```

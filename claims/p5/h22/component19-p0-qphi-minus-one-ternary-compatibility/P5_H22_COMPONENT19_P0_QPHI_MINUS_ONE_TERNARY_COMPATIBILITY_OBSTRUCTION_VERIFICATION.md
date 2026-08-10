@@ -11,7 +11,7 @@ inputs:
   audit_p5_h22_component19_p0_qphi_minus_one_axes.py: 9485634b18e9c50786b1ae1f5cbd7f06d3ae27bec3cf4052158a49210f546992
   P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_AXES_VERIFICATION.md: e8d550934d401a8231acae0d7352ef9cfa9319402c920bb2835f7b518b833b16
 method: fresh regular-basis reconstruction, subset-DP permanents, full complementary-cofactor maps, projection identities, and fixed two-slice Fitting minors
-command: uv run --with sympy python audit_p5_h22_component19_p0_qphi_minus_one_ternary_compatibility.py
+command: uv run --with sympy python claims/p5/h22/component19-p0-qphi-minus-one-ternary-compatibility/audit_p5_h22_component19_p0_qphi_minus_one_ternary_compatibility.py
 outputs:
   audit_p5_h22_component19_p0_qphi_minus_one_ternary_compatibility.py: 5cb01bbf6f4ae402e2348082e46a375b39747d9944171292cff461afe7fdc602
   P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_TERNARY_COMPATIBILITY_OBSTRUCTION_VERIFICATION.md: hash emitted by replay

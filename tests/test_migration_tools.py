@@ -272,6 +272,28 @@ class RewriteMarkdownTests(unittest.TestCase):
             "claims/p5/h22/pkg/verify_a.py --limit 2",
             read_md(self.tmp, "README.md"))
 
+    def test_replay_yaml_command_field(self):
+        write_md(self.tmp, "README.md",
+                 "```yaml\ncommand: uv run --with sympy python "
+                 "verify_a.py --limit 2\n```\n")
+        stats = rewrite_markdown(self.m, ["README.md"], self.tmp)
+        self.assertEqual(stats["replay_rewritten"], 1)
+        self.assertIn(
+            "command: uv run --with sympy python "
+            "claims/p5/h22/pkg/verify_a.py --limit 2",
+            read_md(self.tmp, "README.md"))
+
+    def test_replay_yaml_front_matter_command_field(self):
+        write_md(self.tmp, "README.md",
+                 "---\ncommand: uv run --with sympy python "
+                 "verify_a.py --limit 2\n---\n\n# Report\n")
+        stats = rewrite_markdown(self.m, ["README.md"], self.tmp)
+        self.assertEqual(stats["replay_rewritten"], 1)
+        self.assertIn(
+            "command: uv run --with sympy python "
+            "claims/p5/h22/pkg/verify_a.py --limit 2",
+            read_md(self.tmp, "README.md"))
+
     def test_replay_continuation_line_form(self):
         # Stage 4 mixed-orientation / Stage 3 disjoint-mixed-star form:
         # `python \` + indented script name.
@@ -376,6 +398,12 @@ class ReplayCommandGrammarTests(unittest.TestCase):
     def test_uv_run_wrapper(self):
         self.assertEqual(
             self._match("uv run --with sympy python verify_a.py"),
+            [("verify_a.py", 0, "line")])
+
+    def test_yaml_command_field(self):
+        self.assertEqual(
+            self._match(
+                "command: uv run --with sympy python verify_a.py"),
             [("verify_a.py", 0, "line")])
 
     def test_continuation(self):
@@ -853,6 +881,20 @@ class StaleReferenceTests(unittest.TestCase):
         text = "run: python " + self.BASE + "\n"
         hits = find_stale_bare_refs(text, ".github/x.yml", self.MOVED)
         self.assertTrue(any(ctx == "command reference"
+                            for ctx, b in hits), hits)
+
+    def test_markdown_yaml_command_reference_fails(self):
+        text = ("```yaml\ncommand: uv run --with sympy python "
+                + self.BASE + "\n```\n")
+        hits = find_stale_bare_refs(text, "README.md", self.MOVED)
+        self.assertTrue(any(ctx == "fenced replay command"
+                            for ctx, b in hits), hits)
+
+    def test_markdown_yaml_front_matter_command_reference_fails(self):
+        text = ("---\ncommand: uv run --with sympy python "
+                + self.BASE + "\n---\n")
+        hits = find_stale_bare_refs(text, "README.md", self.MOVED)
+        self.assertTrue(any(ctx == "fenced replay command"
                             for ctx, b in hits), hits)
 
 

@@ -2114,7 +2114,7 @@
     {
       "name": "Non-proof-active boundary-candidate collection checkpoint; representative frozen certificate refuted",
       "document": "claims/p5/h22/component19-p0-ordinary-boundary/P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md",
-      "document_sha256_16": "83d229b1d23233a2",
+      "document_sha256_16": "15e7fd63116a421f",
       "status": "exploratory",
       "assumptions_and_excluded_divisors": [
         "collection-level navigation only; no status inheritance to the 23 underlying documents",

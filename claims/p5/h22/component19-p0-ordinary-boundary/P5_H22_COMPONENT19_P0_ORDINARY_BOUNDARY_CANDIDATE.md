@@ -8,7 +8,7 @@ claim_label: REFUTED
 scope: component 19 finite ordinary p=0 boundary on q*phi*(q-phi)!=0
 inputs: paths and SHA-256 hashes emitted by the bounded replay
 method: regular intrinsic basis, exact characteristic-zero permanents and pair minors, finite/infinity elimination, complete shared kernel, projected and stacked one-marked minors
-command: uv run --with sympy python derive_p5_h22_component19_p0_ordinary_boundary_candidate.py
+command: uv run --with sympy python claims/p5/h22/component19-p0-ordinary-boundary/derive_p5_h22_component19_p0_ordinary_boundary_candidate.py
 outputs: this report, p5_h22_component19_p0_ordinary_boundary_certificate.json, and the bounded replay
 limitations: frozen construction replay fails exact assertions; no H22 conclusion from this artifact; zero/projectivized/valuative boundaries deferred
 ```

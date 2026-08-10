@@ -12,7 +12,7 @@ inputs:
   P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_VERIFICATION.md: f414f67a9605b231b6a9737ce9a23ffa9a00eb0336630161d136ea1e25c4f4ae
   NEXT_INSTANCE_HANDOFF_2026-07-31.md: 1464b39b99ada4035600b711c903876b6ec3ed7b23800f4b2ea3e56dbe868487
 method: direct Q(phi) reconstruction, exact permanents and pair minors, complete finite/infinity elimination, shared-kernel basis, and two fixed one-marked minors
-command: uv run --with sympy python derive_p5_h22_component19_p0_qphi_one_ordinary_obstruction_candidate.py
+command: uv run --with sympy python claims/p5/h22/component19-p0-qphi-one-ordinary/derive_p5_h22_component19_p0_qphi_one_ordinary_obstruction_candidate.py
 outputs: this report, its JSON certificate, and the bounded standalone replay
 limitations: construction result only; phi=+1,-1 zero endpoints and projective/valuative boundaries excluded
 ```

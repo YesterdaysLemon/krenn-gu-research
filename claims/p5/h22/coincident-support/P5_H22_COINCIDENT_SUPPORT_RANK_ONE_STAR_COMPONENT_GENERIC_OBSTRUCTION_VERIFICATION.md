@@ -16,7 +16,7 @@ inputs:
   verify_p5_h31_coincident_support_rank_one_star_component_generic_obstruction.py: ca17f1b69d9083d9c567a228abd08d5395acebb1637378bae430b08302841378
   P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md: da64a3ee55d5dfa361a70cb771196f76f93d13b3d61df358442a22e1e72de1a8
 method: fresh subset-DP permanents, homogeneous Hall certificate, exact characteristic-zero finite elimination and beta reduction, direct infinity row-module reduction, and an exact one-diagonal witness
-command: uv run --with sympy python audit_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
+command: uv run --with sympy python claims/p5/h22/coincident-support/audit_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
 outputs:
   audit_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py: 259dbff442154a84d0ea5cd7438a64dd4de22fa44100e5537cbbf1ebb8e4d68d
 limitations: generic function-field theorem only; no special-parameter or projective component-boundary fibres, P4 component exhaustiveness, arbitrary-order local-to-global reduction, prize graph, or global Krenn-Gu conclusion
@@ -163,8 +163,8 @@ reduction, construct a prize graph, or resolve the global Krenn–Gu conjecture.
 
 ```text
 uv run --with sympy python claims/p5/h22/coincident-support/audit_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
-uv run --with ruff ruff check audit_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
-python -m py_compile audit_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
+uv run --with ruff ruff check claims/p5/h22/coincident-support/audit_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
+python -m py_compile claims/p5/h22/coincident-support/audit_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
 python -m json.tool p5_h22_coincident_support_rank_one_star_component_generic_certificate.json
 git diff --check
 ```

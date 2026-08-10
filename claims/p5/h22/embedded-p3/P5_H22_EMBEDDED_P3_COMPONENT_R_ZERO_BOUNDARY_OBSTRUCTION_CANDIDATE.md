@@ -15,7 +15,7 @@ inputs:
   P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md: baf5531740cfd77207f31cf8e1de2b5b838701cbcae5ec778667e6e7f712d15e
   P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md: 7ae8c19e5a43ac7af2cac35892af59130555ab509495d5280745aad114eed056
 method: homogeneous direction transport, exact characteristic-zero elimination of the simultaneous D01-binary and D23-pure incidence, saturated kernel calculation, and inherited verified H31 one-marked covers
-command: uv run --with sympy python derive_p5_h22_embedded_p3_component_r_zero_boundary_obstruction.py
+command: uv run --with sympy python claims/p5/h22/embedded-p3/derive_p5_h22_embedded_p3_component_r_zero_boundary_obstruction.py
 outputs:
   derive_p5_h22_embedded_p3_component_r_zero_boundary_obstruction.py: ee760b9db4e4ae6526e55824b483c626612df9ffefcc0bccee82b21433f59458
   P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION_CANDIDATE.md: hash reported by replay

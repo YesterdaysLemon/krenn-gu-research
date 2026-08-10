@@ -16,7 +16,7 @@ inputs:
   P5_H22_COMPONENT19_P0_Q_ENDPOINTS_NO_IMPORT_VERIFICATION.md: 13af04b480d4bba44aeee7b5396a6b12ba10256a4d30bd29969e70a14ce46627
   P5_H22_COMPONENT19_P0_PHI_ENDPOINTS_NO_IMPORT_VERIFICATION.md: 128da2990f6800146375d78916279d0127eff372e3eab412d9d0f020bd6612b3
 method: live replay of eight verified exact certificates and an exact polynomial-identity case ledger for every exceptional intersection
-command: uv run --with sympy python audit_p5_h22_component19_p0_finite_ordinary_aggregate.py
+command: uv run --with sympy python claims/p5/h22/component19-p0-finite-ordinary-aggregate/audit_p5_h22_component19_p0_finite_ordinary_aggregate.py
 outputs:
   audit_p5_h22_component19_p0_finite_ordinary_aggregate.py: 65cafa89b709f0466d7fd51fc2555f60cec9246b6f68034ffa4ed94dc41180f7
   P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md: hash emitted by replay
