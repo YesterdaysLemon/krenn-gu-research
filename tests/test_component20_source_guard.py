@@ -10,7 +10,7 @@ import unittest
 
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
-AUDIT_PATH = REPO_ROOT / "audit_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py"
+AUDIT_PATH = REPO_ROOT / "claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/audit_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py"
 
 
 def run_git(root: pathlib.Path, *args: str) -> str:

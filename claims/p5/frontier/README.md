@@ -6,10 +6,12 @@ navigation and is not a batch member.  The exact carrier list is frozen in
 [`p5-frontier-stage29.json`](../../../catalog/batches/p5-frontier-stage29.json).
 
 Stage 32 added 85 residual P5 artifacts here: 31 Markdown documents and 54
-Python carriers.  The current surface therefore contains 228 artifacts: 83
-Markdown documents, 143 Python carriers, and two C++ primaries, excluding
-this README.  The Stage 32 colocation preserves candidate, partial,
-superseded, failed, and audit-asymmetric records at their written scopes.
+Python carriers. Stage 33 added the three-artifact
+[`five-row-projective-incidence/`](five-row-projective-incidence/) package.
+The current surface therefore contains 231 artifacts: 84 Markdown documents,
+145 Python carriers, and two C++ primaries, excluding navigation READMEs.
+Colocation preserves candidate, partial, superseded, failed, and
+audit-asymmetric records at their written scopes.
 
 The complete normalized `q4_211` and `q5_221` forests span this directory and
 the sibling [`coordinate-cegar/`](../coordinate-cegar/) and
@@ -47,11 +49,11 @@ The other fourteen documents are:
 ## Proof and status boundary
 
 The `q5_221` triangle working note remains **superseded**; proximity to later
-proofs does not promote it.  The exact characteristic-zero
-`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION` antecedent, its primary, and its
-audit remain separately owned at repository root.  It is a structural input,
-not by itself an exclusion of `P_5 -> Delta_3` or a proof of the global
-conjecture.
+proofs does not promote it. The exact characteristic-zero
+[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION`](../../p3/restrictions/P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md)
+antecedent and its sibling primary/audit remain separately P3-owned. It is a
+structural input, not by itself an exclusion of `P_5 -> Delta_3` or a proof
+of the global conjecture.
 
 The Stage 29 batch excluded the high-coordinate conflict triple, all
 Component21 and Component23 triples, every closure-crossing package, and

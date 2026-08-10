@@ -296,8 +296,8 @@ Six statements organize the current frontier.
    fixed-source limit is only a zero-tensor `k=infinity` edge in component
    fifteen's closure, while every actual nonzero diagonal arc is already in
    the half-centre atlas:
-   [`COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md`](../COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md),
-   [`P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md`](../P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md).
+   [`COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md`](../claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md),
+   [`P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md`](../claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md).
    The complete diagonal source-torus DVR/Puiseux atlases over those two zero
    bases are also independently verified.  Their exact nonzero cone is
    `x1=x2=0,x0<=-min(val(u),val(v))`; the sixteen leading charts lie in
@@ -305,14 +305,14 @@ Six statements organize the current frontier.
    component 15.  The intrinsic kernel rows `(K0,e,e,e)` give pointwise Hall
    obstructions to every marked-`H31` deletion and both homogeneous
    weighted-`H22` directions:
-   [`COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_CANDIDATE.md`](../COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_CANDIDATE.md),
-   [`COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_VERIFICATION.md`](../COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_VERIFICATION.md),
-   [`P4_COMPONENT20_TRANSVERSE_BASE_DIAGONAL_FAN_PROOF_B.md`](../P4_COMPONENT20_TRANSVERSE_BASE_DIAGONAL_FAN_PROOF_B.md).
+   [`COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_CANDIDATE.md`](../claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_CANDIDATE.md),
+   [`COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_VERIFICATION.md`](../claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_VERIFICATION.md),
+   [`P4_COMPONENT20_TRANSVERSE_BASE_DIAGONAL_FAN_PROOF_B.md`](../claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/P4_COMPONENT20_TRANSVERSE_BASE_DIAGONAL_FAN_PROOF_B.md).
    The whole `p+q=0` diagonal-source-torus DVR wall is now closed for marked
    `H31`: a verified arc exhaustion reduces it to the displayed charts,
    embedded-`P_3` projective strata, and two directly verified special
    lower-pair families:
-   [`P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md`](../P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md),
+   [`P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md`](../claims/p4/boundaries/component20-p-plus-q-wall/P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md),
    [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md`](../claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md),
    [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md`](../claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md), and
    [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md`](../claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md).
@@ -862,7 +862,7 @@ independently extracts the Laurent first coefficients in every valuation
 regime and verifies the exhaustion for DVR/Puiseux arcs under the diagonal
 source torus.  Exact placement in older component intersections and
 non-diagonal source changes are not claimed:
-[`P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md`](../P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md).
+[`P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md`](../claims/p4/boundaries/component20-p-plus-q-wall/P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md).
 
 Their complete marked `H31` fibres are closed by exact characteristic-zero
 certificates.  `B_full` has one
@@ -2064,8 +2064,8 @@ uv run --with sympy python claims/p5/h31/common-active-binary-triangle/audit_p5_
 uv run --with sympy python claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py
 uv run --with sympy python claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py
 
-uv run --with sympy --with z3-solver python verify_p4_common_active_binary_triangle_p_plus_q_boundary.py
-uv run --with sympy --with z3-solver python audit_p4_common_active_binary_triangle_p_plus_q_boundary.py
+uv run --with sympy --with z3-solver python claims/p4/boundaries/component20-p-plus-q-wall/verify_p4_common_active_binary_triangle_p_plus_q_boundary.py
+uv run --with sympy --with z3-solver python claims/p4/boundaries/component20-p-plus-q-wall/audit_p4_common_active_binary_triangle_p_plus_q_boundary.py
 
 uv run --with sympy python claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
 uv run --with sympy python claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
@@ -2107,7 +2107,7 @@ uv run --with sympy python claims/p5/h22/component19-q-eq-phi-special-divisor/de
 uv run --with sympy python claims/p5/h22/component19-q-equals-phi-divisor-proof-b/derive_p5_h22_component19_q_equals_phi_divisor_proof_b.py
 uv run --with sympy python claims/p5/h22/component19-q-equals-phi/audit_p5_h22_component19_q_equals_phi_obstruction_candidate.py
 
-uv run --with sympy python audit_p4_component19_p0_finite_boundary_geometry.py
+uv run --with sympy python claims/p5/h22/component19-p0-finite-boundary-geometry-reconnaissance/audit_p4_component19_p0_finite_boundary_geometry.py
 uv run --with sympy python claims/p5/h22/component19-p0-ordinary-open-proof-b/derive_p5_h22_component19_p0_ordinary_open_proof_b.py
 uv run --with sympy python claims/p5/h22/component19-p0-ordinary-obstruction-open/audit_p5_h22_component19_p0_ordinary_obstruction_open.py
 
@@ -2139,13 +2139,13 @@ uv run --with sympy python claims/p5/h22/common-active-binary-triangle-component
 uv run --with sympy python claims/p5/h22/common-active-binary-triangle-intrinsic-boundary/derive_p5_h22_common_active_binary_triangle_intrinsic_boundary_obstruction_candidate.py
 uv run --with sympy python claims/p5/h22/common-active-binary-triangle-intrinsic-boundary/audit_p5_h22_common_active_binary_triangle_intrinsic_boundary_obstruction_candidate.py
 
-uv run --with sympy python derive_component20_intrinsic_wall_exceptional_fibres_candidate.py
-uv run --with sympy python derive_p4_component20_intrinsic_exceptional_base_geometry_proof_b.py
-uv run --with sympy --with z3-solver python audit_component20_intrinsic_wall_exceptional_fibres_candidate.py
+uv run --with sympy python claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/derive_component20_intrinsic_wall_exceptional_fibres_candidate.py
+uv run --with sympy python claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/derive_p4_component20_intrinsic_exceptional_base_geometry_proof_b.py
+uv run --with sympy --with z3-solver python claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/audit_component20_intrinsic_wall_exceptional_fibres_candidate.py
 
-uv run --with sympy --with z3-solver python derive_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py
-uv run --with sympy --with z3-solver python derive_p4_component20_transverse_base_diagonal_fan_proof_b.py
-uv run --with sympy --with z3-solver python audit_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py
+uv run --with sympy --with z3-solver python claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/derive_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py
+uv run --with sympy --with z3-solver python claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/derive_p4_component20_transverse_base_diagonal_fan_proof_b.py
+uv run --with sympy --with z3-solver python claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/audit_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py
 
 uv run --with sympy python claims/p5/h22/coincident-support/derive_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
 uv run --with sympy python claims/p5/h22/coincident-support/audit_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py

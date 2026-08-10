@@ -402,12 +402,14 @@ and is not part of the characteristic-zero verification.
 - The three `elliptic-end-*-q3/` directories contain fresh-process child
   carriers.  They import their parent package's reduction/verification code
   and do not add a theorem or an independent audit.
-- The single-gate reduction consumes the separately owned root
-  `P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`; the two importing modular
-  audits expose `single-gate-p3/` through the shared bootstrap helper.
-- The common-active `p+q=0` aggregate consumes the separately owned root
-  `P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md` and the migrated
-  `embedded-p3/` projective closure; neither dependency was re-moved.
+- The single-gate reduction consumes the separately P3-owned
+  [`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](../../p3/restrictions/P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md);
+  the two importing modular audits expose `single-gate-p3/` through the
+  shared bootstrap helper.
+- The common-active `p+q=0` aggregate consumes the separately P4-owned
+  [`P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md`](../../p4/boundaries/component20-p-plus-q-wall/P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md)
+  and the migrated `embedded-p3/` projective closure; neither dependency is
+  H31-owned.
 - Already-migrated P4 anchors (components and star/pair-geometry
   classifications under [`../../p4/`](../../p4/)) are referenced by
   link and by `expose_claim_package`; they were not re-moved.

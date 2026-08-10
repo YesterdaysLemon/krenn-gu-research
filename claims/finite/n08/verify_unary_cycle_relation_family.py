@@ -31,7 +31,7 @@ from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
 
-from search_witness import EquationSystem
+from krenn_gu.search_witness import EquationSystem
 
 
 def sha256(path: Path) -> str:

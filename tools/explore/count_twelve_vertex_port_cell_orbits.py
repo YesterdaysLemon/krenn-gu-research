@@ -24,8 +24,10 @@ for _p in Path(__file__).resolve().parents:
         sys.path.insert(0, str(_p / "src"))
         break
 from krenn_gu.bootstrap import bootstrap  # noqa: E402
+from krenn_gu.bootstrap import expose_claim_package  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/finite/n08/degree-six-kotzig-port")
 
 from explore_eight_vertex_degree_six_kotzig_ports import (
     balanced_allowed_entries,

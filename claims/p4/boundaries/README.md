@@ -40,10 +40,16 @@ boundary-owned while their theorem document is under
 [`../classifications/`](../classifications/). This asymmetric surface is
 preserved rather than converted into a new evidence claim.
 
-## Still excluded
+## Stage 28 exclusions and later routing
 
-Stage 28 leaves the common-active weighted-`p+q` boundary triple, both
-Component20 proof-B records and conflict carriers, and the in/out-path working
-note and external tools at the repository root. Their ownership and any
-associated status conflicts remain unadjudicated. See the
-[Stage 28 report](../../../docs/architecture/layout-migration-stage28-report.md).
+At the Stage 28 boundary, the weighted-`p+q`, Component20 proof-B, in/out
+working-note, marked-H31/first-second-component, and other conflict-bearing
+surfaces remained outside that tranche. Stage 33 later routed the `p+q`
+boundary to [`component20-p-plus-q-wall/`](component20-p-plus-q-wall/), the
+in/out working stratum to [`inout-path-stratum/`](inout-path-stratum/), and
+the unresolved Component20 proof-boundary disagreement to the neutral
+[`../disputed-ownership/component20-intrinsic-boundary/`](../disputed-ownership/component20-intrinsic-boundary/)
+package. Those moves preserve every status and do not adjudicate the neutral
+package's ownership disagreement. See the
+[Stage 28 report](../../../docs/architecture/layout-migration-stage28-report.md)
+for that tranche's exact historical boundary.

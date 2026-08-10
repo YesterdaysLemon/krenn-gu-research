@@ -1,6 +1,6 @@
 # Ten-vertex packages
 
-The six claim documents are:
+The six Stage 28 claim documents are:
 
 - [`TEN_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md`](TEN_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md)
 - [`TEN_VERTEX_C10_EQUALITY_CERTIFICATE.md`](TEN_VERTEX_C10_EQUALITY_CERTIFICATE.md)
@@ -8,6 +8,10 @@ The six claim documents are:
 - [`TEN_VERTEX_C4_C6_SUPPORT_CERTIFICATE.md`](TEN_VERTEX_C4_C6_SUPPORT_CERTIFICATE.md)
 - [`TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md`](TEN_VERTEX_FIVE_REGULAR_EQUALITY_BOUNDARY.md)
 - [`TEN_VERTEX_ODD_FACTOR_EQUALITY_CERTIFICATE.md`](TEN_VERTEX_ODD_FACTOR_EQUALITY_CERTIFICATE.md)
+
+Stage 33 added the mixed-lifecycle
+[`degree-six-kotzig-port/`](degree-six-kotzig-port/) package; read its header
+before citing any retained subclaim.
 
 Each retains its own factor, support, equality, and bridge hypotheses. The
 five-regular equality ledger entry does not cover the sub-105-entry branch or

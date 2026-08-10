@@ -1,0 +1,1540 @@
+{
+  "batch_schema_version": 2,
+  "batch_id": "final-residual-root-exit-stage33",
+  "approved_by": "Codex (exact mapping reviewer under repository-owner standing delegation dated 2026-08-08; fresh Tier-2 semantic and mechanical acceptance at 32decbe48b0c9010f8bee0a37e9dcae765c2bf55)",
+  "approved_at": "2026-08-10",
+  "base_sha": "c99a4e9519685b4fba46f51a1e93ac6c6d6c3cbc",
+  "manifest_sha256": "dcc21fd81f2d0416b21f007b4289a9ad4302dbb959caa72da9c93856523f1730",
+  "mapping_sha256": "f7f393ecb1fc2764b525c496a844302f35e896238bf03f443c7219d190067cc4",
+  "source_identity_sha256": "c15b0648b0b5c4e40d0741941406deadd013f81d1dedadd12e5bc1fa11aa2808",
+  "member_count": 305,
+  "moves": [
+    {
+      "old_path": "COLOUR_SYMMETRIC_FACTOR_ORBIT_TRANSFER_LEMMA.md",
+      "new_path": "claims/arbitrary-order/COLOUR_SYMMETRIC_FACTOR_ORBIT_TRANSFER_LEMMA.md",
+      "source_blob": "1a6608e8d5673e451ec9cc3e55e8d17abfe3df42"
+    },
+    {
+      "old_path": "COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md",
+      "source_blob": "40d1b77a3d6f85595fef3b06f2bdf9683bc8786b"
+    },
+    {
+      "old_path": "COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_VERIFICATION.md",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_VERIFICATION.md",
+      "source_blob": "68be490f38f390ce087dac58c6ffa79883d4f10f"
+    },
+    {
+      "old_path": "COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_CANDIDATE.md",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_CANDIDATE.md",
+      "source_blob": "26f675bae4c175a76ed1d81298446da57ed1210a"
+    },
+    {
+      "old_path": "COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_VERIFICATION.md",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_VERIFICATION.md",
+      "source_blob": "8303c77b40a906c907a8d7bbcf0754973fecc5d6"
+    },
+    {
+      "old_path": "EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md",
+      "new_path": "claims/finite/n08/history/withdrawn-balanced-all-bridge-set-tree/EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md",
+      "source_blob": "9c3e2de5032eb5c83552d80fcfe0f47a7ab580ea"
+    },
+    {
+      "old_path": "EIGHT_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
+      "new_path": "claims/finite/n08/degree-six-kotzig-port/EIGHT_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
+      "source_blob": "6a5d177e17231640b99e90196bc4bfe3ef4702de"
+    },
+    {
+      "old_path": "FIVE_ROOT_DIAGONAL_TARGET_INCIDENCE_SCHUBERT_DUALITY_AND_COFACTOR_LINE_THEOREM.md",
+      "new_path": "claims/p7/five-root-diagonal-target-incidence/FIVE_ROOT_DIAGONAL_TARGET_INCIDENCE_SCHUBERT_DUALITY_AND_COFACTOR_LINE_THEOREM.md",
+      "source_blob": "df955a9637e9d87840f3c55fd06b158d39c640e2"
+    },
+    {
+      "old_path": "FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md",
+      "new_path": "claims/p5/frontier/five-row-projective-incidence/FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md",
+      "source_blob": "c73bb8fe810889e962cb54f48e91333396179a5d"
+    },
+    {
+      "old_path": "FULL_ADMISSIBLE_POTENTIAL_CONE_LEMMA.md",
+      "new_path": "claims/arbitrary-order/FULL_ADMISSIBLE_POTENTIAL_CONE_LEMMA.md",
+      "source_blob": "eadd16ce7d8fdc815bf509f6023a1bba803ae256"
+    },
+    {
+      "old_path": "MATCHING_FORK_TRANSPORT_LEMMA.md",
+      "new_path": "claims/arbitrary-order/MATCHING_FORK_TRANSPORT_LEMMA.md",
+      "source_blob": "17b71bae18f9271244de7415f209c64670c9cb45"
+    },
+    {
+      "old_path": "P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md",
+      "new_path": "claims/p3/restrictions/P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md",
+      "source_blob": "91da271e5567a9dd9e15c45a6501f846d0796ab3"
+    },
+    {
+      "old_path": "P3_ZERO_HYPERPLANE_PRODUCT_THEOREM.md",
+      "new_path": "claims/p3/restrictions/P3_ZERO_HYPERPLANE_PRODUCT_THEOREM.md",
+      "source_blob": "2f8104c80192c5ee3c8afd7741826d3da8f598bc"
+    },
+    {
+      "old_path": "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md",
+      "new_path": "claims/p4/boundaries/component20-p-plus-q-wall/P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md",
+      "source_blob": "f151746707b5f74914d5cdbaeba52f3e9ca7f88a"
+    },
+    {
+      "old_path": "P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md",
+      "source_blob": "d6f88463eda9598399f1486f176b178c22c03dbb"
+    },
+    {
+      "old_path": "P4_COMPONENT20_TRANSVERSE_BASE_DIAGONAL_FAN_PROOF_B.md",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/P4_COMPONENT20_TRANSVERSE_BASE_DIAGONAL_FAN_PROOF_B.md",
+      "source_blob": "dd376f1ee88f75a97ed72560f02b1922ac52d6e5"
+    },
+    {
+      "old_path": "P4_INOUT_PATH_STRATUM_WORKING_NOTE.md",
+      "new_path": "claims/p4/boundaries/inout-path-stratum/P4_INOUT_PATH_STRATUM_WORKING_NOTE.md",
+      "source_blob": "dc01fa4dac80718d254f5877bba1deef48e54829"
+    },
+    {
+      "old_path": "P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md",
+      "new_path": "claims/p4/history/mixed-two-rank-two-triangle/P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md",
+      "source_blob": "7414d2e0e52cb697c4df771a412e4c621586dcfa"
+    },
+    {
+      "old_path": "P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md",
+      "new_path": "claims/p4/history/rank-two-relation-star/P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md",
+      "source_blob": "18bd39435489939c55a5ed812e4da9d36ee8791e"
+    },
+    {
+      "old_path": "P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md",
+      "new_path": "claims/p4/history/resonant-flat-triangle/P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md",
+      "source_blob": "773b22eff7ae83e46dc459a0654b5a904e3afaa8"
+    },
+    {
+      "old_path": "PARTIAL_CIRCUIT_BINOMIAL_CLOSURE_LEMMA.md",
+      "new_path": "claims/arbitrary-order/PARTIAL_CIRCUIT_BINOMIAL_CLOSURE_LEMMA.md",
+      "source_blob": "96c24afdf9d5246a921c96ee250cceb5a0b53917"
+    },
+    {
+      "old_path": "PINNED_FACTOR_SUPPORT_SYMMETRY_LEMMA.md",
+      "new_path": "claims/arbitrary-order/PINNED_FACTOR_SUPPORT_SYMMETRY_LEMMA.md",
+      "source_blob": "db0250098e78edc9975bcf71260454fc115523db"
+    },
+    {
+      "old_path": "Q2_N6_K4_D4_CONSTRUCTION.md",
+      "new_path": "claims/finite/n06/q2-k4-d4-construction/Q2_N6_K4_D4_CONSTRUCTION.md",
+      "source_blob": "91067588643ee52f448b99018d205accdc9dd9dd"
+    },
+    {
+      "old_path": "SINGLE_EVEN_CYCLE_RECTANGLE_THEOREM.md",
+      "new_path": "claims/arbitrary-order/SINGLE_EVEN_CYCLE_RECTANGLE_THEOREM.md",
+      "source_blob": "22fc16b63f4749406be13909e4598056e2f211e1"
+    },
+    {
+      "old_path": "SIX_PERMUTED_POTENTIALS_LEMMA.md",
+      "new_path": "claims/arbitrary-order/SIX_PERMUTED_POTENTIALS_LEMMA.md",
+      "source_blob": "fd0786479543b45d9697fdf14cd27632dec32dca"
+    },
+    {
+      "old_path": "STATE_LIFT_CYCLE_FIBRE_LEMMA.md",
+      "new_path": "claims/arbitrary-order/history/state-lift-cycle-fibre/STATE_LIFT_CYCLE_FIBRE_LEMMA.md",
+      "source_blob": "7297ff5b5fdfe7efbc80d6295febee7c4d97a28b"
+    },
+    {
+      "old_path": "TEN_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
+      "new_path": "claims/finite/n10/degree-six-kotzig-port/TEN_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
+      "source_blob": "3ffbb13f286b9d98e191b496132409c16c13fae8"
+    },
+    {
+      "old_path": "TWELVE_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION_WITHDRAWN_LEGACY.md",
+      "new_path": "claims/finite/n12/history/degree-six-kotzig-port-legacy/TWELVE_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION_WITHDRAWN_LEGACY.md",
+      "source_blob": "b841d76169acf4ff0bcc08845bff6c503c241d06"
+    },
+    {
+      "old_path": "UNIVERSAL_SATURATED_DIAGONAL_ZERO_LAYER_THEOREM.md",
+      "new_path": "claims/arbitrary-order/UNIVERSAL_SATURATED_DIAGONAL_ZERO_LAYER_THEOREM.md",
+      "source_blob": "06130f133a593363f6d152ed8c5d010215659a84"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_c4_c4_c6_relational_rules.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_c4_c4_c6_relational_rules.py",
+      "source_blob": "c83008b07fb6e0c401614833fe14540321fb0db3"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_c4_c4_c6_rule_sat.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_c4_c4_c6_rule_sat.py",
+      "source_blob": "cb072ff91fbf046e8cf523bc9580a513c7745ca6"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_c4_c4_c6_transport_rules.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_c4_c4_c6_transport_rules.py",
+      "source_blob": "5a619c390b3a26613c91060148bf76069f1017a4"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_cancellation_transport.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_cancellation_transport.py",
+      "source_blob": "42bb1accee444beb872dad90aba9fce8b99fc946"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_equality_connectivity.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_equality_connectivity.py",
+      "source_blob": "a06fa57d296999d44e608fdfbe2293bc22a7079d"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_equality_survivor_cancellation_transport.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_equality_survivor_cancellation_transport.py",
+      "source_blob": "a9b5371d795c71dca95e652d569d6775bb71c52f"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_equality_survivor_direct_motifs.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_equality_survivor_direct_motifs.py",
+      "source_blob": "6c84f8c38e64c36eb032a21962e4d811a9b1e465"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_equality_survivor_signed_lattice.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_equality_survivor_signed_lattice.py",
+      "source_blob": "11435763c9cf12fc5b62cdc056fa2a5c775ca3b0"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_even_cycle_double_pair_fork.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_even_cycle_double_pair_fork.py",
+      "source_blob": "58e3df5bed274c92bb257f87cb1ce5dea7e416b9"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_even_cycle_factor_fork.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_even_cycle_factor_fork.py",
+      "source_blob": "faa56918582fa29b991f95200b29de4ce3fd2388"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_even_cycle_rank_one_fork.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_even_cycle_rank_one_fork.py",
+      "source_blob": "e5f42387144be9282e9d16edf2b7521314b837e9"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_forced_cycle_signed_lattice.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_forced_cycle_signed_lattice.py",
+      "source_blob": "ebf4650b7ddb70d78a4fa2afceeba2637aac9f77"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_forced_slice_factor_cegar.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_forced_slice_factor_cegar.py",
+      "source_blob": "a035731953c8c29c57066186264abd9a2f85d2a0"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_full_direct_motifs.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_full_direct_motifs.py",
+      "source_blob": "8df6e6b394e0f230991352e1fd810dfbde163141"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_full_only_cycle_cover_cegar.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_full_only_cycle_cover_cegar.py",
+      "source_blob": "2b4465f6af2ae2946fae6e96edb58bfbe6f716a0"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_larger_one_term_full_filter.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_larger_one_term_full_filter.py",
+      "source_blob": "09d1d8ba0b07a4352cf7dca49608dd1dce7a9768"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_larger_one_term_pair_filter.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_larger_one_term_pair_filter.py",
+      "source_blob": "c72e70add96cf7aa91661e747c38c52aeaaa5671"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_orbit8_mandatory_unit_family.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_orbit8_mandatory_unit_family.py",
+      "source_blob": "ee5ff2e797d4d01f1a52ed1465d4f09c2ba94353"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_partial_circuit_amplitude_lattice.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_partial_circuit_amplitude_lattice.py",
+      "source_blob": "ecfe0ab6310ed05a09672862e932916be9b753fd"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_partial_circuit_binomial_closure.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_partial_circuit_binomial_closure.py",
+      "source_blob": "f3edf5c476b8b2562cddada3d3a4c0b569b55011"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_partial_circuit_factor_cegar.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_partial_circuit_factor_cegar.py",
+      "source_blob": "d1ca1175de97b46fffa338c0f0ab2361d2e9a87e"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_partial_circuit_rational_closure.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_partial_circuit_rational_closure.py",
+      "source_blob": "6eeaba2d8d30ecc40d0f62a8b100e8be7d348680"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_partial_minimal_circuit_lattice.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_partial_minimal_circuit_lattice.py",
+      "source_blob": "da7273c83cad20e4acee66689fd2ee78ce7a0501"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_portal_determinant_lattice.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_portal_determinant_lattice.py",
+      "source_blob": "eaff3fe8e3d4df8a8b9cae647b332d26be25f530"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_sparse_transport_prefix.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_sparse_transport_prefix.py",
+      "source_blob": "fce735738f0592ae5a441bf5d8f54341a5e6433a"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_two_even_cycle_core_symmetry.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_two_even_cycle_core_symmetry.py",
+      "source_blob": "3dcfdd6e8bdc71237b69df5252e754ac8f6f6b82"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_two_even_cycle_fork.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_two_even_cycle_fork.py",
+      "source_blob": "49e2a44632eacea9dea678e79a31bbee679901a1"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_two_even_cycle_lattice_fork.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_two_even_cycle_lattice_fork.py",
+      "source_blob": "48de259f20e0cbda96870447b77325e319739826"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_two_even_cycle_rule_sat.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_two_even_cycle_rule_sat.py",
+      "source_blob": "6c8a80db297db4f270a326f6c2825e01ca5eec0b"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_two_to_three_transport.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_two_to_three_transport.py",
+      "source_blob": "fbc879f742e721893d85c663d63f220c7db3645a"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_unforced_factor_choice_cegar.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_unforced_factor_choice_cegar.py",
+      "source_blob": "4fa05ee173b98e1d1fabb6937d2a78fc03629b26"
+    },
+    {
+      "old_path": "analyze_full_cycle_factor_conflicts.py",
+      "new_path": "claims/finite/n08/analyze_full_cycle_factor_conflicts.py",
+      "source_blob": "92dd0acb9baf4163840e6833f08edc3821e28e5a"
+    },
+    {
+      "old_path": "analyze_global_cegar_survivor.py",
+      "new_path": "claims/finite/n06/certificate-chain/analyze_global_cegar_survivor.py",
+      "source_blob": "71dfcdd43a2ff8bd432e63cd40d1aafd54c6d0c5"
+    },
+    {
+      "old_path": "analyze_odd_binomial_triangle_census.py",
+      "new_path": "claims/finite/n08/analyze_odd_binomial_triangle_census.py",
+      "source_blob": "78b268f4c8c8d70c1effa91789cd6a055ae09f77"
+    },
+    {
+      "old_path": "analyze_p4_common_singleton_local_dimension.py",
+      "new_path": "claims/p4/classifications/analyze_p4_common_singleton_local_dimension.py",
+      "source_blob": "443cf688641a342883f3f31e3d2c629580f24638"
+    },
+    {
+      "old_path": "analyze_rectangle_transport_census.py",
+      "new_path": "claims/finite/n08/analyze_rectangle_transport_census.py",
+      "source_blob": "ad607337a8109939de79f962e271c1b7c06b44ec"
+    },
+    {
+      "old_path": "analyze_six_vertex_elementary_coverage.py",
+      "new_path": "claims/finite/n06/certificate-chain/analyze_six_vertex_elementary_coverage.py",
+      "source_blob": "6b2690c7fed14f75fca5e11479350a26eeb6054d"
+    },
+    {
+      "old_path": "analyze_support_toric_census.py",
+      "new_path": "claims/finite/n08/analyze_support_toric_census.py",
+      "source_blob": "3afbf9359074a27b190c7fea439ada1faad3a061"
+    },
+    {
+      "old_path": "analyze_ten_vertex_degree_six_kotzig_port_survivors.py",
+      "new_path": "claims/finite/n10/degree-six-kotzig-port/analyze_ten_vertex_degree_six_kotzig_port_survivors.py",
+      "source_blob": "c7759193815e8fdcd284994e0f5d25fb67d465cb"
+    },
+    {
+      "old_path": "analyze_ten_vertex_permuted_potential_survivors.py",
+      "new_path": "claims/finite/n10/degree-six-kotzig-port/analyze_ten_vertex_permuted_potential_survivors.py",
+      "source_blob": "698b61a14492323bc3f824ccc107659fe971d11d"
+    },
+    {
+      "old_path": "analyze_twelve_vertex_full_potential_cone.py",
+      "new_path": "claims/finite/n12/history/degree-six-kotzig-port-legacy/analyze_twelve_vertex_full_potential_cone.py",
+      "source_blob": "ced20f1221f7377b2242c0883295a1b6c513c10c"
+    },
+    {
+      "old_path": "analyze_twelve_vertex_six_potential_residuals.py",
+      "new_path": "claims/finite/n12/history/degree-six-kotzig-port-legacy/analyze_twelve_vertex_six_potential_residuals.py",
+      "source_blob": "f51815089a4121894832b827f159aec4c598dcdd"
+    },
+    {
+      "old_path": "analyze_unary_cycle_relation_family.py",
+      "new_path": "claims/finite/n08/analyze_unary_cycle_relation_family.py",
+      "source_blob": "9a0cc769741a1c2701761a852eb3d8a814f51e14"
+    },
+    {
+      "old_path": "audit_component20_intrinsic_wall_exceptional_fibres_candidate.py",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/audit_component20_intrinsic_wall_exceptional_fibres_candidate.py",
+      "source_blob": "fc620a7627cbdc2c549cb8d7496dde318aac2e08"
+    },
+    {
+      "old_path": "audit_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/audit_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py",
+      "source_blob": "4a82a15df09c5e3c14d73a1e2dd6c8eb144aa6b0"
+    },
+    {
+      "old_path": "audit_eight_vertex_degree_six_kotzig_ports.py",
+      "new_path": "claims/finite/n08/degree-six-kotzig-port/audit_eight_vertex_degree_six_kotzig_ports.py",
+      "source_blob": "e5aa984d9f4f0740b4aa0f0ea4662ae27989faed"
+    },
+    {
+      "old_path": "audit_five_root_diagonal_target_incidence_schubert_duality_and_cofactor_line.py",
+      "new_path": "claims/p7/five-root-diagonal-target-incidence/audit_five_root_diagonal_target_incidence_schubert_duality_and_cofactor_line.py",
+      "source_blob": "b827457328ba0bef3746566ce32752cf4b3bc850"
+    },
+    {
+      "old_path": "audit_five_row_projective_incidence.py",
+      "new_path": "claims/p5/frontier/five-row-projective-incidence/audit_five_row_projective_incidence.py",
+      "source_blob": "34932db3ea97003908df71546a9a052a67cbab94"
+    },
+    {
+      "old_path": "audit_fourteen_vertex_c4_c4_c6_rule_sat_orbits.py",
+      "new_path": "claims/finite/n14/audit_fourteen_vertex_c4_c4_c6_rule_sat_orbits.py",
+      "source_blob": "8f52bd737851c71fd550f96c0d8c2fc05b0ed67a"
+    },
+    {
+      "old_path": "audit_full_admissible_potential_cone.py",
+      "new_path": "claims/arbitrary-order/audit_full_admissible_potential_cone.py",
+      "source_blob": "bee32ee84b70bebe82c43f4f90f000f1f7409a9d"
+    },
+    {
+      "old_path": "audit_p3_decomposable_restriction_classification.py",
+      "new_path": "claims/p3/restrictions/audit_p3_decomposable_restriction_classification.py",
+      "source_blob": "b84f064207514b8eef30dc80ea279d71e55b2eb3"
+    },
+    {
+      "old_path": "audit_p3_zero_hyperplane_product.py",
+      "new_path": "claims/p3/restrictions/audit_p3_zero_hyperplane_product.py",
+      "source_blob": "e84e411ad40035b9ff990678670ae7e471498bb5"
+    },
+    {
+      "old_path": "audit_p4_common_active_binary_triangle_p_plus_q_boundary.py",
+      "new_path": "claims/p4/boundaries/component20-p-plus-q-wall/audit_p4_common_active_binary_triangle_p_plus_q_boundary.py",
+      "source_blob": "44dd582d5ed8fa0f7f381ad5aad1cafaa64da5cf"
+    },
+    {
+      "old_path": "audit_p4_component19_p0_finite_boundary_geometry.py",
+      "new_path": "claims/p5/h22/component19-p0-finite-boundary-geometry-reconnaissance/audit_p4_component19_p0_finite_boundary_geometry.py",
+      "source_blob": "67f0cd0a3a5e2e31b319aaeb573db4ff069ed975"
+    },
+    {
+      "old_path": "audit_p4_mixed_two_rank_two_triangle_obstruction_withdrawn_pending_borel_audit.py",
+      "new_path": "claims/p4/history/mixed-two-rank-two-triangle/audit_p4_mixed_two_rank_two_triangle_obstruction_withdrawn_pending_borel_audit.py",
+      "source_blob": "6aceda9997607d6533b13857d0831e69858149ca"
+    },
+    {
+      "old_path": "audit_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py",
+      "new_path": "claims/p4/history/rank-two-relation-star/audit_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py",
+      "source_blob": "d9d16f269038efdc3c5e566e14d5f4156c00613d"
+    },
+    {
+      "old_path": "audit_p4_resonant_flat_triangle_classification_withdrawn_overstrong.py",
+      "new_path": "claims/p4/history/resonant-flat-triangle/audit_p4_resonant_flat_triangle_classification_withdrawn_overstrong.py",
+      "source_blob": "8dd534376e32dad8b947dff7ef2c16a72a84acae"
+    },
+    {
+      "old_path": "audit_ten_vertex_degree_six_kotzig_ports.py",
+      "new_path": "claims/finite/n10/degree-six-kotzig-port/audit_ten_vertex_degree_six_kotzig_ports.py",
+      "source_blob": "84b8584307d389e8e73874b5082beda5ee84f34f"
+    },
+    {
+      "old_path": "audit_ten_vertex_permuted_potential_survivors.py",
+      "new_path": "claims/finite/n10/degree-six-kotzig-port/audit_ten_vertex_permuted_potential_survivors.py",
+      "source_blob": "eb6f8dbbe12623bc05eafe767bef8da6a957d6bf"
+    },
+    {
+      "old_path": "audit_twelve_vertex_six_potential_orbits.cpp",
+      "new_path": "claims/finite/n12/audit_twelve_vertex_six_potential_orbits.cpp",
+      "source_blob": "f87d7fe76b0f6eecffe8ae90c758b6edf0ed551d"
+    },
+    {
+      "old_path": "audit_twelve_vertex_six_potential_residuals.py",
+      "new_path": "claims/finite/n12/history/degree-six-kotzig-port-legacy/audit_twelve_vertex_six_potential_residuals.py",
+      "source_blob": "e64e5ba41b889e18979cc96d4a598849fc39e5a1"
+    },
+    {
+      "old_path": "audit_universal_saturated_diagonal_zero_layer.py",
+      "new_path": "claims/arbitrary-order/audit_universal_saturated_diagonal_zero_layer.py",
+      "source_blob": "61a5bd1e46741022d55de8d78bba7001c437e2bb"
+    },
+    {
+      "old_path": "augment_all_degree3_singleton_stars.py",
+      "new_path": "claims/finite/n08/augment_all_degree3_singleton_stars.py",
+      "source_blob": "ae7131cacb6307052af03aaa21ad7c0967a1e1a1"
+    },
+    {
+      "old_path": "augment_certified_entry_bound.py",
+      "new_path": "claims/finite/n08/augment_certified_entry_bound.py",
+      "source_blob": "75f70aff09b6ee1a2609a02af737534a6e95faad"
+    },
+    {
+      "old_path": "augment_degree3_pure_minor_constraints.py",
+      "new_path": "claims/finite/n08/augment_degree3_pure_minor_constraints.py",
+      "source_blob": "a961af1367a5f2fa7709483b4c2decd448db31df"
+    },
+    {
+      "old_path": "augment_forbid_mixed_singleton_matching.py",
+      "new_path": "claims/finite/n08/augment_forbid_mixed_singleton_matching.py",
+      "source_blob": "e8f0eaeb5e58307482e153a1bf337a54fcd223aa"
+    },
+    {
+      "old_path": "augment_fourteen_vertex_c4_c4_c6_with_colour_symmetric_orbit_exclusions.py",
+      "new_path": "claims/finite/n14/augment_fourteen_vertex_c4_c4_c6_with_colour_symmetric_orbit_exclusions.py",
+      "source_blob": "0483326bda393610cf92151a442a08adf2f3b417"
+    },
+    {
+      "old_path": "augment_fourteen_vertex_rule_cnf_with_certificates.py",
+      "new_path": "claims/finite/n14/augment_fourteen_vertex_rule_cnf_with_certificates.py",
+      "source_blob": "4a43b85cad8b451aa3138edc09c0fb3924cd53c4"
+    },
+    {
+      "old_path": "augment_fourteen_vertex_rule_cnf_with_minimal_singleton_circuits.py",
+      "new_path": "claims/finite/n14/augment_fourteen_vertex_rule_cnf_with_minimal_singleton_circuits.py",
+      "source_blob": "49954e48773a7da1c75eba6216bac0f67af80b10"
+    },
+    {
+      "old_path": "augment_fourteen_vertex_two_even_cycle_cnf_with_three_connectivity.py",
+      "new_path": "claims/finite/n14/augment_fourteen_vertex_two_even_cycle_cnf_with_three_connectivity.py",
+      "source_blob": "eaff155b606c9c89bd149f853e080e199679de73"
+    },
+    {
+      "old_path": "augment_fourteen_vertex_two_even_cycle_rule_cnf_with_minimum_certificates.py",
+      "new_path": "claims/finite/n14/augment_fourteen_vertex_two_even_cycle_rule_cnf_with_minimum_certificates.py",
+      "source_blob": "c9749c1a996af402d4ff1d99520c59c26a6c952c"
+    },
+    {
+      "old_path": "augment_fourteen_vertex_two_even_cycle_rule_cnf_with_one_extra_cycle_cores.py",
+      "new_path": "claims/finite/n14/augment_fourteen_vertex_two_even_cycle_rule_cnf_with_one_extra_cycle_cores.py",
+      "source_blob": "06aed26ca5f8cca739b9f9165ab57d9212bfc132"
+    },
+    {
+      "old_path": "augment_fourteen_vertex_two_even_cycle_rule_cnf_with_unforced_factor_cores.py",
+      "new_path": "claims/finite/n14/augment_fourteen_vertex_two_even_cycle_rule_cnf_with_unforced_factor_cores.py",
+      "source_blob": "1d9b3d67ad89bc1bf47f8ad254a2134f8d115534"
+    },
+    {
+      "old_path": "augment_no_binomial_amplitudes.py",
+      "new_path": "claims/finite/n08/augment_no_binomial_amplitudes.py",
+      "source_blob": "a03cec285b37ebc740ffe4060c289347f0ab78f8"
+    },
+    {
+      "old_path": "augment_reciprocal_cardinality.py",
+      "new_path": "claims/finite/n08/augment_reciprocal_cardinality.py",
+      "source_blob": "546deaf4ac334a41364163cb03a853906da6501d"
+    },
+    {
+      "old_path": "batch_minimize_fourteen_vertex_factor_fork_certificates.py",
+      "new_path": "claims/finite/n14/batch_minimize_fourteen_vertex_factor_fork_certificates.py",
+      "source_blob": "5cb6b3d53a1701220bcff9b5c75a1d2308a4c94b"
+    },
+    {
+      "old_path": "branch_ambient_certificates.py",
+      "new_path": "claims/p4/boundaries/inout-path-stratum/branch_ambient_certificates.py",
+      "source_blob": "69105593f073601ec22a39e33e3b433008d7abfa"
+    },
+    {
+      "old_path": "branch_invariants_and_sieve.py",
+      "new_path": "claims/p4/boundaries/inout-path-stratum/branch_invariants_and_sieve.py",
+      "source_blob": "9b8e64cb13ea522f6e4ecd6686a5a6efa7c14a4a"
+    },
+    {
+      "old_path": "cancellation_transport.py",
+      "new_path": "src/krenn_gu/cancellation_transport.py",
+      "source_blob": "c207f8066717434e189d549f6262a90957ce8928"
+    },
+    {
+      "old_path": "candidate_killer_cover_sat.py",
+      "new_path": "claims/finite/n06/certificate-chain/candidate_killer_cover_sat.py",
+      "source_blob": "7fbe48fe94426803d55a4ea5e17eda7dc7ae9b25"
+    },
+    {
+      "old_path": "candidate_matching_obstruction_sat.py",
+      "new_path": "claims/finite/n06/certificate-chain/candidate_matching_obstruction_sat.py",
+      "source_blob": "420a5ebe741af9b1f00a03ac9091ddd05a19b2cb"
+    },
+    {
+      "old_path": "certify_fourteen_vertex_minimal_singleton_circuit_factors.py",
+      "new_path": "claims/finite/n14/certify_fourteen_vertex_minimal_singleton_circuit_factors.py",
+      "source_blob": "a7fc056684f2035e778657f74c1b5962dbf62564"
+    },
+    {
+      "old_path": "certify_global_pattern_orbits.py",
+      "new_path": "claims/finite/n06/certificate-chain/certify_global_pattern_orbits.py",
+      "source_blob": "88096f9f060198ec09a08ca8d89cb780c5f65b3a"
+    },
+    {
+      "old_path": "certify_ten_vertex_c10_equality_orbits.py",
+      "new_path": "claims/finite/n10/certify_ten_vertex_c10_equality_orbits.py",
+      "source_blob": "146acb8f373de6c163db266b154fa4ade15e715f"
+    },
+    {
+      "old_path": "certify_ten_vertex_c4_c6_equality_orbits.py",
+      "new_path": "claims/finite/n10/certify_ten_vertex_c4_c6_equality_orbits.py",
+      "source_blob": "19ad4a7150b056c0ca343b9bf5f4069430dabace"
+    },
+    {
+      "old_path": "certify_ten_vertex_odd_factor_equality_orbits.py",
+      "new_path": "claims/finite/n10/certify_ten_vertex_odd_factor_equality_orbits.py",
+      "source_blob": "95fa260ec633158cb2db4b6248fafaec5f7fc1c1"
+    },
+    {
+      "old_path": "certify_unary_cycle_relation_family.py",
+      "new_path": "claims/finite/n08/certify_unary_cycle_relation_family.py",
+      "source_blob": "85cc1b78d9d61928dfd7da04f38dff48e0fdef66"
+    },
+    {
+      "old_path": "certify_union_orbit_supports.py",
+      "new_path": "claims/finite/n06/certificate-chain/certify_union_orbit_supports.py",
+      "source_blob": "01c55e08c218470850422e057c00415c4c2a124c"
+    },
+    {
+      "old_path": "classify_fourteen_vertex_equality_survivor_orbits.py",
+      "new_path": "claims/finite/n14/classify_fourteen_vertex_equality_survivor_orbits.py",
+      "source_blob": "c4ab93877357e29c1da2da713a833c93ce5583eb"
+    },
+    {
+      "old_path": "classify_killer_union_support.py",
+      "new_path": "claims/finite/n06/certificate-chain/classify_killer_union_support.py",
+      "source_blob": "1155407d1935c28c27a94f06c2a25fff5c506e18"
+    },
+    {
+      "old_path": "combine_laurent_manifests.py",
+      "new_path": "claims/finite/n08/combine_laurent_manifests.py",
+      "source_blob": "ad731447ac93984895941e3741f013bb640a13d1"
+    },
+    {
+      "old_path": "component20_intrinsic_wall_exceptional_fibres_certificate.json",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/component20_intrinsic_wall_exceptional_fibres_certificate.json",
+      "source_blob": "b3547a9605c1098ddce43b06beb45faba01534fb"
+    },
+    {
+      "old_path": "component20_intrinsic_zero_diagonal_dvr_atlas_certificate.json",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/component20_intrinsic_zero_diagonal_dvr_atlas_certificate.json",
+      "source_blob": "ce11a79b2dfc4cf5340d0ead592668c2bce2e644"
+    },
+    {
+      "old_path": "decode_fourteen_vertex_two_even_cycle_extension_core.py",
+      "new_path": "claims/finite/n14/decode_fourteen_vertex_two_even_cycle_extension_core.py",
+      "source_blob": "909cec25b7f6d71528da19c7822c9e49f66dce8d"
+    },
+    {
+      "old_path": "derive_component20_intrinsic_wall_exceptional_fibres_candidate.py",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/derive_component20_intrinsic_wall_exceptional_fibres_candidate.py",
+      "source_blob": "a81a8acf254f6c417b7f0e8a047e999107dba6fb"
+    },
+    {
+      "old_path": "derive_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/derive_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py",
+      "source_blob": "5729e22dc517e49499cbbc601a4b47f9a916cb56"
+    },
+    {
+      "old_path": "derive_p4_component20_intrinsic_exceptional_base_geometry_proof_b.py",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/derive_p4_component20_intrinsic_exceptional_base_geometry_proof_b.py",
+      "source_blob": "7caeb6d0a67332945f64a850a37f090851b03d58"
+    },
+    {
+      "old_path": "derive_p4_component20_transverse_base_diagonal_fan_proof_b.py",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/derive_p4_component20_transverse_base_diagonal_fan_proof_b.py",
+      "source_blob": "de62bf786f89b1006115f03e617550e28c9a9d44"
+    },
+    {
+      "old_path": "eight_vertex_16edge_catalogue_cnf.py",
+      "new_path": "claims/finite/n08/eight_vertex_16edge_catalogue_cnf.py",
+      "source_blob": "d467049cbf9861327d3882d189b113ab0d718138"
+    },
+    {
+      "old_path": "eight_vertex_degree4_cegar.py",
+      "new_path": "src/krenn_gu/eight_vertex_degree4_cegar.py",
+      "source_blob": "445496206ab421bcdacf13e753493d9a13902683"
+    },
+    {
+      "old_path": "eight_vertex_native_kissat_laurent_batch.py",
+      "new_path": "claims/finite/n08/eight_vertex_native_kissat_laurent_batch.py",
+      "source_blob": "b417bc675a0844fa63c4aa47bf01bf5e19864ad3"
+    },
+    {
+      "old_path": "eight_vertex_no_binomial_cegar.py",
+      "new_path": "claims/finite/n08/eight_vertex_no_binomial_cegar.py",
+      "source_blob": "5e361c41ea1328bf350cc237254c04bfc3e255d8"
+    },
+    {
+      "old_path": "eight_vertex_skeleton_batch.py",
+      "new_path": "claims/finite/n08/eight_vertex_skeleton_batch.py",
+      "source_blob": "9606d5b8e8a4b6bfb7e5d15aee9b04ef844d942a"
+    },
+    {
+      "old_path": "eight_vertex_skeleton_laurent_batch.py",
+      "new_path": "claims/finite/n08/eight_vertex_skeleton_laurent_batch.py",
+      "source_blob": "c9d1d9563e21fed5115aaf65605fc43ace9e5e45"
+    },
+    {
+      "old_path": "eight_vertex_sparse_exact.py",
+      "new_path": "src/krenn_gu/eight_vertex_sparse_exact.py",
+      "source_blob": "78ed81ab9f9a4d9a4c885c55596fc0cd76fb5317"
+    },
+    {
+      "old_path": "eighth_closure_j8_and_u0_obstruction.py",
+      "new_path": "claims/p4/boundaries/inout-path-stratum/eighth_closure_j8_and_u0_obstruction.py",
+      "source_blob": "49491b5c61c36a67f5d5cf3e2d6cfc5749a9b4c7"
+    },
+    {
+      "old_path": "enumerate_cubic_rankone.py",
+      "new_path": "src/krenn_gu/enumerate_cubic_rankone.py",
+      "source_blob": "add50f9e64909d01803271585224a9f98b590cba"
+    },
+    {
+      "old_path": "enumerate_degree3_reciprocal_orbits.py",
+      "new_path": "claims/finite/n08/enumerate_degree3_reciprocal_orbits.py",
+      "source_blob": "874ae9c2e20a14b9bc10b7095d947f620089252c"
+    },
+    {
+      "old_path": "enumerate_double_c4_singleton_family.py",
+      "new_path": "claims/finite/n08/enumerate_double_c4_singleton_family.py",
+      "source_blob": "9405d455ffa148f03d9d2f0a5f8faae192dec26a"
+    },
+    {
+      "old_path": "enumerate_five_regular_double_c4_singleton_family.py",
+      "new_path": "claims/finite/n08/enumerate_five_regular_double_c4_singleton_family.py",
+      "source_blob": "9441523801028b7e20e8c2c1cdd24b44529419ae"
+    },
+    {
+      "old_path": "enumerate_five_regular_full_singleton_family.py",
+      "new_path": "claims/finite/n08/enumerate_five_regular_full_singleton_family.py",
+      "source_blob": "45d3c72fe4c2b0be6da87da398c5a13ca12a95f7"
+    },
+    {
+      "old_path": "enumerate_fourteen_vertex_one_term_matchings.py",
+      "new_path": "claims/finite/n14/enumerate_fourteen_vertex_one_term_matchings.py",
+      "source_blob": "54aa91151dfe8ca6dcb6bb2b3b602423ee0bd131"
+    },
+    {
+      "old_path": "enumerate_fourteen_vertex_two_to_three_forks.py",
+      "new_path": "claims/finite/n14/enumerate_fourteen_vertex_two_to_three_forks.py",
+      "source_blob": "ba593ddab7bc34ee98fb448d80c75e05dafae777"
+    },
+    {
+      "old_path": "enumerate_killer_union_orbits.py",
+      "new_path": "claims/finite/n06/certificate-chain/enumerate_killer_union_orbits.py",
+      "source_blob": "91525bcbbd0c30b99f1cf6ff17566cebd02800e9"
+    },
+    {
+      "old_path": "enumerate_ten_vertex_c4_c6_equality_orbits.py",
+      "new_path": "claims/finite/n10/enumerate_ten_vertex_c4_c6_equality_orbits.py",
+      "source_blob": "3181a076b5cf5c1c3ebf49e69500e3eb53daa80d"
+    },
+    {
+      "old_path": "enumerate_ten_vertex_equality_support_orbits.py",
+      "new_path": "claims/finite/n10/enumerate_ten_vertex_equality_support_orbits.py",
+      "source_blob": "2e8cecd127e8399f57b8106fcea131e07d978b1d"
+    },
+    {
+      "old_path": "exhaust_twelve_vertex_six_potential_orbits.cpp",
+      "new_path": "claims/finite/n12/exhaust_twelve_vertex_six_potential_orbits.cpp",
+      "source_blob": "790f6854c1b23e052c3fc00f4cd746248079e13e"
+    },
+    {
+      "old_path": "explore_eight_vertex_degree_six_kotzig_ports.py",
+      "new_path": "claims/finite/n08/degree-six-kotzig-port/explore_eight_vertex_degree_six_kotzig_ports.py",
+      "source_blob": "ff98926cd885bf6969eaef47e5ddbbf501229fa4"
+    },
+    {
+      "old_path": "explore_fourteen_vertex_equality_factor_family.py",
+      "new_path": "claims/finite/n14/explore_fourteen_vertex_equality_factor_family.py",
+      "source_blob": "ce3ff48f5e72538a852274cb7d4ff17f9f95dab9"
+    },
+    {
+      "old_path": "explore_random_even_cycle_forks.py",
+      "new_path": "src/krenn_gu/explore_random_even_cycle_forks.py",
+      "source_blob": "203e8b616bbebff4b581074c065e7252f99bf22b"
+    },
+    {
+      "old_path": "explore_random_minimal_singleton_sets.py",
+      "new_path": "claims/finite/n14/explore_random_minimal_singleton_sets.py",
+      "source_blob": "17f07c325ee79e78104adb4c04311747addf8aaa"
+    },
+    {
+      "old_path": "explore_random_odd_factor_one_term.py",
+      "new_path": "tools/explore/explore_random_odd_factor_one_term.py",
+      "source_blob": "beda742ff64781a0a9f796f10fd29e2e767e8369"
+    },
+    {
+      "old_path": "explore_ten_vertex_c10_lattice.py",
+      "new_path": "claims/finite/n10/explore_ten_vertex_c10_lattice.py",
+      "source_blob": "f4a779b05ee149dffac35852a082512208554c3e"
+    },
+    {
+      "old_path": "explore_ten_vertex_degree_six_kotzig_ports.py",
+      "new_path": "claims/finite/n10/degree-six-kotzig-port/explore_ten_vertex_degree_six_kotzig_ports.py",
+      "source_blob": "86878905b4fcfc1e9b994f5a195d71fac18be8b1"
+    },
+    {
+      "old_path": "explore_ten_vertex_equality_factor_lattice.py",
+      "new_path": "claims/finite/n10/explore_ten_vertex_equality_factor_lattice.py",
+      "source_blob": "deae3fccdc4373b85596e497dc9da17f34a147fc"
+    },
+    {
+      "old_path": "extract_fourteen_vertex_forced_slice_factor_cegar_core.py",
+      "new_path": "claims/finite/n14/extract_fourteen_vertex_forced_slice_factor_cegar_core.py",
+      "source_blob": "8976723495d58aad7f1f7da55b921f8f5edb4f41"
+    },
+    {
+      "old_path": "factor_lattice_cegar.py",
+      "new_path": "claims/finite/n08/factor_lattice_cegar.py",
+      "source_blob": "d414abb38ca2acf2fad9d3089615d1dd32619a2d"
+    },
+    {
+      "old_path": "find_fourteen_vertex_two_to_three_fork.py",
+      "new_path": "claims/finite/n14/find_fourteen_vertex_two_to_three_fork.py",
+      "source_blob": "790ae755952514b97b7cae7bb238285550ec422f"
+    },
+    {
+      "old_path": "generate_batch_fallback_singular.py",
+      "new_path": "claims/finite/n08/generate_batch_fallback_singular.py",
+      "source_blob": "7f0fd9dda00ea759a4cf4744d273b99339a1c068"
+    },
+    {
+      "old_path": "generate_partial_support_singular.py",
+      "new_path": "claims/finite/n08/generate_partial_support_singular.py",
+      "source_blob": "e2ac9aad9f07f67b58b6b3402ccccbe0e359bc75"
+    },
+    {
+      "old_path": "generate_prism_singular.py",
+      "new_path": "src/krenn_gu/generate_prism_singular.py",
+      "source_blob": "7eda7ab9929c56a97656b2e30a5c57aedaf151cd"
+    },
+    {
+      "old_path": "global_candidate_laurent_cegar.py",
+      "new_path": "claims/finite/n06/certificate-chain/global_candidate_laurent_cegar.py",
+      "source_blob": "c72e476af5aaeeaec361cedca81bc7d967e428a3"
+    },
+    {
+      "old_path": "global_support_sat.py",
+      "new_path": "claims/finite/n06/certificate-chain/global_support_sat.py",
+      "source_blob": "0b4d2039f29fc848f891598d8a763d2a3bc045c7"
+    },
+    {
+      "old_path": "inspect_prism_support_model.py",
+      "new_path": "tools/explore/inspect_prism_support_model.py",
+      "source_blob": "0db21e1414038d0e4f21075403abeeeedcf70d2c"
+    },
+    {
+      "old_path": "integer_constant_lattice.py",
+      "new_path": "src/krenn_gu/integer_constant_lattice.py",
+      "source_blob": "ca43c6415baa990133c3d0c1fb136f788fa35810"
+    },
+    {
+      "old_path": "integer_signed_lattice.py",
+      "new_path": "src/krenn_gu/integer_signed_lattice.py",
+      "source_blob": "f967e155cc36db48b4922249b2d77ccd90ceacea"
+    },
+    {
+      "old_path": "iterate_eight_vertex_selector_cegar.py",
+      "new_path": "claims/finite/n08/iterate_eight_vertex_selector_cegar.py",
+      "source_blob": "65b86903494944c0fd144a3575de28c7f54895d0"
+    },
+    {
+      "old_path": "iterate_eight_vertex_singular_cegar.py",
+      "new_path": "claims/finite/n08/iterate_eight_vertex_singular_cegar.py",
+      "source_blob": "20564f0c336b2fb963be056dde7f3e6379a36443"
+    },
+    {
+      "old_path": "k33_support_analysis.py",
+      "new_path": "claims/finite/n06/certificate-chain/k33_support_analysis.py",
+      "source_blob": "22678e21aea387b36e3ea2280c0f66d852c483b9"
+    },
+    {
+      "old_path": "killer_pattern_certificates.py",
+      "new_path": "src/krenn_gu/killer_pattern_certificates.py",
+      "source_blob": "d24016bd820be2f393f79b99f144d4ec5d0a9eb1"
+    },
+    {
+      "old_path": "killer_union_stratum.py",
+      "new_path": "claims/finite/n06/certificate-chain/killer_union_stratum.py",
+      "source_blob": "7a607ed91ab3ce6e7207aaf5086f1090e97eb2d5"
+    },
+    {
+      "old_path": "learn_partial_support_singular_clauses.py",
+      "new_path": "claims/finite/n08/learn_partial_support_singular_clauses.py",
+      "source_blob": "7e9b3cf40055e543d738e7abad1cd147d93dfb4f"
+    },
+    {
+      "old_path": "learn_singular_fallback_clauses.py",
+      "new_path": "claims/finite/n08/learn_singular_fallback_clauses.py",
+      "source_blob": "a99b9cd27c4933f0e931fad5d62d82cbb0b3e1db"
+    },
+    {
+      "old_path": "materialize_eight_vertex_role.py",
+      "new_path": "claims/finite/n08/materialize_eight_vertex_role.py",
+      "source_blob": "8c95be0b19a7fd4b5a54d267feba43d92418efa6"
+    },
+    {
+      "old_path": "materialize_exact_entry_support.py",
+      "new_path": "claims/finite/n08/materialize_exact_entry_support.py",
+      "source_blob": "c8c6a14af35ccbc804a4e4e62b95468770886540"
+    },
+    {
+      "old_path": "materialize_static_no_binomial_entry_bound_role.py",
+      "new_path": "claims/finite/n08/materialize_static_no_binomial_entry_bound_role.py",
+      "source_blob": "ae2da4c255b3fad45aace8db579154e0e9d1ccc6"
+    },
+    {
+      "old_path": "materialize_static_no_binomial_outside_family_role.py",
+      "new_path": "claims/finite/n08/materialize_static_no_binomial_outside_family_role.py",
+      "source_blob": "e9c494fb67f2345345339fed4d6a18acf4326aad"
+    },
+    {
+      "old_path": "minimize_fourteen_vertex_two_even_cycle_certificate_activation.py",
+      "new_path": "claims/finite/n14/minimize_fourteen_vertex_two_even_cycle_certificate_activation.py",
+      "source_blob": "56640e4923e4627086c8d8a46ab9b4ecafcb7996"
+    },
+    {
+      "old_path": "minimize_singular_fallback_core.py",
+      "new_path": "claims/finite/n06/certificate-chain/minimize_singular_fallback_core.py",
+      "source_blob": "2fee5e8a352b07892dd18be3bbce5f7a29d7abd4"
+    },
+    {
+      "old_path": "odd_binomial_cycle.py",
+      "new_path": "src/krenn_gu/odd_binomial_cycle.py",
+      "source_blob": "0fe13f408eb1249822c7b21a0b19691ec81fea49"
+    },
+    {
+      "old_path": "prism_boundary.py",
+      "new_path": "claims/finite/n06/certificate-chain/prism_boundary.py",
+      "source_blob": "3326ff6ef17a715a403fa0913453e8f6b20a687b"
+    },
+    {
+      "old_path": "prism_laurent_reduction.py",
+      "new_path": "src/krenn_gu/prism_laurent_reduction.py",
+      "source_blob": "31f76c3a6d276addb8892a0802f6bcf71d9eeaa7"
+    },
+    {
+      "old_path": "prism_matrix_core.py",
+      "new_path": "claims/finite/n06/certificate-chain/prism_matrix_core.py",
+      "source_blob": "6b881cd41df952c103ce90586d14d114b293ab9b"
+    },
+    {
+      "old_path": "prism_orbit_batch.py",
+      "new_path": "claims/finite/n06/certificate-chain/prism_orbit_batch.py",
+      "source_blob": "88e316e7d0133f5d38a7da3329b91e1a692dfb12"
+    },
+    {
+      "old_path": "prism_orbit_screen.py",
+      "new_path": "src/krenn_gu/prism_orbit_screen.py",
+      "source_blob": "47aba98da8113bc90882883ea6a57f4bd6289dfc"
+    },
+    {
+      "old_path": "prism_partial_core.py",
+      "new_path": "claims/finite/n06/certificate-chain/prism_partial_core.py",
+      "source_blob": "2de6a2af2a311e0dd54e115fd6516e8a086feb6c"
+    },
+    {
+      "old_path": "prism_partial_parameterization.py",
+      "new_path": "claims/finite/n06/certificate-chain/prism_partial_parameterization.py",
+      "source_blob": "00ee83b8bf16b099b26593f1c689e37e63d4940e"
+    },
+    {
+      "old_path": "prism_rankone_parameterization.py",
+      "new_path": "src/krenn_gu/prism_rankone_parameterization.py",
+      "source_blob": "83a203daa167f6ba2b4b5669aaf4cc761af8a928"
+    },
+    {
+      "old_path": "prism_support_core.py",
+      "new_path": "claims/finite/n06/certificate-chain/prism_support_core.py",
+      "source_blob": "b98befa2d6691d47b6f1d033b78f49ae0fd919db"
+    },
+    {
+      "old_path": "prism_support_sat.py",
+      "new_path": "claims/finite/n06/certificate-chain/prism_support_sat.py",
+      "source_blob": "812c077942d9e5984189a07611293968eb88695a"
+    },
+    {
+      "old_path": "rankone_support_sat.py",
+      "new_path": "src/krenn_gu/rankone_support_sat.py",
+      "source_blob": "0671ebdaa410943f455fc038000829c1ced08a0f"
+    },
+    {
+      "old_path": "recover_native_kissat_conflicts.py",
+      "new_path": "claims/finite/n08/recover_native_kissat_conflicts.py",
+      "source_blob": "6ceb575d10fbcfe9fb560c2b5bd9944dd3066fc0"
+    },
+    {
+      "old_path": "run_degree3_e19_orbit_cases.py",
+      "new_path": "claims/finite/n08/run_degree3_e19_orbit_cases.py",
+      "source_blob": "770e36f1a13678e14fa395e095bd0102f36b6588"
+    },
+    {
+      "old_path": "run_fourteen_vertex_c4_c4_c6_rule_sat_cegar.py",
+      "new_path": "claims/finite/n14/run_fourteen_vertex_c4_c4_c6_rule_sat_cegar.py",
+      "source_blob": "a4ec55dc832d31b4077e9856f33c7df2d6e739b7"
+    },
+    {
+      "old_path": "run_fourteen_vertex_c4_c4_c6_rule_sat_incremental.py",
+      "new_path": "claims/finite/n14/run_fourteen_vertex_c4_c4_c6_rule_sat_incremental.py",
+      "source_blob": "71f015d3c4563643b189387bf6e3d7464958cac4"
+    },
+    {
+      "old_path": "run_fourteen_vertex_even_cycle_factor_fork_batch.py",
+      "new_path": "claims/finite/n14/run_fourteen_vertex_even_cycle_factor_fork_batch.py",
+      "source_blob": "93c8d739366b19a51d959c80252601d0e64ac181"
+    },
+    {
+      "old_path": "run_fourteen_vertex_mandatory_unit_binomial_cegar.py",
+      "new_path": "claims/finite/n14/run_fourteen_vertex_mandatory_unit_binomial_cegar.py",
+      "source_blob": "8ee21e0f97d1632ae4b0bc917fc69a4d45ff1075"
+    },
+    {
+      "old_path": "run_fourteen_vertex_one_extra_cycle_core_incremental.py",
+      "new_path": "claims/finite/n14/run_fourteen_vertex_one_extra_cycle_core_incremental.py",
+      "source_blob": "7c08ca89c7a55dc90d2f33a6468174985c5c3d4c"
+    },
+    {
+      "old_path": "run_fourteen_vertex_partial_circuit_binomial_selection_cegar.py",
+      "new_path": "claims/finite/n14/run_fourteen_vertex_partial_circuit_binomial_selection_cegar.py",
+      "source_blob": "5255d90409a1529530c1287314455b44a7013f74"
+    },
+    {
+      "old_path": "run_fourteen_vertex_partial_circuit_lattice_cegar.py",
+      "new_path": "claims/finite/n14/run_fourteen_vertex_partial_circuit_lattice_cegar.py",
+      "source_blob": "eda58d32879e36f3478dc4a39f2283f923cd1e4c"
+    },
+    {
+      "old_path": "run_fourteen_vertex_symmetry_binomial_cegar.py",
+      "new_path": "claims/finite/n14/run_fourteen_vertex_symmetry_binomial_cegar.py",
+      "source_blob": "86717f34c6a2fc403356591c496127fa2447671c"
+    },
+    {
+      "old_path": "run_fourteen_vertex_two_even_cycle_rule_sat_incremental.py",
+      "new_path": "claims/finite/n14/run_fourteen_vertex_two_even_cycle_rule_sat_incremental.py",
+      "source_blob": "58515fd6cb1aa86b02ae2f7d8db783a30d5b4029"
+    },
+    {
+      "old_path": "sample_fourteen_vertex_equality_supports.py",
+      "new_path": "claims/finite/n14/sample_fourteen_vertex_equality_supports.py",
+      "source_blob": "4350f914e3626928f66777bdadc4aaea18dd4df5"
+    },
+    {
+      "old_path": "sample_fourteen_vertex_random_equality_supports.py",
+      "new_path": "claims/finite/n14/sample_fourteen_vertex_random_equality_supports.py",
+      "source_blob": "7fa0819f2674cf2527c340fa864c39f24ff46b32"
+    },
+    {
+      "old_path": "sample_fourteen_vertex_two_even_cycle_rule_cnf.py",
+      "new_path": "claims/finite/n14/sample_fourteen_vertex_two_even_cycle_rule_cnf.py",
+      "source_blob": "4255a74a08178ed3c522f332edd6153dec42c2c3"
+    },
+    {
+      "old_path": "scout_kotzig_full_cone_cells.py",
+      "new_path": "tools/explore/scout_kotzig_full_cone_cells.py",
+      "source_blob": "e9b6bfc1ea8fdb4af90af3d1f7ca4997ae5d2fb8"
+    },
+    {
+      "old_path": "search_adversarial_fourteen_vertex_potential_residuals.py",
+      "new_path": "tools/explore/search_adversarial_fourteen_vertex_potential_residuals.py",
+      "source_blob": "30907ec01dd7fae24f377446bc06002d17600dca"
+    },
+    {
+      "old_path": "search_fourteen_vertex_direct_free.py",
+      "new_path": "claims/finite/n14/search_fourteen_vertex_direct_free.py",
+      "source_blob": "d496ca9c2cfdce036bfb0c88631c99a2aa538b2f"
+    },
+    {
+      "old_path": "search_fourteen_vertex_no_matching_fork.py",
+      "new_path": "claims/finite/n14/search_fourteen_vertex_no_matching_fork.py",
+      "source_blob": "c48db33f2af9c130e70572fe504b9dcbcca7be04"
+    },
+    {
+      "old_path": "search_fourteen_vertex_no_three_extension.py",
+      "new_path": "claims/finite/n14/search_fourteen_vertex_no_three_extension.py",
+      "source_blob": "ed272cd779e0341b7357d5b2461cd76ee80c4821"
+    },
+    {
+      "old_path": "search_killer_patterns.py",
+      "new_path": "src/krenn_gu/search_killer_patterns.py",
+      "source_blob": "2d87122b6c16a1bbae287a53a48d42320374d412"
+    },
+    {
+      "old_path": "search_minimal_singleton_counterexample.py",
+      "new_path": "claims/finite/n14/search_minimal_singleton_counterexample.py",
+      "source_blob": "beead5e9dde2e1d54babf9bf66423e6e7d10d868"
+    },
+    {
+      "old_path": "search_mixed_reciprocal_equality_support.py",
+      "new_path": "claims/finite/n08/search_mixed_reciprocal_equality_support.py",
+      "source_blob": "cf4fe7905b38752051538c9b12ac89db4ca276a0"
+    },
+    {
+      "old_path": "search_prism_stratum.py",
+      "new_path": "src/krenn_gu/search_prism_stratum.py",
+      "source_blob": "b94529f8356cb551afec16fcd352fe04e851bae7"
+    },
+    {
+      "old_path": "search_random_fourteen_vertex_potential_residuals.py",
+      "new_path": "tools/explore/search_random_fourteen_vertex_potential_residuals.py",
+      "source_blob": "1b9c06cab02b4b6beb9467afcacbeecdf18bc058"
+    },
+    {
+      "old_path": "search_witness.py",
+      "new_path": "src/krenn_gu/search_witness.py",
+      "source_blob": "87ec8309a3ffeda7ba16ad2c8bf93711ec00d38c"
+    },
+    {
+      "old_path": "signed_binomial_lattice.py",
+      "new_path": "src/krenn_gu/signed_binomial_lattice.py",
+      "source_blob": "486cdbf9bfcf42d4f743bc60f8d1f49a1e6f61eb"
+    },
+    {
+      "old_path": "singleton_slice_minors.py",
+      "new_path": "claims/finite/n08/singleton_slice_minors.py",
+      "source_blob": "8b478277ae935c438447eb619b597bb3e50348b7"
+    },
+    {
+      "old_path": "snapshot_no_binomial_workdirs.py",
+      "new_path": "claims/finite/n08/snapshot_no_binomial_workdirs.py",
+      "source_blob": "f6f554e542496df4d85933d6a5a6998e96f1f0c1"
+    },
+    {
+      "old_path": "solve_fixed_separator_orbits_incremental.py",
+      "new_path": "claims/finite/n06/certificate-chain/solve_fixed_separator_orbits_incremental.py",
+      "source_blob": "7b3d6f7c7da3f223a62124258c62383262060167"
+    },
+    {
+      "old_path": "solve_prism_core.py",
+      "new_path": "tools/explore/solve_prism_core.py",
+      "source_blob": "fa330a4f0856c2e23de95e442bc9bf4030d99ed0"
+    },
+    {
+      "old_path": "support_toric_degeneration.py",
+      "new_path": "claims/finite/n08/support_toric_degeneration.py",
+      "source_blob": "2841ea1004862be65ea68f22b86f3e1878b58bb8"
+    },
+    {
+      "old_path": "test_fourteen_vertex_cycle_cover_lattice.py",
+      "new_path": "tests/test_fourteen_vertex_cycle_cover_lattice.py",
+      "source_blob": "9f1cba0898a5f0f5c70638fc6669242246a5c791"
+    },
+    {
+      "old_path": "test_fourteen_vertex_minimum_activity_certificate.py",
+      "new_path": "tests/test_fourteen_vertex_minimum_activity_certificate.py",
+      "source_blob": "13f86fe15aeee1a66f9ba492185bf874e9d04878"
+    },
+    {
+      "old_path": "test_fourteen_vertex_two_even_cycle_rule_sat.py",
+      "new_path": "tests/test_fourteen_vertex_two_even_cycle_rule_sat.py",
+      "source_blob": "b496af1adb8dda311a962746d78b82c7c0a76e85"
+    },
+    {
+      "old_path": "test_search_witness.py",
+      "new_path": "tests/test_search_witness.py",
+      "source_blob": "3aae32d0f491cbf89efd19aa76bb70f55decdf08"
+    },
+    {
+      "old_path": "two_vertex_divisibility.py",
+      "new_path": "claims/finite/n06/certificate-chain/two_vertex_divisibility.py",
+      "source_blob": "c32512b8a1e5837cc9cf66bbc005bebb52bf4ac1"
+    },
+    {
+      "old_path": "two_vertex_quotient.py",
+      "new_path": "tools/explore/two_vertex_quotient.py",
+      "source_blob": "f489cced5c4e316db7a5bb2e231c0a5b30af902f"
+    },
+    {
+      "old_path": "verify_all_degree3_singleton_stars.py",
+      "new_path": "claims/finite/n08/verify_all_degree3_singleton_stars.py",
+      "source_blob": "aa44abd40678a5d53ce6170044e9a5aaed7c0823"
+    },
+    {
+      "old_path": "verify_all_prism_orbits.py",
+      "new_path": "claims/finite/n06/certificate-chain/verify_all_prism_orbits.py",
+      "source_blob": "226f3566ed58452ef5436eaa26ceb1fd87704cbd"
+    },
+    {
+      "old_path": "verify_candidate_separator_orbits.py",
+      "new_path": "claims/finite/n06/certificate-chain/verify_candidate_separator_orbits.py",
+      "source_blob": "80e9dd9d7c498f89375fab570a4e3bda0a9d2cda"
+    },
+    {
+      "old_path": "verify_candidate_tutte_patterns.py",
+      "new_path": "claims/finite/n06/certificate-chain/verify_candidate_tutte_patterns.py",
+      "source_blob": "372a8958a5f0d08193bac7cdc121d5ec97a9c921"
+    },
+    {
+      "old_path": "verify_certified_entry_bound_augmentation.py",
+      "new_path": "claims/finite/n08/verify_certified_entry_bound_augmentation.py",
+      "source_blob": "c5b0d28c32510a5253fc12ba1aeaa6f4e9b0b4b7"
+    },
+    {
+      "old_path": "verify_degree3_anchor_reciprocal_dichotomy.py",
+      "new_path": "claims/finite/n08/verify_degree3_anchor_reciprocal_dichotomy.py",
+      "source_blob": "82f1e4ea74bf81e9e062d307cd2090e384221bff"
+    },
+    {
+      "old_path": "verify_degree3_pure_minor_constraints.py",
+      "new_path": "claims/finite/n08/verify_degree3_pure_minor_constraints.py",
+      "source_blob": "978e8f2c8b7e411cf7cb0b32d5da6211f8760eaf"
+    },
+    {
+      "old_path": "verify_degree3_pure_tensor_support.py",
+      "new_path": "claims/finite/n08/verify_degree3_pure_tensor_support.py",
+      "source_blob": "a5f776bcadba5bb7ea4ff413f7f5cdc82db12adc"
+    },
+    {
+      "old_path": "verify_degree3_reciprocal_orbits.py",
+      "new_path": "claims/finite/n08/verify_degree3_reciprocal_orbits.py",
+      "source_blob": "16137a936f2ed482d5bdb58323324e53b2d92562"
+    },
+    {
+      "old_path": "verify_degree_five_plane_extension.py",
+      "new_path": "claims/finite/n08/verify_degree_five_plane_extension.py",
+      "source_blob": "5728660086d06061865eebbdf4ed2f097c94d96b"
+    },
+    {
+      "old_path": "verify_double_c4_singleton_family.py",
+      "new_path": "claims/finite/n08/verify_double_c4_singleton_family.py",
+      "source_blob": "11c83b0905bd9eef52a1dbabe9180096134a1872"
+    },
+    {
+      "old_path": "verify_eight_vertex_degree3_e18.py",
+      "new_path": "claims/finite/n08/verify_eight_vertex_degree3_e18.py",
+      "source_blob": "7e45643ad3c76d68211946dc3b72dff74c78be5c"
+    },
+    {
+      "old_path": "verify_factor_lattice_cegar.py",
+      "new_path": "claims/finite/n08/verify_factor_lattice_cegar.py",
+      "source_blob": "a99f4f639df9db85b777cd77f763511c1a5df2e6"
+    },
+    {
+      "old_path": "verify_five_root_diagonal_target_incidence_schubert_duality_and_cofactor_line.py",
+      "new_path": "claims/p7/five-root-diagonal-target-incidence/verify_five_root_diagonal_target_incidence_schubert_duality_and_cofactor_line.py",
+      "source_blob": "c7ee6deeeb81e4ba9070efa9a5c1548f759eca3e"
+    },
+    {
+      "old_path": "verify_five_row_projective_incidence.py",
+      "new_path": "claims/p5/frontier/five-row-projective-incidence/verify_five_row_projective_incidence.py",
+      "source_blob": "65fcd21e1d9f253d98ea373a55b0fe4bc933b0e8"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c14_rectangle_theorem.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c14_rectangle_theorem.py",
+      "source_blob": "84341d5bcabe02781ea2decb5b876872d2d19350"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_10_orbit0.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_10_orbit0.py",
+      "source_blob": "78cf56c2ec2d8154296de75d717d67c333ae0c1c"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_colour_symmetric_orbit_exclusions.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_colour_symmetric_orbit_exclusions.py",
+      "source_blob": "c4a5750502f2c1c9e0da1e0cd08c14b032009bda"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_new5_orbits.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_new5_orbits.py",
+      "source_blob": "70438b6e78eb77255b7425efdb7f438e7ed38b78"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit44_core24_models.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit44_core24_models.py",
+      "source_blob": "019b111fa0276885b34bc19828cbda038dced35d"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_rule_cnf.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_rule_cnf.py",
+      "source_blob": "8d0ace9d77019bc0049e318b4d772759038a16f9"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_126_orbits_kappa3.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_126_orbits_kappa3.py",
+      "source_blob": "cd72b0a1eef70fcab9145f2a547488c9eac4ac05"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_127_orbits_kappa3.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_127_orbits_kappa3.py",
+      "source_blob": "c23d63ccfcffc4b81bcd29ff3113753bb966d045"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_128_orbits_kappa3.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_128_orbits_kappa3.py",
+      "source_blob": "9252e5d63bc84d81057b6df398eed29edbbf0466"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_129_orbits_kappa3.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_129_orbits_kappa3.py",
+      "source_blob": "b5dc9757b0ae459f61b97772daefe0d670768427"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_kappa3_extension_step.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_kappa3_extension_step.py",
+      "source_blob": "2e20e6613cd4b36da34b24e765d2278cc0791f09"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_cancellation_transport.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_cancellation_transport.py",
+      "source_blob": "8da631195b32a4a16a0ae4e25ae3eaca817ad2d5"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_equality_survivor_signed_lattice.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_equality_survivor_signed_lattice.py",
+      "source_blob": "cc26ce544c434c47eb5b01e866dc6f8171d5b878"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_even_cycle_double_pair_fork.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_even_cycle_double_pair_fork.py",
+      "source_blob": "0544c8dc224394a89fbd22e09f44e0b0fa99b92b"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_forced_slice_factor_cegar.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_forced_slice_factor_cegar.py",
+      "source_blob": "14beed1d32722234374790bfa34290e542290b31"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_forced_slice_factor_cegar_core.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_forced_slice_factor_cegar_core.py",
+      "source_blob": "0a49c720665a2915aea0258ef08a0693849bc177"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_minimal_singleton_circuit_augmentation.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_minimal_singleton_circuit_augmentation.py",
+      "source_blob": "91b537f50fc4891924fd8819dc530e8fd9385d17"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_minimal_singleton_circuit_factors.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_minimal_singleton_circuit_factors.py",
+      "source_blob": "d74323eb19cbf9affe9c1fbfe326b35555b99a96"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_partial_circuit_amplitude_lattice.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_partial_circuit_amplitude_lattice.py",
+      "source_blob": "aad5646a5ee704b738a89d223c3e9c1982505117"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_partial_circuit_cegar_chain.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_partial_circuit_cegar_chain.py",
+      "source_blob": "a3c043c1675b258ab76e53cd1774a1bc293c9bf3"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_two_even_cycle_minimum_activity_certificate.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_two_even_cycle_minimum_activity_certificate.py",
+      "source_blob": "ac508702ade7c9e4320d81a261e6b93cd3496637"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_two_even_cycle_rule_cnf.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_two_even_cycle_rule_cnf.py",
+      "source_blob": "332dd76364e25bd7a814b26ee8d3c0a409d8af75"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_two_even_cycle_three_connectivity_augmentation.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_two_even_cycle_three_connectivity_augmentation.py",
+      "source_blob": "ecc8a28b4423d34e1efdcac44bb77e5fed94784c"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_two_even_cycle_unforced_factor_core_augmentation.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_two_even_cycle_unforced_factor_core_augmentation.py",
+      "source_blob": "16e497041cd2020f5ff2a110e26e690deae31847"
+    },
+    {
+      "old_path": "verify_full_admissible_potential_cone.py",
+      "new_path": "claims/arbitrary-order/verify_full_admissible_potential_cone.py",
+      "source_blob": "863885ae846e51873a2a8c2b8521bb02988cfb25"
+    },
+    {
+      "old_path": "verify_gauge_audited_union_orbits.py",
+      "new_path": "claims/finite/n06/certificate-chain/verify_gauge_audited_union_orbits.py",
+      "source_blob": "3b78150fb1f62e4007d3658ffefeeb2a7bb32cd7"
+    },
+    {
+      "old_path": "verify_gauge_partition.py",
+      "new_path": "claims/finite/n06/certificate-chain/verify_gauge_partition.py",
+      "source_blob": "eb8be4f9c5f564c5e348cd1a7dc532ca2d14ed91"
+    },
+    {
+      "old_path": "verify_global_candidate_cegar.py",
+      "new_path": "claims/finite/n06/certificate-chain/verify_global_candidate_cegar.py",
+      "source_blob": "b2afcefde3ef829017083840ab48dba84b648c46"
+    },
+    {
+      "old_path": "verify_global_pattern_orbits.py",
+      "new_path": "claims/finite/n06/certificate-chain/verify_global_pattern_orbits.py",
+      "source_blob": "97d84d7d59747e482be42dbcc9084cc73a461628"
+    },
+    {
+      "old_path": "verify_k33_drat.py",
+      "new_path": "claims/finite/n06/certificate-chain/verify_k33_drat.py",
+      "source_blob": "021daa02ecc2835473c3bc9955bbb3d1aa3f52f4"
+    },
+    {
+      "old_path": "verify_killer_union_orbits.py",
+      "new_path": "claims/finite/n06/certificate-chain/verify_killer_union_orbits.py",
+      "source_blob": "3cf78d631204e55cd1c36d1c6fcb8300b4c79044"
+    },
+    {
+      "old_path": "verify_materialized_dimacs_clause_set.py",
+      "new_path": "claims/finite/n08/verify_materialized_dimacs_clause_set.py",
+      "source_blob": "66c5c81584e55d67f7f7d598b64a3d5cd0f67884"
+    },
+    {
+      "old_path": "verify_mixed_reciprocal_equality_support.py",
+      "new_path": "claims/finite/n08/verify_mixed_reciprocal_equality_support.py",
+      "source_blob": "1f68e1252fbd9c91ca236b241b965999bff74dbf"
+    },
+    {
+      "old_path": "verify_mixed_singleton_countermodels.py",
+      "new_path": "claims/finite/n08/verify_mixed_singleton_countermodels.py",
+      "source_blob": "1b7db1b2d925108533ac4a1e88a9d799c7ed55d6"
+    },
+    {
+      "old_path": "verify_no_binomial_augmentation.py",
+      "new_path": "claims/finite/n08/verify_no_binomial_augmentation.py",
+      "source_blob": "102ba55ec002beea8c9d0f71b016eb3e27a4739e"
+    },
+    {
+      "old_path": "verify_p3_decomposable_restriction_classification.py",
+      "new_path": "claims/p3/restrictions/verify_p3_decomposable_restriction_classification.py",
+      "source_blob": "34f9e411bc826c21f7d6e2e63e7afa1fc405371f"
+    },
+    {
+      "old_path": "verify_p3_zero_hyperplane_product.py",
+      "new_path": "claims/p3/restrictions/verify_p3_zero_hyperplane_product.py",
+      "source_blob": "c9acc101fdbb881608492c62e81e15b40b77e7fb"
+    },
+    {
+      "old_path": "verify_p4_common_active_binary_triangle_p_plus_q_boundary.py",
+      "new_path": "claims/p4/boundaries/component20-p-plus-q-wall/verify_p4_common_active_binary_triangle_p_plus_q_boundary.py",
+      "source_blob": "423fee323fb456dfaf4c40a4ef2941fbd50679b6"
+    },
+    {
+      "old_path": "verify_p4_inout_path_stratum_working_note.py",
+      "new_path": "claims/p4/boundaries/inout-path-stratum/verify_p4_inout_path_stratum_working_note.py",
+      "source_blob": "9329a4e95152ed740a529983d02657f5659cb257"
+    },
+    {
+      "old_path": "verify_p4_mixed_two_rank_two_triangle_obstruction_withdrawn_pending_borel_audit.py",
+      "new_path": "claims/p4/history/mixed-two-rank-two-triangle/verify_p4_mixed_two_rank_two_triangle_obstruction_withdrawn_pending_borel_audit.py",
+      "source_blob": "f9af34c9e3cd26df0844ba25055daf88f46d114e"
+    },
+    {
+      "old_path": "verify_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py",
+      "new_path": "claims/p4/history/rank-two-relation-star/verify_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py",
+      "source_blob": "ab76c9440a2d8a3defee736fa419c5646cf6dd10"
+    },
+    {
+      "old_path": "verify_p4_resonant_flat_triangle_classification_withdrawn_overstrong.py",
+      "new_path": "claims/p4/history/resonant-flat-triangle/verify_p4_resonant_flat_triangle_classification_withdrawn_overstrong.py",
+      "source_blob": "72dde92b3afe0a1f78d8fe0d71db1b322b3d03bc"
+    },
+    {
+      "old_path": "verify_partial_support_singular.py",
+      "new_path": "claims/finite/n08/verify_partial_support_singular.py",
+      "source_blob": "112b4e73633724df9c318e62b5c12b23f5bd2033"
+    },
+    {
+      "old_path": "verify_prism_certificates.py",
+      "new_path": "claims/finite/n06/certificate-chain/verify_prism_certificates.py",
+      "source_blob": "3dfc995a509ce93a984189a135b47b7d98d4a38d"
+    },
+    {
+      "old_path": "verify_prism_laurent.py",
+      "new_path": "claims/finite/n06/certificate-chain/verify_prism_laurent.py",
+      "source_blob": "a82d6ac0f2c7a965eb0d7c160d286a0d81188a16"
+    },
+    {
+      "old_path": "verify_q2_herald_promotion_rank_barrier.py",
+      "new_path": "claims/finite/n06/q2-k4-d4-construction/verify_q2_herald_promotion_rank_barrier.py",
+      "source_blob": "e9dce79546b902e11b404d70885ea8e0ffc222a7"
+    },
+    {
+      "old_path": "verify_q2_n6_k4_d4_construction.py",
+      "new_path": "claims/finite/n06/q2-k4-d4-construction/verify_q2_n6_k4_d4_construction.py",
+      "source_blob": "3ca813ed33217836a943b27492f04438e106202f"
+    },
+    {
+      "old_path": "verify_q2_n6_k4_d4_family.py",
+      "new_path": "claims/finite/n06/q2-k4-d4-construction/verify_q2_n6_k4_d4_family.py",
+      "source_blob": "1fa07f4638a221766e2651ff492f51ddb4194d7c"
+    },
+    {
+      "old_path": "verify_reciprocal_cardinality.py",
+      "new_path": "claims/finite/n08/verify_reciprocal_cardinality.py",
+      "source_blob": "983cc5e9eb4b1db4801ad23c4b0b7ff4988e4b64"
+    },
+    {
+      "old_path": "verify_reciprocal_killer_partition.py",
+      "new_path": "claims/finite/n08/verify_reciprocal_killer_partition.py",
+      "source_blob": "c11b0dd139abde8b35c472f2bf49a9ef60325bef"
+    },
+    {
+      "old_path": "verify_shared_backup_zero_extension.py",
+      "new_path": "claims/finite/n08/verify_shared_backup_zero_extension.py",
+      "source_blob": "dc606a2f9bc22fe203c4ab2e3ac4ba61e73d2fcc"
+    },
+    {
+      "old_path": "verify_singular_fallback_manifest.py",
+      "new_path": "claims/finite/n08/verify_singular_fallback_manifest.py",
+      "source_blob": "fd877bf0996c11de1bd452abc1da23fcaafc98c7"
+    },
+    {
+      "old_path": "verify_state_lift_cycle_fibres.py",
+      "new_path": "claims/arbitrary-order/history/state-lift-cycle-fibre/verify_state_lift_cycle_fibres.py",
+      "source_blob": "2079bb56508eca13131b6604e88ed7fdd03c9b17"
+    },
+    {
+      "old_path": "verify_static_no_binomial_entry_bound_role.py",
+      "new_path": "claims/finite/n08/verify_static_no_binomial_entry_bound_role.py",
+      "source_blob": "be3d0c952ff71e067b643251786ca43a3cb22e0e"
+    },
+    {
+      "old_path": "verify_static_no_binomial_outside_family_role.py",
+      "new_path": "claims/finite/n08/verify_static_no_binomial_outside_family_role.py",
+      "source_blob": "006406e79dbf88e9544b575c6e0a68d351ea0006"
+    },
+    {
+      "old_path": "verify_support_toric_census.py",
+      "new_path": "claims/finite/n08/verify_support_toric_census.py",
+      "source_blob": "a4023d95e1463cc3ce076f02c0aed7490c45417c"
+    },
+    {
+      "old_path": "verify_tutte_cegar_separator_orbits.py",
+      "new_path": "claims/finite/n06/certificate-chain/verify_tutte_cegar_separator_orbits.py",
+      "source_blob": "bf1465e9a720636800d45acc5b4f1e333ffe2e0e"
+    },
+    {
+      "old_path": "verify_universal_saturated_diagonal_zero_layer.py",
+      "new_path": "claims/arbitrary-order/verify_universal_saturated_diagonal_zero_layer.py",
+      "source_blob": "6103159054b540ba2e153e88de70d7a5f233d24f"
+    },
+    {
+      "old_path": "verify_witness.py",
+      "new_path": "tools/explore/verify_witness.py",
+      "source_blob": "d48192db56811f6a0905c26337fb1927038b8acd"
+    },
+    {
+      "old_path": "write_dimacs_support_units.py",
+      "new_path": "claims/finite/n08/write_dimacs_support_units.py",
+      "source_blob": "a879c128cb1ef97eb5faeaecbcc1cd6fe2981139"
+    },
+    {
+      "old_path": "write_global_cegar_replay_cnf.py",
+      "new_path": "claims/finite/n06/certificate-chain/write_global_cegar_replay_cnf.py",
+      "source_blob": "19a8ab95373c5f8ac89dcc74ae0597de41778c77"
+    },
+    {
+      "old_path": "write_prism_orbits_manifest.py",
+      "new_path": "claims/finite/n06/certificate-chain/write_prism_orbits_manifest.py",
+      "source_blob": "552d3d2c5914b231ffb22401ea6f2d13121466a6"
+    },
+    {
+      "old_path": "write_tutte_cegar_replay_cnf.py",
+      "new_path": "claims/finite/n06/certificate-chain/write_tutte_cegar_replay_cnf.py",
+      "source_blob": "fe01f5215e684141c6f4b01bf6c7c67881d52986"
+    }
+  ],
+  "rationale": "Final exact 305-source root-exit transaction: proof-obligation ownership, neutral Component20 colocation, finite-family evidence graphs, operator/test owners, and reviewed inverse-taper closure.",
+  "notes": "Global Krenn-Gu remains UNRESOLVED. Preserve lifecycle, evidence-role, audit-independence, and historical-hash semantics. No heavy scientific replay for path movement."
+}

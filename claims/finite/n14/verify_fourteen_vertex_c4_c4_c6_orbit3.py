@@ -167,7 +167,7 @@ def main() -> None:
     run_quiet(
         [
             sys.executable,
-            str(REPO_ROOT / "verify_fourteen_vertex_c4_c4_c6_rule_cnf.py"),
+            str(HERE / "verify_fourteen_vertex_c4_c4_c6_rule_cnf.py"),
             "tmp/fourteen_vertex_c4_c4_c6_"
             "rule_sat_shared_base31_simple.json",
             "--augmentation",
@@ -249,7 +249,7 @@ def main() -> None:
     run_quiet(
         [
             sys.executable,
-            str(REPO_ROOT / "verify_fourteen_vertex_two_even_cycle_three_connectivity_augmentation.py"),
+            str(HERE / "verify_fourteen_vertex_two_even_cycle_three_connectivity_augmentation.py"),
             str(args.connectivity_augmentation),
             "--output",
             str(connectivity_recheck),

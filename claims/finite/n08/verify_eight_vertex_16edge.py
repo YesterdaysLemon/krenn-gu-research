@@ -22,24 +22,24 @@ for _p in Path(__file__).resolve().parents:
         break
 from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
-REPO_ROOT, HERE = bootstrap(__file__)
+REPO_ROOT, HERE = bootstrap(__file__, also=["."])
 
-from eight_vertex_degree4_cegar import (
+from krenn_gu.eight_vertex_degree4_cegar import (
     full_equations,
     laurent_conflict,
     symmetry_clauses,
 )
-from krenn_gu.eight_vertex_degree4_support import decode_graph6
+from eight_vertex_degree4_support import decode_graph6
 from eight_vertex_skeleton_batch import (
     canonical_role_skeletons,
     matching_covered,
 )
-from eight_vertex_sparse_exact import (
+from krenn_gu.eight_vertex_sparse_exact import (
     local_allowed_edges,
     positive_model_literals,
     selected_flat_indices,
 )
-from search_witness import EquationSystem
+from krenn_gu.search_witness import EquationSystem
 
 EXPECTED = {
     "survivor_model": (

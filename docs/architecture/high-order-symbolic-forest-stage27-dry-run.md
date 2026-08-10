@@ -330,7 +330,7 @@ After only the frozen repairs:
 git add -A
 python check_hygiene.py
 python -m unittest -v tests.test_migration_tools
-python -m unittest -v test_fourteen_vertex_cycle_cover_lattice.py
+python -m unittest -v tests.test_fourteen_vertex_cycle_cover_lattice
 python tools/migration/rewrite_links.py
 git diff --exit-code
 ```

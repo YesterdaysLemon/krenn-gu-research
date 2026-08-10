@@ -42,7 +42,7 @@ from verify_p4_mixed_orientation_pure_component import (
 
 
 THEOREM = HERE / "P4_ALL_RANK_ONE_TRIANGLE_PURE_COMPONENT.md"
-WORKING_NOTE = REPO_ROOT / "P4_INOUT_PATH_STRATUM_WORKING_NOTE.md"
+WORKING_NOTE = REPO_ROOT / "claims/p4/boundaries/inout-path-stratum/P4_INOUT_PATH_STRATUM_WORKING_NOTE.md"
 EIGHTH = (
     REPO_ROOT / "claims" / "p4" / "components" / "disjoint-mixed-star"
     / "P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md")

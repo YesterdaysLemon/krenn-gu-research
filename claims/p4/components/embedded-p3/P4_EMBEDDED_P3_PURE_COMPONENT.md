@@ -129,7 +129,7 @@ Their normals are
 ```
 
 which is one of the six sign charts in
-[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](../../../../P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md).
+[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](../../../p3/restrictions/P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md).
 The restricted `P_3` has only
 
 ```text

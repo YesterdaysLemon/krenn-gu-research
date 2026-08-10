@@ -245,7 +245,7 @@ def main() -> None:
     run(
         [
             sys.executable,
-            str(REPO_ROOT / "verify_fourteen_vertex_c4_c4_c6_orbit44_core24_models.py"),
+            str(HERE / "verify_fourteen_vertex_c4_c4_c6_orbit44_core24_models.py"),
             "--output",
             str(fresh_models_path),
         ]

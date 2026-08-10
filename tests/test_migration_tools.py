@@ -201,6 +201,7 @@ class RewriteMarkdownTests(unittest.TestCase):
             "DOC_A.md": "claims/p5/h22/pkg/DOC_A.md",
             "verify_a.py": "claims/p5/h22/pkg/verify_a.py",
             "audit_a.py": "claims/p5/h22/pkg/audit_a.py",
+            "certificate.json": "claims/p5/h22/pkg/certificate.json",
             "dup_name.py": "claims/x/dup_name.py",
             "other/dup_name.py": "claims/y/dup_name.py",
         }
@@ -312,6 +313,33 @@ class RewriteMarkdownTests(unittest.TestCase):
         self.assertIn(
             "python -m py_compile claims/p5/h22/pkg/verify_a.py",
             read_md(self.tmp, "README.md"))
+
+    def test_replay_unittest_multi_target(self):
+        write_md(
+            self.tmp,
+            "README.md",
+            "```text\npython -m unittest -v verify_a.py audit_a.py\n```\n",
+        )
+        stats = rewrite_markdown(self.m, ["README.md"], self.tmp)
+        self.assertEqual(stats["replay_rewritten"], 2)
+        self.assertIn(
+            "python -m unittest -v claims/p5/h22/pkg/verify_a.py "
+            "claims/p5/h22/pkg/audit_a.py",
+            read_md(self.tmp, "README.md"),
+        )
+
+    def test_replay_json_tool(self):
+        write_md(
+            self.tmp,
+            "README.md",
+            "```text\npython -m json.tool certificate.json\n```\n",
+        )
+        stats = rewrite_markdown(self.m, ["README.md"], self.tmp)
+        self.assertEqual(stats["replay_rewritten"], 1)
+        self.assertIn(
+            "python -m json.tool claims/p5/h22/pkg/certificate.json",
+            read_md(self.tmp, "README.md"),
+        )
 
     def test_replay_powershell_local_path(self):
         write_md(self.tmp, "README.md",
@@ -498,6 +526,20 @@ class ReplayCommandGrammarTests(unittest.TestCase):
             match_replay_targets(text.splitlines(), 0),
             (["verify_a.py", "audit_a.py"], 0, "line"))
 
+    def test_unittest_multi_target_api(self):
+        from replay_command import match_replay_targets
+        text = "python -m unittest -v verify_a.py audit_a.py"
+        self.assertEqual(
+            match_replay_targets(text.splitlines(), 0),
+            (["verify_a.py", "audit_a.py"], 0, "line"),
+        )
+
+    def test_json_tool(self):
+        self.assertEqual(
+            self._match("python -m json.tool certificate.json"),
+            [("certificate.json", 0, "line")],
+        )
+
     def test_multi_target_qa_is_not_partially_matched(self):
         self.assertEqual(
             self._match(
@@ -505,6 +547,9 @@ class ReplayCommandGrammarTests(unittest.TestCase):
         self.assertEqual(
             self._match(
                 "uv run --with ruff ruff check verify_a.py audit_a.py"), [])
+        self.assertEqual(
+            self._match(
+                "python -m unittest -v verify_a.py audit_a.py"), [])
 
     def test_continuation(self):
         self.assertEqual(self._match("python \\\n  verify_a.py"),
@@ -715,6 +760,24 @@ class LedgerHashTests(unittest.TestCase):
         self.assertEqual(d["entries"][0]["document_sha256_16"],
                          expected)
 
+    def test_second_pass_rehashes_rewritten_staged_document(self):
+        update_ledger(self.moves, self.tmp)
+        destination = self.tmp / "claims/p5/h22/pkg/DOC_A.md"
+        destination.write_text("rewritten\n", encoding="utf-8")
+        _git(self.tmp, "add", "claims/p5/h22/pkg/DOC_A.md",
+             "catalog/theorem-ledger.json")
+
+        update_ledger(self.moves, self.tmp)
+        data = json.loads(
+            (self.tmp / "catalog" / "theorem-ledger.json").read_text(
+                encoding="utf-8"))
+        expected = hashlib.sha256(subprocess.run(
+            ["git", "show", ":claims/p5/h22/pkg/DOC_A.md"],
+            cwd=self.tmp, capture_output=True, check=True).stdout
+        ).hexdigest()[:16]
+        self.assertEqual(data["entries"][0]["document_sha256_16"],
+                         expected)
+
 
 class LedgerInjectableHashTests(unittest.TestCase):
     """update_ledger must honor an injected hash function, so hash
@@ -770,6 +833,21 @@ class StaleReferenceTests(unittest.TestCase):
         text = ("Run:\n\n```text\npython " + self.BASE
                 + "\n```\n")
         hits = find_stale_bare_refs(text, "README.md", self.MOVED)
+        self.assertTrue(any(ctx == "fenced replay command"
+                            for ctx, b in hits), hits)
+
+    def test_stale_unittest_target_fails(self):
+        text = ("Run:\n\n```text\npython -m unittest -v " + self.BASE
+                + "\n```\n")
+        hits = find_stale_bare_refs(text, "README.md", self.MOVED)
+        self.assertTrue(any(ctx == "fenced replay command"
+                            for ctx, b in hits), hits)
+
+    def test_stale_json_tool_target_fails(self):
+        base = "certificate.json"
+        moved = {base: "claims/p5/h22/pkg/certificate.json"}
+        text = "Run:\n\n```text\npython -m json.tool " + base + "\n```\n"
+        hits = find_stale_bare_refs(text, "README.md", moved)
         self.assertTrue(any(ctx == "fenced replay command"
                             for ctx, b in hits), hits)
 

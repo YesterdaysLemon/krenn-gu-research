@@ -15,9 +15,9 @@ for _p in Path(__file__).resolve().parents:
         break
 from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
-REPO_ROOT, HERE = bootstrap(__file__)
+REPO_ROOT, HERE = bootstrap(__file__, also=["."])
 
-from krenn_gu.eight_vertex_degree4_support import (
+from eight_vertex_degree4_support import (
     complement_edges,
     connected_after_deletion,
     decode_graph6,

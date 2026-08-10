@@ -21,7 +21,7 @@ from krenn_gu.bootstrap import bootstrap  # noqa: E402
 REPO_ROOT, HERE = bootstrap(__file__)
 ROOT = REPO_ROOT
 THEOREM = HERE / "P5_H31_SINGLE_GATE_P3_REDUCTION.md"
-P3_THEOREM = REPO_ROOT / "P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md"
+P3_THEOREM = REPO_ROOT / "claims/p3/restrictions/P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md"
 
 
 def sha256(path: Path) -> str:

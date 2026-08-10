@@ -174,7 +174,7 @@ Krenn–Gu conjecture remain open.
 uv run --with sympy python claims/p5/h22/common-active-binary-triangle-component-generic/audit_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
 uv run --with ruff ruff check claims/p5/h22/common-active-binary-triangle-component-generic/audit_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
 python -m py_compile claims/p5/h22/common-active-binary-triangle-component-generic/audit_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
-python -m json.tool p5_h22_common_active_binary_triangle_component_generic_certificate.json
+python -m json.tool claims/p5/h22/common-active-binary-triangle-component-generic/p5_h22_common_active_binary_triangle_component_generic_certificate.json
 git diff --check
 ```
 

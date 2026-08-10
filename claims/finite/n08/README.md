@@ -1,6 +1,7 @@
 # Eight-vertex packages
 
-The nine claim documents have distinct support and case-cover hypotheses:
+The nine Stage 28 claim documents have distinct support and case-cover
+hypotheses:
 
 - [`EIGHT_VERTEX_16EDGE_CERTIFICATE.md`](EIGHT_VERTEX_16EDGE_CERTIFICATE.md)
 - [`EIGHT_VERTEX_17EDGE_CERTIFICATE.md`](EIGHT_VERTEX_17EDGE_CERTIFICATE.md)
@@ -11,6 +12,12 @@ The nine claim documents have distinct support and case-cover hypotheses:
 - [`EIGHT_VERTEX_DOUBLE_C4_FAMILY_CERTIFICATE.md`](EIGHT_VERTEX_DOUBLE_C4_FAMILY_CERTIFICATE.md)
 - [`EIGHT_VERTEX_ENTRY84_BOUNDARY.md`](EIGHT_VERTEX_ENTRY84_BOUNDARY.md)
 - [`EIGHT_VERTEX_FULL_SINGLETON_FAMILY_CERTIFICATE.md`](EIGHT_VERTEX_FULL_SINGLETON_FAMILY_CERTIFICATE.md)
+
+Stage 33 added the mixed-lifecycle
+[`degree-six-kotzig-port/`](degree-six-kotzig-port/) package and preserved the
+withdrawn overstrong record under
+[`history/withdrawn-balanced-all-bridge-set-tree/`](history/withdrawn-balanced-all-bridge-set-tree/).
+Neither is flattened into the nine live Stage 28 documents.
 
 Their colocated scripts are the carriers named by those documents; several
 shared support and Laurent providers live under `src/krenn_gu/`. Read each

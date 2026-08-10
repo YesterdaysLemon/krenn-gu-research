@@ -24,15 +24,15 @@ HERE = Path(__file__).resolve().parent
 
 def find_root() -> Path:
     for candidate in (HERE, *HERE.parents):
-        if (candidate / "P4_INOUT_PATH_STRATUM_WORKING_NOTE.md").exists():
+        if (candidate / "claims/p4/boundaries/inout-path-stratum/P4_INOUT_PATH_STRATUM_WORKING_NOTE.md").exists():
             return candidate
     return HERE
 
 
 ROOT = find_root()
 THEOREM = HERE / "P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md"
-COMPONENT = ROOT / "P4_INOUT_PATH_STRATUM_WORKING_NOTE.md"
-COMPONENT_PRIMARY = ROOT / "branch_ambient_certificates.py"
+COMPONENT = REPO_ROOT / "claims/p4/boundaries/inout-path-stratum/P4_INOUT_PATH_STRATUM_WORKING_NOTE.md"
+COMPONENT_PRIMARY = REPO_ROOT / "claims/p4/boundaries/inout-path-stratum/branch_ambient_certificates.py"
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 MIXED = tuple(w for w in WORDS if w not in ((0, 0, 0, 0), (1, 1, 1, 1)))

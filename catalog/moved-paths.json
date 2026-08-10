@@ -17,18 +17,18 @@
     "batch_directory": "catalog/batches"
   },
   "counts": {
-    "total_classified_moves": 2249,
-    "moved": 2052,
+    "total_classified_moves": 2358,
+    "moved": 2357,
     "pilot": 0,
-    "proposed_high_confidence": 12,
-    "review_required": 185,
-    "unclassified": 114,
+    "proposed_high_confidence": 0,
+    "review_required": 1,
+    "unclassified": 5,
     "root_files_before": 2363,
     "root_dirs_before": 3,
     "root_entries_before": 2366,
-    "projected_root_if_moved_only": 320,
-    "projected_root_if_high_confidence_batches_executed": 308,
-    "projected_root_if_all_classified_executed": 123,
+    "projected_root_if_moved_only": 15,
+    "projected_root_if_high_confidence_batches_executed": 15,
+    "projected_root_if_all_classified_executed": 14,
     "projection_note": "unclassified files are not members of any move set, so every projection already leaves them at the root; do not add unclassified again",
     "collisions": 0,
     "double_moves": 0,
@@ -447,41 +447,10 @@
       "old_path": "COLOUR_SYMMETRIC_FACTOR_ORBIT_TRANSFER_LEMMA.md",
       "new_path": "claims/arbitrary-order/COLOUR_SYMMETRIC_FACTOR_ORBIT_TRANSFER_LEMMA.md",
       "reason": "claim_document -> arbitrary-order",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "arbitrary-order",
-      "confidence": "low"
-    },
-    {
-      "old_path": "COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md",
-      "new_path": "claims/arbitrary-order/COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md",
-      "reason": "claim_document -> arbitrary-order",
-      "status": "review_required",
-      "claim_family": "arbitrary-order",
-      "confidence": "medium"
-    },
-    {
-      "old_path": "COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_VERIFICATION.md",
-      "new_path": "claims/arbitrary-order/COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_VERIFICATION.md",
-      "reason": "claim_document -> arbitrary-order",
-      "status": "review_required",
-      "claim_family": "arbitrary-order",
-      "confidence": "low"
-    },
-    {
-      "old_path": "COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_CANDIDATE.md",
-      "new_path": "claims/arbitrary-order/COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_CANDIDATE.md",
-      "reason": "claim_document -> arbitrary-order",
-      "status": "review_required",
-      "claim_family": "arbitrary-order",
-      "confidence": "medium"
-    },
-    {
-      "old_path": "COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_VERIFICATION.md",
-      "new_path": "claims/arbitrary-order/COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_VERIFICATION.md",
-      "reason": "claim_document -> arbitrary-order",
-      "status": "review_required",
-      "claim_family": "arbitrary-order",
-      "confidence": "low"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "CROSS_ROOT_COORDINATE_MONOMIAL_CHART_HOLONOMY_AND_NINE_CHART_NO_GO.md",
@@ -547,14 +516,6 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
-      "old_path": "FIVE_ROOT_DIAGONAL_TARGET_INCIDENCE_SCHUBERT_DUALITY_AND_COFACTOR_LINE_THEOREM.md",
-      "new_path": "claims/arbitrary-order/FIVE_ROOT_DIAGONAL_TARGET_INCIDENCE_SCHUBERT_DUALITY_AND_COFACTOR_LINE_THEOREM.md",
-      "reason": "claim_document -> arbitrary-order",
-      "status": "review_required",
-      "claim_family": "arbitrary-order",
-      "confidence": "low"
-    },
-    {
       "old_path": "FIVE_ROOT_NO_TORUS_CODIMENSION_TWO_THEOREM.md",
       "new_path": "claims/arbitrary-order/FIVE_ROOT_NO_TORUS_CODIMENSION_TWO_THEOREM.md",
       "reason": "claim_document -> arbitrary-order",
@@ -589,14 +550,6 @@
       "claim_family": "arbitrary-order",
       "confidence": "low",
       "executed_batch": "high-order-symbolic-forest-stage27"
-    },
-    {
-      "old_path": "FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md",
-      "new_path": "claims/arbitrary-order/FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md",
-      "reason": "claim_document -> arbitrary-order",
-      "status": "review_required",
-      "claim_family": "arbitrary-order",
-      "confidence": "low"
     },
     {
       "old_path": "FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md",
@@ -660,6 +613,15 @@
       "claim_family": "arbitrary-order",
       "confidence": "medium",
       "executed_batch": "high-order-symbolic-forest-stage27"
+    },
+    {
+      "old_path": "FULL_ADMISSIBLE_POTENTIAL_CONE_LEMMA.md",
+      "new_path": "claims/arbitrary-order/FULL_ADMISSIBLE_POTENTIAL_CONE_LEMMA.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "FULL_COLOUR_SUPPORT_ORBIT_LEMMA.md",
@@ -755,9 +717,10 @@
       "old_path": "MATCHING_FORK_TRANSPORT_LEMMA.md",
       "new_path": "claims/arbitrary-order/MATCHING_FORK_TRANSPORT_LEMMA.md",
       "reason": "claim_document -> arbitrary-order",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "arbitrary-order",
-      "confidence": "low"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "MINIMAL_SINGLETON_CIRCUIT_RECTANGLE_THEOREM.md",
@@ -826,9 +789,10 @@
       "old_path": "PARTIAL_CIRCUIT_BINOMIAL_CLOSURE_LEMMA.md",
       "new_path": "claims/arbitrary-order/PARTIAL_CIRCUIT_BINOMIAL_CLOSURE_LEMMA.md",
       "reason": "claim_document -> arbitrary-order",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "arbitrary-order",
-      "confidence": "low"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "PARTIAL_MINIMAL_SINGLETON_CIRCUIT_DICHOTOMY.md",
@@ -843,9 +807,10 @@
       "old_path": "PINNED_FACTOR_SUPPORT_SYMMETRY_LEMMA.md",
       "new_path": "claims/arbitrary-order/PINNED_FACTOR_SUPPORT_SYMMETRY_LEMMA.md",
       "reason": "claim_document -> arbitrary-order",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "arbitrary-order",
-      "confidence": "low"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "PINNED_HAFNIAN_STAR_SYSTEM_AND_RATIONAL_EDGE_TOMOGRAPHY_THEOREM.md",
@@ -1247,9 +1212,10 @@
       "old_path": "SINGLE_EVEN_CYCLE_RECTANGLE_THEOREM.md",
       "new_path": "claims/arbitrary-order/SINGLE_EVEN_CYCLE_RECTANGLE_THEOREM.md",
       "reason": "claim_document -> arbitrary-order",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "arbitrary-order",
-      "confidence": "low"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "SIX_BLOCKER_ADMISSIBLE_QUOTIENT_CATALOGUE.md",
@@ -1369,6 +1335,15 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
+      "old_path": "SIX_PERMUTED_POTENTIALS_LEMMA.md",
+      "new_path": "claims/arbitrary-order/SIX_PERMUTED_POTENTIALS_LEMMA.md",
+      "reason": "claim_document -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
       "old_path": "SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md",
       "new_path": "claims/arbitrary-order/SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md",
       "reason": "claim_document -> arbitrary-order",
@@ -1462,9 +1437,10 @@
       "old_path": "UNIVERSAL_SATURATED_DIAGONAL_ZERO_LAYER_THEOREM.md",
       "new_path": "claims/arbitrary-order/UNIVERSAL_SATURATED_DIAGONAL_ZERO_LAYER_THEOREM.md",
       "reason": "claim_document -> arbitrary-order",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": "arbitrary-order",
-      "confidence": "low"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "audit_all_quadrangle_p5_obstruction.py",
@@ -1854,22 +1830,6 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
-      "old_path": "audit_component20_intrinsic_wall_exceptional_fibres_candidate.py",
-      "new_path": "claims/arbitrary-order/audit_component20_intrinsic_wall_exceptional_fibres_candidate.py",
-      "reason": "claim_script -> arbitrary-order",
-      "status": "proposed_high_confidence",
-      "claim_family": "arbitrary-order",
-      "confidence": "high"
-    },
-    {
-      "old_path": "audit_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py",
-      "new_path": "claims/arbitrary-order/audit_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py",
-      "reason": "claim_script -> arbitrary-order",
-      "status": "proposed_high_confidence",
-      "claim_family": "arbitrary-order",
-      "confidence": "high"
-    },
-    {
       "old_path": "audit_cross_root_coordinate_monomial_chart_holonomy_and_nine_chart_no_go.py",
       "new_path": "claims/arbitrary-order/audit_cross_root_coordinate_monomial_chart_holonomy_and_nine_chart_no_go.py",
       "reason": "claim_script -> arbitrary-order",
@@ -2003,6 +1963,15 @@
       "claim_family": "arbitrary-order",
       "confidence": "high",
       "executed_batch": "high-order-symbolic-forest-stage27"
+    },
+    {
+      "old_path": "audit_full_admissible_potential_cone.py",
+      "new_path": "claims/arbitrary-order/audit_full_admissible_potential_cone.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "audit_graph_extraction_strict_support_transfer_corollary.py",
@@ -2707,6 +2676,33 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
+      "old_path": "audit_universal_saturated_diagonal_zero_layer.py",
+      "new_path": "claims/arbitrary-order/audit_universal_saturated_diagonal_zero_layer.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "STATE_LIFT_CYCLE_FIBRE_LEMMA.md",
+      "new_path": "claims/arbitrary-order/history/state-lift-cycle-fibre/STATE_LIFT_CYCLE_FIBRE_LEMMA.md",
+      "reason": "legacy_document -> arbitrary-order/history/state-lift-cycle-fibre",
+      "status": "moved",
+      "claim_family": "arbitrary-order/history/state-lift-cycle-fibre",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_state_lift_cycle_fibres.py",
+      "new_path": "claims/arbitrary-order/history/state-lift-cycle-fibre/verify_state_lift_cycle_fibres.py",
+      "reason": "claim_script -> arbitrary-order/history/state-lift-cycle-fibre",
+      "status": "moved",
+      "claim_family": "arbitrary-order/history/state-lift-cycle-fibre",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
       "old_path": "verify_adjacent_port_determinant_transport_lemma.py",
       "new_path": "claims/arbitrary-order/verify_adjacent_port_determinant_transport_lemma.py",
       "reason": "claim_script -> arbitrary-order",
@@ -3254,6 +3250,15 @@
       "claim_family": "arbitrary-order",
       "confidence": "high",
       "executed_batch": "high-order-symbolic-forest-stage27"
+    },
+    {
+      "old_path": "verify_full_admissible_potential_cone.py",
+      "new_path": "claims/arbitrary-order/verify_full_admissible_potential_cone.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "verify_graph_extraction_strict_support_transfer_corollary.py",
@@ -4003,6 +4008,15 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
+      "old_path": "verify_universal_saturated_diagonal_zero_layer.py",
+      "new_path": "claims/arbitrary-order/verify_universal_saturated_diagonal_zero_layer.py",
+      "reason": "claim_script -> arbitrary-order",
+      "status": "moved",
+      "claim_family": "arbitrary-order",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
       "old_path": "SIX_VERTEX_CERTIFICATE.md",
       "new_path": "claims/finite/n06/SIX_VERTEX_CERTIFICATE.md",
       "reason": "claim_document -> finite/six-vertex",
@@ -4010,6 +4024,375 @@
       "claim_family": "finite/six-vertex",
       "confidence": "medium",
       "executed_batch": "finite-p4-stage28"
+    },
+    {
+      "old_path": "analyze_global_cegar_survivor.py",
+      "new_path": "claims/finite/n06/certificate-chain/analyze_global_cegar_survivor.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_six_vertex_elementary_coverage.py",
+      "new_path": "claims/finite/n06/certificate-chain/analyze_six_vertex_elementary_coverage.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "candidate_killer_cover_sat.py",
+      "new_path": "claims/finite/n06/certificate-chain/candidate_killer_cover_sat.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "candidate_matching_obstruction_sat.py",
+      "new_path": "claims/finite/n06/certificate-chain/candidate_matching_obstruction_sat.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "certify_global_pattern_orbits.py",
+      "new_path": "claims/finite/n06/certificate-chain/certify_global_pattern_orbits.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "certify_union_orbit_supports.py",
+      "new_path": "claims/finite/n06/certificate-chain/certify_union_orbit_supports.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "classify_killer_union_support.py",
+      "new_path": "claims/finite/n06/certificate-chain/classify_killer_union_support.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "enumerate_killer_union_orbits.py",
+      "new_path": "claims/finite/n06/certificate-chain/enumerate_killer_union_orbits.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "global_candidate_laurent_cegar.py",
+      "new_path": "claims/finite/n06/certificate-chain/global_candidate_laurent_cegar.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "global_support_sat.py",
+      "new_path": "claims/finite/n06/certificate-chain/global_support_sat.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "k33_support_analysis.py",
+      "new_path": "claims/finite/n06/certificate-chain/k33_support_analysis.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "killer_union_stratum.py",
+      "new_path": "claims/finite/n06/certificate-chain/killer_union_stratum.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "minimize_singular_fallback_core.py",
+      "new_path": "claims/finite/n06/certificate-chain/minimize_singular_fallback_core.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "prism_boundary.py",
+      "new_path": "claims/finite/n06/certificate-chain/prism_boundary.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "prism_matrix_core.py",
+      "new_path": "claims/finite/n06/certificate-chain/prism_matrix_core.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "prism_orbit_batch.py",
+      "new_path": "claims/finite/n06/certificate-chain/prism_orbit_batch.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "prism_partial_core.py",
+      "new_path": "claims/finite/n06/certificate-chain/prism_partial_core.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "prism_partial_parameterization.py",
+      "new_path": "claims/finite/n06/certificate-chain/prism_partial_parameterization.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "prism_support_core.py",
+      "new_path": "claims/finite/n06/certificate-chain/prism_support_core.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "prism_support_sat.py",
+      "new_path": "claims/finite/n06/certificate-chain/prism_support_sat.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "solve_fixed_separator_orbits_incremental.py",
+      "new_path": "claims/finite/n06/certificate-chain/solve_fixed_separator_orbits_incremental.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "two_vertex_divisibility.py",
+      "new_path": "claims/finite/n06/certificate-chain/two_vertex_divisibility.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_all_prism_orbits.py",
+      "new_path": "claims/finite/n06/certificate-chain/verify_all_prism_orbits.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_candidate_separator_orbits.py",
+      "new_path": "claims/finite/n06/certificate-chain/verify_candidate_separator_orbits.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_candidate_tutte_patterns.py",
+      "new_path": "claims/finite/n06/certificate-chain/verify_candidate_tutte_patterns.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_gauge_audited_union_orbits.py",
+      "new_path": "claims/finite/n06/certificate-chain/verify_gauge_audited_union_orbits.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_gauge_partition.py",
+      "new_path": "claims/finite/n06/certificate-chain/verify_gauge_partition.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_global_candidate_cegar.py",
+      "new_path": "claims/finite/n06/certificate-chain/verify_global_candidate_cegar.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_global_pattern_orbits.py",
+      "new_path": "claims/finite/n06/certificate-chain/verify_global_pattern_orbits.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_k33_drat.py",
+      "new_path": "claims/finite/n06/certificate-chain/verify_k33_drat.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_killer_union_orbits.py",
+      "new_path": "claims/finite/n06/certificate-chain/verify_killer_union_orbits.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_prism_certificates.py",
+      "new_path": "claims/finite/n06/certificate-chain/verify_prism_certificates.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_prism_laurent.py",
+      "new_path": "claims/finite/n06/certificate-chain/verify_prism_laurent.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_tutte_cegar_separator_orbits.py",
+      "new_path": "claims/finite/n06/certificate-chain/verify_tutte_cegar_separator_orbits.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "write_global_cegar_replay_cnf.py",
+      "new_path": "claims/finite/n06/certificate-chain/write_global_cegar_replay_cnf.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "write_prism_orbits_manifest.py",
+      "new_path": "claims/finite/n06/certificate-chain/write_prism_orbits_manifest.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "write_tutte_cegar_replay_cnf.py",
+      "new_path": "claims/finite/n06/certificate-chain/write_tutte_cegar_replay_cnf.py",
+      "reason": "claim_script -> finite/n06/certificate-chain",
+      "status": "moved",
+      "claim_family": "finite/n06/certificate-chain",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "Q2_N6_K4_D4_CONSTRUCTION.md",
+      "new_path": "claims/finite/n06/q2-k4-d4-construction/Q2_N6_K4_D4_CONSTRUCTION.md",
+      "reason": "claim_document -> finite/n06/q2-k4-d4-construction",
+      "status": "moved",
+      "claim_family": "finite/n06/q2-k4-d4-construction",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_q2_herald_promotion_rank_barrier.py",
+      "new_path": "claims/finite/n06/q2-k4-d4-construction/verify_q2_herald_promotion_rank_barrier.py",
+      "reason": "claim_script -> finite/n06/q2-k4-d4-construction",
+      "status": "moved",
+      "claim_family": "finite/n06/q2-k4-d4-construction",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_q2_n6_k4_d4_construction.py",
+      "new_path": "claims/finite/n06/q2-k4-d4-construction/verify_q2_n6_k4_d4_construction.py",
+      "reason": "claim_script -> finite/n06/q2-k4-d4-construction",
+      "status": "moved",
+      "claim_family": "finite/n06/q2-k4-d4-construction",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_q2_n6_k4_d4_family.py",
+      "new_path": "claims/finite/n06/q2-k4-d4-construction/verify_q2_n6_k4_d4_family.py",
+      "reason": "claim_script -> finite/n06/q2-k4-d4-construction",
+      "status": "moved",
+      "claim_family": "finite/n06/q2-k4-d4-construction",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "verify_six_vertex_final.py",
@@ -4102,6 +4485,51 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
+      "old_path": "analyze_full_cycle_factor_conflicts.py",
+      "new_path": "claims/finite/n08/analyze_full_cycle_factor_conflicts.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_odd_binomial_triangle_census.py",
+      "new_path": "claims/finite/n08/analyze_odd_binomial_triangle_census.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_rectangle_transport_census.py",
+      "new_path": "claims/finite/n08/analyze_rectangle_transport_census.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_support_toric_census.py",
+      "new_path": "claims/finite/n08/analyze_support_toric_census.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_unary_cycle_relation_family.py",
+      "new_path": "claims/finite/n08/analyze_unary_cycle_relation_family.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
       "old_path": "audit_eight_vertex_balanced_set_trees.py",
       "new_path": "claims/finite/n08/audit_eight_vertex_balanced_set_trees.py",
       "reason": "claim_script -> finite/eight-vertex",
@@ -4118,6 +4546,60 @@
       "claim_family": "finite/eight-vertex",
       "confidence": "high",
       "executed_batch": "finite-p4-stage28"
+    },
+    {
+      "old_path": "augment_all_degree3_singleton_stars.py",
+      "new_path": "claims/finite/n08/augment_all_degree3_singleton_stars.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "augment_certified_entry_bound.py",
+      "new_path": "claims/finite/n08/augment_certified_entry_bound.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "augment_degree3_pure_minor_constraints.py",
+      "new_path": "claims/finite/n08/augment_degree3_pure_minor_constraints.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "augment_forbid_mixed_singleton_matching.py",
+      "new_path": "claims/finite/n08/augment_forbid_mixed_singleton_matching.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "augment_no_binomial_amplitudes.py",
+      "new_path": "claims/finite/n08/augment_no_binomial_amplitudes.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "augment_reciprocal_cardinality.py",
+      "new_path": "claims/finite/n08/augment_reciprocal_cardinality.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "certify_eight_vertex_balanced_set_trees.py",
@@ -4138,6 +4620,60 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
+      "old_path": "certify_unary_cycle_relation_family.py",
+      "new_path": "claims/finite/n08/certify_unary_cycle_relation_family.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "combine_laurent_manifests.py",
+      "new_path": "claims/finite/n08/combine_laurent_manifests.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "EIGHT_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
+      "new_path": "claims/finite/n08/degree-six-kotzig-port/EIGHT_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
+      "reason": "claim_document -> finite/n08/degree-six-kotzig-port",
+      "status": "moved",
+      "claim_family": "finite/n08/degree-six-kotzig-port",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "audit_eight_vertex_degree_six_kotzig_ports.py",
+      "new_path": "claims/finite/n08/degree-six-kotzig-port/audit_eight_vertex_degree_six_kotzig_ports.py",
+      "reason": "claim_script -> finite/n08/degree-six-kotzig-port",
+      "status": "moved",
+      "claim_family": "finite/n08/degree-six-kotzig-port",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "explore_eight_vertex_degree_six_kotzig_ports.py",
+      "new_path": "claims/finite/n08/degree-six-kotzig-port/explore_eight_vertex_degree_six_kotzig_ports.py",
+      "reason": "claim_script -> finite/n08/degree-six-kotzig-port",
+      "status": "moved",
+      "claim_family": "finite/n08/degree-six-kotzig-port",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "eight_vertex_16edge_catalogue_cnf.py",
+      "new_path": "claims/finite/n08/eight_vertex_16edge_catalogue_cnf.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
       "old_path": "eight_vertex_local_degree4_support.py",
       "new_path": "claims/finite/n08/eight_vertex_local_degree4_support.py",
       "reason": "claim_script -> finite/eight-vertex",
@@ -4145,6 +4681,249 @@
       "claim_family": "finite/eight-vertex",
       "confidence": "high",
       "executed_batch": "finite-p4-stage28"
+    },
+    {
+      "old_path": "eight_vertex_native_kissat_laurent_batch.py",
+      "new_path": "claims/finite/n08/eight_vertex_native_kissat_laurent_batch.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "eight_vertex_no_binomial_cegar.py",
+      "new_path": "claims/finite/n08/eight_vertex_no_binomial_cegar.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "eight_vertex_skeleton_batch.py",
+      "new_path": "claims/finite/n08/eight_vertex_skeleton_batch.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "eight_vertex_skeleton_laurent_batch.py",
+      "new_path": "claims/finite/n08/eight_vertex_skeleton_laurent_batch.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "enumerate_degree3_reciprocal_orbits.py",
+      "new_path": "claims/finite/n08/enumerate_degree3_reciprocal_orbits.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "enumerate_double_c4_singleton_family.py",
+      "new_path": "claims/finite/n08/enumerate_double_c4_singleton_family.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "enumerate_five_regular_double_c4_singleton_family.py",
+      "new_path": "claims/finite/n08/enumerate_five_regular_double_c4_singleton_family.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "enumerate_five_regular_full_singleton_family.py",
+      "new_path": "claims/finite/n08/enumerate_five_regular_full_singleton_family.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "factor_lattice_cegar.py",
+      "new_path": "claims/finite/n08/factor_lattice_cegar.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "generate_batch_fallback_singular.py",
+      "new_path": "claims/finite/n08/generate_batch_fallback_singular.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "generate_partial_support_singular.py",
+      "new_path": "claims/finite/n08/generate_partial_support_singular.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md",
+      "new_path": "claims/finite/n08/history/withdrawn-balanced-all-bridge-set-tree/EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md",
+      "reason": "legacy_document -> finite/n08/history/withdrawn-balanced-all-bridge-set-tree",
+      "status": "moved",
+      "claim_family": "finite/n08/history/withdrawn-balanced-all-bridge-set-tree",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "iterate_eight_vertex_selector_cegar.py",
+      "new_path": "claims/finite/n08/iterate_eight_vertex_selector_cegar.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "iterate_eight_vertex_singular_cegar.py",
+      "new_path": "claims/finite/n08/iterate_eight_vertex_singular_cegar.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "learn_partial_support_singular_clauses.py",
+      "new_path": "claims/finite/n08/learn_partial_support_singular_clauses.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "learn_singular_fallback_clauses.py",
+      "new_path": "claims/finite/n08/learn_singular_fallback_clauses.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "materialize_eight_vertex_role.py",
+      "new_path": "claims/finite/n08/materialize_eight_vertex_role.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "materialize_exact_entry_support.py",
+      "new_path": "claims/finite/n08/materialize_exact_entry_support.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "materialize_static_no_binomial_entry_bound_role.py",
+      "new_path": "claims/finite/n08/materialize_static_no_binomial_entry_bound_role.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "materialize_static_no_binomial_outside_family_role.py",
+      "new_path": "claims/finite/n08/materialize_static_no_binomial_outside_family_role.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "recover_native_kissat_conflicts.py",
+      "new_path": "claims/finite/n08/recover_native_kissat_conflicts.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "run_degree3_e19_orbit_cases.py",
+      "new_path": "claims/finite/n08/run_degree3_e19_orbit_cases.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "search_mixed_reciprocal_equality_support.py",
+      "new_path": "claims/finite/n08/search_mixed_reciprocal_equality_support.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "singleton_slice_minors.py",
+      "new_path": "claims/finite/n08/singleton_slice_minors.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "snapshot_no_binomial_workdirs.py",
+      "new_path": "claims/finite/n08/snapshot_no_binomial_workdirs.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "support_toric_degeneration.py",
+      "new_path": "claims/finite/n08/support_toric_degeneration.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_all_degree3_singleton_stars.py",
+      "new_path": "claims/finite/n08/verify_all_degree3_singleton_stars.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "verify_cancellation_transport_manifest.py",
@@ -4165,6 +4944,69 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
+      "old_path": "verify_certified_entry_bound_augmentation.py",
+      "new_path": "claims/finite/n08/verify_certified_entry_bound_augmentation.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_degree3_anchor_reciprocal_dichotomy.py",
+      "new_path": "claims/finite/n08/verify_degree3_anchor_reciprocal_dichotomy.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_degree3_pure_minor_constraints.py",
+      "new_path": "claims/finite/n08/verify_degree3_pure_minor_constraints.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_degree3_pure_tensor_support.py",
+      "new_path": "claims/finite/n08/verify_degree3_pure_tensor_support.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_degree3_reciprocal_orbits.py",
+      "new_path": "claims/finite/n08/verify_degree3_reciprocal_orbits.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_degree_five_plane_extension.py",
+      "new_path": "claims/finite/n08/verify_degree_five_plane_extension.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_double_c4_singleton_family.py",
+      "new_path": "claims/finite/n08/verify_double_c4_singleton_family.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
       "old_path": "verify_eight_vertex_16edge.py",
       "new_path": "claims/finite/n08/verify_eight_vertex_16edge.py",
       "reason": "claim_script -> finite/eight-vertex",
@@ -4181,6 +5023,15 @@
       "claim_family": "finite/eight-vertex",
       "confidence": "high",
       "executed_batch": "finite-p4-stage28"
+    },
+    {
+      "old_path": "verify_eight_vertex_degree3_e18.py",
+      "new_path": "claims/finite/n08/verify_eight_vertex_degree3_e18.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "verify_eight_vertex_degree3_e19.py",
@@ -4228,6 +5079,15 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
+      "old_path": "verify_factor_lattice_cegar.py",
+      "new_path": "claims/finite/n08/verify_factor_lattice_cegar.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
       "old_path": "verify_five_regular_double_c4_singleton_family.py",
       "new_path": "claims/finite/n08/verify_five_regular_double_c4_singleton_family.py",
       "reason": "claim_script -> finite/eight-vertex",
@@ -4255,6 +5115,87 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
+      "old_path": "verify_materialized_dimacs_clause_set.py",
+      "new_path": "claims/finite/n08/verify_materialized_dimacs_clause_set.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_mixed_reciprocal_equality_support.py",
+      "new_path": "claims/finite/n08/verify_mixed_reciprocal_equality_support.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_mixed_singleton_countermodels.py",
+      "new_path": "claims/finite/n08/verify_mixed_singleton_countermodels.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_no_binomial_augmentation.py",
+      "new_path": "claims/finite/n08/verify_no_binomial_augmentation.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_partial_support_singular.py",
+      "new_path": "claims/finite/n08/verify_partial_support_singular.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_reciprocal_cardinality.py",
+      "new_path": "claims/finite/n08/verify_reciprocal_cardinality.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_reciprocal_killer_partition.py",
+      "new_path": "claims/finite/n08/verify_reciprocal_killer_partition.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_shared_backup_zero_extension.py",
+      "new_path": "claims/finite/n08/verify_shared_backup_zero_extension.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_singular_fallback_manifest.py",
+      "new_path": "claims/finite/n08/verify_singular_fallback_manifest.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
       "old_path": "verify_skeleton_laurent_batch.py",
       "new_path": "claims/finite/n08/verify_skeleton_laurent_batch.py",
       "reason": "claim_script -> finite/eight-vertex",
@@ -4264,6 +5205,33 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
+      "old_path": "verify_static_no_binomial_entry_bound_role.py",
+      "new_path": "claims/finite/n08/verify_static_no_binomial_entry_bound_role.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_static_no_binomial_outside_family_role.py",
+      "new_path": "claims/finite/n08/verify_static_no_binomial_outside_family_role.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_support_toric_census.py",
+      "new_path": "claims/finite/n08/verify_support_toric_census.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
       "old_path": "verify_unary_cycle_relation_family.py",
       "new_path": "claims/finite/n08/verify_unary_cycle_relation_family.py",
       "reason": "claim_script -> finite/eight-vertex",
@@ -4271,6 +5239,15 @@
       "claim_family": "finite/eight-vertex",
       "confidence": "high",
       "executed_batch": "finite-p4-stage28"
+    },
+    {
+      "old_path": "write_dimacs_support_units.py",
+      "new_path": "claims/finite/n08/write_dimacs_support_units.py",
+      "reason": "claim_script -> finite/n08",
+      "status": "moved",
+      "claim_family": "finite/n08",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "TEN_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md",
@@ -4343,6 +5320,123 @@
       "claim_family": "finite/ten-vertex",
       "confidence": "high",
       "executed_batch": "finite-p4-stage28"
+    },
+    {
+      "old_path": "certify_ten_vertex_c10_equality_orbits.py",
+      "new_path": "claims/finite/n10/certify_ten_vertex_c10_equality_orbits.py",
+      "reason": "claim_script -> finite/n10",
+      "status": "moved",
+      "claim_family": "finite/n10",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "certify_ten_vertex_c4_c6_equality_orbits.py",
+      "new_path": "claims/finite/n10/certify_ten_vertex_c4_c6_equality_orbits.py",
+      "reason": "claim_script -> finite/n10",
+      "status": "moved",
+      "claim_family": "finite/n10",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "certify_ten_vertex_odd_factor_equality_orbits.py",
+      "new_path": "claims/finite/n10/certify_ten_vertex_odd_factor_equality_orbits.py",
+      "reason": "claim_script -> finite/n10",
+      "status": "moved",
+      "claim_family": "finite/n10",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "TEN_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
+      "new_path": "claims/finite/n10/degree-six-kotzig-port/TEN_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
+      "reason": "claim_document -> finite/n10/degree-six-kotzig-port",
+      "status": "moved",
+      "claim_family": "finite/n10/degree-six-kotzig-port",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_ten_vertex_degree_six_kotzig_port_survivors.py",
+      "new_path": "claims/finite/n10/degree-six-kotzig-port/analyze_ten_vertex_degree_six_kotzig_port_survivors.py",
+      "reason": "claim_script -> finite/n10/degree-six-kotzig-port",
+      "status": "moved",
+      "claim_family": "finite/n10/degree-six-kotzig-port",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_ten_vertex_permuted_potential_survivors.py",
+      "new_path": "claims/finite/n10/degree-six-kotzig-port/analyze_ten_vertex_permuted_potential_survivors.py",
+      "reason": "claim_script -> finite/n10/degree-six-kotzig-port",
+      "status": "moved",
+      "claim_family": "finite/n10/degree-six-kotzig-port",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "audit_ten_vertex_degree_six_kotzig_ports.py",
+      "new_path": "claims/finite/n10/degree-six-kotzig-port/audit_ten_vertex_degree_six_kotzig_ports.py",
+      "reason": "claim_script -> finite/n10/degree-six-kotzig-port",
+      "status": "moved",
+      "claim_family": "finite/n10/degree-six-kotzig-port",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "audit_ten_vertex_permuted_potential_survivors.py",
+      "new_path": "claims/finite/n10/degree-six-kotzig-port/audit_ten_vertex_permuted_potential_survivors.py",
+      "reason": "claim_script -> finite/n10/degree-six-kotzig-port",
+      "status": "moved",
+      "claim_family": "finite/n10/degree-six-kotzig-port",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "explore_ten_vertex_degree_six_kotzig_ports.py",
+      "new_path": "claims/finite/n10/degree-six-kotzig-port/explore_ten_vertex_degree_six_kotzig_ports.py",
+      "reason": "claim_script -> finite/n10/degree-six-kotzig-port",
+      "status": "moved",
+      "claim_family": "finite/n10/degree-six-kotzig-port",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "enumerate_ten_vertex_c4_c6_equality_orbits.py",
+      "new_path": "claims/finite/n10/enumerate_ten_vertex_c4_c6_equality_orbits.py",
+      "reason": "claim_script -> finite/n10",
+      "status": "moved",
+      "claim_family": "finite/n10",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "enumerate_ten_vertex_equality_support_orbits.py",
+      "new_path": "claims/finite/n10/enumerate_ten_vertex_equality_support_orbits.py",
+      "reason": "claim_script -> finite/n10",
+      "status": "moved",
+      "claim_family": "finite/n10",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "explore_ten_vertex_c10_lattice.py",
+      "new_path": "claims/finite/n10/explore_ten_vertex_c10_lattice.py",
+      "reason": "claim_script -> finite/n10",
+      "status": "moved",
+      "claim_family": "finite/n10",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "explore_ten_vertex_equality_factor_lattice.py",
+      "new_path": "claims/finite/n10/explore_ten_vertex_equality_factor_lattice.py",
+      "reason": "claim_script -> finite/n10",
+      "status": "moved",
+      "claim_family": "finite/n10",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "verify_ten_vertex_c10_equality_family.py",
@@ -4451,6 +5545,60 @@
       "claim_family": "finite/twelve-vertex",
       "confidence": "high",
       "executed_batch": "finite-p4-stage28"
+    },
+    {
+      "old_path": "TWELVE_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION_WITHDRAWN_LEGACY.md",
+      "new_path": "claims/finite/n12/history/degree-six-kotzig-port-legacy/TWELVE_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION_WITHDRAWN_LEGACY.md",
+      "reason": "legacy_document -> finite/n12/history/degree-six-kotzig-port-legacy",
+      "status": "moved",
+      "claim_family": "finite/n12/history/degree-six-kotzig-port-legacy",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_twelve_vertex_full_potential_cone.py",
+      "new_path": "claims/finite/n12/history/degree-six-kotzig-port-legacy/analyze_twelve_vertex_full_potential_cone.py",
+      "reason": "claim_script -> finite/n12/history/degree-six-kotzig-port-legacy",
+      "status": "moved",
+      "claim_family": "finite/n12/history/degree-six-kotzig-port-legacy",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_twelve_vertex_six_potential_residuals.py",
+      "new_path": "claims/finite/n12/history/degree-six-kotzig-port-legacy/analyze_twelve_vertex_six_potential_residuals.py",
+      "reason": "claim_script -> finite/n12/history/degree-six-kotzig-port-legacy",
+      "status": "moved",
+      "claim_family": "finite/n12/history/degree-six-kotzig-port-legacy",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "audit_twelve_vertex_six_potential_orbits.cpp",
+      "new_path": "claims/finite/n12/audit_twelve_vertex_six_potential_orbits.cpp",
+      "reason": "claim_script -> finite/n12 live corrected degree-six Kotzig-port replay",
+      "status": "moved",
+      "claim_family": "finite/n12",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "audit_twelve_vertex_six_potential_residuals.py",
+      "new_path": "claims/finite/n12/history/degree-six-kotzig-port-legacy/audit_twelve_vertex_six_potential_residuals.py",
+      "reason": "claim_script -> finite/n12/history/degree-six-kotzig-port-legacy",
+      "status": "moved",
+      "claim_family": "finite/n12/history/degree-six-kotzig-port-legacy",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "exhaust_twelve_vertex_six_potential_orbits.cpp",
+      "new_path": "claims/finite/n12/exhaust_twelve_vertex_six_potential_orbits.cpp",
+      "reason": "claim_script -> finite/n12 live corrected degree-six Kotzig-port replay",
+      "status": "moved",
+      "claim_family": "finite/n12",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "FOURTEEN_VERTEX_C3_C3_C4_C4_FAMILY_CERTIFICATE.md",
@@ -4732,6 +5880,366 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
+      "old_path": "analyze_fourteen_vertex_c4_c4_c6_relational_rules.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_c4_c4_c6_relational_rules.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_c4_c4_c6_rule_sat.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_c4_c4_c6_rule_sat.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_c4_c4_c6_transport_rules.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_c4_c4_c6_transport_rules.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_cancellation_transport.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_cancellation_transport.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_equality_connectivity.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_equality_connectivity.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_equality_survivor_cancellation_transport.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_equality_survivor_cancellation_transport.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_equality_survivor_direct_motifs.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_equality_survivor_direct_motifs.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_equality_survivor_signed_lattice.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_equality_survivor_signed_lattice.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_even_cycle_double_pair_fork.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_even_cycle_double_pair_fork.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_even_cycle_factor_fork.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_even_cycle_factor_fork.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_even_cycle_rank_one_fork.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_even_cycle_rank_one_fork.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_forced_cycle_signed_lattice.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_forced_cycle_signed_lattice.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_forced_slice_factor_cegar.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_forced_slice_factor_cegar.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_full_direct_motifs.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_full_direct_motifs.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_full_only_cycle_cover_cegar.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_full_only_cycle_cover_cegar.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_larger_one_term_full_filter.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_larger_one_term_full_filter.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_larger_one_term_pair_filter.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_larger_one_term_pair_filter.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_orbit8_mandatory_unit_family.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_orbit8_mandatory_unit_family.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_partial_circuit_amplitude_lattice.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_partial_circuit_amplitude_lattice.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_partial_circuit_binomial_closure.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_partial_circuit_binomial_closure.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_partial_circuit_factor_cegar.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_partial_circuit_factor_cegar.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_partial_circuit_rational_closure.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_partial_circuit_rational_closure.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_partial_minimal_circuit_lattice.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_partial_minimal_circuit_lattice.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_portal_determinant_lattice.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_portal_determinant_lattice.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_sparse_transport_prefix.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_sparse_transport_prefix.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_two_even_cycle_core_symmetry.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_two_even_cycle_core_symmetry.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_two_even_cycle_fork.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_two_even_cycle_fork.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_two_even_cycle_lattice_fork.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_two_even_cycle_lattice_fork.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_two_even_cycle_rule_sat.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_two_even_cycle_rule_sat.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_two_to_three_transport.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_two_to_three_transport.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "analyze_fourteen_vertex_unforced_factor_choice_cegar.py",
+      "new_path": "claims/finite/n14/analyze_fourteen_vertex_unforced_factor_choice_cegar.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "audit_fourteen_vertex_c4_c4_c6_rule_sat_orbits.py",
+      "new_path": "claims/finite/n14/audit_fourteen_vertex_c4_c4_c6_rule_sat_orbits.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "augment_fourteen_vertex_c4_c4_c6_with_colour_symmetric_orbit_exclusions.py",
+      "new_path": "claims/finite/n14/augment_fourteen_vertex_c4_c4_c6_with_colour_symmetric_orbit_exclusions.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "augment_fourteen_vertex_rule_cnf_with_certificates.py",
+      "new_path": "claims/finite/n14/augment_fourteen_vertex_rule_cnf_with_certificates.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "augment_fourteen_vertex_rule_cnf_with_minimal_singleton_circuits.py",
+      "new_path": "claims/finite/n14/augment_fourteen_vertex_rule_cnf_with_minimal_singleton_circuits.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "augment_fourteen_vertex_two_even_cycle_cnf_with_three_connectivity.py",
+      "new_path": "claims/finite/n14/augment_fourteen_vertex_two_even_cycle_cnf_with_three_connectivity.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "augment_fourteen_vertex_two_even_cycle_rule_cnf_with_minimum_certificates.py",
+      "new_path": "claims/finite/n14/augment_fourteen_vertex_two_even_cycle_rule_cnf_with_minimum_certificates.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "augment_fourteen_vertex_two_even_cycle_rule_cnf_with_one_extra_cycle_cores.py",
+      "new_path": "claims/finite/n14/augment_fourteen_vertex_two_even_cycle_rule_cnf_with_one_extra_cycle_cores.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "augment_fourteen_vertex_two_even_cycle_rule_cnf_with_unforced_factor_cores.py",
+      "new_path": "claims/finite/n14/augment_fourteen_vertex_two_even_cycle_rule_cnf_with_unforced_factor_cores.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "batch_minimize_fourteen_vertex_factor_fork_certificates.py",
+      "new_path": "claims/finite/n14/batch_minimize_fourteen_vertex_factor_fork_certificates.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
       "old_path": "certify_fourteen_vertex_binomial_trinomial.py",
       "new_path": "claims/finite/n14/certify_fourteen_vertex_binomial_trinomial.py",
       "reason": "claim_script -> finite/fourteen-vertex",
@@ -4759,6 +6267,240 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
+      "old_path": "certify_fourteen_vertex_minimal_singleton_circuit_factors.py",
+      "new_path": "claims/finite/n14/certify_fourteen_vertex_minimal_singleton_circuit_factors.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "classify_fourteen_vertex_equality_survivor_orbits.py",
+      "new_path": "claims/finite/n14/classify_fourteen_vertex_equality_survivor_orbits.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "decode_fourteen_vertex_two_even_cycle_extension_core.py",
+      "new_path": "claims/finite/n14/decode_fourteen_vertex_two_even_cycle_extension_core.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "enumerate_fourteen_vertex_one_term_matchings.py",
+      "new_path": "claims/finite/n14/enumerate_fourteen_vertex_one_term_matchings.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "enumerate_fourteen_vertex_two_to_three_forks.py",
+      "new_path": "claims/finite/n14/enumerate_fourteen_vertex_two_to_three_forks.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "explore_fourteen_vertex_equality_factor_family.py",
+      "new_path": "claims/finite/n14/explore_fourteen_vertex_equality_factor_family.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "explore_random_minimal_singleton_sets.py",
+      "new_path": "claims/finite/n14/explore_random_minimal_singleton_sets.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "extract_fourteen_vertex_forced_slice_factor_cegar_core.py",
+      "new_path": "claims/finite/n14/extract_fourteen_vertex_forced_slice_factor_cegar_core.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "find_fourteen_vertex_two_to_three_fork.py",
+      "new_path": "claims/finite/n14/find_fourteen_vertex_two_to_three_fork.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "minimize_fourteen_vertex_two_even_cycle_certificate_activation.py",
+      "new_path": "claims/finite/n14/minimize_fourteen_vertex_two_even_cycle_certificate_activation.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "run_fourteen_vertex_c4_c4_c6_rule_sat_cegar.py",
+      "new_path": "claims/finite/n14/run_fourteen_vertex_c4_c4_c6_rule_sat_cegar.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "run_fourteen_vertex_c4_c4_c6_rule_sat_incremental.py",
+      "new_path": "claims/finite/n14/run_fourteen_vertex_c4_c4_c6_rule_sat_incremental.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "run_fourteen_vertex_even_cycle_factor_fork_batch.py",
+      "new_path": "claims/finite/n14/run_fourteen_vertex_even_cycle_factor_fork_batch.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "run_fourteen_vertex_mandatory_unit_binomial_cegar.py",
+      "new_path": "claims/finite/n14/run_fourteen_vertex_mandatory_unit_binomial_cegar.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "run_fourteen_vertex_one_extra_cycle_core_incremental.py",
+      "new_path": "claims/finite/n14/run_fourteen_vertex_one_extra_cycle_core_incremental.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "run_fourteen_vertex_partial_circuit_binomial_selection_cegar.py",
+      "new_path": "claims/finite/n14/run_fourteen_vertex_partial_circuit_binomial_selection_cegar.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "run_fourteen_vertex_partial_circuit_lattice_cegar.py",
+      "new_path": "claims/finite/n14/run_fourteen_vertex_partial_circuit_lattice_cegar.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "run_fourteen_vertex_symmetry_binomial_cegar.py",
+      "new_path": "claims/finite/n14/run_fourteen_vertex_symmetry_binomial_cegar.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "run_fourteen_vertex_two_even_cycle_rule_sat_incremental.py",
+      "new_path": "claims/finite/n14/run_fourteen_vertex_two_even_cycle_rule_sat_incremental.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "sample_fourteen_vertex_equality_supports.py",
+      "new_path": "claims/finite/n14/sample_fourteen_vertex_equality_supports.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "sample_fourteen_vertex_random_equality_supports.py",
+      "new_path": "claims/finite/n14/sample_fourteen_vertex_random_equality_supports.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "sample_fourteen_vertex_two_even_cycle_rule_cnf.py",
+      "new_path": "claims/finite/n14/sample_fourteen_vertex_two_even_cycle_rule_cnf.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "search_fourteen_vertex_direct_free.py",
+      "new_path": "claims/finite/n14/search_fourteen_vertex_direct_free.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "search_fourteen_vertex_no_matching_fork.py",
+      "new_path": "claims/finite/n14/search_fourteen_vertex_no_matching_fork.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "search_fourteen_vertex_no_three_extension.py",
+      "new_path": "claims/finite/n14/search_fourteen_vertex_no_three_extension.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "search_minimal_singleton_counterexample.py",
+      "new_path": "claims/finite/n14/search_minimal_singleton_counterexample.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
       "old_path": "verify_fourteen_vertex_binomial_support_closure_augmentation.py",
       "new_path": "claims/finite/n14/verify_fourteen_vertex_binomial_support_closure_augmentation.py",
       "reason": "claim_script -> finite/fourteen-vertex",
@@ -4775,6 +6517,15 @@
       "claim_family": "finite/fourteen-vertex",
       "confidence": "high",
       "executed_batch": "finite-p4-stage28"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c14_rectangle_theorem.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c14_rectangle_theorem.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "verify_fourteen_vertex_c3_c3_c4_c4_family.py",
@@ -4813,6 +6564,15 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
+      "old_path": "verify_fourteen_vertex_c4_10_orbit0.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_10_orbit0.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
       "old_path": "verify_fourteen_vertex_c4_10_orbit1.py",
       "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_10_orbit1.py",
       "reason": "claim_script -> finite/fourteen-vertex",
@@ -4829,6 +6589,24 @@
       "claim_family": "finite/fourteen-vertex",
       "confidence": "high",
       "executed_batch": "finite-p4-stage28"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_colour_symmetric_orbit_exclusions.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_colour_symmetric_orbit_exclusions.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_new5_orbits.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_new5_orbits.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit2.py",
@@ -4856,6 +6634,15 @@
       "claim_family": "finite/fourteen-vertex",
       "confidence": "high",
       "executed_batch": "finite-p4-stage28"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit44_core24_models.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit44_core24_models.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "verify_fourteen_vertex_c4_c4_c6_orbit44_extension.py",
@@ -4901,6 +6688,15 @@
       "claim_family": "finite/fourteen-vertex",
       "confidence": "high",
       "executed_batch": "finite-p4-stage28"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c4_c4_c6_rule_cnf.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_rule_cnf.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "verify_fourteen_vertex_c4_c5_c5_family.py",
@@ -4993,6 +6789,42 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
+      "old_path": "verify_fourteen_vertex_c6_8_126_orbits_kappa3.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_126_orbits_kappa3.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_127_orbits_kappa3.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_127_orbits_kappa3.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_128_orbits_kappa3.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_128_orbits_kappa3.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_129_orbits_kappa3.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_129_orbits_kappa3.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
       "old_path": "verify_fourteen_vertex_c6_8_130_orbits_kappa3.py",
       "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_130_orbits_kappa3.py",
       "reason": "claim_script -> finite/fourteen-vertex",
@@ -5000,6 +6832,15 @@
       "claim_family": "finite/fourteen-vertex",
       "confidence": "high",
       "executed_batch": "finite-p4-stage28"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_c6_8_kappa3_extension_step.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_c6_8_kappa3_extension_step.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "verify_fourteen_vertex_c6_8_orbits0_2.py",
@@ -5011,6 +6852,51 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
+      "old_path": "verify_fourteen_vertex_cancellation_transport.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_cancellation_transport.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_equality_survivor_signed_lattice.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_equality_survivor_signed_lattice.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_even_cycle_double_pair_fork.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_even_cycle_double_pair_fork.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_forced_slice_factor_cegar.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_forced_slice_factor_cegar.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_forced_slice_factor_cegar_core.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_forced_slice_factor_cegar_core.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
       "old_path": "verify_fourteen_vertex_minimal_circuit_frontiers.py",
       "new_path": "claims/finite/n14/verify_fourteen_vertex_minimal_circuit_frontiers.py",
       "reason": "claim_script -> finite/fourteen-vertex",
@@ -5020,6 +6906,24 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
+      "old_path": "verify_fourteen_vertex_minimal_singleton_circuit_augmentation.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_minimal_singleton_circuit_augmentation.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_minimal_singleton_circuit_factors.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_minimal_singleton_circuit_factors.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
       "old_path": "verify_fourteen_vertex_one_extra_cycle_core.py",
       "new_path": "claims/finite/n14/verify_fourteen_vertex_one_extra_cycle_core.py",
       "reason": "claim_script -> finite/fourteen-vertex",
@@ -5027,6 +6931,15 @@
       "claim_family": "finite/fourteen-vertex",
       "confidence": "high",
       "executed_batch": "finite-p4-stage28"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_partial_circuit_amplitude_lattice.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_partial_circuit_amplitude_lattice.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "verify_fourteen_vertex_partial_circuit_binomial_branch.py",
@@ -5047,6 +6960,15 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
+      "old_path": "verify_fourteen_vertex_partial_circuit_cegar_chain.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_partial_circuit_cegar_chain.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
       "old_path": "verify_fourteen_vertex_two_even_cycle_minimum_activity_augmentation.py",
       "new_path": "claims/finite/n14/verify_fourteen_vertex_two_even_cycle_minimum_activity_augmentation.py",
       "reason": "claim_script -> finite/fourteen-vertex",
@@ -5056,6 +6978,15 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
+      "old_path": "verify_fourteen_vertex_two_even_cycle_minimum_activity_certificate.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_two_even_cycle_minimum_activity_certificate.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
       "old_path": "verify_fourteen_vertex_two_even_cycle_one_extra_cycle_augmentation.py",
       "new_path": "claims/finite/n14/verify_fourteen_vertex_two_even_cycle_one_extra_cycle_augmentation.py",
       "reason": "claim_script -> finite/fourteen-vertex",
@@ -5063,6 +6994,33 @@
       "claim_family": "finite/fourteen-vertex",
       "confidence": "high",
       "executed_batch": "finite-p4-stage28"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_two_even_cycle_rule_cnf.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_two_even_cycle_rule_cnf.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_two_even_cycle_three_connectivity_augmentation.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_two_even_cycle_three_connectivity_augmentation.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_two_even_cycle_unforced_factor_core_augmentation.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_two_even_cycle_unforced_factor_core_augmentation.py",
+      "reason": "claim_script -> finite/n14",
+      "status": "moved",
+      "claim_family": "finite/n14",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "verify_fourteen_vertex_unforced_factor_choice_core.py",
@@ -5083,84 +7041,58 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
-      "old_path": "EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md",
-      "new_path": "claims/legacy/EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md",
-      "reason": "withdrawn_document -> legacy",
-      "status": "proposed_high_confidence",
-      "claim_family": "legacy",
-      "confidence": "high"
+      "old_path": "P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md",
+      "new_path": "claims/p3/restrictions/P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md",
+      "reason": "claim_document -> p3/restrictions",
+      "status": "moved",
+      "claim_family": "p3/restrictions",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
-      "old_path": "EIGHT_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
-      "new_path": "claims/legacy/EIGHT_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
-      "reason": "legacy_document -> legacy",
-      "status": "proposed_high_confidence",
-      "claim_family": "legacy",
-      "confidence": "high"
+      "old_path": "P3_ZERO_HYPERPLANE_PRODUCT_THEOREM.md",
+      "new_path": "claims/p3/restrictions/P3_ZERO_HYPERPLANE_PRODUCT_THEOREM.md",
+      "reason": "claim_document -> p3/restrictions",
+      "status": "moved",
+      "claim_family": "p3/restrictions",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
-      "old_path": "FULL_ADMISSIBLE_POTENTIAL_CONE_LEMMA.md",
-      "new_path": "claims/legacy/FULL_ADMISSIBLE_POTENTIAL_CONE_LEMMA.md",
-      "reason": "legacy_document -> legacy",
-      "status": "proposed_high_confidence",
-      "claim_family": "legacy",
-      "confidence": "high"
+      "old_path": "audit_p3_decomposable_restriction_classification.py",
+      "new_path": "claims/p3/restrictions/audit_p3_decomposable_restriction_classification.py",
+      "reason": "claim_script -> p3/restrictions",
+      "status": "moved",
+      "claim_family": "p3/restrictions",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
-      "old_path": "P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md",
-      "new_path": "claims/legacy/P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md",
-      "reason": "withdrawn_document -> legacy",
-      "status": "proposed_high_confidence",
-      "claim_family": "legacy",
-      "confidence": "high"
+      "old_path": "audit_p3_zero_hyperplane_product.py",
+      "new_path": "claims/p3/restrictions/audit_p3_zero_hyperplane_product.py",
+      "reason": "claim_script -> p3/restrictions",
+      "status": "moved",
+      "claim_family": "p3/restrictions",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
-      "old_path": "P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md",
-      "new_path": "claims/legacy/P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md",
-      "reason": "withdrawn_document -> legacy",
-      "status": "proposed_high_confidence",
-      "claim_family": "legacy",
-      "confidence": "high"
+      "old_path": "verify_p3_decomposable_restriction_classification.py",
+      "new_path": "claims/p3/restrictions/verify_p3_decomposable_restriction_classification.py",
+      "reason": "claim_script -> p3/restrictions",
+      "status": "moved",
+      "claim_family": "p3/restrictions",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
-      "old_path": "P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md",
-      "new_path": "claims/legacy/P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md",
-      "reason": "withdrawn_document -> legacy",
-      "status": "proposed_high_confidence",
-      "claim_family": "legacy",
-      "confidence": "high"
-    },
-    {
-      "old_path": "SIX_PERMUTED_POTENTIALS_LEMMA.md",
-      "new_path": "claims/legacy/SIX_PERMUTED_POTENTIALS_LEMMA.md",
-      "reason": "legacy_document -> legacy",
-      "status": "proposed_high_confidence",
-      "claim_family": "legacy",
-      "confidence": "high"
-    },
-    {
-      "old_path": "STATE_LIFT_CYCLE_FIBRE_LEMMA.md",
-      "new_path": "claims/legacy/STATE_LIFT_CYCLE_FIBRE_LEMMA.md",
-      "reason": "legacy_document -> legacy",
-      "status": "proposed_high_confidence",
-      "claim_family": "legacy",
-      "confidence": "high"
-    },
-    {
-      "old_path": "TEN_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
-      "new_path": "claims/legacy/TEN_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
-      "reason": "legacy_document -> legacy",
-      "status": "proposed_high_confidence",
-      "claim_family": "legacy",
-      "confidence": "high"
-    },
-    {
-      "old_path": "TWELVE_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION_WITHDRAWN_LEGACY.md",
-      "new_path": "claims/legacy/TWELVE_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION_WITHDRAWN_LEGACY.md",
-      "reason": "withdrawn_document -> legacy",
-      "status": "proposed_high_confidence",
-      "claim_family": "legacy",
-      "confidence": "high"
+      "old_path": "verify_p3_zero_hyperplane_product.py",
+      "new_path": "claims/p3/restrictions/verify_p3_zero_hyperplane_product.py",
+      "reason": "claim_script -> p3/restrictions",
+      "status": "moved",
+      "claim_family": "p3/restrictions",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "P4_BOREL_GAUGE_CORRECTION.md",
@@ -5170,14 +7102,6 @@
       "claim_family": "p4/boundaries",
       "confidence": "low",
       "executed_batch": "finite-p4-stage28"
-    },
-    {
-      "old_path": "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md",
-      "new_path": "claims/p4/boundaries/P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md",
-      "reason": "claim_document -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "medium"
     },
     {
       "old_path": "P4_COMMON_KERNEL_YX_211_FACTORISATION_OBSTRUCTION.md",
@@ -5216,14 +7140,6 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
-      "old_path": "P4_INOUT_PATH_STRATUM_WORKING_NOTE.md",
-      "new_path": "claims/p4/boundaries/P4_INOUT_PATH_STRATUM_WORKING_NOTE.md",
-      "reason": "claim_document -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "medium"
-    },
-    {
       "old_path": "P4_RADICAL_CROSSED_211_TRIANGLE_OBSTRUCTION.md",
       "new_path": "claims/p4/boundaries/P4_RADICAL_CROSSED_211_TRIANGLE_OBSTRUCTION.md",
       "reason": "claim_document -> p4/boundaries",
@@ -5231,14 +7147,6 @@
       "claim_family": "p4/boundaries",
       "confidence": "medium",
       "executed_batch": "finite-p4-stage28"
-    },
-    {
-      "old_path": "audit_p4_common_active_binary_triangle_p_plus_q_boundary.py",
-      "new_path": "claims/p4/boundaries/audit_p4_common_active_binary_triangle_p_plus_q_boundary.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
     },
     {
       "old_path": "audit_p4_common_kernel_yx_211_factorisation_obstruction.py",
@@ -5286,14 +7194,6 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
-      "old_path": "audit_p4_mixed_two_rank_two_triangle_obstruction_withdrawn_pending_borel_audit.py",
-      "new_path": "claims/p4/boundaries/audit_p4_mixed_two_rank_two_triangle_obstruction_withdrawn_pending_borel_audit.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
       "old_path": "audit_p4_radical_crossed_211_triangle_obstruction.py",
       "new_path": "claims/p4/boundaries/audit_p4_radical_crossed_211_triangle_obstruction.py",
       "reason": "claim_script -> p4/boundaries",
@@ -5303,12 +7203,76 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
-      "old_path": "audit_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py",
-      "new_path": "claims/p4/boundaries/audit_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
+      "old_path": "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md",
+      "new_path": "claims/p4/boundaries/component20-p-plus-q-wall/P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md",
+      "reason": "claim_document -> p4/boundaries/component20-p-plus-q-wall",
+      "status": "moved",
+      "claim_family": "p4/boundaries/component20-p-plus-q-wall",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "audit_p4_common_active_binary_triangle_p_plus_q_boundary.py",
+      "new_path": "claims/p4/boundaries/component20-p-plus-q-wall/audit_p4_common_active_binary_triangle_p_plus_q_boundary.py",
+      "reason": "claim_script -> p4/boundaries/component20-p-plus-q-wall",
+      "status": "moved",
+      "claim_family": "p4/boundaries/component20-p-plus-q-wall",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_p4_common_active_binary_triangle_p_plus_q_boundary.py",
+      "new_path": "claims/p4/boundaries/component20-p-plus-q-wall/verify_p4_common_active_binary_triangle_p_plus_q_boundary.py",
+      "reason": "claim_script -> p4/boundaries/component20-p-plus-q-wall",
+      "status": "moved",
+      "claim_family": "p4/boundaries/component20-p-plus-q-wall",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "P4_INOUT_PATH_STRATUM_WORKING_NOTE.md",
+      "new_path": "claims/p4/boundaries/inout-path-stratum/P4_INOUT_PATH_STRATUM_WORKING_NOTE.md",
+      "reason": "claim_document -> p4/boundaries/inout-path-stratum",
+      "status": "moved",
+      "claim_family": "p4/boundaries/inout-path-stratum",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "branch_ambient_certificates.py",
+      "new_path": "claims/p4/boundaries/inout-path-stratum/branch_ambient_certificates.py",
+      "reason": "claim_script -> p4/boundaries/inout-path-stratum",
+      "status": "moved",
+      "claim_family": "p4/boundaries/inout-path-stratum",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "branch_invariants_and_sieve.py",
+      "new_path": "claims/p4/boundaries/inout-path-stratum/branch_invariants_and_sieve.py",
+      "reason": "claim_script -> p4/boundaries/inout-path-stratum",
+      "status": "moved",
+      "claim_family": "p4/boundaries/inout-path-stratum",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "eighth_closure_j8_and_u0_obstruction.py",
+      "new_path": "claims/p4/boundaries/inout-path-stratum/eighth_closure_j8_and_u0_obstruction.py",
+      "reason": "claim_script -> p4/boundaries/inout-path-stratum",
+      "status": "moved",
+      "claim_family": "p4/boundaries/inout-path-stratum",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_p4_inout_path_stratum_working_note.py",
+      "new_path": "claims/p4/boundaries/inout-path-stratum/verify_p4_inout_path_stratum_working_note.py",
+      "reason": "claim_script -> p4/boundaries/inout-path-stratum",
+      "status": "moved",
+      "claim_family": "p4/boundaries/inout-path-stratum",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md",
@@ -5554,14 +7518,6 @@
       "executed_batch": "p4-rank-two-triangle-stage8"
     },
     {
-      "old_path": "verify_p4_common_active_binary_triangle_p_plus_q_boundary.py",
-      "new_path": "claims/p4/boundaries/verify_p4_common_active_binary_triangle_p_plus_q_boundary.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
       "old_path": "verify_p4_common_kernel_yx_211_factorisation_obstruction.py",
       "new_path": "claims/p4/boundaries/verify_p4_common_kernel_yx_211_factorisation_obstruction.py",
       "reason": "claim_script -> p4/boundaries",
@@ -5598,14 +7554,6 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
-      "old_path": "verify_p4_inout_path_stratum_working_note.py",
-      "new_path": "claims/p4/boundaries/verify_p4_inout_path_stratum_working_note.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
       "old_path": "verify_p4_marked_delta2_alternating_gate.py",
       "new_path": "claims/p4/boundaries/verify_p4_marked_delta2_alternating_gate.py",
       "reason": "claim_script -> p4/boundaries",
@@ -5615,14 +7563,6 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
-      "old_path": "verify_p4_mixed_two_rank_two_triangle_obstruction_withdrawn_pending_borel_audit.py",
-      "new_path": "claims/p4/boundaries/verify_p4_mixed_two_rank_two_triangle_obstruction_withdrawn_pending_borel_audit.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
-    },
-    {
       "old_path": "verify_p4_radical_crossed_211_triangle_obstruction.py",
       "new_path": "claims/p4/boundaries/verify_p4_radical_crossed_211_triangle_obstruction.py",
       "reason": "claim_script -> p4/boundaries",
@@ -5630,14 +7570,6 @@
       "claim_family": "p4/boundaries",
       "confidence": "low",
       "executed_batch": "finite-p4-stage28"
-    },
-    {
-      "old_path": "verify_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py",
-      "new_path": "claims/p4/boundaries/verify_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py",
-      "reason": "claim_script -> p4/boundaries",
-      "status": "review_required",
-      "claim_family": "p4/boundaries",
-      "confidence": "low"
     },
     {
       "old_path": "P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md",
@@ -5674,22 +7606,6 @@
       "claim_family": "p4/classifications",
       "confidence": "medium",
       "executed_batch": "finite-p4-stage28"
-    },
-    {
-      "old_path": "P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md",
-      "new_path": "claims/p4/classifications/P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md",
-      "reason": "claim_document -> p4/classifications",
-      "status": "review_required",
-      "claim_family": "p4/classifications",
-      "confidence": "low"
-    },
-    {
-      "old_path": "P4_COMPONENT20_TRANSVERSE_BASE_DIAGONAL_FAN_PROOF_B.md",
-      "new_path": "claims/p4/classifications/P4_COMPONENT20_TRANSVERSE_BASE_DIAGONAL_FAN_PROOF_B.md",
-      "reason": "claim_document -> p4/classifications",
-      "status": "review_required",
-      "claim_family": "p4/classifications",
-      "confidence": "low"
     },
     {
       "old_path": "P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md",
@@ -5818,6 +7734,15 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
+      "old_path": "analyze_p4_common_singleton_local_dimension.py",
+      "new_path": "claims/p4/classifications/analyze_p4_common_singleton_local_dimension.py",
+      "reason": "claim_script -> p4/classifications",
+      "status": "moved",
+      "claim_family": "p4/classifications",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
       "old_path": "audit_p4_all_pair_rank_exceptional_graph_reduction.py",
       "new_path": "claims/p4/classifications/audit_p4_all_pair_rank_exceptional_graph_reduction.py",
       "reason": "claim_script -> p4/classifications",
@@ -5852,14 +7777,6 @@
       "claim_family": "p4/classifications",
       "confidence": "low",
       "executed_batch": "finite-p4-stage28"
-    },
-    {
-      "old_path": "audit_p4_component19_p0_finite_boundary_geometry.py",
-      "new_path": "claims/p4/classifications/audit_p4_component19_p0_finite_boundary_geometry.py",
-      "reason": "claim_script -> p4/classifications",
-      "status": "review_required",
-      "claim_family": "p4/classifications",
-      "confidence": "low"
     },
     {
       "old_path": "audit_p4_diagonal_quadric_one_three_components.py",
@@ -5941,14 +7858,6 @@
       "claim_family": "p4/classifications",
       "confidence": "low",
       "executed_batch": "finite-p4-stage28"
-    },
-    {
-      "old_path": "audit_p4_resonant_flat_triangle_classification_withdrawn_overstrong.py",
-      "new_path": "claims/p4/classifications/audit_p4_resonant_flat_triangle_classification_withdrawn_overstrong.py",
-      "reason": "claim_script -> p4/classifications",
-      "status": "review_required",
-      "claim_family": "p4/classifications",
-      "confidence": "low"
     },
     {
       "old_path": "audit_p4_support_one_211_triangle_reduction.py",
@@ -7364,14 +9273,6 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
-      "old_path": "verify_p4_resonant_flat_triangle_classification_withdrawn_overstrong.py",
-      "new_path": "claims/p4/classifications/verify_p4_resonant_flat_triangle_classification_withdrawn_overstrong.py",
-      "reason": "claim_script -> p4/classifications",
-      "status": "review_required",
-      "claim_family": "p4/classifications",
-      "confidence": "low"
-    },
-    {
       "old_path": "verify_p4_support_one_211_triangle_reduction.py",
       "new_path": "claims/p4/classifications/verify_p4_support_one_211_triangle_reduction.py",
       "reason": "claim_script -> p4/classifications",
@@ -7640,6 +9541,213 @@
       "claim_family": "p4/components/split-pair",
       "confidence": "high",
       "executed_batch": "p4-components-stage3"
+    },
+    {
+      "old_path": "COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md",
+      "reason": "claim_document -> p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres",
+      "status": "moved",
+      "claim_family": "p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_VERIFICATION.md",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_VERIFICATION.md",
+      "reason": "claim_document -> p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres",
+      "status": "moved",
+      "claim_family": "p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md",
+      "reason": "claim_document -> p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres",
+      "status": "moved",
+      "claim_family": "p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "audit_component20_intrinsic_wall_exceptional_fibres_candidate.py",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/audit_component20_intrinsic_wall_exceptional_fibres_candidate.py",
+      "reason": "claim_script -> p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres",
+      "status": "moved",
+      "claim_family": "p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "component20_intrinsic_wall_exceptional_fibres_certificate.json",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/component20_intrinsic_wall_exceptional_fibres_certificate.json",
+      "reason": "claim_data -> p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres",
+      "status": "moved",
+      "claim_family": "p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "derive_component20_intrinsic_wall_exceptional_fibres_candidate.py",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/derive_component20_intrinsic_wall_exceptional_fibres_candidate.py",
+      "reason": "claim_script -> p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres",
+      "status": "moved",
+      "claim_family": "p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "derive_p4_component20_intrinsic_exceptional_base_geometry_proof_b.py",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/derive_p4_component20_intrinsic_exceptional_base_geometry_proof_b.py",
+      "reason": "claim_script -> p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres",
+      "status": "moved",
+      "claim_family": "p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_CANDIDATE.md",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_CANDIDATE.md",
+      "reason": "claim_document -> p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas",
+      "status": "moved",
+      "claim_family": "p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_VERIFICATION.md",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_VERIFICATION.md",
+      "reason": "claim_document -> p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas",
+      "status": "moved",
+      "claim_family": "p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "P4_COMPONENT20_TRANSVERSE_BASE_DIAGONAL_FAN_PROOF_B.md",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/P4_COMPONENT20_TRANSVERSE_BASE_DIAGONAL_FAN_PROOF_B.md",
+      "reason": "claim_document -> p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas",
+      "status": "moved",
+      "claim_family": "p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "audit_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/audit_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py",
+      "reason": "claim_script -> p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas",
+      "status": "moved",
+      "claim_family": "p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "component20_intrinsic_zero_diagonal_dvr_atlas_certificate.json",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/component20_intrinsic_zero_diagonal_dvr_atlas_certificate.json",
+      "reason": "claim_data -> p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas",
+      "status": "moved",
+      "claim_family": "p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "derive_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/derive_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py",
+      "reason": "claim_script -> p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas",
+      "status": "moved",
+      "claim_family": "p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "derive_p4_component20_transverse_base_diagonal_fan_proof_b.py",
+      "new_path": "claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/derive_p4_component20_transverse_base_diagonal_fan_proof_b.py",
+      "reason": "claim_script -> p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas",
+      "status": "moved",
+      "claim_family": "p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md",
+      "new_path": "claims/p4/history/mixed-two-rank-two-triangle/P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md",
+      "reason": "legacy_document -> p4/history/mixed-two-rank-two-triangle",
+      "status": "moved",
+      "claim_family": "p4/history/mixed-two-rank-two-triangle",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "audit_p4_mixed_two_rank_two_triangle_obstruction_withdrawn_pending_borel_audit.py",
+      "new_path": "claims/p4/history/mixed-two-rank-two-triangle/audit_p4_mixed_two_rank_two_triangle_obstruction_withdrawn_pending_borel_audit.py",
+      "reason": "claim_script -> p4/history/mixed-two-rank-two-triangle",
+      "status": "moved",
+      "claim_family": "p4/history/mixed-two-rank-two-triangle",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_p4_mixed_two_rank_two_triangle_obstruction_withdrawn_pending_borel_audit.py",
+      "new_path": "claims/p4/history/mixed-two-rank-two-triangle/verify_p4_mixed_two_rank_two_triangle_obstruction_withdrawn_pending_borel_audit.py",
+      "reason": "claim_script -> p4/history/mixed-two-rank-two-triangle",
+      "status": "moved",
+      "claim_family": "p4/history/mixed-two-rank-two-triangle",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md",
+      "new_path": "claims/p4/history/rank-two-relation-star/P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md",
+      "reason": "legacy_document -> p4/history/rank-two-relation-star",
+      "status": "moved",
+      "claim_family": "p4/history/rank-two-relation-star",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "audit_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py",
+      "new_path": "claims/p4/history/rank-two-relation-star/audit_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py",
+      "reason": "claim_script -> p4/history/rank-two-relation-star",
+      "status": "moved",
+      "claim_family": "p4/history/rank-two-relation-star",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py",
+      "new_path": "claims/p4/history/rank-two-relation-star/verify_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py",
+      "reason": "claim_script -> p4/history/rank-two-relation-star",
+      "status": "moved",
+      "claim_family": "p4/history/rank-two-relation-star",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md",
+      "new_path": "claims/p4/history/resonant-flat-triangle/P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md",
+      "reason": "legacy_document -> p4/history/resonant-flat-triangle",
+      "status": "moved",
+      "claim_family": "p4/history/resonant-flat-triangle",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "audit_p4_resonant_flat_triangle_classification_withdrawn_overstrong.py",
+      "new_path": "claims/p4/history/resonant-flat-triangle/audit_p4_resonant_flat_triangle_classification_withdrawn_overstrong.py",
+      "reason": "claim_script -> p4/history/resonant-flat-triangle",
+      "status": "moved",
+      "claim_family": "p4/history/resonant-flat-triangle",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_p4_resonant_flat_triangle_classification_withdrawn_overstrong.py",
+      "new_path": "claims/p4/history/resonant-flat-triangle/verify_p4_resonant_flat_triangle_classification_withdrawn_overstrong.py",
+      "reason": "claim_script -> p4/history/resonant-flat-triangle",
+      "status": "moved",
+      "claim_family": "p4/history/resonant-flat-triangle",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "P5_ALL_FULL_BOUNDARY_OBSTRUCTION.md",
@@ -9496,6 +11604,33 @@
       "executed_batch": "p5-frontier-stage29"
     },
     {
+      "old_path": "FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md",
+      "new_path": "claims/p5/frontier/five-row-projective-incidence/FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md",
+      "reason": "claim_document -> p5/frontier/five-row-projective-incidence",
+      "status": "moved",
+      "claim_family": "p5/frontier/five-row-projective-incidence",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "audit_five_row_projective_incidence.py",
+      "new_path": "claims/p5/frontier/five-row-projective-incidence/audit_five_row_projective_incidence.py",
+      "reason": "claim_script -> p5/frontier/five-row-projective-incidence",
+      "status": "moved",
+      "claim_family": "p5/frontier/five-row-projective-incidence",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_five_row_projective_incidence.py",
+      "new_path": "claims/p5/frontier/five-row-projective-incidence/verify_five_row_projective_incidence.py",
+      "reason": "claim_script -> p5/frontier/five-row-projective-incidence",
+      "status": "moved",
+      "claim_family": "p5/frontier/five-row-projective-incidence",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
       "old_path": "verify_p5_all_full_tricolour_obstruction.py",
       "new_path": "claims/p5/frontier/verify_p5_all_full_tricolour_obstruction.py",
       "reason": "claim_script -> p5/frontier",
@@ -10934,6 +13069,15 @@
       "claim_family": "p5/h22/component19-p0-finite-boundary-geometry-reconnaissance",
       "confidence": "high",
       "executed_batch": "p5-h22-root-exit-stage31"
+    },
+    {
+      "old_path": "audit_p4_component19_p0_finite_boundary_geometry.py",
+      "new_path": "claims/p5/h22/component19-p0-finite-boundary-geometry-reconnaissance/audit_p4_component19_p0_finite_boundary_geometry.py",
+      "reason": "claim_script -> p5/h22/component19-p0-finite-boundary-geometry-reconnaissance",
+      "status": "moved",
+      "claim_family": "p5/h22/component19-p0-finite-boundary-geometry-reconnaissance",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md",
@@ -17632,6 +19776,33 @@
       "executed_batch": "high-order-root-exit-stage30"
     },
     {
+      "old_path": "FIVE_ROOT_DIAGONAL_TARGET_INCIDENCE_SCHUBERT_DUALITY_AND_COFACTOR_LINE_THEOREM.md",
+      "new_path": "claims/p7/five-root-diagonal-target-incidence/FIVE_ROOT_DIAGONAL_TARGET_INCIDENCE_SCHUBERT_DUALITY_AND_COFACTOR_LINE_THEOREM.md",
+      "reason": "claim_document -> p7/five-root-diagonal-target-incidence",
+      "status": "moved",
+      "claim_family": "p7/five-root-diagonal-target-incidence",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "audit_five_root_diagonal_target_incidence_schubert_duality_and_cofactor_line.py",
+      "new_path": "claims/p7/five-root-diagonal-target-incidence/audit_five_root_diagonal_target_incidence_schubert_duality_and_cofactor_line.py",
+      "reason": "claim_script -> p7/five-root-diagonal-target-incidence",
+      "status": "moved",
+      "claim_family": "p7/five-root-diagonal-target-incidence",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "verify_five_root_diagonal_target_incidence_schubert_duality_and_cofactor_line.py",
+      "new_path": "claims/p7/five-root-diagonal-target-incidence/verify_five_root_diagonal_target_incidence_schubert_duality_and_cofactor_line.py",
+      "reason": "claim_script -> p7/five-root-diagonal-target-incidence",
+      "status": "moved",
+      "claim_family": "p7/five-root-diagonal-target-incidence",
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
       "old_path": "verify_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py",
       "new_path": "claims/p7/verify_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py",
       "reason": "claim_script -> p7",
@@ -18337,138 +20508,100 @@
       "old_path": "cancellation_transport.py",
       "new_path": "src/krenn_gu/cancellation_transport.py",
       "reason": "shared_library -> None",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "candidate_killer_cover_sat.py",
-      "new_path": "src/krenn_gu/candidate_killer_cover_sat.py",
-      "reason": "shared_library -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "candidate_matching_obstruction_sat.py",
-      "new_path": "src/krenn_gu/candidate_matching_obstruction_sat.py",
-      "reason": "shared_library -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "eight_vertex_degree4_cegar.py",
       "new_path": "src/krenn_gu/eight_vertex_degree4_cegar.py",
       "reason": "shared_library -> None",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "medium"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "eight_vertex_degree4_support.py",
-      "new_path": "src/krenn_gu/eight_vertex_degree4_support.py",
-      "reason": "shared_library -> None",
+      "new_path": "claims/finite/n08/eight_vertex_degree4_support.py",
+      "reason": "claim_script -> finite/eight-vertex (Stage 33 inverse-taper correction)",
       "status": "moved",
-      "claim_family": null,
-      "confidence": "medium",
-      "executed_batch": "finite-p4-stage28"
-    },
-    {
-      "old_path": "eight_vertex_native_kissat_laurent_batch.py",
-      "new_path": "src/krenn_gu/eight_vertex_native_kissat_laurent_batch.py",
-      "reason": "shared_library -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "eight_vertex_no_binomial_cegar.py",
-      "new_path": "src/krenn_gu/eight_vertex_no_binomial_cegar.py",
-      "reason": "shared_library -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "eight_vertex_skeleton_batch.py",
-      "new_path": "src/krenn_gu/eight_vertex_skeleton_batch.py",
-      "reason": "shared_library -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "eight_vertex_skeleton_laurent_batch.py",
-      "new_path": "src/krenn_gu/eight_vertex_skeleton_laurent_batch.py",
-      "reason": "shared_library -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high",
+      "executed_batch": "finite-stage28-inverse-taper-correction-stage33"
     },
     {
       "old_path": "eight_vertex_sparse_exact.py",
       "new_path": "src/krenn_gu/eight_vertex_sparse_exact.py",
       "reason": "shared_library -> None",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "medium"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
-      "old_path": "factor_lattice_cegar.py",
-      "new_path": "src/krenn_gu/factor_lattice_cegar.py",
+      "old_path": "enumerate_cubic_rankone.py",
+      "new_path": "src/krenn_gu/enumerate_cubic_rankone.py",
       "reason": "shared_library -> None",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "medium"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
-      "old_path": "global_candidate_laurent_cegar.py",
-      "new_path": "src/krenn_gu/global_candidate_laurent_cegar.py",
+      "old_path": "explore_random_even_cycle_forks.py",
+      "new_path": "src/krenn_gu/explore_random_even_cycle_forks.py",
       "reason": "shared_library -> None",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "medium"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "generate_prism_singular.py",
+      "new_path": "src/krenn_gu/generate_prism_singular.py",
+      "reason": "shared_library -> None",
+      "status": "moved",
+      "claim_family": null,
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "integer_constant_lattice.py",
       "new_path": "src/krenn_gu/integer_constant_lattice.py",
       "reason": "shared_library -> None",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "medium"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "integer_signed_lattice.py",
       "new_path": "src/krenn_gu/integer_signed_lattice.py",
       "reason": "shared_library -> None",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "medium"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "killer_pattern_certificates.py",
       "new_path": "src/krenn_gu/killer_pattern_certificates.py",
       "reason": "shared_library -> None",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "killer_union_stratum.py",
-      "new_path": "src/krenn_gu/killer_union_stratum.py",
-      "reason": "shared_library -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "odd_binomial_cycle.py",
       "new_path": "src/krenn_gu/odd_binomial_cycle.py",
       "reason": "shared_library -> None",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "medium"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "p5_pair_support_semantics.py",
@@ -18483,107 +20616,127 @@
       "old_path": "prism_laurent_reduction.py",
       "new_path": "src/krenn_gu/prism_laurent_reduction.py",
       "reason": "shared_library -> None",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "prism_orbit_batch.py",
-      "new_path": "src/krenn_gu/prism_orbit_batch.py",
-      "reason": "shared_library -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "prism_orbit_screen.py",
       "new_path": "src/krenn_gu/prism_orbit_screen.py",
       "reason": "shared_library -> None",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "medium"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "prism_rankone_parameterization.py",
       "new_path": "src/krenn_gu/prism_rankone_parameterization.py",
       "reason": "shared_library -> None",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "prism_support_sat.py",
-      "new_path": "src/krenn_gu/prism_support_sat.py",
-      "reason": "shared_library -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "rankone_support_sat.py",
       "new_path": "src/krenn_gu/rankone_support_sat.py",
       "reason": "shared_library -> None",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "medium"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "search_killer_patterns.py",
+      "new_path": "src/krenn_gu/search_killer_patterns.py",
+      "reason": "shared_library -> None",
+      "status": "moved",
+      "claim_family": null,
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "search_prism_stratum.py",
+      "new_path": "src/krenn_gu/search_prism_stratum.py",
+      "reason": "shared_library -> None",
+      "status": "moved",
+      "claim_family": null,
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "search_witness.py",
+      "new_path": "src/krenn_gu/search_witness.py",
+      "reason": "shared_library -> None",
+      "status": "moved",
+      "claim_family": null,
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "signed_binomial_lattice.py",
       "new_path": "src/krenn_gu/signed_binomial_lattice.py",
       "reason": "shared_library -> None",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "support_toric_degeneration.py",
-      "new_path": "src/krenn_gu/support_toric_degeneration.py",
-      "reason": "shared_library -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "verify_double_c4_singleton_family.py",
-      "new_path": "src/krenn_gu/verify_double_c4_singleton_family.py",
-      "reason": "shared_library -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "verify_fourteen_vertex_no_one_term_support.py",
-      "new_path": "src/krenn_gu/verify_fourteen_vertex_no_one_term_support.py",
-      "reason": "shared_library -> None",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_no_one_term_support.py",
+      "reason": "claim_script -> finite/fourteen-vertex (Stage 33 inverse-taper correction)",
       "status": "moved",
-      "claim_family": null,
-      "confidence": "medium",
-      "executed_batch": "finite-p4-stage28"
-    },
-    {
-      "old_path": "verify_full_admissible_potential_cone.py",
-      "new_path": "src/krenn_gu/verify_full_admissible_potential_cone.py",
-      "reason": "shared_library -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "executed_batch": "finite-stage28-inverse-taper-correction-stage33"
     },
     {
       "old_path": "verify_laurent_batch_manifest.py",
-      "new_path": "src/krenn_gu/verify_laurent_batch_manifest.py",
-      "reason": "shared_library -> None",
+      "new_path": "claims/finite/n08/verify_laurent_batch_manifest.py",
+      "reason": "claim_script -> finite/eight-vertex (Stage 33 inverse-taper correction)",
       "status": "moved",
-      "claim_family": null,
-      "confidence": "medium",
-      "executed_batch": "finite-p4-stage28"
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high",
+      "executed_batch": "finite-stage28-inverse-taper-correction-stage33"
     },
     {
-      "old_path": "verify_prism_certificates.py",
-      "new_path": "src/krenn_gu/verify_prism_certificates.py",
-      "reason": "shared_library -> None",
-      "status": "review_required",
+      "old_path": "test_fourteen_vertex_cycle_cover_lattice.py",
+      "new_path": "tests/test_fourteen_vertex_cycle_cover_lattice.py",
+      "reason": "test -> None",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "medium"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "test_fourteen_vertex_minimum_activity_certificate.py",
+      "new_path": "tests/test_fourteen_vertex_minimum_activity_certificate.py",
+      "reason": "test -> None",
+      "status": "moved",
+      "claim_family": null,
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "test_fourteen_vertex_two_even_cycle_rule_sat.py",
+      "new_path": "tests/test_fourteen_vertex_two_even_cycle_rule_sat.py",
+      "reason": "test -> None",
+      "status": "moved",
+      "claim_family": null,
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
+    },
+    {
+      "old_path": "test_search_witness.py",
+      "new_path": "tests/test_search_witness.py",
+      "reason": "test -> None",
+      "status": "moved",
+      "claim_family": null,
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "analyze_dimacs_extension_clause_core.py",
@@ -18593,286 +20746,6 @@
       "claim_family": null,
       "confidence": "medium",
       "executed_batch": "high-order-symbolic-forest-stage27"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_c4_c4_c6_relational_rules.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_c4_c4_c6_relational_rules.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_c4_c4_c6_rule_sat.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_c4_c4_c6_rule_sat.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_c4_c4_c6_transport_rules.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_c4_c4_c6_transport_rules.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_cancellation_transport.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_cancellation_transport.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_equality_connectivity.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_equality_connectivity.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_equality_survivor_cancellation_transport.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_equality_survivor_cancellation_transport.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_equality_survivor_direct_motifs.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_equality_survivor_direct_motifs.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_equality_survivor_signed_lattice.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_equality_survivor_signed_lattice.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_even_cycle_double_pair_fork.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_even_cycle_double_pair_fork.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_even_cycle_factor_fork.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_even_cycle_factor_fork.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_even_cycle_rank_one_fork.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_even_cycle_rank_one_fork.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_forced_cycle_signed_lattice.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_forced_cycle_signed_lattice.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_forced_slice_factor_cegar.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_forced_slice_factor_cegar.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_full_direct_motifs.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_full_direct_motifs.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_full_only_cycle_cover_cegar.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_full_only_cycle_cover_cegar.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_larger_one_term_full_filter.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_larger_one_term_full_filter.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_larger_one_term_pair_filter.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_larger_one_term_pair_filter.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_orbit8_mandatory_unit_family.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_orbit8_mandatory_unit_family.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_partial_circuit_amplitude_lattice.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_partial_circuit_amplitude_lattice.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_partial_circuit_binomial_closure.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_partial_circuit_binomial_closure.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_partial_circuit_factor_cegar.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_partial_circuit_factor_cegar.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_partial_circuit_rational_closure.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_partial_circuit_rational_closure.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_partial_minimal_circuit_lattice.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_partial_minimal_circuit_lattice.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_portal_determinant_lattice.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_portal_determinant_lattice.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_sparse_transport_prefix.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_sparse_transport_prefix.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_two_even_cycle_core_symmetry.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_two_even_cycle_core_symmetry.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_two_even_cycle_fork.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_two_even_cycle_fork.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_two_even_cycle_lattice_fork.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_two_even_cycle_lattice_fork.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_two_even_cycle_rule_sat.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_two_even_cycle_rule_sat.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_two_to_three_transport.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_two_to_three_transport.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_fourteen_vertex_unforced_factor_choice_cegar.py",
-      "new_path": "tools/explore/analyze_fourteen_vertex_unforced_factor_choice_cegar.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_full_cycle_factor_conflicts.py",
-      "new_path": "tools/explore/analyze_full_cycle_factor_conflicts.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_global_cegar_survivor.py",
-      "new_path": "tools/explore/analyze_global_cegar_survivor.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_odd_binomial_triangle_census.py",
-      "new_path": "tools/explore/analyze_odd_binomial_triangle_census.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_p4_common_singleton_local_dimension.py",
-      "new_path": "tools/explore/analyze_p4_common_singleton_local_dimension.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
     },
     {
       "old_path": "analyze_p5_exact_three_motifs.py",
@@ -18893,70 +20766,6 @@
       "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
-      "old_path": "analyze_rectangle_transport_census.py",
-      "new_path": "tools/explore/analyze_rectangle_transport_census.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_six_vertex_elementary_coverage.py",
-      "new_path": "tools/explore/analyze_six_vertex_elementary_coverage.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_support_toric_census.py",
-      "new_path": "tools/explore/analyze_support_toric_census.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_ten_vertex_degree_six_kotzig_port_survivors.py",
-      "new_path": "tools/explore/analyze_ten_vertex_degree_six_kotzig_port_survivors.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_ten_vertex_permuted_potential_survivors.py",
-      "new_path": "tools/explore/analyze_ten_vertex_permuted_potential_survivors.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_twelve_vertex_full_potential_cone.py",
-      "new_path": "tools/explore/analyze_twelve_vertex_full_potential_cone.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_twelve_vertex_six_potential_residuals.py",
-      "new_path": "tools/explore/analyze_twelve_vertex_six_potential_residuals.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "analyze_unary_cycle_relation_family.py",
-      "new_path": "tools/explore/analyze_unary_cycle_relation_family.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
       "old_path": "certify_p5_high_coordinate_zero_forest_batch.py",
       "new_path": "tools/explore/certify_p5_high_coordinate_zero_forest_batch.py",
       "reason": "tool_script -> None",
@@ -18968,22 +20777,6 @@
     {
       "old_path": "check_hygiene.py",
       "new_path": "tools/explore/check_hygiene.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "classify_fourteen_vertex_equality_survivor_orbits.py",
-      "new_path": "tools/explore/classify_fourteen_vertex_equality_survivor_orbits.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "classify_killer_union_support.py",
-      "new_path": "tools/explore/classify_killer_union_support.py",
       "reason": "tool_script -> None",
       "status": "review_required",
       "claim_family": null,
@@ -19017,102 +20810,6 @@
       "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
-      "old_path": "derive_component20_intrinsic_wall_exceptional_fibres_candidate.py",
-      "new_path": "tools/explore/derive_component20_intrinsic_wall_exceptional_fibres_candidate.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "derive_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py",
-      "new_path": "tools/explore/derive_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "derive_p4_component20_intrinsic_exceptional_base_geometry_proof_b.py",
-      "new_path": "tools/explore/derive_p4_component20_intrinsic_exceptional_base_geometry_proof_b.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "derive_p4_component20_transverse_base_diagonal_fan_proof_b.py",
-      "new_path": "tools/explore/derive_p4_component20_transverse_base_diagonal_fan_proof_b.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "enumerate_cubic_rankone.py",
-      "new_path": "tools/explore/enumerate_cubic_rankone.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "enumerate_degree3_reciprocal_orbits.py",
-      "new_path": "tools/explore/enumerate_degree3_reciprocal_orbits.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "enumerate_double_c4_singleton_family.py",
-      "new_path": "tools/explore/enumerate_double_c4_singleton_family.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "enumerate_five_regular_double_c4_singleton_family.py",
-      "new_path": "tools/explore/enumerate_five_regular_double_c4_singleton_family.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "enumerate_five_regular_full_singleton_family.py",
-      "new_path": "tools/explore/enumerate_five_regular_full_singleton_family.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "enumerate_fourteen_vertex_one_term_matchings.py",
-      "new_path": "tools/explore/enumerate_fourteen_vertex_one_term_matchings.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "enumerate_fourteen_vertex_two_to_three_forks.py",
-      "new_path": "tools/explore/enumerate_fourteen_vertex_two_to_three_forks.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "enumerate_killer_union_orbits.py",
-      "new_path": "tools/explore/enumerate_killer_union_orbits.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
       "old_path": "enumerate_p5_exact_k_partial_supports.py",
       "new_path": "tools/explore/enumerate_p5_exact_k_partial_supports.py",
       "reason": "tool_script -> None",
@@ -19122,84 +20819,13 @@
       "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
-      "old_path": "enumerate_ten_vertex_c4_c6_equality_orbits.py",
-      "new_path": "tools/explore/enumerate_ten_vertex_c4_c6_equality_orbits.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "enumerate_ten_vertex_equality_support_orbits.py",
-      "new_path": "tools/explore/enumerate_ten_vertex_equality_support_orbits.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "explore_eight_vertex_degree_six_kotzig_ports.py",
-      "new_path": "tools/explore/explore_eight_vertex_degree_six_kotzig_ports.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "explore_fourteen_vertex_equality_factor_family.py",
-      "new_path": "tools/explore/explore_fourteen_vertex_equality_factor_family.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "explore_random_even_cycle_forks.py",
-      "new_path": "tools/explore/explore_random_even_cycle_forks.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "explore_random_minimal_singleton_sets.py",
-      "new_path": "tools/explore/explore_random_minimal_singleton_sets.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
       "old_path": "explore_random_odd_factor_one_term.py",
       "new_path": "tools/explore/explore_random_odd_factor_one_term.py",
       "reason": "tool_script -> None",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "explore_ten_vertex_c10_lattice.py",
-      "new_path": "tools/explore/explore_ten_vertex_c10_lattice.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "explore_ten_vertex_degree_six_kotzig_ports.py",
-      "new_path": "tools/explore/explore_ten_vertex_degree_six_kotzig_ports.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "explore_ten_vertex_equality_factor_lattice.py",
-      "new_path": "tools/explore/explore_ten_vertex_equality_factor_lattice.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "explore_twelve_vertex_complement_chain_orbits.py",
@@ -19229,14 +20855,6 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
-      "old_path": "extract_fourteen_vertex_forced_slice_factor_cegar_core.py",
-      "new_path": "tools/explore/extract_fourteen_vertex_forced_slice_factor_cegar_core.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
       "old_path": "extract_fourteen_vertex_transport_residuals.py",
       "new_path": "tools/explore/extract_fourteen_vertex_transport_residuals.py",
       "reason": "tool_script -> None",
@@ -19264,44 +20882,13 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
-      "old_path": "find_fourteen_vertex_two_to_three_fork.py",
-      "new_path": "tools/explore/find_fourteen_vertex_two_to_three_fork.py",
+      "old_path": "inspect_prism_support_model.py",
+      "new_path": "tools/explore/inspect_prism_support_model.py",
       "reason": "tool_script -> None",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "iterate_eight_vertex_selector_cegar.py",
-      "new_path": "tools/explore/iterate_eight_vertex_selector_cegar.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "iterate_eight_vertex_singular_cegar.py",
-      "new_path": "tools/explore/iterate_eight_vertex_singular_cegar.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "learn_partial_support_singular_clauses.py",
-      "new_path": "tools/explore/learn_partial_support_singular_clauses.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "learn_singular_fallback_clauses.py",
-      "new_path": "tools/explore/learn_singular_fallback_clauses.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "maximize_p5_high_coordinate_chart_closure.py",
@@ -19331,14 +20918,6 @@
       "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
-      "old_path": "minimize_fourteen_vertex_two_even_cycle_certificate_activation.py",
-      "new_path": "tools/explore/minimize_fourteen_vertex_two_even_cycle_certificate_activation.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
       "old_path": "minimize_p5_high_coordinate_gauge_forest.py",
       "new_path": "tools/explore/minimize_p5_high_coordinate_gauge_forest.py",
       "reason": "tool_script -> None",
@@ -19346,14 +20925,6 @@
       "claim_family": null,
       "confidence": "high",
       "executed_batch": "p5-residual-root-exit-stage32"
-    },
-    {
-      "old_path": "minimize_singular_fallback_core.py",
-      "new_path": "tools/explore/minimize_singular_fallback_core.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
     },
     {
       "old_path": "p5_high_coordinate_tree_chart_cegar.py",
@@ -19422,9 +20993,10 @@
       "old_path": "scout_kotzig_full_cone_cells.py",
       "new_path": "tools/explore/scout_kotzig_full_cone_cells.py",
       "reason": "tool_script -> None",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "medium"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "scout_twelve_vertex_six_potential_cells.py",
@@ -19439,97 +21011,46 @@
       "old_path": "search_adversarial_fourteen_vertex_potential_residuals.py",
       "new_path": "tools/explore/search_adversarial_fourteen_vertex_potential_residuals.py",
       "reason": "tool_script -> None",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "search_fourteen_vertex_direct_free.py",
-      "new_path": "tools/explore/search_fourteen_vertex_direct_free.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "search_fourteen_vertex_no_matching_fork.py",
-      "new_path": "tools/explore/search_fourteen_vertex_no_matching_fork.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "search_fourteen_vertex_no_three_extension.py",
-      "new_path": "tools/explore/search_fourteen_vertex_no_three_extension.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "search_killer_patterns.py",
-      "new_path": "tools/explore/search_killer_patterns.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "search_minimal_singleton_counterexample.py",
-      "new_path": "tools/explore/search_minimal_singleton_counterexample.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "search_mixed_reciprocal_equality_support.py",
-      "new_path": "tools/explore/search_mixed_reciprocal_equality_support.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "search_prism_stratum.py",
-      "new_path": "tools/explore/search_prism_stratum.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "search_random_fourteen_vertex_potential_residuals.py",
       "new_path": "tools/explore/search_random_fourteen_vertex_potential_residuals.py",
       "reason": "tool_script -> None",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "medium"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
-      "old_path": "search_witness.py",
-      "new_path": "tools/explore/search_witness.py",
+      "old_path": "solve_prism_core.py",
+      "new_path": "tools/explore/solve_prism_core.py",
       "reason": "tool_script -> None",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "medium"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
-      "old_path": "augment_all_degree3_singleton_stars.py",
-      "new_path": "tools/generate/augment_all_degree3_singleton_stars.py",
+      "old_path": "two_vertex_quotient.py",
+      "new_path": "tools/explore/two_vertex_quotient.py",
       "reason": "tool_script -> None",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "medium"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
-      "old_path": "augment_certified_entry_bound.py",
-      "new_path": "tools/generate/augment_certified_entry_bound.py",
+      "old_path": "verify_witness.py",
+      "new_path": "tools/explore/verify_witness.py",
       "reason": "tool_script -> None",
-      "status": "review_required",
+      "status": "moved",
       "claim_family": null,
-      "confidence": "medium"
+      "confidence": "high",
+      "executed_batch": "final-residual-root-exit-stage33"
     },
     {
       "old_path": "augment_degree3_anchor_reciprocal_dichotomy.py",
@@ -19539,14 +21060,6 @@
       "claim_family": null,
       "confidence": "medium",
       "executed_batch": "high-order-symbolic-forest-stage27"
-    },
-    {
-      "old_path": "augment_degree3_pure_minor_constraints.py",
-      "new_path": "tools/generate/augment_degree3_pure_minor_constraints.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
     },
     {
       "old_path": "augment_degree3_pure_tensor_support.py",
@@ -19567,22 +21080,6 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
-      "old_path": "augment_forbid_mixed_singleton_matching.py",
-      "new_path": "tools/generate/augment_forbid_mixed_singleton_matching.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "augment_fourteen_vertex_c4_c4_c6_with_colour_symmetric_orbit_exclusions.py",
-      "new_path": "tools/generate/augment_fourteen_vertex_c4_c4_c6_with_colour_symmetric_orbit_exclusions.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
       "old_path": "augment_fourteen_vertex_rule_cnf_with_binomial_support_closures.py",
       "new_path": "tools/generate/augment_fourteen_vertex_rule_cnf_with_binomial_support_closures.py",
       "reason": "tool_script -> None",
@@ -19590,22 +21087,6 @@
       "claim_family": null,
       "confidence": "medium",
       "executed_batch": "high-order-symbolic-forest-stage27"
-    },
-    {
-      "old_path": "augment_fourteen_vertex_rule_cnf_with_certificates.py",
-      "new_path": "tools/generate/augment_fourteen_vertex_rule_cnf_with_certificates.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "augment_fourteen_vertex_rule_cnf_with_minimal_singleton_circuits.py",
-      "new_path": "tools/generate/augment_fourteen_vertex_rule_cnf_with_minimal_singleton_circuits.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
     },
     {
       "old_path": "augment_fourteen_vertex_rule_cnf_with_partial_circuit_supports.py",
@@ -19617,78 +21098,6 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
-      "old_path": "augment_fourteen_vertex_two_even_cycle_cnf_with_three_connectivity.py",
-      "new_path": "tools/generate/augment_fourteen_vertex_two_even_cycle_cnf_with_three_connectivity.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "augment_fourteen_vertex_two_even_cycle_rule_cnf_with_minimum_certificates.py",
-      "new_path": "tools/generate/augment_fourteen_vertex_two_even_cycle_rule_cnf_with_minimum_certificates.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "augment_fourteen_vertex_two_even_cycle_rule_cnf_with_one_extra_cycle_cores.py",
-      "new_path": "tools/generate/augment_fourteen_vertex_two_even_cycle_rule_cnf_with_one_extra_cycle_cores.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "augment_fourteen_vertex_two_even_cycle_rule_cnf_with_unforced_factor_cores.py",
-      "new_path": "tools/generate/augment_fourteen_vertex_two_even_cycle_rule_cnf_with_unforced_factor_cores.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "augment_no_binomial_amplitudes.py",
-      "new_path": "tools/generate/augment_no_binomial_amplitudes.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "augment_reciprocal_cardinality.py",
-      "new_path": "tools/generate/augment_reciprocal_cardinality.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "branch_ambient_certificates.py",
-      "new_path": "tools/generate/branch_ambient_certificates.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "branch_invariants_and_sieve.py",
-      "new_path": "tools/generate/branch_invariants_and_sieve.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "combine_laurent_manifests.py",
-      "new_path": "tools/generate/combine_laurent_manifests.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
       "old_path": "condition_dimacs_on_selector_set.py",
       "new_path": "tools/generate/condition_dimacs_on_selector_set.py",
       "reason": "tool_script -> None",
@@ -19696,22 +21105,6 @@
       "claim_family": null,
       "confidence": "medium",
       "executed_batch": "high-order-symbolic-forest-stage27"
-    },
-    {
-      "old_path": "decode_fourteen_vertex_two_even_cycle_extension_core.py",
-      "new_path": "tools/generate/decode_fourteen_vertex_two_even_cycle_extension_core.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "generate_batch_fallback_singular.py",
-      "new_path": "tools/generate/generate_batch_fallback_singular.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
     },
     {
       "old_path": "generate_p5_exact_three_partial_support_system.py",
@@ -19750,54 +21143,6 @@
       "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
-      "old_path": "generate_partial_support_singular.py",
-      "new_path": "tools/generate/generate_partial_support_singular.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "generate_prism_singular.py",
-      "new_path": "tools/generate/generate_prism_singular.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "materialize_eight_vertex_role.py",
-      "new_path": "tools/generate/materialize_eight_vertex_role.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "materialize_exact_entry_support.py",
-      "new_path": "tools/generate/materialize_exact_entry_support.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "materialize_static_no_binomial_entry_bound_role.py",
-      "new_path": "tools/generate/materialize_static_no_binomial_entry_bound_role.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "materialize_static_no_binomial_outside_family_role.py",
-      "new_path": "tools/generate/materialize_static_no_binomial_outside_family_role.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
       "old_path": "materialize_verified_dimacs_clause_set.py",
       "new_path": "tools/generate/materialize_verified_dimacs_clause_set.py",
       "reason": "tool_script -> None",
@@ -19814,14 +21159,6 @@
       "claim_family": null,
       "confidence": "medium",
       "executed_batch": "finite-p4-stage28"
-    },
-    {
-      "old_path": "recover_native_kissat_conflicts.py",
-      "new_path": "tools/generate/recover_native_kissat_conflicts.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
     },
     {
       "old_path": "reorient_fourteen_vertex_minimum_activity_certificates.py",
@@ -19842,14 +21179,6 @@
       "executed_batch": "high-order-symbolic-forest-stage27"
     },
     {
-      "old_path": "run_degree3_e19_orbit_cases.py",
-      "new_path": "tools/generate/run_degree3_e19_orbit_cases.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
       "old_path": "run_drat_trim.py",
       "new_path": "tools/generate/run_drat_trim.py",
       "reason": "tool_script -> None",
@@ -19857,78 +21186,6 @@
       "claim_family": null,
       "confidence": "medium",
       "executed_batch": "finite-p4-stage28"
-    },
-    {
-      "old_path": "run_fourteen_vertex_c4_c4_c6_rule_sat_cegar.py",
-      "new_path": "tools/generate/run_fourteen_vertex_c4_c4_c6_rule_sat_cegar.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "run_fourteen_vertex_c4_c4_c6_rule_sat_incremental.py",
-      "new_path": "tools/generate/run_fourteen_vertex_c4_c4_c6_rule_sat_incremental.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "run_fourteen_vertex_even_cycle_factor_fork_batch.py",
-      "new_path": "tools/generate/run_fourteen_vertex_even_cycle_factor_fork_batch.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "run_fourteen_vertex_mandatory_unit_binomial_cegar.py",
-      "new_path": "tools/generate/run_fourteen_vertex_mandatory_unit_binomial_cegar.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "run_fourteen_vertex_one_extra_cycle_core_incremental.py",
-      "new_path": "tools/generate/run_fourteen_vertex_one_extra_cycle_core_incremental.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "run_fourteen_vertex_partial_circuit_binomial_selection_cegar.py",
-      "new_path": "tools/generate/run_fourteen_vertex_partial_circuit_binomial_selection_cegar.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "run_fourteen_vertex_partial_circuit_lattice_cegar.py",
-      "new_path": "tools/generate/run_fourteen_vertex_partial_circuit_lattice_cegar.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "run_fourteen_vertex_symmetry_binomial_cegar.py",
-      "new_path": "tools/generate/run_fourteen_vertex_symmetry_binomial_cegar.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "run_fourteen_vertex_two_even_cycle_rule_sat_incremental.py",
-      "new_path": "tools/generate/run_fourteen_vertex_two_even_cycle_rule_sat_incremental.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
     },
     {
       "old_path": "run_kissat_proof.py",
@@ -19940,38 +21197,6 @@
       "executed_batch": "finite-p4-stage28"
     },
     {
-      "old_path": "sample_fourteen_vertex_equality_supports.py",
-      "new_path": "tools/generate/sample_fourteen_vertex_equality_supports.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "sample_fourteen_vertex_random_equality_supports.py",
-      "new_path": "tools/generate/sample_fourteen_vertex_random_equality_supports.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "sample_fourteen_vertex_two_even_cycle_rule_cnf.py",
-      "new_path": "tools/generate/sample_fourteen_vertex_two_even_cycle_rule_cnf.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "snapshot_no_binomial_workdirs.py",
-      "new_path": "tools/generate/snapshot_no_binomial_workdirs.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
       "old_path": "solve_dimacs_pysat.py",
       "new_path": "tools/generate/solve_dimacs_pysat.py",
       "reason": "tool_script -> None",
@@ -19979,54 +21204,6 @@
       "claim_family": null,
       "confidence": "medium",
       "executed_batch": "high-order-symbolic-forest-stage27"
-    },
-    {
-      "old_path": "solve_fixed_separator_orbits_incremental.py",
-      "new_path": "tools/generate/solve_fixed_separator_orbits_incremental.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "solve_prism_core.py",
-      "new_path": "tools/generate/solve_prism_core.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "write_dimacs_support_units.py",
-      "new_path": "tools/generate/write_dimacs_support_units.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "write_global_cegar_replay_cnf.py",
-      "new_path": "tools/generate/write_global_cegar_replay_cnf.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "write_prism_orbits_manifest.py",
-      "new_path": "tools/generate/write_prism_orbits_manifest.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
-    },
-    {
-      "old_path": "write_tutte_cegar_replay_cnf.py",
-      "new_path": "tools/generate/write_tutte_cegar_replay_cnf.py",
-      "reason": "tool_script -> None",
-      "status": "review_required",
-      "claim_family": null,
-      "confidence": "medium"
     },
     {
       "old_path": "write_twelve_vertex_orbit_input.py",
@@ -20084,10 +21261,11 @@
     }
   ],
   "destination_subtree_counts": {
-    "claims": 2028,
-    "tools": 181,
-    "src": 31,
+    "claims": 2268,
+    "tools": 58,
+    "src": 19,
     "docs": 8,
+    "tests": 4,
     "catalog": 1
   }
 }

@@ -80,7 +80,7 @@ remains **UNRESOLVED**.
 |---|---|
 | [`h31/`](h31/) | marked-`H31` obstruction forest (52 direct directories; generic, divisor-scoped, boundary, carrier-only, and neutral disputed-ownership packages retain distinct claims and evidence roles) |
 | [`h22/`](h22/) | weighted-`H22` obstruction forest (108 direct package directories; 111 total including nested packages; generic, scoped, partial, candidate, historical, and one neutral disputed-ownership package retain distinct statuses) |
-| [`frontier/`](frontier/) | frontier/reduction forest: 228 artifacts after Stages 29 and 32 (`83 md + 143 py + 2 cpp`), preserving partial, candidate, superseded, and asymmetric evidence |
+| [`frontier/`](frontier/) | frontier/reduction forest: 231 artifacts after Stages 29, 32, and 33 (`84 md + 145 py + 2 cpp`), preserving partial, candidate, superseded, and asymmetric evidence |
 | [`boundaries/`](boundaries/) | selected boundary packages: 32 artifacts after Stages 29 and 32 (`11 md + 21 py`) |
 | [`coordinate-cegar/`](coordinate-cegar/) | coordinate and bounded-CEGAR packages: 25 artifacts after Stages 29 and 32 (`9 md + 16 py`) |
 
@@ -162,15 +162,18 @@ Stage 29 (`p5-frontier-stage29`, mapping
 moved 176 exact root artifacts into `frontier/`, `boundaries/`, and
 `coordinate-cegar/`.  The complete 60-file normalized `q4_211` forest and
 49-file normalized `q5_221` forest are ownership/evidence-carrier closures
-inside those branches, not an exhaustive P5 case cover.  The `q5_221`
-working note remains superseded.  The exact characteristic-zero
-`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION` theorem and its verifier/audit
-remain separately owned at root.  At the Stage 29 boundary, four owner-gated conflicts and every
-excluded Component20/21/23, H22/H31, Branch B, high-coordinate, weighted
-`p+q`, internal-`E=0`, marked-basis, legacy, and withdrawn surface remain
-outside the Stage 29 forest.  The migration adjudicates none of their statuses
-or ownership conflicts.  Arbitrary P7/local-to-global remains **UNKNOWN**, and
-the global conjecture remains **UNRESOLVED**.
+inside those branches, not an exhaustive P5 case cover. The `q5_221` working
+note remains superseded. At the Stage 29 boundary, the exact
+characteristic-zero `P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION` theorem and
+its verifier/audit remained separately owned at root, and four owner-gated
+conflicts plus the excluded Component20/21/23, H22/H31, Branch B,
+high-coordinate, weighted-`p+q`, internal-`E=0`, marked-basis, legacy, and
+withdrawn surfaces remained outside the Stage 29 forest. The P3 antecedent
+now lives under [`../p3/restrictions/`](../p3/restrictions/); its relocation
+does not turn it into a P5 exclusion or global proof. Stage 29 adjudicated
+none of the excluded statuses or ownership conflicts. Arbitrary
+P7/local-to-global remains **UNKNOWN**, and the global conjecture remains
+**UNRESOLVED**.
 
 Stage 31 (`p5-h22-root-exit-stage31`, mapping
 `899a1070f1515105f76265c2bfcb80e2316c0d3a623ea9afc53a59940779f2e1`)

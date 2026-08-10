@@ -142,17 +142,16 @@ mirroring the pilot's treatment of its working note.
 
 ## Shared and cross-package dependencies
 
-- Root shared utilities consumed by these verifiers:
-  `p5_high_coordinate_tree_chart_cegar.py` (Singular timeout helper)
-  and `verify_p5_h31_marked_basis_open_branch.py` remain at the
-  repository root.
+- The Singular timeout operator is
+  [`../../../tools/explore/p5_high_coordinate_tree_chart_cegar.py`](../../../tools/explore/p5_high_coordinate_tree_chart_cegar.py).
+  The marked-basis provider remains claim-owned under
+  [`../h31/marked-basis-open-branch/verify_p5_h31_marked_basis_open_branch.py`](../h31/marked-basis-open-branch/verify_p5_h31_marked_basis_open_branch.py).
 - The split-center verifier imports `build_model` and `project` from the
   narrow shared implementation
   [`src/krenn_gu/p5_weighted_h22_contraction.py`](../../../src/krenn_gu/p5_weighted_h22_contraction.py),
-  and `one_marked_map` from
-  `verify_p5_h31_marked_basis_open_branch.py`. These providers have different
-  ownership: the weighted-H22 contraction is infrastructure, while the
-  marked-basis provider remains claim-owned at repository root. The
+  and `one_marked_map` from that H31-owned marked-basis provider. These
+  providers retain different ownership: the weighted-H22 contraction is
+  infrastructure, while the marked-basis verifier is claim-owned. The
   Component20 candidate adapter moved intact to
   [`common-active-binary-triangle-component-generic/`](common-active-binary-triangle-component-generic/)
   and is not the shared implementation.

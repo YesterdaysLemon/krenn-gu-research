@@ -25,7 +25,7 @@ import sympy as sp
 
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_PARTIAL.md"
-P4_BOUNDARY = REPO_ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
+P4_BOUNDARY = REPO_ROOT / "claims/p4/boundaries/component20-p-plus-q-wall/P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
 INDEPENDENT_AUDIT = (
     ROOT / "audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_partial.py"
 )

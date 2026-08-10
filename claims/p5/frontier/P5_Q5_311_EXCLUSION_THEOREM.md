@@ -85,7 +85,7 @@ Thus all four triple restrictions `S_r` are either zero or nonzero
 decomposable.
 
 The four-plane corollary in
-[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](../../../P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md)
+[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](../../p3/restrictions/P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md)
 is all-or-nothing:
 
 ```text

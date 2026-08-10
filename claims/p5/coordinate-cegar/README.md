@@ -23,10 +23,11 @@ The six documents are:
 
 The `q4_211` coordinate-normal document and its two carriers combine with the
 57 same-prefix artifacts in [`../frontier/`](../frontier/) to form the
-complete 60-file normalized `q4_211` artifact forest.  Complete does not mean
-an exhaustive P5 case cover.  The separately owned root
-`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION` theorem remains an antecedent,
-not a member of this directory or a global proof.
+complete 60-file normalized `q4_211` artifact forest. Complete does not mean
+an exhaustive P5 case cover. The separately P3-owned
+[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION`](../../p3/restrictions/P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md)
+theorem remains an antecedent, not a member of this directory or a global
+proof.
 
 At the historical Stage 29 boundary, high-coordinate, Component20/21/23,
 H22/H31, Branch B, weighted-`p+q`, internal-`E=0`, marked-basis, legacy, and

@@ -25,8 +25,11 @@ for _p in Path(__file__).resolve().parents:
         sys.path.insert(0, str(_p / "src"))
         break
 from krenn_gu.bootstrap import bootstrap  # noqa: E402
+from krenn_gu.bootstrap import expose_claim_package  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/finite/n10/degree-six-kotzig-port")
+expose_claim_package(REPO_ROOT, "claims/finite/n08/degree-six-kotzig-port")
 
 from analyze_ten_vertex_degree_six_kotzig_port_survivors import (
     enumerate_coloured_matchings,
@@ -192,7 +195,7 @@ def main() -> None:
     parser.add_argument(
         "--potential-lemma",
         type=Path,
-        default=REPO_ROOT / "SIX_PERMUTED_POTENTIALS_LEMMA.md",
+        default=REPO_ROOT / "claims/arbitrary-order/SIX_PERMUTED_POTENTIALS_LEMMA.md",
     )
     parser.add_argument(
         "--output",

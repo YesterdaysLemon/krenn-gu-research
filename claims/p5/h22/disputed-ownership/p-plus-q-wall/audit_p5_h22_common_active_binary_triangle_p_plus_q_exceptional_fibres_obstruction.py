@@ -31,7 +31,7 @@ PRIMARY = (
     ROOT
     / "verify_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_obstruction.py"
 )
-P4 = REPO_ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
+P4 = REPO_ROOT / "claims/p4/boundaries/component20-p-plus-q-wall/P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
 H31 = (
     REPO_ROOT / "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md"
 )

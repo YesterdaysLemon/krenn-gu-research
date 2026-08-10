@@ -15,13 +15,13 @@ for _p in Path(__file__).resolve().parents:
         break
 from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
-REPO_ROOT, HERE = bootstrap(__file__)
+REPO_ROOT, HERE = bootstrap(__file__, also=["."])
 
-from cancellation_transport import (
+from krenn_gu.cancellation_transport import (
     cube_two_monomial_rectangle_certificates,
 )
-from search_witness import EquationSystem
-from krenn_gu.verify_laurent_batch_manifest import structural_zero_indices
+from krenn_gu.search_witness import EquationSystem
+from verify_laurent_batch_manifest import structural_zero_indices
 
 
 def sha256(path: Path) -> str:

@@ -29,8 +29,9 @@ Filenames are preserved; no file was renamed to a generic name.
 
 ## Deliberately not in this spine
 
-- `P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS` — shared machinery:
-  its verifier is imported by six root scripts spanning four component
+- [`../P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md`](../P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md)
+  — shared machinery: its verifier is imported by six downstream scripts
+  spanning four component
   families; cross-family use is dependency, not ownership.
 - `P4_NONRESONANT_RANK_TWO_TRIANGLE_CUT_REDUCTION` — no independent
   audit exists; its documented replay depends on three unselected

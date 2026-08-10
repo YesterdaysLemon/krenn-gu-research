@@ -47,12 +47,12 @@ def main() -> None:
     parser.add_argument(
         "--primary-source",
         type=Path,
-        default=REPO_ROOT / "exhaust_twelve_vertex_six_potential_orbits.cpp",
+        default=REPO_ROOT / "claims/finite/n12/exhaust_twelve_vertex_six_potential_orbits.cpp",
     )
     parser.add_argument(
         "--audit-source",
         type=Path,
-        default=REPO_ROOT / "audit_twelve_vertex_six_potential_orbits.cpp",
+        default=REPO_ROOT / "claims/finite/n12/audit_twelve_vertex_six_potential_orbits.cpp",
     )
     parser.add_argument(
         "--output",

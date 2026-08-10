@@ -40,19 +40,18 @@ all-rank-two-relation triangle is empty.
 
 ## Historical withdrawn predecessors
 
-The following related artifacts remain historical/legacy and are
-**not** members of the live Stage 8 spine; they stay at the
-repository root with their existing `claims/legacy/` proposals:
+The following related artifacts remain historical/legacy and are **not**
+members of the live Stage 8 spine; Stage 33 preserves them in dedicated
+history packages without rehabilitation:
 
-- `P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG`
-  (+ verify/audit) — **WITHDRAWN**: full-row `GL_2` used where purity
-  permits only Borel gauge.  It names the live
-  `flat-kernel-zero-binary-cubic` and `flat-generic-binary-cubic`
-  packages as its valid descendants.  It has not been rehabilitated.
-- `P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT`
+- [`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md`](../../history/resonant-flat-triangle/P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md)
+  (+ verify/audit) — **WITHDRAWN**: full-row `GL_2` used where purity permits
+  only Borel gauge. It names the live `flat-kernel-zero-binary-cubic` and
+  `flat-generic-binary-cubic` packages as its valid descendants. It has not
+  been rehabilitated.
+- [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md`](../../history/mixed-two-rank-two-triangle/P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md)
   (+ verify/audit) — **WITHDRAWN pending Borel audit**; the live
-  `mixed/two-rank-two` package supersedes it.  It has not been
-  rehabilitated.
+  `mixed/two-rank-two` package supersedes it. It has not been rehabilitated.
 
 Withdrawn evidence is never substituted for live verification: each
 live package was replayed independently during Stage 8.

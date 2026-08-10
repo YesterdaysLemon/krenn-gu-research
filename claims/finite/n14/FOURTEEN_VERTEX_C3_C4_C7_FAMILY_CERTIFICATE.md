@@ -38,7 +38,7 @@ perfect-matching family `A`, restoring `f` adds exactly one matching `Q`,
 and every member of `A` pairs `x` to one common full-edge neighbour, the
 adjacent exact-activation lemma gives a cancellation-transport
 contradiction.  See
-[`MATCHING_FORK_TRANSPORT_LEMMA.md`](../../../MATCHING_FORK_TRANSPORT_LEMMA.md).
+[`MATCHING_FORK_TRANSPORT_LEMMA.md`](../../arbitrary-order/MATCHING_FORK_TRANSPORT_LEMMA.md).
 
 ## Stage 1: classify one colour factor
 

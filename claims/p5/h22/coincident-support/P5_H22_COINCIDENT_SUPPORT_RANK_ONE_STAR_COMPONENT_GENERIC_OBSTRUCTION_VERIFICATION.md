@@ -165,7 +165,7 @@ reduction, construct a prize graph, or resolve the global Krenn–Gu conjecture.
 uv run --with sympy python claims/p5/h22/coincident-support/audit_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
 uv run --with ruff ruff check claims/p5/h22/coincident-support/audit_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
 python -m py_compile claims/p5/h22/coincident-support/audit_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
-python -m json.tool p5_h22_coincident_support_rank_one_star_component_generic_certificate.json
+python -m json.tool claims/p5/h22/coincident-support/p5_h22_coincident_support_rank_one_star_component_generic_certificate.json
 git diff --check
 ```
 

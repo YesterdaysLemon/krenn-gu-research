@@ -122,7 +122,7 @@ def main() -> None:
     for manifest in local_manifests:
         run(
             [
-                str(REPO_ROOT / "src" / "krenn_gu" / "verify_laurent_batch_manifest.py"),
+                str(HERE / "verify_laurent_batch_manifest.py"),
                 "--manifest",
                 str(manifest),
             ]

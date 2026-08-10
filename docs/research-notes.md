@@ -599,7 +599,7 @@ The exact CNF prefix/tail split and those candidate definitions are replayed
 by:
 
 ```text
-python verify_reciprocal_killer_partition.py
+python claims/finite/n08/verify_reciprocal_killer_partition.py
 ```
 
 For the exact 20-block slice, (RK) forces at least four reciprocal
@@ -610,9 +610,9 @@ killer-candidate definitions, and the counting identity are independently
 replayed by:
 
 ```text
-python verify_reciprocal_cardinality.py \
+python claims/finite/n08/verify_reciprocal_cardinality.py \
   --manifest tmp/eight_vertex_normalized_killers_reciprocal_same_min4_max20.json
-python verify_reciprocal_cardinality.py \
+python claims/finite/n08/verify_reciprocal_cardinality.py \
   --manifest tmp/eight_vertex_normalized_killers_reciprocal_different_min4_max20.json
 ```
 
@@ -631,8 +631,8 @@ candidate-variable translation, disjointness, and exhaustive orbit cover
 are independently replayed by:
 
 ```text
-python enumerate_degree3_reciprocal_orbits.py
-python verify_degree3_reciprocal_orbits.py
+python claims/finite/n08/enumerate_degree3_reciprocal_orbits.py
+python claims/finite/n08/verify_degree3_reciprocal_orbits.py
 
 verified: true
 descriptors: 189
@@ -900,7 +900,7 @@ candidate/anchor definitions, and the 36-clause tail are independently
 checked by:
 
 ```text
-python verify_degree3_pure_minor_constraints.py \
+python claims/finite/n08/verify_degree3_pure_minor_constraints.py \
   --manifest tmp/degree3_e19_after_orbit01_pure.json
 
 verified: true
@@ -916,7 +916,7 @@ Singular unit ideals; its final catalogue pass is UNSAT on all 466 roles
 with no fallback.  The independent final audit is:
 
 ```text
-python verify_eight_vertex_degree3_e18.py --rerun-singular-wsl
+python claims/finite/n08/verify_eight_vertex_degree3_e18.py --rerun-singular-wsl
 
 verified: true
 target edges: 18
@@ -1120,7 +1120,7 @@ extension byte-for-byte, and independently replays the elementary
 conflicts:
 
 ```text
-python verify_mixed_singleton_countermodels.py
+python claims/finite/n08/verify_mixed_singleton_countermodels.py
 tmp/eight_vertex_no_mixed_singleton_countermodels_audit.json:
   "verified": true
 
@@ -1972,7 +1972,7 @@ reconstructs all 483,840 clauses and proves that no old variable or clause
 changed:
 
 ```text
-python verify_degree_five_plane_extension.py \
+python claims/finite/n08/verify_degree_five_plane_extension.py \
   --base-cnf tmp/eight_vertex_normalized_killers_shared_backup_flag_max20.cnf \
   --extended-cnf tmp/eight_vertex_normalized_killers_shared_backup_degree5_plane_flag_max20.cnf \
   --extended-manifest tmp/eight_vertex_normalized_killers_shared_backup_degree5_plane_flag_max20.json \
@@ -3740,7 +3740,7 @@ the problem.  It approaches GHZ as `x` tends to infinity but is never exact
 at finite `x`.  Run:
 
 ```powershell
-python prism_boundary.py --x 10
+python claims/finite/n06/certificate-chain/prism_boundary.py --x 10
 ```
 
 The independent verifier intentionally rejects all saved approximate
@@ -3750,9 +3750,9 @@ tolerance.  Approximation is not reported as a counterexample.
 ## Reproduction
 
 ```powershell
-python -m unittest -v test_search_witness.py
-python search_witness.py --n 6 --d 3 --restarts 8 --steps 20000
-python verify_witness.py best_candidate.json --tolerance 1e-10
+python -m unittest -v tests.test_search_witness
+python src/krenn_gu/search_witness.py --n 6 --d 3 --restarts 8 --steps 20000
+python tools/explore/verify_witness.py best_candidate.json --tolerance 1e-10
 ```
 
 `search_witness.py` contains:
@@ -3768,33 +3768,33 @@ python verify_witness.py best_candidate.json --tolerance 1e-10
 Additional focused commands:
 
 ```powershell
-python killer_pattern_certificates.py --pattern killer_101_pattern.json
-python two_vertex_quotient.py --prism-x 3 --samples 100
-python search_prism_stratum.py --restarts 20 --steps 20000
-python solve_prism_core.py --restarts 100 --scale 1
-python generate_prism_singular.py `
+python src/krenn_gu/killer_pattern_certificates.py --pattern killer_101_pattern.json
+python tools/explore/two_vertex_quotient.py --prism-x 3 --samples 100
+python src/krenn_gu/search_prism_stratum.py --restarts 20 --steps 20000
+python tools/explore/solve_prism_core.py --restarts 100 --scale 1
+python src/krenn_gu/generate_prism_singular.py `
   --output prism_core_constant_32003.sing `
   --mode core-and-constant
-python prism_orbit_screen.py --summary
-python prism_orbit_screen.py `
+python src/krenn_gu/prism_orbit_screen.py --summary
+python src/krenn_gu/prism_orbit_screen.py `
   --index 0 `
   --output prism_orbit_0_generic_q.sing `
   --characteristic 0 `
   --add-rank-one-minors
-python prism_orbit_batch.py `
+python claims/finite/n06/certificate-chain/prism_orbit_batch.py `
   --indices 41 92 295 326 408 503 `
   --output-directory tmp/prism_batch_size18 `
   --characteristic 0
-python verify_prism_certificates.py
-python verify_all_prism_orbits.py `
+python claims/finite/n06/certificate-chain/verify_prism_certificates.py
+python claims/finite/n06/certificate-chain/verify_all_prism_orbits.py `
   --output tmp/all_prism_orbits_verification_signed.json
-python verify_killer_union_orbits.py `
+python claims/finite/n06/certificate-chain/verify_killer_union_orbits.py `
   --orbits tmp/m10_c4_k2_orbits.json `
   --missing-edges 01,03,12,23,45 `
   --output tmp/m10_all_orbits_verification_signed.json
-python verify_global_candidate_cegar.py `
+python claims/finite/n06/certificate-chain/verify_global_candidate_cegar.py `
   tmp/global_candidate_cegar_signed_5000.json
-python verify_candidate_separator_orbits.py `
+python claims/finite/n06/certificate-chain/verify_candidate_separator_orbits.py `
   --solver cadical195 --jobs 2 `
   --output tmp/candidate_separator_s5_cadical.json
 ```

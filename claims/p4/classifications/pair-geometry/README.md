@@ -66,17 +66,20 @@ Genuine boundary inclusions of this family live under
 
 ## Deliberately not in this spine
 
-- `P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION` — shared/global
-  pair-rank machinery spanning stars, triangles, and pair geometry;
-  stays at root.
-- `verify_p4_directed_zero_divisor_triangle_components`,
-  `verify_p4_common_singleton_component` — shared machinery;
+- [`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](../P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md)
+  — shared/global pair-rank machinery spanning stars, triangles, and pair
+  geometry; it remains parent-classification-owned.
+- [`verify_p4_directed_zero_divisor_triangle_components.py`](../verify_p4_directed_zero_divisor_triangle_components.py)
+  and [`verify_p4_common_singleton_component.py`](../verify_p4_common_singleton_component.py)
+  — shared parent-owned machinery; cross-family use is dependency, not
+  ownership.
+- [`P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md`](../P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md),
+  [`P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md`](../P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md),
+  (the `q4_211` marked boundary population), and
+  [`P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md`](../P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md)
+  (the mixed-orientation family) remain separately parent-owned.
+- P5 H22/H31 pair-geometry consumers are downstream under the P5 tree;
   cross-family use is dependency, not ownership.
-- `P4_MARKED_DELTA2_*` (q4_211 marked boundary population),
-  `P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION` (mixed-orientation
-  family) — deferred; separate ownership.
-- P5 H22/H31 pair-geometry consumers — downstream; P5 migration is a
-  later stage.
 
 Migration provenance: `catalog/batches/p4-pair-geometry-stage7.json`,
 `docs/architecture/p4-pair-geometry-stage7-dry-run.md`, and

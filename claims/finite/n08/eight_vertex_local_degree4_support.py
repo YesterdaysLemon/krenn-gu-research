@@ -30,12 +30,12 @@ from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
 
-from rankone_support_sat import (
+from krenn_gu.rankone_support_sat import (
     CNF,
     matching_indicator,
     solve_with_cadical,
 )
-from search_witness import perfect_matchings
+from krenn_gu.search_witness import perfect_matchings
 
 Edge = tuple[int, int]
 

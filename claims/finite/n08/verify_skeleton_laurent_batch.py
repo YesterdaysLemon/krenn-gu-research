@@ -15,9 +15,9 @@ for _p in Path(__file__).resolve().parents:
         break
 from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
-REPO_ROOT, HERE = bootstrap(__file__)
+REPO_ROOT, HERE = bootstrap(__file__, also=["."])
 
-from eight_vertex_degree4_cegar import full_equations
+from krenn_gu.eight_vertex_degree4_cegar import full_equations
 from eight_vertex_skeleton_batch import (
     canonical_degree_three_role_skeletons,
     canonical_minimum_five_skeletons,
@@ -25,8 +25,8 @@ from eight_vertex_skeleton_batch import (
     canonical_role_skeletons,
     ordered_role_skeletons,
 )
-from search_witness import EquationSystem
-from krenn_gu.verify_laurent_batch_manifest import (
+from krenn_gu.search_witness import EquationSystem
+from verify_laurent_batch_manifest import (
     audit_cnf,
     audit_conflict,
     structural_zero_indices,

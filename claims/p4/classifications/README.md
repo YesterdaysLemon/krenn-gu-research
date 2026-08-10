@@ -49,12 +49,18 @@ quantifier-review wall. The marked-Delta2 alternating theorem's carriers live
 under [`../boundaries/`](../boundaries/); proximity does not promote their
 evidence role.
 
-## Still excluded
+## Stage 28 exclusions and later routing
 
-Stage 28 leaves conflict-bearing weighted-`p+q`, Component20 proof-B,
-marked-H31/first-second-component, high-coordinate, and broad working-note
-surfaces outside this tranche. See the
-[Stage 28 report](../../../docs/architecture/layout-migration-stage28-report.md).
+At the Stage 28 boundary, conflict-bearing weighted-`p+q`, Component20
+proof-B, marked-H31/first-second-component, high-coordinate, and broad
+working-note surfaces remained outside that tranche. Stage 33 subsequently
+routed directly owned classification carriers here, placed the `p+q` and
+in/out records under [`../boundaries/`](../boundaries/), and preserved the
+unresolved Component20 proof-boundary disagreement under
+[`../disputed-ownership/component20-intrinsic-boundary/`](../disputed-ownership/component20-intrinsic-boundary/).
+This later routing changes no status and does not adjudicate a conflict. See
+the [Stage 28 report](../../../docs/architecture/layout-migration-stage28-report.md)
+for the historical tranche.
 
 Cross-family references between classification packages, component
 packages, and the P5 reduction are links, not ownership.

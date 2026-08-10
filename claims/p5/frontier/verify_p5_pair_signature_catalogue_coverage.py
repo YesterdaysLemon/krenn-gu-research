@@ -24,7 +24,7 @@ from krenn_gu.p5_pair_catalogue import (  # noqa: E402
 )
 
 REPO_ROOT, ROOT = bootstrap(__file__)
-from integer_constant_lattice import IntegerConstantLattice  # noqa: E402
+from krenn_gu.integer_constant_lattice import IntegerConstantLattice  # noqa: E402
 
 SOURCES = tuple(range(5))
 COLOURS = tuple(range(3))

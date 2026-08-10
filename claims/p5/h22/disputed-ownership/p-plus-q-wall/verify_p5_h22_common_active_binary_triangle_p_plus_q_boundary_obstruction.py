@@ -24,9 +24,9 @@ THEOREM = (
     ROOT
     / "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md"
 )
-P4_WALL = REPO_ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
-P4_PRIMARY = REPO_ROOT / "verify_p4_common_active_binary_triangle_p_plus_q_boundary.py"
-P4_AUDIT = REPO_ROOT / "audit_p4_common_active_binary_triangle_p_plus_q_boundary.py"
+P4_WALL = REPO_ROOT / "claims/p4/boundaries/component20-p-plus-q-wall/P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
+P4_PRIMARY = REPO_ROOT / "claims/p4/boundaries/component20-p-plus-q-wall/verify_p4_common_active_binary_triangle_p_plus_q_boundary.py"
+P4_AUDIT = REPO_ROOT / "claims/p4/boundaries/component20-p-plus-q-wall/audit_p4_common_active_binary_triangle_p_plus_q_boundary.py"
 PARTIAL = ROOT / "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_PARTIAL.md"
 GENERIC_INFINITY = (
     ROOT

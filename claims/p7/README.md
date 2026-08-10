@@ -5,6 +5,11 @@ This directory owns the 183 Stage 27 `P7` files: 61 claim documents and their
 bounded frontier results. Directory completeness is ownership closure only;
 it is not an exhaustive arbitrary-`P7` proof or a local-to-global theorem.
 
+Stage 33 added the three-artifact
+[`five-root-diagonal-target-incidence/`](five-root-diagonal-target-incidence/)
+package. This is an ownership addition only and does not make the Stage 27
+surface, arbitrary P7, or local-to-global synchronization exhaustive.
+
 The moved files preserve every fixed-support, generic, boundary, physical,
 countermodel, audit, and synchronization qualification stated by their owning
 documents. The arbitrary-order bridge remains **UNKNOWN**; the global

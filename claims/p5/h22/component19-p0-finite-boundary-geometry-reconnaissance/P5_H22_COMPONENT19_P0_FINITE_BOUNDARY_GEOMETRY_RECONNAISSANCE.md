@@ -9,7 +9,7 @@ scope: ordinary finite component-19 geometry on p=0, its exact zero-restriction 
 inputs:
   - P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md sha256=ce333e8605b78e17c2e6b7cfe91fd369e89afe0d3aed65c7df35f82fee319634
 method: independent squarefree-permanent reconstruction, exact symbolic pair minors and ranks, zero-ideal Groebner basis, Jacobian normal-space calculation, and explicit first-order arcs
-command: uv run --with sympy python audit_p4_component19_p0_finite_boundary_geometry.py
+command: uv run --with sympy python claims/p5/h22/component19-p0-finite-boundary-geometry-reconnaissance/audit_p4_component19_p0_finite_boundary_geometry.py
 outputs:
   - audit_p4_component19_p0_finite_boundary_geometry.py sha256=c8bf03247889d9c28dd72adbaa084868b295aedbb5db51362066f0cb04358a5a
   - P5_H22_COMPONENT19_P0_FINITE_BOUNDARY_GEOMETRY_RECONNAISSANCE.md
@@ -170,7 +170,7 @@ weighted H22 on the p=0 boundary: UNKNOWN.
 ## Replay
 
 ```powershell
-uv run --with sympy python audit_p4_component19_p0_finite_boundary_geometry.py
+uv run --with sympy python claims/p5/h22/component19-p0-finite-boundary-geometry-reconnaissance/audit_p4_component19_p0_finite_boundary_geometry.py
 ```
 
 Expected final markers:

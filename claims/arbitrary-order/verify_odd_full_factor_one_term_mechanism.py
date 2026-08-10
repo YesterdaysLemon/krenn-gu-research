@@ -22,7 +22,7 @@ from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
 
-from explore_random_even_cycle_forks import (  # noqa: E402
+from krenn_gu.explore_random_even_cycle_forks import (  # noqa: E402
     Edge,
     cycle_edges,
     perfect_matchings,

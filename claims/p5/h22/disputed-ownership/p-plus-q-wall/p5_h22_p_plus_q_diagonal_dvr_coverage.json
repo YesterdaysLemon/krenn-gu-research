@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "p4_boundary_classification": {
-      "path": "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md",
-      "sha256": "4e8cb99893626c8f966ff000fd19aa5b2a13a22b7f15cf1ebc8ebcae134f3a2c",
+      "path": "claims/p4/boundaries/component20-p-plus-q-wall/P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md",
+      "sha256": "1739eda6abba0eead285796dc1fe3099f11eba5b87917d2796141246ba3406f0",
       "source_label": "VERIFIED",
       "used_for": "exhaustive diagonal-DVR stratum list and residue routing"
     },
