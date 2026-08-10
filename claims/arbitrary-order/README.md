@@ -18,6 +18,24 @@ excludes 908 supports rather than all `binomial(104,4) = 4,598,126` supports.
 Arbitrary P7 and local-to-global synchronization remain **UNKNOWN**; the
 global Krenn-Gu conjecture remains **UNRESOLVED**.
 
+## Current symbolic checkpoint
+
+The
+[`all-bridge active-deck theorem`](ALL_BRIDGE_ACTIVE_DECK_EXCLUSIVITY_AND_CUBIC_DIAGONAL_EXCLUSION.md)
+excludes the entire `Delta(D)<=3` boundary for the physical
+saturated-diagonal graph in the simultaneous balanced all-bridge branch.  It
+does not exclude `Delta(D)>=4`, the deeper-blocker branch, or the missing
+global extraction/gluing step.
+
+The
+[`characteristic-two contraction lift obstruction`](CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md)
+records why the source-inspected external candidate integer-to-`F_2` route
+does not automatically extend to complex weights: good reduction at two is
+not forced, residue extensions break a field-specific proof step, and the
+rank-two update cancellation is isolated to characteristic two.  The external
+build and definition correspondence remain pending.  This is a proved route
+boundary, not a Krenn--Gu counterexample.
+
 At the Stage 27 boundary, the owner-gated H22/H31, Component20/21/23,
 high-coordinate, and mixed-lifecycle conflict surfaces were excluded from
 that batch and remained at root, unmoved and unadjudicated at that stage.
