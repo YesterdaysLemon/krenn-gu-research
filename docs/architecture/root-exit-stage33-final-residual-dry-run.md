@@ -1,6 +1,6 @@
 # Root-exit Stage 33 final residual dry run
 
-Status: **EXECUTED; FINAL EXACT-HEAD REVIEW ACCEPTED; AWAITING HOSTED CI**
+Status: **MERGED; EXACT-HEAD AND MERGED-MAIN CI PASSED**
 
 The global Krenn--Gu conjecture remains **UNRESOLVED**.  This transaction is
 layout, catalog, disputed-ownership, and infrastructure work.  It changes no

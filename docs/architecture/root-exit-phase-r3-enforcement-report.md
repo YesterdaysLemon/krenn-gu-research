@@ -1,6 +1,6 @@
 # Phase R3 exact root-end-state enforcement
 
-Status: **REVIEWED FOR ACTIVATION — HOSTED CI AND MERGE PENDING**
+Status: **ACTIVE — EXACT-HEAD AND MERGED-MAIN CI PASSED**
 
 This is a layout-policy tranche, not a scientific-result tranche.  It changes
 no theorem, scope, lifecycle, proof obligation, certificate meaning, evidence
@@ -83,5 +83,8 @@ README hash refreshes.  The mechanical review independently replayed the full
 bounded floor and adversarially confirmed default strictness, environment
 non-bypass, allowlist-capacity failure, and the allowed entrypoint exception.
 
-Release still requires exact-head hosted CI, a merge commit, and a green push
-workflow for that exact merged-main SHA.
+PR #70's hosted hygiene run passed at exact reviewed head
+`bf7af12118debca9d2af2b90bc94e8b11168c9e7`.  The reviewed chain then merged
+to `main` as `e99457df478b0842a833204a2f064ab00355a838`, and the push workflow for
+that exact merge passed every job.  Phase R3 is therefore active on merged
+`main`.

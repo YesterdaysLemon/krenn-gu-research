@@ -23,12 +23,20 @@ counterexample for all even `n >= 6` and `d >= 3`.
   [P6](claims/p6/README.md), and [P7](claims/p7/README.md).
 - Phase R3 strict root-end-state enforcement:
   [`docs/architecture/root-exit-phase-r3-enforcement-report.md`](docs/architecture/root-exit-phase-r3-enforcement-report.md)
+- Post-root-exit symbolic programme handoff:
+  [`docs/SYMBOLIC_PROGRAM_HANDOFF_2026-08-10.md`](docs/SYMBOLIC_PROGRAM_HANDOFF_2026-08-10.md)
 - Stage 33 final-residual reviewed dry-run record:
   [`docs/architecture/root-exit-stage33-final-residual-dry-run.md`](docs/architecture/root-exit-stage33-final-residual-dry-run.md)
 - Stage 32 residual-P5 root-exit record (historical):
   [`docs/architecture/root-exit-stage32-residual-p5-dry-run.md`](docs/architecture/root-exit-stage32-residual-p5-dry-run.md)
 
-### Start here: 3 August 2026 continuation
+### Start here after root exit: 10 August 2026
+
+The current ranked obligations, exact success criteria, known status-index
+drift, closed traps, and stop conditions are recorded in
+[`SYMBOLIC_PROGRAM_HANDOFF_2026-08-10.md`](docs/SYMBOLIC_PROGRAM_HANDOFF_2026-08-10.md).
+
+### Detailed symbolic background: 3 August 2026
 
 The shortest route into the current symbolic `P_7` frontier is
 [`SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md`](docs/SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md).

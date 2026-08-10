@@ -2173,6 +2173,38 @@ class EvidenceSemanticsContractTests(unittest.TestCase):
             "finite_d01_branch_b_reduction.py"))
         self.assertIn("not a generic-emptiness theorem", identities["note"])
 
+    def test_component_h22_open_set_and_p4_audit_match_owners(self):
+        root = pathlib.Path(__file__).resolve().parents[1]
+        ledger = json.loads((root / "catalog" / "theorem-ledger.json")
+                            .read_text(encoding="utf-8"))
+        census = ledger["component_census"]
+        self.assertEqual(census["h22_generic_components_closed"], 23)
+        open_set = census["generic_h22_open_exception"]
+        self.assertIn("components 22", open_set)
+        self.assertIn("25", open_set)
+
+        checkpoint = next(
+            entry for entry in ledger["entries"]
+            if entry["name"] ==
+            "Component census and exhaustive all-pair-rank reduction "
+            "(checkpoint)")
+        scope = " ".join(checkpoint["assumptions_and_excluded_divisors"])
+        self.assertIn("23 of 25", scope)
+        self.assertIn("components 22 and 25", scope)
+
+        cover = next(
+            entry for entry in ledger["entries"]
+            if entry["document"].endswith(
+                "P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md"))
+        self.assertEqual(
+            cover["independent_audit"],
+            "claims/p4/classifications/"
+            "audit_p4_all_pair_rank_exceptional_graph_reduction.py")
+        self.assertEqual(
+            cover["audit_provenance"], "independent_modular_audit")
+        self.assertIn("constant-size matching combinatorics", cover["note"])
+        self.assertIn("not the B3 semantic composition audit", cover["note"])
+
     def test_split_center_h22_scope_covers_full_weight_line(self):
         root = pathlib.Path(__file__).resolve().parents[1]
         ledger = json.loads((root / "catalog" / "theorem-ledger.json")
