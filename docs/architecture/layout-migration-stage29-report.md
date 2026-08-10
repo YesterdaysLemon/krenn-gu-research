@@ -1,8 +1,7 @@
 # Layout migration Stage 29 report
 
-Status: **PURE MOVE, MIGRATION-AWARE LINK/COMMAND REWRITE, FROZEN EXECUTABLE
-REPAIR, NAVIGATION, AND LOCAL VALIDATION COMPLETE; PUBLICATION, HOSTED CI,
-MERGE, AND MERGED-MAIN VALIDATION PENDING.**
+Status: **STAGE 29 COMPLETE, PUBLISHED, EXACT-HEAD HOSTED-CI VALIDATED,
+MERGED, AND MERGED-MAIN VALIDATED.**
 
 The global Krenn-Gu conjecture remains **UNRESOLVED**.  Stage 29 changes
 filesystem ownership, executable paths, navigation, and four document-hash
@@ -20,6 +19,8 @@ case-cover claim, owner-gated conflict, or global status.
 | pure 176-file move | `169ba6dcc4d11330845e83693bc506160dc205b2` | `dd96a76d3681401dbb6e874a6e0d4968e434907b` |
 | migration-aware link/command rewrite | `2976efb02090952de0ecf0d44e1428993f90f6ea` | `722c2afea1a912a19607edb5a5fb1b6a108fb915` |
 | executable repair, navigation, and local validation | `e73711982fe7bef166fb2683bf3a8c5679f3192f` | `c4fbf98990ed24cc970023d1efe8e1efa9c38969` |
+| published exact PR head | `fb64c083d2058679ed7c4400227cb4f7ea8cd2c7` | `22c058a036fd7c66d532878523dd1dc4073eeb64` |
+| merged main (PR #63) | `3483127a14303d9ac17d9fffc60721297e45c0f3` | `22c058a036fd7c66d532878523dd1dc4073eeb64` |
 
 Batch: [`p5-frontier-stage29`](../../catalog/batches/p5-frontier-stage29.json).
 Dry run: [`p5-frontier-stage29-dry-run.md`](p5-frontier-stage29-dry-run.md).
@@ -45,8 +46,9 @@ change is the executor-owned `catalog/moved-paths.json` transition: the same
 After the move, the tracked root has 989 files and nine directories, or 998
 entries.  Grandfathered root debt is 982.  The manifest's historical
 projection is 997 because retained `AGENTS.md` is outside its original
-classifier universe.  The live Git root value is 998; after publication, the
-GitHub root listing should expose the same 998 entries.
+classifier universe.  The live Git root value is 998, and the GitHub contents
+endpoint on merged `main` returns the same 998 entries: 989
+files and nine directories, strictly below the 1,000-entry cap.
 
 ## Mathematical and evidence boundary
 
@@ -162,8 +164,12 @@ passes the authoritative local floor:
   `git diff --cached --check`;
 - independent repair-surface, catalog/ledger, and proof-boundary review: PASS.
 
-The exact repair checkpoint is pinned above.  Publication, exact-head hosted
-CI, guarded merge, and merged-main CI remain **PENDING**.
+The exact repair checkpoint is pinned above.  PR #63 published the reviewed
+head `fb64c083d2058679ed7c4400227cb4f7ea8cd2c7`; exact-head hygiene run
+`31345433591` completed successfully.  The guarded merge produced
+`3483127a14303d9ac17d9fffc60721297e45c0f3`, and merged-main hygiene run
+`31345590103` completed successfully on that exact merge SHA.  Stage 29 is
+complete.
 
 No local success, publication event, or CI run changes the mathematical
 status.  Broad SAT, Singular, numerical, sampling, and theorem reruns remain
