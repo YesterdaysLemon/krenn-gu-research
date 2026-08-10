@@ -295,6 +295,17 @@ all pairwise pure scalar pencils and their constant-colour intermediate
 coefficients can pass while a mixed binary deletion fails.  See
 [`RIGID_COLOUR_THREE_BLOCK_BINARY_PRIMITIVE_AND_QUADRATIC_BRIDGE_THEOREM.md`](../claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_BINARY_PRIMITIVE_AND_QUADRATIC_BRIDGE_THEOREM.md).
 
+The arbitrary mediator cannot be excluded from the three-block equations
+alone.  For every even `n>=8`, an alternating binary Hamilton cycle has zero
+matching tensor on all six proper block unions and full tensor `Delta_2`.
+This exact counterfamily is not physically complete.  The completion that
+makes every cycle chord pure in the rigid colour violates the annihilating
+deck on four consecutive vertices, while saturating exactly one cycle shore
+with binary chords exposes `m-1` distinct uniquely supported deletion words.
+Thus any surviving completion must use a more general cancelling support and
+simultaneously satisfy the scalar/binary complement bridges.  See
+[`RIGID_COLOUR_THREE_BLOCK_PRIMITIVE_SHARPNESS_AND_DUAL_BRIDGE_COMPLETION_OBSTRUCTION.md`](../claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_PRIMITIVE_SHARPNESS_AND_DUAL_BRIDGE_COMPLETION_OBSTRUCTION.md).
+
 ### New all-bridge closure
 
 In the simultaneous balanced all-bridge branch, let `D` be the physical graph

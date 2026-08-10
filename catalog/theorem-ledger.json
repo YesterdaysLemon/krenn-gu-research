@@ -82,7 +82,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "3c3ed56c3bdf8caf",
+      "document_sha256_16": "57ec41cd7cd9f0ff",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -585,6 +585,36 @@
         "RIGID_COLOUR_THREE_BLOCK_BINARY_PRIMITIVE_AND_QUADRATIC_BRIDGE_THEOREM.md",
         "audit_rigid_colour_three_block_binary_primitive_and_quadratic_bridge.py",
         "verify_rigid_colour_three_block_binary_primitive_and_quadratic_bridge.py"
+      ]
+    },
+    {
+      "name": "Rigid-Colour Three-Block Primitive Sharpness and Dual-Bridge Completion Obstruction",
+      "document": "claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_PRIMITIVE_SHARPNESS_AND_DUAL_BRIDGE_COMPLETION_OBSTRUCTION.md",
+      "document_sha256_16": "37cdac33a459d6de",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact cycle, bipartition, and forced-path proofs over C at every even n>=8",
+        "the alternating-cycle construction realizes the binary three-block primitive but omits physical completion",
+        "the naive completion keeps the cycle as the entire binary support and makes every chord pure in the rigid colour",
+        "the one-shore theorem saturates exactly one shore with binary matrix-unit chords and adds no other binary edges",
+        "partial same-shore, both-shore, and noncycle cross-shore cancelling completions remain open",
+        "the constructions are route countermechanisms and not Krenn-Gu witnesses"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_rigid_colour_three_block_primitive_sharpness.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_rigid_colour_three_block_primitive_sharpness.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "The arbitrary-order proof is the written shore-imbalance, cycle, and forced-path argument. The scripts are bounded checks of representative orders, not the arbitrary-order proof. The primitive-only exclusion route is refuted, while two explicit completion classes are excluded; the general globally rigid branch and global conjecture remain UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "RIGID_COLOUR_THREE_BLOCK_PRIMITIVE_SHARPNESS_AND_DUAL_BRIDGE_COMPLETION_OBSTRUCTION.md",
+        "audit_rigid_colour_three_block_primitive_sharpness.py",
+        "verify_rigid_colour_three_block_primitive_sharpness.py"
       ]
     },
     {
@@ -2001,7 +2031,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "3c3ed56c3bdf8caf",
+      "document_sha256_16": "57ec41cd7cd9f0ff",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -2144,7 +2174,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "3c3ed56c3bdf8caf",
+      "document_sha256_16": "57ec41cd7cd9f0ff",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
