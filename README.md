@@ -96,6 +96,23 @@ backbone but retains six off-backbone mixed words, so backbone cancellation
 alone cannot close the branch.  See
 [`RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md`](claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md).
 
+The matrix-unit branch now has a finite symbolic port reduction.  A
+matching-induced forbidden word with globally minimum deviation has at most
+four exceptional vertices.  Four deviations force one globally rigid
+colour; three deviations put every pure-support component in the exact
+`K_(2s)`/`K_(s,s)` normal form and yield a cofactor-active four-cell.
+Proper fixed-colour nonrigidity sets still form a genuine partial-bridge
+boundary.  See
+[`MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md`](claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md).
+
+In the globally rigid branch, hafnian convolution forces a binary
+three-block primitive with two two-vertex ports, bi-null on every proper
+block union.  Dual quadratic bridges constrain every scalar and binary edge,
+and a complete symbolic incidence argument excludes this branch at order
+six.  The arbitrary-order primitive remains open; pure hafnian pencils alone
+are provably insufficient.  See
+[`RIGID_COLOUR_THREE_BLOCK_BINARY_PRIMITIVE_AND_QUADRATIC_BRIDGE_THEOREM.md`](claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_BINARY_PRIMITIVE_AND_QUADRATIC_BRIDGE_THEOREM.md).
+
 On that clean `P_6` fan, target diagonality has now been translated exactly.
 If the fan is invertible, each target-colour deck vector lies in the inverse
 image of `Seg(P^1 x P^2)` and therefore obeys three pulled-back `2 x 2`

@@ -5,13 +5,14 @@
 The global Krenn--Gu conjecture remains **UNRESOLVED**. This document records
 the next exact symbolic obligations after the repository root exit.  The
 current checkpoint adds exact arbitrary-order all-bridge, balanced-sensor,
-maximal-torus-root, and matrix-unit cancellation theorems plus one proved
-boundary for a characteristic-two route.  None closes every branch of the
-global extraction/gluing obligation or changes global status.
+maximal-torus-root, matrix-unit minimum-port, rigid-colour, and cancellation
+theorems plus one proved boundary for a characteristic-two route.  None
+closes every branch of the global extraction/gluing obligation or changes
+global status.
 
 The operational base for this checkpoint is merged `main` at
-`eef92672a8c8e6f4285a044686b272de11250d8e`.  Its push hygiene workflow
-completed successfully in run `31426245049`.
+`4793e082f0bbcb8e3261ee8951ecbc7adeaf4a7c`.  Its push hygiene workflow
+completed successfully in run `31428495352`.
 
 - Stage 33 moved the final 305 root-debt artifacts through PR #69 and merged as
   `4263832e3ff338c5bd87528268cb8cb563866ec0`; both exact-head and exact
@@ -260,6 +261,39 @@ matchings in the selected Bogdanov backbone but leaves six other mixed words
 with coefficient `-1`.  It is not a witness; it proves that off-backbone
 coefficients are indispensable.  See
 [`RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md`](../claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md).
+
+The minimum-word geometry is now finite-port.  A four-switch against any
+pure matching proves that a globally minimum forbidden word has at most four
+deviations.  The four-deviation case is globally rigid in the base colour.
+At three deviations, every pure-support component is exactly `K_(2s)` or
+`K_(s,s)`, and a suitable pure baseline exposes a nonzero four-vertex cycle
+group that must cancel locally or against a larger deviation-spanning cycle.
+For all `k<=4`, the full coefficient is the exact injection/hafnian response
+of those `k` ports against the pure core.
+
+For a fixed colour, vertices carrying off-diagonal column killers satisfy a
+second exact dichotomy: either an induced pair exposes a deeper double-star
+blocker component, or all such pairs obey the coordinate-bridge pattern and
+the two failure-plane populations differ by at most the number of rigid
+vertices.  Full flags in all three colours enter the existing simultaneous
+balanced all-bridge branch; proper nonempty flag sets remain open.  Exact
+small systems show that near, two-point, cut-Gram, and minimum-cycle controls
+do not by themselves propagate those flags.  See
+[`MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md`](../claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md).
+
+The globally rigid branch has also been reduced further.  Hafnian
+convolution forces complementary binary bi-null cuts at every intermediate
+size and, in particular, a three-block primitive with two two-vertex ports
+and an arbitrary even mediator: every proper block union is tensor-null but
+the full binary tensor is `Delta_2`.  Every scalar or binary edge lies in a
+dual quadratic four-vertex bridge.  When `n=6`, the mediator is also a pair;
+the resulting three-cell incidence is either three full `K_(2,2)` cells or
+one full cell plus two stars, and both forms have a unique forbidden binary
+matching word.  Thus global rigidity is excluded at order six.  It is not
+excluded at arbitrary order.  An infinite cyclic-shift family proves that
+all pairwise pure scalar pencils and their constant-colour intermediate
+coefficients can pass while a mixed binary deletion fails.  See
+[`RIGID_COLOUR_THREE_BLOCK_BINARY_PRIMITIVE_AND_QUADRATIC_BRIDGE_THEOREM.md`](../claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_BINARY_PRIMITIVE_AND_QUADRATIC_BRIDGE_THEOREM.md).
 
 ### New all-bridge closure
 

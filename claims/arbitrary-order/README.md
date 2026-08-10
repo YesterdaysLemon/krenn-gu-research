@@ -73,6 +73,26 @@ Bogdanov-backbone matching can cancel while off-backbone words still fail.
 The gadget is not a witness, global rigidity is not forced, and neither the
 rigid nor nonrigid one-root boundary is excluded.
 
+The
+[`matrix-unit four-switch and partial-bridge theorem`](MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md)
+now bounds a globally minimum forbidden word by four deviations.  Four
+deviations force global rigidity in one colour; three deviations force each
+pure-colour support component to be `K_(2s)` or `K_(s,s)` and expose a
+cofactor-active four-vertex cancellation cell.  The complete minimum
+coefficient is an exact response on at most four ports.  A fixed colour also
+obeys a partial-bridge dichotomy, but proper nonempty nonrigidity sets need
+not propagate to all vertices; exact six- and eight-vertex systems preserve
+that boundary without being witnesses.
+
+Inside the globally rigid branch, the
+[`three-block binary primitive and quadratic-bridge theorem`](RIGID_COLOUR_THREE_BLOCK_BINARY_PRIMITIVE_AND_QUADRATIC_BRIDGE_THEOREM.md)
+forces complementary bi-null cuts at every intermediate size, a two-pair
+plus mediator primitive, and dual four-vertex bridge identities.  That
+primitive is symbolically impossible at order six.  Its arbitrary-order
+exclusion remains unknown, and an infinite sparse shift family shows that
+all pairwise pure scalar pencils and their constant-colour intermediate
+coefficients cannot replace the mixed binary deletion equations.
+
 At the Stage 27 boundary, the owner-gated H22/H31, Component20/21/23,
 high-coordinate, and mixed-lifecycle conflict surfaces were excluded from
 that batch and remained at root, unmoved and unadjudicated at that stage.
