@@ -1,8 +1,10 @@
 # H31 chart-boundary marked-fibre characteristic-zero reconciliation
 
-Date: 2026-08-10 UTC  
-Frozen base: `2a0bc5899e9edfcfd2add0f52f46827c47a54344`  
-Disposition: owner-authorized bounded audit, outcome A  
+Date: 2026-08-10 UTC
+
+Frozen base: `2a0bc5899e9edfcfd2add0f52f46827c47a54344`
+
+Disposition: owner-authorized bounded audit, outcome A
 Global Krenn--Gu status: **UNRESOLVED**
 
 Frozen source paths and blobs:
