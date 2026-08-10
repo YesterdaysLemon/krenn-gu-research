@@ -46,6 +46,14 @@ The three embedded-P3 helpers remain with `claims/p5/h22/embedded-p3/`, and
 the Component19 derivations/certificates follow their exact boundary or
 proof-B package rather than a broad Component19 bucket.
 
+Fresh semantic review corrected three old filename-derived splits before
+execution.  The `qphi=1` independent-verification document now shares its
+package with its explicitly commanded audit; the zero-base valuative-
+reduction verification shares its package with its audit; and the target-
+local `q`-endpoints candidate shares its package with its explicitly named
+discovery script.  Their candidate/verified roles remain distinct and
+unchanged.
+
 Exactly forty basenames containing `_p_plus_q_` move to the narrow neutral
 package:
 
@@ -91,9 +99,9 @@ dependency edges without deciding that separate ownership surface.
 
 ```text
 canonical mapping SHA-256:
-  0cda48692776290671d971fca1c590cad8462582721fda8de0f5f0308ec4409b
+  899a1070f1515105f76265c2bfcb80e2316c0d3a623ea9afc53a59940779f2e1
 canonical source-identity SHA-256:
-  ffb03f9d55d687ad6f9e0afc381cc0f75d32bcdd11cda61ed9ef165668753848
+  98b91a114acd413552552400ee883ac3ded7ddd07ffeb2bc63981b5128c8a27f
 ```
 
 The committed schema-v2 batch records every old path, destination, and base
@@ -117,6 +125,12 @@ Validation is bounded to source/path behavior:
 - exact parity tests cover all sixteen shared contraction coefficients,
   finite/infinity `D01`/`D23` projection, and `permanent4` without a solver;
 - all 39 shared-core consumers compile/import through bootstrap;
+- the eight inbound consumers of the moved common-center partial provider and
+  three inbound Component21 consumers of the coincident-support derivation
+  also resolve and compile/import through explicit package exposure;
+- the complete bare-import inventory is checked: 77 internal edges, 20
+  inbound edges, and 11 outbound edges, with same-package edges left local
+  and cross-package edges exposed explicitly;
 - the link/replay rewriter reaches a fixed point;
 - hygiene, migration-tool tests, and the focused fourteen-vertex tests pass
   on an index-complete candidate tree; and

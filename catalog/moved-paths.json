@@ -10874,18 +10874,10 @@
     },
     {
       "old_path": "explore_p5_h22_component19_p0_q_endpoints.py",
-      "new_path": "claims/p5/h22/component19-p0-q-endpoints/explore_p5_h22_component19_p0_q_endpoints.py",
-      "reason": "claim_script -> p5/h22/component19-p0-q-endpoints",
+      "new_path": "claims/p5/h22/component19-p0-q-endpoints-target-local/explore_p5_h22_component19_p0_q_endpoints.py",
+      "reason": "claim_script -> p5/h22/component19-p0-q-endpoints-target-local",
       "status": "proposed_high_confidence",
-      "claim_family": "p5/h22/component19-p0-q-endpoints",
-      "confidence": "high"
-    },
-    {
-      "old_path": "audit_p5_h22_component19_p0_qphi_equals_one.py",
-      "new_path": "claims/p5/h22/component19-p0-qphi-equals-one/audit_p5_h22_component19_p0_qphi_equals_one.py",
-      "reason": "claim_script -> p5/h22/component19-p0-qphi-equals-one",
-      "status": "proposed_high_confidence",
-      "claim_family": "p5/h22/component19-p0-qphi-equals-one",
+      "claim_family": "p5/h22/component19-p0-q-endpoints-target-local",
       "confidence": "high"
     },
     {
@@ -10988,6 +10980,14 @@
       "old_path": "P5_H22_COMPONENT19_P0_QPHI_ONE_INDEPENDENT_VERIFICATION.md",
       "new_path": "claims/p5/h22/component19-p0-qphi-one-independent/P5_H22_COMPONENT19_P0_QPHI_ONE_INDEPENDENT_VERIFICATION.md",
       "reason": "claim_document -> p5/h22/component19-p0-qphi-one-independent",
+      "status": "proposed_high_confidence",
+      "claim_family": "p5/h22/component19-p0-qphi-one-independent",
+      "confidence": "high"
+    },
+    {
+      "old_path": "audit_p5_h22_component19_p0_qphi_equals_one.py",
+      "new_path": "claims/p5/h22/component19-p0-qphi-one-independent/audit_p5_h22_component19_p0_qphi_equals_one.py",
+      "reason": "claim_script -> p5/h22/component19-p0-qphi-one-independent",
       "status": "proposed_high_confidence",
       "claim_family": "p5/h22/component19-p0-qphi-one-independent",
       "confidence": "high"
@@ -11346,10 +11346,10 @@
     },
     {
       "old_path": "audit_p5_h22_component19_zero_base_valuative_reduction.py",
-      "new_path": "claims/p5/h22/component19-zero-base-valuative/audit_p5_h22_component19_zero_base_valuative_reduction.py",
-      "reason": "claim_script -> p5/h22/component19-zero-base-valuative",
+      "new_path": "claims/p5/h22/component19-zero-base-valuative-reduction/audit_p5_h22_component19_zero_base_valuative_reduction.py",
+      "reason": "claim_script -> p5/h22/component19-zero-base-valuative-reduction",
       "status": "proposed_high_confidence",
-      "claim_family": "p5/h22/component19-zero-base-valuative",
+      "claim_family": "p5/h22/component19-zero-base-valuative-reduction",
       "confidence": "high"
     },
     {

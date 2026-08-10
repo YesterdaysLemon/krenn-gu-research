@@ -197,12 +197,10 @@
     "p5/h22/component19-p0-ordinary-boundary": 3,
     "p5/h22/component19-p0-ordinary-open-proof-b": 2,
     "p5/h22/component19-p0-phi-pm-one-ordinary": 3,
-    "p5/h22/component19-p0-q-endpoints": 1,
-    "p5/h22/component19-p0-q-endpoints-target-local": 1,
-    "p5/h22/component19-p0-qphi-equals-one": 1,
+    "p5/h22/component19-p0-q-endpoints-target-local": 2,
     "p5/h22/component19-p0-qphi-minus-one-axes-compatibility": 3,
     "p5/h22/component19-p0-qphi-minus-one-weight-infinity": 3,
-    "p5/h22/component19-p0-qphi-one-independent": 1,
+    "p5/h22/component19-p0-qphi-one-independent": 2,
     "p5/h22/component19-p0-qphi-one-ordinary": 3,
     "p5/h22/component19-p0-qphi1-proof-b": 2,
     "p5/h22/component19-p0-qphim1-axis-target-local-proof-b": 2,
@@ -212,9 +210,8 @@
     "p5/h22/component19-q0-special-divisor-proof-b": 2,
     "p5/h22/component19-zero-base-first-normal": 4,
     "p5/h22/component19-zero-base-normal-cone-proof-b": 2,
-    "p5/h22/component19-zero-base-valuative": 1,
     "p5/h22/component19-zero-base-valuative-finite-cover": 3,
-    "p5/h22/component19-zero-base-valuative-reduction": 1,
+    "p5/h22/component19-zero-base-valuative-reduction": 2,
     "p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-weight-cover": 1,
     "p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-generic-weight": 1,
     "p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-linear": 1,
@@ -14515,16 +14512,17 @@
     },
     {
       "old_path": "audit_p5_h22_component19_p0_qphi_equals_one.py",
-      "proposed_path": "claims/p5/h22/component19-p0-qphi-equals-one/audit_p5_h22_component19_p0_qphi_equals_one.py",
+      "proposed_path": "claims/p5/h22/component19-p0-qphi-one-independent/audit_p5_h22_component19_p0_qphi_equals_one.py",
       "category": "claim_script",
-      "claim_family": "p5/h22/component19-p0-qphi-equals-one",
+      "claim_family": "p5/h22/component19-p0-qphi-one-independent",
       "confidence": "high",
       "evidence": [
         "filename prefix P5_H22_ family",
         "family slug component19-p0-qphi-equals-one (suffix-stripped fallback)",
         "stage31_owner_directed_review: exact H22 proof-obligation/package ownership",
         "stage31_source identity frozen at merged-main base 6f7c7db486685e62a4971841b560d51f194c795d",
-        "scientific status, scope, lifecycle, and evidence role unchanged"
+        "scientific status, scope, lifecycle, and evidence role unchanged",
+        "stage31_referee_correction: colocated with the exact document that commands and outputs this carrier"
       ]
     },
     {
@@ -14655,16 +14653,17 @@
     },
     {
       "old_path": "audit_p5_h22_component19_zero_base_valuative_reduction.py",
-      "proposed_path": "claims/p5/h22/component19-zero-base-valuative/audit_p5_h22_component19_zero_base_valuative_reduction.py",
+      "proposed_path": "claims/p5/h22/component19-zero-base-valuative-reduction/audit_p5_h22_component19_zero_base_valuative_reduction.py",
       "category": "claim_script",
-      "claim_family": "p5/h22/component19-zero-base-valuative",
+      "claim_family": "p5/h22/component19-zero-base-valuative-reduction",
       "confidence": "high",
       "evidence": [
         "filename prefix P5_H22_ family",
         "family slug component19-zero-base-valuative (suffix-stripped fallback)",
         "stage31_owner_directed_review: exact H22 proof-obligation/package ownership",
         "stage31_source identity frozen at merged-main base 6f7c7db486685e62a4971841b560d51f194c795d",
-        "scientific status, scope, lifecycle, and evidence role unchanged"
+        "scientific status, scope, lifecycle, and evidence role unchanged",
+        "stage31_referee_correction: colocated with the exact document that commands and outputs this carrier"
       ]
     },
     {
@@ -18644,16 +18643,17 @@
     },
     {
       "old_path": "explore_p5_h22_component19_p0_q_endpoints.py",
-      "proposed_path": "claims/p5/h22/component19-p0-q-endpoints/explore_p5_h22_component19_p0_q_endpoints.py",
+      "proposed_path": "claims/p5/h22/component19-p0-q-endpoints-target-local/explore_p5_h22_component19_p0_q_endpoints.py",
       "category": "claim_script",
-      "claim_family": "p5/h22/component19-p0-q-endpoints",
+      "claim_family": "p5/h22/component19-p0-q-endpoints-target-local",
       "confidence": "high",
       "evidence": [
         "filename prefix P5_H22_ family",
         "family slug component19-p0-q-endpoints (suffix-stripped fallback)",
         "stage31_owner_directed_review: exact H22 proof-obligation/package ownership",
         "stage31_source identity frozen at merged-main base 6f7c7db486685e62a4971841b560d51f194c795d",
-        "scientific status, scope, lifecycle, and evidence role unchanged"
+        "scientific status, scope, lifecycle, and evidence role unchanged",
+        "stage31_referee_correction: colocated with the exact document that commands and outputs this carrier"
       ]
     },
     {

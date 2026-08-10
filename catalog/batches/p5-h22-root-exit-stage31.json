@@ -4,9 +4,9 @@
   "approved_by": "Codex (exact mapping reviewer under repository-owner standing delegation dated 2026-08-08; Tier-2 owner-directed root-exit authorization dated 2026-08-09)",
   "approved_at": "2026-08-09",
   "base_sha": "6f7c7db486685e62a4971841b560d51f194c795d",
-  "manifest_sha256": "9586e4ece3b557a5387e61870f2eb153221ef0c94c8f6e1ebcd967bab45750ff",
-  "mapping_sha256": "0cda48692776290671d971fca1c590cad8462582721fda8de0f5f0308ec4409b",
-  "source_identity_sha256": "ffb03f9d55d687ad6f9e0afc381cc0f75d32bcdd11cda61ed9ef165668753848",
+  "manifest_sha256": "070ffbe04edfef1d85a1bf6a4e45a38569a9057f1aafa0265d82d7a2ad2c3b9c",
+  "mapping_sha256": "899a1070f1515105f76265c2bfcb80e2316c0d3a623ea9afc53a59940779f2e1",
+  "source_identity_sha256": "98b91a114acd413552552400ee883ac3ded7ddd07ffeb2bc63981b5128c8a27f",
   "member_count": 351,
   "moves": [
     {
@@ -831,7 +831,7 @@
     },
     {
       "old_path": "audit_p5_h22_component19_p0_qphi_equals_one.py",
-      "new_path": "claims/p5/h22/component19-p0-qphi-equals-one/audit_p5_h22_component19_p0_qphi_equals_one.py",
+      "new_path": "claims/p5/h22/component19-p0-qphi-one-independent/audit_p5_h22_component19_p0_qphi_equals_one.py",
       "source_blob": "3357ca12516eb20a34d41d76a2bf85a9204b1efc"
     },
     {
@@ -881,7 +881,7 @@
     },
     {
       "old_path": "audit_p5_h22_component19_zero_base_valuative_reduction.py",
-      "new_path": "claims/p5/h22/component19-zero-base-valuative/audit_p5_h22_component19_zero_base_valuative_reduction.py",
+      "new_path": "claims/p5/h22/component19-zero-base-valuative-reduction/audit_p5_h22_component19_zero_base_valuative_reduction.py",
       "source_blob": "4822df8f51d37ce55d8c1b86dc7332f564ea487b"
     },
     {
@@ -1316,7 +1316,7 @@
     },
     {
       "old_path": "explore_p5_h22_component19_p0_q_endpoints.py",
-      "new_path": "claims/p5/h22/component19-p0-q-endpoints/explore_p5_h22_component19_p0_q_endpoints.py",
+      "new_path": "claims/p5/h22/component19-p0-q-endpoints-target-local/explore_p5_h22_component19_p0_q_endpoints.py",
       "source_blob": "f1c69ea66376b42ce33b3fd88e12876d968762c3"
     },
     {
@@ -1765,6 +1765,6 @@
       "source_blob": "445b5919917ebd81db949ab5f48860b3186cd4d8"
     }
   ],
-  "rationale": "Move the complete 351-source H22 ownership envelope: 311 ordinary claim-owned carriers and 40 unchanged-status artifacts in the neutral disputed p+q wall package; preserve the mixed Component20 primary as claim-owned while tapering its 39-consumer neutral core in the repair commit.",
-  "notes": "No scientific status change. Global Krenn-Gu remains UNRESOLVED. Execution requires two fresh Tier-2 referees and exact source-blob checks before the first git mv."
+  "rationale": "Move the complete corrected 351-source H22 ownership envelope: 311 ordinary claim-owned carriers and 40 unchanged-status artifacts in the neutral disputed p+q wall package; preserve direct document/carrier pairs and taper the mixed Component20 shared core after the pure move.",
+  "notes": "Refrozen after fresh semantic and mechanical referee rejection of the first mapping. No scientific status change. Global Krenn-Gu remains UNRESOLVED."
 }
