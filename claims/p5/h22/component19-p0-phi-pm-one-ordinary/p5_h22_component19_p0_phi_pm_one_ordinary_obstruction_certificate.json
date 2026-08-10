@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "role": "construction",
+  "date_utc": "2026-08-01T16:53:36Z",
+  "git_commit": "565e1a39cf34228c8bf3fe598eab9485720c175d",
+  "claim_label": "CANDIDATE",
+  "scope": "component 19 finite ordinary p=0, phi in {+1,-1}, q*(q^2-1)!=0",
+  "inputs": {
+    "P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md": "ce333e8605b78e17c2e6b7cfe91fd369e89afe0d3aed65c7df35f82fee319634",
+    "P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md": "7d817f91a5a24512e092dca125258ad5a3753bbb97b6199ad2b6c202c9d91965"
+  },
+  "method": "direct sign-specialized finite incidence elimination, exact shared frame, complete individual one-marked classification, full two-contraction stacks, and third-colour diagonal obstruction",
+  "command": "uv run --with sympy python claims/p5/h22/component19-p0-phi-pm-one-ordinary/derive_p5_h22_component19_p0_phi_pm_one_ordinary_obstruction_candidate.py",
+  "exact_parameter_open": "phi in {+1,-1}, q*(q^2-1)!=0",
+  "ordinary": {
+    "pure_coefficient": "T1111=4*(q-s)",
+    "pair_profile": [3, 3, 4, 3, 3, 3],
+    "edge03_rank4_witness": "-8*s*(q-s)^2"
+  },
+  "finite_incidence_for_each_sign": {
+    "D01_binary": ["1"],
+    "D23_binary": ["h3", "h0", "h1*h2"],
+    "shared_A01": ["1"],
+    "shared_A23": ["lambda-1", "h3", "h1", "h0"]
+  },
+  "shared_branch": {
+    "weight": "[lambda:1]=[1:1]",
+    "marking": "h=(0,0,t,0)",
+    "r": "q-s",
+    "mixed_rank": 5,
+    "rank_witness": "-1024*q*(q-s)^2",
+    "vX": ["0", "-1/r", "s/r", "0", "1", "0", "0", "0"],
+    "vY": ["0", "0", "0", "0", "0", "1", "0", "0"],
+    "vZ": ["0", "-q/r", "1/r", "0", "0", "0", "0", "1"],
+    "F": "s*X+Z",
+    "G": "(q-s)*Y-t*(s*X+Z)",
+    "H": "X+q*Z",
+    "diagonals": {
+      "A01": "0",
+      "B01": "4*G",
+      "A23": "-4*F/(q-s)",
+      "B23": "4*H"
+    },
+    "genuine_condition": "F*G*H!=0"
+  },
+  "individual_one_marked": {
+    "D23_mode2_rows_0237": "64*Y^2*H",
+    "D01_mode3_rows_4567": "-64*X*(q^2-1)*((s*q+1)*X+2*q*Z)*G/(q-s)^2",
+    "complete_survivor_union": [
+      "X=Y=0, Z*t!=0",
+      "Y=0, (s*q+1)*X+2*q*Z=0, X*t!=0"
+    ],
+    "rank_profiles_on_each_survivor": {
+      "D01": [3, 1, 1, 3],
+      "D23": [3, 3, 3, 3]
+    }
+  },
+  "full_target_local_compatibility": {
+    "line": {
+      "parameterization": "X=2*q*K, Y=0, Z=-(s*q+1)*K",
+      "mode": 3,
+      "stacked_rows": [5, 6, 7, 8, 14],
+      "stacked_determinant": "-512*s*K^4*q^2*t*(q^2-1)",
+      "stacked_rank": 5,
+      "q=-2*s_covered": true,
+      "actual_lift_exists": false
+    },
+    "axis": {
+      "extension": "K*vZ",
+      "all_stack_ranks": [4, 4, 4, 4],
+      "complete_kernel_property": "gamma_i[0]=gamma_i[1]=0 for every mode",
+      "required_D01_gamma4_diagonal": "0",
+      "obstruction": "the mandatory lambda0 E0^4 coefficient vanishes",
+      "actual_lift_exists": false
+    }
+  },
+  "weighted_H22_fibre_empty_candidate": true,
+  "finite_field_computation_used": false,
+  "broad_brute_force_used": false,
+  "boundaries": {
+    "q=0": "excluded lower-pair/component-torus intersection",
+    "q=+1_or_-1": "excluded q=phi and q*phi=+/-1 intersections",
+    "projective_weight_infinity": "not covered",
+    "other_component_boundaries": "not covered"
+  },
+  "limitations": [
+    "Construction result remains CANDIDATE pending independent verification.",
+    "No arbitrary-order or global Krenn-Gu conclusion is made."
+  ]
+}

@@ -81,7 +81,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "fafb4f7675a3cc75",
+      "document_sha256_16": "5e2cca2e8c0db718",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -794,7 +794,7 @@
     {
       "name": "Generic marked H31 fibre empty: embedded p3",
       "document": "claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "a278f75299162f43",
+      "document_sha256_16": "b8f5763b5647b953",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1171,8 +1171,8 @@
     },
     {
       "name": "Generic weighted H22 fibre empty: common center kernel star component r zero divisor",
-      "document": "P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "6ab6e9e9273e41a7",
+      "document": "claims/p5/h22/common-center-kernel-star-component-r-zero-divisor/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "1e91d1a8d4f997fb",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1180,13 +1180,21 @@
         "slope r transcendental; special slopes excluded"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h22/common-center-kernel-star-component-r-zero-divisor/verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py",
+      "independent_audit": "claims/p5/h22/common-center-kernel-star-component-r-zero-divisor/audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes-hours (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h22/common-center-kernel-star-component-r-zero-divisor",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py",
+        "verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py"
       ]
     },
     {
@@ -1276,7 +1284,7 @@
     {
       "name": "Generic weighted H22 fibre empty: disjoint mixed star",
       "document": "claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "7d21e310fb002c13",
+      "document_sha256_16": "df66fa6acf82b5bb",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1359,8 +1367,8 @@
     },
     {
       "name": "Generic weighted H22 fibre empty: embedded p3",
-      "document": "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "c83bb12ac58fba07",
+      "document": "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "15a3f7a510333e38",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1368,13 +1376,21 @@
         "slope r transcendental; special slopes excluded"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h22_embedded_p3_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h22/embedded-p3/verify_p5_h22_embedded_p3_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h22_embedded_p3_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes-hours (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h22/embedded-p3",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h22_embedded_p3_component_generic_obstruction.py",
+        "verify_p5_h22_embedded_p3_component_generic_obstruction.py"
       ]
     },
     {
@@ -1659,8 +1675,8 @@
     },
     {
       "name": "Generic weighted H22 fibre empty: unequal endpoint inward star component finite d01 branch a exceptional divisor",
-      "document": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "edec92a721c60ece",
+      "document": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "c065b9036e9296e3",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1668,19 +1684,27 @@
         "slope r transcendental; special slopes excluded"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_generic_obstruction.py",
+      "independent_audit": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes-hours (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_generic_obstruction.py",
+        "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_generic_obstruction.py"
       ]
     },
     {
       "name": "Open finite-D01 Branch B obligation after withdrawal of the coefficient-splitting route",
-      "document": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "afb5ccaf7f342313",
+      "document": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "5a49dc86509fc749",
       "status": "open",
       "assumptions_and_excluded_divisors": [
         "coefficient splitting over K-valued free extensions is invalid",
@@ -1694,12 +1718,18 @@
       "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "This entry tracks the open target only. The exact scripts mapped by the adjacent entry verify the narrower descent identities and the failed inference, not this obligation."
+      "note": "This entry tracks the open target only. The exact scripts mapped by the adjacent entry verify the narrower descent identities and the failed inference, not this obligation.",
+      "claim_package": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_GENERIC_OBSTRUCTION.md"
+      ]
     },
     {
       "name": "Verified descent-only identities from the withdrawn finite-D01 Branch B route",
-      "document": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "afb5ccaf7f342313",
+      "document": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "5a49dc86509fc749",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact characteristic-zero permanent and resultant identities only",
@@ -1707,18 +1737,26 @@
         "no generic-emptiness conclusion"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_reduction.py",
+      "primary_verifier": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_reduction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_reduction.py",
+      "independent_audit": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_reduction.py",
       "audit_provenance": "independent_exact_identity_audit",
       "expected_runtime": "seconds",
       "external_binaries": [],
-      "note": "The primary and audit successfully preserve the refutation of the old generic inference. Their success is not a generic-emptiness theorem; the open target is represented by the adjacent entry and the corrected full-field route is separate."
+      "note": "The primary and audit successfully preserve the refutation of the old generic inference. Their success is not a generic-emptiness theorem; the open target is represented by the adjacent entry and the corrected full-field route is separate.",
+      "claim_package": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_reduction.py",
+        "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_reduction.py"
+      ]
     },
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "fafb4f7675a3cc75",
+      "document_sha256_16": "5e2cca2e8c0db718",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -1763,7 +1801,7 @@
     {
       "name": "Eighth-component weighted H22 closure - canonical determinantal proof",
       "document": "claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "7d21e310fb002c13",
+      "document_sha256_16": "df66fa6acf82b5bb",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1854,7 +1892,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "fafb4f7675a3cc75",
+      "document_sha256_16": "5e2cca2e8c0db718",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -2075,8 +2113,8 @@
     },
     {
       "name": "Non-proof-active boundary-candidate collection checkpoint; representative frozen certificate refuted",
-      "document": "P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md",
-      "document_sha256_16": "83d229b1d23233a2",
+      "document": "claims/p5/h22/component19-p0-ordinary-boundary/P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md",
+      "document_sha256_16": "15e7fd63116a421f",
       "status": "exploratory",
       "assumptions_and_excluded_divisors": [
         "collection-level navigation only; no status inheritance to the 23 underlying documents",
@@ -2090,7 +2128,13 @@
       "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "The earlier aggregate candidate label was unsafe because the pinned representative document is a refuted frozen certificate and the collection is heterogeneous. This entry is exploratory navigation only; it is never proof-active."
+      "note": "The earlier aggregate candidate label was unsafe because the pinned representative document is a refuted frozen certificate and the collection is heterogeneous. This entry is exploratory navigation only; it is never proof-active.",
+      "claim_package": "claims/p5/h22/component19-p0-ordinary-boundary",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md"
+      ]
     }
   ]
 }

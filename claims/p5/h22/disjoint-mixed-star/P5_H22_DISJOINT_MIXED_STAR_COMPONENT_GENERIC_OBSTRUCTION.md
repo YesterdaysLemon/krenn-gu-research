@@ -13,7 +13,7 @@ fibres.  The later embedded-`P_3` ninth component is not covered by
 this theorem, but its generic fibres have since been excluded by their
 own apolar insertion theorems:
 [`P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](../../h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md),
-[`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](../embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
 The special equal- and opposite-weight slopes have since been closed
 by a stronger binary obstruction:
 [`P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md`](boundaries/P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md).

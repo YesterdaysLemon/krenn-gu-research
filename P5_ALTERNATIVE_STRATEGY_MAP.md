@@ -1177,7 +1177,7 @@ diagonal, while `D_01` is the same insertion arrangement on a
 slope-dependent line.  Hence its generic weighted `H22` fibre is also
 empty:
 
-- [`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 The nine exceptional `H31` insertion points are now classified
 exactly.  Truncated Segre relations leave five binary families.  Four
@@ -1193,14 +1193,14 @@ arrangement strata give six binary marked families; small factored
 one-marked covers exclude them, with stacked determinants `8` and
 `-8` at the two deepest points:
 
-- [`P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md)
+- [`P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md`](claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md)
 
 The rank-one collapse `rS=1,T=rU` is now closed by switching to the
 other required marked contraction.  Its complementary insertion
 pencil is injective away from `S=+/-1`; at those two fibres its kernel
 kills the `D_23` pure diagonal or the `D_01` alpha diagonal:
 
-- [`P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md`](P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md)
+- [`P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md`](claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md)
 
 One part of the ninth component's omitted normalization boundary is
 now closed.  On `A=0`, `B!=0`, the support-three sign chart degenerates
@@ -1254,7 +1254,7 @@ component/slope/marking space.  At `(s,t)=(2,3),(3,5),(5,7)`, exact row-module
 normal forms equal the full free rank-eight module for every marking and
 slope.  The selected determinantal divisors were left open at that checkpoint:
 
-- [`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md`](P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md)
+- [`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md`](claims/p5/h22/two-rank-two-spoke-mixed-star/P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md)
 
 They are now closed by changing from marking coordinates to the fixed-vertex
 Segre join:

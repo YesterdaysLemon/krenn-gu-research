@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "role": "literature",
+  "date_utc": "2026-08-01T11:47:48Z",
+  "git_commit": "7b32d942f49043ea433f35aaf10aa7be3af13210",
+  "claim_label": "UNKNOWN",
+  "dependency_hash_semantics": "SHA-256 of Git-normalized LF bytes for tracked text dependencies",
+  "scope": "weighted H22 on every actual stratum of the verified diagonal-source-torus p+q=0 valuative boundary of component 20",
+  "wall_status": "UNKNOWN",
+  "evidence_policy": {
+    "characteristic_zero_only_for_proof": true,
+    "finite_field_results_used_as_proof": false,
+    "projection_closures_treated_as_actual_fibres": false,
+    "global_krenn_gu_resolved": false
+  },
+  "dependencies": {
+    "p4_boundary_classification": {
+      "path": "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md",
+      "sha256": "4e8cb99893626c8f966ff000fd19aa5b2a13a22b7f15cf1ebc8ebcae134f3a2c",
+      "source_label": "VERIFIED",
+      "used_for": "exhaustive diagonal-DVR stratum list and residue routing"
+    },
+    "half_and_generic_finite_d01": {
+      "path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_PARTIAL.md",
+      "sha256": "47617facfff77d9595f3a86eca1e3607705616e6919232d22b2751a44e10a12d",
+      "source_label": "UNKNOWN overall; cited subclaims VERIFIED",
+      "used_for": "half-centre homogeneous Hall obstruction and generic B_full/B_drop finite-D01 obstruction"
+    },
+    "generic_d01_infinity": {
+      "path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_GENERIC_D01_INFINITY_OBSTRUCTION.md",
+      "sha256": "285bff2d76037a175a5fa20011678113f6a5cdd3b5bdc39f94984188fe626ee1",
+      "source_label": "VERIFIED",
+      "used_for": "generic B_full/B_drop D01 infinity"
+    },
+    "b_full_infinity_replay": {
+      "path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_B_FULL_INFINITY_FINITE_PAIR_VERIFICATION.md",
+      "sha256": "dba4dc20c19d115a54eb6cb4c8971bdd52b8438a4f3d6c46e06cb69df4045c43",
+      "source_label": "VERIFIED",
+      "used_for": "independent B_full D01-infinity replay and finite-D23 pairing audit"
+    },
+    "b_drop_infinity_replay": {
+      "path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_GENERIC_D01_INFINITY_B_DROP_AUDIT.md",
+      "sha256": "d9f5ea1ed0e39b5b5d890887c55ee16b65181065cb5f53b6d830b9d176bff606",
+      "source_label": "VERIFIED",
+      "used_for": "independent B_drop S1/S2 D01-infinity replay"
+    },
+    "exceptional_fibres": {
+      "path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_FIBRES_INDEPENDENT_AUDIT.md",
+      "sha256": "b0ff06b2bb000de8432e5d0dfe89c9f797d8084f34b46695de0cda75018f8668",
+      "source_label": "VERIFIED",
+      "used_for": "a=0,-1 direct and all actual lower-pair residue families"
+    },
+    "infinity_endpoint_base_audit": {
+      "path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_INDEPENDENT_VERIFICATION.md",
+      "sha256": "c58e7e53ac7324b01c491a3229b805613749c7ba22d7239bec34759d1621896a",
+      "source_label": "REFUTED overall; cited endpoint subclaims VERIFIED",
+      "used_for": "on-wall obstruction, off-wall infinity branches, marking projections, and finite survivor classification"
+    },
+    "infinity_endpoint_compatibility": {
+      "path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_COMPATIBILITY_OBSTRUCTION_VERIFICATION.md",
+      "sha256": "5c665c26521b2659f46d10916f124ecf2d7420c5f51e36a1b7b114b6120b0f74",
+      "source_label": "VERIFIED",
+      "used_for": "off-wall finite-D01 plus finite-D23,r=0 compatibility obstruction"
+    },
+    "infinity_endpoint_integration": {
+      "path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_INTEGRATION_VERIFICATION.md",
+      "sha256": "ecbe879b7359f46828a91ebd6343be4039760dea6a464c2c3eb87e9de08ce153",
+      "source_label": "VERIFIED",
+      "used_for": "reduction of every common genuine off-wall finite-finite pair to D23 slope zero"
+    },
+    "embedded_p3_generic": {
+      "path": "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "sha256": "15a3f7a510333e383cefb5ba8ba0d8fc20061f4fba6dab613ded111d17eb285a",
+      "source_label": "VERIFIED on normalized affine chart",
+      "used_for": "generic normalized embedded-P3 chart"
+    },
+    "embedded_p3_rank_two": {
+      "path": "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md",
+      "sha256": "85b6c1d31eac00202103c46a912f9d87fcb8142282232fc54d84d2739cf07e3f",
+      "source_label": "VERIFIED on normalized affine chart",
+      "used_for": "rank-two projected-line boundary"
+    },
+    "embedded_p3_rank_one": {
+      "path": "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md",
+      "sha256": "c424d0b7398157024a7fe711342d9b4925bbbbd5f0276c7952f35750ef3c9a0e",
+      "source_label": "VERIFIED on normalized affine chart",
+      "used_for": "rank-one projected-line collapse"
+    },
+    "embedded_p3_projective_audit": {
+      "path": "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_VERIFICATION.md",
+      "sha256": "35d97e53e3e9f4a82e1a5314916ff7b977decfee4628948cad3563a46b126eb9",
+      "source_label": "REFUTED",
+      "used_for": "free-plane counterexample and normal-mask/matching/shared-weight gaps"
+    },
+    "embedded_p3_r_zero_audit": {
+      "path": "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_VERIFICATION.md",
+      "sha256": "92c2ea1af52109f961a1b117e4705ebb92857a605075a6283c9566099bb444fb",
+      "source_label": "REFUTED as full divisor; t0=0 and nonendpoint t0!=0 subclaims VERIFIED",
+      "used_for": "r0=0 corner and nonendpoint homogeneous-weight transport"
+    },
+    "embedded_p3_endpoint_verification": {
+      "path": "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_T_NONZERO_WEIGHT_ENDPOINTS_VERIFICATION.md",
+      "sha256": "3d4cd28a1fa37df1acf49d83c87b9cdd3036de12e762d2d9441da2ee99ed31ad",
+      "source_label": "VERIFIED",
+      "used_for": "r0=0,t0!=0 fibres at [rho:sigma]=[0:1] and [1:0]",
+      "replay": "uv run --with sympy python claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_verifier.py"
+    },
+    "embedded_p3_endpoint_verifier": {
+      "path": "claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_verifier.py",
+      "sha256": "3a1d105e4f875c551a007adde0051b1d856b27406e0e7469ccb29596a5845be7",
+      "source_label": "exact replay script",
+      "used_for": "fresh no-import endpoint reconstruction and exact H31 dependency replays"
+    }
+  },
+  "strata": [
+    {
+      "id": "finite_generic_y0_b_full",
+      "parameter_conditions": "a not in {0,-1,-1/2}; y=0; x0=d",
+      "p4_route": "B_full",
+      "h22_status": "VERIFIED",
+      "evidence": ["half_and_generic_finite_d01", "generic_d01_infinity", "b_full_infinity_replay"]
+    },
+    {
+      "id": "finite_generic_y0_b_drop",
+      "parameter_conditions": "a not in {0,-1,-1/2}; y=0; x0>d",
+      "p4_route": "B_drop",
+      "h22_status": "VERIFIED",
+      "evidence": ["half_and_generic_finite_d01", "generic_d01_infinity", "b_drop_infinity_replay"]
+    },
+    {
+      "id": "finite_generic_negative_y_embedded_p3",
+      "parameter_conditions": "a not in {0,-1,-1/2}; -d<=y<0; x0>=d; all (eps_x,eps_y) in {0,1}^2 realized subject to eps_x=[x0=d], eps_y=[y=-d]",
+      "p4_route": "embedded-P3 support-two tangent closure",
+      "normal_point": "[C:A:B]=[0:c2:c1] with c1*c2!=0",
+      "normal_support_mask": 6,
+      "h22_status": "UNKNOWN",
+      "unmapped_reason": "the normalized/r0 theorems are in a different normal chart; mask-6 cannot yet be transported to the standard 01|23 shared-weight problem while preserving matching and endpoint orientation",
+      "evidence": ["embedded_p3_projective_audit", "embedded_p3_endpoint_verification"]
+    },
+    {
+      "id": "finite_exceptional_a0_a_minus1",
+      "parameter_conditions": "a in {0,-1}; -d<=y<=0; x0>=max(d-R,d+y); every realized residue law, direct y=0 chart, and lower-pair y<0 baseline/wall",
+      "p4_route": "direct exceptional charts for y=0; component-15 support-one lower-pair closure for y<0",
+      "h22_status": "VERIFIED",
+      "evidence": ["exceptional_fibres"]
+    },
+    {
+      "id": "finite_half_centre_y0",
+      "parameter_conditions": "a=-1/2; y=0; x0=d (k!=0 replacement) or x0>d (k=0 degeneration)",
+      "p4_route": "half-centre replacement family",
+      "h22_status": "VERIFIED",
+      "evidence": ["half_and_generic_finite_d01"]
+    },
+    {
+      "id": "finite_half_centre_negative_y_embedded_p3",
+      "parameter_conditions": "a=-1/2; -d<=y<0; x0>=d; all four (eps_x,eps_y) boundary flags",
+      "p4_route": "embedded-P3 support-two tangent closure",
+      "normal_point": "[C:A:B]=[0:c2:c1] with c1*c2!=0",
+      "normal_support_mask": 6,
+      "h22_status": "UNKNOWN",
+      "unmapped_reason": "same mask-6 matching/projective gap as the generic negative-y family",
+      "evidence": ["embedded_p3_projective_audit", "embedded_p3_endpoint_verification"]
+    },
+    {
+      "id": "infinity_lower_pair_embedded_p3",
+      "parameter_conditions": "r<0<d; -d<=y<-r; x0>=d-2r; four (eps_x,eps_l) faces with eps_u=0",
+      "p4_route": "embedded-P3 support-two tangent closure",
+      "normal_point": "[C:A:B]=[0:c2:c1] with c1*c2!=0",
+      "normal_support_mask": 6,
+      "h22_status": "UNKNOWN",
+      "unmapped_reason": "same mask-6 matching/projective gap; the fifth infinity face is excluded here because it is the y=-r component-14 endpoint",
+      "evidence": ["embedded_p3_projective_audit", "embedded_p3_endpoint_verification"]
+    },
+    {
+      "id": "infinity_component14_off_wall",
+      "parameter_conditions": "r<0<d; y=-r; x0>d-2r",
+      "p4_route": "component-14 gamma=0 endpoint",
+      "h22_status": "VERIFIED",
+      "evidence": ["infinity_endpoint_base_audit", "infinity_endpoint_compatibility", "infinity_endpoint_integration"]
+    },
+    {
+      "id": "infinity_component14_on_wall",
+      "parameter_conditions": "r<0<d; y=-r; x0=d-2r",
+      "p4_route": "component-14 gamma=2 endpoint",
+      "h22_status": "VERIFIED",
+      "evidence": ["infinity_endpoint_base_audit"]
+    }
+  ],
+  "embedded_p3_gap": {
+    "actual_wall_normal_derivation": {
+      "planes": ["U1=U2=<e,c1*A-c2*B>", "U3=<e,c1*A+c2*B>"],
+      "normals_in_basis_e_A_B": ["(0,c2,c1)", "(0,-c2,-c1)", "(0,-c2,c1)"],
+      "sign_rectangle_parameter": "[C:A:B]=[0:c2:c1]",
+      "support_mask": 6,
+      "matching": "01|23"
+    },
+    "newly_verified_free_plane_piece": "on the standard normalized normal chart, r0=0 is now covered for t0=0, for t0!=0 with rho*sigma!=0, and for the two t0!=0 homogeneous endpoints",
+    "remaining_gaps": [
+      "a direct weighted-H22 theorem on normal support mask 6, or a matching-preserving transport from mask 6 to a certified chart",
+      "transport of the ordered shared homogeneous weight at both endpoints under any chart change",
+      "an explicit actual-arc free-plane atlas match after the normal-mask/matching issue is solved"
+    ]
+  },
+  "closure_answer": {
+    "does_new_r0_endpoint_verification_alone_close_the_diagonal_dvr_wall": false,
+    "reason": "every still-open actual arc family has normal support mask 6, while the new endpoint theorem closes only the r0=0 free-plane divisor in the standard normalized normal chart; the independently identified mask-6 matching/shared-weight transport gap remains",
+    "would_a_true_full_embedded_p3_projective_obstruction_close_the_remaining_wall": true,
+    "conditions": "it must cover mask 6 directly or by an exact 01|23 matching-preserving, homogeneous-weight-preserving atlas transport, including both projective weight endpoints and all actual free planes"
+  },
+  "limitations": [
+    "coverage audit only; it does not replay every cited mathematical verifier",
+    "restricted to the verified diagonal-source-torus arc classification",
+    "no arbitrary GL4 source changes or arbitrary-order local-to-global reduction",
+    "the global Krenn-Gu conjecture remains unresolved"
+  ]
+}

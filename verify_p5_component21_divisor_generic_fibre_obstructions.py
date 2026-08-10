@@ -3,12 +3,20 @@
 
 from __future__ import annotations
 
-import itertools
-import json
-import shutil
-import subprocess
+import sys
+from pathlib import Path
 
-import sympy as sp
+for _repo_parent in Path(__file__).resolve().parents:
+    if (_repo_parent / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_repo_parent / "src"))
+        break
+else:
+    raise RuntimeError("could not locate repository src directory")
+
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/p5/h22/coincident-support")
 
 from derive_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate import (
     WORDS,
@@ -19,6 +27,16 @@ from verify_p5_h31_marked_basis_open_branch import (
     mixed_matrix,
     one_marked_map,
 )
+
+
+
+import itertools
+import json
+import shutil
+import subprocess
+
+import sympy as sp
+
 
 
 def add(left, right, coefficient=1):

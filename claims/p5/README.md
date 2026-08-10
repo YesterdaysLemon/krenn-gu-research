@@ -3,8 +3,8 @@
 This spine holds the migrated P5 obstruction packages.  The `h31/` and
 `h22/` subtrees contain the component-level packages, while `frontier/`,
 `boundaries/`, and `coordinate-cegar/` contain the separate Stage 29
-ownership forest.  Almost every package under `h31/` and `h22/` is generic:
-it proves that
+ownership forest. The original paired packages under `h31/` and `h22/` are
+generic: they prove that
 the marked `H31` (respectively weighted `H22`) fibre is empty **at the
 generic point of one P4 component's function field** (or on a dense
 open subset of it).  The `h31/embedded-p3/` package is the sole complete
@@ -47,8 +47,8 @@ branch-module QA at `(r,t)=(2,4)`, using `h3=3/8`; it proves neither the
 factor cover nor the generic theorem. The later ordinary-residual theorem
 consumes the complete `lambda=0,1,-1` slices to close the generic finite case
 union, while the leaves' chronological false and residual-`UNKNOWN` fields
-remain leaf-local. The generic core and remaining boundary forest stay at
-root.  The H22
+remain leaf-local. The generic core and remaining boundary forest are
+separately packaged in the H22 subtree with their original statuses. The H22
 `disjoint-mixed-star/` pilot also contains a partial, explicitly scoped
 boundary subtree. The H22 `six-dimensional/` package additionally contains
 the equal-weight `r=1` binary leaf at the generic component function-field
@@ -67,8 +67,8 @@ disjoint-mixed-star H22 boundary subpackages, the component-23 finite
 `lambda=0` and `lambda=1` all-affine-marking H22 leaves,
 and the six-dimensional H22 equal-weight
 normal-form-point leaf, pointwise boundary/divisor closures for these and the
-other components remain elsewhere (mostly still at the repository root) and
-are separate future work.
+other components remain separate obligations; their package location does not
+promote them to complete closures.
 
 Migrating a generic theorem under this spine does not change its
 scope, status, or excluded divisors.  The global Krenn-Gu conjecture
@@ -79,7 +79,7 @@ remains **UNRESOLVED**.
 | directory | contents |
 |---|---|
 | [`h31/`](h31/) | marked-`H31` obstruction packages (31 directories; one complete component-closure forest, one flat three-triple `p+q=0` wall subforest, one three-package rank-one-gate forest, one internal-`E=0` divisor leaf, one toric marked-fibre boundary leaf, one canonical chart-boundary section leaf, one canonical first-plane Schubert-infinity section leaf, and one complete first-plane Schubert-infinity marked-fibre leaf) |
-| [`h22/`](h22/) | weighted-`H22` obstruction packages (20; the disjoint-mixed-star pilot has a partial boundary subtree, six-dimensional also has one equal-weight generic-point leaf, and component twenty-three has separate finite `lambda=0` and `lambda=1` all-affine-marking generic-point leaves) |
+| [`h22/`](h22/) | weighted-`H22` obstruction forest (108 direct package directories; 111 total including nested packages; generic, scoped, partial, candidate, historical, and one neutral disputed-ownership package retain distinct statuses) |
 | [`frontier/`](frontier/) | Stage 29 frontier/reduction forest: 143 moved artifacts, including most of the normalized `q4_211` and `q5_221` ownership closure |
 | [`boundaries/`](boundaries/) | Stage 29 boundary packages: 17 moved artifacts, including the terminal normalized `q5_221` boundary triple |
 | [`coordinate-cegar/`](coordinate-cegar/) | Stage 29 coordinate and bounded-CEGAR packages: 16 moved artifacts, including the `q4_211` coordinate-normal triple |
@@ -134,17 +134,18 @@ conflict unadjudicated.
 Stage 25 (`p5-h22-finite-lambda-one-all-marking-stage25`, mapping
 `611abb78c553a124a4cf02308950ec5ace6c9f5f1e2e727ece7f043f3b1f59ba`)
 migrated the exact component-23 finite `lambda=1` all-affine-marking leaf over
-`Q(r,t)`. The old partial theorem, dense-open supplement, `lambda=0` sibling,
-later ordinary case-union theorem, shared providers, and special/projective/
-source-torus boundary forest remain at root. The leaf's chronological false
+`Q(r,t)`. At that stage the old partial theorem, dense-open supplement,
+`lambda=0` sibling, later ordinary case-union theorem, shared providers, and
+special/projective/source-torus boundary forest remained at root; Stage 31
+later colocated that forest without changing status. The leaf's chronological false
 and residual-`UNKNOWN` fields remain unchanged; the later case union remains
 closed at its stated generic scope. The exact-Q audit at `(2,4)` is QA rather
 than a generic proof, and the global conjecture remains **UNRESOLVED**.
 Stage 26 (`p5-h22-finite-lambda-zero-all-marking-stage26`, mapping
 `06622ad9c8ab149021fd4d3a5c412327db4a28cd2f210d339418d118a7e85131`)
 migrated the separate exact component-23 finite `lambda=0`
-all-affine-marking leaf over `Q(r,t)`. It depends on the root dense-open
-`h2*h3*H0=0` factor cover and closes only those three residual branches. Its
+all-affine-marking leaf over `Q(r,t)`. It depends on the separately packaged
+dense-open `h2*h3*H0=0` factor cover and closes only those three residual branches. Its
 no-repository-import exact-`Q` audit at `(2,4)` uses `h3=3/8` as
 branch-module QA; it does not prove the factor cover or generic theorem. The
 later ordinary-residual theorem consumes `lambda=0,1,-1` and closes the
@@ -170,6 +171,17 @@ outside the Stage 29 forest.  The migration adjudicates none of their statuses
 or ownership conflicts.  Arbitrary P7/local-to-global remains **UNKNOWN**, and
 the global conjecture remains **UNRESOLVED**.
 
+Stage 31 (`p5-h22-root-exit-stage31`, mapping
+`899a1070f1515105f76265c2bfcb80e2316c0d3a623ea9afc53a59940779f2e1`)
+moved 351 H22 artifacts: 311 into coherent claim packages and 40 into the
+neutral `h22/disputed-ownership/p-plus-q-wall/` package. It also extracted
+the exact four-source weighted-H22 contraction used by 39 consumers into
+`src/krenn_gu/p5_weighted_h22_contraction.py`, while retaining the
+Component20 scientific adapter inside its claim package. Candidate, partial,
+superseded, scoped-refuted, open, and verified statuses were not normalized.
+The disputed package records rather than adjudicates ownership; the global
+conjecture remains **UNRESOLVED**.
+
 ## Pairing by underlying P4 family
 
 Where both sides of a component have migrated generic theorems they
@@ -189,12 +201,12 @@ asymmetries (never manufactured symmetry):
 - `six-dimensional` has migrated H31 and H22 generic theorems, and its H22
   package also carries the separately scoped equal-weight generic-point leaf;
   that leaf is not pointwise closure of the full `r=1` divisor;
-- `embedded-p3` now has a complete projective H31 closure package,
-  while its separate weighted-H22 programme remains at root with open
-  projective coverage;
-- `common-active-binary-triangle` now contains only the complete H31
-  diagonal `p+q=0` wall subforest; its remaining H31 siblings and all H22
-  common-active wall work remain separately owned at root;
+- `embedded-p3` has a complete projective H31 closure package, while its
+  separately packaged weighted-H22 programme retains its open projective
+  coverage and other narrower statuses;
+- `common-active-binary-triangle` contains the complete H31 diagonal
+  `p+q=0` wall subforest and a separate H22 forest; the H22 weighted-wall
+  ownership disagreement remains explicit in the neutral disputed package;
 - `internal-e0-marked-fibre`, `toric-marked-fibre`,
   `component-chart-boundary`, `component-fiber-infinity`, and
   `component-fibre-infinity-marked-fibre` are H31-only scoped leaves; they
@@ -206,14 +218,14 @@ asymmetries (never manufactured symmetry):
   and the complete first-plane leaf adds all marked-basis shifts only on that
   same divisor.  Neither first-plane leaf closes the rest of the projective
   boundary or a whole component;
-- `common-center-kernel-star` now has only the separately scoped H22 finite
-  `lambda=0` and `lambda=1` leaves described above; its generic case-union
-  core and boundary forest remain at root, so these are not a matching
-  whole-component generic package;
+- `common-center-kernel-star` includes the separately scoped H22 finite
+  `lambda=0` and `lambda=1` leaves plus its generic case-union and boundary
+  forest; these distinct records do not become a matching whole-component
+  generic package through colocation;
 - `unequal-complement-common-kernel`, `unequal-endpoint-inward-star`, and
-  `split-center-mixed-star` are
-  H31-only in this spine because their H22 work is partial, boundary
-  recursive, or depends on candidate-only evidence;
+  `split-center-mixed-star` now have their H22 partial, recursive, or
+  candidate-dependent evidence under `h22/`; those statuses remain
+  asymmetric with the H31 side;
 - `first-rank-two` is H22-only here; `one-three` / `one-three-components`
   is the additional two-sided Stage 10 pair.
 
@@ -229,9 +241,9 @@ and `lambda=0` all-affine-marking H22 leaves, and the H22 six-dimensional equal-
 normal-form-point leaf, and the exact Stage 29 ownership forest described
 above, the following P5 layers are **not** part of this spine:
 pointwise/divisor closures, unselected boundary obstruction trees,
-exceptional-fibre work, the component19 / component21 / remaining
-component-23 programmes, and the frontier documents
+exceptional-fibre work, the component21 / remaining component-23 programmes,
+and the frontier documents
 (`P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md`,
 `P5_DELTA3_OBLIGATION_LEDGER.md`,
-`P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`), which remain at the
-repository root.
+`P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`), which remain separate from this
+Stage 31 H22 package forest.

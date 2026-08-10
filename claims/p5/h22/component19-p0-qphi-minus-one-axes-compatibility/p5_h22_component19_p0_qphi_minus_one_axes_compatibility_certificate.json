@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "role": "construction",
+  "date_utc": "2026-08-01T16:40:34Z",
+  "git_commit": "3120adce234373c37c66b6810af5e84dcc159231",
+  "claim_label": "CANDIDATE",
+  "scope": "actual ternary weighted-H22 reconstruction on the two p=0, q*phi=-1, Y=0 residual axes",
+  "inputs": {
+    "P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md": "ce333e8605b78e17c2e6b7cfe91fd369e89afe0d3aed65c7df35f82fee319634",
+    "P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_AXES_VERIFICATION.md": "e8d550934d401a8231acae0d7352ef9cfa9319402c920bb2835f7b518b833b16",
+    "P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md": "7d817f91a5a24512e092dca125258ad5a3753bbb97b6199ad2b6c202c9d91965"
+  },
+  "method": "direct source reconstruction, complete shared extension frame, and fixed full two-contraction third-row stack determinants",
+  "command": "uv run --with sympy python claims/p5/h22/component19-p0-qphi-minus-one-axes-compatibility/derive_p5_h22_component19_p0_qphi_minus_one_axes_compatibility_obstruction.py",
+  "parameter_relation": "p=0, q=-1/phi",
+  "parameter_open": "phi*(phi^2-1)*(phi^2+1)!=0",
+  "shared_frame": {
+    "mixed_rank": 5,
+    "rank_witness": {
+      "rows": [2, 9, 10, 12, 15],
+      "columns": [0, 1, 2, 3, 6],
+      "determinant": "1024*(phi^2+1)^2/phi^3"
+    },
+    "vX": ["0", "-1/r", "phi/r", "0", "1", "0", "0", "0"],
+    "vY": ["0", "0", "0", "0", "0", "1", "0", "0"],
+    "vZ": ["0", "-q/r", "1/r", "0", "0", "0", "0", "1"],
+    "r": "q-phi=-(phi^2+1)/phi"
+  },
+  "target_colour_identification": {
+    "alpha": "E1",
+    "beta": "E2",
+    "gamma": "E0",
+    "required_D01_gamma4_coefficient": "lambda0!=0"
+  },
+  "actual_reconstruction_equations": {
+    "contraction_rows": {
+      "D01": [1, 1, 0, 0, 0],
+      "D23": [0, 0, 1, 1, 0]
+    },
+    "per_mode_requirement": "F_i^01(gamma_i)=F_i^23(gamma_i)=0",
+    "stack_shape": [16, 5]
+  },
+  "axes": [
+    {
+      "axis": "X=Y=0",
+      "extension": "Z*vZ",
+      "open": "Z*t!=0",
+      "selected_mode": 0,
+      "stacked_rows": [3, 5, 7, 8, 11],
+      "stacked_determinant": "256*Z^4*phi^4*t*(phi-1)*(phi+1)/(phi^2+1)^3",
+      "stacked_rank": 5,
+      "third_row_kernel": [],
+      "deduction": "gamma0=0, contradicting the nonzero D01 gamma4 diagonal",
+      "actual_ternary_lift_exists": false
+    },
+    {
+      "axis": "Z=Y=0",
+      "extension": "X*vX",
+      "open": "X*t!=0",
+      "selected_mode": 3,
+      "stacked_rows": [5, 6, 7, 8, 13],
+      "stacked_determinant": "256*X^4*phi^4*t*(phi-1)*(phi+1)/(phi^2+1)^3",
+      "stacked_rank": 5,
+      "third_row_kernel": [],
+      "deduction": "gamma3=0, contradicting the nonzero D01 gamma4 diagonal",
+      "actual_ternary_lift_exists": false
+    }
+  ],
+  "higher_degree_gamma_equations_needed": false,
+  "conclusion": "both former one-marked-rank survivors are candidate obstructed by shared third-row compatibility",
+  "finite_field_computation_used": false,
+  "broad_brute_force_used": false,
+  "limitations": [
+    "Construction result remains CANDIDATE pending independent verification.",
+    "Only the two Y=0 residual axes are covered.",
+    "The excluded phi^2=1 and phi^2=-1 fibres, other component boundaries, arbitrary-order reduction, and the global conjecture are not addressed."
+  ]
+}

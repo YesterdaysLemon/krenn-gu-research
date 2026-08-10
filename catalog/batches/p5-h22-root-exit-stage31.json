@@ -1,0 +1,1770 @@
+{
+  "batch_schema_version": 2,
+  "batch_id": "p5-h22-root-exit-stage31",
+  "approved_by": "Codex (exact mapping reviewer under repository-owner standing delegation dated 2026-08-08; Tier-2 owner-directed root-exit authorization dated 2026-08-09)",
+  "approved_at": "2026-08-09",
+  "base_sha": "6f7c7db486685e62a4971841b560d51f194c795d",
+  "manifest_sha256": "070ffbe04edfef1d85a1bf6a4e45a38569a9057f1aafa0265d82d7a2ad2c3b9c",
+  "mapping_sha256": "899a1070f1515105f76265c2bfcb80e2316c0d3a623ea9afc53a59940779f2e1",
+  "source_identity_sha256": "98b91a114acd413552552400ee883ac3ded7ddd07ffeb2bc63981b5128c8a27f",
+  "member_count": 351,
+  "moves": [
+    {
+      "old_path": "P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md",
+      "new_path": "claims/p5/h22/coincident-support/P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md",
+      "source_blob": "1eef4ea9f89307e71cd469ba6adf42a5e409bb24"
+    },
+    {
+      "old_path": "P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_VERIFICATION.md",
+      "new_path": "claims/p5/h22/coincident-support/P5_H22_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION_VERIFICATION.md",
+      "source_blob": "bac6d2d350ca6377b022b4897841cfc7aead9823"
+    },
+    {
+      "old_path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md",
+      "new_path": "claims/p5/h22/common-active-binary-triangle-component-generic/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md",
+      "source_blob": "28aed38f8f5790c52c7fb34f332a0ad14e4bc923"
+    },
+    {
+      "old_path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_VERIFICATION.md",
+      "new_path": "claims/p5/h22/common-active-binary-triangle-component-generic/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_VERIFICATION.md",
+      "source_blob": "7e571d9ae1141e3f9b73ac7667fa9c86a50d51ca"
+    },
+    {
+      "old_path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION_CANDIDATE.md",
+      "new_path": "claims/p5/h22/common-active-binary-triangle-intrinsic-boundary/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION_CANDIDATE.md",
+      "source_blob": "ad6e238d18df82f4797a21722a8f2c47b603665e"
+    },
+    {
+      "old_path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION_VERIFICATION.md",
+      "new_path": "claims/p5/h22/common-active-binary-triangle-intrinsic-boundary/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION_VERIFICATION.md",
+      "source_blob": "dfb55d3e7ce103709382cce950d061df59bf23db"
+    },
+    {
+      "old_path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md",
+      "source_blob": "fe1afd00bdaf7d64399c7be10c15a9387e9bbeb2"
+    },
+    {
+      "old_path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_PARTIAL.md",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_PARTIAL.md",
+      "source_blob": "9f5f4ddaf1584b586e5e595c9340a814a58617e0"
+    },
+    {
+      "old_path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_VERIFICATION.md",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_VERIFICATION.md",
+      "source_blob": "0560c46e43b95941cae0d16917762ec82d20398f"
+    },
+    {
+      "old_path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_B_DROP_FINITE_D23_CANDIDATE.md",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_B_DROP_FINITE_D23_CANDIDATE.md",
+      "source_blob": "4dff3c640bc444867e89f4f04dc82c224c183670"
+    },
+    {
+      "old_path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_B_FULL_INFINITY_FINITE_PAIR_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_B_FULL_INFINITY_FINITE_PAIR_OBSTRUCTION.md",
+      "source_blob": "503f4ee622ca3bfbf304f1591ff6458c746419d6"
+    },
+    {
+      "old_path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_B_FULL_INFINITY_FINITE_PAIR_VERIFICATION.md",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_B_FULL_INFINITY_FINITE_PAIR_VERIFICATION.md",
+      "source_blob": "08324b7fd3167e908adde351a66a0103327a8ffc"
+    },
+    {
+      "old_path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_DIAGONAL_DVR_COVERAGE_AUDIT.md",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_DIAGONAL_DVR_COVERAGE_AUDIT.md",
+      "source_blob": "1cc53c342a741083c18d40316eaf4e9e7bca8fae"
+    },
+    {
+      "old_path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_FIBRES_INDEPENDENT_AUDIT.md",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_FIBRES_INDEPENDENT_AUDIT.md",
+      "source_blob": "4e7253a957031307f01e4f30918818b0fb4b6478"
+    },
+    {
+      "old_path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_FIBRES_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_FIBRES_OBSTRUCTION.md",
+      "source_blob": "d6944687a48f678a54fc3b9b4e46d59cdf7aec1b"
+    },
+    {
+      "old_path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_GENERIC_D01_INFINITY_B_DROP_AUDIT.md",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_GENERIC_D01_INFINITY_B_DROP_AUDIT.md",
+      "source_blob": "3e98d61debdcdd6622899ba4296007db581ccc61"
+    },
+    {
+      "old_path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_GENERIC_D01_INFINITY_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_GENERIC_D01_INFINITY_OBSTRUCTION.md",
+      "source_blob": "a8f174603139914d3eead62f429523aecb97fdd1"
+    },
+    {
+      "old_path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_CANDIDATE.md",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_CANDIDATE.md",
+      "source_blob": "8c2b419687ac0aaf38a969a90192ef53bde40f47"
+    },
+    {
+      "old_path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_COMPATIBILITY_OBSTRUCTION_CANDIDATE.md",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_COMPATIBILITY_OBSTRUCTION_CANDIDATE.md",
+      "source_blob": "6bba2ccaf25509c844d59c782641de1913080cf4"
+    },
+    {
+      "old_path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_COMPATIBILITY_OBSTRUCTION_VERIFICATION.md",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_COMPATIBILITY_OBSTRUCTION_VERIFICATION.md",
+      "source_blob": "62e3471af1cc3b4045a2ec56eb90a003373e6b7e"
+    },
+    {
+      "old_path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_INDEPENDENT_VERIFICATION.md",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_INDEPENDENT_VERIFICATION.md",
+      "source_blob": "a3fb39476a40db4d1f1816848627ec27651745ec"
+    },
+    {
+      "old_path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_INTEGRATION_VERIFICATION.md",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_INTEGRATION_VERIFICATION.md",
+      "source_blob": "3ad65adae21c12fd08cbf78190bcf1be705a69e4"
+    },
+    {
+      "old_path": "P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-finite-all-marking-dense-open-supplement/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md",
+      "source_blob": "2febc95fd2f1182965ec2408b3114358d512c8df"
+    },
+    {
+      "old_path": "P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ORDINARY_F_H2_ZERO_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-finite-ordinary-f-h2-zero/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ORDINARY_F_H2_ZERO_OBSTRUCTION.md",
+      "source_blob": "6597c96268fd7091aa25bb8ea9628347327c33fd"
+    },
+    {
+      "old_path": "P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ORDINARY_RESIDUAL_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-finite-ordinary-residual/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ORDINARY_RESIDUAL_OBSTRUCTION.md",
+      "source_blob": "ccb1a6a131dedce9946e04655ec0e40d52e1ecfb"
+    },
+    {
+      "old_path": "P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-k-infinity-all-pair-boundary/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md",
+      "source_blob": "06ad85dc946ea924c4eb997db80d11ce9f1fb51c"
+    },
+    {
+      "old_path": "P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md",
+      "new_path": "claims/p5/h22/common-center-kernel-star/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_PARTIAL.md",
+      "source_blob": "708190c1db058dfd074d0e6fac4e1449f156c7ff"
+    },
+    {
+      "old_path": "P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_T_DIVISOR_SYMMETRY_TRANSFER.md",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-r-t-divisor-symmetry-transfer/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_T_DIVISOR_SYMMETRY_TRANSFER.md",
+      "source_blob": "bc3b25fc18acd00a317b0c04e14b1a6e1169df5f"
+    },
+    {
+      "old_path": "P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_AFFINE_CONSTANT_PROFILE_OPEN_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-r-zero-affine-constant-profile-open/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_AFFINE_CONSTANT_PROFILE_OPEN_OBSTRUCTION.md",
+      "source_blob": "faaf0299ad7a74b0a9d016f0d4599a178cb8e7b5"
+    },
+    {
+      "old_path": "P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-r-zero-divisor/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_DIVISOR_GENERIC_OBSTRUCTION.md",
+      "source_blob": "437f276ca4c7ffb0e8b4c8bbab9994fb050ec253"
+    },
+    {
+      "old_path": "P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_T_PLUS_MINUS_ONE_SPECIAL_ALL_PAIR_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-r-zero-t-plus-minus-one-special-all-pair/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_T_PLUS_MINUS_ONE_SPECIAL_ALL_PAIR_OBSTRUCTION.md",
+      "source_blob": "6eaf6d32e5ec036bdab894e53a02a1d435b2fc29"
+    },
+    {
+      "old_path": "P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_COORDINATE_SURVIVOR.md",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-coordinate-survivor/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_COORDINATE_SURVIVOR.md",
+      "source_blob": "3679d1eddef920cd6c6c9d6254022918e8376b65"
+    },
+    {
+      "old_path": "P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_GENERIC_INTERIOR_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-generic-interior/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_GENERIC_INTERIOR_OBSTRUCTION.md",
+      "source_blob": "7ed491df9caef1da6ceeee010bf28d32cd6e55c0"
+    },
+    {
+      "old_path": "P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_PROJECTIVE_WEIGHT_COORDINATE_DIVISORS_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-projective-weight-coordinate-divisors/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_PROJECTIVE_WEIGHT_COORDINATE_DIVISORS_OBSTRUCTION.md",
+      "source_blob": "175730e668646c8f6fb07c67d8d1831b72f78178"
+    },
+    {
+      "old_path": "P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_RT_ONE_ALL_PAIR_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-rt-one-all-pair/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_RT_ONE_ALL_PAIR_OBSTRUCTION.md",
+      "source_blob": "a9c3d8a19120417fc59fec474fa142ef2960acc5"
+    },
+    {
+      "old_path": "P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_R_T_COORDINATE_SYMMETRY_TRANSFER.md",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-r-t-coordinate-symmetry-transfer/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_R_T_COORDINATE_SYMMETRY_TRANSFER.md",
+      "source_blob": "80d21b494647284937465f78733e52ad0bcb166d"
+    },
+    {
+      "old_path": "P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-s-zero-rt-one-all-pair/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md",
+      "source_blob": "2be3da1da05e426d4e196b08b6c5df9b880e5868"
+    },
+    {
+      "old_path": "P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md",
+      "new_path": "claims/p5/h22/common-kernel-vertical-triangle-component-generic/P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md",
+      "source_blob": "1fc4b2b91a877230f27393b0b2ddaab728140ed9"
+    },
+    {
+      "old_path": "P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_VERIFICATION.md",
+      "new_path": "claims/p5/h22/common-kernel-vertical-triangle-component-generic/P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_VERIFICATION.md",
+      "source_blob": "d765724ea76efcb5c4abd60711b5b779d705d997"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_P0_FINITE_BOUNDARY_GEOMETRY_RECONNAISSANCE.md",
+      "new_path": "claims/p5/h22/component19-p0-finite-boundary-geometry-reconnaissance/P5_H22_COMPONENT19_P0_FINITE_BOUNDARY_GEOMETRY_RECONNAISSANCE.md",
+      "source_blob": "52188b25dd18f965ace3a28a08f72772e6fe40ed"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md",
+      "new_path": "claims/p5/h22/component19-p0-finite-ordinary-aggregate/P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md",
+      "source_blob": "3a0ce6d4208c02d8c1f10abeafd33cc17d326ae9"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md",
+      "new_path": "claims/p5/h22/component19-p0-ordinary-boundary/P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md",
+      "source_blob": "577c189cc05663f0a43cb7a2380fe0d205c155b6"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md",
+      "new_path": "claims/p5/h22/component19-p0-ordinary-obstruction-open/P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md",
+      "source_blob": "ef5bcadb6925e5714990d5f98bff0b9639148458"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_P0_ORDINARY_OPEN_PROOF_B.md",
+      "new_path": "claims/p5/h22/component19-p0-ordinary-open-proof-b/P5_H22_COMPONENT19_P0_ORDINARY_OPEN_PROOF_B.md",
+      "source_blob": "a9bdcab8a2c827fe30ca364d043e6c7bdea17e16"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_P0_PHI_ENDPOINTS_NO_IMPORT_VERIFICATION.md",
+      "new_path": "claims/p5/h22/component19-p0-phi-endpoints-no-import/P5_H22_COMPONENT19_P0_PHI_ENDPOINTS_NO_IMPORT_VERIFICATION.md",
+      "source_blob": "c67a5c15149e498fc48bc472665decd09919fb76"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_P0_PHI_PM_ONE_ORDINARY_OBSTRUCTION_CANDIDATE.md",
+      "new_path": "claims/p5/h22/component19-p0-phi-pm-one-ordinary/P5_H22_COMPONENT19_P0_PHI_PM_ONE_ORDINARY_OBSTRUCTION_CANDIDATE.md",
+      "source_blob": "934e9194decf04300e59cfe1eb2bbed433bbdf79"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_P0_QPHI1_PROOF_B.md",
+      "new_path": "claims/p5/h22/component19-p0-qphi1-proof-b/P5_H22_COMPONENT19_P0_QPHI1_PROOF_B.md",
+      "source_blob": "6295bad361cb2ae69e30c1c09c48198583a5d93a"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_P0_QPHIM1_AXIS_TARGET_LOCAL_PROOF_B.md",
+      "new_path": "claims/p5/h22/component19-p0-qphim1-axis-target-local-proof-b/P5_H22_COMPONENT19_P0_QPHIM1_AXIS_TARGET_LOCAL_PROOF_B.md",
+      "source_blob": "a8cede6de4703d5ecef90b777aba2360f91fdbcd"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md",
+      "new_path": "claims/p5/h22/component19-p0-qphim1-infinity-no-import/P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md",
+      "source_blob": "441a64a55f6b653154bcdcb30a6b656f5649f0cb"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_AXES_COMPATIBILITY_OBSTRUCTION_CANDIDATE.md",
+      "new_path": "claims/p5/h22/component19-p0-qphi-minus-one-axes-compatibility/P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_AXES_COMPATIBILITY_OBSTRUCTION_CANDIDATE.md",
+      "source_blob": "9b391657380d487fc884c65dde939682f9a83895"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_AXES_VERIFICATION.md",
+      "new_path": "claims/p5/h22/component19-p0-qphi-minus-one-axes/P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_AXES_VERIFICATION.md",
+      "source_blob": "6fe28d8539d26256339fd396d57516ab62279c56"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_PHI_ENDPOINTS_VERIFICATION.md",
+      "new_path": "claims/p5/h22/component19-p0-qphi-minus-one-phi-endpoints/P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_PHI_ENDPOINTS_VERIFICATION.md",
+      "source_blob": "b5bd0c86804a2db29a6a4d0d0608f3b838c619e2"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_TERNARY_COMPATIBILITY_OBSTRUCTION_VERIFICATION.md",
+      "new_path": "claims/p5/h22/component19-p0-qphi-minus-one-ternary-compatibility/P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_TERNARY_COMPATIBILITY_OBSTRUCTION_VERIFICATION.md",
+      "source_blob": "790093aea29cf1123b0c7c0b1bb20f889ace5094"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_WEIGHT_INFINITY_OBSTRUCTION_CANDIDATE.md",
+      "new_path": "claims/p5/h22/component19-p0-qphi-minus-one-weight-infinity/P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_WEIGHT_INFINITY_OBSTRUCTION_CANDIDATE.md",
+      "source_blob": "74406ab7956c041ff7acdbf42d5445569ce04bee"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_P0_QPHI_ONE_INDEPENDENT_VERIFICATION.md",
+      "new_path": "claims/p5/h22/component19-p0-qphi-one-independent/P5_H22_COMPONENT19_P0_QPHI_ONE_INDEPENDENT_VERIFICATION.md",
+      "source_blob": "e6aaddaf5bf119cf40fd2078d14f0b2c882f6032"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_P0_QPHI_ONE_ORDINARY_OBSTRUCTION_CANDIDATE.md",
+      "new_path": "claims/p5/h22/component19-p0-qphi-one-ordinary/P5_H22_COMPONENT19_P0_QPHI_ONE_ORDINARY_OBSTRUCTION_CANDIDATE.md",
+      "source_blob": "083ec2f47a7d43ce5cb9282bf8f27b3ea34e61e9"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_P0_Q_ENDPOINTS_NO_IMPORT_VERIFICATION.md",
+      "new_path": "claims/p5/h22/component19-p0-q-endpoints-no-import/P5_H22_COMPONENT19_P0_Q_ENDPOINTS_NO_IMPORT_VERIFICATION.md",
+      "source_blob": "e6c0af894f2b7851a9e57e50b930f3eb535bd0c2"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_P0_Q_ENDPOINTS_TARGET_LOCAL_CANDIDATE.md",
+      "new_path": "claims/p5/h22/component19-p0-q-endpoints-target-local/P5_H22_COMPONENT19_P0_Q_ENDPOINTS_TARGET_LOCAL_CANDIDATE.md",
+      "source_blob": "90bff5c06ef0a4c1dc65617092a496a6c30744d6"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_Q0_PHI_ENDPOINTS_OBSTRUCTION_CANDIDATE.md",
+      "new_path": "claims/p5/h22/component19-q0-phi-endpoints/P5_H22_COMPONENT19_Q0_PHI_ENDPOINTS_OBSTRUCTION_CANDIDATE.md",
+      "source_blob": "52755bc35eef044e9da1ae3e892c5e5a81583e61"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_Q0_PHI_ENDPOINTS_OBSTRUCTION_VERIFICATION.md",
+      "new_path": "claims/p5/h22/component19-q0-phi-endpoints/P5_H22_COMPONENT19_Q0_PHI_ENDPOINTS_OBSTRUCTION_VERIFICATION.md",
+      "source_blob": "417a899ea68f760986620fdd80d15d568f1bbb64"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_Q0_PHI_ENDPOINTS_PROOF_B.md",
+      "new_path": "claims/p5/h22/component19-q0-phi-endpoints-proof-b/P5_H22_COMPONENT19_Q0_PHI_ENDPOINTS_PROOF_B.md",
+      "source_blob": "015fed3d5a667e7399c70662ae047d3e87752f56"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_OBSTRUCTION_CANDIDATE.md",
+      "new_path": "claims/p5/h22/component19-q0-special-divisor/P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_OBSTRUCTION_CANDIDATE.md",
+      "source_blob": "fee455a55165623fc0b1171f86f9a79032819b26"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_OBSTRUCTION_VERIFICATION.md",
+      "new_path": "claims/p5/h22/component19-q0-special-divisor/P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_OBSTRUCTION_VERIFICATION.md",
+      "source_blob": "cc34d02e699b49c8c9adf4a4aeb04d69a6697b50"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_PROOF_B.md",
+      "new_path": "claims/p5/h22/component19-q0-special-divisor-proof-b/P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_PROOF_B.md",
+      "source_blob": "27ba82aebcbeba36f35fa8d6a1505801c0f859de"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_Q_EQUALS_PHI_DIVISOR_PROOF_B.md",
+      "new_path": "claims/p5/h22/component19-q-equals-phi-divisor-proof-b/P5_H22_COMPONENT19_Q_EQUALS_PHI_DIVISOR_PROOF_B.md",
+      "source_blob": "ad22719106db29d5eca8ec9017a09faccc443f70"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md",
+      "new_path": "claims/p5/h22/component19-q-equals-phi/P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md",
+      "source_blob": "31177d2e5beb467bde79bc7569d25474f77bd7be"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_Q_EQ_PHI_FIRST_NORMAL_NO_IMPORT_VERIFICATION.md",
+      "new_path": "claims/p5/h22/component19-q-eq-phi-first-normal-no-import/P5_H22_COMPONENT19_Q_EQ_PHI_FIRST_NORMAL_NO_IMPORT_VERIFICATION.md",
+      "source_blob": "d0981817c65774400412b478a316c902a91bb2a8"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_Q_EQ_PHI_SPECIAL_DIVISOR_OBSTRUCTION_CANDIDATE.md",
+      "new_path": "claims/p5/h22/component19-q-eq-phi-special-divisor/P5_H22_COMPONENT19_Q_EQ_PHI_SPECIAL_DIVISOR_OBSTRUCTION_CANDIDATE.md",
+      "source_blob": "cad5707d500af3dfeb8b235863507bf82e8d06cb"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_Z0_LAURENT_FIELD_NO_IMPORT_VERIFICATION.md",
+      "new_path": "claims/p5/h22/component19-z0-laurent-field-no-import/P5_H22_COMPONENT19_Z0_LAURENT_FIELD_NO_IMPORT_VERIFICATION.md",
+      "source_blob": "18bfdab9d094c468af5ac4b09d4d3ab5a7c37646"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_ZERO_BASE_FIRST_NORMAL_CANDIDATE.md",
+      "new_path": "claims/p5/h22/component19-zero-base-first-normal/P5_H22_COMPONENT19_ZERO_BASE_FIRST_NORMAL_CANDIDATE.md",
+      "source_blob": "7fd0b35e8c1c19ff053e4f980f640da44e60d465"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_ZERO_BASE_NORMAL_CONE_PROOF_B.md",
+      "new_path": "claims/p5/h22/component19-zero-base-normal-cone-proof-b/P5_H22_COMPONENT19_ZERO_BASE_NORMAL_CONE_PROOF_B.md",
+      "source_blob": "dc831f28477f5d6d03f096550c95bbcae1813b77"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_ZERO_BASE_VALUATIVE_FINITE_COVER_CANDIDATE.md",
+      "new_path": "claims/p5/h22/component19-zero-base-valuative-finite-cover/P5_H22_COMPONENT19_ZERO_BASE_VALUATIVE_FINITE_COVER_CANDIDATE.md",
+      "source_blob": "a6f5d9cf490d88cb4adb644888e97466be7ec4e5"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT19_ZERO_BASE_VALUATIVE_REDUCTION_VERIFICATION.md",
+      "new_path": "claims/p5/h22/component19-zero-base-valuative-reduction/P5_H22_COMPONENT19_ZERO_BASE_VALUATIVE_REDUCTION_VERIFICATION.md",
+      "source_blob": "1dcb249550c66dc230031fae6dd1c9a6cac15e1b"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT23_S_ZERO_K_INFINITY_ANTIDIAGONAL_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/component23-s-zero-k-infinity-antidiagonal/P5_H22_COMPONENT23_S_ZERO_K_INFINITY_ANTIDIAGONAL_OBSTRUCTION.md",
+      "source_blob": "cd545dc3de108ca0cd5aaf1989c1fe9d78ce82f4"
+    },
+    {
+      "old_path": "P5_H22_COMPONENT23_S_ZERO_K_INFINITY_UNIT_PARAMETER_LINES_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/component23-s-zero-k-infinity-unit-parameter-lines/P5_H22_COMPONENT23_S_ZERO_K_INFINITY_UNIT_PARAMETER_LINES_OBSTRUCTION.md",
+      "source_blob": "2902909562e51480440a6f427eb79be13be32499"
+    },
+    {
+      "old_path": "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "source_blob": "9b12c55c82360ce2e017d6fe8eddac577e30b05c"
+    },
+    {
+      "old_path": "P5_H22_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md",
+      "source_blob": "d6e8f1d724c413067d7a15c3f0c701649238979d"
+    },
+    {
+      "old_path": "P5_H22_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_VERIFICATION.md",
+      "new_path": "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_VERIFICATION.md",
+      "source_blob": "d465f896e48e5dad60e566719aadce224e7c38a2"
+    },
+    {
+      "old_path": "P5_H22_EMBEDDED_P3_COMPONENT_PROJECTIVE_COVERAGE_BOUNDARY.md",
+      "new_path": "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_PROJECTIVE_COVERAGE_BOUNDARY.md",
+      "source_blob": "06dc4526d67a6325a88f37692f0735f03fd5964e"
+    },
+    {
+      "old_path": "P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md",
+      "source_blob": "6b49d8d70448a1fb47a1bdab8fe34b358c618c44"
+    },
+    {
+      "old_path": "P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md",
+      "source_blob": "c37cd9e91309dfc339bf51fd5fb6ba4994a95c81"
+    },
+    {
+      "old_path": "P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION_CANDIDATE.md",
+      "new_path": "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION_CANDIDATE.md",
+      "source_blob": "f9201e346cf384a599ef523906f8ea46963aad52"
+    },
+    {
+      "old_path": "P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_VERIFICATION.md",
+      "new_path": "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_VERIFICATION.md",
+      "source_blob": "f8696a13fda628e10bdf832b58ac0e2356ff624e"
+    },
+    {
+      "old_path": "P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_T_NONZERO_WEIGHT_ENDPOINTS_OBSTRUCTION_CANDIDATE.md",
+      "new_path": "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_T_NONZERO_WEIGHT_ENDPOINTS_OBSTRUCTION_CANDIDATE.md",
+      "source_blob": "5864a03d3921b9de05c01bc23dc1dc2757762cf4"
+    },
+    {
+      "old_path": "P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_T_NONZERO_WEIGHT_ENDPOINTS_VERIFICATION.md",
+      "new_path": "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_T_NONZERO_WEIGHT_ENDPOINTS_VERIFICATION.md",
+      "source_blob": "b69c4549a112fa4fc439f29f6f1ea34ad17d0185"
+    },
+    {
+      "old_path": "P5_H22_P_PLUS_Q_DIAGONAL_DVR_MASK6_ACTUAL_FREE_PLANES_INDEPENDENT_VERIFICATION.md",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_P_PLUS_Q_DIAGONAL_DVR_MASK6_ACTUAL_FREE_PLANES_INDEPENDENT_VERIFICATION.md",
+      "source_blob": "03f43d37238e40e03f58a25c51b3ef41d663424f"
+    },
+    {
+      "old_path": "P5_H22_P_PLUS_Q_DIAGONAL_DVR_MASK6_ACTUAL_FREE_PLANES_OBSTRUCTION_CANDIDATE.md",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_P_PLUS_Q_DIAGONAL_DVR_MASK6_ACTUAL_FREE_PLANES_OBSTRUCTION_CANDIDATE.md",
+      "source_blob": "658e292c0b4b4d8d8eb06e1a11fcf99ea652b02d"
+    },
+    {
+      "old_path": "P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/two-rank-two-spoke-mixed-star/P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md",
+      "source_blob": "16eda1827956e608cf51652c0b6ea9b296c42c65"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D01_PAIR_ORBIT_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d01-pair-orbit/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D01_PAIR_ORBIT_OBSTRUCTION.md",
+      "source_blob": "cbe83efc1cffda6398b0717467b13bd8362e67a6"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_F2_F7_INTERSECTION_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-f2-f7-intersection/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_F2_F7_INTERSECTION_OBSTRUCTION.md",
+      "source_blob": "7b55b6b609133216a6e3c12e2191660d1eefaede"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_F2_F8_H3_SLOPE_INTERSECTION_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-f2-f8-h3-slope-intersection/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_F2_F8_H3_SLOPE_INTERSECTION_OBSTRUCTION.md",
+      "source_blob": "33ad500c0aaa8d55d1083a5e04110bf221795447"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_COFACTOR_OPEN_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-h0-nonzero-residual-cofactor-open/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_COFACTOR_OPEN_OBSTRUCTION.md",
+      "source_blob": "03862a6209eb39be941bde0296574bbf5f632353"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_SECOND_COFACTOR_COVER_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-h0-nonzero-residual-second-cofactor-cover/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_NONZERO_RESIDUAL_SECOND_COFACTOR_COVER_OBSTRUCTION.md",
+      "source_blob": "d81cd486a8b2e02fc8bbd9941cb621860d9f914f"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-h0-zero-residual/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H0_ZERO_RESIDUAL_OBSTRUCTION.md",
+      "source_blob": "2d0f58add3b8a6296637bf956c0598a890a9bb75"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_H2_ZERO_PARTIAL_CLOSURE.md",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-h1-nonzero-h2-zero-partial-closure/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_H2_ZERO_PARTIAL_CLOSURE.md",
+      "source_blob": "a324bb67d364ed2a1a2e25585cab8ed55d371eb1"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_TWO_MINOR_FACTOR_COVER_PARTIAL_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-h1-nonzero-two-minor-factor-cover-partial/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_TWO_MINOR_FACTOR_COVER_PARTIAL_OBSTRUCTION.md",
+      "source_blob": "cc534412deb28980731fb592e0e8abb681f76ca3"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2R1_RESIDUAL_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-h2r1-residual/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2R1_RESIDUAL_OBSTRUCTION.md",
+      "source_blob": "d1ae1d568820f30e93369e25daf1aa1d535e738f"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_SIX_BY_SIX_TERMINAL_REDUCTION.md",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-h2-zero-six-by-six-terminal/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_SIX_BY_SIX_TERMINAL_REDUCTION.md",
+      "source_blob": "d770ba00073b068351aab91c5b2156252e42f5ba"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_TERMINAL_COMPLETE_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-h2-zero-terminal-complete/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2_ZERO_TERMINAL_COMPLETE_OBSTRUCTION.md",
+      "source_blob": "0f9e355b804477d847b17133069a12ef0b9c4ad2"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-pair-orbit-partial/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md",
+      "source_blob": "fe49a3733e64e10166cb86c21e016888a0256181"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_MINUS_ONE_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-rho-minus-one/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_MINUS_ONE_OBSTRUCTION.md",
+      "source_blob": "27234a28ca44b451b1e9c838dc26647cd1909f6b"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_E_ZERO_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-rho-zero-e-zero/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_E_ZERO_OBSTRUCTION.md",
+      "source_blob": "76fdb64eff825db1a2cad25b403002c37b92863f"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_H1_NONZERO_SUPPLEMENT.md",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-rho-zero-h1-nonzero-supplement/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_RHO_ZERO_H1_NONZERO_SUPPLEMENT.md",
+      "source_blob": "d049ab9ed2df257c0bc4ab1070ff836ee33a4956"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_SURVIVOR_RECONNAISSANCE.md",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-survivor-reconnaissance/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_SURVIVOR_RECONNAISSANCE.md",
+      "source_blob": "aa999c83ca3d4f89f7287df1aadaa71c7266fd48"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_GENERIC_OBSTRUCTION.md",
+      "source_blob": "1c7eb1a65fc2c52fa5b7c7dab825c46a81ec0d76"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_SURVIVOR.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_SURVIVOR.md",
+      "source_blob": "51bf5e9d8cb0ef902854bc15ee53ac589af0cd23"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_TERNARY_FALSE_POSITIVE.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_DIVISOR_TERNARY_FALSE_POSITIVE.md",
+      "source_blob": "6e886289c3302ea7a34f0b743545d3a5ae29d4d6"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_WEIGHT_COVER.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-weight-cover/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_EXCEPTIONAL_WEIGHT_COVER.md",
+      "source_blob": "4b5894341d2fd7e05f2dec2c741d4fd5116776a7"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_GENERIC_WEIGHT_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-generic-weight/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_GENERIC_WEIGHT_OBSTRUCTION.md",
+      "source_blob": "a67400ac69b030b5c1bdc04aec3f065a7ddd4472"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_LINEAR_REDUCTION.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-linear/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_A_LINEAR_REDUCTION.md",
+      "source_blob": "197c92b1465255a3242a0166618fbcb7328df7f2"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A0_COMPANION_DIVISOR_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A0_COMPANION_DIVISOR_OBSTRUCTION.md",
+      "source_blob": "d8c9344988940cdaed571f86ee59579d7ff261c7"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A2_ZERO_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_A2_ZERO_OBSTRUCTION.md",
+      "source_blob": "e1f27c4e4d7255a038fb71526b4b8b427d26beb6"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_ALGEBRAIC_FALSE_POSITIVE.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_ALGEBRAIC_FALSE_POSITIVE.md",
+      "source_blob": "aadcbc382252133ac903233d180ba645fcd1f541"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_SPARSE_COVER_NON_W_BRANCHES_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_SPARSE_COVER_NON_W_BRANCHES_OBSTRUCTION.md",
+      "source_blob": "d0ba755f71187386928a3ae3fa236274525b3d9a"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_SPARSE_TWO_MINOR_COVER.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_SPARSE_TWO_MINOR_COVER.md",
+      "source_blob": "cf321e7b0172c4ac032ae15c8ef09a0ef8cd12a1"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_W_ZERO_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_D23_W_ZERO_OBSTRUCTION.md",
+      "source_blob": "83c35834e78248bbe20f44f08ac2a419ab6ca627"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_E1_J2_SLICE_COMPLETE_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_E1_J2_SLICE_COMPLETE_OBSTRUCTION.md",
+      "source_blob": "a1feb21efc28b1eddb372430ae0d8009a91f6012"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_GENERIC_FALSE_POSITIVE.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_GENERIC_FALSE_POSITIVE.md",
+      "source_blob": "d7b0963e4609d28efb424daa044f3cba774813aa"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_LINEAR_SOLVE_DIVISORS_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_LINEAR_SOLVE_DIVISORS_OBSTRUCTION.md",
+      "source_blob": "70b3f6c43180ba98658e079a981bd354cdc63bc4"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_OPPOSITE_DIAGONAL_DIVISOR.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_EXCEPTIONAL_WEIGHT_OPPOSITE_DIAGONAL_DIVISOR.md",
+      "source_blob": "80fdf0151b6960e828e686a0682d0a3581e293e2"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_FULL_FIELD_GENERIC_WEIGHT_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_FULL_FIELD_GENERIC_WEIGHT_OBSTRUCTION.md",
+      "source_blob": "0ebddef614094018ddbd09798153873177dc71ee"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_GENERIC_OBSTRUCTION.md",
+      "source_blob": "e05b0d450258899d007bf1cf1ff109c7e0dd55ef"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_T_ZERO_AND_H_BOUNDARY_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_BRANCH_B_T_ZERO_AND_H_BOUNDARY_OBSTRUCTION.md",
+      "source_blob": "c01d9831505b8d12fb836bfa2ae3c329ec342b8c"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_LAMBDA_MINUS_ONE_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-lambda-minus-one/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_LAMBDA_MINUS_ONE_OBSTRUCTION.md",
+      "source_blob": "749e5f2b9838fe1a245e50f4603ad119d9b4de48"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_RESIDUAL_FACTOR_COVER.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-residual-factor-cover/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_RESIDUAL_FACTOR_COVER.md",
+      "source_blob": "d8247d85598bd14ca31d968a18b1c06ccbbc78f8"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d23-factor-cover/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md",
+      "source_blob": "5f7f2987e47a1d722327b11cbb24991ea65f4f68"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_LAMBDA_ONE_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d23-lambda-one/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_LAMBDA_ONE_OBSTRUCTION.md",
+      "source_blob": "990c51ac2ca60b28cb0f865a68487daaffd4939f"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PARTIAL.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PARTIAL.md",
+      "source_blob": "f5d01e96be9b3f649803eb29054eea10ba91d2c7"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_ES_MINUS_ONE_D01_WEIGHT_CLOSURE.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-projective-g-zero-es-minus-one-d01-weight-closure/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_ES_MINUS_ONE_D01_WEIGHT_CLOSURE.md",
+      "source_blob": "ab9b980f4ad054ee77a61bd7ff25ae662e967185"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_ES_ONE_D01_GENERIC_WEIGHT_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-projective-g-zero-es-one-d01-generic-weight/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_ES_ONE_D01_GENERIC_WEIGHT_OBSTRUCTION.md",
+      "source_blob": "4a725a28ecdb93f59c8d8801156257c809e2ef7a"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_GENERIC_D23_AFFINE_LINE_RANK_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-projective-g-zero-generic-d23-affine-line-rank/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_GENERIC_D23_AFFINE_LINE_RANK_OBSTRUCTION.md",
+      "source_blob": "656bcb00f0bce89c16d8664515de2fba60d35c53"
+    },
+    {
+      "old_path": "P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_K_ZERO_GENERIC_D23_RANK_OBSTRUCTION.md",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-projective-g-zero-k-zero-generic-d23-rank/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PROJECTIVE_G_ZERO_K_ZERO_GENERIC_D23_RANK_OBSTRUCTION.md",
+      "source_blob": "78976f591d3425240249434765966cd6021a9c7c"
+    },
+    {
+      "old_path": "audit_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py",
+      "new_path": "claims/p5/h22/coincident-support/audit_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py",
+      "source_blob": "09c76dec8a4f538663621e7a7ae4495a23ebbfeb"
+    },
+    {
+      "old_path": "audit_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py",
+      "new_path": "claims/p5/h22/common-active-binary-triangle-component-generic/audit_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py",
+      "source_blob": "44a39fbd0c960300472e8adb9c5bb703d6e7b529"
+    },
+    {
+      "old_path": "audit_p5_h22_common_active_binary_triangle_intrinsic_boundary_obstruction_candidate.py",
+      "new_path": "claims/p5/h22/common-active-binary-triangle-intrinsic-boundary/audit_p5_h22_common_active_binary_triangle_intrinsic_boundary_obstruction_candidate.py",
+      "source_blob": "72208794067dc39916ef6df5c4731dad98dc9e5d"
+    },
+    {
+      "old_path": "audit_p5_h22_common_active_binary_triangle_p_plus_q_b_full_infinity_finite_pair_verifier.py",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_b_full_infinity_finite_pair_verifier.py",
+      "source_blob": "b3fe1fe75a2e77962861175a828b6cf78cc5ef1a"
+    },
+    {
+      "old_path": "audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py",
+      "source_blob": "8ba093dcac251498bd296e141ff08d275ffdc0e3"
+    },
+    {
+      "old_path": "audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_partial.py",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_partial.py",
+      "source_blob": "b1f07352cdc9d76f4b6a6de3b85dc681ecf68332"
+    },
+    {
+      "old_path": "audit_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_independent.py",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_independent.py",
+      "source_blob": "838fea595d2404a886c0d3b9c66affb3a51c0cd2"
+    },
+    {
+      "old_path": "audit_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_obstruction.py",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_obstruction.py",
+      "source_blob": "2e3c22ed21a074cc66b3f0f61d24d4c205894299"
+    },
+    {
+      "old_path": "audit_p5_h22_common_active_binary_triangle_p_plus_q_generic_d01_infinity_b_drop.py",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_generic_d01_infinity_b_drop.py",
+      "source_blob": "7a33f8e644bcdff01be5daa0d689b883d1b0baa5"
+    },
+    {
+      "old_path": "audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_candidate_verifier.py",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_candidate_verifier.py",
+      "source_blob": "e8d2027998524d7d9e38647ee383eb0e8bfcd169"
+    },
+    {
+      "old_path": "audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_compatibility_obstruction_verifier.py",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_compatibility_obstruction_verifier.py",
+      "source_blob": "1c7a113e243345da65a651f1c8e322a2ba6f00e5"
+    },
+    {
+      "old_path": "audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_integration_verifier.py",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_integration_verifier.py",
+      "source_blob": "89231e3c58e5cb4ca0989be9286687f9d0b0e9e3"
+    },
+    {
+      "old_path": "audit_p5_h22_common_center_kernel_star_component_finite_all_marking_dense_open_supplement.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-finite-all-marking-dense-open-supplement/audit_p5_h22_common_center_kernel_star_component_finite_all_marking_dense_open_supplement.py",
+      "source_blob": "ffba62daa3219f6425a112981266be0c75e20928"
+    },
+    {
+      "old_path": "audit_p5_h22_common_center_kernel_star_component_finite_ordinary_F_h2_zero_obstruction.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-finite-ordinary-f-h2-zero/audit_p5_h22_common_center_kernel_star_component_finite_ordinary_F_h2_zero_obstruction.py",
+      "source_blob": "7d96d62adea4c3b70c19f4787e4fdcec9a37d9f5"
+    },
+    {
+      "old_path": "audit_p5_h22_common_center_kernel_star_component_finite_ordinary_residual_obstruction.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-finite-ordinary-residual/audit_p5_h22_common_center_kernel_star_component_finite_ordinary_residual_obstruction.py",
+      "source_blob": "05f64d85af3146877e5b61e493f3690b10e0b8ed"
+    },
+    {
+      "old_path": "audit_p5_h22_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-k-infinity-all-pair-boundary/audit_p5_h22_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py",
+      "source_blob": "05b1d59af6853658010745b22ea57a55cfd78aeb"
+    },
+    {
+      "old_path": "audit_p5_h22_common_center_kernel_star_component_partial.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star/audit_p5_h22_common_center_kernel_star_component_partial.py",
+      "source_blob": "8aee99919d9646fa4da73e4b2d93487371b78a69"
+    },
+    {
+      "old_path": "audit_p5_h22_common_center_kernel_star_component_r_t_divisor_symmetry_transfer.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-r-t-divisor-symmetry-transfer/audit_p5_h22_common_center_kernel_star_component_r_t_divisor_symmetry_transfer.py",
+      "source_blob": "b6318560df52fa2b46f2c93532eba74bd257f425"
+    },
+    {
+      "old_path": "audit_p5_h22_common_center_kernel_star_component_r_zero_affine_constant_profile_open_obstruction.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-r-zero-affine-constant-profile-open/audit_p5_h22_common_center_kernel_star_component_r_zero_affine_constant_profile_open_obstruction.py",
+      "source_blob": "a7f61377aee46c9019f7f1a22aa812c642738f10"
+    },
+    {
+      "old_path": "audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-r-zero-divisor/audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py",
+      "source_blob": "65d5ae689352779663c3316f1cc5e5d420199dc7"
+    },
+    {
+      "old_path": "audit_p5_h22_common_center_kernel_star_component_r_zero_t_plus_minus_one_special_all_pair_obstruction.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-r-zero-t-plus-minus-one-special-all-pair/audit_p5_h22_common_center_kernel_star_component_r_zero_t_plus_minus_one_special_all_pair_obstruction.py",
+      "source_blob": "f1a2e31802668ebda393d08cdd7f2522dae36f75"
+    },
+    {
+      "old_path": "audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_coordinate_survivor.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-coordinate-survivor/audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_coordinate_survivor.py",
+      "source_blob": "7151feb6b3e87d9481ca277d17e696fe90f2a489"
+    },
+    {
+      "old_path": "audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_generic_interior_obstruction.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-generic-interior/audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_generic_interior_obstruction.py",
+      "source_blob": "d1580d07b014e4cad61807f1c7b5c908c33a945d"
+    },
+    {
+      "old_path": "audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_projective_weight_coordinate_divisors_obstruction.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-projective-weight-coordinate-divisors/audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_projective_weight_coordinate_divisors_obstruction.py",
+      "source_blob": "01b497cd561fea73daa23470e37ac31036fd474a"
+    },
+    {
+      "old_path": "audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_r_t_coordinate_symmetry_transfer.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-r-t-coordinate-symmetry-transfer/audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_r_t_coordinate_symmetry_transfer.py",
+      "source_blob": "c1c1562cda5db0ba553a10636f121b797449b1e9"
+    },
+    {
+      "old_path": "audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_rt_one_all_pair_obstruction.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-rt-one-all-pair/audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_rt_one_all_pair_obstruction.py",
+      "source_blob": "3ae2ed6ef202f62030d1f0cfaf2cb419fd01f74d"
+    },
+    {
+      "old_path": "audit_p5_h22_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-s-zero-rt-one-all-pair/audit_p5_h22_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py",
+      "source_blob": "936b9a640acd1fbec9265170f06c1153fd71d73a"
+    },
+    {
+      "old_path": "audit_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py",
+      "new_path": "claims/p5/h22/common-kernel-vertical-triangle-component-generic/audit_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py",
+      "source_blob": "40901453782db4425d7103a9edee9c134e04424b"
+    },
+    {
+      "old_path": "audit_p5_h22_component19_p0_finite_ordinary_aggregate.py",
+      "new_path": "claims/p5/h22/component19-p0-finite-ordinary-aggregate/audit_p5_h22_component19_p0_finite_ordinary_aggregate.py",
+      "source_blob": "a8c4cb7795a112a19ee593e69667f55b232e36ec"
+    },
+    {
+      "old_path": "audit_p5_h22_component19_p0_ordinary_obstruction_open.py",
+      "new_path": "claims/p5/h22/component19-p0-ordinary-obstruction-open/audit_p5_h22_component19_p0_ordinary_obstruction_open.py",
+      "source_blob": "0c177203d540dcc71dbced01a78e19b56ff0e2c8"
+    },
+    {
+      "old_path": "audit_p5_h22_component19_p0_phi_endpoints_no_import.py",
+      "new_path": "claims/p5/h22/component19-p0-phi-endpoints-no-import/audit_p5_h22_component19_p0_phi_endpoints_no_import.py",
+      "source_blob": "5d5e449237bbd1c370a5d4ac9e12c27f90b88227"
+    },
+    {
+      "old_path": "audit_p5_h22_component19_p0_q_endpoints_no_import.py",
+      "new_path": "claims/p5/h22/component19-p0-q-endpoints-no-import/audit_p5_h22_component19_p0_q_endpoints_no_import.py",
+      "source_blob": "d7effdaa2075485acd2a8ca646d62df05330c0dd"
+    },
+    {
+      "old_path": "audit_p5_h22_component19_p0_qphi_equals_one.py",
+      "new_path": "claims/p5/h22/component19-p0-qphi-one-independent/audit_p5_h22_component19_p0_qphi_equals_one.py",
+      "source_blob": "3357ca12516eb20a34d41d76a2bf85a9204b1efc"
+    },
+    {
+      "old_path": "audit_p5_h22_component19_p0_qphi_minus_one_axes.py",
+      "new_path": "claims/p5/h22/component19-p0-qphi-minus-one-axes/audit_p5_h22_component19_p0_qphi_minus_one_axes.py",
+      "source_blob": "081707378e6568204f80686a554ce48977e53302"
+    },
+    {
+      "old_path": "audit_p5_h22_component19_p0_qphi_minus_one_phi_endpoints.py",
+      "new_path": "claims/p5/h22/component19-p0-qphi-minus-one-phi-endpoints/audit_p5_h22_component19_p0_qphi_minus_one_phi_endpoints.py",
+      "source_blob": "8cef70a97d13468d12b34851a49dca1f20222759"
+    },
+    {
+      "old_path": "audit_p5_h22_component19_p0_qphi_minus_one_ternary_compatibility.py",
+      "new_path": "claims/p5/h22/component19-p0-qphi-minus-one-ternary-compatibility/audit_p5_h22_component19_p0_qphi_minus_one_ternary_compatibility.py",
+      "source_blob": "9868f85d608e0719ba06c4e0b74a85b94ca5f7e0"
+    },
+    {
+      "old_path": "audit_p5_h22_component19_p0_qphim1_infinity_no_import.py",
+      "new_path": "claims/p5/h22/component19-p0-qphim1-infinity-no-import/audit_p5_h22_component19_p0_qphim1_infinity_no_import.py",
+      "source_blob": "f0cd682e0840e97be98ba6b1f53b292f66cfb243"
+    },
+    {
+      "old_path": "audit_p5_h22_component19_q0_phi_endpoints_obstruction_candidate.py",
+      "new_path": "claims/p5/h22/component19-q0-phi-endpoints/audit_p5_h22_component19_q0_phi_endpoints_obstruction_candidate.py",
+      "source_blob": "6b583c515a788a2bf73b9007d27412ce64d27233"
+    },
+    {
+      "old_path": "audit_p5_h22_component19_q0_special_divisor_obstruction_candidate.py",
+      "new_path": "claims/p5/h22/component19-q0-special-divisor/audit_p5_h22_component19_q0_special_divisor_obstruction_candidate.py",
+      "source_blob": "66bb6245749c0a0fc482a26965d3deba0aee8817"
+    },
+    {
+      "old_path": "audit_p5_h22_component19_q_eq_phi_first_normal_no_import.py",
+      "new_path": "claims/p5/h22/component19-q-eq-phi-first-normal-no-import/audit_p5_h22_component19_q_eq_phi_first_normal_no_import.py",
+      "source_blob": "6e9b112650187a7af1769a9ec245c3cddcc6bb5b"
+    },
+    {
+      "old_path": "audit_p5_h22_component19_q_equals_phi_obstruction_candidate.py",
+      "new_path": "claims/p5/h22/component19-q-equals-phi/audit_p5_h22_component19_q_equals_phi_obstruction_candidate.py",
+      "source_blob": "55b76749b40240cee68ede92bab1a099fc93184a"
+    },
+    {
+      "old_path": "audit_p5_h22_component19_z0_laurent_field_no_import.py",
+      "new_path": "claims/p5/h22/component19-z0-laurent-field-no-import/audit_p5_h22_component19_z0_laurent_field_no_import.py",
+      "source_blob": "5baec88743846f6dba31af22427252e568a95b66"
+    },
+    {
+      "old_path": "audit_p5_h22_component19_zero_base_valuative_reduction.py",
+      "new_path": "claims/p5/h22/component19-zero-base-valuative-reduction/audit_p5_h22_component19_zero_base_valuative_reduction.py",
+      "source_blob": "4822df8f51d37ce55d8c1b86dc7332f564ea487b"
+    },
+    {
+      "old_path": "audit_p5_h22_component23_s_zero_k_infinity_antidiagonal_obstruction.py",
+      "new_path": "claims/p5/h22/component23-s-zero-k-infinity-antidiagonal/audit_p5_h22_component23_s_zero_k_infinity_antidiagonal_obstruction.py",
+      "source_blob": "966d88a068db848d79ed1632c499fe975546cb57"
+    },
+    {
+      "old_path": "audit_p5_h22_component23_s_zero_k_infinity_unit_parameter_lines_obstruction.py",
+      "new_path": "claims/p5/h22/component23-s-zero-k-infinity-unit-parameter-lines/audit_p5_h22_component23_s_zero_k_infinity_unit_parameter_lines_obstruction.py",
+      "source_blob": "f533857de73f99ccefee8025c5b9ad0b4bd18e30"
+    },
+    {
+      "old_path": "audit_p5_h22_embedded_p3_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_generic_obstruction.py",
+      "source_blob": "82a4943d4d63ee562e58865c36e2b291d30a6e27"
+    },
+    {
+      "old_path": "audit_p5_h22_embedded_p3_component_projective_closure_independent.py",
+      "new_path": "claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_projective_closure_independent.py",
+      "source_blob": "e6428230dd9117c586916439bfb03078032dfc4c"
+    },
+    {
+      "old_path": "audit_p5_h22_embedded_p3_component_r_zero_boundary_independent.py",
+      "new_path": "claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_r_zero_boundary_independent.py",
+      "source_blob": "2d0db3b7104da99630fb55e617eb7d4ae15dcb15"
+    },
+    {
+      "old_path": "audit_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_verifier.py",
+      "new_path": "claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_verifier.py",
+      "source_blob": "521e4774809a50040d461afa631e34d05272c58d"
+    },
+    {
+      "old_path": "audit_p5_h22_embedded_p3_component_rank_one_collapse.py",
+      "new_path": "claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_rank_one_collapse.py",
+      "source_blob": "c839370ef2179e6750a6091755fda02438e541e9"
+    },
+    {
+      "old_path": "audit_p5_h22_embedded_p3_component_rank_two_line_boundary.py",
+      "new_path": "claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_rank_two_line_boundary.py",
+      "source_blob": "e31608123458eed4783fc971f37ed5f4edb45ae9"
+    },
+    {
+      "old_path": "audit_p5_h22_p_plus_q_diagonal_dvr_coverage.py",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_p_plus_q_diagonal_dvr_coverage.py",
+      "source_blob": "fbc903a13feb66b728e6aae1faa12727e211efd2"
+    },
+    {
+      "old_path": "audit_p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_independent.py",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_independent.py",
+      "source_blob": "616b8734c7addbd0030cd65e8cb91d8a52d24a0c"
+    },
+    {
+      "old_path": "audit_p5_h22_two_rank_two_spoke_mixed_star_dense_marking_obstruction.py",
+      "new_path": "claims/p5/h22/two-rank-two-spoke-mixed-star/audit_p5_h22_two_rank_two_spoke_mixed_star_dense_marking_obstruction.py",
+      "source_blob": "454d4da09efcd41de60b520d68361067ffbbd972"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_complement_common_kernel_component_d01_pair_orbit_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d01-pair-orbit/audit_p5_h22_unequal_complement_common_kernel_component_d01_pair_orbit_obstruction.py",
+      "source_blob": "d269090fbdb8128bfe3ce14aa9a8388b3dcd0bfc"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_complement_common_kernel_component_d23_f2_f7_intersection_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-f2-f7-intersection/audit_p5_h22_unequal_complement_common_kernel_component_d23_f2_f7_intersection_obstruction.py",
+      "source_blob": "6a6b232cfaee9322f24752f32d085c871ea6dfa9"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_complement_common_kernel_component_d23_f2_f8_h3_slope_intersection_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-f2-f8-h3-slope-intersection/audit_p5_h22_unequal_complement_common_kernel_component_d23_f2_f8_h3_slope_intersection_obstruction.py",
+      "source_blob": "a8d7024cd100ae9a472deb3320e124d464dd0179"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_cofactor_open_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-h0-nonzero-residual-cofactor-open/audit_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_cofactor_open_obstruction.py",
+      "source_blob": "2f5f2cedab55efda31a8bb89f6e89aa457dddd6f"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_second_cofactor_cover_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-h0-nonzero-residual-second-cofactor-cover/audit_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_second_cofactor_cover_obstruction.py",
+      "source_blob": "c5406d9b4a4537cec84790f5999663dc08afaf13"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_complement_common_kernel_component_d23_h0_zero_residual_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-h0-zero-residual/audit_p5_h22_unequal_complement_common_kernel_component_d23_h0_zero_residual_obstruction.py",
+      "source_blob": "d45fbedb8b64dc1849766e751f183fcf5be29025"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_complement_common_kernel_component_d23_h1_nonzero_h2_zero_partial_closure.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-h1-nonzero-h2-zero-partial-closure/audit_p5_h22_unequal_complement_common_kernel_component_d23_h1_nonzero_h2_zero_partial_closure.py",
+      "source_blob": "20af90c91205005f89ae55e3b903fbbbcc5282eb"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_complement_common_kernel_component_d23_h1_nonzero_two_minor_factor_cover_partial_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-h1-nonzero-two-minor-factor-cover-partial/audit_p5_h22_unequal_complement_common_kernel_component_d23_h1_nonzero_two_minor_factor_cover_partial_obstruction.py",
+      "source_blob": "658dc72d86e0e88b696363e234a6a477e1e834fa"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_complement_common_kernel_component_d23_h2_zero_six_by_six_terminal_reduction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-h2-zero-six-by-six-terminal/audit_p5_h22_unequal_complement_common_kernel_component_d23_h2_zero_six_by_six_terminal_reduction.py",
+      "source_blob": "a75ac80e1a202c280f5274130f14e6967a0dbf5d"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_complement_common_kernel_component_d23_h2_zero_terminal_complete_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-h2-zero-terminal-complete/audit_p5_h22_unequal_complement_common_kernel_component_d23_h2_zero_terminal_complete_obstruction.py",
+      "source_blob": "3bf3673bd2c0bd66eb17616d94ee225eda0a1ece"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_complement_common_kernel_component_d23_h2r1_residual_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-h2r1-residual/audit_p5_h22_unequal_complement_common_kernel_component_d23_h2r1_residual_obstruction.py",
+      "source_blob": "3b4a86fafb6bc55f3139c5008d1f2ef8acdef68f"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_complement_common_kernel_component_d23_pair_orbit_partial_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-pair-orbit-partial/audit_p5_h22_unequal_complement_common_kernel_component_d23_pair_orbit_partial_obstruction.py",
+      "source_blob": "b896ac675a775518c35f73aad75741ee23261aac"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_complement_common_kernel_component_d23_rho_minus_one_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-rho-minus-one/audit_p5_h22_unequal_complement_common_kernel_component_d23_rho_minus_one_obstruction.py",
+      "source_blob": "7c4d97d08a3a4d6a448a45ad3cc1bc308212ad15"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_complement_common_kernel_component_d23_rho_zero_E_zero_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-rho-zero-e-zero/audit_p5_h22_unequal_complement_common_kernel_component_d23_rho_zero_E_zero_obstruction.py",
+      "source_blob": "d1225c9eb6ed762f5508ac8576bb59e6a83e668e"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_complement_common_kernel_component_d23_rho_zero_h1_nonzero_supplement.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-rho-zero-h1-nonzero-supplement/audit_p5_h22_unequal_complement_common_kernel_component_d23_rho_zero_h1_nonzero_supplement.py",
+      "source_blob": "1f3d7e5fa74d7f8c382e52d51698bd84844263af"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_complement_common_kernel_component_survivor_reconnaissance.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-survivor-reconnaissance/audit_p5_h22_unequal_complement_common_kernel_component_survivor_reconnaissance.py",
+      "source_blob": "1fcdfb30f705583bf0ba5de40387bb0aa8cae1af"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a.py",
+      "source_blob": "c01e40888ebd268a10667e2b1613e03234cd5f94"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor.py",
+      "source_blob": "ad0c2383cdf3e7dc53a6d271605746cb80ec90da"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_generic_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_generic_obstruction.py",
+      "source_blob": "3a9b8f77d4d43b02ebc44d7bf20ad6d24a0f5845"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_ternary_false_positive.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_ternary_false_positive.py",
+      "source_blob": "9bdcefbc0b4bcc033c015880e56a2ea7db337906"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_weights.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-weights/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_weights.py",
+      "source_blob": "65a21a1848ec99adfc6b3d83635628a60e4e3bee"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_univariate.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-univariate/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_univariate.py",
+      "source_blob": "02f268e078ad3e2ac909d11c24601164d42edeb7"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a0_companion_c0_leading_boundary_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a0_companion_c0_leading_boundary_obstruction.py",
+      "source_blob": "5cc3e3a36743aaeab57e3947fbbde9722d3e0c67"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a0_companion_divisor_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a0_companion_divisor_obstruction.py",
+      "source_blob": "8e320e1e0921be878b4dce3d1085104414870c5c"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a0_quadratic_companion_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a0_quadratic_companion_obstruction.py",
+      "source_blob": "8c11b47ad818c4db33a4c281ff57491204288f53"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a2_zero_c2_leading_boundary_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a2_zero_c2_leading_boundary_obstruction.py",
+      "source_blob": "ba014d2ca647d2b1c2f3a604474d38c9c7426cdc"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a2_zero_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a2_zero_obstruction.py",
+      "source_blob": "c71fca9ca048913ca3333902ad028cdad1db3f28"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_algebraic_false_positive.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_algebraic_false_positive.py",
+      "source_blob": "d33040ffc83c4e6c38c8b02a8e517067eeb3b755"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_d23_sparse_cover_non_w_branches_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_d23_sparse_cover_non_w_branches_obstruction.py",
+      "source_blob": "f03f03d9856a6739028ed28847e61e36a4bc4bee"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_d23_sparse_two_minor_cover.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_d23_sparse_two_minor_cover.py",
+      "source_blob": "b707a83ed4c5e3d52deea46c832f8a3a326b8d39"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_d23_w_zero_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_d23_w_zero_obstruction.py",
+      "source_blob": "d2582cbd1c5ed3837c8ed8ece11db6255da369cb"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_generic_false_positive.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_generic_false_positive.py",
+      "source_blob": "b986ec5f1b4be3e375c3ca9952d79d472c693390"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_linear_solve_divisors_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_linear_solve_divisors_obstruction.py",
+      "source_blob": "d485e696ded314a33a76d2f96c8631cb32b2e7e5"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_opposite_diagonal_divisor.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_opposite_diagonal_divisor.py",
+      "source_blob": "399f6675f5e615b37a960dec7b8d96aca7970f45"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_full_field_generic_weight.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_full_field_generic_weight.py",
+      "source_blob": "e19663b36d3af1f2eddc58062556cbdbf22e3847"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_reduction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_reduction.py",
+      "source_blob": "dc414f2777eebcb63584ac2969311997920e9595"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_t_zero_and_h_boundary_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_t_zero_and_h_boundary_obstruction.py",
+      "source_blob": "0ecd899a10d383bcb9f5b150a19281ac07ac4740"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_lambda_minus_one.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-lambda-minus-one/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_lambda_minus_one.py",
+      "source_blob": "683196946e334cbef48b5fdeadc6422e98c1014f"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_residual.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-residual/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_residual.py",
+      "source_blob": "e7ea7754d39e75cec42fbd7cfbdd509ba263494d"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d23_factor_cover.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d23-factor-cover/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d23_factor_cover.py",
+      "source_blob": "7599e9fe6c09266d20e0e6054f8d6dd829dc0482"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_finite_d23_lambda_one.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d23-lambda-one/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d23_lambda_one.py",
+      "source_blob": "9c56157a2ade724c5ae0f44d5088b06bd45830f3"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_partial.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star/audit_p5_h22_unequal_endpoint_inward_star_component_partial.py",
+      "source_blob": "b7cd3a3a6f9a9868400c6fe909619bb75518abd4"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_minus_one_d01_weight_closure.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-projective-g-zero-es-minus-one-d01-weight-closure/audit_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_minus_one_d01_weight_closure.py",
+      "source_blob": "cdf94ab2db4df9891f557c94afb545c68025aac5"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_one_d01_generic_weight_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-projective-g-zero-es-one-d01-generic-weight/audit_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_one_d01_generic_weight_obstruction.py",
+      "source_blob": "75dac8d4249d916bbfac4572d0400f8fd4b39020"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_generic_d23_affine_line_rank_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-projective-g-zero-generic-d23-affine-line-rank/audit_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_generic_d23_affine_line_rank_obstruction.py",
+      "source_blob": "dad662f52bd97a4d9480fc709258ecd1fc792333"
+    },
+    {
+      "old_path": "audit_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_k_zero_generic_d23_rank_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-projective-g-zero-k-zero-generic-d23-rank/audit_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_k_zero_generic_d23_rank_obstruction.py",
+      "source_blob": "f6598a4361161d35327b5e70a3eac5ca8199ef51"
+    },
+    {
+      "old_path": "construct_p5_h22_common_active_binary_triangle_p_plus_q_b_drop_finite_d23_candidate.py",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/construct_p5_h22_common_active_binary_triangle_p_plus_q_b_drop_finite_d23_candidate.py",
+      "source_blob": "360a9c4ea958636a417119f9b2d478aa18d6ccd5"
+    },
+    {
+      "old_path": "derive_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py",
+      "new_path": "claims/p5/h22/coincident-support/derive_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py",
+      "source_blob": "723542789e29fd74930f35788fcc05cc82780e11"
+    },
+    {
+      "old_path": "derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py",
+      "new_path": "claims/p5/h22/common-active-binary-triangle-component-generic/derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py",
+      "source_blob": "a0aa17900c5e52330cdec720e81a9fa193e1980e"
+    },
+    {
+      "old_path": "derive_p5_h22_common_active_binary_triangle_intrinsic_boundary_obstruction_candidate.py",
+      "new_path": "claims/p5/h22/common-active-binary-triangle-intrinsic-boundary/derive_p5_h22_common_active_binary_triangle_intrinsic_boundary_obstruction_candidate.py",
+      "source_blob": "c8444c6900e3ba686bde9b94f355bc4dd0054b13"
+    },
+    {
+      "old_path": "derive_p5_h22_common_active_binary_triangle_p_plus_q_b_full_infinity_finite_pair_obstruction.py",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/derive_p5_h22_common_active_binary_triangle_p_plus_q_b_full_infinity_finite_pair_obstruction.py",
+      "source_blob": "736811d475d461107c3ed44d26e3b6d7a1cc349d"
+    },
+    {
+      "old_path": "derive_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_candidate.py",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/derive_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_candidate.py",
+      "source_blob": "1525829eab6aa50aeb71f1fc6b7e300096bd04a6"
+    },
+    {
+      "old_path": "derive_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_compatibility_obstruction.py",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/derive_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_compatibility_obstruction.py",
+      "source_blob": "712510a0291e31941a688ddb50503a45a29afbd2"
+    },
+    {
+      "old_path": "derive_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py",
+      "new_path": "claims/p5/h22/common-kernel-vertical-triangle-component-generic/derive_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py",
+      "source_blob": "48da1b8692bcf32c48d411c361264df2b9b904e2"
+    },
+    {
+      "old_path": "derive_p5_h22_component19_p0_ordinary_boundary_candidate.py",
+      "new_path": "claims/p5/h22/component19-p0-ordinary-boundary/derive_p5_h22_component19_p0_ordinary_boundary_candidate.py",
+      "source_blob": "0531766fec0c6554cd88c21c1fae57e5827306a9"
+    },
+    {
+      "old_path": "derive_p5_h22_component19_p0_ordinary_open_proof_b.py",
+      "new_path": "claims/p5/h22/component19-p0-ordinary-open-proof-b/derive_p5_h22_component19_p0_ordinary_open_proof_b.py",
+      "source_blob": "7c73c5e6ea0e2ddc0b28530543138f5b107efedd"
+    },
+    {
+      "old_path": "derive_p5_h22_component19_p0_phi_pm_one_ordinary_obstruction_candidate.py",
+      "new_path": "claims/p5/h22/component19-p0-phi-pm-one-ordinary/derive_p5_h22_component19_p0_phi_pm_one_ordinary_obstruction_candidate.py",
+      "source_blob": "5864c94daff70a1e37727a43cde23f5a430d7d8e"
+    },
+    {
+      "old_path": "derive_p5_h22_component19_p0_qphi1_proof_b.py",
+      "new_path": "claims/p5/h22/component19-p0-qphi1-proof-b/derive_p5_h22_component19_p0_qphi1_proof_b.py",
+      "source_blob": "5aa7114d30be1479056dcdd625c2d4812fb5bfa4"
+    },
+    {
+      "old_path": "derive_p5_h22_component19_p0_qphi_minus_one_axes_compatibility_obstruction.py",
+      "new_path": "claims/p5/h22/component19-p0-qphi-minus-one-axes-compatibility/derive_p5_h22_component19_p0_qphi_minus_one_axes_compatibility_obstruction.py",
+      "source_blob": "2871a306de7d7ab52b9c6b553e2468e594a137e3"
+    },
+    {
+      "old_path": "derive_p5_h22_component19_p0_qphi_minus_one_weight_infinity_obstruction_candidate.py",
+      "new_path": "claims/p5/h22/component19-p0-qphi-minus-one-weight-infinity/derive_p5_h22_component19_p0_qphi_minus_one_weight_infinity_obstruction_candidate.py",
+      "source_blob": "860b49ee2a25aa95e32c638b69e0b5e73e65d09a"
+    },
+    {
+      "old_path": "derive_p5_h22_component19_p0_qphi_one_ordinary_obstruction_candidate.py",
+      "new_path": "claims/p5/h22/component19-p0-qphi-one-ordinary/derive_p5_h22_component19_p0_qphi_one_ordinary_obstruction_candidate.py",
+      "source_blob": "3740018ecafd3691272e3191272e2135abcfe04c"
+    },
+    {
+      "old_path": "derive_p5_h22_component19_p0_qphim1_axis_target_local_proof_b.py",
+      "new_path": "claims/p5/h22/component19-p0-qphim1-axis-target-local-proof-b/derive_p5_h22_component19_p0_qphim1_axis_target_local_proof_b.py",
+      "source_blob": "8a8d340d0846db11256c3bbbac8e968a96a8d186"
+    },
+    {
+      "old_path": "derive_p5_h22_component19_q0_phi_endpoints_obstruction_candidate.py",
+      "new_path": "claims/p5/h22/component19-q0-phi-endpoints/derive_p5_h22_component19_q0_phi_endpoints_obstruction_candidate.py",
+      "source_blob": "37adc40044163013b25dbedc51841a6ef030b8c0"
+    },
+    {
+      "old_path": "derive_p5_h22_component19_q0_phi_endpoints_proof_b.py",
+      "new_path": "claims/p5/h22/component19-q0-phi-endpoints-proof-b/derive_p5_h22_component19_q0_phi_endpoints_proof_b.py",
+      "source_blob": "b23e782006b5af8a4e330b5f19f77c2cadb97aba"
+    },
+    {
+      "old_path": "derive_p5_h22_component19_q0_special_divisor_obstruction_candidate.py",
+      "new_path": "claims/p5/h22/component19-q0-special-divisor/derive_p5_h22_component19_q0_special_divisor_obstruction_candidate.py",
+      "source_blob": "9d5080a3f9ac9316f039f40e8e08aac18035d07c"
+    },
+    {
+      "old_path": "derive_p5_h22_component19_q0_special_divisor_proof_b.py",
+      "new_path": "claims/p5/h22/component19-q0-special-divisor-proof-b/derive_p5_h22_component19_q0_special_divisor_proof_b.py",
+      "source_blob": "a84a1c1f344680a50b6df178c204923169c41c60"
+    },
+    {
+      "old_path": "derive_p5_h22_component19_q_eq_phi_special_divisor_obstruction_candidate.py",
+      "new_path": "claims/p5/h22/component19-q-eq-phi-special-divisor/derive_p5_h22_component19_q_eq_phi_special_divisor_obstruction_candidate.py",
+      "source_blob": "04810004d1c10d0061d167eba7f6fa3aea7d8f40"
+    },
+    {
+      "old_path": "derive_p5_h22_component19_q_equals_phi_divisor_proof_b.py",
+      "new_path": "claims/p5/h22/component19-q-equals-phi-divisor-proof-b/derive_p5_h22_component19_q_equals_phi_divisor_proof_b.py",
+      "source_blob": "725ce5fa9aee88c16a0625b873b14eeb9c5fe42f"
+    },
+    {
+      "old_path": "derive_p5_h22_component19_zero_base_first_normal_candidate.py",
+      "new_path": "claims/p5/h22/component19-zero-base-first-normal/derive_p5_h22_component19_zero_base_first_normal_candidate.py",
+      "source_blob": "69752b161cf315e302fe9501e5c4ae8e0688e0e2"
+    },
+    {
+      "old_path": "derive_p5_h22_component19_zero_base_normal_cone_proof_b.py",
+      "new_path": "claims/p5/h22/component19-zero-base-normal-cone-proof-b/derive_p5_h22_component19_zero_base_normal_cone_proof_b.py",
+      "source_blob": "63e48700bb14cde87df2a739134caee01479d6f1"
+    },
+    {
+      "old_path": "derive_p5_h22_component19_zero_base_valuative_finite_cover_candidate.py",
+      "new_path": "claims/p5/h22/component19-zero-base-valuative-finite-cover/derive_p5_h22_component19_zero_base_valuative_finite_cover_candidate.py",
+      "source_blob": "f00373fb98dce7aeaaeff9f1bebbdebaaba52194"
+    },
+    {
+      "old_path": "derive_p5_h22_embedded_p3_component_r_zero_boundary_obstruction.py",
+      "new_path": "claims/p5/h22/embedded-p3/derive_p5_h22_embedded_p3_component_r_zero_boundary_obstruction.py",
+      "source_blob": "6140643cc94800d791c848ffbf60cb9fd48e2129"
+    },
+    {
+      "old_path": "derive_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_obstruction_candidate.py",
+      "new_path": "claims/p5/h22/embedded-p3/derive_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_obstruction_candidate.py",
+      "source_blob": "b101387223a4f8589380df678f8f486a3e08ed81"
+    },
+    {
+      "old_path": "derive_p5_h22_embedded_p3_projective_coverage_boundary.py",
+      "new_path": "claims/p5/h22/embedded-p3/derive_p5_h22_embedded_p3_projective_coverage_boundary.py",
+      "source_blob": "ed0c35101ce68f6027ca1b9ce724439646b5bec6"
+    },
+    {
+      "old_path": "derive_p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_obstruction_candidate.py",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/derive_p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_obstruction_candidate.py",
+      "source_blob": "f9d774a99c619beb0821d80f30162e82bd96ac71"
+    },
+    {
+      "old_path": "explore_p5_h22_component19_p0_q_endpoints.py",
+      "new_path": "claims/p5/h22/component19-p0-q-endpoints-target-local/explore_p5_h22_component19_p0_q_endpoints.py",
+      "source_blob": "f1c69ea66376b42ce33b3fd88e12876d968762c3"
+    },
+    {
+      "old_path": "p5_h22_coincident_support_rank_one_star_component_generic_certificate.json",
+      "new_path": "claims/p5/h22/coincident-support/p5_h22_coincident_support_rank_one_star_component_generic_certificate.json",
+      "source_blob": "0364f88bbd6c67756661ae696140ccf78db4d8de"
+    },
+    {
+      "old_path": "p5_h22_common_active_binary_triangle_component_generic_certificate.json",
+      "new_path": "claims/p5/h22/common-active-binary-triangle-component-generic/p5_h22_common_active_binary_triangle_component_generic_certificate.json",
+      "source_blob": "a15998fa8e62644fc453b5fc0748ffe79d6fe132"
+    },
+    {
+      "old_path": "p5_h22_common_active_binary_triangle_intrinsic_boundary_certificate.json",
+      "new_path": "claims/p5/h22/common-active-binary-triangle-intrinsic-boundary/p5_h22_common_active_binary_triangle_intrinsic_boundary_certificate.json",
+      "source_blob": "cd4852f728af44c352e1613e984514d538471db8"
+    },
+    {
+      "old_path": "p5_h22_common_kernel_vertical_triangle_component_generic_certificate.json",
+      "new_path": "claims/p5/h22/common-kernel-vertical-triangle-component-generic/p5_h22_common_kernel_vertical_triangle_component_generic_certificate.json",
+      "source_blob": "409d6e3216974ac7eae14e552c8df4b0cf0951ea"
+    },
+    {
+      "old_path": "p5_h22_component19_p0_ordinary_boundary_certificate.json",
+      "new_path": "claims/p5/h22/component19-p0-ordinary-boundary/p5_h22_component19_p0_ordinary_boundary_certificate.json",
+      "source_blob": "d9b983ce2e1f3e98d62e7ae7d2453ace05400f66"
+    },
+    {
+      "old_path": "p5_h22_component19_p0_phi_pm_one_ordinary_obstruction_certificate.json",
+      "new_path": "claims/p5/h22/component19-p0-phi-pm-one-ordinary/p5_h22_component19_p0_phi_pm_one_ordinary_obstruction_certificate.json",
+      "source_blob": "58414b810c855425c5f40e4a857e949397e9ea72"
+    },
+    {
+      "old_path": "p5_h22_component19_p0_qphi_minus_one_axes_compatibility_certificate.json",
+      "new_path": "claims/p5/h22/component19-p0-qphi-minus-one-axes-compatibility/p5_h22_component19_p0_qphi_minus_one_axes_compatibility_certificate.json",
+      "source_blob": "8121f5478eaba07e906820e221f6d326cddcf48d"
+    },
+    {
+      "old_path": "p5_h22_component19_p0_qphi_minus_one_weight_infinity_certificate.json",
+      "new_path": "claims/p5/h22/component19-p0-qphi-minus-one-weight-infinity/p5_h22_component19_p0_qphi_minus_one_weight_infinity_certificate.json",
+      "source_blob": "e9526c8e024918e7af3401410106afd9a39643d4"
+    },
+    {
+      "old_path": "p5_h22_component19_p0_qphi_one_ordinary_obstruction_certificate.json",
+      "new_path": "claims/p5/h22/component19-p0-qphi-one-ordinary/p5_h22_component19_p0_qphi_one_ordinary_obstruction_certificate.json",
+      "source_blob": "22a52a7ec42f3386344fa4a5f92ab6eca644df6d"
+    },
+    {
+      "old_path": "p5_h22_component19_q0_phi_endpoints_certificate.json",
+      "new_path": "claims/p5/h22/component19-q0-phi-endpoints/p5_h22_component19_q0_phi_endpoints_certificate.json",
+      "source_blob": "20c2b4c5d34e1db1451df06d1bf044afc2b35d01"
+    },
+    {
+      "old_path": "p5_h22_component19_q0_special_divisor_certificate.json",
+      "new_path": "claims/p5/h22/component19-q0-special-divisor/p5_h22_component19_q0_special_divisor_certificate.json",
+      "source_blob": "a61465831ee3419efb8dcb4b94c4e03f6d89c212"
+    },
+    {
+      "old_path": "p5_h22_component19_q_eq_phi_special_divisor_certificate.json",
+      "new_path": "claims/p5/h22/component19-q-eq-phi-special-divisor/p5_h22_component19_q_eq_phi_special_divisor_certificate.json",
+      "source_blob": "b57053d51e1f6a8eefff758e7315b25c25698cc8"
+    },
+    {
+      "old_path": "p5_h22_component19_zero_base_first_normal_geometry_certificate.json",
+      "new_path": "claims/p5/h22/component19-zero-base-first-normal/p5_h22_component19_zero_base_first_normal_geometry_certificate.json",
+      "source_blob": "94adde78cf8c22831cfd91a7b453eb23e18462cc"
+    },
+    {
+      "old_path": "p5_h22_component19_zero_base_first_normal_incidence_certificate.json",
+      "new_path": "claims/p5/h22/component19-zero-base-first-normal/p5_h22_component19_zero_base_first_normal_incidence_certificate.json",
+      "source_blob": "7404e4b78361e3bc9a2b5d4c1dd852d69984821b"
+    },
+    {
+      "old_path": "p5_h22_component19_zero_base_valuative_finite_cover_certificate.json",
+      "new_path": "claims/p5/h22/component19-zero-base-valuative-finite-cover/p5_h22_component19_zero_base_valuative_finite_cover_certificate.json",
+      "source_blob": "6b8cb42b9321611eab3bab91c8e634b6f9eccbf7"
+    },
+    {
+      "old_path": "p5_h22_p_plus_q_diagonal_dvr_coverage.json",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/p5_h22_p_plus_q_diagonal_dvr_coverage.json",
+      "source_blob": "6d8216ff592944afd8411281575b043a90a0ef64"
+    },
+    {
+      "old_path": "p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_certificate.json",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_certificate.json",
+      "source_blob": "8ad460e198fad39e157d71c5f3b951435b20028d"
+    },
+    {
+      "old_path": "verify_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/verify_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py",
+      "source_blob": "6302e1403d226c94eab09dec9bc443ca5586a27a"
+    },
+    {
+      "old_path": "verify_p5_h22_common_active_binary_triangle_p_plus_q_boundary_partial.py",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/verify_p5_h22_common_active_binary_triangle_p_plus_q_boundary_partial.py",
+      "source_blob": "0d9059ba3acd61d7e233aa542c683b2e2700d582"
+    },
+    {
+      "old_path": "verify_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_obstruction.py",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/verify_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_obstruction.py",
+      "source_blob": "5c5a6e562fe336b9636f773a074dd2b1885a7ca9"
+    },
+    {
+      "old_path": "verify_p5_h22_common_active_binary_triangle_p_plus_q_generic_d01_infinity_obstruction.py",
+      "new_path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/verify_p5_h22_common_active_binary_triangle_p_plus_q_generic_d01_infinity_obstruction.py",
+      "source_blob": "1cc9ae90c7f8f85ecfae8a0a92efc9d9ba1ba4b0"
+    },
+    {
+      "old_path": "verify_p5_h22_common_center_kernel_star_component_finite_all_marking_dense_open_supplement.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-finite-all-marking-dense-open-supplement/verify_p5_h22_common_center_kernel_star_component_finite_all_marking_dense_open_supplement.py",
+      "source_blob": "f07c1ace19afed23a7da619c75ca820cb9505da1"
+    },
+    {
+      "old_path": "verify_p5_h22_common_center_kernel_star_component_finite_ordinary_F_h2_zero_obstruction.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-finite-ordinary-f-h2-zero/verify_p5_h22_common_center_kernel_star_component_finite_ordinary_F_h2_zero_obstruction.py",
+      "source_blob": "d9bfa7924f6d74ebf7b964dac3c334dd0ce08c60"
+    },
+    {
+      "old_path": "verify_p5_h22_common_center_kernel_star_component_finite_ordinary_residual_obstruction.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-finite-ordinary-residual/verify_p5_h22_common_center_kernel_star_component_finite_ordinary_residual_obstruction.py",
+      "source_blob": "6a353bebc18c417a461549e46f7071d43e5c7c3b"
+    },
+    {
+      "old_path": "verify_p5_h22_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-k-infinity-all-pair-boundary/verify_p5_h22_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py",
+      "source_blob": "66bd3560c5e1e4239401112f3439cd83fd95ba77"
+    },
+    {
+      "old_path": "verify_p5_h22_common_center_kernel_star_component_partial.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star/verify_p5_h22_common_center_kernel_star_component_partial.py",
+      "source_blob": "8723bea6d00c58fbd87bb5fdeb4699d37f029a38"
+    },
+    {
+      "old_path": "verify_p5_h22_common_center_kernel_star_component_r_t_divisor_symmetry_transfer.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-r-t-divisor-symmetry-transfer/verify_p5_h22_common_center_kernel_star_component_r_t_divisor_symmetry_transfer.py",
+      "source_blob": "e0b4a86a4d7f9dd077145cb36d6daa435c756909"
+    },
+    {
+      "old_path": "verify_p5_h22_common_center_kernel_star_component_r_zero_affine_constant_profile_open_obstruction.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-r-zero-affine-constant-profile-open/verify_p5_h22_common_center_kernel_star_component_r_zero_affine_constant_profile_open_obstruction.py",
+      "source_blob": "215f1c2a2f4e524bbbd90b141a394e98730c8681"
+    },
+    {
+      "old_path": "verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-r-zero-divisor/verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py",
+      "source_blob": "ec1a6f3058122bdbcc52520a97c00f45221727d1"
+    },
+    {
+      "old_path": "verify_p5_h22_common_center_kernel_star_component_r_zero_t_plus_minus_one_special_all_pair_obstruction.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-r-zero-t-plus-minus-one-special-all-pair/verify_p5_h22_common_center_kernel_star_component_r_zero_t_plus_minus_one_special_all_pair_obstruction.py",
+      "source_blob": "1443fce44ee89559c77b91e2b78afd2b77713a3e"
+    },
+    {
+      "old_path": "verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_coordinate_survivor.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-coordinate-survivor/verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_coordinate_survivor.py",
+      "source_blob": "89954eea500a79cf0058e7cff6b9d5aa5c83a091"
+    },
+    {
+      "old_path": "verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_generic_interior_obstruction.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-generic-interior/verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_generic_interior_obstruction.py",
+      "source_blob": "b92049f85883a4b8d558fbf8df59992d12d130dc"
+    },
+    {
+      "old_path": "verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_projective_weight_coordinate_divisors_obstruction.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-projective-weight-coordinate-divisors/verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_projective_weight_coordinate_divisors_obstruction.py",
+      "source_blob": "3b8b7d8a77cd18dddc755bd4090dde024f2aed4f"
+    },
+    {
+      "old_path": "verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_r_t_coordinate_symmetry_transfer.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-r-t-coordinate-symmetry-transfer/verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_r_t_coordinate_symmetry_transfer.py",
+      "source_blob": "564aad9306525aa7b28cfe20a877f5e890f738b4"
+    },
+    {
+      "old_path": "verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_rt_one_all_pair_obstruction.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-rt-one-all-pair/verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_rt_one_all_pair_obstruction.py",
+      "source_blob": "fb2507076b44c5fe0faadc4a21dccd704f7f0fe3"
+    },
+    {
+      "old_path": "verify_p5_h22_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py",
+      "new_path": "claims/p5/h22/common-center-kernel-star-component-s-zero-rt-one-all-pair/verify_p5_h22_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py",
+      "source_blob": "91bcf141f9e42fbe41570aae8625deeff73239fc"
+    },
+    {
+      "old_path": "verify_p5_h22_component23_s_zero_k_infinity_antidiagonal_obstruction.py",
+      "new_path": "claims/p5/h22/component23-s-zero-k-infinity-antidiagonal/verify_p5_h22_component23_s_zero_k_infinity_antidiagonal_obstruction.py",
+      "source_blob": "6bdb054d434be48e88d99b165f28cae06d6b09d4"
+    },
+    {
+      "old_path": "verify_p5_h22_component23_s_zero_k_infinity_unit_parameter_lines_obstruction.py",
+      "new_path": "claims/p5/h22/component23-s-zero-k-infinity-unit-parameter-lines/verify_p5_h22_component23_s_zero_k_infinity_unit_parameter_lines_obstruction.py",
+      "source_blob": "7894d33128d1bc60036b00b28967dc8323efbcf8"
+    },
+    {
+      "old_path": "verify_p5_h22_embedded_p3_component_generic_obstruction.py",
+      "new_path": "claims/p5/h22/embedded-p3/verify_p5_h22_embedded_p3_component_generic_obstruction.py",
+      "source_blob": "80d793d4f490d401db626659e22dac8c35ce2dc0"
+    },
+    {
+      "old_path": "verify_p5_h22_embedded_p3_component_projective_closure.py",
+      "new_path": "claims/p5/h22/embedded-p3/verify_p5_h22_embedded_p3_component_projective_closure.py",
+      "source_blob": "ed70bd1e6c4242cc172b7b0a89fb0aaca5c9be65"
+    },
+    {
+      "old_path": "verify_p5_h22_embedded_p3_component_rank_one_collapse.py",
+      "new_path": "claims/p5/h22/embedded-p3/verify_p5_h22_embedded_p3_component_rank_one_collapse.py",
+      "source_blob": "eecdf0bd692e8557d2411d4fe4d59b835ce56a54"
+    },
+    {
+      "old_path": "verify_p5_h22_embedded_p3_component_rank_two_line_boundary.py",
+      "new_path": "claims/p5/h22/embedded-p3/verify_p5_h22_embedded_p3_component_rank_two_line_boundary.py",
+      "source_blob": "2dd8b879227eb3b028a74709706c3d0f9803efdf"
+    },
+    {
+      "old_path": "verify_p5_h22_two_rank_two_spoke_mixed_star_dense_marking_obstruction.py",
+      "new_path": "claims/p5/h22/two-rank-two-spoke-mixed-star/verify_p5_h22_two_rank_two_spoke_mixed_star_dense_marking_obstruction.py",
+      "source_blob": "ca109da0ca0800ae702e0f4df1fd1c5454d9ced0"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_complement_common_kernel_component_d01_pair_orbit_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d01-pair-orbit/verify_p5_h22_unequal_complement_common_kernel_component_d01_pair_orbit_obstruction.py",
+      "source_blob": "18e7d49b3bbc5c14b88b3d20a9471d1f18e8ece0"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_complement_common_kernel_component_d23_f2_f7_intersection_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-f2-f7-intersection/verify_p5_h22_unequal_complement_common_kernel_component_d23_f2_f7_intersection_obstruction.py",
+      "source_blob": "9032e24c00d37a88ed0c1b0e7f620c7fa4349de6"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_complement_common_kernel_component_d23_f2_f8_h3_slope_intersection_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-f2-f8-h3-slope-intersection/verify_p5_h22_unequal_complement_common_kernel_component_d23_f2_f8_h3_slope_intersection_obstruction.py",
+      "source_blob": "37a23127886a980aecdc90a97b1e4ece8d0a715b"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_cofactor_open_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-h0-nonzero-residual-cofactor-open/verify_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_cofactor_open_obstruction.py",
+      "source_blob": "9ae74f2520a69b82380d3234e12aad221f4e3c38"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_second_cofactor_cover_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-h0-nonzero-residual-second-cofactor-cover/verify_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_second_cofactor_cover_obstruction.py",
+      "source_blob": "12c7fb152beb724b41ae13a89ed0ec5b991a9a1b"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_complement_common_kernel_component_d23_h0_zero_residual_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-h0-zero-residual/verify_p5_h22_unequal_complement_common_kernel_component_d23_h0_zero_residual_obstruction.py",
+      "source_blob": "c8fa21f3d502d29a24bf7fb5d30e6b9f319537d9"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_complement_common_kernel_component_d23_h1_nonzero_h2_zero_partial_closure.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-h1-nonzero-h2-zero-partial-closure/verify_p5_h22_unequal_complement_common_kernel_component_d23_h1_nonzero_h2_zero_partial_closure.py",
+      "source_blob": "d478ae62af0105a3cd0ab0f01fd56fa08391fb9c"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_complement_common_kernel_component_d23_h1_nonzero_two_minor_factor_cover_partial_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-h1-nonzero-two-minor-factor-cover-partial/verify_p5_h22_unequal_complement_common_kernel_component_d23_h1_nonzero_two_minor_factor_cover_partial_obstruction.py",
+      "source_blob": "e920790e30da7b9f754eeb31634d5e856df2cd9b"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_complement_common_kernel_component_d23_h2_zero_six_by_six_terminal_reduction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-h2-zero-six-by-six-terminal/verify_p5_h22_unequal_complement_common_kernel_component_d23_h2_zero_six_by_six_terminal_reduction.py",
+      "source_blob": "d22d01dbf26b1c0730874ac14c924a4e70a39ab4"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_complement_common_kernel_component_d23_h2_zero_terminal_complete_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-h2-zero-terminal-complete/verify_p5_h22_unequal_complement_common_kernel_component_d23_h2_zero_terminal_complete_obstruction.py",
+      "source_blob": "10e44fe315012791d344c6dac8b2a0ad5fd7af03"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_complement_common_kernel_component_d23_h2r1_residual_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-h2r1-residual/verify_p5_h22_unequal_complement_common_kernel_component_d23_h2r1_residual_obstruction.py",
+      "source_blob": "4882c8dd484888b9619c6ccb54c8686043ecb9cf"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_complement_common_kernel_component_d23_pair_orbit_partial_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-pair-orbit-partial/verify_p5_h22_unequal_complement_common_kernel_component_d23_pair_orbit_partial_obstruction.py",
+      "source_blob": "7876d8093571d75381c4b6d6ba6067053387774c"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_complement_common_kernel_component_d23_rho_minus_one_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-rho-minus-one/verify_p5_h22_unequal_complement_common_kernel_component_d23_rho_minus_one_obstruction.py",
+      "source_blob": "4b16ff6a77d60da5123c0f99ea6f9b637180441e"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_complement_common_kernel_component_d23_rho_zero_E_zero_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-rho-zero-e-zero/verify_p5_h22_unequal_complement_common_kernel_component_d23_rho_zero_E_zero_obstruction.py",
+      "source_blob": "7a63984b064633b174e5a2c2b57923e4908198ec"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_complement_common_kernel_component_d23_rho_zero_h1_nonzero_supplement.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-d23-rho-zero-h1-nonzero-supplement/verify_p5_h22_unequal_complement_common_kernel_component_d23_rho_zero_h1_nonzero_supplement.py",
+      "source_blob": "ebf8e14401f4cdd08d9324f46e1bea38e58886f2"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_complement_common_kernel_component_survivor_reconnaissance.py",
+      "new_path": "claims/p5/h22/unequal-complement-common-kernel-component-survivor-reconnaissance/verify_p5_h22_unequal_complement_common_kernel_component_survivor_reconnaissance.py",
+      "source_blob": "2ed3078dee9cc405db7bc2ad9a459262ca51a57c"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a.py",
+      "source_blob": "3576b70cdf28e9e8ebb96a4e6b035bb8ac41b70f"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor.py",
+      "source_blob": "543bd2ae86c7f2c58c0b05b3b13373a5862a88bb"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_generic_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_generic_obstruction.py",
+      "source_blob": "d02ed3bde9ea1b2ef0acfc893f18dd2dc9a7d462"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_ternary_false_positive.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-divisor/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_divisor_ternary_false_positive.py",
+      "source_blob": "e59714dbf0c2bb6732193b38d098341e5592cac2"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_weights.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-weights/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_weights.py",
+      "source_blob": "c81f9e55d3e9d2ceecaaa40cd4e726c1f3342316"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_univariate.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-univariate/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_univariate.py",
+      "source_blob": "03828cecb19e6a2e273fce63139d81b4acf3441f"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a0_companion_c0_leading_boundary_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a0_companion_c0_leading_boundary_obstruction.py",
+      "source_blob": "c998604a7e4a1a7fffc528004b8a086b2f54254d"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a0_companion_divisor_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a0_companion_divisor_obstruction.py",
+      "source_blob": "7fbb21efb6824b40abf27e6d4262afa20bbc675e"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a0_quadratic_companion_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a0_quadratic_companion_obstruction.py",
+      "source_blob": "ccf44878b1f4bfd5467226899f190f26058d7d05"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a2_zero_c2_leading_boundary_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a2_zero_c2_leading_boundary_obstruction.py",
+      "source_blob": "0411cd923ade82c14f9d4e1da4d06a34bf9ba78f"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a2_zero_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_a2_zero_obstruction.py",
+      "source_blob": "a45334568447310856133ea55552a9c7e9a27dff"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_algebraic_false_positive.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_algebraic_false_positive.py",
+      "source_blob": "12b9efcf39e4907765c1ed82332ab91239aeeb41"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_d23_sparse_cover_non_w_branches_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_d23_sparse_cover_non_w_branches_obstruction.py",
+      "source_blob": "7d1584ed3bb68ba379f25029137ab669304cd747"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_d23_sparse_two_minor_cover.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_d23_sparse_two_minor_cover.py",
+      "source_blob": "0b8e2133d21489c337b3f1203cf6a4017a08cef6"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_d23_w_zero_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_d23_w_zero_obstruction.py",
+      "source_blob": "ef8056930390de44422cc60f1ab2f330e3bdea7e"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_generic_false_positive.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_generic_false_positive.py",
+      "source_blob": "e2e065edaca9288275d18474a853072eea4bd52d"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_linear_solve_divisors_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_linear_solve_divisors_obstruction.py",
+      "source_blob": "70880935e44af4bdd22827d26f2839d9e17e0a53"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_opposite_diagonal_divisor.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_exceptional_weight_opposite_diagonal_divisor.py",
+      "source_blob": "0630fa190dc932b3a9147f2fc42491f47f302cbe"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_full_field_generic_weight.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_full_field_generic_weight.py",
+      "source_blob": "4223db5ecef5f29caa022d4d846d0de9c01bec9e"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_reduction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_reduction.py",
+      "source_blob": "fd0d9c2ae0fec7362a6dbc953a272b15271dcc02"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_t_zero_and_h_boundary_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_t_zero_and_h_boundary_obstruction.py",
+      "source_blob": "8e87a92f136a4089e573a286e872861e300d5e86"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_lambda_minus_one.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-lambda-minus-one/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_lambda_minus_one.py",
+      "source_blob": "d1e6e2baa74d5dc7f42b60871b7bd7aee7bc2965"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_residual.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-residual/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_residual.py",
+      "source_blob": "0acad7255e37180313c0e5c784a8a2fcd5ebd560"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d23_factor_cover.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d23-factor-cover/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d23_factor_cover.py",
+      "source_blob": "e389b55a5572d0c3b78554e13bc7a45869cfb61f"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_finite_d23_lambda_one.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-finite-d23-lambda-one/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d23_lambda_one.py",
+      "source_blob": "969f91420c996cc1e2b90eff4745087245c8afbb"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_partial.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star/verify_p5_h22_unequal_endpoint_inward_star_component_partial.py",
+      "source_blob": "b24604aac65e6a120b52bae27db17b73c146be4c"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_minus_one_d01_weight_closure.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-projective-g-zero-es-minus-one-d01-weight-closure/verify_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_minus_one_d01_weight_closure.py",
+      "source_blob": "aacf8065016c61f5f8da80eb93c5de9072280721"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_one_d01_generic_weight_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-projective-g-zero-es-one-d01-generic-weight/verify_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_one_d01_generic_weight_obstruction.py",
+      "source_blob": "68354ec71b7665b8a220e45699958265a077f2cd"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_generic_d23_affine_line_rank_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-projective-g-zero-generic-d23-affine-line-rank/verify_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_generic_d23_affine_line_rank_obstruction.py",
+      "source_blob": "e78531a3e8a38afd5759f01a2ca9c13309c371c1"
+    },
+    {
+      "old_path": "verify_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_k_zero_generic_d23_rank_obstruction.py",
+      "new_path": "claims/p5/h22/unequal-endpoint-inward-star-component-projective-g-zero-k-zero-generic-d23-rank/verify_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_k_zero_generic_d23_rank_obstruction.py",
+      "source_blob": "445b5919917ebd81db949ab5f48860b3186cd4d8"
+    }
+  ],
+  "rationale": "Move the complete corrected 351-source H22 ownership envelope: 311 ordinary claim-owned carriers and 40 unchanged-status artifacts in the neutral disputed p+q wall package; preserve direct document/carrier pairs and taper the mixed Component20 shared core after the pure move.",
+  "notes": "Refrozen after fresh semantic and mechanical referee rejection of the first mapping. No scientific status change. Global Krenn-Gu remains UNRESOLVED."
+}

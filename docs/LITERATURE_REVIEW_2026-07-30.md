@@ -321,7 +321,7 @@ order of operations: find the Fitting support and its kernel sheaf
 before eliminating marking variables.
 
 The weighted `H22` fibre needs no new elimination:
-[`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
 One weighted diagonal map preserves the suspended coordinate and hence
 has an identically zero all-alpha coefficient.  The other merely
 moves the projected mode-zero line from
@@ -344,7 +344,7 @@ normalized `H31` chart and illustrates the broader strategy:
 degeneracy support first, kernel sheaf second, compatibility last.
 
 The weighted boundary confirms that this order is not merely generic:
-[`P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md`](../P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md).
+[`P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md`](../claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md).
 Intersecting the moving projected line with the arrangement leaves
 four symbolic strata and six marked families.  Their obstructions are
 factor covers by tiny one-marked determinants, except at two deepest
@@ -354,7 +354,7 @@ kernel-sheaf gluing problem: local Fitting generators may vanish while
 two source directions still generate the full fibre.
 
 The qualitatively different collapse `rS=1,T=rU` is now closed too:
-[`P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md`](../P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md).
+[`P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md`](../claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md).
 Instead of taking a non-flat limit of the first line arrangement, use
 the second marked contraction required by `H22`.  It becomes a
 `7 x 6` matrix pencil with maximal minors supported only at
@@ -770,7 +770,7 @@ calculation.
 
 The weighted continuation of the tenth component adds a useful caution to
 that translation:
-[`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md`](../P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md).
+[`P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md`](../claims/p5/h22/two-rank-two-spoke-mixed-star/P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_DENSE_MARKING_OBSTRUCTION.md).
 The Cayley map polynomializes the torus multiplication graph, but the
 Hadamard block coordinates `(a,a_bar,b,b_bar)` do not preserve the
 squarefree permanent.  The correct calculation uses the toric coordinates

@@ -16,8 +16,13 @@ operations, every reference to a moved file must be re-anchored:
   2. Fenced replay commands: ``python <script>.py [args]``,
      ``uv run ... python <script>.py``, and continuation-line
      ``python \\`` + ``<script>.py`` commands inside ```text/```bash
-     blocks are rewritten to the script's new root-relative path when
-     the script was moved and its basename is unambiguous.  The
+     blocks, plus ``command: ... python <script>.py`` fields inside
+     fenced YAML evidence headers or Markdown YAML front matter, are
+     rewritten to the script's new root-relative path when moved.  The
+     same rule covers fenced ``ruff check <script>.py`` and
+     ``python -m py_compile <script>.py`` QA commands.  In every form,
+     rewriting occurs only when the script was moved and its basename is
+     unambiguous.  The
      grammar lives in ``replay_command.py`` and is shared with the
      stale-reference scanner, so the two machines cannot drift.  Other
      code-block content is untouched.
@@ -217,15 +222,21 @@ def rewrite_markdown(old_to_new: dict, sources: list[str],
         lines = new_text.splitlines()
         out_lines = []
         in_fence = False
+        in_front_matter = bool(lines and lines[0].strip() == "---")
         i = 0
         while i < len(lines):
             line = lines[i]
+            if in_front_matter and i > 0 and line.strip() == "---":
+                in_front_matter = False
+                out_lines.append(line)
+                i += 1
+                continue
             if FENCE.match(line):
                 in_fence = not in_fence
                 out_lines.append(line)
                 i += 1
                 continue
-            if in_fence:
+            if in_fence or in_front_matter:
                 rm = match_replay(lines, i)
                 if rm:
                     base, end, form = rm

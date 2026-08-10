@@ -8,7 +8,7 @@ incidence on component 23 is empty for every affine marking.
 
 This result combines the \(\lambda=0\) specialization of the selected minor
 in
-[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md`](../../../../P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md)
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md`](../common-center-kernel-star-component-finite-all-marking-dense-open-supplement/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md)
 with three exact row-module computations below.  It does not close the
 ordinary finite residual away from \(\lambda=0,\pm1\), the complete generic
 finite fibre, or the global Krenn--Gu conjecture.
@@ -72,7 +72,7 @@ finite-field calculation is used in the generic proof.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_finite_all_marking_dense_open_supplement.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-finite-all-marking-dense-open-supplement/verify_p5_h22_common_center_kernel_star_component_finite_all_marking_dense_open_supplement.py
 uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-finite-lambda-zero-all-marking/verify_p5_h22_common_center_kernel_star_component_finite_lambda_zero_all_marking_obstruction.py
 uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-finite-lambda-zero-all-marking/audit_p5_h22_common_center_kernel_star_component_finite_lambda_zero_all_marking_obstruction.py
 ```

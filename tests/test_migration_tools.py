@@ -272,6 +272,46 @@ class RewriteMarkdownTests(unittest.TestCase):
             "claims/p5/h22/pkg/verify_a.py --limit 2",
             read_md(self.tmp, "README.md"))
 
+    def test_replay_yaml_command_field(self):
+        write_md(self.tmp, "README.md",
+                 "```yaml\ncommand: uv run --with sympy python "
+                 "verify_a.py --limit 2\n```\n")
+        stats = rewrite_markdown(self.m, ["README.md"], self.tmp)
+        self.assertEqual(stats["replay_rewritten"], 1)
+        self.assertIn(
+            "command: uv run --with sympy python "
+            "claims/p5/h22/pkg/verify_a.py --limit 2",
+            read_md(self.tmp, "README.md"))
+
+    def test_replay_yaml_front_matter_command_field(self):
+        write_md(self.tmp, "README.md",
+                 "---\ncommand: uv run --with sympy python "
+                 "verify_a.py --limit 2\n---\n\n# Report\n")
+        stats = rewrite_markdown(self.m, ["README.md"], self.tmp)
+        self.assertEqual(stats["replay_rewritten"], 1)
+        self.assertIn(
+            "command: uv run --with sympy python "
+            "claims/p5/h22/pkg/verify_a.py --limit 2",
+            read_md(self.tmp, "README.md"))
+
+    def test_replay_ruff_check(self):
+        write_md(self.tmp, "README.md",
+                 "```text\nuv run --with ruff ruff check verify_a.py\n```\n")
+        stats = rewrite_markdown(self.m, ["README.md"], self.tmp)
+        self.assertEqual(stats["replay_rewritten"], 1)
+        self.assertIn(
+            "ruff check claims/p5/h22/pkg/verify_a.py",
+            read_md(self.tmp, "README.md"))
+
+    def test_replay_py_compile(self):
+        write_md(self.tmp, "README.md",
+                 "```text\npython -m py_compile verify_a.py\n```\n")
+        stats = rewrite_markdown(self.m, ["README.md"], self.tmp)
+        self.assertEqual(stats["replay_rewritten"], 1)
+        self.assertIn(
+            "python -m py_compile claims/p5/h22/pkg/verify_a.py",
+            read_md(self.tmp, "README.md"))
+
     def test_replay_continuation_line_form(self):
         # Stage 4 mixed-orientation / Stage 3 disjoint-mixed-star form:
         # `python \` + indented script name.
@@ -377,6 +417,31 @@ class ReplayCommandGrammarTests(unittest.TestCase):
         self.assertEqual(
             self._match("uv run --with sympy python verify_a.py"),
             [("verify_a.py", 0, "line")])
+
+    def test_yaml_command_field(self):
+        self.assertEqual(
+            self._match(
+                "command: uv run --with sympy python verify_a.py"),
+            [("verify_a.py", 0, "line")])
+
+    def test_ruff_check(self):
+        self.assertEqual(
+            self._match(
+                "uv run --with ruff ruff check verify_a.py"),
+            [("verify_a.py", 0, "line")])
+
+    def test_py_compile(self):
+        self.assertEqual(
+            self._match("python -m py_compile verify_a.py"),
+            [("verify_a.py", 0, "line")])
+
+    def test_multi_target_qa_is_not_partially_matched(self):
+        self.assertEqual(
+            self._match(
+                "python -m py_compile verify_a.py audit_a.py"), [])
+        self.assertEqual(
+            self._match(
+                "uv run --with ruff ruff check verify_a.py audit_a.py"), [])
 
     def test_continuation(self):
         self.assertEqual(self._match("python \\\n  verify_a.py"),
@@ -853,6 +918,34 @@ class StaleReferenceTests(unittest.TestCase):
         text = "run: python " + self.BASE + "\n"
         hits = find_stale_bare_refs(text, ".github/x.yml", self.MOVED)
         self.assertTrue(any(ctx == "command reference"
+                            for ctx, b in hits), hits)
+
+    def test_markdown_yaml_command_reference_fails(self):
+        text = ("```yaml\ncommand: uv run --with sympy python "
+                + self.BASE + "\n```\n")
+        hits = find_stale_bare_refs(text, "README.md", self.MOVED)
+        self.assertTrue(any(ctx == "fenced replay command"
+                            for ctx, b in hits), hits)
+
+    def test_markdown_yaml_front_matter_command_reference_fails(self):
+        text = ("---\ncommand: uv run --with sympy python "
+                + self.BASE + "\n---\n")
+        hits = find_stale_bare_refs(text, "README.md", self.MOVED)
+        self.assertTrue(any(ctx == "fenced replay command"
+                            for ctx, b in hits), hits)
+
+    def test_ruff_check_reference_fails(self):
+        text = ("```text\nuv run --with ruff ruff check "
+                + self.BASE + "\n```\n")
+        hits = find_stale_bare_refs(text, "README.md", self.MOVED)
+        self.assertTrue(any(ctx == "fenced replay command"
+                            for ctx, b in hits), hits)
+
+    def test_py_compile_reference_fails(self):
+        text = ("```text\npython -m py_compile "
+                + self.BASE + "\n```\n")
+        hits = find_stale_bare_refs(text, "README.md", self.MOVED)
+        self.assertTrue(any(ctx == "fenced replay command"
                             for ctx, b in hits), hits)
 
 
@@ -1942,6 +2035,7 @@ class EvidenceSemanticsContractTests(unittest.TestCase):
         entry = next(
             e for e in ledger["entries"]
             if e["document"] ==
+            "claims/p5/h22/component19-p0-ordinary-boundary/"
             "P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md")
         self.assertEqual(entry["status"], "exploratory")
         self.assertIn("the representative component-19 frozen certificate "

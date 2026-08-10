@@ -343,4 +343,4 @@ its projective compactification is closed separately in
 [`P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md`](P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md).
 Hence the complete marked `H31` fibre of the ninth component is empty.
 Its generic weighted `H22` fibre is closed separately in
-[`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](../../../../P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md`](../../h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md).

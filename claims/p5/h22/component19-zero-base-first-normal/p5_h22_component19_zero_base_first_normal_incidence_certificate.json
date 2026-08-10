@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "role": "construction",
+  "date_utc": "2026-08-01T17:32:50Z",
+  "git_commit": "ac0853455c978628c6f685e826f78275591d639a",
+  "claim_label": "CANDIDATE",
+  "scope": "regular first-normal weighted-H22 incidence over component 19 Z0 and P1_[a:b], r!=0",
+  "inputs": {
+    "P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md": "ce333e8605b78e17c2e6b7cfe91fd369e89afe0d3aed65c7df35f82fee319634",
+    "p5_h22_component19_zero_base_first_normal_geometry_certificate.json": "aef13b3efe1183db5b8b3133fe9c2ce539dfe1e61e3fdc23771677884d01b147"
+  },
+  "method": "direct D01 coefficient syzygies plus sixteen bounded shared characteristic-zero unit-ideal eliminations",
+  "command": "uv run --with sympy python claims/p5/h22/component19-zero-base-first-normal/derive_p5_h22_component19_zero_base_first_normal_candidate.py",
+  "normal_direction_cover": ["a!=0: [1:s]", "b!=0: [t:1]"],
+  "homogeneous_weight_cover": ["finite [lambda:1]", "infinity [1:0]"],
+  "a_nonzero_chart_structural_obstruction": {
+    "definitions": {
+      "S": "r*x2-x1",
+      "R": "r*x1-x2",
+      "finite_weight_factor": "w=lambda-1",
+      "infinity_weight_factor": "w=1"
+    },
+    "identities": [
+      "A01=2*w*S",
+      "m1000=h0*A01",
+      "m0001=2*w*(s*R+h3*S)",
+      "after h0=h3=0: m1001=-2*w*R",
+      "after h0=h3=0 and x2=r*x1: B01=h1*m1011+h2*m1101"
+    ],
+    "deduction": "A01 and B01 cannot both be nonzero when all mixed coefficients vanish"
+  },
+  "b_nonzero_chart": {
+    "t_zero_endpoint": "A01=0 identically in both weight charts",
+    "t_nonzero": "transported to the a-nonzero chart by a determinant-one transition"
+  },
+  "shared_diagonal_open_cover": [
+    ["A01", "B01", "A23"],
+    ["A01", "B01", "B23"],
+    ["A23", "B23", "A01"],
+    ["A23", "B23", "B01"]
+  ],
+  "elimination_audits": {
+    "count": 16,
+    "systems": "2 direction charts x 2 weight charts x 4 shared diagonal opens",
+    "normalization": "first selected diagonal equals 1",
+    "saturation": "other two selected diagonals are nonzero, and r!=0",
+    "retained": "all markings, direction coordinate, finite weight coordinate, and r in parameter-aware runs",
+    "all_projected_ideals": ["1"]
+  },
+  "A01_orientation_D01_binary_incidence_empty": true,
+  "shared_D01_D23_incidence_empty": true,
+  "target_compatibility": "empty after the complete four-open shared diagonal cover",
+  "first_normal_weighted_H22_fibre_empty_candidate": true,
+  "higher_order": {
+    "first_nonzero_tensor_direction": "same P1 classification for every arc not contained in Z0",
+    "actual_higher_order_or_ramified_H22_arc": "UNKNOWN",
+    "blocker": "simultaneous valuations of markings, extensions, and diagonal normalizations are not classified"
+  },
+  "finite_field_computation_used": false,
+  "generic_specialization_used_as_proof": false,
+  "broad_brute_force_used": false,
+  "limitations": [
+    "Construction result remains CANDIDATE pending independent verification.",
+    "The conclusion is first-normal/projectivized incidence only.",
+    "The formal r=0 limit, arbitrary-order reduction, and the global conjecture are outside scope."
+  ]
+}
