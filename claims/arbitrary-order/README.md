@@ -38,6 +38,17 @@ rank-two update cancellation is isolated to characteristic two.  The external
 build and definition correspondence remain pending.  This is a proved route
 boundary, not a Krenn--Gu counterexample.
 
+The
+[`balanced half-sensor theorem`](BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md)
+gives an exact universal dichotomy without choosing a fixed residual depth.
+On any generically full balanced sensor, its `2^(m-1)` columns expose the
+complete even principal hafnian deck, and one projective global section plus
+the all-order Wick criterion is necessary and sufficient for a same-graph
+extension.  The alternative where every balanced partition is identically
+rank-deficient is a proper closed boundary only in the ambient block-graph
+space; it is not excluded inside the hypothetical-witness locus.  The global
+conjecture therefore remains unresolved.
+
 At the Stage 27 boundary, the owner-gated H22/H31, Component20/21/23,
 high-coordinate, and mixed-lifecycle conflict surfaces were excluded from
 that batch and remained at root, unmoved and unadjudicated at that stage.

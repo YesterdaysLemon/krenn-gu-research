@@ -4,13 +4,14 @@
 
 The global Krenn--Gu conjecture remains **UNRESOLVED**. This document records
 the next exact symbolic obligations after the repository root exit.  The
-current checkpoint adds one exact arbitrary-order all-bridge theorem and one
-proved boundary for a characteristic-two route; neither closes the global
-extraction/gluing obligation or changes global status.
+current checkpoint adds exact arbitrary-order all-bridge and balanced-sensor
+theorems plus one proved boundary for a characteristic-two route.  None
+closes both branches of the global extraction/gluing obligation or changes
+global status.
 
 The operational base for this checkpoint is merged `main` at
-`84a2b6616e5d589156aac114d5fb6b8d87ac85cc`.  Its push hygiene workflow
-completed successfully in run `31421033178`.
+`633e1015b47421d5a857359548fe922d586ddc31`.  Its push hygiene workflow
+completed successfully in run `31422560905`.
 
 - Stage 33 moved the final 305 root-debt artifacts through PR #69 and merged as
   `4263832e3ff338c5bd87528268cb8cb563866ec0`; both exact-head and exact
@@ -197,6 +198,25 @@ automatic counterexample or global-status change.
 
 ## P6/arbitrary-order boundary
 
+### Balanced complete-deck sensor
+
+For every balanced partition of `n=2m` vertices, restricting a perfect
+matching to one half gives exactly `2^(m-1)` companion columns.  Their
+coefficients are every even principal hafnian of the other half, including
+the empty coefficient, all pair blocks, and all higher even depths.  An
+explicit physical chart has full column rank at every order, and for `m>=3`
+one such chart is disjoint from the ternary diagonal target plane.
+
+Hence every hypothetical witness obeys an exact dichotomy: some balanced
+partition is generically full-sensor, in which case the target has one unique
+rational complete-deck lift that must be pole-free, normalized, and
+log-quadratic; or every balanced partition is identically rank-deficient.
+The latter is a proper closed locus in ambient block-graph space but has not
+been excluded inside the witness incidence variety.  Passing the former's
+global Wick gate would construct an exact counterexample and therefore
+triggers the global-resolution audit.  See
+[`BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md`](../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md).
+
 ### New all-bridge closure
 
 In the simultaneous balanced all-bridge branch, let `D` be the physical graph
@@ -257,10 +277,12 @@ fibre-invariant. A viable P6 continuation must synchronize mixed-colour,
 four-deck, or even-Wick data on one legal graph; repeating scalar-face or
 single-fibre exclusions cannot close it.
 
-The arbitrary-order two-port factorization remains a valid bridge, but the
-coordinate-monomial alternative and all-full-span gluing remain open. The
-five-port pentad is exact, while the present null-polar implementation makes it
-vanish termwise. Neither route currently closes local-to-global gluing.
+The arbitrary-order two-port factorization remains a valid bridge.  The
+balanced full-sensor branch labels its coordinate-monomial residual edge as
+one pair member of the complete deck, but the all-balanced rank-drop branch
+and all-full-span gluing remain open.  The five-port pentad is exact, while
+the present null-polar implementation makes it vanish termwise.  Neither
+route currently closes local-to-global gluing.
 
 ## Closed traps and non-evidence
 
