@@ -20,14 +20,14 @@
     "total_classified_moves": 2244,
     "moved": 1828,
     "pilot": 0,
-    "proposed_high_confidence": 22,
-    "review_required": 394,
+    "proposed_high_confidence": 26,
+    "review_required": 390,
     "unclassified": 119,
     "root_files_before": 2363,
     "root_dirs_before": 3,
     "root_entries_before": 2366,
     "projected_root_if_moved_only": 544,
-    "projected_root_if_high_confidence_batches_executed": 522,
+    "projected_root_if_high_confidence_batches_executed": 518,
     "projected_root_if_all_classified_executed": 128,
     "projection_note": "unclassified files are not members of any move set, so every projection already leaves them at the root; do not add unclassified again",
     "collisions": 0,
@@ -14511,33 +14511,33 @@
       "old_path": "P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md",
       "new_path": "claims/p5/h31/component-chart-boundary-marked-fibre/P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md",
       "reason": "claim_document -> p5/h31/component-chart-boundary-marked-fibre",
-      "status": "review_required",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/component-chart-boundary-marked-fibre",
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "old_path": "audit_p5_h31_component_chart_boundary_marked_fibre.py",
       "new_path": "claims/p5/h31/component-chart-boundary-marked-fibre/audit_p5_h31_component_chart_boundary_marked_fibre.py",
       "reason": "claim_script -> p5/h31/component-chart-boundary-marked-fibre",
-      "status": "review_required",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/component-chart-boundary-marked-fibre",
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "old_path": "derive_p5_h31_chart_boundary_marked_fibre_elimination.py",
       "new_path": "claims/p5/h31/component-chart-boundary-marked-fibre/derive_p5_h31_chart_boundary_marked_fibre_elimination.py",
       "reason": "claim_script -> p5/h31/component-chart-boundary-marked-fibre",
-      "status": "review_required",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/component-chart-boundary-marked-fibre",
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "old_path": "verify_p5_h31_component_chart_boundary_marked_fibre.py",
       "new_path": "claims/p5/h31/component-chart-boundary-marked-fibre/verify_p5_h31_component_chart_boundary_marked_fibre.py",
       "reason": "claim_script -> p5/h31/component-chart-boundary-marked-fibre",
-      "status": "review_required",
+      "status": "proposed_high_confidence",
       "claim_family": "p5/h31/component-chart-boundary-marked-fibre",
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "old_path": "P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md",
