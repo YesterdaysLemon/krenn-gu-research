@@ -356,6 +356,27 @@ sets need not propagate, and the erased multi-root branch is still open.
 See
 [`MATRIX_UNIT_CROSS_PARITY_ERASURE_RIGID_HEAD_WICK_AND_BRIDGE_CORE_REDUCTION_THEOREM.md`](../claims/arbitrary-order/MATRIX_UNIT_CROSS_PARITY_ERASURE_RIGID_HEAD_WICK_AND_BRIDGE_CORE_REDUCTION_THEOREM.md).
 
+The exact-word gap cannot be removed by the currently available local
+promotions.  A binary bridge square flips all four endpoint labels; a
+ternary bridge hexagon flips all six and does not supply the three different
+diagonal pairs required by the original word.  A complete order-six
+matrix-unit graph realizes `+/-e_a^(tensor 6)` while satisfying parity
+support, every mixed cancellation, and the relevant full rigid-head Wick
+towers and anchored cuts.  Thus those equations do not synchronize even the
+binary square, but the graph lacks the other two pure targets.
+
+Pure activation alone also fails.  A second complete order-six graph has
+three unique pure matchings, every pure-edge cofactor equal to one, and an
+exact two-term cancellation of the selected bridge word.  No diagonal
+matching induces that word; the cancellation travels through an external
+four-cycle.  The graph has an explicit different forbidden coefficient, so
+it is not a witness.  In general, a diagonal matching for a word exists
+exactly when every pure support graph induced on a word shore has a perfect
+matching, equivalently when its Tutte inequalities hold.  The smallest
+positive obligation is now to force those word-shore conditions from higher
+mixed identities, or find a different global rematching theorem.  See
+[`MATRIX_UNIT_BRIDGE_WORD_SYNCHRONIZATION_AND_WICK_SHARPNESS_BOUNDARY.md`](../claims/arbitrary-order/MATRIX_UNIT_BRIDGE_WORD_SYNCHRONIZATION_AND_WICK_SHARPNESS_BOUNDARY.md).
+
 ### New all-bridge closure
 
 In the simultaneous balanced all-bridge branch, let `D` be the physical graph

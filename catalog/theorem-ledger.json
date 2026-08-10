@@ -82,7 +82,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "a215ba2c9e1fd458",
+      "document_sha256_16": "2256187bb842350a",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -708,6 +708,37 @@
         "MATRIX_UNIT_CROSS_PARITY_ERASURE_RIGID_HEAD_WICK_AND_BRIDGE_CORE_REDUCTION_THEOREM.md",
         "audit_matrix_unit_cross_parity_rigid_head_wick.py",
         "verify_matrix_unit_cross_parity_rigid_head_wick.py"
+      ]
+    },
+    {
+      "name": "Matrix-Unit Bridge Word Synchronization and Wick Sharpness Boundary",
+      "document": "claims/arbitrary-order/MATRIX_UNIT_BRIDGE_WORD_SYNCHRONIZATION_AND_WICK_SHARPNESS_BOUNDARY.md",
+      "document_sha256_16": "f38a36e3c24fa298",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero matrix-unit matching and word-shore arguments over C",
+        "the local square and hexagon word-flip conclusions are conditional on the hypotheses and promoted units of the imported bridge theorem",
+        "the first complete six-vertex gadget realizes only a signed single-colour pure tensor and is not a ternary bridge-hex sharpness example",
+        "the second complete six-vertex relay has all pure targets and pure-edge cofactors active but has an explicit nonzero forbidden coefficient",
+        "Tutte's criterion concerns existence of a word-shore diagonal matching and does not by itself control weighted mixed-word cancellation",
+        "neither gadget is a Krenn-Gu witness or counterexample",
+        "whether higher mixed identities force word-shore Tutte conditions or another global rematching mechanism remains open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_matrix_unit_bridge_word_synchronization_and_wick_sharpness.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_matrix_unit_bridge_word_synchronization_and_wick_sharpness.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "The written proofs establish the conditional local word flips, the first gadget's parity/Wick boundary, the pure-active relay, and the word-shore matching equivalence. The primary checks both six-vertex gadgets. The no-import audit independently recomputes the relay and local word flips only; it does not audit the first gadget's full Wick tower or replace the universal written arguments. Both examples are exact route countermechanisms, and the global conjecture remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "MATRIX_UNIT_BRIDGE_WORD_SYNCHRONIZATION_AND_WICK_SHARPNESS_BOUNDARY.md",
+        "audit_matrix_unit_bridge_word_synchronization_and_wick_sharpness.py",
+        "verify_matrix_unit_bridge_word_synchronization_and_wick_sharpness.py"
       ]
     },
     {
@@ -2124,7 +2155,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "a215ba2c9e1fd458",
+      "document_sha256_16": "2256187bb842350a",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -2267,7 +2298,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "a215ba2c9e1fd458",
+      "document_sha256_16": "2256187bb842350a",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
