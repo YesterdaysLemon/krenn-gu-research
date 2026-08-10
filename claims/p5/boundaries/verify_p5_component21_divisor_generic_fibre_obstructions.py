@@ -22,7 +22,7 @@ from derive_p5_h22_coincident_support_rank_one_star_component_generic_obstructio
     WORDS,
     build_model,
 )
-from verify_p5_h31_marked_basis_open_branch import (
+from krenn_gu.p5_marked_basis import (
     marked_extension,
     mixed_matrix,
     one_marked_map,

@@ -1,6 +1,6 @@
 # Findings — boundary-divisor atlas + slope-divisor closures (agent4)
 
-Companion to [`P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`](../../P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md)
+Companion to [`P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`](../../claims/p5/boundaries/P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md)
 (repo top level).  Exploration scripts and ledgers are in `scripts/`
 and this directory; the three THEOREM-GRADE verifiers live at the repo
 top level and were replayed green at integration:

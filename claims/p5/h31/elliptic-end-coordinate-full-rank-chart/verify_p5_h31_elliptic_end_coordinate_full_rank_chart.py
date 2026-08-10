@@ -9,12 +9,25 @@ from pathlib import Path
 
 import sympy as sp
 
-from verify_p5_h31_marked_basis_open_branch import mixed_matrix
+import sys
+
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+from krenn_gu.p5_marked_basis import mixed_matrix
 
 
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P5_H31_ELLIPTIC_END_COORDINATE_FULL_RANK_CHART.md"
-MIDDLE = ROOT / "P5_H31_ELLIPTIC_MIDDLE_COORDINATE_RANK_DROP.md"
+MIDDLE = REPO_ROOT / 'claims/p5/h31/elliptic-middle-coordinate-rank-drop/P5_H31_ELLIPTIC_MIDDLE_COORDINATE_RANK_DROP.md'
 PIVOT_ROWS = (0, 1, 2, 3, 4, 9)
 PIVOT_COLUMNS = (0, 1, 2, 3, 4, 6)
 
@@ -201,8 +214,7 @@ def main() -> None:
         "source_sha256": sha256(Path(__file__)),
     }
     output_path = (
-        ROOT / "tmp"
-        / "p5_h31_elliptic_end_coordinate_full_rank_chart_verified.json"
+        REPO_ROOT / 'tmp/p5_h31_elliptic_end_coordinate_full_rank_chart_verified.json'
     )
     output_path.parent.mkdir(exist_ok=True)
     output_path.write_text(

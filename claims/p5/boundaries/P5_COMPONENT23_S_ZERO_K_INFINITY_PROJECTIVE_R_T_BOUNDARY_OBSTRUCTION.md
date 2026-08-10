@@ -211,8 +211,8 @@ projective `r/t` boundary.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_component23_s_zero_k_infinity_projective_r_t_boundary_obstruction.py
-uv run --with sympy python audit_p5_component23_s_zero_k_infinity_projective_r_t_boundary_obstruction.py
+uv run --with sympy python claims/p5/boundaries/verify_p5_component23_s_zero_k_infinity_projective_r_t_boundary_obstruction.py
+uv run --with sympy python claims/p5/boundaries/audit_p5_component23_s_zero_k_infinity_projective_r_t_boundary_obstruction.py
 ```
 
 The primary reconstructs both boundary limits, the double endpoint, all

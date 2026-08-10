@@ -9,6 +9,20 @@ import math
 from collections import Counter
 
 from sympy import Integer, Matrix, Rational, eye, simplify, sqrt, zeros
+import sys
+from pathlib import Path
+
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 
 
 SHAPE = (2, 2, 2)

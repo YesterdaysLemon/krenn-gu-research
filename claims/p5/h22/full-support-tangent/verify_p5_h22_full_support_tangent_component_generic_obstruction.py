@@ -27,8 +27,8 @@ from verify_p5_h31_full_support_tangent_component_generic_obstruction import (
     shifted_beta,
     singular,
 )
-from verify_p5_h31_marked_basis_open_branch import mixed_matrix as h31_mixed_matrix
-from verify_p5_h31_marked_basis_open_branch import marked_extension
+from krenn_gu.p5_marked_basis import mixed_matrix as h31_mixed_matrix
+from krenn_gu.p5_marked_basis import marked_extension
 
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))

@@ -189,10 +189,10 @@ marked H31 fibre(component 20, finite normalized D!=0 sheet)=empty. (13)
 
 ```text
 uv run --with sympy python \
-  verify_p5_h31_common_active_binary_triangle_normalized_affine_obstruction.py
+  claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_normalized_affine_obstruction.py
 
 uv run --with sympy python \
-  audit_p5_h31_common_active_binary_triangle_normalized_affine_obstruction.py
+  claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_normalized_affine_obstruction.py
 ```
 
 The primary verifier reconstructs (1)--(3), proves the projected ideals and

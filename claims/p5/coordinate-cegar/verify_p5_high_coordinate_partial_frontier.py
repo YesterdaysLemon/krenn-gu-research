@@ -26,93 +26,68 @@ DEPENDENCIES = (
     REPO_ROOT / "claims/p5/frontier/P5_Q4_211_EXCLUSION_THEOREM.md",
     REPO_ROOT / "claims/p5/boundaries/P5_Q5_221_FINAL_MONOTONE_BOUNDARY_OBSTRUCTION.md",
     REPO_ROOT / "claims/p5/coordinate-cegar/P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md",
-    ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md",
-    ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md",
+    REPO_ROOT / 'claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md',
+    REPO_ROOT / 'claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md',
     (
-    ROOT / "claims" / "p4" / "components" / "diagonal-quadric"
-    / "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md"),
+    REPO_ROOT / 'claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md'),
     REPO_ROOT / "claims/p4/classifications/P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md",
     REPO_ROOT / "claims/p4/boundaries/P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md",
-    ROOT / "claims" / "p4" / "classifications" / "star"
-    / "radical-star" / "P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md",
+    REPO_ROOT / 'claims/p4/classifications/star/radical-star/P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md',
     (
-    ROOT / "claims" / "p4" / "components" / "mixed-orientation"
-    / "P4_MIXED_ORIENTATION_PURE_COMPONENT.md"),
-    ROOT / "claims/p5/h31/mixed-orientation/P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
+    REPO_ROOT / 'claims/p4/components/mixed-orientation/P4_MIXED_ORIENTATION_PURE_COMPONENT.md'),
+    REPO_ROOT / 'claims/p5/h31/mixed-orientation/P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md',
     (
-    ROOT / "claims" / "p4" / "components" / "six-dimensional"
-    / "P4_SIX_DIMENSIONAL_PURE_COMPONENT.md"),
-    ROOT / "claims/p5/h31/six-dimensional/P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
-    ROOT
-    / "claims" / "p5" / "h22" / "six-dimensional"
-    / "P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md",
-    ROOT / "claims/p5/h22/six-dimensional/P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md",
-    ROOT / "claims/p5/h22/mixed-orientation/P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md",
-    ROOT / "claims/p5/h22/one-three-components"
-    / "P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md",
-    ROOT / "claims/p5/h22/first-rank-two"
-    / "P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md",
-    ROOT / "claims/p5/h22/diagonal-quadric/P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md",
-    ROOT / "claims/p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md",
-    ROOT / "claims/p5/h31/disjoint-mixed-star/P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
-    ROOT / "claims/p5/h22/disjoint-mixed-star"
-    / "P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md",
+    REPO_ROOT / 'claims/p4/components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md'),
+    REPO_ROOT / 'claims/p5/h31/six-dimensional/P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h22/six-dimensional/P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h22/six-dimensional/P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h22/mixed-orientation/P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h22/one-three-components/P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h22/first-rank-two/P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h22/diagonal-quadric/P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md',
+    REPO_ROOT / 'claims/p5/h31/disjoint-mixed-star/P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md',
     (
-    ROOT / "claims" / "p4" / "components" / "embedded-p3"
-    / "P4_EMBEDDED_P3_PURE_COMPONENT.md"),
-    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
-    / "P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
+    REPO_ROOT / 'claims/p4/components/embedded-p3/P4_EMBEDDED_P3_PURE_COMPONENT.md'),
+    REPO_ROOT / 'claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md',
     REPO_ROOT / "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
-    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
-    / "P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md",
-    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
-    / "P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md",
-    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
-    / "P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md",
-    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
-    / "P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md",
+    REPO_ROOT / 'claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_SUPPORT_TWO_BOUNDARY_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md',
     REPO_ROOT / "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md",
     REPO_ROOT / "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md",
     REPO_ROOT / "claims/p4/classifications/P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md",
-    ROOT / "claims/p5/h31/one-three"
-    / "P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md",
-    ROOT / "P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md",
-    ROOT / "P5_H31_DIAGONAL_QUADRIC_CURVE_MARKED_FIBRE_OBSTRUCTION.md",
-    ROOT / "P5_H31_DIAGONAL_QUADRIC_E_CURVE_MARKED_FIBRE_OBSTRUCTION.md",
-    ROOT
-    / "P5_H31_DIAGONAL_QUADRIC_PURE_DIRECTION_CURVE_MARKED_FIBRE_OBSTRUCTION.md",
-    ROOT / "P5_H31_DIAGONAL_QUADRIC_H0_RULING_MARKED_FIBRE_OBSTRUCTION.md",
-    ROOT / "P5_H31_DIAGONAL_QUADRIC_ELLIPTIC_GENERIC_OBSTRUCTION.md",
-    ROOT / "P5_H31_ELLIPTIC_MIDDLE_COORDINATE_RANK_DROP.md",
-    ROOT / "P5_H31_ELLIPTIC_MIDDLE_COORDINATE_PIVOT_COMPLEMENT.md",
-    ROOT / "P5_H31_ELLIPTIC_END_COORDINATE_FULL_RANK_CHART.md",
-    ROOT / "P5_H31_ELLIPTIC_END_GENUS_TWO_EXCEPTION_OBSTRUCTION.md",
-    ROOT / "P5_H31_ELLIPTIC_END_T2_DIVISOR_OBSTRUCTION.md",
-    ROOT / "P5_H31_ELLIPTIC_END_T3_DIVISOR_OBSTRUCTION.md",
-    ROOT / "P5_H31_DIAGONAL_QUADRIC_NORMALIZATION_BOUNDARY_OBSTRUCTION.md",
-    ROOT / "P5_H31_DIAGONAL_QUADRIC_OUTER_BOUNDARY_OBSTRUCTION.md",
-    ROOT / "P5_H31_KNOWN_RANK_TWO_FAMILY_OBSTRUCTION.md",
-    ROOT / "P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md",
-    ROOT
-    / "claims/p5/h31/component-chart-boundary/P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md",
+    REPO_ROOT / 'claims/p5/h31/one-three/P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h31/diagonal-quadric-component-point/P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h31/diagonal-quadric-curve-marked-fibre/P5_H31_DIAGONAL_QUADRIC_CURVE_MARKED_FIBRE_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h31/diagonal-quadric-e-curve-marked-fibre/P5_H31_DIAGONAL_QUADRIC_E_CURVE_MARKED_FIBRE_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h31/diagonal-quadric-pure-direction-curve-marked-fibre/P5_H31_DIAGONAL_QUADRIC_PURE_DIRECTION_CURVE_MARKED_FIBRE_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h31/diagonal-quadric-h0-ruling-marked-fibre/P5_H31_DIAGONAL_QUADRIC_H0_RULING_MARKED_FIBRE_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h31/diagonal-quadric-elliptic/P5_H31_DIAGONAL_QUADRIC_ELLIPTIC_GENERIC_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h31/elliptic-middle-coordinate-rank-drop/P5_H31_ELLIPTIC_MIDDLE_COORDINATE_RANK_DROP.md',
+    REPO_ROOT / 'claims/p5/h31/elliptic-middle-coordinate-pivot-complement/P5_H31_ELLIPTIC_MIDDLE_COORDINATE_PIVOT_COMPLEMENT.md',
+    REPO_ROOT / 'claims/p5/h31/elliptic-end-coordinate-full-rank-chart/P5_H31_ELLIPTIC_END_COORDINATE_FULL_RANK_CHART.md',
+    REPO_ROOT / 'claims/p5/h31/elliptic-end-genus-two-exception/P5_H31_ELLIPTIC_END_GENUS_TWO_EXCEPTION_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h31/elliptic-end-t2-divisor/P5_H31_ELLIPTIC_END_T2_DIVISOR_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h31/elliptic-end-t3-divisor/P5_H31_ELLIPTIC_END_T3_DIVISOR_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h31/diagonal-quadric-normalization-boundary/P5_H31_DIAGONAL_QUADRIC_NORMALIZATION_BOUNDARY_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h31/disputed-ownership/first-second-component-provenance/diagonal-quadric-outer-boundary/P5_H31_DIAGONAL_QUADRIC_OUTER_BOUNDARY_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h31/known-rank-two-family/P5_H31_KNOWN_RANK_TWO_FAMILY_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h31/rank-two-component-orbit/P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h31/component-chart-boundary/P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md',
     ROOT / "P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md",
-    ROOT / "P5_H31_MARKED_BASIS_OPEN_BRANCH.md",
-    ROOT / "P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md",
-    ROOT
-    / "claims/p5/h31/component-fiber-infinity/P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md",
-    ROOT
-    / "claims/p5/h31/component-fibre-infinity-marked-fibre"
-    / "P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md",
-    ROOT / "claims" / "p5" / "h31" / "internal-e0-marked-fibre"
-    / "P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md",
-    ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/boundaries/P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md",
-    ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md",
-    ROOT / "claims" / "p5" / "h31" / "toric-marked-fibre"
-    / "P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md",
-    ROOT / "claims/p5/h31/single-gate-rank-two-m-exclusion"
-    / "P5_H31_SINGLE_GATE_RANK_TWO_M_EXCLUSION.md",
-    ROOT / "claims/p5/h31/secondary-gate-exclusion"
-    / "P5_H31_SECONDARY_GATE_EXCLUSION.md",
+    REPO_ROOT / 'claims/p5/h31/marked-basis-open-branch/P5_H31_MARKED_BASIS_OPEN_BRANCH.md',
+    REPO_ROOT / 'claims/p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification/P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md',
+    REPO_ROOT / 'claims/p5/h31/component-fiber-infinity/P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h31/component-fibre-infinity-marked-fibre/P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h31/internal-e0-marked-fibre/P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p4/classifications/pair-geometry/pure-rank-two/boundaries/P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md',
+    REPO_ROOT / 'claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md',
+    REPO_ROOT / 'claims/p5/h31/toric-marked-fibre/P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md',
+    REPO_ROOT / 'claims/p5/h31/single-gate-rank-two-m-exclusion/P5_H31_SINGLE_GATE_RANK_TWO_M_EXCLUSION.md',
+    REPO_ROOT / 'claims/p5/h31/secondary-gate-exclusion/P5_H31_SECONDARY_GATE_EXCLUSION.md',
 )
 
 
@@ -439,7 +414,7 @@ def main() -> None:
         "source": Path(__file__).name,
         "source_sha256": sha256(Path(__file__)),
     }
-    output_path = ROOT / "tmp" / "p5_high_coordinate_partial_frontier_verified.json"
+    output_path = REPO_ROOT / 'tmp/p5_high_coordinate_partial_frontier_verified.json'
     output_path.parent.mkdir(exist_ok=True)
     output_path.write_text(
         json.dumps(output, indent=2) + "\n",

@@ -27,7 +27,7 @@ v=pA+qB+C,       u=v+A-B.                            (1)
 ```
 
 For the normalized family in
-[`P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md`](claims/p4/classifications/triangle-211/common-active-binary-triangle/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md),
+[`P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md`](../../../p4/classifications/triangle-211/common-active-binary-triangle/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md),
 write the two rows of `U0` as
 
 ```text
@@ -197,10 +197,10 @@ generic marked H31 fibre(component 20)=empty.        (15)
 
 ```text
 uv run --with sympy python \
-  verify_p5_h31_common_active_binary_triangle_component_generic_obstruction.py
+  claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_component_generic_obstruction.py
 
 uv run --with sympy python \
-  audit_p5_h31_common_active_binary_triangle_component_generic_obstruction.py
+  claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_component_generic_obstruction.py
 ```
 
 The verifier reconstructs (1)--(5), checks all sixteen pure coefficients,

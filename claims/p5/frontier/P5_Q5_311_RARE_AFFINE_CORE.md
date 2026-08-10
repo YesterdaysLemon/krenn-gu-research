@@ -136,7 +136,7 @@ unit-ideal certificate, but its contradiction needs higher-degree
 polynomial multipliers.
 
 The uniform finite observation in
-[`P5_Q5_311_RARE_SLICE_REDUCTION.md`](../../../P5_Q5_311_RARE_SLICE_REDUCTION.md)
+[`P5_Q5_311_RARE_SLICE_REDUCTION.md`](P5_Q5_311_RARE_SLICE_REDUCTION.md)
 is broader: rare-colour mixed equations plus all three pure nonvanishing
 conditions exclude all 300 charts in one frozen continuation ledger.  A
 human proof still needs to transport identities such as (1)--(2) across

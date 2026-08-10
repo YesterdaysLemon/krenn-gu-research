@@ -9,7 +9,20 @@ from pathlib import Path
 
 import sympy as sp
 
-from verify_p5_h31_marked_basis_open_branch import (
+import sys
+
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+from krenn_gu.p5_marked_basis import (
     marked_extension,
     mixed_matrix,
     one_marked_map,
@@ -18,9 +31,9 @@ from verify_p5_h31_marked_basis_open_branch import (
 
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md"
-FAMILY = ROOT / "claims/p4/classifications/pair-geometry/decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md"
-COMPONENT = ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
-OPEN_BRANCH = ROOT / "P5_H31_MARKED_BASIS_OPEN_BRANCH.md"
+FAMILY = REPO_ROOT / 'claims/p4/classifications/pair-geometry/decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md'
+COMPONENT = REPO_ROOT / 'claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md'
+OPEN_BRANCH = REPO_ROOT / 'claims/p5/h31/marked-basis-open-branch/P5_H31_MARKED_BASIS_OPEN_BRANCH.md'
 
 
 def sha256(path: Path) -> str:
@@ -1316,8 +1329,7 @@ def main() -> None:
         "source_sha256": sha256(Path(__file__)),
     }
     output_path = (
-        ROOT / "tmp"
-        / "p5_h31_marked_basis_fibre_classification_verified.json"
+        REPO_ROOT / 'tmp/p5_h31_marked_basis_fibre_classification_verified.json'
     )
     output_path.parent.mkdir(exist_ok=True)
     output_path.write_text(

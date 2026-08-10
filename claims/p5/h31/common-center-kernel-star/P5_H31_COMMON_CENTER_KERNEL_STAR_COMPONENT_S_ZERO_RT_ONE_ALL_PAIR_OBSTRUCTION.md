@@ -151,8 +151,8 @@ certificates (8)--(10) proves that the marked-`H31` fibre of (1) is empty.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h31_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py
-uv run --with sympy python audit_p5_h31_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py
+uv run --with sympy python claims/p5/h31/common-center-kernel-star/verify_p5_h31_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py
+uv run --with sympy python claims/p5/h31/common-center-kernel-star/audit_p5_h31_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py
 ```
 
 The primary verifier performs exact localized eliminations and symbolic

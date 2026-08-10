@@ -27,10 +27,10 @@ from derive_p5_h31_fibre_infinity_marked_fibre_elimination import (  # noqa: E40
     singular_program,
 )
 
-from p5_high_coordinate_tree_chart_cegar import (  # noqa: E402
+from krenn_gu.singular_runtime import (  # noqa: E402
     singular_command_with_timeout,
 )
-from verify_p5_h31_marked_basis_open_branch import (  # noqa: E402
+from krenn_gu.p5_marked_basis import (  # noqa: E402
     marked_extension,
     mixed_matrix,
     one_marked_map,

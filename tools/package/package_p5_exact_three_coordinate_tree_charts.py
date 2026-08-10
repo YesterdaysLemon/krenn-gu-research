@@ -8,17 +8,29 @@ import json
 import shutil
 from pathlib import Path
 
-import generate_p5_one_partial_support_system as GENERATOR
-from generate_p5_split_saturation_system import convert_text
+import sys
+
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/p5/coordinate-cegar")
+
+from krenn_gu import p5_support_system as GENERATOR
+from krenn_gu.p5_split_saturation import convert_text
 from p5_tree_chart_cover import coordinate_edges
 
 
 ROOT = Path(__file__).resolve().parent
-TMP = ROOT / "tmp"
+TMP = REPO_ROOT / 'tmp'
 DESTINATION = (
-    ROOT
-    / "research_snapshots"
-    / "2026-07-27-p5-tree-chart-cover"
+    REPO_ROOT / 'research_snapshots/2026-07-27-p5-tree-chart-cover'
 )
 SHAPE_INPUTS = {
     "c10": {
@@ -349,7 +361,7 @@ def main() -> None:
         json.dumps(
             {
                 "packaged": True,
-                "destination": str(DESTINATION.relative_to(ROOT)),
+                "destination": str(DESTINATION.relative_to(REPO_ROOT)),
                 "manifest_sha256": sha256(manifest_path),
                 "core_charts": manifest["core_charts"],
                 "shapes": {

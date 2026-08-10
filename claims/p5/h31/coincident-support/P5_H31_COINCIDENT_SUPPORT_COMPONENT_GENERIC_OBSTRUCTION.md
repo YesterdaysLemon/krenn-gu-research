@@ -259,7 +259,7 @@ mode 3; modes 0, 1, 2 all stay rank four.)
 ## Excluded divisors (atlas record)
 
 Following the conventions of
-[`P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`](../../../../P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md):
+[`P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`](../../boundaries/P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md):
 
 * chart/normalization divisors: `k=0` (pure coefficient `-2kP`; also
   the `k`-gauge) and `P=bec+b+e=0` (pure coefficient and validity of

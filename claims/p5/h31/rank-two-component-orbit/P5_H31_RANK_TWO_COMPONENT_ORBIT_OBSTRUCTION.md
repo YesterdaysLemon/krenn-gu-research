@@ -5,14 +5,14 @@
 This is an exact characteristic-zero obstruction.
 
 Take any admissible member of the five-parameter family in
-[`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](claims/p4/classifications/pair-geometry/decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md),
+[`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](../../../p4/classifications/pair-geometry/decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md),
 and apply arbitrary permutations of its four source coordinates and
 four tensor modes.  No resulting pure `P_4` compression can be the pure
 member of an `H31` pure/`Delta_2` pencil with rank-three ternary local
 maps.
 
 By
-[`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md),
+[`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](../../../p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md),
 the displayed family is a dense chart in a generically smooth
 five-dimensional component of the plane locus.  This theorem excludes
 the displayed **marked row section** and its source/mode symmetry
@@ -20,7 +20,7 @@ translates.  It does not exclude every marking over the corresponding
 plane component.
 
 This scope distinction is material.  The exact construction in
-[`P5_H31_MARKED_BASIS_OPEN_BRANCH.md`](P5_H31_MARKED_BASIS_OPEN_BRANCH.md)
+[`P5_H31_MARKED_BASIS_OPEN_BRANCH.md`](../marked-basis-open-branch/P5_H31_MARKED_BASIS_OPEN_BRANCH.md)
 keeps the same four generic planes, shifts the complementary
 pure-colour rows by their kernel rows, and obtains a binary `Delta_2`
 extension off `L=0`.  That branch is still excluded by a separate
@@ -55,7 +55,7 @@ q=0,1,2,3                                      (2)
 
 for that distinguished family coordinate.  The case `q=3` is the
 theorem already proved in
-[`P5_H31_KNOWN_RANK_TWO_FAMILY_OBSTRUCTION.md`](P5_H31_KNOWN_RANK_TWO_FAMILY_OBSTRUCTION.md).
+[`P5_H31_KNOWN_RANK_TWO_FAMILY_OBSTRUCTION.md`](../known-rank-two-family/P5_H31_KNOWN_RANK_TWO_FAMILY_OBSTRUCTION.md).
 We treat the other three choices here.
 
 For fixed `q`, retain the three source columns other than `q` and append
@@ -213,8 +213,8 @@ are impossible, proving the symmetry-orbit obstruction.
 Run:
 
 ```text
-python verify_p5_h31_rank_two_component_orbit.py
-python audit_p5_h31_rank_two_component_orbit.py
+python claims/p5/h31/rank-two-component-orbit/verify_p5_h31_rank_two_component_orbit.py
+python claims/p5/h31/rank-two-component-orbit/audit_p5_h31_rank_two_component_orbit.py
 ```
 
 The primary verifier reconstructs every mixed coefficient matrix,

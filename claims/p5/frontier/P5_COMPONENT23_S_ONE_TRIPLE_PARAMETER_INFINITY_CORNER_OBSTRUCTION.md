@@ -164,8 +164,8 @@ No finite-field calculation is used.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_component23_s_one_triple_parameter_infinity_corner_obstruction.py
-uv run --with sympy python audit_p5_component23_s_one_triple_parameter_infinity_corner_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component23_s_one_triple_parameter_infinity_corner_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component23_s_one_triple_parameter_infinity_corner_obstruction.py
 ```
 
 The primary uses the repository permanent and contraction builders.  The

@@ -12,20 +12,32 @@ from pathlib import Path
 
 import sympy as sp
 
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md"
 PRIMARY = (
     ROOT / "verify_p5_component21_kappa_infinity_first_normal_complete_obstruction.py"
 )
 DEPENDENCIES = {
-    "P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md": (
-        "3e8a12b61e2c82bd380191a17170c25991726bf7bee8425ac8f5201eb484523f"
+    "claims/p5/frontier/P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md": (
+        "d3f805cee8606dae8bf4c58a912d0bf864772da5e53d9b3dce8ef698e3904930"
     ),
-    "verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py": (
-        "c946ccc0bc6bf74b123dc9b41ce9ab3d6b813296161ae48ac8c436ec17d33f53"
+    "claims/p5/frontier/verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py": (
+        "5e6046fbbfa4b52139c1b70ee453ad397ec0d6bfe38684164711a1b5be3f5aff"
     ),
-    "audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py": (
-        "1859953dd58a20c282dd86970a1220eca4ecd9180bdca5f41ed1ecd2c955d15d"
+    "claims/p5/frontier/audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py": (
+        "eb125d0af4a9f208b95803f1fbc901dde05a43307268eeeb65e6ad9e3203e7fa"
     ),
 }
 WORDS = tuple(itertools.product((0, 1), repeat=4))
@@ -416,7 +428,7 @@ def main() -> None:
 
     completed = subprocess.run(
         (sys.executable, str(PRIMARY)),
-        cwd=ROOT,
+        cwd=REPO_ROOT,
         text=True,
         encoding="utf-8",
         errors="replace",

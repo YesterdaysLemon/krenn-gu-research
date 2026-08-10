@@ -9,6 +9,19 @@ from pathlib import Path
 
 import sympy as sp
 
+import sys
+
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__, also=["."])
+
 from verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction import (
     MIXED,
     WORDS,
@@ -30,25 +43,25 @@ THEOREM = (
 )
 PINNED = {
     ROOT / "P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md": (
-        "3e8a12b61e2c82bd380191a17170c25991726bf7bee8425ac8f5201eb484523f"
+        "d3f805cee8606dae8bf4c58a912d0bf864772da5e53d9b3dce8ef698e3904930"
     ),
     ROOT / "verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py": (
-        "c946ccc0bc6bf74b123dc9b41ce9ab3d6b813296161ae48ac8c436ec17d33f53"
+        "5e6046fbbfa4b52139c1b70ee453ad397ec0d6bfe38684164711a1b5be3f5aff"
     ),
     ROOT / "audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py": (
-        "1859953dd58a20c282dd86970a1220eca4ecd9180bdca5f41ed1ecd2c955d15d"
+        "eb125d0af4a9f208b95803f1fbc901dde05a43307268eeeb65e6ad9e3203e7fa"
     ),
     ROOT
     / "P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md": (
-        "8925ab6c2d438f79ca89643322fd760cb9084e1431ce2c0dcba67a14b588dbbd"
+        "71ca2e3e780fb1e6a8b8c8f62f0dca620dc67bda1415cbe0a02298b04ce2af16"
     ),
     ROOT
     / "verify_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py": (
-        "62d185481f4ffaa5bd8fa6340fdeca53727baa30d228681bf634e9e206242521"
+        "cb70de27499b85a365315ea535de65166e2780715f70e0a682b9c54d24b86c49"
     ),
     ROOT
     / "audit_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py": (
-        "83b6817070062aa4adc485a246a80baa0a867ef3f5d22c981e49356fceb637d0"
+        "8aa7aef73693c47fafd20324d02e8a3dee693eaaf57c074699f320b06d82ebb1"
     ),
 }
 

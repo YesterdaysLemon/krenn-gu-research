@@ -12,15 +12,27 @@ from typing import Callable
 
 import sympy as sp
 
-from verify_p5_h31_marked_basis_open_branch import mixed_matrix
+
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+from krenn_gu.p5_marked_basis import mixed_matrix
 
 
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P5_H31_ELLIPTIC_END_T3_DIVISOR_OBSTRUCTION.md"
 END_INTERSECTION = (
-    ROOT / "P5_H31_ELLIPTIC_END_GENUS_TWO_EXCEPTION_OBSTRUCTION.md"
+    REPO_ROOT / 'claims/p5/h31/elliptic-end-genus-two-exception/P5_H31_ELLIPTIC_END_GENUS_TWO_EXCEPTION_OBSTRUCTION.md'
 )
-Q3_HELPER = ROOT / "verify_p5_h31_elliptic_end_t3_divisor_q3.py"
+Q3_HELPER = REPO_ROOT / 'claims/p5/h31/elliptic-end-t3-divisor-q3/verify_p5_h31_elliptic_end_t3_divisor_q3.py'
 ROWS_A = (0, 1, 3, 4, 5, 6, 9)
 ROWS_E = (0, 1, 3, 4, 5, 12, 9)
 ROWS_J1 = (0, 1, 3, 4, 5, 11, 9)
@@ -586,7 +598,7 @@ def main() -> None:
     q0 = verify_endpoint(0, 1)
     q3_completed = subprocess.run(
         [sys.executable, str(Q3_HELPER)],
-        cwd=ROOT,
+        cwd=REPO_ROOT,
         text=True,
         encoding="utf-8",
         errors="replace",
@@ -621,8 +633,7 @@ def main() -> None:
         "source_sha256": sha256(Path(__file__)),
     }
     output_path = (
-        ROOT / "tmp"
-        / "p5_h31_elliptic_end_t3_divisor_verified.json"
+        REPO_ROOT / 'tmp/p5_h31_elliptic_end_t3_divisor_verified.json'
     )
     output_path.parent.mkdir(exist_ok=True)
     output_path.write_text(

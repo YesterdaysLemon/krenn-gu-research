@@ -10,10 +10,23 @@ from pathlib import Path
 
 from pysat.card import CardEnc, EncType
 from pysat.solvers import Solver
+import sys
+
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 
 
 ROOT = Path(__file__).resolve().parent
-DRIVER_PATH = ROOT / "tmp" / "probe_p5_max3_coordinate_support.py"
+DRIVER_PATH = REPO_ROOT / 'tmp/probe_p5_max3_coordinate_support.py'
 SPEC = importlib.util.spec_from_file_location("p5_driver", DRIVER_PATH)
 DRIVER = importlib.util.module_from_spec(SPEC)
 assert SPEC.loader is not None

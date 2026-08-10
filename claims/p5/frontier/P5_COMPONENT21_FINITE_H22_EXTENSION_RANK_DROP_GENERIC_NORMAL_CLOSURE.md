@@ -172,8 +172,8 @@ missing from (9) or (14).
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_component21_finite_h22_extension_rank_drop_generic_normal_closure.py
-uv run --with sympy python audit_p5_component21_finite_h22_extension_rank_drop_generic_normal_closure.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_finite_h22_extension_rank_drop_generic_normal_closure.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_finite_h22_extension_rank_drop_generic_normal_closure.py
 ```
 
 The primary builds the component-21 contraction matrices from the committed

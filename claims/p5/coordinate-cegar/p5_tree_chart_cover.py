@@ -18,7 +18,7 @@ REPO_ROOT, HERE = bootstrap(__file__)
 expose_claim_package(REPO_ROOT, "claims/p5/boundaries")
 
 import audit_p5_all_full_boundary_obstruction as ALL_FULL
-import p5_pair_support_semantics as SEMANTICS
+from krenn_gu import p5_pair_support_semantics as SEMANTICS
 
 
 SHAPES = {

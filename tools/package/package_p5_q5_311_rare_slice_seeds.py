@@ -8,10 +8,24 @@ import hashlib
 import json
 from pathlib import Path
 
-import minimize_p5_high_coordinate_gauge_forest as MINIMIZE
-import p5_high_coordinate_tree_chart_cegar as HIGH
-import p5_pair_support_semantics as SEMANTICS
-import probe_p5_q5_311_rare_slice_core as RARE
+import sys
+
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "tools/explore")
+
+from krenn_gu import atomic_json as MINIMIZE
+from krenn_gu import p5_high_coordinate as HIGH
+from krenn_gu import p5_pair_support_semantics as SEMANTICS
+from krenn_gu import p5_q5_311_program as RARE
 
 
 def main() -> None:

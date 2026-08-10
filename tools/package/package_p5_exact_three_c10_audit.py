@@ -6,15 +6,25 @@ import hashlib
 import json
 import shutil
 from pathlib import Path
+import sys
+
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 
 
 ROOT = Path(__file__).resolve().parent
-TMP = ROOT / "tmp"
+TMP = REPO_ROOT / 'tmp'
 DESTINATION = (
-    ROOT
-    / "research_snapshots"
-    / "2026-07-27-p5-coordinate-cegar"
-    / "three_partial_c10_audit"
+    REPO_ROOT / 'research_snapshots/2026-07-27-p5-coordinate-cegar/three_partial_c10_audit'
 )
 CATALOGUE_SOURCE = TMP / "p5_c10_exact_three_partial_supports.json"
 AUDIT_SOURCE = TMP / "p5_c10_exact_three_packed_audit.json"
@@ -104,7 +114,7 @@ def main() -> None:
         json.dumps(
             {
                 "packaged": True,
-                "destination": str(DESTINATION.relative_to(ROOT)),
+                "destination": str(DESTINATION.relative_to(REPO_ROOT)),
                 "support_orbits": 11_751,
                 "manifest_sha256": sha256(manifest_path),
                 "catalogue_sha256": manifest["files"][

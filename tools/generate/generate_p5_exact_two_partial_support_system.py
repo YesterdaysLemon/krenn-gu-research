@@ -4,20 +4,17 @@ from __future__ import annotations
 
 import argparse
 import ast
+import sys
 from pathlib import Path
 
-import generate_p5_one_partial_support_system as BASE
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+from krenn_gu.p5_exact_two_support_system import generate  # noqa: E402
 
-
-def generate(
-    supports: tuple[tuple[int, ...], ...],
-    signature_indices: tuple[int, ...],
-) -> tuple[str, dict]:
-    return BASE.generate(
-        supports,
-        signature_indices,
-        expected_partial_cells=2,
-    )
+REPO_ROOT, HERE = bootstrap(__file__)
 
 
 def main() -> None:

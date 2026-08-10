@@ -28,7 +28,7 @@ boundary compactification, a classification of further components, an
 ## The pure-direction curve
 
 In the normal form of
-[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md),
+[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](../../../p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md),
 set
 
 ```text
@@ -149,8 +149,8 @@ on its full discrete source/mode symmetry orbit, is excluded from
 Run:
 
 ```text
-python verify_p5_h31_diagonal_quadric_pure_direction_curve.py
-python audit_p5_h31_diagonal_quadric_pure_direction_curve.py
+python claims/p5/h31/diagonal-quadric-pure-direction-curve-marked-fibre/verify_p5_h31_diagonal_quadric_pure_direction_curve.py
+python claims/p5/h31/diagonal-quadric-pure-direction-curve-marked-fibre/audit_p5_h31_diagonal_quadric_pure_direction_curve.py
 ```
 
 The primary verifier recomputes the saturated relative projections,

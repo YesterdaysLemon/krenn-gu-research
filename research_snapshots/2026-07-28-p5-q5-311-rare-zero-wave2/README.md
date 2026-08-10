@@ -85,14 +85,14 @@ be8c0ba8556bc0799db79560fa3a40c9e73bdb3ddd80b29f67dcd33b8deab140
 With the repository Python dependencies and Singular available, run:
 
 ```text
-python verify_p5_high_coordinate_chart_ledgers.py \
+python claims/p5/coordinate-cegar/verify_p5_high_coordinate_chart_ledgers.py \
   --branch q5_311 \
   --state research_snapshots/2026-07-28-p5-q5-311-rare-zero-wave2/q5_311_zero_forest_seeds_combined72.json \
   --rerun-singular \
   --jobs 4 \
   --singular-timeout 60
 
-python verify_p5_q5_311_rare_slice_support_cover.py \
+python claims/p5/frontier/verify_p5_q5_311_rare_slice_support_cover.py \
   --state research_snapshots/2026-07-28-p5-q5-311-rare-zero-wave2/zero_forest_records.json \
   --probe research_snapshots/2026-07-28-p5-q5-311-rare-zero-wave2/rare_zero_probe.json \
   --cover research_snapshots/2026-07-28-p5-q5-311-rare-zero-wave2/rare_support_cover.json \
@@ -103,7 +103,7 @@ python verify_p5_q5_311_rare_slice_support_cover.py \
 Regenerate the two hard support covers:
 
 ```text
-python cover_p5_q5_311_rare_slice_supports.py \
+python tools/explore/cover_p5_q5_311_rare_slice_supports.py \
   --state research_snapshots/2026-07-28-p5-q5-311-rare-zero-wave2/zero_forest_records.json \
   --record-index 12 \
   --record-index 13 \

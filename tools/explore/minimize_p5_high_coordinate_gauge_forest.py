@@ -6,29 +6,24 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-import os
-import time
 from pathlib import Path
 
-import p5_high_coordinate_tree_chart_cegar as HIGH
-import p5_pair_support_semantics as SEMANTICS
+import sys
 
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
 
-def atomic_write(path: Path, payload: dict) -> None:
-    temporary = path.with_name(path.name + ".tmp")
-    temporary.write_text(
-        json.dumps(payload, indent=2) + "\n",
-        encoding="utf-8",
-        newline="\n",
-    )
-    for attempt in range(50):
-        try:
-            os.replace(temporary, path)
-            return
-        except PermissionError:
-            if os.name != "nt" or attempt == 49:
-                raise
-            time.sleep(0.1)
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+from krenn_gu import p5_high_coordinate as HIGH
+from krenn_gu import p5_pair_support_semantics as SEMANTICS
+from krenn_gu.atomic_json import atomic_write
 
 
 def main() -> None:

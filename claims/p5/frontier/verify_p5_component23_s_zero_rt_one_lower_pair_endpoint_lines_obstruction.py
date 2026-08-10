@@ -28,7 +28,7 @@ from verify_p5_h22_common_center_kernel_star_component_partial import (
     coefficient_row,
     singular_command,
 )
-from verify_p5_h31_marked_basis_open_branch import (
+from krenn_gu.p5_marked_basis import (
     marked_extension,
     mixed_matrix,
     permanent,

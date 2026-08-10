@@ -49,7 +49,7 @@ first-plane charts and every binary extension direction:
 - [`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](../../../../p5/h31/toric-marked-fibre/P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md)
 
 The marked-plane distinction is explained and witnessed in
-[`P5_H31_MARKED_BASIS_OPEN_BRANCH.md`](../../../../../P5_H31_MARKED_BASIS_OPEN_BRANCH.md).
+[`P5_H31_MARKED_BASIS_OPEN_BRANCH.md`](../../../../p5/h31/marked-basis-open-branch/P5_H31_MARKED_BASIS_OPEN_BRANCH.md).
 The internal `E=0` divisor and first-plane Schubert boundary have since
 been closed at complete marked-fibre level.  The second
 diagonal-quadric pure-compression component, and any further component,

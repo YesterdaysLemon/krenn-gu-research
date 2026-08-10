@@ -143,8 +143,8 @@ It does not close the chart complements.
 Run:
 
 ```text
-python verify_p5_h31_elliptic_end_coordinate_full_rank_chart.py
-python audit_p5_h31_elliptic_end_coordinate_full_rank_chart.py
+python claims/p5/h31/elliptic-end-coordinate-full-rank-chart/verify_p5_h31_elliptic_end_coordinate_full_rank_chart.py
+python claims/p5/h31/elliptic-end-coordinate-full-rank-chart/audit_p5_h31_elliptic_end_coordinate_full_rank_chart.py
 ```
 
 The primary verifier uses direct permanent expansion.  The independent

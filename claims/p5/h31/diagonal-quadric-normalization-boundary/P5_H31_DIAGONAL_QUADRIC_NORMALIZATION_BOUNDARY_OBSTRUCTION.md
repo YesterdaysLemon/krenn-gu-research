@@ -203,8 +203,8 @@ pure-direction theorems, the complete nonzero-pure marked fibre on
 Run:
 
 ```text
-python verify_p5_h31_diagonal_quadric_normalization_boundary.py
-python audit_p5_h31_diagonal_quadric_normalization_boundary.py
+python claims/p5/h31/diagonal-quadric-normalization-boundary/verify_p5_h31_diagonal_quadric_normalization_boundary.py
+python claims/p5/h31/diagonal-quadric-normalization-boundary/audit_p5_h31_diagonal_quadric_normalization_boundary.py
 ```
 
 The primary verifier checks (1)--(14), both projective charts, all

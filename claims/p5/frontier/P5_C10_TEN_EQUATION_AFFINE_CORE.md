@@ -141,7 +141,7 @@ Run:
 
 ```text
 python \
-  verify_p5_c10_ten_equation_affine_core.py
+  claims/p5/frontier/verify_p5_c10_ten_equation_affine_core.py
 ```
 
 The verifier regenerates the complete 193-equation system from the
@@ -166,7 +166,7 @@ saturated ideals.  Replay it with
 
 ```text
 python \
-  probe_p5_c10_joint_affine_class.py
+  tools/explore/probe_p5_c10_joint_affine_class.py
 ```
 
 Thus geometry alone does not transport the ten-equation proof.  The

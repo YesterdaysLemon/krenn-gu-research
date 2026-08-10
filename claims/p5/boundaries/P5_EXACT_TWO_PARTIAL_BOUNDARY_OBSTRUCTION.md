@@ -120,7 +120,7 @@ excludes every signature tuple on that support.
 Run from the repository root:
 
 ```text
-python verify_p5_exact_two_partial_boundary_obstruction.py
+python claims/p5/boundaries/verify_p5_exact_two_partial_boundary_obstruction.py
 ```
 
 The verifier checks both committed audits and their pinned SHA-256
@@ -134,11 +134,11 @@ one split-saturation source from its direct source.
 The independently rerun audit commands are:
 
 ```text
-python audit_p5_exact_two_partial_boundary.py \
+python claims/p5/boundaries/audit_p5_exact_two_partial_boundary.py \
   --shape c10 \
   --output tmp/p5_c10_exact_two_audit.json
 
-python audit_p5_exact_two_partial_boundary.py \
+python claims/p5/boundaries/audit_p5_exact_two_partial_boundary.py \
   --shape c4c6 \
   --output tmp/p5_c4c6_exact_two_audit.json
 ```
@@ -147,7 +147,7 @@ Both audit commands enforce a 20-percent host-available-memory floor by
 default.
 
 The sources, outputs, audits, manifest, and replay notes are in
-[`two_partial_boundary/`](research_snapshots/2026-07-27-p5-coordinate-cegar/two_partial_boundary/README.md).
+[`two_partial_boundary/`](../../../research_snapshots/2026-07-27-p5-coordinate-cegar/two_partial_boundary/README.md).
 
 ## Boundary
 

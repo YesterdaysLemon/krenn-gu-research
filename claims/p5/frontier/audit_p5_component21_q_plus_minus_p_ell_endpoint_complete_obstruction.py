@@ -11,6 +11,19 @@ import subprocess
 from pathlib import Path
 
 import sympy as sp
+import sys
+
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md"
@@ -199,7 +212,7 @@ def projection(sign, side, chart, kappa_zero):
     completed = subprocess.run(
         singular_command(),
         input=program,
-        cwd=ROOT,
+        cwd=REPO_ROOT,
         text=True,
         encoding="utf-8",
         errors="replace",
@@ -496,7 +509,7 @@ def main():
     certificates = [symbolic_case(*job) for job in jobs]
     completed = subprocess.run(
         ("uv", "run", "--with", "sympy", "python", str(PRIMARY)),
-        cwd=ROOT,
+        cwd=REPO_ROOT,
         text=True,
         encoding="utf-8",
         errors="replace",

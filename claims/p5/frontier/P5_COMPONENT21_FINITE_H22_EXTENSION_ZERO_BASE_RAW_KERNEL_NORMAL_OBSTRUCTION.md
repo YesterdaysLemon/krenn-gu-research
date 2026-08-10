@@ -217,8 +217,8 @@ normals remain part of the **UNKNOWN** higher-normal problem.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_component21_finite_h22_extension_zero_base_raw_kernel_normal_obstruction.py
-uv run --with sympy python audit_p5_component21_finite_h22_extension_zero_base_raw_kernel_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_finite_h22_extension_zero_base_raw_kernel_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_finite_h22_extension_zero_base_raw_kernel_normal_obstruction.py
 ```
 
 The primary uses the committed component-21 contraction builder.  The

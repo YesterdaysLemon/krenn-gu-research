@@ -231,8 +231,8 @@ further pure-compression components, or `H22`.
 Run:
 
 ```text
-python verify_p5_h31_elliptic_middle_coordinate_pivot_complement.py
-python audit_p5_h31_elliptic_middle_coordinate_pivot_complement.py
+python claims/p5/h31/elliptic-middle-coordinate-pivot-complement/verify_p5_h31_elliptic_middle_coordinate_pivot_complement.py
+python claims/p5/h31/elliptic-middle-coordinate-pivot-complement/audit_p5_h31_elliptic_middle_coordinate_pivot_complement.py
 ```
 
 The primary verifier expands permanents directly and checks every

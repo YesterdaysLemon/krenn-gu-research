@@ -9,6 +9,19 @@ from pathlib import Path
 
 import sympy as sp
 
+import sys
+
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__, also=["."])
+
 from verify_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction import (
     CAP_B,
     WORDS,
@@ -31,13 +44,13 @@ THEOREM = (
 )
 PINNED = {
     ROOT / "P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md": (
-        "3655ee5dae9b04c4cf23cad1d5b968c585f9f29735cd7d07a7dc0b2ed5242c4d"
+        "5a344a6de7447cb226ce0035578988643425bb7ba87f954a5f824c6d12e37d7d"
     ),
     ROOT / "verify_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction.py": (
-        "e6a1045616e9e19731c04637a62085f1f9fe6d4a3add74a5cfa0b72ccadea758"
+        "7807436d9051e4f1990f49d605b559e2f9b006dd1abd3b195fcd510eaa543580"
     ),
     ROOT / "audit_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction.py": (
-        "732999a18eb07550d93d486f7271118214ce078aa1bd0a3e5685ab5332760028"
+        "972c2f7153ef030e399f592e9e59dda14964708420ffd52af84cb8ef63eaf392"
     ),
 }
 MIXED = WORDS[1:-1]

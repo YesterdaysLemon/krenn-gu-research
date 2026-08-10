@@ -153,8 +153,8 @@ slice.
 Run:
 
 ```text
-python verify_p5_h31_diagonal_quadric_h0_ruling.py
-python audit_p5_h31_diagonal_quadric_h0_ruling.py
+python claims/p5/h31/diagonal-quadric-h0-ruling-marked-fibre/verify_p5_h31_diagonal_quadric_h0_ruling.py
+python claims/p5/h31/diagonal-quadric-h0-ruling-marked-fibre/audit_p5_h31_diagonal_quadric_h0_ruling.py
 ```
 
 The primary verifier recomputes all four saturated relative

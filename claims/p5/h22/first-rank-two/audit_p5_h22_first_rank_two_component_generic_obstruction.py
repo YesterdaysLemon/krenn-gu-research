@@ -19,6 +19,7 @@ for _p in Path(__file__).resolve().parents:
 from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification")
 
 expose_claim_package(
     REPO_ROOT, "claims/p5/h22/mixed-orientation")

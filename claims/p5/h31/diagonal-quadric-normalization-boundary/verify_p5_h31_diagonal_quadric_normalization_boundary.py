@@ -12,11 +12,25 @@ from typing import Callable
 
 import sympy as sp
 
-from p5_high_coordinate_tree_chart_cegar import (
+import sys
+
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/p5/h31/diagonal-quadric-curve-marked-fibre")
+
+from krenn_gu.singular_runtime import (
     singular_command_with_timeout,
 )
 from verify_p5_h31_diagonal_quadric_curve_marked_fibre import singular
-from verify_p5_h31_marked_basis_open_branch import (
+from krenn_gu.p5_marked_basis import (
     marked_extension,
     mixed_matrix,
     one_marked_map,
@@ -29,11 +43,10 @@ THEOREM = (
     ROOT / "P5_H31_DIAGONAL_QUADRIC_NORMALIZATION_BOUNDARY_OBSTRUCTION.md"
 )
 REGULAR = (
-    ROOT / "P5_H31_ELLIPTIC_MIDDLE_COORDINATE_PIVOT_COMPLEMENT.md"
+    REPO_ROOT / 'claims/p5/h31/elliptic-middle-coordinate-pivot-complement/P5_H31_ELLIPTIC_MIDDLE_COORDINATE_PIVOT_COMPLEMENT.md'
 )
 FACTORED = (
-    ROOT
-    / "P5_H31_DIAGONAL_QUADRIC_PURE_DIRECTION_CURVE_MARKED_FIBRE_OBSTRUCTION.md"
+    REPO_ROOT / 'claims/p5/h31/diagonal-quadric-pure-direction-curve-marked-fibre/P5_H31_DIAGONAL_QUADRIC_PURE_DIRECTION_CURVE_MARKED_FIBRE_OBSTRUCTION.md'
 )
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 EXPECTED_FINITE = {
@@ -465,9 +478,7 @@ def main() -> None:
         "source_sha256": sha256(Path(__file__)),
     }
     output_path = (
-        ROOT
-        / "tmp"
-        / "p5_h31_diagonal_quadric_normalization_boundary_verified.json"
+        REPO_ROOT / 'tmp/p5_h31_diagonal_quadric_normalization_boundary_verified.json'
     )
     output_path.parent.mkdir(exist_ok=True)
     output_path.write_text(

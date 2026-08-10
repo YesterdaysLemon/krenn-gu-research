@@ -239,8 +239,8 @@ and hence no `H31` lift, occurs there for either `q=0` or `q=3`.
 Run:
 
 ```text
-python verify_p5_h31_elliptic_end_t2_divisor.py
-python audit_p5_h31_elliptic_end_t2_divisor.py
+python claims/p5/h31/elliptic-end-t2-divisor/verify_p5_h31_elliptic_end_t2_divisor.py
+python claims/p5/h31/elliptic-end-t2-divisor/audit_p5_h31_elliptic_end_t2_divisor.py
 ```
 
 The primary verifier expands permanents directly.  It checks

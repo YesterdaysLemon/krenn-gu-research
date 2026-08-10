@@ -9,6 +9,19 @@ from pathlib import Path
 
 import sympy as sp
 
+import sys
+
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__, also=["."])
+
 from verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction import (
     add,
     pure_support,
@@ -22,23 +35,23 @@ THEOREM = (
 )
 PINNED = {
     ROOT / "P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md": (
-        "3e8a12b61e2c82bd380191a17170c25991726bf7bee8425ac8f5201eb484523f"
+        "d3f805cee8606dae8bf4c58a912d0bf864772da5e53d9b3dce8ef698e3904930"
     ),
     ROOT / "verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py": (
-        "c946ccc0bc6bf74b123dc9b41ce9ab3d6b813296161ae48ac8c436ec17d33f53"
+        "5e6046fbbfa4b52139c1b70ee453ad397ec0d6bfe38684164711a1b5be3f5aff"
     ),
     ROOT / "audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py": (
-        "1859953dd58a20c282dd86970a1220eca4ecd9180bdca5f41ed1ecd2c955d15d"
+        "eb125d0af4a9f208b95803f1fbc901dde05a43307268eeeb65e6ad9e3203e7fa"
     ),
     ROOT / "P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md": (
-        "393850869ee7314383568132b06832297583680bbb2dab42afe28b1e14acf1a7"
+        "faa82432588a2cc988d498fbfea831bdbf0c63028794b5cc28e90713b2ed127b"
     ),
     ROOT
     / "verify_p5_component21_kappa_infinity_first_normal_complete_obstruction.py": (
-        "32845f42e07c6c09ee07895d610b9a89d0e6d0c701e6671060b80c32481ae236"
+        "7b86d3f69ce7bbfce5de744249c7cc50e5cded2a48fd92e0f2d0bee58acde7de"
     ),
     ROOT / "audit_p5_component21_kappa_infinity_first_normal_complete_obstruction.py": (
-        "fef5cbf65b78aa5e0698fa42ad73342ddac36f6628584425fe682700d0e085f2"
+        "3c73a81698303af379901eb9ebd0195c8825b162d3ea9b034e01db5be47f2464"
     ),
 }
 

@@ -11,8 +11,21 @@ from pathlib import Path
 
 import sympy as sp
 
-from p5_high_coordinate_tree_chart_cegar import singular_command_with_timeout
-from verify_p5_h31_marked_basis_open_branch import (
+import sys
+
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+from krenn_gu.singular_runtime import singular_command_with_timeout
+from krenn_gu.p5_marked_basis import (
     marked_extension,
     mixed_matrix,
     one_marked_map,
@@ -24,11 +37,9 @@ THEOREM = (
     ROOT / "P5_H31_DIAGONAL_QUADRIC_H0_RULING_MARKED_FIBRE_OBSTRUCTION.md"
 )
 COMPONENT = (
-    ROOT / "claims" / "p4" / "components" / "diagonal-quadric"
-    / "P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md")
+    REPO_ROOT / 'claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md')
 SLICE_THEOREM = (
-    ROOT
-    / "P5_H31_DIAGONAL_QUADRIC_PURE_DIRECTION_CURVE_MARKED_FIBRE_OBSTRUCTION.md"
+    REPO_ROOT / 'claims/p5/h31/diagonal-quadric-pure-direction-curve-marked-fibre/P5_H31_DIAGONAL_QUADRIC_PURE_DIRECTION_CURVE_MARKED_FIBRE_OBSTRUCTION.md'
 )
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
@@ -435,7 +446,7 @@ def main() -> None:
         "source_sha256": sha256(Path(__file__)),
     }
     output_path = (
-        ROOT / "tmp" / "p5_h31_diagonal_quadric_h0_ruling_verified.json"
+        REPO_ROOT / 'tmp/p5_h31_diagonal_quadric_h0_ruling_verified.json'
     )
     output_path.parent.mkdir(exist_ok=True)
     output_path.write_text(

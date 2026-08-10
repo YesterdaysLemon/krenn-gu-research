@@ -169,8 +169,8 @@ gluing retain the status stated above.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_component21_finite_h22_extension_zero_base_ordinary_weight_second_normal_obstruction.py
-uv run --with sympy python audit_p5_component21_finite_h22_extension_zero_base_ordinary_weight_second_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_finite_h22_extension_zero_base_ordinary_weight_second_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_finite_h22_extension_zero_base_ordinary_weight_second_normal_obstruction.py
 ```
 
 The primary verifier uses the committed component-21 contraction builder.

@@ -124,10 +124,10 @@ claim.
 
 ```text
 uv run --with sympy python \
-  verify_p5_h31_common_active_binary_triangle_component_special_divisor_obstruction.py
+  claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_component_special_divisor_obstruction.py
 
 uv run --with sympy python \
-  audit_p5_h31_common_active_binary_triangle_component_special_divisor_obstruction.py
+  claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_component_special_divisor_obstruction.py
 ```
 
 The primary verifier performs all characteristic-zero eliminations and

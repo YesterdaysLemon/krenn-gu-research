@@ -22,7 +22,7 @@ does not exclude that deeper partial layer, the
 four/five-coordinate-row branch, or the global Krenn--Gu conjecture.
 
 The mathematical statement and proof boundary are in
-[`P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md`](../../../P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md).
+[`P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md`](../../../claims/p5/boundaries/P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md).
 
 ## Package layout
 
@@ -64,7 +64,7 @@ cb3edbd224dead82542099f07712410c0e9a841214592437ab91b356c595c621
 From the repository root, run:
 
 ```text
-python verify_p5_exact_two_partial_boundary_obstruction.py
+python claims/p5/boundaries/verify_p5_exact_two_partial_boundary_obstruction.py
 ```
 
 The verifier does not trust the manifest's aggregate counts.  It checks

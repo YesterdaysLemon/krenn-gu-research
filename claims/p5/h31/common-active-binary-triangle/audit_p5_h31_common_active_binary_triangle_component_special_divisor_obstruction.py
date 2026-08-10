@@ -8,6 +8,20 @@ import json
 from dataclasses import dataclass
 
 import sympy as sp
+import sys
+from pathlib import Path
+
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PERMUTATIONS_3 = tuple(itertools.permutations(range(3)))

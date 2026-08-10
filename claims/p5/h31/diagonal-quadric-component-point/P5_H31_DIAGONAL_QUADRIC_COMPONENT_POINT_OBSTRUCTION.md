@@ -4,7 +4,7 @@
 
 This is an exact characteristic-zero obstruction at one all-rank-two
 point of the diagonal-quadric component proved in
-[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md).
+[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](../../../p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md).
 
 For this plane tuple, every marking of the pure tensor, every choice of
 the distinguished common source coordinate, and every binary
@@ -16,7 +16,7 @@ dense open subset, the complete second component, its boundary, any
 further component, `H22`, or the global prize problem.
 
 The later theorem
-[`P5_H31_DIAGONAL_QUADRIC_E_CURVE_MARKED_FIBRE_OBSTRUCTION.md`](P5_H31_DIAGONAL_QUADRIC_E_CURVE_MARKED_FIBRE_OBSTRUCTION.md)
+[`P5_H31_DIAGONAL_QUADRIC_E_CURVE_MARKED_FIBRE_OBSTRUCTION.md`](../diagonal-quadric-e-curve-marked-fibre/P5_H31_DIAGONAL_QUADRIC_E_CURVE_MARKED_FIBRE_OBSTRUCTION.md)
 subsumes this point as `e=2`.  This file remains the smaller,
 independently checked seed calculation.
 
@@ -177,8 +177,8 @@ projective boundary.
 Run:
 
 ```text
-python verify_p5_h31_diagonal_quadric_component_point.py
-python audit_p5_h31_diagonal_quadric_component_point.py
+python claims/p5/h31/diagonal-quadric-component-point/verify_p5_h31_diagonal_quadric_component_point.py
+python claims/p5/h31/diagonal-quadric-component-point/audit_p5_h31_diagonal_quadric_component_point.py
 ```
 
 The primary verifier recomputes the four exact elimination ideals with

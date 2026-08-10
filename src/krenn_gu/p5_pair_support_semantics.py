@@ -10,22 +10,11 @@ coefficient has exactly one supported monomial.
 from __future__ import annotations
 
 import itertools
-import sys
-from pathlib import Path
 
 from pysat.card import CardEnc, EncType
 from pysat.formula import CNF, IDPool
 
-for _p in Path(__file__).resolve().parents:
-    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
-        sys.path.insert(0, str(_p / "src"))
-        break
-from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
-
-REPO_ROOT, HERE = bootstrap(__file__)
-expose_claim_package(REPO_ROOT, "claims/p5/frontier")
-
-import verify_p5_pair_signature_catalogue_coverage as COVERAGE
+from krenn_gu.p5_pair_catalogue import finite_field_local_signatures
 
 
 MODES = tuple(range(5))
@@ -87,10 +76,6 @@ def add_lex_leq(
             ]
         )
         prefix = next_prefix
-
-
-def finite_field_local_signatures() -> tuple[tuple, ...]:
-    return COVERAGE.finite_field_local_signatures()
 
 
 def build_pair_support_cnf(

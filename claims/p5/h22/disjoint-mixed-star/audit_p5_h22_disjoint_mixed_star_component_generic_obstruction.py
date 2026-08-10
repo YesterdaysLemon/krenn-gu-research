@@ -24,6 +24,7 @@ from krenn_gu.bootstrap import (  # noqa: E402
 )
 
 REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/p5/h31/marked-basis-open-branch")
 
 # Stage 9 moved the H31 disjoint-mixed-star generic package into
 # claims/p5/h31/disjoint-mixed-star/; expose it through the shared

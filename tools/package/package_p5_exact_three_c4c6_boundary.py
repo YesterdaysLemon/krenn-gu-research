@@ -24,12 +24,9 @@ import audit_p5_exact_two_partial_boundary as TWO
 
 
 ROOT = Path(__file__).resolve().parent
-TMP = ROOT / "tmp"
+TMP = REPO_ROOT / 'tmp'
 DESTINATION = (
-    ROOT
-    / "research_snapshots"
-    / "2026-07-27-p5-coordinate-cegar"
-    / "three_partial_c4c6_boundary"
+    REPO_ROOT / 'research_snapshots/2026-07-27-p5-coordinate-cegar/three_partial_c4c6_boundary'
 )
 AUDIT_SOURCE = TMP / "p5_c4c6_exact_three_packed_audit.json"
 SHARDS = (
@@ -117,8 +114,8 @@ def main() -> None:
         ):
             raise AssertionError("unexpected CAS result")
 
-        source = ROOT / cas["source"]
-        output = ROOT / cas["log"]
+        source = REPO_ROOT / cas["source"]
+        output = REPO_ROOT / cas["log"]
         source_text = source.read_text(encoding="utf-8")
         source_data = source_text.encode("utf-8")
         output_data = output.read_bytes()
@@ -214,7 +211,7 @@ def main() -> None:
         json.dumps(
             {
                 "packaged": True,
-                "destination": str(DESTINATION.relative_to(ROOT)),
+                "destination": str(DESTINATION.relative_to(REPO_ROOT)),
                 "cases": len(packaged_cases),
                 "manifest_sha256": sha256_bytes(manifest_path.read_bytes()),
                 "audit_sha256": manifest["audit"]["sha256"],

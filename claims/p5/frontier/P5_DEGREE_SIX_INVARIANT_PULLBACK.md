@@ -126,8 +126,8 @@ No floating-point value is used by the verifier.
 Run:
 
 ```text
-python analyze_p5_degree_six_invariant_space.py
-python verify_p5_degree_six_invariant_pullback.py
+python claims/p5/frontier/analyze_p5_degree_six_invariant_space.py
+python claims/p5/frontier/verify_p5_degree_six_invariant_pullback.py
 ```
 
 The first command certifies the 11-dimensional characteristic-zero

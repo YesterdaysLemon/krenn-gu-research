@@ -222,11 +222,11 @@ They are now treated as follows:
 
 - the complete regular middle-coordinate complement, including all
   three marking divisors and the regular `Y=0` slice, is closed in
-  [`P5_H31_ELLIPTIC_MIDDLE_COORDINATE_PIVOT_COMPLEMENT.md`](P5_H31_ELLIPTIC_MIDDLE_COORDINATE_PIVOT_COMPLEMENT.md);
+  [`P5_H31_ELLIPTIC_MIDDLE_COORDINATE_PIVOT_COMPLEMENT.md`](../elliptic-middle-coordinate-pivot-complement/P5_H31_ELLIPTIC_MIDDLE_COORDINATE_PIVOT_COMPLEMENT.md);
 - the complete regular end-coordinate locus is closed in
-  [`P5_H31_ELLIPTIC_END_T2_DIVISOR_OBSTRUCTION.md`](P5_H31_ELLIPTIC_END_T2_DIVISOR_OBSTRUCTION.md)
+  [`P5_H31_ELLIPTIC_END_T2_DIVISOR_OBSTRUCTION.md`](../elliptic-end-t2-divisor/P5_H31_ELLIPTIC_END_T2_DIVISOR_OBSTRUCTION.md)
   and
-  [`P5_H31_ELLIPTIC_END_T3_DIVISOR_OBSTRUCTION.md`](P5_H31_ELLIPTIC_END_T3_DIVISOR_OBSTRUCTION.md).
+  [`P5_H31_ELLIPTIC_END_T3_DIVISOR_OBSTRUCTION.md`](../elliptic-end-t3-divisor/P5_H31_ELLIPTIC_END_T3_DIVISOR_OBSTRUCTION.md).
 
 Only the birational/compactification boundary and possible further
 pure-compression components remain for `H31`.
@@ -236,8 +236,8 @@ pure-compression components remain for `H31`.
 Run:
 
 ```text
-python verify_p5_h31_elliptic_middle_coordinate_rank_drop.py
-python audit_p5_h31_elliptic_middle_coordinate_rank_drop.py
+python claims/p5/h31/elliptic-middle-coordinate-rank-drop/verify_p5_h31_elliptic_middle_coordinate_rank_drop.py
+python claims/p5/h31/elliptic-middle-coordinate-rank-drop/audit_p5_h31_elliptic_middle_coordinate_rank_drop.py
 ```
 
 The primary verifier constructs permanents by direct permutation

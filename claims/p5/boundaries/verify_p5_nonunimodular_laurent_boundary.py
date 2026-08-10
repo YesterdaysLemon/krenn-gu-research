@@ -11,16 +11,25 @@ import subprocess
 import sys
 import tempfile
 
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 
 ROOT = Path(__file__).resolve().parent
 BOUNDARY = (
-    ROOT
-    / "research_snapshots"
-    / "2026-07-27-p5-coordinate-cegar"
-    / "nonunimodular_boundary"
+    REPO_ROOT / 'research_snapshots/2026-07-27-p5-coordinate-cegar/nonunimodular_boundary'
 )
-CONVERTER = ROOT / "tmp" / "convert_p5_singular_to_msolve.py"
-AUDITOR = ROOT / "tmp" / "audit_p5_coordinate_support_ledger.py"
+CONVERTER = REPO_ROOT / 'tmp/convert_p5_singular_to_msolve.py'
+AUDITOR = REPO_ROOT / 'tmp/audit_p5_coordinate_support_ledger.py'
 LEDGER = BOUNDARY / "focused_ledger.json"
 
 CASES = (
@@ -83,7 +92,7 @@ def assert_unit_log(path: Path) -> None:
 
 def semantic_ledger_audit() -> dict:
     env = os.environ.copy()
-    dependency_path = ROOT / "tmp" / "python_deps"
+    dependency_path = REPO_ROOT / 'tmp/python_deps'
     existing = env.get("PYTHONPATH")
     if dependency_path.exists():
         env["PYTHONPATH"] = (
@@ -92,7 +101,7 @@ def semantic_ledger_audit() -> dict:
         )
     completed = subprocess.run(
         [sys.executable, str(AUDITOR), str(LEDGER)],
-        cwd=ROOT,
+        cwd=REPO_ROOT,
         env=env,
         capture_output=True,
         text=True,
@@ -181,7 +190,7 @@ def main() -> None:
                     str(slimgb_source),
                     str(converted),
                 ],
-                cwd=ROOT,
+                cwd=REPO_ROOT,
                 capture_output=True,
                 text=True,
                 timeout=30,

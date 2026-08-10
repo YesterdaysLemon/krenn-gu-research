@@ -148,8 +148,8 @@ marked H31 fibre of (1), finite r,t=empty.           (10)
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h31_common_center_kernel_star_component_s_zero_k_infinity_finite_corner_obstruction.py
-uv run --with sympy python audit_p5_h31_common_center_kernel_star_component_s_zero_k_infinity_finite_corner_obstruction.py
+uv run --with sympy python claims/p5/h31/common-center-kernel-star/verify_p5_h31_common_center_kernel_star_component_s_zero_k_infinity_finite_corner_obstruction.py
+uv run --with sympy python claims/p5/h31/common-center-kernel-star/audit_p5_h31_common_center_kernel_star_component_s_zero_k_infinity_finite_corner_obstruction.py
 ```
 
 The primary verifier performs the characteristic-zero saturated

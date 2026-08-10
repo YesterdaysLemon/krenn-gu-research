@@ -46,8 +46,8 @@ Reproduction scripts: `scripts/` next to this note; output ledgers
   thirteenth) were outside these tables at first writing; the
   tenth's `H31`/`H22` generic theorems now exist with a full slope
   scoreboard
-  ([`P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/coincident-support/P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md),
-  [`P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/coincident-support/P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md));
+  ([`P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](../h31/coincident-support/P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md),
+  [`P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](../h22/coincident-support/P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md));
   the rest are listed in Part III.
 * `H31` frame: coordinate deletion `q` with marked bases
   `beta_i(t)=beta_i+t_i alpha_i`.

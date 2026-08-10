@@ -191,8 +191,8 @@ the plane case.  Two-minor covers handle the apparent finite-weight
 kernels on their stated genuine opens.
 
 ```text
-uv run --with sympy python verify_p5_component21_q_plus_minus_p_ell_endpoint_complete_obstruction.py
-uv run --with sympy python audit_p5_component21_q_plus_minus_p_ell_endpoint_complete_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_q_plus_minus_p_ell_endpoint_complete_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_q_plus_minus_p_ell_endpoint_complete_obstruction.py
 ```
 
 The primary performs all sixteen saturated eliminations and all symbolic

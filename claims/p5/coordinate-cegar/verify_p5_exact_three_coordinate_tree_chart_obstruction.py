@@ -25,13 +25,13 @@ for _p in Path(__file__).resolve().parents:
         break
 from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
 
-REPO_ROOT, HERE = bootstrap(__file__)
+REPO_ROOT, HERE = bootstrap(__file__, also=["."])
 expose_claim_package(REPO_ROOT, "claims/p5/boundaries")
 
 import audit_p5_all_full_boundary_obstruction as ALL_FULL
-import generate_p5_one_partial_support_system as GENERATOR
-from generate_p5_split_saturation_system import convert_text
-import p5_pair_support_semantics as SEMANTICS
+from krenn_gu import p5_support_system as GENERATOR
+from krenn_gu.p5_split_saturation import convert_text
+from krenn_gu import p5_pair_support_semantics as SEMANTICS
 import p5_tree_chart_cover as COVER
 
 

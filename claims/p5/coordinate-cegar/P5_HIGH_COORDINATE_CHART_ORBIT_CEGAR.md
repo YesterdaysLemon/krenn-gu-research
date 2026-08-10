@@ -18,11 +18,11 @@ subcatalogue, not a partition of every high-coordinate map.
 
 The normalized `q5_311` and `q5_221` branches have since been excluded
 analytically in
-[`P5_Q5_311_EXCLUSION_THEOREM.md`](claims/p5/frontier/P5_Q5_311_EXCLUSION_THEOREM.md) and
-[`P5_Q5_221_FINAL_MONOTONE_BOUNDARY_OBSTRUCTION.md`](claims/p5/boundaries/P5_Q5_221_FINAL_MONOTONE_BOUNDARY_OBSTRUCTION.md).
+[`P5_Q5_311_EXCLUSION_THEOREM.md`](../frontier/P5_Q5_311_EXCLUSION_THEOREM.md) and
+[`P5_Q5_221_FINAL_MONOTONE_BOUNDARY_OBSTRUCTION.md`](../boundaries/P5_Q5_221_FINAL_MONOTONE_BOUNDARY_OBSTRUCTION.md).
 The partial `q4_211` branch and its zero-row closure have also been
 excluded analytically in
-[`P5_Q4_211_EXCLUSION_THEOREM.md`](claims/p5/frontier/P5_Q4_211_EXCLUSION_THEOREM.md).
+[`P5_Q4_211_EXCLUSION_THEOREM.md`](../frontier/P5_Q4_211_EXCLUSION_THEOREM.md).
 The honest remaining high-coordinate frontier is the pair of partial
 families `H31,H22` in
 [`P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md`](P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md).
@@ -34,7 +34,7 @@ Its four remaining maps would have forced a `78 x 5` off-diagonal
 contraction matrix to have rank at most two; the known support-four
 family has rank four everywhere and cannot lift:
 
-- [`P5_Q4_211_SIMULTANEOUS_PENCIL_REDUCTION.md`](claims/p5/frontier/P5_Q4_211_SIMULTANEOUS_PENCIL_REDUCTION.md)
+- [`P5_Q4_211_SIMULTANEOUS_PENCIL_REDUCTION.md`](../frontier/P5_Q4_211_SIMULTANEOUS_PENCIL_REDUCTION.md)
 
 The generic parallel incidence type is no longer independent: on
 `bc != 0` it always forces a third common incidence and can be
@@ -44,21 +44,21 @@ kernel propagation.  Both the adjacent two-cross and one-cross
 boundaries are now excluded.  Subsequent theorems also exclude the
 three coordinate-parameter boundaries, completing that subbranch:
 
-- [`P5_Q4_211_PARALLEL_INCIDENCE_KERNEL_REDUCTION.md`](claims/p5/frontier/P5_Q4_211_PARALLEL_INCIDENCE_KERNEL_REDUCTION.md)
-- [`P5_Q4_211_ADJACENT_P4_PENCIL_REDUCTION.md`](claims/p5/frontier/P5_Q4_211_ADJACENT_P4_PENCIL_REDUCTION.md)
-- [`P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md`](claims/p4/classifications/P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md)
-- [`P5_Q4_211_MARKED_DELTA2_PAIR_IMAGE_OBSTRUCTION.md`](claims/p5/frontier/P5_Q4_211_MARKED_DELTA2_PAIR_IMAGE_OBSTRUCTION.md)
-- [`P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md`](claims/p4/classifications/P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md)
-- [`P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md`](claims/p5/frontier/P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md)
-- [`P5_Q4_211_ONE_CROSS_PENCIL_SATURATION_REDUCTION.md`](claims/p5/frontier/P5_Q4_211_ONE_CROSS_PENCIL_SATURATION_REDUCTION.md)
-- [`P5_Q4_211_ONE_CROSS_DIRECTION_CONIC_REDUCTION.md`](claims/p5/frontier/P5_Q4_211_ONE_CROSS_DIRECTION_CONIC_REDUCTION.md)
-- [`P5_Q4_211_ONE_CROSS_TWO_GATE_REDUCTION.md`](claims/p5/frontier/P5_Q4_211_ONE_CROSS_TWO_GATE_REDUCTION.md)
-- [`P5_Q4_211_ONE_CROSS_DIRECTION_PLANE_OBSTRUCTION.md`](claims/p5/frontier/P5_Q4_211_ONE_CROSS_DIRECTION_PLANE_OBSTRUCTION.md)
-- [`P5_Q4_211_ONE_CROSS_COMMON_KERNEL_OBSTRUCTION.md`](claims/p5/frontier/P5_Q4_211_ONE_CROSS_COMMON_KERNEL_OBSTRUCTION.md)
-- [`P5_Q4_211_DISJOINT_CONIC_POLARITY_REDUCTION.md`](claims/p5/frontier/P5_Q4_211_DISJOINT_CONIC_POLARITY_REDUCTION.md)
-- [`P5_Q4_211_DISJOINT_EXCLUSION_THEOREM.md`](claims/p5/frontier/P5_Q4_211_DISJOINT_EXCLUSION_THEOREM.md)
-- [`P5_Q4_211_GENERIC_EXCLUSION_THEOREM.md`](claims/p5/frontier/P5_Q4_211_GENERIC_EXCLUSION_THEOREM.md)
-- [`P5_Q4_211_EXCLUSION_THEOREM.md`](claims/p5/frontier/P5_Q4_211_EXCLUSION_THEOREM.md)
+- [`P5_Q4_211_PARALLEL_INCIDENCE_KERNEL_REDUCTION.md`](../frontier/P5_Q4_211_PARALLEL_INCIDENCE_KERNEL_REDUCTION.md)
+- [`P5_Q4_211_ADJACENT_P4_PENCIL_REDUCTION.md`](../frontier/P5_Q4_211_ADJACENT_P4_PENCIL_REDUCTION.md)
+- [`P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md`](../../p4/classifications/P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md)
+- [`P5_Q4_211_MARKED_DELTA2_PAIR_IMAGE_OBSTRUCTION.md`](../frontier/P5_Q4_211_MARKED_DELTA2_PAIR_IMAGE_OBSTRUCTION.md)
+- [`P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md`](../../p4/classifications/P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md)
+- [`P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md`](../frontier/P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md)
+- [`P5_Q4_211_ONE_CROSS_PENCIL_SATURATION_REDUCTION.md`](../frontier/P5_Q4_211_ONE_CROSS_PENCIL_SATURATION_REDUCTION.md)
+- [`P5_Q4_211_ONE_CROSS_DIRECTION_CONIC_REDUCTION.md`](../frontier/P5_Q4_211_ONE_CROSS_DIRECTION_CONIC_REDUCTION.md)
+- [`P5_Q4_211_ONE_CROSS_TWO_GATE_REDUCTION.md`](../frontier/P5_Q4_211_ONE_CROSS_TWO_GATE_REDUCTION.md)
+- [`P5_Q4_211_ONE_CROSS_DIRECTION_PLANE_OBSTRUCTION.md`](../frontier/P5_Q4_211_ONE_CROSS_DIRECTION_PLANE_OBSTRUCTION.md)
+- [`P5_Q4_211_ONE_CROSS_COMMON_KERNEL_OBSTRUCTION.md`](../frontier/P5_Q4_211_ONE_CROSS_COMMON_KERNEL_OBSTRUCTION.md)
+- [`P5_Q4_211_DISJOINT_CONIC_POLARITY_REDUCTION.md`](../frontier/P5_Q4_211_DISJOINT_CONIC_POLARITY_REDUCTION.md)
+- [`P5_Q4_211_DISJOINT_EXCLUSION_THEOREM.md`](../frontier/P5_Q4_211_DISJOINT_EXCLUSION_THEOREM.md)
+- [`P5_Q4_211_GENERIC_EXCLUSION_THEOREM.md`](../frontier/P5_Q4_211_GENERIC_EXCLUSION_THEOREM.md)
+- [`P5_Q4_211_EXCLUSION_THEOREM.md`](../frontier/P5_Q4_211_EXCLUSION_THEOREM.md)
 
 ## From individual charts to chart orbits
 
@@ -235,7 +235,7 @@ mixed coefficients, with six and five degree-at-most-one Macaulay rows.
 All identity coefficients are `+1` or `-1`, so vanishing of the mixed
 target words forces both rare pure amplitudes to vanish.  The chart and
 independent symbolic verifier are in
-[`P5_Q5_311_RARE_AFFINE_CORE.md`](claims/p5/frontier/P5_Q5_311_RARE_AFFINE_CORE.md).
+[`P5_Q5_311_RARE_AFFINE_CORE.md`](../frontier/P5_Q5_311_RARE_AFFINE_CORE.md).
 
 The next continuation was stopped at 360 exact records and yielded 38 new
 zero-gauge-forest closures, with no overlap against the earlier 34.  Direct
@@ -250,11 +250,11 @@ UNSAT.
 Thus the rare mechanism excludes all 38 new finite closures.  The combined
 72 zero-forest exclusions still leave both reconstructed branch solvers
 SAT.  The frozen evidence is in
-[`research_snapshots/2026-07-28-p5-q5-311-rare-zero-wave2/`](research_snapshots/2026-07-28-p5-q5-311-rare-zero-wave2/README.md).
+[`research_snapshots/2026-07-28-p5-q5-311-rare-zero-wave2/`](../../../research_snapshots/2026-07-28-p5-q5-311-rare-zero-wave2/README.md).
 
 The complete reduction, exact evidence boundary, and reproduction commands
 are in
-[`P5_Q5_311_RARE_SLICE_REDUCTION.md`](P5_Q5_311_RARE_SLICE_REDUCTION.md).
+[`P5_Q5_311_RARE_SLICE_REDUCTION.md`](../frontier/P5_Q5_311_RARE_SLICE_REDUCTION.md).
 
 ## Continuation checkpoint
 

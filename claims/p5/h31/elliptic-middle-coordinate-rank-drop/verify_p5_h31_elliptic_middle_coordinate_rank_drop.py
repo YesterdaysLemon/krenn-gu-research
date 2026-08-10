@@ -9,18 +9,30 @@ from pathlib import Path
 
 import sympy as sp
 
-from verify_p5_h31_marked_basis_open_branch import mixed_matrix
+import sys
+
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+from krenn_gu.p5_marked_basis import mixed_matrix
 
 
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P5_H31_ELLIPTIC_MIDDLE_COORDINATE_RANK_DROP.md"
-GENERIC = ROOT / "P5_H31_DIAGONAL_QUADRIC_ELLIPTIC_GENERIC_OBSTRUCTION.md"
+GENERIC = REPO_ROOT / 'claims/p5/h31/diagonal-quadric-elliptic/P5_H31_DIAGONAL_QUADRIC_ELLIPTIC_GENERIC_OBSTRUCTION.md'
 H0_THEOREM = (
-    ROOT / "P5_H31_DIAGONAL_QUADRIC_H0_RULING_MARKED_FIBRE_OBSTRUCTION.md"
+    REPO_ROOT / 'claims/p5/h31/diagonal-quadric-h0-ruling-marked-fibre/P5_H31_DIAGONAL_QUADRIC_H0_RULING_MARKED_FIBRE_OBSTRUCTION.md'
 )
 PURE_DIRECTION = (
-    ROOT
-    / "P5_H31_DIAGONAL_QUADRIC_PURE_DIRECTION_CURVE_MARKED_FIBRE_OBSTRUCTION.md"
+    REPO_ROOT / 'claims/p5/h31/diagonal-quadric-pure-direction-curve-marked-fibre/P5_H31_DIAGONAL_QUADRIC_PURE_DIRECTION_CURVE_MARKED_FIBRE_OBSTRUCTION.md'
 )
 PIVOT_ROWS = (1, 2, 3, 8, 9, 11)
 PIVOT_COLUMNS = (0, 2, 3, 4, 5, 6)
@@ -399,8 +411,7 @@ def main() -> None:
         "source_sha256": sha256(Path(__file__)),
     }
     output_path = (
-        ROOT / "tmp"
-        / "p5_h31_elliptic_middle_coordinate_rank_drop_verified.json"
+        REPO_ROOT / 'tmp/p5_h31_elliptic_middle_coordinate_rank_drop_verified.json'
     )
     output_path.parent.mkdir(exist_ok=True)
     output_path.write_text(

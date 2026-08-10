@@ -77,7 +77,7 @@ Run the portable hash, conversion, source-equivalence, and semantic-clause
 audit with:
 
 ```text
-python verify_p5_nonunimodular_laurent_boundary.py
+python claims/p5/boundaries/verify_p5_nonunimodular_laurent_boundary.py
 ```
 
 The msolve convention `[-1]:` means that the system has no solution over

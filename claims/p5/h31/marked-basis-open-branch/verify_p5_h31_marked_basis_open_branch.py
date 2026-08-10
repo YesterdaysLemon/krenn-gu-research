@@ -6,135 +6,32 @@ from __future__ import annotations
 import hashlib
 import itertools
 import json
+import sys
 from pathlib import Path
 
 import sympy as sp
 
+for _p in Path(__file__).resolve().parents:
+    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_p / "src"))
+        break
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+from krenn_gu.p5_marked_basis import (  # noqa: E402
+    marked_extension,
+    mixed_matrix,
+    one_marked_map,
+    permanent,
+)
 
-ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P5_H31_MARKED_BASIS_OPEN_BRANCH.md"
-FAMILY = ROOT / "claims/p4/classifications/pair-geometry/decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md"
-COMPONENT = ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
+REPO_ROOT, HERE = bootstrap(__file__)
 BITS4 = tuple(itertools.product((0, 1), repeat=4))
-BITS3 = tuple(itertools.product((0, 1), repeat=3))
-PERMUTATIONS = tuple(itertools.permutations(range(4)))
+THEOREM = HERE / "P5_H31_MARKED_BASIS_OPEN_BRANCH.md"
+FAMILY = REPO_ROOT / "claims/p4/classifications/pair-geometry/decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md"
+COMPONENT = REPO_ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
 
 
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
-
-
-def permanent(rows: tuple[tuple[sp.Expr, ...], ...]) -> sp.Expr:
-    return sp.factor(sum(
-        sp.prod(rows[row][permutation[row]] for row in range(4))
-        for permutation in PERMUTATIONS
-    ))
-
-
-def extension_coefficients(
-    distinguished: int,
-    alpha: tuple[tuple[sp.Expr, ...], ...],
-    beta: tuple[tuple[sp.Expr, ...], ...],
-    extension: sp.Matrix,
-) -> dict[tuple[int, ...], sp.Expr]:
-    common = tuple(
-        coordinate for coordinate in range(4)
-        if coordinate != distinguished
-    )
-    alpha_p = tuple(
-        tuple(alpha[mode][coordinate] for coordinate in common)
-        + (extension[mode],)
-        for mode in range(4)
-    )
-    beta_p = tuple(
-        tuple(beta[mode][coordinate] for coordinate in common)
-        + (extension[4 + mode],)
-        for mode in range(4)
-    )
-    return {
-        bits: permanent(tuple(
-            beta_p[mode] if bits[mode] else alpha_p[mode]
-            for mode in range(4)
-        ))
-        for bits in BITS4
-    }
-
-
-def one_marked_map(
-    mode: int,
-    alpha: tuple[tuple[sp.Expr, ...], ...],
-    beta: tuple[tuple[sp.Expr, ...], ...],
-) -> sp.Matrix:
-    rows = []
-    for bits in BITS3:
-        selected = []
-        bit_index = 0
-        for other in range(4):
-            if other == mode:
-                selected.append(None)
-            else:
-                selected.append(
-                    beta[other] if bits[bit_index] else alpha[other]
-                )
-                bit_index += 1
-        coefficient_row = []
-        for coordinate in range(4):
-            basis = tuple(
-                int(index == coordinate) for index in range(4)
-            )
-            coefficient_row.append(permanent(tuple(
-                basis if other == mode else selected[other]
-                for other in range(4)
-            )))
-        rows.append(coefficient_row)
-    return sp.Matrix(rows)
-
-
-def marked_extension(
-    distinguished: int,
-    extension: sp.Matrix,
-    alpha: tuple[tuple[sp.Expr, ...], ...],
-    beta: tuple[tuple[sp.Expr, ...], ...],
-    mode: int,
-) -> sp.Matrix:
-    common = tuple(
-        coordinate for coordinate in range(4)
-        if coordinate != distinguished
-    )
-    alpha_p = tuple(
-        tuple(alpha[row][coordinate] for coordinate in common)
-        + (extension[row],)
-        for row in range(4)
-    )
-    beta_p = tuple(
-        tuple(beta[row][coordinate] for coordinate in common)
-        + (extension[4 + row],)
-        for row in range(4)
-    )
-    return one_marked_map(mode, alpha_p, beta_p)
-
-
-def mixed_matrix(
-    distinguished: int,
-    alpha: tuple[tuple[sp.Expr, ...], ...],
-    beta: tuple[tuple[sp.Expr, ...], ...],
-) -> tuple[sp.Matrix, sp.Matrix, sp.Matrix]:
-    variables = sp.symbols("x0:4") + sp.symbols("y0:4")
-    coefficients = extension_coefficients(
-        distinguished,
-        alpha,
-        beta,
-        sp.Matrix(variables),
-    )
-    mixed = sp.Matrix([
-        [sp.diff(coefficients[bits], variable) for variable in variables]
-        for bits in BITS4
-        if bits not in ((0, 0, 0, 0), (1, 1, 1, 1))
-    ])
-    diagonals = tuple(sp.Matrix([[
-        sp.diff(coefficients[bits], variable) for variable in variables
-    ]]) for bits in ((0, 0, 0, 0), (1, 1, 1, 1)))
-    return mixed, *diagonals
 
 
 def main() -> None:
@@ -272,7 +169,7 @@ def main() -> None:
         "source": Path(__file__).name,
         "source_sha256": sha256(Path(__file__)),
     }
-    output_path = ROOT / "tmp" / "p5_h31_marked_basis_open_branch_verified.json"
+    output_path = REPO_ROOT / "tmp" / "p5_h31_marked_basis_open_branch_verified.json"
     output_path.parent.mkdir(exist_ok=True)
     output_path.write_text(
         json.dumps(output, indent=2) + "\n",

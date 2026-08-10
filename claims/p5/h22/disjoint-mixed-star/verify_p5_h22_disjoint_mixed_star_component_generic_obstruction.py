@@ -28,7 +28,7 @@ REPO_ROOT, HERE = bootstrap(__file__)
 # Stage 3 per-importer shims) so the bare-name import below
 # resolves.
 expose_claim_package(REPO_ROOT, "claims/p4/components/disjoint-mixed-star")
-from p5_high_coordinate_tree_chart_cegar import (
+from krenn_gu.singular_runtime import (
     singular_command_with_timeout,
 )
 from verify_p4_disjoint_mixed_star_pure_component import (  # noqa: E402

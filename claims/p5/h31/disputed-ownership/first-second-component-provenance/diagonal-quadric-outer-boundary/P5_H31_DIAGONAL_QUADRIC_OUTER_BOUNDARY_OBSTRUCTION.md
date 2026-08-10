@@ -439,8 +439,8 @@ fibre on the outer boundary is empty.
 Run:
 
 ```text
-python verify_p5_h31_diagonal_quadric_outer_boundary.py
-python audit_p5_h31_diagonal_quadric_outer_boundary.py
+python claims/p5/h31/disputed-ownership/first-second-component-provenance/diagonal-quadric-outer-boundary/verify_p5_h31_diagonal_quadric_outer_boundary.py
+python claims/p5/h31/disputed-ownership/first-second-component-provenance/diagonal-quadric-outer-boundary/audit_p5_h31_diagonal_quadric_outer_boundary.py
 ```
 
 The primary verifier expands the boundary decomposition, checks the

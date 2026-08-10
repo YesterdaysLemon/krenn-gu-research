@@ -161,7 +161,7 @@ The known five-parameter family of all-rank-two maps sending `P_4` to
 a pure tensor is now known to be a dense chart in a generically smooth
 five-dimensional component of the pure-compression locus:
 
-- [`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md)
+- [`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](../../p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md)
 
 That component is not exhaustive.  Recasting `P_4` as the Frobenius
 intersection form of
@@ -178,7 +178,7 @@ exact tangent-cone certificate proves component status, and a
 diagonal-quadric jump invariant separates it from every symmetry
 translate of the first component:
 
-- [`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md)
+- [`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](../../p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md)
 
 The same diagonal-quadric map has now exposed three more components.
 For a `1+3` block line, the radical-plane normal form reduces the pure
@@ -200,7 +200,7 @@ distinct generic jump signatures
 Thus at least five symmetry-inequivalent components exist.  This is
 not yet an exhaustive classification:
 
-- [`P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md`](claims/p4/classifications/P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md)
+- [`P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md`](../../p4/classifications/P4_DIAGONAL_QUADRIC_ONE_THREE_COMPONENTS.md)
 
 The most natural apparent continuation, with all four annihilator
 lines on one smooth diagonal quadric, is now closed away from the
@@ -219,7 +219,7 @@ solution has a `2+2` or `1+3` block line, and none of these loci can
 be a new five-dimensional component after restoring the
 three-dimensional diagonal source torus:
 
-- [`P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md`](claims/p4/boundaries/P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md)
+- [`P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md`](../../p4/boundaries/P4_COMMON_SMOOTH_DIAGONAL_QUADRIC_OBSTRUCTION.md)
 
 There is also an exact generic classification on the directed
 radical-star block locus.  A rank-one multiplication relation is
@@ -233,7 +233,7 @@ normal forms are exhaustive: the `2+2` determinant is the irreducible
 determinant is the three-factor split cubic.  Hence this stratum
 contains exactly those four certified component closures:
 
-- [`P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md`](claims/p4/classifications/star/radical-star/P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md)
+- [`P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md`](../../p4/classifications/star/radical-star/P4_RADICAL_STAR_COMPONENT_CLASSIFICATION.md)
 
 The mixed kernel-edge orientation omitted by that radical
 classification produces a sixth component.  With two fixed
@@ -254,7 +254,7 @@ does not: the new sorted pure-kernel endpoint indegrees are
 `(2,1,0,0)`, versus `(1,1,1,0)` on all three split-cubic branches.
 Thus at least six symmetry-inequivalent component orbits exist:
 
-- [`P4_MIXED_ORIENTATION_PURE_COMPONENT.md`](claims/p4/components/mixed-orientation/P4_MIXED_ORIENTATION_PURE_COMPONENT.md)
+- [`P4_MIXED_ORIENTATION_PURE_COMPONENT.md`](../../p4/components/mixed-orientation/P4_MIXED_ORIENTATION_PURE_COMPONENT.md)
 
 The sixth component is generically excluded from `H31`.  Exact
 function-field projection leaves no marking for distinguished
@@ -263,7 +263,7 @@ coordinates two and three.  Four all-extension determinant identities,
 together with nonzero pure transverse entries, exclude every survivor.
 Its special parameter divisors and projective boundary remain:
 
-- [`P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/mixed-orientation/P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md`](../h31/mixed-orientation/P5_H31_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 A lower-pair-rank prime of the same determinantal calculation opens
 into a larger component.  Put `h=a+c-d` and take
@@ -282,7 +282,7 @@ fourteen in twenty variables.  This proves a rational
 six-dimensional component.  Its pair profile `(4,3,2,4,4,3)` and
 dimension place it outside all six certified fivefold orbits:
 
-- [`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](claims/p4/components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md)
+- [`P4_SIX_DIMENSIONAL_PURE_COMPONENT.md`](../../p4/components/six-dimensional/P4_SIX_DIMENSIONAL_PURE_COMPONENT.md)
 
 The new component is also generically excluded from `H31`.  The
 apolar parameters
@@ -298,7 +298,7 @@ pure tensor.  Each of coordinates zero, two, and three has one
 rational marking, and three selected mode-zero minors generate the
 unit ideal after inverting the two binary diagonals:
 
-- [`P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/six-dimensional/P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md`](../h31/six-dimensional/P5_H31_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 The same component also supplies the first generic weighted `H22`
 obstruction.  The relevant neighboring source bases are diagonal
@@ -325,7 +325,7 @@ diagonals zero.  On every genuine direction, the mode-zero marked map
 has rank four: the saturated ideal of its `0127` and `0137` minors is
 unit.  Hence the binary sheet has no ternary lift:
 
-- [`P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/six-dimensional/P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md`](../h22/six-dimensional/P5_H22_SIX_DIMENSIONAL_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 The mixed-orientation fivefold is now generically excluded from
 weighted `H22` as well.  Over `C(d,p,q,r)`, the weighted `01`
@@ -337,7 +337,7 @@ closed sheets.  On each sheet, the saturated ideal of mode-three
 minors `0267` and `0467` is unit, so every survivor has marked rank
 four:
 
-- [`P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/mixed-orientation/P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md`](../h22/mixed-orientation/P5_H22_MIXED_ORIENTATION_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 All three split-cubic `1+3` components are now generically excluded
 from weighted `H22`.  Every weighted `01` binary projection is unit,
@@ -346,7 +346,7 @@ has two rational points and the `L_2` scheme is covered by three
 affine lines.  On all five survivor closures, the same mode-zero
 `0247` minor generates a unit ideal after diagonal saturation:
 
-- [`P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md`](claims/p5/h22/one-three-components/P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md`](../h22/one-three-components/P5_H22_ONE_THREE_COMPONENTS_GENERIC_OBSTRUCTION.md)
 
 The first rank-two component is now generically excluded from weighted
 `H22` too.  The weighted `01` mixed matrix is injective for every
@@ -354,7 +354,7 @@ marking by an eight-chart projective cover.  The exact weighted `23`
 projection has two sheets, excluded by the mode-two `0147` and `0137`
 minors:
 
-- [`P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/first-rank-two/P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md`](../h22/first-rank-two/P5_H22_FIRST_RANK_TWO_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 The equal-weight specialization remains a separately verified boundary
 certificate:
@@ -371,7 +371,7 @@ the `1000` equation forces the marking `t_0=1`, and then the `1110`
 row is `su/(u-v)` times the required first diagonal.  Thus no binary
 `Delta_2` neighbor exists before the third target row is considered:
 
-- [`P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md`](claims/p5/h22/six-dimensional/P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md)
+- [`P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md`](../h22/six-dimensional/P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md)
 
 The generic weighted theorems close the seven previously certified
 component orbits.  The final diagonal-quadric case uses the projective
@@ -387,7 +387,7 @@ component orbit, the second embeds in the six-dimensional component,
 and the fourth and fifth are explicit source/mode symmetry charts of
 `L_2` and `L_1`.  Hence that dense chart contains no eighth component:
 
-- [`P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md`](claims/p4/classifications/P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md)
+- [`P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md`](../../p4/classifications/P4_MIXED_DETERMINANTAL_PRIME_CLASSIFICATION.md)
 
 The complete marked fibre over the generic point of each of the three
 new components is empty.  One branch has no neighbouring binary
@@ -402,7 +402,7 @@ where `A,B` are the required nonzero binary diagonals and `c` is
 nonzero on the generic chart.  Their special parameter divisors and
 projective boundaries remain:
 
-- [`P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/one-three/P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md)
+- [`P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md`](../h31/one-three/P5_H31_ONE_THREE_COMPONENT_GENERIC_OBSTRUCTION.md)
 
 At one rational point of the second component, the complete marking
 fibre has already been excluded.  Exact binary projection leaves one
@@ -410,7 +410,7 @@ marking for each of `q=0,3` and none for `q=1,2`; every extension in
 the two surviving two-dimensional kernels has the uniform injective
 marked minor `-8u(u-2v)^2`:
 
-- [`P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md`](P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md)
+- [`P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md`](../h31/diagonal-quadric-component-point/P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md)
 
 There is now also a complete relative result on the rational curve
 `A=B=E=F=H=1, C=c` in the `(3,3)` component.  Its pure coefficient is
@@ -423,7 +423,7 @@ kernel, the selected marked minor factors as the product of the two
 required nonzero binary diagonal factors, with one factor repeated.
 Thus every marking over every point of this curve is excluded:
 
-- [`P5_H31_DIAGONAL_QUADRIC_CURVE_MARKED_FIBRE_OBSTRUCTION.md`](P5_H31_DIAGONAL_QUADRIC_CURVE_MARKED_FIBRE_OBSTRUCTION.md)
+- [`P5_H31_DIAGONAL_QUADRIC_CURVE_MARKED_FIBRE_OBSTRUCTION.md`](../h31/diagonal-quadric-curve-marked-fibre/P5_H31_DIAGONAL_QUADRIC_CURVE_MARKED_FIBRE_OBSTRUCTION.md)
 
 A second relative theorem closes the transverse curve
 `A=B=F=H=1,C=0,E=e` for every `e in C`.  This curve contains the
@@ -432,7 +432,7 @@ curve at `e=1,c=0`.  A global projection over `Q[e]` has two uniform
 survivor markings and only the jumps `e=0,+/-1`; every survivor again
 has a marked minor equal to a nonzero binary diagonal product:
 
-- [`P5_H31_DIAGONAL_QUADRIC_E_CURVE_MARKED_FIBRE_OBSTRUCTION.md`](P5_H31_DIAGONAL_QUADRIC_E_CURVE_MARKED_FIBRE_OBSTRUCTION.md)
+- [`P5_H31_DIAGONAL_QUADRIC_E_CURVE_MARKED_FIBRE_OBSTRUCTION.md`](../h31/diagonal-quadric-e-curve-marked-fibre/P5_H31_DIAGONAL_QUADRIC_E_CURVE_MARKED_FIBRE_OBSTRUCTION.md)
 
 The remaining pure-factor-direction curve `C=-1,E=e` has a different
 marking chart.  Saturated relative projection leaves only one `q=2`
@@ -441,7 +441,7 @@ marking, and its marked minor is `-64e u(u-2v)^2`.  Since on
 `C(C+1)(1-E^2)`, and `E=-1` is source-symmetric to `E=1`, these three
 curve calculations close the complete nonzero factored slice:
 
-- [`P5_H31_DIAGONAL_QUADRIC_PURE_DIRECTION_CURVE_MARKED_FIBRE_OBSTRUCTION.md`](P5_H31_DIAGONAL_QUADRIC_PURE_DIRECTION_CURVE_MARKED_FIBRE_OBSTRUCTION.md)
+- [`P5_H31_DIAGONAL_QUADRIC_PURE_DIRECTION_CURVE_MARKED_FIBRE_OBSTRUCTION.md`](../h31/diagonal-quadric-pure-direction-curve-marked-fibre/P5_H31_DIAGONAL_QUADRIC_PURE_DIRECTION_CURVE_MARKED_FIBRE_OBSTRUCTION.md)
 
 They also close its full source/mode symmetry orbit.  In particular,
 the source permutation `(0 1)(2 3)` and mode swap `1<->2` carry the
@@ -455,7 +455,7 @@ On `A=B=F=1,H=0`, the component equation is
 Thus the complete nonzero `H=0` slice and its source/mode orbit are
 excluded:
 
-- [`P5_H31_DIAGONAL_QUADRIC_H0_RULING_MARKED_FIBRE_OBSTRUCTION.md`](P5_H31_DIAGONAL_QUADRIC_H0_RULING_MARKED_FIBRE_OBSTRUCTION.md)
+- [`P5_H31_DIAGONAL_QUADRIC_H0_RULING_MARKED_FIBRE_OBSTRUCTION.md`](../h31/diagonal-quadric-h0-ruling-marked-fibre/P5_H31_DIAGONAL_QUADRIC_H0_RULING_MARKED_FIBRE_OBSTRUCTION.md)
 
 The second component now also has a generic obstruction.  On
 `A=B=F=1`, put
@@ -484,7 +484,7 @@ Mordell--Weil group `Z + Z/2`.  This
 strongly constrains survivor sections but does not prove that the
 known sections contain every survivor curve or multisection:
 
-- [`P5_H31_DIAGONAL_QUADRIC_ELLIPTIC_GENERIC_OBSTRUCTION.md`](P5_H31_DIAGONAL_QUADRIC_ELLIPTIC_GENERIC_OBSTRUCTION.md)
+- [`P5_H31_DIAGONAL_QUADRIC_ELLIPTIC_GENERIC_OBSTRUCTION.md`](../h31/diagonal-quadric-elliptic/P5_H31_DIAGONAL_QUADRIC_ELLIPTIC_GENERIC_OBSTRUCTION.md)
 
 The first proper-support refinement avoids a global elimination.  For
 `q=1,2`, the mixed matrix has a marking-independent kernel line.  After
@@ -495,14 +495,14 @@ already-closed `H=0` marking; the other reaches only
 `x=1+/-r` or `r=+/-1`, already-closed pure-direction or singular-fibre
 loci.  Thus no new survivor curve occurs on this chart:
 
-- [`P5_H31_ELLIPTIC_MIDDLE_COORDINATE_RANK_DROP.md`](P5_H31_ELLIPTIC_MIDDLE_COORDINATE_RANK_DROP.md)
+- [`P5_H31_ELLIPTIC_MIDDLE_COORDINATE_RANK_DROP.md`](../h31/elliptic-middle-coordinate-rank-drop/P5_H31_ELLIPTIC_MIDDLE_COORDINATE_RANK_DROP.md)
 
 For `q=0,3`, canonical reduction in the quadratic function field exposes
 equally small universal kernels.  Deleting their unit `a1` component,
 one bordered minor proves that the quotient has full rank on the dense
 chart `t2!=x,t3!=1`, away from the standard geometric factors:
 
-- [`P5_H31_ELLIPTIC_END_COORDINATE_FULL_RANK_CHART.md`](P5_H31_ELLIPTIC_END_COORDINATE_FULL_RANK_CHART.md)
+- [`P5_H31_ELLIPTIC_END_COORDINATE_FULL_RANK_CHART.md`](../h31/elliptic-end-coordinate-full-rank-chart/P5_H31_ELLIPTIC_END_COORDINATE_FULL_RANK_CHART.md)
 
 On the deepest end-coordinate intersection `t2=x,t3=1` for `q=0,3`,
 compatibility of two quotient minors leaves a conjugate pair of
@@ -518,7 +518,7 @@ orientation, but two further full-rank minors have coprime residual
 factors `s^3+2s^2-3s+2` and `s^2+1`.  Hence both apparent survivors are
 empty:
 
-- [`P5_H31_ELLIPTIC_END_GENUS_TWO_EXCEPTION_OBSTRUCTION.md`](P5_H31_ELLIPTIC_END_GENUS_TWO_EXCEPTION_OBSTRUCTION.md)
+- [`P5_H31_ELLIPTIC_END_GENUS_TWO_EXCEPTION_OBSTRUCTION.md`](../h31/elliptic-end-genus-two-exception/P5_H31_ELLIPTIC_END_GENUS_TWO_EXCEPTION_OBSTRUCTION.md)
 
 The same normalization closes the complete regular `t2=x` divisor.
 A small quotient minor first forces `t3=1` or the genus-two
@@ -533,7 +533,7 @@ The known `x=1` section and degree-drop factors are harmless; at the
 only regular quadratic exception, a third minor reduces to
 `-2^34 v(12s+29)` and is nonzero:
 
-- [`P5_H31_ELLIPTIC_END_T2_DIVISOR_OBSTRUCTION.md`](P5_H31_ELLIPTIC_END_T2_DIVISOR_OBSTRUCTION.md)
+- [`P5_H31_ELLIPTIC_END_T2_DIVISOR_OBSTRUCTION.md`](../h31/elliptic-end-t2-divisor/P5_H31_ELLIPTIC_END_T2_DIVISOR_OBSTRUCTION.md)
 
 The other complete regular marking divisor `t3=1` is empty as well.
 Its apparent quadratic marking cover splits over the elliptic function
@@ -551,7 +551,7 @@ The `s=0` factor is the closed `x=1` ruling.  At the remaining values
 only the universal kernel line, so no genuine binary extension
 survives:
 
-- [`P5_H31_ELLIPTIC_END_T3_DIVISOR_OBSTRUCTION.md`](P5_H31_ELLIPTIC_END_T3_DIVISOR_OBSTRUCTION.md)
+- [`P5_H31_ELLIPTIC_END_T3_DIVISOR_OBSTRUCTION.md`](../h31/elliptic-end-t3-divisor/P5_H31_ELLIPTIC_END_T3_DIVISOR_OBSTRUCTION.md)
 
 The remaining middle-coordinate pivot complement is empty too.  Four
 small residual factors cover the three pivot divisors
@@ -566,7 +566,7 @@ determinant is a chart unit times `t3`, and a second is a chart unit at
 `t3=0`.  Hence every marked fibre in the regular elliptic chart is
 excluded for all `q=0,1,2,3`:
 
-- [`P5_H31_ELLIPTIC_MIDDLE_COORDINATE_PIVOT_COMPLEMENT.md`](P5_H31_ELLIPTIC_MIDDLE_COORDINATE_PIVOT_COMPLEMENT.md)
+- [`P5_H31_ELLIPTIC_MIDDLE_COORDINATE_PIVOT_COMPLEMENT.md`](../h31/elliptic-middle-coordinate-pivot-complement/P5_H31_ELLIPTIC_MIDDLE_COORDINATE_PIVOT_COMPLEMENT.md)
 
 The boundary of the elliptic normalization is now closed as well.  On
 `U!=0`,
@@ -588,7 +588,7 @@ curve.  A mode-one determinant is a chart unit times the two binary
 diagonals, with one repeated, and the projective endpoint has no binary
 extension.  Both complete curves are therefore excluded:
 
-- [`P5_H31_DIAGONAL_QUADRIC_NORMALIZATION_BOUNDARY_OBSTRUCTION.md`](P5_H31_DIAGONAL_QUADRIC_NORMALIZATION_BOUNDARY_OBSTRUCTION.md)
+- [`P5_H31_DIAGONAL_QUADRIC_NORMALIZATION_BOUNDARY_OBSTRUCTION.md`](../h31/diagonal-quadric-normalization-boundary/P5_H31_DIAGONAL_QUADRIC_NORMALIZATION_BOUNDARY_OBSTRUCTION.md)
 
 In one distinguished-source orientation, extending its three common
 source entries to the neighbouring hyperplane gives a `14 x 8` linear
@@ -602,7 +602,7 @@ corresponding pure-hyperplane flattening has a transverse
 one-dimensional kernel.  A third target row must vanish on both
 hyperplanes and hence vanish globally, contradicting rank three:
 
-- [`P5_H31_KNOWN_RANK_TWO_FAMILY_OBSTRUCTION.md`](P5_H31_KNOWN_RANK_TWO_FAMILY_OBSTRUCTION.md)
+- [`P5_H31_KNOWN_RANK_TWO_FAMILY_OBSTRUCTION.md`](../h31/known-rank-two-family/P5_H31_KNOWN_RANK_TWO_FAMILY_OBSTRUCTION.md)
 
 The other three possible choices of the distinguished family source
 coordinate admit an exact parallel analysis.  Off `l=0`, their unique
@@ -612,7 +612,7 @@ injective mode-one marked maps and a transverse pure-hyperplane
 coordinate.  Thus no member of any source/mode symmetry translate of
 the displayed family chart lifts:
 
-- [`P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md`](P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md)
+- [`P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md`](../h31/rank-two-component-orbit/P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md)
 
 These calculations exclude the displayed marked row families, not the
 whole plane component.  A pure-compression component records four
@@ -636,7 +636,7 @@ Its mode-two marked determinant is
 
 so that branch still has no ternary lift:
 
-- [`P5_H31_MARKED_BASIS_OPEN_BRANCH.md`](P5_H31_MARKED_BASIS_OPEN_BRANCH.md)
+- [`P5_H31_MARKED_BASIS_OPEN_BRANCH.md`](../h31/marked-basis-open-branch/P5_H31_MARKED_BASIS_OPEN_BRANCH.md)
 
 This exposed the marked-basis fibre while preserving the central
 lesson that ternary conciseness adds a decisive transverse-kernel
@@ -645,7 +645,7 @@ over the finite family chart.  It finds every binary-survivor marking,
 including three isolated `q=1` points on `C=-L/2`, and proves that
 every extension in every survivor kernel has an injective marked map:
 
-- [`P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md`](P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md)
+- [`P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md`](../h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification/P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md)
 
 Thus no marked basis over a finite member of the five-parameter family
 lifts to `H31`.
@@ -657,8 +657,8 @@ divisor; exact mixed-kernel and marked-map analysis excludes the
 displayed marked section of that divisor in all four
 distinguished-source orientations:
 
-- [`P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md)
-- [`P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md`](claims/p5/h31/component-chart-boundary/P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md)
+- [`P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md`](../../p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md)
+- [`P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md`](../h31/component-chart-boundary/P5_H31_COMPONENT_CHART_BOUNDARY_OBSTRUCTION.md)
 
 The first-plane line at infinity and the coupled three-plane toric base
 have also been classified at plane level.  The toric base has 12
@@ -667,24 +667,24 @@ five genuine divisor orbits and four edge orbits, totalling 21
 all-rank plane/orientation pairs; no vertex supports a nonzero pure
 slice:
 
-- [`P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md`](claims/p5/h31/component-fiber-infinity/P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md)
-- [`P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md`](claims/p4/classifications/pair-geometry/pure-rank-two/boundaries/P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md)
-- [`P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md)
+- [`P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md`](../h31/component-fiber-infinity/P5_H31_COMPONENT_FIBER_INFINITY_OBSTRUCTION.md)
+- [`P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md`](../../p4/classifications/pair-geometry/pure-rank-two/boundaries/P4_PURE_RANK_TWO_COMPONENT_TORIC_BOUNDARY.md)
+- [`P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md`](../../p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md)
 
 The 21 genuine toric plane/orientation cases now have a complete marked
 incidence.  The 17 pure-direction types, both projective charts of the
 first-plane fibre, every row shift, and every binary extension
 direction are excluded by exact selected-minor unit ideals:
 
-- [`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](claims/p5/h31/toric-marked-fibre/P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md)
+- [`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](../h31/toric-marked-fibre/P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md)
 
 The separate nonzero divisor inside the preferred component chart,
 the first-plane Schubert line at infinity, and the internal `E=0`
 divisor are now closed at complete marked-fibre level:
 
-- [`P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md`](claims/p5/h31/component-chart-boundary-marked-fibre/P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md)
-- [`P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md`](claims/p5/h31/component-fibre-infinity-marked-fibre/P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md)
-- [`P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md`](claims/p5/h31/internal-e0-marked-fibre/P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md)
+- [`P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md`](../h31/component-chart-boundary-marked-fibre/P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md)
+- [`P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md`](../h31/component-fibre-infinity-marked-fibre/P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md)
+- [`P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md`](../h31/internal-e0-marked-fibre/P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md)
 
 The complete rank-one boundary on the pure hyperplane is now excluded
 as well.  A rank-one pair is a unique coordinate gate.  If the three
@@ -694,8 +694,8 @@ projective line arrangement.  Every component either has a transverse
 injective one-marked map or reaches one deepest intersection where a
 forced mixed `1122` coefficient is nonzero:
 
-- [`P5_H31_SINGLE_GATE_P3_REDUCTION.md`](claims/p5/h31/single-gate-p3/P5_H31_SINGLE_GATE_P3_REDUCTION.md)
-- [`P5_H31_SINGLE_GATE_RANK_TWO_M_EXCLUSION.md`](claims/p5/h31/single-gate-rank-two-m-exclusion/P5_H31_SINGLE_GATE_RANK_TWO_M_EXCLUSION.md)
+- [`P5_H31_SINGLE_GATE_P3_REDUCTION.md`](../h31/single-gate-p3/P5_H31_SINGLE_GATE_P3_REDUCTION.md)
+- [`P5_H31_SINGLE_GATE_RANK_TWO_M_EXCLUSION.md`](../h31/single-gate-rank-two-m-exclusion/P5_H31_SINGLE_GATE_RANK_TWO_M_EXCLUSION.md)
 
 If another pair drops rank on the common plane, it becomes a unique
 secondary gate.  The common-plane data is then a `P_3 -> Delta_2`
@@ -703,7 +703,7 @@ restriction.  Pair-image polarity leaves only a line/complementary-
 plane stratum and a two-coordinate-plane stratum; one-marked minors and
 their deepest mixed-colour coefficients exclude both:
 
-- [`P5_H31_SECONDARY_GATE_EXCLUSION.md`](claims/p5/h31/secondary-gate-exclusion/P5_H31_SECONDARY_GATE_EXCLUSION.md)
+- [`P5_H31_SECONDARY_GATE_EXCLUSION.md`](../h31/secondary-gate-exclusion/P5_H31_SECONDARY_GATE_EXCLUSION.md)
 
 Consequently every `H31` lift with a rank-one pair on the pure
 hyperplane is impossible.  The complete marked fibre of the known
@@ -720,7 +720,7 @@ stratification reduces it to four coordinate curves and one rational
 conic; exact relative projections, all-extension one-marked minors,
 and one stacked `5 x 5` Fitting certificate exclude every fibre:
 
-- [`P5_H31_DIAGONAL_QUADRIC_OUTER_BOUNDARY_OBSTRUCTION.md`](P5_H31_DIAGONAL_QUADRIC_OUTER_BOUNDARY_OBSTRUCTION.md)
+- [`P5_H31_DIAGONAL_QUADRIC_OUTER_BOUNDARY_OBSTRUCTION.md`](../h31/disputed-ownership/first-second-component-provenance/diagonal-quadric-outer-boundary/P5_H31_DIAGONAL_QUADRIC_OUTER_BOUNDARY_OBSTRUCTION.md)
 
 Thus the complete marked fibres of the first two all-rank-two
 pure-compression components are empty.  Five further component orbits
@@ -749,7 +749,7 @@ coordinates zero and one have unit genuine-neighbour projection;
 coordinates two and three each leave one marking, and the same
 mode-zero `0137` minor is `+/-R*A*B^2`, where
 `R=f*(b*f+1)*(1-a^2*f^2)/(a^2*f+b)`:
-[`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/disjoint-mixed-star/P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../h31/disjoint-mixed-star/P5_H31_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 The
 common-smooth-quadric semisimple
 case is no longer part of that completeness test: the remaining
@@ -770,7 +770,7 @@ as well.  Its proof identifies marked binary extension with the
 intersection of an extension eight-plane and a projective Segre join;
 one exact empty projective fibre and properness replace the unfinished
 generic quadratic-field elimination:
-[`P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/diagonal-quadric/P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md`](../h22/diagonal-quadric/P5_H22_DIAGONAL_QUADRIC_COMPONENT_GENERIC_OBSTRUCTION.md).
 Thus the seven previously certified component orbits are generically
 closed for weighted `H22`.  A disjoint-support mixed star has since
 produced an eighth component with irreducible normalized equation
@@ -785,15 +785,15 @@ function-field projection and determinantal identity above.  Its
 generic weighted `H22` incidence is now empty as well: the two weighted
 mixed matrices have a line and a degree-five Fitting scheme, and small
 one-marked minors exclude every genuine binary direction:
-[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](claims/p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
-[`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
+[`P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md`](../../p4/components/disjoint-mixed-star/P4_DISJOINT_MIXED_STAR_PURE_COMPONENT.md).
+[`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../h22/disjoint-mixed-star/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md).
 At the special slopes `r=1` and `r=-1`, a stronger binary theorem
 forces respectively the first and second diagonal to vanish:
-[`P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md`](claims/p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md).
+[`P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md`](../h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_EQUAL_OPPOSITE_WEIGHT_OBSTRUCTION.md).
 Twelve generic parameter/coordinate branches and the principal coupled
 slope-parameter divisor are now closed as well:
-[`P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md`](claims/p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md),
-[`P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md`](claims/p5/h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md).
+[`P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md`](../h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_PARAMETER_PIVOT_BOUNDARY_OBSTRUCTION.md),
+[`P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md`](../h22/disjoint-mixed-star/boundaries/P5_H22_DISJOINT_MIXED_STAR_COUPLED_SLOPE_BOUNDARY_OBSTRUCTION.md).
 Hidden certificate denominators, other component boundaries, and
 component exhaustiveness remain.
 
@@ -867,8 +867,8 @@ unresolved.
 Run:
 
 ```text
-python verify_p5_high_coordinate_partial_frontier.py
-python audit_p5_high_coordinate_partial_frontier.py
+python claims/p5/coordinate-cegar/verify_p5_high_coordinate_partial_frontier.py
+python claims/p5/coordinate-cegar/audit_p5_high_coordinate_partial_frontier.py
 ```
 
 The primary verifier derives the labelled census combinatorially,

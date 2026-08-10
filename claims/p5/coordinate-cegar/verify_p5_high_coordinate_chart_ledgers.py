@@ -12,101 +12,32 @@ from pathlib import Path
 
 from pysat.solvers import Solver
 
-import generate_p5_one_partial_support_system as GENERATOR
-from generate_p5_split_saturation_system import convert_text
-import p5_high_coordinate_tree_chart_cegar as HIGH
-import p5_pair_support_semantics as SEMANTICS
+import sys
+
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+from krenn_gu import p5_support_system as GENERATOR
+from krenn_gu.p5_split_saturation import convert_text
+from krenn_gu import p5_high_coordinate as HIGH
+from krenn_gu.p5_high_coordinate import (
+    normalized_supports,
+    normalized_tree,
+    validate_forest,
+)
+from krenn_gu import p5_pair_support_semantics as SEMANTICS
 
 
 def sha256_text(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
-
-
-def normalized_supports(value) -> tuple[tuple[int, ...], ...]:
-    supports = tuple(tuple(int(mask) for mask in row) for row in value)
-    if len(supports) != 5 or any(len(row) != 5 for row in supports):
-        raise ValueError("support array is not 5 by 5")
-    return supports
-
-
-def normalized_tree(value) -> tuple[tuple[int, int, int], ...]:
-    return tuple(tuple(map(int, edge)) for edge in value)
-
-
-def validate_forest(
-    supports: tuple[tuple[int, ...], ...],
-    closure: tuple[tuple[int, ...], ...],
-    tree: tuple[tuple[int, int, int], ...],
-) -> tuple[int, int]:
-    if any(
-        actual & ~allowed
-        for actual_row, closure_row in zip(
-            supports, closure, strict=True
-        )
-        for actual, allowed in zip(
-            actual_row, closure_row, strict=True
-        )
-    ):
-        raise AssertionError("actual support is not inside its closure")
-    if any(
-        mask not in (0, 1, 2, 4, 7)
-        for row in closure
-        for mask in row
-    ):
-        raise AssertionError("closure uses an unsupported mask")
-
-    nodes = [
-        *(("r", source) for source in SEMANTICS.SOURCES),
-        *(
-            ("c", mode, colour)
-            for mode in SEMANTICS.MODES
-            for colour in SEMANTICS.COLOURS
-        ),
-    ]
-
-    def components(
-        edges: tuple[tuple[int, int, int], ...],
-        reject_cycle: bool,
-    ) -> int:
-        parent = {node: node for node in nodes}
-
-        def find(node):
-            while parent[node] != node:
-                parent[node] = parent[parent[node]]
-                node = parent[node]
-            return node
-
-        for mode, source, colour in edges:
-            if (
-                mode not in SEMANTICS.MODES
-                or source not in SEMANTICS.SOURCES
-                or colour not in SEMANTICS.COLOURS
-                or not supports[mode][source] & (1 << colour)
-            ):
-                raise AssertionError(
-                    "forest edge is absent from the actual support"
-                )
-            left = find(("r", source))
-            right = find(("c", mode, colour))
-            if left == right:
-                if reject_cycle:
-                    raise AssertionError("gauge forest contains a cycle")
-                continue
-            parent[left] = right
-        return len({find(node) for node in nodes})
-
-    actual_edges = HIGH.support_edges(supports)
-    actual_components = components(actual_edges, False)
-    forest_components = components(tree, True)
-    if len(tree) != len(nodes) - forest_components:
-        raise AssertionError(
-            "gauge forest edge/component count is inconsistent"
-        )
-    if forest_components < actual_components:
-        raise AssertionError(
-            "gauge forest connects distinct actual-support components"
-        )
-    return actual_components, forest_components
 
 
 def clause_is_false(

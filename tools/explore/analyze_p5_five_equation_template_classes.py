@@ -21,17 +21,14 @@ from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
 REPO_ROOT, HERE = bootstrap(__file__)
 expose_claim_package(REPO_ROOT, "claims/p5/frontier")
 
-import generate_p5_one_partial_support_system as BASE
+from krenn_gu import p5_support_system as BASE
 import verify_p5_five_equation_laurent_core as CORE
 
 
 ROOT = Path(__file__).resolve().parent
 SHAPES = ("c10", "c4c6")
 PACKAGE = (
-    ROOT
-    / "research_snapshots"
-    / "2026-07-27-p5-coordinate-cegar"
-    / "two_partial_boundary"
+    REPO_ROOT / 'research_snapshots/2026-07-27-p5-coordinate-cegar/two_partial_boundary'
 )
 TEMPLATE_COUNTS = (9, 8, 9, 8, 9)
 

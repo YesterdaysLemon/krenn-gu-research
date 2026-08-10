@@ -9,12 +9,25 @@ import json
 from pathlib import Path
 
 import sympy as sp
+import sys
+
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
 
 
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md"
-COMPONENT = ROOT / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md"
-ORIENTATION_THREE = ROOT / "P5_H31_KNOWN_RANK_TWO_FAMILY_OBSTRUCTION.md"
+COMPONENT = REPO_ROOT / 'claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md'
+ORIENTATION_THREE = REPO_ROOT / 'claims/p5/h31/known-rank-two-family/P5_H31_KNOWN_RANK_TWO_FAMILY_OBSTRUCTION.md'
 BITS4 = tuple(itertools.product((0, 1), repeat=4))
 BITS3 = tuple(itertools.product((0, 1), repeat=3))
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
@@ -399,7 +412,7 @@ def main() -> None:
         "source_sha256": sha256(Path(__file__)),
     }
     output_path = (
-        ROOT / "tmp" / "p5_h31_rank_two_component_orbit_verified.json"
+        REPO_ROOT / 'tmp/p5_h31_rank_two_component_orbit_verified.json'
     )
     output_path.parent.mkdir(exist_ok=True)
     output_path.write_text(

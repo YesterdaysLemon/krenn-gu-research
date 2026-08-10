@@ -9,6 +9,19 @@ from pathlib import Path
 
 import sympy as sp
 
+import sys
+
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__, also=["."])
+
 from verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction import (
     MIXED,
     WORDS,
@@ -32,9 +45,9 @@ PQ_PRIMARY = (
 )
 PQ_AUDIT = ROOT / "audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py"
 PINNED = {
-    PQ_THEOREM: "3e8a12b61e2c82bd380191a17170c25991726bf7bee8425ac8f5201eb484523f",
-    PQ_PRIMARY: "c946ccc0bc6bf74b123dc9b41ce9ab3d6b813296161ae48ac8c436ec17d33f53",
-    PQ_AUDIT: "1859953dd58a20c282dd86970a1220eca4ecd9180bdca5f41ed1ecd2c955d15d",
+    PQ_THEOREM: "d3f805cee8606dae8bf4c58a912d0bf864772da5e53d9b3dce8ef698e3904930",
+    PQ_PRIMARY: "5e6046fbbfa4b52139c1b70ee453ad397ec0d6bfe38684164711a1b5be3f5aff",
+    PQ_AUDIT: "eb125d0af4a9f208b95803f1fbc901dde05a43307268eeeb65e6ad9e3203e7fa",
 }
 
 

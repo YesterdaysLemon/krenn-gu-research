@@ -30,7 +30,7 @@ from krenn_gu.bootstrap import bootstrap  # noqa: E402
 REPO_ROOT, HERE = bootstrap(__file__)
 
 if os.name == "nt":
-    from p5_high_coordinate_tree_chart_cegar import (
+    from krenn_gu.singular_runtime import (
         singular_command_with_timeout,
     )
 

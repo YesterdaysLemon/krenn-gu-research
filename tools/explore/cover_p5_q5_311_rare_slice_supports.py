@@ -6,63 +6,33 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import sys
 import time
 from pathlib import Path
 
 from pysat.solvers import Solver
 
-import minimize_p5_high_coordinate_gauge_forest as MINIMIZE
-import p5_high_coordinate_tree_chart_cegar as HIGH
-import p5_pair_support_semantics as SEMANTICS
-import probe_p5_q5_311_rare_slice_core as RARE
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
 
+from krenn_gu.bootstrap import bootstrap
 
-BRANCH = "q5_311"
+REPO_ROOT, HERE = bootstrap(__file__, also=["."])
 
-
-def rare_mixed_colourings() -> tuple[tuple[int, ...], ...]:
-    """The 160 mixed words whose mode-zero colour is rare."""
-    return tuple(
-        colours
-        for colours in SEMANTICS.MIXED_COLOURINGS
-        if colours[0] in (1, 2)
-    )
-
-
-def condition_closure(
-    pool,
-    closure: tuple[tuple[int, ...], ...],
-) -> list[list[int]]:
-    return [
-        [-pool.id(SEMANTICS.entry_key(mode, source, colour))]
-        for mode in SEMANTICS.MODES
-        for source in SEMANTICS.SOURCES
-        for colour in SEMANTICS.COLOURS
-        if not closure[mode][source] & (1 << colour)
-    ]
-
-
-def general_chart_clause(
-    pool,
-    closure: tuple[tuple[int, ...], ...],
-    pivots: tuple[tuple[int, int, int], ...],
-) -> tuple[int, ...]:
-    """Negate outside-zero and pivot-nonzero chart conditions."""
-    pivot_set = set(pivots)
-    literals = []
-    for mode in SEMANTICS.MODES:
-        for source in SEMANTICS.SOURCES:
-            for colour in SEMANTICS.COLOURS:
-                edge = mode, source, colour
-                variable = pool.id(SEMANTICS.entry_key(*edge))
-                if not closure[mode][source] & (1 << colour):
-                    literals.append(variable)
-                elif edge in pivot_set:
-                    literals.append(-variable)
-    clause = tuple(sorted(set(literals)))
-    if len(clause) != len(literals):
-        raise AssertionError("chart implication repeated a literal")
-    return clause
+from krenn_gu import atomic_json as MINIMIZE
+from krenn_gu import p5_high_coordinate as HIGH
+from krenn_gu import p5_pair_support_semantics as SEMANTICS
+from krenn_gu import p5_q5_311_program as RARE
+from krenn_gu.p5_q5_311_support import (
+    BRANCH,
+    condition_closure,
+    general_chart_clause,
+    rare_mixed_colourings,
+)
 
 
 def certify(

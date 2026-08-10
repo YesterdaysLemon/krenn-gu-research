@@ -25,7 +25,7 @@ from derive_p5_h22_coincident_support_rank_one_star_component_generic_obstructio
     shifted_beta,
     singular_command,
 )
-from verify_p5_h31_marked_basis_open_branch import one_marked_map
+from krenn_gu.p5_marked_basis import one_marked_map
 
 
 
@@ -107,7 +107,7 @@ def projection_certificate(sign, chart):
     completed = subprocess.run(
         singular_command(),
         input=program,
-        cwd=ROOT,
+        cwd=REPO_ROOT,
         text=True,
         encoding="utf-8",
         errors="replace",

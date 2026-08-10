@@ -72,10 +72,10 @@ point of this divisor.  A fortiori, no `H31` lift exists.
 
 ```text
 uv run --with sympy python \
-  verify_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py
+  claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py
 
 uv run --with sympy python \
-  audit_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py
+  claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py
 ```
 
 The primary verifier reconstructs the replacement basis, all sixteen pure

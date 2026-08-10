@@ -12,6 +12,18 @@ from pathlib import Path
 
 import sympy as sp
 
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 ROOT = Path(__file__).resolve().parent
 THEOREM = (
     ROOT
@@ -22,32 +34,32 @@ PRIMARY = (
     / "verify_p5_component21_normalized_parameter_compactification_complete_obstruction.py"
 )
 DEPENDENCIES = {
-    "P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md": (
-        "3e8a12b61e2c82bd380191a17170c25991726bf7bee8425ac8f5201eb484523f"
+    "claims/p5/frontier/P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md": (
+        "d3f805cee8606dae8bf4c58a912d0bf864772da5e53d9b3dce8ef698e3904930"
     ),
-    "verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py": (
-        "c946ccc0bc6bf74b123dc9b41ce9ab3d6b813296161ae48ac8c436ec17d33f53"
+    "claims/p5/frontier/verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py": (
+        "5e6046fbbfa4b52139c1b70ee453ad397ec0d6bfe38684164711a1b5be3f5aff"
     ),
-    "audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py": (
-        "1859953dd58a20c282dd86970a1220eca4ecd9180bdca5f41ed1ecd2c955d15d"
+    "claims/p5/frontier/audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py": (
+        "eb125d0af4a9f208b95803f1fbc901dde05a43307268eeeb65e6ad9e3203e7fa"
     ),
-    "P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md": (
-        "8925ab6c2d438f79ca89643322fd760cb9084e1431ce2c0dcba67a14b588dbbd"
+    "claims/p5/frontier/P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md": (
+        "71ca2e3e780fb1e6a8b8c8f62f0dca620dc67bda1415cbe0a02298b04ce2af16"
     ),
-    "verify_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py": (
-        "62d185481f4ffaa5bd8fa6340fdeca53727baa30d228681bf634e9e206242521"
+    "claims/p5/frontier/verify_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py": (
+        "cb70de27499b85a365315ea535de65166e2780715f70e0a682b9c54d24b86c49"
     ),
-    "audit_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py": (
-        "83b6817070062aa4adc485a246a80baa0a867ef3f5d22c981e49356fceb637d0"
+    "claims/p5/frontier/audit_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py": (
+        "8aa7aef73693c47fafd20324d02e8a3dee693eaaf57c074699f320b06d82ebb1"
     ),
-    "P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md": (
-        "fa25391191eae2df5daf39c27c11ba3aefd390575f11892a0a2fb9ad06035f1b"
+    "claims/p5/frontier/P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md": (
+        "d7a8aa6b9c5677dd65cef18ee615419a6aed2da992734950189eb56bec61adc4"
     ),
-    "verify_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py": (
-        "5dd874a0657f7204c6d4a60ac91ceedb9e2019c11e3e080502c8be971e1b45b8"
+    "claims/p5/frontier/verify_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py": (
+        "7016219b962cfea354c8d9951f79eda7da3053680043a7268a3a09083c6ee323"
     ),
-    "audit_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py": (
-        "a8cd6696662c04c43e5d1d396ed139ed8b7fbc204728e1afcff73653b7ce52b0"
+    "claims/p5/frontier/audit_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py": (
+        "29358fe97a2eeb3697b5b90c113ed2f0bb206c3fd1cbde58f34b7bad8f85fa3a"
     ),
 }
 WORDS = tuple(itertools.product((0, 1), repeat=4))
@@ -378,7 +390,7 @@ def main() -> None:
 
     completed = subprocess.run(
         (sys.executable, str(PRIMARY)),
-        cwd=ROOT,
+        cwd=REPO_ROOT,
         text=True,
         encoding="utf-8",
         errors="replace",

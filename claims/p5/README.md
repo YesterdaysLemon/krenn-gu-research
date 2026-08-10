@@ -2,8 +2,8 @@
 
 This spine holds the migrated P5 obstruction packages.  The `h31/` and
 `h22/` subtrees contain the component-level packages, while `frontier/`,
-`boundaries/`, and `coordinate-cegar/` contain the separate Stage 29
-ownership forest. The original paired packages under `h31/` and `h22/` are
+`boundaries/`, and `coordinate-cegar/` contain the Stage 29 and Stage 32
+ownership forests. The earlier paired packages under `h31/` and `h22/` are
 generic: they prove that
 the marked `H31` (respectively weighted `H22`) fibre is empty **at the
 generic point of one P4 component's function field** (or on a dense
@@ -78,11 +78,11 @@ remains **UNRESOLVED**.
 
 | directory | contents |
 |---|---|
-| [`h31/`](h31/) | marked-`H31` obstruction packages (31 directories; one complete component-closure forest, one flat three-triple `p+q=0` wall subforest, one three-package rank-one-gate forest, one internal-`E=0` divisor leaf, one toric marked-fibre boundary leaf, one canonical chart-boundary section leaf, one canonical first-plane Schubert-infinity section leaf, and one complete first-plane Schubert-infinity marked-fibre leaf) |
+| [`h31/`](h31/) | marked-`H31` obstruction forest (52 direct directories; generic, divisor-scoped, boundary, carrier-only, and neutral disputed-ownership packages retain distinct claims and evidence roles) |
 | [`h22/`](h22/) | weighted-`H22` obstruction forest (108 direct package directories; 111 total including nested packages; generic, scoped, partial, candidate, historical, and one neutral disputed-ownership package retain distinct statuses) |
-| [`frontier/`](frontier/) | Stage 29 frontier/reduction forest: 143 moved artifacts, including most of the normalized `q4_211` and `q5_221` ownership closure |
-| [`boundaries/`](boundaries/) | Stage 29 boundary packages: 17 moved artifacts, including the terminal normalized `q5_221` boundary triple |
-| [`coordinate-cegar/`](coordinate-cegar/) | Stage 29 coordinate and bounded-CEGAR packages: 16 moved artifacts, including the `q4_211` coordinate-normal triple |
+| [`frontier/`](frontier/) | frontier/reduction forest: 228 artifacts after Stages 29 and 32 (`83 md + 143 py + 2 cpp`), preserving partial, candidate, superseded, and asymmetric evidence |
+| [`boundaries/`](boundaries/) | selected boundary packages: 32 artifacts after Stages 29 and 32 (`11 md + 21 py`) |
+| [`coordinate-cegar/`](coordinate-cegar/) | coordinate and bounded-CEGAR packages: 25 artifacts after Stages 29 and 32 (`9 md + 16 py`) |
 
 The H22 disjoint-mixed-star package was migrated first, in the layout
 migration pilot; it lives at
@@ -193,6 +193,20 @@ close only that divisor.  The P4 attribution, broader first/second-component
 provenance, and weighted-H22 `p+q=0` disagreements remain unadjudicated, and
 the global conjecture remains **UNRESOLVED**.
 
+Stage 32 (`p5-residual-root-exit-stage32`, mapping
+`be94dcaadb97d29eb6e6b5efe712485ac55aa3286e802dfa457746cd8dd4cf56`)
+moved 220 residual P5 artifacts: 85 to `frontier/`, 83 to `h31/`, 15 to
+`boundaries/`, nine to `coordinate-cegar/`, one to `h22/`, 31 operator
+entry points to `tools/`, and one pre-existing shared module to
+`src/krenn_gu`.  Seven first/second-component provenance files use the
+neutral `h31/disputed-ownership/first-second-component-provenance/` package;
+its README records the disagreement without adjudicating it.  Widely consumed
+marked-basis, high-coordinate, support-system, q5_311, pair-catalogue,
+split-saturation, and Singular-runtime code was separated into narrow shared
+cores with frozen no-solver parity tests.  Claim-specific entry points and
+audits remain with their owners, all statuses and asymmetries are preserved,
+and the global conjecture remains **UNRESOLVED**.
+
 ## Pairing by underlying P4 family
 
 Where both sides of a component have migrated generic theorems they
@@ -204,9 +218,9 @@ asymmetries (never manufactured symmetry):
   are H31-only (no live generic H22 theorem exists for them);
 - `disjoint-mixed-star` H22 is the pilot package and includes a partial
   boundary subtree; only the H31 side moved in Stage 9;
-- `diagonal-quadric` H22 moved in Stage 9; its H31 side is the
-  elliptic-generic theorem, inseparable from its boundary forest and
-  deliberately not migrated;
+- `diagonal-quadric` H22 moved in Stage 9; its H31 elliptic-generic theorem
+  and boundary forest now live in their distinct H31 packages, without
+  merging their scopes or evidence roles;
 - `equal-support-sixfold` has migrated H31 and H22 generic theorems,
   but each has a primary verifier only: no P5 independent audit exists;
 - `six-dimensional` has migrated H31 and H22 generic theorems, and its H22
@@ -244,19 +258,12 @@ asymmetries (never manufactured symmetry):
 
 ## Scope boundary
 
-Except for the exact H31 embedded-P3 component-closure forest, the scoped H31
-`p+q=0` wall and single-gate branch forests, the internal-`E=0` divisor leaf,
-the toric marked-fibre boundary leaf, the canonical H31 chart-boundary and
-first-plane Schubert-infinity section leaves, the complete first-plane
-Schubert-infinity marked-fibre leaf, the scoped H22 disjoint-mixed-star
-boundary subpackages, the component-23 finite `lambda=1` all-affine-marking
-and `lambda=0` all-affine-marking H22 leaves, and the H22 six-dimensional equal-weight
-normal-form-point leaf, and the exact Stage 29 ownership forest described
-above, the following P5 layers are **not** part of this spine:
-pointwise/divisor closures, unselected boundary obstruction trees,
-exceptional-fibre work, the component21 / remaining component-23 programmes,
-and the frontier documents
-(`P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md`,
-`P5_DELTA3_OBLIGATION_LEDGER.md`,
-`P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`), which remain separate from this
-Stage 31 H22 package forest.
+This spine now contains the residual P5 ownership forest as well as the
+earlier generic and bounded packages.  That filesystem closure is not a
+mathematical case cover: each document's quantifiers, divisor restrictions,
+candidate/partial/lifecycle state, proof dependencies, and audit limitations
+remain authoritative.  P4 antecedents, arbitrary-order and finite-instance
+programmes, local-to-global gluing, and every explicitly open remainder remain
+separate proof obligations.  No package location supplies a missing bridge or
+promotes a computational record.  The global conjecture remains
+**UNRESOLVED**.

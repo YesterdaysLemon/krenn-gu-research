@@ -203,8 +203,8 @@ absorbed by subordinate extensions.  No finite marking tangent is omitted.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_component21_finite_h22_extension_p_zero_nonzero_q_normal_closure.py
-uv run --with sympy python audit_p5_component21_finite_h22_extension_p_zero_nonzero_q_normal_closure.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_finite_h22_extension_p_zero_nonzero_q_normal_closure.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_finite_h22_extension_p_zero_nonzero_q_normal_closure.py
 ```
 
 The primary uses the committed component-21 contraction builder.  The

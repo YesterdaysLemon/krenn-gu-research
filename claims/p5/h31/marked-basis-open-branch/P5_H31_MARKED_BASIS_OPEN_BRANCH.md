@@ -20,7 +20,7 @@ The shifted branch still has no ternary `H31` lift: a one-marked map is
 injective and the usual transverse-coordinate argument forces a third
 target row to vanish.  This theorem closes that branch.  The subsequent
 classification in
-[`P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md`](P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md)
+[`P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md`](../disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification/P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md)
 now closes every marking over the finite family chart; projective
 boundary planes remain separate.
 
@@ -150,17 +150,17 @@ component.
 
 That required classification has now been completed on the finite
 family chart in
-[`P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md`](P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md).
+[`P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md`](../disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification/P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md).
 It finds the full constructible survivor table, including three
 previously hidden points on `C=-L/2`, and excludes every binary
 extension by all-extension marked-minor covers.  The remaining
 known-component work was therefore on its projective toric and Schubert
 boundary planes.  The 21 genuine toric base cases have since been
 closed, including their complete marked fibres, in
-[`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](claims/p5/h31/toric-marked-fibre/P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md).
+[`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](../toric-marked-fibre/P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md).
 The nonzero preferred-chart divisor is also closed at complete
 marked-fibre level in
-[`P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md`](claims/p5/h31/component-chart-boundary-marked-fibre/P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md).
+[`P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md`](../component-chart-boundary-marked-fibre/P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md).
 The internal `E=0` and first-plane Schubert-infinity fibres have since
 been closed at complete marked-fibre level.
 
@@ -169,8 +169,8 @@ been closed at complete marked-fibre level.
 Run:
 
 ```text
-python verify_p5_h31_marked_basis_open_branch.py
-python audit_p5_h31_marked_basis_open_branch.py
+python claims/p5/h31/marked-basis-open-branch/verify_p5_h31_marked_basis_open_branch.py
+python claims/p5/h31/marked-basis-open-branch/audit_p5_h31_marked_basis_open_branch.py
 ```
 
 The primary verifier checks (6)--(11) symbolically.  The independent

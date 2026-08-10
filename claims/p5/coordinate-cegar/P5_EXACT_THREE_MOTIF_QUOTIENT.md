@@ -103,7 +103,7 @@ too coarse.
 Given the two generated SAT catalogues:
 
 ```text
-python analyze_p5_exact_three_motifs.py \
+python tools/explore/analyze_p5_exact_three_motifs.py \
   tmp/p5_c4c6_exact_three_partial_supports.json \
   tmp/p5_c10_exact_three_partial_supports.json \
   --output tmp/p5_exact_three_motif_analysis.json

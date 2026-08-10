@@ -167,14 +167,14 @@ deletion but changes the neighbouring `Delta_2` equations.
 The displayed-family obstruction by itself excludes one marked section,
 not the complete marked-basis fibre.  The distinction is witnessed
 exactly in
-[`P5_H31_MARKED_BASIS_OPEN_BRANCH.md`](../../../../../P5_H31_MARKED_BASIS_OPEN_BRANCH.md):
+[`P5_H31_MARKED_BASIS_OPEN_BRANCH.md`](../../../../p5/h31/marked-basis-open-branch/P5_H31_MARKED_BASIS_OPEN_BRANCH.md):
 the same generic plane tuple has a shifted marking with a genuine binary
 `Delta_2` extension, although that explicit branch is subsequently
 excluded by a ternary marked determinant.
 
 The complete affine Borel fibre over every finite member of the family
 has since been classified in
-[`P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md`](../../../../../P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md).
+[`P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md`](../../../../p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification/P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md).
 Every binary survivor, including all special divisors, is ternarily
 obstructed.  Thus the marked-basis gap is closed on the finite family
 chart.
@@ -191,7 +191,7 @@ diagonal-quadric component is genuinely distinct: at a rational point
 only one annihilator line lies in the block-line jump locus, whereas
 three do throughout the component proved here.  The complete marking
 fibre at that rational point is excluded in
-[`P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md`](../../../../../P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md),
+[`P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md`](../../../../p5/h31/diagonal-quadric-component-point/P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md),
 but the generic and boundary marked fibres of the second component
 remain open, as does the existence of any further component.
 

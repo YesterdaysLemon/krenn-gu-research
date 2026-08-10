@@ -12,17 +12,26 @@ import subprocess
 from collections import Counter
 from pathlib import Path
 
+import sys
+
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__, also=["."])
+
 import analyze_p5_exact_three_motifs as MOTIF
-import generate_p5_exact_three_partial_support_system as GENERATOR
+from krenn_gu import p5_exact_three_support_system as GENERATOR
 
 
 ROOT = Path(__file__).resolve().parent
 CATALOGUE = (
-    ROOT
-    / "research_snapshots"
-    / "2026-07-27-p5-coordinate-cegar"
-    / "three_partial_c10_audit"
-    / "sat_catalogue_c10.json"
+    REPO_ROOT / 'research_snapshots/2026-07-27-p5-coordinate-cegar/three_partial_c10_audit/sat_catalogue_c10.json'
 )
 IDEAL = re.compile(
     r"^(?P<prefix>.*?^ideal I=)(?P<equations>.*?)"

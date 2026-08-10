@@ -19,7 +19,7 @@ from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
 REPO_ROOT, HERE = bootstrap(__file__)
 expose_claim_package(REPO_ROOT, "claims/p5/frontier")
 
-import verify_p5_pair_signature_catalogue_coverage as PAIR_CATALOGUE
+from krenn_gu import p5_pair_catalogue as PAIR_CATALOGUE
 
 
 MODES = tuple(range(5))

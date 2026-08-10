@@ -12,18 +12,30 @@ from pathlib import Path
 
 import sympy as sp
 
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 ROOT = Path(__file__).resolve().parent
 PRIMARY = ROOT / "verify_p5_component21_finite_base_extension_infinity_partial_closure.py"
 THEOREM = ROOT / "P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md"
 PINNED = {
     ROOT / "P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md": (
-        "41b9f45ef5f65efc6706a3757d5def9318015ec2c25dcda5c111a13aa5c16495"
+        "77bc53e3451358bfc4764fce5e82f870040bf63846b556522a25e6e95d4da8e7"
     ),
     ROOT / "verify_p5_component21_normalized_parameter_compactification_complete_obstruction.py": (
-        "a395cefece221d2c6df797b55b9f900144a0cea95d568d8633ffb89ab495aaff"
+        "c4cebc5eb8ea6f1fe63e83d9ad472c1208cce880dff32b1c8fb75682e78c9ecb"
     ),
     ROOT / "audit_p5_component21_normalized_parameter_compactification_complete_obstruction.py": (
-        "c098f94bf73f9a58b060314647c6048324bef2198509511561f87ec670831d8a"
+        "3336ca78627ca3bc6ef7d69954be7319e7948a7733c52eb5da6a8ad2d9c5c541"
     ),
 }
 WORDS = tuple(itertools.product((0, 1), repeat=4))
@@ -318,7 +330,7 @@ def main() -> None:
 
     replay = subprocess.run(
         [sys.executable, str(PRIMARY)],
-        cwd=ROOT,
+        cwd=REPO_ROOT,
         check=True,
         capture_output=True,
         text=True,

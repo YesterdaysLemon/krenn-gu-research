@@ -151,8 +151,8 @@ marked H31 fibre((1), r^2!=1)=empty.              (10)
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h31_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py
-uv run --with sympy python audit_p5_h31_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py
+uv run --with sympy python claims/p5/h31/common-center-kernel-star/verify_p5_h31_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py
+uv run --with sympy python claims/p5/h31/common-center-kernel-star/audit_p5_h31_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py
 ```
 
 The primary verifier performs the localized characteristic-zero

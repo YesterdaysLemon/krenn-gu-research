@@ -230,7 +230,7 @@ both pencils are now closed over the generic component point —
 two-row unit identities, `r = 0/infinity` by exact identification
 with the four `H31` coordinate frames and transport of the verified
 `H31` theorem:
-[`P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`](../../../../../P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md),
+[`P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`](../../../boundaries/P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md),
 `verify_p5_h22_disjoint_mixed_star_slope_r1_binary_obstruction.py`,
 `verify_p5_h22_disjoint_mixed_star_slope_rm1_binary_obstruction.py`,
 `verify_slope_boundary_frame_identifications.py`.  The coupled

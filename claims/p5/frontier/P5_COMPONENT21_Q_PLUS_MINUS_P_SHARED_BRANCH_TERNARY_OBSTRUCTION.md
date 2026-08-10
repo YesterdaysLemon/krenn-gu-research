@@ -164,8 +164,8 @@ structured false positives, not counterexample fibres.
 ## Replay and boundaries
 
 ```text
-uv run --with sympy python verify_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py
-uv run --with sympy python audit_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py
 ```
 
 The primary performs all four characteristic-zero saturated eliminations,

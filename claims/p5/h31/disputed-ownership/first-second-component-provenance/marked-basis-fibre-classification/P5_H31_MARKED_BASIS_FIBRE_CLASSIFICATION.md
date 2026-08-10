@@ -6,7 +6,7 @@ This is an exact characteristic-zero classification and obstruction.
 
 For every finite-parameter member of the five-parameter all-rank-two
 family in
-[`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](claims/p4/classifications/pair-geometry/decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md),
+[`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](../../../../../p4/classifications/pair-geometry/decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md),
 classify every marked row basis over its four planes that admits a
 neighbouring binary `Delta_2` slice.  Every such binary extension has an
 injective one-marked map in at least one mode and a transverse pure
@@ -15,13 +15,13 @@ coordinate.  Consequently none can lift to an `H31` restriction.
 Thus the **entire marked-basis fibre** over the known finite family is
 excluded, not only the canonical marked section or the dense shifted
 section from
-[`P5_H31_MARKED_BASIS_OPEN_BRANCH.md`](P5_H31_MARKED_BASIS_OPEN_BRANCH.md).
+[`P5_H31_MARKED_BASIS_OPEN_BRANCH.md`](../../../marked-basis-open-branch/P5_H31_MARKED_BASIS_OPEN_BRANCH.md).
 
 This does not classify the toric and Schubert boundary planes in the
 projective closure of the component.  Moreover, the known component is
 now proved **not** to be the only all-rank-two pure-compression
 component; see
-[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md).
+[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](../../../../../p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md).
 
 ## The marked-basis bundle
 
@@ -326,20 +326,20 @@ all-rank-two pure-compression family lifts to H31.                  (19)
 
 The marked-basis gap on the known finite family chart is closed.  The
 genuine toric base boundary was subsequently closed in
-[`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](claims/p5/h31/toric-marked-fibre/P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md).
+[`P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md`](../../../toric-marked-fibre/P5_H31_TORIC_MARKED_FIBRE_OBSTRUCTION.md).
 The nonzero preferred-chart divisor was subsequently closed in
-[`P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md`](claims/p5/h31/component-chart-boundary-marked-fibre/P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md).
+[`P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md`](../../../component-chart-boundary-marked-fibre/P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md).
 The first-plane infinity and internal `E=0` fibres were subsequently
 closed in
-[`P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md`](claims/p5/h31/component-fibre-infinity-marked-fibre/P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md)
+[`P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md`](../../../component-fibre-infinity-marked-fibre/P5_H31_COMPONENT_FIBRE_INFINITY_MARKED_FIBRE_OBSTRUCTION.md)
 and
-[`P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md`](claims/p5/h31/internal-e0-marked-fibre/P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md).
+[`P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md`](../../../internal-e0-marked-fibre/P5_H31_INTERNAL_E0_MARKED_FIBRE_OBSTRUCTION.md).
 Thus the complete marked fibre of the known component is closed.
 The honest `H31` remainder is now:
 
 1. the second diagonal-quadric component, whose complete fibre is open
    although one rational fibre is excluded in
-   [`P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md`](P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md);
+   [`P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md`](../../../diagonal-quadric-component-point/P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md);
 2. any further irreducible components of the all-rank-two pure `P_4`
    plane locus; and
 3. the separate `H22` frontier.
@@ -351,17 +351,17 @@ No global Krenn--Gu conclusion follows yet.
 Run:
 
 ```text
-python verify_p5_h31_marked_basis_fibre_classification.py
-python audit_p5_h31_marked_basis_fibre_classification.py
+python claims/p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification/verify_p5_h31_marked_basis_fibre_classification.py
+python claims/p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification/audit_p5_h31_marked_basis_fibre_classification.py
 ```
 
 Regenerate the two normalized Singular inputs, for any distinguished
 `q=0,1,2,3`, with:
 
 ```text
-python derive_p5_h31_marked_basis_fibre_elimination.py q \
+python claims/p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification/derive_p5_h31_marked_basis_fibre_elimination.py q \
   --absolute --normalize-l --direct-normalization --fast-groebner
-python derive_p5_h31_marked_basis_fibre_elimination.py q \
+python claims/p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification/derive_p5_h31_marked_basis_fibre_elimination.py q \
   --absolute --normalize-c-l0 --direct-normalization --fast-groebner
 ```
 

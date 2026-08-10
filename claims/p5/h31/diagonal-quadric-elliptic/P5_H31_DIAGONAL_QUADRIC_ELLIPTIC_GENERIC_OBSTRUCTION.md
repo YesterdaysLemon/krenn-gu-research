@@ -355,7 +355,7 @@ an explicit dense pivot chart, its bordered minors force every extra
 kernel direction onto either the sections in (24), with exactly their
 already-closed markings, or the pure-direction/singular-fibre loci:
 
-- [`P5_H31_ELLIPTIC_MIDDLE_COORDINATE_RANK_DROP.md`](P5_H31_ELLIPTIC_MIDDLE_COORDINATE_RANK_DROP.md)
+- [`P5_H31_ELLIPTIC_MIDDLE_COORDINATE_RANK_DROP.md`](../elliptic-middle-coordinate-rank-drop/P5_H31_ELLIPTIC_MIDDLE_COORDINATE_RANK_DROP.md)
 
 At that intermediate stage, the pivot complement and the end
 coordinates `q=0,3` remained.  The end-coordinate generic chart is also
@@ -364,7 +364,7 @@ have a unit `a1` component, and one bordered quotient minor proves full
 rank whenever `t2!=x` and `t3!=1`, away from the already displayed
 geometric factors:
 
-- [`P5_H31_ELLIPTIC_END_COORDINATE_FULL_RANK_CHART.md`](P5_H31_ELLIPTIC_END_COORDINATE_FULL_RANK_CHART.md)
+- [`P5_H31_ELLIPTIC_END_COORDINATE_FULL_RANK_CHART.md`](../elliptic-end-coordinate-full-rank-chart/P5_H31_ELLIPTIC_END_COORDINATE_FULL_RANK_CHART.md)
 
 The deepest `q=0,3` intersections of those divisors are now closed as
 well.  Two-minor compatibility produces conjugate residual trisections
@@ -372,14 +372,14 @@ whose common normalization is a smooth genus-two curve.  The marking
 equations force one candidate in each orientation, but two further
 quotient minors have coprime residual factors and exclude both:
 
-- [`P5_H31_ELLIPTIC_END_GENUS_TWO_EXCEPTION_OBSTRUCTION.md`](P5_H31_ELLIPTIC_END_GENUS_TWO_EXCEPTION_OBSTRUCTION.md)
+- [`P5_H31_ELLIPTIC_END_GENUS_TWO_EXCEPTION_OBSTRUCTION.md`](../elliptic-end-genus-two-exception/P5_H31_ELLIPTIC_END_GENUS_TWO_EXCEPTION_OBSTRUCTION.md)
 
 The complete regular `t2=x` divisor is now closed too.  The same
 genus-two normalization reduces its residual markings to two
 univariate minors; their resultant and one quadratic-exception minor
 exclude every point for both endpoints:
 
-- [`P5_H31_ELLIPTIC_END_T2_DIVISOR_OBSTRUCTION.md`](P5_H31_ELLIPTIC_END_T2_DIVISOR_OBSTRUCTION.md)
+- [`P5_H31_ELLIPTIC_END_T2_DIVISOR_OBSTRUCTION.md`](../elliptic-end-t2-divisor/P5_H31_ELLIPTIC_END_T2_DIVISOR_OBSTRUCTION.md)
 
 The complete regular `t3=1` divisor is closed as well.  Its apparent
 quadratic marking cover splits into two rational branches over the
@@ -388,14 +388,14 @@ the same genus-two trisection.  On its normalization, univariate gcds
 leave only `s=-1+/-sqrt(2),1,+/-i`; exact mixed and binary-diagonal
 ranks exclude every lift at those points for both endpoints:
 
-- [`P5_H31_ELLIPTIC_END_T3_DIVISOR_OBSTRUCTION.md`](P5_H31_ELLIPTIC_END_T3_DIVISOR_OBSTRUCTION.md)
+- [`P5_H31_ELLIPTIC_END_T3_DIVISOR_OBSTRUCTION.md`](../elliptic-end-t3-divisor/P5_H31_ELLIPTIC_END_T3_DIVISOR_OBSTRUCTION.md)
 
 The middle-coordinate pivot complement is now closed too.  Four
 residual factors and five terminal quotient minors close
 `t0=0,t3=1,t2=r^2x`; a separate two-minor pivot closes the regular
 two-torsion slice `Y=0`:
 
-- [`P5_H31_ELLIPTIC_MIDDLE_COORDINATE_PIVOT_COMPLEMENT.md`](P5_H31_ELLIPTIC_MIDDLE_COORDINATE_PIVOT_COMPLEMENT.md)
+- [`P5_H31_ELLIPTIC_MIDDLE_COORDINATE_PIVOT_COMPLEMENT.md`](../elliptic-middle-coordinate-pivot-complement/P5_H31_ELLIPTIC_MIDDLE_COORDINATE_PIVOT_COMPLEMENT.md)
 
 Therefore every marked fibre in the regular elliptic chart is excluded
 for all four distinguished coordinates.  The normalization boundary is
@@ -409,7 +409,7 @@ reduce it to the closed factorized/base-locus strata and two rational
 `r=0` curves.  Exact relative projection and a uniform marked minor
 exclude both projective curves:
 
-- [`P5_H31_DIAGONAL_QUADRIC_NORMALIZATION_BOUNDARY_OBSTRUCTION.md`](P5_H31_DIAGONAL_QUADRIC_NORMALIZATION_BOUNDARY_OBSTRUCTION.md)
+- [`P5_H31_DIAGONAL_QUADRIC_NORMALIZATION_BOUNDARY_OBSTRUCTION.md`](../diagonal-quadric-normalization-boundary/P5_H31_DIAGONAL_QUADRIC_NORMALIZATION_BOUNDARY_OBSTRUCTION.md)
 
 Thus the complete normalized affine slice `A=B=F=1` is excluded.  A
 complete component theorem must now classify the outer
@@ -420,8 +420,8 @@ projective/gauge boundary `A B F=0`.
 Run:
 
 ```text
-python verify_p5_h31_diagonal_quadric_elliptic_generic.py
-python audit_p5_h31_diagonal_quadric_elliptic_generic.py
+python claims/p5/h31/diagonal-quadric-elliptic/verify_p5_h31_diagonal_quadric_elliptic_generic.py
+python claims/p5/h31/diagonal-quadric-elliptic/audit_p5_h31_diagonal_quadric_elliptic_generic.py
 ```
 
 The verifier checks (1)--(24), the irreducible quadratic extension,

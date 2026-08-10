@@ -52,7 +52,7 @@ The placement is explicit.  Reorder the modes as `(2,3,0,1)`.  For `r=+1`
 use source order `(X2,X1,X0,X3)`, and for `r=-1` use
 `(X3,X1,X0,X2)`.  In both cases the four row spaces become the overlapping
 secant normal form of
-[`P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md`](claims/p4/classifications/pair-geometry/overlapping-secant-lower-pair/P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md)
+[`P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md`](../../p4/classifications/pair-geometry/overlapping-secant-lower-pair/P4_OVERLAPPING_SECANT_LOWER_PAIR_CLASSIFICATION.md)
 at
 
 ```text
@@ -183,8 +183,8 @@ certificates and are the only coverage claimed here.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_component23_k_infinity_lower_pair_endpoints_obstruction.py
-uv run --with sympy python audit_p5_component23_k_infinity_lower_pair_endpoints_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component23_k_infinity_lower_pair_endpoints_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component23_k_infinity_lower_pair_endpoints_obstruction.py
 ```
 
 The primary uses the certified permanent-matrix utilities but recomputes all

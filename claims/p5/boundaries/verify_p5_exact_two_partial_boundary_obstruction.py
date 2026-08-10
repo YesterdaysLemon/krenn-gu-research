@@ -15,22 +15,19 @@ for _p in Path(__file__).resolve().parents:
         break
 from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
 
-REPO_ROOT, HERE = bootstrap(__file__)
+REPO_ROOT, HERE = bootstrap(__file__, also=["."])
 expose_claim_package(REPO_ROOT, "claims/p5/boundaries")
 expose_claim_package(REPO_ROOT, "claims/p5/frontier")
 
 import audit_p5_exact_two_partial_boundary as AUDIT
-import generate_p5_exact_two_partial_support_system as GENERATOR
+from krenn_gu import p5_exact_two_support_system as GENERATOR
 import verify_p5_one_partial_boundary_obstruction as ONE_PARTIAL
-import verify_p5_pair_signature_catalogue_coverage as COVERAGE
+from krenn_gu import p5_pair_catalogue as COVERAGE
 
 
 ROOT = Path(__file__).resolve().parent
 BOUNDARY = (
-    ROOT
-    / "research_snapshots"
-    / "2026-07-27-p5-coordinate-cegar"
-    / "two_partial_boundary"
+    REPO_ROOT / 'research_snapshots/2026-07-27-p5-coordinate-cegar/two_partial_boundary'
 )
 MANIFEST = BOUNDARY / "manifest.json"
 

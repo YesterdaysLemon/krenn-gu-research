@@ -226,8 +226,8 @@ though its necessary shared-binary incidence is not.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py
-uv run --with sympy python audit_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py
 ```
 
 The primary reconstructs the endpoint limits, pure coefficients, profiles,

@@ -24,7 +24,7 @@ expose_claim_package(REPO_ROOT, "claims/p4/classifications")
 ROOT = REPO_ROOT
 
 from verify_p4_directed_zero_divisor_triangle_components import coefficients
-from verify_p5_h31_marked_basis_open_branch import marked_extension, mixed_matrix
+from krenn_gu.p5_marked_basis import marked_extension, mixed_matrix
 
 
 PIVOT_ROWS = (3, 4, 5, 7, 8, 11)

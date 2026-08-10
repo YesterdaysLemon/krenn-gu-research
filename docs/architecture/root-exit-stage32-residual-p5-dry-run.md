@@ -1,6 +1,6 @@
 # Root-exit Stage 32 residual P5 forest dry run
 
-Status: **EXACT MAPPING REFROZEN ON MERGED MAIN; NOT YET EXECUTED**
+Status: **EXECUTED; LOCAL REPAIR AND VALIDATION GATES PASS**
 
 The global Krenn--Gu conjecture remains **UNRESOLVED**.  This is a Tier-2
 layout, catalog, disputed-ownership, and shared-infrastructure transaction.
@@ -22,6 +22,8 @@ files.  The historical frozen root universe remains exactly 2,363 paths with
 SHA-256 `2f4f1af23a89fa3ca56fe2114676c6324385aa1dbd7e5b6ddf35863511edd76c`.
 Catalog membership changes from `2244 classified + 119 unclassified` to
 `2249 classified + 114 unclassified`; the union and its hash do not change.
+The executor applied exactly 220 `R100` renames plus the moved-manifest
+transition in pure commit `53a66dbb5506d112ebc0ba4d99ac759700f98f8f`.
 
 ## Exact selection and ownership
 
@@ -85,9 +87,9 @@ adjudication.
 
 ## Inverse taper and dependency direction
 
-Moving operator entry points into `tools/` must leave zero `claims -> tools`
-and zero `src -> claims` imports.  Live consumer topology requires these
-narrow extractions during the repair commit:
+Moving operator entry points into `tools/` leaves zero `claims -> tools` and
+zero `src -> claims` imports.  Live consumer topology required these narrow
+extractions during the repair:
 
 - the neutral permanent/mixed-matrix/marked-extension/one-marked-map API
   currently provided by `verify_p5_h31_marked_basis_open_branch.py` into a
@@ -117,7 +119,11 @@ certifier imports its sibling and the tool becomes a thin operator wrapper.
 Parity pins the 16 canonical leaves, total orbit weight 120, membership map,
 and chain assumptions.  No SAT replay is required.
 
-Each extraction requires bounded output/API parity tests.  It changes code
+Each extraction is guarded by bounded output/API parity tests.  The seven-test
+fixture suite pins marked-basis symbolic APIs, one/exact-two/exact-three
+support-system output, split-saturation text transforms, high-coordinate and
+q5_311 graph/program output, the 6,495-record pair catalogue, and the 16-leaf
+n12 orbit core.  It changes code
 ownership and import direction only; it does not upgrade a candidate,
 partial result, verifier, or audit into generic proof infrastructure.
 
@@ -142,9 +148,9 @@ The schema-v2 batch
 `catalog/batches/p5-residual-root-exit-stage32.json` freezes every old path,
 destination, and Git blob at the reviewed base.  Its 220 members reproduce
 the mapping and source hashes above.  Fresh semantic and mechanical referees
-independently accepted the exact refreeze at `c41769b`; the executor must still
-refuse a non-ancestor base, source drift, destination occupancy, an untracked
-batch, or any mapping/hash drift before the first `git mv`.
+independently accepted the exact refreeze at `c41769b`; the executor then
+refused every non-ancestor/source-drift/destination-occupancy/untracked-batch
+hazard before the first `git mv`.
 
 ## Repair boundary and validation
 
@@ -157,11 +163,24 @@ this tranche preserve every status, scope, note, assumption, and asymmetric
 role; only moved paths and current document hashes may change.
 
 No SAT, Singular, brute-force, broad theorem, numerical, or sampling replay
-is authorized merely because paths move.  Frozen science is trusted by Git
-blob identity.  Before publishing, require an index-complete tree, fixed-point
-link rewrite, zero stale imports/commands/paths, all JSON and Python compile
-checks, focused parity tests, hygiene, migration tests, fresh semantic and
-mechanical acceptance, exact-head hosted CI, and merged-main CI.  This is the
+was run merely because paths moved.  Frozen science was trusted by Git blob
+identity.  The index-complete candidate records:
+
+- hygiene PASS at `321 = 16 justified + 305 grandfathered`, with zero new
+  debt, 1,716 Python files compiling, 857 Markdown files resolving, and all
+  86 theorem-ledger hashes matching;
+- fixed-point link/command rewrite after 331 link and 176 replay-command
+  repairs, with zero ambiguity and zero second-pass changes;
+- all 96 live Component21 dependency-pin assertions matching after a
+  bottom-up path/hash-only refresh, while 15 dated historical hashes remain
+  frozen;
+- 170 migration tests, seven Stage 32 no-solver parity tests, and 14 focused
+  lattice tests passing; and
+- static foreign-CWD, bootstrap, import-direction, and moved-path audits,
+  without a scientific replay.
+
+Publishing additionally requires fresh post-execution semantic and mechanical
+acceptance, exact-head hosted CI, and merged-main CI.  This is the
 first tranche after a fresh read-only program audit accepted merged main
 `614d41e`: that audit independently reconciled all 457 Stage 30, Stage 31, and
 H31 moves, their blobs/provenance/statuses, the bounded local floor, hosted CI,

@@ -211,8 +211,8 @@ hence no `H31` lift, occurs on either apparent exception curve.
 Run:
 
 ```text
-python verify_p5_h31_elliptic_end_genus_two_exception.py
-python audit_p5_h31_elliptic_end_genus_two_exception.py
+python claims/p5/h31/elliptic-end-genus-two-exception/verify_p5_h31_elliptic_end_genus_two_exception.py
+python claims/p5/h31/elliptic-end-genus-two-exception/audit_p5_h31_elliptic_end_genus_two_exception.py
 ```
 
 The primary verifier expands permanents directly.  For both `q=0,3`,

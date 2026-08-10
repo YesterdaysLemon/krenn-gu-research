@@ -14,21 +14,22 @@ import sys
 
 import sympy as sp
 
-from p5_high_coordinate_tree_chart_cegar import (
+
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/p4/classifications/pair-geometry/pure-rank-two")
+
+from krenn_gu.singular_runtime import (
     singular_command_with_timeout,
 )
-# The pure-rank-two pair-geometry package moved in Stage 7; expose the
-# package root through the shared helper so the bare-name import below
-# resolves.
-for _p in Path(__file__).resolve().parents:
-    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
-        sys.path.insert(0, str(_p / "src"))
-        break
-from krenn_gu.bootstrap import expose_claim_package  # noqa: E402
-
-expose_claim_package(
-    Path(__file__).resolve().parent,
-    "claims/p4/classifications/pair-geometry/pure-rank-two")
 from verify_p4_pure_rank_two_toric_slice_segre import (  # noqa: E402
     add,
     affine_rank,
@@ -40,7 +41,7 @@ from verify_p4_pure_rank_two_toric_slice_segre import (  # noqa: E402
     slice_map,
     subtract,
 )
-from verify_p5_h31_marked_basis_open_branch import mixed_matrix
+from krenn_gu.p5_marked_basis import mixed_matrix
 
 
 CONFIGURATIONS = (

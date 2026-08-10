@@ -24,7 +24,7 @@ from verify_p5_h31_embedded_p3_component_normalized_boundary import (  # noqa: E
     full_one_marked,
     permanent5,
 )
-from verify_p5_h31_marked_basis_open_branch import one_marked_map  # noqa: E402
+from krenn_gu.p5_marked_basis import one_marked_map  # noqa: E402
 
 
 THEOREM = (

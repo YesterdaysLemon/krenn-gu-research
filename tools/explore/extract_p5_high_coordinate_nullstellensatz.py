@@ -9,9 +9,23 @@ import subprocess
 import time
 from pathlib import Path
 
-import generate_p5_one_partial_support_system as GENERATOR
-from generate_p5_split_saturation_system import convert_text
-import p5_high_coordinate_tree_chart_cegar as HIGH
+import sys
+
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+from krenn_gu import p5_support_system as GENERATOR
+from krenn_gu.p5_split_saturation import convert_text
+from krenn_gu import p5_high_coordinate as HIGH
+from krenn_gu import singular_runtime
 
 
 def certificate_program(
@@ -148,7 +162,7 @@ def main() -> None:
     started = time.monotonic()
     try:
         completed = subprocess.run(
-            HIGH.singular_command_with_timeout(args.timeout),
+            singular_runtime.singular_command_with_timeout(args.timeout),
             input=extraction,
             text=True,
             encoding="utf-8",

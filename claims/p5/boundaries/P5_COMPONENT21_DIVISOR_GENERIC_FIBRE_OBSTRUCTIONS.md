@@ -191,8 +191,8 @@ lift is impossible.
 ## Replay
 
 ```text
-uv run --with sympy python verify_p5_component21_divisor_generic_fibre_obstructions.py
-uv run --with sympy python audit_p5_component21_divisor_generic_fibre_obstructions.py
+uv run --with sympy python claims/p5/boundaries/verify_p5_component21_divisor_generic_fibre_obstructions.py
+uv run --with sympy python claims/p5/boundaries/audit_p5_component21_divisor_generic_fibre_obstructions.py
 ```
 
 The primary replay uses exact row modules and saturated elimination over the

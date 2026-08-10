@@ -4,7 +4,7 @@
 
 This is an exact characteristic-zero obstruction for the complete
 five-parameter family constructed in
-[`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](claims/p4/classifications/pair-geometry/decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md).
+[`P4_DECOMPOSABLE_RANK_TWO_FAMILY.md`](../../../p4/classifications/pair-geometry/decomposable-rank-two-family/P4_DECOMPOSABLE_RANK_TWO_FAMILY.md).
 
 No member of that family can simultaneously be:
 
@@ -19,7 +19,7 @@ This excludes the displayed dense family chart in one distinguished-
 source orientation of a natural all-rank-two component.  The other
 three orientations, and hence the full source/mode symmetry orbit of
 the family chart, are excluded in
-[`P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md`](P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md).
+[`P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md`](../rank-two-component-orbit/P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md).
 Neither result automatically excludes all boundary points of the
 component closures.  This theorem also does **not** classify every
 rank-two pure compression of `P_4`, exclude all of `H31`, prove
@@ -186,8 +186,8 @@ Both `l!=0` and `l=0` are impossible, proving the theorem.
 Run:
 
 ```text
-python verify_p5_h31_known_rank_two_family_obstruction.py
-python audit_p5_h31_known_rank_two_family_obstruction.py
+python claims/p5/h31/known-rank-two-family/verify_p5_h31_known_rank_two_family_obstruction.py
+python claims/p5/h31/known-rank-two-family/audit_p5_h31_known_rank_two_family_obstruction.py
 ```
 
 The primary verifier reconstructs all binary permanent coefficients,

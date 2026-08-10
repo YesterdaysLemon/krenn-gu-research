@@ -20,7 +20,7 @@ prize problem.
 ## The `E=e` curve
 
 In the normal form of
-[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md),
+[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](../../../p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md),
 set
 
 ```text
@@ -197,8 +197,8 @@ Hence no marked plane tuple on (2), for any `e in C`, lifts to `H31`.
 Run:
 
 ```text
-python verify_p5_h31_diagonal_quadric_e_curve_marked_fibre.py
-python audit_p5_h31_diagonal_quadric_e_curve_marked_fibre.py
+python claims/p5/h31/diagonal-quadric-e-curve-marked-fibre/verify_p5_h31_diagonal_quadric_e_curve_marked_fibre.py
+python claims/p5/h31/diagonal-quadric-e-curve-marked-fibre/audit_p5_h31_diagonal_quadric_e_curve_marked_fibre.py
 ```
 
 The primary verifier recomputes the four relative projections, the

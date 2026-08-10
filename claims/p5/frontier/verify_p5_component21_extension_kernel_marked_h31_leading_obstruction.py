@@ -9,6 +9,19 @@ from pathlib import Path
 
 import sympy as sp
 
+import sys
+
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__, also=["."])
+
 from verify_p5_component21_normalized_parameter_compactification_complete_obstruction import (
     finite_bases,
 )
@@ -23,19 +36,19 @@ ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md"
 PINNED = {
     ROOT / "P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md": (
-        "ea72ae9db0954b9dbeefc058bf3c14916896a4ff65282e241bbc6396cf3a91e0"
+        "21173708385ae3fa09160c4a3788dbdc96fff3710bfd766a175477c607b552a9"
     ),
     ROOT / "verify_p5_component21_finite_base_extension_infinity_partial_closure.py": (
-        "b8b9237b02f3c6ae7b4c702b9bc6a26c27c5a5580827d47584ac1226d9addd92"
+        "db6055a20fdc3e9e0d5a4e7ac026f5c43201fa0b85e95019374d655c24b5a061"
     ),
     ROOT / "audit_p5_component21_finite_base_extension_infinity_partial_closure.py": (
-        "949272bd0a727697566d756562fbf0dd03c5e21f577d0ec2d5a3c69109e5a271"
+        "2078feb22503e06343ce04e7710d6c49f0de0fbd6d16b4f41fb96a305fa1691c"
     ),
     ROOT / "verify_p5_component21_normalized_parameter_compactification_complete_obstruction.py": (
-        "a395cefece221d2c6df797b55b9f900144a0cea95d568d8633ffb89ab495aaff"
+        "c4cebc5eb8ea6f1fe63e83d9ad472c1208cce880dff32b1c8fb75682e78c9ecb"
     ),
     ROOT / "verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py": (
-        "c946ccc0bc6bf74b123dc9b41ce9ab3d6b813296161ae48ac8c436ec17d33f53"
+        "5e6046fbbfa4b52139c1b70ee453ad397ec0d6bfe38684164711a1b5be3f5aff"
     ),
 }
 SEVEN_ROWS = (0, 1, 2, 4, 5, 7, 8)

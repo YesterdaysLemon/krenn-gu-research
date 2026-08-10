@@ -5,6 +5,13 @@ documents and ten Python carriers.  This README is later navigation and is
 not a batch member.  Finite censuses and bounded chart calculations retain
 their written bounds and do not become global case covers through colocation.
 
+Stage 32 added nine residual coordinate/high-coordinate artifacts: three
+Markdown documents and six Python carriers.  The current surface therefore
+contains 25 artifacts: nine Markdown documents and 16 Python carriers,
+excluding this README.  Reusable graph/chart construction now lives below
+`src/krenn_gu`, while claim-specific verifiers and bounded CEGAR records stay
+here with their original status and scope.
+
 The six documents are:
 
 - [`P5_COORDINATE_PLANE_PAIR_COVER.md`](P5_COORDINATE_PLANE_PAIR_COVER.md);
@@ -21,9 +28,12 @@ an exhaustive P5 case cover.  The separately owned root
 `P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION` theorem remains an antecedent,
 not a member of this directory or a global proof.
 
-All excluded high-coordinate, Component20/21/23, H22/H31, Branch B,
-weighted-`p+q`, internal-`E=0`, marked-basis, legacy, and withdrawn surfaces
-remain outside this directory.  Stage 29 adjudicates none of their statuses
-or ownership conflicts.  Arbitrary
+At the historical Stage 29 boundary, high-coordinate, Component20/21/23,
+H22/H31, Branch B, weighted-`p+q`, internal-`E=0`, marked-basis, legacy, and
+withdrawn surfaces remained outside this directory.  Stage 32 subsequently
+moved the high-coordinate claim package here, placed other residual evidence
+with its scientific owner, and extracted only the widely consumed neutral
+code.  Neither stage adjudicates a status or ownership conflict, and the
+bounded calculations here are not an exhaustive P5 case cover.  Arbitrary
 P7/local-to-global remains **UNKNOWN**, and the global Krenn-Gu conjecture
 remains **UNRESOLVED**.

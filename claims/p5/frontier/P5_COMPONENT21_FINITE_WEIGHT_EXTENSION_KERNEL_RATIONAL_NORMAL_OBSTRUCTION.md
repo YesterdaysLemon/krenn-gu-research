@@ -104,8 +104,8 @@ normal, so no weighted-`H22` first normal exists at (1).
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_component21_finite_weight_extension_kernel_rational_normal_obstruction.py
-uv run --with sympy python audit_p5_component21_finite_weight_extension_kernel_rational_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_finite_weight_extension_kernel_rational_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_finite_weight_extension_kernel_rational_normal_obstruction.py
 ```
 
 The primary builds the normal from the committed component-21 contraction

@@ -28,7 +28,7 @@ SCRIPT = Path(__file__).resolve()
 REPORT = ROOT / "P5_H22_COMPONENT19_P0_PHI_PM_ONE_ORDINARY_OBSTRUCTION_CANDIDATE.md"
 CERTIFICATE = ROOT / "p5_h22_component19_p0_phi_pm_one_ordinary_obstruction_certificate.json"
 SOURCE = REPO_ROOT / "claims/p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md"
-H22_THEORY = REPO_ROOT / "P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md"
+H22_THEORY = REPO_ROOT / "claims/p5/coordinate-cegar/P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md"
 
 WORDS4 = tuple(itertools.product((0, 1), repeat=4))
 MIXED4 = WORDS4[1:-1]

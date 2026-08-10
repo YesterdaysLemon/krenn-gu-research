@@ -26,12 +26,12 @@ for _p in Path(__file__).resolve().parents:
 from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
-from p5_high_coordinate_tree_chart_cegar import singular_command_with_timeout  # noqa: E402
+from krenn_gu.singular_runtime import singular_command_with_timeout  # noqa: E402
 expose_claim_package(
     REPO_ROOT, "claims/p4/components/disjoint-mixed-star")
 from verify_p4_disjoint_mixed_star_pure_component import (  # noqa: E402
     family, relation)
-from verify_p5_h31_marked_basis_open_branch import (
+from krenn_gu.p5_marked_basis import (
     marked_extension,
     mixed_matrix,
 )

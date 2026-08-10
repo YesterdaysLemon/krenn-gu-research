@@ -12,21 +12,33 @@ from pathlib import Path
 
 import sympy as sp
 
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 ROOT = Path(__file__).resolve().parent
 THEOREM = ROOT / "P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md"
 PRIMARY = ROOT / "verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py"
 DEPENDENCIES = {
-    "P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md": (
-        "8a61d156778ccc7a388790ee9c0af12a905d2d072b2dc368a4bf978470648982"
+    "claims/p5/boundaries/P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md": (
+        "c95e70fa3e553be9b5a0bfcb052f05cf667e41366edec021e9aa1ea240cfef36"
     ),
-    "verify_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py": (
-        "2626ab1af6c22fb724f6a530fa07083d232986905e14d2f52da51e07cf502ccc"
+    "claims/p5/boundaries/verify_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py": (
+        "3865eaaa58259be64317141870e0fd51b6c9f4b425d369d6e93904404a99e70a"
     ),
-    "audit_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py": (
-        "b0c7f0971d40c8e558425c20dc62cb887f378a3eb0ae5cbe5ce54c4df8c7d86f"
+    "claims/p5/boundaries/audit_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py": (
+        "5eb84e710ef524dd6d2f9fe193c4c67309c89e636df780ebb0d5a6e8662d4065"
     ),
     "claims/p4/classifications/star/coincident-support-rank-one-star/P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md": (
-        "1b535667beed409fe08d4fa9011f2fbc455d4d4c6a7d0c2aecc089a107cdc447"
+        "11422585ed24db3c3a1dd727a648267237d0624fe8574567859e404a6aabc18b"
     ),
     "claims/p4/classifications/star/coincident-support-rank-one-star/verify_p4_coincident_support_rank_one_star_component.py": (
         "a170054715c8fc8ec7f1fc1e0dba896c0fdc7d72ed58e41e7f9b8bba23af4adf"
@@ -446,7 +458,7 @@ def main() -> None:
     endpoint_certificates = alpha_infinity_unit_certificates()
 
     for filename, expected in DEPENDENCIES.items():
-        assert sha256(ROOT / filename) == expected
+        assert sha256(REPO_ROOT / filename) == expected
     theorem_text = " ".join(THEOREM.read_text(encoding="utf-8").split())
     assert "does **not** classify the central zero" in theorem_text
     assert "arbitrary-order local-to-global reduction remains open" in theorem_text
@@ -454,7 +466,7 @@ def main() -> None:
 
     completed = subprocess.run(
         (sys.executable, str(PRIMARY)),
-        cwd=ROOT,
+        cwd=REPO_ROOT,
         text=True,
         encoding="utf-8",
         errors="replace",

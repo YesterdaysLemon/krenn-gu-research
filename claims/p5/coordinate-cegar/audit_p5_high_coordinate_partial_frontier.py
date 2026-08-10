@@ -140,7 +140,7 @@ def main() -> None:
         "source": Path(__file__).name,
         "source_sha256": sha256(Path(__file__)),
     }
-    output_path = ROOT / "tmp" / "p5_high_coordinate_partial_frontier_audited.json"
+    output_path = REPO_ROOT / 'tmp/p5_high_coordinate_partial_frontier_audited.json'
     output_path.parent.mkdir(exist_ok=True)
     output_path.write_text(
         json.dumps(output, indent=2) + "\n",

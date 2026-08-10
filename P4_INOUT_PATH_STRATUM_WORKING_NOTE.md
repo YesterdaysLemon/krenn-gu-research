@@ -444,7 +444,7 @@ classification remain open.  The replay scripts are
    `H31`/`H22` boundary work and the global prize conjecture, all
    open.  What finishing `P_5 -> Delta_3` would require is now
    itemized in
-   [`P5_DELTA3_OBLIGATION_LEDGER.md`](P5_DELTA3_OBLIGATION_LEDGER.md).
+   [`P5_DELTA3_OBLIGATION_LEDGER.md`](claims/p5/frontier/P5_DELTA3_OBLIGATION_LEDGER.md).
 
 ## Verification
 

@@ -253,8 +253,8 @@ end-coordinate marking is excluded.
 Run:
 
 ```text
-python verify_p5_h31_elliptic_end_t3_divisor.py
-python audit_p5_h31_elliptic_end_t3_divisor.py
+python claims/p5/h31/elliptic-end-t3-divisor/verify_p5_h31_elliptic_end_t3_divisor.py
+python claims/p5/h31/elliptic-end-t3-divisor/audit_p5_h31_elliptic_end_t3_divisor.py
 ```
 
 The primary verifier expands permanents directly.  It checks the split

@@ -12,6 +12,19 @@ from pathlib import Path
 
 import sympy as sp
 
+
+for _parent in Path(__file__).resolve().parents:
+    if (_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        sys.path.insert(0, str(_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__, also=["."])
+expose_claim_package(REPO_ROOT, "claims/p5/h31/elliptic-end-genus-two-exception")
+
 from audit_p5_h31_elliptic_end_genus_two_exception import permanent_dp
 from verify_p5_h31_elliptic_end_t3_divisor import (
     ROOT,
@@ -21,7 +34,7 @@ from verify_p5_h31_elliptic_end_t3_divisor import (
 
 
 PRIMARY = ROOT / "verify_p5_h31_elliptic_end_t3_divisor.py"
-Q3_AUDIT = ROOT / "audit_p5_h31_elliptic_end_t3_divisor_q3.py"
+Q3_AUDIT = REPO_ROOT / 'claims/p5/h31/elliptic-end-t3-divisor-q3/audit_p5_h31_elliptic_end_t3_divisor_q3.py'
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 
 
@@ -72,7 +85,7 @@ def main() -> None:
     q0 = verify_endpoint(0, 1, dp_system_builder)
     q3_completed = subprocess.run(
         [sys.executable, str(Q3_AUDIT)],
-        cwd=ROOT,
+        cwd=REPO_ROOT,
         text=True,
         encoding="utf-8",
         errors="replace",
@@ -94,7 +107,7 @@ def main() -> None:
 
     primary_completed = subprocess.run(
         [sys.executable, str(PRIMARY)],
-        cwd=ROOT,
+        cwd=REPO_ROOT,
         text=True,
         encoding="utf-8",
         errors="replace",
@@ -134,8 +147,7 @@ def main() -> None:
         "source_sha256": sha256(Path(__file__)),
     }
     output_path = (
-        ROOT / "tmp"
-        / "p5_h31_elliptic_end_t3_divisor_audited.json"
+        REPO_ROOT / 'tmp/p5_h31_elliptic_end_t3_divisor_audited.json'
     )
     output_path.parent.mkdir(exist_ok=True)
     output_path.write_text(

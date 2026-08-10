@@ -31,7 +31,7 @@ REPORT = ROOT / (
 CERTIFICATE = ROOT / (
     "p5_h22_common_active_binary_triangle_intrinsic_boundary_certificate.json"
 )
-H31_WALL = REPO_ROOT / "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md"
+H31_WALL = REPO_ROOT / "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md"
 GENERIC_H22 = REPO_ROOT / "claims/p5/h22/common-active-binary-triangle-component-generic/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md"
 P_PLUS_Q_WALL = REPO_ROOT / "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md"
 

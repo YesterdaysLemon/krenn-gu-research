@@ -19,7 +19,7 @@ component, `H22`, or the prize problem.
 ## A rational curve in the `(3,3)` component
 
 In the normal form of
-[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](claims/p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md),
+[`P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md`](../../../p4/components/diagonal-quadric/P4_DIAGONAL_QUADRIC_PURE_COMPONENT.md),
 set
 
 ```text
@@ -257,8 +257,8 @@ Hence no marked plane tuple on (2) with `c!=-1` lifts to `H31`.
 Run:
 
 ```text
-python verify_p5_h31_diagonal_quadric_curve_marked_fibre.py
-python audit_p5_h31_diagonal_quadric_curve_marked_fibre.py
+python claims/p5/h31/diagonal-quadric-curve-marked-fibre/verify_p5_h31_diagonal_quadric_curve_marked_fibre.py
+python claims/p5/h31/diagonal-quadric-curve-marked-fibre/audit_p5_h31_diagonal_quadric_curve_marked_fibre.py
 ```
 
 The primary verifier recomputes the four global relative projections,

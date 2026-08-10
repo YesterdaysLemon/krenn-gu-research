@@ -243,8 +243,8 @@ signs.  Hence projective weight is empty as well.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_component23_s_zero_rt_one_lower_pair_endpoint_lines_obstruction.py
-uv run --with sympy python audit_p5_component23_s_zero_rt_one_lower_pair_endpoint_lines_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component23_s_zero_rt_one_lower_pair_endpoint_lines_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component23_s_zero_rt_one_lower_pair_endpoint_lines_obstruction.py
 ```
 
 The primary reconstructs the tangent placement, all eight exact `H31`
