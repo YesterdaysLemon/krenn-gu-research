@@ -82,7 +82,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "31e78db9c9519ec0",
+      "document_sha256_16": "2bad65ba7b2e3973",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -435,6 +435,35 @@
         "ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FOUR_EXCLUSION.md",
         "audit_all_bridge_active_deck_maximum_degree_four_exclusion.py",
         "verify_all_bridge_active_deck_maximum_degree_four_exclusion.py"
+      ]
+    },
+    {
+      "name": "Balanced Half-Sensor Complete Deck and Wick Globalization Theorem",
+      "document": "claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md",
+      "document_sha256_16": "32badecb026e2141",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact matching and projective-bundle proof over characteristic zero",
+        "balanced partition n=2m with local root dimension at least two",
+        "ternary target for the target-disjoint and witness-extension statements",
+        "same fixed physical root-root and root-nonroot shore in the globalization equivalence",
+        "the all-balanced ambient rank-drop boundary remains open inside the witness incidence locus"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_half_sensor_complete_deck_and_wick_globalization.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_half_sensor_complete_deck_and_wick_globalization.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "The arbitrary-order proof is the written matching bijection, explicit double-factorial rank chart, projective bundle lift, and all-order Wick converse. The two scripts are bounded supporting checks, not an exhaustive graph cover. The theorem gives a universal full-sensor versus proper ambient rank-drop dichotomy; it excludes neither branch and leaves the global conjecture UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md",
+        "audit_balanced_half_sensor_complete_deck_and_wick_globalization.py",
+        "verify_balanced_half_sensor_complete_deck_and_wick_globalization.py"
       ]
     },
     {
@@ -1851,7 +1880,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "31e78db9c9519ec0",
+      "document_sha256_16": "2bad65ba7b2e3973",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -1994,7 +2023,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "31e78db9c9519ec0",
+      "document_sha256_16": "2bad65ba7b2e3973",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],

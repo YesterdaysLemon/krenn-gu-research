@@ -59,6 +59,19 @@ cannot expose these decks in the odd-root `P_5` or `P_7` branches.  Four-root
 and nuisance separation are not yet forced.  See
 [`RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md`](claims/arbitrary-order/RESPONSE_JETS_AS_PRINCIPAL_DELETION_DECKS_AND_ROOT_PARITY_LEGALITY_THEOREM.md).
 
+A balanced half-sensor removes that depth-labeling bottleneck on an exact
+arbitrary-order branch.  Splitting `n=2m` vertices into equal root and
+nonroot halves partitions every matching into `2^(m-1)` companion columns
+whose coefficients are the complete even principal hafnian deck of the same
+nonroot graph.  An explicit physical chart has full column rank at every
+order, while another choice makes its image disjoint from the ternary target
+plane.  Thus every hypothetical witness either has a unique rational complete
+deck lift on some balanced partition, which must extend globally and pass the
+all-order Wick criterion, or lies in the proper closed ambient locus where
+every balanced sensor is identically rank-deficient.  Neither branch is yet
+excluded.  See
+[`BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md`](claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md).
+
 On that clean `P_6` fan, target diagonality has now been translated exactly.
 If the fan is invertible, each target-colour deck vector lies in the inverse
 image of `Seg(P^1 x P^2)` and therefore obeys three pulled-back `2 x 2`
