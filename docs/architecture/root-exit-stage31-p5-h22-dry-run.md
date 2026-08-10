@@ -139,3 +139,17 @@ Validation is bounded to source/path behavior:
 
 No SAT, Singular, brute-force, broad theorem, numerical, or sampling job is
 authorized merely by relocation.
+
+## Rolled-back first execution attempt
+
+The first execution attempt in the long Codex worktree path reached the
+forty-sixth member and hit the Windows path-length limit.  The executor
+rolled back all forty-five completed `git mv` operations, reported no
+rollback error, and left the manifest unmodified.  A full post-rollback check
+found all 351 sources present, every destination absent, and every source
+blob equal to its frozen identity.  The recovery record is
+`catalog/recovery-20260809-205434.json`.
+
+The accepted mapping is unchanged.  Execution continues from the same
+committed source identities in a shorter isolated worktree path; no path is
+shortened by changing scientific ownership.
