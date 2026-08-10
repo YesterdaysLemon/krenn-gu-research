@@ -158,6 +158,19 @@ not preserve the exact induced word under bridge normalization and do not
 force a proper nonrigidity set to become global.  See
 [`MATRIX_UNIT_CROSS_PARITY_ERASURE_RIGID_HEAD_WICK_AND_BRIDGE_CORE_REDUCTION_THEOREM.md`](claims/arbitrary-order/MATRIX_UNIT_CROSS_PARITY_ERASURE_RIGID_HEAD_WICK_AND_BRIDGE_CORE_REDUCTION_THEOREM.md).
 
+That word-synchronization gap is now exact.  The forced binary bridge square
+changes all four endpoint colours, and the ternary bridge hexagon changes all
+six.  One complete six-vertex matrix-unit graph satisfies parity support,
+all mixed cancellations, and the relevant Wick/cut identities but only
+realizes a single pure tensor.  A second complete six-vertex relay has all
+three pure coefficients and every pure-edge cofactor active, yet cancels a
+selected bridge word through an external four-cycle and has no diagonal
+rematching for that word.  Both are route countermechanisms, not witnesses.
+The remaining positive obligation is to force perfect matchings in the pure
+graphs induced on the word shores (or another exact global mechanism) from
+higher mixed identities.  See
+[`MATRIX_UNIT_BRIDGE_WORD_SYNCHRONIZATION_AND_WICK_SHARPNESS_BOUNDARY.md`](claims/arbitrary-order/MATRIX_UNIT_BRIDGE_WORD_SYNCHRONIZATION_AND_WICK_SHARPNESS_BOUNDARY.md).
+
 On that clean `P_6` fan, target diagonality has now been translated exactly.
 If the fan is invertible, each target-colour deck vector lies in the inverse
 image of `Seg(P^1 x P^2)` and therefore obeys three pulled-back `2 x 2`

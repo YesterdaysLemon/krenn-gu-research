@@ -142,6 +142,20 @@ components.  Bridge normalization changes the exact word, proper
 nonrigidity sets need not propagate, and both the erased multi-root and
 deeper branches remain open.
 
+The
+[`bridge word-synchronization boundary`](MATRIX_UNIT_BRIDGE_WORD_SYNCHRONIZATION_AND_WICK_SHARPNESS_BOUNDARY.md)
+shows that this word change is load-bearing.  The binary square and ternary
+hexagon promotions flip every endpoint colour.  A complete six-vertex graph
+shows that parity, mixed cancellation, and the relevant rigid-head Wick/cut
+systems do not repair the binary square; it realizes only one pure tensor.
+A separate complete six-vertex relay has all three pure target coefficients
+and every pure-edge cofactor active, but routes a selected forbidden-word
+cancellation through an external four-cycle and still has a nonzero mixed
+coefficient.  Neither graph is a witness.  A word-preserving diagonal
+matching exists exactly when every pure graph induced on a word shore has a
+perfect matching; whether higher mixed identities force those shore
+conditions remains open.
+
 At the Stage 27 boundary, the owner-gated H22/H31, Component20/21/23,
 high-coordinate, and mixed-lifecycle conflict surfaces were excluded from
 that batch and remained at root, unmoved and unadjudicated at that stage.
