@@ -3,11 +3,14 @@
 ## Status and purpose
 
 The global Krenn--Gu conjecture remains **UNRESOLVED**. This document records
-the next exact symbolic obligations after the repository root exit; it proves
-no new theorem, changes no claim status, and reports no new computation.
+the next exact symbolic obligations after the repository root exit.  The
+current checkpoint adds one exact arbitrary-order all-bridge theorem and one
+proved boundary for a characteristic-two route; neither closes the global
+extraction/gluing obligation or changes global status.
 
-The operational base is merged `main` at
-`e99457df478b0842a833204a2f064ab00355a838`.
+The operational base for this checkpoint is merged `main` at
+`70a6d03125a8164940bed3d27980d489724308aa`.  Its push hygiene workflow
+completed successfully in run `31386596996`.
 
 - Stage 33 moved the final 305 root-debt artifacts through PR #69 and merged as
   `4263832e3ff338c5bd87528268cb8cb563866ec0`; both exact-head and exact
@@ -193,6 +196,42 @@ An exact survivor in either route triggers dedicated validation; it is not an
 automatic counterexample or global-status change.
 
 ## P6/arbitrary-order boundary
+
+### New all-bridge closure
+
+In the simultaneous balanced all-bridge branch, let `D` be the physical graph
+of saturated diagonal entries.  The prescribed-vertex hafnian Laplace
+identity supplies an incident deck-active edge in every colour at every
+vertex.  Mixed two-point cuts make the three active physical edge sets
+pairwise disjoint.  Consequently a selected edge shared by two colours forces
+degree at least four at both endpoints.  If `Delta(D)<=3`, the three selected
+matchings exhaust `D`; a direct cofactor argument then forces each saturated
+colour onto its own matching, and the universal zero-layer theorem plus
+Bogdanov's matching theorem produces a unique forbidden coefficient.
+
+Thus `Delta(D)<=3` is excluded at every even order `n>=6`, including selected
+matching overlaps and without a total-support-degree bound.  The exact proof
+and two no-import focused checks are in
+[`ALL_BRIDGE_ACTIVE_DECK_EXCLUSIVITY_AND_CUBIC_DIAGONAL_EXCLUSION.md`](../claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_EXCLUSIVITY_AND_CUBIC_DIAGONAL_EXCLUSION.md).
+Every remaining all-bridge witness has minimum saturated-diagonal degree at
+least three and maximum saturated-diagonal degree at least four; the
+`Delta(D)>=4` boundary and the deeper-blocker branch remain open.
+
+### Characteristic-two route boundary
+
+Within its external definitions, the source-inspected candidate proof
+transfers integer weights to `F_2`; local build replay and correspondence with
+this repository remain pending.  It does not furnish a complex-weight proof:
+characteristic-zero solvability does not force good reduction at two, a
+two-integral algebraic model can have residue field `F_(2^f)`, and a displayed
+`F_4` aggregate hafnian refutes the specific unit-matching step used in the
+`F_2` base.  Independently, the exact
+four-point classification shows that universal nonzero rank-two update
+cancellation exists only in characteristic two (characteristic three retains
+only rank one).  See
+[`CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md`](../claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md).
+This closes an invalid shortcut only; a special `n>=6,d>=3` integralization
+theorem or a different modular mechanism remains possible.
 
 P6 is the first root-parity-compatible deletion-deck case, but the clean
 `2 x 3` fan's Segre pullback always meets the coordinate torus and the physical

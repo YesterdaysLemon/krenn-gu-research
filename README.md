@@ -2293,6 +2293,8 @@ strictly advance the finite frontier:
   three-colour balanced all-bridge boundary.
 - at every even order, no witness of maximum support degree at most five
   in the simultaneous three-colour balanced all-bridge boundary.
+- at every even order, no simultaneous balanced all-bridge witness whose
+  physical saturated-diagonal graph has maximum degree at most three.
 - at every even order, no witness in the pairwise-disjoint
   exact-degree-six Kotzig/reciprocal-port boundary.
 - throughout the simultaneous balanced all-bridge branch, every remaining
@@ -5285,9 +5287,10 @@ calculations.  The former state-lift cycle-fibre proposal and the old
 order-fourteen port scouts used the same mistaken physical-state
 convention and are withdrawn.
 
-The remaining all-bridge targets are the overlapping selected-matching
-branch and support degree at least seven.  The separate deeper-blocker
-branch also remains open.
+The remaining all-bridge targets are the part of the overlapping
+selected-matching branch with saturated-diagonal `Delta(D)>=4` and the
+support-degree-at-least-seven branch (which is now also forced to have
+`Delta(D)>=4`).  The separate deeper-blocker branch also remains open.
 
 There is now a degree-free reduction on both all-bridge targets.  The sum
 of the six permuted potentials is nonnegative on all 180 allowed local
@@ -5320,6 +5323,19 @@ factors are nonzero while the corresponding factor pair for either
 other colour contains a zero.  At size two, every colour therefore has
 an exclusive saturated edge whose own edge and complementary cofactor
 are nonzero, while both other-colour edge/cofactor products vanish.
+
+A prescribed-vertex Laplace expansion strengthens that last conclusion:
+for every vertex and colour there is an incident deck-active saturated
+edge, and the three colour-active physical edge sets are pairwise disjoint.
+If two selected monochromatic matchings share an edge, each endpoint is
+therefore incident with that edge plus three distinct active edges.  If the
+physical saturated-diagonal graph had maximum degree at most three, the
+selected matchings would instead exhaust it; the mixed-cut cofactors force
+each saturated colour onto its own matching, and Bogdanov's theorem leaves a
+unique forbidden nonmonochromatic coefficient.  Thus every surviving
+all-bridge witness has `Delta(D)>=4`.  The proof and two independent focused
+checks are in
+[`ALL_BRIDGE_ACTIVE_DECK_EXCLUSIVITY_AND_CUBIC_DIAGONAL_EXCLUSION.md`](claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_EXCLUSIVITY_AND_CUBIC_DIAGONAL_EXCLUSION.md).
 
 On eight vertices, the zero-layer reduction closes completely.  For each
 colour, the nonzero principal hafnians form a set tree whose member
