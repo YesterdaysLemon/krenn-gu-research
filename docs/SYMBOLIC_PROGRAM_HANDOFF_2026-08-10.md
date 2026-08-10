@@ -306,6 +306,23 @@ Thus any surviving completion must use a more general cancelling support and
 simultaneously satisfy the scalar/binary complement bridges.  See
 [`RIGID_COLOUR_THREE_BLOCK_PRIMITIVE_SHARPNESS_AND_DUAL_BRIDGE_COMPLETION_OBSTRUCTION.md`](../claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_PRIMITIVE_SHARPNESS_AND_DUAL_BRIDGE_COMPLETION_OBSTRUCTION.md).
 
+The full one-root matrix-unit branch now has an additional exact
+representation-theoretic split.  Projecting by the global sign involution in
+one colour separates matchings by the parity of their cross edges.  If the
+positive even sector vanishes, all such units erase and the same tensor moves
+to a globally rigid realization with at least two torus roots.  Otherwise
+two matching-aligned flags force a pure bridge or the existing deeper
+double-star component.  The simultaneous ternary parity-zero sector gives
+binary bridge squares and ternary bridge hexagons, while a rigid-head
+matching partition supplies an all-order Wick tower for every proper
+nonrigidity set.  In the no-deeper branch, non-bridge pairs form a functional
+pseudoforest and strongly constrain the `K_(2s)`/`K_(s,s)` pure-support
+normal form.  The remaining obstruction is wordwise: bridge normalization
+preserves colour multiplicities but can change the exact word, proper flag
+sets need not propagate, and the erased multi-root branch is still open.
+See
+[`MATRIX_UNIT_CROSS_PARITY_ERASURE_RIGID_HEAD_WICK_AND_BRIDGE_CORE_REDUCTION_THEOREM.md`](../claims/arbitrary-order/MATRIX_UNIT_CROSS_PARITY_ERASURE_RIGID_HEAD_WICK_AND_BRIDGE_CORE_REDUCTION_THEOREM.md).
+
 ### New all-bridge closure
 
 In the simultaneous balanced all-bridge branch, let `D` be the physical graph

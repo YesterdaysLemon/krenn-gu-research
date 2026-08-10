@@ -82,7 +82,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "57ec41cd7cd9f0ff",
+      "document_sha256_16": "a90fd2ad09e46d2e",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -615,6 +615,37 @@
         "RIGID_COLOUR_THREE_BLOCK_PRIMITIVE_SHARPNESS_AND_DUAL_BRIDGE_COMPLETION_OBSTRUCTION.md",
         "audit_rigid_colour_three_block_primitive_sharpness.py",
         "verify_rigid_colour_three_block_primitive_sharpness.py"
+      ]
+    },
+    {
+      "name": "Matrix-Unit Cross-Parity Erasure, Rigid-Head Wick, and Bridge-Core Reduction",
+      "document": "claims/arbitrary-order/MATRIX_UNIT_CROSS_PARITY_ERASURE_RIGID_HEAD_WICK_AND_BRIDGE_CORE_REDUCTION_THEOREM.md",
+      "document_sha256_16": "fc371a63fa96741a",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact parity-projection, matching-bijection, switching, and support proofs over C",
+        "ternary r=1 complete nonzero matrix-unit branch at even n>=6",
+        "support erasure produces a different realization with the same tensor and does not exclude the resulting r>=2 branch",
+        "the blocker refinement on a deeper component is pointwise after passage to a dense constructible stratum",
+        "bridge square and hexagon normalization preserve colour multiplicities but may change the exact induced word",
+        "the sparse odd-shift family omits unused physical pairs and is a route countermechanism, not a witness",
+        "proper nonrigidity propagation, word synchronization, and the erased and deeper branches remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_matrix_unit_cross_parity_rigid_head_wick.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_matrix_unit_cross_parity_rigid_head_wick.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "The arbitrary-order proof is the written coordinate-sign projection, matching-aligned disabled-killer argument, switch descent, rigid-head injection partition, and functional-pseudoforest classification. The scripts are bounded convention and sharpness checks, not substitutes for those proofs. The theorem converts intersecting cross support to an exact erased realization and disjoint flags to bridge/deeper cells, but it does not synchronize words or resolve the global conjecture.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "MATRIX_UNIT_CROSS_PARITY_ERASURE_RIGID_HEAD_WICK_AND_BRIDGE_CORE_REDUCTION_THEOREM.md",
+        "audit_matrix_unit_cross_parity_rigid_head_wick.py",
+        "verify_matrix_unit_cross_parity_rigid_head_wick.py"
       ]
     },
     {
@@ -2031,7 +2062,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "57ec41cd7cd9f0ff",
+      "document_sha256_16": "a90fd2ad09e46d2e",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -2174,7 +2205,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "57ec41cd7cd9f0ff",
+      "document_sha256_16": "a90fd2ad09e46d2e",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
