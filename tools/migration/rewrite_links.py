@@ -18,8 +18,11 @@ operations, every reference to a moved file must be re-anchored:
      ``python \\`` + ``<script>.py`` commands inside ```text/```bash
      blocks, plus ``command: ... python <script>.py`` fields inside
      fenced YAML evidence headers or Markdown YAML front matter, are
-     rewritten to the script's new root-relative path when
-     the script was moved and its basename is unambiguous.  The
+     rewritten to the script's new root-relative path when moved.  The
+     same rule covers fenced ``ruff check <script>.py`` and
+     ``python -m py_compile <script>.py`` QA commands.  In every form,
+     rewriting occurs only when the script was moved and its basename is
+     unambiguous.  The
      grammar lives in ``replay_command.py`` and is shared with the
      stale-reference scanner, so the two machines cannot drift.  Other
      code-block content is untouched.

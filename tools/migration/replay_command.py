@@ -14,6 +14,8 @@ callers enforce the container state):
     python3 verify_foo.py / wsl ... python3 ...   single line
     uv run --with sympy python verify_foo.py      uv environment wrap
     command: uv run ... python verify_foo.py      YAML evidence field
+    uv run --with ruff ruff check verify_foo.py   lint replay
+    python -m py_compile verify_foo.py             compile replay
     python \\                                      continuation line
       verify_foo.py [args]
     uv run --with sympy \\                         uv continuation line
@@ -40,6 +42,13 @@ _COMMAND_FIELD = r"(?:command\s*:\s*)?"
 LAUNCHER = re.compile(
     r"^\s*" + _COMMAND_FIELD
     + r"(?:(?:" + _UV_RUN + r")?" + _PYTHON + r")\s+")
+# QA launchers that consume exactly one moved script path.  Multi-target QA
+# lines require a separate token-preserving rewrite and are deliberately not
+# partially rewritten by this grammar.
+RUFF_CHECK = re.compile(
+    r"^\s*(?:(?:" + _UV_RUN + r")?ruff\s+check)\s+")
+PY_COMPILE = re.compile(
+    r"^\s*" + _PYTHON + r"\s+-m\s+py_compile\s+")
 # A launcher whose command continues on the next line (`python \`).
 LAUNCHER_CONTINUATION = re.compile(
     r"^\s*" + _COMMAND_FIELD
@@ -51,6 +60,10 @@ LAUNCHER_UV_CONTINUATION = re.compile(
     r"^\s*" + _COMMAND_FIELD + r"(?:" + _UV_RUN + r")\\$")
 # The script token: bare basename, optional trailing arguments.
 SCRIPT = re.compile(r"^\s*([A-Za-z0-9_]+\.py)(\s.*)?$")
+# The bounded QA forms repaired in Stage 31 have exactly one script and no
+# trailing arguments.  This prevents a line containing two script targets
+# from being half-rewritten.
+QA_SCRIPT = re.compile(r"^\s*([A-Za-z0-9_]+\.py)\s*$")
 
 
 def match_replay(lines, index):
@@ -69,6 +82,12 @@ def match_replay(lines, index):
         sm = SCRIPT.match(line[m.end():])
         if sm:
             return sm.group(1), index, "line"
+    for launcher in (RUFF_CHECK, PY_COMPILE):
+        m = launcher.match(line)
+        if m:
+            sm = QA_SCRIPT.match(line[m.end():])
+            if sm:
+                return sm.group(1), index, "line"
     c = LAUNCHER_CONTINUATION.match(line)
     if c and index + 1 < len(lines):
         sm = SCRIPT.match(lines[index + 1])

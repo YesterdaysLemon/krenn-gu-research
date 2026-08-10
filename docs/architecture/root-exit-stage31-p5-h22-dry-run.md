@@ -172,7 +172,7 @@ The index-complete candidate measures 536 root files plus nine justified
 directories: 545 total entries, sixteen justified entries, 529 grandfathered
 debt files, and zero new debt. Hygiene passes with 1,701 Python files, 850
 resolving Markdown files, all 86 ledger hashes, and 1,828 moved manifest
-entries. The 163 migration tests, 14 focused lattice tests, and five bounded
+entries. The 170 migration tests, 14 focused lattice tests, and five bounded
 weighted-H22 parity/consumer-graph tests pass. No scientific solver or search
 was rerun.
 
