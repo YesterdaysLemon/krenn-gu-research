@@ -245,6 +245,21 @@ synchronize the direct pair blocks into one two-row permanental channel.
 Higher surplus and the `r=1` cancellation branch also remain open.  See
 [`MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md`](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md).
 
+The fixed-surplus and balanced-sensor routes now meet in an exact rank
+boundary.  Write the maximum-root outside size as `r+2q` and rebalance across
+`R union Q | B-Q`, with `|Q|=q`.  Contracting the old roots kills every even
+deck column above depth `2q`; a legal column is genuinely omitted exactly
+when `r>=q+2`.  At `r=q+1` the depth statement is vacuous but the ternary
+contracted row space is still too small.  The fixed layer alone does not
+determine the uncontracted sensor: at `q=0`, and for a suitable `q=1` cut,
+the same fibre has both a deficient canonical shore and generically full
+shores.  On an exact common-two-row Wick cell, the zero- and single-open-root
+equations admit an affine absorption gauge, while permanent Hall quotas force
+`q<=r` and rigidify the equality boundary.  This is a no-observability
+theorem, not a witness deformation; higher mixed-root equations and
+unfactorized outside blocks remain load-bearing.  See
+[`BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md`](../claims/arbitrary-order/BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md).
+
 The `r=1` branch has three further exact controls.  Near-monochromatic words
 force the active pure-cofactor support to meet every vertex.  A word with two
 vertices in one colour and the rest in another gives a pure deletion-cofactor versus

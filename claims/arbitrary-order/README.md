@@ -63,6 +63,18 @@ Synchronization of their physical pair blocks, higher surplus, and the
 one-root cancellation branch remain open.
 
 The
+[`balanced fixed-surplus theorem`](BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md)
+connects those two universal reductions.  After rebalancing a surplus-`2q`
+layer, contraction of the old roots kills every even deck column above depth
+`2q`; an actual legal column is lost exactly when `r>=q+2`.  The fixed layer
+nevertheless does not determine the uncontracted sensor: at surplus zero and
+at a suitable surplus-two cut, one fibre contains both a deficient canonical
+shore and generically full shores.  A synchronized physical Wick cell has an
+exact zero/single-open-root affine gauge and satisfies `q<=r` by permanent
+Hall quotas.  Higher mixed-root equations, genuinely unfactorized outside
+blocks, and the all-balanced rank-drop witness locus remain open.
+
+The
 [`rigid-colour boundary theorem`](RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md)
 sharpens that one-root branch.  It proves universal near-monochromatic deck,
 two-point cross-cycle, and minimal-deviation cycle identities.  Under the
