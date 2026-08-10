@@ -108,6 +108,15 @@ narrow extractions during the repair commit:
   `p5_pair_support_semantics` and its primary claim verifier, so the shared
   source library never imports upward from `claims`.
 
+The same dependency audit found one pre-existing non-P5 upward edge:
+`claims/finite/n12/certify_twelve_vertex_complement_profile.py` imports pure
+orbit helpers from an operator in `tools/explore`.  The repair commit extracts
+those constants and pure functions to the narrow claim-owned
+`claims/finite/n12/twelve_vertex_complement_chain_orbits_core.py`; the
+certifier imports its sibling and the tool becomes a thin operator wrapper.
+Parity pins the 16 canonical leaves, total orbit weight 120, membership map,
+and chain assumptions.  No SAT replay is required.
+
 Each extraction requires bounded output/API parity tests.  It changes code
 ownership and import direction only; it does not upgrade a candidate,
 partial result, verifier, or audit into generic proof infrastructure.
@@ -129,10 +138,13 @@ link repairs before this refreeze: `P5_ALTERNATIVE_STRATEGY_MAP.md`,
 `P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md`.  Their new Git blobs account for the
 source-identity change; membership and destinations did not change.
 
-The schema-v2 batch must freeze every old path, destination, and Git blob at
-the reviewed base.  The executor must refuse a non-ancestor base, source
-drift, destination occupancy, an untracked batch, or any mapping/hash drift
-before the first `git mv`.
+The schema-v2 batch
+`catalog/batches/p5-residual-root-exit-stage32.json` freezes every old path,
+destination, and Git blob at the reviewed base.  Its 220 members reproduce
+the mapping and source hashes above.  Fresh semantic and mechanical referees
+independently accepted the exact refreeze at `c41769b`; the executor must still
+refuse a non-ancestor base, source drift, destination occupancy, an untracked
+batch, or any mapping/hash drift before the first `git mv`.
 
 ## Repair boundary and validation
 
@@ -150,8 +162,11 @@ blob identity.  Before publishing, require an index-complete tree, fixed-point
 link rewrite, zero stale imports/commands/paths, all JSON and Python compile
 checks, focused parity tests, hygiene, migration tests, fresh semantic and
 mechanical acceptance, exact-head hosted CI, and merged-main CI.  This is the
-third large root-exit tranche since Stage 30, so a fresh read-only program
-audit follows its merge.
+first tranche after a fresh read-only program audit accepted merged main
+`614d41e`: that audit independently reconciled all 457 Stage 30, Stage 31, and
+H31 moves, their blobs/provenance/statuses, the bounded local floor, hosted CI,
+and protected worktrees.  The next cadence audit follows the final residual
+transaction.
 
 The separately owner-authorized H31 chart-boundary marked-fibre scientific
 reconciliation is merged under
