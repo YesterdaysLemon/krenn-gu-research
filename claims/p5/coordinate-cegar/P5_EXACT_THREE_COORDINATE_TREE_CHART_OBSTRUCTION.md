@@ -213,7 +213,7 @@ Install `python-sat`, make Singular available through WSL or the native
 path used by the verifier, then run:
 
 ```text
-python verify_p5_exact_three_coordinate_tree_chart_obstruction.py
+python claims/p5/coordinate-cegar/verify_p5_exact_three_coordinate_tree_chart_obstruction.py
 ```
 
 The default audit:
@@ -227,7 +227,7 @@ The default audit:
 Freshly rerun all 812 Singular calculations with:
 
 ```text
-python verify_p5_exact_three_coordinate_tree_chart_obstruction.py \
+python claims/p5/coordinate-cegar/verify_p5_exact_three_coordinate_tree_chart_obstruction.py \
   --rerun-singular --jobs 4
 ```
 
@@ -235,7 +235,7 @@ Fresh DRAT replay is deliberately optional because it takes about 20
 minutes per shape on the reference host:
 
 ```text
-python verify_p5_exact_three_coordinate_tree_chart_obstruction.py \
+python claims/p5/coordinate-cegar/verify_p5_exact_three_coordinate_tree_chart_obstruction.py \
   --rerun-drat --drat-trim tmp/drat-trim/drat-trim \
   --drat-timeout 1800
 ```

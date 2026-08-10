@@ -132,8 +132,8 @@ Both alternatives are impossible.  This proves the theorem.
 Run:
 
 ```text
-python verify_p5_two_singleton_coordinate_obstruction.py
-python audit_p5_two_singleton_coordinate_obstruction.py
+python claims/p5/coordinate-cegar/verify_p5_two_singleton_coordinate_obstruction.py
+python claims/p5/coordinate-cegar/audit_p5_two_singleton_coordinate_obstruction.py
 ```
 
 The primary verifier reconstructs the two singleton pullbacks and

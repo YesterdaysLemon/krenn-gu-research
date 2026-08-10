@@ -68,9 +68,9 @@ Run the complete fork and triangle replays with:
 
 ```text
 python \
-  verify_p5_c10_binary_fork_obstruction.py
+  claims/p5/frontier/verify_p5_c10_binary_fork_obstruction.py
 python \
-  verify_p5_c10_triangle_obstruction.py
+  claims/p5/frontier/verify_p5_c10_triangle_obstruction.py
 ```
 
 ## Structural meaning

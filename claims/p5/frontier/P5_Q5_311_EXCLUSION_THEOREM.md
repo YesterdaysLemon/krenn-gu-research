@@ -19,7 +19,7 @@ whose normalized high-coordinate mode has source-row multiplicities
 Equivalently, the complete normalized `q5_311` branch is impossible.
 The proof in fact uses only two distinct singleton-supported target
 coordinates, and has since been extracted as the stronger
-[`P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md`](P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md).
+[`P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md`](../coordinate-cegar/P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md).
 The normalized `q5_221` and partial `q4_211` branches were subsequently
 excluded as well.  One-partial `3+1` and `2+2` high-coordinate
 families, `P_5 -> Delta_3`, and the arbitrary-order Krenn--Gu prize
@@ -85,7 +85,7 @@ Thus all four triple restrictions `S_r` are either zero or nonzero
 decomposable.
 
 The four-plane corollary in
-[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md)
+[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](../../../P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md)
 is all-or-nothing:
 
 ```text
@@ -130,8 +130,8 @@ has no solution.
 Run:
 
 ```text
-python verify_p5_q5_311_exclusion.py
-python audit_p5_q5_311_exclusion.py
+python claims/p5/frontier/verify_p5_q5_311_exclusion.py
+python claims/p5/frontier/audit_p5_q5_311_exclusion.py
 ```
 
 The primary verifier reconstructs the deleted-permanent contractions,

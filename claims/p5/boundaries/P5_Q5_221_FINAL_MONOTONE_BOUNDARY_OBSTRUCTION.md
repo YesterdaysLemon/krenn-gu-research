@@ -170,8 +170,8 @@ This proves (1).
 Run:
 
 ```text
-python verify_p5_q5_221_final_monotone_boundary.py
-python audit_p5_q5_221_final_monotone_boundary.py
+python claims/p5/boundaries/verify_p5_q5_221_final_monotone_boundary.py
+python claims/p5/boundaries/audit_p5_q5_221_final_monotone_boundary.py
 ```
 
 The primary verifier enumerates only the `3 x 4` incidence poset,

@@ -10,7 +10,7 @@ P_5 -> Delta_3.
 ```
 
 The complete `q5_311` branch is now excluded by
-[`P5_Q5_311_EXCLUSION_THEOREM.md`](P5_Q5_311_EXCLUSION_THEOREM.md).
+[`P5_Q5_311_EXCLUSION_THEOREM.md`](claims/p5/frontier/P5_Q5_311_EXCLUSION_THEOREM.md).
 The other two high-coordinate branches, `P_5 -> Delta_3`, and the
 arbitrary-order Krenn--Gu prize conjecture remain open.
 
@@ -90,7 +90,7 @@ identities force that one tensor to be zero or a pure cube in target
 colour one, and simultaneously zero or a pure cube in the independent
 target colour two.  These alternatives are incompatible.  The exact
 argument and independent finite-field audit are in
-[`P5_Q5_311_SHARED_DROP_OBSTRUCTION.md`](P5_Q5_311_SHARED_DROP_OBSTRUCTION.md).
+[`P5_Q5_311_SHARED_DROP_OBSTRUCTION.md`](claims/p5/frontier/P5_Q5_311_SHARED_DROP_OBSTRUCTION.md).
 
 Consequently the only remaining rank-incidence branch is
 
@@ -128,7 +128,7 @@ the latter contraction to be zero.
 Thus the disjoint `2+2` branch is impossible as well, and the normalized
 `q5_311` branch has no solution.  The complete proof and independent
 `F_3`/`F_5` audit are in
-[`P5_Q5_311_EXCLUSION_THEOREM.md`](P5_Q5_311_EXCLUSION_THEOREM.md).
+[`P5_Q5_311_EXCLUSION_THEOREM.md`](claims/p5/frontier/P5_Q5_311_EXCLUSION_THEOREM.md).
 
 The mixed part uses only the coefficients whose mode-zero colour is one or
 two:
@@ -221,7 +221,7 @@ One unrelaxed leading chart exposes a hand-sized degree-one core.  Exact
 identities using six and five Macaulay rows express the two rare pure
 coefficients as polynomial combinations of only nine distinct mixed
 coefficients.  See
-[`P5_Q5_311_RARE_AFFINE_CORE.md`](P5_Q5_311_RARE_AFFINE_CORE.md).
+[`P5_Q5_311_RARE_AFFINE_CORE.md`](claims/p5/frontier/P5_Q5_311_RARE_AFFINE_CORE.md).
 
 ## Zero-forest wave 2
 
@@ -322,7 +322,7 @@ python maximize_p5_high_coordinate_chart_closure.py \
 
 All figures above are finite ledger statements and did not, by
 themselves, prove the complete branch.  The analytic theorem in
-[`P5_Q5_311_EXCLUSION_THEOREM.md`](P5_Q5_311_EXCLUSION_THEOREM.md)
+[`P5_Q5_311_EXCLUSION_THEOREM.md`](claims/p5/frontier/P5_Q5_311_EXCLUSION_THEOREM.md)
 now supplies the complete branch exclusion without requiring an UNSAT
 reconstructed branch CNF.
 

@@ -112,8 +112,8 @@ and proves the monotone obstruction.
 Run:
 
 ```text
-python verify_p5_q5_221_two_all_normal_modes.py
-python audit_p5_q5_221_two_all_normal_modes.py
+python claims/p5/frontier/verify_p5_q5_221_two_all_normal_modes.py
+python claims/p5/frontier/audit_p5_q5_221_two_all_normal_modes.py
 ```
 
 The primary verifier reconstructs the three bilinear source tensors

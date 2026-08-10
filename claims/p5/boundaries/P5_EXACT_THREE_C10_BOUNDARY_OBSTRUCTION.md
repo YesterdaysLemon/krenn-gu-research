@@ -57,7 +57,7 @@ strictly stronger and supplies the remaining 8,101 exclusions.
 ## Replay package
 
 The compact evidence map is in
-[`three_partial_c10_boundary/`](research_snapshots/2026-07-27-p5-coordinate-cegar/three_partial_c10_boundary/README.md).
+[`three_partial_c10_boundary/`](../../../research_snapshots/2026-07-27-p5-coordinate-cegar/three_partial_c10_boundary/README.md).
 It stores source hashes rather than duplicating roughly 200 MB of
 deterministically regenerated Singular input.
 
@@ -67,7 +67,7 @@ hash and recorded unit-ideal result:
 
 ```text
 python \
-  verify_p5_exact_three_c10_boundary_obstruction.py
+  claims/p5/boundaries/verify_p5_exact_three_c10_boundary_obstruction.py
 ```
 
 A fresh exact-CAS replay can be sharded.  For example, this reruns ten
@@ -75,7 +75,7 @@ cases:
 
 ```text
 python \
-  verify_p5_exact_three_c10_boundary_obstruction.py \
+  claims/p5/boundaries/verify_p5_exact_three_c10_boundary_obstruction.py \
   --rerun-singular --limit 10
 ```
 

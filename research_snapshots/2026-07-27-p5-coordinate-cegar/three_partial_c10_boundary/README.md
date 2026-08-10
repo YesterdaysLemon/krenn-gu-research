@@ -2,7 +2,7 @@
 
 This directory contains the compact replay evidence for the exact
 finite theorem documented in
-[`P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md`](../../../P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md).
+[`P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md`](../../../claims/p5/boundaries/P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md).
 
 The independent census lives in
 [`../three_partial_c10_audit/`](../three_partial_c10_audit/README.md).
@@ -16,7 +16,7 @@ regenerated Singular source.  Run:
 
 ```text
 python \
-  verify_p5_exact_three_c10_boundary_obstruction.py
+  claims/p5/boundaries/verify_p5_exact_three_c10_boundary_obstruction.py
 ```
 
 to reconstruct the independent orbit map and hash-check all 11,751

@@ -243,7 +243,7 @@ explicit determinant strata.  Their full third-colour lifts are both
 impossible in normalized `q4_211`.  See
 [`P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md`](P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md)
 and
-[`P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md`](../../../P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md).
+[`P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md`](../../p5/frontier/P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md).
 
 ## Verification
 

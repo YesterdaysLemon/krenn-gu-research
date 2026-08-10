@@ -151,8 +151,8 @@ not an ambient support search.
 Run:
 
 ```text
-python verify_p5_q4_211_a0_adjacent.py
-python audit_p5_q4_211_a0_adjacent.py
+python claims/p5/frontier/verify_p5_q4_211_a0_adjacent.py
+python claims/p5/frontier/audit_p5_q4_211_a0_adjacent.py
 ```
 
 The primary verifier checks (4)--(6), the row independence, and the

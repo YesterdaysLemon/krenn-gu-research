@@ -20,7 +20,7 @@ This is not yet an exclusion of the two displayed branches and is not
 a complete solution of the Krenn--Gu conjecture.
 
 The later
-[`P5_KERNEL_HALL_HIERARCHY.md`](P5_KERNEL_HALL_HIERARCHY.md)
+[`P5_KERNEL_HALL_HIERARCHY.md`](../frontier/P5_KERNEL_HALL_HIERARCHY.md)
 strengthens the four-mode argument to every source subset of size two,
 three, or four and recovers this pair cover as its first case.
 
@@ -151,8 +151,8 @@ This is exactly the `4+1` alternative in (1).
 Run:
 
 ```text
-python verify_p5_coordinate_plane_pair_cover.py
-python audit_p5_coordinate_plane_pair_cover.py
+python claims/p5/coordinate-cegar/verify_p5_coordinate_plane_pair_cover.py
+python claims/p5/coordinate-cegar/audit_p5_coordinate_plane_pair_cover.py
 ```
 
 The primary verifier exhausts all `6^5=7,776` five-tuples of nonempty

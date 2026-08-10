@@ -145,8 +145,8 @@ coefficients using only two colours is needed.
 Run:
 
 ```text
-python audit_p5_all_full_tricolour_obstruction.py
-python verify_p5_all_full_tricolour_obstruction.py
+python claims/p5/frontier/audit_p5_all_full_tricolour_obstruction.py
+python claims/p5/frontier/verify_p5_all_full_tricolour_obstruction.py
 ```
 
 The independent combinatorial audit reconstructs the two bipartite
@@ -171,7 +171,7 @@ The two exact computer-algebra engines use different implementations;
 their one-element bases independently certify the unit ideal.
 
 The complete sources, inputs, outputs, and package notes are in
-[`all_full_tricolour_boundary/`](research_snapshots/2026-07-27-p5-coordinate-cegar/all_full_tricolour_boundary/README.md).
+[`all_full_tricolour_boundary/`](../../../research_snapshots/2026-07-27-p5-coordinate-cegar/all_full_tricolour_boundary/README.md).
 
 ## Boundary
 

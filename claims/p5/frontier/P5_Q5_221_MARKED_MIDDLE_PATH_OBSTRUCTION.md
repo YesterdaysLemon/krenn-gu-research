@@ -203,8 +203,8 @@ does not occur.
 Run:
 
 ```text
-python verify_p5_q5_221_marked_middle_path.py
-python audit_p5_q5_221_marked_middle_path.py
+python claims/p5/frontier/verify_p5_q5_221_marked_middle_path.py
+python claims/p5/frontier/audit_p5_q5_221_marked_middle_path.py
 ```
 
 The primary verifier reconstructs the residual-space intersections,

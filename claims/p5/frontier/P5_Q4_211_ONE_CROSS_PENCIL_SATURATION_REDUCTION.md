@@ -389,8 +389,8 @@ cannot wander freely in its pencil.
 Run:
 
 ```text
-python verify_p5_q4_211_one_cross_pencil_saturation.py
-python audit_p5_q4_211_one_cross_pencil_saturation.py
+python claims/p5/frontier/verify_p5_q4_211_one_cross_pencil_saturation.py
+python claims/p5/frontier/audit_p5_q4_211_one_cross_pencil_saturation.py
 ```
 
 The primary verifier differentiates both pure residuals, reconstructs

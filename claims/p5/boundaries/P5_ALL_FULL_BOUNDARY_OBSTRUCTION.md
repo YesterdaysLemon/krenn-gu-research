@@ -197,8 +197,8 @@ orbits.
 Run from the repository root:
 
 ```text
-python audit_p5_all_full_boundary_obstruction.py
-python verify_p5_all_full_boundary_obstruction.py
+python claims/p5/boundaries/audit_p5_all_full_boundary_obstruction.py
+python claims/p5/boundaries/verify_p5_all_full_boundary_obstruction.py
 ```
 
 The audit independently reconstructs:
@@ -222,7 +222,7 @@ Those results are corroboration; the union of the two exact Singular
 encodings supplies complete coverage of the 198 cases.
 
 The sources, outputs, audit, manifest, and replay notes are in
-[`all_full_boundary/`](research_snapshots/2026-07-27-p5-coordinate-cegar/all_full_boundary/README.md).
+[`all_full_boundary/`](../../../research_snapshots/2026-07-27-p5-coordinate-cegar/all_full_boundary/README.md).
 
 ## Boundary
 

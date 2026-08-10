@@ -90,7 +90,7 @@ The five displayed `F` polynomials expand exactly to mixed equations
 Run:
 
 ```text
-python verify_p5_five_equation_laurent_core.py
+python claims/p5/frontier/verify_p5_five_equation_laurent_core.py
 ```
 
 The verifier regenerates the full support system, checks the five

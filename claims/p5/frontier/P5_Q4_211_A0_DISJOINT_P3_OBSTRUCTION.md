@@ -154,7 +154,7 @@ Take `r in U_A` with `r_S!=0`.  The corresponding slice of the
 nonzero decomposable tensor (9) is a nonzero decomposable restriction
 of `P_3` through `U_B,U_C,U_D`.  Every one of these spaces has
 dimension at least two.  The exact theorem
-[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md)
+[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](../../../P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md)
 therefore gives
 
 ```text
@@ -264,8 +264,8 @@ and exact disjoint incidence is excluded here.  Hence the complete
 Run:
 
 ```text
-python verify_p5_q4_211_a0_disjoint_p3.py
-python audit_p5_q4_211_a0_disjoint_p3.py
+python claims/p5/frontier/verify_p5_q4_211_a0_disjoint_p3.py
+python claims/p5/frontier/audit_p5_q4_211_a0_disjoint_p3.py
 ```
 
 The primary verifier reconstructs (10), (13), (15), all eight

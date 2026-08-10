@@ -305,8 +305,8 @@ adjacent one-cross gate list plus the parameter boundaries.
 Run:
 
 ```text
-python verify_p5_q4_211_disjoint_exclusion.py
-python audit_p5_q4_211_disjoint_exclusion.py
+python claims/p5/frontier/verify_p5_q4_211_disjoint_exclusion.py
+python claims/p5/frontier/audit_p5_q4_211_disjoint_exclusion.py
 ```
 
 The primary verifier differentiates (5), (8), (11), (15), (21),

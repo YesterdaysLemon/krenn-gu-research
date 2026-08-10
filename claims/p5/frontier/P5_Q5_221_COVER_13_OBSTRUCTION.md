@@ -218,8 +218,8 @@ which proves the theorem.
 Run:
 
 ```text
-python verify_p5_q5_221_cover_13.py
-python audit_p5_q5_221_cover_13.py
+python claims/p5/frontier/verify_p5_q5_221_cover_13.py
+python claims/p5/frontier/audit_p5_q5_221_cover_13.py
 ```
 
 The primary verifier reconstructs both `Q_02` sign charts, their local

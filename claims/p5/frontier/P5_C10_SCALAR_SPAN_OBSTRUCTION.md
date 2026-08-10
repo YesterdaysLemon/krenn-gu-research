@@ -74,7 +74,7 @@ Run:
 
 ```text
 python \
-  verify_p5_c10_scalar_span_obstruction.py
+  claims/p5/frontier/verify_p5_c10_scalar_span_obstruction.py
 ```
 
 ## Structural meaning

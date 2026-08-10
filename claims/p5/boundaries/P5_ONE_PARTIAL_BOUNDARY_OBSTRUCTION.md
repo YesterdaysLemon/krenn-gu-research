@@ -121,8 +121,8 @@ signature tuple on that support.
 Run from the repository root:
 
 ```text
-python audit_p5_one_partial_boundary_obstruction.py
-python verify_p5_one_partial_boundary_obstruction.py
+python claims/p5/boundaries/audit_p5_one_partial_boundary_obstruction.py
+python claims/p5/boundaries/verify_p5_one_partial_boundary_obstruction.py
 ```
 
 The audit independently reconstructs both graph automorphism groups, all
@@ -137,7 +137,7 @@ reconstructs each split-saturation source from its direct source and
 checks their exact algebraic equivalence.
 
 The sources, outputs, audit, manifest, and replay notes are in
-[`one_partial_boundary/`](research_snapshots/2026-07-27-p5-coordinate-cegar/one_partial_boundary/README.md).
+[`one_partial_boundary/`](../../../research_snapshots/2026-07-27-p5-coordinate-cegar/one_partial_boundary/README.md).
 
 ## Boundary
 

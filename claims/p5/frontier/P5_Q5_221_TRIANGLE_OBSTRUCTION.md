@@ -325,8 +325,8 @@ colours handles `h_1 in U_D`.
 Run:
 
 ```text
-python verify_p5_q5_221_triangle_obstruction.py
-python audit_p5_q5_221_triangle_obstruction.py
+python claims/p5/frontier/verify_p5_q5_221_triangle_obstruction.py
+python claims/p5/frontier/audit_p5_q5_221_triangle_obstruction.py
 ```
 
 The primary verifier reconstructs the four residual spaces, the

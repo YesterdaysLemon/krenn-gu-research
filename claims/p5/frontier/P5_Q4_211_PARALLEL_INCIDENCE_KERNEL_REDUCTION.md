@@ -372,8 +372,8 @@ incidence types, are not addressed here.
 Run:
 
 ```text
-python verify_p5_q4_211_parallel_incidence.py
-python audit_p5_q4_211_parallel_incidence.py
+python claims/p5/frontier/verify_p5_q4_211_parallel_incidence.py
+python claims/p5/frontier/audit_p5_q4_211_parallel_incidence.py
 ```
 
 The primary verifier differentiates the source permanent, checks

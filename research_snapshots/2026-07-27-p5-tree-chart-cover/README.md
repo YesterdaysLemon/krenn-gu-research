@@ -1,7 +1,7 @@
 # `P_5` exact-three-coordinate tree-chart package
 
 This directory contains the hash-bound evidence for
-[`P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md`](../../P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md).
+[`P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md`](../../claims/p5/coordinate-cegar/P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md).
 
 Status: exact finite branch theorem over `C`.  It excludes every
 `P_5 -> Delta_3` restriction in which all five local maps have at most
@@ -23,5 +23,5 @@ Contents:
 The authoritative verifier is:
 
 ```text
-python verify_p5_exact_three_coordinate_tree_chart_obstruction.py
+python claims/p5/coordinate-cegar/verify_p5_exact_three_coordinate_tree_chart_obstruction.py
 ```

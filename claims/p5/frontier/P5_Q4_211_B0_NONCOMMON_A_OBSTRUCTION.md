@@ -16,7 +16,7 @@ L_B^*e_2^*=e_3
 ```
 
 from
-[`P5_Q4_211_B0_COORDINATE_NORMAL_REDUCTION.md`](P5_Q4_211_B0_COORDINATE_NORMAL_REDUCTION.md).
+[`P5_Q4_211_B0_COORDINATE_NORMAL_REDUCTION.md`](../coordinate-cegar/P5_Q4_211_B0_COORDINATE_NORMAL_REDUCTION.md).
 The earlier reduction forces `h_2` at `B` and at least one of `C,D`.
 The present theorem proves
 
@@ -331,8 +331,8 @@ This proves (3).
 Run:
 
 ```text
-python verify_p5_q4_211_b0_noncommon_a.py
-python audit_p5_q4_211_b0_noncommon_a.py
+python claims/p5/frontier/verify_p5_q4_211_b0_noncommon_a.py
+python claims/p5/frontier/audit_p5_q4_211_b0_noncommon_a.py
 ```
 
 The primary verifier checks the three zero-chart systems (9), all

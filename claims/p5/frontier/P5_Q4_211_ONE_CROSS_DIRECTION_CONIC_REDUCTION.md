@@ -336,8 +336,8 @@ listed above.
 Run:
 
 ```text
-python verify_p5_q4_211_one_cross_direction_conic.py
-python audit_p5_q4_211_one_cross_direction_conic.py
+python claims/p5/frontier/verify_p5_q4_211_one_cross_direction_conic.py
+python claims/p5/frontier/audit_p5_q4_211_one_cross_direction_conic.py
 ```
 
 The primary verifier differentiates (5), checks (4), (6), (9), and

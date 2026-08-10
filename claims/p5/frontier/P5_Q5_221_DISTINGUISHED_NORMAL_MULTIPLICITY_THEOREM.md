@@ -201,8 +201,8 @@ all the remaining rows and complete normalized `q5_221`.
 Run:
 
 ```text
-python verify_p5_q5_221_distinguished_normal_multiplicity.py
-python audit_p5_q5_221_distinguished_normal_multiplicity.py
+python claims/p5/frontier/verify_p5_q5_221_distinguished_normal_multiplicity.py
+python claims/p5/frontier/audit_p5_q5_221_distinguished_normal_multiplicity.py
 ```
 
 The primary verifier expands the symmetric tensors, checks the zero

@@ -9,7 +9,7 @@ exact-three-partial, exact-three-coordinate `P_5` boundary.
 
 Exact characteristic-zero support-only calculations subsequently
 excluded all 11,751 cases; see
-[`P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md`](P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md).
+[`P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md`](../boundaries/P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md).
 That closes this finite layer but does not prove the global Krenn--Gu
 conjecture.
 
@@ -41,7 +41,7 @@ automorphism group and global target-colour permutations.
 ## Packaged evidence
 
 The public package is
-[`three_partial_c10_audit/`](research_snapshots/2026-07-27-p5-coordinate-cegar/three_partial_c10_audit/README.md).
+[`three_partial_c10_audit/`](../../../research_snapshots/2026-07-27-p5-coordinate-cegar/three_partial_c10_audit/README.md).
 It contains both independently produced survivor lists and a manifest
 with their byte counts and SHA-256 hashes.  The lightweight verifier
 checks the hashes, canonicalizes all 11,751 SAT supports under all 60
@@ -50,14 +50,14 @@ two exact sets:
 
 ```text
 python \
-  verify_p5_exact_three_c10_audit.py
+  claims/p5/coordinate-cegar/verify_p5_exact_three_c10_audit.py
 ```
 
 For a from-scratch regeneration of the 25,194,240 labelled supports:
 
 ```text
 python \
-  audit_p5_exact_three_partial_boundary.py \
+  claims/p5/boundaries/audit_p5_exact_three_partial_boundary.py \
   --shape c10 \
   --catalogue tmp/p5_c10_exact_three_partial_supports.json \
   --output tmp/p5_c10_exact_three_packed_audit.json \

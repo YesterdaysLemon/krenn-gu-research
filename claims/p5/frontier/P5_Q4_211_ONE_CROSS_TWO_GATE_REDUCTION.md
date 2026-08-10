@@ -177,8 +177,8 @@ remains.
 Run:
 
 ```text
-python verify_p5_q4_211_one_cross_two_gate.py
-python audit_p5_q4_211_one_cross_two_gate.py
+python claims/p5/frontier/verify_p5_q4_211_one_cross_two_gate.py
+python claims/p5/frontier/audit_p5_q4_211_one_cross_two_gate.py
 ```
 
 The primary verifier checks (4), the linear identities (6)--(8), and

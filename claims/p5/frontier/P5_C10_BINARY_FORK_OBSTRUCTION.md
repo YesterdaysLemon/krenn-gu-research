@@ -61,7 +61,7 @@ Run the complete replay with:
 
 ```text
 python \
-  verify_p5_c10_binary_fork_obstruction.py
+  claims/p5/frontier/verify_p5_c10_binary_fork_obstruction.py
 ```
 
 ## Structural meaning

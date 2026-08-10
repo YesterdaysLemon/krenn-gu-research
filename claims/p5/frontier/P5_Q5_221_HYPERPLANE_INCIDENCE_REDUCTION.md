@@ -247,8 +247,8 @@ be reused on a two-chart pencil rather than on raw support masks.
 Run:
 
 ```text
-python verify_p5_q5_221_hyperplane_incidence.py
-python audit_p5_q5_221_hyperplane_incidence.py
+python claims/p5/frontier/verify_p5_q5_221_hyperplane_incidence.py
+python claims/p5/frontier/audit_p5_q5_221_hyperplane_incidence.py
 ```
 
 The primary verifier expands all three contractions in (2), checks the

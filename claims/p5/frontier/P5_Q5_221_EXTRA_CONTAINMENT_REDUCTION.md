@@ -111,7 +111,7 @@ cover `#8` in
 and cover `#13` in
 [`P5_Q5_221_COVER_13_OBSTRUCTION.md`](P5_Q5_221_COVER_13_OBSTRUCTION.md).
 Their strict extensions are lifted in
-[`P5_Q5_221_FINAL_MONOTONE_BOUNDARY_OBSTRUCTION.md`](P5_Q5_221_FINAL_MONOTONE_BOUNDARY_OBSTRUCTION.md).
+[`P5_Q5_221_FINAL_MONOTONE_BOUNDARY_OBSTRUCTION.md`](../boundaries/P5_Q5_221_FINAL_MONOTONE_BOUNDARY_OBSTRUCTION.md).
 
 The four degree profiles in (3) have a useful Grassmannian meaning.
 A mode of incidence degree three has
@@ -173,8 +173,8 @@ normalized `P_5` target is the structurally separate `q4_211` branch.
 Run:
 
 ```text
-python verify_p5_q5_221_extra_containment_reduction.py
-python audit_p5_q5_221_extra_containment_reduction.py
+python claims/p5/frontier/verify_p5_q5_221_extra_containment_reduction.py
+python claims/p5/frontier/audit_p5_q5_221_extra_containment_reduction.py
 ```
 
 The primary verifier enumerates the `3 x 4` seven-incidence matrices

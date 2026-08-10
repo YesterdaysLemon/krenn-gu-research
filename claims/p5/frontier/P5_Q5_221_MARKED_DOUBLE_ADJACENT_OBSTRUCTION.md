@@ -199,8 +199,8 @@ Both signs in (10) are impossible, completing the exclusion of (1).
 Run:
 
 ```text
-python verify_p5_q5_221_marked_double_adjacent.py
-python audit_p5_q5_221_marked_double_adjacent.py
+python claims/p5/frontier/verify_p5_q5_221_marked_double_adjacent.py
+python claims/p5/frontier/audit_p5_q5_221_marked_double_adjacent.py
 ```
 
 The primary verifier reconstructs the three residual spaces, the

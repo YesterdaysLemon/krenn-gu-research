@@ -243,8 +243,8 @@ three distinct vertices.  This contradicts (10) and completes cover
 Run:
 
 ```text
-python verify_p5_q5_221_remaining_fixed_kernel.py
-python audit_p5_q5_221_remaining_fixed_kernel.py
+python claims/p5/frontier/verify_p5_q5_221_remaining_fixed_kernel.py
+python claims/p5/frontier/audit_p5_q5_221_remaining_fixed_kernel.py
 ```
 
 The primary verifier reconstructs both directed cycles, the

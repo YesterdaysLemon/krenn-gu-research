@@ -50,14 +50,14 @@ supports can realize `Delta_3` over `C`.
 ## Replay package
 
 The evidence map is in
-[`three_partial_c4c6_boundary/`](research_snapshots/2026-07-27-p5-coordinate-cegar/three_partial_c4c6_boundary/README.md).
+[`three_partial_c4c6_boundary/`](../../../research_snapshots/2026-07-27-p5-coordinate-cegar/three_partial_c4c6_boundary/README.md).
 The normal verifier independently reconstructs every support-orbit
 mapping, signature witness, pair quota, and exact Singular source, then
 checks its committed hash and recorded unit-ideal result:
 
 ```text
 python \
-  verify_p5_exact_three_c4c6_boundary_obstruction.py
+  claims/p5/boundaries/verify_p5_exact_three_c4c6_boundary_obstruction.py
 ```
 
 The package intentionally stores source hashes rather than another
@@ -66,7 +66,7 @@ replay can be sharded.  For example, this reruns ten cases locally:
 
 ```text
 python \
-  verify_p5_exact_three_c4c6_boundary_obstruction.py \
+  claims/p5/boundaries/verify_p5_exact_three_c4c6_boundary_obstruction.py \
   --rerun-singular --limit 10
 ```
 

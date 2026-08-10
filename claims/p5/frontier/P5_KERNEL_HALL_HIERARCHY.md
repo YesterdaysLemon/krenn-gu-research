@@ -106,8 +106,8 @@ tensors.
 Run:
 
 ```text
-python verify_p5_kernel_hall_hierarchy.py
-python audit_p5_kernel_hall_hierarchy.py
+python claims/p5/frontier/verify_p5_kernel_hall_hierarchy.py
+python claims/p5/frontier/audit_p5_kernel_hall_hierarchy.py
 ```
 
 The primary verifier checks every subset size and every possible active

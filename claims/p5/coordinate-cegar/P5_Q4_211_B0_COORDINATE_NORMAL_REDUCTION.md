@@ -315,8 +315,8 @@ it lies on the explicit kernel (21).
 Run:
 
 ```text
-python verify_p5_q4_211_b0_coordinate_normal.py
-python audit_p5_q4_211_b0_coordinate_normal.py
+python claims/p5/coordinate-cegar/verify_p5_q4_211_b0_coordinate_normal.py
+python claims/p5/coordinate-cegar/audit_p5_q4_211_b0_coordinate_normal.py
 ```
 
 The primary verifier differentiates (7), (11), (13), and (21), checks

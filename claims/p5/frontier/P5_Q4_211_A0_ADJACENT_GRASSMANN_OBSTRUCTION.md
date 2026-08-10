@@ -372,8 +372,8 @@ excluded, while parallel incidence on `bc!=0` reselects as adjacent.
 Run:
 
 ```text
-python verify_p5_q4_211_a0_adjacent_grassmann.py
-python audit_p5_q4_211_a0_adjacent_grassmann.py
+python claims/p5/frontier/verify_p5_q4_211_a0_adjacent_grassmann.py
+python claims/p5/frontier/audit_p5_q4_211_a0_adjacent_grassmann.py
 ```
 
 The primary verifier checks the complement pairing, the constant

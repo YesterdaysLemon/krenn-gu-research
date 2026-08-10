@@ -210,8 +210,8 @@ than a Grassmannian or ambient-map search.
 Run:
 
 ```text
-python verify_p5_q4_211_one_cross_direction_plane.py
-python audit_p5_q4_211_one_cross_direction_plane.py
+python claims/p5/frontier/verify_p5_q4_211_one_cross_direction_plane.py
+python claims/p5/frontier/audit_p5_q4_211_one_cross_direction_plane.py
 ```
 
 The primary verifier differentiates (7), (14), and its colour-swapped

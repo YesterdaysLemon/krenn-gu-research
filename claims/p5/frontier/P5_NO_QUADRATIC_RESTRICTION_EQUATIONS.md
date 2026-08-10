@@ -98,7 +98,7 @@ summand, hence on the entire quadratic space.
 Run:
 
 ```text
-python verify_p5_no_quadratic_restriction_equations.py
+python claims/p5/frontier/verify_p5_no_quadratic_restriction_equations.py
 ```
 
 The verifier enumerates all `120^2` ordered pairs of source

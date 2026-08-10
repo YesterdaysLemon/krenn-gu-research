@@ -100,9 +100,9 @@ empty.
 
 See:
 
-- [`P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md`](claims/p4/classifications/P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md)
+- [`P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md`](../../p4/classifications/P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md)
 - [`P5_Q4_211_MARKED_DELTA2_PAIR_IMAGE_OBSTRUCTION.md`](P5_Q4_211_MARKED_DELTA2_PAIR_IMAGE_OBSTRUCTION.md)
-- [`P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md`](claims/p4/classifications/P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md)
+- [`P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md`](../../p4/classifications/P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md)
 - [`P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md`](P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md)
 
 If exactly one cross residual is nonzero, a fourth normal
@@ -176,8 +176,8 @@ where the last two are colour symmetric.
 Run:
 
 ```text
-python verify_p5_q4_211_generic_exclusion.py
-python audit_p5_q4_211_generic_exclusion.py
+python claims/p5/frontier/verify_p5_q4_211_generic_exclusion.py
+python claims/p5/frontier/audit_p5_q4_211_generic_exclusion.py
 ```
 
 These package the constituent certificate hashes and independently

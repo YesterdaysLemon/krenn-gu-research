@@ -2,7 +2,7 @@
 
 This directory contains the two independently generated survivor
 catalogues documented in
-[`P5_EXACT_THREE_C10_CENSUS.md`](../../../P5_EXACT_THREE_C10_CENSUS.md).
+[`P5_EXACT_THREE_C10_CENSUS.md`](../../../claims/p5/coordinate-cegar/P5_EXACT_THREE_C10_CENSUS.md).
 
 - `sat_catalogue_c10.json` is the symmetry-broken SAT enumeration.
 - `audit_c10.json` is the independent packed-array regeneration of all
@@ -16,9 +16,9 @@ Run:
 
 ```text
 python \
-  verify_p5_exact_three_c10_audit.py
+  claims/p5/coordinate-cegar/verify_p5_exact_three_c10_audit.py
 python \
-  verify_p5_c10_degree_one_macaulay_obstruction.py
+  claims/p5/frontier/verify_p5_c10_degree_one_macaulay_obstruction.py
 ```
 
 The first command canonicalizes and compares the two 11,751-orbit sets.

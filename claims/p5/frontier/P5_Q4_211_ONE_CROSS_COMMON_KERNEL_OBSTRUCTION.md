@@ -317,8 +317,8 @@ remains.
 Run:
 
 ```text
-python verify_p5_q4_211_one_cross_common_kernel.py
-python audit_p5_q4_211_one_cross_common_kernel.py
+python claims/p5/frontier/verify_p5_q4_211_one_cross_common_kernel.py
+python claims/p5/frontier/audit_p5_q4_211_one_cross_common_kernel.py
 ```
 
 The primary verifier differentiates (4), (6), (10), (15), (20), and

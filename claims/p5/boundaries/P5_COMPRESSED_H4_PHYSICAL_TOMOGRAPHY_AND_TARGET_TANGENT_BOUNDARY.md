@@ -328,8 +328,8 @@ global Krenn--Gu:                                    UNRESOLVED.       (26)
 ## Replay
 
 ```powershell
-python verify_p5_compressed_h4_physical_tomography_and_target_tangent_boundary.py
-python audit_p5_compressed_h4_physical_tomography_and_target_tangent_boundary.py
+python claims/p5/boundaries/verify_p5_compressed_h4_physical_tomography_and_target_tangent_boundary.py
+python claims/p5/boundaries/audit_p5_compressed_h4_physical_tomography_and_target_tangent_boundary.py
 python -m py_compile verify_p5_compressed_h4_physical_tomography_and_target_tangent_boundary.py audit_p5_compressed_h4_physical_tomography_and_target_tangent_boundary.py
 uv run --with ruff ruff check verify_p5_compressed_h4_physical_tomography_and_target_tangent_boundary.py audit_p5_compressed_h4_physical_tomography_and_target_tangent_boundary.py
 ```

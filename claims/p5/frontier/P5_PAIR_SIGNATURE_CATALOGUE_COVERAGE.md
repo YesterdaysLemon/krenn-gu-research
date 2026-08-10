@@ -150,11 +150,11 @@ The audit returns:
 Run:
 
 ```text
-python verify_p5_pair_signature_catalogue_coverage.py \
+python claims/p5/frontier/verify_p5_pair_signature_catalogue_coverage.py \
   --records tmp/p5_pair_signature_catalogue_coverage_verified.json \
   --cnf tmp/p5_pair_signature_catalogue_coverage.cnf
 
-python audit_p5_pair_signature_catalogue_coverage.py
+python claims/p5/frontier/audit_p5_pair_signature_catalogue_coverage.py
 ```
 
 The independently replayed artifact hashes are:

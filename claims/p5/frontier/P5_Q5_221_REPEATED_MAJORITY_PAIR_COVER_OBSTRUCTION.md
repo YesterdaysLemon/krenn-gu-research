@@ -214,8 +214,8 @@ excludes (1).
 Run:
 
 ```text
-python verify_p5_q5_221_repeated_majority_pair_cover.py
-python audit_p5_q5_221_repeated_majority_pair_cover.py
+python claims/p5/frontier/verify_p5_q5_221_repeated_majority_pair_cover.py
+python claims/p5/frontier/audit_p5_q5_221_repeated_majority_pair_cover.py
 ```
 
 The primary verifier reconstructs the residual planes, the normal

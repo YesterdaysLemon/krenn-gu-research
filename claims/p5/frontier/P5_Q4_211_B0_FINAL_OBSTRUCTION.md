@@ -263,8 +263,8 @@ a=0, b c != 0.
 Run:
 
 ```text
-python verify_p5_q4_211_b0_final.py
-python audit_p5_q4_211_b0_final.py
+python claims/p5/frontier/verify_p5_q4_211_b0_final.py
+python claims/p5/frontier/audit_p5_q4_211_b0_final.py
 ```
 
 The primary verifier checks (5), (9), (11), the two polar systems

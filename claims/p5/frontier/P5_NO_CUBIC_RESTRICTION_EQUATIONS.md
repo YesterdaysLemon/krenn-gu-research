@@ -140,7 +140,7 @@ Hence `R=M` in every cubic isotypic component, proving injectivity over
 Run:
 
 ```text
-python verify_p5_no_cubic_restriction_equations.py
+python claims/p5/frontier/verify_p5_no_cubic_restriction_equations.py
 ```
 
 The replay uses deterministic seed `20260727` and normally completes in

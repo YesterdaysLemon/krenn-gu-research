@@ -123,7 +123,7 @@ Run:
 
 ```text
 python \
-  verify_p5_c10_degree_one_macaulay_obstruction.py
+  claims/p5/frontier/verify_p5_c10_degree_one_macaulay_obstruction.py
 ```
 
 ## What is and is not sustainable

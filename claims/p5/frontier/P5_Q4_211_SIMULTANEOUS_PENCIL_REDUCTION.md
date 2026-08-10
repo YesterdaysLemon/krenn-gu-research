@@ -292,9 +292,9 @@ See
 [`P5_Q4_211_ADJACENT_P4_PENCIL_REDUCTION.md`](P5_Q4_211_ADJACENT_P4_PENCIL_REDUCTION.md).
 The marked-slice classification and pair-image obstruction are:
 
-- [`P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md`](claims/p4/classifications/P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md)
+- [`P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md`](../../p4/classifications/P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md)
 - [`P5_Q4_211_MARKED_DELTA2_PAIR_IMAGE_OBSTRUCTION.md`](P5_Q4_211_MARKED_DELTA2_PAIR_IMAGE_OBSTRUCTION.md)
-- [`P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md`](claims/p4/classifications/P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md)
+- [`P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md`](../../p4/classifications/P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md)
 - [`P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md`](P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md)
 - [`P5_Q4_211_ONE_CROSS_PENCIL_SATURATION_REDUCTION.md`](P5_Q4_211_ONE_CROSS_PENCIL_SATURATION_REDUCTION.md)
 - [`P5_Q4_211_ONE_CROSS_DIRECTION_CONIC_REDUCTION.md`](P5_Q4_211_ONE_CROSS_DIRECTION_CONIC_REDUCTION.md)
@@ -339,7 +339,7 @@ see
 ## The known support-four family is transverse
 
 Apply (13) to the four integer maps in
-[`SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md`](claims/arbitrary-order/SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md).
+[`SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md`](../../arbitrary-order/SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md).
 Exact row reduction gives
 
 ```text
@@ -401,28 +401,28 @@ family lifts to `q4_211`.
 Run:
 
 ```text
-python verify_p5_q4_211_simultaneous_pencil.py
-python audit_p5_q4_211_simultaneous_pencil.py
-python verify_p5_q4_211_parallel_incidence.py
-python audit_p5_q4_211_parallel_incidence.py
-python verify_p5_q4_211_adjacent_p4_pencil.py
-python audit_p5_q4_211_adjacent_p4_pencil.py
+python claims/p5/frontier/verify_p5_q4_211_simultaneous_pencil.py
+python claims/p5/frontier/audit_p5_q4_211_simultaneous_pencil.py
+python claims/p5/frontier/verify_p5_q4_211_parallel_incidence.py
+python claims/p5/frontier/audit_p5_q4_211_parallel_incidence.py
+python claims/p5/frontier/verify_p5_q4_211_adjacent_p4_pencil.py
+python claims/p5/frontier/audit_p5_q4_211_adjacent_p4_pencil.py
 python claims/p4/classifications/verify_p4_marked_delta2_slice_classification.py
 python claims/p4/classifications/audit_p4_marked_delta2_slice_classification.py
-python verify_p5_q4_211_marked_delta2_pair_image.py
-python audit_p5_q4_211_marked_delta2_pair_image.py
+python claims/p5/frontier/verify_p5_q4_211_marked_delta2_pair_image.py
+python claims/p5/frontier/audit_p5_q4_211_marked_delta2_pair_image.py
 python claims/p4/boundaries/verify_p4_marked_delta2_alternating_gate.py
 python claims/p4/boundaries/audit_p4_marked_delta2_alternating_gate.py
-python verify_p5_q4_211_alternating_gate_obstruction.py
-python audit_p5_q4_211_alternating_gate_obstruction.py
-python verify_p5_q4_211_one_cross_pencil_saturation.py
-python audit_p5_q4_211_one_cross_pencil_saturation.py
-python verify_p5_q4_211_one_cross_direction_conic.py
-python audit_p5_q4_211_one_cross_direction_conic.py
-python verify_p5_q4_211_disjoint_conic_polarity.py
-python audit_p5_q4_211_disjoint_conic_polarity.py
-python verify_p5_q4_211_disjoint_exclusion.py
-python audit_p5_q4_211_disjoint_exclusion.py
+python claims/p5/frontier/verify_p5_q4_211_alternating_gate_obstruction.py
+python claims/p5/frontier/audit_p5_q4_211_alternating_gate_obstruction.py
+python claims/p5/frontier/verify_p5_q4_211_one_cross_pencil_saturation.py
+python claims/p5/frontier/audit_p5_q4_211_one_cross_pencil_saturation.py
+python claims/p5/frontier/verify_p5_q4_211_one_cross_direction_conic.py
+python claims/p5/frontier/audit_p5_q4_211_one_cross_direction_conic.py
+python claims/p5/frontier/verify_p5_q4_211_disjoint_conic_polarity.py
+python claims/p5/frontier/audit_p5_q4_211_disjoint_conic_polarity.py
+python claims/p5/frontier/verify_p5_q4_211_disjoint_exclusion.py
+python claims/p5/frontier/audit_p5_q4_211_disjoint_exclusion.py
 ```
 
 The primary verifier expands (9), (12), the pencil and its boundary,

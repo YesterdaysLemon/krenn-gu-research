@@ -108,8 +108,8 @@ decompositions, while `C_4 disjoint union C_6` has four, giving
 Run:
 
 ```text
-python verify_p5_three_coordinate_cycle_dichotomy.py
-python audit_p5_three_coordinate_cycle_dichotomy.py
+python claims/p5/coordinate-cegar/verify_p5_three_coordinate_cycle_dichotomy.py
+python claims/p5/coordinate-cegar/audit_p5_three_coordinate_cycle_dichotomy.py
 ```
 
 ## Boundary

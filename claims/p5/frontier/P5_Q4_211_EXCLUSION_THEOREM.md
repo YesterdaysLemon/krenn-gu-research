@@ -36,7 +36,7 @@ If the fifth row is nonzero and noncoordinate, at least two of
 coordinate row and belongs to a five-coordinate branch.  The remaining
 closure `a=b=c=0` is a genuine zero row, not a coordinate row; it is
 excluded by
-[`P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md`](P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md).
+[`P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md`](../coordinate-cegar/P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md).
 
 Thus the partial `q4_211` branch has exactly four parameter strata:
 
@@ -81,7 +81,7 @@ polar system and two simultaneous `P_3` charts exclude both.  This
 proves the `b=0` face empty.  Interchanging the singleton colours gives
 the `c=0` face:
 
-- [`P5_Q4_211_B0_COORDINATE_NORMAL_REDUCTION.md`](P5_Q4_211_B0_COORDINATE_NORMAL_REDUCTION.md)
+- [`P5_Q4_211_B0_COORDINATE_NORMAL_REDUCTION.md`](../coordinate-cegar/P5_Q4_211_B0_COORDINATE_NORMAL_REDUCTION.md)
 - [`P5_Q4_211_B0_NONCOMMON_A_OBSTRUCTION.md`](P5_Q4_211_B0_NONCOMMON_A_OBSTRUCTION.md)
 - [`P5_Q4_211_B0_FINAL_OBSTRUCTION.md`](P5_Q4_211_B0_FINAL_OBSTRUCTION.md)
 
@@ -155,8 +155,8 @@ Therefore (1) holds.
 Run:
 
 ```text
-python verify_p5_q4_211_exclusion.py
-python audit_p5_q4_211_exclusion.py
+python claims/p5/frontier/verify_p5_q4_211_exclusion.py
+python claims/p5/frontier/audit_p5_q4_211_exclusion.py
 ```
 
 The primary verifier pins the constituent theorem and verifier hashes

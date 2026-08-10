@@ -244,8 +244,8 @@ excluded from the polarity argument because (5) becomes singular;
 Run:
 
 ```text
-python verify_p5_q4_211_disjoint_conic_polarity.py
-python audit_p5_q4_211_disjoint_conic_polarity.py
+python claims/p5/frontier/verify_p5_q4_211_disjoint_conic_polarity.py
+python claims/p5/frontier/audit_p5_q4_211_disjoint_conic_polarity.py
 ```
 
 The primary verifier differentiates (4), checks the determinant and

@@ -259,8 +259,8 @@ exact star pattern (1) is impossible.
 Run:
 
 ```text
-python verify_p5_q5_221_star_obstruction.py
-python audit_p5_q5_221_star_obstruction.py
+python claims/p5/frontier/verify_p5_q5_221_star_obstruction.py
+python claims/p5/frontier/audit_p5_q5_221_star_obstruction.py
 ```
 
 The primary verifier reconstructs the zero-diagonal determinant, the

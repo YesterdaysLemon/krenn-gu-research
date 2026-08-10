@@ -110,8 +110,8 @@ cover every source position across the full five-mode array.
 Run:
 
 ```text
-python verify_p5_source_row_tricolour_cover.py
-python audit_p5_source_row_tricolour_cover.py
+python claims/p5/frontier/verify_p5_source_row_tricolour_cover.py
+python claims/p5/frontier/audit_p5_source_row_tricolour_cover.py
 ```
 
 The primary verifier reconstructs the three possible nonempty-term

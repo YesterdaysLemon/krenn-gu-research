@@ -292,8 +292,8 @@ Orientation II is impossible, completing the monotone proof.
 Run:
 
 ```text
-python verify_p5_q5_221_h1_partner_all_normal.py
-python audit_p5_q5_221_h1_partner_all_normal.py
+python claims/p5/frontier/verify_p5_q5_221_h1_partner_all_normal.py
+python claims/p5/frontier/audit_p5_q5_221_h1_partner_all_normal.py
 ```
 
 The primary verifier reconstructs both orientation-I `Q_02` sign

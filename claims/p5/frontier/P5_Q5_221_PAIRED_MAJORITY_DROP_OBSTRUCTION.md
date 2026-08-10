@@ -225,8 +225,8 @@ impossible.
 Run:
 
 ```text
-python verify_p5_q5_221_paired_majority_drop.py
-python audit_p5_q5_221_paired_majority_drop.py
+python claims/p5/frontier/verify_p5_q5_221_paired_majority_drop.py
+python claims/p5/frontier/audit_p5_q5_221_paired_majority_drop.py
 ```
 
 The primary verifier checks both residual source spaces, their

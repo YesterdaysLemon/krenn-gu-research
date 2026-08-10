@@ -566,7 +566,7 @@ image gives a new compressed target-incidence object: among arbitrary
 surjective sensors, inverse images of the diagonal target that meet the
 physical deck variety lie in codimension at least four.  The legal pullback
 and nonzero GHZ incidence remain unknown.  See
-[`P5_COMPRESSED_H4_PHYSICAL_TOMOGRAPHY_AND_TARGET_TANGENT_BOUNDARY.md`](P5_COMPRESSED_H4_PHYSICAL_TOMOGRAPHY_AND_TARGET_TANGENT_BOUNDARY.md).
+[`P5_COMPRESSED_H4_PHYSICAL_TOMOGRAPHY_AND_TARGET_TANGENT_BOUNDARY.md`](claims/p5/boundaries/P5_COMPRESSED_H4_PHYSICAL_TOMOGRAPHY_AND_TARGET_TANGENT_BOUNDARY.md).
 
 The pinned singular locus is now sharper but not eliminated.  In the
 eight-vertex `P_7` shore, every kernel vector of the pinned four-hafnian
@@ -4069,7 +4069,7 @@ deletion-stable cover of the exact-three-coordinate branch.  Across all
 support-cover CNFs have independently replayed DRAT proofs.  The theorem
 and package are:
 
-- [`P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md`](P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md)
+- [`P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md`](claims/p5/coordinate-cegar/P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md)
 - [`research_snapshots/2026-07-27-p5-tree-chart-cover/`](research_snapshots/2026-07-27-p5-tree-chart-cover/README.md)
 
 The remaining `P_5` branch has four or five coordinate rows in at least
@@ -4090,8 +4090,8 @@ also handles the `q4_211` zero-row closure and 120 partial `3+1`
 signatures.  The corrected census and normalized surviving families
 are:
 
-- [`P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md`](P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md)
-- [`P5_Q4_211_EXCLUSION_THEOREM.md`](P5_Q4_211_EXCLUSION_THEOREM.md)
+- [`P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md`](claims/p5/coordinate-cegar/P5_TWO_SINGLETON_COORDINATE_OBSTRUCTION.md)
+- [`P5_Q4_211_EXCLUSION_THEOREM.md`](claims/p5/frontier/P5_Q4_211_EXCLUSION_THEOREM.md)
 - [`P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md`](P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md)
 - [`P4_PURE_RANK_TWO_COMPONENT_THEOREM.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_THEOREM.md)
 - [`P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md`](claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md)
@@ -4303,9 +4303,9 @@ program are in
 The primary theorem replay passes; the large finite-field census remains
 pending at this checkpoint.
 The shared-case obstruction is in
-[`P5_Q5_311_SHARED_DROP_OBSTRUCTION.md`](P5_Q5_311_SHARED_DROP_OBSTRUCTION.md).
+[`P5_Q5_311_SHARED_DROP_OBSTRUCTION.md`](claims/p5/frontier/P5_Q5_311_SHARED_DROP_OBSTRUCTION.md).
 The complete branch theorem is in
-[`P5_Q5_311_EXCLUSION_THEOREM.md`](P5_Q5_311_EXCLUSION_THEOREM.md).
+[`P5_Q5_311_EXCLUSION_THEOREM.md`](claims/p5/frontier/P5_Q5_311_EXCLUSION_THEOREM.md).
 
 The theorem is sharp.  A symbolic five-parameter family and an
 independent exact-integer audit are in
@@ -4334,7 +4334,7 @@ produces one of six explicit sign-related `P_3` tensors; a residual
 rank-one gate is recorded explicitly before the `P_3` classification
 is used:
 
-- [`P5_Q5_221_HYPERPLANE_INCIDENCE_REDUCTION.md`](P5_Q5_221_HYPERPLANE_INCIDENCE_REDUCTION.md)
+- [`P5_Q5_221_HYPERPLANE_INCIDENCE_REDUCTION.md`](claims/p5/frontier/P5_Q5_221_HYPERPLANE_INCIDENCE_REDUCTION.md)
 
 Three exact marked incidence boundaries are already closed at once.
 The two multiplicity-two colours cannot have the same exact drop pair.
@@ -4346,7 +4346,7 @@ paired-majority mode forces a nonzero residual `P_3` normal to use the
 omit `z`.  The rank-one exceptions collapse to an impossible zero
 residual.  Hence the exact paired-majority pattern is impossible:
 
-- [`P5_Q5_221_PAIRED_MAJORITY_DROP_OBSTRUCTION.md`](P5_Q5_221_PAIRED_MAJORITY_DROP_OBSTRUCTION.md)
+- [`P5_Q5_221_PAIRED_MAJORITY_DROP_OBSTRUCTION.md`](claims/p5/frontier/P5_Q5_221_PAIRED_MAJORITY_DROP_OBSTRUCTION.md)
 
 This is a strict reduction, not a complete `q5_221` exclusion.  At this
 checkpoint, extra rank drops and six remaining minimal marked patterns
@@ -4362,7 +4362,7 @@ rank-three residual and the other forces incompatible normal support.
 The only rank-one boundary is rejected by the zero-diagonal
 cross-scalar lemma:
 
-- [`P5_Q5_221_MARKED_DOUBLE_ADJACENT_OBSTRUCTION.md`](P5_Q5_221_MARKED_DOUBLE_ADJACENT_OBSTRUCTION.md)
+- [`P5_Q5_221_MARKED_DOUBLE_ADJACENT_OBSTRUCTION.md`](claims/p5/frontier/P5_Q5_221_MARKED_DOUBLE_ADJACENT_OBSTRUCTION.md)
 
 Together, the exact obstruction theorems close four of the nine
 marked exact-six-incidence types.  They do not yet cover extra
@@ -4377,12 +4377,12 @@ have `span(h_0,u_1)`.  In `T_1`, the factor `e_2+e_3` can then enter
 only that second mode, leaving a nonzero pure `P_3` restriction with
 rank profile `322`, impossible:
 
-- [`P5_Q5_221_MARKED_DOUBLE_DISJOINT_OBSTRUCTION.md`](P5_Q5_221_MARKED_DOUBLE_DISJOINT_OBSTRUCTION.md)
+- [`P5_Q5_221_MARKED_DOUBLE_DISJOINT_OBSTRUCTION.md`](claims/p5/frontier/P5_Q5_221_MARKED_DOUBLE_DISJOINT_OBSTRUCTION.md)
 
 The complete exact triangle type is now excluded:
 
-- [`P5_Q5_221_TRIANGLE_OBSTRUCTION.md`](P5_Q5_221_TRIANGLE_OBSTRUCTION.md)
-- [`P5_Q5_221_TRIANGLE_WORKING_NOTE.md`](P5_Q5_221_TRIANGLE_WORKING_NOTE.md)
+- [`P5_Q5_221_TRIANGLE_OBSTRUCTION.md`](claims/p5/frontier/P5_Q5_221_TRIANGLE_OBSTRUCTION.md)
+- [`P5_Q5_221_TRIANGLE_WORKING_NOTE.md`](claims/p5/frontier/P5_Q5_221_TRIANGLE_WORKING_NOTE.md)
 
 Repeated `h_2` contraction splits the triangle into two genuinely
 different chiral cases.  In the first, the apparent rank-one exceptions
@@ -4394,7 +4394,7 @@ nine exact minimal types were closed.
 
 The exact star type is excluded too:
 
-- [`P5_Q5_221_STAR_OBSTRUCTION.md`](P5_Q5_221_STAR_OBSTRUCTION.md)
+- [`P5_Q5_221_STAR_OBSTRUCTION.md`](claims/p5/frontier/P5_Q5_221_STAR_OBSTRUCTION.md)
 
 At the all-normal centre, the cross-scalar matrix is invertible with
 zero diagonal.  Its determinant is the sum of two directed-cycle
@@ -4405,8 +4405,8 @@ nine exact minimal types were closed at this checkpoint.
 
 The two exact marked paths are excluded as well:
 
-- [`P5_Q5_221_MARKED_END_PATH_OBSTRUCTION.md`](P5_Q5_221_MARKED_END_PATH_OBSTRUCTION.md)
-- [`P5_Q5_221_MARKED_MIDDLE_PATH_OBSTRUCTION.md`](P5_Q5_221_MARKED_MIDDLE_PATH_OBSTRUCTION.md)
+- [`P5_Q5_221_MARKED_END_PATH_OBSTRUCTION.md`](claims/p5/frontier/P5_Q5_221_MARKED_END_PATH_OBSTRUCTION.md)
+- [`P5_Q5_221_MARKED_MIDDLE_PATH_OBSTRUCTION.md`](claims/p5/frontier/P5_Q5_221_MARKED_MIDDLE_PATH_OBSTRUCTION.md)
 
 For a marked end, the cross-residual pencil first isolates the two
 possible rank-one gates.  A nonzero `Q_02` forces the two opposite
@@ -4428,7 +4428,7 @@ theorems below also close every extra-containment stratum.
 
 That remaining boundary has an exact incidence-poset reduction:
 
-- [`P5_Q5_221_EXTRA_CONTAINMENT_REDUCTION.md`](P5_Q5_221_EXTRA_CONTAINMENT_REDUCTION.md)
+- [`P5_Q5_221_EXTRA_CONTAINMENT_REDUCTION.md`](claims/p5/frontier/P5_Q5_221_EXTRA_CONTAINMENT_REDUCTION.md)
 
 Every extra-containment pattern contains a seven-incidence cover of the
 minimal layer.  Up to mode permutations and swapping the two majority
@@ -4438,18 +4438,18 @@ profile `2,2,2,1`.  A complete `q5_221` proof now requires monotone
 obstructions on this cover layer.  The distinguished-normal theorem
 closes six covers monotonically:
 
-- [`P5_Q5_221_DISTINGUISHED_NORMAL_MULTIPLICITY_THEOREM.md`](P5_Q5_221_DISTINGUISHED_NORMAL_MULTIPLICITY_THEOREM.md)
+- [`P5_Q5_221_DISTINGUISHED_NORMAL_MULTIPLICITY_THEOREM.md`](claims/p5/frontier/P5_Q5_221_DISTINGUISHED_NORMAL_MULTIPLICITY_THEOREM.md)
 
 The strengthened triangle theorem, a two-channel Segre argument, and
 a block-apolar rectangle exclude the exact seven-incidence strata of
 three further covers:
 
-- [`P5_Q5_221_REPEATED_MAJORITY_PAIR_COVER_OBSTRUCTION.md`](P5_Q5_221_REPEATED_MAJORITY_PAIR_COVER_OBSTRUCTION.md)
-- [`P5_Q5_221_COVER_13_OBSTRUCTION.md`](P5_Q5_221_COVER_13_OBSTRUCTION.md)
+- [`P5_Q5_221_REPEATED_MAJORITY_PAIR_COVER_OBSTRUCTION.md`](claims/p5/frontier/P5_Q5_221_REPEATED_MAJORITY_PAIR_COVER_OBSTRUCTION.md)
+- [`P5_Q5_221_COVER_13_OBSTRUCTION.md`](claims/p5/frontier/P5_Q5_221_COVER_13_OBSTRUCTION.md)
 
 The two-all-normal theorem closes one further cover:
 
-- [`P5_Q5_221_TWO_ALL_NORMAL_MODES_OBSTRUCTION.md`](P5_Q5_221_TWO_ALL_NORMAL_MODES_OBSTRUCTION.md)
+- [`P5_Q5_221_TWO_ALL_NORMAL_MODES_OBSTRUCTION.md`](claims/p5/frontier/P5_Q5_221_TWO_ALL_NORMAL_MODES_OBSTRUCTION.md)
 
 The directed-cycle factor-line theorem closes two more fixed-kernel
 covers.  Its second orientation corrects a tempting but false
@@ -4458,11 +4458,11 @@ the cycle `Q_20,Q_01,Q_12`.  Both possible ranks at the partner mode
 then make two differently coloured residuals share one local factor
 line:
 
-- [`P5_Q5_221_H1_PARTNER_ALL_NORMAL_OBSTRUCTION.md`](P5_Q5_221_H1_PARTNER_ALL_NORMAL_OBSTRUCTION.md)
+- [`P5_Q5_221_H1_PARTNER_ALL_NORMAL_OBSTRUCTION.md`](claims/p5/frontier/P5_Q5_221_H1_PARTNER_ALL_NORMAL_OBSTRUCTION.md)
 
 The remaining fixed-kernel theorem closes covers `#7,#10`:
 
-- [`P5_Q5_221_REMAINING_FIXED_KERNEL_OBSTRUCTION.md`](P5_Q5_221_REMAINING_FIXED_KERNEL_OBSTRUCTION.md)
+- [`P5_Q5_221_REMAINING_FIXED_KERNEL_OBSTRUCTION.md`](claims/p5/frontier/P5_Q5_221_REMAINING_FIXED_KERNEL_OBSTRUCTION.md)
 
 Only two genuine eighth-incidence boundaries survive above the three
 exact-only covers.  One has two repeated normal pairs; the other is the
@@ -4472,7 +4472,7 @@ the second.  The last orientation double-contracts `T_2` to the
 rank-two form `Sym(h_0,h_1)` through two injective maps, contradicting
 the required pure target product:
 
-- [`P5_Q5_221_FINAL_MONOTONE_BOUNDARY_OBSTRUCTION.md`](P5_Q5_221_FINAL_MONOTONE_BOUNDARY_OBSTRUCTION.md)
+- [`P5_Q5_221_FINAL_MONOTONE_BOUNDARY_OBSTRUCTION.md`](claims/p5/boundaries/P5_Q5_221_FINAL_MONOTONE_BOUNDARY_OBSTRUCTION.md)
 
 Therefore the complete normalized `q5_221` branch is excluded over
 `C`.  At that checkpoint the separate normalized `q4_211` branch
@@ -4505,7 +4505,7 @@ two-parameter family, not merely at the integer example.  Thus that
 positive construction does not lift to `q4_211`; the exceptional
 rank-at-most-two degeneracy locus is the new analytic frontier:
 
-- [`P5_Q4_211_SIMULTANEOUS_PENCIL_REDUCTION.md`](P5_Q4_211_SIMULTANEOUS_PENCIL_REDUCTION.md)
+- [`P5_Q4_211_SIMULTANEOUS_PENCIL_REDUCTION.md`](claims/p5/frontier/P5_Q4_211_SIMULTANEOUS_PENCIL_REDUCTION.md)
 
 The generic parallel singleton-normal incidence type has also been
 recast as a two-dimensional diagonal matrix pencil.  When `bc != 0`,
@@ -4518,7 +4518,7 @@ image makes one embedded `P_4` residual equal to `-2b e_3^2` or
 parallel minimal type survives on `bc != 0`; it always has a third
 common incidence and can be reselected as adjacent:
 
-- [`P5_Q4_211_PARALLEL_INCIDENCE_KERNEL_REDUCTION.md`](P5_Q4_211_PARALLEL_INCIDENCE_KERNEL_REDUCTION.md)
+- [`P5_Q4_211_PARALLEL_INCIDENCE_KERNEL_REDUCTION.md`](claims/p5/frontier/P5_Q4_211_PARALLEL_INCIDENCE_KERNEL_REDUCTION.md)
 
 At a common-normal mode, the two cross residuals also assemble into a
 single order-four permanent tensor after quotienting by the local
@@ -4527,7 +4527,7 @@ decomposable-`P_4` rank-drop theorem forces a fourth source normal
 `(0,0,0,c,b)` into another row space.  If neither vanishes, the tensor
 maps to `Delta_2`, leaving a marked sharp-subrank-two boundary:
 
-- [`P5_Q4_211_ADJACENT_P4_PENCIL_REDUCTION.md`](P5_Q4_211_ADJACENT_P4_PENCIL_REDUCTION.md)
+- [`P5_Q4_211_ADJACENT_P4_PENCIL_REDUCTION.md`](claims/p5/frontier/P5_Q4_211_ADJACENT_P4_PENCIL_REDUCTION.md)
 
 That marked boundary is now completely excluded.  When both pure cubic
 slices have rank two everywhere, their six singleton rows belong to
@@ -4538,11 +4538,11 @@ tangent normal forms are incompatible with, respectively, the
 triple-`n` contraction and a double-`n` decomposable-`P_3` sign chart:
 
 - [`P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md`](claims/p4/classifications/P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md)
-- [`P5_Q4_211_MARKED_DELTA2_PAIR_IMAGE_OBSTRUCTION.md`](P5_Q4_211_MARKED_DELTA2_PAIR_IMAGE_OBSTRUCTION.md)
+- [`P5_Q4_211_MARKED_DELTA2_PAIR_IMAGE_OBSTRUCTION.md`](claims/p5/frontier/P5_Q4_211_MARKED_DELTA2_PAIR_IMAGE_OBSTRUCTION.md)
 - [`P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md`](claims/p4/classifications/P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md)
-- [`P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md`](P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md)
-- [`P5_Q4_211_ONE_CROSS_PENCIL_SATURATION_REDUCTION.md`](P5_Q4_211_ONE_CROSS_PENCIL_SATURATION_REDUCTION.md)
-- [`P5_Q4_211_ONE_CROSS_DIRECTION_CONIC_REDUCTION.md`](P5_Q4_211_ONE_CROSS_DIRECTION_CONIC_REDUCTION.md)
+- [`P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md`](claims/p5/frontier/P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md)
+- [`P5_Q4_211_ONE_CROSS_PENCIL_SATURATION_REDUCTION.md`](claims/p5/frontier/P5_Q4_211_ONE_CROSS_PENCIL_SATURATION_REDUCTION.md)
+- [`P5_Q4_211_ONE_CROSS_DIRECTION_CONIC_REDUCTION.md`](claims/p5/frontier/P5_Q4_211_ONE_CROSS_DIRECTION_CONIC_REDUCTION.md)
 
 The generic exact disjoint type has a complementary projective
 reduction.  Its mixed double contraction is a nondegenerate ternary
@@ -4555,8 +4555,8 @@ forces one complete normal pair to share the kernel
 doubled-colour-zero coefficient; the latter forces incompatible
 `h_2,n` target colours.  Thus exact disjoint incidence is excluded:
 
-- [`P5_Q4_211_DISJOINT_CONIC_POLARITY_REDUCTION.md`](P5_Q4_211_DISJOINT_CONIC_POLARITY_REDUCTION.md)
-- [`P5_Q4_211_DISJOINT_EXCLUSION_THEOREM.md`](P5_Q4_211_DISJOINT_EXCLUSION_THEOREM.md)
+- [`P5_Q4_211_DISJOINT_CONIC_POLARITY_REDUCTION.md`](claims/p5/frontier/P5_Q4_211_DISJOINT_CONIC_POLARITY_REDUCTION.md)
+- [`P5_Q4_211_DISJOINT_EXCLUSION_THEOREM.md`](claims/p5/frontier/P5_Q4_211_DISJOINT_EXCLUSION_THEOREM.md)
 
 The three parameter faces are now closed too.  Coordinate-normal
 polarity excludes `b=0` and, by colour symmetry, `c=0`.  On `a=0`,
@@ -4566,7 +4566,7 @@ disjoint branch reduces to a ternary `P_3` cube with incompatible
 antipodal corners.  Together with the two-singleton treatment of the
 zero row, this completes `q4_211`:
 
-- [`P5_Q4_211_EXCLUSION_THEOREM.md`](P5_Q4_211_EXCLUSION_THEOREM.md)
+- [`P5_Q4_211_EXCLUSION_THEOREM.md`](claims/p5/frontier/P5_Q4_211_EXCLUSION_THEOREM.md)
 
 This still does not close `P_5`.  The exact corrected high-coordinate
 frontier consists of `H31`, where one pure and one `Delta_2` embedded
@@ -4593,7 +4593,7 @@ the ongoing fail-closed search are documented in:
 
 - [`P5_HIGH_COORDINATE_CHART_ORBIT_CEGAR.md`](P5_HIGH_COORDINATE_CHART_ORBIT_CEGAR.md)
 - [`P5_Q5_311_RARE_SLICE_REDUCTION.md`](P5_Q5_311_RARE_SLICE_REDUCTION.md)
-- [`P5_Q5_311_RARE_AFFINE_CORE.md`](P5_Q5_311_RARE_AFFINE_CORE.md)
+- [`P5_Q5_311_RARE_AFFINE_CORE.md`](claims/p5/frontier/P5_Q5_311_RARE_AFFINE_CORE.md)
 
 ## Problem
 
@@ -4648,37 +4648,37 @@ the essential remaining case.
 - [`FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md`](FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md)
 - [`FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md`](claims/arbitrary-order/FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md)
 - [`ALL_QUADRANGLE_P5_OBSTRUCTION.md`](claims/arbitrary-order/ALL_QUADRANGLE_P5_OBSTRUCTION.md)
-- [`P5_COORDINATE_PLANE_PAIR_COVER.md`](P5_COORDINATE_PLANE_PAIR_COVER.md)
-- [`P5_KERNEL_HALL_HIERARCHY.md`](P5_KERNEL_HALL_HIERARCHY.md)
-- [`P5_SOURCE_ROW_TRICOLOUR_COVER.md`](P5_SOURCE_ROW_TRICOLOUR_COVER.md)
-- [`P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md`](P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md)
-- [`P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md`](P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md)
-- [`P5_ALL_FULL_TRICOLOUR_OBSTRUCTION.md`](P5_ALL_FULL_TRICOLOUR_OBSTRUCTION.md)
-- [`P5_ALL_FULL_BOUNDARY_OBSTRUCTION.md`](P5_ALL_FULL_BOUNDARY_OBSTRUCTION.md)
-- [`P5_ONE_PARTIAL_BOUNDARY_OBSTRUCTION.md`](P5_ONE_PARTIAL_BOUNDARY_OBSTRUCTION.md)
+- [`P5_COORDINATE_PLANE_PAIR_COVER.md`](claims/p5/coordinate-cegar/P5_COORDINATE_PLANE_PAIR_COVER.md)
+- [`P5_KERNEL_HALL_HIERARCHY.md`](claims/p5/frontier/P5_KERNEL_HALL_HIERARCHY.md)
+- [`P5_SOURCE_ROW_TRICOLOUR_COVER.md`](claims/p5/frontier/P5_SOURCE_ROW_TRICOLOUR_COVER.md)
+- [`P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md`](claims/p5/frontier/P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md)
+- [`P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md`](claims/p5/coordinate-cegar/P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md)
+- [`P5_ALL_FULL_TRICOLOUR_OBSTRUCTION.md`](claims/p5/frontier/P5_ALL_FULL_TRICOLOUR_OBSTRUCTION.md)
+- [`P5_ALL_FULL_BOUNDARY_OBSTRUCTION.md`](claims/p5/boundaries/P5_ALL_FULL_BOUNDARY_OBSTRUCTION.md)
+- [`P5_ONE_PARTIAL_BOUNDARY_OBSTRUCTION.md`](claims/p5/boundaries/P5_ONE_PARTIAL_BOUNDARY_OBSTRUCTION.md)
 - [`P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md`](P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md)
-- [`P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md`](P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md)
-- [`P5_EXACT_THREE_C10_CENSUS.md`](P5_EXACT_THREE_C10_CENSUS.md)
-- [`P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md`](P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md)
-- [`P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md`](P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md)
-- [`P5_C10_BINARY_FORK_OBSTRUCTION.md`](P5_C10_BINARY_FORK_OBSTRUCTION.md)
-- [`P5_C10_TRIANGLE_OBSTRUCTION.md`](P5_C10_TRIANGLE_OBSTRUCTION.md)
-- [`P5_C10_ODD_CYCLE5_OBSTRUCTION.md`](P5_C10_ODD_CYCLE5_OBSTRUCTION.md)
-- [`P5_C10_SCALAR_SPAN_OBSTRUCTION.md`](P5_C10_SCALAR_SPAN_OBSTRUCTION.md)
-- [`P5_C10_DEGREE_ONE_MACAULAY_OBSTRUCTION.md`](P5_C10_DEGREE_ONE_MACAULAY_OBSTRUCTION.md)
+- [`P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md`](claims/p5/boundaries/P5_EXACT_THREE_C4C6_BOUNDARY_OBSTRUCTION.md)
+- [`P5_EXACT_THREE_C10_CENSUS.md`](claims/p5/coordinate-cegar/P5_EXACT_THREE_C10_CENSUS.md)
+- [`P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md`](claims/p5/boundaries/P5_EXACT_THREE_C10_BOUNDARY_OBSTRUCTION.md)
+- [`P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md`](claims/p5/coordinate-cegar/P5_EXACT_THREE_COORDINATE_TREE_CHART_OBSTRUCTION.md)
+- [`P5_C10_BINARY_FORK_OBSTRUCTION.md`](claims/p5/frontier/P5_C10_BINARY_FORK_OBSTRUCTION.md)
+- [`P5_C10_TRIANGLE_OBSTRUCTION.md`](claims/p5/frontier/P5_C10_TRIANGLE_OBSTRUCTION.md)
+- [`P5_C10_ODD_CYCLE5_OBSTRUCTION.md`](claims/p5/frontier/P5_C10_ODD_CYCLE5_OBSTRUCTION.md)
+- [`P5_C10_SCALAR_SPAN_OBSTRUCTION.md`](claims/p5/frontier/P5_C10_SCALAR_SPAN_OBSTRUCTION.md)
+- [`P5_C10_DEGREE_ONE_MACAULAY_OBSTRUCTION.md`](claims/p5/frontier/P5_C10_DEGREE_ONE_MACAULAY_OBSTRUCTION.md)
 - [`P5_C10_TEN_EQUATION_AFFINE_CORE.md`](P5_C10_TEN_EQUATION_AFFINE_CORE.md)
 - [`P5_EXACT_THREE_MOTIF_QUOTIENT.md`](P5_EXACT_THREE_MOTIF_QUOTIENT.md)
-- [`P5_FIVE_EQUATION_LAURENT_CORE.md`](P5_FIVE_EQUATION_LAURENT_CORE.md)
-- [`P5_NO_QUADRATIC_RESTRICTION_EQUATIONS.md`](P5_NO_QUADRATIC_RESTRICTION_EQUATIONS.md)
-- [`P5_NO_CUBIC_RESTRICTION_EQUATIONS.md`](P5_NO_CUBIC_RESTRICTION_EQUATIONS.md)
-- [`P5_NO_QUARTIC_RESTRICTION_EQUATIONS.md`](P5_NO_QUARTIC_RESTRICTION_EQUATIONS.md)
-- [`P5_NO_QUINTIC_RESTRICTION_EQUATIONS.md`](P5_NO_QUINTIC_RESTRICTION_EQUATIONS.md)
+- [`P5_FIVE_EQUATION_LAURENT_CORE.md`](claims/p5/frontier/P5_FIVE_EQUATION_LAURENT_CORE.md)
+- [`P5_NO_QUADRATIC_RESTRICTION_EQUATIONS.md`](claims/p5/frontier/P5_NO_QUADRATIC_RESTRICTION_EQUATIONS.md)
+- [`P5_NO_CUBIC_RESTRICTION_EQUATIONS.md`](claims/p5/frontier/P5_NO_CUBIC_RESTRICTION_EQUATIONS.md)
+- [`P5_NO_QUARTIC_RESTRICTION_EQUATIONS.md`](claims/p5/frontier/P5_NO_QUARTIC_RESTRICTION_EQUATIONS.md)
+- [`P5_NO_QUINTIC_RESTRICTION_EQUATIONS.md`](claims/p5/frontier/P5_NO_QUINTIC_RESTRICTION_EQUATIONS.md)
 - [`P5_DEGREE_SIX_INVARIANT_PULLBACK.md`](P5_DEGREE_SIX_INVARIANT_PULLBACK.md)
-- [`P5_Q5_221_TRIANGLE_OBSTRUCTION.md`](P5_Q5_221_TRIANGLE_OBSTRUCTION.md)
-- [`P5_Q5_221_STAR_OBSTRUCTION.md`](P5_Q5_221_STAR_OBSTRUCTION.md)
-- [`P5_Q5_221_MARKED_END_PATH_OBSTRUCTION.md`](P5_Q5_221_MARKED_END_PATH_OBSTRUCTION.md)
-- [`P5_Q5_221_MARKED_MIDDLE_PATH_OBSTRUCTION.md`](P5_Q5_221_MARKED_MIDDLE_PATH_OBSTRUCTION.md)
-- [`P5_Q5_221_EXTRA_CONTAINMENT_REDUCTION.md`](P5_Q5_221_EXTRA_CONTAINMENT_REDUCTION.md)
+- [`P5_Q5_221_TRIANGLE_OBSTRUCTION.md`](claims/p5/frontier/P5_Q5_221_TRIANGLE_OBSTRUCTION.md)
+- [`P5_Q5_221_STAR_OBSTRUCTION.md`](claims/p5/frontier/P5_Q5_221_STAR_OBSTRUCTION.md)
+- [`P5_Q5_221_MARKED_END_PATH_OBSTRUCTION.md`](claims/p5/frontier/P5_Q5_221_MARKED_END_PATH_OBSTRUCTION.md)
+- [`P5_Q5_221_MARKED_MIDDLE_PATH_OBSTRUCTION.md`](claims/p5/frontier/P5_Q5_221_MARKED_MIDDLE_PATH_OBSTRUCTION.md)
+- [`P5_Q5_221_EXTRA_CONTAINMENT_REDUCTION.md`](claims/p5/frontier/P5_Q5_221_EXTRA_CONTAINMENT_REDUCTION.md)
 - [`P5_ALTERNATIVE_STRATEGY_MAP.md`](P5_ALTERNATIVE_STRATEGY_MAP.md)
 - [`THREE_COLOUR_BLOCKER_UNION_LEMMA.md`](claims/arbitrary-order/THREE_COLOUR_BLOCKER_UNION_LEMMA.md)
 - [`FOUR_BLOCKER_IDEAL_OBSTRUCTION.md`](claims/arbitrary-order/FOUR_BLOCKER_IDEAL_OBSTRUCTION.md)
@@ -4862,20 +4862,20 @@ python claims/arbitrary-order/verify_five_row_projective_normal_forms.py
 python claims/arbitrary-order/audit_five_row_projective_normal_forms.py
 python claims/arbitrary-order/verify_all_quadrangle_p5_obstruction.py
 python claims/arbitrary-order/audit_all_quadrangle_p5_obstruction.py
-python verify_p5_coordinate_plane_pair_cover.py
-python audit_p5_coordinate_plane_pair_cover.py
-python verify_p5_kernel_hall_hierarchy.py
-python audit_p5_kernel_hall_hierarchy.py
-python verify_p5_source_row_tricolour_cover.py
-python audit_p5_source_row_tricolour_cover.py
-python verify_p5_exact_three_c4c6_boundary_obstruction.py
-python verify_p5_exact_three_c10_audit.py
-python verify_p5_exact_three_c10_boundary_obstruction.py
-python verify_p5_c10_binary_fork_obstruction.py
-python verify_p5_c10_triangle_obstruction.py
-python verify_p5_c10_odd_cycle5_obstruction.py
-python verify_p5_c10_scalar_span_obstruction.py
-python verify_p5_c10_degree_one_macaulay_obstruction.py
+python claims/p5/coordinate-cegar/verify_p5_coordinate_plane_pair_cover.py
+python claims/p5/coordinate-cegar/audit_p5_coordinate_plane_pair_cover.py
+python claims/p5/frontier/verify_p5_kernel_hall_hierarchy.py
+python claims/p5/frontier/audit_p5_kernel_hall_hierarchy.py
+python claims/p5/frontier/verify_p5_source_row_tricolour_cover.py
+python claims/p5/frontier/audit_p5_source_row_tricolour_cover.py
+python claims/p5/boundaries/verify_p5_exact_three_c4c6_boundary_obstruction.py
+python claims/p5/coordinate-cegar/verify_p5_exact_three_c10_audit.py
+python claims/p5/boundaries/verify_p5_exact_three_c10_boundary_obstruction.py
+python claims/p5/frontier/verify_p5_c10_binary_fork_obstruction.py
+python claims/p5/frontier/verify_p5_c10_triangle_obstruction.py
+python claims/p5/frontier/verify_p5_c10_odd_cycle5_obstruction.py
+python claims/p5/frontier/verify_p5_c10_scalar_span_obstruction.py
+python claims/p5/frontier/verify_p5_c10_degree_one_macaulay_obstruction.py
 python verify_p5_c10_ten_equation_affine_core.py
 python probe_p5_c10_joint_affine_class.py
 python claims/arbitrary-order/verify_three_colour_blocker_union.py
@@ -5096,7 +5096,7 @@ pairs.  A quadrangle map covers none of them, and a non-axial line map
 covers at most one.  Hence every hypothetical restriction contains
 either a map with at least two coordinate rows or an axial `4+1` map
 with four two-colour rows and one row on the third colour.  See
-[`P5_COORDINATE_PLANE_PAIR_COVER.md`](P5_COORDINATE_PLANE_PAIR_COVER.md).
+[`P5_COORDINATE_PLANE_PAIR_COVER.md`](claims/p5/coordinate-cegar/P5_COORDINATE_PLANE_PAIR_COVER.md).
 
 The evaluation obstruction extends to a Hall hierarchy.  If `s` source
 coordinates are forbidden, then `6-s` selected modes cannot be injected
@@ -5106,7 +5106,7 @@ kernel of those rows in at most `5-s` modes.  Dually, every fixed target
 coordinate covector lies in the corresponding row span in at least
 `s` modes, for `s=2,3,4`.  This adds simultaneous pair, triple, and
 four-row quotas to the surviving axial and multiple-coordinate cases.
-See [`P5_KERNEL_HALL_HIERARCHY.md`](P5_KERNEL_HALL_HIERARCHY.md).
+See [`P5_KERNEL_HALL_HIERARCHY.md`](claims/p5/frontier/P5_KERNEL_HALL_HIERARCHY.md).
 
 The singleton boundary, where the Hall evaluation has no spare mode,
 has a stronger tensor-level solution.  Fixing one source row and
@@ -5121,7 +5121,7 @@ coordinate row.  This forces at least 15 coordinate rows among the 25
 local rows and at least three in one mode.  An independent `F_3` audit
 checks all 8,568 zero-or-projective five-row multisets and 34,272
 nonzero coefficient cases.  See
-[`P5_SOURCE_ROW_TRICOLOUR_COVER.md`](P5_SOURCE_ROW_TRICOLOUR_COVER.md).
+[`P5_SOURCE_ROW_TRICOLOUR_COVER.md`](claims/p5/frontier/P5_SOURCE_ROW_TRICOLOUR_COVER.md).
 
 The finite local signature catalogue now has an exact coverage theorem
 over `C`.  An abstract Boolean encoding retains only zero/nonzero row
@@ -5136,7 +5136,7 @@ proof passes independent forward replay.  Thus the finite field is only
 an enumeration device: every relevant complex support/pair signature is
 covered.  Higher-subset incidences and coefficient realizability are
 not imported.  See
-[`P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md`](P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md).
+[`P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md`](claims/p5/frontier/P5_PAIR_SIGNATURE_CATALOGUE_COVERAGE.md).
 
 The saturated 15-coordinate-row boundary has a two-shape
 classification.  If no mode has four coordinate rows, all five modes
@@ -5146,7 +5146,7 @@ non-coordinate cells.  Their mode--source incidence graph is
 2-regular and bipartite on ten vertices, so it is either `C10` or
 `C4+C6`.  Independent enumerations find 2,040 labelled graphs: 1,440
 of the first type and 600 of the second.  See
-[`P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md`](P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md).
+[`P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md`](claims/p5/coordinate-cegar/P5_THREE_COORDINATE_CYCLE_DICHOTOMY.md).
 
 Intersecting the balanced all-bridge normal form for all three colours gives
 an exact arbitrary-order reduction.  Every edge block has at most four

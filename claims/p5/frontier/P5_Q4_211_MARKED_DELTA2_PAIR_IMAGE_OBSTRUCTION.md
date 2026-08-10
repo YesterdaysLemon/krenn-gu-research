@@ -15,7 +15,7 @@ P_4 -> Delta_2.
 ```
 
 The all-rank-two slice family classified in
-[`P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md`](claims/p4/classifications/P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md)
+[`P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md`](../../p4/classifications/P4_MARKED_DELTA2_SLICE_CLASSIFICATION.md)
 is incompatible with the two incidences at `B,C`.  Therefore every
 surviving marked-`Delta_2` branch has a rank-one coordinate-deleted
 slice and hence a singleton target row in one of the normal pencils
@@ -165,7 +165,7 @@ has exactly one gate of each type at distinct modes.  Its transverse
 stratum makes all three third-colour rows proportional to `n`, which
 contradicts the zero triple-`n` contraction.  Its tangent stratum is
 excluded by a double-`n` `P_3` sign-support argument.  See
-[`P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md`](claims/p4/classifications/P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md)
+[`P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md`](../../p4/classifications/P4_MARKED_DELTA2_ALTERNATING_GATE_CLASSIFICATION.md)
 and
 [`P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md`](P5_Q4_211_ALTERNATING_GATE_OBSTRUCTION.md).
 
@@ -180,8 +180,8 @@ boundaries, remains necessary for a `q4_211` exclusion.
 Run:
 
 ```text
-python verify_p5_q4_211_marked_delta2_pair_image.py
-python audit_p5_q4_211_marked_delta2_pair_image.py
+python claims/p5/frontier/verify_p5_q4_211_marked_delta2_pair_image.py
+python claims/p5/frontier/audit_p5_q4_211_marked_delta2_pair_image.py
 ```
 
 The primary verifier reconstructs all six pair-image matrices
