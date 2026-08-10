@@ -77,8 +77,8 @@ fixed point and `git diff --exit-code` confirmed no unstaged repair.
 
 Fresh semantic and mechanical referees accepted exact clean candidate
 `cf0746ad3cf80e68fa6204ce29aa87e8a02c3f2d` with no findings.  The semantic
-review confirmed that ledger status remains `partial_curated`, global status
-remains `UNRESOLVED`, and the only ledger changes are the three necessary
+review confirmed that ledger completeness remains `partial_curated`, global
+status remains `UNRESOLVED`, and the only ledger changes are the three necessary
 README hash refreshes.  The mechanical review independently replayed the full
 bounded floor and adversarially confirmed default strictness, environment
 non-bypass, allowlist-capacity failure, and the allowed entrypoint exception.
