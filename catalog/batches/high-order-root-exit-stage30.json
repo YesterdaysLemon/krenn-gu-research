@@ -1,0 +1,525 @@
+{
+  "batch_schema_version": 2,
+  "batch_id": "high-order-root-exit-stage30",
+  "approved_by": "Codex (exact mapping reviewer under repository-owner standing delegation dated 2026-08-08; Tier-2 owner-directed root-exit authorization dated 2026-08-09)",
+  "approved_at": "2026-08-09",
+  "base_sha": "12f01bd6b3ea48db43f083ec114fa3f6b03dd125",
+  "manifest_sha256": "61e00e9aa6f6dd2d458e75c8582f779b05c56792c4cc3c72cfaf35f40abc6793",
+  "mapping_sha256": "ee67b662c1ac4f718e17be323ae56b4bb7bb0881dc6e805957eeca5951dea4e7",
+  "source_identity_sha256": "27dd6d6bfbca0f96e751e7207e56761c2c8d54d14fbd2fd6ec22d18817c227ec",
+  "member_count": 102,
+  "moves": [
+    {
+      "old_path": "BLOCK_SQUARE_ZERO_WICK_COMPLETION_THEOREM.md",
+      "new_path": "claims/arbitrary-order/BLOCK_SQUARE_ZERO_WICK_COMPLETION_THEOREM.md",
+      "source_blob": "1bb5639c94611565a5af16059420ca4137e69a9b"
+    },
+    {
+      "old_path": "COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md",
+      "new_path": "claims/p7/COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md",
+      "source_blob": "2e2381c51d20c0815665274f16ac349be2c61184"
+    },
+    {
+      "old_path": "CROSS_ROOT_COORDINATE_MONOMIAL_CHART_HOLONOMY_AND_NINE_CHART_NO_GO.md",
+      "new_path": "claims/arbitrary-order/CROSS_ROOT_COORDINATE_MONOMIAL_CHART_HOLONOMY_AND_NINE_CHART_NO_GO.md",
+      "source_blob": "a0874e60e10a1bc3e20b7707a0479c3e0047652c"
+    },
+    {
+      "old_path": "LEGAL_COMPANION_SIMPLE_INCIDENCE_WEIGHTED_PULLBACK_IDEAL_AND_NONFORCING_THEOREM.md",
+      "new_path": "claims/p7/LEGAL_COMPANION_SIMPLE_INCIDENCE_WEIGHTED_PULLBACK_IDEAL_AND_NONFORCING_THEOREM.md",
+      "source_blob": "159929e4951092692ae4f83c6246322bfbea20e6"
+    },
+    {
+      "old_path": "LEGAL_FIVE_PORT_PENTAD_WINDOW_ROOT_BUDGET_AND_NULL_POLAR_SPARSITY_THEOREM.md",
+      "new_path": "claims/arbitrary-order/LEGAL_FIVE_PORT_PENTAD_WINDOW_ROOT_BUDGET_AND_NULL_POLAR_SPARSITY_THEOREM.md",
+      "source_blob": "ef7f0b694990db43d6045bb2b72ac388430cfeaa"
+    },
+    {
+      "old_path": "LEGAL_P7_SECANT_FACTOR_CODIMENSION_BARRIER_AND_ARTINIAN_PAIR_IDEAL_REDUCTION.md",
+      "new_path": "claims/p7/LEGAL_P7_SECANT_FACTOR_CODIMENSION_BARRIER_AND_ARTINIAN_PAIR_IDEAL_REDUCTION.md",
+      "source_blob": "538031cdb467f0dce4422b09e9b058051a4088ba"
+    },
+    {
+      "old_path": "LOWER_MIXED_ROOT_JET_DELETION_LABEL_TOMOGRAPHY_AND_SQUAREFREE_GAUGE_THEOREM.md",
+      "new_path": "claims/arbitrary-order/LOWER_MIXED_ROOT_JET_DELETION_LABEL_TOMOGRAPHY_AND_SQUAREFREE_GAUGE_THEOREM.md",
+      "source_blob": "bd2a18faa14b9e446e8b7d055848d499ad4d0c9b"
+    },
+    {
+      "old_path": "MAJORITY_SUBSET_INTERNAL_EDGE_IDEAL_HIERARCHY.md",
+      "new_path": "claims/arbitrary-order/MAJORITY_SUBSET_INTERNAL_EDGE_IDEAL_HIERARCHY.md",
+      "source_blob": "4b6467743b97c0ccfafb052c653984fc0aa4f3bc"
+    },
+    {
+      "old_path": "MIXED_ROOT_DELETION_FILTRATION_AND_HERALD_FREE_PAIR_NO_GO.md",
+      "new_path": "claims/arbitrary-order/MIXED_ROOT_DELETION_FILTRATION_AND_HERALD_FREE_PAIR_NO_GO.md",
+      "source_blob": "410ddc2ab2381017e080972283748ba55337aac4"
+    },
+    {
+      "old_path": "NONPROJECTIVE_ROOT_PAIR_FAN_SELECTOR_TOMOGRAPHY_THEOREM.md",
+      "new_path": "claims/arbitrary-order/NONPROJECTIVE_ROOT_PAIR_FAN_SELECTOR_TOMOGRAPHY_THEOREM.md",
+      "source_blob": "7ece7835680baff8d45dfd9abf391588bec43aaa"
+    },
+    {
+      "old_path": "PINNED_H4_STAR_TORUS_CIRCUIT_GIRTH_AND_P6_CUBIC_ESCAPE.md",
+      "new_path": "claims/p7/PINNED_H4_STAR_TORUS_CIRCUIT_GIRTH_AND_P6_CUBIC_ESCAPE.md",
+      "source_blob": "609113570a26243735122cccaab2a091bac9462b"
+    },
+    {
+      "old_path": "PINNED_HAFNIAN_STAR_SYSTEM_AND_RATIONAL_EDGE_TOMOGRAPHY_THEOREM.md",
+      "new_path": "claims/arbitrary-order/PINNED_HAFNIAN_STAR_SYSTEM_AND_RATIONAL_EDGE_TOMOGRAPHY_THEOREM.md",
+      "source_blob": "60a411057752094e0c24f4aa203b1168ef18c17c"
+    },
+    {
+      "old_path": "PRINCIPAL_FOUR_HAFNIAN_GENERIC_EDGE_TOMOGRAPHY_AND_P7_SINGULAR_FIBRE_BOUNDARY.md",
+      "new_path": "claims/arbitrary-order/PRINCIPAL_FOUR_HAFNIAN_GENERIC_EDGE_TOMOGRAPHY_AND_P7_SINGULAR_FIBRE_BOUNDARY.md",
+      "source_blob": "27667b7c7c7ddc244a3698c3dd3419ad8fd6ff6b"
+    },
+    {
+      "old_path": "RESIDUAL_DEPTH_LOOP_HAFNIAN_CUMULANT_AND_TWO_PORT_DISCRIMINANT_THEOREM.md",
+      "new_path": "claims/arbitrary-order/RESIDUAL_DEPTH_LOOP_HAFNIAN_CUMULANT_AND_TWO_PORT_DISCRIMINANT_THEOREM.md",
+      "source_blob": "514407ee047bf372f9749ce9a0809080ce17e99a"
+    },
+    {
+      "old_path": "RESIDUAL_DEPTH_OBSERVABILITY_STAIRCASE_AND_ALL_DEPTH_KERNEL_THEOREM.md",
+      "new_path": "claims/p7/RESIDUAL_DEPTH_OBSERVABILITY_STAIRCASE_AND_ALL_DEPTH_KERNEL_THEOREM.md",
+      "source_blob": "f5948220dd134eacb4220ffd7b96ff3536852335"
+    },
+    {
+      "old_path": "RESIDUAL_RELATIVE_RESPONSE_POLYNOMIAL_DUAL_WICK_THEOREM.md",
+      "new_path": "claims/arbitrary-order/RESIDUAL_RELATIVE_RESPONSE_POLYNOMIAL_DUAL_WICK_THEOREM.md",
+      "source_blob": "902e22153e7bd203a67ca318ec8175764f4e02a7"
+    },
+    {
+      "old_path": "RESIDUAL_TWO_PORT_FACTOR_ANALYSIS_IDEAL_AND_FIVE_PORT_PENTAD_THEOREM.md",
+      "new_path": "claims/arbitrary-order/RESIDUAL_TWO_PORT_FACTOR_ANALYSIS_IDEAL_AND_FIVE_PORT_PENTAD_THEOREM.md",
+      "source_blob": "0834e2827dcf22d76f7e68503f15de412641886c"
+    },
+    {
+      "old_path": "RESIDUAL_ZEON_APOLAR_MULTI_LEG_CATALECTICANT_THEOREM.md",
+      "new_path": "claims/arbitrary-order/RESIDUAL_ZEON_APOLAR_MULTI_LEG_CATALECTICANT_THEOREM.md",
+      "source_blob": "6547f5f42256e877351d3ef6b80eac26f435c8f8"
+    },
+    {
+      "old_path": "ROOT_ARBITRARY_LOWER_MIXED_JET_COFACTOR_FRAME_NECESSITY.md",
+      "new_path": "claims/arbitrary-order/ROOT_ARBITRARY_LOWER_MIXED_JET_COFACTOR_FRAME_NECESSITY.md",
+      "source_blob": "cc37e5c36980ca86b15207065731192aaec70777"
+    },
+    {
+      "old_path": "ROOT_ARBITRARY_ORDER_TWO_ENDPOINT_FULL_JET_FRAME_SHARPNESS_NOGO.md",
+      "new_path": "claims/arbitrary-order/ROOT_ARBITRARY_ORDER_TWO_ENDPOINT_FULL_JET_FRAME_SHARPNESS_NOGO.md",
+      "source_blob": "742268cc06f888e59eecc1b93d335813fe5e492b"
+    },
+    {
+      "old_path": "ROOT_ARBITRARY_TWO_ENDPOINT_BINARY_COFACTOR_PORT_COMPATIBILITY_REALIZATION.md",
+      "new_path": "claims/arbitrary-order/ROOT_ARBITRARY_TWO_ENDPOINT_BINARY_COFACTOR_PORT_COMPATIBILITY_REALIZATION.md",
+      "source_blob": "f8512a271576cdcc8a2b9491aef7b3d06744397e"
+    },
+    {
+      "old_path": "ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md",
+      "new_path": "claims/arbitrary-order/ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md",
+      "source_blob": "79668631b317d12015b2a88a96f44c062f9e0fbe"
+    },
+    {
+      "old_path": "ROOT_AT_MOST_ONE_ENDPOINT_FULL_JET_AXIS_NECESSITY.md",
+      "new_path": "claims/arbitrary-order/ROOT_AT_MOST_ONE_ENDPOINT_FULL_JET_AXIS_NECESSITY.md",
+      "source_blob": "b8087cf5bcbd76179fcefa78f385b62120a51660"
+    },
+    {
+      "old_path": "ROOT_FINITE_ENDPOINT_FULL_JET_COFACTOR_SPAN_BOUND.md",
+      "new_path": "claims/arbitrary-order/ROOT_FINITE_ENDPOINT_FULL_JET_COFACTOR_SPAN_BOUND.md",
+      "source_blob": "a4dcb0849a9e0ee3ef1895b2f6d00b68d4619457"
+    },
+    {
+      "old_path": "ROOT_FINITE_NONROOT_COMPANION_ENDPOINT_COUNT_OBSTRUCTION.md",
+      "new_path": "claims/arbitrary-order/ROOT_FINITE_NONROOT_COMPANION_ENDPOINT_COUNT_OBSTRUCTION.md",
+      "source_blob": "1f8c4a60beadbd0a4ff45a623efafd6b702e3397"
+    },
+    {
+      "old_path": "ROOT_MIXED_SECOND_JET_QUOTIENT_RANK_CLASSIFICATION.md",
+      "new_path": "claims/arbitrary-order/ROOT_MIXED_SECOND_JET_QUOTIENT_RANK_CLASSIFICATION.md",
+      "source_blob": "5ac45cb0b2c9b5602e06f4472d9a96ad0c93d3b0"
+    },
+    {
+      "old_path": "ROOT_MIXED_SECOND_JET_RESONANCE_CLIQUE_CLASSIFICATION.md",
+      "new_path": "claims/arbitrary-order/ROOT_MIXED_SECOND_JET_RESONANCE_CLIQUE_CLASSIFICATION.md",
+      "source_blob": "2887f5cfe12f61043bf363a053211c657dc2c50c"
+    },
+    {
+      "old_path": "ROOT_RESONANT_MIXED_JET_PARITY_CLASSIFICATION.md",
+      "new_path": "claims/arbitrary-order/ROOT_RESONANT_MIXED_JET_PARITY_CLASSIFICATION.md",
+      "source_blob": "cf3575a4d983e0b6f10e2f785f86a15ed871451c"
+    },
+    {
+      "old_path": "ROOT_RESTRICTED_JET_COMPANION_MATCHING_SATURATION_NECESSITY.md",
+      "new_path": "claims/arbitrary-order/ROOT_RESTRICTED_JET_COMPANION_MATCHING_SATURATION_NECESSITY.md",
+      "source_blob": "e7172e54ffe3283c1b422b146ae8c1a850526f27"
+    },
+    {
+      "old_path": "ROOT_TWO_RESIDUAL_ONLY_COMPANION_THIRD_JET_OBSTRUCTION.md",
+      "new_path": "claims/arbitrary-order/ROOT_TWO_RESIDUAL_ONLY_COMPANION_THIRD_JET_OBSTRUCTION.md",
+      "source_blob": "0bcb07087f01c33006ffe79888b0c33d763c231c"
+    },
+    {
+      "old_path": "SEVEN_CORE_FIFTH_PERMANENTAL_COMPOUND_OBSERVABILITY_THEOREM.md",
+      "new_path": "claims/p7/SEVEN_CORE_FIFTH_PERMANENTAL_COMPOUND_OBSERVABILITY_THEOREM.md",
+      "source_blob": "f72a3207791613e45e7851378aa1385089634733"
+    },
+    {
+      "old_path": "SEVEN_LEAF_HAFNIAN_PROJECTED_VERONESE_RAMIFICATION_AND_STRUCTURED_TANGENT_THEOREM.md",
+      "new_path": "claims/p7/SEVEN_LEAF_HAFNIAN_PROJECTED_VERONESE_RAMIFICATION_AND_STRUCTURED_TANGENT_THEOREM.md",
+      "source_blob": "62359888ec1594c879172070269d5f098e219ab2"
+    },
+    {
+      "old_path": "SEVEN_LEAF_SWITCHED_CIRCULANT_PRIMITIVE_SQUARE_NO_GO_THEOREM.md",
+      "new_path": "claims/p7/SEVEN_LEAF_SWITCHED_CIRCULANT_PRIMITIVE_SQUARE_NO_GO_THEOREM.md",
+      "source_blob": "9590aab2505c90ac1d2afef84f9fbd0f1d2d9556"
+    },
+    {
+      "old_path": "SHALLOW_HAFNIAN_HESSIAN_TWO_DECK_INVERSION_AND_P7_LEGAL_SENSOR_INTERFACE.md",
+      "new_path": "claims/p7/SHALLOW_HAFNIAN_HESSIAN_TWO_DECK_INVERSION_AND_P7_LEGAL_SENSOR_INTERFACE.md",
+      "source_blob": "fb1d7c242b307e5995b8ee47d1320a8398794d99"
+    },
+    {
+      "old_path": "audit_block_square_zero_wick_completion.py",
+      "new_path": "claims/arbitrary-order/audit_block_square_zero_wick_completion.py",
+      "source_blob": "496d2a241781eb992c302fc9b0d0520a0eeefde4"
+    },
+    {
+      "old_path": "audit_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py",
+      "new_path": "claims/p7/audit_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py",
+      "source_blob": "6b3f9350a7fdd6d4cc7a384733bb33c0f1647eac"
+    },
+    {
+      "old_path": "audit_cross_root_coordinate_monomial_chart_holonomy_and_nine_chart_no_go.py",
+      "new_path": "claims/arbitrary-order/audit_cross_root_coordinate_monomial_chart_holonomy_and_nine_chart_no_go.py",
+      "source_blob": "6b353deaf24376670b5de7e07f75750e9279c022"
+    },
+    {
+      "old_path": "audit_legal_companion_simple_incidence_weighted_pullback_ideal.py",
+      "new_path": "claims/p7/audit_legal_companion_simple_incidence_weighted_pullback_ideal.py",
+      "source_blob": "efb8261aeb7898bdf511d66201779bdb0cfba46b"
+    },
+    {
+      "old_path": "audit_legal_five_port_pentad_window_root_budget_and_null_polar_sparsity.py",
+      "new_path": "claims/arbitrary-order/audit_legal_five_port_pentad_window_root_budget_and_null_polar_sparsity.py",
+      "source_blob": "06f32a00d556b4dc2abc4225dbc06b45f5e34a59"
+    },
+    {
+      "old_path": "audit_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py",
+      "new_path": "claims/p7/audit_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py",
+      "source_blob": "a3984b968b6df748ec4025c0c11a983a2e6d4eb5"
+    },
+    {
+      "old_path": "audit_lower_mixed_root_jet_deletion_label_tomography_and_squarefree_gauge.py",
+      "new_path": "claims/arbitrary-order/audit_lower_mixed_root_jet_deletion_label_tomography_and_squarefree_gauge.py",
+      "source_blob": "5d64f8f4932d4842f387020162b7f541ae18c513"
+    },
+    {
+      "old_path": "audit_majority_subset_internal_edge_ideal.py",
+      "new_path": "claims/arbitrary-order/audit_majority_subset_internal_edge_ideal.py",
+      "source_blob": "55405cdbc263dd3c0cff69cefea656055e340eb6"
+    },
+    {
+      "old_path": "audit_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py",
+      "new_path": "claims/arbitrary-order/audit_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py",
+      "source_blob": "020b3cc9c4bf9e353ebfe0858add8a59c843165e"
+    },
+    {
+      "old_path": "audit_nonprojective_root_pair_fan_selector_tomography.py",
+      "new_path": "claims/arbitrary-order/audit_nonprojective_root_pair_fan_selector_tomography.py",
+      "source_blob": "e1198ee496d0f7b31b09e9a958a6154e81e5abde"
+    },
+    {
+      "old_path": "audit_pinned_h4_star_torus_circuit_girth_and_p6_cubic_escape.py",
+      "new_path": "claims/p7/audit_pinned_h4_star_torus_circuit_girth_and_p6_cubic_escape.py",
+      "source_blob": "c2720b188047300405a7465403d2c3ba5f2f81b6"
+    },
+    {
+      "old_path": "audit_pinned_hafnian_star_system_and_rational_edge_tomography.py",
+      "new_path": "claims/arbitrary-order/audit_pinned_hafnian_star_system_and_rational_edge_tomography.py",
+      "source_blob": "b6aafe3f13d75d6e6ea0229617b4103579b89cd8"
+    },
+    {
+      "old_path": "audit_principal_four_hafnian_generic_edge_tomography.py",
+      "new_path": "claims/arbitrary-order/audit_principal_four_hafnian_generic_edge_tomography.py",
+      "source_blob": "67a91ae8c424328a3ddb19cefdd067fa0a073c62"
+    },
+    {
+      "old_path": "audit_residual_depth_loop_hafnian_cumulant_and_two_port_discriminant.py",
+      "new_path": "claims/arbitrary-order/audit_residual_depth_loop_hafnian_cumulant_and_two_port_discriminant.py",
+      "source_blob": "7908f464a45caeefbf99bdd4cc18c7ff94619164"
+    },
+    {
+      "old_path": "audit_residual_depth_observability_staircase_and_all_depth_kernel.py",
+      "new_path": "claims/p7/audit_residual_depth_observability_staircase_and_all_depth_kernel.py",
+      "source_blob": "917bf3bf4ad8ca07245f7c8e7ac855991450e204"
+    },
+    {
+      "old_path": "audit_residual_relative_response_polynomial_dual_wick.py",
+      "new_path": "claims/arbitrary-order/audit_residual_relative_response_polynomial_dual_wick.py",
+      "source_blob": "fa88065f1aade3568594b805e5077792bb515f43"
+    },
+    {
+      "old_path": "audit_residual_two_port_factor_analysis_ideal_and_five_port_pentad.py",
+      "new_path": "claims/arbitrary-order/audit_residual_two_port_factor_analysis_ideal_and_five_port_pentad.py",
+      "source_blob": "d6699138b2872131543aa57fac9232a64a22ab3b"
+    },
+    {
+      "old_path": "audit_residual_zeon_apolar_multi_leg_catalecticant.py",
+      "new_path": "claims/arbitrary-order/audit_residual_zeon_apolar_multi_leg_catalecticant.py",
+      "source_blob": "a4f7edd9292abde701e14bce4a9f00695c4bc255"
+    },
+    {
+      "old_path": "audit_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py",
+      "new_path": "claims/arbitrary-order/audit_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py",
+      "source_blob": "6be20d776d463a71e49526d4869d04c6521b9563"
+    },
+    {
+      "old_path": "audit_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py",
+      "new_path": "claims/arbitrary-order/audit_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py",
+      "source_blob": "1d81142b6f28aba8e2c023ff89c02ad61a1b3022"
+    },
+    {
+      "old_path": "audit_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py",
+      "new_path": "claims/arbitrary-order/audit_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py",
+      "source_blob": "283add9cfee554f5b701767a16efa2d6a7d1118f"
+    },
+    {
+      "old_path": "audit_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py",
+      "new_path": "claims/arbitrary-order/audit_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py",
+      "source_blob": "8f2071f5a22d3e2c3933f4d060c6f49f1ad9a6ab"
+    },
+    {
+      "old_path": "audit_root_at_most_one_endpoint_full_jet_axis_necessity.py",
+      "new_path": "claims/arbitrary-order/audit_root_at_most_one_endpoint_full_jet_axis_necessity.py",
+      "source_blob": "1b6604639bf67df1b309d622bcd8bc0b91f4f26e"
+    },
+    {
+      "old_path": "audit_root_finite_endpoint_full_jet_cofactor_span_bound.py",
+      "new_path": "claims/arbitrary-order/audit_root_finite_endpoint_full_jet_cofactor_span_bound.py",
+      "source_blob": "2f4d26d01d4e401c9976791c1779b86c81a60eed"
+    },
+    {
+      "old_path": "audit_root_finite_nonroot_companion_endpoint_count_obstruction.py",
+      "new_path": "claims/arbitrary-order/audit_root_finite_nonroot_companion_endpoint_count_obstruction.py",
+      "source_blob": "a858b1bb19fef0867074a31877aadb81bd7b2727"
+    },
+    {
+      "old_path": "audit_root_mixed_second_jet_quotient_rank_classification.py",
+      "new_path": "claims/arbitrary-order/audit_root_mixed_second_jet_quotient_rank_classification.py",
+      "source_blob": "53db0eba3f2c4d70b3e89abf79e1e9acc1ad3c34"
+    },
+    {
+      "old_path": "audit_root_mixed_second_jet_resonance_clique_classification.py",
+      "new_path": "claims/arbitrary-order/audit_root_mixed_second_jet_resonance_clique_classification.py",
+      "source_blob": "b8e6abbe357593a25e2cf932e839c74b153194e0"
+    },
+    {
+      "old_path": "audit_root_resonant_mixed_jet_parity_classification.py",
+      "new_path": "claims/arbitrary-order/audit_root_resonant_mixed_jet_parity_classification.py",
+      "source_blob": "e7e161a02fd3aea9dd300f3d00a7d6f7dd57fc03"
+    },
+    {
+      "old_path": "audit_root_restricted_jet_companion_matching_saturation_necessity.py",
+      "new_path": "claims/arbitrary-order/audit_root_restricted_jet_companion_matching_saturation_necessity.py",
+      "source_blob": "983166f69edb975cd7e035905422df047c13da74"
+    },
+    {
+      "old_path": "audit_root_two_residual_only_companion_third_jet_obstruction.py",
+      "new_path": "claims/arbitrary-order/audit_root_two_residual_only_companion_third_jet_obstruction.py",
+      "source_blob": "4c3f1ea85f6aa58dd1a28da77a6dbb7cf0ffa85c"
+    },
+    {
+      "old_path": "audit_seven_core_fifth_permanental_compound_observability.py",
+      "new_path": "claims/p7/audit_seven_core_fifth_permanental_compound_observability.py",
+      "source_blob": "cfed922934ee8f76fff53bfb913eab0a00245cb9"
+    },
+    {
+      "old_path": "audit_seven_leaf_hafnian_projected_veronese_ramification.py",
+      "new_path": "claims/p7/audit_seven_leaf_hafnian_projected_veronese_ramification.py",
+      "source_blob": "dbf6ab0a4ffd30f2cd759ee0a559796077b52dd0"
+    },
+    {
+      "old_path": "audit_seven_leaf_switched_circulant_primitive_square_no_go.py",
+      "new_path": "claims/p7/audit_seven_leaf_switched_circulant_primitive_square_no_go.py",
+      "source_blob": "2781628ac9ea6ec7238d41490b08a9b4cd6ba6b9"
+    },
+    {
+      "old_path": "audit_shallow_hafnian_hessian_two_deck_inversion_and_p7_legal_sensor_interface.py",
+      "new_path": "claims/p7/audit_shallow_hafnian_hessian_two_deck_inversion_and_p7_legal_sensor_interface.py",
+      "source_blob": "d0e3fdc12f44a2561cd04d4708ff7eb011274a13"
+    },
+    {
+      "old_path": "verify_block_square_zero_wick_completion.py",
+      "new_path": "claims/arbitrary-order/verify_block_square_zero_wick_completion.py",
+      "source_blob": "e7552205a357d6d1c9af02f32e074eddf6916331"
+    },
+    {
+      "old_path": "verify_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py",
+      "new_path": "claims/p7/verify_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py",
+      "source_blob": "f38579eb893f62389f5507b41d9391b4abd33716"
+    },
+    {
+      "old_path": "verify_cross_root_coordinate_monomial_chart_holonomy_and_nine_chart_no_go.py",
+      "new_path": "claims/arbitrary-order/verify_cross_root_coordinate_monomial_chart_holonomy_and_nine_chart_no_go.py",
+      "source_blob": "037589199ce18446c85046f075de460f5312b1d4"
+    },
+    {
+      "old_path": "verify_legal_companion_simple_incidence_weighted_pullback_ideal.py",
+      "new_path": "claims/p7/verify_legal_companion_simple_incidence_weighted_pullback_ideal.py",
+      "source_blob": "3f8fa312eaa1a5f865ee86bb7c84428b2164c646"
+    },
+    {
+      "old_path": "verify_legal_five_port_pentad_window_root_budget_and_null_polar_sparsity.py",
+      "new_path": "claims/arbitrary-order/verify_legal_five_port_pentad_window_root_budget_and_null_polar_sparsity.py",
+      "source_blob": "ac599ca251f6e6203076bdb092a286524500a72b"
+    },
+    {
+      "old_path": "verify_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py",
+      "new_path": "claims/p7/verify_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py",
+      "source_blob": "33622fde30d21a8df7b5eade9688ef07589ba40f"
+    },
+    {
+      "old_path": "verify_lower_mixed_root_jet_deletion_label_tomography_and_squarefree_gauge.py",
+      "new_path": "claims/arbitrary-order/verify_lower_mixed_root_jet_deletion_label_tomography_and_squarefree_gauge.py",
+      "source_blob": "12a5c0b8554c918cdf08c9692ec20e83130dc46e"
+    },
+    {
+      "old_path": "verify_majority_subset_internal_edge_ideal.py",
+      "new_path": "claims/arbitrary-order/verify_majority_subset_internal_edge_ideal.py",
+      "source_blob": "a238de0f869a7623789edee1c9075b3ef0955694"
+    },
+    {
+      "old_path": "verify_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py",
+      "new_path": "claims/arbitrary-order/verify_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py",
+      "source_blob": "8e5f219e1b8ef132ff0ed2f5d0873c677a5b92ea"
+    },
+    {
+      "old_path": "verify_nonprojective_root_pair_fan_selector_tomography.py",
+      "new_path": "claims/arbitrary-order/verify_nonprojective_root_pair_fan_selector_tomography.py",
+      "source_blob": "10a51648ddcdf9939a850921a36bca94cea1a623"
+    },
+    {
+      "old_path": "verify_pinned_h4_star_torus_circuit_girth_and_p6_cubic_escape.py",
+      "new_path": "claims/p7/verify_pinned_h4_star_torus_circuit_girth_and_p6_cubic_escape.py",
+      "source_blob": "fd54fb38ff669a432507aaa2a5b19ae84f7e1444"
+    },
+    {
+      "old_path": "verify_pinned_hafnian_star_system_and_rational_edge_tomography.py",
+      "new_path": "claims/arbitrary-order/verify_pinned_hafnian_star_system_and_rational_edge_tomography.py",
+      "source_blob": "8d4548c895615061997163f99fa5fa01b0e7f32b"
+    },
+    {
+      "old_path": "verify_principal_four_hafnian_generic_edge_tomography.py",
+      "new_path": "claims/arbitrary-order/verify_principal_four_hafnian_generic_edge_tomography.py",
+      "source_blob": "e347c7aea4bc5d3909012c2b2bb16de8438eb5b6"
+    },
+    {
+      "old_path": "verify_residual_depth_loop_hafnian_cumulant_and_two_port_discriminant.py",
+      "new_path": "claims/arbitrary-order/verify_residual_depth_loop_hafnian_cumulant_and_two_port_discriminant.py",
+      "source_blob": "f3862a5d1a097c84d91b77b170007c144fe69cbf"
+    },
+    {
+      "old_path": "verify_residual_depth_observability_staircase_and_all_depth_kernel.py",
+      "new_path": "claims/p7/verify_residual_depth_observability_staircase_and_all_depth_kernel.py",
+      "source_blob": "776be6ed391fa6be65eb839f2084f69936ab4d62"
+    },
+    {
+      "old_path": "verify_residual_relative_response_polynomial_dual_wick.py",
+      "new_path": "claims/arbitrary-order/verify_residual_relative_response_polynomial_dual_wick.py",
+      "source_blob": "aaf8cfde286cac157f6f8feef9be08e31ad0ef54"
+    },
+    {
+      "old_path": "verify_residual_two_port_factor_analysis_ideal_and_five_port_pentad.py",
+      "new_path": "claims/arbitrary-order/verify_residual_two_port_factor_analysis_ideal_and_five_port_pentad.py",
+      "source_blob": "6a94ea4ce9d57ebf8362e3ae933b720d25e885d4"
+    },
+    {
+      "old_path": "verify_residual_zeon_apolar_multi_leg_catalecticant.py",
+      "new_path": "claims/arbitrary-order/verify_residual_zeon_apolar_multi_leg_catalecticant.py",
+      "source_blob": "dbc179ab479c18d28736241d18e14791f978d8f2"
+    },
+    {
+      "old_path": "verify_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py",
+      "new_path": "claims/arbitrary-order/verify_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py",
+      "source_blob": "43ea9164dba28bb85db29b2d1c4796eb1de2ea03"
+    },
+    {
+      "old_path": "verify_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py",
+      "new_path": "claims/arbitrary-order/verify_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py",
+      "source_blob": "2a09b6216a0d7bb65f2e1a202b23df0cb8bc5694"
+    },
+    {
+      "old_path": "verify_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py",
+      "new_path": "claims/arbitrary-order/verify_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py",
+      "source_blob": "9bf9faeab8c4d62f5904cb66c241c00127d11c29"
+    },
+    {
+      "old_path": "verify_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py",
+      "new_path": "claims/arbitrary-order/verify_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py",
+      "source_blob": "4daf7d3dcc7b869284cfe7c49db9d86b546b9ec5"
+    },
+    {
+      "old_path": "verify_root_at_most_one_endpoint_full_jet_axis_necessity.py",
+      "new_path": "claims/arbitrary-order/verify_root_at_most_one_endpoint_full_jet_axis_necessity.py",
+      "source_blob": "2d3c4c8b6000f946be863ae1fd6dd848fc5fc86e"
+    },
+    {
+      "old_path": "verify_root_finite_endpoint_full_jet_cofactor_span_bound.py",
+      "new_path": "claims/arbitrary-order/verify_root_finite_endpoint_full_jet_cofactor_span_bound.py",
+      "source_blob": "f291aa8c6f3334f75c8e40057782d9b12b46dc27"
+    },
+    {
+      "old_path": "verify_root_finite_nonroot_companion_endpoint_count_obstruction.py",
+      "new_path": "claims/arbitrary-order/verify_root_finite_nonroot_companion_endpoint_count_obstruction.py",
+      "source_blob": "007fbc8dc8f061b395d1000a7c8c1ea97fb4f912"
+    },
+    {
+      "old_path": "verify_root_mixed_second_jet_quotient_rank_classification.py",
+      "new_path": "claims/arbitrary-order/verify_root_mixed_second_jet_quotient_rank_classification.py",
+      "source_blob": "ce9e810cff6bf294abf28a72b5cfa78d82726729"
+    },
+    {
+      "old_path": "verify_root_mixed_second_jet_resonance_clique_classification.py",
+      "new_path": "claims/arbitrary-order/verify_root_mixed_second_jet_resonance_clique_classification.py",
+      "source_blob": "17c687c3b13015f41f84ad7dcdcb59edc94b1213"
+    },
+    {
+      "old_path": "verify_root_resonant_mixed_jet_parity_classification.py",
+      "new_path": "claims/arbitrary-order/verify_root_resonant_mixed_jet_parity_classification.py",
+      "source_blob": "dbc89389a2c1196651e0a21a3132dcb7fa56051c"
+    },
+    {
+      "old_path": "verify_root_restricted_jet_companion_matching_saturation_necessity.py",
+      "new_path": "claims/arbitrary-order/verify_root_restricted_jet_companion_matching_saturation_necessity.py",
+      "source_blob": "d5505b90ddde5bdb093b467ae22cfcdf4e4ebb0d"
+    },
+    {
+      "old_path": "verify_root_two_residual_only_companion_third_jet_obstruction.py",
+      "new_path": "claims/arbitrary-order/verify_root_two_residual_only_companion_third_jet_obstruction.py",
+      "source_blob": "aab8d8698b5fc62869dd7ca7e58eea09864fb5ab"
+    },
+    {
+      "old_path": "verify_seven_core_fifth_permanental_compound_observability.py",
+      "new_path": "claims/p7/verify_seven_core_fifth_permanental_compound_observability.py",
+      "source_blob": "b2cffe68129d5a3d20e00af4c56d19ad3ed28153"
+    },
+    {
+      "old_path": "verify_seven_leaf_hafnian_projected_veronese_ramification.py",
+      "new_path": "claims/p7/verify_seven_leaf_hafnian_projected_veronese_ramification.py",
+      "source_blob": "57854b931ac166206e62bb8f8d4c5b2cd4b06851"
+    },
+    {
+      "old_path": "verify_seven_leaf_switched_circulant_primitive_square_no_go.py",
+      "new_path": "claims/p7/verify_seven_leaf_switched_circulant_primitive_square_no_go.py",
+      "source_blob": "8d6b1591d2be5c289a408a33adb6fcad486af210"
+    },
+    {
+      "old_path": "verify_shallow_hafnian_hessian_two_deck_inversion_and_p7_legal_sensor_interface.py",
+      "new_path": "claims/p7/verify_shallow_hafnian_hessian_two_deck_inversion_and_p7_legal_sensor_interface.py",
+      "source_blob": "4a0defb6b6910b8e44498b5d8b89067d3edcbd98"
+    }
+  ],
+  "rationale": "Stage 30 moves 34 intact claim/verifier/audit triples from root to their proof-obligation owners: 25 triples to claims/arbitrary-order and 9 triples to claims/p7. Layout and paths only; all mathematical, lifecycle, provenance, and audit-independence semantics remain unchanged.",
+  "notes": "Exact owner-directed Tier-2 root-exit tranche. Two fresh semantic and mechanical referees are required before execution. Global Krenn-Gu remains UNRESOLVED."
+}
