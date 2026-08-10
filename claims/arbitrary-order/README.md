@@ -75,6 +75,17 @@ Hall quotas.  Higher mixed-root equations, genuinely unfactorized outside
 blocks, and the all-balanced rank-drop witness locus remain open.
 
 The
+[`balanced two-open-root gauge boundary`](BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md)
+computes the next contraction exactly.  Two open roots create five disjoint
+matching sectors.  On the affine absorption cell their full variation is a
+defect-row permanent plus every old-root-companion term, so projective
+constancy alone proves neither detection nor invisibility.  At tight surplus
+a one-mode outside star admits an exact sign-reversing involution preserving
+the complete graph tensor.  The star result is a conditional physical gauge,
+not a construction of a tight layer or a hypothetical witness; higher
+surplus and unfactorized detection remain open.
+
+The
 [`rigid-colour boundary theorem`](RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md)
 sharpens that one-root branch.  It proves universal near-monochromatic deck,
 two-point cross-cycle, and minimal-deviation cycle identities.  Under the
