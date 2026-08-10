@@ -1,6 +1,6 @@
 # Phase R3 exact root-end-state enforcement
 
-Status: **ACTIVATION CANDIDATE — LOCAL VALIDATION PASSED; FINAL REVIEW PENDING**
+Status: **REVIEWED FOR ACTIVATION — HOSTED CI AND MERGE PENDING**
 
 This is a layout-policy tranche, not a scientific-result tranche.  It changes
 no theorem, scope, lifecycle, proof obligation, certificate meaning, evidence
@@ -75,6 +75,13 @@ H31 reconciliation tests, fourteen lattice tests, and five Stage-33
 inverse-taper guards passed.  The shared rewriter returned an exact zero-change
 fixed point and `git diff --exit-code` confirmed no unstaged repair.
 
-Release still requires fresh exact-head semantic and mechanical acceptance,
-exact-head hosted CI, a merge commit, and a green push workflow for that exact
-merged-main SHA.
+Fresh semantic and mechanical referees accepted exact clean candidate
+`cf0746ad3cf80e68fa6204ce29aa87e8a02c3f2d` with no findings.  The semantic
+review confirmed that ledger status remains `partial_curated`, global status
+remains `UNRESOLVED`, and the only ledger changes are the three necessary
+README hash refreshes.  The mechanical review independently replayed the full
+bounded floor and adversarially confirmed default strictness, environment
+non-bypass, allowlist-capacity failure, and the allowed entrypoint exception.
+
+Release still requires exact-head hosted CI, a merge commit, and a green push
+workflow for that exact merged-main SHA.
