@@ -1,7 +1,7 @@
 # Layout migration Stage 28 report
 
-Status: **MOVE AND REPAIR COMPLETE; LOCAL VALIDATION PASS; PUBLICATION AND CI
-PENDING.**
+Status: **MOVE, REPAIR, PUBLICATION, MERGE, AND MERGED-MAIN VALIDATION
+COMPLETE.**
 
 The global Krenn-Gu conjecture remains **UNRESOLVED**. Stage 28 changes
 filesystem ownership, executable paths, navigation, and mechanically derived
@@ -9,8 +9,12 @@ catalog/ledger path metadata. It does not change a theorem, quantifier,
 finite-case bound, lifecycle, evidence role, formalization status, owner-gated
 conflict, or global status.
 
-The repair checkpoint is index-complete and locally validated. Publication,
-hosted CI, and merge remain pending and are not inferred from local results.
+The index-complete repair checkpoint passed the local validation floor, was
+published as pull request #62, and merged at
+`1544a930ddfc7012f2814873ff950fe271ecb965`. The pull-request head
+`ff33c09c09408d6321c36ce5526d67555e5a9192` and merged-main commit have
+the identical tree `66782a81071f1babed9487439de2e9876f028b5a`. Hosted hygiene CI
+passed both the pull-request head and merged-main push.
 
 ## Known transaction checkpoints
 
@@ -22,6 +26,8 @@ hosted CI, and merge remain pending and are not inferred from local results.
 | migration-aware link/command rewrite checkpoint | `d25cd2ad357827370baae5cfaaffd695a7573cd3` |
 | final import/path/provenance repair | `da48c9ac1bd60c804b141e0f970deb5740d539ae` |
 | validated repair tree before this evidence-only report pin | `50a2a33fca0a94e35baa1a486da58b01ae0699c0` |
+| pull-request head | `ff33c09c09408d6321c36ce5526d67555e5a9192`, tree `66782a81071f1babed9487439de2e9876f028b5a` |
+| merged Stage 28 | `1544a930ddfc7012f2814873ff950fe271ecb965`, tree `66782a81071f1babed9487439de2e9876f028b5a` |
 
 Reviewed merged-main base:
 `5726180037986d27b9e445ee058e6c221b6d2d03`, tree
@@ -168,5 +174,6 @@ The index-complete local floor passes:
 | `git diff --exit-code` and cached diff check | PASS |
 
 Broad SAT, Singular, sampling, or theorem reruns were neither required nor
-performed. The remaining evidence is publication-only: final commit/tree,
-remote branch/PR, hosted CI, exact-head merge, and merged-main validation.
+performed. Pull request #62 merged exactly as recorded above, and hosted
+hygiene CI passed on both its exact head and the resulting merged-main commit.
+No scientific conclusion is inferred from publication or CI.
