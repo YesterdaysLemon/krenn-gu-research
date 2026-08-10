@@ -8,6 +8,19 @@ one-marked rank-four conditions covers the genuine shared-extension open.
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "src"))
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/p5/h22/component19-p0-ordinary-obstruction-open")
+
+import audit_p5_h22_component19_p0_ordinary_obstruction_open as base
+
+
+
 import argparse
 import itertools
 import shutil
@@ -15,7 +28,6 @@ import subprocess
 
 import sympy as sp
 
-import audit_p5_h22_component19_p0_ordinary_obstruction_open as base
 
 
 def singular(expr: sp.Expr) -> str:

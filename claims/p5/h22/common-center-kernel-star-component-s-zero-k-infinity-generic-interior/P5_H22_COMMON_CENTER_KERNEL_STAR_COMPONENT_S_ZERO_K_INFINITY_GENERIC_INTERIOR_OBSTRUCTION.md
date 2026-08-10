@@ -188,8 +188,8 @@ complete integral closure of the finite corner.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_generic_interior_obstruction.py
-uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_generic_interior_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-generic-interior/verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_generic_interior_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-generic-interior/audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_generic_interior_obstruction.py
 ```
 
 The primary uses the repository contraction builder and checks the pure and

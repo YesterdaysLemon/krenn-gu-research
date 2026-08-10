@@ -79,10 +79,10 @@ Run:
 
 ```text
 uv run --with sympy python \
-  verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_weights.py
+  claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-weights/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_weights.py
 
 uv run --with sympy python \
-  audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_weights.py
+  claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a-exceptional-weights/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_a_exceptional_weights.py
 ```
 
 The primary verifier reconstructs the certified component model.  The audit

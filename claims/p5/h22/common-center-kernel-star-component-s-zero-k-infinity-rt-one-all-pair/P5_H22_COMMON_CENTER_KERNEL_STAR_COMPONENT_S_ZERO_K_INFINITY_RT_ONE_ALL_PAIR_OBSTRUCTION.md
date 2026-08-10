@@ -189,8 +189,8 @@ claim.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_rt_one_all_pair_obstruction.py
-uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_rt_one_all_pair_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-rt-one-all-pair/verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_rt_one_all_pair_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-rt-one-all-pair/audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_rt_one_all_pair_obstruction.py
 ```
 
 The primary uses the repository contraction builder and checks the pure

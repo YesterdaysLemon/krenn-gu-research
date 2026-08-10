@@ -25,8 +25,8 @@ inputs:
   audit_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_verifier.py: 5c851665189354c5afac5db4d5a3380a6d8a824767d86f1646a3a83af7cbcc5e
 method: source-to-stratum coverage map, exact support-mask calculation for actual embedded-P3 arcs, frozen-byte audit, and replay of the new endpoint verifier
 command: |
-  uv run --with sympy python audit_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_verifier.py
-  python audit_p5_h22_p_plus_q_diagonal_dvr_coverage.py
+  uv run --with sympy python claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_verifier.py
+  python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_p_plus_q_diagonal_dvr_coverage.py
 outputs:
   p5_h22_p_plus_q_diagonal_dvr_coverage.json: 874272d3d86ec635f1a0bd854b7078b8f91a2323aa1f7ebfb219406680549a6e
   audit_p5_h22_p_plus_q_diagonal_dvr_coverage.py: 803577222c9ebae932581a6166514e469045e72ef7e4e0ecbd9d6944704ab1bb
@@ -107,7 +107,7 @@ The exact replay
 
 ```text
 uv run --with sympy python \
-  audit_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_verifier.py
+  claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_verifier.py
 ```
 
 returned `status: pass`, `claim_label: VERIFIED`, and
@@ -153,7 +153,7 @@ exhaustiveness, and the global Krenn--Gu conjecture are outside scope.
 ## Coverage replay
 
 ```text
-python audit_p5_h22_p_plus_q_diagonal_dvr_coverage.py
+python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_p_plus_q_diagonal_dvr_coverage.py
 ```
 
 The replay checks all 16 frozen dependency hashes and status markers, checks

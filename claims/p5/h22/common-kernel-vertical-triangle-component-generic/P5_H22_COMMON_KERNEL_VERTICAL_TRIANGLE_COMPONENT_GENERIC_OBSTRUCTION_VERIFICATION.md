@@ -172,7 +172,7 @@ component exhaustiveness, establish the local-to-global reduction, construct a
 prize graph, or resolve the global Krenn–Gu conjecture.
 
 ```text
-uv run --with sympy python audit_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py
+uv run --with sympy python claims/p5/h22/common-kernel-vertical-triangle-component-generic/audit_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py
 uv run --with ruff ruff check audit_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py
 python -m py_compile audit_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py
 python -m json.tool p5_h22_common_kernel_vertical_triangle_component_generic_certificate.json

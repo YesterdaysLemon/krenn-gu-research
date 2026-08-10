@@ -100,8 +100,8 @@ proving (3) empty.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_f2_f8_h3_slope_intersection_obstruction.py
-uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_f2_f8_h3_slope_intersection_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-f2-f8-h3-slope-intersection/verify_p5_h22_unequal_complement_common_kernel_component_d23_f2_f8_h3_slope_intersection_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-f2-f8-h3-slope-intersection/audit_p5_h22_unequal_complement_common_kernel_component_d23_f2_f8_h3_slope_intersection_obstruction.py
 ```
 
 The primary uses exact fraction-field `DomainMatrix` determinants.  The audit

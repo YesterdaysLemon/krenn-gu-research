@@ -9,12 +9,6 @@ from pathlib import Path
 
 import sympy as sp
 
-from derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate import (
-    build_model,
-)
-from verify_p5_h22_unequal_complement_common_kernel_component_d23_h0_zero_residual_obstruction import (
-    residual_polynomials,
-)
 import sys
 from pathlib import Path
 
@@ -23,14 +17,21 @@ for _p in Path(__file__).resolve().parents:
         sys.path.insert(0, str(_p / "src"))
         break
 from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+from krenn_gu.p5_weighted_h22_contraction import build_model
 
 REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/p5/h22/unequal-complement-common-kernel-component-d23-h0-zero-residual")
 expose_claim_package(REPO_ROOT, "claims/p5/h31/unequal-complement-common-kernel")
 
+from verify_p5_h22_unequal_complement_common_kernel_component_d23_h0_zero_residual_obstruction import (
+    residual_polynomials,
+)
 from verify_p5_h31_unequal_complement_common_kernel_component_generic_obstruction import (
     component_rows,
     shifted,
 )
+
+
 
 ROOT = Path(__file__).resolve().parent
 NOTE = ROOT / (

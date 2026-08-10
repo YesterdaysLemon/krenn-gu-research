@@ -7,7 +7,7 @@
 component is empty for every affine marking \((h_0,h_1,h_2,h_3)\).
 
 This closes the intrinsic \(\lambda=1\) wall left by
-[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md`](../../../../P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md).
+[`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md`](../common-center-kernel-star-component-finite-all-marking-dense-open-supplement/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_FINITE_ALL_MARKING_DENSE_OPEN_SUPPLEMENT.md).
 It does not close that supplement's other explicit residual intersections,
 the full generic finite fibre, or the global Krenn--Gu conjecture.
 

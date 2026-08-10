@@ -247,8 +247,8 @@ four unit-parameter lines.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h22_component23_s_zero_k_infinity_unit_parameter_lines_obstruction.py
-uv run --with sympy python audit_p5_h22_component23_s_zero_k_infinity_unit_parameter_lines_obstruction.py
+uv run --with sympy python claims/p5/h22/component23-s-zero-k-infinity-unit-parameter-lines/verify_p5_h22_component23_s_zero_k_infinity_unit_parameter_lines_obstruction.py
+uv run --with sympy python claims/p5/h22/component23-s-zero-k-infinity-unit-parameter-lines/audit_p5_h22_component23_s_zero_k_infinity_unit_parameter_lines_obstruction.py
 ```
 
 The primary checks the complete ordinary branch cover, exceptional-weight

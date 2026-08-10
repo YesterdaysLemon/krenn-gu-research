@@ -159,15 +159,15 @@ counterexample to the conjecture.
 Replay the dependency first:
 
 ```powershell
-uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_cofactor_open_obstruction.py
-uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_cofactor_open_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-h0-nonzero-residual-cofactor-open/verify_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_cofactor_open_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-h0-nonzero-residual-cofactor-open/audit_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_cofactor_open_obstruction.py
 ```
 
 Then run:
 
 ```powershell
-uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_second_cofactor_cover_obstruction.py
-uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_second_cofactor_cover_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-h0-nonzero-residual-second-cofactor-cover/verify_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_second_cofactor_cover_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-h0-nonzero-residual-second-cofactor-cover/audit_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_second_cofactor_cover_obstruction.py
 ```
 
 The primary reconstructs the residual and both mixed minors with repository

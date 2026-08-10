@@ -3,6 +3,15 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import hashlib
 import itertools
 import json
@@ -22,9 +31,9 @@ REPORT = ROOT / (
 CERTIFICATE = ROOT / (
     "p5_h22_coincident_support_rank_one_star_component_generic_certificate.json"
 )
-COMPONENT = ROOT / "claims/p4/classifications/star/coincident-support-rank-one-star/P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md"
-H31 = ROOT / "claims/p5/h31/coincident-support-rank-one-star/P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
-H22_DEFINITION = ROOT / "claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md"
+COMPONENT = REPO_ROOT / "claims/p4/classifications/star/coincident-support-rank-one-star/P4_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT.md"
+H31 = REPO_ROOT / "claims/p5/h31/coincident-support-rank-one-star/P5_H31_COINCIDENT_SUPPORT_RANK_ONE_STAR_COMPONENT_GENERIC_OBSTRUCTION.md"
+H22_DEFINITION = REPO_ROOT / "claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md"
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 MIXED = WORDS[1:-1]
@@ -374,7 +383,7 @@ def main():
             H22_DEFINITION.name: sha256(H22_DEFINITION),
         },
         "method": certificate["method"],
-        "command": f"uv run --with sympy python {SCRIPT.name}",
+        "command": f"uv run --with sympy python {SCRIPT.relative_to(REPO_ROOT).as_posix()}",
         "outputs": {
             SCRIPT.name: sha256(SCRIPT),
             CERTIFICATE.name: sha256(CERTIFICATE),

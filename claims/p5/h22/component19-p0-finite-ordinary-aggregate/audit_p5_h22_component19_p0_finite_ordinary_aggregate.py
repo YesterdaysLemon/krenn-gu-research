@@ -3,6 +3,15 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import hashlib
 import json
 import subprocess
@@ -18,43 +27,43 @@ REPORT = ROOT / "P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md
 
 ARTIFACTS = {
     "generic_open": (
-        "audit_p5_h22_component19_p0_ordinary_obstruction_open.py",
-        "P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md",
+        "claims/p5/h22/component19-p0-ordinary-obstruction-open/audit_p5_h22_component19_p0_ordinary_obstruction_open.py",
+        "claims/p5/h22/component19-p0-ordinary-obstruction-open/P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md",
         "q*phi*(q-phi)*(q^2-1)*(phi^2-1)*((q*phi)^2-1)!=0",
     ),
     "qphi_equals_one": (
-        "audit_p5_h22_component19_p0_qphi_equals_one.py",
-        "P5_H22_COMPONENT19_P0_QPHI_ONE_INDEPENDENT_VERIFICATION.md",
+        "claims/p5/h22/component19-p0-qphi-one-independent/audit_p5_h22_component19_p0_qphi_equals_one.py",
+        "claims/p5/h22/component19-p0-qphi-one-independent/P5_H22_COMPONENT19_P0_QPHI_ONE_INDEPENDENT_VERIFICATION.md",
         "q*phi=1",
     ),
     "qphi_minus_one_axes": (
-        "audit_p5_h22_component19_p0_qphi_minus_one_axes.py",
-        "P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_AXES_VERIFICATION.md",
+        "claims/p5/h22/component19-p0-qphi-minus-one-axes/audit_p5_h22_component19_p0_qphi_minus_one_axes.py",
+        "claims/p5/h22/component19-p0-qphi-minus-one-axes/P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_AXES_VERIFICATION.md",
         "q*phi=-1",
     ),
     "qphi_minus_one_axis_compatibility": (
-        "audit_p5_h22_component19_p0_qphi_minus_one_ternary_compatibility.py",
-        "P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_TERNARY_COMPATIBILITY_OBSTRUCTION_VERIFICATION.md",
+        "claims/p5/h22/component19-p0-qphi-minus-one-ternary-compatibility/audit_p5_h22_component19_p0_qphi_minus_one_ternary_compatibility.py",
+        "claims/p5/h22/component19-p0-qphi-minus-one-ternary-compatibility/P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_TERNARY_COMPATIBILITY_OBSTRUCTION_VERIFICATION.md",
         "q=-1/phi",
     ),
     "qphi_minus_one_phi_crossings": (
-        "audit_p5_h22_component19_p0_qphi_minus_one_phi_endpoints.py",
-        "P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_PHI_ENDPOINTS_VERIFICATION.md",
+        "claims/p5/h22/component19-p0-qphi-minus-one-phi-endpoints/audit_p5_h22_component19_p0_qphi_minus_one_phi_endpoints.py",
+        "claims/p5/h22/component19-p0-qphi-minus-one-phi-endpoints/P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_PHI_ENDPOINTS_VERIFICATION.md",
         "phi^2=1",
     ),
     "qphi_minus_one_infinity": (
-        "audit_p5_h22_component19_p0_qphim1_infinity_no_import.py",
-        "P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md",
+        "claims/p5/h22/component19-p0-qphim1-infinity-no-import/audit_p5_h22_component19_p0_qphim1_infinity_no_import.py",
+        "claims/p5/h22/component19-p0-qphim1-infinity-no-import/P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md",
         "weight-at-infinity",
     ),
     "q_endpoints": (
-        "audit_p5_h22_component19_p0_q_endpoints_no_import.py",
-        "P5_H22_COMPONENT19_P0_Q_ENDPOINTS_NO_IMPORT_VERIFICATION.md",
+        "claims/p5/h22/component19-p0-q-endpoints-no-import/audit_p5_h22_component19_p0_q_endpoints_no_import.py",
+        "claims/p5/h22/component19-p0-q-endpoints-no-import/P5_H22_COMPONENT19_P0_Q_ENDPOINTS_NO_IMPORT_VERIFICATION.md",
         "q=+/-1",
     ),
     "phi_endpoints": (
-        "audit_p5_h22_component19_p0_phi_endpoints_no_import.py",
-        "P5_H22_COMPONENT19_P0_PHI_ENDPOINTS_NO_IMPORT_VERIFICATION.md",
+        "claims/p5/h22/component19-p0-phi-endpoints-no-import/audit_p5_h22_component19_p0_phi_endpoints_no_import.py",
+        "claims/p5/h22/component19-p0-phi-endpoints-no-import/P5_H22_COMPONENT19_P0_PHI_ENDPOINTS_NO_IMPORT_VERIFICATION.md",
         "phi=+/-1",
     ),
 }
@@ -67,7 +76,7 @@ def sha256(path):
 def git_commit():
     return subprocess.run(
         ("git", "rev-parse", "HEAD"),
-        cwd=ROOT,
+        cwd=REPO_ROOT,
         text=True,
         encoding="utf-8",
         capture_output=True,
@@ -78,15 +87,15 @@ def git_commit():
 def replay_verified_artifacts():
     records = {}
     for label, (script_name, report_name, scope_snippet) in ARTIFACTS.items():
-        script = ROOT / script_name
-        report = ROOT / report_name
+        script = REPO_ROOT / script_name
+        report = REPO_ROOT / report_name
         text = report.read_text(encoding="utf-8")
         assert "claim_label: VERIFIED" in text, report_name
         assert scope_snippet in text, (report_name, scope_snippet)
         started = time.perf_counter()
         completed = subprocess.run(
             (sys.executable, str(script)),
-            cwd=ROOT,
+            cwd=REPO_ROOT,
             text=True,
             encoding="utf-8",
             capture_output=True,
@@ -253,8 +262,7 @@ def main():
             "polynomial-identity case ledger for every exceptional intersection"
         ),
         "command": (
-            "uv run --with sympy python "
-            "audit_p5_h22_component19_p0_finite_ordinary_aggregate.py"
+            'uv run --with sympy python claims/p5/h22/component19-p0-finite-ordinary-aggregate/audit_p5_h22_component19_p0_finite_ordinary_aggregate.py'
         ),
         "outputs": outputs,
         "limitations": (

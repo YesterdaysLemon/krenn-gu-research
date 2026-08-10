@@ -3,6 +3,15 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import hashlib
 import itertools
 import json
@@ -328,7 +337,7 @@ def main():
         "scope": "chart and pivot coverage of the embedded-P3 projective weighted-H22 closure",
         "inputs": inputs,
         "method": "exact normal-support census, Grassmann Pluecker charts, matching-partner invariants, and explicit pure counterexamples",
-        "command": "uv run --with sympy python derive_p5_h22_embedded_p3_projective_coverage_boundary.py",
+        "command": 'uv run --with sympy python claims/p5/h22/embedded-p3/derive_p5_h22_embedded_p3_projective_coverage_boundary.py',
         "outputs": {
             REPORT.name: sha256(REPORT),
             Path(__file__).name: sha256(Path(__file__)),

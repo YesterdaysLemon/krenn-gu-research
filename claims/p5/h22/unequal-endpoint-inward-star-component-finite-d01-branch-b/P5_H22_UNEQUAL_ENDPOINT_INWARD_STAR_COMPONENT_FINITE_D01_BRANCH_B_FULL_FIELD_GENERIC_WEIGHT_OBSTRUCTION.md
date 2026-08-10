@@ -36,7 +36,7 @@ D_0=e^2j^2s^2-e^2-ej-j^2=-Rk^2.
 ```
 
 The preceding residual certificate
-[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_RESIDUAL_FACTOR_COVER.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_RESIDUAL_FACTOR_COVER.md)
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_RESIDUAL_FACTOR_COVER.md`](../unequal-endpoint-inward-star-component-finite-d01-residual-factor-cover/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_RESIDUAL_FACTOR_COVER.md)
 gives
 
 ```text
@@ -142,10 +142,10 @@ Run:
 
 ```text
 uv run --with sympy python \
-  verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_full_field_generic_weight.py
+  claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_full_field_generic_weight.py
 
 uv run --with sympy python \
-  audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_full_field_generic_weight.py
+  claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_full_field_generic_weight.py
 ```
 
 The primary verifier expands the four-row permanents by permutations.  The

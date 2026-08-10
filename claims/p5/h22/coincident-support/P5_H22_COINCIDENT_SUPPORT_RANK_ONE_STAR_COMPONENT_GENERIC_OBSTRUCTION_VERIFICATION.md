@@ -162,7 +162,7 @@ component exhaustiveness, establish the arbitrary-order local-to-global
 reduction, construct a prize graph, or resolve the global Krenn–Gu conjecture.
 
 ```text
-uv run --with sympy python audit_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
+uv run --with sympy python claims/p5/h22/coincident-support/audit_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
 uv run --with ruff ruff check audit_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
 python -m py_compile audit_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
 python -m json.tool p5_h22_coincident_support_rank_one_star_component_generic_certificate.json

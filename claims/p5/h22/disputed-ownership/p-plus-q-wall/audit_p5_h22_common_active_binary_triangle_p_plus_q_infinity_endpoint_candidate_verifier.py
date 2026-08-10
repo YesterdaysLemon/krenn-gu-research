@@ -3,6 +3,15 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[5] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import hashlib
 import itertools
 import json
@@ -664,7 +673,7 @@ def main():
         "scope": "independent audit of original component-14 endpoint one-neighbour analysis only",
         "inputs": {TARGET.name: sha256(TARGET)},
         "method": "independent subset-DP permanents, exact characteristic-zero elimination, complete kernels, and one-marked minors",
-        "command": "uv run --with sympy python audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_candidate_verifier.py",
+        "command": 'uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_candidate_verifier.py',
         "outputs": {
             REPORT.name: sha256(REPORT),
             Path(__file__).name: sha256(Path(__file__)),

@@ -4,6 +4,7 @@
   "date_utc": "2026-08-01T11:47:48Z",
   "git_commit": "7b32d942f49043ea433f35aaf10aa7be3af13210",
   "claim_label": "UNKNOWN",
+  "dependency_hash_semantics": "SHA-256 of Git-normalized LF bytes for tracked text dependencies",
   "scope": "weighted H22 on every actual stratum of the verified diagonal-source-torus p+q=0 valuative boundary of component 20",
   "wall_status": "UNKNOWN",
   "evidence_policy": {
@@ -15,98 +16,98 @@
   "dependencies": {
     "p4_boundary_classification": {
       "path": "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md",
-      "sha256": "667611de1e8bd08dd8c1a5b3b3c431ab57df523f834828c4258d881833b9ee82",
+      "sha256": "4e8cb99893626c8f966ff000fd19aa5b2a13a22b7f15cf1ebc8ebcae134f3a2c",
       "source_label": "VERIFIED",
       "used_for": "exhaustive diagonal-DVR stratum list and residue routing"
     },
     "half_and_generic_finite_d01": {
-      "path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_PARTIAL.md",
-      "sha256": "abb78c5c92990eb7cabf3538f4231aac489bdb1a79d19fa3ac1a9981f5dfab28",
+      "path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_PARTIAL.md",
+      "sha256": "47617facfff77d9595f3a86eca1e3607705616e6919232d22b2751a44e10a12d",
       "source_label": "UNKNOWN overall; cited subclaims VERIFIED",
       "used_for": "half-centre homogeneous Hall obstruction and generic B_full/B_drop finite-D01 obstruction"
     },
     "generic_d01_infinity": {
-      "path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_GENERIC_D01_INFINITY_OBSTRUCTION.md",
-      "sha256": "60afe02d4327ec93770f29bc4de8bad2592053257bf021a3c45084306508aa90",
+      "path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_GENERIC_D01_INFINITY_OBSTRUCTION.md",
+      "sha256": "285bff2d76037a175a5fa20011678113f6a5cdd3b5bdc39f94984188fe626ee1",
       "source_label": "VERIFIED",
       "used_for": "generic B_full/B_drop D01 infinity"
     },
     "b_full_infinity_replay": {
-      "path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_B_FULL_INFINITY_FINITE_PAIR_VERIFICATION.md",
-      "sha256": "67427504ed7f78eee119b73f88c1c045ad7a2927556f8b8eb97e8668dc5536df",
+      "path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_B_FULL_INFINITY_FINITE_PAIR_VERIFICATION.md",
+      "sha256": "dba4dc20c19d115a54eb6cb4c8971bdd52b8438a4f3d6c46e06cb69df4045c43",
       "source_label": "VERIFIED",
       "used_for": "independent B_full D01-infinity replay and finite-D23 pairing audit"
     },
     "b_drop_infinity_replay": {
-      "path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_GENERIC_D01_INFINITY_B_DROP_AUDIT.md",
-      "sha256": "34f7cb79ac6f62e7f770bea8de34a27b83dfc59a1df91616b54fc728d8d83773",
+      "path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_GENERIC_D01_INFINITY_B_DROP_AUDIT.md",
+      "sha256": "b8b56bce2795b12705128e2724b15387cf8b6adc847a5edb770cf854ce32831a",
       "source_label": "VERIFIED",
       "used_for": "independent B_drop S1/S2 D01-infinity replay"
     },
     "exceptional_fibres": {
-      "path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_FIBRES_INDEPENDENT_AUDIT.md",
-      "sha256": "2a66c7a87b903167a213644fd198bdcab3b0909539014f0df7e8aa6855212138",
+      "path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_FIBRES_INDEPENDENT_AUDIT.md",
+      "sha256": "9ac22b992b594f40fba8dc0118af8aa1db011fc403c0453bd7bc212847bce3f3",
       "source_label": "VERIFIED",
       "used_for": "a=0,-1 direct and all actual lower-pair residue families"
     },
     "infinity_endpoint_base_audit": {
-      "path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_INDEPENDENT_VERIFICATION.md",
-      "sha256": "5ac8f47b5d7d6cbfc5867630e57ab63ef1ed8772009a7146326c1994d6805b98",
+      "path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_INDEPENDENT_VERIFICATION.md",
+      "sha256": "6cb9b5ce73fa0b11c0f4cff764b36c74e73ba3ddd8dbc605588c402515f0a2a8",
       "source_label": "REFUTED overall; cited endpoint subclaims VERIFIED",
       "used_for": "on-wall obstruction, off-wall infinity branches, marking projections, and finite survivor classification"
     },
     "infinity_endpoint_compatibility": {
-      "path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_COMPATIBILITY_OBSTRUCTION_VERIFICATION.md",
-      "sha256": "6419b739f275abe528f3c30a3b5fdd8af1d19e4fc94914c3c87b3522db0e8774",
+      "path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_COMPATIBILITY_OBSTRUCTION_VERIFICATION.md",
+      "sha256": "5c665c26521b2659f46d10916f124ecf2d7420c5f51e36a1b7b114b6120b0f74",
       "source_label": "VERIFIED",
       "used_for": "off-wall finite-D01 plus finite-D23,r=0 compatibility obstruction"
     },
     "infinity_endpoint_integration": {
-      "path": "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_INTEGRATION_VERIFICATION.md",
-      "sha256": "101563d2edc322ada1428d5261952a29452c01eae1d2ff068913214326c139eb",
+      "path": "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_INTEGRATION_VERIFICATION.md",
+      "sha256": "ecbe879b7359f46828a91ebd6343be4039760dea6a464c2c3eb87e9de08ce153",
       "source_label": "VERIFIED",
       "used_for": "reduction of every common genuine off-wall finite-finite pair to D23 slope zero"
     },
     "embedded_p3_generic": {
-      "path": "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "sha256": "dfc2ca99ac668605b54a08b2a4dfb48f74abba97ae2ecc405121d21b8e7f3f4a",
+      "path": "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "sha256": "15a3f7a510333e383cefb5ba8ba0d8fc20061f4fba6dab613ded111d17eb285a",
       "source_label": "VERIFIED on normalized affine chart",
       "used_for": "generic normalized embedded-P3 chart"
     },
     "embedded_p3_rank_two": {
-      "path": "P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md",
-      "sha256": "baf5531740cfd77207f31cf8e1de2b5b838701cbcae5ec778667e6e7f712d15e",
+      "path": "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md",
+      "sha256": "85b6c1d31eac00202103c46a912f9d87fcb8142282232fc54d84d2739cf07e3f",
       "source_label": "VERIFIED on normalized affine chart",
       "used_for": "rank-two projected-line boundary"
     },
     "embedded_p3_rank_one": {
-      "path": "P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md",
-      "sha256": "7ae8c19e5a43ac7af2cac35892af59130555ab509495d5280745aad114eed056",
+      "path": "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md",
+      "sha256": "c424d0b7398157024a7fe711342d9b4925bbbbd5f0276c7952f35750ef3c9a0e",
       "source_label": "VERIFIED on normalized affine chart",
       "used_for": "rank-one projected-line collapse"
     },
     "embedded_p3_projective_audit": {
-      "path": "P5_H22_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_VERIFICATION.md",
-      "sha256": "b83ddbe1e1f928dd18b9914c2c3433e612e315096888023a343af62ddf52c5c7",
+      "path": "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_VERIFICATION.md",
+      "sha256": "c679c009521b4faf9054ca241bdf4f0aeb684ab42c8351008bd3cc18ecb869ea",
       "source_label": "REFUTED",
       "used_for": "free-plane counterexample and normal-mask/matching/shared-weight gaps"
     },
     "embedded_p3_r_zero_audit": {
-      "path": "P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_VERIFICATION.md",
-      "sha256": "55ccdd6cbce892a1171a71f0bbb5e8c04241cb269c98ac797dbdf85e96f4f38b",
+      "path": "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_VERIFICATION.md",
+      "sha256": "d7dc120df86d081652740a5881e06ee8efb2c717b6038fbd223e7b3fd0824931",
       "source_label": "REFUTED as full divisor; t0=0 and nonendpoint t0!=0 subclaims VERIFIED",
       "used_for": "r0=0 corner and nonendpoint homogeneous-weight transport"
     },
     "embedded_p3_endpoint_verification": {
-      "path": "P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_T_NONZERO_WEIGHT_ENDPOINTS_VERIFICATION.md",
-      "sha256": "8e4cbe9b66bd1e53f374ef36e9fd257b410014297d9760cdf5472598f505d838",
+      "path": "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_T_NONZERO_WEIGHT_ENDPOINTS_VERIFICATION.md",
+      "sha256": "77d5eb588cfc7cb5d11a0f6eb107db48fb1d546de61109a9e385586e42f0c133",
       "source_label": "VERIFIED",
       "used_for": "r0=0,t0!=0 fibres at [rho:sigma]=[0:1] and [1:0]",
-      "replay": "uv run --with sympy python audit_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_verifier.py"
+      "replay": "uv run --with sympy python claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_verifier.py"
     },
     "embedded_p3_endpoint_verifier": {
-      "path": "audit_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_verifier.py",
-      "sha256": "5c851665189354c5afac5db4d5a3380a6d8a824767d86f1646a3a83af7cbcc5e",
+      "path": "claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_verifier.py",
+      "sha256": "3a1d105e4f875c551a007adde0051b1d856b27406e0e7469ccb29596a5845be7",
       "source_label": "exact replay script",
       "used_for": "fresh no-import endpoint reconstruction and exact H31 dependency replays"
     }

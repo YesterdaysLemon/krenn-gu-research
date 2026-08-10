@@ -3,6 +3,19 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "src"))
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/p5/h22/unequal-complement-common-kernel-component-d23-pair-orbit-partial")
+
+import verify_p5_h22_unequal_complement_common_kernel_component_d23_pair_orbit_partial_obstruction as V
+
+
+
 import hashlib
 import json
 from pathlib import Path
@@ -10,7 +23,6 @@ from pathlib import Path
 import sympy as sp
 from sympy.polys.matrices import DomainMatrix
 
-import verify_p5_h22_unequal_complement_common_kernel_component_d23_pair_orbit_partial_obstruction as V
 
 ROOT = Path(__file__).resolve().parent
 NOTE = ROOT / (

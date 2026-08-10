@@ -29,7 +29,7 @@ ROOT = HERE
 SCRIPT = Path(__file__).resolve()
 REPORT = ROOT / "P5_H22_COMPONENT19_P0_QPHI1_PROOF_B.md"
 COMPONENT = REPO_ROOT / "claims/p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md"
-BASE = ROOT / "derive_p5_h22_component19_p0_ordinary_open_proof_b.py"
+BASE = REPO_ROOT / "claims/p5/h22/component19-p0-ordinary-open-proof-b/derive_p5_h22_component19_p0_ordinary_open_proof_b.py"
 
 
 def sha256(path: Path) -> str:
@@ -263,7 +263,7 @@ payload = {
         "regular p0 basis, exact pair minors, direct finite/infinity weighted "
         "contractions, complete extension kernels, and fixed one-marked minors"
     ),
-    "command": f"uv run --with sympy python {SCRIPT.name}",
+    "command": f"uv run --with sympy python {SCRIPT.relative_to(REPO_ROOT).as_posix()}",
     "outputs": {SCRIPT.name: sha256(SCRIPT), REPORT.name: sha256(REPORT)},
     "ordinary_tensor": "T1111=4*(1/phi-phi)",
     "pair_profile": [3, 3, 3, 3, 3, 3],

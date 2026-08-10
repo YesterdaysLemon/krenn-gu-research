@@ -164,8 +164,8 @@ calculation is used.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py
-uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-k-infinity-all-pair-boundary/verify_p5_h22_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-k-infinity-all-pair-boundary/audit_p5_h22_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py
 ```
 
 The primary uses the repository contraction builder.  The audit has no

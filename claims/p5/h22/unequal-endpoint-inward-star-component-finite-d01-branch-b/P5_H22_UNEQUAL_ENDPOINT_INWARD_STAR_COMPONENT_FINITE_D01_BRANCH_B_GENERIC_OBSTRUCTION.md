@@ -153,10 +153,10 @@ Run:
 
 ```text
 uv run --with sympy python \
-  verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_reduction.py
+  claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_reduction.py
 
 uv run --with sympy python \
-  audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_reduction.py
+  claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_reduction.py
 ```
 
 The primary verifier expands permanents by permutations in the quadratic

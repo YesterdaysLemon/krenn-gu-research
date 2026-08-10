@@ -171,7 +171,7 @@ arbitrary-order local-to-global reduction, a prize graph, and the global
 Krenn–Gu conjecture remain open.
 
 ```text
-uv run --with sympy python audit_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
+uv run --with sympy python claims/p5/h22/common-active-binary-triangle-component-generic/audit_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
 uv run --with ruff ruff check audit_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
 python -m py_compile audit_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
 python -m json.tool p5_h22_common_active_binary_triangle_component_generic_certificate.json

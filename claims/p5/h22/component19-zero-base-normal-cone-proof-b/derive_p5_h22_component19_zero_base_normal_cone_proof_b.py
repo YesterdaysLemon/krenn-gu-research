@@ -27,10 +27,10 @@ SCRIPT = Path(__file__).resolve()
 REPORT = ROOT / "P5_H22_COMPONENT19_ZERO_BASE_NORMAL_CONE_PROOF_B.md"
 COMPONENT = REPO_ROOT / "claims/p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md"
 DEPENDENCIES = (
-    ROOT / "P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_VERIFICATION.md",
-    ROOT / "P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md",
-    ROOT / "P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md",
-    ROOT / "P5_H22_COMPONENT19_P0_PHI_ENDPOINTS_NO_IMPORT_VERIFICATION.md",
+    REPO_ROOT / "claims/p5/h22/common-kernel-vertical-triangle-component-generic/P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_VERIFICATION.md",
+    REPO_ROOT / "claims/p5/h22/component19-q-equals-phi/P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md",
+    REPO_ROOT / "claims/p5/h22/component19-p0-ordinary-obstruction-open/P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md",
+    REPO_ROOT / "claims/p5/h22/component19-p0-phi-endpoints-no-import/P5_H22_COMPONENT19_P0_PHI_ENDPOINTS_NO_IMPORT_VERIFICATION.md",
 )
 WORDS4 = tuple(itertools.product((0, 1), repeat=4))
 WORDS3 = tuple(itertools.product((0, 1), repeat=3))
@@ -417,7 +417,7 @@ payload = {
         "exact normal expansion, pair-minor reconstruction, verified open-"
         "stratum routing, and fresh phi=+/-1 finite/infinity endpoint algebra"
     ),
-    "command": f"uv run --with sympy python {SCRIPT.name}",
+    "command": f"uv run --with sympy python {SCRIPT.relative_to(REPO_ROOT).as_posix()}",
     "outputs": {SCRIPT.name: sha256(SCRIPT), REPORT.name: sha256(REPORT)},
     "normal_tensor": "4*(a*e_0111+b*e_1111)",
     "punctured_all_pair_open_directions": "all [a:b] in P1",

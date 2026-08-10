@@ -151,8 +151,8 @@ finite-field calculation is used.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_zero_affine_constant_profile_open_obstruction.py
-uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_affine_constant_profile_open_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-r-zero-affine-constant-profile-open/verify_p5_h22_common_center_kernel_star_component_r_zero_affine_constant_profile_open_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-r-zero-affine-constant-profile-open/audit_p5_h22_common_center_kernel_star_component_r_zero_affine_constant_profile_open_obstruction.py
 ```
 
 The primary uses the repository model but builds the localized ideals and

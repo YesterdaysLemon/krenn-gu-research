@@ -111,15 +111,15 @@ drop impossible under (1).  Together with (2), this closes the branch.
 Replay the prerequisite three-divisor closure first:
 
 ```powershell
-uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_h1_nonzero_h2_zero_partial_closure.py
-uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_h1_nonzero_h2_zero_partial_closure.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-h1-nonzero-h2-zero-partial-closure/verify_p5_h22_unequal_complement_common_kernel_component_d23_h1_nonzero_h2_zero_partial_closure.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-h1-nonzero-h2-zero-partial-closure/audit_p5_h22_unequal_complement_common_kernel_component_d23_h1_nonzero_h2_zero_partial_closure.py
 ```
 
 Then run:
 
 ```powershell
-uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_h2_zero_terminal_complete_obstruction.py
-uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_h2_zero_terminal_complete_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-h2-zero-terminal-complete/verify_p5_h22_unequal_complement_common_kernel_component_d23_h2_zero_terminal_complete_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-h2-zero-terminal-complete/audit_p5_h22_unequal_complement_common_kernel_component_d23_h2_zero_terminal_complete_obstruction.py
 ```
 
 The primary uses the committed mixed matrix and exact `DomainMatrix`

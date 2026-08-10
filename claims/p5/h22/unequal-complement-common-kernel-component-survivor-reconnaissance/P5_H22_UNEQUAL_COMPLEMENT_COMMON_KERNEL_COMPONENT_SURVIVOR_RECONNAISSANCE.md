@@ -17,7 +17,7 @@ The Krenn--Gu conjecture remains **UNRESOLVED**.
 ## Model
 
 Use the component-twenty-two basis from
-[`P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md`](claims/p4/classifications/P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md)
+[`P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md`](../../../p4/classifications/P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md)
 on its first sheet.  At `(A,R,D)=(1,1,2)`, let `alpha_i,beta_i` be the four
 ordered basis pairs and replace
 
@@ -94,8 +94,8 @@ most three.  These binary survivors are therefore exact false positives.
 ## Replay and boundary
 
 ```text
-uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_survivor_reconnaissance.py
-uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_survivor_reconnaissance.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-survivor-reconnaissance/verify_p5_h22_unequal_complement_common_kernel_component_survivor_reconnaissance.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-survivor-reconnaissance/audit_p5_h22_unequal_complement_common_kernel_component_survivor_reconnaissance.py
 ```
 
 Both scripts use rational arithmetic.  The audit independently rebuilds the

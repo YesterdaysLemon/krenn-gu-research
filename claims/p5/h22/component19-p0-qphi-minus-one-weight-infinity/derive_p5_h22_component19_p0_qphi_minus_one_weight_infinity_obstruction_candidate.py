@@ -320,7 +320,7 @@ def main():
         "scope": "component 19 p=0, q*phi=-1 homogeneous weight-at-infinity chart on phi*(phi^2+1)!=0",
         "inputs": {SOURCE.name: sha256(SOURCE)},
         "method": "direct denominator-free divisor basis, compact coefficient syzygy, bounded function-field incidence classification, saturated shared-incidence audit, and direct phi=+/-1 substitutions",
-        "command": f"uv run --with sympy python {SCRIPT.name}",
+        "command": f"uv run --with sympy python {SCRIPT.relative_to(REPO_ROOT).as_posix()}",
         "outputs": {SCRIPT.name: sha256(SCRIPT), REPORT.name: sha256(REPORT), CERTIFICATE.name: sha256(CERTIFICATE)},
         "relation": "p=0, q=-1/phi",
         "exact_ordinary_open": "phi*(phi^2+1)!=0",

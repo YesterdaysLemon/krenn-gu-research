@@ -10,7 +10,7 @@ L_01=(lambda+1)z_2+(lambda-1)z_4=0
 ```
 
 from
-[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PARTIAL.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PARTIAL.md).
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PARTIAL.md`](../unequal-endpoint-inward-star/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_PARTIAL.md).
 The weight `lambda=1` is empty.  Away from `lambda=1,-1`, every remaining
 candidate lies on one of two explicit linear factor branches.
 
@@ -106,10 +106,10 @@ evidence.
 
 ```text
 uv run --with sympy python \
-  verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_residual.py
+  claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-residual/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_residual.py
 
 uv run --with sympy python \
-  audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_residual.py
+  claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-residual/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_residual.py
 ```
 
 The primary verifier uses the certified component basis and independently

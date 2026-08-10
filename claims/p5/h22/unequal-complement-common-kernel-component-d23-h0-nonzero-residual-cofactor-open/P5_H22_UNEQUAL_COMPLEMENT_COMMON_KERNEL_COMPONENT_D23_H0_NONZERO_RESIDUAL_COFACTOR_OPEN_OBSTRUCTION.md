@@ -17,7 +17,7 @@ arbitrary source order, or the global Krenn--Gu conjecture, which remains
 
 Work over `K=Q(A,R,D)`, put `s=2A+R`, and use the notation
 `G,G2,f2,f6,f7,f8,L,T` of
-[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md).
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md`](../unequal-complement-common-kernel-component-d23-pair-orbit-partial/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md).
 The residual under consideration is
 
 ```text
@@ -107,8 +107,8 @@ emptiness or survival.  No finite-field computation is used.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_cofactor_open_obstruction.py
-uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_cofactor_open_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-h0-nonzero-residual-cofactor-open/verify_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_cofactor_open_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-h0-nonzero-residual-cofactor-open/audit_p5_h22_unequal_complement_common_kernel_component_d23_h0_nonzero_residual_cofactor_open_obstruction.py
 ```
 
 The primary reconstructs the component rows and contraction with repository

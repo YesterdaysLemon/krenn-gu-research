@@ -62,16 +62,16 @@ formulas.
 ## Focused replay
 
 ```text
-uv run --with sympy python verify_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
-uv run --with z3-solver python audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
+uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/verify_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
+uv run --with z3-solver python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
 
-uv run --with sympy python audit_p5_h22_p_plus_q_diagonal_dvr_coverage.py
-uv run --with sympy python derive_p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_obstruction_candidate.py
-uv run --with sympy python audit_p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_independent.py
+uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_p_plus_q_diagonal_dvr_coverage.py
+uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/derive_p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_obstruction_candidate.py
+uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_independent.py
 
-uv run --with sympy python derive_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_candidate.py
-uv run --with sympy python audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_integration_verifier.py
-uv run --with sympy python audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_compatibility_obstruction_verifier.py
+uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/derive_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_candidate.py
+uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_integration_verifier.py
+uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_compatibility_obstruction_verifier.py
 ```
 
 The primary and independent aggregate verifiers emit complete run reports

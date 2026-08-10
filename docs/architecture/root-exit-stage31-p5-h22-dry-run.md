@@ -1,6 +1,6 @@
 # Root-exit Stage 31 P5/H22 forest dry run
 
-Status: **EXACT DRY RUN; NOT YET EXECUTED**
+Status: **EXECUTED AND LOCALLY VALIDATED; AWAITING FINAL TIER-2 REVIEW**
 
 The global Krenn--Gu conjecture remains **UNRESOLVED**.  This stage is a
 layout, path, catalog, and narrowly scoped shared-infrastructure transaction.
@@ -16,8 +16,8 @@ justified:   7 files + 9 directories = 16 entries
 debt:        880 grandfathered files, 0 new files
 ```
 
-The exact transaction contains 351 root sources and projects the live debt
-from 880 to 529 while preserving all sixteen justified root entries.  The
+The exact transaction moved 351 root sources and reduced the live debt from
+880 to 529 while preserving all sixteen justified root entries. The
 frozen historical root universe remains unchanged:
 
 ```text
@@ -78,12 +78,12 @@ primary adapter beside its document, no-import audit, and certificate in:
 The primary's scientific implementation stays local and unchanged apart
 from necessary repository/path plumbing.  A byte-equivalent neutral copy of
 `WORDS`, the private four-bit/permutation closure, `permanent4`, `project`,
-and `build_model` will live in
+and `build_model` lives in
 `src/krenn_gu/p5_weighted_h22_contraction.py`.  Its public API is scoped to
 the exact four-source, eight-extension, `D01`/`D23` P5 model; it is not
 arbitrary-order infrastructure.
 
-All 39 current direct consumers will import that shared module after standard
+All 39 current direct consumers import that shared module after standard
 bootstrap.  The six audits that share this constructor remain only
 downstream-independent at their stated layers; extraction does not upgrade
 their independence.  Singular discovery has only one import consumer and
@@ -139,6 +139,37 @@ Validation is bounded to source/path behavior:
 
 No SAT, Singular, brute-force, broad theorem, numerical, or sampling job is
 authorized merely by relocation.
+
+## Executed transaction and bounded repair
+
+The short-path isolated worktree executed the frozen batch successfully.
+Pure transaction commit `53810f70f00e414a96f955c05c33bbb8eec820b4`
+contains exactly 351 `R100` renames plus the manifest transition; every
+destination blob equals its frozen source blob and every old root source is
+absent.
+
+The repair then:
+
+- bootstrapped all 202 moved Python files and repaired every affected bare
+  import/exposure edge, including the 39 shared-core consumers and the
+  retained claim-owned Singular adapter edge;
+- repaired 90 static cross-package path expressions plus the Component19 and
+  weighted-wall dynamic dependency tables;
+- made Python and durable-JSON replay commands repository-relative, while
+  keeping basename-only output keys and historical replay hashes unchanged;
+- updated the 16 current weighted-wall dependency paths/hashes and only the
+  eleven current-index theorem-ledger hash pins made stale by path/link
+  repair; and
+- reached a fixed point in the Markdown/replay rewriter and refreshed the P5
+  and H22 navigation without relabelling scientific status.
+
+The index-complete candidate measures 536 root files plus nine justified
+directories: 545 total entries, sixteen justified entries, 529 grandfathered
+debt files, and zero new debt. Hygiene passes with 1,701 Python files, 850
+resolving Markdown files, all 86 ledger hashes, and 1,828 moved manifest
+entries. The 158 migration tests, 14 focused lattice tests, and five bounded
+weighted-H22 parity/consumer-graph tests pass. No scientific solver or search
+was rerun.
 
 ## Rolled-back first execution attempt
 

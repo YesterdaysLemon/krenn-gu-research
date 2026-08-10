@@ -205,7 +205,7 @@ from another component, non-diagonal ambient source deformations, or
 multi-parameter families.
 
 ```powershell
-uv run --with sympy python audit_p5_h22_component19_zero_base_valuative_reduction.py
+uv run --with sympy python claims/p5/h22/component19-zero-base-valuative-reduction/audit_p5_h22_component19_zero_base_valuative_reduction.py
 uv run --with ruff ruff check audit_p5_h22_component19_zero_base_valuative_reduction.py
 python -m py_compile audit_p5_h22_component19_zero_base_valuative_reduction.py
 git diff --check

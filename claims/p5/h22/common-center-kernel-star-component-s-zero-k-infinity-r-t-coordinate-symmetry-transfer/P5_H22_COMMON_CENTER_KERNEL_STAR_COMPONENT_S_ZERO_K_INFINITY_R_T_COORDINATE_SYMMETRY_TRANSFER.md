@@ -180,10 +180,10 @@ boundaries remain open rather than being silently imported into the claim.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_coordinate_survivor.py
-uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_coordinate_survivor.py
-uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_r_t_coordinate_symmetry_transfer.py
-uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_r_t_coordinate_symmetry_transfer.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-coordinate-survivor/verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_coordinate_survivor.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-coordinate-survivor/audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_coordinate_survivor.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-r-t-coordinate-symmetry-transfer/verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_r_t_coordinate_symmetry_transfer.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-r-t-coordinate-symmetry-transfer/audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_r_t_coordinate_symmetry_transfer.py
 ```
 
 The first two commands replay the source finite-divisor theorem.  The last

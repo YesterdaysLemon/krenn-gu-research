@@ -3,6 +3,15 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[5] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import hashlib
 import itertools
 import json
@@ -604,8 +613,7 @@ def main():
             "special slopes, fixed marked minors, symmetry and residue exhaustion"
         ),
         "command": (
-            "uv run --with sympy python audit_p5_h22_common_active_binary_"
-            "triangle_p_plus_q_exceptional_fibres_independent.py"
+            'uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_independent.py'
         ),
         "outputs": {REPORT.name: sha256(REPORT), source.name: sha256(source)},
         "limitations": (

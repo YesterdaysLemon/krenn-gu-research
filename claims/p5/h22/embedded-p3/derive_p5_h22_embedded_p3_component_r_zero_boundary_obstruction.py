@@ -3,6 +3,15 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import hashlib
 import itertools
 import json
@@ -16,12 +25,10 @@ import sympy as sp
 ROOT = Path(__file__).resolve().parent
 NOTE = ROOT / "P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION_CANDIDATE.md"
 H31 = (
-    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
-    / "P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md"
+    REPO_ROOT / "claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md"
 )
 H31_VERIFY = (
-    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
-    / "verify_p5_h31_embedded_p3_component_r_zero_boundary.py"
+    REPO_ROOT / "claims/p5/h31/embedded-p3/verify_p5_h31_embedded_p3_component_r_zero_boundary.py"
 )
 H22_GENERIC = ROOT / "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
 H22_RANK_TWO = (
@@ -395,7 +402,7 @@ def main():
         "scope": "weighted H22 on the embedded-P3 free-plane r0=0 divisor",
         "inputs": inputs,
         "method": "homogeneous transport, exact Q-elimination, saturated kernels, and inherited verified H31 covers",
-        "command": "uv run --with sympy python derive_p5_h22_embedded_p3_component_r_zero_boundary_obstruction.py",
+        "command": 'uv run --with sympy python claims/p5/h22/embedded-p3/derive_p5_h22_embedded_p3_component_r_zero_boundary_obstruction.py',
         "outputs": {
             NOTE.name: sha256(NOTE),
             Path(__file__).name: sha256(Path(__file__)),

@@ -155,8 +155,8 @@ finite-field calculation is used.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_zero_t_plus_minus_one_special_all_pair_obstruction.py
-uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_t_plus_minus_one_special_all_pair_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-r-zero-t-plus-minus-one-special-all-pair/verify_p5_h22_common_center_kernel_star_component_r_zero_t_plus_minus_one_special_all_pair_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-r-zero-t-plus-minus-one-special-all-pair/audit_p5_h22_common_center_kernel_star_component_r_zero_t_plus_minus_one_special_all_pair_obstruction.py
 ```
 
 The primary reuses the certified component model but recomputes both pair

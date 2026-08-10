@@ -323,7 +323,7 @@ def main():
             "elimination over Q[phi] saturated only by phi, retaining normal slope, "
             "Borel markings, and finite weight"
         ),
-        "command": f"uv run --with sympy python {SCRIPT.name}",
+        "command": f"uv run --with sympy python {SCRIPT.relative_to(REPO_ROOT).as_posix()}",
         "outputs": {SCRIPT.name: sha256(SCRIPT), REPORT.name: sha256(REPORT)},
         "normal_cone": normal,
         "h22_cases": certificates,

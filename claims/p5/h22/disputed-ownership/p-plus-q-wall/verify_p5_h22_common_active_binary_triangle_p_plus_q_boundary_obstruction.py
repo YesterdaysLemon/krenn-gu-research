@@ -3,6 +3,15 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[5] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import hashlib
 import json
 import subprocess
@@ -15,9 +24,9 @@ THEOREM = (
     ROOT
     / "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md"
 )
-P4_WALL = ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
-P4_PRIMARY = ROOT / "verify_p4_common_active_binary_triangle_p_plus_q_boundary.py"
-P4_AUDIT = ROOT / "audit_p4_common_active_binary_triangle_p_plus_q_boundary.py"
+P4_WALL = REPO_ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
+P4_PRIMARY = REPO_ROOT / "verify_p4_common_active_binary_triangle_p_plus_q_boundary.py"
+P4_AUDIT = REPO_ROOT / "audit_p4_common_active_binary_triangle_p_plus_q_boundary.py"
 PARTIAL = ROOT / "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_PARTIAL.md"
 GENERIC_INFINITY = (
     ROOT
@@ -187,9 +196,7 @@ def main() -> None:
             "classification, with a twelve-flag no-import mask-6 closure"
         ),
         "command": (
-            "uv run --with sympy python "
-            "verify_p5_h22_common_active_binary_triangle_p_plus_q_"
-            "boundary_obstruction.py"
+            'uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/verify_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py'
         ),
         "outputs": {THEOREM.name: sha256(THEOREM), SCRIPT.name: sha256(SCRIPT)},
         "limitations": (

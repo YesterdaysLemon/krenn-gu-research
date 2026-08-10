@@ -3,6 +3,15 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[5] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import hashlib
 import itertools
 import json
@@ -336,7 +345,7 @@ def main() -> None:
             for path in (SOURCE, INDEPENDENT_REPORT, INDEPENDENT_VERIFIER)
         },
         "method": "independent mixed-kernel reconstruction, shared-extension intersection, fixed transverse minor, and full two-contraction stacked map",
-        "command": "uv run --with sympy python derive_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_compatibility_obstruction.py",
+        "command": 'uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/derive_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_compatibility_obstruction.py',
         "outputs": {SCRIPT.name: sha256(SCRIPT), REPORT.name: sha256(REPORT)},
         "limitations": "VERIFIED only after a fresh no-import replay of the displayed off-wall endpoint pair and its mode-swapped axis; no on-wall, other D23 slopes, non-diagonal, arbitrary-order, or global claim",
         "axis_certificates": axes,

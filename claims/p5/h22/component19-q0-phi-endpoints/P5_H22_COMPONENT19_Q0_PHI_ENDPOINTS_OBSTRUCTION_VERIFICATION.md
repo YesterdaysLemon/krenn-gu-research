@@ -156,7 +156,7 @@ rank-drop boundary points distinct.
 ## Replay
 
 ```powershell
-uv run --with sympy python audit_p5_h22_component19_q0_phi_endpoints_obstruction_candidate.py
+uv run --with sympy python claims/p5/h22/component19-q0-phi-endpoints/audit_p5_h22_component19_q0_phi_endpoints_obstruction_candidate.py
 ```
 
 Expected final marker:

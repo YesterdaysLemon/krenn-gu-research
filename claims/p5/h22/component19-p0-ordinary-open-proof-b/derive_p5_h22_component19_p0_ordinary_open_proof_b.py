@@ -340,7 +340,7 @@ payload = {
         "and kernel minors, direct finite/infinity compatibility, complete "
         "kernel vectors, and complete one-marked four-minor generators"
     ),
-    "command": f"uv run --with sympy python {SCRIPT.name}",
+    "command": f"uv run --with sympy python {SCRIPT.relative_to(REPO_ROOT).as_posix()}",
     "outputs": {SCRIPT.name: sha256(SCRIPT), REPORT.name: sha256(REPORT)},
     "ordinary_tensor": {"support": {"1111": "4*(q-phi)"}},
     "nonzero_all_pair_open": "q*phi*(q-phi)!=0",

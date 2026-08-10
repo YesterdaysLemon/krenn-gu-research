@@ -266,8 +266,8 @@ arbitrary order, or global gluing.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_coordinate_survivor.py
-uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_coordinate_survivor.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-coordinate-survivor/verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_coordinate_survivor.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-coordinate-survivor/audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_coordinate_survivor.py
 ```
 
 The primary uses the repository contraction builder and also expands the

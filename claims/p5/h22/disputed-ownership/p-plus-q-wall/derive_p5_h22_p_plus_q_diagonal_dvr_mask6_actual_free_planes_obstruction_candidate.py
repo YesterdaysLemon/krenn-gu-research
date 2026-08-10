@@ -8,6 +8,15 @@ discovery or verification code.
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[5] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import hashlib
 import itertools
 import json
@@ -27,8 +36,8 @@ REPORT = ROOT / (
     "OBSTRUCTION_CANDIDATE.md"
 )
 LEDGER = ROOT / "p5_h22_p_plus_q_diagonal_dvr_coverage.json"
-P4_WALL = ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
-H22_DEFINITION = ROOT / "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
+P4_WALL = REPO_ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
+H22_DEFINITION = REPO_ROOT / "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
 VERIFICATION_REPORT = ROOT / (
     "P5_H22_P_PLUS_Q_DIAGONAL_DVR_MASK6_ACTUAL_FREE_PLANES_"
     "INDEPENDENT_VERIFICATION.md"
@@ -218,7 +227,7 @@ def main():
             INDEPENDENT_VERIFIER.name: sha256(INDEPENDENT_VERIFIER),
         },
         "method": certificate["method"],
-        "command": f"uv run --with sympy python {SCRIPT.name}",
+        "command": f"uv run --with sympy python {SCRIPT.relative_to(REPO_ROOT).as_posix()}",
         "outputs": {
             SCRIPT.name: sha256(SCRIPT),
             CERTIFICATE.name: sha256(CERTIFICATE),

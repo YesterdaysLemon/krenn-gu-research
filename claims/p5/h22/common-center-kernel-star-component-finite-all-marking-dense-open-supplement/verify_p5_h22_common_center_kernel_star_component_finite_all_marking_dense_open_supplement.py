@@ -9,13 +9,6 @@ import subprocess
 
 import sympy as sp
 
-from derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate import (
-    build_model,
-)
-from verify_p5_h22_common_center_kernel_star_component_partial import (
-    coefficient_row,
-    singular_command,
-)
 import sys
 from pathlib import Path
 
@@ -24,14 +17,22 @@ for _p in Path(__file__).resolve().parents:
         sys.path.insert(0, str(_p / "src"))
         break
 from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+from krenn_gu.p5_weighted_h22_contraction import build_model
 
 REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/p5/h22/common-center-kernel-star")
 expose_claim_package(REPO_ROOT, "claims/p5/h31/common-center-kernel-star")
 
+from verify_p5_h22_common_center_kernel_star_component_partial import (
+    coefficient_row,
+    singular_command,
+)
 from verify_p5_h31_common_center_kernel_star_component_generic_obstruction import (
     rows,
     shifted,
 )
+
+
 
 r, t, lam = sp.symbols("r t lam")
 h = sp.symbols("h0:4")

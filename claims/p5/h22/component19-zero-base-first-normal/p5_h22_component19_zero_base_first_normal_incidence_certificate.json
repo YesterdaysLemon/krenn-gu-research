@@ -10,7 +10,7 @@
     "p5_h22_component19_zero_base_first_normal_geometry_certificate.json": "aef13b3efe1183db5b8b3133fe9c2ce539dfe1e61e3fdc23771677884d01b147"
   },
   "method": "direct D01 coefficient syzygies plus sixteen bounded shared characteristic-zero unit-ideal eliminations",
-  "command": "uv run --with sympy python derive_p5_h22_component19_zero_base_first_normal_candidate.py",
+  "command": "uv run --with sympy python claims/p5/h22/component19-zero-base-first-normal/derive_p5_h22_component19_zero_base_first_normal_candidate.py",
   "normal_direction_cover": ["a!=0: [1:s]", "b!=0: [t:1]"],
   "homogeneous_weight_cover": ["finite [lambda:1]", "infinity [1:0]"],
   "a_nonzero_chart_structural_obstruction": {

@@ -126,14 +126,14 @@ finite and infinity charts therefore cover the full weight `P^1` over `D`.
 
 ## Replayed evidence
 
-- [Generic ordinary open](P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md) — [replay](audit_p5_h22_component19_p0_ordinary_obstruction_open.py)
-- [`q*phi=1`](P5_H22_COMPONENT19_P0_QPHI_ONE_INDEPENDENT_VERIFICATION.md) — [replay](audit_p5_h22_component19_p0_qphi_equals_one.py)
-- [`q*phi=-1` axes](P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_AXES_VERIFICATION.md) — [replay](audit_p5_h22_component19_p0_qphi_minus_one_axes.py)
-- [`q*phi=-1` target-local compatibility](P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_TERNARY_COMPATIBILITY_OBSTRUCTION_VERIFICATION.md) — [replay](audit_p5_h22_component19_p0_qphi_minus_one_ternary_compatibility.py)
-- [`q*phi=-1`, `phi^2=1` crossings](P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_PHI_ENDPOINTS_VERIFICATION.md) — [replay](audit_p5_h22_component19_p0_qphi_minus_one_phi_endpoints.py)
-- [`q*phi=-1` infinity](P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md) — [replay](audit_p5_h22_component19_p0_qphim1_infinity_no_import.py)
-- [`q=+/-1` endpoints](P5_H22_COMPONENT19_P0_Q_ENDPOINTS_NO_IMPORT_VERIFICATION.md) — [replay](audit_p5_h22_component19_p0_q_endpoints_no_import.py)
-- [`phi=+/-1` endpoints](P5_H22_COMPONENT19_P0_PHI_ENDPOINTS_NO_IMPORT_VERIFICATION.md) — [replay](audit_p5_h22_component19_p0_phi_endpoints_no_import.py)
+- [Generic ordinary open](../component19-p0-ordinary-obstruction-open/P5_H22_COMPONENT19_P0_ORDINARY_OBSTRUCTION_OPEN_VERIFICATION.md) — [replay](../component19-p0-ordinary-obstruction-open/audit_p5_h22_component19_p0_ordinary_obstruction_open.py)
+- [`q*phi=1`](../component19-p0-qphi-one-independent/P5_H22_COMPONENT19_P0_QPHI_ONE_INDEPENDENT_VERIFICATION.md) — [replay](../component19-p0-qphi-one-independent/audit_p5_h22_component19_p0_qphi_equals_one.py)
+- [`q*phi=-1` axes](../component19-p0-qphi-minus-one-axes/P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_AXES_VERIFICATION.md) — [replay](../component19-p0-qphi-minus-one-axes/audit_p5_h22_component19_p0_qphi_minus_one_axes.py)
+- [`q*phi=-1` target-local compatibility](../component19-p0-qphi-minus-one-ternary-compatibility/P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_TERNARY_COMPATIBILITY_OBSTRUCTION_VERIFICATION.md) — [replay](../component19-p0-qphi-minus-one-ternary-compatibility/audit_p5_h22_component19_p0_qphi_minus_one_ternary_compatibility.py)
+- [`q*phi=-1`, `phi^2=1` crossings](../component19-p0-qphi-minus-one-phi-endpoints/P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_PHI_ENDPOINTS_VERIFICATION.md) — [replay](../component19-p0-qphi-minus-one-phi-endpoints/audit_p5_h22_component19_p0_qphi_minus_one_phi_endpoints.py)
+- [`q*phi=-1` infinity](../component19-p0-qphim1-infinity-no-import/P5_H22_COMPONENT19_P0_QPHIM1_INFINITY_NO_IMPORT_VERIFICATION.md) — [replay](../component19-p0-qphim1-infinity-no-import/audit_p5_h22_component19_p0_qphim1_infinity_no_import.py)
+- [`q=+/-1` endpoints](../component19-p0-q-endpoints-no-import/P5_H22_COMPONENT19_P0_Q_ENDPOINTS_NO_IMPORT_VERIFICATION.md) — [replay](../component19-p0-q-endpoints-no-import/audit_p5_h22_component19_p0_q_endpoints_no_import.py)
+- [`phi=+/-1` endpoints](../component19-p0-phi-endpoints-no-import/P5_H22_COMPONENT19_P0_PHI_ENDPOINTS_NO_IMPORT_VERIFICATION.md) — [replay](../component19-p0-phi-endpoints-no-import/audit_p5_h22_component19_p0_phi_endpoints_no_import.py)
 
 All eight live replays exit successfully.  No candidate or proof-B artifact is
 used by the aggregate verifier.
@@ -153,5 +153,5 @@ The following loci are deliberately outside (1), not hidden gaps in it:
 Replay the aggregate with
 
 ```powershell
-uv run --with sympy python audit_p5_h22_component19_p0_finite_ordinary_aggregate.py
+uv run --with sympy python claims/p5/h22/component19-p0-finite-ordinary-aggregate/audit_p5_h22_component19_p0_finite_ordinary_aggregate.py
 ```

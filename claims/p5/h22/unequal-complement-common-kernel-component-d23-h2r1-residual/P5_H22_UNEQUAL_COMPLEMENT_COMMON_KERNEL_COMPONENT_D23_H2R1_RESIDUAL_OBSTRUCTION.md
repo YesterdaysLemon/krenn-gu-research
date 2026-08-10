@@ -4,7 +4,7 @@
 
 **Exact characteristic-zero residual-divisor obstruction.**  In the notation
 of
-[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md),
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md`](../unequal-complement-common-kernel-component-d23-pair-orbit-partial/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md),
 the remaining `h1=0`, `2*h3=2*A+R`, `G=G2=0` residual has no point on
 
 ```text
@@ -64,8 +64,8 @@ closes the complete `R*h2=1` slice of its residual.
 ## Replay
 
 ```text
-uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_h2r1_residual_obstruction.py
-uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_h2r1_residual_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-h2r1-residual/verify_p5_h22_unequal_complement_common_kernel_component_d23_h2r1_residual_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-h2r1-residual/audit_p5_h22_unequal_complement_common_kernel_component_d23_h2r1_residual_obstruction.py
 ```
 
 The primary replay proves (2) over the coefficient field.  The independent

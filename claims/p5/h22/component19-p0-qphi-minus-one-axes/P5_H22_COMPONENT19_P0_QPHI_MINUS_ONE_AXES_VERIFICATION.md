@@ -168,7 +168,7 @@ axis open.
 ## Replay
 
 ```powershell
-uv run --with sympy python audit_p5_h22_component19_p0_qphi_minus_one_axes.py
+uv run --with sympy python claims/p5/h22/component19-p0-qphi-minus-one-axes/audit_p5_h22_component19_p0_qphi_minus_one_axes.py
 ```
 
 Expected final markers:

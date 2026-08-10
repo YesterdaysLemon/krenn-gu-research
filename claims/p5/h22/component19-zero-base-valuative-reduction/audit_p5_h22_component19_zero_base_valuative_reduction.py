@@ -3,6 +3,15 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import hashlib
 import itertools
 import shutil
@@ -429,8 +438,8 @@ def main() -> None:
     parameter_aware_projections()
     branch_determinants()
     dependencies = (
-        ROOT / "P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md",
-        ROOT / "P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md",
+        REPO_ROOT / "claims/p5/h22/component19-p0-finite-ordinary-aggregate/P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md",
+        REPO_ROOT / "claims/p5/h22/component19-q-equals-phi/P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md",
         REPORT,
         SCRIPT,
     )

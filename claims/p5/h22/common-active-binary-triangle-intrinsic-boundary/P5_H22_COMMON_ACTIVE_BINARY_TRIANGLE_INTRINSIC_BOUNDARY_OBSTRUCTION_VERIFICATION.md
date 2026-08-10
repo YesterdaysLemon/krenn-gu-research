@@ -126,7 +126,7 @@ homogeneous-weight endpoint gap in the stated generic-wall conclusion.
 ## Replay
 
 ```text
-uv run --with sympy python audit_p5_h22_common_active_binary_triangle_intrinsic_boundary_obstruction_candidate.py
+uv run --with sympy python claims/p5/h22/common-active-binary-triangle-intrinsic-boundary/audit_p5_h22_common_active_binary_triangle_intrinsic_boundary_obstruction_candidate.py
 ```
 
 Each Singular subprocess is file-backed and bounded by a 120-second timeout.

@@ -168,8 +168,8 @@ The same symmetry sends the still-unproved `t=infinity` source endpoint to
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_projective_weight_coordinate_divisors_obstruction.py
-uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_projective_weight_coordinate_divisors_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-projective-weight-coordinate-divisors/verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_projective_weight_coordinate_divisors_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-projective-weight-coordinate-divisors/audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_projective_weight_coordinate_divisors_obstruction.py
 ```
 
 The primary uses the repository contraction builder, exact saturation,

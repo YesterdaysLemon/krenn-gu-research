@@ -165,10 +165,10 @@ unclassified.  No finite-field computation is used as proof.
 
 ```text
 uv run --with sympy python \
-  verify_p5_h22_unequal_endpoint_inward_star_component_partial.py
+  claims/p5/h22/unequal-endpoint-inward-star/verify_p5_h22_unequal_endpoint_inward_star_component_partial.py
 
 uv run --with sympy python \
-  audit_p5_h22_unequal_endpoint_inward_star_component_partial.py
+  claims/p5/h22/unequal-endpoint-inward-star/audit_p5_h22_unequal_endpoint_inward_star_component_partial.py
 ```
 
 The primary verifier reuses the certified hypersurface-function-field model,

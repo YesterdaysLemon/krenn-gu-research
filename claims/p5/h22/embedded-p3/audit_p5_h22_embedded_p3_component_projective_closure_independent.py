@@ -3,6 +3,15 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import hashlib
 import itertools
 import json
@@ -420,7 +429,7 @@ def main() -> None:
             )
         },
         "method": "independent permanent reconstruction; exact support-mask and matching transport; invariant free-plane counterexample; normalized finite-chart scope partition",
-        "command": "uv run --with sympy python audit_p5_h22_embedded_p3_component_projective_closure_independent.py",
+        "command": 'uv run --with sympy python claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_projective_closure_independent.py',
         "outputs": {
             SCRIPT.name: sha256(SCRIPT),
             REPORT.name: sha256(REPORT),

@@ -117,7 +117,7 @@ fibres have separate certificates.
 ## Replay and evidence boundary
 
 ```text
-uv run --with sympy python verify_p5_h22_embedded_p3_component_projective_closure.py
+uv run --with sympy python claims/p5/h22/embedded-p3/verify_p5_h22_embedded_p3_component_projective_closure.py
 ```
 
 The primary reconstructs (3), proves the three support-one restrictions are

@@ -24,7 +24,7 @@ remains **UNRESOLVED**.
 ## Exact chart and saturation
 
 Use the notation and polynomials `G,G2,f2,f6,f7,f8,L,T` of
-[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md).
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md`](../unequal-complement-common-kernel-component-d23-pair-orbit-partial/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md).
 After (1), they are polynomials in `K[h2,rho]`; in particular
 
 ```text
@@ -43,7 +43,7 @@ U=h2*f2*rho*(rho-1)*(rho+1)*f6*f7*f8*L*T*(R*h2-1). (3)
 Every factor in (3), except the last, is a branch already proved empty by
 the partial pair-orbit theorem before its `G=G2=0` residual was declared.
 The last factor removes the divisor proved empty in
-[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2R1_RESIDUAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2R1_RESIDUAL_OBSTRUCTION.md).
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2R1_RESIDUAL_OBSTRUCTION.md`](../unequal-complement-common-kernel-component-d23-h2r1-residual/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2R1_RESIDUAL_OBSTRUCTION.md).
 Consequently (3) is exactly the still-open part of (1), not a new genericity
 assumption.
 
@@ -93,8 +93,8 @@ proof.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_h0_zero_residual_obstruction.py
-uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_h0_zero_residual_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-h0-zero-residual/verify_p5_h22_unequal_complement_common_kernel_component_d23_h0_zero_residual_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-h0-zero-residual/audit_p5_h22_unequal_complement_common_kernel_component_d23_h0_zero_residual_obstruction.py
 ```
 
 The primary reconstructs the component rows and finite-`D23` incidence with

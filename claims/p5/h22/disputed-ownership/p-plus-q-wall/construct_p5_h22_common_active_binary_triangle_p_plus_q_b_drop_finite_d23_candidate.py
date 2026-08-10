@@ -3,6 +3,20 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[5] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+from verify_p5_h22_common_active_binary_triangle_p_plus_q_boundary_partial import (
+    build_model,
+    marked_matrix,
+)
+
+
+
 import hashlib
 import json
 import subprocess
@@ -11,10 +25,6 @@ from pathlib import Path
 
 import sympy as sp
 
-from verify_p5_h22_common_active_binary_triangle_p_plus_q_boundary_partial import (
-    build_model,
-    marked_matrix,
-)
 
 ROOT = Path(__file__).resolve().parent
 SCRIPT = Path(__file__).resolve()
@@ -427,7 +437,7 @@ def main() -> None:
             HELPER.name: sha256(HELPER),
         },
         "method": "exact kernel stratification at r=0, r*Q!=0, and Q=0; three targeted rank minors and explicit marked right kernels",
-        "command": "uv run --with sympy python construct_p5_h22_common_active_binary_triangle_p_plus_q_b_drop_finite_d23_candidate.py",
+        "command": 'uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/construct_p5_h22_common_active_binary_triangle_p_plus_q_b_drop_finite_d23_candidate.py',
         "outputs": {
             SCRIPT.name: sha256(SCRIPT),
             REPORT.name: sha256(REPORT),

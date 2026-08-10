@@ -167,7 +167,7 @@ conditional on the verified `P4` residue classification.
 ## Exact replay
 
 ```text
-uv run --with sympy python verify_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_obstruction.py
-uv run --with sympy python audit_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_obstruction.py
-uv run --with sympy python audit_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_independent.py
+uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/verify_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_obstruction.py
+uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_obstruction.py
+uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_independent.py
 ```

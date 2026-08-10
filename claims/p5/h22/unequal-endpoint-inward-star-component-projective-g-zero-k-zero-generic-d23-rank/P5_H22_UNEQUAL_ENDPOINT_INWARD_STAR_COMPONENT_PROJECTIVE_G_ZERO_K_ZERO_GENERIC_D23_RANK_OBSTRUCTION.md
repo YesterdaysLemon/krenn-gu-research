@@ -268,8 +268,8 @@ variable grevlex order, and uses alternate maximal and submaximal minors for
 all four modes.
 
 ```powershell
-uv run --with sympy python verify_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_k_zero_generic_d23_rank_obstruction.py
-uv run --with sympy python audit_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_k_zero_generic_d23_rank_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-endpoint-inward-star-component-projective-g-zero-k-zero-generic-d23-rank/verify_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_k_zero_generic_d23_rank_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-endpoint-inward-star-component-projective-g-zero-k-zero-generic-d23-rank/audit_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_k_zero_generic_d23_rank_obstruction.py
 ```
 
 Both calculations are exact over characteristic zero.  No finite-field output

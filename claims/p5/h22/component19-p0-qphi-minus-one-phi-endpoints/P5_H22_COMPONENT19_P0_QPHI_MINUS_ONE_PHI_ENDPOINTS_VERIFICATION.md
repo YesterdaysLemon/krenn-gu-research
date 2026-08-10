@@ -155,5 +155,5 @@ finite ordinary weighted-`H22` lift survives at either endpoint.
 Replay with
 
 ```powershell
-uv run --with sympy python audit_p5_h22_component19_p0_qphi_minus_one_phi_endpoints.py
+uv run --with sympy python claims/p5/h22/component19-p0-qphi-minus-one-phi-endpoints/audit_p5_h22_component19_p0_qphi_minus_one_phi_endpoints.py
 ```

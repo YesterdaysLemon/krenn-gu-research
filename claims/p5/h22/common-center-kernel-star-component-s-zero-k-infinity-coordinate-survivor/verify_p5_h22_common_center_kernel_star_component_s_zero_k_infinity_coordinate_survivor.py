@@ -9,11 +9,24 @@ import subprocess
 
 import sympy as sp
 
-from derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate import (
-    WORDS,
-    build_model,
-    singular_command,
-)
+import sys
+from pathlib import Path
+
+for _repo_parent in Path(__file__).resolve().parents:
+    if (_repo_parent / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_repo_parent / "src"))
+        break
+else:
+    raise RuntimeError("could not locate repository src directory")
+
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+from krenn_gu.p5_weighted_h22_contraction import WORDS, build_model
+REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/p5/h22/common-active-binary-triangle-component-generic")
+
+from derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate import singular_command
+
+
 
 PAIRS = tuple(itertools.combinations(range(4), 2))
 

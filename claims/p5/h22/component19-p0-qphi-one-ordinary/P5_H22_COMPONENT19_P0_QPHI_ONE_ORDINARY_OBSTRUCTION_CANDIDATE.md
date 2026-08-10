@@ -123,4 +123,4 @@ broad brute force, or global Krenn–Gu inference is used.  A separate no-import
 audit reconstructed the complete genuine incidence, caught and repaired an
 intermediate missing-`B01` saturation in its own audit, and promoted the
 frozen theorem to `VERIFIED`; the discovery label remains `CANDIDATE`.  See
-[`P5_H22_COMPONENT19_P0_QPHI_ONE_INDEPENDENT_VERIFICATION.md`](P5_H22_COMPONENT19_P0_QPHI_ONE_INDEPENDENT_VERIFICATION.md).
+[`P5_H22_COMPONENT19_P0_QPHI_ONE_INDEPENDENT_VERIFICATION.md`](../component19-p0-qphi-one-independent/P5_H22_COMPONENT19_P0_QPHI_ONE_INDEPENDENT_VERIFICATION.md).

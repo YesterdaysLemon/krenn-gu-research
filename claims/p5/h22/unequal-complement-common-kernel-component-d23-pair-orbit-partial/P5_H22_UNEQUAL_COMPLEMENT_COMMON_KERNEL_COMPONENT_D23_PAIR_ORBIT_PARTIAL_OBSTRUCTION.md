@@ -51,13 +51,13 @@ No finite-field computation is used as proof.
 A subsequent two-minor coefficient-field certificate closes the divisor
 `R*h2=1` inside this residual.  Thus the refined unknown part also satisfies
 `R*h2!=1`:
-[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2R1_RESIDUAL_OBSTRUCTION.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2R1_RESIDUAL_OBSTRUCTION.md).
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2R1_RESIDUAL_OBSTRUCTION.md`](../unequal-complement-common-kernel-component-d23-h2r1-residual/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H2R1_RESIDUAL_OBSTRUCTION.md).
 
 Replay with:
 
 ```
-uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_pair_orbit_partial_obstruction.py
-uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_pair_orbit_partial_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-pair-orbit-partial/verify_p5_h22_unequal_complement_common_kernel_component_d23_pair_orbit_partial_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-pair-orbit-partial/audit_p5_h22_unequal_complement_common_kernel_component_d23_pair_orbit_partial_obstruction.py
 ```
 
 The audit independently rebuilds all relevant maps and checks Q1, Q2, Q3 and

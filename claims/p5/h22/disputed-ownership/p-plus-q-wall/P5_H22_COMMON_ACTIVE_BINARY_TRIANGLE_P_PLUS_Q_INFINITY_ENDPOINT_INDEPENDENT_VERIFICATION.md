@@ -322,7 +322,7 @@ no finite fields, parameter grids, numerical ranks, or later compatibility
 artifact.  Run:
 
 ```text
-uv run --with sympy python audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_candidate_verifier.py
+uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_candidate_verifier.py
 ```
 
 The script fails closed on any changed projection ideal, kernel, diagonal,

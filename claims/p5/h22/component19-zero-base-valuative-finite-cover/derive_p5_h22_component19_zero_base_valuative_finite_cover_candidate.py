@@ -31,9 +31,9 @@ CERTIFICATE = (
 )
 INPUTS = tuple(REPO_ROOT / name for name in (
     "claims/p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md",
-    "P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md",
-    "P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md",
-    "P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_VERIFICATION.md",
+    'claims/p5/h22/component19-p0-finite-ordinary-aggregate/P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md',
+    'claims/p5/h22/component19-q-equals-phi/P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md',
+    'claims/p5/h22/common-kernel-vertical-triangle-component-generic/P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_VERIFICATION.md',
 ))
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))
@@ -598,7 +598,7 @@ def main():
             "hidden-divisor extraction, complete extension kernels, fixed "
             "target-local minors, and a field-valued case partition"
         ),
-        "command": f"uv run --with sympy python {SCRIPT.name}",
+        "command": f"uv run --with sympy python {SCRIPT.relative_to(REPO_ROOT).as_posix()}",
         "outputs": {
             SCRIPT.name: sha256(SCRIPT), REPORT.name: sha256(REPORT),
             CERTIFICATE.name: sha256(CERTIFICATE),

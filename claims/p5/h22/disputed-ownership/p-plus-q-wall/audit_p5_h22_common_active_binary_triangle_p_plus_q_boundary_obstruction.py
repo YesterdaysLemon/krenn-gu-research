@@ -8,6 +8,15 @@ mask-6 certificate, and replays the mathematical verifiers used by each cell.
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[5] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import hashlib
 import json
 import subprocess
@@ -111,56 +120,47 @@ FILES = {
     "p4_primary": "verify_p4_common_active_binary_triangle_p_plus_q_boundary.py",
     "p4_audit": "audit_p4_common_active_binary_triangle_p_plus_q_boundary.py",
     "partial_report": (
-        "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_PARTIAL.md"
+        'claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_PARTIAL.md'
     ),
     "partial_audit": (
-        "audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_partial.py"
+        'claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_partial.py'
     ),
     "b_full_audit": (
-        "audit_p5_h22_common_active_binary_triangle_p_plus_q_"
-        "b_full_infinity_finite_pair_verifier.py"
+        'claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_b_full_infinity_finite_pair_verifier.py'
     ),
     "b_drop_audit": (
-        "audit_p5_h22_common_active_binary_triangle_p_plus_q_"
-        "generic_d01_infinity_b_drop.py"
+        'claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_generic_d01_infinity_b_drop.py'
     ),
     "exceptional_audit": (
-        "audit_p5_h22_common_active_binary_triangle_p_plus_q_"
-        "exceptional_fibres_independent.py"
+        'claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_independent.py'
     ),
     "endpoint_base_audit": (
-        "audit_p5_h22_common_active_binary_triangle_p_plus_q_"
-        "infinity_endpoint_candidate_verifier.py"
+        'claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_candidate_verifier.py'
     ),
     "endpoint_integration_audit": (
-        "audit_p5_h22_common_active_binary_triangle_p_plus_q_"
-        "infinity_endpoint_integration_verifier.py"
+        'claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_integration_verifier.py'
     ),
     "endpoint_compatibility_audit": (
-        "audit_p5_h22_common_active_binary_triangle_p_plus_q_"
-        "infinity_endpoint_compatibility_obstruction_verifier.py"
+        'claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_compatibility_obstruction_verifier.py'
     ),
-    "r0_primary": "derive_p5_h22_embedded_p3_component_r_zero_boundary_obstruction.py",
+    "r0_primary": 'claims/p5/h22/embedded-p3/derive_p5_h22_embedded_p3_component_r_zero_boundary_obstruction.py',
     "r0_historical_audit": (
-        "audit_p5_h22_embedded_p3_component_r_zero_boundary_independent.py"
+        'claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_r_zero_boundary_independent.py'
     ),
     "r0_endpoint_audit": (
-        "audit_p5_h22_embedded_p3_component_r_zero_t_nonzero_"
-        "weight_endpoints_verifier.py"
+        'claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_verifier.py'
     ),
-    "coverage_audit": "audit_p5_h22_p_plus_q_diagonal_dvr_coverage.py",
+    "coverage_audit": 'claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_p_plus_q_diagonal_dvr_coverage.py',
     "mask6_primary": (
-        "derive_p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_"
-        "obstruction_candidate.py"
+        'claims/p5/h22/disputed-ownership/p-plus-q-wall/derive_p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_obstruction_candidate.py'
     ),
     "mask6_audit": (
-        "audit_p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_"
-        "independent.py"
+        'claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_independent.py'
     ),
-    "coverage_ledger": LEDGER.name,
-    "mask6_certificate": MASK6_CERTIFICATE.name,
-    "aggregate_theorem": THEOREM.name,
-    "aggregate_primary": PRIMARY.name,
+    "coverage_ledger": LEDGER.relative_to(REPO_ROOT).as_posix(),
+    "mask6_certificate": MASK6_CERTIFICATE.relative_to(REPO_ROOT).as_posix(),
+    "aggregate_theorem": THEOREM.relative_to(REPO_ROOT).as_posix(),
+    "aggregate_primary": PRIMARY.relative_to(REPO_ROOT).as_posix(),
 }
 
 
@@ -176,7 +176,7 @@ def sha256(path: Path) -> str:
 def git_commit() -> str:
     return subprocess.run(
         ("git", "rev-parse", "HEAD"),
-        cwd=ROOT,
+        cwd=REPO_ROOT,
         text=True,
         encoding="utf-8",
         capture_output=True,
@@ -187,7 +187,7 @@ def git_commit() -> str:
 def run_json(*command: str) -> dict[str, Any]:
     completed = subprocess.run(
         command,
-        cwd=ROOT,
+        cwd=REPO_ROOT,
         text=True,
         encoding="utf-8",
         capture_output=True,
@@ -521,7 +521,7 @@ def theorem_scope_audit() -> dict[str, bool]:
 
 def main() -> None:
     for path_name in FILES.values():
-        require((ROOT / path_name).is_file(), f"missing input: {path_name}")
+        require((REPO_ROOT / path_name).is_file(), f"missing input: {path_name}")
     require(REPORT.is_file(), f"missing run report: {REPORT.name}")
 
     partition = exact_p4_partition()
@@ -543,7 +543,9 @@ def main() -> None:
     }
     require(set(integrated.values()) == {"VERIFIED"}, "actual wall retains a gap")
 
-    inputs = {key: sha256(ROOT / path_name) for key, path_name in FILES.items()}
+    inputs = {
+        key: sha256(REPO_ROOT / path_name) for key, path_name in FILES.items()
+    }
     result = {
         "status": "pass",
         "claim_label": "VERIFIED",
@@ -562,9 +564,7 @@ def main() -> None:
             "the primary aggregate verifier"
         ),
         "command": (
-            "uv run --with z3-solver python "
-            "audit_p5_h22_common_active_binary_triangle_p_plus_q_"
-            "boundary_obstruction.py"
+            'uv run --with z3-solver python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py'
         ),
         "outputs": {REPORT.name: sha256(REPORT), SCRIPT.name: sha256(SCRIPT)},
         "limitations": (

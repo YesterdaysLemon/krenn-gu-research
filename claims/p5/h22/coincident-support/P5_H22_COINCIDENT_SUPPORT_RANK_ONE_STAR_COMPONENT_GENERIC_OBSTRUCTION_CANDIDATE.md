@@ -166,8 +166,8 @@ neither direction can be binary at any projective weight.  Hence there is no
 ## Replay
 
 ```text
-uv run --with sympy python derive_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
-uv run --with sympy python audit_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
+uv run --with sympy python claims/p5/h22/coincident-support/derive_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
+uv run --with sympy python claims/p5/h22/coincident-support/audit_p5_h22_coincident_support_rank_one_star_component_generic_obstruction_candidate.py
 ```
 
 The standalone replay verifies the pure restriction, all twenty-four `D01`

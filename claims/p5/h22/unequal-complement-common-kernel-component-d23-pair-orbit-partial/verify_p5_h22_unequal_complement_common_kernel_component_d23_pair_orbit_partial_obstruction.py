@@ -12,11 +12,6 @@ import subprocess
 
 import sympy as sp
 
-from derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate import (
-    build_model,
-    project,
-)
-from verify_p5_h31_marked_basis_open_branch import one_marked_map
 import sys
 from pathlib import Path
 
@@ -25,14 +20,18 @@ for _p in Path(__file__).resolve().parents:
         sys.path.insert(0, str(_p / "src"))
         break
 from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+from krenn_gu.p5_weighted_h22_contraction import build_model, project
 
 REPO_ROOT, HERE = bootstrap(__file__)
 expose_claim_package(REPO_ROOT, "claims/p5/h31/unequal-complement-common-kernel")
 
+from verify_p5_h31_marked_basis_open_branch import one_marked_map
 from verify_p5_h31_unequal_complement_common_kernel_component_generic_obstruction import (
     component_rows,
     shifted,
 )
+
+
 
 A, R, D = sp.symbols("A R D")
 h0, h1, h2, h3, rho = sp.symbols("h0 h1 h2 h3 rho")

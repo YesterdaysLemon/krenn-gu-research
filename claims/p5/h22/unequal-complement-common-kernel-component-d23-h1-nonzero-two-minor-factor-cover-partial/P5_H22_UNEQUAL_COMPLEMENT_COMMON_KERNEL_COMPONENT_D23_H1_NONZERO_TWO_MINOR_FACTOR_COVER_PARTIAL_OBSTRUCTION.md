@@ -104,8 +104,8 @@ identity (8)--(9), not on the interpolation fibres.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_h1_nonzero_two_minor_factor_cover_partial_obstruction.py
-uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_h1_nonzero_two_minor_factor_cover_partial_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-h1-nonzero-two-minor-factor-cover-partial/verify_p5_h22_unequal_complement_common_kernel_component_d23_h1_nonzero_two_minor_factor_cover_partial_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-h1-nonzero-two-minor-factor-cover-partial/audit_p5_h22_unequal_complement_common_kernel_component_d23_h1_nonzero_two_minor_factor_cover_partial_obstruction.py
 ```
 
 The audit imports no repository code and independently rebuilds the

@@ -7,6 +7,15 @@ original source coordinates and imports no discovery or verification code.
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import hashlib
 import itertools
 import json
@@ -24,12 +33,10 @@ REPORT = ROOT / (
 )
 SOURCE = ROOT / "P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION_CANDIDATE.md"
 H31_NOTE = (
-    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
-    / "P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md"
+    REPO_ROOT / "claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md"
 )
 H31_VERIFIER = (
-    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
-    / "verify_p5_h31_embedded_p3_component_r_zero_boundary.py"
+    REPO_ROOT / "claims/p5/h31/embedded-p3/verify_p5_h31_embedded_p3_component_r_zero_boundary.py"
 )
 VERIFICATION_REPORT = ROOT / (
     "P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_T_NONZERO_WEIGHT_"
@@ -217,7 +224,7 @@ def main():
             "structural zero-column obstructions; coefficientwise identity with "
             "the verified deletion-zero H31 model"
         ),
-        "command": f"uv run --with sympy python {SCRIPT.name}",
+        "command": f"uv run --with sympy python {SCRIPT.relative_to(REPO_ROOT).as_posix()}",
         "outputs": {
             SCRIPT.name: sha256(SCRIPT),
             REPORT.name: sha256(REPORT),

@@ -3,6 +3,21 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+from verify_p5_h22_embedded_p3_component_generic_obstruction import (
+    weighted_coefficients,
+    weighted_row,
+)
+from verify_p5_h31_marked_basis_open_branch import one_marked_map
+
+
+
 import hashlib
 import itertools
 import json
@@ -10,11 +25,6 @@ from pathlib import Path
 
 import sympy as sp
 
-from verify_p5_h22_embedded_p3_component_generic_obstruction import (
-    weighted_coefficients,
-    weighted_row,
-)
-from verify_p5_h31_marked_basis_open_branch import one_marked_map
 
 
 ROOT = Path(__file__).resolve().parent
@@ -24,8 +34,7 @@ THEOREM = (
 )
 GENERIC = ROOT / "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
 H31_BOUNDARY = (
-    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
-    / "P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md"
+    REPO_ROOT / "claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md"
 )
 WORDS3 = tuple(itertools.product((0, 1), repeat=3))
 PERMUTATIONS5 = tuple(itertools.permutations(range(5)))

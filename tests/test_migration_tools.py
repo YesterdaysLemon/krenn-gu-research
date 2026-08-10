@@ -1942,6 +1942,7 @@ class EvidenceSemanticsContractTests(unittest.TestCase):
         entry = next(
             e for e in ledger["entries"]
             if e["document"] ==
+            "claims/p5/h22/component19-p0-ordinary-boundary/"
             "P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md")
         self.assertEqual(entry["status"], "exploratory")
         self.assertIn("the representative component-19 frozen certificate "

@@ -11,9 +11,21 @@ from pathlib import Path
 
 import sympy as sp
 
-from derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate import (
-    build_model,
-)
+import sys
+from pathlib import Path
+
+for _repo_parent in Path(__file__).resolve().parents:
+    if (_repo_parent / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_repo_parent / "src"))
+        break
+else:
+    raise RuntimeError("could not locate repository src directory")
+
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+from krenn_gu.p5_weighted_h22_contraction import build_model
+REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/p5/h22/common-center-kernel-star")
+
 from verify_p5_h22_common_center_kernel_star_component_partial import (
     coefficient_row,
     singular_command,
@@ -24,6 +36,8 @@ from verify_p5_h31_marked_basis_open_branch import (
     one_marked_map,
     permanent,
 )
+
+
 
 ROOT = Path(__file__).resolve().parent
 NOTE = ROOT / "P5_COMPONENT23_S_ONE_TRIPLE_PARAMETER_INFINITY_CORNER_OBSTRUCTION.md"

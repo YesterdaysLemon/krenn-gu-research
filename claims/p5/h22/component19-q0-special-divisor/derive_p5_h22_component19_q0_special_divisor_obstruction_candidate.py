@@ -29,9 +29,9 @@ REPORT = ROOT / "P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_OBSTRUCTION_CANDIDATE.md"
 CERTIFICATE = ROOT / "p5_h22_component19_q0_special_divisor_certificate.json"
 INPUTS = tuple(REPO_ROOT / name for name in (
     "claims/p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md",
-    "P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md",
-    "P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_VERIFICATION.md",
-    "p5_h22_common_kernel_vertical_triangle_component_generic_certificate.json",
+    'claims/p5/h22/common-kernel-vertical-triangle-component-generic/P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md',
+    'claims/p5/h22/common-kernel-vertical-triangle-component-generic/P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_VERIFICATION.md',
+    'claims/p5/h22/common-kernel-vertical-triangle-component-generic/p5_h22_common_kernel_vertical_triangle_component_generic_certificate.json',
     "claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
 ))
 
@@ -544,7 +544,7 @@ def main():
         "scope": stored["scope"],
         "inputs": {path.name: sha256(path) for path in INPUTS},
         "method": stored["method"],
-        "command": f"uv run --with sympy python {SCRIPT.name}",
+        "command": f"uv run --with sympy python {SCRIPT.relative_to(REPO_ROOT).as_posix()}",
         "outputs": {
             SCRIPT.name: sha256(SCRIPT), CERTIFICATE.name: sha256(CERTIFICATE),
             REPORT.name: sha256(REPORT),

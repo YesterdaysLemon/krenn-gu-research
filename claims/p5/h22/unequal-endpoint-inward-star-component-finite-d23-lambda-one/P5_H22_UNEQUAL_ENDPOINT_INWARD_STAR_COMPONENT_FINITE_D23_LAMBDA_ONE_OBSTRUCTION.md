@@ -7,7 +7,7 @@ of component twenty-five, the finite-`D23` weighted slice at `lambda=1` has
 no genuine binary neighbour.
 
 This closes one divisor inside the `A23` branch of
-[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md).
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md`](../unequal-endpoint-inward-star-component-finite-d23-factor-cover/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D23_FACTOR_COVER.md).
 The remaining finite-`D23` branches, the finite-`D01` residual, and the full
 generic weighted `H22` fibre remain **UNKNOWN**.  The global Krenn--Gu
 conjecture remains **UNRESOLVED**.
@@ -82,10 +82,10 @@ Run:
 
 ```text
 uv run --with sympy python \
-  verify_p5_h22_unequal_endpoint_inward_star_component_finite_d23_lambda_one.py
+  claims/p5/h22/unequal-endpoint-inward-star-component-finite-d23-lambda-one/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d23_lambda_one.py
 
 uv run --with sympy python \
-  audit_p5_h22_unequal_endpoint_inward_star_component_finite_d23_lambda_one.py
+  claims/p5/h22/unequal-endpoint-inward-star-component-finite-d23-lambda-one/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d23_lambda_one.py
 ```
 
 The primary verifier constructs (1)--(3) from the certified component model

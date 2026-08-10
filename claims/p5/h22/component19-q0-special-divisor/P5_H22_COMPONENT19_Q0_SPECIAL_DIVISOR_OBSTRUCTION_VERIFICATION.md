@@ -170,7 +170,7 @@ to the verified theorem.
 ## Replay
 
 ```powershell
-uv run --with sympy python audit_p5_h22_component19_q0_special_divisor_obstruction_candidate.py
+uv run --with sympy python claims/p5/h22/component19-q0-special-divisor/audit_p5_h22_component19_q0_special_divisor_obstruction_candidate.py
 ```
 
 Expected terminal marker:

@@ -117,19 +117,19 @@ First replay the `es=1` prerequisite:
 
 ```text
 uv run --with sympy python \
-  verify_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_one_d01_generic_weight_obstruction.py
+  claims/p5/h22/unequal-endpoint-inward-star-component-projective-g-zero-es-one-d01-generic-weight/verify_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_one_d01_generic_weight_obstruction.py
 uv run --with sympy python \
-  audit_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_one_d01_generic_weight_obstruction.py
+  claims/p5/h22/unequal-endpoint-inward-star-component-projective-g-zero-es-one-d01-generic-weight/audit_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_one_d01_generic_weight_obstruction.py
 ```
 
 Then run:
 
 ```text
 uv run --with sympy python \
-  verify_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_minus_one_d01_weight_closure.py
+  claims/p5/h22/unequal-endpoint-inward-star-component-projective-g-zero-es-minus-one-d01-weight-closure/verify_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_minus_one_d01_weight_closure.py
 
 uv run --with sympy python \
-  audit_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_minus_one_d01_weight_closure.py
+  claims/p5/h22/unequal-endpoint-inward-star-component-projective-g-zero-es-minus-one-d01-weight-closure/audit_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_minus_one_d01_weight_closure.py
 ```
 
 All calculations are exact in characteristic zero.  No finite-field output

@@ -185,7 +185,7 @@ payload = {
         "fresh regular p0 basis, direct infinity contractions, saturated "
         "mixed-coefficient identity, and direct phi=+/-1 endpoint replay"
     ),
-    "command": f"uv run --with sympy python {SCRIPT.name}",
+    "command": f"uv run --with sympy python {SCRIPT.relative_to(REPO_ROOT).as_posix()}",
     "outputs": {SCRIPT.name: sha256(SCRIPT), REPORT.name: sha256(REPORT)},
     "ordinary_tensor": "T1111=-4*(phi^2+1)/phi",
     "required_binary_diagonal": "A23=-2*(C1+C2)",

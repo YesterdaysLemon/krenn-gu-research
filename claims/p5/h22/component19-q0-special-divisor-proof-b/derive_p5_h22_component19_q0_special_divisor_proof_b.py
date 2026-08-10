@@ -24,11 +24,8 @@ ROOT = HERE
 SCRIPT = Path(__file__).resolve()
 REPORT = ROOT / "P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_PROOF_B.md"
 COMPONENT = REPO_ROOT / "claims/p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md"
-GENERIC_THEOREM = ROOT / (
-    "P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_"
-    "GENERIC_OBSTRUCTION_VERIFICATION.md"
-)
-CONVENTION = ROOT / "claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md"
+GENERIC_THEOREM = REPO_ROOT / "claims/p5/h22/common-kernel-vertical-triangle-component-generic/P5_H22_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_VERIFICATION.md"
+CONVENTION = REPO_ROOT / "claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md"
 PAIRS = tuple(itertools.combinations(range(4), 2))
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 p, phi = sp.symbols("p phi", nonzero=True)
@@ -413,7 +410,7 @@ payload = {
         "infinity contraction equations, structural case splits, and fixed "
         "extension/one-marked minors; no Groebner basis"
     ),
-    "command": f"uv run --with sympy python {SCRIPT.name}",
+    "command": f"uv run --with sympy python {SCRIPT.relative_to(REPO_ROOT).as_posix()}",
     "outputs": {SCRIPT.name: sha256(SCRIPT), REPORT.name: sha256(REPORT)},
     "pair_profile": pair_profile,
     "finite_shared_branch": {

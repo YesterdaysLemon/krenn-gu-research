@@ -3,6 +3,15 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[5] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import hashlib
 import itertools
 import json
@@ -18,30 +27,15 @@ NOTE = (
     ROOT
     / "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_CANDIDATE.md"
 )
-P4_BOUNDARY = ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
+P4_BOUNDARY = REPO_ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
 H31_ENDPOINT = (
-    ROOT
-    / "claims"
-    / "p5"
-    / "h31"
-    / "common-active-binary-triangle"
-    / "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md"
+    REPO_ROOT / "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md"
 )
 H31_PRIMARY = (
-    ROOT
-    / "claims"
-    / "p5"
-    / "h31"
-    / "common-active-binary-triangle"
-    / "verify_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py"
+    REPO_ROOT / "claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py"
 )
 H31_AUDIT = (
-    ROOT
-    / "claims"
-    / "p5"
-    / "h31"
-    / "common-active-binary-triangle"
-    / "audit_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py"
+    REPO_ROOT / "claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_p_plus_q_infinity_endpoint_obstruction.py"
 )
 ENDPOINT_AUDIT_REPORT = (
     ROOT
@@ -857,7 +851,7 @@ def main():
             )
         },
         "method": "direct homogeneous D01/D23 marked permanent reconstruction; exact saturated projections; complete symbolic kernels and bounded fixed minors",
-        "command": "uv run --with sympy python derive_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_candidate.py",
+        "command": 'uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/derive_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_candidate.py',
         "outputs": {
             NOTE.name: sha256(NOTE),
             Path(__file__).name: sha256(Path(__file__)),

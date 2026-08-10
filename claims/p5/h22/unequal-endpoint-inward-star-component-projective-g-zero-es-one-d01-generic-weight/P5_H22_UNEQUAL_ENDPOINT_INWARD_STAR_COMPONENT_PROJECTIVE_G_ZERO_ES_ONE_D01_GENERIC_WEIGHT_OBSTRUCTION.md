@@ -113,10 +113,10 @@ position-over-term module reduction.
 
 ```text
 uv run --with sympy python \
-  verify_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_one_d01_generic_weight_obstruction.py
+  claims/p5/h22/unequal-endpoint-inward-star-component-projective-g-zero-es-one-d01-generic-weight/verify_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_one_d01_generic_weight_obstruction.py
 
 uv run --with sympy python \
-  audit_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_one_d01_generic_weight_obstruction.py
+  claims/p5/h22/unequal-endpoint-inward-star-component-projective-g-zero-es-one-d01-generic-weight/audit_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_es_one_d01_generic_weight_obstruction.py
 ```
 
 Both calculations are exact in characteristic zero.  No finite-field output

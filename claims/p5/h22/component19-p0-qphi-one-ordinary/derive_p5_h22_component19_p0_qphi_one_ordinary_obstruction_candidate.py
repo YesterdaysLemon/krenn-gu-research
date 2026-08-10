@@ -29,7 +29,7 @@ REPORT = ROOT / "P5_H22_COMPONENT19_P0_QPHI_ONE_ORDINARY_OBSTRUCTION_CANDIDATE.m
 CERTIFICATE = ROOT / "p5_h22_component19_p0_qphi_one_ordinary_obstruction_certificate.json"
 INPUTS = tuple(REPO_ROOT / name for name in (
     "claims/p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md",
-    "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_VERIFICATION.md",
+    'claims/p5/h22/common-active-binary-triangle-component-generic/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_VERIFICATION.md',
     "docs/NEXT_INSTANCE_HANDOFF_2026-07-31.md",
 ))
 
@@ -431,7 +431,7 @@ def main():
         "scope": "component 19 finite ordinary divisor p=0, q*phi=1, phi^2!=1",
         "inputs": {path.name: sha256(path) for path in INPUTS},
         "method": "direct Q(phi) reconstruction, exact permanents and pair minors, complete finite/infinity incidence elimination, shared-kernel basis, and two fixed one-marked minors",
-        "command": f"uv run --with sympy python {SCRIPT.name}",
+        "command": f"uv run --with sympy python {SCRIPT.relative_to(REPO_ROOT).as_posix()}",
         "outputs": {
             SCRIPT.name: sha256(SCRIPT),
             REPORT.name: sha256(REPORT),

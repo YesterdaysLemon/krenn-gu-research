@@ -3,16 +3,29 @@
 
 from __future__ import annotations
 
-import functools
-import json
+import sys
+from pathlib import Path
 
-import sympy as sp
+sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "src"))
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/p5/h22/unequal-complement-common-kernel-component-d23-pair-orbit-partial")
+expose_claim_package(REPO_ROOT, "claims/p5/h22/unequal-complement-common-kernel-component-d23-rho-zero-h1-nonzero-supplement")
 
 import verify_p5_h22_unequal_complement_common_kernel_component_d23_pair_orbit_partial_obstruction as V
 from verify_p5_h22_unequal_complement_common_kernel_component_d23_rho_zero_h1_nonzero_supplement import (
     E,
     kernel,
 )
+
+
+
+import functools
+import json
+
+import sympy as sp
+
 
 ROWS = (
     (0, 1, 2, 3, 4, 5, 7),

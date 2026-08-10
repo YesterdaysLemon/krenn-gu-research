@@ -19,7 +19,7 @@ component fibres and the global Krenn--Gu conjecture also remain
 ## Exact survivor decomposition
 
 Use the normalized component basis from
-[`P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md`](claims/p4/classifications/P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md)
+[`P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md`](../../../p4/classifications/P4_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT.md)
 over `K=C(A,R,D)`.  Put
 
 ```text
@@ -83,15 +83,15 @@ source coordinate one.  The exact component-twenty-two `H31` theorem already
 excludes that endpoint.
 
 The two rational points recorded in
-[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_SURVIVOR_RECONNAISSANCE.md`](P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_SURVIVOR_RECONNAISSANCE.md)
+[`P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_SURVIVOR_RECONNAISSANCE.md`](../unequal-complement-common-kernel-component-survivor-reconnaissance/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_SURVIVOR_RECONNAISSANCE.md)
 lie on `P3`; their eight nonzero one-marked minors are consistent witnesses,
 not substitutes for the branchwise unit-ideal proof.
 
 ## Replay
 
 ```text
-uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d01_pair_orbit_obstruction.py
-uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d01_pair_orbit_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d01-pair-orbit/verify_p5_h22_unequal_complement_common_kernel_component_d01_pair_orbit_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d01-pair-orbit/audit_p5_h22_unequal_complement_common_kernel_component_d01_pair_orbit_obstruction.py
 ```
 
 The primary verifier computes the exact radical decomposition and all three

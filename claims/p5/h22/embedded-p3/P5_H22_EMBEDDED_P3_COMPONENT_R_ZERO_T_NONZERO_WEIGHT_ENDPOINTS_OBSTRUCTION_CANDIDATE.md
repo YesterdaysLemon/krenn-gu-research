@@ -15,7 +15,7 @@ inputs:
 method: exact characteristic-zero reconstruction in original coordinates, structural zero-column obstructions, and coefficientwise identification of D01 at [0:1] with the verified deletion-zero H31 direction
 command: |
   uv run --with sympy python claims/p5/h31/embedded-p3/verify_p5_h31_embedded_p3_component_r_zero_boundary.py
-  uv run --with sympy python derive_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_obstruction_candidate.py
+  uv run --with sympy python claims/p5/h22/embedded-p3/derive_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_obstruction_candidate.py
 outputs:
   derive_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_obstruction_candidate.py: hash reported by replay
   P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_T_NONZERO_WEIGHT_ENDPOINTS_OBSTRUCTION_CANDIDATE.md: hash reported by replay
@@ -119,9 +119,9 @@ occur.
 ## Replay
 
 ```text
-uv run --with sympy python derive_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_obstruction_candidate.py
+uv run --with sympy python claims/p5/h22/embedded-p3/derive_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_obstruction_candidate.py
 
-uv run --with sympy python audit_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_verifier.py
+uv run --with sympy python claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_verifier.py
 ```
 
 The script is standalone.  It reconstructs both endpoint contractions from

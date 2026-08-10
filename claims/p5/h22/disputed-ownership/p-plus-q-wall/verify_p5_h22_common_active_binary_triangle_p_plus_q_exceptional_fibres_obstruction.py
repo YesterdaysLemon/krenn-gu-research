@@ -3,16 +3,13 @@
 
 from __future__ import annotations
 
-import hashlib
-import itertools
-import json
-import shutil
-import subprocess
-from datetime import UTC, datetime
+import sys
 from pathlib import Path
 
-import sympy as sp
+sys.path.insert(0, str(Path(__file__).resolve().parents[5] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
+REPO_ROOT, HERE = bootstrap(__file__)
 from audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_partial import (
     MIXED_WORDS,
     WORDS,
@@ -24,19 +21,27 @@ from audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_partial import
     reconstruct_model,
 )
 
+
+
+import hashlib
+import itertools
+import json
+import shutil
+import subprocess
+from datetime import UTC, datetime
+from pathlib import Path
+
+import sympy as sp
+
+
 ROOT = Path(__file__).resolve().parent
 THEOREM = (
     ROOT
     / "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_FIBRES_OBSTRUCTION.md"
 )
-P4_BOUNDARY = ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
+P4_BOUNDARY = REPO_ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
 H31_EXCEPTIONAL = (
-    ROOT
-    / "claims"
-    / "p5"
-    / "h31"
-    / "common-active-binary-triangle"
-    / "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md"
+    REPO_ROOT / "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md"
 )
 H22_PARTIAL = ROOT / "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_PARTIAL.md"
 INDEPENDENT_AUDIT = (
@@ -603,7 +608,7 @@ def main():
                     INDEPENDENT_AUDIT.name: sha256(INDEPENDENT_AUDIT),
                 },
                 "method": "exact direct orientations, saturated D01 projections, complete symbolic kernels, and fixed marked minors",
-                "command": "uv run --with sympy python verify_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_obstruction.py",
+                "command": 'uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/verify_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_obstruction.py',
                 "outputs": {THEOREM.name: sha256(THEOREM)},
                 "limitations": "verified diagonal-DVR a=0,-1 H22 fibres only; no other centres, non-diagonal closure, gluing, or global claim",
                 "geometry": geometry,

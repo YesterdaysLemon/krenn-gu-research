@@ -138,11 +138,11 @@ Replay the primary and the two disjoint audits with
 
 ```text
 uv run --with sympy python \
-  verify_p5_h22_common_active_binary_triangle_p_plus_q_generic_d01_infinity_obstruction.py
+  claims/p5/h22/disputed-ownership/p-plus-q-wall/verify_p5_h22_common_active_binary_triangle_p_plus_q_generic_d01_infinity_obstruction.py
 
 uv run --with sympy python \
-  audit_p5_h22_common_active_binary_triangle_p_plus_q_b_full_infinity_finite_pair_verifier.py
+  claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_b_full_infinity_finite_pair_verifier.py
 
 uv run --with sympy python \
-  audit_p5_h22_common_active_binary_triangle_p_plus_q_generic_d01_infinity_b_drop.py
+  claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_generic_d01_infinity_b_drop.py
 ```

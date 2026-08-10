@@ -27,8 +27,8 @@ ROOT = HERE
 SCRIPT = Path(__file__).resolve()
 REPORT = ROOT / "P5_H22_COMPONENT19_Z0_LAURENT_FIELD_NO_IMPORT_VERIFICATION.md"
 COMPONENT = REPO_ROOT / "claims/p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md"
-P0_SCRIPT = ROOT / "audit_p5_h22_component19_p0_finite_ordinary_aggregate.py"
-P0_REPORT = ROOT / "P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md"
+P0_SCRIPT = REPO_ROOT / "claims/p5/h22/component19-p0-finite-ordinary-aggregate/audit_p5_h22_component19_p0_finite_ordinary_aggregate.py"
+P0_REPORT = REPO_ROOT / "claims/p5/h22/component19-p0-finite-ordinary-aggregate/P5_H22_COMPONENT19_P0_FINITE_ORDINARY_AGGREGATE_VERIFICATION.md"
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 TRIPLETS = (
     ("A01", "B01", "A23"),
@@ -362,8 +362,8 @@ def pole_escape_profile():
 
 def replay_p0_aggregate():
     completed = subprocess.run(
-        ("uv", "run", "--with", "sympy", "python", P0_SCRIPT.name),
-        cwd=ROOT,
+        ("uv", "run", "--with", "sympy", "python", P0_SCRIPT.relative_to(REPO_ROOT).as_posix()),
+        cwd=REPO_ROOT,
         text=True,
         encoding="utf-8",
         capture_output=True,
@@ -414,7 +414,7 @@ def main():
             "40 parameter-aware exact saturated Singular projections; direct reverse-"
             "branch individual and stacked compatibility minors; exact 1/s escape audit"
         ),
-        "command": f"uv run --with sympy python {SCRIPT.name}",
+        "command": f"uv run --with sympy python {SCRIPT.relative_to(REPO_ROOT).as_posix()}",
         "outputs": {SCRIPT.name: sha256(SCRIPT), REPORT.name: sha256(REPORT)},
         "p0_aggregate": p0,
         "parameter_case_count": len(parameter_cases),

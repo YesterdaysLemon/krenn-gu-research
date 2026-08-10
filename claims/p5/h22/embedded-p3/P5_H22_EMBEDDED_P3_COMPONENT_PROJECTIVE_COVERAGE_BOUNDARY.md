@@ -301,7 +301,7 @@ promoting the full projective embedded-`P3` component.
 Replay:
 
 ```text
-uv run --with sympy python derive_p5_h22_embedded_p3_projective_coverage_boundary.py
+uv run --with sympy python claims/p5/h22/embedded-p3/derive_p5_h22_embedded_p3_projective_coverage_boundary.py
 ```
 
 The script rebuilds all normal support masks, the canonical Pluecker chart,

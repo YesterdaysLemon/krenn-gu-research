@@ -204,8 +204,8 @@ chart, or the global gluing problem.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py
-uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-rt-one-all-pair/verify_p5_h22_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-rt-one-all-pair/audit_p5_h22_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py
 ```
 
 The primary verifier expands all permanents, pair-product ranks, determinant

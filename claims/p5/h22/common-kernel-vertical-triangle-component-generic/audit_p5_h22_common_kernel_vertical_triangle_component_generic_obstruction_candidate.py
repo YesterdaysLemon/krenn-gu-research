@@ -42,13 +42,9 @@ CANDIDATE_CERTIFICATE = ROOT / (
 )
 P4_REPORT = REPO_ROOT / "claims/p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md"
 P4_SCRIPT = REPO_ROOT / "claims/p4/classifications/verify_p4_common_kernel_vertical_triangle_component.py"
-H31_REPORT = ROOT / (
-    "claims/p5/h31/common-kernel-vertical-triangle/P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md"
-)
-H31_SCRIPT = ROOT / (
-    "claims/p5/h31/common-kernel-vertical-triangle/verify_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py"
-)
-H22_DEFINITION = ROOT / "claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md"
+H31_REPORT = REPO_ROOT / "claims/p5/h31/common-kernel-vertical-triangle/P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md"
+H31_SCRIPT = REPO_ROOT / "claims/p5/h31/common-kernel-vertical-triangle/verify_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py"
+H22_DEFINITION = REPO_ROOT / "claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md"
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 MIXED_WORDS = WORDS[1:-1]
@@ -80,7 +76,7 @@ def git_commit() -> str:
 def run_json(command: tuple[str, ...], timeout: int) -> dict[str, Any]:
     completed = subprocess.run(
         command,
-        cwd=ROOT,
+        cwd=REPO_ROOT,
         text=True,
         encoding="utf-8",
         capture_output=True,
@@ -643,7 +639,7 @@ def replay_dependencies() -> dict[str, Any]:
             "--with",
             "sympy",
             "python",
-            P4_SCRIPT.relative_to(ROOT).as_posix(),
+            P4_SCRIPT.relative_to(REPO_ROOT).as_posix(),
         ),
         timeout=120,
     )
@@ -654,7 +650,7 @@ def replay_dependencies() -> dict[str, Any]:
             "--with",
             "sympy",
             "python",
-            H31_SCRIPT.relative_to(ROOT).as_posix(),
+            H31_SCRIPT.relative_to(REPO_ROOT).as_posix(),
         ),
         timeout=180,
     )
@@ -879,7 +875,7 @@ def main() -> None:
             "contractions, exact characteristic-zero Singular projection ideals, "
             "complete symbolic shared kernel, and fixed transverse rank witness"
         ),
-        "command": f"uv run --with sympy python {SCRIPT.name}",
+        "command": f"uv run --with sympy python {SCRIPT.relative_to(REPO_ROOT).as_posix()}",
         "outputs": {
             REPORT.name: sha256(REPORT) if REPORT.is_file() else "pending",
             SCRIPT.name: sha256(SCRIPT),

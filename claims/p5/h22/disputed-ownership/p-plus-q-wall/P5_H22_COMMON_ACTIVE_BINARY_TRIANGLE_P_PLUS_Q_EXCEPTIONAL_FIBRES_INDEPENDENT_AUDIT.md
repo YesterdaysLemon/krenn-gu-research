@@ -125,5 +125,5 @@ Replay with
 
 ```text
 uv run --with sympy python \
-  audit_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_independent.py
+  claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_independent.py
 ```

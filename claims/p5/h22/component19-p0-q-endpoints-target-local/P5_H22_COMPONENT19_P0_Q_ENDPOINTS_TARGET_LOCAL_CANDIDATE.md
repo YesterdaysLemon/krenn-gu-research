@@ -64,8 +64,8 @@ not part of this ordinary claim.
 ## Replay
 
 ```powershell
-uv run --with sympy python explore_p5_h22_component19_p0_q_endpoints.py --q 1
-uv run --with sympy python explore_p5_h22_component19_p0_q_endpoints.py --q -1
+uv run --with sympy python claims/p5/h22/component19-p0-q-endpoints-target-local/explore_p5_h22_component19_p0_q_endpoints.py --q 1
+uv run --with sympy python claims/p5/h22/component19-p0-q-endpoints-target-local/explore_p5_h22_component19_p0_q_endpoints.py --q -1
 ```
 
 Expected marker on each run:

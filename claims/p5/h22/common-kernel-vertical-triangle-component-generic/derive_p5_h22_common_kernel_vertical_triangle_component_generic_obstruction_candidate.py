@@ -33,8 +33,8 @@ CERTIFICATE = ROOT / (
     "p5_h22_common_kernel_vertical_triangle_component_generic_certificate.json"
 )
 COMPONENT = REPO_ROOT / "claims/p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md"
-H31 = ROOT / "claims/p5/h31/common-kernel-vertical-triangle/P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md"
-H22_DEFINITION = ROOT / "claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md"
+H31 = REPO_ROOT / "claims/p5/h31/common-kernel-vertical-triangle/P5_H31_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md"
+H22_DEFINITION = REPO_ROOT / "claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md"
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 MIXED = WORDS[1:-1]
@@ -437,7 +437,7 @@ def main():
             H22_DEFINITION.name: sha256(H22_DEFINITION),
         },
         "method": certificate["method"],
-        "command": f"uv run --with sympy python {SCRIPT.name}",
+        "command": f"uv run --with sympy python {SCRIPT.relative_to(REPO_ROOT).as_posix()}",
         "outputs": {
             SCRIPT.name: sha256(SCRIPT),
             CERTIFICATE.name: sha256(CERTIFICATE),

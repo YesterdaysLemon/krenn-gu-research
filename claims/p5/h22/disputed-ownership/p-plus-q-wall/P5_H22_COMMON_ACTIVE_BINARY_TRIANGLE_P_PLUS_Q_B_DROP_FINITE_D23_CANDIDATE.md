@@ -193,5 +193,5 @@ Replay with
 
 ```text
 uv run --with sympy python \
-  construct_p5_h22_common_active_binary_triangle_p_plus_q_b_drop_finite_d23_candidate.py
+  claims/p5/h22/disputed-ownership/p-plus-q-wall/construct_p5_h22_common_active_binary_triangle_p_plus_q_b_drop_finite_d23_candidate.py
 ```

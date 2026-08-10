@@ -208,9 +208,9 @@ calculation is used.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_finite_all_marking_dense_open_supplement.py
-uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
-uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-finite-all-marking-dense-open-supplement/verify_p5_h22_common_center_kernel_star_component_finite_all_marking_dense_open_supplement.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-r-zero-divisor/verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-r-zero-divisor/audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
 ```
 
 The primary recomputes all twelve ordinary minors over `Q(t)`, the

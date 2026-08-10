@@ -56,7 +56,7 @@ the mixed-extension map with the same apolar insertion matrix `N(w)`
 as in `H31`.  Its rank-drop support consists of three signed lines and
 three coordinate points.  The exact exceptional-kernel and
 truncated-Segre classification in
-[`P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md`](claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md)
+[`P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md`](../../h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_NORMALIZED_BOUNDARY_OBSTRUCTION.md)
 now gives four possible projected-line strata:
 
 ```text
@@ -299,8 +299,8 @@ second insertion pencil and excludes the collapse completely.
 Run
 
 ```text
-python verify_p5_h22_embedded_p3_component_rank_two_line_boundary.py
-python audit_p5_h22_embedded_p3_component_rank_two_line_boundary.py
+python claims/p5/h22/embedded-p3/verify_p5_h22_embedded_p3_component_rank_two_line_boundary.py
+python claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_rank_two_line_boundary.py
 ```
 
 The primary verifier reconstructs all six binary families, every

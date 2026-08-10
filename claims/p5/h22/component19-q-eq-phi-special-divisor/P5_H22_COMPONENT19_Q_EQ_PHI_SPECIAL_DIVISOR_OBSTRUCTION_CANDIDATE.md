@@ -130,6 +130,6 @@ No broad search, parameter grid, finite-field inference, generic-ideal
 specialization, or denominator-divergent marking is used.  The discovery
 label remains `CANDIDATE`, but the frozen statement was independently
 reconstructed and is now `VERIFIED` on the stated open.  See
-[`P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md`](P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md).
+[`P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md`](../component19-q-equals-phi/P5_H22_COMPONENT19_Q_EQUALS_PHI_OBSTRUCTION_VERIFICATION.md).
 Projective opposite-plane boundaries and the global Krenn-Gu problem remain
 unresolved.

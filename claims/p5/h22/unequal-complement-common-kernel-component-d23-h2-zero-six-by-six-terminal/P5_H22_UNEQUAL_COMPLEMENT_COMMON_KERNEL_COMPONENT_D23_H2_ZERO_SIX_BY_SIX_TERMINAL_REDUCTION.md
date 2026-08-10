@@ -68,8 +68,8 @@ eight-by-eight determinant.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_h2_zero_six_by_six_terminal_reduction.py
-uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_h2_zero_six_by_six_terminal_reduction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-h2-zero-six-by-six-terminal/verify_p5_h22_unequal_complement_common_kernel_component_d23_h2_zero_six_by_six_terminal_reduction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-h2-zero-six-by-six-terminal/audit_p5_h22_unequal_complement_common_kernel_component_d23_h2_zero_six_by_six_terminal_reduction.py
 ```
 
 The primary reads the committed component matrix.  The audit rebuilds it from

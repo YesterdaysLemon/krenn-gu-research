@@ -29,7 +29,7 @@ REPORT = ROOT / "P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md"
 CERTIFICATE = ROOT / "p5_h22_component19_p0_ordinary_boundary_certificate.json"
 INPUTS = tuple(REPO_ROOT / name for name in (
     "claims/p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md",
-    "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_VERIFICATION.md",
+    'claims/p5/h22/common-active-binary-triangle-component-generic/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_VERIFICATION.md',
     "docs/NEXT_INSTANCE_HANDOFF_2026-07-31.md",
 ))
 
@@ -465,7 +465,7 @@ def main():
         "scope": "component 19 finite ordinary p=0 boundary on q*phi*(q-phi)!=0",
         "inputs": {path.name: sha256(path) for path in INPUTS},
         "method": "regular intrinsic basis, exact characteristic-zero permanents and pair minors, finite/infinity elimination, complete shared kernel, projected and stacked one-marked minors",
-        "command": f"uv run --with sympy python {SCRIPT.name}",
+        "command": f"uv run --with sympy python {SCRIPT.relative_to(REPO_ROOT).as_posix()}",
         "outputs": {REPORT.name: sha256(REPORT), CERTIFICATE.name: sha256(CERTIFICATE), SCRIPT.name: sha256(SCRIPT)},
         "ordinary_tensor": {"support_after_all_affine_markings": support, "zero_subdivisor": "q=phi"},
         "exact_nonzero_all_pair_open": "q*phi*(q-phi)!=0",

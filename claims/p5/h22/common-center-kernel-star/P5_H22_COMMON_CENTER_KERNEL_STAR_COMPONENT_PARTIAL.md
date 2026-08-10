@@ -19,7 +19,7 @@ conjecture remain **UNRESOLVED**.
 ## Shared mixed module
 
 Use the normalized rows from
-[`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/common-center-kernel-star/P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
+[`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md`](../../h31/common-center-kernel-star/P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_GENERIC_OBSTRUCTION.md),
 
 ```text
 alpha=(A, A+kD, A-C+B+rD, -A-C+B+tD),
@@ -122,8 +122,8 @@ global Krenn--Gu conjecture:               UNRESOLVED
 ## Replay
 
 ```text
-uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_partial.py
-uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_partial.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star/verify_p5_h22_common_center_kernel_star_component_partial.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star/audit_p5_h22_common_center_kernel_star_component_partial.py
 ```
 
 The primary verifier uses exact characteristic-zero coefficient fields.  The

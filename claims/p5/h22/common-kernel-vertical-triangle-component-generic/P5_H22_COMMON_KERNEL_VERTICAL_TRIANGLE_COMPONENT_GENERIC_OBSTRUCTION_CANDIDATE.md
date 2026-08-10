@@ -163,8 +163,8 @@ the shared pure/binary compatibility and then using the transverse mode in
 ## Replay
 
 ```text
-uv run --with sympy python derive_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py
-uv run --with sympy python audit_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py
+uv run --with sympy python claims/p5/h22/common-kernel-vertical-triangle-component-generic/derive_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py
+uv run --with sympy python claims/p5/h22/common-kernel-vertical-triangle-component-generic/audit_p5_h22_common_kernel_vertical_triangle_component_generic_obstruction_candidate.py
 ```
 
 The standalone script reconstructs the component basis, checks all six exact

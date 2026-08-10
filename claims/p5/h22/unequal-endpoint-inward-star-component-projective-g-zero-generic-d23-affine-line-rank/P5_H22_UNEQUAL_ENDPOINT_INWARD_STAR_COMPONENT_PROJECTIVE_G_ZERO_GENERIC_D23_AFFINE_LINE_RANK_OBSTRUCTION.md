@@ -135,10 +135,10 @@ It then independently repeats the residual minor (11).
 
 ```text
 uv run --with sympy python \
-  verify_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_generic_d23_affine_line_rank_obstruction.py
+  claims/p5/h22/unequal-endpoint-inward-star-component-projective-g-zero-generic-d23-affine-line-rank/verify_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_generic_d23_affine_line_rank_obstruction.py
 
 uv run --with sympy python \
-  audit_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_generic_d23_affine_line_rank_obstruction.py
+  claims/p5/h22/unequal-endpoint-inward-star-component-projective-g-zero-generic-d23-affine-line-rank/audit_p5_h22_unequal_endpoint_inward_star_component_projective_g_zero_generic_d23_affine_line_rank_obstruction.py
 ```
 
 Both calculations are exact in characteristic zero.  No finite-field output

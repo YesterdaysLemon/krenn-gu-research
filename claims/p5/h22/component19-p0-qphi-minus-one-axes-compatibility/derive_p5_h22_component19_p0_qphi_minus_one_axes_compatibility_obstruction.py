@@ -27,8 +27,8 @@ SCRIPT = Path(__file__).resolve()
 REPORT = ROOT / "P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_AXES_COMPATIBILITY_OBSTRUCTION_CANDIDATE.md"
 CERTIFICATE = ROOT / "p5_h22_component19_p0_qphi_minus_one_axes_compatibility_certificate.json"
 SOURCE = REPO_ROOT / "claims/p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md"
-FRAME_REPORT = ROOT / "P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_AXES_VERIFICATION.md"
-H22_THEORY = ROOT / "P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md"
+FRAME_REPORT = REPO_ROOT / "claims/p5/h22/component19-p0-qphi-minus-one-axes/P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_AXES_VERIFICATION.md"
+H22_THEORY = REPO_ROOT / "P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md"
 
 WORDS4 = tuple(itertools.product((0, 1), repeat=4))
 MIXED4 = WORDS4[1:-1]
@@ -276,7 +276,7 @@ def main():
             H22_THEORY.name: sha256(H22_THEORY),
         },
         "method": "direct source reconstruction, complete shared extension frame, and fixed full two-contraction third-row stack determinants",
-        "command": f"uv run --with sympy python {SCRIPT.name}",
+        "command": f"uv run --with sympy python {SCRIPT.relative_to(REPO_ROOT).as_posix()}",
         "outputs": {
             SCRIPT.name: sha256(SCRIPT),
             REPORT.name: sha256(REPORT),

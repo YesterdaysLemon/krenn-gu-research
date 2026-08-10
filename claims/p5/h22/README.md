@@ -1,9 +1,10 @@
 # P5 weighted-`H22` obstruction packages
 
-Most subdirectories are migrated component-level generic weighted-`H22`
-claim packages: theorem document + primary verifier + an independent audit
-where one exists, moved together with preserved filenames. Scoped boundary
-leaves are labelled separately below. Stage 9 used batch
+This subtree contains generic, scoped-boundary, partial, candidate,
+historical, and disputed-ownership weighted-`H22` packages. Documents,
+primary verifiers, audits, derivations, and durable certificates retain their
+original evidence roles; colocation does not normalize their statuses. The
+original generic packages remain tabulated below. Stage 9 used batch
 `p5-generic-obstructions-stage9`
 (mapping_sha256
 `68d20c08b987c2465395ec485647dc37c958d8400a8d05dede37559256a47f23`).
@@ -20,6 +21,12 @@ Stage 25 used batch `p5-h22-finite-lambda-one-all-marking-stage25`
 Stage 26 used batch `p5-h22-finite-lambda-zero-all-marking-stage26`
 (mapping_sha256
 `06622ad9c8ab149021fd4d3a5c412327db4a28cd2f210d339418d118a7e85131`).
+Stage 31 used batch `p5-h22-root-exit-stage31` (mapping_sha256
+`899a1070f1515105f76265c2bfcb80e2316c0d3a623ea9afc53a59940779f2e1`)
+to move 351 artifacts: 311 into their H22 claim packages and 40 into the
+neutral [`disputed-ownership/p-plus-q-wall/`](disputed-ownership/p-plus-q-wall/)
+package. The subtree now has 108 direct package directories and 111 total
+package directories when its three nested packages are counted.
 
 Every theorem in the generic table is a **generic/function-field** statement:
 the
@@ -81,8 +88,9 @@ package is the exact characteristic-zero obstruction over `Q(r,t)` for the
 finite `lambda=1` slice and every affine marking at the generic point of the
 common-center-kernel-star component. It is one complete case-coverage leaf,
 not a pointwise theorem for special component fibres and not by itself the
-whole generic finite fibre. The later ordinary-residual theorem at repository
-root combines this leaf with the complete `lambda=0,-1` slices and the
+whole generic finite fibre. The later ordinary-residual theorem in
+[`common-center-kernel-star-component-finite-ordinary-residual/`](common-center-kernel-star-component-finite-ordinary-residual/)
+combines this leaf with the complete `lambda=0,-1` slices and the
 ordinary residual branches to close the generic finite case union. The
 leaf's chronological `generic_finite_all_markings_closed: false` and
 residual-`UNKNOWN` fields remain unchanged.
@@ -138,12 +146,16 @@ mirroring the pilot's treatment of its working note.
   `p5_high_coordinate_tree_chart_cegar.py` (Singular timeout helper)
   and `verify_p5_h31_marked_basis_open_branch.py` remain at the
   repository root.
-- The split-center verifier specifically imports `build_model` and
-  `project` from
-  `derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py`,
+- The split-center verifier imports `build_model` and `project` from the
+  narrow shared implementation
+  [`src/krenn_gu/p5_weighted_h22_contraction.py`](../../../src/krenn_gu/p5_weighted_h22_contraction.py),
   and `one_marked_map` from
-  `verify_p5_h31_marked_basis_open_branch.py`.  Both shared providers
-  remain at the repository root pending their own ownership decisions.
+  `verify_p5_h31_marked_basis_open_branch.py`. These providers have different
+  ownership: the weighted-H22 contraction is infrastructure, while the
+  marked-basis provider remains claim-owned at repository root. The
+  Component20 candidate adapter moved intact to
+  [`common-active-binary-triangle-component-generic/`](common-active-binary-triangle-component-generic/)
+  and is not the shared implementation.
 - Intra-batch sibling edges: `disjoint-secant` imports its H31 sibling
   and the `full-support-tangent` H22 verifier; `full-support-tangent`
   imports its H31 sibling.  These resolve through
@@ -151,18 +163,16 @@ mirroring the pilot's treatment of its working note.
 - Already-migrated P4 anchors under [`../../p4/`](../../p4/) are
   referenced by link and exposure helper; they were not re-moved.
 
-## Not migrated here
+## Stage 31 status-preserving forest
 
-Except for the scoped component-23 `lambda=0` and `lambda=1` leaves described
-above, the H22 common-center-kernel-star partial theorem, its generic
-case-union core and shared providers, and its special/projective/source-torus
-boundary forest remain at the repository root. Their chronological and
-terminal statuses are unchanged.
-Unequal-complement and unequal-endpoint recursion, and embedded-p3 /
-common-active-binary-triangle documents remain at the repository root with
-their boundary forests or open recursion.  The split-center theorem package
-is present, but its candidate-housed shared construction remains at root
-pending a separate ownership decision.  The equal-support-sixfold package is present
-with its actual primary-only evidence structure; migration did not create
-an audit or promote its status.  Migration status changes no theorem claim;
-the global conjecture remains **UNRESOLVED**.
+Stage 31 colocated the common-center, unequal-complement, unequal-endpoint,
+embedded-P3, common-active, split-center support, Component19, and related
+H22 evidence forests with their actual claim owners. Candidate, partial,
+open, superseded, scoped-refuted, and verified artifacts remain distinct.
+The weighted `p+q` ownership disagreement is recorded without adjudication in
+[`disputed-ownership/p-plus-q-wall/README.md`](disputed-ownership/p-plus-q-wall/README.md).
+The equal-support-sixfold package still has its actual primary-only evidence
+structure; migration created no audit and promoted no status. Package
+completeness means only that the selected topical evidence forest is
+colocated, not that its mathematical case cover is complete. Migration
+changes no theorem claim; the global conjecture remains **UNRESOLVED**.

@@ -3,6 +3,15 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import hashlib
 import itertools
 import json
@@ -17,7 +26,7 @@ THEOREM = ROOT / "P5_H22_EMBEDDED_P3_COMPONENT_PROJECTIVE_CLOSURE_OBSTRUCTION.md
 GENERIC = ROOT / "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
 RANK_TWO = ROOT / "P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md"
 RANK_ONE = ROOT / "P5_H22_EMBEDDED_P3_COMPONENT_RANK_ONE_COLLAPSE_OBSTRUCTION.md"
-P4_BOUNDARY = ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
+P4_BOUNDARY = REPO_ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
 WORDS3 = tuple(itertools.product((0, 1), repeat=3))
 PERMUTATIONS3 = tuple(itertools.permutations(range(3)))
 
@@ -161,7 +170,7 @@ def main() -> None:
             P4_BOUNDARY.name: sha256(P4_BOUNDARY),
         },
         "method": "homogeneous sign-rectangle coefficients, exact support cover, and source-perfect-matching transport",
-        "command": "uv run --with sympy python verify_p5_h22_embedded_p3_component_projective_closure.py",
+        "command": 'uv run --with sympy python claims/p5/h22/embedded-p3/verify_p5_h22_embedded_p3_component_projective_closure.py',
         "outputs": {THEOREM.name: sha256(THEOREM)},
         "limitations": "normal-base transport subclaims verified, but free mode-zero-plane normalization boundary remains uncovered; full projective H22 target UNKNOWN",
         "homogeneous_nonzero_coefficients": {

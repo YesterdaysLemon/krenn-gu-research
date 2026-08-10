@@ -8,6 +8,15 @@ calculations are reconstructed here.
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[5] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import hashlib
 import itertools
 import json
@@ -33,9 +42,9 @@ CANDIDATE_CERTIFICATE = ROOT / (
     "p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_certificate.json"
 )
 LEDGER = ROOT / "p5_h22_p_plus_q_diagonal_dvr_coverage.json"
-P4_WALL = ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
-H22_DEFINITION = ROOT / "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
-H22_REDUCTION = ROOT / "P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md"
+P4_WALL = REPO_ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
+H22_DEFINITION = REPO_ROOT / "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
+H22_REDUCTION = REPO_ROOT / "P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md"
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PERMUTATIONS4 = tuple(itertools.permutations(range(4)))
@@ -515,9 +524,7 @@ def main():
             "and homogeneous all-alpha cofactor identities"
         ),
         "command": (
-            "uv run --with sympy python "
-            "audit_p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_"
-            "planes_independent.py"
+            'uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_independent.py'
         ),
         "outputs": {
             SCRIPT.name: sha256(SCRIPT),

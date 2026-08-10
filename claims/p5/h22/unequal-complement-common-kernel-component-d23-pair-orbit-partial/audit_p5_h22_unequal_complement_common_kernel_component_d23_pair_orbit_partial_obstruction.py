@@ -7,6 +7,15 @@ permanents, mixed equations, and one-marked maps are rebuilt locally.
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import itertools
 import json
 import subprocess

@@ -3,6 +3,15 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import hashlib
 import itertools
 import json
@@ -16,11 +25,9 @@ THEOREM = (
     ROOT / "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
 COMPONENT = (
-    ROOT / "claims" / "p4" / "components" / "embedded-p3"
-    / "P4_EMBEDDED_P3_PURE_COMPONENT.md")
+    REPO_ROOT / "claims/p4/components/embedded-p3/P4_EMBEDDED_P3_PURE_COMPONENT.md")
 H31 = (
-    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
-    / "P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
+    REPO_ROOT / "claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
 )
 WORDS3 = tuple(itertools.product((0, 1), repeat=3))
 WORDS4 = tuple(itertools.product((0, 1), repeat=4))

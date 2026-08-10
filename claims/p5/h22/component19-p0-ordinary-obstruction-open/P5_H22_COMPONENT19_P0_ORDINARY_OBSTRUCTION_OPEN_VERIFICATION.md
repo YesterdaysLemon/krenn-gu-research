@@ -190,7 +190,7 @@ No exceptional divisor is promoted by continuity from the verified open.
 ## Replay
 
 ```powershell
-uv run --with sympy python audit_p5_h22_component19_p0_ordinary_obstruction_open.py
+uv run --with sympy python claims/p5/h22/component19-p0-ordinary-obstruction-open/audit_p5_h22_component19_p0_ordinary_obstruction_open.py
 ```
 
 Expected final markers:

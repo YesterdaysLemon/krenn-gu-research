@@ -122,7 +122,7 @@ therefore remains `UNKNOWN` without leaving an actual diagonal-wall gap.
 ## Replay and QA
 
 ```text
-uv run --with z3-solver python audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
+uv run --with z3-solver python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
 uv run --with ruff ruff check audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
 python -m py_compile audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_obstruction.py
 git diff --check

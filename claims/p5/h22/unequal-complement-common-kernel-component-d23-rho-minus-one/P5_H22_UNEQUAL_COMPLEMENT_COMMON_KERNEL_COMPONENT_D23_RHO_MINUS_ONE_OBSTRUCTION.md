@@ -98,6 +98,6 @@ substitute for it.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_rho_minus_one_obstruction.py
-uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_rho_minus_one_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-rho-minus-one/verify_p5_h22_unequal_complement_common_kernel_component_d23_rho_minus_one_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-rho-minus-one/audit_p5_h22_unequal_complement_common_kernel_component_d23_rho_minus_one_obstruction.py
 ```

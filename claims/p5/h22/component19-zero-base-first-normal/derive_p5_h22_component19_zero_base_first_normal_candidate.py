@@ -34,7 +34,7 @@ INCIDENCE_CERTIFICATE = (
 )
 SOURCE = REPO_ROOT / "claims/p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md"
 RECONNAISSANCE = (
-    ROOT / "P5_H22_COMPONENT19_P0_FINITE_BOUNDARY_GEOMETRY_RECONNAISSANCE.md"
+    REPO_ROOT / "claims/p5/h22/component19-p0-finite-boundary-geometry-reconnaissance/P5_H22_COMPONENT19_P0_FINITE_BOUNDARY_GEOMETRY_RECONNAISSANCE.md"
 )
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))
@@ -517,7 +517,7 @@ def main():
             "direction charts, exact pair ranks, coefficient syzygies, and "
             "sixteen bounded shared characteristic-zero unit-ideal audits"
         ),
-        "command": f"uv run --with sympy python {SCRIPT.name}",
+        "command": f"uv run --with sympy python {SCRIPT.relative_to(REPO_ROOT).as_posix()}",
         "outputs": {
             SCRIPT.name: sha256(SCRIPT), REPORT.name: sha256(REPORT),
             GEOMETRY_CERTIFICATE.name: sha256(GEOMETRY_CERTIFICATE),

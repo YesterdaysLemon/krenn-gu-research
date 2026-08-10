@@ -206,8 +206,8 @@ annihilate exactly the coefficients needed by the graph problem.
 Run
 
 ```text
-python verify_p5_h22_embedded_p3_component_rank_one_collapse.py
-python audit_p5_h22_embedded_p3_component_rank_one_collapse.py
+python claims/p5/h22/embedded-p3/verify_p5_h22_embedded_p3_component_rank_one_collapse.py
+python claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_rank_one_collapse.py
 ```
 
 The primary verifier derives (5), reconstructs the shear law and

@@ -3,6 +3,15 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import hashlib
 import itertools
 import json
@@ -31,18 +40,10 @@ CANDIDATE_SCRIPT = ROOT / (
 CANDIDATE_CERTIFICATE = ROOT / (
     "p5_h22_common_active_binary_triangle_intrinsic_boundary_certificate.json"
 )
-H31_REPORT = ROOT / (
-    "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md"
-)
-H31_SCRIPT = ROOT / (
-    "verify_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py"
-)
-GENERIC_H22 = ROOT / (
-    "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md"
-)
-P_PLUS_Q_WALL = ROOT / (
-    "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md"
-)
+H31_REPORT = REPO_ROOT / "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md"
+H31_SCRIPT = REPO_ROOT / "verify_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py"
+GENERIC_H22 = REPO_ROOT / "claims/p5/h22/common-active-binary-triangle-component-generic/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md"
+P_PLUS_Q_WALL = REPO_ROOT / "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md"
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 MIXED_WORDS = WORDS[1:-1]
@@ -74,7 +75,7 @@ def git_commit() -> str:
 def run_json(command: tuple[str, ...], timeout: int) -> dict[str, Any]:
     completed = subprocess.run(
         command,
-        cwd=ROOT,
+        cwd=REPO_ROOT,
         text=True,
         encoding="utf-8",
         capture_output=True,
@@ -366,7 +367,7 @@ def projection_certificates(
 
 def replay_h31_dependency() -> dict[str, Any]:
     h31 = run_json(
-        ("uv", "run", "--with", "sympy", "python", H31_SCRIPT.name), timeout=180
+        ("uv", "run", "--with", "sympy", "python", H31_SCRIPT.relative_to(REPO_ROOT).as_posix()), timeout=180
     )
     require(h31.get("status") == "pass", "intrinsic-wall H31 replay")
     return {"status": h31["status"]}
@@ -506,7 +507,7 @@ def main() -> None:
             "fresh replacement-basis subset-DP permanents and eight bounded "
             "characteristic-zero finite/infinity individual/shared projections"
         ),
-        "command": f"uv run --with sympy python {SCRIPT.name}",
+        "command": f"uv run --with sympy python {SCRIPT.relative_to(REPO_ROOT).as_posix()}",
         "outputs": {
             REPORT.name: sha256(REPORT) if REPORT.is_file() else "pending",
             SCRIPT.name: sha256(SCRIPT),

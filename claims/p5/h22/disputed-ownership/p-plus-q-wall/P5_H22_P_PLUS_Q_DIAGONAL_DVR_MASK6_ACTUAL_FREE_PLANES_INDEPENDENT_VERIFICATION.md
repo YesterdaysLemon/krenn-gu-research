@@ -196,7 +196,7 @@ twelve actual mask-6 flags.
 ## Replay
 
 ```text
-uv run --with sympy python audit_p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_independent.py
+uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_independent.py
 ```
 
 The replay must report `status: pass`, `claim_label: VERIFIED`, twelve actual

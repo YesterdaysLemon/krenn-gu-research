@@ -9,6 +9,15 @@ embedded-P3 arc families.
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[5] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import hashlib
 import json
 from pathlib import Path
@@ -99,11 +108,10 @@ EXPECTED_STATUS = {
 
 
 def sha256(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as handle:
-        for block in iter(lambda: handle.read(1 << 20), b""):
-            digest.update(block)
-    return digest.hexdigest()
+    # Every pinned dependency is tracked text.  Git stores those blobs with
+    # LF endings, while Windows checkouts may materialize CRLF.  Canonicalize
+    # only that transport difference so one durable pin works on both.
+    return hashlib.sha256(path.read_bytes().replace(b"\r\n", b"\n")).hexdigest()
 
 
 def require(condition: bool, message: str) -> None:
@@ -148,7 +156,7 @@ def main() -> None:
 
     checked_files = {}
     for key, dep in ledger["dependencies"].items():
-        path = ROOT / dep["path"]
+        path = REPO_ROOT / dep["path"]
         require(path.is_file(), f"missing dependency: {dep['path']}")
         actual = sha256(path)
         require(actual == dep["sha256"], f"sha256 mismatch for {dep['path']}: {actual}")

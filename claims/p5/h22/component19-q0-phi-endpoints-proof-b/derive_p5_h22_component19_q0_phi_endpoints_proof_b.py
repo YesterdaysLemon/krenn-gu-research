@@ -26,8 +26,8 @@ ROOT = HERE
 SCRIPT = Path(__file__).resolve()
 REPORT = ROOT / "P5_H22_COMPONENT19_Q0_PHI_ENDPOINTS_PROOF_B.md"
 COMPONENT = REPO_ROOT / "claims/p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md"
-Q0_REPORT = ROOT / "P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_PROOF_B.md"
-Q0_REPLAY = ROOT / "derive_p5_h22_component19_q0_special_divisor_proof_b.py"
+Q0_REPORT = REPO_ROOT / "claims/p5/h22/component19-q0-special-divisor-proof-b/P5_H22_COMPONENT19_Q0_SPECIAL_DIVISOR_PROOF_B.md"
+Q0_REPLAY = REPO_ROOT / "claims/p5/h22/component19-q0-special-divisor-proof-b/derive_p5_h22_component19_q0_special_divisor_proof_b.py"
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PAIRS = tuple(itertools.combinations(range(4), 2))
 
@@ -351,7 +351,7 @@ payload = {
         "contractions, structural orientation case split, complete kernel "
         "vectors plus fixed rank minors, and a fixed one-marked minor"
     ),
-    "command": f"uv run --with sympy python {SCRIPT.name}",
+    "command": f"uv run --with sympy python {SCRIPT.relative_to(REPO_ROOT).as_posix()}",
     "outputs": {SCRIPT.name: sha256(SCRIPT), REPORT.name: sha256(REPORT)},
     "endpoints": endpoint_results,
     "candidate_artifacts_read": False,

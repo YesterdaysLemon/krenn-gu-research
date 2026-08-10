@@ -357,7 +357,7 @@ payload = {
         "complete shared kernel, exhaustive individual four-minors, and fixed "
         "full-target stacked minors"
     ),
-    "command": f"uv run --with sympy python {SCRIPT.name}",
+    "command": f"uv run --with sympy python {SCRIPT.relative_to(REPO_ROOT).as_posix()}",
     "outputs": {SCRIPT.name: sha256(SCRIPT), REPORT.name: sha256(REPORT)},
     "candidate_verdict": "VERIFIED",
     "candidate_claim": (

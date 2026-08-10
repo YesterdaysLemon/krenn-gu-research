@@ -12,7 +12,7 @@
     "NEXT_INSTANCE_HANDOFF_2026-07-31.md": "1464b39b99ada4035600b711c903876b6ec3ed7b23800f4b2ea3e56dbe868487"
   },
   "method": "direct Q(phi) reconstruction, exact permanents and pair minors, complete finite/infinity incidence elimination, shared-kernel basis, and two fixed one-marked minors",
-  "command": "uv run --with sympy python derive_p5_h22_component19_p0_qphi_one_ordinary_obstruction_candidate.py",
+  "command": "uv run --with sympy python claims/p5/h22/component19-p0-qphi-one-ordinary/derive_p5_h22_component19_p0_qphi_one_ordinary_obstruction_candidate.py",
   "expected": {
     "relation": "p=0, q=1/phi",
     "ordinary_open": "phi^2!=1; phi!=0 is automatic",

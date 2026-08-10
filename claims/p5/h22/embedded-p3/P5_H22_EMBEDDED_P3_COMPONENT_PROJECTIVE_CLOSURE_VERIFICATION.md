@@ -203,5 +203,5 @@ Replay:
 
 ```text
 uv run --with sympy python \
-  audit_p5_h22_embedded_p3_component_projective_closure_independent.py
+  claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_projective_closure_independent.py
 ```

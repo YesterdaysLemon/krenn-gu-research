@@ -70,7 +70,7 @@ This residual is **UNKNOWN**.  No finite-field calculation is used as proof.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_finite_all_marking_dense_open_supplement.py
-uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_finite_ordinary_F_h2_zero_obstruction.py
-uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_finite_ordinary_F_h2_zero_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-finite-all-marking-dense-open-supplement/verify_p5_h22_common_center_kernel_star_component_finite_all_marking_dense_open_supplement.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-finite-ordinary-f-h2-zero/verify_p5_h22_common_center_kernel_star_component_finite_ordinary_F_h2_zero_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-finite-ordinary-f-h2-zero/audit_p5_h22_common_center_kernel_star_component_finite_ordinary_F_h2_zero_obstruction.py
 ```

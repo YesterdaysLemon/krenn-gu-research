@@ -3,6 +3,15 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[5] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import hashlib
 import itertools
 import json
@@ -17,14 +26,9 @@ REPORT = (
     ROOT
     / "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_INTEGRATION_VERIFICATION.md"
 )
-P4_BOUNDARY = ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
+P4_BOUNDARY = REPO_ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
 H31_ENDPOINT = (
-    ROOT
-    / "claims"
-    / "p5"
-    / "h31"
-    / "common-active-binary-triangle"
-    / "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md"
+    REPO_ROOT / "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md"
 )
 ENDPOINT_AUDIT = (
     ROOT
@@ -286,7 +290,7 @@ def main():
             )
         },
         "method": "fresh subset-DP permanent reconstruction; complete finite-D01 kernels; exact shared-coordinate multiplication by arbitrary finite-D23 mixed matrix; direct boundary fibres",
-        "command": "uv run --with sympy python audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_integration_verifier.py",
+        "command": 'uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_integration_verifier.py',
         "outputs": {REPORT.name: sha256(REPORT), script.name: sha256(script)},
         "limitations": "VERIFIED finite-slope integration only; infinity subclaims are cited precisely from an independent audit rather than recomputed; no on-wall, non-diagonal, arbitrary-order, or global claim",
         "imports_prior_derivations_or_helpers": False,

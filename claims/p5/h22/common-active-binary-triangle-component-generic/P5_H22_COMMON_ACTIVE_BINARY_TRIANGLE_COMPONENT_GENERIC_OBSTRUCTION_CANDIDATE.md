@@ -162,8 +162,8 @@ projections close the incidence directly.
 ## Replay
 
 ```text
-uv run --with sympy python derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
-uv run --with sympy python audit_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
+uv run --with sympy python claims/p5/h22/common-active-binary-triangle-component-generic/derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
+uv run --with sympy python claims/p5/h22/common-active-binary-triangle-component-generic/audit_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate.py
 ```
 
 The standalone replay reconstructs (1)--(4), checks the pure support,

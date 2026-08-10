@@ -28,7 +28,7 @@ SCRIPT = Path(__file__).resolve()
 REPORT = ROOT / "P5_H22_COMPONENT19_P0_PHI_PM_ONE_ORDINARY_OBSTRUCTION_CANDIDATE.md"
 CERTIFICATE = ROOT / "p5_h22_component19_p0_phi_pm_one_ordinary_obstruction_certificate.json"
 SOURCE = REPO_ROOT / "claims/p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md"
-H22_THEORY = ROOT / "P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md"
+H22_THEORY = REPO_ROOT / "P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md"
 
 WORDS4 = tuple(itertools.product((0, 1), repeat=4))
 MIXED4 = WORDS4[1:-1]
@@ -438,7 +438,7 @@ def main():
         "scope": "component 19 ordinary p=0, phi=+1 and phi=-1 on q*(q^2-1)!=0",
         "inputs": {SOURCE.name: sha256(SOURCE), H22_THEORY.name: sha256(H22_THEORY)},
         "method": "direct sign-specialized finite incidence elimination, exact shared frame, individual one-marked classification, full two-contraction stacks, and third-colour diagonal obstruction",
-        "command": f"uv run --with sympy python {SCRIPT.name}",
+        "command": f"uv run --with sympy python {SCRIPT.relative_to(REPO_ROOT).as_posix()}",
         "outputs": {SCRIPT.name: sha256(SCRIPT), REPORT.name: sha256(REPORT), CERTIFICATE.name: sha256(CERTIFICATE)},
         "exact_parameter_open": "phi in {+1,-1}, q*(q^2-1)!=0",
         "pure_and_pair_data": pure_pair,

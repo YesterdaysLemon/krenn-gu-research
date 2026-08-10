@@ -8,9 +8,20 @@ import json
 
 import sympy as sp
 
-from derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate import (
-    permanent4,
-)
+import sys
+from pathlib import Path
+
+for _repo_parent in Path(__file__).resolve().parents:
+    if (_repo_parent / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_repo_parent / "src"))
+        break
+else:
+    raise RuntimeError("could not locate repository src directory")
+
+from krenn_gu.bootstrap import bootstrap
+from krenn_gu.p5_weighted_h22_contraction import permanent4
+REPO_ROOT, HERE = bootstrap(__file__)
+
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 TERNARY_WORDS = tuple(itertools.product((0, 1, 2), repeat=4))

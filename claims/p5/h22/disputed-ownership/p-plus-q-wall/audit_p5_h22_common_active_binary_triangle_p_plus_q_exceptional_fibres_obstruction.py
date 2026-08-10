@@ -3,6 +3,15 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[5] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import hashlib
 import itertools
 import json
@@ -22,14 +31,9 @@ PRIMARY = (
     ROOT
     / "verify_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_obstruction.py"
 )
-P4 = ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
+P4 = REPO_ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
 H31 = (
-    ROOT
-    / "claims"
-    / "p5"
-    / "h31"
-    / "common-active-binary-triangle"
-    / "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md"
+    REPO_ROOT / "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_EXCEPTIONAL_LOWER_PAIR_OBSTRUCTION.md"
 )
 H22 = ROOT / "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_PARTIAL.md"
 
@@ -537,7 +541,7 @@ def main():
         "scope": "no-primary-import replay of the verified a=0,-1 diagonal-DVR weighted-H22 obstruction",
         "inputs": {path.name: sha256(path) for path in (P4, H31, H22, NOTE, PRIMARY)},
         "method": "fresh permanent and contraction code, bidirectional saturated elimination, complete symbolic kernels, and fixed minors",
-        "command": "uv run --with sympy python audit_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_obstruction.py",
+        "command": 'uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_exceptional_fibres_obstruction.py',
         "outputs": {Path(__file__).name: sha256(Path(__file__))},
         "limitations": "secondary proof_b replay; external no-import verifier separately completed; same bounded diagonal-DVR scope",
         "imports_primary": False,

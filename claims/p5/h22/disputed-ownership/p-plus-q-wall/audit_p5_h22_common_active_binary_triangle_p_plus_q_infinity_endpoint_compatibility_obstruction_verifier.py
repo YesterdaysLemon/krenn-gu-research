@@ -3,6 +3,15 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[5] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import hashlib
 import itertools
 import json
@@ -25,14 +34,9 @@ CONSTRUCTION = (
     ROOT
     / "derive_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_compatibility_obstruction.py"
 )
-P4_BOUNDARY = ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
+P4_BOUNDARY = REPO_ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
 H31_ENDPOINT = (
-    ROOT
-    / "claims"
-    / "p5"
-    / "h31"
-    / "common-active-binary-triangle"
-    / "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md"
+    REPO_ROOT / "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_INFINITY_ENDPOINT_OBSTRUCTION.md"
 )
 
 WORDS4 = tuple(itertools.product((0, 1), repeat=4))
@@ -342,7 +346,7 @@ def main():
             for path in (P4_BOUNDARY, H31_ENDPOINT, CANDIDATE, CONSTRUCTION)
         },
         "method": "independent subset-DP permanents, complementary-column marked maps, complete mixed kernels, shared-coordinate intersection, fixed transverse and stacked minors",
-        "command": "uv run --with sympy python audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_compatibility_obstruction_verifier.py",
+        "command": 'uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_infinity_endpoint_compatibility_obstruction_verifier.py',
         "outputs": {REPORT.name: sha256(REPORT), script.name: sha256(script)},
         "limitations": "VERIFIED only for the frozen gamma=0 finite-D01 plus D23,r=0 pair; no on-wall, other D23 slopes, non-diagonal changes, arbitrary-order gluing, or global claim",
         "imports_construction_or_prior_endpoint_derivation": False,

@@ -9,10 +9,21 @@ import subprocess
 
 import sympy as sp
 
-from derive_p5_h22_common_active_binary_triangle_component_generic_obstruction_candidate import (
-    WORDS,
-    build_model,
-)
+import sys
+from pathlib import Path
+
+for _repo_parent in Path(__file__).resolve().parents:
+    if (_repo_parent / "src" / "krenn_gu" / "bootstrap.py").exists():
+        sys.path.insert(0, str(_repo_parent / "src"))
+        break
+else:
+    raise RuntimeError("could not locate repository src directory")
+
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+from krenn_gu.p5_weighted_h22_contraction import WORDS, build_model
+REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-coordinate-survivor")
+
 from verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_coordinate_survivor import (
     PAIRS,
     A,
@@ -24,6 +35,8 @@ from verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_coordin
     scale,
     singular_command,
 )
+
+
 
 r, lam = sp.symbols("r lam")
 h = sp.symbols("h0:4")

@@ -7,7 +7,7 @@ of component twenty-five, the finite-`D01` weighted slice at `lambda=-1`
 has no genuine binary neighbour.
 
 This closes the endpoint left open in
-[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_RESIDUAL_FACTOR_COVER.md`](P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_RESIDUAL_FACTOR_COVER.md).
+[`P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_RESIDUAL_FACTOR_COVER.md`](../unequal-endpoint-inward-star-component-finite-d01-residual-factor-cover/P5_H22_UNEQUAL_ENDPOINT_INWARD_STAR_COMPONENT_FINITE_D01_RESIDUAL_FACTOR_COVER.md).
 The two ordinary finite-`D01` factor branches, the remaining finite-`D23`
 branches, and the full generic weighted `H22` fibre remain **UNKNOWN**.  The
 global Krenn--Gu conjecture remains **UNRESOLVED**.
@@ -71,10 +71,10 @@ Run:
 
 ```text
 uv run --with sympy python \
-  verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_lambda_minus_one.py
+  claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-lambda-minus-one/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_lambda_minus_one.py
 
 uv run --with sympy python \
-  audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_lambda_minus_one.py
+  claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-lambda-minus-one/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_lambda_minus_one.py
 ```
 
 The primary verifier builds (1)--(2) from the certified component model and

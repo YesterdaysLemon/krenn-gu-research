@@ -7,7 +7,7 @@
   "replay_status": "fails exact stacked-minor assertion",
   "scope": "component 19 finite ordinary p=0 boundary on q*phi*(q-phi)!=0",
   "method": "regular intrinsic basis, exact characteristic-zero permanents and pair minors, finite/infinity elimination, complete shared kernel, projected and stacked one-marked minors",
-  "command": "uv run --with sympy python derive_p5_h22_component19_p0_ordinary_boundary_candidate.py",
+  "command": "uv run --with sympy python claims/p5/h22/component19-p0-ordinary-boundary/derive_p5_h22_component19_p0_ordinary_boundary_candidate.py",
   "ordinary_tensor": {
     "regular_basis": {
       "alpha": ["Abar", "B", "Bbar", "Abar"],

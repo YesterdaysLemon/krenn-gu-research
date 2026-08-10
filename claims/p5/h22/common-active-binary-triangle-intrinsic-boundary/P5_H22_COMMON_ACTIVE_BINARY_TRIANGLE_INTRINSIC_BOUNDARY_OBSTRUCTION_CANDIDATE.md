@@ -124,8 +124,8 @@ partial branches, and no sampled grid or all-minor search was run.
 ## Replay
 
 ```text
-uv run --with sympy python derive_p5_h22_common_active_binary_triangle_intrinsic_boundary_obstruction_candidate.py
-uv run --with sympy python audit_p5_h22_common_active_binary_triangle_intrinsic_boundary_obstruction_candidate.py
+uv run --with sympy python claims/p5/h22/common-active-binary-triangle-intrinsic-boundary/derive_p5_h22_common_active_binary_triangle_intrinsic_boundary_obstruction_candidate.py
+uv run --with sympy python claims/p5/h22/common-active-binary-triangle-intrinsic-boundary/audit_p5_h22_common_active_binary_triangle_intrinsic_boundary_obstruction_candidate.py
 ```
 
 The standalone replay reconstructs the replacement basis, verifies (2), and

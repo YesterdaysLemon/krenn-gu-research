@@ -283,10 +283,10 @@ and is not used to promote any `D23` claim.
 
 ```text
 uv run --with sympy python \
-  verify_p5_h22_common_active_binary_triangle_p_plus_q_boundary_partial.py
+  claims/p5/h22/disputed-ownership/p-plus-q-wall/verify_p5_h22_common_active_binary_triangle_p_plus_q_boundary_partial.py
 
 uv run --with sympy python \
-  audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_partial.py
+  claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_boundary_partial.py
 ```
 
 The verifier reconstructs the half-family Hall support, all four finite and

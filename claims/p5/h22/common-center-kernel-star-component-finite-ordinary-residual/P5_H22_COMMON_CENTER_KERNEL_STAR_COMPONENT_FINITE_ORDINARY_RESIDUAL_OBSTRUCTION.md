@@ -106,8 +106,8 @@ form and the exact \(h_3=0\) module.  No finite-field computation is used.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_finite_all_marking_dense_open_supplement.py
-uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_finite_ordinary_F_h2_zero_obstruction.py
-uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_finite_ordinary_residual_obstruction.py
-uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_finite_ordinary_residual_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-finite-all-marking-dense-open-supplement/verify_p5_h22_common_center_kernel_star_component_finite_all_marking_dense_open_supplement.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-finite-ordinary-f-h2-zero/verify_p5_h22_common_center_kernel_star_component_finite_ordinary_F_h2_zero_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-finite-ordinary-residual/verify_p5_h22_common_center_kernel_star_component_finite_ordinary_residual_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-finite-ordinary-residual/audit_p5_h22_common_center_kernel_star_component_finite_ordinary_residual_obstruction.py
 ```

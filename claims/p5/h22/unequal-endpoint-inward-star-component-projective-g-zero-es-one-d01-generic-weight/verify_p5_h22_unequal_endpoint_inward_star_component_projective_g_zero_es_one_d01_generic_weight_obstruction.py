@@ -3,6 +3,17 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+from verify_p5_h31_marked_basis_open_branch import permanent
+
+
+
 import itertools
 import json
 import time
@@ -10,7 +21,6 @@ import time
 import sympy as sp
 from sympy.polys.domains import QQ
 
-from verify_p5_h31_marked_basis_open_branch import permanent
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 MIXED = WORDS[1:-1]

@@ -10,7 +10,7 @@
     "P5_H22_COMPONENT19_P0_FINITE_BOUNDARY_GEOMETRY_RECONNAISSANCE.md": "a22b55ec24747983b60a5d479e93c012d8018871123d3ec1c80bf5d03a65c335"
   },
   "method": "direct normal-jet permanents, regular direction charts, and exact symbolic pair ranks",
-  "command": "uv run --with sympy python derive_p5_h22_component19_zero_base_first_normal_candidate.py",
+  "command": "uv run --with sympy python claims/p5/h22/component19-zero-base-first-normal/derive_p5_h22_component19_zero_base_first_normal_candidate.py",
   "zero_base_ideal": ["p", "q - phi"],
   "transverse_arc": {
     "p": "a*eps+...",

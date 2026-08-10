@@ -203,12 +203,12 @@ replayed source theorems and the exact covariance (6).
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_zero_affine_constant_profile_open_obstruction.py
-uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_affine_constant_profile_open_obstruction.py
-uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_zero_t_plus_minus_one_special_all_pair_obstruction.py
-uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_zero_t_plus_minus_one_special_all_pair_obstruction.py
-uv run --with sympy python verify_p5_h22_common_center_kernel_star_component_r_t_divisor_symmetry_transfer.py
-uv run --with sympy python audit_p5_h22_common_center_kernel_star_component_r_t_divisor_symmetry_transfer.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-r-zero-affine-constant-profile-open/verify_p5_h22_common_center_kernel_star_component_r_zero_affine_constant_profile_open_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-r-zero-affine-constant-profile-open/audit_p5_h22_common_center_kernel_star_component_r_zero_affine_constant_profile_open_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-r-zero-t-plus-minus-one-special-all-pair/verify_p5_h22_common_center_kernel_star_component_r_zero_t_plus_minus_one_special_all_pair_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-r-zero-t-plus-minus-one-special-all-pair/audit_p5_h22_common_center_kernel_star_component_r_zero_t_plus_minus_one_special_all_pair_obstruction.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-r-t-divisor-symmetry-transfer/verify_p5_h22_common_center_kernel_star_component_r_t_divisor_symmetry_transfer.py
+uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-r-t-divisor-symmetry-transfer/audit_p5_h22_common_center_kernel_star_component_r_t_divisor_symmetry_transfer.py
 ```
 
 The first four commands replay the source open and special-point

@@ -30,8 +30,8 @@ import sympy as sp
 
 ROOT = HERE
 SOURCE = REPO_ROOT / "claims/p4/classifications/P4_COMMON_KERNEL_VERTICAL_TRIANGLE_COMPONENT.md"
-PRIOR_AUDIT = ROOT / "audit_p5_h22_component19_p0_qphi_minus_one_axes.py"
-PRIOR_REPORT = ROOT / "P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_AXES_VERIFICATION.md"
+PRIOR_AUDIT = REPO_ROOT / "claims/p5/h22/component19-p0-qphi-minus-one-axes/audit_p5_h22_component19_p0_qphi_minus_one_axes.py"
+PRIOR_REPORT = REPO_ROOT / "claims/p5/h22/component19-p0-qphi-minus-one-axes/P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_AXES_VERIFICATION.md"
 REPORT = (
     ROOT
     / "P5_H22_COMPONENT19_P0_QPHI_MINUS_ONE_TERNARY_COMPATIBILITY_OBSTRUCTION_VERIFICATION.md"
@@ -359,8 +359,7 @@ def main():
             "identities, and fixed two-slice Fitting minors"
         ),
         "command": (
-            "uv run --with sympy python "
-            "audit_p5_h22_component19_p0_qphi_minus_one_ternary_compatibility.py"
+            'uv run --with sympy python claims/p5/h22/component19-p0-qphi-minus-one-ternary-compatibility/audit_p5_h22_component19_p0_qphi_minus_one_ternary_compatibility.py'
         ),
         "outputs": outputs,
         "limitations": (

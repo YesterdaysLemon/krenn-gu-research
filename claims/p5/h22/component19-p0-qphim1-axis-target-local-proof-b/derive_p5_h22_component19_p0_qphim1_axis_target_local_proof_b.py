@@ -240,7 +240,7 @@ payload = {
         "full-target one-marked maps, complete individual four-minor checks, "
         "and fixed stacked four-minors"
     ),
-    "command": f"uv run --with sympy python {SCRIPT.name}",
+    "command": f"uv run --with sympy python {SCRIPT.relative_to(REPO_ROOT).as_posix()}",
     "outputs": {SCRIPT.name: sha256(SCRIPT), REPORT.name: sha256(REPORT)},
     "ordinary_tensor": "T1111=-4*(phi^2+1)/phi",
     "ordinary_parameter_open": "phi*(phi^2+1)!=0",

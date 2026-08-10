@@ -540,8 +540,7 @@ def main():
             "4x4 minors; fixed exact rank witnesses; full 8x5 two-slice stack"
         ),
         "command": (
-            "uv run --with sympy python "
-            "audit_p5_h22_component19_p0_qphi_minus_one_phi_endpoints.py"
+            'uv run --with sympy python claims/p5/h22/component19-p0-qphi-minus-one-phi-endpoints/audit_p5_h22_component19_p0_qphi_minus_one_phi_endpoints.py'
         ),
         "outputs": outputs,
         "limitations": (

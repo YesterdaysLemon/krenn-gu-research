@@ -230,13 +230,13 @@ The independent report is
 Run
 
 ```text
-uv run --with sympy python derive_p5_h22_embedded_p3_component_r_zero_boundary_obstruction.py
+uv run --with sympy python claims/p5/h22/embedded-p3/derive_p5_h22_embedded_p3_component_r_zero_boundary_obstruction.py
 
-uv run --with sympy python audit_p5_h22_embedded_p3_component_r_zero_boundary_independent.py
+uv run --with sympy python claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_r_zero_boundary_independent.py
 
-uv run --with sympy python derive_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_obstruction_candidate.py
+uv run --with sympy python claims/p5/h22/embedded-p3/derive_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_obstruction_candidate.py
 
-uv run --with sympy python audit_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_verifier.py
+uv run --with sympy python claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_r_zero_t_nonzero_weight_endpoints_verifier.py
 ```
 
 The script reconstructs the permanent contractions from the four planes,

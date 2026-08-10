@@ -3,6 +3,15 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import hashlib
 import itertools
 import json
@@ -19,12 +28,10 @@ REPORT = ROOT / "P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_VERIFICATION.md"
 CLAIM = ROOT / "P5_H22_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION_CANDIDATE.md"
 PRIMARY = ROOT / "derive_p5_h22_embedded_p3_component_r_zero_boundary_obstruction.py"
 H31 = (
-    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
-    / "P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md"
+    REPO_ROOT / "claims/p5/h31/embedded-p3/P5_H31_EMBEDDED_P3_COMPONENT_R_ZERO_BOUNDARY_OBSTRUCTION.md"
 )
 H31_PRIMARY = (
-    ROOT / "claims" / "p5" / "h31" / "embedded-p3"
-    / "verify_p5_h31_embedded_p3_component_r_zero_boundary.py"
+    REPO_ROOT / "claims/p5/h31/embedded-p3/verify_p5_h31_embedded_p3_component_r_zero_boundary.py"
 )
 H22_GENERIC = ROOT / "P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
 H22_RANK_TWO = ROOT / "P5_H22_EMBEDDED_P3_COMPONENT_RANK_TWO_LINE_BOUNDARY_OBSTRUCTION.md"
@@ -291,7 +298,7 @@ def main():
         "scope":"full homogeneous weighted-H22 claim on the embedded-P3 free-plane r0=0 divisor",
         "inputs":{path.name:sha256(path) for path in (CLAIM,PRIMARY,H31,H31_PRIMARY,H22_GENERIC,H22_RANK_TWO,H22_RANK_ONE)},
         "method":"no-import exact corner elimination, saturated kernels, literal H31-model comparison, and homogeneous weight transport audit",
-        "command":"uv run --with sympy python audit_p5_h22_embedded_p3_component_r_zero_boundary_independent.py",
+        "command":'uv run --with sympy python claims/p5/h22/embedded-p3/audit_p5_h22_embedded_p3_component_r_zero_boundary_independent.py',
         "outputs":{SCRIPT.name:sha256(SCRIPT),REPORT.name:sha256(REPORT)},
         "limitations":"REFUTED is the full-divisor proof because t0!=0 homogeneous endpoints are not transported; the t0=0 corner obstruction is independently verified, while the uncovered endpoint fibres remain UNKNOWN",
         "finite_projection_generator_count":finite["size"],

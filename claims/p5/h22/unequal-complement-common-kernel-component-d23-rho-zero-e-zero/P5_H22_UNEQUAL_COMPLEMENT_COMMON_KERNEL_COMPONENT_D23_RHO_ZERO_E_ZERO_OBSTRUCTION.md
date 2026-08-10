@@ -99,7 +99,7 @@ calculation is used.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_rho_zero_h1_nonzero_supplement.py
-uv run --with sympy python verify_p5_h22_unequal_complement_common_kernel_component_d23_rho_zero_E_zero_obstruction.py
-uv run --with sympy python audit_p5_h22_unequal_complement_common_kernel_component_d23_rho_zero_E_zero_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-rho-zero-h1-nonzero-supplement/verify_p5_h22_unequal_complement_common_kernel_component_d23_rho_zero_h1_nonzero_supplement.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-rho-zero-e-zero/verify_p5_h22_unequal_complement_common_kernel_component_d23_rho_zero_E_zero_obstruction.py
+uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-rho-zero-e-zero/audit_p5_h22_unequal_complement_common_kernel_component_d23_rho_zero_E_zero_obstruction.py
 ```

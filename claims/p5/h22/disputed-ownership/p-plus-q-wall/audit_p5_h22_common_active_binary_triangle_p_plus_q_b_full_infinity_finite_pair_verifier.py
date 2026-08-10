@@ -8,6 +8,15 @@ kernels, diagonals, and marked minors directly over characteristic zero.
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[5] / "src"))
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
+
+REPO_ROOT, HERE = bootstrap(__file__)
+
+
 import hashlib
 import itertools
 import json
@@ -31,7 +40,7 @@ PAIR_NOTE = (
     ROOT
     / "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_B_FULL_INFINITY_FINITE_PAIR_OBSTRUCTION.md"
 )
-P4_BOUNDARY = ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
+P4_BOUNDARY = REPO_ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
 H22_PARTIAL = ROOT / "P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_PARTIAL.md"
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))
@@ -476,7 +485,7 @@ def main():
             PAIR_NOTE.name: sha256(PAIR_NOTE),
         },
         "method": "no-import reconstruction of planes and marked tensors; exact normalized projection elimination; complete kernels and fixed minors; exact r-saturation",
-        "command": "uv run --with sympy python audit_p5_h22_common_active_binary_triangle_p_plus_q_b_full_infinity_finite_pair_verifier.py",
+        "command": 'uv run --with sympy python claims/p5/h22/disputed-ownership/p-plus-q-wall/audit_p5_h22_common_active_binary_triangle_p_plus_q_b_full_infinity_finite_pair_verifier.py',
         "outputs": {REPORT.name: sha256(REPORT), script.name: sha256(script)},
         "limitations": "VERIFIED only for the frozen generic B_full diagonal-DVR local framework; no a=0,-1,-1/2, B_drop, non-diagonal changes, arbitrary-order gluing, or global Krenn-Gu claim",
         "imports_discovery_or_partial_helpers": False,

@@ -97,10 +97,10 @@ Run:
 
 ```text
 uv run --with sympy python \
-  verify_p5_h22_unequal_endpoint_inward_star_component_finite_d23_factor_cover.py
+  claims/p5/h22/unequal-endpoint-inward-star-component-finite-d23-factor-cover/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d23_factor_cover.py
 
 uv run --with sympy python \
-  audit_p5_h22_unequal_endpoint_inward_star_component_finite_d23_factor_cover.py
+  claims/p5/h22/unequal-endpoint-inward-star-component-finite-d23-factor-cover/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d23_factor_cover.py
 ```
 
 The primary verifier constructs all canonical coefficients from the
