@@ -143,19 +143,19 @@ open escape routes and are not suppressed by the theorem.
 Replay the rank, clique, and parity dependencies first:
 
 ```powershell
-uv run --with sympy python verify_root_mixed_second_jet_quotient_rank_classification.py
-python audit_root_mixed_second_jet_quotient_rank_classification.py
-uv run --with sympy python verify_root_mixed_second_jet_resonance_clique_classification.py
-python audit_root_mixed_second_jet_resonance_clique_classification.py
-uv run --with sympy python verify_root_resonant_mixed_jet_parity_classification.py
-python audit_root_resonant_mixed_jet_parity_classification.py
+uv run --with sympy python claims/arbitrary-order/verify_root_mixed_second_jet_quotient_rank_classification.py
+python claims/arbitrary-order/audit_root_mixed_second_jet_quotient_rank_classification.py
+uv run --with sympy python claims/arbitrary-order/verify_root_mixed_second_jet_resonance_clique_classification.py
+python claims/arbitrary-order/audit_root_mixed_second_jet_resonance_clique_classification.py
+uv run --with sympy python claims/arbitrary-order/verify_root_resonant_mixed_jet_parity_classification.py
+python claims/arbitrary-order/audit_root_resonant_mixed_jet_parity_classification.py
 ```
 
 Then run:
 
 ```powershell
-uv run --with sympy python verify_root_two_residual_only_companion_third_jet_obstruction.py
-python audit_root_two_residual_only_companion_third_jet_obstruction.py
+uv run --with sympy python claims/arbitrary-order/verify_root_two_residual_only_companion_third_jet_obstruction.py
+python claims/arbitrary-order/audit_root_two_residual_only_companion_third_jet_obstruction.py
 uv run --with sympy --with ruff python -m ruff check verify_root_two_residual_only_companion_third_jet_obstruction.py audit_root_two_residual_only_companion_third_jet_obstruction.py
 python -m py_compile verify_root_two_residual_only_companion_third_jet_obstruction.py audit_root_two_residual_only_companion_third_jet_obstruction.py
 ```

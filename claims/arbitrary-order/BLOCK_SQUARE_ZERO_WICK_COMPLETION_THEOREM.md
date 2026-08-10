@@ -378,8 +378,8 @@ is a proved cumulant or polar incompatibility, not another incidence count.
 Run from the repository root:
 
 ```text
-uv run --with sympy python verify_block_square_zero_wick_completion.py
-python audit_block_square_zero_wick_completion.py
+uv run --with sympy python claims/arbitrary-order/verify_block_square_zero_wick_completion.py
+python claims/arbitrary-order/audit_block_square_zero_wick_completion.py
 ```
 
 The primary verifier checks the exponential coefficient theorem and

@@ -265,8 +265,8 @@ global Krenn--Gu conjecture: UNRESOLVED.                (13)
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py
-python audit_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py
+uv run --with sympy python claims/arbitrary-order/verify_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py
+python claims/arbitrary-order/audit_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py
 uv run --with sympy --with ruff python -m ruff check verify_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py audit_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py
 python -m py_compile verify_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py audit_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py
 ```

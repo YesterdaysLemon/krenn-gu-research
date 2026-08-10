@@ -158,15 +158,15 @@ global Krenn-Gu conjecture:                     UNRESOLVED.
 Replay the construction first:
 
 ```powershell
-uv run --with sympy python verify_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py
-python audit_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py
+uv run --with sympy python claims/arbitrary-order/verify_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py
+python claims/arbitrary-order/audit_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py
 ```
 
 Then run:
 
 ```powershell
-uv run --with sympy python verify_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py
-python audit_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py
+uv run --with sympy python claims/arbitrary-order/verify_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py
+python claims/arbitrary-order/audit_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py
 uv run --with sympy --with ruff python -m ruff check verify_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py audit_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py
 python -m py_compile verify_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py audit_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py
 ```

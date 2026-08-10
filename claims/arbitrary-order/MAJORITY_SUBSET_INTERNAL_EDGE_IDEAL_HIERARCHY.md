@@ -240,8 +240,8 @@ to overlap compatibility or the higher ideal powers in (17).
 Run:
 
 ```text
-uv run --with sympy python verify_majority_subset_internal_edge_ideal.py
-python audit_majority_subset_internal_edge_ideal.py
+uv run --with sympy python claims/arbitrary-order/verify_majority_subset_internal_edge_ideal.py
+python claims/arbitrary-order/audit_majority_subset_internal_edge_ideal.py
 ```
 
 The primary verifier derives (8) symbolically and checks, in the generic

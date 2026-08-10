@@ -276,8 +276,8 @@ finite-field inference, Groebner elimination, or timeout is used.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_seven_leaf_switched_circulant_primitive_square_no_go.py
-python audit_seven_leaf_switched_circulant_primitive_square_no_go.py
+uv run --with sympy python claims/p7/verify_seven_leaf_switched_circulant_primitive_square_no_go.py
+python claims/p7/audit_seven_leaf_switched_circulant_primitive_square_no_go.py
 python -m py_compile verify_seven_leaf_switched_circulant_primitive_square_no_go.py audit_seven_leaf_switched_circulant_primitive_square_no_go.py
 uv run --with ruff ruff check verify_seven_leaf_switched_circulant_primitive_square_no_go.py audit_seven_leaf_switched_circulant_primitive_square_no_go.py
 ```

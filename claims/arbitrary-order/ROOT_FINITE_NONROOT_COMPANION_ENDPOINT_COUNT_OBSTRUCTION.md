@@ -138,15 +138,15 @@ endpoints with the axis-population constraint (7).
 Replay the two-endpoint instance first:
 
 ```powershell
-uv run --with sympy python verify_root_two_residual_only_companion_third_jet_obstruction.py
-python audit_root_two_residual_only_companion_third_jet_obstruction.py
+uv run --with sympy python claims/arbitrary-order/verify_root_two_residual_only_companion_third_jet_obstruction.py
+python claims/arbitrary-order/audit_root_two_residual_only_companion_third_jet_obstruction.py
 ```
 
 Then run:
 
 ```powershell
-uv run --with sympy python verify_root_finite_nonroot_companion_endpoint_count_obstruction.py
-python audit_root_finite_nonroot_companion_endpoint_count_obstruction.py
+uv run --with sympy python claims/arbitrary-order/verify_root_finite_nonroot_companion_endpoint_count_obstruction.py
+python claims/arbitrary-order/audit_root_finite_nonroot_companion_endpoint_count_obstruction.py
 uv run --with sympy --with ruff python -m ruff check verify_root_finite_nonroot_companion_endpoint_count_obstruction.py audit_root_finite_nonroot_companion_endpoint_count_obstruction.py
 python -m py_compile verify_root_finite_nonroot_companion_endpoint_count_obstruction.py audit_root_finite_nonroot_companion_endpoint_count_obstruction.py
 ```

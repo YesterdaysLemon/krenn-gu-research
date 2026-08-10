@@ -415,8 +415,8 @@ global Krenn--Gu conjecture:                            UNRESOLVED.
 Run from the repository root:
 
 ```powershell
-uv run --with sympy python verify_cross_root_coordinate_monomial_chart_holonomy_and_nine_chart_no_go.py
-python audit_cross_root_coordinate_monomial_chart_holonomy_and_nine_chart_no_go.py
+uv run --with sympy python claims/arbitrary-order/verify_cross_root_coordinate_monomial_chart_holonomy_and_nine_chart_no_go.py
+python claims/arbitrary-order/audit_cross_root_coordinate_monomial_chart_holonomy_and_nine_chart_no_go.py
 python -m py_compile verify_cross_root_coordinate_monomial_chart_holonomy_and_nine_chart_no_go.py audit_cross_root_coordinate_monomial_chart_holonomy_and_nine_chart_no_go.py
 uv run --with ruff ruff check verify_cross_root_coordinate_monomial_chart_holonomy_and_nine_chart_no_go.py audit_cross_root_coordinate_monomial_chart_holonomy_and_nine_chart_no_go.py
 ```

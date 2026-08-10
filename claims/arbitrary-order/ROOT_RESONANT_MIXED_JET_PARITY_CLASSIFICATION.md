@@ -136,17 +136,17 @@ cancel all mixed-colour coefficients.
 Replay the pairwise dependencies first:
 
 ```powershell
-uv run --with sympy python verify_root_mixed_second_jet_quotient_rank_classification.py
-python audit_root_mixed_second_jet_quotient_rank_classification.py
-uv run --with sympy python verify_root_mixed_second_jet_resonance_clique_classification.py
-python audit_root_mixed_second_jet_resonance_clique_classification.py
+uv run --with sympy python claims/arbitrary-order/verify_root_mixed_second_jet_quotient_rank_classification.py
+python claims/arbitrary-order/audit_root_mixed_second_jet_quotient_rank_classification.py
+uv run --with sympy python claims/arbitrary-order/verify_root_mixed_second_jet_resonance_clique_classification.py
+python claims/arbitrary-order/audit_root_mixed_second_jet_resonance_clique_classification.py
 ```
 
 Then run:
 
 ```powershell
-uv run --with sympy python verify_root_resonant_mixed_jet_parity_classification.py
-python audit_root_resonant_mixed_jet_parity_classification.py
+uv run --with sympy python claims/arbitrary-order/verify_root_resonant_mixed_jet_parity_classification.py
+python claims/arbitrary-order/audit_root_resonant_mixed_jet_parity_classification.py
 uv run --with sympy --with ruff python -m ruff check verify_root_resonant_mixed_jet_parity_classification.py audit_root_resonant_mixed_jet_parity_classification.py
 python -m py_compile verify_root_resonant_mixed_jet_parity_classification.py audit_root_resonant_mixed_jet_parity_classification.py
 ```

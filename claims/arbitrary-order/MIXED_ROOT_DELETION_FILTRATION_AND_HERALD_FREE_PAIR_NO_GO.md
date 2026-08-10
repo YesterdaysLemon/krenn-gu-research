@@ -385,8 +385,8 @@ global Krenn--Gu conjecture:                             UNRESOLVED.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py
-python audit_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py
+uv run --with sympy python claims/arbitrary-order/verify_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py
+python claims/arbitrary-order/audit_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py
 python -m py_compile verify_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py audit_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py
 uv run --with ruff ruff check verify_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py audit_mixed_root_deletion_filtration_and_herald_free_pair_no_go.py
 ```

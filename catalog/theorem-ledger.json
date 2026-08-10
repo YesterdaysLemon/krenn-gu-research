@@ -81,7 +81,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "d4c1c0fe5c6fe19d",
+      "document_sha256_16": "fafb4f7675a3cc75",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1718,7 +1718,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "d4c1c0fe5c6fe19d",
+      "document_sha256_16": "fafb4f7675a3cc75",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -1854,7 +1854,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "d4c1c0fe5c6fe19d",
+      "document_sha256_16": "fafb4f7675a3cc75",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],

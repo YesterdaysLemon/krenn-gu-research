@@ -1,7 +1,8 @@
 # Root-exit Stage 30 high-order forest dry run
 
-Status: **EXACT MAPPING REVIEWED AND FROZEN FOR BATCH APPROVAL; NOT YET
-EXECUTED.**
+Status: **EXACT DRY RUN EXECUTED; LOCAL CANDIDATE VALIDATED.**  Hosted
+exact-head CI, guarded merge, and merged-main CI remain release gates and are
+not pre-asserted by this report.
 
 The global Krenn--Gu conjecture remains **UNRESOLVED**.  This stage changes
 layout, executable paths, catalog classification, and migration enforcement
@@ -145,3 +146,42 @@ worktree.
 7. Require the index-complete hygiene floor,  migration tests, lattice tests,
    clean status, both fresh referee acceptances, exact-head hosted CI, merge,
    and merged-main CI before the next tranche is based.
+
+## Execution and local closure
+
+The tracked schema-v2 batch
+[`high-order-root-exit-stage30`](../../catalog/batches/high-order-root-exit-stage30.json)
+executed from the accepted amended checkpoint
+`e9ee787cd4da92c5d22009b671f8fd1921e7f995`.  The pure transaction commit is
+`d44a17901407d8e98d38281223eb6c2306dbfb98` and contains exactly 102 `R100`
+renames plus the executor-owned manifest transition.  Every destination Git
+blob equals its frozen source blob; no source remains and no destination is
+missing.
+
+The live tracked root is now 887 files plus nine directories, or 896 entries:
+16 justified entries and 880 grandfathered-debt files.  New debt remains zero.
+The manifest records 1,477 moved rows, 45 proposed-high rows, 704
+review-required rows, and 137 unclassified files, with no collision,
+double-move, or overlap-cycle report.
+
+The migration-aware fixed-point repair changed only path consumers: 59 local
+link targets and 108 fenced replay commands across 41 Markdown files.  It had
+no ambiguity.  Link-only changes to `README.md` required three identical
+`document_sha256_16` refreshes in the theorem ledger; no ledger path, status,
+scope, role, dependency, provenance, completeness, or global-status field
+changed.
+
+Local closure on the index-complete candidate passed:
+
+- hygiene: 1,699 Python files compile, 848 Markdown files link-clean, all 86
+  ledger hashes valid, 880 grandfathered debt and zero new debt;
+- migration tooling: 158 tests;
+- fourteen-vertex cycle-cover lattice: 14 tests;
+- moved-carrier probe: all 68 Python carriers compile and the sole sibling
+  import resolves from `claims/arbitrary-order`;
+- link/replay rewriter: exact `0/0/0` fixed point with no ambiguity; and
+- diff checks: no unstaged candidate change and no whitespace error.
+
+No SAT, Singular, brute-force, numerical, sampling, or broad theorem replay
+was run merely because the paths moved.  The global Krenn--Gu conjecture
+remains **UNRESOLVED**.

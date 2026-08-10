@@ -120,8 +120,8 @@ satisfy the quotient-frame, mixed-colour, and higher-cofactor identities.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_root_restricted_jet_companion_matching_saturation_necessity.py
-python audit_root_restricted_jet_companion_matching_saturation_necessity.py
+uv run --with sympy python claims/arbitrary-order/verify_root_restricted_jet_companion_matching_saturation_necessity.py
+python claims/arbitrary-order/audit_root_restricted_jet_companion_matching_saturation_necessity.py
 uv run --with sympy --with ruff python -m ruff check verify_root_restricted_jet_companion_matching_saturation_necessity.py audit_root_restricted_jet_companion_matching_saturation_necessity.py
 python -m py_compile verify_root_restricted_jet_companion_matching_saturation_necessity.py audit_root_restricted_jet_companion_matching_saturation_necessity.py
 ```

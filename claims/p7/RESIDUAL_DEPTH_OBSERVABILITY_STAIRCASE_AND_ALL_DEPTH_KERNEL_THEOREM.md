@@ -370,8 +370,8 @@ global Krenn--Gu conjecture:                            UNRESOLVED.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_residual_depth_observability_staircase_and_all_depth_kernel.py
-python audit_residual_depth_observability_staircase_and_all_depth_kernel.py
+uv run --with sympy python claims/p7/verify_residual_depth_observability_staircase_and_all_depth_kernel.py
+python claims/p7/audit_residual_depth_observability_staircase_and_all_depth_kernel.py
 python -m py_compile verify_residual_depth_observability_staircase_and_all_depth_kernel.py audit_residual_depth_observability_staircase_and_all_depth_kernel.py
 uv run --with ruff ruff check verify_residual_depth_observability_staircase_and_all_depth_kernel.py audit_residual_depth_observability_staircase_and_all_depth_kernel.py
 ```

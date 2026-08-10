@@ -385,8 +385,8 @@ global Krenn--Gu:                                      UNRESOLVED.
 ## Exact replay
 
 ```powershell
-uv run --with sympy python verify_legal_companion_simple_incidence_weighted_pullback_ideal.py
-python audit_legal_companion_simple_incidence_weighted_pullback_ideal.py
+uv run --with sympy python claims/p7/verify_legal_companion_simple_incidence_weighted_pullback_ideal.py
+python claims/p7/audit_legal_companion_simple_incidence_weighted_pullback_ideal.py
 python -m py_compile verify_legal_companion_simple_incidence_weighted_pullback_ideal.py audit_legal_companion_simple_incidence_weighted_pullback_ideal.py
 uv run --with ruff ruff check verify_legal_companion_simple_incidence_weighted_pullback_ideal.py audit_legal_companion_simple_incidence_weighted_pullback_ideal.py
 ```

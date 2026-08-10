@@ -381,8 +381,8 @@ global Krenn--Gu conjecture:                           UNRESOLVED.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_residual_depth_loop_hafnian_cumulant_and_two_port_discriminant.py
-python audit_residual_depth_loop_hafnian_cumulant_and_two_port_discriminant.py
+uv run --with sympy python claims/arbitrary-order/verify_residual_depth_loop_hafnian_cumulant_and_two_port_discriminant.py
+python claims/arbitrary-order/audit_residual_depth_loop_hafnian_cumulant_and_two_port_discriminant.py
 python -m py_compile verify_residual_depth_loop_hafnian_cumulant_and_two_port_discriminant.py audit_residual_depth_loop_hafnian_cumulant_and_two_port_discriminant.py
 uv run --with ruff ruff check verify_residual_depth_loop_hafnian_cumulant_and_two_port_discriminant.py audit_residual_depth_loop_hafnian_cumulant_and_two_port_discriminant.py
 ```

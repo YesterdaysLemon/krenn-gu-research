@@ -139,7 +139,7 @@ the arbitrary-order classification.
 
 The restriction `|I|>=2` is deliberate.  The singleton derivative has rank
 two and its quotient-frame rigidity is already proved in
-[`ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md`](claims/arbitrary-order/ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md).
+[`ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md`](ROOT_TANGENT_COMPANION_NECESSITY_FOR_COORDINATE_SLICE.md).
 
 ## The full-jet sharpness construction fails the first lower two-root value
 
@@ -167,8 +167,8 @@ not a no-go for all legal companion systems.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py
-python audit_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py
+uv run --with sympy python claims/arbitrary-order/verify_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py
+python claims/arbitrary-order/audit_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py
 uv run --with sympy --with ruff python -m ruff check verify_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py audit_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py
 python -m py_compile verify_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py audit_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py
 ```

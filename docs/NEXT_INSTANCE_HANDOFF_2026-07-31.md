@@ -1417,19 +1417,19 @@ coordinate `c` obeys `a_c=b_c=0` and `a_p b_p=a_q b_q`; everywhere else it
 has rank two.  Consequently, a nonresonant root pair needs at least two
 independent accessible double-deletion cofactor quotient classes.  This is
 a necessary condition only; their graph/hafnian realizability remains open:
-[`ROOT_MIXED_SECOND_JET_QUOTIENT_RANK_CLASSIFICATION.md`](../ROOT_MIXED_SECOND_JET_QUOTIENT_RANK_CLASSIFICATION.md).
+[`ROOT_MIXED_SECOND_JET_QUOTIENT_RANK_CLASSIFICATION.md`](../claims/arbitrary-order/ROOT_MIXED_SECOND_JET_QUOTIENT_RANK_CLASSIFICATION.md).
 The rank-one relation has an exact clique classification.  For `r>=3`, a
 pairwise-resonant root set is either one repeated balanced coordinate-pair
 covector or, only at `r=3`, the three coordinate covectors.  Therefore
 `r>=4` has a unique exceptional splitting pattern left to analyze; the
 classification does not prove that pattern realizable or impossible:
-[`ROOT_MIXED_SECOND_JET_RESONANCE_CLIQUE_CLASSIFICATION.md`](../ROOT_MIXED_SECOND_JET_RESONANCE_CLIQUE_CLASSIFICATION.md).
+[`ROOT_MIXED_SECOND_JET_RESONANCE_CLIQUE_CLASSIFICATION.md`](../claims/arbitrary-order/ROOT_MIXED_SECOND_JET_RESONANCE_CLIQUE_CLASSIFICATION.md).
 That uniform exception has a complete mixed-jet parity law: the restricted
 GHZ quotient has rank one at even order and rank two at odd order.  Thus its
 three-root mixed derivative already demands a full quotient span.  For the
 three-axis `r=3` exception the triple product is instead identically zero.
 Neither calculation proves graph/hafnian realizability or nonrealizability:
-[`ROOT_RESONANT_MIXED_JET_PARITY_CLASSIFICATION.md`](../ROOT_RESONANT_MIXED_JET_PARITY_CLASSIFICATION.md).
+[`ROOT_RESONANT_MIXED_JET_PARITY_CLASSIFICATION.md`](../claims/arbitrary-order/ROOT_RESONANT_MIXED_JET_PARITY_CLASSIFICATION.md).
 One topology is nevertheless excluded.  With `r>=4`, exactly two effective
 residual companion endpoints, projectively constant root--blocker rows, and
 no effective root--root restricted tangent channel, every pair has one
@@ -1437,21 +1437,21 @@ cofactor line and forces uniform resonance; the graph triple jet is then
 zero by endpoint pigeonhole while the GHZ triple jet has rank two.  Any
 survivor needs nonprojective blocker variation, a root--root channel, or a
 third nonroot companion endpoint:
-[`ROOT_TWO_RESIDUAL_ONLY_COMPANION_THIRD_JET_OBSTRUCTION.md`](../ROOT_TWO_RESIDUAL_ONLY_COMPANION_THIRD_JET_OBSTRUCTION.md).
+[`ROOT_TWO_RESIDUAL_ONLY_COMPANION_THIRD_JET_OBSTRUCTION.md`](../claims/arbitrary-order/ROOT_TWO_RESIDUAL_ONLY_COMPANION_THIRD_JET_OBSTRUCTION.md).
 The endpoint pigeonhole has an arbitrary-`t` form.  With `r` roots, `t`
 effective nonroot companions, projectively constant blocker rows, and no
 root--root restricted channel, exact mixed derivatives force
 `t>=ceiling(2r/3)`.  Each coordinate-axis tangent covector occurs at least
 `r-t` times and at most `3t-2r` roots are non-axis.  This does not exclude
 the root--root or nonprojective escape routes:
-[`ROOT_FINITE_NONROOT_COMPANION_ENDPOINT_COUNT_OBSTRUCTION.md`](../ROOT_FINITE_NONROOT_COMPANION_ENDPOINT_COUNT_OBSTRUCTION.md).
+[`ROOT_FINITE_NONROOT_COMPANION_ENDPOINT_COUNT_OBSTRUCTION.md`](../claims/arbitrary-order/ROOT_FINITE_NONROOT_COMPANION_ENDPOINT_COUNT_OBSTRUCTION.md).
 Allowing root--root channels yields a precise arbitrary-order replacement:
 every root subset missing any coordinate-axis covector type must admit an
 effective matching saturating that subset, with tangent--tangent edges used
 inside it and one-tangent edges to fixed endpoints.  This saturation is
 necessary but not sufficient for cofactor realizability or mixed-colour
 cancellation:
-[`ROOT_RESTRICTED_JET_COMPANION_MATCHING_SATURATION_NECESSITY.md`](../ROOT_RESTRICTED_JET_COMPANION_MATCHING_SATURATION_NECESSITY.md).
+[`ROOT_RESTRICTED_JET_COMPANION_MATCHING_SATURATION_NECESSITY.md`](../claims/arbitrary-order/ROOT_RESTRICTED_JET_COMPANION_MATCHING_SATURATION_NECESSITY.md).
 For the full root set, zero or one effective nonroot endpoint yields a
 strictly stronger cofactor-span constraint even with arbitrary root--root
 tangent edges.  Endpoint parity makes every surviving matching use the same
@@ -1460,7 +1460,7 @@ hafnian line.  The full GHZ derivative can have rank at most one only if at
 least two distinct coordinate-axis tangent types occur; when there is no
 endpoint and the root count is odd, all three types occur.  In particular
 the uniform balanced resonance is impossible in this topology:
-[`ROOT_AT_MOST_ONE_ENDPOINT_FULL_JET_AXIS_NECESSITY.md`](../ROOT_AT_MOST_ONE_ENDPOINT_FULL_JET_AXIS_NECESSITY.md).
+[`ROOT_AT_MOST_ONE_ENDPOINT_FULL_JET_AXIS_NECESSITY.md`](../claims/arbitrary-order/ROOT_AT_MOST_ONE_ENDPOINT_FULL_JET_AXIS_NECESSITY.md).
 More generally, endpoint parity indexes the full-root derivative by at most
 `sum_(ell congruent r mod 2) binomial(t,ell)` deletion cofactors.  At exactly
 two endpoints this is two, so the three GHZ coefficient forms must be
@@ -1469,7 +1469,7 @@ root or support of every tangent covector on one common coordinate pair.
 This constrains the order-fourteen five-root/seven-blocker/two-residual cell
 even with dense root--root tangent channels, but neither residual branch is
 yet excluded:
-[`ROOT_FINITE_ENDPOINT_FULL_JET_COFACTOR_SPAN_BOUND.md`](../ROOT_FINITE_ENDPOINT_FULL_JET_COFACTOR_SPAN_BOUND.md).
+[`ROOT_FINITE_ENDPOINT_FULL_JET_COFACTOR_SPAN_BOUND.md`](../claims/arbitrary-order/ROOT_FINITE_ENDPOINT_FULL_JET_COFACTOR_SPAN_BOUND.md).
 The two-endpoint bound is sharp even jointly with the present support-level
 global necessities.  For every `r>=2`, a legal loopless symmetric block graph
 realizes the two independent diagonal cofactor classes, full root blocker-row
@@ -1478,7 +1478,7 @@ not a witness: an undifferentiated mixed GHZ coefficient is a positive integer.
 Thus full-root frames, row span, and matching support alone cannot close the
 axis branch.  The next bridge must use the actual lower-subset cofactor values,
 mixed-colour identities, or nonprojective variation:
-[`ROOT_ARBITRARY_ORDER_TWO_ENDPOINT_FULL_JET_FRAME_SHARPNESS_NOGO.md`](../ROOT_ARBITRARY_ORDER_TWO_ENDPOINT_FULL_JET_FRAME_SHARPNESS_NOGO.md).
+[`ROOT_ARBITRARY_ORDER_TWO_ENDPOINT_FULL_JET_FRAME_SHARPNESS_NOGO.md`](../claims/arbitrary-order/ROOT_ARBITRARY_ORDER_TWO_ENDPOINT_FULL_JET_FRAME_SHARPNESS_NOGO.md).
 For every mixed root subset `I` with `|I|>=2`, the lower jet now has a sharper
 exact deletion-class formula.  Companion partial matchings with the same
 outside partner set carry one common complementary-hafnian cofactor, so the
@@ -1490,7 +1490,7 @@ out the sharp two-endpoint support construction for every `r>=3` using the
 two-root/all-colour-1 coefficient.  It does not classify simultaneous
 principal-hafnian realizability, nonprojective blocker variation, or prove
 the local-to-global reduction:
-[`ROOT_ARBITRARY_LOWER_MIXED_JET_COFACTOR_FRAME_NECESSITY.md`](../ROOT_ARBITRARY_LOWER_MIXED_JET_COFACTOR_FRAME_NECESSITY.md).
+[`ROOT_ARBITRARY_LOWER_MIXED_JET_COFACTOR_FRAME_NECESSITY.md`](../claims/arbitrary-order/ROOT_ARBITRARY_LOWER_MIXED_JET_COFACTOR_FRAME_NECESSITY.md).
 Even exact compatibility of the two top parity cofactors is insufficient.
 For every odd blocker count `m>=5`, including the five-root/seven-blocker
 case `m=7`, an explicit legal alternating path realizes
@@ -1503,7 +1503,7 @@ on a zero cofactor.  This rules out top principal-hafnian compatibility and
 full port span as a closing route.  It does not provide root rows satisfying
 `P_m(H;a;b)=Delta_3` and is not a counterexample; lower-root cofactor values
 or that shared mixed identity are still required:
-[`ROOT_ARBITRARY_TWO_ENDPOINT_BINARY_COFACTOR_PORT_COMPATIBILITY_REALIZATION.md`](../ROOT_ARBITRARY_TWO_ENDPOINT_BINARY_COFACTOR_PORT_COMPATIBILITY_REALIZATION.md).
+[`ROOT_ARBITRARY_TWO_ENDPOINT_BINARY_COFACTOR_PORT_COMPATIBILITY_REALIZATION.md`](../claims/arbitrary-order/ROOT_ARBITRARY_TWO_ENDPOINT_BINARY_COFACTOR_PORT_COMPATIBILITY_REALIZATION.md).
 The first shared `P_m` identity excludes this exact gadget.  For each colour,
 both port rows are supported on one common blocker, so their two-row
 pure-colour permanent has a Hall defect and all three desired coefficients
@@ -1511,7 +1511,7 @@ vanish for every root-row family `H` and every odd `m>=5`.  Any survivor must
 have, for each colour, nonempty support in both port families and a union of
 at least two blocker columns.  This is a new necessary condition, not a
 closure by itself:
-[`ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md`](../ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md).
+[`ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md`](../claims/arbitrary-order/ROOT_ARBITRARY_TWO_ENDPOINT_PORT_HALL_DEFICIENCY_OBSTRUCTION.md).
 The Hall condition is nevertheless feasible together with every current
 local requirement and the desired pure coefficients.  At `m=7`, an explicit
 integer construction preserves the binary endpoint cofactors, zero mixed
@@ -1938,30 +1938,30 @@ uv run --with sympy python claims/arbitrary-order/verify_root_tangent_cycle_fram
 python claims/arbitrary-order/audit_root_tangent_cycle_frame_symmetry_realization.py
 uv run --with sympy python claims/arbitrary-order/verify_root_tangent_minimal_cycle_second_jet_obstruction.py
 python claims/arbitrary-order/audit_root_tangent_minimal_cycle_second_jet_obstruction.py
-uv run --with sympy python verify_root_mixed_second_jet_quotient_rank_classification.py
-python audit_root_mixed_second_jet_quotient_rank_classification.py
-uv run --with sympy python verify_root_mixed_second_jet_resonance_clique_classification.py
-python audit_root_mixed_second_jet_resonance_clique_classification.py
-uv run --with sympy python verify_root_resonant_mixed_jet_parity_classification.py
-python audit_root_resonant_mixed_jet_parity_classification.py
-uv run --with sympy python verify_root_two_residual_only_companion_third_jet_obstruction.py
-python audit_root_two_residual_only_companion_third_jet_obstruction.py
-uv run --with sympy python verify_root_finite_nonroot_companion_endpoint_count_obstruction.py
-python audit_root_finite_nonroot_companion_endpoint_count_obstruction.py
-uv run --with sympy python verify_root_restricted_jet_companion_matching_saturation_necessity.py
-python audit_root_restricted_jet_companion_matching_saturation_necessity.py
-uv run --with sympy python verify_root_at_most_one_endpoint_full_jet_axis_necessity.py
-python audit_root_at_most_one_endpoint_full_jet_axis_necessity.py
-uv run --with sympy python verify_root_finite_endpoint_full_jet_cofactor_span_bound.py
-python audit_root_finite_endpoint_full_jet_cofactor_span_bound.py
-uv run --with sympy python verify_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py
-python audit_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py
-uv run --with sympy python verify_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py
-python audit_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py
-uv run --with sympy python verify_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py
-python audit_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py
-uv run --with sympy python verify_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py
-python audit_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py
+uv run --with sympy python claims/arbitrary-order/verify_root_mixed_second_jet_quotient_rank_classification.py
+python claims/arbitrary-order/audit_root_mixed_second_jet_quotient_rank_classification.py
+uv run --with sympy python claims/arbitrary-order/verify_root_mixed_second_jet_resonance_clique_classification.py
+python claims/arbitrary-order/audit_root_mixed_second_jet_resonance_clique_classification.py
+uv run --with sympy python claims/arbitrary-order/verify_root_resonant_mixed_jet_parity_classification.py
+python claims/arbitrary-order/audit_root_resonant_mixed_jet_parity_classification.py
+uv run --with sympy python claims/arbitrary-order/verify_root_two_residual_only_companion_third_jet_obstruction.py
+python claims/arbitrary-order/audit_root_two_residual_only_companion_third_jet_obstruction.py
+uv run --with sympy python claims/arbitrary-order/verify_root_finite_nonroot_companion_endpoint_count_obstruction.py
+python claims/arbitrary-order/audit_root_finite_nonroot_companion_endpoint_count_obstruction.py
+uv run --with sympy python claims/arbitrary-order/verify_root_restricted_jet_companion_matching_saturation_necessity.py
+python claims/arbitrary-order/audit_root_restricted_jet_companion_matching_saturation_necessity.py
+uv run --with sympy python claims/arbitrary-order/verify_root_at_most_one_endpoint_full_jet_axis_necessity.py
+python claims/arbitrary-order/audit_root_at_most_one_endpoint_full_jet_axis_necessity.py
+uv run --with sympy python claims/arbitrary-order/verify_root_finite_endpoint_full_jet_cofactor_span_bound.py
+python claims/arbitrary-order/audit_root_finite_endpoint_full_jet_cofactor_span_bound.py
+uv run --with sympy python claims/arbitrary-order/verify_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py
+python claims/arbitrary-order/audit_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py
+uv run --with sympy python claims/arbitrary-order/verify_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py
+python claims/arbitrary-order/audit_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py
+uv run --with sympy python claims/arbitrary-order/verify_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py
+python claims/arbitrary-order/audit_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py
+uv run --with sympy python claims/arbitrary-order/verify_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py
+python claims/arbitrary-order/audit_root_arbitrary_two_endpoint_port_hall_deficiency_obstruction.py
 uv run --with sympy python claims/arbitrary-order/verify_root_m7_hall_satisfying_two_port_pure_p7_construction.py
 python claims/arbitrary-order/audit_root_m7_hall_satisfying_two_port_pure_p7_construction.py
 uv run --with sympy python claims/arbitrary-order/verify_root_m7_fixed_support_pure_mixed_monomial_saturation_obstruction.py

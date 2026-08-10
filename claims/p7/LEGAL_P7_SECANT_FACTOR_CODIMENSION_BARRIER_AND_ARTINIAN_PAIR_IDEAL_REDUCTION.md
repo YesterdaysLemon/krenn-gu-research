@@ -367,8 +367,8 @@ global Krenn--Gu:                                                UNRESOLVED.
 ## Exact replay
 
 ```powershell
-uv run --with sympy python verify_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py
-python audit_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py
+uv run --with sympy python claims/p7/verify_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py
+python claims/p7/audit_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py
 python -m py_compile verify_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py audit_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py
 uv run --with ruff ruff check verify_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py audit_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py
 ```

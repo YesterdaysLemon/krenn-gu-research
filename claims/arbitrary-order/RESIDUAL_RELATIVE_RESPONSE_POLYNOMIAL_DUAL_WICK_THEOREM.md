@@ -458,8 +458,8 @@ global Krenn--Gu conjecture:                            UNRESOLVED.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_residual_relative_response_polynomial_dual_wick.py
-python audit_residual_relative_response_polynomial_dual_wick.py
+uv run --with sympy python claims/arbitrary-order/verify_residual_relative_response_polynomial_dual_wick.py
+python claims/arbitrary-order/audit_residual_relative_response_polynomial_dual_wick.py
 ```
 
 The primary verifier constructs the response in the square-zero algebra,

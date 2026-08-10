@@ -603,8 +603,8 @@ global Krenn--Gu:                                             UNRESOLVED.
 ## Exact replay
 
 ```powershell
-uv run --with sympy python verify_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py
-python audit_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py
+uv run --with sympy python claims/p7/verify_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py
+python claims/p7/audit_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py
 python -m py_compile verify_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py audit_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py
 uv run --with ruff ruff check verify_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py audit_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py
 ```

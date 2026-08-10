@@ -275,8 +275,8 @@ inference, parameter sweep, Groebner elimination, or timeout is used.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_seven_leaf_hafnian_projected_veronese_ramification.py
-python audit_seven_leaf_hafnian_projected_veronese_ramification.py
+uv run --with sympy python claims/p7/verify_seven_leaf_hafnian_projected_veronese_ramification.py
+python claims/p7/audit_seven_leaf_hafnian_projected_veronese_ramification.py
 python -m py_compile verify_seven_leaf_hafnian_projected_veronese_ramification.py audit_seven_leaf_hafnian_projected_veronese_ramification.py
 uv run --with ruff ruff check verify_seven_leaf_hafnian_projected_veronese_ramification.py audit_seven_leaf_hafnian_projected_veronese_ramification.py
 ```

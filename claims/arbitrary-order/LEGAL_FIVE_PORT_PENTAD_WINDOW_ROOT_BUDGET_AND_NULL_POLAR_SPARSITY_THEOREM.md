@@ -354,8 +354,8 @@ global Krenn--Gu conjecture:                              UNRESOLVED.
 Run from the repository root:
 
 ```powershell
-uv run --with sympy python verify_legal_five_port_pentad_window_root_budget_and_null_polar_sparsity.py
-python audit_legal_five_port_pentad_window_root_budget_and_null_polar_sparsity.py
+uv run --with sympy python claims/arbitrary-order/verify_legal_five_port_pentad_window_root_budget_and_null_polar_sparsity.py
+python claims/arbitrary-order/audit_legal_five_port_pentad_window_root_budget_and_null_polar_sparsity.py
 python -m py_compile verify_legal_five_port_pentad_window_root_budget_and_null_polar_sparsity.py audit_legal_five_port_pentad_window_root_budget_and_null_polar_sparsity.py
 uv run --with ruff ruff check verify_legal_five_port_pentad_window_root_budget_and_null_polar_sparsity.py audit_legal_five_port_pentad_window_root_budget_and_null_polar_sparsity.py
 ```
