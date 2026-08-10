@@ -350,12 +350,17 @@ legitimate; only executable root-relative references to moved paths
 must be repaired.  An import probe is not sufficient for this audit
 because fail-open `.exists()` paths are never exercised at import time.
 
-## 9. End of migration
+## 9. End state and future policy changes
 
-When the root migration is substantially complete, preserve this
-document as migration history or move it into an explicitly
-historical architecture area.
+Stage 33 retired the final grandfathered root debt.  Phase R3 exact
+end-state enforcement is active: the ordinary `python check_hygiene.py`
+command fails every tracked top-level path outside the reviewed
+seven-file and nine-directory allowlist, with no environment opt-out.
 
-Do not keep obsolete migration procedure inside `AGENTS.md`.
+This document remains as the authoritative migration workflow and
+history.  Adding a new root exception now requires a fresh Tier-2
+policy review that updates the exact allowlist, its hard limit, tests,
+and contract together.  Root pressure still supplies no ownership or
+scientific authority.
 
 The permanent scientific operating contract remains `AGENTS.md`.
