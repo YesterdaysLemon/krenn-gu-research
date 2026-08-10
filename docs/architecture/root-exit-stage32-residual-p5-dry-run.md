@@ -1,6 +1,6 @@
 # Root-exit Stage 32 residual P5 forest dry run
 
-Status: **EXACT MAPPING FROZEN; NOT YET EXECUTED**
+Status: **EXACT MAPPING REFROZEN ON MERGED MAIN; NOT YET EXECUTED**
 
 The global Krenn--Gu conjecture remains **UNRESOLVED**.  This is a Tier-2
 layout, catalog, disputed-ownership, and shared-infrastructure transaction.
@@ -10,14 +10,14 @@ audit-independence claim, or global status.
 ## Reviewed base and arithmetic
 
 ```text
-merged-main base: 2a0bc5899e9edfcfd2add0f52f46827c47a54344
-root:             536 files + 9 directories = 545 entries
+merged-main base: 614d41e57382ad2b3372278e80d38b6bab15d5ca
+root:             532 files + 9 directories = 541 entries
 justified:        7 files + 9 directories = 16 entries
-debt:             529 grandfathered files, 0 new files
+debt:             525 grandfathered files, 0 new files
 ```
 
 The exact transaction contains 220 root sources.  Its pure move projects the
-live root to 325 entries: the same 16 justified entries and 309 grandfathered
+live root to 321 entries: the same 16 justified entries and 305 grandfathered
 files.  The historical frozen root universe remains exactly 2,363 paths with
 SHA-256 `2f4f1af23a89fa3ca56fe2114676c6324385aa1dbd7e5b6ddf35863511edd76c`.
 Catalog membership changes from `2244 classified + 119 unclassified` to
@@ -118,8 +118,16 @@ partial result, verifier, or audit into generic proof infrastructure.
 canonical mapping SHA-256:
   be94dcaadb97d29eb6e6b5efe712485ac55aa3286e802dfa457746cd8dd4cf56
 canonical source-identity SHA-256:
-  40b150d9dde35a1fb6ae60adbd8f7bc2aeaf1f5d1a295e6fe0bfe6d12b44855f
+  b8ea3715e534a1a4bbfdac0f362c019f4f9f09ff8633a9ae9261d5a6119dd045
 ```
+
+The mapping hash is unchanged from the reviewed pre-reconciliation freeze.
+Four selected root documents acquired only the merged H31 package's fixed-point
+link repairs before this refreeze: `P5_ALTERNATIVE_STRATEGY_MAP.md`,
+`P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md`,
+`P5_H31_MARKED_BASIS_OPEN_BRANCH.md`, and
+`P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md`.  Their new Git blobs account for the
+source-identity change; membership and destinations did not change.
 
 The schema-v2 batch must freeze every old path, destination, and Git blob at
 the reviewed base.  The executor must refuse a non-ancestor base, source
@@ -146,5 +154,11 @@ third large root-exit tranche since Stage 30, so a fresh read-only program
 audit follows its merge.
 
 The separately owner-authorized H31 chart-boundary marked-fibre scientific
-reconciliation remains outside this 220-file transaction.  Its four frozen
-sources are not moved or edited here.
+reconciliation is merged under
+`claims/p5/h31/component-chart-boundary-marked-fibre/` and remains outside
+these 220 moves.  Stage 32 does not move or reinterpret that four-file package.
+Because its generator, verifier, and audit consume providers moved or extracted
+by this transaction, they may receive only the narrowly mechanical
+bootstrap/import repairs required for the merged tree to resolve.  Their
+scientific text, record counts, exact characteristic-zero result, modular-QA
+boundary, and global status remain unchanged.
