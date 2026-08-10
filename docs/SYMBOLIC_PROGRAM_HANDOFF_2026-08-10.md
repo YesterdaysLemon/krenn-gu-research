@@ -5,13 +5,13 @@
 The global Krenn--Gu conjecture remains **UNRESOLVED**. This document records
 the next exact symbolic obligations after the repository root exit.  The
 current checkpoint adds exact arbitrary-order all-bridge, balanced-sensor,
-and maximal-torus-root theorems plus one proved boundary for a
-characteristic-two route.  None closes every branch of the global
-extraction/gluing obligation or changes global status.
+maximal-torus-root, and matrix-unit cancellation theorems plus one proved
+boundary for a characteristic-two route.  None closes every branch of the
+global extraction/gluing obligation or changes global status.
 
 The operational base for this checkpoint is merged `main` at
-`cb77e5323b83705d791df7ea51a4b83c2f9248bf`.  Its push hygiene workflow
-completed successfully in run `31424280752`.
+`eef92672a8c8e6f4285a044686b272de11250d8e`.  Its push hygiene workflow
+completed successfully in run `31426245049`.
 
 - Stage 33 moved the final 305 root-debt artifacts through PR #69 and merged as
   `4263832e3ff338c5bd87528268cb8cb563866ec0`; both exact-head and exact
@@ -243,6 +243,23 @@ This removes the coordinate monomial as a residual branch but does not
 synchronize the direct pair blocks into one two-row permanental channel.
 Higher surplus and the `r=1` cancellation branch also remain open.  See
 [`MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md`](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md).
+
+The `r=1` branch has three further exact controls.  Near-monochromatic words
+force the active pure-cofactor support to meet every vertex.  A word with two
+vertices in one colour and the rest in another gives a pure deletion-cofactor versus
+two-cross-edge cycle dichotomy.  Choosing a matching-induced forbidden word
+with the fewest deviations from one colour groups its coefficient exactly by
+alternating cycles containing every deviation; only zero pure cofactors or
+multi-cycle cancellation remain.
+
+If one colour is rigid at every vertex, the entire tensor factors into a
+principal hafnian in that colour and an induced two-colour matching tensor,
+giving a pointwise annihilating-deletion-deck system.  Global rigidity is not
+forced.  An exact order-six matrix-unit gadget cancels all three mixed
+matchings in the selected Bogdanov backbone but leaves six other mixed words
+with coefficient `-1`.  It is not a witness; it proves that off-backbone
+coefficients are indispensable.  See
+[`RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md`](../claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md).
 
 ### New all-bridge closure
 

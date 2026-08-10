@@ -62,6 +62,17 @@ surplus-two blocker identities rather than remaining a residual branch.
 Synchronization of their physical pair blocks, higher surplus, and the
 one-root cancellation branch remain open.
 
+The
+[`rigid-colour boundary theorem`](RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md)
+sharpens that one-root branch.  It proves universal near-monochromatic deck,
+two-point cross-cycle, and minimal-deviation cycle identities.  Under the
+additional hypothesis that one colour is rigid at every vertex, it factors
+the full coefficient system into one principal hafnian and an induced
+two-colour tensor.  Its exact six-vertex gadget shows that every mixed
+Bogdanov-backbone matching can cancel while off-backbone words still fail.
+The gadget is not a witness, global rigidity is not forced, and neither the
+rigid nor nonrigid one-root boundary is excluded.
+
 At the Stage 27 boundary, the owner-gated H22/H31, Component20/21/23,
 high-coordinate, and mixed-lifecycle conflict surfaces were excluded from
 that batch and remained at root, unmoved and unadjudicated at that stage.

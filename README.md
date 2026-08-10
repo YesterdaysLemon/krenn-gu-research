@@ -84,6 +84,18 @@ does not synchronize their physical pair blocks or exclude higher surplus or
 the one-root cancellation branch.  See
 [`MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md`](claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md).
 
+The one-root branch now has a sharper exact cancellation normal form.
+Near-monochromatic words force the active pure-cofactor support to meet every
+vertex; two-point words force either a zero pure deletion cofactor or a
+two-cross-edge alternating cycle; and a minimal-deviation forbidden word
+groups its whole coefficient by cycles spanning every deviation.  If one
+colour is rigid at every vertex, all coefficients factor further into that
+colour's principal hafnian and an induced two-colour tensor.  A signed
+six-vertex gadget cancels all mixed matchings in the selected Bogdanov
+backbone but retains six off-backbone mixed words, so backbone cancellation
+alone cannot close the branch.  See
+[`RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md`](claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md).
+
 On that clean `P_6` fan, target diagonality has now been translated exactly.
 If the fan is invertible, each target-colour deck vector lies in the inverse
 image of `Seg(P^1 x P^2)` and therefore obeys three pulled-back `2 x 2`
