@@ -8,10 +8,11 @@ maximum-diagonal-degree-three boundary, including the previously open case in
 which two selected monochromatic matchings share an edge.  It assumes the
 all-bridge reduction and does not apply to the separate deeper-blocker branch.
 
-The theorem is not a proof of the global Krenn--Gu conjecture.  A remaining
-all-bridge witness must have a vertex incident with at least four physical
-edges carrying saturated diagonal entries; the deeper-blocker alternative and
-the all-bridge `Delta(D)>=4` boundary remain open.
+The theorem is not a proof of the global Krenn--Gu conjecture.  By itself it
+leaves the all-bridge `Delta(D)>=4` boundary.  The later
+[`ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FOUR_EXCLUSION.md`](ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FOUR_EXCLUSION.md)
+also excludes `Delta(D)=4`, so the current all-bridge boundary is
+`Delta(D)>=5`; the deeper-blocker alternative remains open.
 
 ## Exact inherited hypotheses
 
@@ -219,7 +220,9 @@ active deck at every vertex and colour:       PROVED;
 active physical edge sets across colours:     PAIRWISE DISJOINT;
 shared selected edge endpoint degree:         AT LEAST FOUR;
 all-bridge maximum diagonal degree <=3:       EXCLUDED;
-all-bridge Delta(D)>=4 boundary:               UNKNOWN;
+this theorem alone leaves Delta(D)>=4;
+later maximum-degree-four theorem:             Delta(D)=4 EXCLUDED;
+current all-bridge Delta(D)>=5 boundary:        UNKNOWN;
 deeper-blocker branch:                        UNKNOWN;
 forced sparse P5/P6/P7 extraction:            NOT PROVED;
 global Krenn--Gu conjecture:                   UNRESOLVED.

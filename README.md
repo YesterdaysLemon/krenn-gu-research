@@ -2294,7 +2294,7 @@ strictly advance the finite frontier:
 - at every even order, no witness of maximum support degree at most five
   in the simultaneous three-colour balanced all-bridge boundary.
 - at every even order, no simultaneous balanced all-bridge witness whose
-  physical saturated-diagonal graph has maximum degree at most three.
+  physical saturated-diagonal graph has maximum degree at most four.
 - at every even order, no witness in the pairwise-disjoint
   exact-degree-six Kotzig/reciprocal-port boundary.
 - throughout the simultaneous balanced all-bridge branch, every remaining
@@ -5288,9 +5288,9 @@ order-fourteen port scouts used the same mistaken physical-state
 convention and are withdrawn.
 
 The remaining all-bridge targets are the part of the overlapping
-selected-matching branch with saturated-diagonal `Delta(D)>=4` and the
+selected-matching branch with saturated-diagonal `Delta(D)>=5` and the
 support-degree-at-least-seven branch (which is now also forced to have
-`Delta(D)>=4`).  The separate deeper-blocker branch also remains open.
+`Delta(D)>=5`).  The separate deeper-blocker branch also remains open.
 
 There is now a degree-free reduction on both all-bridge targets.  The sum
 of the six permuted potentials is nonnegative on all 180 allowed local
@@ -5336,6 +5336,17 @@ unique forbidden nonmonochromatic coefficient.  Thus every surviving
 all-bridge witness has `Delta(D)>=4`.  The proof and two independent focused
 checks are in
 [`ALL_BRIDGE_ACTIVE_DECK_EXCLUSIVITY_AND_CUBIC_DIAGONAL_EXCLUSION.md`](claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_EXCLUSIVITY_AND_CUBIC_DIAGONAL_EXCLUSION.md).
+
+The same active scores close the next degree.  If `Delta(D)<=4`, each active
+colour graph is a union of isolated edges and even cycles.  Choosing one
+alternating half in every cycle writes each saturated colour support as one
+perfect matching plus a partial matching.  Its nonzero full hafnian then
+prevents cancellation on every matchable principal subgraph.  The mixed-cut
+identities force every pair of the three perfect matchings to be Hamiltonian;
+an extra saturated edge becomes a proper Hamiltonian chord and violates one
+of those mixed cuts.  Thus every surviving all-bridge witness has
+`Delta(D)>=5`; see
+[`ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FOUR_EXCLUSION.md`](claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FOUR_EXCLUSION.md).
 
 On eight vertices, the zero-layer reduction closes completely.  For each
 colour, the nonzero principal hafnians form a set tree whose member
