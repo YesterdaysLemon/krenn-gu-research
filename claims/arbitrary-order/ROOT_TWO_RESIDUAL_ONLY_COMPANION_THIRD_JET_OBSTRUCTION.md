@@ -156,8 +156,8 @@ Then run:
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_root_two_residual_only_companion_third_jet_obstruction.py
 python claims/arbitrary-order/audit_root_two_residual_only_companion_third_jet_obstruction.py
-uv run --with sympy --with ruff python -m ruff check verify_root_two_residual_only_companion_third_jet_obstruction.py audit_root_two_residual_only_companion_third_jet_obstruction.py
-python -m py_compile verify_root_two_residual_only_companion_third_jet_obstruction.py audit_root_two_residual_only_companion_third_jet_obstruction.py
+uv run --with sympy --with ruff python -m ruff check claims/arbitrary-order/verify_root_two_residual_only_companion_third_jet_obstruction.py claims/arbitrary-order/audit_root_two_residual_only_companion_third_jet_obstruction.py
+python -m py_compile claims/arbitrary-order/verify_root_two_residual_only_companion_third_jet_obstruction.py claims/arbitrary-order/audit_root_two_residual_only_companion_third_jet_obstruction.py
 ```
 
 The primary checks the two residual assignments, the common deletion set,

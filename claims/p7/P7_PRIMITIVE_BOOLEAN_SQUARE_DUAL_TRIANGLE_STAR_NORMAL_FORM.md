@@ -252,8 +252,8 @@ symbolic identities.
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_primitive_boolean_square_dual_triangle_star_normal_form.py
 python claims/p7/audit_p7_primitive_boolean_square_dual_triangle_star_normal_form.py
-python -m py_compile verify_p7_primitive_boolean_square_dual_triangle_star_normal_form.py audit_p7_primitive_boolean_square_dual_triangle_star_normal_form.py
-uv run --with ruff ruff check verify_p7_primitive_boolean_square_dual_triangle_star_normal_form.py audit_p7_primitive_boolean_square_dual_triangle_star_normal_form.py
+python -m py_compile claims/p7/verify_p7_primitive_boolean_square_dual_triangle_star_normal_form.py claims/p7/audit_p7_primitive_boolean_square_dual_triangle_star_normal_form.py
+uv run --with ruff ruff check claims/p7/verify_p7_primitive_boolean_square_dual_triangle_star_normal_form.py claims/p7/audit_p7_primitive_boolean_square_dual_triangle_star_normal_form.py
 ```
 
 The primary replay checks the universal hafnian-to-triangle expansion, the

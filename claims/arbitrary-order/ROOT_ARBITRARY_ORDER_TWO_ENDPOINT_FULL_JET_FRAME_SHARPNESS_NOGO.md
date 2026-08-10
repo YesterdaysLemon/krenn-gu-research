@@ -267,8 +267,8 @@ global Krenn--Gu conjecture: UNRESOLVED.                (13)
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py
 python claims/arbitrary-order/audit_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py
-uv run --with sympy --with ruff python -m ruff check verify_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py audit_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py
-python -m py_compile verify_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py audit_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py
+uv run --with sympy --with ruff python -m ruff check claims/arbitrary-order/verify_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py claims/arbitrary-order/audit_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py
+python -m py_compile claims/arbitrary-order/verify_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py claims/arbitrary-order/audit_root_arbitrary_order_two_endpoint_full_jet_frame_sharpness_nogo.py
 ```
 
 The primary constructs the actual integer `3 x 3` edge blocks, verifies every

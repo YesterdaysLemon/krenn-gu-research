@@ -20,7 +20,7 @@ for _p in Path(__file__).resolve().parents:
         break
 from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
-REPO_ROOT, HERE = bootstrap(__file__)
+REPO_ROOT, HERE = bootstrap(__file__, also=["."])
 
 from derive_p5_h31_toric_marked_fibre_elimination import (  # noqa: E402
     marked_rows,
@@ -28,10 +28,10 @@ from derive_p5_h31_toric_marked_fibre_elimination import (  # noqa: E402
     singular_program,
     toric_cases,
 )
-from p5_high_coordinate_tree_chart_cegar import (  # noqa: E402
+from krenn_gu.singular_runtime import (  # noqa: E402
     singular_command_with_timeout,
 )
-from verify_p5_h31_marked_basis_open_branch import (  # noqa: E402
+from krenn_gu.p5_marked_basis import (  # noqa: E402
     marked_extension,
     mixed_matrix,
     one_marked_map,
@@ -48,7 +48,7 @@ SEGRE = (
     REPO_ROOT / "claims" / "p4" / "classifications" / "pair-geometry"
     / "pure-rank-two" / "P4_PURE_RANK_TWO_TORIC_SLICE_SEGRE_REDUCTION.md"
 )
-GENERATOR = REPO_ROOT / "derive_p5_h31_toric_marked_fibre_elimination.py"
+GENERATOR = HERE / "derive_p5_h31_toric_marked_fibre_elimination.py"
 
 
 EXPECTED_PROJECTION: dict[tuple[int, str], tuple[str, ...]] = {

@@ -384,8 +384,8 @@ global Krenn--Gu:                                       UNRESOLVED.         (25)
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_higher_residual_permanental_tomography_nested_cofactor_stress_and_cumulant_interface.py
 python claims/arbitrary-order/audit_higher_residual_permanental_tomography_nested_cofactor_stress_and_cumulant_interface.py
-python -m py_compile verify_higher_residual_permanental_tomography_nested_cofactor_stress_and_cumulant_interface.py audit_higher_residual_permanental_tomography_nested_cofactor_stress_and_cumulant_interface.py
-uv run --with ruff ruff check verify_higher_residual_permanental_tomography_nested_cofactor_stress_and_cumulant_interface.py audit_higher_residual_permanental_tomography_nested_cofactor_stress_and_cumulant_interface.py
+python -m py_compile claims/arbitrary-order/verify_higher_residual_permanental_tomography_nested_cofactor_stress_and_cumulant_interface.py claims/arbitrary-order/audit_higher_residual_permanental_tomography_nested_cofactor_stress_and_cumulant_interface.py
+uv run --with ruff ruff check claims/arbitrary-order/verify_higher_residual_permanental_tomography_nested_cofactor_stress_and_cumulant_interface.py claims/arbitrary-order/audit_higher_residual_permanental_tomography_nested_cofactor_stress_and_cumulant_interface.py
 ```
 
 The primary replay checks every even identity compound at `q=6`, reconstructs

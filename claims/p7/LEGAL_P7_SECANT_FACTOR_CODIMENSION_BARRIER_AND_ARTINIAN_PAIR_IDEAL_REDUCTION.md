@@ -369,8 +369,8 @@ global Krenn--Gu:                                                UNRESOLVED.
 ```powershell
 uv run --with sympy python claims/p7/verify_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py
 python claims/p7/audit_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py
-python -m py_compile verify_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py audit_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py
-uv run --with ruff ruff check verify_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py audit_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py
+python -m py_compile claims/p7/verify_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py claims/p7/audit_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py
+uv run --with ruff ruff check claims/p7/verify_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py claims/p7/audit_legal_p7_secant_factor_codimension_barrier_and_artinian_pair_ideal.py
 ```
 
 The primary replay verifies the exact rank-13 factor Jacobian, its

@@ -356,8 +356,8 @@ polar identities + canonical P7 profile + pure data
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_five_mode_row_pair_incidence_equality_polar_classification_sharpness.py
 python claims/arbitrary-order/audit_five_mode_row_pair_incidence_equality_polar_classification_sharpness.py
-uv run --with sympy --with ruff python -m ruff check verify_five_mode_row_pair_incidence_equality_polar_classification_sharpness.py audit_five_mode_row_pair_incidence_equality_polar_classification_sharpness.py
-python -m py_compile verify_five_mode_row_pair_incidence_equality_polar_classification_sharpness.py audit_five_mode_row_pair_incidence_equality_polar_classification_sharpness.py
+uv run --with sympy --with ruff python -m ruff check claims/arbitrary-order/verify_five_mode_row_pair_incidence_equality_polar_classification_sharpness.py claims/arbitrary-order/audit_five_mode_row_pair_incidence_equality_polar_classification_sharpness.py
+python -m py_compile claims/arbitrary-order/verify_five_mode_row_pair_incidence_equality_polar_classification_sharpness.py claims/arbitrary-order/audit_five_mode_row_pair_incidence_equality_polar_classification_sharpness.py
 ```
 
 The primary verifier checks the nineteen derived normal forms, the exact

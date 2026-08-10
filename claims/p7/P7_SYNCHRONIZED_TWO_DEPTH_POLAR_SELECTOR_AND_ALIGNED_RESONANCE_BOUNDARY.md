@@ -348,8 +348,8 @@ All unconditional P7 and global claims remain **UNRESOLVED**.
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_synchronized_two_depth_polar_selector_and_aligned_resonance_boundary.py
 python claims/p7/audit_p7_synchronized_two_depth_polar_selector_and_aligned_resonance_boundary.py
-uv run --with sympy --with ruff python -m ruff check verify_p7_synchronized_two_depth_polar_selector_and_aligned_resonance_boundary.py audit_p7_synchronized_two_depth_polar_selector_and_aligned_resonance_boundary.py
-python -m py_compile verify_p7_synchronized_two_depth_polar_selector_and_aligned_resonance_boundary.py audit_p7_synchronized_two_depth_polar_selector_and_aligned_resonance_boundary.py
+uv run --with sympy --with ruff python -m ruff check claims/p7/verify_p7_synchronized_two_depth_polar_selector_and_aligned_resonance_boundary.py claims/p7/audit_p7_synchronized_two_depth_polar_selector_and_aligned_resonance_boundary.py
+python -m py_compile claims/p7/verify_p7_synchronized_two_depth_polar_selector_and_aligned_resonance_boundary.py claims/p7/audit_p7_synchronized_two_depth_polar_selector_and_aligned_resonance_boundary.py
 ```
 
 The verifier performs only fixed symbolic checks: the synchronized

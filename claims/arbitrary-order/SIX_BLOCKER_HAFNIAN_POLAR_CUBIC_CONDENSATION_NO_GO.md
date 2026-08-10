@@ -201,8 +201,8 @@ P7 and global Krenn--Gu:                        UNRESOLVED.
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_six_blocker_hafnian_polar_cubic_condensation_no_go.py
 python claims/arbitrary-order/audit_six_blocker_hafnian_polar_cubic_condensation_no_go.py
-python -m py_compile verify_six_blocker_hafnian_polar_cubic_condensation_no_go.py audit_six_blocker_hafnian_polar_cubic_condensation_no_go.py
-uv run --with ruff ruff check verify_six_blocker_hafnian_polar_cubic_condensation_no_go.py audit_six_blocker_hafnian_polar_cubic_condensation_no_go.py
+python -m py_compile claims/arbitrary-order/verify_six_blocker_hafnian_polar_cubic_condensation_no_go.py claims/arbitrary-order/audit_six_blocker_hafnian_polar_cubic_condensation_no_go.py
+uv run --with ruff ruff check claims/arbitrary-order/verify_six_blocker_hafnian_polar_cubic_condensation_no_go.py claims/arbitrary-order/audit_six_blocker_hafnian_polar_cubic_condensation_no_go.py
 ```
 
 The primary replay constructs the generic hafnian and the eight exact

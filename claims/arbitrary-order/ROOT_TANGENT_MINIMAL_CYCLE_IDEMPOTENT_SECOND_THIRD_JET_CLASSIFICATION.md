@@ -302,8 +302,8 @@ global Krenn--Gu conjecture:                 UNRESOLVED.
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_root_tangent_minimal_cycle_idempotent_second_third_jet_classification.py
 python claims/arbitrary-order/audit_root_tangent_minimal_cycle_idempotent_second_third_jet_classification.py
-python -m py_compile verify_root_tangent_minimal_cycle_idempotent_second_third_jet_classification.py audit_root_tangent_minimal_cycle_idempotent_second_third_jet_classification.py
-uv run --with ruff ruff check verify_root_tangent_minimal_cycle_idempotent_second_third_jet_classification.py audit_root_tangent_minimal_cycle_idempotent_second_third_jet_classification.py
+python -m py_compile claims/arbitrary-order/verify_root_tangent_minimal_cycle_idempotent_second_third_jet_classification.py claims/arbitrary-order/audit_root_tangent_minimal_cycle_idempotent_second_third_jet_classification.py
+uv run --with ruff ruff check claims/arbitrary-order/verify_root_tangent_minimal_cycle_idempotent_second_third_jet_classification.py claims/arbitrary-order/audit_root_tangent_minimal_cycle_idempotent_second_third_jet_classification.py
 ```
 
 The primary verifier checks the generic idempotent factor, all three fixed

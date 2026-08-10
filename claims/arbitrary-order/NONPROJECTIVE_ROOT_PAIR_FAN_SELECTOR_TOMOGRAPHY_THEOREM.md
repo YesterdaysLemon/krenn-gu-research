@@ -308,8 +308,8 @@ global Krenn--Gu conjecture:                          UNRESOLVED.
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_nonprojective_root_pair_fan_selector_tomography.py
 python claims/arbitrary-order/audit_nonprojective_root_pair_fan_selector_tomography.py
-python -m py_compile verify_nonprojective_root_pair_fan_selector_tomography.py audit_nonprojective_root_pair_fan_selector_tomography.py
-uv run --with ruff ruff check verify_nonprojective_root_pair_fan_selector_tomography.py audit_nonprojective_root_pair_fan_selector_tomography.py
+python -m py_compile claims/arbitrary-order/verify_nonprojective_root_pair_fan_selector_tomography.py claims/arbitrary-order/audit_nonprojective_root_pair_fan_selector_tomography.py
+uv run --with ruff ruff check claims/arbitrary-order/verify_nonprojective_root_pair_fan_selector_tomography.py claims/arbitrary-order/audit_nonprojective_root_pair_fan_selector_tomography.py
 ```
 
 The primary verifier checks the generic hollow-sandwich identity, the exact

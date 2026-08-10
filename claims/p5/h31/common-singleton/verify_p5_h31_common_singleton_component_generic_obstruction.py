@@ -24,7 +24,7 @@ ROOT = REPO_ROOT
 
 from analyze_p4_common_singleton_local_dimension import common_singleton_family
 from verify_p4_directed_zero_divisor_triangle_components import coefficients
-from verify_p5_h31_marked_basis_open_branch import mixed_matrix
+from krenn_gu.p5_marked_basis import mixed_matrix
 
 ROOT = REPO_ROOT
 THEOREM = HERE / "P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md"

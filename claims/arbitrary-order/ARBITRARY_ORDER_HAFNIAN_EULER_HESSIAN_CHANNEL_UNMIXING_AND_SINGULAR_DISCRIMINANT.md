@@ -481,8 +481,8 @@ global Krenn--Gu:                                         UNRESOLVED.       (39)
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py
 python claims/arbitrary-order/audit_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py
-python -m py_compile verify_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py audit_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py
-uv run --with ruff ruff check verify_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py audit_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py
+python -m py_compile claims/arbitrary-order/verify_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py claims/arbitrary-order/audit_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py
+uv run --with ruff ruff check claims/arbitrary-order/verify_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py claims/arbitrary-order/audit_arbitrary_order_hafnian_euler_hessian_channel_unmixing.py
 ```
 
 The primary verifier differentiates one fixed symbolic six-vertex response,

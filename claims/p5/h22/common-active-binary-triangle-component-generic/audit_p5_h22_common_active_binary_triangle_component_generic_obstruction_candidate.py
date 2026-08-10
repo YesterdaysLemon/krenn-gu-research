@@ -41,8 +41,8 @@ CANDIDATE_CERTIFICATE = ROOT / (
 )
 P4_REPORT = REPO_ROOT / "claims/p4/classifications/triangle-211/common-active-binary-triangle/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md"
 P4_SCRIPT = REPO_ROOT / "claims/p4/classifications/triangle-211/common-active-binary-triangle/verify_p4_common_active_binary_triangle_component.py"
-H31_REPORT = REPO_ROOT / "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md"
-H31_SCRIPT = REPO_ROOT / "verify_p5_h31_common_active_binary_triangle_component_generic_obstruction.py"
+H31_REPORT = REPO_ROOT / "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md"
+H31_SCRIPT = REPO_ROOT / "claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_component_generic_obstruction.py"
 P_PLUS_Q_WALL = REPO_ROOT / "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md"
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))

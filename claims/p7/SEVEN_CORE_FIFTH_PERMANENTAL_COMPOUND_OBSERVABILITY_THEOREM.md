@@ -262,8 +262,8 @@ Not proved here:
 ```powershell
 uv run --with sympy python claims/p7/verify_seven_core_fifth_permanental_compound_observability.py
 python claims/p7/audit_seven_core_fifth_permanental_compound_observability.py
-uv run --with sympy --with ruff python -m ruff check verify_seven_core_fifth_permanental_compound_observability.py audit_seven_core_fifth_permanental_compound_observability.py
-python -m py_compile verify_seven_core_fifth_permanental_compound_observability.py audit_seven_core_fifth_permanental_compound_observability.py
+uv run --with sympy --with ruff python -m ruff check claims/p7/verify_seven_core_fifth_permanental_compound_observability.py claims/p7/audit_seven_core_fifth_permanental_compound_observability.py
+python -m py_compile claims/p7/verify_seven_core_fifth_permanental_compound_observability.py claims/p7/audit_seven_core_fifth_permanental_compound_observability.py
 ```
 
 The primary verifier checks the complement-index identity, the line law, and

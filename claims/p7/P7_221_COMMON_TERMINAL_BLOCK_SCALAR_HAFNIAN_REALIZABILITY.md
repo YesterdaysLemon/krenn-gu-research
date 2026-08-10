@@ -333,8 +333,8 @@ exclusion of every core alignment of these particular charts.
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_221_common_terminal_block_scalar_hafnian_realizability.py
 python claims/p7/audit_p7_221_common_terminal_block_scalar_hafnian_realizability.py
-python -m py_compile verify_p7_221_common_terminal_block_scalar_hafnian_realizability.py audit_p7_221_common_terminal_block_scalar_hafnian_realizability.py
-uv run --with ruff ruff check verify_p7_221_common_terminal_block_scalar_hafnian_realizability.py audit_p7_221_common_terminal_block_scalar_hafnian_realizability.py
+python -m py_compile claims/p7/verify_p7_221_common_terminal_block_scalar_hafnian_realizability.py claims/p7/audit_p7_221_common_terminal_block_scalar_hafnian_realizability.py
+uv run --with ruff ruff check claims/p7/verify_p7_221_common_terminal_block_scalar_hafnian_realizability.py claims/p7/audit_p7_221_common_terminal_block_scalar_hafnian_realizability.py
 ```
 
 The primary verifier checks the Wick/anchor identities, invariance under

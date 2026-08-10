@@ -273,21 +273,21 @@ Six statements organize the current frontier.
    [`P5_H22_COMPONENT19_Z0_LAURENT_FIELD_NO_IMPORT_VERIFICATION.md`](../claims/p5/h22/component19-z0-laurent-field-no-import/P5_H22_COMPONENT19_Z0_LAURENT_FIELD_NO_IMPORT_VERIFICATION.md).
    Component twenty is closed by exact open-incidence projection to four
    marking points and one uniform minor/transverse certificate:
-   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](../P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
+   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](../claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md).
    Its generic weighted-`H22` fibre is empty by an exhaustive shared
    orientation split and four exact finite/infinity unit ideals:
    [`P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md`](../claims/p5/h22/common-active-binary-triangle-component-generic/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION_CANDIDATE.md).
    Its nine principal affine special divisors are also closed over their
    generic points by exact projection and uniform marked-minor certificates:
-   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_SPECIAL_DIVISOR_OBSTRUCTION.md`](../P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_SPECIAL_DIVISOR_OBSTRUCTION.md).
+   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_SPECIAL_DIVISOR_OBSTRUCTION.md`](../claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_SPECIAL_DIVISOR_OBSTRUCTION.md).
    A single saturated all-minors certificate strengthens this to the entire
    finite normalized `(p+q)(p-q+1)!=0` sheet, including every special-divisor
    intersection inside the open:
-   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_NORMALIZED_AFFINE_OBSTRUCTION.md`](../P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_NORMALIZED_AFFINE_OBSTRUCTION.md).
+   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_NORMALIZED_AFFINE_OBSTRUCTION.md`](../claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_NORMALIZED_AFFINE_OBSTRUCTION.md).
    The intrinsic `p-q+1=0` basis boundary has no binary neighbour over its
    generic point after replacing the collapsed generic basis, and the same
    replacement chart has empty weighted-`H22` fibre:
-   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md`](../P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md),
+   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md`](../claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md),
    [`P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION_CANDIDATE.md`](../claims/p5/h22/common-active-binary-triangle-intrinsic-boundary/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION_CANDIDATE.md).
    At the excluded finite points `p=0,-1`, the plane tuples have zero
    restriction, but the transverse base ideal gives a full compactified
@@ -384,21 +384,21 @@ Six statements organize the current frontier.
    ambient/source/projective
    limits remain separate; a `P5` leading term with zero `P4` restriction is
    not covered by this normal calculation:
-   [`P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md`](../P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md) and
-   [`P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md`](../P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md), together with
-   [`P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md`](../P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md) and
-   [`P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md`](../P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md),
-   [`P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md`](../P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md), and
-   [`P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md`](../P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md), together with
-   [`P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](../P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md) and
-   [`P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](../P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md), together with
-   [`P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md`](../P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md) and
-   [`P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](../P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md), together with
-   [`P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](../P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md),
-   [`P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](../P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md),
-   [`P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md`](../P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md),
-   [`P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md`](../P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md), and
-   [`P5_COMPONENT21_FINITE_WEIGHT_EXTENSION_KERNEL_RATIONAL_NORMAL_OBSTRUCTION.md`](../P5_COMPONENT21_FINITE_WEIGHT_EXTENSION_KERNEL_RATIONAL_NORMAL_OBSTRUCTION.md).
+   [`P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md`](../claims/p5/boundaries/P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md) and
+   [`P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md), together with
+   [`P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md) and
+   [`P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md),
+   [`P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md), and
+   [`P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md), together with
+   [`P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md) and
+   [`P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md), together with
+   [`P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md) and
+   [`P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md), together with
+   [`P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md),
+   [`P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md),
+   [`P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md`](../claims/p5/frontier/P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md),
+   [`P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md), and
+   [`P5_COMPONENT21_FINITE_WEIGHT_EXTENSION_KERNEL_RATIONAL_NORMAL_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_FINITE_WEIGHT_EXTENSION_KERNEL_RATIONAL_NORMAL_OBSTRUCTION.md).
    Component twenty-two is the unequal-complement common-kernel fivefold.
    Its complete generic marked `H31` fibre is empty after exact projection to
    four marking branches and four uniform one-marked minors:
@@ -527,8 +527,8 @@ Six statements organize the current frontier.
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_T_PLUS_MINUS_ONE_SPECIAL_ALL_PAIR_OBSTRUCTION.md`](../claims/p5/h22/common-center-kernel-star-component-r-zero-t-plus-minus-one-special-all-pair/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_ZERO_T_PLUS_MINUS_ONE_SPECIAL_ALL_PAIR_OBSTRUCTION.md), together with
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_T_DIVISOR_SYMMETRY_TRANSFER.md`](../claims/p5/h22/common-center-kernel-star-component-r-t-divisor-symmetry-transfer/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_R_T_DIVISOR_SYMMETRY_TRANSFER.md),
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md`](../claims/p5/h22/common-center-kernel-star-component-k-infinity-all-pair-boundary/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md),
-   [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md`](../P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md), and
-   [`P5_COMPONENT23_K_INFINITY_LOWER_PAIR_ENDPOINTS_OBSTRUCTION.md`](../P5_COMPONENT23_K_INFINITY_LOWER_PAIR_ENDPOINTS_OBSTRUCTION.md).
+   [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md`](../claims/p5/h31/common-center-kernel-star/P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md), and
+   [`P5_COMPONENT23_K_INFINITY_LOWER_PAIR_ENDPOINTS_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT23_K_INFINITY_LOWER_PAIR_ENDPOINTS_OBSTRUCTION.md).
    On the separate finite `s=0,rt=1,t=1/r` face, direct pure and pair
    expansion gives profile `(3,3,3,4,4,3)` for `k!=0` and
    `(3,3,3,3,3,3)` on `k=0`.  Six pairs of exact ordinary minors cover every
@@ -550,14 +550,14 @@ Six statements organize the current frontier.
    `s=1,k=infinity` chart.  The simultaneous `s=0,k=infinity` corner is still
    not included:
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md`](../claims/p5/h22/common-center-kernel-star-component-s-zero-rt-one-all-pair/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md),
-   [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md`](../P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md), and
-   [`P5_COMPONENT23_S_ZERO_RT_ONE_LOWER_PAIR_ENDPOINT_LINES_OBSTRUCTION.md`](../P5_COMPONENT23_S_ZERO_RT_ONE_LOWER_PAIR_ENDPOINT_LINES_OBSTRUCTION.md).
+   [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md`](../claims/p5/h31/common-center-kernel-star/P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md), and
+   [`P5_COMPONENT23_S_ZERO_RT_ONE_LOWER_PAIR_ENDPOINT_LINES_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT23_S_ZERO_RT_ONE_LOWER_PAIR_ENDPOINT_LINES_OBSTRUCTION.md).
    The two projective parameter endpoints `(r,t)=(infinity,0),(0,infinity)`
    are now separately closed for every finite `k`, every marking and
    insertion, and every finite or projective `H22` weight.  Their shared
    binary `H22` incidence has rank seven and survives genuinely, but a
    mode-one one-third-row determinant is nonzero on its entire genuine open:
-   [`P5_COMPONENT23_S_ZERO_RT_ONE_PROJECTIVE_PARAMETER_ENDPOINTS_OBSTRUCTION.md`](../P5_COMPONENT23_S_ZERO_RT_ONE_PROJECTIVE_PARAMETER_ENDPOINTS_OBSTRUCTION.md).
+   [`P5_COMPONENT23_S_ZERO_RT_ONE_PROJECTIVE_PARAMETER_ENDPOINTS_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT23_S_ZERO_RT_ONE_PROJECTIVE_PARAMETER_ENDPOINTS_OBSTRUCTION.md).
    The normalized parameter compactification is not exhausted by those
    theorems.  For `s=1`, with projective coordinates `K,R,T`, it is exactly
 
@@ -579,8 +579,8 @@ Six statements organize the current frontier.
    point rather than an exceptional direction family.  Its profile is
    `(3,2,2,3,3,3)`, and exact marking projections/stacks and weighted modules
    close both complete fixed-order fibres:
-   [`P5_COMPONENT23_S_ONE_PARAMETER_INFINITY_CURVES_OBSTRUCTION.md`](../P5_COMPONENT23_S_ONE_PARAMETER_INFINITY_CURVES_OBSTRUCTION.md) and
-   [`P5_COMPONENT23_S_ONE_TRIPLE_PARAMETER_INFINITY_CORNER_OBSTRUCTION.md`](../P5_COMPONENT23_S_ONE_TRIPLE_PARAMETER_INFINITY_CORNER_OBSTRUCTION.md).
+   [`P5_COMPONENT23_S_ONE_PARAMETER_INFINITY_CURVES_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT23_S_ONE_PARAMETER_INFINITY_CURVES_OBSTRUCTION.md) and
+   [`P5_COMPONENT23_S_ONE_TRIPLE_PARAMETER_INFINITY_CORNER_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT23_S_ONE_TRIPLE_PARAMETER_INFINITY_CORNER_OBSTRUCTION.md).
    Eliminating `k` on the affine chart also omitted both whole
    lower-pair lines `r=t=+/-1`, with arbitrary finite `k`.
 
@@ -608,8 +608,8 @@ Six statements organize the current frontier.
    both projective boundary curves and their common point for all markings,
    insertions, and weights.  Hence the complete marked-`H31` fibre is empty
    on the whole displayed corner:
-   [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_FINITE_CORNER_OBSTRUCTION.md`](../P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_FINITE_CORNER_OBSTRUCTION.md) and
-   [`P5_COMPONENT23_S_ZERO_K_INFINITY_PROJECTIVE_R_T_BOUNDARY_OBSTRUCTION.md`](../P5_COMPONENT23_S_ZERO_K_INFINITY_PROJECTIVE_R_T_BOUNDARY_OBSTRUCTION.md).
+   [`P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_FINITE_CORNER_OBSTRUCTION.md`](../claims/p5/h31/common-center-kernel-star/P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_FINITE_CORNER_OBSTRUCTION.md) and
+   [`P5_COMPONENT23_S_ZERO_K_INFINITY_PROJECTIVE_R_T_BOUNDARY_OBSTRUCTION.md`](../claims/p5/boundaries/P5_COMPONENT23_S_ZERO_K_INFINITY_PROJECTIVE_R_T_BOUNDARY_OBSTRUCTION.md).
 
    On the affine coordinate
    divisor `r=0`, every finite-weight genuine shared `D01/D23` incidence is
@@ -663,7 +663,7 @@ Six statements organize the current frontier.
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_COORDINATE_SURVIVOR.md`](../claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-coordinate-survivor/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_COORDINATE_SURVIVOR.md) and
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_R_T_COORDINATE_SYMMETRY_TRANSFER.md`](../claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-r-t-coordinate-symmetry-transfer/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_R_T_COORDINATE_SYMMETRY_TRANSFER.md), together with
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_PROJECTIVE_WEIGHT_COORDINATE_DIVISORS_OBSTRUCTION.md`](../claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-projective-weight-coordinate-divisors/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_PROJECTIVE_WEIGHT_COORDINATE_DIVISORS_OBSTRUCTION.md) and
-   [`P5_COMPONENT23_S_ZERO_K_INFINITY_PROJECTIVE_R_T_BOUNDARY_OBSTRUCTION.md`](../P5_COMPONENT23_S_ZERO_K_INFINITY_PROJECTIVE_R_T_BOUNDARY_OBSTRUCTION.md), together with
+   [`P5_COMPONENT23_S_ZERO_K_INFINITY_PROJECTIVE_R_T_BOUNDARY_OBSTRUCTION.md`](../claims/p5/boundaries/P5_COMPONENT23_S_ZERO_K_INFINITY_PROJECTIVE_R_T_BOUNDARY_OBSTRUCTION.md), together with
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_RT_ONE_ALL_PAIR_OBSTRUCTION.md`](../claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-rt-one-all-pair/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_RT_ONE_ALL_PAIR_OBSTRUCTION.md),
    [`P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_GENERIC_INTERIOR_OBSTRUCTION.md`](../claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-generic-interior/P5_H22_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_GENERIC_INTERIOR_OBSTRUCTION.md), and
    [`P5_H22_COMPONENT23_S_ZERO_K_INFINITY_ANTIDIAGONAL_OBSTRUCTION.md`](../claims/p5/h22/component23-s-zero-k-infinity-antidiagonal/P5_H22_COMPONENT23_S_ZERO_K_INFINITY_ANTIDIAGONAL_OBSTRUCTION.md), together with
@@ -1145,24 +1145,24 @@ parameter-boundary/marking-pole intersections, and arbitrary
 ambient/source/projective
 degenerations remain open.  In particular, the argument does not classify
 an ambient `P5` leading term whose `P4` restriction is zero:
-[`P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md`](../P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md) and
-[`P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md`](../P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md), together with
-[`P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md`](../P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md) and
-[`P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md`](../P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md),
-[`P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md`](../P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md), and
-[`P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md`](../P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md), together with
-[`P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](../P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md) and
-[`P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](../P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md), together with
-[`P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md`](../P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md) and
-[`P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](../P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md), together with
-[`P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](../P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md), and
-[`P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](../P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md),
-[`P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md`](../P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md),
-[`P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md`](../P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md), and
-[`P5_COMPONENT21_FINITE_WEIGHT_EXTENSION_KERNEL_RATIONAL_NORMAL_OBSTRUCTION.md`](../P5_COMPONENT21_FINITE_WEIGHT_EXTENSION_KERNEL_RATIONAL_NORMAL_OBSTRUCTION.md), strengthened by
-[`P5_COMPONENT21_FINITE_H22_EXTENSION_RANK_DROP_GENERIC_NORMAL_CLOSURE.md`](../P5_COMPONENT21_FINITE_H22_EXTENSION_RANK_DROP_GENERIC_NORMAL_CLOSURE.md),
-[`P5_COMPONENT21_FINITE_H22_EXTENSION_ELL_ZERO_UNIT_ENDPOINT_NORMAL_CLOSURE.md`](../P5_COMPONENT21_FINITE_H22_EXTENSION_ELL_ZERO_UNIT_ENDPOINT_NORMAL_CLOSURE.md), and
-[`P5_COMPONENT21_FINITE_H22_EXTENSION_P_ZERO_NONZERO_Q_NORMAL_CLOSURE.md`](../P5_COMPONENT21_FINITE_H22_EXTENSION_P_ZERO_NONZERO_Q_NORMAL_CLOSURE.md).
+[`P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md`](../claims/p5/boundaries/P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md) and
+[`P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md), together with
+[`P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md) and
+[`P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md),
+[`P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md), and
+[`P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md), together with
+[`P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md) and
+[`P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md), together with
+[`P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md) and
+[`P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md), together with
+[`P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md), and
+[`P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md),
+[`P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md`](../claims/p5/frontier/P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md),
+[`P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md), and
+[`P5_COMPONENT21_FINITE_WEIGHT_EXTENSION_KERNEL_RATIONAL_NORMAL_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_FINITE_WEIGHT_EXTENSION_KERNEL_RATIONAL_NORMAL_OBSTRUCTION.md), strengthened by
+[`P5_COMPONENT21_FINITE_H22_EXTENSION_RANK_DROP_GENERIC_NORMAL_CLOSURE.md`](../claims/p5/frontier/P5_COMPONENT21_FINITE_H22_EXTENSION_RANK_DROP_GENERIC_NORMAL_CLOSURE.md),
+[`P5_COMPONENT21_FINITE_H22_EXTENSION_ELL_ZERO_UNIT_ENDPOINT_NORMAL_CLOSURE.md`](../claims/p5/frontier/P5_COMPONENT21_FINITE_H22_EXTENSION_ELL_ZERO_UNIT_ENDPOINT_NORMAL_CLOSURE.md), and
+[`P5_COMPONENT21_FINITE_H22_EXTENSION_P_ZERO_NONZERO_Q_NORMAL_CLOSURE.md`](../claims/p5/frontier/P5_COMPONENT21_FINITE_H22_EXTENSION_P_ZERO_NONZERO_Q_NORMAL_CLOSURE.md).
 The raw finite-weight `p=q=0` base is now classified at the same extension-
 kernel and complete-first-normal level.  Ordinary weights have a kernel line;
 `lambda=-1` has a kernel `P1` or `P2`; and `lambda=1` has a kernel `P2` or
@@ -1173,7 +1173,7 @@ rows force the only possible `D23(0000)` normal coefficient to vanish.
 This is nonredundant with the earlier `(p,q)` blow-up, which treats nonzero
 leading base-normal directions.  Higher zero normals and simultaneous
 iterated base/extension blow-ups remain unknown:
-[`P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_RAW_KERNEL_NORMAL_OBSTRUCTION.md`](../P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_RAW_KERNEL_NORMAL_OBSTRUCTION.md).
+[`P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_RAW_KERNEL_NORMAL_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_RAW_KERNEL_NORMAL_OBSTRUCTION.md).
 At ordinary finite weight `lambda!=+/-1`, the next level is now closed too.
 The complete first normal has rank nine everywhere, including
 `kappa=0,ell=+/-1`, and its four-dimensional kernel is exactly the tangent
@@ -1183,7 +1183,7 @@ nine, kernel exactly the old scale line, and both required `D01` diagonal
 rows identically zero.  Hence every nonzero second normal is `H22`-empty;
 zero second normals remain tangent to the same exact family.  The
 `lambda=+/-1` higher normals and arbitrary iteration remain unknown:
-[`P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_ORDINARY_WEIGHT_SECOND_NORMAL_OBSTRUCTION.md`](../P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_ORDINARY_WEIGHT_SECOND_NORMAL_OBSTRUCTION.md).
+[`P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_ORDINARY_WEIGHT_SECOND_NORMAL_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_ORDINARY_WEIGHT_SECOND_NORMAL_OBSTRUCTION.md).
 At `lambda=-1`, the complete second-normal level is now closed as well.
 For `kappa!=0` the kernel is `P1`; for `kappa=0` it is `P2`.  Exact
 projective covers include the ordinary open, the `H=e_a3` weight crossing,
@@ -1194,7 +1194,7 @@ The zero-second-normal survivors are retained as the exact product loci
 `AP=AQ=P(B*ell-C+E)=Q(B*ell-C+E)=0`; these are not asserted to integrate at
 higher order.  Thus `lambda=+1`, further iteration after a zero second
 normal, and arbitrary local-to-global gluing remain open:
-[`P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_LAMBDA_MINUS_ONE_SECOND_NORMAL_OBSTRUCTION.md`](../P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_LAMBDA_MINUS_ONE_SECOND_NORMAL_OBSTRUCTION.md).
+[`P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_LAMBDA_MINUS_ONE_SECOND_NORMAL_OBSTRUCTION.md`](../claims/p5/frontier/P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_LAMBDA_MINUS_ONE_SECOND_NORMAL_OBSTRUCTION.md).
 
 ## What a global proof would still need
 
@@ -1805,46 +1805,46 @@ uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-compon
 uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-f2-f8-h3-slope-intersection/verify_p5_h22_unequal_complement_common_kernel_component_d23_f2_f8_h3_slope_intersection_obstruction.py
 uv run --with sympy python claims/p5/h22/unequal-complement-common-kernel-component-d23-f2-f8-h3-slope-intersection/audit_p5_h22_unequal_complement_common_kernel_component_d23_f2_f8_h3_slope_intersection_obstruction.py
 
-uv run --with sympy python verify_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py
-uv run --with sympy python audit_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py
-uv run --with sympy python verify_p5_component21_q_plus_minus_p_ell_endpoint_complete_obstruction.py
-uv run --with sympy python audit_p5_component21_q_plus_minus_p_ell_endpoint_complete_obstruction.py
-uv run --with sympy python verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py
-uv run --with sympy python audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py
-uv run --with sympy python verify_p5_component21_kappa_infinity_first_normal_complete_obstruction.py
-uv run --with sympy python audit_p5_component21_kappa_infinity_first_normal_complete_obstruction.py
-uv run --with sympy python verify_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py
-uv run --with sympy python audit_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py
-uv run --with sympy python verify_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py
-uv run --with sympy python audit_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py
-uv run --with sympy python verify_p5_component21_normalized_parameter_compactification_complete_obstruction.py
-uv run --with sympy python audit_p5_component21_normalized_parameter_compactification_complete_obstruction.py
-uv run --with sympy python verify_p5_component21_single_marking_infinity_first_normal_obstruction.py
-uv run --with sympy python audit_p5_component21_single_marking_infinity_first_normal_obstruction.py
-uv run --with sympy python verify_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py
-uv run --with sympy python audit_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py
-uv run --with sympy python verify_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction.py
-uv run --with sympy python audit_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction.py
-uv run --with sympy python verify_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py
-uv run --with sympy python audit_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py
-uv run --with sympy python verify_p5_component21_finite_base_extension_infinity_partial_closure.py
-uv run --with sympy python audit_p5_component21_finite_base_extension_infinity_partial_closure.py
-uv run --with sympy python verify_p5_component21_extension_kernel_marked_h31_leading_obstruction.py
-uv run --with sympy python audit_p5_component21_extension_kernel_marked_h31_leading_obstruction.py
-uv run --with sympy python verify_p5_component21_finite_weight_extension_kernel_rational_normal_obstruction.py
-uv run --with sympy python audit_p5_component21_finite_weight_extension_kernel_rational_normal_obstruction.py
-uv run --with sympy python verify_p5_component21_finite_h22_extension_rank_drop_generic_normal_closure.py
-uv run --with sympy python audit_p5_component21_finite_h22_extension_rank_drop_generic_normal_closure.py
-uv run --with sympy python verify_p5_component21_finite_h22_extension_ell_zero_unit_endpoint_normal_closure.py
-uv run --with sympy python audit_p5_component21_finite_h22_extension_ell_zero_unit_endpoint_normal_closure.py
-uv run --with sympy python verify_p5_component21_finite_h22_extension_p_zero_nonzero_q_normal_closure.py
-uv run --with sympy python audit_p5_component21_finite_h22_extension_p_zero_nonzero_q_normal_closure.py
-uv run --with sympy python verify_p5_component21_finite_h22_extension_zero_base_raw_kernel_normal_obstruction.py
-uv run --with sympy python audit_p5_component21_finite_h22_extension_zero_base_raw_kernel_normal_obstruction.py
-uv run --with sympy python verify_p5_component21_finite_h22_extension_zero_base_ordinary_weight_second_normal_obstruction.py
-uv run --with sympy python audit_p5_component21_finite_h22_extension_zero_base_ordinary_weight_second_normal_obstruction.py
-uv run --with sympy python verify_p5_component21_finite_h22_extension_zero_base_lambda_minus_one_second_normal_obstruction.py
-uv run --with sympy python audit_p5_component21_finite_h22_extension_zero_base_lambda_minus_one_second_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_q_plus_minus_p_ell_endpoint_complete_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_q_plus_minus_p_ell_endpoint_complete_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_kappa_infinity_first_normal_complete_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_kappa_infinity_first_normal_complete_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_normalized_parameter_compactification_complete_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_normalized_parameter_compactification_complete_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_single_marking_infinity_first_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_single_marking_infinity_first_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_finite_base_extension_infinity_partial_closure.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_finite_base_extension_infinity_partial_closure.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_extension_kernel_marked_h31_leading_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_extension_kernel_marked_h31_leading_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_finite_weight_extension_kernel_rational_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_finite_weight_extension_kernel_rational_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_finite_h22_extension_rank_drop_generic_normal_closure.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_finite_h22_extension_rank_drop_generic_normal_closure.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_finite_h22_extension_ell_zero_unit_endpoint_normal_closure.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_finite_h22_extension_ell_zero_unit_endpoint_normal_closure.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_finite_h22_extension_p_zero_nonzero_q_normal_closure.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_finite_h22_extension_p_zero_nonzero_q_normal_closure.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_finite_h22_extension_zero_base_raw_kernel_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_finite_h22_extension_zero_base_raw_kernel_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_finite_h22_extension_zero_base_ordinary_weight_second_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_finite_h22_extension_zero_base_ordinary_weight_second_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component21_finite_h22_extension_zero_base_lambda_minus_one_second_normal_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component21_finite_h22_extension_zero_base_lambda_minus_one_second_normal_obstruction.py
 
 uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-r-zero-divisor/verify_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
 uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-r-zero-divisor/audit_p5_h22_common_center_kernel_star_component_r_zero_divisor_generic_obstruction.py
@@ -1856,30 +1856,30 @@ uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-r-t
 uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-r-t-divisor-symmetry-transfer/audit_p5_h22_common_center_kernel_star_component_r_t_divisor_symmetry_transfer.py
 uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-k-infinity-all-pair-boundary/verify_p5_h22_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py
 uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-k-infinity-all-pair-boundary/audit_p5_h22_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py
-uv run --with sympy python verify_p5_h31_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py
-uv run --with sympy python audit_p5_h31_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py
-uv run --with sympy python verify_p5_component23_k_infinity_lower_pair_endpoints_obstruction.py
-uv run --with sympy python audit_p5_component23_k_infinity_lower_pair_endpoints_obstruction.py
+uv run --with sympy python claims/p5/h31/common-center-kernel-star/verify_p5_h31_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py
+uv run --with sympy python claims/p5/h31/common-center-kernel-star/audit_p5_h31_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component23_k_infinity_lower_pair_endpoints_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component23_k_infinity_lower_pair_endpoints_obstruction.py
 uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-rt-one-all-pair/verify_p5_h22_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py
 uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-rt-one-all-pair/audit_p5_h22_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py
-uv run --with sympy python verify_p5_component23_s_zero_rt_one_lower_pair_endpoint_lines_obstruction.py
-uv run --with sympy python audit_p5_component23_s_zero_rt_one_lower_pair_endpoint_lines_obstruction.py
-uv run --with sympy python verify_p5_h31_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py
-uv run --with sympy python audit_p5_h31_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component23_s_zero_rt_one_lower_pair_endpoint_lines_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component23_s_zero_rt_one_lower_pair_endpoint_lines_obstruction.py
+uv run --with sympy python claims/p5/h31/common-center-kernel-star/verify_p5_h31_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py
+uv run --with sympy python claims/p5/h31/common-center-kernel-star/audit_p5_h31_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py
 uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-coordinate-survivor/verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_coordinate_survivor.py
 uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-coordinate-survivor/audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_coordinate_survivor.py
-uv run --with sympy python verify_p5_h31_common_center_kernel_star_component_s_zero_k_infinity_finite_corner_obstruction.py
-uv run --with sympy python audit_p5_h31_common_center_kernel_star_component_s_zero_k_infinity_finite_corner_obstruction.py
+uv run --with sympy python claims/p5/h31/common-center-kernel-star/verify_p5_h31_common_center_kernel_star_component_s_zero_k_infinity_finite_corner_obstruction.py
+uv run --with sympy python claims/p5/h31/common-center-kernel-star/audit_p5_h31_common_center_kernel_star_component_s_zero_k_infinity_finite_corner_obstruction.py
 uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-r-t-coordinate-symmetry-transfer/verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_r_t_coordinate_symmetry_transfer.py
 uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-r-t-coordinate-symmetry-transfer/audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_r_t_coordinate_symmetry_transfer.py
-uv run --with sympy python verify_p5_component23_s_one_parameter_infinity_curves_obstruction.py
-uv run --with sympy python audit_p5_component23_s_one_parameter_infinity_curves_obstruction.py
-uv run --with sympy python verify_p5_component23_s_one_triple_parameter_infinity_corner_obstruction.py
-uv run --with sympy python audit_p5_component23_s_one_triple_parameter_infinity_corner_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component23_s_one_parameter_infinity_curves_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component23_s_one_parameter_infinity_curves_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component23_s_one_triple_parameter_infinity_corner_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component23_s_one_triple_parameter_infinity_corner_obstruction.py
 uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-projective-weight-coordinate-divisors/verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_projective_weight_coordinate_divisors_obstruction.py
 uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-projective-weight-coordinate-divisors/audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_projective_weight_coordinate_divisors_obstruction.py
-uv run --with sympy python verify_p5_component23_s_zero_k_infinity_projective_r_t_boundary_obstruction.py
-uv run --with sympy python audit_p5_component23_s_zero_k_infinity_projective_r_t_boundary_obstruction.py
+uv run --with sympy python claims/p5/boundaries/verify_p5_component23_s_zero_k_infinity_projective_r_t_boundary_obstruction.py
+uv run --with sympy python claims/p5/boundaries/audit_p5_component23_s_zero_k_infinity_projective_r_t_boundary_obstruction.py
 uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-rt-one-all-pair/verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_rt_one_all_pair_obstruction.py
 uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-rt-one-all-pair/audit_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_rt_one_all_pair_obstruction.py
 uv run --with sympy python claims/p5/h22/common-center-kernel-star-component-s-zero-k-infinity-generic-interior/verify_p5_h22_common_center_kernel_star_component_s_zero_k_infinity_generic_interior_obstruction.py
@@ -1888,8 +1888,8 @@ uv run --with sympy python claims/p5/h22/component23-s-zero-k-infinity-antidiago
 uv run --with sympy python claims/p5/h22/component23-s-zero-k-infinity-antidiagonal/audit_p5_h22_component23_s_zero_k_infinity_antidiagonal_obstruction.py
 uv run --with sympy python claims/p5/h22/component23-s-zero-k-infinity-unit-parameter-lines/verify_p5_h22_component23_s_zero_k_infinity_unit_parameter_lines_obstruction.py
 uv run --with sympy python claims/p5/h22/component23-s-zero-k-infinity-unit-parameter-lines/audit_p5_h22_component23_s_zero_k_infinity_unit_parameter_lines_obstruction.py
-uv run --with sympy python verify_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py
-uv run --with sympy python audit_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py
+uv run --with sympy python claims/p5/frontier/verify_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py
+uv run --with sympy python claims/p5/frontier/audit_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py
 
 uv run --with sympy python claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/verify_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_t_zero_and_h_boundary_obstruction.py
 uv run --with sympy python claims/p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-b/audit_p5_h22_unequal_endpoint_inward_star_component_finite_d01_branch_b_t_zero_and_h_boundary_obstruction.py
@@ -2052,17 +2052,17 @@ uv run --with sympy python claims/p5/h31/coincident-support-rank-one-star/audit_
 uv run --with sympy python claims/p5/h31/common-kernel-vertical-triangle/verify_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py
 python claims/p5/h31/common-kernel-vertical-triangle/audit_p5_h31_common_kernel_vertical_triangle_component_generic_obstruction.py
 
-uv run --with sympy python verify_p5_h31_common_active_binary_triangle_component_generic_obstruction.py
-uv run --with sympy python audit_p5_h31_common_active_binary_triangle_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_component_generic_obstruction.py
+uv run --with sympy python claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_component_generic_obstruction.py
 
-uv run --with sympy python verify_p5_h31_common_active_binary_triangle_component_special_divisor_obstruction.py
-uv run --with sympy python audit_p5_h31_common_active_binary_triangle_component_special_divisor_obstruction.py
+uv run --with sympy python claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_component_special_divisor_obstruction.py
+uv run --with sympy python claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_component_special_divisor_obstruction.py
 
-uv run --with sympy python verify_p5_h31_common_active_binary_triangle_normalized_affine_obstruction.py
-uv run --with sympy python audit_p5_h31_common_active_binary_triangle_normalized_affine_obstruction.py
+uv run --with sympy python claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_normalized_affine_obstruction.py
+uv run --with sympy python claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_normalized_affine_obstruction.py
 
-uv run --with sympy python verify_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py
-uv run --with sympy python audit_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py
+uv run --with sympy python claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py
+uv run --with sympy python claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py
 
 uv run --with sympy --with z3-solver python verify_p4_common_active_binary_triangle_p_plus_q_boundary.py
 uv run --with sympy --with z3-solver python audit_p4_common_active_binary_triangle_p_plus_q_boundary.py
@@ -2293,11 +2293,11 @@ uv run --with sympy python claims/p5/h31/split-center-mixed-star/audit_p5_h31_sp
 uv run --with sympy python claims/p5/h22/split-center-mixed-star/verify_p5_h22_split_center_mixed_star_component_generic_obstruction.py
 uv run --with sympy python claims/p5/h22/split-center-mixed-star/audit_p5_h22_split_center_mixed_star_component_generic_obstruction.py
 
-uv run --with sympy python verify_p5_component21_divisor_generic_fibre_obstructions.py
-uv run --with sympy python audit_p5_component21_divisor_generic_fibre_obstructions.py
+uv run --with sympy python claims/p5/boundaries/verify_p5_component21_divisor_generic_fibre_obstructions.py
+uv run --with sympy python claims/p5/boundaries/audit_p5_component21_divisor_generic_fibre_obstructions.py
 
-uv run --with sympy python verify_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py
-uv run --with sympy python audit_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py
+uv run --with sympy python claims/p5/boundaries/verify_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py
+uv run --with sympy python claims/p5/boundaries/audit_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py
 
 python claims/arbitrary-order/verify_two_port_seven_blocker_reduction.py
 python claims/arbitrary-order/audit_two_port_seven_blocker_reduction.py

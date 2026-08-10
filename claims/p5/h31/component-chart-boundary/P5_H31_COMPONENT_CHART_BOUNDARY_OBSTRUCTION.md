@@ -13,12 +13,12 @@ distinguished-source orientations, can lift to an `H31`
 pure/`Delta_2` pencil with rank-three ternary local maps.
 
 Together with
-[`P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md`](../../../../P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md),
+[`P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md`](../rank-two-component-orbit/P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md),
 this excludes the canonical marked sections over the component chart
 and its displayed internal divisor.  It does not exclude every marked
 basis over those planes: kernel-row shifts are additional `H31` data,
 as shown by
-[`P5_H31_MARKED_BASIS_OPEN_BRANCH.md`](../../../../P5_H31_MARKED_BASIS_OPEN_BRANCH.md).
+[`P5_H31_MARKED_BASIS_OPEN_BRANCH.md`](../marked-basis-open-branch/P5_H31_MARKED_BASIS_OPEN_BRANCH.md).
 The full marked-basis fibre, the Schubert boundary, and additional
 components were not classified by this canonical-section theorem.  The
 complete marked fibre over this divisor has since been excluded in

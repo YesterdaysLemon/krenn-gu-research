@@ -158,7 +158,7 @@ boundary atlas is uniform here.
 ## Why this closes generic weighted `H22`
 
 By the frontier reduction
-([`P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md`](../../../../P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md),
+([`P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md`](../../coordinate-cegar/P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md),
 [`P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md`](../six-dimensional/P5_H22_SIX_DIMENSIONAL_EQUAL_WEIGHT_BINARY_OBSTRUCTION.md)
 (13)-(14)), an `H22` local family has `(a,b) != (0,0)`; `a != 0`
 forces a sharp weighted `D_01` extension of the pure binary plane and

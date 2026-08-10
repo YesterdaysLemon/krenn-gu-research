@@ -254,8 +254,8 @@ full factorized P7 identity
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_residual_null_incidence_canonical_profile_sharpness.py
 python claims/p7/audit_p7_residual_null_incidence_canonical_profile_sharpness.py
-uv run --with sympy --with ruff python -m ruff check verify_p7_residual_null_incidence_canonical_profile_sharpness.py audit_p7_residual_null_incidence_canonical_profile_sharpness.py
-python -m py_compile verify_p7_residual_null_incidence_canonical_profile_sharpness.py audit_p7_residual_null_incidence_canonical_profile_sharpness.py
+uv run --with sympy --with ruff python -m ruff check claims/p7/verify_p7_residual_null_incidence_canonical_profile_sharpness.py claims/p7/audit_p7_residual_null_incidence_canonical_profile_sharpness.py
+python -m py_compile claims/p7/verify_p7_residual_null_incidence_canonical_profile_sharpness.py claims/p7/audit_p7_residual_null_incidence_canonical_profile_sharpness.py
 ```
 
 The verifier checks the fixed rational construction, its exact blocker

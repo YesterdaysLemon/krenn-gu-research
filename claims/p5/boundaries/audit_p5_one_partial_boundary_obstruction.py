@@ -19,7 +19,7 @@ REPO_ROOT, HERE = bootstrap(__file__)
 expose_claim_package(REPO_ROOT, "claims/p5/frontier")
 
 import audit_p5_all_full_boundary_obstruction as ALL_FULL
-import verify_p5_pair_signature_catalogue_coverage as COVERAGE
+from krenn_gu import p5_pair_catalogue as COVERAGE
 
 
 MODES = tuple(range(5))

@@ -71,7 +71,7 @@ finite-field or modular audits where stated):
 Every hypothetical restriction `P_5 -> Delta_3` reduces — by a verified
 chain of exact reductions — to a local map of one of two normalized
 families, **H31** or **H22**
-([`P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md`](../P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md)).
+([`P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md`](../claims/p5/coordinate-cegar/P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md)).
 The attack then runs through the pure-`P_4` compression components:
 
 - **Census**: twenty-five certified pure-`P_4` component orbits
@@ -98,7 +98,7 @@ The attack then runs through the pure-`P_4` compression components:
 - **Partial boundary closures**: equal/opposite-weight slopes,
   parameter-pivot branches, coupled slope divisors, `r = 0` endpoints,
   elliptic-end divisors — see
-  [`P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`](../P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md).
+  [`P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`](../claims/p5/boundaries/P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md).
 - **Two independent proofs** of the eighth component's weighted-`H22`
   closure exist and are both retained: the canonical determinantal
   marking-chart proof and the recovered `t`-free `14 x 8 -> 10 x 4`
@@ -123,19 +123,19 @@ construction/gluing strategies; none changes the global status.
 
 | Limitation | Where it lives |
 |---|---|
-| **Generic, not pointwise**: every component closure is over the component function field.  Points where a certificate denominator vanishes (parameter divisors, slope divisors) are excluded, not proved.  The pointwise upgrade requires the extraction pass (below). | [`P5_POINTWISE_SPECIALIZATION_META_THEOREM.md`](../P5_POINTWISE_SPECIALIZATION_META_THEOREM.md); extraction scripts in `research_snapshots/2026-08-04-p5-delta3-obligation-ledger/scripts/` |
-| **Boundary-limited**: projective/chart boundaries of the component parametrizations are mostly untouched (24 boundary programmes named in the ledger). | [`P5_DELTA3_OBLIGATION_LEDGER.md`](../P5_DELTA3_OBLIGATION_LEDGER.md) II.5/III.2 |
+| **Generic, not pointwise**: every component closure is over the component function field.  Points where a certificate denominator vanishes (parameter divisors, slope divisors) are excluded, not proved.  The pointwise upgrade requires the extraction pass (below). | [`P5_POINTWISE_SPECIALIZATION_META_THEOREM.md`](../claims/p5/frontier/P5_POINTWISE_SPECIALIZATION_META_THEOREM.md); extraction scripts in `research_snapshots/2026-08-04-p5-delta3-obligation-ledger/scripts/` |
+| **Boundary-limited**: projective/chart boundaries of the component parametrizations are mostly untouched (24 boundary programmes named in the ledger). | [`P5_DELTA3_OBLIGATION_LEDGER.md`](../claims/p5/frontier/P5_DELTA3_OBLIGATION_LEDGER.md) II.5/III.2 |
 | **Component 22's `D23` pencil** is not fully closed generically. | README lines 1176–1227; `P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_*` docs |
 | **Components 19/20 and embedded-`P_3` boundaries**: 23 `*_CANDIDATE.md` documents exist; 9 have matching `*_VERIFICATION.md` docs, 14 do not.  Candidates are discovery-run reports, not theorems, until independently verified. | `P5_H22_COMPONENT19_*`, `COMPONENT20_INTRINSIC_*`, `P5_H22_EMBEDDED_P3_*` |
 | **Order-14 results are finite orbit theorems**, not family theorems; 60/36/26 orbits remain SAT in `C4+C10`/`C6+C8`/`C4+C4+C6`. | `FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md` |
-| **Stale ledger**: the 2026-08-04 obligation ledger was written against the 13-component census; the canonical line has since certified 25.  Its master-theorem schema and obligation structure remain valid; its per-component status tables are superseded where they conflict with the README checkpoint. | [`P5_DELTA3_OBLIGATION_LEDGER.md`](../P5_DELTA3_OBLIGATION_LEDGER.md) header |
+| **Stale ledger**: the 2026-08-04 obligation ledger was written against the 13-component census; the canonical line has since certified 25.  Its master-theorem schema and obligation structure remain valid; its per-component status tables are superseded where they conflict with the README checkpoint. | [`P5_DELTA3_OBLIGATION_LEDGER.md`](../claims/p5/frontier/P5_DELTA3_OBLIGATION_LEDGER.md) header |
 
 ---
 
 ## 3. Shortest logical route to the conjecture
 
 The ledger states the route as one theorem schema
-([`P5_DELTA3_OBLIGATION_LEDGER.md`](../P5_DELTA3_OBLIGATION_LEDGER.md) I.4):
+([`P5_DELTA3_OBLIGATION_LEDGER.md`](../claims/p5/frontier/P5_DELTA3_OBLIGATION_LEDGER.md) I.4):
 
 1. **(Frontier reduction ⋆)** — any restriction forces an H31 or H22
    local family.  *Done* (verified reductions;
@@ -165,7 +165,7 @@ never promoted into proofs.
 **B1 — The divisor/boundary recursion (the bulk of the tree).**
 Each generic theorem hides finitely many inverted denominators.  The
 meta-theorem's extraction pass converts them into explicit curves
-([`P5_POINTWISE_SPECIALIZATION_META_THEOREM.md`](../P5_POINTWISE_SPECIALIZATION_META_THEOREM.md));
+([`P5_POINTWISE_SPECIALIZATION_META_THEOREM.md`](../claims/p5/frontier/P5_POINTWISE_SPECIALIZATION_META_THEOREM.md));
 the ninth component extracts in seconds to minutes (replayed in this
 pass), the tenth times out (840 s budget, structurally diagnosed: 14
 independent multilinear equations; see

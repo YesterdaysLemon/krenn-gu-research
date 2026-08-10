@@ -303,8 +303,8 @@ Boolean incidence matrices, linear pencils, and fixed rational identities.
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_physical_mixed_kernel_boolean_down_descent.py
 python claims/p7/audit_p7_physical_mixed_kernel_boolean_down_descent.py
-python -m py_compile verify_p7_physical_mixed_kernel_boolean_down_descent.py audit_p7_physical_mixed_kernel_boolean_down_descent.py
-uv run --with ruff ruff check verify_p7_physical_mixed_kernel_boolean_down_descent.py audit_p7_physical_mixed_kernel_boolean_down_descent.py
+python -m py_compile claims/p7/verify_p7_physical_mixed_kernel_boolean_down_descent.py claims/p7/audit_p7_physical_mixed_kernel_boolean_down_descent.py
+uv run --with ruff ruff check claims/p7/verify_p7_physical_mixed_kernel_boolean_down_descent.py claims/p7/audit_p7_physical_mixed_kernel_boolean_down_descent.py
 ```
 
 The primary verifier proves the universal `U_2=J D_3` identity, the

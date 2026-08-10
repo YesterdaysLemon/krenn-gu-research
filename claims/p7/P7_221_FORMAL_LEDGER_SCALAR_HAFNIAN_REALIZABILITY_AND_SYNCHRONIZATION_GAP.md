@@ -320,8 +320,8 @@ different scalar realization of the same ledger.
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_221_formal_ledger_scalar_hafnian_realizability_and_synchronization_gap.py
 python claims/p7/audit_p7_221_formal_ledger_scalar_hafnian_realizability_and_synchronization_gap.py
-python -m py_compile verify_p7_221_formal_ledger_scalar_hafnian_realizability_and_synchronization_gap.py audit_p7_221_formal_ledger_scalar_hafnian_realizability_and_synchronization_gap.py
-uv run --with sympy --with ruff python -m ruff check verify_p7_221_formal_ledger_scalar_hafnian_realizability_and_synchronization_gap.py audit_p7_221_formal_ledger_scalar_hafnian_realizability_and_synchronization_gap.py
+python -m py_compile claims/p7/verify_p7_221_formal_ledger_scalar_hafnian_realizability_and_synchronization_gap.py claims/p7/audit_p7_221_formal_ledger_scalar_hafnian_realizability_and_synchronization_gap.py
+uv run --with sympy --with ruff python -m ruff check claims/p7/verify_p7_221_formal_ledger_scalar_hafnian_realizability_and_synchronization_gap.py claims/p7/audit_p7_221_formal_ledger_scalar_hafnian_realizability_and_synchronization_gap.py
 ```
 
 The verifier constructs only the three matrices displayed above and checks

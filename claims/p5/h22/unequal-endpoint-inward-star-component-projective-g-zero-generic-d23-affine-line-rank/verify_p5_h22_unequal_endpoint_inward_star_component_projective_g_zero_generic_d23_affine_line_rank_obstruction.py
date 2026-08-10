@@ -10,7 +10,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "src"))
 from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
-from verify_p5_h31_marked_basis_open_branch import one_marked_map, permanent
+from krenn_gu.p5_marked_basis import one_marked_map, permanent
 
 
 

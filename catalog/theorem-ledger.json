@@ -81,7 +81,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "948c5c52819e964e",
+      "document_sha256_16": "88101e54d974d697",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -95,25 +95,33 @@
     },
     {
       "name": "Frontier reduction: any P5->Delta3 restriction forces an H31 or H22 local family",
-      "document": "P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md",
-      "document_sha256_16": "886a35bd91f39ff9",
+      "document": "claims/p5/coordinate-cegar/P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md",
+      "document_sha256_16": "5abea1f3d5b63aed",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact reductions over C",
         "6,495-signature catalogue census"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_high_coordinate_partial_frontier.py",
+      "primary_verifier": "claims/p5/coordinate-cegar/verify_p5_high_coordinate_partial_frontier.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_high_coordinate_partial_frontier.py",
+      "independent_audit": "claims/p5/coordinate-cegar/audit_p5_high_coordinate_partial_frontier.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + census replay)",
       "external_binaries": [],
-      "note": "Reduces the whole problem to two normalized 5-row families; 510 fail-closed signatures (240 H31 + 270 H22) funnel into the component programme."
+      "note": "Reduces the whole problem to two normalized 5-row families; 510 fail-closed signatures (240 H31 + 270 H22) funnel into the component programme.",
+      "claim_package": "claims/p5/coordinate-cegar",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md",
+        "audit_p5_high_coordinate_partial_frontier.py",
+        "verify_p5_high_coordinate_partial_frontier.py"
+      ]
     },
     {
       "name": "Master theorem schema (O-Cover, O-H31, O-H22)",
-      "document": "P5_DELTA3_OBLIGATION_LEDGER.md",
+      "document": "claims/p5/frontier/P5_DELTA3_OBLIGATION_LEDGER.md",
       "document_sha256_16": "8db9f2224b0547e2",
       "status": "framework",
       "assumptions_and_excluded_divisors": [
@@ -128,11 +136,17 @@
       "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "Proved implication: schema + (star) => conjecture. Per-component tables written at the 13-component census; superseded where the README checkpoint (25 components) extends them."
+      "note": "Proved implication: schema + (star) => conjecture. Per-component tables written at the 13-component census; superseded where the README checkpoint (25 components) extends them.",
+      "claim_package": "claims/p5/frontier",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_DELTA3_OBLIGATION_LEDGER.md"
+      ]
     },
     {
       "name": "Generic-to-pointwise specialization meta-theorem",
-      "document": "P5_POINTWISE_SPECIALIZATION_META_THEOREM.md",
+      "document": "claims/p5/frontier/P5_POINTWISE_SPECIALIZATION_META_THEOREM.md",
       "document_sha256_16": "e2fc66d372f0a870",
       "status": "verified",
       "assumptions_and_excluded_divisors": [],
@@ -143,7 +157,13 @@
       "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "Rigorous transfer converting generic function-field closures into pointwise statements off explicit divisors; demonstrated on component 9."
+      "note": "Rigorous transfer converting generic function-field closures into pointwise statements off explicit divisors; demonstrated on component 9.",
+      "claim_package": "claims/p5/frontier",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_POINTWISE_SPECIALIZATION_META_THEOREM.md"
+      ]
     },
     {
       "name": "Divisor extraction pass machinery (M1)",
@@ -513,7 +533,7 @@
     {
       "name": "Generic marked H31 fibre empty: coincident support",
       "document": "claims/p5/h31/coincident-support/P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "5912f49a1d85ba85",
+      "document_sha256_16": "d8b8832c2134ec86",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -566,21 +586,29 @@
     },
     {
       "name": "Generic marked H31 fibre empty: common active binary triangle",
-      "document": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "551273911112b4b7",
+      "document": "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "1aeb92ad15ca803d",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
         "denominator/slope divisors excluded, not proved"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h31_common_active_binary_triangle_component_generic_obstruction.py",
+      "primary_verifier": "claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_component_generic_obstruction.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h31_common_active_binary_triangle_component_generic_obstruction.py",
+      "independent_audit": "claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_component_generic_obstruction.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h31/common-active-binary-triangle",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h31_common_active_binary_triangle_component_generic_obstruction.py",
+        "verify_p5_h31_common_active_binary_triangle_component_generic_obstruction.py"
       ]
     },
     {
@@ -666,21 +694,29 @@
     },
     {
       "name": "Generic marked H31 fibre empty: diagonal quadric elliptic",
-      "document": "P5_H31_DIAGONAL_QUADRIC_ELLIPTIC_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "9d7a708209cc6010",
+      "document": "claims/p5/h31/diagonal-quadric-elliptic/P5_H31_DIAGONAL_QUADRIC_ELLIPTIC_GENERIC_OBSTRUCTION.md",
+      "document_sha256_16": "e3464c3a66bea995",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
         "denominator/slope divisors excluded, not proved"
       ],
       "dependencies": [],
-      "primary_verifier": "verify_p5_h31_diagonal_quadric_elliptic_generic.py",
+      "primary_verifier": "claims/p5/h31/diagonal-quadric-elliptic/verify_p5_h31_diagonal_quadric_elliptic_generic.py",
       "verifier_provenance": "script_is_the_verifier",
-      "independent_audit": "audit_p5_h31_diagonal_quadric_elliptic_generic.py",
+      "independent_audit": "claims/p5/h31/diagonal-quadric-elliptic/audit_p5_h31_diagonal_quadric_elliptic_generic.py",
       "audit_provenance": "independent_modular_audit",
       "expected_runtime": "minutes (sympy + Singular)",
       "external_binaries": [
         "Singular >= 4.3"
+      ],
+      "claim_package": "claims/p5/h31/diagonal-quadric-elliptic",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_H31_DIAGONAL_QUADRIC_ELLIPTIC_GENERIC_OBSTRUCTION.md",
+        "audit_p5_h31_diagonal_quadric_elliptic_generic.py",
+        "verify_p5_h31_diagonal_quadric_elliptic_generic.py"
       ]
     },
     {
@@ -1144,7 +1180,7 @@
     {
       "name": "Generic weighted H22 fibre empty: coincident support",
       "document": "claims/p5/h22/coincident-support/P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "ed0df77897f3f9f5",
+      "document_sha256_16": "7fc72757e107bcf4",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1756,7 +1792,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "948c5c52819e964e",
+      "document_sha256_16": "88101e54d974d697",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -1826,7 +1862,7 @@
     {
       "name": "Eighth-component weighted H22 closure - alternate t-free elimination proof",
       "document": "claims/p5/h22/disjoint-mixed-star/alternate/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md",
-      "document_sha256_16": "4263b8cb71f7a82f",
+      "document_sha256_16": "9da123a4adc2e6cd",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1850,8 +1886,8 @@
     },
     {
       "name": "Eighth-component boundary closures (slopes r=0,+-1,inf; parameter pivots; coupled divisor; af=+-1 sheets; coefficient-quadratic branch; linear slopes)",
-      "document": "P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md",
-      "document_sha256_16": "37f8d0d4dc5c6b6a",
+      "document": "claims/p5/boundaries/P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md",
+      "document_sha256_16": "165e7998b101d9ab",
       "status": "partial",
       "assumptions_and_excluded_divisors": [
         "over the generic component point",
@@ -1866,7 +1902,13 @@
       "external_binaries": [
         "Singular >= 4.3"
       ],
-      "note": "One divisor remains stuck: af(r+1)-(r-1)=0 on D01 (timeout-null Groebner; designed continuation)."
+      "note": "One divisor remains stuck: af(r+1)-(r-1)=0 on D01 (timeout-null Groebner; designed continuation).",
+      "claim_package": "claims/p5/boundaries",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md"
+      ]
     },
     {
       "name": "Eighth-component torus quotient and certificate-divisor frontier",
@@ -1892,7 +1934,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "948c5c52819e964e",
+      "document_sha256_16": "88101e54d974d697",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],

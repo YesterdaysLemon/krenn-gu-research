@@ -401,8 +401,8 @@ finite-field inference, Groebner elimination, or timeout is used.
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_primitive_quotient_singular_apolar_radial_bilinear_incidence.py
 python claims/p7/audit_p7_primitive_quotient_singular_apolar_radial_bilinear_incidence.py
-python -m py_compile verify_p7_primitive_quotient_singular_apolar_radial_bilinear_incidence.py audit_p7_primitive_quotient_singular_apolar_radial_bilinear_incidence.py
-uv run --with ruff ruff check verify_p7_primitive_quotient_singular_apolar_radial_bilinear_incidence.py audit_p7_primitive_quotient_singular_apolar_radial_bilinear_incidence.py
+python -m py_compile claims/p7/verify_p7_primitive_quotient_singular_apolar_radial_bilinear_incidence.py claims/p7/audit_p7_primitive_quotient_singular_apolar_radial_bilinear_incidence.py
+uv run --with ruff ruff check claims/p7/verify_p7_primitive_quotient_singular_apolar_radial_bilinear_incidence.py claims/p7/audit_p7_primitive_quotient_singular_apolar_radial_bilinear_incidence.py
 ```
 
 The primary verifier checks the perfect-pairing normalization, the full

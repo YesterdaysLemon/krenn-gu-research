@@ -339,8 +339,8 @@ the displayed symbolic systems.
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_primitive_complement_radial_and_exceptional_clique.py
 python claims/p7/audit_p7_primitive_complement_radial_and_exceptional_clique.py
-python -m py_compile verify_p7_primitive_complement_radial_and_exceptional_clique.py audit_p7_primitive_complement_radial_and_exceptional_clique.py
-uv run --with ruff ruff check verify_p7_primitive_complement_radial_and_exceptional_clique.py audit_p7_primitive_complement_radial_and_exceptional_clique.py
+python -m py_compile claims/p7/verify_p7_primitive_complement_radial_and_exceptional_clique.py claims/p7/audit_p7_primitive_complement_radial_and_exceptional_clique.py
+uv run --with ruff ruff check claims/p7/verify_p7_primitive_complement_radial_and_exceptional_clique.py claims/p7/audit_p7_primitive_complement_radial_and_exceptional_clique.py
 ```
 
 The primary verifier checks the Boolean complement theorem, both nonvanishing

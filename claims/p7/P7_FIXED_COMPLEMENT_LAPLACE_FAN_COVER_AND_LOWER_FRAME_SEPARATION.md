@@ -356,8 +356,8 @@ global Krenn--Gu conjecture:                        UNRESOLVED.
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_fixed_complement_laplace_fan_cover_and_lower_frame_separation.py
 python claims/p7/audit_p7_fixed_complement_laplace_fan_cover_and_lower_frame_separation.py
-python -m py_compile verify_p7_fixed_complement_laplace_fan_cover_and_lower_frame_separation.py audit_p7_fixed_complement_laplace_fan_cover_and_lower_frame_separation.py
-uv run --with ruff ruff check verify_p7_fixed_complement_laplace_fan_cover_and_lower_frame_separation.py audit_p7_fixed_complement_laplace_fan_cover_and_lower_frame_separation.py
+python -m py_compile claims/p7/verify_p7_fixed_complement_laplace_fan_cover_and_lower_frame_separation.py claims/p7/audit_p7_fixed_complement_laplace_fan_cover_and_lower_frame_separation.py
+uv run --with ruff ruff check claims/p7/verify_p7_fixed_complement_laplace_fan_cover_and_lower_frame_separation.py claims/p7/audit_p7_fixed_complement_laplace_fan_cover_and_lower_frame_separation.py
 ```
 
 The primary verifier proves the six generic polynomial identities, checks the

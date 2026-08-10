@@ -418,8 +418,8 @@ global Krenn--Gu conjecture:                            UNRESOLVED.
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_full_mixed_root_219_label_sensor_and_pinned_star_gating_boundary.py
 python claims/p7/audit_p7_full_mixed_root_219_label_sensor_and_pinned_star_gating_boundary.py
-python -m py_compile verify_p7_full_mixed_root_219_label_sensor_and_pinned_star_gating_boundary.py audit_p7_full_mixed_root_219_label_sensor_and_pinned_star_gating_boundary.py
-uv run --with ruff ruff check verify_p7_full_mixed_root_219_label_sensor_and_pinned_star_gating_boundary.py audit_p7_full_mixed_root_219_label_sensor_and_pinned_star_gating_boundary.py
+python -m py_compile claims/p7/verify_p7_full_mixed_root_219_label_sensor_and_pinned_star_gating_boundary.py claims/p7/audit_p7_full_mixed_root_219_label_sensor_and_pinned_star_gating_boundary.py
+uv run --with ruff ruff check claims/p7/verify_p7_full_mixed_root_219_label_sensor_and_pinned_star_gating_boundary.py claims/p7/audit_p7_full_mixed_root_219_label_sensor_and_pinned_star_gating_boundary.py
 ```
 
 The primary verifier constructs (4)--(6) by a root-matching recursion,

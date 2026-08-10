@@ -14,12 +14,11 @@ for _p in Path(__file__).resolve().parents:
     if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
         sys.path.insert(0, str(_p / "src"))
         break
-from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
+from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
-expose_claim_package(REPO_ROOT, "tools/explore")
 
-from explore_twelve_vertex_complement_chain_orbits import (
+from twelve_vertex_complement_chain_orbits_core import (
     FULL,
     SIDE,
     canonical_leaves,

@@ -182,8 +182,8 @@ global Krenn-Gu conjecture:                          UNRESOLVED.
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py
 python claims/arbitrary-order/audit_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py
-uv run --with sympy --with ruff python -m ruff check verify_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py audit_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py
-python -m py_compile verify_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py audit_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py
+uv run --with sympy --with ruff python -m ruff check claims/arbitrary-order/verify_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py claims/arbitrary-order/audit_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py
+python -m py_compile claims/arbitrary-order/verify_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py claims/arbitrary-order/audit_root_arbitrary_two_endpoint_binary_cofactor_port_compatibility_realization.py
 ```
 
 The primary constructs the actual integer `3 x 3` blocks, enumerates every

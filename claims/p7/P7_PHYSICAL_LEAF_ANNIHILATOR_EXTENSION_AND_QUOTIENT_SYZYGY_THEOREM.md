@@ -408,8 +408,8 @@ inference, parameter sweep, Groebner elimination, or timeout is used.
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_physical_leaf_annihilator_extension_and_quotient_syzygy.py
 python claims/p7/audit_p7_physical_leaf_annihilator_extension_and_quotient_syzygy.py
-python -m py_compile verify_p7_physical_leaf_annihilator_extension_and_quotient_syzygy.py audit_p7_physical_leaf_annihilator_extension_and_quotient_syzygy.py
-uv run --with ruff ruff check verify_p7_physical_leaf_annihilator_extension_and_quotient_syzygy.py audit_p7_physical_leaf_annihilator_extension_and_quotient_syzygy.py
+python -m py_compile claims/p7/verify_p7_physical_leaf_annihilator_extension_and_quotient_syzygy.py claims/p7/audit_p7_physical_leaf_annihilator_extension_and_quotient_syzygy.py
+uv run --with ruff ruff check claims/p7/verify_p7_physical_leaf_annihilator_extension_and_quotient_syzygy.py claims/p7/audit_p7_physical_leaf_annihilator_extension_and_quotient_syzygy.py
 ```
 
 The primary verifier checks the two Lefschetz isomorphisms, master identities

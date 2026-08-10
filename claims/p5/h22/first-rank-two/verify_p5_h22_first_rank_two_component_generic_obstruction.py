@@ -22,11 +22,12 @@ for _p in Path(__file__).resolve().parents:
 from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification")
 
 expose_claim_package(
     REPO_ROOT, "claims/p5/h22/mixed-orientation")
 
-from p5_high_coordinate_tree_chart_cegar import (  # noqa: E402
+from krenn_gu.singular_runtime import (  # noqa: E402
     singular_command_with_timeout,
 )
 from verify_p5_h22_mixed_orientation_component_generic_obstruction import (

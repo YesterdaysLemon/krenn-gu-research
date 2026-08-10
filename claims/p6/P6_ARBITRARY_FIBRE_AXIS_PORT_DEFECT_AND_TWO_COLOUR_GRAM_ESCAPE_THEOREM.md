@@ -450,10 +450,10 @@ global Krenn--Gu conjecture:                           UNRESOLVED.     (29)
 ## Replay
 
 ~~~powershell
-uv run --with sympy python verify_p6_arbitrary_fibre_axis_port_defect_and_two_colour_gram_escape.py
-python audit_p6_arbitrary_fibre_axis_port_defect_and_two_colour_gram_escape.py
-python -m py_compile verify_p6_arbitrary_fibre_axis_port_defect_and_two_colour_gram_escape.py audit_p6_arbitrary_fibre_axis_port_defect_and_two_colour_gram_escape.py
-uv run --with ruff ruff check verify_p6_arbitrary_fibre_axis_port_defect_and_two_colour_gram_escape.py audit_p6_arbitrary_fibre_axis_port_defect_and_two_colour_gram_escape.py
+uv run --with sympy python claims/p6/verify_p6_arbitrary_fibre_axis_port_defect_and_two_colour_gram_escape.py
+python claims/p6/audit_p6_arbitrary_fibre_axis_port_defect_and_two_colour_gram_escape.py
+python -m py_compile claims/p6/verify_p6_arbitrary_fibre_axis_port_defect_and_two_colour_gram_escape.py claims/p6/audit_p6_arbitrary_fibre_axis_port_defect_and_two_colour_gram_escape.py
+uv run --with ruff ruff check claims/p6/verify_p6_arbitrary_fibre_axis_port_defect_and_two_colour_gram_escape.py claims/p6/audit_p6_arbitrary_fibre_axis_port_defect_and_two_colour_gram_escape.py
 ~~~
 
 The primary replay uses exact SymPy arithmetic to verify the fibre values,

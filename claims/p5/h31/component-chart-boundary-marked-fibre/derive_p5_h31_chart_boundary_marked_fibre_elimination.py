@@ -18,10 +18,10 @@ from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
 
-from p5_high_coordinate_tree_chart_cegar import (  # noqa: E402
+from krenn_gu.singular_runtime import (  # noqa: E402
     singular_command_with_timeout,
 )
-from verify_p5_h31_marked_basis_open_branch import mixed_matrix  # noqa: E402
+from krenn_gu.p5_marked_basis import mixed_matrix  # noqa: E402
 
 
 def rows() -> tuple[

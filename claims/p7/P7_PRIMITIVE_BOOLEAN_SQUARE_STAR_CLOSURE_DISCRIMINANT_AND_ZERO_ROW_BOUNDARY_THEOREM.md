@@ -334,8 +334,8 @@ finite-field calculation enters this proof.
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_primitive_boolean_square_star_closure_discriminant.py
 python claims/p7/audit_p7_primitive_boolean_square_star_closure_discriminant.py
-python -m py_compile verify_p7_primitive_boolean_square_star_closure_discriminant.py audit_p7_primitive_boolean_square_star_closure_discriminant.py
-uv run --with ruff ruff check verify_p7_primitive_boolean_square_star_closure_discriminant.py audit_p7_primitive_boolean_square_star_closure_discriminant.py
+python -m py_compile claims/p7/verify_p7_primitive_boolean_square_star_closure_discriminant.py claims/p7/audit_p7_primitive_boolean_square_star_closure_discriminant.py
+uv run --with ruff ruff check claims/p7/verify_p7_primitive_boolean_square_star_closure_discriminant.py claims/p7/audit_p7_primitive_boolean_square_star_closure_discriminant.py
 ```
 
 The primary verifier checks the universal coordinate identities, the exact

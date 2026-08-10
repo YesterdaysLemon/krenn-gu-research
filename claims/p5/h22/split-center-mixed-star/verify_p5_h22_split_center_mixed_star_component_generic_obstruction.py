@@ -23,7 +23,7 @@ from krenn_gu.p5_weighted_h22_contraction import build_model, project
 REPO_ROOT, HERE = bootstrap(__file__)
 expose_claim_package(REPO_ROOT, "claims/p5/h31/split-center-mixed-star")
 
-from verify_p5_h31_marked_basis_open_branch import one_marked_map  # noqa: E402
+from krenn_gu.p5_marked_basis import one_marked_map  # noqa: E402
 from verify_p5_h31_split_center_mixed_star_component_generic_obstruction import (  # noqa: E402
     rows,
     shifted,

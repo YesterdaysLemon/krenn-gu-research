@@ -1,9 +1,11 @@
 # P5 marked-`H31` obstruction packages
 
-Most subdirectories are migrated component-level generic marked-`H31`
-claim packages: theorem document + primary verifier + an independent
-audit where one exists, moved together with preserved filenames.  There
-are nine scoped exceptions.  The `embedded-p3/` package contains the
+This tree has 52 direct directories.  It combines component-level generic
+marked-`H31` claim packages with divisor and boundary packages, three
+fresh-process `q=3` carrier directories, and one narrow neutral
+disputed-ownership package.  Stage 32 added 83 artifacts here: 25 Markdown
+documents and 58 Python carriers.  File proximity changes no status, scope,
+proof dependency, or audit-independence claim.  The `embedded-p3/` package contains the
 complete five-triple generic, boundary, and projective component-closure
 forest.  The three single-gate directories form one complete
 rank-one-gate obstruction forest, not a generic package or complete
@@ -63,6 +65,13 @@ Stage 24 used batch
 The reconciled chart-boundary complete marked-fibre package used batch
 `h31-cbmf-reconciled-root-exit` (mapping_sha256
 `9d9c85b5dc89958ea0127f6ed5f7fe8000b060294e17966a70321a36b709f39e`).
+Stage 32 used batch `p5-residual-root-exit-stage32` (mapping_sha256
+`be94dcaadb97d29eb6e6b5efe712485ac55aa3286e802dfa457746cd8dd4cf56`)
+for the 83 residual H31 artifacts.  The neutral first/second-component
+provenance package records, but does not resolve, its cross-document
+disagreement.  The `elliptic-end-*-q3/` directories are carrier-only children
+of their named parent theorem packages, not additional theorem packages or
+independent audits.
 
 Except for the `embedded-p3/` component-closure forest, the diagonal `p+q=0`
 wall subforest, the single-gate branch forest, and the internal-`E=0` divisor
@@ -135,15 +144,17 @@ embedded-P3 projective closure.
 
 All three results retain their exact characteristic-zero `VERIFIED` scopes.
 The whole-wall and lower-pair audits are no-primary-import reconstructions.
-The endpoint primary and audit share the root marked-basis matrix constructor,
-so their independence is only downstream of that shared layer.  None of the
+The endpoint primary and audit share the neutral
+`krenn_gu.p5_marked_basis` matrix constructor, so their independence is only
+downstream of that shared layer.  None of the
 three documents has a curated theorem-ledger entry.
 
 This package does not close weighted `H22`, non-diagonal source changes,
 component placement or compactification, local-to-global gluing, or the
 global conjecture.  The other 12 common-active generic, normalized,
-special-divisor, and intrinsic-boundary files remain at the repository root
-as separately owned sibling obligations.
+special-divisor, and intrinsic-boundary files are separately owned sibling
+obligations in this package.  Colocation does not turn the diagonal wall into
+a broader common-active component closure.
 
 ## Internal `E=0` marked-fibre divisor
 
@@ -315,8 +326,8 @@ independent evidence.
 The audit imports neither the family primary nor the generator, duplicates the
 family rows and projection equations, and exhausts the corresponding modular
 loci over `F5/F7`.  It nevertheless imports eight computational primitives
-from the staying root
-`audit_p5_h31_marked_basis_fibre_classification.py`.  It is therefore
+from the separately owned marked-basis classification audit in the neutral
+first/second-component provenance package.  It is therefore
 independent of the family primary and characteristic-zero proof route, with a
 shared finite-field helper implementation.  This modular enumeration is QA;
 the characteristic-zero residual-cover ideals are the proof.
@@ -364,29 +375,33 @@ and is not part of the characteristic-zero verification.
 
 ## Shared and cross-package dependencies
 
-- Root shared utilities consumed by these verifiers:
-  `verify_p5_h31_marked_basis_open_branch.py`,
-  `p5_high_coordinate_tree_chart_cegar.py`, and
-  `verify_p4_directed_zero_divisor_triangle_components.py` remain at
-  the repository root.
-- The internal-`E=0` and toric marked-fibre primaries and audits consume the
-  shared root `derive_p5_h31_toric_marked_fibre_elimination.py` and separate
-  primary/audit marked-basis constructors.  Those helpers serve multiple
-  obligations and were not absorbed into either leaf package.
+- Widely consumed marked-basis matrix/permanent functions live in
+  `src/krenn_gu/p5_marked_basis.py`; reusable high-coordinate chart logic and
+  Singular command discovery live in the separate
+  `src/krenn_gu/p5_high_coordinate.py` and
+  `src/krenn_gu/singular_runtime.py` cores.  Frozen no-solver parity guards the
+  extracted APIs.  The marked-basis-open-branch theorem-specific verifier and
+  audit remain claim-owned in `marked-basis-open-branch/`.
+- The toric elimination generator remains claim-owned in
+  `toric-marked-fibre/`.  Internal-`E=0`, toric, and descendant packages may
+  reuse its scientific surface or the neutral marked-basis core, but reuse
+  does not transfer theorem ownership or create audit independence.
 - The canonical chart-boundary primary consumes the separately owned P4
-  chart-closure document and root rank-two-orbit theorem.  Its later complete
-  marked-fibre strengthening and uniquely owned elimination generator remain
-  together as grandfathered root debt pending scientific reconciliation and
-  a separate migration review.
+  chart-closure and H31 rank-two-orbit packages.  Its complete marked-fibre
+  successor and elimination generator now live together in the reconciled
+  `component-chart-boundary-marked-fibre/` package.
 - The canonical first-plane Schubert-infinity primary consumes the separately
   owned P4 chart closure and the migrated canonical chart-boundary checkpoint.
   That canonical-section package remains a live predecessor of the separately
   owned complete marked-fibre strengthening.
 - The complete first-plane Schubert-infinity primary consumes the separately
   owned P4 component theorem and canonical-section predecessor, its sibling
-  elimination generator, and the staying root marked-basis/Singular helpers.
-  Its modular audit shares eight finite-field primitives with the staying root
-  marked-basis classification audit, as qualified above.
+  elimination generator, and the neutral marked-basis/Singular cores.  Its
+  modular audit shares eight finite-field primitives with the separately
+  owned marked-basis classification audit, as qualified above.
+- The three `elliptic-end-*-q3/` directories contain fresh-process child
+  carriers.  They import their parent package's reduction/verification code
+  and do not add a theorem or an independent audit.
 - The single-gate reduction consumes the separately owned root
   `P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`; the two importing modular
   audits expose `single-gate-p3/` through the shared bootstrap helper.
@@ -403,19 +418,14 @@ and is not part of the characteristic-zero verification.
 
 ## Not migrated here
 
-The H31 diagonal-quadric **elliptic** documents remain at the repository root
-with their boundary forest.  The 12 common-active generic, special-divisor,
-normalized-affine, and intrinsic-boundary sibling files outside the migrated
-`p+q=0` wall subforest also remain at root; Stage 18 did not claim a complete
-common-active component closure.  The
-all-rank-two P4/H31 component and boundary forests also remain at root except
-for the exact internal-`E=0` divisor, toric marked-fibre boundary, and
-canonical chart-boundary and first-plane Schubert-infinity section leaves and
-the complete first-plane Schubert-infinity marked-fibre leaf;
-the single-gate forest closes only their rank-one-gate branch.  The
-separate weighted-H22 embedded-P3 programme also remains at root; its
-projective coverage is still open and it is not part of the closed H31
-forest above.  The equal-support-sixfold package is present with its
-actual primary-only evidence structure; migration did not create an
-audit or promote its status.  Migration status changes no theorem
-claim; the global conjecture remains **UNRESOLVED**.
+Stage 32 colocated the residual H31 documents and their directly owned
+carriers in this tree, including the diagonal-quadric boundary forest and the
+common-active siblings.  That layout operation does not make the families
+complete, merge their scopes, or close any remainder named by their documents.
+P4 inputs, weighted-H22 evidence, frontier and boundary packages, finite and
+arbitrary-order programmes, local-to-global gluing, and global resolution are
+external proof obligations.  The neutral first/second-component package
+records its provenance disagreement without selecting a side.  The
+equal-support-sixfold package still has its actual primary-only evidence
+structure; migration created no audit and promoted no status.  The global
+conjecture remains **UNRESOLVED**.

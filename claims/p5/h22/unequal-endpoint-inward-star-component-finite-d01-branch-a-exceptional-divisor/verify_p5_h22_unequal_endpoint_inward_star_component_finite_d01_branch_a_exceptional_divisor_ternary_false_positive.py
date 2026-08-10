@@ -24,7 +24,7 @@ expose_claim_package(REPO_ROOT, "claims/p5/h22/unequal-endpoint-inward-star")
 expose_claim_package(REPO_ROOT, "claims/p5/h31/unequal-endpoint-inward-star")
 
 from verify_p5_h22_unequal_endpoint_inward_star_component_partial import coordinates
-from verify_p5_h31_marked_basis_open_branch import one_marked_map
+from krenn_gu.p5_marked_basis import one_marked_map
 from verify_p5_h31_unequal_endpoint_inward_star_component_generic_obstruction import (
     pure_basis,
 )

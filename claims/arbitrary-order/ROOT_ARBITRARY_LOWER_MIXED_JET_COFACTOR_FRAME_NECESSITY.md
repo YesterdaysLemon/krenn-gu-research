@@ -169,8 +169,8 @@ not a no-go for all legal companion systems.
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py
 python claims/arbitrary-order/audit_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py
-uv run --with sympy --with ruff python -m ruff check verify_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py audit_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py
-python -m py_compile verify_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py audit_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py
+uv run --with sympy --with ruff python -m ruff check claims/arbitrary-order/verify_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py claims/arbitrary-order/audit_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py
+python -m py_compile claims/arbitrary-order/verify_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py claims/arbitrary-order/audit_root_arbitrary_lower_mixed_jet_cofactor_frame_necessity.py
 ```
 
 The primary reconstructs the exact restricted-product ranks and required

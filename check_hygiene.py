@@ -71,7 +71,7 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent
                        / "tools" / "migration"))
-from replay_command import match_replay  # noqa: E402
+from replay_command import FENCE, match_replay_targets  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parent
 
@@ -1182,16 +1182,16 @@ def find_stale_bare_refs(text: str, rel: str,
                 in_front_matter = False
                 i += 1
                 continue
-            if line.lstrip().startswith("```"):
+            if FENCE.match(line):
                 in_fence = not in_fence
                 i += 1
                 continue
             if in_fence or in_front_matter:
-                rm = match_replay(lines, i)
+                rm = match_replay_targets(lines, i)
                 if rm:
-                    base_c, end, _form = rm
-                    if base_c in moved_by_base:
-                        fenced_stale.add(base_c)
+                    bases_c, end, _form = rm
+                    fenced_stale.update(
+                        base for base in bases_c if base in moved_by_base)
                     i = end + 1
                     continue
             i += 1

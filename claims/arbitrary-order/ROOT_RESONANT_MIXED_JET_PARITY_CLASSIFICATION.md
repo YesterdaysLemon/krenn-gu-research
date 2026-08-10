@@ -147,8 +147,8 @@ Then run:
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_root_resonant_mixed_jet_parity_classification.py
 python claims/arbitrary-order/audit_root_resonant_mixed_jet_parity_classification.py
-uv run --with sympy --with ruff python -m ruff check verify_root_resonant_mixed_jet_parity_classification.py audit_root_resonant_mixed_jet_parity_classification.py
-python -m py_compile verify_root_resonant_mixed_jet_parity_classification.py audit_root_resonant_mixed_jet_parity_classification.py
+uv run --with sympy --with ruff python -m ruff check claims/arbitrary-order/verify_root_resonant_mixed_jet_parity_classification.py claims/arbitrary-order/audit_root_resonant_mixed_jet_parity_classification.py
+python -m py_compile claims/arbitrary-order/verify_root_resonant_mixed_jet_parity_classification.py claims/arbitrary-order/audit_root_resonant_mixed_jet_parity_classification.py
 ```
 
 The primary constructs all tensor-basis image columns symbolically through

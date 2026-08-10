@@ -147,8 +147,8 @@ global Krenn-Gu conjecture:                        UNRESOLVED.
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py
 python claims/arbitrary-order/audit_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py
-uv run --with sympy --with ruff python -m ruff check verify_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py audit_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py
-python -m py_compile verify_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py audit_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py
+uv run --with sympy --with ruff python -m ruff check claims/arbitrary-order/verify_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py claims/arbitrary-order/audit_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py
+python -m py_compile claims/arbitrary-order/verify_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py claims/arbitrary-order/audit_root_m7_one_edge_a10_shared_pure_mixed_factor_obstruction.py
 ```
 
 The primary derives the coefficients from symbolic permanents, verifies (7),

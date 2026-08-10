@@ -533,8 +533,8 @@ symbolic identities certifying the general proof.
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_pinned_hafnian_star_system_and_rational_edge_tomography.py
 python claims/arbitrary-order/audit_pinned_hafnian_star_system_and_rational_edge_tomography.py
-python -m py_compile verify_pinned_hafnian_star_system_and_rational_edge_tomography.py audit_pinned_hafnian_star_system_and_rational_edge_tomography.py
-uv run --with ruff ruff check verify_pinned_hafnian_star_system_and_rational_edge_tomography.py audit_pinned_hafnian_star_system_and_rational_edge_tomography.py
+python -m py_compile claims/arbitrary-order/verify_pinned_hafnian_star_system_and_rational_edge_tomography.py claims/arbitrary-order/audit_pinned_hafnian_star_system_and_rational_edge_tomography.py
+uv run --with ruff ruff check claims/arbitrary-order/verify_pinned_hafnian_star_system_and_rational_edge_tomography.py claims/arbitrary-order/audit_pinned_hafnian_star_system_and_rational_edge_tomography.py
 ```
 
 The primary verifier expands the symbolic pinned and Euler identities,

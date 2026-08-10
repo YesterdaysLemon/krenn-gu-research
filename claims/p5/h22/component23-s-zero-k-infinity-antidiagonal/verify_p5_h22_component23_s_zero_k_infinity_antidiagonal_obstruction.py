@@ -25,7 +25,7 @@ REPO_ROOT, HERE = bootstrap(__file__)
 expose_claim_package(REPO_ROOT, "claims/p5/h22/common-center-kernel-star")
 
 from verify_p5_h22_common_center_kernel_star_component_partial import singular_command
-from verify_p5_h31_marked_basis_open_branch import permanent
+from krenn_gu.p5_marked_basis import permanent
 
 
 

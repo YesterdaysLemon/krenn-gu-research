@@ -23,7 +23,7 @@ from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
 REPO_ROOT, HERE = bootstrap(__file__)
 ROOT = REPO_ROOT
 
-from verify_p5_h31_marked_basis_open_branch import mixed_matrix
+from krenn_gu.p5_marked_basis import mixed_matrix
 
 ROOT = REPO_ROOT
 THEOREM = (

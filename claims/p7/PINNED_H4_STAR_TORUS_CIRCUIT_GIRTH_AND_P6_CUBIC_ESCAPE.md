@@ -462,8 +462,8 @@ matrices.
 ```powershell
 uv run --with sympy python claims/p7/verify_pinned_h4_star_torus_circuit_girth_and_p6_cubic_escape.py
 python claims/p7/audit_pinned_h4_star_torus_circuit_girth_and_p6_cubic_escape.py
-python -m py_compile verify_pinned_h4_star_torus_circuit_girth_and_p6_cubic_escape.py audit_pinned_h4_star_torus_circuit_girth_and_p6_cubic_escape.py
-uv run --with ruff ruff check verify_pinned_h4_star_torus_circuit_girth_and_p6_cubic_escape.py audit_pinned_h4_star_torus_circuit_girth_and_p6_cubic_escape.py
+python -m py_compile claims/p7/verify_pinned_h4_star_torus_circuit_girth_and_p6_cubic_escape.py claims/p7/audit_pinned_h4_star_torus_circuit_girth_and_p6_cubic_escape.py
+uv run --with ruff ruff check claims/p7/verify_pinned_h4_star_torus_circuit_girth_and_p6_cubic_escape.py claims/p7/audit_pinned_h4_star_torus_circuit_girth_and_p6_cubic_escape.py
 ```
 
 The primary verifier checks (14)--(17), the auxiliary inclusion ranks, the

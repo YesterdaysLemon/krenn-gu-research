@@ -50,7 +50,7 @@ hash, and the recorded Singular result.
 With `python-sat` available, run:
 
 ```text
-python verify_p5_high_coordinate_chart_ledgers.py \
+python claims/p5/coordinate-cegar/verify_p5_high_coordinate_chart_ledgers.py \
   --branch q5_311 \
   --state research_snapshots/2026-07-28-p5-high-coordinate-zero-forests/q5_311_zero_forest_seeds.json \
   --rerun-singular \

@@ -27,7 +27,7 @@ expose_claim_package(
     REPO_ROOT,
     "claims/p4/classifications/star/two-rank-two-spoke-mixed-star-component")
 from verify_p4_two_rank_two_spoke_mixed_star_component import family  # noqa: E402
-from verify_p5_h31_marked_basis_open_branch import mixed_matrix
+from krenn_gu.p5_marked_basis import mixed_matrix
 
 
 ROOT = REPO_ROOT

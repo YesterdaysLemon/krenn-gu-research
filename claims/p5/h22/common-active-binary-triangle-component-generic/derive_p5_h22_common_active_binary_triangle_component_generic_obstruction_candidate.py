@@ -32,7 +32,7 @@ CERTIFICATE = ROOT / (
     "p5_h22_common_active_binary_triangle_component_generic_certificate.json"
 )
 COMPONENT = REPO_ROOT / "claims/p4/classifications/triangle-211/common-active-binary-triangle/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md"
-H31 = REPO_ROOT / "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md"
+H31 = REPO_ROOT / "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md"
 H22_WALL = REPO_ROOT / "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md"
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))

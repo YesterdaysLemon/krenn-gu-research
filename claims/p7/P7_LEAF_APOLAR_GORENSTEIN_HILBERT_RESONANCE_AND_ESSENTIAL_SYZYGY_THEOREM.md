@@ -365,8 +365,8 @@ finite-field inference, Groebner elimination, or timeout enters the proof.
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_leaf_apolar_gorenstein_hilbert_resonance_and_essential_syzygy.py
 python claims/p7/audit_p7_leaf_apolar_gorenstein_hilbert_resonance_and_essential_syzygy.py
-python -m py_compile verify_p7_leaf_apolar_gorenstein_hilbert_resonance_and_essential_syzygy.py audit_p7_leaf_apolar_gorenstein_hilbert_resonance_and_essential_syzygy.py
-uv run --with ruff ruff check verify_p7_leaf_apolar_gorenstein_hilbert_resonance_and_essential_syzygy.py audit_p7_leaf_apolar_gorenstein_hilbert_resonance_and_essential_syzygy.py
+python -m py_compile claims/p7/verify_p7_leaf_apolar_gorenstein_hilbert_resonance_and_essential_syzygy.py claims/p7/audit_p7_leaf_apolar_gorenstein_hilbert_resonance_and_essential_syzygy.py
+uv run --with ruff ruff check claims/p7/verify_p7_leaf_apolar_gorenstein_hilbert_resonance_and_essential_syzygy.py claims/p7/audit_p7_leaf_apolar_gorenstein_hilbert_resonance_and_essential_syzygy.py
 ```
 
 The primary verifier checks both injectivity case matrices, all adjoint

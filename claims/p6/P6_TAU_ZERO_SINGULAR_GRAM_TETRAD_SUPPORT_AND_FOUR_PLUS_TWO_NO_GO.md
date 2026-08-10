@@ -408,10 +408,10 @@ global Krenn--Gu conjecture:                            UNRESOLVED.    (26)
 ## Replay
 
 ~~~powershell
-uv run --with sympy python verify_p6_tau_zero_singular_gram_tetrad_support_and_four_plus_two_no_go.py
-python audit_p6_tau_zero_singular_gram_tetrad_support_and_four_plus_two_no_go.py
-python -m py_compile verify_p6_tau_zero_singular_gram_tetrad_support_and_four_plus_two_no_go.py audit_p6_tau_zero_singular_gram_tetrad_support_and_four_plus_two_no_go.py
-uv run --with ruff ruff check verify_p6_tau_zero_singular_gram_tetrad_support_and_four_plus_two_no_go.py audit_p6_tau_zero_singular_gram_tetrad_support_and_four_plus_two_no_go.py
+uv run --with sympy python claims/p6/verify_p6_tau_zero_singular_gram_tetrad_support_and_four_plus_two_no_go.py
+python claims/p6/audit_p6_tau_zero_singular_gram_tetrad_support_and_four_plus_two_no_go.py
+python -m py_compile claims/p6/verify_p6_tau_zero_singular_gram_tetrad_support_and_four_plus_two_no_go.py claims/p6/audit_p6_tau_zero_singular_gram_tetrad_support_and_four_plus_two_no_go.py
+uv run --with ruff ruff check claims/p6/verify_p6_tau_zero_singular_gram_tetrad_support_and_four_plus_two_no_go.py claims/p6/audit_p6_tau_zero_singular_gram_tetrad_support_and_four_plus_two_no_go.py
 ~~~
 
 The primary replay verifies the three matching identities with exact

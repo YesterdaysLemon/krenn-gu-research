@@ -121,7 +121,7 @@ within-block order-two permanents survive with nonzero weights.
 ## Effect on the Krenn--Gu strategy
 
 This changes the status of Routes E and F in
-[`P5_ALTERNATIVE_STRATEGY_MAP.md`](../../P5_ALTERNATIVE_STRATEGY_MAP.md):
+[`P5_ALTERNATIVE_STRATEGY_MAP.md`](../p5/frontier/P5_ALTERNATIVE_STRATEGY_MAP.md):
 
 - It is an identity entirely inside the selected squarefree matching degree.
   It therefore supplies the kind of postselection-safe cancellation that

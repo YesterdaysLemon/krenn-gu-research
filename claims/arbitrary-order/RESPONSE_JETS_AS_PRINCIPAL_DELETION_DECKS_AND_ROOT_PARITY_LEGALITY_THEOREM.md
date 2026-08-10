@@ -539,8 +539,8 @@ Run from the repository root:
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_response_jet_principal_deletion_deck_and_root_parity_legality.py
 python claims/arbitrary-order/audit_response_jet_principal_deletion_deck_and_root_parity_legality.py
-python -m py_compile verify_response_jet_principal_deletion_deck_and_root_parity_legality.py audit_response_jet_principal_deletion_deck_and_root_parity_legality.py
-uv run --with ruff ruff check verify_response_jet_principal_deletion_deck_and_root_parity_legality.py audit_response_jet_principal_deletion_deck_and_root_parity_legality.py
+python -m py_compile claims/arbitrary-order/verify_response_jet_principal_deletion_deck_and_root_parity_legality.py claims/arbitrary-order/audit_response_jet_principal_deletion_deck_and_root_parity_legality.py
+uv run --with ruff ruff check claims/arbitrary-order/verify_response_jet_principal_deletion_deck_and_root_parity_legality.py claims/arbitrary-order/audit_response_jet_principal_deletion_deck_and_root_parity_legality.py
 ```
 
 The primary verifier checks the symbolic six-residual response against every

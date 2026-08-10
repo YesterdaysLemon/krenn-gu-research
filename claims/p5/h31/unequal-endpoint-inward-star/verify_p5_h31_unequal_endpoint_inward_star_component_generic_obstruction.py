@@ -21,7 +21,7 @@ from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
 
-from verify_p5_h31_marked_basis_open_branch import mixed_matrix, permanent
+from krenn_gu.p5_marked_basis import mixed_matrix, permanent
 
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 

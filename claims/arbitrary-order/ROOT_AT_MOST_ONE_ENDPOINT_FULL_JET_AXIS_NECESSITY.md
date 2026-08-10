@@ -136,8 +136,8 @@ nonrestriction theorem for `P_6`.
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_root_at_most_one_endpoint_full_jet_axis_necessity.py
 python claims/arbitrary-order/audit_root_at_most_one_endpoint_full_jet_axis_necessity.py
-uv run --with sympy --with ruff python -m ruff check verify_root_at_most_one_endpoint_full_jet_axis_necessity.py audit_root_at_most_one_endpoint_full_jet_axis_necessity.py
-python -m py_compile verify_root_at_most_one_endpoint_full_jet_axis_necessity.py audit_root_at_most_one_endpoint_full_jet_axis_necessity.py
+uv run --with sympy --with ruff python -m ruff check claims/arbitrary-order/verify_root_at_most_one_endpoint_full_jet_axis_necessity.py claims/arbitrary-order/audit_root_at_most_one_endpoint_full_jet_axis_necessity.py
+python -m py_compile claims/arbitrary-order/verify_root_at_most_one_endpoint_full_jet_axis_necessity.py claims/arbitrary-order/audit_root_at_most_one_endpoint_full_jet_axis_necessity.py
 ```
 
 The primary reconstructs the exact full coefficient-form rank on all small

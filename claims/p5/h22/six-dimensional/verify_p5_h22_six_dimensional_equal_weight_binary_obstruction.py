@@ -20,7 +20,7 @@ from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
 
-from p5_high_coordinate_tree_chart_cegar import (  # noqa: E402
+from krenn_gu.singular_runtime import (  # noqa: E402
     singular_command_with_timeout,
 )
 

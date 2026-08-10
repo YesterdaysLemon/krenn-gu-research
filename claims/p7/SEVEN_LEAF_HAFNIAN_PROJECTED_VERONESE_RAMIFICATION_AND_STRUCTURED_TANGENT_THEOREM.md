@@ -277,8 +277,8 @@ inference, parameter sweep, Groebner elimination, or timeout is used.
 ```powershell
 uv run --with sympy python claims/p7/verify_seven_leaf_hafnian_projected_veronese_ramification.py
 python claims/p7/audit_seven_leaf_hafnian_projected_veronese_ramification.py
-python -m py_compile verify_seven_leaf_hafnian_projected_veronese_ramification.py audit_seven_leaf_hafnian_projected_veronese_ramification.py
-uv run --with ruff ruff check verify_seven_leaf_hafnian_projected_veronese_ramification.py audit_seven_leaf_hafnian_projected_veronese_ramification.py
+python -m py_compile claims/p7/verify_seven_leaf_hafnian_projected_veronese_ramification.py claims/p7/audit_seven_leaf_hafnian_projected_veronese_ramification.py
+uv run --with ruff ruff check claims/p7/verify_seven_leaf_hafnian_projected_veronese_ramification.py claims/p7/audit_seven_leaf_hafnian_projected_veronese_ramification.py
 ```
 
 The primary verifier builds the exact `35 x 231` Boolean multiplication

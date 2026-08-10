@@ -22,7 +22,7 @@ from krenn_gu.p5_weighted_h22_contraction import build_model, project
 REPO_ROOT, HERE = bootstrap(__file__)
 expose_claim_package(REPO_ROOT, "claims/p5/h31/unequal-complement-common-kernel")
 
-from verify_p5_h31_marked_basis_open_branch import one_marked_map
+from krenn_gu.p5_marked_basis import one_marked_map
 from verify_p5_h31_unequal_complement_common_kernel_component_generic_obstruction import (
     component_rows,
     shifted,

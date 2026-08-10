@@ -398,8 +398,8 @@ P7 nonrestriction and global Krenn--Gu:                      UNRESOLVED.
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_complete_four_face_null_stratum_and_paired_depth_sharpness.py
 python claims/p7/audit_p7_complete_four_face_null_stratum_and_paired_depth_sharpness.py
-python -m py_compile verify_p7_complete_four_face_null_stratum_and_paired_depth_sharpness.py audit_p7_complete_four_face_null_stratum_and_paired_depth_sharpness.py
-uv run --with ruff ruff check verify_p7_complete_four_face_null_stratum_and_paired_depth_sharpness.py audit_p7_complete_four_face_null_stratum_and_paired_depth_sharpness.py
+python -m py_compile claims/p7/verify_p7_complete_four_face_null_stratum_and_paired_depth_sharpness.py claims/p7/audit_p7_complete_four_face_null_stratum_and_paired_depth_sharpness.py
+uv run --with ruff ruff check claims/p7/verify_p7_complete_four_face_null_stratum_and_paired_depth_sharpness.py claims/p7/audit_p7_complete_four_face_null_stratum_and_paired_depth_sharpness.py
 ```
 
 The primary replay checks the inclusion--exclusion cover, the normalized

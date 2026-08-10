@@ -23,9 +23,10 @@ for _p in Path(__file__).resolve().parents:
     if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
         sys.path.insert(0, str(_p / "src"))
         break
-from krenn_gu.bootstrap import bootstrap  # noqa: E402
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
 
-REPO_ROOT, HERE = bootstrap(__file__)
+REPO_ROOT, HERE = bootstrap(__file__, also=["."])
+expose_claim_package(REPO_ROOT, "claims/p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification")
 
 from audit_p5_h31_marked_basis_fibre_classification import (  # noqa: E402
     binary_extension_data,

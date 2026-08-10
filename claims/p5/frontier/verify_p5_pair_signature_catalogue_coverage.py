@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import argparse
 import hashlib
-import importlib.util
 import itertools
 import json
 import pathlib
@@ -20,20 +19,12 @@ for _p in pathlib.Path(__file__).resolve().parents:
         sys.path.insert(0, str(_p / "src"))
         break
 from krenn_gu.bootstrap import bootstrap  # noqa: E402
+from krenn_gu.p5_pair_catalogue import (  # noqa: E402
+    finite_field_local_signatures,
+)
 
 REPO_ROOT, ROOT = bootstrap(__file__)
 from integer_constant_lattice import IntegerConstantLattice  # noqa: E402
-
-NORMAL_PATH = (
-    REPO_ROOT
-    / "claims"
-    / "arbitrary-order"
-    / "audit_five_row_projective_normal_forms.py"
-)
-SPEC = importlib.util.spec_from_file_location("normal_audit", NORMAL_PATH)
-NORMAL = importlib.util.module_from_spec(SPEC)
-assert SPEC.loader is not None
-SPEC.loader.exec_module(NORMAL)
 
 SOURCES = tuple(range(5))
 COLOURS = tuple(range(3))
@@ -47,102 +38,6 @@ def add_and_equivalence(
     for factor in factors:
         cnf.append([-output, factor])
     cnf.append([output] + [-factor for factor in factors])
-
-
-def support(row: tuple[int, ...]) -> int:
-    return sum(
-        (value != 0) << index for index, value in enumerate(row)
-    )
-
-
-def coordinate_mask(rows: tuple[tuple[int, ...], ...]) -> int:
-    rank = NORMAL.rank_mod(rows)
-    return sum(
-        (
-            NORMAL.rank_mod(rows + (coordinate,)) == rank
-        )
-        << colour
-        for colour, coordinate in enumerate(NORMAL.COORDINATES)
-    )
-
-
-def base_signature(rows: tuple[tuple[int, ...], ...]) -> tuple:
-    supports = tuple(support(row) for row in rows)
-    subsets = tuple(
-        subset
-        for size in (2, 3, 4)
-        for subset in itertools.combinations(SOURCES, size)
-    )
-    incidences = tuple(
-        coordinate_mask(tuple(rows[index] for index in subset))
-        for subset in subsets
-    )
-    return supports, incidences
-
-
-def permute_signature(
-    signature: tuple, permutation: tuple[int, ...]
-) -> tuple:
-    subsets = tuple(
-        subset
-        for size in (2, 3, 4)
-        for subset in itertools.combinations(SOURCES, size)
-    )
-    subset_index = {
-        subset: index for index, subset in enumerate(subsets)
-    }
-    supports, incidences = signature
-    new_supports = tuple(
-        supports[permutation[index]] for index in SOURCES
-    )
-    new_incidences = []
-    for subset in subsets:
-        old_subset = tuple(
-            sorted(permutation[index] for index in subset)
-        )
-        new_incidences.append(incidences[subset_index[old_subset]])
-    return new_supports, tuple(new_incidences)
-
-
-def finite_field_local_signatures() -> tuple[tuple, ...]:
-    points = (NORMAL.ZERO,) + tuple(
-        sorted(
-            {
-                NORMAL.canonical(vector)
-                for vector in itertools.product(
-                    range(NORMAL.PRIME), repeat=3
-                )
-                if any(vector)
-            }
-        )
-    )
-    pair_condition = tuple(
-        tuple(
-            NORMAL.pair_contains_coordinate(left, right)
-            for right in points
-        )
-        for left in points
-    )
-    result = set()
-    retained = 0
-    for indices in itertools.combinations_with_replacement(
-        range(len(points)), 5
-    ):
-        if any(
-            not pair_condition[indices[first]][indices[second]]
-            for first, second in itertools.combinations(range(5), 2)
-        ):
-            continue
-        rows = tuple(points[index] for index in indices)
-        if NORMAL.rank_mod(rows) != 3:
-            continue
-        retained += 1
-        base = base_signature(rows)
-        for permutation in itertools.permutations(SOURCES):
-            result.add(permute_signature(base, permutation))
-    if retained != 2556:
-        raise AssertionError("finite-field retained count changed")
-    return tuple(sorted(result))
 
 
 def x(pool: IDPool, source: int, colour: int) -> int:

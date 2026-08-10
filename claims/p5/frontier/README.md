@@ -5,6 +5,12 @@ documents, 89 Python carriers, and two C++ primaries.  This README is later
 navigation and is not a batch member.  The exact carrier list is frozen in
 [`p5-frontier-stage29.json`](../../../catalog/batches/p5-frontier-stage29.json).
 
+Stage 32 added 85 residual P5 artifacts here: 31 Markdown documents and 54
+Python carriers.  The current surface therefore contains 228 artifacts: 83
+Markdown documents, 143 Python carriers, and two C++ primaries, excluding
+this README.  The Stage 32 colocation preserves candidate, partial,
+superseded, failed, and audit-asymmetric records at their written scopes.
+
 The complete normalized `q4_211` and `q5_221` forests span this directory and
 the sibling [`coordinate-cegar/`](../coordinate-cegar/) and
 [`boundaries/`](../boundaries/) directories.  Complete means
@@ -47,10 +53,14 @@ audit remain separately owned at repository root.  It is a structural input,
 not by itself an exclusion of `P_5 -> Delta_3` or a proof of the global
 conjecture.
 
-The batch excludes the high-coordinate conflict triple, all Component21 and
-Component23 triples, every closure-crossing package, and every Component20,
-H22, H31, Branch B, weighted-`p+q`, internal-`E=0`, marked-basis, legacy, or
-withdrawn conflict surface.  At the Stage 29 boundary, four owner-gated
+The Stage 29 batch excluded the high-coordinate conflict triple, all
+Component21 and Component23 triples, every closure-crossing package, and
+every Component20, H22, H31, Branch B, weighted-`p+q`, internal-`E=0`,
+marked-basis, legacy, or withdrawn conflict surface.  Stage 32 subsequently
+moved the residual frontier documents and their directly owned carriers here,
+while H31 and selected boundary/coordinate evidence moved to their sibling
+owners.  This is filesystem ownership, not an assertion that the combined P5
+surface is an exhaustive case cover.  At the Stage 29 boundary, four owner-gated
 conflicts remained unadjudicated.  The marked-H31 component/record-count
 conflict was later resolved by its dedicated bounded characteristic-zero
 reconciliation; the P4 attribution, broader first/second-component

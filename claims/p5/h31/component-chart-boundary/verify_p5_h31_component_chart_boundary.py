@@ -23,7 +23,7 @@ CHART = (
     REPO_ROOT
     / "claims/p4/classifications/pair-geometry/pure-rank-two/P4_PURE_RANK_TWO_COMPONENT_CHART_CLOSURE.md"
 )
-ORBIT = REPO_ROOT / "P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md"
+ORBIT = REPO_ROOT / "claims/p5/h31/rank-two-component-orbit/P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md"
 BITS4 = tuple(itertools.product((0, 1), repeat=4))
 BITS3 = tuple(itertools.product((0, 1), repeat=3))
 PERMUTATIONS = tuple(itertools.permutations(range(4)))

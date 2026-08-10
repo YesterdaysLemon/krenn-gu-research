@@ -232,8 +232,8 @@ Boolean identities and their symbolic contractions.
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_primitive_zeon_harmonic_square_riccati.py
 python claims/p7/audit_p7_primitive_zeon_harmonic_square_riccati.py
-python -m py_compile verify_p7_primitive_zeon_harmonic_square_riccati.py audit_p7_primitive_zeon_harmonic_square_riccati.py
-uv run --with ruff ruff check verify_p7_primitive_zeon_harmonic_square_riccati.py audit_p7_primitive_zeon_harmonic_square_riccati.py
+python -m py_compile claims/p7/verify_p7_primitive_zeon_harmonic_square_riccati.py claims/p7/audit_p7_primitive_zeon_harmonic_square_riccati.py
+uv run --with ruff ruff check claims/p7/verify_p7_primitive_zeon_harmonic_square_riccati.py claims/p7/audit_p7_primitive_zeon_harmonic_square_riccati.py
 ```
 
 The primary verifier checks the fixed middle raising/lowering kernel, the

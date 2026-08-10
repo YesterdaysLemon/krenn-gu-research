@@ -217,8 +217,8 @@ full physical common core:          UNRESOLVED.         (14)
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_221_tricolour_incidence_quotient_projective_support.py
 python claims/p7/audit_p7_221_tricolour_incidence_quotient_projective_support.py
-python -m py_compile verify_p7_221_tricolour_incidence_quotient_projective_support.py audit_p7_221_tricolour_incidence_quotient_projective_support.py
-uv run --with ruff ruff check verify_p7_221_tricolour_incidence_quotient_projective_support.py audit_p7_221_tricolour_incidence_quotient_projective_support.py
+python -m py_compile claims/p7/verify_p7_221_tricolour_incidence_quotient_projective_support.py claims/p7/audit_p7_221_tricolour_incidence_quotient_projective_support.py
+uv run --with ruff ruff check claims/p7/verify_p7_221_tricolour_incidence_quotient_projective_support.py claims/p7/audit_p7_221_tricolour_incidence_quotient_projective_support.py
 ```
 
 The primary replay reconstructs (1) from the formal ledger and checks the

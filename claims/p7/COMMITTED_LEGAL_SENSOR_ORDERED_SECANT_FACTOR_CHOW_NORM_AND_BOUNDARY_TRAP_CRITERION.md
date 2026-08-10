@@ -605,8 +605,8 @@ global Krenn--Gu:                                             UNRESOLVED.
 ```powershell
 uv run --with sympy python claims/p7/verify_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py
 python claims/p7/audit_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py
-python -m py_compile verify_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py audit_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py
-uv run --with ruff ruff check verify_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py audit_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py
+python -m py_compile claims/p7/verify_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py claims/p7/audit_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py
+uv run --with ruff ruff check claims/p7/verify_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py claims/p7/audit_committed_legal_sensor_ordered_secant_factor_chow_norm_boundary.py
 ```
 
 The primary replay verifies the determinant-cleared membership lemma, the

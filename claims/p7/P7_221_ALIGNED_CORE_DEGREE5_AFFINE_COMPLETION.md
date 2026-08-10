@@ -240,8 +240,8 @@ scalar realizations of the pure ledger.
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_221_aligned_core_degree5_affine_completion.py
 python claims/p7/audit_p7_221_aligned_core_degree5_affine_completion.py
-python -m py_compile verify_p7_221_aligned_core_degree5_affine_completion.py audit_p7_221_aligned_core_degree5_affine_completion.py
-uv run --with ruff ruff check verify_p7_221_aligned_core_degree5_affine_completion.py audit_p7_221_aligned_core_degree5_affine_completion.py
+python -m py_compile claims/p7/verify_p7_221_aligned_core_degree5_affine_completion.py claims/p7/audit_p7_221_aligned_core_degree5_affine_completion.py
+uv run --with ruff ruff check claims/p7/verify_p7_221_aligned_core_degree5_affine_completion.py claims/p7/audit_p7_221_aligned_core_degree5_affine_completion.py
 ```
 
 The primary verifier reconstructs the fixed matrices (5)--(7), evaluates the

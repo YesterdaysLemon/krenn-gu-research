@@ -156,8 +156,8 @@ global Krenn-Gu conjecture:                       UNRESOLVED.
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py
 uv run --with sympy python claims/arbitrary-order/audit_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py
-uv run --with sympy --with ruff python -m ruff check verify_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py audit_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py
-python -m py_compile verify_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py audit_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py
+uv run --with sympy --with ruff python -m ruff check claims/arbitrary-order/verify_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py claims/arbitrary-order/audit_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py
+python -m py_compile claims/arbitrary-order/verify_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py claims/arbitrary-order/audit_root_m7_endpoint_legal_certificate_hitting_minimum_two_exclusion.py
 ```
 
 Both scripts independently enumerate all 104 singletons and 5,356 pairs with

@@ -27,6 +27,7 @@ REPO_ROOT, HERE = bootstrap(__file__, also=[".."])
 # claims/p5/h31/disjoint-mixed-star/; expose it through the shared
 # helper so the bare-name import below resolves.
 expose_claim_package(REPO_ROOT, "claims/p5/h31/disjoint-mixed-star")
+expose_claim_package(REPO_ROOT, "claims/p5/h31/marked-basis-open-branch")
 
 import audit_p5_h31_disjoint_mixed_star_component_generic_obstruction as A
 import explore_p5_h22_disjoint_mixed_star_modular as E

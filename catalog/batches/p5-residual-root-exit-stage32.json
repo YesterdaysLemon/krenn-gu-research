@@ -1,0 +1,1115 @@
+{
+  "batch_schema_version": 2,
+  "batch_id": "p5-residual-root-exit-stage32",
+  "approved_by": "Codex (exact mapping reviewer under repository-owner standing delegation dated 2026-08-08; fresh semantic and mechanical referees accepted c41769b)",
+  "approved_at": "2026-08-10",
+  "base_sha": "614d41e57382ad2b3372278e80d38b6bab15d5ca",
+  "manifest_sha256": "d78c409ff59e317ca9811240b43d75d4b008ee067ecf4943020c2cc318412a48",
+  "mapping_sha256": "be94dcaadb97d29eb6e6b5efe712485ac55aa3286e802dfa457746cd8dd4cf56",
+  "source_identity_sha256": "b8ea3715e534a1a4bbfdac0f362c019f4f9f09ff8633a9ae9261d5a6119dd045",
+  "member_count": 220,
+  "moves": [
+    {
+      "old_path": "P5_ALTERNATIVE_STRATEGY_MAP.md",
+      "new_path": "claims/p5/frontier/P5_ALTERNATIVE_STRATEGY_MAP.md",
+      "source_blob": "c05333a6e85b9976f36ddbf7d2e090ce3f091771"
+    },
+    {
+      "old_path": "P5_C10_TEN_EQUATION_AFFINE_CORE.md",
+      "new_path": "claims/p5/frontier/P5_C10_TEN_EQUATION_AFFINE_CORE.md",
+      "source_blob": "8763941e743cff2b3d912f0f6b1314bacc7dae6a"
+    },
+    {
+      "old_path": "P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md",
+      "new_path": "claims/p5/boundaries/P5_COMPONENT21_DIVISOR_GENERIC_FIBRE_OBSTRUCTIONS.md",
+      "source_blob": "3ae91145618d158c2352f17bc8d6bf6dcbd4360d"
+    },
+    {
+      "old_path": "P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT21_ELL_INFINITY_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md",
+      "source_blob": "104e782165f3a3182a3010a0e06448a888ec7f6a"
+    },
+    {
+      "old_path": "P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT21_EXTENSION_KERNEL_MARKED_H31_LEADING_OBSTRUCTION.md",
+      "source_blob": "4531873dc0edc6f3ce32fab9d7e585fce4f9bfd2"
+    },
+    {
+      "old_path": "P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT21_FINITE_BASE_EXTENSION_INFINITY_PARTIAL_CLOSURE.md",
+      "source_blob": "ad1edeaac0f3f3ac1c33bfed6014da762cc2aa4b"
+    },
+    {
+      "old_path": "P5_COMPONENT21_FINITE_H22_EXTENSION_ELL_ZERO_UNIT_ENDPOINT_NORMAL_CLOSURE.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT21_FINITE_H22_EXTENSION_ELL_ZERO_UNIT_ENDPOINT_NORMAL_CLOSURE.md",
+      "source_blob": "4904a04a52b3047a3fa8c04c02946c996c2526ff"
+    },
+    {
+      "old_path": "P5_COMPONENT21_FINITE_H22_EXTENSION_P_ZERO_NONZERO_Q_NORMAL_CLOSURE.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT21_FINITE_H22_EXTENSION_P_ZERO_NONZERO_Q_NORMAL_CLOSURE.md",
+      "source_blob": "0c9f8ab9477145eb28a35d7375a77071d4a27cd8"
+    },
+    {
+      "old_path": "P5_COMPONENT21_FINITE_H22_EXTENSION_RANK_DROP_GENERIC_NORMAL_CLOSURE.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT21_FINITE_H22_EXTENSION_RANK_DROP_GENERIC_NORMAL_CLOSURE.md",
+      "source_blob": "797ed00f1609fcd39f9c9b7c8a68ed62ee750a6c"
+    },
+    {
+      "old_path": "P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_LAMBDA_MINUS_ONE_SECOND_NORMAL_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_LAMBDA_MINUS_ONE_SECOND_NORMAL_OBSTRUCTION.md",
+      "source_blob": "f8bfdb7744a2bb620b993b9cef04f42df1b72d19"
+    },
+    {
+      "old_path": "P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_ORDINARY_WEIGHT_SECOND_NORMAL_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_ORDINARY_WEIGHT_SECOND_NORMAL_OBSTRUCTION.md",
+      "source_blob": "a86b42711631a57f2713af480cdd6f22b3c268dc"
+    },
+    {
+      "old_path": "P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_RAW_KERNEL_NORMAL_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT21_FINITE_H22_EXTENSION_ZERO_BASE_RAW_KERNEL_NORMAL_OBSTRUCTION.md",
+      "source_blob": "5d91292d4b617ac2864b87efd134496dbaf95986"
+    },
+    {
+      "old_path": "P5_COMPONENT21_FINITE_WEIGHT_EXTENSION_KERNEL_RATIONAL_NORMAL_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT21_FINITE_WEIGHT_EXTENSION_KERNEL_RATIONAL_NORMAL_OBSTRUCTION.md",
+      "source_blob": "6683618fc02ad1aa70d059327d2355d11bbcec9b"
+    },
+    {
+      "old_path": "P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT21_KAPPA_INFINITY_FIRST_NORMAL_COMPLETE_OBSTRUCTION.md",
+      "source_blob": "d49de3c25dc42ba347e54a2ce92c52cb54802d72"
+    },
+    {
+      "old_path": "P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT21_KAPPA_INFINITY_U0_PROJECTIVE_BLOWUP_COMPLETE_OBSTRUCTION.md",
+      "source_blob": "bee331d3027e8b22f3200ed01b7d4e537260b23f"
+    },
+    {
+      "old_path": "P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT21_NORMALIZED_PARAMETER_COMPACTIFICATION_COMPLETE_OBSTRUCTION.md",
+      "source_blob": "9835880bb9b79f49e3595d5f9041478c8f1124be"
+    },
+    {
+      "old_path": "P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT21_OTHER_SINGLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md",
+      "source_blob": "90635f1efd61ba34cb34096778bd56b2bee7dbdd"
+    },
+    {
+      "old_path": "P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT21_PAIRWISE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md",
+      "source_blob": "f3eed8f345ca40aaf9b56c696c33ff409decf33d"
+    },
+    {
+      "old_path": "P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT21_PQ_ZERO_NORMAL_BLOWUP_TRANSFER_OBSTRUCTION.md",
+      "source_blob": "a8aa7ccc64a6217640605ac75394eb27ddbd2513"
+    },
+    {
+      "old_path": "P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT21_Q_PLUS_MINUS_P_ELL_ENDPOINT_COMPLETE_OBSTRUCTION.md",
+      "source_blob": "d3964a1d4bbdcb16839bf6d621d9d7d516032f34"
+    },
+    {
+      "old_path": "P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT21_Q_PLUS_MINUS_P_SHARED_BRANCH_TERNARY_OBSTRUCTION.md",
+      "source_blob": "bf37acbbf463de0601894397c9d381291ed7912c"
+    },
+    {
+      "old_path": "P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT21_SINGLE_MARKING_INFINITY_FIRST_NORMAL_OBSTRUCTION.md",
+      "source_blob": "33095172adfdee56763df926bb8ab4c16cdb9dd6"
+    },
+    {
+      "old_path": "P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT21_TRIPLE_QUADRUPLE_MARKING_INFINITY_WEIGHTED_NORMAL_OBSTRUCTION.md",
+      "source_blob": "5e57de351d5f2a3332449fcc5a537c45d9c5b203"
+    },
+    {
+      "old_path": "P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md",
+      "new_path": "claims/p5/boundaries/P5_COMPONENT21_VERTICAL_U0_PROJECTIVE_BOUNDARY_COMPLETE_OBSTRUCTION.md",
+      "source_blob": "8437fd588f2acf8aeed7db2f38ac8e36c5817dd7"
+    },
+    {
+      "old_path": "P5_COMPONENT23_K_INFINITY_LOWER_PAIR_ENDPOINTS_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT23_K_INFINITY_LOWER_PAIR_ENDPOINTS_OBSTRUCTION.md",
+      "source_blob": "055ae929b55be9aa449e210bb37c23115c5a4201"
+    },
+    {
+      "old_path": "P5_COMPONENT23_S_ONE_PARAMETER_INFINITY_CURVES_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT23_S_ONE_PARAMETER_INFINITY_CURVES_OBSTRUCTION.md",
+      "source_blob": "65b436fda6d6f3aebe130b9846199232219317a9"
+    },
+    {
+      "old_path": "P5_COMPONENT23_S_ONE_TRIPLE_PARAMETER_INFINITY_CORNER_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT23_S_ONE_TRIPLE_PARAMETER_INFINITY_CORNER_OBSTRUCTION.md",
+      "source_blob": "b5a195ee953309930215a07d4e4ebed2bb528d84"
+    },
+    {
+      "old_path": "P5_COMPONENT23_S_ZERO_K_INFINITY_PROJECTIVE_R_T_BOUNDARY_OBSTRUCTION.md",
+      "new_path": "claims/p5/boundaries/P5_COMPONENT23_S_ZERO_K_INFINITY_PROJECTIVE_R_T_BOUNDARY_OBSTRUCTION.md",
+      "source_blob": "4a0ee55baf1bdaa4ae6187a049e7784bdd8ba09b"
+    },
+    {
+      "old_path": "P5_COMPONENT23_S_ZERO_RT_ONE_LOWER_PAIR_ENDPOINT_LINES_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT23_S_ZERO_RT_ONE_LOWER_PAIR_ENDPOINT_LINES_OBSTRUCTION.md",
+      "source_blob": "a31b615bed98624a3c0abaad0268d19a9e7163bd"
+    },
+    {
+      "old_path": "P5_COMPONENT23_S_ZERO_RT_ONE_PROJECTIVE_PARAMETER_ENDPOINTS_OBSTRUCTION.md",
+      "new_path": "claims/p5/frontier/P5_COMPONENT23_S_ZERO_RT_ONE_PROJECTIVE_PARAMETER_ENDPOINTS_OBSTRUCTION.md",
+      "source_blob": "c39880ffa2dba1141501832069e593440734cfd0"
+    },
+    {
+      "old_path": "P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md",
+      "new_path": "claims/p5/boundaries/P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md",
+      "source_blob": "99c8c80db500f63c9086f55ad888e49e2a19d8c8"
+    },
+    {
+      "old_path": "P5_DEGREE_SIX_INVARIANT_PULLBACK.md",
+      "new_path": "claims/p5/frontier/P5_DEGREE_SIX_INVARIANT_PULLBACK.md",
+      "source_blob": "15bcc4b7210e6d7cb73ff35b39d6c8a61cdb0661"
+    },
+    {
+      "old_path": "P5_DELTA3_OBLIGATION_LEDGER.md",
+      "new_path": "claims/p5/frontier/P5_DELTA3_OBLIGATION_LEDGER.md",
+      "source_blob": "c36af759befcdffd779bcbb7e9b37b2c417b9f95"
+    },
+    {
+      "old_path": "P5_EXACT_THREE_MOTIF_QUOTIENT.md",
+      "new_path": "claims/p5/coordinate-cegar/P5_EXACT_THREE_MOTIF_QUOTIENT.md",
+      "source_blob": "5c1345ac042476a452ff48960ba89c0373dbb5d9"
+    },
+    {
+      "old_path": "P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md",
+      "new_path": "claims/p5/boundaries/P5_EXACT_TWO_PARTIAL_BOUNDARY_OBSTRUCTION.md",
+      "source_blob": "5e196a7fcdd9e329ea8a4c1a1605e349a114bf7e"
+    },
+    {
+      "old_path": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md",
+      "source_blob": "48b4b2cce296364a331c0d535535c0edd11f09c4"
+    },
+    {
+      "old_path": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_SPECIAL_DIVISOR_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT_SPECIAL_DIVISOR_OBSTRUCTION.md",
+      "source_blob": "b304ab352a5895320acfa3e79767aad4ada94d93"
+    },
+    {
+      "old_path": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md",
+      "source_blob": "6d35a399aeab2199cce975a52651278667d1b8cc"
+    },
+    {
+      "old_path": "P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_NORMALIZED_AFFINE_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_NORMALIZED_AFFINE_OBSTRUCTION.md",
+      "source_blob": "ed8a2853d8029fd892a6a4ffb522fbd98fef1a4b"
+    },
+    {
+      "old_path": "P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/common-center-kernel-star/P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_K_INFINITY_ALL_PAIR_BOUNDARY_OBSTRUCTION.md",
+      "source_blob": "603b94cd2a5be0990cc53243e7b82be262c3be81"
+    },
+    {
+      "old_path": "P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_FINITE_CORNER_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/common-center-kernel-star/P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_K_INFINITY_FINITE_CORNER_OBSTRUCTION.md",
+      "source_blob": "6a4dc857c871ac6440203d7b0d651259970ffb06"
+    },
+    {
+      "old_path": "P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/common-center-kernel-star/P5_H31_COMMON_CENTER_KERNEL_STAR_COMPONENT_S_ZERO_RT_ONE_ALL_PAIR_OBSTRUCTION.md",
+      "source_blob": "55077f7dd114b739eda78c444686b60ef7b8d968"
+    },
+    {
+      "old_path": "P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/diagonal-quadric-component-point/P5_H31_DIAGONAL_QUADRIC_COMPONENT_POINT_OBSTRUCTION.md",
+      "source_blob": "58ee75a986db34b16a23bc52eb72b10bd7050672"
+    },
+    {
+      "old_path": "P5_H31_DIAGONAL_QUADRIC_CURVE_MARKED_FIBRE_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/diagonal-quadric-curve-marked-fibre/P5_H31_DIAGONAL_QUADRIC_CURVE_MARKED_FIBRE_OBSTRUCTION.md",
+      "source_blob": "606accb86d2906f21bfad510f372ad19ef360582"
+    },
+    {
+      "old_path": "P5_H31_DIAGONAL_QUADRIC_ELLIPTIC_GENERIC_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/diagonal-quadric-elliptic/P5_H31_DIAGONAL_QUADRIC_ELLIPTIC_GENERIC_OBSTRUCTION.md",
+      "source_blob": "b8813176772975acd186098aaed51c8fb365af3d"
+    },
+    {
+      "old_path": "P5_H31_DIAGONAL_QUADRIC_E_CURVE_MARKED_FIBRE_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/diagonal-quadric-e-curve-marked-fibre/P5_H31_DIAGONAL_QUADRIC_E_CURVE_MARKED_FIBRE_OBSTRUCTION.md",
+      "source_blob": "706fe172880bb87bdeddec30bd4b30887a2c8280"
+    },
+    {
+      "old_path": "P5_H31_DIAGONAL_QUADRIC_H0_RULING_MARKED_FIBRE_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/diagonal-quadric-h0-ruling-marked-fibre/P5_H31_DIAGONAL_QUADRIC_H0_RULING_MARKED_FIBRE_OBSTRUCTION.md",
+      "source_blob": "6a6dfef80737c7eef3c39f87d0527eac178eb0aa"
+    },
+    {
+      "old_path": "P5_H31_DIAGONAL_QUADRIC_NORMALIZATION_BOUNDARY_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/diagonal-quadric-normalization-boundary/P5_H31_DIAGONAL_QUADRIC_NORMALIZATION_BOUNDARY_OBSTRUCTION.md",
+      "source_blob": "36526d00498550d263cde33b4c98a8af3b0efc71"
+    },
+    {
+      "old_path": "P5_H31_DIAGONAL_QUADRIC_OUTER_BOUNDARY_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/disputed-ownership/first-second-component-provenance/diagonal-quadric-outer-boundary/P5_H31_DIAGONAL_QUADRIC_OUTER_BOUNDARY_OBSTRUCTION.md",
+      "source_blob": "45633c2b5f48ec69b23a2326735cd20623ce86ff"
+    },
+    {
+      "old_path": "P5_H31_DIAGONAL_QUADRIC_PURE_DIRECTION_CURVE_MARKED_FIBRE_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/diagonal-quadric-pure-direction-curve-marked-fibre/P5_H31_DIAGONAL_QUADRIC_PURE_DIRECTION_CURVE_MARKED_FIBRE_OBSTRUCTION.md",
+      "source_blob": "67e04f11d991b003e19db674c244e806ecb6d5d1"
+    },
+    {
+      "old_path": "P5_H31_ELLIPTIC_END_COORDINATE_FULL_RANK_CHART.md",
+      "new_path": "claims/p5/h31/elliptic-end-coordinate-full-rank-chart/P5_H31_ELLIPTIC_END_COORDINATE_FULL_RANK_CHART.md",
+      "source_blob": "56555c8461cf1e142a29453218c6c5faa744fbbd"
+    },
+    {
+      "old_path": "P5_H31_ELLIPTIC_END_GENUS_TWO_EXCEPTION_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/elliptic-end-genus-two-exception/P5_H31_ELLIPTIC_END_GENUS_TWO_EXCEPTION_OBSTRUCTION.md",
+      "source_blob": "9d67dbfa02bdf60d2ee39d1d4933220d185dd9a7"
+    },
+    {
+      "old_path": "P5_H31_ELLIPTIC_END_T2_DIVISOR_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/elliptic-end-t2-divisor/P5_H31_ELLIPTIC_END_T2_DIVISOR_OBSTRUCTION.md",
+      "source_blob": "0bd6f95690dc52d3e6477ba28151d513062e6ffe"
+    },
+    {
+      "old_path": "P5_H31_ELLIPTIC_END_T3_DIVISOR_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/elliptic-end-t3-divisor/P5_H31_ELLIPTIC_END_T3_DIVISOR_OBSTRUCTION.md",
+      "source_blob": "a1f8d92a592d01d3ce345d3e9e7ad82a1ae922fd"
+    },
+    {
+      "old_path": "P5_H31_ELLIPTIC_MIDDLE_COORDINATE_PIVOT_COMPLEMENT.md",
+      "new_path": "claims/p5/h31/elliptic-middle-coordinate-pivot-complement/P5_H31_ELLIPTIC_MIDDLE_COORDINATE_PIVOT_COMPLEMENT.md",
+      "source_blob": "b73b047534e42f9b023530460e71c925f7ef3cd2"
+    },
+    {
+      "old_path": "P5_H31_ELLIPTIC_MIDDLE_COORDINATE_RANK_DROP.md",
+      "new_path": "claims/p5/h31/elliptic-middle-coordinate-rank-drop/P5_H31_ELLIPTIC_MIDDLE_COORDINATE_RANK_DROP.md",
+      "source_blob": "d876ea02de27864f97270299f8167c55299221a0"
+    },
+    {
+      "old_path": "P5_H31_KNOWN_RANK_TWO_FAMILY_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/known-rank-two-family/P5_H31_KNOWN_RANK_TWO_FAMILY_OBSTRUCTION.md",
+      "source_blob": "6419d5ee61d2040b2ad92f517bf7de502e6d5152"
+    },
+    {
+      "old_path": "P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md",
+      "new_path": "claims/p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification/P5_H31_MARKED_BASIS_FIBRE_CLASSIFICATION.md",
+      "source_blob": "685708a21d36e5b1ee58038bacce6010ef934d1d"
+    },
+    {
+      "old_path": "P5_H31_MARKED_BASIS_OPEN_BRANCH.md",
+      "new_path": "claims/p5/h31/marked-basis-open-branch/P5_H31_MARKED_BASIS_OPEN_BRANCH.md",
+      "source_blob": "22d84b1ddf428726af16f03b6a915077995e6be3"
+    },
+    {
+      "old_path": "P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/rank-two-component-orbit/P5_H31_RANK_TWO_COMPONENT_ORBIT_OBSTRUCTION.md",
+      "source_blob": "7f5cb1f9b57ec47425d1108265877d6d316a72fa"
+    },
+    {
+      "old_path": "P5_HIGH_COORDINATE_CHART_ORBIT_CEGAR.md",
+      "new_path": "claims/p5/coordinate-cegar/P5_HIGH_COORDINATE_CHART_ORBIT_CEGAR.md",
+      "source_blob": "00517db087a6207ce28f4be2cb0be46a9c51a709"
+    },
+    {
+      "old_path": "P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md",
+      "new_path": "claims/p5/coordinate-cegar/P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md",
+      "source_blob": "4717ac77c3209ad9adab5a2288a82f59e1c0390d"
+    },
+    {
+      "old_path": "P5_POINTWISE_SPECIALIZATION_META_THEOREM.md",
+      "new_path": "claims/p5/frontier/P5_POINTWISE_SPECIALIZATION_META_THEOREM.md",
+      "source_blob": "18f642323e192d965436a43c794b57929281e30f"
+    },
+    {
+      "old_path": "P5_Q5_311_RARE_SLICE_REDUCTION.md",
+      "new_path": "claims/p5/frontier/P5_Q5_311_RARE_SLICE_REDUCTION.md",
+      "source_blob": "c2e0ac3a620d93e6cbf37de2dc6d882c6f6dafb0"
+    },
+    {
+      "old_path": "analyze_p5_degree_six_invariant_space.py",
+      "new_path": "claims/p5/frontier/analyze_p5_degree_six_invariant_space.py",
+      "source_blob": "1f40cd58681fa4ea089eef01d31e42cce24cbb97"
+    },
+    {
+      "old_path": "analyze_p5_exact_three_motifs.py",
+      "new_path": "tools/explore/analyze_p5_exact_three_motifs.py",
+      "source_blob": "fd6f58551354086b60869f61e96db17f025d80f6"
+    },
+    {
+      "old_path": "analyze_p5_five_equation_template_classes.py",
+      "new_path": "tools/explore/analyze_p5_five_equation_template_classes.py",
+      "source_blob": "232e8e92efa44e162382b5002f31a62d6da02457"
+    },
+    {
+      "old_path": "audit_p5_component21_divisor_generic_fibre_obstructions.py",
+      "new_path": "claims/p5/boundaries/audit_p5_component21_divisor_generic_fibre_obstructions.py",
+      "source_blob": "319952df7c8b5baac0e348ee9498b12fabada824"
+    },
+    {
+      "old_path": "audit_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py",
+      "source_blob": "8633361eab310e17592773518e7d86ef79ac8b5e"
+    },
+    {
+      "old_path": "audit_p5_component21_extension_kernel_marked_h31_leading_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_component21_extension_kernel_marked_h31_leading_obstruction.py",
+      "source_blob": "85034923449b1468e4f5c3a3843c4ff22e69f4be"
+    },
+    {
+      "old_path": "audit_p5_component21_finite_base_extension_infinity_partial_closure.py",
+      "new_path": "claims/p5/frontier/audit_p5_component21_finite_base_extension_infinity_partial_closure.py",
+      "source_blob": "ff01dbc804966db2dd6349e0e615c80d0b518348"
+    },
+    {
+      "old_path": "audit_p5_component21_finite_h22_extension_ell_zero_unit_endpoint_normal_closure.py",
+      "new_path": "claims/p5/frontier/audit_p5_component21_finite_h22_extension_ell_zero_unit_endpoint_normal_closure.py",
+      "source_blob": "4458e92abb581d90857b8f982732b2b65dc7f203"
+    },
+    {
+      "old_path": "audit_p5_component21_finite_h22_extension_p_zero_nonzero_q_normal_closure.py",
+      "new_path": "claims/p5/frontier/audit_p5_component21_finite_h22_extension_p_zero_nonzero_q_normal_closure.py",
+      "source_blob": "310cb066bbe8390755c00837ad1eaf474b975cda"
+    },
+    {
+      "old_path": "audit_p5_component21_finite_h22_extension_rank_drop_generic_normal_closure.py",
+      "new_path": "claims/p5/frontier/audit_p5_component21_finite_h22_extension_rank_drop_generic_normal_closure.py",
+      "source_blob": "5d54fc93e8d78409254a25a2822bc8985c2da256"
+    },
+    {
+      "old_path": "audit_p5_component21_finite_h22_extension_zero_base_lambda_minus_one_second_normal_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_component21_finite_h22_extension_zero_base_lambda_minus_one_second_normal_obstruction.py",
+      "source_blob": "5e525e687e4197ada7f18cd75f2f7a05acc0ed91"
+    },
+    {
+      "old_path": "audit_p5_component21_finite_h22_extension_zero_base_ordinary_weight_second_normal_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_component21_finite_h22_extension_zero_base_ordinary_weight_second_normal_obstruction.py",
+      "source_blob": "bd63ef7e6c175dec81d9aa55002bb03b9b94c526"
+    },
+    {
+      "old_path": "audit_p5_component21_finite_h22_extension_zero_base_raw_kernel_normal_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_component21_finite_h22_extension_zero_base_raw_kernel_normal_obstruction.py",
+      "source_blob": "bfe276eb2c68c95249dc66a20468f2ba8c921f5b"
+    },
+    {
+      "old_path": "audit_p5_component21_finite_weight_extension_kernel_rational_normal_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_component21_finite_weight_extension_kernel_rational_normal_obstruction.py",
+      "source_blob": "13d17c8b42f324c7d16aade284e693591d6ed273"
+    },
+    {
+      "old_path": "audit_p5_component21_kappa_infinity_first_normal_complete_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_component21_kappa_infinity_first_normal_complete_obstruction.py",
+      "source_blob": "8b4330ca3860c8ad7ac587b73dfdc322cf91ea99"
+    },
+    {
+      "old_path": "audit_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py",
+      "source_blob": "04a092ac666580184ec651fa0dc37ac9d8321ba1"
+    },
+    {
+      "old_path": "audit_p5_component21_normalized_parameter_compactification_complete_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_component21_normalized_parameter_compactification_complete_obstruction.py",
+      "source_blob": "968f31ffea22efebca50dea21d542d8902347afd"
+    },
+    {
+      "old_path": "audit_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py",
+      "source_blob": "5b93afb8464e4220099df4fa956af927a85b6207"
+    },
+    {
+      "old_path": "audit_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction.py",
+      "source_blob": "9029756b518cee05c207b65d034db563367a5e11"
+    },
+    {
+      "old_path": "audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py",
+      "source_blob": "34742c1fb0e7f207398b7dfd928be6ada51e8013"
+    },
+    {
+      "old_path": "audit_p5_component21_q_plus_minus_p_ell_endpoint_complete_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_component21_q_plus_minus_p_ell_endpoint_complete_obstruction.py",
+      "source_blob": "a6cdc6a2718ae80560b9d6c7658c7edd5152fa17"
+    },
+    {
+      "old_path": "audit_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py",
+      "source_blob": "2553378ce2ee772b8cb3c16bcb411ccc3186c6e0"
+    },
+    {
+      "old_path": "audit_p5_component21_single_marking_infinity_first_normal_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_component21_single_marking_infinity_first_normal_obstruction.py",
+      "source_blob": "72ced29f7f45e7cc857a835f306e3804867aca9f"
+    },
+    {
+      "old_path": "audit_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py",
+      "source_blob": "0bf07ee03b2e14b81f49e675601ce6851b8a4159"
+    },
+    {
+      "old_path": "audit_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py",
+      "new_path": "claims/p5/boundaries/audit_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py",
+      "source_blob": "ce22d42d15c2c4468c70da3f80ef7e6b2646d016"
+    },
+    {
+      "old_path": "audit_p5_component23_k_infinity_lower_pair_endpoints_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_component23_k_infinity_lower_pair_endpoints_obstruction.py",
+      "source_blob": "34dacd69176642b0206ba99d8c3c3779b8bbc44a"
+    },
+    {
+      "old_path": "audit_p5_component23_s_one_parameter_infinity_curves_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_component23_s_one_parameter_infinity_curves_obstruction.py",
+      "source_blob": "6268b58994b5b17793307ed6e9f439708b06122a"
+    },
+    {
+      "old_path": "audit_p5_component23_s_one_triple_parameter_infinity_corner_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_component23_s_one_triple_parameter_infinity_corner_obstruction.py",
+      "source_blob": "af8e21781b2d3eb3759c7ff08799dee23de2ce71"
+    },
+    {
+      "old_path": "audit_p5_component23_s_zero_k_infinity_projective_r_t_boundary_obstruction.py",
+      "new_path": "claims/p5/boundaries/audit_p5_component23_s_zero_k_infinity_projective_r_t_boundary_obstruction.py",
+      "source_blob": "a5dc63a8e50814bdfb544489c4060a0530432f26"
+    },
+    {
+      "old_path": "audit_p5_component23_s_zero_rt_one_lower_pair_endpoint_lines_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_component23_s_zero_rt_one_lower_pair_endpoint_lines_obstruction.py",
+      "source_blob": "67f15d2803c134cb0eb483e67e245474b29d2449"
+    },
+    {
+      "old_path": "audit_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py",
+      "new_path": "claims/p5/frontier/audit_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py",
+      "source_blob": "cf8285178af397a298fa1398b9a9b81dfe976ec5"
+    },
+    {
+      "old_path": "audit_p5_exact_two_partial_boundary.py",
+      "new_path": "claims/p5/boundaries/audit_p5_exact_two_partial_boundary.py",
+      "source_blob": "8c823930f9c0bee8a7620a69bdcdd434d03ace71"
+    },
+    {
+      "old_path": "audit_p5_h31_common_active_binary_triangle_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_component_generic_obstruction.py",
+      "source_blob": "e7b994c135f8e33de73b3b68e175db961f1d5405"
+    },
+    {
+      "old_path": "audit_p5_h31_common_active_binary_triangle_component_special_divisor_obstruction.py",
+      "new_path": "claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_component_special_divisor_obstruction.py",
+      "source_blob": "fcca2d07f9ffc9d42a914f8d66e33c3828fad183"
+    },
+    {
+      "old_path": "audit_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py",
+      "new_path": "claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py",
+      "source_blob": "053e851c4f9af684208bd9ffe8a3e27446f264b2"
+    },
+    {
+      "old_path": "audit_p5_h31_common_active_binary_triangle_normalized_affine_obstruction.py",
+      "new_path": "claims/p5/h31/common-active-binary-triangle/audit_p5_h31_common_active_binary_triangle_normalized_affine_obstruction.py",
+      "source_blob": "f375da39e6f0b0ce5f68d9ddc5c9b86bd87661a2"
+    },
+    {
+      "old_path": "audit_p5_h31_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py",
+      "new_path": "claims/p5/h31/common-center-kernel-star/audit_p5_h31_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py",
+      "source_blob": "b5750e6c6341b445e3d50c18359ceb5163dea8e4"
+    },
+    {
+      "old_path": "audit_p5_h31_common_center_kernel_star_component_s_zero_k_infinity_finite_corner_obstruction.py",
+      "new_path": "claims/p5/h31/common-center-kernel-star/audit_p5_h31_common_center_kernel_star_component_s_zero_k_infinity_finite_corner_obstruction.py",
+      "source_blob": "bbdce628d04e101aaa5ac8dd8117b6359eea87d1"
+    },
+    {
+      "old_path": "audit_p5_h31_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py",
+      "new_path": "claims/p5/h31/common-center-kernel-star/audit_p5_h31_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py",
+      "source_blob": "ba2eb91f6853bc834bcab9efc042af72081a5ec7"
+    },
+    {
+      "old_path": "audit_p5_h31_diagonal_quadric_component_point.py",
+      "new_path": "claims/p5/h31/diagonal-quadric-component-point/audit_p5_h31_diagonal_quadric_component_point.py",
+      "source_blob": "61ea260053935b055e7fbbef4d57764deae72a33"
+    },
+    {
+      "old_path": "audit_p5_h31_diagonal_quadric_curve_marked_fibre.py",
+      "new_path": "claims/p5/h31/diagonal-quadric-curve-marked-fibre/audit_p5_h31_diagonal_quadric_curve_marked_fibre.py",
+      "source_blob": "09ffc1c0b4c105549298686ed5466c19a163740f"
+    },
+    {
+      "old_path": "audit_p5_h31_diagonal_quadric_e_curve_marked_fibre.py",
+      "new_path": "claims/p5/h31/diagonal-quadric-e-curve-marked-fibre/audit_p5_h31_diagonal_quadric_e_curve_marked_fibre.py",
+      "source_blob": "40c2d9506227b5b06f151311ebef28c4d1104f5d"
+    },
+    {
+      "old_path": "audit_p5_h31_diagonal_quadric_elliptic_generic.py",
+      "new_path": "claims/p5/h31/diagonal-quadric-elliptic/audit_p5_h31_diagonal_quadric_elliptic_generic.py",
+      "source_blob": "af0568cc5e11f77f992f829224d3d70fef60744e"
+    },
+    {
+      "old_path": "audit_p5_h31_diagonal_quadric_h0_ruling.py",
+      "new_path": "claims/p5/h31/diagonal-quadric-h0-ruling-marked-fibre/audit_p5_h31_diagonal_quadric_h0_ruling.py",
+      "source_blob": "560d152527d43a9db8321f6e49eaac093873ef24"
+    },
+    {
+      "old_path": "audit_p5_h31_diagonal_quadric_normalization_boundary.py",
+      "new_path": "claims/p5/h31/diagonal-quadric-normalization-boundary/audit_p5_h31_diagonal_quadric_normalization_boundary.py",
+      "source_blob": "be75a22d45c5963b33e51c5874cce7f697f1206b"
+    },
+    {
+      "old_path": "audit_p5_h31_diagonal_quadric_outer_boundary.py",
+      "new_path": "claims/p5/h31/disputed-ownership/first-second-component-provenance/diagonal-quadric-outer-boundary/audit_p5_h31_diagonal_quadric_outer_boundary.py",
+      "source_blob": "078a4f6c0deed1fc99bd6779040947a29f7275a5"
+    },
+    {
+      "old_path": "audit_p5_h31_diagonal_quadric_pure_direction_curve.py",
+      "new_path": "claims/p5/h31/diagonal-quadric-pure-direction-curve-marked-fibre/audit_p5_h31_diagonal_quadric_pure_direction_curve.py",
+      "source_blob": "c175e916265970940d7014b2fd8d47a8d8660d4f"
+    },
+    {
+      "old_path": "audit_p5_h31_elliptic_end_coordinate_full_rank_chart.py",
+      "new_path": "claims/p5/h31/elliptic-end-coordinate-full-rank-chart/audit_p5_h31_elliptic_end_coordinate_full_rank_chart.py",
+      "source_blob": "8f4db751cb112a12df1e756375b25a5a45042bbb"
+    },
+    {
+      "old_path": "audit_p5_h31_elliptic_end_genus_two_exception.py",
+      "new_path": "claims/p5/h31/elliptic-end-genus-two-exception/audit_p5_h31_elliptic_end_genus_two_exception.py",
+      "source_blob": "f52df81f056b319ff0befca15128fd5e3ae5de37"
+    },
+    {
+      "old_path": "audit_p5_h31_elliptic_end_genus_two_q3.py",
+      "new_path": "claims/p5/h31/elliptic-end-genus-two-q3/audit_p5_h31_elliptic_end_genus_two_q3.py",
+      "source_blob": "2a4f13f82f0ccdfc503c8aa4c5037ce6f2955ffc"
+    },
+    {
+      "old_path": "audit_p5_h31_elliptic_end_t2_divisor.py",
+      "new_path": "claims/p5/h31/elliptic-end-t2-divisor/audit_p5_h31_elliptic_end_t2_divisor.py",
+      "source_blob": "fddd8e6ec37ca98d2828f8b7205332a82f9f5c2a"
+    },
+    {
+      "old_path": "audit_p5_h31_elliptic_end_t2_divisor_q3.py",
+      "new_path": "claims/p5/h31/elliptic-end-t2-divisor-q3/audit_p5_h31_elliptic_end_t2_divisor_q3.py",
+      "source_blob": "c3fe5af1c9bb11c024e17b559e4086d97f5f9361"
+    },
+    {
+      "old_path": "audit_p5_h31_elliptic_end_t3_divisor.py",
+      "new_path": "claims/p5/h31/elliptic-end-t3-divisor/audit_p5_h31_elliptic_end_t3_divisor.py",
+      "source_blob": "f47224582c15c737c5164110cdb015c63834957d"
+    },
+    {
+      "old_path": "audit_p5_h31_elliptic_end_t3_divisor_q3.py",
+      "new_path": "claims/p5/h31/elliptic-end-t3-divisor-q3/audit_p5_h31_elliptic_end_t3_divisor_q3.py",
+      "source_blob": "f40eaaeb49c4e7c99793a86182259511f6c5db14"
+    },
+    {
+      "old_path": "audit_p5_h31_elliptic_middle_coordinate_pivot_complement.py",
+      "new_path": "claims/p5/h31/elliptic-middle-coordinate-pivot-complement/audit_p5_h31_elliptic_middle_coordinate_pivot_complement.py",
+      "source_blob": "1beec93ae458c778acf7f7801e49564f32084b96"
+    },
+    {
+      "old_path": "audit_p5_h31_elliptic_middle_coordinate_rank_drop.py",
+      "new_path": "claims/p5/h31/elliptic-middle-coordinate-rank-drop/audit_p5_h31_elliptic_middle_coordinate_rank_drop.py",
+      "source_blob": "89eceac76d774a78cbd517a9b3084b4f18693208"
+    },
+    {
+      "old_path": "audit_p5_h31_known_rank_two_family_obstruction.py",
+      "new_path": "claims/p5/h31/known-rank-two-family/audit_p5_h31_known_rank_two_family_obstruction.py",
+      "source_blob": "0699644dbc3d2b90ba8bfb47b2c05999b28ec9ce"
+    },
+    {
+      "old_path": "audit_p5_h31_marked_basis_fibre_classification.py",
+      "new_path": "claims/p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification/audit_p5_h31_marked_basis_fibre_classification.py",
+      "source_blob": "e2db056d739b2bc4e15c37a1ecbf7b0827a27ae8"
+    },
+    {
+      "old_path": "audit_p5_h31_marked_basis_open_branch.py",
+      "new_path": "claims/p5/h31/marked-basis-open-branch/audit_p5_h31_marked_basis_open_branch.py",
+      "source_blob": "e537f06facb9becf0ab7d89280a56f82e69141af"
+    },
+    {
+      "old_path": "audit_p5_h31_rank_two_component_orbit.py",
+      "new_path": "claims/p5/h31/rank-two-component-orbit/audit_p5_h31_rank_two_component_orbit.py",
+      "source_blob": "a1d095def0a14c26a8b871eeee29ea753d030c6f"
+    },
+    {
+      "old_path": "audit_p5_high_coordinate_partial_frontier.py",
+      "new_path": "claims/p5/coordinate-cegar/audit_p5_high_coordinate_partial_frontier.py",
+      "source_blob": "c53fbfa6f1761734a1164398a56ebade0170eff9"
+    },
+    {
+      "old_path": "certify_p5_high_coordinate_zero_forest_batch.py",
+      "new_path": "tools/explore/certify_p5_high_coordinate_zero_forest_batch.py",
+      "source_blob": "f56319773485c4714cde44185822352bf387cdc7"
+    },
+    {
+      "old_path": "cover_p5_q5_311_rare_slice_supports.py",
+      "new_path": "tools/explore/cover_p5_q5_311_rare_slice_supports.py",
+      "source_blob": "fa091846ee5760095f67dec67a88bfd67b8604f5"
+    },
+    {
+      "old_path": "derive_p5_h31_marked_basis_fibre_elimination.py",
+      "new_path": "claims/p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification/derive_p5_h31_marked_basis_fibre_elimination.py",
+      "source_blob": "895e9a66801112ca4fdffdc4bad773c15e6f4144"
+    },
+    {
+      "old_path": "derive_p5_h31_toric_marked_fibre_elimination.py",
+      "new_path": "claims/p5/h31/toric-marked-fibre/derive_p5_h31_toric_marked_fibre_elimination.py",
+      "source_blob": "d9cc7dea9434a97fd971295c09b4a118692aded4"
+    },
+    {
+      "old_path": "enumerate_p5_exact_k_partial_supports.py",
+      "new_path": "tools/explore/enumerate_p5_exact_k_partial_supports.py",
+      "source_blob": "b0723f0f9c47fd28cf29d355ed23bd16006710c9"
+    },
+    {
+      "old_path": "extract_p5_high_coordinate_nullstellensatz.py",
+      "new_path": "tools/explore/extract_p5_high_coordinate_nullstellensatz.py",
+      "source_blob": "94e7b557e697361d9c90157b23d0a1ee8259c0d8"
+    },
+    {
+      "old_path": "generate_p5_all_full_signature_system.py",
+      "new_path": "claims/p5/boundaries/generate_p5_all_full_signature_system.py",
+      "source_blob": "feff51112eba95568cb1d14984f410aaae711ca3"
+    },
+    {
+      "old_path": "generate_p5_exact_three_partial_support_system.py",
+      "new_path": "tools/generate/generate_p5_exact_three_partial_support_system.py",
+      "source_blob": "1f248fb09abd97139d67de17637f1b90ebecce38"
+    },
+    {
+      "old_path": "generate_p5_exact_two_partial_support_system.py",
+      "new_path": "tools/generate/generate_p5_exact_two_partial_support_system.py",
+      "source_blob": "dfbd3ba13cef1bbcf2838362e29c38c0483f5b94"
+    },
+    {
+      "old_path": "generate_p5_one_partial_support_system.py",
+      "new_path": "tools/generate/generate_p5_one_partial_support_system.py",
+      "source_blob": "cac6f1a886978f5b2bdbdd530e88d839f0953ac0"
+    },
+    {
+      "old_path": "generate_p5_split_saturation_system.py",
+      "new_path": "tools/generate/generate_p5_split_saturation_system.py",
+      "source_blob": "42d09f024f5802ac8c0274ccf58ed0889fef02ea"
+    },
+    {
+      "old_path": "maximize_p5_high_coordinate_chart_closure.py",
+      "new_path": "tools/explore/maximize_p5_high_coordinate_chart_closure.py",
+      "source_blob": "e3cc2f9dfa430b425c9c03c0cc8947f1caa76e7d"
+    },
+    {
+      "old_path": "maximize_p5_high_coordinate_zero_forest_closure.py",
+      "new_path": "tools/explore/maximize_p5_high_coordinate_zero_forest_closure.py",
+      "source_blob": "91c7cbaf6d2d05274117fe73cdfce85636a54751"
+    },
+    {
+      "old_path": "maximize_p5_q5_311_rare_chart_closure.py",
+      "new_path": "tools/explore/maximize_p5_q5_311_rare_chart_closure.py",
+      "source_blob": "76e696af19628825930c55039a0224b9b019261a"
+    },
+    {
+      "old_path": "minimize_p5_high_coordinate_gauge_forest.py",
+      "new_path": "tools/explore/minimize_p5_high_coordinate_gauge_forest.py",
+      "source_blob": "fa73eeee694e625d97e92bb01fccd117a5e8cf5e"
+    },
+    {
+      "old_path": "p5_high_coordinate_tree_chart_cegar.py",
+      "new_path": "tools/explore/p5_high_coordinate_tree_chart_cegar.py",
+      "source_blob": "b172fc17adc8f773c834c80c819d9bd36784bc9a"
+    },
+    {
+      "old_path": "p5_pair_support_semantics.py",
+      "new_path": "src/krenn_gu/p5_pair_support_semantics.py",
+      "source_blob": "de7c99bd7610c477f3c62d3f2af8beab06ea48f7"
+    },
+    {
+      "old_path": "p5_q5_311_rare_slice_cegar.py",
+      "new_path": "tools/explore/p5_q5_311_rare_slice_cegar.py",
+      "source_blob": "0766bc6d3730b27b9b7e16fa56af69ab3b116fd7"
+    },
+    {
+      "old_path": "p5_tree_chart_cover.py",
+      "new_path": "claims/p5/coordinate-cegar/p5_tree_chart_cover.py",
+      "source_blob": "d337cbd86e52c97ad70b0e31fce3f33584b7aa8d"
+    },
+    {
+      "old_path": "package_p5_exact_three_c10_audit.py",
+      "new_path": "tools/package/package_p5_exact_three_c10_audit.py",
+      "source_blob": "57b2b1d003359ce05d8750c0acbf8e72f6ccbc9a"
+    },
+    {
+      "old_path": "package_p5_exact_three_c4c6_boundary.py",
+      "new_path": "tools/package/package_p5_exact_three_c4c6_boundary.py",
+      "source_blob": "7896ba1b00c874d0c08121adf543a267afbd8685"
+    },
+    {
+      "old_path": "package_p5_exact_three_coordinate_tree_charts.py",
+      "new_path": "tools/package/package_p5_exact_three_coordinate_tree_charts.py",
+      "source_blob": "3148f84c6d471e138085a0359b56327088744915"
+    },
+    {
+      "old_path": "package_p5_high_coordinate_zero_forest_seeds.py",
+      "new_path": "tools/package/package_p5_high_coordinate_zero_forest_seeds.py",
+      "source_blob": "dd7a6c24a9a608a27e56aacc7aaacb0b1acbca97"
+    },
+    {
+      "old_path": "package_p5_q5_311_rare_slice_seeds.py",
+      "new_path": "tools/package/package_p5_q5_311_rare_slice_seeds.py",
+      "source_blob": "109e1e76814336b7574f1eba3b44ee5e54e9846f"
+    },
+    {
+      "old_path": "probe_p5_c10_joint_affine_class.py",
+      "new_path": "tools/explore/probe_p5_c10_joint_affine_class.py",
+      "source_blob": "1a4cf2e1649d1193ea6f05866c7eb54081fa2e5f"
+    },
+    {
+      "old_path": "probe_p5_degree_six_invariants.py",
+      "new_path": "tools/explore/probe_p5_degree_six_invariants.py",
+      "source_blob": "ae86f81b376d25a1188299b40d013ae88f407906"
+    },
+    {
+      "old_path": "probe_p5_high_coordinate_split_scalar_span.py",
+      "new_path": "tools/explore/probe_p5_high_coordinate_split_scalar_span.py",
+      "source_blob": "7e9e69c312ca564b492a4d78501f27624afb11ff"
+    },
+    {
+      "old_path": "probe_p5_q5_311_rare_slice_core.py",
+      "new_path": "tools/explore/probe_p5_q5_311_rare_slice_core.py",
+      "source_blob": "bdc066f54051357bdb5b9d57270a63463607ab08"
+    },
+    {
+      "old_path": "rank_p5_high_coordinate_chart_orbits.py",
+      "new_path": "tools/explore/rank_p5_high_coordinate_chart_orbits.py",
+      "source_blob": "0265f32eb4e14e6c0a281426ce4d76c6b1a93207"
+    },
+    {
+      "old_path": "verify_p5_c10_ten_equation_affine_core.py",
+      "new_path": "claims/p5/frontier/verify_p5_c10_ten_equation_affine_core.py",
+      "source_blob": "78fda4b3a4ae89ae43a20fa764eeadf48af5b6a3"
+    },
+    {
+      "old_path": "verify_p5_component21_divisor_generic_fibre_obstructions.py",
+      "new_path": "claims/p5/boundaries/verify_p5_component21_divisor_generic_fibre_obstructions.py",
+      "source_blob": "6222c1fe9618a5f34e90554b768f28a8657f7325"
+    },
+    {
+      "old_path": "verify_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_component21_ell_infinity_parameter_compactification_complete_obstruction.py",
+      "source_blob": "6fc0f1720a1a2649769c700533a5c114fca8e74a"
+    },
+    {
+      "old_path": "verify_p5_component21_extension_kernel_marked_h31_leading_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_component21_extension_kernel_marked_h31_leading_obstruction.py",
+      "source_blob": "7e466472742b541d7412092e22bdf6bcdbda9871"
+    },
+    {
+      "old_path": "verify_p5_component21_finite_base_extension_infinity_partial_closure.py",
+      "new_path": "claims/p5/frontier/verify_p5_component21_finite_base_extension_infinity_partial_closure.py",
+      "source_blob": "0df862874234b87e805ed7c13b65fc9b5a02d275"
+    },
+    {
+      "old_path": "verify_p5_component21_finite_h22_extension_ell_zero_unit_endpoint_normal_closure.py",
+      "new_path": "claims/p5/frontier/verify_p5_component21_finite_h22_extension_ell_zero_unit_endpoint_normal_closure.py",
+      "source_blob": "18501a136c7a656fe8fdb0888ddba98f38f93b4d"
+    },
+    {
+      "old_path": "verify_p5_component21_finite_h22_extension_p_zero_nonzero_q_normal_closure.py",
+      "new_path": "claims/p5/frontier/verify_p5_component21_finite_h22_extension_p_zero_nonzero_q_normal_closure.py",
+      "source_blob": "af2c55b054a3ccf21476575ec2a48bbbc28c3c52"
+    },
+    {
+      "old_path": "verify_p5_component21_finite_h22_extension_rank_drop_generic_normal_closure.py",
+      "new_path": "claims/p5/frontier/verify_p5_component21_finite_h22_extension_rank_drop_generic_normal_closure.py",
+      "source_blob": "22dce7e3e19e651f28d341ad8ebe6888b424e2c4"
+    },
+    {
+      "old_path": "verify_p5_component21_finite_h22_extension_zero_base_lambda_minus_one_second_normal_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_component21_finite_h22_extension_zero_base_lambda_minus_one_second_normal_obstruction.py",
+      "source_blob": "01ae4199f46c08ba3ae55adad0b8adcae324b864"
+    },
+    {
+      "old_path": "verify_p5_component21_finite_h22_extension_zero_base_ordinary_weight_second_normal_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_component21_finite_h22_extension_zero_base_ordinary_weight_second_normal_obstruction.py",
+      "source_blob": "d00534d45d198f14c732a206ccf2b7cb27f5ecbe"
+    },
+    {
+      "old_path": "verify_p5_component21_finite_h22_extension_zero_base_raw_kernel_normal_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_component21_finite_h22_extension_zero_base_raw_kernel_normal_obstruction.py",
+      "source_blob": "817fd69e3a1bd9562ffa7fa73d6193ca0100ae7c"
+    },
+    {
+      "old_path": "verify_p5_component21_finite_weight_extension_kernel_rational_normal_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_component21_finite_weight_extension_kernel_rational_normal_obstruction.py",
+      "source_blob": "6ad9fad0ab8caddf49d6dbdf486d1a8938537de6"
+    },
+    {
+      "old_path": "verify_p5_component21_kappa_infinity_first_normal_complete_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_component21_kappa_infinity_first_normal_complete_obstruction.py",
+      "source_blob": "ab4a5e9c363b19d5401f532e8461283b9b25d951"
+    },
+    {
+      "old_path": "verify_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_component21_kappa_infinity_u0_projective_blowup_complete_obstruction.py",
+      "source_blob": "0c843df3d03bc654a08bc62addc0a22b8965c2b8"
+    },
+    {
+      "old_path": "verify_p5_component21_normalized_parameter_compactification_complete_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_component21_normalized_parameter_compactification_complete_obstruction.py",
+      "source_blob": "f1d2b6bf907dd180c686e539fb8062bc74693233"
+    },
+    {
+      "old_path": "verify_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_component21_other_single_marking_infinity_weighted_normal_obstruction.py",
+      "source_blob": "b741164571a756878a55394c11e09fc1bdf94288"
+    },
+    {
+      "old_path": "verify_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_component21_pairwise_marking_infinity_weighted_normal_obstruction.py",
+      "source_blob": "72664c2a45ffbf6691fb46bdef1ebcea7b550609"
+    },
+    {
+      "old_path": "verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_component21_pq_zero_normal_blowup_transfer_obstruction.py",
+      "source_blob": "fab79ec4ec0155e1118288df58fb360f763fb0ac"
+    },
+    {
+      "old_path": "verify_p5_component21_q_plus_minus_p_ell_endpoint_complete_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_component21_q_plus_minus_p_ell_endpoint_complete_obstruction.py",
+      "source_blob": "e69e6f02a73dc78824be85c47d67e4f9636b27ec"
+    },
+    {
+      "old_path": "verify_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_component21_q_plus_minus_p_shared_branch_ternary_obstruction.py",
+      "source_blob": "99dcb14ff65bae0d3f4d515a15fba2e69bda0bfd"
+    },
+    {
+      "old_path": "verify_p5_component21_single_marking_infinity_first_normal_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_component21_single_marking_infinity_first_normal_obstruction.py",
+      "source_blob": "3d183f422866e9598b2676080895a0911d43c1a5"
+    },
+    {
+      "old_path": "verify_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_component21_triple_quadruple_marking_infinity_weighted_normal_obstruction.py",
+      "source_blob": "cd72b17efb8b0e06a6d154ec69d730b00651b374"
+    },
+    {
+      "old_path": "verify_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py",
+      "new_path": "claims/p5/boundaries/verify_p5_component21_vertical_u0_projective_boundary_complete_obstruction.py",
+      "source_blob": "41350383021ec3183d9333c3a529642348b6cdcb"
+    },
+    {
+      "old_path": "verify_p5_component23_k_infinity_lower_pair_endpoints_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_component23_k_infinity_lower_pair_endpoints_obstruction.py",
+      "source_blob": "a91d443f764966147e224f235617185272cd207c"
+    },
+    {
+      "old_path": "verify_p5_component23_s_one_parameter_infinity_curves_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_component23_s_one_parameter_infinity_curves_obstruction.py",
+      "source_blob": "d4f0dcf283620e79e2c03540b023e3eb51488667"
+    },
+    {
+      "old_path": "verify_p5_component23_s_one_triple_parameter_infinity_corner_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_component23_s_one_triple_parameter_infinity_corner_obstruction.py",
+      "source_blob": "2f0bfb060e231e152c4572bf49d07b56599dfe5b"
+    },
+    {
+      "old_path": "verify_p5_component23_s_zero_k_infinity_projective_r_t_boundary_obstruction.py",
+      "new_path": "claims/p5/boundaries/verify_p5_component23_s_zero_k_infinity_projective_r_t_boundary_obstruction.py",
+      "source_blob": "7a0af07987b734e2e17731c5dbab716cd0eba811"
+    },
+    {
+      "old_path": "verify_p5_component23_s_zero_rt_one_lower_pair_endpoint_lines_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_component23_s_zero_rt_one_lower_pair_endpoint_lines_obstruction.py",
+      "source_blob": "c8a9f57103699b766a12ed50194739f50f9f8a3b"
+    },
+    {
+      "old_path": "verify_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py",
+      "new_path": "claims/p5/frontier/verify_p5_component23_s_zero_rt_one_projective_parameter_endpoints_obstruction.py",
+      "source_blob": "49a39dd6872157c3371b6152626cf58d429dfe2e"
+    },
+    {
+      "old_path": "verify_p5_degree_six_invariant_pullback.py",
+      "new_path": "claims/p5/frontier/verify_p5_degree_six_invariant_pullback.py",
+      "source_blob": "dffea3e09b89be87bacb159de51a6d832fbf4cbb"
+    },
+    {
+      "old_path": "verify_p5_exact_two_partial_boundary_obstruction.py",
+      "new_path": "claims/p5/boundaries/verify_p5_exact_two_partial_boundary_obstruction.py",
+      "source_blob": "270f55ec4c5599cfde3a683af5e8711a77f074fc"
+    },
+    {
+      "old_path": "verify_p5_h31_common_active_binary_triangle_component_generic_obstruction.py",
+      "new_path": "claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_component_generic_obstruction.py",
+      "source_blob": "8d3aaaf1458ea3c513f849a8c54f2b9f4206343f"
+    },
+    {
+      "old_path": "verify_p5_h31_common_active_binary_triangle_component_special_divisor_obstruction.py",
+      "new_path": "claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_component_special_divisor_obstruction.py",
+      "source_blob": "a948cdea029ea596ac412dd2bfe8ac316796d922"
+    },
+    {
+      "old_path": "verify_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py",
+      "new_path": "claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_intrinsic_boundary_obstruction.py",
+      "source_blob": "79121441fde0920a41290ce4cad7fcc868e01654"
+    },
+    {
+      "old_path": "verify_p5_h31_common_active_binary_triangle_normalized_affine_obstruction.py",
+      "new_path": "claims/p5/h31/common-active-binary-triangle/verify_p5_h31_common_active_binary_triangle_normalized_affine_obstruction.py",
+      "source_blob": "34314133e47169ad89fb2f090a979ce0e162fc92"
+    },
+    {
+      "old_path": "verify_p5_h31_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py",
+      "new_path": "claims/p5/h31/common-center-kernel-star/verify_p5_h31_common_center_kernel_star_component_k_infinity_all_pair_boundary_obstruction.py",
+      "source_blob": "f3f4095b1ba7112b5781b5f5ddf82284f3541602"
+    },
+    {
+      "old_path": "verify_p5_h31_common_center_kernel_star_component_s_zero_k_infinity_finite_corner_obstruction.py",
+      "new_path": "claims/p5/h31/common-center-kernel-star/verify_p5_h31_common_center_kernel_star_component_s_zero_k_infinity_finite_corner_obstruction.py",
+      "source_blob": "f23e3abf1bb0d5739c80d7d48273d24a322aa705"
+    },
+    {
+      "old_path": "verify_p5_h31_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py",
+      "new_path": "claims/p5/h31/common-center-kernel-star/verify_p5_h31_common_center_kernel_star_component_s_zero_rt_one_all_pair_obstruction.py",
+      "source_blob": "8580db314dc9b0790f5341691d22b4ce5616c374"
+    },
+    {
+      "old_path": "verify_p5_h31_diagonal_quadric_component_point.py",
+      "new_path": "claims/p5/h31/diagonal-quadric-component-point/verify_p5_h31_diagonal_quadric_component_point.py",
+      "source_blob": "bfa01b4dfba8087a13531a3512e6a5dc5c2da634"
+    },
+    {
+      "old_path": "verify_p5_h31_diagonal_quadric_curve_marked_fibre.py",
+      "new_path": "claims/p5/h31/diagonal-quadric-curve-marked-fibre/verify_p5_h31_diagonal_quadric_curve_marked_fibre.py",
+      "source_blob": "8112b5214ec20817d0a36cfbc0165593964aad68"
+    },
+    {
+      "old_path": "verify_p5_h31_diagonal_quadric_e_curve_marked_fibre.py",
+      "new_path": "claims/p5/h31/diagonal-quadric-e-curve-marked-fibre/verify_p5_h31_diagonal_quadric_e_curve_marked_fibre.py",
+      "source_blob": "b55dda8c42c0ad2e50181bdc970d4c19d4604088"
+    },
+    {
+      "old_path": "verify_p5_h31_diagonal_quadric_elliptic_generic.py",
+      "new_path": "claims/p5/h31/diagonal-quadric-elliptic/verify_p5_h31_diagonal_quadric_elliptic_generic.py",
+      "source_blob": "7265246d8036eab0f2a676f5037e869a39f608e6"
+    },
+    {
+      "old_path": "verify_p5_h31_diagonal_quadric_h0_ruling.py",
+      "new_path": "claims/p5/h31/diagonal-quadric-h0-ruling-marked-fibre/verify_p5_h31_diagonal_quadric_h0_ruling.py",
+      "source_blob": "3153331d81216f1b7f04e59bcd83b61078bebca8"
+    },
+    {
+      "old_path": "verify_p5_h31_diagonal_quadric_normalization_boundary.py",
+      "new_path": "claims/p5/h31/diagonal-quadric-normalization-boundary/verify_p5_h31_diagonal_quadric_normalization_boundary.py",
+      "source_blob": "665c77d0d92ebe9d36b2585867c17e607c78c563"
+    },
+    {
+      "old_path": "verify_p5_h31_diagonal_quadric_outer_boundary.py",
+      "new_path": "claims/p5/h31/disputed-ownership/first-second-component-provenance/diagonal-quadric-outer-boundary/verify_p5_h31_diagonal_quadric_outer_boundary.py",
+      "source_blob": "6004208a24f2b645e9b3192b6ba7e54c4c8ec123"
+    },
+    {
+      "old_path": "verify_p5_h31_diagonal_quadric_pure_direction_curve.py",
+      "new_path": "claims/p5/h31/diagonal-quadric-pure-direction-curve-marked-fibre/verify_p5_h31_diagonal_quadric_pure_direction_curve.py",
+      "source_blob": "ab332a3a996aef7a1262d34f9a17486da202428d"
+    },
+    {
+      "old_path": "verify_p5_h31_elliptic_end_coordinate_full_rank_chart.py",
+      "new_path": "claims/p5/h31/elliptic-end-coordinate-full-rank-chart/verify_p5_h31_elliptic_end_coordinate_full_rank_chart.py",
+      "source_blob": "971145d8908a53a80ae39539aa2eb5e704589e19"
+    },
+    {
+      "old_path": "verify_p5_h31_elliptic_end_genus_two_exception.py",
+      "new_path": "claims/p5/h31/elliptic-end-genus-two-exception/verify_p5_h31_elliptic_end_genus_two_exception.py",
+      "source_blob": "a3d12f95313a53f31d449897ab63f9d3a3fa16cf"
+    },
+    {
+      "old_path": "verify_p5_h31_elliptic_end_genus_two_q3.py",
+      "new_path": "claims/p5/h31/elliptic-end-genus-two-q3/verify_p5_h31_elliptic_end_genus_two_q3.py",
+      "source_blob": "eaa5179d7f2a635ba9828ddb1dcc52fbcb453a99"
+    },
+    {
+      "old_path": "verify_p5_h31_elliptic_end_t2_divisor.py",
+      "new_path": "claims/p5/h31/elliptic-end-t2-divisor/verify_p5_h31_elliptic_end_t2_divisor.py",
+      "source_blob": "301f446d04ae27cd5d8af5609dd82ef9f363e49a"
+    },
+    {
+      "old_path": "verify_p5_h31_elliptic_end_t2_divisor_q3.py",
+      "new_path": "claims/p5/h31/elliptic-end-t2-divisor-q3/verify_p5_h31_elliptic_end_t2_divisor_q3.py",
+      "source_blob": "d18b3ff4adb1372805227374311d00ec40261b58"
+    },
+    {
+      "old_path": "verify_p5_h31_elliptic_end_t3_divisor.py",
+      "new_path": "claims/p5/h31/elliptic-end-t3-divisor/verify_p5_h31_elliptic_end_t3_divisor.py",
+      "source_blob": "e27b8fedbb7b1be3b4813d7a3c65cfc24a160494"
+    },
+    {
+      "old_path": "verify_p5_h31_elliptic_end_t3_divisor_q3.py",
+      "new_path": "claims/p5/h31/elliptic-end-t3-divisor-q3/verify_p5_h31_elliptic_end_t3_divisor_q3.py",
+      "source_blob": "a82bf2f9162e7940973f23889297ef9a93d17e27"
+    },
+    {
+      "old_path": "verify_p5_h31_elliptic_middle_coordinate_pivot_complement.py",
+      "new_path": "claims/p5/h31/elliptic-middle-coordinate-pivot-complement/verify_p5_h31_elliptic_middle_coordinate_pivot_complement.py",
+      "source_blob": "e3d0ac48f0a8cf1be9280051567e75024a586350"
+    },
+    {
+      "old_path": "verify_p5_h31_elliptic_middle_coordinate_rank_drop.py",
+      "new_path": "claims/p5/h31/elliptic-middle-coordinate-rank-drop/verify_p5_h31_elliptic_middle_coordinate_rank_drop.py",
+      "source_blob": "90a5c1c6e83c1aab556a3c752ebcbb768d36c183"
+    },
+    {
+      "old_path": "verify_p5_h31_known_rank_two_family_obstruction.py",
+      "new_path": "claims/p5/h31/known-rank-two-family/verify_p5_h31_known_rank_two_family_obstruction.py",
+      "source_blob": "cec9aa4948dd1b50a6d1d23461b2ba384e62bb9d"
+    },
+    {
+      "old_path": "verify_p5_h31_marked_basis_fibre_classification.py",
+      "new_path": "claims/p5/h31/disputed-ownership/first-second-component-provenance/marked-basis-fibre-classification/verify_p5_h31_marked_basis_fibre_classification.py",
+      "source_blob": "89e3379fc41049ce31e24eaacceacd40f6acdd44"
+    },
+    {
+      "old_path": "verify_p5_h31_marked_basis_open_branch.py",
+      "new_path": "claims/p5/h31/marked-basis-open-branch/verify_p5_h31_marked_basis_open_branch.py",
+      "source_blob": "0071317bfed347cb1aae93e5d0f96dbb2f76fde8"
+    },
+    {
+      "old_path": "verify_p5_h31_rank_two_component_orbit.py",
+      "new_path": "claims/p5/h31/rank-two-component-orbit/verify_p5_h31_rank_two_component_orbit.py",
+      "source_blob": "977365e071d336aefc87e75f2f354f1f95651b97"
+    },
+    {
+      "old_path": "verify_p5_high_coordinate_chart_ledgers.py",
+      "new_path": "claims/p5/coordinate-cegar/verify_p5_high_coordinate_chart_ledgers.py",
+      "source_blob": "f2580153015aeff364b236a410e9517fd538f914"
+    },
+    {
+      "old_path": "verify_p5_high_coordinate_chart_orbit_cover.py",
+      "new_path": "claims/p5/coordinate-cegar/verify_p5_high_coordinate_chart_orbit_cover.py",
+      "source_blob": "7a986c78a67d742200a1fa7d4ca31f51a7d88031"
+    },
+    {
+      "old_path": "verify_p5_high_coordinate_partial_frontier.py",
+      "new_path": "claims/p5/coordinate-cegar/verify_p5_high_coordinate_partial_frontier.py",
+      "source_blob": "aa0e3ee5492c09565bdd92d62a36dca98f7aca2c"
+    },
+    {
+      "old_path": "verify_p5_nonunimodular_laurent_boundary.py",
+      "new_path": "claims/p5/boundaries/verify_p5_nonunimodular_laurent_boundary.py",
+      "source_blob": "a9d910cc4728516cd6fce4722636e38606438fda"
+    },
+    {
+      "old_path": "verify_p5_q5_311_rare_slice_cegar.py",
+      "new_path": "claims/p5/coordinate-cegar/verify_p5_q5_311_rare_slice_cegar.py",
+      "source_blob": "342f90b972fa1fa2ba6dd2d0ae009add7e80a0f3"
+    },
+    {
+      "old_path": "verify_p5_q5_311_rare_slice_support_cover.py",
+      "new_path": "claims/p5/frontier/verify_p5_q5_311_rare_slice_support_cover.py",
+      "source_blob": "fdc7a54d0bbb457587d1d139f863ae0d8de15ea6"
+    },
+    {
+      "old_path": "verify_slope_boundary_frame_identifications.py",
+      "new_path": "claims/p5/h22/disjoint-mixed-star/boundaries/verify_slope_boundary_frame_identifications.py",
+      "source_blob": "81426511fcb3fd5fef756eab9755a30e6af24e43"
+    }
+  ],
+  "rationale": "Move the exact residual P5 proof-obligation forest, operator entry points, and one true shared semantic library from root to reviewed owners; preserve the seven-file first/second-component disagreement in a narrow neutral package and require parity-tested inverse-taper extractions without scientific status changes.",
+  "notes": "Owner-authorized H31-CBMF quartet is excluded. Mapping be94dca... was independently accepted by fresh semantic and mechanical referees after refreeze on merged main; source identity changed only for four H31 fixed-point link repairs. Global Krenn-Gu remains UNRESOLVED."
+}

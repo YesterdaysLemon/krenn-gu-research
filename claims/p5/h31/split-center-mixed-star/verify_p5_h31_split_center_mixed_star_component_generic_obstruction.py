@@ -19,7 +19,7 @@ from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
 
-from verify_p5_h31_marked_basis_open_branch import (
+from krenn_gu.p5_marked_basis import (
     marked_extension,
     mixed_matrix,
 )

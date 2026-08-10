@@ -432,8 +432,8 @@ P7/global Krenn--Gu:                                 UNRESOLVED.          (31)
 ```powershell
 uv run --with sympy python claims/p7/verify_shallow_hafnian_hessian_two_deck_inversion_and_p7_legal_sensor_interface.py
 python claims/p7/audit_shallow_hafnian_hessian_two_deck_inversion_and_p7_legal_sensor_interface.py
-python -m py_compile verify_shallow_hafnian_hessian_two_deck_inversion_and_p7_legal_sensor_interface.py audit_shallow_hafnian_hessian_two_deck_inversion_and_p7_legal_sensor_interface.py
-uv run --with ruff ruff check verify_shallow_hafnian_hessian_two_deck_inversion_and_p7_legal_sensor_interface.py audit_shallow_hafnian_hessian_two_deck_inversion_and_p7_legal_sensor_interface.py
+python -m py_compile claims/p7/verify_shallow_hafnian_hessian_two_deck_inversion_and_p7_legal_sensor_interface.py claims/p7/audit_shallow_hafnian_hessian_two_deck_inversion_and_p7_legal_sensor_interface.py
+uv run --with ruff ruff check claims/p7/verify_shallow_hafnian_hessian_two_deck_inversion_and_p7_legal_sensor_interface.py claims/p7/audit_shallow_hafnian_hessian_two_deck_inversion_and_p7_legal_sensor_interface.py
 ```
 
 The primary replay verifies (5) symbolically on eight vertices, checks the

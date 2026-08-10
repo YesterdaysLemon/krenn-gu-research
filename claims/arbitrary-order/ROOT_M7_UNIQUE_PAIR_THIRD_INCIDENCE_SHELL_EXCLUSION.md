@@ -130,8 +130,8 @@ global Krenn--Gu conjecture:                      UNRESOLVED.
 ```powershell
 uv run --with sympy python claims/arbitrary-order/verify_root_m7_unique_pair_third_incidence_shell_exclusion.py
 uv run --with sympy python claims/arbitrary-order/audit_root_m7_unique_pair_third_incidence_shell_exclusion.py
-uv run --with sympy --with ruff python -m ruff check verify_root_m7_unique_pair_third_incidence_shell_exclusion.py audit_root_m7_unique_pair_third_incidence_shell_exclusion.py
-python -m py_compile verify_root_m7_unique_pair_third_incidence_shell_exclusion.py audit_root_m7_unique_pair_third_incidence_shell_exclusion.py
+uv run --with sympy --with ruff python -m ruff check claims/arbitrary-order/verify_root_m7_unique_pair_third_incidence_shell_exclusion.py claims/arbitrary-order/audit_root_m7_unique_pair_third_incidence_shell_exclusion.py
+python -m py_compile claims/arbitrary-order/verify_root_m7_unique_pair_third_incidence_shell_exclusion.py claims/arbitrary-order/audit_root_m7_unique_pair_third_incidence_shell_exclusion.py
 ```
 
 The primary verifier reuses the pinned root/port data constructors and checks

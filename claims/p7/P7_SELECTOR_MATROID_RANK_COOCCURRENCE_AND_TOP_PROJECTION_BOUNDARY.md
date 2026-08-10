@@ -590,8 +590,8 @@ All five items remain **UNKNOWN/UNRESOLVED**.
 ```powershell
 uv run --with sympy python claims/p7/verify_p7_selector_matroid_rank_cooccurrence_and_top_projection_boundary.py
 python claims/p7/audit_p7_selector_matroid_rank_cooccurrence_and_top_projection_boundary.py
-uv run --with sympy --with ruff python -m ruff check verify_p7_selector_matroid_rank_cooccurrence_and_top_projection_boundary.py audit_p7_selector_matroid_rank_cooccurrence_and_top_projection_boundary.py
-python -m py_compile verify_p7_selector_matroid_rank_cooccurrence_and_top_projection_boundary.py audit_p7_selector_matroid_rank_cooccurrence_and_top_projection_boundary.py
+uv run --with sympy --with ruff python -m ruff check claims/p7/verify_p7_selector_matroid_rank_cooccurrence_and_top_projection_boundary.py claims/p7/audit_p7_selector_matroid_rank_cooccurrence_and_top_projection_boundary.py
+python -m py_compile claims/p7/verify_p7_selector_matroid_rank_cooccurrence_and_top_projection_boundary.py claims/p7/audit_p7_selector_matroid_rank_cooccurrence_and_top_projection_boundary.py
 ```
 
 The primary verifier checks the observation ranks and kernels, all three
