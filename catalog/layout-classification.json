@@ -278,7 +278,7 @@
   },
   "classified_count": 2249,
   "unclassified_count": 114,
-  "estimated_root_entries_after_full_migration": 127,
+  "estimated_root_entries_after_full_migration": 122,
   "verify_audit_triples": {
     "ADJACENT_PORT_DETERMINANT_TRANSPORT_LEMMA": [
       "verify_adjacent_port_determinant_transport_lemma.py"
