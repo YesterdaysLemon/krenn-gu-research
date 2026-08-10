@@ -113,6 +113,18 @@ six.  The arbitrary-order primitive remains open; pure hafnian pencils alone
 are provably insufficient.  See
 [`RIGID_COLOUR_THREE_BLOCK_BINARY_PRIMITIVE_AND_QUADRATIC_BRIDGE_THEOREM.md`](claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_BINARY_PRIMITIVE_AND_QUADRATIC_BRIDGE_THEOREM.md).
 
+That three-block primitive is now known to be sharp rather than intrinsically
+contradictory.  At every even order `n>=8`, one alternating binary Hamilton
+cycle realizes all six proper block-union null equations and the full
+`Delta_2` tensor.  It cannot be completed by making every missing pair pure
+in the rigid colour: a four-vertex deletion already violates the dual bridge.
+Nor does saturating exactly one cycle shore with arbitrary binary
+matrix-unit chords help; deleting two opposite-shore vertices exposes
+`m-1` distinct uniquely supported words.  This is a route boundary, not a
+Krenn--Gu counterexample, and general cancelling completions remain open.
+See
+[`RIGID_COLOUR_THREE_BLOCK_PRIMITIVE_SHARPNESS_AND_DUAL_BRIDGE_COMPLETION_OBSTRUCTION.md`](claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_PRIMITIVE_SHARPNESS_AND_DUAL_BRIDGE_COMPLETION_OBSTRUCTION.md).
+
 On that clean `P_6` fan, target diagonality has now been translated exactly.
 If the fan is invertible, each target-colour deck vector lies in the inverse
 image of `Seg(P^1 x P^2)` and therefore obeys three pulled-back `2 x 2`

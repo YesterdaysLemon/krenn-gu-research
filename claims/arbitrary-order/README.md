@@ -93,6 +93,17 @@ exclusion remains unknown, and an infinite sparse shift family shows that
 all pairwise pure scalar pencils and their constant-colour intermediate
 coefficients cannot replace the mixed binary deletion equations.
 
+The
+[`three-block primitive sharpness theorem`](RIGID_COLOUR_THREE_BLOCK_PRIMITIVE_SHARPNESS_AND_DUAL_BRIDGE_COMPLETION_OBSTRUCTION.md)
+settles the primitive-only question negatively at every even order at least
+eight: one alternating binary Hamilton cycle makes all six proper block
+unions tensor-null while its full tensor is `Delta_2`.  This is not a
+physical counterexample.  Completing every missing pair as pure `c` already
+violates a four-vertex dual bridge, and even saturating exactly one cycle
+shore with arbitrary binary matrix-unit chords leaves uniquely supported
+forbidden deletion words.  Partial or two-shore cancelling completions and
+the arbitrary-order globally rigid branch remain open.
+
 At the Stage 27 boundary, the owner-gated H22/H31, Component20/21/23,
 high-coordinate, and mixed-lifecycle conflict surfaces were excluded from
 that batch and remained at root, unmoved and unadjudicated at that stage.
