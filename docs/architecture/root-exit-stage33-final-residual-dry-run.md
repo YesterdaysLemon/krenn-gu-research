@@ -28,9 +28,9 @@ destination collision, case-fold collision, or overlap cycle:
 
 ```text
 canonical mapping SHA-256:
-  54626c6688a4b23d4c3801d3a4b13e387cedf8a57143433bb8cf3e4d01209370
+  fe89bb11ed1601d6f5df53b93452ff09b774b7c93cec38ccbcbe4519153398ee
 canonical source-identity SHA-256:
-  6e22a6809dddd09ad819a166e3c0883a417266e2a98bdb35c4ffd8fa94c1ed1a
+  308c410c134dede499dfa80d576e13d05ea90ccd5da9e849feaeb5e60f326969
 ```
 
 The historical 2,363-path inventory remains unchanged.  Catalog membership
@@ -46,7 +46,7 @@ the live 16 because `AGENTS.md` postdates that frozen inventory.
 The exact destination groups are:
 
 ```text
-claims/finite/n14                                         91
+claims/finite/n14                                         90
 claims/finite/n08 (flat + degree-six + history)           66
 claims/finite/n06 (certificate chain + Q2 construction)   41
 src/krenn_gu                                              18
@@ -56,18 +56,23 @@ claims/p4 disputed Component20 forest                     14
 claims/p4 boundary/classification/history                 18
 claims/finite/n12 history                                  6
 claims/p3/restrictions                                     6
-tools/explore                                              7
+tools/explore                                              8
 tests                                                      4
 claims/p5 (five-row + Component19 audit)                   4
 claims/p7/five-root-diagonal-target-incidence              3
 ```
 
 The dense n=14, n=8, n=6, and n=10 executable graphs stay with their finite
-scientific owners.  Seven genuine search/operator entry points go to
+scientific owners.  Eight genuine search/operator entry points go to
 `tools/explore`; four tests go to `tests`.  Fixed-P3, fixed-P5, and P7 results
 are not assigned to arbitrary-order by filename pressure.  Withdrawn and
 partially withdrawn records move to honest family/topic homes without losing
 their corrected-result asymmetries.
+
+Fresh semantic review corrected one provisional filename-driven assignment:
+`explore_random_odd_factor_one_term.py` is an order-12-default exploratory
+sampler with no n=14 claim edge, so it is an operator under `tools/explore`,
+not a member of the n=14 evidence forest.
 
 Exactly fourteen Component20 artifacts use the neutral
 `claims/p4/disputed-ownership/component20-intrinsic-boundary/` package.  Its

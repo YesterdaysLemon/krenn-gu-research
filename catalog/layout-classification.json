@@ -263,7 +263,7 @@
     "finite/n10/degree-six-kotzig-port": 6,
     "finite/twelve-vertex": 5,
     "finite/n12/history/degree-six-kotzig-port-legacy": 6,
-    "finite/n14": 91,
+    "finite/n14": 90,
     "finite/n08": 62,
     "finite/n06/certificate-chain": 37,
     "p5/h22/unequal-endpoint-inward-star-component-finite-d01-branch-a": 2,
@@ -284,8 +284,8 @@
     "legacy_document": 6,
     "audit_report": 2,
     "catalog": 1,
-    "tool_script": 58,
-    "claim_script": 1517,
+    "tool_script": 59,
+    "claim_script": 1516,
     "shared_library": 22,
     "claim_data": 19,
     "test": 4
@@ -19215,15 +19215,16 @@
     },
     {
       "old_path": "explore_random_odd_factor_one_term.py",
-      "proposed_path": "claims/finite/n14/explore_random_odd_factor_one_term.py",
-      "category": "claim_script",
-      "claim_family": "finite/n14",
+      "proposed_path": "tools/explore/explore_random_odd_factor_one_term.py",
+      "category": "tool_script",
+      "claim_family": null,
       "confidence": "high",
       "evidence": [
         "tool prefix (exploration/derivation)",
         "Stage 33 exact final-residual filesystem, executable/provenance, and proof-obligation topology review",
         "exact 305-source mapping frozen against merged main c99a4e9519685b4fba46f51a1e93ac6c6d6c3cbc",
-        "dense finite-family evidence graph retained with its n=14 scientific owner"
+        "fresh Stage 33 semantic review: order-12-default exploratory sampler with no n=14 claim edge",
+        "operator entry point; operator placement does not transfer scientific ownership"
       ]
     },
     {

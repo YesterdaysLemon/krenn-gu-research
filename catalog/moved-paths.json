@@ -6143,14 +6143,6 @@
       "confidence": "high"
     },
     {
-      "old_path": "explore_random_odd_factor_one_term.py",
-      "new_path": "claims/finite/n14/explore_random_odd_factor_one_term.py",
-      "reason": "claim_script -> finite/n14",
-      "status": "proposed_high_confidence",
-      "claim_family": "finite/n14",
-      "confidence": "high"
-    },
-    {
       "old_path": "extract_fourteen_vertex_forced_slice_factor_cegar_core.py",
       "new_path": "claims/finite/n14/extract_fourteen_vertex_forced_slice_factor_cegar_core.py",
       "reason": "claim_script -> finite/n14",
@@ -20530,6 +20522,14 @@
       "executed_batch": "p5-residual-root-exit-stage32"
     },
     {
+      "old_path": "explore_random_odd_factor_one_term.py",
+      "new_path": "tools/explore/explore_random_odd_factor_one_term.py",
+      "reason": "tool_script -> None",
+      "status": "proposed_high_confidence",
+      "claim_family": null,
+      "confidence": "high"
+    },
+    {
       "old_path": "explore_twelve_vertex_complement_chain_orbits.py",
       "new_path": "tools/explore/explore_twelve_vertex_complement_chain_orbits.py",
       "reason": "tool_script -> None",
@@ -20956,8 +20956,8 @@
     }
   ],
   "destination_subtree_counts": {
-    "claims": 2266,
-    "tools": 57,
+    "claims": 2265,
+    "tools": 58,
     "src": 22,
     "docs": 8,
     "tests": 4,
