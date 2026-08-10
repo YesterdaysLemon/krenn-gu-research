@@ -134,7 +134,7 @@ parallel colour choice, and sums with Python's exact `Fraction`
 arithmetic:
 
 ```text
-python verify_q2_n6_k4_d4_construction.py
+python claims/finite/n06/q2-k4-d4-construction/verify_q2_n6_k4_d4_construction.py
 ```
 
 It fails closed on any change to the expected coefficient tensor and
@@ -215,7 +215,7 @@ coefficients are one, and checks the converse elimination on this fixed
 nonzero support:
 
 ```text
-python verify_q2_n6_k4_d4_family.py
+python claims/finite/n06/q2-k4-d4-construction/verify_q2_n6_k4_d4_family.py
 ```
 
 ## What this teaches us about the prize conjecture
@@ -259,5 +259,5 @@ The fixed-support rank-one obstruction is replayed by:
 
 ```text
 python \
-  verify_q2_herald_promotion_rank_barrier.py
+  claims/finite/n06/q2-k4-d4-construction/verify_q2_herald_promotion_rank_barrier.py
 ```

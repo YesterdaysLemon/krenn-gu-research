@@ -2,9 +2,23 @@
 
 from __future__ import annotations
 
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__)
+
 from collections import Counter
 
-from prism_orbit_screen import Polynomial, clean_polynomial
+from krenn_gu.prism_orbit_screen import Polynomial, clean_polynomial
 
 
 def partial_parameter_names(rank_one_blocks: set[int]) -> list[str]:

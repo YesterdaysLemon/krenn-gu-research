@@ -26,21 +26,21 @@ from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
 
-from cancellation_transport import (
+from krenn_gu.cancellation_transport import (
     cube_cancellation_transport_certificates,
     cube_two_monomial_rectangle_certificates,
 )
-from eight_vertex_degree4_cegar import (
+from krenn_gu.eight_vertex_degree4_cegar import (
     full_equations,
     symmetry_clauses,
 )
-from eight_vertex_sparse_exact import local_allowed_edges
-from odd_binomial_cycle import (
+from krenn_gu.eight_vertex_sparse_exact import local_allowed_edges
+from krenn_gu.odd_binomial_cycle import (
     cube_odd_binomial_triangle_certificates,
 )
-from prism_laurent_reduction import primitive_binomial_reduction
-from search_witness import EquationSystem
-from signed_binomial_lattice import (
+from krenn_gu.prism_laurent_reduction import primitive_binomial_reduction
+from krenn_gu.search_witness import EquationSystem
+from krenn_gu.signed_binomial_lattice import (
     cube_verify_signed_binomial_lattice_certificate,
 )
 

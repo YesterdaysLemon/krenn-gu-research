@@ -24,7 +24,7 @@ eight fivefolds and one sixfold.
 
 The component was located on the deep `x_3=0` wall of the in-out
 path chart in
-[`P4_INOUT_PATH_STRATUM_WORKING_NOTE.md`](../../../../P4_INOUT_PATH_STRATUM_WORKING_NOTE.md).
+[`P4_INOUT_PATH_STRATUM_WORKING_NOTE.md`](../../boundaries/inout-path-stratum/P4_INOUT_PATH_STRATUM_WORKING_NOTE.md).
 This document is its standalone theorem: a gauge-reduced free
 rational normal form, the smooth-incidence certificate replayed from
 that normal form, and the separating invariants.

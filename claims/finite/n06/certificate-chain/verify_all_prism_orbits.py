@@ -2,6 +2,20 @@
 
 from __future__ import annotations
 
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__, also=["."])
+
 import argparse
 import json
 from concurrent.futures import ProcessPoolExecutor
@@ -9,20 +23,20 @@ from pathlib import Path
 
 import numpy as np
 
-from enumerate_cubic_rankone import graph_edges, nested_pattern
-from prism_laurent_reduction import primitive_binomial_reduction
+from krenn_gu.enumerate_cubic_rankone import graph_edges, nested_pattern
+from krenn_gu.prism_laurent_reduction import primitive_binomial_reduction
 from prism_orbit_batch import complement_edge_blocks
-from prism_orbit_screen import orbit_equations, prism_orbit_representatives
+from krenn_gu.prism_orbit_screen import orbit_equations, prism_orbit_representatives
 from prism_partial_core import partial_core_audit
 from prism_partial_parameterization import (
     partial_parameter_names,
     partially_parameterize_polynomial,
 )
 from prism_support_sat import free_variable_indices, lambda_nonzero_variables
-from rankone_support_sat import support_cnf
-from search_killer_patterns import active_mask_for_pattern
-from search_prism_stratum import PRISM_MATCHINGS
-from search_witness import EquationSystem
+from krenn_gu.rankone_support_sat import support_cnf
+from krenn_gu.search_killer_patterns import active_mask_for_pattern
+from krenn_gu.search_prism_stratum import PRISM_MATCHINGS
+from krenn_gu.search_witness import EquationSystem
 
 
 def verify_orbit(

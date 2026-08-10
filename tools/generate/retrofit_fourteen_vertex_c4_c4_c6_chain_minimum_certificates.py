@@ -112,8 +112,12 @@ def main() -> None:
             if not reused:
                 command = [
                     sys.executable,
-                    "minimize_fourteen_vertex_two_even_cycle_"
-                    "certificate_activation.py",
+                    str(
+                        REPO_ROOT
+                        / "claims/finite/n14/"
+                        "minimize_fourteen_vertex_two_even_cycle_"
+                        "certificate_activation.py"
+                    ),
                     str(samples),
                     str(analysis),
                     "--survivor-index",
@@ -131,8 +135,12 @@ def main() -> None:
                 subprocess.run(
                     [
                         sys.executable,
-                        "verify_fourteen_vertex_two_even_cycle_"
-                        "minimum_activity_certificate.py",
+                        str(
+                            REPO_ROOT
+                            / "claims/finite/n14/"
+                            "verify_fourteen_vertex_two_even_cycle_"
+                            "minimum_activity_certificate.py"
+                        ),
                         str(certificate),
                         "--output",
                         str(audit),

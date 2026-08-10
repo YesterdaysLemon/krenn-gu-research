@@ -9,7 +9,7 @@ discovery_claim_label: CANDIDATE
 scope: complete diagonal source-torus DVR/Puiseux atlas over (p,q)=(0,1),(-1,0)
 inputs: recorded by SHA-256 in the replay output
 method: exact Plucker limits, Z3 min-plus exhaustion, exact symbolic minors/permanents, Hall support
-command: uv run --with sympy --with z3-solver python derive_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py
+command: uv run --with sympy --with z3-solver python claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/derive_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py
 outputs: this report, the JSON certificate, and the replay script
 limitations: independently verified for diagonal arcs only; closure placement only; no arbitrary GL4 classification; global conjecture unresolved
 ```

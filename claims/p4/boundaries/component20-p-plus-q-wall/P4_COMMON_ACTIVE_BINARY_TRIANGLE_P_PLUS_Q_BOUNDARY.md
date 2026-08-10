@@ -519,10 +519,10 @@ The following tempting shortcuts are explicitly rejected.
 
 ```text
 uv run --with sympy --with z3-solver python \
-  verify_p4_common_active_binary_triangle_p_plus_q_boundary.py
+  claims/p4/boundaries/component20-p-plus-q-wall/verify_p4_common_active_binary_triangle_p_plus_q_boundary.py
 
 uv run --with sympy python \
-  audit_p4_common_active_binary_triangle_p_plus_q_boundary.py
+  claims/p4/boundaries/component20-p-plus-q-wall/audit_p4_common_active_binary_triangle_p_plus_q_boundary.py
 
 uv run --with sympy python claims/p4/classifications/pair-geometry/rank-two-pair-kernel-geometry/verify_p4_rank_two_pair_kernel_geometry.py
 uv run --with sympy python claims/p4/classifications/pair-geometry/tangent-rank-two-pair-purity/verify_p4_tangent_rank_two_pair_purity_classification.py

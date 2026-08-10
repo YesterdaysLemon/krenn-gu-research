@@ -241,7 +241,7 @@ def main() -> None:
         run_quiet(
             [
                 sys.executable,
-                str(REPO_ROOT / "audit_fourteen_vertex_c4_c4_c6_rule_sat_orbits.py"),
+                str(HERE / "audit_fourteen_vertex_c4_c4_c6_rule_sat_orbits.py"),
                 "--cnf",
                 str(cnf_path),
                 "--selector-zero",

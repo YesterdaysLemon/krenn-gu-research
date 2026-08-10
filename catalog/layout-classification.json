@@ -22,12 +22,12 @@
     "arbitrary-order": 439,
     "p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres": 7,
     "p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas": 7,
-    "finite/eight-vertex": 28,
+    "finite/eight-vertex": 30,
     "finite/n08/history/withdrawn-balanced-all-bridge-set-tree": 1,
     "finite/n08/degree-six-kotzig-port": 3,
     "p7/five-root-diagonal-target-incidence": 3,
     "p5/frontier/five-row-projective-incidence": 3,
-    "finite/fourteen-vertex": 70,
+    "finite/fourteen-vertex": 71,
     "p4/classifications/triangle-211/211-triangle-complete": 3,
     "p4/classifications/star/all-center-kernel-star-111-obstruction": 3,
     "p4/classifications/star/all-double-endpoint-star-111-obstruction": 3,
@@ -286,15 +286,15 @@
     "audit_report": 2,
     "catalog": 1,
     "tool_script": 59,
-    "claim_script": 1516,
-    "shared_library": 22,
+    "claim_script": 1519,
+    "shared_library": 19,
     "claim_data": 19,
     "test": 4
   },
   "confidence_counts": {
-    "medium": 570,
+    "medium": 567,
     "low": 333,
-    "high": 1455
+    "high": 1458
   },
   "classified_count": 2358,
   "unclassified_count": 5,
@@ -519,7 +519,6 @@
       "audit_five_row_projective_normal_forms.py"
     ],
     "FOURTEEN_VERTEX_NO_ONE_TERM_SUPPORT": [
-      "verify_fourteen_vertex_no_one_term_support.py"
     ],
     "FOUR_BLOCKER_IDEAL_OBSTRUCTION": [
       "verify_four_blocker_ideal_obstruction.py",
@@ -12394,7 +12393,7 @@
       "old_path": "analyze_fourteen_vertex_c4_c4_c6_relational_rules.py",
       "proposed_path": "claims/finite/n14/analyze_fourteen_vertex_c4_c4_c6_relational_rules.py",
       "category": "claim_script",
-      "claim_family": "finite/n14",
+      "claim_family": "finite/fourteen-vertex",
       "confidence": "high",
       "evidence": [
         "tool prefix (exploration/derivation)",
@@ -18911,12 +18910,14 @@
     },
     {
       "old_path": "eight_vertex_degree4_support.py",
-      "proposed_path": "src/krenn_gu/eight_vertex_degree4_support.py",
-      "category": "shared_library",
-      "claim_family": null,
-      "confidence": "medium",
+      "proposed_path": "claims/finite/n08/eight_vertex_degree4_support.py",
+      "category": "claim_script",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high",
       "evidence": [
-        "imported by 5 root scripts"
+        "hardcoded n=8,d=3 support-screen CLI for EIGHT_VERTEX_DEGREE4_FRONTIER",
+        "all consumers are finite/n08 or its focused test",
+        "Stage 33 inverse-taper correction of an earlier infrastructure misclassification"
       ]
     },
     {
@@ -20397,12 +20398,14 @@
     },
     {
       "old_path": "verify_fourteen_vertex_no_one_term_support.py",
-      "proposed_path": "src/krenn_gu/verify_fourteen_vertex_no_one_term_support.py",
-      "category": "shared_library",
-      "claim_family": null,
-      "confidence": "medium",
+      "proposed_path": "claims/finite/n14/verify_fourteen_vertex_no_one_term_support.py",
+      "category": "claim_script",
+      "claim_family": "finite/n14",
+      "confidence": "high",
       "evidence": [
-        "imported by 4 root scripts"
+        "imported only by four finite/n14 claim scripts",
+        "independent audit named by FOURTEEN_VERTEX_NO_ONE_TERM_SUPPORT.md",
+        "Stage 33 inverse-taper correction of an earlier infrastructure misclassification"
       ]
     },
     {
@@ -20420,12 +20423,14 @@
     },
     {
       "old_path": "verify_laurent_batch_manifest.py",
-      "proposed_path": "src/krenn_gu/verify_laurent_batch_manifest.py",
-      "category": "shared_library",
-      "claim_family": null,
-      "confidence": "medium",
+      "proposed_path": "claims/finite/n08/verify_laurent_batch_manifest.py",
+      "category": "claim_script",
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high",
       "evidence": [
-        "imported by 6 root scripts"
+        "hardcoded EquationSystem(8,3) independent Laurent audit CLI",
+        "all consumers are finite/n08 claim carriers",
+        "Stage 33 inverse-taper correction of an earlier infrastructure misclassification"
       ]
     },
     {

@@ -104,8 +104,8 @@ distinct source coordinates in a permanent term.
 Run:
 
 ```text
-python verify_p3_zero_hyperplane_product.py
-python audit_p3_zero_hyperplane_product.py
+python claims/p3/restrictions/verify_p3_zero_hyperplane_product.py
+python claims/p3/restrictions/audit_p3_zero_hyperplane_product.py
 ```
 
 The primary verifier checks the determinant identity, the three

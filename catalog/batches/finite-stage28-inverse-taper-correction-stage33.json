@@ -1,0 +1,30 @@
+{
+  "batch_schema_version": 2,
+  "batch_id": "finite-stage28-inverse-taper-correction-stage33",
+  "approved_by": "Codex (exact mapping reviewer under repository-owner standing delegation dated 2026-08-08; fresh Tier-2 semantic and mechanical review required at the final clean correction head)",
+  "approved_at": "2026-08-10",
+  "base_sha": "5726180037986d27b9e445ee058e6c221b6d2d03",
+  "manifest_sha256": "c65b9241ca2c3d152015bdad6faa3ce114d13758951fee97203fb2333a48527f",
+  "mapping_sha256": "b64486bea54c5bcd533589c9bfd70d6d7f2318d575afe7967f7825f3da103bc8",
+  "source_identity_sha256": "0fe5a8efff769f43cd37061c694756f95491f3f32618a974a50ca2d5ef2e8aa3",
+  "member_count": 3,
+  "moves": [
+    {
+      "old_path": "eight_vertex_degree4_support.py",
+      "new_path": "claims/finite/n08/eight_vertex_degree4_support.py",
+      "source_blob": "231bb2d32fdb2b0e36cc41bd7b40147428a5df20"
+    },
+    {
+      "old_path": "verify_fourteen_vertex_no_one_term_support.py",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_no_one_term_support.py",
+      "source_blob": "dc3f3c04cdb47dad7999b2ee97880fad32332a9b"
+    },
+    {
+      "old_path": "verify_laurent_batch_manifest.py",
+      "new_path": "claims/finite/n08/verify_laurent_batch_manifest.py",
+      "source_blob": "865a8925c6beb093cd1f02e39f2b1ae751f806e8"
+    }
+  ],
+  "rationale": "Correct three Stage 28 inverse-taper leaf errors: each module is a hardcoded finite claim/evidence carrier whose consumers stay inside its n=8 or n=14 scientific owner, not shared infrastructure.",
+  "notes": "The original finite-p4-stage28 batch remains immutable historical provenance for the intermediate root-to-src moves. This narrow correction freezes the canonical original-root-to-final-claim mapping. It changes no mathematical status or evidence role and leaves global Krenn-Gu UNRESOLVED. The n=8 modules received only later path/import portability repairs after their original blob-preserving move."
+}

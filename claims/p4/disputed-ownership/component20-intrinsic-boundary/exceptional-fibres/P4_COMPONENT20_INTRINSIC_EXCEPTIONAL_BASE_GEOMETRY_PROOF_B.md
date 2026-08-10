@@ -11,7 +11,7 @@ inputs:
   P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md: dcaae5365f5e2072e798c2ee52dea47c0d5c48f073ed7553ae5f758e9830f0b2
   P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md: 667611de1e8bd08dd8c1a5b3b3c431ab57df523f834828c4258d881833b9ee82
 method: fresh subset-algebra permanent reconstruction, polynomial Pluecker extension, transverse base-ideal Jacobian, and exact four-region min-plus proof
-command: uv run --with sympy python derive_p4_component20_intrinsic_exceptional_base_geometry_proof_b.py
+command: uv run --with sympy python claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/derive_p4_component20_intrinsic_exceptional_base_geometry_proof_b.py
 outputs:
   derive_p4_component20_intrinsic_exceptional_base_geometry_proof_b.py: hash reported by replay
   P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md: hash reported by replay
@@ -271,10 +271,10 @@ source changes.
 
 ```text
 uv run --with sympy python \
-  derive_p4_component20_intrinsic_exceptional_base_geometry_proof_b.py
+  claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/derive_p4_component20_intrinsic_exceptional_base_geometry_proof_b.py
 
 uv run --with sympy --with z3-solver python \
-  audit_component20_intrinsic_wall_exceptional_fibres_candidate.py
+  claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/audit_component20_intrinsic_wall_exceptional_fibres_candidate.py
 ```
 
 The replay is exact over characteristic zero and imports no other research

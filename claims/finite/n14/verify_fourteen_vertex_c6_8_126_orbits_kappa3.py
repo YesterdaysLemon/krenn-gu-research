@@ -17,7 +17,7 @@ for _p in Path(__file__).resolve().parents:
         break
 from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
 
-REPO_ROOT, HERE = bootstrap(__file__)
+REPO_ROOT, HERE = bootstrap(__file__, also=["."])
 expose_claim_package(REPO_ROOT, "claims/finite/n14")
 
 from verify_fourteen_vertex_c6_8_125_orbits_kappa3 import (
@@ -173,7 +173,7 @@ def main() -> None:
     run_quiet(
         [
             sys.executable,
-            "audit_fourteen_vertex_c4_c4_c6_rule_sat_orbits.py",
+            str(HERE / "audit_fourteen_vertex_c4_c4_c6_rule_sat_orbits.py"),
             "--cnf",
             str(global_cnf),
             "--selector-zero",

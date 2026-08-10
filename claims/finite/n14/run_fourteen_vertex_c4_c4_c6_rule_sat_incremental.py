@@ -7,6 +7,20 @@ clauses from each newly analyzed simple fork in place.
 """
 
 from __future__ import annotations
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__, also=["."])
+
 
 import argparse
 import itertools
@@ -179,7 +193,7 @@ def richer_certificate(
     subprocess.run(
         [
             sys.executable,
-            "analyze_fourteen_vertex_even_cycle_double_pair_fork.py",
+            str(HERE / "analyze_fourteen_vertex_even_cycle_double_pair_fork.py"),
             str(samples_path),
             "--survivor-index",
             str(survivor_index),
@@ -196,7 +210,7 @@ def richer_certificate(
         subprocess.run(
             [
                 sys.executable,
-                "verify_fourteen_vertex_even_cycle_double_pair_fork.py",
+                str(HERE / "verify_fourteen_vertex_even_cycle_double_pair_fork.py"),
                 str(double_path),
                 "--output",
                 str(double_verified),
@@ -235,7 +249,7 @@ def richer_certificate(
     subprocess.run(
         [
             sys.executable,
-            "analyze_fourteen_vertex_forced_slice_factor_cegar.py",
+            str(HERE / "analyze_fourteen_vertex_forced_slice_factor_cegar.py"),
             str(samples_path),
             str(double_path),
             "--survivor-index",
@@ -256,7 +270,7 @@ def richer_certificate(
     subprocess.run(
         [
             sys.executable,
-            "verify_fourteen_vertex_forced_slice_factor_cegar.py",
+            str(HERE / "verify_fourteen_vertex_forced_slice_factor_cegar.py"),
             str(cegar_path),
             "--output",
             str(cegar_verified),
@@ -278,7 +292,7 @@ def richer_certificate(
     subprocess.run(
         [
             sys.executable,
-            "extract_fourteen_vertex_forced_slice_factor_cegar_core.py",
+            str(HERE / "extract_fourteen_vertex_forced_slice_factor_cegar_core.py"),
             str(cegar_path),
             "--output",
             str(core_path),
@@ -289,7 +303,7 @@ def richer_certificate(
     subprocess.run(
         [
             sys.executable,
-            "verify_fourteen_vertex_forced_slice_factor_cegar_core.py",
+            str(HERE / "verify_fourteen_vertex_forced_slice_factor_cegar_core.py"),
             str(core_path),
             "--output",
             str(core_verified),
@@ -470,7 +484,7 @@ def main() -> None:
     if args.compiled_cnf is None:
         compile_command = [
             sys.executable,
-            "analyze_fourteen_vertex_c4_c4_c6_rule_sat.py",
+            str(HERE / "analyze_fourteen_vertex_c4_c4_c6_rule_sat.py"),
         ]
         for samples, pattern in zip(
             args.extra_samples,
@@ -608,7 +622,7 @@ def main() -> None:
             subprocess.run(
                 [
                     sys.executable,
-                    "analyze_fourteen_vertex_even_cycle_factor_fork.py",
+                    str(HERE / "analyze_fourteen_vertex_even_cycle_factor_fork.py"),
                     str(samples_path),
                     "--survivor-index",
                     str(len(survivors) - 1),
@@ -639,7 +653,7 @@ def main() -> None:
                 subprocess.run(
                     [
                         sys.executable,
-                        "analyze_fourteen_vertex_even_cycle_factor_fork.py",
+                        str(HERE / "analyze_fourteen_vertex_even_cycle_factor_fork.py"),
                         str(samples_path),
                         "--survivor-index",
                         str(len(survivors) - 1),
@@ -737,8 +751,11 @@ def main() -> None:
                     )
                     minimum_command = [
                         sys.executable,
-                        "minimize_fourteen_vertex_two_even_cycle_"
-                        "certificate_activation.py",
+                        str(
+                            HERE
+                            / "minimize_fourteen_vertex_two_even_cycle_"
+                            "certificate_activation.py"
+                        ),
                         str(samples_path),
                         str(candidate_path),
                         "--survivor-index",
@@ -766,8 +783,11 @@ def main() -> None:
                     subprocess.run(
                         [
                             sys.executable,
-                            "verify_fourteen_vertex_two_even_cycle_"
-                            "minimum_activity_certificate.py",
+                            str(
+                                HERE
+                                / "verify_fourteen_vertex_two_even_cycle_"
+                                "minimum_activity_certificate.py"
+                            ),
                             str(minimum_path),
                             "--output",
                             str(minimum_audit_path),

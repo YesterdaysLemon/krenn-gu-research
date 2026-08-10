@@ -40,7 +40,7 @@ full-factor/colour orbits                               9
 
 The one-term sets give a supported monomial in a forbidden amplitude.
 Each matching fork satisfies the arbitrary-order cancellation-transport
-lemma in [`MATCHING_FORK_TRANSPORT_LEMMA.md`](../../../MATCHING_FORK_TRANSPORT_LEMMA.md).
+lemma in [`MATCHING_FORK_TRANSPORT_LEMMA.md`](../../arbitrary-order/MATCHING_FORK_TRANSPORT_LEMMA.md).
 Those elementary obstructions eliminate all but the final 156 ordered
 supports.
 

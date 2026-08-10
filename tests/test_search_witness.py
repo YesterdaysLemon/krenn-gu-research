@@ -1,5 +1,26 @@
 from __future__ import annotations
 
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import (  # noqa: E402
+    bootstrap as _bootstrap_repository,
+    expose_claim_package,
+)
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__)
+expose_claim_package(REPO_ROOT, "claims/finite/n06/certificate-chain")
+expose_claim_package(REPO_ROOT, "claims/finite/n08")
+expose_claim_package(REPO_ROOT, "claims/finite/n14")
+expose_claim_package(REPO_ROOT, "tools/explore")
+
 import itertools
 import json
 import tempfile
@@ -44,32 +65,21 @@ from augment_forbid_mixed_singleton_matching import (
     mixed_singleton_clauses,
 )
 from augment_no_binomial_amplitudes import no_binomial_extension
-from cancellation_transport import (
+from krenn_gu.cancellation_transport import (
     cancellation_transport_certificates,
     cube_cancellation_transport_certificates,
     cube_two_monomial_rectangle_certificates,
     support_cancellation_transport_conflict,
     support_two_monomial_rectangle_conflict,
 )
-import sys
 
-for _p in Path(__file__).resolve().parents:
-    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
-        sys.path.insert(0, str(_p / "src"))
-        break
-from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
-
-REPO_ROOT, HERE = bootstrap(__file__)
-expose_claim_package(REPO_ROOT, "claims/finite/n08")
-expose_claim_package(REPO_ROOT, "claims/finite/n14")
-
-from krenn_gu.eight_vertex_degree4_support import (
+from eight_vertex_degree4_support import (
     complement_edges,
     decode_graph6,
     is_four_connected,
     skeleton_matchings,
 )
-from eight_vertex_degree4_cegar import (
+from krenn_gu.eight_vertex_degree4_cegar import (
     local_variable_map,
     stabilizer as degree_center_stabilizer,
     transform_flat,
@@ -79,7 +89,7 @@ from eight_vertex_no_binomial_cegar import (
     indicator_variable,
     violated_no_binomial_clauses,
 )
-from eight_vertex_sparse_exact import positive_model_literals
+from krenn_gu.eight_vertex_sparse_exact import positive_model_literals
 from global_candidate_laurent_cegar import (
     add_entry_support_symmetry_breaking,
     candidate_variable_map,
@@ -110,9 +120,9 @@ from verify_fourteen_vertex_equality_survivor_signed_lattice import (
     perfect_matchings as signed_lattice_matchings,
 )
 from k33_support_analysis import build_problem
-from killer_pattern_certificates import audit_pattern
+from krenn_gu.killer_pattern_certificates import audit_pattern
 from killer_union_stratum import mutual_gauge_rank
-from odd_binomial_cycle import (
+from krenn_gu.odd_binomial_cycle import (
     cube_odd_binomial_triangle_certificates,
     matching_ratio_vector,
     odd_binomial_triangle_certificates,
@@ -121,8 +131,8 @@ from prism_matrix_core import (
     normalized_prism_automorphisms,
     prism_matrix_identities,
 )
-from prism_laurent_reduction import primitive_binomial_reduction
-from prism_orbit_screen import (
+from krenn_gu.prism_laurent_reduction import primitive_binomial_reduction
+from krenn_gu.prism_orbit_screen import (
     canonical_matching_pattern,
     clean_polynomial,
     core_rank_one_audit,
@@ -130,12 +140,12 @@ from prism_orbit_screen import (
     normalized_pattern_stratum,
     prism_orbit_representatives,
 )
-from prism_rankone_parameterization import (
+from krenn_gu.prism_rankone_parameterization import (
     parameterize_polynomial,
     parameterized_orbit_equations,
 )
-from rankone_support_sat import CNF
-from search_witness import (
+from krenn_gu.rankone_support_sat import CNF
+from krenn_gu.search_witness import (
     EquationSystem,
     balance_vertex_gauge,
     gradient_check,
@@ -143,7 +153,7 @@ from search_witness import (
 from singleton_slice_minors import (
     support_singleton_slice_minor_certificate,
 )
-from signed_binomial_lattice import (
+from krenn_gu.signed_binomial_lattice import (
     cube_verify_signed_binomial_lattice_certificate,
     signed_binomial_lattice_certificates,
     signed_lattice_used_equations,
@@ -154,8 +164,8 @@ from support_toric_degeneration import (
     verify_balanced_certificate,
     verify_degeneration_certificate,
 )
-from search_killer_patterns import active_mask_for_pattern
-from search_prism_stratum import (
+from krenn_gu.search_killer_patterns import active_mask_for_pattern
+from krenn_gu.search_prism_stratum import (
     K33_MATCHINGS,
     PRISM_MATCHINGS,
     normalized_stratum,
@@ -1300,7 +1310,7 @@ class EquationSystemTests(unittest.TestCase):
         self.assertEqual(result["deleted_entries"], 1)
 
     def test_eight_vertex_exact_equations_keep_required_sign(self) -> None:
-        from eight_vertex_sparse_exact import exact_equations
+        from krenn_gu.eight_vertex_sparse_exact import exact_equations
 
         system = EquationSystem(4, 3)
         variable_names = {
@@ -1319,7 +1329,7 @@ class EquationSystemTests(unittest.TestCase):
         )
 
     def test_minisat_model_parser_accepts_sat_header(self) -> None:
-        from eight_vertex_sparse_exact import positive_model_literals
+        from krenn_gu.eight_vertex_sparse_exact import positive_model_literals
 
         with tempfile.TemporaryDirectory() as directory:
             model = Path(directory) / "model.txt"
@@ -1644,7 +1654,7 @@ class EquationSystemTests(unittest.TestCase):
 
     def test_fourteen_vertex_matching_fork_activation(self) -> None:
         path = (
-            Path(__file__).parent
+            REPO_ROOT
             / "tmp"
             / "fourteen_vertex_direct_free_search_p500000_multiswitch.json"
         )
@@ -1694,7 +1704,7 @@ class EquationSystemTests(unittest.TestCase):
         self.assertEqual(len(certificate["rich_activity"]), 3)
 
     def test_fourteen_vertex_signed_lattice_reconstruction(self) -> None:
-        root = Path(__file__).parent
+        root = REPO_ROOT
         orbit_manifest = json.loads(
             (
                 root
@@ -1784,7 +1794,7 @@ class EquationSystemTests(unittest.TestCase):
     def test_fourteen_vertex_c14_rectangle_audit(self) -> None:
         payload = json.loads(
             (
-                Path(__file__).parent
+                REPO_ROOT
                 / "tmp"
                 / "fourteen_vertex_c14_rectangle_theorem_verified.json"
             ).read_text(encoding="utf-8")
@@ -1801,7 +1811,7 @@ class EquationSystemTests(unittest.TestCase):
     def test_fourteen_vertex_c3_c3_c8_family_audit(self) -> None:
         payload = json.loads(
             (
-                Path(__file__).parent
+                REPO_ROOT
                 / "tmp"
                 / "fourteen_vertex_c3_c3_c8_family_verified.json"
             ).read_text(encoding="utf-8")
@@ -1823,7 +1833,7 @@ class EquationSystemTests(unittest.TestCase):
     def test_fourteen_vertex_c3_c3_c4_c4_family_audit(self) -> None:
         payload = json.loads(
             (
-                Path(__file__).parent
+                REPO_ROOT
                 / "tmp"
                 / "fourteen_vertex_c3_c3_c4_c4_family_verified.json"
             ).read_text(encoding="utf-8")
@@ -1845,7 +1855,7 @@ class EquationSystemTests(unittest.TestCase):
     def test_fourteen_vertex_c4_c4_c6_hard_sample_audit(self) -> None:
         payload = json.loads(
             (
-                Path(__file__).parent
+                REPO_ROOT
                 / "tmp"
                 / (
                     "fourteen_vertex_c4_4_6_sample93_15_"
@@ -1872,7 +1882,7 @@ class EquationSystemTests(unittest.TestCase):
     def test_fourteen_vertex_c4_c5_c5_family_audit(self) -> None:
         payload = json.loads(
             (
-                Path(__file__).parent
+                REPO_ROOT
                 / "tmp"
                 / "fourteen_vertex_c4_c5_c5_family_verified.json"
             ).read_text(encoding="utf-8")

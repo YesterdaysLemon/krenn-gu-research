@@ -2,6 +2,20 @@
 
 from __future__ import annotations
 
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__)
+
 import argparse
 import itertools
 import json
@@ -9,14 +23,14 @@ from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-from killer_pattern_certificates import (
+from krenn_gu.killer_pattern_certificates import (
     audit_pattern,
     monochromatic_matchings,
     pattern_arcs,
 )
-from rankone_support_sat import solve_with_minisat, support_cnf
-from search_prism_stratum import K33_MATCHINGS, PRISM_MATCHINGS
-from search_witness import EquationSystem
+from krenn_gu.rankone_support_sat import solve_with_minisat, support_cnf
+from krenn_gu.search_prism_stratum import K33_MATCHINGS, PRISM_MATCHINGS
+from krenn_gu.search_witness import EquationSystem
 
 Edge = tuple[int, int]
 PatternTuple = tuple[int, ...]

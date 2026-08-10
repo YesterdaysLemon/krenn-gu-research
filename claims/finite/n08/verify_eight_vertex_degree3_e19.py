@@ -89,14 +89,14 @@ def main() -> None:
 
     run(
         [
-            str(REPO_ROOT / "src" / "krenn_gu" / "verify_laurent_batch_manifest.py"),
+            str(HERE / "verify_laurent_batch_manifest.py"),
             "--manifest",
             str(checkpoint),
         ]
     )
     run(
         [
-            str(REPO_ROOT / "src" / "krenn_gu" / "verify_laurent_batch_manifest.py"),
+            str(HERE / "verify_laurent_batch_manifest.py"),
             "--manifest",
             str(learned),
         ]

@@ -30,10 +30,10 @@ import z3
 
 ROOT = HERE
 SCRIPT = Path(__file__).resolve()
-REPORT = ROOT / "P4_COMPONENT20_TRANSVERSE_BASE_DIAGONAL_FAN_PROOF_B.md"
-COMPONENT = ROOT / "claims/p4/classifications/triangle-211/common-active-binary-triangle/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md"
+REPORT = HERE / "P4_COMPONENT20_TRANSVERSE_BASE_DIAGONAL_FAN_PROOF_B.md"
+COMPONENT = REPO_ROOT / "claims/p4/classifications/triangle-211/common-active-binary-triangle/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md"
 COMMON_SINGLETON = REPO_ROOT / "claims/p4/classifications/P4_COMMON_SINGLETON_COMPONENT.md"
-TRIPLE_KERNEL = ROOT / "claims/p4/classifications/triangle-211/triple-kernel-rank-one-triangle/P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md"
+TRIPLE_KERNEL = REPO_ROOT / "claims/p4/classifications/triangle-211/triple-kernel-rank-one-triangle/P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md"
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PAIRS = tuple(itertools.combinations(range(4), 2))
 

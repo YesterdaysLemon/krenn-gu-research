@@ -48,6 +48,13 @@ language; the directory as a whole is not a completed order-fourteen theorem.
 - [`FOURTEEN_VERTEX_C6_C8_125_ORBITS_KAPPA3_CERTIFICATE.md`](FOURTEEN_VERTEX_C6_C8_125_ORBITS_KAPPA3_CERTIFICATE.md)
 - [`FOURTEEN_VERTEX_C6_C8_130_ORBITS_KAPPA3_CERTIFICATE.md`](FOURTEEN_VERTEX_C6_C8_130_ORBITS_KAPPA3_CERTIFICATE.md)
 
+Stage 33 added 90 directly owned Python carriers. Their colocation changes no
+selector, case-cover, lifecycle, or evidence role. The same review also
+corrected the earlier infrastructure misclassification of
+[`verify_fourteen_vertex_no_one_term_support.py`](verify_fourteen_vertex_no_one_term_support.py):
+it is the claim-specific independent audit named by the no-one-term record,
+not a shared library.
+
 Colocated scripts are navigation companions, not a blanket promotion of every
 record to an independent audit. The global Krenn-Gu conjecture remains
 **UNRESOLVED**. Return to the [finite package index](../README.md).

@@ -21,8 +21,8 @@ REPO_ROOT, HERE = bootstrap(__file__)
 
 ROOT = HERE
 THEOREM = ROOT / "P5_Q4_211_A0_DISJOINT_P3_OBSTRUCTION.md"
-P3_THEOREM = REPO_ROOT / "P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md"
-P3_VERIFIER = REPO_ROOT / "verify_p3_decomposable_restriction_classification.py"
+P3_THEOREM = REPO_ROOT / "claims/p3/restrictions/P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md"
+P3_VERIFIER = REPO_ROOT / "claims/p3/restrictions/verify_p3_decomposable_restriction_classification.py"
 
 
 def sha256(path: Path) -> str:

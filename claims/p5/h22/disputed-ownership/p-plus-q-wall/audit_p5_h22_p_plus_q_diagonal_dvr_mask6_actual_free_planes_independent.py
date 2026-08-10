@@ -42,7 +42,7 @@ CANDIDATE_CERTIFICATE = ROOT / (
     "p5_h22_p_plus_q_diagonal_dvr_mask6_actual_free_planes_certificate.json"
 )
 LEDGER = ROOT / "p5_h22_p_plus_q_diagonal_dvr_coverage.json"
-P4_WALL = REPO_ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
+P4_WALL = REPO_ROOT / "claims/p4/boundaries/component20-p-plus-q-wall/P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
 H22_DEFINITION = REPO_ROOT / "claims/p5/h22/embedded-p3/P5_H22_EMBEDDED_P3_COMPONENT_GENERIC_OBSTRUCTION.md"
 H22_REDUCTION = REPO_ROOT / "claims/p5/coordinate-cegar/P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md"
 

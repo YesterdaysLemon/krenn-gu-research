@@ -1,6 +1,20 @@
 """Verify the complete local cone of admissible D-transition potentials."""
 
 from __future__ import annotations
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__)
+
 
 from collections import Counter
 from fractions import Fraction
@@ -9,18 +23,12 @@ import itertools
 import json
 from pathlib import Path
 
+from krenn_gu.admissible_potential_cone import EXTREME_RAYS
+
 Normal = tuple[int, int, int]
 Vector = tuple[int, ...]
 
 PERMUTATIONS = tuple(itertools.permutations(range(3)))
-EXTREME_RAYS: tuple[Vector, ...] = (
-    (-4, 1, 1, 1, 6, -4),
-    (-4, 1, 6, 1, 1, -4),
-    (1, -4, 1, 1, -4, 6),
-    (1, -4, 1, 6, -4, 1),
-    (1, 6, -4, -4, 1, 1),
-    (6, 1, -4, -4, 1, 1),
-)
 
 
 def sha256(path: Path) -> str:

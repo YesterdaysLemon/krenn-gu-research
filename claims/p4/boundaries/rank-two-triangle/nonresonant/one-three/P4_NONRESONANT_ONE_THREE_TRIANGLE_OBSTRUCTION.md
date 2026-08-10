@@ -255,7 +255,7 @@ Purity makes that flattening rank one.  Therefore `r_ij<=2`, proving
 If one deliberately drops the rank-three hypothesis at this last
 step, (18) lands in the complete pure-`P_3` sign-rectangle
 classification:
-[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](../../../../../../P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md).
+[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](../../../../../p3/restrictions/P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md).
 Allowing the fourth plane to supply coordinate `s` is precisely the
 six-dimensional suspension component in
 [`P4_EMBEDDED_P3_PURE_COMPONENT.md`](../../../../components/embedded-p3/P4_EMBEDDED_P3_PURE_COMPONENT.md).

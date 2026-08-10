@@ -1,6 +1,22 @@
 """Apply the complete admissible potential cone to order-twelve residuals."""
 
 from __future__ import annotations
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
+from krenn_gu.bootstrap import expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__)
+expose_claim_package(REPO_ROOT, "claims/finite/n10/degree-six-kotzig-port")
+
 
 import argparse
 from collections import Counter
@@ -17,7 +33,7 @@ from analyze_ten_vertex_degree_six_kotzig_port_survivors import (
 from analyze_ten_vertex_permuted_potential_survivors import (
     permuted_potential,
 )
-from verify_full_admissible_potential_cone import EXTREME_RAYS
+from krenn_gu.admissible_potential_cone import EXTREME_RAYS
 
 
 def sha256(path: Path) -> str:
@@ -65,7 +81,7 @@ def main() -> None:
     parser.add_argument(
         "--cone-theorem",
         type=Path,
-        default=Path("FULL_ADMISSIBLE_POTENTIAL_CONE_LEMMA.md"),
+        default=REPO_ROOT / "claims/arbitrary-order/FULL_ADMISSIBLE_POTENTIAL_CONE_LEMMA.md",
     )
     parser.add_argument(
         "--output",

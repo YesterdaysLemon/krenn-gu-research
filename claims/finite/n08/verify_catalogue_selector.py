@@ -24,7 +24,7 @@ from eight_vertex_skeleton_batch import (
     canonical_role_skeletons,
     ordered_role_skeletons,
 )
-from eight_vertex_sparse_exact import local_allowed_edges
+from krenn_gu.eight_vertex_sparse_exact import local_allowed_edges
 
 
 def sha256(path: Path) -> str:

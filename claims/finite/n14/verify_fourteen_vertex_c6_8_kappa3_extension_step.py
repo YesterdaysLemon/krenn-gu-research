@@ -2,6 +2,20 @@
 
 from __future__ import annotations
 
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__, also=["."])
+
 import json
 import subprocess
 import sys
@@ -12,15 +26,6 @@ from pathlib import Path
 from pysat.formula import CNF
 
 from verify_fourteen_vertex_c6_8_128_orbits_kappa3 import read_json, sha256
-
-
-for _p in Path(__file__).resolve().parents:
-    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
-        sys.path.insert(0, str(_p / "src"))
-        break
-from krenn_gu.bootstrap import bootstrap  # noqa: E402
-
-REPO_ROOT, HERE = bootstrap(__file__)
 
 @dataclass(frozen=True)
 class Step:
@@ -156,7 +161,7 @@ def verify_step(
     run_quiet(
         [
             sys.executable,
-            "audit_fourteen_vertex_c4_c4_c6_rule_sat_orbits.py",
+            str(HERE / "audit_fourteen_vertex_c4_c4_c6_rule_sat_orbits.py"),
             "--cnf",
             str(global_cnf),
             "--selector-zero",

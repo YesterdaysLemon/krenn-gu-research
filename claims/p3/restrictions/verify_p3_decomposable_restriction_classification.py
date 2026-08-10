@@ -2,6 +2,20 @@
 """Verify the decomposable rank-at-least-two P3 classification."""
 
 from __future__ import annotations
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__)
+
 
 import hashlib
 import itertools
@@ -12,7 +26,7 @@ import sympy as sp
 
 
 ROOT = Path(__file__).resolve().parent
-THEOREM = ROOT / "P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md"
+THEOREM = HERE / "P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md"
 PERMUTATIONS = tuple(itertools.permutations(range(3)))
 
 

@@ -34,7 +34,7 @@ from explore_fourteen_vertex_equality_factor_family import (
     contiguous_cycles,
     full_automorphisms,
 )
-from explore_random_even_cycle_forks import cycle_edges
+from krenn_gu.explore_random_even_cycle_forks import cycle_edges
 
 Edge = tuple[int, int]
 

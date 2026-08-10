@@ -111,8 +111,8 @@ r_(i,s) is proportional to e_c^*.                      (4)
 Run:
 
 ```text
-python verify_five_row_projective_incidence.py
-python audit_five_row_projective_incidence.py
+python claims/p5/frontier/five-row-projective-incidence/verify_five_row_projective_incidence.py
+python claims/p5/frontier/five-row-projective-incidence/audit_five_row_projective_incidence.py
 ```
 
 The primary verifier exhausts all `3^10=59,049` edge-colour assignments
@@ -130,6 +130,6 @@ coordinate or target colour, and singleton rows chosen in different
 modes need not use different source coordinates.  There are 68 orbits
 of five singleton placements under source, mode, and target-colour
 symmetry.  The later
-[`FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md`](claims/arbitrary-order/FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md)
+[`FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md`](../../../arbitrary-order/FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md)
 refines each local map into three geometric strata; the exact permanent
 cancellation equations across the five modes remain.

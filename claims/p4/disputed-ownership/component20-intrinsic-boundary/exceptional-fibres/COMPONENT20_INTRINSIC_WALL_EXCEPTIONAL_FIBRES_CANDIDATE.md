@@ -16,7 +16,7 @@ inputs:
   P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md: 52168b35b43c40c483919c8fa1dd37e7c147cae5f331320d8656bf6a1ed309a9
   P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md: eb5a8fb528a9c367ec059a06a5630cbcb533be5c49a4ecd1ee8148cac6644b32
 method: direct Grassmann-plane reconstruction, exact squarefree permanents and pair ranks, first-order coefficient-map compactification, and characteristic-zero elimination with the Segre-chart coordinate retained polynomially
-command: uv run --with sympy python derive_component20_intrinsic_wall_exceptional_fibres_candidate.py
+command: uv run --with sympy python claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/derive_component20_intrinsic_wall_exceptional_fibres_candidate.py
 outputs:
   derive_component20_intrinsic_wall_exceptional_fibres_candidate.py: hash reported by replay
   component20_intrinsic_wall_exceptional_fibres_certificate.json: hash reported by replay
@@ -227,8 +227,8 @@ direction at `k=infinity` is asserted.
 ## Replay
 
 ```text
-uv run --with sympy python derive_component20_intrinsic_wall_exceptional_fibres_candidate.py
-uv run --with sympy --with z3-solver python audit_component20_intrinsic_wall_exceptional_fibres_candidate.py
+uv run --with sympy python claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/derive_component20_intrinsic_wall_exceptional_fibres_candidate.py
+uv run --with sympy --with z3-solver python claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/audit_component20_intrinsic_wall_exceptional_fibres_candidate.py
 ```
 
 The standalone replay reconstructs (1)--(16), emits fixed pair-rank witnesses

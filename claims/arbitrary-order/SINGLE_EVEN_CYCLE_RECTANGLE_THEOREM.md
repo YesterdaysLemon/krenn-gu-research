@@ -91,7 +91,7 @@ contradiction.
 Run:
 
 ```text
-python verify_fourteen_vertex_c14_rectangle_theorem.py
+python claims/finite/n14/verify_fourteen_vertex_c14_rectangle_theorem.py
 ```
 
 The output

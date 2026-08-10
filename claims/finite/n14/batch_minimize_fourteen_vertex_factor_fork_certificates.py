@@ -1,6 +1,20 @@
 """Batch-produce and independently replay minimum-activity certificates."""
 
 from __future__ import annotations
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__)
+
 
 import argparse
 import hashlib
@@ -43,8 +57,11 @@ def main() -> None:
         )
         command = [
             sys.executable,
-            "minimize_fourteen_vertex_two_even_cycle_"
-            "certificate_activation.py",
+            str(
+                HERE
+                / "minimize_fourteen_vertex_two_even_cycle_"
+                "certificate_activation.py"
+            ),
             str(args.samples),
             str(analysis),
             "--survivor-index",
@@ -60,8 +77,11 @@ def main() -> None:
         subprocess.run(
             [
                 sys.executable,
-                "verify_fourteen_vertex_two_even_cycle_"
-                "minimum_activity_certificate.py",
+                str(
+                    HERE
+                    / "verify_fourteen_vertex_two_even_cycle_"
+                    "minimum_activity_certificate.py"
+                ),
                 str(certificate),
                 "--output",
                 str(audit),

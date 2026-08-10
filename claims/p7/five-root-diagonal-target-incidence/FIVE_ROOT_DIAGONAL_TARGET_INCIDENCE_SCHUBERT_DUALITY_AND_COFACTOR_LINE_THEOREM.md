@@ -461,10 +461,10 @@ global Krenn--Gu:                                     UNRESOLVED.
 ## Replay
 
 ```powershell
-uv run --with sympy python verify_five_root_diagonal_target_incidence_schubert_duality_and_cofactor_line.py
-python audit_five_root_diagonal_target_incidence_schubert_duality_and_cofactor_line.py
-python -m py_compile verify_five_root_diagonal_target_incidence_schubert_duality_and_cofactor_line.py audit_five_root_diagonal_target_incidence_schubert_duality_and_cofactor_line.py
-uv run --with ruff ruff check verify_five_root_diagonal_target_incidence_schubert_duality_and_cofactor_line.py audit_five_root_diagonal_target_incidence_schubert_duality_and_cofactor_line.py
+uv run --with sympy python claims/p7/five-root-diagonal-target-incidence/verify_five_root_diagonal_target_incidence_schubert_duality_and_cofactor_line.py
+python claims/p7/five-root-diagonal-target-incidence/audit_five_root_diagonal_target_incidence_schubert_duality_and_cofactor_line.py
+python -m py_compile claims/p7/five-root-diagonal-target-incidence/verify_five_root_diagonal_target_incidence_schubert_duality_and_cofactor_line.py claims/p7/five-root-diagonal-target-incidence/audit_five_root_diagonal_target_incidence_schubert_duality_and_cofactor_line.py
+uv run --with ruff ruff check claims/p7/five-root-diagonal-target-incidence/verify_five_root_diagonal_target_incidence_schubert_duality_and_cofactor_line.py claims/p7/five-root-diagonal-target-incidence/audit_five_root_diagonal_target_incidence_schubert_duality_and_cofactor_line.py
 ```
 
 The primary replay verifies the quotient, dual, exterior-rank, cofactor-line,

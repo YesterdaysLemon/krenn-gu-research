@@ -9,13 +9,13 @@ normal-form identities remain exact; their claimed exhaustiveness and
 dimension consequence do not.
 
 The valid one-kernel-zero theorem is
-[`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](claims/p4/boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic/P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md),
+[`P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md`](../../boundaries/rank-two-triangle/resonant/flat-kernel-zero-binary-cubic/P4_RESONANT_FLAT_KERNEL_ZERO_BINARY_CUBIC_OBSTRUCTION.md),
 and the true full-support Borel chart is
-[`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](claims/p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic/P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md).
+[`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](../../boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic/P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md).
 
 The complete Borel classification has now been recovered by a different
 support-stratified proof:
-[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](claims/p4/classifications/triangle-211/rank-two-relation-triangle-corrected/P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
+[`P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md`](../../classifications/triangle-211/rank-two-relation-triangle-corrected/P4_RANK_TWO_RELATION_TRIANGLE_CORRECTED_CLASSIFICATION.md).
 Its survivor is the three-parameter marked family
 `U_i=span(a,b+alpha_i*a_bar)` with nonzero sum of the `alpha_i`.  The family
 displayed below is the exact `alpha_1=0` slice, not the whole Borel moduli
@@ -24,9 +24,9 @@ exhaustiveness argument.
 
 The withdrawn argument had claimed an exact classification of the
 zero-additive-holonomy branch left by
-[`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](claims/p4/classifications/rank-two-triangle/resonant/affine-holonomy-reduction/P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md).
+[`P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md`](../../classifications/rank-two-triangle/resonant/affine-holonomy-reduction/P4_RESONANT_RANK_TWO_TRIANGLE_AFFINE_HOLONOMY_REDUCTION.md).
 It combines the generic cross-ratio obstruction in
-[`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](claims/p4/boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic/P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md)
+[`P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md`](../../boundaries/rank-two-triangle/resonant/flat-generic-binary-cubic/P4_RESONANT_FLAT_GENERIC_BINARY_CUBIC_OBSTRUCTION.md)
 with a finite projective classification of its collision boundary.
 
 The branch is not empty.  Up to source-coordinate permutation,
@@ -304,8 +304,8 @@ missing component.
 Run:
 
 ```text
-python verify_p4_resonant_flat_triangle_classification_withdrawn_overstrong.py
-python audit_p4_resonant_flat_triangle_classification_withdrawn_overstrong.py
+python claims/p4/history/resonant-flat-triangle/verify_p4_resonant_flat_triangle_classification_withdrawn_overstrong.py
+python claims/p4/history/resonant-flat-triangle/audit_p4_resonant_flat_triangle_classification_withdrawn_overstrong.py
 ```
 
 These scripts replay the exact displayed normal forms but do not

@@ -16,12 +16,26 @@ only exact vector arithmetic over the integers.
 """
 
 from __future__ import annotations
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__)
+
 
 from collections.abc import Sequence
 from typing import Any
 
-from prism_laurent_reduction import modular_independent_indices
-from search_witness import EquationSystem
+from krenn_gu.prism_laurent_reduction import modular_independent_indices
+from krenn_gu.search_witness import EquationSystem
 
 SparseVector = tuple[tuple[int, int], ...]
 
@@ -569,7 +583,7 @@ def cube_verify_signed_binomial_lattice_certificate(
     certificate: dict[str, object],
 ) -> None:
     """Verify that a support cube decides and proves one lattice conflict."""
-    from cancellation_transport import decided_cube_activity
+    from krenn_gu.cancellation_transport import decided_cube_activity
 
     retained, _colourings, activities = decided_cube_activity(
         system,

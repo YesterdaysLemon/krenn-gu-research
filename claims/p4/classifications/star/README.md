@@ -46,18 +46,16 @@ members; they remain stable dependencies:
 
 ## Deliberately not in this spine
 
-- `P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG` —
-  withdrawn historical artifact; the classifier proposes
-  `claims/legacy/` (high confidence); belongs to a dedicated legacy
-  batch, not the star classification spine.
+- [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md`](../../history/rank-two-relation-star/P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md)
+  — withdrawn historical artifact; Stage 33 routed it to a dedicated history
+  package without revival.
 - Shared machinery (`verify_p4_directed_zero_divisor_triangle_components`,
   `verify_p4_common_singleton_component`,
-  `verify_p4_all_pair_rank_exceptional_graph_reduction`) — cross-family
-  use is dependency, not ownership.
-- P5 H22/H31 star-consumer population — downstream consumers; P5
-  migration is a later stage.
-- Other boundary theorems, global exhaustion machinery, atlases, and
-  working notes — separate ownership; cross-links only.
+  `verify_p4_all_pair_rank_exceptional_graph_reduction`) remains
+  parent-classification-owned; cross-family use is dependency, not ownership.
+- P5 H22/H31 star consumers now live under their P5 owners.
+- Other boundary theorems, global exhaustion machinery, atlases, and working
+  notes remain separately owned; cross-links do not transfer ownership.
 
 Migration provenance: `catalog/batches/p4-star-stage6.json`,
 `docs/architecture/p4-star-stage6-dry-run.md`, and

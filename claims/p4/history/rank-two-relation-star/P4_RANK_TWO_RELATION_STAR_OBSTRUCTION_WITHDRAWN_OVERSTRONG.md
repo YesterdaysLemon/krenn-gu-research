@@ -11,7 +11,7 @@ obstruction by that route.
 
 The star obstruction has since been reproved with the corrected Borel
 triangle classification and a separate full-support `2+2` chart:
-[`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](claims/p4/classifications/star/rank-two-relation-star-obstruction/P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md).
+[`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md`](../../classifications/star/rank-two-relation-star-obstruction/P4_RANK_TWO_RELATION_STAR_OBSTRUCTION.md).
 This file remains withdrawn because its original proof route is invalid;
 use the replacement theorem for the current result.
 
@@ -215,8 +215,8 @@ does not yet classify all mixed selections.
 Run:
 
 ```text
-python verify_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py
-python audit_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py
+python claims/p4/history/rank-two-relation-star/verify_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py
+python claims/p4/history/rank-two-relation-star/audit_p4_rank_two_relation_star_obstruction_withdrawn_overstrong.py
 ```
 
 These scripts replay the exact local identities but do not certify the

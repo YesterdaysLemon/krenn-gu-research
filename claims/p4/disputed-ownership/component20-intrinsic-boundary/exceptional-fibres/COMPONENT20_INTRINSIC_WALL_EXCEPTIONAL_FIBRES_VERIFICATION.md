@@ -17,7 +17,7 @@ inputs:
   P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md: 52168b35b43c40c483919c8fa1dd37e7c147cae5f331320d8656bf6a1ed309a9
   P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md: eb5a8fb528a9c367ec059a06a5630cbcb533be5c49a4ecd1ee8148cac6644b32
 method: no-import plane and permanent reconstruction, transverse graph calculation, exact polynomial-rho/lambda elimination with inverse saturation, half-centre pair and arc audit, and exact real-linear valuation-cone verification
-command: uv run --with sympy --with z3-solver python audit_component20_intrinsic_wall_exceptional_fibres_candidate.py
+command: uv run --with sympy --with z3-solver python claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/audit_component20_intrinsic_wall_exceptional_fibres_candidate.py
 outputs:
   audit_component20_intrinsic_wall_exceptional_fibres_candidate.py: ffc3bb2176756487c7e889a4487f0b68564868e0f0ff748cbb0d8de75b112329
   COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_VERIFICATION.md: hash reported by replay

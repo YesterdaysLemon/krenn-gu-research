@@ -21,7 +21,7 @@ from krenn_gu.bootstrap import bootstrap  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
 THEOREM = HERE / "P4_EMBEDDED_P3_PURE_COMPONENT.md"
-P3_THEOREM = REPO_ROOT / "P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md"
+P3_THEOREM = REPO_ROOT / "claims/p3/restrictions/P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md"
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 PERMUTATIONS = tuple(itertools.permutations(range(4)))
 PAIRS = tuple(itertools.combinations(range(4), 2))

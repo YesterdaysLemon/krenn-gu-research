@@ -317,8 +317,8 @@ def update_ledger(old_to_new: dict, root: pathlib.Path,
             if base_doc in old_to_new:
                 e[key] = old_to_new[base_doc] + suffix
                 touched = True
+        doc = e["document"].split(" (")[0]
         if touched:
-            doc = e["document"].split(" (")[0]
             meta = resolve_claim_package_metadata(
                 doc, manifest_moves)
             if meta is not None:
@@ -330,13 +330,13 @@ def update_ledger(old_to_new: dict, root: pathlib.Path,
                 if n in (doc, e.get("primary_verifier"),
                          e.get("independent_audit")) and o not in legacy:
                     legacy.append(o)
-            if rehash and (root / doc).exists():
-                hf = hash_func or blob_sha16
-                try:
-                    e["document_sha256_16"] = hf(root, doc)
-                except (ValueError, subprocess.SubprocessError):
-                    pass
             moved_entries += 1
+        if rehash and (root / doc).exists():
+            hf = hash_func or blob_sha16
+            try:
+                e["document_sha256_16"] = hf(root, doc)
+            except (ValueError, subprocess.SubprocessError):
+                pass
     ledger_path.write_text(
         json.dumps(ledger, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8")

@@ -27,7 +27,7 @@ from analyze_fourteen_vertex_portal_determinant_lattice import (
     cycle_edges,
     edge,
 )
-from integer_signed_lattice import IntegerSignedLattice
+from krenn_gu.integer_signed_lattice import IntegerSignedLattice
 
 
 N = 14

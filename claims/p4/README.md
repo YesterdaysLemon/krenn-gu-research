@@ -53,11 +53,21 @@ Stage 8).  Genuine boundary theorems and obstructions are kept under
 [`boundaries/pair-geometry/`](boundaries/pair-geometry/); Stage 8
 established
 [`boundaries/rank-two-triangle/`](boundaries/rank-two-triangle/)).
-Withdrawn historical attempts in the rank-two-triangle lineage stay
-at the root pending a dedicated legacy stage and are labeled
-withdrawn, not live.  Migration completeness is not mathematical
-exhaustiveness: each spine README states its own scope and the
-global conjecture remains **UNRESOLVED**.
+Three withdrawn P4 attempts are now preserved, without
+revival, under
+[`history/resonant-flat-triangle/`](history/resonant-flat-triangle/),
+[`history/rank-two-relation-star/`](history/rank-two-relation-star/), and
+[`history/mixed-two-rank-two-triangle/`](history/mixed-two-rank-two-triangle/).
+Stage 33 also routed the `p+q` boundary to
+[`boundaries/component20-p-plus-q-wall/`](boundaries/component20-p-plus-q-wall/),
+the in/out working stratum to
+[`boundaries/inout-path-stratum/`](boundaries/inout-path-stratum/), and the
+unresolved Component20 proof-boundary disagreement to the neutral
+[`disputed-ownership/component20-intrinsic-boundary/`](disputed-ownership/component20-intrinsic-boundary/)
+package. The neutral package records, but does not adjudicate, that
+disagreement. Migration completeness is not mathematical exhaustiveness;
+every artifact retains its written scope and lifecycle, and the global
+conjecture remains **UNRESOLVED**.
 
 ## Stage 28 finite/P4 tranche
 

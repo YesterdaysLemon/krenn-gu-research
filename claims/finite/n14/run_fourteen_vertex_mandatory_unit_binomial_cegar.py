@@ -96,7 +96,7 @@ def main() -> None:
         analysis_result = run(
             [
                 sys.executable,
-                "analyze_fourteen_vertex_partial_minimal_circuit_lattice.py",
+                str(HERE / "analyze_fourteen_vertex_partial_minimal_circuit_lattice.py"),
                 "--cnf",
                 str(current_cnf),
                 "--partition",
@@ -123,7 +123,7 @@ def main() -> None:
         closure_result = run(
             [
                 sys.executable,
-                "analyze_fourteen_vertex_partial_circuit_binomial_closure.py",
+                str(HERE / "analyze_fourteen_vertex_partial_circuit_binomial_closure.py"),
                 str(partial),
                 "--select-mandatory-unit-core",
                 "--output",
@@ -172,7 +172,12 @@ def main() -> None:
         augment_result = run(
             [
                 sys.executable,
-                "tools/generate/augment_fourteen_vertex_rule_cnf_with_binomial_support_closures.py",
+                str(
+                    REPO_ROOT
+                    / "tools"
+                    / "generate"
+                    / "augment_fourteen_vertex_rule_cnf_with_binomial_support_closures.py"
+                ),
                 "--base-cnf",
                 str(current_cnf),
                 "--verified-support",

@@ -2,6 +2,24 @@
 
 from __future__ import annotations
 
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import (  # noqa: E402
+    bootstrap as _bootstrap_repository,
+    expose_claim_package,
+)
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__)
+expose_claim_package(REPO_ROOT, "claims/finite/n14")
+
 import unittest
 
 from analyze_fourteen_vertex_full_only_cycle_cover_cegar import (
@@ -18,17 +36,6 @@ from analyze_fourteen_vertex_unforced_factor_choice_cegar import (
     is_forbidden_equation,
     one_extra_cycle_blocking_clauses,
 )
-import sys
-from pathlib import Path
-
-for _p in Path(__file__).resolve().parents:
-    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
-        sys.path.insert(0, str(_p / "src"))
-        break
-from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
-
-REPO_ROOT, HERE = bootstrap(__file__)
-expose_claim_package(REPO_ROOT, "claims/finite/n14")
 
 from verify_fourteen_vertex_unforced_factor_choice_core import (
     dual_horn_unsat,

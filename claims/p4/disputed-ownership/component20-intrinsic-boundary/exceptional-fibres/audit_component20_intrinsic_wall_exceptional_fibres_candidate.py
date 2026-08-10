@@ -2,6 +2,20 @@
 """Independent no-import audit of component-20 exceptional wall fibres."""
 
 from __future__ import annotations
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__)
+
 
 import hashlib
 import itertools
@@ -21,24 +35,24 @@ ROOT = Path(__file__).resolve().parent
 SCRIPT = Path(__file__).resolve()
 SOLVER_DIR = ROOT / "tmp" / "component20_exceptional_fibres_audit_solver_inputs"
 FROZEN_COMMIT = "00c3574f854e1f86cb8ec2304645204479c3f75e"
-CANDIDATE_REPORT = ROOT / "COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md"
+CANDIDATE_REPORT = HERE / "COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md"
 CANDIDATE_SCRIPT = (
-    ROOT / "derive_component20_intrinsic_wall_exceptional_fibres_candidate.py"
+    HERE / "derive_component20_intrinsic_wall_exceptional_fibres_candidate.py"
 )
 CANDIDATE_CERTIFICATE = (
-    ROOT / "component20_intrinsic_wall_exceptional_fibres_certificate.json"
+    HERE / "component20_intrinsic_wall_exceptional_fibres_certificate.json"
 )
-PROOF_B_REPORT = ROOT / "P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md"
+PROOF_B_REPORT = HERE / "P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md"
 PROOF_B_SCRIPT = (
-    ROOT / "derive_p4_component20_intrinsic_exceptional_base_geometry_proof_b.py"
+    HERE / "derive_p4_component20_intrinsic_exceptional_base_geometry_proof_b.py"
 )
-COMPONENT_REPORT = ROOT / "claims/p4/classifications/triangle-211/common-active-binary-triangle/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md"
-WALL_GEOMETRY_REPORT = ROOT / "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
+COMPONENT_REPORT = REPO_ROOT / "claims/p4/classifications/triangle-211/common-active-binary-triangle/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md"
+WALL_GEOMETRY_REPORT = REPO_ROOT / "claims/p4/boundaries/component20-p-plus-q-wall/P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md"
 WALL_H22_REPORT = (
-    ROOT / "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md"
+    REPO_ROOT / "claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_OBSTRUCTION.md"
 )
-SUPPORT_ONE_REPORT = ROOT / "claims/p4/boundaries/pair-geometry/support-one-secant/P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md"
-REPORT = ROOT / "COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_VERIFICATION.md"
+SUPPORT_ONE_REPORT = REPO_ROOT / "claims/p4/boundaries/pair-geometry/support-one-secant/P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md"
+REPORT = HERE / "COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_VERIFICATION.md"
 WORDS = tuple(itertools.product((0, 1), repeat=4))
 MIXED_WORDS = WORDS[1:-1]
 ALPHA_WORD = WORDS[0]

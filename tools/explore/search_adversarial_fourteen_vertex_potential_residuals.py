@@ -1,6 +1,23 @@
 """Hill-climb reciprocal port graphs toward potential-ray residuals."""
 
 from __future__ import annotations
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
+from krenn_gu.bootstrap import expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__, also=["."])
+expose_claim_package(REPO_ROOT, "claims/finite/n10/degree-six-kotzig-port")
+expose_claim_package(REPO_ROOT, "claims/finite/n08/degree-six-kotzig-port")
+
 
 import argparse
 import hashlib
@@ -27,7 +44,7 @@ from scout_kotzig_full_cone_cells import catalogue
 from search_random_fourteen_vertex_potential_residuals import (
     randomized_port,
 )
-from verify_full_admissible_potential_cone import EXTREME_RAYS
+from krenn_gu.admissible_potential_cone import EXTREME_RAYS
 
 Normal = tuple[int, int, int]
 PortKey = tuple[int, int, int, int]

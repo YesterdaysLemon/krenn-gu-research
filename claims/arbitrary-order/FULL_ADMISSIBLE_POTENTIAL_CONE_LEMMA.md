@@ -170,8 +170,8 @@ the six extreme-ray/interior lexicographic refinements above.
 Run
 
 ```text
-python verify_full_admissible_potential_cone.py
-python audit_full_admissible_potential_cone.py
+python claims/arbitrary-order/verify_full_admissible_potential_cone.py
+python claims/arbitrary-order/audit_full_admissible_potential_cone.py
 ```
 
 The verifier reconstructs the 24 local states, all 48 saturated

@@ -2,6 +2,20 @@
 
 from __future__ import annotations
 
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__, also=["."])
+
 import argparse
 import itertools
 import json
@@ -14,23 +28,14 @@ from typing import Sequence
 
 import numpy as np
 
-from explore_random_even_cycle_forks import Edge, cycle_edges
+from krenn_gu.explore_random_even_cycle_forks import Edge, cycle_edges
 from explore_random_minimal_singleton_sets import (
     analyze_support,
     contiguous_cycles,
 )
 from search_minimal_singleton_counterexample import mutate, state_key
-import sys
 
-for _p in Path(__file__).resolve().parents:
-    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
-        sys.path.insert(0, str(_p / "src"))
-        break
-from krenn_gu.bootstrap import bootstrap  # noqa: E402
-
-REPO_ROOT, HERE = bootstrap(__file__)
-
-from krenn_gu.verify_fourteen_vertex_no_one_term_support import perfect_matchings
+from verify_fourteen_vertex_no_one_term_support import perfect_matchings
 
 
 def indexed_colouring(index: int, n: int) -> tuple[int, ...]:

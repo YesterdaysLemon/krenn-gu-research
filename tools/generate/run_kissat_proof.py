@@ -15,8 +15,10 @@ for _p in Path(__file__).resolve().parents:
         sys.path.insert(0, str(_p / "src"))
         break
 from krenn_gu.bootstrap import bootstrap  # noqa: E402
+from krenn_gu.bootstrap import expose_claim_package  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/finite/n08")
 
 from eight_vertex_native_kissat_laurent_batch import sha256, wsl_path
 

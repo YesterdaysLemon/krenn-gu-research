@@ -2,27 +2,32 @@
 
 from __future__ import annotations
 
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__, also=["."])
+
 import argparse
 import hashlib
 import json
 from pathlib import Path
 
-from eight_vertex_degree4_cegar import (
+from krenn_gu.eight_vertex_degree4_cegar import (
     full_equations,
     write_augmented_cnf,
 )
-from search_witness import EquationSystem
-import sys
+from krenn_gu.search_witness import EquationSystem
 
-for _p in Path(__file__).resolve().parents:
-    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
-        sys.path.insert(0, str(_p / "src"))
-        break
-from krenn_gu.bootstrap import bootstrap  # noqa: E402
-
-REPO_ROOT, HERE = bootstrap(__file__)
-
-from krenn_gu.verify_laurent_batch_manifest import (
+from verify_laurent_batch_manifest import (
     audit_conflict,
     structural_zero_indices,
 )

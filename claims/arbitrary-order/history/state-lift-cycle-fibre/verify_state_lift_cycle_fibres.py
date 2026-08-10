@@ -1,6 +1,22 @@
 """Verify the lifted-cycle fibre formula on all hard order-twelve cases."""
 
 from __future__ import annotations
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
+from krenn_gu.bootstrap import expose_claim_package  # noqa: E402
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__)
+expose_claim_package(REPO_ROOT, "claims/finite/n10/degree-six-kotzig-port")
+
 
 from collections import Counter
 import hashlib
@@ -14,7 +30,7 @@ from analyze_ten_vertex_degree_six_kotzig_port_survivors import (
 from analyze_ten_vertex_permuted_potential_survivors import (
     permuted_potential,
 )
-from verify_full_admissible_potential_cone import EXTREME_RAYS
+from krenn_gu.admissible_potential_cone import EXTREME_RAYS
 
 
 def sha256(path: Path) -> str:
@@ -36,7 +52,7 @@ def main() -> None:
     residuals_path = Path(
         "tmp", "twelve_vertex_six_potential_orbits_residuals.tsv"
     )
-    theorem_path = Path("STATE_LIFT_CYCLE_FIBRE_LEMMA.md")
+    theorem_path = HERE / "STATE_LIFT_CYCLE_FIBRE_LEMMA.md"
     cells = json.loads(
         cells_path.read_text(encoding="utf-8")
     )["cell_representatives"]

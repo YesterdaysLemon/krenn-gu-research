@@ -38,7 +38,7 @@ compatible ordered thirds                              0
 A two-edge one-term set activates a unique supported perfect matching in a
 forbidden coefficient.  Every matching fork satisfies the arbitrary-order
 cancellation-transport lemma in
-[`MATCHING_FORK_TRANSPORT_LEMMA.md`](../../../MATCHING_FORK_TRANSPORT_LEMMA.md).
+[`MATCHING_FORK_TRANSPORT_LEMMA.md`](../../arbitrary-order/MATCHING_FORK_TRANSPORT_LEMMA.md).
 Thus all eliminations are exact algebraic contradictions over the complex
 numbers, not heuristic filters.
 

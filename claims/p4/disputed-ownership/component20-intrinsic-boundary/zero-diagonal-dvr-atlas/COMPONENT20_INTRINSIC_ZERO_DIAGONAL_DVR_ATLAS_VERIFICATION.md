@@ -13,7 +13,7 @@ inputs:
   P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md: eb5a8fb528a9c367ec059a06a5630cbcb533be5c49a4ecd1ee8148cac6644b32
   P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md: 81b7346d5f4ce7205dc4c4563e6ecd95a98c59363db3498b1c355ea62489647c
 method: fresh polynomial Pluecker reconstruction, exact real-linear min-plus exhaustion, symbolic leading planes and permanent/minor witnesses, exact centre symmetry, component-hypothesis checks, and direct Hall support
-command: uv run --with sympy --with z3-solver python audit_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py
+command: uv run --with sympy --with z3-solver python claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/audit_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py
 outputs:
   audit_component20_intrinsic_zero_diagonal_dvr_atlas_candidate.py: f54bd0526c940d244a3bdc1e7a4953f76f855178053dae0726324afc47f17ede
   COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_VERIFICATION.md: hash reported by replay

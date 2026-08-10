@@ -158,11 +158,11 @@ pairwise-disjoint cubic diagonal branch.
 Run:
 
 ```text
-python explore_ten_vertex_degree_six_kotzig_ports.py
-python analyze_ten_vertex_degree_six_kotzig_port_survivors.py
-python analyze_ten_vertex_permuted_potential_survivors.py
-python audit_ten_vertex_permuted_potential_survivors.py
-python audit_ten_vertex_degree_six_kotzig_ports.py
+python claims/finite/n10/degree-six-kotzig-port/explore_ten_vertex_degree_six_kotzig_ports.py
+python claims/finite/n10/degree-six-kotzig-port/analyze_ten_vertex_degree_six_kotzig_port_survivors.py
+python claims/finite/n10/degree-six-kotzig-port/analyze_ten_vertex_permuted_potential_survivors.py
+python claims/finite/n10/degree-six-kotzig-port/audit_ten_vertex_permuted_potential_survivors.py
+python claims/finite/n10/degree-six-kotzig-port/audit_ten_vertex_degree_six_kotzig_ports.py
 ```
 
 The primary program propagates the normal-type bits along the Hamiltonian

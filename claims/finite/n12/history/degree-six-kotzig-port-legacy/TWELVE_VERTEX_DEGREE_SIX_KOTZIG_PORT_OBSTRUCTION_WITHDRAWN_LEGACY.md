@@ -170,11 +170,11 @@ python tools/explore/scout_twelve_vertex_six_potential_cells.py
 python tools/explore/count_twelve_vertex_port_cell_orbits.py
 python claims/finite/n12/audit_twelve_vertex_port_cell_orbits.py
 python tools/generate/write_twelve_vertex_orbit_input.py
-g++ -O3 -std=c++20 exhaust_twelve_vertex_six_potential_orbits.cpp
-python verify_full_admissible_potential_cone.py
-python analyze_twelve_vertex_full_potential_cone.py
-python analyze_twelve_vertex_six_potential_residuals.py
-python audit_twelve_vertex_six_potential_residuals.py
+g++ -O3 -std=c++20 claims/finite/n12/exhaust_twelve_vertex_six_potential_orbits.cpp
+python claims/arbitrary-order/verify_full_admissible_potential_cone.py
+python claims/finite/n12/history/degree-six-kotzig-port-legacy/analyze_twelve_vertex_full_potential_cone.py
+python claims/finite/n12/history/degree-six-kotzig-port-legacy/analyze_twelve_vertex_six_potential_residuals.py
+python claims/finite/n12/history/degree-six-kotzig-port-legacy/audit_twelve_vertex_six_potential_residuals.py
 ```
 
 The primary compiled pass and a separately written compiled audit use

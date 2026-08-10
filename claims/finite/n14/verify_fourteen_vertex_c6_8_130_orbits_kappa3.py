@@ -21,7 +21,7 @@ from verify_fourteen_vertex_c6_8_kappa3_extension_step import Step, verify_step
 STEP = Step(
     excluded_orbits=130,
     new_orbit=16,
-    predecessor_script="verify_fourteen_vertex_c6_8_129_orbits_kappa3.py",
+    predecessor_script="claims/finite/n14/verify_fourteen_vertex_c6_8_129_orbits_kappa3.py",
     predecessor_status="C6+C8_kappa3_129_first_factor_orbits_excluded",
     predecessor_cnf_sha256=(
         "691b58cf5e7190113938e8f5467619cf"

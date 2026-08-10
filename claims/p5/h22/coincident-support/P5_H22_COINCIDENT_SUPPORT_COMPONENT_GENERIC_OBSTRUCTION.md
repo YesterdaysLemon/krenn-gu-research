@@ -5,7 +5,7 @@
 This is an exact characteristic-zero obstruction on the generic
 diagonal-source orbit of the six-dimensional coincident-support
 component proved in
-[`P4_INOUT_PATH_STRATUM_WORKING_NOTE.md`](../../../../P4_INOUT_PATH_STRATUM_WORKING_NOTE.md)
+[`P4_INOUT_PATH_STRATUM_WORKING_NOTE.md`](../../../p4/boundaries/inout-path-stratum/P4_INOUT_PATH_STRATUM_WORKING_NOTE.md)
 ("A tenth component through the singular walls") and certified by
 `branch_ambient_certificates.py`.
 

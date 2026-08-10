@@ -170,8 +170,8 @@ pairwise-disjoint cubic diagonal branch.
 Run:
 
 ```text
-python explore_eight_vertex_degree_six_kotzig_ports.py
-python audit_eight_vertex_degree_six_kotzig_ports.py
+python claims/finite/n08/degree-six-kotzig-port/explore_eight_vertex_degree_six_kotzig_ports.py
+python claims/finite/n08/degree-six-kotzig-port/audit_eight_vertex_degree_six_kotzig_ports.py
 ```
 
 The primary program propagates the three bit assignments along the

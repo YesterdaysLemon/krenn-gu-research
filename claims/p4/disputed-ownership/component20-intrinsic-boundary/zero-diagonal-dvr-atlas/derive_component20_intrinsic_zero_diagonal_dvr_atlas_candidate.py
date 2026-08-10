@@ -25,18 +25,18 @@ import z3
 
 ROOT = HERE
 SCRIPT = Path(__file__).resolve()
-REPORT = ROOT / "COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_CANDIDATE.md"
-CERTIFICATE = ROOT / "component20_intrinsic_zero_diagonal_dvr_atlas_certificate.json"
-INPUTS = tuple(REPO_ROOT / name for name in (
-    "claims/p4/classifications/triangle-211/common-active-binary-triangle/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md",
-    "COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md",
-    "claims/p4/classifications/P4_COMMON_SINGLETON_COMPONENT.md",
-    "claims/p4/classifications/triangle-211/triple-kernel-rank-one-triangle/P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md",
-    "claims/p4/classifications/P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md",
-    "claims/p4/boundaries/pair-geometry/support-one-secant/P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md",
-    "claims/p5/h31/common-singleton/P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
-    "claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
-))
+REPORT = HERE / "COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_CANDIDATE.md"
+CERTIFICATE = HERE / "component20_intrinsic_zero_diagonal_dvr_atlas_certificate.json"
+INPUTS = (
+    REPO_ROOT / "claims/p4/classifications/triangle-211/common-active-binary-triangle/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md",
+    REPO_ROOT / "claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md",
+    REPO_ROOT / "claims/p4/classifications/P4_COMMON_SINGLETON_COMPONENT.md",
+    REPO_ROOT / "claims/p4/classifications/triangle-211/triple-kernel-rank-one-triangle/P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md",
+    REPO_ROOT / "claims/p4/classifications/P4_DIRECTED_ZERO_DIVISOR_TRIANGLE_COMPONENTS.md",
+    REPO_ROOT / "claims/p4/boundaries/pair-geometry/support-one-secant/P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md",
+    REPO_ROOT / "claims/p5/h31/common-singleton/P5_H31_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
+    REPO_ROOT / "claims/p5/h22/common-singleton/P5_H22_COMMON_SINGLETON_COMPONENT_GENERIC_OBSTRUCTION.md",
+)
 
 PAIRS = tuple(itertools.combinations(range(4), 2))
 WORDS = tuple(itertools.product((0, 1), repeat=4))

@@ -2,6 +2,20 @@
 
 from __future__ import annotations
 
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__, also=["."])
+
 import argparse
 import hashlib
 import json
@@ -10,8 +24,8 @@ from pathlib import Path
 from eight_vertex_skeleton_laurent_batch import (
     local_positive_to_flat,
 )
-from eight_vertex_sparse_exact import positive_model_literals
-from search_witness import EquationSystem
+from krenn_gu.eight_vertex_sparse_exact import positive_model_literals
+from krenn_gu.search_witness import EquationSystem
 from support_toric_degeneration import (
     verify_balanced_certificate,
     verify_degeneration_certificate,

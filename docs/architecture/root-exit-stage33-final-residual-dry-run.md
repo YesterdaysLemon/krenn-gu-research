@@ -1,6 +1,6 @@
 # Root-exit Stage 33 final residual dry run
 
-Status: **FROZEN FOR TIER-2 PRE-EXECUTION REVIEW**
+Status: **EXECUTED; LOCALLY VALIDATED REPAIR CANDIDATE AWAITING FINAL EXACT-HEAD REVIEW**
 
 The global Krenn--Gu conjecture remains **UNRESOLVED**.  This transaction is
 layout, catalog, disputed-ownership, and infrastructure work.  It changes no
@@ -33,13 +33,14 @@ canonical source-identity SHA-256:
   c15b0648b0b5c4e40d0741941406deadd013f81d1dedadd12e5bc1fa11aa2808
 ```
 
-The historical 2,363-path inventory remains unchanged.  Catalog membership
-becomes `2,358 classified + 5 unclassified`; the five unclassified paths are
-justified root files from the historical inventory.  The manifest becomes
-`2,052 moved + 305 proposed-high + 1 review-required`, where the sole review
-row is the permanently justified `check_hygiene.py` classifier artifact.
-After execution, the historical moved-only root projection is 15 rather than
-the live 16 because `AGENTS.md` postdates that frozen inventory.
+The historical 2,363-path inventory remains unchanged. Catalog membership is
+`2,358 classified + 5 unclassified`; the five unclassified paths are justified
+root files from the historical inventory. After execution the manifest is
+`2,357 moved + 0 proposed-high + 1 review-required`, where the sole review row
+is the permanently justified `check_hygiene.py` classifier artifact. The live
+root is exactly the seven-file plus nine-directory allowlist: 16 entries, zero
+grandfathered debt, and zero new debt. The historical moved-only projection is
+15 rather than the live 16 because `AGENTS.md` postdates that frozen inventory.
 
 ## Ownership topology
 
@@ -82,6 +83,23 @@ Fresh semantic review corrected one provisional filename-driven assignment:
 sampler with no n=14 claim edge, so it is an operator under `tools/explore`,
 not a member of the n=14 evidence forest.
 
+The final inverse-taper audit also corrected three older Stage 28 leaf
+misclassifications. `eight_vertex_degree4_support.py` and
+`verify_laurent_batch_manifest.py` are hardcoded n=8 claim/evidence CLIs, and
+`verify_fourteen_vertex_no_one_term_support.py` is the n=14 independent audit
+named by its theorem record. None has a shared-infrastructure consumer. They
+now live under their finite claim owners. The immutable Stage 28 batch remains
+historical provenance for the intermediate root-to-`src` moves; the canonical
+final mappings are frozen separately in
+`finite-stage28-inverse-taper-correction-stage33`:
+
+```text
+canonical correction mapping SHA-256:
+  b64486bea54c5bcd533589c9bfd70d6d7f2318d575afe7967f7825f3da103bc8
+canonical correction source-identity SHA-256:
+  0fe5a8efff769f43cd37061c694756f95491f3f32618a974a50ca2d5ef2e8aa3
+```
+
 Exactly fourteen Component20 artifacts use the neutral
 `claims/p4/disputed-ownership/component20-intrinsic-boundary/` package.  Its
 README records the internal-`E=0` versus chart-`D=0,a != 0` disagreement and
@@ -95,9 +113,10 @@ closure whose move to `src/krenn_gu` creates no `src -> claims` or
 `src -> tools` import.  The set includes the widely consumed witness,
 even-cycle, sparse-exact, rank-one-support, lattice, prism, and killer-pattern
 APIs.  No primary verifier is promoted.  Several modules retain compatible
-`main` entry points; the fresh reviewers must explicitly accept this
-blob-preserving library/CLI boundary or require thin operator wrappers/core
-splits before execution.  Classification confidence alone is not authority.
+`main` entry points; fresh semantic and mechanical pre-execution reviewers at
+`32decbe48b0c9010f8bee0a37e9dcae765c2bf55` explicitly accepted this
+blob-preserving library/CLI boundary.  Classification confidence alone is not
+authority.
 
 The arbitrary-order full-cone primary remains claim-owned.  Only its exact
 six-vector `EXTREME_RAYS` constant, consumed across five families, may be
@@ -112,16 +131,23 @@ null; co-moving scripts do not manufacture ledger roles.  Only path/package
 metadata and current document hashes may change.  Ledger completeness stays
 `partial_curated` and global status stays `UNRESOLVED`.
 
-Execution, if accepted, must be one schema-v2 batch and one pure transaction
-of exactly 305 `R100` renames plus the moved-manifest transition.  Follow-up
-work is limited to necessary bootstrap/import, subprocess/CWD, repository
-path, live hash, ledger, link/command, and navigation repair plus the reviewed
-six-vector extraction.  Historical replay hashes remain frozen.  No SAT,
-Singular, brute-force, broad-theorem, numerical, or sampling run is required
-for path movement.
+The rebuilt execution history records the reviewed schema-v2 freeze before one
+direct pure transaction of exactly 305 `R100` renames plus the moved-manifest
+transition, including the corrected live n=12 C++ destinations. Follow-up
+repair is limited to necessary bootstrap/import,
+subprocess/CWD, repository path, live hash, ledger, link/command, navigation,
+and inverse-taper work. Historical replay hashes remain frozen.
 
-Before execution this exact freeze requires fresh semantic and mechanical
-acceptance.  After repair it requires two fresh final referees, index-complete
-hygiene and focused tests, fixed-point rewriting, exact-head hosted CI, merge,
-and merged-main CI.  Only then may a fresh zero-debt program audit authorize
-the separate strict Phase-R3 enforcement tranche.
+The index-complete local floor currently passes hygiene (1,718 Python files,
+874 Markdown files, ledger 86/86, root debt 0), all 186 migration tests, and
+19 bounded lattice/inverse-taper tests. The shared link/replay rewriter is at
+an exact `0 links / 0 replay targets / 0 ledger updates` fixed point. A broader
+65-test historical-fixture suite has 46 passing tests and 19 unavailable tests;
+every unavailable test now resolves its intended repository-level `tmp/`
+path, but the untracked historical fixture is absent. No fixture was generated
+and no SAT, Singular, brute-force, broad-theorem, numerical, or sampling replay
+was run.
+
+The repaired exact head still requires two fresh final referees, exact-head
+hosted CI, merge, and merged-main CI. Only then may a fresh zero-debt program
+audit authorize the separate strict Phase-R3 enforcement tranche.

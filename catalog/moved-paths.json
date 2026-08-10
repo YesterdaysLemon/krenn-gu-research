@@ -20524,12 +20524,12 @@
     },
     {
       "old_path": "eight_vertex_degree4_support.py",
-      "new_path": "src/krenn_gu/eight_vertex_degree4_support.py",
-      "reason": "shared_library -> None",
+      "new_path": "claims/finite/n08/eight_vertex_degree4_support.py",
+      "reason": "claim_script -> finite/eight-vertex (Stage 33 inverse-taper correction)",
       "status": "moved",
-      "claim_family": null,
-      "confidence": "medium",
-      "executed_batch": "finite-p4-stage28"
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high",
+      "executed_batch": "finite-stage28-inverse-taper-correction-stage33"
     },
     {
       "old_path": "eight_vertex_sparse_exact.py",
@@ -20686,21 +20686,21 @@
     },
     {
       "old_path": "verify_fourteen_vertex_no_one_term_support.py",
-      "new_path": "src/krenn_gu/verify_fourteen_vertex_no_one_term_support.py",
-      "reason": "shared_library -> None",
+      "new_path": "claims/finite/n14/verify_fourteen_vertex_no_one_term_support.py",
+      "reason": "claim_script -> finite/fourteen-vertex (Stage 33 inverse-taper correction)",
       "status": "moved",
-      "claim_family": null,
-      "confidence": "medium",
-      "executed_batch": "finite-p4-stage28"
+      "claim_family": "finite/fourteen-vertex",
+      "confidence": "high",
+      "executed_batch": "finite-stage28-inverse-taper-correction-stage33"
     },
     {
       "old_path": "verify_laurent_batch_manifest.py",
-      "new_path": "src/krenn_gu/verify_laurent_batch_manifest.py",
-      "reason": "shared_library -> None",
+      "new_path": "claims/finite/n08/verify_laurent_batch_manifest.py",
+      "reason": "claim_script -> finite/eight-vertex (Stage 33 inverse-taper correction)",
       "status": "moved",
-      "claim_family": null,
-      "confidence": "medium",
-      "executed_batch": "finite-p4-stage28"
+      "claim_family": "finite/eight-vertex",
+      "confidence": "high",
+      "executed_batch": "finite-stage28-inverse-taper-correction-stage33"
     },
     {
       "old_path": "test_fourteen_vertex_cycle_cover_lattice.py",
@@ -21261,9 +21261,9 @@
     }
   ],
   "destination_subtree_counts": {
-    "claims": 2265,
+    "claims": 2268,
     "tools": 58,
-    "src": 22,
+    "src": 19,
     "docs": 8,
     "tests": 4,
     "catalog": 1

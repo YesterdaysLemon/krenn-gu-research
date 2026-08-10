@@ -16,8 +16,14 @@ counterexample for all even `n >= 6` and `d >= 3`.
   [`docs/formalization-interface.md`](docs/formalization-interface.md)
 - Active layout-migration runbook:
   [`docs/architecture/layout-migration-runbook.md`](docs/architecture/layout-migration-runbook.md)
-- P5 package navigation: [`claims/p5/README.md`](claims/p5/README.md)
-- Stage 32 residual-P5 root-exit record:
+- Claim-family navigation: [arbitrary order](claims/arbitrary-order/README.md),
+  [finite order](claims/finite/README.md),
+  [P3 restrictions](claims/p3/restrictions/README.md),
+  [P4](claims/p4/README.md), [P5](claims/p5/README.md),
+  [P6](claims/p6/README.md), and [P7](claims/p7/README.md).
+- Stage 33 final-residual reviewed dry-run record:
+  [`docs/architecture/root-exit-stage33-final-residual-dry-run.md`](docs/architecture/root-exit-stage33-final-residual-dry-run.md)
+- Stage 32 residual-P5 root-exit record (historical):
   [`docs/architecture/root-exit-stage32-residual-p5-dry-run.md`](docs/architecture/root-exit-stage32-residual-p5-dry-run.md)
 
 ### Start here: 3 August 2026 continuation
@@ -525,7 +531,7 @@ cofactor relation from incidence alone.  On the pinned open, that line has
 an explicit determinant-cleared integrability test: degree-nine partner
 stresses can exclude the entire line, while four-hafnian realization fixes
 at most one nonzero amplitude.  See
-[`FIVE_ROOT_DIAGONAL_TARGET_INCIDENCE_SCHUBERT_DUALITY_AND_COFACTOR_LINE_THEOREM.md`](FIVE_ROOT_DIAGONAL_TARGET_INCIDENCE_SCHUBERT_DUALITY_AND_COFACTOR_LINE_THEOREM.md)
+[`FIVE_ROOT_DIAGONAL_TARGET_INCIDENCE_SCHUBERT_DUALITY_AND_COFACTOR_LINE_THEOREM.md`](claims/p7/five-root-diagonal-target-incidence/FIVE_ROOT_DIAGONAL_TARGET_INCIDENCE_SCHUBERT_DUALITY_AND_COFACTOR_LINE_THEOREM.md)
 and
 [`P7_TARGET_INCIDENCE_DETERMINANT_CLEARED_HAFNIAN_INTEGRABILITY_THEOREM.md`](claims/p7/P7_TARGET_INCIDENCE_DETERMINANT_CLEARED_HAFNIAN_INTEGRABILITY_THEOREM.md).
 
@@ -2252,7 +2258,7 @@ special `P_5/P_6` restrictions and the final local-to-global graph step are
 still missing.
 
 Separately, the repository now contains an exact rational positive
-Question-2 witness for [`n=6, k=4, d=4`](Q2_N6_K4_D4_CONSTRUCTION.md).
+Question-2 witness for [`n=6, k=4, d=4`](claims/finite/n06/q2-k4-d4-construction/Q2_N6_K4_D4_CONSTRUCTION.md).
 It has two red heralds and therefore is not a Question-1 counterexample.
 PyTheus already established existence at these parameters; the
 Twitter/X-thread witness recorded here has different support and much
@@ -3139,11 +3145,11 @@ strictly advance the finite frontier:
   Parameter infinity and mixed or non-diagonal source limits remain open:
   [`P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md`](claims/p5/h31/common-active-binary-triangle/P5_H31_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION.md),
   [`P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION_CANDIDATE.md`](claims/p5/h22/common-active-binary-triangle-intrinsic-boundary/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_INTRINSIC_BOUNDARY_OBSTRUCTION_CANDIDATE.md),
-  [`COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md`](COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md),
-  [`P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md`](P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md),
-  [`COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_CANDIDATE.md`](COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_CANDIDATE.md),
-  [`COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_VERIFICATION.md`](COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_VERIFICATION.md), and
-  [`P4_COMPONENT20_TRANSVERSE_BASE_DIAGONAL_FAN_PROOF_B.md`](P4_COMPONENT20_TRANSVERSE_BASE_DIAGONAL_FAN_PROOF_B.md).
+  [`COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md`](claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/COMPONENT20_INTRINSIC_WALL_EXCEPTIONAL_FIBRES_CANDIDATE.md),
+  [`P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md`](claims/p4/disputed-ownership/component20-intrinsic-boundary/exceptional-fibres/P4_COMPONENT20_INTRINSIC_EXCEPTIONAL_BASE_GEOMETRY_PROOF_B.md),
+  [`COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_CANDIDATE.md`](claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_CANDIDATE.md),
+  [`COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_VERIFICATION.md`](claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_VERIFICATION.md), and
+  [`P4_COMPONENT20_TRANSVERSE_BASE_DIAGONAL_FAN_PROOF_B.md`](claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/P4_COMPONENT20_TRANSVERSE_BASE_DIAGONAL_FAN_PROOF_B.md).
 - a `VERIFIED` valuative classification of the `p+q=0` diagonal
   source-torus wall proves the exact min-plus weight conditions and leaves two
   explicit higher-rank charts, `B_full` with profile `(4,4,4,3,3,3)` and
@@ -3153,7 +3159,7 @@ strictly advance the finite frontier:
   arcs under the diagonal source torus.  Placement in older component
   intersections and non-diagonal source changes are not claimed.  This is a
   `P_4` boundary theorem, not by itself an `H31` or `H22` closure:
-  [`P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md`](P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md).
+  [`P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md`](claims/p4/boundaries/component20-p-plus-q-wall/P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md).
 - on the two displayed `p+q=0` charts, exact characteristic-zero projection
   leaves a doubled marking on `B_full` and two marking lines on `B_drop`.
   Uniform mode-three fixed-minor identities, direct rank-five exceptional
@@ -3344,9 +3350,9 @@ strictly advance the finite frontier:
   the corrected triangle, star, and mixed-triangle theorems above now replace
   all three claims with marked proofs:
   [`P4_BOREL_GAUGE_CORRECTION.md`](claims/p4/boundaries/P4_BOREL_GAUGE_CORRECTION.md),
-  [`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md`](P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md),
-  [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md`](P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md),
-  [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md`](P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md).
+  [`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md`](claims/p4/history/resonant-flat-triangle/P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md),
+  [`P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md`](claims/p4/history/rank-two-relation-star/P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md),
+  [`P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md`](claims/p4/history/mixed-two-rank-two-triangle/P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md).
 - a mixed zero-product orientation produces a sixth
   symmetry-inequivalent component.  The normalized rank-two
   contraction condition is a `3 x 4` determinantal problem whose
@@ -4322,9 +4328,9 @@ divisor are explicit in
 This confirms that the remaining target is simultaneous two-deletion
 compatibility.  Exact classifications of both zero and nonzero
 decomposable `P_3` restrictions through rank-at-least-two maps are in
-[`P3_ZERO_HYPERPLANE_PRODUCT_THEOREM.md`](P3_ZERO_HYPERPLANE_PRODUCT_THEOREM.md)
+[`P3_ZERO_HYPERPLANE_PRODUCT_THEOREM.md`](claims/p3/restrictions/P3_ZERO_HYPERPLANE_PRODUCT_THEOREM.md)
 and
-[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md).
+[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](claims/p3/restrictions/P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md).
 
 The same rank-drop method now gives an exact structural reduction for
 normalized `q5_221`.  Its three distinguished-mode contractions are
@@ -4630,7 +4636,7 @@ the essential remaining case.
 - [`EIGHT_VERTEX_DOUBLE_C4_FAMILY_CERTIFICATE.md`](claims/finite/n08/EIGHT_VERTEX_DOUBLE_C4_FAMILY_CERTIFICATE.md)
 - [`EIGHT_VERTEX_FULL_SINGLETON_FAMILY_CERTIFICATE.md`](claims/finite/n08/EIGHT_VERTEX_FULL_SINGLETON_FAMILY_CERTIFICATE.md)
 - [`ODD_FULL_FACTOR_ONE_TERM_THEOREM.md`](claims/arbitrary-order/ODD_FULL_FACTOR_ONE_TERM_THEOREM.md)
-- [`SINGLE_EVEN_CYCLE_RECTANGLE_THEOREM.md`](SINGLE_EVEN_CYCLE_RECTANGLE_THEOREM.md)
+- [`SINGLE_EVEN_CYCLE_RECTANGLE_THEOREM.md`](claims/arbitrary-order/SINGLE_EVEN_CYCLE_RECTANGLE_THEOREM.md)
 - [`FOURTEEN_VERTEX_ONE_EXTRA_CYCLE_LEMMA.md`](claims/finite/n14/FOURTEEN_VERTEX_ONE_EXTRA_CYCLE_LEMMA.md)
 - [`EVEN_CYCLE_FEASIBLE_SET_EXPANSION.md`](claims/arbitrary-order/EVEN_CYCLE_FEASIBLE_SET_EXPANSION.md)
 - [`MINIMAL_SINGLETON_CIRCUIT_RECTANGLE_THEOREM.md`](claims/arbitrary-order/MINIMAL_SINGLETON_CIRCUIT_RECTANGLE_THEOREM.md)
@@ -4648,7 +4654,7 @@ the essential remaining case.
 - [`FIVE_ROOT_TIGHT_BLOCKER_P5_EXTRACTION.md`](claims/arbitrary-order/FIVE_ROOT_TIGHT_BLOCKER_P5_EXTRACTION.md)
 - [`SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md`](claims/arbitrary-order/SUPPORT_THREE_P5_CONTRACTION_SUBRANK.md)
 - [`SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md`](claims/arbitrary-order/SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md)
-- [`FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md`](FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md)
+- [`FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md`](claims/p5/frontier/five-row-projective-incidence/FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md)
 - [`FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md`](claims/arbitrary-order/FIVE_ROW_PROJECTIVE_NORMAL_FORMS.md)
 - [`ALL_QUADRANGLE_P5_OBSTRUCTION.md`](claims/arbitrary-order/ALL_QUADRANGLE_P5_OBSTRUCTION.md)
 - [`P5_COORDINATE_PLANE_PAIR_COVER.md`](claims/p5/coordinate-cegar/P5_COORDINATE_PLANE_PAIR_COVER.md)
@@ -4692,20 +4698,20 @@ the essential remaining case.
 - [`THREE_COLOUR_DIAGONAL_MATCHING_BALANCE_THEOREM.md`](claims/arbitrary-order/THREE_COLOUR_DIAGONAL_MATCHING_BALANCE_THEOREM.md)
 - [`RECIPROCAL_PORT_ORIENTATION_CORRECTION.md`](claims/arbitrary-order/RECIPROCAL_PORT_ORIENTATION_CORRECTION.md)
 - [`ARBITRARY_ORDER_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md`](claims/arbitrary-order/ARBITRARY_ORDER_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md)
-- [`UNIVERSAL_SATURATED_DIAGONAL_ZERO_LAYER_THEOREM.md`](UNIVERSAL_SATURATED_DIAGONAL_ZERO_LAYER_THEOREM.md)
+- [`UNIVERSAL_SATURATED_DIAGONAL_ZERO_LAYER_THEOREM.md`](claims/arbitrary-order/UNIVERSAL_SATURATED_DIAGONAL_ZERO_LAYER_THEOREM.md)
 - [`EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md`](claims/finite/n08/EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md)
 - [`TEN_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md`](claims/finite/n10/TEN_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md)
 - [`TWELVE_VERTEX_COMPLEMENT_PROFILE_SET_TREE_OBSTRUCTION.md`](claims/finite/n12/TWELVE_VERTEX_COMPLEMENT_PROFILE_SET_TREE_OBSTRUCTION.md)
-- [`FULL_ADMISSIBLE_POTENTIAL_CONE_LEMMA.md`](FULL_ADMISSIBLE_POTENTIAL_CONE_LEMMA.md)
+- [`FULL_ADMISSIBLE_POTENTIAL_CONE_LEMMA.md`](claims/arbitrary-order/FULL_ADMISSIBLE_POTENTIAL_CONE_LEMMA.md)
 - [`TWELVE_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md`](claims/finite/n12/TWELVE_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md)
 - [`INTEGER_SIGNED_LATTICE_TRANSPORT_THEOREM.md`](claims/arbitrary-order/INTEGER_SIGNED_LATTICE_TRANSPORT_THEOREM.md)
-- [`PARTIAL_CIRCUIT_BINOMIAL_CLOSURE_LEMMA.md`](PARTIAL_CIRCUIT_BINOMIAL_CLOSURE_LEMMA.md)
-- [`PINNED_FACTOR_SUPPORT_SYMMETRY_LEMMA.md`](PINNED_FACTOR_SUPPORT_SYMMETRY_LEMMA.md)
+- [`PARTIAL_CIRCUIT_BINOMIAL_CLOSURE_LEMMA.md`](claims/arbitrary-order/PARTIAL_CIRCUIT_BINOMIAL_CLOSURE_LEMMA.md)
+- [`PINNED_FACTOR_SUPPORT_SYMMETRY_LEMMA.md`](claims/arbitrary-order/PINNED_FACTOR_SUPPORT_SYMMETRY_LEMMA.md)
 - [`FULL_COLOUR_SUPPORT_ORBIT_LEMMA.md`](claims/arbitrary-order/FULL_COLOUR_SUPPORT_ORBIT_LEMMA.md)
-- [`COLOUR_SYMMETRIC_FACTOR_ORBIT_TRANSFER_LEMMA.md`](COLOUR_SYMMETRIC_FACTOR_ORBIT_TRANSFER_LEMMA.md)
+- [`COLOUR_SYMMETRIC_FACTOR_ORBIT_TRANSFER_LEMMA.md`](claims/arbitrary-order/COLOUR_SYMMETRIC_FACTOR_ORBIT_TRANSFER_LEMMA.md)
 - [`FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md)
 - [`FOURTEEN_VERTEX_NO_ONE_TERM_SUPPORT.md`](claims/finite/n14/FOURTEEN_VERTEX_NO_ONE_TERM_SUPPORT.md)
-- [`MATCHING_FORK_TRANSPORT_LEMMA.md`](MATCHING_FORK_TRANSPORT_LEMMA.md)
+- [`MATCHING_FORK_TRANSPORT_LEMMA.md`](claims/arbitrary-order/MATCHING_FORK_TRANSPORT_LEMMA.md)
 - [`FOURTEEN_VERTEX_C3_C4_C7_FAMILY_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C3_C4_C7_FAMILY_CERTIFICATE.md)
 - [`FOURTEEN_VERTEX_C3_C5_C6_FAMILY_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C3_C5_C6_FAMILY_CERTIFICATE.md)
 - [`FOURTEEN_VERTEX_C3_C3_C8_FAMILY_CERTIFICATE.md`](claims/finite/n14/FOURTEEN_VERTEX_C3_C3_C8_FAMILY_CERTIFICATE.md)
@@ -4743,7 +4749,7 @@ the essential remaining case.
 - [`P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md`](claims/p4/components/equal-support-sixfold/P4_EQUAL_SUPPORT_SIXFOLD_PURE_COMPONENT.md)
 - [`P4_SPLIT_PAIR_PURE_COMPONENT.md`](claims/p4/components/split-pair/P4_SPLIT_PAIR_PURE_COMPONENT.md)
 - [`P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md`](claims/p4/components/single-word-quadrilateral/P4_SINGLE_WORD_QUADRILATERAL_PURE_COMPONENT.md)
-- [`P4_INOUT_PATH_STRATUM_WORKING_NOTE.md`](P4_INOUT_PATH_STRATUM_WORKING_NOTE.md)
+- [`P4_INOUT_PATH_STRATUM_WORKING_NOTE.md`](claims/p4/boundaries/inout-path-stratum/P4_INOUT_PATH_STRATUM_WORKING_NOTE.md)
 - [`P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/all-rank-one-triangle/P5_H31_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md)
 - [`P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h22/all-rank-one-triangle/P5_H22_ALL_RANK_ONE_TRIANGLE_COMPONENT_GENERIC_OBSTRUCTION.md)
 - [`P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md`](claims/p5/h31/coincident-support/P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md)
@@ -4784,9 +4790,9 @@ Each theorem-level claim requires:
 With the bundled dependencies on `PYTHONPATH`, run:
 
 ```text
-python verify_q2_n6_k4_d4_construction.py
-python verify_q2_n6_k4_d4_family.py
-python verify_q2_herald_promotion_rank_barrier.py
+python claims/finite/n06/q2-k4-d4-construction/verify_q2_n6_k4_d4_construction.py
+python claims/finite/n06/q2-k4-d4-construction/verify_q2_n6_k4_d4_family.py
+python claims/finite/n06/q2-k4-d4-construction/verify_q2_herald_promotion_rank_barrier.py
 python claims/finite/n06/verify_six_vertex_final.py
 python claims/finite/n08/verify_eight_vertex_4regular.py
 python claims/finite/n08/verify_eight_vertex_16edge.py
@@ -4818,8 +4824,8 @@ python claims/arbitrary-order/audit_three_colour_diagonal_matching_balance.py
 python claims/arbitrary-order/verify_reciprocal_port_orientation.py
 python claims/arbitrary-order/verify_arbitrary_order_degree_six_kotzig_port_obstruction.py
 python claims/arbitrary-order/audit_arbitrary_order_degree_six_kotzig_port_obstruction.py
-python verify_universal_saturated_diagonal_zero_layer.py
-python audit_universal_saturated_diagonal_zero_layer.py
+python claims/arbitrary-order/verify_universal_saturated_diagonal_zero_layer.py
+python claims/arbitrary-order/audit_universal_saturated_diagonal_zero_layer.py
 python claims/arbitrary-order/verify_multi_star_blocker_factorisation.py
 python claims/arbitrary-order/audit_multi_star_blocker_factorisation.py
 python claims/arbitrary-order/verify_exact_three_blocker_permanent_rank.py
@@ -4859,8 +4865,8 @@ python claims/arbitrary-order/verify_support_three_p5_contraction_subrank.py
 python claims/arbitrary-order/audit_support_three_p5_contraction_subrank.py
 python claims/arbitrary-order/verify_support_four_p5_contraction_restriction.py
 python claims/arbitrary-order/audit_support_four_p5_contraction_restriction.py
-python verify_five_row_projective_incidence.py
-python audit_five_row_projective_incidence.py
+python claims/p5/frontier/five-row-projective-incidence/verify_five_row_projective_incidence.py
+python claims/p5/frontier/five-row-projective-incidence/audit_five_row_projective_incidence.py
 python claims/arbitrary-order/verify_five_row_projective_normal_forms.py
 python claims/arbitrary-order/audit_five_row_projective_normal_forms.py
 python claims/arbitrary-order/verify_all_quadrangle_p5_obstruction.py
@@ -4891,8 +4897,8 @@ python claims/finite/n10/certify_ten_vertex_balanced_set_trees.py
 python claims/finite/n10/audit_ten_vertex_balanced_set_trees.py
 python claims/finite/n12/certify_twelve_vertex_complement_profile.py
 python claims/finite/n12/audit_twelve_vertex_complement_profile.py
-python verify_full_admissible_potential_cone.py
-python audit_full_admissible_potential_cone.py
+python claims/arbitrary-order/verify_full_admissible_potential_cone.py
+python claims/arbitrary-order/audit_full_admissible_potential_cone.py
 python claims/finite/n12/audit_twelve_vertex_port_cell_orbits.py
 python tools/explore/compare_twelve_vertex_six_potential_orbit_audit.py
 python claims/arbitrary-order/verify_integer_signed_lattice_transport.py
@@ -4902,18 +4908,18 @@ python claims/finite/n14/verify_fourteen_vertex_binomial_support_closure_augment
 python claims/finite/n14/verify_fourteen_vertex_partial_circuit_binomial_selection_chain.py tmp/fourteen_vertex_c4_c4_c6_orbit8_support2_partial_binomial_selection_cegar.json --output tmp/fourteen_vertex_c4_c4_c6_orbit8_support2_partial_binomial_selection_cegar_verified.json
 python claims/finite/n14/verify_fourteen_vertex_binomial_support_closure_augmentation.py tmp/fourteen_vertex_c4_c4_c6_orbit8_binomial2_augmentation.json --output tmp/fourteen_vertex_c4_c4_c6_orbit8_binomial2_augmentation_verified.json
 python claims/finite/n14/verify_fourteen_vertex_minimal_circuit_frontiers.py
-python src/krenn_gu/verify_fourteen_vertex_no_one_term_support.py
+python claims/finite/n14/verify_fourteen_vertex_no_one_term_support.py
 python claims/finite/n14/verify_fourteen_vertex_binomial_trinomial.py
 python claims/finite/n14/certify_fourteen_vertex_matching_fork.py tmp/fourteen_vertex_direct_free_search_p500000_multiswitch.json
-python verify_fourteen_vertex_cancellation_transport.py tmp/fourteen_vertex_direct_free_search_p500000_multiswitch.json tmp/fourteen_vertex_matching_fork_p500000_multiswitch.json --output tmp/fourteen_vertex_matching_fork_p500000_multiswitch_verified.json
+python claims/finite/n14/verify_fourteen_vertex_cancellation_transport.py tmp/fourteen_vertex_direct_free_search_p500000_multiswitch.json tmp/fourteen_vertex_matching_fork_p500000_multiswitch.json --output tmp/fourteen_vertex_matching_fork_p500000_multiswitch_verified.json
 python claims/finite/n14/certify_fourteen_vertex_c3_c4_c7_family.py
 python claims/finite/n14/verify_fourteen_vertex_c3_c4_c7_family.py
 python claims/finite/n14/verify_fourteen_vertex_c3_c5_c6_family.py
 python claims/finite/n14/verify_fourteen_vertex_c3_c3_c8_family.py
 python claims/finite/n14/verify_fourteen_vertex_c3_c3_c4_c4_family.py
 python claims/finite/n14/verify_fourteen_vertex_c4_c5_c5_family.py
-python verify_fourteen_vertex_c14_rectangle_theorem.py
-python verify_fourteen_vertex_c4_10_orbit0.py
+python claims/finite/n14/verify_fourteen_vertex_c14_rectangle_theorem.py
+python claims/finite/n14/verify_fourteen_vertex_c4_10_orbit0.py
 python claims/finite/n14/verify_fourteen_vertex_c4_10_orbit1.py
 python claims/finite/n14/verify_fourteen_vertex_c6_8_130_orbits_kappa3.py
 python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit2.py
@@ -4924,15 +4930,15 @@ python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit7.py
 python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit8.py
 python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_orbit44_core24.py
 python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_58_orbits.py
-python -m unittest -v test_search_witness.py
-python -m unittest -v test_fourteen_vertex_two_even_cycle_rule_sat.py test_fourteen_vertex_minimum_activity_certificate.py
+python -m unittest -v tests.test_search_witness
+python -m unittest -v tests.test_fourteen_vertex_two_even_cycle_rule_sat tests.test_fourteen_vertex_minimum_activity_certificate
 ```
 
 The final audit JSON for every claimed theorem must contain
-`"verified": true`.  `test_search_witness.py` (53 tests) and the two
+`"verified": true`.  `tests/test_search_witness.py` (53 tests) and the two
 order-14 SAT test modules read `tmp/` audit fixtures produced by the
 replay chains above, so they pass only after those chains have run on
-the local checkout; `test_fourteen_vertex_cycle_cover_lattice.py` is
+the local checkout; `tests/test_fourteen_vertex_cycle_cover_lattice.py` is
 the one fully self-contained module and runs from a clean checkout.
 
 The `tmp/` directory is scratch space, gitignored since the 2026-08-05
@@ -5064,7 +5070,7 @@ degree-four vertex.  Hence every local map has a nonzero singleton row.
 There are 68 singleton-placement orbits after source, mode, and colour
 symmetry.  The exact proof and an independent census of 376,992
 five-point multisets over `F_5` are in
-[`FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md`](FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md).
+[`FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md`](claims/p5/frontier/five-row-projective-incidence/FIVE_ROW_PROJECTIVE_INCIDENCE_LEMMA.md).
 
 The forced singleton has a short exact geometric refinement.  If it is
 the only coordinate row, the other four projective rows either lie on
@@ -5284,7 +5290,7 @@ monochromatic alternating even cycle is forced.  In particular, every
 edge shared by two selected colour matchings forces a remote
 same-colour alternating cycle in each corresponding cofactor.  The
 complete statement and independent table audit are in
-[`UNIVERSAL_SATURATED_DIAGONAL_ZERO_LAYER_THEOREM.md`](UNIVERSAL_SATURATED_DIAGONAL_ZERO_LAYER_THEOREM.md).
+[`UNIVERSAL_SATURATED_DIAGONAL_ZERO_LAYER_THEOREM.md`](claims/arbitrary-order/UNIVERSAL_SATURATED_DIAGONAL_ZERO_LAYER_THEOREM.md).
 
 Actual principal hafnian families obey more than the vertex-wise
 set-tree axiom.  The coefficientwise convolution identity
@@ -5511,7 +5517,7 @@ This replaces a `3^14` colour scan by a small perfect-matching calculation.
 It independently closes four increasingly adversarial `C3+C4+C7` supports,
 including the completed 500,000-prefix search candidate whose broader
 direct-Laurent score was reduced to two.  See
-[`MATCHING_FORK_TRANSPORT_LEMMA.md`](MATCHING_FORK_TRANSPORT_LEMMA.md).
+[`MATCHING_FORK_TRANSPORT_LEMMA.md`](claims/arbitrary-order/MATCHING_FORK_TRANSPORT_LEMMA.md).
 
 The complete `C3+C4+C7` equality family is now closed as well.  A
 deterministic factor classification starts from all 44,226 possible
@@ -5598,7 +5604,7 @@ singleton-colour roles.  The independently reconstructed augmentation adds
 same 27 orbit classes.  Second, a proved support obstruction transports
 under all 1,536 full-factor automorphisms and all six colour permutations;
 see
-[`COLOUR_SYMMETRIC_FACTOR_ORBIT_TRANSFER_LEMMA.md`](COLOUR_SYMMETRIC_FACTOR_ORBIT_TRANSFER_LEMMA.md)
+[`COLOUR_SYMMETRIC_FACTOR_ORBIT_TRANSFER_LEMMA.md`](claims/arbitrary-order/COLOUR_SYMMETRIC_FACTOR_ORBIT_TRANSFER_LEMMA.md)
 and
 [`FULL_COLOUR_SUPPORT_ORBIT_LEMMA.md`](claims/arbitrary-order/FULL_COLOUR_SUPPORT_ORBIT_LEMMA.md).
 

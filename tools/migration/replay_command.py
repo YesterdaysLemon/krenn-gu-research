@@ -17,6 +17,8 @@ callers enforce the container state):
     uv run --with ruff ruff check verify_foo.py   lint replay
     python -m ruff check verify_foo.py audit_foo.py
     python -m py_compile verify_foo.py audit_foo.py
+    python -m unittest -v test_foo.py test_bar.py
+    python -m json.tool certificate.json           JSON inspection replay
     python .\verify_foo.py                         PowerShell local path
     python \\                                      continuation line
       verify_foo.py [args]
@@ -58,6 +60,12 @@ RUFF_CHECK = re.compile(
 PY_COMPILE = re.compile(
     r"^\s*" + _COMMAND_FIELD + r"(?:" + _UV_RUN + r")?"
     + _PYTHON + r"\s+-m\s+py_compile\s+")
+UNITTEST = re.compile(
+    r"^\s*" + _COMMAND_FIELD + r"(?:" + _UV_RUN + r")?"
+    + _PYTHON + r"\s+-m\s+unittest(?:\s+-v)?\s+")
+JSON_TOOL = re.compile(
+    r"^\s*" + _COMMAND_FIELD + r"(?:" + _UV_RUN + r")?"
+    + _PYTHON + r"\s+-m\s+json\.tool\s+")
 # A launcher whose command continues on the next line (`python \`).
 LAUNCHER_CONTINUATION = re.compile(
     r"^\s*" + _COMMAND_FIELD
@@ -79,15 +87,18 @@ QA_SCRIPTS = re.compile(
     + r"(?:\s+" + _LOCAL_PREFIX + _SCRIPT_BASENAME + r")*)\s*$")
 QA_SCRIPT_TOKEN = re.compile(
     _LOCAL_PREFIX + r"(" + _SCRIPT_BASENAME + r")")
+_JSON_BASENAME = r"[A-Za-z0-9_]+\.json"
+JSON_TARGET = re.compile(
+    r"^\s*" + _LOCAL_PREFIX + r"(" + _JSON_BASENAME + r")\s*$")
 
 
 def match_replay_targets(lines, index):
     """Parse every script target in one fenced replay command.
 
     Returns ``([base, ...], end_index, form)`` or ``None``.  Normal Python
-    replay commands have one target; bounded Ruff/py_compile QA commands may
-    have several.  A QA suffix is accepted only when every token is a script,
-    which keeps rewriting atomic.
+    replay commands have one target; bounded Ruff/py_compile/unittest QA
+    commands may have several.  A QA suffix is accepted only when every token
+    is a script, which keeps rewriting atomic.
     """
     line = lines[index]
     m = LAUNCHER.match(line)
@@ -95,7 +106,7 @@ def match_replay_targets(lines, index):
         sm = SCRIPT.match(line[m.end():])
         if sm:
             return [sm.group(1)], index, "line"
-    for launcher in (RUFF_CHECK, PY_COMPILE):
+    for launcher in (RUFF_CHECK, PY_COMPILE, UNITTEST):
         m = launcher.match(line)
         if m:
             sm = QA_SCRIPTS.match(line[m.end():])
@@ -103,6 +114,11 @@ def match_replay_targets(lines, index):
                 bases = [token.group(1)
                          for token in QA_SCRIPT_TOKEN.finditer(sm.group(1))]
                 return bases, index, "line"
+    m = JSON_TOOL.match(line)
+    if m:
+        jm = JSON_TARGET.match(line[m.end():])
+        if jm:
+            return [jm.group(1)], index, "line"
     c = LAUNCHER_CONTINUATION.match(line)
     if c and index + 1 < len(lines):
         sm = SCRIPT.match(lines[index + 1])

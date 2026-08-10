@@ -7,6 +7,20 @@ requiring a richer certificate.
 """
 
 from __future__ import annotations
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__)
+
 
 import argparse
 import json
@@ -67,7 +81,7 @@ def main() -> None:
     for iteration in range(args.rounds):
         command = [
             sys.executable,
-            "analyze_fourteen_vertex_c4_c4_c6_rule_sat.py",
+            str(HERE / "analyze_fourteen_vertex_c4_c4_c6_rule_sat.py"),
         ]
         for samples, pattern in zip(
             args.extra_samples,
@@ -145,7 +159,7 @@ def main() -> None:
         subprocess.run(
             [
                 sys.executable,
-                "analyze_fourteen_vertex_even_cycle_factor_fork.py",
+                str(HERE / "analyze_fourteen_vertex_even_cycle_factor_fork.py"),
                 str(samples_path),
                 "--survivor-index",
                 str(len(survivors) - 1),

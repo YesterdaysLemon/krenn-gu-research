@@ -23,7 +23,7 @@ This corrects the scope of
 which is a valid one-kernel-zero boundary theorem.  The earlier
 “complete” projective-column classification was withdrawn because it
 moved the fixed kernel line:
-[`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md`](../../../../../../P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md).
+[`P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md`](../../../../history/resonant-flat-triangle/P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md).
 
 The projective partner sheets over this same center have since been
 classified and excluded from the all-rank-three-relation triangle in

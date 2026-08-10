@@ -7,9 +7,15 @@
   exact-degree-six hypotheses. It is subsumed by the separate Stage 27
   arbitrary-order theorem and is not a second arbitrary-order proof.
 
-The withdrawn legacy Kotzig-port record remains outside this package pending
-coherent legacy routing. Colocated scripts and shared exploration/generation
-tools retain the evidence roles stated by the two live documents.
+The corrected finite regression's two exact-cover engines,
+[`exhaust_twelve_vertex_six_potential_orbits.cpp`](exhaust_twelve_vertex_six_potential_orbits.cpp)
+and
+[`audit_twelve_vertex_six_potential_orbits.cpp`](audit_twelve_vertex_six_potential_orbits.cpp),
+remain live replay carriers at this package level. The withdrawn legacy
+theorem and its three Python residual-analysis carriers are preserved under
+[`history/degree-six-kotzig-port-legacy/`](history/degree-six-kotzig-port-legacy/).
+Shared use of the C++ engines does not transfer the legacy theorem's withdrawn
+status to those engines, and relocation changes no claim status.
 
 The global Krenn-Gu conjecture remains **UNRESOLVED**. Return to the
 [finite package index](../README.md).

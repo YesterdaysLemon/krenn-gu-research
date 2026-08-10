@@ -179,8 +179,8 @@ not needed for the order-ten conclusion.
 The finite order-ten application is checked by:
 
 ```text
-python analyze_ten_vertex_permuted_potential_survivors.py
-python audit_ten_vertex_permuted_potential_survivors.py
+python claims/finite/n10/degree-six-kotzig-port/analyze_ten_vertex_permuted_potential_survivors.py
+python claims/finite/n10/degree-six-kotzig-port/audit_ten_vertex_permuted_potential_survivors.py
 ```
 
 The arbitrary-order lemma says that a witness must survive all six

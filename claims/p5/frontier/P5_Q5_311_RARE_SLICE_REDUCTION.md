@@ -110,9 +110,9 @@ four five-row maps realize two such compressions after deleting two
 different rows, in two independent target directions.
 
 The zero-slice classification in
-[`P3_ZERO_HYPERPLANE_PRODUCT_THEOREM.md`](../../../P3_ZERO_HYPERPLANE_PRODUCT_THEOREM.md)
+[`P3_ZERO_HYPERPLANE_PRODUCT_THEOREM.md`](../../p3/restrictions/P3_ZERO_HYPERPLANE_PRODUCT_THEOREM.md)
 and the nonzero classification in
-[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](../../../P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md)
+[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](../../p3/restrictions/P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md)
 remain useful for contractions inside the disjoint branch.
 
 They in fact finish it.  In every mode the three common source rows span

@@ -10,7 +10,7 @@ inputs:
   P4_COMMON_SINGLETON_COMPONENT.md: 9506c62510deebfb19c2cba5fff22940c35946007d9deafb2d12588676c6980d
   P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md: 81b7346d5f4ce7205dc4c4563e6ecd95a98c59363db3498b1c355ea62489647c
 method: polynomial Pluecker and subset-algebra tensor reconstruction, factor-covector kernel normalization, exact min-plus inequalities checked by rational-linear SMT, and direct symbolic limit planes
-command: uv run --with sympy --with z3-solver python derive_p4_component20_transverse_base_diagonal_fan_proof_b.py
+command: uv run --with sympy --with z3-solver python claims/p4/disputed-ownership/component20-intrinsic-boundary/zero-diagonal-dvr-atlas/derive_p4_component20_transverse_base_diagonal_fan_proof_b.py
 outputs:
   derive_p4_component20_transverse_base_diagonal_fan_proof_b.py: sha256 emitted by the replay JSON
   P4_COMPONENT20_TRANSVERSE_BASE_DIAGONAL_FAN_PROOF_B.md: sha256 emitted by the replay JSON

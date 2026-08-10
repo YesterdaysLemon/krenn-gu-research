@@ -14,11 +14,13 @@ for _p in Path(__file__).resolve().parents:
         sys.path.insert(0, str(_p / "src"))
         break
 from krenn_gu.bootstrap import bootstrap  # noqa: E402
+from krenn_gu.bootstrap import expose_claim_package  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/finite/n14")
 
-from integer_constant_lattice import IntegerConstantLattice  # noqa: E402
-from integer_signed_lattice import IntegerSignedLattice  # noqa: E402
+from krenn_gu.integer_constant_lattice import IntegerConstantLattice  # noqa: E402
+from krenn_gu.integer_signed_lattice import IntegerSignedLattice  # noqa: E402
 
 from analyze_fourteen_vertex_partial_circuit_factor_cegar import (  # noqa: E402
     partial_relation_clauses,

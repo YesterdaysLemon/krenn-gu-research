@@ -1,6 +1,20 @@
 """Independent audit of the universal balanced-bridge zero layer."""
 
 from __future__ import annotations
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__)
+
 
 from collections import Counter
 import hashlib
@@ -111,9 +125,7 @@ def main() -> None:
             "primary and independent universal tables disagree"
         )
 
-    theorem = Path(
-        "UNIVERSAL_SATURATED_DIAGONAL_ZERO_LAYER_THEOREM.md"
-    )
+    theorem = HERE / "UNIVERSAL_SATURATED_DIAGONAL_ZERO_LAYER_THEOREM.md"
     payload = {
         "verified": True,
         "status": (

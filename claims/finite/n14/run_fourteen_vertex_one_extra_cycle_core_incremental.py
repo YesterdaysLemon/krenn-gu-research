@@ -2,6 +2,20 @@
 
 from __future__ import annotations
 
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__, also=["."])
+
 import argparse
 import hashlib
 import itertools
@@ -23,20 +37,11 @@ from explore_fourteen_vertex_equality_factor_family import (
     contiguous_cycles,
     full_automorphisms,
 )
-from explore_random_even_cycle_forks import cycle_edges
+from krenn_gu.explore_random_even_cycle_forks import cycle_edges
 from run_fourteen_vertex_two_even_cycle_rule_sat_incremental import (
     certificate_no_goods,
     minimum_condition_no_goods,
 )
-
-
-for _p in Path(__file__).resolve().parents:
-    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
-        sys.path.insert(0, str(_p / "src"))
-        break
-from krenn_gu.bootstrap import bootstrap  # noqa: E402
-
-REPO_ROOT, HERE = bootstrap(__file__)
 
 def sha256(path: Path) -> str:
     digest = hashlib.sha256()
@@ -336,8 +341,11 @@ def main() -> None:
                     subprocess.run(
                         [
                             sys.executable,
-                            "minimize_fourteen_vertex_two_even_cycle_"
-                            "certificate_activation.py",
+                            str(
+                                HERE
+                                / "minimize_fourteen_vertex_two_even_cycle_"
+                                "certificate_activation.py"
+                            ),
                             str(samples_path),
                             str(candidate_path),
                             "--survivor-index",
@@ -352,8 +360,11 @@ def main() -> None:
                     subprocess.run(
                         [
                             sys.executable,
-                            "verify_fourteen_vertex_two_even_cycle_"
-                            "minimum_activity_certificate.py",
+                            str(
+                                HERE
+                                / "verify_fourteen_vertex_two_even_cycle_"
+                                "minimum_activity_certificate.py"
+                            ),
                             str(minimum_path),
                             "--output",
                             str(minimum_audit_path),

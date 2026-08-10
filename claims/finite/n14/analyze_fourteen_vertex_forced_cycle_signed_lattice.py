@@ -2,6 +2,20 @@
 
 from __future__ import annotations
 
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__, also=["."])
+
 import argparse
 import itertools
 import json
@@ -17,7 +31,7 @@ from analyze_fourteen_vertex_even_cycle_double_pair_fork import (
     activity_arrays,
 )
 from analyze_fourteen_vertex_even_cycle_factor_fork import local_codes
-from explore_random_even_cycle_forks import cycle_edges
+from krenn_gu.explore_random_even_cycle_forks import cycle_edges
 from explore_random_minimal_singleton_sets import contiguous_cycles
 def dense_signature(
     signature: tuple[tuple[int, int], ...],

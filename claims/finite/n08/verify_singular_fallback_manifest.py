@@ -15,35 +15,40 @@ tail extension.
 
 from __future__ import annotations
 
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__, also=["."])
+
 import argparse
 import hashlib
 import json
 import subprocess
 from pathlib import Path
 
-from eight_vertex_degree4_cegar import (
+from krenn_gu.eight_vertex_degree4_cegar import (
     full_equations,
     symmetry_clauses,
 )
-from eight_vertex_sparse_exact import (
+from krenn_gu.eight_vertex_sparse_exact import (
     exact_equations,
     local_allowed_edges,
     singular_program,
 )
 from learn_singular_fallback_clauses import singular_unit
-from prism_laurent_reduction import primitive_binomial_reduction
-from search_witness import EquationSystem
-import sys
+from krenn_gu.prism_laurent_reduction import primitive_binomial_reduction
+from krenn_gu.search_witness import EquationSystem
 
-for _p in Path(__file__).resolve().parents:
-    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
-        sys.path.insert(0, str(_p / "src"))
-        break
-from krenn_gu.bootstrap import bootstrap  # noqa: E402
-
-REPO_ROOT, HERE = bootstrap(__file__)
-
-from krenn_gu.verify_laurent_batch_manifest import audit_cnf
+from verify_laurent_batch_manifest import audit_cnf
 
 
 def sha256(path: Path) -> str:

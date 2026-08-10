@@ -57,11 +57,11 @@ resonant/affine-holonomy-reduction (reduction)
 A user browsing this tree can distinguish the live results from their
 historical failed variants without Git archaeology:
 
-| live claim | lineage | historical artifact (stays at root, legacy-pending) |
+| live claim | lineage | historical package (withdrawn; Stage 33) |
 |---|---|---|
-| mixed/two-rank-two (boundary spine) | **supersedes** | `P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT` — withdrew the unmarked `GL_2` row change; the live theorem keeps kernel rows Borel-marked |
-| resonant/flat-generic-binary-cubic (boundary spine) | **corrected successor** of an overstrong scope | `P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG` — names this live theorem as the true full-support Borel chart |
-| resonant/flat-kernel-zero-binary-cubic (boundary spine) | **valid scope preserved** | same withdrawn doc names this live theorem as the valid one-kernel-zero theorem |
+| mixed/two-rank-two (boundary spine) | **supersedes** | [`../../history/mixed-two-rank-two-triangle/`](../../history/mixed-two-rank-two-triangle/) — withdrew the unmarked `GL_2` row change; the live theorem keeps kernel rows Borel-marked |
+| resonant/flat-generic-binary-cubic (boundary spine) | **corrected successor** of an overstrong scope | [`../../history/resonant-flat-triangle/`](../../history/resonant-flat-triangle/) — names this live theorem as the true full-support Borel chart |
+| resonant/flat-kernel-zero-binary-cubic (boundary spine) | **valid scope preserved** | same withdrawn package names this live theorem as the valid one-kernel-zero theorem |
 | all other Stage 8 packages | no predecessor | — |
 
 The corrected live claims do **not** inherit the scope of their
@@ -75,8 +75,9 @@ withdrawn and are not rehabilitated by this migration.
   withdrawn-overstrong doc names it as the recovery
 - [`../star/`](../star/) and [`../pair-geometry/`](../pair-geometry/)
   — sibling spines
-- global machinery `verify_p4_all_pair_rank_exceptional_graph_reduction`
-  stays at root (its package list was repointed)
+- The shared all-pair verifier now lives at
+  [`../verify_p4_all_pair_rank_exceptional_graph_reduction.py`](../verify_p4_all_pair_rank_exceptional_graph_reduction.py);
+  that path repair changes no evidence role.
 
 Migration provenance: `catalog/batches/p4-rank-two-triangle-stage8.json`,
 `docs/architecture/p4-rank-two-triangle-stage8-dry-run.md`, and

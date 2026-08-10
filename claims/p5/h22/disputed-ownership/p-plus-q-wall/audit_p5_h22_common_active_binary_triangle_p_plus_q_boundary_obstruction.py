@@ -116,9 +116,9 @@ MASK6_IDS = {
 FLAG_SQUARE = {(0, 0), (1, 0), (0, 1), (1, 1)}
 
 FILES = {
-    "p4_theorem": "P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md",
-    "p4_primary": "verify_p4_common_active_binary_triangle_p_plus_q_boundary.py",
-    "p4_audit": "audit_p4_common_active_binary_triangle_p_plus_q_boundary.py",
+    "p4_theorem": "claims/p4/boundaries/component20-p-plus-q-wall/P4_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY.md",
+    "p4_primary": "claims/p4/boundaries/component20-p-plus-q-wall/verify_p4_common_active_binary_triangle_p_plus_q_boundary.py",
+    "p4_audit": "claims/p4/boundaries/component20-p-plus-q-wall/audit_p4_common_active_binary_triangle_p_plus_q_boundary.py",
     "partial_report": (
         'claims/p5/h22/disputed-ownership/p-plus-q-wall/P5_H22_COMMON_ACTIVE_BINARY_TRIANGLE_P_PLUS_Q_BOUNDARY_PARTIAL.md'
     ),

@@ -2,6 +2,20 @@
 """Independent no-import verifier for the component-20 zero-base diagonal atlas."""
 
 from __future__ import annotations
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__)
+
 
 import hashlib
 import itertools
@@ -16,12 +30,12 @@ import z3
 
 ROOT = Path(__file__).resolve().parent
 SCRIPT = Path(__file__).resolve()
-REPORT = ROOT / "COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_VERIFICATION.md"
-CANDIDATE = ROOT / "COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_CANDIDATE.md"
-COMPONENT20 = ROOT / "claims/p4/classifications/triangle-211/common-active-binary-triangle/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md"
-COMPONENT18 = ROOT / "claims/p4/classifications/P4_COMMON_SINGLETON_COMPONENT.md"
-COMPONENT15_BOUNDARY = ROOT / "claims/p4/boundaries/pair-geometry/support-one-secant/P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md"
-COMPONENT16_BOUNDARY = ROOT / "claims/p4/classifications/triangle-211/triple-kernel-rank-one-triangle/P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md"
+REPORT = HERE / "COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_VERIFICATION.md"
+CANDIDATE = HERE / "COMPONENT20_INTRINSIC_ZERO_DIAGONAL_DVR_ATLAS_CANDIDATE.md"
+COMPONENT20 = REPO_ROOT / "claims/p4/classifications/triangle-211/common-active-binary-triangle/P4_COMMON_ACTIVE_BINARY_TRIANGLE_COMPONENT.md"
+COMPONENT18 = REPO_ROOT / "claims/p4/classifications/P4_COMMON_SINGLETON_COMPONENT.md"
+COMPONENT15_BOUNDARY = REPO_ROOT / "claims/p4/boundaries/pair-geometry/support-one-secant/P4_SUPPORT_ONE_SECANT_BOUNDARY_INCLUSION.md"
+COMPONENT16_BOUNDARY = REPO_ROOT / "claims/p4/classifications/triangle-211/triple-kernel-rank-one-triangle/P4_TRIPLE_KERNEL_RANK_ONE_TRIANGLE_CLASSIFICATION.md"
 FROZEN_COMMIT = "f997c8366b461f3952faef0d35b512318341909d"
 REWRITE_CHECKPOINT = "d25cd2ad357827370baae5cfaaffd695a7573cd3"
 HISTORICAL_COMPONENT_SOURCES = (

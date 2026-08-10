@@ -81,7 +81,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "88101e54d974d697",
+      "document_sha256_16": "c62a99d544890d72",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -533,7 +533,7 @@
     {
       "name": "Generic marked H31 fibre empty: coincident support",
       "document": "claims/p5/h31/coincident-support/P5_H31_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "d8b8832c2134ec86",
+      "document_sha256_16": "88eb5436a3faecd9",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1180,7 +1180,7 @@
     {
       "name": "Generic weighted H22 fibre empty: coincident support",
       "document": "claims/p5/h22/coincident-support/P5_H22_COINCIDENT_SUPPORT_COMPONENT_GENERIC_OBSTRUCTION.md",
-      "document_sha256_16": "7fc72757e107bcf4",
+      "document_sha256_16": "71936517dfabe61f",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "over the component function field (generic point)",
@@ -1792,7 +1792,7 @@
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
       "document": "README.md",
-      "document_sha256_16": "88101e54d974d697",
+      "document_sha256_16": "c62a99d544890d72",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
@@ -1934,7 +1934,7 @@
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
       "document": "README.md",
-      "document_sha256_16": "88101e54d974d697",
+      "document_sha256_16": "c62a99d544890d72",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1948,7 +1948,7 @@
     },
     {
       "name": "Eight Vertex Balanced All Bridge Set Tree Obstruction Withdrawn Overstrong",
-      "document": "EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md",
+      "document": "claims/finite/n08/history/withdrawn-balanced-all-bridge-set-tree/EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md",
       "document_sha256_16": "a9237abbe8ddb011",
       "status": "withdrawn",
       "assumptions_and_excluded_divisors": [],
@@ -1959,12 +1959,18 @@
       "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "Retained as audit trail; not linked as live certificates."
+      "note": "Retained as audit trail; not linked as live certificates.",
+      "claim_package": "claims/finite/n08/history/withdrawn-balanced-all-bridge-set-tree",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "EIGHT_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md"
+      ]
     },
     {
       "name": "Twelve Vertex Degree Six Kotzig Port Obstruction Withdrawn Legacy",
-      "document": "TWELVE_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION_WITHDRAWN_LEGACY.md",
-      "document_sha256_16": "604dd9221ef8adfa",
+      "document": "claims/finite/n12/history/degree-six-kotzig-port-legacy/TWELVE_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION_WITHDRAWN_LEGACY.md",
+      "document_sha256_16": "f468bd35a9cbbfb9",
       "status": "withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1974,12 +1980,18 @@
       "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "Retained as audit trail; not linked as live certificates."
+      "note": "Retained as audit trail; not linked as live certificates.",
+      "claim_package": "claims/finite/n12/history/degree-six-kotzig-port-legacy",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "TWELVE_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION_WITHDRAWN_LEGACY.md"
+      ]
     },
     {
       "name": "State Lift Cycle Fibre Lemma",
-      "document": "STATE_LIFT_CYCLE_FIBRE_LEMMA.md",
-      "document_sha256_16": "83b753ee04d42aa6",
+      "document": "claims/arbitrary-order/history/state-lift-cycle-fibre/STATE_LIFT_CYCLE_FIBRE_LEMMA.md",
+      "document_sha256_16": "6aeadfdb388a81d7",
       "status": "withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -1989,12 +2001,18 @@
       "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "Retained as audit trail; not linked as live certificates."
+      "note": "Retained as audit trail; not linked as live certificates.",
+      "claim_package": "claims/arbitrary-order/history/state-lift-cycle-fibre",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "STATE_LIFT_CYCLE_FIBRE_LEMMA.md"
+      ]
     },
     {
       "name": "P4 Mixed Two Rank Two Triangle Obstruction Withdrawn Pending Borel Audit",
-      "document": "P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md",
-      "document_sha256_16": "5f924f06f6974eb2",
+      "document": "claims/p4/history/mixed-two-rank-two-triangle/P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md",
+      "document_sha256_16": "250941f6f36cab02",
       "status": "withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -2004,12 +2022,18 @@
       "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "Retained as audit trail; not linked as live certificates."
+      "note": "Retained as audit trail; not linked as live certificates.",
+      "claim_package": "claims/p4/history/mixed-two-rank-two-triangle",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P4_MIXED_TWO_RANK_TWO_TRIANGLE_OBSTRUCTION_WITHDRAWN_PENDING_BOREL_AUDIT.md"
+      ]
     },
     {
       "name": "P4 Rank Two Relation Star Obstruction Withdrawn Overstrong",
-      "document": "P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md",
-      "document_sha256_16": "132a0d5bfc58dc31",
+      "document": "claims/p4/history/rank-two-relation-star/P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md",
+      "document_sha256_16": "cfcb3604f010e498",
       "status": "withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -2019,12 +2043,18 @@
       "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "Retained as audit trail; not linked as live certificates."
+      "note": "Retained as audit trail; not linked as live certificates.",
+      "claim_package": "claims/p4/history/rank-two-relation-star",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P4_RANK_TWO_RELATION_STAR_OBSTRUCTION_WITHDRAWN_OVERSTRONG.md"
+      ]
     },
     {
       "name": "P4 Resonant Flat Triangle Classification Withdrawn Overstrong",
-      "document": "P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md",
-      "document_sha256_16": "393abf4579d631c9",
+      "document": "claims/p4/history/resonant-flat-triangle/P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md",
+      "document_sha256_16": "d1b2d03d2fd296da",
       "status": "withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -2034,12 +2064,18 @@
       "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "Retained as audit trail; not linked as live certificates."
+      "note": "Retained as audit trail; not linked as live certificates.",
+      "claim_package": "claims/p4/history/resonant-flat-triangle",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "P4_RESONANT_FLAT_TRIANGLE_CLASSIFICATION_WITHDRAWN_OVERSTRONG.md"
+      ]
     },
     {
       "name": "Eight Vertex Degree Six Kotzig Port Obstruction",
-      "document": "EIGHT_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
-      "document_sha256_16": "53c148274a32ce99",
+      "document": "claims/finite/n08/degree-six-kotzig-port/EIGHT_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
+      "document_sha256_16": "9bc0db70933bfbe8",
       "status": "partially_withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -2049,12 +2085,18 @@
       "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "Header marks withdrawn subsets of claims; read the header before citing."
+      "note": "Header marks withdrawn subsets of claims; read the header before citing.",
+      "claim_package": "claims/finite/n08/degree-six-kotzig-port",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "EIGHT_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md"
+      ]
     },
     {
       "name": "Ten Vertex Degree Six Kotzig Port Obstruction",
-      "document": "TEN_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
-      "document_sha256_16": "9488c66fbb681206",
+      "document": "claims/finite/n10/degree-six-kotzig-port/TEN_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
+      "document_sha256_16": "c5717c6bb5619554",
       "status": "partially_withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -2064,12 +2106,18 @@
       "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "Header marks withdrawn subsets of claims; read the header before citing."
+      "note": "Header marks withdrawn subsets of claims; read the header before citing.",
+      "claim_package": "claims/finite/n10/degree-six-kotzig-port",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "TEN_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md"
+      ]
     },
     {
       "name": "Full Admissible Potential Cone Lemma",
-      "document": "FULL_ADMISSIBLE_POTENTIAL_CONE_LEMMA.md",
-      "document_sha256_16": "61dbab22c09f7724",
+      "document": "claims/arbitrary-order/FULL_ADMISSIBLE_POTENTIAL_CONE_LEMMA.md",
+      "document_sha256_16": "fbc357ceb29ba38f",
       "status": "partially_withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -2079,12 +2127,18 @@
       "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "Header marks withdrawn subsets of claims; read the header before citing."
+      "note": "Header marks withdrawn subsets of claims; read the header before citing.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "FULL_ADMISSIBLE_POTENTIAL_CONE_LEMMA.md"
+      ]
     },
     {
       "name": "Six Permuted Potentials Lemma",
-      "document": "SIX_PERMUTED_POTENTIALS_LEMMA.md",
-      "document_sha256_16": "5772acd528f67aec",
+      "document": "claims/arbitrary-order/SIX_PERMUTED_POTENTIALS_LEMMA.md",
+      "document_sha256_16": "40f74fa3f77384c8",
       "status": "partially_withdrawn",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -2094,7 +2148,13 @@
       "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "Header marks withdrawn subsets of claims; read the header before citing."
+      "note": "Header marks withdrawn subsets of claims; read the header before citing.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "SIX_PERMUTED_POTENTIALS_LEMMA.md"
+      ]
     },
     {
       "name": "Weighted H22 disjoint mixed-star working note",

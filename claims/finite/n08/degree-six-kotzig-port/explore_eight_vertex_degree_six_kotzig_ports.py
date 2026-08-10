@@ -31,11 +31,12 @@ for _p in Path(__file__).resolve().parents:
     if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
         sys.path.insert(0, str(_p / "src"))
         break
-from krenn_gu.bootstrap import bootstrap  # noqa: E402
+from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
 
 REPO_ROOT, HERE = bootstrap(__file__)
+expose_claim_package(REPO_ROOT, "claims/finite/n08")
 
-from krenn_gu.eight_vertex_degree4_support import decode_graph6
+from eight_vertex_degree4_support import decode_graph6
 
 Edge = tuple[int, int]
 Matching = tuple[Edge, ...]
@@ -319,7 +320,7 @@ def main() -> None:
     parser.add_argument(
         "--theorem",
         type=Path,
-        default=Path("EIGHT_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md"),
+        default=HERE / "EIGHT_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md",
     )
     args = parser.parse_args()
     started = time.perf_counter()

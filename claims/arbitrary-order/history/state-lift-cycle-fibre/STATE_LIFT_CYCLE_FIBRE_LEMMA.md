@@ -142,7 +142,7 @@ minimum positive-state count, not merely a lifted-girth bound.
 Run
 
 ```text
-python verify_state_lift_cycle_fibres.py
+python claims/arbitrary-order/history/state-lift-cycle-fibre/verify_state_lift_cycle_fibres.py
 ```
 
 On all 395 original-six-ray order-twelve residuals, the verifier rebuilds

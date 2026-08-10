@@ -78,7 +78,7 @@ pairs on `M` send `P_3` to a nonzero pure tensor.
 
 Assume those three pairs have rank two on `M`.  The exact classification
 in
-[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](../../../../P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md)
+[`P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md`](../../../p3/restrictions/P3_DECOMPOSABLE_RESTRICTION_CLASSIFICATION.md)
 puts one oriented-edge chart, after permuting and rescaling modes and
 source coordinates, into the form
 

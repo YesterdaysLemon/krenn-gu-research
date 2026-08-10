@@ -122,7 +122,7 @@ def main() -> None:
 
     run(
         [
-            str(REPO_ROOT / "src" / "krenn_gu" / "verify_laurent_batch_manifest.py"),
+            str(HERE / "verify_laurent_batch_manifest.py"),
             "--manifest",
             str(transfer),
         ]
@@ -130,14 +130,14 @@ def main() -> None:
     for manifest in laurent_manifests:
         run(
             [
-                str(REPO_ROOT / "src" / "krenn_gu" / "verify_laurent_batch_manifest.py"),
+                str(HERE / "verify_laurent_batch_manifest.py"),
                 "--manifest",
                 str(manifest),
             ]
         )
     for fallback, learned in singular_pairs:
         command = [
-            "verify_singular_fallback_manifest.py",
+            str(HERE / "verify_singular_fallback_manifest.py"),
             "--fallback-manifest",
             str(fallback),
             "--learned-manifest",

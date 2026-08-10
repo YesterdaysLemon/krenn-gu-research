@@ -50,12 +50,12 @@ no-goods.
 The augmentation and its independent audit are:
 
 ```text
-python augment_fourteen_vertex_c4_c4_c6_with_colour_symmetric_orbit_exclusions.py \
+python claims/finite/n14/augment_fourteen_vertex_c4_c4_c6_with_colour_symmetric_orbit_exclusions.py \
   --base-cnf tmp/fourteen_vertex_c4_c4_c6_rule_sat_late_combined_v7_orbit8_partial2_minimal_circuits_kappa3_symbinomial3.cnf \
   --output-cnf tmp/fourteen_vertex_c4_c4_c6_colour_symmetric_orbit_exclusions.cnf \
   --output tmp/fourteen_vertex_c4_c4_c6_colour_symmetric_orbit_exclusions_augmentation.json
 
-python verify_fourteen_vertex_c4_c4_c6_colour_symmetric_orbit_exclusions.py \
+python claims/finite/n14/verify_fourteen_vertex_c4_c4_c6_colour_symmetric_orbit_exclusions.py \
   tmp/fourteen_vertex_c4_c4_c6_colour_symmetric_orbit_exclusions_augmentation.json \
   --output tmp/fourteen_vertex_c4_c4_c6_colour_symmetric_orbit_exclusions_verified.json
 ```

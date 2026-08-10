@@ -80,7 +80,7 @@ possible target matchings:
 Run:
 
 ```text
-python src/krenn_gu/verify_fourteen_vertex_no_one_term_support.py
+python claims/finite/n14/verify_fourteen_vertex_no_one_term_support.py
 ```
 
 Pinned audit:

@@ -161,8 +161,8 @@ one of them into an exact contradiction.
 Run:
 
 ```text
-python verify_universal_saturated_diagonal_zero_layer.py
-python audit_universal_saturated_diagonal_zero_layer.py
+python claims/arbitrary-order/verify_universal_saturated_diagonal_zero_layer.py
+python claims/arbitrary-order/audit_universal_saturated_diagonal_zero_layer.py
 ```
 
 The primary verifier reconstructs the six permuted potentials, proves

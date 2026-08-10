@@ -116,7 +116,7 @@ KNOWN_DANGLING_SCRIPTS = {
 }
 
 FAST_VERIFIERS = [
-    "verify_q2_n6_k4_d4_construction.py",
+    "claims/finite/n06/q2-k4-d4-construction/verify_q2_n6_k4_d4_construction.py",
     "claims/arbitrary-order/verify_four_blocker_ideal_obstruction.py",
     "claims/arbitrary-order/verify_fourth_order_permanent_subrank.py",
     "claims/arbitrary-order/verify_exact_three_blocker_permanent_rank.py",

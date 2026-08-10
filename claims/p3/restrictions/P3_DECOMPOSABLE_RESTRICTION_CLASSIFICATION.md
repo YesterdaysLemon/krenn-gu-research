@@ -223,8 +223,8 @@ claim.
 Run:
 
 ```text
-python verify_p3_decomposable_restriction_classification.py
-python audit_p3_decomposable_restriction_classification.py
+python claims/p3/restrictions/verify_p3_decomposable_restriction_classification.py
+python claims/p3/restrictions/audit_p3_decomposable_restriction_classification.py
 ```
 
 The primary verifier reconstructs (2), all six oriented-edge systems,

@@ -2,6 +2,20 @@
 
 from __future__ import annotations
 
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__, also=["."])
+
 import argparse
 import itertools
 import json
@@ -16,10 +30,10 @@ from killer_union_stratum import (
     normalized_union_stratum,
     union_orbit_equations_with_colourings,
 )
-from prism_laurent_reduction import primitive_binomial_reduction
-from prism_orbit_screen import clean_polynomial, singular_program
-from rankone_support_sat import windows_to_wsl
-from search_witness import EquationSystem
+from krenn_gu.prism_laurent_reduction import primitive_binomial_reduction
+from krenn_gu.prism_orbit_screen import clean_polynomial, singular_program
+from krenn_gu.rankone_support_sat import windows_to_wsl
+from krenn_gu.search_witness import EquationSystem
 from verify_prism_certificates import is_exact_unit_log
 
 

@@ -11,6 +11,25 @@ cone.  It does not enumerate all port realizations.
 
 from __future__ import annotations
 
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import (  # noqa: E402
+    bootstrap as _bootstrap_repository,
+    expose_claim_package,
+)
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__, also=["."])
+expose_claim_package(REPO_ROOT, "claims/finite/n10/degree-six-kotzig-port")
+expose_claim_package(REPO_ROOT, "claims/finite/n08/degree-six-kotzig-port")
+
 import argparse
 from collections import Counter
 import hashlib
@@ -31,21 +50,11 @@ from explore_eight_vertex_degree_six_kotzig_ports import (
     kotzig_colourings,
     normal_types,
 )
-import sys
-
-for _p in Path(__file__).resolve().parents:
-    if (_p / "src" / "krenn_gu" / "bootstrap.py").exists():
-        sys.path.insert(0, str(_p / "src"))
-        break
-from krenn_gu.bootstrap import bootstrap, expose_claim_package  # noqa: E402
-
-REPO_ROOT, HERE = bootstrap(__file__)
-expose_claim_package(REPO_ROOT, "tools/explore")
 
 from scout_twelve_vertex_six_potential_cells import (
     first_port_realization,
 )
-from verify_full_admissible_potential_cone import EXTREME_RAYS
+from krenn_gu.admissible_potential_cone import EXTREME_RAYS
 
 
 def sha256(path: Path) -> str:

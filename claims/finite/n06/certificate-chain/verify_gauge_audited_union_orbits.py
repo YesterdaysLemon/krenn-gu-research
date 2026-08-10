@@ -2,6 +2,20 @@
 
 from __future__ import annotations
 
+import sys as _bootstrap_sys
+from pathlib import Path as _BootstrapPath
+
+for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
+    if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
+        _bootstrap_sys.path.insert(0, str(_bootstrap_parent / "src"))
+        break
+else:  # pragma: no cover - checkout contract failure
+    raise RuntimeError("cannot locate repository bootstrap")
+
+from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
+
+REPO_ROOT, HERE = _bootstrap_repository(__file__, also=["."])
+
 import argparse
 import json
 from collections import Counter
@@ -11,7 +25,7 @@ from pathlib import Path
 from certify_global_pattern_orbits import certify_pattern_with_fallback
 from enumerate_killer_union_orbits import parse_edges, union_from_missing
 from killer_union_stratum import mutual_gauge_rank
-from search_witness import EquationSystem
+from krenn_gu.search_witness import EquationSystem
 
 
 def certify_item(

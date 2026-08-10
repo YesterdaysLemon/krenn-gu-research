@@ -34,7 +34,7 @@ The Stage 4 batch deliberately kept the dependency chain
 ```text
 mixed-orientation  <-  disjoint-mixed-star (moved Stage 3)
                      <-  all-rank-one-triangle
-                          <-  root P5 H22/H31 AROT verifiers (guarded)
+                          <-  then-root P5 H22/H31 AROT verifiers (guarded)
 ```
 
 usable after multiple package relocations.  Bare-name imports of
@@ -45,8 +45,9 @@ remain for these packages.
 
 ## Shared dependencies
 
-The global classification documents, research snapshots, and the P5
-H22/H31 consumer scripts stay at the repository root or in
-`research_snapshots/`; cross-family references are links, not file
-ownership.  Migration status does not change any theorem claim, and the
+The global classification documents now live under
+[`../classifications/`](../classifications/), the P5 H22/H31 consumers under
+[`../../p5/h22/`](../../p5/h22/) and [`../../p5/h31/`](../../p5/h31/), and
+research snapshots under `research_snapshots/`. Cross-family references are
+links, not file ownership. Migration status changes no theorem claim, and the
 global conjecture remains **UNRESOLVED**.

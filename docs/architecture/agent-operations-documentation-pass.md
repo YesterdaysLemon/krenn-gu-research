@@ -110,7 +110,7 @@ per the index-completeness invariant:
 ```text
 python check_hygiene.py                          -> all checks passed
 python -m unittest tests.test_migration_tools    -> 117 tests OK
-python -m unittest test_fourteen_vertex_cycle_cover_lattice.py
+python -m unittest tests.test_fourteen_vertex_cycle_cover_lattice
                                                  -> 14 tests OK
 python tools/migration/rewrite_links.py          -> 0/0/0/0
 git diff --exit-code                             -> clean
