@@ -1,0 +1,35 @@
+{
+  "batch_schema_version": 2,
+  "batch_id": "h31-cbmf-reconciled-root-exit",
+  "approved_by": "Codex (exact mapping reviewer under repository-owner standing delegation dated 2026-08-08; owner-authorized bounded H31-CBMF reconciliation disposition dated 2026-08-09)",
+  "approved_at": "2026-08-10",
+  "base_sha": "463532dc130e1a34804aa2e78b3ead835793ccd3",
+  "manifest_sha256": "3c6ccdbbca20f707413bc7931a0cc607fd3eb844cbf4ead2d4e40f3353fce09d",
+  "mapping_sha256": "9d9c85b5dc89958ea0127f6ed5f7fe8000b060294e17966a70321a36b709f39e",
+  "source_identity_sha256": "9a1eccdb780be9ed6cc084921bf397b779560419688b8210bf0be123e98f27ae",
+  "member_count": 4,
+  "moves": [
+    {
+      "old_path": "P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md",
+      "new_path": "claims/p5/h31/component-chart-boundary-marked-fibre/P5_H31_COMPONENT_CHART_BOUNDARY_MARKED_FIBRE_OBSTRUCTION.md",
+      "source_blob": "0d27b4848777bb44fafdcf364be3ab9a0c4d63bb"
+    },
+    {
+      "old_path": "audit_p5_h31_component_chart_boundary_marked_fibre.py",
+      "new_path": "claims/p5/h31/component-chart-boundary-marked-fibre/audit_p5_h31_component_chart_boundary_marked_fibre.py",
+      "source_blob": "52647a5bcb7f09a6b247cae231c70a392c2d1b11"
+    },
+    {
+      "old_path": "derive_p5_h31_chart_boundary_marked_fibre_elimination.py",
+      "new_path": "claims/p5/h31/component-chart-boundary-marked-fibre/derive_p5_h31_chart_boundary_marked_fibre_elimination.py",
+      "source_blob": "b2ed4c8096d22da626141922a5df926fac853d43"
+    },
+    {
+      "old_path": "verify_p5_h31_component_chart_boundary_marked_fibre.py",
+      "new_path": "claims/p5/h31/component-chart-boundary-marked-fibre/verify_p5_h31_component_chart_boundary_marked_fibre.py",
+      "source_blob": "c886dcc04219a504b4ca9bc7aab79c2842e33d4d"
+    }
+  ],
+  "rationale": "Move the outcome-A reconciled theorem, exact primary, modular QA audit, and uniquely owned generator into the coherent H31 component-chart-boundary marked-fibre claim package without further scientific change.",
+  "notes": "Original pre-audit paths/blobs and all four selected characteristic-zero unit-ideal transcripts are pinned in docs/audits/h31-cbmf-characteristic-zero-reconciliation.md. Global Krenn-Gu remains UNRESOLVED."
+}
