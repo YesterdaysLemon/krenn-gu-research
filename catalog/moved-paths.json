@@ -5438,10 +5438,10 @@
     },
     {
       "old_path": "audit_twelve_vertex_six_potential_orbits.cpp",
-      "new_path": "claims/finite/n12/history/degree-six-kotzig-port-legacy/audit_twelve_vertex_six_potential_orbits.cpp",
-      "reason": "claim_script -> finite/n12/history/degree-six-kotzig-port-legacy",
+      "new_path": "claims/finite/n12/audit_twelve_vertex_six_potential_orbits.cpp",
+      "reason": "claim_script -> finite/n12 live corrected degree-six Kotzig-port replay",
       "status": "proposed_high_confidence",
-      "claim_family": "finite/n12/history/degree-six-kotzig-port-legacy",
+      "claim_family": "finite/n12",
       "confidence": "high"
     },
     {
@@ -5454,10 +5454,10 @@
     },
     {
       "old_path": "exhaust_twelve_vertex_six_potential_orbits.cpp",
-      "new_path": "claims/finite/n12/history/degree-six-kotzig-port-legacy/exhaust_twelve_vertex_six_potential_orbits.cpp",
-      "reason": "claim_script -> finite/n12/history/degree-six-kotzig-port-legacy",
+      "new_path": "claims/finite/n12/exhaust_twelve_vertex_six_potential_orbits.cpp",
+      "reason": "claim_script -> finite/n12 live corrected degree-six Kotzig-port replay",
       "status": "proposed_high_confidence",
-      "claim_family": "finite/n12/history/degree-six-kotzig-port-legacy",
+      "claim_family": "finite/n12",
       "confidence": "high"
     },
     {

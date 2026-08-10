@@ -262,7 +262,8 @@
     "finite/ten-vertex": 15,
     "finite/n10/degree-six-kotzig-port": 6,
     "finite/twelve-vertex": 5,
-    "finite/n12/history/degree-six-kotzig-port-legacy": 6,
+    "finite/n12": 2,
+    "finite/n12/history/degree-six-kotzig-port-legacy": 4,
     "finite/n14": 90,
     "finite/n08": 62,
     "finite/n06/certificate-chain": 37,
@@ -30413,26 +30414,26 @@
     },
     {
       "old_path": "exhaust_twelve_vertex_six_potential_orbits.cpp",
-      "proposed_path": "claims/finite/n12/history/degree-six-kotzig-port-legacy/exhaust_twelve_vertex_six_potential_orbits.cpp",
+      "proposed_path": "claims/finite/n12/exhaust_twelve_vertex_six_potential_orbits.cpp",
       "category": "claim_script",
-      "claim_family": "finite/n12/history/degree-six-kotzig-port-legacy",
+      "claim_family": "finite/n12",
       "confidence": "high",
       "evidence": [
         "Stage 33 exact final-residual filesystem, executable/provenance, and proof-obligation topology review",
         "exact 305-source mapping frozen against merged main c99a4e9519685b4fba46f51a1e93ac6c6d6c3cbc",
-        "lifecycle-preserving family history ownership"
+        "live corrected order-twelve theorem replay carrier; opposite-end half-colour and balanced-bridge logic audited"
       ]
     },
     {
       "old_path": "audit_twelve_vertex_six_potential_orbits.cpp",
-      "proposed_path": "claims/finite/n12/history/degree-six-kotzig-port-legacy/audit_twelve_vertex_six_potential_orbits.cpp",
+      "proposed_path": "claims/finite/n12/audit_twelve_vertex_six_potential_orbits.cpp",
       "category": "claim_script",
-      "claim_family": "finite/n12/history/degree-six-kotzig-port-legacy",
+      "claim_family": "finite/n12",
       "confidence": "high",
       "evidence": [
         "Stage 33 exact final-residual filesystem, executable/provenance, and proof-obligation topology review",
         "exact 305-source mapping frozen against merged main c99a4e9519685b4fba46f51a1e93ac6c6d6c3cbc",
-        "lifecycle-preserving family history ownership"
+        "live corrected order-twelve theorem independent replay carrier; opposite-end half-colour and balanced-bridge logic audited"
       ]
     },
     {

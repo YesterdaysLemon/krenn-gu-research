@@ -1,7 +1,8 @@
 # Twelve-vertex degree-six Kotzig-port legacy
 
-These six artifacts are retained as historical work under the corrected
-physical-port orientation.  The legacy theorem, Python analyses/audit, and
-C++ exhaust/audit programs remain withdrawn evidence; they are not a live
-premise.  The valid arbitrary-order full-cone theorem and corrected live
-order-twelve work remain external.
+These four artifacts retain the withdrawn legacy theorem and its three Python
+residual-analysis carriers as historical work.  They are not a live premise.
+The corrected order-twelve theorem's two exact-cover C++ replay engines remain
+live under the parent [`claims/finite/n12/`](../../) package and are shared by
+the corrected finite regression.  That shared use does not revive the legacy
+theorem or its withdrawn Python route.

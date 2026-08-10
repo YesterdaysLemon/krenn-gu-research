@@ -28,9 +28,9 @@ destination collision, case-fold collision, or overlap cycle:
 
 ```text
 canonical mapping SHA-256:
-  fe89bb11ed1601d6f5df53b93452ff09b774b7c93cec38ccbcbe4519153398ee
+  f7f393ecb1fc2764b525c496a844302f35e896238bf03f443c7219d190067cc4
 canonical source-identity SHA-256:
-  308c410c134dede499dfa80d576e13d05ea90ccd5da9e849feaeb5e60f326969
+  c15b0648b0b5c4e40d0741941406deadd013f81d1dedadd12e5bc1fa11aa2808
 ```
 
 The historical 2,363-path inventory remains unchanged.  Catalog membership
@@ -54,7 +54,7 @@ claims/finite/n10 (flat + degree-six)                     13
 claims/arbitrary-order (live + state-lift history)        14
 claims/p4 disputed Component20 forest                     14
 claims/p4 boundary/classification/history                 18
-claims/finite/n12 history                                  6
+claims/finite/n12 (2 live C++ + 4 history)                6
 claims/p3/restrictions                                     6
 tools/explore                                              8
 tests                                                      4
@@ -68,6 +68,14 @@ scientific owners.  Eight genuine search/operator entry points go to
 are not assigned to arbitrary-order by filename pressure.  Withdrawn and
 partially withdrawn records move to honest family/topic homes without losing
 their corrected-result asymmetries.
+
+The mapping review corrected one lifecycle-driven assignment: the two
+order-twelve C++ exact-cover engines are load-bearing replay carriers for the
+corrected live finite regression.  They implement the opposite-end inherited
+half-colours and balanced-bridge filter and therefore stay in
+`claims/finite/n12/`; only the legacy theorem and three Python residual
+artifacts remain in the withdrawn history package.  This is a path/provenance
+correction, not a scientific status change or computation replay.
 
 Fresh semantic review corrected one provisional filename-driven assignment:
 `explore_random_odd_factor_one_term.py` is an order-12-default exploratory
