@@ -19,6 +19,7 @@ case-cover claim, owner-gated conflict, or global status.
 | exact approved batch | `3e4cec1bbf5c0867276b25ff275ee7dc393e4511` | `69106aac657df31988853b272c2755680fa4b3db` |
 | pure 176-file move | `169ba6dcc4d11330845e83693bc506160dc205b2` | `dd96a76d3681401dbb6e874a6e0d4968e434907b` |
 | migration-aware link/command rewrite | `2976efb02090952de0ecf0d44e1428993f90f6ea` | `722c2afea1a912a19607edb5a5fb1b6a108fb915` |
+| executable repair, navigation, and local validation | `e73711982fe7bef166fb2683bf3a8c5679f3192f` | `c4fbf98990ed24cc970023d1efe8e1efa9c38969` |
 
 Batch: [`p5-frontier-stage29`](../../catalog/batches/p5-frontier-stage29.json).
 Dry run: [`p5-frontier-stage29-dry-run.md`](p5-frontier-stage29-dry-run.md).
@@ -161,8 +162,8 @@ passes the authoritative local floor:
   `git diff --cached --check`;
 - independent repair-surface, catalog/ledger, and proof-boundary review: PASS.
 
-The repair/report commit identity, publication, exact-head hosted CI, guarded
-merge, and merged-main CI remain **PENDING**.
+The exact repair checkpoint is pinned above.  Publication, exact-head hosted
+CI, guarded merge, and merged-main CI remain **PENDING**.
 
 No local success, publication event, or CI run changes the mathematical
 status.  Broad SAT, Singular, numerical, sampling, and theorem reruns remain
