@@ -299,16 +299,22 @@ def main() -> None:
             totals[key] += value
 
     report = {
-        "verified": True,
+        "modular_qa_passed": True,
         "method": (
-            "exhaust exact projection strata over F5 and F7; "
+            "exhaust exact projection-ideal points over F5 and F7; "
             "modular mixed kernels; all projective extension "
             "directions; direct selected-minor tests"
         ),
         "orientations": 4,
         "by_prime": by_prime,
         "totals": totals,
-        "complete_chart_boundary_marked_fibre_excluded": True,
+        "complete_modular_projection_point_qa": True,
+        "characteristic_zero_exhaustiveness_proved_here": False,
+        "characteristic_zero_role": (
+            "independent finite-field QA only; see the theorem, primary "
+            "component/record reconciliation, four selected unit-ideal "
+            "runs, and reconciliation audit"
+        ),
         "global": False,
         "theorem_sha256": sha256(THEOREM),
         "primary_sha256": sha256(PRIMARY),

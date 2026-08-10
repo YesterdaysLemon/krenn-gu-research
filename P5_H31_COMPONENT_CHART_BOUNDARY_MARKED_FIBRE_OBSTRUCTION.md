@@ -113,9 +113,30 @@ q=3:
     R*t0*(A+1)+t3 >.                                 (9)
 ```
 
-These are complete Zariski projection closures.  Their components are
-only coordinate axes and linear hypersurfaces; no ambient-map or
-Grassmannian enumeration is involved.
+These are complete Zariski projection closures.  They have thirteen
+irreducible projection-closure components, with counts `4,2,3,4` for
+`q=0,1,2,3`.  Some components are coordinate subspaces and the others
+are elementary graph complete intersections; the component count is
+not the certificate-record count below.
+
+Equation (9) also contains two closure-only loci which do not meet the
+saturated incidence (8):
+
+```text
+q=0: A=1, R=0, t0=t2=t3=0, t1!=0;
+q=1: A=1, R=0, t0=t1=t2=t3=0.                       (10)
+```
+
+On the first locus the exact row identity
+
+```text
+t1*d_1 + row_0(M_0) - t1*row_4(M_0) - row_10(M_0)=0
+```
+
+forces `d_1=0` on `ker M_0`; on the second locus the `d_1` row is
+identically zero.  Thus neither locus can satisfy (8).  The remaining
+locally closed incidence locus is covered by the records below.  No
+ambient-map or Grassmannian enumeration is involved.
 
 ## Selected-minor obstruction
 
@@ -124,7 +145,7 @@ one-marked map and let `N_i(z)` be the neighbouring one-marked map.
 A ternary lift necessarily satisfies
 
 ```text
-(entry of p_i) * (every 4-minor of N_i(z))=0.         (10)
+(entry of p_i) * (every 4-minor of N_i(z))=0.         (11)
 ```
 
 The following selected minors suffice, with rows numbered
@@ -137,12 +158,26 @@ The following selected minors suffice, with rows numbered
 | 2 | `(2;0237)`, `(2;0367)`, `(2;0267)` |
 | 3 | `(2;0237)`, `(2;0367)`, `(0;0457)` |
 
-The components of (9) split into fourteen elementary certificate
-strata.  On each stratum, write an arbitrary extension in an exact
-basis of `ker M_q`.  Every selected determinant factors as
+The thirteen projection components in (9) are covered by thirteen
+generic rational-basis records.  Three components require a separate
+denominator-free basis at an exceptional parameter value, so the
+verifier contains sixteen factor-certificate records in all: thirteen
+generic-basis records and three exceptional-basis records.  These are
+records, not sixteen irreducible components.
+
+The records are made into a disjoint locally closed proof cover by
+assigning the `q=2`, `A=1`, `t0=0`, `R!=0` overlap to the generic
+`t0=0` record, and the `q=3`, `R=0`, `t0=0` overlap to the generic
+`R=0` record.  Equivalently, the other records impose respectively
+`t0!=0` and `R!=0`.  The human-readable component-to-record coverage
+table is in
+[`h31-cbmf-characteristic-zero-reconciliation.md`](docs/audits/h31-cbmf-characteristic-zero-reconciliation.md).
+
+On each record, write an arbitrary extension in an exact basis of
+`ker M_q`.  Every selected determinant factors as
 
 ```text
-d_0(z)d_1(z) ell(z),                                 (11)
+d_0(z)d_1(z) ell(z),                                 (12)
 ```
 
 where `ell` is a nonzero parameter multiple of `d_0` or `d_1`.
@@ -150,14 +185,14 @@ The only rational-basis exceptional values are
 
 ```text
 R t0=-1  for q=0,3,
-R t0= 1  for q=2.                                    (12)
+R t0= 1  for q=2.                                    (13)
 ```
 
 They are checked in separate denominator-free kernel bases and obey
 the same residual identities.  The branch factors are among
 
 ```text
-1, R, 1/R, -2R, -R^2 t0,                             (13)
+1, R, 1/R, -2R, -R^2 t0,                             (14)
 ```
 
 and the stated branch conditions make the chosen factor nonzero.
@@ -165,14 +200,20 @@ Consequently
 
 ```text
 A d_0(z)d_1(z)!=0
-  ==> some selected mode has p_i!=0 and rank N_i(z)=4. (14)
+  ==> some selected mode has p_i!=0 and rank N_i(z)=4. (15)
 ```
 
 Equivalently, adding the products
 `(entry of p_i)*(selected minor)` to the saturated binary incidence
-gives the unit ideal in each orientation.  The primary verifier uses
-the smaller factor ledger rather than making Gröbner elimination
-rediscover the elementary branch decomposition.
+gives the unit ideal in each orientation.  Those four exact saturated
+unit-ideal computations are the mechanical exhaustiveness proof.  The
+primary verifier also checks the thirteen-component decomposition,
+every record's component assignment, the two closure-artifact identities,
+and the smaller factor ledger.  Its default
+`--selected-unit-ideals` mode also runs those four saturated
+unit-ideal computations over characteristic zero; the explicit
+`--no-selected-unit-ideals` switch is a bounded local-check mode and
+does not report selected-saturation exhaustiveness.
 
 The third target row at the selected mode must vanish on the
 neighbouring hyperplane because `N_i(z)` is injective, and must vanish
@@ -188,6 +229,13 @@ python verify_p5_h31_component_chart_boundary_marked_fibre.py
 python audit_p5_h31_component_chart_boundary_marked_fibre.py
 ```
 
+Independently replay the four saturated characteristic-zero
+unit-ideal computations with:
+
+```text
+python verify_p5_h31_component_chart_boundary_marked_fibre.py --selected-unit-ideals --selected-timeout 900
+```
+
 Regenerate the four saturated projection ideals with:
 
 ```text
@@ -195,11 +243,17 @@ python derive_p5_h31_chart_boundary_marked_fibre_elimination.py q --run
 ```
 
 The primary verifier checks the normalization, reconstructs all
-permanent matrices, reruns (9), and verifies every kernel and residual
-factor in the fourteen-stratum ledger over characteristic zero.  The independent
-audit exhausts (9) over `F_5` and `F_7`, computes every modular mixed
-kernel, enumerates every projective binary extension direction, and
-tests the selected minors directly.
+permanent matrices, reruns (9), verifies the thirteen-component
+decomposition and record assignments, excludes both closure-only loci, and
+verifies every kernel and residual
+factor in the sixteen-record ledger over characteristic zero.  The
+independent audit exhausts (9) over `F_5` and `F_7`, computes every
+modular mixed kernel, enumerates every projective binary extension
+direction, and tests the selected minors directly.
 
-The finite-field audit is exceptional-stratum QA; the unit ideals are
-the characteristic-zero proof.
+The four saturated unit-ideal computations are the mechanical
+characteristic-zero exhaustiveness proof.  The projection-component
+decomposition, the two closure-artifact identities, and the sixteen exact
+residual factor checks provide the human-auditable local cover and a second
+exact explanation of the obstruction.  The finite-field audit is modular
+QA only and is not evidence of characteristic-zero exhaustiveness.

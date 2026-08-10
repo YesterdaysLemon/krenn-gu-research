@@ -59,6 +59,9 @@ jobs:
       - name: Run migration-tool tests
         run: python -m unittest -v tests.test_migration_tools
 
+      - name: Run H31 marked-fibre reconciliation tests
+        run: python -m unittest -v tests.test_h31_cbmf_reconciliation
+
       - name: Run the self-contained test module
         run: python -m unittest -v test_fourteen_vertex_cycle_cover_lattice.py
 

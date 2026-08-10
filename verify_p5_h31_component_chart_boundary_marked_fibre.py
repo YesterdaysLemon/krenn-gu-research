@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import subprocess
@@ -212,7 +213,7 @@ def check_normalization() -> None:
 
 
 @dataclass(frozen=True)
-class Stratum:
+class CertificateRecord:
     distinguished: int
     name: str
     substitutions: tuple[tuple[sp.Symbol, sp.Expr], ...]
@@ -224,7 +225,7 @@ class Stratum:
     nonzero: tuple[sp.Expr, ...]
 
 
-def certificate_strata() -> tuple[Stratum, ...]:
+def certificate_records() -> tuple[CertificateRecord, ...]:
     A, R = sp.symbols("A R")
     t0, t1, t2, t3 = sp.symbols("t0:4")
 
@@ -238,8 +239,8 @@ def certificate_strata() -> tuple[Stratum, ...]:
         factor: sp.Expr,
         pure_witness: sp.Expr = sp.Integer(1),
         nonzero: tuple[sp.Expr, ...] = (),
-    ) -> Stratum:
-        return Stratum(
+    ) -> CertificateRecord:
+        return CertificateRecord(
             distinguished,
             name,
             tuple(substitutions.items()),
@@ -357,7 +358,10 @@ def certificate_strata() -> tuple[Stratum, ...]:
             (0, 2, 6, 7),
             "a",
             -2 * R,
-            nonzero=(R, R * t0 - 1),
+            # Assign the t0=0 intersection to the preceding t0_zero
+            # record, so the sixteen records form a disjoint locally
+            # closed cover rather than an overlapping cover.
+            nonzero=(R, t0, R * t0 - 1),
         ),
         item(
             2,
@@ -377,7 +381,9 @@ def certificate_strata() -> tuple[Stratum, ...]:
             (0, 2, 3, 7),
             "a",
             -1,
-            nonzero=(A,),
+            # Assign the R=0 intersection to the following R0_axis
+            # record, making the locally closed record cover disjoint.
+            nonzero=(A, R),
         ),
         item(
             3,
@@ -454,11 +460,11 @@ def assert_factor_nonzero(
     )
 
 
-def check_factor_strata() -> int:
+def check_factor_records() -> int:
     alpha0, beta0 = rows()
     checked = 0
-    for stratum in certificate_strata():
-        substitutions = dict(stratum.substitutions)
+    for record in certificate_records():
+        substitutions = dict(record.substitutions)
         alpha = tuple(
             tuple(
                 sp.factor(
@@ -484,7 +490,7 @@ def check_factor_strata() -> int:
             for row in beta0
         )
         mixed, diagonal_a, diagonal_b = mixed_matrix(
-            stratum.distinguished,
+            record.distinguished,
             alpha,
             beta,
         )
@@ -510,39 +516,39 @@ def check_factor_strata() -> int:
         assert da != 0 and db != 0
         determinant = sp.factor(
             marked_extension(
-                stratum.distinguished,
+                record.distinguished,
                 extension,
                 alpha,
                 beta,
-                stratum.mode,
-            )[list(stratum.rows), :].det()
+                record.mode,
+            )[list(record.rows), :].det()
         )
         residual = sp.factor(sp.cancel(determinant / (da * db)))
         factor = sp.factor(
-            sp.sympify(stratum.factor).subs(
+            sp.sympify(record.factor).subs(
                 substitutions,
                 simultaneous=True,
             )
         )
-        expected = factor * (da if stratum.diagonal == "a" else db)
+        expected = factor * (da if record.diagonal == "a" else db)
         assert zero(residual - expected), (
-            stratum,
+            record,
             residual,
             expected,
         )
         pure_column = one_marked_map(
-            stratum.mode,
+            record.mode,
             alpha,
             beta,
-        )[:, stratum.distinguished]
+        )[:, record.distinguished]
         witness = sp.factor(
-            sp.sympify(stratum.pure_witness).subs(
+            sp.sympify(record.pure_witness).subs(
                 substitutions,
                 simultaneous=True,
             )
         )
         assert any(zero(entry - witness) for entry in pure_column), (
-            stratum,
+            record,
             tuple(map(sp.factor, pure_column)),
             witness,
         )
@@ -553,11 +559,228 @@ def check_factor_strata() -> int:
                     simultaneous=True,
                 )
             )
-            for assumption in stratum.nonzero
+            for assumption in record.nonzero
         )
         assert_factor_nonzero(factor * witness, assumptions)
         checked += 1
     return checked
+
+
+def projection_components() -> dict[int, tuple[tuple[sp.Expr, ...], ...]]:
+    """Return the thirteen irreducible components of equation (9).
+
+    These are projection-closure components.  Certificate records below
+    further refine three components at rational-basis exceptional values;
+    component, locally closed record, and exceptional basis are deliberately
+    kept as different notions.
+    """
+    A, R = sp.symbols("A R")
+    t0, t1, t2, t3 = sp.symbols("t0:4")
+    return {
+        0: (
+            (R, t1, t2, t3),
+            (A - 1, t1, t2, t3),
+            (t0, t2, t3, R * t1 + A - 1),
+            (R, t0, t2, t3),
+        ),
+        1: (
+            (A + 1, R * t0 + 1, t1, t2, t3),
+            (A - 1, t0, t1, t2, t3),
+        ),
+        2: (
+            (t0, t1, t2, t3),
+            (R, t1, t2, t3),
+            (A - 1, t1, t2, t3),
+        ),
+        3: (
+            (R * t0 + 1, t3 - A - 1, t1, t2),
+            (t0, t3, t1, t2),
+            (R, t3, t1, t2),
+            (A + 1, t3, t1, t2),
+        ),
+    }
+
+
+# The thirteen generic records are in bijection with the thirteen
+# projection components.  The remaining three records replace a rational
+# kernel basis at an exceptional value on the named component.
+RECORD_COMPONENT = {
+    (0, "R0_t1_axis"): (0, 3),
+    (0, "R0_t0_axis"): (0, 0),
+    (0, "R_nonzero_A_nonone"): (0, 2),
+    (0, "A1_axis_generic"): (0, 1),
+    (0, "A1_axis_exception"): (0, 1),
+    (1, "A1"): (1, 1),
+    (1, "Aminus1"): (1, 0),
+    (2, "t0_zero"): (2, 0),
+    (2, "R0_axis"): (2, 1),
+    (2, "A1_axis_generic"): (2, 2),
+    (2, "A1_axis_exception"): (2, 2),
+    (3, "t0_zero"): (3, 1),
+    (3, "R0_axis"): (3, 2),
+    (3, "Aminus1_axis_generic"): (3, 3),
+    (3, "Aminus1_axis_exception"): (3, 3),
+    (3, "nonzero_t3"): (3, 0),
+}
+EXCEPTIONAL_BASIS_RECORDS = {
+    (0, "A1_axis_exception"),
+    (2, "A1_axis_exception"),
+    (3, "Aminus1_axis_exception"),
+}
+
+
+def _ideal_intersection(
+    left: tuple[sp.Expr, ...],
+    right: tuple[sp.Expr, ...],
+    variables: tuple[sp.Symbol, ...],
+) -> tuple[sp.Expr, ...]:
+    auxiliary = sp.Dummy("intersection")
+    basis = sp.groebner(
+        [auxiliary * expression for expression in left]
+        + [(1 - auxiliary) * expression for expression in right],
+        auxiliary,
+        *variables,
+        order="lex",
+    )
+    return tuple(
+        polynomial.as_expr()
+        for polynomial in basis.polys
+        if not polynomial.as_expr().has(auxiliary)
+    )
+
+
+def _ideals_equal(
+    left: tuple[sp.Expr, ...],
+    right: tuple[sp.Expr, ...],
+    variables: tuple[sp.Symbol, ...],
+) -> bool:
+    left_basis = sp.groebner(left, *variables, order="grevlex")
+    right_basis = sp.groebner(right, *variables, order="grevlex")
+    return (
+        all(left_basis.reduce(expression)[1] == 0 for expression in right)
+        and all(
+            right_basis.reduce(expression)[1] == 0
+            for expression in left
+        )
+    )
+
+
+def check_projection_reconciliation() -> dict[str, int]:
+    """Check the component/record reconciliation and closure artifacts.
+
+    Mechanical exhaustiveness is supplied separately by the four selected
+    saturated unit-ideal computations.  This bounded check verifies the
+    thirteen-component decomposition, every record's assigned component,
+    the record census/refinements, and the two closure-only identities.
+    """
+    A, R = sp.symbols("A R")
+    t0, t1, t2, t3 = sp.symbols("t0:4")
+    variables = (A, R, t0, t1, t2, t3)
+    expected = {
+        0: (
+            t3,
+            t2,
+            t0 * t1,
+            R * (R * t1 + A - 1),
+            R * t0 * (A - 1),
+        ),
+        1: (
+            t3,
+            t2,
+            t1,
+            2 * R * t0 - A + 1,
+            (A + 1) * t0,
+            A**2 - 1,
+        ),
+        2: (t3, t2, t1, R * t0 * (A - 1)),
+        3: (
+            t2,
+            t1,
+            t3 * (A - t3 + 1),
+            t3 * (R * t0 + 1),
+            R * t0 * (A + 1) + t3,
+        ),
+    }
+    components = projection_components()
+    for distinguished, component_ideals in components.items():
+        intersection = component_ideals[0]
+        for component in component_ideals[1:]:
+            intersection = _ideal_intersection(
+                intersection,
+                component,
+                variables,
+            )
+        assert _ideals_equal(
+            intersection,
+            expected[distinguished],
+            variables,
+        ), (distinguished, intersection, expected[distinguished])
+
+    records = certificate_records()
+    record_keys = {(record.distinguished, record.name) for record in records}
+    assert record_keys == set(RECORD_COMPONENT)
+    assert sum(len(items) for items in components.values()) == 13
+    assert len(records) == 16
+    assert len(EXCEPTIONAL_BASIS_RECORDS) == 3
+    generic_records = record_keys - EXCEPTIONAL_BASIS_RECORDS
+    assert len(generic_records) == 13
+    assert {
+        RECORD_COMPONENT[key] for key in generic_records
+    } == {
+        (distinguished, index)
+        for distinguished, items in components.items()
+        for index in range(len(items))
+    }
+
+    by_key = {
+        (record.distinguished, record.name): record
+        for record in records
+    }
+    for key, record in by_key.items():
+        component_q, component_index = RECORD_COMPONENT[key]
+        assert component_q == record.distinguished
+        substitutions = dict(record.substitutions)
+        assert all(
+            zero(
+                expression.subs(
+                    substitutions,
+                    simultaneous=True,
+                )
+            )
+            for expression in components[component_q][component_index]
+        ), (key, components[component_q][component_index])
+    # These two nonzero refinements assign the only overlapping loci to a
+    # single record and make the sixteen-piece locally closed cover disjoint.
+    assert t0 in by_key[(2, "A1_axis_generic")].nonzero
+    assert R in by_key[(3, "t0_zero")].nonzero
+
+    # Equation (9) has two closure-only loci not owned by a certificate
+    # record.  Exact row identities show that neither meets the saturated
+    # binary incidence d_a*d_b != 0.
+    alpha, beta = rows()
+    mixed0, _diagonal_a0, diagonal_b0 = mixed_matrix(0, alpha, beta)
+    q0 = {A: 1, R: 0, t0: 0, t2: 0, t3: 0}
+    q0_identity = (
+        t1 * diagonal_b0
+        + mixed0[0, :]
+        - t1 * mixed0[4, :]
+        - mixed0[10, :]
+    ).subs(q0, simultaneous=True)
+    assert all(zero(entry) for entry in q0_identity)
+
+    _mixed1, _diagonal_a1, diagonal_b1 = mixed_matrix(1, alpha, beta)
+    q1 = {A: 1, R: 0, t0: 0, t1: 0, t2: 0, t3: 0}
+    assert all(
+        zero(entry.subs(q1, simultaneous=True))
+        for entry in diagonal_b1
+    )
+    return {
+        "irreducible_projection_components": 13,
+        "generic_rational_basis_records": 13,
+        "exceptional_basis_records": 3,
+        "locally_closed_certificate_records": 16,
+        "projection_closure_artifact_loci": 2,
+    }
 
 
 def selected_program(distinguished: int) -> tuple[str, int]:
@@ -614,7 +837,69 @@ def selected_program(distinguished: int) -> tuple[str, int]:
     return program, product_count
 
 
+def check_selected_unit_ideals(timeout: float) -> tuple[dict[str, object], ...]:
+    """Run the four exact characteristic-zero saturated cover checks.
+
+    These comparatively expensive computations are the direct mechanical
+    exhaustiveness check.  They run by default; the bounded local-check mode
+    must opt out explicitly and reports that exhaustiveness was not confirmed.
+    """
+    results: list[dict[str, object]] = []
+    for distinguished in range(4):
+        program, product_count = selected_program(distinguished)
+        output = run_singular(program, timeout=timeout)
+        lines = tuple(
+            line.strip()
+            for line in output.splitlines()
+            if line.strip()
+        )
+        assert f"Q={distinguished}_SELECTED" in lines, lines
+        marker = lines.index("BASIS_SIZE")
+        assert lines[marker + 1] == "1", lines
+        assert "basis[1]=1" in lines, lines
+        results.append({
+            "distinguished": distinguished,
+            "unit_ideal": True,
+            "product_count": product_count,
+            "program_bytes": len(program.encode("utf-8")),
+            "program_sha256": hashlib.sha256(
+                program.encode("utf-8")
+            ).hexdigest(),
+            "stdout_sha256": hashlib.sha256(
+                output.encode("utf-8")
+            ).hexdigest(),
+        })
+    return tuple(results)
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description=(
+            "Verify the characteristic-zero H31 chart-boundary marked-fibre "
+            "cover and its sixteen exact factor-certificate records."
+        )
+    )
+    parser.add_argument(
+        "--selected-unit-ideals",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help=(
+            "run the four expensive saturated unit-ideal computations "
+            "generated by selected_program() (default: enabled; use "
+            "--no-selected-unit-ideals for the bounded local replay only)"
+        ),
+    )
+    parser.add_argument(
+        "--selected-timeout",
+        type=float,
+        default=900.0,
+        help="per-Singular-run timeout in seconds (default: 900)",
+    )
+    return parser.parse_args()
+
+
 def main() -> None:
+    args = parse_args()
     started = time.monotonic()
     check_normalization()
     alpha, beta = rows()
@@ -640,17 +925,32 @@ def main() -> None:
             EXPECTED_PROJECTION[distinguished],
         )
         projection_runs += 1
-    factor_strata = check_factor_strata()
-    assert factor_strata == 16
+    reconciliation = check_projection_reconciliation()
+    factor_records = check_factor_records()
+    assert factor_records == 16
+    selected_runs = (
+        check_selected_unit_ideals(args.selected_timeout)
+        if args.selected_unit_ideals
+        else ()
+    )
 
     report = {
-        "verified": True,
+        "bounded_obstruction_replay_passed": True,
         "field": "characteristic zero",
         "normalization": "H=N=1 with bijective shift action",
-        "projection_unit_or_ledger_runs": projection_runs,
-        "exact_factor_certificate_strata": factor_strata,
-        "all_extension_residual_covers": True,
-        "complete_chart_boundary_marked_fibre_excluded": True,
+        "projection_elimination_runs": projection_runs,
+        **reconciliation,
+        "exact_factor_certificate_records": factor_records,
+        "component_record_reconciliation_checked": True,
+        "selected_saturation_unit_ideal_runs": {
+            "requested": args.selected_unit_ideals,
+            "completed": len(selected_runs),
+            "records": selected_runs,
+        },
+        "selected_saturation_exhaustiveness_confirmed": (
+            len(selected_runs) == 4
+        ),
+        "exact_factor_record_checks_passed": factor_records == 16,
         "projective_first_plane_boundary_closed": False,
         "internal_E0_marked_fibre_closed": False,
         "additional_components_closed": False,
