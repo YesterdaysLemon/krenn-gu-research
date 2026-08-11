@@ -62,7 +62,8 @@ flowchart TD
   O2C["Complete locally transverse q=0, r=5 cell<br/>AT LEAST ONE DETECTOR conditionally"]
   O2D["q=0, r=5 one arbitrary or regular-two defects<br/>AT LEAST ONE DETECTOR conditionally"]
   O2E["q=0, r=5 at most two defects except AA/BB<br/>AT LEAST ONE DETECTOR conditionally"]
-  O3["q=0 r=5 AA/BB double-kernel or >=3 local defects;<br/>q=0 r>=6, q>=1, or unfactorized OPEN"]
+  O2G["q=0, r=5 at most two defects, all types<br/>AT LEAST ONE DETECTOR conditionally"]
+  O3["q=0 r=5 at least three local defects;<br/>q=0 r>=6, q>=1, or unfactorized OPEN"]
 
   U1["r = 1 complete matrix units<br/>PROVED normal form"]
   U2["At-most-four-port response<br/>k = 1, 2, 3 remain OPEN"]
@@ -106,8 +107,9 @@ flowchart TD
   O2A -. strict overlapping stratum .-> O2C
   O2C -. strict special stratum .-> O2D
   O2D -. strict special strata .-> O2E
+  O2E -. strict special strata .-> O2G
   O2F -->|larger-cell boundary| O3
-  O2E -->|same-type or higher-defect boundary| O3
+  O2G -->|higher-defect boundary| O3
   O2 -->|boundary| O3
   M2 -->|zero-surplus specialization| PR
 
@@ -155,7 +157,8 @@ flowchart TD
 | `O2C` | In every locally transverse aligned projective `q=0,r=5` cell, weak-root common-kernel trapping plus the exhaustive good/zero/balanced companion split forces a local-concision contradiction if all four collective tensors vanish. Hence **at least one nonzero two-open detector** exists for every companion frame and every root quotient-support pattern. This is not full-cell closure or witness exclusion. | [Complete transverse five-cell detector](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_TRANSVERSE_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md) |
 | `O2D` | In aligned projective `q=0,r=5`, a dependent mode with four active deletions forces every invisible companion pattern into one quotient line. A sharp retained four-mode inverse therefore gives **at least one detector** with one arbitrary local defect, or with two defects when at least one has nonzero proportional `a_u,b_u`. This covers every companion/root-support pattern in those strata, but does not exclude a witness. | [Rank-one-mode detector](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_RANK_ONE_MODE_AND_REGULAR_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md) |
 | `O2E` | In aligned projective `q=0,r=5`, three active deletions force a quotient-line trap for every companion frame. Exact `A/B/Z` retained collision kernels then give **at least one detector** for the zero-containing `AZ`, `BZ`, `ZZ` cells and the mixed `AB` cell. Together with `O2C` and `O2D`, this detects every at-most-two-defect cell except same-type `AA` and `BB`; it does not exclude a witness. | [Three-activity two-defect detector](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_THREE_ACTIVITY_AND_MIXED_DEGENERATE_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md) |
-| `O3` | In aligned projective `q=0,r=5`, the remaining detector boundary is an `AA` or `BB` overlapping double-kernel survivor, or a cell with at least three local defects. Every `q=0,r>=6` cell, every `q>=1` cell, and every unfactorized outside graph is also **open**. | [Three-activity exact boundary](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_THREE_ACTIVITY_AND_MIXED_DEGENERATE_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md#7-exact-residual-boundary) and [two-open exact boundary](../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md#6-exact-boundary) |
+| `O2G` | In aligned projective `q=0,r=5`, exact row-pair and triple Hall incidence turns the same-type `AA` and `BB` double-kernel survivors into pure-coefficient assignment contradictions. Together with `O2C`, `O2D`, and `O2E`, this gives **at least one detector in every cell with at most two local defects**. It does not exclude a witness. | [Same-type row-incidence detector](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_ROW_INCIDENCE_SAME_TYPE_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md) |
+| `O3` | In aligned projective `q=0,r=5`, the remaining detector boundary has at least three local defects. Every `q=0,r>=6` cell, every `q>=1` cell, and every unfactorized outside graph is also **open**. | [Same-type exact boundary](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_ROW_INCIDENCE_SAME_TYPE_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md#6-exact-residual-boundary) and [two-open exact boundary](../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md#6-exact-boundary) |
 | `U1` | Complete nonzero one-matrix-unit blocks and forbidden-word cancellation: **proved normal form; exclusion open** | [Maximal-root one branch](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#3-the-maximum-one-monomial-branch) |
 | `U2` | Globally minimum forbidden word has at most four deviations; exact finite-port response and partial bridges: **proved reduction**. The `k=1`, `k=2`, and `k=3` cells all remain unexcluded; only `k=4` forces rigidity in the base colour. | [Four-switch theorem](../claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md) |
 | `U3` | Globally rigid colour factors into a pure hafnian and binary tensor: **proved conditionally; rigidity not forced** | [Rigid-colour boundary](../claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md) |
@@ -196,8 +199,9 @@ flowchart TD
 | `O2A` | strict overlapping stratum | `O2C` | Frames with at most one quotient-sparse root are a strict subcase of the complete locally transverse five-cell detector. |
 | `O2C` | strict special stratum | `O2D` | The defect-free five-cell is the locally transverse subcase of the enlarged one-defect/regular-two-defect detector region. |
 | `O2D` | strict special strata | `O2E` | The previously detected transverse, one-defect, and regular-two-defect strata sit inside the enlarged at-most-two-defect region; exact three-activity and `A/B/Z` collision kernels add `AB`, `AZ`, `BZ`, and `ZZ`, but not `AA` or `BB`. |
+| `O2E` | strict special strata | `O2G` | The mixed and zero-containing two-defect cells sit inside the complete at-most-two-defect detector region; exact pair/triple incidence and pure-support matching add the same-type `AA` and `BB` cells. |
 | `O2F` | boundary obligation | `O3` | Four-cell closure does not automatically transport to larger aligned cells, positive surplus, or the unfactorized branch. |
-| `O2E` | boundary obligation | `O3` | The three-activity argument leaves the `AA` and `BB` overlapping double-kernel survivors and every three-or-more-defect pattern, and does not transport automatically to larger aligned cells, positive surplus, or the unfactorized branch. |
+| `O2G` | boundary obligation | `O3` | The row-incidence argument leaves every three-or-more-defect pattern and does not transport automatically to larger aligned cells, positive surplus, or the unfactorized branch. |
 | `O2` | boundary obligation | `O3` | The tight star refutes an automatic detector; higher/unfactorized data are needed. |
 | `M2` | specialization | `PR` | Zero surplus yields a tight weighted permanent restriction at arbitrary `r>=5`; it is not reduced to P7. |
 | `U1` | reduction | `U2` | Matrix-unit cancellation reduces to an at-most-four-port response. |
@@ -233,10 +237,9 @@ branch. They are not an instruction to begin all of them at once.
    matchings and fully active pure cofactors are insufficient.
 
 3. **Remaining larger/unfactorized detector.** On the aligned projectively
-   constant branch, close the residual `q=0,r=5` `AA` and `BB` overlapping
-   double-kernel survivors or the cells with at least three local defects.
-   Every at-most-two-defect cell except `AA` and `BB` is now detected.  Then
-   treat `q=0,r>=6` or `q>=1`, or prove a legal selector
+   constant branch, close the residual `q=0,r=5` cells with at least three
+   local defects.  Every cell with at most two local defects is now detected.
+   Then treat `q=0,r>=6` or `q>=1`, or prove a legal selector
    separating the replacement tensors. Outside that branch, produce an exact
    nonzero selector or otherwise exclude the unfactorized high-surplus cell.
    The existing cell detectors do not exclude a witness.
