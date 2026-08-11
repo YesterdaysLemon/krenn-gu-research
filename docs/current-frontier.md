@@ -54,6 +54,7 @@ flowchart TD
   O1["Fixed-layer truncation and nonobservability<br/>PROVED boundary"]
   O2["Two-open detector and q=0 star gauge<br/>PROVED boundary"]
   O2P["Projective single-open consecutive lift<br/>PROVED conditional reduction"]
+  O2M["Minimum q=0, r=3 row replacement<br/>TWO-OPEN DETECTED conditionally"]
   O3["Higher-surplus or unfactorized detector<br/>OPEN"]
 
   U1["r = 1 complete matrix units<br/>PROVED normal form"]
@@ -86,6 +87,7 @@ flowchart TD
   O1 -->|residual refinement| O2
   O2 -->|aligned projective branch| O2P
   O2P -->|permanent reduction| PR
+  O2P -->|minimum Hall cell| O2M
   O2 -->|boundary| O3
   M2 -->|zero-surplus specialization| PR
 
@@ -125,6 +127,7 @@ flowchart TD
 | `O1` | Contracted truncation, same-fibre rank nonobservability, and single-open absorption: **proved structural boundary** | [Balanced fixed-surplus theorem](../claims/arbitrary-order/BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md) |
 | `O2` | Complete two-open equation and conditional `q=0` tensor-preserving star gauge: **proved boundary** | [Two-open gauge theorem](../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md) |
 | `O2P` | On the aligned common-two-row, projectively constant branch, the complete single-open identity is a consecutive `P_(m+1)` restriction and its old-root companions form an exact rank-two diagonal quotient frame: **proved conditional reduction** | [Consecutive single-open lift](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md) |
+| `O2M` | In the minimum aligned projective cell `q=0,r=3`, the lifted row quotas force `P_3(a,a,b)!=0`, so every nonzero absorption direction at either non-aligned root is **detected by the complete two-open tensor**; this is not a witness exclusion | [Lifted minimum-cell detector](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_ROW_QUOTAS_AND_MINIMAL_CELL_TWO_OPEN_DETECTOR_THEOREM.md) |
 | `O3` | A genuine higher-surplus or unfactorized selector/detector: **open** | [Two-open exact boundary](../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md#6-exact-boundary) |
 | `U1` | Complete nonzero one-matrix-unit blocks and forbidden-word cancellation: **proved normal form; exclusion open** | [Maximal-root one branch](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#3-the-maximum-one-monomial-branch) |
 | `U2` | Globally minimum forbidden word has at most four deviations; exact finite-port response and partial bridges: **proved reduction**. The `k=1`, `k=2`, and `k=3` cells all remain unexcluded; only `k=4` forces rigidity in the base colour. | [Four-switch theorem](../claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md) |
@@ -154,6 +157,7 @@ flowchart TD
 | `O1` | residual refinement | `O2` | A second open root gives the exact next detector equation. |
 | `O2` | specialization | `O2P` | If the outside two-row factorization is aligned with root `j` and its open shore is projectively constant, the whole single-open equation lifts the fixed `P_m` layer to `P_(m+1)`. |
 | `O2P` | reduction | `PR` | The synchronized projective branch is reduced to the same arbitrary weighted-permanent restriction family; no permanent nonrestriction theorem is inferred. |
+| `O2P` | conditional cell closure | `O2M` | The repeated-row Hall quotas and adjacent pure/mixed equations close row-replacement vanishing only in the minimum `q=0,r=3` cell; they do not exclude a witness there. |
 | `O2` | boundary obligation | `O3` | The tight star refutes an automatic detector; higher/unfactorized data are needed. |
 | `M2` | specialization | `PR` | Zero surplus yields a tight weighted permanent restriction at arbitrary `r>=5`; it is not reduced to P7. |
 | `U1` | reduction | `U2` | Matrix-unit cancellation reduces to an at-most-four-port response. |
@@ -192,8 +196,10 @@ branch. They are not an instruction to begin all of them at once.
    constant branch, transport the new single-open diagonal quotient frame to
    the different two-open row-replacement tensors, or prove a legal selector
    separating them. Outside that branch, produce an exact nonzero selector or
-   otherwise exclude the unfactorized high-surplus cell. The rank-two
-   first-depth frame alone does not detect the affine gauge.
+   otherwise exclude the unfactorized high-surplus cell. The minimum
+   `q=0,r=3` aligned cell is now detected, but `q=0,r>=4`, every `q>=1` cell,
+   and the unfactorized branch remain open. The rank-two first-depth frame
+   alone does not force those larger transports.
 
 4. **First remaining all-bridge degree.** Exclude or structurally reduce
    `Delta(D)=5`. This does not address the separate deeper-blocker branch.

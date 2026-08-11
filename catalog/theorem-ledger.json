@@ -585,6 +585,32 @@
       "legacy_paths": []
     },
     {
+      "name": "Projectively Constant Lift Row Quotas and Minimal-Cell Two-Open Detector Theorem",
+      "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_ROW_QUOTAS_AND_MINIMAL_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
+      "document_sha256_16": "6dd0e399bb2f4b6f",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero Hall, tensor-flattening, and adjacent pure/mixed recolouring proofs",
+        "the single-open permanent lift is conditional on an aligned physical common-two-row factorization and projectively constant shore at root j",
+        "the physical row quotas hold for every r>=2 and q>=0 on that lifted branch",
+        "the two-open detector conclusion is only for the minimum Hall-admissible cell q=0 and r=3",
+        "the fixed-i detector is nonzero but not injective, and no witness exclusion follows",
+        "larger aligned cells, unfactorized higher surplus, arbitrary permanent nonrestriction, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_projectively_constant_lift_row_quotas_and_minimal_detector.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_projectively_constant_lift_row_quotas_and_minimal_detector.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (SymPy primary; standard-library audit)",
+      "external_binaries": [],
+      "note": "The arbitrary-field implication is the written repeated-row Hall transfer, rank-one flattening, and adjacent recolouring proof. The primary verifies symbolic P3 collision and P4 coefficient identities; the no-import audit instead uses a six-vertex perfect-matching ledger and direct collision expansion. This closes row-replacement vanishing only in the conditional q=0,r=3 cell and leaves global Krenn-Gu UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Rigid-Colour Cofactor Annihilation and Backbone-Cancellation Boundary",
       "document": "claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md",
       "document_sha256_16": "96aecff02ad3e367",

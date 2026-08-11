@@ -96,6 +96,16 @@ effective companion plane has dimension two and transfers the strict
 projective branch, exclude the resulting permanent, or transport the frame to
 the different row-replacement tensors in the two-open detector.
 
+The follow-up
+[`lifted row-quota and minimum-cell detector theorem`](PROJECTIVELY_CONSTANT_LIFT_ROW_QUOTAS_AND_MINIMAL_CELL_TWO_OPEN_DETECTOR_THEOREM.md)
+transfers the repeated-row Hall hierarchy separately to the physical `a` and
+`b` families.  It rules out the one-mode tight star on an actual complete
+lifted GHZ restriction and proves that, in the minimum `q=0,r=3` cell, the
+common row-replacement tensor `P_3(a,a,b)` is nonzero.  Hence each affine
+absorption direction is visible at two-open depth there.  This is conditional
+cell closure, not a witness exclusion; every larger aligned cell and the
+unfactorized branch remain open.
+
 The
 [`rigid-colour boundary theorem`](RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md)
 sharpens that one-root branch.  It proves universal near-monochromatic deck,
