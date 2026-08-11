@@ -85,6 +85,17 @@ the complete graph tensor.  The star result is a conditional physical gauge,
 not a construction of a tight layer or a hypothetical witness; higher
 surplus and unfactorized detection remain open.
 
+On the aligned projectively constant branch, the
+[`single-open consecutive permanent lift`](PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md)
+now packages the complete first open-root equation as an exact
+`P_(m+1) -> Delta_3` restriction.  Its contraction at the root vector is the
+existing factorized `P_m` layer, and its old-root companion combinations form
+an exact two-dimensional diagonal quotient frame.  This proves that the
+effective companion plane has dimension two and transfers the strict
+`3(m+1)+3` row-cell bound.  It does not force the aligned factorization or
+projective branch, exclude the resulting permanent, or transport the frame to
+the different row-replacement tensors in the two-open detector.
+
 The
 [`rigid-colour boundary theorem`](RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md)
 sharpens that one-root branch.  It proves universal near-monochromatic deck,

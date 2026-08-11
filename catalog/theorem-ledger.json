@@ -559,6 +559,32 @@
       ]
     },
     {
+      "name": "Projectively Constant Single-Open Consecutive Permanent Lift and Companion Frame Theorem",
+      "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md",
+      "document_sha256_16": "24bc3cb7583dbeb1",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero matching-partition, repeated-row Laplace, and quotient-frame proofs",
+        "the fixed-surplus setup has r>=2 pairwise-zero fully supported roots and outside size r+2q with q>=0",
+        "the outside graph is conditionally assumed to have the displayed physical common-two-row factorization aligned by b_u=h_(j,u)",
+        "the complete open shore of root j is conditionally assumed projectively constant with eta_j(x_j)=1",
+        "only effective companion combinations are diagonal modulo the fixed layer; individual companion cofactors need not be diagonal",
+        "the aligned or projective branch is not forced, arbitrary permanent restrictions remain open, and no unfactorized or global exclusion is claimed"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_projectively_constant_single_open_permanent_lift.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_projectively_constant_single_open_permanent_lift.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (SymPy primary; standard-library audit)",
+      "external_binaries": [],
+      "note": "The arbitrary-order proof is the written Wick matching bijection, new-column permanent expansion, and quotient-frame linear algebra, with Hall and strict-support consequences imported at their stated scope. The primary verifier performs bounded symbolic matching/permanent checks; the no-import audit independently uses exact integer ledgers and rational row reduction. The theorem is a conditional consecutive-order reduction, not a P_M exclusion, and leaves the global conjecture UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Rigid-Colour Cofactor Annihilation and Backbone-Cancellation Boundary",
       "document": "claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md",
       "document_sha256_16": "96aecff02ad3e367",

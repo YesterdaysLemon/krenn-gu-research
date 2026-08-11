@@ -6,11 +6,12 @@ The global Krenn–Gu conjecture is **UNRESOLVED**. No complete
 characteristic-zero proof and no exact counterexample to the original global
 statement is known in this repository.
 
-This is the canonical maintained research map. It was reconstructed through
-PR #82 at merged commit
-`367eef49e5917a0f71594dce4c18a608850cdd6a`. Owning theorem documents are
-authoritative for proofs, assumptions, and evidence. This page records how
-those claims fit together; it does not replace them or strengthen their scope.
+This is the canonical maintained research map. Its initial consolidation was
+reconstructed through PR #82 at merged commit
+`367eef49e5917a0f71594dce4c18a608850cdd6a`; subsequent owning advances are
+incorporated here as committed. Owning theorem documents are authoritative for
+proofs, assumptions, and evidence. This page records how those claims fit
+together; it does not replace them or strengthen their scope.
 The [theorem ledger](../catalog/theorem-ledger.json) is a partial claim/evidence
 index, not the proof graph, and its empty `dependencies` arrays mean “not
 recorded.”
@@ -49,9 +50,10 @@ flowchart TD
 
   M1["Maximum torus-root split<br/>PROVED reduction"]
   M2["r >= 2 fixed-surplus layer<br/>PROVED reduction"]
-  PR["Zero-surplus P_r to Delta_3<br/>OPEN at arbitrary r"]
+  PR["Weighted permanent restriction family<br/>OPEN at arbitrary order"]
   O1["Fixed-layer truncation and nonobservability<br/>PROVED boundary"]
   O2["Two-open detector and q=0 star gauge<br/>PROVED boundary"]
+  O2P["Projective single-open consecutive lift<br/>PROVED conditional reduction"]
   O3["Higher-surplus or unfactorized detector<br/>OPEN"]
 
   U1["r = 1 complete matrix units<br/>PROVED normal form"]
@@ -82,6 +84,8 @@ flowchart TD
   S1 -->|premise| O1
   M2 -->|premise| O1
   O1 -->|residual refinement| O2
+  O2 -->|aligned projective branch| O2P
+  O2P -->|permanent reduction| PR
   O2 -->|boundary| O3
   M2 -->|zero-surplus specialization| PR
 
@@ -117,9 +121,10 @@ flowchart TD
 | `S3` | Exclusion of all-balanced rank drop inside the hypothetical-witness locus: **open**; properness is proved only in ambient block-graph space | [Balanced half-sensor theorem](../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md#3-the-proper-closed-all-balanced-boundary) |
 | `M1` | Maximum torus-root saturation and `r=1` / `r>=2` split: **proved universal reduction** | [Maximal torus-root theorem](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md) |
 | `M2` | One complete fixed-surplus physical hafnian layer; coordinate two-residual absorption: **proved reduction, not exclusion** | [Maximal torus-root theorem](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer) |
-| `PR` | Zero-surplus weighted `P_r -> Delta_3` restriction for arbitrary `r>=5`: **proved extraction; arbitrary-r exclusion open**. The live `r=6` / P6 restriction remains inside this node; the three-excess notes address only the first strict-support layer, not arbitrary support. | [Maximal-root extraction](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer), [P6 package index](../claims/p6/README.md), [three-excess port boundary](../claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md), and [conformal Birkhoff boundary](../claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md) |
+| `PR` | Weighted `P_t -> Delta_3` restriction family: **extracted at zero surplus and on the conditional consecutive-lift branch; arbitrary-order exclusion open**. The live `t=6` / P6 restriction remains inside this node; the three-excess notes address only the first strict-support layer, not arbitrary support. | [Maximal-root extraction](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer), [consecutive single-open lift](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md), [P6 package index](../claims/p6/README.md), [three-excess port boundary](../claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md), and [conformal Birkhoff boundary](../claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md) |
 | `O1` | Contracted truncation, same-fibre rank nonobservability, and single-open absorption: **proved structural boundary** | [Balanced fixed-surplus theorem](../claims/arbitrary-order/BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md) |
 | `O2` | Complete two-open equation and conditional `q=0` tensor-preserving star gauge: **proved boundary** | [Two-open gauge theorem](../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md) |
+| `O2P` | On the aligned common-two-row, projectively constant branch, the complete single-open identity is a consecutive `P_(m+1)` restriction and its old-root companions form an exact rank-two diagonal quotient frame: **proved conditional reduction** | [Consecutive single-open lift](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md) |
 | `O3` | A genuine higher-surplus or unfactorized selector/detector: **open** | [Two-open exact boundary](../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md#6-exact-boundary) |
 | `U1` | Complete nonzero one-matrix-unit blocks and forbidden-word cancellation: **proved normal form; exclusion open** | [Maximal-root one branch](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#3-the-maximum-one-monomial-branch) |
 | `U2` | Globally minimum forbidden word has at most four deviations; exact finite-port response and partial bridges: **proved reduction**. The `k=1`, `k=2`, and `k=3` cells all remain unexcluded; only `k=4` forces rigidity in the base colour. | [Four-switch theorem](../claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md) |
@@ -147,6 +152,8 @@ flowchart TD
 | `M1` | case coverage | `M2`, `U1` | The two cases are `r>=2` and `r=1`; neither is excluded by the split. |
 | `S1` + `M2` | mathematical premises | `O1` | Rebalancing the fixed layer exposes a truncated contracted sensor. |
 | `O1` | residual refinement | `O2` | A second open root gives the exact next detector equation. |
+| `O2` | specialization | `O2P` | If the outside two-row factorization is aligned with root `j` and its open shore is projectively constant, the whole single-open equation lifts the fixed `P_m` layer to `P_(m+1)`. |
+| `O2P` | reduction | `PR` | The synchronized projective branch is reduced to the same arbitrary weighted-permanent restriction family; no permanent nonrestriction theorem is inferred. |
 | `O2` | boundary obligation | `O3` | The tight star refutes an automatic detector; higher/unfactorized data are needed. |
 | `M2` | specialization | `PR` | Zero surplus yields a tight weighted permanent restriction at arbitrary `r>=5`; it is not reduced to P7. |
 | `U1` | reduction | `U2` | Matrix-unit cancellation reduces to an at-most-four-port response. |
@@ -181,10 +188,12 @@ branch. They are not an instruction to begin all of them at once.
    or construct another exact word-preserving global rematching. Global pure
    matchings and fully active pure cofactors are insufficient.
 
-3. **Higher-surplus/unfactorized detector.** Produce an exact selector that is
-   nonzero outside the `q=0` star gauge, or otherwise exclude the unfactorized
-   high-surplus cell. First- and two-open contractions do not automatically do
-   this.
+3. **Higher-surplus/unfactorized detector.** On the aligned projectively
+   constant branch, transport the new single-open diagonal quotient frame to
+   the different two-open row-replacement tensors, or prove a legal selector
+   separating them. Outside that branch, produce an exact nonzero selector or
+   otherwise exclude the unfactorized high-surplus cell. The rank-two
+   first-depth frame alone does not detect the affine gauge.
 
 4. **First remaining all-bridge degree.** Exclude or structurally reduce
    `Delta(D)=5`. This does not address the separate deeper-blocker branch.
