@@ -2309,6 +2309,7 @@ class RootExitPolicyTests(unittest.TestCase):
             "requirements.txt",
         })
         self.assertEqual(check_hygiene.ALLOWED_ROOT_DIRS, {
+            ".agents",
             ".github",
             "catalog",
             "claims",
@@ -2319,7 +2320,7 @@ class RootExitPolicyTests(unittest.TestCase):
             "tests",
             "tools",
         })
-        self.assertEqual(check_hygiene.ROOT_COUNT_TARGET, 16)
+        self.assertEqual(check_hygiene.ROOT_COUNT_TARGET, 17)
         self.assertEqual(
             len(check_hygiene.ALLOWED_ROOT_FILES)
             + len(check_hygiene.ALLOWED_ROOT_DIRS),
@@ -2329,7 +2330,7 @@ class RootExitPolicyTests(unittest.TestCase):
         files = check_hygiene.tracked_files()
         self.assertEqual(
             check_hygiene.root_layout_issues(files),
-            ([], 16, 7, 9))
+            ([], 17, 7, 10))
         baseline, issues = check_hygiene.root_debt_baseline()
         self.assertEqual(issues, [])
         self.assertEqual(baseline, set())

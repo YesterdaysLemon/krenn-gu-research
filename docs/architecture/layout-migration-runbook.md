@@ -355,7 +355,10 @@ because fail-open `.exists()` paths are never exercised at import time.
 Stage 33 retired the final grandfathered root debt.  Phase R3 exact
 end-state enforcement is active: the ordinary `python check_hygiene.py`
 command fails every tracked top-level path outside the reviewed
-seven-file and nine-directory allowlist, with no environment opt-out.
+seven-file and ten-directory allowlist, with no environment opt-out.  The
+2026-08-11 reviewed policy addition of `.agents` is limited to committed
+repository-scoped agent workflow configuration; it does not own research
+artifacts, ordinary tools, results, or history.
 
 This document remains as the authoritative migration workflow and
 history.  Adding a new root exception now requires a fresh Tier-2
