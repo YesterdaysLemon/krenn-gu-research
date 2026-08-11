@@ -440,7 +440,7 @@
     {
       "name": "Balanced Half-Sensor Complete Deck and Wick Globalization Theorem",
       "document": "claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md",
-      "document_sha256_16": "9f4241cf80316fad",
+      "document_sha256_16": "b1fedc4ac06499b3",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact matching and projective-bundle proof over characteristic zero",
@@ -486,6 +486,31 @@
       "expected_runtime": "seconds (SymPy primary; standard-library audit)",
       "external_binaries": [],
       "note": "The written arbitrary-order proof identifies the complete Wick condition with the square-free Euler equation and proves that, after it holds, global regularity of the full rational deck is equivalent to prime-divisor regularity of only the pair components. The scripts are bounded exact convention and falsification checks through eight labels, not a proof that any target incidence fails the gate. The all-balanced rank-drop branch and global conjecture remain UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
+      "name": "Balanced All-Rank-Drop Diagonal-Complete Sharpness Theorem",
+      "document": "claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md",
+      "document_sha256_16": "d1e83f9d49e31360",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact matching, polarization, common-quadratic subspace, and dimension proof over characteristic zero",
+        "ternary complete graph at n=2m with m at least four",
+        "every physical edge block is the same normalized nonzero scalar multiple of the identity",
+        "the family has complete support, invertible blocks, local concision, and normalized pure coefficients",
+        "explicit mixed even-colour coefficients are nonzero, so the family is not a witness and does not show that the rank-drop locus meets the witness equations"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_all_rank_drop_diagonal_complete_sharpness.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_all_rank_drop_diagonal_complete_sharpness.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (SymPy primary; standard-library audit)",
+      "external_binaries": [],
+      "note": "The written arbitrary-order proof puts every non-all-cross balanced companion in one common quadratic multiple of Sym^(m-2), giving rank at most binomial(m,2)+1 on every cut from n=8 onward. The family proves that local concision, complete support, invertible blocks, and normalized pure coefficients cannot exclude the all-balanced rank-drop branch. Its mixed coefficients are explicitly nonzero, so it is a route boundary, not a Krenn--Gu witness or evidence that the witness intersection is nonempty.",
       "claim_package": "claims/arbitrary-order",
       "proof_variant": "canonical",
       "subpackage": null,

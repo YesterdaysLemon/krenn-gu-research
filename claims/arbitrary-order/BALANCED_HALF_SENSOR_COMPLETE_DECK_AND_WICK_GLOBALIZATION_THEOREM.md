@@ -220,6 +220,15 @@ in `B_all`, or some balanced partition has a dense full-sensor open in
 `X=product_(u in N) P(L_u)`.  Properness is not permission to discard
 `B_all`; a hypothetical witness could lie entirely on it.
 
+The
+[`diagonal-complete sharpness theorem`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
+shows that this warning is substantive.  For every `m>=4`, `B_all` contains a
+complete graph with invertible edge blocks, local concision, and all three
+normalized pure target coefficients.  Its mixed even-colour coefficients are
+nonzero, so it is not a witness.  Thus those strong ambient and pure
+conditions cannot replace the missing mixed GHZ equations on the rank-drop
+branch.
+
 ## 4. Projective complete-deck lift
 
 Continue over `K=C`.  Use the convention that `P(L_u)` parametrizes lines in
