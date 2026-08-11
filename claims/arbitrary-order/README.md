@@ -449,6 +449,18 @@ Thus one locally coupled neighbouring equation is also insufficient; a
 successful continuation needs same-transport-multidegree equations, a new
 cross-multiplicity bridge, or one of the deeper/pure exits.
 
+The
+[`complete same-multidegree saturation theorem`](MATRIX_UNIT_U7D_COMPLETE_SAME_MULTIDEGREE_TARGET_BLOCK_SATURATION_EXCLUSION_THEOREM.md)
+decides that next question for the fixed `U7D` endpoint-label table.  Of the
+`70` words in its active `(4,4,0)` multidegree, `57` have empty fibres, `10`
+have singleton fibres, and the remaining `3` are exactly the active-cycle
+binomials.  A singleton target equation is a unit after localization at all
+physical amplitudes, so the complete same-degree ideal and its elimination
+in `Q[H]` are both `(1)`.  This rejects the fixed support before a stronger
+holonomy polynomial arises.  Same multidegree is not itself a proved
+transport operation; forcing a comparable unit or a complete-block syzygy
+from an arbitrary active cycle remains open.
+
 At the Stage 27 boundary, the owner-gated H22/H31, Component20/21/23,
 high-coordinate, and mixed-lifecycle conflict surfaces were excluded from
 that batch and remained at root, unmoved and unadjudicated at that stage.
