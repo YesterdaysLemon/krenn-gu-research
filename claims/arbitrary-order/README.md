@@ -91,6 +91,18 @@ modulo `Q`, so the entire physical common-conformal shore is excluded.
 One-word zero-permanent factorizations and general nonseparable simultaneous
 `Q`-residue systems remain open.
 
+Independently, the
+[`co-two permanent product-sensor theorem`](ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_RANK_DROP_THEOREM.md)
+places every hypothetical weighted `P_r -> Delta_3` restriction on a proper
+determinantal boundary: for every omitted pair, the other `r-2` local planes
+have product-sensor rank at most `binomial(r,2)-1`.  In particular, every one
+of the fifteen P6 four-mode sensors has rank at most fourteen.  A moment-curve
+chart proves that full sensors exist in ambient local-plane space, while an
+exact two-block P6 model shows that simultaneous rank drop, local rank, and
+nonzero pure coefficients remain insufficient for nonrestriction.  The live
+P6 and arbitrary-order permanent problems must therefore use the mixed
+equations inside the rank-drop intersection; they remain **UNKNOWN**.
+
 The
 [`maximal torus-root theorem`](MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md)
 gives a second exact universal dichotomy at the witness point.  A

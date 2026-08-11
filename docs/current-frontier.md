@@ -55,6 +55,7 @@ flowchart TD
   M1["Maximum torus-root split<br/>PROVED reduction"]
   M2["r >= 2 fixed-surplus layer<br/>PROVED reduction"]
   PR["Weighted permanent restriction family<br/>OPEN at arbitrary order"]
+  PRC["Every co-two permanent product sensor rank-drop<br/>PROVED necessary boundary"]
   O1["Fixed-layer truncation and nonobservability<br/>PROVED boundary"]
   O2["Two-open detector and q=0 star gauge<br/>PROVED boundary"]
   O2P["Projective single-open consecutive lift<br/>PROVED conditional reduction"]
@@ -125,6 +126,7 @@ flowchart TD
   O2I -->|larger/unfactorized boundary| O3
   O2 -->|boundary| O3
   M2 -->|zero-surplus specialization| PR
+  PR -->|necessary rank-drop boundary| PRC
 
   U1 -->|reduction| U2
   U2 -->|specialization| U3
@@ -162,6 +164,7 @@ flowchart TD
 | `M1` | Maximum torus-root saturation and `r=1` / `r>=2` split: **proved universal reduction** | [Maximal torus-root theorem](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md) |
 | `M2` | One complete fixed-surplus physical hafnian layer; coordinate two-residual absorption: **proved reduction, not exclusion** | [Maximal torus-root theorem](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer) |
 | `PR` | Weighted `P_t -> Delta_3` restriction family: **extracted at zero surplus and on the conditional consecutive-lift branch; arbitrary-order exclusion open**. The live `t=6` / P6 restriction remains inside this node; the three-excess notes address only the first strict-support layer, not arbitrary support. | [Maximal-root extraction](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer), [consecutive single-open lift](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md), [P6 package index](../claims/p6/README.md), [three-excess port boundary](../claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md), and [conformal Birkhoff boundary](../claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md) |
+| `PRC` | Every weighted `P_r -> Delta_3` restriction lies in the simultaneous co-two product-sensor rank-drop locus: for each omitted pair, the complementary sensor has rank at most `binomial(r,2)-1`. This proper necessary boundary is nonempty after imposing local rank and nonzero pure coefficients, so it is **not** a nonrestriction theorem. | [Co-two permanent product-sensor theorem](../claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_RANK_DROP_THEOREM.md) |
 | `O1` | Contracted truncation, same-fibre rank nonobservability, and single-open absorption: **proved structural boundary** | [Balanced fixed-surplus theorem](../claims/arbitrary-order/BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md) |
 | `O2` | Complete two-open equation and conditional `q=0` tensor-preserving star gauge: **proved boundary** | [Two-open gauge theorem](../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md) |
 | `O2P` | On the aligned common-two-row, projectively constant branch, the complete single-open identity is a consecutive `P_(m+1)` restriction and its old-root companions form an exact rank-two diagonal quotient frame: **proved conditional reduction** | [Consecutive single-open lift](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md) |
@@ -230,6 +233,7 @@ flowchart TD
 | `O2I` | boundary obligation | `O3` | Complete aligned `q=0,r=5` detection neither excludes a witness nor transports automatically to larger aligned cells, positive surplus, or the unfactorized branch. |
 | `O2` | boundary obligation | `O3` | The tight star refutes an automatic detector; higher/unfactorized data are needed. |
 | `M2` | specialization | `PR` | Zero surplus yields a tight weighted permanent restriction at arbitrary `r>=5`; it is not reduced to P7. |
+| `PR` | necessary condition | `PRC` | Every co-two product sensor is rank-deficient under a restriction. For P6 all fifteen four-mode sensors have rank at most fourteen, but simultaneous rank drop plus local rank and pure nonvanishing is insufficient. |
 | `U1` | reduction | `U2` | Matrix-unit cancellation reduces to an at-most-four-port response. |
 | `U2` | specialization | `U3` | Only the globally rigid-colour cell enters the deletion-deck factorization. |
 | `U3` | mathematical premise | `U4` | Rigid factorization yields the primitive and dual bridges. |
@@ -271,11 +275,15 @@ branch. They are not an instruction to begin all of them at once.
    synchronization or satisfy a genuinely nonseparable simultaneous residue
    system.
 
-3. **Zero-surplus permanent restrictions.** Decide the live `P_6 -> Delta_3`
-   restriction, and exclude `P_r -> Delta_3` for every `r>=8` at every legal
-   support size, or prove an exact reduction to ranks that are already closed.
-   The committed P7 sensor and the exactly-three-excess support normal forms
-   are not exhaustive arbitrary-r theorems.
+3. **Zero-surplus permanent restrictions.** Every hypothetical restriction
+   now lies in the simultaneous co-two product-sensor rank-drop locus; for P6
+   all fifteen four-mode sensors have rank at most fourteen. Decide the mixed
+   GHZ equations inside that intersection, exclude `P_r -> Delta_3` for every
+   `r>=8` at every legal support size, or prove an exact reduction to ranks
+   already closed. The exact P6 block model shows that rank drop, local rank,
+   and nonzero pure coefficients alone are insufficient. The committed P7
+   sensor and exactly-three-excess support normal forms are not exhaustive
+   arbitrary-r theorems.
 
 4. **Word-shore forcing.** Prove from higher mixed coefficients that each pure
    support graph induced on the actual word shore satisfies Tutte's condition,
@@ -333,6 +341,7 @@ responses; it does not collapse them into the globally rigid `k=4` cell.
 | Local concision, complete support, invertible blocks, and normalized pure coefficients force some balanced sensor to be full | False for every `n>=8`: the diagonal-complete family has all these properties and rank at most `binomial(m,2)+1` on every cut; it fails explicit mixed-word zero equations | [Diagonal-complete all-rank-drop boundary](../claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md) |
 | Independent local basis changes can rescue the common-quadratic all-rank-drop mechanism as a witness | False: the synchronized orbit has two-vertex flattening rank six when nondegenerate, invariant under every local isomorphism, while ternary GHZ has rank three; degenerate forms already fail local rank | [Common-quadratic orbit exclusion](../claims/arbitrary-order/BALANCED_COMMON_QUADRATIC_ORBIT_RANK_DROP_AND_FLATTENING_EXCLUSION_THEOREM.md) |
 | Arbitrary internal nonroot blocks can repair a common-conformal balanced shore | False: modulo the common root quadric every non-all-cross sector vanishes; nonzero scalar permanent leaves a forbidden mixed product, while zero permanent contradicts the nonzero pure-root product from a constant word | [Common-quadric mixed/pure residue theorem](../claims/arbitrary-order/BALANCED_COMMON_QUADRIC_MIXED_PERMANENT_DIVISIBILITY_AND_CONFORMAL_SHORE_EXCLUSION_THEOREM.md) |
+| Simultaneous co-two permanent sensor rank drop, local rank, and nonzero pure coefficients exclude P6 | False as an argument: an exact two-block coordinate model has all fifteen four-mode sensors of dimension at most nine and all pure coefficients nonzero, but has mixed support and flattening rank one rather than the target rank three | [Co-two permanent product-sensor boundary](../claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_RANK_DROP_THEOREM.md#5-sharpness-of-what-rank-drop-alone-can-say) |
 | Only equal regular ratios survive the four-regular five-cell common kernel | False: a `2+2` reciprocal primitive-cube-root divisor also gives a one-dimensional kernel; the corrected dimension bound still closes detection | [Complete aligned five-cell detector](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md#lemma-2-four-defect-full-common-kernels) |
 
 These are refutations of arguments, not counterexamples to the Krenn–Gu

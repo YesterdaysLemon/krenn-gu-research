@@ -568,6 +568,33 @@
       "legacy_paths": []
     },
     {
+      "name": "Arbitrary Permanent Co-Two Product-Sensor Rank-Drop Theorem",
+      "document": "claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_RANK_DROP_THEOREM.md",
+      "document_sha256_16": "19a7ca2e1cd0d9f8",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact square-free-algebra, annihilator, perfect-pairing, and star-configuration proof over characteristic zero",
+        "weighted P_r -> Delta_3 restriction with r>=3 and all three diagonal target coefficients nonzero",
+        "local rank three is derived from the target one-mode flattening rather than assumed generically",
+        "every complementary r-2 product sensor has rank at most binomial(r,2)-1 and satisfies the recorded pair/sensor dimension tradeoff",
+        "the moment-curve chart proves only that the rank-drop boundary is proper in ambient local-plane space",
+        "the P6 block model proves insufficiency of rank drop plus local rank and pure nonvanishing; it is not a restriction or counterexample",
+        "unrestricted P6, arbitrary-order permanent nonrestriction, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_arbitrary_permanent_cotwo_product_sensor_rank_drop.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_arbitrary_permanent_cotwo_product_sensor_rank_drop.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (SymPy primary; standard-library modular audit)",
+      "external_binaries": [],
+      "note": "The arbitrary-order proof identifies the target 2|(r-2) flattening with the degree-two/complement product pairing, proves every pair-product space has dimension at least four by a degree-one annihilator lemma, and derives simultaneous co-two sensor rank drop. A moment-curve star configuration proves properness, while an exact P6 two-block model saturates the dimension tradeoff and shows the necessary boundary is not an exclusion. The scripts audit bounded formulas and conventions; P6, arbitrary-r nonrestriction, and global Krenn-Gu remain UNKNOWN/UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Maximal Torus-Root Saturation and Coordinate Absorption Theorem",
       "document": "claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md",
       "document_sha256_16": "1c57855a6d7d8a47",
