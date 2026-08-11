@@ -1294,6 +1294,33 @@
       "legacy_paths": []
     },
     {
+      "name": "Matrix-Unit Phase Holonomy and Minimal Pure-Cofactor Flow Reduction Theorem",
+      "document": "claims/arbitrary-order/MATRIX_UNIT_PHASE_HOLONOMY_AND_MINIMAL_PURE_COFACTOR_FLOW_REDUCTION_THEOREM.md",
+      "document_sha256_16": "d3589a79b5b2f8f2",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact endpoint-character, Laurent-monomial, and hafnian partner-expansion proofs in characteristic zero",
+        "the active-cycle input and bridge/deeper alternatives retain the exact hypotheses of the imported active-word transport theorem",
+        "the equation H=(-1)^m is asserted only when the incoming diagonal and outgoing offdiagonal matchings are the complete compatible fibre at every cycle word; otherwise the aggregate branch remains open",
+        "the cycle circulation is nonzero because bridge edges are diagonal and cross edges are offdiagonal fixed physical classes, but its invariant Laurent value is not universally one",
+        "a least supported pure cancelling residual is selected before nonzero first cofactors are inferred; its active cofactor graph is not the full pure support graph",
+        "the exact sparse eight-vertex odd cycle and four-vertex cofactor flows are sharpness models, not complete-support witnesses or counterexamples",
+        "moment gauge preserves the Laurent holonomy and pure-cofactor flow topology, but aggregate holonomy, binomial holonomy, pure branching/cycles, the deeper branch, r=1 exclusion, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_matrix_unit_phase_holonomy_and_minimal_pure_cofactor_flow.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_matrix_unit_phase_holonomy_and_minimal_pure_cofactor_flow.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "An active transport cycle defines a nonzero integral kernel vector of the endpoint-label character map, hence a diagonal-gauge-invariant Laurent holonomy. Complete binomial cycle fibres force H=(-1)^m; a sparse exact eight-vertex three-cycle attains H=-1, so odd length is not itself contradictory. Any pure-shore cancellation descends to a least supported residual whose nonzero Euler cofactor flow spans every vertex and either branches in at least three terms or forms alternating even cycles. Both normal forms survive the actual moment gauge. Independent exact checkers replay the physical cycle, circulation, gauge covariance, minimal residuals, and both cofactor-flow alternatives. Global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Four Blocker Ideal Obstruction",
       "document": "claims/arbitrary-order/FOUR_BLOCKER_IDEAL_OBSTRUCTION.md",
       "document_sha256_16": "b7fb5e2394539754",

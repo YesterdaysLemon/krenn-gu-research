@@ -82,6 +82,7 @@ flowchart TD
   U6["Cross parity, bridges, rigid-head Wick<br/>PROVED reduction"]
   U7A["Nonzero parity fibre has exact word-shore rematching<br/>PROVED"]
   U7B["Cofactor-active cross core<br/>DEEPER / TRANSPORT / PURE CANCEL proved"]
+  U7C["Gauge-invariant phase holonomy / pure cofactor flow<br/>PROVED reduction"]
   U7["Exclude pure-shore cancellation or active holonomy<br/>OPEN"]
   U8["Proper flag propagation<br/>OPEN"]
   D1["Deeper blocker branch<br/>OPEN"]
@@ -143,9 +144,10 @@ flowchart TD
   U6 -->|exact erasure| M2
   U6 -->|active-fibre refinement| U7A
   U7A -->|exact response| U7B
-  U7B -->|boundary| U7
+  U7B -->|phase refinement| U7C
+  U7C -->|boundary| U7
   U7B -->|deeper exit| D1
-  U1C -. joint phase boundary .-> U7
+  U1C -. moment-gauge compatibility .-> U7C
   U2 -->|boundary| U8
   U2 -->|boundary| D1
   U6 -->|boundary| D1
@@ -200,7 +202,8 @@ flowchart TD
 | `U6` | Cross-parity erasure, bridge/deeper entry, rigid-head Wick tower, and pseudoforest normal form: **proved reduction** | [Cross-parity theorem](../claims/arbitrary-order/MATRIX_UNIT_CROSS_PARITY_ERASURE_RIGID_HEAD_WICK_AND_BRIDGE_CORE_REDUCTION_THEOREM.md) |
 | `U7A` | For every mixed word with nonzero aggregate offdiagonal coefficient, the diagonal contribution factors as the product of three nonzero pure-shore hafnians. Hence every active parity-zero fibre already has an exact word-preserving diagonal rematching; a Tutte failure can occur only in an internally zero fibre. | [Active parity-fibre synchronization theorem](../claims/arbitrary-order/MATRIX_UNIT_PARITY_FIBRE_DIAGONAL_FACTORIZATION_AND_ACTIVE_WORD_SHORE_SYNCHRONIZATION_THEOREM.md) |
 | `U7B` | Expanding an active coordinate by its exact off-shore matching produces a cofactor-active physical cross core. Its cross-type counts have one parity, and the imported square/hexagon alternative gives exactly: deeper-blocker entry, transport to another active word with the same multiplicities, or a pure-shore hafnian that cancels despite a nonzero matching term. No-exit transport has a finite active-word cycle. | [Active-word cross-response and bridge-transport trichotomy](../claims/arbitrary-order/MATRIX_UNIT_ACTIVE_WORD_FIBRE_CROSS_MATCHING_RESPONSE_AND_BRIDGE_TRANSPORT_TRICHOTOMY.md) |
-| `U7` | Exclude the pure-shore cancellation and active-word holonomy exits, or derive a contradiction from additional coefficient identities. This remains **open**: a response summand is not the whole coordinate, bridge weights are not synchronized with cross weights, and the cycle is not an odd-sign contradiction. | [Active-word holonomy boundary](../claims/arbitrary-order/MATRIX_UNIT_ACTIVE_WORD_FIBRE_CROSS_MATCHING_RESPONSE_AND_BRIDGE_TRANSPORT_TRICHOTOMY.md#6-exact-scope-and-next-obstruction) |
+| `U7C` | Every active cycle carries a nonzero endpoint-character circulation and a diagonal-gauge-invariant Laurent holonomy. Its fibres are aggregate, or exact binomials force `H=(-1)^m`. Every pure cancellation has a least supported residual whose Euler cofactor flow branches or is a spanning union of alternating even cycles. A sparse exact odd binomial cycle shows this is a phase normal form, not a sign contradiction. | [Phase holonomy and minimal pure-cofactor flow](../claims/arbitrary-order/MATRIX_UNIT_PHASE_HOLONOMY_AND_MINIMAL_PURE_COFACTOR_FLOW_REDUCTION_THEOREM.md) |
+| `U7` | Exclude aggregate or binomial Laurent holonomy and the pure cofactor branching/even-cycle exits, or derive a contradiction from additional mixed coefficient identities. This remains **open**: the invariant holonomy need not equal one, and conserved cofactor signs need not be positive. | [Phase-holonomy and pure-cofactor boundary](../claims/arbitrary-order/MATRIX_UNIT_PHASE_HOLONOMY_AND_MINIMAL_PURE_COFACTOR_FLOW_REDUCTION_THEOREM.md#8-combined-proof-topology-consequence) |
 | `U8` | Proper nonempty colour-nonrigidity sets propagate to all vertices: **open** | [Four-switch partial-bridge theorem](../claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md#5-partial-bridge-systems) |
 | `D1` | Deeper double-star/multi-star blocker branch: **open**. Its blocker alternatives are pointwise after shrinking to a dense constructible stratum; no uniform blocker pair is proved on the whole component. | [Double-star lemma](../claims/arbitrary-order/DOUBLE_STAR_ANNIHILATION_LEMMA.md) and [multi-star factorization](../claims/arbitrary-order/MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md) |
 | `A1` | Simultaneous balanced all-bridge system: **proved conditional branch**, not universal extraction | [Three-colour balanced bridge intersection](../claims/arbitrary-order/THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md) |
@@ -258,9 +261,10 @@ flowchart TD
 | `U6` | reduction | `M2` | Exact erasure may produce a different realization with at least two roots. |
 | `U6` | exact refinement | `U7A` | Target equality factors every diagonal word fibre over its pure shores and synchronizes every nonzero aggregate offdiagonal coordinate; internally zero fibres may still contain unsynchronized terms. |
 | `U7A` | exact refinement | `U7B` | The complete cross-matching response selects a cofactor-active physical term and bridge-normalizes its parity core, giving the deeper/transport/pure-cancellation trichotomy and finite no-exit holonomy. |
-| `U7B` | boundary obligation | `U7` | Pure-shore cancellation and active holonomy are not excluded; summed response equations cannot be multiplied as binomial transition ratios. |
+| `U7B` | exact phase refinement | `U7C` | A finite active cycle produces a nonzero endpoint-character circulation; complete binomial fibres impose one Laurent holonomy equation, while aggregate fibres remain explicit. A least supported pure cancellation has a spanning conserved cofactor flow and therefore branches or forms alternating even cycles. |
+| `U7C` | boundary obligation | `U7` | The Laurent holonomy can take the required odd sign, aggregate fibres retain additional summands, and both cofactor branching and alternating even cycles occur exactly. Further mixed equations are needed. |
 | `U7B` | boundary obligation | `D1` | Any selected square or hexagon may enter the existing deeper-blocker alternative. |
-| `U1C` + `U7B` | joint open obligation | `U7`, `D1` | Every support-minimal active candidate can be put in actual squared-magnitude moment balance. An exact unit-phase eight-vertex nonwitness is already moment-balanced, retains the pure targets and one ternary transport step, and has all three nonrigidity sets proper; it makes no geometric deeper-component claim. Magnitude convexity does not close the phase, holonomy, cancellation, or deeper exits. |
+| `U1C` + `U7C` | compatible normal forms | `U7`, `D1` | Moment gauge leaves the active-cycle Laurent monomial invariant and multiplies every cofactor-flow edge on one pure residual by a common nonzero scalar. Magnitude balance and the phase normal forms therefore hold simultaneously, but neither closes the deeper or phase exits. |
 | `U2` | boundary obligation | `U8` | Full flags have consequences, but proper nonempty flag sets remain. |
 | `U2`, `U6` | boundary obligation | `D1` | Both reductions retain the deeper-blocker alternative. |
 | `U2` | specialization | `A1` | Simultaneous full flags for all colours enter all-bridge, absent deeper blockers. |
@@ -318,10 +322,13 @@ branch. They are not an instruction to begin all of them at once.
    additional coefficient identities to make transport impossible. The
    exact unit-phase eight-vertex nonwitness is already moment-balanced,
    retains the local algebra of one ternary bridge-pattern transport, and
-   keeps all three nonrigidity sets proper. Thus the remaining obstruction is
-   genuinely phase/global-equation coupling. The response is a sum, its
-   bridge weights are not synchronized termwise, and the cycle alone is not
-   a sign contradiction.
+   keeps all three nonrigidity sets proper. At the next exact depth, an
+   active cycle has a nonzero gauge-invariant Laurent circulation: either a
+   fibre has an extra compatible term or binomial fibres force
+   `lambda^z=(-1)^m`. A sparse physical three-cycle attains `-1`. A least
+   pure cancelling residual likewise has a conserved cofactor flow which
+   branches or alternates on even cycles. Exclude these phase normal forms
+   using additional mixed identities, or couple them to the deeper topology.
 
 5. **Remaining larger/unfactorized detector.** The complete aligned
    projectively constant `q=0,r=5` cell is now conditionally detected; the
@@ -371,6 +378,7 @@ responses; it does not collapse them into the globally rigid `k=4` cell.
 | Bridge normalization, parity/Wick, or fully active pure cofactors synchronize each individual term | False; exact six-vertex countermechanisms retain unsynchronized compatible terms inside aggregate-zero fibres. Nonzero aggregate fibres are nevertheless word-shore synchronized by the later factorization theorem. | [Word-synchronization boundary](../claims/arbitrary-order/MATRIX_UNIT_BRIDGE_WORD_SYNCHRONIZATION_AND_WICK_SHARPNESS_BOUNDARY.md) and [active parity-fibre refinement](../claims/arbitrary-order/MATRIX_UNIT_PARITY_FIBRE_DIAGONAL_FACTORIZATION_AND_ACTIVE_WORD_SHORE_SYNCHRONIZATION_THEOREM.md) |
 | Positive endpoint-label balance turns complex matching cancellation into convexity or excludes active transport | False: the balance weights are incidence-dual multiplicities, not physical amplitudes. A complete balanced eight-vertex nonwitness has pure coefficients `(1,1,1)` and two exact active fibres joined by the forced ternary bridge label pattern, while a different mixed coefficient remains nonzero. It reproduces local transport algebra but makes no geometric deeper-component claim. | [GHZ diagonal-torus endpoint-balance sharpness](../claims/arbitrary-order/MATRIX_UNIT_GHZ_DIAGONAL_TORUS_POLYSTABILITY_ENDPOINT_BALANCE_AND_ACTIVE_TRANSPORT_SHARPNESS_THEOREM.md#3-a-balanced-active-transport-table) |
 | Moment-balanced actual squared amplitudes make matching cancellation positive or force every nonrigidity set global | False from those hypotheses alone: an exact Eisenstein unit-phase table has actual load `(3,2,2)` at every vertex, pure coefficients `(1,1,1)`, two active cancellations `1+(-1)=0`, and three proper nonrigidity sets, while an exposed mixed coefficient proves it is not a witness. Full-target propagation remains open. | [GHZ moment-balanced unit-phase sharpness](../claims/arbitrary-order/MATRIX_UNIT_GHZ_MOMENT_BALANCED_GAUGE_AND_UNIT_PHASE_ACTIVE_TRANSPORT_SHARPNESS_THEOREM.md#4-exact-unit-phase-active-transport-table) |
+| An odd active-word cycle is automatically a sign contradiction | False even with exact binomial fibres: a consistent sparse eight-vertex binary-bridge cycle has three complete fibres `(1,-1)` and nontrivial invariant holonomy `H=-1=(-1)^3`. It is not a complete-support witness. | [Phase-holonomy sharpness](../claims/arbitrary-order/MATRIX_UNIT_PHASE_HOLONOMY_AND_MINIMAL_PURE_COFACTOR_FLOW_REDUCTION_THEOREM.md#4-exact-sparse-odd-cycle-sharpness) |
 | One fixed P7 survivor or incidence result globalizes automatically | False as an inference: one still needs physical edge descent, all Wick equations, and universal extraction | [Balanced sensor Wick gate](../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md) |
 | Determinant-cleared Wick identities automatically remove Cramer poles | False: a normalized four-label rational hafnian deck can satisfy the cleared Euler recurrence while one pair has valuation `-1` | [Cramer--Euler pair-pole boundary](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md#5-sharp-boundary-cleared-wick-does-not-remove-poles) |
 | Local concision, complete support, invertible blocks, and normalized pure coefficients force some balanced sensor to be full | False for every `n>=8`: the diagonal-complete family has all these properties and rank at most `binomial(m,2)+1` on every cut; it fails explicit mixed-word zero equations | [Diagonal-complete all-rank-drop boundary](../claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md) |
