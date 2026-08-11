@@ -475,6 +475,19 @@ lane-A obligation is therefore not an unspecified syzygy search: one must
 force a singleton or odd dependency from the response data, or control a
 genuinely aggregate normalized fibre in the smaller lattice algebra.
 
+The
+[`binomial-core torsion-sheet aggregate theorem`](MATRIX_UNIT_BINOMIAL_CORE_TORSION_SHEET_AND_RANK_ONE_AGGREGATE_QUOTIENT_THEOREM.md)
+controls that residual for an active cycle whose complete cycle fibres are
+binomial.  After a parity-consistent binomial core is untwisted, every
+remaining aggregate equation lives in `C[L/L_B]`; Smith torsion splits this
+exactly into finitely many Laurent character sheets.  Quotient free rank zero
+is decided by finite character evaluation, and free rank one by exact
+univariate Laurent gcds.  If every sheet is killed the block is a unit; if
+any sheet survives, the cycle elimination remains exactly
+`(H-(-1)^m)`.  Aggregate cycle fibres and quotient free rank at least two
+remain open, as does forcing a favourable low-rank unit outcome from the
+response data.
+
 At the Stage 27 boundary, the owner-gated H22/H31, Component20/21/23,
 high-coordinate, and mixed-lifecycle conflict surfaces were excluded from
 that batch and remained at root, unmoved and unadjudicated at that stage.
