@@ -382,6 +382,20 @@ term.  Repeated transport with neither exit produces a finite nontrivial
 active-word holonomy cycle.  Pure-shore cancellation, active holonomy, and
 the deeper branch all remain open; the cycle is not a sign contradiction.
 
+The
+[`GHZ diagonal-torus endpoint-balance theorem`](MATRIX_UNIT_GHZ_DIAGONAL_TORUS_POLYSTABILITY_ENDPOINT_BALANCE_AND_ACTIVE_TRANSPORT_SHARPNESS_THEOREM.md)
+adds a separate support-minimality constraint.  Either a matrix-unit label
+support has an integral GHZ-preserving one-parameter degeneration that
+erases at least one edge, or every edge occurs positively in an integral
+multicover with vertex-independent colour loads.  A support-minimal witness
+must take the second alternative, with all three loads positive.  These
+multicover integers are incidence-dual weights, not physical amplitudes.  An
+exact balanced eight-vertex table has all three pure target coefficients and
+two active fibres joined by the forced ternary bridge label pattern, but also
+an exposed nonzero mixed word.  It reproduces the local transport algebra,
+not the full geometric branch.  Thus balance is a new necessary node, not a
+convexity proof or a witness.
+
 At the Stage 27 boundary, the owner-gated H22/H31, Component20/21/23,
 high-coordinate, and mixed-lifecycle conflict surfaces were excluded from
 that batch and remained at root, unmoved and unadjudicated at that stage.

@@ -1240,6 +1240,33 @@
       "legacy_paths": []
     },
     {
+      "name": "Matrix-Unit GHZ Diagonal-Torus Polystability, Endpoint Balance, and Active-Transport Sharpness Theorem",
+      "document": "claims/arbitrary-order/MATRIX_UNIT_GHZ_DIAGONAL_TORUS_POLYSTABILITY_ENDPOINT_BALANCE_AND_ACTIVE_TRANSPORT_SHARPNESS_THEOREM.md",
+      "document_sha256_16": "621b0662bc0d7c7c",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact rational separation and characteristic-zero one-parameter degeneration for a fixed matrix-unit label support",
+        "the three colour-sum-zero exponent conditions preserve T_W=Delta_(n,3) exactly for every nonzero parameter",
+        "support minimality is global among graph realizations; the limiting smaller-support graph may leave the r=1 stratum",
+        "the positive integral multicover weights are auxiliary incidence-dual certificates and are not the complex physical amplitudes",
+        "nonzero pure target coefficients make all three common endpoint loads positive",
+        "the exact eight-vertex table has pure coefficients one and reproduces the local algebra of one ternary bridge-pattern transport but is not a witness or a geometric no-deeper certificate",
+        "active holonomy, pure-shore cancellation, the deeper branch, r=1 exclusion, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_matrix_unit_ghz_diagonal_torus_polystability_endpoint_balance_and_active_transport_sharpness.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_matrix_unit_ghz_diagonal_torus_polystability_endpoint_balance_and_active_transport_sharpness.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "The written proof applies a strict rational alternative to the endpoint-label incidence map. A nonzero nonnegative exponent vector gives an integral GHZ-stabilizing degeneration whose finite matrix-unit limit erases an edge; otherwise a strictly positive rational dual vector clears to an all-edge integral multicover with vertex-independent colour loads. Hence every globally support-minimal matrix-unit witness is endpoint-balanced. The primary checker and no-import bitmask audit independently verify the incidence pairing, an explicit unstable earlier support, and a balanced eight-vertex table with pure targets and two active fibres joined by the forced ternary bridge label pattern. The table has an exposed mixed coefficient, is not a witness, and makes no geometric deeper-component claim. Global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Four Blocker Ideal Obstruction",
       "document": "claims/arbitrary-order/FOUR_BLOCKER_IDEAL_OBSTRUCTION.md",
       "document_sha256_16": "b7fb5e2394539754",
