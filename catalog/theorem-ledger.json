@@ -440,7 +440,7 @@
     {
       "name": "Balanced Half-Sensor Complete Deck and Wick Globalization Theorem",
       "document": "claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md",
-      "document_sha256_16": "b1fedc4ac06499b3",
+      "document_sha256_16": "680a0c54b0cf8d3f",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact matching and projective-bundle proof over characteristic zero",
@@ -494,7 +494,7 @@
     {
       "name": "Balanced All-Rank-Drop Diagonal-Complete Sharpness Theorem",
       "document": "claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md",
-      "document_sha256_16": "d1e83f9d49e31360",
+      "document_sha256_16": "c4fc0352fe104228",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact matching, polarization, common-quadratic subspace, and dimension proof over characteristic zero",
@@ -511,6 +511,31 @@
       "expected_runtime": "seconds (SymPy primary; standard-library audit)",
       "external_binaries": [],
       "note": "The written arbitrary-order proof puts every non-all-cross balanced companion in one common quadratic multiple of Sym^(m-2), giving rank at most binomial(m,2)+1 on every cut from n=8 onward. The family proves that local concision, complete support, invertible blocks, and normalized pure coefficients cannot exclude the all-balanced rank-drop branch. Its mixed coefficients are explicitly nonzero, so it is a route boundary, not a Krenn--Gu witness or evidence that the witness intersection is nonempty.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
+      "name": "Balanced Common-Quadratic Orbit Rank-Drop and Flattening Exclusion Theorem",
+      "document": "claims/arbitrary-order/BALANCED_COMMON_QUADRATIC_ORBIT_RANK_DROP_AND_FLATTENING_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "cff4085b0797cd0f",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact covariance, matching-count, polarization, and flattening-rank proof over characteristic zero",
+        "one common symmetric bilinear form and one vertex isomorphism shared simultaneously across every incident edge",
+        "ternary local spaces at even order n=2m",
+        "all-balanced rank-drop conclusion starts at m=4; no six-vertex rank-drop claim",
+        "the orbit is excluded from the witness locus but arbitrary all-balanced graphs are not proved common-quadratic or synchronized"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_common_quadratic_orbit_rank_drop_and_flattening_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_common_quadratic_orbit_rank_drop_and_flattening_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (SymPy primary; standard-library audit)",
+      "external_binaries": [],
+      "note": "The written proof transfers the uniform common-quadratic sensor bound through independent vertex isomorphisms, placing the orbit in B_all from n=8 onward. Nondegenerate members have exact 2|(n-2) flattening rank six, invariant under local isomorphisms, versus ternary GHZ rank three; degenerate members already fail local rank. This excludes only the synchronized common-form stratum and leaves the nonsynchronized B_all witness intersection and global conjecture UNRESOLVED.",
       "claim_package": "claims/arbitrary-order",
       "proof_variant": "canonical",
       "subpackage": null,

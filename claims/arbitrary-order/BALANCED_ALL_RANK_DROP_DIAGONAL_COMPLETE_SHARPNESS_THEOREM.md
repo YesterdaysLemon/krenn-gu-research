@@ -242,6 +242,14 @@ This theorem does not weaken the balanced full-sensor dichotomy.  It prevents
 an invalid attempt to discard its closed branch using only local concision,
 support, invertibility, or the three pure target coefficients.
 
+The
+[`common-quadratic orbit exclusion`](BALANCED_COMMON_QUADRATIC_ORBIT_RANK_DROP_AND_FLATTENING_EXCLUSION_THEOREM.md)
+extends the rank-drop mechanism from this representative to its full
+vertex-gauge common-form orbit.  A two-vertex flattening has rank six
+throughout the nondegenerate orbit, so none of those graphs can equal ternary
+GHZ, whose corresponding rank is three.  That result excludes the synchronized
+orbit only; it does not classify the remaining all-balanced locus.
+
 ## Focused replay
 
 Run from repository root:

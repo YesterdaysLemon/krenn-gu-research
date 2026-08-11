@@ -229,6 +229,13 @@ nonzero, so it is not a witness.  Thus those strong ambient and pure
 conditions cannot replace the missing mixed GHZ equations on the rank-drop
 branch.
 
+The subsequent
+[`common-quadratic orbit theorem`](BALANCED_COMMON_QUADRATIC_ORBIT_RANK_DROP_AND_FLATTENING_EXCLUSION_THEOREM.md)
+excludes the full vertex-gauge orbit of that diagonal mechanism from the
+witness locus by a `6` versus `3` two-flattening rank mismatch.  It does not
+show that an arbitrary member of `B_all` has common-quadratic form, so the
+nonsynchronized witness intersection remains open.
+
 ## 4. Projective complete-deck lift
 
 Continue over `K=C`.  Use the convention that `P(L_u)` parametrizes lines in
