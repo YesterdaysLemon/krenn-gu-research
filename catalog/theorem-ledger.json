@@ -848,6 +848,33 @@
       "legacy_paths": []
     },
     {
+      "name": "Projectively Constant Lift Complete Aligned Five-Cell Two-Open Detector Theorem",
+      "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
+      "document_sha256_16": "eff3dcf2860d068a",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero lifted-row-quota, arbitrary-ratio collision-kernel, reciprocal-graph, inactive-set, Hall-incidence, and two-singleton-support proof",
+        "conditional on the aligned physical common-two-row factorization and projectively constant shore at root j",
+        "the new conclusion is only complete conditional two-open detection in q=0 r=5; every rank-two companion frame and persistent-root activity pattern is covered",
+        "the imported p_a>=2 physical-row quota and b_w!=0 fixed-layer theorem exclude four or five B defects; all remaining four/five R/B type words are exhausted",
+        "the RRRRT primitive-cube-root 2+2 reciprocal divisor is retained explicitly and has a one-dimensional common kernel; the equal-ratios-only strengthening is false",
+        "only existence of some nonzero collective detector is proved, not fixed-root injectivity, witness exclusion, or arbitrary permanent nonrestriction",
+        "q=0 r>=6, q>=1, unfactorized cells, extraction/gluing, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_projectively_constant_lift_complete_aligned_five_cell_detector.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_projectively_constant_lift_complete_aligned_five_cell_detector.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (SymPy primary; standard-library audit)",
+      "external_binaries": [],
+      "note": "The characteristic-zero implication is the written physical-row quota, exhaustive four/five-defect type split, complete RRRRT/RRRBT/RRBBT and three-B collision analysis, arbitrary-ratio reciprocal cofactor graph, one/two-B forcing, inactive-set crowding, and basis-free 3|2 Hall bridge to the exact two-singleton P5 obstruction. The primary checks the cube-root divisor and all 1024 labelled zero graphs; the no-import audit independently uses recursive permanents, Fraction elimination, a custom Q(omega) field, 337 ratio charts, and bitmask Hall ledgers. This closes the aligned q=0 r=5 detector node only; witness exclusion and global Krenn-Gu remain UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Rigid-Colour Cofactor Annihilation and Backbone-Cancellation Boundary",
       "document": "claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md",
       "document_sha256_16": "96aecff02ad3e367",

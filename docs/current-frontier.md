@@ -64,7 +64,8 @@ flowchart TD
   O2E["q=0, r=5 at most two defects except AA/BB<br/>AT LEAST ONE DETECTOR conditionally"]
   O2G["q=0, r=5 at most two defects, all types<br/>AT LEAST ONE DETECTOR conditionally"]
   O2H["q=0, r=5 at most three defects;<br/>A/Z fixed-layer modes impossible<br/>AT LEAST ONE DETECTOR conditionally"]
-  O3["q=0 r=5 four/five R/B defects;<br/>q=0 r>=6, q>=1, or unfactorized OPEN"]
+  O2I["Complete aligned q=0, r=5 cell<br/>AT LEAST ONE DETECTOR conditionally"]
+  O3["q=0 r>=6, q>=1,<br/>or unfactorized detector OPEN"]
 
   U1["r = 1 complete matrix units<br/>PROVED normal form"]
   U2["At-most-four-port response<br/>k = 1, 2, 3 remain OPEN"]
@@ -110,8 +111,9 @@ flowchart TD
   O2D -. strict special strata .-> O2E
   O2E -. strict special strata .-> O2G
   O2G -. strict special strata .-> O2H
+  O2H -->|remaining-strata closure| O2I
   O2F -->|larger-cell boundary| O3
-  O2H -->|higher-defect boundary| O3
+  O2I -->|larger/unfactorized boundary| O3
   O2 -->|boundary| O3
   M2 -->|zero-surplus specialization| PR
 
@@ -161,7 +163,8 @@ flowchart TD
 | `O2E` | In aligned projective `q=0,r=5`, three active deletions force a quotient-line trap for every companion frame. Exact `A/B/Z` retained collision kernels then give **at least one detector** for the zero-containing `AZ`, `BZ`, `ZZ` cells and the mixed `AB` cell. Together with `O2C` and `O2D`, this detects every at-most-two-defect cell except same-type `AA` and `BB`; it does not exclude a witness. | [Three-activity two-defect detector](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_THREE_ACTIVITY_AND_MIXED_DEGENERATE_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md) |
 | `O2G` | In aligned projective `q=0,r=5`, exact row-pair and triple Hall incidence turns the same-type `AA` and `BB` double-kernel survivors into pure-coefficient assignment contradictions. Together with `O2C`, `O2D`, and `O2E`, this gives **at least one detector in every cell with at most two local defects**. It does not exclude a witness. | [Same-type row-incidence detector](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_ROW_INCIDENCE_SAME_TYPE_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md) |
 | `O2H` | In aligned projective `q=0,r=5`, row-pair incidence plus the two-singleton `P_5` obstruction excludes every local defect with `b=0`. Exact arbitrary-ratio collision intersections and inactive-set crowding then give **at least one detector in every cell with at most three local defects**, including all `RRR`, `RRB`, `RBB`, and `BBB` three-defect cells. This does not exclude a witness. | [Complete three-defect detector](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_THREE_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md) |
-| `O3` | In aligned projective `q=0,r=5`, the remaining detector boundary is exactly four or five `R/B` defects; four `B` modes already make the present pair tensor structurally zero. Every `q=0,r>=6` cell, every `q>=1` cell, and every unfactorized outside graph is also **open**. | [Three-defect exact boundary](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_THREE_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md#6-exact-residual-boundary) and [two-open exact boundary](../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md#6-exact-boundary) |
+| `O2I` | In the complete aligned common-two-row, projectively constant `q=0,r=5` cell, the lifted `p_a>=2` quota excludes four/five `B` defects. Exact four-/five-defect collision kernels, the all-regular cofactor graph, and a basis-free `3|2` Hall bridge then give **at least one detector in every remaining cell**. The primitive-cube-root `RRRRT` divisor is retained and still has only a one-dimensional common kernel. This does not exclude a witness. | [Complete aligned five-cell detector](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md) |
+| `O3` | Conditional aligned `q=0,r=5` detection does not prove witness exclusion or fixed-root injectivity. Every aligned `q=0,r>=6` cell, every `q>=1` cell, and every unfactorized outside graph remains **open** at detector depth. | [Complete aligned five-cell boundary](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md#6-complete-aligned-five-cell-boundary) and [two-open exact boundary](../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md#6-exact-boundary) |
 | `U1` | Complete nonzero one-matrix-unit blocks and forbidden-word cancellation: **proved normal form; exclusion open** | [Maximal-root one branch](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#3-the-maximum-one-monomial-branch) |
 | `U2` | Globally minimum forbidden word has at most four deviations; exact finite-port response and partial bridges: **proved reduction**. The `k=1`, `k=2`, and `k=3` cells all remain unexcluded; only `k=4` forces rigidity in the base colour. | [Four-switch theorem](../claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md) |
 | `U3` | Globally rigid colour factors into a pure hafnian and binary tensor: **proved conditionally; rigidity not forced** | [Rigid-colour boundary](../claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md) |
@@ -204,8 +207,9 @@ flowchart TD
 | `O2D` | strict special strata | `O2E` | The previously detected transverse, one-defect, and regular-two-defect strata sit inside the enlarged at-most-two-defect region; exact three-activity and `A/B/Z` collision kernels add `AB`, `AZ`, `BZ`, and `ZZ`, but not `AA` or `BB`. |
 | `O2E` | strict special strata | `O2G` | The mixed and zero-containing two-defect cells sit inside the complete at-most-two-defect detector region; exact pair/triple incidence and pure-support matching add the same-type `AA` and `BB` cells. |
 | `O2G` | strict special strata | `O2H` | The complete at-most-two-defect region sits inside the enlarged at-most-three-defect region; fixed-layer incidence excludes `A/Z`, while exact `R/B` common kernels add `RRR`, `RRB`, `RBB`, and `BBB`. |
+| `O2H` | remaining-strata closure | `O2I` | The lifted `p_a>=2` row quota removes four/five `B` words; exact four-/five-defect kernels, reciprocal forcing, and the `3|2` Hall bridge add all remaining `R/B` words.  The conclusion is complete conditional detection, not witness exclusion. |
 | `O2F` | boundary obligation | `O3` | Four-cell closure does not automatically transport to larger aligned cells, positive surplus, or the unfactorized branch. |
-| `O2H` | boundary obligation | `O3` | The collision/activity argument leaves four- and five-defect `R/B` patterns.  With four `B` modes the pair tensor is structurally zero, and the argument does not transport automatically to larger aligned cells, positive surplus, or the unfactorized branch. |
+| `O2I` | boundary obligation | `O3` | Complete aligned `q=0,r=5` detection neither excludes a witness nor transports automatically to larger aligned cells, positive surplus, or the unfactorized branch. |
 | `O2` | boundary obligation | `O3` | The tight star refutes an automatic detector; higher/unfactorized data are needed. |
 | `M2` | specialization | `PR` | Zero surplus yields a tight weighted permanent restriction at arbitrary `r>=5`; it is not reduced to P7. |
 | `U1` | reduction | `U2` | Matrix-unit cancellation reduces to an at-most-four-port response. |
@@ -240,16 +244,13 @@ branch. They are not an instruction to begin all of them at once.
    or construct another exact word-preserving global rematching. Global pure
    matchings and fully active pure cofactors are insufficient.
 
-3. **Remaining larger/unfactorized detector.** On the aligned projectively
-   constant branch, close the residual `q=0,r=5` cells with four or five
-   `R/B` defects.  Every cell with at most three local defects is now detected,
-   and `A/Z` defects are impossible already at the fixed layer.  The present
-   pair tensor is structurally zero with four `B` modes, so that edge needs a
-   higher/unfactorized sensor or a direct fixed-layer exclusion.  Then treat
-   `q=0,r>=6` or `q>=1`, or prove a legal selector
-   separating the replacement tensors. Outside that branch, produce an exact
-   nonzero selector or otherwise exclude the unfactorized high-surplus cell.
-   The existing cell detectors do not exclude a witness.
+3. **Remaining larger/unfactorized detector.** The complete aligned
+   projectively constant `q=0,r=5` cell is now conditionally detected; the
+   lifted physical-row quota removes the apparent four-/five-`B` zero before
+   the remaining `R/B` words are closed.  Treat `q=0,r>=6` or `q>=1`, or prove
+   a legal selector separating the replacement tensors. Outside that branch,
+   produce an exact nonzero selector or otherwise exclude the unfactorized
+   high-surplus cell.  The existing cell detectors do not exclude a witness.
 
 4. **First remaining all-bridge degree.** Exclude or structurally reduce
    `Delta(D)=5`. This does not address the separate deeper-blocker branch.
@@ -290,6 +291,7 @@ responses; it does not collapse them into the globally rigid `k=4` cell.
 | Bogdanov-backbone cancellation alone contradicts equality | False: all selected backbone mixed words can cancel while other words fail | [Rigid-colour cancellation boundary](../claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md) |
 | Bridge normalization, parity/Wick, or fully active pure cofactors synchronize the exact word | False; exact six-vertex countermechanisms isolate the word-shore condition | [Word-synchronization boundary](../claims/arbitrary-order/MATRIX_UNIT_BRIDGE_WORD_SYNCHRONIZATION_AND_WICK_SHARPNESS_BOUNDARY.md) |
 | One fixed P7 survivor or incidence result globalizes automatically | False as an inference: one still needs physical edge descent, all Wick equations, and universal extraction | [Balanced sensor Wick gate](../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md) |
+| Only equal regular ratios survive the four-regular five-cell common kernel | False: a `2+2` reciprocal primitive-cube-root divisor also gives a one-dimensional kernel; the corrected dimension bound still closes detection | [Complete aligned five-cell detector](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md#lemma-2-four-defect-full-common-kernels) |
 
 These are refutations of arguments, not counterexamples to the Krenn–Gu
 conjecture.
