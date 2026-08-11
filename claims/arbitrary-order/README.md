@@ -424,6 +424,18 @@ at least three terms at a vertex or is a spanning union of exact alternating
 even cycles.  Both structures survive moment gauge.  These reductions make
 the remaining phase data explicit but do not exclude it.
 
+The
+[`complete pure-target moment-compatible odd-holonomy sharpness theorem`](MATRIX_UNIT_COMPLETE_PURE_TARGET_MOMENT_COMPATIBLE_ODD_HOLONOMY_SHARPNESS_THEOREM.md)
+closes a stronger tempting shortcut.  An exact complete eight-vertex
+matrix-unit table has all three pure target coefficients one, a strict
+positive endpoint balance with common loads `(7,7,7)`, three proper nonempty
+nonrigidity sets, and a complete three-fibre binomial cycle with invariant
+`H=-1`.  The moment theorem gauges the same table to actual squared-amplitude
+balance while preserving those identities.  A unique exposed mixed term
+remains nonzero, so the table is not a witness.  Complete physical support,
+pure normalization, magnitude balance, and odd-cycle sign therefore cannot
+replace the still-open use of the remaining mixed target equations.
+
 At the Stage 27 boundary, the owner-gated H22/H31, Component20/21/23,
 high-coordinate, and mixed-lifecycle conflict surfaces were excluded from
 that batch and remained at root, unmoved and unadjudicated at that stage.
