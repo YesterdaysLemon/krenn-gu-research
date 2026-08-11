@@ -252,8 +252,9 @@ The subsequent
 strictly enlarges the excluded physical stratum.  It needs the common quadric
 only on one balanced root shore, allows arbitrary blocks internal to the
 nonroot half and arbitrary root/cross edge scalars, and excludes the
-column-separable case whenever the cross-scalar permanent is nonzero.  Its
-zero-permanent and nonseparable divisibility branches remain open.
+entire physical common-conformal shore: a nonzero cross-scalar permanent
+fails a mixed word, while a zero permanent fails a constant-colour pure
+residue.  General nonseparable simultaneous residue branches remain open.
 
 ## Focused replay
 

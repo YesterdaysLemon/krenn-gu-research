@@ -440,7 +440,7 @@
     {
       "name": "Balanced Half-Sensor Complete Deck and Wick Globalization Theorem",
       "document": "claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md",
-      "document_sha256_16": "701312abe070a1b1",
+      "document_sha256_16": "7b7712781c5ece31",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact matching and projective-bundle proof over characteristic zero",
@@ -519,7 +519,7 @@
     {
       "name": "Balanced Common-Quadratic Orbit Rank-Drop and Flattening Exclusion Theorem",
       "document": "claims/arbitrary-order/BALANCED_COMMON_QUADRATIC_ORBIT_RANK_DROP_AND_FLATTENING_EXCLUSION_THEOREM.md",
-      "document_sha256_16": "a68cc6f16f5eb16b",
+      "document_sha256_16": "8ff5eb73afa6190b",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact covariance, matching-count, polarization, and flattening-rank proof over characteristic zero",
@@ -544,14 +544,15 @@
     {
       "name": "Balanced Common-Quadric Mixed-Permanent Divisibility and Conformal-Shore Exclusion Theorem",
       "document": "claims/arbitrary-order/BALANCED_COMMON_QUADRIC_MIXED_PERMANENT_DIVISIBILITY_AND_CONFORMAL_SHORE_EXCLUSION_THEOREM.md",
-      "document_sha256_16": "740242dddf4308e0",
+      "document_sha256_16": "6dbd450517792d68",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact balanced matching-sector, permanent-factorization, and polynomial-UFD proof over characteristic zero",
         "one balanced cut with fixed root identifications and one common nondegenerate diagonal root quadric Q",
         "mixed-permanent divisibility holds for every nonconstant nonroot coordinate word without assumptions on internal nonroot blocks",
-        "the column-separable exclusion additionally requires nonzero column forms and nonzero scalar cross permanent",
-        "common-quadric extraction, column separation, zero cross permanent, and nonseparable Q-divisible permanents remain open"
+        "the one-word column-separable mixed exclusion additionally requires nonzero column forms and nonzero scalar cross permanent",
+        "a physical common-conformal shore is excluded for every scalar permanent value because its constant words share the same scalar matrix",
+        "common-quadric extraction, general column separation, one-word zero permanent, and nonseparable simultaneous Q-residue systems remain open"
       ],
       "dependencies": [],
       "primary_verifier": "claims/arbitrary-order/verify_balanced_common_quadric_mixed_permanent_divisibility_and_conformal_shore_exclusion.py",
@@ -560,7 +561,7 @@
       "audit_provenance": "independent_exact_identity_audit",
       "expected_runtime": "seconds (SymPy primary; standard-library sparse-polynomial audit)",
       "external_binaries": [],
-      "note": "The written proof identifies the all-cross permanent as the full nonconstant mixed-word contraction modulo the common root quadric Q because C_empty=1 and every other balanced sector contains a root-root edge. Hence every mixed permanent is divisible by Q in a witness. A column-separable cross shore with nonzero scalar permanent factors into nonzero linear forms and is excluded by irreducibility; arbitrary internal nonroot blocks cannot repair it. The permanent-zero and nonseparable branches and the global conjecture remain open.",
+      "note": "The written proof identifies the all-cross permanent as the full contraction residue modulo the common root quadric Q because C_empty=1 and every other balanced sector contains a root-root edge. Nonconstant words force Q-divisibility, while constant words give a nonzero pure-root product. A physical common-conformal shore shares one scalar cross matrix across both sectors: nonzero permanent contradicts a mixed word and zero permanent contradicts the pure residue, so arbitrary internal nonroot blocks cannot repair any such shore. One-word zero-permanent factorization, general nonseparable simultaneous residue systems, and the global conjecture remain open.",
       "claim_package": "claims/arbitrary-order",
       "proof_variant": "canonical",
       "subpackage": null,

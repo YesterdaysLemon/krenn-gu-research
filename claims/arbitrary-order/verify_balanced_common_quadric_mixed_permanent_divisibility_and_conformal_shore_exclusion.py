@@ -163,6 +163,43 @@ def assert_target_coordinate_words() -> dict[str, int]:
     return {"constant": sum(values), "mixed_zero": len(values) - sum(values)}
 
 
+def assert_zero_permanent_pure_branch() -> dict[int, int]:
+    """Check that a zero cross permanent contradicts the pure residue."""
+    variables = sp.symbols("x y z")
+    x, y, z = variables
+    quadratic = x**2 + y**2 + z**2
+    zero_permanent_matrices = {
+        2: [[1, 1], [1, -1]],
+        3: [[-2, -2, -2], [-2, -2, -2], [-2, 1, 1]],
+    }
+    ledger: dict[int, int] = {}
+    for m, scalars in zero_permanent_matrices.items():
+        assert permanent(scalars) == 0
+        nonroot_forms = [
+            x + (column + 2) * y + (column + 4) * z
+            for column in range(m)
+        ]
+        cross_forms = [
+            [scalars[row][column] * nonroot_forms[column] for column in range(m)]
+            for row in range(m)
+        ]
+        assert permanent(cross_forms) == 0
+        graph = full_repeated_root_contraction(m, quadratic, cross_forms)
+        assert remainder_mod_quadratic(graph, quadratic, variables) == 0
+
+        root_forms = [
+            (row + 2) * x + (2 * row + 1) * y + (row + 3) * z
+            for row in range(m)
+        ]
+        pure_target = sp.expand(sp.prod(root_forms))
+        pure_remainder = remainder_mod_quadratic(
+            pure_target, quadratic, variables
+        )
+        assert pure_remainder != 0
+        ledger[m] = len(sp.Poly(pure_remainder, *variables).terms())
+    return ledger
+
+
 def assert_degenerate_root_span() -> dict[int, int]:
     """Check the local covector span of diagonal forms of each possible rank."""
     ledger: dict[int, int] = {}
@@ -190,11 +227,13 @@ def main() -> None:
     residues = assert_all_cross_residue()
     factors = assert_column_factorization()
     targets = assert_target_coordinate_words()
+    zero_permanent = assert_zero_permanent_pure_branch()
     degenerate = assert_degenerate_root_span()
     print("balanced common-quadric mixed-permanent primary checks: PASS")
     print(f"  (matchings, monomials) full-contraction ledger: {residues}")
     print(f"  nonzero scalar permanents m=2..6: {factors}")
     print(f"  GHZ coordinate contractions: {targets}")
+    print(f"  zero-permanent pure remainders: {zero_permanent}")
     print(f"  degenerate root covector spans: {degenerate}")
 
 
