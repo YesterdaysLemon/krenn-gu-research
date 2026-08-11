@@ -461,6 +461,20 @@ holonomy polynomial arises.  Same multidegree is not itself a proved
 transport operation; forcing a comparable unit or a complete-block syzygy
 from an arbitrary active cycle remains open.
 
+The arbitrary-order
+[`complete same-multidegree fibre-lattice reduction`](MATRIX_UNIT_COMPLETE_SAME_MULTIDEGREE_FIBRE_LATTICE_REDUCTION_AND_BINOMIAL_PARITY_DICHOTOMY_THEOREM.md)
+now decides the algebraic shape of that complete-block question.  Dividing
+each nonempty fibre by one invertible reference matching descends the entire
+block to the group algebra of its within-fibre difference lattice.  This
+faithful descent preserves unit ideals and exact holonomy elimination.  A
+singleton is a unit at every order.  If every nonempty fibre is binomial, an
+odd integer-kernel sign dependency is a unit certificate; otherwise the
+block is proper and its active-cycle elimination is exactly
+`(H-(-1)^m)`, with no stronger same-degree holonomy polynomial.  The remaining
+lane-A obligation is therefore not an unspecified syzygy search: one must
+force a singleton or odd dependency from the response data, or control a
+genuinely aggregate normalized fibre in the smaller lattice algebra.
+
 At the Stage 27 boundary, the owner-gated H22/H31, Component20/21/23,
 high-coordinate, and mixed-lifecycle conflict surfaces were excluded from
 that batch and remained at root, unmoved and unadjudicated at that stage.
