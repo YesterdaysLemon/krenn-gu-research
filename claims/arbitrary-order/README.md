@@ -111,10 +111,18 @@ proves that `h -> P_4(h,a,a,b)` is injective when `a_u,b_u` are independent
 at all four outside modes.  Combining that collision lemma with the rank-two
 companion frame shows that, in the aligned projective `q=0,r=4` cell, at
 least one non-aligned root has a nonzero two-open detector; all three do when
-the three companions are pairwise independent.  Local transversality is an
-additional hypothesis and is not forced on the witness locus.  The
-local-dependence boundary, `q=0,r>=5`, every `q>=1` cell, and the unfactorized
-branch remain open.
+the three companions are pairwise independent.  Its local transversality
+hypothesis is a clean sufficient condition.
+
+The strict follow-up
+[`complete four-cell detector theorem`](PROJECTIVELY_CONSTANT_LIFT_COMPLETE_FOUR_CELL_TWO_OPEN_DETECTOR_THEOREM.md)
+removes that extra local hypothesis.  Collision quotients and all-subset Hall
+incidence force any invisible replacement pair into a common outside
+`a_u=b_u=0`; the lifted tricolour cover, adjacent recolouring, and local
+concision exclude that final boundary.  Thus the whole aligned projective
+`q=0,r=4` cell has at least one two-open detector.  This is still detection,
+not a witness exclusion.  The cells `q=0,r>=5`, every `q>=1` cell, and the
+unfactorized branch remain open.
 
 The
 [`rigid-colour boundary theorem`](RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md)

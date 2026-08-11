@@ -621,7 +621,7 @@
         "detector conclusion is only for q=0, r=4 with a_u and b_u linearly independent at every outside mode",
         "at least one complementary companion pair is independent; pairwise independence is additionally required for detection at all three roots",
         "nonzero detection, not fixed-root injectivity or witness exclusion, is proved",
-        "the local-dependence boundary, q=0 r>=5, q>=1, unfactorized cells, and the global conjecture remain open"
+        "this theorem retains local transversality; a separate complete-four-cell theorem removes it, while q=0 r>=5, q>=1, unfactorized cells, and the global conjecture remain open"
       ],
       "dependencies": [],
       "primary_verifier": "claims/arbitrary-order/verify_projectively_constant_lift_transverse_four_cell_detector.py",
@@ -630,7 +630,33 @@
       "audit_provenance": "independent_exact_identity_audit",
       "expected_runtime": "seconds (SymPy primary; standard-library audit)",
       "external_binaries": [],
-      "note": "The arbitrary-field implication is the written local-basis collision injectivity, companion-minor deletion, and full-span transport proof. The primary checks an exact 12-by-12 minor and transverse charts; the no-import audit instead uses a labelled permutation ledger and explicit rational left inverse. This closes only the locally transverse part of the conditional q=0,r=4 detector and leaves global Krenn-Gu UNRESOLVED.",
+      "note": "The arbitrary-field implication is the written local-basis collision injectivity, companion-minor deletion, and full-span transport proof. The primary checks an exact 12-by-12 minor and transverse charts; the no-import audit instead uses a labelled permutation ledger and explicit rational left inverse. This remains a verified strict special case of the later complete-four-cell detector; global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
+      "name": "Projectively Constant Lift Complete Four-Cell Two-Open Detector Theorem",
+      "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_FOUR_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
+      "document_sha256_16": "dcef4cdaad8576e5",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero collision-quotient, Hall-incidence, flattening, adjacent-recolouring, and local-concision proof",
+        "conditional on the aligned physical common-two-row factorization and projectively constant shore at root j",
+        "detector conclusion is only for q=0 and r=4, with no additional local transversality assumption",
+        "at least one complementary companion pair is independent; pairwise independence is additionally required for detection at all three roots",
+        "nonzero detection, not fixed-root injectivity or witness exclusion, is proved",
+        "q=0 r>=5, q>=1, unfactorized cells, universal extraction/gluing, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_projectively_constant_lift_complete_four_cell_detector.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_projectively_constant_lift_complete_four_cell_detector.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (SymPy primary; standard-library audit)",
+      "external_binaries": [],
+      "note": "The arbitrary-field implication is the written quotient identity, all-subset Hall capacity, deletion-zero classification, common-zero recolouring, and local-concision proof. The primary checks symbolic quotient and P5 coefficient identities; the no-import audit instead uses a recursive permanent, integer ledgers, and 2401 normalized zero patterns. This closes affine-gauge invisibility only in the conditional aligned projective q=0,r=4 cell and leaves global Krenn-Gu UNRESOLVED.",
       "claim_package": "claims/arbitrary-order",
       "proof_variant": "canonical",
       "subpackage": null,
