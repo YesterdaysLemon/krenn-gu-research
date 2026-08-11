@@ -215,6 +215,23 @@ a different sensor or fixed-layer exclusion is required.  This is still not
 witness exclusion, and larger/positive-surplus, unfactorized, gluing, and
 global obligations remain open.
 
+The closing
+[`complete aligned five-cell detector`](PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md)
+imports the lifted quota `p_a>=2`, so the apparent four-/five-`B` structural
+zero cannot occur in the fixed diagonal layer.  The remaining four- and
+five-defect `R/B` words are exhaustive.  Exact full collision kernels, the
+five-regular reciprocal cofactor graph, one-/two-/three-`B` forcing, and a
+four-row Hall equality reduce every exceptional case to pair/triple
+incidence failure or the exact two-singleton `P_5` obstruction.  The
+`RRRRT` calculation explicitly retains a primitive-cube-root `2+2`
+reciprocal divisor missed by rational grids; its common kernel is still only
+one-dimensional.  Consequently the complete aligned common-two-row,
+projectively constant `q=0,r=5` cell has at least one two-open detector.
+This is conditional detection only: witness exclusion, fixed-root
+injectivity, `q=0,r>=6`, `q>=1`, unfactorized cells, arbitrary permanent
+nonrestriction, and extraction/gluing remain **UNKNOWN/OPEN**, and the global
+conjecture remains **UNRESOLVED**.
+
 The
 [`rigid-colour boundary theorem`](RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md)
 sharpens that one-root branch.  It proves universal near-monochromatic deck,
