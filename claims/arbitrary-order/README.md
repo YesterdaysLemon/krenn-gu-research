@@ -59,6 +59,16 @@ Target residuals, empty normalization, pair poles, and the recurrence family
 are still open obligations; a normalized cleared recurrence can hold while a
 pair retains a divisorial pole.
 
+On the complementary branch, the
+[`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
+constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
+every balanced sensor has rank at most `binomial(m,2)+1`, even though every
+edge block is invertible, the support is complete, the full tensor is locally
+concise, and its three pure coefficients are normalized.  Explicit nonzero
+mixed even-colour coefficients keep the family outside the witness locus.
+Consequently the mixed GHZ zero equations are essential to any exclusion of
+the all-balanced branch.
+
 The
 [`maximal torus-root theorem`](MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md)
 gives a second exact universal dichotomy at the witness point.  A
