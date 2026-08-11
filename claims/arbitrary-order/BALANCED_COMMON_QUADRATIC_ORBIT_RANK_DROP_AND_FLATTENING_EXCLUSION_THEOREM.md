@@ -247,6 +247,14 @@ full sensor.  The present theorem adds a different conclusion: no independent
 local change of basis can turn any common-quadratic graph into GHZ, because
 flattening rank is invariant.
 
+The subsequent
+[`common-quadric mixed-permanent theorem`](BALANCED_COMMON_QUADRIC_MIXED_PERMANENT_DIVISIBILITY_AND_CONFORMAL_SHORE_EXCLUSION_THEOREM.md)
+strictly enlarges the excluded physical stratum.  It needs the common quadric
+only on one balanced root shore, allows arbitrary blocks internal to the
+nonroot half and arbitrary root/cross edge scalars, and excludes the
+column-separable case whenever the cross-scalar permanent is nonzero.  Its
+zero-permanent and nonseparable divisibility branches remain open.
+
 ## Focused replay
 
 Run from repository root:

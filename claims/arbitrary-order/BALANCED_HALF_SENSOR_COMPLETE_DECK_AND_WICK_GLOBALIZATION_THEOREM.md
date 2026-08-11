@@ -236,6 +236,15 @@ witness locus by a `6` versus `3` two-flattening rank mismatch.  It does not
 show that an arbitrary member of `B_all` has common-quadratic form, so the
 nonsynchronized witness intersection remains open.
 
+The further
+[`common-quadric mixed-permanent obstruction`](BALANCED_COMMON_QUADRIC_MIXED_PERMANENT_DIVISIBILITY_AND_CONFORMAL_SHORE_EXCLUSION_THEOREM.md)
+uses the all-cross `C_empty=1` sector directly.  On one balanced shore whose
+root-root diagonal quadratics share a nondegenerate `Q`, every nonconstant
+mixed-word cross permanent must be divisible by `Q`; a column-separable
+common-conformal shore with nonzero scalar permanent is therefore impossible,
+even with arbitrary internal nonroot blocks.  The zero-permanent and
+nonseparable branches remain open.
+
 ## 4. Projective complete-deck lift
 
 Continue over `K=C`.  Use the convention that `P(L_u)` parametrizes lines in

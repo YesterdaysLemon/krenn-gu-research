@@ -79,6 +79,16 @@ this entire common-form stratum is disjoint from the witness equations, while
 the nonsynchronized all-balanced intersection remains open.
 
 The
+[`common-quadric mixed-permanent obstruction`](BALANCED_COMMON_QUADRIC_MIXED_PERMANENT_DIVISIBILITY_AND_CONFORMAL_SHORE_EXCLUSION_THEOREM.md)
+removes the unnecessary synchronization inside the nonroot half.  If one
+balanced root shore has a common nondegenerate diagonal quadric `Q`, every
+nonconstant mixed-word all-cross permanent must lie in `(Q)`.  A
+column-separable common-conformal cross shore with nonzero scalar permanent
+instead gives a product of nonzero linear forms, so arbitrary internal
+nonroot blocks cannot complete it to GHZ.  Zero cross permanent and
+nonseparable `Q`-divisible permanents are the exact surviving boundaries.
+
+The
 [`maximal torus-root theorem`](MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md)
 gives a second exact universal dichotomy at the witness point.  A
 maximum-cardinality zero-coupled torus-root set is either a single root, which

@@ -440,7 +440,7 @@
     {
       "name": "Balanced Half-Sensor Complete Deck and Wick Globalization Theorem",
       "document": "claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md",
-      "document_sha256_16": "680a0c54b0cf8d3f",
+      "document_sha256_16": "701312abe070a1b1",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact matching and projective-bundle proof over characteristic zero",
@@ -519,7 +519,7 @@
     {
       "name": "Balanced Common-Quadratic Orbit Rank-Drop and Flattening Exclusion Theorem",
       "document": "claims/arbitrary-order/BALANCED_COMMON_QUADRATIC_ORBIT_RANK_DROP_AND_FLATTENING_EXCLUSION_THEOREM.md",
-      "document_sha256_16": "cff4085b0797cd0f",
+      "document_sha256_16": "a68cc6f16f5eb16b",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact covariance, matching-count, polarization, and flattening-rank proof over characteristic zero",
@@ -536,6 +536,31 @@
       "expected_runtime": "seconds (SymPy primary; standard-library audit)",
       "external_binaries": [],
       "note": "The written proof transfers the uniform common-quadratic sensor bound through independent vertex isomorphisms, placing the orbit in B_all from n=8 onward. Nondegenerate members have exact 2|(n-2) flattening rank six, invariant under local isomorphisms, versus ternary GHZ rank three; degenerate members already fail local rank. This excludes only the synchronized common-form stratum and leaves the nonsynchronized B_all witness intersection and global conjecture UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
+      "name": "Balanced Common-Quadric Mixed-Permanent Divisibility and Conformal-Shore Exclusion Theorem",
+      "document": "claims/arbitrary-order/BALANCED_COMMON_QUADRIC_MIXED_PERMANENT_DIVISIBILITY_AND_CONFORMAL_SHORE_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "740242dddf4308e0",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact balanced matching-sector, permanent-factorization, and polynomial-UFD proof over characteristic zero",
+        "one balanced cut with fixed root identifications and one common nondegenerate diagonal root quadric Q",
+        "mixed-permanent divisibility holds for every nonconstant nonroot coordinate word without assumptions on internal nonroot blocks",
+        "the column-separable exclusion additionally requires nonzero column forms and nonzero scalar cross permanent",
+        "common-quadric extraction, column separation, zero cross permanent, and nonseparable Q-divisible permanents remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_common_quadric_mixed_permanent_divisibility_and_conformal_shore_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_common_quadric_mixed_permanent_divisibility_and_conformal_shore_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (SymPy primary; standard-library sparse-polynomial audit)",
+      "external_binaries": [],
+      "note": "The written proof identifies the all-cross permanent as the full nonconstant mixed-word contraction modulo the common root quadric Q because C_empty=1 and every other balanced sector contains a root-root edge. Hence every mixed permanent is divisible by Q in a witness. A column-separable cross shore with nonzero scalar permanent factors into nonzero linear forms and is excluded by irreducibility; arbitrary internal nonroot blocks cannot repair it. The permanent-zero and nonseparable branches and the global conjecture remain open.",
       "claim_package": "claims/arbitrary-order",
       "proof_variant": "canonical",
       "subpackage": null,
