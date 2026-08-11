@@ -74,6 +74,7 @@ flowchart TD
 
   U1["r = 1 complete matrix units<br/>PROVED normal form"]
   U1B["Support-minimal GHZ-torus endpoint balance<br/>PROVED"]
+  U1C["Actual squared amplitudes moment-balanced<br/>PROVED gauge over C"]
   U2["At-most-four-port response<br/>k = 1, 2, 3 remain OPEN"]
   U3["Globally rigid colour system<br/>CONDITIONAL"]
   U4["Three-block primitive and dual bridges<br/>PROVED"]
@@ -133,6 +134,7 @@ flowchart TD
 
   U1 -->|reduction| U2
   U1 -->|support-minimal refinement| U1B
+  U1B -->|moment-gauge refinement| U1C
   U2 -->|specialization| U3
   U3 -->|premise| U4
   U4 -. primitive alone insufficient .-> U5
@@ -143,7 +145,7 @@ flowchart TD
   U7A -->|exact response| U7B
   U7B -->|boundary| U7
   U7B -->|deeper exit| D1
-  U1B -. joint necessary constraint .-> U7
+  U1C -. joint phase boundary .-> U7
   U2 -->|boundary| U8
   U2 -->|boundary| D1
   U6 -->|boundary| D1
@@ -190,6 +192,7 @@ flowchart TD
 | `O3` | Conditional aligned `q=0,r=5` detection does not prove witness exclusion or fixed-root injectivity. Every aligned `q=0,r>=6` cell, every `q>=1` cell, and every unfactorized outside graph remains **open** at detector depth. | [Complete aligned five-cell boundary](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md#6-complete-aligned-five-cell-boundary) and [two-open exact boundary](../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md#6-exact-boundary) |
 | `U1` | Complete nonzero one-matrix-unit blocks and forbidden-word cancellation: **proved normal form; exclusion open** | [Maximal-root one branch](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#3-the-maximum-one-monomial-branch) |
 | `U1B` | Every globally support-minimal matrix-unit realization is stable against support-erasing diagonal GHZ one-parameter directions. Equivalently, every physical edge occurs with positive integral multiplicity in an endpoint-label multicover whose three positive colour loads are constant across vertices. The multicover weights are not physical amplitudes. | [GHZ diagonal-torus endpoint balance](../claims/arbitrary-order/MATRIX_UNIT_GHZ_DIAGONAL_TORUS_POLYSTABILITY_ENDPOINT_BALANCE_AND_ACTIVE_TRANSPORT_SHARPNESS_THEOREM.md) |
+| `U1C` | Over `C`, every support-minimal matrix-unit realization has a unique positive diagonal GHZ gauge modulo the edgewise stabilizer in which the actual squared physical amplitudes have three positive vertex-independent colour loads. This magnitude normal form does not synchronize phases. | [GHZ moment-balanced gauge](../claims/arbitrary-order/MATRIX_UNIT_GHZ_MOMENT_BALANCED_GAUGE_AND_UNIT_PHASE_ACTIVE_TRANSPORT_SHARPNESS_THEOREM.md) |
 | `U2` | Globally minimum forbidden word has at most four deviations; exact finite-port response and partial bridges: **proved reduction**. The `k=1`, `k=2`, and `k=3` cells all remain unexcluded; only `k=4` forces rigidity in the base colour. | [Four-switch theorem](../claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md) |
 | `U3` | Globally rigid colour factors into a pure hafnian and binary tensor: **proved conditionally; rigidity not forced** | [Rigid-colour boundary](../claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md) |
 | `U4` | Bi-null cuts, three-block primitive, and dual quadratic bridges: **proved; arbitrary-order exclusion open** | [Rigid primitive theorem](../claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_BINARY_PRIMITIVE_AND_QUADRATIC_BRIDGE_THEOREM.md) |
@@ -247,6 +250,7 @@ flowchart TD
 | `PR` | necessary condition | `PRC` | Every co-two product sensor is rank-deficient under a restriction. For P6 all fifteen four-mode sensors have rank at most fourteen, but simultaneous rank drop plus local rank and pure nonvanishing is insufficient. |
 | `U1` | reduction | `U2` | Matrix-unit cancellation reduces to an at-most-four-port response. |
 | `U1` | exact support-minimal refinement | `U1B` | The strict incidence alternative turns every absent positive endpoint balance into an integral GHZ-preserving degeneration that erases a physical edge; global support minimality therefore forces the balance. |
+| `U1B` | exact complex-analytic refinement | `U1C` | Strict all-edge balance makes the squared-amplitude exponential functional coercive and strictly convex on the positive GHZ torus modulo its edgewise stabilizer; its unique critical orbit has actual vertex-independent colour loads. |
 | `U2` | specialization | `U3` | Only the globally rigid-colour cell enters the deletion-deck factorization. |
 | `U3` | mathematical premise | `U4` | Rigid factorization yields the primitive and dual bridges. |
 | `U4` | refutation of argument | `U5` | The primitive alone cannot close arbitrary order. |
@@ -256,7 +260,7 @@ flowchart TD
 | `U7A` | exact refinement | `U7B` | The complete cross-matching response selects a cofactor-active physical term and bridge-normalizes its parity core, giving the deeper/transport/pure-cancellation trichotomy and finite no-exit holonomy. |
 | `U7B` | boundary obligation | `U7` | Pure-shore cancellation and active holonomy are not excluded; summed response equations cannot be multiplied as binomial transition ratios. |
 | `U7B` | boundary obligation | `D1` | Any selected square or hexagon may enter the existing deeper-blocker alternative. |
-| `U1B` + `U7B` | joint open obligation | `U7`, `D1` | Every support-minimal active candidate must also satisfy strict endpoint balance. An exact balanced eight-vertex nonwitness retains the pure targets and the local algebra of one ternary bridge-pattern transport, then fails the next forced square pattern; it makes no geometric deeper-component claim. Incidence convexity alone does not close either live exit. |
+| `U1C` + `U7B` | joint open obligation | `U7`, `D1` | Every support-minimal active candidate can be put in actual squared-magnitude moment balance. An exact unit-phase eight-vertex nonwitness is already moment-balanced, retains the pure targets and one ternary transport step, and has all three nonrigidity sets proper; it makes no geometric deeper-component claim. Magnitude convexity does not close the phase, holonomy, cancellation, or deeper exits. |
 | `U2` | boundary obligation | `U8` | Full flags have consequences, but proper nonempty flag sets remain. |
 | `U2`, `U6` | boundary obligation | `D1` | Both reductions retain the deeper-blocker alternative. |
 | `U2` | specialization | `A1` | Simultaneous full flags for all colours enter all-bridge, absent deeper blockers. |
@@ -307,15 +311,17 @@ branch. They are not an instruction to begin all of them at once.
    the same multiplicities or exposes a pure-shore hafnian that cancels
    despite containing a nonzero matching term; no-exit iteration yields a
    finite nontrivial active-word cycle. In addition, global support
-   minimality forces a positive integral endpoint-label multicover with
-   vertex-independent colour loads. Intersect that balance with the response
-   and deeper-bridge topology to exclude one exit, or use additional
-   coefficient identities to make transport impossible. The exact balanced
-   eight-vertex nonwitness retains the local algebra of one ternary
-   bridge-pattern transport, so the multicover cannot be treated as a
-   positive amplitude measure. The response
-   is a sum and its bridge weights are not synchronized termwise; the cycle
-   alone is not a sign contradiction.
+   minimality first forces a positive integral endpoint-label multicover and,
+   over `C`, then a positive GHZ gauge with vertex-independent loads of the
+   actual squared amplitudes. Intersect that magnitude normal form with the
+   full response and deeper-bridge topology to exclude one exit, or use
+   additional coefficient identities to make transport impossible. The
+   exact unit-phase eight-vertex nonwitness is already moment-balanced,
+   retains the local algebra of one ternary bridge-pattern transport, and
+   keeps all three nonrigidity sets proper. Thus the remaining obstruction is
+   genuinely phase/global-equation coupling. The response is a sum, its
+   bridge weights are not synchronized termwise, and the cycle alone is not
+   a sign contradiction.
 
 5. **Remaining larger/unfactorized detector.** The complete aligned
    projectively constant `q=0,r=5` cell is now conditionally detected; the
@@ -364,6 +370,7 @@ responses; it does not collapse them into the globally rigid `k=4` cell.
 | Bogdanov-backbone cancellation alone contradicts equality | False: all selected backbone mixed words can cancel while other words fail | [Rigid-colour cancellation boundary](../claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md) |
 | Bridge normalization, parity/Wick, or fully active pure cofactors synchronize each individual term | False; exact six-vertex countermechanisms retain unsynchronized compatible terms inside aggregate-zero fibres. Nonzero aggregate fibres are nevertheless word-shore synchronized by the later factorization theorem. | [Word-synchronization boundary](../claims/arbitrary-order/MATRIX_UNIT_BRIDGE_WORD_SYNCHRONIZATION_AND_WICK_SHARPNESS_BOUNDARY.md) and [active parity-fibre refinement](../claims/arbitrary-order/MATRIX_UNIT_PARITY_FIBRE_DIAGONAL_FACTORIZATION_AND_ACTIVE_WORD_SHORE_SYNCHRONIZATION_THEOREM.md) |
 | Positive endpoint-label balance turns complex matching cancellation into convexity or excludes active transport | False: the balance weights are incidence-dual multiplicities, not physical amplitudes. A complete balanced eight-vertex nonwitness has pure coefficients `(1,1,1)` and two exact active fibres joined by the forced ternary bridge label pattern, while a different mixed coefficient remains nonzero. It reproduces local transport algebra but makes no geometric deeper-component claim. | [GHZ diagonal-torus endpoint-balance sharpness](../claims/arbitrary-order/MATRIX_UNIT_GHZ_DIAGONAL_TORUS_POLYSTABILITY_ENDPOINT_BALANCE_AND_ACTIVE_TRANSPORT_SHARPNESS_THEOREM.md#3-a-balanced-active-transport-table) |
+| Moment-balanced actual squared amplitudes make matching cancellation positive or force every nonrigidity set global | False from those hypotheses alone: an exact Eisenstein unit-phase table has actual load `(3,2,2)` at every vertex, pure coefficients `(1,1,1)`, two active cancellations `1+(-1)=0`, and three proper nonrigidity sets, while an exposed mixed coefficient proves it is not a witness. Full-target propagation remains open. | [GHZ moment-balanced unit-phase sharpness](../claims/arbitrary-order/MATRIX_UNIT_GHZ_MOMENT_BALANCED_GAUGE_AND_UNIT_PHASE_ACTIVE_TRANSPORT_SHARPNESS_THEOREM.md#4-exact-unit-phase-active-transport-table) |
 | One fixed P7 survivor or incidence result globalizes automatically | False as an inference: one still needs physical edge descent, all Wick equations, and universal extraction | [Balanced sensor Wick gate](../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md) |
 | Determinant-cleared Wick identities automatically remove Cramer poles | False: a normalized four-label rational hafnian deck can satisfy the cleared Euler recurrence while one pair has valuation `-1` | [Cramer--Euler pair-pole boundary](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md#5-sharp-boundary-cleared-wick-does-not-remove-poles) |
 | Local concision, complete support, invertible blocks, and normalized pure coefficients force some balanced sensor to be full | False for every `n>=8`: the diagonal-complete family has all these properties and rank at most `binomial(m,2)+1` on every cut; it fails explicit mixed-word zero equations | [Diagonal-complete all-rank-drop boundary](../claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md) |
