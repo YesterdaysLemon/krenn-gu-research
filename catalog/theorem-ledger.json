@@ -715,6 +715,32 @@
       "legacy_paths": []
     },
     {
+      "name": "Projectively Constant Lift Complete Transverse Five-Cell Two-Open Detector Theorem",
+      "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_TRANSVERSE_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
+      "document_sha256_16": "1bdf856a7c22a742",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero common-kernel weak trapping, companion zero-pattern, pigeonhole, and local-concision proof",
+        "conditional on the aligned physical common-two-row factorization and projectively constant shore at root j",
+        "detector conclusion is only for q=0 and r=5 with a_u and b_u independent at every outside mode",
+        "all rank-two companion configurations and every root quotient-support pattern are covered within that locally transverse cell",
+        "only collective nonzero detection is proved, not fixed-root injectivity, pairwise tensor nonvanishing, or witness exclusion",
+        "local a/b dependence, q=0 r>=6, q>=1, unfactorized cells, universal extraction/gluing, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_projectively_constant_lift_complete_transverse_five_cell_detector.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_projectively_constant_lift_complete_transverse_five_cell_detector.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (SymPy primary; standard-library audit)",
+      "external_binaries": [],
+      "note": "The arbitrary-field implication is the written common-kernel weak-trapping lemma, exact good/zero/balanced companion zero-pattern split, five-mode pigeonhole, and local-concision contradiction. The primary checks 1220 companion frames, every contraction slice, 16 weak charts, and an exact support-3/support-4 pairwise kernel; the no-import audit instead uses rational column deletion, a recursive permanent, and independently assembled row-space charts. This closes two-open detection only in the conditional locally transverse aligned projective q=0,r=5 cell and leaves global Krenn-Gu UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Rigid-Colour Cofactor Annihilation and Backbone-Cancellation Boundary",
       "document": "claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md",
       "document_sha256_16": "96aecff02ad3e367",
