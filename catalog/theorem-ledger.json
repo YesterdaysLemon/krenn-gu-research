@@ -1267,6 +1267,33 @@
       "legacy_paths": []
     },
     {
+      "name": "Matrix-Unit GHZ Moment-Balanced Gauge and Unit-Phase Active-Transport Sharpness Theorem",
+      "document": "claims/arbitrary-order/MATRIX_UNIT_GHZ_MOMENT_BALANCED_GAUGE_AND_UNIT_PHASE_ACTIVE_TRANSPORT_SHARPNESS_THEOREM.md",
+      "document_sha256_16": "46b66feec427b0a9",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact real-convex proof over C for a fixed nonzero matrix-unit label support; complex absolute value and positivity are load-bearing",
+        "the imported strict all-edge endpoint balance makes the squared-amplitude exponential functional coercive on the zero-colour-sum GHZ torus modulo its edgewise stabilizer",
+        "support minimality is used only to obtain strict endpoint balance; the positive gauge then works for every choice of nonzero physical amplitudes on that support",
+        "the three zero-colour-sum logarithmic scale conditions preserve the full tensor T_W=Delta_(n,3), including all mixed zero coordinates",
+        "the balanced quantities are the actual transformed squared magnitudes, but the gauge is positive real and imposes no relation on edge phases or matching-term phases",
+        "the exact unit-phase eight-vertex table has pure coefficients one, actual loads (3,2,2), two active cancellations, and three proper nonrigidity sets, but is not a witness or a geometric no-deeper certificate",
+        "proper-set propagation, active holonomy, pure-shore cancellation, the deeper branch, r=1 exclusion, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_matrix_unit_ghz_moment_balanced_gauge_and_unit_phase_active_transport_sharpness.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_matrix_unit_ghz_moment_balanced_gauge_and_unit_phase_active_transport_sharpness.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "The written proof minimizes the actual squared-edge norm along the positive real diagonal GHZ torus. Strict positive endpoint balance makes the exponential functional coercive, while its Hessian is positive definite modulo the edgewise stabilizer. The critical equation is exactly vertex-independent colour load for the transformed physical squared amplitudes, and zero colour sums preserve the complete GHZ target. Independent exact checkers verify the moment incidence ranks, a nontrivial rational gauge, and an Eisenstein unit-phase table which remains locally active and has three proper nonrigidity sets while an exposed mixed word proves it is not a witness. Phase/global-equation coupling remains open and global Krenn-Gu is UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Four Blocker Ideal Obstruction",
       "document": "claims/arbitrary-order/FOUR_BLOCKER_IDEAL_OBSTRUCTION.md",
       "document_sha256_16": "b7fb5e2394539754",

@@ -396,6 +396,21 @@ an exposed nonzero mixed word.  It reproduces the local transport algebra,
 not the full geometric branch.  Thus balance is a new necessary node, not a
 convexity proof or a witness.
 
+The
+[`GHZ moment-balanced gauge theorem`](MATRIX_UNIT_GHZ_MOMENT_BALANCED_GAUGE_AND_UNIT_PHASE_ACTIVE_TRANSPORT_SHARPNESS_THEOREM.md)
+upgrades that auxiliary balance over `C`.  The strict all-edge incidence
+dual makes the squared-edge norm functional coercive and strictly convex on
+the positive diagonal GHZ torus modulo its edgewise stabilizer.  Every
+support-minimal matrix-unit candidate can therefore be gauged so its actual
+loads `sum |lambda_e|^2` are vertex-independent in each colour, with a
+unique edge-exponent vector.  This is a magnitude normal form, not phase
+synchronization.  An exact Eisenstein unit-phase version of the balanced
+eight-vertex table is already at the moment minimum, retains the pure
+targets and one active transport step, and has all three nonrigidity sets
+proper, while an exposed mixed coefficient still equals one.  The full
+mixed equations, phase coupling, active holonomy or pure-shore cancellation,
+and the deeper branch remain open.
+
 At the Stage 27 boundary, the owner-gated H22/H31, Component20/21/23,
 high-coordinate, and mixed-lifecycle conflict surfaces were excluded from
 that batch and remained at root, unmoved and unadjudicated at that stage.
