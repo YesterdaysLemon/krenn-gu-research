@@ -369,6 +369,19 @@ zero.  A support-minimal offdiagonal matrix-unit witness must have at least
 one active synchronized fibre; excluding its remaining nonzero aggregate
 cancellation is open.
 
+The
+[`active-word cross-response and bridge-transport trichotomy`](MATRIX_UNIT_ACTIVE_WORD_FIBRE_CROSS_MATCHING_RESPONSE_AND_BRIDGE_TRANSPORT_TRICHOTOMY.md)
+now expands that residual aggregate over the exact matching of off-shore
+edges.  Some response term has nonzero pure deletion hafnian on every shore.
+Its three cross-type counts have one common parity, so, absent the imported
+deeper-blocker alternative, binary bridge squares and at most one ternary
+bridge hexagon turn that physical term into a diagonal matching for a new
+mixed word with the same colour multiplicities.  The new word is active, or
+one of its pure-shore hafnians cancels internally despite a nonzero matching
+term.  Repeated transport with neither exit produces a finite nontrivial
+active-word holonomy cycle.  Pure-shore cancellation, active holonomy, and
+the deeper branch all remain open; the cycle is not a sign contradiction.
+
 At the Stage 27 boundary, the owner-gated H22/H31, Component20/21/23,
 high-coordinate, and mixed-lifecycle conflict surfaces were excluded from
 that batch and remained at root, unmoved and unadjudicated at that stage.

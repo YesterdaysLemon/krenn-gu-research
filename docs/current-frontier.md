@@ -79,7 +79,8 @@ flowchart TD
   U5["Primitive-alone closure<br/>REFUTED ROUTE"]
   U6["Cross parity, bridges, rigid-head Wick<br/>PROVED reduction"]
   U7A["Nonzero parity fibre has exact word-shore rematching<br/>PROVED"]
-  U7["Exclude active diagonal/offdiagonal aggregate cancellation<br/>OPEN"]
+  U7B["Cofactor-active cross core<br/>DEEPER / TRANSPORT / PURE CANCEL proved"]
+  U7["Exclude pure-shore cancellation or active holonomy<br/>OPEN"]
   U8["Proper flag propagation<br/>OPEN"]
   D1["Deeper blocker branch<br/>OPEN"]
 
@@ -137,7 +138,9 @@ flowchart TD
   U2 -->|premise| U6
   U6 -->|exact erasure| M2
   U6 -->|active-fibre refinement| U7A
-  U7A -->|boundary| U7
+  U7A -->|exact response| U7B
+  U7B -->|boundary| U7
+  U7B -->|deeper exit| D1
   U2 -->|boundary| U8
   U2 -->|boundary| D1
   U6 -->|boundary| D1
@@ -189,7 +192,8 @@ flowchart TD
 | `U5` | “The primitive alone contradicts the tensor”: **refuted route** for every even order at least eight | [Primitive sharpness theorem](../claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_PRIMITIVE_SHARPNESS_AND_DUAL_BRIDGE_COMPLETION_OBSTRUCTION.md) |
 | `U6` | Cross-parity erasure, bridge/deeper entry, rigid-head Wick tower, and pseudoforest normal form: **proved reduction** | [Cross-parity theorem](../claims/arbitrary-order/MATRIX_UNIT_CROSS_PARITY_ERASURE_RIGID_HEAD_WICK_AND_BRIDGE_CORE_REDUCTION_THEOREM.md) |
 | `U7A` | For every mixed word with nonzero aggregate offdiagonal coefficient, the diagonal contribution factors as the product of three nonzero pure-shore hafnians. Hence every active parity-zero fibre already has an exact word-preserving diagonal rematching; a Tutte failure can occur only in an internally zero fibre. | [Active parity-fibre synchronization theorem](../claims/arbitrary-order/MATRIX_UNIT_PARITY_FIBRE_DIAGONAL_FACTORIZATION_AND_ACTIVE_WORD_SHORE_SYNCHRONIZATION_THEOREM.md) |
-| `U7` | In a support-minimal offdiagonal matrix-unit witness, at least one mixed parity-zero word satisfies the exact nonzero identity `Q_chi=-product_c haf(Z^c[V_c])`. Excluding or structurally exploiting this aggregate cancellation remains **open**; no termwise weight-preserving bridge normalization is inferred. | [Active parity-fibre exact boundary](../claims/arbitrary-order/MATRIX_UNIT_PARITY_FIBRE_DIAGONAL_FACTORIZATION_AND_ACTIVE_WORD_SHORE_SYNCHRONIZATION_THEOREM.md#6-exact-proof-topology-boundary) |
+| `U7B` | Expanding an active coordinate by its exact off-shore matching produces a cofactor-active physical cross core. Its cross-type counts have one parity, and the imported square/hexagon alternative gives exactly: deeper-blocker entry, transport to another active word with the same multiplicities, or a pure-shore hafnian that cancels despite a nonzero matching term. No-exit transport has a finite active-word cycle. | [Active-word cross-response and bridge-transport trichotomy](../claims/arbitrary-order/MATRIX_UNIT_ACTIVE_WORD_FIBRE_CROSS_MATCHING_RESPONSE_AND_BRIDGE_TRANSPORT_TRICHOTOMY.md) |
+| `U7` | Exclude the pure-shore cancellation and active-word holonomy exits, or derive a contradiction from additional coefficient identities. This remains **open**: a response summand is not the whole coordinate, bridge weights are not synchronized with cross weights, and the cycle is not an odd-sign contradiction. | [Active-word holonomy boundary](../claims/arbitrary-order/MATRIX_UNIT_ACTIVE_WORD_FIBRE_CROSS_MATCHING_RESPONSE_AND_BRIDGE_TRANSPORT_TRICHOTOMY.md#6-exact-scope-and-next-obstruction) |
 | `U8` | Proper nonempty colour-nonrigidity sets propagate to all vertices: **open** | [Four-switch partial-bridge theorem](../claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md#5-partial-bridge-systems) |
 | `D1` | Deeper double-star/multi-star blocker branch: **open**. Its blocker alternatives are pointwise after shrinking to a dense constructible stratum; no uniform blocker pair is proved on the whole component. | [Double-star lemma](../claims/arbitrary-order/DOUBLE_STAR_ANNIHILATION_LEMMA.md) and [multi-star factorization](../claims/arbitrary-order/MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md) |
 | `A1` | Simultaneous balanced all-bridge system: **proved conditional branch**, not universal extraction | [Three-colour balanced bridge intersection](../claims/arbitrary-order/THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md) |
@@ -244,7 +248,9 @@ flowchart TD
 | `U1` + `U2` | mathematical premises | `U6` | Parity and bridge structure refine the one-root branch. |
 | `U6` | reduction | `M2` | Exact erasure may produce a different realization with at least two roots. |
 | `U6` | exact refinement | `U7A` | Target equality factors every diagonal word fibre over its pure shores and synchronizes every nonzero aggregate offdiagonal coordinate; internally zero fibres may still contain unsynchronized terms. |
-| `U7A` | boundary obligation | `U7` | The exact word-preserving rematching proves support and nonzero shore hafnians, but the nonzero diagonal/offdiagonal scalar sums may still cancel. |
+| `U7A` | exact refinement | `U7B` | The complete cross-matching response selects a cofactor-active physical term and bridge-normalizes its parity core, giving the deeper/transport/pure-cancellation trichotomy and finite no-exit holonomy. |
+| `U7B` | boundary obligation | `U7` | Pure-shore cancellation and active holonomy are not excluded; summed response equations cannot be multiplied as binomial transition ratios. |
+| `U7B` | boundary obligation | `D1` | Any selected square or hexagon may enter the existing deeper-blocker alternative. |
 | `U2` | boundary obligation | `U8` | Full flags have consequences, but proper nonempty flag sets remain. |
 | `U2`, `U6` | boundary obligation | `D1` | Both reductions retain the deeper-blocker alternative. |
 | `U2` | specialization | `A1` | Simultaneous full flags for all colours enter all-bridge, absent deeper blockers. |
@@ -289,13 +295,15 @@ branch. They are not an instruction to begin all of them at once.
    sensor and exactly-three-excess support normal forms are not exhaustive
    arbitrary-r theorems.
 
-4. **Active word-fibre cancellation.** Every nonzero aggregate offdiagonal
-   coordinate now has nonzero pure hafnian on each exact word shore and an
-   exact word-preserving diagonal rematching. Exclude or structurally exploit
-   the residual identity `Q_chi=-product_c haf(Z^c[V_c])` in at least one
-   active parity-zero fibre of a support-minimal witness. Tutte failure can
-   occur only in internally cancelling zero fibres; individual bridge terms
-   still need not preserve the word or match weights termwise.
+4. **Active word holonomy and pure-shore cancellation.** Every active
+   coordinate has a cofactor-active cross core. Absent the deeper branch,
+   bridge normalization either transports activity to a new mixed word with
+   the same multiplicities or exposes a pure-shore hafnian that cancels
+   despite containing a nonzero matching term; no-exit iteration yields a
+   finite nontrivial active-word cycle. Exclude one of these two exits, or use
+   additional coefficient identities to make transport impossible. The
+   response is a sum and its bridge weights are not synchronized termwise,
+   so the cycle alone is not a sign contradiction.
 
 5. **Remaining larger/unfactorized detector.** The complete aligned
    projectively constant `q=0,r=5` cell is now conditionally detected; the
