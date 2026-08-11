@@ -14,4 +14,13 @@ See the [Stage 27 report](../../docs/architecture/layout-migration-stage27-repor
 [dry run](../../docs/architecture/high-order-symbolic-forest-stage27-dry-run.md),
 and [frozen batch](../../catalog/batches/high-order-symbolic-forest-stage27.json).
 
+The arbitrary-order
+[`co-two product-sensor rank-drop theorem`](../arbitrary-order/ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_RANK_DROP_THEOREM.md)
+now proves a necessary P6 boundary: every one of the fifteen four-mode product
+sensors in a hypothetical `P_6 -> Delta_3` restriction has rank at most
+fourteen.  An exact two-block model shows that simultaneous sensor rank drop,
+local rank three, and nonzero pure coefficients are insufficient by
+themselves.  The unrestricted P6 restriction remains **UNKNOWN** and must be
+decided using the mixed equations inside that rank-drop intersection.
+
 The global Krenn-Gu conjecture remains **UNRESOLVED**.
