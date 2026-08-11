@@ -368,6 +368,16 @@ v_pq = beta (z_p^T W_pq z_q).                         (26)
 Equations (25)--(26) are cheap necessary globalization tests.  They are not
 by themselves a replacement for pole removal and the all-order Wick gate.
 
+The
+[`Cramer--Euler pair-pole gate`](BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md)
+sharpens this boundary exactly.  The complete Wick criterion is equivalent
+to one symmetric Euler--hafnian recurrence for each even `Q` with `|Q|>=4`.
+After those recurrences hold, every higher component is the hafnian polynomial
+in the pair components, so divisorial regularity needs to be checked only on
+the `binomial(m,2)` pairs.  The target residuals, empty normalization, pair
+poles, and Euler recurrences remain separate gates; none is proved to fail on
+every target incidence.
+
 ## 6. Exact frontier
 
 The balanced sensor changes the arbitrary-order obligation graph as follows.
@@ -379,7 +389,7 @@ one target-disjoint full sensor exists:                   PROVED for m>=3;
 all-balanced identically-rank-drop locus:                PROPER CLOSED;
 same-graph projective lift plus Wick criterion:           NECESSARY AND SUFFICIENT;
 unique rational lift on a generic full sensor:            PROVED;
-pole/locality/Wick failure for every target incidence:    UNKNOWN;
+normalization/pair-pole/Euler failure for every incidence: UNKNOWN;
 all-balanced rank-drop witness exclusion:                 UNKNOWN;
 exact counterexample passing the gate:                    NOT FOUND;
 global Krenn--Gu conjecture:                               UNRESOLVED.

@@ -440,7 +440,7 @@
     {
       "name": "Balanced Half-Sensor Complete Deck and Wick Globalization Theorem",
       "document": "claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md",
-      "document_sha256_16": "32badecb026e2141",
+      "document_sha256_16": "9f4241cf80316fad",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact matching and projective-bundle proof over characteristic zero",
@@ -465,6 +465,31 @@
         "audit_balanced_half_sensor_complete_deck_and_wick_globalization.py",
         "verify_balanced_half_sensor_complete_deck_and_wick_globalization.py"
       ]
+    },
+    {
+      "name": "Balanced Full-Sensor Cramer--Euler Pair-Pole Gate Theorem",
+      "document": "claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md",
+      "document_sha256_16": "7089761fe5b58f33",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact Cramer, matching-count, induction, and normality proof over characteristic zero",
+        "balanced partition with a generically full complete-deck sensor",
+        "product-projective bundle types and the same fixed physical shore as the balanced half-sensor theorem",
+        "target residuals, empty normalization, pair regularity, and higher Euler--hafnian identities remain separate gates",
+        "no gate is proved to fail on every target incidence and the all-balanced rank-drop branch is untouched"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_full_sensor_cramer_euler_pair_pole_gate.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_full_sensor_cramer_euler_pair_pole_gate.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (SymPy primary; standard-library audit)",
+      "external_binaries": [],
+      "note": "The written arbitrary-order proof identifies the complete Wick condition with the square-free Euler equation and proves that, after it holds, global regularity of the full rational deck is equivalent to prime-divisor regularity of only the pair components. The scripts are bounded exact convention and falsification checks through eight labels, not a proof that any target incidence fails the gate. The all-balanced rank-drop branch and global conjecture remain UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     },
     {
       "name": "Maximal Torus-Root Saturation and Coordinate Absorption Theorem",

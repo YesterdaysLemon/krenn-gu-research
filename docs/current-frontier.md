@@ -45,7 +45,8 @@ flowchart TD
   G0["Hypothetical complex witness<br/>global conjecture UNRESOLVED"]
 
   S1["Balanced complete-deck sensor<br/>PROVED reduction"]
-  S2["Full-sensor rational lift and Wick gate<br/>OPEN"]
+  S2E["Cramer--Euler pair-pole gate<br/>PROVED exact refinement"]
+  S2["Force a refined full-sensor gate failure<br/>OPEN"]
   S3["All balanced partitions rank-drop<br/>OPEN on witness locus"]
 
   M1["Maximum torus-root split<br/>PROVED reduction"]
@@ -86,7 +87,8 @@ flowchart TD
   C2["Automatic characteristic-two lift<br/>REFUTED as a general route"]
 
   G0 -->|universal reduction| S1
-  S1 -->|boundary| S2
+  S1 -->|exact gate refinement| S2E
+  S2E -->|boundary| S2
   S1 -->|boundary| S3
 
   G0 -->|universal reduction| M1
@@ -135,7 +137,6 @@ flowchart TD
   PR -->|local specialization only| P7
   P5 -->|open gluing obligation| GL
   P7 -->|open gluing obligation| GL
-  S2 -->|global section obligation| GL
   G0 -. route boundary .-> C2
 ```
 
@@ -145,7 +146,8 @@ flowchart TD
 |---|---|---|
 | `G0` | Original global conjecture: **UNRESOLVED** | [Problem statement](../README.md#the-conjecture) |
 | `S1` | Balanced complete even deck and full-sensor/rank-drop dichotomy: **proved reduction** | [Balanced half-sensor theorem](../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md) |
-| `S2` | Pole-free normalized projective lift satisfying all Wick equations: **open** | [Balanced half-sensor theorem, exact frontier](../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md#6-exact-frontier) |
+| `S2E` | On a full sensor, target residuals plus empty normalization, prime-divisor regularity of only the pair components, and one symmetric Euler--hafnian recurrence per higher even subset are **necessary and sufficient** for same-graph globalization | [Cramer--Euler pair-pole gate](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md) |
+| `S2` | Prove every full-sensor target incidence fails normalization, a pair-pole test, or an Euler--hafnian recurrence: **open** | [Cramer--Euler pair-pole gate, exact frontier](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md#6-proof-topology-consequence-and-exact-frontier) |
 | `S3` | Exclusion of all-balanced rank drop inside the hypothetical-witness locus: **open**; properness is proved only in ambient block-graph space | [Balanced half-sensor theorem](../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md#3-the-proper-closed-all-balanced-boundary) |
 | `M1` | Maximum torus-root saturation and `r=1` / `r>=2` split: **proved universal reduction** | [Maximal torus-root theorem](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md) |
 | `M2` | One complete fixed-surplus physical hafnian layer; coordinate two-residual absorption: **proved reduction, not exclusion** | [Maximal torus-root theorem](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer) |
@@ -178,7 +180,7 @@ flowchart TD
 | `A2` | Saturated-diagonal maximum degree at most four: **excluded**; `Delta(D)>=5` remains **open** | [Cubic exclusion](../claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_EXCLUSIVITY_AND_CUBIC_DIAGONAL_EXCLUSION.md) and [degree-four exclusion](../claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FOUR_EXCLUSION.md) |
 | `P5` | Local `P5 -> Delta_3` component programme: **partial, generic and boundary-limited** | [P5 package index](../claims/p5/README.md) and [obligation ledger](../claims/p5/frontier/P5_DELTA3_OBLIGATION_LEDGER.md) |
 | `P7` | One committed legal sensor/incidence pullback: criterion **proved**, algebra outcome **open** | [Committed P7 criterion](../claims/p7/COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md) |
-| `GL` | Universal extraction, cross-chart/depth synchronization, and local-to-global gluing: **open** | [Top two-port observability boundary](../claims/arbitrary-order/GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md) |
+| `GL` | Universal extraction, cross-chart/depth synchronization, and local-to-global gluing for the local restriction lanes: **open**. The balanced full-sensor lane instead has the exact same-graph gate `S2E`. | [Top two-port observability boundary](../claims/arbitrary-order/GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md) |
 | `C2` | Automatic reduction of arbitrary characteristic-zero solutions to the pinned `F_2` argument: **refuted as a general lemma** | [Characteristic-two route boundary](../claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md) |
 
 ## Typed-edge table
@@ -186,7 +188,9 @@ flowchart TD
 | Source | Relationship | Target | Exact meaning |
 |---|---|---|---|
 | `G0` | reduction | `S1` | Every hypothetical ternary witness has a balanced-sensor dichotomy. |
-| `S1` | boundary obligation | `S2`, `S3` | Neither full-sensor globalization nor witness-locus rank-drop is excluded. |
+| `S1` | exact refinement | `S2E` | The unique rational full-sensor lift has an exact Cramer target, normalization, pair-pole, and Euler--hafnian gate. |
+| `S2E` | boundary obligation | `S2` | The exact gate is not proved to fail on every target incidence. |
+| `S1` | boundary obligation | `S3` | The all-balanced rank-drop branch is not excluded on the witness locus. |
 | `G0` | reduction | `M1` | Maximum-cardinality torus roots give a pointwise exhaustive split. |
 | `M1` | case coverage | `M2`, `U1` | The two cases are `r>=2` and `r=1`; neither is excluded by the split. |
 | `S1` + `M2` | mathematical premises | `O1` | Rebalancing the fixed layer exposes a truncated contracted sensor. |
@@ -225,7 +229,6 @@ flowchart TD
 | `A1` | residual refinement | `A2` | PRs #72–#73 close degree at most four only. |
 | `PR` | specialization | `P5`, `P7` | These are two separately developed local lanes. The still-open `r=6` / P6 restriction remains in `PR`, and arbitrary `r>=8` is not reduced to any of these ranks. |
 | `P5`, `P7` | open gluing obligation | `GL` | Even complete local exclusions require a theorem connecting every global witness to them. |
-| `S2` | open gluing obligation | `GL` | A rational pointwise lift must extend to one physical block graph and satisfy all Wick relations. |
 | `G0` | refutation of argument | `C2` | Good reduction to the prime field is not automatic, and the source theorem's local correspondence remains pending. |
 
 ## Smallest positive next obligations
@@ -233,18 +236,24 @@ flowchart TD
 These are positive theorems or exact decisions that would advance a surviving
 branch. They are not an instruction to begin all of them at once.
 
-1. **Zero-surplus permanent restrictions.** Decide the live `P_6 -> Delta_3`
+1. **Balanced full-sensor gate failure.** Starting from the exact Cramer
+   target residuals, prove that every target-consistent full sensor violates
+   empty normalization, a prime-divisor pair-pole test, or one higher
+   Euler--hafnian recurrence.  Cleared recurrences alone do not remove poles,
+   and this obligation does not address the all-balanced rank-drop branch.
+
+2. **Zero-surplus permanent restrictions.** Decide the live `P_6 -> Delta_3`
    restriction, and exclude `P_r -> Delta_3` for every `r>=8` at every legal
    support size, or prove an exact reduction to ranks that are already closed.
    The committed P7 sensor and the exactly-three-excess support normal forms
    are not exhaustive arbitrary-r theorems.
 
-2. **Word-shore forcing.** Prove from higher mixed coefficients that each pure
+3. **Word-shore forcing.** Prove from higher mixed coefficients that each pure
    support graph induced on the actual word shore satisfies Tutte's condition,
    or construct another exact word-preserving global rematching. Global pure
    matchings and fully active pure cofactors are insufficient.
 
-3. **Remaining larger/unfactorized detector.** The complete aligned
+4. **Remaining larger/unfactorized detector.** The complete aligned
    projectively constant `q=0,r=5` cell is now conditionally detected; the
    lifted physical-row quota removes the apparent four-/five-`B` zero before
    the remaining `R/B` words are closed.  Treat `q=0,r>=6` or `q>=1`, or prove
@@ -252,22 +261,22 @@ branch. They are not an instruction to begin all of them at once.
    produce an exact nonzero selector or otherwise exclude the unfactorized
    high-surplus cell.  The existing cell detectors do not exclude a witness.
 
-4. **First remaining all-bridge degree.** Exclude or structurally reduce
+5. **First remaining all-bridge degree.** Exclude or structurally reduce
    `Delta(D)=5`. This does not address the separate deeper-blocker branch.
 
-5. **Component 22 isolated complement.** Close the finite-`D23` cell
+6. **Component 22 isolated complement.** Close the finite-`D23` cell
    `H=f2=f8=0`, `rho(rho+1)!=0`, `2h3+s!=0`, and keep it distinct from the
    remaining `f2=0` residual. See the [slope-intersection owner](../claims/p5/h22/unequal-complement-common-kernel-component-d23-f2-f8-h3-slope-intersection/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_F2_F8_H3_SLOPE_INTERSECTION_OBSTRUCTION.md)
    and [two-minor partial owner](../claims/p5/h22/unequal-complement-common-kernel-component-d23-h1-nonzero-two-minor-factor-cover-partial/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_TWO_MINOR_FACTOR_COVER_PARTIAL_OBSTRUCTION.md).
 
-6. **P4-B3 semantic/composition audit.** Audit the nonzero-pure-factor, symmetry,
+7. **P4-B3 semantic/composition audit.** Audit the nonzero-pure-factor, symmetry,
    inclusion, and lower-pair quantifiers in the
    [P4 all-pair-rank reduction](../claims/p4/classifications/P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md).
    The owner asserts a 25-component exhaustiveness theorem; the independent
    acceptance of those load-bearing quantifiers remains open. Script replay is
    not a substitute for that review.
 
-7. **Committed P7 calculation.** Materialize the residual equations, pull back
+8. **Committed P7 calculation.** Materialize the residual equations, pull back
    the factor equations, justify properness/finiteness where used, and decide
    `A_good`; proceed to `A_gen^star` only if the criterion requires it. A result
    on this fixed sensor would still need `GL`.
@@ -291,6 +300,7 @@ responses; it does not collapse them into the globally rigid `k=4` cell.
 | Bogdanov-backbone cancellation alone contradicts equality | False: all selected backbone mixed words can cancel while other words fail | [Rigid-colour cancellation boundary](../claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md) |
 | Bridge normalization, parity/Wick, or fully active pure cofactors synchronize the exact word | False; exact six-vertex countermechanisms isolate the word-shore condition | [Word-synchronization boundary](../claims/arbitrary-order/MATRIX_UNIT_BRIDGE_WORD_SYNCHRONIZATION_AND_WICK_SHARPNESS_BOUNDARY.md) |
 | One fixed P7 survivor or incidence result globalizes automatically | False as an inference: one still needs physical edge descent, all Wick equations, and universal extraction | [Balanced sensor Wick gate](../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md) |
+| Determinant-cleared Wick identities automatically remove Cramer poles | False: a normalized four-label rational hafnian deck can satisfy the cleared Euler recurrence while one pair has valuation `-1` | [Cramer--Euler pair-pole boundary](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md#5-sharp-boundary-cleared-wick-does-not-remove-poles) |
 | Only equal regular ratios survive the four-regular five-cell common kernel | False: a `2+2` reciprocal primitive-cube-root divisor also gives a one-dimensional kernel; the corrected dimension bound still closes detection | [Complete aligned five-cell detector](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md#lemma-2-four-defect-full-common-kernels) |
 
 These are refutations of arguments, not counterexamples to the Krenn–Gu
