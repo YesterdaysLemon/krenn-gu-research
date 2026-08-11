@@ -121,8 +121,19 @@ incidence force any invisible replacement pair into a common outside
 `a_u=b_u=0`; the lifted tricolour cover, adjacent recolouring, and local
 concision exclude that final boundary.  Thus the whole aligned projective
 `q=0,r=4` cell has at least one two-open detector.  This is still detection,
-not a witness exclusion.  The cells `q=0,r>=5`, every `q>=1` cell, and the
-unfactorized branch remain open.
+not a witness exclusion.
+
+The first five-cell transport
+[`collective companion and activity detector`](PROJECTIVELY_CONSTANT_LIFT_FIVE_CELL_COLLECTIVE_COMPANION_AND_ACTIVITY_DETECTOR_THEOREM.md)
+packages the six pair-replacement cofactors into an exact symmetric
+zero-diagonal system `XL=0`.  Its coefficient map is injective precisely
+away from a zero companion and a balanced split into two proportional
+companion pairs.  On that good companion stratum, three active four-mode
+deletions at every outside mode force at least one two-open detector; local
+independence of every `a_u,b_u` pair is a sufficient activity condition.
+The two exceptional companion branches and activity failure remain open, so
+this does not close the full `q=0,r=5` cell.  Every `q=0,r>=6` cell, every
+`q>=1` cell, and the unfactorized branch also remain open.
 
 The
 [`rigid-colour boundary theorem`](RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md)

@@ -663,6 +663,32 @@
       "legacy_paths": []
     },
     {
+      "name": "Projectively Constant Lift Five-Cell Collective Companion and Activity Detector Theorem",
+      "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_FIVE_CELL_COLLECTIVE_COMPANION_AND_ACTIVITY_DETECTOR_THEOREM.md",
+      "document_sha256_16": "45b0d546c6575382",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero symmetric-form classification, pair-collision quotient, rank-one tensor, and local-concision proof",
+        "conditional on the aligned physical common-two-row factorization and projectively constant shore at root j",
+        "detector conclusion is only for q=0 and r=5 when every companion is nonzero and the four companions do not split into two proportional pairs",
+        "every outside mode must have at least three nonzero four-mode deletion tensors; local a/b transversality is a proved sufficient condition",
+        "only collective nonzero detection at some root is proved, not fixed-root injectivity or witness exclusion",
+        "zero-companion, balanced-2+2, activity-failure, q=0 r>=6, q>=1, unfactorized, gluing, and global obligations remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_projectively_constant_lift_five_cell_collective_detector.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_projectively_constant_lift_five_cell_collective_detector.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (SymPy primary; standard-library audit)",
+      "external_binaries": [],
+      "note": "The arbitrary-field implication is the written symmetric zero-diagonal XL classification, tensor-valued injectivity, pair quotient, three-activity trapping, and local-concision contradiction. The primary checks 1220 exact companion frames and labelled permanent slices; the no-import audit instead uses rational elimination on 2310 frames and a recursive permanent. This is a conditional q=0,r=5 stratum detector, not full-cell closure, and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Rigid-Colour Cofactor Annihilation and Backbone-Cancellation Boundary",
       "document": "claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md",
       "document_sha256_16": "96aecff02ad3e367",
