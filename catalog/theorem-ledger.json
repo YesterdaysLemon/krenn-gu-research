@@ -794,6 +794,33 @@
       "legacy_paths": []
     },
     {
+      "name": "Projectively Constant Lift Row-Incidence Same-Type Two-Defect Five-Cell Detector Theorem",
+      "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_ROW_INCIDENCE_SAME_TYPE_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md",
+      "document_sha256_16": "3da36c22303b04f3",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero five-mode row-pair incidence, triple kernel Hall, inactive-set, and pure-support matching proof",
+        "conditional on the aligned physical common-two-row factorization and projectively constant shore at root j",
+        "new detector conclusion is only for q=0 and r=5 with exactly two degenerate defects of same type AA or BB",
+        "all rank-two companion configurations and every inactive-root pattern are covered within those two defect strata",
+        "combined with preceding detector theorems, every q=0 r=5 cell with at most two local defects is detected",
+        "only collective nonzero detection is proved, not fixed-root injectivity or witness exclusion",
+        "three or more defects, q=0 r>=6, q>=1, unfactorized cells, gluing, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_projectively_constant_lift_same_type_two_defect_five_cell_detector.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_projectively_constant_lift_same_type_two_defect_five_cell_detector.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "The arbitrary-field implication is the written same-type inactive-set size argument, pair/triple incidence-capacity contradiction, and two no-perfect-assignment proofs for pure diagonal coefficients. The primary checks six equal and twenty-four diamond inactive-set patterns, 972 AA support charts, 972 BB charts, 54 BB triple-quota ledgers, and 36 exact missing-colour ledgers; the no-import audit independently uses bitmask supports and recursive matching over the raw over-approximated families. This closes AA and BB only at exactly two defects; every three-or-more-defect cell and global Krenn-Gu remain open.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Rigid-Colour Cofactor Annihilation and Backbone-Cancellation Boundary",
       "document": "claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md",
       "document_sha256_16": "96aecff02ad3e367",

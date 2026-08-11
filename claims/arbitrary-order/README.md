@@ -187,6 +187,18 @@ an exclusion: `AA`, `BB`, every cell with at least three defects, larger or
 positive-surplus cells, the unfactorized branch, and global gluing remain
 open.
 
+The same-type endpoint
+[`row-incidence two-defect detector`](PROJECTIVELY_CONSTANT_LIFT_ROW_INCIDENCE_SAME_TYPE_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md)
+imports the exact five-mode row-pair incidence theorem and the three-row
+kernel Hall quota.  Local rank makes both inactive sets have size two.  The
+equal-set `AA` and `BB` patterns violate pair or triple incidence capacity;
+the remaining diamonds force a pure diagonal coefficient to assign the same
+source row twice.  Thus `AA` and `BB` are also detected.  Combined with the
+preceding results, every aligned projective `q=0,r=5` cell with at most two
+local defects has a nonzero detector.  Cells with at least three defects,
+larger or positive-surplus cells, the unfactorized branch, witness exclusion,
+and global gluing remain open.
+
 The
 [`rigid-colour boundary theorem`](RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md)
 sharpens that one-root branch.  It proves universal near-monochromatic deck,
