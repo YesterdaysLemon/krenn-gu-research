@@ -85,8 +85,11 @@ balanced root shore has a common nondegenerate diagonal quadric `Q`, every
 nonconstant mixed-word all-cross permanent must lie in `(Q)`.  A
 column-separable common-conformal cross shore with nonzero scalar permanent
 instead gives a product of nonzero linear forms, so arbitrary internal
-nonroot blocks cannot complete it to GHZ.  Zero cross permanent and
-nonseparable `Q`-divisible permanents are the exact surviving boundaries.
+nonroot blocks cannot complete it to GHZ.  If the scalar permanent is zero,
+a constant-colour contraction instead leaves a nonzero pure-root product
+modulo `Q`, so the entire physical common-conformal shore is excluded.
+One-word zero-permanent factorizations and general nonseparable simultaneous
+`Q`-residue systems remain open.
 
 The
 [`maximal torus-root theorem`](MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md)

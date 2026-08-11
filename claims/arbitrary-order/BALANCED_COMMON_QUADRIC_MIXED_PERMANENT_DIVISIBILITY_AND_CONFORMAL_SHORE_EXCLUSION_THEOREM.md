@@ -2,14 +2,15 @@
 
 ## Status
 
-**Exact arbitrary-order characteristic-zero mixed-word obstruction for one
+**Exact arbitrary-order characteristic-zero mixed/pure obstruction for one
 balanced shore.**  Fix a balanced partition `Omega=R disjoint-union N` of a
 ternary graph, with `|R|=|N|=m>=2`, and identify the root spaces with one
 three-dimensional space.  Suppose the diagonal evaluation of every
 root--root block is a scalar multiple of one nondegenerate quadratic `Q`.
 Then, for every nonconstant coordinate word on `N`, the permanent of the
 corresponding root-to-nonroot linear-form matrix must be divisible by `Q` in
-any hypothetical GHZ witness.
+any hypothetical GHZ witness.  For a constant colour word, the same permanent
+must instead equal the nonzero pure-root product modulo `Q`.
 
 This gives an immediate exact exclusion.  If, for one nonconstant word, the
 cross matrix has column-separable form
@@ -29,17 +30,18 @@ which cannot be divisible by the irreducible quadratic `Q`.  Hence no graph
 with that balanced shore can realize ternary GHZ, regardless of the blocks
 internal to `N`.
 
-In particular, this excludes a common-conformal shore whose root--root and
-root--nonroot blocks are scalar multiples of one nondegenerate symmetric
-form whenever the cross-scalar matrix has nonzero permanent.  It strictly
-extends the common-quadratic orbit exclusion: internal nonroot blocks are now
-arbitrary, root and cross edge scalars may vary, and a single balanced cut
-suffices.
+In particular, this excludes **every** common-conformal shore whose
+root--root and root--nonroot blocks are scalar multiples of one nondegenerate
+symmetric form.  If the cross-scalar permanent is nonzero, a nonconstant word
+contradicts mixed vanishing; if it is zero, a constant word contradicts the
+pure GHZ coefficient.  The conclusion strictly extends the common-quadratic
+orbit exclusion: internal nonroot blocks are arbitrary, root and cross edge
+scalars may vary, and a single balanced cut suffices.
 
-The theorem does not prove that every hypothetical witness has a common
-root quadric, force column separation, or force the cross permanent to be
-nonzero.  Those are the exact surviving boundaries.  The global Krenn--Gu
-conjecture remains **UNRESOLVED**.
+The theorem does not prove that every hypothetical witness has a common root
+quadric or force general cross permanents to be column-separable.  Those are
+the exact surviving boundaries.  The global Krenn--Gu conjecture remains
+**UNRESOLVED**.
 
 ## 1. Balanced-shore notation
 
@@ -74,8 +76,8 @@ for all distinct roots `i,j`.  The scalars `rho_ij` may vanish.  Condition
 identifications.  It does not assert that the full bilinear root--root blocks
 are equal, symmetric, or nondegenerate.
 
-Fix the original target coordinate bases `e_(u,0),e_(u,1),e_(u,2)` on the
-nonroot spaces.  For a coordinate word
+Fix the original target coordinate bases on every local space; write their
+nonroot vectors as `e_(u,0),e_(u,1),e_(u,2)`.  For a coordinate word
 
 ```text
 alpha:N -> {0,1,2},                                 (6)
@@ -146,6 +148,28 @@ zero polynomial.  Congruence (10) gives (11).
 The conclusion holds for **every** nonconstant `alpha`, not merely for a
 sampled word or a dense open set.
 
+### Lemma 2 (pure-permanent residue)
+
+Let `alpha(u)=c` be constant.  Define the nonzero root linear forms
+
+```text
+R_(i,c)(x)=e_(i,c)^*(A_i^(-1)x).                    (11a)
+```
+
+If `T_W` is ternary GHZ, then
+
+```text
+perm H_c(x)
+ = product_(i in R) R_(i,c)(x)             mod (Q). (11b)
+```
+
+### Proof
+
+Contracting every nonroot against `e_(u,c)` leaves the pure root tensor
+`tensor_(i in R)e_(i,c)^*`.  Its repeated transformed-root polynomial is the
+product on the right of (11b).  Apply congruence (10).  Each `R_(i,c)` is
+nonzero because `A_i` is an isomorphism.
+
 ## 3. Column separation contradicts the mixed equations
 
 Assume for one nonconstant word `alpha` that there are scalars `lambda_(i,u)`
@@ -162,7 +186,7 @@ perm H_alpha
  = perm(lambda) product_(u in N) L_u.                (13)
 ```
 
-### Theorem 2 (column-separable shore exclusion)
+### Theorem 3 (one-word column-separable shore exclusion)
 
 Under (3)--(7) and (12), if
 
@@ -211,11 +235,26 @@ L_u(x)=q(x,A_u e_(u,alpha(u))).                       (16)
 Nondegeneracy of `q` and invertibility of `A_u` make every `L_u` nonzero.
 Equations (15)--(16) give (5) and (12).
 
-### Corollary 3 (common-conformal shore obstruction)
+### Corollary 4 (complete common-conformal shore obstruction)
 
-If the cross-scalar matrix `lambda` in (15) has nonzero permanent, then the
-graph cannot realize ternary GHZ for `m>=2`, whatever the internal nonroot
-blocks are.
+For every cross-scalar matrix `lambda` in (15), the graph cannot realize
+ternary GHZ for `m>=2`, whatever the internal nonroot blocks are.
+
+### Proof
+
+Put `p=perm(lambda)`.
+
+- If `p!=0`, choose any nonconstant coordinate word, which exists because
+  `m>=2`.  Equations (13)--(16) satisfy Theorem 3 and contradict the mixed
+  target zero.
+- If `p=0`, choose any constant colour `c`.  Column factorization makes
+  `perm H_c=0`.  Lemma 2 would then make the nonzero product
+  `product_i R_(i,c)` divisible by the irreducible quadratic `Q`, impossible
+  in the polynomial UFD.
+
+The two target sectors therefore close complementary values of the same
+scalar permanent.  Entrywise nonvanishing and a separate argument forcing
+`p!=0` are unnecessary.
 
 In the vertex-gauge common-quadratic orbit, `rho_ij=lambda_(i,u)=1`, so
 
@@ -223,7 +262,7 @@ In the vertex-gauge common-quadratic orbit, `rho_ij=lambda_(i,u)=1`, so
 perm(lambda)=m! !=0                                  (17)
 ```
 
-in characteristic zero.  Thus Corollary 3 contains that orbit as a strict
+in characteristic zero.  Thus Corollary 4 contains that orbit as a strict
 special case while dropping all synchronization assumptions inside `N`.
 The earlier flattening-rank proof remains an independent global obstruction
 for the fully synchronized graph.
@@ -232,20 +271,19 @@ If `q` in (15) is degenerate, every edge incident to a root has its root
 covectors in a space of dimension `rank(q)<3`; the one-vertex flattening at
 that root then has rank below the GHZ rank three.  Hence degenerate
 common-conformal shores are also excluded, by local rank rather than Theorem
-2.  The irreducible-quadric argument is deliberately stated only for the
+3.  The irreducible-quadric argument is deliberately stated only for the
 nondegenerate case.
 
 ## 5. Sharp boundary left by the proof
 
-The nonzero-permanent hypothesis is not silently derived from entrywise
-nonvanishing.  Over `C`, a matrix can have every entry nonzero and permanent
-zero.  The theorem therefore leaves the exact conformal boundary
+For Theorem 3, which assumes column separation for only one nonconstant word,
+`perm(lambda)=0` makes that particular detector vanish and remains a genuine
+boundary.  Corollary 4 closes it only because one physical common-conformal
+shore supplies the **same** scalar matrix `lambda` for the constant words;
+their pure residues then give the complementary contradiction.  No claim is
+made that arbitrary wordwise column factorizations share one scalar matrix.
 
-```text
-perm(lambda)=0.                                      (18)
-```
-
-More generally, without column separation Theorem 1 leaves the exact
+Without column separation Theorem 1 leaves the exact
 divisibility branch
 
 ```text
@@ -261,11 +299,12 @@ The proof-topology update is therefore:
 
 ```text
 common root quadric => mixed cross-permanent divisibility: PROVED;
+constant word => pure-root product residue modulo Q:       PROVED;
 one column-separable mixed word, nonzero permanent:        EXCLUDED;
-common-conformal shore, nonzero cross permanent:           EXCLUDED;
+common-conformal shore, every cross permanent value:       EXCLUDED;
 arbitrary internal nonroot completion can repair it:       FALSE;
-zero cross-permanent conformal boundary:                    OPEN;
-nonseparable cross permanents divisible by Q:               OPEN;
+one-word zero-permanent column separation:                  OPEN;
+nonseparable cross permanents satisfying all residues:      OPEN;
 universal extraction of a common root quadric:              NOT CLAIMED;
 global Krenn--Gu conjecture:                                 UNRESOLVED.     (20)
 ```
@@ -284,10 +323,11 @@ uv run --with ruff ruff check claims/arbitrary-order/verify_balanced_common_quad
 The primary verifier constructs the full repeated-root contraction with
 arbitrary fixed internal nonroot weights, checks (10) by exact polynomial
 division through eight vertices, verifies permanent column factorization,
-and exhibits nonzero remainders modulo `Q`.  The independent no-import audit
+checks the complementary zero-permanent pure residue, and exhibits nonzero
+remainders modulo `Q`.  The independent no-import audit
 uses a separate sparse-polynomial ring, direct matching recursion, exact
 quotient reduction, and different scalar/form instances.  These bounded
 calculations audit the matching sectors, signs, complements, and constants.
 The arbitrary-order proof is the balanced matching partition, the common
-`Q` factor in every non-all-cross sector, permanent factorization, and
-irreducibility in the polynomial UFD.
+`Q` factor in every non-all-cross sector, the mixed/pure target dichotomy,
+permanent factorization, and irreducibility in the polynomial UFD.

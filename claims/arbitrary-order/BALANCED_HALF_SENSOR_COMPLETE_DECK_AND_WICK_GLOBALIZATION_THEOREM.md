@@ -241,9 +241,10 @@ The further
 uses the all-cross `C_empty=1` sector directly.  On one balanced shore whose
 root-root diagonal quadratics share a nondegenerate `Q`, every nonconstant
 mixed-word cross permanent must be divisible by `Q`; a column-separable
-common-conformal shore with nonzero scalar permanent is therefore impossible,
-even with arbitrary internal nonroot blocks.  The zero-permanent and
-nonseparable branches remain open.
+common-conformal shore is therefore impossible even with arbitrary internal
+nonroot blocks.  A nonzero scalar permanent fails a mixed word, while zero
+permanent fails the constant-colour pure residue.  General nonseparable
+simultaneous residue branches remain open.
 
 ## 4. Projective complete-deck lift
 

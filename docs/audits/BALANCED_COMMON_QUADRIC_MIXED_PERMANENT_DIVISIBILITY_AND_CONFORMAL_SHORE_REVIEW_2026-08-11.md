@@ -1,5 +1,17 @@
 # Hostile review of the common-quadric mixed-permanent obstruction
 
+## Superseding note
+
+The later pure-residue review
+[`BALANCED_COMMON_QUADRIC_ZERO_PERMANENT_PURE_RESIDUE_CLOSURE_REVIEW_2026-08-11.md`](BALANCED_COMMON_QUADRIC_ZERO_PERMANENT_PURE_RESIDUE_CLOSURE_REVIEW_2026-08-11.md)
+closes the `perm(lambda)=0` boundary for a **physical common-conformal shore**:
+constant-colour contraction leaves a nonzero product of root coordinate
+forms modulo `Q`.  The original review below remains the exact review of the
+mixed-word/nonzero-permanent checkpoint.  Its statements that zero permanent
+was open are historical for that checkpoint and are superseded only in the
+common-conformal specialization; one-word column separation and general
+nonseparable `Q`-divisible permanents retain their stated boundaries.
+
 ## Verdict and provenance
 
 **PASS, with the zero-permanent and nonseparable branches retained.**  The

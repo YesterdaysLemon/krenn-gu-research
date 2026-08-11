@@ -252,14 +252,51 @@ def audit_degenerate_spans_and_target_words() -> dict[str, object]:
     return {"span_ranks": span_ranks, "mixed_zero_words": len(mixed_words)}
 
 
+def audit_zero_permanent_pure_branch() -> dict[int, int]:
+    """Use separate zero-permanent instances to audit the pure contradiction."""
+    matrices = {
+        2: [[1, 2], [1, -2]],
+        4: [
+            [1, 2, 0, 0],
+            [1, -2, 0, 0],
+            [0, 0, 1, 0],
+            [0, 0, 0, 1],
+        ],
+    }
+    ledger: dict[int, int] = {}
+    for m, scalars in matrices.items():
+        assert scalar_permanent(scalars) == 0
+        nonroot_forms = [
+            linear(3 + column, 2 * column + 1, 4 + column)
+            for column in range(m)
+        ]
+        cross = [
+            [scale(nonroot_forms[column], scalars[row][column]) for column in range(m)]
+            for row in range(m)
+        ]
+        assert sparse_permanent(cross) == {}
+        assert reduce_mod_q(full_contraction(m, cross)) == {}
+
+        root_forms = [
+            linear(2 * row + 1, row + 3, 5 + row)
+            for row in range(m)
+        ]
+        pure_remainder = reduce_mod_q(product_of(root_forms))
+        assert pure_remainder != {}
+        ledger[m] = len(pure_remainder)
+    return ledger
+
+
 def main() -> None:
     residues = audit_residue_identity()
     factors = audit_column_factorization()
     boundaries = audit_degenerate_spans_and_target_words()
+    zero_permanent = audit_zero_permanent_pure_branch()
     print("balanced common-quadric independent audit: PASS")
     print(f"  (matchings, sparse terms) residue ledger: {residues}")
     print(f"  (scalar permanent, remainder terms): {factors}")
     print(f"  local/target boundary ledger: {boundaries}")
+    print(f"  zero-permanent pure remainder terms: {zero_permanent}")
 
 
 if __name__ == "__main__":
