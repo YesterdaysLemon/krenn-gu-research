@@ -131,9 +131,22 @@ away from a zero companion and a balanced split into two proportional
 companion pairs.  On that good companion stratum, three active four-mode
 deletions at every outside mode force at least one two-open detector; local
 independence of every `a_u,b_u` pair is a sufficient activity condition.
-The two exceptional companion branches and activity failure remain open, so
-this does not close the full `q=0,r=5` cell.  Every `q=0,r>=6` cell, every
-`q>=1` cell, and the unfactorized branch also remain open.
+The two exceptional companion branches and activity failure remain open in
+that theorem.
+
+The complementary
+[`five-cell pair-collision detector`](PROJECTIVELY_CONSTANT_LIFT_FIVE_CELL_PAIR_COLLISION_AND_ALL_COMPANION_DETECTOR_THEOREM.md)
+contracts a pair tensor at the common local `a/b` kernel and imports the
+four-mode collision inverse.  A persistent root that escapes the local
+`a/b` plane at two modes makes its five-mode pair-collision map injective.
+Collective invisibility for any rank-two companion frame must meanwhile
+force one pair tensor to vanish.  Hence local `a/b` transversality and at
+most one root without that double escape give a detector for every companion
+configuration.  Combining the two results, the remaining locally transverse
+exception requires a zero or balanced-`2+2` companion frame and at least two
+root rows whose quotient support is at most one.  This still does not close
+the full `q=0,r=5` cell.  Every `q=0,r>=6` cell, every `q>=1` cell, and the
+unfactorized branch also remain open.
 
 The
 [`rigid-colour boundary theorem`](RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md)

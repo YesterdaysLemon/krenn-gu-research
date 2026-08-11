@@ -58,7 +58,8 @@ flowchart TD
   O2T["q=0, r=4 locally transverse cell<br/>AT LEAST ONE DETECTOR conditionally"]
   O2F["Complete aligned q=0, r=4 cell<br/>AT LEAST ONE DETECTOR conditionally"]
   O2V["q=0, r=5 good-companion activity stratum<br/>AT LEAST ONE DETECTOR conditionally"]
-  O3["Residual q=0 r=5; q=0 r>=6; q>=1;<br/>or unfactorized detector OPEN"]
+  O2A["q=0, r=5 all-companion root-transverse stratum<br/>AT LEAST ONE DETECTOR conditionally"]
+  O3["Residual q=0 r=5 intersection; q=0 r>=6;<br/>q>=1 or unfactorized detector OPEN"]
 
   U1["r = 1 complete matrix units<br/>PROVED normal form"]
   U2["At-most-four-port response<br/>k = 1, 2, 3 remain OPEN"]
@@ -94,9 +95,11 @@ flowchart TD
   O2P -->|transverse next cell| O2T
   O2P -->|complete four-cell closure| O2F
   O2P -->|five-cell collective transport| O2V
+  O2P -->|five-cell pair collision| O2A
   O2T -. strict special case .-> O2F
   O2F -->|larger-cell boundary| O3
   O2V -->|exceptional/activity boundary| O3
+  O2A -->|weak-root/local-dependence boundary| O3
   O2 -->|boundary| O3
   M2 -->|zero-surplus specialization| PR
 
@@ -140,7 +143,8 @@ flowchart TD
 | `O2T` | In the aligned projective `q=0,r=4` cell, local independence of `a_u,b_u` at all four outside modes makes `h -> P_4(h,a,a,b)` injective; a companion-basis deletion then gives **at least one nonzero two-open detector**. This remains a verified strict special case of `O2F`. | [Transverse four-cell detector](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_TRANSVERSE_FOUR_CELL_TWO_OPEN_DETECTOR_THEOREM.md) |
 | `O2F` | In the full aligned projective `q=0,r=4` cell, collision quotients plus Hall incidence reduce invisibility to a common outside `a/b` zero; recolouring and local concision exclude it. Hence **at least one nonzero two-open detector** always exists, and all three do when the companions are pairwise independent. This is not a witness exclusion. | [Complete four-cell detector](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_FOUR_CELL_TWO_OPEN_DETECTOR_THEOREM.md) |
 | `O2V` | In aligned projective `q=0,r=5`, the four companion equations form an exact symmetric `XL=0` system. Away from a zero companion or balanced `2+2` projective split, modewise three-activity forces **at least one nonzero two-open detector**. Local `a/b` transversality implies activity. This is conditional detection, not full-cell closure or witness exclusion. | [Five-cell collective detector](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_FIVE_CELL_COLLECTIVE_COMPANION_AND_ACTIVITY_DETECTOR_THEOREM.md) |
-| `O3` | The zero-companion, balanced-`2+2`, and activity-failure branches in `q=0,r=5`, every `q=0,r>=6` cell, every `q>=1` cell, and every unfactorized outside graph: **open** | [Five-cell exact residual](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_FIVE_CELL_COLLECTIVE_COMPANION_AND_ACTIVITY_DETECTOR_THEOREM.md#6-exact-residual-boundary) and [two-open exact boundary](../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md#6-exact-boundary) |
+| `O2A` | In locally transverse aligned projective `q=0,r=5`, common-kernel contraction makes a doubly transverse root's five-mode pair-collision map injective. If at most one root is not doubly transverse, all six pair tensors are nonzero, and the rank-two companion zero-edge lemma gives **at least one detector for every companion frame**. This is not witness exclusion. | [Five-cell all-companion pair detector](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_FIVE_CELL_PAIR_COLLISION_AND_ALL_COMPANION_DETECTOR_THEOREM.md) |
+| `O3` | The remaining `q=0,r=5` intersection includes exceptional companions with at least two quotient-support-at-most-one roots, plus the unresolved local-dependence/activity boundary. Every `q=0,r>=6` cell, every `q>=1` cell, and every unfactorized outside graph is also **open**. | [Combined five-cell boundary](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_FIVE_CELL_PAIR_COLLISION_AND_ALL_COMPANION_DETECTOR_THEOREM.md#5-combined-exact-five-cell-boundary) and [two-open exact boundary](../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md#6-exact-boundary) |
 | `U1` | Complete nonzero one-matrix-unit blocks and forbidden-word cancellation: **proved normal form; exclusion open** | [Maximal-root one branch](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#3-the-maximum-one-monomial-branch) |
 | `U2` | Globally minimum forbidden word has at most four deviations; exact finite-port response and partial bridges: **proved reduction**. The `k=1`, `k=2`, and `k=3` cells all remain unexcluded; only `k=4` forces rigidity in the base colour. | [Four-switch theorem](../claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md) |
 | `U3` | Globally rigid colour factors into a pure hafnian and binary tensor: **proved conditionally; rigidity not forced** | [Rigid-colour boundary](../claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md) |
@@ -173,9 +177,11 @@ flowchart TD
 | `O2P` | conditional cell closure | `O2T` | In `q=0,r=4`, local `a/b` transversality plus a surviving companion basis forces at least one nonzero row-replacement detector; transversality is not derived and no witness is excluded. |
 | `O2P` | conditional cell closure | `O2F` | Collision quotients, Hall incidence, recolouring, and local concision close every local-dependence boundary in aligned projective `q=0,r=4`; no witness is excluded. |
 | `O2P` | conditional stratum detector | `O2V` | In `q=0,r=5`, the collective companion matrix and deletion activity force at least one nonzero detector away from the two classified companion exceptions; neither activity nor good companions is universal. |
+| `O2P` | conditional stratum detector | `O2A` | In locally transverse `q=0,r=5`, pair-collision injectivity and the companion zero-edge lemma cover every companion frame when at most one root has quotient support at most one. |
 | `O2T` | strict special case | `O2F` | The earlier local-transversality proof remains valid but its extra hypothesis is no longer needed for four-cell detection. |
 | `O2F` | boundary obligation | `O3` | Four-cell closure does not automatically transport to larger aligned cells, positive surplus, or the unfactorized branch. |
 | `O2V` | boundary obligation | `O3` | Zero companions, balanced `2+2` companions, or fewer than three active deletions at some mode survive in the five-cell system, as do every larger and positive-surplus cell. |
+| `O2A` | boundary obligation | `O3` | The all-companion argument leaves local `a/b` dependence and, on the locally transverse exceptional-companion locus, at least two roots with quotient support at most one. |
 | `O2` | boundary obligation | `O3` | The tight star refutes an automatic detector; higher/unfactorized data are needed. |
 | `M2` | specialization | `PR` | Zero surplus yields a tight weighted permanent restriction at arbitrary `r>=5`; it is not reduced to P7. |
 | `U1` | reduction | `U2` | Matrix-unit cancellation reduces to an at-most-four-port response. |
@@ -211,14 +217,14 @@ branch. They are not an instruction to begin all of them at once.
    matchings and fully active pure cofactors are insufficient.
 
 3. **Remaining larger/unfactorized detector.** On the aligned projectively
-   constant branch, transport the single-open diagonal quotient frame through
-   the zero-companion, balanced-`2+2`, or deletion-activity-failure branches
-   of `q=0,r=5`; then treat `q=0,r>=6` or `q>=1`, or prove a legal selector
-   separating the replacement tensors. Outside that branch, produce an exact
-   nonzero selector or otherwise exclude the unfactorized high-surplus cell.
-   The `q=0,r=3` and full `q=0,r=4` cells are detected, and the new five-cell
-   theorem detects the good-companion, three-active stratum, but none of
-   these results excludes a witness.
+   constant branch, exclude the locally transverse `q=0,r=5` intersection
+   where the companion frame is zero/balanced and at least two persistent
+   roots escape the local `a/b` planes at no more than one mode.  Separately
+   close the local-dependence/deletion-activity boundary, then treat
+   `q=0,r>=6` or `q>=1`, or prove a legal selector separating the replacement
+   tensors. Outside that branch, produce an exact nonzero selector or
+   otherwise exclude the unfactorized high-surplus cell.  The existing cell
+   detectors do not exclude a witness.
 
 4. **First remaining all-bridge degree.** Exclude or structurally reduce
    `Delta(D)=5`. This does not address the separate deeper-blocker branch.
