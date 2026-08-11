@@ -767,6 +767,33 @@
       "legacy_paths": []
     },
     {
+      "name": "Projectively Constant Lift Three-Activity and Mixed Degenerate Two-Defect Five-Cell Detector Theorem",
+      "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_THREE_ACTIVITY_AND_MIXED_DEGENERATE_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md",
+      "document_sha256_16": "9530efcc638bbfe5",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero three-root tensor-line, one-sided collision-kernel, mixed-kernel intersection, and local-concision proof",
+        "conditional on the aligned physical common-two-row factorization and projectively constant shore at root j",
+        "new detector conclusion is only for q=0 and r=5 with exactly two degenerate defects of type AB, AZ, BZ, or ZZ",
+        "all rank-two companion configurations and every root activity pattern are covered within those four defect strata",
+        "the same-type AA and BB cells are reduced to explicit overlapping double-kernel boundaries but are not detected or excluded",
+        "only collective nonzero detection is proved, not fixed-root injectivity or witness exclusion",
+        "three or more defects, q=0 r>=6, q>=1, unfactorized cells, gluing, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_projectively_constant_lift_three_activity_two_defect_five_cell_detector.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_projectively_constant_lift_three_activity_two_defect_five_cell_detector.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (SymPy primary; standard-library audit)",
+      "external_binaries": [],
+      "note": "The arbitrary-field implication is the written three-root tensor-line obstruction, exact A/B/Z collision kernels, zero-defect transport, mixed-kernel intersection, and local-flattening contradiction. The primary checks three ranks, 150 companion/activity charts, six common-kernel intersections, three zero-mode factorizations, and the inactive-set ledger; the no-import audit independently checks 240 polarized charts with rational elimination, recursive permanents, explicit bases, and a separate set census. This closes AB, AZ, BZ, and ZZ only; AA/BB double-kernel survivors and every higher-defect cell remain open, and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Rigid-Colour Cofactor Annihilation and Backbone-Cancellation Boundary",
       "document": "claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md",
       "document_sha256_16": "96aecff02ad3e367",

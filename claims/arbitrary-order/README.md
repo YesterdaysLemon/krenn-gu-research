@@ -171,6 +171,22 @@ The exact residual consists of two one-sided/zero defects or at least three
 local defects.  Every `q=0,r>=6` cell, every `q>=1` cell, and the unfactorized
 branch also remain open; none of these detector results excludes a witness.
 
+The further
+[`three-activity and mixed degenerate two-defect detector`](PROJECTIVELY_CONSTANT_LIFT_THREE_ACTIVITY_AND_MIXED_DEGENERATE_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md)
+lowers the dependent-mode threshold from four active deletions to three for
+every companion frame and computes the exact retained collision kernels at
+`a`-only, `b`-only, and zero defects.  Zero-containing pairs `AZ`, `BZ`, and
+`ZZ` transport three activity to the other defect, while the mixed `AB`
+collision kernels have zero intersection.  These four cells therefore have a
+nonzero detector.  Combined with the preceding results, every aligned
+projective `q=0,r=5` cell with at most two local defects is detected except
+the same-type `AA` and `BB` cells.  Collective invisibility in either survivor
+forces overlapping inactive-root sets with proper union and an explicit
+one- or three-dimensional double kernel.  This is a residual reduction, not
+an exclusion: `AA`, `BB`, every cell with at least three defects, larger or
+positive-surplus cells, the unfactorized branch, and global gluing remain
+open.
+
 The
 [`rigid-colour boundary theorem`](RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md)
 sharpens that one-root branch.  It proves universal near-monochromatic deck,
