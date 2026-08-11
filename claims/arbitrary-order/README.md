@@ -70,6 +70,15 @@ Consequently the mixed GHZ zero equations are essential to any exclusion of
 the all-balanced branch.
 
 The
+[`common-quadratic orbit exclusion`](BALANCED_COMMON_QUADRATIC_ORBIT_RANK_DROP_AND_FLATTENING_EXCLUSION_THEOREM.md)
+then treats the full local-`GL(3)` orbit of that synchronized mechanism.  The
+same uniform sensor bound puts the orbit in `B_all` for `n>=8`, but its
+nondegenerate members have two-vertex flattening rank six rather than the
+ternary GHZ rank three; degenerate members already fail local rank.  Hence
+this entire common-form stratum is disjoint from the witness equations, while
+the nonsynchronized all-balanced intersection remains open.
+
+The
 [`maximal torus-root theorem`](MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md)
 gives a second exact universal dichotomy at the witness point.  A
 maximum-cardinality zero-coupled torus-root set is either a single root, which
