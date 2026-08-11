@@ -157,8 +157,19 @@ local concision.  Thus every locally `a/b`-transverse aligned projective
 `q=0,r=5` cell has at least one two-open detector, for every companion frame
 and every root quotient-support pattern.  Local `a/b` dependence still
 remains open, so this is not full `q=0,r=5` closure or a witness exclusion.
-Every `q=0,r>=6` cell, every `q>=1` cell, and the unfactorized branch also
-remain open.
+
+The next
+[`rank-one-mode and regular two-defect detector`](PROJECTIVELY_CONSTANT_LIFT_RANK_ONE_MODE_AND_REGULAR_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md)
+enters that local-dependence boundary.  At a dependent mode, four nonzero
+retained collision tensors make collective invisibility trap every root
+quotient in one line for all three companion types, contradicting local rank
+three.  A sharp four-mode calculation supplies those four tensors after
+deleting either the unique arbitrary defect or one of two defects when the
+other has nonzero proportional `a,b`.  Hence `q=0,r=5` is detected with one
+arbitrary local defect, or with two defects and at least one regular one.
+The exact residual consists of two one-sided/zero defects or at least three
+local defects.  Every `q=0,r>=6` cell, every `q>=1` cell, and the unfactorized
+branch also remain open; none of these detector results excludes a witness.
 
 The
 [`rigid-colour boundary theorem`](RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md)

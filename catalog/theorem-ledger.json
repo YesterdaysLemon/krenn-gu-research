@@ -741,6 +741,32 @@
       "legacy_paths": []
     },
     {
+      "name": "Projectively Constant Lift Rank-One Mode and Regular Two-Defect Five-Cell Detector Theorem",
+      "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_RANK_ONE_MODE_AND_REGULAR_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md",
+      "document_sha256_16": "088d98a27d360ba0",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero rank-one quotient trapping, balanced companion-line, retained collision-inverse, and local-concision proof",
+        "conditional on the aligned physical common-two-row factorization and projectively constant shore at root j",
+        "detector conclusion is only for q=0 and r=5 with one arbitrary local a/b defect, or two defects with at least one nonzero proportional a/b pair",
+        "all rank-two companion configurations and every root quotient-support pattern are covered within those defect strata",
+        "only collective nonzero detection is proved, not fixed-root injectivity, collision injectivity across one-sided defects, or witness exclusion",
+        "two one-sided/zero defects, three or more defects, q=0 r>=6, q>=1, unfactorized cells, gluing, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_projectively_constant_lift_rank_one_mode_five_cell_detector.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_projectively_constant_lift_rank_one_mode_five_cell_detector.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (SymPy primary; standard-library audit)",
+      "external_binaries": [],
+      "note": "The arbitrary-field implication is the written all-companion quotient-line trapping, local rank contradiction, and sharp four-mode collision-coordinate proof. The primary checks a symbolic -24576 lambda^4 minor, 1220 companion frames, 40 quotient charts, and all 3125 defect words; the no-import audit instead uses Bareiss determinants, 2310 frames, rational elimination, and 48 polarized charts. Exact one-sided/zero collision kernels preserve the residual boundary. Global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Rigid-Colour Cofactor Annihilation and Backbone-Cancellation Boundary",
       "document": "claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md",
       "document_sha256_16": "96aecff02ad3e367",
