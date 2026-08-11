@@ -78,7 +78,8 @@ flowchart TD
   U4["Three-block primitive and dual bridges<br/>PROVED"]
   U5["Primitive-alone closure<br/>REFUTED ROUTE"]
   U6["Cross parity, bridges, rigid-head Wick<br/>PROVED reduction"]
-  U7["Word-shore Tutte or global rematching<br/>OPEN"]
+  U7A["Nonzero parity fibre has exact word-shore rematching<br/>PROVED"]
+  U7["Exclude active diagonal/offdiagonal aggregate cancellation<br/>OPEN"]
   U8["Proper flag propagation<br/>OPEN"]
   D1["Deeper blocker branch<br/>OPEN"]
 
@@ -135,7 +136,8 @@ flowchart TD
   U1 -->|premise| U6
   U2 -->|premise| U6
   U6 -->|exact erasure| M2
-  U6 -->|boundary| U7
+  U6 -->|active-fibre refinement| U7A
+  U7A -->|boundary| U7
   U2 -->|boundary| U8
   U2 -->|boundary| D1
   U6 -->|boundary| D1
@@ -186,7 +188,8 @@ flowchart TD
 | `U4` | Bi-null cuts, three-block primitive, and dual quadratic bridges: **proved; arbitrary-order exclusion open** | [Rigid primitive theorem](../claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_BINARY_PRIMITIVE_AND_QUADRATIC_BRIDGE_THEOREM.md) |
 | `U5` | “The primitive alone contradicts the tensor”: **refuted route** for every even order at least eight | [Primitive sharpness theorem](../claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_PRIMITIVE_SHARPNESS_AND_DUAL_BRIDGE_COMPLETION_OBSTRUCTION.md) |
 | `U6` | Cross-parity erasure, bridge/deeper entry, rigid-head Wick tower, and pseudoforest normal form: **proved reduction** | [Cross-parity theorem](../claims/arbitrary-order/MATRIX_UNIT_CROSS_PARITY_ERASURE_RIGID_HEAD_WICK_AND_BRIDGE_CORE_REDUCTION_THEOREM.md) |
-| `U7` | Higher mixed identities force word-shore perfect matchings/Tutte inequalities, or another word-preserving rematching: **open** | [Word-synchronization boundary](../claims/arbitrary-order/MATRIX_UNIT_BRIDGE_WORD_SYNCHRONIZATION_AND_WICK_SHARPNESS_BOUNDARY.md#4-fully-active-pure-cofactors-still-do-not-synchronize-the-word) |
+| `U7A` | For every mixed word with nonzero aggregate offdiagonal coefficient, the diagonal contribution factors as the product of three nonzero pure-shore hafnians. Hence every active parity-zero fibre already has an exact word-preserving diagonal rematching; a Tutte failure can occur only in an internally zero fibre. | [Active parity-fibre synchronization theorem](../claims/arbitrary-order/MATRIX_UNIT_PARITY_FIBRE_DIAGONAL_FACTORIZATION_AND_ACTIVE_WORD_SHORE_SYNCHRONIZATION_THEOREM.md) |
+| `U7` | In a support-minimal offdiagonal matrix-unit witness, at least one mixed parity-zero word satisfies the exact nonzero identity `Q_chi=-product_c haf(Z^c[V_c])`. Excluding or structurally exploiting this aggregate cancellation remains **open**; no termwise weight-preserving bridge normalization is inferred. | [Active parity-fibre exact boundary](../claims/arbitrary-order/MATRIX_UNIT_PARITY_FIBRE_DIAGONAL_FACTORIZATION_AND_ACTIVE_WORD_SHORE_SYNCHRONIZATION_THEOREM.md#6-exact-proof-topology-boundary) |
 | `U8` | Proper nonempty colour-nonrigidity sets propagate to all vertices: **open** | [Four-switch partial-bridge theorem](../claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md#5-partial-bridge-systems) |
 | `D1` | Deeper double-star/multi-star blocker branch: **open**. Its blocker alternatives are pointwise after shrinking to a dense constructible stratum; no uniform blocker pair is proved on the whole component. | [Double-star lemma](../claims/arbitrary-order/DOUBLE_STAR_ANNIHILATION_LEMMA.md) and [multi-star factorization](../claims/arbitrary-order/MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md) |
 | `A1` | Simultaneous balanced all-bridge system: **proved conditional branch**, not universal extraction | [Three-colour balanced bridge intersection](../claims/arbitrary-order/THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md) |
@@ -240,7 +243,8 @@ flowchart TD
 | `U4` | refutation of argument | `U5` | The primitive alone cannot close arbitrary order. |
 | `U1` + `U2` | mathematical premises | `U6` | Parity and bridge structure refine the one-root branch. |
 | `U6` | reduction | `M2` | Exact erasure may produce a different realization with at least two roots. |
-| `U6` | boundary obligation | `U7` | Bridge normalization changes the exact word; synchronization remains missing. |
+| `U6` | exact refinement | `U7A` | Target equality factors every diagonal word fibre over its pure shores and synchronizes every nonzero aggregate offdiagonal coordinate; internally zero fibres may still contain unsynchronized terms. |
+| `U7A` | boundary obligation | `U7` | The exact word-preserving rematching proves support and nonzero shore hafnians, but the nonzero diagonal/offdiagonal scalar sums may still cancel. |
 | `U2` | boundary obligation | `U8` | Full flags have consequences, but proper nonempty flag sets remain. |
 | `U2`, `U6` | boundary obligation | `D1` | Both reductions retain the deeper-blocker alternative. |
 | `U2` | specialization | `A1` | Simultaneous full flags for all colours enter all-bridge, absent deeper blockers. |
@@ -285,10 +289,13 @@ branch. They are not an instruction to begin all of them at once.
    sensor and exactly-three-excess support normal forms are not exhaustive
    arbitrary-r theorems.
 
-4. **Word-shore forcing.** Prove from higher mixed coefficients that each pure
-   support graph induced on the actual word shore satisfies Tutte's condition,
-   or construct another exact word-preserving global rematching. Global pure
-   matchings and fully active pure cofactors are insufficient.
+4. **Active word-fibre cancellation.** Every nonzero aggregate offdiagonal
+   coordinate now has nonzero pure hafnian on each exact word shore and an
+   exact word-preserving diagonal rematching. Exclude or structurally exploit
+   the residual identity `Q_chi=-product_c haf(Z^c[V_c])` in at least one
+   active parity-zero fibre of a support-minimal witness. Tutte failure can
+   occur only in internally cancelling zero fibres; individual bridge terms
+   still need not preserve the word or match weights termwise.
 
 5. **Remaining larger/unfactorized detector.** The complete aligned
    projectively constant `q=0,r=5` cell is now conditionally detected; the
@@ -335,7 +342,7 @@ responses; it does not collapse them into the globally rigid `k=4` cell.
 | The first two-open equation always detects the affine gauge | False on a conditional tight `q=0` outside-star cell | [Two-open star invisibility](../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md) |
 | Primitive or pure scalar hafnian pencils close the rigid branch | False at arbitrary order; mixed deletion and completion coupling remain essential | [Primitive sharpness](../claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_PRIMITIVE_SHARPNESS_AND_DUAL_BRIDGE_COMPLETION_OBSTRUCTION.md) |
 | Bogdanov-backbone cancellation alone contradicts equality | False: all selected backbone mixed words can cancel while other words fail | [Rigid-colour cancellation boundary](../claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md) |
-| Bridge normalization, parity/Wick, or fully active pure cofactors synchronize the exact word | False; exact six-vertex countermechanisms isolate the word-shore condition | [Word-synchronization boundary](../claims/arbitrary-order/MATRIX_UNIT_BRIDGE_WORD_SYNCHRONIZATION_AND_WICK_SHARPNESS_BOUNDARY.md) |
+| Bridge normalization, parity/Wick, or fully active pure cofactors synchronize each individual term | False; exact six-vertex countermechanisms retain unsynchronized compatible terms inside aggregate-zero fibres. Nonzero aggregate fibres are nevertheless word-shore synchronized by the later factorization theorem. | [Word-synchronization boundary](../claims/arbitrary-order/MATRIX_UNIT_BRIDGE_WORD_SYNCHRONIZATION_AND_WICK_SHARPNESS_BOUNDARY.md) and [active parity-fibre refinement](../claims/arbitrary-order/MATRIX_UNIT_PARITY_FIBRE_DIAGONAL_FACTORIZATION_AND_ACTIVE_WORD_SHORE_SYNCHRONIZATION_THEOREM.md) |
 | One fixed P7 survivor or incidence result globalizes automatically | False as an inference: one still needs physical edge descent, all Wick equations, and universal extraction | [Balanced sensor Wick gate](../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md) |
 | Determinant-cleared Wick identities automatically remove Cramer poles | False: a normalized four-label rational hafnian deck can satisfy the cleared Euler recurrence while one pair has valuation `-1` | [Cramer--Euler pair-pole boundary](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md#5-sharp-boundary-cleared-wick-does-not-remove-poles) |
 | Local concision, complete support, invertible blocks, and normalized pure coefficients force some balanced sensor to be full | False for every `n>=8`: the diagonal-complete family has all these properties and rank at most `binomial(m,2)+1` on every cut; it fails explicit mixed-word zero equations | [Diagonal-complete all-rank-drop boundary](../claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md) |

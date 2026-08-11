@@ -26,6 +26,24 @@ shores (equivalently, their Tutte inequalities), or supply some different
 global mechanism.  This is a target, not an exhaustive route theorem.  The
 global Krenn--Gu conjecture remains **UNRESOLVED**.
 
+## Active-fibre refinement (2026-08-11)
+
+The later
+[`parity-fibre factorization theorem`](MATRIX_UNIT_PARITY_FIBRE_DIAGONAL_FACTORIZATION_AND_ACTIVE_WORD_SHORE_SYNCHRONIZATION_THEOREM.md)
+narrows the positive obligation above.  In an actual matrix-unit realization
+of `Delta_(n,3)`, every mixed word with nonzero **aggregate** offdiagonal
+coefficient already has nonzero pure hafnian, hence a perfect matching, on
+each exact word shore.  The offdiagonal aggregate is the negative product of
+those three shore hafnians.  Thus active fibres have a word-preserving global
+rematching without termwise bridge normalization.
+
+The two countermechanisms below retain their force: their selected
+unsynchronized fibres have aggregate offdiagonal value zero.  The new result
+does not synchronize each compatible term or exclude the remaining nonzero
+diagonal/offdiagonal scalar cancellation.  Statements below describing
+word-shore forcing as open are historical for the broader every-supported-
+word target and remain live only for internally cancelling zero fibres.
+
 ## 1. Local bridge normalization necessarily changes the word
 
 Work in the one-matrix-unit branch.  A physical pair has one nonzero unit,

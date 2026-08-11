@@ -357,6 +357,18 @@ matching exists exactly when every pure graph induced on a word shore has a
 perfect matching; whether higher mixed identities force those shore
 conditions remains open.
 
+The
+[`active parity-fibre theorem`](MATRIX_UNIT_PARITY_FIBRE_DIAGONAL_FACTORIZATION_AND_ACTIVE_WORD_SHORE_SYNCHRONIZATION_THEOREM.md)
+now narrows that last obligation.  For every mixed word, the completely
+diagonal contribution is exactly the product of its three pure-shore
+hafnians.  Target equality makes every nonzero aggregate offdiagonal fibre
+the negative of that product, so each active fibre already has nonzero shore
+hafnians and an exact word-preserving diagonal rematching.  Tutte failure can
+survive only inside an offdiagonal fibre whose terms cancel internally to
+zero.  A support-minimal offdiagonal matrix-unit witness must have at least
+one active synchronized fibre; excluding its remaining nonzero aggregate
+cancellation is open.
+
 At the Stage 27 boundary, the owner-gated H22/H31, Component20/21/23,
 high-coordinate, and mixed-lifecycle conflict surfaces were excluded from
 that batch and remained at root, unmoved and unadjudicated at that stage.

@@ -1157,7 +1157,7 @@
     {
       "name": "Matrix-Unit Bridge Word Synchronization and Wick Sharpness Boundary",
       "document": "claims/arbitrary-order/MATRIX_UNIT_BRIDGE_WORD_SYNCHRONIZATION_AND_WICK_SHARPNESS_BOUNDARY.md",
-      "document_sha256_16": "f38a36e3c24fa298",
+      "document_sha256_16": "0edb2b2de65c1f2f",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact characteristic-zero matrix-unit matching and word-shore arguments over C",
@@ -1166,7 +1166,7 @@
         "the second complete six-vertex relay has all pure targets and pure-edge cofactors active but has an explicit nonzero forbidden coefficient",
         "Tutte's criterion concerns existence of a word-shore diagonal matching and does not by itself control weighted mixed-word cancellation",
         "neither gadget is a Krenn-Gu witness or counterexample",
-        "whether higher mixed identities force word-shore Tutte conditions or another global rematching mechanism remains open"
+        "the later active-fibre theorem supplies a global word-shore rematching when the aggregate offdiagonal coordinate is nonzero; internally zero fibres and termwise normalization retain this boundary"
       ],
       "dependencies": [],
       "primary_verifier": "claims/arbitrary-order/verify_matrix_unit_bridge_word_synchronization_and_wick_sharpness.py",
@@ -1175,7 +1175,7 @@
       "audit_provenance": "independent_exact_identity_audit",
       "expected_runtime": "seconds (standard library)",
       "external_binaries": [],
-      "note": "The written proofs establish the conditional local word flips, the first gadget's parity/Wick boundary, the pure-active relay, and the word-shore matching equivalence. The primary checks both six-vertex gadgets. The no-import audit independently recomputes the relay and local word flips only; it does not audit the first gadget's full Wick tower or replace the universal written arguments. Both examples are exact route countermechanisms, and the global conjecture remains UNRESOLVED.",
+      "note": "The written proofs establish the conditional local word flips, the first gadget's parity/Wick boundary, the pure-active relay, and the word-shore matching equivalence. The primary checks both six-vertex gadgets. The no-import audit independently recomputes the relay and local word flips only; it does not audit the first gadget's full Wick tower or replace the universal written arguments. The later parity-fibre theorem proves synchronization only for nonzero aggregate offdiagonal coordinates; these examples retain internally zero unsynchronized fibres. Both are exact route countermechanisms, and the global conjecture remains UNRESOLVED.",
       "claim_package": "claims/arbitrary-order",
       "proof_variant": "canonical",
       "subpackage": null,
@@ -1184,6 +1184,33 @@
         "audit_matrix_unit_bridge_word_synchronization_and_wick_sharpness.py",
         "verify_matrix_unit_bridge_word_synchronization_and_wick_sharpness.py"
       ]
+    },
+    {
+      "name": "Matrix-Unit Parity-Fibre Diagonal Factorization and Active Word-Shore Synchronization Theorem",
+      "document": "claims/arbitrary-order/MATRIX_UNIT_PARITY_FIBRE_DIAGONAL_FACTORIZATION_AND_ACTIVE_WORD_SHORE_SYNCHRONIZATION_THEOREM.md",
+      "document_sha256_16": "015eb28d98359bdf",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact matrix-unit matching partition and principal-hafnian factorization over C at even n>=6",
+        "the fibre identity Q_chi=-D_chi uses the full target equality T_W=Delta_(n,3)",
+        "nonzero aggregate offdiagonal coordinate is essential and is stronger than existence of an individual compatible offdiagonal matching",
+        "every active fibre has nonzero weighted pure-shore hafnians and a word-preserving diagonal matching; no termwise weight-preserving normalization is claimed",
+        "support minimality is used only through the imported parity-erasure theorem to guarantee at least one active offdiagonal fibre",
+        "the two exact six-vertex tables audit active and internally zero fibres and are not Krenn-Gu witnesses",
+        "the nonzero aggregate scalar cancellation, r=1 exclusion, erased/deeper branches, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_matrix_unit_parity_fibre_diagonal_factorization_and_active_word_shore_synchronization.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_matrix_unit_parity_fibre_diagonal_factorization_and_active_word_shore_synchronization.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "The arbitrary-order proof partitions each word coefficient into completely diagonal and offdiagonal matching sectors, factors the diagonal sector as the product of three pure-shore hafnians, and applies the mixed target zero. Thus every nonzero aggregate offdiagonal fibre already has nonzero shore hafnians and an exact word-preserving global rematching; a Tutte failure is confined to an internally zero fibre. A support-minimal offdiagonal matrix-unit witness has at least one such active fibre, but excluding its nonzero aggregate cancellation remains open and global Krenn-Gu is UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     },
     {
       "name": "Four Blocker Ideal Obstruction",
