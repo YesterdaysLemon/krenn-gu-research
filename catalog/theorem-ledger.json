@@ -1459,6 +1459,38 @@
       "legacy_paths": []
     },
     {
+      "name": "Matrix-Unit Cross-Multiplicity Global Target-Lattice and Holonomy Dichotomy Theorem",
+      "document": "claims/arbitrary-order/MATRIX_UNIT_CROSS_MULTIPLICITY_GLOBAL_TARGET_LATTICE_AND_HOLONOMY_DICHOTOMY_THEOREM.md",
+      "document_sha256_16": "ebdcfc486f3c9fb0",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact finitely generated group-algebra and matching-support arguments over C at every positive even order",
+        "the physical stratum is one fixed complete nonzero r=1 matrix-unit Laurent torus with one endpoint-label pair and one invertible amplitude per edge",
+        "the selected system may contain mixed target-zero equations from arbitrary word multidegrees and any subset of the three pure target equations",
+        "each nonzero mixed residual is divided only by an invertible reference matching monomial; empty mixed fibres are tautologies and an empty pure fibre is already a unit certificate",
+        "pure target constants are retained as absolute anchor terms and are not silently homogenized into the endpoint-character kernel",
+        "the global support-difference lattice may be nonsaturated; freeness uses a full coset basis and does not assume a direct summand",
+        "different multidegrees share one exact endpoint-character-kernel algebra after normalization, but common physical variables or nonzero lattice overlap alone do not force a unit ideal",
+        "the direct-sum separation theorem is a sufficient no-coupling criterion, not a classification of every possible lattice interaction",
+        "the global holonomy dichotomy assumes every complete fibre of the selected active cycle is binomial and belongs to a parity-consistent core; aggregate cycle fibres remain outside it",
+        "arbitrary residual target equations can only toggle a fully binomial cycle between the unit ideal and exactly H=(-1)^m; cross-multiplicity unit forcing remains open",
+        "the torsion-sheet criteria completely decide quotient free ranks zero and one across multidegrees; free rank at least two remains an exact multivariate Laurent ideal problem",
+        "the theorem does not exclude the general r=1 branch, pure-cofactor exits, deeper blockers, or the global conjecture"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_matrix_unit_cross_multiplicity_global_target_lattice_and_holonomy_dichotomy.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_matrix_unit_cross_multiplicity_global_target_lattice_and_holonomy_dichotomy.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (sympy and standard library)",
+      "external_binaries": [],
+      "note": "For any selected exact target equations on a fixed complete nonzero matrix-unit support, reference normalization descends the combined ideal faithfully to its global support-difference group algebra. Mixed equations from arbitrary endpoint-colour multidegrees lie in one endpoint-character kernel; pure targets add exact anchor directions. Direct-sum difference lattices provably do not couple despite shared physical variables. Once an active cycle is fully binomial and parity consistent, arbitrary cross-multiplicity and pure residuals either make the combined ideal a unit or leave exactly H=(-1)^m; the rank-zero and rank-one torsion-sheet criteria apply globally. This proves the algebraic interface but not the load-bearing unit-forcing mechanism. Independent imported-fixture/SymPy and no-import bitmask/Fraction audits verify the mechanisms. Global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Four Blocker Ideal Obstruction",
       "document": "claims/arbitrary-order/FOUR_BLOCKER_IDEAL_OBSTRUCTION.md",
       "document_sha256_16": "b7fb5e2394539754",

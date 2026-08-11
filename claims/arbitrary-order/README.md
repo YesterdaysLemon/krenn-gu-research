@@ -488,6 +488,24 @@ any sheet survives, the cycle elimination remains exactly
 remain open, as does forcing a favourable low-rank unit outcome from the
 response data.
 
+The
+[`cross-multiplicity global target-lattice theorem`](MATRIX_UNIT_CROSS_MULTIPLICITY_GLOBAL_TARGET_LATTICE_AND_HOLONOMY_DICHOTOMY_THEOREM.md)
+removes the same-multidegree restriction from that algebraic interface.
+After one invertible reference monomial is removed from each mixed residual,
+target equations from arbitrary endpoint-colour multidegrees live in one
+support-difference group algebra inside the endpoint-character kernel.  Pure
+target equations enter the corresponding global lattice as absolute anchor
+directions.  The descent to this algebra is faithful even for a nonsaturated
+lattice.  Direct-sum difference lattices provably do not couple, even when
+their equations share physical edge variables.  For a fully binomial active
+cycle, arbitrary additional target equations can therefore only make the
+combined ideal a unit or leave exactly `H=(-1)^m`; they cannot impose a
+different stronger proper holonomy polynomial.  The rank-zero and rank-one
+torsion-sheet criteria now apply globally across multidegrees.  What remains
+is the load-bearing unit-forcing problem: force useful lattice overlap and
+kill every sheet, control free rank at least two, handle an aggregate cycle
+fibre, or leave through the pure/deeper topology.
+
 At the Stage 27 boundary, the owner-gated H22/H31, Component20/21/23,
 high-coordinate, and mixed-lifecycle conflict surfaces were excluded from
 that batch and remained at root, unmoved and unadjudicated at that stage.
