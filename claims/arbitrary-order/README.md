@@ -50,6 +50,16 @@ space; it is not excluded inside the hypothetical-witness locus.  The global
 conjecture therefore remains unresolved.
 
 The
+[`balanced Cramer--Euler pair-pole gate`](BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md)
+refines the full-sensor branch without claiming its exclusion.  It replaces
+the logarithmic Wick condition by one symmetric hafnian recurrence per higher
+even subset and proves that, after those recurrences hold, regularity of the
+entire rational deck is equivalent to regularity of its pair components.
+Target residuals, empty normalization, pair poles, and the recurrence family
+are still open obligations; a normalized cleared recurrence can hold while a
+pair retains a divisorial pole.
+
+The
 [`maximal torus-root theorem`](MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md)
 gives a second exact universal dichotomy at the witness point.  A
 maximum-cardinality zero-coupled torus-root set is either a single root, which
