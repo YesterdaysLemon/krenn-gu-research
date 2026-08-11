@@ -1213,6 +1213,33 @@
       "legacy_paths": []
     },
     {
+      "name": "Matrix-Unit Active-Word Cross Response and Bridge-Transport Trichotomy",
+      "document": "claims/arbitrary-order/MATRIX_UNIT_ACTIVE_WORD_FIBRE_CROSS_MATCHING_RESPONSE_AND_BRIDGE_TRANSPORT_TRICHOTOMY.md",
+      "document_sha256_16": "c86f160e5b1e9208",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact matching-partition, parity, bridge-composition, and finite-iteration proofs over C at even n>=6",
+        "the input is an active mixed word in the ternary r=1 complete nonzero matrix-unit branch satisfying T_W=Delta_(n,3)",
+        "the square and hexagon conclusions are conditional on the hypotheses and deeper-blocker alternative of the imported bridge theorem",
+        "support minimality is not used in the response theorem; it is used upstream only to supply at least one initial active word",
+        "a cofactor-active response summand constructs a physical matching but is not asserted to equal the whole aggregate coordinate",
+        "cross-edge and bridge-edge weights are not synchronized, so finite active-word holonomy is not a sign contradiction",
+        "pure-shore cancellation, active holonomy, the deeper branch, r=1 exclusion, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_matrix_unit_active_word_fibre_cross_matching_response_and_bridge_transport.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_matrix_unit_active_word_fibre_cross_matching_response_and_bridge_transport.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "The arbitrary-order proof expands each active offdiagonal coordinate by its exact cross-edge matching, selects a summand with nonzero pure deletion hafnians on all shores, proves the three cross-type counts have one parity, and applies disjoint square/hexagon bridges. Absent the deeper alternative, the resulting diagonal term either transports activity to a distinct mixed word with the same multiplicities or lies in a pure-shore hafnian that cancels internally. Repeated no-exit transport yields a finite nontrivial active-word cycle, not a contradiction. The primary checker and no-import audit independently replay bounded response, parity, transport, cancellation, and cycle ledgers; the universal result is the written proof. Global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Four Blocker Ideal Obstruction",
       "document": "claims/arbitrary-order/FOUR_BLOCKER_IDEAL_OBSTRUCTION.md",
       "document_sha256_16": "b7fb5e2394539754",
