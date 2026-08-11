@@ -2,7 +2,7 @@
 """Inventory persistent identifiers and validate literature source records.
 
 This tool is deliberately offline. It validates recorded provenance but never
-contacts a metadata provider or upgrades an inspection level.
+contacts a metadata provider or infers what a source or passage establishes.
 """
 
 from __future__ import annotations
@@ -25,11 +25,10 @@ from krenn_gu.bootstrap import bootstrap  # noqa: E402
 REPO_ROOT, HERE = bootstrap(__file__)
 DEFAULT_REGISTRY = REPO_ROOT / "catalog" / "literature" / "sources.json"
 
-INSPECTION_LEVELS = {
-    "lead_unverified",
-    "identity_verified",
-    "metadata_or_abstract_inspected",
-    "full_text_inspected",
+USAGE_INSPECTION_LEVELS = {
+    "metadata_only",
+    "abstract_inspected",
+    "relevant_passage_inspected",
 }
 USAGE_ROLES = {"background", "novelty_assessment", "imported_result"}
 IDENTIFIER_KEYS = {"doi", "arxiv", "eudml", "stacks_tag"}
@@ -178,7 +177,6 @@ def validate_registry(data: object, repo_root: Path = REPO_ROOT) -> list[str]:
         "identifiers",
         "authoritative_url",
         "identity_verification",
-        "inspection_level",
         "search_trail",
         "relevance",
         "limitations",
@@ -192,6 +190,12 @@ def validate_registry(data: object, repo_root: Path = REPO_ROOT) -> list[str]:
             continue
         for field in sorted(required - source.keys()):
             _record_error(errors, loc, f"missing required field {field!r}")
+        if "inspection_level" in source:
+            _record_error(
+                errors,
+                loc,
+                "inspection_level belongs on each repository usage, not the source",
+            )
 
         citekey = source.get("citekey")
         if not _nonempty_string(citekey) or not CITEKEY_RE.fullmatch(str(citekey)):
@@ -205,12 +209,12 @@ def validate_registry(data: object, repo_root: Path = REPO_ROOT) -> list[str]:
         else:
             citekeys[str(citekey)] = index
 
-        level = source.get("inspection_level")
+        verification = source.get("identity_verification")
         title = source.get("title")
         if not _nonempty_string(title):
             _record_error(errors, loc, "title must be a nonempty string")
         title_key = str(title).strip().casefold() if _nonempty_string(title) else ""
-        authors_may_be_unknown = level == "lead_unverified"
+        authors_may_be_unknown = verification is None
         if not _string_list(
             source.get("authors"), allow_empty=authors_may_be_unknown
         ):
@@ -275,12 +279,6 @@ def validate_registry(data: object, repo_root: Path = REPO_ROOT) -> list[str]:
             else:
                 identities[identity] = (index, title_key)
 
-        if level not in INSPECTION_LEVELS:
-            _record_error(
-                errors,
-                loc,
-                "inspection_level must be one of " + ", ".join(sorted(INSPECTION_LEVELS)),
-            )
         if not _nonempty_string(source.get("relevance")):
             _record_error(errors, loc, "relevance must be a nonempty string")
         limitations = source.get("limitations")
@@ -294,36 +292,32 @@ def validate_registry(data: object, repo_root: Path = REPO_ROOT) -> list[str]:
         if year is None and not limitations:
             _record_error(errors, loc, "a null year requires an explicit limitation")
 
-        verification = source.get("identity_verification")
         authoritative_url = source.get("authoritative_url")
-        if level == "lead_unverified":
-            if verification is not None:
-                _record_error(errors, loc, "an unverified lead must have null identity_verification")
+        if verification is None:
             if not search_trail:
                 _record_error(errors, loc, "an unverified lead requires a search trail")
             if not limitations:
                 _record_error(errors, loc, "an unverified lead requires an explicit limitation")
-        elif level in INSPECTION_LEVELS:
+        elif not isinstance(verification, dict):
+            _record_error(errors, loc, "identity_verification must be null or an object")
+        else:
             if not _https_url(authoritative_url):
                 _record_error(errors, loc, "a verified record requires an authoritative HTTPS URL")
-            if not isinstance(verification, dict):
-                _record_error(errors, loc, "a verified record requires identity_verification")
-            else:
-                if not _https_url(verification.get("source_url")):
-                    _record_error(errors, loc, "identity_verification.source_url must be HTTPS")
-                raw_date = verification.get("date")
-                parsed_date = None
-                if isinstance(raw_date, str) and re.fullmatch(
-                    r"\d{4}-\d{2}-\d{2}", raw_date
-                ):
-                    try:
-                        parsed_date = date.fromisoformat(raw_date)
-                    except ValueError:
-                        pass
-                if parsed_date is None:
-                    _record_error(errors, loc, "identity_verification.date must be ISO YYYY-MM-DD")
-                elif parsed_date > date.today():
-                    _record_error(errors, loc, "identity_verification.date cannot be in the future")
+            if not _https_url(verification.get("source_url")):
+                _record_error(errors, loc, "identity_verification.source_url must be HTTPS")
+            raw_date = verification.get("date")
+            parsed_date = None
+            if isinstance(raw_date, str) and re.fullmatch(
+                r"\d{4}-\d{2}-\d{2}", raw_date
+            ):
+                try:
+                    parsed_date = date.fromisoformat(raw_date)
+                except ValueError:
+                    pass
+            if parsed_date is None:
+                _record_error(errors, loc, "identity_verification.date must be ISO YYYY-MM-DD")
+            elif parsed_date > date.today():
+                _record_error(errors, loc, "identity_verification.date cannot be in the future")
 
         usages = source.get("repository_usages")
         if not isinstance(usages, list):
@@ -334,6 +328,9 @@ def validate_registry(data: object, repo_root: Path = REPO_ROOT) -> list[str]:
             if not isinstance(usage, dict):
                 _record_error(errors, usage_loc, "must be an object")
                 continue
+            for field in ("inspection_level", "source_locator"):
+                if field not in usage:
+                    _record_error(errors, usage_loc, f"missing required field {field!r}")
             path_ok, path_message = _valid_repo_path(
                 usage.get("path"), repo_root, tracked_modes
             )
@@ -346,7 +343,24 @@ def validate_registry(data: object, repo_root: Path = REPO_ROOT) -> list[str]:
                     usage_loc,
                     "role must be one of " + ", ".join(sorted(USAGE_ROLES)),
                 )
-            if role == "background" and level == "lead_unverified":
+            usage_level = usage.get("inspection_level")
+            if usage_level not in USAGE_INSPECTION_LEVELS:
+                _record_error(
+                    errors,
+                    usage_loc,
+                    "inspection_level must be one of "
+                    + ", ".join(sorted(USAGE_INSPECTION_LEVELS)),
+                )
+            locator = usage.get("source_locator")
+            if locator is not None and not _nonempty_string(locator):
+                _record_error(errors, usage_loc, "source_locator must be null or nonempty")
+            if usage_level == "relevant_passage_inspected" and not _nonempty_string(locator):
+                _record_error(
+                    errors,
+                    usage_loc,
+                    "relevant_passage_inspected requires an exact source_locator",
+                )
+            if role == "background" and verification is None:
                 _record_error(errors, usage_loc, "a background citation requires verified identity")
             if role == "novelty_assessment":
                 if not search_trail:
@@ -355,7 +369,6 @@ def validate_registry(data: object, repo_root: Path = REPO_ROOT) -> list[str]:
                     _record_error(errors, usage_loc, "a novelty assessment requires explicit search limits")
             if role == "imported_result":
                 for field in (
-                    "source_locator",
                     "assumptions_scope",
                     "correspondence_note",
                     "unresolved_obligations",
@@ -370,13 +383,14 @@ def validate_registry(data: object, repo_root: Path = REPO_ROOT) -> list[str]:
                 if not _string_list(obligations):
                     _record_error(errors, usage_loc, "unresolved_obligations must be a string array")
                     obligations = []
-                locator = usage.get("source_locator")
-                if locator is not None and not _nonempty_string(locator):
-                    _record_error(errors, usage_loc, "source_locator must be null or nonempty")
                 if locator is None and not obligations:
                     _record_error(errors, usage_loc, "a missing source_locator must remain an unresolved obligation")
-                if level != "full_text_inspected" and not obligations:
-                    _record_error(errors, usage_loc, "an imported result not inspected in full must retain an unresolved obligation")
+                if usage_level != "relevant_passage_inspected" and not obligations:
+                    _record_error(
+                        errors,
+                        usage_loc,
+                        "an imported result without relevant-passage inspection must retain an unresolved obligation",
+                    )
 
     return errors
 

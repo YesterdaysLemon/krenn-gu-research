@@ -15,14 +15,15 @@
         "source_url": "https://export.arxiv.org/api/query?id_list=1705.06646",
         "date": "2026-08-11"
       },
-      "inspection_level": "metadata_or_abstract_inspected",
       "search_trail": [],
       "relevance": "Primary physics and graph formulation background for the Krenn-Gu programme.",
       "limitations": ["The pilot did not inspect the full text."],
       "repository_usages": [
         {
           "path": "docs/LITERATURE_REVIEW_2026-07-30.md",
-          "role": "background"
+          "role": "background",
+          "inspection_level": "metadata_only",
+          "source_locator": null
         }
       ]
     },
@@ -40,14 +41,15 @@
         "source_url": "https://export.arxiv.org/api/query?id_list=1902.06023",
         "date": "2026-08-11"
       },
-      "inspection_level": "metadata_or_abstract_inspected",
       "search_trail": [],
       "relevance": "Combinatorial problem statement and perfect-matching background.",
       "limitations": ["The pilot did not inspect the full text."],
       "repository_usages": [
         {
           "path": "docs/LITERATURE_REVIEW_2026-07-30.md",
-          "role": "background"
+          "role": "background",
+          "inspection_level": "metadata_only",
+          "source_locator": null
         }
       ]
     },
@@ -64,14 +66,15 @@
         "source_url": "https://export.arxiv.org/api/query?id_list=2202.05562",
         "date": "2026-08-11"
       },
-      "inspection_level": "metadata_or_abstract_inspected",
       "search_trail": [],
       "relevance": "Published graph-theoretic background adjacent to the conjecture.",
       "limitations": ["The pilot did not inspect the full text."],
       "repository_usages": [
         {
           "path": "docs/LITERATURE_REVIEW_2026-07-30.md",
-          "role": "background"
+          "role": "background",
+          "inspection_level": "metadata_only",
+          "source_locator": null
         }
       ]
     },
@@ -89,7 +92,6 @@
         "source_url": "https://export.arxiv.org/api/query?id_list=2407.00303",
         "date": "2026-08-11"
       },
-      "inspection_level": "metadata_or_abstract_inspected",
       "search_trail": [],
       "relevance": "Sparse-graph results and a secondary statement of the matching theorem cited by a live claim.",
       "limitations": [
@@ -99,11 +101,14 @@
       "repository_usages": [
         {
           "path": "docs/LITERATURE_REVIEW_2026-07-30.md",
-          "role": "background"
+          "role": "background",
+          "inspection_level": "abstract_inspected",
+          "source_locator": null
         },
         {
           "path": "claims/arbitrary-order/ARBITRARY_PERMANENT_EQUALITY_EXCEPTIONAL_SOURCE_RECTANGLE_THEOREM.md",
           "role": "imported_result",
+          "inspection_level": "metadata_only",
           "source_locator": "Theorem 1.7",
           "assumptions_scope": "The repository cites the stated theorem for existence of a monochromatic matching in its sparse-graph step; the exact external hypotheses were not checked in full text during this pilot.",
           "correspondence_note": "The claim identifies this cited theorem as part of its written proof.",
@@ -127,7 +132,6 @@
         "source_url": "https://eudml.org/doc/29879",
         "date": "2026-08-11"
       },
-      "inspection_level": "identity_verified",
       "search_trail": [],
       "relevance": "Classical unique-perfect-matching background for one-switch normal forms.",
       "limitations": [
@@ -137,7 +141,9 @@
       "repository_usages": [
         {
           "path": "claims/arbitrary-order/ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_CUT_NORMAL_FORM_THEOREM.md",
-          "role": "background"
+          "role": "background",
+          "inspection_level": "metadata_only",
+          "source_locator": null
         }
       ]
     },
@@ -154,14 +160,15 @@
         "source_url": "https://api.crossref.org/works/10.4153/CJM-1958-052-0",
         "date": "2026-08-11"
       },
-      "inspection_level": "identity_verified",
       "search_trail": [],
       "relevance": "Classical bipartite-matching decomposition background used by several normal-form discussions.",
       "limitations": ["The pilot verified metadata only and did not inspect the source text."],
       "repository_usages": [
         {
           "path": "claims/arbitrary-order/ARBITRARY_PERMANENT_EQUALITY_ONE_SWITCH_CUT_NORMAL_FORM_THEOREM.md",
-          "role": "background"
+          "role": "background",
+          "inspection_level": "metadata_only",
+          "source_locator": null
         }
       ]
     },
@@ -178,7 +185,6 @@
         "source_url": "https://dmtcs.episciences.org/15655",
         "date": "2026-08-11"
       },
-      "inspection_level": "identity_verified",
       "search_trail": [],
       "relevance": "Modern source cited for the ear-decomposition theorem imported by a live claim.",
       "limitations": ["The pilot did not access or inspect the full text."],
@@ -186,6 +192,7 @@
         {
           "path": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_SIX_TOKEN_EAR_THEOREM.md",
           "role": "imported_result",
+          "inspection_level": "metadata_only",
           "source_locator": "Theorem 1.2",
           "assumptions_scope": "The repository attributes an ear decomposition of cycle-extendable graphs to this theorem; its exact hypotheses and scope were not checked in full text during the pilot.",
           "correspondence_note": "The claim states that this theorem is its only imported result.",
@@ -210,7 +217,6 @@
         "source_url": "https://export.arxiv.org/api/query?id_list=1111.4979",
         "date": "2026-08-11"
       },
-      "inspection_level": "metadata_or_abstract_inspected",
       "search_trail": [],
       "relevance": "General strong-Lefschetz background invoked by a physical-leaf extension claim.",
       "limitations": ["The pilot inspected metadata and abstract only; the repository gives no exact external theorem locator."],
@@ -218,6 +224,7 @@
         {
           "path": "claims/p7/P7_PHYSICAL_LEAF_ANNIHILATOR_EXTENSION_AND_QUOTIENT_SYZYGY_THEOREM.md",
           "role": "imported_result",
+          "inspection_level": "abstract_inspected",
           "source_locator": null,
           "assumptions_scope": "The repository invokes a general strong-Lefschetz result before proving a specialized physical extension; the exact imported statement and characteristic assumptions have not been matched.",
           "correspondence_note": "The claim distinguishes the external general result from its internal extension, but supplies no theorem or proposition number.",
@@ -241,14 +248,15 @@
         "source_url": "https://export.arxiv.org/api/query?id_list=1102.0368",
         "date": "2026-08-11"
       },
-      "inspection_level": "identity_verified",
       "search_trail": [],
       "relevance": "Boolean-lattice sl(2) background used to situate several internal constructions.",
       "limitations": ["The pilot verified authoritative metadata but did not inspect the abstract or full text."],
       "repository_usages": [
         {
           "path": "docs/SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md",
-          "role": "background"
+          "role": "background",
+          "inspection_level": "metadata_only",
+          "source_locator": null
         }
       ]
     },
@@ -265,14 +273,15 @@
         "source_url": "https://stacks.math.columbia.edu/tag/07Z6",
         "date": "2026-08-11"
       },
-      "inspection_level": "identity_verified",
       "search_trail": [],
       "relevance": "Standard background for Fitting-ideal and rank-degeneracy language used in the repository.",
       "limitations": ["This is a living reference without a fixed publication year in the inspected page; the relevant mathematical text was not audited in this pilot."],
       "repository_usages": [
         {
           "path": "docs/LITERATURE_REVIEW_2026-07-30.md",
-          "role": "background"
+          "role": "background",
+          "inspection_level": "metadata_only",
+          "source_locator": null
         }
       ]
     }

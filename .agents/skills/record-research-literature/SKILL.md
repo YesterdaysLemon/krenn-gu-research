@@ -1,18 +1,23 @@
 ---
 name: record-research-literature
-description: Record and verify external research literature used in the Krenn-Gu repository. Use when asked to look up related work, decide whether a theorem is already known, record a paper, add a source to the bibliography or literature registry, determine what a paper actually proves, cite a claim using external literature, assess novelty, or import an external theorem. Do not use for internal cross-references, unrelated symbolic or computational mathematics, or merely because an already-registered citation is mentioned incidentally.
+description: Verify and record external literature relevant to the Krenn-Gu project. Use for related-work or novelty searches, checking whether a result is known, determining what a paper proves, verifying an attribution or theorem hypothesis, or adding a durable source record. Do not use for internal repository references, unrelated mathematics, citation formatting alone, or incidental mentions requiring no literature work.
 ---
 
 # Record Research Literature
 
-Follow the canonical policy in `docs/literature/provenance.md`. Keep scientific
-status in the owning claim package; the source registry records provenance, not
-whether a repository claim is proved.
+Keep scientific status in the owning claim package; the source registry records
+provenance, not whether a repository claim is proved.
+
+Read the canonical protocol in `docs/literature/provenance.md` for a new source
+record, literature search, novelty assessment, imported result, or use that
+materially supports a claim. For a direct existing-record lookup or mechanical
+validation, skip the protocol and run only the smallest targeted registry
+command needed.
 
 ## Route the request
 
-1. For an exploratory search, record candidates as `lead_unverified` with the
-   search trail. Treat snippets as leads only.
+1. For an exploratory search, record candidates as unverified leads with null
+   `identity_verification` and the search trail. Treat snippets as leads only.
 2. For a background citation, verify bibliographic identity from an
    authoritative page before upgrading the record.
 3. For novelty or related-work assessment, record what was searched or
@@ -20,14 +25,15 @@ whether a repository claim is proved.
 4. For an imported theorem, require its exact locator, assumptions, scope, and
    correspondence to the repository use. If the necessary text is unavailable,
    leave an unresolved obligation rather than reconstructing it from memory.
-5. For an incidental citation already in `catalog/literature/sources.json`, do
-   only the lookup needed by the task. Do not load the full workflow.
+5. For a direct lookup of an existing record, do only the lookup needed by the
+   task. Do not load the full workflow.
 
 ## Work fail closed
 
 - Never invent a title, author, year, identifier, theorem locator, or scope.
-- Never infer full-text inspection from metadata, an abstract, a snippet, or a
-  remembered reading.
+- Never infer `relevant_passage_inspected` from metadata, an abstract, a
+  snippet, or a remembered reading, and never imply that an entire paper was
+  read because one passage was inspected.
 - Preserve conflicts and unavailable metadata as explicit limitations.
 - Do not download or archive PDFs unless the user separately authorizes it.
 - Stop and escalate any apparent mathematical or provenance conflict without

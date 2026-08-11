@@ -40,11 +40,17 @@ def source_record(path: str = "usage.md") -> dict:
             "source_url": "https://doi.org/10.1234/example.1",
             "date": "2026-08-11",
         },
-        "inspection_level": "identity_verified",
         "search_trail": [],
         "relevance": "Validator fixture.",
         "limitations": [],
-        "repository_usages": [{"path": path, "role": "background"}],
+        "repository_usages": [
+            {
+                "path": path,
+                "role": "background",
+                "inspection_level": "metadata_only",
+                "source_locator": None,
+            }
+        ],
     }
 
 
@@ -71,6 +77,11 @@ class LiteratureRegistryTests(unittest.TestCase):
         errors = validate_registry(self.registry({}), self.root)
         self.assertTrue(any("missing required field" in error for error in errors))
         self.assertTrue(any("citekey" in error for error in errors))
+
+        legacy = source_record()
+        legacy["inspection_level"] = "identity_verified"
+        errors = validate_registry(self.registry(legacy), self.root)
+        self.assertTrue(any("belongs on each repository usage" in error for error in errors))
 
     def test_duplicate_citekey_fails(self) -> None:
         first = source_record()
@@ -130,10 +141,10 @@ class LiteratureRegistryTests(unittest.TestCase):
     def test_verified_source_requires_authoritative_verification(self) -> None:
         record = source_record()
         record["authoritative_url"] = None
-        record["identity_verification"] = None
+        record["identity_verification"]["source_url"] = None
         errors = validate_registry(self.registry(record), self.root)
         self.assertTrue(any("authoritative HTTPS URL" in error for error in errors))
-        self.assertTrue(any("requires identity_verification" in error for error in errors))
+        self.assertTrue(any("source_url must be HTTPS" in error for error in errors))
 
     def test_verified_source_rejects_empty_or_credentialed_https_urls(self) -> None:
         for bad_url in (
@@ -164,12 +175,13 @@ class LiteratureRegistryTests(unittest.TestCase):
                 errors = validate_registry(self.registry(record), self.root)
                 self.assertTrue(any(expected in error for error in errors))
 
-    def test_imported_result_without_full_text_fails_closed(self) -> None:
+    def test_imported_result_without_relevant_passage_fails_closed(self) -> None:
         record = source_record()
         record["repository_usages"] = [
             {
                 "path": "usage.md",
                 "role": "imported_result",
+                "inspection_level": "metadata_only",
                 "source_locator": None,
                 "assumptions_scope": "Recorded scope.",
                 "correspondence_note": "Recorded correspondence.",
@@ -178,7 +190,13 @@ class LiteratureRegistryTests(unittest.TestCase):
         ]
         errors = validate_registry(self.registry(record), self.root)
         self.assertTrue(any("missing source_locator" in error for error in errors))
-        self.assertTrue(any("not inspected in full" in error for error in errors))
+        self.assertTrue(any("without relevant-passage inspection" in error for error in errors))
+
+        record["repository_usages"][0]["inspection_level"] = (
+            "relevant_passage_inspected"
+        )
+        errors = validate_registry(self.registry(record), self.root)
+        self.assertTrue(any("requires an exact source_locator" in error for error in errors))
 
     def test_unverified_lead_is_valid_offline_with_trail_and_limit(self) -> None:
         lead = source_record()
@@ -189,7 +207,6 @@ class LiteratureRegistryTests(unittest.TestCase):
                 "identifiers": {},
                 "authoritative_url": None,
                 "identity_verification": None,
-                "inspection_level": "lead_unverified",
                 "search_trail": ["query: exact graph matching terminology"],
                 "limitations": ["Bibliographic identity and year are unverified."],
                 "repository_usages": [],
@@ -213,7 +230,6 @@ class LiteratureRegistryTests(unittest.TestCase):
                 "identifiers": {},
                 "authoritative_url": None,
                 "identity_verification": None,
-                "inspection_level": "lead_unverified",
                 "search_trail": ["query: candidate source"],
                 "limitations": ["Identity is unresolved."],
             }
@@ -223,7 +239,12 @@ class LiteratureRegistryTests(unittest.TestCase):
 
         novelty = source_record()
         novelty["repository_usages"] = [
-            {"path": "usage.md", "role": "novelty_assessment"}
+            {
+                "path": "usage.md",
+                "role": "novelty_assessment",
+                "inspection_level": "abstract_inspected",
+                "source_locator": None,
+            }
         ]
         errors = validate_registry(self.registry(novelty), self.root)
         self.assertTrue(any("novelty assessment requires a search trail" in error for error in errors))
