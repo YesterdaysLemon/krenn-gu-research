@@ -145,8 +145,20 @@ most one root without that double escape give a detector for every companion
 configuration.  Combining the two results, the remaining locally transverse
 exception requires a zero or balanced-`2+2` companion frame and at least two
 root rows whose quotient support is at most one.  This still does not close
-the full `q=0,r=5` cell.  Every `q=0,r>=6` cell, every `q>=1` cell, and the
-unfactorized branch also remain open.
+the full `q=0,r=5` cell by itself.
+
+The strict synthesis
+[`complete transverse five-cell detector`](PROJECTIVELY_CONSTANT_LIFT_COMPLETE_TRANSVERSE_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md)
+closes that residual intersection.  Common-kernel contraction traps every
+zero-pair partner at each nonescape mode of a quotient-sparse root.  The exact
+good/zero/balanced companion classification then forces either a strong
+zero-pair endpoint or four weak roots sharing one outside mode, contradicting
+local concision.  Thus every locally `a/b`-transverse aligned projective
+`q=0,r=5` cell has at least one two-open detector, for every companion frame
+and every root quotient-support pattern.  Local `a/b` dependence still
+remains open, so this is not full `q=0,r=5` closure or a witness exclusion.
+Every `q=0,r>=6` cell, every `q>=1` cell, and the unfactorized branch also
+remain open.
 
 The
 [`rigid-colour boundary theorem`](RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md)
