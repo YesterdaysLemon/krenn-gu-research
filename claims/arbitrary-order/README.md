@@ -411,6 +411,19 @@ proper, while an exposed mixed coefficient still equals one.  The full
 mixed equations, phase coupling, active holonomy or pure-shore cancellation,
 and the deeper branch remain open.
 
+The
+[`phase-holonomy and minimal pure-cofactor flow theorem`](MATRIX_UNIT_PHASE_HOLONOMY_AND_MINIMAL_PURE_COFACTOR_FLOW_REDUCTION_THEOREM.md)
+then gives exact normal forms for those two phase exits.  Every active word
+cycle carries a nonzero endpoint-character circulation and a diagonal-gauge-
+invariant Laurent holonomy.  A cycle fibre either has an additional
+compatible term or every fibre is binomial and the holonomy equals
+`(-1)^m`.  A sparse eight-vertex three-cycle realizes the odd value `-1`, so
+this is not a sign contradiction.  Every pure-shore cancellation descends
+to a least supported residual whose Euler cofactor flow either branches in
+at least three terms at a vertex or is a spanning union of exact alternating
+even cycles.  Both structures survive moment gauge.  These reductions make
+the remaining phase data explicit but do not exclude it.
+
 At the Stage 27 boundary, the owner-gated H22/H31, Component20/21/23,
 high-coordinate, and mixed-lifecycle conflict surfaces were excluded from
 that batch and remained at root, unmoved and unadjudicated at that stage.
