@@ -82,7 +82,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "2256187bb842350a",
+      "document_sha256_16": "d446b40eef2d0fd7",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -137,7 +137,7 @@
       "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "Proved implication: schema + (star) => conjecture. Per-component tables written at the 13-component census; superseded where the README checkpoint (25 components) extends them.",
+      "note": "Proved implication at the local reduction level: schema + (star) excludes the displayed P5 -> Delta_3 restriction. It does not supply arbitrary-order/P7 extraction or gluing. The per-component tables were written at the 13-component census; consult the owning P4/P5 documents and current frontier for later 25-component claims and the B3 audit-acceptance gap.",
       "claim_package": "claims/p5/frontier",
       "proof_variant": "canonical",
       "subpackage": null,
@@ -2154,14 +2154,13 @@
     },
     {
       "name": "Component census and exhaustive all-pair-rank reduction (checkpoint)",
-      "document": "README.md",
-      "document_sha256_16": "2256187bb842350a",
+      "document": "claims/p4/classifications/P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md",
+      "document_sha256_16": "736c1f6b2d33b46d",
       "status": "verified_generic",
       "assumptions_and_excluded_divisors": [
         "twenty-five certified pure-P_4 component orbits",
-        "generic H31 empty on all 25 (per dedicated component docs where present)",
-        "generic H22 empty on 23 of 25; components 22 and 25 remain open",
-        "exhaustiveness within the all-pair-rank exceptional-graph reduction"
+        "exhaustiveness within the all-pair-rank exceptional-graph reduction",
+        "separately proved lower-pair exhaustion"
       ],
       "dependencies": [],
       "primary_verifier": null,
@@ -2170,7 +2169,7 @@
       "audit_provenance": "none_exists",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "Checkpoint narrative. Bottleneck B3: exhaustiveness quantifiers need human review; a component census is a lower bound until the cover statement is verified."
+      "note": "The owning P4 theorem asserts that the 25 component closures exhaust the pure-P4 incidence. Independent B3 acceptance of the load-bearing composition quantifiers remains open. H31/H22 fibre scopes are separately owned and are not part of this entry."
     },
     {
       "name": "Exhaustiveness: 25 component closures cover the all-pair-rank exceptional locus",
@@ -2297,8 +2296,8 @@
     },
     {
       "name": "Component twenty-two D23 pencil divisor-by-divisor closure",
-      "document": "README.md",
-      "document_sha256_16": "2256187bb842350a",
+      "document": "claims/p5/h22/unequal-complement-common-kernel-component-d23-pair-orbit-partial/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_PAIR_ORBIT_PARTIAL_OBSTRUCTION.md",
+      "document_sha256_16": "225993022016c416",
       "status": "partial",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -2308,7 +2307,7 @@
       "audit_provenance": "not_yet_mapped",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "D01 orbit closed; D23 orbit divisor-by-divisor in progress. BOTTLENECK B2."
+      "note": "The owning document is the partial finite-D23 obstruction and retains an explicit UNKNOWN residual. The D01 orbit is recorded separately. Later divisor leaves narrow but do not globally close this component."
     },
     {
       "name": "Eight Vertex Balanced All Bridge Set Tree Obstruction Withdrawn Overstrong",
