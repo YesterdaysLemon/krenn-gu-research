@@ -821,6 +821,33 @@
       "legacy_paths": []
     },
     {
+      "name": "Projectively Constant Lift Complete Three-Defect Five-Cell Detector Theorem",
+      "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_THREE_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md",
+      "document_sha256_16": "305459f20fee7fba",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero fixed-layer row-pair incidence, two-singleton support, arbitrary-ratio collision-kernel, inactive-set, and local-concision proof",
+        "conditional on the aligned physical common-two-row factorization and projectively constant shore at root j",
+        "the fixed-layer exclusion of b_w=0 applies to any defect count in q=0 r=5; it is not a global permanent nonrestriction theorem",
+        "new detector conclusion is only for exactly three R/B local defects in q=0 r=5; combined with preceding theorems every at-most-three-defect cell is detected",
+        "all rank-two companion configurations, all nonzero regular ratios, and every inactive-root pattern are covered within the four RRR/RRB/RBB/BBB strata",
+        "only collective nonzero detection is proved, not fixed-root injectivity or witness exclusion",
+        "four or five R/B defects, q=0 r>=6, q>=1, unfactorized cells, gluing, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_projectively_constant_lift_complete_three_defect_five_cell_detector.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_projectively_constant_lift_complete_three_defect_five_cell_detector.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (SymPy primary; standard-library audit)",
+      "external_binaries": [],
+      "note": "The characteristic-zero implication is the written b=0 coordinate-singleton exclusion, exact RRTT/RBTT/BBTT collision ledger, ratio-sensitive RRR intersections, RRB/RBB/BBB common kernels, inactive-set census, and local-rank contradictions. The primary checks 36 zero-b profiles, symbolic determinant minors and kernel bases, and 132 inactive-set boundary charts; the no-import audit independently uses a recursive permanent, rational row reduction on 84 ratio charts and 224 pair intersections, and a bitmask census. This detects every exactly-three-defect cell and leaves exactly four/five R/B defects open; global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Rigid-Colour Cofactor Annihilation and Backbone-Cancellation Boundary",
       "document": "claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md",
       "document_sha256_16": "96aecff02ad3e367",

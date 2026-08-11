@@ -200,6 +200,22 @@ larger or positive-surplus cells, the unfactorized branch, witness exclusion,
 and global gluing remain open.
 
 The
+[`complete three-defect detector`](PROJECTIVELY_CONSTANT_LIFT_COMPLETE_THREE_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md)
+first strengthens the fixed-layer boundary: row-pair incidence makes every
+root a coordinate row at a mode with `b=0`, and the resulting
+`2+1+1`-plus-zero profile violates the exact two-singleton `P_5`
+obstruction.  Thus every actual defect has nonzero `b` and is either regular
+(`a` a nonzero multiple of `b`) or `b`-only.  Exact arbitrary-ratio collision
+intersections and inactive-set crowding then detect all four exactly-three-
+defect multisets `RRR`, `RRB`, `RBB`, and `BBB`.  Combined with the preceding
+results, every aligned projective `q=0,r=5` cell with at most three local
+defects has a nonzero detector.  The exact residual is four or five `R/B`
+defects; with four `B` modes the present pair tensor is structurally zero, so
+a different sensor or fixed-layer exclusion is required.  This is still not
+witness exclusion, and larger/positive-surplus, unfactorized, gluing, and
+global obligations remain open.
+
+The
 [`rigid-colour boundary theorem`](RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md)
 sharpens that one-root branch.  It proves universal near-monochromatic deck,
 two-point cross-cycle, and minimal-deviation cycle identities.  Under the
