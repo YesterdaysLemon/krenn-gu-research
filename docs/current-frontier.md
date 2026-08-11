@@ -1,246 +1,259 @@
-# Current frontier of the Krenn–Gu conjecture effort
+# Current frontier of the Krenn–Gu conjecture programme
 
-Audience: a human mathematician assessing what this repository
-actually proves.  Stabilization pass, 2026-08-05.  Nothing in this
-document is a new claim; every statement cites the document that owns
-it.  The machine-readable companion is
-[`catalog/theorem-ledger.json`](../catalog/theorem-ledger.json).
+## Status, scope, and authority
 
-> **Post-snapshot notice (2026-08-10).** This remains the 2026-08-05
-> stabilization snapshot. Use the
-> [post-root-exit symbolic programme handoff](SYMBOLIC_PROGRAM_HANDOFF_2026-08-10.md)
-> for current continuation. In particular, the owning Component 25 packages
-> show a second live generic weighted-`H22` hole, so the statements below that
-> call Component 22 the sole exception or report 24-of-25 generic closure are
-> stale. The corresponding theorem-ledger census text and P4 audit mapping were
-> corrected with the handoff. These are index/proof-graph corrections, not new
-> results; the B3 semantic composition audit remains open.
+The global Krenn–Gu conjecture is **UNRESOLVED**. No complete
+characteristic-zero proof and no exact counterexample to the original global
+statement is known in this repository.
 
-**The global conjecture is UNRESOLVED.**  For even `n >= 6`,
-`d >= 3`, and complex `d x d` blocks `W_ij`, the matching-sum tensor
+This is the canonical maintained research map. It was reconstructed through
+PR #82 at merged commit
+`367eef49e5917a0f71594dce4c18a608850cdd6a`. Owning theorem documents are
+authoritative for proofs, assumptions, and evidence. This page records how
+those claims fit together; it does not replace them or strengthen their scope.
+The [theorem ledger](../catalog/theorem-ledger.json) is a partial claim/evidence
+index, not the proof graph, and its empty `dependencies` arrays mean “not
+recorded.”
+
+Except where an owner says otherwise, the live symbolic trunk below is over
+`C` or characteristic zero. Generic/function-field theorems do not include
+excluded divisors, projective boundaries, or arbitrary points without a proved
+specialization argument.
+
+For even `n >= 6` and `d >= 3`, the conjecture asks whether block matrices
+`W_ij in C^(d x d)` can satisfy
 
 ```text
-T_W(a_1,...,a_n) = sum_M prod_{ij in M} W_ij[a_i,a_j]
+T_W(a_1,...,a_n)
+  = sum_(perfect matchings M) product_({i,j} in M) W_ij[a_i,a_j]
+  = sum_(c=0)^(d-1) product_v 1_(a_v=c).
 ```
 
-has no proof or counterexample showing it cannot equal
-`sum_c e_c tensor ... tensor e_c`.  Reduction to any three colours
-makes `d = 3` the essential case.
+The programme concentrates on the ternary restriction. Every local P5, P6,
+or P7 result remains only a local proof leaf until a theorem extracts and
+glues that leaf from every hypothetical global witness.
 
----
+## Live proof topology
 
-## 1. What is proved exactly
+Arrows are typed. A `boundary` arrow names a surviving obligation; it is not a
+proof of the target. A `specialization` arrow applies only under the owner's
+hypotheses.
 
-### 1.1 Complete finite cases (computer-assisted, independently replayed)
+```mermaid
+flowchart TD
+  G0["Hypothetical complex witness<br/>global conjecture UNRESOLVED"]
 
-- **`n = 6`, all `d >= 3`: no complex solution.**  Map:
-  [`SIX_VERTEX_CERTIFICATE.md`](../claims/finite/n06/SIX_VERTEX_CERTIFICATE.md).  Method:
-  exhaustive support reduction, exact Laurent/algebraic conflict
-  extraction, byte-checked selector-CNF compilation, independent SAT
-  decision, DRAT replay, SHA-256 hash-chain audit.
-- **Eight-vertex boundaries** (all finite, all SAT/CEGAR with replayed
-  DRAT proofs): no 4-regular witness; no degree-four-vertex witness
-  through 17 edges; exact-18/19-edge degree-three results; the
-  84-entry and 7,938-labelled-support macro-families.  Maps:
-  `EIGHT_VERTEX_*_CERTIFICATE.md` family in the README index.
-- **Ten-vertex**: no 105-entry witness on a 5-regular exact-25-edge
-  skeleton; the `C10`/`C4+C6`/odd-factor equality families.  Maps:
-  `TEN_VERTEX_*` certificates.
-- **Order-14 equality factor families, partial but exact**:
-  `C3+C3+C8`, `C3+C4+C7`, `C3+C5+C6`, `C4+C5+C5`, `C3+C3+C4+C4`,
-  `C14` closed; `C4+C10`, `C6+C8`, `C4+C4+C6` closed orbit-by-orbit
-  (365/425, 292/328, 67/93 selectors excluded) — each exclusion is a
-  certified finite null result, **not** a family theorem.  Maps:
-  `FOURTEEN_VERTEX_*` certificates,
-  [`FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md`](../claims/finite/n14/FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md).
+  S1["Balanced complete-deck sensor<br/>PROVED reduction"]
+  S2["Full-sensor rational lift and Wick gate<br/>OPEN"]
+  S3["All balanced partitions rank-drop<br/>OPEN on witness locus"]
 
-### 1.2 Arbitrary-order structural theorems
+  M1["Maximum torus-root split<br/>PROVED reduction"]
+  M2["r >= 2 fixed-surplus layer<br/>PROVED reduction"]
+  PR["Zero-surplus P_r to Delta_3<br/>OPEN at arbitrary r"]
+  O1["Fixed-layer truncation and nonobservability<br/>PROVED boundary"]
+  O2["Two-open detector and q=0 star gauge<br/>PROVED boundary"]
+  O3["Higher-surplus or unfactorized detector<br/>OPEN"]
 
-Proved over `C` for every even order (symbolic, with independent
-finite-field or modular audits where stated):
+  U1["r = 1 complete matrix units<br/>PROVED normal form"]
+  U2["At-most-four-port response<br/>k = 1, 2, 3 remain OPEN"]
+  U3["Globally rigid colour system<br/>CONDITIONAL"]
+  U4["Three-block primitive and dual bridges<br/>PROVED"]
+  U5["Primitive-alone closure<br/>REFUTED ROUTE"]
+  U6["Cross parity, bridges, rigid-head Wick<br/>PROVED reduction"]
+  U7["Word-shore Tutte or global rematching<br/>OPEN"]
+  U8["Proper flag propagation<br/>OPEN"]
+  D1["Deeper blocker branch<br/>OPEN"]
 
-- no 4-regular witness in the simultaneous three-colour balanced
-  all-bridge boundary; no witness of maximum support degree at most
-  five there; no pairwise-disjoint exact-degree-six Kotzig/reciprocal
-  port boundary witness —
-  `FOUR_REGULAR_BALANCED_BRIDGE_OBSTRUCTION.md`,
-  `ARBITRARY_ORDER_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md`;
-- the root–blocker lower bounds: at least `r` outside blockers for
-  `r >= 2` zero-coupled roots; four blockers impossible (ideal
-  obstruction, 544-case `F_5` audit); the exact-three-blocker
-  permanent-rank lemma; order-four permanent subrank exactly two
-  (`FOURTH_ORDER_PERMANENT_SUBRANK_OBSTRUCTION.md`, 24,336-pair
-  `F_5` audit);
-- the `P_5` contraction obstructions: support-three contractions have
-  exact subrank two (6,561 kernel types, 104,976-case `F_5` audit);
-  the support-four positive restriction showing that extension is
-  false (`SUPPORT_FOUR_P5_CONTRACTION_RESTRICTION.md`).
+  A1["Simultaneous balanced all-bridge<br/>CONDITIONAL branch"]
+  A2["Degree <= 4 excluded;<br/>degree >= 5 OPEN"]
 
-### 1.3 The `P_5 -> Delta_3` component programme (the core)
+  P5["Local P5 component programme<br/>PARTIAL / boundary-limited"]
+  P7["Committed local P7 incidence<br/>criterion proved, outcome OPEN"]
+  GL["Universal extraction, synchronization,<br/>and local-to-global gluing OPEN"]
+  C2["Automatic characteristic-two lift<br/>REFUTED as a general route"]
 
-Every hypothetical restriction `P_5 -> Delta_3` reduces — by a verified
-chain of exact reductions — to a local map of one of two normalized
-families, **H31** or **H22**
-([`P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md`](../claims/p5/coordinate-cegar/P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md)).
-The attack then runs through the pure-`P_4` compression components:
+  G0 -->|universal reduction| S1
+  S1 -->|boundary| S2
+  S1 -->|boundary| S3
 
-- **Census**: twenty-five certified pure-`P_4` component orbits
-  (fivefolds and sixfolds), each with an exact family-tangent /
-  incidence certificate.  The all-pair-rank-exceptional-graph
-  reduction claims these twenty-five closures are exhaustive
-  ([`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](../claims/p4/classifications/P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md))
-  — see bottleneck 3 for the honest status of that claim.
-- **Generic marked `H31` fibre**: proved empty on **all 25**
-  components.  Twenty-four dedicated
-  `P5_H31_*_GENERIC_OBSTRUCTION.md` documents carry the function-field
-  theorems on disk; each has a `verify_*.py` primary verifier.  Of
-  those, 23 also have an independent `audit_*.py` modular audit.  The
-  single exception is the equal-support sixfold, whose claim rests on
-  its self-contained primary verifier together with the P4 component
-  audit `audit_p4_equal_support_sixfold_pure_component.py` (recorded in
-  [`catalog/theorem-ledger.json`](../catalog/theorem-ledger.json) as an explicit
-  `none_exists`, not an unmapped gap).  The twenty-fifth component's
-  `H31` closure is carried by the README checkpoint narrative.
-- **Generic weighted `H22` fibre**: proved empty on components
-  1–21, 23, 24.  Component 22 has its `D01` pencil closed and its
-  `D23` pencil under divisor-by-divisor closure (several divisors
-  still open; README lines 1176–1227 track them).
-- **Partial boundary closures**: equal/opposite-weight slopes,
-  parameter-pivot branches, coupled slope divisors, `r = 0` endpoints,
-  elliptic-end divisors — see
-  [`P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md`](../claims/p5/boundaries/P5_COMPONENT_BOUNDARY_DIVISOR_ATLAS.md).
-- **Two independent proofs** of the eighth component's weighted-`H22`
-  closure exist and are both retained: the canonical determinantal
-  marking-chart proof and the recovered `t`-free `14 x 8 -> 10 x 4`
-  elimination proof
-  ([`P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md`](../claims/p5/h22/disjoint-mixed-star/alternate/P5_H22_DISJOINT_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION_ALTERNATE.md)).
-  Both proofs are retained.  The alternate proof and audit were replayed
-  during this stabilization pass; the canonical proof retains its prior
-  status but was not replayed during this pass.  See
-  [`MERGE_AUDIT_REPORT.md`](audits/MERGE_AUDIT_REPORT.md).
+  G0 -->|universal reduction| M1
+  M1 -->|case r >= 2| M2
+  M1 -->|case r = 1| U1
+  S1 -->|premise| O1
+  M2 -->|premise| O1
+  O1 -->|residual refinement| O2
+  O2 -->|boundary| O3
+  M2 -->|zero-surplus specialization| PR
 
-### 1.4 Transfer-track inputs (bounded, no theorem promotion)
+  U1 -->|reduction| U2
+  U2 -->|specialization| U3
+  U3 -->|premise| U4
+  U4 -. primitive alone insufficient .-> U5
+  U1 -->|premise| U6
+  U2 -->|premise| U6
+  U6 -->|exact erasure| M2
+  U6 -->|boundary| U7
+  U2 -->|boundary| U8
+  U2 -->|boundary| D1
+  U6 -->|boundary| D1
+  U2 -->|simultaneous full flags| A1
+  A1 -->|residual refinement| A2
 
-Root-of-unity block permanent selector, symmetric hafnian lift,
-six-blocker quotient catalogue, and the `P_6`/`P_7` symbolic
-reductions (`ASTRA_MATHEMATICS_TRANSFER_STRATEGY.md` and the
-`ARBITRARY_PERMANENT_*` family).  These are exact bounded inputs to
-construction/gluing strategies; none changes the global status.
+  PR -->|local specialization only| P5
+  PR -->|local specialization only| P7
+  P5 -->|open gluing obligation| GL
+  P7 -->|open gluing obligation| GL
+  S2 -->|global section obligation| GL
+  G0 -. route boundary .-> C2
+```
 
----
+## Node key
 
-## 2. What remains conditional, local, generic, or boundary-limited
+| ID | Live node and exact status | Owning theorem or programme document |
+|---|---|---|
+| `G0` | Original global conjecture: **UNRESOLVED** | [Problem statement](../README.md#the-conjecture) |
+| `S1` | Balanced complete even deck and full-sensor/rank-drop dichotomy: **proved reduction** | [Balanced half-sensor theorem](../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md) |
+| `S2` | Pole-free normalized projective lift satisfying all Wick equations: **open** | [Balanced half-sensor theorem, exact frontier](../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md#6-exact-frontier) |
+| `S3` | Exclusion of all-balanced rank drop inside the hypothetical-witness locus: **open**; properness is proved only in ambient block-graph space | [Balanced half-sensor theorem](../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md#3-the-proper-closed-all-balanced-boundary) |
+| `M1` | Maximum torus-root saturation and `r=1` / `r>=2` split: **proved universal reduction** | [Maximal torus-root theorem](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md) |
+| `M2` | One complete fixed-surplus physical hafnian layer; coordinate two-residual absorption: **proved reduction, not exclusion** | [Maximal torus-root theorem](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer) |
+| `PR` | Zero-surplus weighted `P_r -> Delta_3` restriction for arbitrary `r>=5`: **proved extraction; arbitrary-r exclusion open**. The live `r=6` / P6 restriction remains inside this node; the three-excess notes address only the first strict-support layer, not arbitrary support. | [Maximal-root extraction](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer), [P6 package index](../claims/p6/README.md), [three-excess port boundary](../claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md), and [conformal Birkhoff boundary](../claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md) |
+| `O1` | Contracted truncation, same-fibre rank nonobservability, and single-open absorption: **proved structural boundary** | [Balanced fixed-surplus theorem](../claims/arbitrary-order/BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md) |
+| `O2` | Complete two-open equation and conditional `q=0` tensor-preserving star gauge: **proved boundary** | [Two-open gauge theorem](../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md) |
+| `O3` | A genuine higher-surplus or unfactorized selector/detector: **open** | [Two-open exact boundary](../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md#6-exact-boundary) |
+| `U1` | Complete nonzero one-matrix-unit blocks and forbidden-word cancellation: **proved normal form; exclusion open** | [Maximal-root one branch](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#3-the-maximum-one-monomial-branch) |
+| `U2` | Globally minimum forbidden word has at most four deviations; exact finite-port response and partial bridges: **proved reduction**. The `k=1`, `k=2`, and `k=3` cells all remain unexcluded; only `k=4` forces rigidity in the base colour. | [Four-switch theorem](../claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md) |
+| `U3` | Globally rigid colour factors into a pure hafnian and binary tensor: **proved conditionally; rigidity not forced** | [Rigid-colour boundary](../claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md) |
+| `U4` | Bi-null cuts, three-block primitive, and dual quadratic bridges: **proved; arbitrary-order exclusion open** | [Rigid primitive theorem](../claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_BINARY_PRIMITIVE_AND_QUADRATIC_BRIDGE_THEOREM.md) |
+| `U5` | “The primitive alone contradicts the tensor”: **refuted route** for every even order at least eight | [Primitive sharpness theorem](../claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_PRIMITIVE_SHARPNESS_AND_DUAL_BRIDGE_COMPLETION_OBSTRUCTION.md) |
+| `U6` | Cross-parity erasure, bridge/deeper entry, rigid-head Wick tower, and pseudoforest normal form: **proved reduction** | [Cross-parity theorem](../claims/arbitrary-order/MATRIX_UNIT_CROSS_PARITY_ERASURE_RIGID_HEAD_WICK_AND_BRIDGE_CORE_REDUCTION_THEOREM.md) |
+| `U7` | Higher mixed identities force word-shore perfect matchings/Tutte inequalities, or another word-preserving rematching: **open** | [Word-synchronization boundary](../claims/arbitrary-order/MATRIX_UNIT_BRIDGE_WORD_SYNCHRONIZATION_AND_WICK_SHARPNESS_BOUNDARY.md#4-fully-active-pure-cofactors-still-do-not-synchronize-the-word) |
+| `U8` | Proper nonempty colour-nonrigidity sets propagate to all vertices: **open** | [Four-switch partial-bridge theorem](../claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md#5-partial-bridge-systems) |
+| `D1` | Deeper double-star/multi-star blocker branch: **open**. Its blocker alternatives are pointwise after shrinking to a dense constructible stratum; no uniform blocker pair is proved on the whole component. | [Double-star lemma](../claims/arbitrary-order/DOUBLE_STAR_ANNIHILATION_LEMMA.md) and [multi-star factorization](../claims/arbitrary-order/MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md) |
+| `A1` | Simultaneous balanced all-bridge system: **proved conditional branch**, not universal extraction | [Three-colour balanced bridge intersection](../claims/arbitrary-order/THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md) |
+| `A2` | Saturated-diagonal maximum degree at most four: **excluded**; `Delta(D)>=5` remains **open** | [Cubic exclusion](../claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_EXCLUSIVITY_AND_CUBIC_DIAGONAL_EXCLUSION.md) and [degree-four exclusion](../claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FOUR_EXCLUSION.md) |
+| `P5` | Local `P5 -> Delta_3` component programme: **partial, generic and boundary-limited** | [P5 package index](../claims/p5/README.md) and [obligation ledger](../claims/p5/frontier/P5_DELTA3_OBLIGATION_LEDGER.md) |
+| `P7` | One committed legal sensor/incidence pullback: criterion **proved**, algebra outcome **open** | [Committed P7 criterion](../claims/p7/COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md) |
+| `GL` | Universal extraction, cross-chart/depth synchronization, and local-to-global gluing: **open** | [Top two-port observability boundary](../claims/arbitrary-order/GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md) |
+| `C2` | Automatic reduction of arbitrary characteristic-zero solutions to the pinned `F_2` argument: **refuted as a general lemma** | [Characteristic-two route boundary](../claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md) |
 
-| Limitation | Where it lives |
-|---|---|
-| **Generic, not pointwise**: every component closure is over the component function field.  Points where a certificate denominator vanishes (parameter divisors, slope divisors) are excluded, not proved.  The pointwise upgrade requires the extraction pass (below). | [`P5_POINTWISE_SPECIALIZATION_META_THEOREM.md`](../claims/p5/frontier/P5_POINTWISE_SPECIALIZATION_META_THEOREM.md); extraction scripts in `research_snapshots/2026-08-04-p5-delta3-obligation-ledger/scripts/` |
-| **Boundary-limited**: projective/chart boundaries of the component parametrizations are mostly untouched (24 boundary programmes named in the ledger). | [`P5_DELTA3_OBLIGATION_LEDGER.md`](../claims/p5/frontier/P5_DELTA3_OBLIGATION_LEDGER.md) II.5/III.2 |
-| **Component 22's `D23` pencil** is not fully closed generically. | README lines 1176–1227; `P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_*` docs |
-| **Components 19/20 and embedded-`P_3` boundaries**: 23 `*_CANDIDATE.md` documents exist; 9 have matching `*_VERIFICATION.md` docs, 14 do not.  Candidates are discovery-run reports, not theorems, until independently verified. | `P5_H22_COMPONENT19_*`, `COMPONENT20_INTRINSIC_*`, `P5_H22_EMBEDDED_P3_*` |
-| **Order-14 results are finite orbit theorems**, not family theorems; 60/36/26 orbits remain SAT in `C4+C10`/`C6+C8`/`C4+C4+C6`. | `FOURTEEN_VERTEX_MINIMAL_CIRCUIT_FRONTIERS_CERTIFICATE.md` |
-| **Stale ledger**: the 2026-08-04 obligation ledger was written against the 13-component census; the canonical line has since certified 25.  Its master-theorem schema and obligation structure remain valid; its per-component status tables are superseded where they conflict with the README checkpoint. | [`P5_DELTA3_OBLIGATION_LEDGER.md`](../claims/p5/frontier/P5_DELTA3_OBLIGATION_LEDGER.md) header |
+## Typed-edge table
 
----
+| Source | Relationship | Target | Exact meaning |
+|---|---|---|---|
+| `G0` | reduction | `S1` | Every hypothetical ternary witness has a balanced-sensor dichotomy. |
+| `S1` | boundary obligation | `S2`, `S3` | Neither full-sensor globalization nor witness-locus rank-drop is excluded. |
+| `G0` | reduction | `M1` | Maximum-cardinality torus roots give a pointwise exhaustive split. |
+| `M1` | case coverage | `M2`, `U1` | The two cases are `r>=2` and `r=1`; neither is excluded by the split. |
+| `S1` + `M2` | mathematical premises | `O1` | Rebalancing the fixed layer exposes a truncated contracted sensor. |
+| `O1` | residual refinement | `O2` | A second open root gives the exact next detector equation. |
+| `O2` | boundary obligation | `O3` | The tight star refutes an automatic detector; higher/unfactorized data are needed. |
+| `M2` | specialization | `PR` | Zero surplus yields a tight weighted permanent restriction at arbitrary `r>=5`; it is not reduced to P7. |
+| `U1` | reduction | `U2` | Matrix-unit cancellation reduces to an at-most-four-port response. |
+| `U2` | specialization | `U3` | Only the globally rigid-colour cell enters the deletion-deck factorization. |
+| `U3` | mathematical premise | `U4` | Rigid factorization yields the primitive and dual bridges. |
+| `U4` | refutation of argument | `U5` | The primitive alone cannot close arbitrary order. |
+| `U1` + `U2` | mathematical premises | `U6` | Parity and bridge structure refine the one-root branch. |
+| `U6` | reduction | `M2` | Exact erasure may produce a different realization with at least two roots. |
+| `U6` | boundary obligation | `U7` | Bridge normalization changes the exact word; synchronization remains missing. |
+| `U2` | boundary obligation | `U8` | Full flags have consequences, but proper nonempty flag sets remain. |
+| `U2`, `U6` | boundary obligation | `D1` | Both reductions retain the deeper-blocker alternative. |
+| `U2` | specialization | `A1` | Simultaneous full flags for all colours enter all-bridge, absent deeper blockers. |
+| `A1` | residual refinement | `A2` | PRs #72–#73 close degree at most four only. |
+| `PR` | specialization | `P5`, `P7` | These are two separately developed local lanes. The still-open `r=6` / P6 restriction remains in `PR`, and arbitrary `r>=8` is not reduced to any of these ranks. |
+| `P5`, `P7` | open gluing obligation | `GL` | Even complete local exclusions require a theorem connecting every global witness to them. |
+| `S2` | open gluing obligation | `GL` | A rational pointwise lift must extend to one physical block graph and satisfy all Wick relations. |
+| `G0` | refutation of argument | `C2` | Good reduction to the prime field is not automatic, and the source theorem's local correspondence remains pending. |
 
-## 3. Shortest logical route to the conjecture
+## Smallest positive next obligations
 
-The ledger states the route as one theorem schema
-([`P5_DELTA3_OBLIGATION_LEDGER.md`](../claims/p5/frontier/P5_DELTA3_OBLIGATION_LEDGER.md) I.4):
+These are positive theorems or exact decisions that would advance a surviving
+branch. They are not an instruction to begin all of them at once.
 
-1. **(Frontier reduction ⋆)** — any restriction forces an H31 or H22
-   local family.  *Done* (verified reductions;
-   `P5_HIGH_COORDINATE_PARTIAL_FRONTIER.md`).
-2. **(O-Cover)** — an explicit finite closed cover
-   `X_nz ⊆ C_1 ∪ ... ∪ C_N` up to symmetry.  *Claimed for the
-   all-pair-rank-exceptional locus with 25 components; needs the
-   quantifier audit of bottleneck 3.*
-3. **(O-H31)** — every marked `H31` fibre empty at **every** point of
-   every `C_k` (interior, divisors, boundaries).  *Generic part done
-   for all 25; divisor/boundary part open.*
-4. **(O-H22)** — every weighted `H22` pencil fibre empty at every
-   point, all slopes in `C^*`.  *Generic part done for 24 of 25;
-   divisor/boundary part open.*
+1. **Zero-surplus permanent restrictions.** Decide the live `P_6 -> Delta_3`
+   restriction, and exclude `P_r -> Delta_3` for every `r>=8` at every legal
+   support size, or prove an exact reduction to ranks that are already closed.
+   The committed P7 sensor and the exactly-three-excess support normal forms
+   are not exhaustive arbitrary-r theorems.
 
-Then no H31/H22 family exists, hence no restriction, hence (with the
-colour-reduction) the conjecture.  Every step is exact characteristic-zero
-mathematics; no probabilistic or numerical ingredient enters the proof
-schema — finite-field audits are corroboration only, and the repository
-policy is that timeouts, modular evidence, and failed solver runs are
-never promoted into proofs.
+2. **Word-shore forcing.** Prove from higher mixed coefficients that each pure
+   support graph induced on the actual word shore satisfies Tutte's condition,
+   or construct another exact word-preserving global rematching. Global pure
+   matchings and fully active pure cofactors are insufficient.
 
----
+3. **Higher-surplus/unfactorized detector.** Produce an exact selector that is
+   nonzero outside the `q=0` star gauge, or otherwise exclude the unfactorized
+   high-surplus cell. First- and two-open contractions do not automatically do
+   this.
 
-## 4. The three most decisive remaining bottlenecks
+4. **First remaining all-bridge degree.** Exclude or structurally reduce
+   `Delta(D)=5`. This does not address the separate deeper-blocker branch.
 
-**B1 — The divisor/boundary recursion (the bulk of the tree).**
-Each generic theorem hides finitely many inverted denominators.  The
-meta-theorem's extraction pass converts them into explicit curves
-([`P5_POINTWISE_SPECIALIZATION_META_THEOREM.md`](../claims/p5/frontier/P5_POINTWISE_SPECIALIZATION_META_THEOREM.md));
-the ninth component extracts in seconds to minutes (replayed in this
-pass), the tenth times out (840 s budget, structurally diagnosed: 14
-independent multilinear equations; see
-`research_snapshots/2026-08-04-p5-delta3-obligation-ledger/scripts/M1_EXTRACTION_PASS_ATTACK_PLAN.md`).
-Every extracted divisor is a one-dimension-down instance of the same
-problem.  The ledger counted ~35 named open divisors and 24 untouched
-boundary programmes at the 13-component stage; the count scales with
-the census.  This is where the work volume lives.
+5. **Component 22 isolated complement.** Close the finite-`D23` cell
+   `H=f2=f8=0`, `rho(rho+1)!=0`, `2h3+s!=0`, and keep it distinct from the
+   remaining `f2=0` residual. See the [slope-intersection owner](../claims/p5/h22/unequal-complement-common-kernel-component-d23-f2-f8-h3-slope-intersection/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_F2_F8_H3_SLOPE_INTERSECTION_OBSTRUCTION.md)
+   and [two-minor partial owner](../claims/p5/h22/unequal-complement-common-kernel-component-d23-h1-nonzero-two-minor-factor-cover-partial/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_TWO_MINOR_FACTOR_COVER_PARTIAL_OBSTRUCTION.md).
 
-**B2 — Component 22's `D23` pencil.**  The only certified component
-whose generic weighted `H22` closure is incomplete.  A large
-divisor-by-divisor programme is mid-flight (`rho=0`, `rho=-1`, `h0=0`
-slices closed; parts of the `H=0` and `f2=0` covers remain).  Until
-this closes, (O-H22) has a 24-of-25 hole at generic points.
+6. **P4-B3 semantic/composition audit.** Audit the nonzero-pure-factor, symmetry,
+   inclusion, and lower-pair quantifiers in the
+   [P4 all-pair-rank reduction](../claims/p4/classifications/P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md).
+   The owner asserts a 25-component exhaustiveness theorem; the independent
+   acceptance of those load-bearing quantifiers remains open. Script replay is
+   not a substitute for that review.
 
-**B3 — The O-Cover quantifier gap.**  The exhaustiveness statement is
-the master theorem's load-bearing hypothesis.  The canonical line
-claims the 25 closures are exhaustive *within the all-pair-rank
-exceptional-graph reduction*
-([`P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md`](../claims/p4/classifications/P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md));
-the ledger's warning still stands: a component census is a lower bound,
-and the cover must be verified as `X_nz ⊆ union` up to the symmetry
-group, including every support-degenerate and lower-rank tail.  This is
-the step most in need of human mathematical review, because its
-quantifiers are easy to over-claim and it alone converts per-component
-work into a theorem.
+7. **Committed P7 calculation.** Materialize the residual equations, pull back
+   the factor equations, justify properness/finiteness where used, and decide
+   `A_good`; proceed to `A_gen^star` only if the criterion requires it. A result
+   on this fixed sensor would still need `GL`.
 
----
+Component 25 is not a closed shortcut: its finite-`D23` three-branch cover is
+not an exclusion, and finite-`D01`, special fibres, and projective boundaries
+remain open.
 
-## 5. Candid audit (stabilization pass, 2026-08-05)
+Within the `r=1` route, the minimum-word cells `k=1`, `k=2`, and `k=3`
+remain distinct positive obligations. The port theorem packages their exact
+responses; it does not collapse them into the globally rigid `k=4` cell.
 
-The complete pass record — what was done, replayed, could not be
-replayed, and needs human review — is
-[`STABILIZATION_AUDIT_REPORT.md`](audits/STABILIZATION_AUDIT_REPORT.md).  The
-per-file merge resolution record is
-[`MERGE_AUDIT_REPORT.md`](audits/MERGE_AUDIT_REPORT.md).
+## Refuted or insufficient proof routes
 
-**Replayed and passed on this machine** (Singular 4.3.2 under WSL;
-sympy 1.14):
+| Route | Exact finding | Owner |
+|---|---|---|
+| Automatic characteristic-zero to `F_2` reduction | Refuted as a general lemma; good reduction and prime-field residue are not forced | [Characteristic-two boundary](../claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md) |
+| Fixed surplus determines balanced-sensor rank | False: one fixed-layer fibre can contain deficient and full uncontracted shores | [Fixed-surplus nonobservability](../claims/arbitrary-order/BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md) |
+| The first two-open equation always detects the affine gauge | False on a conditional tight `q=0` outside-star cell | [Two-open star invisibility](../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md) |
+| Primitive or pure scalar hafnian pencils close the rigid branch | False at arbitrary order; mixed deletion and completion coupling remain essential | [Primitive sharpness](../claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_PRIMITIVE_SHARPNESS_AND_DUAL_BRIDGE_COMPLETION_OBSTRUCTION.md) |
+| Bogdanov-backbone cancellation alone contradicts equality | False: all selected backbone mixed words can cancel while other words fail | [Rigid-colour cancellation boundary](../claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md) |
+| Bridge normalization, parity/Wick, or fully active pure cofactors synchronize the exact word | False; exact six-vertex countermechanisms isolate the word-shore condition | [Word-synchronization boundary](../claims/arbitrary-order/MATRIX_UNIT_BRIDGE_WORD_SYNCHRONIZATION_AND_WICK_SHARPNESS_BOUNDARY.md) |
+| One fixed P7 survivor or incidence result globalizes automatically | False as an inference: one still needs physical edge descent, all Wick equations, and universal extraction | [Balanced sensor Wick gate](../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md) |
 
-- alternate weighted-`H22` verifier: `verified: true`, all unit-ideal
-  certificates, 1327 s;
-- alternate weighted-`H22` audit: `audited: true`, moduli 11/13,
-  167 s;
-- ninth-component `H31` extraction: all four frames extracted, ledger
-  reproduced byte-for-byte except per-run timings, 462 s.
+These are refutations of arguments, not counterexamples to the Krenn–Gu
+conjecture.
 
-**Not replayed in this pass** (documented, not hidden):
+## Evidence, disagreements, and maintenance
 
-- the canonical weighted-`H22` verifier/audit (import chain + hours of
-  Singular); its status as the primary proof is unchanged by this pass;
-- the 717 `verify_*.py` scripts generally — each theorem doc names its
-  own verifier and audit, but a full sweep is manual;
-- all SAT/DRAT certificate replays (require kissat/glucose/drat-trim
-  binaries and the full CNF regeneration chain);
-- the tenth-component extraction (timeout reproduced deliberately as
-  the M5 diagnostic).
+- The P4 owner asserts a 25-component exhaustiveness theorem. The programme
+  retains P4-B3 as a human semantic/composition audit of its load-bearing
+  quantifiers. This is an audit-acceptance gap, not an automatic mathematical
+  contradiction and not permission to call the cover either unproved or fully
+  audited without qualification.
+- Several P5 results are generic/function-field or divisor-specific. Package
+  colocation, a component count, or a finite certificate does not close their
+  special and projective boundaries.
+- The external characteristic-two Lean project is source-inspected candidate
+  evidence here; local build replay and statement correspondence remain
+  pending. The local algebraic route obstruction is independent of accepting
+  that external formalization.
+- `primary_verifier` and `independent_audit` are evidence roles, not
+  mathematical premises. Bounded checks do not prove arbitrary-order prose.
+- Any PR that changes a node, edge, open leaf, route refutation, or local/global
+  scope on this page must update it. A PR that changes mathematical claims but
+  leaves this live frontier unchanged must explicitly state why no frontier
+  update is needed. The owning claim document must change when the theorem
+  itself changes.
 
-**Requires human mathematical review** (agents cannot adjudicate):
-
-- the exhaustiveness claim and its quantifier scope (B3);
-- the 14 candidate documents lacking verification docs;
-- whether the 25-component census and the 13-component ledger's
-  obligation structure compose cleanly (the ledger predates the census
-  growth).
-
-Nothing in this pass weakened the UNRESOLVED status, promoted modular
-evidence to proof, or created a new theorem claim.
+The detailed reconstruction, reviewer disagreements, relocation inventory,
+and PR #72–#82 evidence are in the
+[programme proof-topology audit](audits/PROGRAMME_PROOF_TOPOLOGY_AUDIT_2026-08-10.md).
+The superseded chronology remains available in the
+[2026-08-05 frontier snapshot](history/current-frontier-stabilization-snapshot-2026-08-05.md)
+and [2026-08-10 handoff](history/handoffs/SYMBOLIC_PROGRAM_HANDOFF_2026-08-10.md).

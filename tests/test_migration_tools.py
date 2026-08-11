@@ -2189,13 +2189,16 @@ class EvidenceSemanticsContractTests(unittest.TestCase):
             "Component census and exhaustive all-pair-rank reduction "
             "(checkpoint)")
         scope = " ".join(checkpoint["assumptions_and_excluded_divisors"])
-        self.assertIn("23 of 25", scope)
-        self.assertIn("components 22 and 25", scope)
+        self.assertIn("twenty-five certified pure-P_4 component orbits", scope)
+        self.assertNotIn("23 of 25", scope)
+        self.assertNotIn("components 22 and 25", scope)
+        self.assertIn("separately owned", checkpoint["note"])
 
         cover = next(
             entry for entry in ledger["entries"]
-            if entry["document"].endswith(
-                "P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md"))
+            if entry["name"] ==
+            "Exhaustiveness: 25 component closures cover the "
+            "all-pair-rank exceptional locus")
         self.assertEqual(
             cover["independent_audit"],
             "claims/p4/classifications/"

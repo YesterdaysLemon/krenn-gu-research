@@ -190,6 +190,17 @@ the global status:
 - neither changes global status merely because one agent reports
   success.
 
+### Live-frontier maintenance
+
+Any PR that changes the live mathematical frontier must update
+`docs/current-frontier.md`.  This includes a new or withdrawn theorem, a branch
+closure or new residual branch, a changed local/global or generic/pointwise
+scope, a new reduction edge, or a refuted proof route.  A PR that changes
+mathematical claims but leaves the live frontier unchanged must explicitly
+state why no frontier update is needed.  The frontier is a maintained
+navigation and proof-topology map; it does not replace the owning theorem
+document, proof, verifier, audit, or formalization record.
+
 ## 8. Software and verifier mode
 
 Prefer reproducible, portable tooling.
