@@ -1,0 +1,4 @@
+interface:
+  display_name: "Record Research Literature"
+  short_description: "Record verified research source provenance"
+  default_prompt: "Use $record-research-literature to verify and record this source without overstating what was inspected."

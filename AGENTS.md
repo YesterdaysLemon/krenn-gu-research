@@ -19,6 +19,11 @@ Use focused retrieval rather than reading every historical file.
 
 For operational/layout questions, current Git state is authoritative.
 
+Before changing repository content, inspect Git, worktree, and process state
+enough to protect active workers.  Base implementation on a current
+`origin/main` in an isolated worktree; do not edit, clean, reset, or stop
+another worker or its worktree.
+
 For scientific questions, do not confuse committed state with
 mathematical truth.  Read the claim's status, assumptions, provenance,
 dependencies, verifier/audit evidence, and any formal counterpart.
@@ -179,6 +184,10 @@ When doing mathematical research:
 - never promote a timeout, failed search, modular experiment, or
   numerical observation into a proof.
 
+When external literature materially supports a mathematical premise or
+novelty assessment, follow `docs/literature/provenance.md`; search-result
+snippets remain unverified leads.
+
 If work appears to close a major frontier, do not immediately rewrite
 the global status:
 
@@ -257,7 +266,7 @@ The no-new-debt ratchet and exact end-state allowlist are defined in
 resolves ambiguous ownership, or changes scientific status.
 
 Phase R3 exact end-state enforcement is active.  The tracked root is
-limited to the seven files and nine directories explicitly justified
+limited to the seven files and ten directories explicitly justified
 by `check_hygiene.py`; every nonallowlisted top-level path fails the
 ordinary local and CI hygiene command.  Expanding that allowlist is a
 reviewed policy change, not an environment-variable override.
@@ -332,6 +341,10 @@ Per-family mathematics:
 the relevant claim package and its own README/status documents.
 
 ## 12. Stop conditions
+
+Treat an explicit task-local stop or wind-down instruction as terminal for
+that scope.  Persistent-goal continuation does not authorize a new research
+lane.
 
 Stop and report rather than silently repairing when:
 

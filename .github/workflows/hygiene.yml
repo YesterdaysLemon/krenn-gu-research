@@ -1,7 +1,7 @@
 name: hygiene
 
-# Lightweight integrity floor.  Runs the same checks a contributor can
-# run locally with `python check_hygiene.py`:
+# Lightweight integrity floor.  Begins with the checks a contributor can run
+# locally with `python check_hygiene.py`, then adds focused tests below:
 #   1. every tracked Python file compiles;
 #   2. no generated solver artifact is tracked;
 #   3. local Markdown links resolve;
@@ -11,7 +11,7 @@ name: hygiene
 #   5. portability regression scan (no machine-specific paths);
 #   6. the five fast verifiers run and exit zero;
 #   7. dependency/solver versions are displayed.
-#   8. active Phase-R3 strict 16-entry root allowlist plus the historical
+#   8. active Phase-R3 strict 17-entry root allowlist plus the historical
 #      no-new/no-unretired-deletion debt ratchet;
 # test_*.py files read tmp/ audit fixtures produced by the certificate
 # replay chains; they stay manual (see docs/current-frontier.md, audit
@@ -59,6 +59,9 @@ jobs:
 
       - name: Run migration-tool tests
         run: python -m unittest -v tests.test_migration_tools
+
+      - name: Run literature-registry tests
+        run: python -m unittest -v tests.test_literature_registry
 
       - name: Run H31 marked-fibre reconciliation tests
         run: python -m unittest -v tests.test_h31_cbmf_reconciliation
