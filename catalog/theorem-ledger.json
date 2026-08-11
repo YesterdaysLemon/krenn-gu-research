@@ -1321,6 +1321,32 @@
       "legacy_paths": []
     },
     {
+      "name": "Matrix-Unit Complete Pure-Target Moment-Compatible Odd-Holonomy Sharpness Theorem",
+      "document": "claims/arbitrary-order/MATRIX_UNIT_COMPLETE_PURE_TARGET_MOMENT_COMPATIBLE_ODD_HOLONOMY_SHARPNESS_THEOREM.md",
+      "document_sha256_16": "b7c698b73d5d288f",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "the bounded complete matrix-unit table, pure fibres, active-cycle fibres, Laurent holonomy, balance certificate, nonrigidity sets, and exposed word are exact over Q",
+        "the strict positive endpoint balance certifies the fixed label support; its integral weights are auxiliary incidence-dual numbers and are not the unit physical amplitudes or their squared magnitudes",
+        "the actual squared-amplitude moment-balanced representative is an exact existence consequence over C of the imported coercive strict-convexity theorem; no explicit algebraic minimizer is claimed",
+        "zero-colour-sum diagonal gauge fixes the three pure coefficients, scales every mixed coefficient by a nonzero word character, and leaves the cycle Laurent holonomy invariant",
+        "complete physical r=1 support and all three pure target coordinates are present, but an exposed mixed coefficient is nonzero, so the table is not a witness or counterexample",
+        "additional mixed target equations, aggregate holonomy, pure cofactor branching or cycles, the deeper branch, r=1 exclusion, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_matrix_unit_complete_pure_target_moment_compatible_odd_holonomy_sharpness.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_matrix_unit_complete_pure_target_moment_compatible_odd_holonomy_sharpness.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "A complete eight-vertex one-matrix-unit table has unique unit pure matchings for all three colours, three complete binomial active-cycle fibres with invariant H=-1, a strictly positive integral endpoint balance with common loads (7,7,7), and three proper nonempty nonrigidity sets. The imported moment theorem supplies an actual squared-amplitude balanced representative preserving the pure entries, cycle zeros, holonomy, and a unique exposed nonzero mixed term. Thus completion, pure normalization, moment balance, proper nonrigidity, and odd-cycle sign do not close the holonomy branch without further mixed equations. The table is not a witness, and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Four Blocker Ideal Obstruction",
       "document": "claims/arbitrary-order/FOUR_BLOCKER_IDEAL_OBSTRUCTION.md",
       "document_sha256_16": "b7fb5e2394539754",
