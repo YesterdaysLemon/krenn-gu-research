@@ -1401,6 +1401,34 @@
       "legacy_paths": []
     },
     {
+      "name": "Matrix-Unit Complete Same-Multidegree Fibre-Lattice Reduction and Binomial Parity Dichotomy Theorem",
+      "document": "claims/arbitrary-order/MATRIX_UNIT_COMPLETE_SAME_MULTIDEGREE_FIBRE_LATTICE_REDUCTION_AND_BINOMIAL_PARITY_DICHOTOMY_THEOREM.md",
+      "document_sha256_16": "3f204d421d7c184b",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact matching-monomial and group-algebra arguments over an arbitrary characteristic-zero field at every even order",
+        "the word multidegree is mixed, so every word in the complete block is a target-zero coordinate; empty matching fibres are retained as tautologies",
+        "the physical stratum is the complete nonzero r=1 matrix-unit Laurent torus with one fixed ordered endpoint-label pair and one invertible amplitude per edge",
+        "normalization uses every compatible matching in every word fibre and divides only by an invertible reference matching monomial",
+        "the within-fibre difference lattice may be nonsaturated; freeness over its group algebra uses coset representatives and does not assume a unimodular pivot or direct-summand lattice",
+        "the signed integer-kernel parity criterion is imported from the earlier integer signed-lattice transport theorem; the new content is the complete-block descent and exact holonomy-elimination bridge",
+        "a parity-consistent all-binomial block is proper and imposes exactly H=(-1)^m on a selected active cycle, but an actual full physical-torus point is asserted only over C",
+        "the theorem does not force a singleton or odd dependency and does not classify aggregate fibres, other multidegrees, pure-cofactor exits, deeper blockers, the r=1 branch, or the global conjecture"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_matrix_unit_complete_same_multidegree_fibre_lattice_reduction_and_binomial_parity_dichotomy.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_matrix_unit_complete_same_multidegree_fibre_lattice_reduction_and_binomial_parity_dichotomy.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (sympy and standard library)",
+      "external_binaries": [],
+      "note": "For any complete mixed same-multidegree target block on the complete nonzero r=1 matrix-unit torus, dividing each nonempty fibre by one reference matching descends the exact ideal to the group algebra of all within-fibre matching differences. The ambient Laurent ring is free over that group algebra, so unit status and any in-lattice holonomy elimination descend faithfully even for nonsaturated lattices. A singleton is a unit. If all nonempty fibres are binomial, an odd signed integer-kernel dependency is exactly the unit branch; otherwise the block is proper and a selected m-cycle eliminates to precisely (H-(-1)^m), with no stronger same-degree holonomy polynomial. Aggregate fibres remain open. Independent matching-first/Smith-form and no-import word-first/unimodular-kernel checkers audit the bridge. Global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Four Blocker Ideal Obstruction",
       "document": "claims/arbitrary-order/FOUR_BLOCKER_IDEAL_OBSTRUCTION.md",
       "document_sha256_16": "b7fb5e2394539754",
