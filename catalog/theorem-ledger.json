@@ -689,6 +689,32 @@
       "legacy_paths": []
     },
     {
+      "name": "Projectively Constant Lift Five-Cell Pair Collision and All-Companion Detector Theorem",
+      "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_FIVE_CELL_PAIR_COLLISION_AND_ALL_COMPANION_DETECTOR_THEOREM.md",
+      "document_sha256_16": "cf1addf12a8ce25f",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero common-kernel contraction, four-mode collision injection, and symmetric rank-two zero-edge proof",
+        "conditional on the aligned physical common-two-row factorization and projectively constant shore at root j",
+        "detector conclusion is only for q=0 and r=5 with a_u and b_u independent at every outside mode",
+        "at most one persistent root may escape span(a_u,b_u) at fewer than two modes; the third nonzero mode is imported from root-row full span",
+        "arbitrary rank-two companion configurations are covered, but only collective nonzero detection is proved, not fixed-root injectivity or witness exclusion",
+        "exceptional companions with at least two quotient-sparse roots, local dependence, q=0 r>=6, q>=1, unfactorized, gluing, and global obligations remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_projectively_constant_lift_five_cell_pair_collision_detector.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_projectively_constant_lift_five_cell_pair_collision_detector.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (SymPy primary; standard-library audit)",
+      "external_binaries": [],
+      "note": "The arbitrary-field implication is the written common-kernel contraction to the injective four-mode collision map and the rank-two symmetric zero-edge proof. The primary checks 120 injectivity charts and 1220 companion frames; the no-import audit separately checks 150 charts and 2310 frames with rational elimination and recursive permanents. An exact weak-root collision kernel preserves the scope wall. This shrinks but does not close q=0,r=5, and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Rigid-Colour Cofactor Annihilation and Backbone-Cancellation Boundary",
       "document": "claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md",
       "document_sha256_16": "96aecff02ad3e367",
