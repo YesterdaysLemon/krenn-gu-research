@@ -1429,6 +1429,36 @@
       "legacy_paths": []
     },
     {
+      "name": "Matrix-Unit Binomial-Core Torsion-Sheet and Rank-One Aggregate Quotient Theorem",
+      "document": "claims/arbitrary-order/MATRIX_UNIT_BINOMIAL_CORE_TORSION_SHEET_AND_RANK_ONE_AGGREGATE_QUOTIENT_THEOREM.md",
+      "document_sha256_16": "29bc75a0a8419a50",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact finitely generated abelian group-algebra, Smith torsion, finite Fourier, and Laurent PID arguments over C at every even order",
+        "the input is the proved U7E normalization of one complete mixed same-multidegree target block on the complete nonzero r=1 matrix-unit torus",
+        "one selected active transport cycle has complete binomial fibres and every one of its cycle equations belongs to the chosen binomial core",
+        "the selected signed binomial core is parity-consistent; an odd dependency is already the U7E unit branch",
+        "extension of the core sign character uses divisibility of C*; changing the extension changes only the quotient presentation by a character automorphism",
+        "nonsaturation is retained as Smith torsion and every torsion character sheet is required for a unit-ideal conclusion",
+        "quotient free rank zero is completely decided by finite character evaluations and free rank one by exact univariate Laurent gcds after removing monomial units",
+        "an aggregate equation can only toggle the selected cycle elimination between (1) and (H-(-1)^m); this conclusion does not apply to an aggregate cycle fibre",
+        "the theorem does not force a fully binomial cycle, quotient free rank at most one, death of every low-rank sheet, or a uniform rank-at-least-two unit certificate",
+        "aggregate cycle fibres, cross-multiplicity coupling, pure/deeper exits, the general r=1 exclusion, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_matrix_unit_binomial_core_torsion_sheet_and_rank_one_aggregate_quotient.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_matrix_unit_binomial_core_torsion_sheet_and_rank_one_aggregate_quotient.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (sympy and standard library)",
+      "external_binaries": [],
+      "note": "For a parity-consistent binomial core containing every fibre of an active binomial cycle, a character automorphism untwists the core and identifies its exact residual algebra with C[L/L_B]. Smith torsion gives a finite product of Laurent character sheets. Residual aggregate unit/properness is completely decided by scalar evaluations in quotient free rank zero and by exact univariate Laurent gcds in free rank one. Killing every sheet makes the block a unit; any surviving sheet leaves exactly H=(-1)^m, so aggregate equations cannot produce a different stronger nonunit holonomy polynomial. Aggregate cycle fibres and free rank at least two remain open. Independent SymPy/Smith/Fourier and no-import Gaussian/Euclidean implementations audit the mechanisms. Global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Four Blocker Ideal Obstruction",
       "document": "claims/arbitrary-order/FOUR_BLOCKER_IDEAL_OBSTRUCTION.md",
       "document_sha256_16": "b7fb5e2394539754",
