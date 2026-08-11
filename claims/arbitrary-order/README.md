@@ -436,6 +436,19 @@ remains nonzero, so the table is not a witness.  Complete physical support,
 pure normalization, magnitude balance, and odd-cycle sign therefore cannot
 replace the still-open use of the remaining mixed target equations.
 
+The follow-up
+[`exposed mixed-fibre transport-isolation theorem`](MATRIX_UNIT_EXPOSED_MIXED_FIBRE_TRANSPORT_ISOLATION_AND_NEIGHBOUR_SHARPNESS_THEOREM.md)
+closes the first attempted continuation from that exposed word.  Its
+complete fibre is one nonzero monomial in multiplicity `(7,1,0)`, so the
+target equation rejects the fixed label support rather than constraining the
+`(4,4,0)` active-cycle holonomy.  The table's only additional zero mixed
+fibre is an internally cancelling offdiagonal binomial.  An exact `Q(t)`
+deformation satisfies that equation together with the three cycle equations
+and pure targets while retaining `H=-1` and a nonzero exposed coefficient.
+Thus one locally coupled neighbouring equation is also insufficient; a
+successful continuation needs same-transport-multidegree equations, a new
+cross-multiplicity bridge, or one of the deeper/pure exits.
+
 At the Stage 27 boundary, the owner-gated H22/H31, Component20/21/23,
 high-coordinate, and mixed-lifecycle conflict surfaces were excluded from
 that batch and remained at root, unmoved and unadjudicated at that stage.

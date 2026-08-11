@@ -1347,6 +1347,33 @@
       "legacy_paths": []
     },
     {
+      "name": "Matrix-Unit Exposed Mixed-Fibre Transport Isolation and Neighbour Sharpness Theorem",
+      "document": "claims/arbitrary-order/MATRIX_UNIT_EXPOSED_MIXED_FIBRE_TRANSPORT_ISOLATION_AND_NEIGHBOUR_SHARPNESS_THEOREM.md",
+      "document_sha256_16": "94bb0221363727b5",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "the bounded complete endpoint-label support is exactly the support of the preceding U7D theorem; the exposed and neighbouring fibre classifications are not asserted for arbitrary matrix-unit label supports",
+        "the exposed word has multiplicities (7,1,0) and one complete nonzero monomial, so its target equation excludes this fixed complete support rather than supplying a holonomy equation",
+        "established U7B bridge transport preserves colour multiplicities and therefore does not connect the exposed word to the (4,4,0) active cycle; no universal cross-multiplicity separation theorem is claimed",
+        "the exact Laurent family is defined over Q(t) with t nonzero; t=0 and every vanishing physical amplitude lie outside the complete r=1 Laurent torus",
+        "the additional word 02001121 is the only zero mixed fibre beyond the three cycle words in this family, has D=Q=0 after a two-term offdiagonal cancellation, and is not a new active transport word",
+        "the family satisfies the three pure targets and four selected mixed zero equations but has many other nonzero mixed coefficients, including c_00000100=t, so it is not a witness or counterexample",
+        "aggregate holonomy, stronger same-multidegree mixed coupling, a new cross-multiplicity bridge, pure cofactor branching or cycles, the deeper branch, r=1 exclusion, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_matrix_unit_exposed_mixed_fibre_transport_isolation_and_neighbour_sharpness.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_matrix_unit_exposed_mixed_fibre_transport_isolation_and_neighbour_sharpness.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "The U7D exposed word 00000100 has one complete monomial and multiplicities (7,1,0), so its target equation rejects that fixed nonzero label support and lies outside the (4,4,0) transport closure carrying H. The table's only further zero mixed fibre is a locally coupled two-term offdiagonal cancellation. An exact Q(t) deformation preserves complete support, the three pure targets, strict endpoint balance, the three active-cycle equations, and that fourth mixed equation while retaining H=-1 and exposed coefficient t. Therefore the selected elimination ideal intersects Q[H] only in (H+1); one neighbouring equation does not strengthen holonomy. The family is not a witness and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Four Blocker Ideal Obstruction",
       "document": "claims/arbitrary-order/FOUR_BLOCKER_IDEAL_OBSTRUCTION.md",
       "document_sha256_16": "b7fb5e2394539754",
