@@ -1374,6 +1374,33 @@
       "legacy_paths": []
     },
     {
+      "name": "Matrix-Unit U7D Complete Same-Multidegree Target-Block Saturation Exclusion Theorem",
+      "document": "claims/arbitrary-order/MATRIX_UNIT_U7D_COMPLETE_SAME_MULTIDEGREE_TARGET_BLOCK_SATURATION_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "1ee83a5c16ffbcda",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "the theorem classifies exactly the fixed complete eight-vertex U7D endpoint-label support and does not classify arbitrary matrix-unit label supports or arbitrary order",
+        "the complete same-multidegree block consists of all 70 words with colour counts (4,4,0); empty fibres are retained as tautological zero equations",
+        "the exact fibre census has 57 empty, 10 singleton, and 3 binomial fibres, with the binomials exactly the imported active cycle",
+        "all 28 physical amplitudes are inverted in the complete nonzero r=1 Laurent torus; before saturation a singleton equation forces a zero physical amplitude and leaves this support stratum",
+        "the saturated ideal and its elimination in Q[H] are the unit ideal, which is fixed-support exclusion rather than a stronger compatible holonomy polynomial",
+        "the other two balanced binary blocks of the unpermuted table are empty; global colour relabelling transports the active-block census but is not a symmetry claim about the unpermuted table",
+        "same multidegree is only a grading under current theorems; a universal complete-block unit-or-syzygy lemma, aggregate holonomy, cross-multiplicity coupling, pure cofactor exits, the deeper branch, r=1 exclusion, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_matrix_unit_u7d_complete_same_multidegree_target_block_saturation_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_matrix_unit_u7d_complete_same_multidegree_target_block_saturation_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "For the fixed complete U7D endpoint-label table, the full 70-word (4,4,0) block has 57 empty, 10 singleton, and exactly three binomial fibres. Any singleton target equation is a unit after Laurent localization at all physical amplitudes, so the complete same-degree ideal and its intersection with Q[H] are both (1). This excludes the fixed support in the active cycle's own multidegree but yields no stronger compatible holonomy polynomial and no arbitrary-order exclusion. Independent matching-first and word-first exact checkers verify the census, distinct singleton unit certificates, the cycle regression, and all six global colour relabellings. Global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Four Blocker Ideal Obstruction",
       "document": "claims/arbitrary-order/FOUR_BLOCKER_IDEAL_OBSTRUCTION.md",
       "document_sha256_16": "b7fb5e2394539754",
