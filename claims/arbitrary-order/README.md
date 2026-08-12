@@ -439,6 +439,23 @@ a witness.  Aggregate-cycle equations alone are therefore exhausted as a
 holonomy restriction; a complete-target or cross-fibre coupling is required.
 
 The
+[`aggregate extra-matching target-attachment theorem`](MATRIX_UNIT_AGGREGATE_EXTRA_MATCHING_TARGET_ATTACHMENT_THEOREM.md)
+supplies that coupling whenever an aggregate extra term has a nonempty
+offdiagonal core and meets a cancelling pure shore.  A conformally minimal
+zero inside the shore has the primitive-cycle/sparse-fan/aggregate-port
+normal form, and every one of its terms extends by the fixed extra matching
+into the same mixed target fibre with identical exponent differences.  If
+the source shores do not cancel, bridge normalization instead gives the
+deeper branch, the same pure attachment at the bridge word, or another active
+complete target equation.  On a shortest cycle the active word is outside
+the cycle or is exactly the selected successor.  The latter parallel case is
+sharp: a complete locally concise ten-vertex `Q(t)` family has all three pure
+coefficients one, cycle sizes `3,2,2`, a parallel extra bridge with zero new
+successor-fibre direction, and `H=-1/(1+t)`.  A separate singleton mixed word
+makes its complete target ideal a unit, so the family is not a witness.
+Purely diagonal aggregate excess and universal unit forcing remain open.
+
+The
 [`minimal pure-cofactor matching-covered core theorem`](MATRIX_UNIT_MINIMAL_PURE_COFACTOR_MATCHING_COVERED_CORE_AND_SINGLE_CYCLE_THEOREM.md)
 sharpens that pure exit at arbitrary order.  At a least supported cancelling
 shore, the active first-cofactor graph is exactly the allowed-edge graph--the

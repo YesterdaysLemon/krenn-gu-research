@@ -1581,6 +1581,36 @@
       "legacy_paths": []
     },
     {
+      "name": "Matrix-Unit Aggregate Extra-Matching Target Attachment Theorem",
+      "document": "claims/arbitrary-order/MATRIX_UNIT_AGGREGATE_EXTRA_MATCHING_TARGET_ATTACHMENT_THEOREM.md",
+      "document_sha256_16": "f2099e5364b6da22",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "the arbitrary-order application is inside the complete nonzero r=1 matrix-unit branch over C and starts with an imported active transport cycle plus one compatible extra matching whose offdiagonal core is nonempty",
+        "a conformally minimal residual R is minimal among zero hafnians whose support on both R and its complement inside the original cancelling shore has a perfect matching",
+        "the primitive-cycle, sparse-fan, and aggregate-port relation is embedded termwise by a fixed matching completion; this is an exact branch equation at the hypothetical witness, not a universal target-ideal generator away from the cancellation branch",
+        "if all source shore hafnians are nonzero, the imported bridge square/hexagon alternative gives deeper data or a nonzero diagonal matching at another word; the complete target equation is used only after that exact bridge step",
+        "the outside-or-parallel conclusion assumes a shortest directed active transport cycle among the available no-deeper noncancelling bridge arcs",
+        "the ten-vertex sharpness family is defined over Q(t) with t!=0 and 1+t!=0; it assigns one nonzero matrix unit to all 45 pairs and is locally concise",
+        "the family has complete selected fibre sizes 3,2,2, all three pure target coefficients exactly one, and an extra bridge output equal to the selected successor matching, so the new successor-fibre difference is zero",
+        "the zero holonomy elimination statement is for the selected cycle equations together with the three pure anchors, not the complete target system",
+        "the complete target ideal of the sharpness support is a unit because the mixed word 0011111122 has one nonzero matching monomial; the family is not a Krenn-Gu witness or apparent counterexample",
+        "purely diagonal aggregate excess, universal unit forcing, useful non-direct overlap, killed quotient sheets, the deeper-blocker branch, the general r=1 branch, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_matrix_unit_aggregate_extra_matching_target_attachment.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_matrix_unit_aggregate_extra_matching_target_attachment.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (sympy and standard library)",
+      "external_binaries": [],
+      "note": "For every offdiagonal extra matching in an aggregate active-cycle fibre, a cancelling source or bridge shore contains a conformally minimal connected matching-covered residual whose primitive cycle, sparse fan, or aggregate port embeds termwise in one mixed target fibre with identical exponent differences. Otherwise bridge normalization enters the deeper branch or the complete target equation makes another word active. On a shortest cycle that word is outside or is the selected successor. A complete locally concise ten-vertex Q(t) family with all pure coefficients one realizes the parallel case with cycle sizes 3,2,2, H=-1/(1+t), and zero successor-fibre difference; a separate singleton mixed word makes its complete target ideal a unit, so it is not a witness. Independent SymPy/matching and no-import bitmask/custom-polynomial audits verify the mechanisms and sharpness. Purely diagonal excess and universal unit forcing remain open; global Krenn-Gu is UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Four Blocker Ideal Obstruction",
       "document": "claims/arbitrary-order/FOUR_BLOCKER_IDEAL_OBSTRUCTION.md",
       "document_sha256_16": "b7fb5e2394539754",
