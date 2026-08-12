@@ -154,6 +154,19 @@ companion matching-sum sensors.  Realization or nonrealizability inside that
 physical image is the nearest open bridge; no balanced target incidence is
 constructed or excluded.
 
+The
+[`common-shore singleton-slice and empty-permanent compatibility theorem`](BALANCED_FULL_SENSOR_COMMON_SHORE_SINGLETON_SLICE_AND_EMPTY_PERMANENT_COMPATIBILITY_THEOREM.md)
+writes that missing image exactly at `m=3`.  The nine singleton-complement
+slices must share one subspace
+`A_1 tensor B_23+B_13 tensor A_2+B_12 tensor A_3`, and the empty sensor column
+is the six-term permanent of the same nine cross blocks; together these
+conditions are also sufficient for one fixed shore sensor.  An exact
+normalized, target-consistent, rank-four Latin-plane system violates the
+shared-factor incidence, proving that the ambient full-row Cramer format is
+strictly larger than the physical image.  The separator imposes no retained
+pair jet and therefore decides neither realization of the eight preceding
+controls nor universal failure on realized target incidences.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

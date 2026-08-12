@@ -50,6 +50,7 @@ flowchart TD
   S2K["Target-column replacement-minor gate<br/>PROVED exact refinement"]
   S2L["Projective-minimal pair-jet gate<br/>PROVED exact refinement"]
   S2M["Normalized full-row pair controls<br/>PROVED compatibility boundary"]
+  S2N["m=3 common-shore image<br/>PROVED iff / ambient separator"]
   S2["Force a refined full-sensor gate failure<br/>OPEN"]
   S3["All balanced partitions rank-drop<br/>OPEN on witness locus"]
   S3D["Diagonal-complete all-rank-drop family<br/>PROVED sharpness, NOT a witness"]
@@ -109,7 +110,8 @@ flowchart TD
   S2J -->|target-column refinement| S2K
   S2K -->|projective compression| S2L
   S2L -. full-row compatibility .-> S2M
-  S2M -->|realized-incidence obligation| S2
+  S2M -->|exact image interface| S2N
+  S2N -->|realized-incidence obligation| S2
   S1 -->|boundary| S3
   S3 -. pure/local data insufficient .-> S3D
   S3 -->|common-quadratic stratum| S3Q
@@ -194,7 +196,8 @@ flowchart TD
 | `S2K` | Every cleared pair first or second jet is one selected-column replacement determinant.  After target consistency, its vanishing is equivalent to a differentiated target residual lying in the span of all sensor columns except that pair column: **proved exact refinement** | [Pair-jet replacement minors](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_PAIR_JET_REPLACEMENT_MINOR_THEOREM.md) |
 | `S2L` | On one projective chart, the full pair-jet gate is equivalent to only the nonpivot outside first stresses and nonpivot endpoint Hessians.  Euler syzygies recover every radial coordinate and hold directly among replacement minors; the uniform count is `(d-1)(m+d-2)`, hence `2m+2` per ternary pair: **proved exact refinement** | [Projective-minimal pair jets](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_PAIR_PROJECTIVE_MINIMAL_JET_GATE_THEOREM.md) |
 | `S2M` | At `m=3`, complete `27`-row GHZ target consistency, empty normalization, rank four, deck-complement column degrees, and seven vanished retained pair coordinates are compatible with the eighth being nonzero.  Exact controls exist for all eight coordinates, but they are not proved common-shore companion matching-sum sensor realizations: **proved compatibility boundary** | [Normalized full-row controls](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_PAIR_EMPTY_NORMALIZATION_CONTROL_COMPATIBILITY_THEOREM.md) |
-| `S2` | Prove every realized full-sensor target incidence fails normalization, one of the retained projective pair target-column-span identities, or an Euler--hafnian recurrence: **open** | [Normalized full-row boundary, exact frontier](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_PAIR_EMPTY_NORMALIZATION_CONTROL_COMPATIBILITY_THEOREM.md#5-exact-proof-topology-consequence) |
+| `S2N` | At `m=3`, one fixed common shore is characterized exactly by nine singleton slices sharing `A_1 tensor B_23+B_13 tensor A_2+B_12 tensor A_3` and an empty sensor column equal to the six-term permanent of the same cross blocks.  A normalized target-consistent rank-four Latin-plane system lies outside this image, but imposes no retained pair jet: **proved iff and ambient separator** | [Common-shore compatibility theorem](../claims/arbitrary-order/BALANCED_FULL_SENSOR_COMMON_SHORE_SINGLETON_SLICE_AND_EMPTY_PERMANENT_COMPATIBILITY_THEOREM.md) |
+| `S2` | Prove every realized full-sensor target incidence fails normalization, one of the retained projective pair target-column-span identities, or an Euler--hafnian recurrence: **open** | [Common-shore boundary, exact frontier](../claims/arbitrary-order/BALANCED_FULL_SENSOR_COMMON_SHORE_SINGLETON_SLICE_AND_EMPTY_PERMANENT_COMPATIBILITY_THEOREM.md#3-exact-proof-topology-consequence) |
 | `S3` | Exclusion of all-balanced rank drop inside the hypothetical-witness locus: **open**; properness is proved only in ambient block-graph space | [Balanced half-sensor theorem](../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md#3-the-proper-closed-all-balanced-boundary) |
 | `S3D` | For every `n=2m>=8`, one diagonal-complete graph with invertible blocks, complete support, local concision, and normalized pure coefficients lies in **every** balanced rank-drop locus; its mixed coefficients are nonzero, so it is **not a witness** | [Diagonal-complete sharpness theorem](../claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md) |
 | `S3Q` | The full vertex-gauge common-quadratic orbit lies in `B_all` for `n>=8` but is **disjoint from the witness equations** for `n>=6`: nondegenerate members have two-flattening rank six versus GHZ rank three, while degenerate members fail local rank | [Common-quadratic orbit exclusion](../claims/arbitrary-order/BALANCED_COMMON_QUADRATIC_ORBIT_RANK_DROP_AND_FLATTENING_EXCLUSION_THEOREM.md) |
@@ -261,7 +264,8 @@ flowchart TD
 | `S2J` | exact target-column refinement | `S2K` | Every cleared pair jet is an adjugate image and one selected-column replacement determinant; under target consistency, its vanishing is the corresponding full-sensor column-span condition. |
 | `S2K` | exact projective compression | `S2L` | Degree-zero and differentiated degree-one Euler syzygies recover the omitted radial first/Hessian coordinates, so only the affine-projective replacement minors remain. |
 | `S2L` | ambient full-row compatibility boundary | `S2M` | Eight exact `m=3` controls restore all target rows and empty normalization without making any retained coordinate redundant; the construction stops before the common-shore matching-sum sensor image. |
-| `S2M` | residual realization/exclusion obligation | `S2` | One must use common-shore companion matching-sum relations, and at higher order the remaining recurrences, to force a gate failure on every realized target incidence.  The controls prove neither realization nor nonrealizability. |
+| `S2M` | exact common-shore image interface | `S2N` | At `m=3` the singleton shared-factor equations and empty six-term permanent are necessary and sufficient for the four shore-sensor columns.  A separate Latin-plane system proves the ambient full-row format is strictly larger, but does not decide any of the eight S2M controls. |
+| `S2N` | residual realized-incidence obligation | `S2` | One must intersect the common-shore equations with the GHZ target, normalization, and retained jets, then force a gate failure on every realized target incidence; at higher order the remaining recurrences also return. |
 | `S1` | boundary obligation | `S3` | The all-balanced rank-drop branch is not excluded on the witness locus. |
 | `S3` | refutation of argument | `S3D` | Local concision, complete support, invertible blocks, and the pure target coefficients do not force any balanced sensor to have full rank; mixed-word zeros are essential. |
 | `S3` | exact stratum exclusion | `S3Q` | Simultaneously vertex-gauge-equivalent common symmetric edge forms are all-rank-drop from `n=8` onward, but flattening rank excludes their entire local-GL orbit from the ternary witness locus; no synchronization theorem for arbitrary `B_all` is inferred. |
@@ -346,10 +350,13 @@ branch. They are not an instruction to begin all of them at once.
    At `m=3`, exact full-row controls show that all target rows, empty
    normalization, rank, column degrees, and seven retained conditions still
    do not make the eighth condition redundant at the degree-compatible Cramer
-   level.  The nearest bridge is therefore realization or nonrealizability in
-   the common-shore companion matching-sum image; no retained determinant is
-   yet forced nonzero on every realized balanced target incidence.  This
-   obligation does not address the all-balanced rank-drop branch.
+   level.  The common-shore image is now written exactly by the singleton
+   shared-factor equations and empty six-term permanent, and a Latin-plane
+   separator proves that the ambient format is strictly larger.  The nearest
+   bridge is to intersect those image equations with the eight controls, or
+   otherwise force a retained determinant nonzero on every realized balanced
+   target incidence.  This obligation does not address the all-balanced
+   rank-drop branch.
 
 2. **All-balanced mixed-word exclusion.** Intersect the balanced maximal-minor
    ideals with the full mixed GHZ zero equations and prove emptiness, or derive
@@ -535,6 +542,7 @@ responses; it does not collapse them into the globally rigid `k=4` cell.
 | Either endpoint Hessian flatness alone or nonendpoint transverse flatness alone removes every ambient multihomogeneous pair pole | False in both directions at the rational-section level: an outside degree-zero ratio passes both endpoint Hessians but has a transverse pole, while an endpoint degree-one ratio has no outside dependence but fails an endpoint Hessian. Neither control is realized as a balanced target incidence, so no independent sharpness claim inside the Cramer image follows. | [Pair-pole differential-flatness ambient sharpness](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_PAIR_POLE_DIFFERENTIAL_FLATNESS_THEOREM.md#5-ambient-sharpness-both-jet-layers-are-needed-from-degrees-alone) |
 | The tautological selected Cramer equation `Af=j` forces a pair replacement minor either to vanish or to be nonzero | False for abstract Cramer systems: diagonal `2 x 2` systems realize both the transverse-pole and endpoint-pole outcomes exactly.  They are not balanced complete-deck sensors with the GHZ target, so no sharpness inside the actual target-incidence image follows. | [Pair-jet replacement-minor boundary](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_PAIR_JET_REPLACEMENT_MINOR_THEOREM.md#5-sharp-boundary-cramer-consistency-alone-selects-no-outcome) |
 | Complete `27`-row GHZ target consistency, empty normalization, rank, deck-complement column degrees, and seven retained pair conditions make the eighth condition redundant | False at the degree-compatible full-row level: eight exact `m=3` controls separately make each retained coordinate the sole nonzero one.  They are not proved common-shore matching-sum sensor realizations and do not establish sharpness inside actual balanced target incidences. | [Normalized full-row compatibility boundary](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_PAIR_EMPTY_NORMALIZATION_CONTROL_COMPATIBILITY_THEOREM.md#5-exact-proof-topology-consequence) |
+| Degree-compatible full-row target consistency, empty normalization, and rank imply common-shore matching-sum realizability | False at `m=3`: an exact normalized target-consistent rank-four Latin-plane system has nine independent singleton slices, but their coordinate subspace contains no complete tensor-axis line and cannot equal any common-shore shared-factor subspace.  The separator imposes no retained pair jet and decides no S2M control. | [Common-shore Latin-plane separator](../claims/arbitrary-order/BALANCED_FULL_SENSOR_COMMON_SHORE_SINGLETON_SLICE_AND_EMPTY_PERMANENT_COMPATIBILITY_THEOREM.md#2-a-normalized-full-row-system-outside-the-image) |
 | Local concision, complete support, invertible blocks, and normalized pure coefficients force some balanced sensor to be full | False for every `n>=8`: the diagonal-complete family has all these properties and rank at most `binomial(m,2)+1` on every cut; it fails explicit mixed-word zero equations | [Diagonal-complete all-rank-drop boundary](../claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md) |
 | Independent local basis changes can rescue the common-quadratic all-rank-drop mechanism as a witness | False: the synchronized orbit has two-vertex flattening rank six when nondegenerate, invariant under every local isomorphism, while ternary GHZ has rank three; degenerate forms already fail local rank | [Common-quadratic orbit exclusion](../claims/arbitrary-order/BALANCED_COMMON_QUADRATIC_ORBIT_RANK_DROP_AND_FLATTENING_EXCLUSION_THEOREM.md) |
 | Arbitrary internal nonroot blocks can repair a common-conformal balanced shore | False: modulo the common root quadric every non-all-cross sector vanishes; nonzero scalar permanent leaves a forbidden mixed product, while zero permanent contradicts the nonzero pure-root product from a constant word | [Common-quadric mixed/pure residue theorem](../claims/arbitrary-order/BALANCED_COMMON_QUADRIC_MIXED_PERMANENT_DIVISIBILITY_AND_CONFORMAL_SHORE_EXCLUSION_THEOREM.md) |

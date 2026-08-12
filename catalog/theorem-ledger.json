@@ -709,6 +709,31 @@
       "legacy_paths": []
     },
     {
+      "name": "Balanced Full-Sensor Common-Shore Singleton-Slice and Empty-Permanent Compatibility Theorem",
+      "document": "claims/arbitrary-order/BALANCED_FULL_SENSOR_COMMON_SHORE_SINGLETON_SLICE_AND_EMPTY_PERMANENT_COMPATIBILITY_THEOREM.md",
+      "document_sha256_16": "ae4f286b99f3ca88",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero common-shore image characterization at m=3 for three ternary roots and three ternary nonroots",
+        "the nine singleton-complement slices share one root-root-factor subspace and the empty sensor column is the six-term permanent of the same nine root-nonroot blocks; together these equations are necessary and sufficient for the four shore-sensor columns",
+        "the exact Latin-plane separator satisfies all 27 GHZ target rows, f_empty=1, deck-complement column multidegrees, and function-field column rank four, but lies outside the common-shore matching-sum image",
+        "the separator imposes no retained projective pair jet and decides neither realization nor nonrealizability of any of the eight preceding S2M controls",
+        "no physical target incidence, nonroot hafnian deck, universal pair-gate failure, arbitrary-order extension, witness, counterexample, or global resolution is claimed"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_full_sensor_common_shore_singleton_slice_and_empty_permanent_compatibility.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_full_sensor_common_shore_singleton_slice_and_empty_permanent_compatibility.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (SymPy universal identity and separator replay; standard-library Fraction and sparse-polynomial audit)",
+      "external_binaries": [],
+      "note": "The written proof gives the exact m=3 common-shore sensor image: all singleton slices share the same three root-root factors and the empty sensor is the six-bijection permanent of the same cross blocks. A normalized target-consistent rank-four Latin-plane matrix violates that shared-factor incidence, proving the ambient Cramer format is strictly larger. The separator has no retained-jet pattern, so the S2M controls, universal realized-incidence gate, all-rank-drop branch, and global conjecture remain open and UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Balanced All-Rank-Drop Diagonal-Complete Sharpness Theorem",
       "document": "claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md",
       "document_sha256_16": "c4fc0352fe104228",
