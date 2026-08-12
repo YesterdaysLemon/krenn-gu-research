@@ -1,0 +1,1883 @@
+{
+  "schemaVersion": 1,
+  "programme": "Krenn–Gu conjecture programme",
+  "globalStatus": "UNRESOLVED",
+  "source": {
+    "repository": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize",
+    "commit": "8eb56bbc0563937b8da430a705f7fdeaff07f741",
+    "committedAt": "2026-08-11T16:59:16-07:00",
+    "frontierDocument": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/docs/current-frontier.md",
+    "ledgerDocument": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/catalog/theorem-ledger.json",
+    "ledgerRole": "partial_claim_index_not_proof_graph",
+    "ledgerCompleteness": "partial_curated"
+  },
+  "counts": {
+    "total": 51,
+    "edges": 71,
+    "established": 15,
+    "growing": 34,
+    "pruned": 2
+  },
+  "health": {
+    "missingFromMermaid": [
+      "U7E",
+      "U7F",
+      "U7G"
+    ],
+    "missingFromNodeKey": [],
+    "unlinkedNodeIds": [
+      "U7G"
+    ],
+    "unknownEdgeNodeIds": []
+  },
+  "nodes": [
+    {
+      "id": "G0",
+      "title": "Hypothetical complex witness",
+      "diagramLabel": "Hypothetical complex witness · global conjecture UNRESOLVED",
+      "exactStatus": "Original global conjecture: UNRESOLVED",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Problem statement",
+          "href": "../README.md#the-conjecture",
+          "document": "README.md",
+          "anchor": "the-conjecture",
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/README.md#the-conjecture"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "open"
+        ],
+        "primaryVerifierCount": 0,
+        "independentAuditCount": 0
+      }
+    },
+    {
+      "id": "S1",
+      "title": "Balanced complete-deck sensor",
+      "diagramLabel": "Balanced complete-deck sensor · PROVED reduction",
+      "exactStatus": "Balanced complete even deck and full-sensor/rank-drop dichotomy: proved reduction",
+      "tone": "established",
+      "owners": [
+        {
+          "label": "Balanced half-sensor theorem",
+          "href": "../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md",
+          "document": "claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "S2E",
+      "title": "Cramer--Euler pair-pole gate",
+      "diagramLabel": "Cramer--Euler pair-pole gate · PROVED exact refinement",
+      "exactStatus": "On a full sensor, target residuals plus empty normalization, prime-divisor regularity of only the pair components, and one symmetric Euler--hafnian recurrence per higher even subset are necessary and sufficient for same-graph globalization",
+      "tone": "established",
+      "owners": [
+        {
+          "label": "Cramer--Euler pair-pole gate",
+          "href": "../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md",
+          "document": "claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "S2",
+      "title": "Force a refined full-sensor gate failure",
+      "diagramLabel": "Force a refined full-sensor gate failure · OPEN",
+      "exactStatus": "Prove every full-sensor target incidence fails normalization, a pair-pole test, or an Euler--hafnian recurrence: open",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Cramer--Euler pair-pole gate, exact frontier",
+          "href": "../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md#6-proof-topology-consequence-and-exact-frontier",
+          "document": "claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md",
+          "anchor": "6-proof-topology-consequence-and-exact-frontier",
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md#6-proof-topology-consequence-and-exact-frontier"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "S3",
+      "title": "All balanced partitions rank-drop",
+      "diagramLabel": "All balanced partitions rank-drop · OPEN on witness locus",
+      "exactStatus": "Exclusion of all-balanced rank drop inside the hypothetical-witness locus: open; properness is proved only in ambient block-graph space",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Balanced half-sensor theorem",
+          "href": "../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md#3-the-proper-closed-all-balanced-boundary",
+          "document": "claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md",
+          "anchor": "3-the-proper-closed-all-balanced-boundary",
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md#3-the-proper-closed-all-balanced-boundary"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "S3D",
+      "title": "Diagonal-complete all-rank-drop family",
+      "diagramLabel": "Diagonal-complete all-rank-drop family · PROVED sharpness, NOT a witness",
+      "exactStatus": "For every n=2m>=8, one diagonal-complete graph with invertible blocks, complete support, local concision, and normalized pure coefficients lies in every balanced rank-drop locus; its mixed coefficients are nonzero, so it is not a witness",
+      "tone": "established",
+      "owners": [
+        {
+          "label": "Diagonal-complete sharpness theorem",
+          "href": "../claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md",
+          "document": "claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "S3Q",
+      "title": "Common-quadratic local-GL orbit",
+      "diagramLabel": "Common-quadratic local-GL orbit · PROVED rank-drop, EXCLUDED from witness locus",
+      "exactStatus": "The full vertex-gauge common-quadratic orbit lies in Ball for n>=8 but is disjoint from the witness equations for n>=6: nondegenerate members have two-flattening rank six versus GHZ rank three, while degenerate members fail local rank",
+      "tone": "established",
+      "owners": [
+        {
+          "label": "Common-quadratic orbit exclusion",
+          "href": "../claims/arbitrary-order/BALANCED_COMMON_QUADRATIC_ORBIT_RANK_DROP_AND_FLATTENING_EXCLUSION_THEOREM.md",
+          "document": "claims/arbitrary-order/BALANCED_COMMON_QUADRATIC_ORBIT_RANK_DROP_AND_FLATTENING_EXCLUSION_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/BALANCED_COMMON_QUADRATIC_ORBIT_RANK_DROP_AND_FLATTENING_EXCLUSION_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "S3P",
+      "title": "Common-quadric mixed/pure residues",
+      "diagramLabel": "Common-quadric mixed/pure residues · PROVED; common-conformal shore EXCLUDED",
+      "exactStatus": "On any balanced shore whose root-root diagonal quadratics share one nondegenerate Q, every nonconstant mixed-word cross permanent is divisible by Q, while each constant word has the exact pure-root residue; every physical common-conformal shore is excluded, even with arbitrary internal nonroot blocks, by the nonzero-permanent mixed branch or zero-permanent pure branch",
+      "tone": "established",
+      "owners": [
+        {
+          "label": "Common-quadric mixed/pure residue theorem",
+          "href": "../claims/arbitrary-order/BALANCED_COMMON_QUADRIC_MIXED_PERMANENT_DIVISIBILITY_AND_CONFORMAL_SHORE_EXCLUSION_THEOREM.md",
+          "document": "claims/arbitrary-order/BALANCED_COMMON_QUADRIC_MIXED_PERMANENT_DIVISIBILITY_AND_CONFORMAL_SHORE_EXCLUSION_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/BALANCED_COMMON_QUADRIC_MIXED_PERMANENT_DIVISIBILITY_AND_CONFORMAL_SHORE_EXCLUSION_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "M1",
+      "title": "Maximum torus-root split",
+      "diagramLabel": "Maximum torus-root split · PROVED reduction",
+      "exactStatus": "Maximum torus-root saturation and r=1 / r>=2 split: proved universal reduction",
+      "tone": "established",
+      "owners": [
+        {
+          "label": "Maximal torus-root theorem",
+          "href": "../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md",
+          "document": "claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "M2",
+      "title": "r >= 2 fixed-surplus layer",
+      "diagramLabel": "r >= 2 fixed-surplus layer · PROVED reduction",
+      "exactStatus": "One complete fixed-surplus physical hafnian layer; coordinate two-residual absorption: proved reduction, not exclusion",
+      "tone": "established",
+      "owners": [
+        {
+          "label": "Maximal torus-root theorem",
+          "href": "../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer",
+          "document": "claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md",
+          "anchor": "2-the-saturated-principal-hafnian-layer",
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "PR",
+      "title": "Weighted permanent restriction family",
+      "diagramLabel": "Weighted permanent restriction family · OPEN at arbitrary order",
+      "exactStatus": "Weighted Pt -> Delta3 restriction family: extracted at zero surplus and on the conditional consecutive-lift branch; arbitrary-order exclusion open. The live t=6 / P6 restriction remains inside this node; the three-excess notes address only the first strict-support layer, not arbitrary support.",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Maximal-root extraction",
+          "href": "../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer",
+          "document": "claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md",
+          "anchor": "2-the-saturated-principal-hafnian-layer",
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer"
+        },
+        {
+          "label": "consecutive single-open lift",
+          "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md",
+          "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md"
+        },
+        {
+          "label": "P6 package index",
+          "href": "../claims/p6/README.md",
+          "document": "claims/p6/README.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/p6/README.md"
+        },
+        {
+          "label": "three-excess port boundary",
+          "href": "../claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md",
+          "document": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md"
+        },
+        {
+          "label": "conformal Birkhoff boundary",
+          "href": "../claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md",
+          "document": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 2,
+        "linkedDocuments": 5,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 2,
+        "independentAuditCount": 2
+      }
+    },
+    {
+      "id": "PRC",
+      "title": "Every co-two permanent product sensor rank-drop",
+      "diagramLabel": "Every co-two permanent product sensor rank-drop · PROVED necessary boundary",
+      "exactStatus": "Every weighted Pr -> Delta3 restriction lies in the simultaneous co-two product-sensor rank-drop locus: for each omitted pair, the complementary sensor has rank at most binomial(r,2)-1. This proper necessary boundary is nonempty after imposing local rank and nonzero pure coefficients, so it is not a nonrestriction theorem.",
+      "tone": "established",
+      "owners": [
+        {
+          "label": "Co-two permanent product-sensor theorem",
+          "href": "../claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_RANK_DROP_THEOREM.md",
+          "document": "claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_RANK_DROP_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_RANK_DROP_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "O1",
+      "title": "Fixed-layer truncation and nonobservability",
+      "diagramLabel": "Fixed-layer truncation and nonobservability · PROVED boundary",
+      "exactStatus": "Contracted truncation, same-fibre rank nonobservability, and single-open absorption: proved structural boundary",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Balanced fixed-surplus theorem",
+          "href": "../claims/arbitrary-order/BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md",
+          "document": "claims/arbitrary-order/BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "O2",
+      "title": "Two-open detector and q=0 star gauge",
+      "diagramLabel": "Two-open detector and q=0 star gauge · PROVED boundary",
+      "exactStatus": "Complete two-open equation and conditional q=0 tensor-preserving star gauge: proved boundary",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Two-open gauge theorem",
+          "href": "../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md",
+          "document": "claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "O2P",
+      "title": "Projective single-open consecutive lift",
+      "diagramLabel": "Projective single-open consecutive lift · PROVED conditional reduction",
+      "exactStatus": "On the aligned common-two-row, projectively constant branch, the complete single-open identity is a consecutive P(m+1) restriction and its old-root companions form an exact rank-two diagonal quotient frame: proved conditional reduction",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Consecutive single-open lift",
+          "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md",
+          "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "O2M",
+      "title": "Minimum q=0, r=3 row replacement",
+      "diagramLabel": "Minimum q=0, r=3 row replacement · TWO-OPEN DETECTED conditionally",
+      "exactStatus": "In the minimum aligned projective cell q=0,r=3, the lifted row quotas force P3(a,a,b)!=0, so every nonzero absorption direction at either non-aligned root is detected by the complete two-open tensor; this is not a witness exclusion",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Lifted minimum-cell detector",
+          "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_ROW_QUOTAS_AND_MINIMAL_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
+          "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_ROW_QUOTAS_AND_MINIMAL_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_ROW_QUOTAS_AND_MINIMAL_CELL_TWO_OPEN_DETECTOR_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "O2T",
+      "title": "q=0, r=4 locally transverse cell",
+      "diagramLabel": "q=0, r=4 locally transverse cell · AT LEAST ONE DETECTOR conditionally",
+      "exactStatus": "In the aligned projective q=0,r=4 cell, local independence of au,bu at all four outside modes makes h -> P4(h,a,a,b) injective; a companion-basis deletion then gives at least one nonzero two-open detector. This remains a verified strict special case of O2F.",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Transverse four-cell detector",
+          "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_TRANSVERSE_FOUR_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
+          "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_TRANSVERSE_FOUR_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_TRANSVERSE_FOUR_CELL_TWO_OPEN_DETECTOR_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "O2F",
+      "title": "Complete aligned q=0, r=4 cell",
+      "diagramLabel": "Complete aligned q=0, r=4 cell · AT LEAST ONE DETECTOR conditionally",
+      "exactStatus": "In the full aligned projective q=0,r=4 cell, collision quotients plus Hall incidence reduce invisibility to a common outside a/b zero; recolouring and local concision exclude it. Hence at least one nonzero two-open detector always exists, and all three do when the companions are pairwise independent. This is not a witness exclusion.",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Complete four-cell detector",
+          "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_FOUR_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
+          "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_FOUR_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_FOUR_CELL_TWO_OPEN_DETECTOR_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "O2V",
+      "title": "q=0, r=5 good-companion activity stratum",
+      "diagramLabel": "q=0, r=5 good-companion activity stratum · AT LEAST ONE DETECTOR conditionally",
+      "exactStatus": "In aligned projective q=0,r=5, the four companion equations form an exact symmetric XL=0 system. Away from a zero companion or balanced 2+2 projective split, modewise three-activity forces at least one nonzero two-open detector. Local a/b transversality implies activity. This is conditional detection, not full-cell closure or witness exclusion.",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Five-cell collective detector",
+          "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_FIVE_CELL_COLLECTIVE_COMPANION_AND_ACTIVITY_DETECTOR_THEOREM.md",
+          "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_FIVE_CELL_COLLECTIVE_COMPANION_AND_ACTIVITY_DETECTOR_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_FIVE_CELL_COLLECTIVE_COMPANION_AND_ACTIVITY_DETECTOR_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "O2A",
+      "title": "q=0, r=5 all-companion root-transverse stratum",
+      "diagramLabel": "q=0, r=5 all-companion root-transverse stratum · AT LEAST ONE DETECTOR conditionally",
+      "exactStatus": "In locally transverse aligned projective q=0,r=5, common-kernel contraction makes a doubly transverse root's five-mode pair-collision map injective. If at most one root is not doubly transverse, all six pair tensors are nonzero, and the rank-two companion zero-edge lemma gives at least one detector for every companion frame. This is not witness exclusion.",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Five-cell all-companion pair detector",
+          "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_FIVE_CELL_PAIR_COLLISION_AND_ALL_COMPANION_DETECTOR_THEOREM.md",
+          "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_FIVE_CELL_PAIR_COLLISION_AND_ALL_COMPANION_DETECTOR_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_FIVE_CELL_PAIR_COLLISION_AND_ALL_COMPANION_DETECTOR_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "O2C",
+      "title": "Complete locally transverse q=0, r=5 cell",
+      "diagramLabel": "Complete locally transverse q=0, r=5 cell · AT LEAST ONE DETECTOR conditionally",
+      "exactStatus": "In every locally transverse aligned projective q=0,r=5 cell, weak-root common-kernel trapping plus the exhaustive good/zero/balanced companion split forces a local-concision contradiction if all four collective tensors vanish. Hence at least one nonzero two-open detector exists for every companion frame and every root quotient-support pattern. This is not full-cell closure or witness exclusion.",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Complete transverse five-cell detector",
+          "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_TRANSVERSE_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
+          "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_TRANSVERSE_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_TRANSVERSE_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "O2D",
+      "title": "q=0, r=5 one arbitrary or regular-two defects",
+      "diagramLabel": "q=0, r=5 one arbitrary or regular-two defects · AT LEAST ONE DETECTOR conditionally",
+      "exactStatus": "In aligned projective q=0,r=5, a dependent mode with four active deletions forces every invisible companion pattern into one quotient line. A sharp retained four-mode inverse therefore gives at least one detector with one arbitrary local defect, or with two defects when at least one has nonzero proportional au,bu. This covers every companion/root-support pattern in those strata, but does not exclude a witness.",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Rank-one-mode detector",
+          "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_RANK_ONE_MODE_AND_REGULAR_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md",
+          "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_RANK_ONE_MODE_AND_REGULAR_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_RANK_ONE_MODE_AND_REGULAR_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "O2E",
+      "title": "q=0, r=5 at most two defects except AA/BB",
+      "diagramLabel": "q=0, r=5 at most two defects except AA/BB · AT LEAST ONE DETECTOR conditionally",
+      "exactStatus": "In aligned projective q=0,r=5, three active deletions force a quotient-line trap for every companion frame. Exact A/B/Z retained collision kernels then give at least one detector for the zero-containing AZ, BZ, ZZ cells and the mixed AB cell. Together with O2C and O2D, this detects every at-most-two-defect cell except same-type AA and BB; it does not exclude a witness.",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Three-activity two-defect detector",
+          "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_THREE_ACTIVITY_AND_MIXED_DEGENERATE_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md",
+          "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_THREE_ACTIVITY_AND_MIXED_DEGENERATE_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_THREE_ACTIVITY_AND_MIXED_DEGENERATE_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "O2G",
+      "title": "q=0, r=5 at most two defects, all types",
+      "diagramLabel": "q=0, r=5 at most two defects, all types · AT LEAST ONE DETECTOR conditionally",
+      "exactStatus": "In aligned projective q=0,r=5, exact row-pair and triple Hall incidence turns the same-type AA and BB double-kernel survivors into pure-coefficient assignment contradictions. Together with O2C, O2D, and O2E, this gives at least one detector in every cell with at most two local defects. It does not exclude a witness.",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Same-type row-incidence detector",
+          "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_ROW_INCIDENCE_SAME_TYPE_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md",
+          "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_ROW_INCIDENCE_SAME_TYPE_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_ROW_INCIDENCE_SAME_TYPE_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "O2H",
+      "title": "q=0, r=5 at most three defects;",
+      "diagramLabel": "q=0, r=5 at most three defects; · A/Z fixed-layer modes impossible · AT LEAST ONE DETECTOR conditionally",
+      "exactStatus": "In aligned projective q=0,r=5, row-pair incidence plus the two-singleton P5 obstruction excludes every local defect with b=0. Exact arbitrary-ratio collision intersections and inactive-set crowding then give at least one detector in every cell with at most three local defects, including all RRR, RRB, RBB, and BBB three-defect cells. This does not exclude a witness.",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Complete three-defect detector",
+          "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_THREE_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md",
+          "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_THREE_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_THREE_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "O2I",
+      "title": "Complete aligned q=0, r=5 cell",
+      "diagramLabel": "Complete aligned q=0, r=5 cell · AT LEAST ONE DETECTOR conditionally",
+      "exactStatus": "In the complete aligned common-two-row, projectively constant q=0,r=5 cell, the lifted pa>=2 quota excludes four/five B defects. Exact four-/five-defect collision kernels, the all-regular cofactor graph, and a basis-free 3|2 Hall bridge then give at least one detector in every remaining cell. The primitive-cube-root RRRRT divisor is retained and still has only a one-dimensional common kernel. This does not exclude a witness.",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Complete aligned five-cell detector",
+          "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
+          "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "O3",
+      "title": "q=0 r>=6, q>=1,",
+      "diagramLabel": "q=0 r>=6, q>=1, · or unfactorized detector OPEN",
+      "exactStatus": "Conditional aligned q=0,r=5 detection does not prove witness exclusion or fixed-root injectivity. Every aligned q=0,r>=6 cell, every q>=1 cell, and every unfactorized outside graph remains open at detector depth.",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Complete aligned five-cell boundary",
+          "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md#6-complete-aligned-five-cell-boundary",
+          "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
+          "anchor": "6-complete-aligned-five-cell-boundary",
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md#6-complete-aligned-five-cell-boundary"
+        },
+        {
+          "label": "two-open exact boundary",
+          "href": "../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md#6-exact-boundary",
+          "document": "claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md",
+          "anchor": "6-exact-boundary",
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md#6-exact-boundary"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 2,
+        "linkedDocuments": 2,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 2,
+        "independentAuditCount": 2
+      }
+    },
+    {
+      "id": "U1",
+      "title": "r = 1 complete matrix units",
+      "diagramLabel": "r = 1 complete matrix units · PROVED normal form",
+      "exactStatus": "Complete nonzero one-matrix-unit blocks and forbidden-word cancellation: proved normal form; exclusion open",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Maximal-root one branch",
+          "href": "../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#3-the-maximum-one-monomial-branch",
+          "document": "claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md",
+          "anchor": "3-the-maximum-one-monomial-branch",
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#3-the-maximum-one-monomial-branch"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "U1B",
+      "title": "Support-minimal GHZ-torus endpoint balance",
+      "diagramLabel": "Support-minimal GHZ-torus endpoint balance · PROVED",
+      "exactStatus": "Every globally support-minimal matrix-unit realization is stable against support-erasing diagonal GHZ one-parameter directions. Equivalently, every physical edge occurs with positive integral multiplicity in an endpoint-label multicover whose three positive colour loads are constant across vertices. The multicover weights are not physical amplitudes.",
+      "tone": "established",
+      "owners": [
+        {
+          "label": "GHZ diagonal-torus endpoint balance",
+          "href": "../claims/arbitrary-order/MATRIX_UNIT_GHZ_DIAGONAL_TORUS_POLYSTABILITY_ENDPOINT_BALANCE_AND_ACTIVE_TRANSPORT_SHARPNESS_THEOREM.md",
+          "document": "claims/arbitrary-order/MATRIX_UNIT_GHZ_DIAGONAL_TORUS_POLYSTABILITY_ENDPOINT_BALANCE_AND_ACTIVE_TRANSPORT_SHARPNESS_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_GHZ_DIAGONAL_TORUS_POLYSTABILITY_ENDPOINT_BALANCE_AND_ACTIVE_TRANSPORT_SHARPNESS_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "U1C",
+      "title": "Actual squared amplitudes moment-balanced",
+      "diagramLabel": "Actual squared amplitudes moment-balanced · PROVED gauge over C",
+      "exactStatus": "Over C, every support-minimal matrix-unit realization has a unique positive diagonal GHZ gauge modulo the edgewise stabilizer in which the actual squared physical amplitudes have three positive vertex-independent colour loads. This magnitude normal form does not synchronize phases.",
+      "tone": "established",
+      "owners": [
+        {
+          "label": "GHZ moment-balanced gauge",
+          "href": "../claims/arbitrary-order/MATRIX_UNIT_GHZ_MOMENT_BALANCED_GAUGE_AND_UNIT_PHASE_ACTIVE_TRANSPORT_SHARPNESS_THEOREM.md",
+          "document": "claims/arbitrary-order/MATRIX_UNIT_GHZ_MOMENT_BALANCED_GAUGE_AND_UNIT_PHASE_ACTIVE_TRANSPORT_SHARPNESS_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_GHZ_MOMENT_BALANCED_GAUGE_AND_UNIT_PHASE_ACTIVE_TRANSPORT_SHARPNESS_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "U2",
+      "title": "At-most-four-port response",
+      "diagramLabel": "At-most-four-port response · k = 1, 2, 3 remain OPEN",
+      "exactStatus": "Globally minimum forbidden word has at most four deviations; exact finite-port response and partial bridges: proved reduction. The k=1, k=2, and k=3 cells all remain unexcluded; only k=4 forces rigidity in the base colour.",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Four-switch theorem",
+          "href": "../claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md",
+          "document": "claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "U3",
+      "title": "Globally rigid colour system",
+      "diagramLabel": "Globally rigid colour system · CONDITIONAL",
+      "exactStatus": "Globally rigid colour factors into a pure hafnian and binary tensor: proved conditionally; rigidity not forced",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Rigid-colour boundary",
+          "href": "../claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md",
+          "document": "claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "U4",
+      "title": "Three-block primitive and dual bridges",
+      "diagramLabel": "Three-block primitive and dual bridges · PROVED",
+      "exactStatus": "Bi-null cuts, three-block primitive, and dual quadratic bridges: proved; arbitrary-order exclusion open",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Rigid primitive theorem",
+          "href": "../claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_BINARY_PRIMITIVE_AND_QUADRATIC_BRIDGE_THEOREM.md",
+          "document": "claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_BINARY_PRIMITIVE_AND_QUADRATIC_BRIDGE_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_BINARY_PRIMITIVE_AND_QUADRATIC_BRIDGE_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "U5",
+      "title": "Primitive-alone closure",
+      "diagramLabel": "Primitive-alone closure · REFUTED ROUTE",
+      "exactStatus": "“The primitive alone contradicts the tensor”: refuted route for every even order at least eight",
+      "tone": "pruned",
+      "owners": [
+        {
+          "label": "Primitive sharpness theorem",
+          "href": "../claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_PRIMITIVE_SHARPNESS_AND_DUAL_BRIDGE_COMPLETION_OBSTRUCTION.md",
+          "document": "claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_PRIMITIVE_SHARPNESS_AND_DUAL_BRIDGE_COMPLETION_OBSTRUCTION.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_PRIMITIVE_SHARPNESS_AND_DUAL_BRIDGE_COMPLETION_OBSTRUCTION.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "U6",
+      "title": "Cross parity, bridges, rigid-head Wick",
+      "diagramLabel": "Cross parity, bridges, rigid-head Wick · PROVED reduction",
+      "exactStatus": "Cross-parity erasure, bridge/deeper entry, rigid-head Wick tower, and pseudoforest normal form: proved reduction",
+      "tone": "established",
+      "owners": [
+        {
+          "label": "Cross-parity theorem",
+          "href": "../claims/arbitrary-order/MATRIX_UNIT_CROSS_PARITY_ERASURE_RIGID_HEAD_WICK_AND_BRIDGE_CORE_REDUCTION_THEOREM.md",
+          "document": "claims/arbitrary-order/MATRIX_UNIT_CROSS_PARITY_ERASURE_RIGID_HEAD_WICK_AND_BRIDGE_CORE_REDUCTION_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_CROSS_PARITY_ERASURE_RIGID_HEAD_WICK_AND_BRIDGE_CORE_REDUCTION_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "U7A",
+      "title": "Nonzero parity fibre has exact word-shore rematching",
+      "diagramLabel": "Nonzero parity fibre has exact word-shore rematching · PROVED",
+      "exactStatus": "For every mixed word with nonzero aggregate offdiagonal coefficient, the diagonal contribution factors as the product of three nonzero pure-shore hafnians. Hence every active parity-zero fibre already has an exact word-preserving diagonal rematching; a Tutte failure can occur only in an internally zero fibre.",
+      "tone": "established",
+      "owners": [
+        {
+          "label": "Active parity-fibre synchronization theorem",
+          "href": "../claims/arbitrary-order/MATRIX_UNIT_PARITY_FIBRE_DIAGONAL_FACTORIZATION_AND_ACTIVE_WORD_SHORE_SYNCHRONIZATION_THEOREM.md",
+          "document": "claims/arbitrary-order/MATRIX_UNIT_PARITY_FIBRE_DIAGONAL_FACTORIZATION_AND_ACTIVE_WORD_SHORE_SYNCHRONIZATION_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_PARITY_FIBRE_DIAGONAL_FACTORIZATION_AND_ACTIVE_WORD_SHORE_SYNCHRONIZATION_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "U7B",
+      "title": "Cofactor-active cross core",
+      "diagramLabel": "Cofactor-active cross core · DEEPER / TRANSPORT / PURE CANCEL proved",
+      "exactStatus": "Expanding an active coordinate by its exact off-shore matching produces a cofactor-active physical cross core. Its cross-type counts have one parity, and the imported square/hexagon alternative gives exactly: deeper-blocker entry, transport to another active word with the same multiplicities, or a pure-shore hafnian that cancels despite a nonzero matching term. No-exit transport has a finite active-word cycle.",
+      "tone": "established",
+      "owners": [
+        {
+          "label": "Active-word cross-response and bridge-transport trichotomy",
+          "href": "../claims/arbitrary-order/MATRIX_UNIT_ACTIVE_WORD_FIBRE_CROSS_MATCHING_RESPONSE_AND_BRIDGE_TRANSPORT_TRICHOTOMY.md",
+          "document": "claims/arbitrary-order/MATRIX_UNIT_ACTIVE_WORD_FIBRE_CROSS_MATCHING_RESPONSE_AND_BRIDGE_TRANSPORT_TRICHOTOMY.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_ACTIVE_WORD_FIBRE_CROSS_MATCHING_RESPONSE_AND_BRIDGE_TRANSPORT_TRICHOTOMY.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "U7C",
+      "title": "Gauge-invariant phase holonomy / pure cofactor flow",
+      "diagramLabel": "Gauge-invariant phase holonomy / pure cofactor flow · PROVED reduction",
+      "exactStatus": "Every active cycle carries a nonzero endpoint-character circulation and a diagonal-gauge-invariant Laurent holonomy. Its fibres are aggregate, or exact binomials force H=(-1)^m. Every pure cancellation has a least supported residual whose Euler cofactor flow branches or is a spanning union of alternating even cycles. A sparse exact odd binomial cycle shows this is a phase normal form, not a sign contradiction.",
+      "tone": "established",
+      "owners": [
+        {
+          "label": "Phase holonomy and minimal pure-cofactor flow",
+          "href": "../claims/arbitrary-order/MATRIX_UNIT_PHASE_HOLONOMY_AND_MINIMAL_PURE_COFACTOR_FLOW_REDUCTION_THEOREM.md",
+          "document": "claims/arbitrary-order/MATRIX_UNIT_PHASE_HOLONOMY_AND_MINIMAL_PURE_COFACTOR_FLOW_REDUCTION_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_PHASE_HOLONOMY_AND_MINIMAL_PURE_COFACTOR_FLOW_REDUCTION_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "U7D",
+      "title": "Complete pure-target moment-compatible odd holonomy",
+      "diagramLabel": "Complete pure-target moment-compatible odd holonomy · PROVED sharpness, NOT a witness",
+      "exactStatus": "A complete exact eight-vertex r=1 table simultaneously has all three pure target coefficients, strict positive endpoint balance, a moment-balanced representative over C, three proper nonempty nonrigidity sets, and an odd three-fibre binomial cycle with H=-1. Its exposed (7,1,0) mixed coefficient is transport-isolated, and its only additional zero mixed fibre leaves the selected elimination ideal (H+1). The complete (4,4,0) block instead has 57 empty, 10 singleton, and exactly 3 binomial fibres, so its Laurent-saturated ideal is (1) and the fixed label support is excluded in the cycle's own multidegree. This is a fixed-template theorem, not an arbitrary-cycle exclusion.",
+      "tone": "established",
+      "owners": [
+        {
+          "label": "Complete pure-target moment-compatible odd-holonomy sharpness",
+          "href": "../claims/arbitrary-order/MATRIX_UNIT_COMPLETE_PURE_TARGET_MOMENT_COMPATIBLE_ODD_HOLONOMY_SHARPNESS_THEOREM.md",
+          "document": "claims/arbitrary-order/MATRIX_UNIT_COMPLETE_PURE_TARGET_MOMENT_COMPATIBLE_ODD_HOLONOMY_SHARPNESS_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_COMPLETE_PURE_TARGET_MOMENT_COMPATIBLE_ODD_HOLONOMY_SHARPNESS_THEOREM.md"
+        },
+        {
+          "label": "exposed-fibre transport isolation",
+          "href": "../claims/arbitrary-order/MATRIX_UNIT_EXPOSED_MIXED_FIBRE_TRANSPORT_ISOLATION_AND_NEIGHBOUR_SHARPNESS_THEOREM.md",
+          "document": "claims/arbitrary-order/MATRIX_UNIT_EXPOSED_MIXED_FIBRE_TRANSPORT_ISOLATION_AND_NEIGHBOUR_SHARPNESS_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_EXPOSED_MIXED_FIBRE_TRANSPORT_ISOLATION_AND_NEIGHBOUR_SHARPNESS_THEOREM.md"
+        },
+        {
+          "label": "complete same-multidegree saturation exclusion",
+          "href": "../claims/arbitrary-order/MATRIX_UNIT_U7D_COMPLETE_SAME_MULTIDEGREE_TARGET_BLOCK_SATURATION_EXCLUSION_THEOREM.md",
+          "document": "claims/arbitrary-order/MATRIX_UNIT_U7D_COMPLETE_SAME_MULTIDEGREE_TARGET_BLOCK_SATURATION_EXCLUSION_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_U7D_COMPLETE_SAME_MULTIDEGREE_TARGET_BLOCK_SATURATION_EXCLUSION_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 3,
+        "linkedDocuments": 3,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 3,
+        "independentAuditCount": 3
+      }
+    },
+    {
+      "id": "U7E",
+      "title": "Complete same-multidegree fibre-lattice reduction and binomial parity dichotomy",
+      "diagramLabel": null,
+      "exactStatus": "For any complete same-multidegree target block, removing one invertible reference matching per nonempty fibre descends the exact ideal to the group algebra of the within-fibre difference lattice, preserving unit status and holonomy elimination even for nonsaturated lattices. A singleton is a unit. An all-binomial block is a unit exactly when its signed relation lattice has an odd kernel dependency; otherwise it is proper and gives exactly H=(-1)^m, with no stronger holonomy polynomial. Aggregate fibres remain explicit unresolved Laurent polynomials.",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Complete same-multidegree fibre-lattice reduction and binomial parity dichotomy",
+          "href": "../claims/arbitrary-order/MATRIX_UNIT_COMPLETE_SAME_MULTIDEGREE_FIBRE_LATTICE_REDUCTION_AND_BINOMIAL_PARITY_DICHOTOMY_THEOREM.md",
+          "document": "claims/arbitrary-order/MATRIX_UNIT_COMPLETE_SAME_MULTIDEGREE_FIBRE_LATTICE_REDUCTION_AND_BINOMIAL_PARITY_DICHOTOMY_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_COMPLETE_SAME_MULTIDEGREE_FIBRE_LATTICE_REDUCTION_AND_BINOMIAL_PARITY_DICHOTOMY_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "U7F",
+      "title": "Binomial-core torsion-sheet and rank-one aggregate quotient",
+      "diagramLabel": null,
+      "exactStatus": "For a parity-consistent binomial core containing every fibre of an active binomial cycle, untwisting gives the exact residual group algebra C[L/LB]. Smith torsion splits it into finite character sheets. Quotient free rank zero is completely decided by scalar character evaluations; free rank one is completely decided by univariate Laurent gcds. Killing every sheet gives (1); any surviving sheet leaves exactly H=(-1)^m. Aggregate cycle fibres and free rank at least two remain open.",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Binomial-core torsion-sheet and rank-one aggregate quotient",
+          "href": "../claims/arbitrary-order/MATRIX_UNIT_BINOMIAL_CORE_TORSION_SHEET_AND_RANK_ONE_AGGREGATE_QUOTIENT_THEOREM.md",
+          "document": "claims/arbitrary-order/MATRIX_UNIT_BINOMIAL_CORE_TORSION_SHEET_AND_RANK_ONE_AGGREGATE_QUOTIENT_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_BINOMIAL_CORE_TORSION_SHEET_AND_RANK_ONE_AGGREGATE_QUOTIENT_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "U7G",
+      "title": "Cross-multiplicity global target lattice and holonomy dichotomy",
+      "diagramLabel": null,
+      "exactStatus": "Any selected target equations, across arbitrary word multidegrees and including pure anchors, descend faithfully to one global support-difference group algebra. Mixed residuals lie in the endpoint-character kernel; direct-sum difference lattices do not couple even when physical variables overlap. For a fully binomial active cycle, arbitrary extra target equations give only (1) or (H-(-1)^m), and the rank-zero/rank-one torsion-sheet criteria apply globally. Cross-multiplicity algebra is exact; cross-multiplicity unit forcing remains open.",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Cross-multiplicity global target lattice and holonomy dichotomy",
+          "href": "../claims/arbitrary-order/MATRIX_UNIT_CROSS_MULTIPLICITY_GLOBAL_TARGET_LATTICE_AND_HOLONOMY_DICHOTOMY_THEOREM.md",
+          "document": "claims/arbitrary-order/MATRIX_UNIT_CROSS_MULTIPLICITY_GLOBAL_TARGET_LATTICE_AND_HOLONOMY_DICHOTOMY_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_CROSS_MULTIPLICITY_GLOBAL_TARGET_LATTICE_AND_HOLONOMY_DICHOTOMY_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "U7",
+      "title": "Exclude pure-shore cancellation or active holonomy",
+      "diagramLabel": "Exclude pure-shore cancellation or active holonomy · OPEN",
+      "exactStatus": "Force the global target-lattice ideal to be a unit: derive a singleton or odd signed dependency from arbitrary active-cycle response data, force useful non-direct cross-multiplicity overlap and kill every quotient sheet, control a rank-at-least-two sheet ideal or an aggregate cycle fibre, or close the pure-cofactor/deeper exits. This remains open: no theorem forces a favourable core, overlap, rank, or unit outcome, and every proper fully binomial-cycle quotient imposes only the known holonomy sign. Conserved cofactor signs need not be positive.",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Global cross-multiplicity boundary",
+          "href": "../claims/arbitrary-order/MATRIX_UNIT_CROSS_MULTIPLICITY_GLOBAL_TARGET_LATTICE_AND_HOLONOMY_DICHOTOMY_THEOREM.md#7-consequence-for-the-live-u7-edge",
+          "document": "claims/arbitrary-order/MATRIX_UNIT_CROSS_MULTIPLICITY_GLOBAL_TARGET_LATTICE_AND_HOLONOMY_DICHOTOMY_THEOREM.md",
+          "anchor": "7-consequence-for-the-live-u7-edge",
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_CROSS_MULTIPLICITY_GLOBAL_TARGET_LATTICE_AND_HOLONOMY_DICHOTOMY_THEOREM.md#7-consequence-for-the-live-u7-edge"
+        },
+        {
+          "label": "torsion-sheet aggregate boundary",
+          "href": "../claims/arbitrary-order/MATRIX_UNIT_BINOMIAL_CORE_TORSION_SHEET_AND_RANK_ONE_AGGREGATE_QUOTIENT_THEOREM.md#6-consequence-for-the-live-u7-edge",
+          "document": "claims/arbitrary-order/MATRIX_UNIT_BINOMIAL_CORE_TORSION_SHEET_AND_RANK_ONE_AGGREGATE_QUOTIENT_THEOREM.md",
+          "anchor": "6-consequence-for-the-live-u7-edge",
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_BINOMIAL_CORE_TORSION_SHEET_AND_RANK_ONE_AGGREGATE_QUOTIENT_THEOREM.md#6-consequence-for-the-live-u7-edge"
+        },
+        {
+          "label": "phase-holonomy and pure-cofactor boundary",
+          "href": "../claims/arbitrary-order/MATRIX_UNIT_PHASE_HOLONOMY_AND_MINIMAL_PURE_COFACTOR_FLOW_REDUCTION_THEOREM.md#8-combined-proof-topology-consequence",
+          "document": "claims/arbitrary-order/MATRIX_UNIT_PHASE_HOLONOMY_AND_MINIMAL_PURE_COFACTOR_FLOW_REDUCTION_THEOREM.md",
+          "anchor": "8-combined-proof-topology-consequence",
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_PHASE_HOLONOMY_AND_MINIMAL_PURE_COFACTOR_FLOW_REDUCTION_THEOREM.md#8-combined-proof-topology-consequence"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 3,
+        "linkedDocuments": 3,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 3,
+        "independentAuditCount": 3
+      }
+    },
+    {
+      "id": "U8",
+      "title": "Proper flag propagation",
+      "diagramLabel": "Proper flag propagation · OPEN",
+      "exactStatus": "Proper nonempty colour-nonrigidity sets propagate to all vertices: open",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Four-switch partial-bridge theorem",
+          "href": "../claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md#5-partial-bridge-systems",
+          "document": "claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md",
+          "anchor": "5-partial-bridge-systems",
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md#5-partial-bridge-systems"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "D1",
+      "title": "Deeper blocker branch",
+      "diagramLabel": "Deeper blocker branch · OPEN",
+      "exactStatus": "Deeper double-star/multi-star blocker branch: open. Its blocker alternatives are pointwise after shrinking to a dense constructible stratum; no uniform blocker pair is proved on the whole component.",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Double-star lemma",
+          "href": "../claims/arbitrary-order/DOUBLE_STAR_ANNIHILATION_LEMMA.md",
+          "document": "claims/arbitrary-order/DOUBLE_STAR_ANNIHILATION_LEMMA.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/DOUBLE_STAR_ANNIHILATION_LEMMA.md"
+        },
+        {
+          "label": "multi-star factorization",
+          "href": "../claims/arbitrary-order/MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md",
+          "document": "claims/arbitrary-order/MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 0,
+        "linkedDocuments": 2,
+        "ledgerStatuses": [],
+        "primaryVerifierCount": 0,
+        "independentAuditCount": 0
+      }
+    },
+    {
+      "id": "A1",
+      "title": "Simultaneous balanced all-bridge",
+      "diagramLabel": "Simultaneous balanced all-bridge · CONDITIONAL branch",
+      "exactStatus": "Simultaneous balanced all-bridge system: proved conditional branch, not universal extraction",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Three-colour balanced bridge intersection",
+          "href": "../claims/arbitrary-order/THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md",
+          "document": "claims/arbitrary-order/THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 0,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [],
+        "primaryVerifierCount": 0,
+        "independentAuditCount": 0
+      }
+    },
+    {
+      "id": "A2",
+      "title": "Degree <= 4 excluded;",
+      "diagramLabel": "Degree <= 4 excluded; · degree >= 5 OPEN",
+      "exactStatus": "Saturated-diagonal maximum degree at most four: excluded; Delta(D)>=5 remains open",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Cubic exclusion",
+          "href": "../claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_EXCLUSIVITY_AND_CUBIC_DIAGONAL_EXCLUSION.md",
+          "document": "claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_EXCLUSIVITY_AND_CUBIC_DIAGONAL_EXCLUSION.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_EXCLUSIVITY_AND_CUBIC_DIAGONAL_EXCLUSION.md"
+        },
+        {
+          "label": "degree-four exclusion",
+          "href": "../claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FOUR_EXCLUSION.md",
+          "document": "claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FOUR_EXCLUSION.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FOUR_EXCLUSION.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 2,
+        "linkedDocuments": 2,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 2,
+        "independentAuditCount": 2
+      }
+    },
+    {
+      "id": "P5",
+      "title": "Local P5 component programme",
+      "diagramLabel": "Local P5 component programme · PARTIAL / boundary-limited",
+      "exactStatus": "Local P5 -> Delta3 component programme: partial, generic and boundary-limited",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "P5 package index",
+          "href": "../claims/p5/README.md",
+          "document": "claims/p5/README.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/p5/README.md"
+        },
+        {
+          "label": "obligation ledger",
+          "href": "../claims/p5/frontier/P5_DELTA3_OBLIGATION_LEDGER.md",
+          "document": "claims/p5/frontier/P5_DELTA3_OBLIGATION_LEDGER.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/p5/frontier/P5_DELTA3_OBLIGATION_LEDGER.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 2,
+        "ledgerStatuses": [
+          "framework"
+        ],
+        "primaryVerifierCount": 0,
+        "independentAuditCount": 0
+      }
+    },
+    {
+      "id": "P7",
+      "title": "Committed local P7 incidence",
+      "diagramLabel": "Committed local P7 incidence · criterion proved, outcome OPEN",
+      "exactStatus": "One committed legal sensor/incidence pullback: criterion proved, algebra outcome open",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Committed P7 criterion",
+          "href": "../claims/p7/COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md",
+          "document": "claims/p7/COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/p7/COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 0,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [],
+        "primaryVerifierCount": 0,
+        "independentAuditCount": 0
+      }
+    },
+    {
+      "id": "GL",
+      "title": "Universal extraction, synchronization,",
+      "diagramLabel": "Universal extraction, synchronization, · and local-to-global gluing OPEN",
+      "exactStatus": "Universal extraction, cross-chart/depth synchronization, and local-to-global gluing for the local restriction lanes: open. The balanced full-sensor lane instead has the exact same-graph gate S2E.",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "Top two-port observability boundary",
+          "href": "../claims/arbitrary-order/GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md",
+          "document": "claims/arbitrary-order/GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 0,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [],
+        "primaryVerifierCount": 0,
+        "independentAuditCount": 0
+      }
+    },
+    {
+      "id": "C2",
+      "title": "Automatic characteristic-two lift",
+      "diagramLabel": "Automatic characteristic-two lift · REFUTED as a general route",
+      "exactStatus": "Automatic reduction of arbitrary characteristic-zero solutions to the pinned F2 argument: refuted as a general lemma",
+      "tone": "pruned",
+      "owners": [
+        {
+          "label": "Characteristic-two route boundary",
+          "href": "../claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md",
+          "document": "claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 0,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [],
+        "primaryVerifierCount": 0,
+        "independentAuditCount": 0
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "G0-S1-0",
+      "source": "G0",
+      "target": "S1",
+      "relation": "reduction",
+      "note": "Every hypothetical ternary witness has a balanced-sensor dichotomy."
+    },
+    {
+      "id": "S1-S2E-1",
+      "source": "S1",
+      "target": "S2E",
+      "relation": "exact refinement",
+      "note": "The unique rational full-sensor lift has an exact Cramer target, normalization, pair-pole, and Euler--hafnian gate."
+    },
+    {
+      "id": "S2E-S2-2",
+      "source": "S2E",
+      "target": "S2",
+      "relation": "boundary obligation",
+      "note": "The exact gate is not proved to fail on every target incidence."
+    },
+    {
+      "id": "S1-S3-3",
+      "source": "S1",
+      "target": "S3",
+      "relation": "boundary obligation",
+      "note": "The all-balanced rank-drop branch is not excluded on the witness locus."
+    },
+    {
+      "id": "S3-S3D-4",
+      "source": "S3",
+      "target": "S3D",
+      "relation": "refutation of argument",
+      "note": "Local concision, complete support, invertible blocks, and the pure target coefficients do not force any balanced sensor to have full rank; mixed-word zeros are essential."
+    },
+    {
+      "id": "S3-S3Q-5",
+      "source": "S3",
+      "target": "S3Q",
+      "relation": "exact stratum exclusion",
+      "note": "Simultaneously vertex-gauge-equivalent common symmetric edge forms are all-rank-drop from n=8 onward, but flattening rank excludes their entire local-GL orbit from the ternary witness locus; no synchronization theorem for arbitrary Ball is inferred."
+    },
+    {
+      "id": "S1-S3P-6",
+      "source": "S1",
+      "target": "S3P",
+      "relation": "conditional stratum obstruction",
+      "note": "A common root diagonal quadric makes the all-cross permanent the complete residue modulo Q; nonconstant words give zero and constant words give pure-root products. The two scalar-permanent cases exclude a physical common-conformal shore, but no universal common-quadric or conformal extraction is inferred."
+    },
+    {
+      "id": "S3Q-S3P-7",
+      "source": "S3Q",
+      "target": "S3P",
+      "relation": "strict special case",
+      "note": "The fully synchronized common-quadratic orbit has column-separable cross scalars all equal to one; the newer shore theorem allows arbitrary internal nonroot blocks and varying root/cross scalars and also closes zero permanent by a pure word."
+    },
+    {
+      "id": "G0-M1-8",
+      "source": "G0",
+      "target": "M1",
+      "relation": "reduction",
+      "note": "Maximum-cardinality torus roots give a pointwise exhaustive split."
+    },
+    {
+      "id": "M1-M2-9",
+      "source": "M1",
+      "target": "M2",
+      "relation": "case coverage",
+      "note": "The two cases are r>=2 and r=1; neither is excluded by the split."
+    },
+    {
+      "id": "M1-U1-9",
+      "source": "M1",
+      "target": "U1",
+      "relation": "case coverage",
+      "note": "The two cases are r>=2 and r=1; neither is excluded by the split."
+    },
+    {
+      "id": "S1-O1-10",
+      "source": "S1",
+      "target": "O1",
+      "relation": "mathematical premises",
+      "note": "Rebalancing the fixed layer exposes a truncated contracted sensor."
+    },
+    {
+      "id": "M2-O1-10",
+      "source": "M2",
+      "target": "O1",
+      "relation": "mathematical premises",
+      "note": "Rebalancing the fixed layer exposes a truncated contracted sensor."
+    },
+    {
+      "id": "O1-O2-11",
+      "source": "O1",
+      "target": "O2",
+      "relation": "residual refinement",
+      "note": "A second open root gives the exact next detector equation."
+    },
+    {
+      "id": "O2-O2P-12",
+      "source": "O2",
+      "target": "O2P",
+      "relation": "specialization",
+      "note": "If the outside two-row factorization is aligned with root j and its open shore is projectively constant, the whole single-open equation lifts the fixed Pm layer to P(m+1)."
+    },
+    {
+      "id": "O2P-PR-13",
+      "source": "O2P",
+      "target": "PR",
+      "relation": "reduction",
+      "note": "The synchronized projective branch is reduced to the same arbitrary weighted-permanent restriction family; no permanent nonrestriction theorem is inferred."
+    },
+    {
+      "id": "O2P-O2M-14",
+      "source": "O2P",
+      "target": "O2M",
+      "relation": "conditional cell closure",
+      "note": "The repeated-row Hall quotas and adjacent pure/mixed equations close row-replacement vanishing only in the minimum q=0,r=3 cell; they do not exclude a witness there."
+    },
+    {
+      "id": "O2P-O2T-15",
+      "source": "O2P",
+      "target": "O2T",
+      "relation": "conditional cell closure",
+      "note": "In q=0,r=4, local a/b transversality plus a surviving companion basis forces at least one nonzero row-replacement detector; transversality is not derived and no witness is excluded."
+    },
+    {
+      "id": "O2P-O2F-16",
+      "source": "O2P",
+      "target": "O2F",
+      "relation": "conditional cell closure",
+      "note": "Collision quotients, Hall incidence, recolouring, and local concision close every local-dependence boundary in aligned projective q=0,r=4; no witness is excluded."
+    },
+    {
+      "id": "O2P-O2V-17",
+      "source": "O2P",
+      "target": "O2V",
+      "relation": "conditional stratum detector",
+      "note": "In q=0,r=5, the collective companion matrix and deletion activity force at least one nonzero detector away from the two classified companion exceptions; neither activity nor good companions is universal."
+    },
+    {
+      "id": "O2P-O2A-18",
+      "source": "O2P",
+      "target": "O2A",
+      "relation": "conditional stratum detector",
+      "note": "In locally transverse q=0,r=5, pair-collision injectivity and the companion zero-edge lemma cover every companion frame when at most one root has quotient support at most one."
+    },
+    {
+      "id": "O2P-O2C-19",
+      "source": "O2P",
+      "target": "O2C",
+      "relation": "conditional cell closure",
+      "note": "In locally transverse q=0,r=5, weak-root trapping and the exhaustive companion split close every root quotient-support pattern; no witness is excluded."
+    },
+    {
+      "id": "O2P-O2D-20",
+      "source": "O2P",
+      "target": "O2D",
+      "relation": "conditional stratum closure",
+      "note": "In q=0,r=5, rank-one quotient trapping and a retained four-mode inverse close one arbitrary local defect, or two defects with a regular member; no witness is excluded."
+    },
+    {
+      "id": "O2T-O2F-21",
+      "source": "O2T",
+      "target": "O2F",
+      "relation": "strict special case",
+      "note": "The earlier local-transversality proof remains valid but its extra hypothesis is no longer needed for four-cell detection."
+    },
+    {
+      "id": "O2V-O2C-22",
+      "source": "O2V",
+      "target": "O2C",
+      "relation": "strict overlapping stratum",
+      "note": "Good companion frames with deletion activity are a strict subcase of the complete locally transverse five-cell detector."
+    },
+    {
+      "id": "O2A-O2C-23",
+      "source": "O2A",
+      "target": "O2C",
+      "relation": "strict overlapping stratum",
+      "note": "Frames with at most one quotient-sparse root are a strict subcase of the complete locally transverse five-cell detector."
+    },
+    {
+      "id": "O2C-O2D-24",
+      "source": "O2C",
+      "target": "O2D",
+      "relation": "strict special stratum",
+      "note": "The defect-free five-cell is the locally transverse subcase of the enlarged one-defect/regular-two-defect detector region."
+    },
+    {
+      "id": "O2D-O2E-25",
+      "source": "O2D",
+      "target": "O2E",
+      "relation": "strict special strata",
+      "note": "The previously detected transverse, one-defect, and regular-two-defect strata sit inside the enlarged at-most-two-defect region; exact three-activity and A/B/Z collision kernels add AB, AZ, BZ, and ZZ, but not AA or BB."
+    },
+    {
+      "id": "O2E-O2G-26",
+      "source": "O2E",
+      "target": "O2G",
+      "relation": "strict special strata",
+      "note": "The mixed and zero-containing two-defect cells sit inside the complete at-most-two-defect detector region; exact pair/triple incidence and pure-support matching add the same-type AA and BB cells."
+    },
+    {
+      "id": "O2G-O2H-27",
+      "source": "O2G",
+      "target": "O2H",
+      "relation": "strict special strata",
+      "note": "The complete at-most-two-defect region sits inside the enlarged at-most-three-defect region; fixed-layer incidence excludes A/Z, while exact R/B common kernels add RRR, RRB, RBB, and BBB."
+    },
+    {
+      "id": "O2H-O2I-28",
+      "source": "O2H",
+      "target": "O2I",
+      "relation": "remaining-strata closure",
+      "note": "The lifted pa>=2 row quota removes four/five B words; exact four-/five-defect kernels, reciprocal forcing, and the 3|2 Hall bridge add all remaining R/B words. The conclusion is complete conditional detection, not witness exclusion."
+    },
+    {
+      "id": "O2F-O3-29",
+      "source": "O2F",
+      "target": "O3",
+      "relation": "boundary obligation",
+      "note": "Four-cell closure does not automatically transport to larger aligned cells, positive surplus, or the unfactorized branch."
+    },
+    {
+      "id": "O2I-O3-30",
+      "source": "O2I",
+      "target": "O3",
+      "relation": "boundary obligation",
+      "note": "Complete aligned q=0,r=5 detection neither excludes a witness nor transports automatically to larger aligned cells, positive surplus, or the unfactorized branch."
+    },
+    {
+      "id": "O2-O3-31",
+      "source": "O2",
+      "target": "O3",
+      "relation": "boundary obligation",
+      "note": "The tight star refutes an automatic detector; higher/unfactorized data are needed."
+    },
+    {
+      "id": "M2-PR-32",
+      "source": "M2",
+      "target": "PR",
+      "relation": "specialization",
+      "note": "Zero surplus yields a tight weighted permanent restriction at arbitrary r>=5; it is not reduced to P7."
+    },
+    {
+      "id": "PR-PRC-33",
+      "source": "PR",
+      "target": "PRC",
+      "relation": "necessary condition",
+      "note": "Every co-two product sensor is rank-deficient under a restriction. For P6 all fifteen four-mode sensors have rank at most fourteen, but simultaneous rank drop plus local rank and pure nonvanishing is insufficient."
+    },
+    {
+      "id": "U1-U2-34",
+      "source": "U1",
+      "target": "U2",
+      "relation": "reduction",
+      "note": "Matrix-unit cancellation reduces to an at-most-four-port response."
+    },
+    {
+      "id": "U1-U1B-35",
+      "source": "U1",
+      "target": "U1B",
+      "relation": "exact support-minimal refinement",
+      "note": "The strict incidence alternative turns every absent positive endpoint balance into an integral GHZ-preserving degeneration that erases a physical edge; global support minimality therefore forces the balance."
+    },
+    {
+      "id": "U1B-U1C-36",
+      "source": "U1B",
+      "target": "U1C",
+      "relation": "exact complex-analytic refinement",
+      "note": "Strict all-edge balance makes the squared-amplitude exponential functional coercive and strictly convex on the positive GHZ torus modulo its edgewise stabilizer; its unique critical orbit has actual vertex-independent colour loads."
+    },
+    {
+      "id": "U2-U3-37",
+      "source": "U2",
+      "target": "U3",
+      "relation": "specialization",
+      "note": "Only the globally rigid-colour cell enters the deletion-deck factorization."
+    },
+    {
+      "id": "U3-U4-38",
+      "source": "U3",
+      "target": "U4",
+      "relation": "mathematical premise",
+      "note": "Rigid factorization yields the primitive and dual bridges."
+    },
+    {
+      "id": "U4-U5-39",
+      "source": "U4",
+      "target": "U5",
+      "relation": "refutation of argument",
+      "note": "The primitive alone cannot close arbitrary order."
+    },
+    {
+      "id": "U1-U6-40",
+      "source": "U1",
+      "target": "U6",
+      "relation": "mathematical premises",
+      "note": "Parity and bridge structure refine the one-root branch."
+    },
+    {
+      "id": "U2-U6-40",
+      "source": "U2",
+      "target": "U6",
+      "relation": "mathematical premises",
+      "note": "Parity and bridge structure refine the one-root branch."
+    },
+    {
+      "id": "U6-M2-41",
+      "source": "U6",
+      "target": "M2",
+      "relation": "reduction",
+      "note": "Exact erasure may produce a different realization with at least two roots."
+    },
+    {
+      "id": "U6-U7A-42",
+      "source": "U6",
+      "target": "U7A",
+      "relation": "exact refinement",
+      "note": "Target equality factors every diagonal word fibre over its pure shores and synchronizes every nonzero aggregate offdiagonal coordinate; internally zero fibres may still contain unsynchronized terms."
+    },
+    {
+      "id": "U7A-U7B-43",
+      "source": "U7A",
+      "target": "U7B",
+      "relation": "exact refinement",
+      "note": "The complete cross-matching response selects a cofactor-active physical term and bridge-normalizes its parity core, giving the deeper/transport/pure-cancellation trichotomy and finite no-exit holonomy."
+    },
+    {
+      "id": "U7B-U7C-44",
+      "source": "U7B",
+      "target": "U7C",
+      "relation": "exact phase refinement",
+      "note": "A finite active cycle produces a nonzero endpoint-character circulation; complete binomial fibres impose one Laurent holonomy equation, while aggregate fibres remain explicit. A least supported pure cancellation has a spanning conserved cofactor flow and therefore branches or forms alternating even cycles."
+    },
+    {
+      "id": "U7C-U7-45",
+      "source": "U7C",
+      "target": "U7",
+      "relation": "boundary obligation",
+      "note": "The Laurent holonomy can take the required odd sign, aggregate fibres retain additional summands, and both cofactor branching and alternating even cycles occur exactly. Further mixed equations are needed."
+    },
+    {
+      "id": "U1C-U7D-46",
+      "source": "U1C",
+      "target": "U7D",
+      "relation": "refutation of stronger argument",
+      "note": "Complete physical support, all pure target coordinates, strict endpoint balance, the actual moment gauge, and three proper nonrigidity sets coexist with an exact odd binomial cycle. The same table has an exposed nonzero mixed coefficient, so only the shortcut is refuted."
+    },
+    {
+      "id": "U7C-U7D-46",
+      "source": "U7C",
+      "target": "U7D",
+      "relation": "refutation of stronger argument",
+      "note": "Complete physical support, all pure target coordinates, strict endpoint balance, the actual moment gauge, and three proper nonrigidity sets coexist with an exact odd binomial cycle. The same table has an exposed nonzero mixed coefficient, so only the shortcut is refuted."
+    },
+    {
+      "id": "U7C-U7E-47",
+      "source": "U7C",
+      "target": "U7E",
+      "relation": "exact lattice reduction",
+      "note": "Every normalized fibre lies in the within-fibre difference group algebra. Faithful Laurent extension preserves units and holonomy elimination; singleton and all-binomial blocks are decided exactly by unit/parity alternatives."
+    },
+    {
+      "id": "U7D-U7E-48",
+      "source": "U7D",
+      "target": "U7E",
+      "relation": "fixed-template specialization",
+      "note": "The complete (4,4,0) block lands in the universal singleton branch because it contains ten singleton monomials. Its three-binomial subsystem is parity-consistent and gives only (H+1), while the singleton enlarges the complete block to (1)."
+    },
+    {
+      "id": "U7E-U7F-49",
+      "source": "U7E",
+      "target": "U7F",
+      "relation": "exact aggregate quotient",
+      "note": "Untwisting the selected core gives C[L/LB]; finite Fourier sheets and Laurent gcds completely decide residual ideals in quotient free ranks zero and one."
+    },
+    {
+      "id": "U7E-U7-50",
+      "source": "U7E",
+      "target": "U7",
+      "relation": "boundary obligation",
+      "note": "The universal reduction does not force a singleton, odd relation, or fully binomial active cycle from response data. Aggregate cycle fibres remain outside the selected binomial-core quotient."
+    },
+    {
+      "id": "U7F-U7-51",
+      "source": "U7F",
+      "target": "U7",
+      "relation": "boundary obligation",
+      "note": "The quotient theorem does not force free rank at most one or kill every low-rank sheet; free rank at least two remains multivariate. A continuation must close one of those exact residuals, couple another multidegree, or enter the pure/deeper topology."
+    },
+    {
+      "id": "U7B-D1-52",
+      "source": "U7B",
+      "target": "D1",
+      "relation": "boundary obligation",
+      "note": "Any selected square or hexagon may enter the existing deeper-blocker alternative."
+    },
+    {
+      "id": "U1C-U7-53",
+      "source": "U1C",
+      "target": "U7",
+      "relation": "compatible normal forms",
+      "note": "Moment gauge leaves the active-cycle Laurent monomial invariant and multiplies every cofactor-flow edge on one pure residual by a common nonzero scalar. Magnitude balance and the phase normal forms therefore hold simultaneously, but neither closes the deeper or phase exits."
+    },
+    {
+      "id": "U1C-D1-53",
+      "source": "U1C",
+      "target": "D1",
+      "relation": "compatible normal forms",
+      "note": "Moment gauge leaves the active-cycle Laurent monomial invariant and multiplies every cofactor-flow edge on one pure residual by a common nonzero scalar. Magnitude balance and the phase normal forms therefore hold simultaneously, but neither closes the deeper or phase exits."
+    },
+    {
+      "id": "U7C-U7-53",
+      "source": "U7C",
+      "target": "U7",
+      "relation": "compatible normal forms",
+      "note": "Moment gauge leaves the active-cycle Laurent monomial invariant and multiplies every cofactor-flow edge on one pure residual by a common nonzero scalar. Magnitude balance and the phase normal forms therefore hold simultaneously, but neither closes the deeper or phase exits."
+    },
+    {
+      "id": "U7C-D1-53",
+      "source": "U7C",
+      "target": "D1",
+      "relation": "compatible normal forms",
+      "note": "Moment gauge leaves the active-cycle Laurent monomial invariant and multiplies every cofactor-flow edge on one pure residual by a common nonzero scalar. Magnitude balance and the phase normal forms therefore hold simultaneously, but neither closes the deeper or phase exits."
+    },
+    {
+      "id": "U2-U8-54",
+      "source": "U2",
+      "target": "U8",
+      "relation": "boundary obligation",
+      "note": "Full flags have consequences, but proper nonempty flag sets remain."
+    },
+    {
+      "id": "U2-D1-55",
+      "source": "U2",
+      "target": "D1",
+      "relation": "boundary obligation",
+      "note": "Both reductions retain the deeper-blocker alternative."
+    },
+    {
+      "id": "U6-D1-55",
+      "source": "U6",
+      "target": "D1",
+      "relation": "boundary obligation",
+      "note": "Both reductions retain the deeper-blocker alternative."
+    },
+    {
+      "id": "U2-A1-56",
+      "source": "U2",
+      "target": "A1",
+      "relation": "specialization",
+      "note": "Simultaneous full flags for all colours enter all-bridge, absent deeper blockers."
+    },
+    {
+      "id": "A1-A2-57",
+      "source": "A1",
+      "target": "A2",
+      "relation": "residual refinement",
+      "note": "PRs #72–#73 close degree at most four only."
+    },
+    {
+      "id": "PR-P5-58",
+      "source": "PR",
+      "target": "P5",
+      "relation": "specialization",
+      "note": "These are two separately developed local lanes. The still-open r=6 / P6 restriction remains in PR, and arbitrary r>=8 is not reduced to any of these ranks."
+    },
+    {
+      "id": "PR-P7-58",
+      "source": "PR",
+      "target": "P7",
+      "relation": "specialization",
+      "note": "These are two separately developed local lanes. The still-open r=6 / P6 restriction remains in PR, and arbitrary r>=8 is not reduced to any of these ranks."
+    },
+    {
+      "id": "P5-GL-59",
+      "source": "P5",
+      "target": "GL",
+      "relation": "open gluing obligation",
+      "note": "Even complete local exclusions require a theorem connecting every global witness to them."
+    },
+    {
+      "id": "P7-GL-59",
+      "source": "P7",
+      "target": "GL",
+      "relation": "open gluing obligation",
+      "note": "Even complete local exclusions require a theorem connecting every global witness to them."
+    },
+    {
+      "id": "G0-C2-60",
+      "source": "G0",
+      "target": "C2",
+      "relation": "refutation of argument",
+      "note": "Good reduction to the prime field is not automatic, and the source theorem's local correspondence remains pending."
+    }
+  ]
+}
