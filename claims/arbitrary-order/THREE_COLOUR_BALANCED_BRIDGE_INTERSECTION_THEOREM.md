@@ -206,11 +206,13 @@ spanning complementary-type anchor matching.  Relative to that anchor,
 every pair-constant two-colour amplitude factors into principal hafnians.
 The degree-two component structure and a two-colour list assignment force
 both factors nonzero for some nonconstant colouring, a contradiction.
-See `FIVE_REGULAR_BALANCED_BRIDGE_DIAGONAL_BACKBONE.md`.  A remaining
-simultaneous all-bridge witness must contain a support vertex of degree at
-least six.  Three chosen monochromatic matchings then obey the bit-flip
-laws in `THREE_COLOUR_DIAGONAL_MATCHING_BALANCE_THEOREM.md`; the
-order-eight exact-degree-six pairwise-disjoint branch is excluded in
-`EIGHT_VERTEX_DEGREE_SIX_KOTZIG_PORT_OBSTRUCTION.md`; the
-overlapping-matching, degree-seven, larger-order, and deeper-blocker
-branches remain unresolved.
+See `FIVE_REGULAR_BALANCED_BRIDGE_DIAGONAL_BACKBONE.md`.  Later active-deck
+work strengthens the current consequence: three unconditional off-diagonal
+killers together with saturated `Delta(D)>=5` force full-support
+`Delta(G)>=8` and `n>=10`.  Thus full-support degrees six and seven are no
+longer live branches.  At saturated `Delta(D)=5`, every case has one of three
+active-deck-localized supported pure cancellations; `Delta(D)>=6` within the
+full-support degree-eight boundary remains open.  See
+`ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FIVE_BRANCHING_OR_CANCELLATION_CORE_REDUCTION_THEOREM.md`.
+The exact-degree-six owner retains its port normal form and sign theorem as
+structural provenance, and the separate deeper-blocker branch remains open.

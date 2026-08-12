@@ -26,8 +26,22 @@ excludes the entire `Delta(D)<=3` boundary for the physical
 saturated-diagonal graph in the simultaneous balanced all-bridge branch.  The
 [`maximum-degree-four theorem`](ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FOUR_EXCLUSION.md)
 strengthens this to exclude `Delta(D)<=4` by a two-matching noncancellation
-and Hamiltonian-chord argument.  It does not exclude `Delta(D)>=5`, the
-deeper-blocker branch, or the missing global extraction/gluing step.
+and Hamiltonian-chord argument.  The
+[`maximum-degree-five reduction`](ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FIVE_BRANCHING_OR_CANCELLATION_CORE_REDUCTION_THEOREM.md)
+then proves that every remaining `Delta(D)=5` system has a supported pure
+hafnian cancellation localized to an inactive-selected-edge complement, one
+side of a selected-matching-component/complement cut, or one side of a
+Hamiltonian-chord-arc/complement cut.  A Hall-deficient active graph supplies
+two inactive repair edges with common three-colour pair-deletion cofactor
+zeros.  The globally least pure core is inherited from the universal zero
+layer, but degree five refines it to an even cycle, a rank-two closed all-odd
+theta, or a rank-at-least-three bipartite subcubic core with at least four
+cubic vertices.  Separately, three unconditional off-diagonal killers at
+every vertex combine with `Delta(D)>=5` to give full-support `Delta(G)>=8`
+and `n>=10`, excluding every all-bridge support of maximum degree at most
+seven.  All three localized forms and all three least-core strata remain open
+as exclusions, as do `Delta(D)>=6`, the deeper-blocker branch, and the missing
+global extraction/gluing step.
 
 The
 [`characteristic-two contraction lift obstruction`](CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md)
