@@ -50,6 +50,20 @@ open as exclusions, as do the deeper-blocker branch and the missing global
 extraction/gluing step.
 
 The
+[`extremal-sparse opposite-shore dichotomy`](ALL_BRIDGE_BIPARTITE_LEAST_CORE_EXTREMAL_SPARSE_OPPOSITE_SHORE_DICHOTOMY_THEOREM.md)
+now resolves the exact internal topology of the surviving equality case
+`d=N=beta+1`.  The sparse site exhausts the degree excess on its shore.  The
+opposite shore either has one second extremal site, making the core
+`beta+1` internally disjoint odd routes, or has between two and `beta-1`
+lower-degree branch sites, each with a nonzero aggregate cofactor port.  At
+`beta=3` this is the exact `Q/Q` versus `Q/C^2` split; the complete
+rank-three route-kernel census has five forms and `N` is four or five.  The
+weighted `K_(3,3)-e` control refutes the stronger inference that
+`N=beta+1` alone forces a sparse site or theta.  These are pure least-core
+reductions and controls, not simultaneous all-bridge witnesses; both sparse
+alternatives and the forced aggregate ports remain open as exclusions.
+
+The
 [`characteristic-two contraction lift obstruction`](CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md)
 records why the source-inspected external candidate integer-to-`F_2` route
 does not automatically extend to complex weights: good reduction at two is
