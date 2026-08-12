@@ -130,6 +130,19 @@ are not matching-sum sensor realizations, omit full target consistency and
 normalization, and are not balanced target incidences.  No retained minor is
 proved nonzero on every actual incidence.
 
+The
+[`normalized full-row compatibility boundary`](BALANCED_FULL_SENSOR_CRAMER_PAIR_EMPTY_NORMALIZATION_CONTROL_COMPATIBILITY_THEOREM.md)
+then restores both layers omitted by those selected controls.  At `m=3`, eight
+exact `27 x 4` degree-compatible systems separately make each retained
+coordinate the only nonzero coordinate while satisfying the complete GHZ
+target equation, function-field rank four, and `f_empty=1`.  Thus the unused
+target rows and empty normalization, even together with the column degrees and
+the other seven pair conditions, do not make a retained coordinate redundant
+at the full-row Cramer level.  These systems are not proved to be common-shore
+companion matching-sum sensors.  Realization or nonrealizability inside that
+physical image is the nearest open bridge; no balanced target incidence is
+constructed or excluded.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
