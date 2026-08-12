@@ -440,7 +440,7 @@
     {
       "name": "All-Bridge Active-Deck Degree-Five Cut Reduction and Full-Support Degree-Eight Boundary",
       "document": "claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FIVE_BRANCHING_OR_CANCELLATION_CORE_REDUCTION_THEOREM.md",
-      "document_sha256_16": "f7c284c0845b385a",
+      "document_sha256_16": "64ea4b28539d4b20",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact combinatorial proof over characteristic zero",
@@ -448,8 +448,8 @@
         "even n>=6",
         "D is the physical saturated-diagonal graph and G is the full essential support skeleton",
         "the pointwise deg_G>=deg_D+3 inequality and full-support Delta(G)>=8 conclusion require no degree assumption",
-        "the exhaustive three-form active-deck localization assumes Delta(D)<=5",
-        "the universal least pure-cancellation core is imported; the bipartite subcubic cycle/theta/higher-rank refinement assumes Delta(D)<=5"
+        "this owner's exhaustive three-form active-deck localization is stated under Delta(D)<=5; the later all-degree owner proves that the localization argument needs no upper-degree bound",
+        "the universal least pure-cancellation core is imported; subcubicity and the typed higher-rank refinement assume Delta(D)<=5, while later work separates degree-free bipartiteness and the rank-one/rank-two strata"
       ],
       "dependencies": [],
       "primary_verifier": "claims/arbitrary-order/verify_all_bridge_active_deck_maximum_degree_five_branching_or_cancellation_core_reduction.py",
@@ -458,7 +458,7 @@
       "audit_provenance": "independent_exact_identity_audit",
       "expected_runtime": "seconds (standard library)",
       "external_binaries": [],
-      "note": "The written characteristic-zero proof gives two exact consequences. Unconditionally, three distinct off-diagonal killers and the existing Delta(D)>=5 theorem imply full-support Delta(G)>=8 and n>=10, excluding maximum full-support degree at most seven. Under Delta(D)<=5, every case has a supported pure cancellation localized to an inactive-selected-edge complement, one side of a selected-matching-component/complement cut, or one side of a Hamiltonian-chord-arc/complement cut. A minimal Hall-deficient shore forces two inactive repair edges with all three global pair-deletion cofactors zero. The universal least core is explicitly imported and need not retain those labels; degree five refines it to an even cycle, a closed all-odd rank-two theta, or a rank-at-least-three bipartite subcubic core with at least four cubic sites. The independent scripts check the finite interfaces and exact controls rather than enumerate arbitrary-order graphs. All three localized forms and all three least-core strata, Delta(D)>=6, the deeper-blocker branch, global extraction/gluing, and the global conjecture remain open as exclusions.",
+      "note": "The written characteristic-zero proof gives two exact consequences. Unconditionally, three distinct off-diagonal killers and the existing Delta(D)>=5 theorem imply full-support Delta(G)>=8 and n>=10, excluding maximum full-support degree at most seven. Under Delta(D)<=5, every case has a supported pure cancellation localized to an inactive-selected-edge complement, one side of a selected-matching-component/complement cut, or one side of a Hamiltonian-chord-arc/complement cut. A minimal Hall-deficient shore forces two inactive repair edges with all three global pair-deletion cofactors zero. The universal least core is explicitly imported and need not retain those labels; degree five makes it subcubic and supplies exact higher-rank site types. The later all-degree owner proves that the three localization forms, least-core bipartiteness, and rank-one/rank-two topology require no upper-degree bound. The independent scripts check finite interfaces and exact controls rather than enumerate arbitrary-order graphs. All localized forms and least-core port strata, the deeper-blocker branch, global extraction/gluing, and the global conjecture remain open as exclusions.",
       "claim_package": "claims/arbitrary-order",
       "proof_variant": "canonical",
       "subpackage": null,
@@ -467,6 +467,34 @@
         "audit_all_bridge_active_deck_maximum_degree_five_branching_or_cancellation_core_reduction.py",
         "verify_all_bridge_active_deck_maximum_degree_five_branching_or_cancellation_core_reduction.py"
       ]
+    },
+    {
+      "name": "All-Bridge All-Degree Localized Pure-Cancellation and Bipartite-Core Reduction",
+      "document": "claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_ALL_DEGREE_LOCALIZED_PURE_CANCELLATION_AND_BIPARTITE_CORE_REDUCTION_THEOREM.md",
+      "document_sha256_16": "2eb6db87500a89ad",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact combinatorial and convex-geometric proof over characteristic zero",
+        "simultaneous balanced all-bridge normal form at even order n>=6",
+        "D is the physical saturated-diagonal graph; the inherited theorem Delta(D)>=5 is used only to make every selected active-matching triple leave residual saturated support",
+        "the globally least pure core is selected over all colours and proper even supported pure cancellations",
+        "the matching-polytope theorem applies to the connected bipartite matching-covered least core and uses ordinary real incidence vectors, not positivity of the hafnian weights",
+        "the one-open theta is excluded only after all-bridge bit-flip specialization; the generic pure-core theorem and its nonbipartite sharpness control remain valid",
+        "the bounded scripts check finite mechanisms and sharp controls; the written proof carries the arbitrary-order quantifiers",
+        "no localized cancellation, aggregate port, extremal sparse fan, deeper blocker, or universal extraction/gluing obligation is excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_all_bridge_active_deck_all_degree_localized_pure_cancellation_and_bipartite_core.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_all_bridge_active_deck_all_degree_localized_pure_cancellation_and_bipartite_core.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "The written proof audits the active-matching argument at its exact quantifiers and shows that every simultaneous all-bridge system, at every saturated degree, has a supported pure cancellation localized to an inactive-selected-edge complement, one side of a selected-matching-component/complement cut, or one side of a Hamiltonian-chord-arc/complement cut. Minimal Hall deficiency gives two inactive common-cofactor-zero repairs. Independently, saturated bit flips make every globally least pure core bipartite. Rank one is an even cycle and rank two a closed all-odd theta; the generic one-open theta is impossible only in this specialization. The perfect-matching polytope has dimension beta, hence N>=beta+1. Every branch site with d<=beta has a nonzero aggregate port, while a sparse site requires d=N=beta+1. The exact primary and independent no-import audit check bounded component/chord, Hall, polytope-rank, theta, sparse-fan, and aggregate controls. All displayed cancellation and port strata remain open as exclusions; global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     },
     {
       "name": "Balanced Half-Sensor Complete Deck and Wick Globalization Theorem",
@@ -1630,7 +1658,7 @@
     {
       "name": "Matrix-Unit Minimal Pure-Cofactor Port Aggregate and Conformal-Fan Reduction Theorem",
       "document": "claims/arbitrary-order/MATRIX_UNIT_MINIMAL_PURE_COFACTOR_PORT_AGGREGATE_AND_CONFORMAL_FAN_REDUCTION_THEOREM.md",
-      "document_sha256_16": "d04271838c52b522",
+      "document_sha256_16": "d6eab41a48c0f817",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact perfect-matching and alternating-cycle arguments over a field of characteristic different from two at every even order; sharpness families are over Q",
