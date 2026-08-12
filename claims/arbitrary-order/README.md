@@ -355,8 +355,19 @@ That derivative is either injective, reducing the marked rows to pure-source
 zero divisors and an impossible three-colour pigeonhole, or has the unique
 synchronized rank-one-pair geometry.  In the exceptional geometry all nine
 rows are forced into a five-space.  Thus joint cross rank nine is impossible;
-joint rank at most eight and the other common-three-space component types
-remain open.
+the other common-three-space component types remain open.
+
+The
+[`joint-cross-rank-eight exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_CROSS_RANK_EIGHT_EXCLUSION_THEOREM.md)
+pushes that closure through corank one.  A hyperplane image can reduce the
+shared-derivative rank by at most one, so two nonzero root blocks are still
+impossible and the same diagonal sparse equation follows.  On its regular
+derivative chart, the six off-diagonal zero-divisor rows span at most four,
+forcing total joint rank at most seven.  On the unique exceptional chart,
+every rank-one restriction uses the same root covector, whereas the two
+surviving GHZ colours require independent covectors.  Hence ranks nine and
+eight are both excluded; joint rank at most seven and the other physical
+component types remain open.
 
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)

@@ -4123,6 +4123,33 @@
       "legacy_paths": []
     },
     {
+      "name": "Balanced m=3 Common-Three-Space Joint-Cross-Rank-Eight Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_CROSS_RANK_EIGHT_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "933b27ee73660436",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion for a normalized target-consistent physical m=3 common shore whose total singleton span has dimension three",
+        "the joint nine-by-nine root-nonroot cross-colour map has rank exactly eight",
+        "a hyperplane restriction loses at most one shared-derivative rank, so dimension three still forces one diagonal coordinate-monomial root-root edge and the S2U sparse block-permanent equation",
+        "on the injective derivative chart the six off-diagonal zero-divisor rows span at most four, forcing total joint rank at most seven",
+        "on the unique exceptional derivative chart every nonzero rank-one restriction kills one fixed two-plane and therefore uses one coefficient covector, contradicting the two independent surviving GHZ colours",
+        "joint cross rank at most seven, the other common-three-space component types, other S2Q strata, every m at least four, all-rank-drop, witness exclusion, counterexample, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_cross_rank_eight_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_cross_rank_eight_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_CROSS_RANK_EIGHT_EXCLUSION_SELF_REVIEW_2026-08-12.md",
+      "expected_runtime": "seconds (SymPy hyperplane, zero-divisor, and exceptional-covector replay; independent standard-library Fraction audit)",
+      "external_binaries": [],
+      "note": "Corank one cannot hide two nonzero root blocks, so the diagonal sparse block-permanent equation persists. Its regular derivative chart has a sharp off-diagonal zero-grid span bound four, and its exceptional chart has only one rank-one coefficient covector versus the two required GHZ covectors. Together with the rank-nine theorem, every surviving common-three-space incidence has joint rank at most seven. Global Krenn-Gu is UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Non-proof-active boundary-candidate collection checkpoint; representative frozen certificate refuted",
       "document": "claims/p5/h22/component19-p0-ordinary-boundary/P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md",
       "document_sha256_16": "15e7fd63116a421f",
