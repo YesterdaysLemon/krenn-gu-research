@@ -17,6 +17,7 @@ ZERO_EXPONENT: Exponent = (0,) * 9
 WORDS = tuple(product(range(3), repeat=3))
 ROW = {word: index for index, word in enumerate(WORDS)}
 EXPECTED_DEGREES = ((0, 0, 1), (0, 1, 0), (1, 0, 0), (1, 1, 1))
+SOLUTION_DEGREES = ((1, 1, 0), (1, 0, 1), (0, 1, 1), (0, 0, 0))
 
 
 @dataclass
@@ -364,6 +365,12 @@ def verify(control: Control) -> tuple[Laurent, Laurent]:
     assert control.solution[3] == ONE
     assert matrix_vector(control.gamma, control.solution) == J
 
+    for component, expected in zip(
+        control.solution, SOLUTION_DEGREES, strict=True
+    ):
+        if not component.is_zero():
+            assert component.group_degrees() == {expected}
+
     for column, expected in enumerate(EXPECTED_DEGREES):
         for row in control.gamma:
             entry = row[column]
@@ -389,36 +396,37 @@ def verify(control: Control) -> tuple[Laurent, Laurent]:
     nonzero = {key for key, value in derivatives.items() if not value.is_zero()}
     assert nonzero == {control.exceptional}
 
-    name, left, right = control.exceptional
-    if name == "r":
-        variable = 6 + left
-        residual = first_residual(
-            matrix, selected_target, numerator, beta, variable
-        )
-        expected = beta * beta * control.solution[0].derivative(variable)
-    else:
-        offset = 0 if name == "x" else 3
-        first = offset + left
-        second = offset + right
-        residual = hessian_residual(
-            matrix,
-            selected_target,
-            numerator,
-            control.solution,
-            beta,
-            first,
-            second,
-        )
-        expected = (
-            beta
-            * beta
-            * beta
-            * control.solution[0].derivative(first).derivative(second)
-        )
-    replacement = determinant(replace_column(matrix, 0, residual))
-    assert replacement == expected
-    assert not replacement.is_zero()
-    return beta, replacement
+    exceptional_replacement = ZERO
+    for coordinate, derivative in derivatives.items():
+        name, left, right = coordinate
+        if name == "r":
+            variable = 6 + left
+            residual = first_residual(
+                matrix, selected_target, numerator, beta, variable
+            )
+            expected = beta * beta * derivative
+        else:
+            offset = 0 if name == "x" else 3
+            first = offset + left
+            second = offset + right
+            residual = hessian_residual(
+                matrix,
+                selected_target,
+                numerator,
+                control.solution,
+                beta,
+                first,
+                second,
+            )
+            expected = beta * beta * beta * derivative
+        replacement = determinant(replace_column(matrix, 0, residual))
+        assert replacement == expected
+        assert (not replacement.is_zero()) == (coordinate == control.exceptional)
+        if coordinate == control.exceptional:
+            exceptional_replacement = replacement
+
+    assert not exceptional_replacement.is_zero()
+    return beta, exceptional_replacement
 
 
 def main() -> None:

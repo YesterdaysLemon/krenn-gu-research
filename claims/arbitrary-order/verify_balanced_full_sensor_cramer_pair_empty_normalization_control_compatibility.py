@@ -19,6 +19,7 @@ VARIABLES = X + Y + R
 WORDS = tuple(product(range(3), repeat=3))
 ROW = {word: index for index, word in enumerate(WORDS)}
 COLUMN_DEGREES = ((0, 0, 1), (0, 1, 0), (1, 0, 0), (1, 1, 1))
+SOLUTION_DEGREES = ((1, 1, 0), (1, 0, 1), (0, 1, 1), (0, 0, 0))
 OFF_ONE = (0, 0, 1)
 OFF_TWO = (0, 1, 0)
 OFF_THREE = (1, 0, 0)
@@ -158,6 +159,21 @@ def group_degrees(expression: sp.Expr) -> set[tuple[int, int, int]]:
     }
 
 
+def rational_group_degree(expression: sp.Expr) -> tuple[int, int, int]:
+    """Return the net group degree of a nonzero homogeneous rational function."""
+    numerator, denominator = sp.fraction(sp.cancel(expression))
+    numerator_degrees = group_degrees(numerator)
+    denominator_degrees = group_degrees(denominator)
+    assert len(numerator_degrees) == 1
+    assert len(denominator_degrees) == 1
+    numerator_degree = next(iter(numerator_degrees))
+    denominator_degree = next(iter(denominator_degrees))
+    return tuple(
+        left - right
+        for left, right in zip(numerator_degree, denominator_degree, strict=True)
+    )
+
+
 def retained_derivatives(pair_component: sp.Expr) -> dict[tuple[str, int, int], sp.Expr]:
     """Compute the eight retained affine-projective derivatives."""
     answer: dict[tuple[str, int, int], sp.Expr] = {
@@ -216,6 +232,12 @@ def verify_control(control: Control) -> tuple[sp.Expr, sp.Expr]:
     assert control.gamma * control.solution == J
     assert control.solution[3] == 1
 
+    for component, expected in zip(
+        control.solution, SOLUTION_DEGREES, strict=True
+    ):
+        if component != 0:
+            assert rational_group_degree(component) == expected
+
     for column, expected in enumerate(COLUMN_DEGREES):
         for entry in control.gamma[:, column]:
             if entry != 0:
@@ -250,33 +272,33 @@ def verify_control(control: Control) -> tuple[sp.Expr, sp.Expr]:
     }
     assert set(nonzero) == {control.exceptional}
 
-    group_name, left, right = control.exceptional
-    if group_name == "r":
-        variable = R[left]
-        residual = first_residual(matrix, target, beta, numerator, variable)
+    exceptional_replacement = sp.Integer(0)
+    for coordinate, derivative in derivatives.items():
+        group_name, left, right = coordinate
+        if group_name == "r":
+            variable = R[left]
+            residual = first_residual(matrix, target, beta, numerator, variable)
+            expected_replacement = sp.factor(beta**2 * derivative)
+        else:
+            group = X if group_name == "x" else Y
+            residual = hessian_residual(
+                matrix,
+                target,
+                beta,
+                numerator,
+                control.solution,
+                group[left],
+                group[right],
+            )
+            expected_replacement = sp.factor(beta**3 * derivative)
         replacement = replacement_determinant(matrix, residual)
-        expected_replacement = sp.factor(
-            beta**2 * sp.diff(control.solution[0], variable)
-        )
-    else:
-        group = X if group_name == "x" else Y
-        residual = hessian_residual(
-            matrix,
-            target,
-            beta,
-            numerator,
-            control.solution,
-            group[left],
-            group[right],
-        )
-        replacement = replacement_determinant(matrix, residual)
-        expected_replacement = sp.factor(
-            beta**3
-            * sp.diff(control.solution[0], group[left], group[right])
-        )
-    assert sp.factor(replacement - expected_replacement) == 0
-    assert replacement != 0
-    return beta, replacement
+        assert sp.factor(replacement - expected_replacement) == 0
+        assert (replacement != 0) == (coordinate == control.exceptional)
+        if coordinate == control.exceptional:
+            exceptional_replacement = replacement
+
+    assert exceptional_replacement != 0
+    return beta, exceptional_replacement
 
 
 def main() -> None:

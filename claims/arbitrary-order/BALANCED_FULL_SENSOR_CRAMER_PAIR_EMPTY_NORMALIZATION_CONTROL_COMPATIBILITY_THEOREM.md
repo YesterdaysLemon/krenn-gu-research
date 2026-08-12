@@ -1,5 +1,4 @@
-# Balanced full-row Cramer target consistency and normalization remain
-# compatible with every projective pair control
+# Balanced full-row Cramer target consistency and normalization remain compatible with every projective pair control
 
 ## Status
 
@@ -70,6 +69,18 @@ target-consistent and normalized when a vector `f in F^4` satisfies
 ```text
 Gamma f=J,             f_empty=1.                    (6)
 ```
+
+Every nonzero candidate deck component also has its own rational label
+multidegree:
+
+```text
+deg f_xy    =(1,1,0),
+deg f_xr    =(1,0,1),
+deg f_yr    =(0,1,1),
+deg f_empty =(0,0,0).                               (6a)
+```
+
+Both numerator and denominator degrees are counted in (6a).
 
 If four rows form a minor `A` with `beta=det(A)!=0`, and `j` is the target
 restricted to those rows, then (6) gives the ordinary Cramer identities
