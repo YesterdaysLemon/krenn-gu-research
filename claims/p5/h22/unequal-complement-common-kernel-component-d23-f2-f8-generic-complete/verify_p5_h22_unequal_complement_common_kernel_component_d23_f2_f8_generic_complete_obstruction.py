@@ -163,7 +163,8 @@ def main() -> None:
     exact_equal(resultant, expected_resultant)
     assert sp.Poly(expected_resultant, V.A, V.R, V.D) != 0
 
-    theorem = " ".join(THEOREM.read_text(encoding="utf-8").split())
+    theorem_text = THEOREM.read_text(encoding="utf-8")
+    theorem = " ".join(theorem_text.split())
     for phrase in (
         "Exact characteristic-zero generic-component branch closure",
         "whole geometric generic intersection (1) is empty",
@@ -194,7 +195,12 @@ def main() -> None:
                 "remaining_f2_residual_closed": False,
                 "finite_field_proof_used": False,
                 "global_conjecture_resolved": False,
-                "theorem_sha256": hashlib.sha256(THEOREM.read_bytes()).hexdigest(),
+                "theorem_sha256": hashlib.sha256(
+                    theorem_text.replace("\r\n", "\n")
+                    .replace("\r", "\n")
+                    .encode("utf-8")
+                ).hexdigest(),
+                "theorem_sha256_mode": "LF-normalized UTF-8 text",
             },
             indent=2,
         )
