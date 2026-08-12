@@ -75,6 +75,22 @@ prove independence, or exclude either sparse kernel; the scalar controls are
 not simultaneous all-bridge witnesses.
 
 The
+[`beta-three fixed-completion mixed-fibre rank-three block theorem`](MATRIX_UNIT_ALL_BRIDGE_BETA_THREE_ROUTE_PORT_FIXED_COMPLETION_MIXED_FIBRE_RANK_THREE_BLOCK_THEOREM.md)
+is a conditional `A3 + A5 + U7A + U7K` composition.  If one fixed nonzero
+matching extends all four `Q/Q` or `Q/C^2` core matchings into the same
+complete mixed zero-target fibre, their exponent differences retain rank
+three and their four nonzero terms form a cancelling block.  The rest of the
+complete fibre has zero sum, so it is empty or has at least two terms: the
+whole fibre has four terms or at least six, never five.  The `Q/C^2`
+complementary doubletons remain nonzero exact negatives inside this block.
+The normalized formal polynomial is the proper nonunit `1+X+Y+Z`; its
+physical evaluation vanishes, but its four full exponents have no nontrivial
+integer affine dependency (equivalently, the three exponent differences have
+no nonzero integer dependency).  Existence of the fixed completion, a
+nonempty complementary fibre, a unit or odd dependency, and exclusion of
+either sparse core remain open.
+
+The
 [`least-core complementary-shore response and portal dichotomy`](MATRIX_UNIT_LEAST_CORE_COMPLEMENTARY_SHORE_RESPONSE_AND_PORTAL_DICHOTOMY_THEOREM.md)
 is a parallel `A3 + U7I` response interface.  Every allowed edge `f` of the
 globally least all-bridge pure core forces a zero in each opposite colour on
