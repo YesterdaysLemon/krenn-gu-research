@@ -425,6 +425,20 @@ even cycles.  Both structures survive moment gauge.  These reductions make
 the remaining phase data explicit but do not exclude it.
 
 The
+[`aggregate active-cycle defect theorem`](MATRIX_UNIT_AGGREGATE_ACTIVE_CYCLE_DEFECT_FACTORISATION_AND_SPLIT_FIBRE_SHARPNESS_THEOREM.md)
+now gives the exact normal form on the other side of the cycle-fibre split.
+If `A_i` is the outgoing-matching-normalized sum of every extra term at the
+`i`th cycle word, then each `A_i` is gauge invariant and
+`H=(-1)^m product_i(1+A_i)`.  Aggregate combinatorics need not give a
+nonzero defect: a complete locally concise eight-vertex matrix-unit family
+has fibre sizes `5,2,2`, an exact three-term split cancellation inside the
+aggregate fibre, and `H=-1`.  Across the same family
+`H=-2/(1+2t)` is Zariski dense, so the three complete cycle equations have
+zero elimination ideal in `H`.  The family fails all pure targets and is not
+a witness.  Aggregate-cycle equations alone are therefore exhausted as a
+holonomy restriction; a complete-target or cross-fibre coupling is required.
+
+The
 [`minimal pure-cofactor matching-covered core theorem`](MATRIX_UNIT_MINIMAL_PURE_COFACTOR_MATCHING_COVERED_CORE_AND_SINGLE_CYCLE_THEOREM.md)
 sharpens that pure exit at arbitrary order.  At a least supported cancelling
 shore, the active first-cofactor graph is exactly the allowed-edge graph--the
