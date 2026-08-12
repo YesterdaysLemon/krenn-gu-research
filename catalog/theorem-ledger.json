@@ -656,6 +656,31 @@
       "legacy_paths": []
     },
     {
+      "name": "Balanced Full-Sensor Cramer Pair Empty-Normalization Control Compatibility Theorem",
+      "document": "claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_PAIR_EMPTY_NORMALIZATION_CONTROL_COMPATIBILITY_THEOREM.md",
+      "document_sha256_16": "a50efa8fd128462b",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero construction at m=3 over the rational function field in three ternary nonroot groups, on the chart x_0 y_0 r_0 nonzero",
+        "all 27 root-word rows, the four even-deck columns (xy,xr,yr,empty), the exact GHZ target, deck-complement column multidegrees, function-field column rank four, and f_empty=1 are imposed",
+        "for the pair xy, each of the eight retained projective-minimal coordinates is separately the sole nonzero retained coordinate of one exact control",
+        "the degree-compatible full-row systems are not proved common-shore companion matching-sum sensors and are not balanced target incidences or physical graphs",
+        "no simultaneous all-pair flatness, arbitrary-order lift, matching-sum realization or nonrealizability, witness, counterexample, or global resolution is claimed"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_full_sensor_cramer_pair_empty_normalization_control_compatibility.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_full_sensor_cramer_pair_empty_normalization_control_compatibility.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (SymPy primary; standard-library sparse Laurent-polynomial and determinant audit)",
+      "external_binaries": [],
+      "note": "Eight exact m=3 full-row controls separately make each retained pair coordinate the only nonzero one while satisfying all 27 GHZ target equations, empty normalization, rank four, and the correct rational multidegrees. Both implementations check every target row and all 64 retained replacement minors. The result proves compatibility only at the degree-compatible Cramer level: common-shore matching-sum realization, universal target-incidence failure, the all-rank-drop branch, and the global conjecture remain open and UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Balanced All-Rank-Drop Diagonal-Complete Sharpness Theorem",
       "document": "claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md",
       "document_sha256_16": "c4fc0352fe104228",
