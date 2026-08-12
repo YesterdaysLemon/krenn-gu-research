@@ -75,6 +75,23 @@ prove independence, or exclude either sparse kernel; the scalar controls are
 not simultaneous all-bridge witnesses.
 
 The
+[`least-core complementary-shore response and portal dichotomy`](MATRIX_UNIT_LEAST_CORE_COMPLEMENTARY_SHORE_RESPONSE_AND_PORTAL_DICHOTOMY_THEOREM.md)
+is a parallel `A3 + U7I` response interface.  Every allowed edge `f` of the
+globally least all-bridge pure core forces a zero in each opposite colour on
+the shore obtained by adjoining `f` to the complement.  If that response
+shore is support-matchable, global leastness gives `2|S|<=n+2` and a
+conformally minimal pure relation attaches termwise in one mixed target
+fibre; beyond that size boundary every response shore is support-unmatchable.
+Across a core edge the opposite-colour active neighbour sets are nonempty and
+disjoint, but the active colour's own normal bit is free, so those neighbours
+need not be exterior.  In a co-two exterior their exterior-neighbour vertices
+form only an independent set.  In the original colour, either the complement
+matches and completes the least relation or a minimum-crossing full matching
+gives a finite portal whose every nonempty induced image is unmatchable.  No
+response support, co-two exclusion, target-lattice unit, or witness exclusion
+is inferred.
+
+The
 [`characteristic-two contraction lift obstruction`](CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md)
 records why the source-inspected external candidate integer-to-`F_2` route
 does not automatically extend to complex weights: good reduction at two is
