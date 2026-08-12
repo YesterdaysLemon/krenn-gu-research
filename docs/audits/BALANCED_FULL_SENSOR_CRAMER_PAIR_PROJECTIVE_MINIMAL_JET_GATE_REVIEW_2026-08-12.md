@@ -32,6 +32,15 @@ coordinate list in the ambient multihomogeneous rational-section lemma.  They
 are not balanced complete-deck sensors with the GHZ target and do not prove
 minimality among arbitrary encodings of the actual target-incidence image.
 
+A fresh read-only hostile pass from the disjoint Lumen lane pinned exact S2L
+head `4a237b25ef694208e15df654bdf6d472131210c6` and theorem SHA-256
+`9f5f864c3f8402093708cc644edcd2c51e5e901d455ad7dd80cb4c90b5206266`.
+It found no P0--P2 or blocking P3 defect.  It independently replayed all eight
+structured `k=4,m=3` controls, their deck-complement multidegrees, pure-GHZ
+selected-row pattern, Cramer solutions, and intended retained-jet failures.
+It also accepted the explicit boundary: no matching-sum sensor realization,
+unselected/full-row consistency, or empty normalization is supplied.
+
 ## 1. Imported obligations
 
 Two verified predecessors remain load-bearing.
