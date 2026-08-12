@@ -95,6 +95,21 @@ column except the pair column.  The exact residual-covariance formulas retain
 the correction terms before target consistency; no balanced target is proved
 to pass or fail a span test.
 
+The
+[`projective-minimal pair-jet gate`](BALANCED_FULL_SENSOR_CRAMER_PAIR_PROJECTIVE_MINIMAL_JET_GATE_THEOREM.md)
+then removes the radial redundancy exactly.  Degree-zero Euler syzygies at
+each nonendpoint and differentiated degree-one Euler syzygies at both
+endpoints make the full cone-coordinate family equivalent to only the
+nonpivot first stresses and nonpivot symmetric Hessian blocks.  The uniform
+`d` count is `(d-1)(m+d-2)` per pair; in ternary dimension it falls from
+`3m+6` to `2m+2`.  The same syzygies hold directly among the selected-column
+replacement determinants before target consistency.  Structured `m=3`,
+four-column controls show every retained coordinate is individually necessary
+from deck-complement multidegrees and selected pure-GHZ rows alone, but they
+are not matching-sum sensor realizations, omit full target consistency and
+normalization, and are not balanced target incidences.  No retained minor is
+proved nonzero on every actual incidence.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

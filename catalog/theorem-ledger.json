@@ -573,6 +573,32 @@
       "legacy_paths": []
     },
     {
+      "name": "Balanced Full-Sensor Cramer Pair Projective-Minimal Jet Gate Theorem",
+      "document": "claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_PAIR_PROJECTIVE_MINIMAL_JET_GATE_THEOREM.md",
+      "document_sha256_16": "9f5f864c3f840209",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact Euler-homogeneity and domain-cancellation proof for a multihomogeneous Cramer pair component on one affine-cone projective chart",
+        "the radial compression itself is characteristic-free; the imported implication from full differential flatness to one physical bilinear block remains characteristic-zero",
+        "the full-row span interpretation additionally requires all target residuals to vanish and the complete sensor to have function-field column rank k",
+        "the ternary pair layer has 2m+2 retained nonpivot identities; the omitted radial replacement minors follow from exact Euler syzygies",
+        "the structured four-column controls have correct deck-complement degrees and selected pure-GHZ rows but are not matching-sum sensor realizations, omit unselected/full-row consistency and normalization, and are not balanced target incidences",
+        "no retained minor is forced nonzero; higher recurrences, the all-rank-drop branch, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_full_sensor_cramer_pair_projective_minimal_jet_gate.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_full_sensor_cramer_pair_projective_minimal_jet_gate.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (SymPy primary; standard-library sparse-polynomial and determinant audit)",
+      "external_binaries": [],
+      "note": "The written proof uses degree-zero and differentiated degree-one Euler syzygies to make the full pair differential-flatness family equivalent to the nonpivot first stresses and nonpivot endpoint Hessians. The uniform count is (d-1)(m+d-2), hence 2m+2 per ternary pair, and the same syzygies hold among selected replacement minors. Exact selected-system controls show coordinatewise irredundancy only at the stated ambient architecture; no balanced target incidence is excluded or constructed, and the global conjecture remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Balanced All-Rank-Drop Diagonal-Complete Sharpness Theorem",
       "document": "claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md",
       "document_sha256_16": "c4fc0352fe104228",
