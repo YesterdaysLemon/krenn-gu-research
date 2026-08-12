@@ -554,6 +554,35 @@
       "legacy_paths": []
     },
     {
+      "name": "Matrix-Unit Least-Core Complementary-Shore Response and Portal Dichotomy",
+      "document": "claims/arbitrary-order/MATRIX_UNIT_LEAST_CORE_COMPLEMENTARY_SHORE_RESPONSE_AND_PORTAL_DICHOTOMY_THEOREM.md",
+      "document_sha256_16": "e776f0ad967ddb83",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact hafnian, matching, and alternating-switch proof over characteristic zero",
+        "simultaneous balanced all-bridge branch at even order n>=6",
+        "the full pure coefficients and mixed complementary-product identities are imported",
+        "a globally least supported pure cancellation and its connected bipartite matching-covered allowed core are imported",
+        "support-matchability of an opposite-colour response shore is conditional, not automatic from its zero hafnian",
+        "the active colour's own normal bit is free; only third-bit neighbour separation is used",
+        "the scripts are exact hand controls and transition replays, not graph-family enumeration or a witness search",
+        "no co-two exclusion, target-lattice unit, aggregate-port exclusion, deeper exit, witness exclusion, or global resolution is claimed"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_matrix_unit_least_core_complementary_shore_response_and_portal_dichotomy.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_matrix_unit_least_core_complementary_shore_response_and_portal_dichotomy.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/MATRIX_UNIT_LEAST_CORE_COMPLEMENTARY_SHORE_RESPONSE_AND_PORTAL_DICHOTOMY_REVIEW_2026-08-12.md",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "Every allowed edge f of the globally least all-bridge pure core exposes a nonzero deletion cofactor, so the mixed-cut identity forces a zero on (V-S) union f in each other colour. If such a response shore is supported, global leastness gives 2|S|<=n+2 and a conformally minimal pure relation attaches termwise in one mixed target fibre; beyond that bound every response shore is support-unmatchable. Opposite-colour active neighbour sets across a core edge are nonempty and disjoint, but own-bit freedom prevents exterior forcing; in a co-two exterior with |S|>=6, the exterior-neighbour vertices form only an independent set. In the original colour, either the complement matches and completes the least relation or a minimum-crossing full matching gives a finite portal whose every nonempty induced image is unmatchable. The exact primary and independent no-import audit replay hand-built completion/portal controls and both own-bit choices, including the 000 to 111 counter-transition to the withdrawn exterior shortcut. No graph-family enumeration, response-support theorem, co-two exclusion, unit, witness exclusion, or global resolution is claimed; Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Balanced Half-Sensor Complete Deck and Wick Globalization Theorem",
       "document": "claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md",
       "document_sha256_16": "7b7712781c5ece31",

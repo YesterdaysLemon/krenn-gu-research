@@ -98,6 +98,7 @@ flowchart TD
   A3["All saturated degrees have localized cancellation<br/>least core bipartite / port-count refined"]
   A4["Extremal sparse least core<br/>opposite extremal theta or aggregate sites"]
   A5["Beta-three sparse route ports<br/>paired singletons / complementary doubletons"]
+  A3R["Least-core complementary response<br/>edgewise zeros / minimum-crossing portals"]
 
   P5["Local P5 component programme<br/>PARTIAL / boundary-limited"]
   P7["Committed local P7 incidence<br/>criterion proved, outcome OPEN"]
@@ -177,6 +178,9 @@ flowchart TD
   A2 -. full-support density .-> A4
   A4 -->|rank-three route specialization| A5
   U7I -->|weighted port composition| A5
+  A3 -->|least-core response refinement| A3R
+  U7I -->|conformal attachment interface| A3R
+  A3R -->|remaining support / target coupling| U7
 
   PR -->|local specialization only| P5
   PR -->|local specialization only| P7
@@ -249,6 +253,7 @@ flowchart TD
 | `A3` | At **every** saturated degree, every simultaneous all-bridge system has a supported pure cancellation localized to an inactive-selected-edge complement, one side of a selected-matching-component/complement cut, or one side of a Hamiltonian-chord-arc/complement cut: **proved exhaustive reduction; all three open as exclusions**. The minimal Hall shore gives two common-cofactor-zero repairs. Independently, every globally least pure core is bipartite; rank one is an even cycle and rank two a closed all-odd theta, while the generic one-open theta is excluded in this specialization. Its perfect-matching polytope has dimension `beta`, so `N>=beta+1`; every branch site with `d<=beta` has a nonzero aggregate port, and a sparse site requires `d=N=beta+1`. Aggregate and extremal sparse strata remain open. | [All-degree localization and bipartite core](../claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_ALL_DEGREE_LOCALIZED_PURE_CANCELLATION_AND_BIPARTITE_CORE_REDUCTION_THEOREM.md) |
 | `A4` | If a globally least all-bridge pure core has an extremal sparse site `d=N=beta+1`, that site exhausts its shore excess.  The opposite shore either has one second extremal site and the core is exactly `beta+1` internally disjoint odd routes, or has `2,...,beta-1` lower-degree branch sites, each with a nonzero aggregate port: **proved exhaustive reduction; both open as exclusions**.  At the sparse site `deg_D>=beta+3` and `deg_G>=beta+6`.  At `beta=3` the sparse split is exactly `Q/Q` versus `Q/C^2`; the full five-kernel census has `N in {4,5}`.  Exact least residuals realize both sparse forms, and weighted `K_(3,3)-e` refutes `N=beta+1 => sparse theta`.  These scalar controls are not simultaneous all-bridge witnesses. | [Extremal-sparse opposite-shore dichotomy](../claims/arbitrary-order/ALL_BRIDGE_BIPARTITE_LEAST_CORE_EXTREMAL_SPARSE_OPPOSITE_SHORE_DICHOTOMY_THEOREM.md) |
 | `A5` | In the `beta=3` extremal-sparse `Q/Q` or `Q/C^2` core, route parity composes with the nonzero cofactor-port partition.  Odd-route endpoint ports coincide.  In `Q/Q` they are paired singletons with the same nonzero full matching contribution.  In `Q/C^2` the four odd routes pair four singletons, while the unique even route has complementary doubleton ports whose edge-inclusive cofactor sums are nonzero exact negatives: **proved refinement, not an exclusion**.  Bare deletion hafnians, mixed-fibre attachment, independence, and impossibility of either kernel are not proved. | [Beta-three route-port pairing](../claims/arbitrary-order/ALL_BRIDGE_BIPARTITE_LEAST_CORE_BETA_THREE_ROUTE_PORT_PAIRING_THEOREM.md) |
+| `A3R` | For every allowed edge `f` of a globally least all-bridge pure core and either other colour `d`, the completed complementary shore satisfies `h_d((V-S) union f)=0`.  If supported, it obeys `2|S|<=n+2` and contains a conformally minimal pure relation attached termwise in one mixed target fibre; if `2|S|>n+2`, every response shore is support-unmatchable.  Opposite-colour active neighbour sets across each core edge are nonempty and disjoint, but need not leave `S`; for a co-two exterior with `|S|>=6`, the exterior-neighbour vertices form only an independent set.  In the original colour, either the complement matches or a minimum-crossing portal has every nonempty induced image unmatchable: **proved response/portal reduction, not an exclusion**. | [Least-core complementary-shore response and portal dichotomy](../claims/arbitrary-order/MATRIX_UNIT_LEAST_CORE_COMPLEMENTARY_SHORE_RESPONSE_AND_PORTAL_DICHOTOMY_THEOREM.md) |
 | `P5` | Local `P5 -> Delta_3` component programme: **partial, generic and boundary-limited** | [P5 package index](../claims/p5/README.md) and [obligation ledger](../claims/p5/frontier/P5_DELTA3_OBLIGATION_LEDGER.md) |
 | `P7` | One committed legal sensor/incidence pullback: criterion **proved**, algebra outcome **open** | [Committed P7 criterion](../claims/p7/COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md) |
 | `GL` | Universal extraction, cross-chart/depth synchronization, and local-to-global gluing for the local restriction lanes: **open**. The balanced full-sensor lane instead has the exact same-graph gate `S2E`. | [Top two-port observability boundary](../claims/arbitrary-order/GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md) |
@@ -333,6 +338,8 @@ flowchart TD
 | `A2`, `U7I` | all-degree quantifier and port/core specialization | `A3` | The unconditional lower bound `Delta(D)>=5` makes every selected active-matching triple leave residual saturated support, so the component/Hamiltonian-chord localization needs no upper-degree bound. Saturated bit flips make every least core bipartite; shore excess and the perfect-matching polytope refine U7I's port partition and two theta profiles to the rank-two closed theta and aggregate-port boundary. |
 | `U7H`, `U7I`, `A2`, `A3` | extremal sparse opposite-shore refinement | `A4` | Matching-coveredness makes the nontrivial least core 2-connected; A3's shore excess and equality `d=N=beta+1` exhaust one shore; U7I's nonzero port partition forces aggregate ports at every lower-degree opposite site; A2 supplies only the pointwise `deg_G>=deg_D+3` landing.  Neither sparse-shore alternative is excluded. |
 | `A4`, `U7I` | exact rank-three route-port refinement | `A5` | A4 supplies the `Q/Q` or `Q/C^2` route kernel, its parities, and `N=4`; U7I supplies the nonzero edge-inclusive port sums.  Their composition pairs odd-route singleton ports and makes the unique `Q/C^2` even-route ports complementary nonzero doubletons with exact-negative sums.  No mixed-target attachment, independence, or kernel exclusion follows. |
+| `A3`, `U7I` | exact complementary-shore response and portal refinement | `A3R` | Every allowed least-core edge exposes a nonzero deletion cofactor, so the mixed-cut identity forces two opposite-colour response zeros.  A supported response obeys the global size bound and attaches a conformally minimal cycle/fan/aggregate relation; otherwise it is an exact support obstruction.  Same-colour conformal failure gives a minimum-crossing portal obstruction family. |
+| `A3R` | boundary obligation | `U7` | The response family does not force any response shore to be supported, any opposite-colour active neighbour to be exterior, or any two-portal pair to be allowed.  Its cancelling mixed-fibre subrelations and finite portal obstructions still require non-direct target-lattice coupling, a unit, or a genuine deeper exit. |
 | `PR` | specialization | `P5`, `P7` | These are two separately developed local lanes. The still-open `r=6` / P6 restriction remains in `PR`, and arbitrary `r>=8` is not reduced to any of these ranks. |
 | `P5`, `P7` | open gluing obligation | `GL` | Even complete local exclusions require a theorem connecting every global witness to them. |
 | `G0` | refutation of argument | `C2` | Good reduction to the prime field is not automatic, and the source theorem's local correspondence remains pending. |
@@ -485,6 +492,17 @@ branch. They are not an instruction to begin all of them at once.
    edge-inclusive sums.  The next step must add genuinely all-bridge mixed-
    target or deeper-incidence data; neither the pairing nor equality
    `N=beta+1` is an exclusion.
+   In parallel, `A3R` turns every allowed least-core edge into two exact
+   opposite-colour response zeros.  A supported response lands on the
+   `2|S|<=n+2` side and attaches a conformally minimal relation to one mixed
+   fibre; on the large-shore side all such responses are support-unmatchable.
+   Same-colour conformal failure now gives a finite minimum-crossing portal
+   family whose every induced nonempty image is unmatchable.  The next honest
+   step is to force a supported/aligned response, exploit those portal
+   obstructions, or prove new target-lattice coupling.  Active-neighbour
+   separation alone does not do this: the active colour's own bit is free,
+   and, only for a co-two exterior with `|S|>=6`, the conclusion is an
+   independent exterior-neighbour set.
    The globally least core need not retain localized cut labels.  Degree five
    adds subcubic typed sites, but localization and the bipartite rank-one/
    rank-two structure are all-degree.  The deeper-blocker branch remains
