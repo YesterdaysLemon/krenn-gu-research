@@ -99,7 +99,7 @@ function ledgerEvidence(links, ledgerByDocument) {
 export function parseFrontier(
   markdown,
   ledger,
-  { repoUrl, sourceCommit, sourceDate },
+  { repoUrl, sourceCommit, sourceDate, ledgerCommit = sourceCommit },
 ) {
   const labels = mermaidLabels(markdown);
   const ledgerEntries = Array.isArray(ledger?.entries) ? ledger.entries : [];
@@ -193,9 +193,10 @@ export function parseFrontier(
     source: {
       repository: repoUrl,
       commit: sourceCommit,
+      ledgerCommit,
       committedAt: sourceDate,
       frontierDocument: `${repoUrl}/blob/${sourceCommit}/docs/current-frontier.md`,
-      ledgerDocument: `${repoUrl}/blob/${sourceCommit}/catalog/theorem-ledger.json`,
+      ledgerDocument: `${repoUrl}/blob/${ledgerCommit}/catalog/theorem-ledger.json`,
       ledgerRole: ledger?.ledger_role ?? "unknown",
       ledgerCompleteness: ledger?.completeness ?? "unknown",
     },

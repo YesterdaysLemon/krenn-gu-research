@@ -38,6 +38,7 @@ export interface FrontierData {
   source: {
     repository: string;
     commit: string;
+    ledgerCommit: string;
     committedAt: string;
     frontierDocument: string;
     ledgerDocument: string;

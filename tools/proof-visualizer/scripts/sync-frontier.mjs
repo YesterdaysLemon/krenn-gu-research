@@ -32,11 +32,19 @@ const sourceCommit = git(
   "HEAD",
   "--",
   "docs/current-frontier.md",
+);
+const ledgerCommit = git(
+  "log",
+  "-1",
+  "--format=%H",
+  "HEAD",
+  "--",
   "catalog/theorem-ledger.json",
 );
 const data = parseFrontier(frontier, JSON.parse(ledgerText), {
   repoUrl: repositoryUrl(),
   sourceCommit,
+  ledgerCommit,
   sourceDate: git("show", "-s", "--format=%cI", sourceCommit),
 });
 const rendered = `${JSON.stringify(data, null, 2)}\n`;

@@ -4,17 +4,18 @@
   "globalStatus": "UNRESOLVED",
   "source": {
     "repository": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize",
-    "commit": "8eb56bbc0563937b8da430a705f7fdeaff07f741",
-    "committedAt": "2026-08-11T16:59:16-07:00",
-    "frontierDocument": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/docs/current-frontier.md",
-    "ledgerDocument": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/catalog/theorem-ledger.json",
+    "commit": "7f2502726760713e23883652a6de256d6d8ca745",
+    "ledgerCommit": "0816ee623d4ae1db7fa222087163f9a9ab3dcbec",
+    "committedAt": "2026-08-11T17:49:52-07:00",
+    "frontierDocument": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/docs/current-frontier.md",
+    "ledgerDocument": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/0816ee623d4ae1db7fa222087163f9a9ab3dcbec/catalog/theorem-ledger.json",
     "ledgerRole": "partial_claim_index_not_proof_graph",
     "ledgerCompleteness": "partial_curated"
   },
   "counts": {
-    "total": 51,
-    "edges": 71,
-    "established": 15,
+    "total": 52,
+    "edges": 73,
+    "established": 16,
     "growing": 34,
     "pruned": 2
   },
@@ -22,7 +23,8 @@
     "missingFromMermaid": [
       "U7E",
       "U7F",
-      "U7G"
+      "U7G",
+      "U7H"
     ],
     "missingFromNodeKey": [],
     "unlinkedNodeIds": [
@@ -43,7 +45,7 @@
           "href": "../README.md#the-conjecture",
           "document": "README.md",
           "anchor": "the-conjecture",
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/README.md#the-conjecture"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/README.md#the-conjecture"
         }
       ],
       "evidence": {
@@ -68,7 +70,7 @@
           "href": "../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md",
           "document": "claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md"
         }
       ],
       "evidence": {
@@ -93,7 +95,7 @@
           "href": "../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md",
           "document": "claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md"
         }
       ],
       "evidence": {
@@ -118,7 +120,7 @@
           "href": "../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md#6-proof-topology-consequence-and-exact-frontier",
           "document": "claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md",
           "anchor": "6-proof-topology-consequence-and-exact-frontier",
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md#6-proof-topology-consequence-and-exact-frontier"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md#6-proof-topology-consequence-and-exact-frontier"
         }
       ],
       "evidence": {
@@ -143,7 +145,7 @@
           "href": "../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md#3-the-proper-closed-all-balanced-boundary",
           "document": "claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md",
           "anchor": "3-the-proper-closed-all-balanced-boundary",
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md#3-the-proper-closed-all-balanced-boundary"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md#3-the-proper-closed-all-balanced-boundary"
         }
       ],
       "evidence": {
@@ -168,7 +170,7 @@
           "href": "../claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md",
           "document": "claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md"
         }
       ],
       "evidence": {
@@ -193,7 +195,7 @@
           "href": "../claims/arbitrary-order/BALANCED_COMMON_QUADRATIC_ORBIT_RANK_DROP_AND_FLATTENING_EXCLUSION_THEOREM.md",
           "document": "claims/arbitrary-order/BALANCED_COMMON_QUADRATIC_ORBIT_RANK_DROP_AND_FLATTENING_EXCLUSION_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/BALANCED_COMMON_QUADRATIC_ORBIT_RANK_DROP_AND_FLATTENING_EXCLUSION_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/BALANCED_COMMON_QUADRATIC_ORBIT_RANK_DROP_AND_FLATTENING_EXCLUSION_THEOREM.md"
         }
       ],
       "evidence": {
@@ -218,7 +220,7 @@
           "href": "../claims/arbitrary-order/BALANCED_COMMON_QUADRIC_MIXED_PERMANENT_DIVISIBILITY_AND_CONFORMAL_SHORE_EXCLUSION_THEOREM.md",
           "document": "claims/arbitrary-order/BALANCED_COMMON_QUADRIC_MIXED_PERMANENT_DIVISIBILITY_AND_CONFORMAL_SHORE_EXCLUSION_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/BALANCED_COMMON_QUADRIC_MIXED_PERMANENT_DIVISIBILITY_AND_CONFORMAL_SHORE_EXCLUSION_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/BALANCED_COMMON_QUADRIC_MIXED_PERMANENT_DIVISIBILITY_AND_CONFORMAL_SHORE_EXCLUSION_THEOREM.md"
         }
       ],
       "evidence": {
@@ -243,7 +245,7 @@
           "href": "../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md",
           "document": "claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md"
         }
       ],
       "evidence": {
@@ -268,7 +270,7 @@
           "href": "../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer",
           "document": "claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md",
           "anchor": "2-the-saturated-principal-hafnian-layer",
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer"
         }
       ],
       "evidence": {
@@ -293,35 +295,35 @@
           "href": "../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer",
           "document": "claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md",
           "anchor": "2-the-saturated-principal-hafnian-layer",
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer"
         },
         {
           "label": "consecutive single-open lift",
           "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md",
           "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md"
         },
         {
           "label": "P6 package index",
           "href": "../claims/p6/README.md",
           "document": "claims/p6/README.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/p6/README.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/p6/README.md"
         },
         {
           "label": "three-excess port boundary",
           "href": "../claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md",
           "document": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md"
         },
         {
           "label": "conformal Birkhoff boundary",
           "href": "../claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md",
           "document": "claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md"
         }
       ],
       "evidence": {
@@ -346,7 +348,7 @@
           "href": "../claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_RANK_DROP_THEOREM.md",
           "document": "claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_RANK_DROP_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_RANK_DROP_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_RANK_DROP_THEOREM.md"
         }
       ],
       "evidence": {
@@ -371,7 +373,7 @@
           "href": "../claims/arbitrary-order/BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md",
           "document": "claims/arbitrary-order/BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md"
         }
       ],
       "evidence": {
@@ -396,7 +398,7 @@
           "href": "../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md",
           "document": "claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md"
         }
       ],
       "evidence": {
@@ -421,7 +423,7 @@
           "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md",
           "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md"
         }
       ],
       "evidence": {
@@ -446,7 +448,7 @@
           "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_ROW_QUOTAS_AND_MINIMAL_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
           "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_ROW_QUOTAS_AND_MINIMAL_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_ROW_QUOTAS_AND_MINIMAL_CELL_TWO_OPEN_DETECTOR_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_ROW_QUOTAS_AND_MINIMAL_CELL_TWO_OPEN_DETECTOR_THEOREM.md"
         }
       ],
       "evidence": {
@@ -471,7 +473,7 @@
           "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_TRANSVERSE_FOUR_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
           "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_TRANSVERSE_FOUR_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_TRANSVERSE_FOUR_CELL_TWO_OPEN_DETECTOR_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_TRANSVERSE_FOUR_CELL_TWO_OPEN_DETECTOR_THEOREM.md"
         }
       ],
       "evidence": {
@@ -496,7 +498,7 @@
           "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_FOUR_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
           "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_FOUR_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_FOUR_CELL_TWO_OPEN_DETECTOR_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_FOUR_CELL_TWO_OPEN_DETECTOR_THEOREM.md"
         }
       ],
       "evidence": {
@@ -521,7 +523,7 @@
           "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_FIVE_CELL_COLLECTIVE_COMPANION_AND_ACTIVITY_DETECTOR_THEOREM.md",
           "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_FIVE_CELL_COLLECTIVE_COMPANION_AND_ACTIVITY_DETECTOR_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_FIVE_CELL_COLLECTIVE_COMPANION_AND_ACTIVITY_DETECTOR_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_FIVE_CELL_COLLECTIVE_COMPANION_AND_ACTIVITY_DETECTOR_THEOREM.md"
         }
       ],
       "evidence": {
@@ -546,7 +548,7 @@
           "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_FIVE_CELL_PAIR_COLLISION_AND_ALL_COMPANION_DETECTOR_THEOREM.md",
           "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_FIVE_CELL_PAIR_COLLISION_AND_ALL_COMPANION_DETECTOR_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_FIVE_CELL_PAIR_COLLISION_AND_ALL_COMPANION_DETECTOR_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_FIVE_CELL_PAIR_COLLISION_AND_ALL_COMPANION_DETECTOR_THEOREM.md"
         }
       ],
       "evidence": {
@@ -571,7 +573,7 @@
           "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_TRANSVERSE_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
           "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_TRANSVERSE_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_TRANSVERSE_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_TRANSVERSE_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md"
         }
       ],
       "evidence": {
@@ -596,7 +598,7 @@
           "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_RANK_ONE_MODE_AND_REGULAR_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md",
           "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_RANK_ONE_MODE_AND_REGULAR_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_RANK_ONE_MODE_AND_REGULAR_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_RANK_ONE_MODE_AND_REGULAR_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md"
         }
       ],
       "evidence": {
@@ -621,7 +623,7 @@
           "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_THREE_ACTIVITY_AND_MIXED_DEGENERATE_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md",
           "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_THREE_ACTIVITY_AND_MIXED_DEGENERATE_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_THREE_ACTIVITY_AND_MIXED_DEGENERATE_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_THREE_ACTIVITY_AND_MIXED_DEGENERATE_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md"
         }
       ],
       "evidence": {
@@ -646,7 +648,7 @@
           "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_ROW_INCIDENCE_SAME_TYPE_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md",
           "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_ROW_INCIDENCE_SAME_TYPE_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_ROW_INCIDENCE_SAME_TYPE_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_ROW_INCIDENCE_SAME_TYPE_TWO_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md"
         }
       ],
       "evidence": {
@@ -671,7 +673,7 @@
           "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_THREE_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md",
           "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_THREE_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_THREE_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_THREE_DEFECT_FIVE_CELL_DETECTOR_THEOREM.md"
         }
       ],
       "evidence": {
@@ -696,7 +698,7 @@
           "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
           "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md"
         }
       ],
       "evidence": {
@@ -721,14 +723,14 @@
           "href": "../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md#6-complete-aligned-five-cell-boundary",
           "document": "claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md",
           "anchor": "6-complete-aligned-five-cell-boundary",
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md#6-complete-aligned-five-cell-boundary"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md#6-complete-aligned-five-cell-boundary"
         },
         {
           "label": "two-open exact boundary",
           "href": "../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md#6-exact-boundary",
           "document": "claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md",
           "anchor": "6-exact-boundary",
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md#6-exact-boundary"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md#6-exact-boundary"
         }
       ],
       "evidence": {
@@ -753,7 +755,7 @@
           "href": "../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#3-the-maximum-one-monomial-branch",
           "document": "claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md",
           "anchor": "3-the-maximum-one-monomial-branch",
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#3-the-maximum-one-monomial-branch"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#3-the-maximum-one-monomial-branch"
         }
       ],
       "evidence": {
@@ -778,7 +780,7 @@
           "href": "../claims/arbitrary-order/MATRIX_UNIT_GHZ_DIAGONAL_TORUS_POLYSTABILITY_ENDPOINT_BALANCE_AND_ACTIVE_TRANSPORT_SHARPNESS_THEOREM.md",
           "document": "claims/arbitrary-order/MATRIX_UNIT_GHZ_DIAGONAL_TORUS_POLYSTABILITY_ENDPOINT_BALANCE_AND_ACTIVE_TRANSPORT_SHARPNESS_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_GHZ_DIAGONAL_TORUS_POLYSTABILITY_ENDPOINT_BALANCE_AND_ACTIVE_TRANSPORT_SHARPNESS_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/MATRIX_UNIT_GHZ_DIAGONAL_TORUS_POLYSTABILITY_ENDPOINT_BALANCE_AND_ACTIVE_TRANSPORT_SHARPNESS_THEOREM.md"
         }
       ],
       "evidence": {
@@ -803,7 +805,7 @@
           "href": "../claims/arbitrary-order/MATRIX_UNIT_GHZ_MOMENT_BALANCED_GAUGE_AND_UNIT_PHASE_ACTIVE_TRANSPORT_SHARPNESS_THEOREM.md",
           "document": "claims/arbitrary-order/MATRIX_UNIT_GHZ_MOMENT_BALANCED_GAUGE_AND_UNIT_PHASE_ACTIVE_TRANSPORT_SHARPNESS_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_GHZ_MOMENT_BALANCED_GAUGE_AND_UNIT_PHASE_ACTIVE_TRANSPORT_SHARPNESS_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/MATRIX_UNIT_GHZ_MOMENT_BALANCED_GAUGE_AND_UNIT_PHASE_ACTIVE_TRANSPORT_SHARPNESS_THEOREM.md"
         }
       ],
       "evidence": {
@@ -828,7 +830,7 @@
           "href": "../claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md",
           "document": "claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md"
         }
       ],
       "evidence": {
@@ -853,7 +855,7 @@
           "href": "../claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md",
           "document": "claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/RIGID_COLOUR_COFACTOR_ANNIHILATION_AND_BACKBONE_CANCELLATION_BOUNDARY.md"
         }
       ],
       "evidence": {
@@ -878,7 +880,7 @@
           "href": "../claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_BINARY_PRIMITIVE_AND_QUADRATIC_BRIDGE_THEOREM.md",
           "document": "claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_BINARY_PRIMITIVE_AND_QUADRATIC_BRIDGE_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_BINARY_PRIMITIVE_AND_QUADRATIC_BRIDGE_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_BINARY_PRIMITIVE_AND_QUADRATIC_BRIDGE_THEOREM.md"
         }
       ],
       "evidence": {
@@ -903,7 +905,7 @@
           "href": "../claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_PRIMITIVE_SHARPNESS_AND_DUAL_BRIDGE_COMPLETION_OBSTRUCTION.md",
           "document": "claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_PRIMITIVE_SHARPNESS_AND_DUAL_BRIDGE_COMPLETION_OBSTRUCTION.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_PRIMITIVE_SHARPNESS_AND_DUAL_BRIDGE_COMPLETION_OBSTRUCTION.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/RIGID_COLOUR_THREE_BLOCK_PRIMITIVE_SHARPNESS_AND_DUAL_BRIDGE_COMPLETION_OBSTRUCTION.md"
         }
       ],
       "evidence": {
@@ -928,7 +930,7 @@
           "href": "../claims/arbitrary-order/MATRIX_UNIT_CROSS_PARITY_ERASURE_RIGID_HEAD_WICK_AND_BRIDGE_CORE_REDUCTION_THEOREM.md",
           "document": "claims/arbitrary-order/MATRIX_UNIT_CROSS_PARITY_ERASURE_RIGID_HEAD_WICK_AND_BRIDGE_CORE_REDUCTION_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_CROSS_PARITY_ERASURE_RIGID_HEAD_WICK_AND_BRIDGE_CORE_REDUCTION_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/MATRIX_UNIT_CROSS_PARITY_ERASURE_RIGID_HEAD_WICK_AND_BRIDGE_CORE_REDUCTION_THEOREM.md"
         }
       ],
       "evidence": {
@@ -953,7 +955,7 @@
           "href": "../claims/arbitrary-order/MATRIX_UNIT_PARITY_FIBRE_DIAGONAL_FACTORIZATION_AND_ACTIVE_WORD_SHORE_SYNCHRONIZATION_THEOREM.md",
           "document": "claims/arbitrary-order/MATRIX_UNIT_PARITY_FIBRE_DIAGONAL_FACTORIZATION_AND_ACTIVE_WORD_SHORE_SYNCHRONIZATION_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_PARITY_FIBRE_DIAGONAL_FACTORIZATION_AND_ACTIVE_WORD_SHORE_SYNCHRONIZATION_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/MATRIX_UNIT_PARITY_FIBRE_DIAGONAL_FACTORIZATION_AND_ACTIVE_WORD_SHORE_SYNCHRONIZATION_THEOREM.md"
         }
       ],
       "evidence": {
@@ -978,7 +980,7 @@
           "href": "../claims/arbitrary-order/MATRIX_UNIT_ACTIVE_WORD_FIBRE_CROSS_MATCHING_RESPONSE_AND_BRIDGE_TRANSPORT_TRICHOTOMY.md",
           "document": "claims/arbitrary-order/MATRIX_UNIT_ACTIVE_WORD_FIBRE_CROSS_MATCHING_RESPONSE_AND_BRIDGE_TRANSPORT_TRICHOTOMY.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_ACTIVE_WORD_FIBRE_CROSS_MATCHING_RESPONSE_AND_BRIDGE_TRANSPORT_TRICHOTOMY.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/MATRIX_UNIT_ACTIVE_WORD_FIBRE_CROSS_MATCHING_RESPONSE_AND_BRIDGE_TRANSPORT_TRICHOTOMY.md"
         }
       ],
       "evidence": {
@@ -1003,7 +1005,7 @@
           "href": "../claims/arbitrary-order/MATRIX_UNIT_PHASE_HOLONOMY_AND_MINIMAL_PURE_COFACTOR_FLOW_REDUCTION_THEOREM.md",
           "document": "claims/arbitrary-order/MATRIX_UNIT_PHASE_HOLONOMY_AND_MINIMAL_PURE_COFACTOR_FLOW_REDUCTION_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_PHASE_HOLONOMY_AND_MINIMAL_PURE_COFACTOR_FLOW_REDUCTION_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/MATRIX_UNIT_PHASE_HOLONOMY_AND_MINIMAL_PURE_COFACTOR_FLOW_REDUCTION_THEOREM.md"
         }
       ],
       "evidence": {
@@ -1028,21 +1030,21 @@
           "href": "../claims/arbitrary-order/MATRIX_UNIT_COMPLETE_PURE_TARGET_MOMENT_COMPATIBLE_ODD_HOLONOMY_SHARPNESS_THEOREM.md",
           "document": "claims/arbitrary-order/MATRIX_UNIT_COMPLETE_PURE_TARGET_MOMENT_COMPATIBLE_ODD_HOLONOMY_SHARPNESS_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_COMPLETE_PURE_TARGET_MOMENT_COMPATIBLE_ODD_HOLONOMY_SHARPNESS_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/MATRIX_UNIT_COMPLETE_PURE_TARGET_MOMENT_COMPATIBLE_ODD_HOLONOMY_SHARPNESS_THEOREM.md"
         },
         {
           "label": "exposed-fibre transport isolation",
           "href": "../claims/arbitrary-order/MATRIX_UNIT_EXPOSED_MIXED_FIBRE_TRANSPORT_ISOLATION_AND_NEIGHBOUR_SHARPNESS_THEOREM.md",
           "document": "claims/arbitrary-order/MATRIX_UNIT_EXPOSED_MIXED_FIBRE_TRANSPORT_ISOLATION_AND_NEIGHBOUR_SHARPNESS_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_EXPOSED_MIXED_FIBRE_TRANSPORT_ISOLATION_AND_NEIGHBOUR_SHARPNESS_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/MATRIX_UNIT_EXPOSED_MIXED_FIBRE_TRANSPORT_ISOLATION_AND_NEIGHBOUR_SHARPNESS_THEOREM.md"
         },
         {
           "label": "complete same-multidegree saturation exclusion",
           "href": "../claims/arbitrary-order/MATRIX_UNIT_U7D_COMPLETE_SAME_MULTIDEGREE_TARGET_BLOCK_SATURATION_EXCLUSION_THEOREM.md",
           "document": "claims/arbitrary-order/MATRIX_UNIT_U7D_COMPLETE_SAME_MULTIDEGREE_TARGET_BLOCK_SATURATION_EXCLUSION_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_U7D_COMPLETE_SAME_MULTIDEGREE_TARGET_BLOCK_SATURATION_EXCLUSION_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/MATRIX_UNIT_U7D_COMPLETE_SAME_MULTIDEGREE_TARGET_BLOCK_SATURATION_EXCLUSION_THEOREM.md"
         }
       ],
       "evidence": {
@@ -1067,7 +1069,7 @@
           "href": "../claims/arbitrary-order/MATRIX_UNIT_COMPLETE_SAME_MULTIDEGREE_FIBRE_LATTICE_REDUCTION_AND_BINOMIAL_PARITY_DICHOTOMY_THEOREM.md",
           "document": "claims/arbitrary-order/MATRIX_UNIT_COMPLETE_SAME_MULTIDEGREE_FIBRE_LATTICE_REDUCTION_AND_BINOMIAL_PARITY_DICHOTOMY_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_COMPLETE_SAME_MULTIDEGREE_FIBRE_LATTICE_REDUCTION_AND_BINOMIAL_PARITY_DICHOTOMY_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/MATRIX_UNIT_COMPLETE_SAME_MULTIDEGREE_FIBRE_LATTICE_REDUCTION_AND_BINOMIAL_PARITY_DICHOTOMY_THEOREM.md"
         }
       ],
       "evidence": {
@@ -1092,7 +1094,7 @@
           "href": "../claims/arbitrary-order/MATRIX_UNIT_BINOMIAL_CORE_TORSION_SHEET_AND_RANK_ONE_AGGREGATE_QUOTIENT_THEOREM.md",
           "document": "claims/arbitrary-order/MATRIX_UNIT_BINOMIAL_CORE_TORSION_SHEET_AND_RANK_ONE_AGGREGATE_QUOTIENT_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_BINOMIAL_CORE_TORSION_SHEET_AND_RANK_ONE_AGGREGATE_QUOTIENT_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/MATRIX_UNIT_BINOMIAL_CORE_TORSION_SHEET_AND_RANK_ONE_AGGREGATE_QUOTIENT_THEOREM.md"
         }
       ],
       "evidence": {
@@ -1117,7 +1119,32 @@
           "href": "../claims/arbitrary-order/MATRIX_UNIT_CROSS_MULTIPLICITY_GLOBAL_TARGET_LATTICE_AND_HOLONOMY_DICHOTOMY_THEOREM.md",
           "document": "claims/arbitrary-order/MATRIX_UNIT_CROSS_MULTIPLICITY_GLOBAL_TARGET_LATTICE_AND_HOLONOMY_DICHOTOMY_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_CROSS_MULTIPLICITY_GLOBAL_TARGET_LATTICE_AND_HOLONOMY_DICHOTOMY_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/MATRIX_UNIT_CROSS_MULTIPLICITY_GLOBAL_TARGET_LATTICE_AND_HOLONOMY_DICHOTOMY_THEOREM.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 1,
+        "linkedDocuments": 1,
+        "ledgerStatuses": [
+          "verified"
+        ],
+        "primaryVerifierCount": 1,
+        "independentAuditCount": 1
+      }
+    },
+    {
+      "id": "U7H",
+      "title": "Minimal pure-cofactor matching-covered core and single-cycle theorem",
+      "diagramLabel": null,
+      "exactStatus": "At a least supported pure hafnian cancellation, the active first-cofactor graph is exactly the allowed-edge graph and is connected and matching-covered. Every active edge lies on a fixed-matching alternating cycle. The degree-two branch is one even cycle with exactly two terms, a primitive signed relation, and monomial first cofactors. The branching branch has at least three matchings, cyclomatic rank at least two, and either two branch sites or one degree-at-least-four site. Neither branch is yet excluded.",
+      "tone": "established",
+      "owners": [
+        {
+          "label": "Minimal pure-cofactor matching-covered core and single-cycle theorem",
+          "href": "../claims/arbitrary-order/MATRIX_UNIT_MINIMAL_PURE_COFACTOR_MATCHING_COVERED_CORE_AND_SINGLE_CYCLE_THEOREM.md",
+          "document": "claims/arbitrary-order/MATRIX_UNIT_MINIMAL_PURE_COFACTOR_MATCHING_COVERED_CORE_AND_SINGLE_CYCLE_THEOREM.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/MATRIX_UNIT_MINIMAL_PURE_COFACTOR_MATCHING_COVERED_CORE_AND_SINGLE_CYCLE_THEOREM.md"
         }
       ],
       "evidence": {
@@ -1134,29 +1161,29 @@
       "id": "U7",
       "title": "Exclude pure-shore cancellation or active holonomy",
       "diagramLabel": "Exclude pure-shore cancellation or active holonomy · OPEN",
-      "exactStatus": "Force the global target-lattice ideal to be a unit: derive a singleton or odd signed dependency from arbitrary active-cycle response data, force useful non-direct cross-multiplicity overlap and kill every quotient sheet, control a rank-at-least-two sheet ideal or an aggregate cycle fibre, or close the pure-cofactor/deeper exits. This remains open: no theorem forces a favourable core, overlap, rank, or unit outcome, and every proper fully binomial-cycle quotient imposes only the known holonomy sign. Conserved cofactor signs need not be positive.",
+      "exactStatus": "Force the global target-lattice ideal to be a unit or close a topological exit: combine the primitive pure-cycle relation with mixed response, force the connected pure exchange core into deeper-blocker data, derive a singleton or odd dependency, force useful cross-multiplicity overlap and kill every quotient sheet, or control a rank-at-least-two or aggregate-cycle ideal. This remains open: no theorem forces a favourable core, overlap, rank, unit, or deeper outcome, and every proper fully binomial-cycle quotient imposes only the known holonomy sign.",
       "tone": "growing",
       "owners": [
         {
-          "label": "Global cross-multiplicity boundary",
+          "label": "Pure matching-covered boundary",
+          "href": "../claims/arbitrary-order/MATRIX_UNIT_MINIMAL_PURE_COFACTOR_MATCHING_COVERED_CORE_AND_SINGLE_CYCLE_THEOREM.md#6-relation-to-the-matrix-unit-proof-forest",
+          "document": "claims/arbitrary-order/MATRIX_UNIT_MINIMAL_PURE_COFACTOR_MATCHING_COVERED_CORE_AND_SINGLE_CYCLE_THEOREM.md",
+          "anchor": "6-relation-to-the-matrix-unit-proof-forest",
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/MATRIX_UNIT_MINIMAL_PURE_COFACTOR_MATCHING_COVERED_CORE_AND_SINGLE_CYCLE_THEOREM.md#6-relation-to-the-matrix-unit-proof-forest"
+        },
+        {
+          "label": "global cross-multiplicity boundary",
           "href": "../claims/arbitrary-order/MATRIX_UNIT_CROSS_MULTIPLICITY_GLOBAL_TARGET_LATTICE_AND_HOLONOMY_DICHOTOMY_THEOREM.md#7-consequence-for-the-live-u7-edge",
           "document": "claims/arbitrary-order/MATRIX_UNIT_CROSS_MULTIPLICITY_GLOBAL_TARGET_LATTICE_AND_HOLONOMY_DICHOTOMY_THEOREM.md",
           "anchor": "7-consequence-for-the-live-u7-edge",
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_CROSS_MULTIPLICITY_GLOBAL_TARGET_LATTICE_AND_HOLONOMY_DICHOTOMY_THEOREM.md#7-consequence-for-the-live-u7-edge"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/MATRIX_UNIT_CROSS_MULTIPLICITY_GLOBAL_TARGET_LATTICE_AND_HOLONOMY_DICHOTOMY_THEOREM.md#7-consequence-for-the-live-u7-edge"
         },
         {
           "label": "torsion-sheet aggregate boundary",
           "href": "../claims/arbitrary-order/MATRIX_UNIT_BINOMIAL_CORE_TORSION_SHEET_AND_RANK_ONE_AGGREGATE_QUOTIENT_THEOREM.md#6-consequence-for-the-live-u7-edge",
           "document": "claims/arbitrary-order/MATRIX_UNIT_BINOMIAL_CORE_TORSION_SHEET_AND_RANK_ONE_AGGREGATE_QUOTIENT_THEOREM.md",
           "anchor": "6-consequence-for-the-live-u7-edge",
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_BINOMIAL_CORE_TORSION_SHEET_AND_RANK_ONE_AGGREGATE_QUOTIENT_THEOREM.md#6-consequence-for-the-live-u7-edge"
-        },
-        {
-          "label": "phase-holonomy and pure-cofactor boundary",
-          "href": "../claims/arbitrary-order/MATRIX_UNIT_PHASE_HOLONOMY_AND_MINIMAL_PURE_COFACTOR_FLOW_REDUCTION_THEOREM.md#8-combined-proof-topology-consequence",
-          "document": "claims/arbitrary-order/MATRIX_UNIT_PHASE_HOLONOMY_AND_MINIMAL_PURE_COFACTOR_FLOW_REDUCTION_THEOREM.md",
-          "anchor": "8-combined-proof-topology-consequence",
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_PHASE_HOLONOMY_AND_MINIMAL_PURE_COFACTOR_FLOW_REDUCTION_THEOREM.md#8-combined-proof-topology-consequence"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/MATRIX_UNIT_BINOMIAL_CORE_TORSION_SHEET_AND_RANK_ONE_AGGREGATE_QUOTIENT_THEOREM.md#6-consequence-for-the-live-u7-edge"
         }
       ],
       "evidence": {
@@ -1181,7 +1208,7 @@
           "href": "../claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md#5-partial-bridge-systems",
           "document": "claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md",
           "anchor": "5-partial-bridge-systems",
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md#5-partial-bridge-systems"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md#5-partial-bridge-systems"
         }
       ],
       "evidence": {
@@ -1206,14 +1233,14 @@
           "href": "../claims/arbitrary-order/DOUBLE_STAR_ANNIHILATION_LEMMA.md",
           "document": "claims/arbitrary-order/DOUBLE_STAR_ANNIHILATION_LEMMA.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/DOUBLE_STAR_ANNIHILATION_LEMMA.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/DOUBLE_STAR_ANNIHILATION_LEMMA.md"
         },
         {
           "label": "multi-star factorization",
           "href": "../claims/arbitrary-order/MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md",
           "document": "claims/arbitrary-order/MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md"
         }
       ],
       "evidence": {
@@ -1236,7 +1263,7 @@
           "href": "../claims/arbitrary-order/THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md",
           "document": "claims/arbitrary-order/THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md"
         }
       ],
       "evidence": {
@@ -1259,14 +1286,14 @@
           "href": "../claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_EXCLUSIVITY_AND_CUBIC_DIAGONAL_EXCLUSION.md",
           "document": "claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_EXCLUSIVITY_AND_CUBIC_DIAGONAL_EXCLUSION.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_EXCLUSIVITY_AND_CUBIC_DIAGONAL_EXCLUSION.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_EXCLUSIVITY_AND_CUBIC_DIAGONAL_EXCLUSION.md"
         },
         {
           "label": "degree-four exclusion",
           "href": "../claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FOUR_EXCLUSION.md",
           "document": "claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FOUR_EXCLUSION.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FOUR_EXCLUSION.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FOUR_EXCLUSION.md"
         }
       ],
       "evidence": {
@@ -1291,14 +1318,14 @@
           "href": "../claims/p5/README.md",
           "document": "claims/p5/README.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/p5/README.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/p5/README.md"
         },
         {
           "label": "obligation ledger",
           "href": "../claims/p5/frontier/P5_DELTA3_OBLIGATION_LEDGER.md",
           "document": "claims/p5/frontier/P5_DELTA3_OBLIGATION_LEDGER.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/p5/frontier/P5_DELTA3_OBLIGATION_LEDGER.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/p5/frontier/P5_DELTA3_OBLIGATION_LEDGER.md"
         }
       ],
       "evidence": {
@@ -1323,7 +1350,7 @@
           "href": "../claims/p7/COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md",
           "document": "claims/p7/COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/p7/COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/p7/COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md"
         }
       ],
       "evidence": {
@@ -1346,7 +1373,7 @@
           "href": "../claims/arbitrary-order/GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md",
           "document": "claims/arbitrary-order/GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md"
         }
       ],
       "evidence": {
@@ -1369,7 +1396,7 @@
           "href": "../claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md",
           "document": "claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/8eb56bbc0563937b8da430a705f7fdeaff07f741/claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md"
+          "url": "https://github.com/YesterdaysLemon/open-graph-theory-with-prize/blob/7f2502726760713e23883652a6de256d6d8ca745/claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md"
         }
       ],
       "evidence": {
@@ -1719,161 +1746,175 @@
       "note": "A finite active cycle produces a nonzero endpoint-character circulation; complete binomial fibres impose one Laurent holonomy equation, while aggregate fibres remain explicit. A least supported pure cancellation has a spanning conserved cofactor flow and therefore branches or forms alternating even cycles."
     },
     {
-      "id": "U7C-U7-45",
+      "id": "U7C-U7H-45",
+      "source": "U7C",
+      "target": "U7H",
+      "relation": "exact pure-cofactor refinement",
+      "note": "Minimality identifies the active flow with the connected allowed-edge core. Degree two is one primitive binomial cycle; branching is a connected matching-covered multi-cycle exchange core with quantified excess."
+    },
+    {
+      "id": "U7H-U7-46",
+      "source": "U7H",
+      "target": "U7",
+      "relation": "boundary obligation",
+      "note": "Neither the primitive pure-cycle relation nor the connected branching exchange core is yet coupled strongly enough to mixed response or deeper-blocker data to force exclusion."
+    },
+    {
+      "id": "U7C-U7-47",
       "source": "U7C",
       "target": "U7",
       "relation": "boundary obligation",
-      "note": "The Laurent holonomy can take the required odd sign, aggregate fibres retain additional summands, and both cofactor branching and alternating even cycles occur exactly. Further mixed equations are needed."
+      "note": "The Laurent holonomy can take the required odd sign and aggregate fibres retain additional summands. The pure-cofactor side is now refined by U7H, but further mixed or deeper equations are still needed."
     },
     {
-      "id": "U1C-U7D-46",
+      "id": "U1C-U7D-48",
       "source": "U1C",
       "target": "U7D",
       "relation": "refutation of stronger argument",
       "note": "Complete physical support, all pure target coordinates, strict endpoint balance, the actual moment gauge, and three proper nonrigidity sets coexist with an exact odd binomial cycle. The same table has an exposed nonzero mixed coefficient, so only the shortcut is refuted."
     },
     {
-      "id": "U7C-U7D-46",
+      "id": "U7C-U7D-48",
       "source": "U7C",
       "target": "U7D",
       "relation": "refutation of stronger argument",
       "note": "Complete physical support, all pure target coordinates, strict endpoint balance, the actual moment gauge, and three proper nonrigidity sets coexist with an exact odd binomial cycle. The same table has an exposed nonzero mixed coefficient, so only the shortcut is refuted."
     },
     {
-      "id": "U7C-U7E-47",
+      "id": "U7C-U7E-49",
       "source": "U7C",
       "target": "U7E",
       "relation": "exact lattice reduction",
       "note": "Every normalized fibre lies in the within-fibre difference group algebra. Faithful Laurent extension preserves units and holonomy elimination; singleton and all-binomial blocks are decided exactly by unit/parity alternatives."
     },
     {
-      "id": "U7D-U7E-48",
+      "id": "U7D-U7E-50",
       "source": "U7D",
       "target": "U7E",
       "relation": "fixed-template specialization",
       "note": "The complete (4,4,0) block lands in the universal singleton branch because it contains ten singleton monomials. Its three-binomial subsystem is parity-consistent and gives only (H+1), while the singleton enlarges the complete block to (1)."
     },
     {
-      "id": "U7E-U7F-49",
+      "id": "U7E-U7F-51",
       "source": "U7E",
       "target": "U7F",
       "relation": "exact aggregate quotient",
       "note": "Untwisting the selected core gives C[L/LB]; finite Fourier sheets and Laurent gcds completely decide residual ideals in quotient free ranks zero and one."
     },
     {
-      "id": "U7E-U7-50",
+      "id": "U7E-U7-52",
       "source": "U7E",
       "target": "U7",
       "relation": "boundary obligation",
       "note": "The universal reduction does not force a singleton, odd relation, or fully binomial active cycle from response data. Aggregate cycle fibres remain outside the selected binomial-core quotient."
     },
     {
-      "id": "U7F-U7-51",
+      "id": "U7F-U7-53",
       "source": "U7F",
       "target": "U7",
       "relation": "boundary obligation",
       "note": "The quotient theorem does not force free rank at most one or kill every low-rank sheet; free rank at least two remains multivariate. A continuation must close one of those exact residuals, couple another multidegree, or enter the pure/deeper topology."
     },
     {
-      "id": "U7B-D1-52",
+      "id": "U7B-D1-54",
       "source": "U7B",
       "target": "D1",
       "relation": "boundary obligation",
       "note": "Any selected square or hexagon may enter the existing deeper-blocker alternative."
     },
     {
-      "id": "U1C-U7-53",
+      "id": "U1C-U7-55",
       "source": "U1C",
       "target": "U7",
       "relation": "compatible normal forms",
       "note": "Moment gauge leaves the active-cycle Laurent monomial invariant and multiplies every cofactor-flow edge on one pure residual by a common nonzero scalar. Magnitude balance and the phase normal forms therefore hold simultaneously, but neither closes the deeper or phase exits."
     },
     {
-      "id": "U1C-D1-53",
+      "id": "U1C-D1-55",
       "source": "U1C",
       "target": "D1",
       "relation": "compatible normal forms",
       "note": "Moment gauge leaves the active-cycle Laurent monomial invariant and multiplies every cofactor-flow edge on one pure residual by a common nonzero scalar. Magnitude balance and the phase normal forms therefore hold simultaneously, but neither closes the deeper or phase exits."
     },
     {
-      "id": "U7C-U7-53",
+      "id": "U7C-U7-55",
       "source": "U7C",
       "target": "U7",
       "relation": "compatible normal forms",
       "note": "Moment gauge leaves the active-cycle Laurent monomial invariant and multiplies every cofactor-flow edge on one pure residual by a common nonzero scalar. Magnitude balance and the phase normal forms therefore hold simultaneously, but neither closes the deeper or phase exits."
     },
     {
-      "id": "U7C-D1-53",
+      "id": "U7C-D1-55",
       "source": "U7C",
       "target": "D1",
       "relation": "compatible normal forms",
       "note": "Moment gauge leaves the active-cycle Laurent monomial invariant and multiplies every cofactor-flow edge on one pure residual by a common nonzero scalar. Magnitude balance and the phase normal forms therefore hold simultaneously, but neither closes the deeper or phase exits."
     },
     {
-      "id": "U2-U8-54",
+      "id": "U2-U8-56",
       "source": "U2",
       "target": "U8",
       "relation": "boundary obligation",
       "note": "Full flags have consequences, but proper nonempty flag sets remain."
     },
     {
-      "id": "U2-D1-55",
+      "id": "U2-D1-57",
       "source": "U2",
       "target": "D1",
       "relation": "boundary obligation",
       "note": "Both reductions retain the deeper-blocker alternative."
     },
     {
-      "id": "U6-D1-55",
+      "id": "U6-D1-57",
       "source": "U6",
       "target": "D1",
       "relation": "boundary obligation",
       "note": "Both reductions retain the deeper-blocker alternative."
     },
     {
-      "id": "U2-A1-56",
+      "id": "U2-A1-58",
       "source": "U2",
       "target": "A1",
       "relation": "specialization",
       "note": "Simultaneous full flags for all colours enter all-bridge, absent deeper blockers."
     },
     {
-      "id": "A1-A2-57",
+      "id": "A1-A2-59",
       "source": "A1",
       "target": "A2",
       "relation": "residual refinement",
       "note": "PRs #72–#73 close degree at most four only."
     },
     {
-      "id": "PR-P5-58",
+      "id": "PR-P5-60",
       "source": "PR",
       "target": "P5",
       "relation": "specialization",
       "note": "These are two separately developed local lanes. The still-open r=6 / P6 restriction remains in PR, and arbitrary r>=8 is not reduced to any of these ranks."
     },
     {
-      "id": "PR-P7-58",
+      "id": "PR-P7-60",
       "source": "PR",
       "target": "P7",
       "relation": "specialization",
       "note": "These are two separately developed local lanes. The still-open r=6 / P6 restriction remains in PR, and arbitrary r>=8 is not reduced to any of these ranks."
     },
     {
-      "id": "P5-GL-59",
+      "id": "P5-GL-61",
       "source": "P5",
       "target": "GL",
       "relation": "open gluing obligation",
       "note": "Even complete local exclusions require a theorem connecting every global witness to them."
     },
     {
-      "id": "P7-GL-59",
+      "id": "P7-GL-61",
       "source": "P7",
       "target": "GL",
       "relation": "open gluing obligation",
       "note": "Even complete local exclusions require a theorem connecting every global witness to them."
     },
     {
-      "id": "G0-C2-60",
+      "id": "G0-C2-62",
       "source": "G0",
       "target": "C2",
       "relation": "refutation of argument",
