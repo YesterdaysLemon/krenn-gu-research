@@ -91,6 +91,22 @@ nonempty complementary fibre, a unit or odd dependency, and exclusion of
 either sparse core remain open.
 
 The
+[`beta-three fixed-completion binomial-sublattice port-sign dichotomy`](MATRIX_UNIT_ALL_BRIDGE_BETA_THREE_FIXED_COMPLETION_BINOMIAL_SUBLATTICE_PORT_SIGN_DICHOTOMY_THEOREM.md)
+is a further conditional `A6 + U7F` interface.  If the free rank-three A6
+difference lattice is integrally contained in one parity-consistent
+same-multidegree binomial-core lattice, its one fixed sign character reduces
+the four-term A6 block to a scalar.  Five of the eight possible restrictions
+are imbalanced and make the combined branch ideal the unit ideal globally
+across all torsion sheets.  The other three have two plus and two minus
+signs.  In `Q/C^2`, the inherited nonzero complementary doubleton ports leave
+only the partition with signs constant inside each doubleton and opposite
+across them; the two misaligned partitions are excluded only after
+localization by those port sums.  In `Q/Q`, all three balanced restrictions
+remain possible.  The theorem assumes both the A6 fixed completion and the
+integral binomial-lattice containment; it forces neither and does not exclude
+the aligned `Q/C^2`, balanced `Q/Q`, or general all-bridge branches.
+
+The
 [`least-core complementary-shore response and portal dichotomy`](MATRIX_UNIT_LEAST_CORE_COMPLEMENTARY_SHORE_RESPONSE_AND_PORTAL_DICHOTOMY_THEOREM.md)
 is a parallel `A3 + U7I` response interface.  Every allowed edge `f` of the
 globally least all-bridge pure core forces a zero in each opposite colour on

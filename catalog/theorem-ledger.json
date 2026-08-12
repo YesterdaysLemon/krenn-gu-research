@@ -611,6 +611,34 @@
       "legacy_paths": []
     },
     {
+      "name": "Matrix-Unit All-Bridge Beta-Three Fixed-Completion Binomial-Sublattice Port-Sign Dichotomy",
+      "document": "claims/arbitrary-order/MATRIX_UNIT_ALL_BRIDGE_BETA_THREE_FIXED_COMPLETION_BINOMIAL_SUBLATTICE_PORT_SIGN_DICHOTOMY_THEOREM.md",
+      "document_sha256_16": "82c4aeab65897e92",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero interface in the simultaneous balanced all-bridge branch",
+        "the A6 fixed-completion beta-three four-term branch equation and its Q/Q or Q/C^2 route-port data hold",
+        "the free rank-three A6 difference lattice is integrally contained in one parity-consistent same-multidegree binomial-core lattice",
+        "the eight sign rows are alternatives for the one realized restricted binomial character, not simultaneous torsion sheets",
+        "Q/C^2 misalignment is excluded only after localization or saturation by the two inherited nonzero block-port sums",
+        "the primary and independent audit replay the finite sign and port interface; the written quotient proof carries the exact conditional theorem",
+        "fixed-completion existence, integral containment, aligned Q/C^2, balanced Q/Q, witness exclusion, and global resolution are not claimed"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_matrix_unit_all_bridge_beta_three_fixed_completion_binomial_sublattice_port_sign_dichotomy.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_matrix_unit_all_bridge_beta_three_fixed_completion_binomial_sublattice_port_sign_dichotomy.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/MATRIX_UNIT_ALL_BRIDGE_BETA_THREE_FIXED_COMPLETION_BINOMIAL_SUBLATTICE_PORT_SIGN_DICHOTOMY_REVIEW_2026-08-12.md",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "Assuming the A6 fixed-completion four-term branch and integral containment of its free rank-three difference lattice in one parity-consistent same-multidegree binomial core, the one fixed core character reduces 1+X+Y+Z to one scalar before any torsion-sheet decomposition. Five of the eight possible restricted characters are imbalanced and make the combined binomial-core plus A6 branch ideal the unit ideal globally across all sheets; the other three are exactly the two-plus/two-minus partitions. In Q/C^2, the inherited complementary nonzero exact-negative doubleton ports leave only the sign partition constant within each doubleton and opposite across them; the two misaligned balanced partitions have no solution only on the localized nonzero-port locus, not because the unsaturated core ideal is a unit. Q/Q supplies only singleton ports and retains all three balanced restrictions. Exact unimodular controls realize both the aligned +2/-2 survivor and an imbalanced scalar -2 unit. The primary and independent no-import audit replay the finite restriction table and port filter through distinct representations. The theorem forces neither the fixed completion nor the integral containment and leaves aligned Q/C^2, balanced Q/Q, the uncontained rank-at-least-three ideal, witness exclusion, and global Krenn-Gu UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Balanced Half-Sensor Complete Deck and Wick Globalization Theorem",
       "document": "claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md",
       "document_sha256_16": "7b7712781c5ece31",
