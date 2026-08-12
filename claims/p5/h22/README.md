@@ -25,7 +25,7 @@ Stage 31 used batch `p5-h22-root-exit-stage31` (mapping_sha256
 `899a1070f1515105f76265c2bfcb80e2316c0d3a623ea9afc53a59940779f2e1`)
 to move 351 artifacts: 311 into their H22 claim packages and 40 into the
 neutral [`disputed-ownership/p-plus-q-wall/`](disputed-ownership/p-plus-q-wall/)
-package. The subtree now has 108 direct package directories and 111 total
+package. The subtree now has 109 direct package directories and 112 total
 package directories when its three nested packages are counted.
 
 Every theorem in the generic table is a **generic/function-field** statement:
@@ -56,6 +56,17 @@ slope/projective boundaries open.
 | `split-center-mixed-star/` | `P5_H22_SPLIT_CENTER_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md` | `verify_p5_h22_split_center_mixed_star_component_generic_obstruction.py` | `audit_p5_h22_split_center_mixed_star_component_generic_obstruction.py` |
 | `transverse-common-factor/` | `P5_H22_TRANSVERSE_COMMON_FACTOR_COMPONENT_GENERIC_OBSTRUCTION.md` | `verify_p5_h22_transverse_common_factor_component_generic_obstruction.py` | `audit_p5_h22_transverse_common_factor_component_generic_obstruction.py` |
 | `two-rank-two-spoke-mixed-star/` | `P5_H22_TWO_RANK_TWO_SPOKE_MIXED_STAR_COMPONENT_GENERIC_OBSTRUCTION.md` | `verify_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py` | `audit_p5_h22_two_rank_two_spoke_mixed_star_component_generic_obstruction.py` |
+
+## Component-22 finite-`D23` `f2/f8` generic intersection
+
+The
+[`unequal-complement-common-kernel-component-d23-f2-f8-generic-complete/`](unequal-complement-common-kernel-component-d23-f2-f8-generic-complete/)
+package closes the geometric generic `H=f2=f8=0` intersection over
+`Q(A,R,D)`, including both `2h3+s=0` and its isolated complement.  It does
+not close special component-parameter fibres, the remaining `f2=0` residual
+outside `f8=0`, projective/source boundaries, component twenty-two as a
+whole, `P_5 -> Delta_3`, or the global conjecture.  The generic finite-`D01`
+pair orbit is closed separately by its own package and is not reproved here.
 
 ## Component-23 finite lambda-zero all-marking leaf
 

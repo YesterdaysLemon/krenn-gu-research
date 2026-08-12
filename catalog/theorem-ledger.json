@@ -3208,7 +3208,29 @@
       "audit_provenance": "not_yet_mapped",
       "expected_runtime": null,
       "external_binaries": [],
-      "note": "The owning document is the partial finite-D23 obstruction and retains an explicit UNKNOWN residual. The D01 orbit is recorded separately. Later divisor leaves narrow but do not globally close this component."
+      "note": "The owning document is the partial finite-D23 obstruction and retains an explicit UNKNOWN residual. The D01 orbit is recorded separately. The later H=f2=f8 generic complete-intersection leaf closes that named cell but not the remaining f2 residual, special fibres, or the component."
+    },
+    {
+      "name": "Component twenty-two finite-D23 H=f2=f8 generic complete intersection obstruction",
+      "document": "claims/p5/h22/unequal-complement-common-kernel-component-d23-f2-f8-generic-complete/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_F2_F8_GENERIC_COMPLETE_OBSTRUCTION.md",
+      "document_sha256_16": "72f662ba04a2df1a",
+      "status": "verified_generic",
+      "assumptions_and_excluded_divisors": [
+        "component function field K=Q(A,R,D)",
+        "finite D23 chart with H=f2=f8=0",
+        "special component-parameter, projective, and source-chart fibres excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/p5/h22/unequal-complement-common-kernel-component-d23-f2-f8-generic-complete/verify_p5_h22_unequal_complement_common_kernel_component_d23_f2_f8_generic_complete_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/p5/h22/unequal-complement-common-kernel-component-d23-f2-f8-generic-complete/audit_p5_h22_unequal_complement_common_kernel_component_d23_f2_f8_generic_complete_obstruction.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "under 2 minutes (exact SymPy fraction-field determinants)",
+      "external_binaries": [],
+      "note": "Closes the whole generic H=f2=f8 finite-D23 intersection, including both 2h3+s=0 and its isolated complement. The generic finite-D01 pair orbit is separately closed and is not reproved here. This leaf does not close special/projective/source fibres, the remaining f2=0 residual outside f8=0, component twenty-two, P5, or the global conjecture.",
+      "claim_package": "claims/p5/h22/unequal-complement-common-kernel-component-d23-f2-f8-generic-complete",
+      "proof_variant": "canonical",
+      "subpackage": null
     },
     {
       "name": "Eight Vertex Balanced All Bridge Set Tree Obstruction Withdrawn Overstrong",

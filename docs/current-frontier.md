@@ -427,10 +427,17 @@ branch. They are not an instruction to begin all of them at once.
 6. **First remaining all-bridge degree.** Exclude or structurally reduce
    `Delta(D)=5`. This does not address the separate deeper-blocker branch.
 
-7. **Component 22 isolated complement.** Close the finite-`D23` cell
-   `H=f2=f8=0`, `rho(rho+1)!=0`, `2h3+s!=0`, and keep it distinct from the
-   remaining `f2=0` residual. See the [slope-intersection owner](../claims/p5/h22/unequal-complement-common-kernel-component-d23-f2-f8-h3-slope-intersection/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_F2_F8_H3_SLOPE_INTERSECTION_OBSTRUCTION.md)
-   and [two-minor partial owner](../claims/p5/h22/unequal-complement-common-kernel-component-d23-h1-nonzero-two-minor-factor-cover-partial/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_TWO_MINOR_FACTOR_COVER_PARTIAL_OBSTRUCTION.md).
+7. **Component 22 remaining finite-`D23` residual.** The whole generic
+   `H=f2=f8=0` cell over `Q(A,R,D)` is now empty: one maximal minor forces
+   `h0`, and two further minors have incompatible linear `h3` factors.  This
+   includes both `2h3+s=0` and its isolated complement, but it does not close
+   special parameter fibres.  Close the remaining `f2=0` residual outside
+   `f8=0`, together with its special/projective/source boundaries.  The
+   generic finite-`D01` pair orbit is already excluded by its separately
+   owned theorem, but its special/projective component fibres remain open. See
+   the [generic complete intersection](../claims/p5/h22/unequal-complement-common-kernel-component-d23-f2-f8-generic-complete/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_F2_F8_GENERIC_COMPLETE_OBSTRUCTION.md),
+   the [finite-`D01` owner](../claims/p5/h22/unequal-complement-common-kernel-component-d01-pair-orbit/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D01_PAIR_ORBIT_OBSTRUCTION.md),
+   and the [two-minor partial owner](../claims/p5/h22/unequal-complement-common-kernel-component-d23-h1-nonzero-two-minor-factor-cover-partial/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_TWO_MINOR_FACTOR_COVER_PARTIAL_OBSTRUCTION.md).
 
 8. **P4-B3 semantic/composition audit.** Audit the nonzero-pure-factor, symmetry,
    inclusion, and lower-pair quantifiers in the
