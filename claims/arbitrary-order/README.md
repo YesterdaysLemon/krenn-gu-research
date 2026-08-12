@@ -217,6 +217,18 @@ strictly larger than the physical image.  The separator imposes no retained
 pair jet and therefore decides neither realization of the eight preceding
 controls nor universal failure on realized target incidences.
 
+The
+[`normalized pair-control common-shore pullback reduction`](BALANCED_FULL_SENSOR_COMMON_SHORE_NORMALIZED_PAIR_CONTROL_PULLBACK_REDUCTION.md)
+then tests all eight controls against that exact image without silently
+promoting them to physical sensors.  Projecting each root onto the pivot and
+other nonzero colours sends every control to the same binary pattern: one
+transverse pure singleton, three zero quiet-colour singleton slices, and one
+quiet-colour pure empty coefficient.  Hence realization of any control must
+solve one explicit binary image/kernel/permanent system.  Emptiness and
+realizability of that residual both remain open.  A one-dimensional exact
+family shows why the zero singleton slices alone do not force the empty
+coefficient to vanish.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

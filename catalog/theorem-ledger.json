@@ -819,6 +819,32 @@
       "legacy_paths": []
     },
     {
+      "name": "Balanced Full-Sensor Common-Shore Normalized Pair-Control Pullback Reduction",
+      "document": "claims/arbitrary-order/BALANCED_FULL_SENSOR_COMMON_SHORE_NORMALIZED_PAIR_CONTROL_PULLBACK_REDUCTION.md",
+      "document_sha256_16": "b471309a81395a7b",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero m=3 reduction for the eight normalized full-row S2M controls using the S2N common-shore formulas",
+        "for each control, root-colour projection onto its pivot and other nonzero colour leaves one transverse pure singleton, three zero quiet-colour singleton slices, and one quiet-colour pure empty coefficient",
+        "common-shore realization of any control therefore requires one explicit binary shared-factor image/kernel/six-term-permanent residual",
+        "emptiness and realizability of the binary residual are both open; a binary solution would still require a ternary lift",
+        "zero singleton slices alone do not force zero empty coefficient, as shown by an exact one-dimensional nonzero-permanent family",
+        "no common-shore realization or exclusion, retained-jet theorem, physical graph, support-difference lattice coupling, witness, counterexample, or global resolution is claimed"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_full_sensor_common_shore_normalized_pair_control_pullback.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_full_sensor_common_shore_normalized_pair_control_pullback.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (SymPy coefficient projection replay; standard-library sparse-support and permanent audit)",
+      "external_binaries": [],
+      "note": "All eight S2M controls have the same exact binary necessary residual after root-colour projection. The reduction preserves the ambient-versus-physical firewall and leaves residual emptiness, ternary lifting, universal realized-incidence failure, the all-rank-drop branch, and the global conjecture open and UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Balanced All-Rank-Drop Diagonal-Complete Sharpness Theorem",
       "document": "claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md",
       "document_sha256_16": "c4fc0352fe104228",
