@@ -323,6 +323,41 @@ because its block-permanent rank is at least six, whereas this target support
 has dimension at most five.  General nonmonomial cancellation in that sparse
 block-permanent equation and the joint-rank-at-most-eight branch remain open.
 
+The subsequent
+[`source-aligned exceptional-root-row obstruction`](BALANCED_M3_FULL_JOINT_CROSS_RANK_SOURCE_ALIGNED_EXCEPTIONAL_ROOT_ROW_OBSTRUCTION.md)
+closes one genuinely nonmonomial chart of that residue.  If the exceptional
+root block row is supported on one source summand, invertibility makes the
+other two root-row projections complementary three-planes in a six-space.
+The sparse target would force every off-diagonal pair of their marked bases
+to have zero mixed product.  A mixed vector has only a one-dimensional
+zero-divisor line, whereas each marked vector would need two independent
+zero divisors; all three vectors are therefore pure.  Pigeonhole then puts
+two in one source summand and forces the entire opposite marked basis into
+the same summand, contradicting complementarity.  That theorem alone left
+rows meeting two or three sources; the next two results close those
+rank-nine successors.  Joint rank at most eight remains open.
+
+The
+[`two-source exceptional-root-row obstruction`](BALANCED_M3_FULL_JOINT_CROSS_RANK_TWO_SOURCE_EXCEPTIONAL_ROOT_ROW_OBSTRUCTION.md)
+then excludes every exceptional root row contained in the sum of two source
+summands.  Apart from the two pure source planes already handled above, the
+two mixed pair products split: the ten characteristic-zero normal forms have
+two aligned boundaries and eight injective charts.  Concatenating the two
+products gives one `(6+3)` mixed product.  Its zero-divisor space is a whole
+summand for a pure vector and only a line for a mixed vector, so the six
+nonexceptional rows cannot remain complementary.
+
+Finally, the
+[`complete full-joint-cross-rank exclusion`](BALANCED_M3_COMMON_THREE_SPACE_FULL_JOINT_CROSS_RANK_EXCLUSION_THEOREM.md)
+closes the remaining fully supported exceptional-row charts.  Every
+off-diagonal target zero places a three-plane in a shared-derivative kernel.
+That derivative is either injective, reducing the marked rows to pure-source
+zero divisors and an impossible three-colour pigeonhole, or has the unique
+synchronized rank-one-pair geometry.  In the exceptional geometry all nine
+rows are forced into a five-space.  Thus joint cross rank nine is impossible;
+joint rank at most eight and the other common-three-space component types
+remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
