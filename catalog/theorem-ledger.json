@@ -1551,6 +1551,36 @@
       "legacy_paths": []
     },
     {
+      "name": "Matrix-Unit Aggregate Active-Cycle Defect Factorisation and Split-Fibre Sharpness Theorem",
+      "document": "claims/arbitrary-order/MATRIX_UNIT_AGGREGATE_ACTIVE_CYCLE_DEFECT_FACTORISATION_AND_SPLIT_FIBRE_SHARPNESS_THEOREM.md",
+      "document_sha256_16": "ee58b315af48ee7a",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "the arbitrary-order input is an established active transport cycle in the complete nonzero r=1 matrix-unit branch over C, with every compatible matching included in each cycle fibre equation",
+        "each aggregate defect is the sum of all extra compatible matching monomials divided only by the selected nonzero outgoing matching monomial",
+        "the exact formula H=(-1)^m product_i(1+A_i) uses cyclic reindexing of the selected incoming diagonal matchings and introduces no aggregate-sum denominator",
+        "aggregate size does not imply A_i is nonzero; a split aggregate has nonempty extra terms whose normalized sum vanishes",
+        "the sharpness family assigns one nonzero matrix unit to all 28 pairs and contains all three endpoint labels at every vertex",
+        "the sharpness parameters satisfy t!=0 and 1+2t!=0 so the new edge 47 and selected edge 24 remain nonzero",
+        "the complete selected cycle fibres have sizes 5,2,2; the remaining six completion edges are incompatible with all three cycle words",
+        "the zero elimination ideal is for the three selected complete cycle equations in Q[x^+-1,t^+-1,H^+-1,(1+2t)^-1], not for the complete GHZ target ideal",
+        "all three pure target coefficients of the family are zero, so the family is not a Krenn-Gu witness or an apparent counterexample",
+        "complete-target defect coupling, effective cross-multiplicity overlap, aggregate-cycle exclusion, the general r=1 branch, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_matrix_unit_aggregate_active_cycle_defect_factorisation_and_split_fibre_sharpness.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_matrix_unit_aggregate_active_cycle_defect_factorisation_and_split_fibre_sharpness.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (sympy and standard library)",
+      "external_binaries": [],
+      "note": "For an arbitrary active transport cycle, normalizing every extra compatible matching by the selected outgoing matching gives gauge-invariant defects A_i and the exact identity H=(-1)^m product_i(1+A_i). Aggregate extra terms may cancel separately, so a combinatorially aggregate fibre can retain the binomial sign. An exact complete locally concise eight-vertex matrix-unit family has complete cycle-fibre sizes 5,2,2 and H=-2/(1+2t); its selected cycle subsystem has zero elimination ideal in H. At t=1/2 the three extra terms are 1/2,-1,1/2 and split off exactly. The family has zero pure target coefficients and is not a witness. Independent SymPy matching/elimination and no-import edge-mask/Fraction/triangular-rank audits verify the sharpness and algebra. Aggregate-cycle equations alone are exhausted as a holonomy restriction, while complete-target coupling and global Krenn-Gu remain open/UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Four Blocker Ideal Obstruction",
       "document": "claims/arbitrary-order/FOUR_BLOCKER_IDEAL_OBSTRUCTION.md",
       "document_sha256_16": "b7fb5e2394539754",
