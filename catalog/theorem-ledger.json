@@ -1491,6 +1491,36 @@
       "legacy_paths": []
     },
     {
+      "name": "Matrix-Unit Minimal Pure-Cofactor Matching-Covered Core and Single-Cycle Theorem",
+      "document": "claims/arbitrary-order/MATRIX_UNIT_MINIMAL_PURE_COFACTOR_MATCHING_COVERED_CORE_AND_SINGLE_CYCLE_THEOREM.md",
+      "document_sha256_16": "3660764857e186e8",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact perfect-matching support, hafnian factorization, and alternating-exchange arguments over a field of characteristic different from two at every even order",
+        "the input is a least-cardinality even pure-shore residual whose hafnian vanishes although its support has a perfect matching",
+        "the active graph is the first-cofactor graph C_ij=z_ij haf(R-{i,j}), not the full pure support graph",
+        "least-cardinality selection is load-bearing when an allowed edge is promoted to a nonzero cofactor and when allowed-core connectedness is proved",
+        "the active graph equals the union of all support perfect matchings and is connected and matching-covered with minimum degree at least two",
+        "support edges outside the active graph may remain physically present but belong to no perfect matching of the residual and have structurally zero first cofactors",
+        "the degree-two branch is one even cycle with exactly two matching monomials, one primitive signed Laurent relation, and unique monomial complements for every cycle edge",
+        "the branching branch has at least three perfect matchings, cyclomatic rank at least two, and positive even branching excess",
+        "the connected branching exchange core is not claimed to force a deeper blocker, and the primitive cycle relation is not claimed to be inconsistent",
+        "pure-cofactor exclusion, aggregate active-cycle fibres, the general r=1 branch, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_matrix_unit_minimal_pure_cofactor_matching_covered_core_and_single_cycle.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_matrix_unit_minimal_pure_cofactor_matching_covered_core_and_single_cycle.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "For a least supported pure hafnian cancellation, the nonzero first-cofactor graph is exactly the allowed-edge graph. Hafnian factorization across its components and least-cardinality selection force one connected matching-covered core. Every active edge lies on an alternating cycle relative to every fixed perfect matching. Degree two is one even cycle with exactly two terms, a primitive signed relation, and monomial first cofactors; otherwise the core has at least three matchings, cyclomatic rank at least two, and either two branch sites or one degree-at-least-four site. Independent tuple-recursive/Fraction and no-import bitmask/incidence audits verify the mechanisms and sharpness boundaries. Global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Four Blocker Ideal Obstruction",
       "document": "claims/arbitrary-order/FOUR_BLOCKER_IDEAL_OBSTRUCTION.md",
       "document_sha256_16": "b7fb5e2394539754",
