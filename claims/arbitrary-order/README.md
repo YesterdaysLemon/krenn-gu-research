@@ -84,9 +84,10 @@ conformally minimal pure relation attaches termwise in one mixed target
 fibre; beyond that size boundary every response shore is support-unmatchable.
 Across a core edge the opposite-colour active neighbour sets are nonempty and
 disjoint, but the active colour's own normal bit is free, so those neighbours
-need not be exterior.  In a co-two exterior their exterior-neighbour vertices
-form only an independent set.  In the original colour, either the complement
-matches and completes the least relation or a minimum-crossing full matching
+need not be exterior.  In a co-two exterior with `|S|>=6`, their exterior-
+neighbour vertices form only an independent set.  In the original colour,
+either the complement matches and completes the least relation or a minimum-
+crossing full matching
 gives a finite portal whose every nonempty induced image is unmatchable.  No
 response support, co-two exclusion, target-lattice unit, or witness exclusion
 is inferred.
