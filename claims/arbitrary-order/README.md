@@ -64,6 +64,17 @@ reductions and controls, not simultaneous all-bridge witnesses; both sparse
 alternatives and the forced aggregate ports remain open as exclusions.
 
 The
+[`beta-three route-port pairing theorem`](ALL_BRIDGE_BIPARTITE_LEAST_CORE_BETA_THREE_ROUTE_PORT_PAIRING_THEOREM.md)
+composes the `A4` route parities with the `U7I` nonzero port partition.  In
+`Q/Q`, every odd route pairs the same singleton and the same nonzero full
+matching contribution at its two endpoints.  In `Q/C^2`, the four odd routes
+pair four singletons, while the unique even route has complementary doubleton
+ports whose edge-inclusive cofactor sums are nonzero exact negatives.  This
+does not equate bare deletion hafnians, attach a port to a mixed target fibre,
+prove independence, or exclude either sparse kernel; the scalar controls are
+not simultaneous all-bridge witnesses.
+
+The
 [`characteristic-two contraction lift obstruction`](CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md)
 records why the source-inspected external candidate integer-to-`F_2` route
 does not automatically extend to complex weights: good reduction at two is
