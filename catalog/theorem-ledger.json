@@ -438,6 +438,36 @@
       ]
     },
     {
+      "name": "All-Bridge Active-Deck Maximum-Degree-Five Branching or Cancellation-Core Reduction",
+      "document": "claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FIVE_BRANCHING_OR_CANCELLATION_CORE_REDUCTION_THEOREM.md",
+      "document_sha256_16": "1f72db0724a98027",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact combinatorial proof over characteristic zero",
+        "simultaneous balanced all-bridge normal form",
+        "even n>=6",
+        "D is the physical saturated-diagonal graph and Delta(D)<=5",
+        "no bound on the full support graph",
+        "structural reduction only: active branching and both least pure-cancellation-core exits remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_all_bridge_active_deck_maximum_degree_five_branching_or_cancellation_core_reduction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_all_bridge_active_deck_maximum_degree_five_branching_or_cancellation_core_reduction.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "The written characteristic-zero proof gives the exhaustive degree-five reduction to active degree-three branching, a primitive pure cancellation cycle, or a connected branching pure cancellation core. The scripts independently check the finite degree ledger, support decomposition, chord interface, global least-core selector, and exact sharp controls; they are not an arbitrary-order graph enumeration. No exit is excluded. Delta(D)>=6, the deeper-blocker branch, global extraction/gluing, and the global conjecture remain open.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": [
+        "ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FIVE_BRANCHING_OR_CANCELLATION_CORE_REDUCTION_THEOREM.md",
+        "audit_all_bridge_active_deck_maximum_degree_five_branching_or_cancellation_core_reduction.py",
+        "verify_all_bridge_active_deck_maximum_degree_five_branching_or_cancellation_core_reduction.py"
+      ]
+    },
+    {
       "name": "Balanced Half-Sensor Complete Deck and Wick Globalization Theorem",
       "document": "claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md",
       "document_sha256_16": "7b7712781c5ece31",

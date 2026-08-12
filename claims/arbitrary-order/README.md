@@ -26,8 +26,14 @@ excludes the entire `Delta(D)<=3` boundary for the physical
 saturated-diagonal graph in the simultaneous balanced all-bridge branch.  The
 [`maximum-degree-four theorem`](ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FOUR_EXCLUSION.md)
 strengthens this to exclude `Delta(D)<=4` by a two-matching noncancellation
-and Hamiltonian-chord argument.  It does not exclude `Delta(D)>=5`, the
-deeper-blocker branch, or the missing global extraction/gluing step.
+and Hamiltonian-chord argument.  The
+[`maximum-degree-five reduction`](ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FIVE_BRANCHING_OR_CANCELLATION_CORE_REDUCTION_THEOREM.md)
+then proves that every remaining `Delta(D)=5` system has either a
+degree-three active branch or, in the nonbranching case, a least proper pure
+hafnian cancellation whose active core is one primitive even cycle or a
+connected branching exchange core.  This is a structural reduction, not an
+exclusion: all three exits, `Delta(D)>=6`, the deeper-blocker branch, and the
+missing global extraction/gluing step remain open.
 
 The
 [`characteristic-two contraction lift obstruction`](CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md)

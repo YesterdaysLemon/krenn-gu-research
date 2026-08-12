@@ -91,7 +91,7 @@ flowchart TD
   D1["Deeper blocker branch<br/>OPEN"]
 
   A1["Simultaneous balanced all-bridge<br/>CONDITIONAL branch"]
-  A2["Degree <= 4 excluded;<br/>degree >= 5 OPEN"]
+  A2["Degree <= 4 excluded;<br/>degree 5 reduced to 3 OPEN exits"]
 
   P5["Local P5 component programme<br/>PARTIAL / boundary-limited"]
   P7["Committed local P7 incidence<br/>criterion proved, outcome OPEN"]
@@ -226,7 +226,7 @@ flowchart TD
 | `U8` | Proper nonempty colour-nonrigidity sets propagate to all vertices: **open** | [Four-switch partial-bridge theorem](../claims/arbitrary-order/MATRIX_UNIT_FOUR_SWITCH_MINIMAL_PORT_AND_PARTIAL_BRIDGE_REDUCTION_THEOREM.md#5-partial-bridge-systems) |
 | `D1` | Deeper double-star/multi-star blocker branch: **open**. Its blocker alternatives are pointwise after shrinking to a dense constructible stratum; no uniform blocker pair is proved on the whole component. | [Double-star lemma](../claims/arbitrary-order/DOUBLE_STAR_ANNIHILATION_LEMMA.md) and [multi-star factorization](../claims/arbitrary-order/MULTI_STAR_BLOCKER_FACTORISATION_LEMMA.md) |
 | `A1` | Simultaneous balanced all-bridge system: **proved conditional branch**, not universal extraction | [Three-colour balanced bridge intersection](../claims/arbitrary-order/THREE_COLOUR_BALANCED_BRIDGE_INTERSECTION_THEOREM.md) |
-| `A2` | Saturated-diagonal maximum degree at most four: **excluded**; `Delta(D)>=5` remains **open** | [Cubic exclusion](../claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_EXCLUSIVITY_AND_CUBIC_DIAGONAL_EXCLUSION.md) and [degree-four exclusion](../claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FOUR_EXCLUSION.md) |
+| `A2` | Saturated-diagonal maximum degree at most four: **excluded**.  At degree five, every remaining system has an active degree-three branch or a least proper supported pure cancellation core, which is either one primitive cycle or a connected branching core: **proved reduction; all three exits open**.  Every degree-five saturated vertex has full support degree at least eight.  `Delta(D)>=6` remains unrefined here. | [Cubic exclusion](../claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_EXCLUSIVITY_AND_CUBIC_DIAGONAL_EXCLUSION.md), [degree-four exclusion](../claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FOUR_EXCLUSION.md), and [degree-five reduction](../claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FIVE_BRANCHING_OR_CANCELLATION_CORE_REDUCTION_THEOREM.md) |
 | `P5` | Local `P5 -> Delta_3` component programme: **partial, generic and boundary-limited** | [P5 package index](../claims/p5/README.md) and [obligation ledger](../claims/p5/frontier/P5_DELTA3_OBLIGATION_LEDGER.md) |
 | `P7` | One committed legal sensor/incidence pullback: criterion **proved**, algebra outcome **open** | [Committed P7 criterion](../claims/p7/COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md) |
 | `GL` | Universal extraction, cross-chart/depth synchronization, and local-to-global gluing for the local restriction lanes: **open**. The balanced full-sensor lane instead has the exact same-graph gate `S2E`. | [Top two-port observability boundary](../claims/arbitrary-order/GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md) |
@@ -304,7 +304,7 @@ flowchart TD
 | `U2` | boundary obligation | `U8` | Full flags have consequences, but proper nonempty flag sets remain. |
 | `U2`, `U6` | boundary obligation | `D1` | Both reductions retain the deeper-blocker alternative. |
 | `U2` | specialization | `A1` | Simultaneous full flags for all colours enter all-bridge, absent deeper blockers. |
-| `A1` | residual refinement | `A2` | PRs #72–#73 close degree at most four only. |
+| `A1` | residual refinement | `A2` | Degree at most four is excluded.  At degree five, the active-deck and mixed-cut identities force one of three still-open exits: active degree-three branching, a primitive pure cancellation cycle, or a connected branching pure cancellation core. |
 | `PR` | specialization | `P5`, `P7` | These are two separately developed local lanes. The still-open `r=6` / P6 restriction remains in `PR`, and arbitrary `r>=8` is not reduced to any of these ranks. |
 | `P5`, `P7` | open gluing obligation | `GL` | Even complete local exclusions require a theorem connecting every global witness to them. |
 | `G0` | refutation of argument | `C2` | Good reduction to the prime field is not automatic, and the source theorem's local correspondence remains pending. |
@@ -434,8 +434,13 @@ branch. They are not an instruction to begin all of them at once.
    produce an exact nonzero selector or otherwise exclude the unfactorized
    high-surplus cell.  The existing cell detectors do not exclude a witness.
 
-6. **First remaining all-bridge degree.** Exclude or structurally reduce
-   `Delta(D)=5`. This does not address the separate deeper-blocker branch.
+6. **All-bridge degree-five exits.** The first remaining degree has now been
+   reduced exactly.  Close at least one load-bearing side: use the simultaneous
+   mixed cuts to control balanced subcubic active components that fail Hall's
+   condition, or prove the needed labelled residual/chord-arc nonvanishing for
+   the primitive-cycle and branching pure cancellation cores.  A universal
+   maximum-degree-two noncancellation lemma is false.  This does not address
+   `Delta(D)>=6` or the separate deeper-blocker branch.
 
 7. **Component 22 remaining finite-`D23` residual.** The whole generic
    `H=f2=f8=0` cell over `Q(A,R,D)` is now empty: one maximal minor forces
