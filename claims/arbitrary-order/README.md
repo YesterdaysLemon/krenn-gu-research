@@ -219,9 +219,9 @@ target equation, function-field rank four, and `f_empty=1`.  Thus the unused
 target rows and empty normalization, even together with the column degrees and
 the other seven pair conditions, do not make a retained coordinate redundant
 at the full-row Cramer level.  These systems are not proved to be common-shore
-companion matching-sum sensors.  Realization or nonrealizability inside that
-physical image is the nearest open bridge; no balanced target incidence is
-constructed or excluded.
+companion matching-sum sensors by the S2M theorem itself.  The successor
+S2N--S2P results below decide these eight systems, but construct or exclude no
+arbitrary balanced target incidence.
 
 The
 [`common-shore singleton-slice and empty-permanent compatibility theorem`](BALANCED_FULL_SENSOR_COMMON_SHORE_SINGLETON_SLICE_AND_EMPTY_PERMANENT_COMPATIBILITY_THEOREM.md)
@@ -243,10 +243,17 @@ promoting them to physical sensors.  Projecting each root onto the pivot and
 other nonzero colours sends every control to the same binary pattern: one
 transverse pure singleton, three zero quiet-colour singleton slices, and one
 quiet-colour pure empty coefficient.  Hence realization of any control must
-solve one explicit binary image/kernel/permanent system.  Emptiness and
-realizability of that residual both remain open.  A one-dimensional exact
-family shows why the zero singleton slices alone do not force the empty
-coefficient to vanish.
+solve one explicit binary image/kernel/permanent system.  The
+[`binary syzygy--permanent residual obstruction`](BALANCED_FULL_SENSOR_COMMON_SHORE_BINARY_SYZYGY_PERMANENT_RESIDUAL_OBSTRUCTION_THEOREM.md)
+now proves that system empty: a nonzero pure image tensor and a nonzero pure
+kernel permanent must share a factor line, whereas the pivot and quiet basis
+factors are transverse in all three positions.  Therefore none of the eight
+controls is a common-shore companion matching-sum sensor.  A one-dimensional
+exact family still shows why the zero singleton slices alone do not force the
+empty coefficient to vanish; the simultaneous transverse-image condition is
+load-bearing.  Since the eight controls are not an exhaustive parametrization
+of every realized pair-gate failure, their exclusion does not prove the
+universal full-sensor gate.
 
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
