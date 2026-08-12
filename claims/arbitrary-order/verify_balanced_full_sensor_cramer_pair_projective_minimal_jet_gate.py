@@ -419,6 +419,205 @@ def assert_coordinatewise_sharpness() -> dict[str, int]:
     }
 
 
+def assert_column_multidegrees(
+    matrix: sp.Matrix,
+    groups: tuple[tuple[sp.Symbol, ...], ...],
+    expected: tuple[tuple[int, ...], ...],
+) -> None:
+    """Check one homogeneous multidegree for every nonzero column entry."""
+    assert matrix.cols == len(expected)
+    for column in range(matrix.cols):
+        degrees = {
+            tuple(homogeneous_group_degree(entry, group) for group in groups)
+            for entry in matrix[:, column]
+            if entry != 0
+        }
+        assert degrees == {expected[column]}
+
+
+def assert_cramer_solution(
+    matrix: sp.Matrix,
+    target: sp.Matrix,
+    solution: sp.Matrix,
+) -> tuple[sp.Expr, sp.Matrix]:
+    """Check an exact rational solution and return polynomial Cramer data."""
+    assert sp.simplify(matrix * solution - target) == sp.zeros(matrix.rows, 1)
+    beta = sp.expand(matrix.det())
+    assert beta != 0
+    numerator_entries: list[sp.Expr] = []
+    for entry in solution:
+        cleared = sp.cancel(beta * entry)
+        assert sp.denom(cleared) == 1
+        numerator_entries.append(sp.expand(cleared))
+    numerator = sp.Matrix(numerator_entries)
+    assert sp.simplify(matrix * numerator - beta * target) == sp.zeros(
+        matrix.rows,
+        1,
+    )
+    return beta, numerator
+
+
+def selected_first_minor(
+    matrix: sp.Matrix,
+    target: sp.Matrix,
+    beta: sp.Expr,
+    numerator: sp.Matrix,
+    variable: sp.Symbol,
+) -> sp.Expr:
+    """Build one raw selected first replacement determinant."""
+    residual = beta * target.diff(variable) - matrix.diff(variable) * numerator
+    return replacement_minor(matrix, 0, residual)
+
+
+def selected_second_minor(
+    matrix: sp.Matrix,
+    target: sp.Matrix,
+    beta: sp.Expr,
+    numerator: sp.Matrix,
+    left: sp.Symbol,
+    right: sp.Symbol,
+) -> sp.Expr:
+    """Build one raw selected second replacement determinant."""
+    first_left = sp.Matrix(
+        [first_stress(beta, numerator[row], left) for row in range(matrix.cols)]
+    )
+    first_right = sp.Matrix(
+        [first_stress(beta, numerator[row], right) for row in range(matrix.cols)]
+    )
+    residual = (
+        beta**2 * target.diff(left, right)
+        - beta * matrix.diff(left, right) * numerator
+        - matrix.diff(left) * first_right
+        - matrix.diff(right) * first_left
+    )
+    return replacement_minor(matrix, 0, residual)
+
+
+def assert_structured_selected_systems() -> dict[str, int]:
+    """Embed every sharp coordinate in deck-degree/GHZ-compatible 4x4 data."""
+    x = sp.symbols("x0:3")
+    y = sp.symbols("y0:3")
+    r = sp.symbols("r0:3")
+    groups = (x, y, r)
+    retained_pairs = tuple(combinations_with_replacement((1, 2), 2))
+
+    outside_systems = 0
+    for exceptional in (1, 2):
+        matrix = sp.Matrix(
+            [
+                [r[0], y[0], 0, 0],
+                [0, y[1], 0, 0],
+                [0, 0, x[0], 0],
+                [0, 0, 0, x[0] * y[0] * r[0]],
+            ]
+        )
+        target = sp.Matrix([x[exceptional] * y[exceptional] * r[exceptional], 0, 0, 0])
+        solution = sp.Matrix(
+            [
+                r[exceptional] * x[exceptional] * y[exceptional] / r[0],
+                0,
+                0,
+                0,
+            ]
+        )
+        assert_column_multidegrees(
+            matrix,
+            groups,
+            ((0, 0, 1), (0, 1, 0), (1, 0, 0), (1, 1, 1)),
+        )
+        beta, numerator = assert_cramer_solution(matrix, target, solution)
+        pair = sp.cancel(numerator[0] / beta)
+        for index in (1, 2):
+            stress = first_stress(beta, numerator[0], r[index])
+            determinant = selected_first_minor(
+                matrix,
+                target,
+                beta,
+                numerator,
+                r[index],
+            )
+            assert sp.expand(determinant - stress) == 0
+            assert (stress != 0) == (index == exceptional)
+        for endpoint in (x, y):
+            for left, right in combinations_with_replacement(endpoint[1:], 2):
+                assert sp.diff(pair, left, right) == 0
+        outside_systems += 1
+
+    endpoint_systems = 0
+    for endpoint_name in ("x", "y"):
+        for exceptional in retained_pairs:
+            left_index, right_index = exceptional
+            colour = left_index
+            if endpoint_name == "x":
+                matrix = sp.Matrix(
+                    [
+                        [r[colour], -x[right_index] * y[colour] * r[colour], 0, 0],
+                        [0, x[0] * y[colour] * r[colour], 0, 0],
+                        [0, 0, y[0], 0],
+                        [0, 0, 0, x[0]],
+                    ]
+                )
+                target = sp.Matrix([0, x[colour] * y[colour] * r[colour], 0, 0])
+                solution = sp.Matrix(
+                    [
+                        x[left_index] * x[right_index] * y[colour] / x[0],
+                        x[left_index] / x[0],
+                        0,
+                        0,
+                    ]
+                )
+                endpoint = x
+                other = y
+            else:
+                matrix = sp.Matrix(
+                    [
+                        [r[colour], -x[colour] * y[right_index] * r[colour], 0, 0],
+                        [0, x[colour] * y[0] * r[colour], 0, 0],
+                        [0, 0, y[0], 0],
+                        [0, 0, 0, x[0]],
+                    ]
+                )
+                target = sp.Matrix([0, x[colour] * y[colour] * r[colour], 0, 0])
+                solution = sp.Matrix(
+                    [
+                        x[colour] * y[left_index] * y[right_index] / y[0],
+                        y[left_index] / y[0],
+                        0,
+                        0,
+                    ]
+                )
+                endpoint = y
+                other = x
+            assert_column_multidegrees(
+                matrix,
+                groups,
+                ((0, 0, 1), (1, 1, 1), (0, 1, 0), (1, 0, 0)),
+            )
+            beta, numerator = assert_cramer_solution(matrix, target, solution)
+            for candidate in retained_pairs:
+                left = endpoint[candidate[0]]
+                right = endpoint[candidate[1]]
+                stress = second_stress(beta, numerator[0], left, right)
+                determinant = selected_second_minor(
+                    matrix,
+                    target,
+                    beta,
+                    numerator,
+                    left,
+                    right,
+                )
+                assert sp.expand(determinant - stress) == 0
+                assert (stress != 0) == (candidate == exceptional)
+            for left, right in combinations_with_replacement(other[1:], 2):
+                assert second_stress(beta, numerator[0], left, right) == 0
+            for variable in r[1:]:
+                assert first_stress(beta, numerator[0], variable) == 0
+            endpoint_systems += 1
+
+    assert (outside_systems, endpoint_systems) == (2, 6)
+    return {"outside": outside_systems, "endpoint": endpoint_systems}
+
+
 def assert_condition_counts() -> dict[str, dict[int, int]]:
     """Check general and ternary counts without hiding reconstruction terms."""
     general: dict[int, int] = {}
@@ -446,6 +645,7 @@ def main() -> None:
     minors = assert_reduced_replacement_minors()
     scaling = assert_chart_rescaling()
     sharpness = assert_coordinatewise_sharpness()
+    structured = assert_structured_selected_systems()
     counts = assert_condition_counts()
     print("balanced Cramer pair projective-minimal jet checks: PASS")
     print(f"  Euler syzygies: {euler}")
@@ -453,6 +653,7 @@ def main() -> None:
     print(f"  retained replacement minors: {minors}")
     print(f"  chart covariance: {scaling}")
     print(f"  ambient coordinate controls: {sharpness}")
+    print(f"  structured selected systems: {structured}")
     print(f"  condition counts: {counts}")
 
 

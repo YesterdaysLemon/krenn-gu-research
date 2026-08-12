@@ -203,6 +203,22 @@ therefore forbid dropping a retained coordinate using multidegrees alone;
 they say nothing about which coordinates might be forced by the special
 balanced target-incidence image.
 
+The theorem also gives a stronger `m=3` embedding for every control.  Each
+embedding is a full `4 x 4` selected Cramer minor whose four columns have the
+exact complement degrees of the even deck labels.  Its selected target vector
+is zero except for one pure monomial `x_a y_a r_a`, as required by a selected
+GHZ row pattern.  Exact Cramer multiplication gives the same outside or
+endpoint pole coordinate, and its named retained replacement minor is
+nonzero.
+
+This hardening rules out an easier objection to the diagonal controls: the
+failure persists after imposing the complete deck-column count, all column
+multidegrees, and the selected GHZ zero/pure pattern.  It still does not
+realize the columns by the balanced matching-sum formula, retain every target
+row, prove full target consistency, or impose empty normalization in the
+controls.  It therefore remains a selected-system boundary rather than a
+balanced target incidence.
+
 ## 8. Replay coverage and independence
 
 The primary verifier uses SymPy and checks:
@@ -215,14 +231,16 @@ The primary verifier uses SymPy and checks:
   Cramer system;
 - every retained chart-rescaling identity;
 - both outside coordinates and all six endpoint Hessian coordinates as
-  independent ambient controls; and
+  independent ambient controls;
+- a structured four-column, deck-degree and selected-GHZ compatible Cramer
+  embedding for every one of those eight controls; and
 - the uniform-d formula and ternary counts.
 
 The independent audit imports neither SymPy nor repository code.  It builds
 a separate sparse polynomial ring over `Fraction`, formal derivatives, and
 different homogeneous data.  It independently checks the radial syzygies,
 physical family, diagonal replacement entries, covariance, all eight sharp
-controls, and counts.
+controls, all eight structured selected systems, and counts.
 
 The implementations are independent exact specialized replays, not
 independent authors of the arbitrary-dimension proof.  The written Euler and

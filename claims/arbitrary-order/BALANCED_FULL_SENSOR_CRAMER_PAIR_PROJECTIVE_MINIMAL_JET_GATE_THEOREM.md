@@ -337,11 +337,76 @@ is an exact abstract `2 x 2` Cramer system by taking
 A=diag(beta,1),             j=(v,0)^T.               (27)
 ```
 
-They prove coordinatewise irredundancy only for the ambient
-multihomogeneous rational-section lemma on the fixed chart.  The matrices
-and targets in (27) are not shown to arise from the balanced complete-deck
-sensor and GHZ section.  The controls are therefore not balanced target
-incidences, graph witnesses, or Krenn--Gu counterexamples.
+There is also a stronger selected-system realization that respects all four
+even-deck column multidegrees at `m=3` and uses only zero or pure GHZ entries
+in the selected target rows.  Let the groups be `x,y,r`, let `e={x,y}`, and
+write the four deck labels as `e,{x,r},{y,r},empty`.  For the outside control
+with exceptional `a in {1,2}`, take columns in that order and
+
+```text
+A_out = [ r_0  y_0   0       0         ]
+        [ 0    y_1   0       0         ]
+        [ 0    0     x_0     0         ]
+        [ 0    0     0       x_0y_0r_0 ],
+
+j_out=(x_a y_a r_a,0,0,0)^T.                        (28)
+```
+
+The Cramer solution has pair coordinate
+
+```text
+f_e=(r_a/r_0)x_a y_a,                               (29)
+```
+
+and every other coordinate zero.  The four columns have respective degrees
+`r`, `y`, `x`, and `xyr`, exactly the complements of their deck labels, while
+the only nonzero target row is one pure GHZ monomial.
+
+For the `x`-endpoint control indexed by `1<=a<=b<=2`, order the columns as
+`e,empty,{x,r},{y,r}` and take
+
+```text
+A_x = [ r_a  -x_b y_a r_a   0    0   ]
+      [ 0      x_0 y_a r_a   0    0   ]
+      [ 0      0              y_0  0   ]
+      [ 0      0              0    x_0 ],
+
+j_x=(0,x_a y_a r_a,0,0)^T.                          (30)
+```
+
+Its first two Cramer coordinates are
+
+```text
+f_e=(x_a x_b/x_0)y_a,       f_empty=x_a/x_0.        (31)
+```
+
+The analogous `y`-endpoint control is
+
+```text
+A_y = [ r_a  -x_a y_b r_a   0    0   ]
+      [ 0      x_a y_0 r_a   0    0   ]
+      [ 0      0              y_0  0   ]
+      [ 0      0              0    x_0 ],
+
+j_y=(0,x_a y_a r_a,0,0)^T,                          (32)
+
+f_e=x_a(y_a y_b/y_0),       f_empty=y_a/y_0.        (33)
+```
+
+Again the columns have the exact deck-complement multidegrees `r,xyr,y,x`,
+and the selected target is zero except for one pure GHZ monomial.  These
+systems show that column multidegrees, the complete four-column count, and
+the selected-row GHZ zero/pure pattern still do not make any retained affine
+jet redundant.
+
+The controls prove coordinatewise irredundancy only for the ambient
+multihomogeneous rational-section lemma and the displayed selected Cramer
+architecture on the fixed chart.  Neither (27) nor (28)--(33) is shown to
+arise from the matching-sum formula for the balanced complete-deck sensor;
+the unselected target rows and full target consistency are not supplied, and
+the systems deliberately do not impose empty normalization.  They are
+therefore not balanced target incidences, graph witnesses, or Krenn--Gu
+counterexamples.
 
 ## 7. Proof-topology consequence and residual frontier
 
@@ -352,7 +417,7 @@ one target-consistent full sensor;
 for every ternary pair e:
   2(m-2) outside replacement minors;
   3+3 endpoint replacement minors;
-higher Euler--hafnian recurrences.                  (28)
+higher Euler--hafnian recurrences.                  (34)
 ```
 
 The advance removes exactly `m+4` redundant radial identities per pair.  It
@@ -379,8 +444,10 @@ uv run --with ruff ruff check claims/arbitrary-order/verify_balanced_full_sensor
 The primary verifier uses SymPy to check the universal quotient-cleared Euler
 syzygies on nontrivial multihomogeneous Cramer data, reconstruct every omitted
 ternary stress from the retained family, check the `2m+2` count and chart
-rescaling, and enumerate every coordinatewise sharp control.  The independent
-audit imports neither SymPy nor repository code; it uses a separately written
-sparse polynomial ring over `Q`, direct differentiation, and different exact
-homogeneous data.  Both scripts replay displayed identities and conventions.
+rescaling, and enumerate every coordinatewise sharp control, including the
+structured four-column Cramer embeddings.  The independent audit imports
+neither SymPy nor repository code; it uses a separately written sparse
+polynomial ring over `Q`, direct differentiation, and different exact
+homogeneous data and rebuilds the structured systems.  Both scripts replay
+displayed identities and conventions.
 The arbitrary-dimension theorem is the Euler/domain argument above.
