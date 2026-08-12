@@ -70,6 +70,15 @@ normal-form-point leaf, pointwise boundary/divisor closures for these and the
 other components remain separate obligations; their package location does not
 promote them to complete closures.
 
+The component-twenty-two
+[`finite-D23 f2/f8 generic complete intersection`](h22/unequal-complement-common-kernel-component-d23-f2-f8-generic-complete/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_F2_F8_GENERIC_COMPLETE_OBSTRUCTION.md)
+package closes the entire `H=f2=f8=0` cell over `Q(A,R,D)`.  It includes both
+the earlier `2h3+s=0` slope intersection and its isolated complement, but it is
+still a generic/function-field result.  The generic finite-`D01` pair orbit is
+separately closed by its owning theorem and is not reproved here.  Special
+parameter fibres, the rest of the `f2=0` residual, projective/source
+boundaries, component twenty-two as a whole, and `P_5 -> Delta_3` remain open.
+
 Migrating a generic theorem under this spine does not change its
 scope, status, or excluded divisors.  The global Krenn-Gu conjecture
 remains **UNRESOLVED**.
@@ -79,7 +88,7 @@ remains **UNRESOLVED**.
 | directory | contents |
 |---|---|
 | [`h31/`](h31/) | marked-`H31` obstruction forest (52 direct directories; generic, divisor-scoped, boundary, carrier-only, and neutral disputed-ownership packages retain distinct claims and evidence roles) |
-| [`h22/`](h22/) | weighted-`H22` obstruction forest (108 direct package directories; 111 total including nested packages; generic, scoped, partial, candidate, historical, and one neutral disputed-ownership package retain distinct statuses) |
+| [`h22/`](h22/) | weighted-`H22` obstruction forest (109 direct package directories; 112 total including nested packages; generic, scoped, partial, candidate, historical, and one neutral disputed-ownership package retain distinct statuses) |
 | [`frontier/`](frontier/) | frontier/reduction forest: 231 artifacts after Stages 29, 32, and 33 (`84 md + 145 py + 2 cpp`), preserving partial, candidate, superseded, and asymmetric evidence |
 | [`boundaries/`](boundaries/) | selected boundary packages: 32 artifacts after Stages 29 and 32 (`11 md + 21 py`) |
 | [`coordinate-cegar/`](coordinate-cegar/) | coordinate and bounded-CEGAR packages: 25 artifacts after Stages 29 and 32 (`9 md + 16 py`) |
