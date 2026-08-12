@@ -31,6 +31,14 @@ contradict a pure hafnian cancellation and do not enter the matrix-unit
 deeper-blocker component.  The pure-cofactor exit, the `r=1` branch, and the
 global Krenn--Gu conjecture remain **UNKNOWN/UNRESOLVED**.
 
+This theorem is intentionally stated for an abstract least pure residual.
+The later all-bridge specialization proves that saturated bit flips make its
+least core bipartite, so the one-open-port profile cannot occur there.  It
+also adds matching-polytope bounds which force an aggregate port below the
+extremal sparse degree.  Those are extra all-bridge hypotheses, not changes
+to the generic theorem or to its sharp nonbipartite controls; see
+[`ALL_BRIDGE_ACTIVE_DECK_ALL_DEGREE_LOCALIZED_PURE_CANCELLATION_AND_BIPARTITE_CORE_REDUCTION_THEOREM.md`](ALL_BRIDGE_ACTIVE_DECK_ALL_DEGREE_LOCALIZED_PURE_CANCELLATION_AND_BIPARTITE_CORE_REDUCTION_THEOREM.md).
+
 ## 1. Imported least-residual core
 
 Let `Z=(z_ij)` be a hollow symmetric scalar matrix on a finite even set `S`.
@@ -427,6 +435,11 @@ that couples to the distinguished fan monomials, a theorem controlling the
 aggregate port remainders, or root/killer incidence that genuinely enters
 the deeper-blocker component.  Existing deeper-blocker theorems do not take
 a pure conformal fan as a sufficient input.
+
+In the simultaneous balanced all-bridge branch, the later bipartite-core
+specialization removes the one-open profile, proves `N>=beta+1`, and confines
+a sparse port site to `d=N=beta+1`.  Closed all-odd sparse fans and nonzero
+aggregate ports both remain open as exclusions.
 
 ## 8. Assumptions and boundary
 

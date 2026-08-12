@@ -63,6 +63,13 @@ the three localized cancellation forms is proved impossible.  All three
 displayed least-core strata, `Delta(D)>=6`, and the separate deeper-blocker
 branch remain open.  The global Krenn--Gu conjecture remains **UNRESOLVED**.
 
+The later
+[`ALL_BRIDGE_ACTIVE_DECK_ALL_DEGREE_LOCALIZED_PURE_CANCELLATION_AND_BIPARTITE_CORE_REDUCTION_THEOREM.md`](ALL_BRIDGE_ACTIVE_DECK_ALL_DEGREE_LOCALIZED_PURE_CANCELLATION_AND_BIPARTITE_CORE_REDUCTION_THEOREM.md)
+shows that Sections 3--4 actually localize one of the same three supported
+cancellations at every saturated degree.  It also separates degree-free
+least-core bipartiteness and the rank-one/rank-two classification from the
+genuinely degree-five subcubic and typed-site conclusions owned here.
+
 ## 1. Inherited identities and notation
 
 Let `V` have even size `n>=6`.  For each colour `c in {0,1,2}`, let `Z^c`
@@ -323,10 +330,11 @@ product_c haf(Z^c[V_c])=0.
 ```
 
 At least one factor therefore vanishes on a nonempty proper even shore while
-its support has a perfect matching.  Sections 3--4 supply additional,
-degree-five-specific localizations to an inactive selected-edge complement,
-a selected-matching component/complement, or a Hamiltonian chord-arc/
-complement cut.
+its support has a perfect matching.  Sections 3--4 supply additional
+localizations, scoped here under the degree-five hypothesis, to an inactive
+selected-edge complement, a selected-matching component/complement, or a
+Hamiltonian chord-arc/complement cut.  The later all-degree owner proves that
+these localization arguments themselves need no upper-degree bound.
 
 Among **all** pairs `(e,S)` such that `e` is a colour, `S` is a nonempty
 proper even subset of `V`, `support(Z^e[S])` has a perfect matching, and
@@ -611,9 +619,10 @@ proof.
 
 ```text
 simultaneous all-bridge Delta(D)<=4:                  EXCLUDED;
-simultaneous all-bridge Delta(D)=5:
+simultaneous all-bridge Delta(D)=5 (this theorem):
   inactive-edge complement / selected-pair component /
   Hamiltonian chord-arc localized cancellation:      PROVED EXHAUSTIVE;
+same localized trichotomy at every Delta(D):           PROVED LATER;
 impossibility of all three localized forms:           OPEN;
 Hall-deficient active deck:
   two inactive repairs with common cofactor zeros:   PROVED;
@@ -621,7 +630,7 @@ universal least pure cancellation core:
   cycle / rank-2 all-odd theta / rank>=3 core:        PROVED REDUCTION / OPEN;
 maximum full-support degree <=7:                      EXCLUDED;
 all-bridge even orders n=6,8:                         EXCLUDED;
-Delta(D)>=6 within Delta(G)>=8:                       OPEN;
+Delta(D)>=6 exclusion within Delta(G)>=8:              OPEN;
 deeper-blocker branch:                                OPEN;
 universal extraction/gluing:                         NOT PROVED;
 global Krenn--Gu conjecture:                         UNRESOLVED.
