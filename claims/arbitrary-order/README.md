@@ -59,6 +59,18 @@ Target residuals, empty normalization, pair poles, and the recurrence family
 are still open obligations; a normalized cleared recurrence can hold while a
 pair retains a divisorial pole.
 
+The
+[`balanced Cramer pair-pole differential-flatness theorem`](BALANCED_FULL_SENSOR_CRAMER_PAIR_POLE_DIFFERENTIAL_FLATNESS_THEOREM.md)
+then replaces the infinitely phrased prime-divisor tests exactly.  For each
+Cramer pair component, first stresses in every nonendpoint coordinate and
+symmetric Hessian stresses in both endpoint groups vanish if and only if the
+rational component is one constant physical bilinear block.  In the ternary
+case this is a finite family of `3m+6` polynomial identities per pair, with
+all nine block entries reconstructed by mixed endpoint derivatives.  Ambient
+multihomogeneous controls show that neither jet layer follows from degrees and
+the other layer alone; they are not balanced target incidences, and no target
+incidence is proved to fail a jet.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

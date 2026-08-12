@@ -492,6 +492,31 @@
       "legacy_paths": []
     },
     {
+      "name": "Balanced Full-Sensor Cramer Pair-Pole Differential-Flatness Theorem",
+      "document": "claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_PAIR_POLE_DIFFERENTIAL_FLATNESS_THEOREM.md",
+      "document_sha256_16": "a7ca190b63743086",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact differential-algebra, Euler-homogeneity, projective-cone, and normality proof over characteristic zero",
+        "balanced partition with a generically full complete-deck sensor and one target-consistent nonzero Cramer chart",
+        "each Cramer pair component has the O(1_e) affine-cone multidegree inherited from the balanced complete-deck bundle",
+        "the finite first- and second-jet identities replace pair prime-divisor regularity but do not force any identity to fail",
+        "empty normalization, higher Euler--hafnian recurrences, the all-balanced rank-drop branch, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_full_sensor_cramer_pair_pole_differential_flatness.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_full_sensor_cramer_pair_pole_differential_flatness.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (SymPy primary; standard-library sparse-polynomial and jet audit)",
+      "external_binaries": [],
+      "note": "The written proof shows that a multihomogeneous Cramer pair section is a constant physical bilinear block exactly when every nonendpoint first stress and both endpoint Hessian stresses vanish. This finite symbolic criterion is equivalent to the predecessor's prime-divisor pair-pole tests and reconstructs all block entries, but no target incidence is proved to fail it. The two sharp rational-section controls are not balanced incidences. The all-balanced rank-drop branch and global conjecture remain UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Balanced All-Rank-Drop Diagonal-Complete Sharpness Theorem",
       "document": "claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md",
       "document_sha256_16": "c4fc0352fe104228",
