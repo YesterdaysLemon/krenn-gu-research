@@ -450,6 +450,14 @@ If `d=beta+1` but `N>beta+1`, an aggregate port still occurs.  The conclusion
 is sitewise: a core can have an extremal sparse site and a lower-degree
 aggregate site.
 
+The later
+[`ALL_BRIDGE_BIPARTITE_LEAST_CORE_EXTREMAL_SPARSE_OPPOSITE_SHORE_DICHOTOMY_THEOREM.md`](ALL_BRIDGE_BIPARTITE_LEAST_CORE_EXTREMAL_SPARSE_OPPOSITE_SHORE_DICHOTOMY_THEOREM.md)
+sharpens only the equality case in (30).  One extremal sparse site exhausts
+its shore excess; the opposite shore is either a second extremal site joined
+by `beta+1` odd routes or contains several lower-degree sites with nonzero
+aggregate ports.  That successor excludes neither alternative and does not
+identify the globally least core with any localized cut from Sections 2--3.
+
 ## 6. Degree-free rank strata and theta parity
 
 ### 6.1 Rank one

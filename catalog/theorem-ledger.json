@@ -471,7 +471,7 @@
     {
       "name": "All-Bridge All-Degree Localized Pure-Cancellation and Bipartite-Core Reduction",
       "document": "claims/arbitrary-order/ALL_BRIDGE_ACTIVE_DECK_ALL_DEGREE_LOCALIZED_PURE_CANCELLATION_AND_BIPARTITE_CORE_REDUCTION_THEOREM.md",
-      "document_sha256_16": "2eb6db87500a89ad",
+      "document_sha256_16": "eaa83116dd344daf",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact combinatorial and convex-geometric proof over characteristic zero",
@@ -481,7 +481,8 @@
         "the matching-polytope theorem applies to the connected bipartite matching-covered least core and uses ordinary real incidence vectors, not positivity of the hafnian weights",
         "the one-open theta is excluded only after all-bridge bit-flip specialization; the generic pure-core theorem and its nonbipartite sharpness control remain valid",
         "the bounded scripts check finite mechanisms and sharp controls; the written proof carries the arbitrary-order quantifiers",
-        "no localized cancellation, aggregate port, extremal sparse fan, deeper blocker, or universal extraction/gluing obligation is excluded"
+        "no localized cancellation, aggregate port, extremal sparse fan, deeper blocker, or universal extraction/gluing obligation is excluded",
+        "the later extremal-sparse opposite-shore owner refines only the equality case d=N=beta+1 and excludes neither resulting shore alternative"
       ],
       "dependencies": [],
       "primary_verifier": "claims/arbitrary-order/verify_all_bridge_active_deck_all_degree_localized_pure_cancellation_and_bipartite_core.py",
@@ -490,7 +491,35 @@
       "audit_provenance": "independent_exact_identity_audit",
       "expected_runtime": "seconds (standard library)",
       "external_binaries": [],
-      "note": "The written proof audits the active-matching argument at its exact quantifiers and shows that every simultaneous all-bridge system, at every saturated degree, has a supported pure cancellation localized to an inactive-selected-edge complement, one side of a selected-matching-component/complement cut, or one side of a Hamiltonian-chord-arc/complement cut. Minimal Hall deficiency gives two inactive common-cofactor-zero repairs. Independently, saturated bit flips make every globally least pure core bipartite. Rank one is an even cycle and rank two a closed all-odd theta; the generic one-open theta is impossible only in this specialization. The perfect-matching polytope has dimension beta, hence N>=beta+1. Every branch site with d<=beta has a nonzero aggregate port, while a sparse site requires d=N=beta+1. The exact primary and independent no-import audit check bounded component/chord, Hall, polytope-rank, theta, sparse-fan, and aggregate controls. All displayed cancellation and port strata remain open as exclusions; global Krenn-Gu remains UNRESOLVED.",
+      "note": "The written proof audits the active-matching argument at its exact quantifiers and shows that every simultaneous all-bridge system, at every saturated degree, has a supported pure cancellation localized to an inactive-selected-edge complement, one side of a selected-matching-component/complement cut, or one side of a Hamiltonian-chord-arc/complement cut. Minimal Hall deficiency gives two inactive common-cofactor-zero repairs. Independently, saturated bit flips make every globally least pure core bipartite. Rank one is an even cycle and rank two a closed all-odd theta; the generic one-open theta is impossible only in this specialization. The perfect-matching polytope has dimension beta, hence N>=beta+1. Every branch site with d<=beta has a nonzero aggregate port, while a sparse site requires d=N=beta+1. The later opposite-shore owner proves that such a sparse site either faces one second extremal odd multi-theta site or several lower-degree aggregate sites, but excludes neither form. The exact primary and independent no-import audit check bounded component/chord, Hall, polytope-rank, theta, sparse-fan, and aggregate controls. All displayed cancellation and port strata remain open as exclusions; global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
+      "name": "All-Bridge Bipartite Least-Core Extremal-Sparse Opposite-Shore Dichotomy",
+      "document": "claims/arbitrary-order/ALL_BRIDGE_BIPARTITE_LEAST_CORE_EXTREMAL_SPARSE_OPPOSITE_SHORE_DICHOTOMY_THEOREM.md",
+      "document_sha256_16": "6eeec5d4f1a07239",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact graph-theoretic and matching-port proof over characteristic zero",
+        "simultaneous balanced all-bridge normal form at even order n>=6",
+        "the globally least pure core is connected, bipartite, matching-covered, and has minimum degree at least two",
+        "an extremal sparse branch site exists and satisfies d=N=beta+1",
+        "matching-coveredness is load-bearing for the no-cut-vertex and odd multi-theta conclusion",
+        "global leastness and the imported cofactor-port theorem are load-bearing for nonzero aggregate port sums",
+        "the scalar sharpness controls are pure least residuals, not simultaneous all-bridge witnesses",
+        "neither sparse-shore alternative, no aggregate port, and no extraction/gluing or deeper-blocker obligation is excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_all_bridge_bipartite_least_core_extremal_sparse_opposite_shore.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_all_bridge_bipartite_least_core_extremal_sparse_opposite_shore.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "The arbitrary-order written proof shows that an extremal sparse site d=N=beta+1 exhausts its bipartition-shore excess. The opposite shore either contains one second extremal site and the whole core is beta+1 internally disjoint odd routes, or contains 2 through beta-1 lower-degree sites, every one carrying a nonzero aggregate cofactor port. At the sparse site deg_D>=beta+3 and deg_G>=beta+6. Rank three has the exact sparse Q/Q versus Q/C^2 split and a complete five-kernel census with N in {4,5}. Exact rational least residuals realize both sparse forms, while weighted K_(3,3)-e refutes the stronger inference N=beta+1 implies a sparse theta. The primary and independent no-import audit check bounded labelled cores and exact controls; the written proof carries the arbitrary-order quantifiers. These scalar controls are not simultaneous all-bridge witnesses, both sparse alternatives remain open, and global Krenn-Gu remains UNRESOLVED.",
       "claim_package": "claims/arbitrary-order",
       "proof_variant": "canonical",
       "subpackage": null,

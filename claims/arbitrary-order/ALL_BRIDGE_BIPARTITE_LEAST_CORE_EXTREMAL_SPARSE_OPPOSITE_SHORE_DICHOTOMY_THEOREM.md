@@ -427,9 +427,9 @@ There are four cases.
 
 - If `h=2`, then `{p,q}={0,1}`.  The two even routes within each shore must
   cover the two branch endpoints between them.  Every cross route is
-  therefore in endpoint state `00` in every perfect matching and no edge of
-  that route can lie in a perfect matching.  This contradicts the fact that
-  `A` is the allowed matching-covered core.
+  therefore in endpoint state `00` in every perfect matching, so both
+  endpoint edges of that route are absent from every perfect matching.  This
+  contradicts the fact that `A` is the allowed matching-covered core.
 
 - If `h=3`, then `p=q=0`, and the two shores are disconnected.
 
