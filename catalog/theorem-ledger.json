@@ -1611,6 +1611,38 @@
       "legacy_paths": []
     },
     {
+      "name": "Matrix-Unit Diagonal Aggregate Shore-Product and Primitive-Exchange Sharpness Theorem",
+      "document": "claims/arbitrary-order/MATRIX_UNIT_DIAGONAL_AGGREGATE_SHORE_PRODUCT_AND_PRIMITIVE_EXCHANGE_SHARPNESS_THEOREM.md",
+      "document_sha256_16": "bc2f85dd1faffe82",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "the arbitrary-order application is inside the complete nonzero r=1 matrix-unit branch over C and starts with an imported active transport cycle whose extra compatible matchings all have empty offdiagonal core",
+        "the diagonal fibre at each active word is the exact Cartesian product of the three pure-shore support-matching sets; the active diagonal coefficient is nonzero, so all three shore hafnians are nonzero",
+        "the primitive alternating-cycle conclusion is an incidence-difference support direction obtained by flipping one symmetric-difference component; it is not asserted to be a vanishing binomial relation",
+        "the diagonal shore lattices are direct because they have disjoint physical edge-coordinate supports; this does not classify their intersections with target lattices at other words",
+        "shortest-cycle minimality supplies no new arc for a diagonal extra, and the bridge/deeper alternative cannot be invoked on its empty offdiagonal core",
+        "the twelve-vertex sharpness family is defined over Q(t) with t!=0 and 1+t!=0; it assigns one nonzero matrix unit to all 66 pairs and is locally concise",
+        "the family has exactly three active words forming one shortest directed cycle, complete fibre sizes 3,2,2, one diagonal extra, and all three pure target coefficients exactly one",
+        "the fixed sharpness family is not claimed to be support-minimal or already in the moment-balanced gauge; it tests only the stated diagonal-cycle, pure-anchor, and lattice mechanisms",
+        "a determinant-one minor proves that the three selected fibre lattices form a saturated direct rank-four sum with no integer dependency even though the diagonal and cycle directions share physical variables",
+        "the zero holonomy elimination statement is for the selected cycle equations together with the three pure anchors, not the complete target system",
+        "the complete target ideal of the sharpness support is a unit because the mixed word 000001000011 has one nonzero matching monomial; the family is not a Krenn-Gu witness or apparent counterexample",
+        "universal complete-target unit forcing, useful non-direct overlap, proper-subshore cancellation, the deeper-blocker branch, the general r=1 branch, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_matrix_unit_diagonal_aggregate_shore_product_and_primitive_exchange_sharpness.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_matrix_unit_diagonal_aggregate_shore_product_and_primitive_exchange_sharpness.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (sympy and standard library)",
+      "external_binaries": [],
+      "note": "For a diagonal-only aggregate active-cycle fibre, the diagonal terms are exactly the Cartesian product of the three pure-shore matching sets and their difference lattice is the disjoint-support direct sum of the shore lattices. Aggregate size forces one primitive one-shore alternating-cycle direction, but not a vanishing binomial, bridge arc, odd dependency, or pure-cofactor zero. The exact cycle equations have a shore-product normal form. A complete locally concise twelve-vertex Q(t) family has the unique shortest active 3/2/2 cycle, one diagonal extra, all pure coefficients one, physical-variable overlap, and a saturated direct rank-four fibre lattice with no integer dependency; its selected holonomy is -1/(1+t) with zero selected-plus-pure elimination. An outside singleton makes the complete target ideal a unit, so the family is not a witness. Independent SymPy/matching and no-import bitmask/custom-polynomial audits verify the mechanisms and sharpness. Universal unit forcing and global Krenn-Gu remain open/UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Four Blocker Ideal Obstruction",
       "document": "claims/arbitrary-order/FOUR_BLOCKER_IDEAL_OBSTRUCTION.md",
       "document_sha256_16": "b7fb5e2394539754",

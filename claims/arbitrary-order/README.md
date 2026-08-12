@@ -453,7 +453,24 @@ sharp: a complete locally concise ten-vertex `Q(t)` family has all three pure
 coefficients one, cycle sizes `3,2,2`, a parallel extra bridge with zero new
 successor-fibre direction, and `H=-1/(1+t)`.  A separate singleton mixed word
 makes its complete target ideal a unit, so the family is not a witness.
-Purely diagonal aggregate excess and universal unit forcing remain open.
+The offdiagonal attachment is complete at that scope; universal unit forcing
+remains open.
+
+The
+[`diagonal aggregate shore-product theorem`](MATRIX_UNIT_DIAGONAL_AGGREGATE_SHORE_PRODUCT_AND_PRIMITIVE_EXCHANGE_SHARPNESS_THEOREM.md)
+now handles the complementary case in which every extra cycle term is
+diagonal.  Each diagonal fibre is the Cartesian product of its three
+pure-shore matching sets, its difference lattice is their disjoint-support
+direct sum, and any aggregate fibre contains a primitive one-shore
+alternating-cycle exchange.  That exchange is a support direction, not a
+vanishing binomial.  A complete locally concise twelve-vertex `Q(t)` family
+has the unique shortest active cycle with sizes `3,2,2`, only one diagonal
+extra, all three pure coefficients one, and a saturated direct rank-four
+cycle-fibre lattice despite shared physical variables.  Its selected
+holonomy is `-1/(1+t)` with zero selected-plus-pure elimination, while an
+outside singleton makes the complete target ideal a unit.  Thus diagonal
+excess has an exact normal form, but useful non-direct overlap and universal
+complete-target unit forcing remain open.
 
 The
 [`minimal pure-cofactor matching-covered core theorem`](MATRIX_UNIT_MINIMAL_PURE_COFACTOR_MATCHING_COVERED_CORE_AND_SINGLE_CYCLE_THEOREM.md)
