@@ -425,6 +425,20 @@ even cycles.  Both structures survive moment gauge.  These reductions make
 the remaining phase data explicit but do not exclude it.
 
 The
+[`minimal pure-cofactor matching-covered core theorem`](MATRIX_UNIT_MINIMAL_PURE_COFACTOR_MATCHING_COVERED_CORE_AND_SINGLE_CYCLE_THEOREM.md)
+sharpens that pure exit at arbitrary order.  At a least supported cancelling
+shore, the active first-cofactor graph is exactly the allowed-edge graph--the
+union of all support perfect matchings--and minimality forces it to be
+connected and matching-covered.  Every active edge lies on an alternating
+cycle relative to every fixed perfect matching.  The degree-two branch is
+therefore one single even cycle, not a disjoint union: it has exactly two
+matching monomials, one primitive signed Laurent relation, and monomial
+nonzero first cofactors.  The branching branch has at least three perfect
+matchings, cyclomatic rank at least two, and either two branch sites or one
+degree-at-least-four site.  This is a sharper exchange-core reduction, not a
+contradiction or automatic entry to the deeper-blocker branch.
+
+The
 [`complete pure-target moment-compatible odd-holonomy sharpness theorem`](MATRIX_UNIT_COMPLETE_PURE_TARGET_MOMENT_COMPATIBLE_ODD_HOLONOMY_SHARPNESS_THEOREM.md)
 closes a stronger tempting shortcut.  An exact complete eight-vertex
 matrix-unit table has all three pure target coefficients one, a strict
