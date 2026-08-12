@@ -1521,6 +1521,36 @@
       "legacy_paths": []
     },
     {
+      "name": "Matrix-Unit Minimal Pure-Cofactor Port Aggregate and Conformal-Fan Reduction Theorem",
+      "document": "claims/arbitrary-order/MATRIX_UNIT_MINIMAL_PURE_COFACTOR_PORT_AGGREGATE_AND_CONFORMAL_FAN_REDUCTION_THEOREM.md",
+      "document_sha256_16": "d04271838c52b522",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact perfect-matching and alternating-cycle arguments over a field of characteristic different from two at every even order; sharpness families are over Q",
+        "the input is the connected matching-covered active graph of a least-cardinality even supported pure hafnian cancellation from the preceding theorem",
+        "perfect matchings are partitioned by the unique incident edge at a chosen root vertex, and the corresponding port sum is the nonzero first cofactor",
+        "the sparse case means the total number of residual perfect matchings equals the root degree; then every port is a singleton and each matching differs from the reference on one alternating cycle",
+        "the aggregate case concerns a multi-monomial pure first-cofactor port and is not identified with an aggregate active mixed-word fibre",
+        "the conformal exchange fan and theta carriers are subgraphs closed under the reference matching; they are not asserted to be induced or mutually disjoint",
+        "the two theta profiles count perfect matchings on the displayed theta edge set; extra physical support chords on the same vertices are not removed",
+        "the sparse d-fan family, the K4 one-open-port profile, and the K3,3 aggregate profile are exact pure residuals, not complete matrix-unit witnesses",
+        "branch degree, conformal-fan topology, and the sparse Laurent sum alone do not force a contradiction or deeper-blocker entry",
+        "mixed fan coupling, aggregate-port control, pure-cofactor exclusion, the general r=1 branch, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_matrix_unit_minimal_pure_cofactor_port_aggregate_and_conformal_fan.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_matrix_unit_minimal_pure_cofactor_port_aggregate_and_conformal_fan.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "At every branch vertex of a least supported pure hafnian cancellation, all residual perfect matchings partition into nonzero cofactor ports. If the matching count equals the root degree, every port is a singleton: the matchings are single alternating-cycle flips of a reference, their union is a conformal d-route fan, and the residual gives one exact d-nomial Laurent relation. Otherwise a nonzero aggregate pure-cofactor port is forced. Two exits contain a conformal theta with exactly the all-odd three-matching or odd/even/even two-matching profile. Exact Q families realize sparse fans for every d>=3, both cubic theta profiles, and a genuine aggregate port, so pure fan topology alone cannot close U7. Independent recursive-hafnian and no-import edge-mask/route-state/permutation audits verify the mechanisms. Global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Four Blocker Ideal Obstruction",
       "document": "claims/arbitrary-order/FOUR_BLOCKER_IDEAL_OBSTRUCTION.md",
       "document_sha256_16": "b7fb5e2394539754",

@@ -439,6 +439,20 @@ degree-at-least-four site.  This is a sharper exchange-core reduction, not a
 contradiction or automatic entry to the deeper-blocker branch.
 
 The
+[`minimal pure-cofactor port/fan reduction`](MATRIX_UNIT_MINIMAL_PURE_COFACTOR_PORT_AGGREGATE_AND_CONFORMAL_FAN_REDUCTION_THEOREM.md)
+resolves the next combinatorial layer of that branching core.  At any branch
+vertex, all residual perfect matchings partition into nonzero first-cofactor
+ports.  Either every port is a singleton, in which case the matchings form a
+conformal alternating `d`-fan and the pure residual is one exact `d`-nomial
+Laurent relation, or some port is an unavoidable nonzero aggregate.  Two
+exits carry a conformal theta with exactly the all-odd three-matching profile
+or the odd/even/even two-matching profile with one exterior-completed port.
+Exact rational least residuals realize sparse fans for every `d>=3`, both
+cubic theta profiles, and the aggregate alternative.  Thus branching arity
+and fan topology alone cannot exclude the pure exit; a continuation must
+control the aggregate port or add genuine mixed/deeper incidence.
+
+The
 [`complete pure-target moment-compatible odd-holonomy sharpness theorem`](MATRIX_UNIT_COMPLETE_PURE_TARGET_MOMENT_COMPATIBLE_ODD_HOLONOMY_SHARPNESS_THEOREM.md)
 closes a stronger tempting shortcut.  An exact complete eight-vertex
 matrix-unit table has all three pure target coefficients one, a strict
