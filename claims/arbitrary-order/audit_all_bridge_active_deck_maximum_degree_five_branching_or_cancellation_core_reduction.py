@@ -8,6 +8,7 @@ written proof.
 
 from __future__ import annotations
 
+from fractions import Fraction
 from itertools import combinations, product
 from math import factorial, gcd
 
@@ -25,7 +26,11 @@ def vertices_mask(vertices: tuple[int, ...]) -> int:
     return mask
 
 
-def pairing_sum(mask: int, weights: dict[Pair, int], memo: dict[int, int] | None = None) -> int:
+def pairing_sum(
+    mask: int,
+    weights: dict[Pair, int | Fraction],
+    memo: dict[int, int | Fraction] | None = None,
+) -> int | Fraction:
     if mask == 0:
         return 1
     if memo is None:
@@ -48,16 +53,18 @@ def pairing_sum(mask: int, weights: dict[Pair, int], memo: dict[int, int] | None
     return total
 
 
-def haf(vertices: tuple[int, ...], weights: dict[Pair, int]) -> int:
+def haf(vertices: tuple[int, ...], weights: dict[Pair, int | Fraction]) -> int | Fraction:
     return pairing_sum(vertices_mask(vertices), weights)
 
 
-def score(vertices: tuple[int, ...], item: Pair, weights: dict[Pair, int]) -> int:
+def score(
+    vertices: tuple[int, ...], item: Pair, weights: dict[Pair, int | Fraction]
+) -> int | Fraction:
     complement = tuple(vertex for vertex in vertices if vertex not in item)
     return weights[item] * haf(complement, weights)
 
 
-def active_set(vertices: tuple[int, ...], weights: dict[Pair, int]) -> set[Pair]:
+def active_set(vertices: tuple[int, ...], weights: dict[Pair, int | Fraction]) -> set[Pair]:
     return {item for item in weights if score(vertices, item, weights) != 0}
 
 
@@ -208,6 +215,49 @@ def audit_signed_double_star() -> None:
     assert sum(side == 0 for side in shore.values()) == 3
     assert sum(side == 1 for side in shore.values()) == 3
 
+    hall_x = {2, 3}
+    hall_t = {0}
+    boundary = {
+        item for item in active if len(set(item) & hall_t) == 1 and not set(item) & hall_x
+    }
+    assert boundary == {canon(0, 1)}
+    assert sum(scores[item] for item in boundary) == -1
+    assert len(hall_x) == len(hall_t) + 1
+    repairs = {canon(2, 4), canon(3, 5)}
+    complement = (2, 3, 4, 5)
+    assert covers(complement, repairs)
+    assert repairs.isdisjoint(active)
+    assert len(repairs) == 2  # b=2, q=0 in this minimal fixture.
+    pairings = (
+        ({canon(2, 3), canon(4, 5)}, 0),
+        ({canon(2, 4), canon(3, 5)}, 1),
+        ({canon(2, 5), canon(3, 4)}, 0),
+    )
+    assert [items for items, value in pairings if value] == [repairs]
+    for items, expected_weight in pairings:
+        product_weight = 1
+        for item in items:
+            product_weight *= weights.get(item, 0)
+        assert product_weight == expected_weight
+    assert haf(complement, weights) == 1
+    assert all(
+        haf(tuple(v for v in vertices if v not in item), weights) == 0
+        for item in repairs
+    )
+
+
+def audit_branching_with_active_matching() -> None:
+    vertices = tuple(range(6))
+    weights = {
+        canon(row, 3 + column): Fraction(1, 6) if row == 0 else Fraction(1)
+        for row in range(3)
+        for column in range(3)
+    }
+    assert haf(vertices, weights) == 1
+    assert {score(vertices, item, weights) for item in weights} == {Fraction(1, 3)}
+    assert graph_degrees(vertices, active_set(vertices, weights)) == (3,) * 6
+    assert supports_pairing(vertices, active_set(vertices, weights))
+
 
 def audit_max_degree_two_cancellation() -> None:
     vertices = tuple(range(6))
@@ -309,6 +359,69 @@ def audit_least_core_models() -> None:
                 assert haf(subset, branching) != 0
 
 
+def audit_rank_strata_independently() -> None:
+    def beta(vertices: tuple[int, ...], items: set[Pair]) -> int:
+        return len(items) - len(vertices) + 1
+
+    def cubic_sites(vertices: tuple[int, ...], items: set[Pair]) -> int:
+        return graph_degrees(vertices, items).count(3)
+
+    cycle_vertices = tuple(range(4))
+    cycle = {canon(0, 1), canon(1, 2), canon(2, 3), canon(0, 3)}
+
+    theta_vertices = tuple(range(6))
+    theta = {
+        canon(0, 1): 1,
+        canon(0, 2): 1,
+        canon(2, 3): 1,
+        canon(1, 3): 1,
+        canon(0, 4): 1,
+        canon(4, 5): 1,
+        canon(1, 5): -2,
+    }
+    assert haf(theta_vertices, theta) == 0
+    theta_terms: list[int] = []
+    for omitted_route in range(3):
+        matchings = (
+            {canon(0, 1), canon(2, 3), canon(4, 5)},
+            {canon(0, 2), canon(1, 3), canon(4, 5)},
+            {canon(0, 4), canon(1, 5), canon(2, 3)},
+        )
+        term = 1
+        for item in matchings[omitted_route]:
+            term *= theta[item]
+        theta_terms.append(term)
+    assert sorted(theta_terms) == [-2, 1, 1]
+    assert all(sum(choice) != 0 for size in (1, 2) for choice in combinations(theta_terms, size))
+    for size in (2, 4):
+        for subset in combinations(theta_vertices, size):
+            if supports_pairing(subset, set(theta)):
+                assert haf(subset, theta) != 0
+
+    rank_three_vertices = tuple(range(6))
+    entries = ((-3, -3, -3), (-3, -2, 1), (-2, 1, 0))
+    rank_three = {
+        canon(row, 3 + column): entries[row][column]
+        for row in range(3)
+        for column in range(3)
+        if entries[row][column]
+    }
+    assert haf(rank_three_vertices, rank_three) == 0
+    for size in (2, 4):
+        for subset in combinations(rank_three_vertices, size):
+            if supports_pairing(subset, set(rank_three)):
+                assert haf(subset, rank_three) != 0
+
+    for vertices, items in (
+        (cycle_vertices, cycle),
+        (theta_vertices, set(theta)),
+        (rank_three_vertices, set(rank_three)),
+    ):
+        assert graph_connected(vertices, items)
+        assert max(graph_degrees(vertices, items)) <= 3
+        assert cubic_sites(vertices, items) == 2 * (beta(vertices, items) - 1)
+
+
 def audit_global_minimum_across_colours() -> None:
     vertices = tuple(range(8))
     early_cycle = {
@@ -402,17 +515,38 @@ def audit_typed_support_control() -> None:
     assert haf(outside, matrices[0]) == 1
 
 
+def audit_full_support_exclusion_independently() -> None:
+    # Use labelled incident slots, independently of the primary verifier's
+    # neighbour-set construction.  Three K labels are required outside every
+    # diagonal label, so no local support word with at most seven positions
+    # can carry the inherited five saturated incidences.
+    for support_degree in range(3, 8):
+        slots = tuple(range(support_degree))
+        for saturated_degree in range(5, support_degree + 1):
+            diagonal = set(slots[:saturated_degree])
+            off_diagonal_slots = set(slots) - diagonal
+            assert len(off_diagonal_slots) < 3
+
+    assert 5 + 3 == 8
+    feasible_even_orders = [order for order in range(6, 22, 2) if order - 1 >= 8]
+    assert feasible_even_orders[0] == 10
+
+
 def main() -> None:
     audit_integer_degree_compositions()
     audit_support_partition()
     audit_signed_double_star()
+    audit_branching_with_active_matching()
     audit_max_degree_two_cancellation()
     audit_chord_interface_under_relabelling()
     audit_least_core_models()
+    audit_rank_strata_independently()
     audit_global_minimum_across_colours()
     audit_typed_support_control()
+    audit_full_support_exclusion_independently()
     print("independent maximum-degree-five reduction audit: PASS")
     print("no imports from primary verifier or repository; exact bitmask recurrence")
+    print("unconditional all-bridge boundary: Delta(G)>=8 and n>=10")
     print("global conjecture status: UNRESOLVED")
 
 

@@ -179,3 +179,12 @@ The theorem removes the complete pairwise-disjoint exact-degree-six
 branch at every even order.  The next diagonal-degree-three issue is the
 overlapping-matching branch.  Beyond exact support degree six, additional
 support edges are not covered by the nonnegative unit table above.
+
+A later active-deck theorem independently forces every simultaneous balanced
+all-bridge witness to have maximum full-support degree at least eight and
+order at least ten.  It therefore subsumes this document's degree-six
+**exclusion conclusion**, but not the Kotzig port normal form, sign lemma, or
+their exact provenance.  The live residual is saturated `Delta(D)=5` through
+three localized pure-cancellation forms, or saturated `Delta(D)>=6`, inside
+that full-support degree-eight boundary; the deeper-blocker branch remains
+separate.

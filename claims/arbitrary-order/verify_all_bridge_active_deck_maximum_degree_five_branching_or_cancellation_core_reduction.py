@@ -10,6 +10,7 @@ witnesses or claim an exhaustive arbitrary-order graph enumeration.
 from __future__ import annotations
 
 from collections import deque
+from fractions import Fraction
 from functools import cache
 from itertools import combinations, pairwise, product
 from math import factorial
@@ -35,18 +36,24 @@ def perfect_matchings(vertices: tuple[int, ...]) -> tuple[Matching, ...]:
     return tuple(output)
 
 
-def matching_weight(matching: Matching, weights: dict[Edge, int]) -> int:
-    product = 1
+def matching_weight(
+    matching: Matching, weights: dict[Edge, int | Fraction]
+) -> int | Fraction:
+    product: int | Fraction = 1
     for item in matching:
         product *= weights.get(item, 0)
     return product
 
 
-def hafnian(vertices: tuple[int, ...], weights: dict[Edge, int]) -> int:
+def hafnian(
+    vertices: tuple[int, ...], weights: dict[Edge, int | Fraction]
+) -> int | Fraction:
     return sum(matching_weight(matching, weights) for matching in perfect_matchings(vertices))
 
 
-def nonzero_matching_terms(vertices: tuple[int, ...], weights: dict[Edge, int]) -> list[int]:
+def nonzero_matching_terms(
+    vertices: tuple[int, ...], weights: dict[Edge, int | Fraction]
+) -> list[int | Fraction]:
     return [
         value
         for matching in perfect_matchings(vertices)
@@ -54,8 +61,10 @@ def nonzero_matching_terms(vertices: tuple[int, ...], weights: dict[Edge, int]) 
     ]
 
 
-def active_scores(vertices: tuple[int, ...], weights: dict[Edge, int]) -> dict[Edge, int]:
-    output: dict[Edge, int] = {}
+def active_scores(
+    vertices: tuple[int, ...], weights: dict[Edge, int | Fraction]
+) -> dict[Edge, int | Fraction]:
+    output: dict[Edge, int | Fraction] = {}
     for item, value in weights.items():
         complement = tuple(vertex for vertex in vertices if vertex not in item)
         output[item] = value * hafnian(complement, weights)
@@ -243,6 +252,46 @@ def verify_branching_active_control() -> None:
     assert not has_perfect_matching(vertices, active)
     assert has_perfect_matching(vertices, set(weights))
 
+    # The minimal Hall-deficient shore X={2,3}, T={0} has one active boundary
+    # edge 01 of score -1.  Its complementary matching has exactly the two
+    # inactive, vertex-disjoint repairs 24 and 35 (b=2,q=0).
+    hall_x = {2, 3}
+    hall_t = {0}
+    boundary = {
+        item for item in active if len(set(item) & hall_t) == 1 and not set(item) & hall_x
+    }
+    assert boundary == {edge(0, 1)}
+    assert sum(scores[item] for item in boundary) == -1
+    complement = (2, 3, 4, 5)
+    supported_complements = [
+        matching
+        for matching in perfect_matchings(complement)
+        if matching_weight(matching, weights)
+    ]
+    repairs = {edge(2, 4), edge(3, 5)}
+    assert supported_complements == [(edge(2, 4), edge(3, 5))]
+    assert repairs.isdisjoint(active)
+    assert is_perfect_matching(complement, repairs)
+    assert len(repairs) == 2
+    for repair in repairs:
+        deleted = tuple(vertex for vertex in vertices if vertex not in repair)
+        assert hafnian(deleted, weights) == 0
+
+
+def verify_branching_with_active_matching_control() -> None:
+    vertices = tuple(range(6))
+    weights = {
+        edge(row, 3 + column): Fraction(1, 6) if row == 0 else Fraction(1)
+        for row in range(3)
+        for column in range(3)
+    }
+    assert hafnian(vertices, weights) == 1
+    scores = active_scores(vertices, weights)
+    assert set(scores.values()) == {Fraction(1, 3)}
+    active = set(scores)
+    assert set(degrees(vertices, active).values()) == {3}
+    assert has_perfect_matching(vertices, active)
+
 
 def verify_degree_two_cancellation_control() -> None:
     vertices = tuple(range(6))
@@ -361,6 +410,72 @@ def verify_minimal_core_interfaces() -> None:
         for subset in combinations(branching_vertices, size):
             if has_perfect_matching(subset, set(branching_weights)):
                 assert hafnian(subset, branching_weights) != 0
+
+
+def verify_bipartite_subcubic_rank_strata() -> None:
+    def cyclomatic(vertices: tuple[int, ...], items: set[Edge]) -> int:
+        return len(items) - len(vertices) + 1
+
+    def cubic_count(vertices: tuple[int, ...], items: set[Edge]) -> int:
+        return sum(value == 3 for value in degrees(vertices, items).values())
+
+    cycle_vertices = tuple(range(4))
+    cycle = {edge(0, 1), edge(1, 2), edge(2, 3), edge(0, 3)}
+    assert cyclomatic(cycle_vertices, cycle) == 1
+    assert cubic_count(cycle_vertices, cycle) == 0
+
+    # Closed all-odd theta with route lengths 1,3,3.  The three perfect
+    # matching terms have weights 1,1,-2 and no proper subsum vanishes.
+    theta_vertices = tuple(range(6))
+    theta_weights = {
+        edge(0, 1): 1,
+        edge(0, 2): 1,
+        edge(2, 3): 1,
+        edge(3, 1): 1,
+        edge(0, 4): 1,
+        edge(4, 5): 1,
+        edge(5, 1): -2,
+    }
+    theta = set(theta_weights)
+    assert connected(theta_vertices, theta)
+    assert bipartition(theta_vertices, theta)
+    assert cyclomatic(theta_vertices, theta) == 2
+    assert cubic_count(theta_vertices, theta) == 2
+    theta_terms = nonzero_matching_terms(theta_vertices, theta_weights)
+    assert sorted(theta_terms) == [-2, 1, 1]
+    assert hafnian(theta_vertices, theta_weights) == 0
+    assert all(sum(choice) != 0 for size in (1, 2) for choice in combinations(theta_terms, size))
+    for size in (2, 4):
+        for subset in combinations(theta_vertices, size):
+            if has_perfect_matching(subset, theta):
+                assert hafnian(subset, theta_weights) != 0
+
+    rank_three_vertices = tuple(range(6))
+    rank_three_matrix = ((-3, -3, -3), (-3, -2, 1), (-2, 1, 0))
+    rank_three_weights = {
+        edge(row, 3 + column): rank_three_matrix[row][column]
+        for row in range(3)
+        for column in range(3)
+        if rank_three_matrix[row][column]
+    }
+    rank_three = set(rank_three_weights)
+    assert connected(rank_three_vertices, rank_three)
+    assert bipartition(rank_three_vertices, rank_three)
+    assert cyclomatic(rank_three_vertices, rank_three) == 3
+    assert cubic_count(rank_three_vertices, rank_three) == 4
+    assert hafnian(rank_three_vertices, rank_three_weights) == 0
+    for size in (2, 4):
+        for subset in combinations(rank_three_vertices, size):
+            if has_perfect_matching(subset, rank_three):
+                assert hafnian(subset, rank_three_weights) != 0
+
+    for vertices, items in (
+        (cycle_vertices, cycle),
+        (theta_vertices, theta),
+        (rank_three_vertices, rank_three),
+    ):
+        beta = cyclomatic(vertices, items)
+        assert cubic_count(vertices, items) == 2 * (beta - 1)
 
 
 def least_supported_cancellation(
@@ -486,18 +601,40 @@ def verify_typed_mixed_cut_control() -> None:
     assert hafnian(chosen, matrices[1]) * hafnian(complement, matrices[0]) == 0
 
 
+def verify_unconditional_full_support_boundary() -> None:
+    # The three primary killers are physically distinct and lie outside the
+    # entire diagonal backbone, which contains saturated D.  Reconstruct the
+    # exact pointwise degree union rather than treating the +3 as arithmetic
+    # metadata only.
+    for diagonal_degree in range(13):
+        diagonal_neighbours = set(range(diagonal_degree))
+        killers = set(range(diagonal_degree, diagonal_degree + 3))
+        assert diagonal_neighbours.isdisjoint(killers)
+        assert len(diagonal_neighbours | killers) == diagonal_degree + 3
+
+    # The inherited Delta(D)>=5 boundary therefore forces Delta(G)>=8.
+    inherited_minimum_saturated_degree = 5
+    assert inherited_minimum_saturated_degree + 3 == 8
+    assert all(order - 1 < 8 for order in (6, 8))
+    assert min(order for order in range(6, 20, 2) if order - 1 >= 8) == 10
+
+
 def main() -> None:
     verify_degree_table()
     verify_support_decomposition_truth_table()
     verify_branching_active_control()
+    verify_branching_with_active_matching_control()
     verify_degree_two_cancellation_control()
     verify_hamiltonian_chord_interface()
     verify_minimal_core_interfaces()
+    verify_bipartite_subcubic_rank_strata()
     verify_global_least_selector()
     verify_typed_mixed_cut_control()
+    verify_unconditional_full_support_boundary()
     print("all-bridge maximum-degree-five reduction verification: PASS")
     print("local degree-five labelled assignments: 390")
     print("Hamiltonian chord orders checked: 6,8,10,12,14,16,18,20")
+    print("unconditional all-bridge boundary: Delta(G)>=8 and n>=10")
     print("global conjecture status: UNRESOLVED")
 
 

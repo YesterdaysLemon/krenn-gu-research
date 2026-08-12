@@ -5,8 +5,10 @@
 This is an arbitrary-order exclusion theorem for every support of maximum
 degree at most five in the simultaneous three-colour balanced all-bridge
 normal form.  No such witness exists at any even order `n >= 6`.  This
-does not prove the full Krenn--Gu conjecture: supports containing a vertex
-of degree at least six and the deeper-blocker branches remain open.
+does not prove the full Krenn--Gu conjecture.  A later active-deck theorem
+strengthens the current all-bridge boundary to maximum full-support degree at
+least eight and order at least ten; the saturated-degree-five/
+saturated-degree-at-least-six and deeper-blocker branches remain open.
 
 The theorem strengthens
 `FOUR_REGULAR_BALANCED_BRIDGE_OBSTRUCTION.md`: it excludes not only the
@@ -386,15 +388,17 @@ records retain
 "global_conjecture_resolved": false
 ```
 
-because supports containing a vertex of degree at least six and the
-deeper-blocker branch remain unresolved.
+because this theorem alone does not close larger supports or the deeper-
+blocker branch.  The later live boundary is maximum full-support degree at
+least eight, not the historical degree-six threshold below.
 
 ## New boundary
 
-The simultaneous balanced all-bridge branch now has no support of maximum
-degree at most five at any even order.  A remaining witness must therefore
-contain a support vertex of degree at least six.  The double-star analysis
-also retains its separate deeper-blocker branch.  The exact bit balance
-of three chosen monochromatic matchings at the next diagonal-degree
-boundary is in
-`THREE_COLOUR_DIAGONAL_MATCHING_BALANCE_THEOREM.md`.
+This theorem proves that the simultaneous balanced all-bridge branch has no
+support of maximum degree at most five at any even order.  The later
+[`ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FIVE_BRANCHING_OR_CANCELLATION_CORE_REDUCTION_THEOREM.md`](ALL_BRIDGE_ACTIVE_DECK_MAXIMUM_DEGREE_FIVE_BRANCHING_OR_CANCELLATION_CORE_REDUCTION_THEOREM.md)
+combines the same three unconditional off-diagonal killers with the saturated
+`Delta(D)>=5` exclusion to force full-support `Delta(G)>=8` and `n>=10`.
+That later conclusion subsumes this exclusion boundary but not the diagonal-
+backbone structure proved here.  Saturated `Delta(D)=5`, `Delta(D)>=6`, and
+the separate deeper-blocker branch remain open as exclusions.
