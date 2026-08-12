@@ -900,6 +900,58 @@
       "legacy_paths": []
     },
     {
+      "name": "Balanced m=3 Full-Sensor Separated-Singleton Pole Localization Theorem",
+      "document": "claims/arbitrary-order/BALANCED_M3_FULL_SENSOR_SEPARATED_SINGLETON_POLE_LOCALIZATION_THEOREM.md",
+      "document_sha256_16": "0455d27f26d83317",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero divisor localization for the normalized m=3 three-pair layer on a product of three ternary projective spaces",
+        "the three singleton columns depend linearly on separate projective factors and have function-field column rank three after the empty deck coefficient is fixed to one",
+        "every possible pair pole forces a rank-one singleton image, a pair-image sum of dimension two, or total singleton-image span dimension three",
+        "outside those three low-span strata every rational pair component extends to a global bilinear section; for a physical target-consistent common shore the accepted six-vertex theorem then excludes the regular stratum",
+        "the three exceptional strata are not excluded, the sharp pole controls are abstract separated-column systems rather than physical GHZ incidences, and no m at least four, higher Wick recurrence, all-rank-drop branch, witness, counterexample, or global resolution is claimed"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_full_sensor_separated_singleton_pole_localization.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_full_sensor_separated_singleton_pole_localization.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_FULL_SENSOR_SEPARATED_SINGLETON_POLE_LOCALIZATION_SELF_REVIEW_2026-08-12.md",
+      "expected_runtime": "seconds (SymPy maximal-minor and Cramer replay; standard-library sparse exterior-product and Fraction-rank audit)",
+      "external_binaries": [],
+      "note": "Minimal one-, two-, and three-column dependence supports classify every prime-divisor component of the separated m=3 singleton rank-drop locus. Any rational pair pole is therefore confined to three explicit low-span incidence strata. Outside them normality promotes all pairs to physical bilinear blocks, and the accepted n=6 exclusion makes the regular physical target-incidence stratum empty. The exceptional strata, every higher order, the all-balanced rank-drop branch, and the global conjecture remain open and UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Singleton-Span Torus-Annihilator Permanent-Rank Obstruction",
+      "document": "claims/arbitrary-order/BALANCED_M3_SINGLETON_SPAN_TORUS_ANNIHILATOR_PERMANENT_RANK_OBSTRUCTION.md",
+      "document_sha256_16": "bb53afdcffce127f",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero obstruction for a physical m=3 common-shore sensor satisfying the GHZ target equation and empty normalization",
+        "the total singleton span is the fixed root-tensor span of all nine singleton slices, and the empty companion is the six-cross-matching local image of the order-three permanent tensor P3",
+        "no decomposable root functional that annihilates the singleton span may be nonzero on all nine target colour coordinates, by flattening rank and tensor ranks four versus three",
+        "when the singleton span has dimension at most six its product-annihilator section has projective dimension at least six minus that dimension and is forced into the coordinate boundary; the common-three-space S2Q stratum therefore has a boundary-supported family of dimension at least three",
+        "coordinate-boundary annihilators, the three exceptional S2Q pole strata, every m at least four, the all-balanced rank-drop branch, witness exclusion, counterexample, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_singleton_span_torus_annihilator_permanent_rank_obstruction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_singleton_span_torus_annihilator_permanent_rank_obstruction.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_SINGLETON_SPAN_TORUS_ANNIHILATOR_PERMANENT_RANK_SELF_REVIEW_2026-08-12.md",
+      "expected_runtime": "seconds (SymPy P3 contraction and tensor-rank replay; standard-library sparse tensor and Fraction-rank audit)",
+      "external_binaries": [],
+      "note": "Modulo the total singleton span, a normalized physical m=3 target incidence identifies the empty cross-permanent companion with GHZ. A fully supported product annihilator would therefore identify an invertible local image of rank-four P3 with a rank-three diagonal tensor, which is impossible. In the common-three-space pole stratum the resulting positive-dimensional product-annihilator section is forced onto target coordinate boundaries. Those boundaries, all higher orders, the all-rank-drop branch, and the global conjecture remain open and UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Balanced All-Rank-Drop Diagonal-Complete Sharpness Theorem",
       "document": "claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md",
       "document_sha256_16": "c4fc0352fe104228",

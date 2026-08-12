@@ -255,6 +255,31 @@ load-bearing.  Since the eight controls are not an exhaustive parametrization
 of every realized pair-gate failure, their exclusion does not prove the
 universal full-sensor gate.
 
+The
+[`m=3` separated-singleton pole localization theorem](BALANCED_M3_FULL_SENSOR_SEPARATED_SINGLETON_POLE_LOCALIZATION_THEOREM.md)
+now treats arbitrary normalized target-consistent `m=3` incidences rather
+than the eight controls.  Once the empty coefficient is fixed to one, the
+three pair-facing singleton columns depend on three separate projective
+factors.  A complete minimal-support incidence calculation proves that a
+divisorial Cramer pole can occur only if one singleton image has dimension
+one, a pair spans dimension two, or all three span dimension three.  Outside
+that low-span union every rational pair component is a global bilinear edge;
+the certified six-vertex exclusion then makes the regular physical incidence
+stratum empty.  The three exceptional incidence strata remain unexcluded,
+and the result neither extends to higher balanced order nor closes `S2`.
+
+The
+[`m=3` singleton-span torus-annihilator obstruction](BALANCED_M3_SINGLETON_SPAN_TORUS_ANNIHILATOR_PERMANENT_RANK_OBSTRUCTION.md)
+adds a physical constraint on those surviving incidence spaces.  Contracting
+the root side by a fully supported decomposable functional that annihilates
+all singleton slices would kill every pair term.  The empty companion would
+then be a local image of `P_3`, while GHZ would be a concise three-term
+diagonal.  Flattening forces all local maps invertible, contradicting tensor
+ranks four and three.  Hence every product annihilator of the singleton span
+lies on a target-coordinate boundary.  In the common-three-space S2Q stratum
+the annihilator section has dimension at least three, so the next obligation
+is an exact boundary classification rather than an arbitrary pole search.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
