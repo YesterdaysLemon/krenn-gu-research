@@ -10,7 +10,7 @@ at exact core commit
 4ef53ef69c746698d7d191f10c80a753ec170b9e
 ```
 
-with the following raw-file SHA-256 pins:
+with the following committed LF-normalized Git-byte SHA-256 pins:
 
 ```text
 theorem:
