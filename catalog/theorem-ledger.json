@@ -517,6 +517,31 @@
       "legacy_paths": []
     },
     {
+      "name": "Balanced Full-Sensor Cramer Pair-Jet Replacement-Minor Theorem",
+      "document": "claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_PAIR_JET_REPLACEMENT_MINOR_THEOREM.md",
+      "document_sha256_16": "08200fccca450a04",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact differentiation, adjugate, quotient-clearing, and column-span proof over an integral differential domain with commuting derivations",
+        "one nonzero selected Cramer minor; the application inherits characteristic zero and affine-cone coordinates from the pair differential-flatness theorem",
+        "the full-row span equivalence additionally requires every target residual to vanish and the complete sensor to have full column rank over the function field",
+        "the replacement-minor identities reformulate the finite pair gate but do not force any balanced target incidence to pass or fail it",
+        "the abstract diagonal Cramer controls are not balanced complete-deck sensors with the GHZ target; normalization, higher recurrences, the all-rank-drop branch, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_full_sensor_cramer_pair_jet_replacement_minor.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_full_sensor_cramer_pair_jet_replacement_minor.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "expected_runtime": "seconds (SymPy primary; standard-library sparse-polynomial determinant audit)",
+      "external_binaries": [],
+      "note": "The written proof expresses every selected-system cleared first or second jet as an adjugate image and each deck coordinate as one column-replacement determinant. Exact full-row residual-covariance formulas retain the target-residual correction terms; after target consistency, one pair jet vanishes exactly when the differentiated target residual lies in the span of all other sensor columns. No universal span failure or target incidence is proved, and the global conjecture remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Balanced All-Rank-Drop Diagonal-Complete Sharpness Theorem",
       "document": "claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md",
       "document_sha256_16": "c4fc0352fe104228",

@@ -47,6 +47,7 @@ flowchart TD
   S1["Balanced complete-deck sensor<br/>PROVED reduction"]
   S2E["Cramer--Euler pair-pole gate<br/>PROVED exact refinement"]
   S2J["Finite pair differential-flatness gate<br/>PROVED exact refinement"]
+  S2K["Target-column replacement-minor gate<br/>PROVED exact refinement"]
   S2["Force a refined full-sensor gate failure<br/>OPEN"]
   S3["All balanced partitions rank-drop<br/>OPEN on witness locus"]
   S3D["Diagonal-complete all-rank-drop family<br/>PROVED sharpness, NOT a witness"]
@@ -100,7 +101,8 @@ flowchart TD
   G0 -->|universal reduction| S1
   S1 -->|exact gate refinement| S2E
   S2E -->|finite-jet refinement| S2J
-  S2J -->|boundary| S2
+  S2J -->|target-column refinement| S2K
+  S2K -->|boundary| S2
   S1 -->|boundary| S3
   S3 -. pure/local data insufficient .-> S3D
   S3 -->|common-quadratic stratum| S3Q
@@ -175,7 +177,8 @@ flowchart TD
 | `S1` | Balanced complete even deck and full-sensor/rank-drop dichotomy: **proved reduction** | [Balanced half-sensor theorem](../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md) |
 | `S2E` | On a full sensor, target residuals plus empty normalization, prime-divisor regularity of only the pair components, and one symmetric Euler--hafnian recurrence per higher even subset are **necessary and sufficient** for same-graph globalization | [Cramer--Euler pair-pole gate](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md) |
 | `S2J` | For each Cramer pair component, prime-divisor regularity is equivalent to finitely many nonendpoint first stresses and endpoint Hessian stresses; in ternary dimension there are `3m+6` polynomial identities per pair, and the physical block is reconstructed uniquely: **proved exact refinement** | [Pair-pole differential flatness](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_PAIR_POLE_DIFFERENTIAL_FLATNESS_THEOREM.md) |
-| `S2` | Prove every full-sensor target incidence fails normalization, a pair differential-flatness identity, or an Euler--hafnian recurrence: **open** | [Finite pair-pole gate, exact frontier](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_PAIR_POLE_DIFFERENTIAL_FLATNESS_THEOREM.md#6-proof-topology-consequence-and-exact-frontier) |
+| `S2K` | Every cleared pair first or second jet is one selected-column replacement determinant.  After target consistency, its vanishing is equivalent to a differentiated target residual lying in the span of all sensor columns except that pair column: **proved exact refinement** | [Pair-jet replacement minors](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_PAIR_JET_REPLACEMENT_MINOR_THEOREM.md) |
+| `S2` | Prove every full-sensor target incidence fails normalization, a pair target-column-span identity, or an Euler--hafnian recurrence: **open** | [Target-column gate, exact frontier](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_PAIR_JET_REPLACEMENT_MINOR_THEOREM.md#6-proof-topology-consequence-and-residual-obligation) |
 | `S3` | Exclusion of all-balanced rank drop inside the hypothetical-witness locus: **open**; properness is proved only in ambient block-graph space | [Balanced half-sensor theorem](../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md#3-the-proper-closed-all-balanced-boundary) |
 | `S3D` | For every `n=2m>=8`, one diagonal-complete graph with invertible blocks, complete support, local concision, and normalized pure coefficients lies in **every** balanced rank-drop locus; its mixed coefficients are nonzero, so it is **not a witness** | [Diagonal-complete sharpness theorem](../claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md) |
 | `S3Q` | The full vertex-gauge common-quadratic orbit lies in `B_all` for `n>=8` but is **disjoint from the witness equations** for `n>=6`: nondegenerate members have two-flattening rank six versus GHZ rank three, while degenerate members fail local rank | [Common-quadratic orbit exclusion](../claims/arbitrary-order/BALANCED_COMMON_QUADRATIC_ORBIT_RANK_DROP_AND_FLATTENING_EXCLUSION_THEOREM.md) |
@@ -236,7 +239,8 @@ flowchart TD
 | `G0` | reduction | `S1` | Every hypothetical ternary witness has a balanced-sensor dichotomy. |
 | `S1` | exact refinement | `S2E` | The unique rational full-sensor lift has an exact Cramer target, normalization, pair-pole, and Euler--hafnian gate. |
 | `S2E` | exact finite-jet refinement | `S2J` | Prime-divisor regularity of each Cramer pair is equivalent to explicit nonendpoint first stresses and endpoint Hessian stresses; no factorization of the Cramer minor is needed. |
-| `S2J` | boundary obligation | `S2` | The finite gate is not proved to fail on every target incidence. |
+| `S2J` | exact target-column refinement | `S2K` | Every cleared pair jet is an adjugate image and one selected-column replacement determinant; under target consistency, its vanishing is the corresponding full-sensor column-span condition. |
+| `S2K` | boundary obligation | `S2` | The target-facing finite gate is not proved to fail on every balanced target incidence. |
 | `S1` | boundary obligation | `S3` | The all-balanced rank-drop branch is not excluded on the witness locus. |
 | `S3` | refutation of argument | `S3D` | Local concision, complete support, invertible blocks, and the pure target coefficients do not force any balanced sensor to have full rank; mixed-word zeros are essential. |
 | `S3` | exact stratum exclusion | `S3Q` | Simultaneously vertex-gauge-equivalent common symmetric edge forms are all-rank-drop from `n=8` onward, but flattening rank excludes their entire local-GL orbit from the ternary witness locus; no synchronization theorem for arbitrary `B_all` is inferred. |
@@ -312,11 +316,11 @@ branch. They are not an instruction to begin all of them at once.
 
 1. **Balanced full-sensor gate failure.** Starting from the exact Cramer
    target residuals, prove that every target-consistent full sensor violates
-   empty normalization, one explicit nonendpoint first stress, one endpoint
-   Hessian stress, or one higher Euler--hafnian recurrence.  The finite jet
-   family is exactly equivalent to pair-pole regularity, but no stress is yet
-   forced to be nonzero.  This obligation does not address the all-balanced
-   rank-drop branch.
+   empty normalization, one explicit nonendpoint or endpoint target-column-
+   span condition, or one higher Euler--hafnian recurrence.  Every pair jet is
+   now one selected-column replacement determinant, but no such determinant
+   is yet forced to be nonzero on a balanced target incidence.  This
+   obligation does not address the all-balanced rank-drop branch.
 
 2. **All-balanced mixed-word exclusion.** Intersect the balanced maximal-minor
    ideals with the full mixed GHZ zero equations and prove emptiness, or derive
@@ -483,6 +487,7 @@ responses; it does not collapse them into the globally rigid `k=4` cell.
 | One fixed P7 survivor or incidence result globalizes automatically | False as an inference: one still needs physical edge descent, all Wick equations, and universal extraction | [Balanced sensor Wick gate](../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md) |
 | Determinant-cleared Wick identities automatically remove Cramer poles | False: a normalized four-label rational hafnian deck can satisfy the cleared Euler recurrence while one pair has valuation `-1` | [Cramer--Euler pair-pole boundary](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md#5-sharp-boundary-cleared-wick-does-not-remove-poles) |
 | Either endpoint Hessian flatness alone or nonendpoint transverse flatness alone removes every ambient multihomogeneous pair pole | False in both directions at the rational-section level: an outside degree-zero ratio passes both endpoint Hessians but has a transverse pole, while an endpoint degree-one ratio has no outside dependence but fails an endpoint Hessian. Neither control is realized as a balanced target incidence, so no independent sharpness claim inside the Cramer image follows. | [Pair-pole differential-flatness ambient sharpness](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_PAIR_POLE_DIFFERENTIAL_FLATNESS_THEOREM.md#5-ambient-sharpness-both-jet-layers-are-needed-from-degrees-alone) |
+| The tautological selected Cramer equation `Af=j` forces a pair replacement minor either to vanish or to be nonzero | False for abstract Cramer systems: diagonal `2 x 2` systems realize both the transverse-pole and endpoint-pole outcomes exactly.  They are not balanced complete-deck sensors with the GHZ target, so no sharpness inside the actual target-incidence image follows. | [Pair-jet replacement-minor boundary](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_PAIR_JET_REPLACEMENT_MINOR_THEOREM.md#5-sharp-boundary-cramer-consistency-alone-selects-no-outcome) |
 | Local concision, complete support, invertible blocks, and normalized pure coefficients force some balanced sensor to be full | False for every `n>=8`: the diagonal-complete family has all these properties and rank at most `binomial(m,2)+1` on every cut; it fails explicit mixed-word zero equations | [Diagonal-complete all-rank-drop boundary](../claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md) |
 | Independent local basis changes can rescue the common-quadratic all-rank-drop mechanism as a witness | False: the synchronized orbit has two-vertex flattening rank six when nondegenerate, invariant under every local isomorphism, while ternary GHZ has rank three; degenerate forms already fail local rank | [Common-quadratic orbit exclusion](../claims/arbitrary-order/BALANCED_COMMON_QUADRATIC_ORBIT_RANK_DROP_AND_FLATTENING_EXCLUSION_THEOREM.md) |
 | Arbitrary internal nonroot blocks can repair a common-conformal balanced shore | False: modulo the common root quadric every non-all-cross sector vanishes; nonzero scalar permanent leaves a forbidden mixed product, while zero permanent contradicts the nonzero pure-root product from a constant word | [Common-quadric mixed/pure residue theorem](../claims/arbitrary-order/BALANCED_COMMON_QUADRIC_MIXED_PERMANENT_DIVISIBILITY_AND_CONFORMAL_SHORE_EXCLUSION_THEOREM.md) |

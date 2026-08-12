@@ -71,6 +71,16 @@ multihomogeneous controls show that neither jet layer follows from degrees and
 the other layer alone; they are not balanced target incidences, and no target
 incidence is proved to fail a jet.
 
+The
+[`Cramer pair-jet replacement-minor theorem`](BALANCED_FULL_SENSOR_CRAMER_PAIR_JET_REPLACEMENT_MINOR_THEOREM.md)
+puts that finite gate directly into the raw sensor and target data.  Every
+cleared first or second pair jet is one selected-column replacement
+determinant.  After all target residuals vanish, the same jet is zero exactly
+when a named differentiated target residual lies in the span of every sensor
+column except the pair column.  The exact residual-covariance formulas retain
+the correction terms before target consistency; no balanced target is proved
+to pass or fail a span test.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
