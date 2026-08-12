@@ -952,6 +952,61 @@
       "legacy_paths": []
     },
     {
+      "name": "Balanced m=3 Boundary-Annihilator Common-Quotient P3 Orbit Theorem",
+      "document": "claims/arbitrary-order/BALANCED_M3_BOUNDARY_ANNIHILATOR_COMMON_QUOTIENT_P3_ORBIT_THEOREM.md",
+      "document_sha256_16": "d7799b0ae1a2f25a",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero refinement for a decomposable root functional annihilating all singleton slices of one physical m=3 common shore",
+        "the three root-root contractions form one vector beta lying in the kernel of all three contracted root-nonroot maps",
+        "for nonzero beta the contracted empty companion factors through the same binary quotient of P3 in all three modes",
+        "the common quotient is zero, binary W of tensor rank three, or binary GHZ of tensor rank two according as beta has coordinate support one, two, or three",
+        "a two-colour target contraction with nonzero beta forces full-support beta and three rank-two cross maps; one-colour and zero-colour contractions force the stated lower-rank or coordinate-line degeneracies",
+        "on that two-colour branch each surviving-colour root-by-nonroot contracted cross matrix is fully supported of rank one and the missing-colour matrix is zero",
+        "the surviving binary-GHZ quotient is not excluded; beta zero, rank-one cross maps, physical full-sensor compatibility, all three S2Q pole strata, every m at least four, the all-rank-drop branch, witness exclusion, counterexample, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_boundary_annihilator_common_quotient_p3_orbit.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_boundary_annihilator_common_quotient_p3_orbit.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_BOUNDARY_ANNIHILATOR_COMMON_QUOTIENT_P3_ORBIT_SELF_REVIEW_2026-08-12.md",
+      "expected_runtime": "seconds (SymPy singleton contraction, quotient tensor, flattening, and hyperdeterminant replay; standard-library Fraction and sparse-permutation audit)",
+      "external_binaries": [],
+      "note": "Every singleton-span product annihilator yields a common kernel vector beta for the three contracted cross maps. When beta is nonzero, the physical empty P3 contraction descends through one common binary quotient. The quotient orbit is classified exactly by support(beta), reducing the concise two-colour branch to a full-support binary-GHZ quotient with two fully supported rank-one surviving-colour cross matrices and a zero missing-colour matrix, while exposing beta-zero and lower-rank branches separately. This is a sharp boundary refinement, not a physical exclusion; S2, all higher orders, all-rank-drop, and global Krenn-Gu remain open and UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Annihilator-Component Trichotomy Theorem",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_ANNIHILATOR_COMPONENT_TRICHOTOMY_THEOREM.md",
+      "document_sha256_16": "df402376ad395fb1",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero component reduction for a normalized target-consistent physical m=3 common shore whose total singleton span has dimension three",
+        "every irreducible product-annihilator component has projective dimension at least three and is contained in the coordinate boundary by the prior torus-annihilator theorem",
+        "every component is multi-coordinate-boundary, has the root-root contraction vector beta identically zero, or generically loses exactly one target colour with beta nonzero",
+        "in the one-boundary nonzero-beta case the three missing-colour cross-column spans have total dimension at most three, improving to two when the boundary coordinate is not already in the corresponding root span",
+        "the two surviving-colour contracted cross matrices on that branch are fully supported and rank one by the prior common-quotient theorem",
+        "none of the three component types is excluded; rank-one and pair-plane S2Q strata, every m at least four, the all-rank-drop branch, witness exclusion, counterexample, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_annihilator_component_trichotomy.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_annihilator_component_trichotomy.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_ANNIHILATOR_COMPONENT_TRICHOTOMY_SELF_REVIEW_2026-08-12.md",
+      "expected_runtime": "seconds (SymPy subspace and dimension-budget replay; standard-library Fraction rank and coordinate-model audit)",
+      "external_binaries": [],
+      "note": "On the common-three-space S2Q pole stratum, every irreducible product-annihilator component has dimension at least three. Combining the coordinate-boundary theorem with the common binary quotient yields an exhaustive multi-boundary, beta-zero, or collapsed missing-colour cross-column trichotomy. In the one-boundary branch the missing-colour total rank is at most three, or two when the boundary equation is independent. The branches remain physically open; S2, higher orders, all-rank-drop, and global Krenn-Gu remain UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Balanced All-Rank-Drop Diagonal-Complete Sharpness Theorem",
       "document": "claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md",
       "document_sha256_16": "c4fc0352fe104228",
@@ -3958,6 +4013,35 @@
       "legacy_paths": [
         "SYMBOLIC_TRANSLATION_LITERATURE_FRONTIER_2026-08-02.md"
       ]
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Full-Joint-Cross-Rank Monomial-Root-Edge Localization",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_FULL_JOINT_CROSS_RANK_MONOMIAL_ROOT_EDGE_LOCALIZATION_THEOREM.md",
+      "document_sha256_16": "89f0a9bb89ae3242",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero localization for a normalized target-consistent physical m=3 common shore whose total singleton span has dimension three",
+        "the joint nine-by-nine root-nonroot colour-column map is invertible; this hypothesis is stronger than physical full-sensor rank",
+        "invertibility identifies the singleton span with the shared-derivative image, so dimension three forces exactly one nonzero root-root block",
+        "the prior torus-annihilator obstruction forces that block to have one coordinate-monomial entry",
+        "an off-diagonal monomial explicitly globalizes all three pair blocks as two-by-two permanents and is excluded by the accepted six-vertex theorem",
+        "only a diagonal monomial root edge remains at full joint rank, with the empty block permanent equal to GHZ modulo its three-word root line",
+        "if the joint cross map itself is monomial and invertible, its block-permanent rank is at least six, so it cannot lie in the five-dimensional diagonal GHZ-plus-line support",
+        "that sparse block-permanent equation, joint cross rank at most eight, the other S2Q strata, every m at least four, all-rank-drop, witness exclusion, counterexample, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_full_joint_cross_rank_monomial_root_edge_localization.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_full_joint_cross_rank_monomial_root_edge_localization.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_FULL_JOINT_CROSS_RANK_MONOMIAL_ROOT_EDGE_LOCALIZATION_SELF_REVIEW_2026-08-12.md",
+      "expected_runtime": "seconds (SymPy shared-derivative and matching-grouping replay; standard-library Fraction rank and sparse-permutation audit)",
+      "external_binaries": [],
+      "note": "At full joint cross rank the common-three-space singleton incidence is exactly the image of the shared derivative. Pairwise shared-factor intersections force one root block, torus blocking forces a coordinate monomial, and explicit global pair formulas plus the six-vertex theorem force that monomial to be diagonal. An integer count-matrix argument excludes every invertible monomial joint cross map by rank six versus target dimension five. General nonmonomial cancellation in the diagonal sparse block-permanent equation and every lower-joint-rank or higher-order branch remain open; global Krenn-Gu is UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     },
     {
       "name": "Non-proof-active boundary-candidate collection checkpoint; representative frozen certificate refuted",

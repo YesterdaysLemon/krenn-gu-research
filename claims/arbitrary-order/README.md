@@ -280,6 +280,49 @@ lies on a target-coordinate boundary.  In the common-three-space S2Q stratum
 the annihilator section has dimension at least three, so the next obligation
 is an exact boundary classification rather than an arbitrary pole search.
 
+The
+[`m=3` boundary-annihilator common-quotient theorem](BALANCED_M3_BOUNDARY_ANNIHILATOR_COMMON_QUOTIENT_P3_ORBIT_THEOREM.md)
+extracts the first exact structure on that boundary.  The three contractions
+of the fixed root--root blocks form one vector `beta`, and every contracted
+root--nonroot map kills that same vector.  For nonzero `beta`, the empty
+companion is therefore a three-mode image of one common binary quotient of
+`P_3`.  Its orbit is zero, binary W of rank three, or binary GHZ of rank two
+according as `beta` has coordinate support one, two, or three.  Thus a
+two-colour target boundary can survive only with full-support `beta` and
+three rank-two cross maps.  For each surviving colour, its root-by-nonroot
+contracted cross matrix is moreover fully supported and rank one, while the
+missing-colour matrix is zero.  That sharp binary-GHZ quotient is not itself
+a contradiction: the remaining task is to couple this column-separable
+contraction to the missing target coordinate and the full physical singleton
+equations.  The `beta=0` and rank-one cross-map degenerations remain separate
+open branches.
+
+On the common-three-space pole stratum, the
+[`annihilator-component trichotomy`](BALANCED_M3_COMMON_THREE_SPACE_ANNIHILATOR_COMPONENT_TRICHOTOMY_THEOREM.md)
+combines this orbit calculation with projective dimension.  Every irreducible
+product-annihilator component has dimension at least three, and is either
+contained in multiple target-coordinate boundaries, has `beta=0`
+identically, or generically loses one target colour whose three cross-column
+spans have total dimension at most three.  The last bound improves to two
+unless the selected target coordinate already lies in its root cross-column
+span.  This is an exhaustive component reduction of the common-three-space
+case, not an exclusion; the three resulting physical branches remain open.
+
+The
+[`full-joint-cross-rank monomial-root-edge localization`](BALANCED_M3_COMMON_THREE_SPACE_FULL_JOINT_CROSS_RANK_MONOMIAL_ROOT_EDGE_LOCALIZATION_THEOREM.md)
+then closes most of the rigid part of that common-three-space branch.  If the
+nine joint cross colour columns are independent, the singleton span is the
+whole image of the shared derivative.  Dimension three forces exactly one
+root--root block to survive, and the torus-annihilator theorem forces that
+block to be a coordinate monomial.  An off-diagonal monomial explicitly
+globalizes the three pair edges as `2 x 2` permanents and is excluded by the
+six-vertex theorem.  Thus full joint cross rank can survive only with one
+diagonal monomial root edge and the empty block permanent equal to GHZ modulo
+its three-word root line.  An invertible monomial joint cross map is excluded
+because its block-permanent rank is at least six, whereas this target support
+has dimension at most five.  General nonmonomial cancellation in that sparse
+block-permanent equation and the joint-rank-at-most-eight branch remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
