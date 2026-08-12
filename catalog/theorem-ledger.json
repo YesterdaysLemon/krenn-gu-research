@@ -583,6 +583,34 @@
       "legacy_paths": []
     },
     {
+      "name": "Matrix-Unit All-Bridge Beta-Three Route-Port Fixed-Completion Mixed-Fibre Rank-Three Block",
+      "document": "claims/arbitrary-order/MATRIX_UNIT_ALL_BRIDGE_BETA_THREE_ROUTE_PORT_FIXED_COMPLETION_MIXED_FIBRE_RANK_THREE_BLOCK_THEOREM.md",
+      "document_sha256_16": "54886b8591c6503c",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero composition in the simultaneous balanced all-bridge branch",
+        "the globally least bipartite pure core has cyclomatic rank beta=3, four perfect matchings, and the A5 Q/Q or Q/C^2 route-port form",
+        "one fixed nonzero U7K-compatible matching completion exists and extends all four core matchings into the same complete mixed word fibre",
+        "the complete mixed target coefficient is zero and every supported full matching monomial is nonzero",
+        "the U7J split-extra reading additionally requires the four-term block to avoid the selected incoming and outgoing terms",
+        "the primary and independent audit replay exact finite mechanisms; the written proof carries the conditional arbitrary-route statement",
+        "completion existence, a nonempty complementary fibre, a unit or odd dependency, sparse-kernel exclusion, and global resolution are not claimed"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_matrix_unit_all_bridge_beta_three_route_port_fixed_completion_mixed_fibre_rank_three_block.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_matrix_unit_all_bridge_beta_three_route_port_fixed_completion_mixed_fibre_rank_three_block.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/MATRIX_UNIT_ALL_BRIDGE_BETA_THREE_ROUTE_PORT_FIXED_COMPLETION_MIXED_FIBRE_RANK_THREE_BLOCK_REVIEW_2026-08-12.md",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "Under the explicit existence of one fixed nonzero compatible completion, the four beta-three Q/Q or Q/C^2 core matching terms inject into one complete mixed zero-target fibre with their affine rank-three exponent differences preserved and with zero block sum. Subtracting this block from the complete target coefficient makes the disjoint remainder sum zero, so it is empty or has at least two terms: the full fibre has size four or at least six, never five, and its difference lattice has rank at least three. The A5 Q/C^2 complementary doubleton sums remain nonzero exact negatives inside the injected block. After normalizing by one term, the formal group-algebra block is the proper nonunit 1+X+Y+Z; its physical evaluation vanishes, but its four full exponents have no nontrivial integer affine dependency, equivalently the three exponent differences have no nonzero integer dependency. The primary and independent no-import audit replay the finite rank, port, completion, remainder, and nonunit mechanisms. No compatible completion is forced, the remainder may be empty, and no unit, odd dependency, sparse-core exclusion, witness exclusion, or global resolution follows; Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Balanced Half-Sensor Complete Deck and Wick Globalization Theorem",
       "document": "claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md",
       "document_sha256_16": "7b7712781c5ece31",
