@@ -526,6 +526,34 @@
       "legacy_paths": []
     },
     {
+      "name": "All-Bridge Bipartite Least-Core Beta-Three Route-Port Pairing",
+      "document": "claims/arbitrary-order/ALL_BRIDGE_BIPARTITE_LEAST_CORE_BETA_THREE_ROUTE_PORT_PAIRING_THEOREM.md",
+      "document_sha256_16": "399aa81ee9ebee3f",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact matching-port proof over characteristic zero",
+        "simultaneous balanced all-bridge branch with a globally least connected bipartite matching-covered pure core",
+        "cyclomatic rank beta=3 and an extremal sparse quartic site",
+        "the exhaustive Q/Q versus Q/C^2 route kernel and N=4 are imported from A4",
+        "the nonzero port partition and edge-inclusive cofactor identity are imported from U7I",
+        "the written alternating recurrence carries arbitrary route lengths; the scripts are exact finite QA",
+        "bare deletion hafnian identities, algebraic independence, mixed-fibre attachment, kernel exclusion, and global resolution are not claimed"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_all_bridge_bipartite_least_core_beta_three_route_port_pairing.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_all_bridge_bipartite_least_core_beta_three_route_port_pairing.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/ALL_BRIDGE_BIPARTITE_LEAST_CORE_BETA_THREE_ROUTE_PORT_PAIRING_REVIEW_2026-08-12.md",
+      "expected_runtime": "seconds (standard library)",
+      "external_binaries": [],
+      "note": "This exact A4 + U7I interface corollary turns route parity into endpoint port-set identities and edge-inclusive weighted cofactor identities. In Q/Q, each odd route pairs the same singleton and the same nonzero full matching contribution. In Q/C^2, four odd routes pair four singleton ports and the unique even route has complementary doubleton ports whose nonzero sums are exact negatives. The primary and independent no-import audit replay physical subdivisions and exact least-zero controls; the written recurrence carries the arbitrary route-length quantifier. The hostile review is docs/audits/ALL_BRIDGE_BIPARTITE_LEAST_CORE_BETA_THREE_ROUTE_PORT_PAIRING_REVIEW_2026-08-12.md. No bare deletion equality, mixed-target attachment, independence, all-bridge witness, or exclusion is proved; global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Balanced Half-Sensor Complete Deck and Wick Globalization Theorem",
       "document": "claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md",
       "document_sha256_16": "7b7712781c5ece31",
