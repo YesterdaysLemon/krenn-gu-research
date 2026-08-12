@@ -107,6 +107,25 @@ integral binomial-lattice containment; it forces neither and does not exclude
 the aligned `Q/C^2`, balanced `Q/Q`, or general all-bridge branches.
 
 The
+[`beta-three sparse-port primitive-lattice and binomial comparison-graph theorem`](MATRIX_UNIT_ALL_BRIDGE_BETA_THREE_SPARSE_PORT_PRIMITIVE_LATTICE_AND_BINOMIAL_COMPARISON_GRAPH_THEOREM.md)
+is a conditional `A5 + A6 + A7` refinement.  The three nonreference sparse
+port edges give an integral coordinate retraction, so the free rank-three
+`A6` lattice is a primitive direct summand of the full physical edge lattice.
+Consequently, if the complete mixed fibre has difference rank exactly three,
+its difference lattice equals the `A6` lattice.  Under the `A7` integral
+containment, every surviving such fibre has even cardinality; in particular,
+odd exact-rank-three contained fibres are excluded, while a six-term fibre
+would have an opposite-sign two-term complement.  Any additional physical
+comparison already known to land in the `A6` lattice is exactly one sparse
+port-pair direction.  Its comparison graph survives precisely when all edges
+cross the relevant balanced sign cut: a within-doubleton edge closes the
+aligned `Q/C^2` survivor, while a predetermined uniform `Q/Q` closure needs a
+triangle or `K_(1,3)` and `P_4` is sharp.  The theorem forces neither exact
+rank three, integral containment, nor any comparison carrier; the three
+balanced `Q/Q` cuts are alternatives across possible binomial cores, not
+simultaneous torsion sheets.
+
+The
 [`least-core complementary-shore response and portal dichotomy`](MATRIX_UNIT_LEAST_CORE_COMPLEMENTARY_SHORE_RESPONSE_AND_PORTAL_DICHOTOMY_THEOREM.md)
 is a parallel `A3 + U7I` response interface.  Every allowed edge `f` of the
 globally least all-bridge pure core forces a zero in each opposite colour on
