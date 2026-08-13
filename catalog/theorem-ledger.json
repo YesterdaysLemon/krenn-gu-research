@@ -4312,6 +4312,33 @@
       "legacy_paths": []
     },
     {
+      "name": "Balanced m=3 Common-Three-Space Complete Joint-Rank-Six Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_COMPLETE_JOINT_RANK_SIX_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "a1e73e9236c57f0f",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion for a normalized target-consistent physical m=3 common shore whose total singleton span has dimension three and whose joint root-nonroot cross-colour map has rank six",
+        "after the prior single-root and shared-factor exclusions, exactly B23 and B13 are nonzero with disjoint derivative summands; after the prior aligned-rank-two exclusion, their relation three-plane is contained in one coordinate hyperplane",
+        "duality and the target-kernel argument force an involved row of rank two with coordinate kernel and diagonal block row; the other involved row has rank three or two",
+        "the rank-(3,2) graph profile is excluded when kernel and missing-row colours agree by the two-square obstruction and otherwise by an exact binary five-product support classification after deleting the correction colour",
+        "the rank-(2,2) profile forces one diagonal coordinate-monomial root block; the remaining square derivative has mixed zero-divisor dimension at most one, while every other rank-one mixed image shares a target factor",
+        "every common-three-space point therefore has joint cross rank at most five; that lower-rank branch, every other physical branch, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_complete_joint_rank_six_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_complete_joint_rank_six_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_COMPLETE_JOINT_RANK_SIX_EXCLUSION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds (SymPy coordinate-graph, binary five-product, and square-pencil replay; independent standard-library Fraction audit)",
+      "external_binaries": [],
+      "note": "The last coordinate-relation transverse case splits into row ranks (3,2) and (2,2). The former falls to exact graph symmetry and a binary five-product obstruction; the latter falls to a forced diagonal monomial and a sharp square-pencil factor-sharing/zero-divisor lemma. Thus joint rank six is completely excluded on the common-three-space stratum. Global Krenn-Gu is UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Non-proof-active boundary-candidate collection checkpoint; representative frozen certificate refuted",
       "document": "claims/p5/h22/component19-p0-ordinary-boundary/P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md",
       "document_sha256_16": "15e7fd63116a421f",
