@@ -23,12 +23,14 @@ also carry a nonzero rank-one square of the third vector while remaining
 disjoint from the triple and preserving its alternating separated tensor.
 The latter tensor is exactly the generic singleton determinant.
 
-This theorem does **not** exclude the support-one kernel, a support-two point
-with a `(3,3)` or `(3,2)` involved-row profile, the `(2,2)` profile with one
-coordinate-monomial root block and one unrestricted nonmonomial root block,
-any three-root Hilbert--Burch boundary, joint rank at most four, another
-S2T/S2Q component, a higher order, or the all-rank-drop branch.  Global
-Krenn--Gu remains **UNRESOLVED**.
+This theorem itself does **not** exclude the support-one kernel, a support-two
+point with a `(3,3)` or `(3,2)` involved-row profile, the `(2,2)` profile with
+one coordinate-monomial root block and one unrestricted nonmonomial root
+block, any three-root Hilbert--Burch boundary, joint rank at most four,
+another S2T/S2Q component, a higher order, or the all-rank-drop branch.  The
+successor Type-I theorem now excludes the singly monomial/nonmonomial
+`(2,2)` profile without restricting the nonmonomial block to a tangent
+family.  Global Krenn--Gu remains **UNRESOLVED**.
 
 ## 1. The support-two `(2,2)` row profile
 
@@ -448,17 +450,18 @@ third-row kernel support two, involved rows (2,2),
 third-row kernel support one:                        OPEN;
 support two with involved profile (3,3) or (3,2):    OPEN;
 support two, involved profile (2,2),
-  one coordinate monomial / unrestricted nonmonomial: OPEN;
+  one coordinate monomial / unrestricted nonmonomial:
+    IMPOSSIBLE BY THE SUCCESSOR TYPE-I THEOREM;
+  Type-II-only boundary pencil, no monomial block:   OPEN;
 three-root Hilbert-Burch coordinate atlases:          OPEN;
 joint rank at most four / other physical branches:    OPEN;
 global Krenn-Gu conjecture:                           UNRESOLVED.       (45)
 ```
 
-The next exact transverse obligation is the singly monomial/nonmonomial
-`(2,2)` profile, with no tangent-family restriction proved for the
-nonmonomial block, or one of the higher involved-row profiles.  No
-finite-field probe, timeout, sample, or generic-point promotion is used in
-the theorem.
+The next exact transverse obligation after the successor Type-I exclusion is
+the Type-II-only boundary-pencil `(2,2)` profile with no coordinate-monomial
+block, or one of the higher involved-row profiles.  No finite-field probe,
+timeout, sample, or generic-point promotion is used in this theorem.
 
 ## Focused replay
 
@@ -484,3 +487,7 @@ replay their displayed identities and conventions.
 
 - [`BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_DERIVATIVE_TORUS_LOCALIZATION_THEOREM.md`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_DERIVATIVE_TORUS_LOCALIZATION_THEOREM.md)
 - [`BALANCED_M3_COMMON_THREE_SPACE_COMPLETE_JOINT_RANK_SIX_EXCLUSION_THEOREM.md`](BALANCED_M3_COMMON_THREE_SPACE_COMPLETE_JOINT_RANK_SIX_EXCLUSION_THEOREM.md)
+
+## Successor
+
+- [`BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_TWO_TYPE_I_MONOMIAL_COMPLETE_EXCLUSION_THEOREM.md`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_TWO_TYPE_I_MONOMIAL_COMPLETE_EXCLUSION_THEOREM.md)

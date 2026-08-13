@@ -487,10 +487,20 @@ one nonzero rank-one square.  An exact source-support atlas makes this
 incompatible with the alternating separated determinant of three independent
 singleton columns at joint rank five.  The same target table has an exact
 rank-five sharpness fixture whose first two singleton columns coincide, so
-full singleton independence is load-bearing.  The singly
-monomial/nonmonomial `(2,2)` case, with no tangent-family restriction yet
-proved for the nonmonomial block, the other involved-row profiles, support
-one, and the Hilbert--Burch boundaries remain open.
+full singleton independence is load-bearing.
+
+The successor
+[`support-two Type-I monomial complete exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_TWO_TYPE_I_MONOMIAL_COMPLETE_EXCLUSION_THEOREM.md)
+removes the singly monomial/nonmonomial remainder without imposing any
+tangent, separability, or rank condition on the other block.  The two exact
+kernel-colour planes either contradict two individual target coefficients or
+reduce every arbitrary-block correction to the fully transverse line `T_1`
+against a rank-one `T_2` square.  A strengthened two-plane atlas forces those
+corrections to zero and then kills the alternating singleton determinant.
+Thus the complete beta-zero Type-I atlas is impossible in the support-two
+`(2,2)` profile.  The Type-II-only boundary-pencil tangent atlas with no
+coordinate-monomial block, the other involved-row profiles, support one, and
+the Hilbert--Burch boundaries remain open.
 
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
