@@ -255,6 +255,173 @@ load-bearing.  Since the eight controls are not an exhaustive parametrization
 of every realized pair-gate failure, their exclusion does not prove the
 universal full-sensor gate.
 
+The
+[`m=3` separated-singleton pole localization theorem](BALANCED_M3_FULL_SENSOR_SEPARATED_SINGLETON_POLE_LOCALIZATION_THEOREM.md)
+now treats arbitrary normalized target-consistent `m=3` incidences rather
+than the eight controls.  Once the empty coefficient is fixed to one, the
+three pair-facing singleton columns depend on three separate projective
+factors.  A complete minimal-support incidence calculation proves that a
+divisorial Cramer pole can occur only if one singleton image has dimension
+one, a pair spans dimension two, or all three span dimension three.  Outside
+that low-span union every rational pair component is a global bilinear edge;
+the certified six-vertex exclusion then makes the regular physical incidence
+stratum empty.  The three exceptional incidence strata remain unexcluded,
+and the result neither extends to higher balanced order nor closes `S2`.
+
+The
+[`m=3` singleton-span torus-annihilator obstruction](BALANCED_M3_SINGLETON_SPAN_TORUS_ANNIHILATOR_PERMANENT_RANK_OBSTRUCTION.md)
+adds a physical constraint on those surviving incidence spaces.  Contracting
+the root side by a fully supported decomposable functional that annihilates
+all singleton slices would kill every pair term.  The empty companion would
+then be a local image of `P_3`, while GHZ would be a concise three-term
+diagonal.  Flattening forces all local maps invertible, contradicting tensor
+ranks four and three.  Hence every product annihilator of the singleton span
+lies on a target-coordinate boundary.  In the common-three-space S2Q stratum
+the annihilator section has dimension at least three, so the next obligation
+is an exact boundary classification rather than an arbitrary pole search.
+
+The
+[`m=3` boundary-annihilator common-quotient theorem](BALANCED_M3_BOUNDARY_ANNIHILATOR_COMMON_QUOTIENT_P3_ORBIT_THEOREM.md)
+extracts the first exact structure on that boundary.  The three contractions
+of the fixed root--root blocks form one vector `beta`, and every contracted
+root--nonroot map kills that same vector.  For nonzero `beta`, the empty
+companion is therefore a three-mode image of one common binary quotient of
+`P_3`.  Its orbit is zero, binary W of rank three, or binary GHZ of rank two
+according as `beta` has coordinate support one, two, or three.  Thus a
+two-colour target boundary can survive only with full-support `beta` and
+three rank-two cross maps.  For each surviving colour, its root-by-nonroot
+contracted cross matrix is moreover fully supported and rank one, while the
+missing-colour matrix is zero.  That sharp binary-GHZ quotient is not itself
+a contradiction: the remaining task is to couple this column-separable
+contraction to the missing target coordinate and the full physical singleton
+equations.  The `beta=0` and rank-one cross-map degenerations remain separate
+open branches.
+
+On the common-three-space pole stratum, the
+[`annihilator-component trichotomy`](BALANCED_M3_COMMON_THREE_SPACE_ANNIHILATOR_COMPONENT_TRICHOTOMY_THEOREM.md)
+combines this orbit calculation with projective dimension.  Every irreducible
+product-annihilator component has dimension at least three, and is either
+contained in multiple target-coordinate boundaries, has `beta=0`
+identically, or generically loses one target colour whose three cross-column
+spans have total dimension at most three.  The last bound improves to two
+unless the selected target coordinate already lies in its root cross-column
+span.  This is an exhaustive component reduction of the common-three-space
+case, not an exclusion; the three resulting physical branches remain open.
+
+The
+[`full-joint-cross-rank monomial-root-edge localization`](BALANCED_M3_COMMON_THREE_SPACE_FULL_JOINT_CROSS_RANK_MONOMIAL_ROOT_EDGE_LOCALIZATION_THEOREM.md)
+then closes most of the rigid part of that common-three-space branch.  If the
+nine joint cross colour columns are independent, the singleton span is the
+whole image of the shared derivative.  Dimension three forces exactly one
+root--root block to survive, and the torus-annihilator theorem forces that
+block to be a coordinate monomial.  An off-diagonal monomial explicitly
+globalizes the three pair edges as `2 x 2` permanents and is excluded by the
+six-vertex theorem.  Thus full joint cross rank can survive only with one
+diagonal monomial root edge and the empty block permanent equal to GHZ modulo
+its three-word root line.  An invertible monomial joint cross map is excluded
+because its block-permanent rank is at least six, whereas this target support
+has dimension at most five.  General nonmonomial cancellation in that sparse
+block-permanent equation and the joint-rank-at-most-eight branch remain open.
+
+The subsequent
+[`source-aligned exceptional-root-row obstruction`](BALANCED_M3_FULL_JOINT_CROSS_RANK_SOURCE_ALIGNED_EXCEPTIONAL_ROOT_ROW_OBSTRUCTION.md)
+closes one genuinely nonmonomial chart of that residue.  If the exceptional
+root block row is supported on one source summand, invertibility makes the
+other two root-row projections complementary three-planes in a six-space.
+The sparse target would force every off-diagonal pair of their marked bases
+to have zero mixed product.  A mixed vector has only a one-dimensional
+zero-divisor line, whereas each marked vector would need two independent
+zero divisors; all three vectors are therefore pure.  Pigeonhole then puts
+two in one source summand and forces the entire opposite marked basis into
+the same summand, contradicting complementarity.  That theorem alone left
+rows meeting two or three sources; the next two results close those
+rank-nine successors.  Joint rank at most eight remains open.
+
+The
+[`two-source exceptional-root-row obstruction`](BALANCED_M3_FULL_JOINT_CROSS_RANK_TWO_SOURCE_EXCEPTIONAL_ROOT_ROW_OBSTRUCTION.md)
+then excludes every exceptional root row contained in the sum of two source
+summands.  Apart from the two pure source planes already handled above, the
+two mixed pair products split: the ten characteristic-zero normal forms have
+two aligned boundaries and eight injective charts.  Concatenating the two
+products gives one `(6+3)` mixed product.  Its zero-divisor space is a whole
+summand for a pure vector and only a line for a mixed vector, so the six
+nonexceptional rows cannot remain complementary.
+
+Finally, the
+[`complete full-joint-cross-rank exclusion`](BALANCED_M3_COMMON_THREE_SPACE_FULL_JOINT_CROSS_RANK_EXCLUSION_THEOREM.md)
+closes the remaining fully supported exceptional-row charts.  Every
+off-diagonal target zero places a three-plane in a shared-derivative kernel.
+That derivative is either injective, reducing the marked rows to pure-source
+zero divisors and an impossible three-colour pigeonhole, or has the unique
+synchronized rank-one-pair geometry.  In the exceptional geometry all nine
+rows are forced into a five-space.  Thus joint cross rank nine is impossible;
+the other common-three-space component types remain open.
+
+The
+[`joint-cross-rank-eight exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_CROSS_RANK_EIGHT_EXCLUSION_THEOREM.md)
+pushes that closure through corank one.  A hyperplane image can reduce the
+shared-derivative rank by at most one, so two nonzero root blocks are still
+impossible and the same diagonal sparse equation follows.  On its regular
+derivative chart, the six off-diagonal zero-divisor rows span at most four,
+forcing total joint rank at most seven.  On the unique exceptional chart,
+every rank-one restriction uses the same root covector, whereas the two
+surviving GHZ colours require independent covectors.  Hence ranks nine and
+eight are both excluded; joint rank at most seven and the other physical
+component types remain open.
+
+The
+[`single-root-block joint-cross-rank-seven exclusion`](BALANCED_M3_COMMON_THREE_SPACE_SINGLE_ROOT_BLOCK_JOINT_CROSS_RANK_SEVEN_EXCLUSION_THEOREM.md)
+then resolves the sharp equality case of that zero-grid bound.  If only one
+root--root block survives, rank seven forces the six nonexceptional marked
+rows to span exactly four dimensions.  Their two off-diagonal zero-product
+pairs are complementary pure or conjugate-mixed two-planes.  Pure/pure and
+shared-source pure/mixed forms make the two GHZ rows use one covector;
+all-three-source pure/mixed forms make them share two target factor lines;
+same-edge mixed/mixed products are proportional; and different-edge
+mixed/mixed derivatives have zero common kernel.  All contradict the two
+independent surviving diagonal GHZ rows.  The remaining rank-seven case must
+therefore have at least two nonzero root--root blocks; ranks at most six and
+the other physical component types remain open.
+
+The
+[`two-root-block joint-cross-rank-seven exclusion`](BALANCED_M3_COMMON_THREE_SPACE_TWO_ROOT_BLOCK_JOINT_CROSS_RANK_SEVEN_EXCLUSION_THEOREM.md)
+closes that last rank-seven mechanism.  Codimension two forces the shared
+derivative to have its sharp rank-five form: exactly two rank-one root blocks
+share one endpoint factor, their four-dimensional derivative kernel lies in
+the joint column image, and the common factor is a target coordinate.  The
+two unaffected GHZ colours force each involved root block row to have global
+rank three.  Pointwise, their permanent slices are `R M(q_c) P^T`, where
+`M(q_c)` is zero-diagonal.  The two target slices force generic `R,P` to be
+invertible, but a nonzero zero-diagonal `3 x 3` matrix has rank at least two
+and cannot produce the required rank-one slice.  Thus ranks nine, eight, and
+seven are all excluded on the common-three-space stratum; joint rank at most
+six and the other physical component types remain open.
+
+The later
+[`complete single-root-block exclusion`](BALANCED_M3_COMMON_THREE_SPACE_SINGLE_ROOT_BLOCK_COMPLETE_EXCLUSION_THEOREM.md)
+removes the rank assumption from S2Z.  In the regular derivative chart the
+two exceptional marked rows vanish, leaving two crossed zero-product pairs.
+Their pure/pure and pure/mixed forms force a common GHZ covector or common
+target factor lines.  Same-pair mixed/mixed products are proportional;
+different-pair forms either give an injective derivative pair or place both
+target lines in one Segre tangent space, whose decomposable locus shares two
+base factors.  Every case contradicts the two distinct surviving GHZ
+colours.  Thus every remaining common-three-space point has at least two
+root blocks as well as joint rank at most six.
+
+The
+[`joint-rank-six shared-factor exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_CROSS_RANK_SIX_SHARED_FACTOR_EXCLUSION_THEOREM.md)
+then closes the rank-five shared-derivative mechanism at joint rank six.
+Exactly two root blocks would share a coordinate endpoint factor, leaving two
+unaffected GHZ slices.  The possible involved-row ranks are `(2,2)`, `(3,3)`,
+or mixed: the first misses a required pure coefficient, the second again
+forces a nonzero zero-diagonal matrix to have rank one, and the mixed profile
+promotes the slice zeros to two crossed quadratic zero products.  The complete
+pure/mixed atlas makes their two diagonal derivatives incompatible with two
+distinct GHZ colours.  Therefore the only surviving rank-six mechanism has
+exactly two root blocks with disjoint derivative summands; that transverse
+case, joint rank at most five, and the other physical branches remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
