@@ -743,6 +743,19 @@ Two auxiliary derivative-zero faces additionally force `y` coordinate when
 two coordinate endpoints and the other eight coloop orientations remain
 open.
 
+The successor
+[`(1,2,2)` `beta_t`-coloop coordinate-endpoint exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_BETA_T_COLOOP_COORDINATE_ENDPOINT_EXCLUSION_THEOREM.md)
+closes those two endpoints.  If `w=e_a`, the complete face lives in the
+exact three-space `S=R direct-sum span(A)` and has just one surviving target
+cell: `p_a` has the complete two-plane `span(q_b,q_t)` as permanent partners,
+while `p_b` vanishes at `q_t` but not at `q_b`.  An exhaustive source-support
+split for `p_a` makes full support collapse `S` to a line, makes two-source
+support collapse the partner plane or remove the third tensor source, and
+makes pure support force both `p_b` partner maps to vanish together.  The
+second complementary endpoint is identical after relabelling.  Thus the
+distinguished `beta_t` coloop is impossible; the other eight `(1,2,2)`
+coloop orientations remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
