@@ -4231,6 +4231,33 @@
       "legacy_paths": []
     },
     {
+      "name": "Balanced m=3 Common-Three-Space Joint-Cross-Rank-Six Shared-Factor Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_CROSS_RANK_SIX_SHARED_FACTOR_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "ec923981f8b45704",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion for a normalized target-consistent physical m=3 common shore whose total singleton span has dimension three",
+        "the joint nine-by-nine root-nonroot cross-colour map has rank exactly six, at least two root-root blocks are nonzero, and the shared derivative has rank exactly five",
+        "the rank-five derivative consists of exactly two rank-one root blocks with one shared endpoint factor; the no-torus-annihilator theorem makes that factor a target coordinate and leaves two exact unaffected GHZ slices",
+        "the involved root-row ranks are each two or three: profile two-two misses the exceptional pure coefficient, profile three-three violates the nonzero zero-diagonal matrix rank floor, and each mixed profile promotes two slice zeros to crossed quadratic zero products",
+        "the exhaustive pure-or-conjugate-mixed crossed-pair atlas makes two surviving diagonal derivative maps incompatible with two distinct GHZ target lines",
+        "the only surviving joint-rank-six common-three-space mechanism has exactly two root blocks with disjoint derivative summands and derivative rank six; that transverse case, joint rank at most five, every other physical branch, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_cross_rank_six_shared_factor_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_cross_rank_six_shared_factor_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_CROSS_RANK_SIX_SHARED_FACTOR_EXCLUSION_SELF_REVIEW_2026-08-12.md",
+      "expected_runtime": "seconds (SymPy shared-derivative, pointwise permanent, and crossed-pair replay; independent standard-library Fraction audit)",
+      "external_binaries": [],
+      "note": "The rank-five shared-factor derivative at joint rank six leaves two unaffected GHZ slices. Equal involved-row ranks fail by a missing pure coefficient or the zero-diagonal matrix rank floor; a mixed profile gives crossed zero products and falls to the complete pure/mixed diagonal obstruction. Thus rank six survives only with two transverse derivative summands. Global Krenn-Gu is UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Non-proof-active boundary-candidate collection checkpoint; representative frozen certificate refuted",
       "document": "claims/p5/h22/component19-p0-ordinary-boundary/P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md",
       "document_sha256_16": "15e7fd63116a421f",

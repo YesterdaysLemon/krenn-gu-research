@@ -409,6 +409,19 @@ base factors.  Every case contradicts the two distinct surviving GHZ
 colours.  Thus every remaining common-three-space point has at least two
 root blocks as well as joint rank at most six.
 
+The
+[`joint-rank-six shared-factor exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_CROSS_RANK_SIX_SHARED_FACTOR_EXCLUSION_THEOREM.md)
+then closes the rank-five shared-derivative mechanism at joint rank six.
+Exactly two root blocks would share a coordinate endpoint factor, leaving two
+unaffected GHZ slices.  The possible involved-row ranks are `(2,2)`, `(3,3)`,
+or mixed: the first misses a required pure coefficient, the second again
+forces a nonzero zero-diagonal matrix to have rank one, and the mixed profile
+promotes the slice zeros to two crossed quadratic zero products.  The complete
+pure/mixed atlas makes their two diagonal derivatives incompatible with two
+distinct GHZ colours.  Therefore the only surviving rank-six mechanism has
+exactly two root blocks with disjoint derivative summands; that transverse
+case, joint rank at most five, and the other physical branches remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
