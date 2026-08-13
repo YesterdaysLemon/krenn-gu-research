@@ -4979,6 +4979,39 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Hilbert-Burch (1,1,2) Outer-Coordinate-Chart Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_ONE_TWO_OUTER_COORDINATE_CHART_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "0d7ac4dee1128c0e",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
+        "all three root-root blocks are nonzero and the Hilbert-Burch derivative kernel has projection profile (1,1,2)",
+        "the representative outer chart has ker D_B=span((lambda e_s,0,z),(0,y,nu e_t)), with lambda nu nonzero, z not proportional to e_t, and y noncoordinate; coordinate y is already the central chart excluded by S2AX",
+        "the derivative has rank seven and its annihilator has exact recovery scalar nu gamma(z)gamma_t, so S2R forces the four-dimensional relation kernel into one of the nine ordinary root-coordinate hyperplanes",
+        "the exact exterior face alpha_s=beta(y)=0 carries the two fully transverse complementary targets T_a,T_b and makes the first- and second-row images two-dimensional",
+        "the third-row image has dimension three: gamma(z),gamma_t give quotient rank two and their common normal gives a nonzero row in V by the complete target contraction",
+        "the alpha_s and all gamma_k hyperplanes force equal first-/second-row planes and fail by the S2AL tangent-line and mixed factor-sharing lemmas",
+        "when y_s is nonzero, all first-root coloops and the one-visible-coordinate second-root coloops are exactly the S2AX binary coefficient fork after a basis change in y-perp",
+        "when y_s is zero, the visible y-perp line carries both complementary targets while the nonzero p_s row is invisible; a square-zero radical-bridge lemma excludes the remaining first-root endpoint",
+        "the second-root hyperplane line has two, one, or zero visible complementary coordinates; the first two cases reduce to the equal-plane or transposed S2AX fork, and the zero-visible case falls to a radical-plane two-target factor-sharing lemma",
+        "first/second-root exchange sends the outer pair (y,z) to the treated (x,w) form; together with S2AS-S2AX and the exact S2AG three-pair Boolean atlas, this closes the complete (1,1,2) profile",
+        "the (1,2,2) profile, joint rank at most four, other physical branches, higher orders, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_one_two_outer_coordinate_chart_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_one_two_outer_coordinate_chart_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_ONE_TWO_OUTER_COORDINATE_CHART_EXCLUSION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds (SymPy derivative, recovery, torus, quotient, support, coefficient-fork, and endpoint-atlas replay; independent standard-library Fraction audit)",
+      "external_binaries": [],
+      "note": "Both outer coordinate-pair charts of the rank-five Hilbert-Burch (1,1,2) profile are impossible. Nine-coordinate torus avoidance reduces them to equal-plane, binary coefficient-fork, square-zero bridge, or common-radical factor-sharing contradictions. Together with S2AS-S2AX and the exhaustive S2AG Boolean atlas, this closes the complete (1,1,2) profile. Other stated branches remain open, and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

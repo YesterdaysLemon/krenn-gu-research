@@ -701,6 +701,22 @@ impossible.  The genuinely outer coordinate-pair charts, other `(1,1,2)`
 boundaries, `(1,2,2)`, lower joint rank, other physical components, and
 higher orders remain open.
 
+The successor
+[`(1,1,2)` outer-coordinate-chart exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_ONE_TWO_OUTER_COORDINATE_CHART_EXCLUSION_THEOREM.md)
+closes both remaining coordinate-pair charts.  In the representative
+`x=lambda e_s`, `w=nu e_t` chart, transpose recovery has scalar
+`nu gamma(z)gamma_t`, so S2R forces the four-dimensional relation kernel
+into one of the nine ordinary root-coordinate hyperplanes.  A universal
+binary exterior face makes the complementary first- and second-row images
+two-planes and supplies the fully transverse targets `T_a,T_b`.  Equal-plane
+alternatives and the generic first-/second-root coloops fall to the S2AL and
+S2AX square/mixed forks.  When `y_s=0`, two exact source-support lemmas
+exclude the remaining square-zero bridge and common-radical endpoints.
+First/second-root symmetry closes the `(y,z)` chart.  Since the S2AG Boolean
+atlas says every `(1,1,2)` point contains `(x,y)`, `(x,w)`, or `(y,z)`, the
+complete `(1,1,2)` profile is now impossible.  The `(1,2,2)` profile, lower
+joint rank, other physical components, and higher orders remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
