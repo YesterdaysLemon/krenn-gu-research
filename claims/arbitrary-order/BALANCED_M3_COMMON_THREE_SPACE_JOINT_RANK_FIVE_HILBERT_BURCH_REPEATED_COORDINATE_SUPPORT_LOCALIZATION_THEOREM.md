@@ -53,6 +53,11 @@ complete `(1,1,1)` profile, the `(1,1,2)` or `(1,2,2)` profiles, joint rank
 at most four, other physical components or pole strata, higher orders, or
 the global conjecture.  Global Krenn--Gu remains **UNRESOLVED**.
 
+The successor repeated-coordinate exclusion now proves that the discrete
+patterns (4) are impossible.  Thus S2AN--S2AP together close the complete
+repeated-coordinate `(1,1,1)` chart.  This successor does not change the
+scope or proof below.
+
 ## 1. The complementary support-two grid
 
 Let `u,v` be the two colours different from `s`.  By S2AN,
@@ -316,6 +321,8 @@ global Krenn--Gu conjecture:                         UNRESOLVED.       (31)
 No point with pattern (4) is constructed here.  The result says only that
 such discrete patterns are the complete residual of the repeated-coordinate
 chart.
+
+The successor theorem excludes that residual exactly.
 
 ## Focused replay
 

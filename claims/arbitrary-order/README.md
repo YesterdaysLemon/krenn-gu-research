@@ -579,8 +579,20 @@ zero-table row itself to be nonzero, so the two rows form a two-plane in the
 same three-space as the first two row families.  The distinct-plane cubic
 kernels and three exact equal-plane orientations exclude every incidence.
 Consequently the complete repeated-coordinate residual is the discrete
-factor-line pattern `(s,s,t)` with `s!=t`.  These discrete patterns are not
-yet excluded or constructed.
+factor-line pattern `(s,s,t)` with `s!=t`.
+
+The successor
+[`repeated-coordinate exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_REPEATED_COORDINATE_EXCLUSION_THEOREM.md)
+closes that discrete residual.  The exact annihilator of the Hilbert--Burch
+kernel is seven-dimensional.  S2R forces its four-dimensional relation
+space into one coordinate hyperplane, so one of seven distinguished rows is
+a coloop and the other six lie in a two-plane.  Every coloop orientation
+then fails: three reduce to the two-plane square obstruction, two miss the
+required diagonal target directly, and the last two violate an exact
+binary-cubic quadratic-annihilator lemma.  Hence every repeated-coordinate
+`(1,1,1)` chart is impossible.  Coordinate-distinct and other allowed
+`(1,1,1)` charts, the other Hilbert--Burch profiles, lower joint rank, other
+physical components, and higher orders remain open.
 
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
