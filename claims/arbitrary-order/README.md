@@ -643,6 +643,21 @@ symmetry excludes the mate orientation.  The central-colour coloop orbit,
 repeated outer lines, same-colour and outer coordinate charts, and the rest
 of `(1,1,2)` remain open.
 
+The successor
+[`(1,1,2)` central-colour coloop exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_ONE_TWO_CENTRAL_COLOUR_COLOOP_EXCLUSION_THEOREM.md)
+closes the other ordinary-coloop orbit in that distinct-colour chart.  The
+central-colour coloop leaves a two-plane `S` and a three-dimensional
+third-row image `Q` with a complete zero `r_t x S x Q` table.  A nonzero
+exterior `T_t` face again upgrades to a square.  Pure support gives either a
+zero core or fixed-factor sharing; two-source support confines `Q` to a
+two-dimensional fibre.  In the full-support case the square is correctly
+viewed in the Segre tangent space at its repeated row.  The two-supported
+square and every full-supported pair-sum degeneration then have either a
+one-dimensional common annihilator or a fixed factor on the core.  Thus the
+distinct-colour central coordinate-pair chart is impossible away from its
+two repeated outer-factor lines.  Those lines, the same-colour central
+chart, outer coordinate-pair charts, and the rest of `(1,1,2)` remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

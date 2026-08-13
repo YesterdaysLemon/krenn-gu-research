@@ -4851,6 +4851,38 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Hilbert-Burch (1,1,2) Central-Colour Coloop Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_ONE_TWO_CENTRAL_COLOUR_COLOOP_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "a0beb6bbe198d0c1",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
+        "all three root-root blocks are nonzero and the Hilbert-Burch derivative kernel has projection profile (1,1,2), in normal form ker D_B=span((lambda e_s,0,z),(0,mu e_t,w)) with z,w independent",
+        "the selected S2AS chart has pairwise distinct target colours s,t,u, central coordinate pair x=lambda e_s and y=mu e_t, with w not proportional to e_s and z not proportional to e_t",
+        "S2AS and S2AT leave only the central-colour coloop orbit N subset alpha_t=0 or N subset beta_s=0 in this distinct-colour central chart",
+        "in the alpha_t orientation, deleting r_t leaves r_u, the complete second-row plane P=span(p_s,p_u), and the combined rows h_0,h_1,h_2 in a two-plane S=P; the untouched r_t x S x image(theta) table is zero while the T_u core is nonzero",
+        "the quotient classes A=lambda^(-1)r_s and B=mu^(-1)p_t are independent modulo V=H^T((ker D_B)^perp); z,w give quotient rank two, while the common normal n in z-perp intersect w-perp has nonzero q(n) in S, so image(theta) has dimension three",
+        "a covector gamma in z-perp with gamma_t gamma(w) nonzero converts the nonzero T_t exterior face into a square per(q(gamma),q(gamma),r_t)",
+        "one-source support for r_t forces the core to vanish or share a factor with T_t; two-source support confines the three-dimensional third-row image to a two-dimensional fibre of a map with one-dimensional kernel",
+        "for full-source r_t and a two-supported square vector, the exact zero-map kernel has either a one-dimensional common annihilator or a cancellation kernel whose non-core branch again has one-dimensional common annihilator",
+        "for a full-supported square vector, decomposability in the Segre tangent space at that repeated vector forces two target factor lines; the moving-factor and all aligned pair-sum degeneracies leave either a one-dimensional common annihilator, a zero core, or a core sharing one of those factor lines",
+        "first/second-root symmetry excludes beta_s; together with S2AT this closes the distinct-colour central coordinate-pair chart away from the repeated outer lines, but the same-colour central chart, outer coordinate-pair charts, other (1,1,2) boundaries, (1,2,2), lower joint ranks, other physical branches, higher orders, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_one_two_central_colour_coloop_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_one_two_central_colour_coloop_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_ONE_TWO_CENTRAL_COLOUR_COLOOP_EXCLUSION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds (SymPy central-coloop, third-row-rank, square, fibre, tangent, and pair-sum replay; independent standard-library Fraction audit)",
+      "external_binaries": [],
+      "note": "The remaining central-colour ordinary-coloop orbit in the distinct-colour central (1,1,2) chart is impossible. Exact fibre dimensions and the complete Segre-tangent pair-sum atlas contradict every source-support type. Together with S2AT this closes that chart away from two repeated outer lines. Other (1,1,2) charts and boundaries remain open, and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
