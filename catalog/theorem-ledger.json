@@ -4362,6 +4362,33 @@
       "legacy_paths": [
         "P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md"
       ]
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Derivative and Torus Localization",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_DERIVATIVE_TORUS_LOCALIZATION_THEOREM.md",
+      "document_sha256_16": "be6442850d37ff40",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero localization for a normalized target-consistent physical m=3 common shore whose total singleton span has dimension three and whose joint root-nonroot cross-colour map has rank exactly five",
+        "the shared-factor derivative-rank-five contradiction is rank-free once its two-block normal form is reached; every rank-five two-block survivor therefore has disjoint derivative summands and derivative rank six",
+        "the transverse relation-plane arguments remain valid on the projected three-plane; an injective uninvolved row supplies the same three-plane square-pencil and five-product contradictions, so every survivor has an independent rank-two uninvolved row",
+        "the kernel of that rank-two row has target-coordinate support at most two because two fixed contracted root-block factor lines can cover at most two coordinate diagonals",
+        "with three root blocks the derivative has rank seven, its two-dimensional Hilbert-Burch kernel lies in the joint image, and the full (2,2,2) kernel-projection profile is excluded by a fully supported beta-zero product annihilator",
+        "the remaining (1,2,2), (1,1,2), and (1,1,1) Hilbert-Burch profiles satisfy the exact coordinate-boundary atlas; those boundaries, joint rank at most four, every other physical branch, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_derivative_torus_localization.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_derivative_torus_localization.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_DERIVATIVE_TORUS_LOCALIZATION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds (SymPy derivative, Hilbert-Burch, beta-zero, and support replay; independent standard-library Fraction audit)",
+      "external_binaries": [],
+      "note": "Joint rank five has only a transverse two-root rank-two-row boundary or three explicit Hilbert-Burch coordinate atlases. The shared-factor mechanism, injective uninvolved row, and full (2,2,2) Hilbert-Burch profile are impossible. Joint rank five is not completely excluded and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

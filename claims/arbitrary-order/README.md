@@ -463,6 +463,20 @@ alternatives.  Thus every common-three-space point now has joint cross rank
 at most five.  That lower-rank branch and the other physical branches remain
 open.
 
+The
+[`joint-rank-five derivative and torus localization`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_DERIVATIVE_TORUS_LOCALIZATION_THEOREM.md)
+then resolves the first lower-rank census.  The shared-factor derivative
+contradiction is rank-free, and every transverse two-root point whose
+uninvolved row is still injective falls to the existing three-plane
+obstructions.  A surviving transverse point therefore has an independent
+rank-two uninvolved row whose kernel uses at most two target colours.  With
+three root blocks, equality in the two-syzygy bound gives a Hilbert--Burch
+kernel.  Its full `(2,2,2)` projection profile creates a fully supported
+beta-zero product annihilator and is impossible; the `(1,2,2)`, `(1,1,2)`,
+and `(1,1,1)` profiles lie on an explicit coordinate-boundary atlas.  These
+rank-two-row and Hilbert--Burch boundaries, joint rank at most four, and the
+other physical branches remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
