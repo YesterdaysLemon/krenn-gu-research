@@ -601,10 +601,20 @@ totally cubic-zero two-plane cannot carry two fully transverse target images.
 Every ordinary-row coloop is symmetric to `q_0`; the other two planes then
 coincide, and the missing `q_2` row produces two fully transverse mixed
 images of quadratic annihilators, contrary to an exact binary-cubic
-factor-sharing lemma.  Thus the only remaining `(1,1,1)` chart has exactly
-two distinct coordinate factors and a genuinely noncoordinate third factor.
-The other Hilbert--Burch profiles, lower joint rank, other physical
-components, and higher orders remain open.
+factor-sharing lemma.
+
+The successor
+[`two-coordinate/noncoordinate exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_TWO_COORDINATE_NONCOORDINATE_EXCLUSION_THEOREM.md)
+closes the last `(1,1,1)` chart.  For
+`x=lambda e_0`, `y=mu e_1`, and noncoordinate `z`, torus self-recovery has
+one extra exceptional hyperplane `gamma(z)=0`, giving eight alternatives in
+total.  Every alternative makes two of three row planes equal.  Equal
+first/second planes violate a square-zero mixed-factor lemma; equal
+second/third planes violate target-line independence or the S2AL pointwise
+tangent-factor lemma, and the last equality is symmetric.  Hence the entire
+Hilbert--Burch `(1,1,1)` profile is impossible.  The `(1,1,2)` and `(1,2,2)`
+profiles, lower joint rank, other physical components, and higher orders
+remain open.
 
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)

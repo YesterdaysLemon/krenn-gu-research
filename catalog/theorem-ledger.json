@@ -4457,7 +4457,7 @@
         "the transverse relation-plane arguments remain valid on the projected three-plane; an injective uninvolved row supplies the same three-plane square-pencil and five-product contradictions, so every survivor has an independent rank-two uninvolved row",
         "the kernel of that rank-two row has target-coordinate support at most two because two fixed contracted root-block factor lines can cover at most two coordinate diagonals",
         "with three root blocks the derivative has rank seven, its two-dimensional Hilbert-Burch kernel lies in the joint image, and the full (2,2,2) kernel-projection profile is excluded by a fully supported beta-zero product annihilator",
-        "the remaining (1,2,2), (1,1,2), and (1,1,1) Hilbert-Burch profiles satisfy the exact coordinate-boundary atlas; those boundaries, joint rank at most four, every other physical branch, and global resolution remain open"
+        "the remaining (1,2,2), (1,1,2), and (1,1,1) Hilbert-Burch profiles satisfy the exact coordinate-boundary atlas; successor S2AN-S2AR close (1,1,1), while (1,1,2), (1,2,2), joint rank at most four, every other physical branch, and global resolution remain open"
       ],
       "dependencies": [],
       "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_derivative_torus_localization.py",
@@ -4467,7 +4467,7 @@
       "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_DERIVATIVE_TORUS_LOCALIZATION_SELF_REVIEW_2026-08-13.md",
       "expected_runtime": "seconds (SymPy derivative, Hilbert-Burch, beta-zero, and support replay; independent standard-library Fraction audit)",
       "external_binaries": [],
-      "note": "This localization leaves only a transverse two-root rank-two-row boundary or three explicit Hilbert-Burch coordinate atlases at joint rank five. The successor chain S2AH-S2AM closes the transverse boundary, S2AN-S2AP close the repeated-coordinate part of the (1,1,1) atlas, and S2AQ excludes its all-coordinate-distinct triangle. The exactly-two-coordinate/noncoordinate (1,1,1) chart and the other Hilbert-Burch profiles remain open. Joint rank five is not completely excluded and global Krenn-Gu remains UNRESOLVED.",
+      "note": "This localization leaves only a transverse two-root rank-two-row boundary or three explicit Hilbert-Burch coordinate atlases at joint rank five. The successor chain S2AH-S2AM closes the transverse boundary, while S2AN-S2AR close the complete (1,1,1) atlas. The (1,1,2) and (1,2,2) Hilbert-Burch profiles remain open. Joint rank five is not completely excluded and global Krenn-Gu remains UNRESOLVED.",
       "claim_package": "claims/arbitrary-order",
       "proof_variant": "canonical",
       "subpackage": null,
@@ -4714,7 +4714,7 @@
         "a coloop among the combined or third-root rows makes the first and second row planes equal and contradicts the S2AL two-plane square lemma; the remaining orientations make the second/third or first/third row planes equal",
         "one colour orientation makes the required T_t coefficient identically zero, while the other forces two quadratic annihilators whose nonzero mixed image would be fully transverse to the sole target image of the row-plane cubic",
         "an exact binary-cubic directional-derivative and quotient-projection lemma forces that mixed image to share two target factor lines, giving the final contradiction",
-        "therefore every repeated-coordinate (1,1,1) Hilbert-Burch chart is impossible; this theorem itself leaves coordinate-distinct and other allowed (1,1,1) charts open, while successor S2AQ excludes the all-coordinate-distinct triangle but not the exactly-two-coordinate/noncoordinate chart"
+        "therefore every repeated-coordinate (1,1,1) Hilbert-Burch chart is impossible; successor S2AQ excludes the all-coordinate-distinct triangle and S2AR excludes the two-coordinate/noncoordinate residual"
       ],
       "dependencies": [],
       "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_repeated_coordinate_exclusion.py",
@@ -4724,7 +4724,7 @@
       "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_REPEATED_COORDINATE_EXCLUSION_SELF_REVIEW_2026-08-13.md",
       "expected_runtime": "seconds (SymPy derivative, annihilator, torus, coloop, equal-plane, binary-cubic, and quotient replay; independent standard-library Fraction audit)",
       "external_binaries": [],
-      "note": "Every repeated-coordinate Hilbert-Burch (1,1,1) chart is impossible. S2AN excludes the same-colour component, S2AO localizes the complementary residual to (s,s,t), and this theorem excludes those discrete patterns. Successor S2AQ excludes the all-coordinate-distinct triangle; the exactly-two-coordinate/noncoordinate chart and other Hilbert-Burch profiles remain open, and global Krenn-Gu remains UNRESOLVED.",
+      "note": "Every repeated-coordinate Hilbert-Burch (1,1,1) chart is impossible. S2AN excludes the same-colour component, S2AO localizes the complementary residual to (s,s,t), and this theorem excludes those discrete patterns. Successor S2AQ excludes the all-coordinate-distinct triangle and S2AR excludes the two-coordinate/noncoordinate residual. Other Hilbert-Burch profiles remain open, and global Krenn-Gu remains UNRESOLVED.",
       "claim_package": "claims/arbitrary-order",
       "proof_variant": "canonical",
       "subpackage": null,
@@ -4744,7 +4744,7 @@
         "if the combined row is the coloop then R=P=Q=S and per(S,S,S)=0; a totally cubic-zero two-plane misses one source projection and cannot carry the fully transverse one-dimensional decomposable images T_0 and T_1",
         "the six ordinary rows form one orbit under simultaneous root and target-colour permutations; for representative coloop q_0, R=P=S and q_0,q_1 quadratically annihilate S",
         "the exact relation q_2=A+B-h and the exterior face tables give nonzero rank-one mixed maps per(q_2,q_0,-)|S and per(q_2,q_1,-)|S onto T_0 and T_1; the binary-cubic directional-derivative kernel and unique factorization force such maps to share a source factor, a contradiction",
-        "therefore the all-coordinate-distinct (1,1,1) Hilbert-Burch chart is impossible; together with S2AN-S2AP every chart with three coordinate factors is closed, while the exactly-two-coordinate/noncoordinate chart, other Hilbert-Burch profiles, lower joint ranks, other physical branches, higher orders, and global resolution remain open"
+        "therefore the all-coordinate-distinct (1,1,1) Hilbert-Burch chart is impossible; together with S2AN-S2AP every chart with three coordinate factors is closed, and successor S2AR closes the two-coordinate/noncoordinate residual"
       ],
       "dependencies": [],
       "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_all_coordinate_distinct_exclusion.py",
@@ -4754,7 +4754,37 @@
       "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ALL_COORDINATE_DISTINCT_EXCLUSION_SELF_REVIEW_2026-08-13.md",
       "expected_runtime": "seconds (SymPy derivative, annihilator, support-face, torus, coloop-orbit, and binary-cubic replay; independent standard-library Fraction audit)",
       "external_binaries": [],
-      "note": "The all-coordinate-distinct Hilbert-Burch (1,1,1) triangle is impossible. The zero binary row cube and its three transverse exterior target faces are incompatible with every torus-forced coloop orientation. Together with S2AN-S2AP this closes every (1,1,1) chart with three coordinate factors. The exactly-two-coordinate/noncoordinate chart and other Hilbert-Burch profiles remain open, and global Krenn-Gu remains UNRESOLVED.",
+      "note": "The all-coordinate-distinct Hilbert-Burch (1,1,1) triangle is impossible. The zero binary row cube and its three transverse exterior target faces are incompatible with every torus-forced coloop orientation. Together with S2AN-S2AP this closes every (1,1,1) chart with three coordinate factors; successor S2AR closes the two-coordinate/noncoordinate residual. Other Hilbert-Burch profiles remain open, and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Hilbert-Burch Two-Coordinate Noncoordinate Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_TWO_COORDINATE_NONCOORDINATE_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "a9a27b2de253ec1b",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
+        "all three root-root blocks are nonzero and the Hilbert-Burch kernel has profile (1,1,1), with ker D_B=span((x,0,z),(0,y,z)); after root and target-colour permutations x=lambda e_0 and y=mu e_1 with lambda mu nonzero, while z has support at least two and is not a target-coordinate vector",
+        "S2AG proves that at least two of x,y,z are coordinate vectors; S2AN-S2AP exclude repeated coordinate lines and S2AQ excludes three distinct coordinate lines, so this is the complete remaining (1,1,1) chart",
+        "the exact row spaces R=span(r_1,r_2), P=span(p_0,p_2), and Q=theta(z-perp) are two-planes; contraction by gamma in z-perp gives three rank-one exterior faces onto T_0,T_1,T_2",
+        "the seven-dimensional annihilator of ker D_B has free coordinates alpha_1,alpha_2,beta_0,beta_2,gamma_0,gamma_1,gamma_2, and D_B transpose self-recovers every point by the exact scalar gamma(z)^2",
+        "S2R and the finite-union lemma force the four-dimensional relation kernel K-perp into one of the seven free-coordinate hyperplanes or the extra hyperplane gamma(z)=0; every alternative makes R=P, P=Q, R=Q, or all three equal",
+        "when R=P, permanent symmetry aligns span(r_1)=span(p_0); their common nonzero vector has zero square on Q while its A- and B-mixed maps have fully transverse rank-one images T_0,T_1, contrary to the exact square-zero mixed-factor atlas",
+        "when P=Q, the two possible first-row coloops give either cancellation between independent T_0 and T_1 target lines or a pointwise square/mixed pair onto those lines, contrary to the proved S2AL tangent-line factor-sharing lemma; R=Q is symmetric",
+        "therefore the two-coordinate/noncoordinate chart is impossible; together with S2AN-S2AQ this closes the complete Hilbert-Burch (1,1,1) profile, while (1,1,2), (1,2,2), lower joint ranks, other physical branches, higher orders, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_two_coordinate_noncoordinate_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_two_coordinate_noncoordinate_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_TWO_COORDINATE_NONCOORDINATE_EXCLUSION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds (SymPy derivative, annihilator, eight-hyperplane, support-chart, plane-equality, and permanent-atlas replay; independent standard-library Fraction audit)",
+      "external_binaries": [],
+      "note": "The last Hilbert-Burch (1,1,1) chart is impossible. Exact torus self-recovery gives eight hyperplane alternatives, all of which force equal row planes and violate square-zero or tangent mixed-factor sharing. Together with S2AN-S2AQ this closes the complete (1,1,1) profile. The (1,1,2) and (1,2,2) profiles and other lower or external branches remain open, and global Krenn-Gu remains UNRESOLVED.",
       "claim_package": "claims/arbitrary-order",
       "proof_variant": "canonical",
       "subpackage": null,
