@@ -5183,6 +5183,43 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Hilbert-Burch (1,2,2) Residual Second-Root-Coloop Coordinate-Line Localization",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_COORDINATE_LINE_LOCALIZATION_THEOREM.md",
+      "document_sha256_16": "c56fa962c79a36c9",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero localization on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
+        "the Hilbert-Burch derivative kernel has the S2AZ (1,2,2) gauge x=lambda e_s, c=mu e_t, y_t=0, with lambda mu nonzero and the two stated projection pairs independent",
+        "the coordinate-coloop fork selects either residual second-root hyperplane N subset {beta_j=0} with j different from t; the third colour is k",
+        "S2BD gives w_t=0, p_k in the exact three-space S=R direct-sum span(A), and q(w-perp) inside S",
+        "the S2BC target-contraction argument makes pi and theta injective throughout the S2AZ gauge independently of its selected alpha_s coloop",
+        "if w_j and w_k are both nonzero, n=w_k e_j^*-w_j e_k^* and e_t^* form a basis of w-perp and the complete derivative-zero face gives a same-third-row binary diagonal table",
+        "the first- and third-row binary planes and p_k lie in S, while p_j is the sole possible row escape; if p_j also lies in S, the existing S2AO obstruction applies",
+        "when p_j escapes, equality of the two planes inside S forces a singular change matrix by permanent symmetry at the two middle rows",
+        "for distinct in-space planes, tangent-line separation and mixed factor sharing force their intersection line to be the zero third row q_t",
+        "after choosing r_0=e_0, r_1=e_1, q_0=e_2, p_0=e_3, the intersection row is either one of two endpoints or generic in R and the in-space middle row has nonempty support in three coordinates",
+        "two endpoint choices times seven support masks give 14 families; the generic intersection gives five fixed-support families and two one-parameter families, for a proved exhaustive 21-family orbit cover",
+        "the two continuous families retain a symbolic parameter tau; their certificates are polynomial identities over Q in tau and use neither specialization nor inversion",
+        "each family has 64 necessary selected source-coordinate equations; the pinned rational Nullstellensatz artifact contains 9256 sparse multiplier terms and proves the unit ideal in all 21 families",
+        "the primary SymPy verifier and independent reversed-variable standard-library audit separately reconstruct every row form, permanent, and generator before checking the identities",
+        "therefore w is proportional to e_j or e_k under either residual beta_j coloop; the four ordered coloop/endpoint cases remain open",
+        "the three third-root coloops, two complementary first-root coloops, lower joint rank, other physical components, higher orders, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_two_two_residual_second_root_coloop_coordinate_line_localization.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_two_two_residual_second_root_coloop_coordinate_line_localization.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_COORDINATE_LINE_LOCALIZATION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds (SymPy reconstruction and 21 rational family replays; independent reversed-order standard-library sparse audit; Singular 4.x is optional for certificate regeneration only)",
+      "external_binaries": [],
+      "note": "Both residual second-root coordinate coloops beta_j with j different from t force w onto one of the two coordinate lines complementary to e_t. A one-middle-row-escape same-third-row table reduces exactly to 21 row-space families, including two symbolic one-parameter families, and pinned rational Nullstellensatz identities exclude all of them with an independent no-import replay. The four ordered endpoints and five other (1,2,2) coloops remain open, and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

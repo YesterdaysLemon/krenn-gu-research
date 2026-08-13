@@ -784,6 +784,21 @@ forms; pinned rational Nullstellensatz identities exclude every one.  Hence
 both residual second-root coloops satisfy `w_t=0`.  Their resulting
 residuals and the other five `(1,2,2)` coloop orientations remain open.
 
+The successor
+[`(1,2,2)` residual second-root-coloop coordinate-line localization`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_COORDINATE_LINE_LOCALIZATION_THEOREM.md)
+excludes complementary support two for `w`.  When `w_t=0` and
+`w_jw_k!=0`, the complete face is a same-third-row binary diagonal table.
+Its first and third planes and `p_k` lie in `S`; only `p_j` may escape.
+Tangent-line and mixed-factor arguments force the zero third row to equal
+the intersection of the two planes in `S`.  The remaining row-space orbit
+has 14 endpoint-support, five generic fixed-support, and two one-parameter
+families.  Exact rational Nullstellensatz identities exclude all 21; the
+parameter identities hold in the full polynomial ring, without division or
+specialization.  Thus each residual `beta_j` coloop forces `w` onto one of
+the two coordinate lines complementary to `e_t`.  The four ordered
+coloop/endpoint cases and the other five `(1,2,2)` coloop orientations
+remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
