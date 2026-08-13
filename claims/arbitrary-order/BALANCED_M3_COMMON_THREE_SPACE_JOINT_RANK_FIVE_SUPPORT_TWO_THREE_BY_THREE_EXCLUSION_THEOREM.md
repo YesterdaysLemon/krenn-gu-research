@@ -35,9 +35,9 @@ S2T/S2Q component type, a rank-one or pair-plane pole stratum, a higher order,
 the all-rank-drop branch, or the global conjecture.  Global Krenn--Gu remains
 **UNRESOLVED**.
 
-The successor support-one higher-row-rank theorem now excludes the `(3,3)`,
-`(3,2)`, and `(2,3)` support-one profiles without changing this theorem's
-proof.  The support-one `(2,2)` profile remains open.
+The successor support-one higher-row-rank theorem excludes the `(3,3)`,
+`(3,2)`, and `(2,3)` support-one profiles, and its successor excludes the
+support-one `(2,2)` profile, without changing this theorem's proof.
 
 ## 1. The support-two relation plane is an invertible graph
 

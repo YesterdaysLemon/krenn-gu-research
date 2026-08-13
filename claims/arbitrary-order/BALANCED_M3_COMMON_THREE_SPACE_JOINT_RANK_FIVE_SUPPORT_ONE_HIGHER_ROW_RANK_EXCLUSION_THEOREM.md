@@ -34,11 +34,13 @@ exact two-plane strengthening of the square-pencil obstruction excludes it.
 The unequal-kernel mixed chart falls to the already proved binary
 five-product obstruction.
 
-This theorem does **not** exclude the support-one `(2,2)` involved-row
-profile, any of the three Hilbert--Burch coordinate atlases, joint rank at
-most four, another S2T/S2Q component type, a rank-one or pair-plane pole
-stratum, a higher order, the all-rank-drop branch, or the global conjecture.
-Global Krenn--Gu remains **UNRESOLVED**.
+This theorem does **not by itself** exclude the support-one `(2,2)`
+involved-row profile, any of the three Hilbert--Burch coordinate atlases,
+joint rank at most four, another S2T/S2Q component type, a rank-one or
+pair-plane pole stratum, a higher order, the all-rank-drop branch, or the
+global conjecture.  The successor support-one `(2,2)` theorem now closes the
+remaining transverse profile without changing this theorem's proof.  Global
+Krenn--Gu remains **UNRESOLVED**.
 
 ## 1. The support-one target and the full coefficient equation
 
@@ -490,16 +492,19 @@ third-row kernel support two, every involved profile: IMPOSSIBLE (S2AI--S2AK);
 
 third-row kernel support one,
   involved rows (3,3), (3,2), or (2,3):             IMPOSSIBLE (here);
-  involved rows (2,2):                              OPEN;
+  involved rows (2,2):                              IMPOSSIBLE (successor);
+
+two-root transverse joint-rank-five branch:         IMPOSSIBLE (with successor);
 
 three-root Hilbert--Burch coordinate atlases:        OPEN;
 joint rank at most four / other physical branches:   OPEN;
 global Krenn--Gu conjecture:                         UNRESOLVED.       (54)
 ```
 
-The `(2,2)` support-one case is not a cosmetic omission.  Both involved
-zero rows leave one correction direction that is absent from Sections 3--4;
-it requires a separate exact normal form.
+The `(2,2)` support-one case is not a cosmetic omission from this proof.
+Both involved zero rows leave a correction structure absent from Sections
+3--4.  The successor determines that structure coefficientwise, obtains its
+separate exact relation-plane normal form, and excludes it.
 
 ## Focused replay
 
@@ -524,3 +529,4 @@ and a distinct coordinate convention.
 - [Joint-rank-five derivative and torus localization](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_DERIVATIVE_TORUS_LOCALIZATION_THEOREM.md)
 - [Complete joint-rank-six exclusion and binary five-product lemma](BALANCED_M3_COMMON_THREE_SPACE_COMPLETE_JOINT_RANK_SIX_EXCLUSION_THEOREM.md)
 - [Support-two `(3,3)` exclusion](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_TWO_THREE_BY_THREE_EXCLUSION_THEOREM.md)
+- [Support-one `(2,2)` complete exclusion](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_ONE_TWO_BY_TWO_COMPLETE_EXCLUSION_THEOREM.md)

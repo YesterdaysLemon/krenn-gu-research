@@ -538,9 +538,21 @@ mixed graph, the rank-two shore's complete zero row forces the same
 correction line and makes its missing colour equal two.  Permanent symmetry
 reduces the equal-kernel charts to a new exact two-plane square-pencil
 obstruction; the unequal-kernel chart is the existing binary five-product
-table.  Only support-one `(2,2)` remains at this transverse boundary, along
-with the Hilbert--Burch atlases, lower joint rank, other physical components,
-and higher orders.
+table.  At this stage, only support-one `(2,2)` remains at this transverse
+boundary, along with the Hilbert--Burch atlases, lower joint rank, other
+physical components, and higher orders.
+
+The
+[`support-one (2,2) complete exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_ONE_TWO_BY_TWO_COMPLETE_EXCLUSION_THEOREM.md)
+closes that final transverse profile.  The two involved zero rows determine
+every singleton correction, force distinct missing colours, and put the
+relation plane in one exact three-vector normal form.  Its untouched third
+colour gives a rank-one square while all three mixed products land in the
+fully transverse plane spanned by the other two pure targets.  The inherited
+binary-diagonal-plane common-zero atlas kills the alternating singleton
+determinant.  Thus the entire transverse two-root joint-rank-five branch is
+impossible.  The three Hilbert--Burch coordinate atlases are the remaining
+joint-rank-five common-three-space boundary.
 
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
