@@ -616,6 +616,18 @@ Hilbert--Burch `(1,1,1)` profile is impossible.  The `(1,1,2)` and `(1,2,2)`
 profiles, lower joint rank, other physical components, and higher orders
 remain open.
 
+The
+[`(1,1,2)` central-coordinate torus localization`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_ONE_TWO_CENTRAL_COORDINATE_TORUS_LOCALIZATION_THEOREM.md)
+starts the next profile.  For `x=lambda e_s`, `y=mu e_t`, away from the two
+repeated outer-factor lines when `s!=t`, exact transpose recovery has scalar
+`gamma(z)gamma(w)`.  S2R forces the four-dimensional relation kernel into
+one of nine hyperplanes.  Five would make the first and second row planes
+equal; the same-colour chart falls to the S2AL two-square lemma, while the
+distinct-colour chart falls to a complete pure/two-source/three-source
+mixed-factor atlas.  Thus only four ordinary-coloop orientations remain in
+this branch.  The repeated outer lines, outer coordinate-pair charts, and
+the rest of `(1,1,2)` remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
