@@ -52,8 +52,9 @@ Global Krenn--Gu remains **UNRESOLVED**.
 
 The successor S2AO now excludes a genuinely two-supported third factor on
 that complementary plane.  Thus the repeated-coordinate residual is the
-discrete factor-line pattern `(s,s,t)` with `s!=t`.  This successor does not
-change the scope or proof below.
+discrete factor-line pattern `(s,s,t)` with `s!=t`; S2AP excludes those
+patterns and hence closes the repeated-coordinate chart.  These successors
+do not change the scope or proof below.
 
 ## 1. The repeated-coordinate Hilbert--Burch grid
 
@@ -342,7 +343,8 @@ generic-point assumption is used.
 
 The successor S2AO further localizes the open complementary-plane line in
 (29): its genuinely two-supported part is impossible, leaving only the
-coordinate patterns `(s,s,t)` with `s!=t`.
+coordinate patterns `(s,s,t)` with `s!=t`.  S2AP excludes those discrete
+patterns exactly.
 
 ## Focused replay
 
