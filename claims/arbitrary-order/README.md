@@ -726,9 +726,22 @@ four-dimensional relation kernel into one of the nine ordinary
 root-coordinate hyperplanes.  The first-row map on `e_s^perp` is injective
 by the complete target equation.  Consequently the `alpha_s`, all three
 `beta_j`, and all three `gamma_k` coloop complements have the same exact
-two-plane image `R=rho(e_s^perp)`; only `alpha_a,alpha_b` have a different
-two-plane normal form.  This is a localization, not an exclusion: all nine
-coloop orientations remain open.
+two-plane image `R=rho(e_s^perp)`; only `alpha_a,alpha_b` require separate
+first-root-coloop normal forms.  This is a localization, not an exclusion:
+all nine coloop orientations remain open.
+
+The successor
+[`(1,2,2)` `beta_t`-coloop support localization`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_BETA_T_COLOOP_SUPPORT_LOCALIZATION_THEOREM.md)
+uses the complete derivative-zero face `beta_t=gamma(w)=0`.  If `w_t` is
+nonzero, this face is a forbidden binary diagonal cube in one space of
+dimension at most three.  Thus `w_t=0`.  Exact target contraction makes the
+second- and third-root row maps injective.  If `w` has both complementary
+coordinates nonzero, its same-third-row binary table is therefore forbidden,
+so `w` is proportional to one of the two complementary target coordinates.
+Two auxiliary derivative-zero faces additionally force `y` coordinate when
+`s=t` and make `span(z,w)` contain a coordinate different from `e_s`.  The
+two coordinate endpoints and the other eight coloop orientations remain
+open.
 
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)

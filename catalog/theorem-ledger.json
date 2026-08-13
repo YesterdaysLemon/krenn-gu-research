@@ -5045,6 +5045,40 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Hilbert-Burch (1,2,2) Beta-t-Coloop Support Localization",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_BETA_T_COLOOP_SUPPORT_LOCALIZATION_THEOREM.md",
+      "document_sha256_16": "8e25163d4d9dcaa0",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero localization on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
+        "all three root-root blocks are nonzero and the Hilbert-Burch derivative kernel has projection profile (1,2,2) in the S2AZ gauge x=lambda e_s, c=mu e_t, y_t=0, with lambda mu nonzero and the two stated projection pairs independent",
+        "the S2AZ coordinate-coloop fork selects the distinguished second-root coordinate hyperplane N subset {beta_t=0}",
+        "the full row image has dimension five, the S2AZ annihilator-row image V has dimension three, and its quotient formulas give rank-two quotient images for both pi and theta",
+        "exact target contraction makes the residual kernel rows p(y-perp intersect e_t-perp) and q(z-perp intersect w-perp) nonzero, so pi and theta both have rank three and are injective",
+        "on the complete product face beta_t=0 and gamma(w)=0, the derivative transpose vanishes identically and the full target equation becomes per(r(alpha),p(beta),q(gamma))=sum_i alpha_i beta_i gamma_i T_i",
+        "the beta_t-coloop complement has exact image R=rho(e_s-perp); corrected second-root and third-root face rows therefore lie in R, and every row in the complete face lies in the at-most-three-space R+span(A)",
+        "the auxiliary derivative-zero faces using u=y-perp intersect e_t-perp and v=z-perp intersect w-perp, together with the S2AL coefficient fork, force y coordinate when s=t and force span(z,w) to contain a target coordinate e_i with i different from s",
+        "if w_t is nonzero, restriction of w-perp to the two complementary coordinates is invertible and the complete face becomes the forbidden S2AN binary diagonal cube; hence w_t=0",
+        "when w_t=0 and both complementary coordinates of w are nonzero, the annihilator basis (w_b e_a^*-w_a e_b^*, e_t^*) gives the exact S2AO same-third-row binary table",
+        "injectivity of theta makes q_t nonzero; the two third rows are independent because proportionality contradicts the nonzero/zero table, so the same-third-row obstruction excludes complementary support two",
+        "therefore w is proportional to e_a or e_b; these two coordinate endpoints remain open subject to the two auxiliary incidence conditions",
+        "the other eight coordinate coloops, lower joint rank, other physical components, higher orders, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_two_two_beta_t_coloop_support_localization.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_two_two_beta_t_coloop_support_localization.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_BETA_T_COLOOP_SUPPORT_LOCALIZATION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds (SymPy derivative-face and binary-table replay; independent standard-library Fraction audit)",
+      "external_binaries": [],
+      "note": "The distinguished beta_t coordinate-coloop orientation in the rank-five Hilbert-Burch (1,2,2) profile forces w onto one of the two target-coordinate lines complementary to e_t. Exact row-rank and auxiliary-face arguments add two coordinate incidences. The two coordinate endpoints remain open, as do the other eight coloops and all other stated branches; global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
