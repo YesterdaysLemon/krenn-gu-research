@@ -74,6 +74,7 @@ flowchart TD
   S3D["Diagonal-complete all-rank-drop family<br/>PROVED sharpness, NOT a witness"]
   S3Q["Common-quadratic local-GL orbit<br/>PROVED rank-drop, EXCLUDED from witness locus"]
   S3P["Common-quadric mixed/pure residues<br/>PROVED; common-conformal shore EXCLUDED"]
+  S3B["Root-quadric basepoint bridge<br/>m=3,4 EXCLUDED; m>=5 -> PR"]
 
   M1["Maximum torus-root split<br/>PROVED reduction"]
   M2["r >= 2 fixed-surplus layer<br/>PROVED reduction"]
@@ -166,6 +167,7 @@ flowchart TD
   S3 -->|common-quadratic stratum| S3Q
   S1 -->|common-quadric shore specialization| S3P
   S3Q -. strict special case .-> S3P
+  S3P -->|fully supported conic point| S3B
 
   G0 -->|universal reduction| M1
   M1 -->|case r >= 2| M2
@@ -194,6 +196,7 @@ flowchart TD
   O2I -->|larger/unfactorized boundary| O3
   O2 -->|boundary| O3
   M2 -->|zero-surplus specialization| PR
+  S3B -->|existing zero-surplus extraction| PR
   PR -->|necessary rank-drop boundary| PRC
 
   U1 -->|reduction| U2
@@ -289,6 +292,7 @@ flowchart TD
 | `S3D` | For every `n=2m>=8`, one diagonal-complete graph with invertible blocks, complete support, local concision, and normalized pure coefficients lies in **every** balanced rank-drop locus; its mixed coefficients are nonzero, so it is **not a witness** | [Diagonal-complete sharpness theorem](../claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md) |
 | `S3Q` | The full vertex-gauge common-quadratic orbit lies in `B_all` for `n>=8` but is **disjoint from the witness equations** for `n>=6`: nondegenerate members have two-flattening rank six versus GHZ rank three, while degenerate members fail local rank | [Common-quadratic orbit exclusion](../claims/arbitrary-order/BALANCED_COMMON_QUADRATIC_ORBIT_RANK_DROP_AND_FLATTENING_EXCLUSION_THEOREM.md) |
 | `S3P` | On any balanced shore whose root-root diagonal quadratics share one nondegenerate `Q`, every nonconstant mixed-word cross permanent is **divisible by `Q`**, while each constant word has the exact pure-root residue; every physical common-conformal shore is **excluded**, even with arbitrary internal nonroot blocks, by the nonzero-permanent mixed branch or zero-permanent pure branch | [Common-quadric mixed/pure residue theorem](../claims/arbitrary-order/BALANCED_COMMON_QUADRIC_MIXED_PERMANENT_DIVISIBILITY_AND_CONFORMAL_SHORE_EXCLUSION_THEOREM.md) |
+| `S3B` | A fully target-supported common projective zero of all diagonal root quadrics on one balanced shore exposes the existing zero-surplus restriction `P_m -> Delta_3`.  A common nondegenerate `Q` always supplies such a conic point, so the entire common-`Q` shore is **excluded for `m=3,4`** and **reduced to PR for `m>=5`**, without cross-column separability.  An exact normalized `n=8` fixture shows `B_all` does not force a basepoint in a prescribed root gauge; the fixture is latently common-quadratic and not a witness. | [Root-quadric basepoint bridge and gauge sharpness](../claims/arbitrary-order/BALANCED_ROOT_QUADRIC_BASEPOINT_PERMANENT_RESTRICTION_AND_GAUGE_SHARPNESS_THEOREM.md) |
 | `M1` | Maximum torus-root saturation and `r=1` / `r>=2` split: **proved universal reduction** | [Maximal torus-root theorem](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md) |
 | `M2` | One complete fixed-surplus physical hafnian layer; coordinate two-residual absorption: **proved reduction, not exclusion** | [Maximal torus-root theorem](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer) |
 | `PR` | Weighted `P_t -> Delta_3` restriction family: **extracted at zero surplus and on the conditional consecutive-lift branch; arbitrary-order exclusion open**. The live `t=6` / P6 restriction remains inside this node; the three-excess notes address only the first strict-support layer, not arbitrary support. | [Maximal-root extraction](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer), [consecutive single-open lift](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md), [P6 package index](../claims/p6/README.md), [three-excess port boundary](../claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md), and [conformal Birkhoff boundary](../claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md) |
@@ -386,6 +390,8 @@ flowchart TD
 | `S3` | exact stratum exclusion | `S3Q` | Simultaneously vertex-gauge-equivalent common symmetric edge forms are all-rank-drop from `n=8` onward, but flattening rank excludes their entire local-GL orbit from the ternary witness locus; no synchronization theorem for arbitrary `B_all` is inferred. |
 | `S1` | conditional stratum obstruction | `S3P` | A common root diagonal quadric makes the all-cross permanent the complete residue modulo `Q`; nonconstant words give zero and constant words give pure-root products.  The two scalar-permanent cases exclude a physical common-conformal shore, but no universal common-quadric or conformal extraction is inferred. |
 | `S3Q` | strict special case | `S3P` | The fully synchronized common-quadratic orbit has column-separable cross scalars all equal to one; the newer shore theorem allows arbitrary internal nonroot blocks and varying root/cross scalars and also closes zero permanent by a pure word. |
+| `S3P` | exact proof-DAG bridge | `S3B` | A point on the common nondegenerate conic avoids the finite target-coordinate line arrangement, producing a fully supported balanced root half.  The already proved zero-surplus extraction gives `P_m -> Delta_3`; `P_3` rank and `P_4` subrank exclude `m=3,4`, while `m>=5` remains at PR. |
+| `S3B` | exact fixed-gauge sharpness | `S3` | All-cut rank drop, invertible blocks, local concision, and normalized pure coefficients do not force a projective basepoint for the same-vector root quadrics in a prescribed gauge.  The control is latently common-quadratic, so existential multiroot synchronization remains open. |
 | `G0` | reduction | `M1` | Maximum-cardinality torus roots give a pointwise exhaustive split. |
 | `M1` | case coverage | `M2`, `U1` | The two cases are `r>=2` and `r=1`; neither is excluded by the split. |
 | `S1` + `M2` | mathematical premises | `O1` | Rebalancing the fixed layer exposes a truncated contracted sensor. |
@@ -496,9 +502,15 @@ branch. They are not an instruction to begin all of them at once.
    quadric forces every nonconstant mixed cross permanent to be divisible by
    that quadric and fixes the constant-word pure residue.  These complementary
    equations exclude the entire physical common-conformal shore, regardless
-   of its scalar permanent.  The residual problem must evade common-conformal
-   synchronization or satisfy a genuinely nonseparable simultaneous residue
-   system.
+   of its scalar permanent.  A fully supported point on the common conic also
+   exposes the existing zero-surplus restriction `P_m -> Delta_3`, without
+   any cross-column separability: this excludes the full common-quadric shore
+   at `m=3,4` and routes `m>=5` to the permanent frontier.  A normalized
+   eight-vertex control shows that all-cut rank drop cannot force a root-ideal
+   basepoint in a prescribed same-vector gauge, even with invertible blocks,
+   local concision, and pure normalization.  The residual S3 problem must use
+   overlapping cuts and mixed target equations to force a fully supported
+   multiroot basepoint, latent synchronization, or a different obstruction.
 
 3. **Zero-surplus permanent restrictions.** Every hypothetical restriction
    now lies in the simultaneous co-two product-sensor rank-drop locus; for P6
@@ -704,6 +716,7 @@ responses; it does not collapse them into the globally rigid `k=4` cell.
 | Local concision, complete support, invertible blocks, and normalized pure coefficients force some balanced sensor to be full | False for every `n>=8`: the diagonal-complete family has all these properties and rank at most `binomial(m,2)+1` on every cut; it fails explicit mixed-word zero equations | [Diagonal-complete all-rank-drop boundary](../claims/arbitrary-order/BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md) |
 | Independent local basis changes can rescue the common-quadratic all-rank-drop mechanism as a witness | False: the synchronized orbit has two-vertex flattening rank six when nondegenerate, invariant under every local isomorphism, while ternary GHZ has rank three; degenerate forms already fail local rank | [Common-quadratic orbit exclusion](../claims/arbitrary-order/BALANCED_COMMON_QUADRATIC_ORBIT_RANK_DROP_AND_FLATTENING_EXCLUSION_THEOREM.md) |
 | Arbitrary internal nonroot blocks can repair a common-conformal balanced shore | False: modulo the common root quadric every non-all-cross sector vanishes; nonzero scalar permanent leaves a forbidden mixed product, while zero permanent contradicts the nonzero pure-root product from a constant word | [Common-quadric mixed/pure residue theorem](../claims/arbitrary-order/BALANCED_COMMON_QUADRIC_MIXED_PERMANENT_DIVISIBILITY_AND_CONFORMAL_SHORE_EXCLUSION_THEOREM.md) |
+| All-balanced rank drop plus invertible blocks, local concision, and normalized pure coefficients force a common zero of the same-vector root quadrics in a prescribed gauge | False at `n=8`: a normalized rational common-quadratic-orbit graph has every balanced sensor of rank at most seven, while six root quadrics in the target gauge span all of `Sym^2(C^3)^*` and have empty projective base locus.  Independent vertex gauges recover one common conic, so the fixture does not refute latent synchronization. | [Root-quadric basepoint gauge sharpness](../claims/arbitrary-order/BALANCED_ROOT_QUADRIC_BASEPOINT_PERMANENT_RESTRICTION_AND_GAUGE_SHARPNESS_THEOREM.md#4-all-cut-rank-drop-does-not-force-a-fixed-gauge-basepoint) |
 | Simultaneous co-two permanent sensor rank drop, local rank, and nonzero pure coefficients exclude P6 | False as an argument: an exact two-block coordinate model has all fifteen four-mode sensors of dimension at most nine and all pure coefficients nonzero, but has mixed support and flattening rank one rather than the target rank three | [Co-two permanent product-sensor boundary](../claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_RANK_DROP_THEOREM.md#5-sharpness-of-what-rank-drop-alone-can-say) |
 | Only equal regular ratios survive the four-regular five-cell common kernel | False: a `2+2` reciprocal primitive-cube-root divisor also gives a one-dimensional kernel; the corrected dimension bound still closes detection | [Complete aligned five-cell detector](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md#lemma-2-four-defect-full-common-kernels) |
 

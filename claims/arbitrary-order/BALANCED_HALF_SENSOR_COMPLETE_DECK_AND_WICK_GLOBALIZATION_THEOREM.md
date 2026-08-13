@@ -243,8 +243,10 @@ root-root diagonal quadratics share a nondegenerate `Q`, every nonconstant
 mixed-word cross permanent must be divisible by `Q`; a column-separable
 common-conformal shore is therefore impossible even with arbitrary internal
 nonroot blocks.  A nonzero scalar permanent fails a mixed word, while zero
-permanent fails the constant-colour pure residue.  General nonseparable
-simultaneous residue branches remain open.
+permanent fails the constant-colour pure residue.  The later
+[`root-quadric basepoint bridge`](BALANCED_ROOT_QUADRIC_BASEPOINT_PERMANENT_RESTRICTION_AND_GAUGE_SHARPNESS_THEOREM.md)
+routes every nonseparable common-`Q` shore to `P_m -> Delta_3`; this excludes
+`m=3,4` and leaves `m>=5` open at the permanent restriction frontier.
 
 ## 4. Projective complete-deck lift
 
