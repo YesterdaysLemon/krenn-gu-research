@@ -5110,6 +5110,42 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Hilbert-Burch (1,2,2) Alpha-s-Coloop Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_ALPHA_S_COLOOP_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "64c0e02986f09760",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
+        "all three root-root blocks are nonzero and the Hilbert-Burch derivative kernel has projection profile (1,2,2) in the S2AZ gauge x=lambda e_s, c=mu e_t, y_t=0, with lambda mu nonzero and the two stated projection pairs independent",
+        "the S2AZ coordinate-coloop fork selects the distinguished first-root recovery hyperplane N subset {alpha_s=0}, whose six-row image is exactly R=rho(e_s-perp)",
+        "the S2AZ quotient formulas and two exact target-contraction arguments make both the second-root and third-root row maps injective without using a beta_t-coloop assumption",
+        "for every projective direction [h:k], the planes P_delta={beta:k beta(y)-h mu beta_t=0} and Q_delta={gamma:k gamma(z)-h gamma(w)=0} give a complete derivative-zero product face when alpha_s=0",
+        "the evaluation-kernel rows of P_delta and Q_delta lie in R, while representatives with opposite evaluation pairs have row sum in R; hence R, p(P_delta), and q(Q_delta) lie in one space of dimension at most three",
+        "projection of P_delta and Q_delta onto the two coordinates complementary to s is invertible exactly at the respective gates L_P=k y_s-h mu delta_(s,t) and L_Q=k z_s-h w_s",
+        "if both gates are nonzero, exact coordinate lifts give the forbidden S2AN binary diagonal cube; therefore L_P L_Q vanishes on the full projective line",
+        "the characteristic-zero field is infinite, so the homogeneous product is identically zero and its linear factors give the exact fork A: s differs from t and y_s=0, or B: z_s=w_s=0",
+        "if A holds without B, a direction avoiding finitely many roots gives two fully transverse target cells sharing one active second row; after permanent symmetry this is the S2AO same-third-row obstruction",
+        "if B holds without A, the independence of z,w in e_s-perp gives a direction with an active third row on both complementary coordinates; the table is again the S2AO same-third-row obstruction",
+        "under A and B simultaneously, the complete binary table has only per(r_0,p_1,q_1)=b_0 T_0 and per(r_1,p_1,q_1)=b_1 T_1 nonzero, with fully transverse targets",
+        "for pairwise-distinct row planes, the independent-normal and pencil-normal symmetric-cubic restriction kernels from S2AN contradict the source-coordinate zero pattern of that same-pair table",
+        "if R=P or R=Q, permanent symmetry forces a singular change-of-basis matrix; if P=Q, the surviving values belong to one square map containing two fully transverse decomposable tensors, contradicting S2AL tangent-line separation",
+        "therefore the alpha_s coloop is impossible; the other seven (1,2,2) coordinate coloops, lower joint rank, other physical components, higher orders, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_two_two_alpha_s_coloop_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_two_two_alpha_s_coloop_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_ALPHA_S_COLOOP_EXCLUSION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds (SymPy determinant-face, target-table, cubic-kernel, and equal-plane replay; independent standard-library Fraction audit)",
+      "external_binaries": [],
+      "note": "The distinguished alpha_s coordinate-coloop orientation in the rank-five Hilbert-Burch (1,2,2) profile is impossible. A complete projective determinant-face pencil reduces all projection behavior to existing binary-diagonal and same-third-row obstructions plus a new same-pair table, which is excluded by an exhaustive plane-incidence argument. Seven other coordinate coloops and all other stated branches remain open; global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

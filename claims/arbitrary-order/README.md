@@ -756,6 +756,20 @@ second complementary endpoint is identical after relabelling.  Thus the
 distinguished `beta_t` coloop is impossible; the other eight `(1,2,2)`
 coloop orientations remain open.
 
+The successor
+[`(1,2,2)` `alpha_s`-coloop exclusion](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_ALPHA_S_COLOOP_EXCLUSION_THEOREM.md)
+closes a second orientation.  On `alpha_s=0`, the projective pencil pairing
+the evaluation lines `(beta(y),mu beta_t)` and `(gamma(z),gamma(w))` gives a
+complete target face on three two-planes in one at-most-three-space.  Two
+coordinate-projection determinants either expose the forbidden binary
+diagonal cube or force `s!=t,y_s=0` or `z_s=w_s=0`.  A one-sided
+degeneration is the existing same-third-row obstruction.  At their
+intersection the table has two fully transverse targets sharing the same
+second/third-row pair; independent, pencil, and equal-plane incidence cases
+all contradict exact cubic or square-map obstructions.  Thus the
+distinguished `alpha_s` coloop is impossible; the other seven `(1,2,2)`
+coloop orientations remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
