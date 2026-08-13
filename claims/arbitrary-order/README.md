@@ -532,8 +532,18 @@ instead gives a product of nonzero linear forms, so arbitrary internal
 nonroot blocks cannot complete it to GHZ.  If the scalar permanent is zero,
 a constant-colour contraction instead leaves a nonzero pure-root product
 modulo `Q`, so the entire physical common-conformal shore is excluded.
-One-word zero-permanent factorizations and general nonseparable simultaneous
-`Q`-residue systems remain open.
+One-word zero-permanent factorizations remain a boundary of that detector.
+
+The successor
+[`root-quadric basepoint bridge`](BALANCED_ROOT_QUADRIC_BASEPOINT_PERMANENT_RESTRICTION_AND_GAUGE_SHARPNESS_THEOREM.md)
+handles the full nonseparable common-`Q` shore.  A point on the irreducible
+conic `Q=0`, chosen off all pulled-back target-coordinate lines, is a fully
+supported balanced torus-root half.  The existing zero-surplus extraction
+then gives `P_m -> Delta_3`.  Exact low-order permanent results exclude
+`m=3,4`; every `m>=5` case moves to the live permanent frontier.  A normalized
+eight-vertex gauge fixture shows separately that all-cut rank drop does not
+force a projective root-ideal basepoint in a prescribed common gauge; the
+fixture is latently common-quadratic and is not a witness.
 
 Independently, the
 [`co-two permanent product-sensor theorem`](ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_RANK_DROP_THEOREM.md)

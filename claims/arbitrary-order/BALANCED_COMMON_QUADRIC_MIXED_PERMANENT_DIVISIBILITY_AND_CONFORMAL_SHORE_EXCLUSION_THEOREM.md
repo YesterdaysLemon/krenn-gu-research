@@ -40,8 +40,22 @@ scalars may vary, and a single balanced cut suffices.
 
 The theorem does not prove that every hypothetical witness has a common root
 quadric or force general cross permanents to be column-separable.  Those are
-the exact surviving boundaries.  The global Krenn--Gu conjecture remains
-**UNRESOLVED**.
+the exact boundaries of the direct divisibility/factorization detector in
+this document.  The successor below routes the full common-quadric shore to a
+different permanent-restriction obligation.  The global Krenn--Gu conjecture
+remains **UNRESOLVED**.
+
+## Successor proof-DAG note
+
+The later
+[`balanced root-quadric basepoint theorem`](BALANCED_ROOT_QUADRIC_BASEPOINT_PERMANENT_RESTRICTION_AND_GAUGE_SHARPNESS_THEOREM.md)
+strengthens the consequence of the same common nondegenerate `Q`.  A point on
+the conic `Q=0` can be chosen off every pulled-back target-coordinate line;
+the resulting balanced torus-root half exposes the existing zero-surplus
+restriction `P_m -> Delta_3`.  Thus nonseparable common-`Q` shores are
+excluded for `m=3,4` and reduce to the live permanent restriction problem for
+`m>=5`.  The present document remains the owner of the wordwise polynomial
+residues and common-conformal direct exclusion.
 
 ## 1. Balanced-shore notation
 
@@ -283,7 +297,7 @@ shore supplies the **same** scalar matrix `lambda` for the constant words;
 their pure residues then give the complementary contradiction.  No claim is
 made that arbitrary wordwise column factorizations share one scalar matrix.
 
-Without column separation Theorem 1 leaves the exact
+Without column separation Theorem 1 leaves, at the residue level, the exact
 divisibility branch
 
 ```text
@@ -293,7 +307,10 @@ for every nonconstant coordinate word alpha.         (19)
 
 These are necessary conditions, not constructions of witnesses.  Internal
 nonroot blocks cannot repair a failure of (19), because they occur only in
-the sectors already killed modulo `Q`.
+the sectors already killed modulo `Q`.  The successor theorem cited above
+routes any hypothetical survivor of the full common-`Q` shore to
+`P_m -> Delta_3`; it does not make the residue equations themselves an
+algebraic contradiction at arbitrary `m`.
 
 The proof-topology update is therefore:
 
@@ -304,7 +321,7 @@ one column-separable mixed word, nonzero permanent:        EXCLUDED;
 common-conformal shore, every cross permanent value:       EXCLUDED;
 arbitrary internal nonroot completion can repair it:       FALSE;
 one-word zero-permanent column separation:                  OPEN;
-nonseparable cross permanents satisfying all residues:      OPEN;
+nonseparable common-Q shore:                                REDUCED TO P_m;
 universal extraction of a common root quadric:              NOT CLAIMED;
 global Krenn--Gu conjecture:                                 UNRESOLVED.     (20)
 ```

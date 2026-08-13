@@ -9,8 +9,16 @@ constant-colour contraction leaves a nonzero product of root coordinate
 forms modulo `Q`.  The original review below remains the exact review of the
 mixed-word/nonzero-permanent checkpoint.  Its statements that zero permanent
 was open are historical for that checkpoint and are superseded only in the
-common-conformal specialization; one-word column separation and general
-nonseparable `Q`-divisible permanents retain their stated boundaries.
+common-conformal specialization; one-word column separation retains its
+stated boundary.
+
+The still later
+[`balanced root-quadric basepoint review`](BALANCED_ROOT_QUADRIC_BASEPOINT_PERMANENT_RESTRICTION_AND_GAUGE_SHARPNESS_REVIEW_2026-08-13.md)
+records a second successor.  A fully supported point on `Q=0` routes every
+hypothetical common-`Q` shore, including nonseparable cross permanents, to the
+existing restriction `P_m -> Delta_3`.  Hence the nonseparable branch below is
+historical as a standalone residue obligation: it is excluded for `m=3,4`
+and remains open at the permanent frontier for `m>=5`.
 
 ## Verdict and provenance
 

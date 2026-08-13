@@ -669,7 +669,7 @@
     {
       "name": "Balanced Half-Sensor Complete Deck and Wick Globalization Theorem",
       "document": "claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md",
-      "document_sha256_16": "7b7712781c5ece31",
+      "document_sha256_16": "8da7da15af4b69cc",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact matching and projective-bundle proof over characteristic zero",
@@ -1059,7 +1059,7 @@
     {
       "name": "Balanced Common-Quadric Mixed-Permanent Divisibility and Conformal-Shore Exclusion Theorem",
       "document": "claims/arbitrary-order/BALANCED_COMMON_QUADRIC_MIXED_PERMANENT_DIVISIBILITY_AND_CONFORMAL_SHORE_EXCLUSION_THEOREM.md",
-      "document_sha256_16": "6dbd450517792d68",
+      "document_sha256_16": "3d2f4374bc2ca062",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact balanced matching-sector, permanent-factorization, and polynomial-UFD proof over characteristic zero",
@@ -1067,7 +1067,8 @@
         "mixed-permanent divisibility holds for every nonconstant nonroot coordinate word without assumptions on internal nonroot blocks",
         "the one-word column-separable mixed exclusion additionally requires nonzero column forms and nonzero scalar cross permanent",
         "a physical common-conformal shore is excluded for every scalar permanent value because its constant words share the same scalar matrix",
-        "common-quadric extraction, general column separation, one-word zero permanent, and nonseparable simultaneous Q-residue systems remain open"
+        "the successor root-quadric basepoint theorem routes every nonseparable common-Q shore to P_m -> Delta_3, excluding m=3,4 and leaving m>=5 at the permanent frontier",
+        "common-quadric extraction from arbitrary witnesses, general column separation, and one-word zero permanent remain open at this theorem's direct-detector scope"
       ],
       "dependencies": [],
       "primary_verifier": "claims/arbitrary-order/verify_balanced_common_quadric_mixed_permanent_divisibility_and_conformal_shore_exclusion.py",
@@ -1076,7 +1077,35 @@
       "audit_provenance": "independent_exact_identity_audit",
       "expected_runtime": "seconds (SymPy primary; standard-library sparse-polynomial audit)",
       "external_binaries": [],
-      "note": "The written proof identifies the all-cross permanent as the full contraction residue modulo the common root quadric Q because C_empty=1 and every other balanced sector contains a root-root edge. Nonconstant words force Q-divisibility, while constant words give a nonzero pure-root product. A physical common-conformal shore shares one scalar cross matrix across both sectors: nonzero permanent contradicts a mixed word and zero permanent contradicts the pure residue, so arbitrary internal nonroot blocks cannot repair any such shore. One-word zero-permanent factorization, general nonseparable simultaneous residue systems, and the global conjecture remain open.",
+      "note": "The written proof identifies the all-cross permanent as the full contraction residue modulo the common root quadric Q because C_empty=1 and every other balanced sector contains a root-root edge. Nonconstant words force Q-divisibility, while constant words give a nonzero pure-root product. A physical common-conformal shore shares one scalar cross matrix across both sectors: nonzero permanent contradicts a mixed word and zero permanent contradicts the pure residue, so arbitrary internal nonroot blocks cannot repair any such shore. The successor root-quadric basepoint theorem routes every nonseparable common-Q shore to P_m -> Delta_3, excluding m=3,4 and leaving m>=5 at PR. Universal common-quadric extraction and the global conjecture remain open.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
+      "name": "Balanced Root-Quadric Basepoint Permanent-Restriction and Gauge-Sharpness Theorem",
+      "document": "claims/arbitrary-order/BALANCED_ROOT_QUADRIC_BASEPOINT_PERMANENT_RESTRICTION_AND_GAUGE_SHARPNESS_THEOREM.md",
+      "document_sha256_16": "f17e30d7930e8b42",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact balanced matching-partition, projective-conic, and imported permanent-restriction proof over characteristic zero",
+        "one balanced cut with shore size m>=2 and fixed root identifications; the root-ideal residue itself requires no common quadric or projective basepoint",
+        "the permanent bridge requires a common projective zero of all diagonal root quadrics that avoids every pulled-back target coordinate line",
+        "a common nondegenerate root quadric supplies such a point and reduces the full shore to P_m -> Delta_3 without cross-column or internal-nonroot assumptions",
+        "the exact P3 rank and P4 subrank theorems exclude only m=3,4; m>=5 remains at the arbitrary permanent frontier",
+        "the normalized eight-vertex sharpness fixture refutes only fixed-gauge basepoint extraction from all-balanced rank drop; it is latently common-quadratic, has a nonzero mixed coefficient, and is not a witness",
+        "existential multiroot basepoint extraction, latent synchronization for arbitrary B_all witnesses, the all-balanced witness locus, and global resolution are not claimed"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_root_quadric_basepoint_permanent_restriction_and_gauge_sharpness.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_root_quadric_basepoint_permanent_restriction_and_gauge_sharpness.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_ROOT_QUADRIC_BASEPOINT_PERMANENT_RESTRICTION_AND_GAUGE_SHARPNESS_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds (SymPy primary; standard-library Fraction audit)",
+      "external_binaries": [],
+      "note": "The written proof gives the complete repeated-root residue modulo the ideal generated by all diagonal root quadrics. A fully target-supported common zero kills every internal-root matching on a balanced shore and invokes the existing zero-surplus permanent extraction. A common nondegenerate conic always has such a point off the finite target-coordinate line arrangement, so common-Q shores are excluded for m=3,4 and reduce to PR for m>=5. The exact normalized rational n=8 fixture has all-cut rank drop, invertible blocks, local concision, pure coefficients (1,1,1), and six fixed-gauge root quadrics spanning Sym^2, while conjugation exposes its latent common form and a mixed coefficient -1 confirms it is not a witness. The scripts audit bounded identities and constants; S3 and the global conjecture remain open and UNRESOLVED.",
       "claim_package": "claims/arbitrary-order",
       "proof_variant": "canonical",
       "subpackage": null,
