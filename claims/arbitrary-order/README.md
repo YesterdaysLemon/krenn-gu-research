@@ -770,6 +770,20 @@ all contradict exact cubic or square-map obstructions.  Thus the
 distinguished `alpha_s` coloop is impossible; the other seven `(1,2,2)`
 coloop orientations remain open.
 
+The successor
+[`(1,2,2)` residual second-root-coloop support localization`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_SUPPORT_LOCALIZATION_THEOREM.md)
+advances both `beta_j` coloops with `j!=t`.  Their complete face
+`beta_t=gamma(w)=0` puts the first- and third-row binary planes in the exact
+three-space `S=R direct-sum span(A)` and puts the complementary second row
+there, while the selected row `p_j` may escape.  If `w_t!=0`, this is a
+binary diagonal table with one middle-row escape.  Intersecting the two
+planes inside `S`, the tangent-line and mixed-factor lemmas force their
+common line to be a coordinate endpoint in both planes.  Four ordered
+endpoint incidences and seven nonzero support masks leave 28 exact normal
+forms; pinned rational Nullstellensatz identities exclude every one.  Hence
+both residual second-root coloops satisfy `w_t=0`.  Their resulting
+residuals and the other five `(1,2,2)` coloop orientations remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

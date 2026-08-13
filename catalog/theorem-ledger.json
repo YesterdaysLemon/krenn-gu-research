@@ -5146,6 +5146,43 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Hilbert-Burch (1,2,2) Residual Second-Root-Coloop Support Localization",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_SUPPORT_LOCALIZATION_THEOREM.md",
+      "document_sha256_16": "6d8e2c4e66801b39",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero localization on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
+        "all three root-root blocks are nonzero and the Hilbert-Burch derivative kernel has projection profile (1,2,2) in the S2AZ gauge x=lambda e_s, c=mu e_t, y_t=0, with lambda mu nonzero and the two stated projection pairs independent",
+        "the S2AZ coordinate-coloop fork selects one of the two residual second-root hyperplanes N subset {beta_j=0} with j different from t; the third colour is k",
+        "the selected six-row image is exactly R=rho(e_s-perp), while S=R direct-sum span(A) is exactly three-dimensional and is the complete first-root row image",
+        "the canonical annihilator rows put p_k-y_k A and every q_m-z_m A-w_m B in R; consequently p_k and q(w-perp) lie in S, but no containment of p_j in S is assumed",
+        "on the complete derivative-zero face beta_t=0 and gamma(w)=0, the full target equation is per(r(alpha),p(beta),q(gamma))=sum_i alpha_i beta_i gamma_i T_i",
+        "if w_t is nonzero, coordinate projection identifies w-perp with the two complementary coordinates {j,k} and the complete face becomes an exact binary diagonal permanent table",
+        "the first- and third-row binary planes and p_k lie in S, while p_j is the sole possible row escape; if p_j also lies in S, the existing S2AN binary-diagonal frame obstruction applies",
+        "when p_j escapes, equality of the first- and third-row planes contradicts the S2AL two-transverse-squares lemma",
+        "for distinct first- and third-row planes, their intersection line cannot be generic in both by S2AL tangent-line separation and cannot be coordinate in only one by S2AL mixed factor sharing; it is therefore a coordinate endpoint in both ordered planes",
+        "the four ordered endpoint pairs and seven nonempty support masks of the in-space row p_k form a proved exhaustive 28-case normal-form cover",
+        "each endpoint normal form gives 64 selected source-coordinate cubic equations whose solution is necessary for the binary target table; no constraints on the unused third source-coordinate lines are assumed",
+        "the pinned rational Nullstellensatz certificate contains 2310 sparse multiplier terms and proves a unit-ideal identity for every one of the 28 systems; rational identities extend to every characteristic-zero field",
+        "the primary verifier and independent standard-library audit separately reconstruct all 64 generators in every case; the audit reverses the variable order and shares neither a polynomial library nor a stored generator list with the primary verifier",
+        "therefore w_t=0 under either residual beta_j coloop, but neither w_t=0 residual is excluded",
+        "the three third-root coloops, two complementary first-root coloops, lower joint rank, other physical components, higher orders, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_two_two_residual_second_root_coloop_support_localization.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_two_two_residual_second_root_coloop_support_localization.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_SUPPORT_LOCALIZATION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds (SymPy reconstruction and 28 rational certificate replays; independent reversed-order standard-library sparse audit; Singular 4.x is optional for certificate regeneration only)",
+      "external_binaries": [],
+      "note": "Both residual second-root coordinate coloops beta_j with j different from t force w_t=0. Their derivative-zero face is a binary diagonal table with one possible middle-row escape from an exact three-space; plane incidence reduces this escape to 28 endpoint normal forms, all excluded by pinned exact rational Nullstellensatz identities with an independent no-import replay. Neither w_t=0 residual is excluded, five other (1,2,2) coloops and all other stated branches remain open, and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
