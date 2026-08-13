@@ -275,6 +275,14 @@ Neither permanent nonrestriction in (11) is asserted here.  The `P_5` case
 is the current finite tensor bottleneck, while no `P_6` nonrestriction
 theorem is presently certified in this repository.
 
+At eight vertices, the successor
+[`five-root three-colour boundary-incidence theorem`](EIGHT_VERTEX_FIVE_ROOT_THREE_COLOUR_BOUNDARY_INCIDENCE_CODIMENSION_THREE_THEOREM.md)
+uses the full ternary witness slice identities to force one vanished root
+coordinate in every target colour at every five-root zero.  Its finite
+incidence cover gives codimension at least three on the witness subclass.
+That result is not an ambient improvement of the no-torus locus proved here:
+it uses the witness equations and confines a smaller coefficient class.
+
 ## Exact replay
 
 ```text

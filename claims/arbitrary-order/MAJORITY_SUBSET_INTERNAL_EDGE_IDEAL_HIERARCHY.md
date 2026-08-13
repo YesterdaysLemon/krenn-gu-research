@@ -203,6 +203,15 @@ internal-edge ideals share generators, while their three forced pure classes
 must agree on intersections.  This is a plausible source of the missing
 local-to-global contradiction.
 
+At eight vertices, the successor
+[`five-root three-colour boundary-incidence theorem`](EIGHT_VERTEX_FIVE_ROOT_THREE_COLOUR_BOUNDARY_INCIDENCE_CODIMENSION_THREE_THEOREM.md)
+combines the `r=1`, five-root specialization with unconditional five-root
+intersection.  Its incidence projection puts every induced `K_5` tuple of a
+witness whose ten blocks are all nonzero in a closed projective coefficient
+envelope of codimension at least three.  That successor is a new proof-DAG
+combination and elimination
+step; it does not change the arbitrary-order hierarchy proved here.
+
 ## Literature interface
 
 The matching tensor is the squarefree block projection of a power of a

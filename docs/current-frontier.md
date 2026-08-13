@@ -75,6 +75,8 @@ flowchart TD
   S3Q["Common-quadratic local-GL orbit<br/>PROVED rank-drop, EXCLUDED from witness locus"]
   S3P["Common-quadric mixed/pure residues<br/>PROVED; common-conformal shore EXCLUDED"]
   S3B["Root-quadric basepoint bridge<br/>m=3,4 EXCLUDED; m>=5 -> PR"]
+  S3C["Every induced K5 of an n=8 witness<br/>CODIMENSION >=3 boundary envelope"]
+  S3H["Adjacent-cut monomial control<br/>H1 BLIND; pair-local H2 DETECTS"]
 
   M1["Maximum torus-root split<br/>PROVED reduction"]
   M2["r >= 2 fixed-surplus layer<br/>PROVED reduction"]
@@ -168,6 +170,9 @@ flowchart TD
   S1 -->|common-quadric shore specialization| S3P
   S3Q -. strict special case .-> S3P
   S3P -->|fully supported conic point| S3B
+  G0 -->|n=8 anchored five-root slices| S3C
+  S3C -. overlap with all-cut minors open .-> S3
+  S3 -. rankdrop + pure + H1 insufficient .-> S3H
 
   G0 -->|universal reduction| M1
   M1 -->|case r >= 2| M2
@@ -293,6 +298,8 @@ flowchart TD
 | `S3Q` | The full vertex-gauge common-quadratic orbit lies in `B_all` for `n>=8` but is **disjoint from the witness equations** for `n>=6`: nondegenerate members have two-flattening rank six versus GHZ rank three, while degenerate members fail local rank | [Common-quadratic orbit exclusion](../claims/arbitrary-order/BALANCED_COMMON_QUADRATIC_ORBIT_RANK_DROP_AND_FLATTENING_EXCLUSION_THEOREM.md) |
 | `S3P` | On any balanced shore whose root-root diagonal quadratics share one nondegenerate `Q`, every nonconstant mixed-word cross permanent is **divisible by `Q`**, while each constant word has the exact pure-root residue; every physical common-conformal shore is **excluded**, even with arbitrary internal nonroot blocks, by the nonzero-permanent mixed branch or zero-permanent pure branch | [Common-quadric mixed/pure residue theorem](../claims/arbitrary-order/BALANCED_COMMON_QUADRIC_MIXED_PERMANENT_DIVISIBILITY_AND_CONFORMAL_SHORE_EXCLUSION_THEOREM.md) |
 | `S3B` | A fully target-supported common projective zero of all diagonal root quadrics on one balanced shore exposes the existing zero-surplus restriction `P_m -> Delta_3`.  A common nondegenerate `Q` always supplies such a conic point, so the entire common-`Q` shore is **excluded for `m=3,4`** and **reduced to PR for `m>=5`**, without cross-column separability.  An exact normalized `n=8` fixture shows `B_all` does not force a basepoint in a prescribed root gauge; the fixture is latently common-quadratic and not a witness. | [Root-quadric basepoint bridge and gauge sharpness](../claims/arbitrary-order/BALANCED_ROOT_QUADRIC_BASEPOINT_PERMANENT_RESTRICTION_AND_GAUGE_SHARPNESS_THEOREM.md) |
+| `S3C` | For every five-set of an eight-vertex weighted concise ternary witness, the three target-colour root products belong to the ten internal-edge ideal.  Five-root nonemptiness and a `120`-product incidence cover put every induced `K_5` tuple whose ten blocks are all nonzero in a fixed closed projective **codimension-at-least-three** envelope, with the same affine bound after whole-zero-block branches are added.  The result uses `729` anchored-slice equations, including `726` mixed zeros; it does not use balanced minors or prove independence across the `56` five-sets. | [Five-root three-colour boundary-incidence theorem](../claims/arbitrary-order/EIGHT_VERTEX_FIVE_ROOT_THREE_COLOUR_BOUNDARY_INCIDENCE_CODIMENSION_THREE_THEOREM.md) |
+| `S3H` | In the invertible monomial common-form orbit, every nonzero pure coefficient makes all Hamming-one mixed coefficients vanish, while for every vertex pair and base colour one or two of the four pair-local Hamming-two cells are nonzero.  An exact all-rank-drop adjacent-cut control has empty prescribed-gauge base loci and all `48` Hamming-one zeros, so rank drop plus pure and Hamming-one data do not force compatible fixed-gauge roots.  This is route sharpness, not a witness or a general `B_all` classification. | [Adjacent-cut monomial Hamming-shell sharpness](../claims/arbitrary-order/EIGHT_VERTEX_ADJACENT_CUT_MONOMIAL_HAMMING_ONE_BLINDNESS_AND_HAMMING_TWO_DETECTOR_SHARPNESS_THEOREM.md) |
 | `M1` | Maximum torus-root saturation and `r=1` / `r>=2` split: **proved universal reduction** | [Maximal torus-root theorem](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md) |
 | `M2` | One complete fixed-surplus physical hafnian layer; coordinate two-residual absorption: **proved reduction, not exclusion** | [Maximal torus-root theorem](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer) |
 | `PR` | Weighted `P_t -> Delta_3` restriction family: **extracted at zero surplus and on the conditional consecutive-lift branch; arbitrary-order exclusion open**. The live `t=6` / P6 restriction remains inside this node; the three-excess notes address only the first strict-support layer, not arbitrary support. | [Maximal-root extraction](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer), [consecutive single-open lift](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md), [P6 package index](../claims/p6/README.md), [three-excess port boundary](../claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md), and [conformal Birkhoff boundary](../claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md) |
@@ -392,6 +399,9 @@ flowchart TD
 | `S3Q` | strict special case | `S3P` | The fully synchronized common-quadratic orbit has column-separable cross scalars all equal to one; the newer shore theorem allows arbitrary internal nonroot blocks and varying root/cross scalars and also closes zero permanent by a pure word. |
 | `S3P` | exact proof-DAG bridge | `S3B` | A point on the common nondegenerate conic avoids the finite target-coordinate line arrangement, producing a fully supported balanced root half.  The already proved zero-surplus extraction gives `P_m -> Delta_3`; `P_3` rank and `P_4` subrank exclude `m=3,4`, while `m>=5` remains at PR. |
 | `S3B` | exact fixed-gauge sharpness | `S3` | All-cut rank drop, invertible blocks, local concision, and normalized pure coefficients do not force a projective basepoint for the same-vector root quadrics in a prescribed gauge.  The control is latently common-quadratic, so existential multiroot synchronization remains open. |
+| `G0` | eight-vertex mixed-slice specialization | `S3C` | On each five-set, every matching in a complement-colour slice contains an internal five-set edge, while the target slice is one colour product.  Existing five-root nonemptiness plus projective incidence yields the codimension-at-least-three necessary envelope. |
+| `S3C` | unresolved intersection obligation | `S3` | The `56` overlapping five-set envelopes constrain every witness, but their incidence roots may vary and no independence or incompatibility with the all-cut minors is proved. |
+| `S3` | refutation of prescribed-gauge extraction | `S3H` | Two adjacent all-rank-drop shores, nonzero pure coefficients, and the complete Hamming-one shell do not force compatible same-vector basepoints.  Four pair-local Hamming-two equations detect the monomial synchronized control class only. |
 | `G0` | reduction | `M1` | Maximum-cardinality torus roots give a pointwise exhaustive split. |
 | `M1` | case coverage | `M2`, `U1` | The two cases are `r>=2` and `r=1`; neither is excluded by the split. |
 | `S1` + `M2` | mathematical premises | `O1` | Rebalancing the fixed layer exposes a truncated contracted sensor. |
@@ -508,9 +518,18 @@ branch. They are not an instruction to begin all of them at once.
    at `m=3,4` and routes `m>=5` to the permanent frontier.  A normalized
    eight-vertex control shows that all-cut rank drop cannot force a root-ideal
    basepoint in a prescribed same-vector gauge, even with invertible blocks,
-   local concision, and pure normalization.  The residual S3 problem must use
-   overlapping cuts and mixed target equations to force a fully supported
-   multiroot basepoint, latent synchronization, or a different obstruction.
+   local concision, and pure normalization.  The full anchored mixed slices
+   now give a gauge-invariant alternative: on every five-set, every induced
+   `K_5` tuple whose ten blocks are all nonzero lies in a closed projective
+   codimension-at-least-three three-colour boundary envelope; the affine
+   envelope also includes whole-zero-block branches.  Rank drop, pure
+   coefficients, and all
+   Hamming-one equations still do not force adjacent fixed-gauge basepoints;
+   pair-local Hamming-two equations detect only the monomial synchronized
+   control class.  The residual S3 problem is to intersect the `56`
+   overlapping five-set envelopes with the all-cut maximal-minor equations
+   and the transverse/nontransverse boundary strata, without assuming their
+   codimensions add.
 
 3. **Zero-surplus permanent restrictions.** Every hypothetical restriction
    now lies in the simultaneous co-two product-sensor rank-drop locus; for P6
@@ -717,6 +736,7 @@ responses; it does not collapse them into the globally rigid `k=4` cell.
 | Independent local basis changes can rescue the common-quadratic all-rank-drop mechanism as a witness | False: the synchronized orbit has two-vertex flattening rank six when nondegenerate, invariant under every local isomorphism, while ternary GHZ has rank three; degenerate forms already fail local rank | [Common-quadratic orbit exclusion](../claims/arbitrary-order/BALANCED_COMMON_QUADRATIC_ORBIT_RANK_DROP_AND_FLATTENING_EXCLUSION_THEOREM.md) |
 | Arbitrary internal nonroot blocks can repair a common-conformal balanced shore | False: modulo the common root quadric every non-all-cross sector vanishes; nonzero scalar permanent leaves a forbidden mixed product, while zero permanent contradicts the nonzero pure-root product from a constant word | [Common-quadric mixed/pure residue theorem](../claims/arbitrary-order/BALANCED_COMMON_QUADRIC_MIXED_PERMANENT_DIVISIBILITY_AND_CONFORMAL_SHORE_EXCLUSION_THEOREM.md) |
 | All-balanced rank drop plus invertible blocks, local concision, and normalized pure coefficients force a common zero of the same-vector root quadrics in a prescribed gauge | False at `n=8`: a normalized rational common-quadratic-orbit graph has every balanced sensor of rank at most seven, while six root quadrics in the target gauge span all of `Sym^2(C^3)^*` and have empty projective base locus.  Independent vertex gauges recover one common conic, so the fixture does not refute latent synchronization. | [Root-quadric basepoint gauge sharpness](../claims/arbitrary-order/BALANCED_ROOT_QUADRIC_BASEPOINT_PERMANENT_RESTRICTION_AND_GAUGE_SHARPNESS_THEOREM.md#4-all-cut-rank-drop-does-not-force-a-fixed-gauge-basepoint) |
+| Two adjacent all-rank-drop shores, nonzero pure coefficients, and all Hamming-one mixed equations force compatible same-vector root-ideal basepoints | False at `n=8`: an exact invertible monomial common-form graph has every balanced sensor of rank at most seven, pure coefficients `(1,1,1)`, all `48` Hamming-one coefficients zero, and both adjacent six-quadric ideals equal the irrelevant square with empty projective base locus.  A pair-local Hamming-two coefficient is `-1`; latent gauges recover synchronization, so no existential multiroot claim is refuted. | [Adjacent-cut monomial Hamming-shell sharpness](../claims/arbitrary-order/EIGHT_VERTEX_ADJACENT_CUT_MONOMIAL_HAMMING_ONE_BLINDNESS_AND_HAMMING_TWO_DETECTOR_SHARPNESS_THEOREM.md) |
 | Simultaneous co-two permanent sensor rank drop, local rank, and nonzero pure coefficients exclude P6 | False as an argument: an exact two-block coordinate model has all fifteen four-mode sensors of dimension at most nine and all pure coefficients nonzero, but has mixed support and flattening rank one rather than the target rank three | [Co-two permanent product-sensor boundary](../claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_RANK_DROP_THEOREM.md#5-sharpness-of-what-rank-drop-alone-can-say) |
 | Only equal regular ratios survive the four-regular five-cell common kernel | False: a `2+2` reciprocal primitive-cube-root divisor also gives a one-dimensional kernel; the corrected dimension bound still closes detection | [Complete aligned five-cell detector](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md#lemma-2-four-defect-full-common-kernels) |
 

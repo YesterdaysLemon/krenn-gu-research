@@ -129,6 +129,15 @@ the unrestricted ten-vertex case to the explicit coordinate-boundary
 alternative above.  At larger orders a residual matching tensor
 remains, so additional work is still required.
 
+For the eight-vertex ternary witness specialization, the successor
+[`five-root three-colour boundary-incidence theorem`](EIGHT_VERTEX_FIVE_ROOT_THREE_COLOUR_BOUNDARY_INCIDENCE_CODIMENSION_THREE_THEOREM.md)
+uses the full three anchored target slices to strengthen the second
+alternative: every five-root zero has a vanishing root coordinate in each of
+the three target colours.  Combining that containment with the nonemptiness
+proved here yields a closed codimension-at-least-three coefficient envelope.
+It is a witness-specific consequence, not a strengthening of the universal
+intersection statement in this lemma.
+
 ## Verification
 
 Run:
