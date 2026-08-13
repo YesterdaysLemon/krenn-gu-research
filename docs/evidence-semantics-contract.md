@@ -192,10 +192,12 @@ The end state is intentionally strict:
 > experimental scripts, generators, result data, and similar loose scientific
 > artifacts must eventually leave repository root.
 
-The permanent root is limited to the exact seven-file and nine-directory set
+The permanent root is limited to the exact seven-file and ten-directory set
 justified in `check_hygiene.py`: repository navigation and operating contracts,
 environment/dependency configuration, the repository-wide validator, and the
-nine named ownership directories.  A new root metadata file is not
+ten named ownership directories.  `.agents` is narrowly reserved for
+committed repository-scoped agent workflow configuration; it is not an owner
+for research documents, ordinary tools, results, or history.  A new root path is not
 pre-authorized; expanding this allowlist requires a fresh reviewed policy
 change.
 
@@ -273,9 +275,13 @@ passed, and fresh semantic and mechanical audits confirmed zero grandfathered
 and zero new debt.  At activation the tracked root contained exactly seven
 justified files and nine justified top-level directories.
 
+The reviewed 2026-08-11 workflow-policy change added `.agents` for committed
+repository-scoped agent workflow configuration.  The current exact allowlist
+therefore contains seven files and ten directories.
+
 `python check_hygiene.py` now rejects every tracked top-level path outside that
 exact allowlist on every run; there is no warning-only environment bypass.  The
-16-entry hard limit also bounds allowlist capacity, but exact paths remain the
+17-entry hard limit also bounds allowlist capacity, but exact paths remain the
 authoritative policy.  The frozen manifest's moved-only projection remains 15
 because `AGENTS.md` postdates the 2,363-path inventory.  Its sole
 `review_required` row, for `check_hygiene.py`, is historical filename-classifier

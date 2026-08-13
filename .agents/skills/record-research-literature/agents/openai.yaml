@@ -1,0 +1,4 @@
+interface:
+  display_name: "Record Research Literature"
+  short_description: "Manage research-literature provenance"
+  default_prompt: "Use $record-research-literature to handle this external-literature task at the minimum necessary verification level, recording durable provenance only when warranted."
