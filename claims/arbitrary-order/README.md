@@ -673,6 +673,20 @@ distinct-colour central-chart residual is the simultaneous intersection
 genuinely outer coordinate-pair charts, and the rest of `(1,1,2)` remain
 open.
 
+The successor
+[`(1,1,2)` double-repeated outer intersection exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_ONE_TWO_DOUBLE_REPEATED_OUTER_INTERSECTION_EXCLUSION_THEOREM.md)
+closes that final central-chart point.  Recovery now has only seven distinct
+torus factors.  A three-dimensional square-radical obstruction eliminates
+all combined-row alternatives.  In the third-colour coloop, the nonzero
+`T_u` row would lie in both the sum and difference rulings of a
+common-radical normal form.  In the central-colour coloop, the exact
+zero-rectangle normal form and full coefficientwise correction identity
+force `T_s` or `T_t` to share two source factors with `T_u`.  Hence the
+complete distinct-colour central coordinate-pair chart of `(1,1,2)` is
+impossible.  The same-colour central chart, genuinely outer coordinate-pair
+charts, other `(1,1,2)` boundaries, `(1,2,2)`, lower joint rank, other
+physical components, and higher orders remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
