@@ -4883,6 +4883,38 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Hilbert-Burch (1,1,2) Repeated-Outer-Factor Divisor Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_ONE_TWO_REPEATED_OUTER_FACTOR_DIVISOR_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "c2a20e35a9b5757c",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
+        "all three root-root blocks are nonzero and the Hilbert-Burch derivative kernel has projection profile (1,1,2)",
+        "the selected central chart has pairwise distinct target colours s,t,u and normal form ker D_B=span((lambda e_s,0,z),(0,mu e_t,nu e_s)), with lambda mu nu nonzero, z not proportional to e_s, and z not proportional to e_t",
+        "the symmetric divisor obtained by exchanging the first two roots, z,w, and s,t is included; the simultaneous double-repeated intersection z proportional e_t and w proportional e_s is excluded from this theorem's scope",
+        "transpose recovery on the repeated divisor has exact scalar nu gamma(z) gamma_s; torus avoidance gives four ordinary coloop hyperplanes and at most four combined-third/recovery hyperplanes",
+        "every combined-third/recovery alternative makes the first and second row planes equal; a one-face pure/two-/three-source atlas excludes equality using only the surviving exterior T_t face and untouched T_u core",
+        "under any ordinary coloop, the remaining six annihilator rows span a two-plane, image(theta) has dimension three, and physical full-sensor rank makes the alternating separated tensor of V=H^T((ker D_B)^perp) nonzero",
+        "the alpha_t orientation is excluded by the one-sided external-zero-row square/core lemma of S2AU; the alpha_u orientation is excluded by a one-sided S2AT source split strengthened at the vanished-face endpoint by the two untouched p_s,p_u rows",
+        "the beta_u orientation gives a common-radical zero table; its exact source atlas leaves only a pure radical and two-source tangent whose decomposable exterior values share a T_u factor",
+        "the beta_s orientation gives a complete zero rectangle; exact pure/two-/three-source rank-drop atlases plus the nonzero alternating tensor leave only a two-source tangent whose decomposable exterior values share a T_u factor",
+        "the surviving exterior value is a nonzero multiple of the fully transverse target T_t, so all four coloops are impossible; the double-repeated intersection, same-colour and genuinely outer coordinate charts, other (1,1,2) boundaries, (1,2,2), lower joint ranks, other physical branches, higher orders, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_one_two_repeated_outer_factor_divisor_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_one_two_repeated_outer_factor_divisor_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_ONE_TWO_REPEATED_OUTER_FACTOR_DIVISOR_EXCLUSION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds (SymPy repeated-derivative, one-face, common-radical, alternating, and zero-rectangle replay; independent standard-library Fraction audit)",
+      "external_binaries": [],
+      "note": "Every nonintersection point of the two repeated outer-factor divisors in the distinct-colour central (1,1,2) chart is impossible. The proof replaces the vanished exterior face with the surviving T_t face, untouched T_u core, and physical full-sensor alternating tensor. Only the simultaneous double-repeated intersection remains in that central chart; other stated branches remain open, and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

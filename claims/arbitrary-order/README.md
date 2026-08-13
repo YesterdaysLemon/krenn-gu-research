@@ -658,6 +658,21 @@ distinct-colour central coordinate-pair chart is impossible away from its
 two repeated outer-factor lines.  Those lines, the same-colour central
 chart, outer coordinate-pair charts, and the rest of `(1,1,2)` remain open.
 
+The successor
+[`(1,1,2)` repeated-outer-factor divisor exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_ONE_TWO_REPEATED_OUTER_FACTOR_DIVISOR_EXCLUSION_THEOREM.md)
+closes every nonintersection point of those two divisors.  On, say,
+`w parallel e_s` with `z not parallel e_t`, the old `T_s` exterior face
+vanishes, but the surviving `T_t` face and untouched `T_u` core exclude the
+equal-plane fork.  Four ordinary coloops remain.  Two fall to one-sided
+square/core refinements of the preceding theorems; the other two fall to
+common-radical and complete-zero-rectangle permanent atlases constrained by
+the nonzero alternating separated tensor forced by physical full-sensor
+rank.  Root symmetry closes the mate divisor.  Thus the only
+distinct-colour central-chart residual is the simultaneous intersection
+`w parallel e_s`, `z parallel e_t`.  The same-colour central chart,
+genuinely outer coordinate-pair charts, and the rest of `(1,1,2)` remain
+open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
