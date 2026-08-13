@@ -44,10 +44,13 @@ fully transverse to its nonzero target image; an exact binary-cubic
 restriction lemma forbids this.
 
 Together with S2AN--S2AO this closes the entire **repeated-coordinate** part
-of the `(1,1,1)` profile.  It does not exclude coordinate-distinct or other
-allowed `(1,1,1)` charts, the `(1,1,2)` or `(1,2,2)` profiles, joint rank at
-most four, other physical components or pole strata, higher orders, or the
-global conjecture.  Global Krenn--Gu remains **UNRESOLVED**.
+of the `(1,1,1)` profile.  This theorem itself does not exclude
+coordinate-distinct or other allowed `(1,1,1)` charts.  Successor S2AQ
+excludes the all-coordinate-distinct chart, leaving the case with exactly two
+distinct coordinate factors and a genuinely noncoordinate third factor.  The
+`(1,1,2)` and `(1,2,2)` profiles, joint rank at most four, other physical
+components or pole strata, higher orders, and the global conjecture also
+remain open.  Global Krenn--Gu remains **UNRESOLVED**.
 
 ## 1. The discrete Hilbert--Burch grid
 
@@ -352,7 +355,9 @@ Together with S2AN--S2AO,
 ```text
 Hilbert--Burch (1,1,1):
   any two factors on the same target-coordinate line: IMPOSSIBLE;
-  coordinate-distinct / other allowed charts:          OPEN;
+  all-coordinate-distinct triangle:                    IMPOSSIBLE by S2AQ;
+  exactly two coordinate factors plus a genuinely
+    noncoordinate third factor:                        OPEN;
 
 Hilbert--Burch (1,1,2), (1,2,2):                      OPEN;
 joint rank at most four / other physical branches:     OPEN;

@@ -590,9 +590,21 @@ a coloop and the other six lie in a two-plane.  Every coloop orientation
 then fails: three reduce to the two-plane square obstruction, two miss the
 required diagonal target directly, and the last two violate an exact
 binary-cubic quadratic-annihilator lemma.  Hence every repeated-coordinate
-`(1,1,1)` chart is impossible.  Coordinate-distinct and other allowed
-`(1,1,1)` charts, the other Hilbert--Burch profiles, lower joint rank, other
-physical components, and higher orders remain open.
+`(1,1,1)` chart is impossible.
+
+The
+[`all-coordinate-distinct exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ALL_COORDINATE_DISTINCT_EXCLUSION_THEOREM.md)
+closes the coordinate triangle `x=lambda e_0`, `y=mu e_1`, `z=nu e_2`.
+The same seven-dimensional annihilator and S2R torus recovery force a coloop.
+If the combined row is the coloop, all three row planes coincide and a
+totally cubic-zero two-plane cannot carry two fully transverse target images.
+Every ordinary-row coloop is symmetric to `q_0`; the other two planes then
+coincide, and the missing `q_2` row produces two fully transverse mixed
+images of quadratic annihilators, contrary to an exact binary-cubic
+factor-sharing lemma.  Thus the only remaining `(1,1,1)` chart has exactly
+two distinct coordinate factors and a genuinely noncoordinate third factor.
+The other Hilbert--Burch profiles, lower joint rank, other physical
+components, and higher orders remain open.
 
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
