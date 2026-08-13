@@ -554,6 +554,21 @@ determinant.  Thus the entire transverse two-root joint-rank-five branch is
 impossible.  The three Hilbert--Burch coordinate atlases are the remaining
 joint-rank-five common-three-space boundary.
 
+The
+[`Hilbert--Burch repeated-coordinate localization`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_REPEATED_COORDINATE_LOCALIZATION_THEOREM.md)
+starts the three-root branch.  In profile `(1,1,1)`, suppose two rank-one
+triangle factors use the same target coordinate `e_s`.  If the remaining
+factor had nonzero `e_s` coordinate, the complete untouched `2 x 2 x 3`
+target grid would contract to a binary diagonal permanent frame on three
+two-planes inside one three-space.  An exact incidence split excludes such a
+frame: equal planes fall to the two-plane square obstruction, while
+independent and pencil normals fall to their cubic polarization kernels.
+Thus the remaining triangle factor lies in the complementary coordinate
+plane, and the all-same-coordinate triangle is impossible.  The
+complementary-plane boundary, coordinate-distinct `(1,1,1)` charts, the
+other Hilbert--Burch profiles, lower joint rank, other physical components,
+and higher orders remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
