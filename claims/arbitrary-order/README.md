@@ -717,6 +717,19 @@ atlas says every `(1,1,2)` point contains `(x,y)`, `(x,w)`, or `(y,z)`, the
 complete `(1,1,2)` profile is now impossible.  The `(1,2,2)` profile, lower
 joint rank, other physical components, and higher orders remain open.
 
+The
+[`(1,2,2)` coordinate-coloop localization`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_COORDINATE_COLOOP_LOCALIZATION_THEOREM.md)
+starts the final rank-five Hilbert--Burch profile.  Root symmetry and an
+exact kernel-basis gauge give `x=lambda e_s`, `c=mu e_t`, `y_t=0`.
+Transpose recovery has scalar `lambda mu alpha_s beta_t`, so S2R forces the
+four-dimensional relation kernel into one of the nine ordinary
+root-coordinate hyperplanes.  The first-row map on `e_s^perp` is injective
+by the complete target equation.  Consequently the `alpha_s`, all three
+`beta_j`, and all three `gamma_k` coloop complements have the same exact
+two-plane image `R=rho(e_s^perp)`; only `alpha_a,alpha_b` have a different
+two-plane normal form.  This is a localization, not an exclusion: all nine
+coloop orientations remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
