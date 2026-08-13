@@ -12,6 +12,10 @@ global statement.
 maintained map of the live proof topology, open leaves, and refuted routes.
 Owning theorem documents remain authoritative for mathematical statements.
 
+For an interactive projection of that map, run
+[`tools/proof-visualizer`](tools/proof-visualizer/README.md). Its bonsai colours
+are navigation aids; the exact node text and owning claims remain authoritative.
+
 ## The conjecture
 
 Let `n >= 6` be even and `d >= 3`. Assign a complex `d x d` matrix `W_ij` to
