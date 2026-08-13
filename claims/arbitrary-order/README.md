@@ -477,6 +477,20 @@ and `(1,1,1)` profiles lie on an explicit coordinate-boundary atlas.  These
 rank-two-row and Hilbert--Burch boundaries, joint rank at most four, and the
 other physical branches remain open.
 
+The
+[`support-two double-monomial exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_TWO_DOUBLE_MONOMIAL_EXCLUSION_THEOREM.md)
+closes one complete transverse rank-five boundary profile.  When the third
+row has a support-two kernel, both involved rows have rank two, and both root
+blocks are coordinate monomials, the full target equation forces a
+two-dimensional common annihilator of the three mixed polarized products and
+one nonzero rank-one square.  An exact source-support atlas makes this
+incompatible with the alternating separated determinant of three independent
+singleton columns at joint rank five.  The same target table has an exact
+rank-five sharpness fixture whose first two singleton columns coincide, so
+full singleton independence is load-bearing.  The singly monomial/tangent
+`(2,2)` case, the other involved-row profiles, support one, and the
+Hilbert--Burch boundaries remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
