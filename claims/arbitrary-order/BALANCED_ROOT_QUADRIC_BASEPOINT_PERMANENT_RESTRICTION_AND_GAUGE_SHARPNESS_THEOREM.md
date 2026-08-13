@@ -323,6 +323,18 @@ the mixed target equations to force either a fully supported multiroot
 basepoint, latent common-quadric synchronization, or a different exact
 obstruction inside `B_all`.
 
+The eight-vertex successor
+[`five-root three-colour boundary-incidence theorem`](EIGHT_VERTEX_FIVE_ROOT_THREE_COLOUR_BOUNDARY_INCIDENCE_CODIMENSION_THREE_THEOREM.md)
+implements the third option without claiming a basepoint: every induced
+`K_5` block tuple of a witness lies in a closed affine
+codimension-at-least-three boundary envelope, with a separate projective
+statement when all ten blocks are nonzero.  Its companion adjacent-cut
+sharpness theorem shows that
+rank drop, pure coefficients, and all Hamming-one equations still do not
+recover prescribed-gauge basepoints.  The residual problem is to combine the
+overlapping five-set envelopes with the all-cut minors and deeper boundary
+strata.
+
 ## Focused replay
 
 Run from repository root:

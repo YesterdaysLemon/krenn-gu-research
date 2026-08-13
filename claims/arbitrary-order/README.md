@@ -545,6 +545,24 @@ eight-vertex gauge fixture shows separately that all-cut rank drop does not
 force a projective root-ideal basepoint in a prescribed common gauge; the
 fixture is latently common-quadratic and is not a witness.
 
+At eight vertices, the
+[`five-root three-colour boundary-incidence theorem`](EIGHT_VERTEX_FIVE_ROOT_THREE_COLOUR_BOUNDARY_INCIDENCE_CODIMENSION_THREE_THEOREM.md)
+gives a gauge-invariant replacement for comparing prescribed root gauges on
+adjacent cuts.  On every five-set, all three target-colour coordinate products
+belong to the ten internal-edge ideal, while the five-root intersection is
+unconditionally nonempty.  Consequently every induced `K_5` block tuple of a
+witness with all ten blocks nonzero lies in a fixed closed
+codimension-at-least-three projective incidence envelope; the same bound
+survives in affine block space after adding the
+whole-zero-block branches.  This uses the full three anchored mixed slices,
+not pure normalization alone, and no independence is claimed among the `56`
+overlapping five-set conditions.  The companion
+[`adjacent-cut mixed-shell sharpness theorem`](EIGHT_VERTEX_ADJACENT_CUT_MONOMIAL_HAMMING_ONE_BLINDNESS_AND_HAMMING_TWO_DETECTOR_SHARPNESS_THEOREM.md)
+shows exactly that rank drop, pure terms, and the complete Hamming-one shell
+still do not force fixed-gauge basepoints in a synchronized monomial control;
+four pair-local Hamming-two equations detect that control class.  Intersecting
+the five-set envelopes with the all-cut minors remains open.
+
 Independently, the
 [`co-two permanent product-sensor theorem`](ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_RANK_DROP_THEOREM.md)
 places every hypothetical weighted `P_r -> Delta_3` restriction on a proper
