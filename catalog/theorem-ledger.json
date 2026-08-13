@@ -4820,6 +4820,37 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Hilbert-Burch (1,1,2) Third-Colour Coloop Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_ONE_TWO_THIRD_COLOUR_COLOOP_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "68fab8ea564aaa61",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
+        "all three root-root blocks are nonzero and the Hilbert-Burch derivative kernel has projection profile (1,1,2), in normal form ker D_B=span((lambda e_s,0,z),(0,mu e_t,w)) with z,w independent",
+        "the selected S2AS chart has pairwise distinct target colours s,t,u, central coordinate pair x=lambda e_s and y=mu e_t, with w not proportional to e_s and z not proportional to e_t",
+        "S2AS has reduced this chart to four ordinary coloop alternatives; this theorem treats the third-colour orbit N subset alpha_u=0 or N subset beta_u=0",
+        "in the alpha_u orientation, deleting r_u leaves r_t, the complete second-row plane P=span(p_s,p_u), and the combined rows h_0,h_1,h_2 in a two-plane S=P; the untouched r_t x S x image(theta) table is zero",
+        "the quotient classes A=lambda^(-1)r_s and B=mu^(-1)p_t are independent modulo V=H^T((ker D_B)^perp); z,w give quotient rank two, while the common normal n in z-perp intersect w-perp has nonzero q(n) in S, so image(theta) has dimension three",
+        "a covector gamma in z-perp with gamma_t gamma(w) nonzero converts the nonzero T_t exterior face into a square per(q(gamma),q(gamma),r_t)",
+        "three-source support for r_t has only a two-dimensional square kernel; two-source support confines both S and image(theta) to two sources and kills the square; hence r_t is pure in one source",
+        "the pure-row zero table gives conjugate Y and Z components on S; if the conjugating functional is zero, three independent target X-factor lines lie in a two-plane, and if it is nonzero, every decomposable value on W x S x image(theta) shares a Y or Z factor with T_t, contradicting the transverse T_s and T_u values",
+        "first/second-root symmetry excludes beta_u; the central-colour coloop orbit, repeated outer lines, same-colour and outer coordinate-pair charts, other (1,1,2) boundaries, (1,2,2), lower joint ranks, other physical branches, higher orders, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_one_two_third_colour_coloop_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_one_two_third_colour_coloop_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_ONE_TWO_THIRD_COLOUR_COLOOP_EXCLUSION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds (SymPy coloop-rank, quotient-rank, square-upgrade, support-kernel, conjugate-row, and factor-sharing replay; independent standard-library Fraction audit)",
+      "external_binaries": [],
+      "note": "In the distinct-colour central (1,1,2) chart, the two ordinary coloops carrying the third target colour are impossible. A coloop two-plane and three-dimensional third-row image create a nonzero target square; the exhaustive source-support split contradicts square rank, target-factor dimension, or transverse factor sharing. The central-colour coloop orbit and all other stated (1,1,2) boundaries remain open, and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

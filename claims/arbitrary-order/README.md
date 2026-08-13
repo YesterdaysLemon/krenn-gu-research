@@ -628,6 +628,21 @@ mixed-factor atlas.  Thus only four ordinary-coloop orientations remain in
 this branch.  The repeated outer lines, outer coordinate-pair charts, and
 the rest of `(1,1,2)` remain open.
 
+The successor
+[`(1,1,2)` third-colour coloop exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_ONE_TWO_THIRD_COLOUR_COLOOP_EXCLUSION_THEOREM.md)
+closes one of the two ordinary-coloop orbits in the distinct-colour central
+chart.  If the omitted first-root row carries the third colour, the other
+six annihilator rows span one two-plane `S`.  The complete third-row image
+is nevertheless three-dimensional: its quotient has the independent
+`z,w` directions and its common normal gives a nonzero row in `S`.  The
+zero `r_t x S x Q` table upgrades a nonzero exterior `T_t` face to a square.
+A complete pure/two-source/three-source split then either places three
+independent target factor lines in `S` or forces every remaining target to
+share a factor with `T_t`.  Both are impossible, and first/second-root
+symmetry excludes the mate orientation.  The central-colour coloop orbit,
+repeated outer lines, same-colour and outer coordinate charts, and the rest
+of `(1,1,2)` remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
