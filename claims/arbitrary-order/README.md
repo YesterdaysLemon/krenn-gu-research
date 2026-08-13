@@ -397,6 +397,18 @@ and cannot produce the required rank-one slice.  Thus ranks nine, eight, and
 seven are all excluded on the common-three-space stratum; joint rank at most
 six and the other physical component types remain open.
 
+The later
+[`complete single-root-block exclusion`](BALANCED_M3_COMMON_THREE_SPACE_SINGLE_ROOT_BLOCK_COMPLETE_EXCLUSION_THEOREM.md)
+removes the rank assumption from S2Z.  In the regular derivative chart the
+two exceptional marked rows vanish, leaving two crossed zero-product pairs.
+Their pure/pure and pure/mixed forms force a common GHZ covector or common
+target factor lines.  Same-pair mixed/mixed products are proportional;
+different-pair forms either give an injective derivative pair or place both
+target lines in one Segre tangent space, whose decomposable locus shares two
+base factors.  Every case contradicts the two distinct surviving GHZ
+colours.  Thus every remaining common-three-space point has at least two
+root blocks as well as joint rank at most six.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

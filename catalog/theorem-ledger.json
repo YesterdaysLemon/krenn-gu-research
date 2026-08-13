@@ -4204,6 +4204,33 @@
       "legacy_paths": []
     },
     {
+      "name": "Balanced m=3 Common-Three-Space Complete Single-Root-Block Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_SINGLE_ROOT_BLOCK_COMPLETE_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "1507063a0315840e",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion for a normalized target-consistent physical m=3 common shore whose total singleton span has dimension three",
+        "exactly one root-root block is nonzero; no assumption is made on the joint root-nonroot cross-colour rank",
+        "singleton dimension and full-sensor rank make the opposite root block row a three-plane with nonzero projection to every source; the root edge is a diagonal coordinate monomial and yields two exact unaffected GHZ diagonal rows",
+        "the exceptional derivative chart has only one rank-one coefficient-covector line; in the regular chart the two exceptional marked rows vanish and the remaining crossed zero-product pairs are pure or conjugate mixed",
+        "every P/P, P/M, and M/M combination contradicts the two distinct GHZ target lines through a common covector, shared target factors, proportional products, an injective derivative pair, or the rank-one locus of one Segre tangent space",
+        "together with the rank-nine, rank-eight, and complete rank-seven exclusions, every surviving common-three-space incidence has at least two root blocks and joint rank at most six; those multi-root lower-rank cases and every other global branch remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_single_root_block_complete_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_single_root_block_complete_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_SINGLE_ROOT_BLOCK_COMPLETE_EXCLUSION_SELF_REVIEW_2026-08-12.md",
+      "expected_runtime": "seconds (SymPy pure/mixed derivative atlas and Segre-tangent replay; independent standard-library Fraction audit)",
+      "external_binaries": [],
+      "note": "The two diagonal GHZ rows close every lower-dimensional boundary of the single-root sparse equation. Pure pairs force common covectors, mixed pairs force shared factors or proportional products, and the last shared-line boundary places both targets in one Segre tangent. Thus one root block is impossible at every joint rank. Multi-root joint rank at most six and global Krenn-Gu remain UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Non-proof-active boundary-candidate collection checkpoint; representative frozen certificate refuted",
       "document": "claims/p5/h22/component19-p0-ordinary-boundary/P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md",
       "document_sha256_16": "15e7fd63116a421f",
