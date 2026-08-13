@@ -5366,6 +5366,42 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Hilbert-Burch (1,2,2) Residual Second-Root-Coloop Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "c14ce117d9319410",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
+        "the Hilbert-Burch derivative kernel has the S2AZ (1,2,2) gauge x=lambda e_s, c=mu e_t, y_t=0, with lambda mu nonzero and the two stated projection pairs independent",
+        "the coordinate-coloop fork selects either residual second-root hyperplane N subset {beta_j=0} with j different from t; k is the third colour",
+        "S2BE-S2BI reduce either residual coloop to s in {j,k}, y and w proportional to the complementary coordinate e_u, z_s=0, and z_t nonzero",
+        "one projective direction avoids h=0, kappa=0, and h=kappa z_u over the infinite characteristic-zero field",
+        "the resulting complete determinant face has exactly two nonzero binary cells, with fully transverse targets T_u,T_t sharing the active middle and third rows",
+        "the common annihilator of z,w is e_s^*, so q_s lies in R; pi and theta are injective and all displayed rows and planes are genuine",
+        "if Q=R, permanent symmetry forces the first row of an invertible change-matrix inverse to vanish; otherwise R intersect Q is exactly span(q_s) in a three-space",
+        "if the selected residual colour is j=s, the active beta row has nonzero evaluation pair and an opposite gamma row gives p_*+q_* in R",
+        "if the selected residual colour is j=u, the selected-divisor intersection is e_s^* with zero evaluation pair and gives p_s in R",
+        "if the full middle plane lies in the common three-space, the independently audited S2BC same-pair lemma applies; otherwise the two coloop orientations reduce to nine and six proper-intersection families",
+        "the q_s intersection line has three exact supports; active-row cancellation has two affine patches plus the zero sum, while the nonzero inactive middle line has two affine patches",
+        "the resulting 15 rational Nullstellensatz identities are polynomial in tau, contain 32871 sparse multiplier terms, and have certificate SHA-256 bc63359ece10e7d12237ab5821f64227de8391b5a9422091d9b5c0591484a7a0",
+        "the primary verifier reconstructs all 64 cubic generators per case with SymPy; the independent no-import audit reverses all 26 certificate variables and rebuilds the systems with standard-library Fraction sparse arithmetic",
+        "the two residual beta_j coordinate coloops are impossible; the three third-root and two complementary first-root coloops, lower joint rank, other physical components and pole strata, higher orders, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_two_two_residual_second_root_coloop_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_two_two_residual_second_root_coloop_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_EXCLUSION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "under one minute (15 exact rational certificate replays plus independent reversed-variable sparse audit)",
+      "external_binaries": [],
+      "note": "Both residual second-root beta_j coordinate coloops are impossible. The terminal same-pair face has a coloop-specific 9+6 family cover; exact rational identities and an independent no-import replay exclude every family, while equal first and third planes fail by permanent symmetry. Five other (1,2,2) coloop orientations and all other stated branches remain open; global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

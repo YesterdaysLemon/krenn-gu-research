@@ -849,6 +849,19 @@ line.  Exact rational identities exclude all 90 normal forms.  Hence every
 survivor has `w=e_u`, `z_s=0`, and `z_t!=0`.  That terminal chart, the other
 five `(1,2,2)` coloop orientations, and the wider branches remain open.
 
+The successor
+[`(1,2,2)` residual second-root-coloop exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_EXCLUSION_THEOREM.md)
+closes the terminal chart in both residual orientations.  Its same-pair face
+has two fully transverse targets sharing the active middle/third row pair.
+The selected divisor supplies the missing exact incidence: for `j=s`, the
+active middle and third rows cancel modulo `R`; for `j=u`, the inactive
+middle row lies in `R`.  The equal first/third-plane boundary fails by
+permanent symmetry, while three intersection supports give nine polynomial
+families in the first orientation and six in the second.  Pinned rational
+identities exclude all 15.  Thus both residual `beta_j` coloops are
+impossible; the three third-root and two complementary first-root
+`(1,2,2)` coloops remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
