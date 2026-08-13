@@ -5012,6 +5012,39 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Hilbert-Burch (1,2,2) Coordinate-Coloop Localization",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_COORDINATE_COLOOP_LOCALIZATION_THEOREM.md",
+      "document_sha256_16": "401a61e41cbc89fa",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero localization on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
+        "all three root-root blocks are nonzero and the Hilbert-Burch derivative kernel has projection profile (1,2,2), written as span((x,y,z),(0,c,w)) with y,c independent and z,w independent",
+        "S2AG makes x a target-coordinate vector and at least one of c,w a target-coordinate vector; root-two/root-three symmetry therefore selects x=lambda e_s and c=mu e_t with lambda mu nonzero",
+        "an exact change of kernel generators sets y_t=0 while preserving the kernel span, all three Hilbert-Burch blocks, and the two projection-independence conditions",
+        "the derivative has the gauge-fixed block formula B_23=y tensor w-mu e_t tensor z, B_13=-lambda e_s tensor w, B_12=lambda mu e_s tensor e_t and rank seven",
+        "on the seven-dimensional derivative-kernel annihilator L, exact transpose recovery is D_B^T(alpha tensor beta tensor gamma)=lambda mu alpha_s beta_t (alpha,beta,gamma)",
+        "S2R and the characteristic-zero finite-union lemma force the four-dimensional relation kernel N inside one of the nine ordinary root-coordinate hyperplanes alpha_i=0, beta_j=0, gamma_k=0",
+        "each selected six-dimensional coordinate hyperplane maps to a two-plane under H^T because its kernel is exactly N",
+        "the first-row map on e_s-perp is injective by contraction of the complete target equation, so R=rho(e_s-perp) has dimension two",
+        "the alpha_s, all three beta_j, and all three gamma_k hyperplanes contain the pure e_s-perp copy and therefore have image exactly R",
+        "the two remaining alternatives alpha_a and alpha_b contain only one guaranteed line of R and require separate first-root-coloop analysis; no claim is made that their image planes are always unequal to R",
+        "all nine coordinate-coloop orientations, joint rank at most four, other physical component types, higher orders, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_two_two_coordinate_coloop_localization.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_two_two_coordinate_coloop_localization.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_COORDINATE_COLOOP_LOCALIZATION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds (SymPy gauge, derivative, recovery, coordinate-fork, and seven-row replay; independent standard-library Fraction audit)",
+      "external_binaries": [],
+      "note": "The remaining rank-five Hilbert-Burch (1,2,2) profile is reduced, after root symmetry and exact kernel gauge, to nine coordinate-coloop orientations. Seven complements have the same exact two-plane image R, while two complementary first-root coloops require separate analysis. This is a localization rather than an exclusion; other stated branches remain open, and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
