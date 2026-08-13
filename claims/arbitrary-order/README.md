@@ -434,6 +434,20 @@ least one involved row block to have rank two with that coordinate as its
 kernel and diagonal internal contraction.  These coordinate-relation and
 aligned rank-two boundaries remain open to the full permanent equations.
 
+The
+[`transverse-rank-six aligned-rank-two exclusion`](BALANCED_M3_COMMON_THREE_SPACE_TRANSVERSE_RANK_SIX_ALIGNED_RANK_TWO_EXCLUSION_THEOREM.md)
+now imposes those full equations on the non-coordinate relation branch.  The
+rank-two row makes the other two-root image a graph, so the second permanent
+row is a fixed linear image of the first.  Coefficientwise target consistency
+and permanent symmetry force one internal block to be diagonal and the other
+onto the graph-kernel line.  A repeated-row contraction first removes the
+last diagonal component by a Segre-tangent mode-rank obstruction.  What
+remains would give a two-plane whose cross product vanishes on a three-plane
+while its two squares map to distinct GHZ coordinate lines; the exhaustive
+zero/one/two/three pair-tensor kernel atlas excludes it.  Thus rank six now
+survives only on the coordinate-relation-plane boundary.  That boundary,
+joint rank at most five, and the other physical branches remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
