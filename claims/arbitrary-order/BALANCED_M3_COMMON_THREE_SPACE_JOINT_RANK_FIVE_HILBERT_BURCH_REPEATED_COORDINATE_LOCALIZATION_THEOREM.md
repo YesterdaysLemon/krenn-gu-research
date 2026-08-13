@@ -50,6 +50,11 @@ plane, the coordinate-distinct `(1,1,1)` charts, the `(1,1,2)` and
 components and pole strata, higher orders, and the global conjecture open.
 Global Krenn--Gu remains **UNRESOLVED**.
 
+The successor S2AO now excludes a genuinely two-supported third factor on
+that complementary plane.  Thus the repeated-coordinate residual is the
+discrete factor-line pattern `(s,s,t)` with `s!=t`.  This successor does not
+change the scope or proof below.
+
 ## 1. The repeated-coordinate Hilbert--Burch grid
 
 Use (2) and suppose, after permuting the three roots,
@@ -334,6 +339,10 @@ global Krenn--Gu conjecture:                         UNRESOLVED.       (29)
 The all-same-coordinate rank-one triangle is excluded as a strict special
 case of (27).  No numerical specialization, finite-field promotion, or
 generic-point assumption is used.
+
+The successor S2AO further localizes the open complementary-plane line in
+(29): its genuinely two-supported part is impossible, leaving only the
+coordinate patterns `(s,s,t)` with `s!=t`.
 
 ## Focused replay
 
