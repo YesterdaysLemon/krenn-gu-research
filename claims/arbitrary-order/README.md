@@ -448,6 +448,21 @@ zero/one/two/three pair-tensor kernel atlas excludes it.  Thus rank six now
 survives only on the coordinate-relation-plane boundary.  That boundary,
 joint rank at most five, and the other physical branches remain open.
 
+The
+[`complete joint-rank-six exclusion`](BALANCED_M3_COMMON_THREE_SPACE_COMPLETE_JOINT_RANK_SIX_EXCLUSION_THEOREM.md)
+closes that final coordinate-relation boundary.  Duality first forces an
+involved row of rank two and leaves only row-rank profiles `(3,2)` and
+`(2,2)`.  In the graph profile, the full coefficient identity and permanent
+symmetry reduce the unequal-coordinate chart to a binary five-product table;
+its three exact source-support cases are impossible.  In the two-rank-two
+profile, the beta-zero atlas makes one internal block a diagonal monomial.
+The remaining square derivative has a single GHZ image line, but its mixed
+zero-divisor space has dimension at most one and any other rank-one mixed
+image must share a target factor.  The two independent rows violate both
+alternatives.  Thus every common-three-space point now has joint cross rank
+at most five.  That lower-rank branch and the other physical branches remain
+open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
