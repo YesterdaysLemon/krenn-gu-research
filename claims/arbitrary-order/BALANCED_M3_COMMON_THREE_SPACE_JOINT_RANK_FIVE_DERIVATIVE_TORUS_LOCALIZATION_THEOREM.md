@@ -30,10 +30,15 @@ The following alternatives are exhaustive.
 In particular, the rank-five shared-factor derivative is impossible without
 any assumption on `rank H`, and a transverse two-root rank-five point with an
 injective uninvolved row is impossible.  This is a localization, not a
-complete joint-rank-five exclusion.  The surviving rank-two-row and
-Hilbert--Burch coordinate boundaries, joint ranks at most four, the other
+complete joint-rank-five exclusion.  By itself it leaves the rank-two-row
+and Hilbert--Burch coordinate boundaries, joint ranks at most four, the other
 S2T/S2Q component types, higher orders, the all-rank-drop branch, a witness,
-and a counterexample remain open.  Global Krenn--Gu remains **UNRESOLVED**.
+and a counterexample open.  Global Krenn--Gu remains **UNRESOLVED**.
+
+The successor chain S2AH--S2AM now excludes every transverse two-root
+rank-five row/support profile.  The three Hilbert--Burch coordinate atlases
+in (2) remain the joint-rank-five residual; this does not change the scope or
+proof of the localization below.
 
 ## 1. The shared-factor derivative is rank-free impossible
 
@@ -391,6 +396,9 @@ global Krenn--Gu conjecture:                          UNRESOLVED.       (38)
 The next exact rank-five obligations are the transverse rank-two uninvolved
 row in (20)--(24) and the three Hilbert--Burch coordinate atlases.  No finite
 scan, numerical search, or generic-point promotion is used.
+
+The later support-profile chain S2AH--S2AM has now closed the first of those
+two obligations.  The three coordinate atlases remain open.
 
 ## Focused replay
 
