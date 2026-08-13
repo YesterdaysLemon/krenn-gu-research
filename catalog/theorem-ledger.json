@@ -4258,6 +4258,33 @@
       "legacy_paths": []
     },
     {
+      "name": "Balanced m=3 Common-Three-Space Transverse-Rank-Six Beta-Zero Localization",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_TRANSVERSE_RANK_SIX_BETA_ZERO_LOCALIZATION_THEOREM.md",
+      "document_sha256_16": "12f31b6c1fa0c5f5",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero localization for a normalized target-consistent physical m=3 common shore whose total singleton span has dimension three",
+        "the joint root-nonroot cross-colour map has rank six and, after permuting roots, exactly the blocks B23 and B13 are nonzero with disjoint derivative summands; the derivative kernel is A3, its image is the full three-dimensional common shore, and image(H)=A3 direct-sum K12",
+        "the beta-zero product-annihilator test forces the exact root-block atlas: one block is a coordinate monomial, or the two blocks form a boundary-pencil tangent whose common base point lies on a coordinate boundary",
+        "if the three-dimensional relation plane L=K12-perp is not contained in a coordinate hyperplane, the product-annihilator and target-support rules force both block contractions along L into one coordinate target line",
+        "target consistency then forces at least one involved root-row map to have rank exactly two, with coordinate kernel and the corresponding diagonal block contraction nonzero",
+        "the coordinate-relation-plane boundary and the aligned rank-two-row boundary remain open to the full permanent equations; joint rank at most five, every other physical branch, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_transverse_rank_six_beta_zero_localization.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_transverse_rank_six_beta_zero_localization.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_TRANSVERSE_RANK_SIX_BETA_ZERO_LOCALIZATION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds (SymPy transverse-derivative, boundary-pencil, relation-annihilator, and target-kernel replay; independent standard-library Fraction audit)",
+      "external_binaries": [],
+      "note": "The transverse rank-six survivor is forced onto two exact boundary families. Root-block beta-zero avoidance gives a coordinate monomial or boundary-pencil tangent, while a non-coordinate relation plane forces an aligned rank-two involved row with coordinate kernel and diagonal contraction. These residual families still require the full permanent equations. Global Krenn-Gu is UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Non-proof-active boundary-candidate collection checkpoint; representative frozen certificate refuted",
       "document": "claims/p5/h22/component19-p0-ordinary-boundary/P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md",
       "document_sha256_16": "15e7fd63116a421f",

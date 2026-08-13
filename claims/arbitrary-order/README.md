@@ -422,6 +422,18 @@ distinct GHZ colours.  Therefore the only surviving rank-six mechanism has
 exactly two root blocks with disjoint derivative summands; that transverse
 case, joint rank at most five, and the other physical branches remain open.
 
+The subsequent
+[`transverse-rank-six beta-zero localization`](BALANCED_M3_COMMON_THREE_SPACE_TRANSVERSE_RANK_SIX_BETA_ZERO_LOCALIZATION_THEOREM.md)
+uses the automatic four-dimensional beta-zero annihilator locus of that last
+rank-six mechanism.  Avoiding the root torus forces one internal block to be a
+coordinate monomial or part of one sharp boundary-pencil tangent family.  If
+the three-plane of relations among the two involved row blocks is not already
+contained in a coordinate hyperplane, S2R--S2S force both internal-block
+contractions onto one target coordinate, and target consistency forces at
+least one involved row block to have rank two with that coordinate as its
+kernel and diagonal internal contraction.  These coordinate-relation and
+aligned rank-two boundaries remain open to the full permanent equations.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
