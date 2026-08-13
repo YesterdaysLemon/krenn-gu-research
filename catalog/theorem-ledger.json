@@ -4285,6 +4285,33 @@
       "legacy_paths": []
     },
     {
+      "name": "Balanced m=3 Common-Three-Space Transverse-Rank-Six Aligned-Rank-Two Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_TRANSVERSE_RANK_SIX_ALIGNED_RANK_TWO_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "22b89816bcb1c58a",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion for a normalized target-consistent physical m=3 common shore whose total singleton span has dimension three",
+        "the joint root-nonroot cross-colour map has rank six, exactly B23 and B13 are nonzero after permuting roots, their derivative summands are disjoint, and the relation three-plane is not contained in a coordinate hyperplane",
+        "the S2AD aligned alternative holds: one involved root-row map has rank two with coordinate kernel, the opposite root-root block has the matching nonzero diagonal contraction, and both relation-plane contractions use that coordinate line",
+        "the rank-two row makes K12 the graph of a rank-two map; the beta-zero torus atlas, all 27 empty-permanent coefficients, and permanent symmetry force a diagonal first block and a graph-kernel second block",
+        "a repeated-row Segre-tangent mode-rank obstruction removes the last diagonal component; the residual symmetric square pencil is excluded in every zero, one, two, or three nonzero pair-tensor kernel case",
+        "the coordinate-relation-plane transverse-rank-six boundary remains open; joint rank at most five, every other physical branch, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_transverse_rank_six_aligned_rank_two_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_transverse_rank_six_aligned_rank_two_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_TRANSVERSE_RANK_SIX_ALIGNED_RANK_TWO_EXCLUSION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds (SymPy graph-target, tangent-rank, and mixed-kernel replay; independent standard-library Fraction audit)",
+      "external_binaries": [],
+      "note": "The full empty-permanent equation makes the aligned rank-two survivor impossible. The graph-row symmetry first forces a rank-one residual; on its kernel plane, the two square maps cannot carry distinct GHZ coordinate lines across the exhaustive mixed-product derivative atlas. Rank six remains open only on a coordinate relation plane. Global Krenn-Gu is UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Non-proof-active boundary-candidate collection checkpoint; representative frozen certificate refuted",
       "document": "claims/p5/h22/component19-p0-ordinary-boundary/P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md",
       "document_sha256_16": "15e7fd63116a421f",
