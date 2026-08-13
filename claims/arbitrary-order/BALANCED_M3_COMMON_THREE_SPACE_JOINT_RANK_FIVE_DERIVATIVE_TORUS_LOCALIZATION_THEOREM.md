@@ -37,10 +37,11 @@ and a counterexample open.  Global Krenn--Gu remains **UNRESOLVED**.
 
 The successor chain S2AH--S2AM now excludes every transverse two-root
 rank-five row/support profile.  S2AN--S2AP exclude the complete
-repeated-coordinate part of the `(1,1,1)` Hilbert--Burch atlas.  The
-coordinate-distinct and other allowed `(1,1,1)` charts, and the other
-Hilbert--Burch profiles, remain open; these successors do not change the
-scope or proof of the localization below.
+repeated-coordinate part of the `(1,1,1)` Hilbert--Burch atlas, and S2AQ
+excludes the all-coordinate-distinct triangle.  The chart with exactly two
+distinct coordinate factors and a genuinely noncoordinate third factor, and
+the other Hilbert--Burch profiles, remain open; these successors do not
+change the scope or proof of the localization below.
 
 ## 1. The shared-factor derivative is rank-free impossible
 
@@ -400,9 +401,10 @@ row in (20)--(24) and the three Hilbert--Burch coordinate atlases.  No finite
 scan, numerical search, or generic-point promotion is used.
 
 The later support-profile chain S2AH--S2AM has now closed the first of those
-two obligations.  S2AN--S2AP close the repeated-coordinate `(1,1,1)` chart;
-the coordinate-distinct and other allowed `(1,1,1)` charts, and the other
-two coordinate atlases, remain open.
+two obligations.  S2AN--S2AP close the repeated-coordinate `(1,1,1)` chart,
+and S2AQ closes its all-coordinate-distinct triangle.  The chart with exactly
+two distinct coordinate factors and a genuinely noncoordinate third factor,
+and the other two coordinate atlases, remain open.
 
 ## Focused replay
 
