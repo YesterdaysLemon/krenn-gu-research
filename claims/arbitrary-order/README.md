@@ -383,6 +383,20 @@ independent surviving diagonal GHZ rows.  The remaining rank-seven case must
 therefore have at least two nonzero root--root blocks; ranks at most six and
 the other physical component types remain open.
 
+The
+[`two-root-block joint-cross-rank-seven exclusion`](BALANCED_M3_COMMON_THREE_SPACE_TWO_ROOT_BLOCK_JOINT_CROSS_RANK_SEVEN_EXCLUSION_THEOREM.md)
+closes that last rank-seven mechanism.  Codimension two forces the shared
+derivative to have its sharp rank-five form: exactly two rank-one root blocks
+share one endpoint factor, their four-dimensional derivative kernel lies in
+the joint column image, and the common factor is a target coordinate.  The
+two unaffected GHZ colours force each involved root block row to have global
+rank three.  Pointwise, their permanent slices are `R M(q_c) P^T`, where
+`M(q_c)` is zero-diagonal.  The two target slices force generic `R,P` to be
+invertible, but a nonzero zero-diagonal `3 x 3` matrix has rank at least two
+and cannot produce the required rank-one slice.  Thus ranks nine, eight, and
+seven are all excluded on the common-three-space stratum; joint rank at most
+six and the other physical component types remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

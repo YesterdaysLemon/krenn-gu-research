@@ -4177,6 +4177,33 @@
       "legacy_paths": []
     },
     {
+      "name": "Balanced m=3 Common-Three-Space Two-Root-Block Joint-Cross-Rank-Seven Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_TWO_ROOT_BLOCK_JOINT_CROSS_RANK_SEVEN_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "a24a1d25809c820b",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion for a normalized target-consistent physical m=3 common shore whose total singleton span has dimension three",
+        "the joint nine-by-nine root-nonroot cross-colour map has rank exactly seven and at least two root-root blocks are nonzero",
+        "codimension two forces the shared derivative to have rank exactly five: exactly two rank-one root blocks share an endpoint factor, the third block vanishes, and the four-dimensional derivative kernel lies in the joint column image",
+        "the S2R torus obstruction forces the shared endpoint factor to be one target coordinate, leaving two exact unaffected GHZ root slices",
+        "those two slices force both involved root block rows to have global rank three and generically invertible pointwise evaluations; each slice is then an invertible left-right transform of a nonzero zero-diagonal three-by-three matrix, whose rank is at least two rather than the required one",
+        "together with the single-root rank-seven theorem this excludes every joint rank seven incidence; joint rank at most six, the other common-three-space component types, other S2Q strata, every m at least four, all-rank-drop, witness exclusion, counterexample, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_two_root_block_joint_cross_rank_seven_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_two_root_block_joint_cross_rank_seven_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_TWO_ROOT_BLOCK_JOINT_CROSS_RANK_SEVEN_EXCLUSION_SELF_REVIEW_2026-08-12.md",
+      "expected_runtime": "seconds (SymPy sharp derivative and pointwise permanent-matrix replay; independent standard-library Fraction audit)",
+      "external_binaries": [],
+      "note": "The remaining rank-seven mechanism has a sharp two-root shared-factor derivative. Its kernel containment and coordinate common factor leave two exact GHZ slices. Both involved root rows are forced full rank, while pointwise each slice would require a nonzero zero-diagonal matrix to have rank one. This is impossible, so every surviving common-three-space incidence has joint rank at most six. Global Krenn-Gu is UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Non-proof-active boundary-candidate collection checkpoint; representative frozen certificate refuted",
       "document": "claims/p5/h22/component19-p0-ordinary-boundary/P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md",
       "document_sha256_16": "15e7fd63116a421f",
