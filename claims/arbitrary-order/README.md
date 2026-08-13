@@ -687,6 +687,20 @@ impossible.  The same-colour central chart, genuinely outer coordinate-pair
 charts, other `(1,1,2)` boundaries, `(1,2,2)`, lower joint rank, other
 physical components, and higher orders remain open.
 
+The successor
+[`(1,1,2)` same-colour central-chart exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_ONE_TWO_SAME_COLOUR_CENTRAL_CHART_EXCLUSION_THEOREM.md)
+closes the other central chart.  S2AS leaves four symmetric ordinary
+coloops.  In one orientation, write the surviving first-row vector in the
+second-row plane.  With both coefficients nonzero, a rank-one square and
+mixed map must share a source factor.  At the two endpoints, either a
+square-zero row would carry two fully transverse rank-one targets, or a
+rank-one square would have two independent mixed radicals despite the
+nonzero full-sensor alternating tensor.  Exact source-support atlases
+exclude both.  Thus both central coordinate-pair charts of `(1,1,2)` are
+impossible.  The genuinely outer coordinate-pair charts, other `(1,1,2)`
+boundaries, `(1,2,2)`, lower joint rank, other physical components, and
+higher orders remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

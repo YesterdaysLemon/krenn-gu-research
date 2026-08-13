@@ -4947,6 +4947,38 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Hilbert-Burch (1,1,2) Same-Colour Central-Chart Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_ONE_TWO_SAME_COLOUR_CENTRAL_CHART_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "c00e29e6312176c9",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
+        "all three root-root blocks are nonzero and the Hilbert-Burch derivative kernel has projection profile (1,1,2)",
+        "the selected same-colour central chart has normal form ker D_B=span((lambda e_s,0,z),(0,mu e_s,w)), with lambda mu nonzero and z,w independent",
+        "S2AS gives two complementary two-planes, the complete untouched binary diagonal target table, and a four-hyperplane localization to the ordinary coloops alpha_a, alpha_b, beta_a, beta_b",
+        "the third-row image has dimension three: the independent evaluations gamma(z),gamma(w) give quotient rank two and their common normal gives a nonzero row in V by the complete target contraction",
+        "physical full-sensor rank makes the alternating separated tensor of V nonzero",
+        "in the alpha_a orientation, deleting r_a leaves S=P=span(p_a,p_b) and r_b=c p_a+d p_b; target-colour permutation and first/second-root symmetry cover the other three coloops",
+        "when c and d are nonzero, bilinearity gives a nonzero rank-one square onto T_b and a rank-one mixed map containing the repeated row onto T_a; the S2AL square/mixed tangent lemma forces factor sharing",
+        "when d=0, one square-zero row would carry two fully transverse rank-one mixed targets; pure support fixes one factor, full support has a two-dimensional square kernel, and two-source support has a mixed map of rank at least two on a three-plane",
+        "when c=0, a rank-one square would have two independent mixed radical rows; full support makes each radical proportional to the repeated row, while two-source support removes the third source from all three rows and kills the alternating tensor",
+        "therefore all four coloops are impossible; together with S2AW this closes both central coordinate-pair charts, but genuinely outer coordinate-pair charts, other (1,1,2) boundaries, (1,2,2), lower joint ranks, other physical branches, higher orders, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_one_two_same_colour_central_chart_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_one_two_same_colour_central_chart_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_ONE_TWO_SAME_COLOUR_CENTRAL_CHART_EXCLUSION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds (SymPy derivative, quotient-rank, square-zero, two-radical, and coloop-fork replay; independent standard-library Fraction audit)",
+      "external_binaries": [],
+      "note": "The same-colour central coordinate-pair chart of the rank-five Hilbert-Burch (1,1,2) profile is impossible. Its four ordinary coloops reduce to a generic square/mixed tangent contradiction or two exact source-support endpoint obstructions. Together with S2AW this closes both central coordinate-pair charts. Other stated branches remain open, and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
