@@ -4560,7 +4560,7 @@
     {
       "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Support-Two (3,3) Exclusion",
       "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_TWO_THREE_BY_THREE_EXCLUSION_THEOREM.md",
-      "document_sha256_16": "72856307e90b1259",
+      "document_sha256_16": "f444cfca3f4dc5df",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact characteristic-zero exclusion on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
@@ -4569,7 +4569,7 @@
         "contracting the complete target equation by the support-two kernel confines every singleton correction tensor to the binary diagonal plane span(T0,T1), with S2=0",
         "coefficientwise permanent symmetry at the T2 target forces the third graph column onto e2; the complete target table then gives a rank-one T2 square and three mixed polarized maps into span(T0,T1) without restricting the arbitrary root-root block entries",
         "the binary-diagonal-plane strengthening of the exact two-/three-source common-zero atlas forces the alternating separated singleton determinant to vanish, contradicting physical full-sensor rank",
-        "all support-two involved-row profiles at this transverse joint-rank-five boundary are excluded; support one, the three Hilbert-Burch coordinate atlases, joint rank at most four, other physical branches, higher orders, and global resolution remain open"
+        "all support-two involved-row profiles at this transverse joint-rank-five boundary are excluded; the successor separately excludes the support-one (3,3), (3,2), and (2,3) profiles, while support-one (2,2), the three Hilbert-Burch coordinate atlases, joint rank at most four, other physical branches, higher orders, and global resolution remain open"
       ],
       "dependencies": [],
       "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_support_two_three_by_three_exclusion.py",
@@ -4579,7 +4579,36 @@
       "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_TWO_THREE_BY_THREE_EXCLUSION_SELF_REVIEW_2026-08-13.md",
       "expected_runtime": "seconds (SymPy graph, correction-plane, permanent-symmetry, and common-zero replay; independent standard-library Fraction tensor audit)",
       "external_binaries": [],
-      "note": "Every support-two rank-five (3,3) involved-row point is impossible for a full sensor. The full kernel contraction confines the corrections to the binary diagonal plane, permanent symmetry isolates a T2 square, and the transverse-plane common-zero atlas kills the singleton determinant. Together with S2AI and S2AJ, this closes the support-two involved-row census only; support one, other rank-five and lower-rank branches, and global Krenn-Gu remain open.",
+      "note": "Every support-two rank-five (3,3) involved-row point is impossible for a full sensor. The full kernel contraction confines the corrections to the binary diagonal plane, permanent symmetry isolates a T2 square, and the transverse-plane common-zero atlas kills the singleton determinant. Together with S2AI and S2AJ, this closes the support-two involved-row census only. The successor closes the higher-row support-one profiles; support-one (2,2), other rank-five and lower-rank branches, and global Krenn-Gu remain open.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Support-One Higher-Row-Rank Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_ONE_HIGHER_ROW_RANK_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "97a6dac6a950072a",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
+        "the transverse two-root derivative has rank six; the uninvolved third-root row has rank two and its one-dimensional kernel has target-coordinate support exactly one",
+        "the involved row ranks are (3,3), (3,2), or (2,3); the support-one (2,2) profile is not included",
+        "in the (3,3) profile the support-contracted relation graph is injective, so the complete target equation confines every singleton correction to the pure target line T2",
+        "in a mixed profile the rank-two shore's complete zero row pins every singleton correction to one pure line and the missing third-root row forces that line to be T2",
+        "coefficientwise permanent symmetry reduces the invertible and equal-kernel graph charts to two repeated-row square maps on the third-row two-plane, with fully transverse target images and zero mixed polarization",
+        "the exact two-plane square-pencil lemma exhausts the two-source and three-source supports and excludes those charts; the unequal-kernel mixed chart satisfies the inherited binary five-product obstruction",
+        "the support-one (2,2) profile, three Hilbert-Burch coordinate atlases, joint rank at most four, other physical branches, higher orders, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_support_one_higher_row_rank_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_support_one_higher_row_rank_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_ONE_HIGHER_ROW_RANK_EXCLUSION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds (SymPy graph, zero-row, tangent, and two-plane atlas replay; independent standard-library Fraction sparse-tensor audit)",
+      "external_binaries": [],
+      "note": "Every support-one rank-five profile with an involved row of rank three is impossible. The invertible and equal-kernel charts fall to a new exact two-plane square-pencil obstruction, while the unequal-kernel mixed chart falls to the binary five-product lemma. Support-one (2,2), the Hilbert-Burch boundaries, lower joint ranks, other physical components, and global Krenn-Gu remain open.",
       "claim_package": "claims/arbitrary-order",
       "proof_variant": "canonical",
       "subpackage": null,

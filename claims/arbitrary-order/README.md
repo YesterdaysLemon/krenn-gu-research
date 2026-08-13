@@ -529,6 +529,19 @@ profile at this transverse joint-rank-five boundary is impossible; support
 one, the Hilbert--Burch boundaries, lower joint rank, other physical
 components, and higher orders remain open.
 
+The
+[`support-one higher-row-rank exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_ONE_HIGHER_ROW_RANK_EXCLUSION_THEOREM.md)
+then closes the support-one `(3,3)`, `(3,2)`, and `(2,3)` profiles without
+restricting either root block.  In the invertible graph, the support
+contraction is injective and leaves only a `T_2` singleton correction.  In a
+mixed graph, the rank-two shore's complete zero row forces the same
+correction line and makes its missing colour equal two.  Permanent symmetry
+reduces the equal-kernel charts to a new exact two-plane square-pencil
+obstruction; the unequal-kernel chart is the existing binary five-product
+table.  Only support-one `(2,2)` remains at this transverse boundary, along
+with the Hilbert--Burch atlases, lower joint rank, other physical components,
+and higher orders.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
