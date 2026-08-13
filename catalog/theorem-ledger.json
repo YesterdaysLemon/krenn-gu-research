@@ -5079,6 +5079,37 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Hilbert-Burch (1,2,2) Beta-t-Coloop Coordinate-Endpoint Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_BETA_T_COLOOP_COORDINATE_ENDPOINT_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "9928930bfadaa8da",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
+        "all three root-root blocks are nonzero and the Hilbert-Burch derivative kernel has projection profile (1,2,2) in the S2AZ gauge x=lambda e_s, c=mu e_t, y_t=0, with lambda mu nonzero and the two stated projection pairs independent",
+        "the S2AZ coordinate-coloop fork selects the distinguished second-root coordinate hyperplane N subset {beta_t=0}",
+        "S2BA makes the second- and third-root row maps injective and localizes w to one of the two target-coordinate lines complementary to e_t",
+        "the full row quotient classes of A and B form a basis modulo V, while R is a two-plane inside V, so S=R direct-sum span(A) has dimension exactly three and the first-root row map is an isomorphism onto S",
+        "at an endpoint w=e_a, the complete derivative-zero face beta_t=gamma_a=0 puts p_a,p_b,q_b,q_t in S and gives the exact single-cell table per(S,p_a,span(q_b,q_t))=0, per(S,p_b,q_t)=0, while per(-,p_b,q_b) is a nonzero rank-one T_b map",
+        "if the zero row p_a has full source support, its square radical is exactly span(x-y,x-z), and the two mixed radical equations collapse the three-dimensional shore S to span(p_a)",
+        "if p_a has two-source support, its two-plane of square partners lies in the same two source summands; the mixed equation either collapses that plane to span(x-y) or removes the third source from all of S and kills the surviving cell",
+        "if p_a is pure, the partner two-plane lies in one two-source ruling; the mixed equation either removes a source from S or makes the whole partner plane pure in the same source, where the q_t and q_b maps have identical zero behavior",
+        "the three source-support cases exclude either coordinate endpoint; together with S2BA this closes the distinguished beta_t coloop, but the other eight (1,2,2) coloops, lower joint rank, other physical components, higher orders, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_two_two_beta_t_coloop_coordinate_endpoint_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_two_two_beta_t_coloop_coordinate_endpoint_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_BETA_T_COLOOP_COORDINATE_ENDPOINT_EXCLUSION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds (SymPy endpoint-table and source-support radical replay; independent standard-library Fraction audit)",
+      "external_binaries": [],
+      "note": "Both coordinate endpoints left by the distinguished beta_t-coloop support localization are impossible. An exact single-cell 3 x 2 x 2 permanent table contradicts an exhaustive full-, two-, and pure-source radical propagation lemma. Together with S2BA this closes the beta_t coloop orientation. Other stated branches remain open, and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
