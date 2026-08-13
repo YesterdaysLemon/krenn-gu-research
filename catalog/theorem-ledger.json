@@ -5331,6 +5331,41 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Hilbert-Burch (1,2,2) Residual Second-Root-Coloop Common-Middle-Row Localization",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_COMMON_MIDDLE_ROW_LOCALIZATION_THEOREM.md",
+      "document_sha256_16": "6e0e2c2227406584",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero localization on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
+        "the Hilbert-Burch derivative kernel has the S2AZ (1,2,2) gauge x=lambda e_s, c=mu e_t, y_t=0, with lambda mu nonzero and the two stated projection pairs independent",
+        "the coordinate-coloop fork selects either residual second-root hyperplane N subset {beta_j=0} with j different from t; k is the third colour",
+        "S2BE-S2BH reduce every survivor to s in {j,k}, y proportional to the complementary coordinate e_u, and w equal to e_s or e_u",
+        "the new common-middle-row lemma assumes two binary row planes inside one at-most-three-space and only a nonzero intersection line from the middle plane; it does not strengthen that line to containment of the plane",
+        "if the first and third planes agree, permanent symmetry aligns their indexed bases; if they differ, the intersection line has one of three supports in each plane, giving nine ordered types",
+        "the middle-plane intersection is its active row, zero row, or a generic combination; its nonzero in-space vector is covered by three exact affine patches",
+        "the resulting 10 by 3 by 3 cover has 90 normal forms, including polynomial two-parameter and one-parameter families without division, saturation, or sampling",
+        "the 90 rational Nullstellensatz identities contain 31591 sparse multiplier terms and have certificate SHA-256 a56242675744f848fc4f747045ce9b2a18c7b32ae2152ca800bd6c654d29e8d1",
+        "the primary verifier reconstructs all 64 cubic generators per case with SymPy; the independent no-import audit reverses all 26 variables and rebuilds the systems with standard-library Fraction sparse arithmetic",
+        "with y=e_u, P_delta is spanned by e_s^* and a row with both u,t coordinates outside the two projective coordinate directions",
+        "unless L_Q=kappa z_s-h w_s is identically zero, one direction also gives exact u,t coordinate lifts for Q_delta and the complete target face is the forbidden common-middle-row table",
+        "therefore z_s=w_s=0; endpoint w=e_s is impossible, while w=e_u survives only with z_s=0 and independence forces z_t nonzero",
+        "the terminal w=e_u,z_s=0,z_t nonzero chart remains open, as do five other (1,2,2) coloops, lower joint rank, other physical components and pole strata, higher orders, and global resolution"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_two_two_residual_second_root_coloop_common_middle_row_localization.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_two_two_residual_second_root_coloop_common_middle_row_localization.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_COMMON_MIDDLE_ROW_LOCALIZATION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "under one minute (90 exact rational certificate replays plus independent reversed-variable sparse audit)",
+      "external_binaries": [],
+      "note": "Every residual second-root-coloop endpoint is localized to the terminal chart y=w=e_u, z_s=0, z_t nonzero. A complete 90-case common-middle-row orbit and pinned rational identities exclude all other endpoint charts with an independent no-import replay. The terminal chart and all other stated branches remain open; global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

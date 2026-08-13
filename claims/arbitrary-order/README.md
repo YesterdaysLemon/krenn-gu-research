@@ -837,6 +837,18 @@ the forbidden S2BG table on a generic pencil member.  The two endpoint
 locations for `w`, their remaining `z` constraints, and the other five
 `(1,2,2)` coloop orientations remain open.
 
+The successor
+[`(1,2,2)` residual second-root-coloop common-middle-row localization`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_COMMON_MIDDLE_ROW_LOCALIZATION_THEOREM.md)
+closes every endpoint chart except one terminal alignment.  Once
+`y parallel e_u`, a generic determinant-pencil member has two fully
+transverse targets sharing the active row of the only plane allowed to
+escape the common three-space, unless `z_s=w_s=0`.  The new obstruction
+covers ten first/third-plane incidences, all three positions of the
+escaping-plane intersection, and three polynomial affine patches for its
+line.  Exact rational identities exclude all 90 normal forms.  Hence every
+survivor has `w=e_u`, `z_s=0`, and `z_t!=0`.  That terminal chart, the other
+five `(1,2,2)` coloop orientations, and the wider branches remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
