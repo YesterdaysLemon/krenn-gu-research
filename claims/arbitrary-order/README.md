@@ -487,9 +487,10 @@ one nonzero rank-one square.  An exact source-support atlas makes this
 incompatible with the alternating separated determinant of three independent
 singleton columns at joint rank five.  The same target table has an exact
 rank-five sharpness fixture whose first two singleton columns coincide, so
-full singleton independence is load-bearing.  The singly monomial/tangent
-`(2,2)` case, the other involved-row profiles, support one, and the
-Hilbert--Burch boundaries remain open.
+full singleton independence is load-bearing.  The singly
+monomial/nonmonomial `(2,2)` case, with no tangent-family restriction yet
+proved for the nonmonomial block, the other involved-row profiles, support
+one, and the Hilbert--Burch boundaries remain open.
 
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)

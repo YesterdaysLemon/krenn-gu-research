@@ -9,7 +9,8 @@ its SymPy verifier, and its independent standard-library audit.
 The package excludes exactly the transverse joint-rank-five profile with a
 rank-two third row of kernel support two, both involved rows of rank two, and
 both root blocks coordinate monomials.  It does not exclude the singly
-monomial/tangent case, another involved-row profile, support one, a
+monomial/nonmonomial case, where the nonmonomial block is unrestricted at
+this stage, another involved-row profile, support one, a
 Hilbert--Burch boundary, joint rank at most four, or any global branch.
 Global Krenn--Gu remains **UNRESOLVED**.
 
@@ -153,5 +154,6 @@ joint row rank five
 ```
 
 Dropping the last condition admits the exact rank-drop fixture.  The
-singly-monomial/tangent `(2,2)` profile and every other stated residual remain
+singly-monomial/nonmonomial `(2,2)` profile, without a proved tangent-family
+restriction on the nonmonomial block, and every other stated residual remain
 open.  Global status must remain **UNRESOLVED**.

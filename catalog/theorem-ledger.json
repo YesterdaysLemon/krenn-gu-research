@@ -4393,7 +4393,7 @@
     {
       "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Support-Two Double-Monomial Exclusion",
       "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_TWO_DOUBLE_MONOMIAL_EXCLUSION_THEOREM.md",
-      "document_sha256_16": "e1a49e90d08bbce9",
+      "document_sha256_16": "ab0848b5d34ecfa2",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact characteristic-zero exclusion on the normalized target-consistent physical m=3 common-three-space stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
@@ -4401,7 +4401,7 @@
         "both nonzero root-root blocks are coordinate monomials; the aligned target-kernel rows and support-two contractions force the canonical blocks e0 tensor e0 and e1 tensor e1 and projected plane span((e0,0),(0,e1),(e2,tau e2))",
         "the complete target equation makes the third-row two-plane annihilate the three mixed polarized products of the projected row triple while the repeated third row has a nonzero rank-one square onto the colour-2 pure target",
         "the separated two-plane mixed-product lemma exhausts the one-, two-, and three-source supports of the repeated row and forces either a zero alternating singleton determinant or an intersection between the involved and third row spaces",
-        "full singleton rank and joint rank five exclude both outcomes; the singly monomial/tangent (2,2) profile, all other rank-five profiles, lower joint ranks, other physical branches, and global resolution remain open"
+        "full singleton rank and joint rank five exclude both outcomes; the singly monomial/nonmonomial (2,2) profile remains open with no tangent-family restriction proved for the nonmonomial block, as do all other rank-five profiles, lower joint ranks, other physical branches, and global resolution"
       ],
       "dependencies": [],
       "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_support_two_double_monomial_exclusion.py",

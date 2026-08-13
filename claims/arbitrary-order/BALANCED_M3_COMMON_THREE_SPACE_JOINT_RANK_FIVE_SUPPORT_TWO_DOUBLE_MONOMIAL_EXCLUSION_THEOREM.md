@@ -24,10 +24,11 @@ disjoint from the triple and preserving its alternating separated tensor.
 The latter tensor is exactly the generic singleton determinant.
 
 This theorem does **not** exclude the support-one kernel, a support-two point
-with a `(3,3)` or `(3,2)` involved-row profile, the `(2,2)` profile with only
-one monomial root block, any three-root Hilbert--Burch boundary, joint rank at
-most four, another S2T/S2Q component, a higher order, or the all-rank-drop
-branch.  Global Krenn--Gu remains **UNRESOLVED**.
+with a `(3,3)` or `(3,2)` involved-row profile, the `(2,2)` profile with one
+coordinate-monomial root block and one unrestricted nonmonomial root block,
+any three-root Hilbert--Burch boundary, joint rank at most four, another
+S2T/S2Q component, a higher order, or the all-rank-drop branch.  Global
+Krenn--Gu remains **UNRESOLVED**.
 
 ## 1. The support-two `(2,2)` row profile
 
@@ -447,15 +448,17 @@ third-row kernel support two, involved rows (2,2),
 third-row kernel support one:                        OPEN;
 support two with involved profile (3,3) or (3,2):    OPEN;
 support two, involved profile (2,2),
-  exactly one monomial / one tangent block:           OPEN;
+  one coordinate monomial / unrestricted nonmonomial: OPEN;
 three-root Hilbert-Burch coordinate atlases:          OPEN;
 joint rank at most four / other physical branches:    OPEN;
 global Krenn-Gu conjecture:                           UNRESOLVED.       (45)
 ```
 
-The next exact transverse obligation is the singly monomial/tangent
-`(2,2)` profile or one of the higher involved-row profiles.  No finite-field
-probe, timeout, sample, or generic-point promotion is used in the theorem.
+The next exact transverse obligation is the singly monomial/nonmonomial
+`(2,2)` profile, with no tangent-family restriction proved for the
+nonmonomial block, or one of the higher involved-row profiles.  No
+finite-field probe, timeout, sample, or generic-point promotion is used in
+the theorem.
 
 ## Focused replay
 
