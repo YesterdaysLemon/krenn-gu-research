@@ -29,6 +29,9 @@ one, a three-root Hilbert--Burch boundary, joint rank at most four, another
 S2T/S2Q component, the all-rank-drop branch, or a higher order.  Global
 Krenn--Gu remains **UNRESOLVED**.
 
+The support-two `(3,3)` successor closes that final involved-row profile
+without changing this theorem's proof or scope.
+
 ## 1. The mixed profile is a rank-two graph
 
 Use the transverse notation of S2AG and S2AI.  After permuting the two
@@ -246,7 +249,7 @@ The transverse rank-five support-two branch is now
 ```text
 involved rows (2,2):                                  IMPOSSIBLE (S2AI);
 involved rows (3,2)/(2,3):                            IMPOSSIBLE (this theorem);
-involved rows (3,3):                                  OPEN;
+involved rows (3,3):                                  IMPOSSIBLE (successor);
 
 third-row kernel support one:                         OPEN;
 three-root Hilbert--Burch coordinate atlases:         OPEN;
@@ -254,10 +257,9 @@ joint rank at most four / other physical branches:    OPEN;
 global Krenn--Gu conjecture:                          UNRESOLVED.       (25)
 ```
 
-The next exact transverse support-two obligation is therefore the `(3,3)`
-graph profile.  Its correction tensors must be controlled before the
-proportional third-row relation can contradict the uncontracted target
-slices.
+The successor controls those correction tensors through the binary diagonal
+plane and closes the `(3,3)` graph profile.  The next transverse obligations
+are support one and the three Hilbert--Burch coordinate atlases.
 
 ## Focused replay
 

@@ -512,8 +512,22 @@ miss colour two, so one involved physical row is zero.  The full target
 equation pins all singleton corrections to `T_2`.  Meanwhile the support-two
 third-row relation makes `q_0,q_1` proportional, but the corresponding
 slices at the fixed root pair `(1,1)` differ by the independent target line
-`T_1`.  This is impossible.  The support-two `(3,3)` profile, support one,
-and the Hilbert--Burch boundaries remain open.
+`T_1`.  This is impossible.  This theorem leaves `(3,3)` untouched; the
+successor below closes it.  Support one and the Hilbert--Burch boundaries
+remain open.
+
+The
+[`support-two (3,3) exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_TWO_THREE_BY_THREE_EXCLUSION_THEOREM.md)
+closes the final support-two involved-row profile without restricting either
+root block.  The invertible graph contraction confines every singleton
+correction to the binary diagonal plane `span(T_0,T_1)`, and coefficientwise
+permanent symmetry fixes the remaining graph column on colour two.  The full
+target table then gives a rank-one `T_2` square and three mixed maps into the
+fully transverse binary plane.  The two-/three-source common-zero atlas kills
+the alternating singleton determinant.  Thus every support-two involved-row
+profile at this transverse joint-rank-five boundary is impossible; support
+one, the Hilbert--Burch boundaries, lower joint rank, other physical
+components, and higher orders remain open.
 
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)

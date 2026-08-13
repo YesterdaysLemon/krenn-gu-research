@@ -449,7 +449,8 @@ third-row kernel support two, involved rows (2,2),
   both root blocks coordinate monomials:             IMPOSSIBLE;
 
 third-row kernel support one:                        OPEN;
-support two with involved profile (3,3) or (3,2):    OPEN;
+support two with involved profile (3,2)/(2,3):       IMPOSSIBLE (S2AJ);
+support two with involved profile (3,3):             IMPOSSIBLE (successor);
 support two, involved profile (2,2),
   one coordinate monomial / unrestricted nonmonomial:
     IMPOSSIBLE BY THE SUCCESSOR COMPLETE THEOREM;
@@ -460,10 +461,10 @@ joint rank at most four / other physical branches:    OPEN;
 global Krenn-Gu conjecture:                           UNRESOLVED.       (45)
 ```
 
-The next exact transverse obligations after the successor complete `(2,2)`
-exclusion are the higher involved-row profiles and support one.  No
-finite-field probe, timeout, sample, or generic-point promotion is used in
-this theorem.
+The later S2AJ and support-two `(3,3)` theorems close both higher involved-row
+profiles.  The next transverse obligations are support one and the
+Hilbert--Burch coordinate atlases.  No finite-field probe, timeout, sample,
+or generic-point promotion is used in this theorem.
 
 ## Focused replay
 

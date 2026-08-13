@@ -29,8 +29,8 @@ joint rank at most four, another S2T/S2Q component, the all-rank-drop branch,
 or a higher order.  Global Krenn--Gu remains **UNRESOLVED**.
 
 The successor mixed-row-rank theorem now excludes the complete `(3,2)` and
-`(2,3)` profiles without changing this theorem's proof.  The support-two
-`(3,3)` profile remains open.
+`(2,3)` profiles without changing this theorem's proof.  The further
+support-two `(3,3)` successor closes the final involved-row profile.
 
 ## 1. The beta-zero atlas forces a monomial block
 
@@ -457,17 +457,17 @@ third-row kernel support two, involved rows (2,2),
   apparent Type II: forced into Type I by (6):        IMPOSSIBLE (this theorem);
 
 third-row kernel support two, involved (3,2)/(2,3):   IMPOSSIBLE (successor);
-third-row kernel support two, involved (3,3):         OPEN;
+third-row kernel support two, involved (3,3):         IMPOSSIBLE (successor);
 third-row kernel support one:                         OPEN;
 three-root Hilbert-Burch coordinate atlases:          OPEN;
 joint rank at most four / other physical branches:    OPEN;
 global Krenn-Gu conjecture:                           UNRESOLVED.       (42)
 ```
 
-The next exact transverse obligations are the support-two `(3,3)` involved-
-row profile and the support-one third-row kernel.  The
-Type-II collapse above uses both involved row ranks equal to two and makes no
-inference for those other profiles.
+After the support-two `(3,3)` successor, the next exact transverse obligations
+are the support-one third-row kernel and the Hilbert--Burch coordinate
+atlases.  The Type-II collapse above uses both involved row ranks equal to
+two and makes no inference for those other profiles.
 
 ## Focused replay
 
