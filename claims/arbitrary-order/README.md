@@ -799,6 +799,21 @@ the two coordinate lines complementary to `e_t`.  The four ordered
 coloop/endpoint cases and the other five `(1,2,2)` coloop orientations
 remain open.
 
+The successor
+[`(1,2,2)` residual second-root-coloop projective-pencil localization`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_PROJECTIVE_PENCIL_LOCALIZATION_THEOREM.md)
+strengthens the binary diagonal obstruction to the case where the middle-row
+plane meets the common three-space in an arbitrary nonzero line.  Four
+ordered first/third-plane endpoints and seven nonempty supports of that line
+give 28 exact normal forms; pinned rational Nullstellensatz identities
+exclude all of them.  Hence every determinant-face pencil member has a
+vanishing projection gate.  Exact projective factorization and the auxiliary
+third-root kernel face give the endpoint table: for `w=e_l` and the other
+complementary colour `m`, `s=t` forces `z_t=0`, `s=l` forces
+`y parallel e_m` and `z_m z_t=0`, and `s=m` forces `y_m z_m=0`.  The selected
+row `p_j` is also proved to escape the canonical three-space genuinely.  No
+endpoint is excluded; the four ordered endpoints and the other five
+`(1,2,2)` coloop orientations remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

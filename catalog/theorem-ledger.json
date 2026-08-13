@@ -5220,6 +5220,44 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Hilbert-Burch (1,2,2) Residual Second-Root-Coloop Projective-Pencil Localization",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_PROJECTIVE_PENCIL_LOCALIZATION_THEOREM.md",
+      "document_sha256_16": "22a9db972ab9bde4",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero localization on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
+        "the Hilbert-Burch derivative kernel has the S2AZ (1,2,2) gauge x=lambda e_s, c=mu e_t, y_t=0, with lambda mu nonzero and the two stated projection pairs independent",
+        "the coordinate-coloop fork selects either residual second-root hyperplane N subset {beta_j=0} with j different from t; k is the third colour",
+        "S2BE gives w proportional to e_j or e_k; the four ordered coloop/endpoint cases remain under study rather than being asserted realizable or excluded",
+        "the seven canonical annihilator rows span the three-space V, while all except g_j lie in the two-plane R; consequently g_j is outside R and p_j is genuinely outside S=R direct-sum span(A)",
+        "the S2BC target-contraction proof makes pi and theta injective throughout the S2AZ gauge, independently of which coordinate coloop is selected",
+        "for every projective direction delta, alpha_s=0 with beta in P_delta and gamma in Q_delta is a complete derivative-zero product face",
+        "the gamma evaluation-kernel row q(v), with v spanning z-perp intersect w-perp, lies in R under the residual beta_j coloop",
+        "a nonzero beta_j-zero row of P_delta either lies in R or can be paired with an opposite Q_delta row so their sum lies in R; hence the first and third row planes and a nonzero middle-plane line lie in one at-most-three-space",
+        "a binary diagonal frame is impossible even when the middle-plane intersection line is non-coordinate: the already proved first/third-plane incidence reduction leaves four ordered endpoints, and the generic middle line has seven nonempty support masks",
+        "the resulting 28 exact normal forms each give 64 necessary selected source-coordinate cubic equations",
+        "the pinned rational Nullstellensatz certificate contains 20582 sparse multiplier terms and proves a unit-ideal identity for all 28 systems; the identities extend to every characteristic-zero field",
+        "the primary SymPy verifier and independent no-import Fraction audit separately reconstruct all generators; the audit reverses the 24-variable order and shares no polynomial library or stored generator list with the primary verifier",
+        "therefore the two coordinate-projection gates on the projective pencil cannot both be nonzero; exact polynomial factorization gives s=t implies z_t=w_t=0, while s different from t implies y_s=0 or z_s=w_s=0",
+        "the auxiliary gamma-kernel face forces span(z,w) to contain a coordinate e_i with i different from s",
+        "at an endpoint w=e_l, with m the other complementary colour, the exact table is: s=l implies y proportional to e_m and z_m z_t=0; s=m implies y_m z_m=0; s=t implies z_t=0",
+        "none of the four ordered endpoints is excluded; three third-root coloops, two complementary first-root coloops, lower joint rank, other physical components, low-span pole strata, higher orders, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_two_two_residual_second_root_coloop_projective_pencil_localization.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_two_two_residual_second_root_coloop_projective_pencil_localization.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_PROJECTIVE_PENCIL_LOCALIZATION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds (SymPy reconstruction and 28 rational certificate replays; independent reversed-order standard-library sparse audit; Singular 4.x is optional for deterministic certificate regeneration only)",
+      "external_binaries": [],
+      "note": "Both residual second-root coordinate coloops inherit a complete determinant-face pencil whose coordinate gates obey an exact factorization fork. A strengthened binary-frame obstruction handles an arbitrary middle-plane intersection through 28 pinned rational Nullstellensatz identities. At either coordinate endpoint, an exact six-case table constrains y and z according to s. No endpoint or full coloop orientation is excluded, five other (1,2,2) coloops and all other stated branches remain open, and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
