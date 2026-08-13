@@ -5258,6 +5258,44 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Hilbert-Burch (1,2,2) Residual Second-Root-Coloop s=t Endpoint Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_S_EQUAL_T_ENDPOINT_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "44e2ecde65fb2193",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
+        "the Hilbert-Burch derivative kernel has the S2AZ (1,2,2) gauge x=lambda e_s, c=mu e_t, y_t=0, with lambda mu nonzero and the two stated projection pairs independent",
+        "the coordinate-coloop fork selects either residual second-root hyperplane N subset {beta_j=0} with j different from t; k is the third colour",
+        "S2BE localizes w to e_j or e_k, and S2BF supplies the complete determinant-face common-space construction and endpoint support table",
+        "this theorem assumes the endpoint slice s=t; S2BF then gives z_t=w_t=0, so independence makes z,w a basis of e_t-perp",
+        "over the infinite characteristic-zero field, one projective direction avoids h=0 and the two coordinate annihilator lines; for it Q_delta is spanned by e_t^* and a row gamma_* with both j,k coordinates nonzero",
+        "because s=t and y_t=0, the P_delta projection gate is -h mu and P_delta has exact coordinate lifts over j,k",
+        "the complete determinant-zero product face gives a same-third-row binary table with nonzero fully transverse targets T_j,T_k and zero third row q_t",
+        "S2BF puts the first and third row planes and a nonzero line of the middle plane in one at-most-three-space; pi and theta injectivity prevents collapse",
+        "the generalized same-third-row lemma separately covers a middle plane contained in the common space, either target-indexed intersection row, and a genuinely non-coordinate intersection line",
+        "the first-third plane incidence reduction does not use the ambient positions of the middle rows and forces the zero third row to be their plane intersection",
+        "the generic middle-intersection orbit has 14 endpoint-support, five generic fixed-support, and two symbolic one-parameter families, for a proved exhaustive 21-family cover",
+        "each family has 64 necessary selected source-coordinate cubic equations; the escaping row retains its exact minus-e3 component",
+        "the pinned rational Nullstellensatz artifact contains 44806 sparse multiplier terms and proves a unit-ideal identity for all 21 families; the parameter identities use no inversion, saturation, or specialization",
+        "the primary SymPy verifier and independent no-import Fraction audit separately reconstruct every row, permanent, and generator; the audit reverses the 25-variable order and does not import the generator or primary verifier",
+        "therefore s=t is impossible at either coordinate endpoint under either residual beta_j coloop; surviving endpoint charts have s in {j,k}",
+        "the surviving endpoints, three third-root coloops, two complementary first-root coloops, lower joint rank, other physical components, low-span pole strata, higher orders, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_two_two_residual_second_root_coloop_s_equal_t_endpoint_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_two_two_residual_second_root_coloop_s_equal_t_endpoint_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_S_EQUAL_T_ENDPOINT_EXCLUSION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds (SymPy reconstruction and 21 rational certificate replays; independent reversed-order standard-library sparse audit; Singular 4.x is optional for deterministic certificate regeneration only)",
+      "external_binaries": [],
+      "note": "Every residual second-root-coloop coordinate endpoint with s=t is impossible. The determinant pencil produces a same-third-row table whose middle plane has an arbitrary nonzero common-space intersection; a complete 21-family orbit and pinned rational Nullstellensatz identities exclude it with an independent no-import replay. Endpoint charts with s in {j,k}, five other (1,2,2) coloops, and all other stated branches remain open; global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

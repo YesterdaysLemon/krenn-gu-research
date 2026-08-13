@@ -814,6 +814,18 @@ row `p_j` is also proved to escape the canonical three-space genuinely.  No
 endpoint is excluded; the four ordered endpoints and the other five
 `(1,2,2)` coloop orientations remain open.
 
+The successor
+[`(1,2,2)` residual second-root-coloop `s=t` endpoint exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_S_EQUAL_T_ENDPOINT_EXCLUSION_THEOREM.md)
+closes the first endpoint slice.  When `s=t`, the support table makes `z,w`
+a basis of `e_t^perp`.  A generic determinant-pencil direction then gives a
+same-third-row binary table whose middle-row plane has an arbitrary nonzero
+intersection with the common three-space.  The generalized obstruction has
+14 endpoint-support, five generic fixed-support, and two polynomial
+one-parameter families; exact rational Nullstellensatz identities exclude
+all 21.  Thus every surviving residual endpoint has `s in {j,k}`.  Those
+constrained endpoint charts and the other five `(1,2,2)` coloop orientations
+remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
