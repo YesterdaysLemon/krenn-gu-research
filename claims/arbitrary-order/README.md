@@ -369,6 +369,20 @@ surviving GHZ colours require independent covectors.  Hence ranks nine and
 eight are both excluded; joint rank at most seven and the other physical
 component types remain open.
 
+The
+[`single-root-block joint-cross-rank-seven exclusion`](BALANCED_M3_COMMON_THREE_SPACE_SINGLE_ROOT_BLOCK_JOINT_CROSS_RANK_SEVEN_EXCLUSION_THEOREM.md)
+then resolves the sharp equality case of that zero-grid bound.  If only one
+root--root block survives, rank seven forces the six nonexceptional marked
+rows to span exactly four dimensions.  Their two off-diagonal zero-product
+pairs are complementary pure or conjugate-mixed two-planes.  Pure/pure and
+shared-source pure/mixed forms make the two GHZ rows use one covector;
+all-three-source pure/mixed forms make them share two target factor lines;
+same-edge mixed/mixed products are proportional; and different-edge
+mixed/mixed derivatives have zero common kernel.  All contradict the two
+independent surviving diagonal GHZ rows.  The remaining rank-seven case must
+therefore have at least two nonzero root--root blocks; ranks at most six and
+the other physical component types remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

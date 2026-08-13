@@ -4150,6 +4150,33 @@
       "legacy_paths": []
     },
     {
+      "name": "Balanced m=3 Common-Three-Space Single-Root-Block Joint-Cross-Rank-Seven Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_SINGLE_ROOT_BLOCK_JOINT_CROSS_RANK_SEVEN_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "57592f5fb17b576d",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion for a normalized target-consistent physical m=3 common shore whose total singleton span has dimension three",
+        "exactly one root-root block is nonzero and the joint nine-by-nine root-nonroot cross-colour map has rank exactly seven",
+        "full-sensor rank makes the exceptional root row a three-plane with nonzero projection to all three source summands; the one root block is then a diagonal coordinate monomial and gives the S2U sparse block-permanent equation",
+        "on the regular derivative chart rank seven is equality in the four-dimensional off-diagonal zero-grid bound; the two marked zero-product pairs are complementary pure or conjugate-mixed two-planes and every P/P, P/M, and M/M normal form contradicts the two surviving GHZ diagonal rows",
+        "the exceptional derivative chart is excluded by the S2Y one-rank-one-covector versus two-independent-GHZ-covectors obstruction",
+        "rank seven with at least two nonzero root-root blocks, joint rank at most six, the other common-three-space component types, other S2Q strata, every m at least four, all-rank-drop, witness exclusion, counterexample, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_single_root_block_joint_cross_rank_seven_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_single_root_block_joint_cross_rank_seven_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_SINGLE_ROOT_BLOCK_JOINT_CROSS_RANK_SEVEN_EXCLUSION_SELF_REVIEW_2026-08-12.md",
+      "expected_runtime": "seconds (SymPy pure/mixed equality atlas and derivative-kernel replay; independent standard-library Fraction permanent-map audit)",
+      "external_binaries": [],
+      "note": "At rank seven the one-root-block sparse branch lies on the sharp four-dimensional zero-grid boundary. Its marked rows split into complementary pure or conjugate-mixed two-planes. Common covectors, shared target factors, proportional diagonal products, or a zero-common-kernel derivative pair exclude every equality normal form. Rank seven with at least two root blocks and global Krenn-Gu remain UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Non-proof-active boundary-candidate collection checkpoint; representative frozen certificate refuted",
       "document": "claims/p5/h22/component19-p0-ordinary-boundary/P5_H22_COMPONENT19_P0_ORDINARY_BOUNDARY_CANDIDATE.md",
       "document_sha256_16": "15e7fd63116a421f",
