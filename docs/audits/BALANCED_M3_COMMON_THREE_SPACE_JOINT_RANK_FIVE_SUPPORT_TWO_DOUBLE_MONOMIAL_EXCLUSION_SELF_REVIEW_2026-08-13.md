@@ -153,7 +153,11 @@ joint row rank five
 + full singleton independence.
 ```
 
-Dropping the last condition admits the exact rank-drop fixture.  The
-singly-monomial/nonmonomial `(2,2)` profile, without a proved tangent-family
-restriction on the nonmonomial block, and every other stated residual remain
-open.  Global status must remain **UNRESOLVED**.
+Dropping the last condition admits the exact rank-drop fixture.  At the time
+of this review the singly-monomial/nonmonomial `(2,2)` profile remained open
+without a proved tangent-family restriction on the nonmonomial block.  The
+successor complete-profile theorem now excludes that case and shows that the
+apparent Type-II family collapses to a monomial block; its separate proof,
+verifier, audit, and review do not retroactively strengthen the S2AH
+argument.  Every other stated residual remains open.  Global status must
+remain **UNRESOLVED**.
