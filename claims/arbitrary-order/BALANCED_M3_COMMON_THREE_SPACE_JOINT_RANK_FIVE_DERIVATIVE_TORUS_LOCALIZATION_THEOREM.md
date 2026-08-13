@@ -36,9 +36,12 @@ S2T/S2Q component types, higher orders, the all-rank-drop branch, a witness,
 and a counterexample open.  Global Krenn--Gu remains **UNRESOLVED**.
 
 The successor chain S2AH--S2AM now excludes every transverse two-root
-rank-five row/support profile.  The three Hilbert--Burch coordinate atlases
-in (2) remain the joint-rank-five residual; this does not change the scope or
-proof of the localization below.
+rank-five row/support profile.  S2AN further localizes the `(1,1,1)`
+Hilbert--Burch atlas by excluding its all-same-coordinate triangle and
+forcing the third factor into the complementary coordinate plane whenever
+the other two use the same coordinate.  The residual Hilbert--Burch charts
+remain open; these successors do not change the scope or proof of the
+localization below.
 
 ## 1. The shared-factor derivative is rank-free impossible
 
@@ -398,7 +401,9 @@ row in (20)--(24) and the three Hilbert--Burch coordinate atlases.  No finite
 scan, numerical search, or generic-point promotion is used.
 
 The later support-profile chain S2AH--S2AM has now closed the first of those
-two obligations.  The three coordinate atlases remain open.
+two obligations.  S2AN localizes the repeated-coordinate `(1,1,1)` chart;
+its complementary-plane boundary, the remaining `(1,1,1)` charts, and the
+other two coordinate atlases remain open.
 
 ## Focused replay
 
