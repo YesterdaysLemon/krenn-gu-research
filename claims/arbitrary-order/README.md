@@ -503,6 +503,18 @@ alternating singleton determinant.  Thus the complete support-two `(2,2)`
 profile is impossible.  The other involved-row profiles, support one, and
 the Hilbert--Burch boundaries remain open.
 
+The
+[`support-two mixed-row-rank exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_TWO_MIXED_ROW_RANK_EXCLUSION_THEOREM.md)
+then closes the complete `(3,2)` and `(2,3)` profiles without using the
+beta-zero atlas or restricting either root block.  The mixed relation plane
+is a rank-two graph.  Its contracted colour-one target forces the graph to
+miss colour two, so one involved physical row is zero.  The full target
+equation pins all singleton corrections to `T_2`.  Meanwhile the support-two
+third-row relation makes `q_0,q_1` proportional, but the corresponding
+slices at the fixed root pair `(1,1)` differ by the independent target line
+`T_1`.  This is impossible.  The support-two `(3,3)` profile, support one,
+and the Hilbert--Burch boundaries remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
