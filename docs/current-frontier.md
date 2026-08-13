@@ -179,7 +179,7 @@ flowchart TD
   S2AD -->|graph permanent / symmetric square obstruction| S2AE
   S2AE -->|coordinate relation / square-pencil obstruction| S2AF
   S2AF -->|rank-five derivative census / beta-zero torus atlas| S2AG
-  S2AG -->|support-two (2,2) double-monomial mixed-product obstruction| S2AH
+  S2AG -->|"support-two (2,2) double-monomial mixed-product obstruction"| S2AH
   S2AH -->|Type-II collapse / fully transverse correction-line| S2AI
   S2AI -->|mixed graph / zero-row target-line obstruction| S2AJ
   S2AJ -->|invertible graph / binary diagonal-plane common-zero| S2AK
