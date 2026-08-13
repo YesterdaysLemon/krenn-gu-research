@@ -569,6 +569,19 @@ complementary-plane boundary, coordinate-distinct `(1,1,1)` charts, the
 other Hilbert--Burch profiles, lower joint rank, other physical components,
 and higher orders remain open.
 
+The successor
+[`repeated-coordinate support localization`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_REPEATED_COORDINATE_SUPPORT_LOCALIZATION_THEOREM.md)
+closes the genuinely two-supported part of that complementary plane.  If
+the third factor used both remaining coordinates, one contracted row would
+carry two fully transverse diagonal targets while the same-colour row would
+vanish on the entire binary root square.  Target consistency forces that
+zero-table row itself to be nonzero, so the two rows form a two-plane in the
+same three-space as the first two row families.  The distinct-plane cubic
+kernels and three exact equal-plane orientations exclude every incidence.
+Consequently the complete repeated-coordinate residual is the discrete
+factor-line pattern `(s,s,t)` with `s!=t`.  These discrete patterns are not
+yet excluded or constructed.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
