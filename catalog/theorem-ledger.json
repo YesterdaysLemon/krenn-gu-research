@@ -4476,7 +4476,7 @@
     {
       "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Support-Two Double-Monomial Exclusion",
       "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_TWO_DOUBLE_MONOMIAL_EXCLUSION_THEOREM.md",
-      "document_sha256_16": "f81056a39bb3fd5d",
+      "document_sha256_16": "c76e5f9558a59e6d",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact characteristic-zero exclusion on the normalized target-consistent physical m=3 common-three-space stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
@@ -4494,7 +4494,7 @@
       "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_TWO_DOUBLE_MONOMIAL_EXCLUSION_SELF_REVIEW_2026-08-13.md",
       "expected_runtime": "seconds (SymPy mixed-product/source-support replay; independent standard-library Fraction tensor audit)",
       "external_binaries": [],
-      "note": "The support-two rank-five (2,2) profile with two coordinate-monomial root blocks is impossible for a full sensor. The exact rank-five sharpness shore satisfies the target mixed/square table but has dependent singleton columns, showing that full singleton independence is load-bearing. The successor complete-profile theorem closes every remaining (2,2) beta-zero case without changing this theorem's proof. Global Krenn-Gu remains UNRESOLVED.",
+      "note": "The support-two rank-five (2,2) profile with two coordinate-monomial root blocks is impossible for a full sensor. The exact rank-five sharpness shore satisfies the target mixed/square table but has dependent singleton columns, showing that full singleton independence is load-bearing. Later successors close every remaining (2,2), mixed, and (3,3) support-two involved-row profile without changing this theorem's proof. Global Krenn-Gu remains UNRESOLVED.",
       "claim_package": "claims/arbitrary-order",
       "proof_variant": "canonical",
       "subpackage": null,
@@ -4503,7 +4503,7 @@
     {
       "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Support-Two (2,2) Complete Exclusion",
       "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_TWO_TWO_BY_TWO_COMPLETE_EXCLUSION_THEOREM.md",
-      "document_sha256_16": "269f896a0743d447",
+      "document_sha256_16": "69458032fe1e0cd6",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact characteristic-zero exclusion on the normalized target-consistent physical m=3 common-three-space stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
@@ -4513,7 +4513,7 @@
         "the monomial block and target-kernel rows force two exact kernel-colour relation planes; one has incompatible zero and colour-2 target coefficients for the same singleton basis tensor",
         "on the other plane, the full 27-row target equation retains every entry of the arbitrary block as a colour-1 correction, while the repeated involved row has a nonzero rank-one square onto the fully factor-transverse colour-2 target",
         "the fully-transverse correction-line lemma exhausts the two- and three-source common-zero atlases and forces the alternating separated singleton determinant to vanish, contradicting full singleton rank",
-        "the complete support-two (2,2) involved-row profile is excluded; the successor mixed-row-rank theorem separately excludes (3,2)/(2,3), while support-two (3,3), support one, other rank-five profiles, lower joint ranks, other physical branches, higher orders, and global resolution remain open"
+        "the complete support-two (2,2) involved-row profile is excluded; later successors separately exclude (3,2)/(2,3) and (3,3), while support one, other rank-five profiles, lower joint ranks, other physical branches, higher orders, and global resolution remain open"
       ],
       "dependencies": [],
       "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_support_two_two_by_two_complete_exclusion.py",
@@ -4523,7 +4523,7 @@
       "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_TWO_TWO_BY_TWO_COMPLETE_EXCLUSION_SELF_REVIEW_2026-08-13.md",
       "expected_runtime": "seconds (SymPy Type-II collapse, arbitrary-block target table, and transverse-line atlas; independent standard-library Fraction sparse-tensor audit)",
       "external_binaries": [],
-      "note": "Every support-two rank-five (2,2) point is impossible for a full sensor. The apparent Type-II beta-zero family collapses to Type I under the target-kernel row, and the remaining block stays completely unrestricted. A shared-factor correction fixture shows that full factor transversality of the physical colour-1 and colour-2 target lines is load-bearing. The successor mixed-row-rank theorem separately excludes (3,2)/(2,3); support-two (3,3), other rank-five profiles, and global Krenn-Gu remain open.",
+      "note": "Every support-two rank-five (2,2) point is impossible for a full sensor. The apparent Type-II beta-zero family collapses to Type I under the target-kernel row, and the remaining block stays completely unrestricted. A shared-factor correction fixture shows that full factor transversality of the physical colour-1 and colour-2 target lines is load-bearing. Later successors separately exclude (3,2)/(2,3) and (3,3); support one, other rank-five profiles, and global Krenn-Gu remain open.",
       "claim_package": "claims/arbitrary-order",
       "proof_variant": "canonical",
       "subpackage": null,
@@ -4532,7 +4532,7 @@
     {
       "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Support-Two Mixed-Row-Rank Exclusion",
       "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_TWO_MIXED_ROW_RANK_EXCLUSION_THEOREM.md",
-      "document_sha256_16": "231609f65917eb6a",
+      "document_sha256_16": "eb3b1ec0ef713d16",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact characteristic-zero exclusion on the normalized target-consistent physical m=3 common-three-space stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
@@ -4541,7 +4541,7 @@
         "the support-two contraction can be labelled b_eta=beta e0 and c_eta=chi e1 with beta chi nonzero; the colour-one diagonal target forces L e1 to have nonzero e0 and e1 coordinates, so the graph misses exactly colour two and p2=0",
         "the full coefficientwise target equation on the zero b=2 row pins the singleton coefficient tensors to S0=S1=0 and S2=-kappa^(-1)T2; every remaining singleton correction therefore lies on the single pure target line T2 without a monomial, separability, rank-one, tangent, genericity, or full-singleton-determinant assumption",
         "the support-two kernel relation makes q0 and q1 nonzero scalar multiples; at fixed root pair (1,1), the colour-zero all-cross slice lies on T2 while the colour-one slice has the independent nonzero T1 component, contradicting linearity",
-        "the complete support-two mixed involved-row profiles (3,2)/(2,3) are excluded; support-two (3,3), support one, the three Hilbert-Burch coordinate atlases, joint rank at most four, other physical branches, higher orders, and global resolution remain open"
+        "the complete support-two mixed involved-row profiles (3,2)/(2,3) are excluded; the successor closes support-two (3,3), while support one, the three Hilbert-Burch coordinate atlases, joint rank at most four, other physical branches, higher orders, and global resolution remain open"
       ],
       "dependencies": [],
       "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_support_two_mixed_row_rank_exclusion.py",
@@ -4551,7 +4551,35 @@
       "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_TWO_MIXED_ROW_RANK_EXCLUSION_SELF_REVIEW_2026-08-13.md",
       "expected_runtime": "seconds (SymPy graph and symbolic full-target table; independent standard-library Fraction sparse-tensor audit)",
       "external_binaries": [],
-      "note": "Every support-two rank-five mixed involved-row profile (3,2)/(2,3) is impossible. The rank-two graph shore pins all singleton corrections to T2, but proportional supported third-root rows cannot turn a T2-only slice into one carrying the independent T1 target. The exact local stop control shows why this comparison does not decide (3,3). Support-two (3,3), the other open branches, and global Krenn-Gu remain UNRESOLVED.",
+      "note": "Every support-two rank-five mixed involved-row profile (3,2)/(2,3) is impossible. The rank-two graph shore pins all singleton corrections to T2, but proportional supported third-root rows cannot turn a T2-only slice into one carrying the independent T1 target. The exact local stop control shows why this comparison alone does not decide (3,3); the successor closes that profile through the binary diagonal plane. The other open branches and global Krenn-Gu remain UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Support-Two (3,3) Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_TWO_THREE_BY_THREE_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "72856307e90b1259",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
+        "the transverse two-root derivative has rank six; the uninvolved third-root row has rank two with kernel of target-coordinate support exactly two; both involved row ranks are three",
+        "the relation plane is the graph of an invertible map L; the two support-contracted diagonal targets force L e0=alpha e1 and L e1=-(beta/chi)e0+(nu/chi)e1 with all displayed scalars nonzero",
+        "contracting the complete target equation by the support-two kernel confines every singleton correction tensor to the binary diagonal plane span(T0,T1), with S2=0",
+        "coefficientwise permanent symmetry at the T2 target forces the third graph column onto e2; the complete target table then gives a rank-one T2 square and three mixed polarized maps into span(T0,T1) without restricting the arbitrary root-root block entries",
+        "the binary-diagonal-plane strengthening of the exact two-/three-source common-zero atlas forces the alternating separated singleton determinant to vanish, contradicting physical full-sensor rank",
+        "all support-two involved-row profiles at this transverse joint-rank-five boundary are excluded; support one, the three Hilbert-Burch coordinate atlases, joint rank at most four, other physical branches, higher orders, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_support_two_three_by_three_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_support_two_three_by_three_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_TWO_THREE_BY_THREE_EXCLUSION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds (SymPy graph, correction-plane, permanent-symmetry, and common-zero replay; independent standard-library Fraction tensor audit)",
+      "external_binaries": [],
+      "note": "Every support-two rank-five (3,3) involved-row point is impossible for a full sensor. The full kernel contraction confines the corrections to the binary diagonal plane, permanent symmetry isolates a T2 square, and the transverse-plane common-zero atlas kills the singleton determinant. Together with S2AI and S2AJ, this closes the support-two involved-row census only; support one, other rank-five and lower-rank branches, and global Krenn-Gu remain open.",
       "claim_package": "claims/arbitrary-order",
       "proof_variant": "canonical",
       "subpackage": null,
