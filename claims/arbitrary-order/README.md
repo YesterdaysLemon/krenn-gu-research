@@ -826,6 +826,17 @@ all 21.  Thus every surviving residual endpoint has `s in {j,k}`.  Those
 constrained endpoint charts and the other five `(1,2,2)` coloop orientations
 remain open.
 
+The successor
+[`(1,2,2)` residual second-root-coloop complementary-`y` localization`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_COMPLEMENTARY_Y_COORDINATE_LOCALIZATION_THEOREM.md)
+uses the same generalized same-third-row lemma to close a one-sided pencil
+degeneration.  At every surviving endpoint, `s` lies in `{j,k}` and `y` is
+proportional to the other coordinate in that pair.  If the endpoint equals
+`s`, this follows directly from the S2BF gate fork.  At the other endpoint,
+the contrary `y_s!=0` assumption makes `z,w` a basis of `e_s^perp`, exposing
+the forbidden S2BG table on a generic pencil member.  The two endpoint
+locations for `w`, their remaining `z` constraints, and the other five
+`(1,2,2)` coloop orientations remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
