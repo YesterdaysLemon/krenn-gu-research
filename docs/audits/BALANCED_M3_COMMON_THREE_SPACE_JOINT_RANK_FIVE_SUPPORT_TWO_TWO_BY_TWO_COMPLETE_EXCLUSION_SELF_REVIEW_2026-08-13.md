@@ -1,14 +1,15 @@
-# Hostile self-review: rank-five support-two Type-I monomial complete exclusion
+# Hostile self-review: rank-five support-two `(2,2)` complete exclusion
 
 ## Verdict
 
-**PASS at the stated local scope.**  The package excludes the transverse
-joint-rank-five support-two `(2,2)` profile only when the beta-zero atlas is
-Type I, meaning that at least one nonzero root--root block is a coordinate
-monomial.  The other block is unrestricted.  The proof does not exclude the
-Type-II-only boundary-pencil tangent atlas, any other rank-five profile,
-joint rank at most four, another physical component, or any higher order.
-Global Krenn--Gu remains **UNRESOLVED**.
+**PASS at the stated local scope.**  The package excludes the complete
+transverse joint-rank-five support-two `(2,2)` profile.  The beta-zero atlas
+is exhaustive, and its apparent Type-II family automatically becomes Type I
+under the involved rank-two target-kernel equation.  The other block is then
+unrestricted.  The proof does not exclude another involved-row profile,
+support one, a Hilbert--Burch boundary, joint rank at most four, another
+physical component, or any higher order.  Global Krenn--Gu remains
+**UNRESOLVED**.
 
 Reviewed artifacts:
 
@@ -19,21 +20,23 @@ Reviewed artifacts:
 
 ## Adversarial claim inventory
 
-1. A Type-I monomial block can be moved to `B_23` by the permitted root
-   exchange and then is forced to `e_0 tensor e_0`.
-2. The opposite involved-row kernel colour is exactly `c=1` or `c=2`.
-3. Rank-two projections and the two contracted diagonal targets leave the
+1. The exhaustive beta-zero Type-II normal form `B=e_i tensor z` collapses
+   to the coordinate monomial `e_i tensor e_i` under the target-kernel row.
+2. A monomial block can be moved to `B_23` by the permitted root exchange and
+   then is forced to `e_0 tensor e_0`.
+3. The opposite involved-row kernel colour is exactly `c=1` or `c=2`.
+4. Rank-two projections and the two contracted diagonal targets leave the
    two planes displayed in equation (13), with no assumption on the other
    rows of `C`.
-4. The `c=2` plane is inconsistent in two individual root coefficients.
-5. The `c=1` plane retains every entry of `C`; its only nonzero corrections
+5. The `c=2` plane is inconsistent in two individual root coefficients.
+6. The `c=1` plane retains every entry of `C`; its only nonzero corrections
    lie on `T_1`, while the repeated square maps onto `T_2`.
-6. The fully-transverse correction-line lemma turns the apparent `T_1`
+7. The fully-transverse correction-line lemma turns the apparent `T_1`
    mixed corrections into the zero equations needed by the prior
    common-zero atlas.
-7. Full singleton rank makes the alternating separated tensor nonzero, so
+8. Full singleton rank makes the alternating separated tensor nonzero, so
    the lemma gives the final contradiction.
-8. The shared-factor sharpness fixture shows that three-factor
+9. The shared-factor sharpness fixture shows that three-factor
    transversality is load-bearing.
 
 ## Hostile questions
@@ -43,7 +46,20 @@ Reviewed artifacts:
 No.  The theorem repeatedly treats `C` as arbitrary and explicitly says
 that it is not assumed tangent, separable, rank one, or generic.  The full
 target table contains the symbolic coefficients `C_(0,j)` and `C_(2,j)`.
-The remaining no-monomial Type-II boundary is listed as open.
+The apparent no-monomial Type-II family is not assumed tangent-away; it is
+eliminated first by showing that its coordinate-factor block is forced to be
+a coordinate monomial.
+
+### Does Type II really collapse without an illegal colour permutation?
+
+Yes.  In the original target-coordinate bases, Type II says
+`B=e_i tensor z` for some coordinate line `e_i` at the noncommon endpoint.
+No renaming is required.  The target-kernel equation says the nonzero row
+`d` of the same block is `kappa e_d`.  Since row `i` is the only nonzero row,
+`d=i`, and the common-end form is `z=kappa e_i` in the original third-root
+basis.  Hence `B` is a coordinate monomial.  The primary verifier solves all
+nine `(i,d)` row systems symbolically; the independent audit enumerates the
+same row alternatives with `Fraction` values.
 
 ### Does a monomial `B` really have to be diagonal colour zero?
 
@@ -160,11 +176,12 @@ normalized target-consistent physical m=3 common-three-space point
 + total joint row rank five
 + third-row rank two with support-two kernel
 + both involved row ranks two
-+ beta-zero Type I: at least one coordinate-monomial root block
++ the exhaustive beta-zero Type-I/Type-II atlas
 + full singleton independence.
 ```
 
-Removing the Type-I assumption leaves the Type-II-only boundary-pencil
-tangent atlas.  Removing any row-profile assumption returns to the other
-S2AG boundaries.  Neither is decided here, and global status must remain
-**UNRESOLVED**.
+Removing either involved rank-two assumption breaks the target-kernel step
+that collapses Type II and returns to the other S2AG profiles.  Support one,
+the `(3,3)` and `(3,2)` support-two profiles, the Hilbert--Burch atlases, and
+the lower-rank/global branches are not decided here.  Global status must
+remain **UNRESOLVED**.

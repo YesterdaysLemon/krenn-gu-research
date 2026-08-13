@@ -28,9 +28,10 @@ point with a `(3,3)` or `(3,2)` involved-row profile, the `(2,2)` profile with
 one coordinate-monomial root block and one unrestricted nonmonomial root
 block, any three-root Hilbert--Burch boundary, joint rank at most four,
 another S2T/S2Q component, a higher order, or the all-rank-drop branch.  The
-successor Type-I theorem now excludes the singly monomial/nonmonomial
-`(2,2)` profile without restricting the nonmonomial block to a tangent
-family.  Global Krenn--Gu remains **UNRESOLVED**.
+successor complete-profile theorem now excludes the singly
+monomial/nonmonomial case without restricting the nonmonomial block and
+shows that the apparent Type-II case collapses to a coordinate monomial.
+Global Krenn--Gu remains **UNRESOLVED**.
 
 ## 1. The support-two `(2,2)` row profile
 
@@ -451,17 +452,18 @@ third-row kernel support one:                        OPEN;
 support two with involved profile (3,3) or (3,2):    OPEN;
 support two, involved profile (2,2),
   one coordinate monomial / unrestricted nonmonomial:
-    IMPOSSIBLE BY THE SUCCESSOR TYPE-I THEOREM;
-  Type-II-only boundary pencil, no monomial block:   OPEN;
+    IMPOSSIBLE BY THE SUCCESSOR COMPLETE THEOREM;
+  apparent Type II: forced into the monomial case:
+    IMPOSSIBLE BY THE SUCCESSOR COMPLETE THEOREM;
 three-root Hilbert-Burch coordinate atlases:          OPEN;
 joint rank at most four / other physical branches:    OPEN;
 global Krenn-Gu conjecture:                           UNRESOLVED.       (45)
 ```
 
-The next exact transverse obligation after the successor Type-I exclusion is
-the Type-II-only boundary-pencil `(2,2)` profile with no coordinate-monomial
-block, or one of the higher involved-row profiles.  No finite-field probe,
-timeout, sample, or generic-point promotion is used in this theorem.
+The next exact transverse obligations after the successor complete `(2,2)`
+exclusion are the higher involved-row profiles and support one.  No
+finite-field probe, timeout, sample, or generic-point promotion is used in
+this theorem.
 
 ## Focused replay
 
@@ -490,4 +492,4 @@ replay their displayed identities and conventions.
 
 ## Successor
 
-- [`BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_TWO_TYPE_I_MONOMIAL_COMPLETE_EXCLUSION_THEOREM.md`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_TWO_TYPE_I_MONOMIAL_COMPLETE_EXCLUSION_THEOREM.md)
+- [`BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_TWO_TWO_BY_TWO_COMPLETE_EXCLUSION_THEOREM.md`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_TWO_TWO_BY_TWO_COMPLETE_EXCLUSION_THEOREM.md)

@@ -490,16 +490,17 @@ rank-five sharpness fixture whose first two singleton columns coincide, so
 full singleton independence is load-bearing.
 
 The successor
-[`support-two Type-I monomial complete exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_TWO_TYPE_I_MONOMIAL_COMPLETE_EXCLUSION_THEOREM.md)
-removes the singly monomial/nonmonomial remainder without imposing any
-tangent, separability, or rank condition on the other block.  The two exact
-kernel-colour planes either contradict two individual target coefficients or
-reduce every arbitrary-block correction to the fully transverse line `T_1`
-against a rank-one `T_2` square.  A strengthened two-plane atlas forces those
-corrections to zero and then kills the alternating singleton determinant.
-Thus the complete beta-zero Type-I atlas is impossible in the support-two
-`(2,2)` profile.  The Type-II-only boundary-pencil tangent atlas with no
-coordinate-monomial block, the other involved-row profiles, support one, and
+[`support-two (2,2) complete exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_SUPPORT_TWO_TWO_BY_TWO_COMPLETE_EXCLUSION_THEOREM.md)
+first shows that the apparent Type-II beta-zero normal form automatically
+becomes a coordinate monomial under the involved rank-two target-kernel row.
+It then removes the resulting one-monomial/arbitrary-other-block case without
+any tangent, separability, or rank condition on the other block.  The two
+exact kernel-colour planes either contradict two individual target
+coefficients or reduce every arbitrary-block correction to the fully
+transverse line `T_1` against a rank-one `T_2` square.  A strengthened
+two-plane atlas forces those corrections to zero and then kills the
+alternating singleton determinant.  Thus the complete support-two `(2,2)`
+profile is impossible.  The other involved-row profiles, support one, and
 the Hilbert--Burch boundaries remain open.
 
 On the complementary branch, the

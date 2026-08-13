@@ -1,4 +1,4 @@
-"""Exact replay for the rank-five support-two Type-I monomial exclusion."""
+"""Exact replay for the rank-five support-two (2,2) complete exclusion."""
 
 from __future__ import annotations
 
@@ -97,6 +97,31 @@ def root_index(a: int, b: int, c: int) -> int:
 
 def row(matrix: sp.Matrix, a: int, b: int, c: int) -> sp.Matrix:
     return matrix[root_index(a, b, c), :].T
+
+
+def beta_zero_type_ii_collapse() -> None:
+    z0, z1, z2 = sp.symbols("z0 z1 z2")
+    kappa = sp.symbols("kappa", nonzero=True)
+    z = sp.Matrix([z0, z1, z2])
+    for coordinate_factor in range(3):
+        block = sp.zeros(3, 3)
+        block[coordinate_factor, :] = z.T
+        for kernel_colour in range(3):
+            difference = (
+                block.row(kernel_colour).T - kappa * e(kernel_colour)
+            )
+            if kernel_colour != coordinate_factor:
+                assert difference[kernel_colour] == -kappa
+                continue
+            solutions = sp.solve(
+                list(difference), (z0, z1, z2), dict=True
+            )
+            expected = {
+                z[index]: kappa if index == coordinate_factor else 0
+                for index in range(3)
+            }
+            assert solutions == [expected]
+    print("beta-zero Type-II collapse: PASS (coordinate factor -> monomial)")
 
 
 def kernel_colour_planes() -> None:
@@ -311,12 +336,13 @@ def transversality_sharpness() -> None:
 
 
 def main() -> None:
+    beta_zero_type_ii_collapse()
     kernel_colour_planes()
     arbitrary_c_target_table()
     transverse_line_forces_mixed_zero()
     common_zero_atlas()
     transversality_sharpness()
-    print("rank-five support-two Type-I monomial complete exclusion: PASS")
+    print("rank-five support-two (2,2) complete exclusion: PASS")
 
 
 if __name__ == "__main__":

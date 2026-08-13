@@ -1,34 +1,34 @@
-# Balanced `m=3` common-three-space joint-rank-five support-two Type-I monomial complete exclusion
+# Balanced `m=3` common-three-space joint-rank-five support-two `(2,2)` complete exclusion
 
 ## Status
 
-**Exact characteristic-zero exclusion of the complete Type-I monomial atlas
-in the transverse joint-rank-five support-two `(2,2)` profile.**  Let `U` be
-the total singleton span of a normalized, target-consistent physical `m=3`
-common shore.  Assume
+**Exact characteristic-zero exclusion of the complete transverse
+joint-rank-five support-two `(2,2)` profile.**  Let `U` be the total singleton
+span of a normalized, target-consistent physical `m=3` common shore.  Assume
 
 ```text
 dim U=3,                         rank H=5,             (1)
 ```
 
 and retain the transverse two-root branch of S2AG with a rank-two third row,
-kernel support exactly two, and both involved rows of rank two.  If at least
-one of the two nonzero root--root blocks is a coordinate monomial (Type I of
-the beta-zero atlas), then the physical full-sensor conditions are
-inconsistent.
+kernel support exactly two, and both involved rows of rank two.  Then the
+physical full-sensor conditions are inconsistent.
 
-The other root--root block is arbitrary: it is not assumed monomial,
-rank-one, tangent, generic, or separable.  Thus this theorem contains the
-double-monomial profile of S2AH and closes the previously open
-singly-monomial/nonmonomial profile as well.
+The beta-zero atlas is exhaustive here.  Its apparent Type-II boundary
+automatically becomes Type I: the coordinate factor in
+`B=e_i tensor z`, together with the involved rank-two target-kernel row,
+forces `z` onto the matching coordinate `e_i`.  The remaining root--root
+block is arbitrary; it is not assumed monomial, rank-one, tangent, generic,
+or separable.  Thus this theorem contains the double-monomial profile of
+S2AH and closes both the singly-monomial/nonmonomial and apparent
+Type-II-only profiles.
 
-This theorem does **not** exclude the Type-II-only boundary-pencil tangent
-atlas with no coordinate-monomial block, a support-two `(3,3)` or `(3,2)`
+This theorem does **not** exclude a support-two `(3,3)` or `(3,2)`
 involved-row profile, support one, a three-root Hilbert--Burch boundary,
 joint rank at most four, another S2T/S2Q component, the all-rank-drop branch,
 or a higher order.  Global Krenn--Gu remains **UNRESOLVED**.
 
-## 1. A monomial block leaves two exact kernel-colour charts
+## 1. The beta-zero atlas forces a monomial block
 
 Use the transverse notation of S2AG and S2AH.  After permuting roots,
 
@@ -77,8 +77,25 @@ b_eta=(id tensor eta)(B) in span(e_0),
 c_eta=(id tensor eta)(C) in span(e_1).               (7)
 ```
 
-Assume without loss of generality that the Type-I block is `B`.  Equations
-(6)--(7) force both endpoints of its monomial to have colour zero.  Rescale:
+The physical S2R torus-annihilator obstruction supplies the no-fully-
+supported-simultaneous-zero hypothesis of the S2AD beta-zero atlas.  That
+atlas applies independently of the relation-plane alternative.  Type I
+already gives a coordinate-monomial block.  In Type II, after possibly
+exchanging the two involved roots, the atlas gives `B=e_i tensor z` for one
+target-coordinate line `e_i`.  But the first row identity in (6) is nonzero.
+Since row `i` is the only nonzero row of `B`, it forces `d=i` and then
+
+```text
+z=kappa e_i.
+```
+
+Thus the apparent Type-II block is itself the coordinate monomial
+`kappa e_i tensor e_i`.  Every point in the complete beta-zero atlas is
+therefore Type I in this `(2,2)` row profile.
+
+Exchange the involved roots if necessary so that the forced monomial block
+is `B`.  Equations (6)--(7) force both endpoints of its monomial to have
+colour zero.  Rescale:
 
 ```text
 B=e_0 tensor e_0,                     d=0.           (8)
@@ -381,7 +398,7 @@ the exact exceptional equality in which every solution is pure in `X`.
 Thus `u_0,u_1` are dependent or both pure in one source, and (28) follows.
 The other zero-coefficient cases are symmetric.  QED.
 
-## 5. Exclusion of the complete Type-I atlas
+## 5. Exclusion of the complete `(2,2)` profile
 
 Apply Lemma 1 to (20), (23), and the two physical target tensors
 
@@ -395,8 +412,7 @@ Their factor lines differ in all three sources.  Lemma 1 gives
 proves
 
 ```text
-support-two rank-five (2,2), beta-zero Type I
-(at least one coordinate-monomial root block):       IMPOSSIBLE.       (39)
+support-two rank-five involved-row profile (2,2):    IMPOSSIBLE.       (39)
 ```
 
 No finite-field search, generic-point promotion, point evaluation, or
@@ -434,7 +450,7 @@ The transverse rank-five branch is now
 third-row kernel support two, involved rows (2,2),
   beta-zero Type I, both blocks monomial:             IMPOSSIBLE (S2AH);
   beta-zero Type I, other block arbitrary:            IMPOSSIBLE (this theorem);
-  Type-II-only boundary pencil, no monomial block:    OPEN;
+  apparent Type II: forced into Type I by (6):        IMPOSSIBLE (this theorem);
 
 third-row kernel support two, involved (3,3)/(3,2):   OPEN;
 third-row kernel support one:                         OPEN;
@@ -443,25 +459,25 @@ joint rank at most four / other physical branches:    OPEN;
 global Krenn-Gu conjecture:                           UNRESOLVED.       (42)
 ```
 
-The next exact obligation inside this row profile is the Type-II-only
-boundary-pencil tangent atlas.  The Type-I theorem does not infer that its
-nonmonomial block is tangent and does not apply to a Type-II point unless
-that point independently has a coordinate-monomial block.
+The next exact transverse obligations are the support-two `(3,3)` and
+`(3,2)` involved-row profiles and the support-one third-row kernel.  The
+Type-II collapse above uses both involved row ranks equal to two and makes no
+inference for those other profiles.
 
 ## Focused replay
 
 Run from repository root:
 
 ```text
-uv run --with sympy python claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_support_two_type_i_monomial_complete_exclusion.py
-python -I claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_support_two_type_i_monomial_complete_exclusion.py
-python -m py_compile claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_support_two_type_i_monomial_complete_exclusion.py claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_support_two_type_i_monomial_complete_exclusion.py
-uv run --with ruff==0.16.2 ruff check --no-cache claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_support_two_type_i_monomial_complete_exclusion.py claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_support_two_type_i_monomial_complete_exclusion.py
+uv run --with sympy python claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_support_two_two_by_two_complete_exclusion.py
+python -I claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_support_two_two_by_two_complete_exclusion.py
+python -m py_compile claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_support_two_two_by_two_complete_exclusion.py claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_support_two_two_by_two_complete_exclusion.py
+uv run --with ruff==0.16.2 ruff check --no-cache claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_support_two_two_by_two_complete_exclusion.py claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_support_two_two_by_two_complete_exclusion.py
 ```
 
-The primary verifier checks both kernel-colour planes, the incompatible
-`c=2` coefficients, the complete arbitrary-`C` target table, the
-fully-transverse correction-line atlas, and the exact sharpness fixture.
+The primary verifier checks the Type-II collapse, both kernel-colour planes,
+the incompatible `c=2` coefficients, the complete arbitrary-`C` target table,
+the fully-transverse correction-line atlas, and the exact sharpness fixture.
 The independent no-import audit rebuilds the root and separated tensors with
 standard-library `Fraction` arithmetic and uses a separate sparse
 representation.  The scripts replay displayed identities; the arbitrary-

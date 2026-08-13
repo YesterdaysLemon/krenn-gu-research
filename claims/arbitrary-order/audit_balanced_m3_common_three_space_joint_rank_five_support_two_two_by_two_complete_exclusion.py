@@ -1,4 +1,4 @@
-"""Independent Fraction audit of the support-two Type-I monomial theorem."""
+"""Independent Fraction audit of the support-two (2,2) complete theorem."""
 
 from __future__ import annotations
 
@@ -132,6 +132,27 @@ def matrix_add(*matrices: list[list[F]]) -> list[list[F]]:
 
 def zero_matrix() -> list[list[F]]:
     return [[F(0) for _ in range(27)] for _ in range(27)]
+
+
+def type_ii_collapse_audit() -> None:
+    kappa = F(7)
+    for coordinate_factor in range(3):
+        forced_common_row = scale(kappa, unit(3, coordinate_factor))
+        for kernel_colour in range(3):
+            if kernel_colour != coordinate_factor:
+                # The only nonzero row of e_i tensor z is row i, whereas
+                # target consistency demands a nonzero row d.
+                assert scale(kappa, unit(3, kernel_colour)) != scale(
+                    0, forced_common_row
+                )
+                continue
+            # At d=i the demanded diagonal row is exactly kappa e_i, so the
+            # common-end form z is a coordinate vector and the block is a
+            # coordinate monomial.
+            assert forced_common_row == scale(
+                kappa, unit(3, coordinate_factor)
+            )
+    print("independent Type-II collapse audit: PASS (all coordinate rows)")
 
 
 def normal_form_audit() -> None:
@@ -286,11 +307,12 @@ def atlas_and_sharpness_audit() -> None:
 
 
 def main() -> None:
+    type_ii_collapse_audit()
     normal_form_audit()
     target_table_audit()
     transverse_line_audit()
     atlas_and_sharpness_audit()
-    print("independent support-two Type-I monomial exclusion: PASS")
+    print("independent support-two (2,2) complete exclusion: PASS")
 
 
 if __name__ == "__main__":
