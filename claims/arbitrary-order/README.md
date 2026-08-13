@@ -862,6 +862,22 @@ identities exclude all 15.  Thus both residual `beta_j` coloops are
 impossible; the three third-root and two complementary first-root
 `(1,2,2)` coloops remain open.
 
+The successor
+[`(1,2,2)` third-root-coloop exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_THIRD_ROOT_COLOOP_EXCLUSION_THEOREM.md)
+closes all three `gamma_k` orientations.  A selected third-root coloop puts
+the first and second binary row planes of the complete
+`beta_t=gamma(w)=0` face in the exact three-space
+`S=R direct-sum span(A)` and gives the third plane a nonzero intersection
+with `S`.  For `w_t!=0`, the face is the S2BF arbitrary-intersection binary
+diagonal table.  For `w_t=0` with complementary support two, it is the S2BI
+common-active-row table.  Both inherited rational certificate packages are
+replayed independently.  The only remaining support makes `w` coordinate;
+exchanging roots two and three then turns `gamma_k=0` into one of the three
+second-root coloops already excluded by S2BB and S2BJ.  Hence seven of the
+nine `(1,2,2)` coloop orientations are impossible.  Only the two
+complementary first-root coloops remain in this profile, alongside the wider
+lower-rank, component, pole, and higher-order branches.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

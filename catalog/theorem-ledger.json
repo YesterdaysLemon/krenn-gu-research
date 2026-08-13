@@ -5402,6 +5402,43 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Hilbert-Burch (1,2,2) Third-Root-Coloop Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_THIRD_ROOT_COLOOP_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "92894bd2e943f2c1",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
+        "the Hilbert-Burch derivative kernel has the S2AZ (1,2,2) gauge x=lambda e_s, c=mu e_t, y_t=0, with lambda mu nonzero and the two stated projection pairs independent",
+        "the coordinate-coloop fork selects any third-root hyperplane N subset {gamma_k=0}",
+        "S2AZ gives H^T(L intersect {gamma_k=0})=R, while the target-contraction arguments used in S2BA-S2BC make rho, pi, and theta injective",
+        "for beta_t=0, the adjusted root covector gives p(beta)-beta(y)A in R; for gamma(w)=gamma_k=0, the adjusted root covector gives q(gamma)-gamma(z)A in R",
+        "therefore the first and second binary row planes of the complete beta_t=gamma(w)=0 face lie in the exact three-space S=R direct-sum span(A), while the third plane has a nonzero intersection with S",
+        "if w_t is nonzero, coordinate lifts of w-perp expose the complete binary diagonal table and the independently audited S2BF arbitrary-intersection lemma excludes it",
+        "the inherited S2BF certificate has 28 polynomial normal forms, 20582 sparse multiplier terms, and SHA-256 0a92e61cef0b3db7940c68ea6e24bab4befb5dc1bd137ada581d0dbde4b9e0ca",
+        "if w_t=0 and both complementary coordinates are nonzero, the basis n=w_b e_a^*-w_a e_b^*, e_t^* exposes the complete common-active-row table and the independently audited S2BI lemma excludes it",
+        "the inherited S2BI certificate has 90 polynomial normal forms, 31591 sparse multiplier terms, and SHA-256 a56242675744f848fc4f747045ce9b2a18c7b32ae2152ca800bd6c654d29e8d1",
+        "if w is coordinate, exact exchange of roots two and three preserves the profile and target equation and sends gamma_k=0 to beta'_k=0",
+        "the post-exchange kernel-generator gauge leaves all Hilbert-Burch blocks unchanged; S2BB excludes the distinguished beta orientation and S2BJ excludes both residual beta orientations",
+        "the three support cases exhaust nonzero w, so all three third-root coordinate coloops are impossible",
+        "the primary verifier checks the exact transfer identities, both complete face tables, root exchange, and dependency pins with SymPy",
+        "the independent no-import audit reconstructs a canonical five-dimensional row model, both tables, the root-exchange blocks, and both pins with standard-library Fraction arithmetic",
+        "seven of nine (1,2,2) coordinate coloops are closed; the two complementary first-root coloops, lower joint rank, other physical components and pole strata, higher orders, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_two_two_third_root_coloop_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_two_two_third_root_coloop_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_THIRD_ROOT_COLOOP_EXCLUSION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds for the new transfer replay and independent standard-library audit; under one minute including both inherited primary and independent certificate replays",
+      "external_binaries": [],
+      "note": "All three third-root gamma_k coordinate coloops are impossible. The exact complete-face transfer uses the independently certified S2BF and S2BI intersection lemmas, while coordinate w transfers to the already closed beta orientations under an audited root exchange. Seven of nine (1,2,2) coloops are closed; both complementary first-root coloops and every wider stated branch remain open, and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
