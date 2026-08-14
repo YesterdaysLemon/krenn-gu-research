@@ -1083,6 +1083,17 @@ shifted-plane contradiction exclude `(2,3,3)` and, by root exchange,
 derivative-rank-eight cell is the fully injective `(3,3,3)` profile; mixed
 third-row-rank-two and injective profiles remain.
 
+The
+[`one-deficient-row support-two exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_ONE_DEFICIENT_INVOLVED_ROW_THIRD_ROW_SUPPORT_TWO_COMPLETE_EXCLUSION_THEOREM.md)
+closes the two-colour-kernel part of that mixed rank-two branch.  The missing
+involved row puts every non-`T_d` correction preimage in the two-dimensional
+kernel of the third projection.  Modulo the derivative syzygy, all those
+corrections lie on one root-tensor line.  The support-two third-kernel
+contraction would make that line proportional to both complementary
+diagonal root tensors, which is impossible.  Thus `(2,3,2)` and `(3,2,2)`
+with support-two third kernel are empty; only their support-one cells remain
+among the mixed profiles.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
