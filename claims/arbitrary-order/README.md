@@ -1021,6 +1021,17 @@ missing-colour lifts are impossible, while arbitrary complementary tangent
 directions and residual blocks in the two displayed charts still require a
 source-permanent exclusion.
 
+The
+[`aligned split-lift exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_SAME_MISSING_COLOUR_THIRD_ROW_SUPPORT_ONE_ALIGNED_SPLIT_LIFT_EXCLUSION_THEOREM.md)
+closes one of those two exhaustive charts.  Its root box is disjoint from
+`U` even when `C` is monomial and `w` is noncoordinate.  The `ttt` target
+makes one dual `K` row fully supported; the `stt` and `tst` zeros put two
+other rows in its two-dimensional Segre-tangent kernel.  The `ttd` equation
+cannot equal a nonzero `T_d` inside the tangent at `T_t`, so the fourth row
+enters the same kernel.  This contradicts injectivity of the four-dimensional
+transpose.  Only the nonaligned support-one chart remains in this row
+profile, with S2BS already excluding one of its coordinate specializations.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

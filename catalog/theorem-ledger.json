@@ -5802,6 +5802,46 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Four Derivative-Rank-Eight Same-Missing-Colour Third-Row-Support-One Aligned Split-Lift Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_SAME_MISSING_COLOUR_THIRD_ROW_SUPPORT_ONE_ALIGNED_SPLIT_LIFT_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "5b3ad82ff37a3002",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on the normalized physical m=3 common-three-space full-sensor stratum with singleton span dimension three, joint rank four, all three root-root blocks nonzero, shared-derivative rank eight, and same-missing-colour row ranks (2,2,2)",
+        "S2BT forces the aligned support-one four-space with basis (e_s,lambda e_s,0), (0,0,e_d), (0,-e_s,0), and (alpha e_t,beta e_t,e_t), where lambda alpha beta is nonzero",
+        "the derivative is D(a,b,c)=(a tensor lambda e_s-e_s tensor b) tensor w+C tensor c, with e_s dual evaluated on w nonzero and C=kappa e_d tensor e_d+C_bar",
+        "the root coefficient box is L=span(e_s,e_t) tensor span(e_s,e_t) tensor span(e_d,e_t)",
+        "the dd d coefficient kills the C tensor e_d generator in any intersection U with L, the dd t coefficient then kills the fourth-lift generator, and the nonzero ss s coefficient kills the remaining split generator",
+        "therefore U intersects L only in zero for every C_bar including zero and every w nonzero on e_s, without assuming coordinate w",
+        "the d target has unique L representative -kappa inverse C_bar tensor e_d; the s target has only ss d and ss t support obtained from e_s tensor e_s tensor w; the t target remains ttt",
+        "if g0 through g3 are the four injected dual K rows, their root rows are r_s=g0, r_t=alpha g3, p_s=lambda g0-g2, p_t=beta g3, q_d=g1, q_t=g3, with the missing d,d,s rows zero",
+        "the stt coefficient gives P(g0,g3,g3)=0 and the tst coefficient then gives P(g2,g3,g3)=0",
+        "the ttt coefficient gives alpha beta P(g3,g3,g3)=T_t, so g3 has three nonzero source components on the factor lines of the fully transverse t target",
+        "for such g3, the linear map h maps to P(h,g3,g3) is the Segre tangent map and has exactly the two-dimensional scaling-difference kernel",
+        "the ttd coefficient gives alpha beta P(g1,g3,g3)=-kappa inverse c_tt T_d",
+        "the Segre tangent at T_t has zero intersection with the line T_d because all three target factor lines differ, so the ttd equation forces c_tt=0 and g1 into the same tangent kernel",
+        "g0, g1, and g2 therefore lie in one two-dimensional kernel, and adjoining g3 gives span dimension at most three",
+        "surjectivity of H onto the four-space K makes H transpose injective on K dual, requiring g0 through g3 to be independent and contradicting the rank bound",
+        "the exclusion is uniform in lambda, alpha, beta, C_bar, and w under the stated nonzero conditions and includes the monomial-C possibly noncoordinate-w branch",
+        "the primary verifier checks the arbitrary-w direct quotient, symbolic row formulas, tangent map rank, kernel, transverse target separation, and four-row rank contradiction with SymPy",
+        "the independent no-import audit reverses tensor indexing and reconstructs the quotient, row coefficients, tangent matrix, kernel rank, target separation, and final dependence with standard-library Fraction arithmetic",
+        "this closes the complete aligned support-one chart, not the nonaligned chart, other row profiles, lower-rank target cells, pair coupling, other components and poles, higher orders, all-rank-drop, or global resolution"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_same_missing_colour_third_row_support_one_aligned_split_lift_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_same_missing_colour_third_row_support_one_aligned_split_lift_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_SAME_MISSING_COLOUR_THIRD_ROW_SUPPORT_ONE_ALIGNED_SPLIT_LIFT_EXCLUSION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds for the symbolic primary replay and independent standard-library Fraction audit",
+      "external_binaries": [],
+      "note": "The complete aligned chart in the coordinate-third-kernel same-colour (2,2,2) atlas is empty by a Segre-tangent kernel rank contradiction, uniformly including monomial C and noncoordinate w. The nonaligned chart and every wider stated branch remain open, and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
