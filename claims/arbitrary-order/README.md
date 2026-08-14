@@ -1168,6 +1168,26 @@ no-import `Fraction` audit replay all 151,484 multiplier terms.  Thus every
 off-diagonal monomial endpoint is impossible.  The diagonal coordinate
 endpoints and every nonmonomial residual remain open.
 
+The diagonal successor
+[`coordinate-endpoint full-target reduction`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_DIAGONAL_MONOMIAL_RESIDUAL_COORDINATE_ENDPOINT_FULL_TARGET_REDUCTION_THEOREM.md)
+restores the unsliced target information that is absent from the sharp
+one-corner face.  At `C=lambda e_2 tensor e_2,w=e_0`, the `(2,2)` entries of
+the `k=1,2` slices determine the two exceptional source tensors while all
+sixteen other root-entry equations remain explicit.  After their tangent
+contributions are removed, the entire `k=0` slice is equivalent to one
+rank-one root/source flattening whose nonzero root factor lies in the affine
+coset `C+(A_1 tensor y+x tensor A_2)`.  Contracting by `x^perp,y^perp`
+simultaneously gives an exact corrected `2 x 2 x 3` cube in the third-row
+three-space and an exhaustive target-visibility census.  That cube is a
+consequence, not a replacement, of the retained faces; an explicit tangent
+slot perturbation leaves every contraction unchanged while violating a face
+equation.  A two-radical lemma already excludes the fully supported
+distinct-plane exceptional-intersection orbit.  An exact split-form control
+shows that a one-visible quotient wall is nevertheless populated, so the
+quotient cannot be excluded without the complete faces and affine
+tangent-coset flattening.  The remaining plane-incidence/pivot atlas, the
+diagonal endpoints themselves, and every nonmonomial residual remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

@@ -6229,6 +6229,42 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Four Derivative-Rank-Eight Fully-Injective Diagonal-Monomial Residual Coordinate-Endpoint Full-Target Reduction",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_DIAGONAL_MONOMIAL_RESIDUAL_COORDINATE_ENDPOINT_FULL_TARGET_REDUCTION_THEOREM.md",
+      "document_sha256_16": "444179615049f48c",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero reduction on the normalized physical m=3 common-three-space full-sensor stratum with singleton span dimension three, joint rank four, all three root-root blocks nonzero, shared-derivative rank eight, and fully injective (3,3,3) root rows",
+        "the residual is a surviving diagonal monomial coordinate endpoint, normalized by colour permutation and shared-factor rescaling as C=lambda e_2 tensor e_2 and w=e_0 with lambda nonzero",
+        "the derivative has shared-factor form D(a,b,c)=(a tensor y-x tensor b) tensor e_0+C tensor c, kernel span((x,y,0)), and C outside A_1 tensor y+x tensor A_2",
+        "S2CC and S2CD imply x and y are not proportional to e_2 and reduce the monomial diagonal branch to the stated coordinate endpoints",
+        "for graph lifts k_c=(a_c,b_c,e_c), the gauge-free tangent tensors H_c=a_c tensor y-x tensor b_c give the complete slice equations P^(0)-E_00 T_0=(C+H_0)S_0+H_1S_1+H_2S_2, P^(1)-E_11T_1=CS_1, and P^(2)-E_22T_2=CS_2",
+        "the (2,2) entries of the last two slices determine S_1 and S_2, while the other sixteen root entries remain explicit zero/target equations; after subtraction, the unsliced obligation is R=kappa tensor S_0 with kappa=C+H_0 in the affine tangent coset",
+        "rank eight proves kappa nonzero, so the ordinary pairwise root/source flattening minors are exactly equivalent pointwise to the existence of S_0; nine nonzero-entry pivot charts are exhaustive without inserting a localization",
+        "contraction by alpha in x-perp and beta in y-perp yields an exact corrected 2 by 2 by 3 cube inside Q=span(q_0,q_1,q_2), with only its (1,1) cell carrying the residual correction; this cube is a consequence and does not replace the sixteen retained face equations",
+        "the exact visibility census retains every one-target and zero-target coordinate wall rather than assuming a generic evaluation vector",
+        "a denominator-free two-radical support lemma excludes the fully supported middle-plane orbit when the two contracted planes are distinct and meet in their common exceptional row",
+        "the proof does not use the rejected active-intersection coefficient identity; that identity would require an extra radical hypothesis not supplied by plane incidence",
+        "an explicit tangent-slot perturbation preserves source recovery, the corrected cube, and the unsliced flattening while violating a retained face equation; an exact split-form quotient realization separately proves the corrected cube alone is populated and is not claimed to extend to a physical full-target witness",
+        "the primary verifier symbolically reconstructs the coefficient identity, gauge, all sixteen retained face entries, source elimination, flattening-minor pivot converse, contraction and omission control, visibility census, two-radical support interfaces, and sharp quotient control",
+        "the independent no-import audit uses standard-library Fraction arithmetic, reversed traversal and permutation order, separate retained-face and contraction loops, pivot-chart identities, support-pattern checks, independent determinant checks, and its own split-form permanent implementation",
+        "this is a reduction rather than an endpoint exclusion; the diagonal coordinate endpoints, every nonmonomial residual, wider lower-rank cells, other components and poles, higher orders, all-rank-drop, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_diagonal_monomial_residual_coordinate_endpoint_full_target_reduction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_diagonal_monomial_residual_coordinate_endpoint_full_target_reduction.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_DIAGONAL_MONOMIAL_RESIDUAL_COORDINATE_ENDPOINT_FULL_TARGET_REDUCTION_SELF_REVIEW_2026-08-14.md",
+      "expected_runtime": "seconds for the symbolic primary replay and independent standard-library Fraction audit",
+      "external_binaries": [],
+      "note": "Each surviving diagonal monomial coordinate endpoint now has an exact gauge-free full-target presentation: sixteen recovered face equations and a nonzero tangent-coset rank-one source flattening, with a corrected third-row cube as a useful but strictly weaker consequence. One generic exceptional-intersection orbit is excluded, but the endpoints themselves and all nonmonomial residuals remain open. Global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
