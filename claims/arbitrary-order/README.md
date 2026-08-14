@@ -959,6 +959,24 @@ branch.  The next common-three-space obligation is the lower-rank three-root
 derivative census; wider components, pole strata, higher orders, and the
 all-rank-drop branch remain open.
 
+The successor
+[`lower-joint-rank three-root derivative and torus census`](BALANCED_M3_COMMON_THREE_SPACE_LOWER_JOINT_RANK_THREE_ROOT_DERIVATIVE_AND_TORUS_CENSUS_THEOREM.md)
+classifies that next branch.  With all three root blocks nonzero, the shared
+derivative has rank nine, eight, or seven.  Joint rank four excludes the
+injective rank-nine chart by rank--nullity.  Rank eight has one two-supported
+shared-factor syzygy and a residual block outside the corresponding Segre
+tangent plane; an exact root-torus argument forces the shared factor or
+residual block onto a coordinate/monomial atlas, and, when both shared
+vectors are noncoordinate, forces the residual block to be a nonzero
+coordinate monomial modulo that tangent plane.  Rank seven is exactly
+Hilbert--Burch.  Its full `(2,2,2)` projection profile is impossible at every
+joint rank, while the other three profiles inherit S2AG's coordinate-boundary
+atlas without importing rank-five kernel containment.  The exact preimage
+table distinguishes the rank-four selected syzygy line from rank-three
+transversality.  This is a strict localization, not a complete three-root
+exclusion; the surviving finite cells still require the full empty-permanent
+target and pair gate.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
