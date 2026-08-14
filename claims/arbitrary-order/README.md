@@ -878,6 +878,22 @@ nine `(1,2,2)` coloop orientations are impossible.  Only the two
 complementary first-root coloops remain in this profile, alongside the wider
 lower-rank, component, pole, and higher-order branches.
 
+The successor
+[`(1,2,2)` complementary first-root-coloop exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_COMPLEMENTARY_FIRST_ROOT_COLOOP_EXCLUSION_THEOREM.md)
+closes those final two orientations.  The derivative-zero pencil remains the
+exact `alpha_s=0` face; the selected divisor `alpha_a=0` instead supplies a
+two-plane `C` containing the in-space first row, both partner-kernel rows,
+and the sum of opposite active partner rows.  The S2BF
+arbitrary-intersection binary diagonal forces the same two projective
+degeneracies as S2BC, and S2BE excludes either one-sided degeneration.  At
+their intersection, equal partner planes fail by the S2AL square-image
+lemma.  Otherwise the inactive partner lines agree or differ, leaving two
+or three first-row support types.  Five polynomial normal forms exhaust the
+residual; pinned rational identities with 5,928 sparse multiplier terms
+exclude all of them.  Thus all nine S2AZ coordinate coloops, and the
+complete joint-rank-five Hilbert--Burch `(1,2,2)` profile, are impossible.
+Lower-rank, other-component, pole, and higher-order branches remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

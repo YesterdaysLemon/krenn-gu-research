@@ -5439,6 +5439,45 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Five Hilbert-Burch (1,2,2) Complementary First-Root-Coloop Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_COMPLEMENTARY_FIRST_ROOT_COLOOP_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "34dfab1b4e62a395",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with total singleton span dimension three and joint root-nonroot cross-colour rank exactly five",
+        "the Hilbert-Burch derivative kernel has the S2AZ (1,2,2) gauge x=lambda e_s, c=mu e_t, y_t=0, with lambda mu nonzero and the two stated projection pairs independent",
+        "the coordinate-coloop fork selects either complementary first-root hyperplane N subset {alpha_a=0} with a different from s; b is the third colour",
+        "the derivative-zero determinant pencil uses alpha_s=0, not the selected alpha_a divisor; the selected divisor instead supplies the two-plane C=H^T(L intersect {alpha_a=0})",
+        "the complete alpha_s=0 face has first row plane R=rho(e_s-perp)=span(r_a,r_b); pure e_b lies in the selected divisor, so r_b belongs to C and R meets the pencil three-space nontrivially",
+        "the evaluation-kernel rows of P_delta and Q_delta lie in C, and representatives with opposite evaluation pairs have row sum in C, so both partner planes lie in S_delta=C+span(p_delta) of dimension at most three",
+        "if both coordinate projection gates L_P=kappa y_s-h mu delta_(s,t) and L_Q=kappa z_s-h w_s are nonzero, the complete face is the independently audited S2BF arbitrary-intersection binary diagonal and is impossible",
+        "the inherited S2BF certificate has 28 polynomial normal forms, 20582 sparse multiplier terms, and SHA-256 0a92e61cef0b3db7940c68ea6e24bab4befb5dc1bd137ada581d0dbde4b9e0ca",
+        "projective factorization forces A: s different from t and y_s=0, or B: z_s=w_s=0",
+        "if exactly one of A and B holds, the complete face is the independently audited S2BE one-row-escape same-third-row table after a permanent-argument permutation and is impossible",
+        "the inherited S2BE certificate has 21 polynomial families, 9256 sparse multiplier terms, and SHA-256 e822cb443173acbab3604d6e3e28afaf7fd99a3e306731e21c7c7bc5023ac5fc",
+        "under both A and B, the selected divisor gives r_b,p_s,q_s,p_*+q_* in C and the complete binary table has only the two fully transverse same-pair target cells",
+        "if both partner planes equal C, permanent symmetry converts the two active values to one square map and S2AL tangent-line separation excludes them; if the escaping first row also lies in the common three-space, S2BC excludes the same-pair table",
+        "in the proper-intersection branch, the inactive partner lines in C agree or differ; their stabilizers leave two or three exact support types for r_b, giving five exhaustive normal forms",
+        "the five rational Nullstellensatz identities are polynomial in c0,c1, contain 5928 sparse multiplier terms, and have certificate SHA-256 10ce1216ed2360159eb4709140eabe4db1c51ad509f340ac137300a636583088",
+        "the primary verifier reconstructs all 64 cubic generators per case with SymPy; the independent no-import audit reverses all 26 variables and rebuilds the systems with standard-library Fraction sparse arithmetic",
+        "both complementary first-root coordinate coloops are impossible, so all nine S2AZ coordinate coloops and the complete joint-rank-five Hilbert-Burch (1,2,2) profile are closed",
+        "joint rank at most four, other physical components and pole strata, higher orders, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_two_two_complementary_first_root_coloop_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_five_hilbert_burch_one_two_two_complementary_first_root_coloop_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_COMPLEMENTARY_FIRST_ROOT_COLOOP_EXCLUSION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds for the five new exact rational certificate replays plus independent reversed-variable sparse audit; inherited S2BF and S2BE replays remain separate dependencies",
+      "external_binaries": [],
+      "note": "Both complementary first-root alpha_a coordinate coloops are impossible. The exact alpha_s=0 determinant face intersects the selected alpha_a coloop plane in one indexed first row; inherited binary-diagonal and same-third-row obstructions force a five-family common degeneration, and pinned rational identities independently exclude every family. All nine (1,2,2) coordinate coloops and the complete joint-rank-five Hilbert-Burch profile are closed. Wider stated branches remain open, and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
