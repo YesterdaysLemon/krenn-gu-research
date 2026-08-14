@@ -1124,6 +1124,19 @@ fork is respectively the intersecting-plane binary obstruction or the
 two-square obstruction.  Thus `(3,3,2)` is empty, and `(3,3,3)` is the only
 row profile left in the rank-four, derivative-rank-eight cell.
 
+The successor
+[`fully-injective monomial-residual endpoint localization`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_MONOMIAL_RESIDUAL_ENDPOINT_LOCALIZATION_THEOREM.md)
+starts the last `(3,3,3)` cell.  Its four-dimensional preimage is a graph
+over the third root space.  Contracting the complete target identity on
+`w^perp` gives an exact two-root slice.  If
+`C=lambda e_d tensor e_e` and either `w_d` or `w_e` is nonzero, that slice
+contains a binary diagonal permanent frame with one additional nonzero
+common-zero row.  A four-space shift argument transfers the audited S2BF
+intersecting-plane obstruction and rules this out.  Hence every monomial
+survivor satisfies `w_d=w_e=0`: for `d!=e`, `w` is the unique third
+coordinate; for `d=e`, it lies in the complementary coordinate plane.  The
+sharp endpoints and all nonmonomial residual blocks remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

@@ -6122,6 +6122,41 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Four Derivative-Rank-Eight Fully-Injective Monomial-Residual Endpoint Localization",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_MONOMIAL_RESIDUAL_ENDPOINT_LOCALIZATION_THEOREM.md",
+      "document_sha256_16": "6a32d192843f86b6",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero localization on the normalized physical m=3 common-three-space full-sensor stratum with singleton span dimension three, joint rank four, all three root-root blocks nonzero, shared-derivative rank eight, and fully injective (3,3,3) root rows",
+        "the derivative has shared-factor form D(a,b,c)=(a tensor y-x tensor b) tensor w+C tensor c, with kernel span((x,y,0)) contained in K and C outside A_1 tensor y+x tensor A_2",
+        "the residual block is one nonzero coordinate monomial C=lambda e_d tensor e_e",
+        "third-row injectivity makes ker(pr_3 restricted to K) equal the derivative syzygy, so K is a graph over A_3 and its three graph images form a basis of U",
+        "the complete coefficientwise target identity has unique source correction tensors S_c; contraction by gamma in w^perp gives per(r_i,p_j,q_gamma)-delta_(i=j) gamma_i T_i=C_(i,j) S_gamma",
+        "if w_d is nonzero, coordinate restriction w^perp to the two colours complementary to d is an isomorphism",
+        "the two complementary rows of the monomial C vanish, so this restriction is an exact binary diagonal permanent frame and the injective row p_d is a nonzero common zero",
+        "a four-space binary frame cannot have a nonzero common row: S2BF first makes its three row planes pairwise transverse, while arbitrary shifts along the common zero and two dimension intersections force that zero into both outer planes",
+        "therefore w_d=0; exchanging the first two roots gives w_e=0",
+        "if d and e are distinct, w is proportional to the unique third coordinate; if they agree, w lies in the complementary coordinate plane",
+        "the rank-eight tangent-plane condition also forces x not proportional to e_d and y not proportional to e_e",
+        "the primary verifier reconstructs the graph contraction, every ordered monomial support, both coordinate restriction gates, the binary common-zero shift trap, endpoint dimensions, and tangent quotient with SymPy",
+        "the independent no-import audit reverses tensor indexing, uses standard-library Fraction elimination and a separate dense derivative fixture, and reconstructs all nine ordered monomials and both root orientations",
+        "the endpoint w_d=w_e=0 and every nonmonomial residual block remain open, as do wider lower-rank cells, other components and poles, higher orders, all-rank-drop, and global resolution"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_monomial_residual_endpoint_localization.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_monomial_residual_endpoint_localization.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_MONOMIAL_RESIDUAL_ENDPOINT_LOCALIZATION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds for the symbolic primary replay and independent standard-library Fraction audit",
+      "external_binaries": [],
+      "note": "In the fully injective (3,3,3) rank-four/rank-eight cell, a monomial residual C=e_d tensor e_e is impossible unless w_d=w_e=0. The complete w-perpendicular target slice and a four-space binary-frame common-zero obstruction exclude every off-endpoint monomial. Sharp endpoints, nonmonomial residuals, wider branches, and global Krenn-Gu remain UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
