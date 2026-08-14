@@ -6193,6 +6193,42 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Four Derivative-Rank-Eight Fully-Injective Off-Diagonal-Monomial Residual Coordinate-Endpoint Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_OFF_DIAGONAL_MONOMIAL_RESIDUAL_COORDINATE_ENDPOINT_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "60c90467cfa56a66",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on the normalized physical m=3 common-three-space full-sensor stratum with singleton span dimension three, joint rank four, all three root-root blocks nonzero, shared-derivative rank eight, and fully injective (3,3,3) root rows",
+        "the derivative has shared-factor form D(a,b,c)=(a tensor y-x tensor b) tensor w+C tensor c, with kernel span((x,y,0)) contained in the four-dimensional joint row space",
+        "the residual is off-diagonal monomial C=lambda e_d tensor e_e with d!=e, and S2CC has already forced w onto the unique third coordinate line",
+        "the complete w-perpendicular target slice has transverse corners per(r_0,p_0,q_0)=T_0 and per(r_1,p_1,q_1)=T_1, one unrestricted parallel edge per(r_0,p_1,Q), all other binary cells zero, two physical common-row faces, and the cross-zero per(r_t,p_t,Q)=0",
+        "a proved projective Schubert and flag atlas covers every configuration with R intersect Q nonzero: 218 initial incidence charts, of which 210 have table-only certificates and eight are exhaustively replaced by 98 physical refinements",
+        "the reduced pivot and boundary unions are denominator-free and exhaustive by Pluecker-minor elimination; finite-field flag enumerations over F_3, F_5, and F_7 are independent implementation checks rather than the proof",
+        "the 308 separation charts force R intersect Q=0, and root exchange forces P intersect Q=0",
+        "the common-row shift placing p_t in Q explicitly uses per(r_t,p_t,Q)=0 to preserve the root-exchanged common-row face",
+        "after E=R direct-sum Q, diagonal-torus and right-Borel operations give three quotient-matrix orbits and the line span(p_t) has three torus supports, for nine terminal graph charts",
+        "a characteristic-not-two tangent-tensor lemma gives an analytic audit of the nine terminal contradictions without using the unrestricted edge",
+        "the pinned rational Nullstellensatz artifact has SHA-256 e940282a15261df2e5cc6d46c698b9bdb5e37299d5b5bb791dfeef4d711e3af1 and records 317 logical charts as 287 canonical literal systems with 151484 sparse multiplier terms",
+        "all certificates are identities in the ordinary rational polynomial ring in 36 pinned variables; no inverse, saturation, generic-point specialization, modular lift, or finite parameter sample is used",
+        "the primary SymPy verifier and independent no-import Fraction audit separately reconstruct the complete face, atlas sanity checks, every permanent generator, and every certificate product; the audit reverses all 36 variables and parses row expressions with a restricted AST",
+        "therefore every off-diagonal monomial coordinate endpoint is impossible",
+        "the diagonal coordinate endpoints, every nonmonomial residual, wider lower-rank cells, other components and poles, higher orders, all-rank-drop, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_off_diagonal_monomial_residual_coordinate_endpoint_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_off_diagonal_monomial_residual_coordinate_endpoint_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_OFF_DIAGONAL_MONOMIAL_RESIDUAL_COORDINATE_ENDPOINT_EXCLUSION_SELF_REVIEW_2026-08-14.md",
+      "expected_runtime": "minutes (SymPy reconstruction and 287 rational certificate replays; independent reversed-order standard-library sparse audit; Singular 4.x is optional for bounded deterministic certificate regeneration only)",
+      "external_binaries": [],
+      "note": "Every fully injective off-diagonal monomial endpoint is impossible. The complete sparse target face, a proved 317-chart projective cover, canonical rational Nullstellensatz identities, and an independent no-import replay close this discrete branch. Diagonal coordinate endpoints, nonmonomial residuals, wider branches, and global Krenn-Gu remain UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

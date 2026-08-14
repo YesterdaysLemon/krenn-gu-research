@@ -1152,6 +1152,22 @@ survivor forces `w` onto one of the two complementary coordinate lines.  The
 coordinate endpoints, off-diagonal monomial endpoint, and every nonmonomial
 residual remain open.
 
+The parallel successor
+[`fully-injective off-diagonal-monomial coordinate-endpoint exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_OFF_DIAGONAL_MONOMIAL_RESIDUAL_COORDINATE_ENDPOINT_EXCLUSION_THEOREM.md)
+closes the other monomial branch.  At `C=lambda e_d tensor e_e`, `d!=e`,
+S2CC forces `w` onto the unique third coordinate.  The complete target slice
+is a two-corner binary table with one unrestricted parallel edge, two common
+physical rows, and their cross-zero.  A proved projective incidence/flag cover
+has 308 separation charts; exact ordinary-ring identities force both involved
+planes transverse to the third plane.  Common-row shifts and the cross-zero
+place the physical middle row in that plane, after which three quotient
+orbits and three common-row-line orbits give nine terminal charts.  The 317
+logical charts reduce to 287 literal polynomial systems after exact
+deduplication with lineage retained.  SymPy and an independent reversed-order
+no-import `Fraction` audit replay all 151,484 multiplier terms.  Thus every
+off-diagonal monomial endpoint is impossible.  The diagonal coordinate
+endpoints and every nonmonomial residual remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
