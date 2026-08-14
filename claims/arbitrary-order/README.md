@@ -1137,6 +1137,21 @@ survivor satisfies `w_d=w_e=0`: for `d!=e`, `w` is the unique third
 coordinate; for `d=e`, it lies in the complementary coordinate plane.  The
 sharp endpoints and all nonmonomial residual blocks remain open.
 
+The successor
+[`fully-injective diagonal-monomial two-supported endpoint exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_DIAGONAL_MONOMIAL_RESIDUAL_TWO_SUPPORTED_ENDPOINT_EXCLUSION_THEOREM.md)
+advances the diagonal endpoint.  If `C=lambda e_d tensor e_d` and `w` has
+both complementary coordinates nonzero, the complete `w`-perpendicular
+slice is a same-third-row binary table with two additional physical common
+rows.  The audited arbitrary-intersection and mixed-factor lemmas put both
+common rows in the zero-third-row plane and force a coordinate graph column.
+Four quotient types and the complete Borel orbit census leave 29 exact
+polynomial charts.  Pinned rational Nullstellensatz identities, replayed by
+SymPy and an independent no-import `Fraction` implementation, exclude all
+29 without localization or parameter sampling.  Thus a diagonal monomial
+survivor forces `w` onto one of the two complementary coordinate lines.  The
+coordinate endpoints, off-diagonal monomial endpoint, and every nonmonomial
+residual remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

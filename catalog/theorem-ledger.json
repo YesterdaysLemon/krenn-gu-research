@@ -6157,6 +6157,42 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Four Derivative-Rank-Eight Fully-Injective Diagonal-Monomial Residual Two-Supported Endpoint Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_DIAGONAL_MONOMIAL_RESIDUAL_TWO_SUPPORTED_ENDPOINT_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "1d867bff015c1788",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on the normalized physical m=3 common-three-space full-sensor stratum with singleton span dimension three, joint rank four, all three root-root blocks nonzero, shared-derivative rank eight, and fully injective (3,3,3) root rows",
+        "the derivative has shared-factor form D(a,b,c)=(a tensor y-x tensor b) tensor w+C tensor c, with kernel span((x,y,0)) contained in the four-dimensional joint row space",
+        "the residual is diagonal monomial C=lambda e_d tensor e_d and S2CC has already proved w_d=0",
+        "the excluded subcase has both coordinates of w complementary to d nonzero; contraction on w-perp gives an exact same-third-row binary table with fully transverse targets",
+        "the complete target identity also gives the full tensor common-zero equations per(R,p_d,Q)=0 and per(r_d,P,Q)=0",
+        "S2BG separation forces both involved row planes to be disjoint from the third-row plane; four-space common-zero shifts then put p_d and r_d in that third-row plane",
+        "Cayley hyperdeterminant separates every repeated-row Segre tangent from a two-target transverse secant, and S2AL mixed-factor sharing forces every first-middle plane intersection to be coordinate in both ordered bases",
+        "intersections with the two common-row three-spaces force at least one coordinate quotient column and attach each common row to a zero or coordinate graph component",
+        "diagonal rescaling gives four quotient matrices; the ordered Borel action on the third-row plane gives seven zero, proportional, and independent graph-component orbits, with arbitrary shear parameters retained",
+        "the complete orbit census has 29 charts: 13 are excluded by 64 selected-source table equations and 16 use those equations plus both 32-equation physical common-zero tails",
+        "the pinned rational Nullstellensatz artifact has SHA-256 e9414389e653a76770d8f105a086fcae6887d2dbe012f41e5d74f78686c72f52 and contains 2972 sparse multiplier terms",
+        "all certificates are identities in the ordinary rational polynomial ring in 24 form coefficients and tau,g,h; no inverse, saturation, generic-point specialization, or finite parameter sample is used",
+        "the primary SymPy verifier and independent no-import Fraction audit separately reconstruct the target face, tangent identity, all 29 charts, every permanent generator, and every certificate product; the audit reverses all 27 variables",
+        "therefore a diagonal monomial survivor forces w onto one of the two coordinate lines complementary to e_d",
+        "those coordinate endpoints, the off-diagonal monomial endpoint, every nonmonomial residual, wider lower-rank cells, other components and poles, higher orders, all-rank-drop, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_diagonal_monomial_residual_two_supported_endpoint_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_diagonal_monomial_residual_two_supported_endpoint_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_DIAGONAL_MONOMIAL_RESIDUAL_TWO_SUPPORTED_ENDPOINT_EXCLUSION_SELF_REVIEW_2026-08-14.md",
+      "expected_runtime": "seconds (SymPy reconstruction and 29 rational certificate replays; independent reversed-order standard-library sparse audit; Singular 4.x is optional for deterministic certificate regeneration only)",
+      "external_binaries": [],
+      "note": "At a fully injective diagonal monomial endpoint, complementary support two for w is impossible. The complete target face supplies two common physical rows; exact incidence reduction and a complete 29-chart polynomial cover are excluded by pinned rational Nullstellensatz identities with an independent no-import replay. Coordinate diagonal endpoints, off-diagonal and nonmonomial residuals, wider branches, and global Krenn-Gu remain UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
