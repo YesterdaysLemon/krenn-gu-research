@@ -894,6 +894,20 @@ exclude all of them.  Thus all nine S2AZ coordinate coloops, and the
 complete joint-rank-five Hilbert--Burch `(1,2,2)` profile, are impossible.
 Lower-rank, other-component, pole, and higher-order branches remain open.
 
+The successor
+[`lower-joint-rank transverse two-root localization and pole controls`](BALANCED_M3_COMMON_THREE_SPACE_LOWER_JOINT_RANK_TRANSVERSE_TWO_ROOT_LOCALIZATION_AND_POLE_CONTROLS_THEOREM.md)
+starts the joint-rank-at-most-four branch.  At joint rank three or four, a
+transverse two-root point has uninvolved-row rank one or two, with exactly
+four row-space incidence types; every uninvolved-row kernel vector has
+target-coordinate support at most two.  Rank one forces a coordinate kernel
+plane, complementary diagonal root blocks, and a one-cell permanent grid.
+Exact common-shore controls realize that grid at both joint ranks, with full
+sensor rank and every GHZ target incidence, but their unique pair lifts have
+explicit coordinate-divisor poles.  Thus local singleton/empty equations do
+not exclude the lower-rank branch: its rank-two cells and the new rank-one
+pole-residue obligation remain open, as do three-root lower-rank derivatives
+and the wider component, pole, and higher-order branches.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

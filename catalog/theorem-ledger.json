@@ -5478,6 +5478,42 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Lower-Joint-Rank Transverse Two-Root Localization and Pole Controls",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_LOWER_JOINT_RANK_TRANSVERSE_TWO_ROOT_LOCALIZATION_AND_POLE_CONTROLS_THEOREM.md",
+      "document_sha256_16": "a380a4109ae83bb3",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero localization on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with total singleton span dimension three, exactly two nonzero root-root blocks, and joint root-nonroot cross-colour rank three or four",
+        "the rank-free S2AG shared-factor exclusion makes the two-block derivative transverse of rank six with kernel equal to the uninvolved third root",
+        "projection of K=image H to the two involved roots is a three-plane P and the derivative restricts to an isomorphism P to U",
+        "the uninvolved row rank q is nonzero by full-sensor rank and is at most two by the S2AD relation-plane cover together with the S2AE-S2AF three-plane exclusions recorded in S2AG",
+        "the four row-space incidence cells are (3,1) and (3,2) with Q contained in V, (4,1) with V and Q disjoint, and (4,2) with one-dimensional intersection",
+        "contracting any eta in ker theta kills the empty permanent and puts every target diagonal in support eta inside A1 tensor b_eta plus c_eta tensor A2; the two fixed factor lines force support eta at most two",
+        "when q=1, ker theta is a target-coordinate plane and only one third-root row q_s is nonzero",
+        "the two missing-colour target diagonals lie in U; the exact S2AD beta-zero atlas then forces complementary diagonal root blocks B23 proportional to e_t tensor e_t and B13 proportional to e_u tensor e_u",
+        "the involved preimage plane is span((e_t,0),(0,e_u),(e_s,tau e_s)); target consistency at the remaining third-root colour gives the one-cell permanent grid",
+        "explicit row controls r_s=p_s=x_s+z_s, r_t=-x_s+z_s, p_u=-x_star+y_s, q_s=(x_star+y_s)/2 reconstruct the physical singleton and empty matching formulas",
+        "taking x_star=x_s gives joint rank three and taking x_star independent of x_s gives joint rank four; both have singleton determinant -2 x_s y_s z_s and full four-column sensor rank",
+        "the controls satisfy every GHZ target incidence, while the unique rational pair lifts have explicit coordinate-divisor poles on x_s y_s z_s=0 and are not physical six-vertex graphs or counterexamples",
+        "the primary verifier checks the derivative, incidence atlas, support representatives, both controls, all singleton and empty coefficients, target congruence, sensor rank, and rational Cramer identities with SymPy",
+        "the independent no-import audit reconstructs row ranks, sparse permanents, singleton slices, and Laurent pair identities with standard-library Fraction arithmetic",
+        "uninvolved-row rank two, rank-one pole residues, three-root lower-rank derivatives, other physical components and pole strata, higher orders, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_lower_joint_rank_transverse_two_root_localization_and_pole_controls.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_lower_joint_rank_transverse_two_root_localization_and_pole_controls.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_LOWER_JOINT_RANK_TRANSVERSE_TWO_ROOT_LOCALIZATION_AND_POLE_CONTROLS_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds for both exact control replays and the independent standard-library audit",
+      "external_binaries": [],
+      "note": "Joint-rank-three and joint-rank-four transverse two-root points have a four-cell uninvolved-row atlas. Rank one forces complementary diagonal root blocks and a one-cell permanent frame, but exact physical full-sensor controls populate that frame at both ranks with coordinate-pole pair lifts. This is a sharp localization, not an exclusion; all wider stated branches remain open and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
