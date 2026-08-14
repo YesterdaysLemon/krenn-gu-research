@@ -1007,6 +1007,20 @@ argument covers every physical cross map onto this `K`, but does not infer
 that all same-missing-colour points have the split-lift form; nonsplit lifts
 and the other row profiles remain open.
 
+The successor
+[`same-missing-colour third-row-support-one split-lift atlas`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_SAME_MISSING_COLOUR_THIRD_ROW_SUPPORT_ONE_SPLIT_LIFT_ATLAS_THEOREM.md)
+removes that lift ambiguity.  Two contractions of the missing-colour pure
+target coefficient first fix its third component and then put its first two
+components on the shared derivative syzygy.  Hence `(0,0,e_d)` is forced in
+`K`.  The third-kernel-colour target similarly forces `(0,e_s,0)`.  Projection
+rank then gives two exhaustive four-space charts, according as the other
+tangent factor is independent of or proportional to `e_s`.  Their polarized
+root permanents have exact eight-dimensional boxes; on the nonmonomial
+residual-block branch these boxes meet `U` trivially.  Thus nonsplit
+missing-colour lifts are impossible, while arbitrary complementary tangent
+directions and residual blocks in the two displayed charts still require a
+source-permanent exclusion.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
