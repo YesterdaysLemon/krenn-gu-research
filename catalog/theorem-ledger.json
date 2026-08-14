@@ -5885,6 +5885,43 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Four Derivative-Rank-Eight Same-Missing-Colour Third-Row-Support-Two Complete Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_SAME_MISSING_COLOUR_THIRD_ROW_SUPPORT_TWO_COMPLETE_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "93bffa26a2241877",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on the normalized physical m=3 common-three-space full-sensor stratum with singleton span dimension three, joint rank four, all three root-root blocks nonzero, shared-derivative rank eight, common missing involved-row colour d, and row ranks (2,2,2)",
+        "the third-row kernel generator has both complementary target colours s,t in its support",
+        "S2BR then puts the tangent factors on e_s,e_t in one order, gives C=kappa e_d tensor e_d+C_bar, and proves the support-two kernel covector evaluates nontrivially on w",
+        "for each physical pure source target T_c, its coefficient correction lies in U=D(K) and has a derivative preimage in K",
+        "the common missing first row and isolated d row of C fix the T_d preimage third component to -kappa inverse e_d and force the T_s,T_t preimage third components to zero",
+        "contraction by the third-row kernel kills every empty coefficient and has zero d target contribution, so the T_d preimage first two components lie on the shared tangent syzygy",
+        "subtracting that contained syzygy forces the vertical vector (0,0,e_d) into K",
+        "the nonzero s coefficient of the support-two kernel makes the T_s correction force (0,e_s,0) modulo the shared syzygy",
+        "the nonzero t coefficient similarly makes the T_t correction force (e_t,0,0) modulo the shared syzygy",
+        "the three forced vectors and the derivative syzygy (e_s,e_t,0) are four independent vectors in the four-space K",
+        "their third projection is exactly span(e_d), so they make dim pr3 K equal one",
+        "the rank of the transposed third root row equals dim pr3 K, contradicting the assumed third-row rank two",
+        "the exclusion is uniform in C_bar and w under the stated nonzero evaluation and uses neither coordinate w nor pair regularity",
+        "the primary verifier checks the derivative kernel, three combined first-third contraction affine systems, common syzygy freedom, forced basis rank, and third projection rank with SymPy",
+        "the independent no-import audit reverses tensor indexing and reconstructs the derivative and affine systems, ranks, representatives, and projection contradiction with standard-library Fraction arithmetic",
+        "with S2BU and S2BV closing support one, this closes the complete same-colour (2,2,2) profile for a rank-two third row; third-row rank three, other involved-row profiles, lower-rank target cells, other components and poles, higher orders, all-rank-drop, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_same_missing_colour_third_row_support_two_complete_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_same_missing_colour_third_row_support_two_complete_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_SAME_MISSING_COLOUR_THIRD_ROW_SUPPORT_TWO_COMPLETE_EXCLUSION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds for the symbolic primary replay and independent standard-library Fraction audit",
+      "external_binaries": [],
+      "note": "A support-two third-row kernel in the same-colour (2,2,2) cell forces three correction vectors that, with the shared syzygy, fill K but leave third projection rank one. The cell is impossible; with S2BU-S2BV this closes the complete same-colour rank-two-third-row profile. Wider branches remain open, and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

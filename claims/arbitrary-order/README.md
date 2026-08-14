@@ -1046,6 +1046,18 @@ this closes the complete same-colour `(2,2,2)` graph cell with coordinate
 third-row kernel, while noncoordinate third-kernel support and the other row
 profiles remain open.
 
+The
+[`support-two third-row exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_SAME_MISSING_COLOUR_THIRD_ROW_SUPPORT_TWO_COMPLETE_EXCLUSION_THEOREM.md)
+removes that remaining rank-two-third-row kernel support.  Both complementary
+target corrections have zero third component after contraction by the common
+missing involved row.  Contracting by the support-two third-kernel covector
+then forces `(0,e_s,0)` and `(e_t,0,0)` modulo the shared syzygy, while the
+missing-colour correction forces `(0,0,e_d)`.  These three vectors and the
+syzygy already span `K`, but their third projection has rank one, contradicting
+the assumed third-row rank two.  Thus the entire same-colour `(2,2,2)`
+rank-two-third-row profile is closed; third-row rank three and the other
+involved-row profiles remain.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
