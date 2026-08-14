@@ -940,6 +940,25 @@ The complete transverse joint-rank-three/four frontier is now reduced to
 S2BM's rank-one-row controls; their pole-residue or retained pair/deck
 obstruction is the next genuine gate.
 
+The
+[`lower-joint-rank transverse two-root uninvolved-rank-one complete pair-pole exclusion`](BALANCED_M3_COMMON_THREE_SPACE_LOWER_JOINT_RANK_TRANSVERSE_TWO_ROOT_UNINVOLVED_RANK_ONE_COMPLETE_PAIR_POLE_EXCLUSION_THEOREM.md)
+closes that gate at both ranks.  Starting from S2BM's exact one-cell frame,
+the populated square row uses either two or three source summands.  The
+complete Segre-tangent/common-zero atlas makes the singleton determinant
+carry one, two, or all three missing-colour coordinate factors.  A Cramer
+numerator for one source omits that source's missing-colour coordinate, so
+global pair regularity forces the corresponding numerator to vanish.  The
+two-factor charts then contradict either the coprimality of the two residual
+GHZ monomials or the nonzero third singleton row.  In the sole one-factor
+chart, vanishing of the exact remaining numerator would kill the alternating
+singleton determinant.  Thus every `q=1` point has a prime-divisor pair pole,
+and the Cramer--Euler gate excludes every regular graph extension.  Together
+with the rank-four `q=2` exclusion and the rank-three `q=2` pole exclusion,
+this empties the complete lower-rank transverse two-root graph-extension
+branch.  The next common-three-space obligation is the lower-rank three-root
+derivative census; wider components, pole strata, higher orders, and the
+all-rank-drop branch remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
