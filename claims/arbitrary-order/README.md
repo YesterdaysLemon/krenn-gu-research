@@ -923,6 +923,23 @@ rank-four branch is therefore reduced to S2BM's populated `q=1` pole
 control; rank-three `q=1/q=2`, its pole/deck obligations, and all wider
 branches remain open.
 
+The successor
+[`joint-rank-three transverse two-root uninvolved-rank-two exceptional normal form and pole controls`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_THREE_TRANSVERSE_TWO_ROOT_UNINVOLVED_RANK_TWO_EXCEPTIONAL_NORMAL_FORM_AND_POLE_CONTROLS_THEOREM.md)
+finishes the local rank-three `q=2` atlas.  The only nonvanishing
+common-zero chart is the two-source conjugate chart.  The other two GHZ
+diagonals then force complementary coordinate-monomial root blocks and make
+both involved rows rank two, excluding the apparent support-two `(3,3)`
+residual.  Up to the stated gauges, one row system remains.  It has either
+one missing third-root row or two proportional nonzero third-root rows.
+Exact controls populate both variants with full sensor rank and every GHZ
+target coefficient.  Their common unique pair lift has three explicit
+coordinate poles.  Because the atlas is exhaustive, the exact Cramer--Euler
+pair-pole gate excludes a regular graph extension for the entire rank-three
+`q=2` cell, even though its singleton/empty equations are sharply populated.
+The complete transverse joint-rank-three/four frontier is now reduced to
+S2BM's rank-one-row controls; their pole-residue or retained pair/deck
+obstruction is the next genuine gate.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

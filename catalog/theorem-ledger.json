@@ -5551,6 +5551,47 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Three Transverse Two-Root Uninvolved-Rank-Two Exceptional Normal Form and Pole Controls",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_THREE_TRANSVERSE_TWO_ROOT_UNINVOLVED_RANK_TWO_EXCEPTIONAL_NORMAL_FORM_AND_POLE_CONTROLS_THEOREM.md",
+      "document_sha256_16": "3eb29913821951b8",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero localization on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with total singleton span dimension three, exactly two nonzero root-root blocks, joint root-nonroot cross-colour rank exactly three, and uninvolved-row rank two",
+        "S2BM gives dim V=3, dim Q=2 and Q contained in V; the involved-row ranks are at least two and the uninvolved-row kernel support is one or two",
+        "incidence-free S2AL and S2AJ arguments leave support-one (2,2) and support-two (2,2)/(3,3) as the only initial profiles",
+        "the complete S2AI, S2AK, and S2AM target tables enter the exact S2BN common-zero atlas with a rank-one square target and fully transverse diagonal-plane mixed corrections",
+        "nonzero alternating singleton rank forces the sole containment-sensitive two-source conjugate chart and V equals the span of the three source-factor lines of the square target T_j",
+        "every empty permanent is consequently proportional to T_j, so the other two root target diagonals d_d,d_c belong to U",
+        "S2BM two-diagonal derivative forcing gives complementary monomial blocks B23=e_d tensor e_d and B13=e_c tensor e_c after rescaling",
+        "unique diagonal preimages in the relation plane make both involved row ranks two, excluding the support-two (3,3) residual",
+        "the S2AI/S2AM zero-row normal forms give P=span((e_d,0),(0,e_c),(e_j,e_j)) and the exact involved rows r_d=v_d,r_c=0,r_j=v_j,p_d=0,p_c=v_c,p_j=v_j",
+        "the conjugate source chart initially has q0=x-y, q1=lambda x+mu y+t and common-zero plane span(x-y,-lambda x-mu y+t), with lambda+mu nonzero",
+        "a Q-basis change and rescaling normalize lambda=mu=1; simultaneous mixed-product vanishing forces the common-zero basis to be w+u and w-u",
+        "the normalized rows are a=-2y+t, b=2x-t, v=x+y, w=x-y, q=(x+y+t)/2, with per(v,v,q)=xyt, all three mixed maps zero, and alternating tensor 4xyt",
+        "support one takes q_d=0,q_c=w,q_j=q; support two takes q_d=w,q_c=gamma w,q_j=q with gamma nonzero; both have joint rank three and third-row rank two",
+        "both controls have the exact empty companion d_j xyt and physical singleton columns G_X=(0,2x,x), G_Y=(-2y,0,y), G_Z=(t,-t,0) in the displayed singleton basis",
+        "the singleton determinant is 4xyt and d_j lies outside U, so the complete four-column sensor has full function-field rank",
+        "the unique rational pair coefficients are (T_d+T_c)/(4x), -(T_d+T_c)/(4y), and (T_d-T_c)/(2t); their numerators are not divisible by the corresponding denominator coordinates, so all three valuations are exactly minus one",
+        "because the source atlas is exhaustive, the exact Cramer-Euler pair-pole iff gate excludes every regular bilinear pair completion and every graph extension of this complete cell",
+        "the primary verifier checks the normalization, derivative, relation plane, both 27-cell controls, singleton columns, sensor rank, and Cramer identities with SymPy",
+        "the independent no-import audit reconstructs ranks, sparse permanents, singleton columns, and Laurent pair identities with standard-library Fraction arithmetic",
+        "this is a complete exceptional atlas, sharp local-control theorem, and graph-extension exclusion for the q=2 cell; rank-one-row pole residues, lower-rank three-root derivatives, other components and poles, higher orders, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_three_transverse_two_root_uninvolved_rank_two_exceptional_normal_form_and_pole_controls.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_three_transverse_two_root_uninvolved_rank_two_exceptional_normal_form_and_pole_controls.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_THREE_TRANSVERSE_TWO_ROOT_UNINVOLVED_RANK_TWO_EXCEPTIONAL_NORMAL_FORM_AND_POLE_CONTROLS_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds for both exact support controls and the independent standard-library audit",
+      "external_binaries": [],
+      "note": "The joint-rank-three transverse q=2 branch has one exact conjugate source normal form with support-one and support-two third-row variants. Both are populated by physical full-sensor singleton/empty controls, but the exhaustive unique pair coefficients have three unavoidable coordinate poles. The Cramer-Euler gate therefore excludes every graph extension of the complete cell. Wider stated branches remain open and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
