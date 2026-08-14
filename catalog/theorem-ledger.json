@@ -5719,6 +5719,47 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Four Derivative-Rank-Eight Same-Missing-Colour Third-Row-Rank-Two Coordinate Split-Lift Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_SAME_MISSING_COLOUR_THIRD_ROW_RANK_TWO_COORDINATE_SPLIT_LIFT_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "66e6316568194f4a",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with singleton span dimension three, joint rank four, all three root-root blocks nonzero, and shared-derivative rank eight",
+        "after root and colour permutations and nonzero rescaling the displayed cell has x=e_s, y=e_t, w=e_s, and C=e_d tensor e_d+e_s tensor e_s for distinct target colours d,s,t",
+        "the joint image K is the exact coordinate split-lift four-space spanned by (e_s,e_t,0), (0,0,e_d), (0,-e_s,0), and (e_t,0,e_t)",
+        "the shared derivative has rank eight and kernel exactly span((e_s,e_t,0)); its other three displayed K-images are independent and span U",
+        "the three coordinate projections of K are span(e_s,e_t), span(e_s,e_t), and span(e_d,e_t), giving row ranks (2,2,2), common involved missing colour d, and third-row kernel colour s",
+        "the polarized root permanent on the four K basis vectors has exactly eight nonzero unordered products and they form a basis of span(e_s,e_t) tensor span(e_s,e_t) tensor span(e_d,e_t)",
+        "the eight-dimensional root box meets U only in zero because every U generator has a unique component outside the box",
+        "modulo U the d target diagonal is negative e_s tensor e_s tensor e_d, the s target diagonal vanishes, and the t target diagonal is unchanged",
+        "coefficientwise expansion of the physical empty permanent therefore forces six source products P(g0,g0,g1), P(g0,g0,g3), P(g0,g1,g3), P(g0,g2,g3), P(g1,g2,g3), P(g2,g3,g3) to vanish",
+        "the two remaining products P(g0,g1,g2) and P(g0,g3,g3) are nonzero scalar multiples of the fully transverse pure source tensors T_d and T_t",
+        "the repeated-index factors of two in the root table exactly match the repeated terms of source polarization, so no factorial or characteristic-zero scalar is dropped",
+        "the rank-free eight-product lemma says the six-zero/two-transverse table is impossible in arbitrary finite-dimensional source spaces over characteristic zero",
+        "if the repeated vector uses two sources, its square-zero relation puts u on one scaling-difference line plus a third component; the other zeros put r,q on the same family and force the first pure target to share all factors with the second",
+        "if the repeated vector uses three sources, decomposability in the Segre tangent makes u either pure or a three-line scaling vector",
+        "in the three-line scaling case every common mixed zero lies on the same three factor lines; in the pure case the remaining square and mixed zeros force r into the same pure source and kill the first target",
+        "zero scaling coefficients and zero pairwise sums reduce to the explicitly handled pure case, so the source-support split is exhaustive",
+        "applying the eight-product lemma to the four dual K rows excludes every physical cross map H onto the displayed coordinate split-lift K",
+        "the primary verifier checks the dense derivative, K incidence, all unordered root-permanent products, direct quotient, target reductions, and symbolic support identities with SymPy",
+        "the independent no-import audit reverses tensor indexing and reconstructs the derivative, all basis products, quotient ranks, and exact rational support normal forms with standard-library Fraction arithmetic",
+        "this excludes one complete coordinate split-lift cell, not every same-missing-colour point; nonsplit lifts, other row profiles, joint rank three, derivative rank seven, pair coupling, other components and poles, higher orders, all-rank-drop, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_same_missing_colour_third_row_rank_two_coordinate_split_lift_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_same_missing_colour_third_row_rank_two_coordinate_split_lift_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_SAME_MISSING_COLOUR_THIRD_ROW_RANK_TWO_COORDINATE_SPLIT_LIFT_EXCLUSION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds for the symbolic primary replay and independent standard-library Fraction audit",
+      "external_binaries": [],
+      "note": "The exact same-missing-colour third-row-rank-two coordinate split-lift cell is empty by a new rank-free eight-product obstruction. Nonsplit lifts and every wider stated branch remain open, and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

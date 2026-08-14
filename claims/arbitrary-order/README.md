@@ -993,6 +993,20 @@ component simultaneously zero and nonzero.  The same-colour `(2,2)` cell and
 all higher involved-row profiles remain open, as do the rank-seven and
 joint-rank-three target cells and the pair gate.
 
+The successor
+[`same-missing-colour third-row-rank-two coordinate split-lift exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_SAME_MISSING_COLOUR_THIRD_ROW_RANK_TWO_COORDINATE_SPLIT_LIFT_EXCLUSION_THEOREM.md)
+closes one complete cell inside that survivor.  On the coordinate chart
+`x=w=e_s`, `y=e_t`, and
+`C=e_d tensor e_d+e_s tensor e_s`, its displayed four-space `K` has row
+kernels `(d,d,s)`.  The polarized root permanent of `K` has exactly eight
+independent quotient coefficients.  Target consistency makes six associated
+source permanents zero and the other two the fully transverse pure tensors
+`T_d,T_t`.  A new rank-free eight-product lemma excludes that table by an
+exhaustive one-/two-/three-source analysis of the repeated vector.  The
+argument covers every physical cross map onto this `K`, but does not infer
+that all same-missing-colour points have the split-lift form; nonsplit lifts
+and the other row profiles remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
