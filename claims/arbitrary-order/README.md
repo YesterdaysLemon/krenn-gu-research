@@ -908,6 +908,21 @@ not exclude the lower-rank branch: its rank-two cells and the new rank-one
 pole-residue obligation remain open, as do three-root lower-rank derivatives
 and the wider component, pole, and higher-order branches.
 
+The next theorem,
+[`joint-rank-four transverse two-root uninvolved-rank-two complete exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_TRANSVERSE_TWO_ROOT_UNINVOLVED_RANK_TWO_COMPLETE_EXCLUSION_THEOREM.md),
+closes the whole rank-four `q=2` cell.  It strengthens the S2AI/S2AK
+common-zero lemma from disjoint `V,Q` to every two-plane `Q` not contained
+in the singleton row three-plane `V`.  In the sole intersection-sensitive
+conjugate-tangent chart, the last mixed permanent forces both generators of
+`Q` into `V`, contradicting the rank-four line-intersection incidence.
+Together with incidence-free transfers of the earlier higher-row
+exclusions, this covers both kernel supports and all four involved-row
+profiles.  An exact `Q subset V` fixture with nonzero singleton determinant
+shows why the same lemma does not close joint rank three.  The transverse
+rank-four branch is therefore reduced to S2BM's populated `q=1` pole
+control; rank-three `q=1/q=2`, its pole/deck obligations, and all wider
+branches remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
