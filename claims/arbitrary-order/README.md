@@ -977,6 +977,22 @@ transversality.  This is a strict localization, not a complete three-root
 exclusion; the surviving finite cells still require the full empty-permanent
 target and pair gate.
 
+The
+[`joint-rank-four derivative-rank-eight target-kernel atlas and distinct-missing-colour exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_TARGET_KERNEL_ATLAS_AND_DISTINCT_MISSING_COLOUR_EXCLUSION_THEOREM.md)
+starts that coupling.  Because the derivative kernel line is physically
+contained in `K`, every deficient involved root row annihilates its shared
+tangent factor.  The complete coefficientwise empty-target identity then
+forces a rank-two first/second row to have one coordinate zero row and a
+matching nonzero diagonal row/column of the residual block.  A deficient
+third row has support only on coordinate lines represented by the two shared
+vectors and cannot annihilate the shared third factor.  If both involved rows
+have rank two, their missing colours must coincide: using the coefficient of
+one missing-colour target first fixes the third component of its derivative
+preimage, while contraction by a distinct missing row makes that same
+component simultaneously zero and nonzero.  The same-colour `(2,2)` cell and
+all higher involved-row profiles remain open, as do the rank-seven and
+joint-rank-three target cells and the pair gate.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

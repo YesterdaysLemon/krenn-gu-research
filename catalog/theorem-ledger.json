@@ -5678,6 +5678,47 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Four Derivative-Rank-Eight Target-Kernel Atlas and Distinct-Missing-Colour Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_TARGET_KERNEL_ATLAS_AND_DISTINCT_MISSING_COLOUR_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "8b2f41feefe1afa1",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero target-row localization on the normalized target-consistent physical m=3 common-three-space full-sensor stratum with singleton span dimension three, joint cross rank four, all three root-root blocks nonzero, and shared-derivative rank eight",
+        "S2BQ puts the derivative in the normal form D(a,b,c)=(a tensor y-x tensor b) tensor w+C tensor c with kernel span((x,y,0)) and C outside A1 tensor y+x tensor A2",
+        "at joint rank four the complete inverse image D inverse U has dimension four, so K equals D inverse U and the shared-factor kernel line lies in K",
+        "the ranks of the three transposed root-row maps equal the dimensions of the three coordinate projections of K",
+        "a first-root kernel covector annihilates both a and x on K, so its contraction of every singleton correction is ((alpha tensor id)C) tensor c with one fixed second-root factor",
+        "the complete six-term empty permanent is killed by a row-kernel covector, while each supported target colour leaves an independent diagonal coefficient",
+        "two supported colours cannot share the one fixed factor line; hence every nonzero first-root kernel vector is coordinate, its matching C row is nonzero diagonal, and a two-dimensional kernel is impossible",
+        "root exchange gives the corresponding second-root coordinate kernel, nonzero diagonal C column, and rank floor two",
+        "a third-root kernel covector contracts U into A1 tensor y+x tensor A2 and cannot annihilate w",
+        "the quotient by Kx and Ky proves e_s tensor e_s lies in the tangent plane exactly when x or y is proportional to e_s",
+        "every third-root kernel vector is therefore supported on at most two colours represented by coordinate x or y; evaluation on w is nonzero on every such vector, so the third-row kernel has dimension at most one",
+        "if both involved rows have rank two with distinct missing colours d and e, the T_d correction coefficient has a derivative preimage whose third component is forced to -kappa inverse e_d",
+        "contraction of that same coefficient by the missing second-root row must vanish because d differs from e, but the forced diagonal C column gives the nonzero tensor -lambda kappa inverse e_e tensor e_d",
+        "the contradiction excludes the complete distinct-missing-colour involved (2,2) subcell for either third-row rank",
+        "in the same-missing-colour survivor C has one isolated nonzero diagonal entry plus a complementary 2x2 block, x and y avoid the missing colour, and the matching coordinate line lies in pr3 K",
+        "if the third row is also rank two its kernel avoids the common missing colour, is supported on coordinate lines represented by x,y, and evaluates nontrivially on w",
+        "if the complementary C block is nonzero then C is nonmonomial and the inherited S2BQ torus gate forces w to be coordinate",
+        "the primary verifier checks the dense rank-eight derivative, symbolic contractions, tangent quotient iff, all six ordered distinct-colour contradictions, and same-colour survivor shape with SymPy",
+        "the independent no-import audit reverses tensor flattening order and reconstructs ranks, contractions, quotient membership, and all six contradictions with standard-library Fraction elimination",
+        "this is a target-row atlas and one subcell exclusion, not a complete rank-eight exclusion; same-colour and higher-row profiles, joint rank three, derivative rank seven, pair coupling, other components and poles, higher orders, all-rank-drop, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_target_kernel_atlas_and_distinct_missing_colour_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_target_kernel_atlas_and_distinct_missing_colour_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_TARGET_KERNEL_ATLAS_AND_DISTINCT_MISSING_COLOUR_EXCLUSION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds for the symbolic primary replay and independent standard-library Fraction audit",
+      "external_binaries": [],
+      "note": "The joint-rank-four derivative-rank-eight cell now has an exact target-row kernel atlas, and the involved (2,2) subcell with distinct missing colours is empty. Same-colour and higher-row target cells and every wider stated branch remain open, and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
