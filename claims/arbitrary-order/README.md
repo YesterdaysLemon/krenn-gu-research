@@ -1109,6 +1109,21 @@ four independent dual physical rows.  Thus every rank-four/rank-eight
 profile with at least one deficient involved row is closed; only fully
 injective involved rows remain in this derivative cell.
 
+The
+[`fully-injective-involved-rows third-row-rank-two exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_INVOLVED_ROWS_THIRD_ROW_RANK_TWO_COMPLETE_EXCLUSION_THEOREM.md)
+closes the `(3,3,2)` continuation.  A vertical third lift is already
+incompatible with the two injective involved projections.  Without one, the
+eighteen-dimensional root box meets the singleton span trivially, so the
+complete empty target has three unique root representatives.  The exact
+rank-four obstruction for `P_3` forces one supported target cube into the
+singleton image.  For a support-one kernel this produces an equal-plane
+binary frame.  For support two, outer-factor permanent symmetry reduces the
+last coefficient to a mixed term plus one square; mixed-factor sharing kills
+the mixed term, and the remaining independent/proportional middle-factor
+fork is respectively the intersecting-plane binary obstruction or the
+two-square obstruction.  Thus `(3,3,2)` is empty, and `(3,3,3)` is the only
+row profile left in the rank-four, derivative-rank-eight cell.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

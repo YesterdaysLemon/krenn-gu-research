@@ -6081,6 +6081,47 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Four Derivative-Rank-Eight Fully-Injective-Involved-Rows Third-Row-Rank-Two Complete Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_INVOLVED_ROWS_THIRD_ROW_RANK_TWO_COMPLETE_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "5af0ec2782081724",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on the normalized physical m=3 common-three-space full-sensor stratum with singleton span dimension three, joint rank four, all three root-root blocks nonzero, shared-derivative rank eight, both involved rows injective, and third-row rank two",
+        "the derivative has one shared-factor syzygy (x,y,0), residual block C outside the tangent plane A_1 tensor y+x tensor A_2, and eta(w) nonzero for the third-row kernel generator eta",
+        "the vertical subspace K intersect A_3 has dimension at most one under either injective involved projection",
+        "third-kernel contraction makes every supported target colour supply a split tangent class modulo the shared syzygy",
+        "with a vertical line, support one leaves the involved shore represented by its tangent factor with projection rank at most two; support two makes both involved projections rank two",
+        "therefore K has no nonzero vertical third direction",
+        "the root box L=A_1 tensor A_2 tensor pr_3 K meets U only in zero: contraction by eta kills the tangent part and would otherwise leave a forbidden vertical vector",
+        "the complete target identity consequently has unique representatives F_i in L and the exact source-diagonal form G_N=sum_i T_i F_i with every other source coefficient zero",
+        "if all three F_i were nonzero, a simultaneous root evaluation would map rank-four P_3 invertibly to a concise rank-three diagonal, contradicting tensor rank",
+        "a supported representative F_i is therefore zero; if its correction has nonzero third component, tensor-factor uniqueness makes C proportional to e_i tensor e_i inside the forbidden derivative tangent plane",
+        "the only remaining zero-representative alternative has zero third component and w proportional to the supported coordinate",
+        "for support one, the complementary involved binary row plane and the full third row plane have the same annihilator ker(pr_3 restricted to K), hence are equal",
+        "the two unaffected target cubes then form the exact S2BF binary diagonal table on equal outer planes, which is impossible",
+        "for support two, root exchange and colour exchange reduce to x=e_s, y=e_t, w=e_s, F_s=0, and equality of span(r_d,r_t) with the third-row plane",
+        "the other supported representative F_t is nonzero and, after identifying the equal outer planes, permanent symmetry puts it in the form q_d sym(e_d,c) tensor e_t+c tensor n tensor c",
+        "a nonzero q_d would make one square map and one mixed map have rank-one images on fully transverse target lines, contradicting the S2AL mixed-factor-sharing lemma",
+        "with q_d=0, independence of e_d,n gives the S2BF equal-plane binary table; proportionality gives two fully transverse rank-one squares with zero mixed map on one two-plane, contradicting the S2AL two-square lemma",
+        "the primary verifier checks all vertical projection forks, an exact nonvertical rank-eight fixture and direct eighteen-box, the P_3 rank interface, support-one plane equality, outer symmetry reduction, and both terminal forks with SymPy",
+        "the independent no-import audit reverses tensor indexing, uses standard-library Fraction elimination, loops over all six colour orders, and independently reconstructs the rank, plane, symmetry, and terminal alternatives",
+        "this closes the complete (3,3,2) profile; only (3,3,3) remains in the rank-four/rank-eight row census, while wider lower-rank cells, other components and poles, higher orders, all-rank-drop, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_involved_rows_third_row_rank_two_complete_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_involved_rows_third_row_rank_two_complete_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_INVOLVED_ROWS_THIRD_ROW_RANK_TWO_COMPLETE_EXCLUSION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds for the symbolic primary replay and independent standard-library Fraction audit",
+      "external_binaries": [],
+      "note": "The fully injective (3,3,2) rank-four/rank-eight cell is impossible. A vertical third lift violates projection rank; the nonvertical direct root box and P_3 rank fork reduce support one and support two to audited equal-plane binary, mixed-factor, or two-square obstructions. Only (3,3,3) remains in this derivative cell, and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
