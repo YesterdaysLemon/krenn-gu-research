@@ -1094,6 +1094,21 @@ diagonal root tensors, which is impossible.  Thus `(2,3,2)` and `(3,2,2)`
 with support-two third kernel are empty; only their support-one cells remain
 among the mixed profiles.
 
+The successor
+[`one-deficient-row support-one exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_ONE_DEFICIENT_INVOLVED_ROW_THIRD_ROW_SUPPORT_ONE_COMPLETE_EXCLUSION_THEOREM.md)
+closes those last mixed cells.  The missing-colour and third-kernel target
+coefficients force a vertical lift and one split tangent lift.  The wrong
+split orientation would lower the injective involved-row projection to rank
+two, so the surviving four-space has one direct twelve-coefficient root box.
+Four coefficients on its third-`t` face force a cubic resonance frame
+`P(u,u,v)=P(u,v,v)=0`, `P(v,v,v) proportional T_t`.  The two missing-colour
+coefficients then put `P(v,u,r)` and `P(u,u,r)` simultaneously in the Segre
+tangent at `T_t` and on the fully transverse `T_d` line, so both vanish.
+Their exact common kernel makes `r` proportional to `v`, contradicting the
+four independent dual physical rows.  Thus every rank-four/rank-eight
+profile with at least one deficient involved row is closed; only fully
+injective involved rows remain in this derivative cell.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
