@@ -5922,6 +5922,47 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Four Derivative-Rank-Eight Same-Missing-Colour Third-Row-Rank-Three Complete Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_SAME_MISSING_COLOUR_THIRD_ROW_RANK_THREE_COMPLETE_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "a11dc8a73e906e02",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on the normalized physical m=3 common-three-space full-sensor stratum with singleton span dimension three, joint rank four, all three root-root blocks nonzero, shared-derivative rank eight, common missing involved-row colour d, and row ranks (2,2,3)",
+        "S2BR gives the shared-factor derivative kernel span((x,y,0)), the isolated C row and column kappa e_d tensor e_d, and x_d=y_d=0",
+        "third-row rank three makes the third projection of K surjective with one-dimensional kernel, which is exactly the contained derivative syzygy",
+        "three graph lifts over e_d,e_s,e_t complement that syzygy in K and their derivative images form a basis U_d,U_s,U_t of the singleton space U",
+        "the complete coefficientwise target identity has unique source-tensor coefficients S_d,S_s,S_t in that U basis",
+        "first-root contraction by the common missing row kills the empty permanent and sends U_c to kappa e_d tensor e_c",
+        "independence of the three third-root coordinates therefore forces S_d=-kappa inverse T_d and S_s=S_t=0, reducing the complete correction to one source line",
+        "the remaining T_d root coefficient F_d is a trilinear polynomial; if nonzero, it and the two complementary coordinate products are simultaneously nonzero at one root evaluation over the infinite field",
+        "that evaluation makes the polarized source permanent a concise three-term diagonal tensor with all flattening ranks three",
+        "the three local maps from the order-three permanent tensor then have rank three and are invertible, which would preserve tensor rank four while the diagonal has tensor rank three",
+        "hence F_d=0, U_d=kappa e_d tensor e_d tensor e_d, and the empty permanent is exactly the binary diagonal table on complementary colours s,t",
+        "the third row is injective, so q_d,q_s,q_t are independent; q_d is a common permanent zero for the two involved row planes R and P",
+        "the joint row space is the injective H-transpose image of K dual and has dimension four",
+        "S2BF's exact intersecting-middle-plane binary obstruction implies that the three two-planes R,P,Q_0=span(q_s,q_t) are pairwise transverse in that four-space",
+        "adding arbitrary multiples of the common zero q_d to q_s and q_t preserves every binary table entry, so every shifted plane Q_lambda is also transverse to R and P",
+        "dimension forces R to meet the three-plane Q=span(q_d,q_s,q_t) in one line; if that line has a nonzero q_s or q_t coefficient, a suitable shift Q_lambda contains it, contradicting transversality",
+        "therefore q_d lies in R, and the symmetric argument forces q_d into P, contradicting R intersect P=0",
+        "the primary verifier checks the unique correction system, P3 flattenings and four-cube decomposition, no-rank-one slice certificate, binary kernel shifts, and four-space shift trap with SymPy",
+        "the independent no-import audit reverses tensor indexing and reconstructs the correction, sparse P3 decomposition, ranks, binary shifts, and all rational one- and two-supported shift masks with standard-library Fraction arithmetic",
+        "with S2BU-S2BW this closes the complete same-colour involved-row (2,2,q) profile for q=2,3; mixed and injective involved rows, other derivative ranks, other components and poles, higher orders, all-rank-drop, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_same_missing_colour_third_row_rank_three_complete_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_same_missing_colour_third_row_rank_three_complete_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_SAME_MISSING_COLOUR_THIRD_ROW_RANK_THREE_COMPLETE_EXCLUSION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds for the symbolic primary replay and independent standard-library Fraction audit",
+      "external_binaries": [],
+      "note": "The complete same-colour (2,2,3) rank-four/rank-eight cell is empty: the target identity reduces to an exact binary frame with a common zero, and arbitrary shifts along that zero contradict the exact intersecting-plane frame obstruction in the four-dimensional joint row space. Together with S2BU-S2BW, every same-colour (2,2,q) profile is closed. Wider stated branches remain open, and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

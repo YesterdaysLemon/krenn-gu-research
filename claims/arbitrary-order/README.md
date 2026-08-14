@@ -1055,8 +1055,23 @@ then forces `(0,e_s,0)` and `(e_t,0,0)` modulo the shared syzygy, while the
 missing-colour correction forces `(0,0,e_d)`.  These three vectors and the
 syzygy already span `K`, but their third projection has rank one, contradicting
 the assumed third-row rank two.  Thus the entire same-colour `(2,2,2)`
-rank-two-third-row profile is closed; third-row rank three and the other
-involved-row profiles remain.
+rank-two-third-row profile is closed; the rank-three continuation and the
+other involved-row profiles pass to the successor frontier.
+
+The
+[`third-row-rank-three complete exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_SAME_MISSING_COLOUR_THIRD_ROW_RANK_THREE_COMPLETE_EXCLUSION_THEOREM.md)
+closes the injective-third-row continuation.  The common missing involved
+row reduces the complete singleton correction to one source-target line.  A
+nonzero residual coefficient would turn the rank-four order-three permanent
+tensor into a concise rank-three diagonal tensor, so the empty permanent is
+forced to the exact binary table on the two complementary colours.  The
+third row's remaining colour is a common zero for both involved row planes.
+Shifting either binary third row by that common zero preserves the table;
+the exact intersecting-plane binary-frame obstruction forces every shifted
+plane transverse to both involved planes.  Four-space dimension then puts
+the common zero in both planes, a contradiction.  Thus the complete
+same-colour `(2,2,q)` involved-row profile is closed for `q=2,3`; mixed and
+injective involved-row profiles remain.
 
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
