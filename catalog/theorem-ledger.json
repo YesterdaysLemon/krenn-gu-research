@@ -5963,6 +5963,45 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Four Derivative-Rank-Eight One-Deficient-Involved-Row Third-Row-Rank-Three Complete Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_ONE_DEFICIENT_INVOLVED_ROW_THIRD_ROW_RANK_THREE_COMPLETE_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "141fffe5f6401e56",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on the normalized physical m=3 common-three-space full-sensor stratum with singleton span dimension three, joint rank four, all three root-root blocks nonzero, shared-derivative rank eight, third-row rank three, and at least one involved row of rank two",
+        "up to exchanging the first two roots, the deficient first row has coordinate kernel e_d star, x_d=0, and isolated derivative-block contraction (e_d star tensor id)C=kappa e_d",
+        "third-row injectivity makes ker(pr3 restricted to K) exactly the contained one-dimensional derivative syzygy",
+        "graph lifts over the three third-root coordinates give a basis of K modulo the syzygy and a derivative-image basis of U",
+        "first-d contraction of the complete coefficientwise target identity forces the singleton coefficients to S_d=-kappa inverse T_d and S_s=S_t=0",
+        "the pointwise P3 tensor-rank argument audited in S2BX forces the remaining T_d root coefficient to vanish",
+        "the physical empty permanent is therefore the exact binary diagonal table on the two colours complementary to d",
+        "in the mixed (2,3,3) profile, injectivity of the second row makes p_s,p_t independent, so restricting it to the complementary colours loses no binary-plane dimension",
+        "the injective third row supplies independent q_d,q_s,q_t, and q_d is a common permanent zero on R tensor P_0",
+        "the joint root-row space is the four-dimensional injective H-transpose image of K dual",
+        "S2BF's intersecting-middle-plane obstruction makes R, P_0, and Q_0=span(q_s,q_t) pairwise transverse",
+        "adding arbitrary multiples of q_d to q_s,q_t preserves the exact binary table, so every shifted Q_lambda remains transverse to R and P_0",
+        "dimension forces R and P_0 each to meet Q=span(q_d,q_s,q_t) in a line; any nonzero binary coefficient of such a line places it in one shifted plane",
+        "therefore both intersection lines equal span(q_d), contradicting R intersect P_0=0",
+        "root exchange gives the identical exclusion for the (3,2,3) mate",
+        "the primary verifier checks the one-row correction, injective mixed-row restrictions, complete binary table, kernel shifts, four-space line trap, and root exchange with SymPy",
+        "the independent no-import audit reverses row order and reconstructs the correction, row ranks, complete table, shifts, and every rational one- and two-supported line mask with standard-library Fraction arithmetic",
+        "together with S2BR and S2BX this closes every third-row-rank-three profile having a deficient involved row; fully injective (3,3,3), third-row-rank-two mixed/injective cells, wider components, poles, higher orders, all-rank-drop, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_one_deficient_involved_row_third_row_rank_three_complete_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_one_deficient_involved_row_third_row_rank_three_complete_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_ONE_DEFICIENT_INVOLVED_ROW_THIRD_ROW_RANK_THREE_COMPLETE_EXCLUSION_SELF_REVIEW_2026-08-13.md",
+      "expected_runtime": "seconds for the symbolic primary replay and independent standard-library Fraction audit",
+      "external_binaries": [],
+      "note": "Every rank-four/rank-eight point with third-row rank three and at least one deficient involved row is impossible. The new mixed (2,3,3) and (3,2,3) profiles inherit the exact one-line correction and shifted binary-frame contradiction without assuming a second missing row. Fully injective and third-row-rank-two wider cells remain open, and global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

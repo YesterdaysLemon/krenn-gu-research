@@ -1073,6 +1073,16 @@ the common zero in both planes, a contradiction.  Thus the complete
 same-colour `(2,2,q)` involved-row profile is closed for `q=2,3`; mixed and
 injective involved-row profiles remain.
 
+The successor
+[`one-deficient-row injective-third-row exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_ONE_DEFICIENT_INVOLVED_ROW_THIRD_ROW_RANK_THREE_COMPLETE_EXCLUSION_THEOREM.md)
+observes that the rank-three proof used no second missing row.  If the second
+row is injective, its two complementary target rows still form the required
+binary plane.  The same one-line correction, `P_3` rank obstruction, and
+shifted-plane contradiction exclude `(2,3,3)` and, by root exchange,
+`(3,2,3)`.  Thus the only third-row-rank-three profile left in the rank-four,
+derivative-rank-eight cell is the fully injective `(3,3,3)` profile; mixed
+third-row-rank-two and injective profiles remain.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
