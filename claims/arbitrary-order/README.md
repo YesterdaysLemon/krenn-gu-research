@@ -1032,6 +1032,20 @@ enters the same kernel.  This contradicts injectivity of the four-dimensional
 transpose.  Only the nonaligned support-one chart remains in this row
 profile, with S2BS already excluding one of its coordinate specializations.
 
+The successor
+[`nonaligned source atlas and pair-pole exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_SAME_MISSING_COLOUR_THIRD_ROW_SUPPORT_ONE_NONALIGNED_SOURCE_ATLAS_AND_PAIR_POLE_EXCLUSION_THEOREM.md)
+closes that last chart at the graph-extension level.  A deformed
+eight-product analysis classifies every local empty-target solution as one
+same-source two-plane family and forces `C_bar=0`, `w=e_s`, and a coordinate
+fourth lift.  These controls are exact and have generic sensor rank four, so
+the local cell is genuinely populated.  Their unique pair Cramer solution
+has denominators `x_t,y_t`; simultaneous cancellation of both residues would
+equate the distinct `x_s y_s` and `x_d y_d` target monomials.  At least one
+pair therefore has a divisor pole.  Together with the aligned exclusion,
+this closes the complete same-colour `(2,2,2)` graph cell with coordinate
+third-row kernel, while noncoordinate third-kernel support and the other row
+profiles remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
