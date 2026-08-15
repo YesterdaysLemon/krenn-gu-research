@@ -6482,6 +6482,41 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Four Derivative-Rank-Eight Fully-Injective Nonmonomial-Residual Zero-Pair-Free-Cell Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_NONMONOMIAL_RESIDUAL_ZERO_PAIR_FREE_CELL_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "0b1c4dd7c08ba9df",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion in the physical m=3 common-three-space full-sensor stratum with singleton span dimension three, joint rank four, shared-derivative rank eight, and fully injective (3,3,3) root rows",
+        "the actual residual block C is nonmonomial and outside A_1 tensor y+x tensor A_2; S2CL supplies coordinate w=e_t, the alternating physical three-space Q, injective perpendicular planes, and the exact corrected cube",
+        "S2CL already excludes correcting mixed zero pairs and identifies structural zeros exactly with correction-free coordinatewise-disjoint covector supports; the theorem assumes for contradiction that this structural locus is empty",
+        "S2BQ's root-torus alternatives are exhaustive: x coordinate, y coordinate, or both noncoordinate with C(alpha,beta)=lambda alpha_d beta_e on x-perp by y-perp",
+        "when x and y are both noncoordinate, a nonzero alpha in x-perp with alpha_d=0 cannot be singleton under the no-structural-zero premise and therefore has both complementary coordinates nonzero",
+        "the two corresponding coordinate evaluations are nonzero linear forms on y-perp; infinite-field line avoidance chooses beta nonzero on both, giving a correction-free mixed map containing two fully transverse target endpoints",
+        "after root exchange, the coordinate branch has x=e_s; absence of a structural zero forces y_s nonzero, so projection of y-perp to the two complementary coordinates is an isomorphism",
+        "the restricted actual residual block is a nonzero 2 by 2 base-field matrix D; absence of structural zeros forces both cross entries of D nonzero",
+        "if D has rank two, alpha is chosen outside four proper lines and the full kernel vector of alpha^T D supplies beta; if D has rank one, a base-field factorization D=u v^T gives a full left-kernel alpha and a full beta",
+        "both matrix ranks yield C(alpha,beta)=0, two nonzero complementary target coefficients, and zero third coefficient; S2CK's mixed-map transverse-secant obstruction excludes the resulting physical mixed map",
+        "root exchange covers the branch in which y rather than x is coordinate; no algebraic closure, generic-point promotion, degeneration, saturation, or numerical inference is used",
+        "the primary SymPy replay exhausts the finite support partitions, quotient-monomial walls, coordinate partner walls, root orientations, and symbolic rank-one/rank-two matrix constructions",
+        "the independent no-import audit uses standard-library Fraction arithmetic, reversed support and coordinate-wall traversals, independent rational fixtures, 26208 coordinate/root-exchanged constructions, and separate rank-one/rank-two matrix censuses",
+        "the scripts leave the S2BQ exhaustive atlas and S2CK analytic mixed-map obstruction to the written proof; the theorem leaves the finite structural-zero cells and every wider lower-rank/global obligation open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_nonmonomial_residual_zero_pair_free_cell_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_nonmonomial_residual_zero_pair_free_cell_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_NONMONOMIAL_RESIDUAL_ZERO_PAIR_FREE_CELL_EXCLUSION_SELF_REVIEW_2026-08-14.md",
+      "expected_runtime": "seconds for the symbolic primary replay and independent standard-library Fraction audit",
+      "external_binaries": [],
+      "note": "The zero-pair-free successor in the fully-injective rank-four/rank-eight actual-nonmonomial residual cell is empty. Combined with S2CL, every surviving point has between one and four structural mixed zero pairs. Those finite incidence cells and all wider lower-rank/global obligations remain open. Global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

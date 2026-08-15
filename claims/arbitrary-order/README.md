@@ -1282,9 +1282,22 @@ the `w`-diagonal.  S2CK's mixed-map lemma then leaves exactly one target
 colour, permanent symmetry collapses both perpendicular planes to one split
 two-source plane, and a retained uncorrected slice either contradicts its
 target coefficient or makes the actual `C` monomial.  Thus correcting zero
-pairs are impossible.  The finite structural-zero cells and the
-zero-pair-free nonmonomial cell remain open, as do the wider lower-rank and
-global obligations.
+pairs are impossible.  At this stage the finite structural-zero cells and
+the zero-pair-free nonmonomial cell remain open, as do the wider lower-rank
+and global obligations.
+
+The
+[`zero-pair-free-cell exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_NONMONOMIAL_RESIDUAL_ZERO_PAIR_FREE_CELL_EXCLUSION_THEOREM.md)
+then exhausts S2BQ's root-torus alternatives.  If both shared factors are
+noncoordinate, the tangent-quotient monomial and absence of a structural
+zero force one correction-free mixed map to contain two transverse targets.
+If either shared factor is coordinate, the residual restriction is a nonzero
+`2 x 2` matrix: absence of structural zeros makes both cross entries nonzero,
+and both its rank-one and rank-two forms again produce a correction-free
+two-target mixed map.  S2CK excludes every such transverse secant.  Hence a
+surviving actual nonmonomial point in this local cell has between one and four
+structural mixed zero pairs.  Those finite incidence cells remain open; no
+wider lower-rank or global obligation is discharged.
 
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
