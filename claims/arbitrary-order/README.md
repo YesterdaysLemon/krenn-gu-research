@@ -1267,6 +1267,25 @@ the fully-injective joint-rank-four/derivative-rank-eight cell.  No
 degeneration or atlas reduces an arbitrary nonmonomial residual to this
 branch, so those residuals and the global conjecture remain open.
 
+The arbitrary-nonmonomial successor
+[`complete-target zero-pair localization`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_NONMONOMIAL_RESIDUAL_COMPLETE_TARGET_ZERO_PAIR_LOCALIZATION_THEOREM.md)
+retains the actual residual block rather than replacing it by its tangent
+quotient.  With the coordinate shared factor `w=e_t`, the complete target is
+two rank-one slices on `C` and one rank-one slice on a nonzero representative
+of `C+(A_1 tensor y+x tensor A_2)`.  Contracting by `x^perp,y^perp` gives an
+exact corrected cube in the alternating physical three-space.  A mixed zero
+with zero correction is necessarily a disjoint-support structural pair; its
+complete projective locus is a union of at most four points because every
+positive-dimensional coordinate shore would violate S2CG's radical-line
+bound.  A nonzero correction first forces the tangent quotient of `C` onto
+the `w`-diagonal.  S2CK's mixed-map lemma then leaves exactly one target
+colour, permanent symmetry collapses both perpendicular planes to one split
+two-source plane, and a retained uncorrected slice either contradicts its
+target coefficient or makes the actual `C` monomial.  Thus correcting zero
+pairs are impossible.  The finite structural-zero cells and the
+zero-pair-free nonmonomial cell remain open, as do the wider lower-rank and
+global obligations.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

@@ -6445,6 +6445,43 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Four Derivative-Rank-Eight Fully-Injective Nonmonomial-Residual Complete-Target Zero-Pair Localization",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_NONMONOMIAL_RESIDUAL_COMPLETE_TARGET_ZERO_PAIR_LOCALIZATION_THEOREM.md",
+      "document_sha256_16": "6f3d00d3b3c447b1",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero reduction in the physical m=3 common-three-space full-sensor stratum with singleton span dimension three, joint rank four, shared-derivative rank eight, and fully injective (3,3,3) root rows",
+        "the shared derivative is D(a,b,c)=(a tensor y-x tensor b) tensor w+C tensor c with kernel span((x,y,0)) contained in K, and the actual residual block C is outside A_1 tensor y+x tensor A_2",
+        "the standing branch has actual C nonmonomial; S2BQ then makes w coordinate, and w=omega e_t is normalized by replacing x,y with omega x,omega y while leaving D, the kernel line, and C unchanged",
+        "third-row injectivity makes K a graph modulo the shared syzygy; its three derivative images give unique source tensors and the complete target gives two slices F^(k)=C S_k for k!=t plus one retained tangent-coset slice",
+        "kernel incidence identifies the perpendicular row planes R=rho(x-perp), P=pi(y-perp) inside Q=image theta=H^T(N-perp), and the full-sensor quotient determinant gives Alt(Q) nonzero",
+        "contracting by alpha in x-perp and beta in y-perp kills every tangent column and gives the exact cube M(r_alpha,p_beta)(q_k)=alpha_k beta_k T_k+C(alpha,beta)S_k",
+        "when C(alpha,beta)=0, a mixed zero pair has coordinatewise-disjoint supports; the displayed two coordinate-shore unions are an exhaustive equality, not a cover by generic charts",
+        "a positive-dimensional structural shore would inject a two-plane into the radical of a nonzero row, contradicting S2CG; therefore there are at most (3-|supp x|)+(3-|supp y|)<=4 underlying projective structural zero pairs",
+        "when C(alpha,beta) is nonzero, exact source recovery writes the empty permanent as three root tensors times T_0,T_1,T_2; the S2R rank-four versus rank-three argument forces one root tensor to vanish",
+        "a vanishing colour away from the coordinate colour t would force the actual C to be a diagonal monomial; hence the tangent quotient is forced onto E_tt and the corrected cube has B_t=0",
+        "S2CK applied after quotienting one target factor triple implies at most one bilinear form B_k survives; S2CG rules out zero or rank-one survivors, so the survivor is a perfect pairing",
+        "permanent symmetry forces both perpendicular planes to equal the kernel of the surviving target-coordinate covector; an orthogonal zero pair and S2CG make this a split two-source plane aligned with the surviving target",
+        "quotienting the retained k!=t complete slice by those target factor lines gives E_kk=mu_k C; zero mu_k is impossible and nonzero mu_k makes the actual C monomial, excluding every correcting zero including coordinate x or y walls",
+        "the primary SymPy replay checks graph coefficients and gauge, incidence/cube interfaces, the structural support union and shore census, the correcting rank fork, bilinear survivor, symmetry collapse, and final quotient sign",
+        "the independent no-import audit uses standard-library Fraction arithmetic, own permanent/rank/elimination routines, and reversed root, source, permutation, support, and pivot traversal; S2R, S2CG, S2CK, and source-support quotient geometry remain analytic theorem inputs",
+        "the theorem does not assert existence of a zero pair and leaves both the finite structural-zero cells and the zero-pair-free nonmonomial cell open; all wider lower-rank and global obligations remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_nonmonomial_residual_complete_target_zero_pair_localization.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_nonmonomial_residual_complete_target_zero_pair_localization.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_NONMONOMIAL_RESIDUAL_COMPLETE_TARGET_ZERO_PAIR_LOCALIZATION_SELF_REVIEW_2026-08-14.md",
+      "expected_runtime": "seconds for the symbolic primary replay and independent standard-library Fraction audit",
+      "external_binaries": [],
+      "note": "Every actual nonmonomial residual in the remaining fully-injective rank-four/rank-eight cell has an exact complete three-slice normal form. Correcting mixed zero pairs are impossible; structural mixed zeros form an exhaustive union of at most four projective points. Structural-zero and zero-pair-free successors remain open. Global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
