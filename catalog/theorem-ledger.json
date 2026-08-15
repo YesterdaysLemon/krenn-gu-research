@@ -6553,6 +6553,44 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Four Derivative-Rank-Eight Fully-Injective Nonmonomial-Residual Coordinate-Shared-Factor Structural-Zero Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_NONMONOMIAL_RESIDUAL_COORDINATE_SHARED_FACTOR_STRUCTURAL_ZERO_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "c7591264efb10b36",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion in the physical m=3 common-three-space full-sensor stratum with singleton span dimension three, joint rank four, shared-derivative rank eight, and fully injective (3,3,3) root rows",
+        "the actual residual block C is nonmonomial and outside A_1 tensor y+x tensor A_2; S2CL supplies coordinate w=e_t, the alternating physical three-space Q, injective perpendicular planes, complete retained faces, and the corrected cube",
+        "S2CM excludes the zero-pair-free successor and S2CN excludes every structural point with both shared factors noncoordinate, so after first/second-root exchange the remaining scope is x=e_s with at least one structural zero",
+        "first/second-root exchange carries the actual residual block to -C transpose up to the harmless derivative-image sign and preserves nonmonomiality, tangent-plane exclusion, complete faces, and structural-zero conditions",
+        "when y_s is nonzero, projection of y-perp to the two complementary coordinates is an isomorphism and the restricted residual is an exact nonzero 2 by 2 matrix; structural pairs are exactly its cross-entry zeros",
+        "the exactly-one-cross-zero atlas is exhausted by independent conjugate rows and dependent pure rows; nonzero diagonal entries force shared target factors, while the two one-zero diagonal boundaries shift to the S2CK zero-corner rectangle obstruction",
+        "when both cross entries vanish, a nonzero weighted diagonal difference and S2CI's two-cross incidence split exclude the two-nonzero-diagonal case; a rank-one diagonal block is excluded by a target-factor quotient and one retained complete face",
+        "if y_s=0 and y is noncoordinate on the complementary colours, the map C(-,e_s) is nonzero by the radical-line bound and its kernel gives the structural pair",
+        "an independent kernel pair or a full dependent kernel puts two transverse targets in one physical-source factor slab; a singleton dependent kernel is aligned with q_s by exact symmetry, after which the retained s-face is impossible even when s=t",
+        "if y=e_r is coordinate, the complementary 2 by 2 residual matrix is exhausted by rank one, rank two with nonzero corner, and rank two with zero corner; radical-line conditions retain every entry boundary",
+        "rank one and rank two with nonzero corner produce two structural pairs and a nonzero pure T_k weighted diagonal combination; S2CI aligns its source slab and a retained colour h in {s,r} different from t gives a target contradiction",
+        "on the last rank-two zero-corner boundary, an independent zero pair first forces R=P=ker(lambda_k) before a full quotient is taken",
+        "on the dependent zero-corner boundary, radical uniqueness gives a common plane and a rank-one pure-row pencil; missing-source and full-support forks are excluded using only the retained diagonal coefficient P_(h,h,h)-T_h and the appropriate one-source quotient",
+        "the proof explicitly retracts earlier claims that one fixed source projection kills a whole root slice; no such whole-slice step, localization, degeneration, saturation, numerical inference, or generic-to-pointwise promotion remains",
+        "the primary SymPy replay checks all six colour permutations, both root orientations, the 8+3 cross-zero atlas, retained quotient signs, the noncoordinate y_s=0 forks, every coordinate-y matrix rank, and the repaired pure-row pencil",
+        "the independent no-import audit uses standard-library Fraction arithmetic, reversed root/colour/matrix/retained-face traversal, its own bilinear and rank routines, 5625 exchange fixtures, 580 admissible coordinate matrices, and separate repaired-pencil quotient checks",
+        "the theorem closes the fully-injective rank-four/rank-eight actual-nonmonomial residual branch only; with the earlier monomial and row-profile chains it closes the complete joint-rank-four/derivative-rank-eight cell, while all wider lower-rank/global obligations remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_nonmonomial_residual_coordinate_shared_factor_structural_zero_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_nonmonomial_residual_coordinate_shared_factor_structural_zero_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_NONMONOMIAL_RESIDUAL_COORDINATE_SHARED_FACTOR_STRUCTURAL_ZERO_EXCLUSION_SELF_REVIEW_2026-08-14.md",
+      "expected_runtime": "seconds for the symbolic primary replay and independent standard-library Fraction audit",
+      "external_binaries": [],
+      "note": "Every coordinate-shared-factor structural-zero point in the fully-injective joint-rank-four/derivative-rank-eight actual-nonmonomial residual branch is impossible. The exact 2 by 2 cross-zero atlas, the noncoordinate y_s=0 source split, and the coordinate-y matrix-rank/pure-pencil census exhaust the branch. With S2CL-S2CN this closes all actual-nonmonomial residuals; with the monomial and row-profile chains it closes the complete joint-rank-four/derivative-rank-eight cell. Global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

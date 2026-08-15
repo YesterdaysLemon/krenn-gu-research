@@ -1311,6 +1311,21 @@ an aligned target quotient, and a retained complete face makes the actual
 residual block monomial.  Thus only structural cells with coordinate `x` or
 coordinate `y` remain in this fully-injective local branch.
 
+The final
+[`coordinate-shared-factor structural-zero exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_NONMONOMIAL_RESIDUAL_COORDINATE_SHARED_FACTOR_STRUCTURAL_ZERO_EXCLUSION_THEOREM.md)
+exhausts those cells.  After root exchange take `x=e_s`.  The wall `y_s!=0`
+is an exact `2 x 2` residual restriction whose one-cross and two-cross zero
+patterns reduce to transverse target-factor contradictions or a retained face
+that makes the actual residual block monomial.  On `y_s=0`, noncoordinate `y`
+is excluded by the structural map's independent/dependent zero-pair split.
+Coordinate `y=e_r` has a complete rank-one/rank-two matrix census; the last
+dependent pure-row pencil is closed coefficientwise using only one retained
+diagonal entry.  Together with the monomial endpoint chain and S2CL--S2CN,
+this closes the complete fully-injective joint-rank-four/derivative-rank-eight
+`(3,3,3)` residual profile.  Lower-joint-rank and derivative-rank-seven cells,
+other components and poles, higher orders, all-rank drop, and global
+Krenn--Gu remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
