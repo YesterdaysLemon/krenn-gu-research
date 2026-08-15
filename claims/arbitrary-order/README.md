@@ -1188,6 +1188,27 @@ quotient cannot be excluded without the complete faces and affine
 tangent-coset flattening.  The remaining plane-incidence/pivot atlas, the
 diagonal endpoints themselves, and every nonmonomial residual remain open.
 
+The parallel nonmonomial successor
+[`canonical-binomial residual exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_CANONICAL_BINOMIAL_RESIDUAL_EXCLUSION_THEOREM.md)
+closes one exact target-stabilizer orbit.  When the three shared factors lie
+on one coordinate line and the actual residual block is a nonzero binomial
+on the two complementary diagonal entries, normalize
+`x=y=w=e_2` and `C=kappa_0 E_00+kappa_1 E_11`.  The contained derivative
+kernel identifies the physical third-row space with the full-sensor
+three-space and forces its alternating separated tensor to be nonzero.  The
+complete target supplies two cross-zero row pairs and a weighted difference
+of the two diagonal maps of rank two.  A denominator-free support lemma says
+that every independent mixed zero pair is a conjugate pair in a split
+two-source plane.  Its radical-line corollary handles the dependent profiles;
+for two diagonal planes, three projective flag types on each side give an
+exhaustive `3 x 3` cover.  Six flags fail by incompatible pure/two-supported
+intersection lines, two by a common target image line, and the generic flag
+by the S2AL tangent-line separation lemma.  The proof retains every
+projective boundary and does not specialize the target cross-ratio.  It does
+not force an arbitrary nonmonomial residual into this orbit and supplies no
+target-preserving degeneration theorem.  All other nonmonomial residuals and
+the diagonal monomial coordinate endpoints remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

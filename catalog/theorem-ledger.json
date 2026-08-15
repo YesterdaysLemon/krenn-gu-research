@@ -6265,6 +6265,43 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Four Derivative-Rank-Eight Fully-Injective Canonical-Binomial Residual Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_CANONICAL_BINOMIAL_RESIDUAL_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "8ef728ffb328a2d0",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on the normalized physical m=3 common-three-space full-sensor stratum with singleton span dimension three, joint rank four, shared-derivative rank eight, and fully injective (3,3,3) root rows",
+        "the physical incidence is K=image H=D^(-1)(U), dim K=4, D(K)=U, and the derivative kernel is contained in K",
+        "up to the six-factor GHZ target stabilizer, the three shared factors lie on one coordinate line and are normalized as x=y=w=e_2",
+        "the actual residual block is the complementary diagonal binomial C=kappa_0 e_0 tensor e_0+kappa_1 e_1 tensor e_1 with kappa_0 kappa_1 nonzero; this is stronger than a statement about its tangent-quotient class",
+        "the induced quotient maps identify the injective third-row space Q with H^T((ker D)^perp), and the full-sensor singleton determinant gives Alt(Q) nonzero",
+        "canonical derivative annihilators applied to the complete target identity give M_(r_0,p_1)|Q=M_(r_1,p_0)|Q=0 and a weighted difference of the two diagonal maps of rank two onto the transverse target plane",
+        "an exact support split proves that every independent mixed zero pair in Q is a conjugate pair spanning a split two-source plane; no genericity, division, or solver is used",
+        "the zero-pair classification gives a one-dimensional radical bound and makes intersections of distinct zero-pair planes pure source lines",
+        "permanent symmetry confines the two diagonal row-plane intersection to span(q_2); in the two-plane profile the diagonal maps have the opposite planes as kernels and independent image lines",
+        "the ordered row lines relative to the common line have the exhaustive projective types R, P, and G, giving nine flag pairs with every boundary retained",
+        "six flag pairs contradict simultaneous pure and two-supported intersection lines, RP and PR make both diagonal images share one tensor line, and scalar-correct GG gives a rank-two square image span(T_0,T_1) contrary to S2AL tangent-line separation",
+        "the target cross-ratio is left unfixed and no projective boundary or coefficient ratio is specialized",
+        "the radical bound and conjugate-square identity separately exclude the (1,2), (2,1), and (1,1) diagonal-plane profiles",
+        "the primary SymPy replay checks the canonical derivative, complete target annihilators, alternating determinant interface, all source-support formulas, the nine-flag table, target cross-ratio determinant, scalar-correct GG identity, and dependent profiles",
+        "the independent no-import audit uses standard-library Fraction arithmetic, reversed traversal and permutation order, and separate derivative, permanent, rank, plane-intersection, support, flag, GG, and dependent-profile checks",
+        "the exclusion applies only to the common-coordinate complementary-diagonal binomial orbit; all other nonmonomial residuals, the diagonal monomial coordinate endpoints, wider lower-rank cells, components, poles, higher orders, all-rank-drop, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_canonical_binomial_residual_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_canonical_binomial_residual_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_CANONICAL_BINOMIAL_RESIDUAL_EXCLUSION_SELF_REVIEW_2026-08-14.md",
+      "expected_runtime": "seconds for the symbolic primary replay and independent standard-library Fraction audit",
+      "external_binaries": [],
+      "note": "The exact common-coordinate complementary-diagonal binomial nonmonomial orbit is impossible. A full-sensor alternating-three-space bridge, two complete-target zero pairs, a zero-pair support theorem, and an exhaustive nine-flag cover close this orbit without a solver or localization. No general nonmonomial atlas or degeneration bridge is claimed. Global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
