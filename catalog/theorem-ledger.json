@@ -6371,6 +6371,44 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Four Derivative-Rank-Eight Fully-Injective Diagonal-Monomial Residual Coordinate-Endpoint Complete One-Visible-Wall Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_DIAGONAL_MONOMIAL_RESIDUAL_COORDINATE_ENDPOINT_COMPLETE_ONE_VISIBLE_WALL_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "f1a3abfce349166b",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on either surviving diagonal monomial coordinate endpoint in the physical m=3 common-three-space full-sensor stratum with singleton span dimension three, joint rank four, shared-derivative rank eight, and fully injective (3,3,3) root rows",
+        "the endpoint is normalized as C=lambda e_2 tensor e_2 and w=e_0 with lambda nonzero, kernel span((x,y,0)) contained in K, and x,y nonzero and not proportional to e_2",
+        "the scope is the exact exclusive-or of S2CF's T_0 and T_1 nonexceptional visibility predicates; exhaustive Boolean enumeration gives twenty ordered projective support masks among the six allowed nonempty supports",
+        "S2CI excludes two same-coordinate masks; four coordinate/two-support masks put an injective two-plane in the radical of one nonzero row, contradicting the general S2CG radical-line bound in the physical Alt(Q)-nonzero three-space",
+        "explicit bases of x-perp and y-perp give one visible corner and two cross-zero pairs on each of the remaining fourteen masks, with every boundary and both root orientations retained",
+        "S2CG's zero-pair theorem gives an exhaustive split-three-source/common-split-plane dichotomy including every dependent and independent cross-pair combination",
+        "on all seven T_0-only cross masks, q_1 supplies a T_0 factor line in either incidence fork, so the triple quotient kills P_111 while the complete recovered face requires the fully transverse nonzero T_1",
+        "on six T_1-only masks with one e_0 shore, exact combinations of P_200,P_220 and their reversed P_020,P_220 analogues cancel the tangent terms and recover quotient source values 0,0,-lambda^-1 T_2",
+        "the unsliced (0,0,0) coefficient then makes the nonzero independent quotient classes of T_0,T_2 proportional; both root orientations are written explicitly without moving the normalized w line",
+        "on the final support cell supp(x)=supp(y)={0,2}, the corrected cube gives bar(S_0)=-x_2 y_2/(lambda x_0 y_0) bar(T_0), bar(S_1)=0, and bar(S_2)=-lambda^-1 bar(T_2)",
+        "quotienting the entire unsliced root matrix separates the T_0,T_2 classes and forces H_2=0 and E_00=r(C+H_0)",
+        "H_2=0 either has both lift entries zero or makes them common multiples of x,y; the legitimate basis shear k_2 to k_2-t(x,y,0) gauges only those entries to zero, retains the third entry e_2, and leaves the dual q_c fixed",
+        "S2CF's row formula and injectivity then give R=P=span(q_0,q_1); reclassifying the two cross-zero pairs makes this a split two-source plane and contradicts the visible P_111=T_1",
+        "all divisions use only lambda or coordinates nonzero by the named support cell; no solver, generic specialization, limit, saturation, or hidden localization enters",
+        "the primary SymPy replay checks the 2+4+7+6+1 support partition, every covector basis and cube cell, radical ranks, retained indices, both source-recovery orientations, final matrix separation, graph gauge, and common-plane rank interface",
+        "the independent no-import audit uses standard-library Fraction arithmetic, reversed support, source, permutation, and pivot traversal, and separate tensor, quotient, rank, source-recovery, and gauge implementations",
+        "the exclusion closes only the complete one-visible wall; the two-visible diagonal cell, every other nonmonomial residual, wider cells, components, poles, higher orders, all-rank drop, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_diagonal_monomial_residual_coordinate_endpoint_complete_one_visible_wall_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_diagonal_monomial_residual_coordinate_endpoint_complete_one_visible_wall_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_DIAGONAL_MONOMIAL_RESIDUAL_COORDINATE_ENDPOINT_COMPLETE_ONE_VISIBLE_WALL_EXCLUSION_SELF_REVIEW_2026-08-14.md",
+      "expected_runtime": "seconds for the symbolic primary replay and independent standard-library Fraction audit",
+      "external_binaries": [],
+      "note": "All twenty ordered one-visible support masks at the diagonal monomial coordinate endpoints are impossible. The exhaustive atlas combines S2CI, four radical-shore contradictions, thirteen recovered-face/source-quotient cross-pair exclusions, and one final full-root-matrix graph-gauge contradiction. Only the two-visible diagonal cell remains in this monomial branch. Global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

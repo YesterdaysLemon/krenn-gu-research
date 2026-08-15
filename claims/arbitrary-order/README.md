@@ -1238,6 +1238,20 @@ images of `T_0` and `T_2` proportional.  No general one-visible support pair
 is normalized to these cells.  The other one-visible patterns and the
 two-visible open cell remain, so the diagonal endpoints stay open.
 
+The complete successor
+[`one-visible-wall exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_DIAGONAL_MONOMIAL_RESIDUAL_COORDINATE_ENDPOINT_COMPLETE_ONE_VISIBLE_WALL_EXCLUSION_THEOREM.md)
+exhausts all twenty ordered support masks.  Beyond the two S2CI cells, four
+coordinate/two-support masks create forbidden two-dimensional radical
+shores.  The other fourteen have explicit bases with two cross-zero pairs:
+all seven `T_0`-only cells contradict `P_111=T_1`, six `T_1`-only cells with
+one coordinate shore contradict the unsliced target after exact source
+recovery, and the last `{0,2}` by `{0,2}` cell requires the whole unsliced
+root matrix.  There coefficient separation forces `H_2=0`; graph gauge then
+puts both perpendicular planes in `span(q_0,q_1)`, where zero-pair geometry
+makes their visible `T_1` corner vanish.  Thus the complete zero-visible and
+one-visible walls are empty.  Only the two-visible cell remains at either
+diagonal monomial endpoint; other nonmonomial residuals remain separate.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
