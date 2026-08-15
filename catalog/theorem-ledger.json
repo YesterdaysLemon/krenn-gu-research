@@ -6517,6 +6517,42 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Four Derivative-Rank-Eight Fully-Injective Nonmonomial-Residual Noncoordinate-Shared-Factors Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_NONMONOMIAL_RESIDUAL_NONCOORDINATE_SHARED_FACTORS_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "21a724a8445c7dea",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion in the physical m=3 common-three-space full-sensor stratum with singleton span dimension three, joint rank four, shared-derivative rank eight, and fully injective (3,3,3) root rows",
+        "the actual residual block C is nonmonomial and outside A_1 tensor y+x tensor A_2; S2CL supplies coordinate w=e_t, an alternating physical three-space Q, injective perpendicular planes R and P, and the exact corrected cube",
+        "S2CM excludes the zero-pair-free successor, so the standing point has a structural mixed zero pair; the theorem treats exactly the S2BQ branch in which both shared factors x and y are noncoordinate",
+        "S2BQ gives C(alpha,beta)=lambda alpha_d beta_e on x-perp by y-perp with lambda nonzero; S2CK forces the kernel line of ev_d restricted to x-perp to be the singleton e_a, hence a differs from d and support(x) is the complement of a",
+        "the singleton row gives the exact one-sided table M(r_a,p_b)|Q=b_a lambda_a T_a; a zero partner and a complementary row exist because y is noncoordinate",
+        "if the structural pair is independent, S2CG makes it a conjugate pair spanning a split two-source plane; the complementary row gives either the same split plane equal to ker(lambda_a) or a split three-source Q, with all target-factor alignments retained",
+        "in either independent incidence alternative, quotienting the three T_a factor lines kills a complete retained colour slice, while the corrected cube recovers Sbar=-c Tbar with c nonzero; the retained target equation forces the actual C to be a diagonal monomial",
+        "if the structural pair is dependent, S2CG makes its common row pure; the nonzero one-sided map fixes at least one source projection of Q to a T_a factor line, including the one-sided projection boundary",
+        "modulo the resulting one-factor source slab, both complementary restricted coordinate bilinear forms are nonzero scalar multiples of Cbar; their proportionality forces support(x)=support(y)=complement(a), without assuming a differs from t",
+        "only after that support conclusion, p_a is a valid complement in P; the full complementary row in R and p_a form a second structural zero, while the original pure row and p_a give the visible lambda_a T_a corner",
+        "S2CI's exhaustive two-cross incidence dichotomy reduces the dependent branch to a split three-source Q or coincident split planes R=P=ker(lambda_a); the same retained-face quotient again forces the actual C monomial",
+        "for every relation between a and the coordinate colour t, one chooses a retained colour in complement(a) different from t; no silent a!=t assumption, localization, degeneration, saturation, numerical inference, or algebraic-closure step is used",
+        "the primary SymPy replay checks the singleton kernel gate, exact one-sided tables, independent split-source fixtures, one-factor slab proportionality, support recovery, manufactured opposite corner, S2CI interfaces, and retained-face sign",
+        "the independent no-import audit uses standard-library Fraction arithmetic, reversed singleton, source, colour, and retained-face traversal, separate permanent/rank routines, 72 exact one-sided tables, 18 slab fixtures, 12 support-form checks, and all 12 valid retained-face choices",
+        "the scripts leave S2BQ exhaustiveness and the S2CG, S2CI, and S2CK analytic geometric obstructions to the written proof; the theorem leaves coordinate-x or coordinate-y structural cells and every wider lower-rank/global obligation open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_nonmonomial_residual_noncoordinate_shared_factors_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_nonmonomial_residual_noncoordinate_shared_factors_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_NONMONOMIAL_RESIDUAL_NONCOORDINATE_SHARED_FACTORS_EXCLUSION_SELF_REVIEW_2026-08-14.md",
+      "expected_runtime": "seconds for the symbolic primary replay and independent standard-library Fraction audit",
+      "external_binaries": [],
+      "note": "Every structural-zero point with both shared factors noncoordinate in the fully-injective rank-four/rank-eight actual-nonmonomial residual cell is impossible. Independent pairs reduce directly to aligned split-source incidence; dependent pairs produce a one-factor slab and a second structural corner before the same incidence reduction. Only coordinate-x or coordinate-y structural cells remain in this local branch. Global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

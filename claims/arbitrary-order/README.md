@@ -1299,6 +1299,18 @@ surviving actual nonmonomial point in this local cell has between one and four
 structural mixed zero pairs.  Those finite incidence cells remain open; no
 wider lower-rank or global obligation is discharged.
 
+The structural successor
+[`noncoordinate-shared-factors exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_NONMONOMIAL_RESIDUAL_NONCOORDINATE_SHARED_FACTORS_EXCLUSION_THEOREM.md)
+then removes every point with both `x` and `y` noncoordinate.  S2CK first
+forces one structural shore to be coordinate, giving a one-sided pure-target
+table.  Independent zero partners produce an aligned split plane or split
+three-space.  A dependent partner is pure; a one-factor source slab forces
+both shared factors onto the same complementary two-support, which creates a
+second structural corner.  S2CI's two-cross dichotomy reduces both cases to
+an aligned target quotient, and a retained complete face makes the actual
+residual block monomial.  Thus only structural cells with coordinate `x` or
+coordinate `y` remain in this fully-injective local branch.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
