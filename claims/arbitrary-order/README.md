@@ -1224,6 +1224,20 @@ wall without a chart atlas.  The one-visible walls and two-visible open cell
 still require the retained faces and tangent-coset flattening, so neither
 diagonal endpoint is yet closed.
 
+The next diagonal successor
+[`same-coordinate one-visible-wall exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_DIAGONAL_MONOMIAL_RESIDUAL_COORDINATE_ENDPOINT_SAME_COORDINATE_ONE_VISIBLE_WALL_EXCLUSION_THEOREM.md)
+closes the two projective support cells `x=y=e_0` and `x=y=e_1`.  In each
+cell the corrected cube supplies two cross-zero pairs and one visible pure
+target.  S2CG's zero-pair theorem reduces their two involved planes to a
+split three-source space or one common split two-source plane.  For
+`x=y=e_1`, the complete recovered `P_111=T_1` face contradicts both
+incidence alternatives.  For `x=y=e_0`, exact source recovery and the
+unsliced `(0,0,0)` coefficient survive the tangent slots forgotten by the
+cube; quotienting by the `T_1` factor lines would make the independent
+images of `T_0` and `T_2` proportional.  No general one-visible support pair
+is normalized to these cells.  The other one-visible patterns and the
+two-visible open cell remain, so the diagonal endpoints stay open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

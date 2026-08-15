@@ -6336,6 +6336,41 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Four Derivative-Rank-Eight Fully-Injective Diagonal-Monomial Residual Coordinate-Endpoint Same-Coordinate One-Visible-Wall Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_DIAGONAL_MONOMIAL_RESIDUAL_COORDINATE_ENDPOINT_SAME_COORDINATE_ONE_VISIBLE_WALL_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "127aa4c6205f1ecb",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on the normalized physical m=3 common-three-space full-sensor stratum with singleton span dimension three, joint rank four, shared-derivative rank eight, and fully injective (3,3,3) root rows",
+        "the residual is a surviving diagonal monomial coordinate endpoint normalized as C=lambda e_2 tensor e_2 and w=e_0 with lambda nonzero, with kernel span((x,y,0)) contained in K and x,y not proportional to e_2",
+        "the claimed scope is exactly the two projective support cells x proportional y proportional e_0 and x proportional y proportional e_1; no target-stabilizer reduction of a general one-visible support pair is assumed",
+        "S2CF's corrected cube supplies two cross-zero pairs and one visible pure target map inside Q on each cell, while its complete recovered k=1,2 faces and unsliced k=0 equation remain available",
+        "kernel incidence and the full-sensor quotient determinant identify Q with H^T((ker D)^perp) and give Alt(Q) nonzero",
+        "S2CG's coordinate-free zero-pair theorem classifies each independent cross pair as a conjugate pair spanning a split two-source plane, while its square-zero branch makes each dependent pair a pure source line",
+        "the exhaustive two-pair incidence split gives either a split three-source Q or coincident involved planes R=P equal to one split two-source plane; every dependent and independent combination is retained",
+        "on x=y=e_1, the split-three-source fork kills P_111 in the triple quotient by the T_0 factor lines, while the equal-plane fork identifies H=span(q_1,q_2) and eight retained face zeros force r_1,p_1,q_1 to miss one common source; both contradict P_111=T_1",
+        "on x=y=e_0, the same incidence split makes P_000 vanish modulo the T_1 factor lines",
+        "because x_2=y_2=0, every tangent tensor H_c has zero (2,2) entry and the complete target recovers S_0=lambda^-1 P_220, S_1=lambda^-1 P_221, and S_2=lambda^-1(P_222-T_2)",
+        "the recovered sources have quotient values 0,0,-lambda^-1 T_2; the exact unsliced (0,0,0) coefficient then makes the nonzero independent quotient images of T_0 and T_2 proportional, a contradiction",
+        "the primary SymPy replay checks both corrected cubes, conjugate/dependent zero-pair identities, every incidence fork interface, all eight complementary retained-face indices, the triple quotients, source recovery, and the unsliced sign",
+        "the independent no-import audit uses standard-library Fraction arithmetic, reversed source, permutation, and pivot traversal, its own tensor, quotient, rank, and incidence routines, and separate exact recovered-face and unsliced fixtures",
+        "the exclusion closes only x=y=e_0 and x=y=e_1; every other one-visible support pattern, the two-visible open cell, all other nonmonomial residuals, wider cells, components, poles, higher orders, all-rank drop, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_diagonal_monomial_residual_coordinate_endpoint_same_coordinate_one_visible_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_diagonal_monomial_residual_coordinate_endpoint_same_coordinate_one_visible_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_DIAGONAL_MONOMIAL_RESIDUAL_COORDINATE_ENDPOINT_SAME_COORDINATE_ONE_VISIBLE_WALL_EXCLUSION_SELF_REVIEW_2026-08-14.md",
+      "expected_runtime": "seconds for the symbolic primary replay and independent standard-library Fraction audit",
+      "external_binaries": [],
+      "note": "The exact same-coordinate one-visible support cells x=y=e_0 and x=y=e_1 are impossible. Two cross-zero pairs reduce to a split-three-source/common-split-plane dichotomy; the complementary cell falls to a complete recovered face and the aligned cell to exact source recovery plus the unsliced target quotient. Other one-visible and all two-visible cells remain open. Global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
