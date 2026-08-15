@@ -1209,6 +1209,21 @@ not force an arbitrary nonmonomial residual into this orbit and supplies no
 target-preserving degeneration theorem.  All other nonmonomial residuals and
 the diagonal monomial coordinate endpoints remain open.
 
+The diagonal successor
+[`coordinate-endpoint zero-visible-wall exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_DIAGONAL_MONOMIAL_RESIDUAL_COORDINATE_ENDPOINT_ZERO_VISIBLE_WALL_EXCLUSION_THEOREM.md)
+feeds S2CG's general radical-line consequence back into S2CF.  Simultaneous
+failure of both target-visibility conditions forces the shared factors onto
+the crossed coordinate pairs `(x,y)=(e_0,e_1)` or `(e_1,e_0)`.  In the first
+orientation, `alpha=e_1 in x^perp` and every `beta in y^perp` kill both the
+target and corrected-source terms of the complete contracted cube; the
+exchanged orientation is identical.  Thus the injective two-plane
+`p(y^perp)` would lie in the radical of one nonzero row inside `Q`.  The
+kernel-incidence/full-sensor determinant gives `Alt(Q)!=0`, and S2CG bounds
+every such radical by one dimension.  This excludes the entire zero-visible
+wall without a chart atlas.  The one-visible walls and two-visible open cell
+still require the retained faces and tangent-coset flattening, so neither
+diagonal endpoint is yet closed.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

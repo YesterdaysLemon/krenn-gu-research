@@ -6302,6 +6302,40 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Four Derivative-Rank-Eight Fully-Injective Diagonal-Monomial Residual Coordinate-Endpoint Zero-Visible-Wall Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_DIAGONAL_MONOMIAL_RESIDUAL_COORDINATE_ENDPOINT_ZERO_VISIBLE_WALL_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "4b86babd5cfd2e5a",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on either surviving diagonal monomial coordinate endpoint in the physical m=3 common-three-space full-sensor stratum with singleton span dimension three, joint rank four, shared-derivative rank eight, and fully injective (3,3,3) root rows",
+        "after the S2CF normalization C=lambda e_2 tensor e_2 and w=e_0 with lambda nonzero, the derivative kernel is N=span((x,y,0)) contained in K, with x and y nonzero and neither proportional to e_2",
+        "S2CF's corrected cube is used only as a proved consequence of the complete target: per(r_alpha,p_beta,q_k)=alpha_k beta_k T_k+lambda alpha_2 beta_2 S_k for alpha in x-perp and beta in y-perp",
+        "the exact S2CF visibility census says T_0 is visible outside the exceptional cell exactly when x and y are not proportional to e_0 and at least one of x_1,y_1 is nonzero, with the root-exchanged condition for T_1",
+        "simultaneous failure of both visibility conditions has the exhaustive support solutions (x,y)=(e_0,e_1) and (e_1,e_0) up to nonzero scalars; the alternatives forcing both factors onto e_2 are excluded upstream",
+        "kernel incidence gives Q=image theta=H^T(N^perp): dim N^perp=8, dim K^perp=5, and third-row injectivity makes both spaces three-dimensional",
+        "the induced quotient maps H_bar:W to K/N and D_bar:K/N to U transfer the nonzero full-sensor singleton determinant to the separated alternating tensor Alt(Q), so Alt(Q) is nonzero",
+        "S2CG Corollary 2 is a coordinate-free theorem for every three-space Q with Alt(Q) nonzero: the radical of any nonzero row has dimension at most one; the canonical-binomial residual excluded by S2CG is not assumed",
+        "for (x,y)=(e_0,e_1), alpha=e_1 and every beta in y-perp annihilate all three target terms and the correction term in the cube; the exchanged case uses alpha=e_0",
+        "fully injective involved rows make r_alpha nonzero and p(y-perp) a two-plane inside Q, so the cube creates a radical shore of dimension two and contradicts the S2CG bound",
+        "the primary SymPy replay exhausts all 36 allowed ordered support-mask pairs, checks all twelve cube coefficients in both crossed orientations, and reconstructs the rank-eight kernel, rank-four incidence, three-space equality, alternating determinant, and basis-change interface",
+        "the independent no-import audit uses standard-library Fraction arithmetic, reversed support, root, source, permutation, and pivot traversal, its own rank and span routines, independent graph fixtures, and a separate twelve-cell cube loop",
+        "the exclusion closes only the zero-visible wall; both one-visible walls, the two-visible open cell, all other nonmonomial residuals, wider lower-rank cells, components, poles, higher orders, all-rank-drop, and global resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_diagonal_monomial_residual_coordinate_endpoint_zero_visible_wall_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_diagonal_monomial_residual_coordinate_endpoint_zero_visible_wall_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_DIAGONAL_MONOMIAL_RESIDUAL_COORDINATE_ENDPOINT_ZERO_VISIBLE_WALL_EXCLUSION_SELF_REVIEW_2026-08-14.md",
+      "expected_runtime": "seconds for the symbolic primary replay and independent standard-library Fraction audit",
+      "external_binaries": [],
+      "note": "The complete zero-visible support wall at both diagonal monomial coordinate endpoints is impossible. The exact visibility intersection creates a two-dimensional radical shore inside the physical full-sensor alternating three-space, contradicting the general S2CG radical-line bound. One-visible and two-visible diagonal cells remain open, and neither endpoint is closed. Global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
