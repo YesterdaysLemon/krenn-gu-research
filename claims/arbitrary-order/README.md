@@ -1252,6 +1252,21 @@ makes their visible `T_1` corner vanish.  Thus the complete zero-visible and
 one-visible walls are empty.  Only the two-visible cell remains at either
 diagonal monomial endpoint; other nonmonomial residuals remain separate.
 
+The final diagonal successor
+[`two-visible-cell exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_DIAGONAL_MONOMIAL_RESIDUAL_COORDINATE_ENDPOINT_TWO_VISIBLE_CELL_EXCLUSION_THEOREM.md)
+exhausts its exact fourteen-mask support atlas.  On the four central masks,
+one correction-free mixed map contains both transverse target tensors; a
+source-support and Segre-tangent classification proves that no polarized
+split-cubic mixed map can contain such a transverse secant.  Each of the ten
+boundary masks has a structural zero corner and two correction-free rank-one
+corners on the transverse target lines.  S2CG's zero-pair theorem and a
+coordinate-free zero-corner rectangle obstruction exclude all ten.  Hence
+both diagonal monomial coordinate endpoints are empty; together with the
+off-diagonal endpoint exclusion, this closes the monomial-residual branch of
+the fully-injective joint-rank-four/derivative-rank-eight cell.  No
+degeneration or atlas reduces an arbitrary nonmonomial residual to this
+branch, so those residuals and the global conjecture remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,

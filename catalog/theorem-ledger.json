@@ -6409,6 +6409,42 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Balanced m=3 Common-Three-Space Joint-Rank-Four Derivative-Rank-Eight Fully-Injective Diagonal-Monomial Residual Coordinate-Endpoint Two-Visible-Cell Exclusion",
+      "document": "claims/arbitrary-order/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_DIAGONAL_MONOMIAL_RESIDUAL_COORDINATE_ENDPOINT_TWO_VISIBLE_CELL_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "932586120f0e0153",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero exclusion on either surviving diagonal monomial coordinate endpoint in the physical m=3 common-three-space full-sensor stratum with singleton span dimension three, joint rank four, shared-derivative rank eight, and fully injective (3,3,3) root rows",
+        "the endpoint is normalized as C=lambda e_2 tensor e_2 and w=e_0 with lambda nonzero, kernel span((x,y,0)) contained in K, and x,y nonzero and not proportional to e_2",
+        "S2CF supplies the exact corrected cube per(r_alpha,p_beta,q_k)=alpha_k beta_k T_k+lambda alpha_2 beta_2 S_k on x-perp by y-perp and the exhaustive target-visibility census",
+        "kernel incidence and the full-sensor quotient determinant give a three-dimensional physical row space Q with Alt(Q) nonzero; S2CG's coordinate-free zero-pair classification is therefore available",
+        "simultaneous visibility of T_0 and T_1 has exactly fourteen ordered support masks: four central masks in {01,012} by {01,012} and ten boundary masks",
+        "on each central mask the correction-free covectors (x_1,-x_0,0) and (y_1,-y_0,0) give one mixed map whose image contains nonzero multiples of both fully transverse tensors T_0,T_1",
+        "the mixed-map obstruction exhausts the pure, two-source, and full-source support of one row; pure and two-source rows force shared factors, while the full-support case uses exact Segre-tangent square kernels and a 2x2x2 Cayley-hyperdeterminant separation from the transverse secant interior",
+        "the projected-tangent proof retains vanishing projected base components, and the endpoint fork explicitly fixes two source-factor lines by quotient projection; no generic retraction is assumed",
+        "each of the ten boundary masks has displayed bases (c,A) of x-perp and (d,B) of y-perp with M(r_c,p_d)|Q=0 and two correction-free nonzero rank-one corners on the transverse target lines",
+        "if the structural zero pair is independent, S2CG makes it a conjugate pair in a split two-source plane; dimension three and Alt(Q) nonzero force every Q permanent to share the one omitted-source factor line",
+        "if the zero pair is dependent, S2CG makes its common row pure; symmetry and pure-tensor cancellation confine every possible opposite corner to factor-sharing slabs, including the t=0, a=0, and b=0 support boundaries",
+        "all fourteen masks are excluded without a solver, finite-field scan, numerical fit, saturation, localization, or degeneration; no coordinate coefficient is divided out",
+        "the primary SymPy replay checks the 4+10 mask cover, every perpendicular basis, structural zero, correction term, selected target corner, Cayley interface, and independent/dependent zero-corner algebra",
+        "the independent no-import audit uses standard-library Fraction arithmetic and reverses colour-mask, source-coordinate-triple, permanent-summand, and chart traversal, with separate permanent and rank routines and independent fixtures for both analytic interfaces",
+        "with S2CH and S2CJ the result closes both diagonal monomial endpoints; with S2CE it closes the monomial-residual branch of this fully-injective rank cell, but every other nonmonomial residual and every wider global obligation remains open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_diagonal_monomial_residual_coordinate_endpoint_two_visible_cell_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_balanced_m3_common_three_space_joint_rank_four_derivative_rank_eight_fully_injective_diagonal_monomial_residual_coordinate_endpoint_two_visible_cell_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_DIAGONAL_MONOMIAL_RESIDUAL_COORDINATE_ENDPOINT_TWO_VISIBLE_CELL_EXCLUSION_SELF_REVIEW_2026-08-14.md",
+      "expected_runtime": "seconds for the symbolic primary replay and independent standard-library Fraction audit",
+      "external_binaries": [],
+      "note": "All fourteen ordered two-visible support masks at the diagonal monomial coordinate endpoints are impossible. Four central masks fall to a mixed-map transverse-secant obstruction and ten boundary masks to a structural-zero rectangle obstruction grounded in S2CG's general zero-pair theorem. Both diagonal endpoints, and hence the monomial residual branch of this fully-injective rank-four/rank-eight cell, are closed. No general nonmonomial reduction is claimed. Global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
