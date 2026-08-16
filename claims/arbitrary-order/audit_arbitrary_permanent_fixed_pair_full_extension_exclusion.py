@@ -174,7 +174,7 @@ def audit_git_objects() -> dict[str, object]:
         artifact_report: dict[str, str] = {}
         for artifact in package.artifacts:
             committed = git_bytes("show", f"{package.commit}:{artifact.path}")
-            current = (REPO_ROOT / artifact.path).read_bytes()
+            current = (REPO_ROOT / artifact.path).read_bytes().replace(b"\r\n", b"\n")
             assert committed == current
             assert digest(committed) == artifact.sha256
             artifact_report[artifact.role] = artifact.sha256

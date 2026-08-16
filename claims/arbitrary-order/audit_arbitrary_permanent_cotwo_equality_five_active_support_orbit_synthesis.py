@@ -39,11 +39,18 @@ DEPENDENCIES = {
 EDGES = tuple(combinations(range(4), 2))
 
 
+def file_sha256(path: Path) -> str:
+    """Hash text after normalizing checkout CRLF to Git-style LF."""
+
+    normalized = path.read_bytes().replace(b"\r\n", b"\n")
+    return sha256(normalized).hexdigest()
+
+
 def dependency_audit() -> str:
     """Check dependency bytes and return a digest of the ordered manifest."""
     ledger = []
     for relative in sorted(DEPENDENCIES):
-        observed = sha256((CLAIMS / relative).read_bytes()).hexdigest()
+        observed = file_sha256(CLAIMS / relative)
         assert observed == DEPENDENCIES[relative]
         ledger.append(f"{relative}:{observed}")
     return sha256("\n".join(ledger).encode()).hexdigest()

@@ -104,8 +104,10 @@ PACKAGES = (
 
 
 def sha256(path: Path) -> str:
-    """Return an uppercase SHA-256 digest."""
-    return hashlib.sha256(path.read_bytes()).hexdigest().upper()
+    """Hash text after normalizing checkout CRLF to Git-style LF."""
+
+    normalized = path.read_bytes().replace(b"\r\n", b"\n")
+    return hashlib.sha256(normalized).hexdigest().upper()
 
 
 def check_frozen_dependencies() -> dict[str, object]:
