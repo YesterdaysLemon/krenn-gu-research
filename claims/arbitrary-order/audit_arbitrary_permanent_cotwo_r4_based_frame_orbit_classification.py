@@ -30,6 +30,13 @@ PRIMARY_SHA256 = "8560C80C85ABC643A7591161295C22BF052589BCFC0529CA2A067A452CB1BA
 EDGES = tuple(combinations(range(4), 2))
 
 
+def lf_normalized_sha256(path: Path) -> str:
+    """Hash text after normalizing checkout CRLF to Git blob-style LF."""
+
+    normalized = path.read_bytes().replace(b"\r\n", b"\n")
+    return sha256(normalized).hexdigest().upper()
+
+
 DATA = {
     "(3,1)": {
         "normals": ((1, 1, 1, 0), (1, -1, -1, 0)),
@@ -517,8 +524,8 @@ def audit_frame(frame: tuple[object, ...]) -> dict[str, object]:
 def audit_theorem_boundary() -> None:
     """Require the theorem to preserve the exact nontransport boundary."""
 
-    assert sha256(THEOREM.read_bytes()).hexdigest().upper() == THEOREM_SHA256
-    assert sha256(PRIMARY.read_bytes()).hexdigest().upper() == PRIMARY_SHA256
+    assert lf_normalized_sha256(THEOREM) == THEOREM_SHA256
+    assert lf_normalized_sha256(PRIMARY) == PRIMARY_SHA256
     text = THEOREM.read_text(encoding="utf-8")
     required = (
         "ordered-pair based-frame orbit counts:                  1,4,3;",

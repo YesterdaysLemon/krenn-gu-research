@@ -34,7 +34,7 @@ not address the dimension-at-least-six co-two sensor residual, does not close
 unrestricted `P_6 -> Delta_3`, and does not resolve the Krenn--Gu conjecture.
 The global status remains **UNRESOLVED**.
 
-Reviewed frozen working-tree bytes:
+Reviewed LF-normalized frozen text bytes:
 
 ```text
 theorem:
@@ -43,12 +43,26 @@ B1762F22813E5B749FF0C81DA6C6CE5E9B8E95601662D87CB21835AAF63C3DA0
 
 primary verifier:
 claims/arbitrary-order/verify_arbitrary_permanent_monomial_covariance_and_based_frame_orbit_transport.py
-60F15146355CB51BF126D0B010891F796182F24555C65D1D6032950545E9C60F
+E37A2E98447F6058496A3487D0A01F498B331E730CC3B01C72FC6750CEC5838E
 
 independent no-import audit:
 claims/arbitrary-order/audit_arbitrary_permanent_monomial_covariance_and_based_frame_orbit_transport.py
-07C6F77925ED6083CDAF06CC124A3951ED7085F96DF998A1B88EBA9755A34207
+1EC63510DB2E03A58D7502AAE7160310B4F324BFAD0547BB1E86A05A2602A740
 ```
+
+### 2026-08-16 portability addendum
+
+A fresh Windows checkout exposed that raw working-tree SHA-256 checks
+rejected CRLF checkout bytes for the same Git text blobs that passed in the
+original LF worktree and Linux CI.  The primary and audit now normalize CRLF
+to LF before checking their theorem, predecessor, review, and primary hashes.
+Mismatch assertions also report the exact drifting path and digests.
+
+No tensor identity, orbit action, residual representative, expected LF blob
+hash, field scope, or theorem boundary changed.  The based-frame predecessor
+review received the same portability-only correction and its new normalized
+hash is pinned by both transport scripts.  Fresh Windows replay now passes
+the primary and structurally separate no-import audit.
 
 ## 1. The exact tensor predicate is the right one
 
@@ -363,8 +377,8 @@ theorem:
 B1762F22813E5B749FF0C81DA6C6CE5E9B8E95601662D87CB21835AAF63C3DA0
 
 primary verifier:
-60F15146355CB51BF126D0B010891F796182F24555C65D1D6032950545E9C60F
+E37A2E98447F6058496A3487D0A01F498B331E730CC3B01C72FC6750CEC5838E
 
 independent no-import audit:
-07C6F77925ED6083CDAF06CC124A3951ED7085F96DF998A1B88EBA9755A34207
+1EC63510DB2E03A58D7502AAE7160310B4F324BFAD0547BB1E86A05A2602A740
 ```

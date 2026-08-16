@@ -29,7 +29,7 @@ PRIMARY = (
 )
 
 THEOREM_SHA256 = "B1762F22813E5B749FF0C81DA6C6CE5E9B8E95601662D87CB21835AAF63C3DA0"
-PRIMARY_SHA256 = "60F15146355CB51BF126D0B010891F796182F24555C65D1D6032950545E9C60F"
+PRIMARY_SHA256 = "E37A2E98447F6058496A3487D0A01F498B331E730CC3B01C72FC6750CEC5838E"
 
 DEPENDENCIES = {
     "claims/arbitrary-order/"
@@ -46,7 +46,7 @@ DEPENDENCIES = {
     ),
     "docs/audits/"
     "ARBITRARY_PERMANENT_COTWO_R4_BASED_FRAME_ORBIT_CLASSIFICATION_REVIEW_2026-08-15.md": (
-        "1C4C0368CA05F68058556823A40E6C0EBD00EC0F5CE706885133626F4645B1AE"
+        "F1610E9BBCC4065AC24A1E0CD7F81DDAF989BCA5D4026AE2A23BD2FF7A5F680F"
     ),
     "claims/arbitrary-order/"
     "ARBITRARY_PERMANENT_TRIANGLE_PAIR_FULL_EXTENSION_EXCLUSION_THEOREM.md": (
@@ -81,9 +81,10 @@ Word = tuple[int, ...]
 
 
 def file_sha256(path: Path) -> str:
-    """Return an uppercase SHA-256 digest."""
+    """Hash text after normalizing checkout CRLF to Git blob-style LF."""
 
-    return sha256(path.read_bytes()).hexdigest().upper()
+    normalized = path.read_bytes().replace(b"\r\n", b"\n")
+    return sha256(normalized).hexdigest().upper()
 
 
 def inverse_permutation(permutation: tuple[int, ...]) -> tuple[int, ...]:
@@ -447,7 +448,10 @@ def audit_frozen_bytes_and_boundary() -> None:
     assert file_sha256(THEOREM) == THEOREM_SHA256
     assert file_sha256(PRIMARY) == PRIMARY_SHA256
     for relative_path, expected_hash in DEPENDENCIES.items():
-        assert file_sha256(ROOT / relative_path) == expected_hash
+        actual_hash = file_sha256(ROOT / relative_path)
+        assert actual_hash == expected_hash, (
+            f"{relative_path}: expected {expected_hash}, got {actual_hash}"
+        )
 
     theorem_text = THEOREM.read_text(encoding="utf-8")
     required_fragments = (

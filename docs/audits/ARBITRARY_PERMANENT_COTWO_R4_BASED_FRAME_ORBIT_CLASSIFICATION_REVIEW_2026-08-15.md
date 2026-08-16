@@ -21,7 +21,7 @@ modes.  The alternate `(4,1)` and `(4,2)` based frames remain separate
 transport obligations.  Unrestricted `P_6 -> Delta_3` is unknown and the
 global Krenn--Gu conjecture remains **UNRESOLVED**.
 
-Reviewed frozen working-tree bytes:
+Reviewed LF-normalized frozen text bytes:
 
 ```text
 theorem:
@@ -34,10 +34,20 @@ claims/arbitrary-order/verify_arbitrary_permanent_cotwo_r4_based_frame_orbit_cla
 
 independent no-import audit:
 claims/arbitrary-order/audit_arbitrary_permanent_cotwo_r4_based_frame_orbit_classification.py
-C1CF6B55A5B4880E8AC2FA251392D84BEA4DA8995A4F7F37FBA5B68D1BAD3B7C
+123EE95416724FA80A537FD3FD2EEC216F461D9F2E2D88268CCB82AED3758FC8
 ```
 
-No theorem or script edit was required by this review.
+No mathematical theorem or verifier edit was required by this review.
+
+### 2026-08-16 portability addendum
+
+A fresh Windows checkout exposed that the audit's raw working-tree SHA-256
+gate rejected CRLF checkout bytes even though Git stored the same LF text
+blob reviewed above.  The audit now normalizes CRLF to LF before hashing the
+theorem and primary.  Its mathematical derivation, finite-field checks,
+boundary assertions, expected LF hashes, and independence structure are
+unchanged.  Fresh LF and CRLF checkout replays both pass.  The audit hash in
+this review records that portability-only edit.
 
 ## 1. Rank-one criterion and quotient conventions
 
@@ -359,5 +369,5 @@ primary verifier:
 8560C80C85ABC643A7591161295C22BF052589BCFC0529CA2A067A452CB1BAF1
 
 independent audit:
-C1CF6B55A5B4880E8AC2FA251392D84BEA4DA8995A4F7F37FBA5B68D1BAD3B7C
+123EE95416724FA80A537FD3FD2EEC216F461D9F2E2D88268CCB82AED3758FC8
 ```
