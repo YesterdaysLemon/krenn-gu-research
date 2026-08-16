@@ -100,7 +100,9 @@ flowchart TD
   M1["Maximum torus-root split<br/>PROVED reduction"]
   M2["r >= 2 fixed-surplus layer<br/>PROVED reduction"]
   PR["Weighted permanent restriction family<br/>OPEN at arbitrary order"]
-  PRC["Every co-two permanent product sensor rank-drop<br/>PROVED necessary boundary"]
+  PRC["Every co-two permanent product sensor corank >=2<br/>PROVED necessary boundary"]
+  PR5["Co-two equality-five branch<br/>REDUCED to frames 014,025,024"]
+  PR6["Co-two product dimension >=6<br/>OPEN sensor residual"]
   O1["Fixed-layer truncation and nonobservability<br/>PROVED boundary"]
   O2["Two-open detector and q=0 star gauge<br/>PROVED boundary"]
   O2P["Projective single-open consecutive lift<br/>PROVED conditional reduction"]
@@ -242,7 +244,9 @@ flowchart TD
   O2 -->|boundary| O3
   M2 -->|zero-surplus specialization| PR
   S3B -->|existing zero-surplus extraction| PR
-  PR -->|necessary rank-drop boundary| PRC
+  PR -->|necessary corank-two boundary| PRC
+  PRC -->|product dimension five| PR5
+  PRC -->|product dimension at least six| PR6
 
   U1 -->|reduction| U2
   U1 -->|support-minimal refinement| U1B
@@ -363,7 +367,9 @@ flowchart TD
 | `M1` | Maximum torus-root saturation and `r=1` / `r>=2` split: **proved universal reduction** | [Maximal torus-root theorem](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md) |
 | `M2` | One complete fixed-surplus physical hafnian layer; coordinate two-residual absorption: **proved reduction, not exclusion** | [Maximal torus-root theorem](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer) |
 | `PR` | Weighted `P_t -> Delta_3` restriction family: **extracted at zero surplus and on the conditional consecutive-lift branch; arbitrary-order exclusion open**. The live `t=6` / P6 restriction remains inside this node; the three-excess notes address only the first strict-support layer, not arbitrary support. | [Maximal-root extraction](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer), [consecutive single-open lift](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md), [P6 package index](../claims/p6/README.md), [three-excess port boundary](../claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md), and [conformal Birkhoff boundary](../claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md) |
-| `PRC` | Every weighted `P_r -> Delta_3` restriction lies in the simultaneous co-two product-sensor rank-drop locus: for each omitted pair, the complementary sensor has rank at most `binomial(r,2)-1`. This proper necessary boundary is nonempty after imposing local rank and nonzero pure coefficients, so it is **not** a nonrestriction theorem. | [Co-two permanent product-sensor theorem](../claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_RANK_DROP_THEOREM.md) |
+| `PRC` | Every weighted `P_r -> Delta_3` restriction has `dim B_ab>=5` and `dim A_S+dim B_ab<=binomial(r,2)+3` for each omitted pair.  Hence every complementary co-two product sensor has corank at least two; for P6 all fifteen sensors have rank at most `13`.  This is a **proved necessary boundary, not a nonrestriction theorem**. | [Co-two sensor corank-two strengthening](../claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_CORANK_TWO_STRENGTHENING_THEOREM.md) |
+| `PR5` | If an omitted pair in an actual restriction has `dim B_ab=5`, its active support is exactly four.  The unbased types are `(3,1),(4,1),(4,2)`; exact based-frame classification, three displayed-frame exclusions, and full permanent orbit transport exclude all triangle frames, all mixed star frames, and fixed `e=0`.  Exactly three extension-exclusion representatives remain: pure star `014`, fixed `e=1` `025`, and fixed `e=2` `024`.  They are **open obligations, not extensions**. | [Equality-five support synthesis](../claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_EQUALITY_FIVE_ACTIVE_SUPPORT_ORBIT_SYNTHESIS_THEOREM.md), [based-frame classification](../claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_R4_BASED_FRAME_ORBIT_CLASSIFICATION_THEOREM.md), and [monomial covariance/orbit transport](../claims/arbitrary-order/ARBITRARY_PERMANENT_MONOMIAL_COVARIANCE_AND_BASED_FRAME_ORBIT_TRANSPORT_LEMMA.md) |
+| `PR6` | If `dim B_ab>=6`, then `dim A_S<=binomial(r,2)-3`; for P6 the corresponding four-mode sensor has rank at most `12`.  The simultaneous mixed-target incidence inside these stronger sensor bounds remains **open**.  No P6 closure follows from the dimension split. | [Strengthened co-two sensor bound](../claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_CORANK_TWO_STRENGTHENING_THEOREM.md#4-the-strengthened-sensor-bound) |
 | `O1` | Contracted truncation, same-fibre rank nonobservability, and single-open absorption: **proved structural boundary** | [Balanced fixed-surplus theorem](../claims/arbitrary-order/BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md) |
 | `O2` | Complete two-open equation and conditional `q=0` tensor-preserving star gauge: **proved boundary** | [Two-open gauge theorem](../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md) |
 | `O2P` | On the aligned common-two-row, projectively constant branch, the complete single-open identity is a consecutive `P_(m+1)` restriction and its old-root companions form an exact rank-two diagonal quotient frame: **proved conditional reduction** | [Consecutive single-open lift](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md) |
@@ -508,7 +514,9 @@ flowchart TD
 | `O2I` | boundary obligation | `O3` | Complete aligned `q=0,r=5` detection neither excludes a witness nor transports automatically to larger aligned cells, positive surplus, or the unfactorized branch. |
 | `O2` | boundary obligation | `O3` | The tight star refutes an automatic detector; higher/unfactorized data are needed. |
 | `M2` | specialization | `PR` | Zero surplus yields a tight weighted permanent restriction at arbitrary `r>=5`; it is not reduced to P7. |
-| `PR` | necessary condition | `PRC` | Every co-two product sensor is rank-deficient under a restriction. For P6 all fifteen four-mode sensors have rank at most fourteen, but simultaneous rank drop plus local rank and pure nonvanishing is insufficient. |
+| `PR` | necessary condition | `PRC` | Every co-two pair product space has dimension at least five, and every complementary sensor has corank at least two.  For P6 all fifteen four-mode sensors have rank at most thirteen, but simultaneous corank two plus local rank and pure nonvanishing is insufficient. |
+| `PRC` | exact equality-five branch | `PR5` | Product dimension five forces active support four; based-frame orbit transport reduces the still-unexcluded full-extension cases to representatives `014,025,024`. |
+| `PRC` | boundary branch | `PR6` | Product dimension at least six strengthens the sensor rank bound to `binomial(r,2)-3`, but the simultaneous mixed-target incidence remains open. |
 | `U1` | reduction | `U2` | Matrix-unit cancellation reduces to an at-most-four-port response. |
 | `U1` | exact support-minimal refinement | `U1B` | The strict incidence alternative turns every absent positive endpoint balance into an integral GHZ-preserving degeneration that erases a physical edge; global support minimality therefore forces the balance. |
 | `U1B` | exact complex-analytic refinement | `U1C` | Strict all-edge balance makes the squared-amplitude exponential functional coercive and strictly convex on the positive GHZ torus modulo its edgewise stabilizer; its unique critical orbit has actual vertex-independent colour loads. |
@@ -613,14 +621,17 @@ branch. They are not an instruction to begin all of them at once.
    codimensions add.
 
 3. **Zero-surplus permanent restrictions.** Every hypothetical restriction
-   now lies in the simultaneous co-two product-sensor rank-drop locus; for P6
-   all fifteen four-mode sensors have rank at most fourteen. Decide the mixed
-   GHZ equations inside that intersection, exclude `P_r -> Delta_3` for every
-   `r>=8` at every legal support size, or prove an exact reduction to ranks
-   already closed. The exact P6 block model shows that rank drop, local rank,
-   and nonzero pure coefficients alone are insufficient. The committed P7
-   sensor and exactly-three-excess support normal forms are not exhaustive
-   arbitrary-r theorems.
+   now lies in the simultaneous co-two product-sensor corank-two locus; for P6
+   all fifteen four-mode sensors have rank at most thirteen.  On the
+   equality-five branch, support and based-frame classification plus exact
+   orbit transport reduce the full-extension exclusions to three open
+   representatives: pure star `014`, fixed `e=1` `025`, and fixed `e=2`
+   `024`.  Exclude those three, and separately decide the product-dimension
+   at-least-six branch, where the corresponding P6 sensor rank is at most
+   twelve.  Neither task is P6 closure by itself.  The exact P6 block model
+   shows that sensor rank drop, local rank, and nonzero pure coefficients alone
+   are insufficient. The committed P7 sensor and exactly-three-excess support
+   normal forms are not exhaustive arbitrary-r theorems.
 
 4. **Active word holonomy and pure-shore cancellation.** Every active
    coordinate has a cofactor-active cross core. Absent the deeper branch,
@@ -818,7 +829,7 @@ responses; it does not collapse them into the globally rigid `k=4` cell.
 | Arbitrary internal nonroot blocks can repair a common-conformal balanced shore | False: modulo the common root quadric every non-all-cross sector vanishes; nonzero scalar permanent leaves a forbidden mixed product, while zero permanent contradicts the nonzero pure-root product from a constant word | [Common-quadric mixed/pure residue theorem](../claims/arbitrary-order/BALANCED_COMMON_QUADRIC_MIXED_PERMANENT_DIVISIBILITY_AND_CONFORMAL_SHORE_EXCLUSION_THEOREM.md) |
 | All-balanced rank drop plus invertible blocks, local concision, and normalized pure coefficients force a common zero of the same-vector root quadrics in a prescribed gauge | False at `n=8`: a normalized rational common-quadratic-orbit graph has every balanced sensor of rank at most seven, while six root quadrics in the target gauge span all of `Sym^2(C^3)^*` and have empty projective base locus.  Independent vertex gauges recover one common conic, so the fixture does not refute latent synchronization. | [Root-quadric basepoint gauge sharpness](../claims/arbitrary-order/BALANCED_ROOT_QUADRIC_BASEPOINT_PERMANENT_RESTRICTION_AND_GAUGE_SHARPNESS_THEOREM.md#4-all-cut-rank-drop-does-not-force-a-fixed-gauge-basepoint) |
 | Two adjacent all-rank-drop shores, nonzero pure coefficients, and all Hamming-one mixed equations force compatible same-vector root-ideal basepoints | False at `n=8`: an exact invertible monomial common-form graph has every balanced sensor of rank at most seven, pure coefficients `(1,1,1)`, all `48` Hamming-one coefficients zero, and both adjacent six-quadric ideals equal the irrelevant square with empty projective base locus.  A pair-local Hamming-two coefficient is `-1`; latent gauges recover synchronization, so no existential multiroot claim is refuted. | [Adjacent-cut monomial Hamming-shell sharpness](../claims/arbitrary-order/EIGHT_VERTEX_ADJACENT_CUT_MONOMIAL_HAMMING_ONE_BLINDNESS_AND_HAMMING_TWO_DETECTOR_SHARPNESS_THEOREM.md) |
-| Simultaneous co-two permanent sensor rank drop, local rank, and nonzero pure coefficients exclude P6 | False as an argument: an exact two-block coordinate model has all fifteen four-mode sensors of dimension at most nine and all pure coefficients nonzero, but has mixed support and flattening rank one rather than the target rank three | [Co-two permanent product-sensor boundary](../claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_RANK_DROP_THEOREM.md#5-sharpness-of-what-rank-drop-alone-can-say) |
+| Simultaneous co-two permanent sensor corank two, local rank, and nonzero pure coefficients exclude P6 | False as an argument: an exact two-block coordinate model has all fifteen four-mode sensors of dimension at most nine and all pure coefficients nonzero, but has mixed support and flattening rank one rather than the target rank three | [Co-two permanent product-sensor boundary](../claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_RANK_DROP_THEOREM.md#5-sharpness-of-what-rank-drop-alone-can-say) |
 | Only equal regular ratios survive the four-regular five-cell common kernel | False: a `2+2` reciprocal primitive-cube-root divisor also gives a one-dimensional kernel; the corrected dimension bound still closes detection | [Complete aligned five-cell detector](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_LIFT_COMPLETE_ALIGNED_FIVE_CELL_TWO_OPEN_DETECTOR_THEOREM.md#lemma-2-four-defect-full-common-kernels) |
 
 These are refutations of arguments, not counterexamples to the Krenn–Gu
