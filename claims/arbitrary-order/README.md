@@ -770,6 +770,562 @@ all contradict exact cubic or square-map obstructions.  Thus the
 distinguished `alpha_s` coloop is impossible; the other seven `(1,2,2)`
 coloop orientations remain open.
 
+The successor
+[`(1,2,2)` residual second-root-coloop support localization`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_SUPPORT_LOCALIZATION_THEOREM.md)
+advances both `beta_j` coloops with `j!=t`.  Their complete face
+`beta_t=gamma(w)=0` puts the first- and third-row binary planes in the exact
+three-space `S=R direct-sum span(A)` and puts the complementary second row
+there, while the selected row `p_j` may escape.  If `w_t!=0`, this is a
+binary diagonal table with one middle-row escape.  Intersecting the two
+planes inside `S`, the tangent-line and mixed-factor lemmas force their
+common line to be a coordinate endpoint in both planes.  Four ordered
+endpoint incidences and seven nonzero support masks leave 28 exact normal
+forms; pinned rational Nullstellensatz identities exclude every one.  Hence
+both residual second-root coloops satisfy `w_t=0`.  Their resulting
+residuals and the other five `(1,2,2)` coloop orientations remain open.
+
+The successor
+[`(1,2,2)` residual second-root-coloop coordinate-line localization`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_COORDINATE_LINE_LOCALIZATION_THEOREM.md)
+excludes complementary support two for `w`.  When `w_t=0` and
+`w_jw_k!=0`, the complete face is a same-third-row binary diagonal table.
+Its first and third planes and `p_k` lie in `S`; only `p_j` may escape.
+Tangent-line and mixed-factor arguments force the zero third row to equal
+the intersection of the two planes in `S`.  The remaining row-space orbit
+has 14 endpoint-support, five generic fixed-support, and two one-parameter
+families.  Exact rational Nullstellensatz identities exclude all 21; the
+parameter identities hold in the full polynomial ring, without division or
+specialization.  Thus each residual `beta_j` coloop forces `w` onto one of
+the two coordinate lines complementary to `e_t`.  The four ordered
+coloop/endpoint cases and the other five `(1,2,2)` coloop orientations
+remain open.
+
+The successor
+[`(1,2,2)` residual second-root-coloop projective-pencil localization`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_PROJECTIVE_PENCIL_LOCALIZATION_THEOREM.md)
+strengthens the binary diagonal obstruction to the case where the middle-row
+plane meets the common three-space in an arbitrary nonzero line.  Four
+ordered first/third-plane endpoints and seven nonempty supports of that line
+give 28 exact normal forms; pinned rational Nullstellensatz identities
+exclude all of them.  Hence every determinant-face pencil member has a
+vanishing projection gate.  Exact projective factorization and the auxiliary
+third-root kernel face give the endpoint table: for `w=e_l` and the other
+complementary colour `m`, `s=t` forces `z_t=0`, `s=l` forces
+`y parallel e_m` and `z_m z_t=0`, and `s=m` forces `y_m z_m=0`.  The selected
+row `p_j` is also proved to escape the canonical three-space genuinely.  No
+endpoint is excluded; the four ordered endpoints and the other five
+`(1,2,2)` coloop orientations remain open.
+
+The successor
+[`(1,2,2)` residual second-root-coloop `s=t` endpoint exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_S_EQUAL_T_ENDPOINT_EXCLUSION_THEOREM.md)
+closes the first endpoint slice.  When `s=t`, the support table makes `z,w`
+a basis of `e_t^perp`.  A generic determinant-pencil direction then gives a
+same-third-row binary table whose middle-row plane has an arbitrary nonzero
+intersection with the common three-space.  The generalized obstruction has
+14 endpoint-support, five generic fixed-support, and two polynomial
+one-parameter families; exact rational Nullstellensatz identities exclude
+all 21.  Thus every surviving residual endpoint has `s in {j,k}`.  Those
+constrained endpoint charts and the other five `(1,2,2)` coloop orientations
+remain open.
+
+The successor
+[`(1,2,2)` residual second-root-coloop complementary-`y` localization`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_COMPLEMENTARY_Y_COORDINATE_LOCALIZATION_THEOREM.md)
+uses the same generalized same-third-row lemma to close a one-sided pencil
+degeneration.  At every surviving endpoint, `s` lies in `{j,k}` and `y` is
+proportional to the other coordinate in that pair.  If the endpoint equals
+`s`, this follows directly from the S2BF gate fork.  At the other endpoint,
+the contrary `y_s!=0` assumption makes `z,w` a basis of `e_s^perp`, exposing
+the forbidden S2BG table on a generic pencil member.  The two endpoint
+locations for `w`, their remaining `z` constraints, and the other five
+`(1,2,2)` coloop orientations remain open.
+
+The successor
+[`(1,2,2)` residual second-root-coloop common-middle-row localization`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_COMMON_MIDDLE_ROW_LOCALIZATION_THEOREM.md)
+closes every endpoint chart except one terminal alignment.  Once
+`y parallel e_u`, a generic determinant-pencil member has two fully
+transverse targets sharing the active row of the only plane allowed to
+escape the common three-space, unless `z_s=w_s=0`.  The new obstruction
+covers ten first/third-plane incidences, all three positions of the
+escaping-plane intersection, and three polynomial affine patches for its
+line.  Exact rational identities exclude all 90 normal forms.  Hence every
+survivor has `w=e_u`, `z_s=0`, and `z_t!=0`.  That terminal chart, the other
+five `(1,2,2)` coloop orientations, and the wider branches remain open.
+
+The successor
+[`(1,2,2)` residual second-root-coloop exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_RESIDUAL_SECOND_ROOT_COLOOP_EXCLUSION_THEOREM.md)
+closes the terminal chart in both residual orientations.  Its same-pair face
+has two fully transverse targets sharing the active middle/third row pair.
+The selected divisor supplies the missing exact incidence: for `j=s`, the
+active middle and third rows cancel modulo `R`; for `j=u`, the inactive
+middle row lies in `R`.  The equal first/third-plane boundary fails by
+permanent symmetry, while three intersection supports give nine polynomial
+families in the first orientation and six in the second.  Pinned rational
+identities exclude all 15.  Thus both residual `beta_j` coloops are
+impossible; the three third-root and two complementary first-root
+`(1,2,2)` coloops remain open.
+
+The successor
+[`(1,2,2)` third-root-coloop exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_THIRD_ROOT_COLOOP_EXCLUSION_THEOREM.md)
+closes all three `gamma_k` orientations.  A selected third-root coloop puts
+the first and second binary row planes of the complete
+`beta_t=gamma(w)=0` face in the exact three-space
+`S=R direct-sum span(A)` and gives the third plane a nonzero intersection
+with `S`.  For `w_t!=0`, the face is the S2BF arbitrary-intersection binary
+diagonal table.  For `w_t=0` with complementary support two, it is the S2BI
+common-active-row table.  Both inherited rational certificate packages are
+replayed independently.  The only remaining support makes `w` coordinate;
+exchanging roots two and three then turns `gamma_k=0` into one of the three
+second-root coloops already excluded by S2BB and S2BJ.  Hence seven of the
+nine `(1,2,2)` coloop orientations are impossible.  Only the two
+complementary first-root coloops remain in this profile, alongside the wider
+lower-rank, component, pole, and higher-order branches.
+
+The successor
+[`(1,2,2)` complementary first-root-coloop exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FIVE_HILBERT_BURCH_ONE_TWO_TWO_COMPLEMENTARY_FIRST_ROOT_COLOOP_EXCLUSION_THEOREM.md)
+closes those final two orientations.  The derivative-zero pencil remains the
+exact `alpha_s=0` face; the selected divisor `alpha_a=0` instead supplies a
+two-plane `C` containing the in-space first row, both partner-kernel rows,
+and the sum of opposite active partner rows.  The S2BF
+arbitrary-intersection binary diagonal forces the same two projective
+degeneracies as S2BC, and S2BE excludes either one-sided degeneration.  At
+their intersection, equal partner planes fail by the S2AL square-image
+lemma.  Otherwise the inactive partner lines agree or differ, leaving two
+or three first-row support types.  Five polynomial normal forms exhaust the
+residual; pinned rational identities with 5,928 sparse multiplier terms
+exclude all of them.  Thus all nine S2AZ coordinate coloops, and the
+complete joint-rank-five Hilbert--Burch `(1,2,2)` profile, are impossible.
+Lower-rank, other-component, pole, and higher-order branches remain open.
+
+The successor
+[`lower-joint-rank transverse two-root localization and pole controls`](BALANCED_M3_COMMON_THREE_SPACE_LOWER_JOINT_RANK_TRANSVERSE_TWO_ROOT_LOCALIZATION_AND_POLE_CONTROLS_THEOREM.md)
+starts the joint-rank-at-most-four branch.  At joint rank three or four, a
+transverse two-root point has uninvolved-row rank one or two, with exactly
+four row-space incidence types; every uninvolved-row kernel vector has
+target-coordinate support at most two.  Rank one forces a coordinate kernel
+plane, complementary diagonal root blocks, and a one-cell permanent grid.
+Exact common-shore controls realize that grid at both joint ranks, with full
+sensor rank and every GHZ target incidence, but their unique pair lifts have
+explicit coordinate-divisor poles.  Thus local singleton/empty equations do
+not exclude the lower-rank branch: its rank-two cells and the new rank-one
+pole-residue obligation remain open, as do three-root lower-rank derivatives
+and the wider component, pole, and higher-order branches.
+
+The next theorem,
+[`joint-rank-four transverse two-root uninvolved-rank-two complete exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_TRANSVERSE_TWO_ROOT_UNINVOLVED_RANK_TWO_COMPLETE_EXCLUSION_THEOREM.md),
+closes the whole rank-four `q=2` cell.  It strengthens the S2AI/S2AK
+common-zero lemma from disjoint `V,Q` to every two-plane `Q` not contained
+in the singleton row three-plane `V`.  In the sole intersection-sensitive
+conjugate-tangent chart, the last mixed permanent forces both generators of
+`Q` into `V`, contradicting the rank-four line-intersection incidence.
+Together with incidence-free transfers of the earlier higher-row
+exclusions, this covers both kernel supports and all four involved-row
+profiles.  An exact `Q subset V` fixture with nonzero singleton determinant
+shows why the same lemma does not close joint rank three.  The transverse
+rank-four branch is therefore reduced to S2BM's populated `q=1` pole
+control; rank-three `q=1/q=2`, its pole/deck obligations, and all wider
+branches remain open.
+
+The successor
+[`joint-rank-three transverse two-root uninvolved-rank-two exceptional normal form and pole controls`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_THREE_TRANSVERSE_TWO_ROOT_UNINVOLVED_RANK_TWO_EXCEPTIONAL_NORMAL_FORM_AND_POLE_CONTROLS_THEOREM.md)
+finishes the local rank-three `q=2` atlas.  The only nonvanishing
+common-zero chart is the two-source conjugate chart.  The other two GHZ
+diagonals then force complementary coordinate-monomial root blocks and make
+both involved rows rank two, excluding the apparent support-two `(3,3)`
+residual.  Up to the stated gauges, one row system remains.  It has either
+one missing third-root row or two proportional nonzero third-root rows.
+Exact controls populate both variants with full sensor rank and every GHZ
+target coefficient.  Their common unique pair lift has three explicit
+coordinate poles.  Because the atlas is exhaustive, the exact Cramer--Euler
+pair-pole gate excludes a regular graph extension for the entire rank-three
+`q=2` cell, even though its singleton/empty equations are sharply populated.
+The complete transverse joint-rank-three/four frontier is now reduced to
+S2BM's rank-one-row controls; their pole-residue or retained pair/deck
+obstruction is the next genuine gate.
+
+The
+[`lower-joint-rank transverse two-root uninvolved-rank-one complete pair-pole exclusion`](BALANCED_M3_COMMON_THREE_SPACE_LOWER_JOINT_RANK_TRANSVERSE_TWO_ROOT_UNINVOLVED_RANK_ONE_COMPLETE_PAIR_POLE_EXCLUSION_THEOREM.md)
+closes that gate at both ranks.  Starting from S2BM's exact one-cell frame,
+the populated square row uses either two or three source summands.  The
+complete Segre-tangent/common-zero atlas makes the singleton determinant
+carry one, two, or all three missing-colour coordinate factors.  A Cramer
+numerator for one source omits that source's missing-colour coordinate, so
+global pair regularity forces the corresponding numerator to vanish.  The
+two-factor charts then contradict either the coprimality of the two residual
+GHZ monomials or the nonzero third singleton row.  In the sole one-factor
+chart, vanishing of the exact remaining numerator would kill the alternating
+singleton determinant.  Thus every `q=1` point has a prime-divisor pair pole,
+and the Cramer--Euler gate excludes every regular graph extension.  Together
+with the rank-four `q=2` exclusion and the rank-three `q=2` pole exclusion,
+this empties the complete lower-rank transverse two-root graph-extension
+branch.  The next common-three-space obligation is the lower-rank three-root
+derivative census; wider components, pole strata, higher orders, and the
+all-rank-drop branch remain open.
+
+The successor
+[`lower-joint-rank three-root derivative and torus census`](BALANCED_M3_COMMON_THREE_SPACE_LOWER_JOINT_RANK_THREE_ROOT_DERIVATIVE_AND_TORUS_CENSUS_THEOREM.md)
+classifies that next branch.  With all three root blocks nonzero, the shared
+derivative has rank nine, eight, or seven.  Joint rank four excludes the
+injective rank-nine chart by rank--nullity.  Rank eight has one two-supported
+shared-factor syzygy and a residual block outside the corresponding Segre
+tangent plane; an exact root-torus argument forces the shared factor or
+residual block onto a coordinate/monomial atlas, and, when both shared
+vectors are noncoordinate, forces the residual block to be a nonzero
+coordinate monomial modulo that tangent plane.  Rank seven is exactly
+Hilbert--Burch.  Its full `(2,2,2)` projection profile is impossible at every
+joint rank, while the other three profiles inherit S2AG's coordinate-boundary
+atlas without importing rank-five kernel containment.  The exact preimage
+table distinguishes the rank-four selected syzygy line from rank-three
+transversality.  This is a strict localization, not a complete three-root
+exclusion; the surviving finite cells still require the full empty-permanent
+target and pair gate.
+
+The
+[`joint-rank-four derivative-rank-eight target-kernel atlas and distinct-missing-colour exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_TARGET_KERNEL_ATLAS_AND_DISTINCT_MISSING_COLOUR_EXCLUSION_THEOREM.md)
+starts that coupling.  Because the derivative kernel line is physically
+contained in `K`, every deficient involved root row annihilates its shared
+tangent factor.  The complete coefficientwise empty-target identity then
+forces a rank-two first/second row to have one coordinate zero row and a
+matching nonzero diagonal row/column of the residual block.  A deficient
+third row has support only on coordinate lines represented by the two shared
+vectors and cannot annihilate the shared third factor.  If both involved rows
+have rank two, their missing colours must coincide: using the coefficient of
+one missing-colour target first fixes the third component of its derivative
+preimage, while contraction by a distinct missing row makes that same
+component simultaneously zero and nonzero.  The same-colour `(2,2)` cell and
+all higher involved-row profiles remain open, as do the rank-seven and
+joint-rank-three target cells and the pair gate.
+
+The successor
+[`same-missing-colour third-row-rank-two coordinate split-lift exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_SAME_MISSING_COLOUR_THIRD_ROW_RANK_TWO_COORDINATE_SPLIT_LIFT_EXCLUSION_THEOREM.md)
+closes one complete cell inside that survivor.  On the coordinate chart
+`x=w=e_s`, `y=e_t`, and
+`C=e_d tensor e_d+e_s tensor e_s`, its displayed four-space `K` has row
+kernels `(d,d,s)`.  The polarized root permanent of `K` has exactly eight
+independent quotient coefficients.  Target consistency makes six associated
+source permanents zero and the other two the fully transverse pure tensors
+`T_d,T_t`.  A new rank-free eight-product lemma excludes that table by an
+exhaustive one-/two-/three-source analysis of the repeated vector.  The
+argument covers every physical cross map onto this `K`, but does not infer
+that all same-missing-colour points have the split-lift form; nonsplit lifts
+and the other row profiles remain open.
+
+The successor
+[`same-missing-colour third-row-support-one split-lift atlas`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_SAME_MISSING_COLOUR_THIRD_ROW_SUPPORT_ONE_SPLIT_LIFT_ATLAS_THEOREM.md)
+removes that lift ambiguity.  Two contractions of the missing-colour pure
+target coefficient first fix its third component and then put its first two
+components on the shared derivative syzygy.  Hence `(0,0,e_d)` is forced in
+`K`.  The third-kernel-colour target similarly forces `(0,e_s,0)`.  Projection
+rank then gives two exhaustive four-space charts, according as the other
+tangent factor is independent of or proportional to `e_s`.  Their polarized
+root permanents have exact eight-dimensional boxes; on the nonmonomial
+residual-block branch these boxes meet `U` trivially.  Thus nonsplit
+missing-colour lifts are impossible, while arbitrary complementary tangent
+directions and residual blocks in the two displayed charts still require a
+source-permanent exclusion.
+
+The
+[`aligned split-lift exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_SAME_MISSING_COLOUR_THIRD_ROW_SUPPORT_ONE_ALIGNED_SPLIT_LIFT_EXCLUSION_THEOREM.md)
+closes one of those two exhaustive charts.  Its root box is disjoint from
+`U` even when `C` is monomial and `w` is noncoordinate.  The `ttt` target
+makes one dual `K` row fully supported; the `stt` and `tst` zeros put two
+other rows in its two-dimensional Segre-tangent kernel.  The `ttd` equation
+cannot equal a nonzero `T_d` inside the tangent at `T_t`, so the fourth row
+enters the same kernel.  This contradicts injectivity of the four-dimensional
+transpose.  Only the nonaligned support-one chart remains in this row
+profile, with S2BS already excluding one of its coordinate specializations.
+
+The successor
+[`nonaligned source atlas and pair-pole exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_SAME_MISSING_COLOUR_THIRD_ROW_SUPPORT_ONE_NONALIGNED_SOURCE_ATLAS_AND_PAIR_POLE_EXCLUSION_THEOREM.md)
+closes that last chart at the graph-extension level.  A deformed
+eight-product analysis classifies every local empty-target solution as one
+same-source two-plane family and forces `C_bar=0`, `w=e_s`, and a coordinate
+fourth lift.  These controls are exact and have generic sensor rank four, so
+the local cell is genuinely populated.  Their unique pair Cramer solution
+has denominators `x_t,y_t`; simultaneous cancellation of both residues would
+equate the distinct `x_s y_s` and `x_d y_d` target monomials.  At least one
+pair therefore has a divisor pole.  Together with the aligned exclusion,
+this closes the complete same-colour `(2,2,2)` graph cell with coordinate
+third-row kernel, while noncoordinate third-kernel support and the other row
+profiles remain open.
+
+The
+[`support-two third-row exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_SAME_MISSING_COLOUR_THIRD_ROW_SUPPORT_TWO_COMPLETE_EXCLUSION_THEOREM.md)
+removes that remaining rank-two-third-row kernel support.  Both complementary
+target corrections have zero third component after contraction by the common
+missing involved row.  Contracting by the support-two third-kernel covector
+then forces `(0,e_s,0)` and `(e_t,0,0)` modulo the shared syzygy, while the
+missing-colour correction forces `(0,0,e_d)`.  These three vectors and the
+syzygy already span `K`, but their third projection has rank one, contradicting
+the assumed third-row rank two.  Thus the entire same-colour `(2,2,2)`
+rank-two-third-row profile is closed; the rank-three continuation and the
+other involved-row profiles pass to the successor frontier.
+
+The
+[`third-row-rank-three complete exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_SAME_MISSING_COLOUR_THIRD_ROW_RANK_THREE_COMPLETE_EXCLUSION_THEOREM.md)
+closes the injective-third-row continuation.  The common missing involved
+row reduces the complete singleton correction to one source-target line.  A
+nonzero residual coefficient would turn the rank-four order-three permanent
+tensor into a concise rank-three diagonal tensor, so the empty permanent is
+forced to the exact binary table on the two complementary colours.  The
+third row's remaining colour is a common zero for both involved row planes.
+Shifting either binary third row by that common zero preserves the table;
+the exact intersecting-plane binary-frame obstruction forces every shifted
+plane transverse to both involved planes.  Four-space dimension then puts
+the common zero in both planes, a contradiction.  Thus the complete
+same-colour `(2,2,q)` involved-row profile is closed for `q=2,3`; mixed and
+injective involved-row profiles remain.
+
+The successor
+[`one-deficient-row injective-third-row exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_ONE_DEFICIENT_INVOLVED_ROW_THIRD_ROW_RANK_THREE_COMPLETE_EXCLUSION_THEOREM.md)
+observes that the rank-three proof used no second missing row.  If the second
+row is injective, its two complementary target rows still form the required
+binary plane.  The same one-line correction, `P_3` rank obstruction, and
+shifted-plane contradiction exclude `(2,3,3)` and, by root exchange,
+`(3,2,3)`.  Thus the only third-row-rank-three profile left in the rank-four,
+derivative-rank-eight cell is the fully injective `(3,3,3)` profile; mixed
+third-row-rank-two and injective profiles remain.
+
+The
+[`one-deficient-row support-two exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_ONE_DEFICIENT_INVOLVED_ROW_THIRD_ROW_SUPPORT_TWO_COMPLETE_EXCLUSION_THEOREM.md)
+closes the two-colour-kernel part of that mixed rank-two branch.  The missing
+involved row puts every non-`T_d` correction preimage in the two-dimensional
+kernel of the third projection.  Modulo the derivative syzygy, all those
+corrections lie on one root-tensor line.  The support-two third-kernel
+contraction would make that line proportional to both complementary
+diagonal root tensors, which is impossible.  Thus `(2,3,2)` and `(3,2,2)`
+with support-two third kernel are empty; only their support-one cells remain
+among the mixed profiles.
+
+The successor
+[`one-deficient-row support-one exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_ONE_DEFICIENT_INVOLVED_ROW_THIRD_ROW_SUPPORT_ONE_COMPLETE_EXCLUSION_THEOREM.md)
+closes those last mixed cells.  The missing-colour and third-kernel target
+coefficients force a vertical lift and one split tangent lift.  The wrong
+split orientation would lower the injective involved-row projection to rank
+two, so the surviving four-space has one direct twelve-coefficient root box.
+Four coefficients on its third-`t` face force a cubic resonance frame
+`P(u,u,v)=P(u,v,v)=0`, `P(v,v,v) proportional T_t`.  The two missing-colour
+coefficients then put `P(v,u,r)` and `P(u,u,r)` simultaneously in the Segre
+tangent at `T_t` and on the fully transverse `T_d` line, so both vanish.
+Their exact common kernel makes `r` proportional to `v`, contradicting the
+four independent dual physical rows.  Thus every rank-four/rank-eight
+profile with at least one deficient involved row is closed; only fully
+injective involved rows remain in this derivative cell.
+
+The
+[`fully-injective-involved-rows third-row-rank-two exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_INVOLVED_ROWS_THIRD_ROW_RANK_TWO_COMPLETE_EXCLUSION_THEOREM.md)
+closes the `(3,3,2)` continuation.  A vertical third lift is already
+incompatible with the two injective involved projections.  Without one, the
+eighteen-dimensional root box meets the singleton span trivially, so the
+complete empty target has three unique root representatives.  The exact
+rank-four obstruction for `P_3` forces one supported target cube into the
+singleton image.  For a support-one kernel this produces an equal-plane
+binary frame.  For support two, outer-factor permanent symmetry reduces the
+last coefficient to a mixed term plus one square; mixed-factor sharing kills
+the mixed term, and the remaining independent/proportional middle-factor
+fork is respectively the intersecting-plane binary obstruction or the
+two-square obstruction.  Thus `(3,3,2)` is empty, and `(3,3,3)` is the only
+row profile left in the rank-four, derivative-rank-eight cell.
+
+The successor
+[`fully-injective monomial-residual endpoint localization`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_MONOMIAL_RESIDUAL_ENDPOINT_LOCALIZATION_THEOREM.md)
+starts the last `(3,3,3)` cell.  Its four-dimensional preimage is a graph
+over the third root space.  Contracting the complete target identity on
+`w^perp` gives an exact two-root slice.  If
+`C=lambda e_d tensor e_e` and either `w_d` or `w_e` is nonzero, that slice
+contains a binary diagonal permanent frame with one additional nonzero
+common-zero row.  A four-space shift argument transfers the audited S2BF
+intersecting-plane obstruction and rules this out.  Hence every monomial
+survivor satisfies `w_d=w_e=0`: for `d!=e`, `w` is the unique third
+coordinate; for `d=e`, it lies in the complementary coordinate plane.  The
+sharp endpoints and all nonmonomial residual blocks remain open.
+
+The successor
+[`fully-injective diagonal-monomial two-supported endpoint exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_DIAGONAL_MONOMIAL_RESIDUAL_TWO_SUPPORTED_ENDPOINT_EXCLUSION_THEOREM.md)
+advances the diagonal endpoint.  If `C=lambda e_d tensor e_d` and `w` has
+both complementary coordinates nonzero, the complete `w`-perpendicular
+slice is a same-third-row binary table with two additional physical common
+rows.  The audited arbitrary-intersection and mixed-factor lemmas put both
+common rows in the zero-third-row plane and force a coordinate graph column.
+Four quotient types and the complete Borel orbit census leave 29 exact
+polynomial charts.  Pinned rational Nullstellensatz identities, replayed by
+SymPy and an independent no-import `Fraction` implementation, exclude all
+29 without localization or parameter sampling.  Thus a diagonal monomial
+survivor forces `w` onto one of the two complementary coordinate lines.  The
+coordinate endpoints, off-diagonal monomial endpoint, and every nonmonomial
+residual remain open.
+
+The parallel successor
+[`fully-injective off-diagonal-monomial coordinate-endpoint exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_OFF_DIAGONAL_MONOMIAL_RESIDUAL_COORDINATE_ENDPOINT_EXCLUSION_THEOREM.md)
+closes the other monomial branch.  At `C=lambda e_d tensor e_e`, `d!=e`,
+S2CC forces `w` onto the unique third coordinate.  The complete target slice
+is a two-corner binary table with one unrestricted parallel edge, two common
+physical rows, and their cross-zero.  A proved projective incidence/flag cover
+has 308 separation charts; exact ordinary-ring identities force both involved
+planes transverse to the third plane.  Common-row shifts and the cross-zero
+place the physical middle row in that plane, after which three quotient
+orbits and three common-row-line orbits give nine terminal charts.  The 317
+logical charts reduce to 287 literal polynomial systems after exact
+deduplication with lineage retained.  SymPy and an independent reversed-order
+no-import `Fraction` audit replay all 151,484 multiplier terms.  Thus every
+off-diagonal monomial endpoint is impossible.  The diagonal coordinate
+endpoints and every nonmonomial residual remain open.
+
+The diagonal successor
+[`coordinate-endpoint full-target reduction`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_DIAGONAL_MONOMIAL_RESIDUAL_COORDINATE_ENDPOINT_FULL_TARGET_REDUCTION_THEOREM.md)
+restores the unsliced target information that is absent from the sharp
+one-corner face.  At `C=lambda e_2 tensor e_2,w=e_0`, the `(2,2)` entries of
+the `k=1,2` slices determine the two exceptional source tensors while all
+sixteen other root-entry equations remain explicit.  After their tangent
+contributions are removed, the entire `k=0` slice is equivalent to one
+rank-one root/source flattening whose nonzero root factor lies in the affine
+coset `C+(A_1 tensor y+x tensor A_2)`.  Contracting by `x^perp,y^perp`
+simultaneously gives an exact corrected `2 x 2 x 3` cube in the third-row
+three-space and an exhaustive target-visibility census.  That cube is a
+consequence, not a replacement, of the retained faces; an explicit tangent
+slot perturbation leaves every contraction unchanged while violating a face
+equation.  A two-radical lemma already excludes the fully supported
+distinct-plane exceptional-intersection orbit.  An exact split-form control
+shows that a one-visible quotient wall is nevertheless populated, so the
+quotient cannot be excluded without the complete faces and affine
+tangent-coset flattening.  The remaining plane-incidence/pivot atlas, the
+diagonal endpoints themselves, and every nonmonomial residual remain open.
+
+The parallel nonmonomial successor
+[`canonical-binomial residual exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_CANONICAL_BINOMIAL_RESIDUAL_EXCLUSION_THEOREM.md)
+closes one exact target-stabilizer orbit.  When the three shared factors lie
+on one coordinate line and the actual residual block is a nonzero binomial
+on the two complementary diagonal entries, normalize
+`x=y=w=e_2` and `C=kappa_0 E_00+kappa_1 E_11`.  The contained derivative
+kernel identifies the physical third-row space with the full-sensor
+three-space and forces its alternating separated tensor to be nonzero.  The
+complete target supplies two cross-zero row pairs and a weighted difference
+of the two diagonal maps of rank two.  A denominator-free support lemma says
+that every independent mixed zero pair is a conjugate pair in a split
+two-source plane.  Its radical-line corollary handles the dependent profiles;
+for two diagonal planes, three projective flag types on each side give an
+exhaustive `3 x 3` cover.  Six flags fail by incompatible pure/two-supported
+intersection lines, two by a common target image line, and the generic flag
+by the S2AL tangent-line separation lemma.  The proof retains every
+projective boundary and does not specialize the target cross-ratio.  It does
+not force an arbitrary nonmonomial residual into this orbit and supplies no
+target-preserving degeneration theorem.  All other nonmonomial residuals and
+the diagonal monomial coordinate endpoints remain open.
+
+The diagonal successor
+[`coordinate-endpoint zero-visible-wall exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_DIAGONAL_MONOMIAL_RESIDUAL_COORDINATE_ENDPOINT_ZERO_VISIBLE_WALL_EXCLUSION_THEOREM.md)
+feeds S2CG's general radical-line consequence back into S2CF.  Simultaneous
+failure of both target-visibility conditions forces the shared factors onto
+the crossed coordinate pairs `(x,y)=(e_0,e_1)` or `(e_1,e_0)`.  In the first
+orientation, `alpha=e_1 in x^perp` and every `beta in y^perp` kill both the
+target and corrected-source terms of the complete contracted cube; the
+exchanged orientation is identical.  Thus the injective two-plane
+`p(y^perp)` would lie in the radical of one nonzero row inside `Q`.  The
+kernel-incidence/full-sensor determinant gives `Alt(Q)!=0`, and S2CG bounds
+every such radical by one dimension.  This excludes the entire zero-visible
+wall without a chart atlas.  The one-visible walls and two-visible open cell
+still require the retained faces and tangent-coset flattening, so neither
+diagonal endpoint is yet closed.
+
+The next diagonal successor
+[`same-coordinate one-visible-wall exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_DIAGONAL_MONOMIAL_RESIDUAL_COORDINATE_ENDPOINT_SAME_COORDINATE_ONE_VISIBLE_WALL_EXCLUSION_THEOREM.md)
+closes the two projective support cells `x=y=e_0` and `x=y=e_1`.  In each
+cell the corrected cube supplies two cross-zero pairs and one visible pure
+target.  S2CG's zero-pair theorem reduces their two involved planes to a
+split three-source space or one common split two-source plane.  For
+`x=y=e_1`, the complete recovered `P_111=T_1` face contradicts both
+incidence alternatives.  For `x=y=e_0`, exact source recovery and the
+unsliced `(0,0,0)` coefficient survive the tangent slots forgotten by the
+cube; quotienting by the `T_1` factor lines would make the independent
+images of `T_0` and `T_2` proportional.  No general one-visible support pair
+is normalized to these cells.  The other one-visible patterns and the
+two-visible open cell remain, so the diagonal endpoints stay open.
+
+The complete successor
+[`one-visible-wall exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_DIAGONAL_MONOMIAL_RESIDUAL_COORDINATE_ENDPOINT_COMPLETE_ONE_VISIBLE_WALL_EXCLUSION_THEOREM.md)
+exhausts all twenty ordered support masks.  Beyond the two S2CI cells, four
+coordinate/two-support masks create forbidden two-dimensional radical
+shores.  The other fourteen have explicit bases with two cross-zero pairs:
+all seven `T_0`-only cells contradict `P_111=T_1`, six `T_1`-only cells with
+one coordinate shore contradict the unsliced target after exact source
+recovery, and the last `{0,2}` by `{0,2}` cell requires the whole unsliced
+root matrix.  There coefficient separation forces `H_2=0`; graph gauge then
+puts both perpendicular planes in `span(q_0,q_1)`, where zero-pair geometry
+makes their visible `T_1` corner vanish.  Thus the complete zero-visible and
+one-visible walls are empty.  Only the two-visible cell remains at either
+diagonal monomial endpoint; other nonmonomial residuals remain separate.
+
+The final diagonal successor
+[`two-visible-cell exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_DIAGONAL_MONOMIAL_RESIDUAL_COORDINATE_ENDPOINT_TWO_VISIBLE_CELL_EXCLUSION_THEOREM.md)
+exhausts its exact fourteen-mask support atlas.  On the four central masks,
+one correction-free mixed map contains both transverse target tensors; a
+source-support and Segre-tangent classification proves that no polarized
+split-cubic mixed map can contain such a transverse secant.  Each of the ten
+boundary masks has a structural zero corner and two correction-free rank-one
+corners on the transverse target lines.  S2CG's zero-pair theorem and a
+coordinate-free zero-corner rectangle obstruction exclude all ten.  Hence
+both diagonal monomial coordinate endpoints are empty; together with the
+off-diagonal endpoint exclusion, this closes the monomial-residual branch of
+the fully-injective joint-rank-four/derivative-rank-eight cell.  No
+degeneration or atlas reduces an arbitrary nonmonomial residual to this
+branch, so those residuals and the global conjecture remain open.
+
+The arbitrary-nonmonomial successor
+[`complete-target zero-pair localization`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_NONMONOMIAL_RESIDUAL_COMPLETE_TARGET_ZERO_PAIR_LOCALIZATION_THEOREM.md)
+retains the actual residual block rather than replacing it by its tangent
+quotient.  With the coordinate shared factor `w=e_t`, the complete target is
+two rank-one slices on `C` and one rank-one slice on a nonzero representative
+of `C+(A_1 tensor y+x tensor A_2)`.  Contracting by `x^perp,y^perp` gives an
+exact corrected cube in the alternating physical three-space.  A mixed zero
+with zero correction is necessarily a disjoint-support structural pair; its
+complete projective locus is a union of at most four points because every
+positive-dimensional coordinate shore would violate S2CG's radical-line
+bound.  A nonzero correction first forces the tangent quotient of `C` onto
+the `w`-diagonal.  S2CK's mixed-map lemma then leaves exactly one target
+colour, permanent symmetry collapses both perpendicular planes to one split
+two-source plane, and a retained uncorrected slice either contradicts its
+target coefficient or makes the actual `C` monomial.  Thus correcting zero
+pairs are impossible.  At this stage the finite structural-zero cells and
+the zero-pair-free nonmonomial cell remain open, as do the wider lower-rank
+and global obligations.
+
+The
+[`zero-pair-free-cell exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_NONMONOMIAL_RESIDUAL_ZERO_PAIR_FREE_CELL_EXCLUSION_THEOREM.md)
+then exhausts S2BQ's root-torus alternatives.  If both shared factors are
+noncoordinate, the tangent-quotient monomial and absence of a structural
+zero force one correction-free mixed map to contain two transverse targets.
+If either shared factor is coordinate, the residual restriction is a nonzero
+`2 x 2` matrix: absence of structural zeros makes both cross entries nonzero,
+and both its rank-one and rank-two forms again produce a correction-free
+two-target mixed map.  S2CK excludes every such transverse secant.  Hence a
+surviving actual nonmonomial point in this local cell has between one and four
+structural mixed zero pairs.  Those finite incidence cells remain open; no
+wider lower-rank or global obligation is discharged.
+
+The structural successor
+[`noncoordinate-shared-factors exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_NONMONOMIAL_RESIDUAL_NONCOORDINATE_SHARED_FACTORS_EXCLUSION_THEOREM.md)
+then removes every point with both `x` and `y` noncoordinate.  S2CK first
+forces one structural shore to be coordinate, giving a one-sided pure-target
+table.  Independent zero partners produce an aligned split plane or split
+three-space.  A dependent partner is pure; a one-factor source slab forces
+both shared factors onto the same complementary two-support, which creates a
+second structural corner.  S2CI's two-cross dichotomy reduces both cases to
+an aligned target quotient, and a retained complete face makes the actual
+residual block monomial.  Thus only structural cells with coordinate `x` or
+coordinate `y` remain in this fully-injective local branch.
+
+The final
+[`coordinate-shared-factor structural-zero exclusion`](BALANCED_M3_COMMON_THREE_SPACE_JOINT_RANK_FOUR_DERIVATIVE_RANK_EIGHT_FULLY_INJECTIVE_NONMONOMIAL_RESIDUAL_COORDINATE_SHARED_FACTOR_STRUCTURAL_ZERO_EXCLUSION_THEOREM.md)
+exhausts those cells.  After root exchange take `x=e_s`.  The wall `y_s!=0`
+is an exact `2 x 2` residual restriction whose one-cross and two-cross zero
+patterns reduce to transverse target-factor contradictions or a retained face
+that makes the actual residual block monomial.  On `y_s=0`, noncoordinate `y`
+is excluded by the structural map's independent/dependent zero-pair split.
+Coordinate `y=e_r` has a complete rank-one/rank-two matrix census; the last
+dependent pure-row pencil is closed coefficientwise using only one retained
+diagonal entry.  Together with the monomial endpoint chain and S2CL--S2CN,
+this closes the complete fully-injective joint-rank-four/derivative-rank-eight
+`(3,3,3)` residual profile.  Lower-joint-rank and derivative-rank-seven cells,
+other components and poles, higher orders, all-rank drop, and global
+Krenn--Gu remain open.
+
 On the complementary branch, the
 [`diagonal-complete all-rank-drop boundary`](BALANCED_ALL_RANK_DROP_DIAGONAL_COMPLETE_SHARPNESS_THEOREM.md)
 constructs an exact arbitrary-order sharpness family.  From `n=8` onward,
