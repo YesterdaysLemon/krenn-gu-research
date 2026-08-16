@@ -52,12 +52,19 @@ class Frame:
     annihilator_degrees: Vector
 
 
+def file_sha256(path: Path) -> str:
+    """Hash text after normalizing checkout CRLF to Git-style LF."""
+
+    normalized = path.read_bytes().replace(b"\r\n", b"\n")
+    return sha256(normalized).hexdigest()
+
+
 def frozen_dependency_hashes() -> dict[str, str]:
     """Require byte-exact identities for all four dependency packages."""
     observed: dict[str, str] = {}
     for relative, expected in DEPENDENCIES.items():
         path = CLAIMS / relative
-        digest = sha256(path.read_bytes()).hexdigest()
+        digest = file_sha256(path)
         assert digest == expected, f"dependency drift: {relative}: {digest}"
         observed[relative] = digest
     return observed

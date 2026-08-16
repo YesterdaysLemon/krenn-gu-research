@@ -139,8 +139,8 @@ flowchart TD
   M2["r >= 2 fixed-surplus layer<br/>PROVED reduction"]
   PR["Weighted permanent restriction family<br/>OPEN at arbitrary order"]
   PRC["Every co-two permanent product sensor corank >=2<br/>PROVED necessary boundary"]
-  PR5["Co-two equality-five branch<br/>ALL REPRESENTATIVES EXCLUDED; SYNTHESIS PENDING"]
-  PR6["Co-two product dimension >=6<br/>OPEN sensor residual"]
+  PR5["P6 co-two equality-five branch<br/>PROVED EXCLUDED"]
+  PR6["P6 co-two product dimension >=6<br/>OPEN sensor residual"]
   O1["Fixed-layer truncation and nonobservability<br/>PROVED boundary"]
   O2["Two-open detector and q=0 star gauge<br/>PROVED boundary"]
   O2P["Projective single-open consecutive lift<br/>PROVED conditional reduction"]
@@ -507,8 +507,8 @@ flowchart TD
 | `M2` | One complete fixed-surplus physical hafnian layer; coordinate two-residual absorption: **proved reduction, not exclusion** | [Maximal torus-root theorem](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer) |
 | `PR` | Weighted `P_t -> Delta_3` restriction family: **extracted at zero surplus and on the conditional consecutive-lift branch; arbitrary-order exclusion open**. The live `t=6` / P6 restriction remains inside this node; the three-excess notes address only the first strict-support layer, not arbitrary support. | [Maximal-root extraction](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer), [consecutive single-open lift](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md), [P6 package index](../claims/p6/README.md), [three-excess port boundary](../claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_PORT_PERMUTATION_THEOREM.md), and [conformal Birkhoff boundary](../claims/arbitrary-order/ARBITRARY_PERMANENT_THREE_EXCESS_CONFORMAL_BIRKHOFF_REDUCTION.md) |
 | `PRC` | Every weighted `P_r -> Delta_3` restriction has `dim B_ab>=5` and `dim A_S+dim B_ab<=binomial(r,2)+3` for each omitted pair.  Hence every complementary co-two product sensor has corank at least two; for P6 all fifteen sensors have rank at most `13`.  This is a **proved necessary boundary, not a nonrestriction theorem**. | [Co-two sensor corank-two strengthening](../claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_CORANK_TWO_STRENGTHENING_THEOREM.md) |
-| `PR5` | If an omitted pair in an actual restriction has `dim B_ab=5`, its active support is exactly four.  The unbased types are `(3,1),(4,1),(4,2)`; exact based-frame classification, the displayed-frame exclusions, full permanent orbit transport, and the pure-star and fixed-`e=1,2` endpoints individually exclude every representative `014,025,024` left by transport.  No representative endpoint remains open.  A dedicated full equality-five synthesis and proof-consolidation audit is **pending before this branch is marked closed**. | [Equality-five support synthesis](../claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_EQUALITY_FIVE_ACTIVE_SUPPORT_ORBIT_SYNTHESIS_THEOREM.md), [based-frame classification](../claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_R4_BASED_FRAME_ORBIT_CLASSIFICATION_THEOREM.md), [monomial covariance/orbit transport](../claims/arbitrary-order/ARBITRARY_PERMANENT_MONOMIAL_COVARIANCE_AND_BASED_FRAME_ORBIT_TRANSPORT_LEMMA.md), [pure-star full-extension exclusion](../claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_R4_PURE_STAR_FULL_EXTENSION_EXCLUSION_THEOREM.md), [fixed-`e=1` full-extension exclusion](../claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_R4_FIXED_E1_FULL_EXTENSION_EXCLUSION_THEOREM.md), and [fixed-`e=2` full-extension exclusion](../claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_R4_FIXED_E2_FULL_EXTENSION_EXCLUSION_THEOREM.md) |
-| `PR6` | If `dim B_ab>=6`, then `dim A_S<=binomial(r,2)-3`; for P6 the corresponding four-mode sensor has rank at most `12`.  The simultaneous mixed-target incidence inside these stronger sensor bounds remains **open**.  No P6 closure follows from the dimension split. | [Strengthened co-two sensor bound](../claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_CORANK_TWO_STRENGTHENING_THEOREM.md#4-the-strengthened-sensor-bound) |
+| `PR5` | For an exact characteristic-zero `P_6 -> Delta_3` restriction, product dimension five at any omitted pair forces active support four and one of six based-frame exchange classes.  Exact covariance transports the six pointwise endpoint exclusions across every class, so the `P_6` equality-five branch is **proved excluded**.  This is a `P_6` theorem; no equality-five exclusion for another order is claimed. | [Full equality-five exclusion](../claims/arbitrary-order/ARBITRARY_PERMANENT_P6_COTWO_EQUALITY_FIVE_FULL_EXTENSION_EXCLUSION_THEOREM.md), [hostile consolidation review](audits/ARBITRARY_PERMANENT_P6_COTWO_EQUALITY_FIVE_FULL_EXTENSION_EXCLUSION_REVIEW_2026-08-16.md), [support synthesis](../claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_EQUALITY_FIVE_ACTIVE_SUPPORT_ORBIT_SYNTHESIS_THEOREM.md), [based-frame classification](../claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_R4_BASED_FRAME_ORBIT_CLASSIFICATION_THEOREM.md), and [orbit transport](../claims/arbitrary-order/ARBITRARY_PERMANENT_MONOMIAL_COVARIANCE_AND_BASED_FRAME_ORBIT_TRANSPORT_LEMMA.md) |
+| `PR6` | The equality-five exclusion forces every omitted pair of a hypothetical exact `P_6` restriction to satisfy `dim B_ab>=6`, hence all fifteen complementary four-mode sensors have rank at most `12`.  The simultaneous mixed-target incidence inside these stronger sensor bounds remains **open**.  No `P_6` closure follows from this dimension split. | [Full equality-five exclusion](../claims/arbitrary-order/ARBITRARY_PERMANENT_P6_COTWO_EQUALITY_FIVE_FULL_EXTENSION_EXCLUSION_THEOREM.md), [strengthened co-two sensor bound](../claims/arbitrary-order/ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_CORANK_TWO_STRENGTHENING_THEOREM.md#4-the-strengthened-sensor-bound) |
 | `O1` | Contracted truncation, same-fibre rank nonobservability, and single-open absorption: **proved structural boundary** | [Balanced fixed-surplus theorem](../claims/arbitrary-order/BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md) |
 | `O2` | Complete two-open equation and conditional `q=0` tensor-preserving star gauge: **proved boundary** | [Two-open gauge theorem](../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md) |
 | `O2P` | On the aligned common-two-row, projectively constant branch, the complete single-open identity is a consecutive `P_(m+1)` restriction and its old-root companions form an exact rank-two diagonal quotient frame: **proved conditional reduction** | [Consecutive single-open lift](../claims/arbitrary-order/PROJECTIVELY_CONSTANT_SINGLE_OPEN_CONSECUTIVE_PERMANENT_LIFT_AND_COMPANION_FRAME_THEOREM.md) |
@@ -724,8 +724,8 @@ flowchart TD
 | `O2` | boundary obligation | `O3` | The tight star refutes an automatic detector; higher/unfactorized data are needed. |
 | `M2` | specialization | `PR` | Zero surplus yields a tight weighted permanent restriction at arbitrary `r>=5`; it is not reduced to P7. |
 | `PR` | necessary condition | `PRC` | Every co-two pair product space has dimension at least five, and every complementary sensor has corank at least two.  For P6 all fifteen four-mode sensors have rank at most thirteen, but simultaneous corank two plus local rank and pure nonvanishing is insufficient. |
-| `PRC` | exact equality-five branch | `PR5` | Product dimension five forces active support four; based-frame orbit transport reduces the full-extension cases to representatives `014,025,024`, and the pure-star and fixed-`e=1,2` endpoints exclude all three individually.  Full branch synthesis and consolidation remain pending. |
-| `PRC` | boundary branch | `PR6` | Product dimension at least six strengthens the sensor rank bound to `binomial(r,2)-3`, but the simultaneous mixed-target incidence remains open. |
+| `PRC` | exact `P_6` equality-five branch | `PR5` | Product dimension five forces active support four; the complete based-frame orbit cover and six reviewed endpoints exclude every full-extension class.  The branch is closed for `P_6`, not for arbitrary order. |
+| `PRC` | remaining `P_6` boundary branch | `PR6` | Every hypothetical `P_6` restriction is now forced to product dimension at least six at all fifteen omitted pairs, with sensor rank at most twelve; the simultaneous mixed-target incidence remains open. |
 | `U1` | reduction | `U2` | Matrix-unit cancellation reduces to an at-most-four-port response. |
 | `U1` | exact support-minimal refinement | `U1B` | The strict incidence alternative turns every absent positive endpoint balance into an integral GHZ-preserving degeneration that erases a physical edge; global support minimality therefore forces the balance. |
 | `U1B` | exact complex-analytic refinement | `U1C` | Strict all-edge balance makes the squared-amplitude exponential functional coercive and strictly convex on the positive GHZ torus modulo its edgewise stabilizer; its unique critical orbit has actual vertex-independent colour loads. |
@@ -929,15 +929,13 @@ branch. They are not an instruction to begin all of them at once.
    codimensions add.
 
 3. **Zero-surplus permanent restrictions.** Every hypothetical restriction
-   now lies in the simultaneous co-two product-sensor corank-two locus; for P6
-   all fifteen four-mode sensors have rank at most thirteen.  On the
-   equality-five branch, support and based-frame classification plus exact
-   orbit transport reduce the full-extension exclusions to representatives
-   `014,025,024`; the pure-star and fixed-`e=1,2` endpoints exclude all three
-   individually.  Compose and adversarially audit the full equality-five
-   exclusion, and separately decide the product-dimension
-   at-least-six branch, where the corresponding P6 sensor rank is at most
-   twelve.  Neither task is P6 closure by itself.  The exact P6 block model
+   lies in the simultaneous co-two product-sensor corank-two locus.  The
+   `P_6` equality-five branch is now excluded by the complete based-frame
+   orbit synthesis and adversarial consolidation audit.  Every hypothetical
+   `P_6` restriction is therefore forced into the product-dimension
+   at-least-six branch, where all fifteen corresponding sensor ranks are at
+   most twelve.  Assess the simultaneous mixed-target incidence in that
+   residual; the dimension split is not `P_6` closure.  The exact `P_6` block model
    shows that sensor rank drop, local rank, and nonzero pure coefficients alone
    are insufficient. The committed P7 sensor and exactly-three-excess support
    normal forms are not exhaustive arbitrary-r theorems.
